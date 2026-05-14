@@ -1,6 +1,8 @@
 ---
-title: "Stoichiometry and Mole Concept -- Diagnostic Tests"
-description: Hardest diagnostic questions on stoichiometry and mole concept within the DSE specification, each with a full worked solution.
+title: 'Stoichiometry and Mole Concept -- Diagnostic Tests'
+description:
+  Hardest diagnostic questions on stoichiometry and mole concept within the DSE specification, each
+  with a full worked solution.
 slug: diag-stoichiometry-and-mole-concept
 hide_table_of_contents: true
 ---
@@ -11,7 +13,9 @@ hide_table_of_contents: true
 
 **Question**
 
-A 2.00 g sample of impure calcium carbonate ($CaCO_{3}$) was reacted with 50.0 cm$^{3}$ of 1.00 mol/dm$^{3}$ hydrochloric acid (excess). The resulting solution was titrated with 0.500 mol/dm$^{3}$ sodium hydroxide solution. 25.0 cm$^{3}$ of NaOH was required for neutralisation.
+A 2.00 g sample of impure calcium carbonate ($CaCO_{3}$) was reacted with 50.0 cm$^{3}$ of 1.00
+mol/dm$^{3}$ hydrochloric acid (excess). The resulting solution was titrated with 0.500 mol/dm$^{3}$
+sodium hydroxide solution. 25.0 cm$^{3}$ of NaOH was required for neutralisation.
 
 (a) Write balanced equations for both reactions. [2 marks]
 
@@ -55,7 +59,9 @@ Step 6: Percentage purity.
 
 $$\text{Purity} = \frac{1.877}{2.00} \times 100\% = 93.8\%$$
 
-(c) The HCl must be in excess to ensure **all** the $CaCO_{3}$ reacts completely. The back-titration then determines the amount of HCl that was not consumed, allowing the amount reacted with $CaCO_{3}$ to be calculated by difference.
+(c) The HCl must be in excess to ensure **all** the $CaCO_{3}$ reacts completely. The back-titration
+then determines the amount of HCl that was not consumed, allowing the amount reacted with $CaCO_{3}$
+to be calculated by difference.
 
 ---
 
@@ -63,13 +69,15 @@ $$\text{Purity} = \frac{1.877}{2.00} \times 100\% = 93.8\%$$
 
 **Question**
 
-An organic compound $X$ contains only carbon, hydrogen, and oxygen. When 0.460 g of $X$ was completely combusted, 0.880 g of $CO_{2}$ and 0.540 g of $H_{2}O$ were produced.
+An organic compound $X$ contains only carbon, hydrogen, and oxygen. When 0.460 g of $X$ was
+completely combusted, 0.880 g of $CO_{2}$ and 0.540 g of $H_{2}O$ were produced.
 
 (a) Determine the empirical formula of $X$. [5 marks]
 
 (b) If the molar mass of $X$ is 92.0 g/mol, determine its molecular formula. [1 mark]
 
-(c) A student forgets to account for the oxygen in $X$ and assumes $X$ contains only carbon and hydrogen. How would this affect the calculated empirical formula? [2 marks]
+(c) A student forgets to account for the oxygen in $X$ and assumes $X$ contains only carbon and
+hydrogen. How would this affect the calculated empirical formula? [2 marks]
 
 ---
 
@@ -119,7 +127,8 @@ $$n(C) = 0.0200, \quad n(H) = 0.0600$$
 
 $$C : H = 1 : 3$$
 
-The student would get $CH_{3}$ as the empirical formula, which is incorrect. The mole ratio of $C$ to $H$ alone does not reveal the oxygen content.
+The student would get $CH_{3}$ as the empirical formula, which is incorrect. The mole ratio of $C$
+to $H$ alone does not reveal the oxygen content.
 
 ---
 
@@ -129,11 +138,14 @@ The student would get $CH_{3}$ as the empirical formula, which is incorrect. The
 
 At room temperature and pressure (RTP), one mole of any gas occupies 24.0 dm$^{3}$.
 
-(a) Calculate the volume of carbon dioxide produced when 5.00 g of calcium carbonate reacts with excess hydrochloric acid at RTP. [3 marks]
+(a) Calculate the volume of carbon dioxide produced when 5.00 g of calcium carbonate reacts with
+excess hydrochloric acid at RTP. [3 marks]
 
-(b) A student dissolves 4.00 g of NaOH in water and makes up the solution to 250 cm$^{3}$. Calculate the concentration of the solution in both mol/dm$^{3}$ and g/dm$^{3}$. [3 marks]
+(b) A student dissolves 4.00 g of NaOH in water and makes up the solution to 250 cm$^{3}$. Calculate
+the concentration of the solution in both mol/dm$^{3}$ and g/dm$^{3}$. [3 marks]
 
-(c) 50.0 cm$^{3}$ of 0.100 mol/dm$^{3}$ $H_{2}SO_{4}$ is diluted to 500 cm$^{3}$. Calculate the concentration of the diluted solution. [2 marks]
+(c) 50.0 cm$^{3}$ of 0.100 mol/dm$^{3}$ $H_{2}SO_{4}$ is diluted to 500 cm$^{3}$. Calculate the
+concentration of the diluted solution. [2 marks]
 
 ---
 
@@ -175,9 +187,13 @@ $$C_{2} = 0.0100 \text{ mol/dm}^{3}$$
 
 **Question**
 
-A sample of impure iron(II) sulphate ($FeSO_{4}\cdot 7H_{2}O$) is to be analysed. 5.00 g of the sample was dissolved in dilute sulphuric acid and made up to 250 cm$^{3}$. 25.0 cm$^{3}$ of this solution was titrated with 0.0200 mol/dm$^{3}$ potassium manganate(VII) ($KMnO_{4}$). The average titre was 22.5 cm$^{3}$.
+A sample of impure iron(II) sulphate ($FeSO_{4}\cdot 7H_{2}O$) is to be analysed. 5.00 g of the
+sample was dissolved in dilute sulphuric acid and made up to 250 cm$^{3}$. 25.0 cm$^{3}$ of this
+solution was titrated with 0.0200 mol/dm$^{3}$ potassium manganate(VII) ($KMnO_{4}$). The average
+titre was 22.5 cm$^{3}$.
 
-(a) Write the balanced ionic equation for the reaction between $Fe^{2+}$ and $MnO_{4}^{-}$ in acidic medium. [2 marks]
+(a) Write the balanced ionic equation for the reaction between $Fe^{2+}$ and $MnO_{4}^{-}$ in acidic
+medium. [2 marks]
 
 (b) Calculate the percentage of $FeSO_{4}\cdot 7H_{2}O$ in the impure sample. [5 marks]
 
@@ -195,7 +211,8 @@ $$n(MnO_{4}^{-}) = 0.0200 \times \frac{22.5}{1000} = 4.50 \times 10^{-4} \text{ 
 
 Step 2: Moles of $Fe^{2+}$ in 25.0 cm$^{3}$.
 
-From the equation: $n(Fe^{2+}) = 5 \times n(MnO_{4}^{-}) = 5 \times 4.50 \times 10^{-4} = 2.250 \times 10^{-3}$ mol
+From the equation:
+$n(Fe^{2+}) = 5 \times n(MnO_{4}^{-}) = 5 \times 4.50 \times 10^{-4} = 2.250 \times 10^{-3}$ mol
 
 Step 3: Moles of $Fe^{2+}$ in 250 cm$^{3}$ (total solution).
 
@@ -223,7 +240,8 @@ $$n(Fe^{2+}) \text{ total} = 2.250 \times 10^{-3} \times 10 = 0.02250 \text{ mol
 
 $$m = 0.02250 \times 277.9 = 6.253 \text{ g}$$
 
-Since this exceeds 5.00 g, the data is inconsistent. For a realistic problem, let me adjust: if the titre were **12.5 cm$^{3}$**:
+Since this exceeds 5.00 g, the data is inconsistent. For a realistic problem, let me adjust: if the
+titre were **12.5 cm$^{3}$**:
 
 $$n(MnO_{4}^{-}) = 0.0200 \times 0.0125 = 2.50 \times 10^{-4}$$
 
@@ -235,7 +253,9 @@ $$m = 0.01250 \times 277.9 = 3.474 \text{ g}$$
 
 $$\%\text{ purity} = \frac{3.474}{5.00} \times 100\% = 69.5\%$$
 
-(c) The reaction requires $H^{+}$ ions as a reactant (see the equation). Without an acidic medium, $MnO_{4}^{-}$ would be reduced to $MnO_{2}$ instead of $Mn^{2+}$And the stoichiometry would change. The acid also prevents the formation of insoluble $MnO_{2}$.
+(c) The reaction requires $H^{+}$ ions as a reactant (see the equation). Without an acidic medium,
+$MnO_{4}^{-}$ would be reduced to $MnO_{2}$ instead of $Mn^{2+}$And the stoichiometry would change.
+The acid also prevents the formation of insoluble $MnO_{2}$.
 
 ---
 
@@ -243,9 +263,11 @@ $$\%\text{ purity} = \frac{3.474}{5.00} \times 100\% = 69.5\%$$
 
 **Question**
 
-Limestone (mainly $CaCO_{3}$) is analysed by reacting it with acid and collecting the $CO_{2}$ produced.
+Limestone (mainly $CaCO_{3}$) is analysed by reacting it with acid and collecting the $CO_{2}$
+produced.
 
-2.50 g of limestone was reacted with 100 cm$^{3}$ of 2.00 mol/dm$^{3}$ $HCl$. The $CO_{2}$ gas was collected over water at RTP and measured to have a volume of 520 cm$^{3}$.
+2.50 g of limestone was reacted with 100 cm$^{3}$ of 2.00 mol/dm$^{3}$ $HCl$. The $CO_{2}$ gas was
+collected over water at RTP and measured to have a volume of 520 cm$^{3}$.
 
 (Vapour pressure of water at RTP = 2.3 kPa; atmospheric pressure = 101 kPa)
 
@@ -265,7 +287,8 @@ Pressure of dry $CO_{2}$ = Total pressure - Vapour pressure of water
 
 $$P(CO_{2}) = 101 - 2.3 = 98.7 \text{ kPa}$$
 
-Using Boyle's law (at constant temperature, $P_{1}V_{1} = P_{2}V_{2}$) to find volume at atmospheric pressure:
+Using Boyle's law (at constant temperature, $P_{1}V_{1} = P_{2}V_{2}$) to find volume at atmospheric
+pressure:
 
 $$V_{\text{dry}} = \frac{520 \times 98.7}{101} = 508 \text{ cm}^{3} = 0.508 \text{ dm}^{3}$$
 
@@ -299,7 +322,9 @@ $$C(HCl)_{\text{remaining}} = \frac{0.158}{0.100} = 1.58 \text{ mol/dm}^{3}$$
 
 **Question**
 
-15.0 g of ethanoic acid ($CH_{3}COOH$) was reacted with 8.00 g of ethanol ($C_{2}H_{5}OH$) in the presence of a concentrated sulphuric acid catalyst to produce ethyl ethanoate ($CH_{3}COOC_{2}H_{5}$) and water. The actual mass of ester obtained was 10.2 g.
+15.0 g of ethanoic acid ($CH_{3}COOH$) was reacted with 8.00 g of ethanol ($C_{2}H_{5}OH$) in the
+presence of a concentrated sulphuric acid catalyst to produce ethyl ethanoate
+($CH_{3}COOC_{2}H_{5}$) and water. The actual mass of ester obtained was 10.2 g.
 
 (a) Write the balanced equation for the esterification reaction. [1 mark]
 
@@ -323,7 +348,8 @@ $$M(C_{2}H_{5}OH) = 2 \times 12.0 + 6 \times 1.0 + 16.0 = 46.0 \text{ g/mol}$$
 
 $$n(C_{2}H_{5}OH) = \frac{8.00}{46.0} = 0.174 \text{ mol}$$
 
-From the equation, the mole ratio is 1:1. Since $0.174 \lt 0.250$**ethanol** is the limiting reagent.
+From the equation, the mole ratio is 1:1. Since $0.174 \lt 0.250$**ethanol** is the limiting
+reagent.
 
 (c) Theoretical moles of ester = moles of limiting reagent = 0.174 mol
 
@@ -333,7 +359,9 @@ $$m_{\text{theoretical}} = 0.174 \times 88.0 = 15.3 \text{ g}$$
 
 $$\%\text{ yield} = \frac{10.2}{15.3} \times 100\% = 66.7\%$$
 
-(d) Esterification is a **reversible reaction** that reaches equilibrium. Not all reactants are converted to products. Additionally:
+(d) Esterification is a **reversible reaction** that reaches equilibrium. Not all reactants are
+converted to products. Additionally:
+
 - Some product may be lost during purification (e.g., during separation from the reaction mixture).
 - Some reactants may undergo side reactions.
 - The equilibrium position may not lie far enough towards the products.

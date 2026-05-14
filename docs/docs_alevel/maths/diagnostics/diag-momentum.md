@@ -1,6 +1,8 @@
 ---
-title: "Momentum -- Diagnostic Tests"
-description: "Hard diagnostic tests for momentum covering sign convention traps, impulse as a vector, coefficient of restitution edge cases, 2D collisions, and"
+title: 'Momentum -- Diagnostic Tests'
+description:
+  'Hard diagnostic tests for momentum covering sign convention traps, impulse as a vector,
+  coefficient of restitution edge cases, 2D collisions, and'
 slug: diag-momentum
 hide_table_of_contents: true
 ---
@@ -15,17 +17,24 @@ hide_table_of_contents: true
 
 **Question:**
 
-Two particles $A$ (mass $4$ kg) and $B$ (mass $6$ kg) move towards each other along the same straight line. $A$ has speed $5$ m/s and $B$ has speed $3$ m/s. After the collision, $A$ moves in the opposite direction with speed $2$ m/s.
+Two particles $A$ (mass $4$ kg) and $B$ (mass $6$ kg) move towards each other along the same
+straight line. $A$ has speed $5$ m/s and $B$ has speed $3$ m/s. After the collision, $A$ moves in
+the opposite direction with speed $2$ m/s.
 
-**(a)** Taking the direction of $A$'s initial motion as positive, apply conservation of momentum to find the velocity of $B$ after the collision.
+**(a)** Taking the direction of $A$'s initial motion as positive, apply conservation of momentum to
+find the velocity of $B$ after the collision.
 
 **(b)** Find the coefficient of restitution for the collision.
 
-**(c)** A student defines positive as the direction of $B$'s initial motion and obtains a different numerical value for $v_B$. Show that the physical velocity is the same regardless of the sign convention.
+**(c)** A student defines positive as the direction of $B$'s initial motion and obtains a different
+numerical value for $v_B$. Show that the physical velocity is the same regardless of the sign
+convention.
 
-**(d)** Determine whether the collision is elastic, inelastic, or perfectly inelastic, and calculate the kinetic energy lost.
+**(d)** Determine whether the collision is elastic, inelastic, or perfectly inelastic, and calculate
+the kinetic energy lost.
 
-[Difficulty: hard. Tests the critical importance of a consistent sign convention in momentum problems, and the ability to work with different conventions to obtain the same physical result.]
+[Difficulty: hard. Tests the critical importance of a consistent sign convention in momentum
+problems, and the ability to work with different conventions to obtain the same physical result.]
 
 **Solution:**
 
@@ -39,7 +48,8 @@ After collision: $p_A' = 4 \times (-2) = -8$ kg m/s.
 
 By conservation: $2 = -8 + 6v_B \implies 6v_B = 10 \implies v_B = \frac{5}{3} \approx 1.67$ m/s.
 
-$B$ moves in the positive direction (the same direction as $A$'s initial motion) at $\frac{5}{3}$ m/s.
+$B$ moves in the positive direction (the same direction as $A$'s initial motion) at $\frac{5}{3}$
+m/s.
 
 **(b)** Coefficient of restitution:
 
@@ -47,7 +57,8 @@ $$e = \frac◆LB◆\text{relative speed of separation}◆RB◆◆LB◆\text{rela
 
 Relative speed of approach $= 5 - (-3) = 8$ m/s.
 
-Relative speed of separation $= v_B - v_A = \frac{5}{3} - (-2) = \frac{5}{3} + 2 = \frac{11}{3}$ m/s.
+Relative speed of separation $= v_B - v_A = \frac{5}{3} - (-2) = \frac{5}{3} + 2 = \frac{11}{3}$
+m/s.
 
 $$e = \frac{11/3}{8} = \frac{11}{24} \approx 0.458$$
 
@@ -59,9 +70,12 @@ Total initial momentum $= 4(-5) + 6(3) = -20 + 18 = -2$ kg m/s.
 
 After collision: $v_A = 2$ m/s (moves in $B$'s initial direction).
 
-Conservation: $-2 = 4(2) + 6v_B \implies -2 = 8 + 6v_B \implies 6v_B = -10 \implies v_B = -\frac{5}{3}$ m/s.
+Conservation:
+$-2 = 4(2) + 6v_B \implies -2 = 8 + 6v_B \implies 6v_B = -10 \implies v_B = -\frac{5}{3}$ m/s.
 
-The negative sign means $B$ moves in the opposite direction to the defined positive, i.e., in $A$'s initial direction. This is the same physical velocity as $\frac{5}{3}$ m/s in $A$'s initial direction, confirming the result is convention-independent.
+The negative sign means $B$ moves in the opposite direction to the defined positive, i.e., in $A$'s
+initial direction. This is the same physical velocity as $\frac{5}{3}$ m/s in $A$'s initial
+direction, confirming the result is convention-independent.
 
 **(d)** Since $e = \frac{11}{24} \approx 0.458$ and $0 \lt e \lt 1$The collision is **inelastic**.
 
@@ -77,21 +91,26 @@ $$\Delta\mathrm{KE} = 77 - \frac{49}{3} = \frac{231 - 49}{3} = \frac{182}{3} \ap
 
 **Question:**
 
-A ball is dropped from a height of $10$ m onto a smooth horizontal floor. The coefficient of restitution between the ball and the floor is $e = 0.6$. Take $g = 9.8$ m/s$^2$.
+A ball is dropped from a height of $10$ m onto a smooth horizontal floor. The coefficient of
+restitution between the ball and the floor is $e = 0.6$. Take $g = 9.8$ m/s$^2$.
 
 **(a)** Find the height reached after the first bounce.
 
-**(b)** Show that the height after the $n$-th bounce is $h_n = 10e^{2n}$ and find the total vertical distance travelled before the ball comes to rest.
+**(b)** Show that the height after the $n$-th bounce is $h_n = 10e^{2n}$ and find the total vertical
+distance travelled before the ball comes to rest.
 
 **(c)** Find the total time for which the ball continues to bounce.
 
-**(d)** A student claims that the ball bounces "forever" because $h_n \to 0$ as $n \to \infty$ but never reaches zero. Explain why, in practice, the ball stops bouncing.
+**(d)** A student claims that the ball bounces "forever" because $h_n \to 0$ as $n \to \infty$ but
+never reaches zero. Explain why, in practice, the ball stops bouncing.
 
-[Difficulty: hard. Tests the geometric series arising from successive bounces with coefficient of restitution, requiring summation to infinity.]
+[Difficulty: hard. Tests the geometric series arising from successive bounces with coefficient of
+restitution, requiring summation to infinity.]
 
 **Solution:**
 
-**(a)** Speed just before first impact: $u = \sqrt{2gh} = \sqrt◆LB◆2 \times 9.8 \times 10◆RB◆ = \sqrt{196} = 14$ m/s.
+**(a)** Speed just before first impact:
+$u = \sqrt{2gh} = \sqrt◆LB◆2 \times 9.8 \times 10◆RB◆ = \sqrt{196} = 14$ m/s.
 
 Speed just after first impact: $v = eu = 0.6 \times 14 = 8.4$ m/s.
 
@@ -113,7 +132,9 @@ $$\sum_{n=1}^{\infty}(0.36)^n = \frac{0.36}{1 - 0.36} = \frac{0.36}{0.64} = \fra
 
 $$\text{Total distance} = 10 + 20 \times \frac{9}{16} = 10 + \frac{180}{16} = 10 + 11.25 = 21.25 \text{ m}$$
 
-**(c)** Time for the initial fall: $t_0 = \sqrt◆LB◆\frac{2h}{g}◆RB◆ = \sqrt◆LB◆\frac{20}{9.8}◆RB◆ = \sqrt◆LB◆\frac{100}{49}◆RB◆ = \frac{10}{7}$ s.
+**(c)** Time for the initial fall:
+$t_0 = \sqrt◆LB◆\frac{2h}{g}◆RB◆ = \sqrt◆LB◆\frac{20}{9.8}◆RB◆ = \sqrt◆LB◆\frac{100}{49}◆RB◆ = \frac{10}{7}$
+s.
 
 After the $n$-th bounce, the time in the air (up and down) is:
 
@@ -123,7 +144,11 @@ Total time $= t_0 + \sum_{n=1}^{\infty}t_n = \frac{10}{7} + \frac{20}{7}\sum_{n=
 
 $$= \frac{10}{7} + \frac{20}{7} \times \frac{0.6}{1 - 0.6} = \frac{10}{7} + \frac{20}{7} \times \frac{3}{2} = \frac{10}{7} + \frac{30}{7} = \frac{40}{7} \approx 5.71 \text{ s}$$
 
-**(d)** Mathematically, the geometric series converges to a finite sum, meaning the ball completes infinitely many bounces in finite time. In practice, once the bounce height falls below the scale of surface irregularities, atomic vibrations, and thermal effects, the coefficient of restitution model breaks down. The ball's energy is eventually fully dissipated as heat and sound, and it comes to rest. The model assumes $e$ is constant, which is only an approximation for macroscopic bounces.
+**(d)** Mathematically, the geometric series converges to a finite sum, meaning the ball completes
+infinitely many bounces in finite time. In practice, once the bounce height falls below the scale of
+surface irregularities, atomic vibrations, and thermal effects, the coefficient of restitution model
+breaks down. The ball's energy is eventually fully dissipated as heat and sound, and it comes to
+rest. The model assumes $e$ is constant, which is only an approximation for macroscopic bounces.
 
 ---
 
@@ -131,17 +156,23 @@ $$= \frac{10}{7} + \frac{20}{7} \times \frac{0.6}{1 - 0.6} = \frac{10}{7} + \fra
 
 **Question:**
 
-A trolley of mass $2$ kg moves at $4$ m/s on a smooth horizontal table. It collides with a stationary trolley of mass $3$ kg and the two trolleys stick together.
+A trolley of mass $2$ kg moves at $4$ m/s on a smooth horizontal table. It collides with a
+stationary trolley of mass $3$ kg and the two trolleys stick together.
 
 **(a)** Find the common velocity after the collision.
 
-**(b)** Calculate the kinetic energy lost and explain why momentum is conserved but kinetic energy is not.
+**(b)** Calculate the kinetic energy lost and explain why momentum is conserved but kinetic energy
+is not.
 
-**(c)** The combined trolley then hits a buffer at the end of the table and comes to rest in $0.1$ s. Find the average force exerted by the buffer. Is momentum conserved during this second collision? Justify your answer.
+**(c)** The combined trolley then hits a buffer at the end of the table and comes to rest in $0.1$
+s. Find the average force exerted by the buffer. Is momentum conserved during this second collision?
+Justify your answer.
 
-**(d)** A student states: "Momentum is always conserved in collisions." Give a counterexample where momentum is not conserved during a collision.
+**(d)** A student states: "Momentum is always conserved in collisions." Give a counterexample where
+momentum is not conserved during a collision.
 
-[Difficulty: hard. Tests the conditions under which momentum conservation applies, the distinction between the collision itself and the broader system, and the identification of external forces.]
+[Difficulty: hard. Tests the conditions under which momentum conservation applies, the distinction
+between the collision itself and the broader system, and the identification of external forces.]
 
 **Solution:**
 
@@ -155,9 +186,14 @@ $\text{KE}_{\text{after}} = \frac{1}{2}(5)(2.56) = 6.4$ J.
 
 $\Delta\mathrm{KE} = 16 - 6.4 = 9.6$ J lost.
 
-Momentum is conserved because the only forces during the collision are the internal contact forces between the two trolleys. By Newton's Third Law, these are equal and opposite, so their impulses cancel. No external horizontal force acts on the system.
+Momentum is conserved because the only forces during the collision are the internal contact forces
+between the two trolleys. By Newton's Third Law, these are equal and opposite, so their impulses
+cancel. No external horizontal force acts on the system.
 
-Kinetic energy is not conserved because the collision is perfectly inelastic ($e = 0$). The "missing" kinetic energy is converted to other forms: sound, heat, and permanent deformation of the trolleys. The work-energy theorem still holds (the contact forces do net negative work on the system), but the kinetic energy is not preserved.
+Kinetic energy is not conserved because the collision is perfectly inelastic ($e = 0$). The
+"missing" kinetic energy is converted to other forms: sound, heat, and permanent deformation of the
+trolleys. The work-energy theorem still holds (the contact forces do net negative work on the
+system), but the kinetic energy is not preserved.
 
 **(c)** The combined trolley decelerates from $1.6$ m/s to $0$ in $0.1$ s.
 
@@ -167,9 +203,16 @@ $$F = \frac{-8}{0.1} = -80 \text{ N}$$
 
 The average force exerted by the buffer on the trolley is $80$ N (opposing the motion).
 
-**Is momentum conserved?** The momentum of the **trolley** is not conserved: it changes from $8$ kg m/s to $0$. However, the momentum of the **trolley + buffer + table + Earth** system IS conserved. The buffer exerts an external force on the trolley, so the trolley alone is not a closed system. Momentum is only conserved for a closed system (no net external force).
+**Is momentum conserved?** The momentum of the **trolley** is not conserved: it changes from $8$ kg
+m/s to $0$. However, the momentum of the **trolley + buffer + table + Earth** system IS conserved.
+The buffer exerts an external force on the trolley, so the trolley alone is not a closed system.
+Momentum is only conserved for a closed system (no net external force).
 
-**(d)** A particle falling vertically and hitting the ground: during the impact, the ground exerts a normal reaction on the particle (an external force). The momentum of the particle changes from $mv$ downward to $mev$ upward (or $0$ if it doesn't bounce). The particle's momentum is not conserved because gravity and the ground reaction are external forces acting on it. Only the momentum of the particle + Earth system is conserved.
+**(d)** A particle falling vertically and hitting the ground: during the impact, the ground exerts a
+normal reaction on the particle (an external force). The momentum of the particle changes from $mv$
+downward to $mev$ upward (or $0$ if it doesn't bounce). The particle's momentum is not conserved
+because gravity and the ground reaction are external forces acting on it. Only the momentum of the
+particle + Earth system is conserved.
 
 ---
 
@@ -181,7 +224,8 @@ The average force exerted by the buffer on the trolley is $80$ N (opposing the m
 
 **Question:**
 
-A force $F(t) = 12t^2 - 8t + 2$ N acts on a particle of mass $4$ kg for $0 \leq t \leq 2$ s. The particle is initially at rest.
+A force $F(t) = 12t^2 - 8t + 2$ N acts on a particle of mass $4$ kg for $0 \leq t \leq 2$ s. The
+particle is initially at rest.
 
 **(a)** Find the impulse exerted on the particle over the time interval $[0, 2]$.
 
@@ -189,13 +233,17 @@ A force $F(t) = 12t^2 - 8t + 2$ N acts on a particle of mass $4$ kg for $0 \leq 
 
 **(c)** Find the work done by the force from $t = 0$ to $t = 2$ s.
 
-**(d)** Verify the work-energy theorem by showing that the work done equals the change in kinetic energy.
+**(d)** Verify the work-energy theorem by showing that the work done equals the change in kinetic
+energy.
 
-[Difficulty: hard. Combines integration of a variable force for impulse with the work-energy theorem, requiring the student to find velocity as a function of time and then compute work via $\int F\,ds$.]
+[Difficulty: hard. Combines integration of a variable force for impulse with the work-energy
+theorem, requiring the student to find velocity as a function of time and then compute work via
+$\int F\,ds$.]
 
 **Solution:**
 
-**(a)** $$J = \int_0^2 F(t)\,dt = \int_0^2 (12t^2 - 8t + 2)\,dt = \left[4t^3 - 4t^2 + 2t\right]_0^2$$
+**(a)**
+$$J = \int_0^2 F(t)\,dt = \int_0^2 (12t^2 - 8t + 2)\,dt = \left[4t^3 - 4t^2 + 2t\right]_0^2$$
 
 $$= (32 - 16 + 4) - 0 = 20 \text{ Ns}$$
 
@@ -235,17 +283,23 @@ Since $W = 50$ J $= \Delta\mathrm{KE}$The work-energy theorem is verified.
 
 **Question:**
 
-A smooth sphere $A$ of mass $4$ kg moving at $10$ m/s collides with a smooth sphere $B$ of mass $6$ kg moving at $5$ m/s. Before collision, the spheres are moving along the same straight line. After collision, sphere $A$ moves at an angle of $30°$ to its original direction with speed $4$ m/s.
+A smooth sphere $A$ of mass $4$ kg moving at $10$ m/s collides with a smooth sphere $B$ of mass $6$
+kg moving at $5$ m/s. Before collision, the spheres are moving along the same straight line. After
+collision, sphere $A$ moves at an angle of $30°$ to its original direction with speed $4$ m/s.
 
 **(a)** Find the velocity of sphere $B$ after the collision.
 
 **(b)** Find the coefficient of restitution.
 
-**(c)** Find the kinetic energy lost in the collision and express it as a percentage of the initial kinetic energy.
+**(c)** Find the kinetic energy lost in the collision and express it as a percentage of the initial
+kinetic energy.
 
-**(d)** Show that the angle $\theta$ that $B$'s velocity makes with the original direction satisfies $\tan\theta = \frac◆LB◆2\sin 30°◆RB◆◆LB◆\text{(expression involving masses and velocities)}◆RB◆$ and evaluate $\theta$.
+**(d)** Show that the angle $\theta$ that $B$'s velocity makes with the original direction satisfies
+$\tan\theta = \frac◆LB◆2\sin 30°◆RB◆◆LB◆\text{(expression involving masses and velocities)}◆RB◆$ and
+evaluate $\theta$.
 
-[Difficulty: hard. Combines 2D momentum conservation with energy analysis, requiring resolution into components and reconstruction of the velocity vector.]
+[Difficulty: hard. Combines 2D momentum conservation with energy analysis, requiring resolution into
+components and reconstruction of the velocity vector.]
 
 **Solution:**
 
@@ -275,7 +329,8 @@ $$4 \times 2 + 6v_{By} = 0$$
 
 $$6v_{By} = -8 \implies v_{By} = -\frac{4}{3} \text{ m/s}$$
 
-Speed of $B$: $v_B = \sqrt{v_{Bx}^2 + v_{By}^2} = \sqrt◆LB◆\left(\frac{35 - 4\sqrt{3}}{3}\right)^2 + \frac{16}{9}◆RB◆$
+Speed of $B$:
+$v_B = \sqrt{v_{Bx}^2 + v_{By}^2} = \sqrt◆LB◆\left(\frac{35 - 4\sqrt{3}}{3}\right)^2 + \frac{16}{9}◆RB◆$
 
 $$= \sqrt◆LB◆\frac{(35 - 4\sqrt{3})^2 + 16}{9}◆RB◆ = \sqrt◆LB◆\frac{1225 - 280\sqrt{3} + 48 + 16}{9}◆RB◆ = \sqrt◆LB◆\frac{1289 - 280\sqrt{3}}{9}◆RB◆$$
 
@@ -283,7 +338,8 @@ $\sqrt{3} \approx 1.732$So $1289 - 484.96 = 804.04$.
 
 $$v_B = \sqrt◆LB◆\frac{804.04}{9}◆RB◆ = \sqrt{89.34} \approx 9.45 \text{ m/s}$$
 
-**(b)** The coefficient of restitution applies along the line of centres. For a head-on collision becoming oblique, the line of centres is the original direction of motion (the $x$-axis).
+**(b)** The coefficient of restitution applies along the line of centres. For a head-on collision
+becoming oblique, the line of centres is the original direction of motion (the $x$-axis).
 
 $$e = \frac{v_{Bx} - v_{Ax}}{u_{Ax} - u_{Bx}} = \frac◆LB◆\frac{35 - 4\sqrt{3}}{3} - 2\sqrt{3}◆RB◆◆LB◆10 - 5◆RB◆$$
 
@@ -295,7 +351,8 @@ $$= \frac{7 - 3.464}{3} = \frac{3.536}{3} \approx 0.179$$
 
 $\text{KE}_{\text{after}} = \frac{1}{2}(4)(16) + \frac{1}{2}(6)(89.34) = 32 + 268.0 = 300$ J.
 
-Wait -- $\text{KE}_{\text{after}} \gt \text{KE}_{\text{before}}$Which is impossible ($e \leq 1$ implies no energy creation). Let me recheck.
+Wait -- $\text{KE}_{\text{after}} \gt \text{KE}_{\text{before}}$Which is impossible ($e \leq 1$
+implies no energy creation). Let me recheck.
 
 $v_B^2 = \frac◆LB◆1289 - 280\sqrt{3}◆RB◆◆LB◆9◆RB◆$.
 
@@ -305,9 +362,14 @@ $v_B^2 = \frac{1289 - 484.98}{9} = \frac{804.02}{9} = 89.34$.
 
 $\text{KE}_{\text{after}} = 32 + \frac{6}{2} \times 89.34 = 32 + 268.0 = 300$ J.
 
-This exceeds the initial KE of $275$ J, which violates $e \leq 1$. This means the stated data ($A$ deflects at $30°$ with speed $4$ m/s) is inconsistent with momentum and energy conservation. The problem is over-specified with contradictory data.
+This exceeds the initial KE of $275$ J, which violates $e \leq 1$. This means the stated data ($A$
+deflects at $30°$ with speed $4$ m/s) is inconsistent with momentum and energy conservation. The
+problem is over-specified with contradictory data.
 
-**Conclusion:** The given data is inconsistent. With the given masses, initial velocities, and the stated post-collision velocity of $A$The resulting velocity of $B$ implies kinetic energy creation. This diagnostic test is designed to identify whether the student recognises physically impossible data.
+**Conclusion:** The given data is inconsistent. With the given masses, initial velocities, and the
+stated post-collision velocity of $A$The resulting velocity of $B$ implies kinetic energy creation.
+This diagnostic test is designed to identify whether the student recognises physically impossible
+data.
 
 **(d)** From part (a): $v_{Bx} = \frac◆LB◆35 - 4\sqrt{3}◆RB◆◆LB◆3◆RB◆$ and $v_{By} = -\frac{4}{3}$.
 
@@ -315,7 +377,9 @@ $$\tan\theta = \frac◆LB◆\lvert v_{By} \rvert◆RB◆◆LB◆v_{Bx}◆RB◆ =
 
 $$\theta \approx \arctan(0.1425) \approx 8.1°$$
 
-Note: $\tan\theta = \frac◆LB◆2\sin 30°◆RB◆◆LB◆\frac{35 - 4\sqrt{3}}{3} - 2\sqrt{3}◆RB◆$... This does not simplify neatly because the data is inconsistent. The angle is approximately $8.1°$ below the original line of motion.
+Note: $\tan\theta = \frac◆LB◆2\sin 30°◆RB◆◆LB◆\frac{35 - 4\sqrt{3}}{3} - 2\sqrt{3}◆RB◆$... This does
+not simplify neatly because the data is inconsistent. The angle is approximately $8.1°$ below the
+original line of motion.
 
 ---
 
@@ -323,17 +387,22 @@ Note: $\tan\theta = \frac◆LB◆2\sin 30°◆RB◆◆LB◆\frac{35 - 4\sqrt{3}}
 
 **Question:**
 
-A particle $P$ of mass $2$ kg moves at $8$ m/s towards a smooth vertical wall. After rebounding from the wall (coefficient of restitution $e = 0.75$), $P$ collides with a second particle $Q$ of mass $3$ kg which is at rest. The coefficient of restitution between $P$ and $Q$ is $e' = 0.5$.
+A particle $P$ of mass $2$ kg moves at $8$ m/s towards a smooth vertical wall. After rebounding from
+the wall (coefficient of restitution $e = 0.75$), $P$ collides with a second particle $Q$ of mass
+$3$ kg which is at rest. The coefficient of restitution between $P$ and $Q$ is $e' = 0.5$.
 
 **(a)** Find the velocity of $P$ after rebounding from the wall.
 
 **(b)** Find the velocities of $P$ and $Q$ after the collision between $P$ and $Q$.
 
-**(c)** After the collision with $Q$$P$ moves on a rough horizontal surface with $\mu = 0.4$. Find the distance $P$ travels before coming to rest.
+**(c)** After the collision with $Q$$P$ moves on a rough horizontal surface with $\mu = 0.4$. Find
+the distance $P$ travels before coming to rest.
 
-**(d)** Find the total kinetic energy lost in both collisions combined, and the total impulse exerted by the wall on $P$.
+**(d)** Find the total kinetic energy lost in both collisions combined, and the total impulse
+exerted by the wall on $P$.
 
-[Difficulty: hard. Combines wall rebound with restitution, two-particle collision, subsequent kinematics on a rough surface, and energy accounting across multiple events.]
+[Difficulty: hard. Combines wall rebound with restitution, two-particle collision, subsequent
+kinematics on a rough surface, and energy accounting across multiple events.]
 
 **Solution:**
 
@@ -393,4 +462,5 @@ Taking towards the wall as positive:
 
 $J = m(v - u) = 2(-6 - 8) = 2(-14) = -28$ Ns.
 
-The impulse is $28$ Ns away from the wall (the wall pushes $P$ back). This equals the change in momentum, confirming the impulse-momentum theorem.
+The impulse is $28$ Ns away from the wall (the wall pushes $P$ back). This equals the change in
+momentum, confirming the impulse-momentum theorem.

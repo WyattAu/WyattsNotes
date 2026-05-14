@@ -1,9 +1,12 @@
 ---
 id: vpn-and-tunneling
 title: VPN and Tunneling
-description: "VPN and Tunneling — VPN Fundamentals; Tunneling, Encryption, and Authentication; VPN Types; WireGuard with worked examples and exam-style questions."
+description:
+  'VPN and Tunneling — VPN Fundamentals; Tunneling, Encryption, and Authentication; VPN Types;
+  WireGuard with worked examples and exam-style questions.'
 slug: vpn-and-tunneling
 ---
+
 ## VPN Fundamentals
 
 ### Tunneling, Encryption, and Authentication
@@ -19,12 +22,12 @@ The three core functions are:
 
 ### VPN Types
 
-| Type | Layer | Use Case | Example |
+| Type          | Layer    | Use Case                          | Example                  |
 | ------------- | -------- | --------------------------------- | ------------------------ |
-| Remote access | L3 (IP) | Employees connecting to corporate | WireGuard, OpenVPN |
-| Site-to-site | L3 (IP) | Connecting office networks | IPsec, WireGuard |
-| SSL/TLS VPN | L7 (app) | Browser-based access | OpenVPN (TLS mode) |
-| SSH tunneling | L7 (app) | Ad-hoc port forwarding | SSH local/remote/dynamic |
+| Remote access | L3 (IP)  | Employees connecting to corporate | WireGuard, OpenVPN       |
+| Site-to-site  | L3 (IP)  | Connecting office networks        | IPsec, WireGuard         |
+| SSL/TLS VPN   | L7 (app) | Browser-based access              | OpenVPN (TLS mode)       |
+| SSH tunneling | L7 (app) | Ad-hoc port forwarding            | SSH local/remote/dynamic |
 
 ## WireGuard
 
@@ -91,7 +94,7 @@ The `AllowedIPs` directive is the routing decision point:
 
 - On the **server**, `AllowedIPs = 10.0.0.2/32` means "accept packets FROM this IP only"
 - On the **client**, `AllowedIPs = 10.0.0.0/24` means "route packets TO this subnet through the
- tunnel"
+  tunnel"
 - `AllowedIPs = 0.0.0.0/0` routes ALL traffic through the tunnel (full VPN)
 - `AllowedIPs = 10.0.0.0/24` routes only VPN subnet traffic (split tunnel)
 
@@ -99,11 +102,11 @@ The `AllowedIPs` directive is the routing decision point:
 
 WireGuard is significantly faster than OpenVPN and IPsec:
 
-| Protocol | Throughput (approx) | CPU Usage | Code Size | Handshake Time |
+| Protocol  | Throughput (approx) | CPU Usage | Code Size | Handshake Time |
 | --------- | ------------------- | --------- | --------- | -------------- |
-| WireGuard | Near line rate | Very low | ~4000 LOC | ~1 RTT |
-| OpenVPN | 100-600 Mbps | Moderate | ~100K LOC | 2-4 RTTs |
-| IPsec | 200-800 Mbps | Moderate | ~400K LOC | 2 RTTs |
+| WireGuard | Near line rate      | Very low  | ~4000 LOC | ~1 RTT         |
+| OpenVPN   | 100-600 Mbps        | Moderate  | ~100K LOC | 2-4 RTTs       |
+| IPsec     | 200-800 Mbps        | Moderate  | ~400K LOC | 2 RTTs         |
 
 ```bash
 # Enable WireGuard
@@ -161,10 +164,10 @@ alice : EAP "alice_password"
 
 ### IPsec Modes
 
-| Mode | Encapsulation | Use Case |
+| Mode      | Encapsulation                 | Use Case                        |
 | --------- | ----------------------------- | ------------------------------- |
-| Transport | Original IP header preserved | Host-to-host communication |
-| Tunnel | Entire IP packet encapsulated | Site-to-site, remote access VPN |
+| Transport | Original IP header preserved  | Host-to-host communication      |
+| Tunnel    | Entire IP packet encapsulated | Site-to-site, remote access VPN |
 
 ### SA and SPI
 
@@ -382,13 +385,13 @@ Every node connects to every other node. Scales as O(n^2) with the number of nod
 
 ## VPN vs Zero-Trust
 
-| Aspect | VPN | Zero-Trust |
+| Aspect          | VPN                            | Zero-Trust                   |
 | --------------- | ------------------------------ | ---------------------------- |
-| Network model | Perimeter-based | Identity-based |
-| Access model | Full network access on connect | Least-privilege per resource |
-| Trust | Trusted once connected | Never trust, always verify |
-| Scalability | Hub-and-spoke bottlenecks | Scales per service |
-| User experience | Connect, then access all | Authenticate per application |
+| Network model   | Perimeter-based                | Identity-based               |
+| Access model    | Full network access on connect | Least-privilege per resource |
+| Trust           | Trusted once connected         | Never trust, always verify   |
+| Scalability     | Hub-and-spoke bottlenecks      | Scales per service           |
+| User experience | Connect, then access all       | Authenticate per application |
 
 ### When to Use Each
 
@@ -523,13 +526,13 @@ keepalive 10 120  # ping every 10s, restart after 120s silence
 
 ## Commercial vs Self-Hosted
 
-| Solution | Type | Ease of Use | Privacy | Cost |
+| Solution          | Type        | Ease of Use | Privacy | Cost             |
 | ----------------- | ----------- | ----------- | ------- | ---------------- |
-| WireGuard | Self-hosted | Medium | Full | Server cost |
-| OpenVPN | Self-hosted | Medium | Full | Server cost |
-| Tailscale | Managed WG | Easy | Partial | Free tier + paid |
-| Headscale | Self-hosted | Medium | Full | Server cost |
-| Cloudflare Tunnel | Managed | Easy | Partial | Free tier + paid |
+| WireGuard         | Self-hosted | Medium      | Full    | Server cost      |
+| OpenVPN           | Self-hosted | Medium      | Full    | Server cost      |
+| Tailscale         | Managed WG  | Easy        | Partial | Free tier + paid |
+| Headscale         | Self-hosted | Medium      | Full    | Server cost      |
+| Cloudflare Tunnel | Managed     | Easy        | Partial | Free tier + paid |
 
 ### Tailscale
 
@@ -579,8 +582,8 @@ Configure the VPN to push the correct DNS settings, or manually configure the cl
 
 ### Not Using PersistentKeepalive
 
-Without `PersistentKeepalive`NAT mappings expire and the VPN connection drops silently. This is
-The most common cause of "VPN was working yesterday but stopped today."
+Without `PersistentKeepalive`NAT mappings expire and the VPN connection drops silently. This is The
+most common cause of "VPN was working yesterday but stopped today."
 
 ### MTU Mismatch
 

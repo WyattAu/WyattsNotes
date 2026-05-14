@@ -1,6 +1,8 @@
 ---
 title: Integrals
-description: "Integrals — Basic Integration Rules; The Power Rule for Integration; Riemann Sums and the Definite Integral (CED Unit 6); Riemann Sums."
+description:
+  'Integrals — Basic Integration Rules; The Power Rule for Integration; Riemann Sums and the
+  Definite Integral (CED Unit 6); Riemann Sums.'
 date: 2026-04-14
 tags:
   - Mathematics
@@ -9,20 +11,15 @@ categories:
   - Mathematics
 slug: integrals
 ---
+
 ## Antiderivatives and Indefinite Integrals (CED Unit 6)
 
 An **antiderivative** of $f$ is a function $F$ such that $F' = f$. The **indefinite integral** is:
 
-
-<DesmosGraph
- title="Definite Integral as Area Under a Curve"
- expressions={["\int_{a}^{b} f(x) \, dx"]}
- width={800}
- height={500}
-/>
+<DesmosGraph title="Definite Integral as Area Under a Curve" expressions={["\int_{a}^{b} f(x) \,
+dx"]} width={800} height={500} />
 
 Adjust the parameters in the graph above to explore the relationships between variables.
-
 
 $$
 \int f(x)\, dx = F(x) + C
@@ -32,19 +29,19 @@ Where $C$ is the constant of integration.
 
 ### Basic Integration Rules
 
-| Function $f(x)$ | Antiderivative $F(x)$ |
+| Function $f(x)$          | Antiderivative $F(x)$     |
 | ------------------------ | ------------------------- | --- | ---- |
-| $x^n$ ($n \ne -1$) | $\frac{x^{n+1}}{n+1} + C$ |
-| $\frac{1}{x}$ | $\ln                      | x   | + C$ |
-| $e^x$ | $e^x + C$ |
-| $\sin x$ | $-\cos x + C$ |
-| $\cos x$ | $\sin x + C$ |
-| $\sec^2 x$ | $\tan x + C$ |
-| $\csc^2 x$ | $-\cot x + C$ |
-| $\sec x \tan x$ | $\sec x + C$ |
-| $\csc x \cot x$ | $-\csc x + C$ |
-| $\frac{1}{1+x^2}$ | $\arctan x + C$ |
-| $\frac{1}{\sqrt{1-x^2}}$ | $\arcsin x + C$ |
+| $x^n$ ($n \ne -1$)       | $\frac{x^{n+1}}{n+1} + C$ |
+| $\frac{1}{x}$            | $\ln                      | x   | + C$ |
+| $e^x$                    | $e^x + C$                 |
+| $\sin x$                 | $-\cos x + C$             |
+| $\cos x$                 | $\sin x + C$              |
+| $\sec^2 x$               | $\tan x + C$              |
+| $\csc^2 x$               | $-\cot x + C$             |
+| $\sec x \tan x$          | $\sec x + C$              |
+| $\csc x \cot x$          | $-\csc x + C$             |
+| $\frac{1}{1+x^2}$        | $\arctan x + C$           |
+| $\frac{1}{\sqrt{1-x^2}}$ | $\arcsin x + C$           |
 
 ### The Power Rule for Integration
 
@@ -53,8 +50,8 @@ $$
 $$
 
 **Why the power rule excludes $n = -1$.** Substituting $n = -1$ gives $\frac{x^0}{0}$Which is
-Undefined. The antiderivative of $\frac{1}{x}$ is $\ln|x|$A fundamental result with deep
-Connections to the natural logarithm.
+Undefined. The antiderivative of $\frac{1}{x}$ is $\ln|x|$A fundamental result with deep Connections
+to the natural logarithm.
 
 **Why the absolute value in $\ln|x|$.** The derivative of $\ln x$ is $\frac{1}{x}$ for $x \gt 0$.
 For $x \lt 0$The derivative of $\ln(-x)$ is $\frac{1}{-x} \cdot (-1) = \frac{1}{x}$. So the
@@ -99,15 +96,15 @@ $$
 
 Where $\Delta x = \frac{b - a}{n}$ and $x_i^*$ is a sample point in the $i$Th subinterval.
 
-| Type | Sample Point $x_i^*$ |
+| Type              | Sample Point $x_i^*$                              |
 | ----------------- | ------------------------------------------------- |
-| Left Riemann sum | Left endpoint |
-| Right Riemann sum | Right endpoint |
-| Midpoint sum | Midpoint of subinterval |
-| Trapezoidal sum | Average of endpoints (trapezoids, not rectangles) |
+| Left Riemann sum  | Left endpoint                                     |
+| Right Riemann sum | Right endpoint                                    |
+| Midpoint sum      | Midpoint of subinterval                           |
+| Trapezoidal sum   | Average of endpoints (trapezoids, not rectangles) |
 
-**Why Riemann sums matter.** They are the foundation of the definite integral. As $n \to \infty$
-The approximation becomes exact (for continuous functions).
+**Why Riemann sums matter.** They are the foundation of the definite integral. As $n \to \infty$ The
+approximation becomes exact (for continuous functions).
 
 **Theorem.** If $f$ is continuous on $[a, b]$Then the Riemann sum converges to the same value
 Regardless of the choice of sample points $x_i^*$.
@@ -370,9 +367,9 @@ Inverse trig functions simplify upon differentiation. Algebraic functions requir
 Parts to reduce their degree.
 
 **Tabular integration (DI method).** For integrals of the form $\displaystyle\int f(x)g(x)\, dx$
-Where $f(x)$ is a polynomial and $g(x)$ has an repeatable derivative pattern, use a table.
-Label columns D (derivatives of $f$) and I (integrals of $g$), alternating signs $+$$-$$+$$-$.
-The result is the sum of diagonal products.
+Where $f(x)$ is a polynomial and $g(x)$ has an repeatable derivative pattern, use a table. Label
+columns D (derivatives of $f$) and I (integrals of $g$), alternating signs $+$$-$$+$$-$. The result
+is the sum of diagonal products.
 
 :::info[Example]
 
@@ -413,9 +410,9 @@ $$
 
 | Sign | D (derivatives) | I (integrals) |
 | ---- | --------------- | ------------- |
-| $+$ | $x^2$ | $e^x$ |
-| $-$ | $2x$ | $e^x$ |
-| $+$ | $2$ | $e^x$ |
+| $+$  | $x^2$           | $e^x$         |
+| $-$  | $2x$            | $e^x$         |
+| $+$  | $2$             | $e^x$         |
 
 Result: $x^2 e^x - 2xe^x + 2e^x = e^x(x^2 - 2x + 2)$. Confirmed.
 
@@ -592,8 +589,7 @@ Of rotation. Use the shell method when integrating parallel to the axis of rotat
 
 :::info[Example]
 
-Find the volume of the solid obtained by rotating $y = \sqrt{x}$$y = 0$$x = 4$ about the
-$x$-axis.
+Find the volume of the solid obtained by rotating $y = \sqrt{x}$$y = 0$$x = 4$ about the $x$-axis.
 
 Using the disk method:
 
@@ -678,45 +674,45 @@ $$
 ## Common Pitfalls
 
 1. **Forgetting the constant of integration** in indefinite integrals. Without it, the answer is
- incomplete.
+   incomplete.
 2. **Incorrect $u$-substitution limits.** When using $u$-substitution for definite integrals, always
- change the limits or substitute back to the original variable.
+   change the limits or substitute back to the original variable.
 3. **Forgetting to change $dx$ to $du$** when performing $u$-substitution.
 4. **Applying FTC Part 2 to discontinuous functions.** $f$ must be continuous on $[a, b]$.
 5. **Confusing net area with total area.** Use absolute values for total area.
 6. **Incorrectly choosing $u$ in integration by parts.** Use LIATE: prioritize Logarithmic over
- Inverse trig over Algebraic over Trig over Exponential.
+   Inverse trig over Algebraic over Trig over Exponential.
 7. **Sign errors with FTC Part 1 chain rule.** The derivative of $\int_a^{g(x)} f(t)\, dt$ is
- $f(g(x)) \cdot g'(x)$Not $f(g(x))$.
+   $f(g(x)) \cdot g'(x)$Not $f(g(x))$.
 8. **Forgetting to split improper integrals at the discontinuity** when a singularity is in the
- interval.
+   interval.
 9. **Choosing the disk vs. Washer vs. Shell method incorrectly.** Disk: rotate around $x$-axis using
- radius. Shell: rotate around $y$-axis using height as the integrand. Washer: region between two
- curves rotated about an axis.
+   radius. Shell: rotate around $y$-axis using height as the integrand. Washer: region between two
+   curves rotated about an axis.
 10. **Dropping the absolute value in $\ln|x|$.** The antiderivative of $\frac{1}{x}$ is
- $\ln|x| + C$Not $\ln x + C$. On intervals where $x \lt 0$The integral is well-defined and
- equals $\ln(-x) + C$.
+    $\ln|x| + C$Not $\ln x + C$. On intervals where $x \lt 0$The integral is well-defined and equals
+    $\ln(-x) + C$.
 11. **Confusing the Gaussian integrals.**
- $\displaystyle\int_0^{\infty} xe^{-x^2}\, dx = \frac{1}{2}$ (evaluated via $u$-substitution),
- but $\displaystyle\int_0^{\infty} e^{-x^2}\, dx = \frac{\sqrt{\pi}}{2}$ (requires advanced
- techniques).
+    $\displaystyle\int_0^{\infty} xe^{-x^2}\, dx = \frac{1}{2}$ (evaluated via $u$-substitution),
+    but $\displaystyle\int_0^{\infty} e^{-x^2}\, dx = \frac{\sqrt{\pi}}{2}$ (requires advanced
+    techniques).
 
 ## Practice Questions
 
 1. Evaluate $\displaystyle\int \frac{x}{x^2 + 1}\, dx$.
 
 2. Evaluate $\displaystyle\int_0^{\pi/2} \sin^2 x\, dx$. (Hint: use the identity
- $\sin^2 x = \frac{1 - \cos 2x}{2}$.)
+   $\sin^2 x = \frac{1 - \cos 2x}{2}$.)
 
 3. Use integration by parts to evaluate $\displaystyle\int x^2 e^x\, dx$.
 
 4. Find the area between $y = x^2$ and $y = 2x$.
 
-5. Find the volume of the solid obtained by rotating the region bounded by $y = x^2$$y = 0$
- $x = 1$ about the $y$-axis. (Use the shell method.)
+5. Find the volume of the solid obtained by rotating the region bounded by $y = x^2$$y = 0$ $x = 1$
+   about the $y$-axis. (Use the shell method.)
 
 6. Determine whether $\displaystyle\int_0^{\infty} e^{-x}\, dx$ converges, and find its value if it
- does.
+   does.
 
 7. Find the average value of $f(x) = \sin x$ on $[0, \pi]$.
 
@@ -728,8 +724,8 @@ $$
 
 11. Evaluate $\displaystyle\int_1^e \frac{\ln x}{x}\, dx$.
 
-12. Find the volume when the region bounded by $y = e^{-x}$$y = 0$$x = 0$$x = 1$ is rotated
- about the $x$-axis.
+12. Find the volume when the region bounded by $y = e^{-x}$$y = 0$$x = 0$$x = 1$ is rotated about
+    the $x$-axis.
 
 13. Evaluate $\displaystyle\int_0^1 \frac{1}{1 + x^2}\, dx$ and explain the result geometrically.
 
@@ -753,13 +749,13 @@ Evaluate $\displaystyle\int x^3 e^x \, dx$ using the tabular method.
 
 Differentiate $x^3$ (column 1) and integrate $e^x$ (column 2) alternately with signs $+,-,+,-$:
 
-| Signs | $x^3$ | $e^x$ |
-|-------|-------|-------|
-| + | $x^3$ | $e^x$ |
-| - | $3x^2$ | $e^x$ |
-| + | $6x$ | $e^x$ |
-| - | $6$ | $e^x$ |
-| + | $0$ | $e^x$ |
+| Signs | $x^3$  | $e^x$ |
+| ----- | ------ | ----- |
+| +     | $x^3$  | $e^x$ |
+| -     | $3x^2$ | $e^x$ |
+| +     | $6x$   | $e^x$ |
+| -     | $6$    | $e^x$ |
+| +     | $0$    | $e^x$ |
 
 Result: $x^3 e^x - 3x^2 e^x + 6xe^x - 6e^x + C = e^x(x^3 - 3x^2 + 6x - 6) + C$.
 
@@ -810,7 +806,8 @@ $= (9 + 9 - 9) - (1 - 3 + 1/3) = 9 - (-5/3) = 9 + 5/3 = 32/3$ square units.
 <details>
 <summary>Question 4: Improper integral</summary>
 
-Determine whether $\displaystyle\int_1^{\infty} \frac{1}{x^p} \, dx$ converges or diverges, and find its value when it converges.
+Determine whether $\displaystyle\int_1^{\infty} \frac{1}{x^p} \, dx$ converges or diverges, and find
+its value when it converges.
 
 </details>
 
@@ -819,7 +816,8 @@ Determine whether $\displaystyle\int_1^{\infty} \frac{1}{x^p} \, dx$ converges o
 
 $\displaystyle\int_1^{\infty} \frac{1}{x^p} \, dx = \lim_{b \to \infty} \int_1^b x^{-p} \, dx$.
 
-For $p \ne 1$: $= \lim_{b \to \infty} \left[\frac{x^{1-p}}{1-p}\right]_1^b = \lim_{b \to \infty} \frac{b^{1-p} - 1}{1-p}$.
+For $p \ne 1$:
+$= \lim_{b \to \infty} \left[\frac{x^{1-p}}{1-p}\right]_1^b = \lim_{b \to \infty} \frac{b^{1-p} - 1}{1-p}$.
 
 - If $p \gt 1$: $1 - p \lt 0$So $b^{1-p} \to 0$. Integral converges to $\frac{1}{p - 1}$.
 - If $p \lt 1$: $1 - p \gt 0$So $b^{1-p} \to \infty$. Integral diverges.
@@ -833,7 +831,8 @@ The integral converges if and only if $p \gt 1$With value $\frac{1}{p-1}$.
 <details>
 <summary>Question 5: Volume of revolution</summary>
 
-Find the volume obtained by rotating the region bounded by $y = \sqrt{x}$$y = 0$And $x = 4$ about the x-axis.
+Find the volume obtained by rotating the region bounded by $y = \sqrt{x}$$y = 0$And $x = 4$ about
+the x-axis.
 
 </details>
 
@@ -842,20 +841,22 @@ Find the volume obtained by rotating the region bounded by $y = \sqrt{x}$$y = 0$
 
 Using the disk method:
 
-$V = \pi \int_0^4 (\sqrt{x})^2 \, dx = \pi \int_0^4 x \, dx = \pi \left[\frac{x^2}{2}\right]_0^4 = \pi(8) = 8\pi$ cubic units.
+$V = \pi \int_0^4 (\sqrt{x})^2 \, dx = \pi \int_0^4 x \, dx = \pi \left[\frac{x^2}{2}\right]_0^4 = \pi(8) = 8\pi$
+cubic units.
 
 </details>
 
 ---
 
-:::tip
-Diagnostic Test
-Ready to test your understanding of **Integrals**? The [diagnostic test](/docs/qualifications/ap/maths/diagnostics/diag-integrals) contains the hardest questions within the AP specification for this topic, each with a full worked solution.
+:::tip Diagnostic Test Ready to test your understanding of **Integrals**? The
+[diagnostic test](/docs/qualifications/ap/maths/diagnostics/diag-integrals) contains the hardest
+questions within the AP specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Integrals with other AP Calculus topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Integrals
+with other AP Calculus topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/qualifications/ap/maths/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/qualifications/ap/maths/diagnostics/diagnostic-guide) for instructions
+on self-marking and building a personal test matrix. :::
 
 ## Summary
 

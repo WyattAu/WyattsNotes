@@ -1,6 +1,8 @@
 ---
 title: Conflict Resolution
-description: "Conflict Resolution — Understanding Conflicts; When Conflicts Occur; Conflict Markers; Multi-Base Conflicts with worked examples and exam-style questions."
+description:
+  'Conflict Resolution — Understanding Conflicts; When Conflicts Occur; Conflict Markers; Multi-Base
+  Conflicts with worked examples and exam-style questions.'
 date: 2025-06-03T05:00:00.000Z
 tags:
   - git
@@ -10,9 +12,12 @@ categories:
   - CS
 slug: conflict-resolution
 ---
+
 ## Understanding Conflicts
 
-A merge conflict occurs when Git's three-way merge algorithm cannot automatically reconcile changes from two branches. This happens when **both branches modify the same region of the same file** in different ways.
+A merge conflict occurs when Git's three-way merge algorithm cannot automatically reconcile changes
+from two branches. This happens when **both branches modify the same region of the same file** in
+different ways.
 
 ### When Conflicts Occur
 
@@ -47,17 +52,18 @@ int authenticate(User *user) {
 >>>>>>> feature-auth
 ```
 
-| Marker | Meaning |
+| Marker                 | Meaning                                          |
 | ---------------------- | ------------------------------------------------ |
-| `<<<<<<< HEAD` | Start of conflict region. Our version begins. |
-| `=======` | Separator between our version and their version. |
-| `>>>>>>> feature-auth` | End of conflict region. Their version ends. |
+| `<<<<<<< HEAD`         | Start of conflict region. Our version begins.    |
+| `=======`              | Separator between our version and their version. |
+| `>>>>>>> feature-auth` | End of conflict region. Their version ends.      |
 
 The text after `>>>>>>>` identifies the branch being merged.
 
 ### Multi-Base Conflicts
 
-When both sides of a conflict have been merged from a common branch, Git may produce **multi-base conflict markers** (with the `ort` merge strategy):
+When both sides of a conflict have been merged from a common branch, Git may produce **multi-base
+conflict markers** (with the `ort` merge strategy):
 
 ```
 <<<<<<< HEAD
@@ -69,7 +75,8 @@ their version
 >>>>>>> feature-auth
 ```
 
-The middle section (between `|||||||` and `=======`) shows the common ancestor's version, which can be helpful for understanding what changed on both sides.
+The middle section (between `|||||||` and `=======`) shows the common ancestor's version, which can
+be helpful for understanding what changed on both sides.
 
 ## Resolution Strategies
 
@@ -168,7 +175,8 @@ Most visual merge tools present a three-pane view:
 
 ### Strategy 5: Custom Merge Drivers
 
-For file types where Git's line-by-line merge is inappropriate (e.g., JSON, XML, lockfiles), you can define custom merge drivers in `.gitattributes`:
+For file types where Git's line-by-line merge is inappropriate (e.g., JSON, XML, lockfiles), you can
+define custom merge drivers in `.gitattributes`:
 
 ```bash
 # .gitattributes
@@ -215,7 +223,8 @@ $ git rm src/legacy.c
 
 ### Rename Conflicts
 
-Git detects renames using a heuristic (file similarity threshold, default 50%). When one branch renames a file and the other modifies it, Git may or may not auto-resolve:
+Git detects renames using a heuristic (file similarity threshold, default 50%). When one branch
+renames a file and the other modifies it, Git may or may not auto-resolve:
 
 ```bash
 # Increase rename detection threshold
@@ -224,7 +233,8 @@ $ git merge -X find-renames=80 feature-auth
 
 ### Binary File Conflicts
 
-Git cannot show conflict markers for binary files (images, PDFs, compiled objects). It marks the entire file as conflicted:
+Git cannot show conflict markers for binary files (images, PDFs, compiled objects). It marks the
+entire file as conflicted:
 
 ```bash
 # Choose one version
@@ -249,7 +259,8 @@ Resolution: Edit the file to combine both versions, or choose one.
 
 ### 1. Reduce Overlap
 
-The best way to avoid conflicts is to minimize the chance of two developers modifying the same file simultaneously:
+The best way to avoid conflicts is to minimize the chance of two developers modifying the same file
+simultaneously:
 
 - **Small, focused branches**: Each branch should modify a small number of files.
 - **Clear ownership**: Assign files or modules to specific developers.
@@ -263,7 +274,8 @@ The best way to avoid conflicts is to minimize the chance of two developers modi
 
 ### 3. Use `git rerere`
 
-**Repeatedly Reuse Recorded Resolution** (`rerere`) remembers how you resolved a conflict and automatically applies the same resolution if the same conflict recurs:
+**Repeatedly Reuse Recorded Resolution** (`rerere`) remembers how you resolved a conflict and
+automatically applies the same resolution if the same conflict recurs:
 
 ```bash
 # Enable rerere

@@ -1,6 +1,8 @@
 ---
 title: Metabolism and Survival
-description: "Metabolism and Survival — Metabolism; Enzymes; Michaelis-Menten Kinetics; Cellular Respiration with worked examples and exam-style questions."
+description:
+  'Metabolism and Survival — Metabolism; Enzymes; Michaelis-Menten Kinetics; Cellular Respiration
+  with worked examples and exam-style questions.'
 date: 2026-04-14
 tags:
   - Biology
@@ -9,6 +11,7 @@ categories:
   - Biology
 slug: metabolism-and-survival
 ---
+
 # Metabolism and Survival
 
 :::info
@@ -56,10 +59,10 @@ Widely accepted.
 
 **Inhibitors:**
 
-| Type | Mechanism | Reversibility |
-| --------------- | --------------------------------------------------- | ------------------ |
-| Competitive | Binds to active site; competes with substrate | Reversible |
-| Non-competitive | Binds to allosteric site; changes active site shape | reversible |
+| Type            | Mechanism                                           | Reversibility |
+| --------------- | --------------------------------------------------- | ------------- |
+| Competitive     | Binds to active site; competes with substrate       | Reversible    |
+| Non-competitive | Binds to allosteric site; changes active site shape | reversible    |
 
 ### Michaelis-Menten Kinetics
 
@@ -99,13 +102,13 @@ An enzyme has the following rates at different substrate concentrations:
 
 | [S] (mM) | v ($\mu$Mol/min) |
 | -------- | ---------------- |
-| 1 | 1.67 |
-| 2 | 2.86 |
-| 5 | 4.55 |
-| 10 | 5.88 |
-| 20 | 6.90 |
-| 50 | 7.69 |
-| 100 | 8.00 |
+| 1        | 1.67             |
+| 2        | 2.86             |
+| 5        | 4.55             |
+| 10       | 5.88             |
+| 20       | 6.90             |
+| 50       | 7.69             |
+| 100      | 8.00             |
 
 At very high [S], $v$ approaches $V_{\max} \approx 8$ $\mu$Mol/min.
 
@@ -131,14 +134,14 @@ Pyruvate is decarboxylated and dehydrogenated:
 
 $$\mathrm{Pyruvate{} + \mathrm{NAD{}^+ + \mathrm{CoA{} \to \mathrm{Acetyl-CoA{} + \mathrm{CO{}_2 + \mathrm{NADH{}$$
 
-(Per glucose: 2 $\mathrm{CO{}_2$2 NADH)
+(Per glucose: 2 $\mathrm{CO{}\_2$2 NADH)
 
 #### Krebs Cycle (Mitochondrial Matrix)
 
 1. Acetyl-CoA (2C) combines with oxaloacetate (4C) to form citrate (6C)
 2. Citrate is decarboxylated and oxidised back to oxaloacetate
-3. Per turn: 2 $\mathrm{CO{}_2$3 NADH, 1 FADH$_2$1 ATP
-4. Per glucose: 4 $\mathrm{CO{}_2$6 NADH, 2 FADH$_2$2 ATP
+3. Per turn: 2 $\mathrm{CO{}_2$3 NADH, 1 FADH$\_2$1 ATP
+4. Per glucose: 4 $\mathrm{CO{}_2$6 NADH, 2 FADH$\_2$2 ATP
 
 #### Oxidative Phosphorylation (Inner Mitochondrial Membrane)
 
@@ -161,8 +164,9 @@ $$\mathrm{Pyruvate{} + \mathrm{NAD{}^+ + \mathrm{CoA{} \to \mathrm{Acetyl-CoA{} 
 #### Light-Dependent Reactions (Thylakoid Membranes)
 
 1. Light energy is absorbed by photosynthetic pigments (chlorophyll a, chlorophyll b, carotenoids)
- in Photosystem II and Photosystem I
-2. Water is split by photolysis: $2\mathrm{H{}_2\mathrm{O{} \to 4\mathrm{H{}^+ + 4e^- + \mathrm{O{}_2$
+   in Photosystem II and Photosystem I
+2. Water is split by photolysis:
+   $2\mathrm{H{}_2\mathrm{O{} \to 4\mathrm{H{}^+ + 4e^- + \mathrm{O{}_2$
 3. Electrons pass through the electron transport chain, generating a proton gradient
 4. ATP is produced by photophosphorylation
 5. NADP is reduced to NADPH
@@ -170,7 +174,7 @@ $$\mathrm{Pyruvate{} + \mathrm{NAD{}^+ + \mathrm{CoA{} \to \mathrm{Acetyl-CoA{} 
 #### Light-Independent Reactions (Calvin Cycle, Stroma)
 
 1. $\mathrm{CO{}_2$ is fixed by ribulose bisphosphate carboxylase (RuBisCO) combining with ribulose
- bisphosphate (RuBP, 5C) to form two molecules of glycerate-3-phosphate (GP, 3C)
+   bisphosphate (RuBP, 5C) to form two molecules of glycerate-3-phosphate (GP, 3C)
 2. GP is reduced to triose phosphate (TP) using ATP and NADPH
 3. Some TP is used to synthesise glucose and other organic compounds
 4. Most TP is used to regenerate RuBP (using ATP)
@@ -222,9 +226,9 @@ The skin and in the hypothalamus itself.
 
 - **Bowman's capsule:** Filtration of blood; forms glomerular filtrate
 - **Proximal convoluted tubule:** Selective reabsorption of all glucose, amino acids, and some water
- and ions
+  and ions
 - **Loop of Henle:** Countercurrent multiplier; creates a concentration gradient in the medulla for
- water reabsorption
+  water reabsorption
 - **Distal convoluted tubule:** Fine-tuning of water and ion balance (under hormonal control)
 - **Collecting duct:** Water reabsorption under ADH control
 
@@ -255,19 +259,19 @@ A person drinks 2 litres of water. What happens to their blood osmolarity and AD
 - Physical barriers: skin, mucous membranes, cilia, stomach acid
 - Phagocytosis: Phagocytes (macrophages, neutrophils) engulf and digest pathogens
 - Inflammation: Increased blood flow, increased permeability of capillaries, recruitment of
- phagocytes
+  phagocytes
 - Fever: Elevated temperature inhibits pathogen growth
 
 **Adaptive immunity (specific):**
 
 - **Cell-mediated response:** T lymphocytes
- - Helper T cells: Release cytokines to stimulate B cells and cytotoxic T cells
- - Cytotoxic T cells: Kill infected body cells by releasing perforins
- - Memory T cells: Provide long-term immunity
+- Helper T cells: Release cytokines to stimulate B cells and cytotoxic T cells
+- Cytotoxic T cells: Kill infected body cells by releasing perforins
+- Memory T cells: Provide long-term immunity
 - **Humoral response:** B lymphocytes
- - Plasma cells: Produce and secrete antibodies
- - Memory B cells: Provide long-term immunity
- - Antibodies: Y-shaped proteins that bind to specific antigens on pathogens
+- Plasma cells: Produce and secrete antibodies
+- Memory B cells: Provide long-term immunity
+- Antibodies: Y-shaped proteins that bind to specific antigens on pathogens
 
 **Antibody structure:**
 
@@ -278,9 +282,9 @@ A person drinks 2 litres of water. What happens to their blood osmolarity and AD
 **Primary vs. Secondary immune response:**
 
 - **Primary response:** Initial exposure to antigen; slow response, produces IgM then IgG; memory
- cells formed
+  cells formed
 - **Secondary response:** Subsequent exposure; rapid, stronger response; mainly IgG; due to memory
- cells
+  cells
 
 **Vaccination:**
 
@@ -288,83 +292,83 @@ A person drinks 2 litres of water. What happens to their blood osmolarity and AD
 - Stimulates primary immune response without causing disease
 - Memory cells provide protection against future infection
 - **Herd immunity:** When a high proportion of the population is immune, the spread of disease is
- reduced
+  reduced
 
 ---
 
 ## Common Pitfalls
 
 1. **ATP yield:** The theoretical maximum of 38 ATP per glucose is rarely achieved. Actual yield is
- about 30-32 due to proton leak and cost of transporting molecules.
+   about 30-32 due to proton leak and cost of transporting molecules.
 
 2. **$K_m$ interpretation:** Low $K_m$ means HIGH affinity (less substrate needed to reach half
- $V_{\max}$), not low affinity.
+   $V_{\max}$), not low affinity.
 
 3. **Calvin cycle:** 6 turns are needed to produce 1 glucose, not 1 turn.
 
 4. **ADH mechanism:** ADH makes the collecting duct MORE permeable, not less. More ADH means more
- concentrated urine, not more dilute.
+   concentrated urine, not more dilute.
 
 5. **Innate vs. Adaptive immunity:** Innate is non-specific and immediate; adaptive is specific and
- takes time to develop but provides memory.
+   takes time to develop but provides memory.
 
 ---
 
 ## Practice Questions
 
 1. Explain how competitive and non-competitive inhibitors affect enzyme activity, with reference to
- the Michaelis-Menten equation.
+   the Michaelis-Menten equation.
 
 2. Calculate the number of ATP molecules produced from the complete oxidation of one molecule of
- glucose, showing the contribution from each stage.
+   glucose, showing the contribution from each stage.
 
 3. Explain how the structure of the mitochondrion is adapted for its function in aerobic
- respiration.
+   respiration.
 
 4. Describe the role of ADH in osmoregulation and explain what happens when a person drinks a large
- volume of water.
+   volume of water.
 
 5. Compare the primary and secondary immune responses, explaining why vaccination provides
- protection.
+   protection.
 
 6. Explain the principle of negative feedback using thermoregulation as an example.
 
 7. Draw and label a Lineweaver-Burk plot showing the effect of a competitive inhibitor on enzyme
- kinetics.
+   kinetics.
 
 8. Explain the role of the loop of Henle in producing concentrated urine in desert animals.
 
 9. Describe the process of oxidative phosphorylation, explaining the role of the electron transport
- chain and ATP synthase.
+   chain and ATP synthase.
 
 10. Explain why the Calvin cycle stops in the dark, even though it does not directly require light.
 
 11. Describe the structure of an antibody and explain how antibodies provide specific immunity
- against pathogens.
+    against pathogens.
 
 12. Explain how vaccination leads to herd immunity and why this is important for protecting
- immunocompromised individuals.
+    immunocompromised individuals.
 
 13. A student measures the effect of pH on the activity of pepsin. Sketch the expected graph and
- explain its shape.
+    explain its shape.
 
 14. Describe the process of phagocytosis and explain how it differs from the action of antibodies.
 
 15. Explain why fever can be beneficial during an infection, with reference to enzyme activity.
 
 16. Calculate the $K_m$ and $V_{\max}$ of an enzyme from the following data: [S] = 2 mM, v = 3.33
- $\mu$Mol/min; [S] = 10 mM, v = 6.67 $\mu$Mol/min; [S] = 50 mM, v = 8.33 $\mu$Mol/min.
+    $\mu$Mol/min; [S] = 10 mM, v = 6.67 $\mu$Mol/min; [S] = 50 mM, v = 8.33 $\mu$Mol/min.
 
 17. Explain how the countercurrent multiplier in the loop of Henle creates a concentration gradient
- in the kidney medulla.
+    in the kidney medulla.
 
 18. Compare and contrast the light-dependent and light-independent reactions of photosynthesis.
 
 19. Describe the role of cytokines in the immune response and explain how they coordinate the
- activities of different immune cells.
+    activities of different immune cells.
 
 20. Explain why type 1 diabetes is an autoimmune disease and describe how it affects blood glucose
- regulation.
+    regulation.
 
 ## Review: Aerobic Respiration -- Detailed ATP Accounting
 
@@ -373,12 +377,12 @@ From glycolysis into the mitochondria and on the actual number of protons pumped
 
 **Using modern estimates (2.5 ATP per NADH, 1.5 ATP per FADH$_2$):**
 
-| Stage | NADH | FADH$_2$ | Direct ATP | Total ATP |
+| Stage              | NADH   | FADH$_2$ | Direct ATP | Total ATP |
 | ------------------ | ------ | -------- | ---------- | --------- |
-| Glycolysis | 2 | 0 | 2 | 7 |
-| Pyruvate oxidation | 2 | 0 | 0 | 5 |
-| Krebs cycle | 6 | 2 | 2 | 20 |
-| **Total** | **10** | **2** | **4** | **32** |
+| Glycolysis         | 2      | 0        | 2          | 7         |
+| Pyruvate oxidation | 2      | 0        | 0          | 5         |
+| Krebs cycle        | 6      | 2        | 2          | 20        |
+| **Total**          | **10** | **2**    | **4**      | **32**    |
 
 Note: The actual yield may be lower (approximately 30 ATP) due to proton leak across the inner
 Mitochondrial membrane and the cost of transporting ATP out of the mitochondria.
@@ -387,9 +391,9 @@ Mitochondrial membrane and the cost of transporting ATP out of the mitochondria.
 Inner mitochondrial membrane. Two shuttle systems transport the electrons:
 
 - **Malate-aspartate shuttle:** Transfers electrons to mitochondrial NAD$^+$Producing NADH inside
- the mitochondrion (yields 2.5 ATP per NADH). This is the more efficient shuttle.
+  the mitochondrion (yields 2.5 ATP per NADH). This is the more efficient shuttle.
 - **Glycerol-3-phosphate shuttle:** Transfers electrons to mitochondrial FAD, producing
- $\mathrm{FADH{}_2$ (yields 1.5 ATP per $\mathrm{FADH{}_2$). This is less efficient.
+  $\mathrm{FADH{}_2$ (yields 1.5 ATP per $\mathrm{FADH{}_2$). This is less efficient.
 
 The choice of shuttle system affects the total ATP yield. Using the malate-aspartate shuttle gives a
 Total of 32 ATP; using the glycerol-3-phosphate shuttle gives approximately 30 ATP.
@@ -399,28 +403,28 @@ Total of 32 ATP; using the glycerol-3-phosphate shuttle gives approximately 30 A
 **Photosystem II (P680):**
 
 1. Light energy is absorbed by antenna pigments and transferred to the reaction centre chlorophyll
- P680.
+   P680.
 2. An electron in P680 is excited to a higher energy level and is captured by the primary electron
- acceptor.
+   acceptor.
 3. P680$^+$ is a very strong oxidant and extracts electrons from water (photolysis):
- $2\mathrm{H{}_2\mathrm{O{} \to 4\mathrm{H{}^+ + 4e^- + \mathrm{O{}_2$.
+   $2\mathrm{H{}_2\mathrm{O{} \to 4\mathrm{H{}^+ + 4e^- + \mathrm{O{}_2$.
 4. The electrons pass through the electron transport chain (plastoquinone, cytochrome b6f complex,
- plastocyanin), pumping protons from the stroma into the thylakoid lumen.
+   plastocyanin), pumping protons from the stroma into the thylakoid lumen.
 
 **Photosystem I (P700):**
 
 1. Light energy excites electrons in P700.
 2. Electrons are passed to ferredoxin, then to $\mathrm{NADP{}^+$ reductase.
-3. $\mathrm{NADP{}^+$ reductase reduces $\mathrm{NADP{}^+$ to NADPH using the electrons and a proton from
- the stroma.
+3. $\mathrm{NADP{}^+$ reductase reduces $\mathrm{NADP{}^+$ to NADPH using the electrons and a proton
+   from the stroma.
 
 **Chemiosmosis in chloroplasts:**
 
-The proton gradient across the thylakoid membrane (higher $\mathrm{H{}^+$ concentration in the lumen)
-Drives ATP synthesis by ATP synthase. This is called photophosphorylation. The proton gradient is
-Generated by: (1) splitting of water (releases $\mathrm{H{}^+$ into the lumen), (2) pumping of
-$\mathrm{H{}^+$ by the cytochrome b6f complex, and (3) removal of $\mathrm{H{}^+$ from the stroma by
-$\mathrm{NADP{}^+$ reductase.
+The proton gradient across the thylakoid membrane (higher $\mathrm{H{}^+$ concentration in the
+lumen) Drives ATP synthesis by ATP synthase. This is called photophosphorylation. The proton
+gradient is Generated by: (1) splitting of water (releases $\mathrm{H{}^+$ into the lumen), (2)
+pumping of $\mathrm{H{}^+$ by the cytochrome b6f complex, and (3) removal of $\mathrm{H{}^+$ from
+the stroma by $\mathrm{NADP{}^+$ reductase.
 
 **Worked Example: Products of the light-dependent reactions.**
 
@@ -432,8 +436,8 @@ For every 2 water molecules split:
 - Approximately 3 ATP produced (by chemiosmosis)
 - 2 NADPH produced
 
-To fix 6 $\mathrm{CO{}_2$ molecules (to make one glucose), the light reactions must produce 18 ATP and
-12 NADPH.
+To fix 6 $\mathrm{CO{}_2$ molecules (to make one glucose), the light reactions must produce 18 ATP
+and 12 NADPH.
 
 ## Review: Enzyme Inhibition in Metabolic Regulation
 
@@ -446,8 +450,8 @@ Reductase (used in cancer chemotherapy).
 
 **Non-competitive inhibition:** The inhibitor binds to an allosteric site (different from the active
 Site), changing the enzyme's conformation and reducing its activity. Increasing substrate
-Concentration does not overcome the inhibition. Examples: heavy metal ions (Pb$^{2+}$Hg$^{2+}$)
-Bind to -SH groups and denature enzymes; cyanide inhibits cytochrome c oxidase.
+Concentration does not overcome the inhibition. Examples: heavy metal ions (Pb$^{2+}$Hg$^{2+}$) Bind
+to -SH groups and denature enzymes; cyanide inhibits cytochrome c oxidase.
 
 **End-product inhibition (feedback inhibition):** The final product of a metabolic pathway inhibits
 An enzyme earlier in the pathway, preventing overproduction. Example: ATP inhibits
@@ -482,13 +486,13 @@ By disease: measles requires approximately 95% immunity; polio requires approxim
 
 **Types of vaccines:**
 
-| Type | Example | Mechanism |
+| Type            | Example           | Mechanism                                           |
 | --------------- | ----------------- | --------------------------------------------------- |
-| Live attenuated | MMR vaccine | Weakened form of the pathogen |
-| Inactivated | Influenza vaccine | Killed pathogen, cannot reproduce |
-| Subunit | Hepatitis B | Specific antigens from the pathogen |
-| Toxoid | Tetanus vaccine | Inactivated toxin from the pathogen |
-| mRNA | COVID-19 vaccines | mRNA encoding a viral antigen (e.g., spike protein) |
+| Live attenuated | MMR vaccine       | Weakened form of the pathogen                       |
+| Inactivated     | Influenza vaccine | Killed pathogen, cannot reproduce                   |
+| Subunit         | Hepatitis B       | Specific antigens from the pathogen                 |
+| Toxoid          | Tetanus vaccine   | Inactivated toxin from the pathogen                 |
+| mRNA            | COVID-19 vaccines | mRNA encoding a viral antigen (e.g., spike protein) |
 
 ## Review: The Kidney and Osmoregulation in Detail
 
@@ -498,45 +502,47 @@ The nephron is the functional unit of the kidney. Each kidney contains approxima
 Nephrons.
 
 1. **Bowman's capsule and glomerulus (ultrafiltration):** Blood enters the glomerulus (a knot of
- capillaries) at high pressure. The afferent arteriole is wider than the efferent arteriole, which
- creates high hydrostatic pressure. Water, glucose, amino acids, urea, and ions are forced out of
- the blood through the basement membrane into the Bowman's capsule. Large proteins and blood cells
- are retained. The basement membrane acts as a filter, allowing only small molecules to pass
- through.
+   capillaries) at high pressure. The afferent arteriole is wider than the efferent arteriole, which
+   creates high hydrostatic pressure. Water, glucose, amino acids, urea, and ions are forced out of
+   the blood through the basement membrane into the Bowman's capsule. Large proteins and blood cells
+   are retained. The basement membrane acts as a filter, allowing only small molecules to pass
+   through.
 
 2. **Proximal convoluted tubule (selective reabsorption):** All glucose, all amino acids, most water
- and ions, and some urea are reabsorbed. Glucose and amino acids are reabsorbed by active
- transport (secondary active transport coupled to $\mathrm{Na{}^+$ reabsorption). Water follows by
- osmosis. The PCT has many mitochondria to provide ATP for active transport and microvilli to
- increase the surface area for reabsorption.
+   and ions, and some urea are reabsorbed. Glucose and amino acids are reabsorbed by active
+   transport (secondary active transport coupled to $\mathrm{Na{}^+$ reabsorption). Water follows by
+   osmosis. The PCT has many mitochondria to provide ATP for active transport and microvilli to
+   increase the surface area for reabsorption.
 
 3. **Loop of Henle (countercurrent multiplication):**
- - **Descending limb:** Permeable to water but not to ions. Water leaves the filtrate by osmosis
- into the increasingly concentrated medulla. The filtrate becomes more concentrated.
- - **Thin ascending limb:** Impermeable to water. $\mathrm{Na{}^+$ and $\mathrm{Cl{}^-$ diffuse out
- passively.
- - **Thick ascending limb:** Actively pumps out $\mathrm{Na{}^+$$\mathrm{K{}^+$And $\mathrm{Cl{}^-$.
- Impermeable to water. The medulla becomes increasingly concentrated from cortex to papilla
- (approximately 300 mOsm at the cortex to 1200 mOsm at the papilla).
+
+- **Descending limb:** Permeable to water but not to ions. Water leaves the filtrate by osmosis into
+  the increasingly concentrated medulla. The filtrate becomes more concentrated.
+- **Thin ascending limb:** Impermeable to water. $\mathrm{Na{}^+$ and $\mathrm{Cl{}^-$ diffuse out
+  passively.
+- **Thick ascending limb:** Actively pumps out $\mathrm{Na{}^+$$\mathrm{K{}^+$And $\mathrm{Cl{}^-$.
+  Impermeable to water. The medulla becomes increasingly concentrated from cortex to papilla
+  (approximately 300 mOsm at the cortex to 1200 mOsm at the papilla).
 
 4. **Distal convoluted tubule:** Fine-tuning of water and ion balance under hormonal control:
- - **ADH:** Makes the collecting duct more permeable to water.
- - **Aldosterone:** Increases $\mathrm{Na{}^+$ reabsorption and $\mathrm{K{}^+$ secretion in the DCT and
- collecting duct.
+
+- **ADH:** Makes the collecting duct more permeable to water.
+- **Aldosterone:** Increases $\mathrm{Na{}^+$ reabsorption and $\mathrm{K{}^+$ secretion in the DCT
+  and collecting duct.
 
 5. **Collecting duct:** Water reabsorption is controlled by ADH. In the presence of ADH, aquaporin
- channels are inserted into the membrane, and water is reabsorbed into the concentrated medulla.
- The maximum urine concentration in humans is approximately 1200 mOsm (four times more
- concentrated than blood).
+   channels are inserted into the membrane, and water is reabsorbed into the concentrated medulla.
+   The maximum urine concentration in humans is approximately 1200 mOsm (four times more
+   concentrated than blood).
 
 **Worked Example: Comparing urine production in different conditions.**
 
-| Condition | ADH Level | Collecting Duct Permeability | Urine Concentration | Urine Volume |
+| Condition          | ADH Level | Collecting Duct Permeability | Urine Concentration | Urine Volume |
 | ------------------ | --------- | ---------------------------- | ------------------- | ------------ |
-| Well hydrated | Low | Low | Low (dilute) | High |
-| Normal | Normal | Moderate | Moderate | Moderate |
-| Dehydrated | High | High | High (concentrated) | Low |
-| Diabetes insipidus | Very low | Very low | Very low (dilute) | Very high |
+| Well hydrated      | Low       | Low                          | Low (dilute)        | High         |
+| Normal             | Normal    | Moderate                     | Moderate            | Moderate     |
+| Dehydrated         | High      | High                         | High (concentrated) | Low          |
+| Diabetes insipidus | Very low  | Very low                     | Very low (dilute)   | Very high    |
 
 ## Review: Thermoregulation in Detail
 
@@ -548,23 +554,23 @@ Nephrons.
 **Heat loss mechanisms (when core temperature rises above 37$\degree$C):**
 
 1. **Vasodilation:** Arterioles near the skin surface dilate, increasing blood flow to the skin.
- More heat is lost by radiation and convection.
+   More heat is lost by radiation and convection.
 2. **Sweating:** Sweat glands secrete sweat onto the skin surface. Evaporation of water absorbs
- latent heat, cooling the skin. Each gram of water evaporated removes approximately 2.4 kJ of
- heat.
+   latent heat, cooling the skin. Each gram of water evaporated removes approximately 2.4 kJ of
+   heat.
 3. **Piloerection:** In some mammals, fur lies flat to reduce insulation. In humans, this mechanism
- is largely vestigial (goose bumps).
+   is largely vestigial (goose bumps).
 
 **Heat conservation mechanisms (when core temperature falls below 37$\degree$C):**
 
 1. **Vasoconstriction:** Arterioles near the skin surface constrict, reducing blood flow to the
- skin. Less heat is lost.
+   skin. Less heat is lost.
 2. **Shivering:** Rapid, involuntary contractions of skeletal muscles generate heat as a by-product
- of respiration.
+   of respiration.
 3. **Piloerection:** Hair stands up, trapping a layer of insulating air.
 4. **Brown fat metabolism:** Brown adipose tissue (found in newborns and between the shoulder blades
- in adults) contains many mitochondria with uncoupling protein (UCP1). The ETC operates without
- ATP synthesis, releasing energy as heat (non-shivering thermogenesis).
+   in adults) contains many mitochondria with uncoupling protein (UCP1). The ETC operates without
+   ATP synthesis, releasing energy as heat (non-shivering thermogenesis).
 
 **Worked Example: Why shivering generates heat.**
 
@@ -593,8 +599,8 @@ At very high $[S]$ (e.g., 100 mM):
 - Without inhibitor: $v \approx 10$ $\mu$Mol/min.
 - With inhibitor: $v \approx 10$ $\mu$Mol/min.
 
-The competitive inhibitor reduces the rate at low $[S]$ but has no effect at very high $[S]$
-Because the substrate outcompetes the inhibitor.
+The competitive inhibitor reduces the rate at low $[S]$ but has no effect at very high $[S]$ Because
+the substrate outcompetes the inhibitor.
 
 **Worked Example: Effect of a non-competitive inhibitor.**
 
@@ -619,37 +625,37 @@ Regardless of substrate concentration.
 
 **C4 photosynthesis:** In C4 plants (e.g., maize, sugarcane), $\mathrm{CO{}_2$ is initially fixed by
 PEP carboxylase in mesophyll cells to form oxaloacetate (4C), which is converted to malate. Malate
-Is transported to bundle-sheath cells, where $\mathrm{CO{}_2$ is released and enters the Calvin cycle.
-PEP carboxylase has a much higher affinity for $\mathrm{CO{}_2$ than RuBisCO and does not bind
-$\mathrm{O{}_2$Minimising photorespiration.
+Is transported to bundle-sheath cells, where $\mathrm{CO{}_2$ is released and enters the Calvin
+cycle. PEP carboxylase has a much higher affinity for $\mathrm{CO{}_2$ than RuBisCO and does not
+bind $\mathrm{O{}_2$Minimising photorespiration.
 
 **CAM photosynthesis:** In CAM plants (e.g., cacti, pineapples), stomata open at night to fix
-$\mathrm{CO{}_2$ into malic acid, which is stored in vacuoles. During the day, stomata close, and malic
-Acid is decarboxylated to release $\mathrm{CO{}_2$ for the Calvin cycle. This temporal separation
-Minimises water loss while maintaining carbon fixation.
+$\mathrm{CO{}_2$ into malic acid, which is stored in vacuoles. During the day, stomata close, and
+malic Acid is decarboxylated to release $\mathrm{CO{}_2$ for the Calvin cycle. This temporal
+separation Minimises water loss while maintaining carbon fixation.
 
 **Worked Example: Comparing water use efficiency.**
 
 A C3 plant loses approximately 500 g of water per gram of $\mathrm{CO{}_2$ fixed. A C4 plant loses
-Approximately 250 g of water per gram of $\mathrm{CO{}_2$ fixed. A CAM plant loses approximately 50 g
-Of water per gram of $\mathrm{CO{}_2$ fixed.
+Approximately 250 g of water per gram of $\mathrm{CO{}_2$ fixed. A CAM plant loses approximately 50
+g Of water per gram of $\mathrm{CO{}_2$ fixed.
 
 CAM plants are the most water-efficient because they close their stomata during the day, minimising
 Transpirational water loss. This is why CAM plants dominate in arid environments.
 
 ## Review: Summary Table of Respiration vs. Photosynthesis
 
-| Feature | Respiration | Photosynthesis |
-| -------------------- | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ |
-| Overall equation | $\mathrm{C{}_6\mathrm{H{}_{12}\mathrm{O{}_6 + 6\mathrm{O{}_2 \to 6\mathrm{CO{}_2 + 6\mathrm{H{}_2\mathrm{O{}_2$ | $6\mathrm{CO{}_2 + 6\mathrm{H{}_2\mathrm{O{}_2 \to \mathrm{C{}_6\mathrm{H{}_{12}\mathrm{O{}_6 + 6\mathrm{O{}_2$ |
-| Energy change | Exergonic ($\Delta G \lt 0$) | Endergonic ($\Delta G \gt 0$) |
-| Electron donor | Glucose | Water |
-| Electron acceptor | $\mathrm{O{}_2$ | $\mathrm{NADP{}^+$ |
-| ATP produced | ~30-32 per glucose | ~18 consumed per glucose |
-| Location | Cytoplasm, mitochondria | Chloroplasts |
-| Organisms | All living organisms | Plants, algae, some bacteria |
-| ETC location | Inner mitochondrial membrane | Thylakoid membrane |
-| Proton gradient site | Intermembrane space | Thylakoid lumen |
+| Feature              | Respiration                                                                                                     | Photosynthesis                                                                                                  |
+| -------------------- | --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| Overall equation     | $\mathrm{C{}_6\mathrm{H{}_{12}\mathrm{O{}_6 + 6\mathrm{O{}_2 \to 6\mathrm{CO{}_2 + 6\mathrm{H{}_2\mathrm{O{}_2$ | $6\mathrm{CO{}_2 + 6\mathrm{H{}_2\mathrm{O{}_2 \to \mathrm{C{}_6\mathrm{H{}_{12}\mathrm{O{}_6 + 6\mathrm{O{}_2$ |
+| Energy change        | Exergonic ($\Delta G \lt 0$)                                                                                    | Endergonic ($\Delta G \gt 0$)                                                                                   |
+| Electron donor       | Glucose                                                                                                         | Water                                                                                                           |
+| Electron acceptor    | $\mathrm{O{}_2$                                                                                                 | $\mathrm{NADP{}^+$                                                                                              |
+| ATP produced         | ~30-32 per glucose                                                                                              | ~18 consumed per glucose                                                                                        |
+| Location             | Cytoplasm, mitochondria                                                                                         | Chloroplasts                                                                                                    |
+| Organisms            | All living organisms                                                                                            | Plants, algae, some bacteria                                                                                    |
+| ETC location         | Inner mitochondrial membrane                                                                                    | Thylakoid membrane                                                                                              |
+| Proton gradient site | Intermembrane space                                                                                             | Thylakoid lumen                                                                                                 |
 
 ## Review: Anaerobic Respiration in Detail
 
@@ -675,39 +681,41 @@ Which is why breathing rate remains elevated after exercise (to repay the oxygen
 $$\mathrm{Glucose{} \to 2 \mathrm{pyruvate{} \to 2 \mathrm{ethanol{} + 2 \mathrm{CO{}_2 + 2 \mathrm{ATP{}$$
 
 Pyruvate is decarboxylated to acetaldehyde (by pyruvate decarboxylase) and then reduced to ethanol
-(by alcohol dehydrogenase). This regenerates $\mathrm{NAD{}^+$ for glycolysis. Alcoholic fermentation
-Is exploited in brewing (beer) and baking (bread -- $\mathrm{CO{}_2$ causes the dough to rise).
+(by alcohol dehydrogenase). This regenerates $\mathrm{NAD{}^+$ for glycolysis. Alcoholic
+fermentation Is exploited in brewing (beer) and baking (bread -- $\mathrm{CO{}_2$ causes the dough
+to rise).
 
 **Comparing fermentation products:**
 
-| Feature | Lactic acid fermentation | Alcoholic fermentation |
+| Feature         | Lactic acid fermentation  | Alcoholic fermentation             |
 | --------------- | ------------------------- | ---------------------------------- |
-| Organisms | Animals, some bacteria | Yeast, some plants |
-| End products | Lactate | Ethanol and $\mathrm{CO{}_2$ |
-| Enzyme (step 1) | Lactate dehydrogenase | Pyruvate decarboxylase |
-| Enzyme (step 2) | -- | Alcohol dehydrogenase |
-| ATP yield | 2 ATP per glucose | 2 ATP per glucose |
-| Reversible? | Yes (Cori cycle in liver) | No (ethanol cannot be reconverted) |
+| Organisms       | Animals, some bacteria    | Yeast, some plants                 |
+| End products    | Lactate                   | Ethanol and $\mathrm{CO{}_2$       |
+| Enzyme (step 1) | Lactate dehydrogenase     | Pyruvate decarboxylase             |
+| Enzyme (step 2) | --                        | Alcohol dehydrogenase              |
+| ATP yield       | 2 ATP per glucose         | 2 ATP per glucose                  |
+| Reversible?     | Yes (Cori cycle in liver) | No (ethanol cannot be reconverted) |
 
 **Commercial applications of fermentation:**
 
-- **Brewing:** Yeast ferment sugars in malted barley to produce ethanol. The $\mathrm{CO{}_2$ produced
- carbonates the beer. Different yeast strains produce different flavour compounds (esters,
- phenols).
-- **Baking:** Yeast ferment sugars in dough, producing $\mathrm{CO{}_2$ which causes the dough to rise.
- The ethanol evaporates during baking.
+- **Brewing:** Yeast ferment sugars in malted barley to produce ethanol. The $\mathrm{CO{}_2$
+  produced carbonates the beer. Different yeast strains produce different flavour compounds (esters,
+  phenols).
+- **Baking:** Yeast ferment sugars in dough, producing $\mathrm{CO{}_2$ which causes the dough to
+  rise. The ethanol evaporates during baking.
 - **Cheese production:** Bacteria ferment lactose to lactic acid, lowering the pH and causing milk
- proteins (casein) to coagulate, forming the cheese curd.
+  proteins (casein) to coagulate, forming the cheese curd.
 - **Yoghurt production:** Lactobacillus bacteria ferment lactose to lactic acid, thickening the milk
- and producing the characteristic tart flavour.
+  and producing the characteristic tart flavour.
 
 **Key comparison: aerobic vs anaerobic respiration:**
 
 - Aerobic respiration yields approximately 30-32 ATP per glucose; anaerobic respiration yields only
- 2 ATP per glucose.
-- Aerobic respiration completely oxidises glucose to $\mathrm{CO{}_2$ and $\mathrm{H{}_2\mathrm{O{}$;
- anaerobic respiration produces partially oxidised products (lactate or ethanol).
+  2 ATP per glucose.
+- Aerobic respiration completely oxidises glucose to $\mathrm{CO{}_2$ and
+  $\mathrm{H{}_2\mathrm{O{}$; anaerobic respiration produces partially oxidised products (lactate or
+  ethanol).
 - Aerobic respiration requires oxygen as the final electron acceptor in the electron transport
- chain; anaerobic respiration uses organic molecules as the final electron acceptor.
+  chain; anaerobic respiration uses organic molecules as the final electron acceptor.
 - Aerobic respiration occurs in the mitochondria (in eukaryotes); anaerobic respiration occurs in
- the cytoplasm.
+  the cytoplasm.

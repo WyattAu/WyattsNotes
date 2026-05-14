@@ -1,6 +1,8 @@
 ---
 title: References
-description: "References — Reference Types; Branches; Create a branch; Equivalent to: echo $(git rev-parse HEAD) >.git/refs/heads/feature-login."
+description:
+  'References — Reference Types; Branches; Create a branch; Equivalent to: echo $(git rev-parse
+  HEAD) >.git/refs/heads/feature-login.'
 date: 2025-06-03T01:00:00.000Z
 tags:
   - git
@@ -9,6 +11,7 @@ categories:
   - CS
 slug: references
 ---
+
 ## What Are References
 
 A reference (or "ref") is a named pointer to a Git object — almost always a commit. References are
@@ -157,15 +160,15 @@ $ git log HEAD..origin/main
 
 ### Special References
 
-| Ref | Location | Purpose |
+| Ref                | Location                | Purpose                                             |
 | ------------------ | ----------------------- | --------------------------------------------------- |
-| `HEAD` | `.git/HEAD` | Current branch/commit |
-| `MERGE_HEAD` | `.git/MERGE_HEAD` | Parent(s) being merged in (during a merge conflict) |
-| `CHERRY_PICK_HEAD` | `.git/CHERRY_PICK_HEAD` | Commit being cherry-picked |
-| `REVERT_HEAD` | `.git/REVERT_HEAD` | Commit being reverted |
-| `FETCH_HEAD` | `.git/FETCH_HEAD` | Last fetched refs (from `git fetch`) |
-| `ORIG_HEAD` | `.git/ORIG_HEAD` | Previous value of HEAD before a rebase/reset |
-| `REBASE_HEAD` | `.git/REBASE_HEAD` | Current commit during interactive rebase |
+| `HEAD`             | `.git/HEAD`             | Current branch/commit                               |
+| `MERGE_HEAD`       | `.git/MERGE_HEAD`       | Parent(s) being merged in (during a merge conflict) |
+| `CHERRY_PICK_HEAD` | `.git/CHERRY_PICK_HEAD` | Commit being cherry-picked                          |
+| `REVERT_HEAD`      | `.git/REVERT_HEAD`      | Commit being reverted                               |
+| `FETCH_HEAD`       | `.git/FETCH_HEAD`       | Last fetched refs (from `git fetch`)                |
+| `ORIG_HEAD`        | `.git/ORIG_HEAD`        | Previous value of HEAD before a rebase/reset        |
+| `REBASE_HEAD`      | `.git/REBASE_HEAD`      | Current commit during interactive rebase            |
 
 These are transient references that exist only during specific operations and are cleaned up
 Afterward.
@@ -204,12 +207,12 @@ References. The general form is:
 <+?><src>:<dst>
 ```
 
-| Component | Meaning |
+| Component | Meaning                                                       |
 | --------- | ------------------------------------------------------------- |
-| `src` | The source ref (on the remote for fetch, local for push) |
-| `dst` | The destination ref (local for fetch, on the remote for push) |
-| `+` | Force update even if not fast-forward |
-| `:` alone | Delete the ref (push only) |
+| `src`     | The source ref (on the remote for fetch, local for push)      |
+| `dst`     | The destination ref (local for fetch, on the remote for push) |
+| `+`       | Force update even if not fast-forward                         |
+| `:` alone | Delete the ref (push only)                                    |
 
 ```bash
 # Default fetch refspec for origin
@@ -311,8 +314,8 @@ File.
 
 ## Reference Resolution Order
 
-When you pass a name to Git (e.g., `main``origin/main``HEAD~3`), it resolves it through a
-Defined search order:
+When you pass a name to Git (e.g., `main``origin/main``HEAD~3`), it resolves it through a Defined
+search order:
 
 ```mermaid
 flowchart TD

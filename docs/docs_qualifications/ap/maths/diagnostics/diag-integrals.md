@@ -1,6 +1,8 @@
 ---
-title: "Integrals -- Diagnostic Tests"
-description: "Diagnostic tests targeting the hardest AP Calculus integral questions including Riemann sums, FTC subtleties, integration techniques, area and volume"
+title: 'Integrals -- Diagnostic Tests'
+description:
+  'Diagnostic tests targeting the hardest AP Calculus integral questions including Riemann sums, FTC
+  subtleties, integration techniques, area and volume'
 slug: diag-integrals
 hide_table_of_contents: true
 ---
@@ -19,9 +21,9 @@ A student encounters the limit:
 
 $$\lim_{n \to \infty} \sum_{k=1}^{n} \frac{k^2}{n^3} \sqrt{4 - \frac{k^2}{n^2}}$$
 
-(a) Express this limit as a definite integral.
-(b) Identify which type of Riemann sum (left, right, midpoint, or trapezoidal) this represents, or state if it is ambiguous.
-(c) Evaluate the definite integral.
+(a) Express this limit as a definite integral. (b) Identify which type of Riemann sum (left, right,
+midpoint, or trapezoidal) this represents, or state if it is ambiguous. (c) Evaluate the definite
+integral.
 
 **Solution:**
 
@@ -29,11 +31,13 @@ $$\lim_{n \to \infty} \sum_{k=1}^{n} \frac{k^2}{n^3} \sqrt{4 - \frac{k^2}{n^2}}$
 
 $$\sum_{k=1}^{n} \frac{k^2}{n^3}\sqrt{4 - \frac{k^2}{n^2}} = \sum_{k=1}^{n} \frac{1}{n} \cdot \left(\frac{k}{n}\right)^2 \sqrt{4 - \left(\frac{k}{n}\right)^2}$$
 
-With $\Delta x = \frac{1}{n}$ and $x_k = \frac{k}{n}$ (right endpoint of the $k$-th subinterval on $[0, 1]$):
+With $\Delta x = \frac{1}{n}$ and $x_k = \frac{k}{n}$ (right endpoint of the $k$-th subinterval on
+$[0, 1]$):
 
 $$\lim_{n \to \infty} \sum_{k=1}^{n} \frac{1}{n} \cdot x_k^2 \sqrt{4 - x_k^2} = \int_0^1 x^2\sqrt{4 - x^2}\,dx$$
 
-(b) Since $x_k = \frac{k}{n}$ uses the right endpoint of each subinterval, this is a **right Riemann sum**.
+(b) Since $x_k = \frac{k}{n}$ uses the right endpoint of each subinterval, this is a **right Riemann
+sum**.
 
 (c) Use the substitution $x = 2\sin\theta$$dx = 2\cos\theta\,d\theta$:
 
@@ -55,11 +59,18 @@ $$= 2\left(\frac{\pi}{6} - \frac{\sin(2\pi/3)}{4}\right) = 2\left(\frac{\pi}{6} 
 
 Evaluate $\displaystyle\int e^{2x}\sin(3x)\,dx$.
 
-A student chooses $u = \sin(3x)$ and $dv = e^{2x}\,dx$ for the first application of integration by parts. Show that this choice works but leads to a longer computation than choosing $u = e^{2x}$. Evaluate the integral completely using the more efficient choice and explain why "LIATE" alone does not settle this choice.
+A student chooses $u = \sin(3x)$ and $dv = e^{2x}\,dx$ for the first application of integration by
+parts. Show that this choice works but leads to a longer computation than choosing $u = e^{2x}$.
+Evaluate the integral completely using the more efficient choice and explain why "LIATE" alone does
+not settle this choice.
 
 **Solution:**
 
-LIATE ranks: **L**ogarithmic, **I**nverse trig, **A**lgebraic, **T**rigonometric, **E**xponential. Both $e^{2x}$ (Exponential) and $\sin(3x)$ (Trigonometric) are in the LIATE list. Trigonometric comes before Exponential, so LIATE suggests $u = \sin(3x)$. But for products of exponentials and trig functions, **either** choice works, and the key is to apply integration by parts **twice** and solve algebraically.
+LIATE ranks: **L**ogarithmic, **I**nverse trig, **A**lgebraic, **T**rigonometric, **E**xponential.
+Both $e^{2x}$ (Exponential) and $\sin(3x)$ (Trigonometric) are in the LIATE list. Trigonometric
+comes before Exponential, so LIATE suggests $u = \sin(3x)$. But for products of exponentials and
+trig functions, **either** choice works, and the key is to apply integration by parts **twice** and
+solve algebraically.
 
 Using $u = e^{2x}$$dv = \sin(3x)\,dx$:
 
@@ -83,7 +94,9 @@ $$\frac{13}{9}I = e^{2x}\left(-\frac{1}{3}\cos(3x) + \frac{2}{9}\sin(3x)\right)$
 
 $$I = \frac{e^{2x}}{13}(2\sin(3x) - 3\cos(3x)) + C$$
 
-The misconception: students sometimes stop after one application of parts, or they choose a different assignment for the second integration by parts (switching $u$ and $dv$), which creates a circular argument instead of solving for $I$.
+The misconception: students sometimes stop after one application of parts, or they choose a
+different assignment for the second integration by parts (switching $u$ and $dv$), which creates a
+circular argument instead of solving for $I$.
 
 ---
 
@@ -93,7 +106,8 @@ The misconception: students sometimes stop after one application of parts, or th
 
 Find the total area of the region bounded by $y = x^3 - 4x$ and $y = x^2 - 4$.
 
-A student computes $\displaystyle\int_{-2}^{2}\left[(x^3 - 4x) - (x^2 - 4)\right]\,dx$ and gets the wrong answer. Explain the error and compute the correct total area.
+A student computes $\displaystyle\int_{-2}^{2}\left[(x^3 - 4x) - (x^2 - 4)\right]\,dx$ and gets the
+wrong answer. Explain the error and compute the correct total area.
 
 **Solution:**
 
@@ -105,11 +119,13 @@ $$(x-1)(x^2 - 4) = (x-1)(x-2)(x+2) = 0$$
 
 Intersection points: $x = -2, 1, 2$.
 
-The student's error: they integrated from $-2$ to $2$ without accounting for the curve crossing at $x = 1$. On $[-2, 1]$We must determine which curve is on top; on $[1, 2]$The other may be on top.
+The student's error: they integrated from $-2$ to $2$ without accounting for the curve crossing at
+$x = 1$. On $[-2, 1]$We must determine which curve is on top; on $[1, 2]$The other may be on top.
 
 Test point $x = 0$: $x^3 - 4x = 0$$x^2 - 4 = -4$. So $x^3 - 4x \gt x^2 - 4$ on $[-2, 1]$.
 
-Test point $x = 1.5$: $x^3 - 4x = 3.375 - 6 = -2.625$$x^2 - 4 = 2.25 - 4 = -1.75$. So $x^2 - 4 \gt x^3 - 4x$ on $[1, 2]$.
+Test point $x = 1.5$: $x^3 - 4x = 3.375 - 6 = -2.625$$x^2 - 4 = 2.25 - 4 = -1.75$. So
+$x^2 - 4 \gt x^3 - 4x$ on $[1, 2]$.
 
 $$\text{Total area{} = \int_{-2}^{1}\left[(x^3 - 4x) - (x^2 - 4)\right]\,dx + \int_1^{2}\left[(x^2 - 4) - (x^3 - 4x)\right]\,dx$$
 
@@ -129,11 +145,14 @@ $$= -\frac{4}{3} - \left(-\frac{23}{12}\right) = -\frac{16}{12} + \frac{23}{12} 
 
 $$\text{Total area{} = \frac{35}{4} + \frac{7}{12} = \frac{105 + 7}{12} = \frac{112}{12} = \frac{28}{3}$$
 
-The student's integral gives $\displaystyle\int_{-2}^{2}(x^3 - x^2 - 4x + 4)\,dx = \frac{28}{3}$ only because the areas happen to be positive in both subintervals when separated correctly. The student's single integral from $-2$ to $2$ actually evaluates to:
+The student's integral gives $\displaystyle\int_{-2}^{2}(x^3 - x^2 - 4x + 4)\,dx = \frac{28}{3}$
+only because the areas happen to be positive in both subintervals when separated correctly. The
+student's single integral from $-2$ to $2$ actually evaluates to:
 
 $$\int_{-2}^{2}(x^3 - x^2 - 4x + 4)\,dx = \left[\frac{x^4}{4} - \frac{x^3}{3} - 2x^2 + 4x\right]_{-2}^{2}$$
 
-This gives $\frac{28}{3}$ here too, but this is coincidental. The fundamental error is not splitting at intersection points, which would give wrong answers .
+This gives $\frac{28}{3}$ here too, but this is coincidental. The fundamental error is not splitting
+at intersection points, which would give wrong answers .
 
 ---
 
@@ -147,17 +166,20 @@ This gives $\frac{28}{3}$ here too, but this is coincidental. The fundamental er
 
 Let $R$ be the region bounded by $y = \sqrt{x}$$y = 0$And $x = 4$.
 
-(a) Find the volume generated when $R$ is revolved about the line $x = 6$ using the **shell method**.
-(b) Verify your answer using the **washer method**.
-(c) A student claims the volume about $x = 6$ should be the same as the volume about the $y$-axis because "it's just a translation." Explain why this is false, and compute the volume about the $y$-axis for comparison.
+(a) Find the volume generated when $R$ is revolved about the line $x = 6$ using the **shell
+method**. (b) Verify your answer using the **washer method**. (c) A student claims the volume about
+$x = 6$ should be the same as the volume about the $y$-axis because "it's just a translation."
+Explain why this is false, and compute the volume about the $y$-axis for comparison.
 
 **Solution:**
 
 (a) Shell method (parallel to axis of revolution): use horizontal shells.
 
-A shell at height $y$ has radius $r = 6 - x = 6 - y^2$ and height $h = dy$ (thin strip). For shells, we integrate along the axis perpendicular to the axis of revolution.
+A shell at height $y$ has radius $r = 6 - x = 6 - y^2$ and height $h = dy$ (thin strip). For shells,
+we integrate along the axis perpendicular to the axis of revolution.
 
-Since we revolve about $x = 6$ (vertical line), shells are vertical: radius $= 6 - x$Height $= \sqrt{x} - 0 = \sqrt{x}$.
+Since we revolve about $x = 6$ (vertical line), shells are vertical: radius $= 6 - x$Height
+$= \sqrt{x} - 0 = \sqrt{x}$.
 
 $$V = 2\pi\int_0^4 (6-x)\sqrt{x}\,dx = 2\pi\int_0^4 (6x^{1/2} - x^{3/2})\,dx$$
 
@@ -165,7 +187,10 @@ $$= 2\pi\left[4x^{3/2} - \frac{2}{5}x^{5/2}\right]_0^4 = 2\pi\left(4 \cdot 8 - \
 
 (b) Washer method: washers perpendicular to $x = 6$So we integrate with respect to $y$.
 
-Outer radius: $R = 6 - 0 = 6$ (from $x = 6$ to the $y$-axis). More precisely, for washers perpendicular to the axis $x = 6$: at height $y$The region extends from $x = y^2$ to $x = 4$. Revolved about $x = 6$:
+Outer radius: $R = 6 - 0 = 6$ (from $x = 6$ to the $y$-axis). More precisely, for washers
+perpendicular to the axis $x = 6$: at height $y$The region extends from $x = y^2$ to $x = 4$.
+Revolved about $x = 6$:
+
 - Outer radius: $6 - y^2$ (from axis to the left edge of region at $x = y^2$)
 - Inner radius: $6 - 4 = 2$ (from axis to the right edge of region at $x = 4$)
 
@@ -179,7 +204,10 @@ $$= \pi\left(64 - 32 + \frac{32}{5}\right) = \pi\left(32 + \frac{32}{5}\right) =
 
 $$V = \pi\int_0^4 (\sqrt{x})^2\,dx = \pi\int_0^4 x\,dx = \pi \cdot 8 = 8\pi$$
 
-The volumes are different ($\frac{192\pi}{5} \approx 120.6$ vs $8\pi \approx 25.1$). Revolving about a different axis changes the radius of every point, so the volume changes. The student's "translation" argument is wrong because the region itself does not translate -- only the axis does, which changes the distance from every point to the axis.
+The volumes are different ($\frac{192\pi}{5} \approx 120.6$ vs $8\pi \approx 25.1$). Revolving about
+a different axis changes the radius of every point, so the volume changes. The student's
+"translation" argument is wrong because the region itself does not translate -- only the axis does,
+which changes the distance from every point to the axis.
 
 ---
 
@@ -187,13 +215,16 @@ The volumes are different ($\frac{192\pi}{5} \approx 120.6$ vs $8\pi \approx 25.
 
 **Question:**
 
-For what values of $p$ does the improper integral $\displaystyle\int_0^{\infty} \frac{x^{p-1}}{1 + x}\,dx$ converge?
+For what values of $p$ does the improper integral
+$\displaystyle\int_0^{\infty} \frac{x^{p-1}}{1 + x}\,dx$ converge?
 
-Hint: Split the integral at $x = 1$ and analyze the behavior of each part separately using comparison with $p$-integrals.
+Hint: Split the integral at $x = 1$ and analyze the behavior of each part separately using
+comparison with $p$-integrals.
 
 **Solution:**
 
-Split at $x = 1$: $\displaystyle\int_0^{\infty} \frac{x^{p-1}}{1+x}\,dx = \int_0^1 \frac{x^{p-1}}{1+x}\,dx + \int_1^{\infty} \frac{x^{p-1}}{1+x}\,dx$
+Split at $x = 1$:
+$\displaystyle\int_0^{\infty} \frac{x^{p-1}}{1+x}\,dx = \int_0^1 \frac{x^{p-1}}{1+x}\,dx + \int_1^{\infty} \frac{x^{p-1}}{1+x}\,dx$
 
 **Near $x = 0$** (first integral): When $x \in (0, 1)$$\frac{1}{2} \lt \frac{1}{1+x} \lt 1$So:
 
@@ -203,17 +234,20 @@ By comparison with $\displaystyle\int_0^1 x^{p-1}\,dx$ (converges iff $p - 1 > -
 
 The first integral converges iff $p > 0$.
 
-**As $x \to \infty$** (second integral): When $x > 1$$\frac{1}{2} \lt \frac{1}{1+x} \lt \frac{1}{x}$So:
+**As $x \to \infty$** (second integral): When
+$x > 1$$\frac{1}{2} \lt \frac{1}{1+x} \lt \frac{1}{x}$So:
 
 $$\frac{x^{p-1}}{2} \lt \frac{x^{p-1}}{1+x} \lt x^{p-2}$$
 
-By comparison with $\displaystyle\int_1^{\infty} x^{p-2}\,dx$ (converges iff $p - 2 \lt -1$I.e., $p \lt 1$):
+By comparison with $\displaystyle\int_1^{\infty} x^{p-2}\,dx$ (converges iff $p - 2 \lt -1$I.e.,
+$p \lt 1$):
 
 The second integral converges iff $p \lt 1$.
 
 **Conclusion:** The full integral converges iff both parts converge, i.e., $0 \lt p \lt 1$.
 
-Note: this integral equals $B(p, 1-p) = \pi \csc(\pi p)$ (the beta function), which has the same domain of convergence.
+Note: this integral equals $B(p, 1-p) = \pi \csc(\pi p)$ (the beta function), which has the same
+domain of convergence.
 
 ---
 
@@ -221,13 +255,14 @@ Note: this integral equals $B(p, 1-p) = \pi \csc(\pi p)$ (the beta function), wh
 
 **Question:**
 
-Let $f(x) = \begin{cases} 2x & \text{if {} 0 \leq x \lt 2 \\ 8 - 2x & \text{if {} 2 \leq x \leq 4 \end{cases}$
+Let
+$f(x) = \begin{cases} 2x & \text{if {} 0 \leq x \lt 2 \\ 8 - 2x & \text{if {} 2 \leq x \leq 4 \end{cases}$
 
 Let $\displaystyle F(x) = \int_0^x f(t)\,dt$.
 
-(a) Find and graph $F(x)$.
-(b) Is $F$ differentiable at $x = 2$? Compute $F'(2)$ from the definition of the derivative and explain.
-(c) A student claims that since $f$ has a corner at $x = 2$$F$ must also have a corner at $x = 2$. Is this correct?
+(a) Find and graph $F(x)$. (b) Is $F$ differentiable at $x = 2$? Compute $F'(2)$ from the definition
+of the derivative and explain. (c) A student claims that since $f$ has a corner at $x = 2$$F$ must
+also have a corner at $x = 2$. Is this correct?
 
 **Solution:**
 
@@ -239,20 +274,27 @@ For $2 \leq x \leq 4$:
 
 $$F(x) = \int_0^2 2t\,dt + \int_2^x (8 - 2t)\,dt = 4 + \left[8t - t^2\right]_2^x = 4 + (8x - x^2 - 12) = -x^2 + 8x - 8$$
 
-So $F(x) = \begin{cases} x^2 & \text{if {} 0 \leq x \lt 2 \\ -x^2 + 8x - 8 & \text{if {} 2 \leq x \leq 4 \end{cases}$
+So
+$F(x) = \begin{cases} x^2 & \text{if {} 0 \leq x \lt 2 \\ -x^2 + 8x - 8 & \text{if {} 2 \leq x \leq 4 \end{cases}$
 
-(Note: $4 + (8x - x^2 - 12) = -x^2 + 8x - 8$Not $(x-4)^2 = x^2 - 8x + 16$. The two expressions differ.)
+(Note: $4 + (8x - x^2 - 12) = -x^2 + 8x - 8$Not $(x-4)^2 = x^2 - 8x + 16$. The two expressions
+differ.)
 
 (b) Check differentiability at $x = 2$:
 
 $$F(2) = -4 + 16 - 8 = 4$$
 
-Left-hand derivative: $F'_{-}(2) = \lim_{h \to 0^-}\frac{F(2+h) - F(2)}{h} = \lim_{h \to 0^-}\frac{(2+h)^2 - 4}{h} = \lim_{h \to 0^-}\frac{4h + h^2}{h} = 4$.
+Left-hand derivative:
+$F'_{-}(2) = \lim_{h \to 0^-}\frac{F(2+h) - F(2)}{h} = \lim_{h \to 0^-}\frac{(2+h)^2 - 4}{h} = \lim_{h \to 0^-}\frac{4h + h^2}{h} = 4$.
 
-Right-hand derivative: $F'_{+}(2) = \lim_{h \to 0^+}\frac{F(2+h) - F(2)}{h} = \lim_{h \to 0^+}\frac{-(2+h)^2 + 8(2+h) - 8 - 4}{h}$
+Right-hand derivative:
+$F'_{+}(2) = \lim_{h \to 0^+}\frac{F(2+h) - F(2)}{h} = \lim_{h \to 0^+}\frac{-(2+h)^2 + 8(2+h) - 8 - 4}{h}$
 
 $= \lim_{h \to 0^+}\frac{-4 - 4h - h^2 + 16 + 8h - 12}{h} = \lim_{h \to 0^+}\frac{-h^2 + 4h}{h} = \lim_{h \to 0^+}(-h + 4) = 4$.
 
 Since $4 = 4$$F$ **is differentiable** at $x = 2$With $F'(2) = 4 = f(2)$.
 
-(c) The student is **incorrect**. Although $f$ has a corner at $x = 2$ ($f$ changes from slope $+2$ to slope $-2$), $f$ is continuous at $x = 2$ ($f(2^-) = 4 = f(2^+)$). By FTC part 1, since $f$ is continuous at $x = 2$$F$ is differentiable at $x = 2$ with $F'(2) = f(2) = 4$. Integration "smooths" the corner: $F$ is continuously differentiable even though $f$ is not.
+(c) The student is **incorrect**. Although $f$ has a corner at $x = 2$ ($f$ changes from slope $+2$
+to slope $-2$), $f$ is continuous at $x = 2$ ($f(2^-) = 4 = f(2^+)$). By FTC part 1, since $f$ is
+continuous at $x = 2$$F$ is differentiable at $x = 2$ with $F'(2) = f(2) = 4$. Integration "smooths"
+the corner: $F$ is continuously differentiable even though $f$ is not.

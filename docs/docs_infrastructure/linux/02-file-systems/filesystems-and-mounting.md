@@ -1,10 +1,13 @@
 ---
 id: filesystems-and-mounting
 title: File Systems and Mounting
-description: "File Systems and Mounting — Virtual File System (VFS) Layer for comprehensive revision and examination preparation. and examination pre."
+description:
+  'File Systems and Mounting — Virtual File System (VFS) Layer for comprehensive revision and
+  examination preparation. and examination pre.'
 slug: filesystems-and-mounting
 sidebar_position: 1
 ---
+
 ## Virtual File System (VFS) Layer
 
 The Virtual File System layer is the kernel abstraction that allows Linux to support multiple file
@@ -35,12 +38,12 @@ graph TD
 
 The VFS maintains four primary object types:
 
-| Object | Description | Kernel Type |
+| Object         | Description                                                        | Kernel Type          |
 | -------------- | ------------------------------------------------------------------ | -------------------- |
-| **superblock** | Describes a mounted file system (type, size, flags) | `struct super_block` |
-| **inode** | Represents a single file (metadata: permissions, size, timestamps) | `struct inode` |
-| **dentry** | Directory entry — maps a name to an inode | `struct dentry` |
-| **file** | Represents an open file (current offset, access mode) | `struct file` |
+| **superblock** | Describes a mounted file system (type, size, flags)                | `struct super_block` |
+| **inode**      | Represents a single file (metadata: permissions, size, timestamps) | `struct inode`       |
+| **dentry**     | Directory entry — maps a name to an inode                          | `struct dentry`      |
+| **file**       | Represents an open file (current offset, access mode)              | `struct file`        |
 
 The dentry cache (dcache) holds the directory hierarchy in memory, avoiding disk lookups for
 Frequently accessed paths. The inode cache (icache) keeps recently accessed inodes in memory. Both
@@ -68,26 +71,26 @@ The inode itself).
 
 ### Inode Fields
 
-| Field | Description |
+| Field        | Description                                       |
 | ------------ | ------------------------------------------------- |
-| `st_mode` | File type and permissions (16 bits) |
-| `st_ino` | Inode number (unique within file system) |
-| `st_dev` | Device number (identifies the file system) |
-| `st_nlink` | Hard link count |
-| `st_uid` | Owner user ID |
-| `st_gid` | Owner group ID |
-| `st_size` | File size in bytes (for regular files) |
-| `st_blksize` | Preferred block size for I/O |
-| `st_blocks` | Number of 512-byte blocks allocated |
-| `st_atim` | Last access time (can be disabled with `noatime`) |
-| `st_mtim` | Last modification time (data change) |
-| `st_ctim` | Last status change time (metadata change) |
+| `st_mode`    | File type and permissions (16 bits)               |
+| `st_ino`     | Inode number (unique within file system)          |
+| `st_dev`     | Device number (identifies the file system)        |
+| `st_nlink`   | Hard link count                                   |
+| `st_uid`     | Owner user ID                                     |
+| `st_gid`     | Owner group ID                                    |
+| `st_size`    | File size in bytes (for regular files)            |
+| `st_blksize` | Preferred block size for I/O                      |
+| `st_blocks`  | Number of 512-byte blocks allocated               |
+| `st_atim`    | Last access time (can be disabled with `noatime`) |
+| `st_mtim`    | Last modification time (data change)              |
+| `st_ctim`    | Last status change time (metadata change)         |
 
 ### Hard Links and the Inode
 
-A hard link is an additional directory entry pointing to the same inode. The inode's link
-Count (`st_nlink`) tracks how many directory entries reference it. When the link count reaches zero
-And no process has the file open, the inode and its data blocks are freed.
+A hard link is an additional directory entry pointing to the same inode. The inode's link Count
+(`st_nlink`) tracks how many directory entries reference it. When the link count reaches zero And no
+process has the file open, the inode and its data blocks are freed.
 
 ```bash
 # Demonstrate hard links
@@ -109,15 +112,15 @@ stat file3.txt
 
 The file type is encoded in the upper bits of `st_mode`:
 
-| Octal | Type | Description |
+| Octal  | Type              | Description                           |
 | ------ | ----------------- | ------------------------------------- |
-| 010000 | Regular file | Normal data file |
-| 004000 | Directory | Contains directory entries |
-| 012000 | Symbolic link | Pointer to another file |
-| 001000 | FIFO (named pipe) | Inter-process communication |
-| 006000 | Block device | Buffered access (e.g., `/dev/sda`) |
-| 002000 | Character device | Unbuffered access (e.g., `/dev/null`) |
-| 014000 | Socket | Network communication endpoint |
+| 010000 | Regular file      | Normal data file                      |
+| 004000 | Directory         | Contains directory entries            |
+| 012000 | Symbolic link     | Pointer to another file               |
+| 001000 | FIFO (named pipe) | Inter-process communication           |
+| 006000 | Block device      | Buffered access (e.g., `/dev/sda`)    |
+| 002000 | Character device  | Unbuffered access (e.g., `/dev/null`) |
+| 014000 | Socket            | Network communication endpoint        |
 
 ```bash
 # Test file types
@@ -141,16 +144,16 @@ Ext2 and ext3, adding extents, larger volumes, journal checksumming, and delayed
 
 ### Key Features
 
-| Feature | ext4 Details |
+| Feature             | ext4 Details                                          |
 | ------------------- | ----------------------------------------------------- |
-| **Max volume size** | 1 EiB (2^64 bytes theoretical, 64 TiB practical) |
-| **Max file size** | 16 TiB |
-| **Max files** | ~4 billion |
-| **Block sizes** | 1024, 2048, 4096 bytes |
-| **Journaling** | Ordered mode (default), writeback, journal |
-| **Allocation** | Extents (replaces indirect block mapping) |
-| **Checksums** | Journal checksums, metadata checksums (metadata_csum) |
-| **Timestamps** | nanosecond granularity |
+| **Max volume size** | 1 EiB (2^64 bytes theoretical, 64 TiB practical)      |
+| **Max file size**   | 16 TiB                                                |
+| **Max files**       | ~4 billion                                            |
+| **Block sizes**     | 1024, 2048, 4096 bytes                                |
+| **Journaling**      | Ordered mode (default), writeback, journal            |
+| **Allocation**      | Extents (replaces indirect block mapping)             |
+| **Checksums**       | Journal checksums, metadata checksums (metadata_csum) |
+| **Timestamps**      | nanosecond granularity                                |
 
 ### Extents
 
@@ -173,11 +176,11 @@ Extent descriptor:
 Ext4 uses a journal to ensure file system consistency after a crash. The journal records metadata
 Changes (and optionally data changes) before committing them to the main file system.
 
-| Journal Mode | What is Journaled | Performance | Safety |
+| Journal Mode        | What is Journaled                                      | Performance | Safety  |
 | ------------------- | ------------------------------------------------------ | ----------- | ------- |
-| `ordered` (default) | Metadata only (data written before metadata committed) | Good | High |
-| `writeback` | Metadata only (no ordering guarantee) | Best | Medium |
-| `journal` | Both metadata and data | Slowest | Highest |
+| `ordered` (default) | Metadata only (data written before metadata committed) | Good        | High    |
+| `writeback`         | Metadata only (no ordering guarantee)                  | Best        | Medium  |
+| `journal`           | Both metadata and data                                 | Slowest     | Highest |
 
 ```bash
 # View current journal mode
@@ -238,15 +241,15 @@ Media workloads, and databases.
 
 ### Key Features
 
-| Feature | XFS Details |
+| Feature               | XFS Details                                             |
 | --------------------- | ------------------------------------------------------- |
-| **Max volume size** | 16 EiB (8 EiB on 32-bit systems) |
-| **Max file size** | 8 EiB |
-| **Max files** | Practically unlimited (based on space) |
-| **Block sizes** | 512 to 65536 bytes (must be a power of 2, page-aligned) |
-| **Journaling** | Metadata-only journal (separate log device supported) |
-| **Allocation** | B+tree-based extent allocation |
-| **Allocation Groups** | Independent regions for parallel allocation |
+| **Max volume size**   | 16 EiB (8 EiB on 32-bit systems)                        |
+| **Max file size**     | 8 EiB                                                   |
+| **Max files**         | Practically unlimited (based on space)                  |
+| **Block sizes**       | 512 to 65536 bytes (must be a power of 2, page-aligned) |
+| **Journaling**        | Metadata-only journal (separate log device supported)   |
+| **Allocation**        | B+tree-based extent allocation                          |
+| **Allocation Groups** | Independent regions for parallel allocation             |
 
 ### Allocation Groups
 
@@ -282,15 +285,15 @@ Number of disk seeks required for lookups.
 
 ### XFS vs ext4
 
-| Aspect | ext4 | XFS |
+| Aspect                 | ext4                            | XFS                                         |
 | ---------------------- | ------------------------------- | ------------------------------------------- |
-| **Volume resize** | Can grow online, shrink offline | Can grow online, cannot shrink |
-| **Metadata repair** | `e2fsck` (can be slow) | `xfs_repair` (fast but requires free space) |
-| **Delete performance** | Good | Excellent (delayed allocation of AGs) |
-| **Large files** | Good | Excellent (designed for large files) |
-| **Small files** | Better | Good (more metadata overhead) |
-| **Fragmentation** | More susceptible | Less (extents + AGs) |
-| **Snapshots** | No native support | No native support (use LVM/Btrfs) |
+| **Volume resize**      | Can grow online, shrink offline | Can grow online, cannot shrink              |
+| **Metadata repair**    | `e2fsck` (can be slow)          | `xfs_repair` (fast but requires free space) |
+| **Delete performance** | Good                            | Excellent (delayed allocation of AGs)       |
+| **Large files**        | Good                            | Excellent (designed for large files)        |
+| **Small files**        | Better                          | Good (more metadata overhead)               |
+| **Fragmentation**      | More susceptible                | Less (extents + AGs)                        |
+| **Snapshots**          | No native support               | No native support (use LVM/Btrfs)           |
 
 ### XFS Tuning
 
@@ -331,16 +334,16 @@ And is used by Synology NAS systems.
 
 ### Key Features
 
-| Feature | Btrfs Details |
+| Feature             | Btrfs Details                                            |
 | ------------------- | -------------------------------------------------------- |
-| **Copy-on-Write** | All data and metadata writes are COW |
-| **Snapshots** | Instant, space-efficient (read-only or read-write) |
-| **Subvolumes** | Independent file trees within a single volume |
-| **Built-in RAID** | RAID 0, 1, 10, 5, 6 (DUP for single-device metadata) |
-| **Checksumming** | CRC-32c on data and metadata (detects silent corruption) |
-| **Compression** | LZ4 (default), ZSTD, LZO, ZLIB |
-| **Send/Receive** | Efficient incremental snapshot transfer |
-| **Defragmentation** | Online defragmentation with `btrfs filesystem defrag` |
+| **Copy-on-Write**   | All data and metadata writes are COW                     |
+| **Snapshots**       | Instant, space-efficient (read-only or read-write)       |
+| **Subvolumes**      | Independent file trees within a single volume            |
+| **Built-in RAID**   | RAID 0, 1, 10, 5, 6 (DUP for single-device metadata)     |
+| **Checksumming**    | CRC-32c on data and metadata (detects silent corruption) |
+| **Compression**     | LZ4 (default), ZSTD, LZO, ZLIB                           |
+| **Send/Receive**    | Efficient incremental snapshot transfer                  |
+| **Defragmentation** | Online defragmentation with `btrfs filesystem defrag`    |
 
 ### Copy-on-Write (COW)
 
@@ -350,14 +353,14 @@ Blocks. The old blocks are freed only after the write is complete.
 
 This has significant implications:
 
-- **Snapshots are cheap**: A snapshot is a metadata reference to the current state. Creating
- a snapshot takes O(1) time and no data copying.
+- **Snapshots are cheap**: A snapshot is a metadata reference to the current state. Creating a
+  snapshot takes O(1) time and no data copying.
 - **Crash consistency**: If the system crashes during a write, either the old or new version is
- intact — never a partially written state.
+  intact — never a partially written state.
 - **Write amplification**: Small random writes cause block fragmentation. A 1-byte modification to a
- 128 KiB block requires writing the entire new block.
+  128 KiB block requires writing the entire new block.
 - **Fragmentation over time**: Repeated COW writes fragment large files. This is particularly
- problematic for databases and VM images.
+  problematic for databases and VM images.
 
 ```bash
 # Create a Btrfs file system
@@ -470,15 +473,15 @@ sequenceDiagram
 
 Common FUSE file systems:
 
-| File System | Purpose |
+| File System  | Purpose                             |
 | ------------ | ----------------------------------- |
-| `sshfs` | Mount remote directories over SSH |
-| `ntfs-3g` | Read/write NTFS support |
-| `bindfs` | Remount with altered permissions |
-| `encfs` | Encrypted file system layer |
-| `rclone` | Mount cloud storage (S3, GCS, etc.) |
-| `fuseiso` | Mount ISO images |
-| `exfat-fuse` | Read/write exFAT support |
+| `sshfs`      | Mount remote directories over SSH   |
+| `ntfs-3g`    | Read/write NTFS support             |
+| `bindfs`     | Remount with altered permissions    |
+| `encfs`      | Encrypted file system layer         |
+| `rclone`     | Mount cloud storage (S3, GCS, etc.) |
+| `fuseiso`    | Mount ISO images                    |
+| `exfat-fuse` | Read/write exFAT support            |
 
 ```bash
 # Mount remote directory via SSH
@@ -540,33 +543,33 @@ UUID=ccc333-ddd444                           /swap          swap    defaults    
 tmpfs                                        /tmp           tmpfs   defaults,nosuid,nodev   0       0
 ```
 
-| Column | Description |
+| Column      | Description                                                 |
 | ----------- | ----------------------------------------------------------- |
-| Device | Device path, UUID=, LABEL=, or special (proc, sysfs, tmpfs) |
-| Mount point | Directory where the file system is attached |
-| Type | File system type (auto detects if "auto") |
-| Options | Comma-separated mount options |
-| Dump | Whether to include in `dump` backups (0 = no, 1 = yes) |
-| Pass | `fsck` check order (0 = skip, 1 = root, 2 = others) |
+| Device      | Device path, UUID=, LABEL=, or special (proc, sysfs, tmpfs) |
+| Mount point | Directory where the file system is attached                 |
+| Type        | File system type (auto detects if "auto")                   |
+| Options     | Comma-separated mount options                               |
+| Dump        | Whether to include in `dump` backups (0 = no, 1 = yes)      |
+| Pass        | `fsck` check order (0 = skip, 1 = root, 2 = others)         |
 
 ### Common Mount Options
 
-| Option | Effect |
+| Option                | Effect                                                    |
 | --------------------- | --------------------------------------------------------- |
-| `defaults` | rw, suid, dev, exec, auto, nouser, async |
-| `ro` | Read-only |
-| `noatime` | Do not update access time (reduces writes) |
-| `relatime` | Update atime only if modified since last access (default) |
-| `nosuid` | Ignore SUID/SGID bits |
-| `nodev` | Do not interpret block/character devices |
-| `noexec` | Do not allow execution of binaries |
-| `sync` | Synchronous I/O (all writes block until complete) |
-| `async` | Asynchronous I/O (default) |
-| `auto` | Mounted at boot (`mount -a`) |
-| `noauto` | Not mounted at boot |
-| `users` | Allow any user to mount (implies noexec, nosuid, nodev) |
-| `nofail` | Do not fail boot if device is missing |
-| `x-systemd.requires=` | systemd dependency declaration |
+| `defaults`            | rw, suid, dev, exec, auto, nouser, async                  |
+| `ro`                  | Read-only                                                 |
+| `noatime`             | Do not update access time (reduces writes)                |
+| `relatime`            | Update atime only if modified since last access (default) |
+| `nosuid`              | Ignore SUID/SGID bits                                     |
+| `nodev`               | Do not interpret block/character devices                  |
+| `noexec`              | Do not allow execution of binaries                        |
+| `sync`                | Synchronous I/O (all writes block until complete)         |
+| `async`               | Asynchronous I/O (default)                                |
+| `auto`                | Mounted at boot (`mount -a`)                              |
+| `noauto`              | Not mounted at boot                                       |
+| `users`               | Allow any user to mount (implies noexec, nosuid, nodev)   |
+| `nofail`              | Do not fail boot if device is missing                     |
+| `x-systemd.requires=` | systemd dependency declaration                            |
 
 ### systemd Automount
 
@@ -654,14 +657,14 @@ cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
 
 ### Choosing the Right File System
 
-| Workload | Recommended FS | Rationale |
+| Workload                      | Recommended FS | Rationale                                      |
 | ----------------------------- | -------------- | ---------------------------------------------- |
-| General-purpose server | ext4 | Mature, well-tested, can shrink |
-| Large data volumes, databases | XFS | Excellent large file performance, parallel I/O |
-| Desktop, NAS, snapshots | Btrfs | Snapshots, compression, data integrity |
-| Containers, overlays | overlayfs | Layered union mount, designed for containers |
-| Temporary data, builds | tmpfs | RAM-backed, no disk I/O |
-| Removable media | exFAT | Cross-platform compatibility |
+| General-purpose server        | ext4           | Mature, well-tested, can shrink                |
+| Large data volumes, databases | XFS            | Excellent large file performance, parallel I/O |
+| Desktop, NAS, snapshots       | Btrfs          | Snapshots, compression, data integrity         |
+| Containers, overlays          | overlayfs      | Layered union mount, designed for containers   |
+| Temporary data, builds        | tmpfs          | RAM-backed, no disk I/O                        |
+| Removable media               | exFAT          | Cross-platform compatibility                   |
 
 ### I/O Scheduler Selection
 
@@ -673,12 +676,12 @@ cat /sys/block/sda/queue/scheduler
 echo 'mq-deadline' > /sys/block/sda/queue/scheduler
 ```
 
-| Scheduler | Use Case |
+| Scheduler     | Use Case                                    |
 | ------------- | ------------------------------------------- |
-| `mq-deadline` | General-purpose, spinning disks, SATA |
-| `none` | SSDs and NVMe (hardware manages scheduling) |
-| `bfq` | Desktop interactivity, slow devices |
-| `kyber` | Fast block devices (NVMe) |
+| `mq-deadline` | General-purpose, spinning disks, SATA       |
+| `none`        | SSDs and NVMe (hardware manages scheduling) |
+| `bfq`         | Desktop interactivity, slow devices         |
+| `kyber`       | Fast block devices (NVMe)                   |
 
 ### Block Size Selection
 
@@ -686,9 +689,9 @@ Block size affects performance based on workload:
 
 | Block Size | Small Files (lots of &lt; 4 KiB) | Large Files (streaming) |
 | ---------- | -------------------------------- | ----------------------- |
-| 1 KiB | Efficient (less wasted space) | More I/O operations |
-| 4 KiB | Good balance | Good balance |
-| 64 KiB | Wasted space | Fewer I/O operations |
+| 1 KiB      | Efficient (less wasted space)    | More I/O operations     |
+| 4 KiB      | Good balance                     | Good balance            |
+| 64 KiB     | Wasted space                     | Fewer I/O operations    |
 
 For databases and VM images, larger block sizes reduce metadata overhead. For mail servers and
 Source code repositories, smaller block sizes reduce wasted space.

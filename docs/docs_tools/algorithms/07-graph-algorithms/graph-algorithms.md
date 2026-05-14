@@ -1,9 +1,12 @@
 ---
 id: graph-algorithms
 title: Graph Algorithms
-description: "Graph Algorithms — Shortest Paths; Dijkstra's Algorithm; Bellman-Ford Algorithm; Floyd-Warshall Algorithm with worked examples and exam-style questions."
+description:
+  "Graph Algorithms — Shortest Paths; Dijkstra's Algorithm; Bellman-Ford Algorithm; Floyd-Warshall
+  Algorithm with worked examples and exam-style questions."
 slug: graph-algorithms
 ---
+
 ## Shortest Paths
 
 ### Dijkstra's Algorithm
@@ -60,12 +63,12 @@ def reconstruct_path(prev, target):
 Processed, its distance is final. With negative edges, a shorter path may be discovered later
 Through a vertex that has already been processed.
 
-| Graph Type | Dijkstra | Bellman-Ford | Floyd-Warshall |
+| Graph Type                   | Dijkstra                         | Bellman-Ford              | Floyd-Warshall |
 | ---------------------------- | -------------------------------- | ------------------------- | -------------- |
-| Non-negative, single source | $O((V+E) \log V)$ | $O(VE)$ | $O(V^3)$ |
-| Negative, no negative cycles | Fails | $O(VE)$ | $O(V^3)$ |
-| Negative cycle detection | Cannot | Yes | Yes |
-| All-pairs | Run $V$ times: $O(V(V+E)\log V)$ | Run $V$ times: $O(V^2 E)$ | $O(V^3)$ |
+| Non-negative, single source  | $O((V+E) \log V)$                | $O(VE)$                   | $O(V^3)$       |
+| Negative, no negative cycles | Fails                            | $O(VE)$                   | $O(V^3)$       |
+| Negative cycle detection     | Cannot                           | Yes                       | Yes            |
+| All-pairs                    | Run $V$ times: $O(V(V+E)\log V)$ | Run $V$ times: $O(V^2 E)$ | $O(V^3)$       |
 
 ### Bellman-Ford Algorithm
 
@@ -225,12 +228,12 @@ def a_star(graph, source, target, heuristic):
 $h(v) \le \mathrm{actual distance from {} v
 \mathrm{ to target{}$. Common heuristics:
 
-| Problem | Heuristic | Admissible? |
+| Problem              | Heuristic                            | Admissible?    |
 | -------------------- | ------------------------------------ | -------------- |
-| Grid (4-directional) | Manhattan distance | Yes |
-| Grid (8-directional) | Chebyshev distance | Yes |
-| Euclidean space | Euclidean distance | Yes |
-| Road networks | Euclidean or precomputed lower bound | If well-chosen |
+| Grid (4-directional) | Manhattan distance                   | Yes            |
+| Grid (8-directional) | Chebyshev distance                   | Yes            |
+| Euclidean space      | Euclidean distance                   | Yes            |
+| Road networks        | Euclidean or precomputed lower bound | If well-chosen |
 
 A* with an admissible heuristic is optimal. If the heuristic is not admissible, A* may find a
 Suboptimal path but will be faster. If $h(v) = 0$ for all $v$A\* degrades to Dijkstra.
@@ -327,10 +330,10 @@ def prim(n, graph):
     return mst, total_weight
 ```
 
-| Algorithm | Time | Best When | Data Structure |
+| Algorithm             | Time              | Best When         | Data Structure |
 | --------------------- | ----------------- | ----------------- | -------------- |
-| Kruskal | $O(E \log E)$ | Sparse graphs | Union-Find |
-| Prim | $O((V+E) \log V)$ | Dense graphs | Priority queue |
+| Kruskal               | $O(E \log E)$     | Sparse graphs     | Union-Find     |
+| Prim                  | $O((V+E) \log V)$ | Dense graphs      | Priority queue |
 | Prim (Fibonacci heap) | $O(E + V \log V)$ | Very dense graphs | Fibonacci heap |
 
 :::info
@@ -539,13 +542,13 @@ def min_cut(n, capacity, source, sink):
 
 ### Applications of Max-Flow
 
-| Application | How to Model |
+| Application          | How to Model                                                |
 | -------------------- | ----------------------------------------------------------- |
-| Bipartite matching | Source to left set, right set to sink, all edges capacity 1 |
-| Image segmentation | Pixels as vertices, source=foreground, sink=background |
-| Project selection | Source=projects, sink=resources, capacities=profits/costs |
-| Baseball elimination | Teams as vertices, remaining games as edges |
-| Network reliability | Edge connectivity via min-cut |
+| Bipartite matching   | Source to left set, right set to sink, all edges capacity 1 |
+| Image segmentation   | Pixels as vertices, source=foreground, sink=background      |
+| Project selection    | Source=projects, sink=resources, capacities=profits/costs   |
+| Baseball elimination | Teams as vertices, remaining games as edges                 |
+| Network reliability  | Edge connectivity via min-cut                               |
 
 ## Eulerian Paths and Circuits
 
@@ -554,12 +557,12 @@ Path** visits every edge exactly once (may start and end at different vertices).
 
 ### Existence Conditions
 
-| Property | Eulerian Circuit | Eulerian Path |
+| Property                      | Eulerian Circuit | Eulerian Path                   |
 | ----------------------------- | ---------------- | ------------------------------- |
-| Connected | Yes | Yes |
-| All vertices even degree | Yes | No |
-| Exactly 2 vertices odd degree | No | Yes (start/end at odd vertices) |
-| Other | No | No |
+| Connected                     | Yes              | Yes                             |
+| All vertices even degree      | Yes              | No                              |
+| Exactly 2 vertices odd degree | No               | Yes (start/end at odd vertices) |
+| Other                         | No               | No                              |
 
 ```python
 def hierholzer(n, graph):
@@ -630,12 +633,12 @@ Is NP-hard; exact solutions use bitmask DP ($O(2^n \cdot n^2)$Feasible for $n \l
 
 ### Approximation Algorithms
 
-| Algorithm | Approximation Ratio | Time | Notes |
+| Algorithm         | Approximation Ratio | Time                   | Notes                     |
 | ----------------- | ------------------- | ---------------------- | ------------------------- |
-| Nearest neighbour | $O(\log n)$ | $O(n^2)$ | Simple, no guarantee |
-| Christofides | 1.5 | $O(n^3)$ | Best known for metric TSP |
-| 2-opt improvement | Empirical | $O(n^2)$ per iteration | Local search |
-| Held-Karp (DP) | Exact | $O(2^n \cdot n^2)$ | Exact, $n \le 20$ |
+| Nearest neighbour | $O(\log n)$         | $O(n^2)$               | Simple, no guarantee      |
+| Christofides      | 1.5                 | $O(n^3)$               | Best known for metric TSP |
+| 2-opt improvement | Empirical           | $O(n^2)$ per iteration | Local search              |
+| Held-Karp (DP)    | Exact               | $O(2^n \cdot n^2)$     | Exact, $n \le 20$         |
 
 **Metric TSP:** When the triangle inequality holds ($d(u, w) \le d(u, v) + d(v, w)$), Christofides'
 Algorithm guarantees a solution within 1.5 times optimal.
@@ -716,9 +719,9 @@ Processed vertex. Use Bellman-Ford for graphs with negative weights.
 ### 2. Floyd-Warshall Infinity Overflow
 
 In Floyd-Warshall, the relaxation step is `dist[i][j] = min(dist[i][j], dist[i][k] + dist[k][j])`.
-If `dist[i][k]` or `dist[k][j]` is `inf`The sum becomes `inf`Which is correct. But if your `inf`
-Is not large enough (e.g., `float('inf') / 2 + float('inf') / 2`), you may get incorrect results.
-Use a sufficiently large sentinel value or handle infinity explicitly.
+If `dist[i][k]` or `dist[k][j]` is `inf`The sum becomes `inf`Which is correct. But if your `inf` Is
+not large enough (e.g., `float('inf') / 2 + float('inf') / 2`), you may get incorrect results. Use a
+sufficiently large sentinel value or handle infinity explicitly.
 
 ### 3. Union-Find in Kruskal's Without Path Compression
 
@@ -821,13 +824,13 @@ def dinic(n, capacity, source, sink):
     return max_flow
 ```
 
-| Algorithm | Time Complexity | Best For |
+| Algorithm                    | Time Complexity   | Best For                               |
 | ---------------------------- | ----------------- | -------------------------------------- |
-| Edmonds-Karp | $O(VE^2)$ | Simple implementation, small graphs |
-| Dinic's | $O(V^2 E)$ | General purpose, good constant factors |
-| Dinic's (bipartite) | $O(E \sqrt{V})$ | Bipartite matching |
-| Push-relabel | $O(V^3)$ | Dense graphs |
-| Push-relabel (highest label) | $O(V^2 \sqrt{E})$ | General purpose |
+| Edmonds-Karp                 | $O(VE^2)$         | Simple implementation, small graphs    |
+| Dinic's                      | $O(V^2 E)$        | General purpose, good constant factors |
+| Dinic's (bipartite)          | $O(E \sqrt{V})$   | Bipartite matching                     |
+| Push-relabel                 | $O(V^3)$          | Dense graphs                           |
+| Push-relabel (highest label) | $O(V^2 \sqrt{E})$ | General purpose                        |
 
 ## Bipartite Matching
 
@@ -899,13 +902,13 @@ def hopcroft_karp(n_left, n_right, edges):
 
 **Applications of bipartite matching:**
 
-| Application | Left Set | Right Set | Edge Meaning |
+| Application                  | Left Set  | Right Set   | Edge Meaning              |
 | ---------------------------- | --------- | ----------- | ------------------------- |
-| Job assignment | Workers | Jobs | Worker can do job |
-| Course scheduling | Students | Time slots | Student available at slot |
-| Hall's marriage | People | Preferences | Acceptable pairing |
-| Image segmentation | Pixels | Labels | Pixel can have label |
-| Compiler register allocation | Variables | Registers | Variable can use register |
+| Job assignment               | Workers   | Jobs        | Worker can do job         |
+| Course scheduling            | Students  | Time slots  | Student available at slot |
+| Hall's marriage              | People    | Preferences | Acceptable pairing        |
+| Image segmentation           | Pixels    | Labels      | Pixel can have label      |
+| Compiler register allocation | Variables | Registers   | Variable can use register |
 
 ## Minimum Vertex Cover (Konig's Theorem)
 

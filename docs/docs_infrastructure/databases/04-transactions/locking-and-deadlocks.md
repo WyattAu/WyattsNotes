@@ -1,9 +1,12 @@
 ---
 id: locking-and-deadlocks
 title: Locking and Deadlocks
-description: "Databases: Locking and Deadlocks — Lock Types Overview; Lock Granularity; Lock Modes (Table-Level); Lock Compatibility Matrix."
+description:
+  'Databases: Locking and Deadlocks — Lock Types Overview; Lock Granularity; Lock Modes
+  (Table-Level); Lock Compatibility Matrix.'
 slug: locking-and-deadlocks
 ---
+
 ## Lock Types Overview
 
 PostgreSQL uses a multi-level locking system that operates at different granularities. Understanding
@@ -11,12 +14,12 @@ Each lock type is essential for diagnosing performance issues and preventing dea
 
 ### Lock Granularity
 
-| Level | Scope | Overhead | Concurrency | Example |
+| Level    | Scope               | Overhead | Concurrency | Example                                    |
 | -------- | ------------------- | -------- | ----------- | ------------------------------------------ |
-| Row | Single tuple | High | Highest | `SELECT ... FOR UPDATE` |
-| Page | 8KB page | Medium | Medium | Internal page locks during heap operations |
-| Table | Entire relation | Low | Lowest | `LOCK TABLE`DDL operations |
-| Advisory | Application-defined | None | N/A | `pg_advisory_lock()` |
+| Row      | Single tuple        | High     | Highest     | `SELECT ... FOR UPDATE`                    |
+| Page     | 8KB page            | Medium   | Medium      | Internal page locks during heap operations |
+| Table    | Entire relation     | Low      | Lowest      | `LOCK TABLE`DDL operations                 |
+| Advisory | Application-defined | None     | N/A         | `pg_advisory_lock()`                       |
 
 PostgreSQL does not use page-level locks for user-visible operations. Page-level locks are only used
 Internally during heap operations and are held for very short durations. Users interact with
@@ -27,29 +30,29 @@ Row-level and table-level locks.
 PostgreSQL defines eight table-level lock modes. Each SQL command acquires specific locks
 Automatically.
 
-| Lock Mode | Acquired By | Conflicts With |
-| ---------------------- | -------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
-| ACCESS SHARE | `SELECT` | ACCESS EXCLUSIVE |
-| ROW SHARE | `SELECT FOR UPDATE/SHARE` | EXCLUSIVE, ACCESS EXCLUSIVE |
-| ROW EXCLUSIVE | `INSERT``UPDATE``DELETE` | SHARE, SHARE ROW EXCLUSIVE, EXCLUSIVE, ACCESS EXCLUSIVE |
-| SHARE UPDATE EXCLUSIVE | `VACUUM` (without FULL), `CREATE INDEX CONCURRENTLY` | ROW EXCLUSIVE, SHARE UPDATE EXCLUSIVE, SHARE, SHARE ROW EXCLUSIVE, EXCLUSIVE, ACCESS EXCLUSIVE |
-| SHARE | `CREATE INDEX` (non-concurrent) | ROW EXCLUSIVE, SHARE UPDATE EXCLUSIVE, SHARE ROW EXCLUSIVE, EXCLUSIVE, ACCESS EXCLUSIVE |
-| SHARE ROW EXCLUSIVE | `CREATE TRIGGER`Some `ALTER TABLE` | ROW EXCLUSIVE, SHARE UPDATE EXCLUSIVE, SHARE, SHARE ROW EXCLUSIVE, EXCLUSIVE, ACCESS EXCLUSIVE |
-| EXCLUSIVE | `REFRESH MATERIALIZED VIEW` (non-concurrent) | ROW SHARE, ROW EXCLUSIVE, SHARE, SHARE ROW EXCLUSIVE, EXCLUSIVE, ACCESS EXCLUSIVE |
-| ACCESS EXCLUSIVE | `DROP TABLE``TRUNCATE``ALTER TABLE``VACUUM FULL``LOCK TABLE` | All lock modes |
+| Lock Mode              | Acquired By                                                  | Conflicts With                                                                                 |
+| ---------------------- | ------------------------------------------------------------ | ---------------------------------------------------------------------------------------------- |
+| ACCESS SHARE           | `SELECT`                                                     | ACCESS EXCLUSIVE                                                                               |
+| ROW SHARE              | `SELECT FOR UPDATE/SHARE`                                    | EXCLUSIVE, ACCESS EXCLUSIVE                                                                    |
+| ROW EXCLUSIVE          | `INSERT``UPDATE``DELETE`                                     | SHARE, SHARE ROW EXCLUSIVE, EXCLUSIVE, ACCESS EXCLUSIVE                                        |
+| SHARE UPDATE EXCLUSIVE | `VACUUM` (without FULL), `CREATE INDEX CONCURRENTLY`         | ROW EXCLUSIVE, SHARE UPDATE EXCLUSIVE, SHARE, SHARE ROW EXCLUSIVE, EXCLUSIVE, ACCESS EXCLUSIVE |
+| SHARE                  | `CREATE INDEX` (non-concurrent)                              | ROW EXCLUSIVE, SHARE UPDATE EXCLUSIVE, SHARE ROW EXCLUSIVE, EXCLUSIVE, ACCESS EXCLUSIVE        |
+| SHARE ROW EXCLUSIVE    | `CREATE TRIGGER`Some `ALTER TABLE`                           | ROW EXCLUSIVE, SHARE UPDATE EXCLUSIVE, SHARE, SHARE ROW EXCLUSIVE, EXCLUSIVE, ACCESS EXCLUSIVE |
+| EXCLUSIVE              | `REFRESH MATERIALIZED VIEW` (non-concurrent)                 | ROW SHARE, ROW EXCLUSIVE, SHARE, SHARE ROW EXCLUSIVE, EXCLUSIVE, ACCESS EXCLUSIVE              |
+| ACCESS EXCLUSIVE       | `DROP TABLE``TRUNCATE``ALTER TABLE``VACUUM FULL``LOCK TABLE` | All lock modes                                                                                 |
 
 ### Lock Compatibility Matrix
 
-| Request \ Held | AS | RS | RX | SRE | S | SRE2 | X | AE |
+| Request \ Held         | AS  | RS  | RX  | SRE | S   | SRE2 | X   | AE  |
 | ---------------------- | --- | --- | --- | --- | --- | ---- | --- | --- |
-| ACCESS SHARE | Y | Y | Y | Y | Y | Y | Y | N |
-| ROW SHARE | Y | Y | Y | Y | Y | Y | N | N |
-| ROW EXCLUSIVE | Y | Y | Y | Y | N | N | N | N |
-| SHARE UPDATE EXCLUSIVE | Y | Y | Y | Y | N | N | N | N |
-| SHARE | Y | Y | N | N | Y | N | N | N |
-| SHARE ROW EXCL | Y | Y | N | N | N | N | N | N |
-| EXCLUSIVE | Y | N | N | N | N | N | N | N |
-| ACCESS EXCL | N | N | N | N | N | N | N | N |
+| ACCESS SHARE           | Y   | Y   | Y   | Y   | Y   | Y    | Y   | N   |
+| ROW SHARE              | Y   | Y   | Y   | Y   | Y   | Y    | N   | N   |
+| ROW EXCLUSIVE          | Y   | Y   | Y   | Y   | N   | N    | N   | N   |
+| SHARE UPDATE EXCLUSIVE | Y   | Y   | Y   | Y   | N   | N    | N   | N   |
+| SHARE                  | Y   | Y   | N   | N   | Y   | N    | N   | N   |
+| SHARE ROW EXCL         | Y   | Y   | N   | N   | N   | N    | N   | N   |
+| EXCLUSIVE              | Y   | N   | N   | N   | N   | N    | N   | N   |
+| ACCESS EXCL            | N   | N   | N   | N   | N   | N    | N   | N   |
 
 ## Row-Level Locks
 
@@ -58,8 +61,8 @@ But allow concurrent access to other rows in the same table.
 
 ### Implicit Row Locks
 
-Every `UPDATE``DELETE`Or `SELECT FOR UPDATE/SHARE` acquires a row-level lock. These are
-Implemented as transaction-level locks -- they are held until the transaction commits or rolls back.
+Every `UPDATE``DELETE`Or `SELECT FOR UPDATE/SHARE` acquires a row-level lock. These are Implemented
+as transaction-level locks -- they are held until the transaction commits or rolls back.
 
 ```sql
 -- UPDATE implicitly locks the row
@@ -110,12 +113,12 @@ SELECT * FROM products WHERE product_id = 42 FOR NO KEY UPDATE;
 SELECT * FROM products WHERE product_id = 42 FOR KEY SHARE;
 ```
 
-| Lock Mode | Blocks `FOR UPDATE` | Blocks `FOR NO KEY UPDATE` | Blocks `FOR SHARE` | Blocks `FOR KEY SHARE` |
+| Lock Mode           | Blocks `FOR UPDATE` | Blocks `FOR NO KEY UPDATE` | Blocks `FOR SHARE` | Blocks `FOR KEY SHARE` |
 | ------------------- | ------------------- | -------------------------- | ------------------ | ---------------------- |
-| `FOR UPDATE` | Yes | Yes | Yes | Yes |
-| `FOR NO KEY UPDATE` | Yes | Yes | Yes | No |
-| `FOR SHARE` | Yes | Yes | Yes | Yes |
-| `FOR KEY SHARE` | Yes | No | Yes | Yes |
+| `FOR UPDATE`        | Yes                 | Yes                        | Yes                | Yes                    |
+| `FOR NO KEY UPDATE` | Yes                 | Yes                        | Yes                | No                     |
+| `FOR SHARE`         | Yes                 | Yes                        | Yes                | Yes                    |
+| `FOR KEY SHARE`     | Yes                 | No                         | Yes                | Yes                    |
 
 ## Explicit Table Locking
 
@@ -167,7 +170,7 @@ SELECT datname, deadlocks FROM pg_stat_database;
 ### Deadlock Prevention Strategies
 
 1. **Consistent access order**: Always access tables and rows in the same order across all
- transactions.
+   transactions.
 
 ```sql
 -- Always update lower-ID accounts first
@@ -269,12 +272,12 @@ SELECT pg_advisory_xact_lock_shared(12345);
 
 ### Use Cases
 
-| Use Case | Advisory Lock Pattern | Notes |
+| Use Case                         | Advisory Lock Pattern                    | Notes                              |
 | -------------------------------- | ---------------------------------------- | ---------------------------------- |
-| Prevent concurrent job execution | `pg_advisory_lock(job_type_id)` | Blocks until previous job finishes |
-| Distributed rate limiting | `pg_advisory_lock(user_id)` with timeout | 1 lock per user |
-| Prevent duplicate inserts | `pg_advisory_xact_lock(hash(data))` | Auto-released on commit/rollback |
-| Coordinate deployments | `pg_advisory_lock(migration_id)` | Only one migration runs at a time |
+| Prevent concurrent job execution | `pg_advisory_lock(job_type_id)`          | Blocks until previous job finishes |
+| Distributed rate limiting        | `pg_advisory_lock(user_id)` with timeout | 1 lock per user                    |
+| Prevent duplicate inserts        | `pg_advisory_xact_lock(hash(data))`      | Auto-released on commit/rollback   |
+| Coordinate deployments           | `pg_advisory_lock(migration_id)`         | Only one migration runs at a time  |
 
 :::info
 
@@ -371,11 +374,11 @@ WHERE NOT blocked_locks.granted;
 
 Each row (tuple) in PostgreSQL has two hidden system columns:
 
-| Column | Meaning |
+| Column | Meaning                                                          |
 | ------ | ---------------------------------------------------------------- |
-| `xmin` | Transaction ID that inserted this row version |
+| `xmin` | Transaction ID that inserted this row version                    |
 | `xmax` | Transaction ID that deleted/updated this row (0 = still visible) |
-| `ctid` | Physical location (block number, offset within block) |
+| `ctid` | Physical location (block number, offset within block)            |
 
 Visibility for a transaction with snapshot `(xmin_snap, xmax_snap)`:
 
@@ -432,12 +435,12 @@ VACUUM FREEZE VERBOSE;
 
 On a streaming replica (hot standby), queries may conflict with replayed WAL records:
 
-| Conflict Type | What Happens |
+| Conflict Type       | What Happens                                        |
 | ------------------- | --------------------------------------------------- |
-| AccessExclusiveLock | Replica query blocked by DDL replay |
-| TableLock | Replica query blocked by table lock replay |
-| SnapshotConflict | Replica query needs rows being vacuumed on primary |
-| BufferPin | Replica holds a buffer pin on a page being replayed |
+| AccessExclusiveLock | Replica query blocked by DDL replay                 |
+| TableLock           | Replica query blocked by table lock replay          |
+| SnapshotConflict    | Replica query needs rows being vacuumed on primary  |
+| BufferPin           | Replica holds a buffer pin on a page being replayed |
 
 ```sql
 -- On the replica: view replication conflicts
@@ -489,11 +492,11 @@ ALTER DATABASE mydb SET statement_timeout = '30s';
 SET LOCAL statement_timeout = '0';  -- disable for this transaction
 ```
 
-| Timeout | What It Aborts | Default |
+| Timeout                               | What It Aborts                                      | Default      |
 | ------------------------------------- | --------------------------------------------------- | ------------ |
-| `statement_timeout` | Any statement exceeding duration | 0 (disabled) |
-| `lock_timeout` | Any statement waiting for a lock exceeding duration | 0 (disabled) |
-| `idle_in_transaction_session_timeout` | Sessions idle in transaction | 0 (disabled) |
+| `statement_timeout`                   | Any statement exceeding duration                    | 0 (disabled) |
+| `lock_timeout`                        | Any statement waiting for a lock exceeding duration | 0 (disabled) |
+| `idle_in_transaction_session_timeout` | Sessions idle in transaction                        | 0 (disabled) |
 
 ## Lock Escalation
 
@@ -579,8 +582,8 @@ WHERE account_id = 1 AND balance >= 100;
 ### Not Setting lock_timeout
 
 A query waiting for a lock can block indefinitely. If the lock holder has a long-running transaction
-Or a crashed session (though PostgreSQL detects crashed backends via TCP keepalive), waiting
-Queries pile up. Always set `lock_timeout`:
+Or a crashed session (though PostgreSQL detects crashed backends via TCP keepalive), waiting Queries
+pile up. Always set `lock_timeout`:
 
 ```sql
 SET lock_timeout = '10s';
@@ -589,9 +592,9 @@ SET lock_timeout = '10s';
 
 ### Forgetting That FOR UPDATE Blocks Concurrent Reads in REPEATABLE READ
 
-In `REPEATABLE READ``SELECT ... FOR UPDATE` blocks if another transaction has modified the row
-(even if committed). In `READ COMMITTED``SELECT ... FOR UPDATE` re-evaluates the row after
-Acquiring the lock. Know your isolation level.
+In `REPEATABLE READ``SELECT ... FOR UPDATE` blocks if another transaction has modified the row (even
+if committed). In `READ COMMITTED``SELECT ... FOR UPDATE` re-evaluates the row after Acquiring the
+lock. Know your isolation level.
 
 ### Advisory Lock Leaks
 
@@ -658,18 +661,18 @@ Regardless of savepoints.
 
 DDL statements acquire table-level locks that may conflict with concurrent operations:
 
-| DDL Operation | Lock Acquired | Blocks |
+| DDL Operation                 | Lock Acquired                   | Blocks                        |
 | ----------------------------- | ------------------------------- | ----------------------------- |
-| `CREATE INDEX` | SHARE | INSERT, UPDATE, DELETE |
-| `CREATE INDEX CONCURRENTLY` | None (effectively) | Nothing (but takes longer) |
-| `ALTER TABLE ... ADD COLUMN` | ACCESS EXCLUSIVE | All operations |
-| `ALTER TABLE ... DROP COLUMN` | ACCESS EXCLUSIVE | All operations |
-| `TRUNCATE TABLE` | ACCESS EXCLUSIVE | All operations |
-| `DROP TABLE` | ACCESS EXCLUSIVE | All operations |
-| `VACUUM` (without FULL) | SHARE UPDATE EXCLUSIVE | INSERT, UPDATE, DELETE, SHARE |
-| `VACUUM FULL` | ACCESS EXCLUSIVE | All operations |
-| `ANALYZE` | SHARE UPDATE EXCLUSIVE | SELECT is allowed |
-| `GRANT` / `REVOKE` | ACCESS EXCLUSIVE (on the table) | All operations |
+| `CREATE INDEX`                | SHARE                           | INSERT, UPDATE, DELETE        |
+| `CREATE INDEX CONCURRENTLY`   | None (effectively)              | Nothing (but takes longer)    |
+| `ALTER TABLE ... ADD COLUMN`  | ACCESS EXCLUSIVE                | All operations                |
+| `ALTER TABLE ... DROP COLUMN` | ACCESS EXCLUSIVE                | All operations                |
+| `TRUNCATE TABLE`              | ACCESS EXCLUSIVE                | All operations                |
+| `DROP TABLE`                  | ACCESS EXCLUSIVE                | All operations                |
+| `VACUUM` (without FULL)       | SHARE UPDATE EXCLUSIVE          | INSERT, UPDATE, DELETE, SHARE |
+| `VACUUM FULL`                 | ACCESS EXCLUSIVE                | All operations                |
+| `ANALYZE`                     | SHARE UPDATE EXCLUSIVE          | SELECT is allowed             |
+| `GRANT` / `REVOKE`            | ACCESS EXCLUSIVE (on the table) | All operations                |
 
 ### Lock Waits and Blocking Queries
 
@@ -736,9 +739,9 @@ COMMIT;
 SSI tracks two types of dependencies between transactions:
 
 1. **rw-conflict (read-write conflict):** Transaction T1 reads a row, T2 writes to it (before T1
- commits)
+   commits)
 2. **wr-conflict (write-read conflict):** Transaction T1 writes a row, T2 reads it (before T1
- commits)
+   commits)
 
 If these dependencies form a cycle in the serialization graph, one of the transactions must be
 Aborted.
@@ -784,9 +787,9 @@ max_standby_streaming_delay = 30s
 hot_standby_feedback = on
 ```
 
-With `hot_standby_feedback = on`The replica sends information about long-running queries back to
-The primary, which delays vacuum of rows that are still visible on the replica. This reduces
-Replication conflicts but may cause table bloat on the primary.
+With `hot_standby_feedback = on`The replica sends information about long-running queries back to The
+primary, which delays vacuum of rows that are still visible on the replica. This reduces Replication
+conflicts but may cause table bloat on the primary.
 
 ### Monitoring Replication Conflicts
 

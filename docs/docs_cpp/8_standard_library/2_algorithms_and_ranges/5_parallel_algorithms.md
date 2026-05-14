@@ -1,6 +1,8 @@
 ---
 title: Parallel Algorithms
-description: "C++: Parallel Algorithms — Execution Policies; Formal Semantics of Execution Policies for thorough revision and examination preparation."
+description:
+  'C++: Parallel Algorithms — Execution Policies; Formal Semantics of Execution Policies for
+  thorough revision and examination preparation.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -8,6 +10,7 @@ categories:
   - Cpp
 slug: parallel-algorithms
 ---
+
 ## Parallel Algorithms and Execution Policies
 
 C++17 introduced execution policies that enable many standard algorithms to run in parallel across
@@ -21,10 +24,10 @@ C++17 introduced **execution policies** as the first argument to many standard a
 Parallel and vectorized execution [N4950 §25.5]. The three standard policies are defined in
 `<execution>`:
 
-| Policy | Type | Behavior [N4950 §25.5.2] |
+| Policy                      | Type                  | Behavior [N4950 §25.5.2]                                     |
 | --------------------------- | --------------------- | ------------------------------------------------------------ |
-| `std::execution::seq` | Sequenced | Sequential execution (default if no policy specified) |
-| `std::execution::par` | Parallel | May execute in multiple threads |
+| `std::execution::seq`       | Sequenced             | Sequential execution (default if no policy specified)        |
+| `std::execution::par`       | Parallel              | May execute in multiple threads                              |
 | `std::execution::par_unseq` | Parallel + Vectorized | May execute in multiple threads AND vectorize within threads |
 
 #### Formal Semantics of Execution Policies
@@ -33,18 +36,18 @@ The standard defines execution policies via the `is_execution_policy` type trait
 Specifies constraints on element access functions:
 
 - **`seq`**: The element access function is invoked sequentially in the calling thread. The
- invocation order is the same as the sequential overload. No concurrency, no vectorization.
+  invocation order is the same as the sequential overload. No concurrency, no vectorization.
 
 - **`par`**: The element access function may be invoked concurrently from multiple threads. The
- standard imposes no ordering guarantee on invocations. The implementation may partition the input
- range and process each partition in a separate thread. Data races in the user function are the
- caller's responsibility.
+  standard imposes no ordering guarantee on invocations. The implementation may partition the input
+  range and process each partition in a separate thread. Data races in the user function are the
+  caller's responsibility.
 
 - **`par_unseq`**: In addition to `par` semantics, the element access function may be vectorized ---
- that is, multiple elements may be processed within a single thread using SIMD instructions (e.g.,
- SSE, AVX). This imposes an additional constraint: **the function must not acquire locks, call
- blocking APIs, or access thread-local storage**, because the same thread may be processing
- multiple elements simultaneously via SIMD lanes [N4950 §25.5.1].
+  that is, multiple elements may be processed within a single thread using SIMD instructions (e.g.,
+  SSE, AVX). This imposes an additional constraint: **the function must not acquire locks, call
+  blocking APIs, or access thread-local storage**, because the same thread may be processing
+  multiple elements simultaneously via SIMD lanes [N4950 §25.5.1].
 
 ```cpp
 #include <iostream>
@@ -92,7 +95,7 @@ Several standard algorithms accept execution policies [N4950 §25.7]:
 - **`std::sort`** [N4950 §25.7.7]: Parallel sort using `par` or `par_unseq`
 - **`std::for_each`** [N4950 §25.7.1]: Apply function to each element (parallel with `par`)
 - **`std::reduce`** [N4950 §25.7.4]: Parallel reduction (like `accumulate` but with no guaranteed
- order)
+  order)
 - **`std::transform`** [N4950 §25.7.7]: Apply function in parallel
 - **`std::count` / `std::count_if`** [N4950 §25.7.1]: Count in parallel
 - **`std::find` / `std::find_if`** [N4950 §25.7.2]: Search in parallel
@@ -160,20 +163,18 @@ int main() {
 
 ### Data Races in Parallel Algorithms
 
-:::warning
-The most common pitfall with parallel algorithms is **data races**. When an algorithm
+:::warning The most common pitfall with parallel algorithms is **data races**. When an algorithm
 Uses `std::execution::par`The user-provided function objects may be called concurrently from
 Multiple threads. The standard imposes specific requirements [N4950 §25.5.1]:
 
 1. The function object must not modify elements of the input range (unless the algorithm is
- documented as modifying them, like `sort` or `transform`).
+   documented as modifying them, like `sort` or `transform`).
 2. If the function object modifies any other data, the caller is responsible for ensuring
- synchronization.
-3. Element access functions (including the function object) must not call `std::terminate`Block,
- or access any object that is not element-accessible.
+   synchronization.
+3. Element access functions (including the function object) must not call `std::terminate`Block, or
+   access any object that is not element-accessible.
 
-Violating these rules results in **undefined behavior**.
-:::
+Violating these rules results in **undefined behavior**. :::
 
 ```cpp
 #include <iostream>
@@ -298,12 +299,10 @@ int main() {
 }
 ```
 
-:::warning
-**Never use `std::reduce` with floating-point arithmetic if you need bit-exact
+:::warning **Never use `std::reduce` with floating-point arithmetic if you need bit-exact
 Reproducibility.** Floating-point addition is not associative (e.g.,
 `(0.1 + 0.2) + 0.3 != 0.1 + (0.2 + 0.3)` in IEEE 754). Use `std::accumulate` for deterministic
-Floating-point results, or use compensated summation (Kahan summation) for accuracy.
-:::
+Floating-point results, or use compensated summation (Kahan summation) for accuracy. :::
 
 ### Proof of Deterministic Results with `std::reduce`
 
@@ -327,8 +326,8 @@ Over the multiset $\{init, a_1, \ldots, a_n\}$ produces the same result. Since `
 Both operate on the same multiset, they must produce the same result. QED.
 
 This proof shows why floating-point addition is problematic: IEEE 754 addition is neither
-Associative nor commutative (due to rounding), so `reduce` may produce a different bit
-Pattern than `accumulate` even though both are "correct" within floating-point semantics.
+Associative nor commutative (due to rounding), so `reduce` may produce a different bit Pattern than
+`accumulate` even though both are "correct" within floating-point semantics.
 
 ### Vectorization Hints and `par_unseq`
 
@@ -499,16 +498,16 @@ int main() {
 
 ### Comparison Table: Execution Policies
 
-| Property | `seq` | `par` | `par_unseq` |
+| Property                 | `seq`              | `par`                    | `par_unseq`                 |
 | ------------------------ | ------------------ | ------------------------ | --------------------------- |
-| Threading | Single | Multiple | Multiple + SIMD |
-| Ordering guarantee | Strict | None | None |
-| Data race safety | Automatic | Caller's responsibility | Caller's responsibility |
-| Locking in user function | Allowed | Allowed | **Forbidden** |
-| Thread-local storage | Allowed | Allowed | **Forbidden** |
-| Blocking calls | Allowed | Allowed | **Forbidden** |
-| SIMD auto-vectorization | Compiler-dependent | Implementation-dependent | Guaranteed permitted |
-| Best for | Small data, debug | Large data, CPU-bound | Array math, no side effects |
+| Threading                | Single             | Multiple                 | Multiple + SIMD             |
+| Ordering guarantee       | Strict             | None                     | None                        |
+| Data race safety         | Automatic          | Caller's responsibility  | Caller's responsibility     |
+| Locking in user function | Allowed            | Allowed                  | **Forbidden**               |
+| Thread-local storage     | Allowed            | Allowed                  | **Forbidden**               |
+| Blocking calls           | Allowed            | Allowed                  | **Forbidden**               |
+| SIMD auto-vectorization  | Compiler-dependent | Implementation-dependent | Guaranteed permitted        |
+| Best for                 | Small data, debug  | Large data, CPU-bound    | Array math, no side effects |
 
 ### Algorithmic Parallelism vs Task Parallelism
 
@@ -519,12 +518,12 @@ Programmer explicitly creates and manages threads or tasks (e.g., `std::async`Th
 The key distinction:
 
 - **Algorithmic parallelism** (`std::sort(par, ...)`): The programmer specifies _what_ to compute
- but not _how_ to parallelize. The standard library implementation chooses the partitioning
- strategy, grain size, and thread count. This is declarative and portable but gives less control.
+  but not _how_ to parallelize. The standard library implementation chooses the partitioning
+  strategy, grain size, and thread count. This is declarative and portable but gives less control.
 
-- **Task parallelism** (`std::thread``std::async`): The programmer explicitly defines parallel
- tasks and their dependencies. This is imperative and gives full control over synchronization, load
- balancing, and resource usage, but is more error-prone.
+- **Task parallelism** (`std::thread``std::async`): The programmer explicitly defines parallel tasks
+  and their dependencies. This is imperative and gives full control over synchronization, load
+  balancing, and resource usage, but is more error-prone.
 
 ```cpp
 #include <algorithm>
@@ -596,51 +595,51 @@ Default allocator. This separation is transparent to the user.
 
 ### Complete List of Parallel-Capable Algorithms [N4950 S25.7]
 
-| Algorithm | Parallel Overload | Notes |
+| Algorithm                              | Parallel Overload | Notes                              |
 | -------------------------------------- | :---------------: | :--------------------------------- |
-| `std::adjacent_difference` | Yes | Left-to-right order not guaranteed |
-| `std::adjacent_find` | Yes | Returns any match |
-| `std::all_of` / `any_of` | Yes | |
-| `std::count` / `count_if` | Yes | |
-| `std::equal` | Yes | |
-| `std::exclusive_scan` | Yes | |
-| `std::fill` / `fill_n` | Yes | |
-| `std::find` / `find_end` | Yes | |
-| `std::find_first_of` | Yes | |
-| `std::find_if` / `find_if_not` | Yes | |
-| `std::for_each` | Yes | |
-| `std::for_each_n` | Yes | |
-| `std::generate` / `generate_n` | Yes | |
-| `std::inclusive_scan` | Yes | |
-| `std::is_heap` | Yes | |
-| `std::is_partitioned` | Yes | |
-| `std::is_sorted` | Yes | |
-| `std::is_sorted_until` | Yes | |
-| `std::mismatch` | Yes | |
-| `std::move` | Yes | |
-| `std::none_of` | Yes | |
-| `std::reduce` | Yes | No ordering guarantee |
-| `std::remove` / `remove_if` | Yes | |
-| `std::replace` / `replace_if` | Yes | |
-| `std::reverse` | Yes | |
-| `std::rotate` | Yes | |
-| `std::search` / `search_n` | Yes | |
-| `std::set_difference` | Yes | |
-| `std::set_intersection` | Yes | |
-| `std::set_symmetric_difference` | Yes | |
-| `std::set_union` | Yes | |
-| `std::sort` | Yes | |
-| `std::stable_sort` | Yes (C++20) | |
-| `std::swap_ranges` | Yes | |
-| `std::transform` | Yes | |
-| `std::transform_exclusive_scan` | Yes | |
-| `std::transform_inclusive_scan` | Yes | |
-| `std::transform_reduce` | Yes | |
-| `std::uninitialized_fill` | Yes | |
-| `std::uninitialized_default_construct` | Yes | |
-| `std::uninitialized_value_construct` | Yes | |
-| `std::min_element` / `max_element` | Yes | Returns any extremum |
-| `std::minmax_element` | Yes | |
+| `std::adjacent_difference`             |        Yes        | Left-to-right order not guaranteed |
+| `std::adjacent_find`                   |        Yes        | Returns any match                  |
+| `std::all_of` / `any_of`               |        Yes        |                                    |
+| `std::count` / `count_if`              |        Yes        |                                    |
+| `std::equal`                           |        Yes        |                                    |
+| `std::exclusive_scan`                  |        Yes        |                                    |
+| `std::fill` / `fill_n`                 |        Yes        |                                    |
+| `std::find` / `find_end`               |        Yes        |                                    |
+| `std::find_first_of`                   |        Yes        |                                    |
+| `std::find_if` / `find_if_not`         |        Yes        |                                    |
+| `std::for_each`                        |        Yes        |                                    |
+| `std::for_each_n`                      |        Yes        |                                    |
+| `std::generate` / `generate_n`         |        Yes        |                                    |
+| `std::inclusive_scan`                  |        Yes        |                                    |
+| `std::is_heap`                         |        Yes        |                                    |
+| `std::is_partitioned`                  |        Yes        |                                    |
+| `std::is_sorted`                       |        Yes        |                                    |
+| `std::is_sorted_until`                 |        Yes        |                                    |
+| `std::mismatch`                        |        Yes        |                                    |
+| `std::move`                            |        Yes        |                                    |
+| `std::none_of`                         |        Yes        |                                    |
+| `std::reduce`                          |        Yes        | No ordering guarantee              |
+| `std::remove` / `remove_if`            |        Yes        |                                    |
+| `std::replace` / `replace_if`          |        Yes        |                                    |
+| `std::reverse`                         |        Yes        |                                    |
+| `std::rotate`                          |        Yes        |                                    |
+| `std::search` / `search_n`             |        Yes        |                                    |
+| `std::set_difference`                  |        Yes        |                                    |
+| `std::set_intersection`                |        Yes        |                                    |
+| `std::set_symmetric_difference`        |        Yes        |                                    |
+| `std::set_union`                       |        Yes        |                                    |
+| `std::sort`                            |        Yes        |                                    |
+| `std::stable_sort`                     |    Yes (C++20)    |                                    |
+| `std::swap_ranges`                     |        Yes        |                                    |
+| `std::transform`                       |        Yes        |                                    |
+| `std::transform_exclusive_scan`        |        Yes        |                                    |
+| `std::transform_inclusive_scan`        |        Yes        |                                    |
+| `std::transform_reduce`                |        Yes        |                                    |
+| `std::uninitialized_fill`              |        Yes        |                                    |
+| `std::uninitialized_default_construct` |        Yes        |                                    |
+| `std::uninitialized_value_construct`   |        Yes        |                                    |
+| `std::min_element` / `max_element`     |        Yes        | Returns any extremum               |
+| `std::minmax_element`                  |        Yes        |                                    |
 
 ### Common Pitfalls
 
@@ -744,12 +743,10 @@ int main() {
 }
 ```
 
-:::info
-Not all algorithms have parallel overloads. The following algorithms do **not** support
+:::info Not all algorithms have parallel overloads. The following algorithms do **not** support
 Execution policies: `std::stable_sort` (until C++20), `std::nth_element` (until C++20), and
 `std::inplace_merge`. Check the standard or your compiler's documentation for the full list of
-Parallel-capable algorithms.
-:::
+Parallel-capable algorithms. :::
 
 ## See Also
 

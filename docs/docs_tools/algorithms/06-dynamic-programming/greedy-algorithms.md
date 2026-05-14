@@ -1,9 +1,12 @@
 ---
 id: greedy-algorithms
 title: Greedy Algorithms
-description: "Greedy algorithm design: the exchange argument, matroid theory, scheduling problems, graph algorithms, and conditions under which greedy strategies are optimal."
+description:
+  'Greedy algorithm design: the exchange argument, matroid theory, scheduling problems, graph
+  algorithms, and conditions under which greedy strategies are optimal.'
 slug: greedy-algorithms
 ---
+
 ## The Greedy Paradigm
 
 A greedy algorithm makes the locally optimal choice at each step, hoping this leads to a globally
@@ -12,16 +15,16 @@ Subproblems — they commit to a choice and never reconsider.
 
 ### When to Consider Greedy
 
-| Signal | Try Greedy First? |
+| Signal                                                         | Try Greedy First? |
 | -------------------------------------------------------------- | ----------------- |
-| Problem has a matroid structure | Yes |
-| Activity/resource scheduling with ordering | Yes |
-| Huffman-like optimal prefix coding | Yes |
-| Fractional version of a knapsack problem | Yes |
-| MST or shortest path on non-negative weights | Yes |
-| 0/1 knapsack, partition, edit distance | No (use DP) |
-| TSP | No (NP-hard) |
-| Problem requires "try all possibilities" to verify correctness | Probably No |
+| Problem has a matroid structure                                | Yes               |
+| Activity/resource scheduling with ordering                     | Yes               |
+| Huffman-like optimal prefix coding                             | Yes               |
+| Fractional version of a knapsack problem                       | Yes               |
+| MST or shortest path on non-negative weights                   | Yes               |
+| 0/1 knapsack, partition, edit distance                         | No (use DP)       |
+| TSP                                                            | No (NP-hard)      |
+| Problem requires "try all possibilities" to verify correctness | Probably No       |
 
 ## The Exchange Argument
 
@@ -34,7 +37,7 @@ Optimal solution with the greedy choice without making the solution worse.
 1. Let $G$ be the greedy solution and $O$ be an optimal solution
 2. Find the first point where $G$ and $O$ differ
 3. Show that replacing the optimal's choice with the greedy's choice produces a solution $O'$ that
- is at least as good as $O$
+   is at least as good as $O$
 4. Conclude that there exists an optimal solution that agrees with the greedy at this step
 5. By induction, the greedy solution is optimal
 
@@ -69,10 +72,9 @@ def activity_selection(activities):
 
 Let $G = \{g_1, g_2, \ldots\}$ be the greedy solution and $O = \{o_1, o_2, \ldots\}$ be an optimal
 Solution, both sorted by finish time. $g_1$ has the earliest finish time of all activities. Since
-$o_1$ also finishes before $o_2, o_3, \ldots$We have $f(g_1) \le f(o_1)$. Replacing $o_1$ with
-$g_1$ in $O$ gives a valid solution (since $g_1$ finishes no later than $o_1$It does not overlap
-With $o_2$). The new solution has the same size as $O$ and starts with $g_1$. By induction,
-$|G| = |O|$.
+$o_1$ also finishes before $o_2, o_3, \ldots$We have $f(g_1) \le f(o_1)$. Replacing $o_1$ with $g_1$
+in $O$ gives a valid solution (since $g_1$ finishes no later than $o_1$It does not overlap With
+$o_2$). The new solution has the same size as $O$ and starts with $g_1$. By induction, $|G| = |O|$.
 
 :::tip
 
@@ -144,12 +146,12 @@ def huffman(frequencies):
 **Proof sketch**:
 
 1. **Lemma 1**: In an optimal prefix code, the two least frequent symbols are siblings at the
- deepest level. If they were not, swapping a more frequent symbol deeper would not increase the
- expected length.
+   deepest level. If they were not, swapping a more frequent symbol deeper would not increase the
+   expected length.
 
 2. **Lemma 2**: The Huffman merge step preserves optimality. If we have an optimal code for $n-1$
- symbols (where the two least frequent symbols are merged), we can expand the merged symbol back
- into two siblings to get an optimal code for $n$ symbols.
+   symbols (where the two least frequent symbols are merged), we can expand the merged symbol back
+   into two siblings to get an optimal code for $n$ symbols.
 
 3. **By induction**: The algorithm produces optimal codes at every step.
 
@@ -196,7 +198,7 @@ def fractional_knapsack(weights, values, capacity):
 Consider items with (value, weight): `(60, 10)``(100, 20)``(120, 30)` with capacity 50.
 
 - Greedy by ratio: take item 1 (60/10 = 6), item 2 (100/20 = 5), item 3 (120/30 = 4). Total: 60 +
- 100 = 160, weight 30. Cannot add item 3 (weight 30 > remaining 20).
+  100 = 160, weight 30. Cannot add item 3 (weight 30 > remaining 20).
 - Optimal: items 2 and 3. Total: 100 + 120 = 220, weight 50.
 
 The greedy choice of the highest-ratio item excludes the optimal combination. This is because 0/1
@@ -390,12 +392,13 @@ Are optimal on matroids.
 
 ### Definition
 
-A matroid $M = (S, \mathcal{'\{'}I{'\}'})$ consists of a finite set $S$ and a collection $\mathcal{'\{'}I{'\}'}$ of
-Independent subsets of $S$ satisfying:
+A matroid $M = (S, \mathcal{'\{'}I{'\}'})$ consists of a finite set $S$ and a collection
+$\mathcal{'\{'}I{'\}'}$ of Independent subsets of $S$ satisfying:
 
-1. **Hereditary property**: if $A \in \mathcal{'\{'}I{'\}'}$ and $B \subseteq A$Then $B \in \mathcal{'\{'}I{'\}'}$
+1. **Hereditary property**: if $A \in \mathcal{'\{'}I{'\}'}$ and $B \subseteq A$Then
+   $B \in \mathcal{'\{'}I{'\}'}$
 2. **Exchange property**: if $A, B \in \mathcal{'\{'}I{'\}'}$ and $|A| \lt |B|$Then there exists
- $x \in B \setminus A$ such that $A \cup \{x\} \in \mathcal{'\{'}I{'\}'}$
+   $x \in B \setminus A$ such that $A \cup \{x\} \in \mathcal{'\{'}I{'\}'}$
 
 ### Matroid Greedy Theorem
 
@@ -404,13 +407,13 @@ Independent) finds the maximum-weight independent set in any matroid.
 
 ### Examples of Matroids
 
-| Matroid | Set $S$ | Independent Sets $\mathcal{'\{'}I{'\}'}$ | Greedy Problem |
-| ------------------- | ---------------- | ---------------------------------- | ------------------ |
-| Graphic matroid | Edges of a graph | Acyclic subsets (forests) | MST (Kruskal) |
-| Partition matroid | Elements | At most one from each partition | Assignment |
-| Linear matroid | Vectors | Linearly independent sets | Max weight basis |
-| Uniform matroid | Elements | Subsets of size $\le k$ | Top-k selection |
-| Transversal matroid | Elements | System of distinct representatives | Bipartite matching |
+| Matroid             | Set $S$          | Independent Sets $\mathcal{'\{'}I{'\}'}$ | Greedy Problem     |
+| ------------------- | ---------------- | ---------------------------------------- | ------------------ |
+| Graphic matroid     | Edges of a graph | Acyclic subsets (forests)                | MST (Kruskal)      |
+| Partition matroid   | Elements         | At most one from each partition          | Assignment         |
+| Linear matroid      | Vectors          | Linearly independent sets                | Max weight basis   |
+| Uniform matroid     | Elements         | Subsets of size $\le k$                  | Top-k selection    |
+| Transversal matroid | Elements         | System of distinct representatives       | Bipartite matching |
 
 ```mermaid
 graph TD
@@ -624,16 +627,16 @@ Correct.
 
 ### Step 3: Check Known Patterns
 
-| Greedy works | Greedy fails (use DP) |
+| Greedy works                   | Greedy fails (use DP)           |
 | ------------------------------ | ------------------------------- |
-| Fractional knapsack | 0/1 knapsack |
-| Activity selection (max count) | Weighted activity selection |
-| Huffman coding | Optimal BST |
-| MST (Kruskal/Prim) | Steiner tree |
-| Dijkstra (non-negative) | Bellman-Ford (negative weights) |
-| Earliest deadline first | Weighted interval scheduling |
-| Canonical coin change | General coin change |
-| Set cover approximation | Exact set cover |
+| Fractional knapsack            | 0/1 knapsack                    |
+| Activity selection (max count) | Weighted activity selection     |
+| Huffman coding                 | Optimal BST                     |
+| MST (Kruskal/Prim)             | Steiner tree                    |
+| Dijkstra (non-negative)        | Bellman-Ford (negative weights) |
+| Earliest deadline first        | Weighted interval scheduling    |
+| Canonical coin change          | General coin change             |
+| Set cover approximation        | Exact set cover                 |
 
 ### Step 4: Verify with Small Examples
 
@@ -717,9 +720,8 @@ def min_bottleneck_spanning_tree(n, edges):
 
 #### Degree-Constrained Spanning Tree
 
-Find an MST where no vertex has degree exceeding $d$. This is NP-hard , but a greedy
-Approach works well as a heuristic: run Kruskal but skip any edge that would cause a vertex to
-Exceed degree $d$.
+Find an MST where no vertex has degree exceeding $d$. This is NP-hard , but a greedy Approach works
+well as a heuristic: run Kruskal but skip any edge that would cause a vertex to Exceed degree $d$.
 
 ### Greedy String Algorithms
 
@@ -854,8 +856,8 @@ def gas_station(gas, cost):
 
 #### Optimal Merge Pattern
 
-Given $n$ sorted files of sizes $s_1, s_2, \ldots, s_n$Merge them into one sorted file with
-Minimum total comparisons. This is identical to Huffman coding.
+Given $n$ sorted files of sizes $s_1, s_2, \ldots, s_n$Merge them into one sorted file with Minimum
+total comparisons. This is identical to Huffman coding.
 
 ```python
 import heapq
@@ -941,14 +943,14 @@ def interval_colouring(intervals):
 
 ### Proof Techniques Summary
 
-| Technique | When to Use | Key Idea |
+| Technique            | When to Use                        | Key Idea                                      |
 | -------------------- | ---------------------------------- | --------------------------------------------- |
-| Exchange argument | Scheduling, MST, Huffman, matroids | Swap optimal's choice with greedy's |
-| Greedy stays ahead | Simple greedy with clear ordering | Show greedy's partial solution is never worse |
-| Cut-and-paste | Partitioning problems | Cut one solution, paste into another |
-| Induction | Any greedy with natural ordering | Prove step $k$ implies step $k+1$ |
-| Matroid theorem | When problem has matroid structure | Greedy is optimal on matroids |
-| Lower bound matching | Approximation algorithms | Show greedy achieves a known lower bound |
+| Exchange argument    | Scheduling, MST, Huffman, matroids | Swap optimal's choice with greedy's           |
+| Greedy stays ahead   | Simple greedy with clear ordering  | Show greedy's partial solution is never worse |
+| Cut-and-paste        | Partitioning problems              | Cut one solution, paste into another          |
+| Induction            | Any greedy with natural ordering   | Prove step $k$ implies step $k+1$             |
+| Matroid theorem      | When problem has matroid structure | Greedy is optimal on matroids                 |
+| Lower bound matching | Approximation algorithms           | Show greedy achieves a known lower bound      |
 
 ## Summary
 

@@ -1,6 +1,8 @@
 ---
 title: Searching Algorithms
-description: "A-Level Computer Science notes on Searching Algorithms: 1. Linear Search; Algorithm; Correctness; Complexity Analysis with worked examples and exam-style que."
+description:
+  'A-Level Computer Science notes on Searching Algorithms: 1. Linear Search; Algorithm; Correctness;
+  Complexity Analysis with worked examples and exam-style que.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - ComputerScience
@@ -9,6 +11,7 @@ categories:
   - ComputerScience
 slug: searching-algorithms
 ---
+
 ## 1. Linear Search
 
 ### Algorithm
@@ -26,8 +29,8 @@ def linear_search(A, x):
 
 ### Correctness
 
-**Theorem.** `linear_search(A, x)` returns the index of the first occurrence of $x$ in $A$Or $-1$
-If $x$ is not present.
+**Theorem.** `linear_search(A, x)` returns the index of the first occurrence of $x$ in $A$Or $-1$ If
+$x$ is not present.
 
 **Proof.** The algorithm examines elements $A[0], A[1], \ldots$ in order. If $A[i] = x$It
 Immediately returns $i$Which is the first occurrence since all earlier elements were checked and
@@ -49,11 +52,11 @@ Comparisons. Only after checking all $n$ elements can the algorithm conclude tha
 Algorithm that does not check all $n$ positions can be fooled: the unchecked position could contain
 $x$. Therefore, at least $n$ comparisons are necessary in the worst case. $\square$
 
-| Case | Comparisons | Time |
+| Case    | Comparisons | Time   |
 | ------- | ----------- | ------ |
-| Best | 1 | $O(1)$ |
-| Average | $n/2$ | $O(n)$ |
-| Worst | $n$ | $O(n)$ |
+| Best    | 1           | $O(1)$ |
+| Average | $n/2$       | $O(n)$ |
+| Worst   | $n$         | $O(n)$ |
 
 <hr />
 
@@ -81,8 +84,8 @@ def binary_search(A, x):
 
 ### Correctness Proof
 
-**Theorem.** `binary_search(A, x)` returns the index of $x$ in the sorted array $A$Or $-1$ if $x$
-Is not present.
+**Theorem.** `binary_search(A, x)` returns the index of $x$ in the sorted array $A$Or $-1$ if $x$ Is
+not present.
 
 **Proof.** We prove by invariant.
 
@@ -96,13 +99,13 @@ $A[\mathrm{low}..\mathrm{high}] = A[0..n-1] = A$. If $x \in A$The invariant hold
 
 1. $A[\mathrm{mid}] = x$: Return mid. Correct. ✓
 2. $A[\mathrm{mid}] \lt{} x$: Since $A$ is sorted,
- $A[0..\mathrm{mid}] \leq A[\mathrm{mid}] \lt{} x$So $x \notin A[0..\mathrm{mid}]$. Setting
- `low = mid + 1` restricts the search to $A[\mathrm{mid}+1..\mathrm{high}]$. If $x$ was in the old
- range, it is in the new range.
+   $A[0..\mathrm{mid}] \leq A[\mathrm{mid}] \lt{} x$So $x \notin A[0..\mathrm{mid}]$. Setting
+   `low = mid + 1` restricts the search to $A[\mathrm{mid}+1..\mathrm{high}]$. If $x$ was in the old
+   range, it is in the new range.
 3. $A[\mathrm{mid}] \gt{} x$: Since $A$ is sorted,
- $A[\mathrm{mid}..n-1] \geq A[\mathrm{mid}] \gt{} x$So $x \notin A[\mathrm{mid}..n-1]$. Setting
- `high = mid - 1` restricts the search to $A[\mathrm{low}..\mathrm{mid}-1]$. If $x$ was in the old
- range, it is in the new range.
+   $A[\mathrm{mid}..n-1] \geq A[\mathrm{mid}] \gt{} x$So $x \notin A[\mathrm{mid}..n-1]$. Setting
+   `high = mid - 1` restricts the search to $A[\mathrm{low}..\mathrm{mid}-1]$. If $x$ was in the old
+   range, it is in the new range.
 
 **Termination.** The loop terminates when `low > high`Meaning $A[\mathrm{low}..\mathrm{high}]$ is
 Empty. By the invariant, $x \notin A$. Return $-1$. ✓
@@ -113,10 +116,10 @@ $\square$
 
 **Theorem.** Binary search performs $O(\log n)$ comparisons.
 
-**Proof.** At each iteration, the search range is halved. Starting with a range of size $n$After
-$k$ iterations the range size is at most $\lceil n/2^k \rceil$. The algorithm terminates when the
-Range is empty, which happens when $n/2^k \lt{} 1$I.e., $k \gt{} \log_2 n$. Therefore, the maximum
-Number of iterations is $\lfloor \log_2 n \rfloor + 1 = O(\log n)$. $\square$
+**Proof.** At each iteration, the search range is halved. Starting with a range of size $n$After $k$
+iterations the range size is at most $\lceil n/2^k \rceil$. The algorithm terminates when the Range
+is empty, which happens when $n/2^k \lt{} 1$I.e., $k \gt{} \log_2 n$. Therefore, the maximum Number
+of iterations is $\lfloor \log_2 n \rfloor + 1 = O(\log n)$. $\square$
 
 **Formal derivation.** Let $T(n)$ be the number of comparisons for an array of size $n$.
 
@@ -135,18 +138,16 @@ $$n + 1 \leq 2^{h+1} - 1 \implies h \geq \lceil \log_2(n + 2) \rceil - 1 = \Omeg
 
 $\square$
 
-:::warning
-Pitfall Binary search **only works on sorted arrays**. Applying it to an unsorted array
+:::warning Pitfall Binary search **only works on sorted arrays**. Applying it to an unsorted array
 Gives incorrect results. Also, beware of integer overflow when computing `mid = (low + high) // 2` —
-Use `mid = low + (high - low) // 2` for safety.
-:::
+Use `mid = low + (high - low) // 2` for safety. :::
 
 <details>
 <summary>Example: Trace binary search for x = 7 in [1, 3, 5, 7, 9, 11, 13]</summary>
 
-| Iteration | low | high | mid | A[mid] | Action |
+| Iteration | low | high | mid | A[mid] | Action          |
 | --------- | --- | ---- | --- | ------ | --------------- |
-| 1 | 0 | 6 | 3 | 7 | Found! Return 3 |
+| 1         | 0   | 6    | 3   | 7      | Found! Return 3 |
 
 Result: index 3. ✓
 
@@ -155,12 +156,12 @@ Result: index 3. ✓
 <details>
 <summary>Example: Trace binary search for x = 6 in [1, 3, 5, 7, 9, 11, 13]</summary>
 
-| Iteration | low | high | mid | A[mid] | Action |
+| Iteration | low | high | mid | A[mid] | Action                |
 | --------- | --- | ---- | --- | ------ | --------------------- |
-| 1 | 0 | 6 | 3 | 7 | 7 > 6, high = 2 |
-| 2 | 0 | 2 | 1 | 3 | 3 < 6, low = 2 |
-| 3 | 2 | 2 | 2 | 5 | 5 < 6, low = 3 |
-| 4 | 3 | 2 | — | — | low > high, return -1 |
+| 1         | 0   | 6    | 3   | 7      | 7 > 6, high = 2       |
+| 2         | 0   | 2    | 1   | 3      | 3 < 6, low = 2        |
+| 3         | 2   | 2    | 2   | 5      | 5 < 6, low = 3        |
+| 4         | 3   | 2    | —   | —      | low > high, return -1 |
 
 Result: -1 (not found). ✓
 
@@ -181,25 +182,23 @@ def binary_search_recursive(A, x, low, high):
         return binary_search_recursive(A, x, low, mid - 1)
 ```
 
-:::info
-Board-specific **AQA** requires linear search and binary search; binary search must be on
+:::info Board-specific **AQA** requires linear search and binary search; binary search must be on
 Sorted data and may require trace tables. **CIE (9618)** requires linear search and binary search
 With pseudocode. **OCR (A)** requires linear and binary search; may also cover hash-based searching.
-**Edexcel** covers linear and binary search algorithms.
-:::
+**Edexcel** covers linear and binary search algorithms. :::
 
 <hr />
 
 ## 3. Comparison of Search Algorithms
 
-| Property | Linear Search | Binary Search |
+| Property              | Linear Search | Binary Search         |
 | --------------------- | ------------- | --------------------- |
-| Precondition | None | Array must be sorted |
-| Best case | $O(1)$ | $O(1)$ |
-| Average case | $O(n)$ | $O(\log n)$ |
-| Worst case | $O(n)$ | $O(\log n)$ |
-| Data structure | Array, list | Array (random access) |
-| Works on linked list? | Yes | No (no random access) |
+| Precondition          | None          | Array must be sorted  |
+| Best case             | $O(1)$        | $O(1)$                |
+| Average case          | $O(n)$        | $O(\log n)$           |
+| Worst case            | $O(n)$        | $O(\log n)$           |
+| Data structure        | Array, list   | Array (random access) |
+| Works on linked list? | Yes           | No (no random access) |
 
 <hr />
 
@@ -226,10 +225,8 @@ def binary_search_insert_position(A, x):
 Binary search can be used to find a threshold in a continuous or discrete answer space (e.g.,
 "minimum maximum", "maximum minimum" problems).
 
-:::tip
-Exam tip For exam questions, always state the precondition (sorted array) for binary search
-And trace through the algorithm step by step. Show the low, high, mid values at each iteration.
-:::
+:::tip Exam tip For exam questions, always state the precondition (sorted array) for binary search
+And trace through the algorithm step by step. Show the low, high, mid values at each iteration. :::
 
 <hr />
 
@@ -245,14 +242,14 @@ The value 8 is not in the array. All 8 elements are checked:
 
 | Step | Index | A[index] | Comparison | Count |
 | ---- | ----- | -------- | ---------- | ----- |
-| 1 | 0 | 3 | 3 ≠ 8 | 1 |
-| 2 | 1 | 1 | 1 ≠ 8 | 2 |
-| 3 | 2 | 4 | 4 ≠ 8 | 3 |
-| 4 | 3 | 1 | 1 ≠ 8 | 4 |
-| 5 | 4 | 5 | 5 ≠ 8 | 5 |
-| 6 | 5 | 9 | 9 ≠ 8 | 6 |
-| 7 | 6 | 2 | 2 ≠ 8 | 7 |
-| 8 | 7 | 6 | 6 ≠ 8 | 8 |
+| 1    | 0     | 3        | 3 ≠ 8      | 1     |
+| 2    | 1     | 1        | 1 ≠ 8      | 2     |
+| 3    | 2     | 4        | 4 ≠ 8      | 3     |
+| 4    | 3     | 1        | 1 ≠ 8      | 4     |
+| 5    | 4     | 5        | 5 ≠ 8      | 5     |
+| 6    | 5     | 9        | 9 ≠ 8      | 6     |
+| 7    | 6     | 2        | 2 ≠ 8      | 7     |
+| 8    | 7     | 6        | 6 ≠ 8      | 8     |
 
 Total comparisons: 8. Return -1.
 
@@ -264,13 +261,13 @@ Total comparisons: 8. Return -1.
 <details>
 <summary>Answer</summary>
 
-| Iteration | low | high | mid | A[mid] | Action |
+| Iteration | low | high | mid | A[mid] | Action            |
 | --------- | --- | ---- | --- | ------ | ----------------- |
-| 1 | 0 | 9 | 4 | 16 | 16 < 25, low = 5 |
-| 2 | 5 | 9 | 7 | 56 | 56 > 25, high = 6 |
-| 3 | 5 | 6 | 5 | 23 | 23 < 25, low = 6 |
-| 4 | 6 | 6 | 6 | 38 | 38 > 25, high = 5 |
-| 5 | 6 | 5 | — | — | low > high → -1 |
+| 1         | 0   | 9    | 4   | 16     | 16 < 25, low = 5  |
+| 2         | 5   | 9    | 7   | 56     | 56 > 25, high = 6 |
+| 3         | 5   | 6    | 5   | 23     | 23 < 25, low = 6  |
+| 4         | 6   | 6    | 6   | 38     | 38 > 25, high = 5 |
+| 5         | 6   | 5    | —   | —      | low > high → -1   |
 
 4 comparisons. Result: -1.
 
@@ -409,9 +406,9 @@ Until a match is found.
 
 | Step | Index | A[index] | Comparison | Count |
 | ---- | ----- | -------- | ---------- | ----- |
-| 1 | 0 | 7 | 7 ≠ 14 | 1 |
-| 2 | 1 | 3 | 3 ≠ 14 | 2 |
-| 3 | 2 | 14 | 14 = 14 ✓ | 3 |
+| 1    | 0     | 7        | 7 ≠ 14     | 1     |
+| 2    | 1     | 3        | 3 ≠ 14     | 2     |
+| 3    | 2     | 14       | 14 = 14 ✓  | 3     |
 
 3 comparisons are made. The value 14 is found at index 2. The algorithm returns 2.
 
@@ -433,15 +430,15 @@ The value 5 is not in the array, so the algorithm must check every single elemen
 
 | Step | Index | A[index] | Comparison | Count |
 | ---- | ----- | -------- | ---------- | ----- |
-| 1 | 0 | 10 | 10 ≠ 5 | 1 |
-| 2 | 1 | 20 | 20 ≠ 5 | 2 |
-| 3 | 2 | 30 | 30 ≠ 5 | 3 |
-| 4 | 3 | 40 | 40 ≠ 5 | 4 |
-| 5 | 4 | 50 | 50 ≠ 5 | 5 |
-| 6 | 5 | 60 | 60 ≠ 5 | 6 |
-| 7 | 6 | 70 | 70 ≠ 5 | 7 |
-| 8 | 7 | 80 | 80 ≠ 5 | 8 |
-| 9 | 8 | 90 | 90 ≠ 5 | 9 |
+| 1    | 0     | 10       | 10 ≠ 5     | 1     |
+| 2    | 1     | 20       | 20 ≠ 5     | 2     |
+| 3    | 2     | 30       | 30 ≠ 5     | 3     |
+| 4    | 3     | 40       | 40 ≠ 5     | 4     |
+| 5    | 4     | 50       | 50 ≠ 5     | 5     |
+| 6    | 5     | 60       | 60 ≠ 5     | 6     |
+| 7    | 6     | 70       | 70 ≠ 5     | 7     |
+| 8    | 7     | 80       | 80 ≠ 5     | 8     |
+| 9    | 8     | 90       | 90 ≠ 5     | 9     |
 
 9 comparisons are made. The value 5 is not found, so the algorithm returns -1. This is the worst
 Case for an array of 9 elements — every element must be checked.
@@ -463,11 +460,11 @@ Range accordingly.
 <details>
 <summary>Answer</summary>
 
-| Iteration | low | high | mid | A[mid] | Action |
+| Iteration | low | high | mid | A[mid] | Action            |
 | --------- | --- | ---- | --- | ------ | ----------------- |
-| 1 | 0 | 9 | 4 | 35 | 35 < 42, low = 5 |
-| 2 | 5 | 9 | 7 | 58 | 58 > 42, high = 6 |
-| 3 | 5 | 6 | 5 | 42 | Found! Return 5 |
+| 1         | 0   | 9    | 4   | 35     | 35 < 42, low = 5  |
+| 2         | 5   | 9    | 7   | 58     | 58 > 42, high = 6 |
+| 3         | 5   | 6    | 5   | 42     | Found! Return 5   |
 
 3 comparisons are made. The value 42 is found at index 5.
 
@@ -487,12 +484,12 @@ And then terminate with low > high.
 <details>
 <summary>Answer</summary>
 
-| Iteration | low | high | mid | A[mid] | Action |
+| Iteration | low | high | mid | A[mid] | Action             |
 | --------- | --- | ---- | --- | ------ | ------------------ |
-| 1 | 0 | 7 | 3 | 14 | 14 < 15, low = 4 |
-| 2 | 4 | 7 | 5 | 22 | 22 > 15, high = 4 |
-| 3 | 4 | 4 | 4 | 18 | 18 > 15, high = 3 |
-| 4 | 4 | 3 | — | — | low > high, return |
+| 1         | 0   | 7    | 3   | 14     | 14 < 15, low = 4   |
+| 2         | 4   | 7    | 5   | 22     | 22 > 15, high = 4  |
+| 3         | 4   | 4    | 4   | 18     | 18 > 15, high = 3  |
+| 4         | 4   | 3    | —   | —      | low > high, return |
 
 4 comparisons are made. The value 15 is not in the array, so the algorithm returns -1.
 
@@ -571,12 +568,12 @@ $\lfloor x \rfloor$ means the greatest integer less than or equal to $x$.
 
 Using $\lfloor \log_2 n \rfloor + 1$:
 
-| $n$ | $\log_2 n$ | $\lfloor \log_2 n \rfloor$ | Max comparisons |
+| $n$       | $\log_2 n$ | $\lfloor \log_2 n \rfloor$ | Max comparisons |
 | --------- | ---------- | -------------------------- | --------------- |
-| 15 | 3.91 | 3 | 3 + 1 = **4** |
-| 100 | 6.64 | 6 | 6 + 1 = **7** |
-| 500 | 8.97 | 8 | 8 + 1 = **9** |
-| 1,000,000 | 19.93 | 19 | 19 + 1 = **20** |
+| 15        | 3.91       | 3                          | 3 + 1 = **4**   |
+| 100       | 6.64       | 6                          | 6 + 1 = **7**   |
+| 500       | 8.97       | 8                          | 8 + 1 = **9**   |
+| 1,000,000 | 19.93      | 19                         | 19 + 1 = **20** |
 
 This demonstrates the power of logarithmic growth: searching through a million elements requires
 Only 20 comparisons maximum.
@@ -650,12 +647,12 @@ The array has 11 elements (indices 0–10). Start with low = 0, high = 10. The f
 <details>
 <summary>Answer</summary>
 
-| Iteration | low | high | mid | A[mid] | Comparison | Action |
+| Iteration | low | high | mid | A[mid] | Comparison | Action          |
 | --------- | --- | ---- | --- | ------ | ---------- | --------------- |
-| 1 | 0 | 10 | 5 | 20 | 20 > 17 | high = 4 |
-| 2 | 0 | 4 | 2 | 12 | 12 < 17 | low = 3 |
-| 3 | 3 | 4 | 3 | 15 | 15 < 17 | low = 4 |
-| 4 | 4 | 4 | 4 | 17 | 17 = 17 ✓ | Found! Return 4 |
+| 1         | 0   | 10   | 5   | 20     | 20 > 17    | high = 4        |
+| 2         | 0   | 4    | 2   | 12     | 12 < 17    | low = 3         |
+| 3         | 3   | 4    | 3   | 15     | 15 < 17    | low = 4         |
+| 4         | 4   | 4    | 4   | 17     | 17 = 17 ✓  | Found! Return 4 |
 
 4 comparisons are made. The value 17 is found at index 4.
 
@@ -696,11 +693,11 @@ Sorted.
 
 **Summary:**
 
-| Scenario | Data size | Sorted? | Best algorithm | Max comparisons |
+| Scenario              | Data size | Sorted? | Best algorithm | Max comparisons |
 | --------------------- | --------- | ------- | -------------- | --------------- |
-| (a) ISBN lookup | 20,000 | Yes | Binary search | 15 |
-| (b) Recently returned | 50 | No | Linear search | 50 |
-| (c) Price lookup | 20,000 | Yes | Binary search | 15 |
+| (a) ISBN lookup       | 20,000    | Yes     | Binary search  | 15              |
+| (b) Recently returned | 50        | No      | Linear search  | 50              |
+| (c) Price lookup      | 20,000    | Yes     | Binary search  | 15              |
 
 </details>
 

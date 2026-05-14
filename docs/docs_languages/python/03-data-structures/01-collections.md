@@ -1,6 +1,8 @@
 ---
 title: Collections
-description: "Collections — Lists; Internal Representation: Dynamic Arrays; Growth Strategy and Amortized O(1) Append; Output pattern on 64-bit CPython:."
+description:
+  'Collections — Lists; Internal Representation: Dynamic Arrays; Growth Strategy and Amortized O(1)
+  Append; Output pattern on 64-bit CPython:.'
 date: 2025-06-04T12:00:00.000Z
 tags:
   - Python
@@ -8,6 +10,7 @@ categories:
   - Python
 slug: collections
 ---
+
 ## Lists
 
 Python lists are **ordered, mutable sequences** of arbitrary objects. They are the most frequently
@@ -44,7 +47,7 @@ Each `items[i]` slot is a pointer to a heap-allocated `PyObject`. The list itsel
 Objects inline -- it stores references. This means:
 
 1. A list of three integers occupies three pointer slots (24 bytes on 64-bit) plus three separate
- heap allocations for the integer objects.
+   heap allocations for the integer objects.
 2. Appending to a list never copies the contained objects. Only pointers are moved.
 3. A single object can appear in multiple lists simultaneously without duplication.
 
@@ -77,7 +80,7 @@ Roughly, this means the new capacity is approximately `newsize + newsize/8 + 6`.
 Used by many other languages. The Python developers chose this because:
 
 - Lists are frequently used for temporary accumulations where the final size is not much larger than
- the initial size. A 2x factor wastes more memory in these cases.
+  the initial size. A 2x factor wastes more memory in these cases.
 - The smaller factor still guarantees amortized O(1) append.
 
 **Amortized analysis.** Consider n appends to an initially empty list. A resize occurs when the list
@@ -111,20 +114,20 @@ for i in range(10):
 
 ### Time Complexity of List Operations
 
-| Operation | Average Case | Worst Case | Notes |
+| Operation              | Average Case | Worst Case | Notes                                   |
 | ---------------------- | :----------: | :--------: | --------------------------------------- |
-| `append(x)` | O(1) amort. | O(n) | Resize when capacity reached |
-| `pop()` (from end) | O(1) | O(1) | |
-| `pop(i)` (from middle) | O(n) | O(n) | Shifts all elements after index i |
-| `insert(i, x)` | O(n) | O(n) | Shifts all elements from index i onward |
-| `del lst[i]` | O(n) | O(n) | Same as pop from middle |
-| `lst[i]` | O(1) | O(1) | Direct pointer dereference |
-| `x in lst` | O(n) | O(n) | Linear scan |
-| `lst1 + lst2` | O(n+m) | O(n+m) | Creates new list, copies all pointers |
-| `lst * n` | O(n\*k) | O(n\*k) | |
-| `lst.sort()` | O(n log n) | O(n log n) | Timsort |
-| `len(lst)` | O(1) | O(1) | Stored in `ob_size` |
-| `lst.clear()` | O(1) | O(1) | Drops references, does not shrink array |
+| `append(x)`            | O(1) amort.  |    O(n)    | Resize when capacity reached            |
+| `pop()` (from end)     |     O(1)     |    O(1)    |                                         |
+| `pop(i)` (from middle) |     O(n)     |    O(n)    | Shifts all elements after index i       |
+| `insert(i, x)`         |     O(n)     |    O(n)    | Shifts all elements from index i onward |
+| `del lst[i]`           |     O(n)     |    O(n)    | Same as pop from middle                 |
+| `lst[i]`               |     O(1)     |    O(1)    | Direct pointer dereference              |
+| `x in lst`             |     O(n)     |    O(n)    | Linear scan                             |
+| `lst1 + lst2`          |    O(n+m)    |   O(n+m)   | Creates new list, copies all pointers   |
+| `lst * n`              |   O(n\*k)    |  O(n\*k)   |                                         |
+| `lst.sort()`           |  O(n log n)  | O(n log n) | Timsort                                 |
+| `len(lst)`             |     O(1)     |    O(1)    | Stored in `ob_size`                     |
+| `lst.clear()`          |     O(1)     |    O(1)    | Drops references, does not shrink array |
 
 ### List Methods
 
@@ -228,12 +231,12 @@ Container, not to the referenced objects.
 ### Why Tuples Exist
 
 1. **Hashability.** A tuple is hashable if all its elements are hashable. This makes tuples valid
- dictionary keys and set members. Lists cannot serve this purpose.
+   dictionary keys and set members. Lists cannot serve this purpose.
 2. **Structural integrity.** When you pass a tuple to a function, the callee cannot modify its
- length or reassign its slots. This is a lightweight form of defensive programming.
+   length or reassign its slots. This is a lightweight form of defensive programming.
 3. **Performance.** Tuples have a smaller memory footprint than lists of the same length because
- they do not need to track over-allocation capacity. CPython also optimizes tuple creation for
- small tuples.
+   they do not need to track over-allocation capacity. CPython also optimizes tuple creation for
+   small tuples.
 
 ```python
 import sys
@@ -325,19 +328,19 @@ graph TD
 The structure has two main parts:
 
 1. **Indices array** (`dk_indices`): A compact array of signed integers that maps hash table
- positions to entry positions. The size of each integer is chosen based on the table size (int8
- for tables < 256, int16 for < 65536, int32 for < 2^31, int64 otherwise) to minimize memory usage.
+   positions to entry positions. The size of each integer is chosen based on the table size (int8
+   for tables < 256, int16 for < 65536, int32 for < 2^31, int64 otherwise) to minimize memory usage.
 2. **Entries array** (`dk_entries`): A dense array of `(hash, key, value)` triples. Only
- actually-used entries occupy space in this array -- it does not have empty slots.
+   actually-used entries occupy space in this array -- it does not have empty slots.
 
 This split design (compact indices + dense entries) was introduced in Python 3.6 (PEP 412) and
 Provides two major benefits:
 
 - **Memory efficiency.** Small dictionaries use far less memory than the previous combined-table
- design because empty slots in the hash table are represented by sentinel bytes in the indices
- array rather than by empty `PyDictKeyEntry` structs.
+  design because empty slots in the hash table are represented by sentinel bytes in the indices
+  array rather than by empty `PyDictKeyEntry` structs.
 - **Insertion order preservation.** Since entries are appended to the dense array in insertion
- order, iterating over `dk_entries` yields keys in the order they were inserted.
+  order, iterating over `dk_entries` yields keys in the order they were inserted.
 
 ### Hashing and Collision Resolution
 
@@ -345,15 +348,15 @@ When you look up `d[key]`CPython performs these steps:
 
 1. Compute `hash(key)` -- calls the key's `__hash__` method.
 2. Map the hash to a table position: `i = hash & (dk_size - 1)` (bitwise AND because the table size
- is always a power of 2).
+   is always a power of 2).
 3. Check `dk_indices[i]`. If it is `DKIX_EMPTY` (-1), the key is not in the dict. Done.
-4. If it contains an index `idx`Look up `dk_entries[idx]`. Compare the stored hash with the
- computed hash (cheap integer comparison). If they differ, the slot is occupied by a different key
- -- go to step 5.
+4. If it contains an index `idx`Look up `dk_entries[idx]`. Compare the stored hash with the computed
+   hash (cheap integer comparison). If they differ, the slot is occupied by a different key -- go to
+   step 5.
 5. If the hashes match, compare the actual keys with `key == dk_entries[idx].key`. If they match,
- return the value. If not, go to step 6.
-6. **Linear probing:** Check position `i+1``i+2`Etc. (wrapping around) until finding
- `DKIX_EMPTY` (not found) or a matching entry.
+   return the value. If not, go to step 6.
+6. **Linear probing:** Check position `i+1``i+2`Etc. (wrapping around) until finding `DKIX_EMPTY`
+   (not found) or a matching entry.
 
 ```python
 # Demonstrating hash collisions and their resolution
@@ -381,23 +384,23 @@ If two objects have equal values (`a == b` is `True`), they **must** have the sa
 
 The hash table maintains two thresholds:
 
-- **2/3 full.** When `dk_nentries / dk_size > 2/3`The table is resized. A new table of 2x or 4x
- the size is allocated, and all entries are reinserted. This is expensive (O(n)) but occurs
- infrequently due to geometric growth.
+- **2/3 full.** When `dk_nentries / dk_size > 2/3`The table is resized. A new table of 2x or 4x the
+  size is allocated, and all entries are reinserted. This is expensive (O(n)) but occurs
+  infrequently due to geometric growth.
 - **1/12 used.** When the table is mostly empty after deletions, it is shrunk to reduce memory
- usage.
+  usage.
 
 ### Time Complexity
 
-| Operation | Average Case | Worst Case | Notes |
+| Operation        | Average Case | Worst Case | Notes                        |
 | ---------------- | :----------: | :--------: | ---------------------------- |
-| `d[key]` | O(1) | O(n) | Worst case: all keys collide |
-| `d[key] = value` | O(1) | O(n) | Includes possible resize |
-| `del d[key]` | O(1) | O(n) | |
-| `key in d` | O(1) | O(n) | |
-| `d.get(key)` | O(1) | O(n) | |
-| `len(d)` | O(1) | O(1) | Stored in `ma_used` |
-| Iteration | O(n) | O(n) | Visits every entry |
+| `d[key]`         |     O(1)     |    O(n)    | Worst case: all keys collide |
+| `d[key] = value` |     O(1)     |    O(n)    | Includes possible resize     |
+| `del d[key]`     |     O(1)     |    O(n)    |                              |
+| `key in d`       |     O(1)     |    O(n)    |                              |
+| `d.get(key)`     |     O(1)     |    O(n)    |                              |
+| `len(d)`         |     O(1)     |    O(1)    | Stored in `ma_used`          |
+| Iteration        |     O(n)     |    O(n)    | Visits every entry           |
 
 The O(n) worst case occurs when all keys hash to the same slot, creating a single long probe chain.
 This is rare with a good hash function but can be deliberately triggered by an attacker feeding
@@ -406,8 +409,8 @@ Mitigate this.
 
 ### Dict Views
 
-The `.keys()``.values()`And `.items()` methods return **view objects** -- lightweight wrappers
-That reflect the current state of the dictionary without copying data.
+The `.keys()``.values()`And `.items()` methods return **view objects** -- lightweight wrappers That
+reflect the current state of the dictionary without copying data.
 
 ```python
 d = {"a": 1, "b": 2, "c": 3}
@@ -686,8 +689,8 @@ d.rotate(-1)       # deque([5, 1, 2, 3, 4])
 ```
 
 **Why `deque` instead of `list` for queues?** `list.pop(0)` is O(n) because it shifts every
-Remaining element one position to the left. `deque.popleft()` is O(1) because it adjusts a
-Pointer. For FIFO queues with frequent enqueue/dequeue, the difference is dramatic.
+Remaining element one position to the left. `deque.popleft()` is O(1) because it adjusts a Pointer.
+For FIFO queues with frequent enqueue/dequeue, the difference is dramatic.
 
 ```python
 import time
@@ -808,26 +811,26 @@ Grows with the number of elements.
 
 ### Supported Type Codes
 
-| Code | C Type | Python Type | Size (bytes) |
+| Code | C Type         | Python Type | Size (bytes) |
 | ---- | -------------- | ----------- | :----------: |
-| `b` | signed char | int | 1 |
-| `B` | unsigned char | int | 1 |
-| `h` | signed short | int | 2 |
-| `H` | unsigned short | int | 2 |
-| `i` | signed int | int | 4 |
-| `I` | unsigned int | int | 4 |
-| `l` | signed long | int | 4/8 |
-| `f` | float | float | 4 |
-| `d` | double | float | 8 |
+| `b`  | signed char    | int         |      1       |
+| `B`  | unsigned char  | int         |      1       |
+| `h`  | signed short   | int         |      2       |
+| `H`  | unsigned short | int         |      2       |
+| `i`  | signed int     | int         |      4       |
+| `I`  | unsigned int   | int         |      4       |
+| `l`  | signed long    | int         |     4/8      |
+| `f`  | float          | float       |      4       |
+| `d`  | double         | float       |      8       |
 
 ### When to Use array vs list vs numpy
 
 - **`list`**: General-purpose, heterogeneous data. Use when you need to store objects of different
- types or when the list is small.
+  types or when the list is small.
 - **`array.array`**: Homogeneous numeric data where memory efficiency matters but you do not need
- NumPy's vectorized operations.
+  NumPy's vectorized operations.
 - **`numpy.ndarray`**: Large-scale numerical computation. NumPy provides vectorized operations,
- broadcasting, and linear algebra that `array` does not.
+  broadcasting, and linear algebra that `array` does not.
 
 ```python
 import array
@@ -909,15 +912,15 @@ val = heapq.heapreplace(data, 7)   # pops smallest, pushes 7 (data must be non-e
 
 ### Time Complexity
 
-| Operation | Complexity | Notes |
+| Operation            | Complexity | Notes                                   |
 | -------------------- | :--------: | --------------------------------------- |
-| `heapify(iterable)` | O(n) | Builds heap from unordered list |
-| `heappush(heap, x)` | O(log n) | |
-| `heappop(heap)` | O(log n) | Removes and returns smallest |
-| `heappushpop(h, x)` | O(log n) | More efficient than separate push + pop |
-| `heapreplace(h, x)` | O(log n) | Pop then push; heap must be non-empty |
-| `nsmallest(k, iter)` | O(n log k) | Uses a max-heap of size k |
-| `nlargest(k, iter)` | O(n log k) | Uses a min-heap of size k |
+| `heapify(iterable)`  |    O(n)    | Builds heap from unordered list         |
+| `heappush(heap, x)`  |  O(log n)  |                                         |
+| `heappop(heap)`      |  O(log n)  | Removes and returns smallest            |
+| `heappushpop(h, x)`  |  O(log n)  | More efficient than separate push + pop |
+| `heapreplace(h, x)`  |  O(log n)  | Pop then push; heap must be non-empty   |
+| `nsmallest(k, iter)` | O(n log k) | Uses a max-heap of size k               |
+| `nlargest(k, iter)`  | O(n log k) | Uses a min-heap of size k               |
 
 ### Max-Heap and Priority Queue Patterns
 
@@ -1032,20 +1035,20 @@ graph TD
     style heap_use fill:#4a9,stroke:#333
 ```
 
-| Need | Primary Choice | Alternative |
+| Need                        | Primary Choice | Alternative                |
 | --------------------------- | -------------- | -------------------------- |
-| Ordered, mutable sequence | `list` | `array.array` |
-| Ordered, immutable sequence | `tuple` | `NamedTuple` |
-| Key-value mapping | `dict` | `defaultdict` |
-| Unique elements, mutable | `set` | |
-| Unique elements, immutable | `frozenset` | |
-| FIFO queue | `deque` | `queue.Queue` (threaded) |
-| Stack (LIFO) | `list` | `deque` |
-| Compact numeric storage | `array.array` | `numpy.ndarray` |
-| Priority queue | `heapq` | `PriorityQueue` (threaded) |
-| Counting occurrences | `Counter` | `defaultdict(int)` |
-| Grouping by key | `defaultdict` | `itertools.groupby` |
-| Layered configuration | `ChainMap` | |
+| Ordered, mutable sequence   | `list`         | `array.array`              |
+| Ordered, immutable sequence | `tuple`        | `NamedTuple`               |
+| Key-value mapping           | `dict`         | `defaultdict`              |
+| Unique elements, mutable    | `set`          |                            |
+| Unique elements, immutable  | `frozenset`    |                            |
+| FIFO queue                  | `deque`        | `queue.Queue` (threaded)   |
+| Stack (LIFO)                | `list`         | `deque`                    |
+| Compact numeric storage     | `array.array`  | `numpy.ndarray`            |
+| Priority queue              | `heapq`        | `PriorityQueue` (threaded) |
+| Counting occurrences        | `Counter`      | `defaultdict(int)`         |
+| Grouping by key             | `defaultdict`  | `itertools.groupby`        |
+| Layered configuration       | `ChainMap`     |                            |
 
 ## Common Pitfalls
 

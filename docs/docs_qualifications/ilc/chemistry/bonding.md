@@ -1,6 +1,8 @@
 ---
 title: Bonding
-description: "Bonding — Coordinate (Dative) Covalent Bond (HL); Electronegativity and Bond Polarity (OL/HL); Pauling Scale; Dipole Moments (HL)."
+description:
+  'Bonding — Coordinate (Dative) Covalent Bond (HL); Electronegativity and Bond Polarity (OL/HL);
+  Pauling Scale; Dipole Moments (HL).'
 date: 2026-04-14
 tags:
   - Chemistry
@@ -9,6 +11,7 @@ categories:
   - Chemistry
 slug: bonding
 ---
+
 # Bonding
 
 Chemical bonding explains how atoms combine to form compounds. This topic covers ionic, covalent,
@@ -44,9 +47,9 @@ $$
 
 **Worked Example 1 (OL):** Explain why $\mathrm{NaCl{}$ has a high melting point.
 
-$\mathrm{NaCl{}$ has a giant ionic lattice with strong electrostatic forces between $\mathrm{Na{}^+$ and
-$\mathrm{Cl{}^-$ ions. A large amount of energy is required to overcome these forces, giving a high
-Melting point (801°C).
+$\mathrm{NaCl{}$ has a giant ionic lattice with strong electrostatic forces between $\mathrm{Na{}^+$
+and $\mathrm{Cl{}^-$ ions. A large amount of energy is required to overcome these forces, giving a
+high Melting point (801°C).
 
 ### Covalent Bonding (OL/HL)
 
@@ -59,9 +62,9 @@ O=O). **Triple bond:** three shared pairs (e.g., N$\equiv$N).
 
 | Bond type | Bond length | Bond energy (kJ/mol) |
 | --------- | ----------- | -------------------- |
-| C-C | 154 pm | 348 |
-| C=C | 134 pm | 612 |
-| C≡C | 120 pm | 839 |
+| C-C       | 154 pm      | 348                  |
+| C=C       | 134 pm      | 612                  |
+| C≡C       | 120 pm      | 839                  |
 
 Triple bonds are shorter and stronger than double bonds, which are shorter and stronger than single
 Bonds.
@@ -122,34 +125,35 @@ In molecules with multiple polar bonds, the overall polarity depends on the mole
 
 **Worked Example 2 (HL):** Explain why $\mathrm{CO{}_2$ is non-polar but $\mathrm{SO{}_2$ is polar.
 
-$\mathrm{CO{}_2$ is linear ($\mathrm{O{}=\mathrm{C{}=\mathrm{O{}$). The two C=O bond dipoles are equal in
-Magnitude and opposite in direction, so they cancel. $\mathrm{SO{}_2$ is bent (V-shaped) with a bond
-Angle of approximately $119^\circ$. The two S=O bond dipoles do not cancel, leaving a net dipole moment.
+$\mathrm{CO{}_2$ is linear ($\mathrm{O{}=\mathrm{C{}=\mathrm{O{}$). The two C=O bond dipoles are
+equal in Magnitude and opposite in direction, so they cancel. $\mathrm{SO{}_2$ is bent (V-shaped)
+with a bond Angle of approximately $119^\circ$. The two S=O bond dipoles do not cancel, leaving a
+net dipole moment.
 
 ## VSEPR Theory (OL/HL)
 
 The Valence Shell Electron Pair Repulsion (VSEPR) theory predicts molecular shapes based on electron
 Pair repulsion.
 
-| Electron pairs | Shape | Bond angle |
-| -------------- | -------------------- | ----------- |
-| 2 | Linear | $180^\circ$ |
-| 3 | Trigonal planar | $120^\circ$ |
-| 4 | Tetrahedral | $109.5^\circ$ |
-| 5 | Trigonal bipyramidal | $120°, 90^\circ$ |
-| 6 | Octahedral | $90^\circ$ |
+| Electron pairs | Shape                | Bond angle       |
+| -------------- | -------------------- | ---------------- |
+| 2              | Linear               | $180^\circ$      |
+| 3              | Trigonal planar      | $120^\circ$      |
+| 4              | Tetrahedral          | $109.5^\circ$    |
+| 5              | Trigonal bipyramidal | $120°, 90^\circ$ |
+| 6              | Octahedral           | $90^\circ$       |
 
 ### Effect of Lone Pairs
 
 Lone pairs repel more strongly than bonding pairs, reducing bond angles.
 
-| Bonding pairs | Lone pairs | Shape | Example | Bond angle |
-| ------------- | ---------- | ------------------ | -------------------- | ---------- |
-| 3 | 1 | Trigonal pyramidal | $\mathrm{NH{}_3$ | $107^\circ$ |
-| 2 | 2 | Bent | $\mathrm{H{}_2\mathrm{O{}$ | $104.5^\circ$ |
-| 4 | 1 | See-saw | $\mathrm{SF{}_4$ | -- |
-| 3 | 2 | T-shaped | $\mathrm{ClF{}_3$ | -- |
-| 2 | 3 | Linear | $\mathrm{XeF{}_2$ | $180^\circ$ |
+| Bonding pairs | Lone pairs | Shape              | Example                    | Bond angle    |
+| ------------- | ---------- | ------------------ | -------------------------- | ------------- |
+| 3             | 1          | Trigonal pyramidal | $\mathrm{NH{}_3$           | $107^\circ$   |
+| 2             | 2          | Bent               | $\mathrm{H{}_2\mathrm{O{}$ | $104.5^\circ$ |
+| 4             | 1          | See-saw            | $\mathrm{SF{}_4$           | --            |
+| 3             | 2          | T-shaped           | $\mathrm{ClF{}_3$          | --            |
+| 2             | 3          | Linear             | $\mathrm{XeF{}_2$          | $180^\circ$   |
 
 **Worked Example 3 (OL):** Use VSEPR theory to predict the shape of $\mathrm{BF{}_3$ and
 $\mathrm{H{}_2\mathrm{O{}$.
@@ -157,8 +161,9 @@ $\mathrm{H{}_2\mathrm{O{}$.
 $\mathrm{BF{}_3$: Boron has 3 bonding pairs and 0 lone pairs. Electron geometry: trigonal planar.
 Molecular shape: trigonal planar. Bond angle: $120^\circ$.
 
-$\mathrm{H{}_2\mathrm{O{}$: Oxygen has 2 bonding pairs and 2 lone pairs. Electron geometry: tetrahedral.
-Molecular shape: bent. Bond angle: $104.5^\circ$ (reduced from $109.5^\circ$ due to lone pair repulsion).
+$\mathrm{H{}_2\mathrm{O{}$: Oxygen has 2 bonding pairs and 2 lone pairs. Electron geometry:
+tetrahedral. Molecular shape: bent. Bond angle: $104.5^\circ$ (reduced from $109.5^\circ$ due to
+lone pair repulsion).
 
 **Worked Example 4 (HL):** Describe the bonding in $\mathrm{SF{}_4$ using VSEPR theory. Include the
 Hybridisation of the central atom.
@@ -171,11 +176,13 @@ Occupies an equatorial position. Molecular shape: see-saw. Hybridisation: $sp^3d
 
 ### sp Hybridisation
 
-Two hybrid orbitals, linear geometry ($180^\circ$). Example: $\mathrm{BeCl{}_2$$\mathrm{C{}_2\mathrm{H{}_2$.
+Two hybrid orbitals, linear geometry ($180^\circ$). Example:
+$\mathrm{BeCl{}_2$$\mathrm{C{}_2\mathrm{H{}_2$.
 
 ### sp2 Hybridisation
 
-Three hybrid orbitals, trigonal planar ($120^\circ$). Example: $\mathrm{BF{}_3$$\mathrm{C{}_2\mathrm{H{}_4$.
+Three hybrid orbitals, trigonal planar ($120^\circ$). Example:
+$\mathrm{BF{}_3$$\mathrm{C{}_2\mathrm{H{}_4$.
 
 ### sp3 Hybridisation
 
@@ -196,8 +203,8 @@ Each carbon is $sp^2$ hybridised. The three $sp^2$ orbitals form three sigma bon
 C--C). The remaining unhybridised $p$ orbital on each carbon overlaps to form a pi ($\pi$) bond
 Above and below the plane. The C=C double bond consists of one sigma and one pi bond.
 
-**Worked Example 5 (HL):** Describe the bonding in ethyne ($\mathrm{C{}_2\mathrm{H{}_2$), including sigma
-And pi bonds and hybridisation.
+**Worked Example 5 (HL):** Describe the bonding in ethyne ($\mathrm{C{}_2\mathrm{H{}_2$), including
+sigma And pi bonds and hybridisation.
 
 Each carbon in ethyne is $sp$ hybridised. The two $sp$ orbitals form two sigma bonds (one C--H and
 One C--C). Each carbon has two remaining unhybridised $p$ orbitals ($p_y$ and $p_z$). These overlap
@@ -213,10 +220,10 @@ Present in all molecules. Caused by temporary dipoles due to instantaneous elect
 Strength increases with molecular size (more electrons = larger temporary dipoles).
 
 **Derivation:** As molecular size increases, the electron cloud becomes more diffuse and more
-Polarisable. Larger electron clouds are more distorted, creating larger instantaneous dipoles
-And hence stronger London forces. This explains why boiling points increase down Group 7:
-$\mathrm{F{}_2$ ($85°\mathrm{K{}$) < $\mathrm{Cl{}_2$ ($239°\mathrm{K{}$) < $\mathrm{Br{}_2$ ($332°\mathrm{K{}$) <
-$\mathrm{I{}_2$ ($457°\mathrm{K{}$).
+Polarisable. Larger electron clouds are more distorted, creating larger instantaneous dipoles And
+hence stronger London forces. This explains why boiling points increase down Group 7:
+$\mathrm{F{}_2$ ($85°\mathrm{K{}$) < $\mathrm{Cl{}_2$ ($239°\mathrm{K{}$) < $\mathrm{Br{}_2$
+($332°\mathrm{K{}$) < $\mathrm{I{}_2$ ($457°\mathrm{K{}$).
 
 ### Dipole-Dipole Forces
 
@@ -235,29 +242,29 @@ A special, strong dipole-dipole force between:
 - Ice is less dense than liquid water (open lattice structure).
 - DNA base pairing.
 
-**Example (OL):** Explain why $\mathrm{H{}_2\mathrm{O{}$ boils at $100^\circ\mathrm{C{}$ but $\mathrm{H{}_2\mathrm{S{}$ boils
-At $-60^\circ\mathrm{C{}$ despite having a similar molecular mass.
+**Example (OL):** Explain why $\mathrm{H{}_2\mathrm{O{}$ boils at $100^\circ\mathrm{C{}$ but
+$\mathrm{H{}_2\mathrm{S{}$ boils At $-60^\circ\mathrm{C{}$ despite having a similar molecular mass.
 
 Water forms hydrogen bonds (O is highly electronegative), which require significant energy to
-Overcome. $\mathrm{H{}_2\mathrm{S{}$ cannot form hydrogen bonds (S is not electronegative enough), so only
-Weak van der Waals forces act between molecules.
+Overcome. $\mathrm{H{}_2\mathrm{S{}$ cannot form hydrogen bonds (S is not electronegative enough),
+so only Weak van der Waals forces act between molecules.
 
-**Worked Example 6 (HL):** Explain why the boiling point of $\mathrm{HF{}$ ($20°C$) is much higher than
-That of $\mathrm{HCl{}$ ($-85°C$), despite $\mathrm{HCl{}$ having a larger molecular mass.
+**Worked Example 6 (HL):** Explain why the boiling point of $\mathrm{HF{}$ ($20°C$) is much higher
+than That of $\mathrm{HCl{}$ ($-85°C$), despite $\mathrm{HCl{}$ having a larger molecular mass.
 
 $\mathrm{HF{}$ can form hydrogen bonds because H is bonded to F (the most electronegative element).
-These strong intermolecular forces require significant energy to overcome. $\mathrm{HCl{}$ cannot form
-Hydrogen bonds (Cl is not electronegative enough), so only weaker dipole-dipole and London forces
-Act. Despite $\mathrm{HCl{}$ having stronger London forces (more electrons), hydrogen bonding in
-$\mathrm{HF{}$ dominates.
+These strong intermolecular forces require significant energy to overcome. $\mathrm{HCl{}$ cannot
+form Hydrogen bonds (Cl is not electronegative enough), so only weaker dipole-dipole and London
+forces Act. Despite $\mathrm{HCl{}$ having stronger London forces (more electrons), hydrogen bonding
+in $\mathrm{HF{}$ dominates.
 
 ### Summary of Intermolecular Forces
 
-| Force | Strength | Present in | Dependence |
+| Force             | Strength  | Present in          | Dependence                |
 | ----------------- | --------- | ------------------- | ------------------------- |
-| London dispersion | Weakest | All molecules | Increases with size |
-| Dipole-dipole | Moderate | Polar molecules | Depends on dipole moment |
-| Hydrogen bonding | Strongest | H bonded to N, O, F | Depends on H-bond density |
+| London dispersion | Weakest   | All molecules       | Increases with size       |
+| Dipole-dipole     | Moderate  | Polar molecules     | Depends on dipole moment  |
+| Hydrogen bonding  | Strongest | H bonded to N, O, F | Depends on H-bond density |
 
 ## Metallic Bonding in Detail (HL)
 
@@ -272,30 +279,30 @@ Semiconductors, the gap is small enough that thermal energy can promote some ele
 
 ### Comparison: Conductors, Semiconductors, Insulators
 
-| Property | Conductor | Semiconductor | Insulator |
+| Property                  | Conductor            | Semiconductor | Insulator        |
 | ------------------------- | -------------------- | ------------- | ---------------- |
-| Band gap | None (bands overlap) | Small (~1 eV) | Large (>5 eV) |
-| Conductivity at 0 K | High | Zero | Zero |
-| Conductivity with heating | Decreases slightly | Increases | Remains zero |
-| Examples | Cu, Al | Si, Ge | Diamond, SiO$_2$ |
+| Band gap                  | None (bands overlap) | Small (~1 eV) | Large (>5 eV)    |
+| Conductivity at 0 K       | High                 | Zero          | Zero             |
+| Conductivity with heating | Decreases slightly   | Increases     | Remains zero     |
+| Examples                  | Cu, Al               | Si, Ge        | Diamond, SiO$_2$ |
 
 ---
 
 ## Common Pitfalls
 
 1. **Ionic vs covalent** -- ionic involves electron _transfer_; covalent involves electron
- _sharing_.
+   _sharing_.
 2. **VSEPR** -- count lone pairs on the _central_ atom, not total lone pairs.
 3. **Bond polarity vs molecular polarity** -- a molecule can have polar bonds but be non-polar
- overall (e.g., $\mathrm{CO{}_2$).
+   overall (e.g., $\mathrm{CO{}_2$).
 4. **Hydrogen bonding** -- only occurs with H bonded to N, O, or F, not Cl.
 5. **Hybridisation** -- count the number of electron domains (bonding + lone pairs) to determine
- hybridisation.
+   hybridisation.
 
 6. **Bond order** -- double bonds are NOT exactly twice as strong as single bonds. A double bond
- consists of one sigma and one pi bond; the pi bond is weaker than the sigma bond.
+   consists of one sigma and one pi bond; the pi bond is weaker than the sigma bond.
 7. **Sigma vs pi bonds** -- sigma bonds can rotate freely; pi bonds cannot (this is the basis of E/Z
- isomerism).
+   isomerism).
 8. **Electronegativity** -- fluorine is the most electronegative element, NOT oxygen.
 
 ---
@@ -312,30 +319,30 @@ Semiconductors, the gap is small enough that thermal energy can promote some ele
 ### Higher Level
 
 1. Describe the bonding in $\mathrm{SF{}_4$ using VSEPR theory. Include the hybridisation of the
- central atom.
+   central atom.
 2. Explain why $\mathrm{CO{}_2$ is non-polar but $\mathrm{SO{}_2$ is polar.
 3. Describe the bonding in ethyne ($\mathrm{C{}_2\mathrm{H{}_2$), including sigma and pi bonds and
- hybridisation.
-4. Explain why the boiling point of $\mathrm{HF{}$ ($20°C$) is much higher than that of $\mathrm{HCl{}$
- ($-85°C$), despite $\mathrm{HCl{}$ having a larger molecular mass.
+   hybridisation.
+4. Explain why the boiling point of $\mathrm{HF{}$ ($20°C$) is much higher than that of
+   $\mathrm{HCl{}$ ($-85°C$), despite $\mathrm{HCl{}$ having a larger molecular mass.
 
 ### Extended Questions
 
 5. Draw dot-and-cross diagrams for (a) $\mathrm{MgO{}$ and (b) $\mathrm{H{}_2\mathrm{S{}$.
 6. Explain why graphite conducts electricity but diamond does not, in terms of bonding and
- structure.
+   structure.
 7. Use VSEPR theory to predict the shapes of $\mathrm{XeF{}_4$ and $\mathrm{BrF{}_5$.
 8. Explain why the boiling point increases in the order
- $\mathrm{CH{}_4 \lt \mathrm{SiH{}_4 \lt
+   $\mathrm{CH{}_4 \lt \mathrm{SiH{}_4 \lt
  \mathrm{GeH{}_4 \lt \mathrm{SnH{}_4$ but
- $\mathrm{NH{}_3 \gt \mathrm{PH{}_3$.
+   $\mathrm{NH{}_3 \gt \mathrm{PH{}_3$.
 9. Compare and contrast the properties of ionic, covalent, and metallic bonding in a table.
 10. Explain the term "hybridisation" and describe how it accounts for the shapes of $\mathrm{CH{}_4$
- $\mathrm{C{}_2\mathrm{H{}_4$And $\mathrm{C{}_2\mathrm{H{}_2$.
+    $\mathrm{C{}_2\mathrm{H{}_4$And $\mathrm{C{}_2\mathrm{H{}_2$.
 11. Describe the structure and bonding in sodium chloride, including a description of the ionic
- lattice.
-12. Explain why $\mathrm{BeCl{}_2$ is covalent while $\mathrm{CaCl{}_2$ is ionic, referring to the concept
- of polarising power.
+    lattice.
+12. Explain why $\mathrm{BeCl{}_2$ is covalent while $\mathrm{CaCl{}_2$ is ionic, referring to the
+    concept of polarising power.
 
 ---
 
@@ -343,7 +350,7 @@ Semiconductors, the gap is small enough that thermal energy can promote some ele
 
 ### Polarising Power
 
-Small, highly charged cations have high polarising power. Large, highly charged anions are 
+Small, highly charged cations have high polarising power. Large, highly charged anions are
 Polarised. When a cation distorts the electron cloud of an anion, the bond acquires covalent
 Character.
 
@@ -361,12 +368,12 @@ Character.
 
 ### Trend in Covalent Character of Group 1 Halides
 
-| Compound | Covalent character | Explanation |
-| ------------ | ------------------ | ------------------------------------- |
-| $\mathrm{LiF{}$ | Very low | Small cation, small anion |
-| $\mathrm{LiI{}$ | Moderate | Small cation, large polarisable anion |
-| $\mathrm{CsF{}$ | Very low | Large cation, small anion |
-| $\mathrm{CsI{}$ | Moderate | Large cation, large anion |
+| Compound        | Covalent character | Explanation                           |
+| --------------- | ------------------ | ------------------------------------- |
+| $\mathrm{LiF{}$ | Very low           | Small cation, small anion             |
+| $\mathrm{LiI{}$ | Moderate           | Small cation, large polarisable anion |
+| $\mathrm{CsF{}$ | Very low           | Large cation, small anion             |
+| $\mathrm{CsI{}$ | Moderate           | Large cation, large anion             |
 
 ## Resonance (HL)
 
@@ -381,14 +388,14 @@ Three equivalent resonance structures can be drawn, each with a C=O double bond 
 Position. The actual structure is a hybrid with three identical C-O bonds, each with bond order
 $1\frac{1}{3}$.
 
-**Evidence for resonance:** All three C-O bonds in $\mathrm{CO{}_3^{2-}$ have the same length (131 pm),
-Intermediate between a typical C-O single bond (143 pm) and C=O double bond (120 pm).
+**Evidence for resonance:** All three C-O bonds in $\mathrm{CO{}_3^{2-}$ have the same length (131
+pm), Intermediate between a typical C-O single bond (143 pm) and C=O double bond (120 pm).
 
 ### Benzene Resonance
 
-Benzene ($\mathrm{C{}_6\mathrm{H{}_6$) can be represented by two Kekule structures with alternating single
-And double bonds. The actual structure has delocalised pi electrons above and below the ring, giving
-Six identical C-C bonds with bond order 1.5 (length 140 pm).
+Benzene ($\mathrm{C{}_6\mathrm{H{}_6$) can be represented by two Kekule structures with alternating
+single And double bonds. The actual structure has delocalised pi electrons above and below the ring,
+giving Six identical C-C bonds with bond order 1.5 (length 140 pm).
 
 This delocalisation provides extra stability (resonance energy, approximately 150 kJ/mol).
 
@@ -430,17 +437,17 @@ For $\mathrm{O{}_2$: $\mathrm{BO{} = (8 - 4)/2 = 2$.
 For $\mathrm{N{}_2$ (and lighter diatomic molecules), the $\sigma_{2p}$ and $\pi_{2p}$ ordering is
 Reversed: $\pi_{2p} < \sigma_{2p}$.
 
-$\mathrm{N{}_2$ has 10 valence electrons: $\mathrm{BO{} = (8 - 2)/2 = 3$ (triple bond), consistent with
-The Lewis structure $\mathrm{N{}\equiv\mathrm{N{}$.
+$\mathrm{N{}_2$ has 10 valence electrons: $\mathrm{BO{} = (8 - 2)/2 = 3$ (triple bond), consistent
+with The Lewis structure $\mathrm{N{}\equiv\mathrm{N{}$.
 
 ### Comparison of MO Theory with Lewis Theory
 
-| Feature | Lewis theory | MO theory |
-| ----------------------------- | ---------------------------- | ------------------------------------ |
-| Bonds | Localised between two atoms | Delocalised over molecule |
-| Paramagnetism of $\mathrm{O{}_2$ | Cannot explain | Correctly predicts |
-| Bond order | Single, double, triple | Can be fractional (e.g., 1.5) |
-| Resonance | Requires multiple structures | Single structure with delocalisation |
+| Feature                          | Lewis theory                 | MO theory                            |
+| -------------------------------- | ---------------------------- | ------------------------------------ |
+| Bonds                            | Localised between two atoms  | Delocalised over molecule            |
+| Paramagnetism of $\mathrm{O{}_2$ | Cannot explain               | Correctly predicts                   |
+| Bond order                       | Single, double, triple       | Can be fractional (e.g., 1.5)        |
+| Resonance                        | Requires multiple structures | Single structure with delocalisation |
 
 ---
 
@@ -463,13 +470,13 @@ Network. Very high melting point, hard, insulator.
 
 ### Comparison Table
 
-| Property | Diamond | Graphite | $\mathrm{SiO{}_2$ |
+| Property                | Diamond                | Graphite                       | $\mathrm{SiO{}_2$       |
 | ----------------------- | ---------------------- | ------------------------------ | ----------------------- |
-| Bonding | 4 covalent bonds per C | 3 covalent bonds + delocalised | 4 covalent bonds per Si |
-| Hardness | Extremely hard | Soft (layers slide) | Very hard |
-| Melting point | Very high | Very high | Very high |
-| Electrical conductivity | None | Conducts along planes | None |
-| Structure | 3D tetrahedral | Layered hexagonal | 3D network |
+| Bonding                 | 4 covalent bonds per C | 3 covalent bonds + delocalised | 4 covalent bonds per Si |
+| Hardness                | Extremely hard         | Soft (layers slide)            | Very hard               |
+| Melting point           | Very high              | Very high                      | Very high               |
+| Electrical conductivity | None                   | Conducts along planes          | None                    |
+| Structure               | 3D tetrahedral         | Layered hexagonal              | 3D network              |
 
 ---
 
@@ -477,24 +484,24 @@ Network. Very high melting point, hard, insulator.
 
 ### Sodium Chloride Structure
 
-Face-centred cubic lattice. Each $\mathrm{Na{}^+$ is surrounded by 6 $\mathrm{Cl{}^-$ ions (octahedral
-Coordination). Coordination number: 6:6.
+Face-centred cubic lattice. Each $\mathrm{Na{}^+$ is surrounded by 6 $\mathrm{Cl{}^-$ ions
+(octahedral Coordination). Coordination number: 6:6.
 
 ### Caesium Chloride Structure
 
-Body-centred cubic. Each $\mathrm{Cs{}^+$ is surrounded by 8 $\mathrm{Cl{}^-$ ions. Coordination number:
-8:8.
+Body-centred cubic. Each $\mathrm{Cs{}^+$ is surrounded by 8 $\mathrm{Cl{}^-$ ions. Coordination
+number: 8:8.
 
 ### Relationship Between Structure and Properties
 
 | Compound | Coordination number | Lattice energy (kJ/mol) | Melting point |
 | -------- | ------------------- | ----------------------- | ------------- |
-| NaCl | 6:6 | -787 | 801°C |
-| CsCl | 8:8 | -657 | 645°C |
-| MgO | 6:6 | -3791 | 2852°C |
+| NaCl     | 6:6                 | -787                    | 801°C         |
+| CsCl     | 8:8                 | -657                    | 645°C         |
+| MgO      | 6:6                 | -3791                   | 2852°C        |
 
-$\mathrm{MgO{}$ has a much higher melting point than $\mathrm{NaCl{}$ because the doubly charged ions
-Produce stronger electrostatic attraction.
+$\mathrm{MgO{}$ has a much higher melting point than $\mathrm{NaCl{}$ because the doubly charged
+ions Produce stronger electrostatic attraction.
 
 ---
 
@@ -507,11 +514,11 @@ State.
 
 | Bond | Enthalpy (kJ/mol) | Bond | Enthalpy (kJ/mol) |
 | ---- | ----------------- | ---- | ----------------- |
-| C-C | 348 | C-H | 412 |
-| C=C | 612 | O-H | 463 |
-| C≡C | 839 | C=O | 743 |
-| C-O | 358 | H-H | 436 |
-| C-Cl | 328 | O=O | 496 |
+| C-C  | 348               | C-H  | 412               |
+| C=C  | 612               | O-H  | 463               |
+| C≡C  | 839               | C=O  | 743               |
+| C-O  | 358               | H-H  | 436               |
+| C-Cl | 328               | O=O  | 496               |
 
 **Worked Example 7 (HL):** Use bond enthalpies to estimate the enthalpy change for the combustion of
 Methane: $\mathrm{CH{}_4 + 2\mathrm{O{}_2 \to \mathrm{CO{}_2 + 2\mathrm{H{}_2\mathrm{O{}$.
@@ -532,17 +539,17 @@ The reaction is exothermic, consistent with combustion.
 
 13. Explain why the bond length of C=C is shorter than C-C, and why C≡C is shorter than C=C.
 14. Draw all the resonance structures of the nitrate ion ($\mathrm{NO{}_3^-$) and explain the
- experimental evidence for resonance.
+    experimental evidence for resonance.
 15. Use MO theory to explain why $\mathrm{O{}_2$ is paramagnetic but $\mathrm{N{}_2$ is diamagnetic.
-16. Calculate the bond order of $\mathrm{He{}_2$ using MO theory and explain why $\mathrm{He{}_2$ does not
- exist as a stable molecule.
-17. Explain why $\mathrm{AlCl{}_3$ sublimes at a relatively low temperature and forms dimer molecules
- $\mathrm{Al{}_2\mathrm{Cl{}_6$ in the gas phase.
+16. Calculate the bond order of $\mathrm{He{}_2$ using MO theory and explain why $\mathrm{He{}_2$
+    does not exist as a stable molecule.
+17. Explain why $\mathrm{AlCl{}_3$ sublimes at a relatively low temperature and forms dimer
+    molecules $\mathrm{Al{}_2\mathrm{Cl{}_6$ in the gas phase.
 18. Describe the structure and bonding in diamond and explain why diamond is used as an abrasive.
-19. Explain why the melting point of $\mathrm{NaF{}$ ($993°C$) is higher than that of $\mathrm{NaCl{}$
- ($801°C$), despite $\mathrm{F{}^-$ being smaller than $\mathrm{Cl{}^-$.
+19. Explain why the melting point of $\mathrm{NaF{}$ ($993°C$) is higher than that of
+    $\mathrm{NaCl{}$ ($801°C$), despite $\mathrm{F{}^-$ being smaller than $\mathrm{Cl{}^-$.
 20. Using bond enthalpy data, estimate $\Delta H$ for the reaction:
- $\mathrm{N{}_2 + 3\mathrm{H{}_2 \to 2\mathrm{NH{}_3$.
+    $\mathrm{N{}_2 + 3\mathrm{H{}_2 \to 2\mathrm{NH{}_3$.
 
 ---
 
@@ -552,11 +559,12 @@ The reaction is exothermic, consistent with combustion.
 
 Some molecules have an odd number of valence electrons, making the central electron count unusual.
 
-**Example:** $\mathrm{NO{}_2$ has 17 valence electrons. Nitrogen has 5 valence electrons, each oxygen
-Contributes 6. Total: $5 + 2(6) = 17$. The unpaired electron counts as a "half" electron domain.
+**Example:** $\mathrm{NO{}_2$ has 17 valence electrons. Nitrogen has 5 valence electrons, each
+oxygen Contributes 6. Total: $5 + 2(6) = 17$. The unpaired electron counts as a "half" electron
+domain.
 
-The molecule is bent (approximately $134^\circ$) with bond angle between that of $\mathrm{BF{}_3$ ($120^\circ$)
-And $\mathrm{H{}_2\mathrm{O{}$ ($104.5^\circ$).
+The molecule is bent (approximately $134^\circ$) with bond angle between that of $\mathrm{BF{}_3$
+($120^\circ$) And $\mathrm{H{}_2\mathrm{O{}$ ($104.5^\circ$).
 
 ### Expanded Octets
 
@@ -566,21 +574,21 @@ Octet) by using $d$ orbitals.
 **Example:** $\mathrm{SF{}_6$ has sulfur with 12 electrons around it (6 bonding pairs). Electron
 Geometry: octahedral ($sp^3d^2$). Bond angle: $90^\circ$.
 
-**Example:** $\mathrm{PCl{}_5$ has phosphorus with 10 electrons (5 bonding pairs). Electron geometry:
-Trigonal bipyramidal ($sp^3d$). Bond angles: $90^\circ$ and $120^\circ$.
+**Example:** $\mathrm{PCl{}_5$ has phosphorus with 10 electrons (5 bonding pairs). Electron
+geometry: Trigonal bipyramidal ($sp^3d$). Bond angles: $90^\circ$ and $120^\circ$.
 
 ### Determining Hybridisation
 
 The hybridisation of the central atom is determined by the number of electron domains (bonding
 Pairs + lone pairs):
 
-| Electron domains | Hybridisation | Geometry |
+| Electron domains | Hybridisation | Geometry             |
 | ---------------- | ------------- | -------------------- |
-| 2 | $sp$ | Linear |
-| 3 | $sp^2$ | Trigonal planar |
-| 4 | $sp^3$ | Tetrahedral |
-| 5 | $sp^3d$ | Trigonal bipyramidal |
-| 6 | $sp^3d^2$ | Octahedral |
+| 2                | $sp$          | Linear               |
+| 3                | $sp^2$        | Trigonal planar      |
+| 4                | $sp^3$        | Tetrahedral          |
+| 5                | $sp^3d$       | Trigonal bipyramidal |
+| 6                | $sp^3d^2$     | Octahedral           |
 
 ---
 
@@ -610,12 +618,12 @@ Arrangement. This prevents layers from sliding , making the alloy harder than th
 
 Consider the hydrides of Group 14-17:
 
-| Compound | Boiling point | Dominant IMF |
-| -------------------- | ------------- | ---------------- |
-| $\mathrm{CH{}_4$ | -162°C | London forces |
-| $\mathrm{NH{}_3$ | -33°C | Hydrogen bonding |
-| $\mathrm{H{}_2\mathrm{O{}$ | 100°C | Hydrogen bonding |
-| $\mathrm{HF{}$ | 20°C | Hydrogen bonding |
+| Compound                   | Boiling point | Dominant IMF     |
+| -------------------------- | ------------- | ---------------- |
+| $\mathrm{CH{}_4$           | -162°C        | London forces    |
+| $\mathrm{NH{}_3$           | -33°C         | Hydrogen bonding |
+| $\mathrm{H{}_2\mathrm{O{}$ | 100°C         | Hydrogen bonding |
+| $\mathrm{HF{}$             | 20°C          | Hydrogen bonding |
 
 Water has the highest boiling point because each molecule can form up to four hydrogen bonds (two as
 Donor, two as acceptor), creating an extensive three-dimensional network.
@@ -639,15 +647,15 @@ Order of vapour pressure (decreasing): London forces > dipole-dipole > hydrogen 
 
 ## Comparison Table: All Bonding Types
 
-| Feature | Ionic | Covalent (simple) | Covalent (giant) | Metallic |
-| ----------------------- | --------------------------- | ----------------------------------------------------- | ----------------- | --------------------------- |
-| Particles | Ions | Molecules | Atoms in network | Metal ions + delocalised e- |
-| Forces | Electrostatic | Covalent bonds (intramolecular), IMF (intermolecular) | Covalent bonds | Metallic bonding |
-| Melting point | High | Low | Very high | Moderate-high |
-| Electrical conductivity | Molten/aqueous | None | Graphite only | Good |
-| Solubility | Polar solvents | Non-polar solvents | Insoluble | Insoluble |
-| Hardness | Hard, brittle | Soft | Very hard | Malleable |
-| Examples | $\mathrm{NaCl{}$$\mathrm{MgO{}$ | $\mathrm{H{}_2\mathrm{O{}$$\mathrm{CO{}_2$ | Diamond, graphite | $\mathrm{Fe{}$$\mathrm{Cu{}$ |
+| Feature                 | Ionic                           | Covalent (simple)                                     | Covalent (giant)  | Metallic                     |
+| ----------------------- | ------------------------------- | ----------------------------------------------------- | ----------------- | ---------------------------- |
+| Particles               | Ions                            | Molecules                                             | Atoms in network  | Metal ions + delocalised e-  |
+| Forces                  | Electrostatic                   | Covalent bonds (intramolecular), IMF (intermolecular) | Covalent bonds    | Metallic bonding             |
+| Melting point           | High                            | Low                                                   | Very high         | Moderate-high                |
+| Electrical conductivity | Molten/aqueous                  | None                                                  | Graphite only     | Good                         |
+| Solubility              | Polar solvents                  | Non-polar solvents                                    | Insoluble         | Insoluble                    |
+| Hardness                | Hard, brittle                   | Soft                                                  | Very hard         | Malleable                    |
+| Examples                | $\mathrm{NaCl{}$$\mathrm{MgO{}$ | $\mathrm{H{}_2\mathrm{O{}$$\mathrm{CO{}_2$            | Diamond, graphite | $\mathrm{Fe{}$$\mathrm{Cu{}$ |
 
 ---
 
@@ -669,8 +677,8 @@ $$\mathrm{Formal charge{} = \mathrm{valence electrons{} - \mathrm{non-bonding el
 The best Lewis structure minimises formal charges and places negative formal charge on the most
 Electronegative atoms.
 
-**Worked Example 8 (HL):** Draw the Lewis structure of $\mathrm{SO{}_4^{2-}$ and calculate the formal
-Charge on each atom.
+**Worked Example 8 (HL):** Draw the Lewis structure of $\mathrm{SO{}_4^{2-}$ and calculate the
+formal Charge on each atom.
 
 Total valence electrons: $6 + 4(6) + 2 = 32$.
 
@@ -679,8 +687,8 @@ Structure: S is central with four S=O bonds (each oxygen has 4 non-bonding elect
 Formal charge on S: $6 - 0 - \frac{1}{2}(8) = +2$. Formal charge on each O:
 $6 - 4 - \frac{1}{2}(4) = 0$.
 
-Total formal charge: $+2 + 4(0) = +2$But the ion has charge $-2$. This suggests the simple
-Structure with four double bonds is not ideal.
+Total formal charge: $+2 + 4(0) = +2$But the ion has charge $-2$. This suggests the simple Structure
+with four double bonds is not ideal.
 
 Alternative: Two S=O double bonds and two S-O single bonds (with the single-bonded oxygens carrying
 A negative formal charge):
@@ -697,19 +705,19 @@ In reality, all four S-O bonds are equivalent due to resonance.
 ## Practice Questions (Further Extended)
 
 21. Draw Lewis structures for the following molecules/ions and assign formal charges: (a)
- $\mathrm{CO{}_3^{2-}$(b) $\mathrm{SO{}_3$(c) $\mathrm{NO{}_2^-$(d) $\mathrm{XeO{}_4$.
+    $\mathrm{CO{}_3^{2-}$(b) $\mathrm{SO{}_3$(c) $\mathrm{NO{}_2^-$(d) $\mathrm{XeO{}_4$.
 
 22. Explain the trend in boiling points for the noble gases and relate this to intermolecular
- forces.
+    forces.
 
-23. Use MO theory to determine the bond order of $\mathrm{F{}_2$$\mathrm{O{}_2$And $\mathrm{N{}_2$. How
- does bond order relate to bond length and bond strength?
+23. Use MO theory to determine the bond order of $\mathrm{F{}_2$$\mathrm{O{}_2$And $\mathrm{N{}_2$.
+    How does bond order relate to bond length and bond strength?
 
 24. Describe how the properties of graphite make it useful as a lubricant and as an electrode
- material.
+    material.
 
 25. Explain why ice is less dense than liquid water, referring to hydrogen bonding and the structure
- of the ice lattice.
+    of the ice lattice.
 
 ## Summary
 

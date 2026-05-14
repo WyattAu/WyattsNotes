@@ -1,6 +1,8 @@
 ---
 title: DSE Chemistry
-description: "DSE Chemistry overview notes covering the full syllabus including atomic structure, bonding, stoichiometry, energetics, kinetics, equilibrium, and organic"
+description:
+  'DSE Chemistry overview notes covering the full syllabus including atomic structure, bonding,
+  stoichiometry, energetics, kinetics, equilibrium, and organic'
 date: 2026-04-23T00:00:00.000Z
 tags:
   - Chemistry
@@ -13,21 +15,21 @@ slug: dse-chemistry
 ## Course Overview
 
 The Hong Kong Diploma of Secondary Education (DSE) Chemistry examination assesses candidates'
-Knowledge and understanding of chemical principles, their ability to apply chemistry to
-Real-world situations, and their skills in chemical investigation and analysis.
+Knowledge and understanding of chemical principles, their ability to apply chemistry to Real-world
+situations, and their skills in chemical investigation and analysis.
 
-The course is divided into **compulsory topics** (Papers 1A and 1B) and **elective topics**
-(Paper 2). All candidates must study the compulsory topics and choose ONE elective.
+The course is divided into **compulsory topics** (Papers 1A and 1B) and **elective topics** (Paper
+2). All candidates must study the compulsory topics and choose ONE elective.
 
 ---
 
 ## Examination Structure
 
-| Paper | Component | Duration | Weighting |
+| Paper | Component                                  | Duration | Weighting |
 | ----- | ------------------------------------------ | -------- | --------- |
-| 1A | Compulsory Part -- Multiple-Choice Section | 1 h 30 m | 30% |
-| 1B | Compulsory Part -- Structured Questions | 2 h | 50% |
-| 2 | Elective -- Structured Questions | 1 h | 20% |
+| 1A    | Compulsory Part -- Multiple-Choice Section | 1 h 30 m | 30%       |
+| 1B    | Compulsory Part -- Structured Questions    | 2 h      | 50%       |
+| 2     | Elective -- Structured Questions           | 1 h      | 20%       |
 
 **Total: 100%**
 
@@ -45,7 +47,8 @@ The compulsory syllabus covers the following major areas:
 - Periodic trends: atomic radius, ionisation energy, electronegativity
 - Properties of Groups 1, 2, 17, and 18
 
-See [./dse-chemistry-atomic-structure-and-periodic-table](./dse-chemistry-atomic-structure-and-periodic-table)
+See
+[./dse-chemistry-atomic-structure-and-periodic-table](./dse-chemistry-atomic-structure-and-periodic-table)
 For detailed notes.
 
 ### II. Chemical Bonding
@@ -81,7 +84,8 @@ For detailed notes.
 - Ionic equations
 - Common acids and bases
 
-See [./dse-chemistry-acids-bases-and-salts](./dse-chemistry-acids-bases-and-salts) for detailed notes.
+See [./dse-chemistry-acids-bases-and-salts](./dse-chemistry-acids-bases-and-salts) for detailed
+notes.
 
 ### V. Rate of Reaction and Energetics
 
@@ -91,7 +95,8 @@ See [./dse-chemistry-acids-bases-and-salts](./dse-chemistry-acids-bases-and-salt
 - Enthalpy changes, Hess's law, and bond energies
 - Calorimetry
 
-See [./dse-chemistry-rate-of-reaction-and-energetics](./dse-chemistry-rate-of-reaction-and-energetics)
+See
+[./dse-chemistry-rate-of-reaction-and-energetics](./dse-chemistry-rate-of-reaction-and-energetics)
 For detailed notes.
 
 ### VI. Redox and Electrochemistry
@@ -103,8 +108,8 @@ For detailed notes.
 - Rusting and corrosion prevention
 - Electrolysis (aqueous and molten)
 
-See [./dse-chemistry-redox-and-electrochemistry](./dse-chemistry-redox-and-electrochemistry)
-For detailed notes.
+See [./dse-chemistry-redox-and-electrochemistry](./dse-chemistry-redox-and-electrochemistry) For
+detailed notes.
 
 ### VII. Carbon Chemistry
 
@@ -121,12 +126,12 @@ See [./dse-chemistry-carbon-chemistry](./dse-chemistry-carbon-chemistry) for det
 
 ## Elective Topics (Choose One)
 
-| Elective | Topic |
-| -------- | ---------------------------- |
-| E1 | Industrial Chemistry |
-| E2 | Analytical Chemistry |
-| E3 | Materials Chemistry |
-| E4 | Chemical Energy and the Environment |
+| Elective | Topic                               |
+| -------- | ----------------------------------- |
+| E1       | Industrial Chemistry                |
+| E2       | Analytical Chemistry                |
+| E3       | Materials Chemistry                 |
+| E4       | Chemical Energy and the Environment |
 
 Paper 2 consists of structured questions based on the chosen elective. Each elective carries equal
 Weighting (20% of the total mark).
@@ -146,25 +151,25 @@ Candidates are expected to demonstrate the ability to:
 
 ## Key Quantities and Constants
 
-| Quantity / Constant | Symbol | Value / Unit |
-| ------------------------- | ------ | ------------------------- |
-| Avogadro's number | $N_A$ | $6.02 \times 10^{23} \mathrm{ mol^{-1}}$ |
-| Molar volume (STP) | $V_m$ | $22.4 \mathrm{ dm^3/mol}$ |
-| Molar volume (RTP) | $V_m$ | $24.0 \mathrm{ dm^3/mol}$ |
-| Molar gas constant | $R$ | $8.31 \mathrm{ J/(mol \cdot K)}$ |
-| Planck's constant | $h$ | $6.63 \times 10^{-34} \mathrm{ J \cdot s}$ |
-| Faraday constant | $F$ | $96500 \mathrm{ C/mol}$ |
+| Quantity / Constant | Symbol | Value / Unit                               |
+| ------------------- | ------ | ------------------------------------------ |
+| Avogadro's number   | $N_A$  | $6.02 \times 10^{23} \mathrm{ mol^{-1}}$   |
+| Molar volume (STP)  | $V_m$  | $22.4 \mathrm{ dm^3/mol}$                  |
+| Molar volume (RTP)  | $V_m$  | $24.0 \mathrm{ dm^3/mol}$                  |
+| Molar gas constant  | $R$    | $8.31 \mathrm{ J/(mol \cdot K)}$           |
+| Planck's constant   | $h$    | $6.63 \times 10^{-34} \mathrm{ J \cdot s}$ |
+| Faraday constant    | $F$    | $96500 \mathrm{ C/mol}$                    |
 
 ---
 
 ## Examination Tips
 
 - Show all working in stoichiometry calculations. Marks are awarded for method even if the final
- answer is wrong.
+  answer is wrong.
 - Write balanced chemical equations wherever possible; state symbols are required when specified.
 - In ionic equation questions, cancel spectator ions and include state symbols.
 - Memorise the colours of common ions and precipitates (e.g., $\mathrm{Cu^{2+}}$ = blue,
- $\mathrm{Fe^{3+}}$ = yellow-brown, $\mathrm{AgCl}$ = white).
+  $\mathrm{Fe^{3+}}$ = yellow-brown, $\mathrm{AgCl}$ = white).
 - For organic chemistry questions, draw structural formulae and use correct IUPAC names.
 - Pay attention to significant figures in numerical answers.
 - In titration calculations, always read the burette to two decimal places.
@@ -220,7 +225,7 @@ Zinc is higher in the reactivity series than copper, so zinc is more readily oxi
 - **Anode (oxidation):** $\mathrm{Zn} \to \mathrm{Zn^{2+}} + 2e^-$
 - **Cathode (reduction):** $\mathrm{Cu^{2+}} + 2e^- \to \mathrm{Cu}$
 - **Electron flow:** from the zinc electrode (anode) through the external wire to the copper
- electrode (cathode).
+  electrode (cathode).
 
 </details>
 
@@ -231,7 +236,7 @@ Zinc is higher in the reactivity series than copper, so zinc is more readily oxi
 **Problem 1:** How many significant figures should the answer to the following calculation be given
 To? $0.150 \times 24.0 / 0.100$
 
-*If you get this wrong, revise: Examination Tips — Significant Figures*
+_If you get this wrong, revise: Examination Tips — Significant Figures_
 
 <details>
 <summary>Solution</summary>
@@ -244,7 +249,7 @@ The result is $36.0$. All three values have 3 significant figures, so the answer
 **Problem 2:** State the colour of the precipitate formed when aqueous sodium hydroxide is added to
 A solution containing $\mathrm{Fe^{3+}}$ ions.
 
-*If you get this wrong, revise: Examination Tips — Colours of Common Ions*
+_If you get this wrong, revise: Examination Tips — Colours of Common Ions_
 
 <details>
 <summary>Solution</summary>
@@ -258,20 +263,18 @@ Standing), $\mathrm{Zn^{2+}}$ gives white.
 
 **Problem 3:** Identify the compulsory topic that each of the following exam questions belongs to:
 
-(a) Explain why graphite conducts electricity.
-(b) Calculate the percentage yield of a reaction.
-(c) Write the ionic equation for the neutralisation of a strong acid by a strong base.
-(d) Explain the trend in first ionisation energy across Period 3.
+(a) Explain why graphite conducts electricity. (b) Calculate the percentage yield of a reaction. (c)
+Write the ionic equation for the neutralisation of a strong acid by a strong base. (d) Explain the
+trend in first ionisation energy across Period 3.
 
-*If you get this wrong, revise: Compulsory Topics Overview*
+_If you get this wrong, revise: Compulsory Topics Overview_
 
 <details>
 <summary>Solution</summary>
 
-(a) **II. Chemical Bonding** — giant covalent structures
-(b) **III. Stoichiometry and Mole Concept** — percentage yield
-(c) **IV. Acids, Bases, and Salts** — neutralisation and ionic equations
-(d) **I. Atomic Structure and Periodic Table** — ionisation energy trends
+(a) **II. Chemical Bonding** — giant covalent structures (b) **III. Stoichiometry and Mole Concept**
+— percentage yield (c) **IV. Acids, Bases, and Salts** — neutralisation and ionic equations (d) **I.
+Atomic Structure and Periodic Table** — ionisation energy trends
 
 </details>
 
@@ -279,7 +282,7 @@ Standing), $\mathrm{Zn^{2+}}$ gives white.
 Copper deposited when a current of $2.00 \mathrm{ A}$ is passed through $\mathrm{CuSO_4}(aq)$ for
 30.0 minutes.
 
-*If you get this wrong, revise: VI. Redox and Electrochemistry — Electrolysis*
+_If you get this wrong, revise: VI. Redox and Electrochemistry — Electrolysis_
 
 <details>
 <summary>Solution</summary>
@@ -299,7 +302,7 @@ $$m(\mathrm{Cu}) = 0.0187 \times 63.5 = 1.18 \mathrm{ g}$$
 **Problem 5:** Explain why the first ionisation energy of magnesium is higher than that of sodium,
 But lower than that of aluminium.
 
-*If you get this wrong, revise: I. Atomic Structure and Periodic Table — Ionisation Energy*
+_If you get this wrong, revise: I. Atomic Structure and Periodic Table — Ionisation Energy_
 
 <details>
 <summary>Solution</summary>
@@ -310,8 +313,8 @@ Mg ($[\mathrm{Ne}]\, 3s^2$): the $3s$ electrons are closer to the nucleus (highe
 Charge) and experience a full $3s$ subshell effect, making them harder to remove than Na's single
 $3s$ electron.
 
-Al ($[\mathrm{Ne}]\, 3s^2\, 3p^1$): the $3p$ electron is in a higher energy subshell than $3s$ and is
-Shielded by the $3s^2$ electrons, making it easier to remove than Mg's $3s$ electrons.
+Al ($[\mathrm{Ne}]\, 3s^2\, 3p^1$): the $3p$ electron is in a higher energy subshell than $3s$ and
+is Shielded by the $3s^2$ electrons, making it easier to remove than Mg's $3s$ electrons.
 
 So: IE(Na) $\lt$ IE(Mg) $\gt$ IE(Al).
 
@@ -320,34 +323,34 @@ So: IE(Na) $\lt$ IE(Mg) $\gt$ IE(Al).
 **Problem 6:** State two differences between a strong acid and a weak acid of the same
 Concentration, and explain each difference.
 
-*If you get this wrong, revise: IV. Acids, Bases, and Salts — Strong and Weak Acids*
+_If you get this wrong, revise: IV. Acids, Bases, and Salts — Strong and Weak Acids_
 
 <details>
 <summary>Solution</summary>
 
 1. **pH:** A strong acid has a lower pH than a weak acid at the same concentration. Strong acids
- dissociate completely in water ($\mathrm{H^+}$ concentration equals the acid concentration), while
- weak acids only partially dissociate.
+   dissociate completely in water ($\mathrm{H^+}$ concentration equals the acid concentration),
+   while weak acids only partially dissociate.
 
 2. **Electrical conductivity:** A strong acid solution is a better conductor than a weak acid
- solution of the same concentration. Complete dissociation in a strong acid produces more mobile
- ions, carrying charge more effectively.
+   solution of the same concentration. Complete dissociation in a strong acid produces more mobile
+   ions, carrying charge more effectively.
 
 </details>
 
-**Problem 7:** A hydrocarbon contains $85.7\%$ carbon and $14.3\%$ hydrogen by mass. Its molar
-Mass is $42.0 \mathrm{ g/mol}$. Determine its molecular formula and identify the homologous series
-It belongs to.
+**Problem 7:** A hydrocarbon contains $85.7\%$ carbon and $14.3\%$ hydrogen by mass. Its molar Mass
+is $42.0 \mathrm{ g/mol}$. Determine its molecular formula and identify the homologous series It
+belongs to.
 
-*If you get this wrong, revise: VII. Carbon Chemistry — Homologous Series*
+_If you get this wrong, revise: VII. Carbon Chemistry — Homologous Series_
 
 <details>
 <summary>Solution</summary>
 
-| Element | Mass (g) | Moles | Ratio |
-| ------- | -------- | ----------------- | ------------------------- |
-| C | 85.7 | $85.7/12 = 7.14$ | $7.14/7.14 = 1$ |
-| H | 14.3 | $14.3/1 = 14.3$ | $14.3/7.14 \approx 2$ |
+| Element | Mass (g) | Moles            | Ratio                 |
+| ------- | -------- | ---------------- | --------------------- |
+| C       | 85.7     | $85.7/12 = 7.14$ | $7.14/7.14 = 1$       |
+| H       | 14.3     | $14.3/1 = 14.3$  | $14.3/7.14 \approx 2$ |
 
 Empirical formula: $\mathrm{CH_2}$
 
@@ -364,7 +367,7 @@ This is **propene**, an **alkene** (homologous series with general formula $\mat
 **Problem 8:** Explain the difference between an exothermic reaction and an endothermic reaction in
 Terms of enthalpy change ($\Delta H$), and give one example of each.
 
-*If you get this wrong, revise: V. Rate of Reaction and Energetics — Enthalpy Changes*
+_If you get this wrong, revise: V. Rate of Reaction and Energetics — Enthalpy Changes_
 
 <details>
 <summary>Solution</summary>
@@ -385,7 +388,7 @@ $$\mathrm{CaCO_3} \to \mathrm{CaO} + \mathrm{CO_2} \quad \Delta H = +178 \mathrm
 Produced at the cathode rather than sodium, and why chlorine is produced at the anode rather than
 Oxygen.
 
-*If you get this wrong, revise: VI. Redox and Electrochemistry — Electrolysis (Aqueous)*
+_If you get this wrong, revise: VI. Redox and Electrochemistry — Electrolysis (Aqueous)_
 
 <details>
 <summary>Solution</summary>
@@ -401,11 +404,11 @@ $2\mathrm{Cl^-} \to \mathrm{Cl_2} + 2e^-$.
 
 </details>
 
-**Problem 10:** A student titrates $25.0 \mathrm{ cm^3}$ of ethanoic acid ($\mathrm{CH_3COOH}$)
-With $0.100 \mathrm{ mol/dm^3}$ sodium hydroxide. The average titre is $16.7 \mathrm{ cm^3}$.
-Calculate the concentration of the ethanoic acid and state whether it is a strong or weak acid.
+**Problem 10:** A student titrates $25.0 \mathrm{ cm^3}$ of ethanoic acid ($\mathrm{CH_3COOH}$) With
+$0.100 \mathrm{ mol/dm^3}$ sodium hydroxide. The average titre is $16.7 \mathrm{ cm^3}$. Calculate
+the concentration of the ethanoic acid and state whether it is a strong or weak acid.
 
-*If you get this wrong, revise: IV. Acids, Bases, and Salts and III. Stoichiometry — Titration*
+_If you get this wrong, revise: IV. Acids, Bases, and Salts and III. Stoichiometry — Titration_
 
 <details>
 <summary>Solution</summary>

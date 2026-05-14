@@ -1,15 +1,17 @@
 ---
 title: Adolescent Development
-description: "Comprehensive coverage of identity formation, social development, risk-taking behaviour, peer influence, cultural variations in adolescence, and key research"
+description:
+  'Comprehensive coverage of identity formation, social development, risk-taking behaviour, peer
+  influence, cultural variations in adolescence, and key research'
 slug: adolescent-development
 ---
 
 ## Introduction
 
-Adolescence is the developmental period between childhood and adulthood, defined as
-Spanning from approximately age 10 to age 19 (though definitions vary across cultures and contexts).
-It is characterised by profound biological, cognitive, social, and emotional changes that have
-Significant implications for mental health, educational attainment, and long-term life outcomes.
+Adolescence is the developmental period between childhood and adulthood, defined as Spanning from
+approximately age 10 to age 19 (though definitions vary across cultures and contexts). It is
+characterised by profound biological, cognitive, social, and emotional changes that have Significant
+implications for mental health, educational attainment, and long-term life outcomes.
 
 ## Biological Changes
 
@@ -22,14 +24,14 @@ Levels of sex hormones (testosterone in males, oestrogen and progesterone in fem
 **The timing of puberty has significant psychological consequences:**
 
 - **Early maturation in boys** is generally associated with positive outcomes: early-maturing boys
- tend to be taller, more athletic, and more popular, which enhances self-esteem and social status.
+  tend to be taller, more athletic, and more popular, which enhances self-esteem and social status.
 - **Early maturation in girls** is associated with mixed outcomes. Early-maturing girls may
- experience increased social attention from older peers, but they are also at increased risk for
- depression, anxiety, eating disorders, substance use, and early sexual activity. The discrepancy
- between their physical appearance and their emotional and cognitive maturity can create stress and
- vulnerability.
+  experience increased social attention from older peers, but they are also at increased risk for
+  depression, anxiety, eating disorders, substance use, and early sexual activity. The discrepancy
+  between their physical appearance and their emotional and cognitive maturity can create stress and
+  vulnerability.
 - **Late maturation** (in both sexes) is generally associated with short-term disadvantages (lower
- social status, lower self-esteem) but these effects tend to diminish by early adulthood.
+  social status, lower self-esteem) but these effects tend to diminish by early adulthood.
 
 ### Brain Development
 
@@ -37,11 +39,11 @@ As discussed in [Developmental Psychology](../developmental-psychology), the ado
 Undergoes significant remodelling. The two key processes are:
 
 1. **Synaptic pruning:** The elimination of unused synaptic connections, refining neural circuits
- and improving processing efficiency. Synaptic pruning is particularly extensive in the prefrontal
- cortex during adolescence.
+   and improving processing efficiency. Synaptic pruning is particularly extensive in the prefrontal
+   cortex during adolescence.
 2. **Myelination:** The formation of myelin sheaths around axons, which increases the speed and
- efficiency of neural transmission. Myelination of the prefrontal cortex continues into the
- mid-20s.
+   efficiency of neural transmission. Myelination of the prefrontal cortex continues into the
+   mid-20s.
 
 These processes have important implications for adolescent behaviour. The prefrontal cortex,
 Responsible for executive functions (planning, decision making, impulse control, and social
@@ -80,39 +82,39 @@ James Marcia expanded on Erikson's theory by operationalising two dimensions of 
 Development:
 
 1. **Exploration:** The degree to which the individual is actively considering different identity
- alternatives (values, beliefs, career options, relationships).
+   alternatives (values, beliefs, career options, relationships).
 2. **Commitment:** The degree to which the individual has made firm commitments to specific identity
- choices.
+   choices.
 
 The intersection of these two dimensions produces four identity statuses:
 
-| Status | Exploration | Commitment | Description |
+| Status               | Exploration | Commitment | Description                                                                                                                                                                             |
 | -------------------- | ----------- | ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Identity diffusion | Low | Low | No exploration and no commitment. The adolescent has not considered identity options and has not made any commitments. |
-| Foreclosure | Low | High | No exploration but firm commitment. The adolescent has adopted an identity prescribed by parents or authority figures without personal exploration. |
-| Moratorium | High | Low | Active exploration without firm commitment. The adolescent is actively considering different options but has not yet made commitments. This corresponds to Erikson's "identity crisis." |
-| Identity achievement | High | High | Exploration followed by commitment. The adolescent has actively considered different options and has made firm commitments based on personal exploration. This is the optimal outcome. |
+| Identity diffusion   | Low         | Low        | No exploration and no commitment. The adolescent has not considered identity options and has not made any commitments.                                                                  |
+| Foreclosure          | Low         | High       | No exploration but firm commitment. The adolescent has adopted an identity prescribed by parents or authority figures without personal exploration.                                     |
+| Moratorium           | High        | Low        | Active exploration without firm commitment. The adolescent is actively considering different options but has not yet made commitments. This corresponds to Erikson's "identity crisis." |
+| Identity achievement | High        | High       | Exploration followed by commitment. The adolescent has actively considered different options and has made firm commitments based on personal exploration. This is the optimal outcome.  |
 
 **Research findings:**
 
 - Identity achievement is associated with the best psychological outcomes (higher self-esteem,
- greater autonomy, more mature moral reasoning).
+  greater autonomy, more mature moral reasoning).
 - Foreclosure is associated with moderate psychological adjustment but rigidity and susceptibility
- to dogmatism.
+  to dogmatism.
 - Moratorium is associated with anxiety and identity instability but is a normative and adaptive
- process that leads to identity achievement.
+  process that leads to identity achievement.
 - Identity diffusion is associated with the poorest outcomes (low self-esteem, social withdrawal,
- apathy).
+  apathy).
 
 **Evaluation:**
 
 - Marcia's model has been widely used and has generated a substantial body of research.
 - The model has been criticised for being too focused on individualistic, Western notions of
- identity. In collectivistic cultures, identity may be defined more by family and social roles than
- by personal exploration and choice.
+  identity. In collectivistic cultures, identity may be defined more by family and social roles than
+  by personal exploration and choice.
 - The model may not capture the complexity of contemporary identity development, which involves
- multiple identity domains (career, religion, politics, sexuality, ethnicity) that may develop at
- different rates.
+  multiple identity domains (career, religion, politics, sexuality, ethnicity) that may develop at
+  different rates.
 
 ## Social Development
 
@@ -123,16 +125,16 @@ Shifts from direct control to indirect influence. The functions of peer relation
 Include:
 
 - **Social comparison:** Adolescents evaluate their own abilities, appearance, and social status by
- comparing themselves to peers. Upward social comparison (comparing oneself to more capable or
- attractive peers) can be motivating but can also reduce self-esteem.
+  comparing themselves to peers. Upward social comparison (comparing oneself to more capable or
+  attractive peers) can be motivating but can also reduce self-esteem.
 - **Peer conformity:** Adolescents are more susceptible to peer influence than children or adults.
- This is particularly true for behaviours related to social status (clothing, music, language) and
- risk-taking. Peer conformity serves an adaptive function: conformity to group norms facilitates
- social acceptance, which is particularly important during a period when peer relationships are
- central to well-being.
+  This is particularly true for behaviours related to social status (clothing, music, language) and
+  risk-taking. Peer conformity serves an adaptive function: conformity to group norms facilitates
+  social acceptance, which is particularly important during a period when peer relationships are
+  central to well-being.
 - **Friendship quality:** The quality of close friendships (trust, self-disclosure, emotional
- support) is a significant predictor of adolescent mental health. Close friendships provide a
- buffer against stress and a context for developing social skills and emotional regulation.
+  support) is a significant predictor of adolescent mental health. Close friendships provide a
+  buffer against stress and a context for developing social skills and emotional regulation.
 
 ### Family Relationships
 
@@ -141,15 +143,15 @@ Quality of parent-adolescent relationships is a significant predictor of adolesc
 Academic achievement, and risk behaviour. Key factors include:
 
 - **Parental warmth and support:** Adolescents who perceive their parents as warm, supportive, and
- accepting have higher self-esteem, better academic outcomes, and lower rates of delinquency and
- substance use.
+  accepting have higher self-esteem, better academic outcomes, and lower rates of delinquency and
+  substance use.
 - **Parental monitoring:** Appropriate parental monitoring (knowledge of the adolescent's
- activities, whereabouts, and peer relationships) is associated with lower rates of risk behaviour.
- However, excessive monitoring or psychological control (intrusion into the adolescent's thoughts
- and feelings) is associated with poorer outcomes.
+  activities, whereabouts, and peer relationships) is associated with lower rates of risk behaviour.
+  However, excessive monitoring or psychological control (intrusion into the adolescent's thoughts
+  and feelings) is associated with poorer outcomes.
 - **Autonomy granting:** The gradual transfer of decision-making responsibility from parent to
- adolescent is associated with positive developmental outcomes. Parents who support autonomy while
- maintaining appropriate boundaries foster the development of self-regulation and independence.
+  adolescent is associated with positive developmental outcomes. Parents who support autonomy while
+  maintaining appropriate boundaries foster the development of self-regulation and independence.
 
 ## Risk-Taking Behaviour
 
@@ -159,13 +161,13 @@ Laurence Steinberg (2008) proposed the dual-systems model to explain why adolesc
 Disproportionately prone to risk-taking. The model posits two interacting brain systems:
 
 1. **The socioemotional system:** Including the limbic system (particularly the amygdala and ventral
- striatum), this system matures early in adolescence and is highly responsive to rewards, social
- stimuli, and emotional arousal. The system drives the adolescent's motivation to seek novel
- experiences, social status, and peer approval.
+   striatum), this system matures early in adolescence and is highly responsive to rewards, social
+   stimuli, and emotional arousal. The system drives the adolescent's motivation to seek novel
+   experiences, social status, and peer approval.
 2. **The cognitive control system:** Including the prefrontal cortex, this system matures more
- slowly and is responsible for impulse control, long-term planning, and weighing of consequences.
- The system regulates the socioemotional system by inhibiting impulsive responses and considering
- long-term consequences.
+   slowly and is responsible for impulse control, long-term planning, and weighing of consequences.
+   The system regulates the socioemotional system by inhibiting impulsive responses and considering
+   long-term consequences.
 
 The temporal gap between the maturation of the socioemotional system (early adolescence) and the
 Cognitive control system (mid-20s) creates a period of heightened vulnerability to risk-taking,
@@ -192,7 +194,7 @@ Observed by two same-age peers.
 - Adolescents took significantly more risks in the presence of peers than when alone.
 - Adults showed no significant difference in risk-taking between the alone and peer conditions.
 - fMRI data showed that peer observation increased ventral striatum activation in adolescents but
- not in adults, and decreased prefrontal cortex activation in adolescents.
+  not in adults, and decreased prefrontal cortex activation in adolescents.
 
 **Interpretation:** The mere presence of peers activates the reward system in adolescents,
 Increasing the motivational value of risk-taking and reducing the capacity for cognitive control.
@@ -233,28 +235,28 @@ Real-world risk behaviour.
 **Key findings:**
 
 - There was significant cross-cultural variation in both self-reported risk behaviour and
- performance on the behavioural risk-taking task.
+  performance on the behavioural risk-taking task.
 - The developmental pattern of risk-taking (a peak during mid-adolescence followed by a decline) was
- observed across all cultures studied, supporting the universality of the dual-systems model.
+  observed across all cultures studied, supporting the universality of the dual-systems model.
 - However, the magnitude of the adolescent peak in risk-taking varied across cultures, suggesting
- that cultural factors modulate the expression of the underlying neurobiological propensity.
+  that cultural factors modulate the expression of the underlying neurobiological propensity.
 
 <details>
 <summary>Common Pitfalls: Adolescent Development</summary>
 
 - **Do not assume that all adolescents experience an "identity crisis."** While identity exploration
- is normative, not all adolescents experience a period of intense crisis. Some adolescents achieve
- a stable identity through exploration, while others adopt foreclosed identities without crisis.
+  is normative, not all adolescents experience a period of intense crisis. Some adolescents achieve
+  a stable identity through exploration, while others adopt foreclosed identities without crisis.
 - **Do not present adolescent risk-taking as purely irrational or pathological.** Risk-taking serves
- adaptive functions in adolescence: it facilitates exploration, learning, and the acquisition of
- skills that will be necessary in adulthood. The dual-systems model explains risk-taking as a
- predictable consequence of normative brain development, not as a sign of immaturity or pathology.
+  adaptive functions in adolescence: it facilitates exploration, learning, and the acquisition of
+  skills that will be necessary in adulthood. The dual-systems model explains risk-taking as a
+  predictable consequence of normative brain development, not as a sign of immaturity or pathology.
 - **Do not assume that peer influence is always negative.** Peers also provide positive influences,
- including emotional support, prosocial role models, and opportunities for developing social
- skills.
+  including emotional support, prosocial role models, and opportunities for developing social
+  skills.
 - **Do not generalise findings from Western adolescent samples to all cultures.** The experience of
- adolescence is shaped by cultural, economic, and social contexts that vary significantly across
- the world.
+  adolescence is shaped by cultural, economic, and social contexts that vary significantly across
+  the world.
 
 </details>
 

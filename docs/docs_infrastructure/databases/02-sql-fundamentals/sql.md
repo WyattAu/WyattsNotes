@@ -1,7 +1,9 @@
 ---
 id: sql
 title: SQL Fundamentals
-description: "SQL Fundamentals — SQL Standards and Dialects; Data Definition Language (DDL); CREATE TABLE; Column Data Types with worked examples and exam-style questions."
+description:
+  'SQL Fundamentals — SQL Standards and Dialects; Data Definition Language (DDL); CREATE TABLE;
+  Column Data Types with worked examples and exam-style questions.'
 slug: sql
 sidebar_position: 1
 tags:
@@ -9,6 +11,7 @@ tags:
 categories:
   - Databases
 ---
+
 ## SQL Standards and Dialects
 
 SQL is defined by ANSI/ISO standards (SQL-86, SQL-89, SQL-92, SQL:1999, SQL:2003, SQL:2006,
@@ -43,7 +46,7 @@ CREATE TABLE employees (
 Key elements:
 
 - `SERIAL` (PostgreSQL) / `AUTO_INCREMENT` (MySQL) / `INTEGER PRIMARY KEY` (SQLite) for
- auto-generating keys
+  auto-generating keys
 - `NOT NULL` -- the column must have a value
 - `UNIQUE` -- no two rows can have the same value in this column
 - `CHECK` -- an arbitrary boolean expression evaluated on insert/update
@@ -52,20 +55,20 @@ Key elements:
 
 ### Column Data Types
 
-| Type Category | PostgreSQL Types | Notes |
-| --------------- | ------------------------------------------ | ------------------------------------------------------------------------------- |
-| Integers | `SMALLINT``INTEGER``BIGINT` | `INTEGER` is 4 bytes, `BIGINT` is 8 bytes |
-| Fixed precision | `NUMERIC(p,s)``DECIMAL(p,s)` | Exact arithmetic; `NUMERIC(10,2)` holds up to 99,999,999.99 |
-| Floating point | `REAL``DOUBLE PRECISION` | Inexact; avoid for financial data |
-| Variable string | `VARCHAR(n)``TEXT` | `VARCHAR` with length is a constraint, not a storage optimisation in PostgreSQL |
-| Fixed string | `CHAR(n)` | Padded with spaces; rarely useful |
-| Boolean | `BOOLEAN` | `TRUE``FALSE``NULL` |
-| Date/Time | `DATE``TIME``TIMESTAMP``TIMESTAMPTZ` | `TIMESTAMPTZ` stores UTC; always prefer it over `TIMESTAMP` |
-| Binary | `BYTEA` | Variable-length binary data |
-| JSON | `JSON``JSONB` | `JSONB` is stored in decomposed binary form; faster to query |
-| UUID | `UUID` | Requires the `uuid-ossp` or `pgcrypto` extension |
-| Array | `INTEGER[]``TEXT[]` | PostgreSQL-specific extension |
-| Network | `INET``CIDR``MACADDR` | PostgreSQL-specific; enforces valid IP/MAC formats |
+| Type Category   | PostgreSQL Types                     | Notes                                                                           |
+| --------------- | ------------------------------------ | ------------------------------------------------------------------------------- |
+| Integers        | `SMALLINT``INTEGER``BIGINT`          | `INTEGER` is 4 bytes, `BIGINT` is 8 bytes                                       |
+| Fixed precision | `NUMERIC(p,s)``DECIMAL(p,s)`         | Exact arithmetic; `NUMERIC(10,2)` holds up to 99,999,999.99                     |
+| Floating point  | `REAL``DOUBLE PRECISION`             | Inexact; avoid for financial data                                               |
+| Variable string | `VARCHAR(n)``TEXT`                   | `VARCHAR` with length is a constraint, not a storage optimisation in PostgreSQL |
+| Fixed string    | `CHAR(n)`                            | Padded with spaces; rarely useful                                               |
+| Boolean         | `BOOLEAN`                            | `TRUE``FALSE``NULL`                                                             |
+| Date/Time       | `DATE``TIME``TIMESTAMP``TIMESTAMPTZ` | `TIMESTAMPTZ` stores UTC; always prefer it over `TIMESTAMP`                     |
+| Binary          | `BYTEA`                              | Variable-length binary data                                                     |
+| JSON            | `JSON``JSONB`                        | `JSONB` is stored in decomposed binary form; faster to query                    |
+| UUID            | `UUID`                               | Requires the `uuid-ossp` or `pgcrypto` extension                                |
+| Array           | `INTEGER[]``TEXT[]`                  | PostgreSQL-specific extension                                                   |
+| Network         | `INET``CIDR``MACADDR`                | PostgreSQL-specific; enforces valid IP/MAC formats                              |
 
 :::tip
 
@@ -280,8 +283,8 @@ WHERE (salary > 100000 OR department_id = 1) AND hire_date >= '2022-01-01'
 
 `NULL` comparisons behave unexpectedly. `NULL = NULL` evaluates to `NULL` (not `TRUE`), so
 `WHERE column = NULL` never matches any rows. Use `IS NULL` and `IS NOT NULL`. Similarly,
-`NULL AND TRUE` is `NULL``NULL OR FALSE` is `NULL`And `NOT NULL` is `NULL`. This three-valued
-Logic is the single greatest source of SQL bugs.
+`NULL AND TRUE` is `NULL``NULL OR FALSE` is `NULL`And `NOT NULL` is `NULL`. This three-valued Logic
+is the single greatest source of SQL bugs.
 
 :::
 
@@ -633,11 +636,11 @@ FROM employees;
 
 | salary | ROW_NUMBER | RANK | DENSE_RANK |
 | ------ | ---------- | ---- | ---------- |
-| 150000 | 1 | 1 | 1 |
-| 150000 | 2 | 1 | 1 |
-| 140000 | 3 | 3 | 2 |
-| 140000 | 4 | 3 | 2 |
-| 130000 | 5 | 5 | 3 |
+| 150000 | 1          | 1    | 1          |
+| 150000 | 2          | 1    | 1          |
+| 140000 | 3          | 3    | 2          |
+| 140000 | 4          | 3    | 2          |
+| 130000 | 5          | 5    | 3          |
 
 - `ROW_NUMBER`: assigns a unique sequential integer to each row within the partition
 - `RANK`: ties get the same rank; next rank skips (1, 1, 3, 3, 5)

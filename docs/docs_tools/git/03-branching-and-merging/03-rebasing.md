@@ -1,6 +1,8 @@
 ---
 title: Rebasing
-description: "Rebasing — Merge vs Rebase: Visual Comparison; How Rebase Works Internally; Basic Rebase; Rebase the current branch onto main."
+description:
+  'Rebasing — Merge vs Rebase: Visual Comparison; How Rebase Works Internally; Basic Rebase; Rebase
+  the current branch onto main.'
 date: 2025-06-03T04:00:00.000Z
 tags:
   - git
@@ -9,9 +11,12 @@ categories:
   - CS
 slug: rebasing
 ---
+
 ## What is Rebasing
 
-Rebasing is the process of **replaying** a series of commits onto a new base commit. Unlike merging, which creates a new commit with two parents, rebasing rewrites history by creating new commit objects with the same changes but different parent pointers (and therefore different SHA-1 hashes).
+Rebasing is the process of **replaying** a series of commits onto a new base commit. Unlike merging,
+which creates a new commit with two parents, rebasing rewrites history by creating new commit
+objects with the same changes but different parent pointers (and therefore different SHA-1 hashes).
 
 ### Merge vs Rebase: Visual Comparison
 
@@ -51,16 +56,19 @@ gitGraph
     commit id: "E' (rebased)"
 ```
 
-Note that `C'` and `E'` are **new commits** with different hashes than `C` and `E`. The original commits still exist in the object store (reachable via the reflog) but are no longer on any branch.
+Note that `C'` and `E'` are **new commits** with different hashes than `C` and `E`. The original
+commits still exist in the object store (reachable via the reflog) but are no longer on any branch.
 
 ## How Rebase Works Internally
 
 The `git rebase` operation performs the following steps:
 
-1. **Find the merge base**: Identify the common ancestor between the current branch and the target branch.
+1. **Find the merge base**: Identify the common ancestor between the current branch and the target
+   branch.
 2. **Save the current state**: Record the current HEAD and branch reference.
 3. **Move HEAD** to the target branch (e.g., `main`).
-4. **Replay each commit**: For each commit in the original branch (from oldest to newest), apply its diff onto the new base, creating a new commit object.
+4. **Replay each commit**: For each commit in the original branch (from oldest to newest), apply its
+   diff onto the new base, creating a new commit object.
 5. **Move the branch pointer** to the tip of the new commit chain.
 
 ```mermaid
@@ -74,7 +82,8 @@ flowchart TD
     style E fill:#e8f5e9
 ```
 
-Each "replayed" commit is effectively a cherry-pick: Git computes the diff introduced by the original commit and applies it to the new base. This means:
+Each "replayed" commit is effectively a cherry-pick: Git computes the diff introduced by the
+original commit and applies it to the new base. This means:
 
 - If a commit's changes cleanly apply to the new base, the rebase succeeds.
 - If there are conflicts, Git pauses and asks you to resolve them before continuing.
@@ -118,7 +127,8 @@ $ git rebase --skip
 
 ## Interactive Rebase
 
-Interactive rebase (`git rebase -i`) is one of Git's most powerful features. It allows you to **rewrite** the commits on your branch: reorder, edit, squash, split, or drop commits.
+Interactive rebase (`git rebase -i`) is one of Git's most powerful features. It allows you to
+**rewrite** the commits on your branch: reorder, edit, squash, split, or drop commits.
 
 ```bash
 # Rebase the last 5 commits interactively
@@ -163,7 +173,8 @@ The default action. The commit is replayed onto the new base without modificatio
 
 #### `reword` — Change the Commit Message
 
-Stops at the commit and opens an editor with the current message for editing. The commit's content (diff) is unchanged.
+Stops at the commit and opens an editor with the current message for editing. The commit's content
+(diff) is unchanged.
 
 #### `edit` — Pause for Amending
 
@@ -189,7 +200,8 @@ $ git rebase --continue
 
 #### `squash` — Combine with Previous Commit
 
-Melds the commit into the previous commit, combining their diffs and prompting for a new combined message:
+Melds the commit into the previous commit, combining their diffs and prompting for a new combined
+message:
 
 ```
 # This is a combination of 2 commits.
@@ -204,13 +216,15 @@ Add login endpoint
 
 :::tip
 
-Use `squash` when you have a series of "WIP" commits that should be combined into a single logical commit before merging. This keeps the history clean and meaningful.
+Use `squash` when you have a series of "WIP" commits that should be combined into a single logical
+commit before merging. This keeps the history clean and meaningful.
 
 :::
 
 #### `fixup` — Squash Without Editing
 
-Like `squash`But discards the commit message of the squashed commit. The combined commit retains only the message of the previous commit. This is faster when you have many small commits to fold in:
+Like `squash`But discards the commit message of the squashed commit. The combined commit retains
+only the message of the previous commit. This is faster when you have many small commits to fold in:
 
 ```
 pick a3f2b1c Add user model
@@ -232,7 +246,8 @@ Removes the commit entirely. Its changes are discarded.
 
 #### `exec` — Run a Shell Command
 
-Runs an arbitrary shell command at that point in the rebase. Useful for automated formatting or test validation:
+Runs an arbitrary shell command at that point in the rebase. Useful for automated formatting or test
+validation:
 
 ```
 pick a3f2b1c Add user model
@@ -243,7 +258,8 @@ exec cargo test
 
 ### Autosquash: A Powerful Workflow
 
-The `--autosquash` flag automatically moves `fixup!` and `squash!` commits to their correct positions in the todo list:
+The `--autosquash` flag automatically moves `fixup!` and `squash!` commits to their correct
+positions in the todo list:
 
 ```bash
 # Commit a fix with a fixup! prefix
@@ -282,27 +298,28 @@ This is one of the most contentious debates in the Git community. Here is a bala
 
 ### Arguments for Rebase
 
-| Argument | Explanation |
+| Argument             | Explanation                                                      |
 | -------------------- | ---------------------------------------------------------------- |
-| **Clean history** | Linear history is easier to read with `git log` and `git bisect` |
-| **No merge commits** | Eliminates noisy "Merge branch X into Y" commits |
-| **Easier bisect** | `git bisect` works more reliably on linear history |
-| **Smaller diff** | Pull requests contain only feature changes, not merge noise |
+| **Clean history**    | Linear history is easier to read with `git log` and `git bisect` |
+| **No merge commits** | Eliminates noisy "Merge branch X into Y" commits                 |
+| **Easier bisect**    | `git bisect` works more reliably on linear history               |
+| **Smaller diff**     | Pull requests contain only feature changes, not merge noise      |
 
 ### Arguments for Merge
 
-| Argument | Explanation |
+| Argument              | Explanation                                                          |
 | --------------------- | -------------------------------------------------------------------- |
-| **Preserves truth** | The history reflects what actually happened, not a sanitized version |
-| **Safe** | Merge never rewrites history; rebase does |
-| **Preserves context** | Merge commits show when and why features were integrated |
-| **Easier to revert** | `git revert -m 1 <merge>` undoes an entire feature in one operation |
+| **Preserves truth**   | The history reflects what actually happened, not a sanitized version |
+| **Safe**              | Merge never rewrites history; rebase does                            |
+| **Preserves context** | Merge commits show when and why features were integrated             |
+| **Easier to revert**  | `git revert -m 1 <merge>` undoes an entire feature in one operation  |
 
 ### The Golden Rule of Rebasing
 
 > **Never rebase commits that have been pushed to a public branch.**
 
-Rebasing rewrites commit hashes. If other developers have based work on the original commits, they will encounter diverged histories, duplicated commits, and confusing conflicts.
+Rebasing rewrites commit hashes. If other developers have based work on the original commits, they
+will encounter diverged histories, duplicated commits, and confusing conflicts.
 
 ```mermaid
 flowchart TD
@@ -320,8 +337,10 @@ flowchart TD
 
 For most teams, a hybrid approach works best:
 
-- **Feature branches**: Rebase onto `main` frequently to stay up-to-date. Before merging, do a final rebase.
-- **Merging into `main`**: Use `git merge --no-ff` to create a merge commit (preserves branch topology).
+- **Feature branches**: Rebase onto `main` frequently to stay up-to-date. Before merging, do a final
+  rebase.
+- **Merging into `main`**: Use `git merge --no-ff` to create a merge commit (preserves branch
+  topology).
 - **Shared branches** (`develop``staging`): Never rebase. Always merge.
 - **Personal branches**: Rebase freely — no one else is affected.
 
@@ -341,7 +360,8 @@ $ git push origin feature-auth        # Push to remote
 
 ### 1. Rebase Conflicts in Long Chains
 
-When rebasing a long chain of commits, conflicts can compound — resolving a conflict in an early commit may cause conflicts in later commits that previously applied cleanly.
+When rebasing a long chain of commits, conflicts can compound — resolving a conflict in an early
+commit may cause conflicts in later commits that previously applied cleanly.
 
 **Mitigation**: Rebase frequently (small, incremental rebases) rather than rebasing large chains.
 
@@ -353,17 +373,22 @@ pick a3f2b1c Important feature
 squash b7e9d4f Bug fix that MUST be separate
 ```
 
-**Mitigation**: Review the todo list carefully before proceeding. Use `git rebase --edit-todo` to modify the list during a paused rebase.
+**Mitigation**: Review the todo list carefully before proceeding. Use `git rebase --edit-todo` to
+modify the list during a paused rebase.
 
 ### 3. Losing Commits During Rebase
 
-If you `git rebase --abort` after a conflict, your original commits are preserved. If you `git rebase --continue` with a conflict still unresolved, Git will skip that commit's changes.
+If you `git rebase --abort` after a conflict, your original commits are preserved. If you
+`git rebase --continue` with a conflict still unresolved, Git will skip that commit's changes.
 
-**Mitigation**: Always check `git status` after resolving conflicts. Ensure all files are staged before `--continue`.
+**Mitigation**: Always check `git status` after resolving conflicts. Ensure all files are staged
+before `--continue`.
 
 ### 4. The "Empty Commit" Problem
 
-If a commit's changes are already present in the target branch (e.g., you cherry-picked a commit earlier), rebasing will create an empty commit. Git drops these automatically, but you can control this behavior:
+If a commit's changes are already present in the target branch (e.g., you cherry-picked a commit
+earlier), rebasing will create an empty commit. Git drops these automatically, but you can control
+this behavior:
 
 ```bash
 # Keep empty commits

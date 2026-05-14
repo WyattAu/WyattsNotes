@@ -1,9 +1,11 @@
 ---
 title: Complex Numbers
 tags:
-- maths
+  - maths
 slug: complex-numbers
-description: "Rigorous IB mathematics notes covering Complex Numbers. Includes definitions, derivations, worked examples, and exam-style problems."
+description:
+  'Rigorous IB mathematics notes covering Complex Numbers. Includes definitions, derivations, worked
+  examples, and exam-style problems.'
 ---
 
 ## Cartesian Form
@@ -59,8 +61,7 @@ $$
 \end`\{aligned}`
 $$
 
-Since $\tan \theta$ is undefined at $a = 0$Case piecewise definition can define $\theta$ at
-$a = 0$:
+Since $\tan \theta$ is undefined at $a = 0$Case piecewise definition can define $\theta$ at $a = 0$:
 
 $$
 \begin`\{aligned}`
@@ -75,8 +76,8 @@ $$
 
 ### Polar to Cartesian
 
-Since polar coordinates is already defined by the argument, conversion to cartesian is 
-Evaluating the definition of cartesian coordinate ($\mathrm{cis }\theta$):
+Since polar coordinates is already defined by the argument, conversion to cartesian is Evaluating
+the definition of cartesian coordinate ($\mathrm{cis }\theta$):
 
 $$
 \begin`\{aligned}`
@@ -206,11 +207,9 @@ $$
 
 **Principal argument:** $\arg(z) \in (-\pi, \pi]$
 
-:::tip
-When finding $\arg(z)$Always draw a quick Argand diagram to check which quadrant the point
-Is in. A common mistake is to use the calculator value directly without adjusting for the correct
-Quadrant.
-:::
+:::tip When finding $\arg(z)$Always draw a quick Argand diagram to check which quadrant the point Is
+in. A common mistake is to use the calculator value directly without adjusting for the correct
+Quadrant. :::
 
 ### Geometric Interpretation of Operations
 
@@ -219,7 +218,8 @@ Quadrant.
 - **Negation ($-z$):** reflection in the origin
 - **Multiplication by $i$:** rotation $90^\circ$ anticlockwise
 
-<DesmosGraph title="Complex Plane (Argand Diagram)" expressions={["\left(a,b\right)"]} width={800} height={500} />
+<DesmosGraph title="Complex Plane (Argand Diagram)" expressions={["\left(a,b\right)"]} width={800}
+height={500} />
 
 Drag points to see how addition, conjugation, and multiplication affect the position on the Argand
 Diagram.
@@ -298,7 +298,7 @@ Z = 16^{1/4} \cdot e^{i(\pi + 2k\pi)/4} = 2 \cdot e^{i(2k+1)\pi/4}, \quad k = 0,
 $$
 
 - $k = 0$:
- $z_0 = 2e^{i\pi/4} = 2\left(\frac{\sqrt{2}}{2} + i\frac{\sqrt{2}}{2}\right) = \sqrt{2} + i\sqrt{2}$
+  $z_0 = 2e^{i\pi/4} = 2\left(\frac{\sqrt{2}}{2} + i\frac{\sqrt{2}}{2}\right) = \sqrt{2} + i\sqrt{2}$
 - $k = 1$: $z_1 = 2e^{i3\pi/4} = -\sqrt{2} + i\sqrt{2}$
 - $k = 2$: $z_2 = 2e^{i5\pi/4} = -\sqrt{2} - i\sqrt{2}$
 - $k = 3$: $z_3 = 2e^{i7\pi/4} = \sqrt{2} - i\sqrt{2}$
@@ -339,16 +339,14 @@ $$
 
 ## Summary of Forms
 
-| Form | Expression | Best For |
+| Form      | Expression                        | Best For                  |
 | --------- | --------------------------------- | ------------------------- |
-| Cartesian | $z = a + bi$ | Addition, subtraction |
-| Polar | $z = r(\cos\theta + i\sin\theta)$ | Multiplication, division |
-| Euler | $z = re^{i\theta}$ | Powers, roots (De Moivre) |
+| Cartesian | $z = a + bi$                      | Addition, subtraction     |
+| Polar     | $z = r(\cos\theta + i\sin\theta)$ | Multiplication, division  |
+| Euler     | $z = re^{i\theta}$                | Powers, roots (De Moivre) |
 
-:::tip
-Converting between forms is essential. A good strategy: always convert to polar/Euler form
-Before raising to a power or finding roots, and convert back to Cartesian for the final answer.
-:::
+:::tip Converting between forms is essential. A good strategy: always convert to polar/Euler form
+Before raising to a power or finding roots, and convert back to Cartesian for the final answer. :::
 
 ## Modulus-Argument Form Operations
 
@@ -609,8 +607,7 @@ $$
 
 ### Proof by Mathematical Induction
 
-**Base case ($n = 1$):** , $\left(re^{i\theta}\right)^1 = r^1 e^{i \cdot 1 \cdot \theta}$.
-Verified.
+**Base case ($n = 1$):** , $\left(re^{i\theta}\right)^1 = r^1 e^{i \cdot 1 \cdot \theta}$. Verified.
 
 **Inductive hypothesis:** Assume the result holds for $n = k$I.e.
 
@@ -629,7 +626,8 @@ $$
 \end`\{aligned}`
 $$
 
-So the result holds for $n = k + 1$. By induction, the theorem is true for all $n \in \mathbb{'\{'}N{'\}'}$.
+So the result holds for $n = k + 1$. By induction, the theorem is true for all
+$n \in \mathbb{'\{'}N{'\}'}$.
 
 **Negative integers:** For $n = -m$ where $m \in \mathbb{'\{'}N{'\}'}$:
 
@@ -692,8 +690,8 @@ The five roots are $0,\; \pm\frac{1}{2} \pm i\frac{\sqrt{3}}{2}$.
 
 ### Worked Example: Geometric Problem on the Argand Diagram
 
-**Problem:** The points $A$$B$$C$ on the Argand diagram represent $z_A = 1 + i$$z_B = 5 + 3i$
-And $z_C = 3 + 7i$. Show that triangle $ABC$ is isosceles and find its area.
+**Problem:** The points $A$$B$$C$ on the Argand diagram represent $z_A = 1 + i$$z_B = 5 + 3i$ And
+$z_C = 3 + 7i$. Show that triangle $ABC$ is isosceles and find its area.
 
 **Solution:**
 
@@ -954,7 +952,8 @@ The roots are $1 + 2i$ and $1 - 2i$Each with multiplicity 2.
 <details>
 <summary>Problem 7: Proof Using Modulus Properties</summary>
 
-Prove that $|z_1 + z_2|^2 + |z_1 - z_2|^2 = 2|z_1|^2 + 2|z_2|^2$ for all $z_1, z_2 \in \mathbb{'\{'}C{'\}'}$.
+Prove that $|z_1 + z_2|^2 + |z_1 - z_2|^2 = 2|z_1|^2 + 2|z_2|^2$ for all
+$z_1, z_2 \in \mathbb{'\{'}C{'\}'}$.
 
 **Solution:** Let $z_1 = a + bi$ and $z_2 = c + di$.
 
@@ -1013,8 +1012,8 @@ $$
 <details>
 <summary>Problem 9: Area of a Triangle on the Argand Diagram</summary>
 
-The vertices of a triangle on the Argand diagram are $z_1 = 0$$z_2 = 4 + 2i$And $z_3 = 1 + 5i$.
-Find the area of the triangle.
+The vertices of a triangle on the Argand diagram are $z_1 = 0$$z_2 = 4 + 2i$And $z_3 = 1 + 5i$. Find
+the area of the triangle.
 
 **Solution:** Using the determinant formula for the area of a triangle with vertices at complex
 Numbers:
@@ -1067,11 +1066,12 @@ The solution set is $\{z = x + i(x - 1) : x \in \mathbb{'\{'}R{'\}'},\; z \neq 1
 
 ---
 
-:::tip
-Diagnostic Test
-Ready to test your understanding of **Complex Numbers**? The [diagnostic test](/docs/ib/maths/diagnostics/diag-complex-numbers) contains the hardest questions within the IB specification for this topic, each with a full worked solution.
+:::tip Diagnostic Test Ready to test your understanding of **Complex Numbers**? The
+[diagnostic test](/docs/ib/maths/diagnostics/diag-complex-numbers) contains the hardest questions
+within the IB specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Complex Numbers with other IB mathematics topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Complex
+Numbers with other IB mathematics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/ib/maths/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/ib/maths/diagnostics/diagnostic-guide) for instructions on self-marking
+and building a personal test matrix. :::

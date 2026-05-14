@@ -1,6 +1,8 @@
 ---
 title: Network Proxy
-description: "Network Proxy — Using Nginx Proxy Manager; Perquisite including key definitions, derivations, and problem-solving techniques."
+description:
+  'Network Proxy — Using Nginx Proxy Manager; Perquisite including key definitions, derivations, and
+  problem-solving techniques.'
 date: 2025-07-25T20:52:26.185Z
 tags:
   - truenas
@@ -8,13 +10,14 @@ categories:
   - truenas
 slug: network-proxy
 ---
+
 ## Using Nginx Proxy Manager
 
 ### Perquisite
 
 - Obtain a DDNS domain (cloudflare, duckDNS, etc)
 - Dockge or portainer (prefered to install with custom docker compose as the app image from catalog
- cause the Nginx Proxy Manager SSL certificate request to malfunction)
+  cause the Nginx Proxy Manager SSL certificate request to malfunction)
 - ISP port 443 and 80 being opened
 - Docker compose file, similar to the following:
 

@@ -1,6 +1,8 @@
 ---
 title: Oscillations
-description: "A-Level Physics notes on Oscillations: 1. Simple Harmonic Motion — Definition; 2. The SHM Equation and Its Solutions; Derived Quantities."
+description:
+  'A-Level Physics notes on Oscillations: 1. Simple Harmonic Motion — Definition; 2. The SHM
+  Equation and Its Solutions; Derived Quantities.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Physics
@@ -9,11 +11,10 @@ categories:
   - Physics
 slug: oscillations
 ---
+
 ## Oscillations
 
-:::info
-Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2
-:::
+:::info Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2 :::
 
 <PhetSimulation simulationId="masses-and-springs" title="Masses and Springs" />
 
@@ -110,8 +111,8 @@ $$E_{\mathrm{total}} = E_k + E_p = \frac{1}{2}m\omega^2(A^2 - x^2) + \frac{1}{2}
 
 $$\boxed{E_{\mathrm{total}} = \frac{1}{2}m\omega^2 A^2 = \mathrm{constant}}$$
 
-**Proof that total energy is constant.** The total energy depends only on $m$$\omega$And $A$ —
-None of which change during the motion. Therefore $E_{\mathrm{total}}$ is conserved. $\square$
+**Proof that total energy is constant.** The total energy depends only on $m$$\omega$And $A$ — None
+of which change during the motion. Therefore $E_{\mathrm{total}}$ is conserved. $\square$
 
 **Intuition.** Energy oscillates between kinetic and potential forms. At the equilibrium ($x = 0$),
 All energy is kinetic. At the turning points ($x = \pm A$), all energy is potential. The total is
@@ -157,10 +158,8 @@ This is SHM in the variable $\theta$ with angular frequency $\omega = \sqrt{g/L}
 
 $$\boxed{T = 2\pi\sqrt◆LB◆\frac{L}{g}◆RB◆}$$
 
-:::warning
-Common Pitfall The period of a simple pendulum is **independent of mass** and
-**independent of amplitude** (for small oscillations). These are classic exam questions.
-:::
+:::warning Common Pitfall The period of a simple pendulum is **independent of mass** and
+**independent of amplitude** (for small oscillations). These are classic exam questions. :::
 
 ## 6. Phase Relationships
 
@@ -168,28 +167,28 @@ In SHM, displacement, velocity, and acceleration are out of phase:
 
 - **Displacement:** $x = A\cos(\omega t + \phi)$
 - **Velocity:** $v = -A\omega\sin(\omega t + \phi) = A\omega\cos(\omega t + \phi + \pi/2)$ — leads
- displacement by $\pi/2$
+  displacement by $\pi/2$
 - **Acceleration:** $a = -A\omega^2\cos(\omega t + \phi) = A\omega^2\cos(\omega t + \phi + \pi)$ —
- leads displacement by $\pi$
+  leads displacement by $\pi$
 
 **Key phase differences:**
 
 - Velocity leads displacement by $90^\circ$ ($\pi/2$)
 - Acceleration leads displacement by $180^\circ$ ($\pi$) — acceleration is always antiphase to
- displacement
+  displacement
 
 ## 7. Damping
 
-**Definition.** **Damping** is the dissipation of energy from an oscillating system, due to
-Friction or viscous forces.
+**Definition.** **Damping** is the dissipation of energy from an oscillating system, due to Friction
+or viscous forces.
 
 ### Types of Damping
 
-| Type | Description | Displacement-Time Graph |
+| Type                    | Description                                                     | Displacement-Time Graph         |
 | ----------------------- | --------------------------------------------------------------- | ------------------------------- |
-| **Light (underdamped)** | Oscillates with gradually decreasing amplitude | Decaying sinusoid |
-| **Critical** | Returns to equilibrium in the shortest time without oscillating | Exponential decay, no overshoot |
-| **Heavy (overdamped)** | Returns to equilibrium very slowly without oscillating | Slow exponential decay |
+| **Light (underdamped)** | Oscillates with gradually decreasing amplitude                  | Decaying sinusoid               |
+| **Critical**            | Returns to equilibrium in the shortest time without oscillating | Exponential decay, no overshoot |
+| **Heavy (overdamped)**  | Returns to equilibrium very slowly without oscillating          | Slow exponential decay          |
 
 **Critical damping** is the boundary between oscillatory and non-oscillatory decay. It occurs when
 The damping coefficient $b$ satisfies $b = 2\sqrt{km}$ (for a mass-spring system). Car suspension
@@ -211,11 +210,9 @@ Maximised.
 (aeroelastic resonance), tuning a radio (LC circuit resonance), MRI machines (nuclear magnetic
 Resonance).
 
-:::tip
-Exam Technique In exam questions about damping and resonance, remember: more damping $\to$
+:::tip Exam Technique In exam questions about damping and resonance, remember: more damping $\to$
 Lower maximum amplitude $\to$ broader resonance curve. Less damping $\to$ higher peak $\to$ narrower
-Curve.
-:::
+Curve. :::
 
 ## Problem Set
 
@@ -314,9 +311,9 @@ Sketch graphs showing how displacement, velocity, and acceleration vary with tim
 
 - Displacement: $x = A\cos(\omega t)$ — starts at $A$Goes to $-A$Returns.
 - Velocity: $v = -A\omega\sin(\omega t)$ — starts at $0$Goes to $-A\omega$Returns. Leads $x$ by
- $90^\circ$.
-- Acceleration: $a = -A\omega^2\cos(\omega t)$ — starts at $-A\omega^2$Goes to $+A\omega^2$
- returns. Antiphase to $x$.
+  $90^\circ$.
+- Acceleration: $a = -A\omega^2\cos(\omega t)$ — starts at $-A\omega^2$Goes to $+A\omega^2$ returns.
+  Antiphase to $x$.
 
 <b>If you get this wrong, revise:</b> [Phase Relationships](#6-phase-relationships)
 
@@ -403,11 +400,8 @@ $T = 0.5$ s). KE varies as $\cos(8\pi t)$Giving a frequency of $4$ Hz — exactl
 Displacement cycle, KE reaches its maximum twice: once as the mass passes through equilibrium moving
 Left, and once moving right.
 
-:::tip
-Tip
-At twice the displacement frequency, exactly out of phase, oscillating between $0$ and
-$E_{\mathrm{total}}$. Their sum is a horizontal line at $E_{\mathrm{total}}$.
-:::
+:::tip Tip At twice the displacement frequency, exactly out of phase, oscillating between $0$ and
+$E_{\mathrm{total}}$. Their sum is a horizontal line at $E_{\mathrm{total}}$. :::
 
 ## 10. Damping — Time Constant and Displacement-Time Graphs
 
@@ -430,8 +424,8 @@ For light damping ($b \lt 2\sqrt{km}$), the solution is:
 
 $$\boxed{x(t) = A_0 \, e^{-bt/(2m)} \cos(\omega' t + \phi)}$$
 
-Where $\omega' = \sqrt◆LB◆\omega_0^2 - b^2/(4m^2)◆RB◆$ is the damped angular frequency, slightly less than
-The natural frequency $\omega_0 = \sqrt{k/m}$.
+Where $\omega' = \sqrt◆LB◆\omega_0^2 - b^2/(4m^2)◆RB◆$ is the damped angular frequency, slightly
+less than The natural frequency $\omega_0 = \sqrt{k/m}$.
 
 The amplitude decays inside the exponential envelope:
 
@@ -448,11 +442,11 @@ Larger $m$ means more inertia (longer $\tau$).
 
 ### Comparison of Damping Regimes
 
-| Damping | Condition | Behaviour |
+| Damping             | Condition          | Behaviour                                                        |
 | ------------------- | ------------------ | ---------------------------------------------------------------- |
-| Light (underdamped) | $b \lt 2\sqrt{km}$ | Oscillates with exponentially decaying amplitude |
-| Critical | $b = 2\sqrt{km}$ | Fastest return to equilibrium without oscillation |
-| Heavy (overdamped) | $b \gt 2\sqrt{km}$ | No oscillation; returns to equilibrium more slowly than critical |
+| Light (underdamped) | $b \lt 2\sqrt{km}$ | Oscillates with exponentially decaying amplitude                 |
+| Critical            | $b = 2\sqrt{km}$   | Fastest return to equilibrium without oscillation                |
+| Heavy (overdamped)  | $b \gt 2\sqrt{km}$ | No oscillation; returns to equilibrium more slowly than critical |
 
 **Displacement-time description.** For light damping, the graph shows a sinusoid shrinking inside an
 Exponential envelope $A_0 e^{-t/\tau}$. The system crosses equilibrium many times. For critical
@@ -469,12 +463,9 @@ $$E(t) = E_0 \, e^{-t/\tau_E}$$
 Where $\tau_E = \tau/2 = m/b$. Energy is lost twice as fast as the amplitude decays, since
 $E \propto A^2$.
 
-:::warning
-Warning
-Fastest overall. A lightly damped system passes through equilibrium sooner but overshoots. Heavy
-Damping is slower than critical — adding more damping beyond the critical value makes the system
-**slower**, not faster.
-:::
+:::warning Warning Fastest overall. A lightly damped system passes through equilibrium sooner but
+overshoots. Heavy Damping is slower than critical — adding more damping beyond the critical value
+makes the system **slower**, not faster. :::
 
 **Application.** Car shock absorbers are designed to be critically damped: after hitting a bump, the
 Car body returns to equilibrium as quickly as possible without bouncing up and down.
@@ -507,12 +498,11 @@ $$A_{\max} = \frac◆LB◆F_0◆RB◆◆LB◆b\omega_0◆RB◆$$
 
 **Key features of the resonance curve:**
 
-- The peak amplitude occurs at $f_d \approx f_0$Shifting slightly below $f_0$ as damping
- increases.
+- The peak amplitude occurs at $f_d \approx f_0$Shifting slightly below $f_0$ as damping increases.
 - Light damping produces a sharp, tall peak (high $Q$-factor).
 - Heavy damping produces a broad, low peak.
 - At resonance, the driving force is in phase with velocity ($90^\circ$ ahead of displacement),
- maximising power transfer: $P = F \cdot v$.
+  maximising power transfer: $P = F \cdot v$.
 
 ### Applications of Resonance
 
@@ -531,12 +521,9 @@ Molecules, efficiently transferring energy and heating food.
 **MRI scanners:** Protons in body tissue resonate at specific radio frequencies in a strong magnetic
 Field, enabling detailed internal imaging without ionising radiation.
 
-:::tip
-Tip
-Slightly below $f_0$. Less damping $\to$ higher, sharper peak closer to $f_0$. When sketching
-Resonance curves for different damping levels, always label the natural frequency $f_0$ and show the
-Amplitude axis .
-:::
+:::tip Tip Slightly below $f_0$. Less damping $\to$ higher, sharper peak closer to $f_0$. When
+sketching Resonance curves for different damping levels, always label the natural frequency $f_0$
+and show the Amplitude axis . :::
 
 ## 12. Phasor Diagrams for SHM
 
@@ -551,20 +538,20 @@ $\omega$.
 Three phasors originate from the same point, all rotating at $\omega$:
 
 - **Displacement phasor** (length $A$): makes angle $\theta = \omega t + \phi$ with the horizontal.
- Its horizontal projection gives $x = A\cos(\omega t + \phi)$.
+  Its horizontal projection gives $x = A\cos(\omega t + \phi)$.
 - **Velocity phasor** (length $A\omega$): leads the displacement phasor by $90^\circ$
- (perpendicular, in the direction of rotation). Its horizontal projection gives
- $v = -A\omega\sin(\omega t + \phi)$.
+  (perpendicular, in the direction of rotation). Its horizontal projection gives
+  $v = -A\omega\sin(\omega t + \phi)$.
 - **Acceleration phasor** (length $A\omega^2$): leads the displacement phasor by $180^\circ$
- (antiparallel). Its horizontal projection gives $a = -A\omega^2\cos(\omega t + \phi)$.
+  (antiparallel). Its horizontal projection gives $a = -A\omega^2\cos(\omega t + \phi)$.
 
 ### Phase Relationships
 
-| Quantity | Phase relative to $x$ | Relationship |
+| Quantity         | Phase relative to $x$ | Relationship                       |
 | ---------------- | --------------------- | ---------------------------------- |
-| Displacement $x$ | $0^\circ$ | Reference |
-| Velocity $v$ | $+90^\circ$ | $v$ leads $x$ by $\pi/2$ |
-| Acceleration $a$ | $+180^\circ$ | $a$ leads $x$ by $\pi$ (antiphase) |
+| Displacement $x$ | $0^\circ$             | Reference                          |
+| Velocity $v$     | $+90^\circ$           | $v$ leads $x$ by $\pi/2$           |
+| Acceleration $a$ | $+180^\circ$          | $a$ leads $x$ by $\pi$ (antiphase) |
 
 **Equivalently:** displacement lags velocity by $90^\circ$And displacement lags acceleration by
 $180^\circ$.
@@ -590,9 +577,7 @@ With included angle $\delta$. $\square$
 The resultant phase is given by
 $\tan\phi_{\mathrm{res}} = \frac◆LB◆A_2 \sin\delta◆RB◆◆LB◆A_1 + A_2 \cos\delta◆RB◆$.
 
-:::info
-Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2
-:::
+:::info Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2 :::
 
 <details>
 <summary>Problem 11</summary>
@@ -682,28 +667,37 @@ $x = 0$), the velocity phasor is horizontal, giving a maximum projection of $\pm
 
 </details>
 
-
 ---
 
-:::tip
-Diagnostic Test
-Ready to test your understanding of **Oscillations**? The [diagnostic test](/docs/alevel/physics/diagnostics/diag-oscillations) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
+:::tip Diagnostic Test Ready to test your understanding of **Oscillations**? The
+[diagnostic test](/docs/alevel/physics/diagnostics/diag-oscillations) contains the hardest questions
+within the A-Level specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Oscillations with other physics topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine
+Oscillations with other physics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on
+self-marking and building a personal test matrix. :::
 
-:::danger
-Common Pitfalls
+:::danger Common Pitfalls
 
-- **Confusing angular frequency omega with frequency f:** Angular frequency omega = 2 * pi * f = 2 * pi / T. They are different quantities with different units (rad/s vs Hz). Substituting f where omega is needed (or vice versa) in equations like x = A cos(omega * t) will give completely wrong answers.
+- **Confusing angular frequency omega with frequency f:** Angular frequency omega = 2 _ pi _ f = 2 _
+  pi / T. They are different quantities with different units (rad/s vs Hz). Substituting f where
+  omega is needed (or vice versa) in equations like x = A cos(omega _ t) will give completely wrong
+  answers.
 
-- **Assuming all oscillations are simple harmonic:** Simple harmonic motion requires the restoring force to be proportional to displacement (F = -kx). A pendulum only approximates SHM for small angles (less than about 10 degrees). A bouncing ball or a swing with large amplitude is NOT SHM.
+- **Assuming all oscillations are simple harmonic:** Simple harmonic motion requires the restoring
+  force to be proportional to displacement (F = -kx). A pendulum only approximates SHM for small
+  angles (less than about 10 degrees). A bouncing ball or a swing with large amplitude is NOT SHM.
 
-- **Forgetting that the maximum velocity occurs at equilibrium:** In SHM, the velocity is maximum at the equilibrium position (x = 0) and zero at the maximum displacement (x = A). The acceleration is the opposite: zero at equilibrium and maximum at the extremes. Students often confuse these two.
+- **Forgetting that the maximum velocity occurs at equilibrium:** In SHM, the velocity is maximum at
+  the equilibrium position (x = 0) and zero at the maximum displacement (x = A). The acceleration is
+  the opposite: zero at equilibrium and maximum at the extremes. Students often confuse these two.
 
-- **Misidentifying nodes and antinodes in stationary waves:** Nodes are points of ZERO amplitude (always at rest). Antinodes are points of MAXIMUM amplitude. The distance between adjacent nodes is always half the wavelength (lambda/2). The distance between a node and the nearest antinode is lambda/4.
+- **Misidentifying nodes and antinodes in stationary waves:** Nodes are points of ZERO amplitude
+  (always at rest). Antinodes are points of MAXIMUM amplitude. The distance between adjacent nodes
+  is always half the wavelength (lambda/2). The distance between a node and the nearest antinode is
+  lambda/4.
 
 :::
 

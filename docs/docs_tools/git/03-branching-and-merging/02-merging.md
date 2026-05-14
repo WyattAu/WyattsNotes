@@ -1,6 +1,8 @@
 ---
 title: Merging
-description: "Merging — The Merge Operation; What `git merge` Actually Does; The Three-Way Merge Algorithm; Finding the Common Ancestor."
+description:
+  'Merging — The Merge Operation; What `git merge` Actually Does; The Three-Way Merge Algorithm;
+  Finding the Common Ancestor.'
 date: 2025-06-03T03:00:00.000Z
 tags:
   - git
@@ -9,6 +11,7 @@ categories:
   - CS
 slug: merging
 ---
+
 ## The Merge Operation
 
 Merging is the process of combining the changes from one branch into another. Git's merge algorithm
@@ -17,8 +20,8 @@ Branches have modified different files or different parts of the same file.
 
 ### What `git merge` Actually Does
 
-A merge takes two (or more) commit pointers — branch tips — and produces a new **merge
-Commit** that has both as parents:
+A merge takes two (or more) commit pointers — branch tips — and produces a new **merge Commit** that
+has both as parents:
 
 ```bash
 $ git switch main
@@ -67,12 +70,12 @@ flowchart TD
 
 The algorithm works **file by file, hunk by hunk**:
 
-| Base | Ours | Theirs | Result | Explanation |
+| Base | Ours | Theirs | Result       | Explanation                                           |
 | ---- | ---- | ------ | ------------ | ----------------------------------------------------- |
-| `x` | `x` | `x` | `x` | No change — keep as-is |
-| `x` | `y` | `x` | `y` | Only we changed — take ours |
-| `x` | `x` | `y` | `y` | Only they changed — take theirs |
-| `x` | `y` | `z` | **Conflict** | Both changed differently — manual resolution required |
+| `x`  | `x`  | `x`    | `x`          | No change — keep as-is                                |
+| `x`  | `y`  | `x`    | `y`          | Only we changed — take ours                           |
+| `x`  | `x`  | `y`    | `y`          | Only they changed — take theirs                       |
+| `x`  | `y`  | `z`    | **Conflict** | Both changed differently — manual resolution required |
 
 The critical case is the last row: when both branches modify the same region of the same file. This
 Is a **merge conflict**.
@@ -106,8 +109,8 @@ Performs the three-way merge against it.
 ## Fast-Forward Merges
 
 When the current branch has no new commits since the branch point (i.e., the current branch is an
-Ancestor of the branch being merged), Git can perform a **fast-forward** merge. This moves
-The branch pointer forward — no merge commit is created.
+Ancestor of the branch being merged), Git can perform a **fast-forward** merge. This moves The
+branch pointer forward — no merge commit is created.
 
 ```mermaid
 gitGraph
@@ -150,7 +153,7 @@ gitGraph
 ```
 
 This is common in release workflows where the merge commit serves as a "release marker" that can be
- identified in the history.
+identified in the history.
 
 :::tip
 
@@ -164,14 +167,14 @@ It easy to see when a feature was merged, revert the entire feature with one com
 
 Git supports several merge strategies, selectable with `-s`:
 
-| Strategy | Description | When to Use |
-| ------------------------------ | ------------------------------------------------------------------------ | ---------------------------------------------------- |
-| `recursive` (default) | Three-way merge with recursive base resolution | General purpose, handles criss-cross merges |
-| `ort` (new default, Git 2.34+) | Modern rewrite of recursive with better conflict markers and performance | General purpose (replacing recursive) |
-| `resolve` | Simple three-way merge with one base | Simple histories without criss-cross merges |
-| `octopus` | Merge more than two branches at once | Very rare; most merge tools handle only two |
-| `ours` | Discard all changes from the other branch, keep ours | Rare; `git merge -s ours` is an anti-pattern |
-| `subtree` | Adjust subtree merge paths | When managing subtree merges |
+| Strategy                       | Description                                                              | When to Use                                  |
+| ------------------------------ | ------------------------------------------------------------------------ | -------------------------------------------- |
+| `recursive` (default)          | Three-way merge with recursive base resolution                           | General purpose, handles criss-cross merges  |
+| `ort` (new default, Git 2.34+) | Modern rewrite of recursive with better conflict markers and performance | General purpose (replacing recursive)        |
+| `resolve`                      | Simple three-way merge with one base                                     | Simple histories without criss-cross merges  |
+| `octopus`                      | Merge more than two branches at once                                     | Very rare; most merge tools handle only two  |
+| `ours`                         | Discard all changes from the other branch, keep ours                     | Rare; `git merge -s ours` is an anti-pattern |
+| `subtree`                      | Adjust subtree merge paths                                               | When managing subtree merges                 |
 
 ### The `ort` Strategy (Git 2.34+)
 
@@ -180,7 +183,7 @@ Strategy. It produces identical merge results but with significant improvements:
 
 - **Performance**: $2\times$–$10\times$ faster on large repositories (Chromium, Android).
 - **Conflict markers**: Clearer conflict markers with section headers (`<<<<<<< HEAD``=======`
- `>>>>>>> branch`).
+  `>>>>>>> branch`).
 - **Rename detection**: More accurate rename detection.
 - **Memory usage**: Lower peak memory consumption.
 
@@ -211,11 +214,11 @@ function authenticate(user) {
 
 The markers are:
 
-| Marker | Meaning |
+| Marker                 | Meaning                                          |
 | ---------------------- | ------------------------------------------------ |
-| `<<<<<<< HEAD` | Start of the conflict. Our version begins here. |
-| `=======` | Separator between our version and their version. |
-| `>>>>>>> feature-auth` | End of the conflict. Their version ends here. |
+| `<<<<<<< HEAD`         | Start of the conflict. Our version begins here.  |
+| `=======`              | Separator between our version and their version. |
+| `>>>>>>> feature-auth` | End of the conflict. Their version ends here.    |
 
 ### Resolving Conflicts
 
@@ -262,13 +265,13 @@ $ git merge --abort
 
 ### Conflict Scenarios and Solutions
 
-| Scenario | Recommended Resolution |
+| Scenario                                                   | Recommended Resolution                                            |
 | ---------------------------------------------------------- | ----------------------------------------------------------------- |
-| One side added a feature, other side refactored | Manually integrate the feature into the refactored code |
-| Both sides fixed the same bug differently | Choose the better fix, verify with tests |
-| One side deleted a file, other side modified it | Discuss with the team: delete or keep with modifications |
-| Rename conflicts (file renamed differently on each branch) | Manually resolve: pick one name, apply changes from both sides |
-| Large-scale conflicts (hundreds of files) | Consider rebasing instead, or `git merge --abort` and re-evaluate |
+| One side added a feature, other side refactored            | Manually integrate the feature into the refactored code           |
+| Both sides fixed the same bug differently                  | Choose the better fix, verify with tests                          |
+| One side deleted a file, other side modified it            | Discuss with the team: delete or keep with modifications          |
+| Rename conflicts (file renamed differently on each branch) | Manually resolve: pick one name, apply changes from both sides    |
+| Large-scale conflicts (hundreds of files)                  | Consider rebasing instead, or `git merge --abort` and re-evaluate |
 
 :::tip
 

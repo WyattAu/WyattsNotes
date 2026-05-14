@@ -1,6 +1,8 @@
 ---
 title: Chi-Squared Tests
-description: "A-Level Further Maths notes on Chi-Squared Tests: Board Coverage; 1. The Chi-Squared Distribution; 1.1 Definition; 1.2 Properties."
+description:
+  'A-Level Further Maths notes on Chi-Squared Tests: Board Coverage; 1. The Chi-Squared
+  Distribution; 1.1 Definition; 1.2 Properties.'
 date: 2026-04-02T00:00:00.000Z
 tags:
   - FurtherMaths
@@ -10,6 +12,7 @@ categories:
 slug: chi-squared-tests
 sidebar_position: 3
 ---
+
 ## Chi-Squared Tests
 
 The chi-squared test is a non-parametric statistical test used to determine whether observed data
@@ -18,12 +21,12 @@ Deviates significantly from expected values. It has two main applications: testi
 
 ### Board Coverage
 
-| Board | Paper | Notes |
+| Board      | Paper   | Notes                                                  |
 | ---------- | ------- | ------------------------------------------------------ |
-| AQA | Paper 2 | Goodness of fit and contingency tables |
-| Edexcel | S3 | Goodness of fit and test for independence |
-| OCR (A) | Paper 2 | Both applications covered |
-| CIE (9231) | S2 | Goodness of fit; independence with $2 \times 2$ tables |
+| AQA        | Paper 2 | Goodness of fit and contingency tables                 |
+| Edexcel    | S3      | Goodness of fit and test for independence              |
+| OCR (A)    | Paper 2 | Both applications covered                              |
+| CIE (9231) | S2      | Goodness of fit; independence with $2 \times 2$ tables |
 
 :::info The chi-squared test statistic is always based on observed and expected frequencies, never
 On percentages or proportions. Always check the conditions (expected frequency $\geq 5$) before
@@ -49,7 +52,7 @@ Follows a **chi-squared distribution** with $k$ degrees of freedom, written $\ch
 - $\mathrm{Var}(\chi^2_k) = 2k$
 - As $k \to \infty$The distribution approaches a normal distribution $N(k, 2k)$
 - The distribution is additive: if $X \sim \chi^2_a$ and $Y \sim \chi^2_b$ are independent, then
- $X + Y \sim \chi^2_{a+b}$
+  $X + Y \sim \chi^2_{a+b}$
 
 ### 1.3 Critical values
 
@@ -106,9 +109,9 @@ This correction makes the test more conservative (less likely to reject $H_0$).
 
 **Example.** Over 100 days, the number of accidents per day at a factory was recorded:
 
-| Accidents ($r$) | 0 | 1 | 2 | 3 | 4 | $\geq 5$ |
+| Accidents ($r$) | 0   | 1   | 2   | 3   | 4   | $\geq 5$ |
 | --------------- | --- | --- | --- | --- | --- | -------- |
-| Days ($O_r$) | 38 | 32 | 18 | 8 | 3 | 1 |
+| Days ($O_r$)    | 38  | 32  | 18  | 8   | 3   | 1        |
 
 Test at the 5% level whether the data follows a Poisson distribution.
 
@@ -132,10 +135,10 @@ $P(X \geq 5) = 1 - 0.9956 \approx 0.0044 \implies E_5 = 0.44$
 
 **Step 3:** Merge categories so all $E_i \geq 5$. Merge $r \geq 3$:
 
-| $r$ | 0 | 1 | 2 | $\geq 3$ |
+| $r$   | 0     | 1     | 2     | $\geq 3$ |
 | ----- | ----- | ----- | ----- | -------- |
-| $O_r$ | 38 | 32 | 18 | 12 |
-| $E_r$ | 34.99 | 36.74 | 19.29 | 8.98 |
+| $O_r$ | 38    | 32    | 18    | 12       |
+| $E_r$ | 34.99 | 36.74 | 19.29 | 8.98     |
 
 **Step 4:** Calculate the test statistic:
 
@@ -185,12 +188,12 @@ Where $r$ is the number of rows and $c$ is the number of columns.
 
 **Example.** A survey of 200 people records their age group and preferred news source:
 
-| | TV | Online | Newspaper | Row total |
+|           | TV  | Online | Newspaper | Row total |
 | --------- | --- | ------ | --------- | --------- |
-| Under 30 | 20 | 60 | 10 | 90 |
-| 30 to 50 | 30 | 25 | 15 | 70 |
-| Over 50 | 20 | 5 | 15 | 40 |
-| Col total | 70 | 90 | 40 | 200 |
+| Under 30  | 20  | 60     | 10        | 90        |
+| 30 to 50  | 30  | 25     | 15        | 70        |
+| Over 50   | 20  | 5      | 15        | 40        |
+| Col total | 70  | 90     | 40        | 200       |
 
 Test at the 5% level whether age group and preferred news source are independent.
 
@@ -275,8 +278,7 @@ In a $2 \times 2$ contingency table, the observed frequencies are: Row 1: 30, 20
 <summary>Solution 2</summary>
 Row totals: 50, 50. Column totals: 45, 55. Grand total: 100.
 
-Expected: $E_{11} = 50(45)/100 = 22.5$$E_{12} = 50(55)/100 = 27.5$$E_{21} = 22.5$
-$E_{22} = 27.5$.
+Expected: $E_{11} = 50(45)/100 = 22.5$$E_{12} = 50(55)/100 = 27.5$$E_{21} = 22.5$ $E_{22} = 27.5$.
 
 $\chi^2 = \dfrac{(30-22.5)^2}{22.5} + \dfrac{(20-27.5)^2}{27.5} + \dfrac{(15-22.5)^2}{22.5} + \dfrac{(35-27.5)^2}{27.5}$
 
@@ -302,9 +304,9 @@ Number of observations). This provides no information about the discrepancy betw
 Expected.
 
 Squaring removes the sign, and dividing by $E_i$ standardises the contribution of each category.
-Categories with larger expected frequencies have larger absolute deviations, so dividing
-By $E_i$ gives each category appropriate weight. This leads to a test statistic whose distribution
-Under $H_0$ is approximately $\chi^2$.
+Categories with larger expected frequencies have larger absolute deviations, so dividing By $E_i$
+gives each category appropriate weight. This leads to a test statistic whose distribution Under
+$H_0$ is approximately $\chi^2$.
 
 **If you get this wrong, revise:** [Test statistic](#22-test-statistic) — Section 2.2.
 
@@ -433,11 +435,11 @@ State three conditions that must be satisfied before carrying out a chi-squared 
 1. **Expected frequencies $\geq 5$:** Violating this makes the $\chi^2$ approximation to the true distribution inaccurate, increasing the risk of Type I errors. Remedy: merge adjacent categories.
 
 2. **Independence of observations:** Violating this means the test assumes a multinomial model that
- does not apply, invalidating the result. Remedy: ensure the sampling method produces independent
- observations.
+   does not apply, invalidating the result. Remedy: ensure the sampling method produces independent
+   observations.
 
 3. **Sufficiently large sample:** With very small total samples, even large relative discrepancies
- can produce non-significant results. The test has low power. Remedy: increase sample size.
+   can produce non-significant results. The test has low power. Remedy: increase sample size.
 
 **If you get this wrong, revise:** [Conditions](#24-conditions) — Section 2.4.
 
@@ -480,8 +482,8 @@ This reduces the test statistic, making it harder to reject $H_0$.
 ### 5.2 When to apply Yates' correction
 
 - Apply it to $2 \times 2$ contingency tables
-- It is most important when the total sample size is small ( $n \lt{} 40$) or when any
- expected frequency is below 10
+- It is most important when the total sample size is small ( $n \lt{} 40$) or when any expected
+  frequency is below 10
 - Some exam boards require it for all $2 \times 2$ tables; check the specific mark scheme
 - Do **not** apply it to tables larger than $2 \times 2$
 
@@ -498,9 +500,9 @@ Very small samples, Fisher's exact test is preferred (but this is beyond the A-L
 
 **Example.** A die is rolled 120 times with the following results:
 
-| Face | 1 | 2 | 3 | 4 | 5 | 6 |
+| Face | 1   | 2   | 3   | 4   | 5   | 6   |
 | ---- | --- | --- | --- | --- | --- | --- |
-| Obs | 25 | 18 | 20 | 22 | 15 | 20 |
+| Obs  | 25  | 18  | 20  | 22  | 15  | 20  |
 
 Test at the 5% level whether the die is fair.
 
@@ -524,8 +526,7 @@ The observed counts are 115, 38, 30, 17. Test at the 5% level.
 
 $H_0$: The 9:3:3:1 ratio holds. $H_1$: The ratio does not hold.
 
-Expected: $E_1 = 200(9/16) = 112.5$$E_2 = 200(3/16) = 37.5$$E_3 = 37.5$
-$E_4 = 200(1/16) = 12.5$.
+Expected: $E_1 = 200(9/16) = 112.5$$E_2 = 200(3/16) = 37.5$$E_3 = 37.5$ $E_4 = 200(1/16) = 12.5$.
 
 All $E_i \geq 5$. $\checkmark$
 
@@ -544,11 +545,11 @@ Since $3.183 \lt{} 7.815$**do not reject** $H_0$. The data is consistent with th
 **Example.** A study of 300 adults records smoking status and whether they have a respiratory
 Disease:
 
-| | Disease | No disease | Row total |
+|              | Disease | No disease | Row total |
 | ------------ | ------- | ---------- | --------- |
-| Smoker | 45 | 55 | 100 |
-| Non-smoker | 30 | 170 | 200 |
-| Column total | 75 | 225 | 300 |
+| Smoker       | 45      | 55         | 100       |
+| Non-smoker   | 30      | 170        | 200       |
+| Column total | 75      | 225        | 300       |
 
 Test at the 1% level whether smoking status and respiratory disease are independent.
 
@@ -591,25 +592,25 @@ Still highly significant ($30.42 > 6.635$).
 
 $$\nu = (\mathrm{number of categories after merging}) - 1 - (\mathrm{parameters estimated})$$
 
-| Distribution fitted | Parameters estimated | $\nu$ formula |
-| ---------------------------------- | -------------------- | ------------- |
-| Uniform (known) | 0 | $n - 1$ |
-| Binomial (known $n$Known $p$) | 0 | $n - 1$ |
-| Binomial (known $n$Estimate $p$) | 1 | $n - 2$ |
-| Poisson (estimate $\lambda$) | 1 | $n - 2$ |
-| Normal (estimate $\mu$$\sigma$) | 2 | $n - 3$ |
+| Distribution fitted              | Parameters estimated | $\nu$ formula |
+| -------------------------------- | -------------------- | ------------- |
+| Uniform (known)                  | 0                    | $n - 1$       |
+| Binomial (known $n$Known $p$)    | 0                    | $n - 1$       |
+| Binomial (known $n$Estimate $p$) | 1                    | $n - 2$       |
+| Poisson (estimate $\lambda$)     | 1                    | $n - 2$       |
+| Normal (estimate $\mu$$\sigma$)  | 2                    | $n - 3$       |
 
 ### 7.2 Test for independence
 
 $$\nu = (r - 1)(c - 1)$$
 
-| Table size | $\nu$ |
+| Table size   | $\nu$ |
 | ------------ | ----- |
-| $2 \times 2$ | 1 |
-| $2 \times 3$ | 2 |
-| $3 \times 3$ | 4 |
-| $3 \times 4$ | 6 |
-| $4 \times 5$ | 12 |
+| $2 \times 2$ | 1     |
+| $2 \times 3$ | 2     |
+| $3 \times 3$ | 4     |
+| $3 \times 4$ | 6     |
+| $4 \times 5$ | 12    |
 
 ### 7.3 Intuition for degrees of freedom
 
@@ -638,12 +639,12 @@ Probability of the data given the hypothesis, not the probability of the hypothe
 
 ### 8.2 Common misinterpretations
 
-| Statement | Correct? | Why |
+| Statement                                                        | Correct?        | Why                                                                                         |
 | ---------------------------------------------------------------- | --------------- | ------------------------------------------------------------------------------------------- |
-| "There is a 5% chance the null hypothesis is true" | No | This confuses $P(\mathrm{data}\mid H_0)$ with $P(H_0\mid\mathrm{data})$ |
-| "The probability of getting this result by chance is 5%" | Approximately | More precisely: the probability of getting a result _at least this extreme_ by chance is 5% |
-| "We have proved the alternative hypothesis" | No | We have only found evidence against $H_0$; the alternative could still be wrong |
-| "A significant result means the effect is practically important" | Not necessarily | With a very large sample, even tiny deviations become significant |
+| "There is a 5% chance the null hypothesis is true"               | No              | This confuses $P(\mathrm{data}\mid H_0)$ with $P(H_0\mid\mathrm{data})$                     |
+| "The probability of getting this result by chance is 5%"         | Approximately   | More precisely: the probability of getting a result _at least this extreme_ by chance is 5% |
+| "We have proved the alternative hypothesis"                      | No              | We have only found evidence against $H_0$; the alternative could still be wrong             |
+| "A significant result means the effect is practically important" | Not necessarily | With a very large sample, even tiny deviations become significant                           |
 
 ### 8.3 Context matters
 
@@ -699,8 +700,8 @@ Degrees of freedom and make the test too liberal.
 ### Small expected values
 
 If any expected frequency is below 5, the chi-squared approximation breaks down. The remedy is to
-**merge adjacent categories** before computing the test statistic. Do not discard categories
-— this loses information and biases the result.
+**merge adjacent categories** before computing the test statistic. Do not discard categories — this
+loses information and biases the result.
 
 ### Not checking all expected frequencies
 
@@ -772,13 +773,13 @@ $2.329 \lt{} 7.815$: **do not reject** $H_0$.
 <details>
 <summary>Q3. A survey of 400 adults records education level and voting preference. Test at the 5% level whether the two variables are independent.</summary>
 
-| | Party A | Party B | Party C | Non-voter | Total |
+|                   | Party A | Party B | Party C | Non-voter | Total |
 | ----------------- | ------- | ------- | ------- | --------- | ----- |
-| No qualifications | 20 | 25 | 10 | 45 | 100 |
-| A-levels | 30 | 40 | 25 | 30 | 125 |
-| Degree | 45 | 30 | 40 | 10 | 125 |
-| Postgraduate | 20 | 15 | 15 | 0 | 50 |
-| Total | 115 | 110 | 90 | 85 | 400 |
+| No qualifications | 20      | 25      | 10      | 45        | 100   |
+| A-levels          | 30      | 40      | 25      | 30        | 125   |
+| Degree            | 45      | 30      | 40      | 10        | 125   |
+| Postgraduate      | 20      | 15      | 15      | 0         | 50    |
+| Total             | 115     | 110     | 90      | 85        | 400   |
 
 $H_0$: Independent. $H_1$: Not independent.
 
@@ -873,9 +874,9 @@ It uses up one piece of information from the data.
 
 **Problem.** A die is rolled 120 times. The observed frequencies are:
 
-| Face | 1 | 2 | 3 | 4 | 5 | 6 |
+| Face     | 1   | 2   | 3   | 4   | 5   | 6   |
 | -------- | --- | --- | --- | --- | --- | --- |
-| Observed | 25 | 17 | 15 | 23 | 18 | 22 |
+| Observed | 25  | 17  | 15  | 23  | 18  | 22  |
 
 Test at the 5% level whether the die is fair.
 
@@ -894,11 +895,11 @@ Biased.
 
 **Problem.** 300 people are classified by hair colour and eye colour:
 
-| | Blue | Brown | Green |
+|        | Blue | Brown | Green |
 | ------ | ---- | ----- | ----- |
-| Blonde | 40 | 20 | 10 |
-| Brown | 30 | 60 | 20 |
-| Black | 10 | 40 | 70 |
+| Blonde | 40   | 20    | 10    |
+| Brown  | 30   | 60    | 20    |
+| Black  | 10   | 40    | 70    |
 
 Test at the 1% level whether hair colour and eye colour are independent.
 
@@ -928,10 +929,10 @@ B recovered. Test at 5% whether the recovery rates differ, using Yates' correcti
 
 **Solution.** $H_0$: recovery rate is the same for both drugs.
 
-| | Recovered | Not recovered |
+|        | Recovered | Not recovered |
 | ------ | --------- | ------------- |
-| Drug A | 40 | 60 |
-| Drug B | 55 | 45 |
+| Drug A | 40        | 60            |
+| Drug B | 55        | 45            |
 
 With Yates' correction:
 
@@ -965,9 +966,9 @@ $$\nu = 7 - 3 = \boxed{4}$$
 **Problem.** Customers arrive at a till. The number of customers served before the first complaint
 Is recorded over 200 shifts:
 
-| Count | 0 | 1 | 2 | 3 | $\geq 4$ |
+| Count    | 0   | 1   | 2   | 3   | $\geq 4$ |
 | -------- | --- | --- | --- | --- | -------- |
-| Observed | 90 | 60 | 30 | 12 | 8 |
+| Observed | 90  | 60  | 30  | 12  | 8        |
 
 Test at 5% whether the data follows a geometric distribution.
 
@@ -1011,10 +1012,10 @@ There are 300 Northerners and 200 Southerners. Test at 5% whether preference dif
 
 Observed table:
 
-| | Tea | No Tea |
+|       | Tea | No Tea |
 | ----- | --- | ------ |
-| North | 180 | 120 |
-| South | 90 | 110 |
+| North | 180 | 120    |
+| South | 90  | 110    |
 
 Expected: $E_{11} = \dfrac◆LB◆270 \times 300◆RB◆◆LB◆500◆RB◆ = 162$$E_{12} = 138$$E_{21} = 108$
 $E_{22} = 92$.
@@ -1029,12 +1030,12 @@ $10.87 > 3.84$: **reject** $H_0$. Significant association between region and tea
 
 ## 9. Common Pitfalls
 
-| Pitfall | Correct Approach |
+| Pitfall                                                           | Correct Approach                                                                                         |
 | ----------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
-| Using observed frequencies instead of expected in the denominator | $\chi^2 = \sum \dfrac{(O-E)^2}{E}$Not $\sum \dfrac{(O-E)^2}{O}$ |
-| Forgetting to merge classes with $E < 5$ | Always check expected frequencies first; merge adjacent classes |
-| Miscounting degrees of freedom | $\nu = (r-1)(c-1)$ for independence; $\nu = k - 1 - m$ for goodness-of-fit with $m$ estimated parameters |
-| Applying Yates' correction to tables larger than 2×2 | Yates' correction is only for 2×2 contingency tables |
+| Using observed frequencies instead of expected in the denominator | $\chi^2 = \sum \dfrac{(O-E)^2}{E}$Not $\sum \dfrac{(O-E)^2}{O}$                                          |
+| Forgetting to merge classes with $E < 5$                          | Always check expected frequencies first; merge adjacent classes                                          |
+| Miscounting degrees of freedom                                    | $\nu = (r-1)(c-1)$ for independence; $\nu = k - 1 - m$ for goodness-of-fit with $m$ estimated parameters |
+| Applying Yates' correction to tables larger than 2×2              | Yates' correction is only for 2×2 contingency tables                                                     |
 
 ---
 
@@ -1115,21 +1116,21 @@ Hypothesis testing relies on understanding significance levels, $p$-values, and 
 
 ## 12. Key Results Summary
 
-| Test Type | Degrees of Freedom | Conditions |
-| ----------------- | ------------------ | -------------------------------------------- |
-| Goodness-of-fit | $\nu = k - 1 - m$ | All $E_i \geq 5$$m$ = estimated parameters |
-| Independence | $\nu = (r-1)(c-1)$ | All $E_i \geq 5$ |
-| Yates' correction | $\nu = 1$ | Only for 2×2 tables |
+| Test Type         | Degrees of Freedom | Conditions                                 |
+| ----------------- | ------------------ | ------------------------------------------ |
+| Goodness-of-fit   | $\nu = k - 1 - m$  | All $E_i \geq 5$$m$ = estimated parameters |
+| Independence      | $\nu = (r-1)(c-1)$ | All $E_i \geq 5$                           |
+| Yates' correction | $\nu = 1$          | Only for 2×2 tables                        |
 
-| Step | Action |
+| Step | Action                                        |
 | ---- | --------------------------------------------- |
-| 1 | State $H_0$ and $H_1$ |
-| 2 | Calculate expected frequencies |
-| 3 | Merge classes if any $E_i < 5$ |
-| 4 | Compute $\chi^2 = \sum \dfrac{(O-E)^2}{E}$ |
-| 5 | Determine degrees of freedom |
-| 6 | Compare with critical value or find $p$-value |
-| 7 | Conclude in context |
+| 1    | State $H_0$ and $H_1$                         |
+| 2    | Calculate expected frequencies                |
+| 3    | Merge classes if any $E_i < 5$                |
+| 4    | Compute $\chi^2 = \sum \dfrac{(O-E)^2}{E}$    |
+| 5    | Determine degrees of freedom                  |
+| 6    | Compare with critical value or find $p$-value |
+| 7    | Conclude in context                           |
 
 ---
 
@@ -1168,8 +1169,8 @@ Chi-squared test.
 Significance level $\alpha$.
 
 **Type II error:** Failing to reject $H_0$ when $H_0$ is false (false negative). The probability
-Depends on the true distribution and sample size; it is denoted $\beta$And $1-\beta$ is the power
-Of the test.
+Depends on the true distribution and sample size; it is denoted $\beta$And $1-\beta$ is the power Of
+the test.
 
 </details>
 
@@ -1187,7 +1188,7 @@ Key properties:
 - Mean: $\nu$
 - Variance: $2\nu$
 - Additivity: if $X \sim \chi^2_{\nu_1}$ and $Y \sim \chi^2_{\nu_2}$ are independent, then
- $X+Y \sim \chi^2_{\nu_1+\nu_2}$
+  $X+Y \sim \chi^2_{\nu_1+\nu_2}$
 
 ### 14.2 Chi-squared confidence intervals for variance
 
@@ -1341,9 +1342,9 @@ Fisher's exact test should be used when:
 
 A researcher tests whether a die is fair. In 120 rolls, the observed frequencies are:
 
-| Face | 1 | 2 | 3 | 4 | 5 | 6 |
+| Face | 1   | 2   | 3   | 4   | 5   | 6   |
 | ---- | --- | --- | --- | --- | --- | --- |
-| Freq | 15 | 22 | 18 | 25 | 20 | 20 |
+| Freq | 15  | 22  | 18  | 25  | 20  | 20  |
 
 Carry out a chi-squared goodness-of-fit test at the 5% significance level.
 

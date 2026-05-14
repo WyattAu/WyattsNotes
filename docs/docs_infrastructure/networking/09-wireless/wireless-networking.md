@@ -1,7 +1,9 @@
 ---
 id: wireless-networking
 title: Wireless Networking
-description: "Wireless Networking — RF Fundamentals; Electromagnetic Waves; Decibel Scale; SNR and SINR with worked examples and exam-style questions."
+description:
+  'Wireless Networking — RF Fundamentals; Electromagnetic Waves; Decibel Scale; SNR and SINR with
+  worked examples and exam-style questions.'
 slug: wireless-networking
 sidebar_position: 2
 date: 2026-04-08T00:00:00.000Z
@@ -10,6 +12,7 @@ tags:
 categories:
   - Networking
 ---
+
 ## RF Fundamentals
 
 ### Electromagnetic Waves
@@ -18,9 +21,9 @@ Wireless networking uses radio frequency (RF) electromagnetic waves to carry dat
 Properties of an RF wave are:
 
 - **Frequency ($f$):** Number of complete wave cycles per second, measured in Hertz (Hz). Wi-Fi
- operates in the 2.4 GHz ($2.4 \times 10^9$ Hz) and 5 GHz ($5 \times 10^9$ Hz) bands.
+  operates in the 2.4 GHz ($2.4 \times 10^9$ Hz) and 5 GHz ($5 \times 10^9$ Hz) bands.
 - **Wavelength ($\lambda$):** The physical distance between two consecutive wave peaks. Related to
- frequency by the speed of light:
+  frequency by the speed of light:
 
 $$
 \lambda = \frac{c}{f}
@@ -34,9 +37,9 @@ $\lambda = \frac{3 \times 10^8}{2.4 \times 10^9} = 0.125\mathrm{ m{} = 12.5\math
 For 5 GHz Wi-Fi: $\lambda = \frac{3 \times 10^8}{5 \times 10^9} = 0.06\mathrm{ m{} = 6\mathrm{ cm{}$
 
 - **Amplitude:** The strength or height of the wave. Higher amplitude corresponds to a stronger
- signal.
+  signal.
 - **Phase:** The position of a wave in its cycle relative to a reference point. Phase shifts are
- critical in MIMO systems, where multiple signals must be combined coherently.
+  critical in MIMO systems, where multiple signals must be combined coherently.
 
 ### Decibel Scale
 
@@ -47,22 +50,22 @@ $$
 \mathrm{dB{} = 10 \cdot \log_{10}\left(\frac{P_2}{P_1}\right)
 $$
 
-| Unit | Meaning | Reference |
+| Unit | Meaning                                     | Reference                |
 | ---- | ------------------------------------------- | ------------------------ |
-| dB | Ratio of two power levels | $P_2 / P_1$ |
-| dBm | Absolute power level | 1 mW |
-| dBi | Antenna gain relative to isotropic radiator | Theoretical point source |
-| dBd | Antenna gain relative to half-wave dipole | Dipole antenna |
+| dB   | Ratio of two power levels                   | $P_2 / P_1$              |
+| dBm  | Absolute power level                        | 1 mW                     |
+| dBi  | Antenna gain relative to isotropic radiator | Theoretical point source |
+| dBd  | Antenna gain relative to half-wave dipole   | Dipole antenna           |
 
 Common dBm values:
 
-| Power | dBm |
+| Power  | dBm    |
 | ------ | ------ |
-| 1 mW | 0 dBm |
-| 10 mW | 10 dBm |
+| 1 mW   | 0 dBm  |
+| 10 mW  | 10 dBm |
 | 100 mW | 20 dBm |
-| 1 W | 30 dBm |
-| 4 W | 36 dBm |
+| 1 W    | 30 dBm |
+| 4 W    | 36 dBm |
 
 **Free Space Path Loss (FSPL):** The signal attenuation over distance in free space:
 
@@ -121,30 +124,30 @@ $$
 
 A higher SNR means better signal quality. Typical Wi-Fi requirements:
 
-| SNR (dB) | Quality | Maximum MCS |
+| SNR (dB)   | Quality     | Maximum MCS |
 | ---------- | ----------- | ----------- |
-| $\lt{}$ 5 | Unusable | -- |
-| 5 -- 10 | Very poor | MCS 0-1 |
-| 10 -- 15 | Poor | MCS 2-3 |
-| 15 -- 20 | Fair | MCS 4-7 |
-| 20 -- 25 | Good | MCS 8-15 |
-| 25 -- 40 | Excellent | MCS 16-23 |
-| $\gt{}$ 40 | Outstanding | Maximum |
+| $\lt{}$ 5  | Unusable    | --          |
+| 5 -- 10    | Very poor   | MCS 0-1     |
+| 10 -- 15   | Poor        | MCS 2-3     |
+| 15 -- 20   | Fair        | MCS 4-7     |
+| 20 -- 25   | Good        | MCS 8-15    |
+| 25 -- 40   | Excellent   | MCS 16-23   |
+| $\gt{}$ 40 | Outstanding | Maximum     |
 
 **Signal-to-Interference-plus-Noise Ratio (SINR)** adds interference from other wireless devices to
 The noise floor. In dense environments, interference often dominates over thermal noise.
 
 ## 802.11 Standards Evolution
 
-| Standard | Wi-Fi Gen | Year | Freq (GHz) | Max PHY Rate | Modulation | Max MIMO | Channel BW |
+| Standard | Wi-Fi Gen  | Year      | Freq (GHz) | Max PHY Rate | Modulation      | Max MIMO | Channel BW           |
 | -------- | ---------- | --------- | ---------- | ------------ | --------------- | -------- | -------------------- |
-| 802.11b | Wi-Fi 1 | 1999 | 2.4 | 11 Mbps | DSSS/CCK | 1x1 | 22 MHz |
-| 802.11a | Wi-Fi 2 | 1999 | 5 | 54 Mbps | OFDM | 1x1 | 20 MHz |
-| 802.11g | Wi-Fi 3 | 2003 | 2.4 | 54 Mbps | OFDM/DSSS | 1x1 | 20 MHz |
-| 802.11n | Wi-Fi 4 | 2009 | 2.4/5 | 600 Mbps | OFDM | 4x4 | 20/40 MHz |
-| 802.11ac | Wi-Fi 5 | 2013 | 5 | 6.93 Gbps | OFDM (256-QAM) | 8x8 | 20/40/80/160 MHz |
-| 802.11ax | Wi-Fi 6/6E | 2020/2021 | 2.4/5/6 | 9.6 Gbps | OFDMA, 1024-QAM | 8x8 | 20/40/80/160 MHz |
-| 802.11be | Wi-Fi 7 | 2024 | 2.4/5/6 | 46 Gbps | 4096-QAM, MLO | 16x16 | 20/40/80/160/320 MHz |
+| 802.11b  | Wi-Fi 1    | 1999      | 2.4        | 11 Mbps      | DSSS/CCK        | 1x1      | 22 MHz               |
+| 802.11a  | Wi-Fi 2    | 1999      | 5          | 54 Mbps      | OFDM            | 1x1      | 20 MHz               |
+| 802.11g  | Wi-Fi 3    | 2003      | 2.4        | 54 Mbps      | OFDM/DSSS       | 1x1      | 20 MHz               |
+| 802.11n  | Wi-Fi 4    | 2009      | 2.4/5      | 600 Mbps     | OFDM            | 4x4      | 20/40 MHz            |
+| 802.11ac | Wi-Fi 5    | 2013      | 5          | 6.93 Gbps    | OFDM (256-QAM)  | 8x8      | 20/40/80/160 MHz     |
+| 802.11ax | Wi-Fi 6/6E | 2020/2021 | 2.4/5/6    | 9.6 Gbps     | OFDMA, 1024-QAM | 8x8      | 20/40/80/160 MHz     |
+| 802.11be | Wi-Fi 7    | 2024      | 2.4/5/6    | 46 Gbps      | 4096-QAM, MLO   | 16x16    | 20/40/80/160/320 MHz |
 
 ### Key Improvements by Generation
 
@@ -196,13 +199,13 @@ Shared, reducing per-client throughput proportionally.
 ### BSS, ESS, and DS
 
 - **Basic Service Set (BSS):** The fundamental building block. A BSS consists of a single access
- point (AP) and all wireless clients associated with it. The BSS has a unique identifier called the
- BSSID, which is the MAC address of the AP's wireless interface.
-- **Extended Service Set (ESS):** Multiple BSSs connected by a Distribution System (DS) -- 
- a wired Ethernet backbone. All BSSs in an ESS share the same SSID (network name) and appear as a
- single network to clients.
+  point (AP) and all wireless clients associated with it. The BSS has a unique identifier called the
+  BSSID, which is the MAC address of the AP's wireless interface.
+- **Extended Service Set (ESS):** Multiple BSSs connected by a Distribution System (DS) -- a wired
+  Ethernet backbone. All BSSs in an ESS share the same SSID (network name) and appear as a single
+  network to clients.
 - **Distribution System (DS):** The wired (or wireless) backbone that connects APs within an ESS. It
- carries traffic between APs and to the network infrastructure (routers, switches, servers).
+  carries traffic between APs and to the network infrastructure (routers, switches, servers).
 
 ### Infrastructure Mode vs Ad-Hoc Mode
 
@@ -232,14 +235,14 @@ Advantages of thin AP architecture:
 3. **Seamless roaming.** The controller coordinates client handoffs between APs.
 4. **Simplified firmware updates.** Update all APs from the controller.
 5. **RF management.** The controller can adjust power levels and channels to optimize coverage and
- minimize interference.
+   minimize interference.
 
 ### CAPWAP
 
 CAPWAP (RFC 5415) defines the protocol between a WLC and its APs. It runs over UDP:
 
 - **Control channel:** UDP port 5246 -- carries management messages (configuration, firmware
- updates, statistics).
+  updates, statistics).
 - **Data channel:** UDP port 5247 -- carries encapsulated client data frames.
 
 CAPWAP can operate in native (Layer 2) or tunnel (Layer 3) mode. In Layer 3 mode, the CAPWAP packets
@@ -256,18 +259,18 @@ Control:
 Management frames are used for joining and leaving wireless networks. They are always sent at the
 Lowest mandatory data rate to ensure all stations can receive them.
 
-| Subtype | Name | Purpose |
+| Subtype | Name                   | Purpose                             |
 | ------- | ---------------------- | ----------------------------------- |
-| 0 | Association Request | Client requests to join BSS |
-| 1 | Association Response | AP accepts/rejects association |
-| 2 | Reassociation Request | Client roams to new AP |
-| 3 | Reassociation Response | AP accepts/rejects reassociation |
-| 4 | Probe Request | Client scans for networks |
-| 5 | Probe Response | AP advertises its capabilities |
-| 8 | Beacon | AP periodically broadcasts BSS info |
-| 10 | Authentication | Open/Shared key authentication |
-| 11 | Deauthentication | Terminates association |
-| 12 | Action | Spectrum management, QoS, etc. |
+| 0       | Association Request    | Client requests to join BSS         |
+| 1       | Association Response   | AP accepts/rejects association      |
+| 2       | Reassociation Request  | Client roams to new AP              |
+| 3       | Reassociation Response | AP accepts/rejects reassociation    |
+| 4       | Probe Request          | Client scans for networks           |
+| 5       | Probe Response         | AP advertises its capabilities      |
+| 8       | Beacon                 | AP periodically broadcasts BSS info |
+| 10      | Authentication         | Open/Shared key authentication      |
+| 11      | Deauthentication       | Terminates association              |
+| 12      | Action                 | Spectrum management, QoS, etc.      |
 
 Beacon frames are sent by the AP at a configurable interval (default: 100 ms, or 10 TUs -- Time
 Units, where 1 TU = 1024 microseconds). Beacons contain:
@@ -283,12 +286,12 @@ Units, where 1 TU = 1024 microseconds). Beacons contain:
 
 Control frames assist in the delivery of data frames. They do not carry upper-layer data.
 
-| Subtype | Name | Purpose |
+| Subtype | Name                  | Purpose                                        |
 | ------- | --------------------- | ---------------------------------------------- |
-| 8 | RTS (Request to Send) | Reserves the medium before transmission |
-| 9 | CTS (Clear to Send) | Acknowledges RTS, tells other stations to wait |
-| 10 | ACK | Acknowledges successful frame reception |
-| 11 | PS-Poll | Sleeping client requests buffered data |
+| 8       | RTS (Request to Send) | Reserves the medium before transmission        |
+| 9       | CTS (Clear to Send)   | Acknowledges RTS, tells other stations to wait |
+| 10      | ACK                   | Acknowledges successful frame reception        |
+| 11      | PS-Poll               | Sleeping client requests buffered data         |
 
 RTS/CTS is used to mitigate the hidden node problem. Before transmitting a data frame, the sender
 Broadcasts an RTS. The receiver responds with a CTS. All stations hearing the CTS defer transmission
@@ -299,13 +302,13 @@ For the duration specified in the CTS, even if they did not hear the RTS.
 Data frames carry higher-layer (Layer 3+) payloads. They are the most common frame type on a busy
 Network.
 
-| Subtype | Name | Purpose |
+| Subtype | Name           | Purpose                                                                |
 | ------- | -------------- | ---------------------------------------------------------------------- |
-| 0 | Data | Standard data frame |
-| 1 | Data + CF-Ack | Data with acknowledgment (Contention Free) |
-| 2 | Data + CF-Poll | Data with poll (Contention Free) |
-| 4 | Null | No data, used for power management (tells AP client is going to sleep) |
-| 12 | QoS Data | Data frame with QoS priority (802.11e) |
+| 0       | Data           | Standard data frame                                                    |
+| 1       | Data + CF-Ack  | Data with acknowledgment (Contention Free)                             |
+| 2       | Data + CF-Poll | Data with poll (Contention Free)                                       |
+| 4       | Null           | No data, used for power management (tells AP client is going to sleep) |
+| 12      | QoS Data       | Data frame with QoS priority (802.11e)                                 |
 
 QoS Data frames include a QoS Control field that carries the Traffic Identifier (TID), UP (User
 Priority), and other QoS parameters. WMM (Wi-Fi Multimedia) maps the 8 User Priority values to 4
@@ -324,9 +327,9 @@ WEP was the original 802.11 security standard. It is catastrophically broken and
 Flaws:
 
 1. The 24-bit IV is too short. On a busy network, IVs repeat within hours, allowing statistical
- attacks (FMS, PTW).
+   attacks (FMS, PTW).
 2. CRC-32 is linear -- an attacker can flip bits in the ciphertext and adjust the CRC to match,
- enabling undetected modification.
+   enabling undetected modification.
 3. The key scheduling algorithm of RC4 has known weaknesses that leak key bits.
 
 An attacker with a tool like Aircrack-ng can recover a WEP key from captured traffic in under a
@@ -337,7 +340,7 @@ Minute.
 WPA was an interim solution designed to address WEP's weaknesses before 802.11i was finalized.
 
 - **Encryption:** TKIP (Temporal Key Integrity Protocol) -- still uses RC4, but adds a per-packet
- key mixing function, a 48-bit IV, and a cryptographic MIC (Michael).
+  key mixing function, a 48-bit IV, and a cryptographic MIC (Michael).
 - **Authentication:** WPA-Personal (PSK) or WPA-Enterprise (802.1X/RADIUS)
 - **Key derivation:** PBKDF2 with 4096 iterations, HMAC-SHA1
 
@@ -349,16 +352,16 @@ The keystream and inject packets within 12-15 minutes.
 WPA2 is the current minimum standard for Wi-Fi security.
 
 - **Encryption:** AES-CCMP (Counter Mode with CBC-MAC Protocol). AES block cipher in CCM mode
- provides both confidentiality (counter mode encryption) and integrity/authenticity (CBC-MAC).
+  provides both confidentiality (counter mode encryption) and integrity/authenticity (CBC-MAC).
 - **Key lengths:** 128-bit or 256-bit
 - **Authentication:**
- - **WPA2-Personal (PSK):** Pre-shared key. The PSK is derived from a passphrase using PBKDF2 with
- 4096 iterations of HMAC-SHA1:
-    $$
- \mathrm{PMK{} = \mathrm{PBKDF2-HMAC-SHA1{}(\mathrm{passphrase{}, \mathrm{SSID{}, 4096, 256\mathrm{ bits{})
-    $$
- - **WPA2-Enterprise (802.1X):** Uses a RADIUS server for per-user authentication. Supports EAP
- methods like EAP-TLS (certificate-based), PEAP-MSCHAPv2, and EAP-TTLS.
+- **WPA2-Personal (PSK):** Pre-shared key. The PSK is derived from a passphrase using PBKDF2 with
+  4096 iterations of HMAC-SHA1:
+  $$
+  \mathrm{PMK{} = \mathrm{PBKDF2-HMAC-SHA1{}(\mathrm{passphrase{}, \mathrm{SSID{}, 4096, 256\mathrm{ bits{})
+  $$
+- **WPA2-Enterprise (802.1X):** Uses a RADIUS server for per-user authentication. Supports EAP
+  methods like EAP-TLS (certificate-based), PEAP-MSCHAPv2, and EAP-TTLS.
 
 **4-way handshake:** WPA2 uses a 4-message handshake between the AP (authenticator) and the client
 (supplicant) to derive the Pairwise Transient Key (PTK) and install the encryption keys:
@@ -372,13 +375,13 @@ WPA2 is the current minimum standard for Wi-Fi security.
 
 WPA3 addresses several weaknesses in WPA2:
 
-| Feature | WPA2 | WPA3 |
+| Feature                   | WPA2                           | WPA3                                    |
 | ------------------------- | ------------------------------ | --------------------------------------- |
-| Offline dictionary attack | Possible on captured handshake | Prevented by SAE |
-| Forward secrecy | No | Yes (PFS in WPA3-Enterprise) |
-| Open network encryption | None | OWE (Opportunistic Wireless Encryption) |
-| Key length | 128-bit default | 192-bit in WPA3-Enterprise |
-| IoT | Limited | Enhanced Open for public networks |
+| Offline dictionary attack | Possible on captured handshake | Prevented by SAE                        |
+| Forward secrecy           | No                             | Yes (PFS in WPA3-Enterprise)            |
+| Open network encryption   | None                           | OWE (Opportunistic Wireless Encryption) |
+| Key length                | 128-bit default                | 192-bit in WPA3-Enterprise              |
+| IoT                       | Limited                        | Enhanced Open for public networks       |
 
 **SAE (Simultaneous Authentication of Equals):** WPA3-Personal replaces the PSK 4-way handshake with
 SAE, a dragonfly key exchange (RFC 7664). SAE is resistant to offline dictionary attacks because the
@@ -395,9 +398,9 @@ Encrypted link that protects against passive eavesdropping but does not authenti
 
 1. **Supplicant:** The wireless client requesting access.
 2. **Authenticator:** The AP (or switch) that enforces access control. It does not perform
- authentication itself -- it passes credentials to the backend.
+   authentication itself -- it passes credentials to the backend.
 3. **Authentication Server:** A RADIUS server (e.g., FreeRADIUS, Microsoft NPS, ISE) that validates
- the supplicant's credentials.
+   the supplicant's credentials.
 
 The EAP (Extensible Authentication Protocol) runs between the supplicant and the authentication
 Server, encapsulated in EAPOL (EAP over LAN) between the supplicant and authenticator, and RADIUS
@@ -405,12 +408,12 @@ Between the authenticator and the authentication server.
 
 Common EAP methods:
 
-| Method | Mutual Auth | Certificates | Notes |
+| Method        | Mutual Auth | Certificates | Notes                              |
 | ------------- | ----------- | ------------ | ---------------------------------- |
-| EAP-TLS | Yes | Both sides | Most secure, but complex to deploy |
-| PEAP-MSCHAPv2 | Yes | Server only | Most common in enterprise |
-| EAP-TTLS | Yes | Server only | Flexible inner authentication |
-| EAP-FAST | Yes | Server (PAC) | Cisco-proprietary, less common |
+| EAP-TLS       | Yes         | Both sides   | Most secure, but complex to deploy |
+| PEAP-MSCHAPv2 | Yes         | Server only  | Most common in enterprise          |
+| EAP-TTLS      | Yes         | Server only  | Flexible inner authentication      |
+| EAP-FAST      | Yes         | Server (PAC) | Cisco-proprietary, less common     |
 
 ## Channel Allocation
 
@@ -466,7 +469,7 @@ DFS is required in the 5 GHz band to avoid interference with radar systems (weat
 Aviation). When an AP operates on a DFS channel, it must:
 
 1. Listen for radar signals for at least 60 seconds (Channel Availability Check) before using the
- channel.
+   channel.
 2. Continuously monitor for radar while transmitting.
 3. If radar is detected, vacate the channel within 10 seconds and move clients to a non-DFS channel.
 4. Not return to the vacated channel for 30 minutes.
@@ -480,11 +483,11 @@ Channel bonding combines adjacent 20 MHz channels into wider channels for higher
 
 | Bonded Width | Channels Combined | Throughput Gain | Interference Risk |
 | ------------ | ----------------- | --------------- | ----------------- |
-| 20 MHz | 1 | Baseline | Lowest |
-| 40 MHz | 2 | ~2x | Moderate |
-| 80 MHz | 4 | ~4x | High |
-| 160 MHz | 8 | ~8x | Very high |
-| 320 MHz | 16 | ~16x | Extreme |
+| 20 MHz       | 1                 | Baseline        | Lowest            |
+| 40 MHz       | 2                 | ~2x             | Moderate          |
+| 80 MHz       | 4                 | ~4x             | High              |
+| 160 MHz      | 8                 | ~8x             | Very high         |
+| 320 MHz      | 16                | ~16x            | Extreme           |
 
 In the 2.4 GHz band, bonding 40 MHz consumes the entire available spectrum, leaving no room for
 Other channels. In the 5 GHz band, 80 MHz bonding is common but requires careful channel planning.
@@ -497,15 +500,15 @@ Available spectrum.
 
 Wi-Fi signal strength is measured in dBm (decibels relative to 1 milliwatt). Typical thresholds:
 
-| Signal (dBm) | Quality | Usability |
+| Signal (dBm) | Quality    | Usability                          |
 | ------------ | ---------- | ---------------------------------- |
-| $\gt{}$ -30 | Excellent | Unusually close to AP |
-| -30 to -50 | Excellent | Optimal for all applications |
-| -50 to -60 | Good | Reliable for VoIP, video, data |
-| -60 to -67 | Acceptable | Reliable for data, VoIP may suffer |
-| -67 to -70 | Weak | Data only, video unreliable |
-| -70 to -80 | Very weak | Intermittent connectivity |
-| $\lt{}$ -80 | Unusable | Connection unlikely |
+| $\gt{}$ -30  | Excellent  | Unusually close to AP              |
+| -30 to -50   | Excellent  | Optimal for all applications       |
+| -50 to -60   | Good       | Reliable for VoIP, video, data     |
+| -60 to -67   | Acceptable | Reliable for data, VoIP may suffer |
+| -67 to -70   | Weak       | Data only, video unreliable        |
+| -70 to -80   | Very weak  | Intermittent connectivity          |
+| $\lt{}$ -80  | Unusable   | Connection unlikely                |
 
 ### Interference Types
 
@@ -555,16 +558,16 @@ MetaGeek Chanalyzer, Ekahau Spectrum Analyzer, Cisco CleanAir
 ### Common Issues
 
 1. **Client stickiness.** A client remains associated with a distant AP even when a closer AP is
- available. This happens because the client's roaming algorithm is vendor-specific and often
- suboptimal. Solution: Enable 802.11r (Fast BSS Transition) and 802.11k/v on the APs, and set
- minimum RSSI thresholds to force clients to roam.
+   available. This happens because the client's roaming algorithm is vendor-specific and often
+   suboptimal. Solution: Enable 802.11r (Fast BSS Transition) and 802.11k/v on the APs, and set
+   minimum RSSI thresholds to force clients to roam.
 
 2. **Band steering.** Dual-band clients sometimes prefer 2.4 GHz because of its stronger signal at
- distance. Solution: Enable band steering on the AP to nudge dual-band clients to 5 GHz.
+   distance. Solution: Enable band steering on the AP to nudge dual-band clients to 5 GHz.
 
 3. **Hidden SSID is not security.** Disabling SSID broadcasting (hidden SSID) does not improve
- security. Probe requests from clients reveal the SSID anyway. It can cause connectivity issues
- because some clients have trouble connecting to hidden networks.
+   security. Probe requests from clients reveal the SSID anyway. It can cause connectivity issues
+   because some clients have trouble connecting to hidden networks.
 
 ## Mesh Networking
 
@@ -576,7 +579,7 @@ Communicate with each other wirelessly using a backhaul link, forming a multi-ho
 - **Root AP:** Connected to the wired network via Ethernet.
 - **Mesh AP:** Connected wirelessly to the root AP (directly or through other mesh APs).
 - **Backhaul:** The wireless link between mesh APs. Can use the same radio as client access (single-
- radio mesh) or a dedicated radio (dual-radio/tri-radio mesh).
+  radio mesh) or a dedicated radio (dual-radio/tri-radio mesh).
 
 ### Performance Considerations
 
@@ -597,8 +600,8 @@ Eliminate the penalty.
 When deciding between mesh and wired backhaul, consider the total cost of ownership. A wired
 Connection costs approximately $200-500 per drop (cable, labor, switches) but provides full,
 Dedicated bandwidth. A mesh AP costs $300-800 and shares bandwidth across hops. For a deployment
-Requiring more than 2 mesh hops, the cost of running cable is lower than the cost of
-Additional mesh APs needed to compensate for throughput degradation.
+Requiring more than 2 mesh hops, the cost of running cable is lower than the cost of Additional mesh
+APs needed to compensate for throughput degradation.
 
 Wireless bridging (point-to-point or point-to-multipoint) using dedicated directional antennas is a
 Middle ground. A 5 GHz point-to-point bridge can achieve 1+ Gbps over distances of several
@@ -609,7 +612,7 @@ Kilometers with proper line-of-sight, providing near-wired performance without t
 Mesh is appropriate when:
 
 - Running Ethernet to every AP location is impractical (old buildings, outdoor areas, temporary
- deployments)
+  deployments)
 - Coverage extension is needed in areas where wiring is cost-prohibitive
 - The number of hops is limited (ideally 1-2 hops maximum)
 
@@ -623,53 +626,53 @@ Required. Wired backhaul is always preferable when possible.
 A proper site survey follows these phases:
 
 1. **Requirements gathering.** Define the applications (data, voice, video, IoT), expected client
- density, minimum data rates, coverage areas, and building constraints.
+   density, minimum data rates, coverage areas, and building constraints.
 2. **Predictive survey.** Use software (Ekahau Pro, iBwave Wi-Fi) to model RF propagation based on
- floor plans, wall materials, and AP specifications. This produces an initial AP placement plan.
+   floor plans, wall materials, and AP specifications. This produces an initial AP placement plan.
 3. **Active survey (on-site).** Place APs at the predicted locations and measure actual signal
- strength, SNR, and throughput using a survey adapter. Adjust AP placement, power levels, and
- channels based on measurements.
+   strength, SNR, and throughput using a survey adapter. Adjust AP placement, power levels, and
+   channels based on measurements.
 4. **Validation survey.** After deployment, verify that the design meets the requirements. Test in
- all coverage areas, during peak usage hours if possible.
+   all coverage areas, during peak usage hours if possible.
 5. **Post-deployment monitoring.** Continuously monitor the wireless environment for changes in
- interference, coverage gaps, and capacity issues.
+   interference, coverage gaps, and capacity issues.
 
 ### AP Placement
 
 - **Site survey:** Always perform a predictive or on-site survey before deployment. Predictive
- surveys use software (Ekahau, iBwave) to model RF propagation. On-site surveys use actual
- measurements.
+  surveys use software (Ekahau, iBwave) to model RF propagation. On-site surveys use actual
+  measurements.
 - **Coverage vs capacity:** For voice and video, plan for capacity (more APs, smaller cells) rather
- than just coverage. For basic data, coverage planning is sufficient.
+  than just coverage. For basic data, coverage planning is sufficient.
 - **Mounting height:** Ceiling-mounted APs provide more uniform coverage than wall-mounted APs.
- Typical height: 2.5-3.5 m for indoor deployments.
+  Typical height: 2.5-3.5 m for indoor deployments.
 - **Antenna selection:** Omnidirectional antennas for general coverage. Directional antennas for
- corridors, outdoor point-to-point, and specific coverage areas.
+  corridors, outdoor point-to-point, and specific coverage areas.
 
 ### Density Planning
 
 Approximate AP density guidelines:
 
-| Environment | AP Density (per 1000 sq ft) | Typical Design |
+| Environment               | AP Density (per 1000 sq ft) | Typical Design              |
 | ------------------------- | --------------------------- | --------------------------- |
-| Office (data only) | 1 | Coverage-based |
-| Office (voice/video) | 2-3 | Capacity-based |
-| High-density (auditorium) | 5-10 | Capacity-based, small cells |
-| Warehouse | 0.5-1 | Coverage-based, high-mount |
+| Office (data only)        | 1                           | Coverage-based              |
+| Office (voice/video)      | 2-3                         | Capacity-based              |
+| High-density (auditorium) | 5-10                        | Capacity-based, small cells |
+| Warehouse                 | 0.5-1                       | Coverage-based, high-mount  |
 
 ### Power over Ethernet (PoE)
 
 Most enterprise APs require PoE:
 
-| Standard | Power per Port | Max Cable Length |
+| Standard               | Power per Port | Max Cable Length |
 | ---------------------- | -------------- | ---------------- |
-| 802.3af (PoE) | 15.4 W | 100 m |
-| 802.3at (PoE+) | 30 W | 100 m |
-| 802.3bt (PoE++) Type 3 | 60 W | 100 m |
-| 802.3bt (PoE++) Type 4 | 90 W | 100 m |
+| 802.3af (PoE)          | 15.4 W         | 100 m            |
+| 802.3at (PoE+)         | 30 W           | 100 m            |
+| 802.3bt (PoE++) Type 3 | 60 W           | 100 m            |
+| 802.3bt (PoE++) Type 4 | 90 W           | 100 m            |
 
-Wi-Fi 6/6E/7 APs with multiple radios require PoE+ (30 W) or PoE++ (60 W). Verify power
-Requirements before deployment.
+Wi-Fi 6/6E/7 APs with multiple radios require PoE+ (30 W) or PoE++ (60 W). Verify power Requirements
+before deployment.
 
 Note that PoE power is delivered over Cat5e or better cable at distances up to 100 meters. Power
 Dissipation in the cable increases with distance, so an AP at 100 meters receives less usable power
@@ -685,14 +688,14 @@ Better service.
 Key roaming technologies:
 
 - **802.11k (Neighbor Report):** The current AP provides the client with a list of neighboring APs
- and their channels, speeds up scanning.
+  and their channels, speeds up scanning.
 - **802.11r (Fast BSS Transition):** Reduces the time required for a client to authenticate and
- associate with a new AP by caching the security context. Reduces roaming time from ~100 ms to ~20
- ms.
+  associate with a new AP by caching the security context. Reduces roaming time from ~100 ms to ~20
+  ms.
 - **802.11v (BSS Transition Management):** The AP can actively instruct clients to roam to a better
- AP using BSS Transition Management Request frames. This is called "directed roam."
+  AP using BSS Transition Management Request frames. This is called "directed roam."
 - **OKC (Opportunistic Key Caching):** A Cisco-proprietary alternative to 802.11r that caches PMK
- keys across APs.
+  keys across APs.
 
 For VoIP deployments, 802.11r is essential. VoIP requires roaming handoffs under 50 ms to avoid
 Audible gaps. Without 802.11r, the full 4-way handshake must complete during each roam, which can
@@ -780,9 +783,9 @@ Recommended plan (20 MHz channels):
 
 | Floor | AP1 | AP2 | AP3 | AP4 |
 | ----- | --- | --- | --- | --- |
-| 3rd | 36 | 149 | 44 | 157 |
-| 2nd | 149 | 36 | 157 | 44 |
-| 1st | 44 | 157 | 36 | 149 |
+| 3rd   | 36  | 149 | 44  | 157 |
+| 2nd   | 149 | 36  | 157 | 44  |
+| 1st   | 44  | 157 | 36  | 149 |
 
 This ensures that APs in the same column on adjacent floors use widely separated channels (36 and
 149, for example, are separated by over 4 GHz), minimizing inter-floor interference. APs on the same

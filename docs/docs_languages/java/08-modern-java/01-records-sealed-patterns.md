@@ -1,16 +1,19 @@
 ---
 title: Records, Sealed Classes, and Pattern Matching
-description: "Records, Sealed Classes, and Pattern Matching — Records (JEP 395, Java 16); Syntax and Basic Usage; The Generated Methods; Compact Constructors."
+description:
+  'Records, Sealed Classes, and Pattern Matching — Records (JEP 395, Java 16); Syntax and Basic
+  Usage; The Generated Methods; Compact Constructors.'
 date: 2026-04-03T00:00:00.000Z
 tags: ['java']
 categories: ['java']
 slug: records-sealed-patterns
 ---
+
 ## Records (JEP 395, Java 16)
 
 A record is a transparent carrier for immutable data. The compiler generates the constructor, field
-Accessors, `equals``hashCode`And `toString` from a single declaration. This eliminates the
-Single largest source of boilerplate in Java: the dumb data class.
+Accessors, `equals``hashCode`And `toString` from a single declaration. This eliminates the Single
+largest source of boilerplate in Java: the dumb data class.
 
 ### Syntax and Basic Usage
 
@@ -24,11 +27,11 @@ p.y();  // 4.0
 System.out.println(p);  // Point[x=3.0, y=4.0]
 ```
 
-The record components (`x``y`) are declared in the state space of the class. The compiler
-Generates a `final` private field for each component, a public accessor method with the same name
-(no `get` prefix), and a canonical constructor that assigns each parameter to its corresponding
-Field. The accessor is a method, not a field access -- this distinction matters for binary
-Compatibility and for frameworks that rely on JavaBeans conventions.
+The record components (`x``y`) are declared in the state space of the class. The compiler Generates
+a `final` private field for each component, a public accessor method with the same name (no `get`
+prefix), and a canonical constructor that assigns each parameter to its corresponding Field. The
+accessor is a method, not a field access -- this distinction matters for binary Compatibility and
+for frameworks that rely on JavaBeans conventions.
 
 ### The Generated Methods
 
@@ -164,16 +167,16 @@ public record AuthToken(String token, long expiryEpochMs) implements Serializabl
 
 ### Records vs Lombok `@Value`
 
-| Feature | Records | Lombok `@Value` |
+| Feature                 | Records                | Lombok `@Value`                  |
 | ----------------------- | ---------------------- | -------------------------------- |
-| Language support | Built-in since Java 16 | Annotation processor (library) |
-| Equals/hashCode | Structural, generated | Structural, generated |
-| Mutability | Enforced immutable | Enforced immutable |
-| Extensibility | Can extend `Record` | Can extend any class |
-| Compact constructors | Yes | No (use `@Builder` etc.) |
-| Deserialization safety | Validates on read | Uses reflection, can be bypassed |
-| IDE support | Native | Requires plugin |
-| Framework compatibility | Full (standard Java) | May need annotation processing |
+| Language support        | Built-in since Java 16 | Annotation processor (library)   |
+| Equals/hashCode         | Structural, generated  | Structural, generated            |
+| Mutability              | Enforced immutable     | Enforced immutable               |
+| Extensibility           | Can extend `Record`    | Can extend any class             |
+| Compact constructors    | Yes                    | No (use `@Builder` etc.)         |
+| Deserialization safety  | Validates on read      | Uses reflection, can be bypassed |
+| IDE support             | Native                 | Requires plugin                  |
+| Framework compatibility | Full (standard Java)   | May need annotation processing   |
 
 Records are the standard mechanism going forward. Lombok remains useful in codebases that need
 Features records do not support (mutable data carriers, builders with complex logic, etc.), but for
@@ -557,7 +560,7 @@ Indented 4 spaces relative to the closing `"""`So 4 spaces are stripped from eve
 Most escape sequences work the same inside text blocks as in regular strings. The key differences:
 
 - **No need to escape `"` inside a text block** -- a single `"` or `""` does not terminate the text
- block. Only `"""` terminates it.
+  block. Only `"""` terminates it.
 - **`\` at end of line** prevents a line break, joining the lines:
   ```java
   String query = """
@@ -568,7 +571,7 @@ Most escape sequences work the same inside text blocks as in regular strings. Th
       name""";
   ```
 - **`\s`** translates to a single ASCII space, useful for preserving trailing whitespace that would
- otherwise be stripped.
+  otherwise be stripped.
 
 ### Common Pitfalls
 
@@ -671,33 +674,33 @@ Always prefer arrow syntax unless you deliberately need fall-through.
 
 ## JEP Reference Table
 
-| JEP | Feature | Java Version | Status |
+| JEP | Feature                          | Java Version | Status   |
 | --- | -------------------------------- | ------------ | -------- |
-| 355 | Text Blocks (preview) | 13 | Preview |
-| 368 | Text Blocks (second preview) | 14 | Preview |
-| 378 | Text Blocks | 15 | Standard |
-| 305 | Pattern Matching for instanceof | 14 | Preview |
-| 375 | Pattern Matching for instanceof | 15 | Preview |
-| 394 | Pattern Matching for instanceof | 16 | Standard |
-| 325 | Switch Expressions (preview) | 12 | Preview |
-| 361 | Switch Expressions (second prev) | 13 | Preview |
-| 394 | Switch Expressions | 14 | Standard |
-| 409 | Sealed Classes | 17 | Standard |
-| 395 | Records | 16 | Standard |
-| 440 | Record Patterns (preview) | 19 | Preview |
-| 441 | Pattern Matching for switch | 21 | Standard |
-| 443 | Unnamed Patterns and Variables | 22 | Standard |
+| 355 | Text Blocks (preview)            | 13           | Preview  |
+| 368 | Text Blocks (second preview)     | 14           | Preview  |
+| 378 | Text Blocks                      | 15           | Standard |
+| 305 | Pattern Matching for instanceof  | 14           | Preview  |
+| 375 | Pattern Matching for instanceof  | 15           | Preview  |
+| 394 | Pattern Matching for instanceof  | 16           | Standard |
+| 325 | Switch Expressions (preview)     | 12           | Preview  |
+| 361 | Switch Expressions (second prev) | 13           | Preview  |
+| 394 | Switch Expressions               | 14           | Standard |
+| 409 | Sealed Classes                   | 17           | Standard |
+| 395 | Records                          | 16           | Standard |
+| 440 | Record Patterns (preview)        | 19           | Preview  |
+| 441 | Pattern Matching for switch      | 21           | Standard |
+| 443 | Unnamed Patterns and Variables   | 22           | Standard |
 
 ## See Also
 
 - [Concurrency](../06-concurrency/01-concurrency.md) -- pattern matching and sealed classes
- integrate with concurrent data structures
+  integrate with concurrent data structures
 - [Collections Framework](../04-collections/01-collections-framework.md) -- records as collection
- element types
+  element types
 - [Style and Patterns](../07-best-practices/01-style-and-patterns.md) -- when to use records vs
- regular classes in production code
+  regular classes in production code
 - [Virtual Threads and Structured Concurrency](../08-modern-java/02-virtual-threads-structured-concurrency.md)
- -- modern concurrency features
+  -- modern concurrency features
 
 ## Summary
 

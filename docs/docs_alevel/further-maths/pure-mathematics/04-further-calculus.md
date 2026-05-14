@@ -1,6 +1,8 @@
 ---
 title: Further Calculus
-description: "A-Level Further Maths notes on Further Calculus: Board Coverage; 1. Integration by Parts (Advanced); 1.1 The formula — proof from the product rule."
+description:
+  'A-Level Further Maths notes on Further Calculus: Board Coverage; 1. Integration by Parts
+  (Advanced); 1.1 The formula — proof from the product rule.'
 date: 2026-04-02T00:00:00.000Z
 tags:
   - FurtherMaths
@@ -10,6 +12,7 @@ categories:
 slug: further-calculus
 sidebar_position: 4
 ---
+
 ## Further Calculus
 
 This topic extends the calculus of A Level Mathematics to more powerful integration techniques,
@@ -18,12 +21,12 @@ Are essential for university-level mathematics, physics, and engineering.
 
 ### Board Coverage
 
-| Board | Paper | Notes |
+| Board      | Paper    | Notes                                                             |
 | ---------- | -------- | ----------------------------------------------------------------- |
-| AQA | Paper 1 | Integration by parts, inverse trig integrals, volumes, arc length |
-| Edexcel | FP1, FP2 | Parts in FP1; inverse trig, volumes, arc length in FP2 |
-| OCR (A) | Paper 1 | Parts, inverse trig integrals, volumes |
-| CIE (9231) | P1, P2 | Parts and volumes in P1; arc length and surface area in P2 |
+| AQA        | Paper 1  | Integration by parts, inverse trig integrals, volumes, arc length |
+| Edexcel    | FP1, FP2 | Parts in FP1; inverse trig, volumes, arc length in FP2            |
+| OCR (A)    | Paper 1  | Parts, inverse trig integrals, volumes                            |
+| CIE (9231) | P1, P2   | Parts and volumes in P1; arc length and surface area in P2        |
 
 :::info All boards provide standard integrals in the formula booklet. You must know how to apply
 Integration by parts repeatedly, derive and use reduction formulae, and set up volumes of revolution
@@ -372,8 +375,8 @@ $x$-axis.
 
 $$S = 2\pi\int_0^1 x^2\sqrt{1+4x^2}\,dx$$
 
-Let $x = \frac{1}{2}\tan\theta$$dx = \frac{1}{2}\sec^2\theta\,d\theta$. When $x = 0$
-$\theta = 0$; when $x = 1$$\theta = \arctan 2$.
+Let $x = \frac{1}{2}\tan\theta$$dx = \frac{1}{2}\sec^2\theta\,d\theta$. When $x = 0$ $\theta = 0$;
+when $x = 1$$\theta = \arctan 2$.
 
 $$
 S = 2\pi\int_0^{\arctan 2}\frac◆LB◆\tan^2\theta◆RB◆◆LB◆4◆RB◆\cdot\sec\theta\cdot\frac{1}{2}\sec^2\theta\,d\theta
@@ -398,15 +401,15 @@ Length in Paper 1. :::
 
 ## 7. Summary of Key Results
 
-| Integral | Result |
+| Integral                                                    | Result                                                             |
 | ----------------------------------------------------------- | ------------------------------------------------------------------ |
-| $\displaystyle\int\frac{1}{a^2+x^2}\,dx$ | $\dfrac{1}{a}\arctan\dfrac{x}{a}+C$ |
-| $\displaystyle\int\frac◆LB◆1◆RB◆◆LB◆\sqrt{a^2-x^2}◆RB◆\,dx$ | $\arcsin\dfrac{x}{a}+C$ |
-| $\displaystyle\int\frac{1}{a^2-x^2}\,dx$ | $\dfrac{1}{2a}\ln\left\|\dfrac{a+x}{a-x}\right\|+C$ |
-| $\dfrac{d}{dx}\arcsin x$ | $\dfrac◆LB◆1◆RB◆◆LB◆\sqrt{1-x^2}◆RB◆$ |
-| $\dfrac{d}{dx}\arctan x$ | $\dfrac{1}{1+x^2}$ |
-| Vol. About $x$-axis | $\pi\displaystyle\int_a^b y^2\,dx$ |
-| Arc length | $\displaystyle\int\sqrt◆LB◆1+\left(\frac{dy}{dx}\right)^2◆RB◆\,dx$ |
+| $\displaystyle\int\frac{1}{a^2+x^2}\,dx$                    | $\dfrac{1}{a}\arctan\dfrac{x}{a}+C$                                |
+| $\displaystyle\int\frac◆LB◆1◆RB◆◆LB◆\sqrt{a^2-x^2}◆RB◆\,dx$ | $\arcsin\dfrac{x}{a}+C$                                            |
+| $\displaystyle\int\frac{1}{a^2-x^2}\,dx$                    | $\dfrac{1}{2a}\ln\left\|\dfrac{a+x}{a-x}\right\|+C$                |
+| $\dfrac{d}{dx}\arcsin x$                                    | $\dfrac◆LB◆1◆RB◆◆LB◆\sqrt{1-x^2}◆RB◆$                              |
+| $\dfrac{d}{dx}\arctan x$                                    | $\dfrac{1}{1+x^2}$                                                 |
+| Vol. About $x$-axis                                         | $\pi\displaystyle\int_a^b y^2\,dx$                                 |
+| Arc length                                                  | $\displaystyle\int\sqrt◆LB◆1+\left(\frac{dy}{dx}\right)^2◆RB◆\,dx$ |
 
 <hr />
 
@@ -686,8 +689,8 @@ $$= \left[-\frac{2}{t+1}\right]_0^1 = -1 + 2 = \boxed{1}$$
 
 ### Example 8.5: Differentiation of parametric arc length
 
-**Problem.** A curve is given by $x = t - \sin t$$y = 1 - \cos t$ for $0 \leq t \leq 2\pi$. Find
-The total arc length.
+**Problem.** A curve is given by $x = t - \sin t$$y = 1 - \cos t$ for $0 \leq t \leq 2\pi$. Find The
+total arc length.
 
 **Solution.** $\dfrac{dx}{dt} = 1 - \cos t$$\dfrac{dy}{dt} = \sin t$.
 
@@ -732,13 +735,13 @@ $$\boxed{\int \arcsin x\,dx = x\arcsin x + \sqrt{1-x^2} + C}$$
 
 ## 9. Common Pitfalls
 
-| Pitfall | Correct Approach |
+| Pitfall                                                                         | Correct Approach                                                                             |
 | ------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- | --------------------------------------------- | ----------------------------------------------- |
 | Forgetting the chain rule when differentiating composite inverse trig functions | Always write $\dfrac{d}{dx}\!\left[\arcsin(u)\right] = \dfrac◆LB◆u'◆RB◆◆LB◆\sqrt{1-u^2}◆RB◆$ |
 | Using $\ln                                                                      | x                                                                                            | $ before checking if the integral is improper | Check for discontinuities in the interval first |
-| Forgetting $+C$ on every antiderivative | Every indefinite integral needs an arbitrary constant |
-| Applying reduction formulae without checking the base case | Always state $I_0$ or $I_1$ explicitly |
-| Confusing $\dfrac{d^n y}{dx^n}$ notation with $\left(\dfrac{dy}{dx}\right)^n$ | $\dfrac{d^n y}{dx^n}$ is the $n$-th derivative, not the $n$-th power |
+| Forgetting $+C$ on every antiderivative                                         | Every indefinite integral needs an arbitrary constant                                        |
+| Applying reduction formulae without checking the base case                      | Always state $I_0$ or $I_1$ explicitly                                                       |
+| Confusing $\dfrac{d^n y}{dx^n}$ notation with $\left(\dfrac{dy}{dx}\right)^n$   | $\dfrac{d^n y}{dx^n}$ is the $n$-th derivative, not the $n$-th power                         |
 
 ---
 
@@ -811,8 +814,8 @@ $\blacksquare$
 
 ### Question 12
 
-Evaluate $\displaystyle\int_0^1 \frac◆LB◆\ln x◆RB◆◆LB◆1+x◆RB◆\,dx$Expressing your answer in terms
-Of $\displaystyle\sum_{n=1}^{\infty} \frac{(-1)^{n+1}}{n^2}$.
+Evaluate $\displaystyle\int_0^1 \frac◆LB◆\ln x◆RB◆◆LB◆1+x◆RB◆\,dx$Expressing your answer in terms Of
+$\displaystyle\sum_{n=1}^{\infty} \frac{(-1)^{n+1}}{n^2}$.
 
 <details>
 <summary>Solution</summary>
@@ -875,34 +878,34 @@ The function higher on the list should be chosen as $u$.
 
 ### 12.2 The Weierstrass substitution
 
-For integrals involving rational functions of $\sin x$ and $\cos x$The substitution
-$t = \tan(x/2)$ converts them to rational functions of $t$:
+For integrals involving rational functions of $\sin x$ and $\cos x$The substitution $t = \tan(x/2)$
+converts them to rational functions of $t$:
 
 $\sin x = \dfrac{2t}{1+t^2}$$\cos x = \dfrac{1-t^2}{1+t^2}$$dx = \dfrac{2\,dt}{1+t^2}$.
 
 ### 12.3 Recognising standard integral forms
 
-| Form | Result |
+| Form                                                          | Result                    |
 | ------------------------------------------------------------- | ------------------------- | ---- | ---- |
-| $\displaystyle\int \frac{f'(x)}{f(x)}\,dx$ | $\ln                      | f(x) | + C$ |
-| $\displaystyle\int \frac◆LB◆f'(x)◆RB◆◆LB◆\sqrt{f(x)}◆RB◆\,dx$ | $2\sqrt{f(x)} + C$ |
-| $\displaystyle\int f(x) \cdot f'(x)\,dx$ | $\dfrac{[f(x)]^2}{2} + C$ |
+| $\displaystyle\int \frac{f'(x)}{f(x)}\,dx$                    | $\ln                      | f(x) | + C$ |
+| $\displaystyle\int \frac◆LB◆f'(x)◆RB◆◆LB◆\sqrt{f(x)}◆RB◆\,dx$ | $2\sqrt{f(x)} + C$        |
+| $\displaystyle\int f(x) \cdot f'(x)\,dx$                      | $\dfrac{[f(x)]^2}{2} + C$ |
 
 ---
 
 ## 13. Summary of Key Results
 
-| Result | Formula |
+| Result                       | Formula                                                                     |
 | ---------------------------- | --------------------------------------------------------------------------- |
-| Integration by parts | $\displaystyle\int u\,dv = uv - \int v\,du$ |
-| Reduction formula (by parts) | Express $I_n$ in terms of $I_{n-1}$ or $I_{n-2}$ |
-| Arc length (Cartesian) | $s = \displaystyle\int_a^b \sqrt◆LB◆1+\left(\frac{dy}{dx}\right)^2◆RB◆\,dx$ |
-| Arc length (parametric) | $s = \displaystyle\int_\alpha^\beta \sqrt◆LB◆\dot{x}^2+\dot{y}^2◆RB◆\,dt$ |
-| Area under parametric curve | $A = \displaystyle\int y\frac{dx}{dt}\,dt$ |
-| Surface of revolution | $S = 2\pi\displaystyle\int_a^b y\sqrt{1+(y')^2}\,dx$ |
-| Derivative of $\arcsin x$ | $\dfrac◆LB◆1◆RB◆◆LB◆\sqrt{1-x^2}◆RB◆$ |
-| Derivative of $\arctan x$ | $\dfrac{1}{1+x^2}$ |
-| Improper integral test | $\displaystyle\int_a^\infty f(x)\,dx = \lim_{b\to\infty}\int_a^b f(x)\,dx$ |
+| Integration by parts         | $\displaystyle\int u\,dv = uv - \int v\,du$                                 |
+| Reduction formula (by parts) | Express $I_n$ in terms of $I_{n-1}$ or $I_{n-2}$                            |
+| Arc length (Cartesian)       | $s = \displaystyle\int_a^b \sqrt◆LB◆1+\left(\frac{dy}{dx}\right)^2◆RB◆\,dx$ |
+| Arc length (parametric)      | $s = \displaystyle\int_\alpha^\beta \sqrt◆LB◆\dot{x}^2+\dot{y}^2◆RB◆\,dt$   |
+| Area under parametric curve  | $A = \displaystyle\int y\frac{dx}{dt}\,dt$                                  |
+| Surface of revolution        | $S = 2\pi\displaystyle\int_a^b y\sqrt{1+(y')^2}\,dx$                        |
+| Derivative of $\arcsin x$    | $\dfrac◆LB◆1◆RB◆◆LB◆\sqrt{1-x^2}◆RB◆$                                       |
+| Derivative of $\arctan x$    | $\dfrac{1}{1+x^2}$                                                          |
+| Improper integral test       | $\displaystyle\int_a^\infty f(x)\,dx = \lim_{b\to\infty}\int_a^b f(x)\,dx$  |
 
 ---
 

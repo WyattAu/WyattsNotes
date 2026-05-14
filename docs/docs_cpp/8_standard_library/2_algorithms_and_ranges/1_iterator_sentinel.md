@@ -1,6 +1,8 @@
 ---
 title: Iterator-Sentinel Model
-description: "C++: Iterator-Sentinel Model — Iterators and Sentinels in C++20; `std::ranges::begin` and `std::ranges::end` for thorough revision and examination prepar."
+description:
+  'C++: Iterator-Sentinel Model — Iterators and Sentinels in C++20; `std::ranges::begin` and
+  `std::ranges::end` for thorough revision and examination prepar.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -8,6 +10,7 @@ categories:
   - Cpp
 slug: iterator-sentinel-model
 ---
+
 ## The Iterator-Sentinel Model
 
 C++20 fundamentally restructured the standard library around **ranges and views**, introducing the
@@ -25,10 +28,10 @@ A range that is not necessarily an iterator.
 
 The key distinction from the traditional iterator-pair model:
 
-- **Traditional (C++17)**: A range is defined by a pair of iterators `[begin, end)`Both of the
- same type `I`.
-- **C++20**: A range is defined by an iterator `begin` and a sentinel `end`Potentially of
- different types `I` and `S` where `std::sentinel_for&lt;S, I>` holds [N4950 §25.3.5.2].
+- **Traditional (C++17)**: A range is defined by a pair of iterators `[begin, end)`Both of the same
+  type `I`.
+- **C++20**: A range is defined by an iterator `begin` and a sentinel `end`Potentially of different
+  types `I` and `S` where `std::sentinel_for&lt;S, I>` holds [N4950 §25.3.5.2].
 
 The `std::sentinel_for` concept requires [N4950 §25.3.5.2]:
 
@@ -197,29 +200,27 @@ int main() {
 }
 ```
 
-:::info
-The iterator-sentinel model eliminates the need to compute `end` iterators for bounded
+:::info The iterator-sentinel model eliminates the need to compute `end` iterators for bounded
 Sequences. For null-terminated strings, this avoids computing `strlen` before iteration. For counted
-Ranges, it avoids computing the end pointer from a base + count.
-:::
+Ranges, it avoids computing the end pointer from a base + count. :::
 
 ## Iterator Concepts Hierarchy
 
-C++20 replaced the legacy iterator category tags (`std::input_iterator_tag`Etc.) with a hierarchy
-Of concepts [N4950 §25.3.4]. Understanding this hierarchy is essential for implementing custom
+C++20 replaced the legacy iterator category tags (`std::input_iterator_tag`Etc.) with a hierarchy Of
+concepts [N4950 §25.3.4]. Understanding this hierarchy is essential for implementing custom
 Sentinels and ranges.
 
 ### The Concept Refinement Chain
 
-| Concept | Refines | Capabilities |
-| :------------------------------ | :-------------------------------------------------------------------------------------- | :---------------------------------------------------------------- |
-| `std::input_or_output_iterator` | — | Can be incremented (`++it`), dereferenceable (`*it`) |
-| `std::input_iterator` | `input_or_output_iterator``std::indirectly_readable``std::input_or_output_iterator` | Multi-pass read, `->``==` / `!=` with sentinel |
-| `std::output_iterator` | `input_or_output_iterator` | Can write through `*it = val` |
-| `std::forward_iterator` | `std::input_iterator` | Multi-pass, default-constructible |
-| `std::bidirectional_iterator` | `std::forward_iterator` | Can decrement (`--it`) |
-| `std::random_access_iterator` | `std::bidirectional_iterator` | Arithmetic (`it + n``it - n`), comparison (`&lt;``&gt;`) |
-| `std::contiguous_iterator` | `std::random_access_iterator` | Elements are contiguous in memory; `std::to_address(it)` is valid |
+| Concept                         | Refines                                                                             | Capabilities                                                      |
+| :------------------------------ | :---------------------------------------------------------------------------------- | :---------------------------------------------------------------- |
+| `std::input_or_output_iterator` | —                                                                                   | Can be incremented (`++it`), dereferenceable (`*it`)              |
+| `std::input_iterator`           | `input_or_output_iterator``std::indirectly_readable``std::input_or_output_iterator` | Multi-pass read, `->``==` / `!=` with sentinel                    |
+| `std::output_iterator`          | `input_or_output_iterator`                                                          | Can write through `*it = val`                                     |
+| `std::forward_iterator`         | `std::input_iterator`                                                               | Multi-pass, default-constructible                                 |
+| `std::bidirectional_iterator`   | `std::forward_iterator`                                                             | Can decrement (`--it`)                                            |
+| `std::random_access_iterator`   | `std::bidirectional_iterator`                                                       | Arithmetic (`it + n``it - n`), comparison (`&lt;``&gt;`)          |
+| `std::contiguous_iterator`      | `std::random_access_iterator`                                                       | Elements are contiguous in memory; `std::to_address(it)` is valid |
 
 ### The `std::semiregular` Constraint on Sentinels
 
@@ -387,8 +388,8 @@ Without.
 ### Sized Ranges
 
 A **sized range** models `std::sized_range`Meaning `ranges::size(r)` is available in O(1) time
-[N4950 §25.3.6]. For standard containers, this is implemented via a stored size counter or
-By computing `end() - begin()` for random-access iterators.
+[N4950 §25.3.6]. For standard containers, this is implemented via a stored size counter or By
+computing `end() - begin()` for random-access iterators.
 
 ### Unbounded Ranges
 

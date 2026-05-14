@@ -1,6 +1,8 @@
 ---
 title: Differential Equations
-description: "University-level notes on Differential Equations: 1. Introduction and Classification; 1.1 Basic Definitions; 1.2 Classification of ODEs."
+description:
+  'University-level notes on Differential Equations: 1. Introduction and Classification; 1.1 Basic
+  Definitions; 1.2 Classification of ODEs.'
 date: 2026-04-24T00:00:00.000Z
 tags:
   - Mathematics
@@ -9,6 +11,7 @@ categories:
   - Mathematics
 slug: differential-equations
 ---
+
 ## 1. Introduction and Classification
 
 ### 1.1 Basic Definitions
@@ -38,29 +41,29 @@ More points.
 Differential equations arise throughout the natural sciences. A few canonical examples:
 
 1. **Newton's law of cooling.** The temperature $T(t)$ of a body in a medium at temperature $T_m$
- satisfies $\frac{dT}{dt} = -k(T - T_m)$A first-order linear ODE.
+   satisfies $\frac{dT}{dt} = -k(T - T_m)$A first-order linear ODE.
 
 2. **Harmonic oscillator.** A mass on a spring with damping obeys
- $m\frac{d^2 x}{dt^2} + c\frac{dx}{dt} + kx = F(t)$A second-order linear ODE.
+   $m\frac{d^2 x}{dt^2} + c\frac{dx}{dt} + kx = F(t)$A second-order linear ODE.
 
 3. **Logistic population growth.** $\frac{dP}{dt} = rP\left(1 - \frac{P}{K}\right)$A first-order
- nonlinear (Bernoulli) ODE.
+   nonlinear (Bernoulli) ODE.
 
 4. **Lotka-Volterra predator-prey model.**
- $\frac{dx}{dt} = x(\alpha - \beta y)$$\frac{dy}{dt} = y(-\gamma + \delta x)$A coupled
- nonlinear system.
+   $\frac{dx}{dt} = x(\alpha - \beta y)$$\frac{dy}{dt} = y(-\gamma + \delta x)$A coupled nonlinear
+   system.
 
 5. **RC circuit.** The charge $q(t)$ on a capacitor satisfies $R\frac{dq}{dt} + \frac{q}{C} = V(t)$
- a first-order linear ODE.
+   a first-order linear ODE.
 
 6. **Heat equation.** The temperature $u(x, t)$ in a rod satisfies $u_t = \alpha^2 u_{xx}$A
- second-order linear PDE.
+   second-order linear PDE.
 
 7. **Wave equation.** The displacement $u(x, t)$ of a string satisfies $u_{tt} = c^2 u_{xx}$A
- second-order linear PDE.
+   second-order linear PDE.
 
 8. **Laplace's equation.** The steady-state temperature satisfies $u_{xx} + u_{yy} = 0$A
- second-order linear PDE.
+   second-order linear PDE.
 
 ### 1.5 Classification Tree
 
@@ -106,8 +109,8 @@ Differential Equations
 
 (c) Second-order, linear, homogeneous. This is Bessel's equation of order 1.
 
-(d) Second-order PDE, linear, homogeneous. This is Laplace's equation; $A = 1$$C = 1$$B = 0$
-So $B^2 - 4AC = -4 \lt{} 0$ (elliptic). $\blacksquare$
+(d) Second-order PDE, linear, homogeneous. This is Laplace's equation; $A = 1$$C = 1$$B = 0$ So
+$B^2 - 4AC = -4 \lt{} 0$ (elliptic). $\blacksquare$
 
 </details>
 
@@ -136,7 +139,7 @@ $$\frac{dy}{dx} + P(x)y = Q(x)$$
 
 $$y(x) = e^{-\int P(x)\, dx}\left(\int Q(x) e^{\int P(x)\, dx}\, dx + C\right)$$
 
-*Proof.* Multiply both sides by $\mu(x) = e^{\int P(x)\, dx}$:
+_Proof._ Multiply both sides by $\mu(x) = e^{\int P(x)\, dx}$:
 
 $$\frac{d}{dx}(\mu y) = \mu \frac{dy}{dx} + \mu P y = \mu \frac{dy}{dx} + \mu' y = \mu\left(\frac{dy}{dx} + Py\right) = \mu Q$$
 
@@ -146,7 +149,7 @@ Integrating: $\mu y = \int \mu Q\, dx + C$. Solving for $y$ gives the result. $\
 
 **Problem.** Solve $y' + \frac{2}{x}y = x^2$ for $x > 0$.
 
-*Solution.* $P(x) = 2/x$$Q(x) = x^2$.
+_Solution._ $P(x) = 2/x$$Q(x) = x^2$.
 
 $\mu(x) = e^{\int 2/x\, dx} = e^{2\ln x} = x^2$.
 
@@ -161,11 +164,11 @@ $\frac{\partial M}{\partial y} = \frac{\partial N}{\partial x}$.
 When exact, there exists $\Psi(x, y)$ such that $\frac{\partial \Psi}{\partial x} = M$ and
 $\frac{\partial \Psi}{\partial y} = N$And the solution is $\Psi(x, y) = C$.
 
-**Theorem 2.2.** If $M$ and $N$ have continuous partial derivatives on a connected domain
-$D$Then $M\, dx + N\, dy = 0$ is exact if and only if $M_y = N_x$.
+**Theorem 2.2.** If $M$ and $N$ have continuous partial derivatives on a connected domain $D$Then
+$M\, dx + N\, dy = 0$ is exact if and only if $M_y = N_x$.
 
-*Proof.* If exact, $M = \Psi_x$ and $N = \Psi_y$So $M_y = \Psi_{xy} = \Psi_{yx} = N_x$ by
-Clairaut. Conversely, if $M_y = N_x$Define
+_Proof._ If exact, $M = \Psi_x$ and $N = \Psi_y$So $M_y = \Psi_{xy} = \Psi_{yx} = N_x$ by Clairaut.
+Conversely, if $M_y = N_x$Define
 $\Psi(x, y) = \int_{x_0}^x M(t, y)\, dt + \int_{y_0}^y N(x_0, s)\, ds$. Then $\Psi_x = M(x, y)$ and
 $\Psi_y = \int_{x_0}^x M_y(t, y)\, dt + N(x_0, y) = \int_{x_0}^x N_x(t, y)\, dt + N(x_0, y) = N(x, y) - N(x_0, y) + N(x_0, y) = N(x, y)$.
 $\blacksquare$
@@ -174,7 +177,7 @@ $\blacksquare$
 
 **Problem.** Solve $(2xy + 3)\, dx + (x^2 - 1)\, dy = 0$.
 
-*Solution.* $M = 2xy + 3$$N = x^2 - 1$. Check: $M_y = 2x = N_x$. Exact.
+_Solution._ $M = 2xy + 3$$N = x^2 - 1$. Check: $M_y = 2x = N_x$. Exact.
 
 $\Psi_x = 2xy + 3 \implies \Psi = x^2 y + 3x + h(y)$.
 
@@ -206,8 +209,8 @@ $$\frac{dv}{dx} + (1 - n)P(x)v = (1 - n)Q(x)$$
 **Example.** Solve $y' + y = y^2 e^x$.
 
 Here $n = 2$So set $v = y^{-1}$. Then $v' = -y^{-2}y'$And the equation becomes $v' - v = -e^x$.
-Integrating factor: $e^{-x}$. So $(v e^{-x})' = -1$Giving $ve^{-x} = -x + C$$v = -xe^x + Ce^x$
-And $y = 1/(C - x)e^x$.
+Integrating factor: $e^{-x}$. So $(v e^{-x})' = -1$Giving $ve^{-x} = -x + C$$v = -xe^x + Ce^x$ And
+$y = 1/(C - x)e^x$.
 
 ### 2.8 Existence and Uniqueness
 
@@ -225,8 +228,8 @@ Several substitutions reduce specific equations to separable or linear form:
 ### 2.10 Homogeneous Equations
 
 An ODE of the form $\frac{dy}{dx} = F\left(\frac{y}{x}\right)$ is called **homogeneous** (not to be
-Confused with the linearity sense). The substitution $v = y/x$I.e., $y = vx$Gives $y' = v + xv'$
-So the equation becomes:
+Confused with the linearity sense). The substitution $v = y/x$I.e., $y = vx$Gives $y' = v + xv'$ So
+the equation becomes:
 
 $$v + x\frac{dv}{dx} = F(v) \implies x\frac{dv}{dx} = F(v) - v$$
 
@@ -239,7 +242,8 @@ This is separable: $\frac{dv}{F(v) - v} = \frac{dx}{x}$.
 <details>
 <summary>Solution</summary>
 
-*Solution.* Rewrite as $y' = \frac{1 + (y/x)^2}{y/x}$. This is homogeneous with $F(v) = \frac{1 + v^2}{v}$.
+_Solution._ Rewrite as $y' = \frac{1 + (y/x)^2}{y/x}$. This is homogeneous with
+$F(v) = \frac{1 + v^2}{v}$.
 
 Set $y = vx$: $v + xv' = \frac{1 + v^2}{v} = v + \frac{1}{v}$.
 
@@ -278,13 +282,13 @@ So $v = -x + C$And $y = x + \frac{1}{C - x}$.
 
 ### 2.13 Worked Example: Newton's Law of Cooling
 
-**Problem.** A body at $90\degree\mathrm{C{}$ is placed in a room at $20\degree\mathrm{C{}$. After 10
-Minutes, its temperature is $60\degree\mathrm{C{}$. When will it reach $30\degree\mathrm{C{}$?
+**Problem.** A body at $90\degree\mathrm{C{}$ is placed in a room at $20\degree\mathrm{C{}$. After
+10 Minutes, its temperature is $60\degree\mathrm{C{}$. When will it reach $30\degree\mathrm{C{}$?
 
 <details>
 <summary>Solution</summary>
 
-*Solution.* Newton's law of cooling: $\frac{dT}{dt} = -k(T - 20)$$T(0) = 90$.
+_Solution._ Newton's law of cooling: $\frac{dT}{dt} = -k(T - 20)$$T(0) = 90$.
 
 This is separable: $\frac{dT}{T - 20} = -k\, dt$.
 
@@ -296,7 +300,8 @@ $T(10) = 60 \implies 60 = 20 + 70e^{-10k} \implies e^{-10k} = 4/7$.
 
 $k = -\frac{1}{10}\ln(4/7) = \frac{\ln(7/4)}{10}$.
 
-For $T = 30$: $30 = 20 + 70e^{-kt} \implies e^{-kt} = 1/7 \implies t = \frac{\ln 7}{k} = \frac{10 \ln 7}{\ln(7/4)}$.
+For $T = 30$:
+$30 = 20 + 70e^{-kt} \implies e^{-kt} = 1/7 \implies t = \frac{\ln 7}{k} = \frac{10 \ln 7}{\ln(7/4)}$.
 
 Numerically: $t \approx \frac{10 \cdot 1.946}{0.5596} \approx 34.8$ minutes. $\blacksquare$
 
@@ -310,9 +315,10 @@ The mixture leaves at 3 L/min. Find the amount of salt after 30 minutes.
 <details>
 <summary>Solution</summary>
 
-*Solution.* Let $Q(t)$ be the amount of salt (kg) at time $t$ (min).
+_Solution._ Let $Q(t)$ be the amount of salt (kg) at time $t$ (min).
 
-Rate of change: $\frac{dQ}{dt} = \mathrm{rate\; in{} - \mathrm{rate\; out{} = 0 - 3 \cdot \frac{Q}{100}$.
+Rate of change:
+$\frac{dQ}{dt} = \mathrm{rate\; in{} - \mathrm{rate\; out{} = 0 - 3 \cdot \frac{Q}{100}$.
 
 $\frac{dQ}{dt} = -\frac{3Q}{100}$$Q(0) = 20$.
 
@@ -333,11 +339,12 @@ At $t = 30$: $Q(30) = 20e^{-0.9} \approx 20 \cdot 0.4066 \approx 8.13$ kg. $\bla
 <details>
 <summary>Solution</summary>
 
-*Solution.* $M = 3xy + 2y^2$$N = x^2 + 2xy$.
+_Solution._ $M = 3xy + 2y^2$$N = x^2 + 2xy$.
 
 $M_y = 3x + 4y$$N_x = 2x + 2y$. Since $M_y \neq N_x$Not exact.
 
-Check Case 1: $\frac{M_y - N_x}{N} = \frac{x + 2y}{x^2 + 2xy} = \frac{x + 2y}{x(x + 2y)} = \frac{1}{x}$.
+Check Case 1:
+$\frac{M_y - N_x}{N} = \frac{x + 2y}{x^2 + 2xy} = \frac{x + 2y}{x(x + 2y)} = \frac{1}{x}$.
 
 This depends only on $x$So $\mu(x) = e^{\int 1/x\, dx} = x$.
 
@@ -370,18 +377,16 @@ $\frac{dy}{dx} = 2Cx = \frac{2y}{x}$.
 
 Orthogonal trajectories satisfy $\frac{dy}{dx} = -\frac{x}{2y}$.
 
-Separating: $2y\, dy = -x\, dx$. Integrating: $y^2 = -\frac{x^2}{2} + C$Or $\frac{x^2}{2} + y^2 = C$.
-These are ellipses.
+Separating: $2y\, dy = -x\, dx$. Integrating: $y^2 = -\frac{x^2}{2} + C$Or
+$\frac{x^2}{2} + y^2 = C$. These are ellipses.
 
 ### 2.17 Common Pitfalls for First-Order ODEs
 
 :::caution Common Pitfall When separating variables, dividing by $h(y)$ can lose solutions where
-$h(y) = 0$. Always check whether $h(y) = 0$ yields valid solutions before dividing.
-:::
+$h(y) = 0$. Always check whether $h(y) = 0$ yields valid solutions before dividing. :::
 
 :::caution Common Pitfall Not every first-order ODE falls into a standard category. Equations like
-$y' = e^{x^2} + \sin(y^2)$ cannot be solved by elementary methods and require numerical
-Techniques.
+$y' = e^{x^2} + \sin(y^2)$ cannot be solved by elementary methods and require numerical Techniques.
 :::
 
 ## 3. Second-Order Linear ODEs
@@ -422,7 +427,7 @@ $y_h = e^{\alpha x}(c_1 \cos(\beta x) + c_2 \sin(\beta x))$.
 
 **Problem.** Solve $y'' - 5y' + 6y = 0$ with $y(0) = 1$$y'(0) = 0$.
 
-*Solution.* Characteristic equation: $r^2 - 5r + 6 = (r-2)(r-3) = 0$. Roots: $r = 2, 3$.
+_Solution._ Characteristic equation: $r^2 - 5r + 6 = (r-2)(r-3) = 0$. Roots: $r = 2, 3$.
 
 $y_h = c_1 e^{2x} + c_2 e^{3x}$.
 
@@ -437,7 +442,7 @@ $y = 3e^{2x} - 2e^{3x}$. $\blacksquare$
 <details>
 <summary>Solution</summary>
 
-*Solution.* Characteristic equation: $r^2 + 2r + 5 = 0$.
+_Solution._ Characteristic equation: $r^2 + 2r + 5 = 0$.
 
 $r = \frac{-2 \pm \sqrt{4 - 20}}{2} = \frac{-2 \pm \sqrt{-16}}{2} = -1 \pm 2i$.
 
@@ -462,7 +467,7 @@ $y = e^{-x}\left(\cos(2x) + \frac{1}{2}\sin(2x)\right)$. $\blacksquare$
 <details>
 <summary>Solution</summary>
 
-*Solution.* Characteristic equation: $r^2 - 4r + 4 = (r - 2)^2 = 0$. Repeated root $r = 2$.
+_Solution._ Characteristic equation: $r^2 - 4r + 4 = (r - 2)^2 = 0$. Repeated root $r = 2$.
 
 $y = c_1 e^{2x} + c_2 xe^{2x}$.
 
@@ -481,13 +486,13 @@ $y = e^{2x} + xe^{2x} = e^{2x}(1 + x)$. $\blacksquare$
 For equations $y'' + ay' + by = g(x)$ where $g(x)$ is a polynomial, exponential, sine, cosine, or
 Products of these, guess the form of $y_p$ and solve for coefficients.
 
-| $g(x)$ | Guess for $y_p$ |
+| $g(x)$                               | Guess for $y_p$                  |
 | ------------------------------------ | -------------------------------- |
-| $P_n(x)$ | $A_n x^n + \cdots + A_0$ |
-| $e^{ax}$ | $Ae^{ax}$ |
-| $\sin(bx)$ or $\cos(bx)$ | $A\sin(bx) + B\cos(bx)$ |
-| $e^{ax} P_n(x)$ | $e^{ax}(A_n x^n + \cdots + A_0)$ |
-| $e^{ax}\sin(bx)$ or $e^{ax}\cos(bx)$ | $e^{ax}(A\sin(bx) + B\cos(bx))$ |
+| $P_n(x)$                             | $A_n x^n + \cdots + A_0$         |
+| $e^{ax}$                             | $Ae^{ax}$                        |
+| $\sin(bx)$ or $\cos(bx)$             | $A\sin(bx) + B\cos(bx)$          |
+| $e^{ax} P_n(x)$                      | $e^{ax}(A_n x^n + \cdots + A_0)$ |
+| $e^{ax}\sin(bx)$ or $e^{ax}\cos(bx)$ | $e^{ax}(A\sin(bx) + B\cos(bx))$  |
 
 **Rule.** If any term of the guess is a solution of the homogeneous equation, multiply by $x$ (or
 $x^2$ if already multiplied by $x$).
@@ -496,7 +501,7 @@ $x^2$ if already multiplied by $x$).
 
 **Problem.** Solve $y'' - y = 2e^x$.
 
-*Solution.* Homogeneous: $r^2 - 1 = 0$Roots $\pm 1$. $y_h = c_1 e^x + c_2 e^{-x}$.
+_Solution._ Homogeneous: $r^2 - 1 = 0$Roots $\pm 1$. $y_h = c_1 e^x + c_2 e^{-x}$.
 
 Since $e^x$ is a homogeneous solution, guess $y_p = Axe^x$. $y_p' = Ae^x + Axe^x$
 $y_p'' = 2Ae^x + Axe^x$. $y_p'' - y_p = (2Ae^x + Axe^x) - Axe^x = 2Ae^x = 2e^x$So $A = 1$.
@@ -510,7 +515,7 @@ $y = c_1 e^x + c_2 e^{-x} + xe^x$. $\blacksquare$
 <details>
 <summary>Solution</summary>
 
-*Solution.* Homogeneous: $r^2 + 3r + 2 = (r+1)(r+2) = 0$Roots $-1, -2$.
+_Solution._ Homogeneous: $r^2 + 3r + 2 = (r+1)(r+2) = 0$Roots $-1, -2$.
 
 $y_h = c_1 e^{-x} + c_2 e^{-2x}$.
 
@@ -521,6 +526,7 @@ Substituting: $2A + 3(2Ax + B) + 2(Ax^2 + Bx + C) = x^2 + 1$.
 $2A + 6Ax + 3B + 2Ax^2 + 2Bx + 2C = x^2 + 1$.
 
 Matching coefficients:
+
 - $x^2$: $2A = 1 \implies A = 1/2$
 - $x$: $6A + 2B = 0 \implies 3 + 2B = 0 \implies B = -3/2$
 - Constant: $2A + 3B + 2C = 1 \implies 1 - 9/2 + 2C = 1 \implies 2C = 9/2 \implies C = 9/4$
@@ -530,7 +536,6 @@ $y_p = \frac{x^2}{2} - \frac{3x}{2} + \frac{9}{4}$.
 $y = c_1 e^{-x} + c_2 e^{-2x} + \frac{x^2}{2} - \frac{3x}{2} + \frac{9}{4}$. $\blacksquare$
 
 </details>
-
 
 ### 3.8b Worked Example: Undetermined Coefficients with Product
 
@@ -580,15 +585,15 @@ Setting equal to $F_0 \cos(\omega_0 t)$: $A = \frac{F_0}{2\omega_0}$.
 
 $$y_p = \frac{F_0}{2\omega_0} t \sin(\omega_0 t)$$
 
-The amplitude grows linearly with $t$ --- this is **resonance**. Physically, the system absorbs energy
-From the periodic forcing at its natural frequency, causing unbounded oscillations.
+The amplitude grows linearly with $t$ --- this is **resonance**. Physically, the system absorbs
+energy From the periodic forcing at its natural frequency, causing unbounded oscillations.
 
 **Worked Example.** Solve $y'' + 9y = 6\cos(3t)$$y(0) = 0$$y'(0) = 0$.
 
 <details>
 <summary>Solution</summary>
 
-*Solution.* $\omega_0 = 3$$\omega = 3$So this is the resonant case.
+_Solution._ $\omega_0 = 3$$\omega = 3$So this is the resonant case.
 
 Homogeneous: $r^2 + 9 = 0$$r = \pm 3i$. $y_h = c_1 \cos(3t) + c_2 \sin(3t)$.
 
@@ -615,7 +620,7 @@ $$y_p = -y_1 \int \frac{y_2 g}{W}\, dx + y_2 \int \frac{y_1 g}{W}\, dx$$
 
 Where $W = W(y_1, y_2) = y_1 y_2' - y_2 y_1'$.
 
-*Proof.* Seek $y_p = u_1(x)y_1(x) + u_2(x)y_2(x)$. Impose the constraint $u_1'y_1 + u_2'y_2 = 0$.
+_Proof._ Seek $y_p = u_1(x)y_1(x) + u_2(x)y_2(x)$. Impose the constraint $u_1'y_1 + u_2'y_2 = 0$.
 Then $y_p' = u_1 y_1' + u_2 y_2'$ and $y_p'' = u_1' y_1' + u_1 y_1'' + u_2' y_2' + u_2 y_2''$.
 Substituting into the ODE:
 $(u_1'y_1' + u_2'y_2') + u_1(y_1'' + py_1' + qy_1) + u_2(y_2'' + py_2' + qy_2) = g$. Since
@@ -626,7 +631,7 @@ With $u_1'y_1 + u_2'y_2 = 0$Solving gives the formulas above. $\blacksquare$
 
 **Problem.** Solve $y'' + y = \tan x$ using variation of parameters.
 
-*Solution.* $y_1 = \cos x$$y_2 = \sin x$. $W = \cos x \cdot \cos x - \sin x \cdot (-\sin x) = 1$.
+_Solution._ $y_1 = \cos x$$y_2 = \sin x$. $W = \cos x \cdot \cos x - \sin x \cdot (-\sin x) = 1$.
 
 $u_1' = -\frac{y_2 g}{W} = -\sin x \tan x = -\frac{\sin^2 x}{\cos x} = -(1 - \cos^2 x)/\cos x = -\sec x + \cos x$.
 
@@ -645,7 +650,7 @@ $y = c_1 \cos x + c_2 \sin x - \cos x \ln|\sec x + \tan x|$. $\blacksquare$
 **Theorem 3.5.** Given one solution $y_1(x)$ of $y'' + p(x)y' + q(x)y = 0$A second linearly
 Independent solution is obtained by setting $y_2 = y_1 \int \frac{e^{-\int p(x)\, dx}}{y_1^2}\, dx$.
 
-*Proof.* Seek $y_2 = v(x) y_1(x)$. Then $y_2' = v'y_1 + vy_1'$ and
+_Proof._ Seek $y_2 = v(x) y_1(x)$. Then $y_2' = v'y_1 + vy_1'$ and
 $y_2'' = v''y_1 + 2v'y_1' + vy_1''$. Substituting into the ODE:
 
 $v''y_1 + 2v'y_1' + vy_1'' + p(v'y_1 + vy_1') + qvy_1 = 0$
@@ -669,7 +674,7 @@ Since $w = v'$We obtain the result. $\blacksquare$
 <details>
 <summary>Solution</summary>
 
-*Solution.* Here $p(x) = -2$So $e^{-\int p\, dx} = e^{2x}$.
+_Solution._ Here $p(x) = -2$So $e^{-\int p\, dx} = e^{2x}$.
 
 $y_2 = e^x \int \frac{e^{2x}}{e^{2x}}\, dx = e^x \int 1\, dx = xe^x$.
 
@@ -688,11 +693,9 @@ The substitution $y = x^r$ gives the characteristic equation
 
 $$r(r - 1) + ar + b = r^2 + (a - 1)r + b = 0$$
 
-**Case 1: Two distinct real roots $r_1 \neq r_2$.**
-$y_h = c_1 x^{r_1} + c_2 x^{r_2}$.
+**Case 1: Two distinct real roots $r_1 \neq r_2$.** $y_h = c_1 x^{r_1} + c_2 x^{r_2}$.
 
-**Case 2: Repeated root $r$.**
-$y_h = c_1 x^r + c_2 x^r \ln x$.
+**Case 2: Repeated root $r$.** $y_h = c_1 x^r + c_2 x^r \ln x$.
 
 **Case 3: Complex roots $r = \alpha \pm i\beta$.**
 $y_h = x^{\alpha}(c_1 \cos(\beta \ln x) + c_2 \sin(\beta \ln x))$.
@@ -704,7 +707,7 @@ $y_h = x^{\alpha}(c_1 \cos(\beta \ln x) + c_2 \sin(\beta \ln x))$.
 <details>
 <summary>Solution</summary>
 
-*Solution.* Try $y = x^r$: $r(r-1) - 3r + 4 = r^2 - 4r + 4 = (r-2)^2 = 0$.
+_Solution._ Try $y = x^r$: $r(r-1) - 3r + 4 = r^2 - 4r + 4 = (r-2)^2 = 0$.
 
 Repeated root $r = 2$.
 
@@ -717,7 +720,7 @@ $y = c_1 x^2 + c_2 x^2 \ln x$. $\blacksquare$
 <details>
 <summary>Solution</summary>
 
-*Solution.* $r(r-1) + r + 1 = r^2 + 1 = 0$. Roots $r = \pm i$.
+_Solution._ $r(r-1) + r + 1 = r^2 + 1 = 0$. Roots $r = \pm i$.
 
 Here $\alpha = 0$$\beta = 1$.
 
@@ -732,7 +735,7 @@ For $y^{(n)} + a_{n-1}y^{(n-1)} + \cdots + a_1 y' + a_0 y = 0$:
 - Characteristic equation $r^n + a_{n-1}r^{n-1} + \cdots + a_0 = 0$.
 - For root $r$ of multiplicity $m$: include $e^{rx}, xe^{rx}, \ldots, x^{m-1}e^{rx}$.
 - For complex roots $\alpha \pm i\beta$ of multiplicity $m$: include
- $e^{\alpha x} x^k \cos(\beta x)$ and $e^{\alpha x} x^k \sin(\beta x)$ for $k = 0, \ldots, m - 1$.
+  $e^{\alpha x} x^k \cos(\beta x)$ and $e^{\alpha x} x^k \sin(\beta x)$ for $k = 0, \ldots, m - 1$.
 
 ### 3.16 Spring-Mass-Damper Systems
 
@@ -747,37 +750,33 @@ $$x'' + 2\gamma x' + \omega_0^2 x = \frac{F(t)}{m}$$
 
 The homogeneous solution depends on the discriminant $\gamma^2 - \omega_0^2$:
 
-| Condition | Type | Homogeneous Solution |
-| ---------------------- | ------------ | ------------------------------------------------------- |
+| Condition                   | Type        | Homogeneous Solution                                                                                  |
+| --------------------------- | ----------- | ----------------------------------------------------------------------------------------------------- |
 | $\gamma^2 \lt{} \omega_0^2$ | Underdamped | $e^{-\gamma t}(c_1 \cos(\omega_d t) + c_2 \sin(\omega_d t))$$\omega_d = \sqrt{\omega_0^2 - \gamma^2}$ |
-| $\gamma^2 = \omega_0^2$ | Critical | $e^{-\gamma t}(c_1 + c_2 t)$ |
-| $\gamma^2 > \omega_0^2$ | Overdamped | $c_1 e^{r_1 t} + c_2 e^{r_2 t}$$r_{1,2} = -\gamma \pm \sqrt{\gamma^2 - \omega_0^2}$ |
+| $\gamma^2 = \omega_0^2$     | Critical    | $e^{-\gamma t}(c_1 + c_2 t)$                                                                          |
+| $\gamma^2 > \omega_0^2$     | Overdamped  | $c_1 e^{r_1 t} + c_2 e^{r_2 t}$$r_{1,2} = -\gamma \pm \sqrt{\gamma^2 - \omega_0^2}$                   |
 
 ### 3.17 Common Pitfalls for Second-Order ODEs
 
 :::caution Common Pitfall When using undetermined coefficients, always check whether your guess
 Overlaps with the homogeneous solution. For $y'' - 4y = e^{2x}$Guessing $y_p = Ae^{2x}$ fails
-Because $e^{2x}$ satisfies the homogeneous equation. You must use $y_p = Axe^{2x}$ instead.
-:::
+Because $e^{2x}$ satisfies the homogeneous equation. You must use $y_p = Axe^{2x}$ instead. :::
 
-:::caution Common Pitfall For Euler-Cauchy equations, the substitution $y = x^r$ only works for $x > 0$.
-For $x < 0$Substitute $x = -e^t$ or use $y = (-x)^r$.
-:::
+:::caution Common Pitfall For Euler-Cauchy equations, the substitution $y = x^r$ only works for
+$x > 0$. For $x < 0$Substitute $x = -e^t$ or use $y = (-x)^r$. :::
 
 :::caution Common Pitfall Variation of parameters always works but can lead to difficult integrals.
 If the forcing term $g(x)$ is a polynomial, exponential, sine, or cosine (or products of these),
-Prefer undetermined coefficients --- it is much faster.
-:::
-
+Prefer undetermined coefficients --- it is much faster. :::
 
 ### 3.18 Abel's Identity (Proof)
 
-**Theorem 3.6 (Abel's Identity).** If $y_1, y_2$ are solutions of $y'' + p(x)y' + q(x)y = 0$
-Then their Wronskian satisfies
+**Theorem 3.6 (Abel's Identity).** If $y_1, y_2$ are solutions of $y'' + p(x)y' + q(x)y = 0$ Then
+their Wronskian satisfies
 
 $$W(x) = W(x_0) e^{-\int_{x_0}^x p(t)\, dt}$$
 
-*Proof.* Since $y_1, y_2$ satisfy the ODE:
+_Proof._ Since $y_1, y_2$ satisfy the ODE:
 
 $y_1'' = -py_1' - qy_1$ and $y_2'' = -py_2' - qy_2$.
 
@@ -787,7 +786,8 @@ $= y_1(-py_2' - qy_2) - (-py_1' - qy_1)y_2$
 
 $= -p(y_1 y_2' - y_1' y_2) = -pW$.
 
-So $W' + pW = 0$Giving $W = Ce^{-\int p\, dx}$And evaluating at $x_0$ gives the result. $\blacksquare$
+So $W' + pW = 0$Giving $W = Ce^{-\int p\, dx}$And evaluating at $x_0$ gives the result.
+$\blacksquare$
 
 _Corollary._ $W(x)$ is either identically zero or never zero.
 
@@ -825,11 +825,13 @@ A system of first-order linear ODEs can be written in matrix form:
 
 $$\mathbf{'\{'}x{'\}'}' = A\mathbf{'\{'}x{'\}'} + \mathbf{'\{'}f{'\}'}(t)$$
 
-Where $A$ is an $n \times n$ matrix and $\mathbf{'\{'}x{'\}'}, \mathbf{'\{'}f{'\}'} \in \mathbb{'\{'}R{'\}'}^n$.
+Where $A$ is an $n \times n$ matrix and
+$\mathbf{'\{'}x{'\}'}, \mathbf{'\{'}f{'\}'} \in \mathbb{'\{'}R{'\}'}^n$.
 
 ### 4.2 Homogeneous Systems with Constant Coefficients
 
-For $\mathbf{'\{'}x{'\}'}' = A\mathbf{'\{'}x{'\}'}$Try $\mathbf{'\{'}x{'\}'} = \mathbf{'\{'}v{'\}'}e^{\lambda t}$:
+For $\mathbf{'\{'}x{'\}'}' = A\mathbf{'\{'}x{'\}'}$Try
+$\mathbf{'\{'}x{'\}'} = \mathbf{'\{'}v{'\}'}e^{\lambda t}$:
 
 $$\lambda \mathbf{'\{'}v{'\}'} = A\mathbf{'\{'}v{'\}'}$$
 
@@ -852,17 +854,19 @@ $e^{\alpha t}(\mathbf{'\{'}a{'\}'}\sin(\beta t) + \mathbf{'\{'}b{'\}'}\cos(\beta
 
 **Definition.** $e^{At} = \sum_{k=0}^{\infty} \frac{A^k t^k}{k!}$.
 
-**Theorem 4.1.** The solution to $\mathbf{'\{'}x{'\}'}' = A\mathbf{'\{'}x{'\}'}$ with $\mathbf{'\{'}x{'\}'}(0) = \mathbf{'\{'}x{'\}'}_0$ is
+**Theorem 4.1.** The solution to $\mathbf{'\{'}x{'\}'}' = A\mathbf{'\{'}x{'\}'}$ with
+$\mathbf{'\{'}x{'\}'}(0) = \mathbf{'\{'}x{'\}'}_0$ is
 $\mathbf{'\{'}x{'\}'}(t) = e^{At}\mathbf{'\{'}x{'\}'}_0$.
 
-**Proposition 4.2.** If $A$ is diagonalizable as $A = PDP^{-1}$Then $e^{At} = Pe^{Dt}P^{-1}$
-Where $e^{Dt} = \mathrm{diag{}(e^{\lambda_1 t}, \ldots, e^{\lambda_n t})$.
+**Proposition 4.2.** If $A$ is diagonalizable as $A = PDP^{-1}$Then $e^{At} = Pe^{Dt}P^{-1}$ Where
+$e^{Dt} = \mathrm{diag{}(e^{\lambda_1 t}, \ldots, e^{\lambda_n t})$.
 
 ### 4.4 Worked Example: Distinct Real Eigenvalues
 
-**Problem.** Solve $\mathbf{'\{'}x{'\}'}' = \begin{pmatrix} 0 & 1 \\ -2 & -3 \end{pmatrix}\mathbf{'\{'}x{'\}'}$.
+**Problem.** Solve
+$\mathbf{'\{'}x{'\}'}' = \begin{pmatrix} 0 & 1 \\ -2 & -3 \end{pmatrix}\mathbf{'\{'}x{'\}'}$.
 
-*Solution.* Characteristic equation:
+_Solution._ Characteristic equation:
 $\det(A - \lambda I) = \lambda^2 + 3\lambda + 2 = (\lambda + 1)(\lambda + 2) = 0$. Eigenvalues:
 $\lambda_1 = -1$$\lambda_2 = -2$.
 
@@ -879,65 +883,77 @@ $\blacksquare$
 
 ### 4.5 Worked Example: Complex Eigenvalues
 
-**Problem.** Solve $\mathbf{'\{'}x{'\}'}' = \begin{pmatrix} 0 & -2 \\ 1 & 0 \end{pmatrix}\mathbf{'\{'}x{'\}'}$.
+**Problem.** Solve
+$\mathbf{'\{'}x{'\}'}' = \begin{pmatrix} 0 & -2 \\ 1 & 0 \end{pmatrix}\mathbf{'\{'}x{'\}'}$.
 
 <details>
 <summary>Solution</summary>
 
-*Solution.* $\det(A - \lambda I) = \lambda^2 + 2 = 0$. Eigenvalues: $\lambda = \pm i\sqrt{2}$.
+_Solution._ $\det(A - \lambda I) = \lambda^2 + 2 = 0$. Eigenvalues: $\lambda = \pm i\sqrt{2}$.
 
 For $\lambda = i\sqrt{2}$:
 $\begin{pmatrix} -i\sqrt{2} & -2 \\ 1 & -i\sqrt{2} \end{pmatrix}\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'}$.
 
 From the first row: $-i\sqrt{2}\, v_1 - 2v_2 = 0$So $v_2 = -\frac{i\sqrt{2}}{2}v_1$.
 
-With $v_1 = 2$: $\mathbf{'\{'}v{'\}'} = \begin{pmatrix} 2 \\ 0 \end{pmatrix} + i\begin{pmatrix} 0 \\ -\sqrt{2} \end{pmatrix}$.
+With $v_1 = 2$:
+$\mathbf{'\{'}v{'\}'} = \begin{pmatrix} 2 \\ 0 \end{pmatrix} + i\begin{pmatrix} 0 \\ -\sqrt{2} \end{pmatrix}$.
 
-So $\mathbf{'\{'}a{'\}'} = \begin{pmatrix} 2 \\ 0 \end{pmatrix}$$\mathbf{'\{'}b{'\}'} = \begin{pmatrix} 0 \\ -\sqrt{2} \end{pmatrix}$.
+So
+$\mathbf{'\{'}a{'\}'} = \begin{pmatrix} 2 \\ 0 \end{pmatrix}$$\mathbf{'\{'}b{'\}'} = \begin{pmatrix} 0 \\ -\sqrt{2} \end{pmatrix}$.
 
 $\mathbf{'\{'}x{'\}'}(t) = c_1\left[\mathbf{'\{'}a{'\}'}\cos(\sqrt{2}\, t) - \mathbf{'\{'}b{'\}'}\sin(\sqrt{2}\, t)\right] + c_2\left[\mathbf{'\{'}a{'\}'}\sin(\sqrt{2}\, t) + \mathbf{'\{'}b{'\}'}\cos(\sqrt{2}\, t)\right]$
 
-$= c_1 \begin{pmatrix} 2\cos(\sqrt{2}\, t) \\ \sqrt{2}\sin(\sqrt{2}\, t) \end{pmatrix} + c_2 \begin{pmatrix} 2\sin(\sqrt{2}\, t) \\ -\sqrt{2}\cos(\sqrt{2}\, t) \end{pmatrix}$. $\blacksquare$
+$= c_1 \begin{pmatrix} 2\cos(\sqrt{2}\, t) \\ \sqrt{2}\sin(\sqrt{2}\, t) \end{pmatrix} + c_2 \begin{pmatrix} 2\sin(\sqrt{2}\, t) \\ -\sqrt{2}\cos(\sqrt{2}\, t) \end{pmatrix}$.
+$\blacksquare$
 
 </details>
 
 ### 4.6 Worked Example: Repeated Eigenvalues
 
-**Problem.** Solve $\mathbf{'\{'}x{'\}'}' = \begin{pmatrix} 2 & 1 \\ -1 & 4 \end{pmatrix}\mathbf{'\{'}x{'\}'}$.
+**Problem.** Solve
+$\mathbf{'\{'}x{'\}'}' = \begin{pmatrix} 2 & 1 \\ -1 & 4 \end{pmatrix}\mathbf{'\{'}x{'\}'}$.
 
 <details>
 <summary>Solution</summary>
 
-*Solution.* $\det(A - \lambda I) = (2 - \lambda)(4 - \lambda) + 1 = \lambda^2 - 6\lambda + 9 = (\lambda - 3)^2 = 0$.
+_Solution._
+$\det(A - \lambda I) = (2 - \lambda)(4 - \lambda) + 1 = \lambda^2 - 6\lambda + 9 = (\lambda - 3)^2 = 0$.
 
 Repeated eigenvalue $\lambda = 3$ with algebraic multiplicity 2.
 
 $(A - 3I) = \begin{pmatrix} -1 & 1 \\ -1 & 1 \end{pmatrix}$.
 
-Eigenvector: $\begin{pmatrix} 1 \\ 1 \end{pmatrix}$. Only one eigenvector (geometric multiplicity 1), so we need a generalized eigenvector.
+Eigenvector: $\begin{pmatrix} 1 \\ 1 \end{pmatrix}$. Only one eigenvector (geometric multiplicity
+1), so we need a generalized eigenvector.
 
-Find $\mathbf{'\{'}w{'\}'}$ such that $(A - 3I)\mathbf{'\{'}w{'\}'} = \mathbf{'\{'}v{'\}'}_1 = \begin{pmatrix} 1 \\ 1 \end{pmatrix}$:
+Find $\mathbf{'\{'}w{'\}'}$ such that
+$(A - 3I)\mathbf{'\{'}w{'\}'} = \mathbf{'\{'}v{'\}'}_1 = \begin{pmatrix} 1 \\ 1 \end{pmatrix}$:
 
 $\begin{pmatrix} -1 & 1 \\ -1 & 1 \end{pmatrix}\begin{pmatrix} w_1 \\ w_2 \end{pmatrix} = \begin{pmatrix} 1 \\ 1 \end{pmatrix}$
 
-$-w_1 + w_2 = 1$. Choose $w_1 = 0$Then $w_2 = 1$. So $\mathbf{'\{'}w{'\}'} = \begin{pmatrix} 0 \\ 1 \end{pmatrix}$.
+$-w_1 + w_2 = 1$. Choose $w_1 = 0$Then $w_2 = 1$. So
+$\mathbf{'\{'}w{'\}'} = \begin{pmatrix} 0 \\ 1 \end{pmatrix}$.
 
 $\mathbf{'\{'}x{'\}'}(t) = c_1 \begin{pmatrix} 1 \\ 1 \end{pmatrix} e^{3t} + c_2 \left[\begin{pmatrix} 1 \\ 1 \end{pmatrix} t e^{3t} + \begin{pmatrix} 0 \\ 1 \end{pmatrix} e^{3t}\right]$
 
-$= e^{3t}\left[c_1 \begin{pmatrix} 1 \\ 1 \end{pmatrix} + c_2 \begin{pmatrix} t \\ t + 1 \end{pmatrix}\right]$. $\blacksquare$
+$= e^{3t}\left[c_1 \begin{pmatrix} 1 \\ 1 \end{pmatrix} + c_2 \begin{pmatrix} t \\ t + 1 \end{pmatrix}\right]$.
+$\blacksquare$
 
 </details>
 
 ### 4.7 Fundamental Matrix
 
-**Definition.** A **fundamental matrix** $\Phi(t)$ for the system $\mathbf{'\{'}x{'\}'}' = A\mathbf{'\{'}x{'\}'}$ is an
-$n \times n$ matrix whose columns form a fundamental set of solutions.
+**Definition.** A **fundamental matrix** $\Phi(t)$ for the system
+$\mathbf{'\{'}x{'\}'}' = A\mathbf{'\{'}x{'\}'}$ is an $n \times n$ matrix whose columns form a
+fundamental set of solutions.
 
 **Proposition 4.3.** $\Phi(t)$ satisfies $\Phi' = A\Phi$And the general solution is
-$\mathbf{'\{'}x{'\}'}(t) = \Phi(t)\mathbf{'\{'}c{'\}'}$ for $\mathbf{'\{'}c{'\}'} \in \mathbb{'\{'}R{'\}'}^n$.
+$\mathbf{'\{'}x{'\}'}(t) = \Phi(t)\mathbf{'\{'}c{'\}'}$ for
+$\mathbf{'\{'}c{'\}'} \in \mathbb{'\{'}R{'\}'}^n$.
 
-**Proposition 4.4.** The matrix exponential $e^{At}$ is a fundamental matrix with $e^{A \cdot 0} = I$.
-Any fundamental matrix can be written as $\Phi(t) = e^{At}\Phi(0)$.
+**Proposition 4.4.** The matrix exponential $e^{At}$ is a fundamental matrix with
+$e^{A \cdot 0} = I$. Any fundamental matrix can be written as $\Phi(t) = e^{At}\Phi(0)$.
 
 ### 4.8 Matrix Exponential Properties
 
@@ -949,26 +965,27 @@ Any fundamental matrix can be written as $\Phi(t) = e^{At}\Phi(0)$.
 4. $(e^{At})^{-1} = e^{-At}$
 5. If $AB = BA$Then $e^{A+B} = e^A e^B$
 
-*Proof of (1).* $e^{A \cdot 0} = \sum_{k=0}^{\infty} \frac{A^k 0^k}{k!} = I$. $\blacksquare$
+_Proof of (1)._ $e^{A \cdot 0} = \sum_{k=0}^{\infty} \frac{A^k 0^k}{k!} = I$. $\blacksquare$
 
-*Proof of (2).* $\frac{d}{dt}e^{At} = \sum_{k=1}^{\infty} \frac{A^k t^{k-1}}{(k-1)!} = A\sum_{j=0}^{\infty} \frac{A^j t^j}{j!} = Ae^{At}$.
+_Proof of (2)._
+$\frac{d}{dt}e^{At} = \sum_{k=1}^{\infty} \frac{A^k t^{k-1}}{(k-1)!} = A\sum_{j=0}^{\infty} \frac{A^j t^j}{j!} = Ae^{At}$.
 Since $A$ commutes with itself, $Ae^{At} = e^{At}A$. $\blacksquare$
 
-*Proof of (4).* From (3) with $s = -t$: $e^{At}e^{-At} = e^{A(t-t)} = e^0 = I$. $\blacksquare$
+_Proof of (4)._ From (3) with $s = -t$: $e^{At}e^{-At} = e^{A(t-t)} = e^0 = I$. $\blacksquare$
 
 ### 4.9 Phase Portrait Analysis for 2D Systems
 
-For the linear system $\mathbf{'\{'}x{'\}'}' = A\mathbf{'\{'}x{'\}'}$ with $A$ a $2 \times 2$ matrix, the qualitative
-Behaviour near the origin is determined by the eigenvalues:
+For the linear system $\mathbf{'\{'}x{'\}'}' = A\mathbf{'\{'}x{'\}'}$ with $A$ a $2 \times 2$
+matrix, the qualitative Behaviour near the origin is determined by the eigenvalues:
 
-| Eigenvalues | Phase Portrait | Stability |
-| ---------------------------- | ---------------- | --------------------- |
-| $\lambda_1, \lambda_2 \lt{} 0$Real, distinct | Stable node | Asymptotically stable |
-| $\lambda_1, \lambda_2 > 0$Real, distinct | Unstable node | Unstable |
-| $\lambda_1 \lt{} 0 \lt{} \lambda_2$ | Saddle point | Unstable |
-| $\lambda = \alpha \pm i\beta$$\alpha \lt{} 0$ | Stable spiral | Asymptotically stable |
-| $\lambda = \alpha \pm i\beta$$\alpha > 0$ | Unstable spiral | Unstable |
-| $\lambda = \pm i\beta$ | Center | (Marginally) stable |
+| Eigenvalues                                   | Phase Portrait  | Stability             |
+| --------------------------------------------- | --------------- | --------------------- |
+| $\lambda_1, \lambda_2 \lt{} 0$Real, distinct  | Stable node     | Asymptotically stable |
+| $\lambda_1, \lambda_2 > 0$Real, distinct      | Unstable node   | Unstable              |
+| $\lambda_1 \lt{} 0 \lt{} \lambda_2$           | Saddle point    | Unstable              |
+| $\lambda = \alpha \pm i\beta$$\alpha \lt{} 0$ | Stable spiral   | Asymptotically stable |
+| $\lambda = \alpha \pm i\beta$$\alpha > 0$     | Unstable spiral | Unstable              |
+| $\lambda = \pm i\beta$                        | Center          | (Marginally) stable   |
 
 _Remark._ The **trace-determinant plane** provides a convenient classification. Let
 $\tau = \mathrm{tr{}(A)$ and $\Delta = \det(A)$. The eigenvalues satisfy
@@ -982,20 +999,21 @@ $$\lambda = \frac{\tau \pm \sqrt{\tau^2 - 4\Delta}}{2}$$
 
 Stability is determined by the sign of $\tau$: stable if $\tau \lt{} 0$Unstable if $\tau > 0$.
 
-
 ### 4.10 Nonhomogeneous Systems
 
-For $\mathbf{'\{'}x{'\}'}' = A\mathbf{'\{'}x{'\}'} + \mathbf{'\{'}f{'\}'}(t)$If $\Phi(t)$ is a fundamental matrix for the
-Homogeneous system, the general solution is
+For $\mathbf{'\{'}x{'\}'}' = A\mathbf{'\{'}x{'\}'} + \mathbf{'\{'}f{'\}'}(t)$If $\Phi(t)$ is a
+fundamental matrix for the Homogeneous system, the general solution is
 
 $$\mathbf{'\{'}x{'\}'}(t) = \Phi(t)\mathbf{'\{'}c{'\}'} + \Phi(t)\int \Phi^{-1}(s)\mathbf{'\{'}f{'\}'}(s)\, ds$$
 
-**Worked Example.** Solve $\mathbf{'\{'}x{'\}'}' = \begin{pmatrix} 1 & 0 \\ 0 & 2 \end{pmatrix}\mathbf{'\{'}x{'\}'} + \begin{pmatrix} e^t \\ 0 \end{pmatrix}$.
+**Worked Example.** Solve
+$\mathbf{'\{'}x{'\}'}' = \begin{pmatrix} 1 & 0 \\ 0 & 2 \end{pmatrix}\mathbf{'\{'}x{'\}'} + \begin{pmatrix} e^t \\ 0 \end{pmatrix}$.
 
 <details>
 <summary>Solution</summary>
 
-_Solution._ Eigenvalues: $1$ and $2$. $\Phi(t) = \begin{pmatrix} e^t & 0 \\ 0 & e^{2t} \end{pmatrix}$.
+_Solution._ Eigenvalues: $1$ and $2$.
+$\Phi(t) = \begin{pmatrix} e^t & 0 \\ 0 & e^{2t} \end{pmatrix}$.
 
 $\Phi^{-1}(s) = \begin{pmatrix} e^{-s} & 0 \\ 0 & e^{-2s} \end{pmatrix}$.
 
@@ -1005,7 +1023,8 @@ $\int \Phi^{-1}(s)\mathbf{'\{'}f{'\}'}(s)\, ds = \begin{pmatrix} t \\ 0 \end{pma
 
 $\mathbf{'\{'}x{'\}'}_p = \Phi(t)\begin{pmatrix} t \\ 0 \end{pmatrix} = \begin{pmatrix} te^t \\ 0 \end{pmatrix}$.
 
-$\mathbf{'\{'}x{'\}'}(t) = c_1 \begin{pmatrix} e^t \\ 0 \end{pmatrix} + c_2 \begin{pmatrix} 0 \\ e^{2t} \end{pmatrix} + \begin{pmatrix} te^t \\ 0 \end{pmatrix}$. $\blacksquare$
+$\mathbf{'\{'}x{'\}'}(t) = c_1 \begin{pmatrix} e^t \\ 0 \end{pmatrix} + c_2 \begin{pmatrix} 0 \\ e^{2t} \end{pmatrix} + \begin{pmatrix} te^t \\ 0 \end{pmatrix}$.
+$\blacksquare$
 
 </details>
 ## 5. Laplace Transforms
@@ -1021,12 +1040,13 @@ $|f(t)| \leq Me^{at}$ for some $M, a > 0$.
 
 ### 5.2 Basic Properties
 
-**Theorem 5.1 (Linearity).** $\mathcal{'\{'}L{'\}'}\{af + bg\} = a\mathcal{'\{'}L{'\}'}\{f\} + b\mathcal{'\{'}L{'\}'}\{g\}$.
+**Theorem 5.1 (Linearity).**
+$\mathcal{'\{'}L{'\}'}\{af + bg\} = a\mathcal{'\{'}L{'\}'}\{f\} + b\mathcal{'\{'}L{'\}'}\{g\}$.
 
 **Theorem 5.2 (First Shifting).** $\mathcal{'\{'}L{'\}'}\{e^{at}f(t)\} = F(s - a)$.
 
-**Theorem 5.3 (Second Shifting).** $\mathcal{'\{'}L{'\}'}\{u_c(t)f(t - c)\} = e^{-cs}F(s)$Where $u_c(t)$ is
-The unit step function.
+**Theorem 5.3 (Second Shifting).** $\mathcal{'\{'}L{'\}'}\{u_c(t)f(t - c)\} = e^{-cs}F(s)$Where
+$u_c(t)$ is The unit step function.
 
 **Theorem 5.4 (Derivative).** $\mathcal{'\{'}L{'\}'}\{f'(t)\} = sF(s) - f(0)$.
 
@@ -1041,34 +1061,39 @@ $(f * g)(t) = \int_0^t f(\tau)g(t - \tau)\, d\tau$.
 
 ### 5.3 Proofs of Key Properties
 
-*Proof of Linearity.* $\mathcal{'\{'}L{'\}'}\{af + bg\} = \int_0^{\infty} e^{-st}[af(t) + bg(t)]\, dt = a\int_0^{\infty} e^{-st}f(t)\, dt + b\int_0^{\infty} e^{-st}g(t)\, dt = aF(s) + bG(s)$. $\blacksquare$
+_Proof of Linearity._
+$\mathcal{'\{'}L{'\}'}\{af + bg\} = \int_0^{\infty} e^{-st}[af(t) + bg(t)]\, dt = a\int_0^{\infty} e^{-st}f(t)\, dt + b\int_0^{\infty} e^{-st}g(t)\, dt = aF(s) + bG(s)$.
+$\blacksquare$
 
-*Proof of First Shifting Theorem.* $\mathcal{'\{'}L{'\}'}\{e^{at}f(t)\} = \int_0^{\infty} e^{-st} e^{at} f(t)\, dt = \int_0^{\infty} e^{-(s-a)t} f(t)\, dt = F(s - a)$. $\blacksquare$
+_Proof of First Shifting Theorem._
+$\mathcal{'\{'}L{'\}'}\{e^{at}f(t)\} = \int_0^{\infty} e^{-st} e^{at} f(t)\, dt = \int_0^{\infty} e^{-(s-a)t} f(t)\, dt = F(s - a)$.
+$\blacksquare$
 
-*Proof of Derivative Property.* Integrating by parts with $u = e^{-st}$$dv = f'(t)\, dt$:
+_Proof of Derivative Property._ Integrating by parts with $u = e^{-st}$$dv = f'(t)\, dt$:
 
 $\mathcal{'\{'}L{'\}'}\{f'(t)\} = \left[e^{-st}f(t)\right]_0^{\infty} + s\int_0^{\infty} e^{-st}f(t)\, dt = -f(0) + sF(s) = sF(s) - f(0)$.
 
 The boundary term vanishes at $\infty$ because $f$ is of exponential order. $\blacksquare$
 
-*Proof of Integration Property.* Let $g(t) = \int_0^t f(\tau)\, d\tau$. Then $g'(t) = f(t)$ and $g(0) = 0$.
+_Proof of Integration Property._ Let $g(t) = \int_0^t f(\tau)\, d\tau$. Then $g'(t) = f(t)$ and
+$g(0) = 0$.
 $\mathcal{'\{'}L{'\}'}\{f(t)\} = \mathcal{'\{'}L{'\}'}\{g'(t)\} = s\mathcal{'\{'}L{'\}'}\{g(t)\} - g(0) = s\mathcal{'\{'}L{'\}'}\{g(t)\}$.
 Therefore $\mathcal{'\{'}L{'\}'}\{g(t)\} = F(s)/s$. $\blacksquare$
 
 ### 5.4 Common Laplace Transforms
 
-| $f(t)$ | $F(s) = \mathcal{'\{'}L{'\}'}\{f(t)\}$ |
-| ---------------- | ---------------------------- |
-| $1$ | $1/s$ |
-| $t^n$ | $n!/s^{n+1}$ |
-| $e^{at}$ | $1/(s - a)$ |
-| $t^n e^{at}$ | $n!/(s - a)^{n+1}$ |
-| $\sin(bt)$ | $b/(s^2 + b^2)$ |
-| $\cos(bt)$ | $s/(s^2 + b^2)$ |
-| $e^{at}\sin(bt)$ | $b/((s-a)^2 + b^2)$ |
-| $e^{at}\cos(bt)$ | $(s-a)/((s-a)^2 + b^2)$ |
-| $u_c(t)$ | $e^{-cs}/s$ |
-| $\delta(t - c)$ | $e^{-cs}$ |
+| $f(t)$           | $F(s) = \mathcal{'\{'}L{'\}'}\{f(t)\}$ |
+| ---------------- | -------------------------------------- |
+| $1$              | $1/s$                                  |
+| $t^n$            | $n!/s^{n+1}$                           |
+| $e^{at}$         | $1/(s - a)$                            |
+| $t^n e^{at}$     | $n!/(s - a)^{n+1}$                     |
+| $\sin(bt)$       | $b/(s^2 + b^2)$                        |
+| $\cos(bt)$       | $s/(s^2 + b^2)$                        |
+| $e^{at}\sin(bt)$ | $b/((s-a)^2 + b^2)$                    |
+| $e^{at}\cos(bt)$ | $(s-a)/((s-a)^2 + b^2)$                |
+| $u_c(t)$         | $e^{-cs}/s$                            |
+| $\delta(t - c)$  | $e^{-cs}$                              |
 
 ### 5.5 Solving IVPs with Laplace Transforms
 
@@ -1082,7 +1107,7 @@ Therefore $\mathcal{'\{'}L{'\}'}\{g(t)\} = F(s)/s$. $\blacksquare$
 
 **Problem.** Solve $y'' + 4y = \sin(2t)$$y(0) = 0$$y'(0) = 0$.
 
-*Solution.* Taking Laplace transforms:
+_Solution._ Taking Laplace transforms:
 
 $s^2 Y + 4Y = \frac{2}{s^2 + 4}$
 
@@ -1102,7 +1127,6 @@ $y(t) = \frac{1}{8}\int_0^t [\cos(4\tau - 2t) - \cos(2t)]\, d\tau = \frac{1}{8}\
 $= \frac{1}{32}[\sin(2t) - \sin(-2t)] - \frac{t}{8}\cos(2t) = \frac{\sin(2t)}{16} - \frac{t\cos(2t)}{8}$
 
 $y(t) = \frac{\sin(2t) - 2t\cos(2t)}{16}$. $\blacksquare$
-
 
 ### 5.6b Worked Example: Partial Fractions for Inverse Laplace
 
@@ -1125,25 +1149,27 @@ $f(t) = \frac{1}{4} - \frac{1}{4}\cos 2t$. $\blacksquare$
 </details>
 ### 5.7 Convolution Theorem
 
-**Theorem 5.8 (Convolution).** If $F(s) = \mathcal{'\{'}L{'\}'}\{f(t)\}$ and $G(s) = \mathcal{'\{'}L{'\}'}\{g(t)\}$
-Then
+**Theorem 5.8 (Convolution).** If $F(s) = \mathcal{'\{'}L{'\}'}\{f(t)\}$ and
+$G(s) = \mathcal{'\{'}L{'\}'}\{g(t)\}$ Then
 
 $$\mathcal{'\{'}L{'\}'}\{f * g\} = F(s)G(s)$$
 
 Where $(f * g)(t) = \int_0^t f(\tau)g(t - \tau)\, d\tau$.
 
-*Proof.* $F(s)G(s) = \int_0^{\infty} e^{-s\tau} f(\tau)\, d\tau \cdot \int_0^{\infty} e^{-su} g(u)\, du$
+_Proof._
+$F(s)G(s) = \int_0^{\infty} e^{-s\tau} f(\tau)\, d\tau \cdot \int_0^{\infty} e^{-su} g(u)\, du$
 
 $= \int_0^{\infty} \int_0^{\infty} e^{-s(\tau+u)} f(\tau) g(u)\, du\, d\tau$
 
-Substitute $t = \tau + u$$u = t - \tau$. For fixed $\tau$$u$ ranges from $0$ to $\infty$So $t$ ranges
-From $\tau$ to $\infty$.
+Substitute $t = \tau + u$$u = t - \tau$. For fixed $\tau$$u$ ranges from $0$ to $\infty$So $t$
+ranges From $\tau$ to $\infty$.
 
 $= \int_0^{\infty} f(\tau)\left[\int_{\tau}^{\infty} e^{-st} g(t - \tau)\, dt\right] d\tau$
 
 Swap the order of integration (Fubini):
 
-$= \int_0^{\infty} e^{-st}\left[\int_0^t f(\tau) g(t - \tau)\, d\tau\right] dt = \mathcal{'\{'}L{'\}'}\{(f * g)(t)\}$. $\blacksquare$
+$= \int_0^{\infty} e^{-st}\left[\int_0^t f(\tau) g(t - \tau)\, d\tau\right] dt = \mathcal{'\{'}L{'\}'}\{(f * g)(t)\}$.
+$\blacksquare$
 
 ### 5.8 Worked Example: Inverse Laplace Transform
 
@@ -1152,7 +1178,7 @@ $= \int_0^{\infty} e^{-st}\left[\int_0^t f(\tau) g(t - \tau)\, d\tau\right] dt =
 <details>
 <summary>Solution</summary>
 
-*Solution.* Complete the square: $s^2 + 4s + 13 = (s + 2)^2 + 9$.
+_Solution._ Complete the square: $s^2 + 4s + 13 = (s + 2)^2 + 9$.
 
 $\frac{3s + 1}{s^2 + 4s + 13} = \frac{3(s + 2) - 5}{(s + 2)^2 + 9} = 3 \cdot \frac{s + 2}{(s + 2)^2 + 9} - \frac{5}{3} \cdot \frac{3}{(s + 2)^2 + 9}$
 
@@ -1162,7 +1188,8 @@ $\mathcal{'\{'}L{'\}'}^{-1}\left\{\frac{s + 2}{(s + 2)^2 + 9}\right\} = e^{-2t}\
 
 $\mathcal{'\{'}L{'\}'}^{-1}\left\{\frac{3}{(s + 2)^2 + 9}\right\} = e^{-2t}\sin(3t)$
 
-$f(t) = 3e^{-2t}\cos(3t) - \frac{5}{3}e^{-2t}\sin(3t) = e^{-2t}\left(3\cos(3t) - \frac{5}{3}\sin(3t)\right)$. $\blacksquare$
+$f(t) = 3e^{-2t}\cos(3t) - \frac{5}{3}e^{-2t}\sin(3t) = e^{-2t}\left(3\cos(3t) - \frac{5}{3}\sin(3t)\right)$.
+$\blacksquare$
 
 </details>
 
@@ -1173,7 +1200,7 @@ $f(t) = 3e^{-2t}\cos(3t) - \frac{5}{3}e^{-2t}\sin(3t) = e^{-2t}\left(3\cos(3t) -
 <details>
 <summary>Solution</summary>
 
-*Solution.* Take Laplace transforms:
+_Solution._ Take Laplace transforms:
 
 $s^2 Y + 3sY + 2Y = \frac{e^{-2s}}{s}$
 
@@ -1187,15 +1214,16 @@ $\frac{1}{s(s+1)(s+2)} = \frac{A}{s} + \frac{B}{s+1} + \frac{C}{s+2}$
 
 $1 = A(s+1)(s+2) + Bs(s+2) + Cs(s+1)$
 
-$s = 0$: $1 = 2A \implies A = 1/2$
-$s = -1$: $1 = -B \implies B = -1$
-$s = -2$: $1 = 2C \implies C = 1/2$
+$s = 0$: $1 = 2A \implies A = 1/2$ $s = -1$: $1 = -B \implies B = -1$ $s = -2$:
+$1 = 2C \implies C = 1/2$
 
-So $\mathcal{'\{'}L{'\}'}^{-1}\left\{\frac{1}{s(s+1)(s+2)}\right\} = \frac{1}{2} - e^{-t} + \frac{1}{2}e^{-2t}$.
+So
+$\mathcal{'\{'}L{'\}'}^{-1}\left\{\frac{1}{s(s+1)(s+2)}\right\} = \frac{1}{2} - e^{-t} + \frac{1}{2}e^{-2t}$.
 
 By the second shifting theorem:
 
-$y(t) = u_2(t)\left[\frac{1}{2} - e^{-(t-2)} + \frac{1}{2}e^{-2(t-2)}\right]$ for $t \geq 0$. $\blacksquare$
+$y(t) = u_2(t)\left[\frac{1}{2} - e^{-(t-2)} + \frac{1}{2}e^{-2(t-2)}\right]$ for $t \geq 0$.
+$\blacksquare$
 
 </details>
 
@@ -1209,8 +1237,8 @@ It models a sudden switch being turned on at time $t = c$. The second shifting t
 
 $$\mathcal{'\{'}L{'\}'}\{u_c(t)f(t - c)\} = e^{-cs}F(s)$$
 
-Conversely, if $Y(s) = e^{-cs}G(s)$Then
-$y(t) = u_c(t) \cdot g(t - c)$ where $g = \mathcal{'\{'}L{'\}'}^{-1}\{G\}$.
+Conversely, if $Y(s) = e^{-cs}G(s)$Then $y(t) = u_c(t) \cdot g(t - c)$ where
+$g = \mathcal{'\{'}L{'\}'}^{-1}\{G\}$.
 
 ### 5.11 The Dirac Delta Function
 
@@ -1221,6 +1249,7 @@ Impulse.
 $\mathcal{'\{'}L{'\}'}\{\delta(t - c)\} = e^{-cs}$.
 
 **Properties:**
+
 - $\delta(t - c) = 0$ for $t \neq c$
 - $\int_{-\infty}^{\infty} \delta(t - c)\, dt = 1$
 - $\int_{-\infty}^{\infty} \delta(t - c)f(t)\, dt = f(c)$ (sifting property)
@@ -1233,7 +1262,7 @@ $y'' + 4y = \delta(t)$$y(0) = 0$$y'(0) = 0$. Find $y(t)$.
 <details>
 <summary>Solution</summary>
 
-*Solution.* Taking Laplace transforms:
+_Solution._ Taking Laplace transforms:
 
 $s^2 Y + 4Y = 1$
 
@@ -1252,7 +1281,7 @@ This is the **impulse response** (Green's function) for the operator $D^2 + 4$. 
 <details>
 <summary>Solution</summary>
 
-*Solution.* Taking Laplace transforms:
+_Solution._ Taking Laplace transforms:
 
 $s^2 Y - 6sY + 9Y = \frac{6}{s - 3}$
 
@@ -1268,15 +1297,12 @@ $y(t) = 6 \cdot \frac{t^2 e^{3t}}{2!} = 3t^2 e^{3t}$. $\blacksquare$
 
 ### 5.14 Common Pitfalls for Laplace Transforms
 
-:::caution Common Pitfall The Laplace transform of $y'(t)$ is $sY(s) - y(0)$Not $sY(s)$. The
-Initial conditions are built into the transform. Forgetting them leads to incorrect solutions.
-:::
+:::caution Common Pitfall The Laplace transform of $y'(t)$ is $sY(s) - y(0)$Not $sY(s)$. The Initial
+conditions are built into the transform. Forgetting them leads to incorrect solutions. :::
 
-:::caution Common Pitfall When using the second shifting theorem, the time-shifted function must
-Be written as $u_c(t)f(t - c)$Not $u_c(t)f(t)$. The function $f$ must be shifted by the same
-Amount as the step.
-:::
-
+:::caution Common Pitfall When using the second shifting theorem, the time-shifted function must Be
+written as $u_c(t)f(t - c)$Not $u_c(t)f(t)$. The function $f$ must be shifted by the same Amount as
+the step. :::
 
 ### 5.15 Proof Sketch: Picard Iteration
 
@@ -1285,16 +1311,17 @@ $y' = f(x, y)$$y(x_0) = y_0$Define the sequence
 
 $$\phi_0(x) = y_0, \quad \phi_{n+1}(x) = y_0 + \int_{x_0}^x f(t, \phi_n(t))\, dt$$
 
-If $f$ and $\partial f/\partial y$ are continuous, one shows by induction that $(\phi_n)$ is uniformly
-Cauchy on some interval $[x_0 - h, x_0 + h]$Hence converges uniformly to a function $\phi$.
-Passing to the limit in the integral equation shows $\phi$ satisfies the ODE. Uniqueness follows
-From the **Gronwall inequality** applied to the difference of two solutions.
+If $f$ and $\partial f/\partial y$ are continuous, one shows by induction that $(\phi_n)$ is
+uniformly Cauchy on some interval $[x_0 - h, x_0 + h]$Hence converges uniformly to a function
+$\phi$. Passing to the limit in the integral equation shows $\phi$ satisfies the ODE. Uniqueness
+follows From the **Gronwall inequality** applied to the difference of two solutions.
+
 ## 6. Series Solutions
 
 ### 6.1 Power Series Method
 
-For an ODE $y'' + p(x)y' + q(x)y = 0$ where $p$ and $q$ are analytic near $x_0$Substitute the
-Power series $y = \sum_{n=0}^{\infty} a_n (x - x_0)^n$ and solve for the coefficients.
+For an ODE $y'' + p(x)y' + q(x)y = 0$ where $p$ and $q$ are analytic near $x_0$Substitute the Power
+series $y = \sum_{n=0}^{\infty} a_n (x - x_0)^n$ and solve for the coefficients.
 
 ### 6.2 Ordinary and Regular Singular Points
 
@@ -1315,9 +1342,9 @@ Bessel's equation of order $\nu$:
 
 $$x^2 y'' + xy' + (x^2 - \nu^2)y = 0$$
 
-For $\nu \notin \mathbb{'\{'}Z{'\}'}$The solutions are $J_\nu(x)$ and $J_{-\nu}(x)$ (Bessel functions of the
-First kind). For $\nu = n \in \mathbb{'\{'}N{'\}'}$The second solution is the Weber function $Y_n(x)$.
-
+For $\nu \notin \mathbb{'\{'}Z{'\}'}$The solutions are $J_\nu(x)$ and $J_{-\nu}(x)$ (Bessel
+functions of the First kind). For $\nu = n \in \mathbb{'\{'}N{'\}'}$The second solution is the Weber
+function $Y_n(x)$.
 
 ### 6.4b Worked Example: Higher-Order ODE
 
@@ -1342,14 +1369,15 @@ $y = c_1 e^x + c_2 e^{2x} + c_3 e^{3x}$. $\blacksquare$
 <details>
 <summary>Solution</summary>
 
-*Solution.* Since $p(x) = 0$ and $q(x) = -x$ are both analytic everywhere, $x_0 = 0$ is an ordinary
+_Solution._ Since $p(x) = 0$ and $q(x) = -x$ are both analytic everywhere, $x_0 = 0$ is an ordinary
 Point. Substitute $y = \sum_{n=0}^{\infty} a_n x^n$:
 
 $y' = \sum_{n=1}^{\infty} na_n x^{n-1}$$y'' = \sum_{n=2}^{\infty} n(n-1)a_n x^{n-2}$.
 
 $y'' - xy = \sum_{n=2}^{\infty} n(n-1)a_n x^{n-2} - \sum_{n=0}^{\infty} a_n x^{n+1} = 0$.
 
-Shift indices: first sum $\sum_{m=0}^{\infty} (m+2)(m+1)a_{m+2} x^m$Second sum $\sum_{m=1}^{\infty} a_{m-1} x^m$.
+Shift indices: first sum $\sum_{m=0}^{\infty} (m+2)(m+1)a_{m+2} x^m$Second sum
+$\sum_{m=1}^{\infty} a_{m-1} x^m$.
 
 For $m = 0$: $2 \cdot 1 \cdot a_2 = 0 \implies a_2 = 0$.
 
@@ -1362,7 +1390,8 @@ Since $a_2 = 0$All $a_{3k+2} = 0$.
 
 $y(x) = a_0\left(1 + \frac{x^3}{6} + \frac{x^6}{180} + \cdots\right) + a_1\left(x + \frac{x^4}{12} + \frac{x^7}{504} + \cdots\right)$.
 
-These are the **Airy functions** $\mathrm{Ai{}(x)$ and $\mathrm{Bi{}(x)$ (up to normalization). $\blacksquare$
+These are the **Airy functions** $\mathrm{Ai{}(x)$ and $\mathrm{Bi{}(x)$ (up to normalization).
+$\blacksquare$
 
 </details>
 
@@ -1373,7 +1402,7 @@ These are the **Airy functions** $\mathrm{Ai{}(x)$ and $\mathrm{Bi{}(x)$ (up to 
 <details>
 <summary>Solution</summary>
 
-*Solution.* Rewrite in standard form: $y'' + \frac{1}{2x}y' + \frac{1}{2}y = 0$.
+_Solution._ Rewrite in standard form: $y'' + \frac{1}{2x}y' + \frac{1}{2}y = 0$.
 
 $x = 0$ is a regular singular point since $xp(x) = 1/2$ and $x^2 q(x) = x^2/2$ are analytic at $0$.
 
@@ -1387,8 +1416,7 @@ Substituting into $2xy'' + y' + xy = 0$:
 
 $\sum_{n=0}^{\infty} 2(n+r)(n+r-1)a_n x^{n+r-1} + \sum_{n=0}^{\infty} (n+r)a_n x^{n+r-1} + \sum_{n=0}^{\infty} a_n x^{n+r+1} = 0$
 
-For $n = 0$: $[2r(r-1) + r]a_0 = 0$. Since $a_0 \neq 0$:
-$r(2r - 2 + 1) = 0 \implies r(2r - 1) = 0$.
+For $n = 0$: $[2r(r-1) + r]a_0 = 0$. Since $a_0 \neq 0$: $r(2r - 2 + 1) = 0 \implies r(2r - 1) = 0$.
 
 Indicial equation: $r = 0$ or $r = 1/2$.
 
@@ -1398,20 +1426,20 @@ $(n+r)(2n + 2r - 1)a_n = -a_{n-2}$
 
 $a_n = -\frac{a_{n-2}}{(n+r)(2n + 2r - 1)}$
 
-For $r = 0$: $a_n = -\frac{a_{n-2}}{n(2n-1)}$. Odd coefficients vanish ($a_1 = 0$). Even: $a_2 = -\frac{a_0}{6}$
-$a_4 = \frac{a_0}{120}$Etc.
+For $r = 0$: $a_n = -\frac{a_{n-2}}{n(2n-1)}$. Odd coefficients vanish ($a_1 = 0$). Even:
+$a_2 = -\frac{a_0}{6}$ $a_4 = \frac{a_0}{120}$Etc.
 
 For $r = 1/2$: $a_n = -\frac{a_{n-2}}{(n+1/2)(2n)} = -\frac{a_{n-2}}{n(2n+1)}$.
 
-$y = C_1 \sum_{k=0}^{\infty} a_{2k}^{(0)} x^{2k} + C_2 x^{1/2} \sum_{k=0}^{\infty} a_{2k}^{(1/2)} x^{2k}$. $\blacksquare$
+$y = C_1 \sum_{k=0}^{\infty} a_{2k}^{(0)} x^{2k} + C_2 x^{1/2} \sum_{k=0}^{\infty} a_{2k}^{(1/2)} x^{2k}$.
+$\blacksquare$
 
 </details>
 
-
 ### 6.7 Worked Example: Bessel Functions
 
-**Problem.** Find the first three nonzero terms of $J_0(x)$The Bessel function of the first kind
-Of order zero, which satisfies $x^2 y'' + xy' + x^2 y = 0$.
+**Problem.** Find the first three nonzero terms of $J_0(x)$The Bessel function of the first kind Of
+order zero, which satisfies $x^2 y'' + xy' + x^2 y = 0$.
 
 <details>
 <summary>Solution</summary>
@@ -1430,7 +1458,8 @@ For the recurrence: $4n^2 a_n + a_{n-1} = 0 \implies a_n = -\frac{a_{n-1}}{4n^2}
 
 $a_1 = -\frac{a_0}{4}$$a_2 = \frac{a_0}{64}$$a_3 = -\frac{a_0}{2304}$.
 
-Setting $a_0 = 1$: $J_0(x) = 1 - \frac{x^2}{4} + \frac{x^4}{64} - \frac{x^6}{2304} + \cdots$. $\blacksquare$
+Setting $a_0 = 1$: $J_0(x) = 1 - \frac{x^2}{4} + \frac{x^4}{64} - \frac{x^6}{2304} + \cdots$.
+$\blacksquare$
 
 </details>
 ## 7. Fourier Series
@@ -1471,7 +1500,7 @@ Series converges to:
 
 $$\frac{1}{\pi}\int_{-\pi}^{\pi} |f(x)|^2\, dx = \frac{a_0^2}{2} + \sum_{n=1}^{\infty}(a_n^2 + b_n^2)$$
 
-*Intuition.* Parseval's identity is the infinite-dimensional analogue of the Pythagorean theorem:
+_Intuition._ Parseval's identity is the infinite-dimensional analogue of the Pythagorean theorem:
 The "energy" of $f$ (its $L^2$ norm squared) equals the sum of the energies of its Fourier
 Components.
 
@@ -1480,15 +1509,15 @@ Components.
 For functions defined on $[0, L]$:
 
 - **Cosine series** (even extension): $a_n = \frac{2}{L}\int_0^L f(x)\cos\frac{n\pi x}{L}\, dx$
- $b_n = 0$.
+  $b_n = 0$.
 - **Sine series** (odd extension): $a_n = 0$
- $b_n = \frac{2}{L}\int_0^L f(x)\sin\frac{n\pi x}{L}\, dx$.
+  $b_n = \frac{2}{L}\int_0^L f(x)\sin\frac{n\pi x}{L}\, dx$.
 
 ### 7.6 Worked Example: Fourier Sine Series
 
 **Problem.** Find the Fourier series of $f(x) = x$ on $(-\pi, \pi)$Extended $2\pi$-periodically.
 
-*Solution.* $f$ is odd, so $a_n = 0$ for all $n$.
+_Solution._ $f$ is odd, so $a_n = 0$ for all $n$.
 
 $b_n = \frac{1}{\pi}\int_{-\pi}^{\pi} x\sin(nx)\, dx = \frac{2}{\pi}\int_0^{\pi} x\sin(nx)\, dx$.
 
@@ -1505,7 +1534,7 @@ $x \sim 2\sum_{n=1}^{\infty} \frac{(-1)^{n+1}}{n}\sin(nx)$. $\blacksquare$
 <details>
 <summary>Solution</summary>
 
-*Solution.* Extend $f$ as an even function on $[-\pi, \pi]$. Then $b_n = 0$ for all $n$.
+_Solution._ Extend $f$ as an even function on $[-\pi, \pi]$. Then $b_n = 0$ for all $n$.
 
 $a_0 = \frac{2}{\pi}\int_0^{\pi} x^2\, dx = \frac{2}{\pi} \cdot \frac{\pi^3}{3} = \frac{2\pi^2}{3}$.
 
@@ -1523,8 +1552,8 @@ $= -\frac{4}{n\pi}\left[-\frac{\pi\cos(n\pi)}{n} + 0\right] = \frac{4\cos(n\pi)}
 
 $x^2 \sim \frac{\pi^2}{3} + 4\sum_{n=1}^{\infty} \frac{(-1)^n}{n^2}\cos(nx)$.
 
-Setting $x = 0$: $0 = \frac{\pi^2}{3} + 4\sum_{n=1}^{\infty} \frac{(-1)^n}{n^2}$Giving the famous identity
-$\sum_{n=1}^{\infty} \frac{(-1)^{n+1}}{n^2} = \frac{\pi^2}{12}$. $\blacksquare$
+Setting $x = 0$: $0 = \frac{\pi^2}{3} + 4\sum_{n=1}^{\infty} \frac{(-1)^n}{n^2}$Giving the famous
+identity $\sum_{n=1}^{\infty} \frac{(-1)^{n+1}}{n^2} = \frac{\pi^2}{12}$. $\blacksquare$
 
 </details>
 
@@ -1536,21 +1565,21 @@ $$f(x) \sim \sum_{n=-\infty}^{\infty} c_n e^{inx}$$
 
 Where $c_n = \frac{1}{2\pi}\int_{-\pi}^{\pi} f(x)e^{-inx}\, dx$.
 
-The relationship with the real coefficients is $c_0 = a_0/2$$c_n = (a_n - ib_n)/2$ for $n > 0$
-And $c_{-n} = \overline{c_n}$ when $f$ is real-valued.
-
+The relationship with the real coefficients is $c_0 = a_0/2$$c_n = (a_n - ib_n)/2$ for $n > 0$ And
+$c_{-n} = \overline{c_n}$ when $f$ is real-valued.
 
 ### 7.9 Worked Example: Parseval's Identity
 
-**Problem.** Using the Fourier series of $f(x) = x$ on $(-\pi, \pi)$Verify Parseval's identity
-And deduce $\sum_{n=1}^{\infty} \frac{1}{n^2} = \frac{\pi^2}{6}$.
+**Problem.** Using the Fourier series of $f(x) = x$ on $(-\pi, \pi)$Verify Parseval's identity And
+deduce $\sum_{n=1}^{\infty} \frac{1}{n^2} = \frac{\pi^2}{6}$.
 
 <details>
 <summary>Solution</summary>
 
 _Solution._ From Section 7.6: $a_0 = 0$$a_n = 0$$b_n = \frac{2(-1)^{n+1}}{n}$.
 
-Parseval: $\frac{1}{\pi}\int_{-\pi}^{\pi} x^2\, dx = \sum_{n=1}^{\infty} b_n^2 = \sum_{n=1}^{\infty} \frac{4}{n^2}$.
+Parseval:
+$\frac{1}{\pi}\int_{-\pi}^{\pi} x^2\, dx = \sum_{n=1}^{\infty} b_n^2 = \sum_{n=1}^{\infty} \frac{4}{n^2}$.
 
 $\frac{1}{\pi} \cdot \frac{2\pi^3}{3} = 4\sum_{n=1}^{\infty} \frac{1}{n^2}$.
 
@@ -1579,8 +1608,8 @@ With boundary conditions $u(0, t) = u(L, t) = 0$ and initial condition $u(x, 0) 
 
 ### 8.3 Derivation of the Heat Equation
 
-Consider a thin rod of length $L$ with uniform cross-section and density $\rho$. Let $u(x, t)$ be the
-Temperature at position $x$ and time $t$. By **Fourier's law of heat conduction**, the heat flux
+Consider a thin rod of length $L$ with uniform cross-section and density $\rho$. Let $u(x, t)$ be
+the Temperature at position $x$ and time $t$. By **Fourier's law of heat conduction**, the heat flux
 Through a cross-section is proportional to the negative temperature gradient:
 
 $$q = -\kappa u_x$$
@@ -1619,10 +1648,10 @@ $f$).
 
 ### 8.5 Worked Example: Heat Equation
 
-**Problem.** Solve $u_t = u_{xx}$ for $0 \lt{} x \lt{} \pi$$t > 0$With $u(0, t) = u(\pi, t) = 0$
-And $u(x, 0) = \sin(2x) + 3\sin(5x)$.
+**Problem.** Solve $u_t = u_{xx}$ for $0 \lt{} x \lt{} \pi$$t > 0$With $u(0, t) = u(\pi, t) = 0$ And
+$u(x, 0) = \sin(2x) + 3\sin(5x)$.
 
-*Solution.* Here $\alpha = 1$ and $L = \pi$. The initial condition is already a sine series.
+_Solution._ Here $\alpha = 1$ and $L = \pi$. The initial condition is already a sine series.
 
 $\lambda_n = n^2$$X_n = \sin(nx)$$T_n = e^{-n^2 t}$.
 
@@ -1637,8 +1666,8 @@ $u_t(x, 0) = g(x)$.
 
 ### 8.7 Derivation of the Wave Equation
 
-Consider a string of length $L$ under tension $T$. Let $u(x, t)$ be the vertical displacement. For
-A small segment $[x, x + \Delta x]$Newton's second law in the vertical direction gives:
+Consider a string of length $L$ under tension $T$. Let $u(x, t)$ be the vertical displacement. For A
+small segment $[x, x + \Delta x]$Newton's second law in the vertical direction gives:
 
 $$\rho \Delta x \, u_{tt} = T\sin\theta(x + \Delta x) - T\sin\theta(x)$$
 
@@ -1682,7 +1711,7 @@ Bounded domain attains its maximum and minimum on the boundary.
 
 **Theorem 8.2 (Uniqueness).** The Dirichlet problem for Laplace's equation has at most one solution.
 
-*Proof.* If $u_1$ and $u_2$ are two solutions with the same boundary data, then $v = u_1 - u_2$ is
+_Proof._ If $u_1$ and $u_2$ are two solutions with the same boundary data, then $v = u_1 - u_2$ is
 Harmonic with $v = 0$ on $\partial\Omega$. By the maximum principle, $v \equiv 0$. $\blacksquare$
 
 ### 8.11 Worked Example: Wave Equation
@@ -1690,7 +1719,7 @@ Harmonic with $v = 0$ on $\partial\Omega$. By the maximum principle, $v \equiv 0
 **Problem.** A string of length $\pi$ with fixed ends is plucked: $u(x, 0) = x(\pi - x)$
 $u_t(x, 0) = 0$. Find $u(x, t)$.
 
-*Solution.* With $c = 1$ and $L = \pi$: $a_n = \frac{2}{\pi}\int_0^{\pi} x(\pi - x)\sin(nx)\, dx$
+_Solution._ With $c = 1$ and $L = \pi$: $a_n = \frac{2}{\pi}\int_0^{\pi} x(\pi - x)\sin(nx)\, dx$
 $b_n = 0$ (since $g = 0$).
 
 Integrating by parts twice:
@@ -1715,7 +1744,7 @@ $u(0, y) = u(\pi, y) = u(x, 1) = 0$ and $u(x, 0) = f(x) = x(\pi - x)$.
 <details>
 <summary>Solution</summary>
 
-*Solution.* Separate variables: $u(x, y) = X(x)Y(y)$.
+_Solution._ Separate variables: $u(x, y) = X(x)Y(y)$.
 
 $X''/X = -Y''/Y = -\lambda$.
 
@@ -1729,7 +1758,8 @@ $b_n = \frac{2}{\pi \sinh n}\int_0^{\pi} x(\pi - x)\sin(nx)\, dx = \frac{2}{\pi 
 
 For odd $n = 2k + 1$: $b_n = \frac{8}{\pi n^3 \sinh n}$.
 
-$u(x, y) = \frac{8}{\pi}\sum_{k=0}^{\infty} \frac{\sin((2k+1)x)\sinh((2k+1)(1-y))}{(2k+1)^3 \sinh(2k+1)}$. $\blacksquare$
+$u(x, y) = \frac{8}{\pi}\sum_{k=0}^{\infty} \frac{\sin((2k+1)x)\sinh((2k+1)(1-y))}{(2k+1)^3 \sinh(2k+1)}$.
+$\blacksquare$
 
 </details>
 
@@ -1743,15 +1773,15 @@ On $[a, b]$ with homogeneous boundary conditions, where $p, w > 0$ and $p, p', q
 
 **Key properties:**
 
-1. The eigenvalues are real and form an infinite increasing sequence $\lambda_1 \lt{} \lambda_2 \lt{} \cdots \to \infty$.
-2. Eigenfunctions corresponding to distinct eigenvalues are orthogonal with respect to the weight $w(x)$:
- $\int_a^b y_m(x) y_n(x) w(x)\, dx = 0$ for $m \neq n$.
+1. The eigenvalues are real and form an infinite increasing sequence
+   $\lambda_1 \lt{} \lambda_2 \lt{} \cdots \to \infty$.
+2. Eigenfunctions corresponding to distinct eigenvalues are orthogonal with respect to the weight
+   $w(x)$: $\int_a^b y_m(x) y_n(x) w(x)\, dx = 0$ for $m \neq n$.
 3. The eigenfunctions form a complete set in the weighted $L^2$ space.
 
-*Remark.* The boundary value problems encountered in the heat and wave equations
-($X'' + \lambda X = 0$ with $X(0) = X(L) = 0$) are special cases of Sturm-Liouville problems
-With $p = 1$$q = 0$$w = 1$.
-
+_Remark._ The boundary value problems encountered in the heat and wave equations
+($X'' + \lambda X = 0$ with $X(0) = X(L) = 0$) are special cases of Sturm-Liouville problems With
+$p = 1$$q = 0$$w = 1$.
 
 ### 8.14 Neumann Boundary Conditions
 
@@ -1770,14 +1800,13 @@ $$u(x, t) = \frac{a_0}{2} + \sum_{n=1}^{\infty} a_n \cos\frac{n\pi x}{L} e^{-\al
 
 Where $a_n = \frac{2}{L}\int_0^L f(x)\cos\frac{n\pi x}{L}\, dx$.
 
-_Remark._ As $t \to \infty$All exponential terms decay, and $u(x, t) \to a_0/2$The average
-Value of the initial temperature. Physically, an insulated rod reaches a uniform steady-state
-Temperature.
+_Remark._ As $t \to \infty$All exponential terms decay, and $u(x, t) \to a_0/2$The average Value of
+the initial temperature. Physically, an insulated rod reaches a uniform steady-state Temperature.
 
 ### 8.15 Worked Example: Heat Equation with Non-Trivial Initial Data
 
-**Problem.** Solve $u_t = u_{xx}$ for $0 \lt{} x \lt{} \pi$$t > 0$With $u(0, t) = u(\pi, t) = 0$
-And $u(x, 0) = x(\pi - x)$.
+**Problem.** Solve $u_t = u_{xx}$ for $0 \lt{} x \lt{} \pi$$t > 0$With $u(0, t) = u(\pi, t) = 0$ And
+$u(x, 0) = x(\pi - x)$.
 
 <details>
 <summary>Solution</summary>
@@ -1790,14 +1819,15 @@ $b_n = \frac{2}{\pi}\int_0^{\pi} x(\pi - x)\sin(nx)\, dx = \frac{4(1 - (-1)^n)}{
 
 For even $n$: $b_n = 0$. For odd $n = 2k + 1$: $b_n = \frac{8}{\pi n^3}$.
 
-$u(x, t) = \frac{8}{\pi}\sum_{k=0}^{\infty} \frac{\sin((2k+1)x)}{(2k+1)^3} e^{-(2k+1)^2 t}$. $\blacksquare$
+$u(x, t) = \frac{8}{\pi}\sum_{k=0}^{\infty} \frac{\sin((2k+1)x)}{(2k+1)^3} e^{-(2k+1)^2 t}$.
+$\blacksquare$
 
 </details>
 
 ### 8.16 Worked Example: D'Alembert's Solution
 
-**Problem.** Solve $u_{tt} = 4u_{xx}$ for $-\infty \lt{} x \lt{} \infty$ with $u(x, 0) = e^{-x^2}$ and
-$u_t(x, 0) = 0$.
+**Problem.** Solve $u_{tt} = 4u_{xx}$ for $-\infty \lt{} x \lt{} \infty$ with $u(x, 0) = e^{-x^2}$
+and $u_t(x, 0) = 0$.
 
 <details>
 <summary>Solution</summary>
@@ -1813,36 +1843,40 @@ This represents two Gaussian pulses traveling in opposite directions at speed 2.
 
 ### 9.1 Autonomous Systems
 
-For $\mathbf{'\{'}x{'\}'}' = \mathbf{'\{'}f{'\}'}(\mathbf{'\{'}x{'\}'})$A **critical point** $\mathbf{'\{'}x{'\}'}^*$ satisfies
+For $\mathbf{'\{'}x{'\}'}' = \mathbf{'\{'}f{'\}'}(\mathbf{'\{'}x{'\}'})$A **critical point**
+$\mathbf{'\{'}x{'\}'}^*$ satisfies
 $\mathbf{'\{'}f{'\}'}(\mathbf{'\{'}x{'\}'}^*) = \mathbf{'\{'}0{'\}'}$.
 
 ### 9.2 Linearization and Stability
 
-Let $A = J\mathbf{'\{'}f{'\}'}(\mathbf{'\{'}x{'\}'}^*)$ be the Jacobian at the critical point. The eigenvalues of $A$
-Determine the local stability:
+Let $A = J\mathbf{'\{'}f{'\}'}(\mathbf{'\{'}x{'\}'}^*)$ be the Jacobian at the critical point. The
+eigenvalues of $A$ Determine the local stability:
 
-| Eigenvalues of $A$ | Type | Stability |
-| --------------------------------------- | --------------- | --------------------- |
-| Both real, negative | Stable node | Asymptotically stable |
-| Both real, positive | Unstable node | Unstable |
-| Real, opposite signs | Saddle point | Unstable |
-| Complex, $\mathrm{Re{}(\lambda) \lt{} 0$ | Stable spiral | Asymptotically stable |
-| Complex, $\mathrm{Re{}(\lambda) > 0$ | Unstable spiral | Unstable |
-| Purely imaginary | Center | (Marginally) stable |
+| Eigenvalues of $A$                       | Type            | Stability             |
+| ---------------------------------------- | --------------- | --------------------- |
+| Both real, negative                      | Stable node     | Asymptotically stable |
+| Both real, positive                      | Unstable node   | Unstable              |
+| Real, opposite signs                     | Saddle point    | Unstable              |
+| Complex, $\mathrm{Re{}(\lambda) \lt{} 0$ | Stable spiral   | Asymptotically stable |
+| Complex, $\mathrm{Re{}(\lambda) > 0$     | Unstable spiral | Unstable              |
+| Purely imaginary                         | Center          | (Marginally) stable   |
 
 ### 9.3 Lyapunov Stability
 
-**Definition.** A critical point $\mathbf{'\{'}x{'\}'}^*$ is **stable** if for every $\varepsilon > 0$There
-Exists $\delta > 0$ such that $\|\mathbf{'\{'}x{'\}'}(0) - \mathbf{'\{'}x{'\}'}^*\| \lt{} \delta$ implies
+**Definition.** A critical point $\mathbf{'\{'}x{'\}'}^*$ is **stable** if for every
+$\varepsilon > 0$There Exists $\delta > 0$ such that
+$\|\mathbf{'\{'}x{'\}'}(0) - \mathbf{'\{'}x{'\}'}^*\| \lt{} \delta$ implies
 $\|\mathbf{'\{'}x{'\}'}(t) - \mathbf{'\{'}x{'\}'}^*\| \lt{} \varepsilon$ for all $t > 0$.
 
-It is **asymptotically stable** if it is stable and $\mathbf{'\{'}x{'\}'}(t) \to \mathbf{'\{'}x{'\}'}^*$ as
-$t \to \infty$.
+It is **asymptotically stable** if it is stable and
+$\mathbf{'\{'}x{'\}'}(t) \to \mathbf{'\{'}x{'\}'}^*$ as $t \to \infty$.
 
 **Theorem 9.1 (Lyapunov).** If there exists a continuously differentiable function $V$ (a **Lyapunov
-Function**) such that $V(\mathbf{'\{'}x{'\}'}^*) = 0$$V(\mathbf{'\{'}x{'\}'}) > 0$ for $\mathbf{'\{'}x{'\}'} \neq \mathbf{'\{'}x{'\}'}^*$
-And $\dot{V} \leq 0$ in a neighbourhood of $\mathbf{'\{'}x{'\}'}^*$Then $\mathbf{'\{'}x{'\}'}^*$ is stable. If
-$\dot{V} \lt{} 0$ for $\mathbf{'\{'}x{'\}'} \neq \mathbf{'\{'}x{'\}'}^*$Then $\mathbf{'\{'}x{'\}'}^*$ is asymptotically stable.
+Function**) such that $V(\mathbf{'\{'}x{'\}'}^*) = 0$$V(\mathbf{'\{'}x{'\}'}) > 0$ for
+$\mathbf{'\{'}x{'\}'} \neq \mathbf{'\{'}x{'\}'}^*$ And $\dot{V} \leq 0$ in a neighbourhood of
+$\mathbf{'\{'}x{'\}'}^*$Then $\mathbf{'\{'}x{'\}'}^*$ is stable. If $\dot{V} \lt{} 0$ for
+$\mathbf{'\{'}x{'\}'} \neq \mathbf{'\{'}x{'\}'}^*$Then $\mathbf{'\{'}x{'\}'}^*$ is asymptotically
+stable.
 
 ### 9.4 Worked Example: Linearization
 
@@ -1851,7 +1885,7 @@ $\dot{V} \lt{} 0$ for $\mathbf{'\{'}x{'\}'} \neq \mathbf{'\{'}x{'\}'}^*$Then $\m
 <details>
 <summary>Solution</summary>
 
-*Solution.* Set $x' = 0$ and $y' = 0$:
+_Solution._ Set $x' = 0$ and $y' = 0$:
 
 $x - y = 0 \implies y = x$
 
@@ -1869,7 +1903,8 @@ $\tau^2 - 4\Delta = (1 + \sqrt{2})^2 - 8\sqrt{2} = 3 + 2\sqrt{2} - 8\sqrt{2} = 3
 
 Complex eigenvalues with positive real part: **unstable spiral**.
 
-At $(-1/\sqrt{2}, -1/\sqrt{2})$: $J = \begin{pmatrix} 1 & -1 \\ -\sqrt{2} & -\sqrt{2} \end{pmatrix}$.
+At $(-1/\sqrt{2}, -1/\sqrt{2})$:
+$J = \begin{pmatrix} 1 & -1 \\ -\sqrt{2} & -\sqrt{2} \end{pmatrix}$.
 
 $\mathrm{tr{}(J) = 1 - \sqrt{2} \lt{} 0$$\det(J) = -\sqrt{2} + \sqrt{2} = 0$.
 
@@ -1881,13 +1916,15 @@ Negative determinant: **saddle point** (unstable). $\blacksquare$
 
 ### 9.5 Phase Portraits for 2D Nonlinear Systems
 
-For the nonlinear system $\mathbf{'\{'}x{'\}'}' = \mathbf{'\{'}f{'\}'}(\mathbf{'\{'}x{'\}'})$The **Hartman-Grobman theorem**
-States that near a hyperbolic critical point (one where the Jacobian has no eigenvalues on the
-Imaginary axis), the nonlinear phase portrait is topologically equivalent to the linearized one.
+For the nonlinear system $\mathbf{'\{'}x{'\}'}' = \mathbf{'\{'}f{'\}'}(\mathbf{'\{'}x{'\}'})$The
+**Hartman-Grobman theorem** States that near a hyperbolic critical point (one where the Jacobian has
+no eigenvalues on the Imaginary axis), the nonlinear phase portrait is topologically equivalent to
+the linearized one.
 
 **Procedure for sketching phase portraits:**
 
-1. Find all critical points by solving $\mathbf{'\{'}f{'\}'}(\mathbf{'\{'}x{'\}'}) = \mathbf{'\{'}0{'\}'}$.
+1. Find all critical points by solving
+   $\mathbf{'\{'}f{'\}'}(\mathbf{'\{'}x{'\}'}) = \mathbf{'\{'}0{'\}'}$.
 2. Compute the Jacobian $J$ at each critical point.
 3. Classify each critical point using the eigenvalue analysis from Section 4.9.
 4. Sketch the local behaviour near each critical point.
@@ -1902,8 +1939,8 @@ Phenomena --- linear systems cannot have isolated closed orbits.
 Closed bounded region $R$ that contains no critical points, then the trajectory approaches a closed
 Periodic orbit as $t \to \infty$.
 
-*Remark.* The Poincaré-Bendixson theorem is specific to two dimensions. In three or more
-Dimensions, much more complex behaviour (chaos) is possible.
+_Remark._ The Poincaré-Bendixson theorem is specific to two dimensions. In three or more Dimensions,
+much more complex behaviour (chaos) is possible.
 
 **Example: Van der Pol oscillator.** The equation
 
@@ -1914,26 +1951,25 @@ Nonlinear resistance and arises in biology (cardiac rhythms, neuron firing).
 
 ### 9.7 Worked Example: Lotka-Volterra Analysis
 
-**Problem.** Analyze the stability of the Lotka-Volterra system
-$x' = x(2 - y)$$y' = y(x - 1)$.
+**Problem.** Analyze the stability of the Lotka-Volterra system $x' = x(2 - y)$$y' = y(x - 1)$.
 
 <details>
 <summary>Solution</summary>
 
-*Solution.* Critical points: $(0, 0)$ and $(1, 2)$.
+_Solution._ Critical points: $(0, 0)$ and $(1, 2)$.
 
 Jacobian: $J = \begin{pmatrix} 2 - y & -x \\ y & x - 1 \end{pmatrix}$.
 
-At $(0, 0)$: $J = \begin{pmatrix} 2 & 0 \\ 0 & -1 \end{pmatrix}$.
-Eigenvalues $2$ and $-1$: **saddle point** (unstable).
+At $(0, 0)$: $J = \begin{pmatrix} 2 & 0 \\ 0 & -1 \end{pmatrix}$. Eigenvalues $2$ and $-1$: **saddle
+point** (unstable).
 
 At $(1, 2)$: $J = \begin{pmatrix} 0 & -1 \\ 2 & 0 \end{pmatrix}$.
 $\det(J) = 2 > 0$$\mathrm{tr{}(J) = 0$. Eigenvalues $\pm i\sqrt{2}$: **center**.
 
-_Remark._ For the linearized system, the center is (marginally) stable. However, for the
-Nonlinear Lotka-Volterra system, the trajectories are actually closed orbits surrounding $(1, 2)$.
-This can be verified using the first integral $H = x - \ln x + 2\ln y - y$Which is constant
-Along trajectories. $\blacksquare$
+_Remark._ For the linearized system, the center is (marginally) stable. However, for the Nonlinear
+Lotka-Volterra system, the trajectories are actually closed orbits surrounding $(1, 2)$. This can be
+verified using the first integral $H = x - \ln x + 2\ln y - y$Which is constant Along trajectories.
+$\blacksquare$
 
 </details>
 
@@ -1944,74 +1980,53 @@ The competing species model is:
 $$x' = x(r_1 - a_{11}x - a_{12}y), \quad y' = y(r_2 - a_{21}x - a_{22}y)$$
 
 Where $r_i > 0$ are growth rates and $a_{ij} > 0$ are competition coefficients. The four critical
-Points are $(0, 0)$$(r_1/a_{11}, 0)$$(0, r_2/a_{22})$And the coexistence point
-$(x^*, y^*)$ where both $x'$ and $y'$ vanish.
+Points are $(0, 0)$$(r_1/a_{11}, 0)$$(0, r_2/a_{22})$And the coexistence point $(x^*, y^*)$ where
+both $x'$ and $y'$ vanish.
 
 The stability of the coexistence point determines whether both species survive. If
-$a_{11}a_{22} > a_{12}a_{21}$Coexistence is stable; otherwise, one species drives the other
-To extinction (competitive exclusion).
+$a_{11}a_{22} > a_{12}a_{21}$Coexistence is stable; otherwise, one species drives the other To
+extinction (competitive exclusion).
 
 ## 10. Common Pitfalls
 
-:::caution
-Common Pitfall When using undetermined coefficients, always check whether your guess
+:::caution Common Pitfall When using undetermined coefficients, always check whether your guess
 Overlaps with the homogeneous solution. For $y'' - 4y = e^{2x}$Guessing $y_p = Ae^{2x}$ fails
-Because $e^{2x}$ satisfies the homogeneous equation. You must use $y_p = Axe^{2x}$ instead.
-:::
+Because $e^{2x}$ satisfies the homogeneous equation. You must use $y_p = Axe^{2x}$ instead. :::
 
-:::caution
-Common Pitfall The Laplace transform of $y'(t)$ is $sY(s) - y(0)$Not $sY(s)$. The
-Initial conditions are built into the transform. Forgetting them leads to incorrect solutions.
-:::
+:::caution Common Pitfall The Laplace transform of $y'(t)$ is $sY(s) - y(0)$Not $sY(s)$. The Initial
+conditions are built into the transform. Forgetting them leads to incorrect solutions. :::
 
-:::caution
-Common Pitfall Separation of variables can miss solutions. When dividing by $h(y)$ to
+:::caution Common Pitfall Separation of variables can miss solutions. When dividing by $h(y)$ to
 Separate, check whether $h(y) = 0$ gives any valid solutions. For example, solving $y' = y^2$ by
-Separating gives $y = -1/(x + C)$But misses the solution $y = 0$.
-:::
+Separating gives $y = -1/(x + C)$But misses the solution $y = 0$. :::
 
-:::caution
-Common Pitfall The Fourier series of a function converges to the function only at points
+:::caution Common Pitfall The Fourier series of a function converges to the function only at points
 Of continuity. At jump discontinuities, it converges to the midpoint of the jump. The Gibbs
-Phenomenon causes overshoots near jumps that do not vanish as more terms are added.
-:::
+Phenomenon causes overshoots near jumps that do not vanish as more terms are added. :::
 
-:::caution
-Common Pitfall When solving PDEs by separation of variables, the boundary conditions
+:::caution Common Pitfall When solving PDEs by separation of variables, the boundary conditions
 Determine the eigenvalues. Using the wrong boundary conditions (e.g., Neumann instead of Dirichlet)
-Leads to a completely different set of eigenfunctions and eigenvalues.
-:::
+Leads to a completely different set of eigenfunctions and eigenvalues. :::
 
-:::caution
-Common Pitfall Not every first-order ODE can be solved analytically. Equations like
+:::caution Common Pitfall Not every first-order ODE can be solved analytically. Equations like
 $y' = x^2 + y^2$ have no closed-form solution in terms of elementary functions. Numerical methods
-(Euler, Runge-Kutta) may be necessary.
-:::
+(Euler, Runge-Kutta) may be necessary. :::
 
-:::caution
-Common Pitfall The linearization of a nonlinear system near a critical point is only
+:::caution Common Pitfall The linearization of a nonlinear system near a critical point is only
 Valid for hyperbolic critical points (no eigenvalues on the imaginary axis). If eigenvalues lie on
-The imaginary axis, the nonlinear system can behave very differently from its linearization.
-:::
+The imaginary axis, the nonlinear system can behave very differently from its linearization. :::
 
-:::caution
-Common Pitfall When computing the inverse Laplace transform, always check that the
+:::caution Common Pitfall When computing the inverse Laplace transform, always check that the
 Partial fraction decomposition is correct before inverting term-by-term. A common error is
-Forgetting to include all powers of irreducible quadratic factors.
-:::
+Forgetting to include all powers of irreducible quadratic factors. :::
 
-:::caution
-Common Pitfall For the Euler-Cauchy equation $x^2 y'' + axy' + by = 0$Remember that
-$x^r$ with complex $r = \alpha \pm i\beta$ gives solutions involving $\cos(\beta \ln x)$ and
-$\sin(\beta \ln x)$Not $\cos(\beta x)$ and $\sin(\beta x)$.
-:::
+:::caution Common Pitfall For the Euler-Cauchy equation $x^2 y'' + axy' + by = 0$Remember that $x^r$
+with complex $r = \alpha \pm i\beta$ gives solutions involving $\cos(\beta \ln x)$ and
+$\sin(\beta \ln x)$Not $\cos(\beta x)$ and $\sin(\beta x)$. :::
 
-:::caution
-Common Pitfall The Wronskian $W(y_1, y_2)$ being zero at a single point does not
+:::caution Common Pitfall The Wronskian $W(y_1, y_2)$ being zero at a single point does not
 Necessarily mean the solutions are linearly dependent. For linear ODEs with continuous coefficients,
-$W \equiv 0$ everywhere or $W \neq 0$ everywhere. Check Abel's identity.
-:::
-
+$W \equiv 0$ everywhere or $W \neq 0$ everywhere. Check Abel's identity. :::
 
 ### 9.9 Worked Example: Lyapunov Function
 
@@ -2023,8 +2038,8 @@ $x' = -x - y^3$$y' = x^3 - y$.
 
 _Solution._ Critical point: $-x - y^3 = 0$ and $x^3 - y = 0$ gives $x = 0, y = 0$.
 
-Choose the Lyapunov function $V(x, y) = \frac{x^2}{2} + \frac{y^2}{2}$. $V(0,0) = 0$ and
-$V > 0$ for $(x, y) \neq (0, 0)$.
+Choose the Lyapunov function $V(x, y) = \frac{x^2}{2} + \frac{y^2}{2}$. $V(0,0) = 0$ and $V > 0$ for
+$(x, y) \neq (0, 0)$.
 
 $\dot{V} = \frac{\partial V}{\partial x}x' + \frac{\partial V}{\partial y}y' = x(-x - y^3) + y(x^3 - y)$
 
@@ -2034,31 +2049,31 @@ This is not negative definite. Let us try $V(x, y) = \frac{x^4}{4} + \frac{y^4}{
 
 $\dot{V} = x^3(-x - y^3) + y^3(x^3 - y) = -x^4 - x^3 y^3 + x^3 y^3 - y^4 = -(x^4 + y^4)$.
 
-Since $\dot{V} = -(x^4 + y^4) \lt{} 0$ for $(x, y) \neq (0, 0)$The origin is asymptotically
-Stable by Lyapunov's theorem. $\blacksquare$
+Since $\dot{V} = -(x^4 + y^4) \lt{} 0$ for $(x, y) \neq (0, 0)$The origin is asymptotically Stable
+by Lyapunov's theorem. $\blacksquare$
 
 </details>
 
 ### 9.10 Worked Example: Van der Pol Oscillator
 
-**Problem.** Show that the Van der Pol equation $x'' + \mu(x^2 - 1)x' + x = 0$ with $\mu > 0$
-Has a unique limit cycle.
+**Problem.** Show that the Van der Pol equation $x'' + \mu(x^2 - 1)x' + x = 0$ with $\mu > 0$ Has a
+unique limit cycle.
 
 <details>
 <summary>Solution</summary>
 
-_Solution.* Write as a system: $x' = y$$y' = -x - \mu(x^2 - 1)y$.
+\_Solution.\* Write as a system: $x' = y$$y' = -x - \mu(x^2 - 1)y$.
 
 The only critical point is $(0, 0)$. The Jacobian at the origin is
 $J = \begin{pmatrix} 0 & 1 \\ -1 & \mu \end{pmatrix}$.
 
 $\mathrm{tr{}(J) = \mu > 0$$\det(J) = 1 > 0$$\tau^2 - 4\Delta = \mu^2 - 4$.
 
-For $0 \lt{} \mu \lt{} 2$: complex eigenvalues with positive real part (**unstable spiral**).
-For $\mu \geq 2$: two positive real eigenvalues (**unstable node**).
+For $0 \lt{} \mu \lt{} 2$: complex eigenvalues with positive real part (**unstable spiral**). For
+$\mu \geq 2$: two positive real eigenvalues (**unstable node**).
 
-The origin is always unstable. To show existence of a limit cycle, we use a **Liénard's theorem**
-Or construct a trapping region. Define
+The origin is always unstable. To show existence of a limit cycle, we use a **Liénard's theorem** Or
+construct a trapping region. Define
 
 $L(x) = x^3/3 - x$ and write the system as $x' = y$$y' = -x - \mu L'(x) y$.
 
@@ -2066,9 +2081,9 @@ The function $L(x)$ has zeros at $x = \pm 1$. For $\mu > 0$The damping is negati
 $\lvert x \rvert \lt{} 1$ (energy input) and positive for $\lvert x \rvert > 1$ (energy
 Dissipation). This creates a unique stable limit cycle that passes through $x = \pm 1$.
 
-A detailed proof requires constructing an annular region and applying the Poincaré-Bendixson
-Theorem (the inner boundary encloses the unstable origin; the outer boundary is chosen so that
-Trajectories point inward). $\blacksquare$
+A detailed proof requires constructing an annular region and applying the Poincaré-Bendixson Theorem
+(the inner boundary encloses the unstable origin; the outer boundary is chosen so that Trajectories
+point inward). $\blacksquare$
 
 </details>
 ## 11. Problem Set
@@ -2080,8 +2095,8 @@ Classify the ODE $y'' + xy' + e^x y = \cos x$ by order, linearity, and homogenei
 <details>
 <summary>Solution</summary>
 
-_Solution._ Second-order (highest derivative is $y''$), linear ($y$$y'$$y''$ appear linearly
-With coefficient functions of $x$ only), nonhomogeneous ($\cos x \neq 0$). $\blacksquare$
+_Solution._ Second-order (highest derivative is $y''$), linear ($y$$y'$$y''$ appear linearly With
+coefficient functions of $x$ only), nonhomogeneous ($\cos x \neq 0$). $\blacksquare$
 
 _If you get this wrong, revise:_ Section 1.2 (Classification of ODEs).
 
@@ -2096,8 +2111,8 @@ Solve $\frac{dy}{dx} = \frac{x}{y}$$y(0) = 2$.
 
 _Solution._ Separating: $y\, dy = x\, dx$. Integrating: $\frac{y^2}{2} = \frac{x^2}{2} + C$.
 
-$y(0) = 2 \implies C = 2$So $y^2 = x^2 + 4$Giving $y = \sqrt{x^2 + 4}$ (positive branch
-Since $y(0) = 2 > 0$). $\blacksquare$
+$y(0) = 2 \implies C = 2$So $y^2 = x^2 + 4$Giving $y = \sqrt{x^2 + 4}$ (positive branch Since
+$y(0) = 2 > 0$). $\blacksquare$
 
 _If you get this wrong, revise:_ Section 2.1 (Separable Equations).
 
@@ -2339,13 +2354,19 @@ Solve $\mathbf{'\{'}x{'\}'}' = \begin{pmatrix} 1 & 4 \\ 1 & -2 \end{pmatrix}\mat
 <details>
 <summary>Solution</summary>
 
-_Solution._ $\det(A - \lambda I) = (1 - \lambda)(-2 - \lambda) - 4 = \lambda^2 + \lambda - 6 = (\lambda + 3)(\lambda - 2) = 0$.
+_Solution._
+$\det(A - \lambda I) = (1 - \lambda)(-2 - \lambda) - 4 = \lambda^2 + \lambda - 6 = (\lambda + 3)(\lambda - 2) = 0$.
 
-$\lambda_1 = 2$: $(A - 2I)\mathbf{'\{'}v{'\}'} = \begin{pmatrix} -1 & 4 \\ 1 & -4 \end{pmatrix}\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'}$. $\mathbf{'\{'}v{'\}'}_1 = \begin{pmatrix} 4 \\ 1 \end{pmatrix}$.
+$\lambda_1 = 2$:
+$(A - 2I)\mathbf{'\{'}v{'\}'} = \begin{pmatrix} -1 & 4 \\ 1 & -4 \end{pmatrix}\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'}$.
+$\mathbf{'\{'}v{'\}'}_1 = \begin{pmatrix} 4 \\ 1 \end{pmatrix}$.
 
-$\lambda_2 = -3$: $(A + 3I)\mathbf{'\{'}v{'\}'} = \begin{pmatrix} 4 & 4 \\ 1 & 1 \end{pmatrix}\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'}$. $\mathbf{'\{'}v{'\}'}_2 = \begin{pmatrix} 1 \\ -1 \end{pmatrix}$.
+$\lambda_2 = -3$:
+$(A + 3I)\mathbf{'\{'}v{'\}'} = \begin{pmatrix} 4 & 4 \\ 1 & 1 \end{pmatrix}\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'}$.
+$\mathbf{'\{'}v{'\}'}_2 = \begin{pmatrix} 1 \\ -1 \end{pmatrix}$.
 
-$\mathbf{'\{'}x{'\}'}(t) = c_1 \begin{pmatrix} 4 \\ 1 \end{pmatrix} e^{2t} + c_2 \begin{pmatrix} 1 \\ -1 \end{pmatrix} e^{-3t}$. $\blacksquare$
+$\mathbf{'\{'}x{'\}'}(t) = c_1 \begin{pmatrix} 4 \\ 1 \end{pmatrix} e^{2t} + c_2 \begin{pmatrix} 1 \\ -1 \end{pmatrix} e^{-3t}$.
+$\blacksquare$
 
 _If you get this wrong, revise:_ Section 4.2 (Homogeneous Systems with Constant Coefficients).
 
@@ -2360,8 +2381,10 @@ Solve $\mathbf{'\{'}x{'\}'}' = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}\mat
 
 _Solution._ $\det(A - \lambda I) = \lambda^2 + 1 = 0$. $\lambda = \pm i$.
 
-For $\lambda = i$: $\begin{pmatrix} -i & -1 \\ 1 & -i \end{pmatrix}\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'}$.
-$-iv_1 - v_2 = 0 \implies v_2 = -iv_1$. With $v_1 = 1$: $\mathbf{'\{'}v{'\}'} = \begin{pmatrix} 1 \\ -i \end{pmatrix} = \begin{pmatrix} 1 \\ 0 \end{pmatrix} + i\begin{pmatrix} 0 \\ -1 \end{pmatrix}$.
+For $\lambda = i$:
+$\begin{pmatrix} -i & -1 \\ 1 & -i \end{pmatrix}\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'}$.
+$-iv_1 - v_2 = 0 \implies v_2 = -iv_1$. With $v_1 = 1$:
+$\mathbf{'\{'}v{'\}'} = \begin{pmatrix} 1 \\ -i \end{pmatrix} = \begin{pmatrix} 1 \\ 0 \end{pmatrix} + i\begin{pmatrix} 0 \\ -1 \end{pmatrix}$.
 
 $\mathbf{'\{'}a{'\}'} = \begin{pmatrix} 1 \\ 0 \end{pmatrix}$$\mathbf{'\{'}b{'\}'} = \begin{pmatrix} 0 \\ -1 \end{pmatrix}$.
 
@@ -2380,7 +2403,8 @@ Compute $\mathcal{'\{'}L{'\}'}\{t^2 e^{-3t}\}$.
 <details>
 <summary>Solution</summary>
 
-_Solution._ Using $\mathcal{'\{'}L{'\}'}\{t^n e^{at}\} = \frac{n!}{(s-a)^{n+1}}$ with $n = 2$$a = -3$:
+_Solution._ Using $\mathcal{'\{'}L{'\}'}\{t^n e^{at}\} = \frac{n!}{(s-a)^{n+1}}$ with
+$n = 2$$a = -3$:
 
 $\mathcal{'\{'}L{'\}'}\{t^2 e^{-3t}\} = \frac{2!}{(s + 3)^3} = \frac{2}{(s+3)^3}$. $\blacksquare$
 
@@ -2395,7 +2419,8 @@ Solve $y'' - y = e^t$$y(0) = 0$$y'(0) = 0$ using Laplace transforms.
 <details>
 <summary>Solution</summary>
 
-_Solution._ $\mathcal{'\{'}L{'\}'}\{y''\} - \mathcal{'\{'}L{'\}'}\{y\} = \mathcal{'\{'}L{'\}'}\{e^t\}$:
+_Solution._
+$\mathcal{'\{'}L{'\}'}\{y''\} - \mathcal{'\{'}L{'\}'}\{y\} = \mathcal{'\{'}L{'\}'}\{e^t\}$:
 
 $s^2 Y - Y = \frac{1}{s - 1}$
 
@@ -2409,9 +2434,8 @@ Partial fractions: $\frac{1}{(s-1)^2(s+1)} = \frac{A}{s-1} + \frac{B}{(s-1)^2} +
 
 $1 = A(s-1)(s+1) + B(s+1) + C(s-1)^2$
 
-$s = 1$: $1 = 2B \implies B = 1/2$.
-$s = -1$: $1 = 4C \implies C = 1/4$.
-$s = 0$: $1 = -A + B + C = -A + 3/4 \implies A = -1/4$.
+$s = 1$: $1 = 2B \implies B = 1/2$. $s = -1$: $1 = 4C \implies C = 1/4$. $s = 0$:
+$1 = -A + B + C = -A + 3/4 \implies A = -1/4$.
 
 $Y = -\frac{1/4}{s-1} + \frac{1/2}{(s-1)^2} + \frac{1/4}{s+1}$
 
@@ -2432,7 +2456,8 @@ _Solution._ Complete the square: $s^2 + 2s + 5 = (s + 1)^2 + 4$.
 
 $\frac{2s + 3}{(s+1)^2 + 4} = \frac{2(s+1) + 1}{(s+1)^2 + 4} = 2 \cdot \frac{s+1}{(s+1)^2 + 4} + \frac{1}{2} \cdot \frac{2}{(s+1)^2 + 4}$
 
-$f(t) = 2e^{-t}\cos 2t + \frac{1}{2}e^{-t}\sin 2t = e^{-t}\left(2\cos 2t + \frac{1}{2}\sin 2t\right)$. $\blacksquare$
+$f(t) = 2e^{-t}\cos 2t + \frac{1}{2}e^{-t}\sin 2t = e^{-t}\left(2\cos 2t + \frac{1}{2}\sin 2t\right)$.
+$\blacksquare$
 
 _If you get this wrong, revise:_ Section 5.8 (Worked Example: Inverse Laplace Transform).
 
@@ -2440,8 +2465,9 @@ _If you get this wrong, revise:_ Section 5.8 (Worked Example: Inverse Laplace Tr
 
 ### Problem 18 (Fourier Series)
 
-Find the Fourier series of $f(x) = \begin{cases} 1 & 0 \lt{} x \lt{} \pi \\ -1 & -\pi \lt{} x \lt{} 0 \end{cases}$
-Extended $2\pi$-periodically (the square wave).
+Find the Fourier series of
+$f(x) = \begin{cases} 1 & 0 \lt{} x \lt{} \pi \\ -1 & -\pi \lt{} x \lt{} 0 \end{cases}$ Extended
+$2\pi$-periodically (the square wave).
 
 <details>
 <summary>Solution</summary>
@@ -2489,11 +2515,10 @@ Find and classify the critical points of $x' = y - x^2$$y' = x - y^2$.
 <details>
 <summary>Solution</summary>
 
-_Solution._ Set $y - x^2 = 0$ and $x - y^2 = 0$. From the first equation $y = x^2$Substituting
-Into the second: $x - x^4 = 0$So $x(1 - x^3) = 0$.
+_Solution._ Set $y - x^2 = 0$ and $x - y^2 = 0$. From the first equation $y = x^2$Substituting Into
+the second: $x - x^4 = 0$So $x(1 - x^3) = 0$.
 
-$x = 0 \implies y = 0$. Critical point: $(0, 0)$.
-$x = 1 \implies y = 1$. Critical point: $(1, 1)$.
+$x = 0 \implies y = 0$. Critical point: $(0, 0)$. $x = 1 \implies y = 1$. Critical point: $(1, 1)$.
 
 Jacobian: $J = \begin{pmatrix} -2x & 1 \\ 1 & -2y \end{pmatrix}$.
 
@@ -2501,12 +2526,11 @@ At $(0, 0)$: $J = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}$.
 $\mathrm{tr{}(J) = 0$$\det(J) = -1 \lt{} 0$. **Saddle point** (unstable).
 
 At $(1, 1)$: $J = \begin{pmatrix} -2 & 1 \\ 1 & -2 \end{pmatrix}$.
-$\mathrm{tr{}(J) = -4 \lt{} 0$$\det(J) = 3 > 0$.
-$\tau^2 - 4\Delta = 16 - 12 = 4 > 0$. Two distinct negative real eigenvalues. **Stable node**
-(asymptotically stable). $\blacksquare$
+$\mathrm{tr{}(J) = -4 \lt{} 0$$\det(J) = 3 > 0$. $\tau^2 - 4\Delta = 16 - 12 = 4 > 0$. Two distinct
+negative real eigenvalues. **Stable node** (asymptotically stable). $\blacksquare$
 
-_If you get this wrong, revise:_ Section 9.2 (Linearization and Stability) and Section 4.9
-(Phase Portrait Analysis).
+_If you get this wrong, revise:_ Section 9.2 (Linearization and Stability) and Section 4.9 (Phase
+Portrait Analysis).
 
 </details>
 

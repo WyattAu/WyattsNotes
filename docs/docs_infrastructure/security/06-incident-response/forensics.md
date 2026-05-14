@@ -1,9 +1,12 @@
 ---
 id: forensics
 title: Digital Forensics Basics
-description: "Digital Forensics Basics — Forensic Fundamentals; Chain of Custody; Integrity Hashes; Generate SHA-256 hashes of evidence files."
+description:
+  'Digital Forensics Basics — Forensic Fundamentals; Chain of Custody; Integrity Hashes; Generate
+  SHA-256 hashes of evidence files.'
 slug: forensics
 ---
+
 ## Forensic Fundamentals
 
 ### Chain of Custody
@@ -61,16 +64,16 @@ dmesg | grep -i "read-only"
 
 The order of evidence collection matters because volatile evidence is lost first:
 
-| Priority | Evidence Type | Volatility | Collection Method |
+| Priority | Evidence Type        | Volatility | Collection Method                  |
 | -------- | -------------------- | ---------- | ---------------------------------- |
-| 1 | CPU registers, cache | Seconds | Live response, hardware debugger |
-| 2 | RAM | Seconds | Live acquisition (LiME, WinPmem) |
-| 3 | Network connections | Minutes | `netstat``ss``tcpdump` |
-| 4 | Running processes | Minutes | `ps`Process dumps |
-| 5 | Swap / pagefile | Minutes | Disk imaging |
-| 6 | Disk / filesystem | Persistent | Write-blocked imaging |
-| 7 | Remote logs | Hours/Days | Secure copy from log servers |
-| 8 | Physical media | Persistent | Forensic imaging, chain of custody |
+| 1        | CPU registers, cache | Seconds    | Live response, hardware debugger   |
+| 2        | RAM                  | Seconds    | Live acquisition (LiME, WinPmem)   |
+| 3        | Network connections  | Minutes    | `netstat``ss``tcpdump`             |
+| 4        | Running processes    | Minutes    | `ps`Process dumps                  |
+| 5        | Swap / pagefile      | Minutes    | Disk imaging                       |
+| 6        | Disk / filesystem    | Persistent | Write-blocked imaging              |
+| 7        | Remote logs          | Hours/Days | Secure copy from log servers       |
+| 8        | Physical media       | Persistent | Forensic imaging, chain of custody |
 
 ## Disk Forensics
 
@@ -207,16 +210,16 @@ vol.py -f memory.raw --profile=Win10x64_19041 printkey -K "Software\Microsoft\Wi
 
 ### Key Memory Analysis Targets
 
-| Target | What It Reveals |
+| Target                  | What It Reveals                                              |
 | ----------------------- | ------------------------------------------------------------ |
-| `pslist` / `psscan` | Running processes (including hidden/rootkits) |
-| `netscan` | Active and closed network connections |
-| `cmdscan` / `consoles` | Command-line history |
-| `malfind` | Code injection, suspicious memory regions |
+| `pslist` / `psscan`     | Running processes (including hidden/rootkits)                |
+| `netscan`               | Active and closed network connections                        |
+| `cmdscan` / `consoles`  | Command-line history                                         |
+| `malfind`               | Code injection, suspicious memory regions                    |
 | `hivelist` / `printkey` | Windows registry (startup programs, recently accessed files) |
-| `envars` | Environment variables (PATH, USER, etc.) |
-| `filescan` | Open file handles |
-| `dumpfiles` | Extract files from memory |
+| `envars`                | Environment variables (PATH, USER, etc.)                     |
+| `filescan`              | Open file handles                                            |
+| `dumpfiles`             | Extract files from memory                                    |
 
 ## Log Forensics
 
@@ -387,15 +390,15 @@ tshark -r evidence.pcap -q -z conv,tcp | sort -k2 -rn | head -20
 
 ### Key Network Forensic Artifacts
 
-| Artifact | What It Reveals |
+| Artifact           | What It Reveals                            |
 | ------------------ | ------------------------------------------ |
-| DNS queries | Domains contacted, C2 communication |
-| HTTP requests | URLs visited, parameters, file downloads |
-| TLS SNI | Domain names even with encrypted traffic |
-| TCP connections | Communication partners, data volume |
-| Certificate chains | MITM detection, rogue CAs |
-| ARP tables | Local network devices, ARP spoofing |
-| DHCP requests | Network configuration, host identification |
+| DNS queries        | Domains contacted, C2 communication        |
+| HTTP requests      | URLs visited, parameters, file downloads   |
+| TLS SNI            | Domain names even with encrypted traffic   |
+| TCP connections    | Communication partners, data volume        |
+| Certificate chains | MITM detection, rogue CAs                  |
+| ARP tables         | Local network devices, ARP spoofing        |
+| DHCP requests      | Network configuration, host identification |
 
 ## Investigation Methodology
 
@@ -534,20 +537,20 @@ cat /proc/modules
 
 ### Comprehensive Tool Table
 
-| Tool | Purpose | Platform | Type |
+| Tool           | Purpose                          | Platform              | Type        |
 | -------------- | -------------------------------- | --------------------- | ----------- |
-| Autopsy | Disk forensics GUI | Linux, Windows | Open source |
-| Sleuth Kit | Disk forensics CLI | Linux, macOS, Windows | Open source |
-| Wireshark | Network packet analysis | Cross-platform | Open source |
-| Volatility | Memory forensics | Cross-platform | Open source |
-| Plaso | Timeline creation | Cross-platform | Open source |
-| Timesketch | Collaborative timeline analysis | Web-based | Open source |
-| FTK Imager | Disk imaging | Windows | Free |
-| bulk_extractor | Data extraction from disk images | Cross-platform | Open source |
-| binwalk | Firmware analysis | Cross-platform | Open source |
-| exiftool | Metadata extraction | Cross-platform | Open source |
-| RegRipper | Windows registry analysis | Cross-platform | Open source |
-| Log2Timeline | Log parsing and timeline | Cross-platform | Open source |
+| Autopsy        | Disk forensics GUI               | Linux, Windows        | Open source |
+| Sleuth Kit     | Disk forensics CLI               | Linux, macOS, Windows | Open source |
+| Wireshark      | Network packet analysis          | Cross-platform        | Open source |
+| Volatility     | Memory forensics                 | Cross-platform        | Open source |
+| Plaso          | Timeline creation                | Cross-platform        | Open source |
+| Timesketch     | Collaborative timeline analysis  | Web-based             | Open source |
+| FTK Imager     | Disk imaging                     | Windows               | Free        |
+| bulk_extractor | Data extraction from disk images | Cross-platform        | Open source |
+| binwalk        | Firmware analysis                | Cross-platform        | Open source |
+| exiftool       | Metadata extraction              | Cross-platform        | Open source |
+| RegRipper      | Windows registry analysis        | Cross-platform        | Open source |
+| Log2Timeline   | Log parsing and timeline         | Cross-platform        | Open source |
 
 ## Legal Considerations
 

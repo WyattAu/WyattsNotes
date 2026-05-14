@@ -1,6 +1,8 @@
 ---
 title: Operator Overloading
-description: "C++: Operator Overloading — Complete List of Overloadable Operators; Non-Overloadable Operators; 4.2 Member vs Non-Member Overloads."
+description:
+  'C++: Operator Overloading — Complete List of Overloadable Operators; Non-Overloadable Operators;
+  4.2 Member vs Non-Member Overloads.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -8,6 +10,7 @@ categories:
   - Cpp
 slug: operator-overloading
 ---
+
 # Operator Overloading: Arithmetic, Subscript, and Function Call
 
 C++ allows user-defined types to overload most operators, enabling natural syntax for custom types.
@@ -23,26 +26,26 @@ By the operator symbol. The following constraints apply [N4950 S14.5.1]:
 - You cannot change the arity, precedence, or associativity of an operator.
 - The operators `.``.*``::``?:`And `sizeof` cannot be overloaded.
 - At least one operand must be of class or enumeration type [N4950 S14.5.1].
-- `operator()``operator[]``operator->`And `operator->*` must be non-static member functions
- [N4950 S14.5.4].
+- `operator()``operator[]``operator->`And `operator->*` must be non-static member functions [N4950
+  S14.5.4].
 
 ### Complete List of Overloadable Operators
 
 The following operators may be overloaded [N4950 S14.5]:
 
-| Category | Operators |
+| Category            | Operators                                                                 |
 | ------------------- | ------------------------------------------------------------------------- |
-| Arithmetic | `+` `-` `*` `/` `%` |
-| Bitwise | `^` `\&` `\|` `~` `\&lt;\&lt;` `\&gt;\&gt;` |
-| Comparison | `==` `!=` `\&lt;` `\&gt;` `\&lt;=` `\&gt;=` `\&lt;=\&gt;` |
-| Logical | `!` `\&\&` `\|\|` (but see pitfalls below) |
-| Assignment | `=` `+=` `-=` `*=` `/=` `%=` `^=` `\&=` `\|=` `\&lt;\&lt;=` `\&gt;\&gt;=` |
-| Increment/Decrement | `++` `--` (prefix and postfix) |
-| Dereference | `*` `->` `->*` |
-| Subscript | `[]` |
-| Function call | `()` |
-| Memory | `new` `delete` `new[]` `delete[]` |
-| Comma | `,` |
+| Arithmetic          | `+` `-` `*` `/` `%`                                                       |
+| Bitwise             | `^` `\&` `\|` `~` `\&lt;\&lt;` `\&gt;\&gt;`                               |
+| Comparison          | `==` `!=` `\&lt;` `\&gt;` `\&lt;=` `\&gt;=` `\&lt;=\&gt;`                 |
+| Logical             | `!` `\&\&` `\|\|` (but see pitfalls below)                                |
+| Assignment          | `=` `+=` `-=` `*=` `/=` `%=` `^=` `\&=` `\|=` `\&lt;\&lt;=` `\&gt;\&gt;=` |
+| Increment/Decrement | `++` `--` (prefix and postfix)                                            |
+| Dereference         | `*` `->` `->*`                                                            |
+| Subscript           | `[]`                                                                      |
+| Function call       | `()`                                                                      |
+| Memory              | `new` `delete` `new[]` `delete[]`                                         |
+| Comma               | `,`                                                                       |
 
 ### Non-Overloadable Operators
 
@@ -61,7 +64,7 @@ The following operators cannot be overloaded under any circumstances [N4950 S14.
 For **binary operators**, the choice between member and non-member affects implicit conversions:
 
 - **Member function**: The left operand must be of the class type (or a reference to it). Implicit
- conversions are only applied to the right operand.
+  conversions are only applied to the right operand.
 - **Non-member function**: Both operands participate in implicit conversions.
 
 ### Proof: Why Symmetric Operators Should Be Non-Member
@@ -75,10 +78,10 @@ $$\mathrm{For {} \texttt{a + b} \mathrm{ where the left operand is not of class 
 3. If the constructor is `explicit`The implicit conversion is not permitted [N4950 S11.4.5.2].
 4. Therefore, the expression `3 + Int(2)` would fail if only a member overload exists.
 5. A non-member overload `operator+(int, const Int\&)` is found by ordinary name lookup. The right
- operand matches directly; the left operand requires no conversion for the `int` parameter.
+   operand matches directly; the left operand requires no conversion for the `int` parameter.
 
-This is why symmetric operators like `==``+``*` should be implemented as non-members
-(often non-member friends), so that expressions like `2 + vec` work alongside `vec + 2`.
+This is why symmetric operators like `==``+``*` should be implemented as non-members (often
+non-member friends), so that expressions like `2 + vec` work alongside `vec + 2`.
 
 ```cpp
 #include <cstdio>
@@ -113,18 +116,18 @@ int main() {
 
 ### Decision Table: Member vs Non-Member
 
-| Operator | Recommended Form | Reason |
+| Operator                                    | Recommended Form  | Reason                                             |
 | ------------------------------------------- | ----------------- | -------------------------------------------------- |
-| Binary arithmetic (`+``-``*``/`) | Non-member friend | Symmetric implicit conversions on both operands |
-| Compound assignment (`+=``-=`Etc.) | Member | Modifies `*this`; left operand must be the object |
-| Comparison (`==``!=``\&lt;`Etc.) | Non-member friend | Symmetric; both operands may need conversion |
-| `operator\&lt;\&lt;` / `operator\&gt;\&gt;` | Non-member | Left operand is `std::ostream`/`std::istream` |
-| `operator[]` | Member | Must be non-static member [N4950 S14.5.4] |
-| `operator()` | Member | Must be non-static member [N4950 S14.5.4] |
-| `operator->` | Member | Must be non-static member [N4950 S14.5.4] |
-| Unary (`+``-``!``~`) | Member | Operates on `*this`; no conversion symmetry needed |
-| Prefix `++`/`--` | Member | Modifies `*this` |
-| Postfix `++`/`--` | Member | Modifies `*this` (returns copy) |
+| Binary arithmetic (`+``-``*``/`)            | Non-member friend | Symmetric implicit conversions on both operands    |
+| Compound assignment (`+=``-=`Etc.)          | Member            | Modifies `*this`; left operand must be the object  |
+| Comparison (`==``!=``\&lt;`Etc.)            | Non-member friend | Symmetric; both operands may need conversion       |
+| `operator\&lt;\&lt;` / `operator\&gt;\&gt;` | Non-member        | Left operand is `std::ostream`/`std::istream`      |
+| `operator[]`                                | Member            | Must be non-static member [N4950 S14.5.4]          |
+| `operator()`                                | Member            | Must be non-static member [N4950 S14.5.4]          |
+| `operator->`                                | Member            | Must be non-static member [N4950 S14.5.4]          |
+| Unary (`+``-``!``~`)                        | Member            | Operates on `*this`; no conversion symmetry needed |
+| Prefix `++`/`--`                            | Member            | Modifies `*this`                                   |
+| Postfix `++`/`--`                           | Member            | Modifies `*this` (returns copy)                    |
 
 ## 4.3 A `Vec3` Class with Full Operator Suite
 
@@ -377,10 +380,7 @@ int main() {
 }
 ```
 
-:::tip
-Tip
-Code, prefer `++it` over `it++` for iterators and counters.
-:::
+:::tip Tip Code, prefer `++it` over `it++` for iterators and counters. :::
 
 ## 4.7 Stream Insertion and Extraction Operators
 
@@ -435,9 +435,9 @@ int main() {
 Key conventions:
 
 - Return `std::ostream&` / `std::istream&` by reference to enable chaining:
- `os &lt;&lt; a &lt;&lt; b`.
+  `os &lt;&lt; a &lt;&lt; b`.
 - On parse failure, set the stream's failbit via `is.setstate(std::ios::failbit)`. Do **not** throw
- from stream operators -- the stream error state mechanism handles this.
+  from stream operators -- the stream error state mechanism handles this.
 - Format consistently so that `operator&gt;&gt;` can round-trip the output of `operator&lt;&lt;`.
 
 ## 4.8 Conversion Operators and the `explicit` Specifier
@@ -483,9 +483,9 @@ int main() {
 
 The `explicit` specifier on a conversion operator prevents it from participating in implicit
 Conversions **except** in contextual boolean conversions (conditions in `if``while``for``!`
-`\&\&``\|\|`And the ternary operator) [N4950 S11.4.5.2]. This is why `explicit operator bool()`
-Is the standard pattern for making objects conditionally testable without enabling surprising
-Implicit conversions to `int` or `double`.
+`\&\&``\|\|`And the ternary operator) [N4950 S11.4.5.2]. This is why `explicit operator bool()` Is
+the standard pattern for making objects conditionally testable without enabling surprising Implicit
+conversions to `int` or `double`.
 
 ### Conversion Operator Pitfalls
 
@@ -521,14 +521,14 @@ int main() {
 
 C++20 introduced the three-way comparison operator `operator\&lt;=\&gt;` [N4950 S7.6.8]. When a
 Class defines `operator\&lt;=\&gt;` as defaulted, the compiler automatically generates `==``!=`
-`\&lt;``\&lt;=``\&gt;`And `\&gt;=` by rewiring to the spaceship operator. The return type
-Determines the comparison category:
+`\&lt;``\&lt;=``\&gt;`And `\&gt;=` by rewiring to the spaceship operator. The return type Determines
+the comparison category:
 
-| Return type | Category | Meaning |
+| Return type             | Category         | Meaning                            |
 | ----------------------- | ---------------- | ---------------------------------- |
-| `std::strong_ordering` | Total ordering | Distinct values always comparable |
-| `std::weak_ordering` | Weak ordering | Equivalent values may not be equal |
-| `std::partial_ordering` | Partial ordering | Some pairs incomparable |
+| `std::strong_ordering`  | Total ordering   | Distinct values always comparable  |
+| `std::weak_ordering`    | Weak ordering    | Equivalent values may not be equal |
+| `std::partial_ordering` | Partial ordering | Some pairs incomparable            |
 
 ```cpp
 #include <compare>
@@ -714,10 +714,8 @@ int main() {
 }
 ```
 
-:::warning
-Warning
-Are implementing a smart pointer or proxy object. Overloading these operators on regular types
-Creates confusing semantics that mislead readers into expecting pointer-like behavior.
+:::warning Warning Are implementing a smart pointer or proxy object. Overloading these operators on
+regular types Creates confusing semantics that mislead readers into expecting pointer-like behavior.
 :::
 
 ## Common Pitfalls

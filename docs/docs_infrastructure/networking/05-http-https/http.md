@@ -1,7 +1,9 @@
 ---
 id: http
 title: HTTP
-description: "HTTP — Methods; Status Codes; Connection Management; Chunked Transfer Encoding with worked examples and exam-style questions."
+description:
+  'HTTP — Methods; Status Codes; Connection Management; Chunked Transfer Encoding with worked
+  examples and exam-style questions.'
 slug: http
 sidebar_position: 6
 tags:
@@ -9,6 +11,7 @@ tags:
 categories:
   - Networking
 ---
+
 ## Overview
 
 HTTP (Hypertext Transfer Protocol) is the application-layer protocol that powers the World Wide Web.
@@ -29,17 +32,17 @@ Default for many client-server interactions.
 
 HTTP defines methods that indicate the desired action on a resource:
 
-| Method | Idempotent | Safe | Cacheable | Purpose |
+| Method  | Idempotent | Safe | Cacheable   | Purpose                              |
 | ------- | ---------- | ---- | ----------- | ------------------------------------ |
-| GET | Yes | Yes | Yes | Retrieve a resource |
-| HEAD | Yes | Yes | Yes | Retrieve headers only |
-| POST | No | No | Conditional | Submit data for processing |
-| PUT | Yes | No | No | Replace a resource entirely |
-| DELETE | Yes | No | No | Remove a resource |
-| PATCH | No | No | No | Partial modification of a resource |
-| OPTIONS | Yes | Yes | No | Describe communication options |
-| TRACE | Yes | Yes | No | Loop-back test (rarely used) |
-| CONNECT | No | No | No | Establish a tunnel (e.g., TLS proxy) |
+| GET     | Yes        | Yes  | Yes         | Retrieve a resource                  |
+| HEAD    | Yes        | Yes  | Yes         | Retrieve headers only                |
+| POST    | No         | No   | Conditional | Submit data for processing           |
+| PUT     | Yes        | No   | No          | Replace a resource entirely          |
+| DELETE  | Yes        | No   | No          | Remove a resource                    |
+| PATCH   | No         | No   | No          | Partial modification of a resource   |
+| OPTIONS | Yes        | Yes  | No          | Describe communication options       |
+| TRACE   | Yes        | Yes  | No          | Loop-back test (rarely used)         |
+| CONNECT | No         | No   | No          | Establish a tunnel (e.g., TLS proxy) |
 
 **Idempotent:** Repeating the request produces the same result. `PUT /users/1` with the same payload
 Creates or replaces user 1 -- calling it multiple times has the same effect. `POST /users` creates a
@@ -65,30 +68,30 @@ Status codes indicate the result of the request. They are grouped into five clas
 
 **1xx -- Informational:**
 
-| Code | Meaning | Use Case |
+| Code | Meaning             | Use Case                            |
 | ---- | ------------------- | ----------------------------------- |
-| 100 | Continue | Client should send the request body |
-| 101 | Switching Protocols | Upgrading to WebSocket or HTTP/2 |
+| 100  | Continue            | Client should send the request body |
+| 101  | Switching Protocols | Upgrading to WebSocket or HTTP/2    |
 
 **2xx -- Success:**
 
-| Code | Meaning | Use Case |
+| Code | Meaning         | Use Case                               |
 | ---- | --------------- | -------------------------------------- |
-| 200 | OK | Standard success response |
-| 201 | Created | Resource created (POST/PUT) |
-| 204 | No Content | Success with no response body (DELETE) |
-| 206 | Partial Content | Range request (resumable downloads) |
+| 200  | OK              | Standard success response              |
+| 201  | Created         | Resource created (POST/PUT)            |
+| 204  | No Content      | Success with no response body (DELETE) |
+| 206  | Partial Content | Range request (resumable downloads)    |
 
 **3xx -- Redirection:**
 
-| Code | Meaning | Use Case |
+| Code | Meaning            | Use Case                                           |
 | ---- | ------------------ | -------------------------------------------------- |
-| 301 | Moved Permanently | Resource has a new permanent URL |
-| 302 | Found | Temporary redirect (method may change to GET) |
-| 303 | See Other | Response is at another URI (method changes to GET) |
-| 304 | Not Modified | Cached version is still valid |
-| 307 | Temporary Redirect | Temporary redirect (method preserved) |
-| 308 | Permanent Redirect | Permanent redirect (method preserved) |
+| 301  | Moved Permanently  | Resource has a new permanent URL                   |
+| 302  | Found              | Temporary redirect (method may change to GET)      |
+| 303  | See Other          | Response is at another URI (method changes to GET) |
+| 304  | Not Modified       | Cached version is still valid                      |
+| 307  | Temporary Redirect | Temporary redirect (method preserved)              |
+| 308  | Permanent Redirect | Permanent redirect (method preserved)              |
 
 :::warning
 
@@ -100,62 +103,62 @@ Redirect a POST request, use 307/308 unless you explicitly want the method chang
 
 **4xx -- Client Errors:**
 
-| Code | Meaning | Use Case |
+| Code | Meaning                | Use Case                                 |
 | ---- | ---------------------- | ---------------------------------------- |
-| 400 | Bad Request | Malformed request syntax |
-| 401 | Unauthorized | Authentication required |
-| 403 | Forbidden | Authenticated but not authorized |
-| 404 | Not Found | Resource does not exist |
-| 405 | Method Not Allowed | Method not supported for this resource |
-| 408 | Request Timeout | Server timed out waiting for the request |
-| 409 | Conflict | Request conflicts with current state |
-| 413 | Payload Too Large | Request body exceeds server limit |
-| 415 | Unsupported Media Type | Content-Type not supported |
-| 422 | Unprocessable Entity | Valid syntax but semantic errors |
-| 429 | Too Many Requests | Rate limiting |
+| 400  | Bad Request            | Malformed request syntax                 |
+| 401  | Unauthorized           | Authentication required                  |
+| 403  | Forbidden              | Authenticated but not authorized         |
+| 404  | Not Found              | Resource does not exist                  |
+| 405  | Method Not Allowed     | Method not supported for this resource   |
+| 408  | Request Timeout        | Server timed out waiting for the request |
+| 409  | Conflict               | Request conflicts with current state     |
+| 413  | Payload Too Large      | Request body exceeds server limit        |
+| 415  | Unsupported Media Type | Content-Type not supported               |
+| 422  | Unprocessable Entity   | Valid syntax but semantic errors         |
+| 429  | Too Many Requests      | Rate limiting                            |
 
 **5xx -- Server Errors:**
 
-| Code | Meaning | Use Case |
+| Code | Meaning               | Use Case                                     |
 | ---- | --------------------- | -------------------------------------------- |
-| 500 | Internal Server Error | Unhandled server exception |
-| 502 | Bad Gateway | Upstream server returned an invalid response |
-| 503 | Service Unavailable | Server overloaded or in maintenance |
-| 504 | Gateway Timeout | Upstream server did not respond in time |
-| 507 | Insufficient Storage | Server cannot store the representation |
+| 500  | Internal Server Error | Unhandled server exception                   |
+| 502  | Bad Gateway           | Upstream server returned an invalid response |
+| 503  | Service Unavailable   | Server overloaded or in maintenance          |
+| 504  | Gateway Timeout       | Upstream server did not respond in time      |
+| 507  | Insufficient Storage  | Server cannot store the representation       |
 
 ### Key HTTP/1.1 Headers
 
 **Request Headers:**
 
-| Header | Purpose |
+| Header              | Purpose                                                                             |
 | ------------------- | ----------------------------------------------------------------------------------- |
-| `Host` | Required in HTTP/1.1. Identifies the target host and port. Enables virtual hosting. |
-| `User-Agent` | Client software identification |
-| `Accept` | Expected response content types |
-| `Content-Type` | Media type of the request body |
-| `Content-Length` | Size of the request body in bytes |
-| `Authorization` | Authentication credentials |
-| `If-None-Match` | ETag for conditional requests |
-| `If-Modified-Since` | Timestamp for conditional requests |
-| `Range` | Request a subset of the resource |
-| `Origin` | Indicates the origin of the cross-origin request (CORS) |
+| `Host`              | Required in HTTP/1.1. Identifies the target host and port. Enables virtual hosting. |
+| `User-Agent`        | Client software identification                                                      |
+| `Accept`            | Expected response content types                                                     |
+| `Content-Type`      | Media type of the request body                                                      |
+| `Content-Length`    | Size of the request body in bytes                                                   |
+| `Authorization`     | Authentication credentials                                                          |
+| `If-None-Match`     | ETag for conditional requests                                                       |
+| `If-Modified-Since` | Timestamp for conditional requests                                                  |
+| `Range`             | Request a subset of the resource                                                    |
+| `Origin`            | Indicates the origin of the cross-origin request (CORS)                             |
 
 **Response Headers:**
 
-| Header | Purpose |
+| Header                      | Purpose                                            |
 | --------------------------- | -------------------------------------------------- |
-| `Content-Type` | Media type of the response body |
-| `Content-Length` | Size of the response body in bytes |
-| `Content-Encoding` | Encoding applied to the body (gzip, br, deflate) |
-| `Cache-Control` | Directives for caching |
-| `ETag` | Opaque identifier for the response content version |
-| `Last-Modified` | Timestamp of the last modification |
-| `Set-Cookie` | Instructs the client to store a cookie |
-| `Location` | URL for redirection (3xx responses) |
-| `Server` | Server software identification |
-| `Strict-Transport-Security` | Force HTTPS (HSTS) |
-| `X-Request-ID` | Unique identifier for the request (for tracing) |
+| `Content-Type`              | Media type of the response body                    |
+| `Content-Length`            | Size of the response body in bytes                 |
+| `Content-Encoding`          | Encoding applied to the body (gzip, br, deflate)   |
+| `Cache-Control`             | Directives for caching                             |
+| `ETag`                      | Opaque identifier for the response content version |
+| `Last-Modified`             | Timestamp of the last modification                 |
+| `Set-Cookie`                | Instructs the client to store a cookie             |
+| `Location`                  | URL for redirection (3xx responses)                |
+| `Server`                    | Server software identification                     |
+| `Strict-Transport-Security` | Force HTTPS (HSTS)                                 |
+| `X-Request-ID`              | Unique identifier for the request (for tracing)    |
 
 ### Connection Management
 
@@ -196,20 +199,20 @@ pedia\r\n
 \r\n
 ```
 
-Each chunk starts with its size in hexadecimal, followed by `\r\n`The data, and `\r\n`. A
-Zero-size chunk terminates the transfer.
+Each chunk starts with its size in hexadecimal, followed by `\r\n`The data, and `\r\n`. A Zero-size
+chunk terminates the transfer.
 
 ### HTTP/1.1 Limitations
 
 1. **Head-of-line blocking:** Only one request/response can be in flight at a time on a connection.
- A slow response blocks all subsequent requests. Workaround: open 6+ connections (browsers do
- this), but this increases resource usage.
+   A slow response blocks all subsequent requests. Workaround: open 6+ connections (browsers do
+   this), but this increases resource usage.
 2. **Verbose headers:** ASCII headers are uncompressed and repeated across requests on the same
- connection.
+   connection.
 3. **No server push:** The server cannot proactively send data to the client (beyond the response to
- a request).
+   a request).
 4. **No multiplexing:** Multiple requests require multiple TCP connections, each with its own
- congestion control state and TLS handshake.
+   congestion control state and TLS handshake.
 
 ## HTTP/2
 
@@ -221,18 +224,18 @@ Same semantics (methods, status codes, headers, URIs). The wire format is comple
 HTTP/2 is a binary protocol. All communication is performed in binary frames. There are 10 frame
 Types:
 
-| Frame Type | Purpose |
+| Frame Type    | Purpose                                                        |
 | ------------- | -------------------------------------------------------------- |
-| DATA | Carries request/response body content |
-| HEADERS | Carries request/response headers |
-| PRIORITY | Specifies stream priority |
-| RST_STREAM | Aborts a stream |
-| SETTINGS | Configures connection parameters |
-| PUSH_PROMISE | Server push notification |
-| PING | Measures RTT and keepalive |
-| GOAWAY | Graceful shutdown of the connection |
-| WINDOW_UPDATE | Advertises flow control credits |
-| CONTINUATION | Continues a header block that did not fit in one HEADERS frame |
+| DATA          | Carries request/response body content                          |
+| HEADERS       | Carries request/response headers                               |
+| PRIORITY      | Specifies stream priority                                      |
+| RST_STREAM    | Aborts a stream                                                |
+| SETTINGS      | Configures connection parameters                               |
+| PUSH_PROMISE  | Server push notification                                       |
+| PING          | Measures RTT and keepalive                                     |
+| GOAWAY        | Graceful shutdown of the connection                            |
+| WINDOW_UPDATE | Advertises flow control credits                                |
+| CONTINUATION  | Continues a header block that did not fit in one HEADERS frame |
 
 ### Streams and Multiplexing
 
@@ -269,7 +272,7 @@ HTTP/1.1 sends headers as uncompressed ASCII text, repeating the same headers on
 HPACK (RFC 7541) compresses headers using:
 
 1. **Static table:** 61 pre-defined common header fields (e.g., `:method: GET``:path: /`
- `user-agent``accept-encoding`).
+   `user-agent``accept-encoding`).
 2. **Dynamic table:** Previously sent headers are stored in a FIFO buffer and referenced by index.
 3. **Huffman coding:** String values are encoded using Huffman coding for additional compression.
 
@@ -297,7 +300,7 @@ Deprecated. Chrome removed support for server push in 2022. The issues include:
 
 1. **Cache duplication:** Pushed resources may already be in the browser cache, wasting bandwidth.
 2. **Prioritization complexity:** Pushed resources compete with explicitly requested resources for
- bandwidth.
+   bandwidth.
 3. **Resource management:** Servers can push resources the client does not need.
 
 Use `&lt;link rel="preload"&gt;` hints instead, which let the client decide what to fetch.
@@ -334,34 +337,34 @@ Reliability, ordering, congestion control, and built-in encryption (TLS 1.3).
 ### Key Improvements over HTTP/2
 
 1. **No TCP head-of-line blocking.** QUIC delivers packets from independent streams independently. A
- lost packet in stream A does not block delivery of packets in stream B. This is the most
- significant improvement over HTTP/2.
+   lost packet in stream A does not block delivery of packets in stream B. This is the most
+   significant improvement over HTTP/2.
 
 2. **0-RTT connection establishment.** QUIC combines the transport and TLS handshakes, allowing the
- client to send data on the first flight (using pre-shared session information). With TCP + TLS
- 1.3, this takes 1-RTT; with QUIC, it takes 0-RTT on repeat connections.
+   client to send data on the first flight (using pre-shared session information). With TCP + TLS
+   1.3, this takes 1-RTT; with QUIC, it takes 0-RTT on repeat connections.
 
 3. **Connection migration.** QUIC uses connection IDs instead of IP:port 4-tuples. When a client's
- IP address changes (Wi-Fi to cellular, roaming), the connection survives. TCP connections break
- on IP changes.
+   IP address changes (Wi-Fi to cellular, roaming), the connection survives. TCP connections break
+   on IP changes.
 
 4. **User-space implementation.** QUIC is implemented in user space, allowing faster iteration and
- deployment without kernel changes. This is particularly important for protocol evolution.
+   deployment without kernel changes. This is particularly important for protocol evolution.
 
 ### HTTP/3 Frame Types
 
 HTTP/3 defines a new set of frame types carried within QUIC streams:
 
-| Frame Type | Purpose |
+| Frame Type     | Purpose                                             |
 | -------------- | --------------------------------------------------- |
-| DATA | Carries request/response body |
-| HEADERS | Carries request/response headers (QPACK compressed) |
-| CANCEL_PUSH | Cancels a pushed resource |
-| SETTINGS | Configuration parameters |
-| PUSH_PROMISE | Server push |
-| GOAWAY | Graceful shutdown |
-| MAX_PUSH_ID | Limits the number of push IDs |
-| RETRY_PRIORITY | Adjusts stream priority |
+| DATA           | Carries request/response body                       |
+| HEADERS        | Carries request/response headers (QPACK compressed) |
+| CANCEL_PUSH    | Cancels a pushed resource                           |
+| SETTINGS       | Configuration parameters                            |
+| PUSH_PROMISE   | Server push                                         |
+| GOAWAY         | Graceful shutdown                                   |
+| MAX_PUSH_ID    | Limits the number of push IDs                       |
+| RETRY_PRIORITY | Adjusts stream priority                             |
 
 ### QPACK (Header Compression for HTTP/3)
 
@@ -376,9 +379,9 @@ HTTP/3 adoption is growing rapidly:
 
 - **Supported by:** Chrome, Firefox, Safari, Edge, curl, nginx, Cloudflare, Fastly, Google
 - **Not supported by:** Some older CDN configurations, legacy load balancers, some enterprise
- proxies
+  proxies
 - **QUIC on UDP:** Requires UDP port 443 to be open. Some firewalls block non-TCP traffic on port
- 443, which breaks HTTP/3.
+  443, which breaks HTTP/3.
 
 ```bash
 # Check if a server supports HTTP/3
@@ -398,28 +401,28 @@ Configuration.
 
 **Request directives:**
 
-| Directive | Meaning |
+| Directive        | Meaning                                                                 |
 | ---------------- | ----------------------------------------------------------------------- |
-| `no-cache` | Always validate with the origin server before using a cached response |
-| `no-store` | Do not store any part of the request or response |
-| `max-age=60` | Accept cached responses no older than 60 seconds |
-| `max-stale=30` | Accept cached responses up to 30 seconds past their expiration |
-| `min-fresh=10` | Accept cached responses that will be fresh for at least 10 more seconds |
-| `only-if-cached` | Only use cached responses; do not validate or fetch from origin |
+| `no-cache`       | Always validate with the origin server before using a cached response   |
+| `no-store`       | Do not store any part of the request or response                        |
+| `max-age=60`     | Accept cached responses no older than 60 seconds                        |
+| `max-stale=30`   | Accept cached responses up to 30 seconds past their expiration          |
+| `min-fresh=10`   | Accept cached responses that will be fresh for at least 10 more seconds |
+| `only-if-cached` | Only use cached responses; do not validate or fetch from origin         |
 
 **Response directives:**
 
-| Directive | Meaning |
+| Directive                    | Meaning                                                        |
 | ---------------------------- | -------------------------------------------------------------- |
-| `public` | Any cache (including CDNs and proxies) may store this response |
-| `private` | Only the browser may cache this response |
-| `no-cache` | Cache must validate with the origin before using the response |
-| `no-store` | Do not store any part of the response |
-| `max-age=3600` | Cache for 3600 seconds (1 hour) |
-| `s-maxage=300` | Override max-age for shared caches (CDNs, proxies) |
-| `must-revalidate` | Once stale, must validate before use (do not serve stale) |
-| `stale-while-revalidate=600` | Serve stale response while revalidating in background |
-| `immutable` | Response will never change during max-age; do not revalidate |
+| `public`                     | Any cache (including CDNs and proxies) may store this response |
+| `private`                    | Only the browser may cache this response                       |
+| `no-cache`                   | Cache must validate with the origin before using the response  |
+| `no-store`                   | Do not store any part of the response                          |
+| `max-age=3600`               | Cache for 3600 seconds (1 hour)                                |
+| `s-maxage=300`               | Override max-age for shared caches (CDNs, proxies)             |
+| `must-revalidate`            | Once stale, must validate before use (do not serve stale)      |
+| `stale-while-revalidate=600` | Serve stale response while revalidating in background          |
+| `immutable`                  | Response will never change during max-age; do not revalidate   |
 
 ### Conditional Requests
 
@@ -491,22 +494,22 @@ Set-Cookie: session_id=abc123; Path=/; Secure; HttpOnly; SameSite=Strict; Max-Ag
 
 **Cookie attributes:**
 
-| Attribute | Purpose |
+| Attribute             | Purpose                                           |
 | --------------------- | ------------------------------------------------- |
-| `Secure` | Only sent over HTTPS |
-| `HttpOnly` | Not accessible to JavaScript (prevents XSS theft) |
-| `SameSite=Strict` | Only sent with same-site requests (prevents CSRF) |
-| `SameSite=Lax` | Sent with top-level navigation GET requests |
-| `SameSite=None` | Sent with cross-site requests (requires `Secure`) |
-| `Path=/` | Scoped to the given path |
-| `Domain=.example.com` | Shared across subdomains |
-| `Max-Age=3600` | Expires in 3600 seconds |
-| `Expires=...` | Absolute expiration date |
+| `Secure`              | Only sent over HTTPS                              |
+| `HttpOnly`            | Not accessible to JavaScript (prevents XSS theft) |
+| `SameSite=Strict`     | Only sent with same-site requests (prevents CSRF) |
+| `SameSite=Lax`        | Sent with top-level navigation GET requests       |
+| `SameSite=None`       | Sent with cross-site requests (requires `Secure`) |
+| `Path=/`              | Scoped to the given path                          |
+| `Domain=.example.com` | Shared across subdomains                          |
+| `Max-Age=3600`        | Expires in 3600 seconds                           |
+| `Expires=...`         | Absolute expiration date                          |
 
 :::warning
 
-Always set `Secure``HttpOnly`And `SameSite` on session cookies. Failing to set `HttpOnly` allows
-XSS attacks to steal session tokens. Failing to set `SameSite` allows CSRF attacks.
+Always set `Secure``HttpOnly`And `SameSite` on session cookies. Failing to set `HttpOnly` allows XSS
+attacks to steal session tokens. Failing to set `SameSite` allows CSRF attacks.
 
 :::
 
@@ -541,9 +544,9 @@ Access-Control-Max-Age: 3600
 HTTP supports content negotiation through several mechanisms:
 
 - **Accept:** Client specifies preferred response formats:
- `Accept: application/json, text/html;q=0.9`
+  `Accept: application/json, text/html;q=0.9`
 - **Accept-Encoding:** Client specifies preferred encodings:
- `Accept-Encoding: gzip, deflate, br;q=0.9, *;q=0.8`
+  `Accept-Encoding: gzip, deflate, br;q=0.9, *;q=0.8`
 - **Accept-Language:** Client specifies preferred languages: `Accept-Language: en-US, en;q=0.9`
 - **Content-Type:** Request/response body format
 
@@ -576,12 +579,12 @@ Key constraints:
 
 1. **Client-server architecture:** Separation of concerns between client and server.
 2. **Stateless:** Each request contains all information needed to process it. No server-side session
- state.
+   state.
 3. **Cacheable:** Responses must define themselves as cacheable or non-cacheable.
 4. **Uniform interface:** Resources identified by URIs, manipulated via standard HTTP methods.
 5. **Layered system:** Client cannot tell if it is connected to the end server or an intermediary.
 6. **Code on demand (optional):** Servers can extend client functionality by sending executable code
- (e.g., JavaScript).
+   (e.g., JavaScript).
 
 **RESTful API design:**
 
@@ -598,35 +601,35 @@ GET    /users/1/posts  -- List posts by user 1
 ## Common Pitfalls
 
 1. **Not using persistent connections.** Opening a new TCP connection (and TLS handshake) for every
- request is extremely expensive. Ensure your HTTP client uses keep-alive. Connection pooling is
- essential for API performance.
+   request is extremely expensive. Ensure your HTTP client uses keep-alive. Connection pooling is
+   essential for API performance.
 
 2. **Incorrect timeout configuration.** HTTP clients without timeouts can hang indefinitely. Set
- connect timeout (5 seconds), read timeout (30 seconds), and total timeout (60 seconds). Use
- exponential backoff for retries, not fixed intervals.
+   connect timeout (5 seconds), read timeout (30 seconds), and total timeout (60 seconds). Use
+   exponential backoff for retries, not fixed intervals.
 
 3. **Ignoring HTTP/2 server push issues.** Server push can cause cache duplication and waste
- bandwidth. Most implementations have moved away from it. If you enable it, monitor push
- effectiveness and disable it if it does not improve performance.
+   bandwidth. Most implementations have moved away from it. If you enable it, monitor push
+   effectiveness and disable it if it does not improve performance.
 
 4. **Caching misconfigurations.** Caching sensitive data (personal information, API responses with
- user-specific data) without proper `Cache-Control` headers can leak data between users. Always
- set `Cache-Control: private` or `Cache-Control: no-store` on sensitive responses.
+   user-specific data) without proper `Cache-Control` headers can leak data between users. Always
+   set `Cache-Control: private` or `Cache-Control: no-store` on sensitive responses.
 
 5. **Status code misuse.** Using 200 for everything makes error handling impossible. Use appropriate
- status codes: 201 for creation, 204 for successful deletion, 400 for client errors, 404 for
- missing resources, 409 for conflicts, 422 for validation errors, 500 for server errors.
+   status codes: 201 for creation, 204 for successful deletion, 400 for client errors, 404 for
+   missing resources, 409 for conflicts, 422 for validation errors, 500 for server errors.
 
 6. **Large request bodies without streaming.** Loading entire request/response bodies into memory
- causes OOM on large files. Stream bodies to disk for uploads/downloads exceeding available
- memory.
+   causes OOM on large files. Stream bodies to disk for uploads/downloads exceeding available
+   memory.
 
 7. **Missing CORS preflight caching.** The `Access-Control-Max-Age` header controls how long the
- browser caches preflight responses. Without it, the browser sends an OPTIONS request before every
- cross-origin request, doubling latency.
+   browser caches preflight responses. Without it, the browser sends an OPTIONS request before every
+   cross-origin request, doubling latency.
 
 8. **Cookie scope misconfiguration.** Setting `Domain=.example.com` on a session cookie shares it
- with all subdomains, including potentially compromised ones. Set the narrowest possible scope.
+   with all subdomains, including potentially compromised ones. Set the narrowest possible scope.
 
 ## HTTP Performance Optimization
 
@@ -710,18 +713,18 @@ gzip_min_length 256;
 
 Security headers instruct browsers to enable or disable certain security features:
 
-| Header | Purpose | Example |
+| Header                         | Purpose                                 | Example                                                 |
 | ------------------------------ | --------------------------------------- | ------------------------------------------------------- |
-| `Strict-Transport-Security` | Force HTTPS | `max-age=31536000; includeSubDomains; preload` |
-| `Content-Security-Policy` | Control resource loading | `default-src 'self'; script-src 'self' 'unsafe-inline'` |
-| `X-Content-Type-Options` | Prevent MIME sniffing | `nosniff` |
-| `X-Frame-Options` | Prevent clickjacking | `DENY` or `SAMEORIGIN` |
-| `X-XSS-Protection` | Enable XSS filter (deprecated) | `0` (disable, use CSP instead) |
-| `Referrer-Policy` | Control referrer header | `strict-origin-when-cross-origin` |
-| `Permissions-Policy` | Control browser features | `camera=(), microphone=(), geolocation=()` |
-| `Cross-Origin-Opener-Policy` | Isolate browsing context | `same-origin` |
-| `Cross-Origin-Resource-Policy` | Control cross-origin resource sharing | `same-origin` |
-| `Cross-Origin-Embedder-Policy` | Control cross-origin resource embedding | `require-corp` |
+| `Strict-Transport-Security`    | Force HTTPS                             | `max-age=31536000; includeSubDomains; preload`          |
+| `Content-Security-Policy`      | Control resource loading                | `default-src 'self'; script-src 'self' 'unsafe-inline'` |
+| `X-Content-Type-Options`       | Prevent MIME sniffing                   | `nosniff`                                               |
+| `X-Frame-Options`              | Prevent clickjacking                    | `DENY` or `SAMEORIGIN`                                  |
+| `X-XSS-Protection`             | Enable XSS filter (deprecated)          | `0` (disable, use CSP instead)                          |
+| `Referrer-Policy`              | Control referrer header                 | `strict-origin-when-cross-origin`                       |
+| `Permissions-Policy`           | Control browser features                | `camera=(), microphone=(), geolocation=()`              |
+| `Cross-Origin-Opener-Policy`   | Isolate browsing context                | `same-origin`                                           |
+| `Cross-Origin-Resource-Policy` | Control cross-origin resource sharing   | `same-origin`                                           |
+| `Cross-Origin-Embedder-Policy` | Control cross-origin resource embedding | `require-corp`                                          |
 
 ```bash
 # Check security headers

@@ -1,6 +1,8 @@
 ---
 title: Collections Deep Dive
-description: "Collections Deep Dive — Iterable Interface; Core Transformation Methods; map(); where() with worked examples and exam-style questions."
+description:
+  'Collections Deep Dive — Iterable Interface; Core Transformation Methods; map(); where() with
+  worked examples and exam-style questions.'
 date: 2026-04-05T00:00:00.000Z
 tags:
   - Dart
@@ -8,6 +10,7 @@ categories:
   - Dart
 slug: collections-deep-dive
 ---
+
 ## Iterable Interface
 
 `Iterable<T>` is the root of Dart's collection hierarchy. Both `List<T>` and `Set<T>` implement it,
@@ -148,8 +151,8 @@ final csv = [1, 2, 3].join(', '); // '1, 2, 3'
 
 ### Lazy vs Eager Evaluation
 
-This is critical for performance. Methods like `map``where``expand``takeWhile``skipWhile`
-`cast`And `skip`/`take` return **lazy** iterables. No work happens until you consume the iterable.
+This is critical for performance. Methods like `map``where``expand``takeWhile``skipWhile` `cast`And
+`skip`/`take` return **lazy** iterables. No work happens until you consume the iterable.
 
 ```dart
 // This does NOT iterate immediately
@@ -419,11 +422,11 @@ splay.add(2);
 print(splay.toList()); // [1, 2, 3] — always sorted
 ```
 
-| Type | Order | add/contains/remove | Use Case |
+| Type            | Order                 | add/contains/remove | Use Case                                        |
 | --------------- | --------------------- | ------------------- | ----------------------------------------------- |
-| `LinkedHashSet` | Insertion | O(1) amortized | Default choice, predictable iteration |
-| `HashSet` | Unspecified | O(1) amortized | When order does not matter |
-| `SplayTreeSet` | Sorted (`Comparable`) | O(log n) | When you need sorted iteration or range queries |
+| `LinkedHashSet` | Insertion             | O(1) amortized      | Default choice, predictable iteration           |
+| `HashSet`       | Unspecified           | O(1) amortized      | When order does not matter                      |
+| `SplayTreeSet`  | Sorted (`Comparable`) | O(log n)            | When you need sorted iteration or range queries |
 
 ### Custom Equality via operator== and hashCode
 
@@ -576,8 +579,8 @@ If you need sorted iteration, wrap the keys: `map.keys.toList()..sort()` or use 
 
 ### Custom Key Types
 
-Like `Set``Map` keys rely on `operator==` and `hashCode`. The same contract applies: equal keys
-Must have equal hash codes.
+Like `Set``Map` keys rely on `operator==` and `hashCode`. The same contract applies: equal keys Must
+have equal hash codes.
 
 ```dart
 class CaseInsensitiveString {
@@ -711,12 +714,12 @@ Runtime. Use it for configuration, lookup tables, and any data that is truly con
 
 ### When to Use Which
 
-| Mechanism | Copies? | Mutability | Compile-time | Use Case |
+| Mechanism             | Copies?            | Mutability                  | Compile-time | Use Case                                                  |
 | --------------------- | ------------------ | --------------------------- | ------------ | --------------------------------------------------------- |
-| `const` | No (canonicalized) | Immutable (compile-time) | Yes | True constants, config |
-| `List.unmodifiable()` | No (view) | Read-only (runtime) | No | API return values, defensive copies of internal state |
-| `List.of()` | Yes (copy) | Mutable | No | When you need a snapshot |
-| `final list = [...]` | No | Mutable, reference is final | No | Local mutable collections with non-reassignable reference |
+| `const`               | No (canonicalized) | Immutable (compile-time)    | Yes          | True constants, config                                    |
+| `List.unmodifiable()` | No (view)          | Read-only (runtime)         | No           | API return values, defensive copies of internal state     |
+| `List.of()`           | Yes (copy)         | Mutable                     | No           | When you need a snapshot                                  |
+| `final list = [...]`  | No                 | Mutable, reference is final | No           | Local mutable collections with non-reassignable reference |
 
 ## Sorting and Custom Comparators
 
@@ -802,15 +805,15 @@ listCompare([1, 2, 3], [1, 2, 3]); // true
 Dart's growable `List` is backed by a contiguous array that doubles in capacity when full. This
 Gives:
 
-| Operation | Complexity |
+| Operation                   | Complexity                       |
 | --------------------------- | -------------------------------- |
-| `add()` (append) | O(1) amortized |
-| `add()` at capacity | O(n) (copy to new backing store) |
-| `operator[]` (index access) | O(1) |
-| `insert(0, x)` | O(n) (shift all elements) |
-| `removeAt(i)` | O(n) (shift elements left) |
-| `indexOf(x)` | O(n) (linear scan) |
-| `sort()` | O(n log n) |
+| `add()` (append)            | O(1) amortized                   |
+| `add()` at capacity         | O(n) (copy to new backing store) |
+| `operator[]` (index access) | O(1)                             |
+| `insert(0, x)`              | O(n) (shift all elements)        |
+| `removeAt(i)`               | O(n) (shift elements left)       |
+| `indexOf(x)`                | O(n) (linear scan)               |
+| `sort()`                    | O(n log n)                       |
 
 The amortized O(1) for `add()` is the critical insight: individual appends are cheap, but
 Occasionally a resize occurs that copies the entire array. For large lists where you know the final
@@ -821,13 +824,13 @@ Size upfront, use `List(growable: true)` with a pre-allocated capacity, or use `
 
 Dart's default `LinkedHashSet` is a hash table with open addressing:
 
-| Operation | Complexity |
+| Operation        | Complexity           |
 | ---------------- | -------------------- |
-| `add(x)` | O(1) amortized |
-| `contains(x)` | O(1) amortized |
-| `remove(x)` | O(1) amortized |
+| `add(x)`         | O(1) amortized       |
+| `contains(x)`    | O(1) amortized       |
+| `remove(x)`      | O(1) amortized       |
 | `intersection()` | O(min(\|A\|, \|B\|)) |
-| `union()` | O(\|A\| + \|B\|) |
+| `union()`        | O(\|A\| + \|B\|)     |
 
 Hash collisions degrade to O(n) in the worst case, but this is rare with a good hash function. If
 Your custom `hashCode` implementation is poor (e.g., always returns the same value), you get a
@@ -837,12 +840,12 @@ Degenerate linked list and O(n) for everything.
 
 Same characteristics as `Set`:
 
-| Operation | Complexity |
+| Operation       | Complexity     |
 | --------------- | -------------- |
-| `operator[]` | O(1) amortized |
-| `operator[]=` | O(1) amortized |
+| `operator[]`    | O(1) amortized |
+| `operator[]=`   | O(1) amortized |
 | `containsKey()` | O(1) amortized |
-| `remove()` | O(1) amortized |
+| `remove()`      | O(1) amortized |
 
 ### Choosing the Right Collection
 
@@ -850,8 +853,7 @@ Same characteristics as `Set`:
 - **Need uniqueness + fast membership checks?** `Set`
 - **Need key-value lookups?** `Map`
 - **Need sorted order?** `SplayTreeSet` or `SplayTreeMap` from `package:collection`
-- **Need to deduplicate while preserving order?** `Set` then `toList()`Or iterate and use a
- seen-set
+- **Need to deduplicate while preserving order?** `Set` then `toList()`Or iterate and use a seen-set
 - **Need frequency counts?** `Map<T, int>` with `update(value, (v) => v + 1, ifAbsent: () => 1)`
 
 ```dart
@@ -866,9 +868,9 @@ for (final word in words) {
 
 - `List` stores elements contiguously — minimal overhead per element (one pointer/reference).
 - `LinkedHashSet` has per-entry overhead for the hash table buckets and the doubly-linked list that
- preserves insertion order.
+  preserves insertion order.
 - `LinkedHashMap` has the most overhead per entry: two references (key and value) plus hash table
- and linked list overhead.
+  and linked list overhead.
 
 For very large datasets where memory is a concern, `List` is the most compact option. Use `Set` and
 `Map` when their O(1) lookup characteristics justify the memory overhead.

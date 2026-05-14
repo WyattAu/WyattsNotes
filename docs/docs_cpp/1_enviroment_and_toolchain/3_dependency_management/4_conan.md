@@ -1,6 +1,8 @@
 ---
 title: Conan
-description: "C++: Conan — The Binary Compatibility Graph; Resolution Logic; Package ID Calculation: Formal Treatment; Profile Configuration."
+description:
+  'C++: Conan — The Binary Compatibility Graph; Resolution Logic; Package ID Calculation: Formal
+  Treatment; Profile Configuration.'
 date: 2025-12-11T05:01:52.356Z
 tags:
   - cpp
@@ -8,6 +10,7 @@ categories:
   - cpp
 slug: conan
 ---
+
 **Conan** is a decentralized, open-source package manager designed specifically for C++'s complex
 Binary compatibility requirements. Unlike vcpkg, which defaults to a source-based model, Conan
 Operates on a **Binary-First** model.
@@ -32,11 +35,12 @@ ID) based on the input configuration:
 
 1. **Compute Hash:** The client calculates the Package ID required for the current environment.
 2. **Query Remote:** The client asks the remote registry (ConanCenter or Artifactory) if a binary
- artifact with that ID exists.
+   artifact with that ID exists.
 3. **Retrieval:**
- - **Hit:** Download the binary (headers and libs).
- - **Miss:** Download the recipe (`conanfile.py`), build from source locally, and (optionally)
- upload the new binary to the remote.
+
+- **Hit:** Download the binary (headers and libs).
+- **Miss:** Download the recipe (`conanfile.py`), build from source locally, and (optionally) upload
+  the new binary to the remote.
 
 ### Package ID Calculation: Formal Treatment
 
@@ -47,8 +51,8 @@ $$
 $$
 
 Where `settings` is a sorted dictionary of `os``arch``compiler``compiler.version`
-`compiler.libcxx``build_type`Etc. The `options` dictionary is package-specific. The `requires`
-List captures transitive dependency versions.
+`compiler.libcxx``build_type`Etc. The `options` dictionary is package-specific. The `requires` List
+captures transitive dependency versions.
 
 **Theorem:** Two machines with identical profiles and identical dependency version constraints will
 Compute the same Package ID.
@@ -213,9 +217,9 @@ Paths into the build system. This process decouples the package manager from the
    conan install . --output-folder=build --build=missing -pr:h=linux-clang-release -pr:b=default
    ```
 
- - `-pr:h`: Host profile (Target).
- - `-pr:b`: Build profile (Build Agent).
- - `--build=missing`: Build from source if binary is not found.
+- `-pr:h`: Host profile (Target).
+- `-pr:b`: Build profile (Build Agent).
+- `--build=missing`: Build from source if binary is not found.
 
 2. **Configure CMake:** Pass the generated toolchain to CMake.
 
@@ -264,13 +268,16 @@ conan user -p <password> -r internal-artifacts <username>
 ### The CI/CD Pipeline Flow
 
 1. **Build Job:**
- - Checkout Source.
- - `conan create .` (Builds the package locally).
- - `conan upload <package> -r internal-artifacts`.
+
+- Checkout Source.
+- `conan create .` (Builds the package locally).
+- `conan upload <package> -r internal-artifacts`.
+
 2. **Consumer Job:**
- - `conan install . -r internal-artifacts`.
- - Conan detects the pre-built binary in Artifactory matching the CI profile.
- - Downloads binary (seconds) instead of compiling (minutes).
+
+- `conan install . -r internal-artifacts`.
+- Conan detects the pre-built binary in Artifactory matching the CI profile.
+- Downloads binary (seconds) instead of compiling (minutes).
 
 ---
 
@@ -281,13 +288,13 @@ Executes a five-stage pipeline defined in your `conanfile.py`:
 
 ### The Five Stages of `conan create`
 
-| Stage | Method in `conanfile.py` | Purpose |
+| Stage     | Method in `conanfile.py` | Purpose                                                  |
 | :-------- | :----------------------- | :------------------------------------------------------- |
-| `layout` | `layout()` | Configure source/build/package folder structure |
-| `source` | `source()` | Download/extract source code from remote |
-| `build` | `build()` | Compile the library (invoke CMake, Make, etc.) |
-| `package` | `package()` | Copy build artifacts (headers, libs) into package folder |
-| `test` | `test()` | Run consumer tests against the built package |
+| `layout`  | `layout()`               | Configure source/build/package folder structure          |
+| `source`  | `source()`               | Download/extract source code from remote                 |
+| `build`   | `build()`                | Compile the library (invoke CMake, Make, etc.)           |
+| `package` | `package()`              | Copy build artifacts (headers, libs) into package folder |
+| `test`    | `test()`                 | Run consumer tests against the built package             |
 
 ### Complete Recipe Example
 
@@ -387,13 +394,13 @@ def package_info(self):
 The `CMakeToolchain` generator creates a `conan_toolchain.cmake` file that sets CMake variables
 Before the project's `CMakeLists.txt` is processed. This file configures:
 
-| CMake Variable | Purpose |
+| CMake Variable                            | Purpose                                       |
 | :---------------------------------------- | :-------------------------------------------- |
 | `CMAKE_C_COMPILER` / `CMAKE_CXX_COMPILER` | Compiler executable path (from build profile) |
-| `CMAKE_BUILD_TYPE` | Build type (Debug, Release, RelWithDebInfo) |
-| `CMAKE_POSITION_INDEPENDENT_CODE` | Set to ON when building shared libraries |
-| `BUILD_SHARED_LIBS` | Controlled by the `*:shared` option |
-| `CMAKE_PREFIX_PATH` | Paths to dependency package folders |
+| `CMAKE_BUILD_TYPE`                        | Build type (Debug, Release, RelWithDebInfo)   |
+| `CMAKE_POSITION_INDEPENDENT_CODE`         | Set to ON when building shared libraries      |
+| `BUILD_SHARED_LIBS`                       | Controlled by the `*:shared` option           |
+| `CMAKE_PREFIX_PATH`                       | Paths to dependency package folders           |
 
 ### What `CMakeDeps` Generates
 
@@ -468,8 +475,8 @@ Resolution strategies:
    conan install . --lockfile=conan.lock --lockfile-out=conan.lock
    ```
 
- The lock file records exact versions and package IDs for every transitive dependency, ensuring
- reproducible builds across machines and time.
+The lock file records exact versions and package IDs for every transitive dependency, ensuring
+reproducible builds across machines and time.
 
 3. **Override** a specific dependency version:
    ```bash
@@ -509,13 +516,13 @@ class MyLibConan(ConanFile):
     #     self.tool_requires("cmake/3.28.1")
 ```
 
-| Aspect | `requires` | `tool_requires` |
-| :--------------------------- | :------------------------ | :------------------------ |
-| **Affects Package ID** | Yes | No |
-| **Propagated to consumers** | Yes (transitive) | No |
-| **Examples** | `fmt``openssl``boost` | `cmake``ninja``meson` |
-| **Binary needed at runtime** | Yes | No |
-| **Build-time only** | No | Yes |
+| Aspect                       | `requires`            | `tool_requires`       |
+| :--------------------------- | :-------------------- | :-------------------- |
+| **Affects Package ID**       | Yes                   | No                    |
+| **Propagated to consumers**  | Yes (transitive)      | No                    |
+| **Examples**                 | `fmt``openssl``boost` | `cmake``ninja``meson` |
+| **Binary needed at runtime** | Yes                   | No                    |
+| **Build-time only**          | No                    | Yes                   |
 
 ---
 
@@ -565,20 +572,20 @@ conan cache path fmt/10.1.1:<package_id_hash>
 Conan 2.x introduced breaking changes designed to simplify the API and improve performance. The
 Following table highlights the key differences.
 
-| Feature | Conan 1.x | Conan 2.x |
+| Feature                | Conan 1.x                            | Conan 2.x                                  |
 | :--------------------- | :----------------------------------- | :----------------------------------------- |
-| **Configuration file** | `conan.conf` in `~/.conan` | No global config (profile-based) |
-| **Recipe imports** | `from conans import ConanFile` | `from conan import ConanFile` |
-| **CMake integration** | `self.settings.compiler.libcxx` | `compiler.libcxx` in profile |
-| **Build method** | `def build(self)` with `CMake(self)` | Same, but `CMake` from `conan.tools.cmake` |
-| **Package info** | `self.cpp_info` | Same (compatible) |
-| **Generators** | `cmake``cmake_find_package` | `CMakeDeps``CMakeToolchain` |
-| **Install command** | `conan install . -s ...` | `conan install . -pr:...` |
-| **Remote commands** | `conan remote add` | Same (compatible) |
-| **Lock files** | `conan lock create` | Same (compatible) |
-| **Cache location** | `~/.conan/data/` | `~/.conan2/cache/` |
-| **Python API** | Many deprecated functions | Cleaned-up, fewer functions |
-| **`build_requires`** | `self.build_requires("cmake/...")` | `self.tool_requires("cmake/...")` |
+| **Configuration file** | `conan.conf` in `~/.conan`           | No global config (profile-based)           |
+| **Recipe imports**     | `from conans import ConanFile`       | `from conan import ConanFile`              |
+| **CMake integration**  | `self.settings.compiler.libcxx`      | `compiler.libcxx` in profile               |
+| **Build method**       | `def build(self)` with `CMake(self)` | Same, but `CMake` from `conan.tools.cmake` |
+| **Package info**       | `self.cpp_info`                      | Same (compatible)                          |
+| **Generators**         | `cmake``cmake_find_package`          | `CMakeDeps``CMakeToolchain`                |
+| **Install command**    | `conan install . -s ...`             | `conan install . -pr:...`                  |
+| **Remote commands**    | `conan remote add`                   | Same (compatible)                          |
+| **Lock files**         | `conan lock create`                  | Same (compatible)                          |
+| **Cache location**     | `~/.conan/data/`                     | `~/.conan2/cache/`                         |
+| **Python API**         | Many deprecated functions            | Cleaned-up, fewer functions                |
+| **`build_requires`**   | `self.build_requires("cmake/...")`   | `self.tool_requires("cmake/...")`          |
 
 ### Key Migration Steps
 
@@ -592,15 +599,15 @@ Following table highlights the key differences.
 
 ## Conan vs vcpkg: Architectural Trade-offs
 
-| Aspect | Conan | vcpkg |
+| Aspect             | Conan                                              | vcpkg                                           |
 | :----------------- | :------------------------------------------------- | :---------------------------------------------- |
-| **Binary model** | Binary-first: downloads pre-built binaries | Source-first: compiles from source by default |
-| **Package format** | Python-based `conanfile.py` (flexible) | `vcpkg.json` + `portfile.cmake` (CMake-centric) |
-| **C++ Standard** | Separate build/host profiles for cross-compilation | Triplets (simpler but less flexible) |
-| **Registry** | Any remote (JFrog, S3, local filesystem) | Built-in GitHub catalog |
-| **Binary caching** | Built-in, per-configuration SHA-1 based | Binary caching via NuGet feeds or Azure |
-| **Versioning** | Semantic version ranges | Versions in port manifest |
-| **Ecosystem** | Widely used in embedded, gaming, enterprise | Microsoft-backed, strong on Windows |
+| **Binary model**   | Binary-first: downloads pre-built binaries         | Source-first: compiles from source by default   |
+| **Package format** | Python-based `conanfile.py` (flexible)             | `vcpkg.json` + `portfile.cmake` (CMake-centric) |
+| **C++ Standard**   | Separate build/host profiles for cross-compilation | Triplets (simpler but less flexible)            |
+| **Registry**       | Any remote (JFrog, S3, local filesystem)           | Built-in GitHub catalog                         |
+| **Binary caching** | Built-in, per-configuration SHA-1 based            | Binary caching via NuGet feeds or Azure         |
+| **Versioning**     | Semantic version ranges                            | Versions in port manifest                       |
+| **Ecosystem**      | Widely used in embedded, gaming, enterprise        | Microsoft-backed, strong on Windows             |
 
 Conan's binary-first approach makes it significantly faster for CI pipelines where the same
 Dependency is built repeatedly. Vcpkg's source-first approach guarantees reproducibility (you always
@@ -611,26 +618,26 @@ Build from source on your exact toolchain) but at the cost of build time.
 ## Common Pitfalls
 
 - **Not using `conan lock` for CI.** Without a lock file, CI builds can silently pick up new
- dependency versions that pass on one configuration but break on another. Always generate a lock
- file and commit it to version control.
+  dependency versions that pass on one configuration but break on another. Always generate a lock
+  file and commit it to version control.
 - **Mixing build and host profiles in native builds.** On native (non-cross-compiled) builds, both
- the build and host profiles should match. If they differ, Conan may download a binary built for
- the wrong platform, causing cryptic runtime crashes.
+  the build and host profiles should match. If they differ, Conan may download a binary built for
+  the wrong platform, causing cryptic runtime crashes.
 - **Forgetting `--build=missing`.** If a binary does not exist on the remote and you do not specify
- `--build=missing`Conan fails with a "binary not found" error. Use `--build=missing` for local
- development and `--build=never` for CI (where all binaries should come from the remote).
+  `--build=missing`Conan fails with a "binary not found" error. Use `--build=missing` for local
+  development and `--build=never` for CI (where all binaries should come from the remote).
 - **Not pinning the CMake version in `tool_requires`.** Different CMake versions generate different
- project files. If your CI uses CMake 3.28 but your local machine uses CMake 3.25, the generated
- build files may differ. Pin CMake in your profile: `cmake/3.28.1` in `[tool_requires]`.
+  project files. If your CI uses CMake 3.28 but your local machine uses CMake 3.25, the generated
+  build files may differ. Pin CMake in your profile: `cmake/3.28.1` in `[tool_requires]`.
 - **Using `conanfile.txt` for complex projects.** The declarative format does not support
- conditional dependencies, custom build steps, or `test()` methods. Once your project needs
- OS-specific dependencies or custom packaging logic, migrate to `conanfile.py`.
+  conditional dependencies, custom build steps, or `test()` methods. Once your project needs
+  OS-specific dependencies or custom packaging logic, migrate to `conanfile.py`.
 - **Ignoring ABI compatibility.** Conan's Package ID does not capture ABI changes caused by compiler
- flags like `-D_GLIBCXX_USE_CXX11_ABI`. If two TUs are compiled with different ABI settings,
- linking them causes crashes. Ensure your profile captures all ABI-affecting settings.
+  flags like `-D_GLIBCXX_USE_CXX11_ABI`. If two TUs are compiled with different ABI settings,
+  linking them causes crashes. Ensure your profile captures all ABI-affecting settings.
 - **Stale Conan 1.x cache.** If you have both Conan 1.x and 2.x installed, the `conan` command may
- invoke the wrong version. Verify with `conan --version` and use `conan2` as an alias if necessary.
- The caches are separate (`~/.conan` vs `~/.conan2`).
+  invoke the wrong version. Verify with `conan --version` and use `conan2` as an alias if necessary.
+  The caches are separate (`~/.conan` vs `~/.conan2`).
 
 ## Conan Recipe: Packaging a Header-Only Library
 

@@ -1,6 +1,8 @@
 ---
 title: Virtual Functions and vtables
-description: "C++: Virtual Functions and vtables — Virtual Functions and Dispatch Tables (vtables); 1.1 The `virtual` Keyword; Formal Semantics [N4950 S13.3.2]."
+description:
+  'C++: Virtual Functions and vtables — Virtual Functions and Dispatch Tables (vtables); 1.1 The
+  `virtual` Keyword; Formal Semantics [N4950 S13.3.2].'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -8,6 +10,7 @@ categories:
   - Cpp
 slug: virtual-functions-vtables
 ---
+
 # Virtual Functions and Dispatch Tables (vtables)
 
 Virtual functions are the foundation of runtime polymorphism in C++. When a member function is
@@ -77,32 +80,30 @@ MSVC) uses the **vtable** (virtual function table) model, codified in the
 The mechanism works as follows:
 
 1. **One vtable per polymorphic class.** The compiler generates a hidden static array of function
- pointers -- the vtable -- for every class that has at least one virtual function or inherits from
- a polymorphic class.
+   pointers -- the vtable -- for every class that has at least one virtual function or inherits from
+   a polymorphic class.
 
 2. **One vptr per object instance.** Every object of a polymorphic class contains a hidden pointer
- (the vptr) to its class's vtable. The vptr is set by the constructor.
+   (the vptr) to its class's vtable. The vptr is set by the constructor.
 
 3. **Dispatch is a two-step indirect call:** When a virtual function `f` is called through a pointer
- `p`The compiler emits code equivalent to `(*p->vptr[offset_of_f])(p)`. This is a single
- indirect function call.
+   `p`The compiler emits code equivalent to `(*p->vptr[offset_of_f])(p)`. This is a single indirect
+   function call.
 
 $$
 \mathrm{dispatch cost{} = 1 \mathrm{ memory load (vptr){} + 1 \mathrm{ indexed load (function pointer){} + 1 \mathrm{ indirect call{}
 $$
 
-| Component | Description |
+| Component  | Description                                                 |
 | ---------- | ----------------------------------------------------------- |
-| **vtable** | Static array of function pointers; one per class |
-| **vptr** | Hidden pointer in each object; points to the class's vtable |
-| **Slot** | Each virtual function occupies a fixed index in the vtable |
+| **vtable** | Static array of function pointers; one per class            |
+| **vptr**   | Hidden pointer in each object; points to the class's vtable |
+| **Slot**   | Each virtual function occupies a fixed index in the vtable  |
 | **Thunks** | Compiler-generated stubs that adjust `this` before dispatch |
 
-:::info
-ABI Note The Itanium C++ ABI (used by GCC and Clang on all platforms except Windows)
+:::info ABI Note The Itanium C++ ABI (used by GCC and Clang on all platforms except Windows)
 Mandates that the vptr is at offset 0 within the object (before any data members). MSVC uses a
-Similar but incompatible layout on Windows.
-:::
+Similar but incompatible layout on Windows. :::
 
 ### Vtable Structure Diagram
 
@@ -143,8 +144,8 @@ Derived::vtable:
 Key observations:
 
 - The slot indices for `f` and `g` are preserved across the hierarchy. `Derived::f` occupies the
- same slot as `Base::f`. This is what makes virtual dispatch $O(1)$: the slot index is a
- compile-time constant.
+  same slot as `Base::f`. This is what makes virtual dispatch $O(1)$: the slot index is a
+  compile-time constant.
 - `Derived` adds a new slot for `h` at the next available index.
 - The vtable also stores a pointer to `std::type_info` for RTTI support.
 
@@ -230,22 +231,22 @@ Analysis:
 
 - `NonVirtual`: two `int` members = $2 \times 4 = 8$ bytes. No vptr.
 - `EmptyVirtual`: one vptr (8 bytes). Even with no data members, a polymorphic class pays the vptr
- cost, but no additional padding is needed when alignment is already satisfied.
+  cost, but no additional padding is needed when alignment is already satisfied.
 - `SingleInheritance`: vptr (8) + `int z` (4) + padding (4) = 16 bytes. The derived class **reuses**
- the base's vptr -- no additional vptr is added for single inheritance.
+  the base's vptr -- no additional vptr is added for single inheritance.
 - `MultipleBases`: one vptr = 8 bytes.
 - `DiamondDerived`: **two** vptrs (one per polymorphic base) + padding = 16 bytes. Each base class
- subobject carries its own vptr.
+  subobject carries its own vptr.
 
 ## 1.4 Cost of Virtual Dispatch
 
 Every virtual call involves:
 
-| Step | Cost |
+| Step                       | Cost                                     |
 | -------------------------- | ---------------------------------------- |
-| Load vptr from object | 1 memory access (may hit L1 cache) |
-| Index into vtable | 1 arithmetic op + 1 memory access |
-| Indirect call | 1 branch (may be mispredicted) |
+| Load vptr from object      | 1 memory access (may hit L1 cache)       |
+| Index into vtable          | 1 arithmetic op + 1 memory access        |
+| Indirect call              | 1 branch (may be mispredicted)           |
 | **Total extra vs. Direct** | ~2--5 cycles on modern hardware (cached) |
 
 The primary costs are **indirection** (preventing inlining) and **branch misprediction** (the CPU
@@ -314,12 +315,10 @@ int main() {
 }
 ```
 
-:::warning
-The actual performance difference depends heavily on compiler optimization levels, CPU
+:::warning The actual performance difference depends heavily on compiler optimization levels, CPU
 Branch prediction accuracy, and whether the compiler can **devirtualize** the call (see
-[Devirtualization](./3_devirtualization.md)). With `-O2` or `-O3`Modern compilers may eliminate
-The virtual dispatch entirely if the dynamic type is provable.
-:::
+[Devirtualization](./3_devirtualization.md)). With `-O2` or `-O3`Modern compilers may eliminate The
+virtual dispatch entirely if the dynamic type is provable. :::
 
 ## 1.5 The `final` Keyword
 
@@ -386,10 +385,8 @@ struct Wrong : Base {
 };
 ```
 
-:::tip
-Best Practice Always use `override` on every function intended to override a base-class
-Virtual function. This eliminates an entire class of bugs caused by signature mismatches.
-:::
+:::tip Best Practice Always use `override` on every function intended to override a base-class
+Virtual function. This eliminates an entire class of bugs caused by signature mismatches. :::
 
 ## 1.7 Virtual Dispatch During Construction and Destruction
 
@@ -404,11 +401,11 @@ By [N4950 S11.9.3], during the execution of a constructor for class `B` (where `
 `A`), the following sequence occurs:
 
 1. Base class `A`'s constructor runs first. The vptr is set to `A::vtable` at the beginning of `A`'s
- constructor body. Any virtual call during `A`'s construction dispatches through `A::vtable`.
+   constructor body. Any virtual call during `A`'s construction dispatches through `A::vtable`.
 2. After `A`'s constructor completes, control enters `B`'s constructor. The vptr is set to
- `B::vtable`. Virtual calls during `B`'s construction dispatch through `B::vtable`.
+   `B::vtable`. Virtual calls during `B`'s construction dispatch through `B::vtable`.
 3. During destruction, the process reverses: `B`'s destructor runs first (vptr = `B::vtable`), then
- `A`'s destructor runs (vptr = `A::vtable`).
+   `A`'s destructor runs (vptr = `A::vtable`).
 
 This is necessary for correctness: calling `Derived::do_work()` before the `Derived` members are
 Initialized would access uninitialized memory, which is undefined behavior.
@@ -463,16 +460,14 @@ The vptr transitions through three states during `Derived` object construction:
 
 1. During `Base` construction: vptr points to `Base::vtable` -> `do_work()` calls `Base::do_work`
 2. During `Derived` construction: vptr points to `Derived::vtable` -> `do_work()` calls
- `Derived::do_work`
+   `Derived::do_work`
 3. During `Derived` destruction: vptr is reset to `Base::vtable` -> `do_work()` calls
- `Base::do_work`
+   `Base::do_work`
 
-:::warning
-Calling a pure virtual function from a constructor or destructor is **undefined
+:::warning Calling a pure virtual function from a constructor or destructor is **undefined
 Behavior** [N4950 S11.9.3]. The pure virtual function has no definition to dispatch to (or the
 Definition is not called). Some implementations call the pure virtual handler and terminate the
-Program.
-:::
+Program. :::
 
 ## 1.8 NVI (Non-Virtual Interface) Pattern
 
@@ -527,10 +522,10 @@ int main() {
 The NVI pattern ensures that:
 
 - Pre-conditions and post-conditions are checked in the non-virtual wrapper (cannot be bypassed by a
- derived class override).
+  derived class override).
 - The virtual function signature is a stable extension point.
 - Template Method is easier to implement since the non-virtual function controls the algorithm
- skeleton.
+  skeleton.
 
 ## 1.9 Multiple Inheritance vtable Layout
 
@@ -590,9 +585,8 @@ Subobject), so that `C::fb` can access `a_val``b_val`And `c_val` correctly.
 ## 1.10 Virtual Inheritance and vtable Complications
 
 Virtual inheritance introduces a **virtual base pointer** (vbptr) in addition to the vptr. The
-Location of the virtual base subobject is not known at compile time -- on the
-Most-derived class. The Itanium ABI stores the virtual base offset in the vtable, adding another
-Level of indirection.
+Location of the virtual base subobject is not known at compile time -- on the Most-derived class.
+The Itanium ABI stores the virtual base offset in the vtable, adding another Level of indirection.
 
 ```cpp
 #include <iostream>
@@ -710,12 +704,12 @@ int main() {
 
 The size of a vptr depends on the platform's pointer size:
 
-| Platform | Pointer Size | vptr Size | Empty Polymorphic Class Size |
+| Platform      | Pointer Size | vptr Size | Empty Polymorphic Class Size |
 | ------------- | ------------ | --------- | ---------------------------- |
-| 32-bit x86 | 4 bytes | 4 bytes | 4 bytes |
-| 64-bit x86-64 | 8 bytes | 8 bytes | 8 bytes |
-| 64-bit ARM | 8 bytes | 8 bytes | 8 bytes |
-| 32-bit ARM | 4 bytes | 4 bytes | 4 bytes |
+| 32-bit x86    | 4 bytes      | 4 bytes   | 4 bytes                      |
+| 64-bit x86-64 | 8 bytes      | 8 bytes   | 8 bytes                      |
+| 64-bit ARM    | 8 bytes      | 8 bytes   | 8 bytes                      |
+| 32-bit ARM    | 4 bytes      | 4 bytes   | 4 bytes                      |
 
 On 64-bit platforms, every polymorphic object pays at least 8 bytes for the vptr, even if the class
 Has no data members. This is the fundamental cost of runtime polymorphism.

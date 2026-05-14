@@ -1,6 +1,8 @@
 ---
-title: "Coordinates and Geometry -- Diagnostic Tests"
-description: Hard diagnostic tests for coordinate geometry covering circle-line intersection, three-point circles, vector equations, and transformation matrices.
+title: 'Coordinates and Geometry -- Diagnostic Tests'
+description:
+  Hard diagnostic tests for coordinate geometry covering circle-line intersection, three-point
+  circles, vector equations, and transformation matrices.
 slug: diag-coordinates-and-geometry
 hide_table_of_contents: true
 ---
@@ -17,7 +19,8 @@ hide_table_of_contents: true
 
 Find the equation of the circle passing through the three points $A(1, 2)$$B(5, 4)$And $C(3, 8)$.
 
-Express your answer in the form $(x-a)^2 + (y-b)^2 = r^2$ and in the expanded form $x^2 + y^2 + px + qy + r = 0$.
+Express your answer in the form $(x-a)^2 + (y-b)^2 = r^2$ and in the expanded form
+$x^2 + y^2 + px + qy + r = 0$.
 
 [Difficulty: hard. Tests the perpendicular bisector method and algebraic verification.]
 
@@ -45,9 +48,7 @@ Equation: $y - 6 = \frac{1}{2}(x - 4)$I.e. $y = \frac{1}{2}x + 4$.
 
 **Step 3: Find the centre (intersection of perpendicular bisectors).**
 
-$$-2x + 9 = \frac{1}{2}x + 4$$
-$$5 = \frac{5}{2}x$$
-$$x = 2$$
+$$-2x + 9 = \frac{1}{2}x + 4$$ $$5 = \frac{5}{2}x$$ $$x = 2$$
 
 $$y = -2(2) + 9 = 5$$
 
@@ -57,7 +58,8 @@ The centre is $O = (2, 5)$.
 
 $$r = |OA| = \sqrt{(2-1)^2 + (5-2)^2} = \sqrt{1 + 9} = \sqrt{10}$$
 
-**Verification with point $C$:** $|OC| = \sqrt{(2-3)^2 + (5-8)^2} = \sqrt{1+9} = \sqrt{10}$. Confirmed.
+**Verification with point $C$:** $|OC| = \sqrt{(2-3)^2 + (5-8)^2} = \sqrt{1+9} = \sqrt{10}$.
+Confirmed.
 
 **Step 5: Write the equations.**
 
@@ -73,7 +75,8 @@ $$x^2 + y^2 - 4x - 10y + 19 = 0$$
 
 **Question:**
 
-Find the value of $k$ such that the line $y = kx + 5$ is tangent to the circle $x^2 + y^2 - 4x - 6y + 9 = 0$.
+Find the value of $k$ such that the line $y = kx + 5$ is tangent to the circle
+$x^2 + y^2 - 4x - 6y + 9 = 0$.
 
 Hence find the coordinates of the point of tangency for each valid value of $k$.
 
@@ -83,30 +86,23 @@ Hence find the coordinates of the point of tangency for each valid value of $k$.
 
 **Step 1: Substitute the line into the circle equation.**
 
-$$x^2 + (kx+5)^2 - 4x - 6(kx+5) + 9 = 0$$
-$$x^2 + k^2x^2 + 10kx + 25 - 4x - 6kx - 30 + 9 = 0$$
-$$(1+k^2)x^2 + (10k - 4 - 6k)x + 4 = 0$$
-$$(1+k^2)x^2 + (4k - 4)x + 4 = 0$$
+$$x^2 + (kx+5)^2 - 4x - 6(kx+5) + 9 = 0$$ $$x^2 + k^2x^2 + 10kx + 25 - 4x - 6kx - 30 + 9 = 0$$
+$$(1+k^2)x^2 + (10k - 4 - 6k)x + 4 = 0$$ $$(1+k^2)x^2 + (4k - 4)x + 4 = 0$$
 
 **Step 2: Set the discriminant to zero for tangency.**
 
-$$\Delta = (4k-4)^2 - 4(1+k^2)(4) = 0$$
-$$16k^2 - 32k + 16 - 16 - 16k^2 = 0$$
-$$-32k = 0$$
-$$k = 0$$
+$$\Delta = (4k-4)^2 - 4(1+k^2)(4) = 0$$ $$16k^2 - 32k + 16 - 16 - 16k^2 = 0$$ $$-32k = 0$$ $$k = 0$$
 
 **Step 3: Find the point of tangency.**
 
 With $k = 0$The line is $y = 5$. Substituting into the circle:
 
-$$x^2 + 25 - 4x - 30 + 9 = 0$$
-$$x^2 - 4x + 4 = 0$$
-$$(x-2)^2 = 0$$
-$$x = 2$$
+$$x^2 + 25 - 4x - 30 + 9 = 0$$ $$x^2 - 4x + 4 = 0$$ $$(x-2)^2 = 0$$ $$x = 2$$
 
 The point of tangency is $(2, 5)$.
 
-**Geometric check:** The circle $(x-2)^2 + (y-3)^2 = 4$ has centre $(2, 3)$ and radius $2$. The line $y = 5$ is at distance $|5-3| = 2$ from the centre, equal to the radius. Confirmed.
+**Geometric check:** The circle $(x-2)^2 + (y-3)^2 = 4$ has centre $(2, 3)$ and radius $2$. The line
+$y = 5$ is at distance $|5-3| = 2$ from the centre, equal to the radius. Confirmed.
 
 ---
 
@@ -114,7 +110,8 @@ The point of tangency is $(2, 5)$.
 
 **Question:**
 
-The matrix $R$ represents a rotation anticlockwise by $90°$ about the origin, and the matrix $S$ represents a reflection in the line $y = x$.
+The matrix $R$ represents a rotation anticlockwise by $90°$ about the origin, and the matrix $S$
+represents a reflection in the line $y = x$.
 
 $$R = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}, \quad S = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}$$
 
@@ -122,11 +119,14 @@ $$R = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}, \quad S = \begin{pmatrix} 0
 
 **(b)** Find the matrix $SR$ and describe the single transformation it represents.
 
-**(c)** The point $P(3, 1)$ is first reflected in the line $y = x$ and then rotated $90°$ anticlockwise about the origin. Find the coordinates of the image of $P$.
+**(c)** The point $P(3, 1)$ is first reflected in the line $y = x$ and then rotated $90°$
+anticlockwise about the origin. Find the coordinates of the image of $P$.
 
-**(d)** The triangle with vertices $(0, 0)$$(4, 0)$$(0, 3)$ is transformed by $RS$. Find the area of the image and explain why it is preserved.
+**(d)** The triangle with vertices $(0, 0)$$(4, 0)$$(0, 3)$ is transformed by $RS$. Find the area of
+the image and explain why it is preserved.
 
-[Difficulty: hard. Tests understanding that matrix multiplication is not commutative for transformations, and the relationship between determinant and area.]
+[Difficulty: hard. Tests understanding that matrix multiplication is not commutative for
+transformations, and the relationship between determinant and area.]
 
 **Solution:**
 
@@ -144,7 +144,8 @@ This is a reflection in the $x$-axis.
 
 **Note:** $RS \neq SR$Confirming that transformations do not generally commute.
 
-**(c)** Applying $S$ first, then $R$: the image is $R \cdot S \cdot \begin{pmatrix} 3 \\ 1 \end{pmatrix}$.
+**(c)** Applying $S$ first, then $R$: the image is
+$R \cdot S \cdot \begin{pmatrix} 3 \\ 1 \end{pmatrix}$.
 
 $$S\begin{pmatrix}3\\1\end{pmatrix} = \begin{pmatrix}0&1\\1&0\end{pmatrix}\begin{pmatrix}3\\1\end{pmatrix} = \begin{pmatrix}1\\3\end{pmatrix}$$
 
@@ -162,15 +163,18 @@ Confirmed.
 
 The determinant of $RS$ is $\det\begin{pmatrix}-1&0\\0&1\end{pmatrix} = -1$.
 
-The absolute value of the determinant gives the area scale factor: $|\det(RS)| = 1$. Therefore the area of the image is $6$ square units.
+The absolute value of the determinant gives the area scale factor: $|\det(RS)| = 1$. Therefore the
+area of the image is $6$ square units.
 
-Both $R$ (rotation) and $S$ (reflection) are isometries (distance-preserving transformations). Their composite is also an isometry, so area is preserved.
+Both $R$ (rotation) and $S$ (reflection) are isometries (distance-preserving transformations). Their
+composite is also an isometry, so area is preserved.
 
 ---
 
 ## Integration Tests
 
-> Tests synthesis of coordinate geometry with other topics. Requires combining concepts from multiple units.
+> Tests synthesis of coordinate geometry with other topics. Requires combining concepts from
+> multiple units.
 
 ### IT-1: Closest Point on a Curve Using Calculus (with Differentiation)
 
@@ -182,7 +186,8 @@ Find the point on the curve $y = x^2 - 4x + 7$ that is closest to the point $(1,
 
 **Solution:**
 
-**Step 1: Set up the distance squared function.** (Using distance squared avoids the square root and gives the same minimiser.)
+**Step 1: Set up the distance squared function.** (Using distance squared avoids the square root and
+gives the same minimiser.)
 
 A general point on the curve is $(x, x^2-4x+7)$.
 
@@ -200,21 +205,30 @@ $$(x-1) + 2(x-2)(x^2-4x-1) = 0$$
 
 Expand $(x-2)(x^2-4x-1) = x^3 - 4x^2 - x - 2x^2 + 8x + 2 = x^3 - 6x^2 + 7x + 2$.
 
-$$(x-1) + 2(x^3 - 6x^2 + 7x + 2) = 0$$
-$$x - 1 + 2x^3 - 12x^2 + 14x + 4 = 0$$
+$$(x-1) + 2(x^3 - 6x^2 + 7x + 2) = 0$$ $$x - 1 + 2x^3 - 12x^2 + 14x + 4 = 0$$
 $$2x^3 - 12x^2 + 15x + 3 = 0$$
 
-**Step 3: Solve the cubic.** Testing $x = 1$: $2 - 12 + 15 + 3 = 8 \neq 0$. Testing $x = -1$: $-2 - 12 - 15 + 3 = -26$. Testing $x = 3$: $54 - 108 + 45 + 3 = -6$. Testing $x = \frac{1}{2}$: $\frac{1}{4} - 3 + \frac{15}{2} + 3 = 7.25$. Testing $x = 0$: $3$.
+**Step 3: Solve the cubic.** Testing $x = 1$: $2 - 12 + 15 + 3 = 8 \neq 0$. Testing $x = -1$:
+$-2 - 12 - 15 + 3 = -26$. Testing $x = 3$: $54 - 108 + 45 + 3 = -6$. Testing $x = \frac{1}{2}$:
+$\frac{1}{4} - 3 + \frac{15}{2} + 3 = 7.25$. Testing $x = 0$: $3$.
 
 By the intermediate value theorem, there is a root between $x = -1$ and $x = 0$And possibly others.
 
-Testing $x = -\frac{1}{2}$: $-\frac{1}{4} - 3 - \frac{15}{2} + 3 = -\frac{1}{4} - \frac{15}{2} = -\frac{31}{4}$. Between $x = 0$ ($D' = 3$) and $x = 1$ ($D' = 8$), no root. Between $x = 3$ ($D' = -6$) and $x = 4$ ($D' = 128-192+60+3 = -1$), and $x = 5$ ($D' = 250-300+75+3=28$), so a root between $x = 4$ and $x = 5$.
+Testing $x = -\frac{1}{2}$:
+$-\frac{1}{4} - 3 - \frac{15}{2} + 3 = -\frac{1}{4} - \frac{15}{2} = -\frac{31}{4}$. Between $x = 0$
+($D' = 3$) and $x = 1$ ($D' = 8$), no root. Between $x = 3$ ($D' = -6$) and $x = 4$
+($D' = 128-192+60+3 = -1$), and $x = 5$ ($D' = 250-300+75+3=28$), so a root between $x = 4$ and
+$x = 5$.
 
-Actually, let me check $x = \frac{3}{2}$: $\frac{27}{4} - 27 + \frac{45}{2} + 3 = 6.75 - 27 + 22.5 + 3 = 5.25$. Between $x = 1$ ($8$) and $x = 3$ ($-6$), a root near $x = 2$: $16 - 48 + 30 + 3 = 1$. At $x = 2.1$: $18.522 - 52.92 + 31.5 + 3 = 0.102$. At $x = 2.12$: $19.08... - 53.95... + 31.8 + 3 = -0.06...$.
+Actually, let me check $x = \frac{3}{2}$:
+$\frac{27}{4} - 27 + \frac{45}{2} + 3 = 6.75 - 27 + 22.5 + 3 = 5.25$. Between $x = 1$ ($8$) and
+$x = 3$ ($-6$), a root near $x = 2$: $16 - 48 + 30 + 3 = 1$. At $x = 2.1$:
+$18.522 - 52.92 + 31.5 + 3 = 0.102$. At $x = 2.12$: $19.08... - 53.95... + 31.8 + 3 = -0.06...$.
 
 Root near $x \approx 2.11$.
 
-The exact solution requires the cubic formula. For the closest point, we accept the numerical approximation. At $x \approx 2.11$: $y \approx 4.45 - 8.44 + 7 = 3.01$.
+The exact solution requires the cubic formula. For the closest point, we accept the numerical
+approximation. At $x \approx 2.11$: $y \approx 4.45 - 8.44 + 7 = 3.01$.
 
 The closest point is approximately $(2.11, 3.01)$.
 
@@ -224,17 +238,21 @@ The closest point is approximately $(2.11, 3.01)$.
 
 **Question:**
 
-In triangle $ABC$The point $D$ lies on $BC$ such that $BD : DC = 2 : 1$. The point $E$ is the midpoint of $AC$. The lines $AD$ and $BE$ intersect at point $F$.
+In triangle $ABC$The point $D$ lies on $BC$ such that $BD : DC = 2 : 1$. The point $E$ is the
+midpoint of $AC$. The lines $AD$ and $BE$ intersect at point $F$.
 
-Using position vectors with origin at $A$And taking $\overrightarrow{AB} = \mathbf{b}$ and $\overrightarrow{AC} = \mathbf{c}$:
+Using position vectors with origin at $A$And taking $\overrightarrow{AB} = \mathbf{b}$ and
+$\overrightarrow{AC} = \mathbf{c}$:
 
 **(a)** Find the position vector of $F$ in terms of $\mathbf{b}$ and $\mathbf{c}$.
 
 **(b)** Find the ratio $AF : FD$.
 
-**(c)** If $|\mathbf{b}| = 5$$|\mathbf{c}| = 7$And $\mathbf{b} \cdot \mathbf{c} = 15$Find $|\overrightarrow{AF}|$.
+**(c)** If $|\mathbf{b}| = 5$$|\mathbf{c}| = 7$And $\mathbf{b} \cdot \mathbf{c} = 15$Find
+$|\overrightarrow{AF}|$.
 
-[Difficulty: hard. Tests vector methods for concurrency problems and application of the dot product.]
+[Difficulty: hard. Tests vector methods for concurrency problems and application of the dot
+product.]
 
 **Solution:**
 
@@ -244,9 +262,13 @@ Using position vectors with origin at $A$And taking $\overrightarrow{AB} = \math
 - $\overrightarrow{OD} = \overrightarrow{OB} + \frac{2}{3}\overrightarrow{BC} = \mathbf{b} + \frac{2}{3}(\mathbf{c} - \mathbf{b}) = \frac{1}{3}\mathbf{b} + \frac{2}{3}\mathbf{c}$
 - $\overrightarrow{OE} = \frac{1}{2}\mathbf{c}$
 
-Point $F$ lies on $AD$: $\overrightarrow{OF} = \overrightarrow{OA} + s\overrightarrow{AD} = s\left(\frac{1}{3}\mathbf{b} + \frac{2}{3}\mathbf{c}\right)$ for some $0 \leq s \leq 1$.
+Point $F$ lies on $AD$:
+$\overrightarrow{OF} = \overrightarrow{OA} + s\overrightarrow{AD} = s\left(\frac{1}{3}\mathbf{b} + \frac{2}{3}\mathbf{c}\right)$
+for some $0 \leq s \leq 1$.
 
-Point $F$ also lies on $BE$: $\overrightarrow{OF} = \overrightarrow{OB} + t\overrightarrow{BE} = \mathbf{b} + t\left(\frac{1}{2}\mathbf{c} - \mathbf{b}\right) = (1-t)\mathbf{b} + \frac{t}{2}\mathbf{c}$ for some $0 \leq t \leq 1$.
+Point $F$ also lies on $BE$:
+$\overrightarrow{OF} = \overrightarrow{OB} + t\overrightarrow{BE} = \mathbf{b} + t\left(\frac{1}{2}\mathbf{c} - \mathbf{b}\right) = (1-t)\mathbf{b} + \frac{t}{2}\mathbf{c}$
+for some $0 \leq t \leq 1$.
 
 Equating coefficients of $\mathbf{b}$ and $\mathbf{c}$:
 
@@ -254,11 +276,13 @@ $$\frac{s}{3} = 1 - t \quad \text{and} \quad \frac{2s}{3} = \frac{t}{2}$$
 
 From the second equation: $t = \frac{4s}{3}$.
 
-Substituting into the first: $\frac{s}{3} = 1 - \frac{4s}{3}$Giving $\frac{5s}{3} = 1$So $s = \frac{3}{5}$.
+Substituting into the first: $\frac{s}{3} = 1 - \frac{4s}{3}$Giving $\frac{5s}{3} = 1$So
+$s = \frac{3}{5}$.
 
 $$\overrightarrow{OF} = \frac{3}{5}\left(\frac{1}{3}\mathbf{b} + \frac{2}{3}\mathbf{c}\right) = \frac{1}{5}\mathbf{b} + \frac{2}{5}\mathbf{c}$$
 
-**(b)** $AF : FD$. Since $s = 3/5$Point $F$ divides $AD$ in the ratio $s : (1-s) = 3/5 : 2/5 = 3 : 2$.
+**(b)** $AF : FD$. Since $s = 3/5$Point $F$ divides $AD$ in the ratio
+$s : (1-s) = 3/5 : 2/5 = 3 : 2$.
 
 So $AF : FD = 3 : 2$.
 
@@ -294,9 +318,11 @@ For $t \in \mathbb{R}$.
 
 **(b)** Find the coordinates of the turning points of the curve and determine their nature.
 
-**(c)** The curve is translated so that its minimum point moves to the origin. Find the equation of the translated curve in the form $y = ax^2 + bx + c$.
+**(c)** The curve is translated so that its minimum point moves to the origin. Find the equation of
+the translated curve in the form $y = ax^2 + bx + c$.
 
-[Difficulty: hard. Tests recognition of function composition in parametric equations and completing the square.]
+[Difficulty: hard. Tests recognition of function composition in parametric equations and completing
+the square.]
 
 **Solution:**
 
@@ -308,7 +334,8 @@ Therefore $y = x^2 - 2x = (x-1)^2 - 1$.
 
 This is a parabola with vertex at $(1, -1)$Opening upward.
 
-**(b)** $y = x^2 - 2x$. Since $x = (t-1)^2 - 1 \geq -1$ for all $t$The domain of the curve is $x \geq -1$.
+**(b)** $y = x^2 - 2x$. Since $x = (t-1)^2 - 1 \geq -1$ for all $t$The domain of the curve is
+$x \geq -1$.
 
 $\frac{dy}{dx} = 2x - 2$. Setting this to zero: $x = 1$.
 
@@ -320,7 +347,8 @@ The turning point is $(1, -1)$Which is a minimum.
 
 Note: there are no other turning points. The curve is a standard parabola restricted to $x \geq -1$.
 
-At $x = -1$ (when $t = 1$): $y = 1 + 2 = 3$. This is an endpoint of the parametric curve, not a turning point of the parabola itself.
+At $x = -1$ (when $t = 1$): $y = 1 + 2 = 3$. This is an endpoint of the parametric curve, not a
+turning point of the parabola itself.
 
 **(c)** The translation moves $(1, -1)$ to $(0, 0)$. The translation vector is $(-1, 1)$.
 

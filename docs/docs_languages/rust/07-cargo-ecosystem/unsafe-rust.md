@@ -1,9 +1,12 @@
 ---
 id: unsafe-rust
 title: Unsafe Rust
-description: "Unsafe Rust — What `unsafe` Enables; Raw Pointers; `*const T` and `*mut T`; Creating Raw Pointers with worked examples and exam-style questions."
+description:
+  'Unsafe Rust — What `unsafe` Enables; Raw Pointers; `*const T` and `*mut T`; Creating Raw Pointers
+  with worked examples and exam-style questions.'
 slug: unsafe-rust
 ---
+
 ## What `unsafe` Enables
 
 The `unsafe` keyword grants access to five capabilities that the compiler cannot verify:
@@ -208,9 +211,8 @@ unsafe impl Sync for MyType {}
 :::danger
 
 Manually implementing `Send` or `Sync` incorrectly causes data races, which are undefined behavior.
-Only do this when you can rigorously prove thread safety. This requires that the raw
-Pointer is only accessed through a synchronization mechanism (mutex, atomic, etc.) that the compiler
-Cannot see.
+Only do this when you can rigorously prove thread safety. This requires that the raw Pointer is only
+accessed through a synchronization mechanism (mutex, atomic, etc.) that the compiler Cannot see.
 
 :::
 
@@ -316,7 +318,7 @@ cbindgen --config cbindgen.toml --crate my_lib --output my_lib.h
 2. C strings are null-terminated; Rust strings are not — use `CString`/`CStr`
 3. C does not have Move semantics — Rust values passed to C must be `Copy` or leaked
 4. C does not have destructors — resources allocated by Rust and passed to C must be freed manually
- or through a callback
+   or through a callback
 5. The ABI must match — `"C"` is the most portable, but platform-specific ABIs exist
 
 ## Safety Invariants
@@ -569,45 +571,45 @@ Exercises edge cases that hand-written tests may miss.
 ### Anti-Patterns
 
 1. **Bypassing the borrow checker** — if the borrow checker rejects your code, redesign the data
- flow. `unsafe` to bypass borrow checking almost always introduces soundness bugs.
+   flow. `unsafe` to bypass borrow checking almost always introduces soundness bugs.
 2. **Premature optimization** — benchmark first, use `unsafe` only when profiling shows it is
- necessary.
+   necessary.
 3. **Raw pointers for convenience** — use references and smart pointers unless you have a specific
- reason for raw pointers.
+   reason for raw pointers.
 
 ## Common Pitfalls
 
 1. **Dereferencing null pointers.** Always check `ptr.is_null()` before dereferencing. Use
- `ptr.as_ref()` which returns `Option<&T>` and handles null safely.
+   `ptr.as_ref()` which returns `Option<&T>` and handles null safely.
 
 2. **Use-after-free through raw pointers.** A raw pointer may outlive the data it points to. The
- compiler does not track this — you must ensure the pointer's lifetime does not exceed the data's
- lifetime.
+   compiler does not track this — you must ensure the pointer's lifetime does not exceed the data's
+   lifetime.
 
 3. **Aliasing violations.** Creating `&T` and `&mut T` to the same data is UB, even through raw
- pointers. The `unsafe` block does not exempt you from Rust's aliasing rules.
+   pointers. The `unsafe` block does not exempt you from Rust's aliasing rules.
 
 4. **Uninitialized memory.** `MaybeUninit<T>` is the correct way to work with uninitialized memory.
- Reading from uninitialized memory is UB, even for `u8`.
+   Reading from uninitialized memory is UB, even for `u8`.
 
 5. **Panic across FFI.** A Rust panic unwinding across a C callback is UB. Use
- `std::panic::catch_unwind` at FFI boundaries or compile with `panic = "abort"`.
+   `std::panic::catch_unwind` at FFI boundaries or compile with `panic = "abort"`.
 
 6. **Not using `miri`.** Any code using `unsafe` should be tested with `miri` to catch undefined
- behavior that may not manifest in normal testing.
+   behavior that may not manifest in normal testing.
 
 7. **Over-large `unsafe` blocks.** Keep `unsafe` blocks as small as possible. Each block should
- contain exactly the operations that require `unsafe`With clear comments explaining why they are
- safe.
+   contain exactly the operations that require `unsafe`With clear comments explaining why they are
+   safe.
 
 8. **Assuming layout.** Unless `#[repr(C)]` is specified, the compiler may reorder struct fields and
- add padding. Do not rely on field order or offset calculations without explicit `repr`.
+   add padding. Do not rely on field order or offset calculations without explicit `repr`.
 
 9. **Thread safety assertions without proof.** Manually implementing `Send` or `Sync` without a
- rigorous proof of thread safety is a common source of data races. Document the proof.
+   rigorous proof of thread safety is a common source of data races. Document the proof.
 
 10. **Ignoring `#[no_mangle]` for FFI.** Without `#[no_mangle]`Rust mangles function names, making
- them inaccessible from C. Always use `#[no_mangle]` on `extern "C"` functions that C code calls.
+    them inaccessible from C. Always use `#[no_mangle]` on `extern "C"` functions that C code calls.
 
 ## Unsafe Code Checklist
 

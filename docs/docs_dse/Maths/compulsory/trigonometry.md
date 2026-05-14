@@ -1,6 +1,8 @@
 ---
 title: Trigonometry
-description: "DSE Mathematics trigonometry notes covering trigonometric ratios, sine and cosine rules, trigonometric identities, solving equations, and 3D problems."
+description:
+  'DSE Mathematics trigonometry notes covering trigonometric ratios, sine and cosine rules,
+  trigonometric identities, solving equations, and 3D problems.'
 date: 2025-06-03T16:22:00.000Z
 tags:
   - Maths
@@ -12,8 +14,8 @@ slug: trigonometry
 
 Trigonometry is the study of relationships involving lengths and angles of triangles. It is a
 Central topic in the DSE Mathematics compulsory syllabus, connecting
-[coordinate geometry](geometries)) with algebraic techniques and serving as a foundation for
-Many applied problems in two and three dimensions.
+[coordinate geometry](geometries)) with algebraic techniques and serving as a foundation for Many
+applied problems in two and three dimensions.
 
 ## Angles and Arcs
 
@@ -42,9 +44,9 @@ Dimensionless quantity and are the default unit in calculus and many advanced ap
 
 Common angle equivalences:
 
-| Degrees | $0^\circ$ | $30^\circ$ | $45^\circ$ | $60^\circ$ | $90^\circ$ | $120^\circ$ | $180^\circ$ | $270^\circ$ | $360^\circ$ |
+| Degrees | $0^\circ$ | $30^\circ$      | $45^\circ$      | $60^\circ$      | $90^\circ$      | $120^\circ$      | $180^\circ$ | $270^\circ$      | $360^\circ$ |
 | ------- | --------- | --------------- | --------------- | --------------- | --------------- | ---------------- | ----------- | ---------------- | ----------- |
-| Radians | $0$ | $\frac{\pi}{6}$ | $\frac{\pi}{4}$ | $\frac{\pi}{3}$ | $\frac{\pi}{2}$ | $\frac{2\pi}{3}$ | $\pi$ | $\frac{3\pi}{2}$ | $2\pi$ |
+| Radians | $0$       | $\frac{\pi}{6}$ | $\frac{\pi}{4}$ | $\frac{\pi}{3}$ | $\frac{\pi}{2}$ | $\frac{2\pi}{3}$ | $\pi$       | $\frac{3\pi}{2}$ | $2\pi$      |
 
 <details>
 <summary>Examples</summary>
@@ -199,11 +201,11 @@ $$
 
 The exact trigonometric values for the standard angles must be memorised for the DSE examination:
 
-| $\theta$ | $0^\circ$ ($0$) | $30^\circ$ $\left(\frac{\pi}{6}\right)$ | $45^\circ$ $\left(\frac{\pi}{4}\right)$ | $60^\circ$ $\left(\frac{\pi}{3}\right)$ | $90^\circ$ $\left(\frac{\pi}{2}\right)$ |
+| $\theta$     | $0^\circ$ ($0$) | $30^\circ$ $\left(\frac{\pi}{6}\right)$ | $45^\circ$ $\left(\frac{\pi}{4}\right)$ | $60^\circ$ $\left(\frac{\pi}{3}\right)$ | $90^\circ$ $\left(\frac{\pi}{2}\right)$ |
 | ------------ | --------------- | --------------------------------------- | --------------------------------------- | --------------------------------------- | --------------------------------------- |
-| $\sin\theta$ | $0$ | $\frac{1}{2}$ | $\frac{\sqrt{2}}{2}$ | $\frac{\sqrt{3}}{2}$ | $1$ |
-| $\cos\theta$ | $1$ | $\frac{\sqrt{3}}{2}$ | $\frac{\sqrt{2}}{2}$ | $\frac{1}{2}$ | $0$ |
-| $\tan\theta$ | $0$ | $\frac{1}{\sqrt{3}}$ | $1$ | $\sqrt{3}$ | undefined |
+| $\sin\theta$ | $0$             | $\frac{1}{2}$                           | $\frac{\sqrt{2}}{2}$                    | $\frac{\sqrt{3}}{2}$                    | $1$                                     |
+| $\cos\theta$ | $1$             | $\frac{\sqrt{3}}{2}$                    | $\frac{\sqrt{2}}{2}$                    | $\frac{1}{2}$                           | $0$                                     |
+| $\tan\theta$ | $0$             | $\frac{1}{\sqrt{3}}$                    | $1$                                     | $\sqrt{3}$                              | undefined                               |
 
 These values can be derived from the equilateral triangle ($30^\circ$-$60^\circ$-$90^\circ$) and the
 Isosceles right-angled triangle ($45^\circ$-$45^\circ$-$90^\circ$).
@@ -218,49 +220,50 @@ Isosceles right-angled triangle ($45^\circ$-$45^\circ$-$90^\circ$).
 
 ## Graphs of Trigonometric Functions
 
-<DesmosGraph title="Trigonometric Functions: y = A sin(Bx + C) + D" expressions={["A\sin(Bx+C)+D", "cos(x)", "tan(x)"]} width={800} height={500} />
+<DesmosGraph title="Trigonometric Functions: y = A sin(Bx + C) + D" expressions={["A\sin(Bx+C)+D",
+"cos(x)", "tan(x)"]} width={800} height={500} />
 
 Use the sliders to adjust amplitude, period, and phase shift, and observe how each parameter affects
 The graph.
 
 ### $y = \sin x$
 
-| Property | Value |
+| Property       | Value                                |
 | -------------- | ------------------------------------ |
-| Domain | All real $\mathbb{'\{'}R{'\}'}$ |
-| Range | $[-1, 1]$ |
-| Period | $2\pi$ (or $360^\circ$) |
-| Amplitude | $1$ |
-| $x$-intercepts | $n\pi$$n \in \mathbb{'\{'}Z{'\}'}$ |
-| Maximum | $1$ at $x = \frac{\pi}{2} + 2n\pi$ |
-| Minimum | $-1$ at $x = \frac{3\pi}{2} + 2n\pi$ |
+| Domain         | All real $\mathbb{'\{'}R{'\}'}$      |
+| Range          | $[-1, 1]$                            |
+| Period         | $2\pi$ (or $360^\circ$)              |
+| Amplitude      | $1$                                  |
+| $x$-intercepts | $n\pi$$n \in \mathbb{'\{'}Z{'\}'}$   |
+| Maximum        | $1$ at $x = \frac{\pi}{2} + 2n\pi$   |
+| Minimum        | $-1$ at $x = \frac{3\pi}{2} + 2n\pi$ |
 
 The graph is an odd function ($\sin(-x) = -\sin x$), symmetric about the origin.
 
 ### $y = \cos x$
 
-| Property | Value |
-| -------------- | ------------------------------------------ |
-| Domain | All real $\mathbb{'\{'}R{'\}'}$ |
-| Range | $[-1, 1]$ |
-| Period | $2\pi$ (or $360^\circ$) |
-| Amplitude | $1$ |
+| Property       | Value                                              |
+| -------------- | -------------------------------------------------- |
+| Domain         | All real $\mathbb{'\{'}R{'\}'}$                    |
+| Range          | $[-1, 1]$                                          |
+| Period         | $2\pi$ (or $360^\circ$)                            |
+| Amplitude      | $1$                                                |
 | $x$-intercepts | $\frac{\pi}{2} + n\pi$$n \in \mathbb{'\{'}Z{'\}'}$ |
-| Maximum | $1$ at $x = 2n\pi$ |
-| Minimum | $-1$ at $x = \pi + 2n\pi$ |
+| Maximum        | $1$ at $x = 2n\pi$                                 |
+| Minimum        | $-1$ at $x = \pi + 2n\pi$                          |
 
 The graph is an even function ($\cos(-x) = \cos x$), symmetric about the $y$-axis.
 
 ### $y = \tan x$
 
-| Property | Value |
-| -------------- | ----------------------------- |
-| Domain | $x \neq \frac{\pi}{2} + n\pi$ |
-| Range | All real $\mathbb{'\{'}R{'\}'}$ |
-| Period | $\pi$ (or $180^\circ$) |
-| Amplitude | Not defined (unbounded) |
+| Property       | Value                              |
+| -------------- | ---------------------------------- |
+| Domain         | $x \neq \frac{\pi}{2} + n\pi$      |
+| Range          | All real $\mathbb{'\{'}R{'\}'}$    |
+| Period         | $\pi$ (or $180^\circ$)             |
+| Amplitude      | Not defined (unbounded)            |
 | $x$-intercepts | $n\pi$$n \in \mathbb{'\{'}Z{'\}'}$ |
-| Asymptotes | $x = \frac{\pi}{2} + n\pi$ |
+| Asymptotes     | $x = \frac{\pi}{2} + n\pi$         |
 
 The graph is an odd function ($\tan(-x) = -\tan x$). The tangent function has vertical asymptotes
 Where $\cos x = 0$.
@@ -276,12 +279,12 @@ $$
 \end{aligned}
 $$
 
-| Parameter | Effect |
+| Parameter            | Effect                                  |
 | -------------------- | --------------------------------------- |
-| $\|a\|$ | Amplitude ($\|a\|$) |
-| $\frac{2\pi}{\|b\|}$ | Period |
-| $-\frac{c}{b}$ | Phase shift (horizontal translation) |
-| $d$ | Vertical shift (centre line at $y = d$) |
+| $\|a\|$              | Amplitude ($\|a\|$)                     |
+| $\frac{2\pi}{\|b\|}$ | Period                                  |
+| $-\frac{c}{b}$       | Phase shift (horizontal translation)    |
+| $d$                  | Vertical shift (centre line at $y = d$) |
 
 <details>
 <summary>Examples</summary>
@@ -295,8 +298,8 @@ $$
 
 ### General Solutions
 
-When solving $\sin\theta = k$$\cos\theta = k$Or $\tan\theta = k$The solutions repeat
-Periodically. The general solutions (in degrees) are:
+When solving $\sin\theta = k$$\cos\theta = k$Or $\tan\theta = k$The solutions repeat Periodically.
+The general solutions (in degrees) are:
 
 **For $\sin\theta = k$** (where $-1 \leq k \leq 1$), let $\alpha = \arcsin k$ be the principal value
 In $[-90^\circ, 90^\circ]$:
@@ -341,11 +344,11 @@ $0 \leq \theta < 2\pi$):
 Many trigonometric equations require algebraic manipulation before they can be solved:
 
 - **Factorisation**: Extract common factors, e.g.,
- $2\sin\theta\cos\theta - \sin\theta = 0 \implies \sin\theta(2\cos\theta - 1) = 0$.
+  $2\sin\theta\cos\theta - \sin\theta = 0 \implies \sin\theta(2\cos\theta - 1) = 0$.
 - **Pythagorean substitution**: Replace $\sin^2\theta$ with $1 - \cos^2\theta$ (or vice versa) to
- obtain an equation in a single function.
+  obtain an equation in a single function.
 - **Quotient substitution**: Replace $\tan\theta$ with $\frac{\sin\theta}{\cos\theta}$ and clear
- denominators.
+  denominators.
 
 <details>
 <summary>Examples</summary>
@@ -403,7 +406,7 @@ A bearing is the angle measured clockwise from north. Key conventions:
 
 - Bearings are always given as three-digit numbers from $000^\circ$ to $360^\circ$.
 - The bearing of $B$ from $A$ is generally different from the bearing of $A$ from $B$ (they differ
- by $180^\circ$ unless the points are collinear with north).
+  by $180^\circ$ unless the points are collinear with north).
 
 ### Angles of Elevation and Depression
 
@@ -421,8 +424,8 @@ The standard approach:
 1. Identify the relevant right-angled triangle in the 3D figure.
 2. Drop a perpendicular from a point to the plane to create a right angle.
 3. The angle between the line and the plane is the angle between the line and its projection onto
- the plane. If $\alpha$ is the angle between the line and the normal to the plane, then the angle
- $\phi$ between the line and the plane satisfies $\phi = 90^\circ - \alpha$.
+   the plane. If $\alpha$ is the angle between the line and the normal to the plane, then the angle
+   $\phi$ between the line and the plane satisfies $\phi = 90^\circ - \alpha$.
 
 This connects to the vector formulation described in the
 [3D geometry](geometries#angles-between-lines-and-planes) section.
@@ -458,7 +461,7 @@ Length and the perimeter of the sector.
 <summary>Answer</summary>
 
 - Area $= \frac{1}{2}r^2\theta$:
- $\frac{1}{2}(64)\theta = 32\pi \implies 32\theta = 32\pi \implies \theta = \pi$ rad.
+  $\frac{1}{2}(64)\theta = 32\pi \implies 32\theta = 32\pi \implies \theta = \pi$ rad.
 - Arc length $= r\theta = 8\pi$ cm.
 - Perimeter of sector $= 2r + l = 16 + 8\pi \approx 41.1$ cm.
 </details>
@@ -471,26 +474,25 @@ Length and the perimeter of the sector.
 - $(3u + 1)(u - 1) = 0 \implies u = -\frac{1}{3}$ or $u = 1$.
 - Case 1: $\sin\theta = 1 \implies \theta = 90^\circ$.
 - Case 2: $\sin\theta = -\frac{1}{3}$. Principal value
- $\alpha = \arcsin(-\frac{1}{3}) \approx -19.47^\circ$.
- - $\theta = 360^\circ + (-19.47^\circ) = 340.53^\circ$ or
- $\theta = 180^\circ - (-19.47^\circ) = 199.47^\circ$.
+  $\alpha = \arcsin(-\frac{1}{3}) \approx -19.47^\circ$.
+- $\theta = 360^\circ + (-19.47^\circ) = 340.53^\circ$ or
+  $\theta = 180^\circ - (-19.47^\circ) = 199.47^\circ$.
 - Solutions: $\theta \approx 90^\circ, 199.5^\circ, 340.5^\circ$.
 </details>
 
-4. **Question:** In $\triangle ABC$$a = 10$$b = 7$$c = 8$. Find the largest angle of the
-Triangle.
+4. **Question:** In $\triangle ABC$$a = 10$$b = 7$$c = 8$. Find the largest angle of the Triangle.
 <details>
 <summary>Answer</summary>
 
 - The largest angle is opposite the longest side, so find $\angle A$ (opposite $a = 10$).
 - By the cosine rule:
- $\cos A = \frac{b^2 + c^2 - a^2}{2bc} = \frac{49 + 64 - 100}{2(7)(8)} = \frac{13}{112}$.
+  $\cos A = \frac{b^2 + c^2 - a^2}{2bc} = \frac{49 + 64 - 100}{2(7)(8)} = \frac{13}{112}$.
 - $A = \arccos\left(\frac{13}{112}\right) \approx 83.3^\circ$.
 </details>
 
 5. **Question:** From a point $A$ on the ground, the angle of elevation of the top $T$ of a vertical
-Tower is $40^\circ$. From a point $B$$30$ m closer to the base of the tower, the angle of
-Elevation is $55^\circ$. Find the height of the tower.
+Tower is $40^\circ$. From a point $B$$30$ m closer to the base of the tower, the angle of Elevation
+is $55^\circ$. Find the height of the tower.
 <details>
 <summary>Answer</summary>
 
@@ -500,27 +502,27 @@ Elevation is $55^\circ$. Find the height of the tower.
 - Equating: $x\tan 55^\circ = (x + 30)\tan 40^\circ$.
 - $x(\tan 55^\circ - \tan 40^\circ) = 30\tan 40^\circ$.
 - $x = \frac{30\tan 40^\circ}{\tan 55^\circ - \tan 40^\circ} = \frac{30(0.8391)}{1.4281 - 0.8391} = \frac{25.17}{0.589} \approx 42.74$
- m.
+  m.
 - $h = 42.74 \times \tan 55^\circ \approx 42.74 \times 1.4281 \approx 61.1$ m.
 </details>
 
 6. **Question:** A ship $S$ is observed from two lighthouses $A$ and $B$ which are $5$ km apart. The
-Bearing of $B$ from $A$ is $090^\circ$ (due east), the bearing of $S$ from $A$ is $050^\circ$And
-The bearing of $S$ from $B$ is $320^\circ$. Find the distance of $S$ from $A$.
+Bearing of $B$ from $A$ is $090^\circ$ (due east), the bearing of $S$ from $A$ is $050^\circ$And The
+bearing of $S$ from $B$ is $320^\circ$. Find the distance of $S$ from $A$.
 <details>
 <summary>Answer</summary>
 
 - The bearing of $B$ from $A$ is $090^\circ$So $B$ lies due east of $A$. Place $A$ at the origin
- with north pointing up; then $B$ is at $(5, 0)$.
+  with north pointing up; then $B$ is at $(5, 0)$.
 - The bearing of $S$ from $A$ is $050^\circ$So the ray $AS$ makes $50^\circ$ with north (measured
- clockwise), i.e., $40^\circ$ with the positive $x$-axis. The bearing of $S$ from $B$ is
- $320^\circ$So the ray $BS$ makes $360^\circ - 320^\circ = 40^\circ$ west of north, i.e.,
- $130^\circ$ with the positive $x$-axis.
+  clockwise), i.e., $40^\circ$ with the positive $x$-axis. The bearing of $S$ from $B$ is
+  $320^\circ$So the ray $BS$ makes $360^\circ - 320^\circ = 40^\circ$ west of north, i.e.,
+  $130^\circ$ with the positive $x$-axis.
 - The interior angle at $S$: the ray $SA$ points at bearing $230^\circ$ (back-bearing) and the ray
- $SB$ points at bearing $140^\circ$ (back-bearing). The angle
- $\angle ASB = 230^\circ - 140^\circ = 90^\circ$.
+  $SB$ points at bearing $140^\circ$ (back-bearing). The angle
+  $\angle ASB = 230^\circ - 140^\circ = 90^\circ$.
 - In $\triangle ABS$: $\angle BAS = 90^\circ - 50^\circ = 40^\circ$ (angle between the east
- direction and the ray $AS$).
+  direction and the ray $AS$).
 - $\angle ABS = 180^\circ - 40^\circ - 90^\circ = 50^\circ$.
 - Using the sine rule: $\frac{AS}{\sin 50^\circ} = \frac{5}{\sin 90^\circ} = 5$.
 - $AS = 5\sin 50^\circ \approx 3.83$ km.
@@ -566,23 +568,22 @@ $x$-intercepts in this interval.
 <details>
 <summary>Answer</summary>
 
-- Amplitude $= 2$Period $= 2\pi$Phase shift $= \frac{\pi}{4}$ to the right, vertical shift
- $= 1$.
+- Amplitude $= 2$Period $= 2\pi$Phase shift $= \frac{\pi}{4}$ to the right, vertical shift $= 1$.
 - Maximum $= 2(1) + 1 = 3$Minimum $= 2(-1) + 1 = -1$.
 - For $x$-intercepts:
- $2\sin\left(x - \frac{\pi}{4}\right) + 1 = 0 \implies \sin\left(x - \frac{\pi}{4}\right) = -\frac{1}{2}$.
+  $2\sin\left(x - \frac{\pi}{4}\right) + 1 = 0 \implies \sin\left(x - \frac{\pi}{4}\right) = -\frac{1}{2}$.
 - Let $u = x - \frac{\pi}{4}$. Since $x \in [0, 2\pi]$We have
- $u \in \left[-\frac{\pi}{4}, \frac{7\pi}{4}\right]$.
+  $u \in \left[-\frac{\pi}{4}, \frac{7\pi}{4}\right]$.
 - General solutions for $\sin u = -\frac{1}{2}$: $u = \frac{7\pi}{6} + 2k\pi$ or
- $u = \frac{11\pi}{6} + 2k\pi$.
+  $u = \frac{11\pi}{6} + 2k\pi$.
 - Also $u = -\frac{\pi}{6}$ (which equals $\frac{11\pi}{6} - 2\pi$) lies in
- $\left[-\frac{\pi}{4}, \frac{7\pi}{4}\right]$.
+  $\left[-\frac{\pi}{4}, \frac{7\pi}{4}\right]$.
 - $u = \frac{7\pi}{6}$ lies in the interval.
 - $u = \frac{11\pi}{6}$ lies in the interval.
 - $x = u + \frac{\pi}{4}$So $x = -\frac{\pi}{6} + \frac{\pi}{4} = \frac{\pi}{12}$
- $x = \frac{7\pi}{6} + \frac{\pi}{4} = \frac{17\pi}{12}$
- $x = \frac{11\pi}{6} + \frac{\pi}{4} = \frac{25\pi}{12}$. Since $\frac{25\pi}{12} \gt 2\pi$Only
- two $x$-intercepts lie in $[0, 2\pi]$.
+  $x = \frac{7\pi}{6} + \frac{\pi}{4} = \frac{17\pi}{12}$
+  $x = \frac{11\pi}{6} + \frac{\pi}{4} = \frac{25\pi}{12}$. Since $\frac{25\pi}{12} \gt 2\pi$Only
+  two $x$-intercepts lie in $[0, 2\pi]$.
 - $x$-intercepts: $\left(\frac{\pi}{12}, 0\right)$ and $\left(\frac{17\pi}{12}, 0\right)$.
 </details>
 
@@ -614,15 +615,15 @@ M.
 - Solutions: $\theta = \frac{\pi}{6}, \frac{3\pi}{2}, \frac{5\pi}{6}$.
 </details>
 
-12. **Question:** In $\triangle ABC$$a = 5$$b = 7$$A = 40^\circ$. Determine whether two
-Distinct triangles exist, and find all possible values of $B$.
+12. **Question:** In $\triangle ABC$$a = 5$$b = 7$$A = 40^\circ$. Determine whether two Distinct
+triangles exist, and find all possible values of $B$.
 <details>
 <summary>Answer</summary>
 
 - By the sine rule: $\frac{\sin B}{7} = \frac{\sin 40^\circ}{5}$.
 - $\sin B = \frac{7\sin 40^\circ}{5} = \frac{7(0.6428)}{5} = 0.8999$.
 - Since $\sin B < 1$ and $b > a$ (i.e., $7 > 5$), there is exactly one solution (no ambiguous case
- when the longer side is given opposite the known angle).
+  when the longer side is given opposite the known angle).
 - $B = \arcsin(0.8999) \approx 64.2^\circ$.
 - $C = 180^\circ - 40^\circ - 64.2^\circ = 75.8^\circ$.
 - $c = \frac{5\sin 75.8^\circ}{\sin 40^\circ} \approx \frac{5(0.9692)}{0.6428} \approx 7.54$.
@@ -630,7 +631,8 @@ Distinct triangles exist, and find all possible values of $B$.
 </details>
 </details>
 
-For the A-Level treatment of this topic, see [Trigonometry](https://alevel.wyattau.com/docs/maths/pure-mathematics/trigonometry).
+For the A-Level treatment of this topic, see
+[Trigonometry](https://alevel.wyattau.com/docs/maths/pure-mathematics/trigonometry).
 
 ---
 
@@ -640,14 +642,16 @@ For the A-Level treatment of this topic, see [Trigonometry](https://alevel.wyatt
 
 For trigonometry problems in DSE Paper 1:
 
-1. When solving equations, always find the **principal value** first, then use the general solution formula.
+1. When solving equations, always find the **principal value** first, then use the general solution
+   formula.
 2. State the domain restriction and verify each solution falls within the given interval.
 3. For proof questions, work from one side to the other, showing each identity used.
 4. For 3D problems, draw a clear diagram and label all right-angled triangles used.
 
 ### Significant Figures
 
-Angle answers should be given to 3 significant figures unless exact values are possible (e.g., $30^\circ$$45^\circ$$60^\circ$). Length answers to 3 significant figures.
+Angle answers should be given to 3 significant figures unless exact values are possible (e.g.,
+$30^\circ$$45^\circ$$60^\circ$). Length answers to 3 significant figures.
 
 ### Common DSE Question Types
 
@@ -678,7 +682,8 @@ This equals the RHS. $\qed$
 
 **Worked Example 14: 3D angle between line and plane**
 
-In the cuboid $ABCDEFGH$ where $AB = 6$$BC = 8$$CG = 4$Find the angle between the diagonal $BH$ and the face $ABCD$.
+In the cuboid $ABCDEFGH$ where $AB = 6$$BC = 8$$CG = 4$Find the angle between the diagonal $BH$ and
+the face $ABCD$.
 
 <details>
 <summary>Solution</summary>
@@ -687,7 +692,8 @@ $BH = \sqrt{6^2 + 8^2 + 4^2} = \sqrt{36 + 64 + 16} = \sqrt{116} = 2\sqrt{29}$.
 
 The projection of $BH$ onto the base $ABCD$ is the diagonal $BD = \sqrt{6^2 + 8^2} = 10$.
 
-The angle between $BH$ and the base is $\phi$ where $\cos\phi = \dfrac{BD}{BH} = \dfrac{10}{2\sqrt{29}} = \dfrac{5}{\sqrt{29}}$.
+The angle between $BH$ and the base is $\phi$ where
+$\cos\phi = \dfrac{BD}{BH} = \dfrac{10}{2\sqrt{29}} = \dfrac{5}{\sqrt{29}}$.
 
 $$\phi = \arccos\!\left(\frac{5}{\sqrt{29}}\right) \approx 21.8^\circ$$
 
@@ -733,7 +739,8 @@ Since $\sin B < 1$ and $b > a$ (i.e., $10 > 8$), there is exactly one solution:
 
 $$B = \arcsin(0.8035) \approx 53.5^\circ$$
 
-(Note: the ambiguous case does not arise here because $b > a$ means $\angle B > \angle A$So $B$ must be acute.)
+(Note: the ambiguous case does not arise here because $b > a$ means $\angle B > \angle A$So $B$ must
+be acute.)
 
 $C = 180^\circ - 40^\circ - 53.5^\circ = 86.5^\circ$.
 
@@ -785,7 +792,8 @@ Verification: $3\sin 36.87^\circ + 4\cos 36.87^\circ = 3(0.6) + 4(0.8) = 1.8 + 3
 
 ## DSE Exam-Style Questions
 
-**DSE Practice 1.** Prove that $\sin\theta + \cos\theta = \sqrt{2}\sin\!\left(\theta + \dfrac{\pi}{4}\right)$.
+**DSE Practice 1.** Prove that
+$\sin\theta + \cos\theta = \sqrt{2}\sin\!\left(\theta + \dfrac{\pi}{4}\right)$.
 
 <details>
 <summary>Solution</summary>
@@ -796,7 +804,8 @@ $$= \sqrt{2}\!\left(\sin\theta \cdot \frac{\sqrt{2}}{2} + \cos\theta \cdot \frac
 
 </details>
 
-**DSE Practice 2.** In $\triangle ABC$$a = 5$$b = 7$$c = 8$. Find (a) the largest angle, (b) the area.
+**DSE Practice 2.** In $\triangle ABC$$a = 5$$b = 7$$c = 8$. Find (a) the largest angle, (b) the
+area.
 
 <details>
 <summary>Solution</summary>
@@ -813,7 +822,8 @@ $$\mathrm{Area} = \frac{1}{2}(5)(7)\sin C = \frac{35}{2}\sqrt{1 - \frac{1}{49}} 
 
 </details>
 
-**DSE Practice 3.** Solve $2\cos^2\theta - 3\sin\theta + 3 = 0$ for $0^\circ \leq \theta < 360^\circ$.
+**DSE Practice 3.** Solve $2\cos^2\theta - 3\sin\theta + 3 = 0$ for
+$0^\circ \leq \theta < 360^\circ$.
 
 <details>
 <summary>Solution</summary>
@@ -834,7 +844,10 @@ $\sin\theta = 1 \implies \theta = 90^\circ$.
 
 </details>
 
-**DSE Practice 4.** A vertical tower $PQ$ stands on horizontal ground. From a point $A$ on the ground, the angle of elevation of $P$ is $32^\circ$. From point $B$Which is $50$ m from $A$ on a bearing of $080^\circ$ from $A$The angle of elevation of $P$ is $24^\circ$. Find the height of the tower.
+**DSE Practice 4.** A vertical tower $PQ$ stands on horizontal ground. From a point $A$ on the
+ground, the angle of elevation of $P$ is $32^\circ$. From point $B$Which is $50$ m from $A$ on a
+bearing of $080^\circ$ from $A$The angle of elevation of $P$ is $24^\circ$. Find the height of the
+tower.
 
 <details>
 <summary>Solution</summary>
@@ -845,7 +858,8 @@ $\tan 32^\circ = \dfrac{h}{x} \implies x = \dfrac{h}{\tan 32^\circ}$.
 
 $\tan 24^\circ = \dfrac{h}{y} \implies y = \dfrac{h}{\tan 24^\circ}$.
 
-In $\triangle QAB$The angle at $Q$ is $80^\circ$ (bearing from $A$ to $B$ is $080^\circ$). By the cosine rule:
+In $\triangle QAB$The angle at $Q$ is $80^\circ$ (bearing from $A$ to $B$ is $080^\circ$). By the
+cosine rule:
 
 $$AB^2 = x^2 + y^2 - 2xy\cos 80^\circ$$
 
@@ -861,7 +875,8 @@ $$h \approx 19.8 \text{ m}$$
 
 </details>
 
-**DSE Practice 5.** In $\triangle ABC$$a = 6$$B = 45^\circ$And the area is $9\sqrt{2}$. Find the two possible values of $b$.
+**DSE Practice 5.** In $\triangle ABC$$a = 6$$B = 45^\circ$And the area is $9\sqrt{2}$. Find the two
+possible values of $b$.
 
 <details>
 <summary>Solution</summary>
@@ -870,15 +885,18 @@ $$\mathrm{Area} = \frac{1}{2}ac\sin B = \frac{1}{2}(6)c\sin 45^\circ = 3c \cdot 
 
 $$\frac{3\sqrt{2}}{2}c = 9\sqrt{2} \implies c = 6$$
 
-By the cosine rule: $b^2 = a^2 + c^2 - 2ac\cos B = 36 + 36 - 2(6)(6)\cos 45^\circ = 72 - 36\sqrt{2}$.
+By the cosine rule:
+$b^2 = a^2 + c^2 - 2ac\cos B = 36 + 36 - 2(6)(6)\cos 45^\circ = 72 - 36\sqrt{2}$.
 
 $$b = \sqrt{72 - 36\sqrt{2}} = 6\sqrt{2 - \sqrt{2}} \approx 5.12$$
 
 Actually, let me use the sine rule: $\dfrac{b}{\sin B} = \dfrac{a}{\sin A}$.
 
-$\dfrac{b}{\sin 45^\circ} = \dfrac{6}{\sin A}$So $b = \dfrac{6\sin 45^\circ}{\sin A} = \dfrac{3\sqrt{2}}{\sin A}$.
+$\dfrac{b}{\sin 45^\circ} = \dfrac{6}{\sin A}$So
+$b = \dfrac{6\sin 45^\circ}{\sin A} = \dfrac{3\sqrt{2}}{\sin A}$.
 
-Also $\dfrac{c}{\sin C} = \dfrac{6}{\sin A}$So $\sin C = \dfrac{6\sin A}{c} = \sin A$ (since $c = 6$).
+Also $\dfrac{c}{\sin C} = \dfrac{6}{\sin A}$So $\sin C = \dfrac{6\sin A}{c} = \sin A$ (since
+$c = 6$).
 
 This means $C = A$ or $C = 180^\circ - A$.
 
@@ -886,11 +904,14 @@ If $C = A$: $A + B + C = 2A + 45^\circ = 180^\circ \implies A = 67.5^\circ$$C = 
 
 $b = \dfrac{6\sin 45^\circ}{\sin 67.5^\circ} = \dfrac{6 \cdot \frac{\sqrt{2}}{2}}{\cos 22.5^\circ} = \dfrac{3\sqrt{2}}{\cos 22.5^\circ} \approx \dfrac{4.243}{0.9239} \approx 4.59$.
 
-If $C = 180^\circ - A$: since $A + C = 180^\circ$And $A + B + C = 180^\circ$This gives $B = 0^\circ$Which is degenerate. So only one valid triangle exists with $b \approx 4.59$.
+If $C = 180^\circ - A$: since $A + C = 180^\circ$And $A + B + C = 180^\circ$This gives
+$B = 0^\circ$Which is degenerate. So only one valid triangle exists with $b \approx 4.59$.
 
 </details>
 
-**DSE Practice 6.** The points $A$$B$And $C$ are on level ground. $AB = 200$ m, $BC = 150$ m, and $\angle ABC = 110^\circ$. Find the shortest distance from $C$ to the road passing through $A$ and $B$.
+**DSE Practice 6.** The points $A$$B$And $C$ are on level ground. $AB = 200$ m, $BC = 150$ m, and
+$\angle ABC = 110^\circ$. Find the shortest distance from $C$ to the road passing through $A$ and
+$B$.
 
 <details>
 <summary>Solution</summary>
@@ -909,14 +930,15 @@ $$h = \frac{14095.5}{100} \approx 141 \text{ m}$$
 
 ---
 
-:::tip
-Diagnostic Test
-Ready to test your understanding of **Trigonometry**? The [diagnostic test](/docs/dse/Maths/diagnostics/diag-trigonometry) contains the hardest questions within the DSE specification for this topic, each with a full worked solution.
+:::tip Diagnostic Test Ready to test your understanding of **Trigonometry**? The
+[diagnostic test](/docs/dse/Maths/diagnostics/diag-trigonometry) contains the hardest questions
+within the DSE specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Trigonometry with other DSE mathematics topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine
+Trigonometry with other DSE mathematics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/dse/Maths/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/dse/Maths/diagnostics/diagnostic-guide) for instructions on
+self-marking and building a personal test matrix. :::
 
 ## Common Pitfalls
 

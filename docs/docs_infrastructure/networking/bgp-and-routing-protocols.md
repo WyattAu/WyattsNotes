@@ -1,6 +1,8 @@
 ---
 title: BGP and Routing Protocols
-description: "BGP and Routing Protocols — Routing Fundamentals; Routed Protocols vs Routing Protocols; The Routing Table; Route Sources."
+description:
+  'BGP and Routing Protocols — Routing Fundamentals; Routed Protocols vs Routing Protocols; The
+  Routing Table; Route Sources.'
 date: 2026-04-07T00:00:00.000Z
 tags:
   - Networking
@@ -8,6 +10,7 @@ categories:
   - Networking
 slug: bgp-and-routing-protocols
 ---
+
 ## Overview
 
 Routing is the process of selecting a path across a network for traffic to travel from a source to a
@@ -37,14 +40,14 @@ Confuse them.
 Every IP router maintains a routing table (also called the Routing Information Base, or RIB). Each
 Entry contains:
 
-| Field | Description |
+| Field       | Description                                                                       |
 | ----------- | --------------------------------------------------------------------------------- |
-| Destination | The network or host address being routed to (prefix) |
-| Mask | The subnet mask defining the prefix length |
-| Gateway | The next-hop IP address |
-| Interface | The outgoing interface to reach the next hop |
-| Metric | The cost of the route (lower is preferred unless administrative distance differs) |
-| Protocol | How the route was learned (connected, static, OSPF, BGP, etc.) |
+| Destination | The network or host address being routed to (prefix)                              |
+| Mask        | The subnet mask defining the prefix length                                        |
+| Gateway     | The next-hop IP address                                                           |
+| Interface   | The outgoing interface to reach the next hop                                      |
+| Metric      | The cost of the route (lower is preferred unless administrative distance differs) |
+| Protocol    | How the route was learned (connected, static, OSPF, BGP, etc.)                    |
 
 On Cisco IOS, view the routing table with `show ip route`:
 
@@ -69,13 +72,13 @@ Wins when multiple protocols advertise the same prefix.
 Routes enter the routing table from three sources:
 
 1. **Directly connected routes.** Interfaces that are up and have an IP address configured.
- Administrative distance: 0. These are always the most trusted.
+   Administrative distance: 0. These are always the most trusted.
 
 2. **Static routes.** Manually configured by an administrator. Administrative distance: 1 (default),
- configurable. Used when the network topology is simple or you need explicit control.
+   configurable. Used when the network topology is simple or you need explicit control.
 
 3. **Dynamic routes.** Learned through routing protocols (OSPF, BGP, EIGRP, RIP, IS-IS). Each
- protocol has a default administrative distance.
+   protocol has a default administrative distance.
 
 ### Administrative Distance
 
@@ -84,26 +87,24 @@ The trustworthiness of a route source. When the same prefix is learned from mult
 Route with the lowest AD is installed in the routing table. AD 0 is most trusted, 255 is
 Unreachable.
 
-| Source | Administrative Distance |
+| Source           | Administrative Distance |
 | ---------------- | ----------------------- |
-| Connected | 0 |
-| Static | 1 |
-| EIGRP (summary) | 5 |
-| EBGP | 20 |
-| EIGRP (internal) | 90 |
-| IGRP | 100 |
-| OSPF | 110 |
-| IS-IS | 115 |
-| RIP | 120 |
-| EIGRP (external) | 170 |
-| iBGP | 200 |
-| Unknown | 255 |
+| Connected        | 0                       |
+| Static           | 1                       |
+| EIGRP (summary)  | 5                       |
+| EBGP             | 20                      |
+| EIGRP (internal) | 90                      |
+| IGRP             | 100                     |
+| OSPF             | 110                     |
+| IS-IS            | 115                     |
+| RIP              | 120                     |
+| EIGRP (external) | 170                     |
+| iBGP             | 200                     |
+| Unknown          | 255                     |
 
-:::info
-Administrative distance is a Cisco concept, but the principle exists in other vendors'
+:::info Administrative distance is a Cisco concept, but the principle exists in other vendors'
 Implementations under different names (route preference, distance, or trust value). The numeric
-Values may differ.
-:::
+Values may differ. :::
 
 When two routes for the same prefix have the same AD, the router compares metrics. When both AD and
 Metric match, the router may load-balance (equal-cost or unequal-cost, depending on the protocol).
@@ -128,11 +129,9 @@ You can also specify the outbound interface instead of a next-hop:
 ip route 192.168.2.0 255.255.255.0 Ethernet0/1
 ```
 
-:::warning
-Specifying an outbound interface instead of a next-hop on a multi-access network (like
+:::warning Specifying an outbound interface instead of a next-hop on a multi-access network (like
 Ethernet) requires proxy ARP to function correctly, which can cause unexpected behavior. Prefer
-Next-hop addresses on multi-access links.
-:::
+Next-hop addresses on multi-access links. :::
 
 ### Default Routes
 
@@ -169,16 +168,16 @@ If the primary link to 10.0.0.1 goes down, the floating static route via 10.0.0.
 
 ### When to Use Static vs Dynamic Routing
 
-| Factor | Static Routes | Dynamic Routing |
+| Factor              | Static Routes                       | Dynamic Routing                          |
 | ------------------- | ----------------------------------- | ---------------------------------------- |
-| Network size | Small, simple | Large, complex |
-| Topology changes | Rare or none | Frequent |
-| Administrative load | Low (initially), high to maintain | Higher initial setup, lower ongoing |
-| Convergence | None (or manual failover) | Automatic |
-| Bandwidth usage | None | Protocol overhead |
-| Predictability | Full control | Protocol-dependent |
-| Scalability | Poor | Good |
-| Typical use case | Stub networks, default routes, DMZs | Enterprise backbones, ISP core, Internet |
+| Network size        | Small, simple                       | Large, complex                           |
+| Topology changes    | Rare or none                        | Frequent                                 |
+| Administrative load | Low (initially), high to maintain   | Higher initial setup, lower ongoing      |
+| Convergence         | None (or manual failover)           | Automatic                                |
+| Bandwidth usage     | None                                | Protocol overhead                        |
+| Predictability      | Full control                        | Protocol-dependent                       |
+| Scalability         | Poor                                | Good                                     |
+| Typical use case    | Stub networks, default routes, DMZs | Enterprise backbones, ISP core, Internet |
 
 ## Interior Gateway Protocols Overview
 
@@ -193,7 +192,7 @@ IGPs fall into two algorithmic categories:
 **Distance Vector** (RIP, EIGRP):
 
 - Each router knows only its neighbors and the distance (metric) to each destination through those
- neighbors.
+  neighbors.
 - Routers periodically send their entire routing table (or a subset) to neighbors.
 - Convergence is slower because information propagates hop by hop.
 - Prone to routing loops without additional mechanisms (split horizon, route poisoning).
@@ -208,12 +207,12 @@ IGPs fall into two algorithmic categories:
 
 ### Protocol Comparison
 
-| Protocol | Type | Metric | Convergence | Scalability | Complexity |
+| Protocol | Type            | Metric              | Convergence | Scalability | Complexity |
 | -------- | --------------- | ------------------- | ----------- | ----------- | ---------- |
-| RIP | Distance vector | Hop count | Slow | Small | Low |
-| EIGRP | Hybrid | Composite | Fast | Large | Medium |
-| OSPF | Link-state | Cost (bandwidth) | Fast | Very large | Medium |
-| IS-IS | Link-state | Cost (configurable) | Fast | Very large | High |
+| RIP      | Distance vector | Hop count           | Slow        | Small       | Low        |
+| EIGRP    | Hybrid          | Composite           | Fast        | Large       | Medium     |
+| OSPF     | Link-state      | Cost (bandwidth)    | Fast        | Very large  | Medium     |
+| IS-IS    | Link-state      | Cost (configurable) | Fast        | Very large  | High       |
 
 ## RIP (Routing Information Protocol)
 
@@ -222,13 +221,13 @@ Networks. For anything beyond a lab or a tiny office, use OSPF instead.
 
 ### RIPv1 vs RIPv2
 
-| Feature | RIPv1 | RIPv2 |
+| Feature        | RIPv1                    | RIPv2                     |
 | -------------- | ------------------------ | ------------------------- |
-| Transport | UDP port 520 | UDP port 520 |
-| Subnet masks | Not supported (classful) | Included (classless/VLSM) |
-| Authentication | None | Plain text or MD5 |
-| Updates | Broadcast | Multicast (224.0.0.9) |
-| Next-hop | Not supported | Supported |
+| Transport      | UDP port 520             | UDP port 520              |
+| Subnet masks   | Not supported (classful) | Included (classless/VLSM) |
+| Authentication | None                     | Plain text or MD5         |
+| Updates        | Broadcast                | Multicast (224.0.0.9)     |
+| Next-hop       | Not supported            | Supported                 |
 
 RIPv1 is obsolete. RIPv2 is still used in some legacy environments but should not be deployed in new
 Networks.
@@ -260,12 +259,12 @@ For the periodic update timer.
 
 ### Timers
 
-| Timer | Default | Purpose |
+| Timer           | Default | Purpose                                            |
 | --------------- | ------- | -------------------------------------------------- |
-| Update timer | 30s | Interval between periodic routing updates |
-| Invalid timer | 180s | Time after which a route is marked invalid |
-| Hold-down timer | 180s | Time a route is held in a "possibly down" state |
-| Flush timer | 240s | Time after which a route is removed from the table |
+| Update timer    | 30s     | Interval between periodic routing updates          |
+| Invalid timer   | 180s    | Time after which a route is marked invalid         |
+| Hold-down timer | 180s    | Time a route is held in a "possibly down" state    |
+| Flush timer     | 240s    | Time after which a route is removed from the table |
 
 ### RIP Configuration
 
@@ -299,13 +298,13 @@ Protocol that uses Dijkstra's Shortest Path First (SPF) algorithm to compute loo
 ### How OSPF Works
 
 1. **Neighbor discovery.** Routers on a shared segment discover each other using Hello packets
- (multicast 224.0.0.5 for all OSPF routers, 224.0.0.6 for DR/BDR).
+   (multicast 224.0.0.5 for all OSPF routers, 224.0.0.6 for DR/BDR).
 
 2. **Adjacency formation.** Routers exchange database descriptions (DBDs), link-state requests
- (LSRs), and link-state updates (LSUs) to synchronize their link-state databases.
+   (LSRs), and link-state updates (LSUs) to synchronize their link-state databases.
 
 3. **SPF calculation.** Each router independently runs Dijkstra's algorithm on the link-state
- database to build a shortest-path tree rooted at itself.
+   database to build a shortest-path tree rooted at itself.
 
 4. **Route installation.** The shortest-path tree produces entries in the routing table.
 
@@ -315,22 +314,20 @@ OSPF uses a two-level hierarchy of areas to control the scope of link-state floo
 Calculations:
 
 - **Area 0 (Backbone Area):** The central area. All other areas must connect to it directly or
- through a virtual link. Inter-area traffic always passes through Area 0.
+  through a virtual link. Inter-area traffic always passes through Area 0.
 
 - **Non-backbone areas:** Connect to Area 0 via an Area Border Router (ABR). Types include:
- - **Standard area:** Accepts all LSA types.
- - **Stub area:** Does not accept external LSAs (Type 5). Uses a default route to reach external
- destinations.
- - **Totally stubby area (Cisco extension):** Does not accept external or inter-area LSAs (Types 3,
- 4, 5). Uses a default route for everything outside the area.
- - **NSSA (Not-So-Stubby Area):** Allows external routes to be imported as Type 7 LSAs, which the
- ABR converts to Type 5 LSAs for the rest of the OSPF domain.
+- **Standard area:** Accepts all LSA types.
+- **Stub area:** Does not accept external LSAs (Type 5). Uses a default route to reach external
+  destinations.
+- **Totally stubby area (Cisco extension):** Does not accept external or inter-area LSAs (Types 3,
+  4, 5). Uses a default route for everything outside the area.
+- **NSSA (Not-So-Stubby Area):** Allows external routes to be imported as Type 7 LSAs, which the ABR
+  converts to Type 5 LSAs for the rest of the OSPF domain.
 
-:::info
-Area design is one of the most critical decisions in an OSPF deployment. A poorly designed
+:::info Area design is one of the most critical decisions in an OSPF deployment. A poorly designed
 Area topology causes excessive SPF recalculations, large routing tables, and slow convergence. Keep
-Areas small, limit the number of ABRs, and avoid transit areas.
-:::
+Areas small, limit the number of ABRs, and avoid transit areas. :::
 
 ### OSPF Cost Metric
 
@@ -339,10 +336,10 @@ Bandwidth on Cisco routers is 100 Mbps (10^8 bps).
 
 | Interface Speed | Default OSPF Cost |
 | --------------- | ----------------- |
-| 10 Mbps | 10 |
-| 100 Mbps | 1 |
-| 1 Gbps | 1 |
-| 10 Gbps | 1 |
+| 10 Mbps         | 10                |
+| 100 Mbps        | 1                 |
+| 1 Gbps          | 1                 |
+| 10 Gbps         | 1                 |
 
 Since modern networks commonly use links faster than 100 Mbps, you should adjust the reference
 Bandwidth:
@@ -354,14 +351,14 @@ router ospf 1
 
 ### LSA Types
 
-| LSA Type | Name | Generated By | Scope | Description |
+| LSA Type | Name                  | Generated By | Scope      | Description                           |
 | -------- | --------------------- | ------------ | ---------- | ------------------------------------- |
-| 1 | Router LSA | Every router | Area | Lists router's links and costs |
-| 2 | Network LSA | DR | Area | Describes a multi-access segment |
-| 3 | Summary LSA (network) | ABR | Inter-area | Summarizes networks from one area |
-| 4 | Summary LSA (ASBR) | ABR | Inter-area | Location of an ASBR |
-| 5 | External LSA (Type 1) | ASBR | Entire AS | External routes from another protocol |
-| 7 | NSSA External LSA | ASBR in NSSA | NSSA | External routes in an NSSA |
+| 1        | Router LSA            | Every router | Area       | Lists router's links and costs        |
+| 2        | Network LSA           | DR           | Area       | Describes a multi-access segment      |
+| 3        | Summary LSA (network) | ABR          | Inter-area | Summarizes networks from one area     |
+| 4        | Summary LSA (ASBR)    | ABR          | Inter-area | Location of an ASBR                   |
+| 5        | External LSA (Type 1) | ASBR         | Entire AS  | External routes from another protocol |
+| 7        | NSSA External LSA     | ASBR in NSSA | NSSA       | External routes in an NSSA            |
 
 ### DR/BDR Election
 
@@ -372,21 +369,19 @@ Routers would require N\*(N-1)/2 adjacencies. With DR/BDR, only 2N-1 adjacencies
 **Election rules:**
 
 1. The router with the highest OSPF priority (default 1) wins. Priority 0 means the router is
- ineligible.
+   ineligible.
 2. If priorities tie, the router with the highest Router ID wins.
 3. Election is non-preemptive: if a higher-priority router comes online after the election, it does
- not take over.
+   not take over.
 
 ```
 interface Ethernet0/0
   ip ospf priority 100
 ```
 
-:::warning
-DR/BDR election on NBMA networks (like Frame Relay or DMVPN) can cause unexpected
+:::warning DR/BDR election on NBMA networks (like Frame Relay or DMVPN) can cause unexpected
 Behavior. On hub-and-spoke topologies, ensure the hub has the highest priority and all spokes have
-Priority 0. Otherwise, a spoke might win the DR election, breaking routing.
-:::
+Priority 0. Otherwise, a spoke might win the DR election, breaking routing. :::
 
 ### OSPF Configuration
 
@@ -435,8 +430,8 @@ AreaID.SystemID.NSEL
 For example: `49.0001.0001.0001.0001.00`
 
 - **Area ID:** Variable length, identifies the IS-IS area (analogous to OSPF area).
-- **System ID:** 6 octets ( derived from the MAC address or a loopback IP), uniquely
- identifies the router.
+- **System ID:** 6 octets ( derived from the MAC address or a loopback IP), uniquely identifies the
+  router.
 - **NSEL:** Always 00 for a router NET.
 
 ### IS-IS Levels
@@ -444,25 +439,25 @@ For example: `49.0001.0001.0001.0001.00`
 IS-IS operates in two levels:
 
 - **Level 1 (L1):** Intra-area routing. Routers exchange LSPs only within their area. L1 routers
- have a default route pointing to the nearest L1/L2 router for inter-area traffic.
+  have a default route pointing to the nearest L1/L2 router for inter-area traffic.
 - **Level 2 (L2):** Inter-area routing. L2 routers exchange LSPs across all areas, forming the IS-IS
- backbone (analogous to OSPF Area 0, but IS-IS does not require a specific area number for the
- backbone).
+  backbone (analogous to OSPF Area 0, but IS-IS does not require a specific area number for the
+  backbone).
 - **Level 1/2 (L1/L2):** A router that participates in both levels, acting as an ABR equivalent.
 
 ### IS-IS vs OSPF
 
-| Feature | IS-IS | OSPF |
+| Feature            | IS-IS                            | OSPF                       |
 | ------------------ | -------------------------------- | -------------------------- |
-| Protocol | TLV-based, extensible | Fixed LSA types |
-| Hierarchy | Two levels (L1, L2) | Multiple areas with Area 0 |
-| Backbone | Contiguous L2 routers (any area) | Area 0 specifically |
-| Adjacency | Per level on each interface | Single per interface |
-| Authentication | Cleartext or HMAC-MD5/SHA | Cleartext, MD5, or SHA |
-| DR equivalent | DIS (elected, but preemptive) | DR/BDR (non-preemptive) |
-| Updates | TLV-encoded LSPs | LSA types 1-7 |
-| IPv6 support | Same protocol, new TLVs | OSPFv3 (separate protocol) |
-| Typical deployment | Service provider backbones | Enterprise networks |
+| Protocol           | TLV-based, extensible            | Fixed LSA types            |
+| Hierarchy          | Two levels (L1, L2)              | Multiple areas with Area 0 |
+| Backbone           | Contiguous L2 routers (any area) | Area 0 specifically        |
+| Adjacency          | Per level on each interface      | Single per interface       |
+| Authentication     | Cleartext or HMAC-MD5/SHA        | Cleartext, MD5, or SHA     |
+| DR equivalent      | DIS (elected, but preemptive)    | DR/BDR (non-preemptive)    |
+| Updates            | TLV-encoded LSPs                 | LSA types 1-7              |
+| IPv6 support       | Same protocol, new TLVs          | OSPFv3 (separate protocol) |
+| Typical deployment | Service provider backbones       | Enterprise networks        |
 
 ### IS-IS TLVs
 
@@ -513,17 +508,15 @@ Metric = 256 * [(K1 * BW_min) + (K2 * BW_min / (256 - Load)) + (K3 * Delay_sum)]
 
 By default, only K1 (bandwidth) and K3 (delay) are enabled (K1=1, K2=0, K3=1, K4=0, K5=0).
 
-| Component | Description |
+| Component   | Description                                                      |
 | ----------- | ---------------------------------------------------------------- |
-| Bandwidth | Minimum bandwidth along the path (in Kbps) |
-| Delay | Sum of interface delays along the path (in tens of microseconds) |
-| Reliability | Reliability of the path (0-255, where 255 is 100%) |
-| Load | Load on the path (0-255, where 255 is fully loaded) |
+| Bandwidth   | Minimum bandwidth along the path (in Kbps)                       |
+| Delay       | Sum of interface delays along the path (in tens of microseconds) |
+| Reliability | Reliability of the path (0-255, where 255 is 100%)               |
+| Load        | Load on the path (0-255, where 255 is fully loaded)              |
 
-:::info
-Never enable K2 (load) or K5 (reliability) in production. These values fluctuate with
-Traffic, causing the metric to change constantly and leading to route flapping and instability.
-:::
+:::info Never enable K2 (load) or K5 (reliability) in production. These values fluctuate with
+Traffic, causing the metric to change constantly and leading to route flapping and instability. :::
 
 ### Feasible Successors and DUAL
 
@@ -568,27 +561,27 @@ A metric-based shortest path.
 Single administrative domain with a unified routing policy. Each AS is identified by an **Autonomous
 System Number** (ASN).
 
-| Range | Type | Notes |
+| Range              | Type     | Notes                                          |
 | ------------------ | -------- | ---------------------------------------------- |
-| 1 - 64511 | Public | Assigned by regional registries (RIRs) |
-| 64512 - 65534 | Private | For internal use, not routable on the Internet |
-| 65535 | Reserved | |
-| 65536 - 4294967294 | Public | 32-bit ASNs (4-byte AS numbers) |
-| 4294967295 | Reserved | |
+| 1 - 64511          | Public   | Assigned by regional registries (RIRs)         |
+| 64512 - 65534      | Private  | For internal use, not routable on the Internet |
+| 65535              | Reserved |                                                |
+| 65536 - 4294967294 | Public   | 32-bit ASNs (4-byte AS numbers)                |
+| 4294967295         | Reserved |                                                |
 
 Major cloud providers' public ASNs: AWS (16509, 14618), Google (15169, 396982), Azure (8075, 12076),
 Cloudflare (13335), Netflix (2906).
 
 ### eBGP vs iBGP
 
-| Attribute | eBGP (External BGP) | iBGP (Internal BGP) |
+| Attribute     | eBGP (External BGP)                      | iBGP (Internal BGP)                      |
 | ------------- | ---------------------------------------- | ---------------------------------------- |
-| Peers | Different autonomous systems | Same autonomous system |
-| Next-hop | Modified to the sending router's address | Not modified (preserved from eBGP) |
-| AD (Cisco) | 20 | 200 |
-| TTL | 1 (by default) | 255 (by default) |
-| Full mesh | Not required | Required (unless using route reflectors) |
-| Route learned | Can be advertised to any BGP peer | Not advertised to other iBGP peers |
+| Peers         | Different autonomous systems             | Same autonomous system                   |
+| Next-hop      | Modified to the sending router's address | Not modified (preserved from eBGP)       |
+| AD (Cisco)    | 20                                       | 200                                      |
+| TTL           | 1 (by default)                           | 255 (by default)                         |
+| Full mesh     | Not required                             | Required (unless using route reflectors) |
+| Route learned | Can be advertised to any BGP peer        | Not advertised to other iBGP peers       |
 
 ### BGP Sessions
 
@@ -608,11 +601,9 @@ interface Loopback0
   ip address 1.1.1.1 255.255.255.255
 ```
 
-:::info
-For iBGP sessions, use loopback interfaces as the source and configure
+:::info For iBGP sessions, use loopback interfaces as the source and configure
 `update-source Loopback0` and `next-hop-self`. For eBGP sessions, use directly connected interfaces
-(unless you are using multihop, which requires `ebgp-multihop`).
-:::
+(unless you are using multihop, which requires `ebgp-multihop`). :::
 
 ### NLRI
 
@@ -625,20 +616,20 @@ MP-BGP, NLRI can carry IPv6 prefixes, VPNv4/VPNv6 prefixes, MPLS labels, and mor
 Every BGP route carries a set of path attributes that influence the BGP decision process. These are
 The core of BGP's policy-based routing.
 
-| Attribute | Code | Type | Description |
+| Attribute             | Code | Type                     | Description                                                         |
 | --------------------- | ---- | ------------------------ | ------------------------------------------------------------------- |
-| ORIGIN | 1 | Well-known mandatory | How the route was originated: IGP, EGP, or incomplete |
-| AS_PATH | 2 | Well-known mandatory | Sequence of ASes the route has traversed |
-| NEXT_HOP | 3 | Well-known mandatory | IP address of the next-hop router |
-| MED (MULTI_EXIT_DISC) | 4 | Optional non-transitive | Suggests a preferred exit point to a neighboring AS |
-| LOCAL_PREF | 5 | Well-known discretionary | Preference for routes within the AS (higher is better) |
-| ATOMIC_AGGREGATE | 6 | Well-known discretionary | Indicates the route is an aggregate with less-specific details |
-| AGGREGATOR | 7 | Optional transitive | AS number and IP of the router that created the aggregate |
-| COMMUNITY | 8 | Optional transitive | Tags for route filtering and policy (e.g., NO_EXPORT, NO_ADVERTISE) |
-| ORIGINATOR_ID | 9 | Optional non-transitive | Originator of a route (used with route reflectors) |
-| CLUSTER_LIST | 10 | Optional non-transitive | List of route reflector cluster IDs (loop prevention) |
-| MP_REACH_NLRI | 14 | Optional non-transitive | Multiprotocol extensions for IPv6, VPNv4, etc. |
-| MP_UNREACH_NLRI | 15 | Optional non-transitive | Withdrawal of multiprotocol NLRI |
+| ORIGIN                | 1    | Well-known mandatory     | How the route was originated: IGP, EGP, or incomplete               |
+| AS_PATH               | 2    | Well-known mandatory     | Sequence of ASes the route has traversed                            |
+| NEXT_HOP              | 3    | Well-known mandatory     | IP address of the next-hop router                                   |
+| MED (MULTI_EXIT_DISC) | 4    | Optional non-transitive  | Suggests a preferred exit point to a neighboring AS                 |
+| LOCAL_PREF            | 5    | Well-known discretionary | Preference for routes within the AS (higher is better)              |
+| ATOMIC_AGGREGATE      | 6    | Well-known discretionary | Indicates the route is an aggregate with less-specific details      |
+| AGGREGATOR            | 7    | Optional transitive      | AS number and IP of the router that created the aggregate           |
+| COMMUNITY             | 8    | Optional transitive      | Tags for route filtering and policy (e.g., NO_EXPORT, NO_ADVERTISE) |
+| ORIGINATOR_ID         | 9    | Optional non-transitive  | Originator of a route (used with route reflectors)                  |
+| CLUSTER_LIST          | 10   | Optional non-transitive  | List of route reflector cluster IDs (loop prevention)               |
+| MP_REACH_NLRI         | 14   | Optional non-transitive  | Multiprotocol extensions for IPv6, VPNv4, etc.                      |
+| MP_UNREACH_NLRI       | 15   | Optional non-transitive  | Withdrawal of multiprotocol NLRI                                    |
 
 **ORIGIN** values:
 
@@ -722,7 +713,7 @@ Well-known communities:
 - **NO_EXPORT_SUBCONFED (0xFFFFFF03):** Do not advertise outside the local sub-AS confederation.
 - **LLGR_STALE (0xFFFFFF06):** Indicates a long-lived stale route (RFC 8212).
 - **BLACKHOLE (0xFFFFFF02, sometimes 65535:666):** Tag routes to be discarded (used in DDoS
- mitigation).
+  mitigation).
 
 Communities are commonly used for:
 
@@ -769,12 +760,10 @@ Operators should follow:
 3. Coordinate and share contact information
 4. Publish routing policy (ROAs in RPKI)
 
-:::warning
-BGP hijacking is a real and ongoing threat. In 2008, Pakistan Telecom hijacked YouTube's
+:::warning BGP hijacking is a real and ongoing threat. In 2008, Pakistan Telecom hijacked YouTube's
 Prefix (208.65.153.0/24) by advertising a more specific route, redirecting global YouTube traffic to
 Pakistan. In 2018, attackers hijacked Amazon's NS1 prefix to intercept cryptocurrency DNS traffic.
-Implement RPKI validation and prefix filtering on all BGP sessions.
-:::
+Implement RPKI validation and prefix filtering on all BGP sessions. :::
 
 ## Route Redistribution
 
@@ -884,14 +873,14 @@ Permits everything else.
 
 Common regex patterns:
 
-| Pattern | Meaning |
+| Pattern   | Meaning                         |
 | --------- | ------------------------------- |
-| `^65001$` | Originated by AS 65001 |
-| `_65001_` | AS 65001 appears in the path |
+| `^65001$` | Originated by AS 65001          |
+| `_65001_` | AS 65001 appears in the path    |
 | `^65001_` | Received directly from AS 65001 |
-| `_65001$` | AS 65001 is the origin AS |
-| `.*` | Match any AS_PATH |
-| `[0-9]+` | One or more digits |
+| `_65001$` | AS 65001 is the origin AS       |
+| `.*`      | Match any AS_PATH               |
+| `[0-9]+`  | One or more digits              |
 
 ### Community Filtering
 
@@ -913,14 +902,14 @@ Protocol-specific differences.
 
 ### Key Differences from IPv4
 
-| Aspect | IPv4 | IPv6 |
+| Aspect         | IPv4                           | IPv6                                |
 | -------------- | ------------------------------ | ----------------------------------- |
-| Address size | 32 bits | 128 bits |
-| Default route | 0.0.0.0/0 | ::/0 |
-| OSPF | OSPFv2 (multicast 224.0.0.5/6) | OSPFv3 (uses link-local, FF02::5/6) |
-| RIP | RIPv2 (multicast 224.0.0.9) | RIPng (multicast FF02::9) |
-| BGP | IPv4 unicast AFI | IPv6 unicast via MP-BGP |
-| Source address | Interface IP | Link-local for protocol traffic |
+| Address size   | 32 bits                        | 128 bits                            |
+| Default route  | 0.0.0.0/0                      | ::/0                                |
+| OSPF           | OSPFv2 (multicast 224.0.0.5/6) | OSPFv3 (uses link-local, FF02::5/6) |
+| RIP            | RIPv2 (multicast 224.0.0.9)    | RIPng (multicast FF02::9)           |
+| BGP            | IPv4 unicast AFI               | IPv6 unicast via MP-BGP             |
+| Source address | Interface IP                   | Link-local for protocol traffic     |
 
 ### MP-BGP (Multiprotocol BGP)
 
@@ -960,15 +949,15 @@ interface Ethernet0/0
 IP prefix lookups to make forwarding decisions. Packets are forwarded based on a label that is
 Prepended to the packet, enabling faster switching and support for traffic engineering and VPNs.
 
-MPLS sits between layer 2 and layer 3 (sometimes called layer 2.5). The label is 20 bits
-And is inserted between the layer 2 header and the layer 3 header.
+MPLS sits between layer 2 and layer 3 (sometimes called layer 2.5). The label is 20 bits And is
+inserted between the layer 2 header and the layer 3 header.
 
 ### Label Switching and LSP
 
 1. An **ingress Label Switch Router** (LSR) receives an IP packet, classifies it, and pushes a label
- onto the packet.
+   onto the packet.
 2. Intermediate LSRs swap the incoming label for an outgoing label based on their label forwarding
- table (LFIB). No IP lookup is performed.
+   table (LFIB). No IP lookup is performed.
 3. The **egress LSR** pops the label and forwards the packet based on the original IP header.
 
 The path that labeled packets follow is called a **Label Switched Path** (LSP).
@@ -994,15 +983,15 @@ Customer's traffic is isolated even though it traverses the same provider backbo
 **Key concepts:**
 
 - **VRF (Virtual Routing and Forwarding):** A virtual routing instance on a PE router. Each VRF has
- its own routing table, separate from the global routing table. Customer routes are installed in
- the VRF.
+  its own routing table, separate from the global routing table. Customer routes are installed in
+  the VRF.
 
 - **RD (Route Distinguisher):** A 64-bit value prepended to an IPv4 prefix to make it globally
- unique across all VPNs. Format: `ASN:NN` (e.g., 65001:100) or `IP:NN` (e.g., 1.1.1.1:100). A route
- `192.168.1.0/24` with RD `65001:100` becomes `65001:100:192.168.1.0/24` -- a VPNv4 prefix.
+  unique across all VPNs. Format: `ASN:NN` (e.g., 65001:100) or `IP:NN` (e.g., 1.1.1.1:100). A route
+  `192.168.1.0/24` with RD `65001:100` becomes `65001:100:192.168.1.0/24` -- a VPNv4 prefix.
 
 - **RT (Route Target):** An extended BGP community that controls which VRFs can import which routes.
- Routes are exported with RTs, and VRFs import routes that match their import RTs.
+  Routes are exported with RTs, and VRFs import routes that match their import RTs.
 
 ```
 ip vrf CUSTOMER_A
@@ -1070,12 +1059,12 @@ The three-tier hierarchical model divides the network into core, distribution, a
 Redundancy eliminates single points of failure:
 
 - **Link redundancy:** Multiple physical paths between devices. Use EtherChannel/LACP for link
- aggregation and STP for loop prevention at layer 2.
+  aggregation and STP for loop prevention at layer 2.
 - **Device redundancy:** HSRP, VRRP, or GLBP for first-hop redundancy. Use iBGP with route
- reflectors for routing protocol redundancy.
+  reflectors for routing protocol redundancy.
 - **Path redundancy:** Multiple routing paths with equal-cost or unequal-cost load balancing. OSPF
- supports equal-cost multi-path (ECMP) by default. EIGRP supports both ECMP and unequal-cost load
- balancing (variance command).
+  supports equal-cost multi-path (ECMP) by default. EIGRP supports both ECMP and unequal-cost load
+  balancing (variance command).
 
 ### Load Balancing
 
@@ -1185,11 +1174,9 @@ show logging | include OSPF|BGP
 
 ### Debug Commands
 
-:::warning
-Debug commands can generate massive output and impact router performance. Use them
+:::warning Debug commands can generate massive output and impact router performance. Use them
 Carefully, and always use `terminal monitor` and specific debug filters. Disable debug with
-`undebug all` as soon as you have the information you need.
-:::
+`undebug all` as soon as you have the information you need. :::
 
 ```
 debug ip routing
@@ -1229,7 +1216,7 @@ Have a route to the destination or has no return path. Traffic goes in but never
 Common causes:
 
 - MPLS label distribution failure (traffic enters the MPLS cloud but no label exists for the
- destination)
+  destination)
 - Incomplete redistribution (routes exist in one protocol but are not redistributed to another)
 - IGP/BGP synchronization issues (the IGP does not have the BGP-learned next hop)
 
@@ -1248,28 +1235,26 @@ router bgp 65001
   bgp dampening 5 750 2000 60    ! half-life, suppress, reuse, max-suppress (minutes)
 ```
 
-:::warning
-BGP dampening can cause more harm than good in some scenarios, particularly when a
+:::warning BGP dampening can cause more harm than good in some scenarios, particularly when a
 Flapping route carries important traffic. Many operators prefer to fix the root cause of the
-Flapping rather than suppress the route. Use dampening carefully.
-:::
+Flapping rather than suppress the route. Use dampening carefully. :::
 
 ### OSPF Area Design Mistakes
 
 1. **Too many areas:** Each ABR must maintain separate LSDBs for each area it connects to. More
- areas means more memory, more SPF calculations, and more complexity.
+   areas means more memory, more SPF calculations, and more complexity.
 
 2. **Transit areas:** Avoid making non-backbone areas carry transit traffic. All inter-area traffic
- should go through Area 0.
+   should go through Area 0.
 
 3. **Virtual links:** Virtual links are a workaround for non-contiguous Area 0, not a design
- pattern. They add fragility and should not be part of a permanent design.
+   pattern. They add fragility and should not be part of a permanent design.
 
 4. **Large areas:** An OSPF area should not have more than 50-100 routers. Beyond that, the SPF
- calculation becomes expensive and convergence slows.
+   calculation becomes expensive and convergence slows.
 
 5. **Incorrect LSA types in stub areas:** Configuring an area as stub when it has an ASBR causes
- routes to be lost. Use NSSA instead.
+   routes to be lost. Use NSSA instead.
 
 ### Split Horizon Violation Over NBMA
 
@@ -1277,9 +1262,9 @@ Split horizon is automatically disabled on physical interfaces using Frame Relay
 NBMA networks (Frame Relay, X.25, ATM), subinterfaces behave differently:
 
 - **Point-to-point subinterfaces:** Split horizon is disabled (correct behavior, since there is only
- one neighbor).
+  one neighbor).
 - **Multipoint subinterfaces:** Split horizon is enabled (can cause problems in hub-and-spoke
- topologies where the hub needs to advertise routes learned from one spoke to another spoke).
+  topologies where the hub needs to advertise routes learned from one spoke to another spoke).
 
 If you see routes missing on NBMA networks, check whether split horizon is causing the issue:
 

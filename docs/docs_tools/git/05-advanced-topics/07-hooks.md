@@ -1,8 +1,11 @@
 ---
 title: Git Hooks
-description: "Git Hooks — Hook Lifecycle; When Hooks Run; Hook Discovery; Point Git to a custom hooks directory with worked examples and exam-style questions."
+description:
+  'Git Hooks — Hook Lifecycle; When Hooks Run; Hook Discovery; Point Git to a custom hooks directory
+  with worked examples and exam-style questions.'
 slug: git-hooks
 ---
+
 ## Hook Lifecycle
 
 Git hooks are scripts that Git executes automatically before or after specific events in the
@@ -20,9 +23,9 @@ Git aborts the operation — this is the entire enforcement mechanism.
 Hooks are divided into two categories based on where they execute:
 
 **Client-side hooks** run on the local machine performing the Git operation. They are triggered by
-Commands like `git commit``git push``git checkout`And `git rebase`. Client-side hooks cannot
-Be enforced remotely — a user with filesystem access can always bypass them with `--no-verify`.
-Their purpose is **convenience and local policy**, not security.
+Commands like `git commit``git push``git checkout`And `git rebase`. Client-side hooks cannot Be
+enforced remotely — a user with filesystem access can always bypass them with `--no-verify`. Their
+purpose is **convenience and local policy**, not security.
 
 **Server-side hooks** run on the remote repository when it receives a push. They are triggered by
 The `git-receive-pack` process. Server-side hooks are the only hooks that can be truly enforced,
@@ -34,13 +37,13 @@ Server-side `pre-receive` hook.
 Git discovers hooks through a well-defined search path:
 
 1. **`.git/hooks/`** — the default location. When you `git init` a repository, Git populates this
- directory with sample hook scripts (all suffixed with `.sample` so they do not execute). Git only
- looks for files that are **exactly named** after the hook event — no extensions, no suffixes. A
- file named `pre-commit.sh` will never run; it must be named `pre-commit`.
+   directory with sample hook scripts (all suffixed with `.sample` so they do not execute). Git only
+   looks for files that are **exactly named** after the hook event — no extensions, no suffixes. A
+   file named `pre-commit.sh` will never run; it must be named `pre-commit`.
 
 2. **`core.hooksPath`** — a configuration override that points Git to an alternative directory. This
- is the mechanism that tools like Husky and Lefthook use to redirect hook execution to a managed
- directory:
+   is the mechanism that tools like Husky and Lefthook use to redirect hook execution to a managed
+   directory:
 
 ```bash
 # Point Git to a custom hooks directory
@@ -52,27 +55,27 @@ $ git config core.hooksPath
 ```
 
 When `core.hooksPath` is set, Git does **not** fall through to `.git/hooks/`. The override is
-Absolute. If the directory does not exist or the named hook file is absent, Git skips the
-Hook (it does not error).
+Absolute. If the directory does not exist or the named hook file is absent, Git skips the Hook (it
+does not error).
 
 ### Hook Naming Convention
 
 Every hook has a fixed name. Git iterates through the hooks directory and matches filenames against
 A hardcoded list. The naming is not configurable:
 
-| Hook Name | Type | Trigger Point |
+| Hook Name            | Type   | Trigger Point                   |
 | -------------------- | ------ | ------------------------------- |
-| `pre-commit` | Client | Before commit, after staging |
-| `prepare-commit-msg` | Client | Before commit message editor |
-| `commit-msg` | Client | After message written, pre-save |
-| `post-commit` | Client | After commit completes |
-| `pre-rebase` | Client | Before rebase begins |
-| `post-checkout` | Client | After checkout/switch |
-| `post-merge` | Client | After merge completes |
-| `pre-push` | Client | Before push to remote |
-| `pre-receive` | Server | Before refs are updated |
-| `update` | Server | Once per ref being updated |
-| `post-receive` | Server | After refs are updated |
+| `pre-commit`         | Client | Before commit, after staging    |
+| `prepare-commit-msg` | Client | Before commit message editor    |
+| `commit-msg`         | Client | After message written, pre-save |
+| `post-commit`        | Client | After commit completes          |
+| `pre-rebase`         | Client | Before rebase begins            |
+| `post-checkout`      | Client | After checkout/switch           |
+| `post-merge`         | Client | After merge completes           |
+| `pre-push`           | Client | Before push to remote           |
+| `pre-receive`        | Server | Before refs are updated         |
+| `update`             | Server | Once per ref being updated      |
+| `post-receive`       | Server | After refs are updated          |
 
 ### What Happens When a Hook Fails
 
@@ -85,24 +88,24 @@ error: failed to push some refs to 'origin'
 hint: Updates were rejected because the pre-push hook exited with error code 1.
 ```
 
-Post-hooks (`post-commit``post-receive`Etc.) are informational. If a post-hook fails, Git prints
-A warning but does **not** abort the operation — the commit or push has already succeeded.
+Post-hooks (`post-commit``post-receive`Etc.) are informational. If a post-hook fails, Git prints A
+warning but does **not** abort the operation — the commit or push has already succeeded.
 
 ## Client-Side Hooks
 
 ### Full Reference Table
 
-| Hook | Arguments | stdin | Fail Aborts? | Typical Use |
+| Hook                 | Arguments                                                                                        | stdin                                                                                | Fail Aborts? | Typical Use                                |
 | -------------------- | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ | ------------ | ------------------------------------------ |
-| `pre-commit` | None | None | Yes | Linting, formatting, tests on staged files |
-| `prepare-commit-msg` | `$1`=msg file, `$2`=source (`message`/`template`/`merge`/`squash`/`commit`), `$3`=SHA (if amend) | None | No | Template manipulation, ticket injection |
-| `commit-msg` | `$1`=path to commit message file | None | Yes | Message validation, conventional commits |
-| `post-commit` | None | None | No | Notifications, CI trigger |
-| `pre-rebase` | `$1`=upstream, `$2`=branch being rebased | None | Yes | Prevent rebasing protected branches |
-| `post-checkout` | `$1`=prev HEAD, `$2`=new HEAD, `$3`=flag (1=branch, 0=file checkout) | None | No | Environment setup, submodule init |
-| `post-merge` | `$1`=flag (1=squash merge) | None | No | Submodule update, dependency install |
-| `pre-push` | None | Lines: `&lt;local ref&gt; &lt;local sha1&gt; &lt;remote ref&gt; &lt;remote sha1&gt;` | Yes | Test suite, prevent force-push to main |
-| `pre-auto-gc` | None | None | Yes | Prevent automatic garbage collection |
+| `pre-commit`         | None                                                                                             | None                                                                                 | Yes          | Linting, formatting, tests on staged files |
+| `prepare-commit-msg` | `$1`=msg file, `$2`=source (`message`/`template`/`merge`/`squash`/`commit`), `$3`=SHA (if amend) | None                                                                                 | No           | Template manipulation, ticket injection    |
+| `commit-msg`         | `$1`=path to commit message file                                                                 | None                                                                                 | Yes          | Message validation, conventional commits   |
+| `post-commit`        | None                                                                                             | None                                                                                 | No           | Notifications, CI trigger                  |
+| `pre-rebase`         | `$1`=upstream, `$2`=branch being rebased                                                         | None                                                                                 | Yes          | Prevent rebasing protected branches        |
+| `post-checkout`      | `$1`=prev HEAD, `$2`=new HEAD, `$3`=flag (1=branch, 0=file checkout)                             | None                                                                                 | No           | Environment setup, submodule init          |
+| `post-merge`         | `$1`=flag (1=squash merge)                                                                       | None                                                                                 | No           | Submodule update, dependency install       |
+| `pre-push`           | None                                                                                             | Lines: `&lt;local ref&gt; &lt;local sha1&gt; &lt;remote ref&gt; &lt;remote sha1&gt;` | Yes          | Test suite, prevent force-push to main     |
+| `pre-auto-gc`        | None                                                                                             | None                                                                                 | Yes          | Prevent automatic garbage collection       |
 
 ### pre-commit
 
@@ -248,8 +251,8 @@ fi
 
 ### post-checkout
 
-This hook fires after `git checkout``git switch`Or `git clone`. It receives the previous HEAD,
-The new HEAD, and a flag indicating whether it was a branch checkout (1) or a file checkout (0):
+This hook fires after `git checkout``git switch`Or `git clone`. It receives the previous HEAD, The
+new HEAD, and a flag indicating whether it was a branch checkout (1) or a file checkout (0):
 
 ```bash
 #!/usr/bin/env bash
@@ -443,8 +446,8 @@ echo "Running pre-commit checks..."
 exit 0
 ```
 
-The shebang line matters. If you write `#!/bin/bash`The hook will fail on systems where bash is
-Not at `/bin/bash` (Alpine Linux, for example). Use `#!/usr/bin/env bash` for portability.
+The shebang line matters. If you write `#!/bin/bash`The hook will fail on systems where bash is Not
+at `/bin/bash` (Alpine Linux, for example). Use `#!/usr/bin/env bash` for portability.
 
 ### Python Scripts
 
@@ -518,18 +521,18 @@ $ chmod +x .githooks/pre-commit
 Git sets several environment variables before invoking a hook. These provide context about the
 Repository and the operation in progress:
 
-| Variable | Available In | Description |
+| Variable              | Available In    | Description                                 |
 | --------------------- | --------------- | ------------------------------------------- |
-| `GIT_DIR` | All hooks | Path to the `.git` directory |
-| `GIT_WORK_TREE` | All hooks | Path to the working tree |
-| `GIT_AUTHOR_NAME` | `commit-msg` | The author's name from config |
-| `GIT_AUTHOR_EMAIL` | `commit-msg` | The author's email from config |
-| `GIT_AUTHOR_DATE` | `commit-msg` | The author date |
-| `GIT_COMMITTER_NAME` | `commit-msg` | The committer's name |
-| `GIT_COMMITTER_EMAIL` | `commit-msg` | The committer's email |
-| `GIT_COMMIT` | `post-commit` | SHA of the newly created commit |
-| `GIT_PREFIX` | `post-checkout` | The path to the worktree root (for subdirs) |
-| `GIT_REFLOG_ACTION` | All hooks | The operation being performed |
+| `GIT_DIR`             | All hooks       | Path to the `.git` directory                |
+| `GIT_WORK_TREE`       | All hooks       | Path to the working tree                    |
+| `GIT_AUTHOR_NAME`     | `commit-msg`    | The author's name from config               |
+| `GIT_AUTHOR_EMAIL`    | `commit-msg`    | The author's email from config              |
+| `GIT_AUTHOR_DATE`     | `commit-msg`    | The author date                             |
+| `GIT_COMMITTER_NAME`  | `commit-msg`    | The committer's name                        |
+| `GIT_COMMITTER_EMAIL` | `commit-msg`    | The committer's email                       |
+| `GIT_COMMIT`          | `post-commit`   | SHA of the newly created commit             |
+| `GIT_PREFIX`          | `post-checkout` | The path to the worktree root (for subdirs) |
+| `GIT_REFLOG_ACTION`   | All hooks       | The operation being performed               |
 
 **Important**: the `PATH` environment variable in hooks is often minimal. If your hook invokes tools
 Like `eslint``shellcheck`Or custom binaries, they may not be found. Either use absolute paths or
@@ -572,7 +575,7 @@ $ git commit -m "chore: add shared hooks directory"
 
 **Caveat**: `git config core.hooksPath` is a local config change — it is not automatically applied
 When someone clones the repo. New contributors must still run the config command manually. This is
- documented in `README.md` or automated in a `make setup` target.
+documented in `README.md` or automated in a `make setup` target.
 
 ### Husky
 
@@ -671,18 +674,18 @@ repos:
 
 The `pre-commit-hooks` repository provides widely-used, battle-tested hooks:
 
-| Hook ID | What It Does | Fix? |
+| Hook ID                                | What It Does                                     | Fix? |
 | -------------------------------------- | ------------------------------------------------ | ---- |
-| `trailing-whitespace` | Removes trailing whitespace from all lines | Yes |
-| `end-of-file-fixer` | Ensures files end with a single newline | Yes |
-| `check-yaml` | Validates YAML syntax with `pyyaml` | No |
-| `check-json` | Validates JSON syntax | No |
-| `check-merge-conflict` | Detects unresolved merge conflict markers | No |
-| `detect-private-key` | Scans for files containing private key material | No |
-| `check-added-large-files` | Rejects files over a configurable size limit | No |
-| `check-case-conflict` | Detects filename case conflicts (Linux vs macOS) | No |
-| `check-executables-have-shebangs` | Ensures executable files have shebangs | No |
-| `check-shebang-scripts-are-executable` | Ensures files with shebangs are executable | No |
+| `trailing-whitespace`                  | Removes trailing whitespace from all lines       | Yes  |
+| `end-of-file-fixer`                    | Ensures files end with a single newline          | Yes  |
+| `check-yaml`                           | Validates YAML syntax with `pyyaml`              | No   |
+| `check-json`                           | Validates JSON syntax                            | No   |
+| `check-merge-conflict`                 | Detects unresolved merge conflict markers        | No   |
+| `detect-private-key`                   | Scans for files containing private key material  | No   |
+| `check-added-large-files`              | Rejects files over a configurable size limit     | No   |
+| `check-case-conflict`                  | Detects filename case conflicts (Linux vs macOS) | No   |
+| `check-executables-have-shebangs`      | Ensures executable files have shebangs           | No   |
+| `check-shebang-scripts-are-executable` | Ensures files with shebangs are executable       | No   |
 
 ### Running in CI
 
@@ -850,8 +853,8 @@ $ chmod +x .githooks/pre-commit
 
 ### PATH Differences in Hooks
 
-Hooks run with a minimal `PATH`. Tools installed in `~/.local/bin``~/go/bin`Or via `nvm` may not
-Be found. Always explicitly set `PATH` or use absolute paths to tools in your hook scripts.
+Hooks run with a minimal `PATH`. Tools installed in `~/.local/bin``~/go/bin`Or via `nvm` may not Be
+found. Always explicitly set `PATH` or use absolute paths to tools in your hook scripts.
 
 ### pre-commit Sees Staged Content, Not Working Tree
 
@@ -862,8 +865,8 @@ Old staged content. Run `git add` again after fixing.
 ### Hooks Do Not Apply to Amended Commits by Default
 
 `git commit --amend` does trigger `pre-commit` and `commit-msg` hooks, but the `prepare-commit-msg`
-Hook receives `COMMIT_SOURCE=commit`Which is the same as a new commit. If your hook tries to
-Inject a ticket number based on the branch, it may double-inject on amend. Check for the amend case:
+Hook receives `COMMIT_SOURCE=commit`Which is the same as a new commit. If your hook tries to Inject
+a ticket number based on the branch, it may double-inject on amend. Check for the amend case:
 
 ```bash
 if [ "$COMMIT_SOURCE" = "commit" ]; then

@@ -1,6 +1,8 @@
 ---
-title: "Functions -- Diagnostic Tests"
-description: "Diagnostic tests for DSE Functions: domain restrictions, composite functions, inverse functions, and graph transformations with common misconceptions."
+title: 'Functions -- Diagnostic Tests'
+description:
+  'Diagnostic tests for DSE Functions: domain restrictions, composite functions, inverse functions,
+  and graph transformations with common misconceptions.'
 slug: diag-functions
 hide_table_of_contents: true
 ---
@@ -25,7 +27,8 @@ We need the range of $g$ to fall within the domain of $f$.
 
 $\mathrm{dom}(g) = \\{x \in \mathbb{'\{'}R{'\}'} : x \neq -2\\}$.
 
-$\mathrm{ran}(g) = \\{y \in \mathbb{'\{'}R{'\}'} : y \neq 0\\}$ since $g(x) = \dfrac{1}{x+2}$ can take any non-zero real value.
+$\mathrm{ran}(g) = \\{y \in \mathbb{'\{'}R{'\}'} : y \neq 0\\}$ since $g(x) = \dfrac{1}{x+2}$ can
+take any non-zero real value.
 
 $\mathrm{dom}(f) = \\{x \in \mathbb{'\{'}R{'\}'} : x \geq 1\\}$.
 
@@ -75,7 +78,8 @@ Check option (A): $\dfrac{1}{f(5)} = \dfrac{1}{\frac{13}{4}} = \dfrac{4}{13} \ne
 
 Check option (B): $f(5) = \dfrac{13}{4} \neq \dfrac{8}{3}$.
 
-The answer is **(C) Neither**. The inverse function evaluated at a point is NOT the reciprocal of the function at that point, nor is it the function itself. $f^{-1}(5) = \dfrac{8}{3}$.
+The answer is **(C) Neither**. The inverse function evaluated at a point is NOT the reciprocal of
+the function at that point, nor is it the function itself. $f^{-1}(5) = \dfrac{8}{3}$.
 
 ---
 
@@ -83,19 +87,23 @@ The answer is **(C) Neither**. The inverse function evaluated at a point is NOT 
 
 **Question:**
 
-The graph of $y = f(x)$ passes through the point $(2, 7)$. Which transformation maps this point to $(5, 7)$?
+The graph of $y = f(x)$ passes through the point $(2, 7)$. Which transformation maps this point to
+$(5, 7)$?
 
 $$\text{(A)}\; y = f(x + 3) \qquad \text{(B)}\; y = f(x - 3)$$
 
 **Solution:**
 
-For $y = f(x - 3)$The graph shifts **right** by 3 units. The point $(2, 7)$ on $y = f(x)$ moves to $(5, 7)$.
+For $y = f(x - 3)$The graph shifts **right** by 3 units. The point $(2, 7)$ on $y = f(x)$ moves to
+$(5, 7)$.
 
 For $y = f(x + 3)$The graph shifts **left** by 3 units. The point $(2, 7)$ moves to $(-1, 7)$.
 
 The answer is **(B)**.
 
-A common mistake is choosing (A) because "$+3$ looks like moving in the positive direction." In fact, replacing $x$ with $x - h$ shifts the graph right by $h$Which is the **opposite** direction to the sign.
+A common mistake is choosing (A) because "$+3$ looks like moving in the positive direction." In
+fact, replacing $x$ with $x - h$ shifts the graph right by $h$Which is the **opposite** direction to
+the sign.
 
 ---
 
@@ -105,8 +113,8 @@ A common mistake is choosing (A) because "$+3$ looks like moving in the positive
 
 Let $f(x) = x^2 - 4x + 3$$x \in \mathbb{'\{'}R{'\}'}$.
 
-(a) Show that $f$ is not injective.
-(b) Restrict the domain so that $f^{-1}$ exists and find $f^{-1}(x)$.
+(a) Show that $f$ is not injective. (b) Restrict the domain so that $f^{-1}$ exists and find
+$f^{-1}(x)$.
 
 **Solution:**
 
@@ -162,7 +170,8 @@ $$\mathrm{ran}(g \circ f) = [1,\; \infty)$$
 
 **Question:**
 
-Let $f(x) = ax^2 + bx + c$ where $a > 0$. The function $f$ has a minimum value of $-5$ at $x = 3$. Given that $f(1) = 3$Find $a$$b$And $c$And hence find the range of $f^{-1}$.
+Let $f(x) = ax^2 + bx + c$ where $a > 0$. The function $f$ has a minimum value of $-5$ at $x = 3$.
+Given that $f(1) = 3$Find $a$$b$And $c$And hence find the range of $f^{-1}$.
 
 **Solution:**
 
@@ -182,7 +191,8 @@ Therefore $a = 2$$b = -12$$c = 13$.
 
 Since $f$ has minimum value $-5$ and opens upward, $\mathrm{ran}(f) = [-5,\; \infty)$.
 
-Therefore $\mathrm{dom}(f^{-1}) = [-5,\; \infty)$And so $\mathrm{ran}(f^{-1}) = [3,\; \infty)$ (the restricted domain where $f$ is injective, to the right of the vertex).
+Therefore $\mathrm{dom}(f^{-1}) = [-5,\; \infty)$And so $\mathrm{ran}(f^{-1}) = [3,\; \infty)$ (the
+restricted domain where $f$ is injective, to the right of the vertex).
 
 ---
 
@@ -222,7 +232,8 @@ The solutions are $x = 0$ and $x = 1$.
 
 **Question:**
 
-The function $f(x) = \dfrac{k}{x}$$x > 0$Represents a rectangular hyperbola. The line $y = mx + c$ is tangent to the curve at the point $(2,\; 4)$. Find $k$$m$And $c$.
+The function $f(x) = \dfrac{k}{x}$$x > 0$Represents a rectangular hyperbola. The line $y = mx + c$
+is tangent to the curve at the point $(2,\; 4)$. Find $k$$m$And $c$.
 
 **Solution:**
 
@@ -276,9 +287,7 @@ $$\mathrm{ran}(f) = (0,\; 2]$$
 
 Let $f(x) = 2x + 1$ and $g(x) = x^2 - 3$. Find:
 
-(a) $f \circ g(2)$
-(b) $g \circ f(2)$
-(c) $f \circ f(x)$
+(a) $f \circ g(2)$ (b) $g \circ f(2)$ (c) $f \circ f(x)$
 
 **Solution:**
 
@@ -320,11 +329,10 @@ $\mathrm{ran}(f^{-1}) = \mathrm{dom}(f) = [-1,\; \infty)$.
 
 **Question:**
 
-The graph of $y = f(x)$ passes through $(2, 5)$ and has a minimum at $(3, 1)$. State the corresponding points on the graph of:
+The graph of $y = f(x)$ passes through $(2, 5)$ and has a minimum at $(3, 1)$. State the
+corresponding points on the graph of:
 
-(a) $y = f(2x)$
-(b) $y = -f(x) + 3$
-(c) $y = f(x - 1) + 2$
+(a) $y = f(2x)$ (b) $y = -f(x) + 3$ (c) $y = f(x - 1) + 2$
 
 **Solution:**
 
@@ -346,7 +354,8 @@ $(2, 5) \to (3, 7)$ and $(3, 1) \to (4, 3)$.
 
 **Question:**
 
-Define $f(x) = \begin{cases} x^2 & \text{if } x < 0 \\ 2x + 1 & \text{if } 0 \leq x \leq 3 \\ 7 & \text{if } x > 3 \end{cases}$.
+Define
+$f(x) = \begin{cases} x^2 & \text{if } x < 0 \\ 2x + 1 & \text{if } 0 \leq x \leq 3 \\ 7 & \text{if } x > 3 \end{cases}$.
 
 Find $f(-2)$$f(0)$$f(3)$And $f(5)$.
 
@@ -368,9 +377,7 @@ $f(5) = 7$.
 
 Determine whether each function is even, odd, or neither:
 
-(a) $f(x) = x^3 - x$
-(b) $g(x) = x^4 + 2x^2$
-(c) $h(x) = x^3 + 1$
+(a) $f(x) = x^3 - x$ (b) $g(x) = x^4 + 2x^2$ (c) $h(x) = x^3 + 1$
 
 **Solution:**
 
@@ -396,7 +403,8 @@ Domain of $f \circ g$: we need $x - 4 \geq 0$I.e. $x \geq 4$.
 
 $$\mathrm{dom}(f \circ g) = [4,\; \infty)$$
 
-Note: $g(x) = x - 4$ is defined for all $x \in \mathbb{'\{'}R{'\}'}$But the range of $g$ must fall within the domain of $f$ (which is $[0, \infty)$), so $g(x) \geq 0 \implies x \geq 4$.
+Note: $g(x) = x - 4$ is defined for all $x \in \mathbb{'\{'}R{'\}'}$But the range of $g$ must fall
+within the domain of $f$ (which is $[0, \infty)$), so $g(x) \geq 0 \implies x \geq 4$.
 
 ---
 
@@ -428,15 +436,24 @@ Since $f(a) = f(b) \implies a = b$The function is **injective**.
 
 ## Common Pitfalls
 
-1. **Confusing $f^{-1}$ with the reciprocal $\dfrac{1}{f}$.** The notation $f^{-1}$ denotes the inverse function, NOT the reciprocal. $f^{-1}(x)$ is the value of $y$ such that $f(y) = x$Which is completely different from $\dfrac{1}{f(x)}$.
+1. **Confusing $f^{-1}$ with the reciprocal $\dfrac{1}{f}$.** The notation $f^{-1}$ denotes the
+   inverse function, NOT the reciprocal. $f^{-1}(x)$ is the value of $y$ such that $f(y) = x$Which
+   is completely different from $\dfrac{1}{f(x)}$.
 
-2. **Incorrect domain of composite functions.** The domain of $f \circ g$ is NOT $\mathrm{dom}(g)$. It is the set of all $x$ in $\mathrm{dom}(g)$ such that $g(x) \in \mathrm{dom}(f)$. You must check both conditions.
+2. **Incorrect domain of composite functions.** The domain of $f \circ g$ is NOT $\mathrm{dom}(g)$.
+   It is the set of all $x$ in $\mathrm{dom}(g)$ such that $g(x) \in \mathrm{dom}(f)$. You must
+   check both conditions.
 
-3. **Wrong direction for horizontal shifts.** $f(x - h)$ shifts the graph RIGHT by $h$ units, not left. The transformation is counterintuitive: replacing $x$ with $x - h$ moves the graph in the positive $x$-direction.
+3. **Wrong direction for horizontal shifts.** $f(x - h)$ shifts the graph RIGHT by $h$ units, not
+   left. The transformation is counterintuitive: replacing $x$ with $x - h$ moves the graph in the
+   positive $x$-direction.
 
-4. **Forgetting to restrict the domain when finding the inverse of a non-injective function.** If $f$ is not one-to-one on its entire domain, you must restrict the domain before finding the inverse. Always state the restricted domain explicitly.
+4. **Forgetting to restrict the domain when finding the inverse of a non-injective function.** If
+   $f$ is not one-to-one on its entire domain, you must restrict the domain before finding the
+   inverse. Always state the restricted domain explicitly.
 
-5. **Assuming $f \circ g = g \circ f$.** Function composition is generally NOT commutative. Always compute $f \circ g$ and $g \circ f$ separately unless you have proven they are equal.
+5. **Assuming $f \circ g = g \circ f$.** Function composition is generally NOT commutative. Always
+   compute $f \circ g$ and $g \circ f$ separately unless you have proven they are equal.
 
 ---
 
@@ -446,9 +463,8 @@ Since $f(a) = f(b) \implies a = b$The function is **injective**.
 
 Let $f(x) = \dfrac{3x - 1}{x + 2}$$x \neq -2$.
 
-(a) Find $f^{-1}(x)$. (3 marks)
-(b) Find the domain and range of $f^{-1}$. (2 marks)
-(c) Solve $f(x) = x$. (3 marks)
+(a) Find $f^{-1}(x)$. (3 marks) (b) Find the domain and range of $f^{-1}$. (2 marks) (c) Solve
+$f(x) = x$. (3 marks)
 
 **Solution:**
 
@@ -462,7 +478,9 @@ $x = \dfrac{-1 - 2y}{y - 3} = \dfrac{2y + 1}{3 - y}$.
 
 $$f^{-1}(x) = \frac{2x + 1}{3 - x}$$
 
-(b) $\mathrm{dom}(f^{-1}) = \mathrm{ran}(f)$. Since $f(x) = \dfrac{3x - 1}{x + 2} = 3 - \dfrac{7}{x + 2}$ and $\dfrac{7}{x+2}$ takes all non-zero real values, $\mathrm{ran}(f) = \mathbb{'\{'}R{'\}'} \setminus \{3\}$.
+(b) $\mathrm{dom}(f^{-1}) = \mathrm{ran}(f)$. Since
+$f(x) = \dfrac{3x - 1}{x + 2} = 3 - \dfrac{7}{x + 2}$ and $\dfrac{7}{x+2}$ takes all non-zero real
+values, $\mathrm{ran}(f) = \mathbb{'\{'}R{'\}'} \setminus \{3\}$.
 
 $\mathrm{dom}(f^{-1}) = \{x \in \mathbb{'\{'}R{'\}'} : x \neq 3\}$.
 
@@ -478,10 +496,8 @@ $\Delta = 1 - 4 = -3 < 0$. No real solutions.
 
 Let $f(x) = x^2 - 6x + 5$ and $g(x) = 2x - 3$.
 
-(a) Express $f(x)$ in the form $(x - a)^2 + b$. (2 marks)
-(b) Find the range of $f$. (1 mark)
-(c) Find $f \circ g(x)$ and $g \circ f(x)$. (4 marks)
-(d) Solve $f \circ g(x) = 0$. (2 marks)
+(a) Express $f(x)$ in the form $(x - a)^2 + b$. (2 marks) (b) Find the range of $f$. (1 mark) (c)
+Find $f \circ g(x)$ and $g \circ f(x)$. (4 marks) (d) Solve $f \circ g(x) = 0$. (2 marks)
 
 **Solution:**
 
@@ -489,11 +505,13 @@ Let $f(x) = x^2 - 6x + 5$ and $g(x) = 2x - 3$.
 
 (b) Since $(x - 3)^2 \geq 0$: $\mathrm{ran}(f) = [-4,\; \infty)$.
 
-(c) $f \circ g(x) = f(2x - 3) = (2x - 3 - 3)^2 - 4 = (2x - 6)^2 - 4 = 4x^2 - 24x + 36 - 4 = 4x^2 - 24x + 32$.
+(c)
+$f \circ g(x) = f(2x - 3) = (2x - 3 - 3)^2 - 4 = (2x - 6)^2 - 4 = 4x^2 - 24x + 36 - 4 = 4x^2 - 24x + 32$.
 
 $g \circ f(x) = g(x^2 - 6x + 5) = 2(x^2 - 6x + 5) - 3 = 2x^2 - 12x + 7$.
 
-(d) $4x^2 - 24x + 32 = 0 \implies x^2 - 6x + 8 = 0 \implies (x-2)(x-4) = 0 \implies x = 2$ or $x = 4$.
+(d) $4x^2 - 24x + 32 = 0 \implies x^2 - 6x + 8 = 0 \implies (x-2)(x-4) = 0 \implies x = 2$ or
+$x = 4$.
 
 ---
 
@@ -501,9 +519,8 @@ $g \circ f(x) = g(x^2 - 6x + 5) = 2(x^2 - 6x + 5) - 3 = 2x^2 - 12x + 7$.
 
 The function $f$ is defined by $f(x) = \dfrac{1}{x^2 - 4}$.
 
-(a) Find the domain of $f$. (1 mark)
-(b) Find the range of $f$. (3 marks)
-(c) Solve $f(x) = \dfrac{1}{5}$. (2 marks)
+(a) Find the domain of $f$. (1 mark) (b) Find the range of $f$. (3 marks) (c) Solve
+$f(x) = \dfrac{1}{5}$. (2 marks)
 
 **Solution:**
 
@@ -511,7 +528,8 @@ The function $f$ is defined by $f(x) = \dfrac{1}{x^2 - 4}$.
 
 $$\mathrm{dom}(f) = \{x \in \mathbb{'\{'}R{'\}'} : x \neq -2 \text{ and } x \neq 2\}$$
 
-(b) Let $y = \dfrac{1}{x^2 - 4}$. Then $x^2 - 4 = \dfrac{1}{y}$So $x^2 = 4 + \dfrac{1}{y} = \dfrac{4y + 1}{y}$.
+(b) Let $y = \dfrac{1}{x^2 - 4}$. Then $x^2 - 4 = \dfrac{1}{y}$So
+$x^2 = 4 + \dfrac{1}{y} = \dfrac{4y + 1}{y}$.
 
 For $x^2 \geq 0$: $\dfrac{4y + 1}{y} \geq 0$.
 
@@ -529,9 +547,8 @@ $$\mathrm{ran}(f) = \left(-\infty,\; -\dfrac{1}{4}\right) \cup (0,\; \infty)$$
 
 Let $f(x) = 2^x$ and $g(x) = \log_2 x$.
 
-(a) Find $f \circ g(x)$ and simplify. (2 marks)
-(b) Find $g \circ f(x)$ and simplify. (2 marks)
-(c) Explain the relationship between $f$ and $g$. (1 mark)
+(a) Find $f \circ g(x)$ and simplify. (2 marks) (b) Find $g \circ f(x)$ and simplify. (2 marks) (c)
+Explain the relationship between $f$ and $g$. (1 mark)
 
 **Solution:**
 
@@ -539,22 +556,28 @@ Let $f(x) = 2^x$ and $g(x) = \log_2 x$.
 
 (b) $g \circ f(x) = g(2^x) = \log_2(2^x) = x$For all $x \in \mathbb{'\{'}R{'\}'}$.
 
-(c) $f$ and $g$ are inverse functions of each other. $f \circ g = \mathrm{id}$ on $(0, \infty)$ and $g \circ f = \mathrm{id}$ on $\mathbb{'\{'}R{'\}'}$.
+(c) $f$ and $g$ are inverse functions of each other. $f \circ g = \mathrm{id}$ on $(0, \infty)$ and
+$g \circ f = \mathrm{id}$ on $\mathbb{'\{'}R{'\}'}$.
 
 ---
 
 ### DSE-5
 
-The graph of $y = f(x)$ is shown. It passes through $(-2, 0)$$(0, 4)$$(2, 0)$And has a maximum at $(0, 4)$.
+The graph of $y = f(x)$ is shown. It passes through $(-2, 0)$$(0, 4)$$(2, 0)$And has a maximum at
+$(0, 4)$.
 
-(a) Sketch the graph of $y = f(x + 1)$. (2 marks)
-(b) Sketch the graph of $y = f(-x)$. (2 marks)
-(c) The graph of $y = f(x)$ is transformed to the graph of $y = -f(x) + 2$. Describe this transformation in words. (2 marks)
+(a) Sketch the graph of $y = f(x + 1)$. (2 marks) (b) Sketch the graph of $y = f(-x)$. (2 marks) (c)
+The graph of $y = f(x)$ is transformed to the graph of $y = -f(x) + 2$. Describe this transformation
+in words. (2 marks)
 
 **Solution:**
 
-(a) $y = f(x + 1)$ shifts the graph left by 1 unit. New key points: $(-3, 0)$$(-1, 4)$$(1, 0)$. Maximum at $(-1, 4)$.
+(a) $y = f(x + 1)$ shifts the graph left by 1 unit. New key points: $(-3, 0)$$(-1, 4)$$(1, 0)$.
+Maximum at $(-1, 4)$.
 
-(b) $y = f(-x)$ reflects the graph in the $y$-axis. New key points: $(2, 0)$$(0, 4)$$(-2, 0)$. Maximum at $(0, 4)$.
+(b) $y = f(-x)$ reflects the graph in the $y$-axis. New key points: $(2, 0)$$(0, 4)$$(-2, 0)$.
+Maximum at $(0, 4)$.
 
-(c) $y = -f(x) + 2$: reflect in the $x$-axis (all $y$-values change sign), then translate up by 2 units. New maximum at $(0, -4 + 2) = (0, -2)$. New $x$-intercepts at $(-2, 2)$ and $(2, 2)$ (which are not on the $x$-axis anymore).
+(c) $y = -f(x) + 2$: reflect in the $x$-axis (all $y$-values change sign), then translate up by 2
+units. New maximum at $(0, -4 + 2) = (0, -2)$. New $x$-intercepts at $(-2, 2)$ and $(2, 2)$ (which
+are not on the $x$-axis anymore).

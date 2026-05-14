@@ -1,6 +1,8 @@
 ---
 title: Floating Point Representation
-description: "A-Level Computer Science notes on Floating Point Representation: 1. Motivation; 2. IEEE 754 Single Precision (32-bit); Format; Decoding the Value."
+description:
+  'A-Level Computer Science notes on Floating Point Representation: 1. Motivation; 2. IEEE 754
+  Single Precision (32-bit); Format; Decoding the Value.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - ComputerScience
@@ -9,6 +11,7 @@ categories:
   - ComputerScience
 slug: floating-point
 ---
+
 ## 1. Motivation
 
 Fixed-point representation allocates a fixed number of bits to the integer and fractional parts,
@@ -26,11 +29,11 @@ An IEEE 754 single-precision number uses 32 bits partitioned as follows:
 | Sign S | Exponent E |    Mantissa/Fraction M |
 ```
 
-| Field | Bits | Purpose |
+| Field          | Bits | Purpose                                                |
 | -------------- | ---- | ------------------------------------------------------ |
-| Sign ($S$) | 1 | 0 = positive, 1 = negative |
-| Exponent ($E$) | 8 | Biased exponent: stored as $E = e + 127$ |
-| Mantissa ($M$) | 23 | Fractional part of the significand; implicit leading 1 |
+| Sign ($S$)     | 1    | 0 = positive, 1 = negative                             |
+| Exponent ($E$) | 8    | Biased exponent: stored as $E = e + 127$               |
+| Mantissa ($M$) | 23   | Fractional part of the significand; implicit leading 1 |
 
 ### Decoding the Value
 
@@ -67,12 +70,12 @@ Gives approximately $24 \times \log_{10}(2) \approx 7.22$ decimal digits of prec
 
 ### Special Values
 
-| Exponent $E$ | Mantissa $M$ | Meaning |
+| Exponent $E$ | Mantissa $M$ | Meaning               |
 | ------------ | ------------ | --------------------- |
-| 0 | 0 | $\pm 0$ (signed zero) |
-| 0 | $\neq 0$ | Denormalised number |
-| 255 | 0 | $\pm \infty$ |
-| 255 | $\neq 0$ | NaN (Not a Number) |
+| 0            | 0            | $\pm 0$ (signed zero) |
+| 0            | $\neq 0$     | Denormalised number   |
+| 255          | 0            | $\pm \infty$          |
+| 255          | $\neq 0$     | NaN (Not a Number)    |
 
 ### Denormalised Numbers
 
@@ -162,8 +165,8 @@ In IEEE 754: $e = -3$$E = -3 + 127 = 124 = 01111100_2$.
 $0.1_{10} = \frac{1}{10} = \frac◆LB◆1◆RB◆◆LB◆2 \times 5◆RB◆$
 
 For a number to have a finite representation in base $b$When reduced to lowest terms
-$\frac{p}{q}$The denominator $q$ must divide some power of $b$. Here $q = 10 = 2 \times 5$And
-$5$ does not divide any power of $2$. Therefore $0.1_{10}$ has no finite binary expansion. $\square$
+$\frac{p}{q}$The denominator $q$ must divide some power of $b$. Here $q = 10 = 2 \times 5$And $5$
+does not divide any power of $2$. Therefore $0.1_{10}$ has no finite binary expansion. $\square$
 
 When stored in IEEE 754, $0.1_{10}$ is approximated by the nearest representable binary value.
 Similarly for $0.2_{10}$ and $0.3_{10}$. Since the approximations introduce rounding errors, the sum
@@ -195,22 +198,18 @@ $\epsilon = 2^{-23} \approx 1.19 \times 10^{-7}$.
 3. **Cancellation error:** Subtracting nearly equal numbers loses significant digits
 4. **Accumulation error:** Errors compound over many operations
 
-:::warning
-Pitfall Never use `==` to compare floating-point numbers. Instead, check if
-$|a - b| \lt{} \epsilon$ for some tolerance.
-:::
+:::warning Pitfall Never use `==` to compare floating-point numbers. Instead, check if
+$|a - b| \lt{} \epsilon$ for some tolerance. :::
 
 <hr />
 
 ## 5. CIE Simplified 8-Bit Floating Point
 
-:::info
-Board-specific: CIE (9618) CIE uses a simplified floating-point format:
+:::info Board-specific: CIE (9618) CIE uses a simplified floating-point format:
 
 - 1 sign bit
 - 4 exponent bits (excess-8, i.e., bias = 8)
-- 3 mantissa bits
-:::
+- 3 mantissa bits :::
 
 **Format:** `S EEEE MMM`
 
@@ -247,15 +246,15 @@ Result: `1 1011 101`
 
 ## 6. Fixed-Point vs Floating-Point Comparison
 
-| Property | Fixed-Point | Floating-Point |
+| Property        | Fixed-Point                 | Floating-Point                          |
 | --------------- | --------------------------- | --------------------------------------- |
-| Range | Limited by bit allocation | Very large ($\sim 10^{\pm38}$) |
-| Precision | Uniform (constant) | Variable (depends on magnitude) |
-| Speed | Faster (integer arithmetic) | Slower (requires FPU) |
-| Hardware | Simple | Complex (FPU required) |
-| Representation | Simple to understand | Complex (normalisation, special values) |
-| Rounding errors | Predictable | Less predictable near boundaries |
-| Use case | Financial, embedded systems | Scientific computing, graphics |
+| Range           | Limited by bit allocation   | Very large ($\sim 10^{\pm38}$)          |
+| Precision       | Uniform (constant)          | Variable (depends on magnitude)         |
+| Speed           | Faster (integer arithmetic) | Slower (requires FPU)                   |
+| Hardware        | Simple                      | Complex (FPU required)                  |
+| Representation  | Simple to understand        | Complex (normalisation, special values) |
+| Rounding errors | Predictable                 | Less predictable near boundaries        |
+| Use case        | Financial, embedded systems | Scientific computing, graphics          |
 
 <hr />
 
@@ -484,11 +483,11 @@ $\frac◆LB◆3.33 \times 10^{-7}◆RB◆◆LB◆1/3◆RB◆ = 3.33 \times 10^{-
 | Sign S | Exponent E |    Mantissa M        |
 ```
 
-| Field | Bits | Purpose |
+| Field          | Bits | Purpose                             |
 | -------------- | ---- | ----------------------------------- |
-| Sign ($S$) | 1 | 0 = positive, 1 = negative |
-| Exponent ($E$) | 11 | Biased exponent: $E = e + 1023$ |
-| Mantissa ($M$) | 52 | Fractional part; implicit leading 1 |
+| Sign ($S$)     | 1    | 0 = positive, 1 = negative          |
+| Exponent ($E$) | 11   | Biased exponent: $E = e + 1023$     |
+| Mantissa ($M$) | 52   | Fractional part; implicit leading 1 |
 
 ### Decoding
 
@@ -502,14 +501,14 @@ $$(-1)^S \times 1.M \times 2^{E - 1023}$$
 
 ### Comparison: Single vs Double
 
-| Property | Single (32-bit) | Double (64-bit) |
+| Property        | Single (32-bit)                       | Double (64-bit)                        |
 | --------------- | ------------------------------------- | -------------------------------------- |
-| Sign | 1 bit | 1 bit |
-| Exponent | 8 bits (bias 127) | 11 bits (bias 1023) |
-| Mantissa | 23 bits | 52 bits |
-| Precision | ~7 decimal digits | ~16 decimal digits |
-| Max value | ~$3.4 \times 10^{38}$ | ~$1.8 \times 10^{308}$ |
-| Min normal | ~$1.2 \times 10^{-38}$ | ~$2.2 \times 10^{-308}$ |
+| Sign            | 1 bit                                 | 1 bit                                  |
+| Exponent        | 8 bits (bias 127)                     | 11 bits (bias 1023)                    |
+| Mantissa        | 23 bits                               | 52 bits                                |
+| Precision       | ~7 decimal digits                     | ~16 decimal digits                     |
+| Max value       | ~$3.4 \times 10^{38}$                 | ~$1.8 \times 10^{308}$                 |
+| Min normal      | ~$1.2 \times 10^{-38}$                | ~$2.2 \times 10^{-308}$                |
 | Machine epsilon | $2^{-23} \approx 1.19 \times 10^{-7}$ | $2^{-52} \approx 2.22 \times 10^{-16}$ |
 
 <hr />
@@ -538,15 +537,15 @@ Represents overflow or division by zero:
 
 Arithmetic rules:
 
-| Operation | Result |
+| Operation                 | Result    |
 | ------------------------- | --------- |
 | $x / 0$ (for $x \gt{} 0$) | $+\infty$ |
 | $x / 0$ (for $x \lt{} 0$) | $-\infty$ |
-| $\infty + \infty$ | $+\infty$ |
-| $\infty - \infty$ | NaN |
-| $\infty \times \infty$ | $+\infty$ |
-| $0 \times \infty$ | NaN |
-| $\infty / \infty$ | NaN |
+| $\infty + \infty$         | $+\infty$ |
+| $\infty - \infty$         | NaN       |
+| $\infty \times \infty$    | $+\infty$ |
+| $0 \times \infty$         | NaN       |
+| $\infty / \infty$         | NaN       |
 
 ### NaN (Not a Number)
 
@@ -558,12 +557,12 @@ Represents undefined or indeterminate results:
 
 NaN is produced by:
 
-| Operation | Result |
+| Operation         | Result |
 | ----------------- | ------ |
-| $0 / 0$ | NaN |
-| $\infty - \infty$ | NaN |
-| $\sqrt{-1}$ | NaN |
-| $\infty \times 0$ | NaN |
+| $0 / 0$           | NaN    |
+| $\infty - \infty$ | NaN    |
+| $\sqrt{-1}$       | NaN    |
+| $\infty \times 0$ | NaN    |
 
 Key property: **NaN is not equal to anything, including itself.**
 
@@ -624,15 +623,15 @@ print(abs(x - y) < epsilon)  # True
 
 ## 10. Common Pitfalls
 
-| Pitfall | Explanation | Solution |
+| Pitfall                            | Explanation                                            | Solution                                                       |
 | ---------------------------------- | ------------------------------------------------------ | -------------------------------------------------------------- |
-| Using `==` for float comparison | Rounding errors mean exact equality rarely holds | Compare with tolerance: `abs(a - b) &lt; epsilon` |
-| Assuming floats are exact | Most decimal fractions have infinite binary expansions | Use `decimal.Decimal` for financial calculations |
-| Subtracting nearly equal numbers | Catastrophic cancellation destroys precision | Rearrange the formula algebraically to avoid subtraction |
-| Adding small to large numbers | The small number may be lost due to limited precision | Add small numbers together first, then add to the large number |
-| Checking `x == float('nan')` | NaN is not equal to itself by definition | Use `math.isnan(x)` |
-| Ignoring denormalised numbers | Assuming all numbers have 24-bit precision | Denormalised numbers near zero have fewer significant bits |
-| Mixing single and double precision | Implicit conversions can lose precision | Be consistent with precision throughout the calculation |
+| Using `==` for float comparison    | Rounding errors mean exact equality rarely holds       | Compare with tolerance: `abs(a - b) &lt; epsilon`              |
+| Assuming floats are exact          | Most decimal fractions have infinite binary expansions | Use `decimal.Decimal` for financial calculations               |
+| Subtracting nearly equal numbers   | Catastrophic cancellation destroys precision           | Rearrange the formula algebraically to avoid subtraction       |
+| Adding small to large numbers      | The small number may be lost due to limited precision  | Add small numbers together first, then add to the large number |
+| Checking `x == float('nan')`       | NaN is not equal to itself by definition               | Use `math.isnan(x)`                                            |
+| Ignoring denormalised numbers      | Assuming all numbers have 24-bit precision             | Denormalised numbers near zero have fewer significant bits     |
+| Mixing single and double precision | Implicit conversions can lose precision                | Be consistent with precision throughout the calculation        |
 
 <hr />
 
@@ -749,8 +748,8 @@ This is the definition of **machine epsilon**: the smallest $\epsilon$ such that
 $1 + \epsilon \gt{} 1$.
 
 In single precision, the mantissa has 23 bits. The value $1.0$ is represented as
-$1.000\ldots0 \times 2^0$. The next representable number is $1.000\ldots01 \times 2^0$Where the
-Last bit of the mantissa is 1.
+$1.000\ldots0 \times 2^0$. The next representable number is $1.000\ldots01 \times 2^0$Where the Last
+bit of the mantissa is 1.
 
 This value is $1 + 2^{-23} \approx 1.0000001192092896$.
 

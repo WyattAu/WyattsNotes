@@ -1,6 +1,8 @@
 ---
 title: Projectile Motion
-description: "A-Level Further Maths notes on Projectile Motion: Board Coverage; 1. Equations of Motion; 1.1 Setting up the problem; 1.2 Horizontal motion (constant velocity)."
+description:
+  'A-Level Further Maths notes on Projectile Motion: Board Coverage; 1. Equations of Motion; 1.1
+  Setting up the problem; 1.2 Horizontal motion (constant velocity).'
 date: 2026-04-02T00:00:00.000Z
 tags:
   - FurtherMaths
@@ -10,6 +12,7 @@ categories:
 slug: projectile-motion
 sidebar_position: 1
 ---
+
 ## Projectile Motion
 
 Projectile motion is the motion of a body launched into the air and subject only to the acceleration
@@ -19,12 +22,12 @@ Determined.
 
 ### Board Coverage
 
-| Board | Paper | Notes |
+| Board      | Paper   | Notes                                          |
 | ---------- | ------- | ---------------------------------------------- |
-| AQA | Paper 2 | Basic projectiles; limited inclined plane work |
-| Edexcel | M2 | Full coverage including inclined planes |
-| OCR (A) | Paper 2 | Projectiles on inclined planes |
-| CIE (9231) | M2 | Full coverage including inclined planes |
+| AQA        | Paper 2 | Basic projectiles; limited inclined plane work |
+| Edexcel    | M2      | Full coverage including inclined planes        |
+| OCR (A)    | Paper 2 | Projectiles on inclined planes                 |
+| CIE (9231) | M2      | Full coverage including inclined planes        |
 
 :::info In projectile motion, air resistance is always neglected unless stated otherwise. The only
 Acceleration is $g = 9.8\,\mathrm{m s}^{-2}$ acting vertically downward. Take care with sign
@@ -494,8 +497,7 @@ $\cos\theta = \dfrac◆LB◆V◆RB◆◆LB◆\sqrt{V^2 + 2gh}◆RB◆$I.e.:
 
 $$\tan\theta = \frac◆LB◆V\sin\theta◆RB◆◆LB◆V\cos\theta◆RB◆ = \frac◆LB◆V\sqrt{1 - \frac{V^2}{V^2 + 2gh}}◆RB◆◆LB◆\frac{V^2}{\sqrt{V^2 + 2gh}}◆RB◆ = \frac◆LB◆V◆RB◆◆LB◆\sqrt{V^2 + 2gh}◆RB◆$$
 
-When $h = 0$This reduces to $\tan\theta = 1$I.e., $\theta = 45^\circ$ as expected.
-$\blacksquare$
+When $h = 0$This reduces to $\tan\theta = 1$I.e., $\theta = 45^\circ$ as expected. $\blacksquare$
 
 ### 7.5 Worked example: projectile from a cliff
 
@@ -591,7 +593,7 @@ Horizontal, not the angle of projection. Common mistakes:
 - Confusing $\theta$ (projection angle) with $\alpha$ (plane angle)
 - Using $\theta - \alpha$ for the down-the-plane case (should be $\theta + \alpha$)
 - Forgetting that the range formula $r = x/\cos\alpha$ converts horizontal distance to distance
- along the plane
+  along the plane
 
 ### Complementary angles trap
 
@@ -613,7 +615,7 @@ Always check that your answer makes physical sense:
 - Time of flight should be positive
 - The speed at impact from a height must exceed the launch speed (energy gained from gravity)
 - The angle of impact should be steeper than the angle of projection (for horizontal ground
- launches)
+  launches)
 
 <hr />
 
@@ -844,12 +846,12 @@ $\blacksquare$
 
 ## 9. Common Pitfalls
 
-| Pitfall | Correct Approach |
-| -------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
-| Using $45°$ for maximum range without checking if the target is above or below launch height | Maximum range at $45°$ only applies when launch and landing are at the same height |
-| Forgetting that $g$ acts downward in all projectile problems | Decompose $g$ into components along your chosen axes |
-| Assuming air resistance is negligible when the question does not specify | In A-Level Further Maths, always state "assuming no air resistance" unless told otherwise |
-| Confusing the angle to the horizontal with the angle to the inclined plane | On a plane inclined at $\alpha$: angle to the plane $= \theta - \alpha$Angle to horizontal $= \theta$ |
+| Pitfall                                                                                      | Correct Approach                                                                                      |
+| -------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| Using $45°$ for maximum range without checking if the target is above or below launch height | Maximum range at $45°$ only applies when launch and landing are at the same height                    |
+| Forgetting that $g$ acts downward in all projectile problems                                 | Decompose $g$ into components along your chosen axes                                                  |
+| Assuming air resistance is negligible when the question does not specify                     | In A-Level Further Maths, always state "assuming no air resistance" unless told otherwise             |
+| Confusing the angle to the horizontal with the angle to the inclined plane                   | On a plane inclined at $\alpha$: angle to the plane $= \theta - \alpha$Angle to horizontal $= \theta$ |
 
 ---
 
@@ -952,15 +954,15 @@ Work-energy principle.
 
 ## 12. Key Results Summary
 
-| Quantity | Formula |
+| Quantity                                 | Formula                                                                    |
 | ---------------------------------------- | -------------------------------------------------------------------------- |
-| Horizontal range (same height) | $R = \dfrac◆LB◆u^2\sin 2\theta◆RB◆◆LB◆g◆RB◆$ |
-| Maximum height | $H = \dfrac◆LB◆u^2\sin^2\theta◆RB◆◆LB◆2g◆RB◆$ |
-| Time of flight (same height) | $T = \dfrac◆LB◆2u\sin\theta◆RB◆◆LB◆g◆RB◆$ |
-| Trajectory equation | $y = x\tan\theta - \dfrac◆LB◆gx^2◆RB◆◆LB◆2u^2\cos^2\theta◆RB◆$ |
-| Maximum range angle | $\theta = 45°$ (same height) |
+| Horizontal range (same height)           | $R = \dfrac◆LB◆u^2\sin 2\theta◆RB◆◆LB◆g◆RB◆$                               |
+| Maximum height                           | $H = \dfrac◆LB◆u^2\sin^2\theta◆RB◆◆LB◆2g◆RB◆$                              |
+| Time of flight (same height)             | $T = \dfrac◆LB◆2u\sin\theta◆RB◆◆LB◆g◆RB◆$                                  |
+| Trajectory equation                      | $y = x\tan\theta - \dfrac◆LB◆gx^2◆RB◆◆LB◆2u^2\cos^2\theta◆RB◆$             |
+| Maximum range angle                      | $\theta = 45°$ (same height)                                               |
 | Range on inclined plane (angle $\alpha$) | $R = \dfrac◆LB◆2u^2\cos\theta\sin(\theta-\alpha)◆RB◆◆LB◆g\cos^2\alpha◆RB◆$ |
-| Speed at any point | $v = \sqrt{u^2 - 2gy}$ (energy conservation) |
+| Speed at any point                       | $v = \sqrt{u^2 - 2gy}$ (energy conservation)                               |
 
 ---
 
@@ -1106,8 +1108,8 @@ $y_v = \dfrac{u^2}{4g}(1-\cos 2\theta)$.
 
 $x_v^2 + (y_v - \dfrac{u^2}{4g})^2 = \dfrac{u^4}{4g^2}\sin^2 2\theta + \dfrac{u^4}{16g^2}\cos^2 2\theta = \dfrac{u^4}{16g^2}(4\sin^2 2\theta + \cos^2 2\theta)$.
 
-This is not a simple circle . However, the directrix envelope of all trajectories (with
-Varying $\theta$ but fixed $u$) is a parabola $y = \dfrac{u^2}{2g}$.
+This is not a simple circle . However, the directrix envelope of all trajectories (with Varying
+$\theta$ but fixed $u$) is a parabola $y = \dfrac{u^2}{2g}$.
 
 The **envelope of safety** (the parabolic boundary) is $y = \dfrac{u^2}{2g} - \dfrac{gx^2}{2u^2}$ as
 Derived in Example 8.6.

@@ -1,6 +1,8 @@
 ---
 title: Maclaurin and Taylor Series
-description: "A-Level Further Maths notes on Maclaurin and Taylor Series: Board Coverage; 1. Maclaurin Series; 1.1 Definition; 1.2 Derivation from the Taylor series."
+description:
+  'A-Level Further Maths notes on Maclaurin and Taylor Series: Board Coverage; 1. Maclaurin Series;
+  1.1 Definition; 1.2 Derivation from the Taylor series.'
 date: 2026-04-02T00:00:00.000Z
 tags:
   - FurtherMaths
@@ -10,6 +12,7 @@ categories:
 slug: maclaurin-taylor-series
 sidebar_position: 8
 ---
+
 ## Maclaurin and Taylor Series
 
 Power series provide a way to represent functions as infinite sums, enabling computation,
@@ -17,18 +20,19 @@ Approximation, and analysis that would otherwise be impossible. The Maclaurin se
 Function about $x = 0$; the Taylor series generalises this to expansion about any point. Together
 They are among the most powerful tools in analysis and applied mathematics.
 
-<DesmosGraph title="Taylor Series Approximation of e^x" expressions={["e^x", "sum_{n=0}^{N} x^n/n!"]} width={800} height={500} />
+<DesmosGraph title="Taylor Series Approximation of e^x" expressions={["e^x", "sum_{n=0}^{N}
+x^n/n!"]} width={800} height={500} />
 
 Adjust the parameters in the graph above to explore the relationships between variables.
 
 ### Board Coverage
 
-| Board | Paper | Notes |
-| ------- | ------- | -------------------------------------------------------------------------------------- |
-| AQA | Paper 1 | Maclaurin series; standard series for $e^x$$\sin x$$\cos x$$\ln(1+x)$$(1+x)^n$ |
-| Edexcel | FP2 | Maclaurin + Taylor series about general $x = a$; convergence |
-| OCR (A) | Paper 1 | Maclaurin series; standard series; applications |
-| CIE | P2 | Maclaurin series; expansion of compound functions; range of validity |
+| Board   | Paper   | Notes                                                                          |
+| ------- | ------- | ------------------------------------------------------------------------------ |
+| AQA     | Paper 1 | Maclaurin series; standard series for $e^x$$\sin x$$\cos x$$\ln(1+x)$$(1+x)^n$ |
+| Edexcel | FP2     | Maclaurin + Taylor series about general $x = a$; convergence                   |
+| OCR (A) | Paper 1 | Maclaurin series; standard series; applications                                |
+| CIE     | P2      | Maclaurin series; expansion of compound functions; range of validity           |
 
 :::info All boards require the standard Maclaurin series. Edexcel and CIE additionally require
 Taylor series about $x = a$. The formula booklet lists the standard Maclaurin series — you must be
@@ -137,14 +141,14 @@ $|x| < 1$Integrate term by term.
 
 ### 2.7 Summary table
 
-| Function | Maclaurin Series | Valid for |
+| Function    | Maclaurin Series                                                  | Valid for       |
 | ----------- | ----------------------------------------------------------------- | --------------- | --- | ------- |
-| $e^x$ | $\displaystyle\sum_{n=0}^{\infty}\frac{x^n}{n!}$ | all $x$ |
-| $\sin x$ | $\displaystyle\sum_{n=0}^{\infty}\frac{(-1)^n x^{2n+1}}{(2n+1)!}$ | all $x$ |
-| $\cos x$ | $\displaystyle\sum_{n=0}^{\infty}\frac{(-1)^n x^{2n}}{(2n)!}$ | all $x$ |
-| $\ln(1+x)$ | $\displaystyle\sum_{n=1}^{\infty}\frac{(-1)^{n-1}x^n}{n}$ | $-1 < x \leq 1$ |
-| $(1+x)^n$ | $\displaystyle\sum_{k=0}^{\infty}\binom{n}{k}x^k$ | $               | x   | < 1$ |
-| $\arctan x$ | $\displaystyle\sum_{n=0}^{\infty}\frac{(-1)^n x^{2n+1}}{2n+1}$ | $               | x   | \leq 1$ |
+| $e^x$       | $\displaystyle\sum_{n=0}^{\infty}\frac{x^n}{n!}$                  | all $x$         |
+| $\sin x$    | $\displaystyle\sum_{n=0}^{\infty}\frac{(-1)^n x^{2n+1}}{(2n+1)!}$ | all $x$         |
+| $\cos x$    | $\displaystyle\sum_{n=0}^{\infty}\frac{(-1)^n x^{2n}}{(2n)!}$     | all $x$         |
+| $\ln(1+x)$  | $\displaystyle\sum_{n=1}^{\infty}\frac{(-1)^{n-1}x^n}{n}$         | $-1 < x \leq 1$ |
+| $(1+x)^n$   | $\displaystyle\sum_{k=0}^{\infty}\binom{n}{k}x^k$                 | $               | x   | < 1$    |
+| $\arctan x$ | $\displaystyle\sum_{n=0}^{\infty}\frac{(-1)^n x^{2n+1}}{2n+1}$    | $               | x   | \leq 1$ |
 
 <hr />
 
@@ -316,8 +320,8 @@ $= 1 + 2x + \dfrac{5}{2}x^2 + \dfrac{8}{3}x^3 + \cdots$
 
 ### 5.4 L'Hôpital's rule and series
 
-**Intuition.** L'Hôpital's rule is a consequence of Taylor's theorem. If $f(a) = g(a) = 0$Then
-Near $a$:
+**Intuition.** L'Hôpital's rule is a consequence of Taylor's theorem. If $f(a) = g(a) = 0$Then Near
+$a$:
 
 $$\frac{f(x)}{g(x)} \approx \frac◆LB◆f'(a)(x-a) + \frac{f''(a)}{2}(x-a)^2◆RB◆◆LB◆g'(a)(x-a) + \frac{g''(a)}{2}(x-a)^2◆RB◆ = \frac◆LB◆f'(a) + \frac{f''(a)}{2}(x-a)◆RB◆◆LB◆g'(a) + \frac{g''(a)}{2}(x-a)◆RB◆$$
 
@@ -331,17 +335,17 @@ Gives more information (higher-order terms) than applying L'Hôpital's rule repe
 :::warning **Common errors:**
 
 1. **Wrong coefficients.** The Maclaurin coefficient of $x^n$ is $\dfrac{f^{(n)}(0)}{n!}$Not
- $f^{(n)}(0)$. Always divide by the factorial.
+   $f^{(n)}(0)$. Always divide by the factorial.
 
 2. **Forgetting the range of validity.** $\ln(1+x)$ is valid for $-1 < x \leq 1$Not all $x$. Using
- it outside this range gives a wrong answer.
+   it outside this range gives a wrong answer.
 
 3. **Incorrect substitution.** When expanding $e^{2x}$Substitute $2x$ into every term:
- $e^{2x} = 1 + 2x + \dfrac{4x^2}{2} + \dfrac{8x^3}{6} + \cdots$Not
- $e^{2x} = 1 + 2x + \dfrac{x^2}{2} + \cdots$.
+   $e^{2x} = 1 + 2x + \dfrac{4x^2}{2} + \dfrac{8x^3}{6} + \cdots$Not
+   $e^{2x} = 1 + 2x + \dfrac{x^2}{2} + \cdots$.
 
 4. **Sign errors in alternating series.** $\sin x$ and $\cos x$ have alternating signs:
- $\sin x = x - \dfrac{x^3}{6} + \cdots$ (not $x + \dfrac{x^3}{6} + \cdots$). :::
+   $\sin x = x - \dfrac{x^3}{6} + \cdots$ (not $x + \dfrac{x^3}{6} + \cdots$). :::
 
 :::tip **Exam strategy:**
 
@@ -349,7 +353,7 @@ Gives more information (higher-order terms) than applying L'Hôpital's rule repe
 - For compound functions ($e^{x^2}\sin x$), multiply series term by term and collect like powers.
 - Always state the range of validity when asked.
 - To find a Maclaurin series efficiently, compute successive derivatives at $x = 0$ and look for the
- pattern. :::
+  pattern. :::
 
 <hr />
 
@@ -942,12 +946,12 @@ $$\boxed{\cos x \cdot e^{-x} = 1 - x - \frac{x^3}{3} - \frac{x^4}{6} + O(x^5)}$$
 
 ## 11. Common Pitfalls
 
-| Pitfall | Correct Approach |
-| ------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
-| Confusing the Maclaurin series (about $x=0$) with a general Taylor series | Maclaurin: $a=0$; Taylor: $f(x) = \sum \dfrac{f^{(n)}(a)}{n!}(x-a)^n$ |
-| Forgetting the factorial in the denominator | Each term has $\dfrac{f^{(n)}(0)}{n!}x^n$Not $\dfrac{f^{(n)}(0)}{n}x^n$ |
-| Using a series outside its radius of convergence | Always check: e.g., $\ln(1+x)$ converges only for $-1 < x \leq 1$ |
-| Incorrectly multiplying series | Collect like powers carefully; use a table if needed |
+| Pitfall                                                                   | Correct Approach                                                        |
+| ------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| Confusing the Maclaurin series (about $x=0$) with a general Taylor series | Maclaurin: $a=0$; Taylor: $f(x) = \sum \dfrac{f^{(n)}(a)}{n!}(x-a)^n$   |
+| Forgetting the factorial in the denominator                               | Each term has $\dfrac{f^{(n)}(0)}{n!}x^n$Not $\dfrac{f^{(n)}(0)}{n}x^n$ |
+| Using a series outside its radius of convergence                          | Always check: e.g., $\ln(1+x)$ converges only for $-1 < x \leq 1$       |
+| Incorrectly multiplying series                                            | Collect like powers carefully; use a table if needed                    |
 
 ---
 
@@ -1020,15 +1024,15 @@ $y = \sum a_n x^n$ into the ODE and equate coefficients.
 
 ### 13.3 Standard Maclaurin series (reference)
 
-| Function | Series | Radius |
+| Function         | Series                                                              | Radius   |
 | ---------------- | ------------------------------------------------------------------- | -------- |
-| $e^x$ | $\displaystyle\sum_{n=0}^{\infty} \frac{x^n}{n!}$ | $\infty$ |
-| $\sin x$ | $\displaystyle\sum_{n=0}^{\infty} \frac{(-1)^n x^{2n+1}}{(2n+1)!}$ | $\infty$ |
-| $\cos x$ | $\displaystyle\sum_{n=0}^{\infty} \frac{(-1)^n x^{2n}}{(2n)!}$ | $\infty$ |
-| $\ln(1+x)$ | $\displaystyle\sum_{n=1}^{\infty} \frac{(-1)^{n+1}x^n}{n}$ | $1$ |
-| $(1+x)^\alpha$ | $\displaystyle\sum_{n=0}^{\infty} \binom◆LB◆\alpha◆RB◆◆LB◆n◆RB◆x^n$ | $1$ |
-| $\arctan x$ | $\displaystyle\sum_{n=0}^{\infty} \frac{(-1)^n x^{2n+1}}{2n+1}$ | $1$ |
-| $\dfrac{1}{1-x}$ | $\displaystyle\sum_{n=0}^{\infty} x^n$ | $1$ |
+| $e^x$            | $\displaystyle\sum_{n=0}^{\infty} \frac{x^n}{n!}$                   | $\infty$ |
+| $\sin x$         | $\displaystyle\sum_{n=0}^{\infty} \frac{(-1)^n x^{2n+1}}{(2n+1)!}$  | $\infty$ |
+| $\cos x$         | $\displaystyle\sum_{n=0}^{\infty} \frac{(-1)^n x^{2n}}{(2n)!}$      | $\infty$ |
+| $\ln(1+x)$       | $\displaystyle\sum_{n=1}^{\infty} \frac{(-1)^{n+1}x^n}{n}$          | $1$      |
+| $(1+x)^\alpha$   | $\displaystyle\sum_{n=0}^{\infty} \binom◆LB◆\alpha◆RB◆◆LB◆n◆RB◆x^n$ | $1$      |
+| $\arctan x$      | $\displaystyle\sum_{n=0}^{\infty} \frac{(-1)^n x^{2n+1}}{2n+1}$     | $1$      |
+| $\dfrac{1}{1-x}$ | $\displaystyle\sum_{n=0}^{\infty} x^n$                              | $1$      |
 
 ### 13.4 Using series to prove identities
 

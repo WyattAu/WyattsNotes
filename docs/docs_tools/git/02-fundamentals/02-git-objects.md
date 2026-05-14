@@ -1,6 +1,8 @@
 ---
 title: Git Objects
-description: "Git Objects — The Content-Addressable Filesystem; Object Lifecycle; Blobs; Creating a Blob with worked examples and exam-style questions."
+description:
+  'Git Objects — The Content-Addressable Filesystem; Object Lifecycle; Blobs; Creating a Blob with
+  worked examples and exam-style questions.'
 date: 2025-06-03T00:00:00.000Z
 tags:
   - git
@@ -10,20 +12,24 @@ categories:
   - CS
 slug: git-objects
 ---
+
 ## The Content-Addressable Filesystem
 
-At its core, Git is a **content-addressable filesystem**. It stores data as objects, each identified by the SHA-1 hash of its content. This is not a version control feature — it is the fundamental storage mechanism. Version control is built on top of it.
+At its core, Git is a **content-addressable filesystem**. It stores data as objects, each identified
+by the SHA-1 hash of its content. This is not a version control feature — it is the fundamental
+storage mechanism. Version control is built on top of it.
 
 There are four types of Git objects:
 
-| Type | Purpose | Contains |
+| Type       | Purpose           | Contains                                                               |
 | ---------- | ----------------- | ---------------------------------------------------------------------- |
-| **blob** | File content | Raw file bytes (no filename, no metadata) |
-| **tree** | Directory listing | List of `(mode, name, SHA-1)` entries (blobs or subtrees) |
-| **commit** | Snapshot metadata | Tree SHA-1, parent commit(s), author, committer, message, timestamp |
-| **tag** | Annotated tag | Tag name, tagger, message, target commit SHA-1, optional GPG signature |
+| **blob**   | File content      | Raw file bytes (no filename, no metadata)                              |
+| **tree**   | Directory listing | List of `(mode, name, SHA-1)` entries (blobs or subtrees)              |
+| **commit** | Snapshot metadata | Tree SHA-1, parent commit(s), author, committer, message, timestamp    |
+| **tag**    | Annotated tag     | Tag name, tagger, message, target commit SHA-1, optional GPG signature |
 
-Every object is stored as a compressed file under `.git/objects/`Named by its SHA-1 hash. For example, an object with hash `a3f2b1c...` is stored at `.git/objects/a3/f2b1c...`.
+Every object is stored as a compressed file under `.git/objects/`Named by its SHA-1 hash. For
+example, an object with hash `a3f2b1c...` is stored at `.git/objects/a3/f2b1c...`.
 
 ## Object Lifecycle
 
@@ -42,7 +48,9 @@ flowchart LR
 
 ## Blobs
 
-A blob is the simplest Git object. It stores the **raw content** of a file — nothing more. It does not store the filename, permissions, or any metadata. Two files with identical content at different paths produce the same blob object.
+A blob is the simplest Git object. It stores the **raw content** of a file — nothing more. It does
+not store the filename, permissions, or any metadata. Two files with identical content at different
+paths produce the same blob object.
 
 ### Creating a Blob
 
@@ -78,13 +86,16 @@ The SHA-1 of this byte sequence is `ce013625030ba8dba906f756967f9e9ca394464a`.
 
 :::info
 
-The trailing newline matters. `echo "Hello, World"` produces `Hello, World\n` (13 bytes), while `echo -n "Hello, World"` produces `Hello, World` (12 bytes). These produce different blob hashes. This is a common source of confusion when scripting Git operations.
+The trailing newline matters. `echo "Hello, World"` produces `Hello, World\n` (13 bytes), while
+`echo -n "Hello, World"` produces `Hello, World` (12 bytes). These produce different blob hashes.
+This is a common source of confusion when scripting Git operations.
 
 :::
 
 ### Deduplication
 
-Because blob identity is based purely on content, Git automatically deduplicates identical files across commits and directories:
+Because blob identity is based purely on content, Git automatically deduplicates identical files
+across commits and directories:
 
 ```bash
 # Two files with identical content
@@ -98,17 +109,18 @@ $ git hash-object b.txt
 # Only one blob object is stored in .git/objects/
 ```
 
-This is why Git is efficient at storing projects with many similar files (e.g., renamed files, copied configurations) — identical content is stored exactly once.
+This is why Git is efficient at storing projects with many similar files (e.g., renamed files,
+copied configurations) — identical content is stored exactly once.
 
 ## Trees
 
 A tree object represents a **directory listing**. Each entry in a tree is a triple:
 
-| Field | Description |
+| Field     | Description                                                                                                                |
 | --------- | -------------------------------------------------------------------------------------------------------------------------- |
-| **mode** | File type and permissions (e.g., `100644` = regular file, `100755` = executable, `040000` = directory, `120000` = symlink) |
-| **name** | Filename or directory name |
-| **SHA-1** | Hash of the blob (for files) or subtree (for directories) |
+| **mode**  | File type and permissions (e.g., `100644` = regular file, `100755` = executable, `040000` = directory, `120000` = symlink) |
+| **name**  | Filename or directory name                                                                                                 |
+| **SHA-1** | Hash of the blob (for files) or subtree (for directories)                                                                  |
 
 ### Tree Structure
 
@@ -156,11 +168,15 @@ Like blobs, trees are hashed with a header:
 tree <content-length>\0<entries>
 ```
 
-Each entry is encoded as `<mode> <name>\0<20-byte-sha1>` (binary SHA-1, not hex). The entries are **sorted** lexicographically by name, which is critical for canonical hashing — the same directory must always produce the same tree hash.
+Each entry is encoded as `<mode> <name>\0<20-byte-sha1>` (binary SHA-1, not hex). The entries are
+**sorted** lexicographically by name, which is critical for canonical hashing — the same directory
+must always produce the same tree hash.
 
 :::warning
 
-Git sorts tree entries in a specific order: directories sort as if they have a trailing `/`. This means `src` sorts as `src/`Which places it before `src-file` but after `src0`. This detail matters if you are manually constructing tree objects.
+Git sorts tree entries in a specific order: directories sort as if they have a trailing `/`. This
+means `src` sorts as `src/`Which places it before `src-file` but after `src0`. This detail matters
+if you are manually constructing tree objects.
 
 :::
 
@@ -168,13 +184,13 @@ Git sorts tree entries in a specific order: directories sort as if they have a t
 
 A commit object is a **snapshot of the project at a point in time**, plus metadata. It contains:
 
-| Field | Description |
+| Field         | Description                                                                                                          |
 | ------------- | -------------------------------------------------------------------------------------------------------------------- |
-| **tree** | SHA-1 of the root tree object (the directory listing) |
-| **parent(s)** | SHA-1 of the parent commit(s). Zero parents = initial commit. Multiple parents = merge commit |
-| **author** | Name, email, timestamp of the person who wrote the changes |
+| **tree**      | SHA-1 of the root tree object (the directory listing)                                                                |
+| **parent(s)** | SHA-1 of the parent commit(s). Zero parents = initial commit. Multiple parents = merge commit                        |
+| **author**    | Name, email, timestamp of the person who wrote the changes                                                           |
 | **committer** | Name, email, timestamp of the person who created the commit (may differ from author during `git rebase` or `git am`) |
-| **message** | Commit message (includes optional trailers like `Co-authored-by:`) |
+| **message**   | Commit message (includes optional trailers like `Co-authored-by:`)                                                   |
 
 ### Commit Structure
 
@@ -193,7 +209,8 @@ Closes #42.
 
 ### The Commit DAG
 
-Commits form a **directed acyclic graph** (DAG). Each commit points to its parent(s), creating a chain of history. A merge commit has two or more parents, creating a diamond-shaped topology.
+Commits form a **directed acyclic graph** (DAG). Each commit points to its parent(s), creating a
+chain of history. A merge commit has two or more parents, creating a diamond-shaped topology.
 
 ```mermaid
 gitGraph
@@ -220,18 +237,21 @@ In this graph:
 
 The distinction between author and committer is important in workflows where commits are rewritten:
 
-| Scenario | Author | Committer |
+| Scenario                 | Author             | Committer          |
 | ------------------------ | ------------------ | ------------------ |
-| Normal commit | Original developer | Original developer |
-| `git rebase` | Original developer | Person who rebased |
-| `git am` (apply mailbox) | Patch sender | Person who applied |
-| `git commit --amend` | Original developer | Person who amended |
+| Normal commit            | Original developer | Original developer |
+| `git rebase`             | Original developer | Person who rebased |
+| `git am` (apply mailbox) | Patch sender       | Person who applied |
+| `git commit --amend`     | Original developer | Person who amended |
 
-This separation preserves attribution while allowing history to be rewritten. `git log` shows both fields.
+This separation preserves attribution while allowing history to be rewritten. `git log` shows both
+fields.
 
 ### Reachability and the Object Graph
 
-An object is **reachable** if there exists a path from at least one reference (branch, tag, HEAD, stash, reflog entry) to that object. Unreachable objects are candidates for garbage collection (see [Packing and Garbage Collection](../06-internals/02-packing-and-garbage-collection.md)).
+An object is **reachable** if there exists a path from at least one reference (branch, tag, HEAD,
+stash, reflog entry) to that object. Unreachable objects are candidates for garbage collection (see
+[Packing and Garbage Collection](../06-internals/02-packing-and-garbage-collection.md)).
 
 ```bash
 # Show all objects reachable from HEAD
@@ -247,7 +267,8 @@ Git supports two types of tags:
 
 ### Lightweight Tags
 
-A lightweight tag is a **reference** pointing to a commit. It is stored as a file in `.git/refs/tags/` containing the commit SHA-1. No additional metadata is stored.
+A lightweight tag is a **reference** pointing to a commit. It is stored as a file in
+`.git/refs/tags/` containing the commit SHA-1. No additional metadata is stored.
 
 ```bash
 $ git tag v1.0
@@ -279,16 +300,18 @@ Release version 1.0
 
 ### When to Use Which
 
-| Use lightweight | Use annotated |
+| Use lightweight    | Use annotated                         |
 | ------------------ | ------------------------------------- |
-| Private bookmarks | Public releases |
-| Temporary pointers | Signed releases (GPG) |
-| Personal workflow | Semantic versioning milestones |
-| | When you need metadata (date, tagger) |
+| Private bookmarks  | Public releases                       |
+| Temporary pointers | Signed releases (GPG)                 |
+| Personal workflow  | Semantic versioning milestones        |
+|                    | When you need metadata (date, tagger) |
 
 :::tip
 
-Always use annotated tags for public releases. Lightweight tags do not carry the tagger information or message, which makes them unsuitable for audit trails. Use `git tag -a` or configure `tag.forceSignAnnotated` for GPG signing.
+Always use annotated tags for public releases. Lightweight tags do not carry the tagger information
+or message, which makes them unsuitable for audit trails. Use `git tag -a` or configure
+`tag.forceSignAnnotated` for GPG signing.
 
 :::
 
@@ -296,7 +319,9 @@ Always use annotated tags for public releases. Lightweight tags do not carry the
 
 ### Loose Objects
 
-Newly created objects are stored as individual **loose objects** — compressed (zlib deflate) files under `.git/objects/`. The filename is the first 2 characters of the SHA-1 hash, and the file contains the remaining 38 characters as a suffix:
+Newly created objects are stored as individual **loose objects** — compressed (zlib deflate) files
+under `.git/objects/`. The filename is the first 2 characters of the SHA-1 hash, and the file
+contains the remaining 38 characters as a suffix:
 
 ```
 .git/objects/
@@ -309,7 +334,9 @@ Newly created objects are stored as individual **loose objects** — compressed 
 
 ### Packfiles
 
-When the number of loose objects exceeds a threshold (configurable via `gc.auto`Default 6700), Git packs them into a **packfile** (`.git/objects/pack/pack-<hash>.pack`) with delta compression. See [Packing and Garbage Collection](../06-internals/02-packing-and-garbage-collection.md) for details.
+When the number of loose objects exceeds a threshold (configurable via `gc.auto`Default 6700), Git
+packs them into a **packfile** (`.git/objects/pack/pack-<hash>.pack`) with delta compression. See
+[Packing and Garbage Collection](../06-internals/02-packing-and-garbage-collection.md) for details.
 
 ## Practical Implications
 
@@ -349,7 +376,9 @@ Git allows using a **prefix** of the SHA-1 hash as long as it is unambiguous wit
 $ git log a3f2b1c  # Works if no other object starts with a3f2b1c
 ```
 
-The minimum safe prefix length depends on the number of objects in the repository. For a project with $N$ objects, you need approximately $\lceil \log_{16} N \rceil$ hex characters. Git will warn you if a prefix is ambiguous:
+The minimum safe prefix length depends on the number of objects in the repository. For a project
+with $N$ objects, you need approximately $\lceil \log_{16} N \rceil$ hex characters. Git will warn
+you if a prefix is ambiguous:
 
 ```
 warning: ambiguous argument 'a3f2': unknown revision or path not in the working tree.

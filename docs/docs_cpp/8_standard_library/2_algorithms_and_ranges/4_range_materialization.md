@@ -1,6 +1,8 @@
 ---
 title: Range Materialization (std::ranges::to)
-description: "C++: Range Materialization (std::ranges::to) — `std::ranges::to<T>` (C++23); Converting Lazy Views to Eager Containers. and examination."
+description:
+  'C++: Range Materialization (std::ranges::to) — `std::ranges::to<T>` (C++23); Converting Lazy
+  Views to Eager Containers. and examination.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -8,6 +10,7 @@ categories:
   - Cpp
 slug: range-materialization
 ---
+
 ## Range Materialization (std::ranges::to)
 
 Views are lazy and borrow elements from their source. When you need ownership, multiple passes, or
@@ -82,13 +85,13 @@ int main() {
 
 The key distinction between views and containers [N4950 §26.5.2]:
 
-| Property | View | Container |
+| Property       | View                | Container               |
 | -------------- | ------------------- | ----------------------- |
-| Ownership | Borrows elements | Owns elements |
-| Lifetime | Tied to source | Independent |
-| Construction | $O(1)$ | $O(n)$ |
-| Destruction | $O(1)$ | $O(n)$ |
-| Composition | Chainable with `\|` | Must materialize |
+| Ownership      | Borrows elements    | Owns elements           |
+| Lifetime       | Tied to source      | Independent             |
+| Construction   | $O(1)$              | $O(n)$                  |
+| Destruction    | $O(1)$              | $O(n)$                  |
+| Composition    | Chainable with `\|` | Must materialize        |
 | Element access | Lazy (on iteration) | Eager (on construction) |
 
 `std::ranges::to&lt;T>` performs the materialization eagerly: it iterates the entire view and
@@ -132,11 +135,9 @@ int main() {
 }
 ```
 
-:::tip
-Prefer `std::ranges::to&lt;std::vector>()` when you need to consume a view multiple times,
+:::tip Prefer `std::ranges::to&lt;std::vector>()` when you need to consume a view multiple times,
 Pass it to a non-range API, or decouple its lifetime from the source. The cost is $O(n)$ for the
-Materialization, but you gain ownership and stability.
-:::
+Materialization, but you gain ownership and stability. :::
 
 ### Materialization with Different Containers
 
@@ -257,13 +258,13 @@ int main() {
 The fundamental trade-off between views (lazy) and containers (eager) is **when computation occurs**
 [N4950 §26.5.2]:
 
-| Aspect | Lazy View | Eager Container (`ranges::to`) |
+| Aspect           | Lazy View                  | Eager Container (`ranges::to`) |
 | ---------------- | -------------------------- | ------------------------------ |
-| Computation time | At iteration | At materialization |
-| Memory | $O(1)$ extra | $O(n)$ allocated |
-| Multi-pass | No (single-pass views) | Yes |
-| Lifetime | Tied to source | Independent |
-| Side effects | Each iteration re-executes | Executed once |
+| Computation time | At iteration               | At materialization             |
+| Memory           | $O(1)$ extra               | $O(n)$ allocated               |
+| Multi-pass       | No (single-pass views)     | Yes                            |
+| Lifetime         | Tied to source             | Independent                    |
+| Side effects     | Each iteration re-executes | Executed once                  |
 
 ```cpp
 #include <iostream>
@@ -312,15 +313,15 @@ int main() {
 Understanding the ownership model is critical for correct range usage:
 
 - **Non-owning ranges** (views): `std::string_view``std::span``std::ranges::ref_view`
- `std::ranges::filter_view`. These hold pointers or references into storage owned by another
- object. They are lightweight ($O(1)$ copy) but must not outlive the underlying data.
+  `std::ranges::filter_view`. These hold pointers or references into storage owned by another
+  object. They are lightweight ($O(1)$ copy) but must not outlive the underlying data.
 
-- **Owning ranges** (containers): `std::vector``std::string``std::deque``std::list`. These own
- their element storage and manage its lifetime. Copying an owning range copies all elements
- ($O(n)$). Moving an owning range transfers ownership ($O(1)$).
+- **Owning ranges** (containers): `std::vector``std::string``std::deque``std::list`. These own their
+  element storage and manage its lifetime. Copying an owning range copies all elements ($O(n)$).
+  Moving an owning range transfers ownership ($O(1)$).
 
 - **Hybrid ranges**: `std::ranges::owning_view` wraps a range by value, taking ownership. This is
- useful when a function needs to accept either a view or a container and store it for later use.
+  useful when a function needs to accept either a view or a container and store it for later use.
 
 ```cpp
 #include <ranges>
@@ -388,25 +389,25 @@ int main() {
 
 ### Table of Borrowed vs Non-Borrowed Views
 
-| View Type | Borrowed? | Reason |
+| View Type              | Borrowed? | Reason                                   |
 | ---------------------- | --------- | ---------------------------------------- |
-| `ref_view<T>` | Yes | Holds an lvalue reference explicitly |
-| `iota_view<W, B>` | Yes | Stateless or copyable state |
-| `empty_view<T>` | Yes | No storage |
-| `single_view<T>` | Yes | Stores element inline |
-| `string_view` | Yes | Non-owning by design |
-| `span<T>` | Yes | Non-owning by design |
-| `filter_view<V, P>` | No | Borrows from `V` |
-| `transform_view<V, F>` | No | Borrows from `V` |
-| `take_view<V>` | No | Borrows from `V` |
-| `drop_view<V>` | No | Borrows from `V` |
-| `reverse_view<V>` | No | Borrows from `V` |
-| `join_view<V>` | No | Borrows from `V` (and inner ranges) |
-| `split_view<V, P>` | No | Borrows from `V` |
-| `zip_view<Views...>` | Depends | Borrowed only if ALL component views are |
-| `enumerate_view<V>` | No | Borrows from `V` |
-| `keys_view<M>` | No | Borrows from map `M` |
-| `values_view<M>` | No | Borrows from map `M` |
+| `ref_view<T>`          | Yes       | Holds an lvalue reference explicitly     |
+| `iota_view<W, B>`      | Yes       | Stateless or copyable state              |
+| `empty_view<T>`        | Yes       | No storage                               |
+| `single_view<T>`       | Yes       | Stores element inline                    |
+| `string_view`          | Yes       | Non-owning by design                     |
+| `span<T>`              | Yes       | Non-owning by design                     |
+| `filter_view<V, P>`    | No        | Borrows from `V`                         |
+| `transform_view<V, F>` | No        | Borrows from `V`                         |
+| `take_view<V>`         | No        | Borrows from `V`                         |
+| `drop_view<V>`         | No        | Borrows from `V`                         |
+| `reverse_view<V>`      | No        | Borrows from `V`                         |
+| `join_view<V>`         | No        | Borrows from `V` (and inner ranges)      |
+| `split_view<V, P>`     | No        | Borrows from `V`                         |
+| `zip_view<Views...>`   | Depends   | Borrowed only if ALL component views are |
+| `enumerate_view<V>`    | No        | Borrows from `V`                         |
+| `keys_view<M>`         | No        | Borrows from map `M`                     |
+| `values_view<M>`       | No        | Borrows from map `M`                     |
 
 ### Interaction with `std::views::filter` and `std::views::transform`
 
@@ -518,11 +519,9 @@ int main() {
 }
 ```
 
-:::warning
-The C++ standard's range machinery includes **borrowed range** detection [N4950 §26.5.2].
+:::warning The C++ standard's range machinery includes **borrowed range** detection [N4950 §26.5.2].
 Some views (like `std::views::filter`) are not borrowing views --- they cannot outlive their source.
-Always ensure the source outlives the view when materializing.
-:::
+Always ensure the source outlives the view when materializing. :::
 
 #### Double Materialization Cost
 
@@ -638,19 +637,19 @@ Not a `borrowed_range` and `source` is a temporary (prvalue).
 **Proof.** We analyze the lifetime rules of C++ [N4950 §6.7.7]:
 
 1. A temporary (prvalue) is destroyed at the end of the full-expression in which it appears [N4950
- §6.7.7.2].
+   §6.7.7.2].
 
 2. A range adaptor view `V` holds a reference or iterator into its source range. The view does not
- own the source and does not extend its lifetime.
+   own the source and does not extend its lifetime.
 
-3. If the source is a temporary, its lifetime ends at the semicolon. The view `V`Which is an
- lvalue (bound to a named variable or returned from a function), outlives the source.
+3. If the source is a temporary, its lifetime ends at the semicolon. The view `V`Which is an lvalue
+   (bound to a named variable or returned from a function), outlives the source.
 
 4. After the source is destroyed, the view holds a dangling reference/iterator. Dereferencing it is
- undefined behavior per [N4950 §6.7.7.2].
+   undefined behavior per [N4950 §6.7.7.2].
 
-5. Exception: if the view is a `borrowed_range`It copies the source data (or the source
- has no backing storage), so it does not borrow. Examples: `string_view``span``iota_view`.
+5. Exception: if the view is a `borrowed_range`It copies the source data (or the source has no
+   backing storage), so it does not borrow. Examples: `string_view``span``iota_view`.
 
 QED. This is why `std::ranges::dangling` exists: the standard library detects this pattern at
 Compile time for many common cases and returns `dangling` instead of a real iterator, preventing
@@ -661,21 +660,21 @@ Accidental use.
 Materialization occurs not only with `std::ranges::to` but also in several other contexts:
 
 1. **Container constructor from range:** `std::vector<int>(view.begin(), view.end())` --- iterates
- the view and copies elements.
+   the view and copies elements.
 
 2. **`std::ranges::copy` / `std::ranges::move`:** Copies or moves elements from the view to an
- output iterator.
+   output iterator.
 
 3. **Algorithms that modify:** `std::ranges::sort(view)` requires a random-access range with mutable
- elements. If the view is a borrowed reference to a container, the sort modifies the container in
- place (no materialization). If the view is a temporary, it dangles.
+   elements. If the view is a borrowed reference to a container, the sort modifies the container in
+   place (no materialization). If the view is a temporary, it dangles.
 
 4. **`std::ranges::distance(view):** Iterates the entire view to count elements. For single-pass
- views, this consumes the elements. For forward views, this is $O(n)$ but does not materialize
- into a container.
+   views, this consumes the elements. For forward views, this is $O(n)$ but does not materialize
+   into a container.
 
 5. **`std::ranges::begin(view)` / `std::ranges::end(view)`:** Does not materialize; returns an
- iterator/sentinel pair. Computation happens only during iteration.
+   iterator/sentinel pair. Computation happens only during iteration.
 
 ### `std::ranges::to` with Custom Containers
 
@@ -735,14 +734,14 @@ int main() {
 
 The cost of materialization depends on the target container and the view pipeline:
 
-| Target Container | Allocation Strategy | Typical Cost per Element |
+| Target Container | Allocation Strategy                    | Typical Cost per Element         |
 | ---------------- | -------------------------------------- | -------------------------------- |
-| `std::vector` | Single allocation (with `reserve`) | 1 copy + 0-1 reallocations |
-| `std::vector` | Without `reserve` (amortized growth) | 1 copy + amortized realloc |
-| `std::deque` | Block-by-block allocation | 1 copy + occasional block alloc |
-| `std::list` | Per-node allocation | 1 copy + 1 alloc per element |
-| `std::set` | Per-node allocation + tree rebalancing | 1 copy + $O(\log n)$ per element |
-| `std::string` | Single allocation | 1 copy |
+| `std::vector`    | Single allocation (with `reserve`)     | 1 copy + 0-1 reallocations       |
+| `std::vector`    | Without `reserve` (amortized growth)   | 1 copy + amortized realloc       |
+| `std::deque`     | Block-by-block allocation              | 1 copy + occasional block alloc  |
+| `std::list`      | Per-node allocation                    | 1 copy + 1 alloc per element     |
+| `std::set`       | Per-node allocation + tree rebalancing | 1 copy + $O(\log n)$ per element |
+| `std::string`    | Single allocation                      | 1 copy                           |
 
 For maximum throughput, materialize into `std::vector` (best cache locality, fewest allocations). If
 You need deduplication or sorting, materialize into `std::vector` first, then sort and unique-erase,

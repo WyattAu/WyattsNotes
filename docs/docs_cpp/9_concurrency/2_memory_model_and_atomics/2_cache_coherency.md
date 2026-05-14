@@ -1,6 +1,8 @@
 ---
 title: Cache Coherency (MESI) and False Sharing
-description: "C++: Cache Coherency (MESI) and False Sharing — MESI Protocol Overview; MESI State Transitions; Formal State Transition Table; Cache Line Structure."
+description:
+  'C++: Cache Coherency (MESI) and False Sharing — MESI Protocol Overview; MESI State Transitions;
+  Formal State Transition Table; Cache Line Structure.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -8,6 +10,7 @@ categories:
   - Cpp
 slug: cache-coherency-mesi-false-sharing
 ---
+
 # Cache Coherency (MESI) and False Sharing
 
 This section covers the MESI cache coherence protocol, cache line ownership and coherence traffic,
@@ -18,12 +21,12 @@ False sharing, and padding/alignment techniques to prevent false sharing in mult
 The **MESI protocol** is a widely used cache coherence protocol that maintains consistency across
 CPU caches. Each cache line is in one of four states:
 
-| State | Description | Can Read? | Can Write? |
+| State             | Description                                                     | Can Read? | Can Write?                                   |
 | ----------------- | --------------------------------------------------------------- | --------- | -------------------------------------------- |
-| **M** (Modified) | This cache has the only valid copy; it differs from main memory | Yes | Yes |
-| **E** (Exclusive) | This cache has the only valid copy; it matches main memory | Yes | Yes (transitions to M) |
-| **S** (Shared) | Multiple caches have valid copies matching main memory | Yes | No (must request exclusive) |
-| **I** (Invalid) | This cache line is not valid | No | No (must request from other cache or memory) |
+| **M** (Modified)  | This cache has the only valid copy; it differs from main memory | Yes       | Yes                                          |
+| **E** (Exclusive) | This cache has the only valid copy; it matches main memory      | Yes       | Yes (transitions to M)                       |
+| **S** (Shared)    | Multiple caches have valid copies matching main memory          | Yes       | No (must request exclusive)                  |
+| **I** (Invalid)   | This cache line is not valid                                    | No        | No (must request from other cache or memory) |
 
 The MESI protocol is a **write-invalidate** protocol: when a core wants to write to a shared line,
 It first invalidates all other copies rather than updating them. This is simpler than a write-update
@@ -47,7 +50,7 @@ Machine:
 
 - If no other cache has the line: loaded from memory, state becomes **E** (Exclusive).
 - If another cache has the line in M: that cache writes back to memory, then shares. State becomes
- **S**.
+  **S**.
 - If another cache has the line in E or S: shared directly. State becomes **S**.
 
 **Write Miss:** The cache line is in I state. The CPU issues a Read-For-Ownership (RFO) on the bus.
@@ -68,24 +71,24 @@ $$\mathrm{M{} \xrightarrow{\mathrm{snoop read{}} \mathrm{write-back{} \to \mathr
 
 ### Formal State Transition Table
 
-| Current State | Event | Action | New State |
+| Current State | Event       | Action                                | New State |
 | :------------ | :---------- | :------------------------------------ | :-------- |
-| M | Local Read | None | M |
-| M | Local Write | None | M |
-| M | Snoop Read | Write-back, share | S |
-| M | Snoop Write | Write-back, invalidate | I |
-| E | Local Read | None | E |
-| E | Local Write | None | M |
-| E | Snoop Read | Share | S |
-| E | Snoop Write | Invalidate | I |
-| S | Local Read | None | S |
-| S | Local Write | Invalidate others, read for ownership | M |
-| S | Snoop Read | None | S |
-| S | Snoop Write | Invalidate | I |
-| I | Local Read | Bus read (E or S) | E or S |
-| I | Local Write | Bus RFO, invalidate others | M |
-| I | Snoop Read | None | I |
-| I | Snoop Write | None | I |
+| M             | Local Read  | None                                  | M         |
+| M             | Local Write | None                                  | M         |
+| M             | Snoop Read  | Write-back, share                     | S         |
+| M             | Snoop Write | Write-back, invalidate                | I         |
+| E             | Local Read  | None                                  | E         |
+| E             | Local Write | None                                  | M         |
+| E             | Snoop Read  | Share                                 | S         |
+| E             | Snoop Write | Invalidate                            | I         |
+| S             | Local Read  | None                                  | S         |
+| S             | Local Write | Invalidate others, read for ownership | M         |
+| S             | Snoop Read  | None                                  | S         |
+| S             | Snoop Write | Invalidate                            | I         |
+| I             | Local Read  | Bus read (E or S)                     | E or S    |
+| I             | Local Write | Bus RFO, invalidate others            | M         |
+| I             | Snoop Read  | None                                  | I         |
+| I             | Snoop Write | None                                  | I         |
 
 ## Cache Line Structure
 
@@ -97,11 +100,11 @@ A cache line is the minimum unit of cache coherence. On modern x86-64 processors
 
 The cache hierarchy on a typical modern CPU:
 
-| Level | Size | Latency (cycles) | Associativity |
+| Level  | Size          | Latency (cycles) | Associativity |
 | :----- | :------------ | :--------------- | :------------ |
-| **L1** | 32-64 KB | 3-4 | 8-way |
-| **L2** | 256 KB - 1 MB | 10-14 | 8-16 way |
-| **L3** | 4-64 MB | 30-50 | 16-64 way |
+| **L1** | 32-64 KB      | 3-4              | 8-way         |
+| **L2** | 256 KB - 1 MB | 10-14            | 8-16 way      |
+| **L3** | 4-64 MB       | 30-50            | 16-64 way     |
 
 ### Cache Line Addressing
 
@@ -131,10 +134,10 @@ Modern x86 CPUs because it dramatically reduces write traffic to main memory.
 Implications of write-back:
 
 - A line in M state may differ from main memory. Reading main memory directly would yield stale
- data.
+  data.
 - The MESI protocol ensures that any read from another core triggers a write-back before sharing.
 - Store buffers exist between the CPU core and the L1 cache to hide write latency (see
- [Instruction Reordering](./1_instruction_reordering.md)).
+  [Instruction Reordering](./1_instruction_reordering.md)).
 
 ## Cache Line Ownership and Coherence Traffic
 
@@ -152,17 +155,17 @@ Programs with frequent writes to shared data.
 
 The cost of an invalidation depends on the cache hierarchy level at which the line resides:
 
-| Scenario | Coherence Traffic | Latency (approximate) |
+| Scenario                          | Coherence Traffic         | Latency (approximate) |
 | :-------------------------------- | :------------------------ | :-------------------- |
-| Same core, different hyperthreads | None (shared L1) | ~4 cycles |
-| Same socket, different cores | L3 snoop + invalidation | ~40 cycles |
-| Different sockets (NUMA) | Inter-socket interconnect | ~100-200 cycles |
+| Same core, different hyperthreads | None (shared L1)          | ~4 cycles             |
+| Same socket, different cores      | L3 snoop + invalidation   | ~40 cycles            |
+| Different sockets (NUMA)          | Inter-socket interconnect | ~100-200 cycles       |
 
 ## False Sharing
 
 **False sharing** occurs when two threads write to different variables that happen to reside on the
-Same cache line ( 64 bytes). Even though the variables are logically independent, the
-Hardware treats them as a single unit for coherence purposes.
+Same cache line ( 64 bytes). Even though the variables are logically independent, the Hardware
+treats them as a single unit for coherence purposes.
 
 $$\mathrm{False Sharing: {} \mathrm{var{}_1 \in \mathrm{line{}_L \wedge \mathrm{var{}_2 \in \mathrm{line{}_L \wedge \mathrm{thread{}_1 \mathrm{ writes {} \mathrm{var{}_1 \wedge \mathrm{thread{}_2 \mathrm{ writes {} \mathrm{var{}_2$$
 
@@ -173,25 +176,25 @@ Uncontended case.
 ### Proof: Why False Sharing Causes Performance Degradation
 
 **Claim:** If two threads concurrently write to variables on the same cache line, each write causes
-An L1 cache miss on the other thread, resulting in $\mathcal{'\{'}O{'\}'}(n)$ coherence round-trips for $n$
-Writes per thread.
+An L1 cache miss on the other thread, resulting in $\mathcal{'\{'}O{'\}'}(n)$ coherence round-trips
+for $n$ Writes per thread.
 
 **Proof:**
 
 1. Let `var_a` and `var_b` reside on the same cache line $L$And let thread $T_1$ write to `var_a`
- while thread $T_2$ writes to `var_b`.
+   while thread $T_2$ writes to `var_b`.
 2. Initially, both threads may hold $L$ in **Shared** state (after the first read).
-3. When $T_1$ writes to `var_a`The cache controller issues an RFO for $L$Invalidating $T_2$'s
- copy. $T_1$'s line transitions to **Modified**.
+3. When $T_1$ writes to `var_a`The cache controller issues an RFO for $L$Invalidating $T_2$'s copy.
+   $T_1$'s line transitions to **Modified**.
 4. When $T_2$ writes to `var_b`Its copy is **Invalid** (due to step 3), so it incurs an L1 miss.
- $T_2$ issues an RFO, invalidating $T_1$'s copy. $T_2$'s line transitions to **Modified**.
+   $T_2$ issues an RFO, invalidating $T_1$'s copy. $T_2$'s line transitions to **Modified**.
 5. Step 3 and step 4 alternate for every write, producing a **ping-pong** pattern.
 6. Each ping-pong costs ~40-100ns (inter-core coherence latency), versus ~1-4ns for an L1 hit.
 7. For $n$ writes per thread, total coherence cost is
- $\Theta(n \times \mathrm{coherence\_latency{})$Versus $\Theta(n \times \mathrm{L1\_latency{})$
- without false sharing.
+   $\Theta(n \times \mathrm{coherence\_latency{})$Versus $\Theta(n \times \mathrm{L1\_latency{})$
+   without false sharing.
 8. The speedup from eliminating false sharing is
- $\frac{\mathrm{coherence\_latency{}}{\mathrm{L1\_latency{}} \approx 10\mathrm{x{}\mathrm{--{}100\mathrm{x{}$.
+   $\frac{\mathrm{coherence\_latency{}}{\mathrm{L1\_latency{}} \approx 10\mathrm{x{}\mathrm{--{}100\mathrm{x{}$.
 
 $\square$
 
@@ -273,12 +276,10 @@ int main() {
 }
 ```
 
-:::tip
-Tip
-`sizeof(unpadded_counter)` will be 4 (one int). With 8 threads, the unpadded counters occupy only 32
-Bytes (fitting in a single cache line), while the padded counters occupy 512 bytes (8 cache lines).
-The padded version will be significantly faster due to the elimination of false sharing.
-:::
+:::tip Tip `sizeof(unpadded_counter)` will be 4 (one int). With 8 threads, the unpadded counters
+occupy only 32 Bytes (fitting in a single cache line), while the padded counters occupy 512 bytes (8
+cache lines). The padded version will be significantly faster due to the elimination of false
+sharing. :::
 
 ## Padding and Alignment to Prevent False Sharing
 
@@ -387,11 +388,11 @@ Use SoA when you process one field at a time (e.g., updating all positions). Use
 All fields of individual entities (e.g., collision detection).
 
 2. **Compact data types:** Use `float` instead of `double` when precision allows. Use `int32_t`
- instead of `int64_t`. Smaller types mean more elements per cache line.
+   instead of `int64_t`. Smaller types mean more elements per cache line.
 
 3. **Avoid pointer chasing:** Linked lists, trees with heap-allocated nodes, and `std::map` cause
- cache misses on every traversal. Prefer contiguous containers (`std::vector``std::deque`) and
- flat data structures.
+   cache misses on every traversal. Prefer contiguous containers (`std::vector``std::deque`) and
+   flat data structures.
 
 4. **Hot/cold splitting:** Separate frequently accessed fields from rarely accessed fields:
 
@@ -428,10 +429,8 @@ Parameters:
 - **RW:** 0 for read, 1 for write.
 - **Locality:** 0-3 (3 = keep in cache as long as possible).
 
-:::warning
-Warning
-Performance by evicting useful cache lines. Always benchmark with and without prefetching. The
-Hardware prefetcher is often better than manual prefetching for simple patterns.
+:::warning Warning Performance by evicting useful cache lines. Always benchmark with and without
+prefetching. The Hardware prefetcher is often better than manual prefetching for simple patterns.
 :::
 
 ## Write Propagation and Visibility
@@ -440,16 +439,16 @@ When a core writes to a cache line in Modified state, other cores do not immedia
 Value. The write is visible only when:
 
 1. The modified line is **evicted** from the writer's cache (write-back to memory), and the reader
- loads the updated line from memory.
+   loads the updated line from memory.
 2. Another core issues a **read** for that line, causing the writer to supply the data directly
- (cache-to-cache transfer on MESI/MOESI).
+   (cache-to-cache transfer on MESI/MOESI).
 3. The writer issues an **explicit fence** (e.g., `mfence` on x86, `DMB` on ARM) that drains the
- store buffer, making the write visible to cores that subsequently read from memory.
+   store buffer, making the write visible to cores that subsequently read from memory.
 
 The C++ memory model abstracts this into memory ordering constraints:
 
 - `memory_order_release` ensures that prior stores are visible to cores that subsequently perform
- `memory_order_acquire` on the same atomic variable.
+  `memory_order_acquire` on the same atomic variable.
 - `memory_order_seq_cst` ensures a single total order over all seq_cst operations.
 
 ### Cache Coherence vs. Memory Model
@@ -465,9 +464,9 @@ Allows certain reorderings that cache coherence alone would prevent.
 The distinction matters because:
 
 - Cache coherence does not prevent **store-to-load reordering** (the store buffer allows a load to
- bypass a pending store to a different address).
+  bypass a pending store to a different address).
 - Cache coherence does not prevent **compiler reordering** (the compiler may reorder independent
- memory operations).
+  memory operations).
 - The memory model adds ordering constraints on top of cache coherence.
 
 ## Hardware-Specific Coherence Behaviors
@@ -479,7 +478,7 @@ MOESI). Key characteristics:
 
 - **Store-to-load reordering** is the only CPU-level reordering allowed.
 - **Cache-to-cache transfer** is supported: when core A reads a line held in Modified state by core
- B, the data is transferred directly between L1 caches without going through main memory.
+  B, the data is transferred directly between L1 caches without going through main memory.
 - **Invalidation acknowledgment latency** is 20-40ns on the same socket.
 
 ### ARMv8
@@ -490,7 +489,7 @@ ARMv8 processors implement a weaker memory model with optional hardware barriers
 - `LDAR` (Load-Acquire) and `STLR` (Store-Release) provide acquire/release semantics.
 - `DMB` (Data Memory Barrier) provides full ordering.
 - Cache coherence is still maintained by a MESI-like protocol, but the ordering of when coherence
- effects become visible to the core is weaker.
+  effects become visible to the core is weaker.
 
 ### RISC-V
 
@@ -508,9 +507,9 @@ Accessing remote memory (attached to another socket) has higher latency.
 **NUMA effects on cache coherency:**
 
 - A cache line may be "near" (local memory) or "far" (remote memory). Remote access adds ~20-40ns of
- latency compared to local access.
+  latency compared to local access.
 - Thread migration between sockets causes all cache lines to become remote, dramatically degrading
- performance.
+  performance.
 - For NUMA-aware allocation, use `numa_alloc_onnode()` or `mbind()` on Linux.
 
 ```cpp
@@ -537,7 +536,7 @@ The typical cache line size on modern x86 processors is 64 bytes. Key implicatio
 1. **Adjacent data** within 64 bytes shares a cache line and may suffer false sharing.
 2. **Prefetching** operates at cache line granularity: reading one byte pulls in 64 bytes.
 3. **Alignment** to cache line boundaries can improve or degrade performance depending on access
- patterns.
+   patterns.
 
 ## Store Buffers and Write Serialization
 
@@ -559,13 +558,13 @@ Only). On ARM/AArch64, it emits a `DMB ISH` instruction to ensure store buffer d
 
 AMD processors use a five-state extension of MESI called **MOESI**, adding an **Owned** state:
 
-| State | Description |
+| State | Description                                                                                                                                                    |
 | :---- | :------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **M** | Modified — differs from memory, no other copies exist |
+| **M** | Modified — differs from memory, no other copies exist                                                                                                          |
 | **O** | Owned — differs from memory, but Shared copies may exist in other caches. On read miss, the Owned cache supplies data directly without writing back to memory. |
-| **E** | Exclusive — matches memory, no other copies exist |
-| **S** | Shared — matches memory, copies may exist in other caches |
-| **I** | Invalid — not cached |
+| **E** | Exclusive — matches memory, no other copies exist                                                                                                              |
+| **S** | Shared — matches memory, copies may exist in other caches                                                                                                      |
+| **I** | Invalid — not cached                                                                                                                                           |
 
 The Owned state eliminates the write-back-to-memory step when a Modified line is read by another
 Core: the data is transferred cache-to-cache, reducing main memory traffic. This is particularly
@@ -806,26 +805,26 @@ Eliminating false sharing entirely. The total is computed by summing all shards.
 ## Common Pitfalls
 
 - **False sharing with `std::atomic`:** Atomic variables on the same cache line cause coherence
- traffic even with `memory_order_relaxed`. Always pad atomics used by different threads.
+  traffic even with `memory_order_relaxed`. Always pad atomics used by different threads.
 - **Over-padding:** Padding every variable wastes memory and reduces the effective cache capacity.
- Only pad variables that are written concurrently by different threads.
+  Only pad variables that are written concurrently by different threads.
 - **Ignoring NUMA on multi-socket servers:** On servers with more than one CPU socket, memory
- locality matters. Thread migration between sockets causes all cached data to become remote.
+  locality matters. Thread migration between sockets causes all cached data to become remote.
 - **Trusting `hardware_destructive_interference_size`:** This constant may not reflect the actual
- cache line size on all platforms. Always verify with `sysconf(_SC_LEVEL1_DCACHE_LINESIZE)` on
- Linux.
+  cache line size on all platforms. Always verify with `sysconf(_SC_LEVEL1_DCACHE_LINESIZE)` on
+  Linux.
 - **False sharing with read-mostly data:** Even if one thread writes and others only read, the
- writer's invalidations cause cache misses on readers. Consider using `std::atomic` with
- `memory_order_relaxed` for read-only counters or epoch-based reclamation for read-heavy workloads.
+  writer's invalidations cause cache misses on readers. Consider using `std::atomic` with
+  `memory_order_relaxed` for read-only counters or epoch-based reclamation for read-heavy workloads.
 - **Assuming all platforms have 64-byte cache lines:** Some embedded ARM platforms use 32-byte cache
- lines. Some older x86 CPUs use 128-byte cache lines (sector-based). Always verify the target
- platform's cache line size.
+  lines. Some older x86 CPUs use 128-byte cache lines (sector-based). Always verify the target
+  platform's cache line size.
 - **Ignoring cache behavior in lock-free algorithms:** A CAS loop under contention generates
- repeated MESI state transitions (I -> S/E -> M -> I), each costing 40-100ns. Minimize contention
- by sharding, padding, or using backoff strategies.
+  repeated MESI state transitions (I -> S/E -> M -> I), each costing 40-100ns. Minimize contention
+  by sharding, padding, or using backoff strategies.
 - **False sharing across dynamically allocated arrays:** Elements of a `std::vector` or `new[]`
- array may share cache lines. If different threads access adjacent elements, false sharing occurs.
- Use `alignas` on the element type or allocate with stride padding.
+  array may share cache lines. If different threads access adjacent elements, false sharing occurs.
+  Use `alignas` on the element type or allocate with stride padding.
 
 ## See Also
 

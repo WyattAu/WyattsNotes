@@ -1,6 +1,8 @@
 ---
 title: Programming Constructs
-description: "A-Level Computer Science notes on Programming Constructs: 1. Variables and Data Types; Variables; Primitive Data Types; Constants."
+description:
+  'A-Level Computer Science notes on Programming Constructs: 1. Variables and Data Types; Variables;
+  Primitive Data Types; Constants.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - ComputerScience
@@ -9,6 +11,7 @@ categories:
   - ComputerScience
 slug: programming-constructs
 ---
+
 ## 1. Variables and Data Types
 
 ### Variables
@@ -18,12 +21,12 @@ Program execution.
 
 ### Primitive Data Types
 
-| Type | Typical Size | Range | Python equivalent |
+| Type      | Typical Size | Range                     | Python equivalent |
 | --------- | ------------ | ------------------------- | ----------------- |
-| Integer | 4 bytes | $[-2^{31}, 2^{31}-1]$ | `int` (unbounded) |
-| Float | 8 bytes | IEEE 754 double precision | `float` |
-| Character | 1 byte | ASCII/Unicode | `str` (length 1) |
-| Boolean | 1 byte | True / False | `bool` |
+| Integer   | 4 bytes      | $[-2^{31}, 2^{31}-1]$     | `int` (unbounded) |
+| Float     | 8 bytes      | IEEE 754 double precision | `float`           |
+| Character | 1 byte       | ASCII/Unicode             | `str` (length 1)  |
+| Boolean   | 1 byte       | True / False              | `bool`            |
 
 ### Constants
 
@@ -44,10 +47,8 @@ y = float(5)       # y = 5.0
 z = str(42)        # z = "42"
 ```
 
-:::warning
-Pitfall In Python, `int(3.9)` truncates toward zero (gives 3), not rounds. Use
-`round(3.9)` for rounding.
-:::
+:::warning Pitfall In Python, `int(3.9)` truncates toward zero (gives 3), not rounds. Use
+`round(3.9)` for rounding. :::
 
 <hr />
 
@@ -133,8 +134,8 @@ def sum_n(n):
 **Proof:**
 
 - _Init:_ Before the first iteration, $i = 1$`total = 0`. Sum of empty set = 0. ✓
-- _Maintenance:_ `total` increases by $i$Then $i$ increases by 1. After: `total = 1 + ... + i`
- and next $i' = i + 1$So invariant holds.
+- _Maintenance:_ `total` increases by $i$Then $i$ increases by 1. After: `total = 1 + ... + i` and
+  next $i' = i + 1$So invariant holds.
 - _Termination:_ $i = n + 1$. `total = 1 + 2 + ... + n = n(n+1)/2`. ✓
 
 ### Do-While / Repeat-Until
@@ -149,13 +150,11 @@ while True:
         break
 ```
 
-:::info
-Board-specific **AQA** uses specific pseudocode format with `IF ... THEN ... ELSE ... ENDIF`
+:::info Board-specific **AQA** uses specific pseudocode format with `IF ... THEN ... ELSE ... ENDIF`
 And `WHILE ... ENDWHILE`. **CIE (9618)** uses its own pseudocode format; requires procedure and
 Function definitions with parameters. **OCR (A)** uses OCR-specific pseudocode format; requires
 Local and global variable scope understanding. **Edexcel** uses pseudocode similar to Python-style;
-Requires subroutines with parameters.
-:::
+Requires subroutines with parameters. :::
 
 <hr />
 
@@ -213,12 +212,10 @@ def fib(n):
 $\phi = \frac◆LB◆1+\sqrt{5}◆RB◆◆LB◆2◆RB◆ \approx 1.618$ (the golden ratio).
 
 **Proof sketch.** The recurrence has characteristic equation $r^2 = r + 1$Giving roots $\phi$ and
-$\psi = \frac◆LB◆1-\sqrt{5}◆RB◆◆LB◆2◆RB◆$. The solution is $T(n) = A\phi^n + B\psi^n$. Since $|\psi| \lt{} 1$
-$T(n) = \Theta(\phi^n)$. $\square$
+$\psi = \frac◆LB◆1-\sqrt{5}◆RB◆◆LB◆2◆RB◆$. The solution is $T(n) = A\phi^n + B\psi^n$. Since
+$|\psi| \lt{} 1$ $T(n) = \Theta(\phi^n)$. $\square$
 
-:::warning
-Warning
-Iteration for $O(n)$ time:
+:::warning Warning Iteration for $O(n)$ time:
 
 ```python
 def fib_iter(n):
@@ -256,11 +253,11 @@ Minimum moves = $2^n - 1$. $\square$
 
 ### Procedures vs Functions
 
-| Feature | Procedure | Function |
+| Feature      | Procedure                       | Function        |
 | ------------ | ------------------------------- | --------------- |
-| Return value | None | Returns a value |
-| Purpose | Perform an action (side effect) | Compute a value |
-| Called as | Statement | Expression |
+| Return value | None                            | Returns a value |
+| Purpose      | Perform an action (side effect) | Compute a value |
+| Called as    | Statement                       | Expression      |
 
 ```python
 def print_report(data):    # Procedure
@@ -274,9 +271,9 @@ def calculate_average(data):  # Function
 ### Parameters
 
 - **By value:** A copy of the argument is passed. Changes inside the function do not affect the
- original. (Default in Python for immutable types.)
+  original. (Default in Python for immutable types.)
 - **By reference:** A reference to the original is passed. Changes affect the original. (Python
- passes object references; mutable objects like lists can be modified.)
+  passes object references; mutable objects like lists can be modified.)
 
 ```python
 def modify_list(lst):
@@ -367,13 +364,13 @@ Over the other?
 <details>
 <summary>Answer</summary>
 
-| Aspect | Iteration | Recursion |
+| Aspect      | Iteration               | Recursion                          |
 | ----------- | ----------------------- | ---------------------------------- |
-| Mechanism | Loop constructs | Function calls itself |
-| Memory | $O(1)$ extra | $O(n)$ stack frames |
-| Overhead | Minimal | Function call overhead per step |
+| Mechanism   | Loop constructs         | Function calls itself              |
+| Memory      | $O(1)$ extra            | $O(n)$ stack frames                |
+| Overhead    | Minimal                 | Function call overhead per step    |
 | Readability | Better for simple loops | Better for tree/divide-and-conquer |
-| Risk | Infinite loop | Stack overflow |
+| Risk        | Infinite loop           | Stack overflow                     |
 
 Prefer iteration when: the problem has a natural loop structure, memory is constrained, or
 Performance is critical.
@@ -419,10 +416,10 @@ print(x)
 
 Output: `10`
 
-Explanation: Python passes the integer `10` by object reference. Inside `modify``x = 20` rebinds
-The local parameter `x` to a new integer object `20`. This does not affect the global `x`Which
-Remains `10`. Integers are immutable in Python, so there is no way to modify the original value
-Through the parameter.
+Explanation: Python passes the integer `10` by object reference. Inside `modify``x = 20` rebinds The
+local parameter `x` to a new integer object `20`. This does not affect the global `x`Which Remains
+`10`. Integers are immutable in Python, so there is no way to modify the original value Through the
+parameter.
 
 </details>
 
@@ -514,11 +511,11 @@ for i in range(1, 4):
 
 **Trace:**
 
-| Iteration | `i` | `j` range | Output |
+| Iteration | `i` | `j` range                   | Output             |
 | --------- | --- | --------------------------- | ------------------ |
-| Outer 1 | 1 | `range(1, 2)` — j = 1 | `*` then newline |
-| Outer 2 | 2 | `range(1, 3)` — j = 1, 2 | `**` then newline |
-| Outer 3 | 3 | `range(1, 4)` — j = 1, 2, 3 | `***` then newline |
+| Outer 1   | 1   | `range(1, 2)` — j = 1       | `*` then newline   |
+| Outer 2   | 2   | `range(1, 3)` — j = 1, 2    | `**` then newline  |
+| Outer 3   | 3   | `range(1, 4)` — j = 1, 2, 3 | `***` then newline |
 
 **Output:**
 
@@ -598,12 +595,12 @@ factorial(4)
 
 Stack at deepest point (4 frames):
 
-| Frame | `n` | Waiting for |
+| Frame | `n` | Waiting for                      |
 | ----- | --- | -------------------------------- |
-| 1 | 4 | `factorial(3)` |
-| 2 | 3 | `factorial(2)` |
-| 3 | 2 | `factorial(1)` |
-| 4 | 1 | (base case, returns immediately) |
+| 1     | 4   | `factorial(3)`                   |
+| 2     | 3   | `factorial(2)`                   |
+| 3     | 2   | `factorial(1)`                   |
+| 4     | 1   | (base case, returns immediately) |
 
 ### Trace: Fibonacci of 5
 
@@ -649,11 +646,11 @@ Recursive Fibonacci is $O(\phi^n)$ — it recomputes the same subproblems repeat
 
 Off-by-one errors occur when a loop iterates one time too many or one time too few.
 
-| Error | Code | Fix |
+| Error               | Code                                       | Fix                                                   |
 | ------------------- | ------------------------------------------ | ----------------------------------------------------- |
-| Fencepost | `for i in range(1, n)` — iterates 1 to n-1 | Use `range(1, n + 1)` if you need 1 to n |
-| Off-by-one in while | `while i &lt; n` vs `while i &lt;= n` | Decide whether the boundary is inclusive or exclusive |
-| Array indexing | `array[len(array)]` — IndexError | Valid indices are 0 to `len(array) - 1` |
+| Fencepost           | `for i in range(1, n)` — iterates 1 to n-1 | Use `range(1, n + 1)` if you need 1 to n              |
+| Off-by-one in while | `while i &lt; n` vs `while i &lt;= n`      | Decide whether the boundary is inclusive or exclusive |
+| Array indexing      | `array[len(array)]` — IndexError           | Valid indices are 0 to `len(array) - 1`               |
 
 ### Infinite Loops
 
@@ -746,15 +743,15 @@ Trace each `(i, j)` pair:
 
 | `i` | `j` | Condition | `result` change | `result` |
 | --- | --- | --------- | --------------- | -------- |
-| 0 | 0 | i == j | +1 | 1 |
-| 0 | 1 | else | +3 | 4 |
-| 0 | 2 | else | +3 | 7 |
-| 1 | 0 | i &gt; j | +2 | 9 |
-| 1 | 1 | i == j | +1 | 10 |
-| 1 | 2 | else | +3 | 13 |
-| 2 | 0 | i &gt; j | +2 | 15 |
-| 2 | 1 | i &gt; j | +2 | 17 |
-| 2 | 2 | i == j | +1 | 18 |
+| 0   | 0   | i == j    | +1              | 1        |
+| 0   | 1   | else      | +3              | 4        |
+| 0   | 2   | else      | +3              | 7        |
+| 1   | 0   | i &gt; j  | +2              | 9        |
+| 1   | 1   | i == j    | +1              | 10       |
+| 1   | 2   | else      | +3              | 13       |
+| 2   | 0   | i &gt; j  | +2              | 15       |
+| 2   | 1   | i &gt; j  | +2              | 17       |
+| 2   | 2   | i == j    | +1              | 18       |
 
 Output: `18`
 
@@ -785,9 +782,9 @@ Each recursive call either:
 
 - Returns (base case `low &gt; high`), or
 - Calls with `mid - 1` as the new high: $V' = (mid - 1) - low + 1 = mid - low$. Since
- `mid &gt;= low`$V' \leq V - 1$.
+  `mid &gt;= low`$V' \leq V - 1$.
 - Calls with `mid + 1` as the new low:
- $V' = high - (mid + 1) + 1 = high - mid`. Since
+  $V' = high - (mid + 1) + 1 = high - mid`. Since
  `mid \lt{}= high`$V' \leq V - 1$.
 
 In both recursive cases, $V$ strictly decreases. Since $V$ is a non-negative integer, the function

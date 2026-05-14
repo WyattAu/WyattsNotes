@@ -1,6 +1,8 @@
 ---
 title: Automata and Computability
-description: "A-Level Computer Science notes on Automata and Computability: 1. Finite State Machines (FSM); Deterministic Finite Automaton (DFA)."
+description:
+  'A-Level Computer Science notes on Automata and Computability: 1. Finite State Machines (FSM);
+  Deterministic Finite Automaton (DFA).'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - ComputerScience
@@ -9,6 +11,7 @@ categories:
   - ComputerScience
 slug: automata-and-computability
 ---
+
 ## 1. Finite State Machines (FSM)
 
 ### Deterministic Finite Automaton (DFA)
@@ -33,11 +36,11 @@ $M = (Q, \Sigma, \delta, q_0, F)$ where:
 - $\Sigma = \{0, 1\}$
 - $F = \{B\}$
 
-| | 0 | 1 |
+|       | 0   | 1   |
 | ----- | --- | --- |
-| **S** | A | S |
-| **A** | A | B |
-| **B** | A | S |
+| **S** | A   | S   |
+| **A** | A   | B   |
+| **B** | A   | S   |
 
 Trace for "1101": S → S → A → B. Accepted. ✓
 
@@ -66,8 +69,8 @@ $\delta: Q \times (\Sigma \cup \{\varepsilon\}) \to \mathcal{P}(Q)$
 
 ## 2. DFA-NFA Equivalence
 
-**Theorem (Rabin-Scott).** For every NFA $N$There exists a DFA $D$ such that $L(N) = L(D)$. DFAs
-And NFAs accept exactly the same class of languages (the **regular languages**).
+**Theorem (Rabin-Scott).** For every NFA $N$There exists a DFA $D$ such that $L(N) = L(D)$. DFAs And
+NFAs accept exactly the same class of languages (the **regular languages**).
 
 **Proof (subset construction).** Given NFA $N = (Q_N, \Sigma, \delta_N, q_0, F_N)$Construct DFA
 $D = (Q_D, \Sigma, \delta_D, q_0', F_D)$:
@@ -75,7 +78,7 @@ $D = (Q_D, \Sigma, \delta_D, q_0', F_D)$:
 1. $Q_D = \mathcal{P}(Q_N)$ (states are subsets of $Q_N$)
 2. $q_0' = \varepsilon\mathrm{-closure}(\{q_0\})$
 3. $\delta_D(S, a) = \varepsilon\mathrm{-closure}\left(\bigcup_{q \in S} \delta_N(q, a)\right)$ for
- $S \subseteq Q_N$
+   $S \subseteq Q_N$
 4. $F_D = \{S \subseteq Q_N \mid S \cap F_N \neq \emptyset\}$
 
 The DFA tracks the set of all states the NFA could be in. Since $Q_N$ is finite, $Q_D$ is finite (at
@@ -84,17 +87,15 @@ Most $2^{|Q_N|}$ states). The DFA accepts exactly the same strings as the NFA. $
 **Corollary.** The class of regular languages is closed under union, intersection, complementation,
 Concatenation, and Kleene star.
 
-:::info
-Board-specific
+:::info Board-specific
 
 - **AQA** requires finite state machines (FSMs) with state transition diagrams and tables, regular
- expressions, and Turing machines (conceptual understanding)
+  expressions, and Turing machines (conceptual understanding)
 - **CIE (9618)** requires finite state machines and Turing machines; may not emphasise regular
- expressions as heavily
+  expressions as heavily
 - **OCR (A)** requires finite state machines, state transition diagrams, regular expressions, and
- understanding of decidability
-- **Edexcel** covers finite state machines and basic automata theory
-:::
+  understanding of decidability
+- **Edexcel** covers finite state machines and basic automata theory :::
 
 <hr />
 
@@ -104,26 +105,26 @@ Board-specific
 
 A **regular expression** defines a regular language using operators:
 
-| Operator | Name | Meaning | Regex |
+| Operator      | Name          | Meaning                          | Regex  |
 | ------------- | ------------- | -------------------------------- | ------ |
-| $\emptyset$ | Empty set | Accepts nothing | — |
-| $\varepsilon$ | Empty string | Accepts the empty string | `ε` |
-| $a$ | Literal | Accepts the character $a$ | `a` |
-| $R \cdot S$ | Concatenation | Strings from $R$ followed by $S$ | `RS` |
-| $R \mid S$ | Alternation | Strings from $R$ or $S$ | `R\|S` |
-| $R^*$ | Kleene star | Zero or more repetitions of $R$ | `R*` |
+| $\emptyset$   | Empty set     | Accepts nothing                  | —      |
+| $\varepsilon$ | Empty string  | Accepts the empty string         | `ε`    |
+| $a$           | Literal       | Accepts the character $a$        | `a`    |
+| $R \cdot S$   | Concatenation | Strings from $R$ followed by $S$ | `RS`   |
+| $R \mid S$    | Alternation   | Strings from $R$ or $S$          | `R\|S` |
+| $R^*$         | Kleene star   | Zero or more repetitions of $R$  | `R*`   |
 
 **Kleene's Theorem.** A language is regular if and only if it can be described by a regular
 Expression.
 
 ### Examples
 
-| Language | Regular Expression |
+| Language                       | Regular Expression |
 | ------------------------------ | ------------------ |
-| Strings containing "abc" | `.*(abc).*` |
-| Binary strings ending in "01" | `(0\|1)*01` |
-| Strings of even length | `((0\|1)(0\|1))*` |
-| Strings with no consecutive 1s | `(0\|10)*(1\|ε)` |
+| Strings containing "abc"       | `.*(abc).*`        |
+| Binary strings ending in "01"  | `(0\|1)*01`        |
+| Strings of even length         | `((0\|1)(0\|1))*`  |
+| Strings with no consecutive 1s | `(0\|10)*(1\|ε)`   |
 
 ### Limitations of Regular Languages
 
@@ -138,8 +139,8 @@ $s = xyz$ where:
 3. $xy^iz \in L$ for all $i \geq 0$
 
 Choose $s = a^p b^p$. By condition 1, $y$ consists only of $a$'s. Pumping ($i = 0$):
-$xz = a^{p-|y|}b^p$. Since $|y| \geq 1$$p - |y| \neq p$So $a^{p-|y|}b^p \notin L$.
-Contradiction. $\square$
+$xz = a^{p-|y|}b^p$. Since $|y| \geq 1$$p - |y| \neq p$So $a^{p-|y|}b^p \notin L$. Contradiction.
+$\square$
 
 <hr />
 
@@ -177,19 +178,19 @@ $M = (Q, \Sigma, \Gamma, \delta, q_0, q_{accept}, q_{reject})$ where:
 
 **Formal transitions (partial):**
 
-| State | Read | Write | Move | Next State |
+| State | Read     | Write    | Move | Next State   |
 | ----- | -------- | -------- | ---- | ------------ |
-| $q_0$ | $a$ | $X$ | $R$ | $q_1$ |
-| $q_0$ | $X$ | $X$ | $R$ | $q_3$ |
-| $q_0$ | $\sqcup$ | $\sqcup$ | $S$ | $q_{accept}$ |
-| $q_1$ | $a$ | $a$ | $R$ | $q_1$ |
-| $q_1$ | $X$ | $X$ | $R$ | $q_1$ |
-| $q_1$ | $b$ | $X$ | $L$ | $q_2$ |
-| $q_2$ | $a$ | $a$ | $L$ | $q_2$ |
-| $q_2$ | $X$ | $X$ | $R$ | $q_0$ |
-| $q_3$ | $X$ | $X$ | $R$ | $q_3$ |
-| $q_3$ | $\sqcup$ | $\sqcup$ | $S$ | $q_{accept}$ |
-| $q_3$ | $b$ | $b$ | $S$ | $q_{reject}$ |
+| $q_0$ | $a$      | $X$      | $R$  | $q_1$        |
+| $q_0$ | $X$      | $X$      | $R$  | $q_3$        |
+| $q_0$ | $\sqcup$ | $\sqcup$ | $S$  | $q_{accept}$ |
+| $q_1$ | $a$      | $a$      | $R$  | $q_1$        |
+| $q_1$ | $X$      | $X$      | $R$  | $q_1$        |
+| $q_1$ | $b$      | $X$      | $L$  | $q_2$        |
+| $q_2$ | $a$      | $a$      | $L$  | $q_2$        |
+| $q_2$ | $X$      | $X$      | $R$  | $q_0$        |
+| $q_3$ | $X$      | $X$      | $R$  | $q_3$        |
+| $q_3$ | $\sqcup$ | $\sqcup$ | $S$  | $q_{accept}$ |
+| $q_3$ | $b$      | $b$      | $S$  | $q_{reject}$ |
 
 <hr />
 
@@ -241,12 +242,12 @@ Would have to run forever).
 
 ## 7. Decidable and Undecidable Problems
 
-| Category | Definition | Example |
+| Category       | Definition                                            | Example                |
 | -------------- | ----------------------------------------------------- | ---------------------- |
-| Decidable | A TM always halts with the correct answer | "Is $n$ prime?" |
-| Semi-decidable | A TM halts on yes-instances; may loop on no-instances | Halting problem |
-| Undecidable | No TM can solve it for all inputs | Halting problem (full) |
-| Unrecognisable | No TM even semi-decides it | Complement of halting |
+| Decidable      | A TM always halts with the correct answer             | "Is $n$ prime?"        |
+| Semi-decidable | A TM halts on yes-instances; may loop on no-instances | Halting problem        |
+| Undecidable    | No TM can solve it for all inputs                     | Halting problem (full) |
+| Unrecognisable | No TM even semi-decides it                            | Complement of halting  |
 
 <hr />
 
@@ -255,9 +256,9 @@ Would have to run forever).
 ### Definitions
 
 - **P:** The class of decision problems solvable by a deterministic Turing machine in **polynomial
- time** $O(n^k)$ for some constant $k$.
+  time** $O(n^k)$ for some constant $k$.
 - **NP:** The class of decision problems whose **yes-instances** can be **verified** by a
- deterministic Turing machine in polynomial time (given a certificate).
+  deterministic Turing machine in polynomial time (given a certificate).
 
 ### Relationship
 
@@ -288,21 +289,21 @@ A problem is **NP-complete** if:
 
 ### Examples of Problems in P
 
-| Problem | Complexity |
+| Problem                  | Complexity          |
 | ------------------------ | ------------------- |
-| Sorting | $O(n \log n)$ |
-| Shortest path (Dijkstra) | $O((V+E)\log V)$ |
-| MST (Kruskal/Prim) | $O(E \log V)$ |
-| String matching | $O(nm)$ or $O(n+m)$ |
-| 2-SAT | $O(n + m)$ |
+| Sorting                  | $O(n \log n)$       |
+| Shortest path (Dijkstra) | $O((V+E)\log V)$    |
+| MST (Kruskal/Prim)       | $O(E \log V)$       |
+| String matching          | $O(nm)$ or $O(n+m)$ |
+| 2-SAT                    | $O(n + m)$          |
 
 ### Examples of Problems in NP (not known to be in P)
 
-| Problem | Verification |
+| Problem           | Verification                 |
 | ----------------- | ---------------------------- |
-| SAT | Verify assignment in $O(n)$ |
-| TSP (decision) | Verify tour length in $O(n)$ |
-| Sudoku (n×n) | Verify solution in $O(n^2)$ |
+| SAT               | Verify assignment in $O(n)$  |
+| TSP (decision)    | Verify tour length in $O(n)$ |
+| Sudoku (n×n)      | Verify solution in $O(n^2)$  |
 | Graph 3-colouring | Verify colouring in $O(V+E)$ |
 
 <hr />
@@ -322,10 +323,10 @@ $M = (Q, \Sigma, \delta, q_0, F)$ where:
 - $q_0$ is start state
 - $F = \{q_0\}$ (accept when even number of 0s)
 
-| | 0 | 1 |
+|         | 0     | 1     |
 | ------- | ----- | ----- |
 | → $q_0$ | $q_1$ | $q_0$ |
-| $q_1$ | $q_0$ | $q_1$ |
+| $q_1$   | $q_0$ | $q_1$ |
 
 Trace "110": $q_0 \to q_0 \to q_0 \to q_0$. Accept (0 zeros, even). ✓ Trace "101":
 $q_0 \to q_0 \to q_1 \to q_1$. Reject (1 zero, odd). ✓
@@ -336,14 +337,14 @@ $q_0 \to q_0 \to q_1 \to q_1$. Reject (1 zero, odd). ✓
 
 NFA: States $\{0, 1, 2\}$Alphabet $\{a, b\}$Start state 0, accepting state 2.
 
-| From | Input | To |
+| From | Input | To     |
 | ---- | ----- | ------ |
-| 0 | a | {0, 1} |
-| 0 | b | {0} |
-| 1 | a | ∅ |
-| 1 | b | {2} |
-| 2 | a | ∅ |
-| 2 | b | ∅ |
+| 0    | a     | {0, 1} |
+| 0    | b     | {0}    |
+| 1    | a     | ∅      |
+| 1    | b     | {2}    |
+| 2    | a     | ∅      |
+| 2    | b     | ∅      |
 
 <details>
 <summary>Answer</summary>
@@ -358,12 +359,12 @@ From $\{0\}$: a → {0, 1}, b → {0} From $\{0, 1\}$: a → δ(0,a) ∪ δ(1,a)
 
 Accepting states: any subset containing 2 → $\{0, 2\}$.
 
-| DFA State | a | b | Accept? |
+| DFA State   | a           | b           | Accept? |
 | ----------- | ----------- | ----------- | ------- |
-| → $\{0\}$ | $\{0,1\}$ | $\{0\}$ | No |
-| $\{0,1\}$ | $\{0,1\}$ | $\{0,2\}$ | No |
-| $\{0,2\}$ | $\{0,1\}$ | $\{0\}$ | Yes |
-| $\emptyset$ | $\emptyset$ | $\emptyset$ | No |
+| → $\{0\}$   | $\{0,1\}$   | $\{0\}$     | No      |
+| $\{0,1\}$   | $\{0,1\}$   | $\{0,2\}$   | No      |
+| $\{0,2\}$   | $\{0,1\}$   | $\{0\}$     | Yes     |
+| $\emptyset$ | $\emptyset$ | $\emptyset$ | No      |
 
 </details>
 
@@ -373,8 +374,8 @@ The substring "11".
 <details>
 <summary>Answer</summary>
 
-Any such string is a sequence of blocks, where each block is either `0``10`Or `1` (but the last
-`1` must not be followed by another `1`).
+Any such string is a sequence of blocks, where each block is either `0``10`Or `1` (but the last `1`
+must not be followed by another `1`).
 
 Regular expression: `(0|10)*(1|ε)`
 
@@ -410,10 +411,10 @@ Pump with $i = 0$: $xz = 0^{p-k}10^p1$.
 
 Is this in $L$? It would need to be $ww$ for some $w$. The length is $2p - k + 2$Which is odd when
 $k$ is odd, so it cannot be $ww$ (which always has even length). But even when $k$ is even, the
-First half is $0^{(p-k/2)+1}$... Actually, for $xz = 0^{p-k}10^p1$ to be in $L = \{ww\}$We need
-The first half to equal the second half. The total length is $2p + 2 - k$. The first half is the
-First $p + 1 - k/2$ characters: $0^{p-k}1$. The second half is: $0^{k/2}0^p1 = 0^{p+k/2}1$. For
-These to be equal, $p-k = p+k/2$Giving $k = -k/2$So $k = 0$. But $k \geq 1$. Contradiction. ✓
+First half is $0^{(p-k/2)+1}$... Actually, for $xz = 0^{p-k}10^p1$ to be in $L = \{ww\}$We need The
+first half to equal the second half. The total length is $2p + 2 - k$. The first half is the First
+$p + 1 - k/2$ characters: $0^{p-k}1$. The second half is: $0^{k/2}0^p1 = 0^{p+k/2}1$. For These to
+be equal, $p-k = p+k/2$Giving $k = -k/2$So $k = 0$. But $k \geq 1$. Contradiction. ✓
 
 Therefore, $L$ is not regular. $\square$
 
@@ -474,7 +475,7 @@ If the halting problem were decidable, we could build a TM $M$ that decides $L$:
 
 1. On input $w$Run the halting decider $H$ on $(M_L, w)$
 2. If $H$ says $M_L$ halts on $w$: $M_L$ will accept (since it only halts on members of $L$), so run
- $M_L$ on $w$ and accept
+   $M_L$ on $w$ and accept
 3. If $H$ says $M_L$ doesn't halt on $w$: reject (since $w \notin L$)
 
 This TM $M$ always halts and correctly decides $L$. Since $L$ was arbitrary, every semi-decidable
@@ -494,13 +495,13 @@ An example of each.
 **Decidable:** There exists a TM that halts on ALL inputs and correctly answers yes/no.
 
 - Example: "Given a DFA $M$ and a string $w$Does $M$ accept $w$?" — simulate $M$ on $w$; it always
- halts.
+  halts.
 
 **Semi-decidable (recursively enumerable):** There exists a TM that halts and accepts on
 Yes-instances, but may loop forever on no-instances.
 
 - Example: "Given a TM $M$ and input $w$Does $M$ halt on $w$?" — run $M$ on $w$; if it halts,
- accept. But if $M$ doesn't halt, our verifier loops forever.
+  accept. But if $M$ doesn't halt, our verifier loops forever.
 
 **Key difference:** For semi-decidable problems, you can verify a "yes" answer in finite time, but
 You cannot always verify a "no" answer (the machine might just be taking a long time, or it might

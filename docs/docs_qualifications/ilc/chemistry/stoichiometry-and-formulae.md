@@ -1,6 +1,8 @@
 ---
 title: Stoichiometry and Formulae
-description: "Stoichiometry and Formulae — The Mole Concept (OL/HL); Avogadro's Number; Molar Mass; Conversions with worked examples and exam-style questions."
+description:
+  "Stoichiometry and Formulae — The Mole Concept (OL/HL); Avogadro's Number; Molar Mass; Conversions
+  with worked examples and exam-style questions."
 date: 2026-04-14
 tags:
   - Chemistry
@@ -9,6 +11,7 @@ categories:
   - Chemistry
 slug: stoichiometry-and-formulae
 ---
+
 # Stoichiometry and Formulae
 
 Stoichiometry is the quantitative study of chemical reactions, including mole calculations,
@@ -41,7 +44,8 @@ $$
 N = \frac{m}{M}, \quad n = \frac{N}{N_A}, \quad n = \frac{V}{V_m}
 $$
 
-At STP ($0^\circ\mathrm{C{}$1 atm): $V_m = 22.4\mathrm{ L/mol{}$. At room temperature ($25^\circ\mathrm{C{}$1 atm):
+At STP ($0^\circ\mathrm{C{}$1 atm): $V_m = 22.4\mathrm{ L/mol{}$. At room temperature
+($25^\circ\mathrm{C{}$1 atm):
 $V_m = 24.0\mathrm{ L/mol{}$.
 
 **Example (OL):** How many moles are in 10 g of $\mathrm{NaOH{}$ ($M = 40\mathrm{ g/mol{}$)?
@@ -77,8 +81,8 @@ $$
 
 Where $n = \frac{\mathrm{molecular mass{}}{\mathrm{empirical formula mass{}}$.
 
-**Example (OL):** The empirical formula of a compound is $\mathrm{CH{}_2\mathrm{O{}$ and its molecular
-Mass is $180\mathrm{ g/mol{}$. Find the molecular formula.
+**Example (OL):** The empirical formula of a compound is $\mathrm{CH{}_2\mathrm{O{}$ and its
+molecular Mass is $180\mathrm{ g/mol{}$. Find the molecular formula.
 
 Empirical formula mass = $12 + 2 + 16 = 30\mathrm{ g/mol{}$.
 
@@ -130,8 +134,8 @@ $$
 3. Use the stoichiometric ratio to find moles of the unknown.
 4. Convert back to the required units.
 
-**Example (OL):** What mass of $\mathrm{NaCl{}$ is produced when 5.3 g of $\mathrm{Na{}_2\mathrm{CO{}_3$
-Reacts with excess $\mathrm{HCl{}$?
+**Example (OL):** What mass of $\mathrm{NaCl{}$ is produced when 5.3 g of
+$\mathrm{Na{}_2\mathrm{CO{}_3$ Reacts with excess $\mathrm{HCl{}$?
 
 $$
 \mathrm{Na{}_2\mathrm{CO{}_3 + 2\mathrm{HCl{} \to 2\mathrm{NaCl{} + \mathrm{H{}_2\mathrm{O{} + \mathrm{CO{}_2
@@ -191,8 +195,8 @@ $$
 \%\mathrm{ purity{} = \frac{\mathrm{mass of pure substance{}}{\mathrm{mass of impure sample{}} \times 100
 $$
 
-**Example (HL):** 12 g of impure $\mathrm{CaCO{}_3$ produced 5.5 g of $\mathrm{CaO{}$. Find the percentage
-Purity.
+**Example (HL):** 12 g of impure $\mathrm{CaCO{}_3$ produced 5.5 g of $\mathrm{CaO{}$. Find the
+percentage Purity.
 
 $$
 \mathrm{CaCO{}_3 \to \mathrm{CaO{} + \mathrm{CO{}_2
@@ -220,8 +224,8 @@ $$
 
 Where $c$ is in mol/L (M), $n$ in mol, and $V$ in litres.
 
-**Example (OL):** What is the concentration of a solution containing 0.5 mol of $\mathrm{NaCl{}$ in 250
-ML?
+**Example (OL):** What is the concentration of a solution containing 0.5 mol of $\mathrm{NaCl{}$ in
+250 ML?
 
 $$
 C = \frac{0.5}{0.250} = 2.0\mathrm{ M{}
@@ -241,8 +245,8 @@ Solution of known concentration.
 3. Use the stoichiometric ratio to find moles of the unknown.
 4. Calculate the concentration of the unknown.
 
-**Example (HL):** 25.0 mL of $\mathrm{HCl{}$ is titrated with $0.100\mathrm{ M{}$ $\mathrm{NaOH{}$. The
-Average titre is $22.5\mathrm{ mL{}$. Find the concentration of $\mathrm{HCl{}$.
+**Example (HL):** 25.0 mL of $\mathrm{HCl{}$ is titrated with $0.100\mathrm{ M{}$ $\mathrm{NaOH{}$.
+The Average titre is $22.5\mathrm{ mL{}$. Find the concentration of $\mathrm{HCl{}$.
 
 $$
 \mathrm{HCl{} + \mathrm{NaOH{} \to \mathrm{NaCl{} + \mathrm{H{}_2\mathrm{O{}
@@ -264,10 +268,10 @@ $$
 
 Used when the substance being analysed does not react directly with the titrant, or is insoluble.
 
-**Example (HL):** 2.00 g of impure limestone ($\mathrm{CaCO{}_3$) is reacted with $50.0\mathrm{ mL{}$ of
-$1.00\mathrm{ M{}$ $\mathrm{HCl{}$ (excess). The remaining acid requires $18.0\mathrm{ mL{}$ of
-$0.500\mathrm{ M{}$ $\mathrm{NaOH{}$ to neutralise. Find the percentage of $\mathrm{CaCO{}_3$ in the
-Limestone.
+**Example (HL):** 2.00 g of impure limestone ($\mathrm{CaCO{}_3$) is reacted with
+$50.0\mathrm{ mL{}$ of $1.00\mathrm{ M{}$ $\mathrm{HCl{}$ (excess). The remaining acid requires
+$18.0\mathrm{ mL{}$ of $0.500\mathrm{ M{}$ $\mathrm{NaOH{}$ to neutralise. Find the percentage of
+$\mathrm{CaCO{}_3$ in the Limestone.
 
 $$
 \mathrm{CaCO{}_3 + 2\mathrm{HCl{} \to \mathrm{CaCl{}_2 + \mathrm{H{}_2\mathrm{O{} + \mathrm{CO{}_2
@@ -311,8 +315,8 @@ Exceeding 100%.
 
 Some salts contain water molecules in their crystal structure, called water of crystallisation.
 
-**Example (HL):** 5.00 g of hydrated $\mathrm{CuSO{}_4 \cdot x\mathrm{H{}_2\mathrm{O{}$ is heated until all
-Water is removed, leaving 3.20 g of anhydrous $\mathrm{CuSO{}_4$. Find $x$.
+**Example (HL):** 5.00 g of hydrated $\mathrm{CuSO{}_4 \cdot x\mathrm{H{}_2\mathrm{O{}$ is heated
+until all Water is removed, leaving 3.20 g of anhydrous $\mathrm{CuSO{}_4$. Find $x$.
 
 $$
 M(\mathrm{H{}_2\mathrm{O{}) = 5.00 - 3.20 = 1.80\mathrm{ g{}
@@ -348,9 +352,9 @@ $$
 1. **Balancing equations** -- always check atoms on both sides.
 2. **Molar mass units** -- use g/mol for mass calculations.
 3. **Limiting reagent** -- identify which reactant limits the reaction by comparing required vs
- available ratios.
+   available ratios.
 4. **Titration** -- use the average titre (excluding rough titration) and ensure the balanced
- equation gives the correct mole ratio.
+   equation gives the correct mole ratio.
 5. **Gas volumes** -- ensure temperature is in Kelvin.
 6. **Water of crystallisation** -- subtract the mass of the anhydrous salt from the hydrated salt.
 
@@ -365,14 +369,15 @@ $$
 
 ### Higher Level
 
-1. 4.6 g of ethanol ($\mathrm{C{}_2\mathrm{H{}_5\mathrm{OH{}$) is burned in excess oxygen. Calculate the mass
- of $\mathrm{CO{}_2$ produced.
-2. 10.0 g of $\mathrm{Zn{}$ is added to $200\mathrm{ mL{}$ of $1.00\mathrm{ M{}$ $\mathrm{HCl{}$. Find the mass
- of $\mathrm{ZnCl{}_2$ produced.
-3. In a titration, $20.0\mathrm{ mL{}$ of $\mathrm{H{}_2\mathrm{SO{}_4$ is neutralised by $25.0\mathrm{ mL{}$ of
- $0.200\mathrm{ M{}$ $\mathrm{NaOH{}$. Find the concentration of $\mathrm{H{}_2\mathrm{SO{}_4$.
-4. $6.30\mathrm{ g{}$ of hydrated $\mathrm{Na{}_2\mathrm{CO{}_3 \cdot x\mathrm{H{}_2\mathrm{O{}$ gives
- $2.33\mathrm{ g{}$ of anhydrous $\mathrm{Na{}_2\mathrm{CO{}_3$ on heating. Find $x$.
+1. 4.6 g of ethanol ($\mathrm{C{}_2\mathrm{H{}_5\mathrm{OH{}$) is burned in excess oxygen. Calculate
+   the mass of $\mathrm{CO{}_2$ produced.
+2. 10.0 g of $\mathrm{Zn{}$ is added to $200\mathrm{ mL{}$ of $1.00\mathrm{ M{}$ $\mathrm{HCl{}$.
+   Find the mass of $\mathrm{ZnCl{}_2$ produced.
+3. In a titration, $20.0\mathrm{ mL{}$ of $\mathrm{H{}_2\mathrm{SO{}_4$ is neutralised by
+   $25.0\mathrm{ mL{}$ of $0.200\mathrm{ M{}$ $\mathrm{NaOH{}$. Find the concentration of
+   $\mathrm{H{}_2\mathrm{SO{}_4$.
+4. $6.30\mathrm{ g{}$ of hydrated $\mathrm{Na{}_2\mathrm{CO{}_3 \cdot x\mathrm{H{}_2\mathrm{O{}$
+   gives $2.33\mathrm{ g{}$ of anhydrous $\mathrm{Na{}_2\mathrm{CO{}_3$ on heating. Find $x$.
 
 ---
 
@@ -490,8 +495,8 @@ Ratio: $1 : 4 : 1$. Empirical formula: $\mathrm{NH{}_4\mathrm{Cl{}$ (ammonium ch
 
 ## Advanced Limiting Reagent Problems (HL)
 
-**Worked Example 15 (HL):** $4.6 \mathrm{ g{}$ of ethanol ($\mathrm{C{}_2\mathrm{H{}_5\mathrm{OH{}$) is burned
-In excess oxygen. Calculate the mass of $\mathrm{CO{}_2$ produced.
+**Worked Example 15 (HL):** $4.6 \mathrm{ g{}$ of ethanol ($\mathrm{C{}_2\mathrm{H{}_5\mathrm{OH{}$)
+is burned In excess oxygen. Calculate the mass of $\mathrm{CO{}_2$ produced.
 
 $$\mathrm{C{}_2\mathrm{H{}_5\mathrm{OH{} + 3\mathrm{O{}_2 \to 2\mathrm{CO{}_2 + 3\mathrm{H{}_2\mathrm{O{}$$
 
@@ -502,8 +507,8 @@ $$n(\mathrm{CO{}_2) = 2 \times 0.10 = 0.20 \mathrm{ mol{}$$
 $$m(\mathrm{CO{}_2) = 0.20 \times 44 = 8.8 \mathrm{ g{}$$
 
 **Worked Example 16 (HL):** $10.0 \mathrm{ g{}$ of $\mathrm{Zn{}$ is added to $200 \mathrm{ mL{}$ of
-$1.00 \mathrm{ M{}$ $\mathrm{HCl{}$. Find the mass of $\mathrm{ZnCl{}_2$ produced and identify the limiting
-Reagent.
+$1.00 \mathrm{ M{}$ $\mathrm{HCl{}$. Find the mass of $\mathrm{ZnCl{}_2$ produced and identify the
+limiting Reagent.
 
 $$\mathrm{Zn{} + 2\mathrm{HCl{} \to \mathrm{ZnCl{}_2 + \mathrm{H{}_2$$
 
@@ -538,8 +543,8 @@ $$c(\mathrm{H{}_2\mathrm{SO{}_4) = \frac{0.00250}{0.0200} = 0.125 \mathrm{ M{}$$
 
 ### Worked Example 18 (HL): Percentage Purity
 
-$12.0 \mathrm{ g{}$ of impure $\mathrm{CaCO{}_3$ required $300 \mathrm{ cm{}^3$ of $1.00 \mathrm{ M{}$
-$\mathrm{HCl{}$ to react completely. Find the percentage purity.
+$12.0 \mathrm{ g{}$ of impure $\mathrm{CaCO{}_3$ required $300 \mathrm{ cm{}^3$ of
+$1.00 \mathrm{ M{}$ $\mathrm{HCl{}$ to react completely. Find the percentage purity.
 
 $$\mathrm{CaCO{}_3 + 2\mathrm{HCl{} \to \mathrm{CaCl{}_2 + \mathrm{H{}_2\mathrm{O{} + \mathrm{CO{}_2$$
 
@@ -567,8 +572,8 @@ $$\%\mathrm{ purity{} = \frac{6.0}{12.0} \times 100 = 50.0\%$$
 Gravimetric analysis determines the amount of a substance by measuring the mass of a precipitate.
 
 **Worked Example 19 (HL):** To determine the amount of sulfate in a solution, $\mathrm{BaCl{}_2$ is
-Added to precipitate $\mathrm{BaSO{}_4$. If $1.17 \mathrm{ g{}$ of $\mathrm{BaSO{}_4$ is obtained, find the
-Mass of sulfate ions in the original solution.
+Added to precipitate $\mathrm{BaSO{}_4$. If $1.17 \mathrm{ g{}$ of $\mathrm{BaSO{}_4$ is obtained,
+find the Mass of sulfate ions in the original solution.
 
 $$\mathrm{SO{}_4^{2-} + \mathrm{Ba{}^{2+} \to \mathrm{BaSO{}_4\mathrm{(s){}$$
 
@@ -585,15 +590,15 @@ $$m(\mathrm{SO{}_4^{2-}) = 0.00501 \times 96.1 = 0.481 \mathrm{ g{}$$
 1. **Balancing equations** -- always check atoms on both sides.
 2. **Molar mass units** -- use g/mol for mass calculations.
 3. **Limiting reagent** -- identify which reactant limits the reaction by comparing required vs
- available ratios.
+   available ratios.
 4. **Titration** -- use the average titre (excluding rough titration) and ensure the balanced
- equation gives the correct mole ratio.
+   equation gives the correct mole ratio.
 5. **Gas volumes** -- ensure temperature is in Kelvin.
 6. **Water of crystallisation** -- subtract the mass of the anhydrous salt from the hydrated salt.
 7. **Molar gas volume** -- use 22.4 L/mol at STP (0°C) and 24.0 L/mol at RTP (25°C). Do not mix
- these up.
+   these up.
 8. **Percentage yield** -- theoretical yield is the maximum possible; actual yield is always less
- due to incomplete reactions, side reactions, and losses during purification.
+   due to incomplete reactions, side reactions, and losses during purification.
 
 ---
 
@@ -602,25 +607,27 @@ $$m(\mathrm{SO{}_4^{2-}) = 0.00501 \times 96.1 = 0.481 \mathrm{ g{}$$
 5. A compound contains 69.9% iron and 30.1% oxygen by mass. Find its empirical formula.
 6. Balance: $\mathrm{Al{} + \mathrm{O{}_2 \to \mathrm{Al{}_2\mathrm{O{}_3$.
 7. Find the molar mass of $\mathrm{H{}_2\mathrm{SO{}_4$.
-8. $2.5 \mathrm{ g{}$ of $\mathrm{CaCO{}_3$ is heated until completely decomposed. Calculate the volume of
- $\mathrm{CO{}_2$ produced at RTP.
-9. A mixture of $\mathrm{NaCl{}$ and $\mathrm{Na{}_2\mathrm{CO{}_3$ weighing $5.00 \mathrm{ g{}$ requires
- $50.0 \mathrm{ cm{}^3$ of $0.500 \mathrm{ M{}$ $\mathrm{HCl{}$ for complete reaction. Calculate the
- percentage of each compound in the mixture.
+8. $2.5 \mathrm{ g{}$ of $\mathrm{CaCO{}_3$ is heated until completely decomposed. Calculate the
+   volume of $\mathrm{CO{}_2$ produced at RTP.
+9. A mixture of $\mathrm{NaCl{}$ and $\mathrm{Na{}_2\mathrm{CO{}_3$ weighing $5.00 \mathrm{ g{}$
+   requires $50.0 \mathrm{ cm{}^3$ of $0.500 \mathrm{ M{}$ $\mathrm{HCl{}$ for complete reaction.
+   Calculate the percentage of each compound in the mixture.
 10. In a back titration, $2.00 \mathrm{ g{}$ of limestone ($\mathrm{CaCO{}_3$) is reacted with
- $50.0 \mathrm{ mL{}$ of $1.00 \mathrm{ M{}$ $\mathrm{HCl{}$ (excess). The remaining acid requires
- $30.0 \mathrm{ mL{}$ of $0.500 \mathrm{ M{}$ $\mathrm{NaOH{}$ to neutralise. Calculate the percentage
- purity of the limestone.
-11. $6.30 \mathrm{ g{}$ of hydrated $\mathrm{Na{}_2\mathrm{CO{}_3 \cdot x\mathrm{H{}_2\mathrm{O{}$ gives
- $2.33 \mathrm{ g{}$ of anhydrous $\mathrm{Na{}_2\mathrm{CO{}_3$ on heating. Find $x$.
-12. A student performs a titration and obtains the following results: $25.0 \mathrm{ cm{}^3$ of acid is
- titrated with $0.100 \mathrm{ M{}$ $\mathrm{NaOH{}$. Titre values: $24.80, 24.90, 24.85 \mathrm{ cm{}^3$.
- Calculate the concentration of the acid, assuming it is monoprotic.
-13. What mass of $\mathrm{AgCl{}$ precipitate would be formed when excess $\mathrm{AgNO{}_3$ is added to
- $25.0 \mathrm{ cm{}^3$ of $0.150 \mathrm{ M{}$ $\mathrm{MgCl{}_2$?
-14. A gas mixture at $100 \mathrm{ kPa{}$ and $298 \mathrm{ K{}$ contains $\mathrm{N{}_2$$\mathrm{O{}_2$And
- $\mathrm{CO{}_2$ with partial pressures of 78, 21, and 1 kPa respectively. Calculate the mole
- fraction and number of moles of each gas if the total volume is $10.0 \mathrm{ L{}$.
+    $50.0 \mathrm{ mL{}$ of $1.00 \mathrm{ M{}$ $\mathrm{HCl{}$ (excess). The remaining acid
+    requires $30.0 \mathrm{ mL{}$ of $0.500 \mathrm{ M{}$ $\mathrm{NaOH{}$ to neutralise. Calculate
+    the percentage purity of the limestone.
+11. $6.30 \mathrm{ g{}$ of hydrated $\mathrm{Na{}_2\mathrm{CO{}_3 \cdot x\mathrm{H{}_2\mathrm{O{}$
+    gives $2.33 \mathrm{ g{}$ of anhydrous $\mathrm{Na{}_2\mathrm{CO{}_3$ on heating. Find $x$.
+12. A student performs a titration and obtains the following results: $25.0 \mathrm{ cm{}^3$ of acid
+    is titrated with $0.100 \mathrm{ M{}$ $\mathrm{NaOH{}$. Titre values:
+    $24.80, 24.90, 24.85 \mathrm{ cm{}^3$. Calculate the concentration of the acid, assuming it is
+    monoprotic.
+13. What mass of $\mathrm{AgCl{}$ precipitate would be formed when excess $\mathrm{AgNO{}_3$ is
+    added to $25.0 \mathrm{ cm{}^3$ of $0.150 \mathrm{ M{}$ $\mathrm{MgCl{}_2$?
+14. A gas mixture at $100 \mathrm{ kPa{}$ and $298 \mathrm{ K{}$ contains
+    $\mathrm{N{}_2$$\mathrm{O{}_2$And $\mathrm{CO{}_2$ with partial pressures of 78, 21, and 1 kPa
+    respectively. Calculate the mole fraction and number of moles of each gas if the total volume is
+    $10.0 \mathrm{ L{}$.
 15. Find the empirical formula of a compound that contains 37.5% C, 12.5% H, and 50.0% O by mass.
 
 ---
@@ -631,19 +638,21 @@ $$m(\mathrm{SO{}_4^{2-}) = 0.00501 \times 96.1 = 0.481 \mathrm{ g{}$$
 
 $$c_1 V_1 = c_2 V_2$$
 
-**Worked Example 20 (HL):** How would you prepare $250 \mathrm{ mL{}$ of $0.10 \mathrm{ M{}$ $\mathrm{HCl{}$
-From $2.0 \mathrm{ M{}$ $\mathrm{HCl{}$?
+**Worked Example 20 (HL):** How would you prepare $250 \mathrm{ mL{}$ of $0.10 \mathrm{ M{}$
+$\mathrm{HCl{}$ From $2.0 \mathrm{ M{}$ $\mathrm{HCl{}$?
 
 $$2.0 \times V_1 = 0.10 \times 250$$
 
 $$V_1 = \frac{25}{2.0} = 12.5 \mathrm{ mL{}$$
 
-Measure $12.5 \mathrm{ mL{}$ of $2.0 \mathrm{ M{}$ $\mathrm{HCl{}$ and dilute to $250 \mathrm{ mL{}$ with water.
+Measure $12.5 \mathrm{ mL{}$ of $2.0 \mathrm{ M{}$ $\mathrm{HCl{}$ and dilute to $250 \mathrm{ mL{}$
+with water.
 
 ### Mixing Solutions
 
 **Worked Example 21 (HL):** $100 \mathrm{ mL{}$ of $0.50 \mathrm{ M{}$ $\mathrm{HCl{}$ is mixed with
-$200 \mathrm{ mL{}$ of $0.30 \mathrm{ M{}$ $\mathrm{HCl{}$. Find the concentration of the resulting solution.
+$200 \mathrm{ mL{}$ of $0.30 \mathrm{ M{}$ $\mathrm{HCl{}$. Find the concentration of the resulting
+solution.
 
 $$n_{\mathrm{total{}} = 0.50 \times 0.100 + 0.30 \times 0.200 = 0.050 + 0.060 = 0.110 \mathrm{ mol{}$$
 
@@ -666,13 +675,13 @@ Errors that vary unpredictably (e.g., reading a burette to different decimal pla
 
 ### Reducing Errors
 
-| Error type | Source | Reduction method |
+| Error type          | Source                          | Reduction method        |
 | ------------------- | ------------------------------- | ----------------------- |
-| Parallax | Reading meniscus at wrong angle | Read at eye level |
-| Air bubbles | In burette or pipette | Tap to remove |
-| Heat loss | Calorimetry | Use insulated container |
-| Incomplete reaction | Not enough reagent | Use excess |
-| Impurities | Sample not pure | Recrystallise |
+| Parallax            | Reading meniscus at wrong angle | Read at eye level       |
+| Air bubbles         | In burette or pipette           | Tap to remove           |
+| Heat loss           | Calorimetry                     | Use insulated container |
+| Incomplete reaction | Not enough reagent              | Use excess              |
+| Impurities          | Sample not pure                 | Recrystallise           |
 
 ### Percentage Uncertainty
 
@@ -680,9 +689,9 @@ For a measurement $x \pm \Delta x$:
 
 $$\mathrm{Percentage uncertainty{} = \frac{\Delta x}{x} \times 100\%$$
 
-**Worked Example 22 (HL):** In a titration, the burette readings are $12.50 \pm 0.05 \mathrm{ cm{}^3$
-(initial) and $24.80 \pm 0.05 \mathrm{ cm{}^3$ (final). Calculate the titre and its percentage
-Uncertainty.
+**Worked Example 22 (HL):** In a titration, the burette readings are
+$12.50 \pm 0.05 \mathrm{ cm{}^3$ (initial) and $24.80 \pm 0.05 \mathrm{ cm{}^3$ (final). Calculate
+the titre and its percentage Uncertainty.
 
 $$\mathrm{Titre{} = 24.80 - 12.50 = 12.30 \mathrm{ cm{}^3$$
 
@@ -694,18 +703,18 @@ $$\mathrm{Percentage uncertainty{} = \frac{0.071}{12.30} \times 100 = 0.58\%$$
 
 ## Summary Table: Key Stoichiometric Relationships
 
-| Relationship | Formula | Use |
-| ------------------------ | -------------------------------------- | ------------------------ |
-| Moles from mass | $n = m/M$ | Mass to mole conversions |
-| Moles from volume (gas) | $n = V/V_m$ | Gas volume to moles |
-| Moles from concentration | $n = c \times V$ | Solution calculations |
-| Molar mass | $M = \Sigma(\mathrm{atomic masses{})$ | Formula mass |
-| Empirical formula | Simplest whole number ratio | Determine formula |
-| Molecular formula | $(\mathrm{Empirical formula{})_n$ | True formula |
-| Percentage yield | $\mathrm{actual/theoretical{} \times 100$ | Efficiency |
-| Percentage purity | $\mathrm{pure/impure{} \times 100$ | Sample quality |
-| Ideal gas law | $pV = nRT$ | Gas calculations |
-| Dilution | $c_1 V_1 = c_2 V_2$ | Preparing solutions |
+| Relationship             | Formula                                   | Use                      |
+| ------------------------ | ----------------------------------------- | ------------------------ |
+| Moles from mass          | $n = m/M$                                 | Mass to mole conversions |
+| Moles from volume (gas)  | $n = V/V_m$                               | Gas volume to moles      |
+| Moles from concentration | $n = c \times V$                          | Solution calculations    |
+| Molar mass               | $M = \Sigma(\mathrm{atomic masses{})$     | Formula mass             |
+| Empirical formula        | Simplest whole number ratio               | Determine formula        |
+| Molecular formula        | $(\mathrm{Empirical formula{})_n$         | True formula             |
+| Percentage yield         | $\mathrm{actual/theoretical{} \times 100$ | Efficiency               |
+| Percentage purity        | $\mathrm{pure/impure{} \times 100$        | Sample quality           |
+| Ideal gas law            | $pV = nRT$                                | Gas calculations         |
+| Dilution                 | $c_1 V_1 = c_2 V_2$                       | Preparing solutions      |
 
 ## Worked Examples
 

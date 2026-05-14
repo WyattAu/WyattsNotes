@@ -1,6 +1,8 @@
 ---
 title: Forces and Newton's Laws
-description: "A-Level Mathematics notes on Forces and Newton's Laws: Board Coverage; 1. Newton's Laws of Motion; 1.1 Newton's First Law (Law of Inertia); 1.2 Newton's Seco."
+description:
+  "A-Level Mathematics notes on Forces and Newton's Laws: Board Coverage; 1. Newton's Laws of
+  Motion; 1.1 Newton's First Law (Law of Inertia); 1.2 Newton's Seco."
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Maths
@@ -9,19 +11,18 @@ categories:
   - Maths
 slug: forces-and-newtons-laws
 ---
+
 ## Board Coverage
 
-| Board | Paper | Notes |
+| Board      | Paper   | Notes                                                 |
 | ---------- | ------- | ----------------------------------------------------- |
-| AQA | Paper 1 | Newton's laws, friction, connected particles |
-| Edexcel | P1 | Similar |
-| OCR (A) | Paper 1 | Includes inclined planes |
-| CIE (9709) | P1, P4 | Forces in P1; connected bodies, inclined planes in P4 |
+| AQA        | Paper 1 | Newton's laws, friction, connected particles          |
+| Edexcel    | P1      | Similar                                               |
+| OCR (A)    | Paper 1 | Includes inclined planes                              |
+| CIE (9709) | P1, P4  | Forces in P1; connected bodies, inclined planes in P4 |
 
-:::info
-Always draw a clear free body diagram before writing any equations. The quality of your
-Diagram determines the quality of your solution.
-:::
+:::info Always draw a clear free body diagram before writing any equations. The quality of your
+Diagram determines the quality of your solution. :::
 
 <hr />
 
@@ -52,11 +53,9 @@ A.
 **Implication.** Forces always come in pairs: action and reaction. They act on **different** bodies
 And are the same type of force.
 
-:::warning
-Newton's Third Law pairs act on different bodies. The weight of a book on a table and the
+:::warning Newton's Third Law pairs act on different bodies. The weight of a book on a table and the
 Normal reaction from the table are **not** a Third Law pair (both act on the book). The Third Law
-Pair of the weight is the gravitational pull of the book on the Earth.
-:::
+Pair of the weight is the gravitational pull of the book on the Earth. :::
 
 <hr />
 
@@ -126,14 +125,11 @@ $$F_{\max} = \mu R$$
 ### 4.2 Static vs. Kinetic friction
 
 - **Limiting friction** (on the point of sliding): $F = \mu_s R$ (static coefficient).
-- **Kinetic friction** (sliding): $F = \mu_k R$ (kinetic coefficient, 
- $\mu_k \lt{} \mu_s$).
+- **Kinetic friction** (sliding): $F = \mu_k R$ (kinetic coefficient, $\mu_k \lt{} \mu_s$).
 
 In A Level, we assume $\mu_s = \mu_k = \mu$.
 
-:::warning
-Warning
-Maximum $\mu R$. Only use $F = \mu R$ when the body is sliding or about to slide.
+:::warning Warning Maximum $\mu R$. Only use $F = \mu R$ when the body is sliding or about to slide.
 :::
 
 ### 4.3 Angle of friction
@@ -204,22 +200,20 @@ A valid Third Law pair must satisfy **all** of the following criteria:
 
 1. **Different bodies.** The two forces act on two different objects.
 2. **Same type.** Both forces are of the same physical type (e.g. Both gravitational, both contact,
- both frictional).
+   both frictional).
 3. **Equal magnitude.** $|\mathbf{F}_{AB}| = |\mathbf{F}_{BA}|$.
 4. **Opposite direction.** $\mathbf{F}_{AB}$ and $\mathbf{F}_{BA}$ are antiparallel.
 
 ### 7.3 Common misconceptions
 
-:::warning
-The following are **not** Newton's Third Law pairs:
-:::
+:::warning The following are **not** Newton's Third Law pairs: :::
 
-| Situation | Incorrect Pair (NOT Third Law) | Why It Fails | Correct Third Law Pair |
+| Situation             | Incorrect Pair (NOT Third Law)                | Why It Fails                                            | Correct Third Law Pair                               |
 | --------------------- | --------------------------------------------- | ------------------------------------------------------- | ---------------------------------------------------- |
-| Book on a table | Weight and normal reaction | Both act on the book | Weight of book / gravitational pull of book on Earth |
-| Person pushing a wall | Person's push on wall / wall's push on person | This IS a valid pair if different bodies are identified | Push of hand on wall / push of wall on hand |
-| Car accelerating | Driving force and friction | These are not the same type of force | Tyre pushes road backward / road pushes tyre forward |
-| Satellite in orbit | Weight and centripetal force | Both act on the satellite | Earth pulls satellite / satellite pulls Earth |
+| Book on a table       | Weight and normal reaction                    | Both act on the book                                    | Weight of book / gravitational pull of book on Earth |
+| Person pushing a wall | Person's push on wall / wall's push on person | This IS a valid pair if different bodies are identified | Push of hand on wall / push of wall on hand          |
+| Car accelerating      | Driving force and friction                    | These are not the same type of force                    | Tyre pushes road backward / road pushes tyre forward |
+| Satellite in orbit    | Weight and centripetal force                  | Both act on the satellite                               | Earth pulls satellite / satellite pulls Earth        |
 
 ### 7.4 Worked example: identifying pairs
 
@@ -252,10 +246,7 @@ $$F = \mu R$$
 
 The word "limiting" is the signal to set $F = \mu R$ rather than $F \lt{} \mu R$.
 
-:::tip
-Tip
-Equilibrium" all mean the same thing: set $F = \mu R$.
-:::
+:::tip Tip Equilibrium" all mean the same thing: set $F = \mu R$. :::
 
 ### 8.2 Friction on a horizontal surface -- full analysis
 
@@ -278,11 +269,9 @@ $$P\cos\theta + \mu P\sin\theta = \mu mg$$
 
 $$P = \frac◆LB◆\mu mg◆RB◆◆LB◆\cos\theta + \mu\sin\theta◆RB◆$$
 
-:::warning
-Applying a force at an angle **upward** reduces $R$ and therefore reduces the maximum
+:::warning Applying a force at an angle **upward** reduces $R$ and therefore reduces the maximum
 Friction. Applying a force at an angle **downward** increases $R$ and increases the maximum
-Friction.
-:::
+Friction. :::
 
 ### 8.3 Connected particles on rough surfaces
 
@@ -317,7 +306,7 @@ Friction always opposes **relative motion** (or the tendency to move). When sett
 - If the body is moving, friction opposes the velocity.
 - If the body is stationary, friction opposes the net applied force (up to $\mu R$).
 - If the direction of motion is unknown, assume one direction. If $a$ comes out negative, reverse
- the assumed direction and recalculate with friction reversed.
+  the assumed direction and recalculate with friction reversed.
 
 <hr />
 
@@ -370,11 +359,9 @@ Combined with $m_2 g - T = m_2 a$:
 
 $$a = \frac◆LB◆(m_2 - \mu m_1)g◆RB◆◆LB◆m_1 + m_2◆RB◆$$
 
-:::warning
-If $m_2 \lt{} \mu m_1$Then $a \lt{} 0$Meaning the system does not move. The friction
+:::warning If $m_2 \lt{} \mu m_1$Then $a \lt{} 0$Meaning the system does not move. The friction
 Force is not at its maximum; instead $F = m_2 g$ (friction balances the hanging weight) and
-$T = m_2 g$.
-:::
+$T = m_2 g$. :::
 
 ### 9.4 Two particles on inclined planes with a pulley
 
@@ -446,10 +433,8 @@ $$P + \mu mg\cos\alpha - mg\sin\alpha = ma$$
 
 $$a = \frac{P}{m} - g(\sin\alpha - \mu\cos\alpha)$$
 
-:::tip
-Tip
-(or the tendency to move). Always draw a clear diagram and think about which way friction acts.
-:::
+:::tip Tip (or the tendency to move). Always draw a clear diagram and think about which way friction
+acts. :::
 
 ### 10.4 Block on an inclined plane with a horizontal applied force
 
@@ -472,11 +457,8 @@ $$P\cos\alpha - \mu P\sin\alpha = mg\sin\alpha + \mu mg\cos\alpha$$
 
 $$P = \frac◆LB◆mg(\sin\alpha + \mu\cos\alpha)◆RB◆◆LB◆\cos\alpha - \mu\sin\alpha◆RB◆$$
 
-:::warning
-Warning
-Horizontal force can move the block up the slope (pushing horizontally jams the block into the
-Surface).
-:::
+:::warning Warning Horizontal force can move the block up the slope (pushing horizontally jams the
+block into the Surface). :::
 
 <hr />
 
@@ -501,14 +483,14 @@ Moment equation).
 If a body in equilibrium is acted upon by exactly three coplanar forces, then:
 
 1. The forces must be **concurrent** (their lines of action meet at a single point), or all three
- are parallel.
+   are parallel.
 2. The forces can be represented as a closed triangle when drawn head-to-tail (Lami's theorem).
 
 ### 11.3 Lami's theorem
 
-If three coplanar forces $F_1$$F_2$$F_3$ act on a body in equilibrium, and $\theta_1$ is the
-Angle between $F_2$ and $F_3$$\theta_2$ is the angle between $F_1$ and $F_3$And $\theta_3$ is
-The angle between $F_1$ and $F_2$Then:
+If three coplanar forces $F_1$$F_2$$F_3$ act on a body in equilibrium, and $\theta_1$ is the Angle
+between $F_2$ and $F_3$$\theta_2$ is the angle between $F_1$ and $F_3$And $\theta_3$ is The angle
+between $F_1$ and $F_2$Then:
 
 $$\frac◆LB◆F_1◆RB◆◆LB◆\sin\theta_1◆RB◆ = \frac◆LB◆F_2◆RB◆◆LB◆\sin\theta_2◆RB◆ = \frac◆LB◆F_3◆RB◆◆LB◆\sin\theta_3◆RB◆$$
 
@@ -951,9 +933,9 @@ Forces on the book:
 Third Law pairs:
 
 1. Weight pair: the gravitational pull of the book on the Earth (Earth on book $\leftrightarrow$
- book on Earth), magnitude $1.5g$Directed upward toward the book.
+   book on Earth), magnitude $1.5g$Directed upward toward the book.
 2. Normal reaction pair: the contact force of the book pushing down on the table (table on book
- $\leftrightarrow$ book on table), magnitude $1.5g$Directed downward.
+   $\leftrightarrow$ book on table), magnitude $1.5g$Directed downward.
 
 Note that $W$ and $R$ are not a Third Law pair: they are different types of force (gravitational vs
 Contact) and both act on the book.
@@ -990,8 +972,8 @@ $7.51 - 29.4 - 3a = 5a$
 
 $-21.89 = 8a \implies a = -2.74\,\mathrm{m/s}^2$
 
-Since $a \lt{} 0$The assumption is wrong. The $5\,\mathrm{kg}$ block does not move down; instead
-The $3\,\mathrm{kg}$ mass descends and the $5\,\mathrm{kg}$ block moves up the slope.
+Since $a \lt{} 0$The assumption is wrong. The $5\,\mathrm{kg}$ block does not move down; instead The
+$3\,\mathrm{kg}$ mass descends and the $5\,\mathrm{kg}$ block moves up the slope.
 
 Re-do with the $5\,\mathrm{kg}$ block moving up the slope (friction now acts down the slope):
 
@@ -1018,25 +1000,25 @@ Check: the force trying to pull the $5\,\mathrm{kg}$ block up the slope is $3g =
 The force opposing this is $5g\sin 30° + \mu(5g\cos 30°) = 24.5 + 16.99 = 41.49\,\mathrm{N}$.
 
 Since $29.4 \lt{} 41.49$The system remains in equilibrium. The tension is
-$T = 3g = 29.4\,\mathrm{N}$And friction $= T - 5g\sin 30° = 29.4 - 24.5 = 4.9\,\mathrm{N}$ (which
-Is $\lt{} \mu R = 16.99\,\mathrm{N}$Confirming equilibrium).
+$T = 3g = 29.4\,\mathrm{N}$And friction $= T - 5g\sin 30° = 29.4 - 24.5 = 4.9\,\mathrm{N}$ (which Is
+$\lt{} \mu R = 16.99\,\mathrm{N}$Confirming equilibrium).
 
 **If you get this wrong, revise:**
 [Friction and the direction of motion](#84-friction-and-the-direction-of-motion) — Section 8.4.
 
 </details>
 
-
 ---
 
-:::tip
-Diagnostic Test
-Ready to test your understanding of **Forces and Newton's Laws**? The [diagnostic test](/docs/alevel/maths/diagnostics/diag-forces-and-newtons-laws) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
+:::tip Diagnostic Test Ready to test your understanding of **Forces and Newton's Laws**? The
+[diagnostic test](/docs/alevel/maths/diagnostics/diag-forces-and-newtons-laws) contains the hardest
+questions within the A-Level specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Forces and Newton's Laws with other topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Forces and
+Newton's Laws with other topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and
+building a personal test matrix. :::
 
 ## Common Pitfalls
 

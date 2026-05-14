@@ -1,6 +1,8 @@
 ---
 title: Current and Resistance
-description: "A-Level Physics notes on Current and Resistance: 1. Electric Current; Current as Charge per Unit Time; Derivation of $I = nAev_d$."
+description:
+  'A-Level Physics notes on Current and Resistance: 1. Electric Current; Current as Charge per Unit
+  Time; Derivation of $I = nAev_d$.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Physics
@@ -9,11 +11,10 @@ categories:
   - Physics
 slug: current-and-resistance
 ---
+
 ## Current and Resistance
 
-:::info
-Board Coverage AQA Paper 1 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2
-:::
+:::info Board Coverage AQA Paper 1 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2 :::
 
 <PhetSimulation simulationId="resistance-in-a-wire" title="Resistance in a Wire" />
 
@@ -56,10 +57,9 @@ $$I = nAev_d$$
 In the direction of the applied electric field, resulting from the superposition of rapid random
 Thermal motion and a slow directional drift due to the field.
 
-**Intuition.** The drift velocity is surprisingly small — $\sim 10^{-4}$ m s$^{-1}$ for
-Copper. This is because electrons undergo frequent collisions with the lattice ions, scattering
-Randomly. The net motion is a slow drift superimposed on rapid random thermal motion ($\sim 10^6$ m
-S$^{-1}$).
+**Intuition.** The drift velocity is surprisingly small — $\sim 10^{-4}$ m s$^{-1}$ for Copper. This
+is because electrons undergo frequent collisions with the lattice ions, scattering Randomly. The net
+motion is a slow drift superimposed on rapid random thermal motion ($\sim 10^6$ m S$^{-1}$).
 
 <details>
 <summary>Example: Drift Velocity in Copper</summary>
@@ -116,18 +116,19 @@ An **ohmic conductor** obeys Ohm's law — its $I$-$V$ graph is a straight line 
 
 **Microscopic origin.** In a metal, conduction electrons accelerate in the electric field but
 Collide with lattice ions, losing energy. The average time between collisions is the **relaxation
-Time** $\tau$. The drift velocity is $v_d = \frac◆LB◆eE\tau◆RB◆◆LB◆m_e◆RB◆$So $I \propto E \propto V$Giving
-$V = IR$.
+Time** $\tau$. The drift velocity is $v_d = \frac◆LB◆eE\tau◆RB◆◆LB◆m_e◆RB◆$So
+$I \propto E \propto V$Giving $V = IR$.
 
 ### Derivation of Ohm's Law from the Microscopic Model
 
 1. In a conductor of length $L$ with p.d. $V$The electric field is $E = V/L$.
 2. A conduction electron of charge $e$ and mass $m_e$ experiences force $F = eE$.
 3. Between collisions (mean relaxation time $\tau$), the electron accelerates to drift velocity:
- $v_d = a\tau = (eE/m_e)\tau$.
-4. Current density: $J = nev_d = ne \cdot \frac◆LB◆eE\tau◆RB◆◆LB◆m_e◆RB◆ = \frac◆LB◆ne^2\tau◆RB◆◆LB◆m_e◆RB◆E$.
+   $v_d = a\tau = (eE/m_e)\tau$.
+4. Current density:
+   $J = nev_d = ne \cdot \frac◆LB◆eE\tau◆RB◆◆LB◆m_e◆RB◆ = \frac◆LB◆ne^2\tau◆RB◆◆LB◆m_e◆RB◆E$.
 5. Since $J \propto E$The material is ohmic. Integrating:
- $I = JA = \frac◆LB◆ne^2\tau A◆RB◆◆LB◆m_e◆RB◆ \cdot \frac{V}{L}$.
+   $I = JA = \frac◆LB◆ne^2\tau A◆RB◆◆LB◆m_e◆RB◆ \cdot \frac{V}{L}$.
 6. Rearranging: $V = \frac◆LB◆mL◆RB◆◆LB◆ne^2\tau A◆RB◆ \cdot I = RI$.
 
 $$\boxed{V = IR}$$
@@ -169,20 +170,17 @@ $\tau$But not on its geometry.
 Less resistance (more parallel paths). A higher resistivity means the material is intrinsically more
 Resistant to current flow.
 
-| Material | Resistivity ($\Omega$ m) |
+| Material   | Resistivity ($\Omega$ m) |
 | ---------- | ------------------------ |
-| Copper | $1.7 \times 10^{-8}$ |
-| Aluminium | $2.7 \times 10^{-8}$ |
-| Constantan | $4.9 \times 10^{-7}$ |
-| Nichrome | $1.1 \times 10^{-6}$ |
-| Silicon | $6.4 \times 10^{2}$ |
-| Glass | $\sim 10^{12}$ |
+| Copper     | $1.7 \times 10^{-8}$     |
+| Aluminium  | $2.7 \times 10^{-8}$     |
+| Constantan | $4.9 \times 10^{-7}$     |
+| Nichrome   | $1.1 \times 10^{-6}$     |
+| Silicon    | $6.4 \times 10^{2}$      |
+| Glass      | $\sim 10^{12}$           |
 
-:::warning
-Warning
-Particular component. A long thin copper wire has high resistance but copper still has low
-Resistivity.
-:::
+:::warning Warning Particular component. A long thin copper wire has high resistance but copper
+still has low Resistivity. :::
 
 ## 5. I-V Characteristics
 
@@ -200,7 +198,7 @@ Flattens at high $V$.
 ### Semiconductor Diode
 
 - **Forward bias**: very little current until the threshold voltage ($\sim 0.6$ V for silicon) is
- reached, then current rises sharply.
+  reached, then current rises sharply.
 - **Reverse bias**: almost zero current until breakdown voltage.
 
 ### Thermistor (NTC)
@@ -234,9 +232,9 @@ $$P = \frac{V}{R} \cdot V = \frac{V^2}{R}$$
 
 | Known quantities | Formula to use |
 | ---------------- | -------------- |
-| $I$ and $V$ | $P = IV$ |
-| $I$ and $R$ | $P = I^2R$ |
-| $V$ and $R$ | $P = V^2/R$ |
+| $I$ and $V$      | $P = IV$       |
+| $I$ and $R$      | $P = I^2R$     |
+| $V$ and $R$      | $P = V^2/R$    |
 
 **Energy:**
 
@@ -246,10 +244,8 @@ The SI unit of energy is the joule (J). For domestic billing, the kilowatt-hour 
 
 $$1 \mathrm{ kWh} = 1000 \mathrm{ W} \times 3600 \mathrm{ s} = 3.6 \times 10^6 \mathrm{ J}$$
 
-:::tip
-Exam Technique When calculating energy for resistors in series, use $P = I^2R$ (same
-Current). For resistors in parallel, use $P = V^2/R$ (same voltage).
-:::
+:::tip Exam Technique When calculating energy for resistors in series, use $P = I^2R$ (same
+Current). For resistors in parallel, use $P = V^2/R$ (same voltage). :::
 
 ## 7. Temperature Dependence of Resistance
 
@@ -328,12 +324,10 @@ Positive feedback loop.
 
 </details>
 
-:::warning
-Common Pitfall Do not confuse the behaviour of metals and semiconductors. Metals have a
+:::warning Common Pitfall Do not confuse the behaviour of metals and semiconductors. Metals have a
 _positive_ temperature coefficient ($R$ increases with $T$). Semiconductors (thermistors) have a
 _negative_ temperature coefficient ($R$ decreases with $T$). The physical mechanism is entirely
-Different: in metals, $\tau$ changes; in semiconductors, $n$ changes.
-:::
+Different: in metals, $\tau$ changes; in semiconductors, $n$ changes. :::
 
 ## 8. Superconductivity
 
@@ -346,21 +340,22 @@ When a material enters the superconducting state (by being cooled below $T_c$), 
 Properties emerge:
 
 1. **Zero DC resistance.** A current induced in a superconducting loop persists indefinitely with no
- decay. This has been experimentally verified: currents have been observed to flow for years with
- no measurable decrease.
+   decay. This has been experimentally verified: currents have been observed to flow for years with
+   no measurable decrease.
 
 2. **Meissner effect.** A superconductor expels all magnetic flux from its interior. If a
- superconductor is cooled below $T_c$ in an external magnetic field, the field lines are pushed
- out. This is not a consequence of zero resistance --- it is a distinct thermodynamic property.
- The magnetic field penetrates only a thin surface layer of depth $\lambda$ (the London
- penetration depth, 20--200 nm).
+   superconductor is cooled below $T_c$ in an external magnetic field, the field lines are pushed
+   out. This is not a consequence of zero resistance --- it is a distinct thermodynamic property.
+   The magnetic field penetrates only a thin surface layer of depth $\lambda$ (the London
+   penetration depth, 20--200 nm).
 
 3. **Critical parameters.** Superconductivity is destroyed if any of three critical values are
- exceeded:
- - **Critical temperature** $T_c$: above this, normal resistivity returns.
- - **Critical magnetic field** $B_c$: above this field, superconductivity is destroyed.
- - **Critical current density** $J_c$: above this current density, the magnetic field generated by
- the current itself destroys superconductivity.
+   exceeded:
+
+- **Critical temperature** $T_c$: above this, normal resistivity returns.
+- **Critical magnetic field** $B_c$: above this field, superconductivity is destroyed.
+- **Critical current density** $J_c$: above this current density, the magnetic field generated by
+  the current itself destroys superconductivity.
 
 These three parameters are related. In the simplest model (Type I),
 $B_c(T) \approx B_c(0)\left[1 - (T/T_c)^2\right]$.
@@ -368,19 +363,19 @@ $B_c(T) \approx B_c(0)\left[1 - (T/T_c)^2\right]$.
 ### Type I vs Type II Superconductors
 
 **Type I** superconductors (e.g., lead, mercury, aluminium) exhibit a sharp transition: below $B_c$
-They are fully superconducting, above $B_c$ they revert to normal. Their critical fields are low
-( $\lt{}$ 0.1 T).
+They are fully superconducting, above $B_c$ they revert to normal. Their critical fields are low (
+$\lt{}$ 0.1 T).
 
 **Type II** superconductors (e.g., niobium-titanium, YBCO) have two critical fields $B_{c1}$ and
 $B_{c2}$:
 
 - Below $B_{c1}$: full Meissner effect (Meissner state).
 - Between $B_{c1}$ and $B_{c2}$: **mixed state** (vortex state) where magnetic flux penetrates in
- quantised vortices. The material still carries supercurrent but with some flux penetration.
+  quantised vortices. The material still carries supercurrent but with some flux penetration.
 - Above $B_{c2}$: normal state.
 
-Type II superconductors have much higher $B_{c2}$ values (tens of tesla), making them
-Practically useful.
+Type II superconductors have much higher $B_{c2}$ values (tens of tesla), making them Practically
+useful.
 
 ### BCS Theory (Conceptual Overview)
 
@@ -396,18 +391,17 @@ Cooper pairs are bosons (integer spin) and can all occupy the same quantum groun
 Scattering (there is no individual state to scatter into, since the ground state is already full).
 This is the origin of zero resistance.
 
-The energy gap $\Delta$ (the minimum energy to break a Cooper pair) is 
-$10^{-3}$--$10^{-2}$ eV, which is why thermal energy at $T_c$ (where $k_BT_c \approx \Delta$)
-Destroys superconductivity.
+The energy gap $\Delta$ (the minimum energy to break a Cooper pair) is $10^{-3}$--$10^{-2}$ eV,
+which is why thermal energy at $T_c$ (where $k_BT_c \approx \Delta$) Destroys superconductivity.
 
 ### Applications
 
 - **MRI scanners**: superconducting coils generate the strong, uniform magnetic fields (1.5--7 T)
- required for imaging.
+  required for imaging.
 - **Particle accelerators**: the LHC uses superconducting magnets to steer proton beams at 7 TeV.
 - **Maglev trains**: superconducting magnets provide levitation via the Meissner effect.
 - **SQUIDs** (Superconducting Quantum Interference Devices): extremely sensitive magnetometers
- capable of detecting fields as small as $10^{-15}$ T.
+  capable of detecting fields as small as $10^{-15}$ T.
 - **Power transmission**: lossless power lines (currently limited by the cost of cooling).
 
 ## 9. Semiconductors
@@ -512,17 +506,11 @@ Where $n$ is much smaller, $V_H$ is much larger and easier to measure.
 
 </details>
 
-:::warning
-Warning
-Direction of the magnetic field, not the width of the conductor perpendicular to the current. Sketch
-The geometry carefully.
-:::
+:::warning Warning Direction of the magnetic field, not the width of the conductor perpendicular to
+the current. Sketch The geometry carefully. :::
 
-:::tip
-Tip
-Hall effect, focus on the _sign_ of the Hall voltage. Electrons (negative charge) deflect to one
-Side, holes (positive charge) deflect to the opposite side.
-:::
+:::tip Tip Hall effect, focus on the _sign_ of the Hall voltage. Electrons (negative charge) deflect
+to one Side, holes (positive charge) deflect to the opposite side. :::
 
 ## 10. Power Transmission
 
@@ -559,11 +547,11 @@ Very high voltages ( 275 kV or 400 kV in the UK).
 The National Grid (or equivalent in other countries) is the network of cables and transformers that
 Distributes electricity from power stations to consumers:
 
-1. **Step-up transformer** at the power station: generator output ( 15--25 kV) is stepped
- up to 275 or 400 kV for transmission.
+1. **Step-up transformer** at the power station: generator output ( 15--25 kV) is stepped up to 275
+   or 400 kV for transmission.
 2. **High-voltage transmission lines**: carry power at high voltage to minimise $I^2R$ losses.
 3. **Step-down transformers**: near towns, voltage is reduced in stages (e.g., 132 kV $\to$ 33 kV
- $\to$ 11 kV $\to$ 230 V) for distribution to consumers.
+   $\to$ 11 kV $\to$ 230 V) for distribution to consumers.
 
 <details>
 <summary>Example: Comparing Transmission Losses at Different Voltages</summary>
@@ -597,11 +585,9 @@ Why high-voltage transmission is essential.
 
 </details>
 
-:::tip
-Exam Technique When calculating transmission losses, remember to include both the outward and
+:::tip Exam Technique When calculating transmission losses, remember to include both the outward and
 Return cables (total length $= 2L$). Also remember that the voltage in $P = IV$ is the transmission
-Voltage, not the voltage drop across the line resistance.
-:::
+Voltage, not the voltage drop across the line resistance. :::
 
 ## Problem Set
 
@@ -832,7 +818,8 @@ A.
 $B_c(4.0) = 0.080 \times [1 - (4.0/7.2)^2] = 0.080 \times [1 - 0.309] = 0.080 \times 0.691 = 0.0553$
 T.
 
-$I_{\max} = \frac◆LB◆2\pi \times 1.0 \times 10^{-3} \times 0.0553◆RB◆◆LB◆4\pi \times 10^{-7}◆RB◆ = 277$ A.
+$I_{\max} = \frac◆LB◆2\pi \times 1.0 \times 10^{-3} \times 0.0553◆RB◆◆LB◆4\pi \times 10^{-7}◆RB◆ = 277$
+A.
 
 <b>If you get this wrong, revise:</b> [Superconductivity](#8-superconductivity)
 
@@ -874,8 +861,8 @@ Doping increased conductivity by over 5 orders of magnitude.
 
 A copper wire of length 1.00 m and diameter 0.50 mm has resistance $R_0$ at $20^\circ\mathrm{C}$. It
 Is uniformly stretched to 1.50 times its original length. (a) Calculate the ratio $R'/R_0$ of the
-New resistance to the original resistance. (b) If the original resistance was 0.087 $\Omega$What
-Is the new resistance? (c) The wire is now at a temperature of $60^\circ\mathrm{C}$. What is its
+New resistance to the original resistance. (b) If the original resistance was 0.087 $\Omega$What Is
+the new resistance? (c) The wire is now at a temperature of $60^\circ\mathrm{C}$. What is its
 Resistance? ($\alpha = 3.9 \times 10^{-3}$ $^\circ\mathrm{C}^{-1}$.)
 
 **Answer.** (a) Volume conservation: $A_0 L_0 = A' L'$So $A' = A_0 L_0/L' = A_0/1.50$.
@@ -966,28 +953,37 @@ Heating is a serious engineering concern.
 
 </details>
 
-
 ---
 
-:::tip
-Diagnostic Test
-Ready to test your understanding of **Current and Resistance**? The [diagnostic test](/docs/alevel/physics/diagnostics/diag-current-resistance) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
+:::tip Diagnostic Test Ready to test your understanding of **Current and Resistance**? The
+[diagnostic test](/docs/alevel/physics/diagnostics/diag-current-resistance) contains the hardest
+questions within the A-Level specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Current and Resistance with other physics topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Current and
+Resistance with other physics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on
+self-marking and building a personal test matrix. :::
 
-:::danger
-Common Pitfalls
+:::danger Common Pitfalls
 
-- **Confusing conventional current with electron flow:** Conventional current flows from positive to negative (historical convention). Electrons actually flow from negative to positive. In circuit diagrams and exam questions, always assume conventional current direction unless specifically asked about electron flow.
+- **Confusing conventional current with electron flow:** Conventional current flows from positive to
+  negative (historical convention). Electrons actually flow from negative to positive. In circuit
+  diagrams and exam questions, always assume conventional current direction unless specifically
+  asked about electron flow.
 
-- **Forgetting to convert units in I = nAev_d calculations:** The drift velocity v_d is very small (around 0.1 mm/s), but students often forget to convert to metres per second before substituting. Similarly, cross-sectional area A must be in m squared, not cm squared or mm squared.
+- **Forgetting to convert units in I = nAev_d calculations:** The drift velocity v_d is very small
+  (around 0.1 mm/s), but students often forget to convert to metres per second before substituting.
+  Similarly, cross-sectional area A must be in m squared, not cm squared or mm squared.
 
-- **Misunderstanding what resistance depends on:** Resistance depends on the material (resistivity), length, and cross-sectional area (R = rho * L / A), but NOT on the current or voltage applied. Resistance is a property of the component itself, not the circuit it is connected to.
+- **Misunderstanding what resistance depends on:** Resistance depends on the material (resistivity),
+  length, and cross-sectional area (R = rho \* L / A), but NOT on the current or voltage applied.
+  Resistance is a property of the component itself, not the circuit it is connected to.
 
-- **Confusing resistivity with resistance:** Resistivity (rho) is an intrinsic property of the material that does not depend on the dimensions of the wire. Resistance depends on both the material AND the dimensions. A thicker wire of the same material has lower resistance but the same resistivity.
+- **Confusing resistivity with resistance:** Resistivity (rho) is an intrinsic property of the
+  material that does not depend on the dimensions of the wire. Resistance depends on both the
+  material AND the dimensions. A thicker wire of the same material has lower resistance but the same
+  resistivity.
 
 :::
 

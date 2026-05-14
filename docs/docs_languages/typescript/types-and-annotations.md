@@ -1,24 +1,27 @@
 ---
 title: Types and Annotations
-description: "Types and Annotations — Primitive Types; The `any`, `unknown`, `never`, and `void` Types; `any`; `unknown` with worked examples and exam-style questions."
+description:
+  'Types and Annotations — Primitive Types; The `any`, `unknown`, `never`, and `void` Types; `any`;
+  `unknown` with worked examples and exam-style questions.'
 slug: typescript-types-and-annotations
 date: 2026-04-22T00:00:00.000Z
 tags: [TypeScript]
 categories: [TypeScript]
 ---
+
 ## Primitive Types
 
 TypeScript provides seven primitive types that correspond directly to JavaScript runtime values:
 
-| Type | Description | Example Values |
-| ----------- | --------------------------------------------------------- | --------------------------------- |
-| `string` | UTF-16 character sequences | `"hello"``''``` `Template` `` |
-| `number` | IEEE 754 double-precision floats (all JavaScript numbers) | `0``-3.14``NaN``Infinity` |
-| `boolean` | Logical values | `true``false` |
-| `null` | Intentional absence of value | `null` |
-| `undefined` | Uninitialised or absent value | `undefined` |
-| `symbol` | Globally unique identifiers (ES2015+) | `Symbol("id")` |
-| `bigint` | Arbitrary-precision integers (ES2020+) | `0n``9007199254740993n` |
+| Type        | Description                                               | Example Values                |
+| ----------- | --------------------------------------------------------- | ----------------------------- |
+| `string`    | UTF-16 character sequences                                | `"hello"``''``` `Template` `` |
+| `number`    | IEEE 754 double-precision floats (all JavaScript numbers) | `0``-3.14``NaN``Infinity`     |
+| `boolean`   | Logical values                                            | `true``false`                 |
+| `null`      | Intentional absence of value                              | `null`                        |
+| `undefined` | Uninitialised or absent value                             | `undefined`                   |
+| `symbol`    | Globally unique identifiers (ES2015+)                     | `Symbol("id")`                |
+| `bigint`    | Arbitrary-precision integers (ES2020+)                    | `0n``9007199254740993n`       |
 
 The types `null` and `undefined` are subtypes of every other type unless `strictNullChecks` is
 Enabled. Under `strict: true` (the recommended configuration), `null` and `undefined` are assignable
@@ -81,7 +84,7 @@ Contexts:
 
 1. **Unreachable code paths** -- functions that never return (always throw or loop infinitely).
 2. **Exhaustive checking** -- the default case of a `switch` on a discriminated union when all cases
- are handled.
+   are handled.
 
 ```ts
 function fail(message: string): never {
@@ -186,17 +189,17 @@ type Readonly<T> = { readonly [K in keyof T]: T[K] };
 
 ### Comparison
 
-| Feature | `interface` | `type` |
+| Feature                  | `interface`   | `type`  |
 | ------------------------ | ------------- | ------- |
-| Object shapes | Yes | Yes |
-| Union types | No | Yes |
-| Intersection types | Via `extends` | Via `&` |
-| Declaration merging | Yes | No |
-| Mapped types | No | Yes |
-| Conditional types | No | Yes |
-| Tuple types | No | Yes |
-| Extends other interfaces | Yes | N/A |
-| Extends classes | Yes | No |
+| Object shapes            | Yes           | Yes     |
+| Union types              | No            | Yes     |
+| Intersection types       | Via `extends` | Via `&` |
+| Declaration merging      | Yes           | No      |
+| Mapped types             | No            | Yes     |
+| Conditional types        | No            | Yes     |
+| Tuple types              | No            | Yes     |
+| Extends other interfaces | Yes           | N/A     |
+| Extends classes          | Yes           | No      |
 
 ### When to Use Each
 
@@ -326,8 +329,8 @@ function unwrap<T, E>(result: Result<T, E>): T {
 }
 ```
 
-The compiler recognises that after the `if` check narrows `result.status` to `"success"`The type
-Of `result` is narrowed to `{ status: "success"; data: T }`Making `result.data` accessible.
+The compiler recognises that after the `if` check narrows `result.status` to `"success"`The type Of
+`result` is narrowed to `{ status: "success"; data: T }`Making `result.data` accessible.
 
 ### Equality Narrowing
 
@@ -353,8 +356,7 @@ function process(value: string | null | undefined): string {
 }
 ```
 
-Falsy values (`null``undefined``""``0``NaN``false`) narrow the type to their falsy
-Constituent.
+Falsy values (`null``undefined``""``0``NaN``false`) narrow the type to their falsy Constituent.
 
 ## Literal Types
 
@@ -389,8 +391,8 @@ function roll(eyes: DiceRoll): number {
 type StrictBoolean = true | false;
 ```
 
-While `true | false` is equivalent to `boolean`Literal boolean types are useful in generic
-Contexts and conditional types.
+While `true | false` is equivalent to `boolean`Literal boolean types are useful in generic Contexts
+and conditional types.
 
 ### Template Literal Types
 
@@ -405,11 +407,11 @@ type HandlerName = 'onClick' | 'onFocus' | 'onBlur';
 
 Template literal types distribute over unions and support the following intrinsic string types:
 
-| Intrinsic Type | Operation |
+| Intrinsic Type    | Operation                    |
 | ----------------- | ---------------------------- |
-| `Uppercase<S>` | Convert to uppercase |
-| `Lowercase<S>` | Convert to lowercase |
-| `Capitalize<S>` | Capitalize first character |
+| `Uppercase<S>`    | Convert to uppercase         |
+| `Lowercase<S>`    | Convert to lowercase         |
+| `Capitalize<S>`   | Capitalize first character   |
 | `Uncapitalize<S>` | Uncapitalize first character |
 
 ```ts
@@ -448,7 +450,7 @@ Type assertions are occasionally required when the programmer has information th
 Cannot infer:
 
 1. **DOM element access** -- `document.getElementById` returns `HTMLElement | null`; asserting to a
- specific element type.
+   specific element type.
 2. **Library type mismatches** -- when a library's types are too narrow or incorrect.
 3. **Initialisation patterns** -- when an object is built incrementally.
 
@@ -648,8 +650,7 @@ const config = {
 ```
 
 Without `as const`The type of `config` is `{ host: string; port: number; debug: boolean }`. With
-`as const`The type is
-`{ readonly host: "localhost"; readonly port: 3000; readonly debug: false }`.
+`as const`The type is `{ readonly host: "localhost"; readonly port: 3000; readonly debug: false }`.
 
 This is particularly useful for defining constant objects where the literal values carry semantic
 Meaning:
@@ -681,8 +682,8 @@ The type of `directions` is `readonly ["north", "south", "east", "west"]`.
 
 ## Type Predicates and User-Defined Type Guards
 
-Built-in narrowing (`typeof``instanceof``in`) covers many common cases. For more complex
-Predicates, TypeScript provides **user-defined type guards** via type predicates.
+Built-in narrowing (`typeof``instanceof``in`) covers many common cases. For more complex Predicates,
+TypeScript provides **user-defined type guards** via type predicates.
 
 ### Type Predicate Syntax
 
@@ -758,9 +759,9 @@ function handleResponse(response: ApiResponse): string {
 
 ### Pitfall 1: Using `any` as a Escape Hatch
 
-`any` bypasses the type checker entirely. If a function accepts `any`The caller receives no
-Guidance on what to pass, and the callee receives no guarantees about what it receives. Prefer
-`unknown` with narrowing.
+`any` bypasses the type checker entirely. If a function accepts `any`The caller receives no Guidance
+on what to pass, and the callee receives no guarantees about what it receives. Prefer `unknown` with
+narrowing.
 
 ### Pitfall 2: Object Literal Excess Property Checking
 

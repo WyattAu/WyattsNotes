@@ -1,6 +1,8 @@
 ---
 title: Circular Motion
-description: "A-Level Further Maths notes on Circular Motion: Board Coverage; 1. Angular Quantities; 1.1 Definitions; 1.2 Relationship with linear quantities."
+description:
+  'A-Level Further Maths notes on Circular Motion: Board Coverage; 1. Angular Quantities; 1.1
+  Definitions; 1.2 Relationship with linear quantities.'
 date: 2026-04-02T00:00:00.000Z
 tags:
   - FurtherMaths
@@ -10,6 +12,7 @@ categories:
 slug: further-circular-motion
 sidebar_position: 2
 ---
+
 ## Circular Motion
 
 Circular motion in further mathematics extends the basic treatment to include banked tracks, conical
@@ -18,12 +21,12 @@ Determine unknown forces.
 
 ### Board Coverage
 
-| Board | Paper | Notes |
+| Board      | Paper   | Notes                                       |
 | ---------- | ------- | ------------------------------------------- |
-| AQA | Paper 2 | Limited coverage; horizontal circles mainly |
-| Edexcel | M2 | Full coverage including vertical circles |
-| OCR (A) | Paper 2 | Horizontal and vertical circles |
-| CIE (9231) | M2 | Full coverage including vertical circles |
+| AQA        | Paper 2 | Limited coverage; horizontal circles mainly |
+| Edexcel    | M2      | Full coverage including vertical circles    |
+| OCR (A)    | Paper 2 | Horizontal and vertical circles             |
+| CIE (9231) | M2      | Full coverage including vertical circles    |
 
 :::info Centripetal force is not a separate force — it is the resultant of the physical forces
 (tension, friction, normal reaction, weight) directed towards the centre of the circle. Never
@@ -132,8 +135,8 @@ $$\boxed{\tan\theta = \frac{v^2}{rg}}$$
 
 $$\boxed{v_{\mathrm{optimum}} = \sqrt◆LB◆rg\tan\theta◆RB◆}$$
 
-At the optimum speed, no friction is needed. If $v > v_{\mathrm{opt}}$Friction acts down the
-Slope. If $v < v_{\mathrm{opt}}$Friction acts up the slope.
+At the optimum speed, no friction is needed. If $v > v_{\mathrm{opt}}$Friction acts down the Slope.
+If $v < v_{\mathrm{opt}}$Friction acts up the slope.
 
 ### 3.3 Motion on the inside of a hollow sphere
 
@@ -679,18 +682,18 @@ At different points on a vertical circle, the normal reaction can point in diffe
 - At the top: reaction points **downward** (towards centre)
 - At the sides: reaction points horizontally (towards or away from centre depending on the speed)
 
-The sign of $R$ in your equations should emerge from the physics. If you get a negative
-$R$It means the contact force acts in the opposite direction to what you assumed.
+The sign of $R$ in your equations should emerge from the physics. If you get a negative $R$It means
+the contact force acts in the opposite direction to what you assumed.
 
 ### String vs rod in vertical circles
 
-- **String**: can only pull (tension $\geq 0$). Minimum speed at top is $\sqrt{gr}$Minimum at
- bottom is $\sqrt{5gr}$.
+- **String**: can only pull (tension $\geq 0$). Minimum speed at top is $\sqrt{gr}$Minimum at bottom
+  is $\sqrt{5gr}$.
 - **Rod**: can push and pull. Particle can reach the top with $v = 0$Minimum at bottom is
- $\sqrt{4gr} = 2\sqrt{gr}$.
+  $\sqrt{4gr} = 2\sqrt{gr}$.
 - **Smooth wire**: like a rod in that it can provide a reaction in either direction.
 - **Rough surface**: friction can provide tangential force, making the problem significantly more
- complex.
+  complex.
 
 ### Confusing angular velocity with linear velocity
 
@@ -917,12 +920,12 @@ $$\boxed{\omega = 10e^{-0.2t}}$$
 
 ## 9. Common Pitfalls
 
-| Pitfall | Correct Approach |
-| ----------------------------------------------------------- | ------------------------------------------------------------------------------------ |
-| Confusing the centripetal force direction | It always points toward the centre of the circle |
-| Forgetting that normal reaction changes on a banked surface | Resolve perpendicular to the surface |
-| Using $v = r\omega$ with inconsistent units | $v$ in $\mathrm{m\,s^{-1}}$$r$ in $\mathrm{m}$$\omega$ in $\mathrm{rad\,s^{-1}}$ |
-| Assuming tension is constant in vertical motion | $T$ varies; use energy conservation for $v$Then Newton's second law for $T$ |
+| Pitfall                                                     | Correct Approach                                                                 |
+| ----------------------------------------------------------- | -------------------------------------------------------------------------------- |
+| Confusing the centripetal force direction                   | It always points toward the centre of the circle                                 |
+| Forgetting that normal reaction changes on a banked surface | Resolve perpendicular to the surface                                             |
+| Using $v = r\omega$ with inconsistent units                 | $v$ in $\mathrm{m\,s^{-1}}$$r$ in $\mathrm{m}$$\omega$ in $\mathrm{rad\,s^{-1}}$ |
+| Assuming tension is constant in vertical motion             | $T$ varies; use energy conservation for $v$Then Newton's second law for $T$      |
 
 ---
 
@@ -1002,17 +1005,17 @@ Vertical circular motion problems often require energy methods combined with for
 
 ## 12. Key Results Summary
 
-| Quantity | Formula |
+| Quantity                                  | Formula                                               |
 | ----------------------------------------- | ----------------------------------------------------- |
-| Centripetal acceleration | $a = \omega^2 r = \dfrac{v^2}{r}$ |
-| Centripetal force | $F = m\omega^2 r = \dfrac{mv^2}{r}$ |
-| Linear speed | $v = \omega r$ |
-| Angular speed | $\omega = \dfrac{v}{r} = \dfrac◆LB◆2\pi◆RB◆◆LB◆T◆RB◆$ |
-| Period | $T = \dfrac◆LB◆2\pi◆RB◆◆LB◆\omega◆RB◆$ |
-| Conical pendulum: $\cos\theta$ | $\cos\theta = \dfrac◆LB◆g◆RB◆◆LB◆\omega^2 l◆RB◆$ |
-| Vertical circle (top): min speed (string) | $v_{\min} = \sqrt{gr}$ |
-| Vertical circle (top): min speed (rod) | $v_{\min} = 0$ |
-| Vertical circle: max speed at bottom | $v_{\max} = \sqrt{u^2 + 4gr}$ (energy) |
+| Centripetal acceleration                  | $a = \omega^2 r = \dfrac{v^2}{r}$                     |
+| Centripetal force                         | $F = m\omega^2 r = \dfrac{mv^2}{r}$                   |
+| Linear speed                              | $v = \omega r$                                        |
+| Angular speed                             | $\omega = \dfrac{v}{r} = \dfrac◆LB◆2\pi◆RB◆◆LB◆T◆RB◆$ |
+| Period                                    | $T = \dfrac◆LB◆2\pi◆RB◆◆LB◆\omega◆RB◆$                |
+| Conical pendulum: $\cos\theta$            | $\cos\theta = \dfrac◆LB◆g◆RB◆◆LB◆\omega^2 l◆RB◆$      |
+| Vertical circle (top): min speed (string) | $v_{\min} = \sqrt{gr}$                                |
+| Vertical circle (top): min speed (rod)    | $v_{\min} = 0$                                        |
+| Vertical circle: max speed at bottom      | $v_{\max} = \sqrt{u^2 + 4gr}$ (energy)                |
 
 ---
 
@@ -1082,7 +1085,7 @@ $-mg\theta$Giving simple harmonic motion with period $T = 2\pi\sqrt{l/g}$ (the s
 For a particle of mass $m$ on a string of length $r$ in a vertical circle:
 
 - At any angle $\theta$ from the bottom: $T = \dfrac{mv^2}{r} + mg\cos\theta$... Wait, let me be
- careful with sign conventions.
+  careful with sign conventions.
 
 Actually measuring $\theta$ from the downward vertical, with the centre of the circle above:
 

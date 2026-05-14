@@ -1,6 +1,8 @@
 ---
 title: Number Sets and Sequences
-description: "Number Sets and Sequences — Number Systems; Classification (OL/HL); Properties of Real Numbers (OL/HL); Irrational Numbers (HL)."
+description:
+  'Number Sets and Sequences — Number Systems; Classification (OL/HL); Properties of Real Numbers
+  (OL/HL); Irrational Numbers (HL).'
 date: 2026-04-14
 tags:
   - Mathematics
@@ -9,6 +11,7 @@ categories:
   - Mathematics
 slug: number-sets-and-sequences
 ---
+
 # Number Sets and Sequences
 
 This topic covers number systems, set theory, sequences, series, and financial mathematics. These
@@ -18,13 +21,13 @@ Concepts underpin much of the algebra and calculus in the Leaving Certificate co
 
 ### Classification (OL/HL)
 
-| Symbol | Name | Description |
-| ------------ | ---------------- | ---------------------------------------------------------------------------- |
-| $\mathbb{'\{'}N{'\}'}$ | Natural numbers | $\{1, 2, 3, \ldots\}$ (some definitions include 0) |
-| $\mathbb{'\{'}Z{'\}'}$ | Integers | $\{\ldots, -2, -1, 0, 1, 2, \ldots\}$ |
+| Symbol                 | Name             | Description                                                                          |
+| ---------------------- | ---------------- | ------------------------------------------------------------------------------------ |
+| $\mathbb{'\{'}N{'\}'}$ | Natural numbers  | $\{1, 2, 3, \ldots\}$ (some definitions include 0)                                   |
+| $\mathbb{'\{'}Z{'\}'}$ | Integers         | $\{\ldots, -2, -1, 0, 1, 2, \ldots\}$                                                |
 | $\mathbb{'\{'}Q{'\}'}$ | Rational numbers | Numbers expressible as $\frac{p}{q}$ where $p, q \in \mathbb{'\{'}Z{'\}'}$$q \neq 0$ |
-| $\mathbb{'\{'}R{'\}'}$ | Real numbers | All rational and irrational numbers |
-| $\mathbb{'\{'}C{'\}'}$ | Complex numbers | Numbers of the form $a + bi$ where $a, b \in \mathbb{'\{'}R{'\}'}$ |
+| $\mathbb{'\{'}R{'\}'}$ | Real numbers     | All rational and irrational numbers                                                  |
+| $\mathbb{'\{'}C{'\}'}$ | Complex numbers  | Numbers of the form $a + bi$ where $a, b \in \mathbb{'\{'}R{'\}'}$                   |
 
 The inclusions are:
 $\mathbb{'\{'}N{'\}'} \subset \mathbb{'\{'}Z{'\}'} \subset \mathbb{'\{'}Q{'\}'} \subset \mathbb{'\{'}R{'\}'} \subset \mathbb{'\{'}C{'\}'}$.
@@ -33,7 +36,8 @@ $\mathbb{'\{'}N{'\}'} \subset \mathbb{'\{'}Z{'\}'} \subset \mathbb{'\{'}Q{'\}'} 
 
 The real numbers satisfy the following axioms:
 
-**Closure:** If $a, b \in \mathbb{'\{'}R{'\}'}$Then $a + b \in \mathbb{'\{'}R{'\}'}$ and $a \cdot b \in \mathbb{'\{'}R{'\}'}$.
+**Closure:** If $a, b \in \mathbb{'\{'}R{'\}'}$Then $a + b \in \mathbb{'\{'}R{'\}'}$ and
+$a \cdot b \in \mathbb{'\{'}R{'\}'}$.
 
 **Commutativity:** $a + b = b + a$ and $a \cdot b = b \cdot a$.
 
@@ -55,31 +59,31 @@ A number is irrational if it cannot be expressed as a ratio of integers.
 
 **Proof that $\sqrt{2}$ is irrational:**
 
-Assume $\sqrt{2} = \frac{p}{q}$ where $p, q \in \mathbb{'\{'}Z{'\}'}$$q \neq 0$And the fraction is in
-Lowest terms ($\gcd(p, q) = 1$).
+Assume $\sqrt{2} = \frac{p}{q}$ where $p, q \in \mathbb{'\{'}Z{'\}'}$$q \neq 0$And the fraction is
+in Lowest terms ($\gcd(p, q) = 1$).
 
-Then $p^2 = 2q^2$So $p^2$ is even, which means $p$ is even. Let $p = 2k$. Then $4k^2 = 2q^2$
-Giving $q^2 = 2k^2$So $q$ is also even. But this contradicts $\gcd(p, q) = 1$. Therefore
-$\sqrt{2}$ is irrational.
+Then $p^2 = 2q^2$So $p^2$ is even, which means $p$ is even. Let $p = 2k$. Then $4k^2 = 2q^2$ Giving
+$q^2 = 2k^2$So $q$ is also even. But this contradicts $\gcd(p, q) = 1$. Therefore $\sqrt{2}$ is
+irrational.
 
 ### Proofs Involving Irrationals (HL)
 
 **Example:** Prove that $\sqrt{2} + \sqrt{3}$ is irrational.
 
-Assume $\sqrt{2} + \sqrt{3} = r$ where $r \in \mathbb{'\{'}Q{'\}'}$. Then $\sqrt{3} = r - \sqrt{2}$So
-$3 = r^2 - 2r\sqrt{2} + 2$Giving:
+Assume $\sqrt{2} + \sqrt{3} = r$ where $r \in \mathbb{'\{'}Q{'\}'}$. Then
+$\sqrt{3} = r - \sqrt{2}$So $3 = r^2 - 2r\sqrt{2} + 2$Giving:
 
 $$
 2r\sqrt{2} = r^2 - 1 \implies \sqrt{2} = \frac{r^2 - 1}{2r}
 $$
 
-Since $r \in \mathbb{'\{'}Q{'\}'}$$\frac{r^2 - 1}{2r} \in \mathbb{'\{'}Q{'\}'}$Contradicting the irrationality of
-$\sqrt{2}$.
+Since $r \in \mathbb{'\{'}Q{'\}'}$$\frac{r^2 - 1}{2r} \in \mathbb{'\{'}Q{'\}'}$Contradicting the
+irrationality of $\sqrt{2}$.
 
 **Example:** Prove that $\sqrt{2} \cdot \sqrt{3} = \sqrt{6}$ is irrational.
 
-Assume $\sqrt{6} = \frac{p}{q}$ in lowest terms. Then $p^2 = 6q^2$So $p$ is even. Let $p = 2k$.
-Then $4k^2 = 6q^2$Giving $2k^2 = 3q^2$So $q$ is even. Contradiction.
+Assume $\sqrt{6} = \frac{p}{q}$ in lowest terms. Then $p^2 = 6q^2$So $p$ is even. Let $p = 2k$. Then
+$4k^2 = 6q^2$Giving $2k^2 = 3q^2$So $q$ is even. Contradiction.
 
 **Example (HL):** Prove that $\sqrt{2} + \sqrt{5}$ is irrational.
 
@@ -116,16 +120,16 @@ $a \lt m/n \lt b$.
 
 ### Notation (OL/HL)
 
-| Symbol | Meaning |
+| Symbol            | Meaning                                        |
 | ----------------- | ---------------------------------------------- | --- | ------------------ |
-| $\in$ | Is an element of |
-| $\subset$ | Is a subset of |
-| $\cup$ | Union |
-| $\cap$ | Intersection |
-| $A'$ or $\bar{A}$ | Complement of $A$ |
-| $\emptyset$ | Empty set |
-| $                 | A                                              | $ | Cardinality of $A$ |
-| $A \setminus B$ | $A$ minus $B$ (elements in $A$ but not in $B$) |
+| $\in$             | Is an element of                               |
+| $\subset$         | Is a subset of                                 |
+| $\cup$            | Union                                          |
+| $\cap$            | Intersection                                   |
+| $A'$ or $\bar{A}$ | Complement of $A$                              |
+| $\emptyset$       | Empty set                                      |
+| $                 | A                                              | $   | Cardinality of $A$ |
+| $A \setminus B$   | $A$ minus $B$ (elements in $A$ but not in $B$) |
 
 **Subset vs. Proper subset.** $A \subset B$ allows $A = B$. $A \subsetneq B$ requires $A \neq B$.
 
@@ -309,8 +313,8 @@ $$
 S_\infty = \frac{a}{1 - r}
 $$
 
-**Why $|r| \ge 1$ diverges.** If $|r| \ge 1$Then $|T_n| = |a||r|^{n-1} \ge |a| > 0$ for all $n$
-So $T_n$ does not approach zero, and the partial sums diverge.
+**Why $|r| \ge 1$ diverges.** If $|r| \ge 1$Then $|T_n| = |a||r|^{n-1} \ge |a| > 0$ for all $n$ So
+$T_n$ does not approach zero, and the partial sums diverge.
 
 **Example (HL):** Find the sum to infinity of $1 + \frac{1}{2} + \frac{1}{4} + \frac{1}{8} + \cdots$
 
@@ -409,7 +413,8 @@ $$
 \sum_{r=1}^{k+1} r = \frac{k(k+1)}{2} + (k+1) = \frac{k(k+1) + 2(k+1)}{2} = \frac{(k+1)(k+2)}{2}
 $$
 
-This is the formula for $n = k+1$. By induction, the formula holds for all $n \in \mathbb{'\{'}N{'\}'}$.
+This is the formula for $n = k+1$. By induction, the formula holds for all
+$n \in \mathbb{'\{'}N{'\}'}$.
 
 **Example (HL):** Evaluate $\sum_{r=1}^{50} (3r - 1)$.
 
@@ -621,23 +626,22 @@ $$
 
 ## Common Pitfalls
 
-1. **Mixing up arithmetic and geometric** formulas -- arithmetic has $d$Geometric has $r$.
- Remember: arithmetic adds, geometric multiplies.
+1. **Mixing up arithmetic and geometric** formulas -- arithmetic has $d$Geometric has $r$. Remember:
+   arithmetic adds, geometric multiplies.
 2. **Sum to infinity** only converges when $|r| \lt 1$. If $|r| \ge 1$The sum diverges.
 3. **Financial mathematics** -- ensure the rate and time period match (e.g., annual rate with annual
- compounding, or monthly rate with monthly compounding).
+   compounding, or monthly rate with monthly compounding).
 4. **Limits** -- always divide by the highest power of $n$ in both numerator and denominator.
-5. **Sigma notation** -- be careful with the lower and upper limits. $\sum_{r=1}^{n} 1 = n$Not
- $1$.
+5. **Sigma notation** -- be careful with the lower and upper limits. $\sum_{r=1}^{n} 1 = n$Not $1$.
 6. **Set notation** -- do not confuse $\subset$ (subset) with $\in$ (element of).
-7. **Proof by contradiction** -- always state the assumption, derive a contradiction, and
- state what this proves.
+7. **Proof by contradiction** -- always state the assumption, derive a contradiction, and state what
+   this proves.
 8. **Induction** -- the inductive step must use the inductive hypothesis. If it does not, the proof
- is invalid.
+   is invalid.
 9. **Recurring decimals** -- identify the repeating block correctly. $0.\dot{3}$ has one repeating
- digit; $0.\dot{3}\dot{7}$ has two repeating digits.
+   digit; $0.\dot{3}\dot{7}$ has two repeating digits.
 10. **AM-GM inequality** -- only applies to non-negative numbers. Do not apply it when $a$ or $b$
- could be negative.
+    could be negative.
 
 ## Practice Questions
 
@@ -646,7 +650,7 @@ $$
 1. Find the 15th term of the arithmetic sequence 5, 9, 13, 17, ...
 2. Find the sum of the first 25 terms of 2, 6, 18, 54, ...
 3. A set $A = \{1, 2, 3, 4, 5, 6, 7, 8\}$ and $B = \{2, 4, 6, 8, 10\}$. Find $A \cup B$ and
- $A \cap B$.
+   $A \cap B$.
 4. Show that $\frac{22}{7}$ is rational.
 5. The 5th term of an arithmetic sequence is 17 and the 12th term is 38. Find $a$ and $d$.
 6. Express $0.\dot{6}$ as a fraction.
@@ -664,36 +668,36 @@ $$
 8. Prove that $\sum_{r=1}^{n} r^3 = \frac{n^2(n+1)^2}{4}$ by induction.
 9. Prove that $\sqrt{2} + \sqrt{5}$ is irrational.
 10. Evaluate $\sum_{r=1}^{n} \frac{1}{r(r+1)}$ by expressing $\frac{1}{r(r+1)}$ in partial
- fractions.
+    fractions.
 11. Express $0.\dot{2}\dot{7}$ as a fraction.
 12. Prove that $\log_2 3$ is irrational.
 13. A bank offers 5% nominal annual rate compounded quarterly. Find the effective annual rate.
 14. In a survey, 70% of people like tea, 40% like coffee, and 25% like both. What percentage like
- neither?
+    neither?
 15. Prove the AM-GM inequality for positive $a$ and $b$.
 16. Evaluate $\sum_{r=1}^{n} (2r - 1)$ and explain the result geometrically.
 17. Prove that $n! > 2^n$ for all $n \ge 4$ by induction.
 18. A loan of EUR 150,000 is repaid over 20 years at a monthly rate of 0.4%. Find the monthly
- repayment and the total amount paid.
-19. The first three terms of a geometric sequence are $x - 2$$x + 2$And $x + 8$. Find $x$ and
- the common ratio.
+    repayment and the total amount paid.
+19. The first three terms of a geometric sequence are $x - 2$$x + 2$And $x + 8$. Find $x$ and the
+    common ratio.
 20. Prove that the sum of an odd number and an even number is always odd.
 
 ### Extended Practice
 
 21. Express $0.1\dot{6}$ (recurring) as a fraction.
 22. Find the sum to infinity of the series
- $\frac{2}{3} + \frac{1}{3} + \frac{1}{6} + \frac{1}{12} + \cdots$
+    $\frac{2}{3} + \frac{1}{3} + \frac{1}{6} + \frac{1}{12} + \cdots$
 23. Evaluate $\sum_{r=1}^{n} (r+1)(r+2)$.
 24. Prove by induction that $n^2 + n$ is even for all positive integers $n$.
 25. Solve $T_1 = 5$$T_{n+1} = \frac{1}{2}T_n + 3$ and find $\lim_{n \to \infty} T_n$.
 26. A geometric sequence has first term 3 and common ratio $\frac{2}{3}$. Find the smallest value of
- $n$ such that $T_n < 0.1$.
+    $n$ such that $T_n < 0.1$.
 27. Prove that there are infinitely many prime numbers (Euclid's proof).
 28. EUR 10000 is invested at $r\%$ per annum compounded annually. After 10 years it is worth
- EUR 18000. Find $r$.
+    EUR 18000. Find $r$.
 29. The sum of the first $n$ terms of an arithmetic sequence is $S_n = 3n^2 + n$. Find the $n$Th
- term $T_n$ and the common difference.
+    term $T_n$ and the common difference.
 30. Prove that $\frac{1}{\sqrt{2}}$ is irrational.
 
 ### Extended Content

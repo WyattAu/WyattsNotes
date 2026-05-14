@@ -1,6 +1,8 @@
 ---
 title: RTTI, dynamic_cast, and typeid
-description: "C++: RTTI, dynamic_cast, and typeid — 4.1 Run-Time Type Information (RTTI); RTTI Implementation in the Itanium ABI for thorough revision and examination."
+description:
+  'C++: RTTI, dynamic_cast, and typeid — 4.1 Run-Time Type Information (RTTI); RTTI Implementation
+  in the Itanium ABI for thorough revision and examination.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -8,6 +10,7 @@ categories:
   - Cpp
 slug: rtti-dynamic-cast-typeid
 ---
+
 # RTTI, dynamic_cast, and Typeid
 
 Run-Time Type Information (RTTI) allows programs to query the dynamic type of polymorphic objects at
@@ -22,10 +25,10 @@ Or `/GR-` (MSVC).
 
 RTTI provides two primary operators:
 
-| Operator | Purpose |
+| Operator       | Purpose                                               |
 | -------------- | ----------------------------------------------------- |
-| `dynamic_cast` | Safe downcast with runtime type check |
-| `typeid` | Returns a `const std::type_info&` describing the type |
+| `dynamic_cast` | Safe downcast with runtime type check                 |
+| `typeid`       | Returns a `const std::type_info&` describing the type |
 
 RTTI relies on the same vtable infrastructure used for virtual dispatch. Each polymorphic class's
 Vtable contains a pointer to its `std::type_info` object.
@@ -53,12 +56,10 @@ The `type_info` object stores:
 This structure enables `dynamic_cast` to walk the base class chain and compute pointer adjustments
 At runtime.
 
-:::warning
-RTTI Overhead Disabling RTTI (`-fno-rtti`) reduces binary size (by removing type_info
+:::warning RTTI Overhead Disabling RTTI (`-fno-rtti`) reduces binary size (by removing type_info
 Metadata) and may enable further optimizations. However, it also makes `dynamic_cast` and `typeid`
 Unavailable for polymorphic types. Disabling RTTI does **not** eliminate the vtable or vptr --
-Virtual dispatch still works.
-:::
+Virtual dispatch still works. :::
 
 ## 4.2 `dynamic_cast<T*>(ptr)` -- Safe Downcast
 
@@ -183,11 +184,9 @@ Cast succeeded
 Cast failed: std::bad_cast
 ```
 
-:::info
-`dynamic_cast<T&>` cannot return `nullptr` because references cannot be null. Throwing an
+:::info `dynamic_cast<T&>` cannot return `nullptr` because references cannot be null. Throwing an
 Exception is the only way to signal failure. This is why `dynamic_cast` on pointers is generally
-Preferred -- it allows the caller to check for failure without exception overhead.
-:::
+Preferred -- it allows the caller to check for failure without exception overhead. :::
 
 ## 4.4 `typeid` Operator
 
@@ -240,15 +239,13 @@ Key points:
 - `typeid(*ptr)` uses the **dynamic type** when `ptr` points to a polymorphic type.
 - `typeid(T)` uses the **static type** -- it is evaluated at compile time.
 - `typeid` returns a reference to a `std::type_info` object, whose lifetime extends for the entire
- program.
+  program.
 - `std::type_index` (from `<typeindex>`) is a wrapper around `std::type_info` that provides value
- semantics and can be used as a key in associative containers.
+  semantics and can be used as a key in associative containers.
 
-:::warning
-The `name()` member of `std::type_info` returns an implementation-defined string. It is
+:::warning The `name()` member of `std::type_info` returns an implementation-defined string. It is
 Useful for debugging but should not be parsed or compared. Use `std::type_index` for type
-Comparisons.
-:::
+Comparisons. :::
 
 ## 4.5 RTTI and `dynamic_cast` for the Visitor Pattern
 
@@ -346,13 +343,11 @@ int main() {
 }
 ```
 
-:::tip
-The `dynamic_cast`-based approach is simpler to implement than the classic Visitor pattern
+:::tip The `dynamic_cast`-based approach is simpler to implement than the classic Visitor pattern
 For small, stable type hierarchies. However, adding a new derived type requires updating every
 `dynamic_cast` chain. The Visitor pattern localizes changes: adding a new visitor doesn't modify
 Existing types, and adding a new type doesn't modify existing visitors (it only requires extending
-The visitor interface).
-:::
+The visitor interface). :::
 
 ## 4.6 `dynamic_cast` with Multiple and Virtual Inheritance
 
@@ -412,13 +407,13 @@ Casts through virtual bases, the cost is $O(d)$ where $d$ is the depth of the DA
 
 ### Down-cast vs Cross-cast
 
-| Cast Type | Source and Target | Cost | Mechanism |
+| Cast Type    | Source and Target           | Cost                          | Mechanism                               |
 | ------------ | --------------------------- | ----------------------------- | --------------------------------------- |
-| Down-cast | Base* to Derived* | $O(1)$ (single inheritance) | `type_info` pointer comparison |
-| Down-cast | Base* to Derived* | $O(b)$ (multiple inheritance) | Walk base class list |
-| Cross-cast | Base1* to Base2* (siblings) | $O(b)$ | Find most-derived, walk to target base |
-| Up-cast | Derived* to Base* | $O(1)$ | Compile-time offset (use `static_cast`) |
-| `void*` cast | Base* to `void*` | $O(1)$ | Offset to most-derived object |
+| Down-cast    | Base* to Derived*           | $O(1)$ (single inheritance)   | `type_info` pointer comparison          |
+| Down-cast    | Base* to Derived*           | $O(b)$ (multiple inheritance) | Walk base class list                    |
+| Cross-cast   | Base1* to Base2* (siblings) | $O(b)$                        | Find most-derived, walk to target base  |
+| Up-cast      | Derived* to Base*           | $O(1)$                        | Compile-time offset (use `static_cast`) |
+| `void*` cast | Base* to `void*`            | $O(1)$                        | Offset to most-derived object           |
 
 ## 4.7 `dynamic_cast` to `void*`: The Most-Derived Type
 
@@ -459,12 +454,12 @@ Source type. It is often used in debugging, custom memory management, and implem
 The behavior of `typeid` depends critically on whether the operand is a type or an expression:
 
 - **`typeid(T)`** (type operand): Always well-formed, returns `std::type_info` for the static type
- `T`. Evaluated at compile time.
+  `T`. Evaluated at compile time.
 - **`typeid(expr)`** (expression operand, `expr` is a dereferenced pointer to a polymorphic type):
- Returns `std::type_info` for the **dynamic type** at runtime.
+  Returns `std::type_info` for the **dynamic type** at runtime.
 - **`typeid(*p)` where `p` is null:** If `p` is a null pointer to a polymorphic type, `typeid(*p)`
- throws `std::bad_typeid` [N4950 S7.6.1.8]. This is because the dereference would require accessing
- the vtable, which does not exist for a null pointer.
+  throws `std::bad_typeid` [N4950 S7.6.1.8]. This is because the dereference would require accessing
+  the vtable, which does not exist for a null pointer.
 
 ```cpp
 #include <iostream>
@@ -664,13 +659,13 @@ Modifying all visitors; adding a new visitor requires modifying all shapes.
 
 ### Alternative Comparison Table
 
-| Approach | RTTI Required | Closed Set | Cost | Extensibility |
+| Approach                      | RTTI Required | Closed Set | Cost                     | Extensibility          |
 | ----------------------------- | ------------- | ---------- | ------------------------ | ---------------------- |
-| `dynamic_cast` chain | Yes | No | $O(d)$ hierarchy depth | Add types freely |
-| Manual type tag | No | No | $O(1)$ switch | Manual maintenance |
-| `std::variant` + `std::visit` | No | Yes | $O(1)$ | Compile-time only |
-| Visitor pattern | No | No | $O(1)$ (2 virtual calls) | Both axes need changes |
-| CRTP / deducing this | No | Yes | $O(0)$ (inlined) | Compile-time only |
+| `dynamic_cast` chain          | Yes           | No         | $O(d)$ hierarchy depth   | Add types freely       |
+| Manual type tag               | No            | No         | $O(1)$ switch            | Manual maintenance     |
+| `std::variant` + `std::visit` | No            | Yes        | $O(1)$                   | Compile-time only      |
+| Visitor pattern               | No            | No         | $O(1)$ (2 virtual calls) | Both axes need changes |
+| CRTP / deducing this          | No            | Yes        | $O(0)$ (inlined)         | Compile-time only      |
 
 ## 4.10 RTTI Overhead Measurement
 

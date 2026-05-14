@@ -1,6 +1,8 @@
 ---
 title: The noexcept Specifier
-description: "C++: The noexcept Specifier — The `noexcept` Specifier; 3.1 `noexcept` as Part of the Function Type; 3.2 `std::move_if_noexcept`."
+description:
+  'C++: The noexcept Specifier — The `noexcept` Specifier; 3.1 `noexcept` as Part of the Function
+  Type; 3.2 `std::move_if_noexcept`.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -8,6 +10,7 @@ categories:
   - Cpp
 slug: the-noexcept-specifier
 ---
+
 # The `noexcept` Specifier
 
 Since C++17, `noexcept` is part of the **function type system** [N4950 §14.5.1]. This has
@@ -123,7 +126,7 @@ Marking a function `noexcept` gives the compiler permission to:
 
 1. **Omit unwind tables** for that function on some platforms.
 2. **Assume non-throwing** when inlining — enabling optimizations that would otherwise be invalid if
- a callee could throw.
+   a callee could throw.
 3. **Elide exception-related bookkeeping** in callers.
 
 ```cpp
@@ -186,11 +189,9 @@ int main() {
 //   caught: oops
 ```
 
-:::warning
-If a `noexcept(false)` destructor actually throws during stack unwinding,
+:::warning If a `noexcept(false)` destructor actually throws during stack unwinding,
 `std::terminate()` is called [N4950 §14.7]. Marking a destructor `noexcept(false)` does not make it
-Safe to throw from a destructor during unwinding.
-:::
+Safe to throw from a destructor during unwinding. :::
 
 ## 3.5 Conditional `noexcept`
 
@@ -337,13 +338,13 @@ int main() {
 
 The relevant type traits for querying noexcept properties:
 
-| Trait | Meaning |
+| Trait                                | Meaning                                          |
 | ------------------------------------ | ------------------------------------------------ |
-| `std::is_nothrow_constructible` | Can be constructed without throwing |
-| `std::is_nothrow_move_constructible` | Move constructor is noexcept |
-| `std::is_nothrow_copy_constructible` | Copy constructor is noexcept |
-| `std::is_nothrow_move_assignable` | Move assignment operator is noexcept |
-| `std::is_nothrow_destructible` | Destructor is noexcept (always true since C++11) |
+| `std::is_nothrow_constructible`      | Can be constructed without throwing              |
+| `std::is_nothrow_move_constructible` | Move constructor is noexcept                     |
+| `std::is_nothrow_copy_constructible` | Copy constructor is noexcept                     |
+| `std::is_nothrow_move_assignable`    | Move assignment operator is noexcept             |
+| `std::is_nothrow_destructible`       | Destructor is noexcept (always true since C++11) |
 
 ## 3.8 `noexcept` Function Overloading
 

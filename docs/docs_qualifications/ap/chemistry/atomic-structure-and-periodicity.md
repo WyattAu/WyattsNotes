@@ -1,6 +1,8 @@
 ---
 title: Atomic Structure and Periodicity
-description: "Atomic Structure and Periodicity — Atomic Theory and Structure (CED Unit 1); Key Historical Developments; Derivation: Rutherford Scattering and the Nucleus."
+description:
+  'Atomic Structure and Periodicity — Atomic Theory and Structure (CED Unit 1); Key Historical
+  Developments; Derivation: Rutherford Scattering and the Nucleus.'
 date: 2026-04-14
 tags:
   - Chemistry
@@ -9,19 +11,20 @@ categories:
   - Chemistry
 slug: atomic-structure-and-periodicity
 ---
+
 ## Atomic Theory and Structure (CED Unit 1)
 
 ### Key Historical Developments
 
-| Scientist | Contribution |
+| Scientist   | Contribution                                                         |
 | ----------- | -------------------------------------------------------------------- |
-| Dalton | Atomic theory: all matter composed of indivisible atoms |
-| Thomson | Cathode ray experiment; discovered the electron (plum pudding model) |
-| Rutherford | Gold foil experiment; discovered the nucleus |
-| Bohr | Quantized energy levels for hydrogen |
-| de Broglie | Wave-particle duality: $\lambda = \frac{h}{mv}$ |
-| Heisenberg | Uncertainty principle: $\Delta x \cdot \Delta p \ge \frac{h}{4\pi}$ |
-| Schrodinger | Wave equation for the electron (quantum mechanical model) |
+| Dalton      | Atomic theory: all matter composed of indivisible atoms              |
+| Thomson     | Cathode ray experiment; discovered the electron (plum pudding model) |
+| Rutherford  | Gold foil experiment; discovered the nucleus                         |
+| Bohr        | Quantized energy levels for hydrogen                                 |
+| de Broglie  | Wave-particle duality: $\lambda = \frac{h}{mv}$                      |
+| Heisenberg  | Uncertainty principle: $\Delta x \cdot \Delta p \ge \frac{h}{4\pi}$  |
+| Schrodinger | Wave equation for the electron (quantum mechanical model)            |
 
 Each model was superseded because it failed to explain new experimental observations. Dalton could
 Not explain cathode rays. Thomson could not explain the gold foil experiment. Rutherford's model was
@@ -47,11 +50,11 @@ Atom.
 
 ### Subatomic Particles
 
-| Particle | Mass (amu) | Charge | Location |
+| Particle | Mass (amu) | Charge | Location        |
 | -------- | ---------- | ------ | --------------- |
-| Proton | 1.0073 | +1 | Nucleus |
-| Neutron | 1.0087 | 0 | Nucleus |
-| Electron | 0.000549 | -1 | Outside nucleus |
+| Proton   | 1.0073     | +1     | Nucleus         |
+| Neutron  | 1.0087     | 0      | Nucleus         |
+| Electron | 0.000549   | -1     | Outside nucleus |
 
 The nucleus contains over 99.9% of the atom's mass but occupies only about $10^{-12}$ of its volume.
 The electron cloud defines the size of the atom, with a typical radius of about
@@ -290,11 +293,11 @@ For absorption: $n_i \lt n_f$ (photon absorbed).
 
 ### Spectral Series
 
-| Series | Transition | Region |
+| Series  | Transition | Region      |
 | ------- | ---------- | ----------- |
-| Lyman | $n_f = 1$ | Ultraviolet |
-| Balmer | $n_f = 2$ | Visible |
-| Paschen | $n_f = 3$ | Infrared |
+| Lyman   | $n_f = 1$  | Ultraviolet |
+| Balmer  | $n_f = 2$  | Visible     |
+| Paschen | $n_f = 3$  | Infrared    |
 
 The convergence of lines towards the series limit corresponds to transitions from $n = \infty$ to
 $n_f$Where the energy difference approaches a maximum value.
@@ -376,13 +379,13 @@ $Z_{\mathrm{eff{}}$ remains approximately constant.
 
 ### Key Periodic Trends
 
-| Property | Across a Period (L to R) | Down a Group |
+| Property           | Across a Period (L to R) | Down a Group        |
 | ------------------ | ------------------------ | ------------------- |
-| Atomic radius | Decreases | Increases |
-| Ionization energy | Increases | Decreases |
-| Electron affinity | Generally increases | Generally decreases |
-| Electronegativity | Increases | Decreases |
-| Metallic character | Decreases | Increases |
+| Atomic radius      | Decreases                | Increases           |
+| Ionization energy  | Increases                | Decreases           |
+| Electron affinity  | Generally increases      | Generally decreases |
+| Electronegativity  | Increases                | Decreases           |
+| Metallic character | Decreases                | Increases           |
 
 ### Ionization Energy
 
@@ -443,8 +446,8 @@ Repulsion, allowing the remaining electrons to be pulled closer to the nucleus.
 Repulsion.
 
 **Isoelectronic series** (same number of electrons): ionic radius decreases with increasing nuclear
-Charge. For example: $\mathrm{O{}^{2-} \gt \mathrm{F{}^- \gt \mathrm{Na{}^+ \gt \mathrm{Mg{}^{2+}$ (all
-Have 10 electrons, but nuclear charge increases from 8 to 12).
+Charge. For example: $\mathrm{O{}^{2-} \gt \mathrm{F{}^- \gt \mathrm{Na{}^+ \gt \mathrm{Mg{}^{2+}$
+(all Have 10 electrons, but nuclear charge increases from 8 to 12).
 
 ### Worked Example: Isoelectronic Radius Comparison
 
@@ -461,10 +464,10 @@ Order: $\mathrm{Mg{}^{2+} \lt \mathrm{Na{}^+ \lt \mathrm{F{}^- \lt \mathrm{O{}^{
 The first five ionization energies of aluminium ($Z = 13$) are: 578, 1817, 2745, 11578, and 14842
 KJ/mol. Explain the pattern.
 
-Al: $[\mathrm{Ne{}]\,3s^2 3p^1$. The first three electrons are removed from the n=3 shell (relatively
-Easy). The large jump between the third (2745) and fourth (11578) IE occurs because the fourth
-Electron must be removed from the n=2 shell, which is much closer to the nucleus and less shielded.
-This confirms aluminium has three valence electrons (Group 13).
+Al: $[\mathrm{Ne{}]\,3s^2 3p^1$. The first three electrons are removed from the n=3 shell
+(relatively Easy). The large jump between the third (2745) and fourth (11578) IE occurs because the
+fourth Electron must be removed from the n=2 shell, which is much closer to the nucleus and less
+shielded. This confirms aluminium has three valence electrons (Group 13).
 
 ### Shielding and Penetration
 
@@ -477,11 +480,11 @@ Effectively than 3d electrons, giving them a lower energy when both subshells ar
 
 ### Summary Table: Period 3 Trends
 
-| Element | Na | Mg | Al | Si | P | S | Cl | Ar |
+| Element            | Na   | Mg   | Al   | Si   | P    | S    | Cl   | Ar   |
 | ------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
-| Atomic radius (pm) | 186 | 160 | 143 | 117 | 110 | 104 | 99 | -- |
-| IE$_1$ (kJ/mol) | 496 | 738 | 578 | 786 | 1012 | 1000 | 1251 | 1521 |
-| Electronegativity | 0.93 | 1.31 | 1.61 | 1.90 | 2.19 | 2.58 | 3.16 | -- |
+| Atomic radius (pm) | 186  | 160  | 143  | 117  | 110  | 104  | 99   | --   |
+| IE$_1$ (kJ/mol)    | 496  | 738  | 578  | 786  | 1012 | 1000 | 1251 | 1521 |
+| Electronegativity  | 0.93 | 1.31 | 1.61 | 1.90 | 2.19 | 2.58 | 3.16 | --   |
 
 Note the dip in IE from Mg to Al (s to p) and from P to S (half-filled stability to pairing
 Repulsion).
@@ -493,20 +496,20 @@ Repulsion).
 Atoms or ions with unpaired electrons are **paramagnetic** (attracted to a magnetic field). Those
 With all electrons paired are **diamagnetic** (weakly repelled by a magnetic field).
 
-| Species | Unpaired Electrons | Magnetic Behavior |
+| Species   | Unpaired Electrons | Magnetic Behavior |
 | --------- | ------------------ | ----------------- |
-| Na | 1 | Paramagnetic |
-| Mg | 0 | Diamagnetic |
-| Fe$^{3+}$ | 5 | Paramagnetic |
-| Zn$^{2+}$ | 0 | Diamagnetic |
-| O$_2$ | 2 | Paramagnetic |
+| Na        | 1                  | Paramagnetic      |
+| Mg        | 0                  | Diamagnetic       |
+| Fe$^{3+}$ | 5                  | Paramagnetic      |
+| Zn$^{2+}$ | 0                  | Diamagnetic       |
+| O$_2$     | 2                  | Paramagnetic      |
 
 ### Worked Example: Magnetic Properties
 
 Determine the magnetic properties of $\mathrm{Cr{}^{3+}$.
 
-$\mathrm{Cr{}^{3+}$: $[\mathrm{Ar{}]\,3d^3$. Three unpaired electrons in the 3d subshell (one in each
-Of three orbitals, following Hund's rule). Therefore, $\mathrm{Cr{}^{3+}$ is paramagnetic.
+$\mathrm{Cr{}^{3+}$: $[\mathrm{Ar{}]\,3d^3$. Three unpaired electrons in the 3d subshell (one in
+each Of three orbitals, following Hund's rule). Therefore, $\mathrm{Cr{}^{3+}$ is paramagnetic.
 
 ### Worked Example: Predicting Magnetic Properties
 
@@ -526,12 +529,12 @@ For main group elements, valence electrons are those in the outermost s and p su
 Transition metals, the valence electrons include the outermost s electrons and the d electrons of
 The highest occupied d subshell.
 
-| Element | Configuration | Valence Electrons |
-| ------- | ----------------------------- | ----------------- |
-| Sc | $[\mathrm{Ar{}]\,4s^2 3d^1$ | 3 |
-| Ti | $[\mathrm{Ar{}]\,4s^2 3d^2$ | 4 |
-| Fe | $[\mathrm{Ar{}]\,4s^2 3d^6$ | 8 |
-| Cu | $[\mathrm{Ar{}]\,4s^1 3d^{10}$ | 11 |
+| Element | Configuration                  | Valence Electrons |
+| ------- | ------------------------------ | ----------------- |
+| Sc      | $[\mathrm{Ar{}]\,4s^2 3d^1$    | 3                 |
+| Ti      | $[\mathrm{Ar{}]\,4s^2 3d^2$    | 4                 |
+| Fe      | $[\mathrm{Ar{}]\,4s^2 3d^6$    | 8                 |
+| Cu      | $[\mathrm{Ar{}]\,4s^1 3d^{10}$ | 11                |
 
 ### Common Oxidation States of Transition Metals
 
@@ -539,10 +542,10 @@ Transition metals can lose different numbers of electrons, giving multiple oxida
 
 | Element | Common Oxidation States |
 | ------- | ----------------------- |
-| Mn | +2, +4, +7 |
-| Fe | +2, +3 |
-| Cu | +1, +2 |
-| Cr | +2, +3, +6 |
+| Mn      | +2, +4, +7              |
+| Fe      | +2, +3                  |
+| Cu      | +1, +2                  |
+| Cr      | +2, +3, +6              |
 
 ### Worked Example: Transition Metal Ion Configurations
 
@@ -572,8 +575,9 @@ Order: Na &lt; Al &lt; Cl &lt; Ar.
 
 ### Derivation: Ionization Energy Across a Period
 
-The first ionization energy generally increases across a period because $Z_{\mathrm{eff{}}$ increases
-While the principal quantum number $n$ stays the same. The outermost electron is held more tightly.
+The first ionization energy generally increases across a period because $Z_{\mathrm{eff{}}$
+increases While the principal quantum number $n$ stays the same. The outermost electron is held more
+tightly.
 
 The decrease from Group 2 to Group 13 occurs because the Group 13 electron enters a p subshell,
 Which is higher in energy and more effectively shielded than the s subshell of Group 2.
@@ -584,41 +588,41 @@ The increase in $Z_{\mathrm{eff{}}$.
 
 ## Summary Table: Periodic Trends Explained
 
-| Trend | Direction | Explanation |
-| ----------------- | -------------------------- | ------------------------------------------------------------------ |
-| Atomic radius | Decreases L to R | Increasing $Z_{\mathrm{eff{}}$ pulls electrons closer |
-| Atomic radius | Increases top to bottom | Additional shells outweigh increased nuclear charge |
-| Ionization energy | Increases L to R | Higher $Z_{\mathrm{eff{}}$ makes electrons harder to remove |
-| Ionization energy | Decreases top to bottom | Outer electrons are further from nucleus and more shielded |
+| Trend             | Direction                  | Explanation                                                         |
+| ----------------- | -------------------------- | ------------------------------------------------------------------- |
+| Atomic radius     | Decreases L to R           | Increasing $Z_{\mathrm{eff{}}$ pulls electrons closer               |
+| Atomic radius     | Increases top to bottom    | Additional shells outweigh increased nuclear charge                 |
+| Ionization energy | Increases L to R           | Higher $Z_{\mathrm{eff{}}$ makes electrons harder to remove         |
+| Ionization energy | Decreases top to bottom    | Outer electrons are further from nucleus and more shielded          |
 | Electron affinity | Generally increases L to R | Greater $Z_{\mathrm{eff{}}$ increases attraction for added electron |
-| Electronegativity | Increases L to R | Greater $Z_{\mathrm{eff{}}$ increases pull on bonding electrons |
-| Electronegativity | Decreases top to bottom | Greater distance from nucleus reduces pull on bonding electrons |
+| Electronegativity | Increases L to R           | Greater $Z_{\mathrm{eff{}}$ increases pull on bonding electrons     |
+| Electronegativity | Decreases top to bottom    | Greater distance from nucleus reduces pull on bonding electrons     |
 
 ## Common Pitfalls
 
 1. **Confusing $n$ and $\ell$.** $n$ is the principal quantum number (energy level), $\ell$ is the
- angular momentum quantum number (subshell shape).
+   angular momentum quantum number (subshell shape).
 2. **Writing $4s$ before $3d$ in configurations for transition metal cations.** When forming
- cations, remove $4s$ electrons first (even though $4s$ fills before $3d$).
-3. **Incorrect quantum numbers.** The valid range of $\ell$ is $0$ to $n-1$And $m_\ell$ ranges
- from $-\ell$ to $+\ell$.
+   cations, remove $4s$ electrons first (even though $4s$ fills before $3d$).
+3. **Incorrect quantum numbers.** The valid range of $\ell$ is $0$ to $n-1$And $m_\ell$ ranges from
+   $-\ell$ to $+\ell$.
 4. **Confounding atomic radius with ionic radius.** Cations are smaller than their parent atoms;
- anions are larger.
+   anions are larger.
 5. **Misremembering the ionization energy exceptions.** Group 13 has lower IE than Group 12 (s to
- p); Group 16 has lower IE than Group 15 (pairing energy).
+   p); Group 16 has lower IE than Group 15 (pairing energy).
 6. **Forgetting that the Bohr model only works for hydrogen and hydrogen-like ions.** Multi-electron
- atoms require the quantum mechanical model.
+   atoms require the quantum mechanical model.
 7. **Using the wrong sign for energy.** Energy levels are negative (bound states); transitions to
- higher levels require energy input.
+   higher levels require energy input.
 8. **Confusing effective nuclear charge with nuclear charge.** $Z_{\mathrm{eff{}}$ accounts for
- shielding; it is always less than $Z$.
+   shielding; it is always less than $Z$.
 9. **Assuming ionization energy always increases across a period.** The dips at Group 13 and Group
- 16 are important exceptions.
+   16 are important exceptions.
 10. **Confusing frequency and wavelength.** $c = \lambda\nu$; frequency and wavelength are inversely
- proportional.
+    proportional.
 11. **Forgetting to convert wavelength to metres** before using $E = hc/\lambda$.
 12. **Assuming paramagnetism means strong attraction.** Paramagnetism is a weak effect compared to
- ferromagnetism.
+    ferromagnetism.
 
 ## Practice Questions
 
@@ -627,15 +631,15 @@ The increase in $Z_{\mathrm{eff{}}$.
 2. What are the four quantum numbers for each electron in the $2p$ subshell of carbon?
 
 3. Calculate the wavelength of a photon emitted when an electron in hydrogen transitions from
- $n = 5$ to $n = 2$. In what spectral series does this belong?
+   $n = 5$ to $n = 2$. In what spectral series does this belong?
 
 4. Explain why the first ionization energy of oxygen is less than that of nitrogen.
 
 5. Arrange the following in order of increasing atomic radius: $\mathrm{Mg{}^{2+}$$\mathrm{Na{}^+$
- $\mathrm{F{}^-$$\mathrm{O{}^{2-}$.
+   $\mathrm{F{}^-$$\mathrm{O{}^{2-}$.
 
 6. The work function of potassium is $2.30 \mathrm{ eV{}$. What is the maximum kinetic energy of
- electrons ejected by light of wavelength $400 \mathrm{ nm{}$?
+   electrons ejected by light of wavelength $400 \mathrm{ nm{}$?
 
 7. Write the electron configurations for $\mathrm{Cr{}^{3+}$ and $\mathrm{Cu{}^+$.
 
@@ -646,62 +650,62 @@ The increase in $Z_{\mathrm{eff{}}$.
 10. Which element has the higher electronegativity, and why: P or Cl?
 
 11. For the isoelectronic series $\mathrm{N{}^{3-}$$\mathrm{O{}^{2-}$$\mathrm{F{}^-$
- $\mathrm{Na{}^+$$\mathrm{Mg{}^{2+}$Arrange the ions in order of increasing radius and explain
- the trend.
+    $\mathrm{Na{}^+$$\mathrm{Mg{}^{2+}$Arrange the ions in order of increasing radius and explain
+    the trend.
 
 12. Explain, in terms of effective nuclear charge, why atomic radius decreases across a period.
 
 13. Calculate the minimum frequency of light required to eject electrons from a metal surface with a
- work function of $4.5 \times 10^{-19}$ J.
+    work function of $4.5 \times 10^{-19}$ J.
 
 14. Write the electron configuration for arsenic ($Z = 33$) using noble gas core notation, and
- identify the number of unpaired electrons.
+    identify the number of unpaired electrons.
 
 15. The first four ionization energies of an element are 738, 1451, 7733, and 10540 kJ/mol. Identify
- the group of the element and explain your reasoning.
+    the group of the element and explain your reasoning.
 
 16. Calculate the wavelength of light required to ionise a hydrogen atom in the ground state.
 
 17. Explain why the electron affinity of chlorine is more negative than that of fluorine.
 
 18. A photon with energy $10.2 \mathrm{ eV{}$ is absorbed by a hydrogen atom in the ground state. To
- what energy level is the electron excited?
+    what energy level is the electron excited?
 
 19. Write the electron configuration for $\mathrm{Co{}^{2+}$ and state the number of unpaired
- electrons.
+    electrons.
 
 20. Explain, using the concept of shielding, why the atomic radius increases down Group 2 despite
- increasing nuclear charge.
+    increasing nuclear charge.
 
 21. Determine whether each of the following is paramagnetic or diamagnetic: (a) $\mathrm{Zn{}^{2+}$
- (b) $\mathrm{Fe{}^{2+}$ (c) $\mathrm{O{}^{2-}$ (d) Ne.
+    (b) $\mathrm{Fe{}^{2+}$ (c) $\mathrm{O{}^{2-}$ (d) Ne.
 
 22. Calculate the frequency and wavelength of light emitted when an electron in hydrogen drops from
- $n = 6$ to $n = 2$. Identify the spectral series.
+    $n = 6$ to $n = 2$. Identify the spectral series.
 
 23. The first three ionization energies of an element are 419, 3052, and 4420 kJ/mol. Identify the
- element and explain your reasoning.
+    element and explain your reasoning.
 
 24. Explain why the atomic radius of gallium is nearly the same as that of aluminium, despite
- gallium being in the period below aluminium.
+    gallium being in the period below aluminium.
 
 25. Calculate the de Broglie wavelength of an electron travelling at
- $2.0 \times 10^6 \mathrm{ m/s{}$. (Electron mass = $9.11 \times 10^{-31}$ kg.)
+    $2.0 \times 10^6 \mathrm{ m/s{}$. (Electron mass = $9.11 \times 10^{-31}$ kg.)
 
 26. Explain why potassium has a lower first ionization energy than argon, despite having a higher
- nuclear charge.
+    nuclear charge.
 
 27. Write the ground-state electron configuration for selenium ($Z = 34$). How many unpaired
- electrons does it have?
+    electrons does it have?
 
 28. Calculate the energy difference (in joules) between the $n = 1$ and $n = 2$ energy levels of the
- hydrogen atom.
+    hydrogen atom.
 
 29. A student writes the electron configuration of Cu as $[\mathrm{Ar{}]\,4s^2 3d^9$. Identify the
- error and write the correct configuration.
+    error and write the correct configuration.
 
 30. Explain why the atomic radius of Ga (gallium) is similar to that of Al (aluminium), despite Ga
- being in the period below Al.
+    being in the period below Al.
 
 ## Practice Problems
 

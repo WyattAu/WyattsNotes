@@ -1,11 +1,14 @@
 ---
 title: Matrices and Transformations (Extended)
-description: "A-Level Further Maths notes on Matrices and Transformations (Extended): Matrices and Transformations (Extended Treatment); 1. Matrix Operations; 1.1 Definiti."
+description:
+  'A-Level Further Maths notes on Matrices and Transformations (Extended): Matrices and
+  Transformations (Extended Treatment); 1. Matrix Operations; 1.1 Definiti.'
 date: 2026-04-23T00:00:00.000Z
 tags: [Mathematics, ALevel]
 categories: [Mathematics]
 slug: matrices-and-transformations-extended
 ---
+
 ## Matrices and Transformations (Extended Treatment)
 
 This document covers matrix operations, determinants, inverses, 3x3 matrices, linear
@@ -166,14 +169,14 @@ Key property: the origin is always mapped to the origin.
 
 ### 4.2 Standard transformations
 
-| Transformation | Matrix |
+| Transformation                   | Matrix                                                                              |
 | -------------------------------- | ----------------------------------------------------------------------------------- |
-| Reflection in $x$-axis | $\begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}$ |
-| Reflection in $y$-axis | $\begin{pmatrix} -1 & 0 \\ 0 & 1 \end{pmatrix}$ |
-| Reflection in $y = x$ | $\begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}$ |
-| Rotation $\theta$ anticlockwise | $\begin{pmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{pmatrix}$ |
-| Enlargement scale $k$ | $\begin{pmatrix} k & 0 \\ 0 & k \end{pmatrix}$ |
-| Stretch parallel to $x$ (sf $k$) | $\begin{pmatrix} k & 0 \\ 0 & 1 \end{pmatrix}$ |
+| Reflection in $x$-axis           | $\begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}$                                     |
+| Reflection in $y$-axis           | $\begin{pmatrix} -1 & 0 \\ 0 & 1 \end{pmatrix}$                                     |
+| Reflection in $y = x$            | $\begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}$                                      |
+| Rotation $\theta$ anticlockwise  | $\begin{pmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{pmatrix}$ |
+| Enlargement scale $k$            | $\begin{pmatrix} k & 0 \\ 0 & k \end{pmatrix}$                                      |
+| Stretch parallel to $x$ (sf $k$) | $\begin{pmatrix} k & 0 \\ 0 & 1 \end{pmatrix}$                                      |
 
 ### 4.3 Combined transformations
 
@@ -398,8 +401,8 @@ $$= ad(eh - fg) - bc(eh - fg) = (ad - bc)(eh - fg) = \det(A)\det(B) \quad \black
 $A^{-1} = \dfrac◆LB◆1◆RB◆◆LB◆\det A◆RB◆\mathrm{adj}(A)$So $A$ is invertible.
 
 ($\Leftarrow$) If $A$ is invertible with $A^{-1}$Then
-$\det(A)\det(A^{-1}) = \det(AA^{-1}) = \det(I) = 1$. Since $1 \neq 0$We must have
-$\det(A) \neq 0$. $\blacksquare$
+$\det(A)\det(A^{-1}) = \det(AA^{-1}) = \det(I) = 1$. Since $1 \neq 0$We must have $\det(A) \neq 0$.
+$\blacksquare$
 
 ### 7.3 Proof: the trace equals the sum of eigenvalues
 
@@ -435,17 +438,17 @@ $\blacksquare$
 :::warning Common Pitfall
 
 1. **Matrix multiplication order:** $AB$ means "apply $B$ first, then $A$." When combining
- transformations, the second transformation is written on the left. Always read right-to-left.
+   transformations, the second transformation is written on the left. Always read right-to-left.
 2. **3x3 determinant sign errors:** The cofactor expansion alternates signs $+$$-$$+$ along the
- first row. A common mistake is to forget the $-$ sign on the middle term.
+   first row. A common mistake is to forget the $-$ sign on the middle term.
 3. **Singular matrix checks:** Before finding an inverse, always verify $\det(A) \neq 0$. If the
- determinant is zero, the matrix has no inverse and the system $A\mathbf{x} = \mathbf{b}$ has
- either no solutions or infinitely many.
+   determinant is zero, the matrix has no inverse and the system $A\mathbf{x} = \mathbf{b}$ has
+   either no solutions or infinitely many.
 4. **Eigenvectors are not unique:** Any non-zero scalar multiple of an eigenvector is also an
- eigenvector. When diagonalising, ensure consistency: the columns of $P$ must match the order of
- eigenvalues in $D$.
+   eigenvector. When diagonalising, ensure consistency: the columns of $P$ must match the order of
+   eigenvalues in $D$.
 5. **Repeated eigenvalues:** A repeated eigenvalue does not necessarily give two independent
- eigenvectors. Check by attempting to solve $(A - \lambda I)\mathbf{v} = \mathbf{0}$. :::
+   eigenvectors. Check by attempting to solve $(A - \lambda I)\mathbf{v} = \mathbf{0}$. :::
 
 ---
 
@@ -824,8 +827,8 @@ $$M = \begin{pmatrix} 1 & 0 & 1 \\ 0 & 1 & 2 \\ 0 & 0 & 1 \end{pmatrix}\begin{pm
 
 ### Question 10
 
-**Prove that** if $A$ has eigenvalues $\lambda_1, \lambda_2$ with $\lambda_1 \neq \lambda_2$Then
-$A$ is diagonalisable.
+**Prove that** if $A$ has eigenvalues $\lambda_1, \lambda_2$ with $\lambda_1 \neq \lambda_2$Then $A$
+is diagonalisable.
 
 <details>
 <summary>Solution</summary>

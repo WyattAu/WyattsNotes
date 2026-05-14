@@ -1,9 +1,12 @@
 ---
 id: query-optimization
 title: Query Optimization
-description: "Query Optimization — Query Optimizer Architecture; Rule-Based vs Cost-Based Optimization; Statistics; Column Statistics."
+description:
+  'Query Optimization — Query Optimizer Architecture; Rule-Based vs Cost-Based Optimization;
+  Statistics; Column Statistics.'
 slug: query-optimization
 ---
+
 ## Query Optimizer Architecture
 
 ### Rule-Based vs Cost-Based Optimization
@@ -56,15 +59,15 @@ WHERE tablename = 'orders'
 ORDER BY attname;
 ```
 
-| Statistic | Meaning |
+| Statistic           | Meaning                                                                             |
 | ------------------- | ----------------------------------------------------------------------------------- |
-| `null_frac` | Fraction of rows with NULL in this column |
-| `n_distinct` | Positive: approximate distinct values. Negative: fraction of rows that are distinct |
-| `avg_width` | Average byte width of column values |
-| `correlation` | Physical vs logical order correlation (-1.0 to 1.0) |
-| `most_common_vals` | Most frequent values (MCV list) |
-| `most_common_freqs` | Frequencies of MCV values |
-| `histogram_bounds` | Boundaries for histogram of non-MCV values |
+| `null_frac`         | Fraction of rows with NULL in this column                                           |
+| `n_distinct`        | Positive: approximate distinct values. Negative: fraction of rows that are distinct |
+| `avg_width`         | Average byte width of column values                                                 |
+| `correlation`       | Physical vs logical order correlation (-1.0 to 1.0)                                 |
+| `most_common_vals`  | Most frequent values (MCV list)                                                     |
+| `most_common_freqs` | Frequencies of MCV values                                                           |
+| `histogram_bounds`  | Boundaries for histogram of non-MCV values                                          |
 
 ### Histograms
 
@@ -114,11 +117,11 @@ ANALYZE orders;
 SELECT * FROM pg_stats_ext WHERE tablename = 'orders';
 ```
 
-| Statistic Type | Captures | Use Case |
+| Statistic Type | Captures                              | Use Case                               |
 | -------------- | ------------------------------------- | -------------------------------------- |
-| `ndistinct` | Distinct count of column combinations | GROUP BY multiple columns |
-| `dependencies` | Functional dependencies | WHERE a = 1 AND b = 2 (b depends on a) |
-| `mcv` | Most common value combinations | Multi-column filter selectivity |
+| `ndistinct`    | Distinct count of column combinations | GROUP BY multiple columns              |
+| `dependencies` | Functional dependencies               | WHERE a = 1 AND b = 2 (b depends on a) |
+| `mcv`          | Most common value combinations        | Multi-column filter selectivity        |
 
 ## Join Strategies
 
@@ -187,13 +190,13 @@ Best when: both sides already sorted (index order), or when a presorted merge is
 
 ### Join Strategy Selection Guide
 
-| Condition | Preferred Strategy |
+| Condition                                          | Preferred Strategy      |
 | -------------------------------------------------- | ----------------------- |
-| One table is very small (&lt; 1000 rows) | Nested Loop |
-| Inner table has a selective index on join key | Nested Loop |
-| Both tables large, equijoin, sufficient work_mem | Hash Join |
-| Both sides sorted on join key | Merge Join |
-| Non-equijoin (e.g., range condition) | Nested Loop |
+| One table is very small (&lt; 1000 rows)           | Nested Loop             |
+| Inner table has a selective index on join key      | Nested Loop             |
+| Both tables large, equijoin, sufficient work_mem   | Hash Join               |
+| Both sides sorted on join key                      | Merge Join              |
+| Non-equijoin (e.g., range condition)               | Nested Loop             |
 | Inner table large, no index, insufficient work_mem | Merge Join (after sort) |
 
 ## Subquery Optimization
@@ -292,13 +295,13 @@ SELECT * FROM large_a JOIN large_b ON a.id = b.id;
 
 ### When Parallel Query Helps (and When It Does Not)
 
-| Scenario | Parallel Helps? | Reason |
+| Scenario                       | Parallel Helps? | Reason                                     |
 | ------------------------------ | --------------- | ------------------------------------------ |
-| Full table scan on large table | Yes | Work distributed across workers |
-| Aggregates on large tables | Yes | Partial aggregates combined at coordinator |
-| Index scan with few rows | No | Coordination overhead exceeds scan cost |
-| Foreign data wrapper queries | No | FDW does not support parallel execution |
-| Queries returning few rows | No | Gather overhead exceeds benefit |
+| Full table scan on large table | Yes             | Work distributed across workers            |
+| Aggregates on large tables     | Yes             | Partial aggregates combined at coordinator |
+| Index scan with few rows       | No              | Coordination overhead exceeds scan cost    |
+| Foreign data wrapper queries   | No              | FDW does not support parallel execution    |
+| Queries returning few rows     | No              | Gather overhead exceeds benefit            |
 
 :::warning
 
@@ -433,13 +436,13 @@ CREATE INDEX idx_logs_created_brin
     WITH (pages_per_range = 128);
 ```
 
-| Index Type | Size (relative) | Best For | Worst For |
+| Index Type | Size (relative) | Best For                            | Worst For                 |
 | ---------- | --------------- | ----------------------------------- | ------------------------- |
-| B-tree | Large | General purpose, equality + range | Large tables, few queries |
-| BRIN | Tiny (&lt; 1%) | Append-only, sorted data | Random insert order |
-| Hash | Medium | Equality only | Range queries, ordering |
-| GIN | Large | Array, full-text, JSONB containment | Exact match, small keys |
-| GiST | Medium | Geometric, range, full-text (trgm) | Simple equality |
+| B-tree     | Large           | General purpose, equality + range   | Large tables, few queries |
+| BRIN       | Tiny (&lt; 1%)  | Append-only, sorted data            | Random insert order       |
+| Hash       | Medium          | Equality only                       | Range queries, ordering   |
+| GIN        | Large           | Array, full-text, JSONB containment | Exact match, small keys   |
+| GiST       | Medium          | Geometric, range, full-text (trgm)  | Simple equality           |
 
 ## GIN and GiST Indexes
 
@@ -510,11 +513,11 @@ server_idle_timeout = 600
 
 ### Pool Modes
 
-| Mode | Behavior | Best For |
+| Mode          | Behavior                                           | Best For                               |
 | ------------- | -------------------------------------------------- | -------------------------------------- |
-| `session` | Connection assigned to client for entire session | Applications using SET/ advisory locks |
+| `session`     | Connection assigned to client for entire session   | Applications using SET/ advisory locks |
 | `transaction` | Connection returned to pool after each transaction | Most web applications (default choice) |
-| `statement` | Connection returned to pool after each statement | Very high concurrency, stateless |
+| `statement`   | Connection returned to pool after each statement   | Very high concurrency, stateless       |
 
 :::warning
 
@@ -883,14 +886,14 @@ CREATE INDEX idx_docs_body_gist ON documents USING GiST (body gist_trgm_ops);
 -- Less selective for short patterns
 ```
 
-| Feature | GIN trigram | GiST trigram |
+| Feature        | GIN trigram        | GiST trigram      |
 | -------------- | ------------------ | ----------------- |
-| Substring LIKE | Fast | Moderate |
-| Similarity | Fast | Fast |
-| Index size | Large (3-5x data) | Small (0.1x data) |
-| Write speed | Slow | Fast |
-| Read speed | Fast (exact match) | Moderate |
-| Best for | Read-heavy | Write-heavy |
+| Substring LIKE | Fast               | Moderate          |
+| Similarity     | Fast               | Fast              |
+| Index size     | Large (3-5x data)  | Small (0.1x data) |
+| Write speed    | Slow               | Fast              |
+| Read speed     | Fast (exact match) | Moderate          |
+| Best for       | Read-heavy         | Write-heavy       |
 
 ## Partition Pruning Details
 
@@ -945,15 +948,15 @@ Tables.
 
 ## Statistics Target Tuning Guide
 
-| Column Pattern | Recommended statistics_target | Reason |
+| Column Pattern                          | Recommended statistics_target | Reason                                        |
 | --------------------------------------- | ----------------------------- | --------------------------------------------- |
-| Boolean (low cardinality) | 100 (default) | Few distinct values, MCV covers all |
-| Status enum (5-20 values) | 200 | MCV needs to capture all values |
-| Foreign key (many distinct values) | 100-200 | Histogram is more important |
-| Skewed distribution (power law) | 500-1000 | More histogram buckets for accuracy |
-| Column used in JOINs | 200-500 | Join cardinality estimates matter |
-| Column used in WHERE with range queries | 200-500 | Histogram boundaries affect range selectivity |
-| Unique or near-unique | 100 (default) | n_distinct is sufficient |
+| Boolean (low cardinality)               | 100 (default)                 | Few distinct values, MCV covers all           |
+| Status enum (5-20 values)               | 200                           | MCV needs to capture all values               |
+| Foreign key (many distinct values)      | 100-200                       | Histogram is more important                   |
+| Skewed distribution (power law)         | 500-1000                      | More histogram buckets for accuracy           |
+| Column used in JOINs                    | 200-500                       | Join cardinality estimates matter             |
+| Column used in WHERE with range queries | 200-500                       | Histogram boundaries affect range selectivity |
+| Unique or near-unique                   | 100 (default)                 | n_distinct is sufficient                      |
 
 ```sql
 -- Set statistics target per column

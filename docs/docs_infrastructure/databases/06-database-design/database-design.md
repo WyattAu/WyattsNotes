@@ -1,7 +1,9 @@
 ---
 id: database-design
 title: Database Design
-description: "Database Design — The Design Process; Phase 1: Requirements Analysis; Phase 2: Conceptual Design; Phase 3: Logical Design."
+description:
+  'Database Design — The Design Process; Phase 1: Requirements Analysis; Phase 2: Conceptual Design;
+  Phase 3: Logical Design.'
 slug: database-design
 sidebar_position: 1
 tags:
@@ -9,6 +11,7 @@ tags:
 categories:
   - Databases
 ---
+
 ## The Design Process
 
 Database design is not a one-step activity. It is a disciplined process that moves from abstract
@@ -20,13 +23,13 @@ Evolve, queries that cannot perform, and data that cannot be trusted.
 Before writing a single CREATE TABLE, you must understand:
 
 1. **Data requirements:** what data will be stored, what are the entities and their attributes, what
- are the relationships, what are the constraints
+   are the relationships, what are the constraints
 2. **Functional requirements:** what queries will the application execute, how frequently, what is
- the expected latency, what is the tolerance for stale data
+   the expected latency, what is the tolerance for stale data
 3. **Non-functional requirements:** expected data volume, growth rate, read/write ratio, RTO/RPO
- (recovery time/recovery point objectives), compliance requirements
+   (recovery time/recovery point objectives), compliance requirements
 4. **Access patterns:** who reads what, when, and how often. The most important question in database
- design is: "what are the top 10 queries this system will execute?"
+   design is: "what are the top 10 queries this system will execute?"
 
 ### Phase 2: Conceptual Design
 
@@ -118,19 +121,19 @@ erDiagram
 
 ### Relationships
 
-| Cardinality | ER Notation | SQL Implementation |
+| Cardinality | ER Notation            | SQL Implementation                                 |
 | ----------- | ---------------------- | -------------------------------------------------- |
-| 1:1 | One line, one mark | Foreign key in either table with UNIQUE constraint |
-| 1:N | One line, many marks | Foreign key in the "many" table |
-| M:N | Many lines, many marks | Association table with composite PK |
+| 1:1         | One line, one mark     | Foreign key in either table with UNIQUE constraint |
+| 1:N         | One line, many marks   | Foreign key in the "many" table                    |
+| M:N         | Many lines, many marks | Association table with composite PK                |
 
 ### Attributes
 
 - **Simple vs composite:** `birth_date` (simple) vs `full_name` (composite: first, middle, last)
 - **Single-valued vs multi-valued:** `email` (single) vs `phone_numbers` (multi-valued -- model as
- separate table)
+  separate table)
 - **Stored vs derived:** `unit_price` (stored) vs `order_total` (derived from
- `SUM(quantity * unit_price)`)
+  `SUM(quantity * unit_price)`)
 - **Null vs not-null:** `middle_name` (nullable) vs `email` (not null)
 
 ## Schema Design Patterns
@@ -226,13 +229,13 @@ Applied to every table
 ### Index Selection Methodology
 
 1. **Identify top queries:** what are the most frequently executed queries? What queries have the
- strictest latency requirements?
+   strictest latency requirements?
 2. **EXPLAIN ANALYZE each query:** find full table scans, nested loop joins without indexes, and
- sequential scans on large tables
+   sequential scans on large tables
 3. **Add indexes for the top queries:** start with single-column indexes on WHERE clause columns
 4. **Evaluate composite indexes:** for multi-column WHERE clauses, test the leftmost prefix rule
 5. **Evaluate covering indexes:** if a query accesses a small number of columns, a covering index
- can eliminate heap access entirely
+   can eliminate heap access entirely
 6. **Monitor index usage:** after deployment, check which indexes are actually used
 
 ```sql
@@ -346,13 +349,13 @@ CREATE TABLE events_p3 PARTITION OF events FOR VALUES WITH (MODULUS 4, REMAINDER
 
 ### When to Partition
 
-| Factor | Partition | Do Not Partition |
+| Factor        | Partition                                        | Do Not Partition                  |
 | ------------- | ------------------------------------------------ | --------------------------------- |
-| Table size | &gt; 10-50 GB | &lt; 5 GB |
-| Query pattern | Frequently queries a subset (date range, region) | Always queries all rows |
-| Maintenance | Need to drop/archive old data quickly | Data lifecycle is uniform |
-| Write pattern | Inserts target specific partitions | Inserts are spread uniformly |
-| Index size | Index maintenance is becoming expensive | Indexes fit comfortably in memory |
+| Table size    | &gt; 10-50 GB                                    | &lt; 5 GB                         |
+| Query pattern | Frequently queries a subset (date range, region) | Always queries all rows           |
+| Maintenance   | Need to drop/archive old data quickly            | Data lifecycle is uniform         |
+| Write pattern | Inserts target specific partitions               | Inserts are spread uniformly      |
+| Index size    | Index maintenance is becoming expensive          | Indexes fit comfortably in memory |
 
 :::warning
 
@@ -397,7 +400,7 @@ $$\mathrm{shard{} = \mathrm{hash{}(\mathrm{key{}) \pmod{\mathrm{num\_shards{}}$$
 - **Cross-shard transactions:** ACID guarantees across shards require distributed consensus (2PC)
 - **Resharding:** adding or removing shards requires moving data, which is expensive and complex
 - **Operational complexity:** each shard is a separate database instance with its own backups,
- monitoring, and failover
+  monitoring, and failover
 
 :::tip
 
@@ -444,11 +447,11 @@ server_reset_query = DISCARD ALL
 
 ### Pool Mode Comparison
 
-| Mode | Connection Lifetime | Prepared Statements | Use Case |
+| Mode        | Connection Lifetime | Prepared Statements | Use Case                         |
 | ----------- | ------------------- | ------------------- | -------------------------------- |
-| session | Client session | Supported | Legacy applications, batch jobs |
-| transaction | Single transaction | Not supported | Web applications (most common) |
-| statement | Single statement | Not supported | Rarely used; breaks transactions |
+| session     | Client session      | Supported           | Legacy applications, batch jobs  |
+| transaction | Single transaction  | Not supported       | Web applications (most common)   |
+| statement   | Single statement    | Not supported       | Rarely used; breaks transactions |
 
 ## Schema Migrations
 
@@ -498,16 +501,18 @@ ALTER TABLE orders DROP COLUMN IF EXISTS status;
 For large tables, `ALTER TABLE` can lock the table for hours. Strategies:
 
 1. **Expand-contract pattern:**
- - Add a new column alongside the old one
- - Deploy application code that writes to both columns
- - Backfill the new column
- - Deploy application code that reads from the new column
- - Remove the old column
+
+- Add a new column alongside the old one
+- Deploy application code that writes to both columns
+- Backfill the new column
+- Deploy application code that reads from the new column
+- Remove the old column
 
 2. **PostgreSQL-specific:**
- - `CREATE INDEX CONCURRENTLY` (no lock)
- - `ALTER TABLE ... ADD COLUMN ... DEFAULT NULL` (metadata-only in PG 11+)
- - Use `pg_partman` for partitioning without downtime
+
+- `CREATE INDEX CONCURRENTLY` (no lock)
+- `ALTER TABLE ... ADD COLUMN ... DEFAULT NULL` (metadata-only in PG 11+)
+- Use `pg_partman` for partitioning without downtime
 
 :::warning
 
@@ -519,13 +524,13 @@ A reporting service or a data pipeline can cause silent failures if dropped.
 
 ### Migration Tools
 
-| Tool | Language | Features |
+| Tool           | Language | Features                                                        |
 | -------------- | -------- | --------------------------------------------------------------- |
-| Flyway | Java/CLI | Versioned migrations, repeatable migrations, Java/SQL callbacks |
-| Liquibase | Java/CLI | XML/YAML/JSON changelogs, diff, rollback, multi-DB support |
-| golang-migrate | Go | CLI library, up/down migrations, database-agnostic |
-| Alembic | Python | Auto-generation from SQLAlchemy models, revision chaining |
-| dbmate | Go/CLI | Minimal, framework-agnostic, supports multiple databases |
+| Flyway         | Java/CLI | Versioned migrations, repeatable migrations, Java/SQL callbacks |
+| Liquibase      | Java/CLI | XML/YAML/JSON changelogs, diff, rollback, multi-DB support      |
+| golang-migrate | Go       | CLI library, up/down migrations, database-agnostic              |
+| Alembic        | Python   | Auto-generation from SQLAlchemy models, revision chaining       |
+| dbmate         | Go/CLI   | Minimal, framework-agnostic, supports multiple databases        |
 
 ## Data Modeling Anti-Patterns
 
@@ -645,9 +650,9 @@ recovery_target_action = 'promote'
 ### Backup Checklist
 
 - **RPO (Recovery Point Objective):** how much data can you afford to lose? Determines backup
- frequency.
+  frequency.
 - **RTO (Recovery Time Objective):** how long can the system be down? Determines backup type and
- restore strategy.
+  restore strategy.
 - **Test restores regularly:** a backup that cannot be restored is not a backup.
 - **Store backups offsite:** a backup on the same server is useless if the server fails.
 - **Encrypt backups:** database backups contain sensitive data.
@@ -757,14 +762,14 @@ Consensus-based coordination system (Patroni + etcd) rather than custom scripts.
 
 ### OLTP vs OLAP
 
-| Dimension | OLTP (Online Transaction Processing) | OLAP (Online Analytical Processing) |
+| Dimension     | OLTP (Online Transaction Processing)       | OLAP (Online Analytical Processing)      |
 | ------------- | ------------------------------------------ | ---------------------------------------- |
-| Purpose | Day-to-day operations | Analysis, reporting, decision support |
-| Queries | Simple, point lookups, small result sets | Complex aggregations, large scans, joins |
-| Data volume | Current state (recent data) | Historical (years of data) |
-| Write pattern | Frequent small writes (INSERT, UPDATE) | Bulk loads (ETL), infrequent |
-| Normalisation | Fully normalised (3NF+) | Denormalised (star/snowflake schema) |
-| Examples | Order processing, user management, banking | Sales reports, dashboards, data mining |
+| Purpose       | Day-to-day operations                      | Analysis, reporting, decision support    |
+| Queries       | Simple, point lookups, small result sets   | Complex aggregations, large scans, joins |
+| Data volume   | Current state (recent data)                | Historical (years of data)               |
+| Write pattern | Frequent small writes (INSERT, UPDATE)     | Bulk loads (ETL), infrequent             |
+| Normalisation | Fully normalised (3NF+)                    | Denormalised (star/snowflake schema)     |
+| Examples      | Order processing, user management, banking | Sales reports, dashboards, data mining   |
 
 ### Star Schema
 
@@ -839,12 +844,12 @@ Joins (slower queries), more complex to understand
 
 Dimensions change over time. SCD strategies define how to handle these changes:
 
-| Type | Strategy | Example |
+| Type  | Strategy                            | Example                                         |
 | ----- | ----------------------------------- | ----------------------------------------------- |
-| SCD 1 | Overwrite the old value | Correcting a typo in a product name |
-| SCD 2 | Add a new row with effective dates | Customer moves to a new address (track history) |
-| SCD 3 | Add a column for the previous value | Store the previous and current category |
-| SCD 4 | Add a mini-dimension for history | Track all historical values in a separate table |
+| SCD 1 | Overwrite the old value             | Correcting a typo in a product name             |
+| SCD 2 | Add a new row with effective dates  | Customer moves to a new address (track history) |
+| SCD 3 | Add a column for the previous value | Store the previous and current category         |
+| SCD 4 | Add a mini-dimension for history    | Track all historical values in a separate table |
 
 ```sql
 -- SCD Type 2: add a new row with effective dates

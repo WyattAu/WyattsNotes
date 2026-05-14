@@ -1,6 +1,8 @@
 ---
-title: "Mechanics -- Diagnostic Tests"
-description: "Hardest DSE Physics mechanics questions: advanced SUVAT selection, projectile motion independence, displacement sign conventions, and multi-stage motion."
+title: 'Mechanics -- Diagnostic Tests'
+description:
+  'Hardest DSE Physics mechanics questions: advanced SUVAT selection, projectile motion
+  independence, displacement sign conventions, and multi-stage motion.'
 slug: diag-mechanics
 hide_table_of_contents: true
 ---
@@ -13,7 +15,10 @@ hide_table_of_contents: true
 
 **Question:**
 
-A car of mass $1500$ kg is travelling at $25 \text{ m s}^{-1}$ on a horizontal road. The driver applies the brakes with a constant braking force of $7500$ N. After $3$ s, the road surface changes to ice, reducing the braking force to $1500$ N. Find the total distance the car travels before coming to rest.
+A car of mass $1500$ kg is travelling at $25 \text{ m s}^{-1}$ on a horizontal road. The driver
+applies the brakes with a constant braking force of $7500$ N. After $3$ s, the road surface changes
+to ice, reducing the braking force to $1500$ N. Find the total distance the car travels before
+coming to rest.
 
 **Solution:**
 
@@ -45,7 +50,8 @@ $$s_2 = \frac{100}{2} = 50 \text{ m}$$
 
 $$s_{\text{total}} = s_1 + s_2 = 52.5 + 50 = 102.5 \text{ m}$$
 
-**Key check:** The car is still moving when it hits ice ($v_1 = 10 \text{ m s}^{-1} \gt 0$), so stage 2 is needed.
+**Key check:** The car is still moving when it hits ice ($v_1 = 10 \text{ m s}^{-1} \gt 0$), so
+stage 2 is needed.
 
 ---
 
@@ -53,7 +59,9 @@ $$s_{\text{total}} = s_1 + s_2 = 52.5 + 50 = 102.5 \text{ m}$$
 
 **Question:**
 
-A ball is thrown from the top of a $40$ m high cliff with an initial velocity of $18 \text{ m s}^{-1}$ at an angle of $30°$ above the horizontal. Air resistance is negligible. Find the horizontal distance from the base of the cliff where the ball strikes the ground.
+A ball is thrown from the top of a $40$ m high cliff with an initial velocity of
+$18 \text{ m s}^{-1}$ at an angle of $30°$ above the horizontal. Air resistance is negligible. Find
+the horizontal distance from the base of the cliff where the ball strikes the ground.
 
 **Solution:**
 
@@ -63,7 +71,8 @@ $$u_x = 18 \cos 30° = 18 \times \frac{\sqrt{3}}{2} = 9\sqrt{3} \text{ m s}^{-1}
 
 $$u_y = 18 \sin 30° = 18 \times 0.5 = 9 \text{ m s}^{-1}$$
 
-**Vertical motion** (taking upward as positive, displacement when ball reaches ground is $s_y = -40$ m):
+**Vertical motion** (taking upward as positive, displacement when ball reaches ground is $s_y = -40$
+m):
 
 $$s_y = u_y t + \frac{1}{2}a_y t^2$$
 
@@ -83,7 +92,8 @@ $$t = \frac{9 + 29.42}{9.81} = \frac{38.42}{9.81} = 3.92 \text{ s}$$
 
 $$R = u_x \times t = 9\sqrt{3} \times 3.92 = 15.59 \times 3.92 = 61.1 \text{ m}$$
 
-**Key point:** Horizontal and vertical motions are completely independent. The horizontal velocity remains constant throughout since air resistance is negligible.
+**Key point:** Horizontal and vertical motions are completely independent. The horizontal velocity
+remains constant throughout since air resistance is negligible.
 
 ---
 
@@ -91,7 +101,10 @@ $$R = u_x \times t = 9\sqrt{3} \times 3.92 = 15.59 \times 3.92 = 61.1 \text{ m}$
 
 **Question:**
 
-A person of mass $65$ kg stands on a weighing scale inside a lift. The lift accelerates upward from rest at $2 \text{ m s}^{-2}$ for $4$ s, then travels at constant velocity for $6$ s, then decelerates at $3 \text{ m s}^{-2}$ until it stops. What is the reading on the scale during each phase?
+A person of mass $65$ kg stands on a weighing scale inside a lift. The lift accelerates upward from
+rest at $2 \text{ m s}^{-2}$ for $4$ s, then travels at constant velocity for $6$ s, then
+decelerates at $3 \text{ m s}^{-2}$ until it stops. What is the reading on the scale during each
+phase?
 
 **Solution:**
 
@@ -123,9 +136,11 @@ $$N = m(g + a) = 65(9.81 - 3) = 65 \times 6.81 = 442.7 \text{ N}$$
 
 Scale reading: $\frac{442.7}{9.81} = 45.1$ kg
 
-**Summary:** Phase 1: $767.7$ N ($78.3$ kg), Phase 2: $637.7$ N ($65.0$ kg), Phase 3: $442.7$ N ($45.1$ kg).
+**Summary:** Phase 1: $767.7$ N ($78.3$ kg), Phase 2: $637.7$ N ($65.0$ kg), Phase 3: $442.7$ N
+($45.1$ kg).
 
-**Key misconception:** Many students think the normal force always equals the weight. The normal force equals the weight only when $a = 0$.
+**Key misconception:** Many students think the normal force always equals the weight. The normal
+force equals the weight only when $a = 0$.
 
 ---
 
@@ -135,11 +150,14 @@ Scale reading: $\frac{442.7}{9.81} = 45.1$ kg
 
 **Question:**
 
-A block is projected up a smooth inclined plane of angle $30°$ with speed $12 \text{ m s}^{-1}$ from the bottom. Find (a) the time taken to reach the highest point, (b) the distance travelled along the incline to the highest point, and (c) the speed when the block returns to its starting position.
+A block is projected up a smooth inclined plane of angle $30°$ with speed $12 \text{ m s}^{-1}$ from
+the bottom. Find (a) the time taken to reach the highest point, (b) the distance travelled along the
+incline to the highest point, and (c) the speed when the block returns to its starting position.
 
 **Solution:**
 
-Take the direction up the incline as positive. The component of gravitational acceleration along the incline:
+Take the direction up the incline as positive. The component of gravitational acceleration along the
+incline:
 
 $$a = -g \sin 30° = -9.81 \times 0.5 = -4.905 \text{ m s}^{-2}$$
 
@@ -169,7 +187,9 @@ $$v = u + at = 12 + (-4.905)(4.89) = 12 - 24.0 = -12.0 \text{ m s}^{-1}$$
 
 Speed $= 12.0 \text{ m s}^{-1}$.
 
-**Key insight:** On a smooth incline, the block returns to the starting position with the same speed as it was projected (energy conservation). The acceleration is constant throughout since the incline is smooth (no friction).
+**Key insight:** On a smooth incline, the block returns to the starting position with the same speed
+as it was projected (energy conservation). The acceleration is constant throughout since the incline
+is smooth (no friction).
 
 ---
 
@@ -177,7 +197,10 @@ Speed $= 12.0 \text{ m s}^{-1}$.
 
 **Question:**
 
-Block A (mass $4$ kg) rests on top of block B (mass $6$ kg), which rests on a smooth horizontal floor. A horizontal force of $30$ N is applied to block B. The coefficient of static friction between A and B is $0.3$And the coefficient of kinetic friction is $0.25$. Determine whether the blocks move together or slide relative to each other, and find the acceleration of each block.
+Block A (mass $4$ kg) rests on top of block B (mass $6$ kg), which rests on a smooth horizontal
+floor. A horizontal force of $30$ N is applied to block B. The coefficient of static friction
+between A and B is $0.3$And the coefficient of kinetic friction is $0.25$. Determine whether the
+blocks move together or slide relative to each other, and find the acceleration of each block.
 
 **Solution:**
 
@@ -191,7 +214,8 @@ $$F = (m_A + m_B)a$$
 
 $$a = \frac{30}{4 + 6} = 3 \text{ m s}^{-2}$$
 
-For block A to accelerate at $3 \text{ m s}^{-2}$The friction force on A must provide this acceleration:
+For block A to accelerate at $3 \text{ m s}^{-2}$The friction force on A must provide this
+acceleration:
 
 $$f = m_A \times a = 4 \times 3 = 12 \text{ N}$$
 
@@ -199,7 +223,8 @@ Maximum static friction:
 
 $$f_{\max} = \mu_s m_A g = 0.3 \times 4 \times 9.81 = 11.77 \text{ N}$$
 
-Since $12 \text{ N} \gt 11.77 \text{ N}$The required friction exceeds the maximum static friction. **The blocks slide relative to each other.**
+Since $12 \text{ N} \gt 11.77 \text{ N}$The required friction exceeds the maximum static friction.
+**The blocks slide relative to each other.**
 
 **Step 2: Find actual accelerations**
 
@@ -215,7 +240,8 @@ For block B (applied force minus kinetic friction):
 
 $$a_B = \frac{F - f_k}{m_B} = \frac{30 - 9.81}{6} = \frac{20.19}{6} = 3.37 \text{ m s}^{-2}$$
 
-**Result:** Block A accelerates at $2.45 \text{ m s}^{-2}$; Block B accelerates at $3.37 \text{ m s}^{-2}$. Block B slides out from under block A.
+**Result:** Block A accelerates at $2.45 \text{ m s}^{-2}$; Block B accelerates at
+$3.37 \text{ m s}^{-2}$. Block B slides out from under block A.
 
 ---
 
@@ -223,7 +249,11 @@ $$a_B = \frac{F - f_k}{m_B} = \frac{30 - 9.81}{6} = \frac{20.19}{6} = 3.37 \text
 
 **Question:**
 
-Two trolleys approach each other on a horizontal frictionless track. Trolley A (mass $2$ kg) moves right at $5 \text{ m s}^{-1}$ and trolley B (mass $3$ kg) moves left at $3 \text{ m s}^{-1}$. They collide and stick together. Find (a) the common velocity after collision, (b) the kinetic energy lost, and (c) the distance the combined trolley slides on a rough surface ($\mu = 0.2$) after the collision.
+Two trolleys approach each other on a horizontal frictionless track. Trolley A (mass $2$ kg) moves
+right at $5 \text{ m s}^{-1}$ and trolley B (mass $3$ kg) moves left at $3 \text{ m s}^{-1}$. They
+collide and stick together. Find (a) the common velocity after collision, (b) the kinetic energy
+lost, and (c) the distance the combined trolley slides on a rough surface ($\mu = 0.2$) after the
+collision.
 
 **Solution:**
 
@@ -257,4 +287,6 @@ $$0.1 = 0.2 \times 5 \times 9.81 \times d$$
 
 $$d = \frac{0.1}{9.81} = 0.0102 \text{ m} = 1.02 \text{ cm}$$
 
-**Key insight:** Momentum is always conserved in collisions, but kinetic energy is only conserved in elastic collisions. The massive energy loss ($38.4$ J out of $38.5$ J) shows this is a highly inelastic collision.
+**Key insight:** Momentum is always conserved in collisions, but kinetic energy is only conserved in
+elastic collisions. The massive energy loss ($38.4$ J out of $38.5$ J) shows this is a highly
+inelastic collision.

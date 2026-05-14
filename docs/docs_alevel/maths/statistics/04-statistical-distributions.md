@@ -1,6 +1,8 @@
 ---
 title: Statistical Distributions
-description: "A-Level Mathematics notes on Statistical Distributions: Board Coverage; 1. Discrete Random Variables; 1.1 Definition; 1.2 Expectation and variance."
+description:
+  'A-Level Mathematics notes on Statistical Distributions: Board Coverage; 1. Discrete Random
+  Variables; 1.1 Definition; 1.2 Expectation and variance.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Maths
@@ -9,20 +11,19 @@ categories:
   - Maths
 slug: statistical-distributions
 ---
+
 ## Board Coverage
 
-| Board | Paper | Notes |
+| Board      | Paper      | Notes                                    |
 | ---------- | ---------- | ---------------------------------------- |
-| AQA | Paper 1, 2 | Binomial and normal in P1; Poisson in P2 |
-| Edexcel | P1, P2 | Similar |
-| OCR (A) | Paper 1, 2 | Binomial in P1; normal and Poisson in P2 |
-| CIE (9709) | P1, P6 | Binomial in P1; normal and Poisson in P6 |
+| AQA        | Paper 1, 2 | Binomial and normal in P1; Poisson in P2 |
+| Edexcel    | P1, P2     | Similar                                  |
+| OCR (A)    | Paper 1, 2 | Binomial in P1; normal and Poisson in P2 |
+| CIE (9709) | P1, P6     | Binomial in P1; normal and Poisson in P6 |
 
-:::info
-The formula booklet gives the probability mass function for the Binomial and Poisson
+:::info The formula booklet gives the probability mass function for the Binomial and Poisson
 Distributions, and the normal distribution function. You must know when to use each distribution and
-How to find probabilities.
-:::
+How to find probabilities. :::
 
 <hr />
 
@@ -152,7 +153,8 @@ $$f(x) = \frac◆LB◆1◆RB◆◆LB◆\sigma\sqrt{2\pi}◆RB◆\,e^{-\frac◆LB
 - Bell-shaped, symmetric about $\mu$.
 - $E(X) = \mu$$\mathrm{Var}(X) = \sigma^2$.
 - Approximately 68% of data within $\mu \pm \sigma$95% within $\mu \pm 2\sigma$99.7% within
- $\mu \pm 3\sigma$.
+ $\mu \pm
+  3\sigma$.
 
 ### 3.4 Standard normal
 
@@ -173,11 +175,8 @@ $$B(n, p) \approx N(np, np(1-p))$$
 With **continuity correction**:
 $P(X \leq k) \approx P\!\left(Z \lt{} \frac◆LB◆k + 0.5 - np◆RB◆◆LB◆\sqrt{np(1-p)}◆RB◆\right)$.
 
-:::warning
-Warning
-(Binomial) with a continuous one (Normal). Add or subtract 0.5 depending on the inequality
-Direction.
-:::
+:::warning Warning (Binomial) with a continuous one (Normal). Add or subtract 0.5 depending on the
+inequality Direction. :::
 
 <hr />
 
@@ -208,7 +207,7 @@ Consider each factor as $n \to \infty$:
 
 - $\dfrac◆LB◆n(n-1)\cdots(n-k+1)◆RB◆◆LB◆n^k◆RB◆ \to 1$ (each term $n-i \approx n$)
 - $\left(1 - \dfrac◆LB◆\lambda◆RB◆◆LB◆n◆RB◆\right)^{n-k} \to e^{-\lambda}$ (using
- $\lim_{n\to\infty}(1+a/n)^n = e^a$)
+  $\lim_{n\to\infty}(1+a/n)^n = e^a$)
 
 Therefore:
 
@@ -252,9 +251,9 @@ The Poisson distribution is appropriate when all of the following hold:
 
 - Events occur **independently** of one another.
 - Events occur at a **constant average rate** $\lambda$ in a fixed interval of time, space, or
- volume.
+  volume.
 - The probability of more than one event occurring in a sufficiently small sub-interval is
- **negligible**.
+  **negligible**.
 
 These are sometimes called the **Poisson postulates**. When they are satisfied, the number of events
 In any interval of length $t$ follows $\mathrm{Po}(\lambda t)$.
@@ -262,11 +261,8 @@ In any interval of length $t$ follows $\mathrm{Po}(\lambda t)$.
 Typical applications include: calls arriving at a call centre per hour, typing errors per page,
 Radioactive decays per second, and cars passing a checkpoint per minute.
 
-:::tip
-Tip
-Constant over the interval and that events do not cluster. If events tend to occur in bursts, the
-Poisson model is not appropriate.
-:::
+:::tip Tip Constant over the interval and that events do not cluster. If events tend to occur in
+bursts, the Poisson model is not appropriate. :::
 
 ### 4.7 Poisson approximation to the Binomial
 
@@ -279,27 +275,24 @@ Conditions $n \gt{} 50$ and $p \lt{} 0.1$ are practical thresholds that ensure:
 
 1. **$n$ is large enough** that the discrete binomial is well-approximated by a limit distribution.
 2. **$p$ is small enough** that the "rare event" assumption of the Poisson model is satisfied.
-3. **$\lambda = np$ is moderate** ( $0 \lt{} \lambda \lt{} 10$), so that neither
- distribution is heavily concentrated at a single point.
+3. **$\lambda = np$ is moderate** ( $0 \lt{} \lambda \lt{} 10$), so that neither distribution is
+   heavily concentrated at a single point.
 
 The approximation improves as $n$ increases and $p$ decreases while $\lambda = np$ remains fixed.
 
-:::warning
-Warning
-And $n$ is large, use the normal approximation (Section 3.6) instead. The two approximations are
-Complementary: Poisson handles the case of many trials with rare success, while normal handles the
-Case of many trials with moderate success probability.
-:::
+:::warning Warning And $n$ is large, use the normal approximation (Section 3.6) instead. The two
+approximations are Complementary: Poisson handles the case of many trials with rare success, while
+normal handles the Case of many trials with moderate success probability. :::
 
 <hr />
 
 ## 5. Choosing the Right Distribution
 
-| Situation | Distribution |
+| Situation                                  | Distribution                   |
 | ------------------------------------------ | ------------------------------ |
-| Fixed $n$ trials, success/failure | Binomial $B(n,p)$ |
+| Fixed $n$ trials, success/failure          | Binomial $B(n,p)$              |
 | Events in continuous interval, rare events | Poisson $\mathrm{Po}(\lambda)$ |
-| Continuous, bell-shaped | Normal $N(\mu,\sigma^2)$ |
+| Continuous, bell-shaped                    | Normal $N(\mu,\sigma^2)$       |
 
 <hr />
 
@@ -310,8 +303,8 @@ Case of many trials with moderate success probability.
 A **coding** (or linear transformation) of a discrete random variable $X$ is a new random variable
 $Y = aX + b$ where $a$ and $b$ are constants with $a \neq 0$.
 
-Coding arises when changing units (e.g. Centimetres to metres, or Celsius to Fahrenheit)
-Or when shifting and scaling a distribution.
+Coding arises when changing units (e.g. Centimetres to metres, or Celsius to Fahrenheit) Or when
+shifting and scaling a distribution.
 
 ### 6.2 Effect on expectation
 
@@ -342,11 +335,9 @@ $$
 
 Note how the terms $2abE(X)$ and $b^2$ cancel between $E(Y^2)$ and $[E(Y)]^2$.
 
-:::info
-Adding a constant $b$ (a location shift) has **no effect** on variance. Only multiplying by
+:::info Adding a constant $b$ (a location shift) has **no effect** on variance. Only multiplying by
 $a$ (a scale change) affects variance, and it does so by a factor of $a^2$. This is why variance is
-Measured in **squared units** of the original variable.
-:::
+Measured in **squared units** of the original variable. :::
 
 ### 6.4 Effect on standard deviation
 
@@ -646,9 +637,9 @@ $\lambda = np = 120 \times 0.025 = 3$.
 
 $$P(X = 5) = \frac◆LB◆e^{-3} \times 3^5◆RB◆◆LB◆5!◆RB◆ = \frac◆LB◆e^{-3} \times 243◆RB◆◆LB◆120◆RB◆ = 2.025\,e^{-3} \approx 2.025 \times 0.0498 \approx 0.1008$$
 
-(c) For the normal approximation we need $np \gt{} 5$ and $n(1-p) \gt{} 5$. Here $np = 3 \lt{} 5$
-So the normal approximation is not appropriate. The Poisson approximation is the correct choice
-Since $p$ is small.
+(c) For the normal approximation we need $np \gt{} 5$ and $n(1-p) \gt{} 5$. Here $np = 3 \lt{} 5$ So
+the normal approximation is not appropriate. The Poisson approximation is the correct choice Since
+$p$ is small.
 
 **If you get this wrong, revise:**
 [Poisson approximation to the Binomial](#47-poisson-approximation-to-the-binomial) — Section 4.7.
@@ -680,17 +671,17 @@ Section 6.
 
 :::
 
-
 ---
 
-:::tip
-Tip
-Ready to test your understanding of **Statistical Distributions**? The [diagnostic test](/docs/alevel/maths/diagnostics/diag-statistical-distributions) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
+:::tip Tip Ready to test your understanding of **Statistical Distributions**? The
+[diagnostic test](/docs/alevel/maths/diagnostics/diag-statistical-distributions) contains the
+hardest questions within the A-Level specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Statistical Distributions with other topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Statistical
+Distributions with other topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and
+building a personal test matrix. :::
 
 ## Common Pitfalls
 

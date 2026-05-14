@@ -1,24 +1,25 @@
 ---
 title: Nuclear Physics
-description: "A-Level Physics notes on Nuclear Physics: 1. Rutherford Scattering; The Experiment; Interpretation; Closest Approach Distance."
+description:
+  'A-Level Physics notes on Nuclear Physics: 1. Rutherford Scattering; The Experiment;
+  Interpretation; Closest Approach Distance.'
 date: 2026-04-23T00:00:00.000Z
 tags: [Physics, ALevel]
 categories: [Physics]
 slug: nuclear-physics
 ---
+
 ## Nuclear Physics
 
-:::info
-Board Coverage AQA Paper 2 | Edexcel CP6 | OCR (A) Paper 2 | CIE P4
-:::
+:::info Board Coverage AQA Paper 2 | Edexcel CP6 | OCR (A) Paper 2 | CIE P4 :::
 
 ## 1. Rutherford Scattering
 
 ### The Experiment
 
-In 1911, Geiger and Marsden (under Rutherford's direction) fired alpha particles at a thin gold foil.
-Most passed straight through, some were deflected through small angles, and a few ($\sim 1$ in 8000)
-Were deflected through angles greater than $90^\circ$.
+In 1911, Geiger and Marsden (under Rutherford's direction) fired alpha particles at a thin gold
+foil. Most passed straight through, some were deflected through small angles, and a few ($\sim 1$
+in 8000) Were deflected through angles greater than $90^\circ$.
 
 ### Interpretation
 
@@ -27,8 +28,8 @@ Diffusely spread through the atom). A diffuse charge distribution could not prod
 Deflections observed.
 
 Rutherford proposed that all positive charge and nearly all mass are concentrated in a tiny, dense
-**nucleus**. The large-angle deflections occur when an alpha particle approaches a nucleus head-on and
-Is repelled by the Coulomb force.
+**nucleus**. The large-angle deflections occur when an alpha particle approaches a nucleus head-on
+and Is repelled by the Coulomb force.
 
 ### Closest Approach Distance
 
@@ -46,20 +47,17 @@ $$d = \frac◆LB◆79 \times (1.60 \times 10^{-19})^2◆RB◆◆LB◆2\pi \times
 This gives an upper bound on the nuclear radius of gold ($\sim 10^{-14}$ m, compared to the atomic
 Radius of $\sim 10^{-10}$ m).
 
-:::warning
-Warning
-Not the radius itself. The alpha particle never actually touches the nucleus (the strong nuclear force
-Has a very short range).
-:::
+:::warning Warning Not the radius itself. The alpha particle never actually touches the nucleus (the
+strong nuclear force Has a very short range). :::
 
 ## 2. Nuclear Structure
 
 The nucleus contains **protons** and **neutrons** (collectively, **nucleons**).
 
-| Property | Proton | Neutron | Electron |
-|---|---|---|---|
-| Charge | $+e$ | $0$ | $-e$ |
-| Mass (u) | 1.00728 | 1.00867 | 0.00055 |
+| Property | Proton  | Neutron | Electron        |
+| -------- | ------- | ------- | --------------- |
+| Charge   | $+e$    | $0$     | $-e$            |
+| Mass (u) | 1.00728 | 1.00867 | 0.00055         |
 | Location | Nucleus | Nucleus | Electron shells |
 
 **Notation.** A nuclide $\prescript{A}{}{Z}\mathrm{X}$ has mass number $A$ (total nucleons) and
@@ -101,7 +99,9 @@ Calculate the binding energy per nucleon of $\prescript{4}{}{2}\mathrm{He}$.
 Given: $m_p = 1.00728$ u, $m_n = 1.00867$ u, $m_{\mathrm{He}} = 4.00151$ u,
 $1\ \mathrm{u} = 931.5$ MeV/c$^2$.
 
-**Answer.** $\Delta m = 2 \times 1.00728 + 2 \times 1.00867 - 4.00151 = 2.01456 + 2.01734 - 4.00151 = 0.03039$ u.
+**Answer.**
+$\Delta m = 2 \times 1.00728 + 2 \times 1.00867 - 4.00151 = 2.01456 + 2.01734 - 4.00151 = 0.03039$
+u.
 
 $E_b = 0.03039 \times 931.5 = 28.3$ MeV.
 
@@ -113,14 +113,17 @@ $E_b/A = 28.3/4 = 7.08$ MeV per nucleon.
 
 The binding energy per nucleon plotted against mass number shows:
 
-- **Light nuclei** ($A \lt 20$): Low binding energy per nucleon, with peaks at $\prescript{4}{}{2}\mathrm{He}$$\prescript{12}{}{6}\mathrm{C}$And $\prescript{16}{}{8}\mathrm{O}$ (magic numbers).
-- **Iron-56** ($\prescript{56}{}{26}\mathrm{Fe}$): Maximum binding energy per nucleon ($\sim 8.8$ MeV) — the most stable nucleus.
+- **Light nuclei** ($A \lt 20$): Low binding energy per nucleon, with peaks at
+  $\prescript{4}{}{2}\mathrm{He}$$\prescript{12}{}{6}\mathrm{C}$And $\prescript{16}{}{8}\mathrm{O}$
+  (magic numbers).
+- **Iron-56** ($\prescript{56}{}{26}\mathrm{Fe}$): Maximum binding energy per nucleon ($\sim 8.8$
+  MeV) — the most stable nucleus.
 - **Heavy nuclei** ($A \gt 60$): Gradually decreasing binding energy per nucleon.
 
 **Implications:**
 
 - **Fission** of heavy nuclei ($A \gt 56$) releases energy because the products have higher binding
- energy per nucleon (the mass defect per nucleon increases).
+  energy per nucleon (the mass defect per nucleon increases).
 - **Fusion** of light nuclei ($A \lt 56$) releases energy for the same reason.
 
 ## 4. Nuclear Stability
@@ -128,8 +131,8 @@ The binding energy per nucleon plotted against mass number shows:
 ### Stability Band
 
 Stable nuclei cluster around $N \approx Z$ for light nuclei, shifting to $N \gt Z$ for heavier
-Nuclei. The excess neutrons in heavy nuclei provide additional strong nuclear force to counteract the
-Increasing Coulomb repulsion between protons.
+Nuclei. The excess neutrons in heavy nuclei provide additional strong nuclear force to counteract
+the Increasing Coulomb repulsion between protons.
 
 **Why not all-neutron nuclei?** The Pauli exclusion principle forces neutrons into progressively
 Higher energy states. Adding protons allows nucleons to occupy lower-energy states, reducing the
@@ -137,12 +140,12 @@ Total energy. For light nuclei, the balance favours $N \approx Z$.
 
 ### Decay Modes and Stability
 
-| Condition | Dominant decay | Reason |
-|---|---|---|
-| $N/Z$ too large | $\beta^-$ decay | Neutron converts to proton |
+| Condition       | Dominant decay                      | Reason                     |
+| --------------- | ----------------------------------- | -------------------------- |
+| $N/Z$ too large | $\beta^-$ decay                     | Neutron converts to proton |
 | $N/Z$ too small | $\beta^+$ decay or electron capture | Proton converts to neutron |
-| $A \gt 150$ | Alpha decay | Reduces both $N$ and $Z$ |
-| Excited state | Gamma decay | Releases excess energy |
+| $A \gt 150$     | Alpha decay                         | Reduces both $N$ and $Z$   |
+| Excited state   | Gamma decay                         | Releases excess energy     |
 
 **Alpha decay** occurs predominantly for $A \gt 150$ because the alpha particle is exceptionally
 Stable (high binding energy per nucleon of 7.08 MeV), making it energetically favourable to emit.
@@ -190,10 +193,8 @@ $$\prescript{A}{}{Z}\mathrm{X}^* \to \prescript{A}{}{Z}\mathrm{X} + \gamma$$
 
 No change in $A$ or $Z$. Weakly ionising, highly penetrating (requires thick lead or concrete).
 
-:::warning
-Warning
-Proton, so the total nucleon count is unchanged. Do not write $A - 1$ for beta decay.
-:::
+:::warning Warning Proton, so the total nucleon count is unchanged. Do not write $A - 1$ for beta
+decay. :::
 
 ## 6. Exponential Decay Law and Half-Life
 
@@ -230,15 +231,17 @@ $$\boxed{t_{1/2} = \frac◆LB◆\ln 2◆RB◆◆LB◆\lambda◆RB◆}$$
 
 ### Mechanism
 
-A heavy nucleus ( $\prescript{235}{}_{92}\mathrm{U}$ or $\prescript{239}{}_{94}\mathrm{Pu}$)
-Absorbs a neutron, becoming unstable and splitting into two lighter nuclei (fission fragments) plus
-2--3 neutrons and energy:
+A heavy nucleus ( $\prescript{235}{}_{92}\mathrm{U}$ or $\prescript{239}{}_{94}\mathrm{Pu}$) Absorbs
+a neutron, becoming unstable and splitting into two lighter nuclei (fission fragments) plus 2--3
+neutrons and energy:
 
 $$\prescript{235}{}_{92}\mathrm{U} + \prescript{1}{}_{0}\mathrm{n} \to \prescript{236}{}_{92}\mathrm{U}^* \to \prescript{141}{}_{56}\mathrm{Ba} + \prescript{92}{}_{36}\mathrm{Kr} + 3\prescript{1}{}_{0}\mathrm{n} + \mathrm{energy}$$
 
 ### Energy Release
 
-The binding energy per nucleon of the products ($\sim 8.5$ MeV) exceeds that of $\prescript{235}{}_{92}\mathrm{U}$ ($\sim 7.6$ MeV). The energy released per fission event is approximately 200 MeV, primarily as kinetic energy of the fission fragments.
+The binding energy per nucleon of the products ($\sim 8.5$ MeV) exceeds that of
+$\prescript{235}{}_{92}\mathrm{U}$ ($\sim 7.6$ MeV). The energy released per fission event is
+approximately 200 MeV, primarily as kinetic energy of the fission fragments.
 
 ### Chain Reaction
 
@@ -251,8 +254,8 @@ Cause another fission) must equal 1.
 - $k \gt 1$: supercritical (exponential growth — nuclear weapon).
 
 **Critical mass:** The minimum mass of fissile material required to sustain a chain reaction. For
-$\prescript{235}{}_{92}\mathrm{U}$This is approximately 50 kg (sphere). The critical mass depends
-On geometry, density, and the presence of a neutron reflector.
+$\prescript{235}{}_{92}\mathrm{U}$This is approximately 50 kg (sphere). The critical mass depends On
+geometry, density, and the presence of a neutron reflector.
 
 ### Nuclear Reactor
 
@@ -260,7 +263,7 @@ Key components:
 
 - **Fuel rods:** Enriched uranium ($\sim 3$--$5\%$\ $\prescript{235}{}_{92}\mathrm{U}$).
 - **Moderator:** Graphite or heavy water — slows neutrons to thermal energies where the fission
- cross-section of $\prescript{235}{}_{92}\mathrm{U}$ is largest.
+  cross-section of $\prescript{235}{}_{92}\mathrm{U}$ is largest.
 - **Control rods:** Boron or cadmium — absorb neutrons to regulate $k$.
 - **Coolant:** Water, liquid sodium, or CO$_2$ — transfers heat from the reactor to the turbines.
 
@@ -273,8 +276,8 @@ Binding energy per nucleon.
 
 ### Conditions for Fusion
 
-The positively charged nuclei must overcome their Coulomb repulsion to get within range of the strong
-Nuclear force ($\sim 10^{-15}$ m). This requires:
+The positively charged nuclei must overcome their Coulomb repulsion to get within range of the
+strong Nuclear force ($\sim 10^{-15}$ m). This requires:
 
 1. **Very high temperatures** ($\sim 10^8$ K) to give nuclei sufficient kinetic energy.
 2. **Very high densities** to ensure sufficient collision rates.
@@ -300,9 +303,9 @@ Net energy release: $\sim 26.7$ MeV per helium-4 nucleus formed.
 Achieving and confining a plasma at $10^8$ K is extraordinarily difficult. Two main approaches:
 
 - **Magnetic confinement** (tokamak): Strong magnetic fields confine the plasma in a toroidal
- chamber. ITER is the largest current project.
+  chamber. ITER is the largest current project.
 - **Inertial confinement:** Laser pulses compress and heat a fuel pellet to fusion conditions
- (National Ignition Facility).
+  (National Ignition Facility).
 
 <details>
 <summary>Worked Example: Energy from Fission</summary>
@@ -325,7 +328,9 @@ Energy released: $E = 0.187 \times 931.5 = 174$ MeV.
 Calculate the distance of closest approach for a 7.7 MeV alpha particle scattered by a gold nucleus
 ($Z = 79$).
 
-**Answer.** $d = \frac◆LB◆Ze^2◆RB◆◆LB◆2\pi\varepsilon_0 E_k◆RB◆ = \frac◆LB◆79 \times (1.60 \times 10^{-19})^2◆RB◆◆LB◆2\pi \times 8.85 \times 10^{-12} \times 7.7 \times 10^6 \times 1.60 \times 10^{-19}◆RB◆ = \frac◆LB◆79 \times 1.60 \times 10^{-19}◆RB◆◆LB◆2\pi \times 8.85 \times 10^{-12} \times 7.7 \times 10^6◆RB◆ = 2.9 \times 10^{-14}$ m.
+**Answer.**
+$d = \frac◆LB◆Ze^2◆RB◆◆LB◆2\pi\varepsilon_0 E_k◆RB◆ = \frac◆LB◆79 \times (1.60 \times 10^{-19})^2◆RB◆◆LB◆2\pi \times 8.85 \times 10^{-12} \times 7.7 \times 10^6 \times 1.60 \times 10^{-19}◆RB◆ = \frac◆LB◆79 \times 1.60 \times 10^{-19}◆RB◆◆LB◆2\pi \times 8.85 \times 10^{-12} \times 7.7 \times 10^6◆RB◆ = 2.9 \times 10^{-14}$
+m.
 
 </details>
 
@@ -334,7 +339,9 @@ Calculate the distance of closest approach for a 7.7 MeV alpha particle scattere
 Calculate the binding energy per nucleon of $\prescript{56}{}_{26}\mathrm{Fe}$.
 Given: $m(\prescript{56}{}_{26}\mathrm{Fe}) = 55.9349$ u.
 
-**Answer.** $\Delta m = 26 \times 1.00728 + 30 \times 1.00867 - 55.9349 = 26.1893 + 30.2601 - 55.9349 = 0.5145$ u.
+**Answer.**
+$\Delta m = 26 \times 1.00728 + 30 \times 1.00867 - 55.9349 = 26.1893 + 30.2601 - 55.9349 = 0.5145$
+u.
 
 $E_b = 0.5145 \times 931.5 = 479.3$ MeV. $E_b/A = 479.3/56 = 8.56$ MeV/nucleon.
 
@@ -344,7 +351,8 @@ $E_b = 0.5145 \times 931.5 = 479.3$ MeV. $E_b/A = 479.3/56 = 8.56$ MeV/nucleon.
 <summary>Problem 3</summary>
 Write the balanced equation for the beta-minus decay of $\prescript{14}{}{6}\mathrm{C}$.
 
-**Answer.** $\prescript{14}{}{6}\mathrm{C} \to \prescript{14}{}{7}\mathrm{N} + \prescript{0}{}{-1}\beta^- + \bar{\nu}_e$.
+**Answer.**
+$\prescript{14}{}{6}\mathrm{C} \to \prescript{14}{}{7}\mathrm{N} + \prescript{0}{}{-1}\beta^- + \bar{\nu}_e$.
 
 Check: $A$: $14 = 14 + 0 + 0$. $Z$: $6 = 7 + (-1) + 0$. Both conserved.
 
@@ -368,10 +376,10 @@ Explain why energy is released in both nuclear fission and nuclear fusion, using
 Curve.
 
 **Answer.** The binding energy per nucleon curve has a maximum near $A = 56$ (iron). Fission splits
-Heavy nuclei ($A \gt 56$) into lighter fragments with higher binding energy per nucleon, so energy is
-Released. Fusion combines light nuclei ($A \lt 56$) into heavier products with higher binding energy
-Per nucleon, also releasing energy. In both cases, the products are closer to the peak of the curve
-Than the reactants, meaning mass is converted to energy via $E = \Delta m\,c^2$.
+Heavy nuclei ($A \gt 56$) into lighter fragments with higher binding energy per nucleon, so energy
+is Released. Fusion combines light nuclei ($A \lt 56$) into heavier products with higher binding
+energy Per nucleon, also releasing energy. In both cases, the products are closer to the peak of the
+curve Than the reactants, meaning mass is converted to energy via $E = \Delta m\,c^2$.
 
 </details>
 
@@ -391,9 +399,9 @@ $E = 0.00350 \times 931.5 = 3.26$ MeV.
 <summary>Problem 7</summary>
 Why must a fusion reactor achieve extremely high temperatures? Why is a moderator not needed?
 
-**Answer.** Fusion requires overcoming the Coulomb repulsion between positively charged nuclei. Only at
-Very high temperatures ($\sim 10^8$ K) do nuclei have sufficient kinetic energy to approach within the
-Range of the strong nuclear force ($\sim 10^{-15}$ m).
+**Answer.** Fusion requires overcoming the Coulomb repulsion between positively charged nuclei. Only
+at Very high temperatures ($\sim 10^8$ K) do nuclei have sufficient kinetic energy to approach
+within the Range of the strong nuclear force ($\sim 10^{-15}$ m).
 
 A moderator slows neutrons down, which is needed for fission (thermal neutrons have larger fission
 Cross-sections). In fusion, the reactants are positively charged nuclei, not neutrons, and the

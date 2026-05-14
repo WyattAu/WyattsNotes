@@ -1,6 +1,8 @@
 ---
 title: Permutations and Combinations
-description: "DSE Mathematics notes on permutations and combinations covering factorial notation, arrangement problems, selection problems, and the binomial expansion."
+description:
+  'DSE Mathematics notes on permutations and combinations covering factorial notation, arrangement
+  problems, selection problems, and the binomial expansion.'
 date: 2026-04-18T00:00:00.000Z
 tags:
   - DSE
@@ -188,11 +190,11 @@ Group.
 
 A class has 7 boys and 5 girls. In how many ways can a team of 4 be chosen with at least 2 girls?
 
-| Girls | Boys | Ways |
+| Girls | Boys | Ways                                                    |
 | ----- | ---- | ------------------------------------------------------- |
-| 2 | 2 | $\binom{5}{2} \times \binom{7}{2} = 10 \times 21 = 210$ |
-| 3 | 1 | $\binom{5}{3} \times \binom{7}{1} = 10 \times 7 = 70$ |
-| 4 | 0 | $\binom{5}{4} \times \binom{7}{0} = 5 \times 1 = 5$ |
+| 2     | 2    | $\binom{5}{2} \times \binom{7}{2} = 10 \times 21 = 210$ |
+| 3     | 1    | $\binom{5}{3} \times \binom{7}{1} = 10 \times 7 = 70$   |
+| 4     | 0    | $\binom{5}{4} \times \binom{7}{0} = 5 \times 1 = 5$     |
 
 Total: $210 + 70 + 5 = 285$.
 
@@ -217,27 +219,27 @@ Hands with at least one ace: $2598960 - 1712304 = 886656$.
 ## Common Pitfalls
 
 - Confusing permutations with combinations. Ask: does the order matter? If yes, use $P_r^n$; if no,
- use $C_r^n$.
+  use $C_r^n$.
 - Forgetting that $0! = 1$. This is needed in many calculations.
 - In circular permutation problems, forgetting that rotations are equivalent. For $n$ objects in a
- circle, there are $(n - 1)!$ arrangements, not $n!$.
+  circle, there are $(n - 1)!$ arrangements, not $n!$.
 - Double-counting in selection problems. When dividing into groups, ensure each object is counted
- exactly once.
+  exactly once.
 - Incorrectly applying the permutation-with-repetition formula. Only divide by factorials when
- objects are truly identical.
+  objects are truly identical.
 
 ---
 
 ## Summary Table
 
-| Topic | Formula |
+| Topic             | Formula                                            |
 | ----------------- | -------------------------------------------------- |
-| Factorial | $n! = n(n-1)(n-2)\cdots 1$ |
-| Permutation | $P_r^n = n!/(n-r)!$ |
-| Combination | $C_r^n = n!/[r!(n-r)!]$ |
-| With repetition | $n!/(n_1!\, n_2!\, \cdots)$ |
-| Circular | $(n - 1)!$ |
-| Row sum | $\sum_{k=0}^n \binom{n}{k} = 2^n$ |
+| Factorial         | $n! = n(n-1)(n-2)\cdots 1$                         |
+| Permutation       | $P_r^n = n!/(n-r)!$                                |
+| Combination       | $C_r^n = n!/[r!(n-r)!]$                            |
+| With repetition   | $n!/(n_1!\, n_2!\, \cdots)$                        |
+| Circular          | $(n - 1)!$                                         |
+| Row sum           | $\sum_{k=0}^n \binom{n}{k} = 2^n$                  |
 | Pascal's identity | $\binom{n}{k} = \binom{n-1}{k-1} + \binom{n-1}{k}$ |
 
 ---
@@ -250,7 +252,7 @@ Hands with at least one ace: $2598960 - 1712304 = 886656$.
 $\binom{12}{4} = \dfrac{12!}{4!\, 8!} = \dfrac{12 \times 11 \times 10 \times 9}{4 \times 3 \times 2 \times 1} = \dfrac{11880}{24} = 495$.
 
 2. **Question:** How many 3-digit even numbers can be formed from the digits $\{1, 2, 3, 4, 5, 6\}$
- if each digit can be used at most once?
+   if each digit can be used at most once?
 
 Last digit (units) must be even: choose from $\{2, 4, 6\}$ -- 3 ways.
 
@@ -263,7 +265,7 @@ Total: $3 \times 5 \times 4 = 60$. Wait -- first digit: 5 choices (all except th
 Digit). Middle digit: 4 choices (remaining). Total: $3 \times 5 \times 4 = 60$.
 
 3. **Question:** In how many ways can 4 boys and 3 girls be arranged in a row if no two girls sit
- together?
+   together?
 
 First arrange the 4 boys: $4! = 24$ ways. This creates 5 gaps (including ends):
 
@@ -275,13 +277,13 @@ Ways.
 Total: $24 \times 10 \times 6 = 1440$.
 
 4. **Question:** A committee of 5 is chosen from 4 men and 6 women. How many committees have more
- women than men?
+   women than men?
 
-| Women | Men | Ways |
+| Women | Men | Ways                                           |
 | ----- | --- | ---------------------------------------------- |
-| 3 | 2 | $\binom{6}{3}\binom{4}{2} = 20 \times 6 = 120$ |
-| 4 | 1 | $\binom{6}{4}\binom{4}{1} = 15 \times 4 = 60$ |
-| 5 | 0 | $\binom{6}{5}\binom{4}{0} = 6 \times 1 = 6$ |
+| 3     | 2   | $\binom{6}{3}\binom{4}{2} = 20 \times 6 = 120$ |
+| 4     | 1   | $\binom{6}{4}\binom{4}{1} = 15 \times 4 = 60$  |
+| 5     | 0   | $\binom{6}{5}\binom{4}{0} = 6 \times 1 = 6$    |
 
 Total: $120 + 60 + 6 = 186$.
 
@@ -303,7 +305,7 @@ $= \frac{n!(n - r + 1) + n! \cdot r}{r!(n - r + 1)!} = \frac{n!(n + 1)}{r!(n + 1
 $\qed$
 
 8. **Question:** A box contains 6 red, 4 blue, and 5 green balls. In how many ways can 4 balls be
- chosen so that at least 2 are red?
+   chosen so that at least 2 are red?
 
 Total: $\binom{15}{4} = 1365$.
 
@@ -318,7 +320,7 @@ Number of ways to split $2n$ people into $n$ unordered pairs:
 $$\frac{(2n)!}{2^n \cdot n!} = \frac{8!}{2^4 \cdot 4!} = \frac{40320}{16 \times 24} = \frac{40320}{384} = 105$$
 
 10. **Question:** From 7 men and 5 women, how many committees of 6 can be formed with at least 3 men
- and at least 2 women?
+    and at least 2 women?
 
 Possible compositions: (4M, 2W), (3M, 3W).
 
@@ -369,7 +371,8 @@ In how many ways can 12 identical balls be distributed into 5 distinct boxes (bo
 <details>
 <summary>Solution</summary>
 
-This is a stars-and-bars problem: we need the number of non-negative integer solutions to $x_1 + x_2 + x_3 + x_4 + x_5 = 12$.
+This is a stars-and-bars problem: we need the number of non-negative integer solutions to
+$x_1 + x_2 + x_3 + x_4 + x_5 = 12$.
 
 $$\binom{12 + 5 - 1}{5 - 1} = \binom{16}{4} = \frac{16 \times 15 \times 14 \times 13}{4 \times 3 \times 2 \times 1} = 1820$$
 
@@ -377,7 +380,8 @@ $$\binom{12 + 5 - 1}{5 - 1} = \binom{16}{4} = \frac{16 \times 15 \times 14 \time
 
 **Worked Example 13: Password with digit constraint**
 
-A password consists of 4 distinct characters chosen from $\{A, B, C, D, E, 1, 2, 3\}$. How many passwords contain at least one digit?
+A password consists of 4 distinct characters chosen from $\{A, B, C, D, E, 1, 2, 3\}$. How many
+passwords contain at least one digit?
 
 <details>
 <summary>Solution</summary>
@@ -390,11 +394,11 @@ $$1680 - 120 = 1560$$
 
 **Direct counting verification:**
 
-| Digits | Letters | Ways |
-|---|---|---|
-| 1 | 3 | $\binom{3}{1}\binom{5}{3} \cdot 4! = 3 \times 10 \times 24 = 720$ |
-| 2 | 2 | $\binom{3}{2}\binom{5}{2} \cdot 4! = 3 \times 10 \times 24 = 720$ |
-| 3 | 1 | $\binom{3}{3}\binom{5}{1} \cdot 4! = 1 \times 5 \times 24 = 120$ |
+| Digits | Letters | Ways                                                              |
+| ------ | ------- | ----------------------------------------------------------------- |
+| 1      | 3       | $\binom{3}{1}\binom{5}{3} \cdot 4! = 3 \times 10 \times 24 = 720$ |
+| 2      | 2       | $\binom{3}{2}\binom{5}{2} \cdot 4! = 3 \times 10 \times 24 = 720$ |
+| 3      | 1       | $\binom{3}{3}\binom{5}{1} \cdot 4! = 1 \times 5 \times 24 = 120$  |
 
 Total: $720 + 720 + 120 = 1560$. Correct.
 
@@ -407,7 +411,8 @@ Find the constant term in the expansion of $\left(x^2 + \dfrac{2}{x}\right)^6$.
 <details>
 <summary>Solution</summary>
 
-General term: $\binom{6}{k}(x^2)^{6-k}\!\left(\dfrac{2}{x}\right)^k = \binom{6}{k} \cdot 2^k \cdot x^{12-2k-k} = \binom{6}{k} \cdot 2^k \cdot x^{12-3k}$.
+General term:
+$\binom{6}{k}(x^2)^{6-k}\!\left(\dfrac{2}{x}\right)^k = \binom{6}{k} \cdot 2^k \cdot x^{12-2k-k} = \binom{6}{k} \cdot 2^k \cdot x^{12-3k}$.
 
 For the constant term: $12 - 3k = 0 \implies k = 4$.
 
@@ -419,27 +424,43 @@ $$\binom{6}{4} \cdot 2^4 = 15 \times 16 = 240$$
 
 ## Additional Common Pitfalls
 
-1. **Order matters vs. Does not matter.** "Arranging" implies permutations (order matters). "Selecting" or "choosing" implies combinations (order does not matter). When in doubt, ask whether swapping two elements produces a different outcome.
+1. **Order matters vs. Does not matter.** "Arranging" implies permutations (order matters).
+   "Selecting" or "choosing" implies combinations (order does not matter). When in doubt, ask
+   whether swapping two elements produces a different outcome.
 
-2. **Overcounting in selection problems.** When forming teams from distinct groups, multiply the number of ways from each group. Do not use $\binom{n}{r}$ on the combined pool, which ignores group structure.
+2. **Overcounting in selection problems.** When forming teams from distinct groups, multiply the
+   number of ways from each group. Do not use $\binom{n}{r}$ on the combined pool, which ignores
+   group structure.
 
-3. **Circular permutation exceptions.** If a circle has a fixed reference point (e.g., a specific seat for a host), the arrangement count changes. With $n$ people and one fixed seat, the remaining $n-1$ people are arranged linearly in $(n-1)!$ ways.
+3. **Circular permutation exceptions.** If a circle has a fixed reference point (e.g., a specific
+   seat for a host), the arrangement count changes. With $n$ people and one fixed seat, the
+   remaining $n-1$ people are arranged linearly in $(n-1)!$ ways.
 
-4. **Stars and bars conditions.** $\binom{n+k-1}{k-1}$ counts non-negative integer solutions. For strictly positive solutions (at least one per box), substitute $y_i = x_i - 1$ to get $\binom{n-1}{k-1}$.
+4. **Stars and bars conditions.** $\binom{n+k-1}{k-1}$ counts non-negative integer solutions. For
+   strictly positive solutions (at least one per box), substitute $y_i = x_i - 1$ to get
+   $\binom{n-1}{k-1}$.
 
-5. **Binomial theorem sign errors.** In $(a - b)^n$The general term is $(-1)^k \binom{n}{k} a^{n-k} b^k$. The alternating sign $(-1)^k$ is frequently forgotten.
+5. **Binomial theorem sign errors.** In $(a - b)^n$The general term is
+   $(-1)^k \binom{n}{k} a^{n-k} b^k$. The alternating sign $(-1)^k$ is frequently forgotten.
 
-6. **Division into equal indistinguishable groups.** When dividing $2n$ people into two teams of $n$The answer is $\dfrac{1}{2}\binom{2n}{n}$Not $\binom{2n}{n}$Since the two teams are not labelled.
+6. **Division into equal indistinguishable groups.** When dividing $2n$ people into two teams of
+   $n$The answer is $\dfrac{1}{2}\binom{2n}{n}$Not $\binom{2n}{n}$Since the two teams are not
+   labelled.
 
-7. **Double-counting in circular arrangements with identical objects.** In circular permutations with repeated items, apply both the circular correction ($(n-1)!$) and the identical-objects correction (dividing by factorials of counts).
+7. **Double-counting in circular arrangements with identical objects.** In circular permutations
+   with repeated items, apply both the circular correction ($(n-1)!$) and the identical-objects
+   correction (dividing by factorials of counts).
 
-8. **Confusing $P_r^n$ notation with $C_r^n$.** Always verify whether the problem requires ordered or unordered selection before choosing the formula. A safe check: if the problem asks "how many ways to arrange" use $P$; if it asks "how many ways to choose" use $C$.
+8. **Confusing $P_r^n$ notation with $C_r^n$.** Always verify whether the problem requires ordered
+   or unordered selection before choosing the formula. A safe check: if the problem asks "how many
+   ways to arrange" use $P$; if it asks "how many ways to choose" use $C$.
 
 ---
 
 ## Exam-Style Problems
 
-**Problem 1.** A debating team of 4 is to be selected from 6 boys and 5 girls. The team must include at least 1 boy and at least 1 girl. In how many ways can this be done?
+**Problem 1.** A debating team of 4 is to be selected from 6 boys and 5 girls. The team must include
+at least 1 boy and at least 1 girl. In how many ways can this be done?
 
 <details>
 <summary>Solution</summary>
@@ -452,14 +473,16 @@ $$330 - 15 - 5 = 310$$
 
 </details>
 
-**Problem 2.** How many 5-digit numbers greater than $40000$ can be formed from $\{1, 2, 3, 4, 5, 6, 7\}$ if no digit is repeated?
+**Problem 2.** How many 5-digit numbers greater than $40000$ can be formed from
+$\{1, 2, 3, 4, 5, 6, 7\}$ if no digit is repeated?
 
 <details>
 <summary>Solution</summary>
 
 The first digit must be $4$$5$$6$Or $7$: $4$ choices.
 
-The remaining 4 positions are filled from the remaining $6$ digits without repetition: $P_4^6 = \dfrac{6!}{2!} = 360$.
+The remaining 4 positions are filled from the remaining $6$ digits without repetition:
+$P_4^6 = \dfrac{6!}{2!} = 360$.
 
 $$4 \times 360 = 1440$$
 
@@ -478,7 +501,8 @@ $$(-1)^5 \cdot 2^5 \cdot \binom{8}{5} = -32 \times 56 = -1792$$
 
 </details>
 
-**Problem 4.** In how many ways can 3 boys and 3 girls sit around a circular table if no two boys sit next to each other?
+**Problem 4.** In how many ways can 3 boys and 3 girls sit around a circular table if no two boys
+sit next to each other?
 
 <details>
 <summary>Solution</summary>
@@ -491,7 +515,8 @@ $$2 \times 6 = 12$$
 
 </details>
 
-**Problem 5.** A shelf holds 6 different maths books and 4 different physics books. In how many ways can the books be arranged if all books of the same subject must stay together?
+**Problem 5.** A shelf holds 6 different maths books and 4 different physics books. In how many ways
+can the books be arranged if all books of the same subject must stay together?
 
 <details>
 <summary>Solution</summary>
@@ -506,7 +531,8 @@ $$2 \times 720 \times 24 = 34560$$
 
 </details>
 
-**Problem 6.** Find the number of ways to place 8 distinguishable balls into 3 distinguishable boxes such that no box is empty.
+**Problem 6.** Find the number of ways to place 8 distinguishable balls into 3 distinguishable boxes
+such that no box is empty.
 
 <details>
 <summary>Solution</summary>
@@ -529,7 +555,8 @@ $$6561 - 768 + 3 = 5796$$
 <details>
 <summary>Solution</summary>
 
-Choose 2 from 6: $\binom{6}{2} = 15$. Choose 2 from remaining 4: $\binom{4}{2} = 6$. The last 2 are fixed: $\binom{2}{2} = 1$.
+Choose 2 from 6: $\binom{6}{2} = 15$. Choose 2 from remaining 4: $\binom{4}{2} = 6$. The last 2 are
+fixed: $\binom{2}{2} = 1$.
 
 Since the 3 groups are indistinguishable (no labelling), divide by $3!$:
 
@@ -539,14 +566,16 @@ Alternatively: $\dfrac{6!}{2^3 \cdot 3!} = \dfrac{720}{48} = 15$. Correct.
 
 </details>
 
-**Problem 8.** How many distinct arrangements of the letters in "SUCCESS" have the two C's separated?
+**Problem 8.** How many distinct arrangements of the letters in "SUCCESS" have the two C's
+separated?
 
 <details>
 <summary>Solution</summary>
 
 Total arrangements of "SUCCESS": $\dfrac{7!}{3! \cdot 2!} = \dfrac{5040}{12} = 420$.
 
-Arrangements with the two C's adjacent: treat "CC" as one unit. We have 6 units: S($3$), "CC"($1$), U($1$), E($1$).
+Arrangements with the two C's adjacent: treat "CC" as one unit. We have 6 units: S($3$), "CC"($1$),
+U($1$), E($1$).
 
 $$\frac{6!}{3!} = \frac{720}{6} = 120$$
 
@@ -558,9 +587,12 @@ $$420 - 120 = 300$$
 
 ## Cross-References
 
-- **Probability:** Counting techniques form the foundation of probability calculations. See the probability notes.
-- **Binomial Theorem:** The connection between Pascal's triangle and binomial coefficients extends to the binomial expansion and the binomial distribution.
-- **Quadratics:** Factorials and combinatorial expressions sometimes simplify to quadratic forms. See [quadratics.md](quadratics)).
+- **Probability:** Counting techniques form the foundation of probability calculations. See the
+  probability notes.
+- **Binomial Theorem:** The connection between Pascal's triangle and binomial coefficients extends
+  to the binomial expansion and the binomial distribution.
+- **Quadratics:** Factorials and combinatorial expressions sometimes simplify to quadratic forms.
+  See [quadratics.md](quadratics)).
 
 ---
 
@@ -568,7 +600,8 @@ $$420 - 120 = 300$$
 
 ### Showing Working
 
-In DSE Maths Paper 2 (MC) you select the answer; in Paper 1 you must show full working. For counting problems, examiners expect:
+In DSE Maths Paper 2 (MC) you select the answer; in Paper 1 you must show full working. For counting
+problems, examiners expect:
 
 1. State whether order matters (permutation vs combination).
 2. For casework, label each case and sum at the end.
@@ -577,7 +610,9 @@ In DSE Maths Paper 2 (MC) you select the answer; in Paper 1 you must show full w
 
 ### Significant Figures
 
-Final numerical answers should be given to 3 significant figures unless the question specifies otherwise. Intermediate combinatorial values (factorials, binomial coefficients) are exact integers and must not be rounded.
+Final numerical answers should be given to 3 significant figures unless the question specifies
+otherwise. Intermediate combinatorial values (factorials, binomial coefficients) are exact integers
+and must not be rounded.
 
 ### Common DSE Question Types
 
@@ -593,12 +628,14 @@ Final numerical answers should be given to 3 significant figures unless the ques
 
 **Worked Example 15: Arrangements with vowel adjacency**
 
-In how many ways can the letters of the word "EQUATION" be arranged so that all three vowels (E, U, A, I, O -- five vowels) appear together?
+In how many ways can the letters of the word "EQUATION" be arranged so that all three vowels (E, U,
+A, I, O -- five vowels) appear together?
 
 <details>
 <summary>Solution</summary>
 
-The word "EQUATION" has 8 distinct letters. The vowels are E, U, A, I, O (5 letters) and the consonants are Q, T, N (3 letters).
+The word "EQUATION" has 8 distinct letters. The vowels are E, U, A, I, O (5 letters) and the
+consonants are Q, T, N (3 letters).
 
 Treat the 5 vowels as a single block. We have 4 units to arrange: {VOWELS}, Q, T, N.
 
@@ -612,15 +649,16 @@ $$24 \times 120 = 2880$$
 
 **Worked Example 16: Selection with identical objects**
 
-A box contains 4 red balls and 6 blue balls. In how many ways can 5 balls be selected if at least 3 are red?
+A box contains 4 red balls and 6 blue balls. In how many ways can 5 balls be selected if at least 3
+are red?
 
 <details>
 <summary>Solution</summary>
 
-| Red | Blue | Ways |
-|---|---|---|
-| 3 | 2 | $\binom{4}{3} \times \binom{6}{2} = 4 \times 15 = 60$ |
-| 4 | 1 | $\binom{4}{4} \times \binom{6}{1} = 1 \times 6 = 6$ |
+| Red | Blue | Ways                                                  |
+| --- | ---- | ----------------------------------------------------- |
+| 3   | 2    | $\binom{4}{3} \times \binom{6}{2} = 4 \times 15 = 60$ |
+| 4   | 1    | $\binom{4}{4} \times \binom{6}{1} = 1 \times 6 = 6$   |
 
 Total: $60 + 6 = 66$.
 
@@ -650,7 +688,8 @@ Find the number of positive divisors of $N = 2^3 \times 3^2 \times 5$.
 <details>
 <summary>Solution</summary>
 
-A divisor of $N$ has the form $2^a \times 3^b \times 5^c$ where $0 \leq a \leq 3$$0 \leq b \leq 2$$0 \leq c \leq 1$.
+A divisor of $N$ has the form $2^a \times 3^b \times 5^c$ where
+$0 \leq a \leq 3$$0 \leq b \leq 2$$0 \leq c \leq 1$.
 
 Number of choices for $a$: $4$ (i.e., $0, 1, 2, 3$).
 
@@ -687,7 +726,8 @@ $$(1 + 2x)^{-1/2} = 1 - \frac{1}{2}(2x) + \frac{3}{8}(4x^2) + \cdots = 1 - x + \
 
 **Worked Example 20: Derangement**
 
-In how many ways can 5 letters be placed into 5 addressed envelopes so that no letter goes into the correct envelope?
+In how many ways can 5 letters be placed into 5 addressed envelopes so that no letter goes into the
+correct envelope?
 
 <details>
 <summary>Solution</summary>
@@ -706,14 +746,17 @@ $$!5 = 5!\left(1 - 1 + \frac{1}{2} - \frac{1}{6} + \frac{1}{24} - \frac{1}{120}\
 
 ## DSE Exam-Style Questions
 
-**DSE Practice 1.** A committee of 5 is to be chosen from 7 men and 5 women. Find the number of ways to select the committee if it must contain exactly 2 women and the committee must include either Mr. A or Mr. B (or both).
+**DSE Practice 1.** A committee of 5 is to be chosen from 7 men and 5 women. Find the number of ways
+to select the committee if it must contain exactly 2 women and the committee must include either Mr.
+A or Mr. B (or both).
 
 <details>
 <summary>Solution</summary>
 
 Total ways with exactly 2 women: $\binom{5}{2} \times \binom{7}{3} = 10 \times 35 = 350$.
 
-Subtract committees with neither Mr. A nor Mr. B: $\binom{5}{2} \times \binom{5}{3} = 10 \times 10 = 100$.
+Subtract committees with neither Mr. A nor Mr. B:
+$\binom{5}{2} \times \binom{5}{3} = 10 \times 10 = 100$.
 
 $$350 - 100 = 250$$
 
@@ -738,16 +781,20 @@ The coefficient of $x^3$ is $80$.
 
 </details>
 
-**DSE Practice 3.** 6 boys and 4 girls are to be seated in a row of 10 chairs. In how many ways can they be arranged if no two girls sit next to each other and the two youngest boys must sit at the two ends?
+**DSE Practice 3.** 6 boys and 4 girls are to be seated in a row of 10 chairs. In how many ways can
+they be arranged if no two girls sit next to each other and the two youngest boys must sit at the
+two ends?
 
 <details>
 <summary>Solution</summary>
 
 The two youngest boys must sit at the ends: $2! = 2$ ways.
 
-The remaining 4 boys sit in the middle 8 positions: we choose 4 of the remaining 8 positions and arrange the 4 boys: $\binom{8}{4} \times 4! = 70 \times 24 = 1680$.
+The remaining 4 boys sit in the middle 8 positions: we choose 4 of the remaining 8 positions and
+arrange the 4 boys: $\binom{8}{4} \times 4! = 70 \times 24 = 1680$.
 
-The 4 boys in the middle create 5 gaps (including the gap between the two end boys and the first middle boy, etc.). We need to choose 4 of these 5 gaps for the girls: $\binom{5}{4} = 5$.
+The 4 boys in the middle create 5 gaps (including the gap between the two end boys and the first
+middle boy, etc.). We need to choose 4 of these 5 gaps for the girls: $\binom{5}{4} = 5$.
 
 Arrange the 4 girls: $4! = 24$.
 
@@ -755,12 +802,14 @@ $$2 \times 1680 \times 5 \times 24 = 403200$$
 
 </details>
 
-**DSE Practice 4.** Find the term independent of $x$ in the expansion of $\left(x^2 + \dfrac{1}{x}\right)^3 \left(1 - \dfrac{1}{x}\right)^5$.
+**DSE Practice 4.** Find the term independent of $x$ in the expansion of
+$\left(x^2 + \dfrac{1}{x}\right)^3 \left(1 - \dfrac{1}{x}\right)^5$.
 
 <details>
 <summary>Solution</summary>
 
-First factor: $\left(x^2 + \dfrac{1}{x}\right)^3$. General term: $\binom{3}{r}(x^2)^{3-r}\!\left(\dfrac{1}{x}\right)^r = \binom{3}{r} x^{6-3r}$.
+First factor: $\left(x^2 + \dfrac{1}{x}\right)^3$. General term:
+$\binom{3}{r}(x^2)^{3-r}\!\left(\dfrac{1}{x}\right)^r = \binom{3}{r} x^{6-3r}$.
 
 For the power of $x$ to be $k$: $k = 6 - 3r$.
 
@@ -771,19 +820,22 @@ For the power of $x$ to be $k$: $k = 6 - 3r$.
 
 Second factor: $(1 - x^{-1})^5$. General term: $\binom{5}{s}(-1)^s x^{-s}$.
 
-We need the total power of $x$ to be 0. From the first factor, take $x^{6-3r}$; from the second, take $(-1)^s x^{-s}$. Total power: $6 - 3r - s = 0$I.e., $s = 6 - 3r$.
+We need the total power of $x$ to be 0. From the first factor, take $x^{6-3r}$; from the second,
+take $(-1)^s x^{-s}$. Total power: $6 - 3r - s = 0$I.e., $s = 6 - 3r$.
 
 Since $0 \leq s \leq 5$:
 
 - $r = 0$: $s = 6$ (reject, $s > 5$)
-- $r = 1$: $s = 3$: coefficient $= \binom{3}{1} \cdot \binom{5}{3}(-1)^3 = 3 \times 10 \times (-1) = -30$
+- $r = 1$: $s = 3$: coefficient
+  $= \binom{3}{1} \cdot \binom{5}{3}(-1)^3 = 3 \times 10 \times (-1) = -30$
 - $r = 2$: $s = 0$: coefficient $= \binom{3}{2} \cdot \binom{5}{0}(-1)^0 = 3 \times 1 = 3$
 
 Term independent of $x$: $-30 + 3 = -27$.
 
 </details>
 
-**DSE Practice 5.** Prove that the sum of all binomial coefficients $\binom{n}{0} + \binom{n}{1} + \cdots + \binom{n}{n} = 2^n$.
+**DSE Practice 5.** Prove that the sum of all binomial coefficients
+$\binom{n}{0} + \binom{n}{1} + \cdots + \binom{n}{n} = 2^n$.
 
 <details>
 <summary>Solution</summary>
@@ -798,7 +850,9 @@ $$\sum_{k=0}^{n} \binom{n}{k} = 2^n \qed$$
 
 </details>
 
-**DSE Practice 6.** A password consists of 4 characters. Each character is a letter (A to Z) or a digit (0 to 9). How many passwords contain at least one digit and at least one letter, if characters may be repeated?
+**DSE Practice 6.** A password consists of 4 characters. Each character is a letter (A to Z) or a
+digit (0 to 9). How many passwords contain at least one digit and at least one letter, if characters
+may be repeated?
 
 <details>
 <summary>Solution</summary>
@@ -815,7 +869,8 @@ $$1679616 - 456976 - 10000 = 1212640$$
 
 </details>
 
-**DSE Practice 7.** In how many ways can 12 students be divided into 3 groups of 4 to work on 3 different projects?
+**DSE Practice 7.** In how many ways can 12 students be divided into 3 groups of 4 to work on 3
+different projects?
 
 <details>
 <summary>Solution</summary>
@@ -828,7 +883,7 @@ The last 4 go to Project 3: $\binom{4}{4} = 1$.
 
 $$495 \times 70 \times 1 = 34650$$
 
-Note: we do NOT divide by $3!$ here because the projects are distinct (labelled), unlike the case of indistinguishable groups.
+Note: we do NOT divide by $3!$ here because the projects are distinct (labelled), unlike the case of
+indistinguishable groups.
 
 </details>
-

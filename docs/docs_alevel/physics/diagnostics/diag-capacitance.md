@@ -1,6 +1,8 @@
 ---
-title: "Capacitance -- Diagnostic Tests"
-description: Diagnostic tests for parallel plate capacitors, energy storage, RC circuit charging and discharging, and time constants at maximum A-Level Physics difficulty.
+title: 'Capacitance -- Diagnostic Tests'
+description:
+  Diagnostic tests for parallel plate capacitors, energy storage, RC circuit charging and
+  discharging, and time constants at maximum A-Level Physics difficulty.
 slug: diag-capacitance
 hide_table_of_contents: true
 ---
@@ -13,19 +15,25 @@ hide_table_of_contents: true
 
 **Question:**
 
-A parallel plate capacitor consists of two square plates of side $0.10\,\text{m}$ separated by $2.0\,\text{mm}$ in vacuum. A dielectric of relative permittivity $\varepsilon_r = 4.5$ and thickness $1.0\,\text{mm}$ is inserted between the plates, leaving a $0.5\,\text{mm}$ air gap on each side.
+A parallel plate capacitor consists of two square plates of side $0.10\,\text{m}$ separated by
+$2.0\,\text{mm}$ in vacuum. A dielectric of relative permittivity $\varepsilon_r = 4.5$ and
+thickness $1.0\,\text{mm}$ is inserted between the plates, leaving a $0.5\,\text{mm}$ air gap on
+each side.
 
 (a) Calculate the capacitance.
 
-(b) The capacitor is charged to $200\,\text{V}$ with the dielectric in place. The dielectric is then carefully removed without discharging the capacitor. Calculate the new voltage across the capacitor.
+(b) The capacitor is charged to $200\,\text{V}$ with the dielectric in place. The dielectric is then
+carefully removed without discharging the capacitor. Calculate the new voltage across the capacitor.
 
-(c) Calculate the energy stored before and after removing the dielectric. Account for any difference.
+(c) Calculate the energy stored before and after removing the dielectric. Account for any
+difference.
 
 Take $\varepsilon_0 = 8.85 \times 10^{-12}\,\text{F}\,\text{m}^{-1}$.
 
 **Solution:**
 
-(a) The system consists of three capacitors in series: air ($0.5\,\text{mm}$), dielectric ($1.0\,\text{mm}$), air ($0.5\,\text{mm}$).
+(a) The system consists of three capacitors in series: air ($0.5\,\text{mm}$), dielectric
+($1.0\,\text{mm}$), air ($0.5\,\text{mm}$).
 
 Plate area: $A = (0.10)^2 = 0.010\,\text{m}^2$
 
@@ -33,9 +41,11 @@ $C_{\text{air}} = \frac◆LB◆\varepsilon_0 A◆RB◆◆LB◆d_{\text{air}}◆R
 
 $C_{\text{dielectric}} = \frac◆LB◆\varepsilon_0 \varepsilon_r A◆RB◆◆LB◆d_{\text{diel}}◆RB◆ = \frac◆LB◆8.85 \times 10^{-12} \times 4.5 \times 0.010◆RB◆◆LB◆1.0 \times 10^{-3}◆RB◆ = 3.983 \times 10^{-10}\,\text{F} = 398\,\text{pF}$
 
-For two air gaps in series: $\frac◆LB◆1◆RB◆◆LB◆C_{\text{air,total}}◆RB◆ = \frac{1}{177} + \frac{1}{177} = \frac{2}{177} \Rightarrow C_{\text{air,total}} = 88.5\,\text{pF}$
+For two air gaps in series:
+$\frac◆LB◆1◆RB◆◆LB◆C_{\text{air,total}}◆RB◆ = \frac{1}{177} + \frac{1}{177} = \frac{2}{177} \Rightarrow C_{\text{air,total}} = 88.5\,\text{pF}$
 
-Total capacitance: $\frac{1}{C} = \frac{1}{88.5} + \frac{1}{398} = 0.01130 + 0.002513 = 0.01381\,\text{pF}^{-1}$
+Total capacitance:
+$\frac{1}{C} = \frac{1}{88.5} + \frac{1}{398} = 0.01130 + 0.002513 = 0.01381\,\text{pF}^{-1}$
 
 $$C = 72.4\,\text{pF}$$
 
@@ -47,34 +57,44 @@ $$C' = \frac◆LB◆\varepsilon_0 A◆RB◆◆LB◆d◆RB◆ = \frac◆LB◆8.85
 
 New voltage: $V' = Q/C' = 1.448 \times 10^{-8}/(4.425 \times 10^{-11}) = 327\,\text{V}$
 
-(c) Energy before: $E = \frac{1}{2}CV^2 = 0.5 \times 72.4 \times 10^{-12} \times 40000 = 1.448 \times 10^{-6}\,\text{J} = 1.45\,\mu\text{J}$
+(c) Energy before:
+$E = \frac{1}{2}CV^2 = 0.5 \times 72.4 \times 10^{-12} \times 40000 = 1.448 \times 10^{-6}\,\text{J} = 1.45\,\mu\text{J}$
 
-Energy after: $E' = \frac{1}{2}C'V'^2 = 0.5 \times 44.3 \times 10^{-12} \times 327^2 = 0.5 \times 44.3 \times 10^{-12} \times 106929 = 2.369 \times 10^{-6}\,\text{J} = 2.37\,\mu\text{J}$
+Energy after:
+$E' = \frac{1}{2}C'V'^2 = 0.5 \times 44.3 \times 10^{-12} \times 327^2 = 0.5 \times 44.3 \times 10^{-12} \times 106929 = 2.369 \times 10^{-6}\,\text{J} = 2.37\,\mu\text{J}$
 
-The energy increased by $0.92\,\mu\text{J}$. This extra energy came from the work done against the electric field in removing the dielectric (the dielectric is attracted into the capacitor, so removing it requires work).
+The energy increased by $0.92\,\mu\text{J}$. This extra energy came from the work done against the
+electric field in removing the dielectric (the dielectric is attracted into the capacitor, so
+removing it requires work).
 
 ---
+
 ### UT-2: Energy Stored in a Capacitor — Three Formulae
 
 **Question:**
 
-A capacitor of capacitance $C = 100\,\mu\text{F}$ is charged from a $12\,\text{V}$ battery through a resistor.
+A capacitor of capacitance $C = 100\,\mu\text{F}$ is charged from a $12\,\text{V}$ battery through a
+resistor.
 
-(a) Calculate the energy stored on the capacitor using each of the three formulae: $\frac{1}{2}CV^2$$\frac{1}{2}QV$And $\frac{Q^2}{2C}$.
+(a) Calculate the energy stored on the capacitor using each of the three formulae:
+$\frac{1}{2}CV^2$$\frac{1}{2}QV$And $\frac{Q^2}{2C}$.
 
 (b) Calculate the total energy supplied by the battery during charging.
 
-(c) Calculate the energy dissipated in the resistor and express it as a percentage of the battery's output.
+(c) Calculate the energy dissipated in the resistor and express it as a percentage of the battery's
+output.
 
 **Solution:**
 
 (a) Final charge: $Q = CV = 100 \times 10^{-6} \times 12 = 1.2 \times 10^{-3}\,\text{C}$
 
-Using $\frac{1}{2}CV^2$: $E = 0.5 \times 100 \times 10^{-6} \times 144 = 7.20 \times 10^{-3}\,\text{J} = 7.20\,\text{mJ}$
+Using $\frac{1}{2}CV^2$:
+$E = 0.5 \times 100 \times 10^{-6} \times 144 = 7.20 \times 10^{-3}\,\text{J} = 7.20\,\text{mJ}$
 
 Using $\frac{1}{2}QV$: $E = 0.5 \times 1.2 \times 10^{-3} \times 12 = 7.20\,\text{mJ}$
 
-Using $\frac{Q^2}{2C}$: $E = (1.2 \times 10^{-3})^2/(2 \times 100 \times 10^{-6}) = 1.44 \times 10^{-6}/(2 \times 10^{-4}) = 7.20\,\text{mJ}$
+Using $\frac{Q^2}{2C}$:
+$E = (1.2 \times 10^{-3})^2/(2 \times 100 \times 10^{-6}) = 1.44 \times 10^{-6}/(2 \times 10^{-4}) = 7.20\,\text{mJ}$
 
 All three give the same result, as expected. The three formulae are equivalent since $Q = CV$.
 
@@ -82,18 +102,23 @@ All three give the same result, as expected. The three formulae are equivalent s
 
 $$E_{\text{battery}} = QV = 1.2 \times 10^{-3} \times 12 = 14.4 \times 10^{-3}\,\text{J} = 14.4\,\text{mJ}$$
 
-(c) Energy dissipated in the resistor $= E_{\text{battery}} - E_{\text{capacitor}} = 14.4 - 7.2 = 7.2\,\text{mJ}$
+(c) Energy dissipated in the resistor
+$= E_{\text{battery}} - E_{\text{capacitor}} = 14.4 - 7.2 = 7.2\,\text{mJ}$
 
 Percentage $= 7.2/14.4 \times 100 = 50\%$
 
-Exactly half the energy supplied by the battery is stored on the capacitor, and half is dissipated as heat in the resistor. This is a general result for RC charging: regardless of the value of $R$Exactly half the energy is always lost.
+Exactly half the energy supplied by the battery is stored on the capacitor, and half is dissipated
+as heat in the resistor. This is a general result for RC charging: regardless of the value of
+$R$Exactly half the energy is always lost.
 
 ---
+
 ### UT-3: RC Discharge Through a Changing Resistance
 
 **Question:**
 
-A capacitor of capacitance $C = 470\,\mu\text{F}$ is charged to $20\,\text{V}$. It is then discharged through a resistor $R = 100\,\text{k}\Omega$.
+A capacitor of capacitance $C = 470\,\mu\text{F}$ is charged to $20\,\text{V}$. It is then
+discharged through a resistor $R = 100\,\text{k}\Omega$.
 
 (a) Calculate the time constant and the time for the voltage to fall to $5.0\,\text{V}$.
 
@@ -107,14 +132,14 @@ A capacitor of capacitance $C = 470\,\mu\text{F}$ is charged to $20\,\text{V}$. 
 
 Voltage during discharge: $V = V_0 e^{-t/\tau}$
 
-$$5.0 = 20 \times e^{-t/47}$$
-$$e^{-t/47} = 0.25$$
-$$-t/47 = \ln(0.25) = -1.386$$
+$$5.0 = 20 \times e^{-t/47}$$ $$e^{-t/47} = 0.25$$ $$-t/47 = \ln(0.25) = -1.386$$
 $$t = 1.386 \times 47 = 65.2\,\text{s}$$
 
-(b) At $t = 0$: $I_0 = V_0/R = 20/(100 \times 10^3) = 2.0 \times 10^{-4}\,\text{A} = 0.20\,\text{mA}$
+(b) At $t = 0$:
+$I_0 = V_0/R = 20/(100 \times 10^3) = 2.0 \times 10^{-4}\,\text{A} = 0.20\,\text{mA}$
 
-At $t = 2\tau = 94\,\text{s}$: $I = I_0 e^{-2} = 0.20 \times e^{-2} = 0.20 \times 0.1353 = 0.0271\,\text{mA}$
+At $t = 2\tau = 94\,\text{s}$:
+$I = I_0 e^{-2} = 0.20 \times e^{-2} = 0.20 \times 0.1353 = 0.0271\,\text{mA}$
 
 (c) At $t = 3\tau = 141\,\text{s}$:
 
@@ -128,54 +153,75 @@ After $3\tau$Only $4.98\%$ of the original charge remains. After $5\tau$Less tha
 
 **Question:**
 
-An RC circuit with $R = 10\,\text{k}\Omega$ and $C = 100\,\text{nF}$ is driven by a square wave voltage source that alternates between $0\,\text{V}$ and $5.0\,\text{V}$ with frequency $f$.
+An RC circuit with $R = 10\,\text{k}\Omega$ and $C = 100\,\text{nF}$ is driven by a square wave
+voltage source that alternates between $0\,\text{V}$ and $5.0\,\text{V}$ with frequency $f$.
 
-(a) Calculate the time constant. For what frequency would the capacitor voltage just reach $63\%$ of the supply voltage during each half-cycle?
+(a) Calculate the time constant. For what frequency would the capacitor voltage just reach $63\%$ of
+the supply voltage during each half-cycle?
 
-(b) If the driving frequency is $1.0\,\text{kHz}$Sketch the voltage across the capacitor over two complete cycles.
+(b) If the driving frequency is $1.0\,\text{kHz}$Sketch the voltage across the capacitor over two
+complete cycles.
 
-(c) Explain how this circuit can be used to convert a square wave into an approximate triangular wave.
+(c) Explain how this circuit can be used to convert a square wave into an approximate triangular
+wave.
 
 **Solution:**
 
-(a) $\tau = RC = 10 \times 10^3 \times 100 \times 10^{-9} = 1.0 \times 10^{-3}\,\text{s} = 1.0\,\text{ms}$
+(a)
+$\tau = RC = 10 \times 10^3 \times 100 \times 10^{-9} = 1.0 \times 10^{-3}\,\text{s} = 1.0\,\text{ms}$
 
 For the capacitor to reach $63\%$ during one half-cycle: $\tau = T/2 = 1/(2f)$
 
 $$f = \frac◆LB◆1◆RB◆◆LB◆2\tau◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆2 \times 10^{-3}◆RB◆ = 500\,\text{Hz}$$
 
-(b) At $f = 1.0\,\text{kHz}$The period is $T = 1.0\,\text{ms}$ and the half-cycle is $0.50\,\text{ms}$.
+(b) At $f = 1.0\,\text{kHz}$The period is $T = 1.0\,\text{ms}$ and the half-cycle is
+$0.50\,\text{ms}$.
 
 Since $\tau = 1.0\,\text{ms}$ and the half-cycle is $0.5\tau$The capacitor charges to only:
 
 $$V_C = V_0(1 - e^{-0.5}) = 5.0(1 - 0.6065) = 5.0 \times 0.3935 = 1.97\,\text{V}$$
 
-The voltage across the capacitor rises exponentially to $1.97\,\text{V}$ during each half-cycle, then decays back. The waveform is a series of exponential rises and falls that do not reach the full supply voltage.
+The voltage across the capacitor rises exponentially to $1.97\,\text{V}$ during each half-cycle,
+then decays back. The waveform is a series of exponential rises and falls that do not reach the full
+supply voltage.
 
-(c) When the time constant is much longer than the half-period of the square wave ($\tau \gg T/2$), the capacitor only charges (or discharges) through a small fraction of its range during each half-cycle. Over this small range, the exponential curve is approximately linear, so the voltage across the capacitor approximates a triangular wave. The amplitude of the triangular wave is approximately $V_0 T/(2\tau)$ for $\tau \gg T/2$.
+(c) When the time constant is much longer than the half-period of the square wave ($\tau \gg T/2$),
+the capacitor only charges (or discharges) through a small fraction of its range during each
+half-cycle. Over this small range, the exponential curve is approximately linear, so the voltage
+across the capacitor approximates a triangular wave. The amplitude of the triangular wave is
+approximately $V_0 T/(2\tau)$ for $\tau \gg T/2$.
 
-For example, with $\tau = 10T/2 = 5T$The capacitor charges to only $V_0(1 - e^{-0.2}) \approx 0.18V_0$ during each half-cycle, and this portion of the exponential is nearly linear.
+For example, with $\tau = 10T/2 = 5T$The capacitor charges to only
+$V_0(1 - e^{-0.2}) \approx 0.18V_0$ during each half-cycle, and this portion of the exponential is
+nearly linear.
 
 ---
+
 ### IT-2: Capacitor Microphone (with Wave Properties)
 
 **Question:**
 
-A capacitor microphone consists of two parallel plates, one fixed and one flexible (diaphragm), separated by $20\,\mu\text{m}$. Each plate has area $2.0 \times 10^{-3}\,\text{m}^2$. The capacitor is connected in series with a $10\,\text{M}\Omega$ resistor and a $200\,\text{V}$ DC supply.
+A capacitor microphone consists of two parallel plates, one fixed and one flexible (diaphragm),
+separated by $20\,\mu\text{m}$. Each plate has area $2.0 \times 10^{-3}\,\text{m}^2$. The capacitor
+is connected in series with a $10\,\text{M}\Omega$ resistor and a $200\,\text{V}$ DC supply.
 
 (a) Calculate the capacitance at rest.
 
-(b) A sound wave causes the diaphragm to oscillate with amplitude $1.0\,\mu\text{m}$ at $1000\,\text{Hz}$. Calculate the approximate peak-to-peak voltage variation across the resistor.
+(b) A sound wave causes the diaphragm to oscillate with amplitude $1.0\,\mu\text{m}$ at
+$1000\,\text{Hz}$. Calculate the approximate peak-to-peak voltage variation across the resistor.
 
-(c) Calculate the time constant and explain why the time constant must satisfy $\tau \gg 1/f$ for the microphone to work correctly.
+(c) Calculate the time constant and explain why the time constant must satisfy $\tau \gg 1/f$ for
+the microphone to work correctly.
 
 Take $\varepsilon_0 = 8.85 \times 10^{-12}\,\text{F}\,\text{m}^{-1}$.
 
 **Solution:**
 
-(a) $C = \frac◆LB◆\varepsilon_0 A◆RB◆◆LB◆d◆RB◆ = \frac◆LB◆8.85 \times 10^{-12} \times 2.0 \times 10^{-3}◆RB◆◆LB◆20 \times 10^{-6}◆RB◆ = \frac◆LB◆1.77 \times 10^{-14}◆RB◆◆LB◆2.0 \times 10^{-5}◆RB◆ = 8.85 \times 10^{-10}\,\text{F} = 885\,\text{pF}$
+(a)
+$C = \frac◆LB◆\varepsilon_0 A◆RB◆◆LB◆d◆RB◆ = \frac◆LB◆8.85 \times 10^{-12} \times 2.0 \times 10^{-3}◆RB◆◆LB◆20 \times 10^{-6}◆RB◆ = \frac◆LB◆1.77 \times 10^{-14}◆RB◆◆LB◆2.0 \times 10^{-5}◆RB◆ = 8.85 \times 10^{-10}\,\text{F} = 885\,\text{pF}$
 
-(b) The charge on the capacitor is approximately constant (since $\tau$ is large): $Q \approx CV_0 = 885 \times 10^{-12} \times 200 = 1.77 \times 10^{-7}\,\text{C}$
+(b) The charge on the capacitor is approximately constant (since $\tau$ is large):
+$Q \approx CV_0 = 885 \times 10^{-12} \times 200 = 1.77 \times 10^{-7}\,\text{C}$
 
 When the separation changes by $\Delta d = \pm 1.0\,\mu\text{m}$:
 
@@ -187,47 +233,64 @@ $$\Delta V_C \approx -\frac◆LB◆Q \Delta C◆RB◆◆LB◆C^2◆RB◆ = -\fra
 
 Peak-to-peak variation across the resistor $\approx 20\,\text{V}$.
 
-(c) $\tau = RC = 10 \times 10^6 \times 885 \times 10^{-12} = 8.85 \times 10^{-3}\,\text{s} = 8.85\,\text{ms}$
+(c)
+$\tau = RC = 10 \times 10^6 \times 885 \times 10^{-12} = 8.85 \times 10^{-3}\,\text{s} = 8.85\,\text{ms}$
 
 $1/f = 1.0\,\text{ms}$
 
-Since $\tau = 8.85\,\text{ms} \gg 1.0\,\text{ms} = 1/f$The condition is satisfied. The time constant must be much longer than the period of the sound wave so that the capacitor voltage cannot follow the rapid changes in capacitance. This means the charge on the capacitor remains approximately constant, and the voltage changes are caused by the changing capacitance, producing an AC signal across the resistor that faithfully reproduces the sound wave.
+Since $\tau = 8.85\,\text{ms} \gg 1.0\,\text{ms} = 1/f$The condition is satisfied. The time constant
+must be much longer than the period of the sound wave so that the capacitor voltage cannot follow
+the rapid changes in capacitance. This means the charge on the capacitor remains approximately
+constant, and the voltage changes are caused by the changing capacitance, producing an AC signal
+across the resistor that faithfully reproduces the sound wave.
 
 ---
+
 ### IT-3: Energy Transfer in a Two-Capacitor System (with DC Circuits)
 
 **Question:**
 
-Capacitor $C_1 = 10\,\mu\text{F}$ is charged to $50\,\text{V}$. It is then connected across an initially uncharged capacitor $C_2 = 40\,\mu\text{F}$.
+Capacitor $C_1 = 10\,\mu\text{F}$ is charged to $50\,\text{V}$. It is then connected across an
+initially uncharged capacitor $C_2 = 40\,\mu\text{F}$.
 
 (a) Calculate the final voltage across both capacitors after they are connected.
 
 (b) Calculate the total energy stored before and after connection. Account for the difference.
 
-(c) A resistor $R = 100\,\Omega$ is placed between the capacitors during connection. Calculate the peak current and the total energy dissipated in the resistor.
+(c) A resistor $R = 100\,\Omega$ is placed between the capacitors during connection. Calculate the
+peak current and the total energy dissipated in the resistor.
 
 **Solution:**
 
-(a) Charge is conserved: $Q_1 = C_1 V_1 = 10 \times 10^{-6} \times 50 = 5.0 \times 10^{-4}\,\text{C}$
+(a) Charge is conserved:
+$Q_1 = C_1 V_1 = 10 \times 10^{-6} \times 50 = 5.0 \times 10^{-4}\,\text{C}$
 
 After connection, the capacitors are in parallel: $C_{\text{total}} = C_1 + C_2 = 50\,\mu\text{F}$
 
 $$V_f = \frac◆LB◆Q_1◆RB◆◆LB◆C_{\text{total}}◆RB◆ = \frac◆LB◆5.0 \times 10^{-4}◆RB◆◆LB◆50 \times 10^{-6}◆RB◆ = 10\,\text{V}$$
 
-(b) Energy before: $E_i = \frac{1}{2}C_1 V_1^2 = 0.5 \times 10^{-5} \times 2500 = 12.5 \times 10^{-3}\,\text{J} = 12.5\,\text{mJ}$
+(b) Energy before:
+$E_i = \frac{1}{2}C_1 V_1^2 = 0.5 \times 10^{-5} \times 2500 = 12.5 \times 10^{-3}\,\text{J} = 12.5\,\text{mJ}$
 
-Energy after: $E_f = \frac{1}{2}(C_1 + C_2)V_f^2 = 0.5 \times 50 \times 10^{-6} \times 100 = 2.5 \times 10^{-3}\,\text{J} = 2.5\,\text{mJ}$
+Energy after:
+$E_f = \frac{1}{2}(C_1 + C_2)V_f^2 = 0.5 \times 50 \times 10^{-6} \times 100 = 2.5 \times 10^{-3}\,\text{J} = 2.5\,\text{mJ}$
 
 Energy lost $= 12.5 - 2.5 = 10.0\,\text{mJ}$
 
-This energy is dissipated as heat in the connecting wires (or resistor) and as electromagnetic radiation during the transient current flow. This is a fundamental result: connecting two capacitors always results in energy loss.
+This energy is dissipated as heat in the connecting wires (or resistor) and as electromagnetic
+radiation during the transient current flow. This is a fundamental result: connecting two capacitors
+always results in energy loss.
 
-(c) At $t = 0$$C_2$ is uncharged (zero voltage) and $C_1$ is at $50\,\text{V}$So the full voltage difference appears across $R$:
+(c) At $t = 0$$C_2$ is uncharged (zero voltage) and $C_1$ is at $50\,\text{V}$So the full voltage
+difference appears across $R$:
 
 $$I_0 = \frac{V_1}{R} = \frac{50}{100} = 0.50\,\text{A}$$
 
-The time constant for the discharge: $\tau = R \times \frac{C_1 C_2}{C_1 + C_2} = 100 \times \frac◆LB◆10 \times 40◆RB◆◆LB◆50◆RB◆ \times 10^{-6} = 100 \times 8 \times 10^{-6} = 8.0 \times 10^{-4}\,\text{s}$
+The time constant for the discharge:
+$\tau = R \times \frac{C_1 C_2}{C_1 + C_2} = 100 \times \frac◆LB◆10 \times 40◆RB◆◆LB◆50◆RB◆ \times 10^{-6} = 100 \times 8 \times 10^{-6} = 8.0 \times 10^{-4}\,\text{s}$
 
-Total energy dissipated in the resistor $= 10.0\,\text{mJ}$ (same as the energy lost, regardless of $R$).
+Total energy dissipated in the resistor $= 10.0\,\text{mJ}$ (same as the energy lost, regardless of
+$R$).
 
-This confirms that the energy loss is independent of the resistance value -- even with $R = 0$The same amount of energy would be lost (as radiation rather than heat).
+This confirms that the energy loss is independent of the resistance value -- even with $R = 0$The
+same amount of energy would be lost (as radiation rather than heat).

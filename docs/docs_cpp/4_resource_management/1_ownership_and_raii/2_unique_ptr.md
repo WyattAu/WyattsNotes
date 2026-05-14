@@ -1,6 +1,8 @@
 ---
 title: Unique Ownership (std::unique_ptr) and EBO
-description: "C++: Unique Ownership (std::unique_ptr) and EBO — 2.1 Definition; 2.2 Construction: `std::make_unique`; 2.3 Move-Only Semantics; 2.4 Custom Deleters."
+description:
+  'C++: Unique Ownership (std::unique_ptr) and EBO — 2.1 Definition; 2.2 Construction:
+  `std::make_unique`; 2.3 Move-Only Semantics; 2.4 Custom Deleters.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -8,6 +10,7 @@ categories:
   - Cpp
 slug: unique-ownership-and-ebo
 ---
+
 # Unique Ownership (std::unique_ptr) and EBO
 
 `std::unique_ptr` is the default smart pointer for exclusive ownership of heap-allocated objects. It
@@ -34,10 +37,10 @@ Always prefer `std::make_unique<T>(args...)` over `new T(args...)` [N4950 §20.1
 Are:
 
 1. **Exception safety:** `make_unique` performs a single allocation. Expressions like
- `f(unique_ptr<T>(new T), may_throw())` can leak if evaluation order causes `new T` to succeed but
- `may_throw()` throws before the `unique_ptr` is constructed.
+   `f(unique_ptr<T>(new T), may_throw())` can leak if evaluation order causes `new T` to succeed but
+   `may_throw()` throws before the `unique_ptr` is constructed.
 2. **No raw `new` exposure:** The `new` expression is hidden inside the factory, preventing
- accidental raw pointer use.
+   accidental raw pointer use.
 
 ```cpp
 #include <memory>
@@ -83,11 +86,9 @@ void transfer_demo() {
 }
 ```
 
-:::info
-Relevance Move-only semantics are the foundation of C++ ownership discipline. If a function
+:::info Relevance Move-only semantics are the foundation of C++ ownership discipline. If a function
 Takes a `unique_ptr` by value, the caller **must** explicitly transfer ownership with `std::move`.
-This makes the ownership transfer visible at the call site.
-:::
+This makes the ownership transfer visible at the call site. :::
 
 ## 2.4 Custom Deleters
 
@@ -154,10 +155,8 @@ void array_demo() {
 }
 ```
 
-:::warning
-`std::make_unique` with arrays initializes elements to value-initialization (zero for
-Built-in types). If you need non-zero initialization, use `std::vector` or construct manually.
-:::
+:::warning `std::make_unique` with arrays initializes elements to value-initialization (zero for
+Built-in types). If you need non-zero initialization, use `std::vector` or construct manually. :::
 
 ## 2.6 `unique_ptr` with Polymorphism
 
@@ -217,11 +216,9 @@ int main() {
 }
 ```
 
-:::warning
-If the base class lacks a virtual destructor, `delete base_ptr` where `base_ptr` actually
+:::warning If the base class lacks a virtual destructor, `delete base_ptr` where `base_ptr` actually
 Points to a derived object is undefined behavior [N4950 §11.7.3]. The derived destructor does not
-Run, leaking resources. Always use `virtual ~Base() = default;` in polymorphic base classes.
-:::
+Run, leaking resources. Always use `virtual ~Base() = default;` in polymorphic base classes. :::
 
 ## 2.7 `unique_ptr` as a Class Member
 
@@ -355,11 +352,9 @@ int main() {
 }
 ```
 
-:::info
-`std::vector<std::unique_ptr<T>>` provides stable pointers and references to elements (no
+:::info `std::vector<std::unique_ptr<T>>` provides stable pointers and references to elements (no
 Iterator invalidation on push_back amortized, only on reallocation). This makes it safe to hold raw
-Pointers to elements as long as no insertion triggers a reallocation.
-:::
+Pointers to elements as long as no insertion triggers a reallocation. :::
 
 ## 2.9 `unique_ptr` and Incomplete Types (Pimpl Idiom)
 
@@ -445,12 +440,10 @@ int main() {
 }
 ```
 
-:::warning
-If you write `~Widget() = default;` in the header (where `Impl` is incomplete), the
+:::warning If you write `~Widget() = default;` in the header (where `Impl` is incomplete), the
 Compiler generates the destructor body at each call site. The `delete impl_` call requires `Impl` to
 Be complete. This causes a compilation error. Always declare `~Widget();` in the header and define
-It (as `= default` or manually) in the `.cpp` file.
-:::
+It (as `= default` or manually) in the `.cpp` file. :::
 
 ## 2.10 `sizeof(unique_ptr)` Comparison Across Types
 
@@ -512,13 +505,13 @@ int main() {
 }
 ```
 
-| Deleter Type | State | `sizeof(unique_ptr&lt;int, D&gt;)` | EBO |
+| Deleter Type                    | State     | `sizeof(unique_ptr&lt;int, D&gt;)` | EBO |
 | ------------------------------- | --------- | ---------------------------------- | --- |
-| Default (`std::default_delete`) | Empty | 8 | Yes |
-| Empty stateless struct | Empty | 8 | Yes |
-| Lambda with 0 captures | Empty | 8 | Yes |
-| Lambda with 1 `int` capture | 4 bytes | 16 (aligned) | No |
-| `std::function` | ~40 bytes | ~48 | No |
+| Default (`std::default_delete`) | Empty     | 8                                  | Yes |
+| Empty stateless struct          | Empty     | 8                                  | Yes |
+| Lambda with 0 captures          | Empty     | 8                                  | Yes |
+| Lambda with 1 `int` capture     | 4 bytes   | 16 (aligned)                       | No  |
+| `std::function`                 | ~40 bytes | ~48                                | No  |
 
 ## 2.11 `make_unique` vs Raw `new`
 
@@ -587,11 +580,9 @@ int main() {
 }
 ```
 
-:::warning
-`release()` does not delete the managed object. It returns the raw pointer and sets the
+:::warning `release()` does not delete the managed object. It returns the raw pointer and sets the
 `unique_ptr` to null. The caller assumes responsibility for cleanup. Use `release()` only when you
-Are transferring ownership to another mechanism (e.g., a C API that takes ownership).
-:::
+Are transferring ownership to another mechanism (e.g., a C API that takes ownership). :::
 
 ## Common Pitfalls
 

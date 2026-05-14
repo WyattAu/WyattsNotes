@@ -1,6 +1,8 @@
 ---
 title: Further Algebra
-description: "A-Level Further Maths notes on Further Algebra: Board Coverage; 1. Polynomial Division and the Remainder Theorem; 1.1 Polynomial long division."
+description:
+  'A-Level Further Maths notes on Further Algebra: Board Coverage; 1. Polynomial Division and the
+  Remainder Theorem; 1.1 Polynomial long division.'
 date: 2026-04-02T00:00:00.000Z
 tags:
   - FurtherMaths
@@ -10,6 +12,7 @@ categories:
 slug: further-algebra
 sidebar_position: 3
 ---
+
 ## Further Algebra
 
 Further algebra builds on the polynomial and algebraic techniques from A Level mathematics,
@@ -19,12 +22,12 @@ Differences.
 
 ### Board Coverage
 
-| Board | Paper | Notes |
+| Board   | Paper   | Notes                                                    |
 | ------- | ------- | -------------------------------------------------------- |
-| AQA | Paper 1 | Further partial fractions; roots and coefficients |
-| Edexcel | FP1/FP2 | Summation of series; roots of polynomials |
-| OCR (A) | Paper 1 | All topics; summation of series emphasised |
-| CIE | P1/P3 | Summation of series required; partial fractions in depth |
+| AQA     | Paper 1 | Further partial fractions; roots and coefficients        |
+| Edexcel | FP1/FP2 | Summation of series; roots of polynomials                |
+| OCR (A) | Paper 1 | All topics; summation of series emphasised               |
+| CIE     | P1/P3   | Summation of series required; partial fractions in depth |
 
 <hr />
 
@@ -185,7 +188,7 @@ Comparing coefficients with $ax^3 + bx^2 + cx + d$:
 
 - $x^2$: $-a(\alpha + \beta + \gamma) = b \implies \alpha + \beta + \gamma = -\dfrac{b}{a}$
 - $x^1$:
- $a(\alpha\beta + \alpha\gamma + \beta\gamma) = c \implies \alpha\beta + \alpha\gamma + \beta\gamma = \dfrac{c}{a}$
+  $a(\alpha\beta + \alpha\gamma + \beta\gamma) = c \implies \alpha\beta + \alpha\gamma + \beta\gamma = \dfrac{c}{a}$
 - $x^0$: $-a\alpha\beta\gamma = d \implies \alpha\beta\gamma = -\dfrac{d}{a}$
 
 $\square$
@@ -510,8 +513,8 @@ $= 16 - 2S$ where $S = \alpha\beta + \alpha\gamma + \beta\gamma$.
 Without further information about the individual roots, $S$ cannot be determined uniquely. However,
 We know $p = -12$ and $q$ depends on $S$.
 
-If the question provides that the roots are integers: trying factors of $\dfrac{-4}{3}$The roots
-Are $1, 1, 2$ (checking: sum = 4 ✓, product = 2 ≠ $-4$ ✗). The roots $-1, 2, 3$ give sum = 4 ✓ and
+If the question provides that the roots are integers: trying factors of $\dfrac{-4}{3}$The roots Are
+$1, 1, 2$ (checking: sum = 4 ✓, product = 2 ≠ $-4$ ✗). The roots $-1, 2, 3$ give sum = 4 ✓ and
 Product = $-6$ ✗.
 
 $p = -12$ and $q = 3S$ where $S$ requires more information about the roots.
@@ -633,8 +636,8 @@ $$\frac{x^2 + 3x + 2}{(x^2 + 2x + 3)^2} = \frac{1}{x^2 + 2x + 3} + \frac{x - 1}{
 <hr />
 
 **Problem 10.** The cubic equation $x^3 + px^2 + qx + r = 0$ has roots $\alpha, \beta, \gamma$ where
-$\beta = 2\alpha$ and $\gamma = 3\alpha$. Express $p$$q$And $r$ in terms of $\alpha$And hence
-Find the roots when $p = -6$.
+$\beta = 2\alpha$ and $\gamma = 3\alpha$. Express $p$$q$And $r$ in terms of $\alpha$And hence Find
+the roots when $p = -6$.
 
 <details>
 <summary>Hint</summary>
@@ -710,8 +713,8 @@ As $n \to \infty$: $\displaystyle\sum_{r=1}^{\infty} \frac{1}{r(r+1)} = \boxed{1
 
 **Problem.** Prove by induction that $\displaystyle\sum_{r=1}^{n} r^2 = \frac{n(n+1)(2n+1)}{6}$.
 
-**Solution.** **Base case** ($n=1$): LHS $= 1$RHS
-$= \dfrac◆LB◆1 \cdot 2 \cdot 3◆RB◆◆LB◆6◆RB◆ = 1$. ✓
+**Solution.** **Base case** ($n=1$): LHS $= 1$RHS $= \dfrac◆LB◆1 \cdot 2 \cdot 3◆RB◆◆LB◆6◆RB◆ = 1$.
+✓
 
 **Inductive hypothesis:** Assume $\displaystyle\sum_{r=1}^{k} r^2 = \frac{k(k+1)(2k+1)}{6}$.
 
@@ -770,13 +773,13 @@ Similarly: $y = \dfrac{5}{3}$ and $z = \dfrac{1}{6}$.
 
 ## 9. Common Pitfalls
 
-| Pitfall | Correct Approach |
-| ----------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| Forgetting the condition $\|x\| < 1$ for binomial expansions | Always state the convergence condition explicitly |
-| Confusing $\displaystyle\sum_{r=1}^{n} r^3$ with $\left(\displaystyle\sum_{r=1}^{n} r\right)^3$ | $\sum r^3 = \dfrac{n^2(n+1)^2}{4}$; they happen to be equal but the reasoning is different |
-| Splitting partial fractions incorrectly for method of differences | Always check by recombining: $\dfrac{A}{r} + \dfrac{B}{r+1} = \dfrac{A(r+1) + Br}{r(r+1)}$ |
-| Assuming Vieta's formulae give $\alpha\beta\gamma = -d/a$ without checking the sign | For $ax^3+bx^2+cx+d=0$: $\alpha+\beta+\gamma=-b/a$$\alpha\beta+\beta\gamma+\gamma\alpha=c/a$$\alpha\beta\gamma=-d/a$ |
-| Skipping the base case in induction proofs | The base case is essential — without it the induction chain is unanchored |
+| Pitfall                                                                                         | Correct Approach                                                                                                     |
+| ----------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| Forgetting the condition $\|x\| < 1$ for binomial expansions                                    | Always state the convergence condition explicitly                                                                    |
+| Confusing $\displaystyle\sum_{r=1}^{n} r^3$ with $\left(\displaystyle\sum_{r=1}^{n} r\right)^3$ | $\sum r^3 = \dfrac{n^2(n+1)^2}{4}$; they happen to be equal but the reasoning is different                           |
+| Splitting partial fractions incorrectly for method of differences                               | Always check by recombining: $\dfrac{A}{r} + \dfrac{B}{r+1} = \dfrac{A(r+1) + Br}{r(r+1)}$                           |
+| Assuming Vieta's formulae give $\alpha\beta\gamma = -d/a$ without checking the sign             | For $ax^3+bx^2+cx+d=0$: $\alpha+\beta+\gamma=-b/a$$\alpha\beta+\beta\gamma+\gamma\alpha=c/a$$\alpha\beta\gamma=-d/a$ |
+| Skipping the base case in induction proofs                                                      | The base case is essential — without it the induction chain is unanchored                                            |
 
 ---
 
@@ -784,8 +787,8 @@ Similarly: $y = \dfrac{5}{3}$ and $z = \dfrac{1}{6}$.
 
 ### Question 8
 
-The binomial expansion of $(1 + ax)^{-2}$In ascending powers of $x$ up to and including the term
-In $x^3$Is $1 - 4x + 12x^2 + bx^3$. Find the values of $a$ and $b$.
+The binomial expansion of $(1 + ax)^{-2}$In ascending powers of $x$ up to and including the term In
+$x^3$Is $1 - 4x + 12x^2 + bx^3$. Find the values of $a$ and $b$.
 
 <details>
 <summary>Solution</summary>
@@ -900,15 +903,15 @@ Used extensively in integration and differentiation. See
 
 ## 12. Key Formulae Summary
 
-| Topic | Key Formula |
-| --------------------- | ------------------------------------------------------------------------------------------------ |
-| General binomial | $(1+x)^n = \displaystyle\sum_{k=0}^{\infty} \binom{n}{k}x^k$ for $\|x\| < 1$ |
-| Method of differences | Decompose $\dfrac{P(r)}{Q(r)}$ into partial fractions that telescope |
-| Induction | Base case $\to$ assume $P(k)$ $\to$ prove $P(k+1)$ |
-| Vieta's (cubic) | $\alpha+\beta+\gamma=-b/a$$\alpha\beta+\beta\gamma+\gamma\alpha=c/a$$\alpha\beta\gamma=-d/a$ |
-| Sum of squares | $\displaystyle\sum_{r=1}^{n} r^2 = \dfrac{n(n+1)(2n+1)}{6}$ |
-| Sum of cubes | $\displaystyle\sum_{r=1}^{n} r^3 = \dfrac{n^2(n+1)^2}{4}$ |
-| Harmonic sum | $H_n = \displaystyle\sum_{r=1}^{n} \dfrac{1}{r} \approx \ln n + \gamma$ |
+| Topic                 | Key Formula                                                                                  |
+| --------------------- | -------------------------------------------------------------------------------------------- |
+| General binomial      | $(1+x)^n = \displaystyle\sum_{k=0}^{\infty} \binom{n}{k}x^k$ for $\|x\| < 1$                 |
+| Method of differences | Decompose $\dfrac{P(r)}{Q(r)}$ into partial fractions that telescope                         |
+| Induction             | Base case $\to$ assume $P(k)$ $\to$ prove $P(k+1)$                                           |
+| Vieta's (cubic)       | $\alpha+\beta+\gamma=-b/a$$\alpha\beta+\beta\gamma+\gamma\alpha=c/a$$\alpha\beta\gamma=-d/a$ |
+| Sum of squares        | $\displaystyle\sum_{r=1}^{n} r^2 = \dfrac{n(n+1)(2n+1)}{6}$                                  |
+| Sum of cubes          | $\displaystyle\sum_{r=1}^{n} r^3 = \dfrac{n^2(n+1)^2}{4}$                                    |
+| Harmonic sum          | $H_n = \displaystyle\sum_{r=1}^{n} \dfrac{1}{r} \approx \ln n + \gamma$                      |
 
 ---
 

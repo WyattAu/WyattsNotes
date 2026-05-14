@@ -1,6 +1,8 @@
 ---
 title: Experimental Design
-description: "A-Level Physics notes on Experimental Design: Independent, Dependent, and Control Variables; Identifying Variables: Worked Examples; Control Variables in Depth."
+description:
+  'A-Level Physics notes on Experimental Design: Independent, Dependent, and Control Variables;
+  Identifying Variables: Worked Examples; Control Variables in Depth.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Physics
@@ -9,11 +11,10 @@ categories:
   - Physics
 slug: experimental-design
 ---
+
 ## Experimental Design
 
-:::info
-Board Coverage AQA Paper 3 | Edexcel CP6 | OCR (A) Paper 3 | CIE P5
-:::
+:::info Board Coverage AQA Paper 3 | Edexcel CP6 | OCR (A) Paper 3 | CIE P5 :::
 
 ## 1. Key Principles of Experimental Design
 
@@ -32,34 +33,32 @@ Independent variable.
 - **Independent variable**: the variable you deliberately change (e.g., length of wire)
 - **Dependent variable**: the variable you measure (e.g., resistance)
 - **Control variables**: variables you keep constant (e.g., temperature, material, cross-sectional
- area)
+  area)
 
 ### Identifying Variables: Worked Examples
 
 **Example 1 — Investigating `g` with a pendulum:**
 
-| Type | Variable | How it is controlled/changed |
+| Type        | Variable                      | How it is controlled/changed                    |
 | ----------- | ----------------------------- | ----------------------------------------------- |
-| Independent | Length of pendulum, $L$ | Vary with a metre rule from 0.2 m to 1.0 m |
-| Dependent | Period, $T$ | Measure with a stopwatch (time 20 oscillations) |
-| Control | Mass of bob | Use the same bob throughout |
-| Control | Amplitude (angle of release) | Keep below $5^\circ$ |
-| Control | String material and thickness | Use inextensible string |
+| Independent | Length of pendulum, $L$       | Vary with a metre rule from 0.2 m to 1.0 m      |
+| Dependent   | Period, $T$                   | Measure with a stopwatch (time 20 oscillations) |
+| Control     | Mass of bob                   | Use the same bob throughout                     |
+| Control     | Amplitude (angle of release)  | Keep below $5^\circ$                            |
+| Control     | String material and thickness | Use inextensible string                         |
 
 **Example 2 — Investigating the effect of temperature on the resistance of a thermistor:**
 
-| Type | Variable | How it is controlled/changed |
+| Type        | Variable           | How it is controlled/changed              |
 | ----------- | ------------------ | ----------------------------------------- |
-| Independent | Temperature, $T$ | Water bath, thermometer |
-| Dependent | Resistance, $R$ | Ohmmeter or voltmeter/ammeter method |
-| Control | Type of thermistor | Same component throughout |
-| Control | Immersion depth | Thermistor fully submerged at fixed depth |
-| Control | Heating rate | Heat slowly, allow thermal equilibrium |
+| Independent | Temperature, $T$   | Water bath, thermometer                   |
+| Dependent   | Resistance, $R$    | Ohmmeter or voltmeter/ammeter method      |
+| Control     | Type of thermistor | Same component throughout                 |
+| Control     | Immersion depth    | Thermistor fully submerged at fixed depth |
+| Control     | Heating rate       | Heat slowly, allow thermal equilibrium    |
 
-:::warning
-Common Pitfall Students often confuse the independent and dependent variables. A reliable
-Mnemonic: "I change the **I**ndependent variable, and I measure the **D**ependent variable."
-:::
+:::warning Common Pitfall Students often confuse the independent and dependent variables. A reliable
+Mnemonic: "I change the **I**ndependent variable, and I measure the **D**ependent variable." :::
 
 ### Control Variables in Depth
 
@@ -76,19 +75,17 @@ To the independent variable or the uncontrolled factor.
 2. **Standardised procedure** — e.g., always measuring from the same reference point
 3. **Matching conditions** — e.g., using the same equipment and setup for every trial
 4. **Monitoring and recording** — if a variable cannot be perfectly controlled, at least measure it
- so its effect can be assessed
+   so its effect can be assessed
 
-:::info
-Board Coverage AQA Paper 3 Section A | Edexcel CP6 (Core Practical 6) | OCR (A) PAG 1 | CIE
-Paper 5 Q1 (Planning)
-:::
+:::info Board Coverage AQA Paper 3 Section A | Edexcel CP6 (Core Practical 6) | OCR (A) PAG 1 | CIE
+Paper 5 Q1 (Planning) :::
 
 - **AQA** and **Edexcel** tend to ask students to identify variables from a given method. Practice
- reading a method description and extracting all three types.
+  reading a method description and extracting all three types.
 - **OCR (A)** PAG activities require students to write a full risk assessment, so control variables
- must be explicitly listed.
+  must be explicitly listed.
 - **CIE** Paper 5 explicitly marks the "control of variables" section, and examiners look for
- _methods_ of control, not just listing the variable name.
+  _methods_ of control, not just listing the variable name.
 
 :::
 
@@ -141,9 +138,9 @@ Reliability is fundamentally about **repeatability** and **reproducibility**. An
 Reliable if:
 
 - **Repeatability:** the same person, using the same equipment, under the same conditions, obtains
- the same results on repeated trials.
+  the same results on repeated trials.
 - **Reproducibility:** a different person, using different (but equivalent) equipment, can reproduce
- the same results.
+  the same results.
 
 **Quantifying reliability:** Calculate the spread of repeated measurements. If the standard
 Deviation is small relative to the mean, the results are reliable. For a small number of repeats,
@@ -158,23 +155,21 @@ Reliable — the variation is less than 1% of the mean.
 Validity has two aspects that examiners distinguish:
 
 1. **Internal validity:** Does the experiment isolate the effect of the independent variable on the
- dependent variable? This requires that all confounding variables are controlled. For example, in
- an experiment on the resistance of a wire, if the wire heats up as current flows, the changing
- temperature becomes a confounding variable that threatens internal validity.
+   dependent variable? This requires that all confounding variables are controlled. For example, in
+   an experiment on the resistance of a wire, if the wire heats up as current flows, the changing
+   temperature becomes a confounding variable that threatens internal validity.
 
 2. **External validity:** Can the results be generalised beyond the specific experimental
- conditions? For example, results obtained with a 1 mm copper wire may not apply to a 5 mm
- aluminium wire.
+   conditions? For example, results obtained with a 1 mm copper wire may not apply to a 5 mm
+   aluminium wire.
 
-:::info
-Board Coverage AQA Paper 3 | Edexcel CP6 | OCR (A) Paper 3 | CIE P5
-:::
+:::info Board Coverage AQA Paper 3 | Edexcel CP6 | OCR (A) Paper 3 | CIE P5 :::
 
 - **AQA** emphasises the distinction between validity and reliability in 6-mark practical questions.
 - **Edexcel** Core Practicals require students to comment on the validity of their conclusions.
 - **OCR (A)** PAG reports ask students to evaluate the validity of their method and results.
 - **CIE** Paper 5 marks validity through the "justification of the method" requirement — students
- must explain _why_ their approach is valid, not just state that it is.
+  must explain _why_ their approach is valid, not just state that it is.
 
 :::
 
@@ -200,8 +195,7 @@ Include:
 
 $$\boxed{\mathrm{True value} = \mathrm{measured value} \pm \mathrm{uncertainty}}$$
 
-:::warning
-Common Pitfall Do not confuse these three terms. An experiment can be reliable
+:::warning Common Pitfall Do not confuse these three terms. An experiment can be reliable
 (consistent) but invalid (measuring the wrong thing), or valid but inaccurate (systematic error).
 :::
 
@@ -226,7 +220,7 @@ When asked to design an experiment, address:
 
 - **Independent:** length of pendulum, $L$ (varied from 0.20 m to 1.00 m in 0.10 m steps)
 - **Dependent:** period of oscillation, $T$ (measured by timing 20 oscillations with a digital
- stopwatch)
+  stopwatch)
 - **Control:** mass of bob, amplitude of swing ($\lt{} 5^\circ$), string material
 
 **Method:**
@@ -256,24 +250,22 @@ When designing an experiment, choosing the correct range and interval for the in
 Is critical:
 
 - **Range:** Should be as wide as practical to maximise the spread of data points. A wider range
- produces a more reliable gradient. However, the range must stay within the valid region of the
- model (e.g., keep pendulum angles small).
+  produces a more reliable gradient. However, the range must stay within the valid region of the
+  model (e.g., keep pendulum angles small).
 - **Intervals:** Should be roughly evenly spaced. Aim for at least 6–8 data points. Smaller
- intervals near regions of rapid change can be useful (e.g., near a resonance peak).
+  intervals near regions of rapid change can be useful (e.g., near a resonance peak).
 - **Number of repeats:** At least 3 repeats at each value. If time allows, more repeats improve the
- reliability of the mean.
+  reliability of the mean.
 
-:::info
-Board Coverage AQA Paper 3 Section A | Edexcel CP6 | OCR (A) PAG | CIE P5
-:::
+:::info Board Coverage AQA Paper 3 Section A | Edexcel CP6 | OCR (A) PAG | CIE P5 :::
 
 - **AQA** often provides a method and asks students to identify improvements — focus on range,
- intervals, and repeats.
+  intervals, and repeats.
 - **Edexcel** Core Practicals have prescribed ranges; students should justify why the chosen range
- is appropriate.
+  is appropriate.
 - **OCR (A)** PAG reports require a detailed method with explicit ranges and intervals.
 - **CIE** Paper 5 Q1 requires students to specify a range with at least 5 values and justify the
- choice of measuring instruments.
+  choice of measuring instruments.
 
 :::
 
@@ -281,18 +273,18 @@ Board Coverage AQA Paper 3 Section A | Edexcel CP6 | OCR (A) PAG | CIE P5
 
 ### Measuring Instruments
 
-| Instrument | Typical Range | Resolution | Common Use |
+| Instrument       | Typical Range                  | Resolution        | Common Use                  |
 | ---------------- | ------------------------------ | ----------------- | --------------------------- |
-| Metre rule | 0–100 cm | 1 mm | Lengths |
-| Vernier calipers | 0–15 cm | 0.01 mm | Internal/external diameters |
-| Micrometer | 0–25 mm | 0.001 mm | Wire diameters |
-| Digital balance | 0–200 g | 0.01 g | Mass |
-| Stopwatch | 0–60 min | 0.01 s | Time intervals |
-| Thermometer | $-10$ to $110^\circ\mathrm{C}$ | 1°C or 0.1°C | Temperature |
-| Voltmeter | 0–20 V | 0.01 V or 0.1 V | Potential difference |
-| Ammeter | 0–10 A | 0.01 A or 0.1 A | Current |
-| Signal generator | 1 Hz – 1 MHz | 1 Hz | AC frequency |
-| Data logger | Various | Depends on sensor | Continuous recording |
+| Metre rule       | 0–100 cm                       | 1 mm              | Lengths                     |
+| Vernier calipers | 0–15 cm                        | 0.01 mm           | Internal/external diameters |
+| Micrometer       | 0–25 mm                        | 0.001 mm          | Wire diameters              |
+| Digital balance  | 0–200 g                        | 0.01 g            | Mass                        |
+| Stopwatch        | 0–60 min                       | 0.01 s            | Time intervals              |
+| Thermometer      | $-10$ to $110^\circ\mathrm{C}$ | 1°C or 0.1°C      | Temperature                 |
+| Voltmeter        | 0–20 V                         | 0.01 V or 0.1 V   | Potential difference        |
+| Ammeter          | 0–10 A                         | 0.01 A or 0.1 A   | Current                     |
+| Signal generator | 1 Hz – 1 MHz                   | 1 Hz              | AC frequency                |
+| Data logger      | Various                        | Depends on sensor | Continuous recording        |
 
 ### Choosing the Right Instrument
 
@@ -340,21 +332,21 @@ A risk assessment follows four steps:
 
 | Likelihood / Severity | Minor (e.g., small burn) | Moderate (e.g., electric shock) | Severe (e.g., eye damage) |
 | --------------------- | ------------------------ | ------------------------------- | ------------------------- |
-| **Unlikely** | Low | Medium | High |
-| **Possible** | Medium | High | Very High |
-| **Likely** | High | Very High | Unacceptable |
+| **Unlikely**          | Low                      | Medium                          | High                      |
+| **Possible**          | Medium                   | High                            | Very High                 |
+| **Likely**            | High                     | Very High                       | Unacceptable              |
 
 ### Common Hazards in Physics Practicals
 
-| Hazard | Risk | Control Measures |
+| Hazard                       | Risk                          | Control Measures                                           |
 | ---------------------------- | ----------------------------- | ---------------------------------------------------------- |
-| Hot water / water bath | Scalding | Use heat-resistant gloves, warning signs |
-| Mains electricity | Electric shock, electrocution | Check insulation, use low-voltage supplies |
-| Laser (Class 2) | Eye damage | Never look directly at beam, wear laser goggles |
-| Radioactive sources | Radiation exposure | Use tongs, minimise exposure time, store in lead-lined box |
-| Heavy objects (e.g., masses) | Crushing injury | Secure clamp stands, keep feet clear |
-| Sharp wire ends | Cuts | File ends smooth, handle with care |
-| Oscilloscope / CRO | Electric shock | Check connections before powering on |
+| Hot water / water bath       | Scalding                      | Use heat-resistant gloves, warning signs                   |
+| Mains electricity            | Electric shock, electrocution | Check insulation, use low-voltage supplies                 |
+| Laser (Class 2)              | Eye damage                    | Never look directly at beam, wear laser goggles            |
+| Radioactive sources          | Radiation exposure            | Use tongs, minimise exposure time, store in lead-lined box |
+| Heavy objects (e.g., masses) | Crushing injury               | Secure clamp stands, keep feet clear                       |
+| Sharp wire ends              | Cuts                          | File ends smooth, handle with care                         |
+| Oscilloscope / CRO           | Electric shock                | Check connections before powering on                       |
 
 ### Writing a Risk Assessment for an Exam
 
@@ -363,28 +355,24 @@ When asked to write a risk assessment, structure your answer as follows:
 1. **State the hazard ** — "The mains electricity supply poses a risk of electric shock."
 2. **State the severity** — "This could cause serious injury or death."
 3. **Describe the control measure** — "Use a low-voltage (e.g., 12 V) power supply instead of mains,
- and ensure all connections are insulated."
+   and ensure all connections are insulated."
 
-:::info
-Board Coverage AQA Paper 3 | Edexcel CP1–CP12 | OCR (A) PAG (all) | CIE P5
-:::
+:::info Board Coverage AQA Paper 3 | Edexcel CP1–CP12 | OCR (A) PAG (all) | CIE P5 :::
 
 - **AQA** requires a risk assessment as part of the 12 required practicals. Risk assessments are
- assessed in written papers.
+  assessed in written papers.
 - **Edexcel** Core Practicals include risk assessment in the student lab book. Exams may ask
- students to complete a risk assessment table.
+  students to complete a risk assessment table.
 - **OCR (A)** PAG reports _must_ include a risk assessment section. Examiners check that hazards are
- realistic and control measures are specific.
-- **CIE** Paper 5 Q1 includes a "safety" sub-question worth 1–2 marks. Students must name
- a specific hazard _and_ a corresponding precaution.
+  realistic and control measures are specific.
+- **CIE** Paper 5 Q1 includes a "safety" sub-question worth 1–2 marks. Students must name a specific
+  hazard _and_ a corresponding precaution.
 
 :::
 
-:::warning
-Common Pitfall Do not list trivial risks (e.g., "tripping over a bag") when more serious
+:::warning Common Pitfall Do not list trivial risks (e.g., "tripping over a bag") when more serious
 Hazards exist. Examiners award marks for identifying the _most significant_ hazards and providing
-Specific, practical control measures. "Be careful" is never an acceptable control measure.
-:::
+Specific, practical control measures. "Be careful" is never an acceptable control measure. :::
 
 ## 5. Evaluating Experiments
 
@@ -400,10 +388,10 @@ When asked to evaluate an experiment:
 When evaluating, you must distinguish between the two types of error:
 
 - **Random errors** cause scatter in data points. They are reduced by repeating measurements and
- averaging. Evidence of random error: data points do not lie exactly on the line of best fit.
+  averaging. Evidence of random error: data points do not lie exactly on the line of best fit.
 - **Systematic errors** shift all readings in the same direction. They are _not_ reduced by
- averaging. Evidence of systematic error: the line of best fit does not pass through the origin
- when it should, or the gradient differs from the accepted value.
+  averaging. Evidence of systematic error: the line of best fit does not pass through the origin
+  when it should, or the gradient differs from the accepted value.
 
 **Example.** In a resistivity experiment, a student plots $R$ vs $L$ and finds the line of best fit
 Has a non-zero y-intercept. This indicates a systematic error — likely contact resistance at the
@@ -414,13 +402,13 @@ Crocodile clips. The intercept represents this fixed resistance.
 When a graph is plotted, check:
 
 1. **Does the line pass through the origin?** If the theory predicts it should, a non-zero intercept
- indicates a systematic error.
+   indicates a systematic error.
 2. **Are all points close to the line of best fit?** Large deviations suggest random errors or
- anomalous results.
+   anomalous results.
 3. **Does the gradient match the expected value?** A discrepancy suggests either a systematic error
- or an uncontrolled variable.
+   or an uncontrolled variable.
 4. **Is there evidence of curvature?** This may indicate that the assumed relationship is not valid
- over the chosen range.
+   over the chosen range.
 
 ### Common Experimental Contexts
 
@@ -447,7 +435,7 @@ When a graph is plotted, check:
 - Release a card through a light gate; measure the velocity at different fall distances
 - Plot $v^2$ vs $h$; gradient $= 2g$
 - Largest uncertainty: the height measurement and ensuring the card is released without an initial
- velocity
+  velocity
 
 **Investigating the emf and internal resistance of a cell:**
 
@@ -461,40 +449,47 @@ When a graph is plotted, check:
 - Plot $\lambda$ vs $1/f$; gradient $= v$ (wave speed)
 - Largest uncertainty: measuring wavelength from a frozen ripple pattern
 
-:::info
-Board Coverage AQA Paper 3 | Edexcel CP6, CP9 | OCR (A) PAG 2, PAG 3 | CIE P5
-:::
+:::info Board Coverage AQA Paper 3 | Edexcel CP6, CP9 | OCR (A) PAG 2, PAG 3 | CIE P5 :::
 
 - **AQA** Required Practical 5 uses a falling object to determine `g`; Required Practical 8 uses a
- potentiometer or voltmeter/ammeter method for internal resistance.
+  potentiometer or voltmeter/ammeter method for internal resistance.
 - **Edexcel** Core Practical 6 uses a pendulum for `g`; Core Practical 9 investigates waves on a
- string.
+  string.
 - **OCR (A)** PAG 2 covers mechanics experiments (including `g`); PAG 3 covers electrical
- experiments.
+  experiments.
 - **CIE** Paper 5 Q2 often asks students to analyse data from a provided experiment — knowing common
- experimental contexts helps you spot the relationship between variables quickly.
+  experimental contexts helps you spot the relationship between variables quickly.
 
 :::
 
-:::tip
-Exam Technique When asked "how could you improve this experiment?", always be specific.
+:::tip Exam Technique When asked "how could you improve this experiment?", always be specific.
 Instead of "use a more accurate instrument", say "use a micrometer instead of a ruler to measure the
-Wire diameter, reducing the uncertainty from $\pm 0.5$ mm to $\pm 0.005$ mm."
+Wire diameter, reducing the uncertainty from $\pm 0.5$ mm to $\pm 0.005$ mm." :::
+
+:::danger Common Pitfalls
+
+- **Stating "repeat and average" without explaining why:** saying you will repeat readings is
+  insufficient. You must explain that repeating and averaging REDUCES THE EFFECT OF RANDOM ERRORS.
+  It does NOT reduce systematic errors (which affect all readings equally). Distinguish between
+  these two types of error in your answer.
+
+- **Confusing precision with accuracy:** Precision refers to the consistency of repeated
+  measurements (small spread). Accuracy refers to how close the mean value is to the true value. You
+  can have high precision but low accuracy (consistent but wrong readings due to a systematic error
+  like a zero offset).
+
+- **Forgetting to discuss control variables:** When designing an experiment, you must identify and
+  explain how you will keep all variables constant EXCEPT the independent variable. Listing them is
+  not enough -- explain HOW you control each one (e.g., "use the same wire throughout to keep
+  material constant").
+
+- **Writing an insufficient evaluation:** A good evaluation does not just list errors -- it
+  identifies SPECIFIC sources of error in the particular experiment, estimates their MAGNITUDE and
+  DIRECTION (does each error make the result too high or too low?), and suggests specific
+  IMPROVEMENTS. Vague statements like "human error" score few marks.
+
 :::
 
-
-:::danger
-Common Pitfalls
-
-- **Stating "repeat and average" without explaining why:** saying you will repeat readings is insufficient. You must explain that repeating and averaging REDUCES THE EFFECT OF RANDOM ERRORS. It does NOT reduce systematic errors (which affect all readings equally). Distinguish between these two types of error in your answer.
-
-- **Confusing precision with accuracy:** Precision refers to the consistency of repeated measurements (small spread). Accuracy refers to how close the mean value is to the true value. You can have high precision but low accuracy (consistent but wrong readings due to a systematic error like a zero offset).
-
-- **Forgetting to discuss control variables:** When designing an experiment, you must identify and explain how you will keep all variables constant EXCEPT the independent variable. Listing them is not enough -- explain HOW you control each one (e.g., "use the same wire throughout to keep material constant").
-
-- **Writing an insufficient evaluation:** A good evaluation does not just list errors -- it identifies SPECIFIC sources of error in the particular experiment, estimates their MAGNITUDE and DIRECTION (does each error make the result too high or too low?), and suggests specific IMPROVEMENTS. Vague statements like "human error" score few marks.
-
-:::
 ## Problem Set
 
 <details>
@@ -567,10 +562,10 @@ A student obtains data points that do not lie on a straight line when plotting $
 A pendulum. Suggest three possible reasons and how to investigate each.
 
 **Answer.** (1) **Large angle oscillations**: the formula $T = 2\pi\sqrt{L/g}$ assumes small angles.
-For angles $> 10^\circ$The period increases. Solution: use smaller angles ($< 5^\circ$) and
-Repeat. (2) **String not ideal**: the string may stretch or have mass. Solution: use a lighter,
-Inextensible string. (3) **Air resistance**: damping affects the period at large amplitudes.
-Solution: use a denser bob to minimise air resistance effects.
+For angles $> 10^\circ$The period increases. Solution: use smaller angles ($< 5^\circ$) and Repeat.
+(2) **String not ideal**: the string may stretch or have mass. Solution: use a lighter, Inextensible
+string. (3) **Air resistance**: damping affects the period at large amplitudes. Solution: use a
+denser bob to minimise air resistance effects.
 
 <b>If you get this wrong, revise:</b> [Evaluating Experiments](#5-evaluating-experiments)
 
@@ -622,10 +617,10 @@ Diffraction. The laser is directed at a slit, and the diffraction pattern is obs
 
 **Answer.**
 
-| Hazard | Who is at risk | Risk level | Control measures |
+| Hazard               | Who is at risk       | Risk level | Control measures                                                                                                                                                              |
 | -------------------- | -------------------- | ---------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Laser beam | Experimenter, others | High | Never look directly at the beam or its reflection; wear laser safety goggles; ensure beam is below eye level; place a beam stop behind the screen; remove reflective surfaces |
-| Electrical equipment | Experimenter | Low | Check mains connections are insulated; keep liquids away from the laser power supply |
+| Laser beam           | Experimenter, others | High       | Never look directly at the beam or its reflection; wear laser safety goggles; ensure beam is below eye level; place a beam stop behind the screen; remove reflective surfaces |
+| Electrical equipment | Experimenter         | Low        | Check mains connections are insulated; keep liquids away from the laser power supply                                                                                          |
 
 <b>If you get this wrong, revise:</b> [Risk Assessment](#4-risk-assessment)
 
@@ -664,20 +659,20 @@ Valid.
 
 - **Independent:** applied load (force $F$), varied by adding slotted masses
 - **Dependent:** extension $\Delta L$Measured with a vernier scale or scribe mark on a reference
- scale
+  scale
 - **Control:** wire material and cross-sectional area, temperature, method of measuring extension
 
 **Method:**
 
 1. Measure the diameter of the wire at several points using a micrometer. Calculate the mean
- diameter $d$ and cross-sectional area $A = \pi d^2/4$.
+   diameter $d$ and cross-sectional area $A = \pi d^2/4$.
 2. Clamp the wire vertically and add a small initial load to straighten it (this load is not
- counted).
+   counted).
 3. Measure the original length $L$ from the clamp to the reference point.
 4. Add masses in 100 g increments. At each mass, wait 30 s for the wire to stabilise, then record
- the extension.
+   the extension.
 5. Continue until the elastic limit is approached (check by removing masses to see if the wire
- returns to its original length).
+   returns to its original length).
 6. Plot stress ($F/A$) against strain ($\Delta L/L$). The gradient is the Young modulus $E$.
 
 **Reliability:** Repeat the experiment twice with the same wire. Compare gradients.

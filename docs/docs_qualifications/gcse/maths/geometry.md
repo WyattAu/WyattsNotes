@@ -1,6 +1,8 @@
 ---
 title: Geometry
-description: "Geometry — 1. Angle Properties; 1.1 Basic Angle Facts; 1.2 Angles in Parallel Lines; 1.3 Angles in Polygons with worked examples and exam-style questions."
+description:
+  'Geometry — 1. Angle Properties; 1.1 Basic Angle Facts; 1.2 Angles in Parallel Lines; 1.3 Angles
+  in Polygons with worked examples and exam-style questions.'
 date: 2026-04-14
 tags:
   - Maths
@@ -9,29 +11,28 @@ categories:
   - Maths
 slug: geometry
 ---
+
 ## Geometry
 
-:::info
-Board Coverage AQA Paper 1 & 2 | Edexcel Paper 1 & 2 | OCR Paper 2 & 3 | WJEC Unit 2
-:::
+:::info Board Coverage AQA Paper 1 & 2 | Edexcel Paper 1 & 2 | OCR Paper 2 & 3 | WJEC Unit 2 :::
 
 ## 1. Angle Properties
 
 ### 1.1 Basic Angle Facts
 
-| Property | Statement |
+| Property                   | Statement            |
 | -------------------------- | -------------------- |
-| Angles on a straight line | Sum to $180^{\circ}$ |
-| Angles at a point | Sum to $360^{\circ}$ |
-| Vertically opposite angles | Are equal |
-| Angles in a triangle | Sum to $180^{\circ}$ |
-| Angles in a quadrilateral | Sum to $360^{\circ}$ |
+| Angles on a straight line  | Sum to $180^{\circ}$ |
+| Angles at a point          | Sum to $360^{\circ}$ |
+| Vertically opposite angles | Are equal            |
+| Angles in a triangle       | Sum to $180^{\circ}$ |
+| Angles in a quadrilateral  | Sum to $360^{\circ}$ |
 
 **Theorem (Angle sum of a triangle).** The interior angles of any triangle sum to $180^{\circ}$.
 
-**Proof.** Let triangle $\triangle ABC$ have vertices $A$$B$$C$. Draw a line through $C$
-Parallel to $AB$. Label the intersection points of this line with the exterior of the triangle as
-$D$ and $E$ (so $D$ is on the side of $B$ and $E$ is on the side of $A$).
+**Proof.** Let triangle $\triangle ABC$ have vertices $A$$B$$C$. Draw a line through $C$ Parallel to
+$AB$. Label the intersection points of this line with the exterior of the triangle as $D$ and $E$
+(so $D$ is on the side of $B$ and $E$ is on the side of $A$).
 
 By alternate angles: $\angle B = \angle BCD$ and $\angle A = \angle ACE$.
 
@@ -53,10 +54,10 @@ $180 + 180(n - 3) = 180(n - 2)^{\circ}$. $\blacksquare$
 
 ### 1.2 Angles in Parallel Lines
 
-| Type | Description |
+| Type                                   | Description          |
 | -------------------------------------- | -------------------- |
-| Corresponding angles (F-angles) | Equal |
-| Alternate angles (Z-angles) | Equal |
+| Corresponding angles (F-angles)        | Equal                |
+| Alternate angles (Z-angles)            | Equal                |
 | Co-interior (allied) angles (U-angles) | Sum to $180^{\circ}$ |
 
 **Worked Example.** In the diagram, line $AB$ is parallel to line $CD$. A transversal intersects
@@ -159,8 +160,8 @@ Bearing of $C$ from $A = 70^{\circ} + 33.2^{\circ} = 103.2^{\circ} \approx 103^{
 $$a^2 + b^2 = c^2$$
 
 **Proof (area-based).** Consider a square of side $(a + b)$. Place four identical right-angled
-Triangles inside, each with legs $a$ and $b$Arranged so that their hypotenuses form a smaller
-Square of side $c$ in the centre.
+Triangles inside, each with legs $a$ and $b$Arranged so that their hypotenuses form a smaller Square
+of side $c$ in the centre.
 
 The area of the large square equals the area of the four triangles plus the area of the inner
 Square:
@@ -188,11 +189,11 @@ The longest side is less than $90^{\circ}$).
 
 **Test for triangle type:**
 
-| Condition | Type |
+| Condition           | Type         |
 | ------------------- | ------------ |
-| $a^2 + b^2 = c^2$ | Right-angled |
-| $a^2 + b^2 \gt c^2$ | Acute |
-| $a^2 + b^2 \lt c^2$ | Obtuse |
+| $a^2 + b^2 = c^2$   | Right-angled |
+| $a^2 + b^2 \gt c^2$ | Acute        |
+| $a^2 + b^2 \lt c^2$ | Obtuse       |
 
 ### 2.2 SOH CAH TOA
 
@@ -238,8 +239,8 @@ Used when you know: an angle and its opposite side, plus one other angle or side
 Express the height as both $b \sin A$ and $a \sin B$. Setting equal: $b \sin A = a \sin B$Giving
 $\frac{a}{\sin A} = \frac{b}{\sin B}$. $\blacksquare$
 
-**Worked Example (Higher Tier).** In $\triangle ABC$$a = 10$ cm, $A = 45^{\circ}$
-$B = 70^{\circ}$. Find $b$.
+**Worked Example (Higher Tier).** In $\triangle ABC$$a = 10$ cm, $A = 45^{\circ}$ $B = 70^{\circ}$.
+Find $b$.
 
 $$\frac{b}{\sin 70^{\circ}} = \frac{10}{\sin 45^{\circ}}$$
 $$b = \frac{10 \sin 70^{\circ}}{\sin 45^{\circ}} = \frac{10 \times 0.9397}{0.7071} \approx 13.29 \mathrm{ cm{}$$
@@ -262,8 +263,8 @@ Used when you know: two sides and the included angle (to find the third side), o
 $$\cos A = \frac{25 + 49 - 64}{2 \times 5 \times 7} = \frac{10}{70} = \frac{1}{7}$$
 $$A = \cos^{-1}\!\left(\frac{1}{7}\right) = 81.8^{\circ} \mathrm{ (to 1 d.p.){}$$
 
-**Worked Example (Higher Tier).** In $\triangle ABC$$a = 12$ cm, $b = 8$ cm, $C = 60^{\circ}$.
-Find $c$.
+**Worked Example (Higher Tier).** In $\triangle ABC$$a = 12$ cm, $b = 8$ cm, $C = 60^{\circ}$. Find
+$c$.
 
 $$c^2 = 144 + 64 - 2 \times 12 \times 8 \times \cos 60^{\circ}$$ $$c^2 = 208 - 96 = 112$$
 $$c = \sqrt{112} = 4\sqrt{7} \approx 10.58 \mathrm{ cm{}$$
@@ -300,15 +301,15 @@ Finding a _side_, there is at most one solution.
 
 ### 3.1 Key Theorems
 
-| Theorem | Statement |
+| Theorem               | Statement                                                                                 |
 | --------------------- | ----------------------------------------------------------------------------------------- |
-| Centre and chord | The perpendicular from the centre to a chord bisects the chord |
-| Tangent and radius | A tangent is perpendicular to the radius at the point of contact |
-| Two tangents | Two tangents from an external point are equal in length |
-| Angle at centre | The angle at the centre is twice the angle at the circumference subtended by the same arc |
-| Angle in a semicircle | The angle in a semicircle is a right angle |
-| Cyclic quadrilateral | Opposite angles sum to $180^{\circ}$ |
-| Same segment | Angles in the same segment are equal |
+| Centre and chord      | The perpendicular from the centre to a chord bisects the chord                            |
+| Tangent and radius    | A tangent is perpendicular to the radius at the point of contact                          |
+| Two tangents          | Two tangents from an external point are equal in length                                   |
+| Angle at centre       | The angle at the centre is twice the angle at the circumference subtended by the same arc |
+| Angle in a semicircle | The angle in a semicircle is a right angle                                                |
+| Cyclic quadrilateral  | Opposite angles sum to $180^{\circ}$                                                      |
+| Same segment          | Angles in the same segment are equal                                                      |
 
 ### 3.2 Proof: Angle at Centre is Twice Angle at Circumference
 
@@ -378,8 +379,8 @@ Since $OA = OC$ (radii), $\triangle OAC$ is isosceles: $\angle OCA = \angle OAC 
 **Worked Example (Higher Tier).** $AB$ and $AC$ are tangents to a circle at points $B$ and $C$
 Respectively. Prove that $AB = AC$.
 
-Join $O$ to $A$$B$And $C$. Since $OB$ and $OC$ are radii, and tangents are perpendicular to
-Radii at the point of contact, $\angle OBA = \angle OCA = 90^{\circ}$.
+Join $O$ to $A$$B$And $C$. Since $OB$ and $OC$ are radii, and tangents are perpendicular to Radii at
+the point of contact, $\angle OBA = \angle OCA = 90^{\circ}$.
 
 $OA$ is common, and $OB = OC$ (radii). By RHS (right angle, hypotenuse, side),
 $\triangle OBA \cong
@@ -391,14 +392,14 @@ Therefore $AB = AC$. $\blacksquare$
 
 ### 4.1 2D Shapes
 
-| Shape | Area | Perimeter |
+| Shape         | Area                         | Perimeter                               |
 | ------------- | ---------------------------- | --------------------------------------- |
-| Rectangle | $l \times w$ | $2(l + w)$ |
-| Triangle | $\frac{1}{2}bh$ | Sum of sides |
-| Parallelogram | $bh$ | Sum of sides |
-| Trapezium | $\frac{1}{2}(a + b)h$ | Sum of sides |
-| Circle | $\pi r^2$ | $2\pi r$ (circumference) |
-| Sector | $\frac{\theta}{360} \pi r^2$ | Arc: $\frac{\theta}{360} \times 2\pi r$ |
+| Rectangle     | $l \times w$                 | $2(l + w)$                              |
+| Triangle      | $\frac{1}{2}bh$              | Sum of sides                            |
+| Parallelogram | $bh$                         | Sum of sides                            |
+| Trapezium     | $\frac{1}{2}(a + b)h$        | Sum of sides                            |
+| Circle        | $\pi r^2$                    | $2\pi r$ (circumference)                |
+| Sector        | $\frac{\theta}{360} \pi r^2$ | Arc: $\frac{\theta}{360} \times 2\pi r$ |
 
 **Proof of the area of a trapezium.** A trapezium with parallel sides $a$ and $b$ and height $h$ can
 Be divided into a rectangle and two triangles. The rectangle has area $ah$ and the two triangles
@@ -408,13 +409,13 @@ $ah + (b-a)h = bh - ah + ah
 
 ### 4.2 3D Shapes
 
-| Shape | Volume | Surface Area |
-| -------- | ---------------------------------------------- | ---------------------------------------------- |
-| Cuboid | $lwh$ | $2(lw + lh + wh)$ |
-| Cylinder | $\pi r^2 h$ | $2\pi r^2 + 2\pi rh$ |
-| Sphere | $\frac{4}{3}\pi r^3$ | $4\pi r^2$ |
-| Cone | $\frac{1}{3}\pi r^2 h$ | $\pi r l + \pi r^2$ (where $l$ = slant height) |
-| Pyramid | $\frac{1}{3} \times \mathrm{base area{} \times h$ | Base area + triangular faces |
+| Shape    | Volume                                            | Surface Area                                   |
+| -------- | ------------------------------------------------- | ---------------------------------------------- |
+| Cuboid   | $lwh$                                             | $2(lw + lh + wh)$                              |
+| Cylinder | $\pi r^2 h$                                       | $2\pi r^2 + 2\pi rh$                           |
+| Sphere   | $\frac{4}{3}\pi r^3$                              | $4\pi r^2$                                     |
+| Cone     | $\frac{1}{3}\pi r^2 h$                            | $\pi r l + \pi r^2$ (where $l$ = slant height) |
+| Pyramid  | $\frac{1}{3} \times \mathrm{base area{} \times h$ | Base area + triangular faces                   |
 
 **Worked Example.** A cylinder has radius 5 cm and height 12 cm. Find its volume and total surface
 Area.
@@ -455,16 +456,15 @@ Volume of frustum: $100\pi - \frac{100\pi}{27} = \frac{2600\pi}{27} \approx 302.
 
 ### 5.1 Types of Transformation
 
-| Transformation | Description |
+| Transformation | Description                                                 |
 | -------------- | ----------------------------------------------------------- |
-| Translation | Movement by a vector $\begin{pmatrix} x \\ y \end{pmatrix}$ |
-| Reflection | Mirror image across a line of reflection |
-| Rotation | Turned about a centre by an angle and direction |
-| Enlargement | Scaled from a centre by a scale factor |
+| Translation    | Movement by a vector $\begin{pmatrix} x \\ y \end{pmatrix}$ |
+| Reflection     | Mirror image across a line of reflection                    |
+| Rotation       | Turned about a centre by an angle and direction             |
+| Enlargement    | Scaled from a centre by a scale factor                      |
 
 **Worked Example.** Describe fully the transformation that maps $\triangle ABC$ with vertices at
-$(1, 2)$$(3, 5)$$(5, 2)$ to $\triangle A'B'C'$ with vertices at $(-1, -2)$$(-3, -5)$
-$(-5, -2)$.
+$(1, 2)$$(3, 5)$$(5, 2)$ to $\triangle A'B'C'$ with vertices at $(-1, -2)$$(-3, -5)$ $(-5, -2)$.
 
 $(1, 2) \to (-1, -2)$: the $x$-coordinate is negated and the $y$-coordinate is negated. This is a
 Reflection in the origin, which is equivalent to a rotation of $180^{\circ}$ about the origin.
@@ -481,8 +481,8 @@ $k\begin{pmatrix} a \\ b \end{pmatrix} = \begin{pmatrix} ka \\ kb \end{pmatrix}$
 
 **Magnitude:** $\left|\begin{pmatrix} a \\ b \end{pmatrix}\right| = \sqrt{a^2 + b^2}$
 
-**Parallel vectors:** $\mathbf{'\{'}a{'\}'}$ and $\mathbf{'\{'}b{'\}'}$ are parallel if $\mathbf{'\{'}a{'\}'} = k\mathbf{'\{'}b{'\}'}$ for
-Some scalar $k$.
+**Parallel vectors:** $\mathbf{'\{'}a{'\}'}$ and $\mathbf{'\{'}b{'\}'}$ are parallel if
+$\mathbf{'\{'}a{'\}'} = k\mathbf{'\{'}b{'\}'}$ for Some scalar $k$.
 
 **Worked Example.** Points $A$$B$And $C$ have position vectors
 $\begin{pmatrix} 2 \\ 3 \end{pmatrix}$$\begin{pmatrix} 8 \\ 7 \end{pmatrix}$And
@@ -499,7 +499,8 @@ The **position vector** of a point $P$ relative to an origin $O$ is $\overrighta
 
 The vector from $A$ to $B$ is $\overrightarrow{AB} = \overrightarrow{OB} - \overrightarrow{OA}$.
 
-The **midpoint** $M$ of $AB$ has position vector $\frac{1}{2}(\mathbf{'\{'}a{'\}'} + \mathbf{'\{'}b{'\}'})$.
+The **midpoint** $M$ of $AB$ has position vector
+$\frac{1}{2}(\mathbf{'\{'}a{'\}'} + \mathbf{'\{'}b{'\}'})$.
 
 **Worked Example (Higher Tier).** Point $P$ divides the line segment $AB$ in the ratio $2 : 3$. If
 $\overrightarrow{OA} = \begin{pmatrix} 1 \\ 4 \end{pmatrix}$ and
@@ -513,17 +514,15 @@ $$\overrightarrow{OP} = \overrightarrow{OA} + \frac{2}{5}\overrightarrow{AB} = \
 
 Triangles are **congruent** if they are identical in shape and size. The conditions are:
 
-| Condition | Abbreviation |
+| Condition                           | Abbreviation |
 | ----------------------------------- | ------------ |
-| Three sides equal | SSS |
-| Two sides and included angle | SAS |
-| Two angles and a corresponding side | AAS |
-| Right angle, hypotenuse, one side | RHS |
+| Three sides equal                   | SSS          |
+| Two sides and included angle        | SAS          |
+| Two angles and a corresponding side | AAS          |
+| Right angle, hypotenuse, one side   | RHS          |
 
-:::warning
-ASS (two sides and a non-included angle) is NOT a valid congruence condition. It can
-Produce two different triangles.
-:::
+:::warning ASS (two sides and a non-included angle) is NOT a valid congruence condition. It can
+Produce two different triangles. :::
 
 ### 6.2 Similar Triangles
 
@@ -555,23 +554,23 @@ Perimeter of larger $= 24 \times \frac{7}{4} = 42$ cm.
 ### 7.1 Standard Constructions
 
 - **Perpendicular bisector** of a line segment: using compasses, draw arcs from each endpoint, then
- join the intersection points.
+  join the intersection points.
 - **Angle bisector:** using compasses, draw arcs from the vertex, then from the intersection points
- with each arm.
+  with each arm.
 - **Perpendicular** from a point to a line: using compasses centered at the point, find two
- equidistant points on the line, then construct the perpendicular bisector.
+  equidistant points on the line, then construct the perpendicular bisector.
 - **Regular polygons:** constructed by dividing a circle into equal arcs.
 
 ### 7.2 Loci
 
 A **locus** is the set of all points satisfying a given condition.
 
-| Locus | Description |
+| Locus                       | Description            |
 | --------------------------- | ---------------------- |
-| Fixed distance from a point | Circle |
-| Fixed distance from a line | Two parallel lines |
+| Fixed distance from a point | Circle                 |
+| Fixed distance from a line  | Two parallel lines     |
 | Equidistant from two points | Perpendicular bisector |
-| Equidistant from two lines | Angle bisector |
+| Equidistant from two lines  | Angle bisector         |
 
 ### 7.3 Regions (Higher Tier)
 
@@ -623,24 +622,24 @@ Height: $h = \sqrt{6^2 - (3\sqrt{2})^2} = \sqrt{36 - 18} = \sqrt{18} = 3\sqrt{2}
 - **Misidentifying which sides are opposite/adjacent** in trigonometry. Draw and label the triangle.
 - **Using Pythagoras for non-right-angled triangles.** Use the sine or cosine rule instead.
 - **Confusing arc length and sector area formulas.** Arc length is a fraction of $2\pi r$; sector
- area is a fraction of $\pi r^2$.
+  area is a fraction of $\pi r^2$.
 - **Forgetting that the angle in the cosine rule must be the included angle** (between the two known
- sides).
+  sides).
 - **Mixing up similarity and congruence.** Congruent shapes are also similar, but similar shapes are
- not necessarily congruent.
+  not necessarily congruent.
 - **The ambiguous case of the sine rule.** When finding an angle, always check whether the
- supplementary angle is also valid.
+  supplementary angle is also valid.
 - **Forgetting the perpendicular bisector theorem.** Points on the perpendicular bisector are
- equidistant from both endpoints.
+  equidistant from both endpoints.
 - **Using the wrong scale factor for area or volume.** Area uses the square of the length scale
- factor; volume uses the cube.
+  factor; volume uses the cube.
 - **Calculating the exterior angle incorrectly.** The exterior angle is $\frac{360}{n}$Not
- $\frac{180}{n}$.
+  $\frac{180}{n}$.
 
 ## Practice Questions
 
 1. A regular hexagon and a regular octagon share a common side. Find the size of the angle between
- them.
+   them.
 
 2. In $\triangle ABC$$a = 12$ cm, $b = 9$ cm, and $B = 40^{\circ}$. Find angle $A$.
 
@@ -649,64 +648,63 @@ Height: $h = \sqrt{6^2 - (3\sqrt{2})^2} = \sqrt{36 - 18} = \sqrt{18} = 3\sqrt{2}
 4. A sector has radius 8 cm and angle $135^{\circ}$. Find its perimeter and area.
 
 5. Point $P$ divides the line segment $AB$ in the ratio $2 : 3$. If
- $\overrightarrow{OA} = \begin{pmatrix} 1 \\ 4 \end{pmatrix}$ and
- $\overrightarrow{OB} = \begin{pmatrix} 11 \\ 9 \end{pmatrix}$Find $\overrightarrow{OP}$.
+   $\overrightarrow{OA} = \begin{pmatrix} 1 \\ 4 \end{pmatrix}$ and
+   $\overrightarrow{OB} = \begin{pmatrix} 11 \\ 9 \end{pmatrix}$Find $\overrightarrow{OP}$.
 
 6. Two similar cones have heights in the ratio $3 : 5$. The volume of the smaller cone is 108
- cm$^3$. Find the volume of the larger cone.
+   cm$^3$. Find the volume of the larger cone.
 
-7. $A$$B$And $C$ are points on a circle with centre $O$. Angle $ABC = 55^{\circ}$. Find angle
- $AOC$.
+7. $A$$B$And $C$ are points on a circle with centre $O$. Angle $ABC = 55^{\circ}$. Find angle $AOC$.
 
 8. A triangle has sides 7 cm, 8 cm, and 10 cm. Determine whether it is acute, right-angled, or
- obtuse.
+   obtuse.
 
 9. Describe fully the single transformation that maps $\triangle ABC$ with vertices at $(1, 2)$
- $(3, 5)$$(5, 2)$ to $\triangle A'B'C'$ with vertices at $(-1, -2)$$(-3, -5)$$(-5, -2)$.
+   $(3, 5)$$(5, 2)$ to $\triangle A'B'C'$ with vertices at $(-1, -2)$$(-3, -5)$$(-5, -2)$.
 
 10. Find the area of a triangle with sides 13 cm, 14 cm, and 15 cm.
 
 11. Prove that the angle between a tangent and a chord equals the angle in the alternate segment.
 
 12. A frustum is formed by removing a cone of height 4 cm from the top of a cone of height 10 cm.
- Both cones have base radius 6 cm. Find the volume of the frustum.
+    Both cones have base radius 6 cm. Find the volume of the frustum.
 
-13. In $\triangle ABC$$\angle A = 30^{\circ}$$b = 8$ cm, $c = 5$ cm. Find the two possible
- values of $a$.
+13. In $\triangle ABC$$\angle A = 30^{\circ}$$b = 8$ cm, $c = 5$ cm. Find the two possible values of
+    $a$.
 
 14. Points $P$ and $Q$ have position vectors $\begin{pmatrix} 3 \\ -1 \end{pmatrix}$ and
- $\begin{pmatrix} 7 \\ 5 \end{pmatrix}$. Find the position vector of the midpoint of $PQ$ and the
- magnitude of $\overrightarrow{PQ}$.
+    $\begin{pmatrix} 7 \\ 5 \end{pmatrix}$. Find the position vector of the midpoint of $PQ$ and the
+    magnitude of $\overrightarrow{PQ}$.
 
 15. A cylinder and a cone have the same base radius and the same volume. If the cylinder has height
- 9 cm, find the height of the cone.
+    9 cm, find the height of the cone.
 
 16. Prove that the angle at the centre of a circle is twice the angle at the circumference.
 
 17. A regular polygon has each exterior angle of $24^{\circ}$. How many sides does it have? Find the
- sum of its interior angles.
+    sum of its interior angles.
 
 18. Find the shortest distance from the point $(1, 2, 3)$ to the $xy$-plane.
 
 19. Prove that the sum of the interior angles of a pentagon is $540^{\circ}$.
 
 20. A cone has slant height 10 cm and total surface area $165\pi$ cm$^2$. Find its radius and
- volume.
+    volume.
 
 21. Prove that the angle between a tangent and a chord equals the angle in the alternate segment.
 22. A regular hexagon is inscribed in a circle of radius 8 cm. Find the perimeter and area of the
- hexagon.
+    hexagon.
 23. Two circles have radii 5 cm and 3 cm, and their centres are 10 cm apart. Determine whether the
- circles intersect, are tangent, or are separate.
+    circles intersect, are tangent, or are separate.
 
 ### Extended Practice (Higher Tier)
 
 24. A cylinder and a cone have the same base radius and the same height. Prove that the volume of
- the cylinder is three times the volume of the cone.
+    the cylinder is three times the volume of the cone.
 
-25. Triangle $\triangle ABC$ has vertices at $(2, 3)$$(8, 7)$And $(6, 1)$. Find: (a) the length
- of side $AB$(b) the area of the triangle, (c) the equation of the line through $C$
- perpendicular to $AB$.
+25. Triangle $\triangle ABC$ has vertices at $(2, 3)$$(8, 7)$And $(6, 1)$. Find: (a) the length of
+    side $AB$(b) the area of the triangle, (c) the equation of the line through $C$ perpendicular to
+    $AB$.
 
 26. A sector of a circle has radius 12 cm and angle $75^\circ$. Find its perimeter and area.
 
@@ -717,7 +715,7 @@ Height: $h = \sqrt{6^2 - (3\sqrt{2})^2} = \sqrt{36 - 18} = \sqrt{18} = 3\sqrt{2}
 29. A sphere has surface area $144\pi$ cm$^2$. Find its volume.
 
 30. In $\triangle ABC$$AB = 8$ cm, $BC = 6$ cm, and $\angle ABC = 120^\circ$. Find the area of the
- triangle.
+    triangle.
 
 ## Summary
 

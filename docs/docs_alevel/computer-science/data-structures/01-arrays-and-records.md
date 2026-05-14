@@ -1,6 +1,8 @@
 ---
 title: Arrays and Records
-description: "A-Level Computer Science notes on Arrays and Records: 1. One-Dimensional Arrays; Definition; Memory Layout; Operations and Complexity."
+description:
+  'A-Level Computer Science notes on Arrays and Records: 1. One-Dimensional Arrays; Definition;
+  Memory Layout; Operations and Complexity.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - ComputerScience
@@ -9,6 +11,7 @@ categories:
   - ComputerScience
 slug: arrays-and-records
 ---
+
 ## 1. One-Dimensional Arrays
 
 ### Definition
@@ -20,8 +23,8 @@ Formally, an array $A$ of type $T$ with $n$ elements maps indices to memory:
 
 $$A: \{0, 1, \ldots, n-1\} \to \mathrm{Memory addresses}$$
 
-Where $A[i]$ is stored at base address $b + i \times s$And $s$ is the size (in bytes) of one
-Element of type $T$.
+Where $A[i]$ is stored at base address $b + i \times s$And $s$ is the size (in bytes) of one Element
+of type $T$.
 
 ### Memory Layout
 
@@ -42,13 +45,13 @@ Constant-time operations. No traversal is needed. $\square$
 Consider `int A[5] = {10, 20, 30, 40, 50}` where each `int` is 4 bytes and the base address is
 $b = 1000$:
 
-| Index | Value | Address |
+| Index | Value | Address   |
 | ----- | ----- | --------- |
-| 0 | 10 | 1000–1003 |
-| 1 | 20 | 1004–1007 |
-| 2 | 30 | 1008–1011 |
-| 3 | 40 | 1012–1015 |
-| 4 | 50 | 1016–1019 |
+| 0     | 10    | 1000–1003 |
+| 1     | 20    | 1004–1007 |
+| 2     | 30    | 1008–1011 |
+| 3     | 40    | 1012–1015 |
+| 4     | 50    | 1016–1019 |
 
 $A[3]$ is at $1000 + 3 \times 4 = 1012$. ✓
 
@@ -56,14 +59,14 @@ $A[3]$ is at $1000 + 3 \times 4 = 1012$. ✓
 
 ### Operations and Complexity
 
-| Operation | Time | Notes |
+| Operation     | Time             | Notes                          |
 | ------------- | ---------------- | ------------------------------ |
-| Access `A[i]` | $O(1)$ | Direct address calculation |
-| Search | $O(n)$ | Linear scan (unsorted) |
-| Search | $O(\log n)$ | Binary search (sorted) |
-| Insert at end | $O(1)$ amortised | Dynamic array |
-| Insert at $i$ | $O(n)$ | Must shift elements $i..n-1$ |
-| Delete at $i$ | $O(n)$ | Must shift elements $i+1..n-1$ |
+| Access `A[i]` | $O(1)$           | Direct address calculation     |
+| Search        | $O(n)$           | Linear scan (unsorted)         |
+| Search        | $O(\log n)$      | Binary search (sorted)         |
+| Insert at end | $O(1)$ amortised | Dynamic array                  |
+| Insert at $i$ | $O(n)$           | Must shift elements $i..n-1$   |
+| Delete at $i$ | $O(n)$           | Must shift elements $i+1..n-1$ |
 
 ### Python Implementation
 
@@ -188,13 +191,13 @@ class DynamicArray:
 
 ### Comparison
 
-| Property | Static Array | Dynamic Array |
+| Property     | Static Array      | Dynamic Array            |
 | ------------ | ----------------- | ------------------------ |
-| Size | Fixed at creation | Grows/shrinks at runtime |
-| Memory | Stack or data seg | Heap |
-| Access time | $O(1)$ | $O(1)$ |
-| Append | N/A (fixed size) | $O(1)$ amortised |
-| Memory waste | Exact allocation | Up to 2× allocated |
+| Size         | Fixed at creation | Grows/shrinks at runtime |
+| Memory       | Stack or data seg | Heap                     |
+| Access time  | $O(1)$            | $O(1)$                   |
+| Append       | N/A (fixed size)  | $O(1)$ amortised         |
+| Memory waste | Exact allocation  | Up to 2× allocated       |
 
 <hr />
 
@@ -236,11 +239,11 @@ Layout (on a 32-bit system with 4-byte alignment):
 
 | Offset | Field | Size | Padding |
 | ------ | ----- | ---- | ------- |
-| 0 | c | 1 | — |
-| 1–3 | — | 3 | padding |
-| 4–7 | x | 4 | — |
-| 8–9 | s | 2 | — |
-| 10–11 | — | 2 | padding |
+| 0      | c     | 1    | —       |
+| 1–3    | —     | 3    | padding |
+| 4–7    | x     | 4    | —       |
+| 8–9    | s     | 2    | —       |
+| 10–11  | —     | 2    | padding |
 
 Total size: 12 bytes (not 7).
 
@@ -248,24 +251,22 @@ Total size: 12 bytes (not 7).
 
 ### Records vs Arrays
 
-| Property | Array | Record |
+| Property     | Array                    | Record                        |
 | ------------ | ------------------------ | ----------------------------- |
-| Element type | All elements same type | Fields can be different types |
-| Access | By integer index | By named field |
-| Size | Homogeneous | Heterogeneous |
-| Use case | Collections of same data | Grouping related attributes |
+| Element type | All elements same type   | Fields can be different types |
+| Access       | By integer index         | By named field                |
+| Size         | Homogeneous              | Heterogeneous                 |
+| Use case     | Collections of same data | Grouping related attributes   |
 
-:::info
-Board-specific
+:::info Board-specific
 
 - **AQA** distinguishes between static arrays (fixed size, compile-time) and dynamic arrays (runtime
- sizing)
+  sizing)
 - **CIE (9618)** covers 1D and 2D arrays, records (fields accessed with dot notation), but does not
- emphasise static vs dynamic distinction
+  emphasise static vs dynamic distinction
 - **OCR (A)** requires understanding of arrays, records, and file operations (sequential and random
- access files)
-- **Edexcel** covers arrays and records with pseudocode implementations
-:::
+  access files)
+- **Edexcel** covers arrays and records with pseudocode implementations :::
 
 <hr />
 
@@ -277,11 +278,9 @@ Before accessing the element.
 Without bounds checking, an out-of-bounds access reads or writes arbitrary memory — a **buffer
 Overflow** vulnerability.
 
-:::warning
-Pitfall In C and C++, array access is **not** bounds-checked by default. Accessing
+:::warning Pitfall In C and C++, array access is **not** bounds-checked by default. Accessing
 `A[-1]` or `A[n]` compiles but causes undefined behaviour. Python, Java, and C# perform automatic
-Bounds checking.
-:::
+Bounds checking. :::
 
 <hr />
 
@@ -393,20 +392,20 @@ Elements can the algorithm correctly conclude that $x$ is absent.
 
 </details>
 
-**Problem 8.** Given an array `A[10] = {3, 1, 4, 1, 5, 9, 2, 6, 5, 3}`Trace a linear search for
-The value 9 and count the number of comparisons made.
+**Problem 8.** Given an array `A[10] = {3, 1, 4, 1, 5, 9, 2, 6, 5, 3}`Trace a linear search for The
+value 9 and count the number of comparisons made.
 
 <details>
 <summary>Answer</summary>
 
-| Step | Index | A[index] | Comparison | Count |
+| Step | Index | A[index] | Comparison    | Count |
 | ---- | ----- | -------- | ------------- | ----- |
-| 1 | 0 | 3 | 3 ≠ 9 | 1 |
-| 2 | 1 | 1 | 1 ≠ 9 | 2 |
-| 3 | 2 | 4 | 4 ≠ 9 | 3 |
-| 4 | 3 | 1 | 1 ≠ 9 | 4 |
-| 5 | 4 | 5 | 5 ≠ 9 | 5 |
-| 6 | 5 | 9 | 9 = 9 → found | 6 |
+| 1    | 0     | 3        | 3 ≠ 9         | 1     |
+| 2    | 1     | 1        | 1 ≠ 9         | 2     |
+| 3    | 2     | 4        | 4 ≠ 9         | 3     |
+| 4    | 3     | 1        | 1 ≠ 9         | 4     |
+| 5    | 4     | 5        | 5 ≠ 9         | 5     |
+| 6    | 5     | 9        | 9 = 9 → found | 6     |
 
 Total comparisons: 6. The value 9 is at index 5.
 
@@ -485,15 +484,15 @@ Needed, and pad at the end to make the total a multiple of the largest alignment
 <details>
 <summary>Answer</summary>
 
-| Field | Size | Alignment | Offset | Padding before |
+| Field     | Size | Alignment | Offset | Padding before |
 | --------- | ---- | --------- | ------ | -------------- |
-| title | 30 | 8 | 0 | — |
-| (padding) | 2 | — | 30 | 2 bytes |
-| pages | 4 | 4 | 32 | — |
-| (padding) | 4 | — | 36 | 4 bytes |
-| price | 8 | 8 | 40 | — |
-| available | 1 | 1 | 48 | — |
-| (padding) | 7 | — | 49 | 7 bytes |
+| title     | 30   | 8         | 0      | —              |
+| (padding) | 2    | —         | 30     | 2 bytes        |
+| pages     | 4    | 4         | 32     | —              |
+| (padding) | 4    | —         | 36     | 4 bytes        |
+| price     | 8    | 8         | 40     | —              |
+| available | 1    | 1         | 48     | —              |
+| (padding) | 7    | —         | 49     | 7 bytes        |
 
 Total size: 56 bytes.
 
@@ -522,9 +521,9 @@ The `Student` record layout:
 
 - `name`: offset 0, 20 bytes
 - Padding: 2 bytes (to align `exam` to 4-byte boundary? Actually, `exam` is a record, and its
- alignment is determined by its most strictly aligned field. Both `subject` (char array,
- alignment 1) and `score` (int, alignment 4) give `exam` an alignment of 4. Offset 20 is divisible
- by 4, so no padding is needed.)
+  alignment is determined by its most strictly aligned field. Both `subject` (char array,
+  alignment 1) and `score` (int, alignment 4) give `exam` an alignment of 4. Offset 20 is divisible
+  by 4, so no padding is needed.)
 - `exam`: offset 20
 
 Within `exam`:
@@ -580,14 +579,14 @@ Implications for performance and memory efficiency.
 **Advantages of static arrays:**
 
 1. **Memory efficiency:** Exactly the required amount of memory is allocated — no wasted capacity. A
- static array of 50 elements uses precisely $50 \times s$ bytes.
+   static array of 50 elements uses precisely $50 \times s$ bytes.
 2. **Allocation speed:** No heap allocation overhead; memory is allocated at compile time on the
- stack (for local variables), which is faster than runtime heap allocation.
+   stack (for local variables), which is faster than runtime heap allocation.
 
 **Disadvantages of static arrays:**
 
 1. **Fixed size:** Cannot grow or shrink. If you need more elements, you must create a new array and
- copy (or pick a larger size upfront, wasting memory).
+   copy (or pick a larger size upfront, wasting memory).
 2. **Stack overflow risk:** Large static arrays stored on the stack can cause stack overflow. The
 Stack is limited (e.g., 1–8 MB), while the heap is much larger.
 </details>
@@ -720,9 +719,9 @@ Complexities.
 <details>
 <summary>Hint</summary>
 
-Consider which structure combines the need for indexed access, heterogeneous fields (name,
-Age, grades), and the ability to grow. Think about what "array of records" actually means — it
-Combines arrays and records.
+Consider which structure combines the need for indexed access, heterogeneous fields (name, Age,
+grades), and the ability to grow. Think about what "array of records" actually means — it Combines
+arrays and records.
 
 </details>
 
@@ -746,7 +745,7 @@ Memory or running out of space. A dynamic array grows automatically with $O(1)$ 
 
 - (a) Lookup by position: $O(1)$ — direct index access into the array
 - (b) Calculate average grade: $O(1)$ — access the record by index, then average over at most 10
- grades (constant)
+  grades (constant)
 - (c) Add new student at end: $O(1)$ amortised — dynamic array append
 
 A linked list would also support insertion but would not provide $O(1)$ access by position (it would

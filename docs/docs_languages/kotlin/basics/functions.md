@@ -1,6 +1,8 @@
 ---
 title: Functions
-description: "Functions — Function Declarations; Default Parameters; Mixing Positional and Named Arguments; Named Arguments with worked examples and exam-style questions."
+description:
+  'Functions — Function Declarations; Default Parameters; Mixing Positional and Named Arguments;
+  Named Arguments with worked examples and exam-style questions.'
 slug: functions
 date: 2026-04-18
 tags:
@@ -8,6 +10,7 @@ tags:
 categories:
   - Kotlin
 ---
+
 ## Function Declarations
 
 Kotlin uses the `fun` keyword. The return type follows the parameter list, separated by a colon.
@@ -312,15 +315,15 @@ fun processUser(user: User) {
 ## Common Pitfalls
 
 - \*\* Using `it` implicitly when the lambda context is unclear. Name the parameter explicitly when
- nesting lambdas or when `it` would be ambiguous.
+  nesting lambdas or when `it` would be ambiguous.
 - \*\* Capturing mutable variables in lambdas. Each captured variable is boxed, which adds
- allocation overhead in loops.
+  allocation overhead in loops.
 - \*\* Forgetting that extension functions are resolved statically. If you call an extension
- function on a variable declared as a supertype, the extension for the supertype is resolved, not
- the actual runtime type.
+  function on a variable declared as a supertype, the extension for the supertype is resolved, not
+  the actual runtime type.
 - \*\* Using `inline` on large functions or functions with many lambda parameters. This increases
- code size and can cause longer compilation times. Reserve `inline` for small, frequently called
- functions where the allocation overhead matters.
+  code size and can cause longer compilation times. Reserve `inline` for small, frequently called
+  functions where the allocation overhead matters.
 
 ## Summary
 

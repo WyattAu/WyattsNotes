@@ -1,6 +1,8 @@
 ---
 title: Hash Tables
-description: "A-Level Computer Science notes on Hash Tables: 1. Introduction; Definition; The Core Idea; 2. Hash Functions with worked examples and exam-style questions."
+description:
+  'A-Level Computer Science notes on Hash Tables: 1. Introduction; Definition; The Core Idea; 2.
+  Hash Functions with worked examples and exam-style questions.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - ComputerScience
@@ -9,6 +11,7 @@ categories:
   - ComputerScience
 slug: hash-tables
 ---
+
 ## 1. Introduction
 
 ### Definition
@@ -19,8 +22,8 @@ Delete, and search.
 
 ### The Core Idea
 
-Given a key $k$Compute $\mathrm{index} = h(k) \bmod m$Where $h$ is the hash function and $m$ is
-The table size. Store the key-value pair at this index.
+Given a key $k$Compute $\mathrm{index} = h(k) \bmod m$Where $h$ is the hash function and $m$ is The
+table size. Store the key-value pair at this index.
 
 <hr />
 
@@ -42,10 +45,7 @@ $$h(k) = k \bmod m$$
 **Choosing $m$.** Avoid powers of 2 (patterns in keys align with binary structure). Choose $m$ to be
 A **prime** not close to a power of 2.
 
-:::warning
-Warning
-The hash function will map many keys to the same bucket.
-:::
+:::warning Warning The hash function will map many keys to the same bucket. :::
 
 #### Multiplication Method
 
@@ -134,11 +134,11 @@ $\alpha = n/m$ (the **load factor**).
 **Proof.** By linearity of expectation, the expected number of keys in any particular bucket is
 $n \cdot (1/m) = n/m$. $\square$
 
-| Operation | Average case | Worst case |
+| Operation | Average case    | Worst case |
 | --------- | --------------- | ---------- |
-| Search | $O(1 + \alpha)$ | $O(n)$ |
-| Insert | $O(1)$ | $O(1)$ |
-| Delete | $O(1 + \alpha)$ | $O(n)$ |
+| Search    | $O(1 + \alpha)$ | $O(n)$     |
+| Insert    | $O(1)$          | $O(1)$     |
+| Delete    | $O(1 + \alpha)$ | $O(n)$     |
 
 **Theorem.** Chaining requires $O(n + m)$ total memory.
 
@@ -221,8 +221,8 @@ $$h(k, i) = (h'(k) + c_1 i + c_2 i^2) \bmod m$$
 Eliminates primary clustering but may cause **secondary clustering** (keys with the same initial
 Hash follow the same probe sequence).
 
-**Theorem.** If the table size $m$ is prime and the load factor $\alpha \lt{} 0.5$Quadratic
-Probing will always find an empty slot.
+**Theorem.** If the table size $m$ is prime and the load factor $\alpha \lt{} 0.5$Quadratic Probing
+will always find an empty slot.
 
 ### Double Hashing
 
@@ -246,8 +246,8 @@ Where $n$ is the number of stored keys and $m$ is the table size.
 
 ### Resizing (Rehashing)
 
-When $\alpha$ exceeds a threshold ( 0.7 for chaining, 0.5 for open addressing), allocate a
-New table of size $\approx 2m$ and rehash all keys.
+When $\alpha$ exceeds a threshold ( 0.7 for chaining, 0.5 for open addressing), allocate a New table
+of size $\approx 2m$ and rehash all keys.
 
 **Theorem.** Resizing maintains $O(1)$ amortised time per operation.
 
@@ -259,23 +259,21 @@ Per insertion: $O(1)$. $\square$
 
 ## 7. Comparison of Collision Resolution Methods
 
-| Property | Chaining | Linear Probing | Double Hashing |
+| Property          | Chaining        | Linear Probing    | Double Hashing   |
 | ----------------- | --------------- | ----------------- | ---------------- |
-| Memory | $O(n + m)$ | $O(m)$ | $O(m)$ |
-| Cache performance | Poor (pointers) | Good (contiguous) | Good |
-| Clustering | None | Primary | None |
-| Delete | $O(1)$ | Lazy deletion | Lazy deletion |
-| Load factor limit | No hard limit | $\alpha \lt{} 1$ | $\alpha \lt{} 1$ |
+| Memory            | $O(n + m)$      | $O(m)$            | $O(m)$           |
+| Cache performance | Poor (pointers) | Good (contiguous) | Good             |
+| Clustering        | None            | Primary           | None             |
+| Delete            | $O(1)$          | Lazy deletion     | Lazy deletion    |
+| Load factor limit | No hard limit   | $\alpha \lt{} 1$  | $\alpha \lt{} 1$ |
 
-:::info
-Board-specific
+:::info Board-specific
 
 - **AQA** requires understanding of hash functions, collision resolution (linear probing, quadratic
- probing, rehashing), and calculating hash table load factor
+  probing, rehashing), and calculating hash table load factor
 - **CIE (9618)** covers hashing and collision handling; may use different terminology
 - **OCR (A)** requires hash tables with collision resolution using linear probing and rehashing
-- **Edexcel** covers hash tables and collision resolution methods
-:::
+- **Edexcel** covers hash tables and collision resolution methods :::
 
 <hr />
 
@@ -311,19 +309,19 @@ $h(k) = k \bmod 11$
 
 | Key | Hash | Probe sequence | Final index |
 | --- | ---- | -------------- | ----------- |
-| 10 | 10 | 10 | 10 |
-| 22 | 0 | 0 | 0 |
-| 31 | 9 | 9 | 9 |
-| 4 | 4 | 4 | 4 |
-| 15 | 4 | 4, 5 | 5 |
-| 28 | 6 | 6 | 6 |
-| 17 | 6 | 6, 7 | 7 |
+| 10  | 10   | 10             | 10          |
+| 22  | 0    | 0              | 0           |
+| 31  | 9    | 9              | 9           |
+| 4   | 4    | 4              | 4           |
+| 15  | 4    | 4, 5           | 5           |
+| 28  | 6    | 6              | 6           |
+| 17  | 6    | 6, 7           | 7           |
 
 Final table:
 
-| Index | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
+| Index | 0   | 1   | 2   | 3   | 4   | 5   | 6   | 7   | 8   | 9   | 10  |
 | ----- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Key | 22 | — | — | — | 4 | 15 | 28 | 17 | — | 31 | 10 |
+| Key   | 22  | —   | —   | —   | 4   | 15  | 28  | 17  | —   | 31  | 10  |
 
 </details>
 
@@ -337,11 +335,11 @@ $h(k) = k \bmod 5$
 
 | Bucket | Keys (chain) |
 | ------ | ------------ |
-| 0 | 10 → 15 → 28 |
-| 1 | 31 |
-| 2 | 22 → 17 |
-| 3 | |
-| 4 | 4 |
+| 0      | 10 → 15 → 28 |
+| 1      | 31           |
+| 2      | 22 → 17      |
+| 3      |              |
+| 4      | 4            |
 
 Load factor: $\alpha = 7/5 = 1.4$.
 
@@ -384,13 +382,13 @@ For chaining.
 <details>
 <summary>Answer</summary>
 
-In open addressing, all keys are stored in the table itself. If $\alpha = n/m \geq 1$There are
-More keys than slots, making it impossible to store all keys (the table is full). With linear
-Probing, the search for an empty slot may never terminate.
+In open addressing, all keys are stored in the table itself. If $\alpha = n/m \geq 1$There are More
+keys than slots, making it impossible to store all keys (the table is full). With linear Probing,
+the search for an empty slot may never terminate.
 
 In chaining, each bucket can hold an arbitrary number of keys (via a linked list). The table never
-"fills up" — chains grow longer. However, performance degrades as $\alpha$ increases, since
-Search time is proportional to chain length.
+"fills up" — chains grow longer. However, performance degrades as $\alpha$ increases, since Search
+time is proportional to chain length.
 
 </details>
 
@@ -425,8 +423,8 @@ Load factor: $\alpha = 500/1000 = 0.5$.
 $1 + \frac◆LB◆\alpha◆RB◆◆LB◆2◆RB◆ - \frac◆LB◆\alpha◆RB◆◆LB◆2n◆RB◆ \approx 1 + \frac◆LB◆\alpha◆RB◆◆LB◆2◆RB◆ = 1 + 0.25 = 1.25$.
 
 More precisely: for successful search, we examine half the chain on average (the target is equally
-Likely to be at any position in the chain). Expected chain length = $\alpha = 0.5$So expected
-Probes = $1 + 0.5/2 = 1.25$.
+Likely to be at any position in the chain). Expected chain length = $\alpha = 0.5$So expected Probes
+= $1 + 0.5/2 = 1.25$.
 
 </details>
 
@@ -475,16 +473,16 @@ Division.
 
 $h(k) = k \bmod 13$:
 
-| Key | Calculation | Hash value |
+| Key | Calculation      | Hash value |
 | --- | ---------------- | ---------- |
-| 26 | 26 ÷ 13 = 2 r 0 | 0 |
-| 42 | 42 ÷ 13 = 3 r 3 | 3 |
-| 93 | 93 ÷ 13 = 7 r 2 | 2 |
-| 17 | 17 ÷ 13 = 1 r 4 | 4 |
-| 77 | 77 ÷ 13 = 5 r 12 | 12 |
-| 31 | 31 ÷ 13 = 2 r 5 | 5 |
-| 55 | 55 ÷ 13 = 4 r 3 | 3 |
-| 20 | 20 ÷ 13 = 1 r 7 | 7 |
+| 26  | 26 ÷ 13 = 2 r 0  | 0          |
+| 42  | 42 ÷ 13 = 3 r 3  | 3          |
+| 93  | 93 ÷ 13 = 7 r 2  | 2          |
+| 17  | 17 ÷ 13 = 1 r 4  | 4          |
+| 77  | 77 ÷ 13 = 5 r 12 | 12         |
+| 31  | 31 ÷ 13 = 2 r 5  | 5          |
+| 55  | 55 ÷ 13 = 4 r 3  | 3          |
+| 20  | 20 ÷ 13 = 1 r 7  | 7          |
 
 Note: 42 and 55 both hash to index 3 — a collision occurs.
 
@@ -538,15 +536,15 @@ Using modulo 7.
 
 $h(k) = k \bmod 7$
 
-| Key | $h(k)$ | Probe sequence | Final index |
+| Key | $h(k)$ | Probe sequence  | Final index |
 | --- | ------ | --------------- | ----------- |
-| 44 | 2 | 2 | 2 |
-| 17 | 3 | 3 | 3 |
-| 31 | 3 | 3 (occupied), 4 | 4 |
-| 88 | 4 | 4 (occupied), 5 | 5 |
-| 61 | 5 | 5 (occupied), 6 | 6 |
-| 5 | 5 | 5, 6, 0 | 0 |
-| 22 | 1 | 1 | 1 |
+| 44  | 2      | 2               | 2           |
+| 17  | 3      | 3               | 3           |
+| 31  | 3      | 3 (occupied), 4 | 4           |
+| 88  | 4      | 4 (occupied), 5 | 5           |
+| 61  | 5      | 5 (occupied), 6 | 6           |
+| 5   | 5      | 5, 6, 0         | 0           |
+| 22  | 1      | 1               | 1           |
 
 Step-by-step table states:
 
@@ -557,9 +555,9 @@ Inserting 22: `[5, 22, 44, 17, 31, 88, 61]`
 
 Final table:
 
-| Index | 0 | 1 | 2 | 3 | 4 | 5 | 6 |
+| Index | 0   | 1   | 2   | 3   | 4   | 5   | 6   |
 | ----- | --- | --- | --- | --- | --- | --- | --- |
-| Key | 5 | 22 | 44 | 17 | 31 | 88 | 61 |
+| Key   | 5   | 22  | 44  | 17  | 31  | 88  | 61  |
 
 </details>
 
@@ -610,21 +608,21 @@ $i = 0, 1, 2, 3, \ldots$). If the target index is occupied, try $(h'(k) + i^2) \
 
 $h'(k) = k \bmod 11$$h(k, i) = (h'(k) + i^2) \bmod 11$
 
-| Key | $h'(k)$ | Probe sequence ($i=0, 1, 2, \ldots$) | Final index |
+| Key | $h'(k)$ | Probe sequence ($i=0, 1, 2, \ldots$)              | Final index |
 | --- | ------- | ------------------------------------------------- | ----------- |
-| 19 | 8 | $(8+0)=8$ | 8 |
-| 36 | 3 | $(3+0)=3$ | 3 |
-| 50 | 6 | $(6+0)=6$ | 6 |
-| 5 | 5 | $(5+0)=5$ | 5 |
-| 69 | 3 | $(3+0)=3$ occupied, $(3+1)=4$ | 4 |
-| 14 | 3 | $(3+0)=3$ occupied, $(3+1)=4$ occupied, $(3+4)=7$ | 7 |
-| 75 | 9 | $(9+0)=9$ | 9 |
+| 19  | 8       | $(8+0)=8$                                         | 8           |
+| 36  | 3       | $(3+0)=3$                                         | 3           |
+| 50  | 6       | $(6+0)=6$                                         | 6           |
+| 5   | 5       | $(5+0)=5$                                         | 5           |
+| 69  | 3       | $(3+0)=3$ occupied, $(3+1)=4$                     | 4           |
+| 14  | 3       | $(3+0)=3$ occupied, $(3+1)=4$ occupied, $(3+4)=7$ | 7           |
+| 75  | 9       | $(9+0)=9$                                         | 9           |
 
 Final table:
 
-| Index | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
+| Index | 0   | 1   | 2   | 3   | 4   | 5   | 6   | 7   | 8   | 9   | 10  |
 | ----- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Key | — | — | — | 36 | 69 | 5 | 50 | 14 | 19 | 75 | — |
+| Key   | —   | —   | —   | 36  | 69  | 5   | 50  | 14  | 19  | 75  | —   |
 
 Load factor: $\alpha = 7/11 \approx 0.636$
 
@@ -657,20 +655,20 @@ Prime. Nearest prime ≥ 14 is 17. New $m = 17$.
 
 | Key | $k \bmod 17$ | Index |
 | --- | ------------ | ----- |
-| 14 | 14 | 14 |
-| 21 | 4 | 4 |
-| 7 | 7 | 7 |
-| 28 | 11 | 11 |
-| 35 | 1 | 1 |
-| 42 | 8 | 8 |
+| 14  | 14           | 14    |
+| 21  | 4            | 4     |
+| 7   | 7            | 7     |
+| 28  | 11           | 11    |
+| 35  | 1            | 1     |
+| 42  | 8            | 8     |
 
 No collisions occur with the new table size.
 
 **Final table (size 17):**
 
-| Index | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 16 |
+| Index | 0   | 1   | 2   | 3   | 4   | 5   | 6   | 7   | 8   | 9   | 10  | 11  | 12  | 13  | 14  | 16  |
 | ----- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Key | — | 35 | — | — | 21 | — | — | 7 | 42 | — | — | 28 | — | — | 14 | — |
+| Key   | —   | 35  | —   | —   | 21  | —   | —   | 7   | 42  | —   | —   | 28  | —   | —   | 14  | —   |
 
 New load factor: $\alpha = 6/17 \approx 0.353 < 0.7$ ✓
 
@@ -724,14 +722,14 @@ Probe sequences, memory usage, and deletion.
 <details>
 <summary>Answer</summary>
 
-| Aspect | Linear Probing | Chaining |
-| ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| **Best-case search** | $O(1)$ — key at its hash index | $O(1)$ — key is alone in its bucket |
-| **Worst-case search** | $O(n)$ — all keys cluster together | $O(n)$ — all keys hash to same bucket |
-| **Deletion** | Requires "lazy deletion" (mark slot as deleted, not empty). If emptied, search would break by stopping early at the gap. | $O(1)$ — remove node from linked list |
+| Aspect                 | Linear Probing                                                                                                                   | Chaining                                                                                                                                  |
+| ---------------------- | -------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| **Best-case search**   | $O(1)$ — key at its hash index                                                                                                   | $O(1)$ — key is alone in its bucket                                                                                                       |
+| **Worst-case search**  | $O(n)$ — all keys cluster together                                                                                               | $O(n)$ — all keys hash to same bucket                                                                                                     |
+| **Deletion**           | Requires "lazy deletion" (mark slot as deleted, not empty). If emptied, search would break by stopping early at the gap.         | $O(1)$ — remove node from linked list                                                                                                     |
 | **Load factor effect** | Performance degrades rapidly as $\alpha \to 1$. At $\alpha > 0.7$Clustering causes significant slowdown. Must keep $\alpha < 1$. | Performance degrades gradually. Chains grow linearly with $\alpha$. No hard upper limit on $\alpha$ (but should keep < 1 for efficiency). |
-| **Memory** | $O(m)$ — fixed array size | $O(n + m)$ — array + linked list nodes |
-| **Cache performance** | Good — contiguous memory access | Poor — following pointers to scattered nodes |
+| **Memory**             | $O(m)$ — fixed array size                                                                                                        | $O(n + m)$ — array + linked list nodes                                                                                                    |
+| **Cache performance**  | Good — contiguous memory access                                                                                                  | Poor — following pointers to scattered nodes                                                                                              |
 
 **Key trade-off:** Linear probing has better cache performance but suffers from clustering and
 Requires careful load factor management. Chaining is simpler to implement and handles deletion
@@ -766,16 +764,16 @@ $$h(\mathrm{isbn}) = (\mathrm{isbn} \bmod 100000) \bmod 10007$$
 
 - Taking the last 5 digits (`mod 100000`) gives values from 0–99999, which is manageable
 - Using a prime $m = 10007$ ensures good distribution (avoids patterns in ISBNs aligning with
- divisors of $m$)
+  divisors of $m$)
 - The function is $O(1)$ and deterministic
 
 **Worked examples:**
 
-| ISBN | Last 5 digits | $\bmod 100000$ | $\bmod 10007$ | Hash |
+| ISBN          | Last 5 digits | $\bmod 100000$ | $\bmod 10007$                                                | Hash |
 | ------------- | ------------- | -------------- | ------------------------------------------------------------ | ---- |
-| 9780132350884 | 50884 | 50884 | 50884 mod 10007 = 50884 − 5×10007 = 50884 − 50035 = **849** | 849 |
-| 9780596007126 | 07126 | 7126 | 7126 mod 10007 = **7126** | 7126 |
-| 9780201896831 | 96831 | 96831 | 96831 mod 10007 = 96831 − 9×10007 = 96831 − 90063 = **6768** | 6768 |
+| 9780132350884 | 50884         | 50884          | 50884 mod 10007 = 50884 − 5×10007 = 50884 − 50035 = **849**  | 849  |
+| 9780596007126 | 07126         | 7126           | 7126 mod 10007 = **7126**                                    | 7126 |
+| 9780201896831 | 96831         | 96831          | 96831 mod 10007 = 96831 − 9×10007 = 96831 − 90063 = **6768** | 6768 |
 
 This gives good distribution across the table. With $m = 10007$ and a load factor target of 0.7, the
 Table can hold approximately 7000 books before needing resizing.
@@ -807,21 +805,21 @@ First, then trace the probe sequence.
 
 $h_1(k) = k \bmod 11$$h_2(k) = 1 + (k \bmod 9)$
 
-| Key | $h_1(k)$ | $h_2(k)$ | Probe sequence ($h_1 + i \cdot h_2$) mod 11 | Final index |
+| Key | $h_1(k)$ | $h_2(k)$                   | Probe sequence ($h_1 + i \cdot h_2$) mod 11 | Final index |
 | --- | -------- | -------------------------- | ------------------------------------------- | ----------- |
-| 47 | 3 | $1+(47 \bmod 9) = 1+2 = 3$ | $(3+0)=3$ | 3 |
-| 25 | 3 | $1+(25 \bmod 9) = 1+7 = 8$ | $(3+0)=3$ occupied, $(3+8)=0$ | 0 |
-| 63 | 8 | $1+(63 \bmod 9) = 1+0 = 1$ | $(8+0)=8$ | 8 |
-| 14 | 3 | $1+(14 \bmod 9) = 1+5 = 6$ | $(3+0)=3$ occ, $(3+6)=9$ | 9 |
-| 80 | 3 | $1+(80 \bmod 9) = 1+8 = 9$ | $(3+0)=3$ occ, $(3+9)=1$ | 1 |
-| 36 | 3 | $1+(36 \bmod 9) = 1+0 = 1$ | $(3+0)=3$ occ, $(3+1)=4$ | 4 |
-| 52 | 8 | $1+(52 \bmod 9) = 1+7 = 8$ | $(8+0)=8$ occ, $(8+8)=5$ | 5 |
+| 47  | 3        | $1+(47 \bmod 9) = 1+2 = 3$ | $(3+0)=3$                                   | 3           |
+| 25  | 3        | $1+(25 \bmod 9) = 1+7 = 8$ | $(3+0)=3$ occupied, $(3+8)=0$               | 0           |
+| 63  | 8        | $1+(63 \bmod 9) = 1+0 = 1$ | $(8+0)=8$                                   | 8           |
+| 14  | 3        | $1+(14 \bmod 9) = 1+5 = 6$ | $(3+0)=3$ occ, $(3+6)=9$                    | 9           |
+| 80  | 3        | $1+(80 \bmod 9) = 1+8 = 9$ | $(3+0)=3$ occ, $(3+9)=1$                    | 1           |
+| 36  | 3        | $1+(36 \bmod 9) = 1+0 = 1$ | $(3+0)=3$ occ, $(3+1)=4$                    | 4           |
+| 52  | 8        | $1+(52 \bmod 9) = 1+7 = 8$ | $(8+0)=8$ occ, $(8+8)=5$                    | 5           |
 
 Final table:
 
-| Index | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
+| Index | 0   | 1   | 2   | 3   | 4   | 5   | 6   | 7   | 8   | 9   | 10  |
 | ----- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Key | 25 | 80 | — | 47 | 36 | 52 | — | — | 63 | 14 | — |
+| Key   | 25  | 80  | —   | 47  | 36  | 52  | —   | —   | 63  | 14  | —   |
 
 **(b) Load factor:**
 
@@ -840,8 +838,8 @@ Key 80 found at index 1 after **2 probes**.
 
 **(d) Deletion and lazy deletion:**
 
-If key 25 at index 0 is deleted by setting the slot to empty, a subsequent search for key 47
-Would fail:
+If key 25 at index 0 is deleted by setting the slot to empty, a subsequent search for key 47 Would
+fail:
 
 $h_1(47) = 3$$h_2(47) = 3$
 
@@ -850,12 +848,12 @@ Search for 47:
 1. Index 3 → 47 found immediately. (This actually works for 47.)
 
 But consider searching for **key 25** after re-inserting it at a different location — or consider
-Searching for key 80 if index 0 were emptied: $h_1(80) = 3$Probing goes to index 1 (found).
-However, the problem arises with keys that were inserted after the deleted key and probed past it.
+Searching for key 80 if index 0 were emptied: $h_1(80) = 3$Probing goes to index 1 (found). However,
+the problem arises with keys that were inserted after the deleted key and probed past it.
 
 Consider searching for a hypothetical key that hashed to index 0 and was placed further along due to
-Probing. If index 0 is emptied, the search would stop prematurely at the empty slot,
-Incorrectly concluding the key is not in the table.
+Probing. If index 0 is emptied, the search would stop prematurely at the empty slot, Incorrectly
+concluding the key is not in the table.
 
 **Solution:** Use lazy deletion (tombstone). Mark index 0 as DELETED (not EMPTY). During search,
 Treat DELETED slots as occupied (continue probing past them). During insert, treat DELETED slots as

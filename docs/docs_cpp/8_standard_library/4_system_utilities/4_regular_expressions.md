@@ -1,6 +1,8 @@
 ---
 title: Regular Expressions
-description: "C++: Regular Expressions — `std::regex_match` and `std::regex_search`; `std::smatch` and Capture Groups; `std::regex_replace`; Email Validation with Regex."
+description:
+  'C++: Regular Expressions — `std::regex_match` and `std::regex_search`; `std::smatch` and Capture
+  Groups; `std::regex_replace`; Email Validation with Regex.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -8,6 +10,7 @@ categories:
   - Cpp
 slug: regular-expressions
 ---
+
 ## Regular Expressions
 
 `std::regex` (C++11) provides regular expression matching, searching, and replacement using the
@@ -22,23 +25,21 @@ It is declared in `<regex>` and uses the ECMAScript regex grammar by default.
 
 The library provides three main operations:
 
-| Function | Behavior |
+| Function                              | Behavior                                                  |
 | :------------------------------------ | :-------------------------------------------------------- |
-| `std::regex_match(str, regex)` | Returns `true` if the **entire** string matches the regex |
-| `std::regex_search(str, regex)` | Returns `true` if **any part** of the string matches |
-| `std::regex_replace(str, regex, fmt)` | Replaces all matches with a formatted string |
+| `std::regex_match(str, regex)`        | Returns `true` if the **entire** string matches the regex |
+| `std::regex_search(str, regex)`       | Returns `true` if **any part** of the string matches      |
+| `std::regex_replace(str, regex, fmt)` | Replaces all matches with a formatted string              |
 
-:::warning
-`std::regex` is notoriously slow on many standard library implementations (particularly
+:::warning `std::regex` is notoriously slow on many standard library implementations (particularly
 GCC's libstdc++, which uses a backtracking NFA engine). For production use with untrusted input,
 Consider:
 
 - **CTRE** (Compile-Time Regular Expressions): header-only, uses CTAD and template metaprogramming
- to compile regex patterns at compile time.
+  to compile regex patterns at compile time.
 - **Hand-written parsers:** for simple patterns (e.g., email validation, URL parsing), a
- hand-written parser is often faster and more readable.
-- **RE2:** Google's regex library with guaranteed linear-time matching.
-:::
+  hand-written parser is often faster and more readable.
+- **RE2:** Google's regex library with guaranteed linear-time matching. :::
 
 ### `std::regex_match` and `std::regex_search`
 
@@ -120,10 +121,8 @@ void regex_replace_demo() {
 }
 ```
 
-:::info
-In the replacement string, `$&` refers to the entire match, `$1`..`$9` refer to capture
-groups, and `$$` is a literal `$`. These are defined in [N4950 §30.9.4].
-:::
+:::info In the replacement string, `$&` refers to the entire match, `$1`..`$9` refer to capture
+groups, and `$$` is a literal `$`. These are defined in [N4950 §30.9.4]. :::
 
 ### Email Validation with Regex
 
@@ -215,34 +214,32 @@ void catastrophic_backtracking_demo() {
 }
 ```
 
-:::warning
-Avoid nested quantifiers in regex patterns: `(a+)+``(a*)*``(a+)*`. These can trigger
+:::warning Avoid nested quantifiers in regex patterns: `(a+)+``(a*)*``(a+)*`. These can trigger
 Exponential backtracking on inputs that nearly match. If you must use them, set a timeout or use a
-Library with guaranteed linear-time matching (RE2, hyperscan).
-:::
+Library with guaranteed linear-time matching (RE2, hyperscan). :::
 
 ### Regex Grammars and Flags
 
 `std::regex` supports multiple regex grammars selectable via the `std::regex::flag_type` bitmask
 [N4950 §30.9.1]:
 
-| Flag | Grammar | Description |
+| Flag         | Grammar     | Description                                               |
 | ------------ | ----------- | --------------------------------------------------------- |
-| `ECMAScript` | ECMAScript | Default. JavaScript-like syntax. Supports backreferences. |
-| `basic` | POSIX BRE | Basic Regular Expressions. `\(` for groups, no `+`/`?`. |
-| `extended` | POSIX ERE | Extended Regular Expressions. `()` for groups, `+`/`?`. |
-| `awk` | POSIX awk | Like ERE but escape semantics differ. |
-| `grep` | POSIX grep | Like BRE but newline handling differs. |
-| `egrep` | POSIX egrep | Like ERE but newline handling differs. |
+| `ECMAScript` | ECMAScript  | Default. JavaScript-like syntax. Supports backreferences. |
+| `basic`      | POSIX BRE   | Basic Regular Expressions. `\(` for groups, no `+`/`?`.   |
+| `extended`   | POSIX ERE   | Extended Regular Expressions. `()` for groups, `+`/`?`.   |
+| `awk`        | POSIX awk   | Like ERE but escape semantics differ.                     |
+| `grep`       | POSIX grep  | Like BRE but newline handling differs.                    |
+| `egrep`      | POSIX egrep | Like ERE but newline handling differs.                    |
 
 Additional flags that can be combined with the grammar:
 
-| Flag | Description |
+| Flag       | Description                                                                |
 | ---------- | -------------------------------------------------------------------------- |
-| `icase` | Case-insensitive matching |
-| `nosubs` | Do not track capture groups (faster when groups are not needed) |
+| `icase`    | Case-insensitive matching                                                  |
+| `nosubs`   | Do not track capture groups (faster when groups are not needed)            |
 | `optimize` | Hint to the implementation to favor faster matching over construction time |
-| `collate` | Locale-sensitive character ranges like `[a-z]` |
+| `collate`  | Locale-sensitive character ranges like `[a-z]`                             |
 
 ```cpp
 #include <iostream>
@@ -360,16 +357,16 @@ int main() {
 
 `std::regex_match` and `std::regex_search` accept `std::regex_constants::match_flag_type` flags:
 
-| Flag | Description |
+| Flag               | Description                                         |
 | ------------------ | --------------------------------------------------- |
-| `match_default` | Default behavior |
-| `match_not_bol` | Do not match `^` at the first position |
-| `match_not_eol` | Do not match `$` at the last position |
-| `match_not_bow` | Do not match `\b` at the beginning of the string |
-| `match_not_eow` | Do not match `\b` at the end of the string |
-| `match_any` | Any character matches `.` (including newline) |
-| `match_not_null` | Do not match empty sequences |
-| `match_continuous` | Only match at the beginning (like anchored match) |
+| `match_default`    | Default behavior                                    |
+| `match_not_bol`    | Do not match `^` at the first position              |
+| `match_not_eol`    | Do not match `$` at the last position               |
+| `match_not_bow`    | Do not match `\b` at the beginning of the string    |
+| `match_not_eow`    | Do not match `\b` at the end of the string          |
+| `match_any`        | Any character matches `.` (including newline)       |
+| `match_not_null`   | Do not match empty sequences                        |
+| `match_continuous` | Only match at the beginning (like anchored match)   |
 | `match_prev_avail` | The first position is not the start of the sequence |
 
 ```cpp

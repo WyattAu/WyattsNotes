@@ -1,6 +1,8 @@
 ---
 title: Condition Variables, Latches, and Barriers
-description: "C++: Condition Variables, Latches, and Barriers — `std::condition_variable`; How `wait()` Works Internally; Spurious Wakeups and the Predicate Loop."
+description:
+  'C++: Condition Variables, Latches, and Barriers — `std::condition_variable`; How `wait()` Works
+  Internally; Spurious Wakeups and the Predicate Loop.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -8,6 +10,7 @@ categories:
   - Cpp
 slug: condition-variables-latches-barriers
 ---
+
 # Condition Variables, Latches, and Barriers
 
 This section covers `std::condition_variable` and `std::condition_variable_any`Spurious wakeups,
@@ -21,12 +24,12 @@ Condition is met. It always works with a `std::unique_lock<std::mutex>`.
 
 Key operations:
 
-| Operation | Description |
+| Operation          | Description                                                          |
 | ------------------ | -------------------------------------------------------------------- |
-| `wait(lock)` | Releases the lock, blocks the thread, re-acquires the lock on wakeup |
-| `wait(lock, pred)` | Equivalent to `while (!pred()) wait(lock);` |
-| `notify_one()` | Wakes one waiting thread |
-| `notify_all()` | Wakes all waiting threads |
+| `wait(lock)`       | Releases the lock, blocks the thread, re-acquires the lock on wakeup |
+| `wait(lock, pred)` | Equivalent to `while (!pred()) wait(lock);`                          |
+| `notify_one()`     | Wakes one waiting thread                                             |
+| `notify_all()`     | Wakes all waiting threads                                            |
 
 ### How `wait()` Works Internally
 
@@ -35,11 +38,11 @@ When a thread calls `wait(lock)`The following sequence occurs:
 1. The thread atomically releases the mutex and blocks.
 2. When notified (or spuriously woken), the thread re-acquires the mutex before returning.
 3. The atomicity of "release mutex + block" is critical — without it, a notification sent between
- the mutex release and the block would be lost.
+   the mutex release and the block would be lost.
 
-On Linux, `std::condition_variable` is implemented using `pthread_cond_t`Which uses the
-Futex system call. The mutex is released atomically with the futex wait via `pthread_cond_wait`
-Which internally calls `futex_wait` with the mutex address as part of the wait queue.
+On Linux, `std::condition_variable` is implemented using `pthread_cond_t`Which uses the Futex system
+call. The mutex is released atomically with the futex wait via `pthread_cond_wait` Which internally
+calls `futex_wait` with the mutex address as part of the wait queue.
 
 ## Spurious Wakeups and the Predicate Loop
 
@@ -73,13 +76,13 @@ Spurious wakeups are not a bug — they are a deliberate design choice mandated 
 Constraints:
 
 1. **POSIX allows them**: The POSIX specification for `pthread_cond_wait` explicitly permits
- spurious wakeups, and C++ condition variables are built on top of POSIX primitives.
+   spurious wakeups, and C++ condition variables are built on top of POSIX primitives.
 2. **Performance**: On some architectures, it is cheaper to occasionally spuriously wake a thread
- than to guarantee exact wakeup semantics. The futex system call on Linux may spuriously return
- `EINTR` if a signal is delivered to the waiting thread.
+   than to guarantee exact wakeup semantics. The futex system call on Linux may spuriously return
+   `EINTR` if a signal is delivered to the waiting thread.
 3. **Implementations**: On some platforms, condition variables are implemented using shared memory
- and atomic operations, where distinguishing between a genuine notification and a coincidental
- state change is impractical.
+   and atomic operations, where distinguishing between a genuine notification and a coincidental
+   state change is impractical.
 
 ### Lost Wakeup Problem
 
@@ -328,32 +331,32 @@ cv_.notify_one();  // Notify after lock is released
 Count and threads decrement the count. When the count reaches zero, all threads waiting on the latch
 Are unblocked.
 
-| Operation | Description |
+| Operation            | Description                           |
 | -------------------- | ------------------------------------- |
-| `count_down(n)` | Decrements the counter by `n` |
-| `wait()` | Blocks until the counter reaches zero |
-| `arrive_and_wait(n)` | Decrements by `n` and then waits |
-| `try_wait()` | Returns `true` if the counter is zero |
+| `count_down(n)`      | Decrements the counter by `n`         |
+| `wait()`             | Blocks until the counter reaches zero |
+| `arrive_and_wait(n)` | Decrements by `n` and then waits      |
+| `try_wait()`         | Returns `true` if the counter is zero |
 
 A latch is useful for **one-time barriers** such as waiting for all worker threads to finish
 Initialization before proceeding.
 
 ### Implementation Details
 
-`std::latch` is implemented using an atomic counter and an internal condition variable or
-Futex. The key invariant is that `count_down` is thread-safe and `wait` blocks until the counter
-Reaches zero. Once zero, the latch is "done" and all subsequent `wait()` calls return immediately.
+`std::latch` is implemented using an atomic counter and an internal condition variable or Futex. The
+key invariant is that `count_down` is thread-safe and `wait` blocks until the counter Reaches zero.
+Once zero, the latch is "done" and all subsequent `wait()` calls return immediately.
 
 ## `std::barrier` (C++20)
 
 `std::barrier` [N4950 §31.4.4.5] is a reusable synchronization point. Unlike `std::latch`A barrier
 Resets its counter after all threads arrive, allowing it to be reused across multiple phases.
 
-| Operation | Description |
+| Operation           | Description                                           |
 | ------------------- | ----------------------------------------------------- |
-| `arrive(arrival)` | Decrements the expected count |
-| `wait()` | Blocks until all threads have arrived |
-| `arrive_and_wait()` | Arrives and then waits |
+| `arrive(arrival)`   | Decrements the expected count                         |
+| `wait()`            | Blocks until all threads have arrived                 |
+| `arrive_and_wait()` | Arrives and then waits                                |
 | `arrive_and_drop()` | Arrives and permanently decrements the expected count |
 
 The barrier can accept a **completion function** that is executed once when all threads arrive,
@@ -491,11 +494,9 @@ int main() {
 }
 ```
 
-:::info
-`std::latch` is single-use: once the count reaches zero, it cannot be reset. Use
+:::info `std::latch` is single-use: once the count reaches zero, it cannot be reset. Use
 `std::barrier` when you need reusable phase synchronization. `std::latch` is ideal for
-Startup/shutdown patterns and fork-join parallelism [N4950 §31.4.4.3].
-:::
+Startup/shutdown patterns and fork-join parallelism [N4950 §31.4.4.3]. :::
 
 ## `std::flex_barrier` (C++20 Alternative)
 
@@ -534,13 +535,13 @@ int main() {
 
 ## Choosing Between Synchronization Primitives
 
-| Requirement | Primitive | Rationale |
+| Requirement                         | Primitive                              | Rationale                       |
 | ----------------------------------- | -------------------------------------- | ------------------------------- |
-| One-time wait for N events | `std::latch` | Single-use, no reset needed |
-| Reusable phase synchronization | `std::barrier` | Resets automatically per phase |
-| Wait for a condition to become true | `std::condition_variable` | Flexible, works with predicates |
-| Wait for a single event (flag) | `std::atomic<bool>` + `wait()` (C++20) | No mutex overhead |
-| One-time initialization | `std::call_once` | Guaranteed single execution |
+| One-time wait for N events          | `std::latch`                           | Single-use, no reset needed     |
+| Reusable phase synchronization      | `std::barrier`                         | Resets automatically per phase  |
+| Wait for a condition to become true | `std::condition_variable`              | Flexible, works with predicates |
+| Wait for a single event (flag)      | `std::atomic<bool>` + `wait()` (C++20) | No mutex overhead               |
+| One-time initialization             | `std::call_once`                       | Guaranteed single execution     |
 
 ## Common Pitfalls
 
@@ -595,8 +596,8 @@ cv_.notify_all();  // Correct: all waiters can now proceed
 
 ### Pitfall 4: `std::latch` Count Underflow
 
-Calling `count_down()` more times than the initial count is undefined behavior. The count is
- an unsigned integer and wraps around, causing `wait()` to never return:
+Calling `count_down()` more times than the initial count is undefined behavior. The count is an
+unsigned integer and wraps around, causing `wait()` to never return:
 
 ```cpp
 std::latch l(2);

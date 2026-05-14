@@ -1,9 +1,12 @@
 ---
 id: concurrency-primitives
 title: Concurrency Primitives
-description: "Concurrency Primitives — threading Module; Creating Threads; Thread Subclassing; Daemon Threads with worked examples and exam-style questions."
+description:
+  'Concurrency Primitives — threading Module; Creating Threads; Thread Subclassing; Daemon Threads
+  with worked examples and exam-style questions.'
 slug: concurrency-primitives
 ---
+
 ## threading Module
 
 The `threading` module provides low-level thread primitives. Python threads are OS-level threads
@@ -81,10 +84,8 @@ r.join()  # Wait for regular thread
 # Program exits here — daemon thread is terminated
 ```
 
-:::warning
-Daemon threads are abruptly terminated when the main thread exits. They may not release
-Locks, close files, or flush buffers. Use them only for non-critical background tasks.
-:::
+:::warning Daemon threads are abruptly terminated when the main thread exits. They may not release
+Locks, close files, or flush buffers. Use them only for non-critical background tasks. :::
 
 ## Lock and RLock
 
@@ -137,17 +138,15 @@ def inner():
 outer()  # Works fine — RLock allows same thread to re-acquire
 ```
 
-| Feature | `Lock` | `RLock` |
+| Feature               | `Lock`         | `RLock`                  |
 | --------------------- | -------------- | ------------------------ |
-| Reentrant | No (deadlocks) | Yes |
-| Release by any thread | Yes | No (must be same thread) |
-| `acquire()` counting | No | Yes |
-| Overhead | Lower | Slightly higher |
+| Reentrant             | No (deadlocks) | Yes                      |
+| Release by any thread | Yes            | No (must be same thread) |
+| `acquire()` counting  | No             | Yes                      |
+| Overhead              | Lower          | Slightly higher          |
 
-:::warning
-With `Lock`If the same thread tries to acquire it twice, it deadlocks. With `RLock`
-The thread must call `release()` the same number of times it called `acquire()`.
-:::
+:::warning With `Lock`If the same thread tries to acquire it twice, it deadlocks. With `RLock` The
+thread must call `release()` the same number of times it called `acquire()`. :::
 
 ## Semaphore, Event, Condition, Barrier
 
@@ -283,8 +282,7 @@ if __name__ == "__main__":
     print(results)  # [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
 ```
 
-:::warning
-On Linux/macOS, `multiprocessing` uses `fork()` by default, which copies the entire
+:::warning On Linux/macOS, `multiprocessing` uses `fork()` by default, which copies the entire
 Parent process memory (copy-on-write). On Windows, it uses `spawn()`Which re-imports the module.
 Always protect entry points with `if __name__ == "__main__"` to avoid infinite recursion on Windows.
 :::
@@ -393,10 +391,8 @@ if __name__ == "__main__":
     p2.join()
 ```
 
-:::info
-`multiprocessing.Pipe()` creates a pair of connection objects. It supports duplex
-Communication by default. For one-way communication, use `duplex=False`.
-:::
+:::info `multiprocessing.Pipe()` creates a pair of connection objects. It supports duplex
+Communication by default. For one-way communication, use `duplex=False`. :::
 
 ## concurrent.futures
 
@@ -545,10 +541,8 @@ print(pq.get())  # (2, 'medium priority')
 print(pq.get())  # (3, 'low priority')
 ```
 
-:::info
-`PriorityQueue` orders items by the first element of the tuple. If the first elements are
-Equal, it compares the second, and so on. If items are not comparable, it raises `TypeError`.
-:::
+:::info `PriorityQueue` orders items by the first element of the tuple. If the first elements are
+Equal, it compares the second, and so on. If items are not comparable, it raises `TypeError`. :::
 
 ## GIL Impact Analysis
 
@@ -557,10 +551,10 @@ Multiple native threads from executing Python bytecodes simultaneously.
 
 ### CPU-Bound vs I/O-Bound
 
-| Workload | Threading | Multiprocessing |
+| Workload  | Threading                         | Multiprocessing                   |
 | --------- | --------------------------------- | --------------------------------- |
-| CPU-bound | No speedup (GIL bottleneck) | Linear speedup (up to core count) |
-| I/O-bound | Speedup (GIL released during I/O) | Overkill (higher overhead) |
+| CPU-bound | No speedup (GIL bottleneck)       | Linear speedup (up to core count) |
+| I/O-bound | Speedup (GIL released during I/O) | Overkill (higher overhead)        |
 
 ```python
 import threading

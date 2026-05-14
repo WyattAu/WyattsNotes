@@ -1,9 +1,12 @@
 ---
 id: concurrency
 title: Concurrency
-description: "Concurrency — OS Threads; Spawning Threads; Moving Data into Threads; Thread Return Values with worked examples and exam-style questions."
+description:
+  'Concurrency — OS Threads; Spawning Threads; Moving Data into Threads; Thread Return Values with
+  worked examples and exam-style questions.'
 slug: concurrency
 ---
+
 ## OS Threads
 
 Rust's `std::thread` module provides a 1:1 mapping to OS threads. Each thread gets its own stack
@@ -47,8 +50,8 @@ handle.join().unwrap();
 // s is no longer valid here — it was moved
 ```
 
-Without `move`The closure would attempt to borrow `s`But the borrow checker cannot guarantee
-That the spawned thread will not outlive `s` (the thread might run after `s` is dropped).
+Without `move`The closure would attempt to borrow `s`But the borrow checker cannot guarantee That
+the spawned thread will not outlive `s` (the thread might run after `s` is dropped).
 
 ### Thread Return Values
 
@@ -177,11 +180,11 @@ tx.send(1).unwrap();  // OK — buffer not full
 
 ### `send` and `recv` Semantics
 
-| Method | Behavior |
+| Method                 | Behavior                                                         |
 | ---------------------- | ---------------------------------------------------------------- |
-| `tx.send(val)` | Blocks if bounded channel is full. Moves `val` into the channel. |
-| `rx.recv()` | Blocks until a message is available or all senders are dropped. |
-| `rx.try_recv()` | Non-blocking. Returns `Ok(val)` or `Err(TryRecvError)`. |
+| `tx.send(val)`         | Blocks if bounded channel is full. Moves `val` into the channel. |
+| `rx.recv()`            | Blocks until a message is available or all senders are dropped.  |
+| `rx.try_recv()`        | Non-blocking. Returns `Ok(val)` or `Err(TryRecvError)`.          |
 | `rx.recv_timeout(dur)` | Blocks with timeout. Returns `Err(RecvTimeoutError)` on timeout. |
 
 ## Shared State
@@ -260,11 +263,11 @@ let lock = RwLock::new(5);
 
 #### When to Use `RwLock` vs `Mutex`
 
-| Condition | Use |
+| Condition                       | Use                                               |
 | ------------------------------- | ------------------------------------------------- |
-| Mostly writes, low contention | `Mutex` — simpler, lower overhead |
-| Mostly reads, occasional writes | `RwLock` — allows concurrent reads |
-| Very high contention | Reconsider your design — locks are the bottleneck |
+| Mostly writes, low contention   | `Mutex` — simpler, lower overhead                 |
+| Mostly reads, occasional writes | `RwLock` — allows concurrent reads                |
+| Very high contention            | Reconsider your design — locks are the bottleneck |
 
 ### `Arc<T>` — Atomic Reference Counting
 
@@ -327,13 +330,13 @@ loop {
 
 ### Memory Orderings
 
-| Ordering | Guarantee |
+| Ordering  | Guarantee                                                              |
 | --------- | ---------------------------------------------------------------------- |
-| `Relaxed` | No ordering — only atomicity guaranteed |
-| `Release` | All prior writes are visible to threads that acquire this location |
+| `Relaxed` | No ordering — only atomicity guaranteed                                |
+| `Release` | All prior writes are visible to threads that acquire this location     |
 | `Acquire` | All subsequent reads see writes from the last release on this location |
-| `AcqRel` | Both acquire and release semantics |
-| `SeqCst` | Sequentially consistent — total ordering across all threads |
+| `AcqRel`  | Both acquire and release semantics                                     |
+| `SeqCst`  | Sequentially consistent — total ordering across all threads            |
 
 ```rust
 use std::sync::atomic::{AtomicBool, Ordering};
@@ -366,25 +369,25 @@ Option.
 
 ### Available Atomic Types
 
-| Type | Operations |
-| ------------------------------------- | ------------------------------------------------------------------------------------------- |
-| `AtomicBool` | `load``store``swap``compare_exchange``fetch_and``fetch_or``fetch_xor` |
+| Type                                | Operations                                                                          |
+| ----------------------------------- | ----------------------------------------------------------------------------------- |
+| `AtomicBool`                        | `load``store``swap``compare_exchange``fetch_and``fetch_or``fetch_xor`               |
 | `AtomicU8`–`AtomicU64``AtomicUsize` | All integer atomics: `fetch_add``fetch_sub``fetch_max``fetch_min``compare_exchange` |
-| `AtomicI8`–`AtomicI64``AtomicIsize` | Same as unsigned, with signed comparison |
-| `AtomicPtr<T>` | Pointer-sized atomic operations |
+| `AtomicI8`–`AtomicI64``AtomicIsize` | Same as unsigned, with signed comparison                                            |
+| `AtomicPtr<T>`                      | Pointer-sized atomic operations                                                     |
 
 ## Deadlock Prevention
 
 ### Common Deadlock Patterns
 
 1. **Lock ordering violation**: Thread A holds lock 1 and waits for lock 2. Thread B holds lock 2
- and waits for lock 1.
+   and waits for lock 1.
 
 2. **Non-reentrant locking**: A thread attempts to acquire a lock it already holds. Rust's `Mutex`
- is not reentrant (by design — reentrant locks hide bugs).
+   is not reentrant (by design — reentrant locks hide bugs).
 
 3. **Resource starvation**: A thread holds a lock for too long, preventing other threads from making
- progress.
+   progress.
 
 ### Prevention Strategies
 
@@ -838,16 +841,16 @@ The compiler automatically implements `Send` and `Sync` based on the composition
 - A type is `Send` if all its members are `Send`.
 - A type is `Sync` if all its members are `Sync` (equivalently, if `&T` is `Send`).
 
-| Type | `Send` | `Sync` |
-| ----------------------------------------- | ------ | --------------------- |
-| `i32``f64``bool` | Yes | Yes |
-| `String``Vec<T>` where `T: Send + Sync` | Yes | Yes |
-| `Box<T>` where `T: Send` | Yes | No (unless `T: Sync`) |
-| `Rc<T>` | No | No |
-| `Arc<T>` where `T: Send + Sync` | Yes | Yes |
-| `&T` where `T: Sync` | Yes | Yes |
-| `&mut T` where `T: Send` | Yes | No |
-| `Mutex<T>` where `T: Send` | Yes | Yes |
+| Type                                    | `Send` | `Sync`                |
+| --------------------------------------- | ------ | --------------------- |
+| `i32``f64``bool`                        | Yes    | Yes                   |
+| `String``Vec<T>` where `T: Send + Sync` | Yes    | Yes                   |
+| `Box<T>` where `T: Send`                | Yes    | No (unless `T: Sync`) |
+| `Rc<T>`                                 | No     | No                    |
+| `Arc<T>` where `T: Send + Sync`         | Yes    | Yes                   |
+| `&T` where `T: Sync`                    | Yes    | Yes                   |
+| `&mut T` where `T: Send`                | Yes    | No                    |
+| `Mutex<T>` where `T: Send`              | Yes    | Yes                   |
 
 ### Manual Implementation
 
@@ -873,44 +876,43 @@ Cannot see).
 ## Common Pitfalls
 
 1. **Blocking the async executor.** Calling `std::thread::sleep``std::fs::read_to_string`Or any
- blocking operation inside an async task blocks the entire OS thread. All other tasks on that
- thread are stalled. Use `tokio::time::sleep``tokio::fs`Or `spawn_blocking`.
+   blocking operation inside an async task blocks the entire OS thread. All other tasks on that
+   thread are stalled. Use `tokio::time::sleep``tokio::fs`Or `spawn_blocking`.
 
 2. **Holding a `std::sync::Mutex` across `.await`.** This blocks the thread even while the future is
- suspended. Either use `tokio::sync::Mutex` or restructure the code to drop the lock before
- awaiting.
+   suspended. Either use `tokio::sync::Mutex` or restructure the code to drop the lock before
+   awaiting.
 
 3. **Deadlock with `Mutex` in async code.** Two tasks each lock one mutex and then try to lock the
- other — classic deadlock. This is worse in async code because the executor cannot preempt the
- tasks. Always acquire locks in a consistent order, or use `try_lock` with backoff.
+   other — classic deadlock. This is worse in async code because the executor cannot preempt the
+   tasks. Always acquire locks in a consistent order, or use `try_lock` with backoff.
 
 4. **`Arc` reference cycles.** Two `Arc` values that reference each other will never be dropped. Use
- `Weak<T>` to break cycles, especially in graph data structures and observer patterns.
+   `Weak<T>` to break cycles, especially in graph data structures and observer patterns.
 
 5. **Not using scoped threads when possible.** `thread::spawn` requires `'static` bounds, forcing
- you to `move` or `Arc` everything. `thread::scope` allows borrowing and is safer and more
- ergonomic.
+   you to `move` or `Arc` everything. `thread::scope` allows borrowing and is safer and more
+   ergonomic.
 
 6. **Atomic ordering mistakes.** Using `Ordering::Relaxed` when you need `Release`/`Acquire`
- semantics is a data race on the visibility of writes. The data is not corrupted (the operation is
- atomic), but other threads may see stale values.
+   semantics is a data race on the visibility of writes. The data is not corrupted (the operation is
+   atomic), but other threads may see stale values.
 
 7. **Over-spawning threads.** Each OS thread consumes stack space (8 MB default) and kernel
- resources. For I/O-bound concurrency, use async/await instead of threads. For CPU-bound
- parallelism, use a thread pool with a fixed number of threads ( equal to the number of
- CPU cores).
+   resources. For I/O-bound concurrency, use async/await instead of threads. For CPU-bound
+   parallelism, use a thread pool with a fixed number of threads ( equal to the number of CPU
+   cores).
 
 8. **Ignoring JoinHandle errors.** If a spawned thread panics, `handle.join()` returns `Err`.
- Ignoring this error silently swallows panics, which may indicate serious bugs. Always check join
- results or use a supervision mechanism.
+   Ignoring this error silently swallows panics, which may indicate serious bugs. Always check join
+   results or use a supervision mechanism.
 
-9. **Using `Rc` in async code.** `Rc` is not `Send`So any future capturing an `Rc` cannot be
- spawned on tokio. Use `Arc` instead. This is one of the most common async Rust compilation
- errors.
+9. **Using `Rc` in async code.** `Rc` is not `Send`So any future capturing an `Rc` cannot be spawned
+   on tokio. Use `Arc` instead. This is one of the most common async Rust compilation errors.
 
 10. **`select!` dropping futures.** When `select!` completes, all non-selected branches are dropped.
- If you need to retry a branch, you must restructure your code to loop and recreate the future.
- Consider using `tokio::select!` with a loop pattern for repeated selection.
+    If you need to retry a branch, you must restructure your code to loop and recreate the future.
+    Consider using `tokio::select!` with a loop pattern for repeated selection.
 
 ## Summary
 

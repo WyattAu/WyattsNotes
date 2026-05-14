@@ -1,6 +1,8 @@
 ---
 title: Coordinates and Geometry
-description: "A-Level Mathematics notes on Coordinates and Geometry: Board Coverage; 1. The Coordinate Plane; 2. Straight Lines; 2.1 Gradient."
+description:
+  'A-Level Mathematics notes on Coordinates and Geometry: Board Coverage; 1. The Coordinate Plane;
+  2. Straight Lines; 2.1 Gradient.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Maths
@@ -9,14 +11,15 @@ categories:
   - Maths
 slug: coordinates-and-geometry
 ---
+
 ## Board Coverage
 
-| Board | Paper | Notes |
+| Board      | Paper   | Notes                                    |
 | ---------- | ------- | ---------------------------------------- |
-| AQA | Paper 1 | Straight lines, circles |
-| Edexcel | P1 | Same; includes circle theorems |
-| OCR (A) | Paper 1 | Similar coverage |
-| CIE (9709) | P1 | Coordinate geometry of lines and circles |
+| AQA        | Paper 1 | Straight lines, circles                  |
+| Edexcel    | P1      | Same; includes circle theorems           |
+| OCR (A)    | Paper 1 | Similar coverage                         |
+| CIE (9709) | P1      | Coordinate geometry of lines and circles |
 
 <hr />
 
@@ -95,9 +98,9 @@ $$y - y_1 = m(x - x_1) \quad \blacksquare$$
 - **Perpendicular** if and only if $m_1 m_2 = -1$.
 
 _Proof (Perpendicular case)._ Consider two perpendicular lines through the origin with gradients
-$m_1$ and $m_2$. A point on the first line is $(1, m_1)$And a point on the second is $(1, m_2)$.
-The vector from the origin to $(1, m_1)$ is $\mathbf{u} = (1, m_1)$And the vector from the origin
-To $(1, m_2)$ is $\mathbf{v} = (1, m_2)$.
+$m_1$ and $m_2$. A point on the first line is $(1, m_1)$And a point on the second is $(1, m_2)$. The
+vector from the origin to $(1, m_1)$ is $\mathbf{u} = (1, m_1)$And the vector from the origin To
+$(1, m_2)$ is $\mathbf{v} = (1, m_2)$.
 
 Since the lines are perpendicular, $\mathbf{u} \perp \mathbf{v}$So their dot product is zero:
 
@@ -137,8 +140,8 @@ $$
 \end{aligned}
 $$
 
-_Intuition._ This is Pythagoras' theorem applied to every point on the circle. The distance
-From the centre to any point on the circle is constant and equal to the radius.
+_Intuition._ This is Pythagoras' theorem applied to every point on the circle. The distance From the
+centre to any point on the circle is constant and equal to the radius.
 
 ### 3.2 Expanded Form
 
@@ -149,8 +152,8 @@ $$x^2 - 2ax + a^2 + y^2 - 2by + b^2 = r^2$$
 $$x^2 + y^2 - 2ax - 2by + (a^2 + b^2 - r^2) = 0$$
 
 **Theorem.** The general equation $x^2 + y^2 + Dx + Ey + F = 0$ represents a circle with centre
-$\left(-\frac{D}{2}, -\frac{E}{2}\right)$ and radius $r = \sqrt◆LB◆\frac{D^2}{4} + \frac{E^2}{4} - F◆RB◆$
-Provided $D^2 + E^2 - 4F > 0$.
+$\left(-\frac{D}{2}, -\frac{E}{2}\right)$ and radius
+$r = \sqrt◆LB◆\frac{D^2}{4} + \frac{E^2}{4} - F◆RB◆$ Provided $D^2 + E^2 - 4F > 0$.
 
 _Proof._ Completing the square in both $x$ and $y$:
 
@@ -168,10 +171,7 @@ $$\left(x + \frac{D}{2}\right)^2 + \left(y + \frac{E}{2}\right)^2 = \frac{D^2 + 
 This is a circle with centre $\left(-\frac{D}{2}, -\frac{E}{2}\right)$ and radius
 $\sqrt◆LB◆\frac{D^2 + E^2}{4} - F◆RB◆$Provided the right-hand side is positive. $\blacksquare$
 
-:::tip
-Tip
-$y$. This is faster and less error-prone than memorising the formula.
-:::
+:::tip Tip $y$. This is faster and less error-prone than memorising the formula. :::
 
 <details>
 <summary>Example</summary>
@@ -209,9 +209,9 @@ $$(1 + m^2)x^2 + \mathrm{(linear term)} + \mathrm{(constant)} = 0$$
 This quadratic has:
 
 - **Two distinct real roots** ($\Delta > 0$): the line intersects the circle at two points (a
- _secant_);
+  _secant_);
 - **One repeated root** ($\Delta = 0$): the line touches the circle at exactly one point (a
- _tangent_);
+  _tangent_);
 - **No real roots** ($\Delta < 0$): the line does not intersect the circle. $\blacksquare$
 
 _Intuition._ A tangent touches the circle at exactly one point. Algebraically, "one point" means the
@@ -339,10 +339,8 @@ $$d = \frac◆LB◆|3(5) + 4(-2) - 10|◆RB◆◆LB◆\sqrt{9 + 16}◆RB◆ = \f
 
 </details>
 
-:::info
-The absolute value in the numerator ensures the distance is always non-negative. The sign of
-$ax_0 + by_0 + c$ tells you which side of the line the point lies on.
-:::
+:::info The absolute value in the numerator ensures the distance is always non-negative. The sign of
+$ax_0 + by_0 + c$ tells you which side of the line the point lies on. :::
 
 <hr />
 
@@ -416,11 +414,8 @@ $$
 Subtracting the first equation from the second and third eliminates $F$Yielding a $2 \times 2$
 System in $D$ and $E$. Solve for $D$ and $E$Then substitute back to find $F$.
 
-:::warning
-Warning
-Three collinear points). You can check collinearity by verifying that the gradient between the first
-Two points equals the gradient between the second two.
-:::
+:::warning Warning Three collinear points). You can check collinearity by verifying that the
+gradient between the first Two points equals the gradient between the second two. :::
 
 <details>
 <summary>Worked example</summary>
@@ -696,8 +691,8 @@ $$x^2 - x^2 + 10x - 25 = 5 \implies 10x = 30 \implies x = 3$$
 
 So $PQ$ is the vertical line $x = 3$. The $y$-coordinates satisfy $9 + y^2 = 9 \implies y = 0$.
 
-Wait, $x = 3$ in $C_1$: $9 + y^2 = 9$So $y = 0$. The circles intersect at a single point $(3, 0)$
-— they are tangent to each other.
+Wait, $x = 3$ in $C_1$: $9 + y^2 = 9$So $y = 0$. The circles intersect at a single point $(3, 0)$ —
+they are tangent to each other.
 
 So $PQ = 0$; the circles touch at exactly one point.
 
@@ -725,8 +720,8 @@ $$y - 3 = \frac{1}{2}(x - 3) \implies 2y - 6 = x - 3 \implies x - 2y + 3 = 0$$
 <hr />
 
 **Problem 11.** Derive the perpendicular distance formula
-$d = \frac◆LB◆|ax_0 + by_0 + c|◆RB◆◆LB◆\sqrt{a^2 + b^2}◆RB◆$ using the area method for the point $P(1, 7)$ and
-The line $3x + 4y - 5 = 0$. Then compute the distance.
+$d = \frac◆LB◆|ax_0 + by_0 + c|◆RB◆◆LB◆\sqrt{a^2 + b^2}◆RB◆$ using the area method for the point
+$P(1, 7)$ and The line $3x + 4y - 5 = 0$. Then compute the distance.
 
 <details>
 <summary>Solution</summary>
@@ -836,7 +831,8 @@ $|AC| = 4 = 2r$.
 
 (b) Find the coordinates of the two points on $C$ with $y$-coordinate $1$.
 
-(c) Find the equation of the tangent to $C$ at the point corresponding to $\theta = \frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆$.
+(c) Find the equation of the tangent to $C$ at the point corresponding to
+$\theta = \frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆$.
 
 <details>
 <summary>Solution</summary>
@@ -852,7 +848,8 @@ $$\left(1 + 5 \cdot \frac{4}{5}, 1\right) = (5, 1)$$
 
 $$\left(1 + 5 \cdot \left(-\frac{4}{5}\right), 1\right) = (-3, 1)$$
 
-(c) When $\theta = \frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆$: $x = 1 + 5\cos\frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆ = 1 + \frac{5}{2} = \frac{7}{2}$
+(c) When $\theta = \frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆$:
+$x = 1 + 5\cos\frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆ = 1 + \frac{5}{2} = \frac{7}{2}$
 $y = -2 + 5\sin\frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆ = -2 + \frac◆LB◆5\sqrt{3}◆RB◆◆LB◆2◆RB◆$.
 
 The point is $\left(\frac{7}{2}, -2 + \frac◆LB◆5\sqrt{3}◆RB◆◆LB◆2◆RB◆\right)$.
@@ -861,7 +858,8 @@ The radius from $(1, -2)$ to this point has gradient:
 
 $$m_{\mathrm{radius}} = \frac◆LB◆-2 + \frac{5\sqrt{3}}{2} - (-2)◆RB◆◆LB◆\frac{7}{2} - 1◆RB◆ = \frac◆LB◆\frac{5\sqrt{3}}{2}◆RB◆◆LB◆\frac{5}{2}◆RB◆ = \sqrt{3}$$
 
-Tangent gradient: $m_{\mathrm{tangent}} = -\frac◆LB◆1◆RB◆◆LB◆\sqrt{3}◆RB◆ = -\frac◆LB◆\sqrt{3}◆RB◆◆LB◆3◆RB◆$.
+Tangent gradient:
+$m_{\mathrm{tangent}} = -\frac◆LB◆1◆RB◆◆LB◆\sqrt{3}◆RB◆ = -\frac◆LB◆\sqrt{3}◆RB◆◆LB◆3◆RB◆$.
 
 Using point-slope form:
 
@@ -886,8 +884,8 @@ The points of tangency.
 <summary>Solution</summary>
 Completing the square: $(x-3)^2 + (y-2)^2 = 4$So centre $(3, 2)$ and radius $2$.
 
-Let $L$ have equation $y = mx$ (passing through the origin). For $L$ to be tangent to $C$
-Substitute into the circle equation:
+Let $L$ have equation $y = mx$ (passing through the origin). For $L$ to be tangent to $C$ Substitute
+into the circle equation:
 
 $$x^2 + m^2x^2 - 6x - 4mx + 9 = 0$$
 
@@ -918,7 +916,8 @@ $$(13x - 15)^2 = 0 \implies x = \frac{15}{13}, \quad y = \frac{12}{5} \cdot \fra
 Tangency point: $\left(\frac{15}{13}, \frac{36}{13}\right)$.
 
 **Verification using perpendicular distance:** The distance from centre $(3, 2)$ to
-$y = \frac{12}{5}x$ (i.e. $12x - 5y = 0$) is $\frac◆LB◆|36 - 10|◆RB◆◆LB◆13◆RB◆ = \frac{26}{13} = 2 = r$.
+$y = \frac{12}{5}x$ (i.e. $12x - 5y = 0$) is
+$\frac◆LB◆|36 - 10|◆RB◆◆LB◆13◆RB◆ = \frac{26}{13} = 2 = r$.
 
 The two tangent lines are $y = 0$ and $12x - 5y = 0$.
 
@@ -927,14 +926,15 @@ The two tangent lines are $y = 0$ and $12x - 5y = 0$.
 
 ---
 
-:::tip
-Diagnostic Test
-Ready to test your understanding of **Coordinates and Geometry**? The [diagnostic test](/docs/alevel/maths/diagnostics/diag-coordinates-and-geometry) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
+:::tip Diagnostic Test Ready to test your understanding of **Coordinates and Geometry**? The
+[diagnostic test](/docs/alevel/maths/diagnostics/diag-coordinates-and-geometry) contains the hardest
+questions within the A-Level specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Coordinates and Geometry with other pure mathematics topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Coordinates
+and Geometry with other pure mathematics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and
+building a personal test matrix. :::
 
 ## Common Pitfalls
 

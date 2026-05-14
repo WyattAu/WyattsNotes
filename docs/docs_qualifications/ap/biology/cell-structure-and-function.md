@@ -1,6 +1,8 @@
 ---
 title: Cell Structure and Function
-description: "Cell Structure and Function — Cell Theory (CED Unit 2); Prokaryotic vs Eukaryotic Cells; The Cell Membrane (CED Unit 2); Fluid Mosaic Model."
+description:
+  'Cell Structure and Function — Cell Theory (CED Unit 2); Prokaryotic vs Eukaryotic Cells; The Cell
+  Membrane (CED Unit 2); Fluid Mosaic Model.'
 date: 2026-04-14
 tags:
   - Biology
@@ -9,6 +11,7 @@ categories:
   - Biology
 slug: cell-structure-and-function
 ---
+
 ## Cell Theory (CED Unit 2)
 
 1. All living organisms are composed of one or more cells.
@@ -17,15 +20,15 @@ slug: cell-structure-and-function
 
 ### Prokaryotic vs Eukaryotic Cells
 
-| Feature | Prokaryotic | Eukaryotic |
+| Feature                   | Prokaryotic          | Eukaryotic                       |
 | ------------------------- | -------------------- | -------------------------------- |
-| Nucleus | No (nucleoid region) | Yes, membrane-bound |
-| Membrane-bound organelles | No | Yes |
-| DNA | Circular, single | Linear, in chromosomes |
-| Size | 0.1 -- 5 $\mu$M | 10 -- 100 $\mu$M |
-| Ribosomes | 70S (smaller) | 80S (larger) |
-| Cell division | Binary fission | Mitosis, meiosis |
-| Examples | Bacteria, Archaea | Plants, animals, fungi, protists |
+| Nucleus                   | No (nucleoid region) | Yes, membrane-bound              |
+| Membrane-bound organelles | No                   | Yes                              |
+| DNA                       | Circular, single     | Linear, in chromosomes           |
+| Size                      | 0.1 -- 5 $\mu$M      | 10 -- 100 $\mu$M                 |
+| Ribosomes                 | 70S (smaller)        | 80S (larger)                     |
+| Cell division             | Binary fission       | Mitosis, meiosis                 |
+| Examples                  | Bacteria, Archaea    | Plants, animals, fungi, protists |
 
 **Worked Example: Distinguishing prokaryotic and eukaryotic features.**
 
@@ -35,8 +38,8 @@ Ribosomes. The cell is approximately 2 $\mu$M in diameter.
 Since there is no membrane-bound nucleus, this is a prokaryotic cell. Both prokaryotes and
 Eukaryotes can have cell walls (plant cell walls are made of cellulose; bacterial cell walls are
 Made of peptidoglycan), so the presence of a cell wall is not diagnostic. The small size (2 $\mu$M)
-Is consistent with a prokaryotic cell (prokaryotes are 0.1--5 $\mu$M, while eukaryotes are
-10--100 $\mu$M).
+Is consistent with a prokaryotic cell (prokaryotes are 0.1--5 $\mu$M, while eukaryotes are 10--100
+$\mu$M).
 
 ## The Cell Membrane (CED Unit 2)
 
@@ -45,41 +48,41 @@ Is consistent with a prokaryotic cell (prokaryotes are 0.1--5 $\mu$M, while euka
 The cell membrane is a fluid mosaic of:
 
 - **Phospholipid bilayer:** Amphipathic molecules with hydrophilic heads facing outward and
- hydrophobic tails facing inward. This creates a selectively permeable barrier.
+  hydrophobic tails facing inward. This creates a selectively permeable barrier.
 - **Proteins:** Embedded (integral) or surface (peripheral). Functions include transport, signaling,
- and enzymatic activity.
+  and enzymatic activity.
 - **Cholesterol:** Modulates membrane fluidity. At high temperatures, it restrains movement; at low
- temperatures, it prevents tight packing.
+  temperatures, it prevents tight packing.
 - **Carbohydrates:** Glycoproteins and glycolipids on the outer surface for cell recognition and
- signaling.
+  signaling.
 
 **Why the membrane is described as "fluid mosaic":**
 
 - **Fluid:** The phospholipid bilayer is not rigid. Phospholipids can move laterally within their
- own layer (lateral diffusion), and some can flip between layers (flip-flop, though this is rare).
- Proteins also drift within the bilayer. This fluidity allows the membrane to change shape (e.g.,
- during endocytosis) and for membrane components to be redistributed.
+  own layer (lateral diffusion), and some can flip between layers (flip-flop, though this is rare).
+  Proteins also drift within the bilayer. This fluidity allows the membrane to change shape (e.g.,
+  during endocytosis) and for membrane components to be redistributed.
 - **Mosaic:** The membrane is a patchwork of different molecules (phospholipids, proteins,
- cholesterol, carbohydrates) of different sizes and functions, like tiles in a mosaic.
+  cholesterol, carbohydrates) of different sizes and functions, like tiles in a mosaic.
 
 ### Membrane Transport
 
-| Type | Direction | Energy Required? | Mediator |
+| Type                                    | Direction                   | Energy Required?   | Mediator                |
 | --------------------------------------- | --------------------------- | ------------------ | ----------------------- |
-| Simple diffusion | High to low conc. | No | None |
-| Facilitated diffusion | High to low conc. | No | Channel/carrier protein |
-| Osmosis | High to low water potential | No | Aquaporins |
-| Active transport | Low to high conc. | Yes (ATP) | Pump |
-| Cotransport (secondary) | Low to high conc. | Yes (ion gradient) | Carrier protein |
-| Bulk transport (exocytosis/endocytosis) | Various | Yes (ATP) | Vesicles |
+| Simple diffusion                        | High to low conc.           | No                 | None                    |
+| Facilitated diffusion                   | High to low conc.           | No                 | Channel/carrier protein |
+| Osmosis                                 | High to low water potential | No                 | Aquaporins              |
+| Active transport                        | Low to high conc.           | Yes (ATP)          | Pump                    |
+| Cotransport (secondary)                 | Low to high conc.           | Yes (ion gradient) | Carrier protein         |
+| Bulk transport (exocytosis/endocytosis) | Various                     | Yes (ATP)          | Vesicles                |
 
 ### Osmosis and Tonicity
 
 - **Isotonic:** Solute concentration equal inside and outside. No net water movement.
 - **Hypertonic:** Higher solute concentration outside. Water moves out; cell shrinks (crenation in
- animal cells, plasmolysis in plant cells).
+  animal cells, plasmolysis in plant cells).
 - **Hypotonic:** Lower solute concentration outside. Water moves in; cell swells (lysis in animal
- cells, turgor pressure in plant cells).
+  cells, turgor pressure in plant cells).
 
 **Worked Example: Predicting the effect of tonicity on cells.**
 
@@ -111,9 +114,9 @@ The cell would shrink (crenate) as it loses water.
 ### Endoplasmic Reticulum (ER)
 
 - **Rough ER:** Studded with ribosomes. Protein synthesis, folding, modification. Transport vesicles
- bud off to the Golgi.
+  bud off to the Golgi.
 - **Smooth ER:** No ribosomes. Lipid synthesis, detoxification (liver), calcium storage (muscle
- cells).
+  cells).
 
 ### Golgi Apparatus
 
@@ -129,12 +132,12 @@ A pancreatic cell produces insulin. Trace the path of insulin from synthesis to 
 
 1. **Nucleus:** The gene for insulin is transcribed, producing mRNA.
 2. **Rough ER:** The mRNA is translated by ribosomes on the rough ER. The insulin polypeptide is
- synthesised and enters the ER lumen, where it begins to fold.
+   synthesised and enters the ER lumen, where it begins to fold.
 3. **Transport vesicles:** Vesicles bud from the ER and carry the insulin to the Golgi apparatus.
 4. **Golgi apparatus:** The insulin is modified (proinsulin is cleaved to form active insulin),
- sorted, and packaged into secretory vesicles.
+   sorted, and packaged into secretory vesicles.
 5. **Secretory vesicles:** The vesicles move to the plasma membrane, fuse with it (exocytosis), and
- release insulin into the extracellular fluid.
+   release insulin into the extracellular fluid.
 
 ### Lysosomes
 
@@ -170,9 +173,9 @@ A pancreatic cell produces insulin. Trace the path of insulin from synthesis to 
 - **Microfilaments (actin):** 7 nm diameter. Cell motility, cytokinesis, muscle contraction.
 - **Intermediate filaments:** 10 nm diameter. Structural support, tension-bearing.
 - **Microtubules:** 25 nm diameter. Shape, intracellular transport (motor proteins: kinesin,
- dynein), chromosome movement during cell division.
+  dynein), chromosome movement during cell division.
 - **Centrosome and centrioles:** Organize microtubules. Centrioles form the mitotic spindle in
- animal cells.
+  animal cells.
 
 ### Cell Wall (Plants, Fungi, Bacteria)
 
@@ -205,18 +208,20 @@ Eukaryotic cells.
 ### Steps in Cell Signaling
 
 1. **Reception:** A signaling molecule (ligand) binds to a receptor protein.
- - **Intracellular receptors:** Ligand must cross the membrane (e.g., steroid hormones).
- - **Cell-surface receptors:** Ligand binds to the extracellular domain (e.g., GPCRs, receptor
- tyrosine kinases, ligand-gated ion channels).
+
+- **Intracellular receptors:** Ligand must cross the membrane (e.g., steroid hormones).
+- **Cell-surface receptors:** Ligand binds to the extracellular domain (e.g., GPCRs, receptor
+  tyrosine kinases, ligand-gated ion channels).
 
 2. **Transduction:** The signal is relayed and amplified through a signal transduction pathway.
- - Often involves **second messengers** (cAMP, $\mathrm{Ca{}^{2+}$$\mathrm{IP{}_3$DAG).
- - **Protein kinases** phosphorylate target proteins, activating or deactivating them.
- - **Protein phosphatases** remove phosphate groups, reversing kinase action.
- - **Cascades** amplify the signal (one activated kinase activates many downstream targets).
+
+- Often involves **second messengers** (cAMP, $\mathrm{Ca{}^{2+}$$\mathrm{IP{}_3$DAG).
+- **Protein kinases** phosphorylate target proteins, activating or deactivating them.
+- **Protein phosphatases** remove phosphate groups, reversing kinase action.
+- **Cascades** amplify the signal (one activated kinase activates many downstream targets).
 
 3. **Response:** The signal triggers a cellular response (gene expression, enzyme activation,
- cytoskeletal rearrangement).
+   cytoskeletal rearrangement).
 
 ### G-Protein Coupled Receptors (GPCRs)
 
@@ -256,7 +261,7 @@ Division signaling.
 2. Two RTKs dimerize (come together in pairs).
 3. Each RTK phosphorylates the tyrosine residues on the tail of the other RTK (autophosphorylation).
 4. The activated receptor can now activate intracellular relay proteins, triggering a
- phosphorylation cascade (often involving the Ras protein and a MAP kinase cascade).
+   phosphorylation cascade (often involving the Ras protein and a MAP kinase cascade).
 5. The final response is often the activation of transcription factors that alter gene expression.
 
 **Why RTKs are important:** Mutations that cause RTKs to be constitutively active (always "on") are
@@ -272,55 +277,55 @@ Receptors in the cytoplasm or nucleus.
 1. The hormone diffuses through the plasma membrane.
 2. It binds to a receptor protein, forming a hormone-receptor complex.
 3. The complex acts as a transcription factor, binding to specific DNA sequences (hormone response
- elements) in the promoter region of target genes.
+   elements) in the promoter region of target genes.
 4. This activates or represses transcription of specific genes.
 5. The response is slower than cell-surface receptor signaling because it requires changes in gene
- expression.
+   expression.
 
 ## Common Pitfalls
 
 1. **Confusing the functions of rough and smooth ER.** Rough ER is for protein synthesis; smooth ER
- is for lipid synthesis and detoxification.
+   is for lipid synthesis and detoxification.
 2. **Thinking lysosomes are only for digestion.** They also play roles in autophagy and apoptosis.
 3. **Confusing osmosis direction.** Water moves from hypotonic (low solute) to hypertonic (high
- solute).
+   solute).
 4. **Misidentifying the site of cellular respiration.** It occurs in the mitochondria, not the
- chloroplasts.
+   chloroplasts.
 5. **Confusing the cis and trans faces of the Golgi.** Cis receives from ER; trans ships to
- destinations.
+   destinations.
 6. **Thinking all cells have a cell wall.** Animal cells do not have cell walls.
 7. **Confusing active and passive transport.** Active transport requires energy (ATP) and moves
- against the gradient; passive transport does not require energy and moves down the gradient.
+   against the gradient; passive transport does not require energy and moves down the gradient.
 8. **Forgetting the role of the cytoskeleton.** Microtubules are for intracellular transport and
- chromosome movement; microfilaments are for cell motility and cytokinesis.
+   chromosome movement; microfilaments are for cell motility and cytokinesis.
 9. **Confusing integrins and cadherins.** Integrins connect cells to the ECM; cadherins connect
- cells to each other.
+   cells to each other.
 10. **Thinking signal transduction always activates a response.** Some signals inhibit responses;
- the outcome depends on the specific pathway and cell type.
+    the outcome depends on the specific pathway and cell type.
 11. **Confusing GPCRs and RTKs.** GPCRs use G-proteins and second messengers; RTKs dimerize and
- autophosphorylate, often activating the MAP kinase cascade.
+    autophosphorylate, often activating the MAP kinase cascade.
 12. **Thinking all second messengers are the same.** cAMP, $\mathrm{Ca{}^{2+}$$\mathrm{IP{}_3$And
- DAG have different roles and activate different downstream pathways.
+    DAG have different roles and activate different downstream pathways.
 13. **Confusing exocytosis and endocytosis direction.** Exocytosis releases materials out of the
- cell; endocytosis brings materials in.
+    cell; endocytosis brings materials in.
 14. **Forgetting that the cell membrane is selectively permeable, not fully permeable.** Only small,
- nonpolar molecules can diffuse freely; larger or polar molecules need transport proteins.
+    nonpolar molecules can diffuse freely; larger or polar molecules need transport proteins.
 15. **Misidentifying the roles of the nucleolus.** The nucleolus produces rRNA and assembles
- ribosomal subunits, not mRNA or tRNA.
+    ribosomal subunits, not mRNA or tRNA.
 
 ## Practice Questions
 
 1. Compare and contrast prokaryotic and eukaryotic cells in terms of size, organelles, DNA
- organization, and ribosomes.
+   organization, and ribosomes.
 
 2. A red blood cell is placed in a hypertonic solution. Describe what happens to the cell and
- explain why.
+   explain why.
 
 3. Trace the path of a secretory protein from synthesis to export, naming all organelles and
- transport steps involved.
+   transport steps involved.
 
 4. Explain how the structure of the phospholipid bilayer relates to its function as a selectively
- permeable barrier.
+   permeable barrier.
 
 5. Describe three pieces of evidence supporting the endosymbiotic theory.
 
@@ -329,56 +334,56 @@ Receptors in the cytoplasm or nucleus.
 7. Compare the structure and function of microfilaments, intermediate filaments, and microtubules.
 
 8. Explain how G-protein coupled receptors transduce an extracellular signal into an intracellular
- response, using the epinephrine signaling pathway as an example.
+   response, using the epinephrine signaling pathway as an example.
 
 9. A cell has a solute concentration of 0.3 M. It is placed in a 0.1 M solution. Predict the
- direction of water movement and explain your reasoning.
+   direction of water movement and explain your reasoning.
 
 10. Describe the structure and function of the extracellular matrix in animal cells. How do
- integrins connect the ECM to the cytoskeleton?
+    integrins connect the ECM to the cytoskeleton?
 
 11. Explain why cholesterol is important in cell membranes and how it affects membrane fluidity at
- different temperatures.
+    different temperatures.
 
 12. Compare phagocytosis, pinocytosis, and receptor-mediated endocytosis in terms of mechanism and
- the types of substances transported.
+    the types of substances transported.
 
 13. Explain how apoptosis differs from necrosis and why apoptosis is important for development.
 
 14. A plant cell is placed in a hypertonic solution. Describe what happens to the cell and explain
- why the result is different from what would happen to an animal cell.
+    why the result is different from what would happen to an animal cell.
 
 15. Explain the roles of protein kinases and protein phosphatases in signal transduction pathways.
- How do they work together to regulate cellular responses?
+    How do they work together to regulate cellular responses?
 
 16. Describe how the structure of a mitochondrion is adapted for its function in ATP production.
 
 17. A researcher adds a drug that blocks the Na+/K+ pump. Explain the immediate and long-term
- effects on the cell.
+    effects on the cell.
 
 18. Explain how the nuclear pore regulates the transport of molecules between the nucleus and the
- cytoplasm.
+    cytoplasm.
 
 19. Compare the structure and function of the smooth ER in liver cells vs. Muscle cells.
 
 20. Explain the concept of signal amplification in a phosphorylation cascade, using a numerical
- example.
+    example.
 
 21. Explain the mechanism of receptor tyrosine kinase (RTK) signaling and describe how a mutation
- that causes constitutive RTK activation can lead to cancer.
+    that causes constitutive RTK activation can lead to cancer.
 
 22. Compare GPCR signaling and steroid hormone signaling in terms of the location of the receptor,
- the speed of the response, and the mechanism of action.
+    the speed of the response, and the mechanism of action.
 
 23. Describe how cholera toxin disrupts normal cell signaling and explain the physiological
- consequences for the patient.
+    consequences for the patient.
 
 24. A researcher labels the proteins on the surface of a cell with a fluorescent tag. After
- endocytosis, the tag is found inside lysosomes. Explain the pathway the tagged proteins took
- from the cell surface to the lysosomes.
+    endocytosis, the tag is found inside lysosomes. Explain the pathway the tagged proteins took
+    from the cell surface to the lysosomes.
 
 25. Explain why the Na+/K+ pump is described as an electrogenic pump and discuss its importance for
- maintaining the resting membrane potential.
+    maintaining the resting membrane potential.
 
 ## Review: Detailed Comparison of Transport Mechanisms
 
@@ -391,10 +396,10 @@ Gradient, temperature, and the surface area of the membrane. No energy or transp
 Required.
 
 **Facilitated diffusion:** Polar molecules and ions (e.g., glucose, amino acids, $\mathrm{Na{}^+$
-$\mathrm{K{}^+$) cannot cross the hydrophobic interior of the bilayer and require transport proteins.
-Channel proteins form hydrophilic pores; carrier proteins undergo conformational changes to shuttle
-Molecules across. Like simple diffusion, facilitated diffusion is passive (no energy required) and
-Moves substances down their concentration gradient.
+$\mathrm{K{}^+$) cannot cross the hydrophobic interior of the bilayer and require transport
+proteins. Channel proteins form hydrophilic pores; carrier proteins undergo conformational changes
+to shuttle Molecules across. Like simple diffusion, facilitated diffusion is passive (no energy
+required) and Moves substances down their concentration gradient.
 
 **Osmosis:** The diffusion of water across a selectively permeable membrane. Water moves from a
 Region of higher water potential (lower solute concentration) to a region of lower water potential
@@ -410,8 +415,8 @@ Muscle contraction.
 **Cotransport (secondary active transport):** Uses the energy stored in an ion gradient (established
 By primary active transport) to transport another substance against its gradient. For example, the
 $\mathrm{Na{}^+$-glucose cotransporter in the small intestine uses the $\mathrm{Na{}^+$ gradient
-(maintained by the $\mathrm{Na{}^+/\mathrm{K{}^+$ pump) to transport glucose into the cell against its
-Concentration gradient.
+(maintained by the $\mathrm{Na{}^+/\mathrm{K{}^+$ pump) to transport glucose into the cell against
+its Concentration gradient.
 
 **Bulk transport:** Large molecules or particles are transported via vesicles. Endocytosis brings
 Materials into the cell (phagocytosis for solid particles, pinocytosis for liquids,
@@ -430,8 +435,8 @@ Amino acids exit the cell by facilitated diffusion (from 10 mM to 5 mM, down the
 Gradient). No energy is required.
 
 If the cell needs to accumulate amino acids to a concentration higher than 5 mM (e.g., for protein
-Synthesis), it must use active transport (or a cotransporter that uses the $\mathrm{Na{}^+$ gradient)
-To move amino acids against their concentration gradient. This requires ATP (directly or
+Synthesis), it must use active transport (or a cotransporter that uses the $\mathrm{Na{}^+$
+gradient) To move amino acids against their concentration gradient. This requires ATP (directly or
 Indirectly).
 
 ## Review: Prokaryotic Cell Structures in Detail
@@ -499,7 +504,7 @@ Package, and transport proteins and lipids. It includes:
 
 1. **Nuclear envelope:** Controls transport between nucleus and cytoplasm.
 2. **Endoplasmic reticulum:** Synthesis (rough ER for proteins, smooth ER for lipids) and initial
- modification.
+   modification.
 3. **Golgi apparatus:** Further modification, sorting, and packaging.
 4. **Vesicles:** Transport between organelles and to the plasma membrane.
 5. **Plasma membrane:** Final destination for many proteins; site of exocytosis.
@@ -520,11 +525,11 @@ The cell. This demonstrates how the Golgi apparatus sorts proteins to different 
 
 In multicellular organisms, cells are connected by specialised junctions:
 
-| Junction Type | Function | Found In |
+| Junction Type   | Function                                              | Found In                             |
 | --------------- | ----------------------------------------------------- | ------------------------------------ |
 | Tight junctions | Form seals between adjacent cells, preventing leakage | Epithelial cells (intestine, kidney) |
-| Desmosomes | Strong anchoring junctions, like rivets | Skin, heart muscle |
-| Gap junctions | Channels between cells for direct communication | Heart muscle, embryos |
+| Desmosomes      | Strong anchoring junctions, like rivets               | Skin, heart muscle                   |
+| Gap junctions   | Channels between cells for direct communication       | Heart muscle, embryos                |
 
 Tight junctions prevent substances from passing between cells (forcing them through the cells
 Themselves, which can regulate transport). Desmosomes provide mechanical strength to tissues under
@@ -575,8 +580,8 @@ Peroxide ($\mathrm{H{}_2\mathrm{O{}_2$), which catalase converts to water and ox
 ## Review: Microscopy Techniques
 
 **Light microscopy:** Uses visible light and glass lenses. Maximum resolution approximately 200 nm.
-Can observe living cells. Limited magnification ( up to $\times$1500). Staining increases
-Contrast: methylene blue stains DNA blue; iodine stains starch blue-black.
+Can observe living cells. Limited magnification ( up to $\times$1500). Staining increases Contrast:
+methylene blue stains DNA blue; iodine stains starch blue-black.
 
 **Electron microscopy:** Uses a beam of electrons and electromagnetic lenses. Maximum resolution
 Approximately 0.2 nm. Much higher magnification (up to $\times$2,000,000). Cannot observe living
@@ -613,10 +618,10 @@ $\times$1,500 (beyond this, the image becomes blurry due to the resolution limit
 **Endocytosis:** The cell membrane folds inward to form a vesicle, engulfing external material.
 
 - **Phagocytosis ("cell eating"):** Large solid particles are engulfed. The vesicle fuses with a
- lysosome for digestion.
+  lysosome for digestion.
 - **Pinocytosis ("cell drinking"):** Small droplets of extracellular fluid are taken in.
 - **Receptor-mediated endocytosis:** Specific molecules bind to receptors, cluster in coated pits,
- and are internalised in clathrin-coated vesicles.
+  and are internalised in clathrin-coated vesicles.
 
 **Exocytosis:** Vesicles fuse with the plasma membrane, releasing contents outside the cell. Used
 For secretion of hormones and neurotransmitters.
@@ -680,8 +685,8 @@ Host cell membrane.
 
 **Lysogenic cycle (temperate phages):** Some viruses (e.g., bacteriophage lambda) can integrate
 Their DNA into the host chromosome as a prophage. The prophage is replicated along with the host DNA
-And is passed to daughter cells during cell division. (e.g., stress), the
-Prophage can be excised and enter the lytic cycle.
+And is passed to daughter cells during cell division. (e.g., stress), the Prophage can be excised
+and enter the lytic cycle.
 
 **Worked Example: Why antibiotics do not work against viruses.**
 
@@ -709,30 +714,30 @@ Multiple drugs to prevent resistance.
 
 ## Review: Detailed Comparison of Cell Junctions
 
-| Feature | Tight Junctions | Desmosomes | Gap Junctions |
+| Feature           | Tight Junctions                 | Desmosomes                                      | Gap Junctions                    |
 | ----------------- | ------------------------------- | ----------------------------------------------- | -------------------------------- |
-| Structure | Fusion of outer membrane layers | Disc-shaped plaques with intermediate filaments | Protein channels (connexins) |
-| Function | Seal between cells | Mechanical adhesion | Direct communication |
-| What passes | Nothing (seal) | Mechanical stress | Ions, small molecules, signals |
-| Location examples | Intestinal epithelium | Skin, heart muscle | Cardiac muscle, embryonic tissue |
+| Structure         | Fusion of outer membrane layers | Disc-shaped plaques with intermediate filaments | Protein channels (connexins)     |
+| Function          | Seal between cells              | Mechanical adhesion                             | Direct communication             |
+| What passes       | Nothing (seal)                  | Mechanical stress                               | Ions, small molecules, signals   |
+| Location examples | Intestinal epithelium           | Skin, heart muscle                              | Cardiac muscle, embryonic tissue |
 
 ## Review: Summary Table of Organelle Functions
 
-| Organelle | Function | Found In |
+| Organelle       | Function                                            | Found In                |
 | --------------- | --------------------------------------------------- | ----------------------- |
-| Nucleus | DNA storage, transcription, ribosome assembly | All eukaryotes |
-| Mitochondria | Aerobic respiration, ATP production | All eukaryotes |
-| Chloroplasts | Photosynthesis | Plants, algae |
-| Rough ER | Protein synthesis, folding, modification | All eukaryotes |
-| Smooth ER | Lipid synthesis, detoxification, Ca$^{2+}$ storage | All eukaryotes |
-| Golgi apparatus | Modification, sorting, packaging of proteins/lipids | All eukaryotes |
-| Lysosomes | Intracellular digestion, autophagy | Animals, some protists |
-| Peroxisomes | Fatty acid oxidation, detoxification of H$_2$O$_2$ | All eukaryotes |
-| Vacuole | Storage, turgor pressure | Plants, protists |
-| Cytoskeleton | Support, movement, intracellular transport | All eukaryotes |
-| Cell wall | Structural support, protection | Plants, fungi, bacteria |
-| Centrioles | Organise microtubules, mitotic spindle | Animals |
-| Plasmodesmata | Intercellular communication in plants | Plants |
+| Nucleus         | DNA storage, transcription, ribosome assembly       | All eukaryotes          |
+| Mitochondria    | Aerobic respiration, ATP production                 | All eukaryotes          |
+| Chloroplasts    | Photosynthesis                                      | Plants, algae           |
+| Rough ER        | Protein synthesis, folding, modification            | All eukaryotes          |
+| Smooth ER       | Lipid synthesis, detoxification, Ca$^{2+}$ storage  | All eukaryotes          |
+| Golgi apparatus | Modification, sorting, packaging of proteins/lipids | All eukaryotes          |
+| Lysosomes       | Intracellular digestion, autophagy                  | Animals, some protists  |
+| Peroxisomes     | Fatty acid oxidation, detoxification of H$_2$O$_2$  | All eukaryotes          |
+| Vacuole         | Storage, turgor pressure                            | Plants, protists        |
+| Cytoskeleton    | Support, movement, intracellular transport          | All eukaryotes          |
+| Cell wall       | Structural support, protection                      | Plants, fungi, bacteria |
+| Centrioles      | Organise microtubules, mitotic spindle              | Animals                 |
+| Plasmodesmata   | Intercellular communication in plants               | Plants                  |
 
 ## Practice Problems
 
@@ -770,14 +775,14 @@ Leak channel and (b) the $\mathrm{Na{}^+/\mathrm{K{}^+$ pump, and explain your r
 <details>
 <summary>Answer</summary>
 
-(a) Through a $\mathrm{K{}^+$ leak channel (passive transport): $\mathrm{K{}^+$ would move out of the
-Cell. The concentration gradient favours outward movement (140 mM inside vs 5 mM outside). The
+(a) Through a $\mathrm{K{}^+$ leak channel (passive transport): $\mathrm{K{}^+$ would move out of
+the Cell. The concentration gradient favours outward movement (140 mM inside vs 5 mM outside). The
 Electrical gradient also favours outward movement because the inside of the cell is negative,
 Repelling the positive $\mathrm{K{}^+$ ions. Both gradients drive $\mathrm{K{}^+$ out of the cell.
 
-(b) Through the $\mathrm{Na{}^+/\mathrm{K{}^+$ pump (active transport): The pump moves $\mathrm{K{}^+$
-Into the cell against its concentration gradient. This requires ATP hydrolysis. The pump
-Continuously transports $2 \mathrm{ K{}^+$ in and $3 \mathrm{ Na{}^+$ out per ATP consumed,
+(b) Through the $\mathrm{Na{}^+/\mathrm{K{}^+$ pump (active transport): The pump moves
+$\mathrm{K{}^+$ Into the cell against its concentration gradient. This requires ATP hydrolysis. The
+pump Continuously transports $2 \mathrm{ K{}^+$ in and $3 \mathrm{ Na{}^+$ out per ATP consumed,
 Maintaining the resting membrane potential and the concentration gradients.
 
 </details>
@@ -819,10 +824,10 @@ Normally, a G-protein is activated when it binds GTP and is inactivated when it 
 GDP. Cholera toxin prevents GTP hydrolysis, locking the G-protein in its active state. The
 Constitutively active G-protein continuously activates adenylyl cyclase, which produces excessive
 CAMP. Elevated cAMP activates protein kinase A (PKA), which phosphorylates and opens CFTR chloride
-Channels. Massive amounts of $\mathrm{Cl{}^-$ are secreted into the intestinal lumen. $\mathrm{Na{}^+$
-And water follow by osmosis, producing large volumes of watery diarrhoea. This demonstrates how
-Disrupting the normal "off" switch in a signaling pathway can have severe physiological
-Consequences.
+Channels. Massive amounts of $\mathrm{Cl{}^-$ are secreted into the intestinal lumen.
+$\mathrm{Na{}^+$ And water follow by osmosis, producing large volumes of watery diarrhoea. This
+demonstrates how Disrupting the normal "off" switch in a signaling pathway can have severe
+physiological Consequences.
 
 </details>
 

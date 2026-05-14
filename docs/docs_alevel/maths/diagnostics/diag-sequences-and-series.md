@@ -1,6 +1,8 @@
 ---
-title: "Sequences and Series -- Diagnostic Tests"
-description: Hard diagnostic tests for sequences and series covering convergence, sigma notation, recurrence relations, telescoping sums, and tolerance bounds.
+title: 'Sequences and Series -- Diagnostic Tests'
+description:
+  Hard diagnostic tests for sequences and series covering convergence, sigma notation, recurrence
+  relations, telescoping sums, and tolerance bounds.
 slug: diag-sequences-and-series
 hide_table_of_contents: true
 ---
@@ -21,7 +23,8 @@ $$S_n = \sum_{r=1}^{n} \frac{1}{r(r+1)(r+2)}$$
 
 Express your answer in terms of $n$And hence find $\lim_{n \to \infty} S_n$.
 
-[Difficulty: hard. Tests partial fraction decomposition for a telescoping series with three factors in the denominator, where the cancellation pattern is commonly misidentified.]
+[Difficulty: hard. Tests partial fraction decomposition for a telescoping series with three factors
+in the denominator, where the cancellation pattern is commonly misidentified.]
 
 **Solution:**
 
@@ -45,7 +48,8 @@ Substituting $r = -2$: $1 = C(-2)(-1) \implies C = \frac{1}{2}$.
 
 $$\frac{1/2}{r} - \frac{1}{r+1} + \frac{1/2}{r+2} = \frac{(r+1)(r+2) - 2r(r+2) + r(r+1)}{2r(r+1)(r+2)}$$
 
-Numerator: $(r^2 + 3r + 2) + (-2r^2 - 4r) + (r^2 + r) = (r^2 - 2r^2 + r^2) + (3r - 4r + r) + 2 = 0 + 0 + 2 = 2$.
+Numerator:
+$(r^2 + 3r + 2) + (-2r^2 - 4r) + (r^2 + r) = (r^2 - 2r^2 + r^2) + (3r - 4r + r) + 2 = 0 + 0 + 2 = 2$.
 
 So the fraction is $\frac{2}{2r(r+1)(r+2)} = \frac{1}{r(r+1)(r+2)}$. Confirmed.
 
@@ -61,7 +65,8 @@ $$= \frac{1}{2}\sum_{r=1}^{n}\frac{1}{r} - \sum_{r=2}^{n+1}\frac{1}{r} + \frac{1
 
 $$= \left(\frac{1}{2} \cdot 1 + \frac{1}{2} \cdot \frac{1}{2} + \frac{1}{2}\sum_{r=3}^{n}\frac{1}{r}\right) - \left(\frac{1}{2} + \sum_{r=3}^{n}\frac{1}{r} + \frac{1}{n+1}\right) + \left(\frac{1}{2}\sum_{r=3}^{n}\frac{1}{r} + \frac{1}{2}\cdot\frac{1}{n+1} + \frac{1}{2}\cdot\frac{1}{n+2}\right)$$
 
-Collecting terms involving $\sum_{r=3}^{n}\frac{1}{r}$: $\frac{1}{2} - 1 + \frac{1}{2} = 0$. The sums cancel (confirming the telescoping).
+Collecting terms involving $\sum_{r=3}^{n}\frac{1}{r}$: $\frac{1}{2} - 1 + \frac{1}{2} = 0$. The
+sums cancel (confirming the telescoping).
 
 Remaining terms:
 
@@ -87,13 +92,17 @@ $$\sum_{r=4}^{n+3} (r-3)^2$$
 
 In terms of $n$.
 
-A common student error is to substitute $r - 3$ into the formula and write $\frac{(n+3)(n+4)(2n+7)}{6}$. Identify the mistake in this approach and give the correct answer.
+A common student error is to substitute $r - 3$ into the formula and write
+$\frac{(n+3)(n+4)(2n+7)}{6}$. Identify the mistake in this approach and give the correct answer.
 
-[Difficulty: hard. Tests the common error of not adjusting the summation limits when performing an index shift.]
+[Difficulty: hard. Tests the common error of not adjusting the summation limits when performing an
+index shift.]
 
 **Solution:**
 
-**The student's error:** The student substitutes $r - 3$ for $r$ in the formula but forgets that the upper limit also changes. The formula $\sum_{r=1}^{m} r^2 = \frac{m(m+1)(2m+1)}{6}$ requires the sum to start at $r = 1$ and end at $r = m$.
+**The student's error:** The student substitutes $r - 3$ for $r$ in the formula but forgets that the
+upper limit also changes. The formula $\sum_{r=1}^{m} r^2 = \frac{m(m+1)(2m+1)}{6}$ requires the sum
+to start at $r = 1$ and end at $r = m$.
 
 **Correct approach — Method 1: Index shift.**
 
@@ -105,7 +114,8 @@ $$\sum_{r=4}^{n+3} (r-3)^2 = \sum_{k=1}^{n} k^2 = \frac{n(n+1)(2n+1)}{6}$$
 
 $$\sum_{r=4}^{n+3} (r-3)^2 = \sum_{r=1}^{n+3} (r-3)^2 - \sum_{r=1}^{3} (r-3)^2$$
 
-Note that $\sum_{r=1}^{n+3}(r-3)^2 = \sum_{k=-2}^{n} k^2$ where $k = r - 3$. This is not the standard form. We need to be more careful:
+Note that $\sum_{r=1}^{n+3}(r-3)^2 = \sum_{k=-2}^{n} k^2$ where $k = r - 3$. This is not the
+standard form. We need to be more careful:
 
 $$\sum_{r=4}^{n+3} (r-3)^2 = \sum_{r=1}^{n+3}(r-3)^2 - \sum_{r=1}^{3}(r-3)^2$$
 
@@ -115,7 +125,9 @@ $$= \sum_{k=1}^{n} k^2 + (-2)^2 + (-1)^2 - [4 + 1 + 0]$$
 
 $$= \sum_{k=1}^{n} k^2 + 4 + 1 - 5 = \sum_{k=1}^{n} k^2 = \frac{n(n+1)(2n+1)}{6}$$
 
-**The student's answer** was $\frac{(n+3)(n+4)(2n+7)}{6}$Which equals $\sum_{r=1}^{n+3} r^2$Not $\sum_{r=4}^{n+3}(r-3)^2$. The student incorrectly treated the sum as starting from $r = 1$ with upper limit $n + 3$.
+**The student's answer** was $\frac{(n+3)(n+4)(2n+7)}{6}$Which equals $\sum_{r=1}^{n+3} r^2$Not
+$\sum_{r=4}^{n+3}(r-3)^2$. The student incorrectly treated the sum as starting from $r = 1$ with
+upper limit $n + 3$.
 
 ---
 
@@ -135,7 +147,8 @@ With $u_1 = 1$ and $u_2 = 5$.
 
 **(c)** Find the smallest value of $n$ such that $u_n > 10000$.
 
-[Difficulty: hard. Tests solving second-order linear recurrence relations using the characteristic equation method.]
+[Difficulty: hard. Tests solving second-order linear recurrence relations using the characteristic
+equation method.]
 
 **Solution:**
 
@@ -149,25 +162,20 @@ $$u_5 = 5(65) - 6(19) = 325 - 114 = 211$$
 
 **(b)** The characteristic equation is:
 
-$$\lambda^2 - 5\lambda + 6 = 0$$
-$$(\lambda - 2)(\lambda - 3) = 0$$
+$$\lambda^2 - 5\lambda + 6 = 0$$ $$(\lambda - 2)(\lambda - 3) = 0$$
 $$\lambda = 2 \quad \text{or} \quad \lambda = 3$$
 
 The general solution is $u_n = A \cdot 2^n + B \cdot 3^n$.
 
 Using the initial conditions:
 
-$$n = 1: A \cdot 2 + B \cdot 3 = 1$$
-$$n = 2: A \cdot 4 + B \cdot 9 = 5$$
+$$n = 1: A \cdot 2 + B \cdot 3 = 1$$ $$n = 2: A \cdot 4 + B \cdot 9 = 5$$
 
 From the first equation: $A = \frac{1 - 3B}{2}$.
 
 Substituting into the second:
 
-$$4\left(\frac{1-3B}{2}\right) + 9B = 5$$
-$$2 - 6B + 9B = 5$$
-$$3B = 3$$
-$$B = 1$$
+$$4\left(\frac{1-3B}{2}\right) + 9B = 5$$ $$2 - 6B + 9B = 5$$ $$3B = 3$$ $$B = 1$$
 
 $$A = \frac{1 - 3}{2} = -1$$
 
@@ -189,7 +197,8 @@ The smallest value is $n = 9$.
 
 ## Integration Tests
 
-> Tests synthesis of sequences and series with other topics. Requires combining concepts from multiple units.
+> Tests synthesis of sequences and series with other topics. Requires combining concepts from
+> multiple units.
 
 ### IT-1: Integral as a Limit of Partial Sums (with Integration)
 
@@ -199,23 +208,30 @@ The smallest value is $n = 9$.
 
 **(b)** Hence evaluate $\lim_{n \to \infty} \sum_{r=1}^{n} \frac{r}{n^2}$.
 
-**(c)** By interpreting the limit in part (b) as a Riemann sum, identify the corresponding definite integral and verify your answer by direct integration.
+**(c)** By interpreting the limit in part (b) as a Riemann sum, identify the corresponding definite
+integral and verify your answer by direct integration.
 
 **(d)** Use a similar approach to evaluate $\lim_{n \to \infty} \sum_{r=1}^{n} \frac{r^2}{n^3}$.
 
-[Difficulty: hard. Connects summation to integration through Riemann sums, testing understanding of the Fundamental Theorem of Calculus.]
+[Difficulty: hard. Connects summation to integration through Riemann sums, testing understanding of
+the Fundamental Theorem of Calculus.]
 
 **Solution:**
 
-**(a)** $\sum_{r=1}^{n} \frac{r}{n^2} = \frac{1}{n^2}\sum_{r=1}^{n} r = \frac{1}{n^2} \cdot \frac{n(n+1)}{2} = \frac{n(n+1)}{2n^2}$.
+**(a)**
+$\sum_{r=1}^{n} \frac{r}{n^2} = \frac{1}{n^2}\sum_{r=1}^{n} r = \frac{1}{n^2} \cdot \frac{n(n+1)}{2} = \frac{n(n+1)}{2n^2}$.
 
-**(b)** $\lim_{n \to \infty} \frac{n(n+1)}{2n^2} = \lim_{n \to \infty} \frac{n+1}{2n} = \lim_{n \to \infty} \frac{1 + 1/n}{2} = \frac{1}{2}$.
+**(b)**
+$\lim_{n \to \infty} \frac{n(n+1)}{2n^2} = \lim_{n \to \infty} \frac{n+1}{2n} = \lim_{n \to \infty} \frac{1 + 1/n}{2} = \frac{1}{2}$.
 
-**(c)** The sum $\sum_{r=1}^{n} \frac{r}{n^2} = \sum_{r=1}^{n} \frac{r}{n} \cdot \frac{1}{n}$ is a Riemann sum for $\int_0^1 x \, dx$ with $n$ subdivisions, using right-endpoint evaluation (since $x_r = r/n$).
+**(c)** The sum $\sum_{r=1}^{n} \frac{r}{n^2} = \sum_{r=1}^{n} \frac{r}{n} \cdot \frac{1}{n}$ is a
+Riemann sum for $\int_0^1 x \, dx$ with $n$ subdivisions, using right-endpoint evaluation (since
+$x_r = r/n$).
 
 Verification: $\int_0^1 x \, dx = \left[\frac{x^2}{2}\right]_0^1 = \frac{1}{2}$. Confirmed.
 
-**(d)** $\sum_{r=1}^{n} \frac{r^2}{n^3} = \sum_{r=1}^{n} \left(\frac{r}{n}\right)^2 \cdot \frac{1}{n}$.
+**(d)**
+$\sum_{r=1}^{n} \frac{r^2}{n^3} = \sum_{r=1}^{n} \left(\frac{r}{n}\right)^2 \cdot \frac{1}{n}$.
 
 This is a Riemann sum for $\int_0^1 x^2 \, dx$.
 
@@ -241,36 +257,42 @@ A sequence is defined by $x_0 = 1$ and $x_{n+1} = f(x_n) = \cos(x_n)$ for $n \ge
 
 **(b)** Prove that the sequence $(x_n)$ is convergent.
 
-**(c)** The limit $L$ satisfies $L = \cos L$. By considering the function $g(x) = x - \cos x$Show that $L$ is the unique solution to this equation in $[0, \pi/2]$.
+**(c)** The limit $L$ satisfies $L = \cos L$. By considering the function $g(x) = x - \cos x$Show
+that $L$ is the unique solution to this equation in $[0, \pi/2]$.
 
 **(d)** Use the Newton-Raphson method with starting value $x_0 = 1$ to find $L$ to 8 decimal places.
 
-[Difficulty: hard. Combines fixed-point iteration, convergence proofs, and the Newton-Raphson method.]
+[Difficulty: hard. Combines fixed-point iteration, convergence proofs, and the Newton-Raphson
+method.]
 
 **Solution:**
 
 **(a)** Using a calculator (radians):
 
-$$x_1 = \cos(1) = 0.540302$$
-$$x_2 = \cos(0.540302) = 0.857553$$
-$$x_3 = \cos(0.857553) = 0.654290$$
+$$x_1 = \cos(1) = 0.540302$$ $$x_2 = \cos(0.540302) = 0.857553$$ $$x_3 = \cos(0.857553) = 0.654290$$
 $$x_4 = \cos(0.654290) = 0.793480$$
 
-**(b)** To prove convergence, we use the contraction mapping theorem. We need $|f'(x)| < 1$ on the relevant interval.
+**(b)** To prove convergence, we use the contraction mapping theorem. We need $|f'(x)| < 1$ on the
+relevant interval.
 
 $f'(x) = -\sin x$So $|f'(x)| = |\sin x| \leq \sin(1) \approx 0.841 < 1$ for all $x \in [0, 1]$.
 
-Since $x_0 = 1 \in [0, 1]$ and $f$ maps $[0, 1]$ into itself (because $\cos(0) = 1 \leq 1$ and $\cos(1) \approx 0.54 \geq 0$), and $|f'(x)| \leq k < 1$ for all $x \in [0, 1]$ where $k = \sin 1$The sequence converges by the Banach fixed-point theorem.
+Since $x_0 = 1 \in [0, 1]$ and $f$ maps $[0, 1]$ into itself (because $\cos(0) = 1 \leq 1$ and
+$\cos(1) \approx 0.54 \geq 0$), and $|f'(x)| \leq k < 1$ for all $x \in [0, 1]$ where
+$k = \sin 1$The sequence converges by the Banach fixed-point theorem.
 
 **(c)** $g(x) = x - \cos x$. Then $g(0) = 0 - 1 = -1 < 0$ and $g(\pi/2) = \pi/2 - 0 = \pi/2 > 0$.
 
 By the intermediate value theorem, there exists $L \in (0, \pi/2)$ with $g(L) = 0$.
 
-For uniqueness: $g'(x) = 1 + \sin x > 0$ for all $x \in [0, \pi/2]$ (since $\sin x \geq 0$ in this interval). Therefore $g$ is strictly increasing on $[0, \pi/2]$So $g(x) = 0$ has at most one solution in this interval.
+For uniqueness: $g'(x) = 1 + \sin x > 0$ for all $x \in [0, \pi/2]$ (since $\sin x \geq 0$ in this
+interval). Therefore $g$ is strictly increasing on $[0, \pi/2]$So $g(x) = 0$ has at most one
+solution in this interval.
 
 Combined: there is exactly one solution $L \in (0, \pi/2)$.
 
-**(d)** Newton-Raphson: $x_{n+1} = x_n - \frac{g(x_n)}{g'(x_n)} = x_n - \frac◆LB◆x_n - \cos x_n◆RB◆◆LB◆1 + \sin x_n◆RB◆$.
+**(d)** Newton-Raphson:
+$x_{n+1} = x_n - \frac{g(x_n)}{g'(x_n)} = x_n - \frac◆LB◆x_n - \cos x_n◆RB◆◆LB◆1 + \sin x_n◆RB◆$.
 
 Starting with $x_0 = 1$:
 
@@ -314,7 +336,8 @@ $$\sum_{r=1}^{n} r\binom{n}{r} = n \cdot 2^{n-1}$$
 
 $$\sum_{r=1}^{n} r^2 \binom{n}{r}$$
 
-[Difficulty: hard. Tests generating function techniques applied to combinatorial sums through differentiation of the binomial expansion.]
+[Difficulty: hard. Tests generating function techniques applied to combinatorial sums through
+differentiation of the binomial expansion.]
 
 **Solution:**
 
@@ -356,4 +379,5 @@ $$n \cdot 2^{n-2}(1 + n) = \sum_{r=1}^{n} r^2\binom{n}{r}$$
 
 $$\sum_{r=1}^{n} r^2\binom{n}{r} = n(n+1) \cdot 2^{n-2}$$
 
-**Verification for $n = 3$:** LHS $= 1 \cdot 3 + 4 \cdot 3 + 9 \cdot 1 = 3 + 12 + 9 = 24$. RHS $= 3 \cdot 4 \cdot 2 = 24$. Confirmed.
+**Verification for $n = 3$:** LHS $= 1 \cdot 3 + 4 \cdot 3 + 9 \cdot 1 = 3 + 12 + 9 = 24$. RHS
+$= 3 \cdot 4 \cdot 2 = 24$. Confirmed.

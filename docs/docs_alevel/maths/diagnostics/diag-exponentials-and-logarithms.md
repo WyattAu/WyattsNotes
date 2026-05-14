@@ -1,6 +1,8 @@
 ---
-title: "Exponentials and Logarithms -- Diagnostic Tests"
-description: "Hard diagnostic tests for exponentials and logarithms covering power-law conflation, hidden quadratics, domain traps, and change-of-base errors at A-Level"
+title: 'Exponentials and Logarithms -- Diagnostic Tests'
+description:
+  'Hard diagnostic tests for exponentials and logarithms covering power-law conflation, hidden
+  quadratics, domain traps, and change-of-base errors at A-Level'
 slug: diag-exponentials-and-logarithms
 hide_table_of_contents: true
 ---
@@ -17,11 +19,13 @@ hide_table_of_contents: true
 
 **(a)** Without using a calculator, determine which is larger: $\pi^e$ or $e^\pi$.
 
-**(b)** A student writes $\ln(x^2) = (\ln x)^2$ and uses this to solve $\ln(x^2) = 4$. Find the correct solution set and the (incorrect) solution set the student would obtain.
+**(b)** A student writes $\ln(x^2) = (\ln x)^2$ and uses this to solve $\ln(x^2) = 4$. Find the
+correct solution set and the (incorrect) solution set the student would obtain.
 
 **(c)** Solve the equation $2^x = x^2$ for real $x$Giving exact answers where possible.
 
-[Difficulty: hard. Tests the fundamental distinction between $\ln(a^b) = b\ln a$ and $(\ln a)^b$And requires analytical comparison of transcendental expressions.]
+[Difficulty: hard. Tests the fundamental distinction between $\ln(a^b) = b\ln a$ and $(\ln a)^b$And
+requires analytical comparison of transcendental expressions.]
 
 **Solution:**
 
@@ -29,7 +33,8 @@ hide_table_of_contents: true
 
 $$f'(x) = \frac◆LB◆1 \cdot x - \ln x \cdot 1◆RB◆◆LB◆x^2◆RB◆ = \frac◆LB◆1 - \ln x◆RB◆◆LB◆x^2◆RB◆$$
 
-$f'(x) = 0$ when $\ln x = 1$I.e. $x = e$. For $x \lt e$: $f'(x) \gt 0$; for $x \gt e$: $f'(x) \lt 0$.
+$f'(x) = 0$ when $\ln x = 1$I.e. $x = e$. For $x \lt e$: $f'(x) \gt 0$; for $x \gt e$:
+$f'(x) \lt 0$.
 
 So $f(x)$ has a global maximum at $x = e$Meaning $f(e) \geq f(\pi)$:
 
@@ -49,13 +54,22 @@ The student's incorrect equation $(\ln x)^2 = 4$ gives $\ln x = \pm 2$So $x = e^
 
 Student's (incorrect) solution set: $\{e^2, e^{-2}\}$.
 
-The student loses $x = -e^2$ (because $\ln x$ is undefined for $x \lt 0$) and gains $x = e^{-2}$ (which is not a solution of the original equation since $\ln(e^{-2})^2 = \ln(e^{-4}) = -4 \neq 4$).
+The student loses $x = -e^2$ (because $\ln x$ is undefined for $x \lt 0$) and gains $x = e^{-2}$
+(which is not a solution of the original equation since $\ln(e^{-2})^2 = \ln(e^{-4}) = -4 \neq 4$).
 
 **(c)** By inspection, $x = 2$ and $x = 4$ are solutions: $2^2 = 4 = 2^2$ and $2^4 = 16 = 4^2$.
 
-For $x \lt 0$: $2^x \gt 0$ and $x^2 \gt 0$So solutions may exist. At $x = -0.7666...$: $2^{-0.7666} \approx 0.587$ and $(-0.7666)^2 \approx 0.588$. This is a solution, which we denote $x = -\frac◆LB◆W(-2\ln 2)◆RB◆◆LB◆2\ln 2◆RB◆$ where $W$ is the Lambert $W$-function. For A-Level purposes, we note there are exactly three solutions: $x \approx -0.767$$x = 2$And $x = 4$.
+For $x \lt 0$: $2^x \gt 0$ and $x^2 \gt 0$So solutions may exist. At $x = -0.7666...$:
+$2^{-0.7666} \approx 0.587$ and $(-0.7666)^2 \approx 0.588$. This is a solution, which we denote
+$x = -\frac◆LB◆W(-2\ln 2)◆RB◆◆LB◆2\ln 2◆RB◆$ where $W$ is the Lambert $W$-function. For A-Level
+purposes, we note there are exactly three solutions: $x \approx -0.767$$x = 2$And $x = 4$.
 
-To show there are no other solutions for $x \geq 0$: consider $g(x) = 2^x - x^2$. We have $g(0) = 1$$g(1) = 1$$g(2) = 0$$g(3) = -1$$g(4) = 0$$g(5) = 7$. Since $g''(x) = 2^x(\ln 2)^2 - 2$And $2^x(\ln 2)^2 \gt 2$ for $x \gt 5$ (because $2^5 \cdot (\ln 2)^2 \approx 2.14$), $g$ is convex for $x \geq 5$ and grows without bound. By Rolle's theorem, there can be at most one root in $(3, 4)$ and at most one in $(4, \infty)$. Since $g(4) = 0$ and $g$ is increasing at $x = 4$There are no further roots beyond $x = 4$.
+To show there are no other solutions for $x \geq 0$: consider $g(x) = 2^x - x^2$. We have
+$g(0) = 1$$g(1) = 1$$g(2) = 0$$g(3) = -1$$g(4) = 0$$g(5) = 7$. Since $g''(x) = 2^x(\ln 2)^2 - 2$And
+$2^x(\ln 2)^2 \gt 2$ for $x \gt 5$ (because $2^5 \cdot (\ln 2)^2 \approx 2.14$), $g$ is convex for
+$x \geq 5$ and grows without bound. By Rolle's theorem, there can be at most one root in $(3, 4)$
+and at most one in $(4, \infty)$. Since $g(4) = 0$ and $g$ is increasing at $x = 4$There are no
+further roots beyond $x = 4$.
 
 ---
 
@@ -67,9 +81,12 @@ To show there are no other solutions for $x \geq 0$: consider $g(x) = 2^x - x^2$
 
 **(b)** Solve $e^{2x} - 5e^x + 6 = 1$ for $x \in \mathbb{R}$Giving exact answers.
 
-**(c)** A student solving part (b) writes $e^{2x} - 5e^x + 5 = 0$Substitutes $u = e^x$And gets $u^2 - 5u + 5 = 0$. Find the values of $u$And explain why the student must check that $u \gt 0$ before taking natural logarithms.
+**(c)** A student solving part (b) writes $e^{2x} - 5e^x + 5 = 0$Substitutes $u = e^x$And gets
+$u^2 - 5u + 5 = 0$. Find the values of $u$And explain why the student must check that $u \gt 0$
+before taking natural logarithms.
 
-[Difficulty: hard. Tests recognition of the hidden quadratic substitution and the positivity constraint on $e^x$ that eliminates spurious solutions.]
+[Difficulty: hard. Tests recognition of the hidden quadratic substitution and the positivity
+constraint on $e^x$ that eliminates spurious solutions.]
 
 **Solution:**
 
@@ -91,11 +108,16 @@ Let $u = e^x$ ($u \gt 0$):
 
 $$u^2 - 5u + 5 = 0 \implies u = \frac◆LB◆5 \pm \sqrt{25 - 20}◆RB◆◆LB◆2◆RB◆ = \frac◆LB◆5 \pm \sqrt{5}◆RB◆◆LB◆2◆RB◆$$
 
-Both roots are positive: $\frac◆LB◆5 - \sqrt{5}◆RB◆◆LB◆2◆RB◆ \approx 1.382 \gt 0$ and $\frac◆LB◆5 + \sqrt{5}◆RB◆◆LB◆2◆RB◆ \approx 3.618 \gt 0$.
+Both roots are positive: $\frac◆LB◆5 - \sqrt{5}◆RB◆◆LB◆2◆RB◆ \approx 1.382 \gt 0$ and
+$\frac◆LB◆5 + \sqrt{5}◆RB◆◆LB◆2◆RB◆ \approx 3.618 \gt 0$.
 
 $$x = \ln\!\left(\frac◆LB◆5 + \sqrt{5}◆RB◆◆LB◆2◆RB◆\right) \quad \text{or} \quad x = \ln\!\left(\frac◆LB◆5 - \sqrt{5}◆RB◆◆LB◆2◆RB◆\right)$$
 
-**(c)** The student obtains $u = \frac◆LB◆5 \pm \sqrt{5}◆RB◆◆LB◆2◆RB◆$Both positive. The check is necessary because if a root were negative or zero, taking $\ln u$ would be undefined. For example, if the equation were $e^{2x} - 3e^x - 4 = 0$Then $u = -1$ or $u = 4$And $u = -1$ would give $e^x = -1$Which has no real solution. This is a common trap: the substitution $u = e^x$ implicitly constrains $u \gt 0$And students who forget this constraint accept spurious solutions.
+**(c)** The student obtains $u = \frac◆LB◆5 \pm \sqrt{5}◆RB◆◆LB◆2◆RB◆$Both positive. The check is
+necessary because if a root were negative or zero, taking $\ln u$ would be undefined. For example,
+if the equation were $e^{2x} - 3e^x - 4 = 0$Then $u = -1$ or $u = 4$And $u = -1$ would give
+$e^x = -1$Which has no real solution. This is a common trap: the substitution $u = e^x$ implicitly
+constrains $u \gt 0$And students who forget this constraint accept spurious solutions.
 
 ---
 
@@ -107,11 +129,14 @@ $$x = \ln\!\left(\frac◆LB◆5 + \sqrt{5}◆RB◆◆LB◆2◆RB◆\right) \quad
 
 **(b)** On the intersection of their domains, show that $f(x) = g(x)$.
 
-**(c)** A student claims $f$ is an even function and $g$ is not. Verify this claim by finding $f(-x)$ and $g(-x)$.
+**(c)** A student claims $f$ is an even function and $g$ is not. Verify this claim by finding
+$f(-x)$ and $g(-x)$.
 
-**(d)** The function $h(x) = \ln(x^2 + 2x + 1)$ is defined for all $x \neq -1$. Express $h(x)$ in the form $2\ln(\dots)$ and state the domain restriction that applies to this equivalent form.
+**(d)** The function $h(x) = \ln(x^2 + 2x + 1)$ is defined for all $x \neq -1$. Express $h(x)$ in
+the form $2\ln(\dots)$ and state the domain restriction that applies to this equivalent form.
 
-[Difficulty: hard. Tests the critical domain difference between $\ln(x^2)$ and $2\ln x$And the consequences for function properties like evenness.]
+[Difficulty: hard. Tests the critical domain difference between $\ln(x^2)$ and $2\ln x$And the
+consequences for function properties like evenness.]
 
 **Solution:**
 
@@ -127,21 +152,25 @@ By the logarithm power law $\ln(a^b) = b\ln a$Valid for $a \gt 0$.
 
 **(c)** $f(-x) = \ln((-x)^2) = \ln(x^2) = f(x)$ for all $x \neq 0$. So $f$ is even.
 
-$g(-x) = 2\ln(-x)$: this is undefined for all $-x \leq 0$I.e. For all $x \geq 0$. Since $g(-x)$ is not even defined on the same domain as $g(x)$$g$ is not an even function.
+$g(-x) = 2\ln(-x)$: this is undefined for all $-x \leq 0$I.e. For all $x \geq 0$. Since $g(-x)$ is
+not even defined on the same domain as $g(x)$$g$ is not an even function.
 
 **(d)** $h(x) = \ln(x^2 + 2x + 1) = \ln((x+1)^2)$.
 
 Using the power law: $h(x) = 2\ln\lvert x+1 \rvert$.
 
-The domain restriction: $\lvert x + 1 \rvert \gt 0 \implies x + 1 \neq 0 \implies x \neq -1$Which matches the original domain.
+The domain restriction: $\lvert x + 1 \rvert \gt 0 \implies x + 1 \neq 0 \implies x \neq -1$Which
+matches the original domain.
 
-A student who writes $h(x) = 2\ln(x+1)$ has restricted the domain to $x \gt -1$Losing all values $x \lt -1$. The correct equivalent form uses the absolute value: $h(x) = 2\ln\lvert x+1 \rvert$.
+A student who writes $h(x) = 2\ln(x+1)$ has restricted the domain to $x \gt -1$Losing all values
+$x \lt -1$. The correct equivalent form uses the absolute value: $h(x) = 2\ln\lvert x+1 \rvert$.
 
 ---
 
 ## Integration Tests
 
-> Tests synthesis of exponentials and logarithms with other topics. Requires combining concepts from multiple units.
+> Tests synthesis of exponentials and logarithms with other topics. Requires combining concepts from
+> multiple units.
 
 ### IT-1: Integrating $e^{ax}\sin(bx)$ by Parts Twice (with Integration)
 
@@ -151,9 +180,11 @@ A student who writes $h(x) = 2\ln(x+1)$ has restricted the domain to $x \gt -1$L
 
 **(b)** Verify your answer by differentiation.
 
-**(c)** Hence evaluate $\int_0^{\frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆} e^{3x}\sin(2x)\, dx$Giving an exact answer.
+**(c)** Hence evaluate $\int_0^{\frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆} e^{3x}\sin(2x)\, dx$Giving an exact
+answer.
 
-[Difficulty: hard. Requires integration by parts applied twice, producing an equation that is solved for the original integral.]
+[Difficulty: hard. Requires integration by parts applied twice, producing an equation that is solved
+for the original integral.]
 
 **Solution:**
 
@@ -193,9 +224,11 @@ $$= \frac{e^{3x}}{13} \cdot 13\sin(2x) = e^{3x}\sin(2x)$$
 
 Confirmed.
 
-**(c)** $\int_0^{\frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆} e^{3x}\sin(2x)\, dx = \left[\frac{e^{3x}}{13}(3\sin(2x) - 2\cos(2x))\right]_0^{\frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆}$
+**(c)**
+$\int_0^{\frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆} e^{3x}\sin(2x)\, dx = \left[\frac{e^{3x}}{13}(3\sin(2x) - 2\cos(2x))\right]_0^{\frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆}$
 
-At $x = \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆$: $e^{3\pi/2}(3\sin\pi - 2\cos\pi) = e^{3\pi/2}(0 + 2) = 2e^{3\pi/2}$
+At $x = \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆$:
+$e^{3\pi/2}(3\sin\pi - 2\cos\pi) = e^{3\pi/2}(0 + 2) = 2e^{3\pi/2}$
 
 At $x = 0$: $e^0(3\sin 0 - 2\cos 0) = 1(0 - 2) = -2$
 
@@ -209,13 +242,16 @@ $$= \frac{1}{13}(2e^{3\pi/2} - (-2)) = \frac◆LB◆2(e^{3\pi/2} + 1)◆RB◆◆
 
 **(a)** Find $\frac{dy}{dx}$ when $y = \ln\!\left(\sqrt{x^2 + 1}\right)$Simplifying your answer.
 
-**(b)** Find the equation of the tangent to the curve $y = \ln\!\left(\sqrt{x^2 + 1}\right)$ at the point where $x = \sqrt{3}$.
+**(b)** Find the equation of the tangent to the curve $y = \ln\!\left(\sqrt{x^2 + 1}\right)$ at the
+point where $x = \sqrt{3}$.
 
 **(c)** Show that the curve has no stationary points.
 
-**(d)** A second curve is defined by $y = e^{-x}\ln(x^2 + 1)$. Find the value of $x$ at which this curve has a stationary point, giving your answer to 3 significant figures.
+**(d)** A second curve is defined by $y = e^{-x}\ln(x^2 + 1)$. Find the value of $x$ at which this
+curve has a stationary point, giving your answer to 3 significant figures.
 
-[Difficulty: hard. Combines the chain rule with logarithmic differentiation, and introduces a product rule with exponential decay.]
+[Difficulty: hard. Combines the chain rule with logarithmic differentiation, and introduces a
+product rule with exponential decay.]
 
 **Solution:**
 
@@ -223,7 +259,8 @@ $$= \frac{1}{13}(2e^{3\pi/2} - (-2)) = \frac◆LB◆2(e^{3\pi/2} + 1)◆RB◆◆
 
 $$\frac{dy}{dx} = \frac{1}{2} \cdot \frac{2x}{x^2+1} = \frac{x}{x^2+1}$$
 
-**(b)** At $x = \sqrt{3}$: $\frac{dy}{dx} = \frac◆LB◆\sqrt{3}◆RB◆◆LB◆3+1◆RB◆ = \frac◆LB◆\sqrt{3}◆RB◆◆LB◆4◆RB◆$.
+**(b)** At $x = \sqrt{3}$:
+$\frac{dy}{dx} = \frac◆LB◆\sqrt{3}◆RB◆◆LB◆3+1◆RB◆ = \frac◆LB◆\sqrt{3}◆RB◆◆LB◆4◆RB◆$.
 
 $y = \frac{1}{2}\ln(3+1) = \frac{1}{2}\ln 4 = \ln 2$.
 
@@ -233,13 +270,19 @@ $$y = \frac◆LB◆\sqrt{3}◆RB◆◆LB◆4◆RB◆x - \frac{3}{4} + \ln 2$$
 
 **(c)** $\frac{dy}{dx} = \frac{x}{x^2+1} = 0 \implies x = 0$.
 
-Wait: $\frac{x}{x^2+1} = 0$ when $x = 0$. Let me check: at $x = 0$$\frac{dy}{dx} = 0$. So $x = 0$ IS a stationary point.
+Wait: $\frac{x}{x^2+1} = 0$ when $x = 0$. Let me check: at $x = 0$$\frac{dy}{dx} = 0$. So $x = 0$ IS
+a stationary point.
 
-The question says "show that the curve has no stationary points." This is incorrect — the curve does have a stationary point at $x = 0$. Let me re-examine.
+The question says "show that the curve has no stationary points." This is incorrect — the curve does
+have a stationary point at $x = 0$. Let me re-examine.
 
-At $x = 0$: $y = \frac{1}{2}\ln 1 = 0$. The gradient is $\frac{0}{1} = 0$. So $x = 0$ is a stationary point. This is a minimum since $\frac{d^2y}{dx^2} = \frac◆LB◆(x^2+1) - x \cdot 2x◆RB◆◆LB◆(x^2+1)^2◆RB◆ = \frac{1-x^2}{(x^2+1)^2}$Which is positive at $x = 0$.
+At $x = 0$: $y = \frac{1}{2}\ln 1 = 0$. The gradient is $\frac{0}{1} = 0$. So $x = 0$ is a
+stationary point. This is a minimum since
+$\frac{d^2y}{dx^2} = \frac◆LB◆(x^2+1) - x \cdot 2x◆RB◆◆LB◆(x^2+1)^2◆RB◆ = \frac{1-x^2}{(x^2+1)^2}$Which
+is positive at $x = 0$.
 
-The correct statement is that the curve has exactly one stationary point, a minimum at $(0, 0)$. The question as stated is incorrect.
+The correct statement is that the curve has exactly one stationary point, a minimum at $(0, 0)$. The
+question as stated is incorrect.
 
 **(d)** $y = e^{-x}\ln(x^2+1)$.
 
@@ -255,9 +298,12 @@ $$\frac{2x}{x^2+1} = \ln(x^2+1)$$
 
 Let $u = x^2 + 1$ ($u \geq 1$): $\frac{2x}{u} = \ln u$.
 
-This requires numerical solution. By inspection, $x = 0$ gives $0 = \ln 1 = 0$So $x = 0$ is a solution.
+This requires numerical solution. By inspection, $x = 0$ gives $0 = \ln 1 = 0$So $x = 0$ is a
+solution.
 
-For $x \gt 0$: the function $f(x) = \frac{2x}{x^2+1} - \ln(x^2+1)$ starts at $f(0) = 0$ and is negative for $x \gt 0$ (since $\ln(x^2+1)$ grows faster than $\frac{2x}{x^2+1}$ decays). So $x = 0$ is the only stationary point.
+For $x \gt 0$: the function $f(x) = \frac{2x}{x^2+1} - \ln(x^2+1)$ starts at $f(0) = 0$ and is
+negative for $x \gt 0$ (since $\ln(x^2+1)$ grows faster than $\frac{2x}{x^2+1}$ decays). So $x = 0$
+is the only stationary point.
 
 ---
 
@@ -269,11 +315,14 @@ The function $f$ is defined by $f(x) = e^{2x-1}$ for $x \in \mathbb{R}$.
 
 **(a)** Find $f^{-1}(x)$Stating its domain and range.
 
-**(b)** Find the domain of $f^{-1} \circ f$ and the domain of $f \circ f^{-1}$And verify that $(f^{-1} \circ f)(x) = x$ and $(f \circ f^{-1})(x) = x$ on their respective domains.
+**(b)** Find the domain of $f^{-1} \circ f$ and the domain of $f \circ f^{-1}$And verify that
+$(f^{-1} \circ f)(x) = x$ and $(f \circ f^{-1})(x) = x$ on their respective domains.
 
-**(c)** The function $g$ is defined by $g(x) = \ln(x-1) + \ln(x+1)$ for $x \in (1, \infty)$. Express $g(x)$ as a single logarithm and find $g^{-1}(x)$.
+**(c)** The function $g$ is defined by $g(x) = \ln(x-1) + \ln(x+1)$ for $x \in (1, \infty)$. Express
+$g(x)$ as a single logarithm and find $g^{-1}(x)$.
 
-[Difficulty: hard. Combines exponential and logarithmic functions with inverse function theory, requiring careful domain tracking.]
+[Difficulty: hard. Combines exponential and logarithmic functions with inverse function theory,
+requiring careful domain tracking.]
 
 **Solution:**
 
@@ -283,15 +332,19 @@ $$f^{-1}(x) = \frac◆LB◆\ln x + 1◆RB◆◆LB◆2◆RB◆$$
 
 Domain of $f^{-1}$: $x \gt 0$ (since $\ln x$ must be defined, matching the range of $f$).
 
-Range of $f^{-1}$: $\mathbb{R}$ (since $\frac◆LB◆\ln x + 1◆RB◆◆LB◆2◆RB◆$ takes all real values as $x$ ranges over $(0, \infty)$Matching the domain of $f$).
+Range of $f^{-1}$: $\mathbb{R}$ (since $\frac◆LB◆\ln x + 1◆RB◆◆LB◆2◆RB◆$ takes all real values as
+$x$ ranges over $(0, \infty)$Matching the domain of $f$).
 
-**(b)** $(f^{-1} \circ f)(x) = f^{-1}(f(x)) = \frac◆LB◆\ln(e^{2x-1}) + 1◆RB◆◆LB◆2◆RB◆ = \frac{2x-1+1}{2} = x$.
+**(b)**
+$(f^{-1} \circ f)(x) = f^{-1}(f(x)) = \frac◆LB◆\ln(e^{2x-1}) + 1◆RB◆◆LB◆2◆RB◆ = \frac{2x-1+1}{2} = x$.
 
-Domain: the range of $f$ must be within the domain of $f^{-1}$. Range of $f$ is $(0, \infty)$Domain of $f^{-1}$ is $(0, \infty)$. So domain is $\mathbb{R}$.
+Domain: the range of $f$ must be within the domain of $f^{-1}$. Range of $f$ is $(0, \infty)$Domain
+of $f^{-1}$ is $(0, \infty)$. So domain is $\mathbb{R}$.
 
 $(f \circ f^{-1})(x) = f(f^{-1}(x)) = e^{2 \cdot \frac◆LB◆\ln x + 1◆RB◆◆LB◆2◆RB◆ - 1} = e^{\ln x + 1 - 1} = e^{\ln x} = x$.
 
-Domain: the range of $f^{-1}$ is $\mathbb{R}$Which is within the domain of $f$. The domain is $(0, \infty)$ (the domain of $f^{-1}$).
+Domain: the range of $f^{-1}$ is $\mathbb{R}$Which is within the domain of $f$. The domain is
+$(0, \infty)$ (the domain of $f^{-1}$).
 
 **(c)** $g(x) = \ln(x-1) + \ln(x+1) = \ln((x-1)(x+1)) = \ln(x^2 - 1)$ for $x \in (1, \infty)$.
 
@@ -301,6 +354,7 @@ Since $x \gt 1$We take the positive root: $x = \sqrt{e^y + 1}$.
 
 $$g^{-1}(x) = \sqrt{e^x + 1}$$
 
-Domain of $g^{-1}$: $\mathbb{R}$ (since $e^x + 1 \gt 0$ for all $x$). Range of $g^{-1}$: $(1, \infty)$.
+Domain of $g^{-1}$: $\mathbb{R}$ (since $e^x + 1 \gt 0$ for all $x$). Range of $g^{-1}$:
+$(1, \infty)$.
 
 Verification: $g(g^{-1}(x)) = \ln(e^x + 1 - 1) = \ln(e^x) = x$. Confirmed.

@@ -1,6 +1,8 @@
 ---
 title: BMO Preparation
-description: "Comprehensive preparation guide for the British Mathematical Olympiad (BMO) Round 1 and Round 2: number theory, combinatorics, algebra, geometry, worked solutio"
+description:
+  'Comprehensive preparation guide for the British Mathematical Olympiad (BMO) Round 1 and Round 2:
+  number theory, combinatorics, algebra, geometry, worked solutio'
 date: 2026-05-05T00:00:00.000Z
 tags:
   - Mathematics
@@ -10,6 +12,7 @@ categories:
   - Mathematics
 slug: bmo-preparation
 ---
+
 ## 1. Overview of the BMO
 
 The British Mathematical Olympiad (BMO) is the national olympiad competition in the United Kingdom,
@@ -18,10 +21,10 @@ International Mathematical Olympiad (IMO) team selection process.
 
 There are two rounds:
 
-| Round | Format | Duration | Purpose |
-| ----- | ------ | -------- | ------- |
+| Round | Format                            | Duration  | Purpose                                       |
+| ----- | --------------------------------- | --------- | --------------------------------------------- |
 | BMO 1 | 6 questions (each worth 10 marks) | 3.5 hours | Qualification for BMO 2 and initial selection |
-| BMO 2 | 4 questions (each worth 10 marks) | 3.5 hours | IMO squad selection |
+| BMO 2 | 4 questions (each worth 10 marks) | 3.5 hours | IMO squad selection                           |
 
 ### 1.1 Qualification
 
@@ -32,9 +35,9 @@ From BMO 1 qualify for BMO 2. Approximately 20--30 are invited to the IMO traini
 ### 1.2 Format and Marking
 
 BMO problems require full written proofs. Partial credit is awarded for significant progress, but
-The standard is demanding: a complete solution must be logically rigorous, written, and
-Cover all cases. Each problem is worth 10 marks. On BMO 1, a score of 30+ out of 60 is strong; on
-BMO 2, 20+ out of 40 is excellent.
+The standard is demanding: a complete solution must be logically rigorous, written, and Cover all
+cases. Each problem is worth 10 marks. On BMO 1, a score of 30+ out of 60 is strong; on BMO 2, 20+
+out of 40 is excellent.
 
 ### 1.3 Key Differences from School Mathematics
 
@@ -50,19 +53,19 @@ BMO 2, 20+ out of 40 is excellent.
 
 Modular arithmetic is the single most important tool in BMO number theory.
 
-**Fundamental operations.** For integers $a, b, m$ with $m > 0$: $a \equiv b \pmod{m}$ if and only if
-$m \mid (a - b)$. Congruences are compatible with addition, subtraction, and multiplication.
+**Fundamental operations.** For integers $a, b, m$ with $m > 0$: $a \equiv b \pmod{m}$ if and only
+if $m \mid (a - b)$. Congruences are compatible with addition, subtraction, and multiplication.
 Division requires care: $ac \equiv bc \pmod{m}$ implies $a \equiv b \pmod{m/\gcd(c,m)}$.
 
 **Fermat's Little Theorem.** If $p$ is prime and $\gcd(a, p) = 1$Then $a^{p-1} \equiv 1 \pmod{p}$.
 More generally, for any integer $a$ and prime $p$: $a^p \equiv a \pmod{p}$.
 
-**Euler's Theorem.** If $\gcd(a, m) = 1$Then $a^{\phi(m)} \equiv 1 \pmod{m}$Where $\phi$ is
-Euler's totient function.
+**Euler's Theorem.** If $\gcd(a, m) = 1$Then $a^{\phi(m)} \equiv 1 \pmod{m}$Where $\phi$ is Euler's
+totient function.
 
 **Technique: choosing the modulus.** If a problem involves squares, working modulo 4 or modulo 8 is
-Often productive (squares modulo 4 are $0, 1$; modulo 8 are $0, 1, 4$). For powers of 2, modulo 3
-Or modulo 7 may help via Fermat's little theorem.
+Often productive (squares modulo 4 are $0, 1$; modulo 8 are $0, 1, 4$). For powers of 2, modulo 3 Or
+modulo 7 may help via Fermat's little theorem.
 
 ### 2.2 Divisibility and Primes
 
@@ -81,10 +84,11 @@ Then $v_p(a^n - b^n) = v_p(a - b) + v_p(n)$Where $v_p(m)$ denotes the exponent o
 
 ### 2.3 Diophantine Equations
 
-**Linear Diophantine equations.** $ax + by = c$ has integer solutions if and only if $\gcd(a, b) \mid c$.
+**Linear Diophantine equations.** $ax + by = c$ has integer solutions if and only if
+$\gcd(a, b) \mid c$.
 
-**Technique: factoring.** Rewrite the equation as a product equals a product, then use the fundamental
-Theorem of arithmetic to enumerate possibilities.
+**Technique: factoring.** Rewrite the equation as a product equals a product, then use the
+fundamental Theorem of arithmetic to enumerate possibilities.
 
 **Technique: parity and modular arguments.** Check what values the equation can take modulo small
 Integers. This frequently eliminates large classes of potential solutions.
@@ -110,9 +114,9 @@ Objects.
 **Stronger form.** If $n$ objects are placed into $k$ boxes, at least one box contains at least
 $\lceil n/k \rceil$ objects.
 
-**Technique: designing the boxes.** The art lies in choosing what the boxes represent. Common choices
-Include: residue classes modulo $m$Intervals of real numbers, properties of subsets, and graph
-Properties such as degree.
+**Technique: designing the boxes.** The art lies in choosing what the boxes represent. Common
+choices Include: residue classes modulo $m$Intervals of real numbers, properties of subsets, and
+graph Properties such as degree.
 
 ### 3.3 Inclusion-Exclusion
 
@@ -165,22 +169,22 @@ Occurs when all variables are equal.
 
 **Factor Theorem.** $x - a$ divides $P(x)$ iff $P(a) = 0$.
 
-**Rational Root Theorem.** If $P(x) = a_n x^n + \cdots + a_0 \in \mathbb{'\{'}Z{'\}'}[x]$ and $p/q$ is a
-Rational root (in lowest terms), then $p \mid a_0$ and $q \mid a_n$.
+**Rational Root Theorem.** If $P(x) = a_n x^n + \cdots + a_0 \in \mathbb{'\{'}Z{'\}'}[x]$ and $p/q$
+is a Rational root (in lowest terms), then $p \mid a_0$ and $q \mid a_n$.
 
-**Vieta's formulas.** If $P(x) = a_n(x - r_1)\cdots(x - r_n)$Then $\sum r_i = -a_{n-1}/a_n$
-And $\prod r_i = (-1)^n a_0 / a_n$.
+**Vieta's formulas.** If $P(x) = a_n(x - r_1)\cdots(x - r_n)$Then $\sum r_i = -a_{n-1}/a_n$ And
+$\prod r_i = (-1)^n a_0 / a_n$.
 
 ### 4.3 Functional Equations
 
-**Technique: strategic substitution.** Common substitutions: $P(x,x)$$P(x,0)$$P(0,x)$
-Swapping $P(x,y)$ and $P(y,x)$Composing $P(x, P(y,z))$.
+**Technique: strategic substitution.** Common substitutions: $P(x,x)$$P(x,0)$$P(0,x)$ Swapping
+$P(x,y)$ and $P(y,x)$Composing $P(x, P(y,z))$.
 
 **Technique: finding the form.** Often the solution is polynomial. If you suspect $f(x) = ax + b$
 Substitute and solve for $a, b$. Always verify and prove uniqueness.
 
-**Cauchy's equation.** $f(x + y) = f(x) + f(y)$. The general solution over $\mathbb{'\{'}R{'\}'}$ with
-Continuity is $f(x) = cx$. Without regularity conditions, pathological solutions exist.
+**Cauchy's equation.** $f(x + y) = f(x) + f(y)$. The general solution over $\mathbb{'\{'}R{'\}'}$
+with Continuity is $f(x) = cx$. Without regularity conditions, pathological solutions exist.
 
 ---
 
@@ -188,34 +192,37 @@ Continuity is $f(x) = cx$. Without regularity conditions, pathological solutions
 
 ### 5.1 Circle Theorems
 
-**Angle properties.** The angle at the centre is twice the angle at the circumference. Angles in
-The same segment are equal. The angle in a semicircle is a right angle.
+**Angle properties.** The angle at the centre is twice the angle at the circumference. Angles in The
+same segment are equal. The angle in a semicircle is a right angle.
 
 **Power of a point.** If a line through $P$ meets a circle at $A$ and $B$Then $PA \cdot PB$ is
 Constant (the power of $P$). If $PT$ is a tangent, then $PA \cdot PB = PT^2$.
 
 **Cyclic quadrilaterals.** $ABCD$ is cyclic iff $\angle ABC + \angle ADC = 180°$.
 
-**Radical axis.** The locus of points with equal power with respect to two circles is a line.
-The radical axes of three pairwise circles are concurrent (at the radical centre).
+**Radical axis.** The locus of points with equal power with respect to two circles is a line. The
+radical axes of three pairwise circles are concurrent (at the radical centre).
 
 ### 5.2 Coordinate and Complex Number Methods
 
-**Technique: complex numbers on the unit circle.** Place the circumcircle on $|z| = 1$. If
-Vertices are $a, b, c$ with $|a| = |b| = |c| = 1$Then the orthocentre is $a + b + c$ and the
-Circumcentre is $0$.
+**Technique: complex numbers on the unit circle.** Place the circumcircle on $|z| = 1$. If Vertices
+are $a, b, c$ with $|a| = |b| = |c| = 1$Then the orthocentre is $a + b + c$ and the Circumcentre is
+$0$.
 
 **Collinearity.** Points $p, q, r$ are collinear iff $\frac{p - q}{p - r} \in \mathbb{'\{'}R{'\}'}$.
 
-**Perpendicularity.** Lines $PQ$ and $RS$ are perpendicular iff $\frac{p - q}{r - s} \in i\mathbb{'\{'}R{'\}'}$.
+**Perpendicularity.** Lines $PQ$ and $RS$ are perpendicular iff
+$\frac{p - q}{r - s} \in i\mathbb{'\{'}R{'\}'}$.
 
 ### 5.3 Vectors
 
-**Dot product.** $\mathbf{'\{'}a{'\}'} \cdot \mathbf{'\{'}b{'\}'} = |\mathbf{'\{'}a{'\}'}||\mathbf{'\{'}b{'\}'}|\cos\theta$. Converts
-Geometric conditions about angles into algebraic equations.
+**Dot product.**
+$\mathbf{'\{'}a{'\}'} \cdot \mathbf{'\{'}b{'\}'} = |\mathbf{'\{'}a{'\}'}||\mathbf{'\{'}b{'\}'}|\cos\theta$.
+Converts Geometric conditions about angles into algebraic equations.
 
-**Technique: vector proofs.** Assign position vectors $\mathbf{'\{'}a{'\}'}, \mathbf{'\{'}b{'\}'}, \mathbf{'\{'}c{'\}'}$ to
-Vertices and compute. For example, the centroid is $(\mathbf{'\{'}a{'\}'} + \mathbf{'\{'}b{'\}'} + \mathbf{'\{'}c{'\}'})/3$
+**Technique: vector proofs.** Assign position vectors
+$\mathbf{'\{'}a{'\}'}, \mathbf{'\{'}b{'\}'}, \mathbf{'\{'}c{'\}'}$ to Vertices and compute. For
+example, the centroid is $(\mathbf{'\{'}a{'\}'} + \mathbf{'\{'}b{'\}'} + \mathbf{'\{'}c{'\}'})/3$
 And it lies on all three medians by symmetry.
 
 ---
@@ -234,8 +241,8 @@ $3! = 6$.
 By Fermat's Little Theorem, $n^5 \equiv n \pmod{5}$So $n^5 - n \equiv 0 \pmod{5}$.
 
 Alternatively, checking residues modulo 5: if $n \equiv 0$Done. If $n \equiv \pm 1$Then
-$n^2 \equiv 1$So $n^2 - 1 \equiv 0$. If $n \equiv \pm 2$Then $n^2 \equiv 4$So
-$n^2 + 1 \equiv 0$. In all cases, $5 \mid n^5 - n$.
+$n^2 \equiv 1$So $n^2 - 1 \equiv 0$. If $n \equiv \pm 2$Then $n^2 \equiv 4$So $n^2 + 1 \equiv 0$. In
+all cases, $5 \mid n^5 - n$.
 
 Since $\gcd(6, 5) = 1$ and both divide $n^5 - n$We conclude $30 \mid (n^5 - n)$.
 
@@ -250,8 +257,8 @@ $p_1 = 3, p_2 = 7, p_3 = 11, \ldots, p_n$.
 
 Consider $N = 4p_1 p_2 \cdots p_n - 1$. Then $N \equiv 3 \pmod{4}$And $N$ is odd and $N > 1$.
 
-Not all prime factors of $N$ can be of the form $4k + 1$Because the product of numbers of the
-Form $4k + 1$ is also of that form: $(4a+1)(4b+1) = 4(4ab + a + b) + 1$.
+Not all prime factors of $N$ can be of the form $4k + 1$Because the product of numbers of the Form
+$4k + 1$ is also of that form: $(4a+1)(4b+1) = 4(4ab + a + b) + 1$.
 
 Therefore $N$ has at least one prime factor $p$ of the form $4k + 3$. Since $p \mid N$ and
 $N = 4p_1 \cdots p_n - 1$We have $p \nmid 4p_1 \cdots p_n$So $p \neq p_i$ for any $i$.
@@ -274,8 +281,8 @@ Integers share the same residue. If these are $a$ and $b$Then $n \mid (a - b)$.
 
 ### Question 4 (Algebra: Functional Equations)
 
-> Find all functions $f : \mathbb{'\{'}R{'\}'} \to \mathbb{'\{'}R{'\}'}$ such that $f(x^2 + y) = f(x)^2 + f(y)$ for
-> all real $x, y$.
+> Find all functions $f : \mathbb{'\{'}R{'\}'} \to \mathbb{'\{'}R{'\}'}$ such that
+> $f(x^2 + y) = f(x)^2 + f(y)$ for all real $x, y$.
 
 **Solution.** Setting $x = 0$: $f(y) = f(0)^2 + f(y)$So $f(0) = 0$.
 
@@ -301,8 +308,8 @@ By induction, $f(nx) = nf(x)$ for all integers $n$. Setting $x = m/n$ ($n > 0$):
 $nf(m/n) = f(m) = m$So $f(m/n) = m/n$ for all rationals.
 
 Since $f$ agrees with the identity on the rationals (a dense set), $f$ is monotone on $[0, \infty)$
-(because $f(x^2) = f(x)^2$ with $f \geq 0$ on $[0, \infty)$), and $f(x + 1) = f(x) + 1$The
-Function $f(x) = x$ for all $x$ follows by density.
+(because $f(x^2) = f(x)^2$ with $f \geq 0$ on $[0, \infty)$), and $f(x + 1) = f(x) + 1$The Function
+$f(x) = x$ for all $x$ follows by density.
 
 Verification: $f(x^2 + y) = x^2 + y = x^2 + y = f(x)^2 + f(y)$.
 
@@ -331,26 +338,27 @@ This bound is achieved by any triangulation of the $2n$-gon, which uses exactly 
 
 ### Question 6 (Geometry: Angle Chase)
 
-> Let $ABC$ be a triangle with circumcircle $\Gamma$. Let $D$ be the foot of the altitude from
-> $A$ to $BC$And let $M$ be the midpoint of $BC$. The line $AM$ meets $\Gamma$ again at $N$.
-> Prove that $\angle BND = \angle CBA$.
+> Let $ABC$ be a triangle with circumcircle $\Gamma$. Let $D$ be the foot of the altitude from $A$
+> to $BC$And let $M$ be the midpoint of $BC$. The line $AM$ meets $\Gamma$ again at $N$. Prove that
+> $\angle BND = \angle CBA$.
 
 **Solution.** By the power of $M$ with respect to $\Gamma$:
 
 $$MA \cdot MN = MB^2 = MC^2$$
 
-Thus $\triangle MNB \sim \triangle MBA$ by SAS ($MN/MB = MB/MA$Sharing the angle at $M$).
-Similarly, $\triangle MNC \sim \triangle MCA$.
+Thus $\triangle MNB \sim \triangle MBA$ by SAS ($MN/MB = MB/MA$Sharing the angle at $M$). Similarly,
+$\triangle MNC \sim \triangle MCA$.
 
-From these similarities: $\angle MBN = \angle MAB = \angle BAN$ and $\angle MCN = \angle MAC = \angle CAN$.
+From these similarities: $\angle MBN = \angle MAB = \angle BAN$ and
+$\angle MCN = \angle MAC = \angle CAN$.
 
-Let $H$ be the orthocentre of $\triangle ABC$. A well-known fact: the reflection of $H$ across
-$BC$ lies on $\Gamma$. Call this reflection $A'$.
+Let $H$ be the orthocentre of $\triangle ABC$. A well-known fact: the reflection of $H$ across $BC$
+lies on $\Gamma$. Call this reflection $A'$.
 
-Since $A'$ is on $\Gamma$ and $A$ is on $\Gamma$The line $A'A$ is a chord of $\Gamma$. Since
-$A'$ is the reflection of $H$ across $BC$And $AH \perp A'$... Actually, $\angle ABA' = \angle ABH$
-(since $BA' = BH$ by reflection) and $\angle ABH = 90° - \angle BAH$. The key is that
-$A'A \perp BC$... No, that is not true .
+Since $A'$ is on $\Gamma$ and $A$ is on $\Gamma$The line $A'A$ is a chord of $\Gamma$. Since $A'$ is
+the reflection of $H$ across $BC$And $AH \perp A'$... Actually, $\angle ABA' = \angle ABH$ (since
+$BA' = BH$ by reflection) and $\angle ABH = 90° - \angle BAH$. The key is that $A'A \perp BC$... No,
+that is not true .
 
 The cleaner approach: from the similarities, $NB/AB = MN/MA = NC/AC$So $NB \cdot AC = NC \cdot AB$.
 
@@ -358,33 +366,33 @@ This means the spiral similarity centred at $N$ that sends $B$ to $A$ also sends
 $C'$ with $NC'/NB = AC/AB = NC/NA'$... We need $C' = A$ for this to work, which requires
 $NB \cdot AC = NC \cdot AB$ and the angle condition $\angle BNC = \angle BAC$.
 
-Indeed, $\angle BNC = \angle BAC$ (cyclic quadrilateral $ABNC$). So the spiral similarity centred
-At $N$ with angle $\angle BNA$ sends $B \to A$ and $C$ to a point $C'$ on ray $NA$ with
-$NC' = (NA/NB) \cdot NC$. For $C' = A$: $NA = (NA/NB) \cdot NC$So $NB = NC$. But $NB = NC$
-Only when $N$ is equidistant from $B$ and $C$I.e., $N$ lies on the perpendicular bisector of $BC$
-Which is the line $AM$... And $N$ does lie on $AM$. So $NB = NC$ if and only if $N$ is the
-Circumcentre, which is not generally true.
+Indeed, $\angle BNC = \angle BAC$ (cyclic quadrilateral $ABNC$). So the spiral similarity centred At
+$N$ with angle $\angle BNA$ sends $B \to A$ and $C$ to a point $C'$ on ray $NA$ with
+$NC' = (NA/NB) \cdot NC$. For $C' = A$: $NA = (NA/NB) \cdot NC$So $NB = NC$. But $NB = NC$ Only when
+$N$ is equidistant from $B$ and $C$I.e., $N$ lies on the perpendicular bisector of $BC$ Which is the
+line $AM$... And $N$ does lie on $AM$. So $NB = NC$ if and only if $N$ is the Circumcentre, which is
+not generally true.
 
-The correct approach: since $NB/NC = AB/AC$ and $\angle BNC = \angle BAC$The points $A$ and $N$
-Are isogonal conjugates with respect to $\angle BNC = \angle BAC$... Actually, $NB/NC = AB/AC$
-Means $N$ lies on the $A$-Apollonius circle.
+The correct approach: since $NB/NC = AB/AC$ and $\angle BNC = \angle BAC$The points $A$ and $N$ Are
+isogonal conjugates with respect to $\angle BNC = \angle BAC$... Actually, $NB/NC = AB/AC$ Means $N$
+lies on the $A$-Apollonius circle.
 
-For the angle $\angle BND$: since $\triangle MNB \sim \triangle MBA$The spiral similarity centred
-At $M$ sending $N \to B$ also sends $B \to A$. The image of $D$ (on $BC$) under this spiral
-Similarity is a point on $BA$. Specifically, $MD \cdot MA = MN \cdot MB$... Not directly helpful.
+For the angle $\angle BND$: since $\triangle MNB \sim \triangle MBA$The spiral similarity centred At
+$M$ sending $N \to B$ also sends $B \to A$. The image of $D$ (on $BC$) under this spiral Similarity
+is a point on $BA$. Specifically, $MD \cdot MA = MN \cdot MB$... Not directly helpful.
 
-The standard solution uses the following: $\angle BND = \angle BNA - \angle DNA$. Since
-$A, M, N$ are collinear, $\angle DNA = \angle DNM$. And $\angle BNA = \angle BCA$ (cyclic).
+The standard solution uses the following: $\angle BND = \angle BNA - \angle DNA$. Since $A, M, N$
+are collinear, $\angle DNA = \angle DNM$. And $\angle BNA = \angle BCA$ (cyclic).
 
 $\angle DNM = 180° - \angle DN M$... We need $\angle DNM = \angle BCA - \angle CBA$.
 
 Using the similarity and the orthocentre: $\angle BND = \angle CBA$ because $\angle BND$ and
-$\angle CBA$ subtend the same angle in the configuration formed by $\Gamma$The altitude $AD$
-And the median $AM$ extended to $N$. The complete proof uses the fact that $N$ has the property
+$\angle CBA$ subtend the same angle in the configuration formed by $\Gamma$The altitude $AD$ And the
+median $AM$ extended to $N$. The complete proof uses the fact that $N$ has the property
 $NB/NC = AB/AC$ (from the similarity), and combined with the cyclic quadrilateral, this gives the
-Desired angle equality. The key ingredients are: (1) the power of $M$ gives $\triangle MNB \sim \triangle MBA$;
-(2) this yields $NB/NC = AB/AC$; (3) combined with $\angle BNC = \angle BAC$ from cyclicity,
-The desired angle equality follows.
+Desired angle equality. The key ingredients are: (1) the power of $M$ gives
+$\triangle MNB \sim \triangle MBA$; (2) this yields $NB/NC = AB/AC$; (3) combined with
+$\angle BNC = \angle BAC$ from cyclicity, The desired angle equality follows.
 
 ---
 
@@ -397,10 +405,10 @@ And impossibility results.
 
 ### 7.2 Proof by Induction
 
-**Weak induction:** prove $P(1)$ and $P(n) \Rightarrow P(n+1)$.
-**Strong induction:** prove the base case and $P(1) \wedge \cdots \wedge P(n) \Rightarrow P(n+1)$.
-**Technique:** the inductive hypothesis should be strong enough to carry forward. Sometimes the right
-Statement is stronger than what you are trying to prove ("strengthening").
+**Weak induction:** prove $P(1)$ and $P(n) \Rightarrow P(n+1)$. **Strong induction:** prove the base
+case and $P(1) \wedge \cdots \wedge P(n) \Rightarrow P(n+1)$. **Technique:** the inductive
+hypothesis should be strong enough to carry forward. Sometimes the right Statement is stronger than
+what you are trying to prove ("strengthening").
 
 ### 7.3 Proof by Extremal Principle
 
@@ -417,8 +425,8 @@ Terminate.
 
 ### 7.5 Proof by Cases
 
-Split into exhaustive cases and prove each separately. Common splits: parity, sign, residue
-Classes modulo $n$Relative size.
+Split into exhaustive cases and prove each separately. Common splits: parity, sign, residue Classes
+modulo $n$Relative size.
 
 ### 7.6 Double Counting
 
@@ -432,7 +440,8 @@ Identities.
 **Assuming what you need to prove.** The most common error. Each step must follow from previous
 Steps and given information, not from the desired conclusion.
 
-**Ignoring parity.** Many BMO problems have solutions depending on whether variables are even or odd.
+**Ignoring parity.** Many BMO problems have solutions depending on whether variables are even or
+odd.
 
 **Neglecting cases.** A proof covering $a > b$ but not $a = b$ or $a < b$ is incomplete.
 

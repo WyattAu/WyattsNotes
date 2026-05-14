@@ -1,20 +1,22 @@
 ---
 title: Dynamics (Extended)
-description: "A-Level Mathematics notes on Dynamics (Extended): Dynamics (Extended Treatment); 1. Newton's Laws of Motion; 1.1 Statement of the laws."
+description:
+  "A-Level Mathematics notes on Dynamics (Extended): Dynamics (Extended Treatment); 1. Newton's Laws
+  of Motion; 1.1 Statement of the laws."
 date: 2026-04-23T00:00:00.000Z
 tags: [Mathematics, ALevel]
 categories: [Mathematics]
 slug: dynamics-extended
 ---
+
 ## Dynamics (Extended Treatment)
 
-This document provides a rigorous treatment of Newton's laws, connected particles, pulleys, friction,
-Inclined planes, momentum, and impulse.
+This document provides a rigorous treatment of Newton's laws, connected particles, pulleys,
+friction, Inclined planes, momentum, and impulse.
 
-:::info
-A solid understanding of free-body diagrams is essential for all of the material in this document.
-Always draw a clear diagram showing all forces acting on each body before writing any equations.
-:::
+:::info A solid understanding of free-body diagrams is essential for all of the material in this
+document. Always draw a clear diagram showing all forces acting on each body before writing any
+equations. :::
 
 <hr />
 
@@ -66,12 +68,9 @@ $$R - mg = ma$$
 
 (c) Decelerating upward means $a = -3$: $R = 70(9.8 - 3) = 70 \times 6.8 = 476\;\mathrm{N}$
 
-:::warning
-Warning
-The normal reaction is **not always equal to $mg$**. It equals $mg$ only when there is no vertical
-Acceleration. In an accelerating lift, on an inclined plane, or in circular motion, $R$ differs
-From $mg$.
-:::
+:::warning Warning The normal reaction is **not always equal to $mg$**. It equals $mg$ only when
+there is no vertical Acceleration. In an accelerating lift, on an inclined plane, or in circular
+motion, $R$ differs From $mg$. :::
 
 <hr />
 
@@ -83,7 +82,7 @@ For systems of connected particles:
 
 1. Draw a separate free-body diagram for each particle.
 2. Identify the **tension** $T$ in any connecting string (same magnitude on each particle for an
- inextensible string).
+   inextensible string).
 3. Apply Newton's second law to each particle separately.
 4. If the string is inextensible, both particles have the same magnitude of acceleration.
 5. Solve the resulting simultaneous equations.
@@ -180,12 +179,9 @@ Since $a \gt 0$Our assumption was correct.
 
 $T = 5(g - a) = 5(9.8 - 0.754) = 45.23\;\mathrm{N}$
 
-:::warning
-Common Pitfall
-When a pulley problem involves an inclined plane, always state your assumption about which
-Direction the system moves. If the resulting acceleration is negative, your assumption was wrong
-And the system moves the other way.
-:::
+:::warning Common Pitfall When a pulley problem involves an inclined plane, always state your
+assumption about which Direction the system moves. If the resulting acceleration is negative, your
+assumption was wrong And the system moves the other way. :::
 
 <hr />
 
@@ -215,8 +211,8 @@ $$F = \mu R \quad (\mathrm{when\ sliding})$$
 
 The **angle of friction** $\lambda$ is defined by $\tan\lambda = \mu$.
 
-When a body is on the point of sliding on an inclined plane, the angle of the plane equals the
-Angle of friction:
+When a body is on the point of sliding on an inclined plane, the angle of the plane equals the Angle
+of friction:
 
 $$\tan\alpha = \mu$$
 
@@ -277,9 +273,11 @@ System is conserved.
 
 $$m_1\mathbf{u}_1 + m_2\mathbf{u}_2 = m_1\mathbf{v}_1 + m_2\mathbf{v}_2$$
 
-**Proof.** Newton's second law for the system: $\mathbf{F}_{\mathrm{ext}} = \dfrac◆LB◆d\mathbf{p}_{\mathrm{total}}◆RB◆◆LB◆dt◆RB◆$.
+**Proof.** Newton's second law for the system:
+$\mathbf{F}_{\mathrm{ext}} = \dfrac◆LB◆d\mathbf{p}_{\mathrm{total}}◆RB◆◆LB◆dt◆RB◆$.
 
-If $\mathbf{F}_{\mathrm{ext}} = \mathbf{0}$Then $\mathbf{p}_{\mathrm{total}}$ is constant. $\blacksquare$
+If $\mathbf{F}_{\mathrm{ext}} = \mathbf{0}$Then $\mathbf{p}_{\mathrm{total}}$ is constant.
+$\blacksquare$
 
 ### 5.3 Impulse
 
@@ -299,8 +297,8 @@ $$\mathbf{I} = \int_{t_1}^{t_2} \mathbf{F}\,dt$$
 
 **Problem.** A particle of mass $2\;\mathrm{kg}$ moving at $5\;\mathrm{m\,s^{-1}}$ collides with a
 Stationary particle of mass $3\;\mathrm{kg}$. After the collision, the $2\;\mathrm{kg}$ particle
-Moves at $1\;\mathrm{m\,s^{-1}}$ in its original direction. Find the velocity of the $3\;\mathrm{kg}$
-Particle and the magnitude of the impulse exerted on it.
+Moves at $1\;\mathrm{m\,s^{-1}}$ in its original direction. Find the velocity of the
+$3\;\mathrm{kg}$ Particle and the magnitude of the impulse exerted on it.
 
 Conservation of momentum (one dimension):
 
@@ -308,7 +306,8 @@ $$2(5) + 3(0) = 2(1) + 3v$$
 
 $$10 = 2 + 3v \implies v = \frac{8}{3} \approx 2.67\;\mathrm{m\,s^{-1}}$$
 
-Impulse on the $3\;\mathrm{kg}$ particle $= \Delta p = 3v - 0 = 3 \times \dfrac{8}{3} = 8\;\mathrm{Ns}$.
+Impulse on the $3\;\mathrm{kg}$ particle
+$= \Delta p = 3v - 0 = 3 \times \dfrac{8}{3} = 8\;\mathrm{Ns}$.
 
 ### 5.5 Coefficient of restitution
 
@@ -345,12 +344,9 @@ $$2v_1 + 3(v_1 + 5) = 0 \implies 5v_1 = -15 \implies v_1 = -3\;\mathrm{m\,s^{-1}
 
 $$v_2 = -3 + 5 = 2\;\mathrm{m\,s^{-1}}$$
 
-:::warning
-Warning
-The restitution equation uses **relative velocities with the correct signs**. The speed of approach
-Is $|u_1 - u_2|$ and the speed of separation is $|v_2 - v_1|$But the signs in the formula must
-Be consistent with your chosen positive direction.
-:::
+:::warning Warning The restitution equation uses **relative velocities with the correct signs**. The
+speed of approach Is $|u_1 - u_2|$ and the speed of separation is $|v_2 - v_1|$But the signs in the
+formula must Be consistent with your chosen positive direction. :::
 
 <hr />
 
@@ -373,8 +369,8 @@ Gravitational pull of the book on the Earth.
 ### 6.2 Worked example: book on a table in a lift
 
 **Problem.** A book of mass $2\;\mathrm{kg}$ rests on a table of mass $10\;\mathrm{kg}$ inside a
-Lift accelerating upward at $3\;\mathrm{m\,s^{-2}}$. Find: (a) the force exerted by the book on
-The table; (b) the force exerted by the table on the book; (c) the tension in the lift cable.
+Lift accelerating upward at $3\;\mathrm{m\,s^{-2}}$. Find: (a) the force exerted by the book on The
+table; (b) the force exerted by the table on the book; (c) the tension in the lift cable.
 
 (a) and (b) are a Newton's third law pair, so they are equal in magnitude.
 
@@ -386,8 +382,8 @@ The book exerts $25.6\;\mathrm{N}$ downward on the table.
 
 (c) For the entire system (book + table + lift platform):
 
-Let the total mass being accelerated be $M$ (including the lift structure). If we consider just
-The book and table: total mass $= 12\;\mathrm{kg}$Acceleration $= 3\;\mathrm{m\,s^{-2}}$.
+Let the total mass being accelerated be $M$ (including the lift structure). If we consider just The
+book and table: total mass $= 12\;\mathrm{kg}$Acceleration $= 3\;\mathrm{m\,s^{-2}}$.
 
 $$T - 12g = 12(3) \implies T = 12(12.8) = 153.6\;\mathrm{N}$$
 
@@ -399,8 +395,8 @@ $$T - 12g = 12(3) \implies T = 12(12.8) = 153.6\;\mathrm{N}$$
 
 ### Problem 1
 
-A block of mass $5\;\mathrm{kg}$ is pushed along a rough horizontal surface by a horizontal force
-Of $30\;\mathrm{N}$. The coefficient of friction is $0.4$. Find the acceleration of the block.
+A block of mass $5\;\mathrm{kg}$ is pushed along a rough horizontal surface by a horizontal force Of
+$30\;\mathrm{N}$. The coefficient of friction is $0.4$. Find the acceleration of the block.
 
 <details>
 <summary>Solution</summary>
@@ -415,9 +411,9 @@ $$30 - 19.6 = 5a \implies a = \frac{10.4}{5} = 2.08\;\mathrm{m\,s^{-2}}$$
 
 ### Problem 2
 
-Two particles of masses $3\;\mathrm{kg}$ and $7\;\mathrm{kg}$ are connected by a light
-Inextensible string passing over a smooth pulley. The system is released from rest. Find the speed
-Of the particles after they have moved $2\;\mathrm{m}$ and the tension in the string.
+Two particles of masses $3\;\mathrm{kg}$ and $7\;\mathrm{kg}$ are connected by a light Inextensible
+string passing over a smooth pulley. The system is released from rest. Find the speed Of the
+particles after they have moved $2\;\mathrm{m}$ and the tension in the string.
 
 <details>
 <summary>Solution</summary>
@@ -450,7 +446,8 @@ For the $6\;\mathrm{kg}$ mass: $6g - T = 6a$.
 
 For the $4\;\mathrm{kg}$ mass (up the plane): $T - 4g\sin 30^\circ - F = 4a$.
 
-$R = 4g\cos 30^\circ$So $F = 0.2 \times 4g\cos 30^\circ = 0.8g\cos 30^\circ \approx 6.80\;\mathrm{N}$.
+$R = 4g\cos 30^\circ$So
+$F = 0.2 \times 4g\cos 30^\circ = 0.8g\cos 30^\circ \approx 6.80\;\mathrm{N}$.
 
 Adding: $6g - 4g\sin 30^\circ - F = 10a$
 
@@ -465,9 +462,9 @@ Since $a \gt 0$The assumption is correct.
 ### Problem 4
 
 A ball of mass $0.15\;\mathrm{kg}$ is struck by a bat. Immediately before the impact, the ball is
-Moving at $20\;\mathrm{m\,s^{-1}}$ towards the bat. Immediately after, it moves at $30\;\mathrm{m\,s^{-1}}$
-Away from the bat. The impact lasts $0.01\;\mathrm{s}$. Find the magnitude of the force exerted by
-The bat on the ball.
+Moving at $20\;\mathrm{m\,s^{-1}}$ towards the bat. Immediately after, it moves at
+$30\;\mathrm{m\,s^{-1}}$ Away from the bat. The impact lasts $0.01\;\mathrm{s}$. Find the magnitude
+of the force exerted by The bat on the ball.
 
 <details>
 <summary>Solution</summary>
@@ -482,9 +479,9 @@ $$F = \frac◆LB◆I◆RB◆◆LB◆\Delta t◆RB◆ = \frac{7.5}{0.01} = 750\;\
 
 ### Problem 5
 
-A $5\;\mathrm{kg}$ particle moving at $8\;\mathrm{m\,s^{-1}}$ collides directly with a $3\;\mathrm{kg}$
-Particle moving at $2\;\mathrm{m\,s^{-1}}$ in the same direction. The coefficient of restitution is
-$0.6$. Find the velocities after collision and the loss of kinetic energy.
+A $5\;\mathrm{kg}$ particle moving at $8\;\mathrm{m\,s^{-1}}$ collides directly with a
+$3\;\mathrm{kg}$ Particle moving at $2\;\mathrm{m\,s^{-1}}$ in the same direction. The coefficient
+of restitution is $0.6$. Find the velocities after collision and the loss of kinetic energy.
 
 <details>
 <summary>Solution</summary>

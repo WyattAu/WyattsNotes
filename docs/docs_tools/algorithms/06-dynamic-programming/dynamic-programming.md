@@ -1,31 +1,34 @@
 ---
 id: dynamic-programming
 title: Dynamic Programming
-description: "Dynamic Programming — DP Fundamentals; Top-Down (Memoisation) vs Bottom-Up (Tabulation); 1D DP; Climbing Stairs with worked examples and exam-style questions."
+description:
+  'Dynamic Programming — DP Fundamentals; Top-Down (Memoisation) vs Bottom-Up (Tabulation); 1D DP;
+  Climbing Stairs with worked examples and exam-style questions.'
 slug: dynamic-programming
 ---
+
 ## DP Fundamentals
 
 Dynamic programming (DP) solves problems by breaking them into overlapping subproblems, solving each
 Subproblem once, and storing the results. Two properties must hold for DP to apply:
 
 1. **Optimal substructure** — the optimal solution to the problem contains optimal solutions to its
- subproblems
+   subproblems
 2. **Overlapping subproblems** — the same subproblems are solved multiple times in a naive recursive
- solution
+   solution
 
 When both hold, DP reduces an exponential-time recursive solution to polynomial time.
 
 ### Top-Down (Memoisation) vs Bottom-Up (Tabulation)
 
-| Aspect | Top-Down (Memoisation) | Bottom-Up (Tabulation) |
+| Aspect        | Top-Down (Memoisation)           | Bottom-Up (Tabulation)                      |
 | ------------- | -------------------------------- | ------------------------------------------- |
-| Approach | Recursive with caching | Iterative, fill table from base cases |
-| Order | Natural recursion order | Must determine correct fill order |
-| Stack space | $O(n)$ recursion depth | $O(1)$ (no recursion) |
-| Cache control | Only computes needed subproblems | Computes all subproblems |
-| Debugging | Easier to reason about | Harder to see the recurrence |
-| Performance | Slight overhead from recursion | Slightly faster (no function call overhead) |
+| Approach      | Recursive with caching           | Iterative, fill table from base cases       |
+| Order         | Natural recursion order          | Must determine correct fill order           |
+| Stack space   | $O(n)$ recursion depth           | $O(1)$ (no recursion)                       |
+| Cache control | Only computes needed subproblems | Computes all subproblems                    |
+| Debugging     | Easier to reason about           | Harder to see the recurrence                |
+| Performance   | Slight overhead from recursion   | Slightly faster (no function call overhead) |
 
 ## 1D DP
 
@@ -234,12 +237,12 @@ def edit_distance(s1, s2):
     return dp[n][m]
 ```
 
-| Operation | Cost | Intuition |
+| Operation                    | Cost               | Intuition                |
 | ---------------------------- | ------------------ | ------------------------ |
-| Delete `s1[i]` | $dp[i-1][j] + 1$ | Remove character from s1 |
-| Insert `s2[j]` | $dp[i][j-1] + 1$ | Add character to s1 |
-| Replace `s1[i]` with `s2[j]` | $dp[i-1][j-1] + 1$ | Change one character |
-| Match `s1[i] == s2[j]` | $dp[i-1][j-1]$ | No operation needed |
+| Delete `s1[i]`               | $dp[i-1][j] + 1$   | Remove character from s1 |
+| Insert `s2[j]`               | $dp[i][j-1] + 1$   | Add character to s1      |
+| Replace `s1[i]` with `s2[j]` | $dp[i-1][j-1] + 1$ | Change one character     |
+| Match `s1[i] == s2[j]`       | $dp[i-1][j-1]$     | No operation needed      |
 
 ### Knapsack Problem
 
@@ -298,9 +301,9 @@ def unbounded_knapsack(weights, values, capacity):
 The direction of iteration matters for space-optimised knapsack:
 
 - **0/1 knapsack:** iterate $w$ from $W$ down to $weight_i$ (reverse) — prevents using the same item
- twice in one iteration
+  twice in one iteration
 - **Unbounded knapsack:** iterate $w$ from $weight_i$ up to $W$ (forward) — allows reusing the item
- within the same iteration
+  within the same iteration
 
 Getting this direction wrong is one of the most common DP bugs.
 
@@ -426,16 +429,16 @@ def word_break(s, word_dict):
 ## Interval DP
 
 Interval DP problems involve optimising over intervals (subarrays, substrings). The state is
- $dp[i][j]$ representing the optimal value for the subproblem from index $i$ to $j$.
+$dp[i][j]$ representing the optimal value for the subproblem from index $i$ to $j$.
 
 The fill order is critical: shorter intervals must be computed before longer ones (because longer
 Intervals depend on shorter ones).
 
 ### Matrix Chain Multiplication
 
-Given a chain of matrices with dimensions $d_0 \times d_1$$d_1 \times d_2$...,
-$d_{n-1} \times
-D_n$, find the minimum number of scalar multiplications to compute the product.
+Given a chain of matrices with dimensions $d_0 \times d_1$$d_1 \times d_2$..., $d_{n-1} \times
+D_n$,
+find the minimum number of scalar multiplications to compute the product.
 
 $$dp[i][j] = \min_{i \le k \lt j} (dp[i][k] + dp[k+1][j] + d_i \cdot d_{k+1} \cdot d_{j+1})$$
 
@@ -625,15 +628,15 @@ Solution. DP considers all possibilities and chooses the globally optimal one.
 Greedy works when the problem has the **greedy-choice property** — a locally optimal choice leads to
 A globally optimal solution. This holds for matroid structures.
 
-| Problem | Greedy? | DP? | Greedy Complexity |
+| Problem                    | Greedy?            | DP?                | Greedy Complexity |
 | -------------------------- | ------------------ | ------------------ | ----------------- |
-| Activity selection | Yes | Yes | $O(n \log n)$ |
-| Fractional knapsack | Yes | Yes | $O(n \log n)$ |
-| Huffman coding | Yes | Yes | $O(n \log n)$ |
-| Dijkstra's shortest path | Yes (non-negative) | Yes (Bellman-Ford) | $O((V+E) \log V)$ |
-| 0/1 knapsack | **No** | Yes | — |
-| Longest common subsequence | **No** | Yes | — |
-| Edit distance | **No** | Yes | — |
+| Activity selection         | Yes                | Yes                | $O(n \log n)$     |
+| Fractional knapsack        | Yes                | Yes                | $O(n \log n)$     |
+| Huffman coding             | Yes                | Yes                | $O(n \log n)$     |
+| Dijkstra's shortest path   | Yes (non-negative) | Yes (Bellman-Ford) | $O((V+E) \log V)$ |
+| 0/1 knapsack               | **No**             | Yes                | —                 |
+| Longest common subsequence | **No**             | Yes                | —                 |
+| Edit distance              | **No**             | Yes                | —                 |
 
 ### Activity Selection (Greedy Works)
 
@@ -920,7 +923,7 @@ Range is large but the number of points is manageable.
 DP is applicable when a problem has these characteristics:
 
 1. **Optimal substructure:** The optimal solution can be constructed from optimal solutions to
- subproblems
+   subproblems
 2. **Overlapping subproblems:** The recursive solution solves the same subproblem multiple times
 3. **Finite state space:** The number of distinct subproblems is manageable (polynomial)
 

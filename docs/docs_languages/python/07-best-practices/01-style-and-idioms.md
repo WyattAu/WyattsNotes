@@ -1,6 +1,8 @@
 ---
 title: Style and Idioms
-description: "Style and Idioms — Why Style Matters in Python; PEP 8 Essentials; Naming Conventions for thorough revision and examination preparation."
+description:
+  'Style and Idioms — Why Style Matters in Python; PEP 8 Essentials; Naming Conventions for thorough
+  revision and examination preparation.'
 date: 2025-06-04T16:00:00.000Z
 tags:
   - Python
@@ -8,6 +10,7 @@ categories:
   - Python
 slug: style-and-idioms
 ---
+
 ## Why Style Matters in Python
 
 Python's design philosophy famously states that "there should be one-- and preferably only one
@@ -87,8 +90,8 @@ The distinction between `_private` and `__mangled` is worth understanding precis
 Leading underscore is a convention that signals "this is an implementation detail, don't use it from
 Outside the class." It is not enforced by the interpreter -- any code can access `_private`
 Attributes freely. A double leading underscore triggers name mangling: the interpreter rewrites
-`__name` to `_ClassName__name`Which makes it harder (but not impossible) to accidentally access
-From subclasses.
+`__name` to `_ClassName__name`Which makes it harder (but not impossible) to accidentally access From
+subclasses.
 
 ### Line Length and Formatting
 
@@ -321,11 +324,11 @@ Project's requirements. Virtual environments eliminate both problems.
 
 ### venv vs conda vs pyenv
 
-| Tool | Purpose | Isolation Scope |
+| Tool    | Purpose                                      | Isolation Scope                                         |
 | ------- | -------------------------------------------- | ------------------------------------------------------- |
-| `venv` | Creates virtual environments | Python packages only |
+| `venv`  | Creates virtual environments                 | Python packages only                                    |
 | `conda` | Manages environments with multiple languages | Python + non-Python dependencies (C libraries, R, Node) |
-| `pyenv` | Installs multiple Python versions | Python interpreters only (no package isolation) |
+| `pyenv` | Installs multiple Python versions            | Python interpreters only (no package isolation)         |
 
 For most Python projects, `venv` is sufficient. Use `conda` when your project depends on non-Python
 Scientific libraries (NumPy, SciPy) that need specific C/Fortran compilers. Use `pyenv` when you
@@ -357,8 +360,8 @@ Requirements. It provides no mechanism for managing development vs production de
 
 PEP 517 and PEP 621 established `pyproject.toml` as the single source of truth for project metadata,
 Build configuration, dependency specification, and tool configuration. It replaces the fragmented
-Ecosystem of `setup.py``setup.cfg``requirements.txt``tox.ini``.flake8``.mypy.ini`And
-`.isort.cfg` with one file.
+Ecosystem of `setup.py``setup.cfg``requirements.txt``tox.ini``.flake8``.mypy.ini`And `.isort.cfg`
+with one file.
 
 ```toml
 [project]
@@ -407,39 +410,39 @@ addopts = "-v --tb=short"
 
 ### Poetry vs PDM vs uv
 
-| Feature | Poetry | PDM | uv |
+| Feature            | Poetry                        | PDM                           | uv                   |
 | ------------------ | ----------------------------- | ----------------------------- | -------------------- |
-| Lock file | `poetry.lock` | `pdm.lock` | `uv.lock` |
-| Resolver speed | Slow (Python implementation) | Medium (Rust-based since 2.x) | Fast (Rust-based) |
-| PEP 621 compliance | Partial (own metadata format) | Full | Full |
-| Package manager | pip (via virtualenv) | pip (via virtualenv) | Own installer (Rust) |
-| Workspace support | Yes | Yes | Yes |
-| Build backend | poetry-core | pdm-backend | hatchling (default) |
+| Lock file          | `poetry.lock`                 | `pdm.lock`                    | `uv.lock`            |
+| Resolver speed     | Slow (Python implementation)  | Medium (Rust-based since 2.x) | Fast (Rust-based)    |
+| PEP 621 compliance | Partial (own metadata format) | Full                          | Full                 |
+| Package manager    | pip (via virtualenv)          | pip (via virtualenv)          | Own installer (Rust) |
+| Workspace support  | Yes                           | Yes                           | Yes                  |
+| Build backend      | poetry-core                   | pdm-backend                   | hatchling (default)  |
 
 ### WHY pyproject.toml Over setup.py
 
 `setup.py` has several fundamental problems:
 
 1. **Execution at import time.** `setup.py` is executed by running `python setup.py`Which means
- arbitrary code runs during package inspection. This makes it impossible to safely determine a
- package's metadata without executing potentially malicious code. PEP 517 solved this by defining
- a standard interface where the build frontend tells the build backend what to do via subprocess
- calls, rather than executing the project's code directly.
+   arbitrary code runs during package inspection. This makes it impossible to safely determine a
+   package's metadata without executing potentially malicious code. PEP 517 solved this by defining
+   a standard interface where the build frontend tells the build backend what to do via subprocess
+   calls, rather than executing the project's code directly.
 
 2. **Scattered configuration.** Before `pyproject.toml`Project metadata lived in `setup.py` or
- `setup.cfg`Tool configuration lived in `.flake8``.mypy.ini``.isort.cfg``tox.ini`
- `pytest.ini``MANIFEST.in`And `pyproject.toml` (for build system). A single project could have
- ten or more configuration files. `pyproject.toml` consolidates all tool configuration under
- `[tool.*]` sections.
+   `setup.cfg`Tool configuration lived in `.flake8``.mypy.ini``.isort.cfg``tox.ini`
+   `pytest.ini``MANIFEST.in`And `pyproject.toml` (for build system). A single project could have ten
+   or more configuration files. `pyproject.toml` consolidates all tool configuration under
+   `[tool.*]` sections.
 
 3. **No standard dependency format.** `install_requires` in `setup.py` and `requirements.txt` used
- different formats. `pyproject.toml` provides `[project.dependencies]` and
- `[project.optional-dependencies]` as the standard format.
+   different formats. `pyproject.toml` provides `[project.dependencies]` and
+   `[project.optional-dependencies]` as the standard format.
 
 4. **Dynamic vs static metadata.** `setup.py` encourages dynamic metadata generation (computing the
- version from git tags, reading README files at build time), which makes it impossible to
- determine the package's metadata without executing code. PEP 621 defines static metadata fields
- in `pyproject.toml` that can be read without execution.
+   version from git tags, reading README files at build time), which makes it impossible to
+   determine the package's metadata without executing code. PEP 621 defines static metadata fields
+   in `pyproject.toml` that can be read without execution.
 
 `setup.py` is still supported for backward compatibility, but new projects should use
 `pyproject.toml` exclusively.
@@ -543,9 +546,9 @@ myproject/
 ### Why pytest Over unittest
 
 The standard library `unittest` framework uses class-based test organization with verbose assertion
-Methods (`self.assertEqual``self.assertTrue``self.assertRaises`). `pytest` uses plain functions
-With native `assert` statements and provides powerful features like parametrized tests, fixtures,
-And plugin-based discovery -- all without requiring inheritance from a test base class.
+Methods (`self.assertEqual``self.assertTrue``self.assertRaises`). `pytest` uses plain functions With
+native `assert` statements and provides powerful features like parametrized tests, fixtures, And
+plugin-based discovery -- all without requiring inheritance from a test base class.
 
 ```python
 # unittest style -- verbose and rigid
@@ -612,13 +615,13 @@ def test_user_update(db_session, sample_user):
 
 Fixtures have scopes that control when they are created and torn down:
 
-| Scope | Created once per... | Common use |
+| Scope      | Created once per... | Common use                              |
 | ---------- | ------------------- | --------------------------------------- |
-| `function` | test function | Database sessions, mock objects |
-| `class` | test class | Shared class-level setup |
-| `module` | test module | Expensive resources (Docker containers) |
-| `package` | test package | Package-level state |
-| `session` | test run | Global services, process-level state |
+| `function` | test function       | Database sessions, mock objects         |
+| `class`    | test class          | Shared class-level setup                |
+| `module`   | test module         | Expensive resources (Docker containers) |
+| `package`  | test package        | Package-level state                     |
+| `session`  | test run            | Global services, process-level state    |
 
 ### Parametrize
 
@@ -709,16 +712,16 @@ markers = [
 
 ### Comparison of Linting and Formatting Tools
 
-| Tool | Language | Checks | Formatter | Speed | Notes |
+| Tool             | Language          | Checks                                  | Formatter                   | Speed                      | Notes                                               |
 | ---------------- | ----------------- | --------------------------------------- | --------------------------- | -------------------------- | --------------------------------------------------- |
-| **ruff** | Rust | Flake8 + isort + pydocstyle + many more | Built-in (Black-compatible) | Very fast (10-100x flake8) | Replaces flake8, isort, Black, pydocstyle, and more |
-| **flake8** | Python | PEP 8 + pycodestyle + pyflakes | No | Slow | Requires plugins for isort, Black, etc. |
-| **pylint** | Python | Deep analysis, refactoring suggestions | No | Very slow | Many false positives; highly configurable |
-| **Black** | Python | Formatting only | Yes | Medium | Uncompromising formatting; no linting |
-| **isort** | Python | Import sorting only | Yes | Medium | Replaced by ruff's import sorting |
-| **mypy** | Python | Static type checking | No | Medium | Reference type checker |
-| **pyright** | TypeScript/Python | Static type checking | No | Fast | Microsoft's type checker; stricter by default |
-| **basedpyright** | TypeScript/Python | Static type checking | No | Fast | Fork of pyright with additional features |
+| **ruff**         | Rust              | Flake8 + isort + pydocstyle + many more | Built-in (Black-compatible) | Very fast (10-100x flake8) | Replaces flake8, isort, Black, pydocstyle, and more |
+| **flake8**       | Python            | PEP 8 + pycodestyle + pyflakes          | No                          | Slow                       | Requires plugins for isort, Black, etc.             |
+| **pylint**       | Python            | Deep analysis, refactoring suggestions  | No                          | Very slow                  | Many false positives; highly configurable           |
+| **Black**        | Python            | Formatting only                         | Yes                         | Medium                     | Uncompromising formatting; no linting               |
+| **isort**        | Python            | Import sorting only                     | Yes                         | Medium                     | Replaced by ruff's import sorting                   |
+| **mypy**         | Python            | Static type checking                    | No                          | Medium                     | Reference type checker                              |
+| **pyright**      | TypeScript/Python | Static type checking                    | No                          | Fast                       | Microsoft's type checker; stricter by default       |
+| **basedpyright** | TypeScript/Python | Static type checking                    | No                          | Fast                       | Fork of pyright with additional features            |
 
 ### WHY Ruff Over flake8/pylint
 
@@ -726,24 +729,24 @@ markers = [
 And dozens of flake8 plugins) with a single Rust binary. The practical advantages are:
 
 1. **Speed.** `ruff` is 10-100x faster than flake8 because it is written in Rust. On a large
- codebase, `ruff` completes in milliseconds where flake8 takes seconds. This makes it practical to
- run on every file save in an editor, providing instant feedback.
+   codebase, `ruff` completes in milliseconds where flake8 takes seconds. This makes it practical to
+   run on every file save in an editor, providing instant feedback.
 
 2. **No plugin management.** With flake8, each additional check requires installing and configuring
- a separate plugin (flake8-bugbear, flake8-comprehensions, flake8-simplify, etc.). Each plugin has
- its own version constraints and configuration format. `ruff` includes equivalent rules for all of
- these out of the box, selectable via rule codes.
+   a separate plugin (flake8-bugbear, flake8-comprehensions, flake8-simplify, etc.). Each plugin has
+   its own version constraints and configuration format. `ruff` includes equivalent rules for all of
+   these out of the box, selectable via rule codes.
 
 3. **Unified configuration.** `ruff` is configured entirely through `pyproject.toml`. There is no
- separate `.flake8``.isort.cfg`Or `pyproject.toml` `[tool.black]` section. One tool, one
- configuration block.
+   separate `.flake8``.isort.cfg`Or `pyproject.toml` `[tool.black]` section. One tool, one
+   configuration block.
 
 4. **Built-in formatting.** `ruff format` is compatible with Black's formatting style (and can be
- configured to diverge where desired). This eliminates the need to run Black as a separate step.
+   configured to diverge where desired). This eliminates the need to run Black as a separate step.
 
 5. **Autofix.** `ruff` can automatically fix many issues (`ruff check --fix`), including import
- sorting, unused imports, and simple refactoring suggestions. This reduces the cycle of "run
- linter, see errors, manually fix, re-run linter."
+   sorting, unused imports, and simple refactoring suggestions. This reduces the cycle of "run
+   linter, see errors, manually fix, re-run linter."
 
 ```toml
 # pyproject.toml
@@ -1206,12 +1209,12 @@ Repository = "https://github.com/janedoe/myapp"
 
 ### Build Backends
 
-| Backend | Maintainer | Notes |
+| Backend       | Maintainer | Notes                                                         |
 | ------------- | ---------- | ------------------------------------------------------------- |
-| `hatchling` | Hatch | Simple, fast, good default choice |
-| `setuptools` | pypa | Legacy; still widely used, supports setup.py fallback |
-| `flit-core` | flit | Minimal; for pure-Python packages with no complex build needs |
-| `pdm-backend` | PDM | PEP 621 compliant; good for complex packages |
+| `hatchling`   | Hatch      | Simple, fast, good default choice                             |
+| `setuptools`  | pypa       | Legacy; still widely used, supports setup.py fallback         |
+| `flit-core`   | flit       | Minimal; for pure-Python packages with no complex build needs |
+| `pdm-backend` | PDM        | PEP 621 compliant; good for complex packages                  |
 
 ### Build and Publish
 
@@ -1262,16 +1265,16 @@ A well-configured Python project uses these tools in concert. The development wo
 This:
 
 1. **Editor integration.** Your editor runs `ruff` on save for instant linting and formatting
- feedback. It runs `pyright` or `mypy` in the background for type checking.
+   feedback. It runs `pyright` or `mypy` in the background for type checking.
 
-2. **Pre-commit hooks.** `pre-commit` runs `ruff check --fix``ruff format``mypy`And `pytest`
- before every commit, preventing violations from entering the repository.
+2. **Pre-commit hooks.** `pre-commit` runs `ruff check --fix``ruff format``mypy`And `pytest` before
+   every commit, preventing violations from entering the repository.
 
 3. **CI pipeline.** GitHub Actions runs the full suite: `ruff check``ruff format --check``mypy`
- `pytest --cov`And any integration tests. The pipeline fails if any step fails.
+   `pytest --cov`And any integration tests. The pipeline fails if any step fails.
 
 4. **Dependency management.** Dependencies are declared in `pyproject.toml` and locked in `uv.lock`
- (or `poetry.lock`). The lock file ensures reproducible installs across all environments.
+   (or `poetry.lock`). The lock file ensures reproducible installs across all environments.
 
 ```yaml
 # .github/workflows/ci.yml

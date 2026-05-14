@@ -1,6 +1,8 @@
 ---
 title: Coroutines
-description: "Coroutines — Core Concepts; Setup; Suspend Functions; Coroutine Builders with worked examples and exam-style questions, ensuring thorough understanding."
+description:
+  'Coroutines — Core Concepts; Setup; Suspend Functions; Coroutine Builders with worked examples and
+  exam-style questions, ensuring thorough understanding.'
 slug: coroutines
 date: 2026-04-18
 tags:
@@ -8,6 +10,7 @@ tags:
 categories:
   - Kotlin
 ---
+
 ## Core Concepts
 
 Coroutines are Kotlin's mechanism for asynchronous programming. They are lightweight -- a coroutine
@@ -120,11 +123,11 @@ suspend fun loadData(): String = withContext(Dispatchers.IO) {
 
 Dispatchers determine which thread pool executes the coroutine.
 
-| Dispatcher | Purpose |
+| Dispatcher               | Purpose                                                        |
 | ------------------------ | -------------------------------------------------------------- |
-| `Dispatchers.Default` | CPU-intensive work (sorting, parsing, JSON) |
-| `Dispatchers.IO` | Blocking IO (network, disk, database) |
-| `Dispatchers.Main` | UI thread (Android, JavaFX) |
+| `Dispatchers.Default`    | CPU-intensive work (sorting, parsing, JSON)                    |
+| `Dispatchers.IO`         | Blocking IO (network, disk, database)                          |
+| `Dispatchers.Main`       | UI thread (Android, JavaFX)                                    |
 | `Dispatchers.Unconfined` | Starts on caller thread, resumes on whatever thread resumes it |
 
 ```kotlin
@@ -304,27 +307,27 @@ suspend fun consumer(channel: ReceiveChannel<Int>) {
 
 ### Channel Types
 
-| Type | Description |
+| Type                | Description                         |
 | ------------------- | ----------------------------------- |
-| `Channel()` | Rendezvous (buffer size 0) |
-| `Channel(64)` | Buffered with capacity 64 |
+| `Channel()`         | Rendezvous (buffer size 0)          |
+| `Channel(64)`       | Buffered with capacity 64           |
 | `Channel.CONFLATED` | Drops previous values, keeps latest |
 | `Channel.UNLIMITED` | Unbounded buffer (use with caution) |
 
 ## Common Pitfalls
 
 - \*\* Using `runBlocking` in application code. It blocks the thread, defeating the purpose of
- coroutines. Use `CoroutineScope` with lifecycle management instead.
+  coroutines. Use `CoroutineScope` with lifecycle management instead.
 - \*\* Forgetting to make IO functions suspending. If you wrap blocking calls in `withContext(IO)`
- that is fine, but prefer genuinely non-blocking libraries (e.g., `ktor-client`
- `Retrofit with coroutines`) over `withContext(IO)` wrapping blocking code.
+  that is fine, but prefer genuinely non-blocking libraries (e.g., `ktor-client`
+  `Retrofit with coroutines`) over `withContext(IO)` wrapping blocking code.
 - \*\* Not handling cancellation properly. Always rethrow `CancellationException`. Use
- `ensureActive()` or check `isActive` in long-running CPU loops.
+  `ensureActive()` or check `isActive` in long-running CPU loops.
 - \*\* Using `GlobalScope`. It creates unbound coroutines that outlive the application scope, making
- cancellation and lifecycle management impossible. Always use structured concurrency with explicit
- scopes.
+  cancellation and lifecycle management impossible. Always use structured concurrency with explicit
+  scopes.
 - \*\* Collecting multiple flows sequentially. Use `combine``merge`Or `zip` to compose flows
- concurrently.
+  concurrently.
 
 ## Summary
 

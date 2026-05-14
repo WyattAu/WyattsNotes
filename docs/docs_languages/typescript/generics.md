@@ -1,6 +1,8 @@
 ---
 title: Generics
-description: "A rigorous treatment of parametric polymorphism in TypeScript: generic functions, interfaces, utility types, conditional types, mapped types, and variance."
+description:
+  'A rigorous treatment of parametric polymorphism in TypeScript: generic functions, interfaces,
+  utility types, conditional types, mapped types, and variance.'
 slug: typescript-generics
 date: 2026-04-22T00:00:00.000Z
 tags: [TypeScript]
@@ -261,21 +263,21 @@ Types as a tuple.
 
 ### Summary Table
 
-| Utility Type | Description |
+| Utility Type               | Description                                   |
 | -------------------------- | --------------------------------------------- |
-| `Partial<T>` | All properties of `T` become optional |
-| `Required<T>` | All properties of `T` become required |
-| `Readonly<T>` | All properties of `T` become readonly |
-| `Record<K, V>` | Object type with keys `K` and values `V` |
-| `Pick<T, K>` | Subset of `T` with only keys in `K` |
-| `Omit<T, K>` | `T` without keys in `K` |
-| `Exclude<T, U>` | Members of `T` not assignable to `U` |
-| `Extract<T, U>` | Members of `T` assignable to `U` |
-| `NonNullable<T>` | `T` without `null` and `undefined` |
-| `ReturnType<T>` | Return type of function type `T` |
-| `Parameters<T>` | Parameter types of function type `T` as tuple |
-| `ReadonlyArray<T>` | Immutable array type |
-| `ConstructorParameters<T>` | Parameter types of constructor type `T` |
+| `Partial<T>`               | All properties of `T` become optional         |
+| `Required<T>`              | All properties of `T` become required         |
+| `Readonly<T>`              | All properties of `T` become readonly         |
+| `Record<K, V>`             | Object type with keys `K` and values `V`      |
+| `Pick<T, K>`               | Subset of `T` with only keys in `K`           |
+| `Omit<T, K>`               | `T` without keys in `K`                       |
+| `Exclude<T, U>`            | Members of `T` not assignable to `U`          |
+| `Extract<T, U>`            | Members of `T` assignable to `U`              |
+| `NonNullable<T>`           | `T` without `null` and `undefined`            |
+| `ReturnType<T>`            | Return type of function type `T`              |
+| `Parameters<T>`            | Parameter types of function type `T` as tuple |
+| `ReadonlyArray<T>`         | Immutable array type                          |
+| `ConstructorParameters<T>` | Parameter types of constructor type `T`       |
 
 ## Mapped Types
 
@@ -491,17 +493,17 @@ Receive a function that only handles `TypeError`Because the general handler migh
 
 ### Bivariance
 
-Without `strictFunctionTypes`Function parameter types are **bivariant**: they are both covariant
-And contravariant. This is unsound but matches pre-strict TypeScript behaviour.
+Without `strictFunctionTypes`Function parameter types are **bivariant**: they are both covariant And
+contravariant. This is unsound but matches pre-strict TypeScript behaviour.
 
 ### Variance Summary
 
-| Variance | `S extends T` implies | Example |
+| Variance      | `S extends T` implies            | Example                                                     |
 | ------------- | -------------------------------- | ----------------------------------------------------------- |
-| Covariant | `F<S> extends F<T>` | `string[] extends (string \| number)[]` |
-| Contravariant | `F<T> extends F<S>` | `(x: Error) => void` assignable to `(x: TypeError) => void` |
-| Invariant | No implication either way | `Mutable<T>` -- must be exact type |
-| Bivariant | Both covariant and contravariant | Function params without `strictFunctionTypes` |
+| Covariant     | `F<S> extends F<T>`              | `string[] extends (string \| number)[]`                     |
+| Contravariant | `F<T> extends F<S>`              | `(x: Error) => void` assignable to `(x: TypeError) => void` |
+| Invariant     | No implication either way        | `Mutable<T>` -- must be exact type                          |
+| Bivariant     | Both covariant and contravariant | Function params without `strictFunctionTypes`               |
 
 ### Invariance in Practice
 

@@ -1,6 +1,8 @@
 ---
 title: Derivatives
-description: "Derivatives — The Derivative as a Limit (CED Unit 2); Interpretations of the Derivative; Differentiability and Continuity; Where Differentiability Fails."
+description:
+  'Derivatives — The Derivative as a Limit (CED Unit 2); Interpretations of the Derivative;
+  Differentiability and Continuity; Where Differentiability Fails.'
 date: 2026-04-14
 tags:
   - Mathematics
@@ -9,20 +11,15 @@ categories:
   - Mathematics
 slug: derivatives
 ---
+
 ## The Derivative as a Limit (CED Unit 2)
 
 The derivative of $f$ at $x = a$ is defined as:
 
-
-<DesmosGraph
- title="Derivatives and Tangent Lines"
- expressions={["f(x)=x^3-3x", "f'(x)=3x^2-3"]}
- width={800}
- height={500}
-/>
+<DesmosGraph title="Derivatives and Tangent Lines" expressions={["f(x)=x^3-3x", "f'(x)=3x^2-3"]}
+width={800} height={500} />
 
 Adjust the parameters in the graph above to explore the relationships between variables.
-
 
 $$
 F'(a) = \lim_{h \to 0} \frac{f(a+h) - f(a)}{h}
@@ -36,8 +33,8 @@ $$
 
 If this limit exists, $f$ is said to be **differentiable** at $a$.
 
-**Physical intuition.** If $s(t)$ is position at time $t$Then $s'(t)$ is the instantaneous
-Velocity. The derivative answers: "how fast is $f$ changing right now?"
+**Physical intuition.** If $s(t)$ is position at time $t$Then $s'(t)$ is the instantaneous Velocity.
+The derivative answers: "how fast is $f$ changing right now?"
 
 **Geometric intuition.** The derivative $f'(a)$ equals the slope of the tangent line to the graph of
 $f$ at the point $(a, f(a))$.
@@ -47,7 +44,7 @@ $f$ at the point $(a, f(a))$.
 - **Geometric:** $f'(a)$ is the slope of the tangent line to $y = f(x)$ at the point $(a, f(a))$.
 - **Physical:** If $s(t)$ is position, then $s'(t)$ is instantaneous velocity.
 - **Rate of change:** $f'(a)$ gives the instantaneous rate of change of $f$ with respect to $x$ at
- $x = a$.
+  $x = a$.
 
 :::info[Example]
 
@@ -359,8 +356,8 @@ $\frac{dy}{dx} = \frac{1}{1 + x^2}$. $\blacksquare$
 
 ## Implicit Differentiation
 
-When $y$ is defined implicitly as a function of $x$Differentiate both sides with respect to $x$
-And solve for $\frac{dy}{dx}$.
+When $y$ is defined implicitly as a function of $x$Differentiate both sides with respect to $x$ And
+solve for $\frac{dy}{dx}$.
 
 :::info[Example]
 
@@ -510,8 +507,8 @@ The negative sign confirms the top is sliding down.
 
 :::info[Example]
 
-A spherical balloon is inflated at a rate of $10 \mathrm{ cm{}^3/\mathrm{s{}$. How fast is the radius
-Increasing when the radius is 5 cm? ($V = \frac{4}{3}\pi r^3$)
+A spherical balloon is inflated at a rate of $10 \mathrm{ cm{}^3/\mathrm{s{}$. How fast is the
+radius Increasing when the radius is 5 cm? ($V = \frac{4}{3}\pi r^3$)
 
 $$
 \frac{dV}{dt} = 4\pi r^2 \frac{dr}{dt}
@@ -619,8 +616,8 @@ $f'(c) = \frac{f(b) - f(a)}{b-a}$. $\blacksquare$
 
 ### Rolle's Theorem
 
-If $f$ is continuous on $[a, b]$Differentiable on $(a, b)$And $f(a) = f(b)$Then there exists
-At least one $c \in (a, b)$ such that $f'(c) = 0$.
+If $f$ is continuous on $[a, b]$Differentiable on $(a, b)$And $f(a) = f(b)$Then there exists At
+least one $c \in (a, b)$ such that $f'(c) = 0$.
 
 Rolle's Theorem is a special case of the MVT where $f(a) = f(b)$.
 
@@ -635,13 +632,13 @@ Show that $f(x) = x^3 - 3x + 1$ has exactly one real root.
 Note that $f(0) = 1$ and $f(-2) = -8 + 6 + 1 = -1$. By the IVT, there is at least one root in
 $(-2, 0)$.
 
-Suppose there are two distinct roots $a \lt b$. Then $f(a) = f(b) = 0$And by Rolle's Theorem,
-There exists $c \in (a, b)$ with $f'(c) = 0$. But $f'(x) = 3x^2 - 3 = 3(x+1)(x-1)$Which is zero
-Only at $x = \pm 1$. This does not lead to a contradiction on its own, so we must examine further.
+Suppose there are two distinct roots $a \lt b$. Then $f(a) = f(b) = 0$And by Rolle's Theorem, There
+exists $c \in (a, b)$ with $f'(c) = 0$. But $f'(x) = 3x^2 - 3 = 3(x+1)(x-1)$Which is zero Only at
+$x = \pm 1$. This does not lead to a contradiction on its own, so we must examine further.
 
-In fact, $f(-2) = -1$$f(0) = 1$$f(1) = -1$$f(2) = 3$. So $f$ has at least one root in
-$(-2, 0)$At least one in $(0, 1)$And possibly one in $(1, 2)$. Rolle's Theorem applied to
-Consecutive roots shows that each pair of roots must bracket either $x = -1$ or $x = 1$.
+In fact, $f(-2) = -1$$f(0) = 1$$f(1) = -1$$f(2) = 3$. So $f$ has at least one root in $(-2, 0)$At
+least one in $(0, 1)$And possibly one in $(1, 2)$. Rolle's Theorem applied to Consecutive roots
+shows that each pair of roots must bracket either $x = -1$ or $x = 1$.
 
 Testing: $f(-1) = -1 + 3 + 1 = 3 \gt 0$. So the root in $(-2, 0)$ is in $(-2, -1)$And the root in
 $(0, 1)$ is in $(0, 1)$. These bracket different critical points. In fact, $f$ has three real roots,
@@ -674,13 +671,12 @@ Let $f''(c)$ exist with $f'(c) = 0$:
 - If $f''(c) = 0$The test is **inconclusive**.
 
 **When to use which test.** The first derivative test always works. The second derivative test is
-Faster but sometimes inconclusive. When $f''(c) = 0$You must fall back to the first derivative
-Test.
+Faster but sometimes inconclusive. When $f''(c) = 0$You must fall back to the first derivative Test.
 
 **Example where the second derivative test is inconclusive.** Consider $f(x) = x^4$.
-$f'(x) = 4x^3 = 0$ gives $x = 0$And $f''(x) = 12x^2$So $f''(0) = 0$ -- the test is inconclusive.
-But $f'(x) = 4x^3$ changes from negative to positive at $x = 0$So $f$ has a local minimum at
-$x = 0$ by the first derivative test.
+$f'(x) = 4x^3 = 0$ gives $x = 0$And $f''(x) = 12x^2$So $f''(0) = 0$ -- the test is inconclusive. But
+$f'(x) = 4x^3$ changes from negative to positive at $x = 0$So $f$ has a local minimum at $x = 0$ by
+the first derivative test.
 
 ### Optimization
 
@@ -736,8 +732,8 @@ The minimum value is $4$ at $x = 2$.
 
 :::info[Example]
 
-A rectangular box with a square base has volume $500 \mathrm{ cm{}^3$. The material for the base costs
-Twice as much as the material for the sides. Minimise the cost of the material.
+A rectangular box with a square base has volume $500 \mathrm{ cm{}^3$. The material for the base
+costs Twice as much as the material for the sides. Minimise the cost of the material.
 
 Let the base have side length $x$ cm and height $h$ cm. Let the cost per unit area of the sides be
 $c$. Then the base costs $2c$ per unit area.
@@ -792,52 +788,52 @@ Absolute minimum: $0$ at $x = -1$ and $x = 2$. Absolute maximum: $20$ at $x = 4$
 ## Common Pitfalls
 
 1. **Forgetting the chain rule.** When differentiating a composition, always account for the inner
- function's derivative. For example, $\frac{d}{dx}[\sin(x^2)] \ne \cos(x^2)$.
+   function's derivative. For example, $\frac{d}{dx}[\sin(x^2)] \ne \cos(x^2)$.
 2. **Incorrect sign in the quotient rule.** Remember: "Low d-High minus High d-Low, draw a line and
- square below."
+   square below."
 3. **Confusing $\frac{d}{dx}[e^x]$ with $\frac{d}{dx}[x^e]$.** The former is $e^x$; the latter is
- $ex^{e-1}$.
+   $ex^{e-1}$.
 4. **Implicit differentiation: forgetting to apply the chain rule to $y$ terms.** When
- differentiating $y^2$ with respect to $x$The result is $2y\frac{dy}{dx}$Not $2y$.
+   differentiating $y^2$ with respect to $x$The result is $2y\frac{dy}{dx}$Not $2y$.
 5. **Units in related rates.** Always include units and check that they make dimensional sense.
 6. **Not checking endpoints** in optimization problems on closed intervals.
 7. **Using the second derivative test when it is inconclusive** ($f''(c) = 0$). Fall back to the
- first derivative test.
+   first derivative test.
 8. **Confusing the second derivative with the first.** The second derivative tells you about
- concavity, not the slope.
+   concavity, not the slope.
 9. **Dropping negative signs** in implicit differentiation. Be systematic: write every $y$ term with
- $\frac{dy}{dx}$ attached.
+   $\frac{dy}{dx}$ attached.
 10. **Linear approximation overreach.** The approximation $f(x) \approx f(a) + f'(a)(x-a)$ is
- accurate only near $x = a$. Using it far from $a$ can give wildly inaccurate results.
+    accurate only near $x = a$. Using it far from $a$ can give wildly inaccurate results.
 
 ## Practice Questions
 
 1. Find $\displaystyle\frac{dy}{dx}$ for $e^{xy} + y = x^2$ using implicit differentiation.
 
-2. A spherical balloon is inflated at a rate of $10 \mathrm{ cm{}^3/\mathrm{s{}$. How fast is the radius
- increasing when the radius is 5 cm? ($V = \frac{4}{3}\pi r^3$)
+2. A spherical balloon is inflated at a rate of $10 \mathrm{ cm{}^3/\mathrm{s{}$. How fast is the
+   radius increasing when the radius is 5 cm? ($V = \frac{4}{3}\pi r^3$)
 
 3. Find all critical points of $f(x) = x^4 - 4x^3 + 6x^2 - 4x + 1$ and classify them using the
- second derivative test.
+   second derivative test.
 
 4. Use the Mean Value Theorem to show that $|\sin b - \sin a| \le |b - a|$ for all $a, b$.
 
 5. Find the equation of the tangent line to $y = \ln(x^2 + 1)$ at $x = 1$.
 
 6. A 15 ft ladder leans against a wall. The bottom slides away at 2 ft/s. How fast is the angle
- between the ladder and the ground changing when the bottom is 9 ft from the wall?
+   between the ladder and the ground changing when the bottom is 9 ft from the wall?
 
 7. Find the absolute maximum and minimum of $f(x) = x^3 - 3x^2 + 4$ on $[-1, 4]$.
 
 8. Use linear approximation to estimate $(1.02)^{10}$.
 
 9. Find $\displaystyle\frac{d}{dx}\left[\frac{x^2 + 1}{e^{2x}}\right]$ and find all stationary
- points.
+   points.
 
 10. Find $\displaystyle\frac{d^2y}{dx^2}$ for $x^3 + y^3 = 6xy$ at the point $(3, 3)$.
 
 11. A rectangular box with a square base has volume $500 \mathrm{ cm{}^3$. The material for the base
- costs twice as much as the material for the sides. Minimise the cost of the material.
+    costs twice as much as the material for the sides. Minimise the cost of the material.
 
 12. Prove that the derivative of $f(x) = x^3$ is $f'(x) = 3x^2$ from first principles.
 
@@ -846,18 +842,19 @@ Absolute minimum: $0$ at $x = -1$ and $x = 2$. Absolute maximum: $20$ at $x = 4$
 14. Find the inflection points of $f(x) = x^4 - 6x^2 + 4$.
 
 15. A conical tank (vertex pointing down) has radius 5 ft at the top and height 10 ft. Water is
- pumped in at 3 $\mathrm{ft{}^3/\mathrm{min{}$. How fast is the water level rising when the water is 6
- ft deep?
+    pumped in at 3 $\mathrm{ft{}^3/\mathrm{min{}$. How fast is the water level rising when the water
+    is 6 ft deep?
 
 16. Find the dimensions of the rectangle of maximum area that can be inscribed in a semicircle of
- radius $r$.
+    radius $r$.
 
 ## Practice Problems
 
 <details>
 <summary>Question 1: Implicit differentiation</summary>
 
-Find $\frac{dy}{dx}$ for the curve $x^3 + y^3 = 6xy$. Then find the equation of the tangent line at the point $(3, 3)$.
+Find $\frac{dy}{dx}$ for the curve $x^3 + y^3 = 6xy$. Then find the equation of the tangent line at
+the point $(3, 3)$.
 
 </details>
 
@@ -879,14 +876,16 @@ Tangent line: $y - 3 = -1(x - 3)$So $y = -x + 6$.
 <details>
 <summary>Question 2: Related rates</summary>
 
-A spherical balloon is being inflated at a rate of $100 \mathrm{ cm^3/s{}$. How fast is the radius increasing when the radius is $10 \mathrm{ cm{}$?
+A spherical balloon is being inflated at a rate of $100 \mathrm{ cm^3/s{}$. How fast is the radius
+increasing when the radius is $10 \mathrm{ cm{}$?
 
 </details>
 
 <details>
 <summary>Answer</summary>
 
-$V = \frac{4}{3}\pi r^3$. Differentiate with respect to time: $\frac{dV}{dt} = 4\pi r^2 \frac{dr}{dt}$.
+$V = \frac{4}{3}\pi r^3$. Differentiate with respect to time:
+$\frac{dV}{dt} = 4\pi r^2 \frac{dr}{dt}$.
 
 $100 = 4\pi(10)^2 \frac{dr}{dt} = 400\pi \frac{dr}{dt}$.
 
@@ -912,14 +911,16 @@ Still $0/0$. Apply again:
 
 $\displaystyle\lim_{x \to 0} \frac{e^x}{2} = \frac{1}{2}$.
 
-Alternatively, this is the coefficient of $x^2/2!$ in the Taylor series of $e^x$Confirming the answer.
+Alternatively, this is the coefficient of $x^2/2!$ in the Taylor series of $e^x$Confirming the
+answer.
 
 </details>
 
 <details>
 <summary>Question 4: Optimisation with constraint</summary>
 
-A rectangular box with a square base and no top is to have a volume of $108 \mathrm{ cm^3{}$. Find the dimensions that minimise the surface area.
+A rectangular box with a square base and no top is to have a volume of $108 \mathrm{ cm^3{}$. Find
+the dimensions that minimise the surface area.
 
 </details>
 
@@ -936,14 +937,16 @@ $h = 108/36 = 3 \mathrm{ cm{}$.
 
 $\frac{d^2S}{dx^2} = 2 + 864/x^3 \gt 0$ at $x = 6$Confirming minimum.
 
-Dimensions: $6 \times 6 \times 3 \mathrm{ cm{}$Minimum surface area $= 36 + 432/6 = 108 \mathrm{ cm^2{}$.
+Dimensions: $6 \times 6 \times 3 \mathrm{ cm{}$Minimum surface area
+$= 36 + 432/6 = 108 \mathrm{ cm^2{}$.
 
 </details>
 
 <details>
 <summary>Question 5: Mean Value Theorem</summary>
 
-Verify that the function $f(x) = x^3 - 3x + 1$ satisfies the conditions of the Mean Value Theorem on $[-2, 2]$And find all values of $c$ that satisfy the conclusion.
+Verify that the function $f(x) = x^3 - 3x + 1$ satisfies the conditions of the Mean Value Theorem on
+$[-2, 2]$And find all values of $c$ that satisfy the conclusion.
 
 </details>
 
@@ -964,14 +967,15 @@ Both values are in $(-2, 2)$. The MVT is satisfied at $c = 2/\sqrt{3}$ and $c = 
 
 ---
 
-:::tip
-Diagnostic Test
-Ready to test your understanding of **Derivatives**? The [diagnostic test](/docs/qualifications/ap/maths/diagnostics/diag-derivatives) contains the hardest questions within the AP specification for this topic, each with a full worked solution.
+:::tip Diagnostic Test Ready to test your understanding of **Derivatives**? The
+[diagnostic test](/docs/qualifications/ap/maths/diagnostics/diag-derivatives) contains the hardest
+questions within the AP specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Derivatives with other AP Calculus topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Derivatives
+with other AP Calculus topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/qualifications/ap/maths/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/qualifications/ap/maths/diagnostics/diagnostic-guide) for instructions
+on self-marking and building a personal test matrix. :::
 
 ## Summary
 

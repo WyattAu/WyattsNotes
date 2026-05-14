@@ -1,10 +1,13 @@
 ---
 id: cron-and-scheduling
 title: Cron and Task Scheduling
-description: "Cron and Task Scheduling — cron Daemon; Check if cron is running; Start/enable cron; Crontab Format with worked examples and exam-style questions."
+description:
+  'Cron and Task Scheduling — cron Daemon; Check if cron is running; Start/enable cron; Crontab
+  Format with worked examples and exam-style questions.'
 slug: cron-and-scheduling
 sidebar_position: 2
 ---
+
 ## cron Daemon
 
 The cron daemon (`crond`) is a time-based job scheduler that runs commands at specified times and
@@ -52,16 +55,16 @@ systemctl enable --now crond
 
 ### Special Strings
 
-| String | Equivalent | Description |
+| String      | Equivalent  | Description                     |
 | ----------- | ----------- | ------------------------------- |
-| `@yearly` | `0 0 1 1 *` | Once per year |
-| `@annually` | `0 0 1 1 *` | Same as @yearly |
-| `@monthly` | `0 0 1 * *` | Once per month |
-| `@weekly` | `0 0 * * 0` | Once per week |
-| `@daily` | `0 0 * * *` | Once per day |
-| `@midnight` | `0 0 * * *` | Same as @daily |
-| `@hourly` | `0 * * * *` | Once per hour |
-| `@reboot` | (special) | Run once at cron daemon startup |
+| `@yearly`   | `0 0 1 1 *` | Once per year                   |
+| `@annually` | `0 0 1 1 *` | Same as @yearly                 |
+| `@monthly`  | `0 0 1 * *` | Once per month                  |
+| `@weekly`   | `0 0 * * 0` | Once per week                   |
+| `@daily`    | `0 0 * * *` | Once per day                    |
+| `@midnight` | `0 0 * * *` | Same as @daily                  |
+| `@hourly`   | `0 * * * *` | Once per hour                   |
+| `@reboot`   | (special)   | Run once at cron daemon startup |
 
 ```bash
 # System backup every day at midnight
@@ -289,14 +292,14 @@ ls -la /var/spool/anacron/
 
 ### cron vs anacron
 
-| Feature | cron | anacron |
+| Feature      | cron                  | anacron                     |
 | ------------ | --------------------- | --------------------------- |
-| System type | 24/7 servers | Desktops, laptops |
-| Missed jobs | Skipped | Run at next opportunity |
-| Granularity | 1-minute precision | Daily minimum |
-| Runs at | Exact specified times | After boot (with delay) |
-| Per-user | Yes | No (system-wide only) |
-| Suitable for | Precise scheduling | Ensuring periodic tasks run |
+| System type  | 24/7 servers          | Desktops, laptops           |
+| Missed jobs  | Skipped               | Run at next opportunity     |
+| Granularity  | 1-minute precision    | Daily minimum               |
+| Runs at      | Exact specified times | After boot (with delay)     |
+| Per-user     | Yes                   | No (system-wide only)       |
+| Suitable for | Precise scheduling    | Ensuring periodic tasks run |
 
 ## systemd Timers
 
@@ -396,18 +399,18 @@ systemctl show backup.timer --property=NextElapseUSecRealtime
 
 ### systemd Timers vs cron
 
-| Feature | cron | systemd timer |
+| Feature             | cron                     | systemd timer            |
 | ------------------- | ------------------------ | ------------------------ |
-| Boot catch-up | No (missed jobs skipped) | Yes (`Persistent=true`) |
-| Logging | Email or /var/log/syslog | journald |
-| Dependencies | None | Full systemd dependency |
-| Resource limits | System defaults | Per-service limits |
-| Randomized delay | No | `RandomizedDelaySec` |
-| Calendar syntax | cron expression | systemd calendar events |
-| Per-user timers | Yes | Yes (`--user`) |
-| Precision | 1 minute | 1 minute (`AccuracySec`) |
-| Built-in monitoring | No | Yes (`systemctl status`) |
-| Timezone handling | System timezone | Per-timer `Timezone=` |
+| Boot catch-up       | No (missed jobs skipped) | Yes (`Persistent=true`)  |
+| Logging             | Email or /var/log/syslog | journald                 |
+| Dependencies        | None                     | Full systemd dependency  |
+| Resource limits     | System defaults          | Per-service limits       |
+| Randomized delay    | No                       | `RandomizedDelaySec`     |
+| Calendar syntax     | cron expression          | systemd calendar events  |
+| Per-user timers     | Yes                      | Yes (`--user`)           |
+| Precision           | 1 minute                 | 1 minute (`AccuracySec`) |
+| Built-in monitoring | No                       | Yes (`systemctl status`) |
+| Timezone handling   | System timezone          | Per-timer `Timezone=`    |
 
 :::info
 

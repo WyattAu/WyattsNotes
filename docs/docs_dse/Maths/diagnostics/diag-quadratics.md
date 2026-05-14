@@ -1,6 +1,8 @@
 ---
-title: "Quadratics -- Diagnostic Tests"
-description: "Diagnostic tests for DSE Quadratics: discriminant analysis, quadratic formula, factorisation, completing the square, and hidden quadratics."
+title: 'Quadratics -- Diagnostic Tests'
+description:
+  'Diagnostic tests for DSE Quadratics: discriminant analysis, quadratic formula, factorisation,
+  completing the square, and hidden quadratics.'
 slug: diag-quadratics
 hide_table_of_contents: true
 ---
@@ -15,7 +17,8 @@ hide_table_of_contents: true
 
 **Question:**
 
-Find the range of values of $k$ for which the equation $(k - 1)x^2 - 2kx + k + 3 = 0$ has two distinct real roots.
+Find the range of values of $k$ for which the equation $(k - 1)x^2 - 2kx + k + 3 = 0$ has two
+distinct real roots.
 
 **Solution:**
 
@@ -31,7 +34,8 @@ $a \neq 0 \implies k \neq 1$.
 
 Therefore $k \in (-\infty,\; 1) \cup (1,\; \tfrac{3}{2})$.
 
-A common mistake is forgetting the $a \neq 0$ condition (i.e. $k \neq 1$), which would reduce the problem to a linear equation.
+A common mistake is forgetting the $a \neq 0$ condition (i.e. $k \neq 1$), which would reduce the
+problem to a linear equation.
 
 ---
 
@@ -65,7 +69,8 @@ Therefore $x = -2$ or $x = 0$.
 
 **Question:**
 
-If $\alpha$ and $\beta$ are the roots of $2x^2 - 6x + 1 = 0$Find the value of $\alpha^2 + \beta^2$ without solving the equation.
+If $\alpha$ and $\beta$ are the roots of $2x^2 - 6x + 1 = 0$Find the value of $\alpha^2 + \beta^2$
+without solving the equation.
 
 **Solution:**
 
@@ -123,16 +128,17 @@ Factorise: $\dfrac{(x-1)(x-3)}{(x-1)(x+1)} = \dfrac{x - 3}{x + 1}$Provided $x \n
 
 $\dfrac{x - 3}{x + 1} \lt 0$.
 
-Critical values: $x = -1$ and $x = 3$. Note $x = 1$ is excluded (makes denominator zero in original).
+Critical values: $x = -1$ and $x = 3$. Note $x = 1$ is excluded (makes denominator zero in
+original).
 
 Sign chart:
 
-| Interval | Test | Sign |
-|---|---|---|
-| $x < -1$ | $x = -2$ | $+$ |
-| $-1 < x < 1$ | $x = 0$ | $-$ |
-| $1 < x < 3$ | $x = 2$ | $-$ |
-| $x > 3$ | $x = 4$ | $+$ |
+| Interval     | Test     | Sign |
+| ------------ | -------- | ---- |
+| $x < -1$     | $x = -2$ | $+$  |
+| $-1 < x < 1$ | $x = 0$  | $-$  |
+| $1 < x < 3$  | $x = 2$  | $-$  |
+| $x > 3$      | $x = 4$  | $+$  |
 
 The expression is negative for $-1 < x < 1$ or $1 < x < 3$.
 
@@ -144,7 +150,8 @@ Combined: $x \in (-1,\; 1) \cup (1,\; 3)$.
 
 **Question:**
 
-Let $f(x) = x^2 - 4x + k$. If the equation $f(x) = 0$ has no real roots and $f(2) > 0$Find the range of $k$.
+Let $f(x) = x^2 - 4x + k$. If the equation $f(x) = 0$ has no real roots and $f(2) > 0$Find the range
+of $k$.
 
 **Solution:**
 
@@ -164,7 +171,8 @@ Therefore $k \in (4,\; \infty)$.
 
 **Question:**
 
-The line $y = 2x + 1$ intersects the parabola $y = x^2 - 3x + 7$ at points $A$ and $B$. Find the coordinates of $A$ and $B$And the length of $AB$.
+The line $y = 2x + 1$ intersects the parabola $y = x^2 - 3x + 7$ at points $A$ and $B$. Find the
+coordinates of $A$ and $B$And the length of $AB$.
 
 **Solution:**
 
@@ -190,7 +198,8 @@ $$AB = \sqrt{(3-2)^2 + (7-5)^2} = \sqrt{1 + 4} = \sqrt{5}$$
 
 **Question:**
 
-If $\alpha$ and $\beta$ are the roots of $3x^2 - 5x + 2 = 0$Find a quadratic equation whose roots are $\alpha^2$ and $\beta^2$.
+If $\alpha$ and $\beta$ are the roots of $3x^2 - 5x + 2 = 0$Find a quadratic equation whose roots
+are $\alpha^2$ and $\beta^2$.
 
 **Solution:**
 
@@ -212,7 +221,8 @@ $$9x^2 - 13x + 4 = 0$$
 
 **Question:**
 
-Find the range of values of $m$ for which the equation $x^2 + 2mx + m^2 - 1 = 0$ has real roots, and find the range of values of $x$ satisfying the inequality $x^2 + 2mx + m^2 - 1 \leq 0$ when $m = 2$.
+Find the range of values of $m$ for which the equation $x^2 + 2mx + m^2 - 1 = 0$ has real roots, and
+find the range of values of $x$ satisfying the inequality $x^2 + 2mx + m^2 - 1 \leq 0$ when $m = 2$.
 
 **Solution:**
 
@@ -248,7 +258,8 @@ $x^2 = 4 \implies x = 2$ or $x = -2$.
 
 Solution: $x = -2,\; -1,\; 1,\; 2$.
 
-**DSE Exam Technique:** When solving hidden quadratics, always check the substitution condition ($u \geq 0$) and state all four roots explicitly.
+**DSE Exam Technique:** When solving hidden quadratics, always check the substitution condition
+($u \geq 0$) and state all four roots explicitly.
 
 ---
 
@@ -256,7 +267,8 @@ Solution: $x = -2,\; -1,\; 1,\; 2$.
 
 **Question:**
 
-A farmer has 100 m of fencing to enclose a rectangular field beside a river. No fencing is needed along the river. Find the dimensions that give the maximum area.
+A farmer has 100 m of fencing to enclose a rectangular field beside a river. No fencing is needed
+along the river. Find the dimensions that give the maximum area.
 
 **Solution:**
 
@@ -300,7 +312,8 @@ Find the integer values of $k$ for which $x^2 + kx + k + 3 = 0$ has integer root
 
 **Solution:**
 
-Let the roots be $\alpha$ and $\beta$ (integers). By Vieta: $\alpha + \beta = -k$ and $\alpha\beta = k + 3$.
+Let the roots be $\alpha$ and $\beta$ (integers). By Vieta: $\alpha + \beta = -k$ and
+$\alpha\beta = k + 3$.
 
 Substituting: $\alpha\beta = -(\alpha + \beta) + 3$.
 
@@ -311,13 +324,13 @@ $$(\alpha + 1)(\beta + 1) = 4$$
 Factor pairs of 4: $(1,4), (2,2), (4,1), (-1,-4), (-2,-2), (-4,-1)$.
 
 | $\alpha + 1$ | $\beta + 1$ | $\alpha$ | $\beta$ | $k = -(\alpha+\beta)$ |
-|---|---|---|---|---|
-| 1 | 4 | 0 | 3 | $-3$ |
-| 2 | 2 | 1 | 1 | $-2$ |
-| 4 | 1 | 3 | 0 | $-3$ |
-| $-1$ | $-4$ | $-2$ | $-5$ | $7$ |
-| $-2$ | $-2$ | $-3$ | $-3$ | $6$ |
-| $-4$ | $-1$ | $-5$ | $-2$ | $7$ |
+| ------------ | ----------- | -------- | ------- | --------------------- |
+| 1            | 4           | 0        | 3       | $-3$                  |
+| 2            | 2           | 1        | 1       | $-2$                  |
+| 4            | 1           | 3        | 0       | $-3$                  |
+| $-1$         | $-4$        | $-2$     | $-5$    | $7$                   |
+| $-2$         | $-2$        | $-3$     | $-3$    | $6$                   |
+| $-4$         | $-1$        | $-5$     | $-2$    | $7$                   |
 
 Distinct values of $k$: $-3$$-2$$6$$7$.
 
@@ -327,7 +340,8 @@ Distinct values of $k$: $-3$$-2$$6$$7$.
 
 **Question:**
 
-The roots of $x^2 - 7x + 10 = 0$ are $\alpha$ and $\beta$. Find the equation whose roots are $\dfrac{1}{\alpha}$ and $\dfrac{1}{\beta}$.
+The roots of $x^2 - 7x + 10 = 0$ are $\alpha$ and $\beta$. Find the equation whose roots are
+$\dfrac{1}{\alpha}$ and $\dfrac{1}{\beta}$.
 
 **Solution:**
 
@@ -355,15 +369,20 @@ The expression becomes $\dfrac{t + 3}{t} = 1 + \dfrac{3}{t}$.
 
 Since $t \geq 1$ and $\dfrac{3}{t}$ is decreasing for $t > 0$:
 
-The minimum occurs when $t$ is maximum? No -- $t$ can be arbitrarily large, making $\dfrac{3}{t}$ approach $0$. We need the minimum value, which occurs when $t$ is largest? No. When $t$ increases, $\dfrac{3}{t}$ decreases, so the expression approaches 1 from above.
+The minimum occurs when $t$ is maximum? No -- $t$ can be arbitrarily large, making $\dfrac{3}{t}$
+approach $0$. We need the minimum value, which occurs when $t$ is largest? No. When $t$ increases,
+$\dfrac{3}{t}$ decreases, so the expression approaches 1 from above.
 
-Actually, since $t \geq 1$ and $\dfrac{3}{t}$ decreases as $t$ increases, the maximum of $\dfrac{3}{t}$ is at $t = 1$:
+Actually, since $t \geq 1$ and $\dfrac{3}{t}$ decreases as $t$ increases, the maximum of
+$\dfrac{3}{t}$ is at $t = 1$:
 
 Minimum of the expression is when $t$ is as large as possible, giving $\dfrac{3}{t} \to 0$.
 
-Wait -- we need the minimum. $1 + \dfrac{3}{t}$ with $t \geq 1$: since $\dfrac{3}{t} \leq 3$ and decreases, the minimum is the infimum $1$ (not attained).
+Wait -- we need the minimum. $1 + \dfrac{3}{t}$ with $t \geq 1$: since $\dfrac{3}{t} \leq 3$ and
+decreases, the minimum is the infimum $1$ (not attained).
 
-But let us reconsider. The expression $1 + \dfrac{3}{t}$ with $t \geq 1$: since $\dfrac{3}{t}$ ranges from $3$ (at $t = 1$) down to $0$ (as $t \to \infty$), the range is $(1,\; 4]$.
+But let us reconsider. The expression $1 + \dfrac{3}{t}$ with $t \geq 1$: since $\dfrac{3}{t}$
+ranges from $3$ (at $t = 1$) down to $0$ (as $t \to \infty$), the range is $(1,\; 4]$.
 
 The minimum value approaches $1$ but is never attained.
 
@@ -371,15 +390,24 @@ The minimum value approaches $1$ but is never attained.
 
 ## Common Pitfalls
 
-1. **Forgetting the $a \neq 0$ condition in discriminant problems.** When asked about the roots of $ax^2 + bx + c = 0$If $a$ contains a parameter, always check that $a \neq 0$ separately. If $a = 0$The equation is linear and has exactly one root.
+1. **Forgetting the $a \neq 0$ condition in discriminant problems.** When asked about the roots of
+   $ax^2 + bx + c = 0$If $a$ contains a parameter, always check that $a \neq 0$ separately. If
+   $a = 0$The equation is linear and has exactly one root.
 
-2. **Losing solutions when dividing by an expression containing $x$.** When solving $x \cdot f(x) = 0$You must consider both $x = 0$ and $f(x) = 0$. Dividing by $x$ loses the solution $x = 0$.
+2. **Losing solutions when dividing by an expression containing $x$.** When solving
+   $x \cdot f(x) = 0$You must consider both $x = 0$ and $f(x) = 0$. Dividing by $x$ loses the
+   solution $x = 0$.
 
-3. **Incorrect sign when completing the square.** A common error is writing $x^2 - 6x = (x - 3)^2 - 9$ but mistakenly writing $-9$ as $+9$. Always verify by expanding back: $(x - 3)^2 = x^2 - 6x + 9$So $x^2 - 6x = (x - 3)^2 - 9$.
+3. **Incorrect sign when completing the square.** A common error is writing
+   $x^2 - 6x = (x - 3)^2 - 9$ but mistakenly writing $-9$ as $+9$. Always verify by expanding back:
+   $(x - 3)^2 = x^2 - 6x + 9$So $x^2 - 6x = (x - 3)^2 - 9$.
 
-4. **Assuming all quadratics can be factorised with integer coefficients.** If the discriminant is not a perfect square, the roots are irrational. In such cases, use the quadratic formula and leave answers in surd form (exact values preferred in DSE).
+4. **Assuming all quadratics can be factorised with integer coefficients.** If the discriminant is
+   not a perfect square, the roots are irrational. In such cases, use the quadratic formula and
+   leave answers in surd form (exact values preferred in DSE).
 
-5. **Confusing the axis of symmetry with the vertex.** For $y = a(x - h)^2 + k$The axis of symmetry is $x = h$ and the vertex is $(h, k)$. The vertex is a point; the axis of symmetry is a line.
+5. **Confusing the axis of symmetry with the vertex.** For $y = a(x - h)^2 + k$The axis of symmetry
+   is $x = h$ and the vertex is $(h, k)$. The vertex is a point; the axis of symmetry is a line.
 
 ---
 
@@ -387,8 +415,8 @@ The minimum value approaches $1$ but is never attained.
 
 ### DSE-1
 
-(a) Find the range of values of $k$ for which $kx^2 - (k + 3)x + 3 = 0$ has two distinct real roots. (4 marks)
-(b) For the value of $k$ at the boundary of this range, solve the equation. (2 marks)
+(a) Find the range of values of $k$ for which $kx^2 - (k + 3)x + 3 = 0$ has two distinct real roots.
+(4 marks) (b) For the value of $k$ at the boundary of this range, solve the equation. (2 marks)
 
 **Solution:**
 
@@ -412,10 +440,11 @@ $3x^2 - 6x + 3 = 0 \implies x^2 - 2x + 1 = 0 \implies (x - 1)^2 = 0 \implies x =
 
 ### DSE-2
 
-The quadratic equation $x^2 + px + q = 0$ has roots $\alpha$ and $\beta$. It is given that $\alpha^2 + \beta^2 = 10$ and $\alpha^3 + \beta^3 = 28$.
+The quadratic equation $x^2 + px + q = 0$ has roots $\alpha$ and $\beta$. It is given that
+$\alpha^2 + \beta^2 = 10$ and $\alpha^3 + \beta^3 = 28$.
 
-(a) Find the values of $p$ and $q$. (4 marks)
-(b) Hence solve the equation $x^2 + px + q = 0$. (2 marks)
+(a) Find the values of $p$ and $q$. (4 marks) (b) Hence solve the equation $x^2 + px + q = 0$. (2
+marks)
 
 **Solution:**
 
@@ -451,8 +480,8 @@ So $p = -4$$q = \dfrac{16 - 10}{2} = 3$.
 
 Let $f(x) = x^2 - 2kx + k^2 + k - 3$.
 
-(a) Find the range of values of $k$ for which $f(x) > 0$ for all real $x$. (3 marks)
-(b) If the minimum value of $f(x)$ is $-1$Find $k$. (3 marks)
+(a) Find the range of values of $k$ for which $f(x) > 0$ for all real $x$. (3 marks) (b) If the
+minimum value of $f(x)$ is $-1$Find $k$. (3 marks)
 
 **Solution:**
 
@@ -476,16 +505,17 @@ Solve the inequality $\dfrac{x^2 - 5x + 6}{x^2 - 4} \geq 0$.
 
 Factorise: $\dfrac{(x-2)(x-3)}{(x-2)(x+2)} = \dfrac{x - 3}{x + 2}$Provided $x \neq 2$.
 
-Critical values: $x = -2$ (excluded, denominator zero) and $x = 3$ (included, numerator zero). Also $x = 2$ is excluded (denominator zero in original).
+Critical values: $x = -2$ (excluded, denominator zero) and $x = 3$ (included, numerator zero). Also
+$x = 2$ is excluded (denominator zero in original).
 
 Sign chart for $\dfrac{x - 3}{x + 2}$:
 
-| Interval | Test | Sign |
-|---|---|---|
-| $x < -2$ | $x = -3$ | $+$ |
-| $-2 < x < 2$ | $x = 0$ | $-$ |
-| $2 < x < 3$ | $x = 2.5$ | $-$ |
-| $x > 3$ | $x = 4$ | $+$ |
+| Interval     | Test      | Sign |
+| ------------ | --------- | ---- |
+| $x < -2$     | $x = -3$  | $+$  |
+| $-2 < x < 2$ | $x = 0$   | $-$  |
+| $2 < x < 3$  | $x = 2.5$ | $-$  |
+| $x > 3$      | $x = 4$   | $+$  |
 
 The expression is non-negative for $x < -2$ or $x \geq 3$Excluding $x = 2$.
 
@@ -497,8 +527,8 @@ Solution: $x \in (-\infty,\; -2) \cup [3,\; \infty)$.
 
 Given that the equation $2x^2 + 4x + k = 0$ has roots $\alpha$ and $\beta$:
 
-(a) Express $\dfrac{1}{\alpha} + \dfrac{1}{\beta}$ in terms of $k$. (2 marks)
-(b) Find the value of $k$ such that $\dfrac{1}{\alpha^2} + \dfrac{1}{\beta^2} = 1$. (4 marks)
+(a) Express $\dfrac{1}{\alpha} + \dfrac{1}{\beta}$ in terms of $k$. (2 marks) (b) Find the value of
+$k$ such that $\dfrac{1}{\alpha^2} + \dfrac{1}{\beta^2} = 1$. (4 marks)
 
 **Solution:**
 
@@ -506,7 +536,8 @@ Given that the equation $2x^2 + 4x + k = 0$ has roots $\alpha$ and $\beta$:
 
 $$\frac{1}{\alpha} + \frac{1}{\beta} = \frac{\alpha + \beta}{\alpha\beta} = \frac{-2}{k/2} = -\frac{4}{k}$$
 
-(b) $\dfrac{1}{\alpha^2} + \dfrac{1}{\beta^2} = \left(\dfrac{1}{\alpha} + \dfrac{1}{\beta}\right)^2 - \dfrac{2}{\alpha\beta} = \dfrac{16}{k^2} - \dfrac{4}{k}$.
+(b)
+$\dfrac{1}{\alpha^2} + \dfrac{1}{\beta^2} = \left(\dfrac{1}{\alpha} + \dfrac{1}{\beta}\right)^2 - \dfrac{2}{\alpha\beta} = \dfrac{16}{k^2} - \dfrac{4}{k}$.
 
 Setting equal to 1:
 
@@ -518,4 +549,7 @@ $$k^2 + 4k - 16 = 0$$
 
 $$k = \frac{-4 \pm \sqrt{16 + 64}}{2} = \frac{-4 \pm \sqrt{80}}{2} = -2 \pm 2\sqrt{5}$$
 
-Both are valid provided the original equation has real roots: $\Delta = 16 - 8k > 0 \implies k < 2$. Since $-2 + 2\sqrt{5} \approx 2.47 > 2$Only $k = -2 - 2\sqrt{5}$ gives real roots. Check: $\Delta = 16 - 8(-2 - 2\sqrt{5}) = 16 + 16 + 16\sqrt{5} = 32 + 16\sqrt{5} > 0$. Both values give $\Delta > 0$So both are valid.
+Both are valid provided the original equation has real roots: $\Delta = 16 - 8k > 0 \implies k < 2$.
+Since $-2 + 2\sqrt{5} \approx 2.47 > 2$Only $k = -2 - 2\sqrt{5}$ gives real roots. Check:
+$\Delta = 16 - 8(-2 - 2\sqrt{5}) = 16 + 16 + 16\sqrt{5} = 32 + 16\sqrt{5} > 0$. Both values give
+$\Delta > 0$So both are valid.

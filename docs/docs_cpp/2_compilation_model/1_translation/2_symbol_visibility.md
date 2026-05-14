@@ -1,6 +1,8 @@
 ---
 title: Symbol Visibility
-description: "C++: Symbol Visibility — The One Definition Rule (ODR); 1. ODR within a Translation Unit; 2. ODR within a Program; Linkage Types."
+description:
+  'C++: Symbol Visibility — The One Definition Rule (ODR); 1. ODR within a Translation Unit; 2. ODR
+  within a Program; Linkage Types.'
 date: 2025-12-11T21:24:11.468Z
 tags:
   - cpp
@@ -8,6 +10,7 @@ categories:
   - cpp
 slug: symbol-visibility
 ---
+
 Import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 While the compiler processes one Translation Unit (TU) at a time, the **Linker** fuses them
@@ -36,12 +39,10 @@ Any other TU.
 
 - _Enforcement:_ Linker Error ("Multiple Definition" / "Symbol already defined").
 
-:::danger
-The ODR Violation Trap If two different TUs define the same class/struct `Foo` (e.g., via
+:::danger The ODR Violation Trap If two different TUs define the same class/struct `Foo` (e.g., via
 Copy-pasted headers), but the definitions differ (e.g., different member order or types), the linker
 **may not detect this**. This is **Undefined Behavior**. The runtime may crash or corrupt memory
-Because code in TU 'A' assumes one memory layout while code in TU 'B' assumes another.
-:::
+Because code in TU 'A' assumes one memory layout while code in TU 'B' assumes another. :::
 
 ## Linkage Types
 
@@ -60,8 +61,8 @@ The name is accessible from anywhere within the **current TU**, but it is invisi
 The linker sees the symbol but marks it as local.
 
 - **Syntax:**
- - **Legacy C:** `static` keyword on globals/functions.
- - **Modern C++:** Anonymous Namespaces.
+- **Legacy C:** `static` keyword on globals/functions.
+- **Modern C++:** Anonymous Namespaces.
 
 ```cpp
 // Legacy Style (Deprecated for C++ code)
@@ -112,7 +113,7 @@ If included in `A.cpp` and `B.cpp`The linker sees two symbols named `log`.
 
 - Without `inline`: Linker Error (Multiple Definition).
 - With `inline`: The linker picks one definition and discards the rest. It trusts that they are
- identical.
+  identical.
 
 **C++17 Inline Variables:** Before C++17, `static const` members required out-of-line definitions in
 A `.cpp` file. C++17 allows `inline` variables, enabling header-only static members.
@@ -133,9 +134,9 @@ Shared Library (`.so` / `.dll`).
 ### The Visibility Asymmetry
 
 - **Windows (PE/COFF):** Symbols are **Hidden by Default**. You must explicitly `export` them to
- make them usable by consumers of the DLL.
+  make them usable by consumers of the DLL.
 - **Linux (ELF):** Symbols are **Visible by Default**. Everything with external linkage is exported
- unless you hide it.
+  unless you hide it.
 
 ### Unified Architecture (Best Practice)
 
@@ -233,10 +234,10 @@ Binding in the ELF symbol table. The linker treats local symbols as invisible to
 This has important consequences:
 
 1. **Name collisions are impossible:** Two TUs can each define a `static` function called `helper()`
- without conflict.
+   without conflict.
 2. **The compiler can optimize more aggressively:** Since the symbol cannot be referenced from
- outside the TU, the compiler knows all call sites and can inline, dead-code eliminate, or
- specialize the function.
+   outside the TU, the compiler knows all call sites and can inline, dead-code eliminate, or
+   specialize the function.
 3. **Symbol table size is reduced:** The dynamic linker processes fewer symbols at startup.
 
 ```cpp
@@ -332,12 +333,12 @@ Exemptions).
 
 The ELF specification defines four visibility levels:
 
-| Visibility | ELF Constant | Behavior |
+| Visibility  | ELF Constant    | Behavior                                                      |
 | :---------- | :-------------- | :------------------------------------------------------------ |
-| `default` | `STV_DEFAULT` | Visible to all DSOs and the executable |
-| `hidden` | `STV_HIDDEN` | Not visible outside the defining DSO (prevents PLT/GOT entry) |
-| `internal` | `STV_INTERNAL` | Like hidden, but also prevents symbol interposition |
-| `protected` | `STV_PROTECTED` | Visible, but cannot be preempted by other DSOs |
+| `default`   | `STV_DEFAULT`   | Visible to all DSOs and the executable                        |
+| `hidden`    | `STV_HIDDEN`    | Not visible outside the defining DSO (prevents PLT/GOT entry) |
+| `internal`  | `STV_INTERNAL`  | Like hidden, but also prevents symbol interposition           |
+| `protected` | `STV_PROTECTED` | Visible, but cannot be preempted by other DSOs                |
 
 **`-fvisibility=hidden`** sets the default visibility to `STV_HIDDEN` for all external symbols. You
 Then opt-in specific symbols with `__attribute__((visibility("default")))`.
@@ -508,22 +509,22 @@ Behavior** and manifests as corrupted floating-point values or subtle numerical 
 ## Common Pitfalls
 
 - **Using `static` for constants in headers instead of `inline`.** In C++17 and later, prefer
- `static inline` or `inline` for header-only constants. `static` creates a separate copy in every
- TU, increasing binary size and potentially causing identity comparison failures (`&a != &b` when
- they should be the same object).
+  `static inline` or `inline` for header-only constants. `static` creates a separate copy in every
+  TU, increasing binary size and potentially causing identity comparison failures (`&a != &b` when
+  they should be the same object).
 - **Forgetting `-fvisibility=hidden` on Linux shared libraries.** Without it, every external-linkage
- symbol in your library is exported, polluting the global symbol namespace and slowing down dynamic
- linking. Large projects (Chromium, Firefox) enforce hidden visibility by default.
+  symbol in your library is exported, polluting the global symbol namespace and slowing down dynamic
+  linking. Large projects (Chromium, Firefox) enforce hidden visibility by default.
 - **Mismatched export macros.** If the DLL consumer uses `__declspec(dllimport)` but the symbol is
- not actually exported from the DLL, the linker fails with an unresolved external symbol error.
- Ensure the `DEFINE_SYMBOL` CMake property matches the macro name in your header.
+  not actually exported from the DLL, the linker fails with an unresolved external symbol error.
+  Ensure the `DEFINE_SYMBOL` CMake property matches the macro name in your header.
 - **Relying on undefined behavior when violating the ODR.** The ODR is not a "soft rule." Violations
- are undefined behavior per [N4950 §6.6]. The program may appear to work in debug builds but fail
- in optimized builds where the compiler makes assumptions based on the ODR (e.g., assuming two
- definitions of `inline` function are identical and merging them incorrectly).
+  are undefined behavior per [N4950 §6.6]. The program may appear to work in debug builds but fail
+  in optimized builds where the compiler makes assumptions based on the ODR (e.g., assuming two
+  definitions of `inline` function are identical and merging them incorrectly).
 - **Not checking symbol tables after refactoring.** After removing a function or renaming a class,
- check `nm -C libmylib.so` to verify that stale symbols are not being exported. Stale exports
- increase binary size and can confuse consumers who accidentally use deprecated symbols.
+  check `nm -C libmylib.so` to verify that stale symbols are not being exported. Stale exports
+  increase binary size and can confuse consumers who accidentally use deprecated symbols.
 
 :::
 

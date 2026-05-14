@@ -1,6 +1,8 @@
 ---
 title: Momentum
-description: "A-Level Mathematics notes on Momentum: linear momentum, conservation of momentum, impulse, and collisions with worked examples and exam-style questions."
+description:
+  'A-Level Mathematics notes on Momentum: linear momentum, conservation of momentum, impulse, and
+  collisions with worked examples and exam-style questions.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Maths
@@ -9,19 +11,18 @@ categories:
   - Maths
 slug: momentum
 ---
+
 ## Board Coverage
 
-| Board | Paper | Notes |
+| Board      | Paper   | Notes                          |
 | ---------- | ------- | ------------------------------ |
-| AQA | Paper 1 | Momentum, impulse, collisions |
-| Edexcel | P1 | Similar |
-| OCR (A) | Paper 1 | Includes 2D collisions |
-| CIE (9709) | P4 | Momentum, impulse, restitution |
+| AQA        | Paper 1 | Momentum, impulse, collisions  |
+| Edexcel    | P1      | Similar                        |
+| OCR (A)    | Paper 1 | Includes 2D collisions         |
+| CIE (9709) | P4      | Momentum, impulse, restitution |
 
-:::info
-Momentum is a vector quantity. Always define a positive direction and be consistent with
-Signs.
-:::
+:::info Momentum is a vector quantity. Always define a positive direction and be consistent with
+Signs. :::
 
 <hr />
 
@@ -98,8 +99,8 @@ $$J = \int_{t_1}^{t_2}F(t)\,dt$$
 
 ### 4.1 Direct collisions
 
-For a one-dimensional collision between masses $m_1$ and $m_2$ with velocities $u_1$$u_2$ before
-And $v_1$$v_2$ after:
+For a one-dimensional collision between masses $m_1$ and $m_2$ with velocities $u_1$$u_2$ before And
+$v_1$$v_2$ after:
 
 $$m_1u_1 + m_2u_2 = m_1v_1 + m_2v_2$$
 
@@ -118,7 +119,8 @@ Independently.
 
 $$e = \frac◆LB◆\mathrm{relative speed of separation}◆RB◆◆LB◆\mathrm{relative speed of approach}◆RB◆$$
 
-For a collision between a body and a wall: $$e = \frac◆LB◆v_{\mathrm{after}}◆RB◆◆LB◆u_{\mathrm{before}}◆RB◆$$
+For a collision between a body and a wall:
+$$e = \frac◆LB◆v_{\mathrm{after}}◆RB◆◆LB◆u_{\mathrm{before}}◆RB◆$$
 
 For two bodies: $$e = \frac{v_2 - v_1}{u_1 - u_2}$$
 
@@ -177,10 +179,7 @@ $$1 - e^2 \geq 0 \implies e^2 \leq 1 \implies e \leq 1$$
 
 Combining both results: $0 \leq e \leq 1$. $\blacksquare$
 
-:::warning
-Warning
-Energy cannot increase during a collision.
-:::
+:::warning Warning Energy cannot increase during a collision. :::
 
 <hr />
 
@@ -223,11 +222,8 @@ $$J_y = \int_{t_1}^{t_2}F_y\,dt = \Delta p_y = m v_{y,\mathrm{final}} - m v_{y,\
 
 This is particularly useful for oblique impacts where the impulse acts in a specific direction.
 
-:::info
-Info
-Equation) and conservation of momentum (an algebraic constraint). It tells us exactly how much
-Momentum a force transfers over a given time interval.
-:::
+:::info Info Equation) and conservation of momentum (an algebraic constraint). It tells us exactly
+how much Momentum a force transfers over a given time interval. :::
 
 <hr />
 
@@ -281,10 +277,10 @@ $3(1.5) + 2(-3\sin\theta) = 0 \implies 4.5 = 6\sin\theta \implies \sin\theta = 0
 $\theta \approx 48.6^\circ$.
 
 The slight discrepancy arises from rounding $1.5\sqrt{3}$. Using exact values:
-$1.5\sqrt{3} = \frac◆LB◆3\sqrt{3}◆RB◆◆LB◆2◆RB◆$$12 - 4.5\sqrt{3} = 12 - \frac◆LB◆9\sqrt{3}◆RB◆◆LB◆2◆RB◆$. From $y$:
-$\sin\theta = 0.75$$\cos\theta = \sqrt{1 - 0.5625} = \sqrt{0.4375} \approx 0.6614$. From $x$:
-$\cos\theta = (12 - 4.5\sqrt{3})/6 \approx 0.701$. These are not equal, indicating the stated speeds
-Are not exactly consistent with momentum conservation — a useful check in exam problems.
+$1.5\sqrt{3} = \frac◆LB◆3\sqrt{3}◆RB◆◆LB◆2◆RB◆$$12 - 4.5\sqrt{3} = 12 - \frac◆LB◆9\sqrt{3}◆RB◆◆LB◆2◆RB◆$.
+From $y$: $\sin\theta = 0.75$$\cos\theta = \sqrt{1 - 0.5625} = \sqrt{0.4375} \approx 0.6614$. From
+$x$: $\cos\theta = (12 - 4.5\sqrt{3})/6 \approx 0.701$. These are not equal, indicating the stated
+speeds Are not exactly consistent with momentum conservation — a useful check in exam problems.
 
 <hr />
 
@@ -301,14 +297,14 @@ Consequences:
 
 - The component of velocity **perpendicular** to the line of centres is unchanged for each particle.
 - The component of velocity **parallel** to the line of centres obeys the one-dimensional collision
- equations (conservation of momentum and restitution along the line of centres).
+  equations (conservation of momentum and restitution along the line of centres).
 
 ### 8.2 Method for solving 2D collisions
 
 1. Identify the line of centres at the instant of collision.
 2. Resolve all velocities into components parallel and perpendicular to the line of centres.
 3. The perpendicular components remain unchanged: $v_{A,\perp} = u_{A,\perp}$ and
- $v_{B,\perp} = u_{B,\perp}$.
+   $v_{B,\perp} = u_{B,\perp}$.
 4. Apply conservation of momentum along the line of centres.
 5. Apply the restitution equation along the line of centres.
 6. Reconstruct the final velocity vectors from their components.
@@ -317,14 +313,15 @@ Consequences:
 
 Two smooth spheres $A$ (mass $3\,\mathrm{kg}$) and $B$ (mass $2\,\mathrm{kg}$) collide. Before
 Collision, $A$ moves with velocity $5\,\mathrm{m/s}$ and $B$ is stationary. The line of centres
-Makes an angle of $30^\circ$ with the direction of motion of $A$. Given $e = 0.6$Find the speed
-And direction of each sphere after collision.
+Makes an angle of $30^\circ$ with the direction of motion of $A$. Given $e = 0.6$Find the speed And
+direction of each sphere after collision.
 
 **Solution.** Resolving parallel ($\parallel$) and perpendicular ($\perp$) to the line of centres:
 
 **Before collision:**
 
-- $A$: $u_{A,\parallel} = 5\cos 30° = \frac◆LB◆5\sqrt{3}◆RB◆◆LB◆2◆RB◆$$u_{A,\perp} = 5\sin 30° = 2.5$
+- $A$:
+  $u_{A,\parallel} = 5\cos 30° = \frac◆LB◆5\sqrt{3}◆RB◆◆LB◆2◆RB◆$$u_{A,\perp} = 5\sin 30° = 2.5$
 - $B$: $u_{B,\parallel} = 0$$u_{B,\perp} = 0$
 
 **After collision (perpendicular unchanged):**
@@ -333,15 +330,16 @@ And direction of each sphere after collision.
 
 **Along the line of centres (1D collision with $e = 0.6$):**
 
-Momentum: $3 \cdot \frac◆LB◆5\sqrt{3}◆RB◆◆LB◆2◆RB◆ + 2 \cdot 0 = 3\,v_{A,\parallel} + 2\,v_{B,\parallel}$
+Momentum:
+$3 \cdot \frac◆LB◆5\sqrt{3}◆RB◆◆LB◆2◆RB◆ + 2 \cdot 0 = 3\,v_{A,\parallel} + 2\,v_{B,\parallel}$
 
 $$\frac◆LB◆15\sqrt{3}◆RB◆◆LB◆2◆RB◆ = 3\,v_{A,\parallel} + 2\,v_{B,\parallel}$$
 
 Restitution:
 $v_{B,\parallel} - v_{A,\parallel} = 0.6 \cdot \frac◆LB◆5\sqrt{3}◆RB◆◆LB◆2◆RB◆ = \frac◆LB◆3\sqrt{3}◆RB◆◆LB◆2◆RB◆$
 
-So $v_{B,\parallel} = v_{A,\parallel} + \frac◆LB◆3\sqrt{3}◆RB◆◆LB◆2◆RB◆$. Substituting into the momentum
-Equation:
+So $v_{B,\parallel} = v_{A,\parallel} + \frac◆LB◆3\sqrt{3}◆RB◆◆LB◆2◆RB◆$. Substituting into the
+momentum Equation:
 
 $$\frac◆LB◆15\sqrt{3}◆RB◆◆LB◆2◆RB◆ = 3\,v_{A,\parallel} + 2\!\left(v_{A,\parallel} + \frac◆LB◆3\sqrt{3}◆RB◆◆LB◆2◆RB◆\right) = 5\,v_{A,\parallel} + 3\sqrt{3}$$
 
@@ -354,8 +352,9 @@ $$v_{B,\parallel} = \frac◆LB◆9\sqrt{3}◆RB◆◆LB◆10◆RB◆ + \frac◆L
 **Speed of $A$:**
 $|v_A| = \sqrt◆LB◆v_{A,\parallel}^2 + v_{A,\perp}^2◆RB◆ = \sqrt◆LB◆\left(\frac{9\sqrt{3}}{10}\right)^2 + 2.5^2◆RB◆ = \sqrt{2.43 + 6.25} = \sqrt{8.68} \approx 2.95\,\mathrm{m/s}$
 
-**Speed of $B$:** $|v_B| = v_{B,\parallel} = \frac◆LB◆12\sqrt{3}◆RB◆◆LB◆5◆RB◆ \approx 4.16\,\mathrm{m/s}$ (moves
-Along the line of centres only).
+**Speed of $B$:**
+$|v_B| = v_{B,\parallel} = \frac◆LB◆12\sqrt{3}◆RB◆◆LB◆5◆RB◆ \approx 4.16\,\mathrm{m/s}$ (moves Along
+the line of centres only).
 
 <hr />
 
@@ -393,11 +392,9 @@ $$\tan\beta = \frac◆LB◆v_t◆RB◆◆LB◆|v_n|◆RB◆ = \frac◆LB◆u\sin
 
 ### 9.3 Angle relationships
 
-:::info
-Info
-$\beta \geq \alpha$. The particle always rebounds at an angle greater than or equal to the angle of
-Incidence. Equality holds only when $e = 1$ (perfectly elastic), recovering the law of reflection.
-:::
+:::info Info $\beta \geq \alpha$. The particle always rebounds at an angle greater than or equal to
+the angle of Incidence. Equality holds only when $e = 1$ (perfectly elastic), recovering the law of
+reflection. :::
 
 Special cases:
 
@@ -681,7 +678,8 @@ $3\,v_y + 6\sqrt{3} = 0 \implies v_y = -2\sqrt{3}\,\mathrm{m/s}$.
 
 Speed: $|v| = \sqrt◆LB◆(-2)^2 + (-2\sqrt{3})^2◆RB◆ = \sqrt{4 + 12} = \sqrt{16} = 4\,\mathrm{m/s}$.
 
-Direction: $\theta = \arctan\!\left(\frac◆LB◆-2\sqrt{3}◆RB◆◆LB◆-2◆RB◆\right) = \arctan(\sqrt{3}) = 60^\circ$
+Direction:
+$\theta = \arctan\!\left(\frac◆LB◆-2\sqrt{3}◆RB◆◆LB◆-2◆RB◆\right) = \arctan(\sqrt{3}) = 60^\circ$
 Below the horizontal (south-west).
 
 **If you get this wrong, revise:**
@@ -755,7 +753,7 @@ $v_{B,\parallel} = 3.6\,\mathrm{m/s}$.
 
 - $A$: $\mathbf{v}_A = (0.6, 0)\,\mathrm{m/s}$Speed $= 0.6\,\mathrm{m/s}$
 - $B$: $\mathbf{v}_B = (3.6, 2)\,\mathrm{m/s}$Speed
- $= \sqrt{3.6^2 + 2^2} = \sqrt{12.96 + 4} = \sqrt{16.96} \approx 4.12\,\mathrm{m/s}$
+  $= \sqrt{3.6^2 + 2^2} = \sqrt{12.96 + 4} = \sqrt{16.96} \approx 4.12\,\mathrm{m/s}$
 
 **If you get this wrong, revise:**
 [Two-Dimensional Collisions Between Particles](#8-two-dimensional-collisions-between-particles) —
@@ -780,9 +778,9 @@ Since $\frac{1}{2} \gt{} 0$$\frac{m_1m_2}{m_1+m_2} \gt{} 0$ (for positive masses
 $(u_1-u_2)^2 \geq 0$We get $\Delta\mathrm{KE} \lt{} 0$.
 
 $\Delta\mathrm{KE} \lt{} 0$ means
-$\mathrm{KE}_{\mathrm{after}} \gt{} \mathrm{KE}_{\mathrm{before}}$Which would require kinetic
-Energy to be created during the collision. This violates conservation of energy (no external work is
-Done during the collision).
+$\mathrm{KE}_{\mathrm{after}} \gt{} \mathrm{KE}_{\mathrm{before}}$Which would require kinetic Energy
+to be created during the collision. This violates conservation of energy (no external work is Done
+during the collision).
 
 Therefore $e \leq 1$. $\blacksquare$
 
@@ -857,9 +855,9 @@ $2v_{A,\parallel} = (1-e)\,u\cos\theta \implies v_{A,\parallel} = \frac{(1-e)}{2
 **Velocity vectors after collision:**
 
 - $\mathbf{v}_A$: parallel component $\frac{(1-e)}{2}\,u\cos\theta$ along line of centres,
- perpendicular component $u\sin\theta$.
+  perpendicular component $u\sin\theta$.
 - $\mathbf{v}_B$: parallel component $\frac{(1+e)}{2}\,u\cos\theta$ along line of centres,
- perpendicular component $0$.
+  perpendicular component $0$.
 
 The angle between $\mathbf{v}_A$ and $\mathbf{v}_B$ is found by computing their dot product:
 
@@ -894,17 +892,17 @@ Section 8.
 
 :::
 
-
 ---
 
-:::tip
-Tip
-Ready to test your understanding of **Momentum**? The [diagnostic test](/docs/alevel/maths/diagnostics/diag-momentum) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
+:::tip Tip Ready to test your understanding of **Momentum**? The
+[diagnostic test](/docs/alevel/maths/diagnostics/diag-momentum) contains the hardest questions
+within the A-Level specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Momentum with other topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Momentum
+with other topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and
+building a personal test matrix. :::
 
 ## Common Pitfalls
 

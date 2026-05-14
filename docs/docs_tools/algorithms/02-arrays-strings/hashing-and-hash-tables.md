@@ -1,9 +1,12 @@
 ---
 id: hashing-and-hash-tables
 title: Hashing and Hash Tables
-description: "Hashing and Hash Tables — Hash Function Fundamentals; Desirable Properties; Avalanche Criterion; Uniformity with worked examples and exam-style questions."
+description:
+  'Hashing and Hash Tables — Hash Function Fundamentals; Desirable Properties; Avalanche Criterion;
+  Uniformity with worked examples and exam-style questions.'
 slug: hashing-and-hash-tables
 ---
+
 ## Hash Function Fundamentals
 
 A hash function maps an input from a large domain to a smaller, fixed-size range. Formally,
@@ -13,13 +16,13 @@ Of it.
 
 ### Desirable Properties
 
-| Property | Definition | Why It Matters |
-| ----------------- | ----------------------------------------------------------------------------------------------- | -------------------------------------------------------- |
-| **Deterministic** | Same input always produces same output | Lookups must find the same bucket as inserts |
-| **Uniform** | Each output is equally likely: $P(h(x) = i) = 1/m$ for all $i$ | Minimises collisions |
-| **Avalanche** | Flipping any input bit changes each output bit with probability $\approx 0.5$ | Small input changes produce unpredictable output changes |
-| **Efficient** | Computable in $O(k)$ where $k$ is the key length | Hash computation should not dominate lookup cost |
-| **Reversible** | (For non-cryptographic use) Given a hash value, finding a preimage should not be easy | Prevents intentional collision attacks |
+| Property          | Definition                                                                            | Why It Matters                                           |
+| ----------------- | ------------------------------------------------------------------------------------- | -------------------------------------------------------- |
+| **Deterministic** | Same input always produces same output                                                | Lookups must find the same bucket as inserts             |
+| **Uniform**       | Each output is equally likely: $P(h(x) = i) = 1/m$ for all $i$                        | Minimises collisions                                     |
+| **Avalanche**     | Flipping any input bit changes each output bit with probability $\approx 0.5$         | Small input changes produce unpredictable output changes |
+| **Efficient**     | Computable in $O(k)$ where $k$ is the key length                                      | Hash computation should not dominate lookup cost         |
+| **Reversible**    | (For non-cryptographic use) Given a hash value, finding a preimage should not be easy | Prevents intentional collision attacks                   |
 
 ### Avalanche Criterion
 
@@ -155,17 +158,17 @@ When the universe of keys $U$ is small, we can use an array of size $|U|$ where 
 Element with key $k$. This gives $O(1)$ worst-case insert, delete, and lookup, but wastes memory
 When $|U|$ is much larger than the actual number of keys $n$.
 
-| Operation | Time | Space |
+| Operation | Time   | Space      |
 | --------- | ------ | ---------- |
-| Insert | $O(1)$ | $O(\|U\|)$ |
-| Delete | $O(1)$ | $O(\|U\|)$ |
-| Lookup | $O(1)$ | $O(\|U\|)$ |
+| Insert    | $O(1)$ | $O(\|U\|)$ |
+| Delete    | $O(1)$ | $O(\|U\|)$ |
+| Lookup    | $O(1)$ | $O(\|U\|)$ |
 
 ### Hash Tables
 
-A hash table uses a hash function to map keys to indices in an array of size $m$ (
-$m \approx n$). The space is $O(n)$ instead of $O(|U|)$At the cost of handling collisions (when
-Two keys hash to the same index).
+A hash table uses a hash function to map keys to indices in an array of size $m$ ( $m \approx n$).
+The space is $O(n)$ instead of $O(|U|)$At the cost of handling collisions (when Two keys hash to the
+same index).
 
 ```python
 class HashTable:
@@ -231,12 +234,12 @@ A lookup, compute the hash, then scan the chain for the key.
 
 The load factor is $\alpha = n / m$ where $n$ is the number of elements and $m$ is the table size.
 
-| Statistic | Value |
+| Statistic                         | Value                           |
 | --------------------------------- | ------------------------------- |
-| Expected chain length | $\alpha$ |
-| Unsuccessful search (average) | $O(\alpha)$ comparisons |
-| Successful search (average) | $O(1 + \alpha / 2)$ comparisons |
-| With chaining and $\alpha \lt{1}$ | $O(1)$ amortised per operation |
+| Expected chain length             | $\alpha$                        |
+| Unsuccessful search (average)     | $O(\alpha)$ comparisons         |
+| Successful search (average)       | $O(1 + \alpha / 2)$ comparisons |
+| With chaining and $\alpha \lt{1}$ | $O(1)$ amortised per operation  |
 
 :::warning
 
@@ -403,11 +406,11 @@ class DoubleHashingHashTable:
                 return True
 ```
 
-| Probe Method | Clustering | Expected Probes (unsuccessful) | Cache Performance |
+| Probe Method   | Clustering | Expected Probes (unsuccessful)            | Cache Performance |
 | -------------- | ---------- | ----------------------------------------- | ----------------- |
-| Linear | Primary | $\frac{1}{2}(1 + \frac{1}{(1-\alpha)^2})$ | Best |
-| Quadratic | Secondary | $\frac{1}{1-\alpha}$ | Good |
-| Double hashing | None | $\frac{1}{1-\alpha}$ | Moderate |
+| Linear         | Primary    | $\frac{1}{2}(1 + \frac{1}{(1-\alpha)^2})$ | Best              |
+| Quadratic      | Secondary  | $\frac{1}{1-\alpha}$                      | Good              |
+| Double hashing | None       | $\frac{1}{1-\alpha}$                      | Moderate          |
 
 ### Robin Hood Hashing
 
@@ -449,13 +452,13 @@ Alternative position. If a cycle is detected, the table is rebuilt with new hash
 
 **Properties:**
 
-| Property | Value |
+| Property            | Value                             |
 | ------------------- | --------------------------------- |
-| Lookup | $O(1)$ worst-case (2 probes) |
-| Insert (expected) | $O(1)$ amortised |
-| Insert (worst case) | $O(n)$ during rehash |
-| Space overhead | Maximum load factor $\approx 0.5$ |
-| Cache performance | Moderate (two memory accesses) |
+| Lookup              | $O(1)$ worst-case (2 probes)      |
+| Insert (expected)   | $O(1)$ amortised                  |
+| Insert (worst case) | $O(n)$ during rehash              |
+| Space overhead      | Maximum load factor $\approx 0.5$ |
+| Cache performance   | Moderate (two memory accesses)    |
 
 ```python
 class CuckooHashTable:
@@ -580,14 +583,14 @@ class ConsistentHashRing:
 
 Without virtual nodes, a small number of physical servers leads to uneven distribution (each server
 Occupies a large arc of the ring). Virtual nodes (replicas) solve this: each physical server is
-Placed on the ring multiple times ( 100-200 virtual nodes per physical server). This
-Smooths out the distribution and reduces the variance in key assignment.
+Placed on the ring multiple times ( 100-200 virtual nodes per physical server). This Smooths out the
+distribution and reduces the variance in key assignment.
 
 | Physical servers | Virtual nodes per server | Keys per server (std dev / mean) |
 | ---------------- | ------------------------ | -------------------------------- |
-| 10 | 1 | $\approx 0.39$ |
-| 10 | 100 | $\approx 0.04$ |
-| 10 | 1000 | $\approx 0.01$ |
+| 10               | 1                        | $\approx 0.39$                   |
+| 10               | 100                      | $\approx 0.04$                   |
+| 10               | 1000                     | $\approx 0.01$                   |
 
 ### Load Balancing Properties
 
@@ -617,11 +620,11 @@ Functions $h_1, h_2, \ldots, h_k$.
 
 ### Operations
 
-| Operation | Algorithm | Time |
+| Operation           | Algorithm                                                     | Time   |
 | ------------------- | ------------------------------------------------------------- | ------ |
-| Add | Set bits at positions $h_1(x), h_2(x), \ldots, h_k(x)$ | $O(k)$ |
-| Query | Check if all bits at $h_1(x), h_2(x), \ldots, h_k(x)$ are set | $O(k)$ |
-| False positive prob | $(1 - e^{-kn/m})^k$ | N/A |
+| Add                 | Set bits at positions $h_1(x), h_2(x), \ldots, h_k(x)$        | $O(k)$ |
+| Query               | Check if all bits at $h_1(x), h_2(x), \ldots, h_k(x)$ are set | $O(k)$ |
+| False positive prob | $(1 - e^{-kn/m})^k$                                           | N/A    |
 
 ```python
 import mmh3
@@ -668,9 +671,9 @@ $$m = -\frac{n \ln p}{(\ln 2)^2} \quad k = \frac{m}{n} \ln 2$$
 
 | False positive rate | Bits per element | Hash functions |
 | ------------------- | ---------------- | -------------- |
-| 1% | 9.6 | 7 |
-| 0.1% | 14.4 | 10 |
-| 0.01% | 19.2 | 14 |
+| 1%                  | 9.6              | 7              |
+| 0.1%                | 14.4             | 10             |
+| 0.01%               | 19.2             | 14             |
 
 :::warning
 
@@ -700,11 +703,11 @@ Function $h_i$ maps an element to a row and column.
 
 ### Operations
 
-| Operation | Algorithm | Time | Error |
-| --------- | ----------------------------------------- | ------ | ----------------------- |
-| Increment | For each row $i$: `count[i][h_i(x)] += 1` | $O(d)$ | N/A |
-| Estimate | Return $\min_i \mathrm{count{}[i][h_i(x)]$ | $O(d)$ | $\le \mathrm{true count{}$ |
-| Space | $d \times w$ counters | N/A | N/A |
+| Operation | Algorithm                                  | Time   | Error                      |
+| --------- | ------------------------------------------ | ------ | -------------------------- |
+| Increment | For each row $i$: `count[i][h_i(x)] += 1`  | $O(d)$ | N/A                        |
+| Estimate  | Return $\min_i \mathrm{count{}[i][h_i(x)]$ | $O(d)$ | $\le \mathrm{true count{}$ |
+| Space     | $d \times w$ counters                      | N/A    | N/A                        |
 
 The estimate is always an **overestimate**: $\hat{f}(x) \ge f(x)$ with high probability. The error
 Is bounded by $\epsilon \cdot N$ where $N$ is the total count and $\epsilon = e / w$.
@@ -808,23 +811,23 @@ class HyperLogLog:
         return int(estimate)
 ```
 
-| Registers ($m$) | Memory | Standard error |
+| Registers ($m$) | Memory | Standard error  |
 | --------------- | ------ | --------------- |
-| 64 | 64 B | $\approx 13\%$ |
-| 1024 | 1 KB | $\approx 3.3\%$ |
-| 4096 | 4 KB | $\approx 1.6\%$ |
-| 16384 | 16 KB | $\approx 0.8\%$ |
+| 64              | 64 B   | $\approx 13\%$  |
+| 1024            | 1 KB   | $\approx 3.3\%$ |
+| 4096            | 4 KB   | $\approx 1.6\%$ |
+| 16384           | 16 KB  | $\approx 0.8\%$ |
 
 ## Cryptographic vs Non-Cryptographic Hashing
 
-| Property | Non-Cryptographic | Cryptographic |
-| -------------------- | --------------------------------- | ---------------------------------------------------------- |
-| Speed | Very fast (GB/s) | Slower (hundreds of MB/s) |
-| Preimage resistance | No | Yes — given $h(x)$Hard to find $x$ |
-| Second preimage | No | Yes — given $x$Hard to find $y \ne x$ with $h(y) = h(x)$ |
-| Collision resistance | Weak | Yes — hard to find $x, y$ with $h(x) = h(y)$ |
-| Examples | FNV, MurmurHash, xxHash, CityHash | SHA-256, SHA-3, BLAKE3 |
-| Use case | Hash tables, fingerprints | Passwords, signatures, TLS |
+| Property             | Non-Cryptographic                 | Cryptographic                                            |
+| -------------------- | --------------------------------- | -------------------------------------------------------- |
+| Speed                | Very fast (GB/s)                  | Slower (hundreds of MB/s)                                |
+| Preimage resistance  | No                                | Yes — given $h(x)$Hard to find $x$                       |
+| Second preimage      | No                                | Yes — given $x$Hard to find $y \ne x$ with $h(y) = h(x)$ |
+| Collision resistance | Weak                              | Yes — hard to find $x, y$ with $h(x) = h(y)$             |
+| Examples             | FNV, MurmurHash, xxHash, CityHash | SHA-256, SHA-3, BLAKE3                                   |
+| Use case             | Hash tables, fingerprints         | Passwords, signatures, TLS                               |
 
 :::info
 
@@ -843,30 +846,29 @@ Python's `dict` is a highly optimised hash table using open addressing with a co
 Representation:
 
 - **Compact hash table** (since Python 3.6): stores entries in a dense array separate from the
- sparse hash index array. This improves memory locality for iteration.
+  sparse hash index array. This improves memory locality for iteration.
 - **Hash randomisation**: `PYTHONHASHSEED` randomises hash values to prevent hash DoS attacks.
 - **Growth factor**: starts at 8, grows by approximately $3\times$ on the first resize, then
- $2\times$ subsequently.
+  $2\times$ subsequently.
 - **Load factor**: maintains $2/3$ load factor (never exceeds this).
 - **Deleted entries**: uses a special sentinel value, with periodic cleanup during resize.
 
 ### Java `HashMap`
 
 - **Separate chaining** with linked lists, converting to red-black trees when a chain exceeds 8
- elements (since Java 8).
+  elements (since Java 8).
 - **Load factor**: 0.75 by default. Threshold for tree conversion: 8. Tree-to-list conversion: 6.
 - **Initial capacity**: 16 by default. The capacity is always a power of 2.
 - **Hash mixing**: applies a secondary hash function to the `hashCode()` result to spread higher
- bits into lower bits (XOR-shift).
+  bits into lower bits (XOR-shift).
 
 ### C++ `std::unordered_map`
 
-- **Separate chaining** (). The standard does not mandate a specific collision resolution
- strategy.
+- **Separate chaining** (). The standard does not mandate a specific collision resolution strategy.
 - **Load factor**: 1.0 by default (`max_load_factor()`).
 - **Bucket count**: power-of-two in libstdc++ (GCC), but not required by the standard.
 - **Rehash policy**: `rehash(n)` sets the bucket count to at least `n``reserve(n)` sets it to
- accommodate `n` elements without rehashing.
+  accommodate `n` elements without rehashing.
 
 ## Resize and Rehashing
 
@@ -890,8 +892,8 @@ def resize(old_table, new_capacity):
 ```
 
 **Why geometric resizing gives amortised $O(1)$**: if the table grows by factor $c$ when it reaches
-Load factor $\alpha$The cost of resizing is $O(n)$ but it only happens every $O(n)$ insertions.
-Over a sequence of $n$ insertions, the total resize cost is
+Load factor $\alpha$The cost of resizing is $O(n)$ but it only happens every $O(n)$ insertions. Over
+a sequence of $n$ insertions, the total resize cost is
 $O(n) + O(n/c) + O(n/c^2) + \ldots = O(cn)$Giving $O(c)$ amortised per insertion — a constant.
 
 ## Common Pitfalls
@@ -913,8 +915,8 @@ Long chains (Java 8+).
 ### 3. Forgetting to Override Both `__hash__` and `__eq__`
 
 In Python, if you override `__eq__` without overriding `__hash__`The class becomes unhashable. If
-You override `__hash__` without overriding `__eq__`Objects that compare equal may hash to
-Different values. Both must be consistent: if `a == b`Then `hash(a) == hash(b)`.
+You override `__hash__` without overriding `__eq__`Objects that compare equal may hash to Different
+values. Both must be consistent: if `a == b`Then `hash(a) == hash(b)`.
 
 ### 4. Integer Overflow in Hash Computation
 
@@ -931,10 +933,10 @@ Avalanche properties, or test your hash function against your actual data distri
 
 ### 6. Not Handling the Tombstone Problem in Open Addressing
 
-When deleting from an open-addressing table, you cannot clear the slot — doing so breaks the
-Probe chain for elements that were inserted after the deleted element. You must use a "tombstone"
-Marker (as shown in the linear probing implementation above) and periodically clean up tombstones
-During resize.
+When deleting from an open-addressing table, you cannot clear the slot — doing so breaks the Probe
+chain for elements that were inserted after the deleted element. You must use a "tombstone" Marker
+(as shown in the linear probing implementation above) and periodically clean up tombstones During
+resize.
 
 ### 7. Bloom Filter False Positives in Production
 

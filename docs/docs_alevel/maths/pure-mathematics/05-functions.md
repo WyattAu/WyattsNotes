@@ -1,6 +1,8 @@
 ---
 title: Functions
-description: "A-Level Mathematics notes on Functions: Board Coverage; 1. Definitions; 4. The Modulus Function; 4.1 Solving Modulus Equations."
+description:
+  'A-Level Mathematics notes on Functions: Board Coverage; 1. Definitions; 4. The Modulus Function;
+  4.1 Solving Modulus Equations.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Maths
@@ -9,14 +11,15 @@ categories:
   - Maths
 slug: functions
 ---
+
 ## Board Coverage
 
-| Board | Paper | Notes |
+| Board      | Paper      | Notes                                            |
 | ---------- | ---------- | ------------------------------------------------ |
-| AQA | Paper 1, 2 | Functions, composition, inverse, transformations |
-| Edexcel | P1, P2 | Similar; modulus in P1 |
-| OCR (A) | Paper 1, 2 | Includes composite functions |
-| CIE (9709) | P1 | Functions, domain, range, inverse |
+| AQA        | Paper 1, 2 | Functions, composition, inverse, transformations |
+| Edexcel    | P1, P2     | Similar; modulus in P1                           |
+| OCR (A)    | Paper 1, 2 | Includes composite functions                     |
+| CIE (9709) | P1         | Functions, domain, range, inverse                |
 
 <hr />
 
@@ -51,8 +54,8 @@ Domain: $[-2, 1) \cup (1, \infty)$.
 
 ## 2. Composition of Functions
 
-**Definition.** Given functions $f: A \to B$ and $g: B \to C$The _composition_
-$g \circ f: A \to C$ is defined by:
+**Definition.** Given functions $f: A \to B$ and $g: B \to C$The _composition_ $g \circ f: A \to C$
+is defined by:
 
 $$(g \circ f)(x) = g(f(x))$$
 
@@ -68,14 +71,11 @@ $(f \circ g)(x) = f(g(x)) = f(x^2) = 2x^2 + 1$.
 
 $(g \circ f)(x) = g(f(x)) = g(2x + 1) = (2x + 1)^2 = 4x^2 + 4x + 1$.
 
- $f \circ g \neq g \circ f$.
+$f \circ g \neq g \circ f$.
 
 </details>
 
-:::warning
-Warning
-Right to left: $(f \circ g)(x) = f(g(x))$.
-:::
+:::warning Warning Right to left: $(f \circ g)(x) = f(g(x))$. :::
 
 <hr />
 
@@ -142,8 +142,8 @@ $\mathbb{R} \setminus \{2\}$Which equals the domain of $f^{-1}$. ✓
 
 **Theorem.** The graph of $y = f^{-1}(x)$ is the reflection of $y = f(x)$ in the line $y = x$.
 
-_Proof._ If $(a, b)$ lies on $y = f(x)$Then $b = f(a)$So $a = f^{-1}(b)$Meaning $(b, a)$ lies
-On $y = f^{-1}(x)$. Swapping coordinates is reflection in $y = x$. $\blacksquare$
+_Proof._ If $(a, b)$ lies on $y = f(x)$Then $b = f(a)$So $a = f^{-1}(b)$Meaning $(b, a)$ lies On
+$y = f^{-1}(x)$. Swapping coordinates is reflection in $y = x$. $\blacksquare$
 
 <hr />
 
@@ -223,10 +223,10 @@ Similarly, $y = f(x) + b$ translates up by $b$.
 
 ### 5.2 Reflections
 
-| Transformation | Effect |
+| Transformation | Effect                     |
 | -------------- | -------------------------- |
-| $y = f(-x)$ | Reflection in the $y$-axis |
-| $y = -f(x)$ | Reflection in the $x$-axis |
+| $y = f(-x)$    | Reflection in the $y$-axis |
+| $y = -f(x)$    | Reflection in the $x$-axis |
 
 **Proof for $y = f(-x)$ as reflection in the $y$-axis.** If $(x_0, y_0)$ is on $y = f(x)$Then
 $y_0 = f(x_0)$. The point $(-x_0, y_0)$ satisfies $y_0 = f(-(-x_0)) = f(x_0)$So it lies on
@@ -234,18 +234,17 @@ $y = f(-x)$. Reflecting $(x_0, y_0)$ in the $y$-axis gives $(-x_0, y_0)$. $\blac
 
 ### 5.3 Stretches
 
-| Transformation | Effect |
+| Transformation | Effect                                         |
 | -------------- | ---------------------------------------------- |
-| $y = f(ax)$ | Horizontal stretch, scale factor $\frac{1}{a}$ |
-| $y = af(x)$ | Vertical stretch, scale factor $a$ |
+| $y = f(ax)$    | Horizontal stretch, scale factor $\frac{1}{a}$ |
+| $y = af(x)$    | Vertical stretch, scale factor $a$             |
 
 **Proof for $y = f(ax)$ as horizontal stretch.** If $(x_0, y_0)$ is on $y = f(x)$Then on
 $y = f(ax)$The same $y$-value occurs when $ax = x_0$I.e., $x = \frac{x_0}{a}$. So
 $(\frac{x_0}{a}, y_0)$ is on the new graph — a horizontal stretch by factor $\frac{1}{a}$.
 $\blacksquare$
 
-:::warning
-Horizontal transformations are "backwards": $f(x - a)$ shifts **right** (not left), and
+:::warning Horizontal transformations are "backwards": $f(x - a)$ shifts **right** (not left), and
 $f(ax)$ stretches by $\frac{1}{a}$ (not $a$). This is the single most common error in this topic.
 :::
 
@@ -258,10 +257,7 @@ $$y = af(x - p) + q$$
 Represents: horizontal translation by $p$ (right), vertical stretch by factor $a$Vertical
 Translation by $q$ (up).
 
-:::tip
-Tip
-(outside). The order inside-out matters.
-:::
+:::tip Tip (outside). The order inside-out matters. :::
 
 <hr />
 
@@ -283,7 +279,7 @@ $(x, f(x))$ by $180^\circ$ about the origin gives $(-x, -f(x))$. $\blacksquare$
 
 | Operation | Even $\times$ Even | Odd $\times$ Odd | Even $\times$ Odd |
 | --------- | :----------------: | :--------------: | :---------------: |
-| Result | Even | Even | Odd |
+| Result    |        Even        |       Even       |        Odd        |
 
 _Proof (for $f$ odd, $g$ odd $\implies fg$ even)._
 $(fg)(-x) = f(-x)g(-x) = (-f(x))(-g(x)) = f(x)g(x) = (fg)(x)$. $\blacksquare$
@@ -344,8 +340,8 @@ $\mathrm{dom}(g \circ f) = (1, \infty)$.
 
 ## 8. Self-Inverse Functions
 
-**Definition.** A function $f$ is **self-inverse** if $f^{-1} = f$I.e., $f(f(x)) = x$ for all $x$
-In the domain of $f$.
+**Definition.** A function $f$ is **self-inverse** if $f^{-1} = f$I.e., $f(f(x)) = x$ for all $x$ In
+the domain of $f$.
 
 **Theorem.** If $f$ is self-inverse, then $f$ is bijective and $f = f^{-1}$.
 
@@ -420,15 +416,13 @@ Vertical transformations interact differently.
 
 **Rule.** For $y = af(bx + c) + d$:
 
-1. Apply horizontal transformations **first**: the argument is $bx + c$Which is a horizontal
- stretch by factor $1/b$ then a horizontal shift of $-c/b$.
+1. Apply horizontal transformations **first**: the argument is $bx + c$Which is a horizontal stretch
+   by factor $1/b$ then a horizontal shift of $-c/b$.
 2. Apply vertical transformations **second**: vertical stretch by $|a|$Reflection if $a < 0$Then
- vertical shift $d$.
+   vertical shift $d$.
 
-:::warning
-Common Pitfall The horizontal shift in $f(bx + c)$ is $-c/b$NOT $-c$. The stretch
-"absorbs" part of the shift. This is the single most common error in transformation problems.
-:::
+:::warning Common Pitfall The horizontal shift in $f(bx + c)$ is $-c/b$NOT $-c$. The stretch
+"absorbs" part of the shift. This is the single most common error in transformation problems. :::
 
 <details>
 <summary>Example</summary>
@@ -594,8 +588,8 @@ $$-4 < x < \frac{2}{3}$$
 
 <hr />
 
-**Problem 8.** Given $f(x) = e^{2x}$ and $g(x) = \ln(x + 1)$Find $f^{-1}$$g^{-1}$And the
-Domain of $f \circ g$.
+**Problem 8.** Given $f(x) = e^{2x}$ and $g(x) = \ln(x + 1)$Find $f^{-1}$$g^{-1}$And the Domain of
+$f \circ g$.
 
 <details>
 <summary>Solution</summary>
@@ -647,10 +641,11 @@ Bijective, and find $f^{-1}$.
 **Injective:** $f(x) = x^2 + 4x = (x+2)^2 - 4$. For $x \geq 0$$x + 2 > 0$So $(x+2)^2$ is strictly increasing, hence $f$ is strictly increasing, hence injective.
 
 **Surjective:** For any $y \geq 0$: $x^2 + 4x - y = 0$. By the quadratic formula:
-$x = \frac◆LB◆-4 + \sqrt{16 + 4y}◆RB◆◆LB◆2◆RB◆ = -2 + \sqrt{4 + y}$. Since $y \geq 0$: $\sqrt{4 + y} \geq 2$So
-$x \geq 0$. Thus every $y \geq 0$ has a preimage.
+$x = \frac◆LB◆-4 + \sqrt{16 + 4y}◆RB◆◆LB◆2◆RB◆ = -2 + \sqrt{4 + y}$. Since $y \geq 0$:
+$\sqrt{4 + y} \geq 2$So $x \geq 0$. Thus every $y \geq 0$ has a preimage.
 
-**Inverse:** $y = x^2 + 4x \implies x^2 + 4x - y = 0 \implies x = \frac◆LB◆-4 + \sqrt{16 + 4y}◆RB◆◆LB◆2◆RB◆$
+**Inverse:**
+$y = x^2 + 4x \implies x^2 + 4x - y = 0 \implies x = \frac◆LB◆-4 + \sqrt{16 + 4y}◆RB◆◆LB◆2◆RB◆$
 (taking the positive root since $x \geq 0$).
 
 $f^{-1}(x) = -2 + \sqrt{4 + x} = \sqrt{x + 4} - 2$Domain $x \geq 0$.
@@ -747,14 +742,15 @@ $\left(\frac{-2+1}{3}, 2 \times 5 + 4\right) = \left(-\frac{1}{3}, 14\right)$.
 
 ---
 
-:::tip
-Tip
-Ready to test your understanding of **Functions**? The [diagnostic test](/docs/alevel/maths/diagnostics/diag-functions) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
+:::tip Tip Ready to test your understanding of **Functions**? The
+[diagnostic test](/docs/alevel/maths/diagnostics/diag-functions) contains the hardest questions
+within the A-Level specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Functions with other pure mathematics topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Functions
+with other pure mathematics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and
+building a personal test matrix. :::
 
 ## Common Pitfalls
 

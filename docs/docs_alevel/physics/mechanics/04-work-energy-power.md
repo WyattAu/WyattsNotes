@@ -1,6 +1,8 @@
 ---
 title: Work, Energy and Power
-description: "A-Level Physics notes on Work, Energy and Power: 1. Work Done by a Force; 2. Kinetic Energy; 3. Gravitational Potential Energy; 4. Elastic Potential Energy."
+description:
+  'A-Level Physics notes on Work, Energy and Power: 1. Work Done by a Force; 2. Kinetic Energy; 3.
+  Gravitational Potential Energy; 4. Elastic Potential Energy.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Physics
@@ -9,11 +11,10 @@ categories:
   - Physics
 slug: work-energy-power
 ---
+
 ## Work, Energy and Power
 
-:::info
-Board Coverage AQA Paper 1 | Edexcel CP1, CP2 | OCR (A) Paper 1 | CIE P2
-:::
+:::info Board Coverage AQA Paper 1 | Edexcel CP1, CP2 | OCR (A) Paper 1 | CIE P2 :::
 
 <PhetSimulation simulationId="energy-skate-park-basics" title="Energy Skate Park: Basics" />
 
@@ -179,11 +180,9 @@ Twice the speed requires **four times** the braking distance. This quadratic dep
 Consequence of energy conservation: kinetic energy scales as $v^2$So removing that energy requires
 Friction to act over a distance proportional to $v^2$.
 
-:::warning
-Warning
-Never lost -- it is transferred from mechanical to thermal (internal) energy. The total energy of
-The closed system is always conserved. Only **mechanical** energy ($E_k + E_p$) decreases.
-:::
+:::warning Warning Never lost -- it is transferred from mechanical to thermal (internal) energy. The
+total energy of The closed system is always conserved. Only **mechanical** energy ($E_k + E_p$)
+decreases. :::
 
 <details>
 <summary>Example: Braking distance comparison</summary>
@@ -235,12 +234,10 @@ $$\boxed{P_{\mathrm{avg}} = \frac{F(u + v)}{2}}$$
 This is useful because it relates power to the initial and final velocities directly, without
 Needing to know the distance or time separately.
 
-:::tip
-Exam Technique When asked for "the power developed by the engine" as a car accelerates,
+:::tip Exam Technique When asked for "the power developed by the engine" as a car accelerates,
 Specify whether you mean instantaneous power ($P = Fv$) or average power ($P = Fs/t$). The
 Instantaneous power at the end of the acceleration is $Fv_{\mathrm{final}}$While the average power
-Over the whole acceleration is $F(u+v)/2$.
-:::
+Over the whole acceleration is $F(u+v)/2$. :::
 
 **Definition.** The **efficiency** of an energy transfer is:
 
@@ -250,8 +247,8 @@ Or equivalently for power:
 
 $$\eta = \frac◆LB◆P_{\mathrm{out}}◆RB◆◆LB◆P_{\mathrm{in}}◆RB◆ \times 100\%$$
 
-Efficiency is always between 0% and 100%. In practice, some energy is always dissipated ( as
-Thermal energy due to friction or resistance).
+Efficiency is always between 0% and 100%. In practice, some energy is always dissipated ( as Thermal
+energy due to friction or resistance).
 
 ## 8. Energy as the Universal Currency
 
@@ -289,7 +286,8 @@ A spring of spring constant $500$ N m$^{-1}$ is compressed by $0.08$ m. A $0.50$
 
 **Answer.** Elastic PE converted to KE: $\frac{1}{2}kx^2 = \frac{1}{2}mv^2$.
 
-$v = \sqrt◆LB◆\frac{kx^2}{m}◆RB◆ = \sqrt◆LB◆\frac{500 \times 0.0064}{0.50}◆RB◆ = \sqrt{6.4} = 2.53$ m s$^{-1}$.
+$v = \sqrt◆LB◆\frac{kx^2}{m}◆RB◆ = \sqrt◆LB◆\frac{500 \times 0.0064}{0.50}◆RB◆ = \sqrt{6.4} = 2.53$
+m s$^{-1}$.
 
 <b>If you get this wrong, revise:</b> [Conservation of Energy](#5-conservation-of-energy)
 
@@ -316,7 +314,8 @@ A motor lifts a $200$ kg load through a height of $15$ m in $10$ s. If the motor
 **Answer.** Useful power:
 $P_{\mathrm{out}} = \frac{mgh}{t} = \frac◆LB◆200 \times 9.81 \times 15◆RB◆◆LB◆10◆RB◆ = 2943$ W.
 
-Electrical power: $P_{\mathrm{in}} = \frac◆LB◆P_{\mathrm{out}}◆RB◆◆LB◆\eta◆RB◆ = \frac{2943}{0.80} = 3679$ W.
+Electrical power:
+$P_{\mathrm{in}} = \frac◆LB◆P_{\mathrm{out}}◆RB◆◆LB◆\eta◆RB◆ = \frac{2943}{0.80} = 3679$ W.
 
 Current: $I = \frac◆LB◆P_{\mathrm{in}}◆RB◆◆LB◆V◆RB◆ = \frac{3679}{240} = 15.3$ A.
 
@@ -496,8 +495,8 @@ Elastic. At any other point: $E_e + E_k = E_{\mathrm{total}}$.
 
 $E_{\mathrm{total}} = \frac{1}{2}(200)(0.15)^2 = 2.25$ J. Maximum speed at equilibrium ($x = 0$):
 $E_k = E_{\mathrm{total}}$.
-$v_{\mathrm{max}} = \sqrt◆LB◆2E_{\mathrm{total}}/m◆RB◆ = \sqrt◆LB◆2 \times 2.25/0.50◆RB◆ = \sqrt{9} = 3.0$ m
-S$^{-1}$.
+$v_{\mathrm{max}} = \sqrt◆LB◆2E_{\mathrm{total}}/m◆RB◆ = \sqrt◆LB◆2 \times 2.25/0.50◆RB◆ = \sqrt{9} = 3.0$
+m S$^{-1}$.
 
 (b) At $x = 0.05$ m: $E_e = \frac{1}{2}(200)(0.0025) = 0.25$ J. $E_k = 2.25 - 0.25 = 2.0$ J.
 $v = \sqrt◆LB◆2 \times 2.0/0.50◆RB◆ = \sqrt{8} = 2.83$ m s$^{-1}$.
@@ -571,15 +570,15 @@ $P_{\mathrm{in}} \times t = 1847 \times 15 = 27\,705$ J $= 27.7$ kJ.
 <details>
 <summary>Problem 18</summary>
 
-Two identical springs, each of constant $k = 400$ N m$^{-1}$Are connected in parallel and support
-A mass of $5.0$ kg. The mass is displaced $0.05$ m downward and released. Calculate: (a) the period
-Of the resulting oscillation (you may assume SHM), (b) the maximum kinetic energy, (c) the maximum
+Two identical springs, each of constant $k = 400$ N m$^{-1}$Are connected in parallel and support A
+mass of $5.0$ kg. The mass is displaced $0.05$ m downward and released. Calculate: (a) the period Of
+the resulting oscillation (you may assume SHM), (b) the maximum kinetic energy, (c) the maximum
 Elastic potential energy in each spring.
 
 **Answer.** (a) For parallel springs: $k_{\mathrm{eff}} = 2k = 800$ N m$^{-1}$.
 
-Angular frequency: $\omega = \sqrt◆LB◆k_{\mathrm{eff}}/m◆RB◆ = \sqrt{800/5.0} = \sqrt{160} = 12.6$ rad
-S$^{-1}$.
+Angular frequency: $\omega = \sqrt◆LB◆k_{\mathrm{eff}}/m◆RB◆ = \sqrt{800/5.0} = \sqrt{160} = 12.6$
+rad S$^{-1}$.
 
 Period: $T = 2\pi/\omega = 2\pi/12.6 = 0.499$ s.
 
@@ -592,28 +591,38 @@ Period: $T = 2\pi/\omega = 2\pi/12.6 = 0.499$ s.
 
 </details>
 
-
 ---
 
-:::tip
-Diagnostic Test
-Ready to test your understanding of **Work, Energy and Power**? The [diagnostic test](/docs/alevel/physics/diagnostics/diag-work-energy-power) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
+:::tip Diagnostic Test Ready to test your understanding of **Work, Energy and Power**? The
+[diagnostic test](/docs/alevel/physics/diagnostics/diag-work-energy-power) contains the hardest
+questions within the A-Level specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Work, Energy and Power with other physics topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Work,
+Energy and Power with other physics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on
+self-marking and building a personal test matrix. :::
 
-:::danger
-Common Pitfalls
+:::danger Common Pitfalls
 
-- **Confusing work done on an object with work done by gravity:** Work done by gravity when an object falls is POSITIVE (force and displacement are in the same direction). Work done AGAINST gravity when lifting is NEGATIVE. When using energy conservation, gravitational PE LOSS equals kinetic energy GAIN -- be careful with signs.
+- **Confusing work done on an object with work done by gravity:** Work done by gravity when an
+  object falls is POSITIVE (force and displacement are in the same direction). Work done AGAINST
+  gravity when lifting is NEGATIVE. When using energy conservation, gravitational PE LOSS equals
+  kinetic energy GAIN -- be careful with signs.
 
-- **Applying conservation of energy when non-conservative forces act:** The work-energy principle (W_net = delta(E_k)) always applies, but conservation of mechanical energy (E_k + E_p = constant) only holds when no non-conservative forces (friction, air resistance) do work. If friction is present, mechanical energy is lost to heat.
+- **Applying conservation of energy when non-conservative forces act:** The work-energy principle
+  (W_net = delta(E_k)) always applies, but conservation of mechanical energy (E_k + E_p = constant)
+  only holds when no non-conservative forces (friction, air resistance) do work. If friction is
+  present, mechanical energy is lost to heat.
 
-- **Forgetting the angle in W = Fd cos(theta):** Work is maximum when the force is parallel to displacement (theta = 0, cos = 1) and zero when perpendicular (theta = 90, cos = 0). A force applied at right angles to motion (e.g., centripetal force in circular motion) does NO work and does not change kinetic energy.
+- **Forgetting the angle in W = Fd cos(theta):** Work is maximum when the force is parallel to
+  displacement (theta = 0, cos = 1) and zero when perpendicular (theta = 90, cos = 0). A force
+  applied at right angles to motion (e.g., centripetal force in circular motion) does NO work and
+  does not change kinetic energy.
 
-- **Confusing power and energy:** Power is the RATE of doing work (P = W/t = Fv), measured in watts. Energy is the total work done or transferred, measured in joules. A machine that is twice as powerful delivers the same energy in half the time, not twice the energy.
+- **Confusing power and energy:** Power is the RATE of doing work (P = W/t = Fv), measured in watts.
+  Energy is the total work done or transferred, measured in joules. A machine that is twice as
+  powerful delivers the same energy in half the time, not twice the energy.
 
 :::
 

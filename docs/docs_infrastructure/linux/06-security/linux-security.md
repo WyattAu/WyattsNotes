@@ -1,10 +1,13 @@
 ---
 id: linux-security
 title: Linux Security
-description: "Linux Security — User and Group Model; User and Group Files; View user information; Create user with worked examples and exam-style questions."
+description:
+  'Linux Security — User and Group Model; User and Group Files; View user information; Create user
+  with worked examples and exam-style questions.'
 slug: linux-security
 sidebar_position: 1
 ---
+
 ## User and Group Model
 
 Linux security is fundamentally built on the user and group model. Every process runs under a
@@ -13,13 +16,13 @@ Associated permissions.
 
 ### User and Group Files
 
-| File | Purpose |
+| File              | Purpose                                                         |
 | ----------------- | --------------------------------------------------------------- |
-| `/etc/passwd` | User accounts (UID, home dir, shell — password in shadow) |
-| `/etc/shadow` | Password hashes and aging (readable by root only) |
-| `/etc/group` | Group definitions (GID, members) |
-| `/etc/gshadow` | Group password hashes (readable by root only) |
-| `/etc/skel/` | Template directory for new user home directories |
+| `/etc/passwd`     | User accounts (UID, home dir, shell — password in shadow)       |
+| `/etc/shadow`     | Password hashes and aging (readable by root only)               |
+| `/etc/group`      | Group definitions (GID, members)                                |
+| `/etc/gshadow`    | Group password hashes (readable by root only)                   |
+| `/etc/skel/`      | Template directory for new user home directories                |
 | `/etc/login.defs` | Default settings for user creation (UID range, password policy) |
 
 ```bash
@@ -67,12 +70,12 @@ Administration.
 
 ### Special UIDs
 
-| UID | Name | Description |
+| UID   | Name         | Description                                      |
 | ----- | ------------ | ------------------------------------------------ |
-| 0 | root | Superuser — unrestricted access to all resources |
-| 1 | daemon | System daemons |
-| 65534 | nobody | Unprivileged user (used for NFS, some services) |
-| -1 | (4294967295) | `nobody` on some systems, overflow of 32-bit UID |
+| 0     | root         | Superuser — unrestricted access to all resources |
+| 1     | daemon       | System daemons                                   |
+| 65534 | nobody       | Unprivileged user (used for NFS, some services)  |
+| -1    | (4294967295) | `nobody` on some systems, overflow of 32-bit UID |
 
 ### NSS — Name Service Switch
 
@@ -97,23 +100,23 @@ Or `/etc/pam.conf`.
 
 ### PAM Module Types
 
-| Type | Purpose |
+| Type       | Purpose                                                 |
 | ---------- | ------------------------------------------------------- |
-| `auth` | Verify the user's identity (password, token, biometric) |
-| `account` | Account validity checks (expired, time restrictions) |
-| `password` | Password change/verification |
-| `session` | Session setup and teardown (logging, resource limits) |
+| `auth`     | Verify the user's identity (password, token, biometric) |
+| `account`  | Account validity checks (expired, time restrictions)    |
+| `password` | Password change/verification                            |
+| `session`  | Session setup and teardown (logging, resource limits)   |
 
 ### PAM Control Flags
 
-| Flag | Behavior |
+| Flag         | Behavior                                                                                      |
 | ------------ | --------------------------------------------------------------------------------------------- |
-| `required` | Module must succeed. If it fails, the user is eventually denied (after remaining modules run) |
-| `requisite` | Module must succeed. If it fails, immediately deny (skip remaining modules) |
+| `required`   | Module must succeed. If it fails, the user is eventually denied (after remaining modules run) |
+| `requisite`  | Module must succeed. If it fails, immediately deny (skip remaining modules)                   |
 | `sufficient` | If the module succeeds and no prior `required` module failed, success is returned immediately |
-| `optional` | Module result is ignored unless it is the only module for the type |
-| `include` | Include all lines from another PAM configuration file |
-| `substack` | Run another PAM stack independently |
+| `optional`   | Module result is ignored unless it is the only module for the type                            |
+| `include`    | Include all lines from another PAM configuration file                                         |
+| `substack`   | Run another PAM stack independently                                                           |
 
 ### PAM Configuration Example
 
@@ -147,16 +150,16 @@ session required    pam_unix.so
 
 ### Key PAM Modules
 
-| Module | Purpose |
+| Module                        | Purpose                                                 |
 | ----------------------------- | ------------------------------------------------------- |
-| `pam_unix.so` | Standard UNIX authentication (/etc/passwd, /etc/shadow) |
-| `pam_pwquality.so` | Password strength checking (replaces `pam_cracklib`) |
-| `pam_faillock.so` | Account locking after failed login attempts |
-| `pam_limits.so` | Apply resource limits from `/etc/security/limits.conf` |
-| `pam_access.so` | Access control based on `/etc/security/access.conf` |
-| `pam_mkhomedir.so` | Auto-create home directories on first login |
-| `pam_sssd.so` | Authentication via SSSD (LDAP, AD, IPA) |
-| `pam_google_authenticator.so` | TOTP two-factor authentication |
+| `pam_unix.so`                 | Standard UNIX authentication (/etc/passwd, /etc/shadow) |
+| `pam_pwquality.so`            | Password strength checking (replaces `pam_cracklib`)    |
+| `pam_faillock.so`             | Account locking after failed login attempts             |
+| `pam_limits.so`               | Apply resource limits from `/etc/security/limits.conf`  |
+| `pam_access.so`               | Access control based on `/etc/security/access.conf`     |
+| `pam_mkhomedir.so`            | Auto-create home directories on first login             |
+| `pam_sssd.so`                 | Authentication via SSSD (LDAP, AD, IPA)                 |
+| `pam_google_authenticator.so` | TOTP two-factor authentication                          |
 
 ### Password Policy with pam_pwquality
 
@@ -198,23 +201,23 @@ Granting a process full root access, you can grant only the specific capabilitie
 
 ### Common Capabilities
 
-| Capability | Description |
+| Capability             | Description                                            |
 | ---------------------- | ------------------------------------------------------ |
-| `CAP_NET_BIND_SERVICE` | Bind to privileged ports (&lt; 1024) |
-| `CAP_NET_RAW` | Use raw and packet sockets (ping, capture) |
-| `CAP_SYS_ADMIN` | Broad administrative capability (avoid — too powerful) |
-| `CAP_SYS_PTRACE` | Trace processes (ptrace, strace) |
-| `CAP_SYS_CHROOT` | Use `chroot(2)` |
-| `CAP_SETUID` | Change user ID |
-| `CAP_SETGID` | Change group ID |
-| `CAP_DAC_OVERRIDE` | Bypass file read/write/execute permission checks |
-| `CAP_DAC_READ_SEARCH` | Bypass file read permission and directory read/search |
-| `CAP_KILL` | Send signals to processes not owned by the caller |
-| `CAP_CHOWN` | Change file ownership |
-| `CAP_FOWNER` | Override permission checks on files you own |
-| `CAP_FSETID` | Set setuid/setgid bits |
-| `CAP_SETPCAP` | Modify capability bounding set |
-| `CAP_AUDIT_WRITE` | Write to the audit log |
+| `CAP_NET_BIND_SERVICE` | Bind to privileged ports (&lt; 1024)                   |
+| `CAP_NET_RAW`          | Use raw and packet sockets (ping, capture)             |
+| `CAP_SYS_ADMIN`        | Broad administrative capability (avoid — too powerful) |
+| `CAP_SYS_PTRACE`       | Trace processes (ptrace, strace)                       |
+| `CAP_SYS_CHROOT`       | Use `chroot(2)`                                        |
+| `CAP_SETUID`           | Change user ID                                         |
+| `CAP_SETGID`           | Change group ID                                        |
+| `CAP_DAC_OVERRIDE`     | Bypass file read/write/execute permission checks       |
+| `CAP_DAC_READ_SEARCH`  | Bypass file read permission and directory read/search  |
+| `CAP_KILL`             | Send signals to processes not owned by the caller      |
+| `CAP_CHOWN`            | Change file ownership                                  |
+| `CAP_FOWNER`           | Override permission checks on files you own            |
+| `CAP_FSETID`           | Set setuid/setgid bits                                 |
+| `CAP_SETPCAP`          | Modify capability bounding set                         |
+| `CAP_AUDIT_WRITE`      | Write to the audit log                                 |
 
 ### Managing Capabilities
 
@@ -266,11 +269,11 @@ Policies are enforced by the kernel and cannot be overridden by the file owner.
 
 ### SELinux Modes
 
-| Mode | Enforcement | Description |
+| Mode         | Enforcement | Description                                               |
 | ------------ | ----------- | --------------------------------------------------------- |
-| `enforcing` | Yes | Policy violations are blocked and logged |
-| `permissive` | No | Policy violations are logged but not blocked (audit mode) |
-| `disabled` | No | SELinux is completely disabled (not recommended) |
+| `enforcing`  | Yes         | Policy violations are blocked and logged                  |
+| `permissive` | No          | Policy violations are logged but not blocked (audit mode) |
+| `disabled`   | No          | SELinux is completely disabled (not recommended)          |
 
 ```bash
 # View current mode
@@ -297,12 +300,12 @@ user:role:type:level
 system_u:object_r:httpd_sys_content_t:s0
 ```
 
-| Component | Example | Description |
-| --------- | ----------------------- | -------------------------------------------------- |
-| **User** | `system_u``user_u` | SELinux user identity |
-| **Role** | `object_r``staff_r` | Role determines which types can be accessed |
-| **Type** | `httpd_sys_content_t` | Type enforcement policy (most important component) |
-| **Level** | `s0``s0-s15:c0.c1023` | MLS/MCS level (for multi-level security) |
+| Component | Example               | Description                                        |
+| --------- | --------------------- | -------------------------------------------------- |
+| **User**  | `system_u``user_u`    | SELinux user identity                              |
+| **Role**  | `object_r``staff_r`   | Role determines which types can be accessed        |
+| **Type**  | `httpd_sys_content_t` | Type enforcement policy (most important component) |
+| **Level** | `s0``s0-s15:c0.c1023` | MLS/MCS level (for multi-level security)           |
 
 ```bash
 # View file context
@@ -376,11 +379,11 @@ sealert -l &lt;audit-event-id&gt;
 
 ### SELinux Policy Types
 
-| Policy | Description |
+| Policy     | Description                                                  |
 | ---------- | ------------------------------------------------------------ |
-| `targeted` | Confines specific system services (httpd, mysqld, etc.) |
-| `mls` | Multi-Level Security — mandatory for classified environments |
-| `minimum` | Minimal policy for embedded systems |
+| `targeted` | Confines specific system services (httpd, mysqld, etc.)      |
+| `mls`      | Multi-Level Security — mandatory for classified environments |
+| `minimum`  | Minimal policy for embedded systems                          |
 
 ## AppArmor
 
@@ -452,15 +455,15 @@ apparmor_parser -r /etc/apparmor.d/*
 
 ### AppArmor vs SELinux
 
-| Aspect | SELinux | AppArmor |
+| Aspect          | SELinux                                  | AppArmor                              |
 | --------------- | ---------------------------------------- | ------------------------------------- |
-| **Model** | Label-based (security context on inodes) | Path-based (profiles reference paths) |
-| **Policy** | Policy compiled from TE rules | Profiles as plain text |
-| **Learning** | Strict — must write policy explicitly | Can generate profiles from log data |
-| **Complexity** | Higher learning curve | Simpler to configure |
-| **Default on** | RHEL, Fedora, CentOS, Debian | Ubuntu, SUSE |
-| **Granularity** | Finer (type enforcement) | Coarser (path matching) |
-| **File moves** | Context preserved with inode | Broken if file moves to new path |
+| **Model**       | Label-based (security context on inodes) | Path-based (profiles reference paths) |
+| **Policy**      | Policy compiled from TE rules            | Profiles as plain text                |
+| **Learning**    | Strict — must write policy explicitly    | Can generate profiles from log data   |
+| **Complexity**  | Higher learning curve                    | Simpler to configure                  |
+| **Default on**  | RHEL, Fedora, CentOS, Debian             | Ubuntu, SUSE                          |
+| **Granularity** | Finer (type enforcement)                 | Coarser (path matching)               |
+| **File moves**  | Context preserved with inode             | Broken if file moves to new path      |
 
 ## seccomp-bpf
 
@@ -469,11 +472,11 @@ BPF (Berkeley Packet Filter), it provides fine-grained syscall filtering.
 
 ### seccomp Modes
 
-| Mode | Description |
+| Mode       | Description                                          |
 | ---------- | ---------------------------------------------------- |
-| `disabled` | No restrictions (default) |
-| `strict` | Only `read``write``_exit``sigreturn` allowed |
-| `filter` | BPF program defines allowed syscalls (most flexible) |
+| `disabled` | No restrictions (default)                            |
+| `strict`   | Only `read``write``_exit``sigreturn` allowed         |
+| `filter`   | BPF program defines allowed syscalls (most flexible) |
 
 ### seccomp in Docker
 

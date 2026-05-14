@@ -1,6 +1,8 @@
 ---
 title: Name Mangling
-description: "C++: Name Mangling — Proof: Overloading Requires Encoding Beyond the Name; What Gets Mangled; 2. The Itanium C++ ABI (GCC / Clang); Structure."
+description:
+  'C++: Name Mangling — Proof: Overloading Requires Encoding Beyond the Name; What Gets Mangled; 2.
+  The Itanium C++ ABI (GCC / Clang); Structure.'
 date: 2025-12-12T02:56:28.878Z
 tags:
   - cpp
@@ -8,6 +10,7 @@ categories:
   - cpp
 slug: mangling
 ---
+
 Import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 Linkers were originally designed for C and Fortran, languages where function names are unique
@@ -16,7 +19,7 @@ Identifiers. C++, however, introduces features that break this assumption:
 1. **Overloading:** `void print(int)` and `void print(float)` share the same name.
 2. **Namespaces:** `std::sort` and `boost::sort` share the same name.
 3. **Templates:** `vector<int>` and `vector<float>` generate distinct code for the same class
- template.
+   template.
 
 To enforce uniqueness in the global symbol table, C++ compilers perform **Name Mangling** (also
 Called Decoration). They encode the function signature (Scope, Name, Arguments) into a strict ASCII
@@ -98,8 +101,8 @@ namespace net {
 ### Substitution Compression
 
 A critical optimization in the Itanium ABI is **substitution**. When a name appears multiple times
-In a mangled symbol, subsequent occurrences are replaced with a reference (`S_``S0_``S1_`
-Etc.). This prevents mangled names from growing exponentially for deeply nested types.
+In a mangled symbol, subsequent occurrences are replaced with a reference (`S_``S0_``S1_` Etc.).
+This prevents mangled names from growing exponentially for deeply nested types.
 
 Consider:
 
@@ -121,22 +124,22 @@ The `S5_` refers to the sixth substitution candidate (numbered starting from 0),
 
 The Itanium ABI defines a complete grammar for mangled names. Key type encodings:
 
-| Source Type | Mangled | Notes |
+| Source Type             | Mangled                                       | Notes                              |
 | :---------------------- | :-------------------------------------------- | :--------------------------------- |
-| `void` | `v` | |
-| `bool` | `b` | |
-| `int` | `i` | |
-| `unsigned int` | `j` | |
-| `long long` | `x` | |
-| `float` | `f` | |
-| `double` | `d` | |
-| `char const*` | `PKc` | `P` = pointer, `K` = const |
-| `std::string` | `NSt6basic_stringIcSt11char_traitsIcESaIcEEE` | Full qualified name |
-| `int&` | `Ri` | `R` = lvalue reference |
-| `int&&` | `Oi` | `O` = rvalue reference |
-| `int const&` | `RKi` | |
-| `...` (variadic) | `z` | |
-| `template&lt;int N&gt;` | `IiE` | `I` starts template args, `E` ends |
+| `void`                  | `v`                                           |                                    |
+| `bool`                  | `b`                                           |                                    |
+| `int`                   | `i`                                           |                                    |
+| `unsigned int`          | `j`                                           |                                    |
+| `long long`             | `x`                                           |                                    |
+| `float`                 | `f`                                           |                                    |
+| `double`                | `d`                                           |                                    |
+| `char const*`           | `PKc`                                         | `P` = pointer, `K` = const         |
+| `std::string`           | `NSt6basic_stringIcSt11char_traitsIcESaIcEEE` | Full qualified name                |
+| `int&`                  | `Ri`                                          | `R` = lvalue reference             |
+| `int&&`                 | `Oi`                                          | `O` = rvalue reference             |
+| `int const&`            | `RKi`                                         |                                    |
+| `...` (variadic)        | `z`                                           |                                    |
+| `template&lt;int N&gt;` | `IiE`                                         | `I` starts template args, `E` ends |
 
 ### Parsing Example: `std::vector<int>::push_back(int const&)`
 
@@ -189,11 +192,9 @@ Can exceed 1000 characters.
 nm -C ./app | awk '{ print length, $0 }' | sort -rn | head -20
 ```
 
-:::info
-Return Types The Itanium ABI generally does **not** encode the return type of a function, as
+:::info Return Types The Itanium ABI generally does **not** encode the return type of a function, as
 C++ does not support overloading based solely on return type. Exception: Template functions and
-`auto` return type deduction may trigger return type encoding.
-:::
+`auto` return type deduction may trigger return type encoding. :::
 
 ## 3. The Microsoft ABI (MSVC)
 
@@ -230,15 +231,15 @@ namespace net {
 
 ### Key MSVC Mangling Differences from Itanium
 
-| Aspect | Itanium (GCC/Clang) | MSVC |
+| Aspect             | Itanium (GCC/Clang)    | MSVC                                 |
 | :----------------- | :--------------------- | :----------------------------------- |
-| **Prefix** | `_Z` | `?` |
-| **Return type** | Not encoded () | Always encoded |
-| **Access control** | Not encoded | Encoded (public, private, protected) |
-| **Calling conv.** | Not encoded | Encoded (`A` = cdecl, `G` = stdcall) |
-| **Scope order** | Outermost to innermost | Innermost to outermost (reversed) |
-| **Namespace std** | `St` | `?A` or `std@@` |
-| **Substitutions** | `S_``S0_`Etc. | Not used (names encoded in full) |
+| **Prefix**         | `_Z`                   | `?`                                  |
+| **Return type**    | Not encoded ()         | Always encoded                       |
+| **Access control** | Not encoded            | Encoded (public, private, protected) |
+| **Calling conv.**  | Not encoded            | Encoded (`A` = cdecl, `G` = stdcall) |
+| **Scope order**    | Outermost to innermost | Innermost to outermost (reversed)    |
+| **Namespace std**  | `St`                   | `?A` or `std@@`                      |
+| **Substitutions**  | `S_``S0_`Etc.          | Not used (names encoded in full)     |
 
 ## 4. Disabling Mangling (`extern "C"`)
 
@@ -258,12 +259,11 @@ Per [N4950 S10.5], an `extern "C"` linkage specification causes the entity to us
 Linkage. The practical effect on mangling:
 
 1. **Functions:** The function name is used without encoding parameter types. The symbol in the
- object file is the function name (with a possible platform-specific prefix like `_` on
- Windows).
+   object file is the function name (with a possible platform-specific prefix like `_` on Windows).
 2. **Variables:** Similarly unmangled.
 3. **No overloading:** Since the mangled name does not encode types, two `extern "C"` functions with
- the same name but different parameters would produce the same symbol, which the linker would flag
- as a duplicate definition.
+   the same name but different parameters would produce the same symbol, which the linker would flag
+   as a duplicate definition.
 
 ### Architectural Best Practice: The API Boundary
 
@@ -303,11 +303,9 @@ extern "C" void my_callback(int value) {
 c_library_register_callback(my_callback);
 ```
 
-:::warning
-Mixing function pointers with different linkage is undefined behavior [N4950 S10.5 p7]. A
+:::warning Mixing function pointers with different linkage is undefined behavior [N4950 S10.5 p7]. A
 Function pointer of type `extern "C"` and one of type C++ linkage are different types, even if they
-Have the same parameter and return types. Passing one where the other is expected is UB.
-:::
+Have the same parameter and return types. Passing one where the other is expected is UB. :::
 
 ## 5. Inspection and Demangling Tools
 
@@ -552,19 +550,19 @@ Components may have practical limits:
 ## Common Pitfalls
 
 - **Forgetting `extern "C"` for C callbacks:** C++ function pointers have different mangling than C
- function pointers. Passing a C++ function to a C API callback without `extern "C"` causes linker
- errors or undefined behavior at runtime.
+  function pointers. Passing a C++ function to a C API callback without `extern "C"` causes linker
+  errors or undefined behavior at runtime.
 - **Mismatched `const` in signatures:** `void foo(int)` and `void foo(const int)` produce different
- mangled names in some contexts (member functions), causing unexpected undefined references.
+  mangled names in some contexts (member functions), causing unexpected undefined references.
 - **Dual-ABI mismatch:** Mixing GCC 4.x and GCC 5+ object files causes `std::__cxx11` symbol
- mismatches. Always recompile everything with the same compiler.
+  mismatches. Always recompile everything with the same compiler.
 - **Trusting `type_info::name()`:** The output is implementation-defined. Use `abi::__cxa_demangle`
- for portable, human-readable type names.
+  for portable, human-readable type names.
 - **Assuming ABI compatibility between Itanium and MSVC:** Object files compiled with different ABI
- schemes cannot be linked. Use `extern "C"` for cross-compiler interop.
+  schemes cannot be linked. Use `extern "C"` for cross-compiler interop.
 - **Inline functions in headers without `inline`:** Defining a non-inline function in a header
- included by multiple TUs causes duplicate symbol errors because each TU produces a mangled symbol
- with the same name (but in different COMDAT groups if the linker supports it).
+  included by multiple TUs causes duplicate symbol errors because each TU produces a mangled symbol
+  with the same name (but in different COMDAT groups if the linker supports it).
 
 ## 9. Mangling and Inline Namespaces
 
@@ -604,9 +602,9 @@ Uniquely using a counter based on the lexical scope:
 auto f = [](int x) { return x * 2; };
 ```
 
-The closure type is mangled as something like `_ZZ1fvENK3$_0clEi` (lambda in function `f`0th
-Lambda, `operator()` taking `int`). The exact encoding is compiler-specific but follows the general
-Pattern of including the enclosing function name and a lambda index.
+The closure type is mangled as something like `_ZZ1fvENK3$_0clEi` (lambda in function `f`0th Lambda,
+`operator()` taking `int`). The exact encoding is compiler-specific but follows the general Pattern
+of including the enclosing function name and a lambda index.
 
 This is relevant when debugging: if a lambda appears in a linker error (unlikely but possible if the
 Lambda captures something that requires a global symbol), the mangled name will include the
@@ -651,11 +649,9 @@ This can cause subtle linker errors when a function is declared `noexcept` in on
 Another. The mangled names differ, and the linker reports an undefined reference. The fix is to
 Ensure the `noexcept` specification is consistent across all declarations.
 
-:::warning
-In C++17, `noexcept` became part of the type system. This means function pointer types
+:::warning In C++17, `noexcept` became part of the type system. This means function pointer types
 Are different if their `noexcept` specification differs. A `void(*)(int)` and a
-`void(*)(int) noexcept` are different types and cannot be implicitly converted.
-:::
+`void(*)(int) noexcept` are different types and cannot be implicitly converted. :::
 
 ## 13. Practical Mangling Debugging Workflow
 
@@ -668,50 +664,52 @@ When encountering an obscure linker error involving a mangled name, follow this 
    ```
 3. **Identify the namespace, class, and function** from the demangled name.
 4. **Search the source code** for the function declaration. Check:
- - Is the function declared in the TU that references it?
- - Is the correct `extern "C"` linkage specified (if applicable)?
- - Are the parameter types an exact match (including `const``&``&&`)?
- - Is the `noexcept` specification consistent?
+
+- Is the function declared in the TU that references it?
+- Is the correct `extern "C"` linkage specified (if applicable)?
+- Are the parameter types an exact match (including `const``&``&&`)?
+- Is the `noexcept` specification consistent?
+
 5. **Check the library/object file** that should provide the symbol:
    ```bash
    nm -C libutils.a | grep "Utils::parseArg"
    ```
 6. **If the symbol exists but the linker cannot find it**, check link order (libraries after object
- files) and visibility (`-fvisibility=hidden`).
+   files) and visibility (`-fvisibility=hidden`).
 
 ## 14. Mangling Reference: Complete Type Encoding Table
 
 The following table provides a comprehensive reference for Itanium ABI type encodings:
 
-| Source Type | Mangled | Notes |
+| Source Type          | Mangled | Notes                  |
 | :------------------- | :------ | :--------------------- |
-| `void` | `v` | |
-| `bool` | `b` | |
-| `char` | `c` | |
-| `signed char` | `a` | |
-| `unsigned char` | `h` | |
-| `short` | `s` | |
-| `unsigned short` | `t` | |
-| `int` | `i` | |
-| `unsigned int` | `j` | |
-| `long` | `l` | |
-| `unsigned long` | `m` | |
-| `long long` | `x` | |
-| `unsigned long long` | `y` | |
-| `__int128` | `n` | |
-| `float` | `f` | |
-| `double` | `d` | |
-| `long double` | `e` | |
-| `float _Complex` | `Cf` | C99 complex |
-| `double _Complex` | `Cd` | C99 complex |
-| `T*` | `PT` | P = pointer |
-| `T&` | `RT` | R = lvalue reference |
-| `T&&` | `OT` | O = rvalue reference |
-| `T const` | `KT` | K = const |
-| `T volatile` | `VT` | V = volatile |
-| `T const volatile` | `VK` | |
-| `T[]` | `AT_` | Array of unknown bound |
-| `T[N]` | `AT_N` | Array of N elements |
+| `void`               | `v`     |                        |
+| `bool`               | `b`     |                        |
+| `char`               | `c`     |                        |
+| `signed char`        | `a`     |                        |
+| `unsigned char`      | `h`     |                        |
+| `short`              | `s`     |                        |
+| `unsigned short`     | `t`     |                        |
+| `int`                | `i`     |                        |
+| `unsigned int`       | `j`     |                        |
+| `long`               | `l`     |                        |
+| `unsigned long`      | `m`     |                        |
+| `long long`          | `x`     |                        |
+| `unsigned long long` | `y`     |                        |
+| `__int128`           | `n`     |                        |
+| `float`              | `f`     |                        |
+| `double`             | `d`     |                        |
+| `long double`        | `e`     |                        |
+| `float _Complex`     | `Cf`    | C99 complex            |
+| `double _Complex`    | `Cd`    | C99 complex            |
+| `T*`                 | `PT`    | P = pointer            |
+| `T&`                 | `RT`    | R = lvalue reference   |
+| `T&&`                | `OT`    | O = rvalue reference   |
+| `T const`            | `KT`    | K = const              |
+| `T volatile`         | `VT`    | V = volatile           |
+| `T const volatile`   | `VK`    |                        |
+| `T[]`                | `AT_`   | Array of unknown bound |
+| `T[N]`               | `AT_N`  | Array of N elements    |
 
 This table covers the most common encodings. The full specification is in the Itanium C++ ABI
 Document, section 5.1.5.

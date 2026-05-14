@@ -1,6 +1,8 @@
 ---
 title: Dependent Names and Two-Phase Lookup
-description: "C++: Dependent Names and Two-Phase Lookup — Dependent vs Non-Dependent Names; When Is a Name Dependent?; Non-Dependent Qualified Names Are a Trap."
+description:
+  'C++: Dependent Names and Two-Phase Lookup — Dependent vs Non-Dependent Names; When Is a Name
+  Dependent?; Non-Dependent Qualified Names Are a Trap.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -8,6 +10,7 @@ categories:
   - Cpp
 slug: dependent-names-and-two-phase-lookup
 ---
+
 # Dependent Names and Two-Phase Lookup
 
 In templates, the distinction between **dependent** and **non-dependent** names determines when name
@@ -21,11 +24,11 @@ Base classes.
 A **dependent name** is a name whose meaning depends on one or more template parameters [N4950
 S13.8.3]. A **non-dependent name** does not. The distinction determines when lookup occurs:
 
-| Name kind | Lookup time | Scope |
+| Name kind       | Lookup time             | Scope                              |
 | --------------- | ----------------------- | ---------------------------------- |
-| Non-dependent | Phase 1 (definition) | Definition context only |
-| Dependent | Phase 2 (instantiation) | Definition + instantiation context |
-| Dependent + ADL | Phase 2 (instantiation) | Associated namespaces/classes |
+| Non-dependent   | Phase 1 (definition)    | Definition context only            |
+| Dependent       | Phase 2 (instantiation) | Definition + instantiation context |
+| Dependent + ADL | Phase 2 (instantiation) | Associated namespaces/classes      |
 
 ```cpp
 #include <iostream>
@@ -61,12 +64,10 @@ int main() {
 }
 ```
 
-:::warning
-Inside a class template that inherits from a dependent base, **you must use `this->`** to
+:::warning Inside a class template that inherits from a dependent base, **you must use `this->`** to
 Access members of the base class. Without `this->`The name is non-dependent and looked up at Phase
 1, where the base class members are invisible. This is the single most common two-phase lookup bug
-[N4950 S13.8.3].
-:::
+[N4950 S13.8.3]. :::
 
 ### When Is a Name Dependent?
 
@@ -75,27 +76,27 @@ Any of the following hold:
 
 1. **A qualified-id whose qualifier is dependent.** `T::member``TT&lt;Args&gt;::type`Etc.
 2. **An unqualified name in a function call** where at least one argument has a dependent type. This
- triggers ADL at Phase 2.
+   triggers ADL at Phase 2.
 3. **A name used in a type-specifier** where the type is dependent: `sizeof(T)``alignof(T)`
- `decltype(expr)` where `expr` is type-dependent.
+   `decltype(expr)` where `expr` is type-dependent.
 4. **A name used in a `new`-expression** or `delete`-expression where the type is dependent.
 5. **A `throw`-expression** where the thrown type is dependent.
 6. **A member access expression** where the object expression is type-dependent: `obj.member` where
- `obj` has type `T`.
+   `obj` has type `T`.
 
 The following table classifies common patterns:
 
-| Expression | Dependent? | Phase | Reason |
-| -------------------------------------- | ----------------------------- | ------- | -------------------------------------------- |
-| `T::value` | Yes | Phase 2 | Qualified by dependent type `T` |
-| `T::template foo&lt;int&gt;()` | Yes | Phase 2 | Qualified by dependent type `T` |
-| `this->member` | Yes | Phase 2 | `this` has dependent type `Derived&lt;T&gt;` |
-| `std::cout` | No | Phase 1 | Qualifier `std` is non-dependent |
-| `g(42)` (unqualified) | No | Phase 1 | No dependent argument |
-| `h(x)` where `x: T` | Yes (ADL) | Phase 2 | Argument has dependent type |
-| `N::func(x)` where `N` non-dep, `x: T` | No for `N::func`Yes for ADL | Phase 1 | Qualified name at Phase 1; ADL at Phase 2 |
-| `T::Nested&lt;int&gt;` | Yes | Phase 2 | Qualified by dependent type |
-| `sizeof(T)` | Yes | Phase 2 | Type-dependent expression |
+| Expression                             | Dependent?                  | Phase   | Reason                                       |
+| -------------------------------------- | --------------------------- | ------- | -------------------------------------------- |
+| `T::value`                             | Yes                         | Phase 2 | Qualified by dependent type `T`              |
+| `T::template foo&lt;int&gt;()`         | Yes                         | Phase 2 | Qualified by dependent type `T`              |
+| `this->member`                         | Yes                         | Phase 2 | `this` has dependent type `Derived&lt;T&gt;` |
+| `std::cout`                            | No                          | Phase 1 | Qualifier `std` is non-dependent             |
+| `g(42)` (unqualified)                  | No                          | Phase 1 | No dependent argument                        |
+| `h(x)` where `x: T`                    | Yes (ADL)                   | Phase 2 | Argument has dependent type                  |
+| `N::func(x)` where `N` non-dep, `x: T` | No for `N::func`Yes for ADL | Phase 1 | Qualified name at Phase 1; ADL at Phase 2    |
+| `T::Nested&lt;int&gt;`                 | Yes                         | Phase 2 | Qualified by dependent type                  |
+| `sizeof(T)`                            | Yes                         | Phase 2 | Type-dependent expression                    |
 
 ### Non-Dependent Qualified Names Are a Trap
 
@@ -183,16 +184,16 @@ The definition-time environment and $E_2$ is the instantiation-time environment.
 Proceeds as follows:
 
 1. At definition time, compute $E_1$ from all declarations visible at the template definition point.
- For each non-dependent name $n$ in the template body, resolve $n$ in $E_1$ and record the
- binding. This binding is permanent.
+   For each non-dependent name $n$ in the template body, resolve $n$ in $E_1$ and record the
+   binding. This binding is permanent.
 
 2. At instantiation time, compute $E_2$ from all declarations visible at the instantiation point.
- For each dependent name $n$ in the template body, resolve $n$ in $E_1 \cup E_2$ (union of both
- environments). For unqualified dependent function calls, also perform ADL using the associated
- namespaces and classes of the argument types.
+   For each dependent name $n$ in the template body, resolve $n$ in $E_1 \cup E_2$ (union of both
+   environments). For unqualified dependent function calls, also perform ADL using the associated
+   namespaces and classes of the argument types.
 
 3. If any non-dependent name fails to resolve in $E_1$The program is ill-formed. If any dependent
- name fails to resolve in $E_1 \cup E_2$The program is ill-formed at the point of instantiation.
+   name fails to resolve in $E_1 \cup E_2$The program is ill-formed at the point of instantiation.
 
 This model ensures that template definitions can be checked for basic correctness at definition time
 (catching typos in non-dependent names early), while template instantiations can find names declared
@@ -289,36 +290,34 @@ int main() {
 
 Per [N4950 S13.8.1], `typename` is required in the following contexts and prohibited in others:
 
-| Context | `typename` Required? | Standard Reference |
+| Context                                                              | `typename` Required? | Standard Reference |
 | -------------------------------------------------------------------- | -------------------- | ------------------ |
-| `typename T::type x;` (variable declaration) | Yes | S13.8.1/1 |
-| `using alias = typename T::type;` (type alias) | Yes | S13.8.1/1 |
-| `typename T::type func();` (return type) | Yes | S13.8.1/1 |
-| `template &lt;typename T&gt; struct S : T::Base {}` (base specifier) | No | S13.8.1/2 |
-| `S() : T::Base() {}` (mem-initializer) | No | S13.8.1/2 |
-| `sizeof(typename T::type)` | Yes | S13.8.1/1 |
-| `alignof(typename T::type)` | Yes | S13.8.1/1 |
-| `static_cast&lt;typename T::type&gt;(expr)` | Yes | S13.8.1/1 |
-| `T::template Inner&lt;int&gt;` (template disambiguator) | N/A (use `template`) | S13.8.3/2 |
-| `typename T::template Inner&lt;int&gt;` (type + template) | Both required | S13.8.1 + S13.8.3 |
+| `typename T::type x;` (variable declaration)                         | Yes                  | S13.8.1/1          |
+| `using alias = typename T::type;` (type alias)                       | Yes                  | S13.8.1/1          |
+| `typename T::type func();` (return type)                             | Yes                  | S13.8.1/1          |
+| `template &lt;typename T&gt; struct S : T::Base {}` (base specifier) | No                   | S13.8.1/2          |
+| `S() : T::Base() {}` (mem-initializer)                               | No                   | S13.8.1/2          |
+| `sizeof(typename T::type)`                                           | Yes                  | S13.8.1/1          |
+| `alignof(typename T::type)`                                          | Yes                  | S13.8.1/1          |
+| `static_cast&lt;typename T::type&gt;(expr)`                          | Yes                  | S13.8.1/1          |
+| `T::template Inner&lt;int&gt;` (template disambiguator)              | N/A (use `template`) | S13.8.3/2          |
+| `typename T::template Inner&lt;int&gt;` (type + template)            | Both required        | S13.8.1 + S13.8.3  |
 
-:::warning
-The error message "need `typename` before dependent type name" is one of the most common
+:::warning The error message "need `typename` before dependent type name" is one of the most common
 Template compilation errors. Always use `typename` before a qualified dependent name that you intend
 To use as a type, unless you are in a base class specifier or mem-initializer. This is a purely
-Syntactic requirement --- it does not change the generated code.
-:::
+Syntactic requirement --- it does not change the generated code. :::
 
 ### Where `typename` Is Required vs Not
 
-| Context | `typename` Required? | Reason |
+| Context                                             | `typename` Required? | Reason                                 |
 | --------------------------------------------------- | -------------------- | -------------------------------------- |
-| `typename T::type x;` | Yes | Dependent qualified name as a type |
-| `using alias = typename T::type;` | Yes | Dependent qualified name in type alias |
-| `template &lt;typename T&gt; struct S : T::Base {}` | No | Base class specifier |
-| `T::Base()` (in initializer list) | No | Mem-initializer context |
-| `T::static_value` (non-type member) | No | Accessing a static data member |
-| `sizeof(typename T::type)` | Yes | Dependent type inside `sizeof` |
+| `typename T::type x;`                               | Yes                  | Dependent qualified name as a type     |
+| `using alias = typename T::type;`                   | Yes                  | Dependent qualified name in type alias |
+| `template &lt;typename T&gt; struct S : T::Base {}` | No                   | Base class specifier                   |
+| `T::Base()` (in initializer list)                   | No                   | Mem-initializer context                |
+| `T::static_value` (non-type member)                 | No                   | Accessing a static data member         |
+| `sizeof(typename T::type)`                          | Yes                  | Dependent type inside `sizeof`         |
 
 ## The `template` Disambiguator Keyword
 
@@ -410,12 +409,12 @@ int main() {
 The `template` keyword is required [N4950 S13.8.3/2] when a dependent qualified name refers to a
 Member template (a template member function or a nested template class). The rules are:
 
-| Context | `template` Required? | Example |
+| Context                                                          | `template` Required? | Example                                 |
 | ---------------------------------------------------------------- | -------------------- | --------------------------------------- |
-| `obj.template func&lt;Args&gt;()` where `obj` has dependent type | Yes | `t.template cast&lt;int&gt;()` |
-| `T::template Type&lt;Args&gt;` where `T` is dependent | Yes | `typename T::template Alloc&lt;int&gt;` |
-| `obj.func&lt;Args&gt;()` where `obj` has non-dependent type | No | `std::get&lt;0&gt;(t)` |
-| `T::func&lt;Args&gt;()` where `T` is non-dependent | No | `std::make_shared&lt;int&gt;()` |
+| `obj.template func&lt;Args&gt;()` where `obj` has dependent type | Yes                  | `t.template cast&lt;int&gt;()`          |
+| `T::template Type&lt;Args&gt;` where `T` is dependent            | Yes                  | `typename T::template Alloc&lt;int&gt;` |
+| `obj.func&lt;Args&gt;()` where `obj` has non-dependent type      | No                   | `std::get&lt;0&gt;(t)`                  |
+| `T::func&lt;Args&gt;()` where `T` is non-dependent               | No                   | `std::make_shared&lt;int&gt;()`         |
 
 The `template` disambiguator is needed in exactly the same situations where the compiler would
 Otherwise parse the `&lt;` as a less-than operator rather than the start of a template argument
@@ -468,9 +467,9 @@ ADL at Phase 2 combines with ordinary unqualified lookup in a specific way. Per 
 For an unqualified dependent function call, the compiler performs two lookups:
 
 1. **Ordinary unqualified lookup** in the definition context (Phase 1). This finds functions visible
- at the template definition point, using the usual unqualified lookup rules.
+   at the template definition point, using the usual unqualified lookup rules.
 2. **ADL** at instantiation time (Phase 2). This finds functions in the associated namespaces and
- classes of the argument types.
+   classes of the argument types.
 
 The result is the union of both lookup sets. If both find the same function, it appears once. If
 They find different functions with the same name, all candidates participate in overload resolution.
@@ -617,12 +616,12 @@ Per [N4950 S13.8.3/7], unqualified name lookup in a template does not search dep
 The rationale is twofold:
 
 1. **Performance.** Searching a dependent base class would require instantiating the base class (or
- at least enumerating its members) at the template definition point, which defeats lazy
- instantiation.
+   at least enumerating its members) at the template definition point, which defeats lazy
+   instantiation.
 
 2. **Correctness.** A dependent base class might have different members for different template
- arguments. Binding a name to a base class member at Phase 1 could produce a different binding
- than what the user expects for a particular instantiation.
+   arguments. Binding a name to a base class member at Phase 1 could produce a different binding
+   than what the user expects for a particular instantiation.
 
 The compiler therefore requires an explicit indication that the name comes from the dependent base
 (`this->`A using declaration, or qualification) before deferring the lookup.
@@ -778,33 +777,33 @@ void good() {
 ## Common Pitfalls
 
 1. **Forgetting `this->` in dependent base classes.** This is the most frequent two-phase lookup
- bug. Always qualify member accesses from dependent bases with `this->` or a using declaration.
- The compiler will not search dependent base classes during unqualified lookup at Phase 1.
+   bug. Always qualify member accesses from dependent bases with `this->` or a using declaration.
+   The compiler will not search dependent base classes during unqualified lookup at Phase 1.
 
 2. **Forgetting `typename` for dependent type names.** Any qualified name like `T::SomeType` that is
- used as a type must be prefixed with `typename` when `T` is a template parameter. The compiler
- defaults to assuming such names are non-types, which leads to confusing parse errors.
+   used as a type must be prefixed with `typename` when `T` is a template parameter. The compiler
+   defaults to assuming such names are non-types, which leads to confusing parse errors.
 
 3. **Forgetting `template` for dependent template members.** When calling a template member function
- through a dependent object, use `obj.template func&lt;Args&gt;()`. Without `template`The `&lt;`
- is parsed as a comparison operator.
+   through a dependent object, use `obj.template func&lt;Args&gt;()`. Without `template`The `&lt;`
+   is parsed as a comparison operator.
 
 4. **Assuming Phase 2 finds non-ADL names.** Only dependent names and ADL-dependent calls are
- resolved at Phase 2. Non-dependent unqualified names are locked in at Phase 1. Adding a better
- overload after the template definition has no effect on non-dependent calls.
+   resolved at Phase 2. Non-dependent unqualified names are locked in at Phase 1. Adding a better
+   overload after the template definition has no effect on non-dependent calls.
 
 5. **Overloading after definition does not affect non-dependent calls.** Adding overloads after a
- template definition has no effect on non-dependent calls within that template. This is a
- fundamental property of two-phase lookup, not a compiler limitation.
+   template definition has no effect on non-dependent calls within that template. This is a
+   fundamental property of two-phase lookup, not a compiler limitation.
 
 6. **Qualified calls bypass ADL.** A qualified call like `ns::func(arg)` is resolved at Phase 1 via
- qualified lookup only. ADL is not performed for qualified calls. If you need ADL to find
- overloads, use an unqualified call.
+   qualified lookup only. ADL is not performed for qualified calls. If you need ADL to find
+   overloads, use an unqualified call.
 
 7. **Using declarations in dependent bases are themselves dependent.** A `using T::member;`
- declaration inside a class template where `T` is a template parameter is a dependent using
- declaration. It is valid and defers lookup to Phase 2, but it does not make `member` available at
- Phase 1.
+   declaration inside a class template where `T` is a template parameter is a dependent using
+   declaration. It is valid and defers lookup to Phase 2, but it does not make `member` available at
+   Phase 1.
 
 ## See Also
 

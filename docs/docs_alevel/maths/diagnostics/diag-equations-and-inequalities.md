@@ -1,6 +1,8 @@
 ---
-title: "Equations and Inequalities -- Diagnostic Tests"
-description: Hard diagnostic tests for equations and inequalities covering modulus functions, rational inequalities, simultaneous systems, and hidden constraints at A-Level.
+title: 'Equations and Inequalities -- Diagnostic Tests'
+description:
+  Hard diagnostic tests for equations and inequalities covering modulus functions, rational
+  inequalities, simultaneous systems, and hidden constraints at A-Level.
 slug: diag-equations-and-inequalities
 hide_table_of_contents: true
 ---
@@ -21,7 +23,8 @@ $$\frac{x^2 - 3x + 2}{x^2 + x - 6} \geq 0$$
 
 State your answer using set notation, identifying all excluded values.
 
-[Difficulty: hard. Tests the common error of cross-multiplying without considering sign changes of the denominator.]
+[Difficulty: hard. Tests the common error of cross-multiplying without considering sign changes of
+the denominator.]
 
 **Solution:**
 
@@ -41,22 +44,23 @@ Excluded value: $x = 2$ (makes denominator zero). Also $x = -3$ is excluded.
 
 $$\frac{(x-1)(x-2)}{(x+3)(x-2)} = \frac{(x-1)(x-2)}{(x+3)(x-2)}$$
 
-For $x \neq 2$We can cancel $(x-2)$ but must remember the sign changes. Instead, analyse using a sign table:
+For $x \neq 2$We can cancel $(x-2)$ but must remember the sign changes. Instead, analyse using a
+sign table:
 
-| Interval | $(x+3)$ | $(x-1)$ | $(x-2)$ | Expression |
-|----------|---------|---------|---------|------------|
-| $x < -3$ | $-$ | $-$ | $-$ | $(-)(-)/(-)(-) = +/+$ but $(x-2)$ appears twice: overall $(-)(-)/((-)(-)) = +/+$ |
+| Interval | $(x+3)$ | $(x-1)$ | $(x-2)$ | Expression                                                                       |
+| -------- | ------- | ------- | ------- | -------------------------------------------------------------------------------- |
+| $x < -3$ | $-$     | $-$     | $-$     | $(-)(-)/(-)(-) = +/+$ but $(x-2)$ appears twice: overall $(-)(-)/((-)(-)) = +/+$ |
 
 Let me be more careful. The expression is $\frac{(x-1)(x-2)}{(x+3)(x-2)}$.
 
 Sign analysis:
 
-| $x$ | $(x+3)$ | $(x-1)$ | $(x-2)$ | Numerator | Denominator | Ratio |
-|-----|---------|---------|---------|-----------|-------------|-------|
-| $x < -3$ | $-$ | $-$ | $-$ | $+$ | $+$ | $+$ |
-| $-3 < x < 1$ | $+$ | $-$ | $-$ | $+$ | $-$ | $-$ |
-| $1 < x < 2$ | $+$ | $+$ | $-$ | $-$ | $-$ | $+$ |
-| $x > 2$ | $+$ | $+$ | $+$ | $+$ | $+$ | $+$ |
+| $x$          | $(x+3)$ | $(x-1)$ | $(x-2)$ | Numerator | Denominator | Ratio |
+| ------------ | ------- | ------- | ------- | --------- | ----------- | ----- |
+| $x < -3$     | $-$     | $-$     | $-$     | $+$       | $+$         | $+$   |
+| $-3 < x < 1$ | $+$     | $-$     | $-$     | $+$       | $-$         | $-$   |
+| $1 < x < 2$  | $+$     | $+$     | $-$     | $-$       | $-$         | $+$   |
+| $x > 2$      | $+$     | $+$     | $+$     | $+$       | $+$         | $+$   |
 
 **Step 4: Include or exclude endpoints.**
 
@@ -82,7 +86,8 @@ $$|x^2 - 5x + 6| = |2x - 4|$$
 
 Giving all real solutions in exact form.
 
-[Difficulty: hard. Tests systematic case analysis for modulus equations with quadratics inside absolute values.]
+[Difficulty: hard. Tests systematic case analysis for modulus equations with quadratics inside
+absolute values.]
 
 **Solution:**
 
@@ -90,15 +95,11 @@ The equation $|A| = |B|$ is equivalent to $A = B$ or $A = -B$.
 
 **Case 1:** $x^2 - 5x + 6 = 2x - 4$
 
-$$x^2 - 7x + 10 = 0$$
-$$(x-2)(x-5) = 0$$
-$$x = 2 \quad \text{or} \quad x = 5$$
+$$x^2 - 7x + 10 = 0$$ $$(x-2)(x-5) = 0$$ $$x = 2 \quad \text{or} \quad x = 5$$
 
 **Case 2:** $x^2 - 5x + 6 = -(2x - 4)$
 
-$$x^2 - 5x + 6 = -2x + 4$$
-$$x^2 - 3x + 2 = 0$$
-$$(x-1)(x-2) = 0$$
+$$x^2 - 5x + 6 = -2x + 4$$ $$x^2 - 3x + 2 = 0$$ $$(x-1)(x-2) = 0$$
 $$x = 1 \quad \text{or} \quad x = 2$$
 
 **Verification:**
@@ -125,7 +126,8 @@ $$\begin{cases} x^2 + y^2 = 1 \\ x + y = k \end{cases}$$
 
 Has exactly one real solution, and state that solution.
 
-[Difficulty: hard. Tests algebraic proof of impossibility and understanding the geometric interpretation of constrained optimisation.]
+[Difficulty: hard. Tests algebraic proof of impossibility and understanding the geometric
+interpretation of constrained optimisation.]
 
 **Solution:**
 
@@ -133,9 +135,7 @@ Has exactly one real solution, and state that solution.
 
 From the second equation: $y = 2 - x$. Substitute into the first:
 
-$$x^2 + (2-x)^2 = 1$$
-$$x^2 + 4 - 4x + x^2 = 1$$
-$$2x^2 - 4x + 3 = 0$$
+$$x^2 + (2-x)^2 = 1$$ $$x^2 + 4 - 4x + x^2 = 1$$ $$2x^2 - 4x + 3 = 0$$
 
 Discriminant: $\Delta = 16 - 24 = -8 < 0$.
 
@@ -145,16 +145,11 @@ Since $\Delta < 0$There are no real values of $x$Hence no real solutions to the 
 
 Substituting $y = k - x$ into $x^2 + y^2 = 1$:
 
-$$x^2 + (k-x)^2 = 1$$
-$$2x^2 - 2kx + k^2 - 1 = 0$$
+$$x^2 + (k-x)^2 = 1$$ $$2x^2 - 2kx + k^2 - 1 = 0$$
 
 For exactly one real solution, we need $\Delta = 0$:
 
-$$4k^2 - 8(k^2 - 1) = 0$$
-$$4k^2 - 8k^2 + 8 = 0$$
-$$-4k^2 + 8 = 0$$
-$$k^2 = 2$$
-$$k = \sqrt{2}$$
+$$4k^2 - 8(k^2 - 1) = 0$$ $$4k^2 - 8k^2 + 8 = 0$$ $$-4k^2 + 8 = 0$$ $$k^2 = 2$$ $$k = \sqrt{2}$$
 
 (Since we want the smallest positive $k$$k = \sqrt{2}$.)
 
@@ -163,9 +158,11 @@ $$k = \sqrt{2}$$
 $$x = \frac{2k}{4} = \frac{k}{2} = \frac◆LB◆\sqrt{2}◆RB◆◆LB◆2◆RB◆$$
 $$y = k - x = \sqrt{2} - \frac◆LB◆\sqrt{2}◆RB◆◆LB◆2◆RB◆ = \frac◆LB◆\sqrt{2}◆RB◆◆LB◆2◆RB◆$$
 
-The single solution is $\left(\frac◆LB◆\sqrt{2}◆RB◆◆LB◆2◆RB◆, \frac◆LB◆\sqrt{2}◆RB◆◆LB◆2◆RB◆\right)$.
+The single solution is
+$\left(\frac◆LB◆\sqrt{2}◆RB◆◆LB◆2◆RB◆, \frac◆LB◆\sqrt{2}◆RB◆◆LB◆2◆RB◆\right)$.
 
-**Geometric interpretation:** The first equation is the unit circle and the second is the line $x + y = k$. The line is tangent to the circle when its distance from the origin equals the radius:
+**Geometric interpretation:** The first equation is the unit circle and the second is the line
+$x + y = k$. The line is tangent to the circle when its distance from the origin equals the radius:
 
 $$\frac◆LB◆|0 + 0 - k|◆RB◆◆LB◆\sqrt{1^2 + 1^2}◆RB◆ = 1 \implies \frac◆LB◆k◆RB◆◆LB◆\sqrt{2}◆RB◆ = 1 \implies k = \sqrt{2}$$
 
@@ -175,7 +172,8 @@ This confirms our algebraic result.
 
 ## Integration Tests
 
-> Tests synthesis of equations and inequalities with other topics. Requires combining concepts from multiple units.
+> Tests synthesis of equations and inequalities with other topics. Requires combining concepts from
+> multiple units.
 
 ### IT-1: Solving $f(x) = f^{-1}(x)$ (with Functions)
 
@@ -187,31 +185,30 @@ The function $f$ is defined by $f(x) = \frac{2x+3}{x-1}$ for $x > 1$.
 
 **(b)** Solve the equation $f(x) = f^{-1}(x)$Giving all solutions in the domain of $f$.
 
-**(c)** Without further calculation, explain why $f(x) = f^{-1}(x)$ is equivalent to $f(x) = x$ for this particular function.
+**(c)** Without further calculation, explain why $f(x) = f^{-1}(x)$ is equivalent to $f(x) = x$ for
+this particular function.
 
-[Difficulty: hard. Combines inverse functions with equation solving and algebraic reasoning about symmetry.]
+[Difficulty: hard. Combines inverse functions with equation solving and algebraic reasoning about
+symmetry.]
 
 **Solution:**
 
 **(a)** Let $y = \frac{2x+3}{x-1}$:
 
-$$y(x-1) = 2x + 3$$
-$$xy - y = 2x + 3$$
-$$x(y-2) = y + 3$$
-$$x = \frac{y+3}{y-2}$$
+$$y(x-1) = 2x + 3$$ $$xy - y = 2x + 3$$ $$x(y-2) = y + 3$$ $$x = \frac{y+3}{y-2}$$
 
 So $f^{-1}(x) = \frac{x+3}{x-2}$.
 
-Domain of $f^{-1}$: Since the range of $f$ (for $x > 1$) needs to be determined first. As $x \to 1^+$$f(x) \to +\infty$. As $x \to +\infty$$f(x) \to 2$. So range of $f$ is $(2, +\infty)$Meaning domain of $f^{-1}$ is $x > 2$.
+Domain of $f^{-1}$: Since the range of $f$ (for $x > 1$) needs to be determined first. As
+$x \to 1^+$$f(x) \to +\infty$. As $x \to +\infty$$f(x) \to 2$. So range of $f$ is
+$(2, +\infty)$Meaning domain of $f^{-1}$ is $x > 2$.
 
 Range of $f^{-1}$: This equals the domain of $f$So $(1, +\infty)$.
 
 **(b)** Solve $\frac{2x+3}{x-1} = \frac{x+3}{x-2}$:
 
-$$(2x+3)(x-2) = (x+3)(x-1)$$
-$$2x^2 - 4x + 3x - 6 = x^2 - x + 3x - 3$$
-$$2x^2 - x - 6 = x^2 + 2x - 3$$
-$$x^2 - 3x - 3 = 0$$
+$$(2x+3)(x-2) = (x+3)(x-1)$$ $$2x^2 - 4x + 3x - 6 = x^2 - x + 3x - 3$$
+$$2x^2 - x - 6 = x^2 + 2x - 3$$ $$x^2 - 3x - 3 = 0$$
 
 By the quadratic formula:
 
@@ -224,11 +221,16 @@ Now check the domain restriction $x > 1$:
 
 The solution is $x = \frac◆LB◆3 + \sqrt{21}◆RB◆◆LB◆2◆RB◆$.
 
-**(c)** For a function and its inverse, the solutions to $f(x) = f^{-1}(x)$ lie on the line $y = x$ (the line of reflection). This is because $f(x) = f^{-1}(x)$ implies $f(f(x)) = x$And if $f(x) = c$ then $f(c) = x$. When $f(x) = x$$f^{-1}(x) = x = f(x)$.
+**(c)** For a function and its inverse, the solutions to $f(x) = f^{-1}(x)$ lie on the line $y = x$
+(the line of reflection). This is because $f(x) = f^{-1}(x)$ implies $f(f(x)) = x$And if $f(x) = c$
+then $f(c) = x$. When $f(x) = x$$f^{-1}(x) = x = f(x)$.
 
-For this specific M\"obius transformation, since $f$ is a strictly decreasing function on $(1, \infty)$ (its derivative $f'(x) = \frac{-5}{(x-1)^2} < 0$), the graph of $f$ crosses $y = x$ exactly once, and this crossing point is the unique solution to $f(x) = f^{-1}(x)$.
+For this specific M\"obius transformation, since $f$ is a strictly decreasing function on
+$(1, \infty)$ (its derivative $f'(x) = \frac{-5}{(x-1)^2} < 0$), the graph of $f$ crosses $y = x$
+exactly once, and this crossing point is the unique solution to $f(x) = f^{-1}(x)$.
 
-Verification: $f(x) = x$ gives $\frac{2x+3}{x-1} = x$I.e. $2x+3 = x^2-x$I.e. $x^2-3x-3 = 0$Which is the same equation we obtained in part (b).
+Verification: $f(x) = x$ gives $\frac{2x+3}{x-1} = x$I.e. $2x+3 = x^2-x$I.e. $x^2-3x-3 = 0$Which is
+the same equation we obtained in part (b).
 
 ---
 
@@ -250,7 +252,8 @@ The sequence $(a_n)$ is defined by $a_n = \frac{n^2 + n}{n + 2}$ for $n \geq 1$.
 
 **(a)** We need to show $\frac{n^2 + n}{n+2} > n - 1$ for all $n \geq 1$.
 
-Since $n + 2 > 0$ for all $n \geq 1$We can multiply both sides by $n + 2$ without flipping the inequality:
+Since $n + 2 > 0$ for all $n \geq 1$We can multiply both sides by $n + 2$ without flipping the
+inequality:
 
 $$n^2 + n > (n-1)(n+2) = n^2 + 2n - n - 2 = n^2 + n - 2$$
 
@@ -262,8 +265,7 @@ This is always true. Therefore $a_n > n - 1$ for all $n \geq 1$.
 
 **(b)** We need $\frac{n^2+n}{n+2} > 100$:
 
-$$n^2 + n > 100n + 200$$
-$$n^2 - 99n - 200 > 0$$
+$$n^2 + n > 100n + 200$$ $$n^2 - 99n - 200 > 0$$
 
 Roots of $n^2 - 99n - 200 = 0$:
 
@@ -273,7 +275,8 @@ $\sqrt{10601} \approx 102.96$So:
 
 $$n \approx \frac{99 + 102.96}{2} \approx 100.98$$
 
-Since the quadratic opens upward, $n^2 - 99n - 200 > 0$ for $n > \frac◆LB◆99+\sqrt{10601}◆RB◆◆LB◆2◆RB◆ \approx 100.98$.
+Since the quadratic opens upward, $n^2 - 99n - 200 > 0$ for
+$n > \frac◆LB◆99+\sqrt{10601}◆RB◆◆LB◆2◆RB◆ \approx 100.98$.
 
 The smallest integer $N$ is $\boxed{101}$.
 
@@ -303,7 +306,8 @@ $$= 4950 + 2H_{102} - 3$$
 
 $$= 4947 + 2H_{102}$$
 
-This is the exact value in terms of the harmonic number $H_{102}$. Note that $H_{102}$ does not simplify to a closed form using elementary functions; this is the most precise exact answer.
+This is the exact value in terms of the harmonic number $H_{102}$. Note that $H_{102}$ does not
+simplify to a closed form using elementary functions; this is the most precise exact answer.
 
 ---
 
@@ -319,54 +323,68 @@ $$\begin{cases} y \geq x^2 - 4x + 3 \\ y \leq 4 - x^2 \\ y \geq |x - 2| - 1 \end
 
 **(b)** Find the exact area of $R$.
 
-[Difficulty: hard. Combines inequality regions with modulus functions and area calculation between curves.]
+[Difficulty: hard. Combines inequality regions with modulus functions and area calculation between
+curves.]
 
 **Solution:**
 
 **(a)** We find all intersection points of the boundary curves.
 
-**Curve 1:** $y = x^2 - 4x + 3 = (x-1)(x-3)$ (upward parabola)
-**Curve 2:** $y = 4 - x^2$ (downward parabola)
-**Curve 3:** $y = |x-2| - 1$ (V-shape with vertex at $(2, -1)$)
+**Curve 1:** $y = x^2 - 4x + 3 = (x-1)(x-3)$ (upward parabola) **Curve 2:** $y = 4 - x^2$ (downward
+parabola) **Curve 3:** $y = |x-2| - 1$ (V-shape with vertex at $(2, -1)$)
 
 **Intersection of Curves 1 and 2:**
 
-$$x^2 - 4x + 3 = 4 - x^2$$
-$$2x^2 - 4x - 1 = 0$$
+$$x^2 - 4x + 3 = 4 - x^2$$ $$2x^2 - 4x - 1 = 0$$
 $$x = \frac◆LB◆4 \pm \sqrt{16 + 8}◆RB◆◆LB◆4◆RB◆ = \frac◆LB◆4 \pm \sqrt{24}◆RB◆◆LB◆4◆RB◆ = \frac◆LB◆4 \pm 2\sqrt{6}◆RB◆◆LB◆4◆RB◆ = \frac◆LB◆2 \pm \sqrt{6}◆RB◆◆LB◆2◆RB◆ = 1 \pm \frac◆LB◆\sqrt{6}◆RB◆◆LB◆2◆RB◆$$
 
-For $x = 1 + \sqrt{6}/2 \approx 2.225$: $y = 4 - (1+\sqrt{6}/2)^2 = 4 - (1+\sqrt{6}+3/2) = 4 - 5/2 - \sqrt{6} = 3/2 - \sqrt{6}$.
+For $x = 1 + \sqrt{6}/2 \approx 2.225$:
+$y = 4 - (1+\sqrt{6}/2)^2 = 4 - (1+\sqrt{6}+3/2) = 4 - 5/2 - \sqrt{6} = 3/2 - \sqrt{6}$.
 
-For $x = 1 - \sqrt{6}/2 \approx -0.225$: $y = 4 - (1-\sqrt{6}/2)^2 = 3/2 - \sqrt{6}$ (same by symmetry of the setup).
+For $x = 1 - \sqrt{6}/2 \approx -0.225$: $y = 4 - (1-\sqrt{6}/2)^2 = 3/2 - \sqrt{6}$ (same by
+symmetry of the setup).
 
 **Intersection of Curve 1 and Curve 3:**
 
 For $x \geq 2$: $|x-2| = x-2$So $x^2-4x+3 = x-3$Giving $x^2-5x+6 = 0$So $x = 2$ or $x = 3$.
+
 - At $x = 2$: $y = -1$.
 - At $x = 3$: $y = 0$.
 
 For $x < 2$: $|x-2| = 2-x$So $x^2-4x+3 = 2-x-1 = 1-x$Giving $x^2-3x+2 = 0$So $x = 1$ or $x = 2$.
+
 - At $x = 1$: $y = 0$.
 
 **Intersection of Curve 2 and Curve 3:**
 
-For $x \geq 2$: $4-x^2 = x-3$Giving $x^2+x-7 = 0$So $x = \frac◆LB◆-1+\sqrt{29}◆RB◆◆LB◆2◆RB◆ \approx 2.193$.
+For $x \geq 2$: $4-x^2 = x-3$Giving $x^2+x-7 = 0$So
+$x = \frac◆LB◆-1+\sqrt{29}◆RB◆◆LB◆2◆RB◆ \approx 2.193$.
 $y = \frac◆LB◆-1+\sqrt{29}◆RB◆◆LB◆2◆RB◆ - 3 = \frac◆LB◆-7+\sqrt{29}◆RB◆◆LB◆2◆RB◆$.
 
-For $x < 2$: $4-x^2 = 1-x$Giving $x^2-x-3 = 0$So $x = \frac◆LB◆1+\sqrt{13}◆RB◆◆LB◆2◆RB◆ \approx 2.303$. But this is $> 2$Contradicting $x < 2$. So $x = \frac◆LB◆1-\sqrt{13}◆RB◆◆LB◆2◆RB◆ \approx -1.303$.
+For $x < 2$: $4-x^2 = 1-x$Giving $x^2-x-3 = 0$So
+$x = \frac◆LB◆1+\sqrt{13}◆RB◆◆LB◆2◆RB◆ \approx 2.303$. But this is $> 2$Contradicting $x < 2$. So
+$x = \frac◆LB◆1-\sqrt{13}◆RB◆◆LB◆2◆RB◆ \approx -1.303$.
 $y = 1 - \frac◆LB◆1-\sqrt{13}◆RB◆◆LB◆2◆RB◆ = \frac◆LB◆1+\sqrt{13}◆RB◆◆LB◆2◆RB◆$.
 
 **Vertices of $R$:** The region $R$ is bounded. Its vertices are approximately:
+
 - $(1, 0)$: intersection of curves 1 and 3
 - $(3, 0)$: intersection of curves 1 and 3
 - $(2, -1)$: vertex of the V-shape (Curve 3)
 - Plus the intersections of curves 1-2 and 2-3
 
 Due to the complexity, the exact vertices are:
-1. $\left(1 - \frac◆LB◆\sqrt{6}◆RB◆◆LB◆2◆RB◆, \frac{3}{2} - \sqrt{6}\right)$ and $\left(1 + \frac◆LB◆\sqrt{6}◆RB◆◆LB◆2◆RB◆, \frac{3}{2} - \sqrt{6}\right)$: Curves 1 and 2
+
+1. $\left(1 - \frac◆LB◆\sqrt{6}◆RB◆◆LB◆2◆RB◆, \frac{3}{2} - \sqrt{6}\right)$ and
+   $\left(1 + \frac◆LB◆\sqrt{6}◆RB◆◆LB◆2◆RB◆, \frac{3}{2} - \sqrt{6}\right)$: Curves 1 and 2
 2. $(1, 0)$ and $(3, 0)$: Curves 1 and 3
 3. $(2, -1)$: Curve 3 vertex
-4. $\left(\frac◆LB◆-1+\sqrt{29}◆RB◆◆LB◆2◆RB◆, \frac◆LB◆-7+\sqrt{29}◆RB◆◆LB◆2◆RB◆\right)$: Curves 2 and 3 (for $x \geq 2$)
-5. $\left(\frac◆LB◆1-\sqrt{13}◆RB◆◆LB◆2◆RB◆, \frac◆LB◆1+\sqrt{13}◆RB◆◆LB◆2◆RB◆\right)$: Curves 2 and 3 (for $x < 2$)
+4. $\left(\frac◆LB◆-1+\sqrt{29}◆RB◆◆LB◆2◆RB◆, \frac◆LB◆-7+\sqrt{29}◆RB◆◆LB◆2◆RB◆\right)$: Curves 2
+   and 3 (for $x \geq 2$)
+5. $\left(\frac◆LB◆1-\sqrt{13}◆RB◆◆LB◆2◆RB◆, \frac◆LB◆1+\sqrt{13}◆RB◆◆LB◆2◆RB◆\right)$: Curves 2 and
+   3 (for $x < 2$)
 
-**(b)** The area calculation requires integrating between the appropriate curves over the relevant intervals. Given the complexity of the vertices, the area is computed by splitting $R$ into sub-regions bounded by pairs of curves and summing the definite integrals. The computation is extensive but follows standard techniques of integration between curves.
+**(b)** The area calculation requires integrating between the appropriate curves over the relevant
+intervals. Given the complexity of the vertices, the area is computed by splitting $R$ into
+sub-regions bounded by pairs of curves and summing the definite integrals. The computation is
+extensive but follows standard techniques of integration between curves.

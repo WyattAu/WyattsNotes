@@ -1,6 +1,8 @@
 ---
 title: Mechanics
-description: "Mechanics — Scalars and Vectors; Resolving Vectors into Components; Vector Addition; Equations of Motion (Kinematics), ensuring thorough understanding."
+description:
+  'Mechanics — Scalars and Vectors; Resolving Vectors into Components; Vector Addition; Equations of
+  Motion (Kinematics), ensuring thorough understanding.'
 date: 2026-04-14
 tags:
   - Physics
@@ -9,6 +11,7 @@ categories:
   - Physics
 slug: mechanics
 ---
+
 # Mechanics
 
 ## Higher Mechanics
@@ -18,7 +21,7 @@ slug: mechanics
 Physical quantities are either **scalars** (magnitude only) or **vectors** (magnitude and
 Direction).
 
-| Scalar | Vector |
+| Scalar                    | Vector                                      |
 | ------------------------- | ------------------------------------------- |
 | Mass, speed, energy, time | Displacement, velocity, force, acceleration |
 
@@ -37,8 +40,8 @@ This technique is the single most important problem-solving tool in mechanics. I
 With forces at awkward angles, resolve every force into components along two perpendicular axes,
 Apply Newton's second law to each axis independently, and then recombine the results.
 
-**Example:** A boat sails north at $5 \mathrm{ m/s{}$ in a current flowing east at $3 \mathrm{ m/s{}$.
-Find the resultant velocity.
+**Example:** A boat sails north at $5 \mathrm{ m/s{}$ in a current flowing east at
+$3 \mathrm{ m/s{}$. Find the resultant velocity.
 
 $$|\mathbf{'\{'}v{'\}'}| = \sqrt{5^2 + 3^2} = \sqrt{34} \approx 5.83 \mathrm{ m/s{}$$
 
@@ -55,11 +58,9 @@ $$\vec{R} = \vec{A} + \vec{B} \implies R_x = A_x + B_x, \quad R_y = A_y + B_y$$
 
 For constant acceleration $a$:
 
-
 <PhetSimulation simulationId="forces-and-motion-basics" title="Forces and Motion: Basics" />
 
 Explore the simulation above to develop intuition for this topic.
-
 
 $$v = u + at$$
 
@@ -73,13 +74,13 @@ Where $u$ = initial velocity, $v$ = final velocity, $s$ = displacement, $t$ = ti
 
 ### Choosing the Right Equation
 
-Each equation relates a different subset of the five variables ($u$$v$$a$$s$$t$). The
-Variable that does _not_ appear tells you when to use that equation. If you know $u$$a$And $s$
-And need $v$Use $v^2 = u^2 + 2as$ (it does not contain $t$). If you know $u$$v$And $t$ and
-Need $s$Use $s = \frac{1}{2}(u+v)t$ (it does not contain $a$).
+Each equation relates a different subset of the five variables ($u$$v$$a$$s$$t$). The Variable that
+does _not_ appear tells you when to use that equation. If you know $u$$a$And $s$ And need $v$Use
+$v^2 = u^2 + 2as$ (it does not contain $t$). If you know $u$$v$And $t$ and Need $s$Use
+$s = \frac{1}{2}(u+v)t$ (it does not contain $a$).
 
-**Example:** A car accelerates uniformly from $10 \mathrm{ m/s{}$ to $30 \mathrm{ m/s{}$ over a distance
-Of $200 \mathrm{ m{}$. Find the acceleration and time taken.
+**Example:** A car accelerates uniformly from $10 \mathrm{ m/s{}$ to $30 \mathrm{ m/s{}$ over a
+distance Of $200 \mathrm{ m{}$. Find the acceleration and time taken.
 
 Using $v^2 = u^2 + 2as$:
 
@@ -131,8 +132,8 @@ The horizontal and vertical components are completely independent. There is no h
 Always $g$ downward, regardless of the horizontal motion. This means you can solve each component
 Separately using the kinematic equations.
 
-**Example:** A ball is thrown at $20 \mathrm{ m/s{}$ at an angle of $30^\circ$ above the horizontal. Find
-The maximum height and horizontal range.
+**Example:** A ball is thrown at $20 \mathrm{ m/s{}$ at an angle of $30^\circ$ above the horizontal.
+Find The maximum height and horizontal range.
 
 Vertical component: $v_y = 20\sin 30° = 10 \mathrm{ m/s{}$.
 
@@ -242,9 +243,9 @@ You do not need to know the acceleration, the time, or the detailed path. Given 
 Final speeds and the forces, you can solve the problem directly. This is especially useful for
 Variable-force problems and curved paths.
 
-**Example:** A car of mass $1200 \mathrm{ kg{}$ travels at a constant speed of $25 \mathrm{ m/s{}$ up a
-Hill inclined at $5^\circ$ to the horizontal. The total resistive force is $800 \mathrm{ N{}$. Find the
-Power output of the engine.
+**Example:** A car of mass $1200 \mathrm{ kg{}$ travels at a constant speed of $25 \mathrm{ m/s{}$
+up a Hill inclined at $5^\circ$ to the horizontal. The total resistive force is $800 \mathrm{ N{}$.
+Find the Power output of the engine.
 
 Component of weight along the slope:
 $mg\sin 5° = 1200 \times 9.8 \times \sin 5° \approx 1026 \mathrm{ N{}$.
@@ -291,8 +292,8 @@ Zero, the total momentum of the system cannot change. This is one of the most po
 Laws in physics.
 
 **Example:** A $2 \mathrm{ kg{}$ ball moving at $5 \mathrm{ m/s{}$ collides with a stationary
-$3 \mathrm{ kg{}$ ball. If the $2 \mathrm{ kg{}$ ball rebounds at $1 \mathrm{ m/s{}$Find the velocity of
-The $3 \mathrm{ kg{}$ ball.
+$3 \mathrm{ kg{}$ ball. If the $2 \mathrm{ kg{}$ ball rebounds at $1 \mathrm{ m/s{}$Find the
+velocity of The $3 \mathrm{ kg{}$ ball.
 
 Conservation of momentum:
 
@@ -350,8 +351,8 @@ If the centripetal force disappears (the string breaks, friction is insufficient
 Continues in a straight line tangent to the circle at the point of release. It does not fly radially
 Outward.
 
-**Example:** A car of mass $1200 \mathrm{ kg{}$ travels around a roundabout of radius $25 \mathrm{ m{}$ at
-$12 \mathrm{ m/s{}$. Find the centripetal force.
+**Example:** A car of mass $1200 \mathrm{ kg{}$ travels around a roundabout of radius
+$25 \mathrm{ m{}$ at $12 \mathrm{ m/s{}$. Find the centripetal force.
 
 $$F = \frac{mv^2}{r} = \frac{1200 \times 144}{25} = \frac{172800}{25} = 6912 \mathrm{ N{}$$
 
@@ -368,10 +369,10 @@ The minimum speed at the top to maintain circular motion: $v_{\min} = \sqrt{gr}$
 ## Common Pitfalls
 
 1. **Confusing mass and weight:** Mass is measured in kg; weight is a force measured in N
- ($W = mg$).
+   ($W = mg$).
 
 2. **Forgetting to resolve forces:** On an inclined plane, always resolve forces parallel and
- perpendicular to the plane.
+   perpendicular to the plane.
 
 3. **Sign conventions in momentum:** Be consistent with positive and negative directions.
 
@@ -380,10 +381,10 @@ The minimum speed at the top to maintain circular motion: $v_{\min} = \sqrt{gr}$
 5. **Units in power:** Power is measured in watts (W). Ensure force is in N and velocity in m/s.
 
 6. **Using the wrong kinematic equation:** Choose the equation that does not contain the unknown
- variable you do not have.
+   variable you do not have.
 
 7. **Confusing centripetal force with a separate force:** The centripetal force is the _resultant_
- radial force, not an additional interaction.
+   radial force, not an additional interaction.
 
 8. **Forgetting that the range formula only applies when launch and landing heights are equal.**
 
@@ -391,38 +392,38 @@ The minimum speed at the top to maintain circular motion: $v_{\min} = \sqrt{gr}$
 
 ## Practice Questions
 
-1. A stone is thrown horizontally from a cliff $40 \mathrm{ m{}$ high at $15 \mathrm{ m/s{}$. Find the
- time to hit the ground and the horizontal distance travelled.
+1. A stone is thrown horizontally from a cliff $40 \mathrm{ m{}$ high at $15 \mathrm{ m/s{}$. Find
+   the time to hit the ground and the horizontal distance travelled.
 
 2. A $60 \mathrm{ kg{}$ skier accelerates down a slope inclined at $20^\circ$ to the horizontal. The
- coefficient of friction is $0.1$. Find the acceleration.
+   coefficient of friction is $0.1$. Find the acceleration.
 
-3. A car of mass $800 \mathrm{ kg{}$ accelerates from rest to $20 \mathrm{ m/s{}$ in $8 \mathrm{ s{}$.
- Calculate the work done and the average power.
+3. A car of mass $800 \mathrm{ kg{}$ accelerates from rest to $20 \mathrm{ m/s{}$ in
+   $8 \mathrm{ s{}$. Calculate the work done and the average power.
 
-4. A $4 \mathrm{ kg{}$ object moving at $6 \mathrm{ m/s{}$ collides with a $6 \mathrm{ kg{}$ object moving at
- $2 \mathrm{ m/s{}$ in the same direction. They stick together. Find the velocity after the collision
- and the kinetic energy lost.
+4. A $4 \mathrm{ kg{}$ object moving at $6 \mathrm{ m/s{}$ collides with a $6 \mathrm{ kg{}$ object
+   moving at $2 \mathrm{ m/s{}$ in the same direction. They stick together. Find the velocity after
+   the collision and the kinetic energy lost.
 
 5. A ball is projected at $25 \mathrm{ m/s{}$ at $40^\circ$ above the horizontal from the top of a
- $15 \mathrm{ m{}$ cliff. Find the speed when it hits the ground.
+   $15 \mathrm{ m{}$ cliff. Find the speed when it hits the ground.
 
 6. Two particles of masses $2 \mathrm{ kg{}$ and $3 \mathrm{ kg{}$ are connected by a string over a
- pulley. The system is released from rest. Find the speed after the $3 \mathrm{ kg{}$ mass has fallen
- $2 \mathrm{ m{}$.
+   pulley. The system is released from rest. Find the speed after the $3 \mathrm{ kg{}$ mass has
+   fallen $2 \mathrm{ m{}$.
 
 7. A crane lifts a $500 \mathrm{ kg{}$ load from rest with constant acceleration. In the first
- $3 \mathrm{ s{}$It rises $9 \mathrm{ m{}$. Find the tension in the cable.
+   $3 \mathrm{ s{}$It rises $9 \mathrm{ m{}$. Find the tension in the cable.
 
-8. A bullet of mass $10 \mathrm{ g{}$ travelling at $400 \mathrm{ m/s{}$ embeds itself in a wooden block
- of mass $2 \mathrm{ kg{}$ at rest. Find the velocity of the block immediately after impact.
+8. A bullet of mass $10 \mathrm{ g{}$ travelling at $400 \mathrm{ m/s{}$ embeds itself in a wooden
+   block of mass $2 \mathrm{ kg{}$ at rest. Find the velocity of the block immediately after impact.
 
-9. A car of mass $1000 \mathrm{ kg{}$ rounds a bend of radius $80 \mathrm{ m{}$ at $15 \mathrm{ m/s{}$. Find
- the minimum coefficient of static friction required.
+9. A car of mass $1000 \mathrm{ kg{}$ rounds a bend of radius $80 \mathrm{ m{}$ at
+   $15 \mathrm{ m/s{}$. Find the minimum coefficient of static friction required.
 
-10. A $3 \mathrm{ kg{}$ block slides $4 \mathrm{ m{}$ down a $30^\circ$ incline with $\mu_k = 0.2$. Find the
- work done by friction, the work done by gravity, and the final speed if the block started from
- rest.
+10. A $3 \mathrm{ kg{}$ block slides $4 \mathrm{ m{}$ down a $30^\circ$ incline with $\mu_k = 0.2$.
+    Find the work done by friction, the work done by gravity, and the final speed if the block
+    started from rest.
 
 ## 11. Derivation of the Kinematic Equations from Calculus (Advanced Higher)
 
@@ -455,8 +456,8 @@ $$s = \bar{v}t = \frac{u + v}{2}t$$
 
 ## 12. Worked Example: Projectile from a Height
 
-A ball is thrown from the top of a $40 \mathrm{ m{}$ cliff at $15 \mathrm{ m/s{}$ at $25^\circ$ above the
-Horizontal. Find the time to hit the ground and the horizontal distance.
+A ball is thrown from the top of a $40 \mathrm{ m{}$ cliff at $15 \mathrm{ m/s{}$ at $25^\circ$
+above the Horizontal. Find the time to hit the ground and the horizontal distance.
 
 $$v_x = 15\cos 25° = 13.59 \mathrm{ m/s{}, \qquad v_y = 15\sin 25° = 6.34 \mathrm{ m/s{}$$
 
@@ -472,8 +473,8 @@ Horizontal distance: $R = v_x t = 13.59 \times 3.58 = 48.7 \mathrm{ m{}$.
 
 ## 13. Worked Example: Energy with Friction on an Incline
 
-A $4 \mathrm{ kg{}$ block slides $5 \mathrm{ m{}$ down a $30^\circ$ rough incline with $\mu_k = 0.2$Starting
-From rest.
+A $4 \mathrm{ kg{}$ block slides $5 \mathrm{ m{}$ down a $30^\circ$ rough incline with
+$\mu_k = 0.2$Starting From rest.
 
 **Work done by gravity:**
 $W_g = mg\sin\theta \times d = 4 \times 9.8 \times \sin 30° \times 5 = 98 \mathrm{ J{}$
@@ -493,15 +494,14 @@ $W_{\mathrm{net{}} = \frac{1}{2}mv^2 \implies v = \sqrt{\frac{2 \times 64.05}{4}
 
 For a ball of mass $m$ on a string of length $L$ swung in a vertical circle:
 
-**At the bottom:** $T - mg = \frac{mv^2}{L}$So $T = mg + \frac{mv^2}{L}$ (tension is maximum
-Here).
+**At the bottom:** $T - mg = \frac{mv^2}{L}$So $T = mg + \frac{mv^2}{L}$ (tension is maximum Here).
 
 **At the top:** $T + mg = \frac{mv^2}{L}$So $T = \frac{mv^2}{L} - mg$ (tension is minimum here).
 
 **Minimum speed at the top:** Set $T = 0$: $v_{\min} = \sqrt{gL}$.
 
-**Worked Example:** A ball of mass $0.5 \mathrm{ kg{}$ on a string of length $1.2 \mathrm{ m{}$ has speed
-$7 \mathrm{ m/s{}$ at the bottom. Find the tension at the bottom and the tension at the top.
+**Worked Example:** A ball of mass $0.5 \mathrm{ kg{}$ on a string of length $1.2 \mathrm{ m{}$ has
+speed $7 \mathrm{ m/s{}$ at the bottom. Find the tension at the bottom and the tension at the top.
 
 **At the bottom:**
 $T_b = mg + \frac{mv_b^2}{L} = 0.5 \times 9.8 + \frac{0.5 \times 49}{1.2} = 4.9 + 20.42 = 25.3 \mathrm{ N{}$
@@ -518,73 +518,75 @@ $$v_t = 1.4 \mathrm{ m/s{}$$
 $T_t = \frac{mv_t^2}{L} - mg = \frac{0.5 \times 1.96}{1.2} - 4.9 = 0.817 - 4.9 = -4.08 \mathrm{ N{}$
 
 A negative tension means the string would go slack. The ball does not complete the full circle. For
-The ball to just complete the circle, we need $v_t = \sqrt{gL} = \sqrt{11.76} = 3.43 \mathrm{ m/s{}$.
+The ball to just complete the circle, we need
+$v_t = \sqrt{gL} = \sqrt{11.76} = 3.43 \mathrm{ m/s{}$.
 
 ## 15. Summary Table: Key Mechanics Formulas
 
-| Topic | Formula | Variables | Conditions |
-| ----------------- | -------------------------- | --------------------------- | ----------------------- |
-| Kinematics | $v = u + at$ | $u$$v$$a$$t$ | Constant acceleration |
-| Kinematics | $v^2 = u^2 + 2as$ | $u$$v$$a$$s$ | Constant acceleration |
-| Projectile range | $R = u^2\sin 2\theta / g$ | $u$$\theta$$g$ | Launch = landing height |
-| Newton's 2nd law | $F = ma$ | $F$$m$$a$ | Vector equation |
-| Weight | $W = mg$ | $m$$g$ | Near surface |
-| Friction | $f = \mu N$ | $\mu$$N$ | Sliding |
-| Work | $W = Fs\cos\theta$ | $F$$s$$\theta$ | Constant force |
-| Kinetic energy | $E_k = \frac{1}{2}mv^2$ | $m$$v$ | Always positive |
-| Potential energy | $E_p = mgh$ | $m$$g$$h$ | Near surface |
-| Power | $P = Fv$ | $F$$v$ | Constant velocity |
-| Momentum | $p = mv$ | $m$$v$ | Vector |
-| Impulse | $J = F\Delta t = \Delta p$ | $F$$\Delta t$$\Delta p$ | -- |
-| Centripetal force | $F = mv^2/r$ | $m$$v$$r$ | Uniform circular motion |
+| Topic             | Formula                    | Variables               | Conditions              |
+| ----------------- | -------------------------- | ----------------------- | ----------------------- |
+| Kinematics        | $v = u + at$               | $u$$v$$a$$t$            | Constant acceleration   |
+| Kinematics        | $v^2 = u^2 + 2as$          | $u$$v$$a$$s$            | Constant acceleration   |
+| Projectile range  | $R = u^2\sin 2\theta / g$  | $u$$\theta$$g$          | Launch = landing height |
+| Newton's 2nd law  | $F = ma$                   | $F$$m$$a$               | Vector equation         |
+| Weight            | $W = mg$                   | $m$$g$                  | Near surface            |
+| Friction          | $f = \mu N$                | $\mu$$N$                | Sliding                 |
+| Work              | $W = Fs\cos\theta$         | $F$$s$$\theta$          | Constant force          |
+| Kinetic energy    | $E_k = \frac{1}{2}mv^2$    | $m$$v$                  | Always positive         |
+| Potential energy  | $E_p = mgh$                | $m$$g$$h$               | Near surface            |
+| Power             | $P = Fv$                   | $F$$v$                  | Constant velocity       |
+| Momentum          | $p = mv$                   | $m$$v$                  | Vector                  |
+| Impulse           | $J = F\Delta t = \Delta p$ | $F$$\Delta t$$\Delta p$ | --                      |
+| Centripetal force | $F = mv^2/r$               | $m$$v$$r$               | Uniform circular motion |
 
 ## 16. Practice Questions (Additional)
 
 11. A stone is thrown at $18 \mathrm{ m/s{}$ at $50^\circ$ to the horizontal from the top of a
- $25 \mathrm{ m{}$ cliff. Calculate the speed at which it hits the ground.
+    $25 \mathrm{ m{}$ cliff. Calculate the speed at which it hits the ground.
 
 12. A car of mass $900 \mathrm{ kg{}$ travels at constant speed around a circular bend of radius
- $60 \mathrm{ m{}$ that is banked at $12^\circ$. Calculate the minimum coefficient of static friction
- required.
+    $60 \mathrm{ m{}$ that is banked at $12^\circ$. Calculate the minimum coefficient of static
+    friction required.
 
-13. A bullet of mass $8 \mathrm{ g{}$ travelling at $600 \mathrm{ m/s{}$ passes through a wooden block of
- mass $2 \mathrm{ kg{}$Emerging at $200 \mathrm{ m/s{}$. Calculate the velocity of the block and the
- kinetic energy lost.
+13. A bullet of mass $8 \mathrm{ g{}$ travelling at $600 \mathrm{ m/s{}$ passes through a wooden
+    block of mass $2 \mathrm{ kg{}$Emerging at $200 \mathrm{ m/s{}$. Calculate the velocity of the
+    block and the kinetic energy lost.
 
-14. A $5 \mathrm{ kg{}$ box is pushed up a $35^\circ$ incline at constant speed by a force of $50 \mathrm{ N{}$
- applied parallel to the incline. Calculate the coefficient of kinetic friction.
+14. A $5 \mathrm{ kg{}$ box is pushed up a $35^\circ$ incline at constant speed by a force of
+    $50 \mathrm{ N{}$ applied parallel to the incline. Calculate the coefficient of kinetic
+    friction.
 
-15. A ball of mass $0.3 \mathrm{ kg{}$ is attached to a string of length $0.8 \mathrm{ m{}$ and swung in a
- vertical circle. Calculate the minimum speed at the lowest point for the ball to complete the
- full circle.
+15. A ball of mass $0.3 \mathrm{ kg{}$ is attached to a string of length $0.8 \mathrm{ m{}$ and
+    swung in a vertical circle. Calculate the minimum speed at the lowest point for the ball to
+    complete the full circle.
 
-16. Two objects of masses $3 \mathrm{ kg{}$ and $5 \mathrm{ kg{}$Connected by a light string, are placed
- on a smooth table with a pulley at the edge. The $5 \mathrm{ kg{}$ mass hangs over the edge. Find
- the speed of the system after the $5 \mathrm{ kg{}$ mass has fallen $1.5 \mathrm{ m{}$ using energy
- methods.
+16. Two objects of masses $3 \mathrm{ kg{}$ and $5 \mathrm{ kg{}$Connected by a light string, are
+    placed on a smooth table with a pulley at the edge. The $5 \mathrm{ kg{}$ mass hangs over the
+    edge. Find the speed of the system after the $5 \mathrm{ kg{}$ mass has fallen
+    $1.5 \mathrm{ m{}$ using energy methods.
 
 17. A satellite of mass $500 \mathrm{ kg{}$ orbits at a height of $600 \mathrm{ km{}$ above Earth's
- surface. Calculate the orbital speed, period, and gravitational potential energy of the
- satellite.
+    surface. Calculate the orbital speed, period, and gravitational potential energy of the
+    satellite.
 
 18. A $2 \mathrm{ kg{}$ object slides from rest down a frictionless curved ramp of total height
- $4 \mathrm{ m{}$. At the bottom, it enters a rough horizontal surface with $\mu_k = 0.3$. How far
- does it slide before stopping?
+    $4 \mathrm{ m{}$. At the bottom, it enters a rough horizontal surface with $\mu_k = 0.3$. How
+    far does it slide before stopping?
 
-19. A crane lifts a $300 \mathrm{ kg{}$ load with an upward acceleration of $1.5 \mathrm{ m/s{}^2$ for
- $4 \mathrm{ s{}$Then travels at constant speed for $3 \mathrm{ s{}$Then decelerates at
- $2 \mathrm{ m/s{}^2$ to rest. Calculate the total work done by the tension in the cable.
+19. A crane lifts a $300 \mathrm{ kg{}$ load with an upward acceleration of $1.5 \mathrm{ m/s{}^2$
+    for $4 \mathrm{ s{}$Then travels at constant speed for $3 \mathrm{ s{}$Then decelerates at
+    $2 \mathrm{ m/s{}^2$ to rest. Calculate the total work done by the tension in the cable.
 
 20. Explain why the range of a projectile is the same for complementary angles (e.g., $30^\circ$ and
- $60^\circ$). Include a mathematical derivation.
+    $60^\circ$). Include a mathematical derivation.
 
 ## Extended Worked Examples
 
 ### Example 21: Work-Energy with Variable Force
 
-A force $F(x) = 3x^2 - 2x$ (in N) acts on a $2 \mathrm{ kg{}$ object moving along the x-axis. Calculate
-The work done by this force as the object moves from $x = 0$ to $x = 3 \mathrm{ m{}$And find the
-Speed at $x = 3 \mathrm{ m{}$ if the object starts from rest.
+A force $F(x) = 3x^2 - 2x$ (in N) acts on a $2 \mathrm{ kg{}$ object moving along the x-axis.
+Calculate The work done by this force as the object moves from $x = 0$ to $x = 3 \mathrm{ m{}$And
+find the Speed at $x = 3 \mathrm{ m{}$ if the object starts from rest.
 
 **Step 1: Calculate the work done by integration**
 
@@ -598,17 +600,15 @@ $$18 = \frac{1}{2}(2)v^2 - 0$$
 
 $$v = \sqrt{18} = 4.24 \mathrm{ m/s{}$$
 
-:::info
-The work-energy theorem is one of the most powerful tools in mechanics. It works even when
+:::info The work-energy theorem is one of the most powerful tools in mechanics. It works even when
 Forces are variable (requiring calculus) and does not require knowledge of the path taken, only the
-Initial and final speeds.
-:::
+Initial and final speeds. :::
 
 ### Example 22: Oblique Collision in 2D
 
-A $3 \mathrm{ kg{}$ object moving at $4 \mathrm{ m/s{}$ collides with a stationary $2 \mathrm{ kg{}$ object.
-After the collision, the $3 \mathrm{ kg{}$ object moves at $2 \mathrm{ m/s{}$ at $30^\circ$ to its original
-Direction. Find the velocity of the $2 \mathrm{ kg{}$ object after the collision.
+A $3 \mathrm{ kg{}$ object moving at $4 \mathrm{ m/s{}$ collides with a stationary $2 \mathrm{ kg{}$
+object. After the collision, the $3 \mathrm{ kg{}$ object moves at $2 \mathrm{ m/s{}$ at $30^\circ$
+to its original Direction. Find the velocity of the $2 \mathrm{ kg{}$ object after the collision.
 
 Take the original direction as the x-axis.
 
@@ -634,14 +634,15 @@ $$|v_2| = \sqrt{3.402^2 + (-1.5)^2} = \sqrt{11.57 + 2.25} = \sqrt{13.82} = 3.72 
 
 $$\theta = \arctan\left(\frac{-1.5}{3.402}\right) = -23.8^\circ$$
 
-The $2 \mathrm{ kg{}$ object moves at $3.72 \mathrm{ m/s{}$ at $23.8^\circ$ below the original direction.
+The $2 \mathrm{ kg{}$ object moves at $3.72 \mathrm{ m/s{}$ at $23.8^\circ$ below the original
+direction.
 
 ### Example 23: Connected Bodies on an Inclined Plane
 
-Two masses, $m_A = 8 \mathrm{ kg{}$ on a $30^\circ$ incline and $m_B = 5 \mathrm{ kg{}$ hanging vertically, are
-Connected by a light inextensible string over a smooth pulley at the top of the incline. The
-Coefficient of friction between $m_A$ and the incline is $\mu = 0.2$. Find the acceleration of the
-System and the tension in the string. Take $g = 9.8 \mathrm{ m/s{}^2$.
+Two masses, $m_A = 8 \mathrm{ kg{}$ on a $30^\circ$ incline and $m_B = 5 \mathrm{ kg{}$ hanging
+vertically, are Connected by a light inextensible string over a smooth pulley at the top of the
+incline. The Coefficient of friction between $m_A$ and the incline is $\mu = 0.2$. Find the
+acceleration of the System and the tension in the string. Take $g = 9.8 \mathrm{ m/s{}^2$.
 
 **Step 1: Identify the direction of motion**
 
@@ -676,15 +677,13 @@ $$-23.4 = 13a \implies a = -1.8 \mathrm{ m/s{}^2$$
 This is also negative. Neither direction produces positive acceleration, so the system remains in
 Equilibrium. The static friction adjusts to prevent motion.
 
-**Correct answer:** The system is in equilibrium. The tension equals $m_B g = 49 \mathrm{ N{}$ (since
-The string supports $m_B$ in equilibrium), and the static friction on $m_A$ adjusts to balance the
-Net force.
+**Correct answer:** The system is in equilibrium. The tension equals $m_B g = 49 \mathrm{ N{}$
+(since The string supports $m_B$ in equilibrium), and the static friction on $m_A$ adjusts to
+balance the Net force.
 
-:::warning
-Always check whether motion actually occurs before applying the equations of motion. If
+:::warning Always check whether motion actually occurs before applying the equations of motion. If
 The net force in every possible direction is negative (accounting for the maximum static friction),
-The system remains stationary.
-:::
+The system remains stationary. :::
 
 ## Common Pitfalls Extended
 
@@ -711,22 +710,23 @@ Surface with no vertical acceleration.
 ## Additional Practice Problems
 
 21. A $0.5 \mathrm{ kg{}$ ball is thrown horizontally from a cliff $40 \mathrm{ m{}$ high at
- $15 \mathrm{ m/s{}$. Calculate (a) the time to hit the ground, (b) the vertical velocity at impact,
- (c) the total speed at impact, and (d) the horizontal distance from the base of the cliff.
+    $15 \mathrm{ m/s{}$. Calculate (a) the time to hit the ground, (b) the vertical velocity at
+    impact, (c) the total speed at impact, and (d) the horizontal distance from the base of the
+    cliff.
 
-22. A car of mass $1200 \mathrm{ kg{}$ travels at $20 \mathrm{ m/s{}$ on a level road. The engine provides
- a driving force of $3000 \mathrm{ N{}$ and the total resistive force is $800 \mathrm{ N{}$. Calculate
- the acceleration, the distance to reach $30 \mathrm{ m/s{}$And the power developed at
- $30 \mathrm{ m/s{}$.
+22. A car of mass $1200 \mathrm{ kg{}$ travels at $20 \mathrm{ m/s{}$ on a level road. The engine
+    provides a driving force of $3000 \mathrm{ N{}$ and the total resistive force is
+    $800 \mathrm{ N{}$. Calculate the acceleration, the distance to reach $30 \mathrm{ m/s{}$And the
+    power developed at $30 \mathrm{ m/s{}$.
 
 23. A $60 \mathrm{ kg{}$ person stands on a spring scale in a lift. Calculate the scale reading when
- the lift (a) accelerates upward at $2 \mathrm{ m/s{}^2$(b) travels at constant velocity, (c)
- decelerates at $3 \mathrm{ m/s{}^2$ while moving upward, and (d) is in free fall.
+    the lift (a) accelerates upward at $2 \mathrm{ m/s{}^2$(b) travels at constant velocity, (c)
+    decelerates at $3 \mathrm{ m/s{}^2$ while moving upward, and (d) is in free fall.
 
-24. Two particles of masses $0.3 \mathrm{ kg{}$ and $0.5 \mathrm{ kg{}$ approach each other with speeds
- $4 \mathrm{ m/s{}$ and $2 \mathrm{ m/s{}$ respectively. After a perfectly elastic head-on collision,
- calculate the velocities of both particles.
+24. Two particles of masses $0.3 \mathrm{ kg{}$ and $0.5 \mathrm{ kg{}$ approach each other with
+    speeds $4 \mathrm{ m/s{}$ and $2 \mathrm{ m/s{}$ respectively. After a perfectly elastic head-on
+    collision, calculate the velocities of both particles.
 
 25. Derive an expression for the period of a simple pendulum using energy considerations. A pendulum
- of length $1.5 \mathrm{ m{}$ is displaced $10^\circ$ from the vertical. Calculate the maximum speed of
- the bob and the period of oscillation.
+    of length $1.5 \mathrm{ m{}$ is displaced $10^\circ$ from the vertical. Calculate the maximum
+    speed of the bob and the period of oscillation.

@@ -1,6 +1,8 @@
 ---
 title: Control Flow
-description: "Control Flow — if/else as Expression; when Expression; Basic Matching; Exhaustiveness with worked examples and exam-style questions."
+description:
+  'Control Flow — if/else as Expression; when Expression; Basic Matching; Exhaustiveness with worked
+  examples and exam-style questions.'
 slug: control-flow
 date: 2026-04-18
 tags:
@@ -8,6 +10,7 @@ tags:
 categories:
   - Kotlin
 ---
+
 ## if/else as Expression
 
 In Kotlin, `if` is an expression -- it returns a value. There is no ternary operator because
@@ -298,9 +301,9 @@ val result: String = fail("unreachable")  // type-checks because Nothing is a su
 ## Common Pitfalls
 
 - \*\* Forgetting that `when` used as an expression must be exhaustive. If you add a new case to a
- sealed class or enum, the compiler will flag all non-exhaustive `when` expressions.
+  sealed class or enum, the compiler will flag all non-exhaustive `when` expressions.
 - \*\* Using `return` inside a lambda expecting to return from the lambda. Use labeled returns or
- restructure with standard library functions.
+  restructure with standard library functions.
 - \*\* Creating ranges with `..` that are accidentally empty. `10..1` is empty; use `10 downTo 1`.
 - \*\* Assuming `for (i in range)` mutates `i`. The loop variable is a new `val` on each iteration.
 

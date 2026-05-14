@@ -1,6 +1,8 @@
 ---
 title: Generics
-description: "Generics — Type Parameters; Constraints; Built-in Constraints; Custom Constraints with worked examples and exam-style questions."
+description:
+  'Generics — Type Parameters; Constraints; Built-in Constraints; Custom Constraints with worked
+  examples and exam-style questions.'
 slug: generics
 date: 2026-04-18
 tags:
@@ -8,6 +10,7 @@ tags:
 categories:
   - Go
 ---
+
 ## Introduction
 
 Go 1.18 (released March 2022) added generics via type parameters. Generics allow you to write
@@ -105,8 +108,8 @@ func Sum[T Number](nums []T) T {
 }
 ```
 
-The `~` token means "the underlying type must be." A type `MyInt int` has underlying type `int`So
-It satisfies `~int`.
+The `~` token means "the underlying type must be." A type `MyInt int` has underlying type `int`So It
+satisfies `~int`.
 
 ### Methods in Constraints
 
@@ -146,14 +149,14 @@ func Clamp[T constraints.Ordered](v, lo, hi T) T {
 
 Common constraints:
 
-| Constraint | Types Allowed |
-| ---------------------- | -------------------------------------------------------------- |
-| `constraints.Signed` | `~int``~int8``~int16``~int32``~int64` |
+| Constraint             | Types Allowed                                        |
+| ---------------------- | ---------------------------------------------------- |
+| `constraints.Signed`   | `~int``~int8``~int16``~int32``~int64`                |
 | `constraints.Unsigned` | `~uint``~uint8``~uint16``~uint32``~uint64``~uintptr` |
-| `constraints.Integer` | All signed and unsigned integers |
-| `constraints.Float` | `~float32``~float64` |
-| `constraints.Ordered` | All integers, floats, and `~string` |
-| `constraints.Complex` | `~complex64``~complex128` |
+| `constraints.Integer`  | All signed and unsigned integers                     |
+| `constraints.Float`    | `~float32``~float64`                                 |
+| `constraints.Ordered`  | All integers, floats, and `~string`                  |
+| `constraints.Complex`  | `~complex64``~complex128`                            |
 
 ## Generic Types
 
@@ -276,35 +279,35 @@ Specialization of the generic function or type. There is no boxing or type erasu
 ## Limitations
 
 1. **No specialization.** You cannot provide different implementations for different types. Generic
- code is the same for all type arguments.
+   code is the same for all type arguments.
 
 2. **No operator methods in constraints.** You cannot require that a type support `+` beyond the
- built-in types. You cannot write a constraint that says "any type with a `+` operator."
+   built-in types. You cannot write a constraint that says "any type with a `+` operator."
 
 3. **No variadic type parameters.** Type parameter lists must be fixed-length.
 
 4. **No type parameter defaults.** Each type parameter must be specified or inferred.
 
 5. **Methods cannot add type parameters.** Only the type's own type parameters are available in
- methods.
+   methods.
 
 ## Common Pitfalls
 
 1. **Using `any` as a constraint when a narrower constraint exists.** `any` allows any type,
- including types that do not support the operations your function performs. Use `comparable`
- `cmp.Ordered`Or a custom constraint to enforce requirements at compile time.
+   including types that do not support the operations your function performs. Use `comparable`
+   `cmp.Ordered`Or a custom constraint to enforce requirements at compile time.
 
 2. **Forgetting `comparable` for map keys and set elements.** If a generic type uses a value as a
- map key, the constraint must include `comparable`.
+   map key, the constraint must include `comparable`.
 
 3. **Confusing `~T` with `T`.** `~int` matches `int` and any type with underlying type `int` (e.g.,
- `type MyInt int`). `int` matches only `int` exactly.
+   `type MyInt int`). `int` matches only `int` exactly.
 
 4. **Overusing generics.** Not every function needs to be generic. If a function only works with one
- or two concrete types, concrete implementations are clearer and often more efficient.
+   or two concrete types, concrete implementations are clearer and often more efficient.
 
 5. **Generic type assertion ambiguity.** When type parameters appear in the same signature position
- as concrete types, inference may fail. Specify type arguments explicitly in such cases.
+   as concrete types, inference may fail. Specify type arguments explicitly in such cases.
 
 ## Summary
 

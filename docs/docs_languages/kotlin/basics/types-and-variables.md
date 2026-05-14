@@ -1,6 +1,8 @@
 ---
 title: Types and Variables
-description: "Types and Variables — val and var; Basic Types; Implicit Conversions; Type Inference with worked examples and exam-style questions."
+description:
+  'Types and Variables — val and var; Basic Types; Implicit Conversions; Type Inference with worked
+  examples and exam-style questions.'
 slug: types-and-variables
 date: 2026-04-18
 tags:
@@ -8,6 +10,7 @@ tags:
 categories:
   - Kotlin
 ---
+
 ## val and var
 
 `val` declares a read-only variable (assigned once). `var` declares a mutable variable.
@@ -35,16 +38,16 @@ Prefer `val` everywhere. Use `var` only when the variable genuinely must be reas
 Kotlin represents all types as objects at the language level. The compiler maps them to JVM
 Primitives when possible (no boxing overhead).
 
-| Kotlin Type | JVM Type | Size (bits) |
+| Kotlin Type | JVM Type  | Size (bits) |
 | ----------- | --------- | ----------: |
-| `Byte` | `byte` | 8 |
-| `Short` | `short` | 16 |
-| `Int` | `int` | 32 |
-| `Long` | `long` | 64 |
-| `Float` | `float` | 32 |
-| `Double` | `double` | 64 |
-| `Boolean` | `boolean` | 1 |
-| `Char` | `char` | 16 |
+| `Byte`      | `byte`    |           8 |
+| `Short`     | `short`   |          16 |
+| `Int`       | `int`     |          32 |
+| `Long`      | `long`    |          64 |
+| `Float`     | `float`   |          32 |
+| `Double`    | `double`  |          64 |
+| `Boolean`   | `boolean` |           1 |
+| `Char`      | `char`    |          16 |
 
 Numeric literals support underscores for readability:
 
@@ -262,13 +265,13 @@ Type aliases are useful for domain modeling and reducing verbosity in complex ge
 ## Common Pitfalls
 
 - \*\* Using `!!` liberally. Each `!!` is a potential runtime crash. Prefer safe calls, Elvis
- operator, or early returns.
+  operator, or early returns.
 - \*\* Forgetting that `val` does not imply immutability of the referenced object.
- `val list = mutableListOf(1, 2)` is a mutable list behind a read-only reference.
+  `val list = mutableListOf(1, 2)` is a mutable list behind a read-only reference.
 - \*\* Confusing nullable collections with collections of nullable elements. `List<Int>?` vs
- `List<Int?>` are fundamentally different types.
+  `List<Int?>` are fundamentally different types.
 - \*\* Using `lateinit` for properties that can be initialized in the constructor. If the value is
- known at construction time, pass it as a constructor parameter.
+  known at construction time, pass it as a constructor parameter.
 
 ## Summary
 

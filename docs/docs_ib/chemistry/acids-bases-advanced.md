@@ -1,8 +1,11 @@
 ---
 title: Acids and Bases (Advanced)
-description: "Rigorous IB chemistry notes covering Acids and Bases (Advanced). Includes definitions, derivations, worked examples, and exam-style problems."
+description:
+  'Rigorous IB chemistry notes covering Acids and Bases (Advanced). Includes definitions,
+  derivations, worked examples, and exam-style problems.'
 slug: acids-bases-advanced
 ---
+
 ## 1. Advanced pH Calculations
 
 ### Strong Acids and Bases
@@ -101,7 +104,7 @@ $K_{a2} = 1.2 \times 10^{-2}$.
 
 - The 5% rule: if $x/c_0 \gt 5\%$Use the quadratic formula.
 - For very dilute strong acids ($c_0 \lt 10^{-6}\mathrm{ M}$), the contribution of water's
- autoionization ($[\mathrm{H}^+] = 10^{-7}\mathrm{ M}$) becomes significant.
+  autoionization ($[\mathrm{H}^+] = 10^{-7}\mathrm{ M}$) becomes significant.
 - $\mathrm{pOH} = 14 - \mathrm{pH}$ only holds at $25\degree\mathrm{C}$.
 
 ---
@@ -197,11 +200,11 @@ Would give $\mathrm{pH} = 2.00$.
 ### Common Pitfalls
 
 - A buffer cannot withstand addition of large amounts of strong acid or base — it has finite
- capacity.
+  capacity.
 - The Henderson-Hasselbalch equation assumes concentrations equal activities (valid for dilute
- solutions).
+  solutions).
 - $\mathrm{pH} = \mathrm{p}K_a$ does not mean the solution is neutral; it means the acid and
- conjugate base are present in equal amounts.
+  conjugate base are present in equal amounts.
 
 ---
 
@@ -218,11 +221,11 @@ $$
 
 The observed colour depends on the ratio $[\mathrm{In}^-]/[\mathrm{HIn}]$:
 
-| Condition | Dominant species | Colour observed |
+| Condition                                       | Dominant species | Colour observed |
 | ----------------------------------------------- | ---------------- | --------------- |
-| $\mathrm{pH} \ll \mathrm{p}K_{\mathrm{In}}$ | $\mathrm{HIn}$ | Acid colour |
-| $\mathrm{pH} \approx \mathrm{p}K_{\mathrm{In}}$ | Both present | Transition |
-| $\mathrm{pH} \gg \mathrm{p}K_{\mathrm{In}}$ | $\mathrm{In}^-$ | Base colour |
+| $\mathrm{pH} \ll \mathrm{p}K_{\mathrm{In}}$     | $\mathrm{HIn}$   | Acid colour     |
+| $\mathrm{pH} \approx \mathrm{p}K_{\mathrm{In}}$ | Both present     | Transition      |
+| $\mathrm{pH} \gg \mathrm{p}K_{\mathrm{In}}$     | $\mathrm{In}^-$  | Base colour     |
 
 ### Effective Range
 
@@ -236,20 +239,20 @@ $$
 
 The indicator's transition range should overlap with the equivalence point of the titration.
 
-| Titration type | Equivalence point pH | Suitable indicator |
+| Titration type           | Equivalence point pH | Suitable indicator    |
 | ------------------------ | -------------------- | --------------------- |
-| Strong acid--strong base | $\mathrm{pH} = 7$ | Bromothymol blue |
-| Strong acid--weak base | $\mathrm{pH} \lt 7$ | Methyl orange |
-| Weak acid--strong base | $\mathrm{pH} \gt 7$ | Phenolphthalein |
-| Weak acid--weak base | No sharp change | No suitable indicator |
+| Strong acid--strong base | $\mathrm{pH} = 7$    | Bromothymol blue      |
+| Strong acid--weak base   | $\mathrm{pH} \lt 7$  | Methyl orange         |
+| Weak acid--strong base   | $\mathrm{pH} \gt 7$  | Phenolphthalein       |
+| Weak acid--weak base     | No sharp change      | No suitable indicator |
 
 ### Common Indicators
 
-| Indicator | $\mathrm{pH}$ range | Acid colour | Base colour |
+| Indicator        | $\mathrm{pH}$ range | Acid colour | Base colour |
 | ---------------- | ------------------- | ----------- | ----------- |
-| Methyl orange | $3.1$--$4.4$ | Red | Yellow |
-| Bromothymol blue | $6.0$--$7.6$ | Yellow | Blue |
-| Phenolphthalein | $8.3$--$10.0$ | Colourless | Pink |
+| Methyl orange    | $3.1$--$4.4$        | Red         | Yellow      |
+| Bromothymol blue | $6.0$--$7.6$        | Yellow      | Blue        |
+| Phenolphthalein  | $8.3$--$10.0$       | Colourless  | Pink        |
 
 ---
 
@@ -287,18 +290,18 @@ $$
 
 ### Environmental Effects
 
-| Effect | Mechanism |
-| ------------------ | --------------------------------------------------------------------------- |
+| Effect             | Mechanism                                                               |
+| ------------------ | ----------------------------------------------------------------------- |
 | Soil acidification | Leaches $\mathrm{Ca}^{2+}$$\mathrm{Mg}^{2+}$Releases $\mathrm{Al}^{3+}$ |
-| Lake acidification | Reduces biodiversity, mobilises toxic $\mathrm{Al}^{3+}$ |
-| Plant damage | Damages leaves, inhibits root growth |
-| Building corrosion | $\mathrm{CaCO}_3$ (limestone/marble) reacts with acid |
-| Respiratory issues | Fine sulfate/nitrate particles irritate lungs |
+| Lake acidification | Reduces biodiversity, mobilises toxic $\mathrm{Al}^{3+}$                |
+| Plant damage       | Damages leaves, inhibits root growth                                    |
+| Building corrosion | $\mathrm{CaCO}_3$ (limestone/marble) reacts with acid                   |
+| Respiratory issues | Fine sulfate/nitrate particles irritate lungs                           |
 
 ### Mitigation
 
 - Flue gas desulfurisation (FGD): $\mathrm{SO}_2$ removed by reaction with $\mathrm{CaO}$ or
- $\mathrm{CaCO}_3$.
+  $\mathrm{CaCO}_3$.
 - Catalytic converters: reduce $\mathrm{NO}_x$ emissions.
 - Switching to low-sulfur fuels or renewable energy.
 
@@ -322,14 +325,14 @@ $K_{sp}$ is the equilibrium constant for the dissolution of a solid. It is tempe
 
 ### Common $K_{sp}$ Values
 
-| Compound | $K_{sp}$ |
+| Compound            | $K_{sp}$              |
 | ------------------- | --------------------- |
-| $\mathrm{AgCl}$ | $1.8 \times 10^{-10}$ |
-| $\mathrm{AgBr}$ | $5.0 \times 10^{-13}$ |
-| $\mathrm{AgI}$ | $8.3 \times 10^{-17}$ |
-| $\mathrm{BaSO}_4$ | $1.1 \times 10^{-10}$ |
-| $\mathrm{CaCO}_3$ | $3.4 \times 10^{-9}$ |
-| $\mathrm{PbI}_2$ | $7.1 \times 10^{-9}$ |
+| $\mathrm{AgCl}$     | $1.8 \times 10^{-10}$ |
+| $\mathrm{AgBr}$     | $5.0 \times 10^{-13}$ |
+| $\mathrm{AgI}$      | $8.3 \times 10^{-17}$ |
+| $\mathrm{BaSO}_4$   | $1.1 \times 10^{-10}$ |
+| $\mathrm{CaCO}_3$   | $3.4 \times 10^{-9}$  |
+| $\mathrm{PbI}_2$    | $7.1 \times 10^{-9}$  |
 | $\mathrm{Mg(OH)}_2$ | $1.8 \times 10^{-11}$ |
 
 ### Solubility Calculations
@@ -385,11 +388,11 @@ $$
 Q = [\mathrm{M}^{y+}]^x[\mathrm{A}^{x-}]^y
 $$
 
-| Condition | Result |
+| Condition      | Result                       |
 | -------------- | ---------------------------- |
 | $Q \lt K_{sp}$ | No precipitate (unsaturated) |
-| $Q = K_{sp}$ | Saturated, at equilibrium |
-| $Q \gt K_{sp}$ | Precipitate forms |
+| $Q = K_{sp}$   | Saturated, at equilibrium    |
+| $Q \gt K_{sp}$ | Precipitate forms            |
 
 ### Common Pitfalls
 
@@ -463,8 +466,8 @@ $$
 Q = (5.0 \times 10^{-5})^2 = 2.5 \times 10^{-9}
 $$
 
-Since $Q = 2.5 \times 10^{-9} \gt K_{sp} = 1.8 \times 10^{-10}$A precipitate of $\mathrm{AgCl}$
-Will form.
+Since $Q = 2.5 \times 10^{-9} \gt K_{sp} = 1.8 \times 10^{-10}$A precipitate of $\mathrm{AgCl}$ Will
+form.
 
 </details>
 
@@ -524,13 +527,15 @@ $[\mathrm{OH}^-]$ and therefore increasing $[\mathrm{H}^+]$Which lowers the $\ma
 
 **Worked Example: pH of a very dilute strong acid**
 
-Calculate the $\mathrm{pH}$ of $1.0 \times 10^{-8}\mathrm{ M}$ $\mathrm{HCl}$ at $25\degree\mathrm{C}$.
+Calculate the $\mathrm{pH}$ of $1.0 \times 10^{-8}\mathrm{ M}$ $\mathrm{HCl}$ at
+$25\degree\mathrm{C}$.
 
 <details>
 <summary>Solution</summary>
 
-At this concentration, the contribution from water autoionization ($[\mathrm{H}^+] = 10^{-7}\mathrm{ M}$) is
-Significant and cannot be ignored. Let $x = [\mathrm{OH}^-]$ from water autoionization:
+At this concentration, the contribution from water autoionization
+($[\mathrm{H}^+] = 10^{-7}\mathrm{ M}$) is Significant and cannot be ignored. Let
+$x = [\mathrm{OH}^-]$ from water autoionization:
 
 $$[\mathrm{H}^+]_{\mathrm{total}} = 1.0 \times 10^{-8} + x$$
 
@@ -546,9 +551,9 @@ $$[\mathrm{H}^+]_{\mathrm{total}} = 1.0 \times 10^{-8} + 9.5 \times 10^{-8} = 1.
 
 $$\mathrm{pH} = -\log(1.05 \times 10^{-7}) = 6.98$$
 
-The $\mathrm{pH}$ is close to 7 but slightly acidic, as expected for a very dilute strong acid. Ignoring
-Water autoionization would give the incorrect result $\mathrm{pH} = 8.00$ (a basic $\mathrm{pH}$ from
-Adding acid), which violates chemical intuition.
+The $\mathrm{pH}$ is close to 7 but slightly acidic, as expected for a very dilute strong acid.
+Ignoring Water autoionization would give the incorrect result $\mathrm{pH} = 8.00$ (a basic
+$\mathrm{pH}$ from Adding acid), which violates chemical intuition.
 
 </details>
 
@@ -583,19 +588,20 @@ $$\mathrm{pOH} = -\log(5.27 \times 10^{-6}) = 5.28$$
 
 $$\mathrm{pH} = 14.00 - 5.28 = 8.72$$
 
-The equivalence point is basic because the conjugate base of a weak acid is itself a weak base. Phenolphthalein
-(transition range 8.3--10.0) is a suitable indicator. Bromothymol blue (6.0--7.6) would change colour
-Before reaching the equivalence point and would give a systematically low titre reading.
+The equivalence point is basic because the conjugate base of a weak acid is itself a weak base.
+Phenolphthalein (transition range 8.3--10.0) is a suitable indicator. Bromothymol blue (6.0--7.6)
+would change colour Before reaching the equivalence point and would give a systematically low titre
+reading.
 
 </details>
 
 **Worked Example: Selective precipitation using $K_{sp}$**
 
-A solution contains $0.020\mathrm{ M}$ $\mathrm{Cl}^-$ and $0.020\mathrm{ M}$ $\mathrm{CrO}_4^{2-}$. Solid
-$\mathrm{AgNO}_3$ is added gradually. $K_{sp}(\mathrm{AgCl}) = 1.8 \times 10^{-10}$
-$K_{sp}(\mathrm{Ag}_2\mathrm{CrO}_4) = 1.1 \times 10^{-12}$. Determine which salt precipitates first, the
-$[\mathrm{Ag}^+]$ at which precipitation begins, and the $[\mathrm{Ag}^+]$ at which the second salt begins
-To precipitate.
+A solution contains $0.020\mathrm{ M}$ $\mathrm{Cl}^-$ and $0.020\mathrm{ M}$ $\mathrm{CrO}_4^{2-}$.
+Solid $\mathrm{AgNO}_3$ is added gradually. $K_{sp}(\mathrm{AgCl}) = 1.8 \times 10^{-10}$
+$K_{sp}(\mathrm{Ag}_2\mathrm{CrO}_4) = 1.1 \times 10^{-12}$. Determine which salt precipitates
+first, the $[\mathrm{Ag}^+]$ at which precipitation begins, and the $[\mathrm{Ag}^+]$ at which the
+second salt begins To precipitate.
 
 <details>
 <summary>Solution</summary>
@@ -612,16 +618,18 @@ $$[\mathrm{Ag}^+] = \sqrt{\frac{K_{sp}}{[\mathrm{CrO}_4^{2-}]}} = \sqrt{\frac{1.
 
 **Step 2: Identify which precipitates first.**
 
-$\mathrm{AgCl}$ precipitates first since it requires a lower $[\mathrm{Ag}^+]$ ($9.0 \times 10^{-9}\mathrm{ M}$
-Vs $7.4 \times 10^{-6}\mathrm{ M}$).
+$\mathrm{AgCl}$ precipitates first since it requires a lower $[\mathrm{Ag}^+]$
+($9.0 \times 10^{-9}\mathrm{ M}$ Vs $7.4 \times 10^{-6}\mathrm{ M}$).
 
-**Step 3: Calculate $[\mathrm{Cl}^-]$ remaining when $\mathrm{Ag}_2\mathrm{CrO}_4$ begins to precipitate.**
+**Step 3: Calculate $[\mathrm{Cl}^-]$ remaining when $\mathrm{Ag}_2\mathrm{CrO}_4$ begins to
+precipitate.**
 
 When $[\mathrm{Ag}^+] = 7.4 \times 10^{-6}\mathrm{ M}$:
 
 $$[\mathrm{Cl}^-]_{\mathrm{remaining}} = \frac{K_{sp}}{[\mathrm{Ag}^+]} = \frac{1.8 \times 10^{-10}}{7.4 \times 10^{-6}} = 2.4 \times 10^{-5}\mathrm{ M}$$
 
-Fraction of $\mathrm{Cl}^-$ precipitated: $\dfrac{0.020 - 2.4 \times 10^{-5}}{0.020} \times 100\% = 99.9\%$
+Fraction of $\mathrm{Cl}^-$ precipitated:
+$\dfrac{0.020 - 2.4 \times 10^{-5}}{0.020} \times 100\% = 99.9\%$
 
 This analysis underpins Mohr's method for argentometric determination of chloride: the red colour of
 $\mathrm{Ag}_2\mathrm{CrO}_4$ appears only after virtually all $\mathrm{Cl}^-$ has been removed.
@@ -676,7 +684,8 @@ Suitable indicators.
 
 **First equivalence point ($25.0\mathrm{ mL}$ $\mathrm{NaOH}$ added):**
 
-All $\mathrm{H}_3\mathrm{PO}_4$ is converted to $\mathrm{H}_2\mathrm{PO}_4^-$ (an amphoteric species).
+All $\mathrm{H}_3\mathrm{PO}_4$ is converted to $\mathrm{H}_2\mathrm{PO}_4^-$ (an amphoteric
+species).
 
 $$[\mathrm{H}_2\mathrm{PO}_4^-] = \frac{0.00250}{0.0500} = 0.0500\mathrm{ M}$$
 
@@ -706,108 +715,114 @@ A suitable indicator: phenolphthalein (8.3--10.0).
 
 ## Common Pitfalls
 
-- **Assuming complete dissociation for all diprotic acids**: $\mathrm{H}_2\mathrm{SO}_4$ has a complete
- first dissociation but a partial second ($K_{a2} = 1.2 \times 10^{-2}$), so
- $[\mathrm{H}^+] \neq 2[\mathrm{acid}]$. For $\mathrm{H}_2\mathrm{CO}_3$Both dissociation steps are
- weak. Always check the magnitude of each $K_a$ before making simplifying assumptions.
+- **Assuming complete dissociation for all diprotic acids**: $\mathrm{H}_2\mathrm{SO}_4$ has a
+  complete first dissociation but a partial second ($K_{a2} = 1.2 \times 10^{-2}$), so
+  $[\mathrm{H}^+] \neq 2[\mathrm{acid}]$. For $\mathrm{H}_2\mathrm{CO}_3$Both dissociation steps are
+  weak. Always check the magnitude of each $K_a$ before making simplifying assumptions.
 
-- **Using $\mathrm{pOH} = 14 - \mathrm{pH}$ without specifying temperature**: $K_w = 1.0 \times 10^{-14}$
- only at $25\degree\mathrm{C}$. At $37\degree\mathrm{C}$$K_w \approx 2.4 \times 10^{-14}$So
- $\mathrm{pH} + \mathrm{pOH} = 13.62$. Always state the temperature assumption explicitly.
+- **Using $\mathrm{pOH} = 14 - \mathrm{pH}$ without specifying temperature**:
+  $K_w = 1.0 \times 10^{-14}$ only at $25\degree\mathrm{C}$. At
+  $37\degree\mathrm{C}$$K_w \approx 2.4 \times 10^{-14}$So $\mathrm{pH} + \mathrm{pOH} = 13.62$.
+  Always state the temperature assumption explicitly.
 
-- **Applying Henderson-Hasselbalch to strong acid--base mixtures**: The equation requires a weak acid
- and its conjugate base. For a strong acid titrated with a strong base, calculate the excess
- $[\mathrm{H}^+]$ or $[\mathrm{OH}^-]$ directly from stoichiometry.
+- **Applying Henderson-Hasselbalch to strong acid--base mixtures**: The equation requires a weak
+  acid and its conjugate base. For a strong acid titrated with a strong base, calculate the excess
+  $[\mathrm{H}^+]$ or $[\mathrm{OH}^-]$ directly from stoichiometry.
 
 - **Forgetting dilution when mixing buffer components**: When two solutions are combined to make a
- buffer, the total volume changes. Convert all quantities to moles first, then recalculate
- concentrations in the combined volume before applying the Henderson-Hasselbalch equation.
+  buffer, the total volume changes. Convert all quantities to moles first, then recalculate
+  concentrations in the combined volume before applying the Henderson-Hasselbalch equation.
 
-- **Comparing $K_{sp}$ values across different stoichiometries**: $K_{sp}(\mathrm{AgCl}) = 1.8 \times 10^{-10}$
- and $K_{sp}(\mathrm{Ag}_2\mathrm{CrO}_4) = 1.1 \times 10^{-12}$But $\mathrm{Ag}_2\mathrm{CrO}_4$ is
- more soluble in water because its $K_{sp}$ expression contains $[\mathrm{Ag}^+]^2$. Always calculate
- molar solubility from $K_{sp}$ before comparing.
+- **Comparing $K_{sp}$ values across different stoichiometries**:
+  $K_{sp}(\mathrm{AgCl}) = 1.8 \times 10^{-10}$ and
+  $K_{sp}(\mathrm{Ag}_2\mathrm{CrO}_4) = 1.1 \times 10^{-12}$But $\mathrm{Ag}_2\mathrm{CrO}_4$ is
+  more soluble in water because its $K_{sp}$ expression contains $[\mathrm{Ag}^+]^2$. Always
+  calculate molar solubility from $K_{sp}$ before comparing.
 
-- **Ignoring water autoionization for dilute solutions**: When the calculated $[\mathrm{H}^+]$ from the
- acid or base alone is below $10^{-6}\mathrm{ M}$The contribution from water ($10^{-7}\mathrm{ M}$) is
- comparable and must be included via the full quadratic.
+- **Ignoring water autoionization for dilute solutions**: When the calculated $[\mathrm{H}^+]$ from
+  the acid or base alone is below $10^{-6}\mathrm{ M}$The contribution from water
+  ($10^{-7}\mathrm{ M}$) is comparable and must be included via the full quadratic.
 
-- **Confusing buffer capacity with buffer range**: Buffer capacity (total moles of acid or base that can
- be absorbed) depends on the absolute concentrations of the buffer components, not their ratio. A
- $0.01\mathrm{ M}$ buffer at $\mathrm{pH} = \mathrm{p}K_a$ has far less capacity than a $1.0\mathrm{ M}$
- buffer at the same $\mathrm{pH}$.
+- **Confusing buffer capacity with buffer range**: Buffer capacity (total moles of acid or base that
+  can be absorbed) depends on the absolute concentrations of the buffer components, not their ratio.
+  A $0.01\mathrm{ M}$ buffer at $\mathrm{pH} = \mathrm{p}K_a$ has far less capacity than a
+  $1.0\mathrm{ M}$ buffer at the same $\mathrm{pH}$.
 
 - **Assuming the 5% rule is always valid**: The approximation $[\mathrm{HA}] \approx c_0$ fails when
- $K_a$ is large relative to $c_0$. Always verify by computing
- $x/c_0 \times 100\%$. If it exceeds 5%, solve the full quadratic.
+  $K_a$ is large relative to $c_0$. Always verify by computing $x/c_0 \times 100\%$. If it exceeds
+  5%, solve the full quadratic.
 
 - **Using the wrong $\mathrm{p}K_a$ in Henderson-Hasselbalch**: When working with a weak base (e.g.,
- $\mathrm{NH}_3$), use the $\mathrm{p}K_a$ of its conjugate acid ($\mathrm{NH}_4^+$), not the
- $\mathrm{p}K_b$ of the base itself. The relationship is
- $\mathrm{p}K_a + \mathrm{p}K_b = 14.00$.
+  $\mathrm{NH}_3$), use the $\mathrm{p}K_a$ of its conjugate acid ($\mathrm{NH}_4^+$), not the
+  $\mathrm{p}K_b$ of the base itself. The relationship is $\mathrm{p}K_a + \mathrm{p}K_b = 14.00$.
 
 - **Assuming the common ion effect changes $K_{sp}$**: Adding a common ion shifts the equilibrium
- position (decreasing solubility), but $K_{sp}$ itself is a thermodynamic constant that depends only
- on temperature.
+  position (decreasing solubility), but $K_{sp}$ itself is a thermodynamic constant that depends
+  only on temperature.
 
 ---
 
 ## Exam-Style Problems
 
 1. Calculate the $\mathrm{pH}$ of the solution formed when $15.0\mathrm{ mL}$ of $0.100\mathrm{ M}$
- $\mathrm{H}_2\mathrm{SO}_4$ is added to $35.0\mathrm{ mL}$ of $0.100\mathrm{ M}$ $\mathrm{NaOH}$ at
- $25\degree\mathrm{C}$. ($K_{a2}$ of $\mathrm{HSO}_4^-$ = $1.2 \times 10^{-2}$.) State all
- assumptions and justify their validity. **[Medium]**
+   $\mathrm{H}_2\mathrm{SO}_4$ is added to $35.0\mathrm{ mL}$ of $0.100\mathrm{ M}$ $\mathrm{NaOH}$
+   at $25\degree\mathrm{C}$. ($K_{a2}$ of $\mathrm{HSO}_4^-$ = $1.2 \times 10^{-2}$.) State all
+   assumptions and justify their validity. **[Medium]**
 
 2. A buffer is prepared by dissolving $4.10\mathrm{ g}$ of sodium ethanoate
- ($\mathrm{CH}_3\mathrm{COONa}$$M = 82.03\mathrm{ g/mol}$) in $250\mathrm{ mL}$ of
- $0.200\mathrm{ M}$ ethanoic acid ($\mathrm{p}K_a = 4.76$). (a) Calculate the buffer $\mathrm{pH}$.
- (b) Calculate the new $\mathrm{pH}$ after adding $5.0\mathrm{ mL}$ of $0.100\mathrm{ M}$
- $\mathrm{HCl}$. (c) Calculate the percentage change in $\mathrm{pH}$ and comment on the
- effectiveness of the buffer. **[Medium]**
+   ($\mathrm{CH}_3\mathrm{COONa}$$M = 82.03\mathrm{ g/mol}$) in $250\mathrm{ mL}$ of
+   $0.200\mathrm{ M}$ ethanoic acid ($\mathrm{p}K_a = 4.76$). (a) Calculate the buffer
+   $\mathrm{pH}$. (b) Calculate the new $\mathrm{pH}$ after adding $5.0\mathrm{ mL}$ of
+   $0.100\mathrm{ M}$ $\mathrm{HCl}$. (c) Calculate the percentage change in $\mathrm{pH}$ and
+   comment on the effectiveness of the buffer. **[Medium]**
 
 3. Will a precipitate form when $25.0\mathrm{ mL}$ of $2.0 \times 10^{-4}\mathrm{ M}$
- $\mathrm{Pb}(\mathrm{NO}_3)_2$ is mixed with $25.0\mathrm{ mL}$ of $1.0 \times 10^{-3}\mathrm{ M}$
- $\mathrm{NaI}$? $K_{sp}(\mathrm{PbI}_2) = 7.1 \times 10^{-9}$. If a precipitate forms, calculate
- $[\mathrm{Pb}^{2+}]$ and $[\mathrm{I}^-]$ remaining at equilibrium. **[Hard]**
+   $\mathrm{Pb}(\mathrm{NO}_3)_2$ is mixed with $25.0\mathrm{ mL}$ of
+   $1.0 \times 10^{-3}\mathrm{ M}$ $\mathrm{NaI}$? $K_{sp}(\mathrm{PbI}_2) = 7.1 \times 10^{-9}$. If
+   a precipitate forms, calculate $[\mathrm{Pb}^{2+}]$ and $[\mathrm{I}^-]$ remaining at
+   equilibrium. **[Hard]**
 
 4. $20.0\mathrm{ mL}$ of $0.150\mathrm{ M}$ $\mathrm{NH}_3$ ($K_b = 1.8 \times 10^{-5}$) is titrated
- with $0.150\mathrm{ M}$ $\mathrm{HCl}$. Calculate the $\mathrm{pH}$ at each of the following
- volumes of $\mathrm{HCl}$ added: (a) $0.0\mathrm{ mL}$(b) $10.0\mathrm{ mL}$(c) $20.0\mathrm{ mL}$
- (equivalence point), (d) $25.0\mathrm{ mL}$. Sketch the approximate titration curve and label the
- buffer region. **[Hard]**
+   with $0.150\mathrm{ M}$ $\mathrm{HCl}$. Calculate the $\mathrm{pH}$ at each of the following
+   volumes of $\mathrm{HCl}$ added: (a) $0.0\mathrm{ mL}$(b) $10.0\mathrm{ mL}$(c)
+   $20.0\mathrm{ mL}$ (equivalence point), (d) $25.0\mathrm{ mL}$. Sketch the approximate titration
+   curve and label the buffer region. **[Hard]**
 
 5. The solubility of $\mathrm{CaF}_2$ in pure water is $2.15 \times 10^{-4}\mathrm{ M}$ at
- $25\degree\mathrm{C}$. (a) Calculate $K_{sp}$. (b) Calculate the solubility of $\mathrm{CaF}_2$ in
- $0.050\mathrm{ M}$ $\mathrm{CaCl}_2$. (c) Determine the maximum concentration of $\mathrm{NaF}$
- that can coexist with $0.010\mathrm{ M}$ $\mathrm{CaCl}_2$ without precipitation. **[Medium]**
+   $25\degree\mathrm{C}$. (a) Calculate $K_{sp}$. (b) Calculate the solubility of $\mathrm{CaF}_2$
+   in $0.050\mathrm{ M}$ $\mathrm{CaCl}_2$. (c) Determine the maximum concentration of
+   $\mathrm{NaF}$ that can coexist with $0.010\mathrm{ M}$ $\mathrm{CaCl}_2$ without precipitation.
+   **[Medium]**
 
-6. Explain why phenolphthalein is a suitable indicator for the titration of ethanoic acid with sodium
- hydroxide, but methyl orange is not. Support your answer with a quantitative calculation of the
- equivalence point $\mathrm{pH}$ and reference to the transition ranges of both indicators.
- **[Medium]**
+6. Explain why phenolphthalein is a suitable indicator for the titration of ethanoic acid with
+   sodium hydroxide, but methyl orange is not. Support your answer with a quantitative calculation
+   of the equivalence point $\mathrm{pH}$ and reference to the transition ranges of both indicators.
+   **[Medium]**
 
 7. A student prepares a buffer by mixing $100\mathrm{ mL}$ of $0.200\mathrm{ M}$
- $\mathrm{CH}_3\mathrm{COOH}$ with $100\mathrm{ mL}$ of $0.100\mathrm{ M}$ $\mathrm{NaOH}$. (a)
- Calculate the buffer $\mathrm{pH}$. (b) Determine the maximum volume of $0.100\mathrm{ M}$
- $\mathrm{HCl}$ that can be added before the $\mathrm{pH}$ drops below $4.00$. (c) Comment on
- whether this buffer would be effective at $\mathrm{pH} = 4.00$ given the $\mathrm{p}K_a$ of
- ethanoic acid. **[Hard]**
+   $\mathrm{CH}_3\mathrm{COOH}$ with $100\mathrm{ mL}$ of $0.100\mathrm{ M}$ $\mathrm{NaOH}$. (a)
+   Calculate the buffer $\mathrm{pH}$. (b) Determine the maximum volume of $0.100\mathrm{ M}$
+   $\mathrm{HCl}$ that can be added before the $\mathrm{pH}$ drops below $4.00$. (c) Comment on
+   whether this buffer would be effective at $\mathrm{pH} = 4.00$ given the $\mathrm{p}K_a$ of
+   ethanoic acid. **[Hard]**
 
 8. An environmental scientist measures the $\mathrm{pH}$ of a lake at $4.50$. (a) Calculate
- $[\mathrm{H}^+]$ and $[\mathrm{SO}_4^{2-}]$Assuming the acidity is entirely from dissolved
- $\mathrm{H}_2\mathrm{SO}_4$ with complete dissociation of both protons. (b) Determine whether
- $\mathrm{CaSO}_4$ would precipitate if $[\mathrm{Ca}^{2+}] = 1.5 \times 10^{-3}\mathrm{ M}$.
- $K_{sp}(\mathrm{CaSO}_4) = 2.4 \times 10^{-5}$. (c) Calculate the minimum $[\mathrm{Ca}^{2+}]$
- required to initiate precipitation of $\mathrm{CaSO}_4$. **[Medium]**
+   $[\mathrm{H}^+]$ and $[\mathrm{SO}_4^{2-}]$Assuming the acidity is entirely from dissolved
+   $\mathrm{H}_2\mathrm{SO}_4$ with complete dissociation of both protons. (b) Determine whether
+   $\mathrm{CaSO}_4$ would precipitate if $[\mathrm{Ca}^{2+}] = 1.5 \times 10^{-3}\mathrm{ M}$.
+   $K_{sp}(\mathrm{CaSO}_4) = 2.4 \times 10^{-5}$. (c) Calculate the minimum $[\mathrm{Ca}^{2+}]$
+   required to initiate precipitation of $\mathrm{CaSO}_4$. **[Medium]**
 
 ---
 
 ## If You Get These Wrong, Revise:
 
-- **Equilibrium principles (Le Chatelier, $K$ expressions)** → Review [./equilibrium/equilibrium](./equilibrium/equilibrium)
-- **Stoichiometry and mole calculations** → Review [./stoichiometry/stoichiometry](./stoichiometry/stoichiometry)
-- **Uncertainty propagation in titrations** → Review [./measurement-and-data-processing](./measurement-and-data-processing)
+- **Equilibrium principles (Le Chatelier, $K$ expressions)** → Review
+  [./equilibrium/equilibrium](./equilibrium/equilibrium)
+- **Stoichiometry and mole calculations** → Review
+  [./stoichiometry/stoichiometry](./stoichiometry/stoichiometry)
+- **Uncertainty propagation in titrations** → Review
+  [./measurement-and-data-processing](./measurement-and-data-processing)
 - **Electron configurations and ion formation** → Review [./atomic-theory](./atomic-theory)
 
 ## Summary

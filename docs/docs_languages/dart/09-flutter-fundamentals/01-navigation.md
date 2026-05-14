@@ -1,6 +1,8 @@
 ---
 title: Navigation
-description: "Navigation — Navigator 1.0; Basic Push and Pop; Passing Data to a Route; Returning Data from a Route with worked examples and exam-style questions."
+description:
+  'Navigation — Navigator 1.0; Basic Push and Pop; Passing Data to a Route; Returning Data from a
+  Route with worked examples and exam-style questions.'
 date: 2026-04-05T00:00:00.000Z
 tags:
   - Dart
@@ -8,6 +10,7 @@ categories:
   - Dart
 slug: navigation
 ---
+
 # Navigation
 
 ## Navigation Overview
@@ -39,14 +42,14 @@ Explicit: every transition is triggered by a discrete function call.
 The problems with imperative navigation become apparent as an app grows:
 
 - **Global mutable state**: The navigator's route stack is global state that any widget can modify,
- making it difficult to reason about which part of the app caused a navigation event.
+  making it difficult to reason about which part of the app caused a navigation event.
 - **No single source of truth**: The current screen is determined by a sequence of push/pop calls
- scattered throughout the codebase. There is no central declaration of "what screens exist" and
- "how they connect."
+  scattered throughout the codebase. There is no central declaration of "what screens exist" and
+  "how they connect."
 - **Deep linking is bolted on**: Converting a URL like `/users/42/posts/7` into a sequence of pushes
- is manual and error-prone.
+  is manual and error-prone.
 - **Type safety**: Routes are identified by strings or builder functions, so passing the wrong
- arguments is only caught at runtime.
+  arguments is only caught at runtime.
 
 ### Declarative Navigation
 
@@ -82,11 +85,11 @@ Benefits of the declarative approach:
 
 - **Centralized route table**: Every route and its parameters are declared in one place.
 - **Deep linking is first-class**: A URL directly maps to a route — no manual push choreography
- required.
+  required.
 - **Predictable back-button behavior**: The router manages the navigation stack based on the
- declarative structure, so the back button always behaves consistently.
+  declarative structure, so the back button always behaves consistently.
 - **Testability**: Navigation logic can be tested by asserting that a given URL produces the
- expected widget tree.
+  expected widget tree.
 
 Flutter has evolved through several navigation APIs to arrive at the current best practice of using
 `go_router`A declarative routing package maintained by the Flutter team.
@@ -254,14 +257,14 @@ A `Route` has a lifecycle managed by the `Navigator`:
 Navigator 1.0 works well for simple apps but has serious limitations at scale:
 
 1. **Imperative mutations**: Any widget with a `BuildContext` can push or pop at any time, leading
- to unpredictable navigation state.
+   to unpredictable navigation state.
 2. **No deep linking**: There is no built-in way to map a URL to a stack of routes. The developer
- must manually parse the URL and perform a sequence of pushes.
+   must manually parse the URL and perform a sequence of pushes.
 3. **No type safety for arguments**: Arguments are passed as `Object?` and require runtime casting.
 4. **No route guards**: There is no declarative mechanism to protect routes (e.g., requiring
- authentication). Guards must be implemented manually at each entry point.
+   authentication). Guards must be implemented manually at each entry point.
 5. **Poor support for web**: The browser's address bar does not automatically reflect the current
- route, and back/forward button handling is manual.
+   route, and back/forward button handling is manual.
 
 ---
 
@@ -275,22 +278,22 @@ Linking, URL-based routing, and complex nested navigation patterns.
 
 Navigator 2.0 is built from four cooperating classes:
 
-1. **`RouteInformationProvider`** — Owns the current route information ( a URL string). It
- listens to platform route changes (e.g., browser URL bar) and notifies the rest of the system.
+1. **`RouteInformationProvider`** — Owns the current route information ( a URL string). It listens
+   to platform route changes (e.g., browser URL bar) and notifies the rest of the system.
 2. **`RouteInformationParser<T>`** — Converts raw route information (a string) into a typed
- configuration object `T`. This is where URL parsing happens.
+   configuration object `T`. This is where URL parsing happens.
 3. **`RouterDelegate<T>`** — The central coordinator. It receives the parsed configuration, builds
- the navigation stack, and tells the `Navigator` which pages to display. It also handles
- back-button dispatching.
+   the navigation stack, and tells the `Navigator` which pages to display. It also handles
+   back-button dispatching.
 4. **`BackButtonDispatcher`** — Intercepts the system back button (Android) or browser back button
- (web) and delegates to the `RouterDelegate`.
+   (web) and delegates to the `RouterDelegate`.
 
 ### How Navigator 2.0 Works Under the Hood
 
 The flow proceeds as follows:
 
 1. The `RouteInformationProvider` detects a route change (e.g., user taps a link, browser URL
- changes).
+   changes).
 2. It passes the raw route string to the `RouteInformationParser`.
 3. The parser converts the string into a typed configuration object.
 4. The `RouterDelegate` receives the new configuration and calls `setNewRoutePath`.
@@ -475,9 +478,9 @@ Child routes inherit their parent's path prefix. A route with `path: 'posts/:pos
 ### Key GoRoute Properties
 
 - **`path`**: The URL path pattern. Must start with `/` for top-level routes; relative paths for
- nested routes.
+  nested routes.
 - **`builder`**: Returns the widget for this route. Called with the `BuildContext` and a
- `GoRouterState`.
+  `GoRouterState`.
 - **`redirect`**: A function that can redirect to a different path. Called before the builder.
 - **`routes`**: Array of child `GoRoute` objects for nested navigation.
 
@@ -496,9 +499,9 @@ context.goNamed('userDetail', pathParameters: {'id': '42'});
 The key difference between `go` and `push`:
 
 - `go` replaces the current location. The back button will not return to the previous screen. This
- is analogous to "navigate" in web terms.
+  is analogous to "navigate" in web terms.
 - `push` adds a new location on top of the stack. The back button will return to the previous
- screen.
+  screen.
 
 ### Named Routes
 
@@ -820,9 +823,9 @@ A deep link is a URL that points to a specific resource inside a mobile app rath
 There are two types:
 
 - **App links (Android) / Universal links (iOS)**: Use `https://` URLs that are verified to belong
- to your app. If the app is installed, the OS opens it; otherwise, the URL opens in the browser.
+  to your app. If the app is installed, the OS opens it; otherwise, the URL opens in the browser.
 - **Custom URL schemes**: Use a custom scheme like `myapp://users/42`. These are simpler to set up
- but less secure (any app can register the same scheme).
+  but less secure (any app can register the same scheme).
 
 ### GoRouter Initial Location
 
@@ -1232,7 +1235,7 @@ If a redirect function returns a path that itself triggers a redirect, GoRouter 
 After approximately 5 iterations and throws. Common causes:
 
 - The login redirect sends the user to `/`Which redirects back to `/login` because the user is not
- yet authenticated (race condition with async auth state).
+  yet authenticated (race condition with async auth state).
 - Two routes redirect to each other.
 
 ### Not Calling `router.refresh()` After Auth State Changes
@@ -1273,8 +1276,8 @@ Navigator's state. If you need to preserve each tab's navigation history, use
 
 ### Missing `key` on Pages
 
-When building custom pages, always provide a unique `key` ( `state.pageKey`). Without a
-Stable key, Flutter may not properly animate transitions or may incorrectly reuse page state.
+When building custom pages, always provide a unique `key` ( `state.pageKey`). Without a Stable key,
+Flutter may not properly animate transitions or may incorrectly reuse page state.
 
 ## Summary
 

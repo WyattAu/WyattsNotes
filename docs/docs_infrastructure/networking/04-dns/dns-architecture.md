@@ -1,13 +1,16 @@
 ---
 id: dns-architecture
 title: DNS Architecture and Operations
-description: "DNS Architecture and Operations — DNS Infrastructure Components; Registrars; Registries; TLD Operators with worked examples and exam-style questions."
+description:
+  'DNS Architecture and Operations — DNS Infrastructure Components; Registrars; Registries; TLD
+  Operators with worked examples and exam-style questions.'
 slug: dns-architecture
 tags:
   - Networking
 categories:
   - Networking
 ---
+
 ## Overview
 
 DNS infrastructure is the backbone of Internet naming. Beyond the recursive resolution process
@@ -47,8 +50,8 @@ Behalf of the registrant.
 
 ### TLD Operators
 
-TLD operators run the authoritative name servers for a TLD. For `.com`Verisign runs 13 logical
-Name server clusters (a through m.gtld-servers.net) deployed as anycast instances worldwide. These
+TLD operators run the authoritative name servers for a TLD. For `.com`Verisign runs 13 logical Name
+server clusters (a through m.gtld-servers.net) deployed as anycast instances worldwide. These
 Servers respond to queries asking "where is the authoritative name server for example.com?"
 
 ### Root Servers
@@ -56,21 +59,21 @@ Servers respond to queries asking "where is the authoritative name server for ex
 The root zone (`.`) is the apex of the DNS hierarchy. ICANN coordinates the root zone, which is
 Served by 13 logical root server networks (A through M) operated by different organizations:
 
-| Label | Operator | Anycast instances |
+| Label | Operator                          | Anycast instances |
 | ----- | --------------------------------- | ----------------- |
-| A | Verisign | 100+ |
-| B | USC ISI | 6 |
-| C | Cogent Communications | 10+ |
-| D | University of Maryland | 10+ |
-| E | NASA Ames Research Center | 10+ |
-| F | Internet Systems Consortium (ISC) | 60+ |
-| G | US Department of Defense | 10+ |
-| H | US Army Research Lab | 6 |
-| I | Netnod | 50+ |
-| J | Verisign | 100+ |
-| K | RIPE NCC | 30+ |
-| L | ICANN | 20+ |
-| M | WIDE Project | 10+ |
+| A     | Verisign                          | 100+              |
+| B     | USC ISI                           | 6                 |
+| C     | Cogent Communications             | 10+               |
+| D     | University of Maryland            | 10+               |
+| E     | NASA Ames Research Center         | 10+               |
+| F     | Internet Systems Consortium (ISC) | 60+               |
+| G     | US Department of Defense          | 10+               |
+| H     | US Army Research Lab              | 6                 |
+| I     | Netnod                            | 50+               |
+| J     | Verisign                          | 100+              |
+| K     | RIPE NCC                          | 30+               |
+| L     | ICANN                             | 20+               |
+| M     | WIDE Project                      | 10+               |
 
 The "13" is a historical limit from the original DNS specification (UDP packet size constraints).
 Today, each logical root server is deployed as an anycast cluster with dozens to hundreds of
@@ -103,7 +106,7 @@ A transfer.
 Serial number formats:
 
 - **YYYYMMDDNN:** Recommended. `2024011501` = January 15, 2024, revision 01. Easy to read, prevents
- rollover confusion.
+  rollover confusion.
 - **Incremental:** Simple counter (1, 2, 3...). Easy to forget to increment.
 - **UNIX timestamp:** Seconds since epoch. Precise but hard to read.
 
@@ -139,8 +142,8 @@ dig ixfr=2024011401 example.com @ns1.example.com
 
 ### NOTIFY (RFC 1996)
 
-Without NOTIFY, slaves poll the master every `refresh` interval ( 1 hour). This means
-Changes can take up to 1 hour to propagate to slaves. NOTIFY pushes the notification immediately:
+Without NOTIFY, slaves poll the master every `refresh` interval ( 1 hour). This means Changes can
+take up to 1 hour to propagate to slaves. NOTIFY pushes the notification immediately:
 
 ```
 Master (zone changed)          Slave
@@ -243,22 +246,22 @@ www.example.com record signed by example.com key (RRSIG)
 
 ### Key Types
 
-**KSK (Key Signing Key):** A longer key ( RSA-2048 or RSA-4096 or ECDSA P-256) used only to
-Sign the ZSK. The KSK's hash (DS record) is published in the parent zone. The KSK is rotated
-Infrequently (annually or less).
+**KSK (Key Signing Key):** A longer key ( RSA-2048 or RSA-4096 or ECDSA P-256) used only to Sign the
+ZSK. The KSK's hash (DS record) is published in the parent zone. The KSK is rotated Infrequently
+(annually or less).
 
-**ZSK (Zone Signing Key):** A shorter key ( ECDSA P-256 or RSA-2048) used to sign all
-Records in the zone. The ZSK is rotated frequently (monthly) because it is used for every record.
+**ZSK (Zone Signing Key):** A shorter key ( ECDSA P-256 or RSA-2048) used to sign all Records in the
+zone. The ZSK is rotated frequently (monthly) because it is used for every record.
 
 ### Record Types
 
-| Type | Purpose |
+| Type   | Purpose                                               |
 | ------ | ----------------------------------------------------- |
-| DNSKEY | Public key for the zone |
-| DS | Hash of a child zone's DNSKEY, stored in parent zone |
-| RRSIG | Digital signature over a resource record set (RRset) |
-| NSEC | Points to the next name in the zone (proves NXDOMAIN) |
-| NSEC3 | Hashed NSEC (prevents zone enumeration) |
+| DNSKEY | Public key for the zone                               |
+| DS     | Hash of a child zone's DNSKEY, stored in parent zone  |
+| RRSIG  | Digital signature over a resource record set (RRset)  |
+| NSEC   | Points to the next name in the zone (proves NXDOMAIN) |
+| NSEC3  | Hashed NSEC (prevents zone enumeration)               |
 
 ### Signing a Zone
 
@@ -335,7 +338,7 @@ This provides:
 
 - **Latency reduction:** Queries are answered by the closest instance ( under 50ms)
 - **Availability:** If one instance fails, BGP withdraws the route and traffic goes to the next
- closest
+  closest
 - **DDoS resilience:** Attack traffic is distributed across all instances
 
 ### CDN DNS
@@ -396,9 +399,9 @@ view "external" {
 ### Use Cases
 
 - **Internal services:** Database servers, management interfaces, internal APIs should not be
- resolvable from the Internet
+  resolvable from the Internet
 - **Development vs production:** Developers resolve `api.example.com` to a staging server;
- production users resolve to the production server
+  production users resolve to the production server
 - **GeoDNS:** Different responses based on geography (but anycast is better for this)
 
 ## DNS Load Balancing
@@ -417,9 +420,9 @@ example.com.  300  IN  A   93.184.216.3
 Limitations:
 
 - **No health checking.** If one server goes down, DNS still returns its IP. Clients get connection
- refused.
+  refused.
 - **Caching.** Resolvers cache the full RRset and distribute it independently of the authoritative
- server's order.
+  server's order.
 - **Uneven distribution.** Clients that share a recursive resolver all get the same answer.
 
 ### Weight-Based DNS
@@ -452,15 +455,15 @@ This is how CDNs direct users to the nearest edge server.
 
 ### Internal/External Split
 
-| Aspect | Internal DNS | External DNS |
+| Aspect     | Internal DNS                            | External DNS                     |
 | ---------- | --------------------------------------- | -------------------------------- |
-| Purpose | Corporate infrastructure resolution | Public-facing services |
-| Servers | AD Domain Controllers, dedicated DNS | Cloud provider or third-party |
-| Zones | corp.example.com, ad.example.com | example.com |
-| Records | Private IPs, SRV for internal services | Public IPs, MX, TXT for security |
-| Forwarding | Internal recursive resolvers | ISP or public resolvers |
-| Security | Protected by firewall, no public access | Public, DDoS protected |
-| DNSSEC | Optional (internal trust) | Recommended |
+| Purpose    | Corporate infrastructure resolution     | Public-facing services           |
+| Servers    | AD Domain Controllers, dedicated DNS    | Cloud provider or third-party    |
+| Zones      | corp.example.com, ad.example.com        | example.com                      |
+| Records    | Private IPs, SRV for internal services  | Public IPs, MX, TXT for security |
+| Forwarding | Internal recursive resolvers            | ISP or public resolvers          |
+| Security   | Protected by firewall, no public access | Public, DDoS protected           |
+| DNSSEC     | Optional (internal trust)               | Recommended                      |
 
 ### Active Directory Integration
 
@@ -632,13 +635,13 @@ Cache, causing subsequent queries to return malicious IP addresses.
 Mitigations:
 
 - **Source port randomization:** The resolver uses random source ports for queries (RFC 5452). An
- attacker must guess both the query ID (16 bits) and the source port (16 bits), making spoofing
- much harder.
+  attacker must guess both the query ID (16 bits) and the source port (16 bits), making spoofing
+  much harder.
 - **DNSSEC:** The resolver validates signatures. Even if a forged response is accepted into the
- cache, DNSSEC validation rejects it.
+  cache, DNSSEC validation rejects it.
 - **DNS-over-TLS / DNS-over-HTTPS:** Encrypt the query path, preventing interception and injection.
 - **0x20 encoding:** Randomize the case of the query name. The response must match the case, making
- forgery harder.
+  forgery harder.
 
 :::warning
 
@@ -728,14 +731,14 @@ kdig @https://dns.google example.com +https
 
 ### DoH vs DoT Comparison
 
-| Feature | DoT (853) | DoH (443) |
+| Feature            | DoT (853)             | DoH (443)                    |
 | ------------------ | --------------------- | ---------------------------- |
-| Port | 853 (dedicated) | 443 (shared with HTTPS) |
-| Firewall traversal | May be blocked | Works through most proxies |
-| Privacy | Visible as DNS (port) | Indistinguishable from HTTPS |
-| Overhead | Lower (no HTTP) | Higher (HTTP framing) |
-| Detection | Easy to detect/block | Hard to detect/block |
-| Client support | Android, iOS, Linux | Browsers, curl, most OS |
+| Port               | 853 (dedicated)       | 443 (shared with HTTPS)      |
+| Firewall traversal | May be blocked        | Works through most proxies   |
+| Privacy            | Visible as DNS (port) | Indistinguishable from HTTPS |
+| Overhead           | Lower (no HTTP)       | Higher (HTTP framing)        |
+| Detection          | Easy to detect/block  | Hard to detect/block         |
+| Client support     | Android, iOS, Linux   | Browsers, curl, most OS      |
 
 :::warning
 
@@ -758,13 +761,13 @@ Application resolver -> OS cache -> Local recursive resolver -> ISP cache -> Aut
 
 Typical latencies at each level:
 
-| Level | Latency | TTL influence |
+| Level                 | Latency  | TTL influence          |
 | --------------------- | -------- | ---------------------- |
-| Application cache | 0ms | Application-controlled |
-| OS cache (nscd) | 0ms | Respects TTL |
-| Local recursive cache | 0-5ms | Respects TTL |
-| ISP cache hit | 5-50ms | Respects TTL |
-| Authoritative (cold) | 50-500ms | Fresh answer |
+| Application cache     | 0ms      | Application-controlled |
+| OS cache (nscd)       | 0ms      | Respects TTL           |
+| Local recursive cache | 0-5ms    | Respects TTL           |
+| ISP cache hit         | 5-50ms   | Respects TTL           |
+| Authoritative (cold)  | 50-500ms | Fresh answer           |
 
 ### Negative Caching
 
@@ -791,8 +794,8 @@ server:
 
 ### ECS (EDNS Client Subnet, RFC 7871)
 
-ECS allows the recursive resolver to pass the client's subnet ( /24 for IPv4, /56 for IPv6)
-To the authoritative server. This enables geo-DNS and CDN routing to the nearest server based on the
+ECS allows the recursive resolver to pass the client's subnet ( /24 for IPv4, /56 for IPv6) To the
+authoritative server. This enables geo-DNS and CDN routing to the nearest server based on the
 Client's location, not the resolver's location.
 
 ```bash

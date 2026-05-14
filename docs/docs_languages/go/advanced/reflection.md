@@ -1,6 +1,8 @@
 ---
 title: Reflection
-description: "Reflection — reflect.Type and reflect.Value; Kind vs Type; Modifying Values; Inspecting Fields with worked examples and exam-style questions."
+description:
+  'Reflection — reflect.Type and reflect.Value; Kind vs Type; Modifying Values; Inspecting Fields
+  with worked examples and exam-style questions.'
 slug: reflection
 date: 2026-04-18
 tags:
@@ -8,6 +10,7 @@ tags:
 categories:
   - Go
 ---
+
 ## Overview
 
 The `reflect` package provides runtime type introspection and manipulation. It allows programs to
@@ -247,25 +250,25 @@ As alternatives.
 ## Common Pitfalls
 
 1. **Reflecting on unexported fields.** Reflection cannot read or set unexported (lowercase) struct
- fields. `CanSet()` returns false for unexported fields.
+   fields. `CanSet()` returns false for unexported fields.
 
 2. **Forgetting `Elem()` for pointer values.** `reflect.ValueOf(&x)` gives you a `*int` Value. Call
- `.Elem()` to get the underlying `int` Value for modification.
+   `.Elem()` to get the underlying `int` Value for modification.
 
 3. **Panicking on wrong types.** `Int()` panics if the kind is not an integer. Always check `Kind()`
- before calling type-specific methods.
+   before calling type-specific methods.
 
 4. **Performance in hot paths.** Reflection is 10-100x slower than direct code. Do not use it in
- tight loops. Cache `reflect.Type` and `reflect.Value` results when possible.
+   tight loops. Cache `reflect.Type` and `reflect.Value` results when possible.
 
 5. **Using reflection when type assertions suffice.** If you know the possible types at compile
- time, use type switches and type assertions. They are type-safe and fast.
+   time, use type switches and type assertions. They are type-safe and fast.
 
 6. **Modifying unexported fields.** This is not possible through the `reflect` package. If you must
- do it, use `unsafe` (but this is highly discouraged and may break across Go versions).
+   do it, use `unsafe` (but this is highly discouraged and may break across Go versions).
 
 7. **Ignoring `CanAddr` and `CanSet`.** Not all `reflect.Value` objects are addressable or settable.
- Always check before attempting modification.
+   Always check before attempting modification.
 
 ## Summary
 

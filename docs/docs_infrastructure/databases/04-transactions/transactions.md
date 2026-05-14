@@ -1,7 +1,9 @@
 ---
 id: transactions
 title: Transactions and Concurrency
-description: "Transactions and Concurrency — ACID Properties; Atomicity; Consistency; Isolation with worked examples and exam-style questions."
+description:
+  'Transactions and Concurrency — ACID Properties; Atomicity; Consistency; Isolation with worked
+  examples and exam-style questions.'
 slug: transactions
 sidebar_position: 1
 tags:
@@ -9,6 +11,7 @@ tags:
 categories:
   - Databases
 ---
+
 ## ACID Properties
 
 ACID is the set of guarantees that a relational database transaction provides. Understanding what
@@ -88,13 +91,13 @@ stateDiagram-v2
     Aborted --> [*]
 ```
 
-| State | Description |
+| State               | Description                                                    |
 | ------------------- | -------------------------------------------------------------- |
-| Active | Transaction is executing statements |
-| Partially Committed | All statements executed; waiting for WAL flush |
-| Committed | WAL flushed; changes are permanent |
-| Failed | An error occurred; changes must be undone |
-| Aborted | Rollback completed; database restored to pre-transaction state |
+| Active              | Transaction is executing statements                            |
+| Partially Committed | All statements executed; waiting for WAL flush                 |
+| Committed           | WAL flushed; changes are permanent                             |
+| Failed              | An error occurred; changes must be undone                      |
+| Aborted             | Rollback completed; database restored to pre-transaction state |
 
 ## Isolation Levels
 
@@ -114,12 +117,12 @@ Matching that condition and commits. When T1 re-executes the query, it sees a ne
 
 ### Isolation Level Comparison
 
-| Isolation Level | Dirty Read | Non-Repeatable Read | Phantom Read | Lock-Based Implementation |
+| Isolation Level  | Dirty Read | Non-Repeatable Read | Phantom Read | Lock-Based Implementation                     |
 | ---------------- | ---------- | ------------------- | ------------ | --------------------------------------------- |
-| READ UNCOMMITTED | Possible | Possible | Possible | None |
-| READ COMMITTED | Prevented | Possible | Possible | Row-level shared locks (duration of read) |
-| REPEATABLE READ | Prevented | Prevented | Possible\* | Row-level locks held until end of transaction |
-| SERIALIZABLE | Prevented | Prevented | Prevented | Range locks or snapshot isolation |
+| READ UNCOMMITTED | Possible   | Possible            | Possible     | None                                          |
+| READ COMMITTED   | Prevented  | Possible            | Possible     | Row-level shared locks (duration of read)     |
+| REPEATABLE READ  | Prevented  | Prevented           | Possible\*   | Row-level locks held until end of transaction |
+| SERIALIZABLE     | Prevented  | Prevented           | Prevented    | Range locks or snapshot isolation             |
 
 \*PostgreSQL's REPEATABLE READ actually prevents phantom reads through its snapshot-based
 Implementation, exceeding the SQL standard's requirement.
@@ -199,7 +202,7 @@ SET TRANSACTION ISOLATION LEVEL SERIALIZABLE;
 
 - Strongest isolation level
 - Guarantees that concurrent transactions produce the same effect as if they were executed serially
- (one after another)
+  (one after another)
 - Prevents dirty reads, non-repeatable reads, phantom reads, and write skew
 - Highest performance cost; may require retries
 
@@ -222,12 +225,12 @@ T2: COMMIT;  -- ERROR: could not serialize access due to concurrent update
 
 ### Choosing an Isolation Level
 
-| Scenario | Recommended Level |
+| Scenario                                                 | Recommended Level |
 | -------------------------------------------------------- | ----------------- |
-| Standard OLTP (most applications) | READ COMMITTED |
-| Financial transfers, inventory management | REPEATABLE READ |
-| Booking systems, scheduling, any business rule integrity | SERIALIZABLE |
-| Approximate analytics, reporting | READ UNCOMMITTED |
+| Standard OLTP (most applications)                        | READ COMMITTED    |
+| Financial transfers, inventory management                | REPEATABLE READ   |
+| Booking systems, scheduling, any business rule integrity | SERIALIZABLE      |
+| Approximate analytics, reporting                         | READ UNCOMMITTED  |
 
 ## Locking
 
@@ -251,17 +254,17 @@ Different guarantees at different costs.
 **Intention Locks:**
 
 - Intention Shared (IS): indicates that a transaction intends to acquire S-locks on some rows in a
- table
+  table
 - Intention Exclusive (IX): indicates that a transaction intends to acquire X-locks on some rows in
- a table
+  a table
 - Used for hierarchical locking (table-level intention locks, row-level actual locks)
 
-| Lock Request | IS | IX | S | X |
+| Lock Request             | IS           | IX           | S            | X            |
 | ------------------------ | ------------ | ------------ | ------------ | ------------ |
-| IS (Intention Shared) | Compatible | Compatible | Compatible | Incompatible |
-| IX (Intention Exclusive) | Compatible | Compatible | Incompatible | Incompatible |
-| S (Shared) | Compatible | Incompatible | Compatible | Incompatible |
-| X (Exclusive) | Incompatible | Incompatible | Incompatible | Incompatible |
+| IS (Intention Shared)    | Compatible   | Compatible   | Compatible   | Incompatible |
+| IX (Intention Exclusive) | Compatible   | Compatible   | Incompatible | Incompatible |
+| S (Shared)               | Compatible   | Incompatible | Compatible   | Incompatible |
+| X (Exclusive)            | Incompatible | Incompatible | Incompatible | Incompatible |
 
 ### Lock Granularity
 
@@ -269,7 +272,7 @@ The database can lock at different granularities:
 
 - **Row-level locks**: most granular, highest concurrency, most lock management overhead
 - **Page-level locks**: lock an entire page (8KB in PostgreSQL), balance between concurrency and
- overhead
+  overhead
 - **Table-level locks**: lock the entire table, simplest but most restrictive
 
 ### Explicit Locking in SQL
@@ -309,19 +312,22 @@ Specific point in time. Readers do not block writers, and writers do not block r
 ### How MVCC Works (PostgreSQL)
 
 1. Each row version (tuple) has two hidden system columns:
- - `xmin`: the transaction ID (xid) of the transaction that inserted this version
- - `xmax`: the transaction ID of the transaction that deleted or updated this version (0 if not
- deleted)
+
+- `xmin`: the transaction ID (xid) of the transaction that inserted this version
+- `xmax`: the transaction ID of the transaction that deleted or updated this version (0 if not
+  deleted)
 
 2. Each transaction has a snapshot that defines which transactions are visible:
- - Transactions with xid &lt; snapshot's `xmin` are committed and visible
- - Transactions with xid >= snapshot's `xmax` are not yet started and invisible
- - Between `xmin` and `xmax`: visible if committed, invisible if aborted
+
+- Transactions with xid &lt; snapshot's `xmin` are committed and visible
+- Transactions with xid >= snapshot's `xmax` are not yet started and invisible
+- Between `xmin` and `xmax`: visible if committed, invisible if aborted
 
 3. When a transaction reads a row:
- - If `xmin` is committed and `xmax` is 0 or aborted, the row is visible
- - If `xmax` is committed, the row has been deleted/updated; not visible
- - Otherwise, the row was created/deleted by an in-progress transaction; not visible
+
+- If `xmin` is committed and `xmax` is 0 or aborted, the row is visible
+- If `xmax` is committed, the row has been deleted/updated; not visible
+- Otherwise, the row was created/deleted by an in-progress transaction; not visible
 
 ```text
 accounts table (physical storage):
@@ -352,9 +358,9 @@ Transaction 99 (REPEATABLE READ, snapshot at tx 99):
 - Write amplification: UPDATE creates a new row version, consuming more storage
 - Dead tuple accumulation: requires VACUUM to reclaim space
 - Transaction ID wraparound: PostgreSQL uses 32-bit xids (approximately 4 billion); wraparound
- causes data loss if not managed (autovacuum prevents this)
+  causes data loss if not managed (autovacuum prevents this)
 - Longer rollback time: rolling back a transaction that modified millions of rows requires marking
- all those tuples as dead
+  all those tuples as dead
 
 ### Snapshot Isolation vs Serializability
 
@@ -363,10 +369,10 @@ Non-repeatable reads, and phantom reads. However, it does **not** prevent write 
 SERIALIZABLE section above). True serializability requires additional mechanisms:
 
 - **SSI (Serializable Snapshot Isolation):** PostgreSQL's default SERIALIZABLE implementation. It
- tracks read and write dependencies between transactions and aborts transactions that could produce
- non-serializable results. This is optimistic concurrency control.
+  tracks read and write dependencies between transactions and aborts transactions that could produce
+  non-serializable results. This is optimistic concurrency control.
 - **Two-Phase Locking (2PL):** Pessimistic approach; acquires all locks before any release. Provides
- true serializability but at the cost of reduced concurrency.
+  true serializability but at the cost of reduced concurrency.
 
 ## Two-Phase Locking (2PL)
 
@@ -509,10 +515,10 @@ If any voted ABORT, the coordinator sends ABORT to all.
 **Failure modes:**
 
 - If a participant fails after voting COMMIT but before receiving the final decision, it is
- **blocked**: it cannot commit (it does not know the decision) and cannot abort (it promised to
- commit). It must wait for the coordinator to recover and re-send the decision.
+  **blocked**: it cannot commit (it does not know the decision) and cannot abort (it promised to
+  commit). It must wait for the coordinator to recover and re-send the decision.
 - If the coordinator fails after phase 1, participants are blocked until the coordinator recovers.
- This is the **blocking problem** of 2PC.
+  This is the **blocking problem** of 2PC.
 
 ### Three-Phase Commit (3PC)
 
@@ -535,11 +541,11 @@ Failure detectors, which are unrealistic assumptions.
 Systems prefer:
 
 1. **Saga pattern:** break a distributed transaction into a sequence of local transactions, each
- with a compensating action for rollback
+   with a compensating action for rollback
 2. **Eventual consistency:** accept that the system may be temporarily inconsistent, and use
- background reconciliation
+   background reconciliation
 3. **Outbox pattern:** write business data and outgoing events to the same local transaction; a
- background process publishes the events
+   background process publishes the events
 
 :::tip
 
@@ -590,15 +596,15 @@ COMMIT;
 
 ### Comparison
 
-| Aspect | Pessimistic | Optimistic |
+| Aspect                       | Pessimistic                | Optimistic                           |
 | ---------------------------- | -------------------------- | ------------------------------------ |
-| Conflict handling | Prevented by locks | Detected on write, resolved by retry |
-| Throughput (low contention) | Lower (lock overhead) | Higher (no lock overhead) |
-| Throughput (high contention) | Higher (serialised access) | Lower (many retries) |
-| Latency | May wait for locks | Immediate reads |
-| Complexity | Simpler logic | Must implement retry logic |
-| Deadlocks | Possible | Not possible |
-| Best for | Write-heavy, hot rows | Read-heavy, cold rows |
+| Conflict handling            | Prevented by locks         | Detected on write, resolved by retry |
+| Throughput (low contention)  | Lower (lock overhead)      | Higher (no lock overhead)            |
+| Throughput (high contention) | Higher (serialised access) | Lower (many retries)                 |
+| Latency                      | May wait for locks         | Immediate reads                      |
+| Complexity                   | Simpler logic              | Must implement retry logic           |
+| Deadlocks                    | Possible                   | Not possible                         |
+| Best for                     | Write-heavy, hot rows      | Read-heavy, cold rows                |
 
 ## Common Pitfalls
 
@@ -861,14 +867,14 @@ Use `SET LOCAL` within a transaction to scope the security context correctly.
 
 ### PostgreSQL vs MySQL (InnoDB)
 
-| Aspect | PostgreSQL | MySQL (InnoDB) |
+| Aspect              | PostgreSQL                                   | MySQL (InnoDB)                                      |
 | ------------------- | -------------------------------------------- | --------------------------------------------------- |
-| Default level | READ COMMITTED | REPEATABLE READ |
-| MVCC implementation | Append-only (old tuples remain until VACUUM) | In-place update with undo logs |
-| Phantom prevention | REPEATABLE READ prevents phantoms | REPEATABLE READ does NOT prevent phantoms |
-| Lock escalation | No lock escalation (always row-level) | May escalate to table-level for certain operations |
-| Deadlock detection | Automatic (wait-for graph cycle detection) | Automatic (timeout-based: innodb_lock_wait_timeout) |
-| SERIALIZABLE | SSI (Serializable Snapshot Isolation) | Two-Phase Locking |
+| Default level       | READ COMMITTED                               | REPEATABLE READ                                     |
+| MVCC implementation | Append-only (old tuples remain until VACUUM) | In-place update with undo logs                      |
+| Phantom prevention  | REPEATABLE READ prevents phantoms            | REPEATABLE READ does NOT prevent phantoms           |
+| Lock escalation     | No lock escalation (always row-level)        | May escalate to table-level for certain operations  |
+| Deadlock detection  | Automatic (wait-for graph cycle detection)   | Automatic (timeout-based: innodb_lock_wait_timeout) |
+| SERIALIZABLE        | SSI (Serializable Snapshot Isolation)        | Two-Phase Locking                                   |
 
 ### Oracle vs PostgreSQL
 

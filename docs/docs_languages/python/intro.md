@@ -1,7 +1,9 @@
 ---
 id: intro
 title: Introduction to Python
-description: "Rigorous programming language Python notes covering Introduction to Python. Includes definitions, derivations, worked examples, and exam-style problems."
+description:
+  'Rigorous programming language Python notes covering Introduction to Python. Includes definitions,
+  derivations, worked examples, and exam-style problems.'
 slug: intro
 sidebar_position: 1
 tags:
@@ -9,6 +11,7 @@ tags:
 categories:
   - Python
 ---
+
 ## Abstract
 
 This resource is created as a aggregation of best practices in Python.

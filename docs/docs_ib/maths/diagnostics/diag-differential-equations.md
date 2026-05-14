@@ -1,6 +1,8 @@
 ---
-title: "Differential Equations -- Diagnostic Tests"
-description: "Hardest IB Mathematics diagnostic tests for differential equations covering separable equations with lost solutions, integrating factor sign errors, second"
+title: 'Differential Equations -- Diagnostic Tests'
+description:
+  'Hardest IB Mathematics diagnostic tests for differential equations covering separable equations
+  with lost solutions, integrating factor sign errors, second'
 slug: diag-differential-equations
 hide_table_of_contents: true
 ---
@@ -17,7 +19,9 @@ hide_table_of_contents: true
 
 **(a)** Solve $\dfrac{dy}{dx} = y^2 - 1$ with the general solution.
 
-**(b)** A student separates variables and writes $\dfrac{dy}{y^2 - 1} = dx$Integrates, and arrives at the general solution $\dfrac{1}{2}\ln\!\left\lvert\dfrac{y - 1}{y + 1}\right\rvert = x + C$. They claim this covers all solutions. Is this correct?
+**(b)** A student separates variables and writes $\dfrac{dy}{y^2 - 1} = dx$Integrates, and arrives
+at the general solution $\dfrac{1}{2}\ln\!\left\lvert\dfrac{y - 1}{y + 1}\right\rvert = x + C$. They
+claim this covers all solutions. Is this correct?
 
 **(c)** Find the particular solution with $y(0) = 1$.
 
@@ -41,11 +45,18 @@ Where $A = e^{2C} \gt 0$. Including the equilibrium solutions, the general solut
 
 $$y = 1, \quad y = -1, \quad \text{or} \quad \frac{y - 1}{y + 1} = \pm Ae^{2x}$$
 
-**(b)** The student's solution is incomplete because they lost the equilibrium solutions $y = 1$ and $y = -1$. By dividing by $y^2 - 1$The student implicitly assumed $y^2 - 1 \neq 0$. The equilibrium solutions must be stated separately and are not captured by the formula $\frac{1}{2}\ln\!\left\lvert\frac{y - 1}{y + 1}\right\rvert = x + C$.
+**(b)** The student's solution is incomplete because they lost the equilibrium solutions $y = 1$ and
+$y = -1$. By dividing by $y^2 - 1$The student implicitly assumed $y^2 - 1 \neq 0$. The equilibrium
+solutions must be stated separately and are not captured by the formula
+$\frac{1}{2}\ln\!\left\lvert\frac{y - 1}{y + 1}\right\rvert = x + C$.
 
-**(c)** The particular solution with $y(0) = 1$ is the equilibrium solution $y = 1$ for all $x$. This can be verified: $\frac{dy}{dx} = 0$ and $y^2 - 1 = 1 - 1 = 0$. Confirmed.
+**(c)** The particular solution with $y(0) = 1$ is the equilibrium solution $y = 1$ for all $x$.
+This can be verified: $\frac{dy}{dx} = 0$ and $y^2 - 1 = 1 - 1 = 0$. Confirmed.
 
-Note that if the student tries to use their formula: $\frac{1}{2}\ln\!\left\lvert\frac{0}{2}\right\rvert = 0 + C \implies \frac{1}{2}\ln 0$Which is undefined. This shows the equilibrium solution $y = 1$ cannot be obtained from the separated formula.
+Note that if the student tries to use their formula:
+$\frac{1}{2}\ln\!\left\lvert\frac{0}{2}\right\rvert = 0 + C \implies \frac{1}{2}\ln 0$Which is
+undefined. This shows the equilibrium solution $y = 1$ cannot be obtained from the separated
+formula.
 
 ---
 
@@ -57,7 +68,8 @@ Solve $\dfrac{dy}{dx} = 2y + e^{3x}$ with $y(0) = 1$.
 
 **(a)** Find the general solution using an integrating factor.
 
-**(b)** A student rewrites the equation as $\dfrac{dy}{dx} - 2y = e^{3x}$Computes the integrating factor as $\mu = e^{-2x}$And gets the wrong answer. Identify the error in their working:
+**(b)** A student rewrites the equation as $\dfrac{dy}{dx} - 2y = e^{3x}$Computes the integrating
+factor as $\mu = e^{-2x}$And gets the wrong answer. Identify the error in their working:
 
 Their working: $\dfrac{d}{dx}(ye^{-2x}) = e^{3x} \cdot e^{-2x} = e^x$.
 
@@ -91,14 +103,19 @@ With $y(0) = 1$: $1 = 1 + C \implies C = 0$.
 
 Particular solution: $y = e^{3x}$.
 
-**(b)** The student's working is actually **correct**. Despite the framing of the question, the student:
+**(b)** The student's working is actually **correct**. Despite the framing of the question, the
+student:
+
 1. Correctly identified the standard form.
 2. Correctly computed the integrating factor $\mu = e^{-2x}$.
 3. Correctly applied the method.
 4. Correctly found the particular solution.
 5. Correctly verified it.
 
-**(c)** The student was not wrong. This question is designed to test whether the student can recognise that a seemingly suspicious answer is actually correct when verified. The key lesson is to always verify solutions by substitution, rather than relying on intuition about whether an answer "looks right."
+**(c)** The student was not wrong. This question is designed to test whether the student can
+recognise that a seemingly suspicious answer is actually correct when verified. The key lesson is to
+always verify solutions by substitution, rather than relying on intuition about whether an answer
+"looks right."
 
 ---
 
@@ -110,7 +127,9 @@ Solve $y'' + 4y' + 4y = 0$ with $y(0) = 1$ and $y'(0) = 0$.
 
 **(a)** Find the general solution.
 
-**(b)** A student writes the general solution as $y = Ae^{-2x} + Be^{-2x} = (A + B)e^{-2x} = Ce^{-2x}$ and then uses the initial conditions to find $C = 1$. Explain why this is wrong.
+**(b)** A student writes the general solution as
+$y = Ae^{-2x} + Be^{-2x} = (A + B)e^{-2x} = Ce^{-2x}$ and then uses the initial conditions to find
+$C = 1$. Explain why this is wrong.
 
 [Difficulty: hard. Tests the repeated root case of the characteristic equation.]
 
@@ -126,9 +145,14 @@ $$y = (A + Bx)e^{-2x}$$
 
 Note the factor of $x$ in the second term. This is essential.
 
-**(b)** The student's error is treating the repeated root $\lambda = -2$ as two independent solutions $e^{-2x}$ and $e^{-2x}$. These are the same function, so they are linearly dependent. The general solution requires two linearly independent solutions.
+**(b)** The student's error is treating the repeated root $\lambda = -2$ as two independent
+solutions $e^{-2x}$ and $e^{-2x}$. These are the same function, so they are linearly dependent. The
+general solution requires two linearly independent solutions.
 
-For a repeated root $\lambda$The two independent solutions are $e^{\lambda x}$ and $xe^{\lambda x}$. The factor of $x$ is derived from the method of reduction of order or from the Taylor expansion perspective: when the characteristic equation has a repeated root, the second solution involves the derivative of $e^{\lambda x}$ with respect to $\lambda$.
+For a repeated root $\lambda$The two independent solutions are $e^{\lambda x}$ and $xe^{\lambda x}$.
+The factor of $x$ is derived from the method of reduction of order or from the Taylor expansion
+perspective: when the characteristic equation has a repeated root, the second solution involves the
+derivative of $e^{\lambda x}$ with respect to $\lambda$.
 
 Using the correct general solution with $y(0) = 1$ and $y'(0) = 0$:
 
@@ -140,7 +164,8 @@ $$y'(0) = B - 2A = B - 2 = 0 \implies B = 2$$
 
 $$y = (1 + 2x)e^{-2x}$$
 
-The student's answer $y = e^{-2x}$ does not satisfy $y'(0) = 0$ since $y' = -2e^{-2x}$ and $y'(0) = -2 \neq 0$.
+The student's answer $y = e^{-2x}$ does not satisfy $y'(0) = 0$ since $y' = -2e^{-2x}$ and
+$y'(0) = -2 \neq 0$.
 
 ---
 
@@ -152,11 +177,13 @@ The student's answer $y = e^{-2x}$ does not satisfy $y'(0) = 0$ since $y' = -2e^
 
 **Question:**
 
-A body at temperature $95\degree\mathrm{C}$ is placed in a room at constant temperature $20\degree\mathrm{C}$. After $10$ minutes, the body's temperature is $60\degree\mathrm{C}$.
+A body at temperature $95\degree\mathrm{C}$ is placed in a room at constant temperature
+$20\degree\mathrm{C}$. After $10$ minutes, the body's temperature is $60\degree\mathrm{C}$.
 
 **(a)** Find the temperature of the body as a function of time.
 
-**(b)** Determine how long it takes for the body to cool to $30\degree\mathrm{C}$. Give your answer in exact form.
+**(b)** Determine how long it takes for the body to cool to $30\degree\mathrm{C}$. Give your answer
+in exact form.
 
 **(c)** Show that the body temperature approaches $20\degree\mathrm{C}$ as $t \to \infty$.
 
@@ -178,7 +205,8 @@ Initial condition: $T(0) = 95 \implies A = 75$.
 
 $$T(t) = 20 + 75e^{-kt}$$
 
-At $t = 10$: $T(10) = 60 \implies 60 = 20 + 75e^{-10k} \implies 75e^{-10k} = 40 \implies e^{-10k} = \frac{8}{15}$.
+At $t = 10$:
+$T(10) = 60 \implies 60 = 20 + 75e^{-10k} \implies 75e^{-10k} = 40 \implies e^{-10k} = \frac{8}{15}$.
 
 $$-10k = \ln\!\left(\frac{8}{15}\right) \implies k = \frac{1}{10}\ln\!\left(\frac{15}{8}\right)$$
 
@@ -200,7 +228,8 @@ Numerically: $t \approx \frac{10 \times (-2.015)}{0.628} \approx 32.1$ minutes.
 
 Therefore $T(t) \to 20 + 75 \times 0 = 20\degree\mathrm{C}$.
 
-This confirms that the body temperature asymptotically approaches the ambient temperature, as expected from Newton's law of cooling.
+This confirms that the body temperature asymptotically approaches the ambient temperature, as
+expected from Newton's law of cooling.
 
 ---
 
@@ -225,10 +254,10 @@ $$\frac{dy}{dx} = \frac{x}{y}, \quad y(1) = 2$$
 **(a)**
 
 | $n$ | $x_n$ | $y_n$ | $f(x_n, y_n) = \dfrac{x_n}{y_n}$ |
-|-----|-------|-------|-----------------------------------|
-| 0 | 1.0 | 2.000 | 0.500 |
-| 1 | 1.5 | 2.250 | 0.667 |
-| 2 | 2.0 | 2.583 | --- |
+| --- | ----- | ----- | -------------------------------- |
+| 0   | 1.0   | 2.000 | 0.500                            |
+| 1   | 1.5   | 2.250 | 0.667                            |
+| 2   | 2.0   | 2.583 | ---                              |
 
 $$y_1 = 2.000 + 0.5 \times 0.500 = 2.250$$
 

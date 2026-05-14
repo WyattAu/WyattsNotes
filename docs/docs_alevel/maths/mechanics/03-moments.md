@@ -1,6 +1,8 @@
 ---
 title: Moments
-description: "A-Level Mathematics notes on Moments: Board Coverage; 1. Definition of a Moment; 1.1 Real-world examples; 1.2 Sign convention."
+description:
+  'A-Level Mathematics notes on Moments: Board Coverage; 1. Definition of a Moment; 1.1 Real-world
+  examples; 1.2 Sign convention.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Maths
@@ -9,19 +11,18 @@ categories:
   - Maths
 slug: moments
 ---
+
 ## Board Coverage
 
-| Board | Paper | Notes |
+| Board      | Paper   | Notes                         |
 | ---------- | ------- | ----------------------------- |
-| AQA | Paper 1 | Moments, equilibrium, tilting |
-| Edexcel | P1 | Similar |
-| OCR (A) | Paper 1 | Includes non-uniform bodies |
-| CIE (9709) | P4 | Moments and equilibrium |
+| AQA        | Paper 1 | Moments, equilibrium, tilting |
+| Edexcel    | P1      | Similar                       |
+| OCR (A)    | Paper 1 | Includes non-uniform bodies   |
+| CIE (9709) | P4      | Moments and equilibrium       |
 
-:::info
-The principle of moments is fundamental. Always state the point about which you are
-Taking moments, and include the direction (clockwise/anticlockwise) of each moment.
-:::
+:::info The principle of moments is fundamental. Always state the point about which you are Taking
+moments, and include the direction (clockwise/anticlockwise) of each moment. :::
 
 <hr />
 
@@ -100,11 +101,9 @@ $R_{\mathrm{left}} = W + P - R_{\mathrm{right}} = \dfrac{W}{2} + \dfrac{P(L-a)}{
 Notice that as the vehicle moves right ($a$ increases), $R_{\mathrm{right}}$ increases and
 $R_{\mathrm{left}}$ decreases — the bridge load redistributes continuously.
 
-:::warning
-The principle of moments applies about **any** point — not just the pivot. Choosing a
+:::warning The principle of moments applies about **any** point — not just the pivot. Choosing a
 Clever point (often where an unknown force acts) can simplify calculations by eliminating that
-Unknown from the moment equation.
-:::
+Unknown from the moment equation. :::
 
 <hr />
 
@@ -127,8 +126,8 @@ These three conditions are both necessary and sufficient for equilibrium.
 **Definition.** A **couple** is a pair of equal and opposite forces whose lines of action do not
 Coincide. A couple produces a **turning effect** (rotation) without any translational effect.
 
-Since the forces are equal and opposite, $\sum \mathbf{F} = \mathbf{0}$So there is no net force
-And no acceleration of the centre of mass. However, the net moment (torque) is non-zero.
+Since the forces are equal and opposite, $\sum \mathbf{F} = \mathbf{0}$So there is no net force And
+no acceleration of the centre of mass. However, the net moment (torque) is non-zero.
 
 ### 3.1.2 Moment of a couple
 
@@ -151,7 +150,7 @@ Independent of $O$. $\blacksquare$
 ### 3.1.3 Real-world examples of couples
 
 - **Steering wheel.** Two hands apply equal and opposite forces on opposite sides of the wheel. The
- net force is zero, but the torque turns the wheel.
+  net force is zero, but the torque turns the wheel.
 - **Taps and valves.** Turning a tap involves applying a couple to rotate the valve mechanism.
 - **Clock hands.** The spring mechanism applies a couple to rotate the hands at a constant rate.
 
@@ -165,10 +164,7 @@ $$\boldsymbol{\tau} = \mathbf{r} \times \mathbf{F}$$
 The direction of $\boldsymbol{\tau}$ is given by the right-hand rule and is perpendicular to the
 Plane containing $\mathbf{r}$ and $\mathbf{F}$.
 
-:::info
-Info
-Anticlockwise are the only two directions you need to consider.
-:::
+:::info Info Anticlockwise are the only two directions you need to consider. :::
 
 ### 3.1.5 Equilibrium of couples
 
@@ -218,11 +214,9 @@ $$R_w = \frac{W}{2}\cot\theta, \qquad F = R_w, \qquad \mu_{\min} = \frac{R_w}{R_
 The minimum coefficient of friction depends only on the angle $\theta$. As the ladder becomes
 Steeper ($\theta$ increases), $\cot\theta$ decreases and less friction is needed.
 
-:::warning
-If the wall is **rough**, there is an additional vertical friction force $F_w$ acting up
+:::warning If the wall is **rough**, there is an additional vertical friction force $F_w$ acting up
 The wall. This changes the vertical equilibrium to $R_g + F_w = W$ and adds complexity to the moment
-Equation. Always read the question carefully to determine whether the wall is smooth or rough.
-:::
+Equation. Always read the question carefully to determine whether the wall is smooth or rough. :::
 
 ### 3.2.4 Ladder with a person on it
 
@@ -231,9 +225,9 @@ $\alpha L$ from the base), the moment equation becomes:
 
 $$R_w \times L\sin\theta = W \times \frac{L}{2}\cos\theta + P \times \alpha L\cos\theta$$
 
-This gives $R_w = \left(\dfrac{W}{2} + P\alpha\right)\cot\theta$And the required friction
-Increases accordingly. The higher the person climbs (larger $\alpha$), the more friction is needed —
-Climb too high and the ladder slips.
+This gives $R_w = \left(\dfrac{W}{2} + P\alpha\right)\cot\theta$And the required friction Increases
+accordingly. The higher the person climbs (larger $\alpha$), the more friction is needed — Climb too
+high and the ladder slips.
 
 <hr />
 
@@ -259,7 +253,7 @@ So the centre of mass is $d_B = \dfrac{R_A L}{W}$ from end $B$.
 2. Use the given support/reaction information to write a moment equation.
 3. Solve for $x$.
 4. Once $x$ is known, solve subsequent parts of the question as you would for a uniform beam, with
- the weight acting at $x$ instead of at the midpoint.
+   the weight acting at $x$ instead of at the midpoint.
 
 <hr />
 
@@ -281,24 +275,21 @@ Squeezed).
 To find the forces in the members of a framework:
 
 1. Find the **support reactions** by treating the whole framework as a rigid body and applying the
- three equilibrium conditions.
+   three equilibrium conditions.
 2. At each joint, resolve forces horizontally and vertically. Since each joint is in equilibrium,
- $\sum F_x = 0$ and $\sum F_y = 0$.
+   $\sum F_x = 0$ and $\sum F_y = 0$.
 3. Work through joints systematically, starting from joints with the most known forces.
 
 ### 3.4.3 Sign convention for internal forces
 
 - **Tension:** the rod is being stretched; the force pulls away from the joint (assume the force
- arrows point away from the joint when drawing).
+  arrows point away from the joint when drawing).
 - **Compression:** the rod is being squeezed; the force pushes towards the joint.
 
 If you assume a rod is in tension and get a negative answer, the rod is in compression.
 
-:::info
-Info
-Choosing the right joint to start with — look for joints where you have at most two unknown forces,
-Since you can only write two equilibrium equations per joint.
-:::
+:::info Info Choosing the right joint to start with — look for joints where you have at most two
+unknown forces, Since you can only write two equilibrium equations per joint. :::
 
 <hr />
 
@@ -366,7 +357,8 @@ $\left(\dfrac{6+6+6}{3}, \dfrac◆LB◆0+4+(4+2\sqrt{3})◆RB◆◆LB◆3◆RB�
 
 $$\bar{x} = \frac◆LB◆24 \times 3 + 4\sqrt{3} \times 6◆RB◆◆LB◆24 + 4\sqrt{3}◆RB◆ = \frac◆LB◆72 + 24\sqrt{3}◆RB◆◆LB◆24 + 4\sqrt{3}◆RB◆$$
 
-Dividing numerator and denominator by 4: $\bar{x} = \dfrac◆LB◆18 + 6\sqrt{3}◆RB◆◆LB◆6 + \sqrt{3}◆RB◆$.
+Dividing numerator and denominator by 4:
+$\bar{x} = \dfrac◆LB◆18 + 6\sqrt{3}◆RB◆◆LB◆6 + \sqrt{3}◆RB◆$.
 
 Rationalising:
 $\bar{x} = \dfrac◆LB◆(18 + 6\sqrt{3})(6 - \sqrt{3})◆RB◆◆LB◆36 - 3◆RB◆ = \dfrac◆LB◆108 - 18\sqrt{3} + 36\sqrt{3} - 18◆RB◆◆LB◆33◆RB◆ = \dfrac◆LB◆90 + 18\sqrt{3}◆RB◆◆LB◆33◆RB◆ \approx 3.69\,\mathrm{cm}$.
@@ -386,13 +378,13 @@ This is extremely useful for L-shapes, T-shapes, and shapes with circular or tri
 
 ### 4.4 Standard results
 
-| Shape | Centre of Mass |
+| Shape                       | Centre of Mass                                           |
 | --------------------------- | -------------------------------------------------------- |
-| Uniform rod | Midpoint |
-| Uniform rectangular lamina | Intersection of diagonals |
-| Uniform triangular lamina | $\frac{1}{3}$ of the way from each side along the median |
-| Uniform circular lamina | Centre of the circle |
-| Uniform semicircular lamina | $\dfrac◆LB◆4r◆RB◆◆LB◆3\pi◆RB◆$ from the flat side |
+| Uniform rod                 | Midpoint                                                 |
+| Uniform rectangular lamina  | Intersection of diagonals                                |
+| Uniform triangular lamina   | $\frac{1}{3}$ of the way from each side along the median |
+| Uniform circular lamina     | Centre of the circle                                     |
+| Uniform semicircular lamina | $\dfrac◆LB◆4r◆RB◆◆LB◆3\pi◆RB◆$ from the flat side        |
 
 <hr />
 
@@ -413,8 +405,8 @@ Where $h$ is the height at which the force is applied and $d$ is half the base w
 
 ### 5.3 Worked example: toppling vs. Sliding
 
-A uniform block of weight $500\,\mathrm{N}$Width $0.6\,\mathrm{m}$ and height $1.2\,\mathrm{m}$
-Sits on a rough surface with $\mu = 0.4$. A horizontal force $P$ is applied at the top of the block.
+A uniform block of weight $500\,\mathrm{N}$Width $0.6\,\mathrm{m}$ and height $1.2\,\mathrm{m}$ Sits
+on a rough surface with $\mu = 0.4$. A horizontal force $P$ is applied at the top of the block.
 Determine whether the block slides or topples first, and find the critical value of $P$.
 
 **Check sliding:** $P = \mu R = 0.4 \times 500 = 200\,\mathrm{N}$.
@@ -428,11 +420,8 @@ $P = \dfrac{150}{1.2} = 125\,\mathrm{N}$.
 
 Since $125 \lt 200$The block **topples first** at $P = 125\,\mathrm{N}$.
 
-:::info
-Info
-Slides. Here $\dfrac{1.2}{0.3} = 4$ and $\dfrac{1}{0.4} = 2.5$. Since $4 > 2.5$Toppling occurs
-First, which matches our calculation.
-:::
+:::info Info Slides. Here $\dfrac{1.2}{0.3} = 4$ and $\dfrac{1}{0.4} = 2.5$. Since $4 > 2.5$Toppling
+occurs First, which matches our calculation. :::
 
 <hr />
 
@@ -633,7 +622,8 @@ $R_w \times 6\sin 55° = 150 \times 3\cos 55° + 800 \times 4\cos 55^\circ$.
 
 $R_w = \dfrac◆LB◆(450 + 3200)\cos 55°◆RB◆◆LB◆6\sin 55°◆RB◆ = \dfrac◆LB◆3650\cos 55°◆RB◆◆LB◆6\sin 55°◆RB◆ = \dfrac{3650}{6}\cot 55^\circ$.
 
-$\cot 55° \approx 0.7002$So $R_w = \dfrac◆LB◆3650 \times 0.7002◆RB◆◆LB◆6◆RB◆ \approx 426.0\,\mathrm{N}$.
+$\cot 55° \approx 0.7002$So
+$R_w = \dfrac◆LB◆3650 \times 0.7002◆RB◆◆LB◆6◆RB◆ \approx 426.0\,\mathrm{N}$.
 
 $\mu_{\min} = F/R_g = R_w/R_g = 426.0/950 = 0.448$.
 
@@ -747,8 +737,8 @@ $120 \lt \dfrac{100}{h} \implies h \lt \dfrac{100}{120} = \dfrac{5}{6} \approx 0
 So the block will slide before it topples if $h \lt \dfrac{5}{6}\,\mathrm{m}$ (i.e., the force is
 Applied below $\dfrac{5}{6}\,\mathrm{m}$ from the ground).
 
-For $h > \dfrac{5}{6}\,\mathrm{m}$The block topples first. At $h = \dfrac{5}{6}\,\mathrm{m}$
-Sliding and toppling occur simultaneously.
+For $h > \dfrac{5}{6}\,\mathrm{m}$The block topples first. At $h = \dfrac{5}{6}\,\mathrm{m}$ Sliding
+and toppling occur simultaneously.
 
 **If you get this wrong, revise:** [Tilting and Toppling](#5-tilting-and-toppling) — Section 5.
 
@@ -806,7 +796,8 @@ A uniform solid is formed from a hemisphere of radius $6\,\mathrm{cm}$ attached 
 <summary>Solution 16</summary>
 **Hemisphere:** The centre of mass of a uniform solid hemisphere is at $\dfrac{3r}{8}$ from the flat face.
 
-$\bar{x}_H = \dfrac◆LB◆3 \times 6◆RB◆◆LB◆8◆RB◆ = \dfrac{18}{8} = 2.25\,\mathrm{cm}$ from the flat face.
+$\bar{x}_H = \dfrac◆LB◆3 \times 6◆RB◆◆LB◆8◆RB◆ = \dfrac{18}{8} = 2.25\,\mathrm{cm}$ from the flat
+face.
 
 Volume of hemisphere: $V_H = \dfrac{2}{3}\pi r^3 = \dfrac{2}{3}\pi(216) = 144\pi\,\mathrm{cm}^3$.
 
@@ -839,17 +830,17 @@ Centre of mass is approximately $4.21\,\mathrm{cm}$ from the flat face.
 
 :::
 
-
 ---
 
-:::tip
-Tip
-Ready to test your understanding of **Moments**? The [diagnostic test](/docs/alevel/maths/diagnostics/diag-moments) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
+:::tip Tip Ready to test your understanding of **Moments**? The
+[diagnostic test](/docs/alevel/maths/diagnostics/diag-moments) contains the hardest questions within
+the A-Level specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Moments with other topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Moments
+with other topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and
+building a personal test matrix. :::
 
 ## Common Pitfalls
 

@@ -1,6 +1,8 @@
 ---
 title: Resource Management and Move Semantics
-description: "C++: Resource Management and Move Semantics — Ownership and RAII (Module 10):; Function Architecture (Module 12):; Error Handling (Module 13):."
+description:
+  'C++: Resource Management and Move Semantics — Ownership and RAII (Module 10):; Function
+  Architecture (Module 12):; Error Handling (Module 13):.'
 date: 2026-03-31T00:00:00.000Z
 tags:
   - cpp
@@ -8,6 +10,7 @@ categories:
   - cpp
 slug: resource-management-intro
 ---
+
 Part 4 addresses the central problem in systems programming: **who is responsible for releasing a
 Resource, and when does that release occur?**
 
@@ -18,23 +21,21 @@ Resource leak, a double-free, or use-after-free — all of which are undefined b
 This part covers four tightly coupled topics:
 
 1. **Ownership and RAII (Module 10):** The idiomatic C++ mechanism that binds resource lifetime to
- scope. Covers `std::unique_ptr``std::shared_ptr``std::weak_ptr`And custom deleters.
+   scope. Covers `std::unique_ptr``std::shared_ptr``std::weak_ptr`And custom deleters.
 
 2. **Value Categories and Move Semantics (Module 11):** The type system machinery that enables
- efficient transfer of resources between scopes without copying. Covers lvalues, rvalues, move
- constructors, RVO, and perfect forwarding.
+   efficient transfer of resources between scopes without copying. Covers lvalues, rvalues, move
+   constructors, RVO, and perfect forwarding.
 
 3. **Function Architecture (Module 12):** How ownership interacts with function boundaries —
- parameter passing, return values, lambdas, and C FFI.
+   parameter passing, return values, lambdas, and C FFI.
 
 4. **Error Handling (Module 13):** Exception safety guarantees, `noexcept`And the modern algebraic
- alternatives (`std::expected``std::variant`).
+   alternatives (`std::expected``std::variant`).
 
-:::info
-Prerequisite Reading This part assumes familiarity with stack frames (Module 3.4), heap
+:::info Prerequisite Reading This part assumes familiarity with stack frames (Module 3.4), heap
 Allocation (Module 3.5), pointers (Module 3.6), and class basics (Module 9). Exception mechanics are
-Covered in detail in Module 13.
-:::
+Covered in detail in Module 13. :::
 
 ## Common Pitfalls
 

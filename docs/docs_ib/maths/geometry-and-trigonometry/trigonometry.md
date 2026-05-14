@@ -1,9 +1,11 @@
 ---
 title: Trigonometry
 tags:
-- maths
+  - maths
 slug: trigonometry
-description: "Rigorous IB mathematics notes covering Trigonometry. Includes definitions, derivations, worked examples, and exam-style problems."
+description:
+  'Rigorous IB mathematics notes covering Trigonometry. Includes definitions, derivations, worked
+  examples, and exam-style problems.'
 ---
 
 ## Radian Measure
@@ -93,11 +95,11 @@ These are defined wherever the denominator is non-zero.
 
 ### Graphs of Reciprocal Functions
 
-| Function | Domain | Range | Asymptotes | $x$-intercepts |
+| Function     | Domain                        | Range                   | Asymptotes                 | $x$-intercepts             |
 | ------------ | ----------------------------- | ----------------------- | -------------------------- | -------------------------- |
-| $y = \csc x$ | $x \neq n\pi$ | $y \le -1$ or $y \ge 1$ | $x = n\pi$ | none |
-| $y = \sec x$ | $x \neq \frac{\pi}{2} + n\pi$ | $y \le -1$ or $y \ge 1$ | $x = \frac{\pi}{2} + n\pi$ | none |
-| $y = \cot x$ | $x \neq n\pi$ | all real $y$ | $x = n\pi$ | $x = \frac{\pi}{2} + n\pi$ |
+| $y = \csc x$ | $x \neq n\pi$                 | $y \le -1$ or $y \ge 1$ | $x = n\pi$                 | none                       |
+| $y = \sec x$ | $x \neq \frac{\pi}{2} + n\pi$ | $y \le -1$ or $y \ge 1$ | $x = \frac{\pi}{2} + n\pi$ | none                       |
+| $y = \cot x$ | $x \neq n\pi$                 | all real $y$            | $x = n\pi$                 | $x = \frac{\pi}{2} + n\pi$ |
 
 ## The Unit Circle
 
@@ -111,11 +113,11 @@ $x^2 + y^2 = 1$.
 
 ### Key Values
 
-| $\theta$ | $0$ | $\frac{\pi}{6}$ | $\frac{\pi}{4}$ | $\frac{\pi}{3}$ | $\frac{\pi}{2}$ | $\pi$ | $\frac{3\pi}{2}$ | $2\pi$ |
+| $\theta$     | $0$ | $\frac{\pi}{6}$      | $\frac{\pi}{4}$      | $\frac{\pi}{3}$      | $\frac{\pi}{2}$ | $\pi$ | $\frac{3\pi}{2}$ | $2\pi$ |
 | ------------ | --- | -------------------- | -------------------- | -------------------- | --------------- | ----- | ---------------- | ------ |
-| $\sin\theta$ | $0$ | $\frac{1}{2}$ | $\frac{\sqrt{2}}{2}$ | $\frac{\sqrt{3}}{2}$ | $1$ | $0$ | $-1$ | $0$ |
-| $\cos\theta$ | $1$ | $\frac{\sqrt{3}}{2}$ | $\frac{\sqrt{2}}{2}$ | $\frac{1}{2}$ | $0$ | $-1$ | $0$ | $1$ |
-| $\tan\theta$ | $0$ | $\frac{1}{\sqrt{3}}$ | $1$ | $\sqrt{3}$ | undefined | $0$ | undefined | $0$ |
+| $\sin\theta$ | $0$ | $\frac{1}{2}$        | $\frac{\sqrt{2}}{2}$ | $\frac{\sqrt{3}}{2}$ | $1$             | $0$   | $-1$             | $0$    |
+| $\cos\theta$ | $1$ | $\frac{\sqrt{3}}{2}$ | $\frac{\sqrt{2}}{2}$ | $\frac{1}{2}$        | $0$             | $-1$  | $0$              | $1$    |
+| $\tan\theta$ | $0$ | $\frac{1}{\sqrt{3}}$ | $1$                  | $\sqrt{3}$           | undefined       | $0$   | undefined        | $0$    |
 
 ### All, Sine, Tan, Cos (ASTC)
 
@@ -158,15 +160,13 @@ For $y = a\sin(bx + c) + d$:
 - $c$ = horizontal phase shift (shift left by $\frac{c}{b}$)
 - $d$ = vertical shift
 
-:::tip
-Exam Tip When sketching trig graphs, always label axis intercepts, maximum/minimum points,
-And show at least one full period .
-:::
+:::tip Exam Tip When sketching trig graphs, always label axis intercepts, maximum/minimum points,
+And show at least one full period . :::
 
-<DesmosGraph title="Trigonometric Functions: y = A sin(Bx + C) + D" expressions={["A\sin(Bx+C)+D", "A\cos(Bx+C)+D", "A\tan(Bx+C)+D"]} width={800} height={500} />
+<DesmosGraph title="Trigonometric Functions: y = A sin(Bx + C) + D" expressions={["A\sin(Bx+C)+D",
+"A\cos(Bx+C)+D", "A\tan(Bx+C)+D"]} width={800} height={500} />
 
-Use the sliders to see how changing $a$$b$$c$And $d$ in $y = a\sin(bx + c) + d$ affects the
-Graph.
+Use the sliders to see how changing $a$$b$$c$And $d$ in $y = a\sin(bx + c) + d$ affects the Graph.
 
 ## Trigonometric Identities
 
@@ -294,11 +294,11 @@ $$
 
 ## Inverse Trigonometric Functions
 
-| Function | Meaning | Domain | Range |
+| Function    | Meaning                          | Domain           | Range                                            |
 | ----------- | -------------------------------- | ---------------- | ------------------------------------------------ |
-| $\arcsin x$ | "the angle whose sine is $x$" | $-1 \le x \le 1$ | $-\frac{\pi}{2} \le \arcsin x \le \frac{\pi}{2}$ |
-| $\arccos x$ | "the angle whose cosine is $x$" | $-1 \le x \le 1$ | $0 \le \arccos x \le \pi$ |
-| $\arctan x$ | "the angle whose tangent is $x$" | all real $x$ | $-\frac{\pi}{2} \lt \arctan x \lt \frac{\pi}{2}$ |
+| $\arcsin x$ | "the angle whose sine is $x$"    | $-1 \le x \le 1$ | $-\frac{\pi}{2} \le \arcsin x \le \frac{\pi}{2}$ |
+| $\arccos x$ | "the angle whose cosine is $x$"  | $-1 \le x \le 1$ | $0 \le \arccos x \le \pi$                        |
+| $\arctan x$ | "the angle whose tangent is $x$" | all real $x$     | $-\frac{\pi}{2} \lt \arctan x \lt \frac{\pi}{2}$ |
 
 ### Properties
 
@@ -341,11 +341,9 @@ $$
 \sin\theta = \sqrt{1 - \frac{1}{9}} = \frac{2\sqrt{2}}{3}
 $$
 
-:::tip
-Exam Tip Be careful with the range of inverse trig functions. Your calculator only gives the
+:::tip Exam Tip Be careful with the range of inverse trig functions. Your calculator only gives the
 Principal value -- you may need to find other solutions using the periodic properties or the ASTC
-Rule.
-:::
+Rule. :::
 
 ## Sine and Cosine Rules
 
@@ -450,7 +448,8 @@ $$
 B_1 = \arcsin(0.919) \approx 66.8^{\circ}, \quad B_2 = 180^{\circ} - 66.8^{\circ} = 113.2^{\circ}
 $$
 
-Check both: $A + B_1 = 106.8^{\circ} \lt 180^\circ$ and $A + B_2 = 153.2^{\circ} \lt 180^\circ$. Both are valid.
+Check both: $A + B_1 = 106.8^{\circ} \lt 180^\circ$ and $A + B_2 = 153.2^{\circ} \lt 180^\circ$.
+Both are valid.
 
 **Triangle 1:** $B = 66.8^\circ$$C = 73.2^\circ$
 $c_1 = \frac{7\sin 73.2^{\circ}}{\sin 40^{\circ}} \approx 10.4$
@@ -488,14 +487,14 @@ $$
 
 ### Worked Example: Bearing Problem
 
-**Problem:** A ship sails from port $A$ on a bearing of $050^\circ$ for $15$ km to point $B$Then
-On a bearing of $110^\circ$ for $20$ km to point $C$. Find the distance and bearing from $C$ back to
+**Problem:** A ship sails from port $A$ on a bearing of $050^\circ$ for $15$ km to point $B$Then On
+a bearing of $110^\circ$ for $20$ km to point $C$. Find the distance and bearing from $C$ back to
 $A$.
 
 **Solution:**
 
-The angle at $B$ is the change in bearing: $110^{\circ} - 050^{\circ} = 60^\circ$. The interior angle at $B$ is
-$180^{\circ} - 60^{\circ} = 120^\circ$.
+The angle at $B$ is the change in bearing: $110^{\circ} - 050^{\circ} = 60^\circ$. The interior
+angle at $B$ is $180^{\circ} - 60^{\circ} = 120^\circ$.
 
 Using the cosine rule:
 
@@ -679,8 +678,8 @@ $$
 
 ### General Approach
 
-In IB exams, trigonometric proofs ask you to show that one expression equals another. The
-Standard approach is:
+In IB exams, trigonometric proofs ask you to show that one expression equals another. The Standard
+approach is:
 
 1. **Start with one side** -- the more complex side (LHS).
 2. **Apply known identities** to transform it step by step toward the other side.
@@ -690,10 +689,10 @@ Standard approach is:
 
 - **Factor:** Look for common factors, e.g., $\sin x + \sin x\cos x = \sin x(1 + \cos x)$.
 - **Use $\sin^2 + \cos^2 = 1$:** Convert everything to sines or everything to cosines.
-- **Convert to $\sin$ and $\cos$:** When $\tan$$\sec$$\csc$Or $\cot$ appear, express them in
- terms of $\sin$ and $\cos$.
+- **Convert to $\sin$ and $\cos$:** When $\tan$$\sec$$\csc$Or $\cot$ appear, express them in terms
+  of $\sin$ and $\cos$.
 - **Look for compound angle structure:** Recognise when an expression matches $\sin(A \pm B)$ or
- $\cos(A \pm B)$.
+  $\cos(A \pm B)$.
 - **Common denominator:** When fractions appear, combine them over a single denominator.
 
 ### Worked Example: Proof by Multiplication
@@ -790,8 +789,8 @@ Arc length $s = r\theta = 8 \times \frac{3}{2} = 12$ cm.
 <details>
 <summary>Problem 2: Compound Angle Identity</summary>
 
-**Problem:** Given that $\sin\alpha = \frac{3}{5}$ and $\cos\beta = \frac{12}{13}$Where $\alpha$
-And $\beta$ are acute angles, find the exact value of $\sin(\alpha + \beta)$.
+**Problem:** Given that $\sin\alpha = \frac{3}{5}$ and $\cos\beta = \frac{12}{13}$Where $\alpha$ And
+$\beta$ are acute angles, find the exact value of $\sin(\alpha + \beta)$.
 
 **Solution:**
 
@@ -842,8 +841,7 @@ So $x = 0, \frac{2\pi}{3}, \frac{4\pi}{3}, 2\pi$.
 <details>
 <summary>Problem 5: Non-Right-Angled Triangle</summary>
 
-**Problem:** In triangle $PQR$$p = 13$$q = 14$$r = 15$. Find the largest angle of the
-Triangle.
+**Problem:** In triangle $PQR$$p = 13$$q = 14$$r = 15$. Find the largest angle of the Triangle.
 
 **Solution:**
 
@@ -935,18 +933,20 @@ $$
 ## Related Content at Other Levels
 
 - **A-Level Trigonometry:** [Mathematics](https://alevel.wyattau.com/docs/maths/maths)
-- **DSE Trigonometry:** [Trigonometry](https://academics.wyattau.com/docs/dse/Maths/compulsory/trigonometry)
+- **DSE Trigonometry:**
+  [Trigonometry](https://academics.wyattau.com/docs/dse/Maths/compulsory/trigonometry)
 
 ---
 
-:::tip
-Diagnostic Test
-Ready to test your understanding of **Trigonometry**? The [diagnostic test](/docs/ib/maths/diagnostics/diag-trigonometry) contains the hardest questions within the IB specification for this topic, each with a full worked solution.
+:::tip Diagnostic Test Ready to test your understanding of **Trigonometry**? The
+[diagnostic test](/docs/ib/maths/diagnostics/diag-trigonometry) contains the hardest questions
+within the IB specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Trigonometry with other IB mathematics topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine
+Trigonometry with other IB mathematics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/ib/maths/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/ib/maths/diagnostics/diagnostic-guide) for instructions on self-marking
+and building a personal test matrix. :::
 
 ## Summary
 

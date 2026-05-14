@@ -1,6 +1,8 @@
 ---
 title: Boolean Algebra
-description: "A-Level Computer Science notes on Boolean Algebra: 1. Fundamental Definitions for comprehensive revision and examination preparation."
+description:
+  'A-Level Computer Science notes on Boolean Algebra: 1. Fundamental Definitions for comprehensive
+  revision and examination preparation.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - ComputerScience
@@ -9,20 +11,21 @@ categories:
   - ComputerScience
 slug: boolean-algebra
 ---
+
 ## 1. Fundamental Definitions
 
 We define the Boolean algebra over $\mathbb{B} = \{0, 1\}$ with operations:
 
 ### Basic Gates
 
-| Operation | Symbol | Definition |
+| Operation | Symbol                 | Definition                           |
 | --------- | ---------------------- | ------------------------------------ |
-| AND | $A \cdot B$ | $1$ iff both $A = 1$ and $B = 1$ |
-| OR | $A + B$ | $1$ iff $A = 1$ or $B = 1$ or both |
-| NOT | $\bar{A}$ | $1$ iff $A = 0$ |
-| XOR | $A \oplus B$ | $1$ iff exactly one of $A, B$ is $1$ |
-| NAND | $\overline{A \cdot B}$ | NOT of AND |
-| NOR | $\overline{A + B}$ | NOT of OR |
+| AND       | $A \cdot B$            | $1$ iff both $A = 1$ and $B = 1$     |
+| OR        | $A + B$                | $1$ iff $A = 1$ or $B = 1$ or both   |
+| NOT       | $\bar{A}$              | $1$ iff $A = 0$                      |
+| XOR       | $A \oplus B$           | $1$ iff exactly one of $A, B$ is $1$ |
+| NAND      | $\overline{A \cdot B}$ | NOT of AND                           |
+| NOR       | $\overline{A + B}$     | NOT of OR                            |
 
 ### Truth Tables
 
@@ -30,53 +33,53 @@ We define the Boolean algebra over $\mathbb{B} = \{0, 1\}$ with operations:
 
 | $A$ | $B$ | $A \cdot B$ |
 | --- | --- | ----------- |
-| 0 | 0 | 0 |
-| 0 | 1 | 0 |
-| 1 | 0 | 0 |
-| 1 | 1 | 1 |
+| 0   | 0   | 0           |
+| 0   | 1   | 0           |
+| 1   | 0   | 0           |
+| 1   | 1   | 1           |
 
 **OR ($+$):**
 
 | $A$ | $B$ | $A + B$ |
 | --- | --- | ------- |
-| 0 | 0 | 0 |
-| 0 | 1 | 1 |
-| 1 | 0 | 1 |
-| 1 | 1 | 1 |
+| 0   | 0   | 0       |
+| 0   | 1   | 1       |
+| 1   | 0   | 1       |
+| 1   | 1   | 1       |
 
 **NOT ($\bar{\phantom{A}}$):**
 
 | $A$ | $\bar{A}$ |
 | --- | --------- |
-| 0 | 1 |
-| 1 | 0 |
+| 0   | 1         |
+| 1   | 0         |
 
 **XOR ($\oplus$):**
 
 | $A$ | $B$ | $A \oplus B$ |
 | --- | --- | ------------ |
-| 0 | 0 | 0 |
-| 0 | 1 | 1 |
-| 1 | 0 | 1 |
-| 1 | 1 | 0 |
+| 0   | 0   | 0            |
+| 0   | 1   | 1            |
+| 1   | 0   | 1            |
+| 1   | 1   | 0            |
 
 **NAND:**
 
 | $A$ | $B$ | $\overline{A \cdot B}$ |
 | --- | --- | ---------------------- |
-| 0 | 0 | 1 |
-| 0 | 1 | 1 |
-| 1 | 0 | 1 |
-| 1 | 1 | 0 |
+| 0   | 0   | 1                      |
+| 0   | 1   | 1                      |
+| 1   | 0   | 1                      |
+| 1   | 1   | 0                      |
 
 **NOR:**
 
 | $A$ | $B$ | $\overline{A + B}$ |
 | --- | --- | ------------------ |
-| 0 | 0 | 1 |
-| 0 | 1 | 0 |
-| 1 | 0 | 0 |
-| 1 | 1 | 0 |
+| 0   | 0   | 1                  |
+| 0   | 1   | 0                  |
+| 1   | 0   | 0                  |
+| 1   | 1   | 0                  |
 
 <hr />
 
@@ -84,22 +87,22 @@ We define the Boolean algebra over $\mathbb{B} = \{0, 1\}$ with operations:
 
 ### Fundamental Identities
 
-| Law | Expression |
+| Law                        | Expression                                                    |
 | -------------------------- | ------------------------------------------------------------- |
-| Identity (AND) | $A \cdot 1 = A$ |
-| Identity (OR) | $A + 0 = A$ |
-| Null (AND) | $A \cdot 0 = 0$ |
-| Null (OR) | $A + 1 = 1$ |
-| Complement (AND) | $A \cdot \bar{A} = 0$ |
-| Complement (OR) | $A + \bar{A} = 1$ |
-| Idempotent (AND) | $A \cdot A = A$ |
-| Idempotent (OR) | $A + A = A$ |
-| Commutative | $A \cdot B = B \cdot A$; $A + B = B + A$ |
-| Associative | $(A \cdot B) \cdot C = A \cdot (B \cdot C)$; similarly for OR |
-| Distributive | $A \cdot (B + C) = A \cdot B + A \cdot C$ |
-| Distributive (OR over AND) | $A + (B \cdot C) = (A + B) \cdot (A + C)$ |
-| Absorption | $A + A \cdot B = A$; $A \cdot (A + B) = A$ |
-| Double negation | $\bar{\bar{A}} = A$ |
+| Identity (AND)             | $A \cdot 1 = A$                                               |
+| Identity (OR)              | $A + 0 = A$                                                   |
+| Null (AND)                 | $A \cdot 0 = 0$                                               |
+| Null (OR)                  | $A + 1 = 1$                                                   |
+| Complement (AND)           | $A \cdot \bar{A} = 0$                                         |
+| Complement (OR)            | $A + \bar{A} = 1$                                             |
+| Idempotent (AND)           | $A \cdot A = A$                                               |
+| Idempotent (OR)            | $A + A = A$                                                   |
+| Commutative                | $A \cdot B = B \cdot A$; $A + B = B + A$                      |
+| Associative                | $(A \cdot B) \cdot C = A \cdot (B \cdot C)$; similarly for OR |
+| Distributive               | $A \cdot (B + C) = A \cdot B + A \cdot C$                     |
+| Distributive (OR over AND) | $A + (B \cdot C) = (A + B) \cdot (A + C)$                     |
+| Absorption                 | $A + A \cdot B = A$; $A \cdot (A + B) = A$                    |
+| Double negation            | $\bar{\bar{A}} = A$                                           |
 
 ### De Morgan's Laws
 
@@ -112,10 +115,10 @@ We define the Boolean algebra over $\mathbb{B} = \{0, 1\}$ with operations:
 
 | $A$ | $B$ | $A+B$ | $\overline{A+B}$ | $\bar{A}$ | $\bar{B}$ | $\bar{A}\cdot\bar{B}$ |
 | --- | --- | ----- | ---------------- | --------- | --------- | --------------------- |
-| 0 | 0 | 0 | 1 | 1 | 1 | 1 |
-| 0 | 1 | 1 | 0 | 1 | 0 | 0 |
-| 1 | 0 | 1 | 0 | 0 | 1 | 0 |
-| 1 | 1 | 1 | 0 | 0 | 0 | 0 |
+| 0   | 0   | 0     | 1                | 1         | 1         | 1                     |
+| 0   | 1   | 1     | 0                | 1         | 0         | 0                     |
+| 1   | 0   | 1     | 0                | 0         | 1         | 0                     |
+| 1   | 1   | 1     | 0                | 0         | 0         | 0                     |
 
 Columns 4 and 7 are identical. $\square$
 
@@ -239,9 +242,8 @@ A=1  |  0   1   1   1 |
 Groups:
 
 - Cells (0,1,5,4? no, 4 is 0): Cells (0,1): $A=0, B=0, C$ varies → $\bar{A}\bar{B}$ Actually, let me
- re-map: minterm $m_i$ corresponds to binary $i$ in order $ABC$.
- - $m_0 = 000$$m_1 = 001$$m_2 = 010$$m_3 = 011$$m_4 = 100$$m_5 = 101$$m_6 = 110$
- $m_7 = 111$
+  re-map: minterm $m_i$ corresponds to binary $i$ in order $ABC$.
+- $m_0 = 000$$m_1 = 001$$m_2 = 010$$m_3 = 011$$m_4 = 100$$m_5 = 101$$m_6 = 110$ $m_7 = 111$
 
 K-map:
 
@@ -258,7 +260,7 @@ Groups:
 
 1. (m0, m1) = $(\bar{A}\bar{B})$ — $A=0, B=0, C$ varies
 2. (m1, m5) = $(\bar{B}C)$ — $B=0, C=1, A$ varies (wraps vertically? No, these are in the same
- column BC=01)
+   column BC=01)
 3. (m6, m7) = $(AB)$ — $A=1, B=1, C$ varies
 4. (m0, m2) = $(\bar{A}\bar{C})$ — $A=0, C=0, B$ varies
 
@@ -267,7 +269,7 @@ Optimal grouping:
 - (m0, m1): $\bar{A}\bar{B}$
 - (m6, m7): $AB$
 - (m5, m7): $AC$ (column BC=11 and BC=01 share? No. M5=101, m7=111 differ in B. These are at BC=01
- and BC=11 for A=1.)
+  and BC=11 for A=1.)
 
 Let me redo. The groups are:
 
@@ -286,16 +288,14 @@ $f = \bar{A}\bar{B} + \bar{B}C + AB$
 
 </details>
 
-:::info
-Board-specific
+:::info Board-specific
 
 - **AQA** requires Karnaugh maps for simplification of Boolean expressions up to 4 variables
 - **CIE (9618)** focuses on Boolean algebra identities, De Morgan's laws, and simplification using
- algebraic methods (not Karnaugh maps)
+  algebraic methods (not Karnaugh maps)
 - **OCR (A)** requires truth tables, logic gate diagrams, and construction of half adder / full
- adder circuits
-- **Edexcel** covers truth tables, logic gates, and Boolean algebra
-:::
+  adder circuits
+- **Edexcel** covers truth tables, logic gates, and Boolean algebra :::
 
 <hr />
 
@@ -310,14 +310,12 @@ Standard symbols:
 - **NOR gate:** OR with circle
 - **XOR gate:** OR with extra curved line on input
 
-:::tip
-Exam technique When drawing logic circuits from a Boolean expression:
+:::tip Exam technique When drawing logic circuits from a Boolean expression:
 
 1. Identify the order of operations (parentheses first)
 2. Draw inputs on the left
 3. Work rightward, one gate at a time
-4. Label all intermediate and output signals
-:::
+4. Label all intermediate and output signals :::
 
 <hr />
 
@@ -331,10 +329,10 @@ A **half adder** adds two single bits, producing a sum and carry.
 
 | $A$ | $B$ | Sum | Carry |
 | --- | --- | --- | ----- |
-| 0 | 0 | 0 | 0 |
-| 0 | 1 | 1 | 0 |
-| 1 | 0 | 1 | 0 |
-| 1 | 1 | 0 | 1 |
+| 0   | 0   | 0   | 0     |
+| 0   | 1   | 1   | 0     |
+| 1   | 0   | 1   | 0     |
+| 1   | 1   | 0   | 1     |
 
 **Derivation:** From the truth table:
 
@@ -351,14 +349,14 @@ A **full adder** adds three bits (two inputs + carry-in), producing sum and carr
 
 | $A$ | $B$ | $C_{in}$ | Sum | $C_{out}$ |
 | --- | --- | -------- | --- | --------- |
-| 0 | 0 | 0 | 0 | 0 |
-| 0 | 0 | 1 | 1 | 0 |
-| 0 | 1 | 0 | 1 | 0 |
-| 0 | 1 | 1 | 0 | 1 |
-| 1 | 0 | 0 | 1 | 0 |
-| 1 | 0 | 1 | 0 | 1 |
-| 1 | 1 | 0 | 0 | 1 |
-| 1 | 1 | 1 | 1 | 1 |
+| 0   | 0   | 0        | 0   | 0         |
+| 0   | 0   | 1        | 1   | 0         |
+| 0   | 1   | 0        | 1   | 0         |
+| 0   | 1   | 1        | 0   | 1         |
+| 1   | 0   | 0        | 1   | 0         |
+| 1   | 0   | 1        | 0   | 1         |
+| 1   | 1   | 0        | 0   | 1         |
+| 1   | 1   | 1        | 1   | 1         |
 
 **Derivation:**
 
@@ -421,8 +419,8 @@ Output $Q$ takes the value of the input $D$.
 
 | $D$ | $Q_{next}$ (on clock edge) |
 | --- | -------------------------- |
-| 0 | 0 |
-| 1 | 1 |
+| 0   | 0                          |
+| 1   | 1                          |
 
 **Characteristic equation:** $Q_{next} = D$
 
@@ -442,14 +440,14 @@ D-type flip-flops are the fundamental building blocks of:
 1. Write the Boolean expression from the problem statement
 2. If a truth table is given, write the expression as a sum of minterms
 3. Simplify using:
- - Boolean algebra laws, or
- - Karnaugh maps (preferred for up to 4 variables)
+
+- Boolean algebra laws, or
+- Karnaugh maps (preferred for up to 4 variables)
+
 4. Draw the circuit from the simplified expression
 
-:::tip
-Exam technique For K-maps with don't-care conditions (X), treat X as 1 if it helps make a
-Larger group, and 0 otherwise. This minimises the expression.
-:::
+:::tip Exam technique For K-maps with don't-care conditions (X), treat X as 1 if it helps make a
+Larger group, and 0 otherwise. This minimises the expression. :::
 
 <hr />
 
@@ -471,10 +469,10 @@ $\bar{B}$And $\bar{A} + \bar{B}$.
 
 | $A$ | $B$ | $A \cdot B$ | $\overline{A \cdot B}$ | $\bar{A}$ | $\bar{B}$ | $\bar{A}+\bar{B}$ |
 | --- | --- | ----------- | ---------------------- | --------- | --------- | ----------------- |
-| 0 | 0 | 0 | 1 | 1 | 1 | 1 |
-| 0 | 1 | 0 | 1 | 1 | 0 | 1 |
-| 1 | 0 | 0 | 1 | 0 | 1 | 1 |
-| 1 | 1 | 1 | 0 | 0 | 0 | 0 |
+| 0   | 0   | 0           | 1                      | 1         | 1         | 1                 |
+| 0   | 1   | 0           | 1                      | 1         | 0         | 1                 |
+| 1   | 0   | 0           | 1                      | 0         | 1         | 1                 |
+| 1   | 1   | 1           | 0                      | 0         | 0         | 0                 |
 
 Columns 4 and 7 are identical. ✓
 
@@ -782,8 +780,8 @@ A=1  |  X   1   X   0 |
 Grouping strategy:
 
 - (m0, m1, m4, m5): This wraps — m0(000), m1(001) in A=0; m4(100), m5(101) in A=1. These form a
- column BC=00 and BC=01. Treat m1 and m4 as 1. Group: $\bar{C}$ (all have C=0 or C=1... Wait, BC=00
- has C=0, BC=01 has C=1).
+  column BC=00 and BC=01. Treat m1 and m4 as 1. Group: $\bar{C}$ (all have C=0 or C=1... Wait, BC=00
+  has C=0, BC=01 has C=1).
 
 Let me re-map: columns are BC values.
 

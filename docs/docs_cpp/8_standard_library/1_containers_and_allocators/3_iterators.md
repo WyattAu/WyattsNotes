@@ -1,6 +1,8 @@
 ---
 title: Iterator Categories, Traversal, and Invalidation
-description: "C++: Iterator Categories, Traversal, and Invalidation — Legacy Iterator Categories; Iterator Traits; Sentinel Iterators (C++20) vs Traditional End Iterators."
+description:
+  'C++: Iterator Categories, Traversal, and Invalidation — Legacy Iterator Categories; Iterator
+  Traits; Sentinel Iterators (C++20) vs Traditional End Iterators.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -8,6 +10,7 @@ categories:
   - Cpp
 slug: iterator-categories-traversal-invalidation
 ---
+
 ## Iterator Categories, Traversal, and Invalidation
 
 Iterators are the glue between containers and algorithms in the C++ standard library. Understanding
@@ -33,14 +36,14 @@ $$
 
 Each category adds capabilities:
 
-| Category | Capabilities [N4950 §25.3.4] |
-| ------------------------------- | ------------------------------------------------------------- |
-| **LegacyInputIterator** | `++it``*it``it == end`Single-pass |
-| **LegacyOutputIterator** | `*it = value``++it`Single-pass |
-| **LegacyForwardIterator** | Multi-pass, default-constructible, `it++` returns copy |
-| **LegacyBidirectionalIterator** | `--it`Multi-pass |
-| **LegacyRandomAccessIterator** | `it + n``it - n``it[n]``&lt;``&gt;``&lt;=``&gt;=` |
-| **LegacyContiguousIterator** | Points to contiguous elements (e.g., vector iterators) |
+| Category                        | Capabilities [N4950 §25.3.4]                           |
+| ------------------------------- | ------------------------------------------------------ |
+| **LegacyInputIterator**         | `++it``*it``it == end`Single-pass                      |
+| **LegacyOutputIterator**        | `*it = value``++it`Single-pass                         |
+| **LegacyForwardIterator**       | Multi-pass, default-constructible, `it++` returns copy |
+| **LegacyBidirectionalIterator** | `--it`Multi-pass                                       |
+| **LegacyRandomAccessIterator**  | `it + n``it - n``it[n]``&lt;``&gt;``&lt;=``&gt;=`      |
+| **LegacyContiguousIterator**    | Points to contiguous elements (e.g., vector iterators) |
 
 ```cpp
 #include <iostream>
@@ -78,12 +81,12 @@ int main() {
 Every iterator must expose a set of associated types through `std::iterator_traits` [N4950 §25.3.3].
 These traits allow algorithms to determine iterator properties at compile time:
 
-| Trait | Description |
+| Trait               | Description                                              |
 | ------------------- | -------------------------------------------------------- |
-| `difference_type` | Signed integer type for distance between iterators |
-| `value_type` | Type of the element the iterator points to |
-| `pointer` | Pointer-to-element type |
-| `reference` | Reference-to-element type |
+| `difference_type`   | Signed integer type for distance between iterators       |
+| `value_type`        | Type of the element the iterator points to               |
+| `pointer`           | Pointer-to-element type                                  |
+| `reference`         | Reference-to-element type                                |
 | `iterator_category` | Legacy category tag (e.g., `random_access_iterator_tag`) |
 
 ```cpp
@@ -122,8 +125,8 @@ int main() {
 
 C++20 introduced the **sentinel** concept [N4950 §25.3.5]. A sentinel is a type that can be compared
 With an iterator to determine the end of a range, but is **not itself an iterator**. The key
-Interface is `std::sentinel_for&lt;S, I>`Which requires that `S` and `I` be comparable with `==`
-And `!=` [N4950 §25.3.5.2].
+Interface is `std::sentinel_for&lt;S, I>`Which requires that `S` and `I` be comparable with `==` And
+`!=` [N4950 §25.3.5.2].
 
 ```cpp
 #include <iostream>
@@ -187,11 +190,9 @@ int main() {
 }
 ```
 
-:::info
-The standard library provides `std::default_sentinel` (used with `std::counted_iterator`)
+:::info The standard library provides `std::default_sentinel` (used with `std::counted_iterator`)
 And `std::unreachable_sentinel` (a sentinel that never compares equal to any iterator, used as a
-Hint to the optimizer that a loop will not reach it) [N4950 §25.5].
-:::
+Hint to the optimizer that a loop will not reach it) [N4950 §25.5]. :::
 
 ### `std::counted_iterator` and `std::default_sentinel`
 
@@ -222,14 +223,14 @@ int main() {
 Understanding iterator invalidation is critical for correctness. The rules vary by container type
 And operation [N4950 §22]:
 
-| Container | Reallocation | Insert (middle) | Erase | push_back |
+| Container                       | Reallocation               | Insert (middle)            | Erase                 | push_back                        |
 | ------------------------------- | -------------------------- | -------------------------- | --------------------- | -------------------------------- |
-| `vector` | All invalidated | All invalidated | At/after erased | May invalidate all |
-| `deque` | N/A | All iters invalidated | All iters invalidated | Valid (iters at end invalidated) |
-| `list` | N/A | Valid | Only erased | Valid |
-| `forward_list` | N/A | Valid | Only erased | Valid |
-| `map`/`set` | N/A | Valid | Only erased | N/A |
-| `unordered_map`/`unordered_set` | On rehash: all invalidated | On rehash: all invalidated | Only erased | On rehash: all invalidated |
+| `vector`                        | All invalidated            | All invalidated            | At/after erased       | May invalidate all               |
+| `deque`                         | N/A                        | All iters invalidated      | All iters invalidated | Valid (iters at end invalidated) |
+| `list`                          | N/A                        | Valid                      | Only erased           | Valid                            |
+| `forward_list`                  | N/A                        | Valid                      | Only erased           | Valid                            |
+| `map`/`set`                     | N/A                        | Valid                      | Only erased           | N/A                              |
+| `unordered_map`/`unordered_set` | On rehash: all invalidated | On rehash: all invalidated | Only erased           | On rehash: all invalidated       |
 
 ```cpp
 #include <vector>
@@ -292,8 +293,8 @@ Allocates a new, larger array, copies (or moves) all elements to the new array, 
 Array. All iterators, pointers, and references to elements in the old array are invalidated because
 The old memory is deallocated.
 
-The reallocation strategy is geometric growth (capacity doubles), which amortizes the cost
-Of reallocation across insertions. The amortized cost of `push_back` is O(1), but any individual
+The reallocation strategy is geometric growth (capacity doubles), which amortizes the cost Of
+reallocation across insertions. The amortized cost of `push_back` is O(1), but any individual
 `push_back` may trigger a reallocation costing O(n).
 
 ### Unordered Container Invalidation on Rehash
@@ -368,29 +369,29 @@ int main() {
 
 ### Algorithm Requirements Quick Reference
 
-| Algorithm | Minimum Iterator Requirement |
+| Algorithm               | Minimum Iterator Requirement             |
 | ----------------------- | ---------------------------------------- |
-| `std::find` | Input |
-| `std::count` | Input |
-| `std::for_each` | Input |
-| `std::copy` | Input (source), Output (dest) |
-| `std::transform` | Input (source), Output (dest) |
-| `std::accumulate` | Input |
-| `std::reverse` | Bidirectional |
-| `std::next_permutation` | Bidirectional |
-| `std::sort` | RandomAccess |
-| `std::nth_element` | RandomAccess |
-| `std::partial_sort` | RandomAccess |
-| `std::lower_bound` | RandomAccess (or Forward on associative) |
-| `std::binary_search` | RandomAccess |
-| `std::shuffle` | RandomAccess |
-| `std::stable_sort` | RandomAccess |
+| `std::find`             | Input                                    |
+| `std::count`            | Input                                    |
+| `std::for_each`         | Input                                    |
+| `std::copy`             | Input (source), Output (dest)            |
+| `std::transform`        | Input (source), Output (dest)            |
+| `std::accumulate`       | Input                                    |
+| `std::reverse`          | Bidirectional                            |
+| `std::next_permutation` | Bidirectional                            |
+| `std::sort`             | RandomAccess                             |
+| `std::nth_element`      | RandomAccess                             |
+| `std::partial_sort`     | RandomAccess                             |
+| `std::lower_bound`      | RandomAccess (or Forward on associative) |
+| `std::binary_search`    | RandomAccess                             |
+| `std::shuffle`          | RandomAccess                             |
+| `std::stable_sort`      | RandomAccess                             |
 
 ### Proxy Iterators
 
 Some containers use **proxy iterators** where `*it` returns a proxy object instead of a reference to
-The actual element. The canonical example is `std::vector<bool>`Which stores bits packed into
-Words. Dereferencing its iterator returns a temporary proxy object, not a `bool&`:
+The actual element. The canonical example is `std::vector<bool>`Which stores bits packed into Words.
+Dereferencing its iterator returns a temporary proxy object, not a `bool&`:
 
 ```cpp
 #include <iostream>
@@ -416,8 +417,8 @@ int main() {
 ```
 
 Proxy iterators complicate generic code because they violate the assumption that `*it` returns a
-Reference. C++20 ranges handle this correctly via `std::ranges::range_reference_t`Which returns
-The proxy type rather than requiring a true reference.
+Reference. C++20 ranges handle this correctly via `std::ranges::range_reference_t`Which returns The
+proxy type rather than requiring a true reference.
 
 ### Const Iterators vs Non-Const Iterators
 

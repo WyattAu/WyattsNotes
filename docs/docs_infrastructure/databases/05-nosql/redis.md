@@ -1,9 +1,12 @@
 ---
 id: redis
 title: Redis Deep Dive
-description: "Redis Deep Dive — Architecture Overview; Single-Threaded Event Loop; redis.conf; Memory Model with worked examples and exam-style questions."
+description:
+  'Redis Deep Dive — Architecture Overview; Single-Threaded Event Loop; redis.conf; Memory Model
+  with worked examples and exam-style questions.'
 slug: redis
 ---
+
 ## Architecture Overview
 
 Redis is a single-threaded, event-driven, in-memory data structure store. It uses I/O multiplexing
@@ -215,16 +218,16 @@ PERSIST key                 # Remove TTL
 
 When `maxmemory` is reached, Redis uses the configured policy to evict keys:
 
-| Policy | Behavior | Best For |
+| Policy            | Behavior                                    | Best For                            |
 | ----------------- | ------------------------------------------- | ----------------------------------- |
-| `noeviction` | Return errors on write commands | Data must not be lost |
-| `allkeys-lru` | Evict least recently used keys (any key) | General-purpose caching |
-| `allkeys-lfu` | Evict least frequently used keys (Redis 4+) | Better than LRU for hot data |
-| `volatile-lru` | Evict LRU among keys with TTL set | Cache with important permanent keys |
-| `volatile-lfu` | Evict LFU among keys with TTL set | Cache with important permanent keys |
-| `allkeys-random` | Evict random keys | Uniform access patterns |
-| `volatile-random` | Evict random keys with TTL set | Uniform access with permanent data |
-| `volatile-ttl` | Evict keys with shortest TTL | Time-based cache |
+| `noeviction`      | Return errors on write commands             | Data must not be lost               |
+| `allkeys-lru`     | Evict least recently used keys (any key)    | General-purpose caching             |
+| `allkeys-lfu`     | Evict least frequently used keys (Redis 4+) | Better than LRU for hot data        |
+| `volatile-lru`    | Evict LRU among keys with TTL set           | Cache with important permanent keys |
+| `volatile-lfu`    | Evict LFU among keys with TTL set           | Cache with important permanent keys |
+| `allkeys-random`  | Evict random keys                           | Uniform access patterns             |
+| `volatile-random` | Evict random keys with TTL set              | Uniform access with permanent data  |
+| `volatile-ttl`    | Evict keys with shortest TTL                | Time-based cache                    |
 
 ## Persistence
 
@@ -282,13 +285,13 @@ aof-use-rdb-preamble yes
 The AOF file starts with an RDB snapshot (fast loading) followed by AOF incremental changes
 (fine-grained durability). This combines the advantages of both approaches.
 
-| Feature | RDB | AOF | Mixed |
+| Feature        | RDB                  | AOF                        | Mixed                |
 | -------------- | -------------------- | -------------------------- | -------------------- |
-| Durability | Point-in-time only | Every write (configurable) | Good |
-| File size | Compact | Grows over time | Compact + small tail |
-| Recovery speed | Fast (binary load) | Slow (replay commands) | Fast |
-| Write overhead | Fork during snapshot | Every write logged | Moderate |
-| Best for | Backup, replication | Maximum durability | General purpose |
+| Durability     | Point-in-time only   | Every write (configurable) | Good                 |
+| File size      | Compact              | Grows over time            | Compact + small tail |
+| Recovery speed | Fast (binary load)   | Slow (replay commands)     | Fast                 |
+| Write overhead | Fork during snapshot | Every write logged         | Moderate             |
+| Best for       | Backup, replication  | Maximum durability         | General purpose      |
 
 ## Replication
 
@@ -351,12 +354,12 @@ sentinel parallel-syncs mymaster 1
 sentinel auth-pass mymaster your_password
 ```
 
-| Parameter | Meaning |
+| Parameter                 | Meaning                                             |
 | ------------------------- | --------------------------------------------------- |
-| `monitor` | Master name, IP, port, quorum (votes needed) |
-| `down-after-milliseconds` | Mark master as down after this many ms |
-| `failover-timeout` | Wait this long between failovers |
-| `parallel-syncs` | How many replicas to resync at once during failover |
+| `monitor`                 | Master name, IP, port, quorum (votes needed)        |
+| `down-after-milliseconds` | Mark master as down after this many ms              |
+| `failover-timeout`        | Wait this long between failovers                    |
+| `parallel-syncs`          | How many replicas to resync at once during failover |
 
 Sentinel also acts as a configuration provider: clients connect to Sentinel to discover the current
 Master address.
@@ -583,11 +586,11 @@ pipe.execute()
 
 Performance comparison:
 
-| Method | 10,000 commands | Latency (approx) |
+| Method     | 10,000 commands | Latency (approx) |
 | ---------- | --------------- | ---------------- |
-| Individual | 10,000 RTTs | ~10s (1ms/RTT) |
-| Pipeline | 1 RTT | ~50ms |
-| Lua script | 1 RTT | ~30ms |
+| Individual | 10,000 RTTs     | ~10s (1ms/RTT)   |
+| Pipeline   | 1 RTT           | ~50ms            |
+| Lua script | 1 RTT           | ~30ms            |
 
 ## Memory Optimization
 
@@ -595,15 +598,15 @@ Performance comparison:
 
 Redis automatically selects memory-efficient encodings based on value characteristics:
 
-| Type | Encoding | When Used | Memory per element |
+| Type       | Encoding  | When Used                               | Memory per element |
 | ---------- | --------- | --------------------------------------- | ------------------ |
-| Hash | ziplist | &lt;= 512 fields, each &lt;= 64 bytes | ~2 bytes |
-| Hash | hashtable | Exceeds ziplist thresholds | ~60 bytes |
-| List | quicklist | Always (ziplist nodes in linked list) | ~8 bytes |
-| Set | intset | All integers, count &lt;= 512 | ~4 bytes |
-| Set | hashtable | Non-integers or count &gt; 512 | ~60 bytes |
-| Sorted Set | ziplist | &lt;= 128 elements, each &lt;= 64 bytes | ~8 bytes |
-| Sorted Set | skiplist | Exceeds ziplist thresholds | ~60 bytes |
+| Hash       | ziplist   | &lt;= 512 fields, each &lt;= 64 bytes   | ~2 bytes           |
+| Hash       | hashtable | Exceeds ziplist thresholds              | ~60 bytes          |
+| List       | quicklist | Always (ziplist nodes in linked list)   | ~8 bytes           |
+| Set        | intset    | All integers, count &lt;= 512           | ~4 bytes           |
+| Set        | hashtable | Non-integers or count &gt; 512          | ~60 bytes          |
+| Sorted Set | ziplist   | &lt;= 128 elements, each &lt;= 64 bytes | ~8 bytes           |
+| Sorted Set | skiplist  | Exceeds ziplist thresholds              | ~60 bytes          |
 
 ### Hash Tags for Related Data
 
@@ -707,9 +710,9 @@ SCAN 0 MATCH user:* COUNT 100
 
 ### Not Setting maxmemory
 
-Without `maxmemory`Redis consumes all available RAM and triggers the OS OOM killer, which
-Terminates the Redis process (and loses all non-persisted data). Always set `maxmemory` and an
-Appropriate eviction policy.
+Without `maxmemory`Redis consumes all available RAM and triggers the OS OOM killer, which Terminates
+the Redis process (and loses all non-persisted data). Always set `maxmemory` and an Appropriate
+eviction policy.
 
 ### Large Keys
 
@@ -731,8 +734,8 @@ Messaging.
 
 ### Blocking Commands Without Timeouts
 
-`BLPOP``BRPOP``XREADGROUP BLOCK`And `BRPOPLPUSH` without timeouts block the connection
-Indefinitely. Always specify a timeout:
+`BLPOP``BRPOP``XREADGROUP BLOCK`And `BRPOPLPUSH` without timeouts block the connection Indefinitely.
+Always specify a timeout:
 
 ```bash
 BLPOP queue:tasks 30   # Timeout after 30 seconds
@@ -873,14 +876,14 @@ redis-cli -c -p 7000 CLUSTER GETKEYSINSLOT 0 10
 
 ### Cluster Limitations
 
-| Limitation | Value | Workaround |
+| Limitation              | Value          | Workaround                            |
 | ----------------------- | -------------- | ------------------------------------- |
-| Maximum keys | 2^34 | Use sharding across clusters |
-| Minimum master nodes | 3 | Required for quorum |
-| Multi-key operations | Same slot only | Use hash tags `{key}` |
-| Database count | 1 (database 0) | Use key prefixes for namespaces |
-| SELECT in Lua scripts | Not supported | Use `redis.call()` for reads |
-| Pipelining across slots | Not supported | Pipeline to the correct node directly |
+| Maximum keys            | 2^34           | Use sharding across clusters          |
+| Minimum master nodes    | 3              | Required for quorum                   |
+| Multi-key operations    | Same slot only | Use hash tags `{key}`                 |
+| Database count          | 1 (database 0) | Use key prefixes for namespaces       |
+| SELECT in Lua scripts   | Not supported  | Use `redis.call()` for reads          |
+| Pipelining across slots | Not supported  | Pipeline to the correct node directly |
 
 ### Handling MOVED and ASK Redirects
 
@@ -962,15 +965,15 @@ redis-benchmark -t set -n 10000 -c 50 -d 1024  # 1KB values
 
 ### Performance Expectations
 
-| Command | Single-Thread Throughput (approx) | Notes |
+| Command        | Single-Thread Throughput (approx) | Notes                           |
 | -------------- | --------------------------------- | ------------------------------- |
-| SET | 80,000-120,000 ops/sec | Varies by value size |
-| GET | 100,000-150,000 ops/sec | |
-| LPUSH/LPOP | 80,000-120,000 ops/sec | |
-| SADD/SISMEMBER | 80,000-120,000 ops/sec | |
-| ZADD/ZRANGE | 60,000-100,000 ops/sec | Depends on sorted set size |
-| MGET (10 keys) | 40,000-60,000 ops/sec | Amortized per key |
-| Pipeline (16) | 500,000-800,000 ops/sec | 16x improvement from pipelining |
+| SET            | 80,000-120,000 ops/sec            | Varies by value size            |
+| GET            | 100,000-150,000 ops/sec           |                                 |
+| LPUSH/LPOP     | 80,000-120,000 ops/sec            |                                 |
+| SADD/SISMEMBER | 80,000-120,000 ops/sec            |                                 |
+| ZADD/ZRANGE    | 60,000-100,000 ops/sec            | Depends on sorted set size      |
+| MGET (10 keys) | 40,000-60,000 ops/sec             | Amortized per key               |
+| Pipeline (16)  | 500,000-800,000 ops/sec           | 16x improvement from pipelining |
 
 ## Redis Memory Analysis
 

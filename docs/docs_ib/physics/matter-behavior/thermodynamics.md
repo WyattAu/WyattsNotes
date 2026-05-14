@@ -1,9 +1,11 @@
 ---
 title: Thermodynamics
 tags:
-- physics
+  - physics
 slug: thermodynamics
-description: "Rigorous IB physics notes covering Thermodynamics. Includes definitions, derivations, worked examples, and exam-style problems."
+description:
+  'Rigorous IB physics notes covering Thermodynamics. Includes definitions, derivations, worked
+  examples, and exam-style problems.'
 ---
 
 ## Ideal Gas Law
@@ -187,7 +189,7 @@ The kinetic theory of gases provides a microscopic explanation for macroscopic g
 Based on several assumptions:
 
 1. A gas consists of a large number of small particles (molecules or atoms) in continuous, random
- motion.
+   motion.
 2. The volume of individual particles is negligible compared to the total volume of the gas.
 3. Intermolecular forces are negligible except during collisions.
 4. All collisions are perfectly elastic (kinetic energy is conserved).
@@ -261,11 +263,11 @@ Where:
 
 | Substance | $c$ (J kg⁻¹ K⁻¹) |
 | :-------- | :--------------- |
-| Water | 4186 |
-| Ice | 2090 |
-| Aluminium | 900 |
-| Copper | 385 |
-| Iron | 449 |
+| Water     | 4186             |
+| Ice       | 2090             |
+| Aluminium | 900              |
+| Copper    | 385              |
+| Iron      | 449              |
 
 **Exam tip:** Water has an unusually high specific heat capacity. This is why coastal regions have
 More moderate climates than inland regions — water heats and cools slowly compared to land.
@@ -306,11 +308,11 @@ $$
 Q = mL_v
 $$
 
-| Substance | $L_f$ (J kg⁻¹) | $L_v$ (J kg⁻¹) |
+| Substance | $L_f$ (J kg⁻¹)     | $L_v$ (J kg⁻¹)     |
 | :-------- | :----------------- | :----------------- |
-| Water | $3.34 \times 10^5$ | $2.26 \times 10^6$ |
-| Ethanol | $1.05 \times 10^5$ | $8.54 \times 10^5$ |
-| Copper | $2.05 \times 10^5$ | $4.73 \times 10^6$ |
+| Water     | $3.34 \times 10^5$ | $2.26 \times 10^6$ |
+| Ethanol   | $1.05 \times 10^5$ | $8.54 \times 10^5$ |
+| Copper    | $2.05 \times 10^5$ | $4.73 \times 10^6$ |
 
 **Key concept:** During a phase change, temperature remains constant because all energy goes into
 Breaking or forming intermolecular bonds, not increasing kinetic energy.
@@ -327,30 +329,30 @@ $L_f = 3.34 \times 10^5$ J kg⁻¹, $L_v = 2.26 \times 10^6$ J kg⁻¹.
 1. Heat ice from $-20^\circ\mathrm{C}$ to $0^\circ\mathrm{C}$:
 
    $$
- Q_1 = mc\Delta T = (0.500)(2090)(20) = 20900 \mathrm{ J}
+   Q_1 = mc\Delta T = (0.500)(2090)(20) = 20900 \mathrm{ J}
    $$
 
 2. Melt ice at $0^\circ\mathrm{C}$:
 
    $$
- Q_2 = mL_f = (0.500)(3.34 \times 10^5) = 167000 \mathrm{ J}
+   Q_2 = mL_f = (0.500)(3.34 \times 10^5) = 167000 \mathrm{ J}
    $$
 
 3. Heat water from $0^\circ\mathrm{C}$ to $100^\circ\mathrm{C}$:
 
    $$
- Q_3 = mc\Delta T = (0.500)(4186)(100) = 209300 \mathrm{ J}
+   Q_3 = mc\Delta T = (0.500)(4186)(100) = 209300 \mathrm{ J}
    $$
 
 4. Vaporise water at $100^\circ\mathrm{C}$:
 
    $$
- Q_4 = mL_v = (0.500)(2.26 \times 10^6) = 1130000 \mathrm{ J}
+   Q_4 = mL_v = (0.500)(2.26 \times 10^6) = 1130000 \mathrm{ J}
    $$
 
 5. Heat steam from $100^\circ\mathrm{C}$ to $120^\circ\mathrm{C}$:
    $$
- Q_5 = mc\Delta T = (0.500)(2010)(20) = 20100 \mathrm{ J}
+   Q_5 = mc\Delta T = (0.500)(2010)(20) = 20100 \mathrm{ J}
    $$
 
 $$
@@ -375,7 +377,7 @@ Where $Q$ is the heat transferred reversibly and $T$ is the absolute temperature
 - Entropy increases when heat is added to a system ($Q \gt 0 \Rightarrow \Delta S \gt 0$).
 - Entropy decreases when heat is removed ($Q \lt 0 \Rightarrow \Delta S \lt 0$).
 - For a **reversible** adiabatic process ($Q = 0$), $\Delta S = 0$ (isentropic). An irreversible
- adiabatic process has $\Delta S > 0$.
+  adiabatic process has $\Delta S > 0$.
 
 ### Microscopic Definition
 
@@ -403,7 +405,7 @@ This means:
 - In irreversible processes, total entropy increases.
 - In reversible processes, total entropy stays constant.
 - Entropy can decrease locally (e.g. A refrigerator) but the total entropy of the system and its
- surroundings must increase.
+  surroundings must increase.
 
 ### Entropy and Heat Engines
 
@@ -468,15 +470,15 @@ The internal energy increased by 900 J.
 ## Exam Tips for Thermodynamics
 
 1. **Always use absolute temperature (Kelvin).** Gas law calculations will be wrong if you use
- Celsius.
+   Celsius.
 2. **Identify the process type first.** Is it adiabatic, isothermal, isovolumetric, or isobaric?
- This tells you which quantities are constant.
+   This tells you which quantities are constant.
 3. **Sign conventions matter.** In the IB convention, $W$ is work done **by** the gas. Positive $W$
- means the gas expands; negative $W$ means it is compressed.
+   means the gas expands; negative $W$ means it is compressed.
 4. **Break heating problems into stages.** When a substance changes temperature AND phase, calculate
- each stage separately and add the energies.
+   each stage separately and add the energies.
 5. **The second law explains why some processes are irreversible.** Heat flowing from cold to hot
- without external work violates the second law.
+   without external work violates the second law.
 
 ---
 
@@ -653,38 +655,38 @@ $$
 
 The second law explains why certain processes have a preferred direction:
 
-- **Heat flow:** Heat flows from hot to cold, never from cold to hot without external
- work. The total entropy increases when heat flows from a hot body to a cold body.
+- **Heat flow:** Heat flows from hot to cold, never from cold to hot without external work. The
+  total entropy increases when heat flows from a hot body to a cold body.
 - **Mixing:** When two different gases mix, they spontaneously diffuse into each other. The entropy
- of mixing is always positive. Unmixing requires external work (e.g., a semipermeable membrane).
+  of mixing is always positive. Unmixing requires external work (e.g., a semipermeable membrane).
 - **Friction:** Friction converts ordered kinetic energy into disordered thermal energy, always
- increasing entropy.
+  increasing entropy.
 
 ---
 
 ## Common Pitfalls
 
 1. **Using Celsius instead of Kelvin.** All gas law calculations require absolute temperature (K). A
- common mistake is using $T = 20^\circ$C instead of $T = 293$ K.
+   common mistake is using $T = 20^\circ$C instead of $T = 293$ K.
 
 2. **Sign conventions for work.** In the IB convention, $W$ is work done **by** the gas. Positive
- $W$ means the gas expands; negative $W$ means it is compressed. In the first law,
- $\Delta U = Q - W$A negative $W$ (compression) adds to internal energy.
+   $W$ means the gas expands; negative $W$ means it is compressed. In the first law,
+   $\Delta U = Q - W$A negative $W$ (compression) adds to internal energy.
 
 3. **Confusing heat capacity and specific heat capacity.** Specific heat capacity $c$ is per unit
- mass (J kg$^{-1}$ K$^{-1}$). Molar heat capacity $C$ is per mole (J mol$^{-1}$ K$^{-1}$).
- $C = Mc$ where $M$ is the molar mass.
+   mass (J kg$^{-1}$ K$^{-1}$). Molar heat capacity $C$ is per mole (J mol$^{-1}$ K$^{-1}$).
+   $C = Mc$ where $M$ is the molar mass.
 
 4. **Forgetting that temperature is constant during phase changes.** During melting or boiling, all
- added energy goes into breaking intermolecular bonds, not increasing temperature. The heating
- curve has a flat section during phase transitions.
+   added energy goes into breaking intermolecular bonds, not increasing temperature. The heating
+   curve has a flat section during phase transitions.
 
 5. **Assuming all processes are reversible.** Real processes are irreversible. Only in the ideal
- limit of infinitely slow, quasi-static processes can $\Delta S_{\mathrm{total}} = 0$.
+   limit of infinitely slow, quasi-static processes can $\Delta S_{\mathrm{total}} = 0$.
 
 6. **Applying the ideal gas law to real gases.** The ideal gas law assumes no intermolecular forces
- and negligible molecular volume. It works well at low pressures and high temperatures but fails
- at high pressures and low temperatures (near the condensation point).
+   and negligible molecular volume. It works well at low pressures and high temperatures but fails
+   at high pressures and low temperatures (near the condensation point).
 
 ---
 
@@ -874,18 +876,20 @@ Efficiency, and this engine does not.
 ## Related Content at Other Levels
 
 - **A-Level Thermal Physics:** [Physics](https://alevel.wyattau.com/docs/physics/physics)
-- **DSE Heat and Gases:** [Heat and Gases](https://academics.wyattau.com/docs/dse/Physics/heat-and-gases)
+- **DSE Heat and Gases:**
+  [Heat and Gases](https://academics.wyattau.com/docs/dse/Physics/heat-and-gases)
 
 ---
 
-:::tip
-Diagnostic Test
-Ready to test your understanding of **Thermodynamics**? The [diagnostic test](/docs/ib/physics/diagnostics/diag-thermodynamics) contains the hardest questions within the IB specification for this topic, each with a full worked solution.
+:::tip Diagnostic Test Ready to test your understanding of **Thermodynamics**? The
+[diagnostic test](/docs/ib/physics/diagnostics/diag-thermodynamics) contains the hardest questions
+within the IB specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Thermodynamics with other physics topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine
+Thermodynamics with other physics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/ib/physics/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/ib/physics/diagnostics/diagnostic-guide) for instructions on
+self-marking and building a personal test matrix. :::
 
 ## Summary
 

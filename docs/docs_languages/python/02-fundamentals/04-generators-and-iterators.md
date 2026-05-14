@@ -1,6 +1,8 @@
 ---
 title: Generators and Iterators
-description: "Generators and Iterators — The Iterator Protocol; The Two Methods; How `for` Loops Consume the Protocol; `iter()` Built-in: Two Forms."
+description:
+  'Generators and Iterators — The Iterator Protocol; The Two Methods; How `for` Loops Consume the
+  Protocol; `iter()` Built-in: Two Forms.'
 date: 2026-04-05T00:00:00.000Z
 tags:
   - Python
@@ -9,6 +11,7 @@ categories:
 slug: generators-and-iterators
 sidebar_position: 4
 ---
+
 ## The Iterator Protocol
 
 ### The Two Methods
@@ -71,17 +74,17 @@ Pops the iterator and jumps to the block after the loop.
 The implications are significant:
 
 1. **The `for` loop calls `iter()` on the target**, not `__iter__` directly. `iter()` tries
- `__iter__` first, then falls back to `__getitem__` with sequential integer indices starting
- from 0. This is why legacy sequence types that only define `__getitem__` still work in `for`
- loops.
+   `__iter__` first, then falls back to `__getitem__` with sequential integer indices starting
+   from 0. This is why legacy sequence types that only define `__getitem__` still work in `for`
+   loops.
 
 2. **`StopIteration` is caught at the `for` level**, not inside your code. If you manually call
- `next()` inside a loop body and catch `StopIteration`You will swallow the loop's own
- termination signal. This is a real bug pattern -- see Common Pitfalls.
+   `next()` inside a loop body and catch `StopIteration`You will swallow the loop's own termination
+   signal. This is a real bug pattern -- see Common Pitfalls.
 
 3. **`break` does not call `close()` on the iterator.** Only `generator.close()` exists for
- generators; class-based iterators have no cleanup hook. This matters when iterators hold
- resources (file handles, network connections).
+   generators; class-based iterators have no cleanup hook. This matters when iterators hold
+   resources (file handles, network connections).
 
 ### `iter()` Built-in: Two Forms
 
@@ -318,13 +321,13 @@ Cooperative multitasking within a single thread, controlled entirely by explicit
 
 ### How Generators Differ from Regular Functions
 
-| Property | Regular Function | Generator Function |
+| Property                   | Regular Function        | Generator Function           |
 | -------------------------- | ----------------------- | ---------------------------- |
-| Returns | A value (or `None`) | A generator object |
-| Body execution | Runs to completion | Runs lazily, paused at yield |
-| State | Lost on return | Preserved between yields |
-| Multiple return values | Use tuple/list | Multiple `yield` statements |
-| Memory for large sequences | O(n) in caller's memory | O(1) -- one value at a time |
+| Returns                    | A value (or `None`)     | A generator object           |
+| Body execution             | Runs to completion      | Runs lazily, paused at yield |
+| State                      | Lost on return          | Preserved between yields     |
+| Multiple return values     | Use tuple/list          | Multiple `yield` statements  |
+| Memory for large sequences | O(n) in caller's memory | O(1) -- one value at a time  |
 
 The generator object itself is lightweight -- it holds a reference to the code object and the
 Current frame. The memory cost is proportional to the number of local variables in the generator
@@ -500,19 +503,19 @@ result = _r
 What this means in practice:
 
 1. **Every `yield` from the sub-generator is transparently passed to the caller.** The delegating
- generator acts as a pipe.
+   generator acts as a pipe.
 
-2. **`send()` values are forwarded to the sub-generator.** If the caller does `gen.send(value)`
- that value goes directly to the sub-generator's current `yield` expression, not to the delegating
- generator.
+2. **`send()` values are forwarded to the sub-generator.** If the caller does `gen.send(value)` that
+   value goes directly to the sub-generator's current `yield` expression, not to the delegating
+   generator.
 
 3. **`throw()` exceptions are forwarded to the sub-generator.** If the caller does
- `gen.throw(ValueError)`The sub-generator receives the exception at its current yield point.
+   `gen.throw(ValueError)`The sub-generator receives the exception at its current yield point.
 
 4. **`close()` is forwarded.** Calling `gen.close()` calls `subgen.close()`.
 
 5. **The return value of the sub-generator becomes the value of the `yield from` expression.** This
- is the mechanism for getting a result back from a delegated computation.
+   is the mechanism for getting a result back from a delegated computation.
 
 ### Practical Example: Recursive Tree Traversal
 
@@ -576,8 +579,8 @@ print(list(flatten(data)))  # [1, 2, 3, 4, 5, 6, 7, 8, 9]
 ### Coroutine Heritage
 
 Generators in Python predate `async`/`await` by over a decade. Before PEP 492 (Python 3.5),
-Generators were the only mechanism for coroutine-like behavior. The `send()``throw()`And
-`close()` methods on generator objects exist because generators were originally designed to serve as
+Generators were the only mechanism for coroutine-like behavior. The `send()``throw()`And `close()`
+methods on generator objects exist because generators were originally designed to serve as
 Coroutines.
 
 While modern Python uses `async def` for asynchronous coroutines, the generator-based coroutine
@@ -670,9 +673,9 @@ print(result)           # ['c']
 ### `close()` for Cleanup
 
 `gen.close()` causes a `GeneratorExit` exception to be raised at the current `yield` point. If the
-Generator catches `GeneratorExit`It must re-raise it (or raise `StopIteration`) -- it is not
-Allowed to yield another value. This is the mechanism that `with` statements and `for` loops use to
-Clean up generators when they are abandoned:
+Generator catches `GeneratorExit`It must re-raise it (or raise `StopIteration`) -- it is not Allowed
+to yield another value. This is the mechanism that `with` statements and `for` loops use to Clean up
+generators when they are abandoned:
 
 ```python
 def resource_holder():
@@ -785,14 +788,14 @@ print(list(islice(primes(), 10)))            # [2, 3, 5, 7, 11, 13, 17, 19, 23, 
 The prime sieve above is an incremental version of the Sieve of Eratosthenes, sometimes called the
 "incremental sieve" or "O'Neill sieve." It maintains a dictionary of known composite numbers and
 Their generating primes, avoiding the memory cost of a full boolean sieve array. Its time complexity
-Is approximately $O(n \log \log n)$ for generating all primes up to $n$Matching the classical
-Sieve, but its constant factor is higher due to dictionary overhead.
+Is approximately $O(n \log \log n)$ for generating all primes up to $n$Matching the classical Sieve,
+but its constant factor is higher due to dictionary overhead.
 
 ### Pipeline Processing (ETL)
 
-Generators compose into pipelines. Each stage is a generator that consumes from its input
-And produces values for its output. Memory usage is bounded by the size of one item at each stage,
-Not the total size of the data:
+Generators compose into pipelines. Each stage is a generator that consumes from its input And
+produces values for its output. Memory usage is bounded by the size of one item at each stage, Not
+the total size of the data:
 
 ```python
 import re
@@ -847,36 +850,35 @@ Benefit of lazy evaluation: **composition without materialization**.
 ### When Laziness Matters
 
 - **Large files.** A 100 GB CSV file cannot be read into memory. A generator that reads one row at a
- time can process it on a machine with 8 GB of RAM.
+  time can process it on a machine with 8 GB of RAM.
 - **Network streams.** Data arriving over a socket or HTTP connection is inherently streaming.
- Generators model this .
+  Generators model this .
 - **Combinatorial explosion.** The set of all subsets of a 30-element set has $2^{30} \approx 10^9$
- elements. You cannot materialize it, but a generator can produce and consume subsets one at a
- time.
+  elements. You cannot materialize it, but a generator can produce and consume subsets one at a
+  time.
 - **Early termination.** `any()` and `all()` short-circuit. `next()` stops after one element. If you
- are searching for the first matching element in a large sequence, a generator lets you stop as
- soon as you find it.
+  are searching for the first matching element in a large sequence, a generator lets you stop as
+  soon as you find it.
 
 ### Tradeoffs: Lazy vs Eager
 
-| Aspect | Lazy (Generator) | Eager (List) |
+| Aspect          | Lazy (Generator)                | Eager (List)                    |
 | --------------- | ------------------------------- | ------------------------------- |
-| Memory | O(1) per item | O(n) total |
-| Startup cost | Negligible | Full materialization before use |
-| Random access | Not supported | O(1) indexing |
-| Length | Unknown (no `len()`) | O(1) via `len()` |
-| Multiple passes | Requires re-creation or `tee()` | Unlimited |
-| Debugging | Harder -- state is implicit | Easier -- data is inspectable |
-| Exceptions | Delayed until consumption | Immediate during construction |
+| Memory          | O(1) per item                   | O(n) total                      |
+| Startup cost    | Negligible                      | Full materialization before use |
+| Random access   | Not supported                   | O(1) indexing                   |
+| Length          | Unknown (no `len()`)            | O(1) via `len()`                |
+| Multiple passes | Requires re-creation or `tee()` | Unlimited                       |
+| Debugging       | Harder -- state is implicit     | Easier -- data is inspectable   |
+| Exceptions      | Delayed until consumption       | Immediate during construction   |
 
 ## Generator-Based State Machines
 
 ### Yield as a State Transition
 
-A generator function models a state machine because `yield` points are suspension points
-Where the generator waits for input. The function's local variables serve as the state, and each
-`yield` expression receives the next input event. The control flow between yields defines the
-Transitions.
+A generator function models a state machine because `yield` points are suspension points Where the
+generator waits for input. The function's local variables serve as the state, and each `yield`
+expression receives the next input event. The control flow between yields defines the Transitions.
 
 ### Example: A Simple Protocol Parser
 
@@ -1104,24 +1106,24 @@ print(list(dropwhile(lambda x: x < 5, gen)))  # [5, 6, 7, 8, 9, 10, 11, 12, 13, 
 Ask these questions in order:
 
 1. **Is the sequence finite and small?** If yes, a list is simpler and more debuggable. Don't
- over-engineer with generators for a 10-element sequence.
+   over-engineer with generators for a 10-element sequence.
 
 2. **Do you need random access (`seq[i]`)?** If yes, you must use a list (or `tuple`). Generators do
- not support indexing.
+   not support indexing.
 
 3. **Do you need `len()`?** If yes, you must use a list. Generators have unknown length.
 
 4. **Do you need to iterate multiple times?** If yes, use a list. Re-creating a generator requires
- re-executing the function that produced it, which may have side effects or be expensive.
+   re-executing the function that produced it, which may have side effects or be expensive.
 
 5. **Is the sequence large or potentially infinite?** If yes, you must use a generator. A list would
- exhaust memory.
+   exhaust memory.
 
 6. **Are you chaining transformations?** If yes, generators compose better. Each stage produces
- values on demand, so intermediate results are never all in memory simultaneously.
+   values on demand, so intermediate results are never all in memory simultaneously.
 
 7. **Do you need to inspect intermediate results for debugging?** If yes, a list lets you print or
- log the entire intermediate state. With generators, you must materialize at each stage.
+   log the entire intermediate state. With generators, you must materialize at each stage.
 
 ### Converting Between Them
 
@@ -1140,9 +1142,9 @@ gen = (x for x in range(5))
 t = tuple(gen)  # (0, 1, 2, 3, 4)
 ```
 
-`iter(lst)` returns a `list_iterator`Which is not a generator object but satisfies the same
-Iterator protocol. The distinction is rarely important in practice, but it matters for `isinstance`
-Checks: `isinstance(iter([]), collections.abc.Generator)` returns `False`While
+`iter(lst)` returns a `list_iterator`Which is not a generator object but satisfies the same Iterator
+protocol. The distinction is rarely important in practice, but it matters for `isinstance` Checks:
+`isinstance(iter([]), collections.abc.Generator)` returns `False`While
 `isinstance((x for x in []), collections.abc.Generator)` returns `True`.
 
 ### When Generators Are Inappropriate

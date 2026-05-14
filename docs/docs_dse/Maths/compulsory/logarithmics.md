@@ -1,6 +1,8 @@
 ---
 title: Logarithms
-description: "DSE Mathematics logarithm notes covering logarithmic laws, solving exponential and logarithmic equations, change of base formula, and real-world applications."
+description:
+  'DSE Mathematics logarithm notes covering logarithmic laws, solving exponential and logarithmic
+  equations, change of base formula, and real-world applications.'
 date: 2025-06-03T16:19:00.000Z
 tags:
   - Maths
@@ -11,11 +13,10 @@ slug: logarithms
 ---
 
 Logarithms are the inverse operation of exponentiation and play a central role in the DSE
-Mathematics compulsory syllabus. They arise when solving exponential equations, modelling
-Growth and decay, and simplifying multiplicative structures into additive ones. This topic builds
-Directly on the properties of [exponential functions](functions#exponential-functions) and
-Connects to [geometric sequences and series](sequences-series)) in applications involving
-Compound growth.
+Mathematics compulsory syllabus. They arise when solving exponential equations, modelling Growth and
+decay, and simplifying multiplicative structures into additive ones. This topic builds Directly on
+the properties of [exponential functions](functions#exponential-functions) and Connects to
+[geometric sequences and series](sequences-series)) in applications involving Compound growth.
 
 ## Definition of Logarithms
 
@@ -189,8 +190,8 @@ Sums or differences.
 
 ### Common Logarithm (Base 10)
 
-The **common logarithm** of $x$Written $\log_{10} x$ (or $\log x$ in many DSE contexts), is
-The logarithm with base 10. It is the default logarithm on most calculators and is widely used in
+The **common logarithm** of $x$Written $\log_{10} x$ (or $\log x$ in many DSE contexts), is The
+logarithm with base 10. It is the default logarithm on most calculators and is widely used in
 Scientific measurement scales.
 
 ### Natural Logarithm (Base $e$)
@@ -202,22 +203,22 @@ $$
 E = \lim_{n \to \infty} \left(1 + \frac{1}{n}\right)^n
 $$
 
-The natural logarithm arises in calculus and in continuous growth models. Its importance
-Stems from the fact that the derivative of $\ln x$ is $\frac{1}{x}$Making it the unique logarithm
-With this property.
+The natural logarithm arises in calculus and in continuous growth models. Its importance Stems from
+the fact that the derivative of $\ln x$ is $\frac{1}{x}$Making it the unique logarithm With this
+property.
 
 ### Relationship to Exponential Functions
 
-The exponential and logarithmic functions are [inverse functions](functions#inverse-functions)
-Of each other. This means their graphs are reflections of each other across the line $y = x$.
+The exponential and logarithmic functions are [inverse functions](functions#inverse-functions) Of
+each other. This means their graphs are reflections of each other across the line $y = x$.
 
-| Property | $y = a^x$ (exponential) | $y = \log_a x$ (logarithmic) |
+| Property      | $y = a^x$ (exponential)              | $y = \log_a x$ (logarithmic)         |
 | ------------- | ------------------------------------ | ------------------------------------ |
-| Domain | $\mathbb{'\{'}R{'\}'}$ | $(0, \infty)$ |
-| Range | $(0, \infty)$ | $\mathbb{'\{'}R{'\}'}$ |
-| $x$-intercept | $(0, 1)$ (since $a^0 = 1$) | $(1, 0)$ (since $\log_a 1 = 0$) |
-| Asymptote | Horizontal: $y = 0$ | Vertical: $x = 0$ |
-| Monotonicity | Strictly increasing when $a \gt{} 1$ | Strictly increasing when $a \gt{} 1$ |
+| Domain        | $\mathbb{'\{'}R{'\}'}$               | $(0, \infty)$                        |
+| Range         | $(0, \infty)$                        | $\mathbb{'\{'}R{'\}'}$               |
+| $x$-intercept | $(0, 1)$ (since $a^0 = 1$)           | $(1, 0)$ (since $\log_a 1 = 0$)      |
+| Asymptote     | Horizontal: $y = 0$                  | Vertical: $x = 0$                    |
+| Monotonicity  | Strictly increasing when $a \gt{} 1$ | Strictly increasing when $a \gt{} 1$ |
 
 When $0 \lt{} a \lt{} 1$Both functions are strictly decreasing.
 
@@ -244,7 +245,7 @@ To solve equations involving logarithms:
 3. Convert to exponential form: $\mathrm{expression} = a^k$.
 4. Solve the resulting algebraic equation.
 5. **Check all solutions against the domain restriction**: every argument of a logarithm must be
- positive.
+   positive.
 
 ### Domain Restrictions
 
@@ -268,7 +269,7 @@ $f(x) \gt{} 0$. Solutions that violate this condition are **extraneous** and mus
 - Convert: $(x+2)(x-6) = 3^3 = 27$.
 - Expand: $x^2 - 4x - 12 = 27$So $x^2 - 4x - 39 = 0$.
 - Quadratic formula:
- $x = \dfrac{4 \pm \sqrt{16 + 156}}{2} = \dfrac{4 \pm \sqrt{172}}{2} = 2 \pm \sqrt{43}$.
+  $x = \dfrac{4 \pm \sqrt{16 + 156}}{2} = \dfrac{4 \pm \sqrt{172}}{2} = 2 \pm \sqrt{43}$.
 - Since $x \gt{} 6$Only $x = 2 + \sqrt{43}$ is accepted.
 
 **Example 2.** Solve $\log_2(x) - \log_2(x - 2) = 3$.
@@ -310,7 +311,7 @@ Change of base formula to bring all logarithms to a common base.
 - Take $\log$ of both sides: $\log(3^{2x+1}) = \log 7$.
 - Power rule: $(2x+1)\log 3 = \log 7$.
 - Solve: $2x + 1 = \dfrac{\log 7}{\log 3}$So
- $x = \dfrac{1}{2}\left(\dfrac{\log 7}{\log 3} - 1\right)$.
+  $x = \dfrac{1}{2}\left(\dfrac{\log 7}{\log 3} - 1\right)$.
 
 **Example 2.** Solve $5^{x} = 2^{x+3}$.
 
@@ -347,7 +348,7 @@ Concentration of hydrogen ions and therefore a more acidic solution.
 - A neutral solution (pure water) has $[\mathrm{H}^+] = 10^{-7}$ mol/L, giving $\mathrm{pH} = 7$.
 - Acidic solutions have $\mathrm{pH} \lt{} 7$; alkaline solutions have $\mathrm{pH} \gt{} 7$.
 - The scale is logarithmic: a decrease of 1 in pH corresponds to a tenfold increase in
- $[\mathrm{H}^+]$.
+  $[\mathrm{H}^+]$.
 
 <details>
 <summary>Example</summary>
@@ -388,8 +389,8 @@ $$
 ### Compound Interest
 
 The compound interest formula is closely related to logarithms and
-[geometric sequences](sequences-series)). If a principal $P$ is invested at an annual rate
-$r\%$ compounded $n$ times per year for $t$ years, the accumulated amount $A$ is:
+[geometric sequences](sequences-series)). If a principal $P$ is invested at an annual rate $r\%$
+compounded $n$ times per year for $t$ years, the accumulated amount $A$ is:
 
 $$
 A = P\left(1 + \frac{r}{100n}\right)^{nt}
@@ -422,7 +423,7 @@ Investment to double?
 Many natural processes follow exponential models:
 
 - **Growth:** $N(t) = N_0 \cdot a^t$ where $a \gt{} 1$ (e.g., population growth, bacterial
- reproduction).
+  reproduction).
 - **Decay:** $N(t) = N_0 \cdot a^t$ where $0 \lt{} a \lt{} 1$ (e.g., radioactive decay, cooling).
 
 The **half-life** $T$ of a decaying quantity is the time for the quantity to reduce to half its
@@ -485,7 +486,7 @@ $$
 **Example 2.** Solve $\log_{1/2}(x + 3) \geq 1$.
 
 - Since the base $\frac{1}{2} < 1$The inequality sign is reversed:
- $x + 3 \leq \left(\frac{1}{2}\right)^1 = \frac{1}{2}$.
+  $x + 3 \leq \left(\frac{1}{2}\right)^1 = \frac{1}{2}$.
 - $x \leq -\dfrac{5}{2}$.
 - Domain: $x + 3 > 0 \implies x > -3$.
 - Solution: $-3 < x \leq -\dfrac{5}{2}$.
@@ -504,7 +505,8 @@ The graph of $y = \log_a x$ has the following characteristics:
 - When $0 < a < 1$The function is strictly decreasing and concave up.
 - The function is defined only for $x > 0$.
 
-<DesmosGraph title="Logarithmic Functions" expressions={["\log_{a}(x)", "rac{\ln(x)}{\ln(a)}"]} width={800} height={500} />
+<DesmosGraph title="Logarithmic Functions" expressions={["\log_{a}(x)", "rac{\ln(x)}{\ln(a)}"]}
+width={800} height={500} />
 
 Adjust the base $a$ to see how the shape of the logarithmic curve changes between $a > 1$ and
 $0 < a < 1$.
@@ -514,13 +516,13 @@ $0 < a < 1$.
 The standard transformations apply, following the same principles as for other
 [functions](functions)):
 
-| Transformation | Effect |
+| Transformation      | Effect                                              |
 | ------------------- | --------------------------------------------------- |
-| $y = \log_a x + c$ | Vertical shift by $c$ units |
-| $y = \log_a(x - h)$ | Horizontal shift by $h$ units |
-| $y = -\log_a x$ | Reflection in the $x$-axis |
-| $y = \log_a(-x)$ | Reflection in the $y$-axis (domain becomes $x < 0$) |
-| $y = k\log_a x$ | Vertical stretch by factor $k$ |
+| $y = \log_a x + c$  | Vertical shift by $c$ units                         |
+| $y = \log_a(x - h)$ | Horizontal shift by $h$ units                       |
+| $y = -\log_a x$     | Reflection in the $x$-axis                          |
+| $y = \log_a(-x)$    | Reflection in the $y$-axis (domain becomes $x < 0$) |
+| $y = k\log_a x$     | Vertical stretch by factor $k$                      |
 
 <details>
 <summary>Example</summary>
@@ -531,7 +533,7 @@ Sketch $y = \log_2(x - 3) + 1$.
 - Shift right by 3 units: the vertical asymptote moves from $x = 0$ to $x = 3$.
 - Shift up by 1 unit: the $x$-intercept moves from $(1, 0)$ to $(1+3, 0+1) = (4, 1)$.
 - The new $x$-intercept satisfies $\log_2(x - 3) + 1 = 0$I.e. $\log_2(x-3) = -1$Giving
- $x - 3 = \frac{1}{2}$So $x = 3.5$.
+  $x - 3 = \frac{1}{2}$So $x = 3.5$.
 - Domain: $x > 3$.
 </details>
 
@@ -626,9 +628,9 @@ Substance to decay?
 <summary>Answer</summary>
 
 - Domain: $2x + 1 > 0 \implies x > -\dfrac{1}{2}$And $x + 4 > 0 \implies x > -4$. Combined:
- $x > -\dfrac{1}{2}$.
+  $x > -\dfrac{1}{2}$.
 - Since the base $0.5 < 1$The logarithmic function is strictly decreasing, so the inequality sign
- reverses: $2x + 1 < x + 4$.
+  reverses: $2x + 1 < x + 4$.
 - $x < 3$.
 - Combined with the domain: $-\dfrac{1}{2} < x < 3$.
 </details>
@@ -640,7 +642,7 @@ Restrictions on $x$.
 <summary>Answer</summary>
 
 - Restrictions: $x > 0$$x^2 - 4 > 0 \implies x > 2$ or $x < -2$And $x + 2 > 0 \implies x > -2$.
- Combined: $x > 2$.
+  Combined: $x > 2$.
 - Combine: $2\log x + \log(x + 2) - \log(x^2 - 4) = \log(x^2) + \log(x+2) - \log(x^2 - 4)$.
 - $= \log\dfrac{x^2(x+2)}{x^2 - 4} = \log\dfrac{x^2(x+2)}{(x-2)(x+2)} = \log\dfrac{x^2}{x-2}$.
 - Note: the factor $(x+2)$ cancels since $x + 2 \neq 0$ under the domain $x > 2$.
@@ -662,14 +664,15 @@ Quarterly. How long (to the nearest quarter) does it take for the balance to rea
 
 ---
 
-:::tip
-Diagnostic Test
-Ready to test your understanding of **Logarithms**? The [diagnostic test](/docs/dse/Maths/diagnostics/diag-logarithms) contains the hardest questions within the DSE specification for this topic, each with a full worked solution.
+:::tip Diagnostic Test Ready to test your understanding of **Logarithms**? The
+[diagnostic test](/docs/dse/Maths/diagnostics/diag-logarithms) contains the hardest questions within
+the DSE specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Logarithms with other DSE mathematics topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Logarithms
+with other DSE mathematics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/dse/Maths/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/dse/Maths/diagnostics/diagnostic-guide) for instructions on
+self-marking and building a personal test matrix. :::
 
 ---
 
@@ -686,7 +689,9 @@ For logarithm problems in DSE Paper 1:
 
 ### Significant Figures
 
-Exact logarithmic answers are preferred. If a numerical approximation is required, use 3 significant figures. When the question asks for an answer "correct to 3 significant figures," the calculator value should be stated.
+Exact logarithmic answers are preferred. If a numerical approximation is required, use 3 significant
+figures. When the question asks for an answer "correct to 3 significant figures," the calculator
+value should be stated.
 
 ### Common DSE Question Types
 
@@ -719,7 +724,8 @@ $$\log_2 x = \frac{5\log_2 3}{\log_2 6} = \log_6 3^5 = \log_6 243$$
 
 $$x = 2^{\frac{5\log_2 3}{\log_2 6}} = 243^{1/\log_2 6}$$
 
-This can also be written as $x = 6^{\log_6 243} = 243$? Let me verify: $\log_2 243 + \log_3 243 = \log_2 243 + \dfrac{\log_2 243}{\log_2 3} = \log_2 243\!\left(1 + \dfrac{1}{\log_2 3}\right)$.
+This can also be written as $x = 6^{\log_6 243} = 243$? Let me verify:
+$\log_2 243 + \log_3 243 = \log_2 243 + \dfrac{\log_2 243}{\log_2 3} = \log_2 243\!\left(1 + \dfrac{1}{\log_2 3}\right)$.
 
 $\log_2 243 = \log_2 3^5 = 5\log_2 3$.
 
@@ -776,7 +782,8 @@ From the first equation: $2^x = \dfrac{108}{3^y}$.
 
 Substituting into the second: $\dfrac{108}{3^y} + 3^y = 21$.
 
-Let $u = 3^y$ ($u > 0$): $\dfrac{108}{u} + u = 21 \implies u^2 - 21u + 108 = 0 \implies (u - 9)(u - 12) = 0$.
+Let $u = 3^y$ ($u > 0$):
+$\dfrac{108}{u} + u = 21 \implies u^2 - 21u + 108 = 0 \implies (u - 9)(u - 12) = 0$.
 
 $u = 9$ or $u = 12$.
 
@@ -797,7 +804,8 @@ Solutions: $(x, y) = (\log_2 12,\; 2)$ and $(\log_2 9,\; \log_3 12)$.
 <details>
 <summary>Solution</summary>
 
-Domain: $2x - 1 > 0 \implies x > \dfrac{1}{2}$And $x + 3 > 0 \implies x > -3$. Combined: $x > \dfrac{1}{2}$.
+Domain: $2x - 1 > 0 \implies x > \dfrac{1}{2}$And $x + 3 > 0 \implies x > -3$. Combined:
+$x > \dfrac{1}{2}$.
 
 $\log_2[(2x - 1)(x + 3)] = 4 \implies (2x - 1)(x + 3) = 16$.
 
@@ -843,7 +851,8 @@ Combined: $2 < x \leq 11$.
 
 </details>
 
-**DSE Practice 4.** The population of a city was 2 million in 2020 and 3 million in 2025. Assuming exponential growth, in what year will the population reach 5 million?
+**DSE Practice 4.** The population of a city was 2 million in 2020 and 3 million in 2025. Assuming
+exponential growth, in what year will the population reach 5 million?
 
 <details>
 <summary>Solution</summary>
@@ -890,7 +899,8 @@ $x = \sqrt{\dfrac{a}{a - 1}}$ (positive root since $x > 1 > 0$).
 
 This requires $\dfrac{a}{a - 1} > 0$I.e., $a > 1$ or $a < 0$.
 
-Also need $x > 1$: $\dfrac{a}{a - 1} > 1 \implies \dfrac{a - a + 1}{a - 1} > 0 \implies \dfrac{1}{a - 1} > 0 \implies a > 1$.
+Also need $x > 1$:
+$\dfrac{a}{a - 1} > 1 \implies \dfrac{a - a + 1}{a - 1} > 0 \implies \dfrac{1}{a - 1} > 0 \implies a > 1$.
 
 Answer: $x = \sqrt{\dfrac{a}{a - 1}}$ for $a > 1$.
 

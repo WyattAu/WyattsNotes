@@ -1,6 +1,8 @@
 ---
 title: Macros
-description: "Macros — Basic Syntax; Metavariables; Fragment Specifiers; Repetition including key definitions, derivations, and problem-solving techniques."
+description:
+  'Macros — Basic Syntax; Metavariables; Fragment Specifiers; Repetition including key definitions,
+  derivations, and problem-solving techniques.'
 date: 2026-04-07T00:00:00.000Z
 tags:
   - Rust
@@ -8,6 +10,7 @@ categories:
   - Rust
 slug: rust-macros
 ---
+
 ## Introduction
 
 Macros in Rust are a metaprogramming mechanism that operates on the abstract syntax tree (AST)
@@ -19,37 +22,37 @@ Sequences that the compiler then processes as ordinary Rust code.
 Rust macros solve problems that the type system and generics cannot:
 
 - **Variadic functions**: `println!` accepts any number of arguments of any type. A generic function
- cannot express "zero or more arguments, each implementing `Display`" with a single signature.
+  cannot express "zero or more arguments, each implementing `Display`" with a single signature.
 - **Syntax extension**: Macros can introduce new syntactic forms (pattern matching on token trees)
- that are not representable as function calls. `vec![1, 2, 3]` is syntactic sugar that would be
- impossible as a plain function.
+  that are not representable as function calls. `vec![1, 2, 3]` is syntactic sugar that would be
+  impossible as a plain function.
 - **Code generation**: Macros eliminate boilerplate by generating repetitive code at compile time.
- Derive macros (`#[derive(Clone)]`) generate `impl` blocks that would be tedious and error-prone to
- write by hand.
+  Derive macros (`#[derive(Clone)]`) generate `impl` blocks that would be tedious and error-prone to
+  write by hand.
 - **Domain-specific languages**: Macros can parse custom syntax within their delimiters, enabling
- embedded DSLs like `sql!(SELECT * FROM users)` or `route!(GET /users -> list_users)`.
+  embedded DSLs like `sql!(SELECT * FROM users)` or `route!(GET /users -> list_users)`.
 
 ### Macros vs Functions vs Traits vs Generics
 
-| Mechanism | Operates on | Evaluated at | When to use |
+| Mechanism         | Operates on           | Evaluated at | When to use                                     |
 | ----------------- | --------------------- | ------------ | ----------------------------------------------- |
-| Function | Values | Runtime | Logic on concrete values |
-| Generic function | Types (monomorphized) | Compile time | Logic parameterized by type |
-| Trait | Behavior contracts | Compile time | Shared behavior across types |
-| Declarative macro | Token trees | Compile time | Pattern-matching on syntax, variable-arity |
-| Proc macro | AST / TokenStream | Compile time | Code generation requiring full type information |
+| Function          | Values                | Runtime      | Logic on concrete values                        |
+| Generic function  | Types (monomorphized) | Compile time | Logic parameterized by type                     |
+| Trait             | Behavior contracts    | Compile time | Shared behavior across types                    |
+| Declarative macro | Token trees           | Compile time | Pattern-matching on syntax, variable-arity      |
+| Proc macro        | AST / TokenStream     | Compile time | Code generation requiring full type information |
 
 ### Two Kinds of Macros
 
 Rust has two fundamentally different macro systems:
 
 1. **Declarative macros** (`macro_rules!`): Pattern-match on token trees and produce new token
- trees. They are hygienic (variables in the macro cannot capture variables in the call site) but
- cannot inspect types or perform complex AST manipulation.
+   trees. They are hygienic (variables in the macro cannot capture variables in the call site) but
+   cannot inspect types or perform complex AST manipulation.
 
 2. **Procedural macros**: Rust functions that take a `TokenStream` and return a `TokenStream`. They
- have full access to the token stream and, via the `syn` crate, to the parsed AST. They come in
- three flavors: derive, attribute-like, and function-like.
+   have full access to the token stream and, via the `syn` crate, to the parsed AST. They come in
+   three flavors: derive, attribute-like, and function-like.
 
 ## Declarative Macros (`macro_rules!`)
 
@@ -88,21 +91,21 @@ my_func();
 
 ### Fragment Specifiers
 
-| Specifier | Matches | Example input |
-| ---------- | ----------------------------------------------- | ----------------------------- |
-| `ident` | Identifier | `foo``MyType``_tmp` |
-| `ty` | Type expression | `i32``Vec<String>``&[u8]` |
-| `expr` | Expression | `1 + 2``foo()``x * y` |
-| `path` | Path (module path or type path) | `std::collections::HashMap` |
-| `stmt` | Statement (without trailing semicolon) | `let x = 5` |
-| `block` | Block (braced statements) | `{ let x = 1; x + 2 }` |
-| `pat` | Pattern | `Some(x)``_``1..=100` |
-| `literal` | Literal (string, number, char, bool) | `"hello"``42``true` |
-| `meta` | Meta attribute (inner content of `#[...]`) | `derive(Debug, Clone)` |
-| `item` | Item (function, struct, impl, etc.) | `fn foo() {}``struct S;` |
-| `vis` | Visibility modifier | `pub``pub(crate)`(none) |
-| `lifetime` | Lifetime | `'a``'static` |
-| `tt` | Token tree (single token or matched delimiters) | `=>``(a, b)``[]` |
+| Specifier  | Matches                                         | Example input               |
+| ---------- | ----------------------------------------------- | --------------------------- |
+| `ident`    | Identifier                                      | `foo``MyType``_tmp`         |
+| `ty`       | Type expression                                 | `i32``Vec<String>``&[u8]`   |
+| `expr`     | Expression                                      | `1 + 2``foo()``x * y`       |
+| `path`     | Path (module path or type path)                 | `std::collections::HashMap` |
+| `stmt`     | Statement (without trailing semicolon)          | `let x = 5`                 |
+| `block`    | Block (braced statements)                       | `{ let x = 1; x + 2 }`      |
+| `pat`      | Pattern                                         | `Some(x)``_``1..=100`       |
+| `literal`  | Literal (string, number, char, bool)            | `"hello"``42``true`         |
+| `meta`     | Meta attribute (inner content of `#[...]`)      | `derive(Debug, Clone)`      |
+| `item`     | Item (function, struct, impl, etc.)             | `fn foo() {}``struct S;`    |
+| `vis`      | Visibility modifier                             | `pub``pub(crate)`(none)     |
+| `lifetime` | Lifetime                                        | `'a``'static`               |
+| `tt`       | Token tree (single token or matched delimiters) | `=>``(a, b)``[]`            |
 
 The `tt` specifier is the most flexible -- it matches any single token or any pair of matched
 Delimiters (parentheses, brackets, or braces). It is the "wildcard" of fragment specifiers.
@@ -359,10 +362,10 @@ Macro scoping in Rust has changed over editions. As of edition 2021:
 
 - A `macro_rules!` macro without `#[macro_export]` is scoped to the module it is defined in.
 - A `#[macro_export]` macro is always placed at the crate root and is available to downstream
- crates.
+  crates.
 - Macros can be imported with `use my_crate::macro_name;` (note: the `!` is omitted in `use` paths).
 - The `$crate` metavariable expands to the path of the defining crate, ensuring that paths inside
- the macro expansion refer to items in the macro's crate, not the calling crate.
+  the macro expansion refer to items in the macro's crate, not the calling crate.
 
 ```rust
 // In crate `helper`
@@ -383,22 +386,22 @@ macro_rules! make_map {
 ### Limitations of Declarative Macros
 
 1. **No type information**: Declarative macros operate on token trees, not on typed AST nodes. You
- cannot inspect whether an expression has type `i32` or `String` inside a `macro_rules!`
- expansion.
+   cannot inspect whether an expression has type `i32` or `String` inside a `macro_rules!`
+   expansion.
 
 2. **Pattern matching is syntactic, not semantic**: The `ty` fragment specifier matches tokens that
- look like a type, but it cannot distinguish between a type that exists and one that does not. A
- misspelled type name will pass through the macro and only fail later during type checking.
+   look like a type, but it cannot distinguish between a type that exists and one that does not. A
+   misspelled type name will pass through the macro and only fail later during type checking.
 
 3. **No control flow**: You cannot use `if`/`else` or loops inside a `macro_rules!` expansion. All
- "branching" is done through pattern matching on the input.
+   "branching" is done through pattern matching on the input.
 
 4. **Error messages are poor**: When a macro expansion fails, the error points to the macro
- invocation site, not to the specific arm or token that caused the failure. Complex macros with
- many arms produce cryptic error messages.
+   invocation site, not to the specific arm or token that caused the failure. Complex macros with
+   many arms produce cryptic error messages.
 
 5. **Recursion limit**: Deeply recursive macros hit the recursion limit and are not suitable for
- processing large inputs.
+   processing large inputs.
 
 ### Macro Hygiene
 
@@ -448,11 +451,11 @@ Means they can use arbitrary Rust code for parsing and generation.
 
 ### Three Types of Procedural Macros
 
-| Type | Syntax | Applied to |
+| Type           | Syntax               | Applied to                  |
 | -------------- | -------------------- | --------------------------- |
-| Derive | `#[derive(MyTrait)]` | Struct, enum, union |
-| Attribute-like | `#[my_attr(args)]` | Any item (fn, struct, etc.) |
-| Function-like | `my_macro!(tokens)` | Arbitrary token sequences |
+| Derive         | `#[derive(MyTrait)]` | Struct, enum, union         |
+| Attribute-like | `#[my_attr(args)]`   | Any item (fn, struct, etc.) |
+| Function-like  | `my_macro!(tokens)`  | Arbitrary token sequences   |
 
 ### Project Structure
 
@@ -502,15 +505,15 @@ my_macros = { path = "../my_macros" }
 ### Dependencies
 
 - **`proc-macro2`**: A wrapper around the compiler's `proc_macro::TokenStream` that implements
- `Clone``Debug`And other standard traits. Use `proc_macro2::TokenStream` everywhere in your
- code; convert to/from `proc_macro::TokenStream` only at the entry point.
+  `Clone``Debug`And other standard traits. Use `proc_macro2::TokenStream` everywhere in your code;
+  convert to/from `proc_macro::TokenStream` only at the entry point.
 
 - **`syn`**: A complete Rust parser. Parses `TokenStream` into typed AST nodes ( structs, functions,
- expressions, types, etc.). Supports `#[derive]` parsing, attribute parsing, and all of Rust
- syntax.
+  expressions, types, etc.). Supports `#[derive]` parsing, attribute parsing, and all of Rust
+  syntax.
 
 - **`quote`**: A macro for constructing `TokenStream` values from Rust syntax. The inverse of `syn`:
- you write normal Rust code inside `quote!`And it produces a `TokenStream`.
+  you write normal Rust code inside `quote!`And it produces a `TokenStream`.
 
 ## Derive Macros
 
@@ -1120,31 +1123,31 @@ Emits a compile error on parse failure.
 
 ### Key `syn` Types
 
-| Type | Represents |
+| Type           | Represents                                   |
 | -------------- | -------------------------------------------- |
-| `DeriveInput` | A struct, enum, or union (for derive macros) |
-| `ItemFn` | A function definition |
-| `ItemStruct` | A struct definition |
-| `ItemEnum` | An enum definition |
-| `ItemImpl` | An impl block |
-| `ItemTrait` | A trait definition |
-| `ItemMod` | A module declaration |
-| `ItemUse` | A use statement |
-| `Expr` | An expression (enum with many variants) |
-| `Type` | A type (enum with many variants) |
-| `Pat` | A pattern |
-| `Stmt` | A statement |
-| `Lit` | A literal (string, number, etc.) |
-| `Ident` | An identifier |
-| `Meta` | A meta attribute (inner content of `#[...]`) |
-| `Attribute` | A complete attribute including `#` and path |
-| `Visibility` | `pub``pub(crate)`Or inherited |
-| `Signature` | A function signature |
-| `Fields` | Named, unnamed, or unit fields of a struct |
-| `Variant` | An enum variant |
-| `GenericParam` | A generic type or lifetime parameter |
-| `WhereClause` | A where clause |
-| `Path` | A path like `std::collections::HashMap` |
+| `DeriveInput`  | A struct, enum, or union (for derive macros) |
+| `ItemFn`       | A function definition                        |
+| `ItemStruct`   | A struct definition                          |
+| `ItemEnum`     | An enum definition                           |
+| `ItemImpl`     | An impl block                                |
+| `ItemTrait`    | A trait definition                           |
+| `ItemMod`      | A module declaration                         |
+| `ItemUse`      | A use statement                              |
+| `Expr`         | An expression (enum with many variants)      |
+| `Type`         | A type (enum with many variants)             |
+| `Pat`          | A pattern                                    |
+| `Stmt`         | A statement                                  |
+| `Lit`          | A literal (string, number, etc.)             |
+| `Ident`        | An identifier                                |
+| `Meta`         | A meta attribute (inner content of `#[...]`) |
+| `Attribute`    | A complete attribute including `#` and path  |
+| `Visibility`   | `pub``pub(crate)`Or inherited                |
+| `Signature`    | A function signature                         |
+| `Fields`       | Named, unnamed, or unit fields of a struct   |
+| `Variant`      | An enum variant                              |
+| `GenericParam` | A generic type or lifetime parameter         |
+| `WhereClause`  | A where clause                               |
+| `Path`         | A path like `std::collections::HashMap`      |
 
 ### Iterating Over Struct Fields
 
@@ -1309,14 +1312,14 @@ impl ToTokens for MyNode {
 Rust macros are hygienic at the level of **identifiers** and **lifetimes**. This means:
 
 1. **Local variables**: A variable introduced by a macro cannot conflict with a variable at the call
- site. They exist in different "syntax contexts."
+   site. They exist in different "syntax contexts."
 
 2. **Paths**: `$crate` is the only way to reference the macro's crate from within the expansion. A
- bare `use` or `super::` refers to the call site's module hierarchy.
+   bare `use` or `super::` refers to the call site's module hierarchy.
 
 3. **Proc macros are NOT fully hygienic**: Procedural macros generate raw token streams. They do not
- automatically get the hygiene that `macro_rules!` provides. A proc macro that generates a local
- variable `let x = ...` could shadow a variable `x` at the call site.
+   automatically get the hygiene that `macro_rules!` provides. A proc macro that generates a local
+   variable `let x = ...` could shadow a variable `x` at the call site.
 
 ```rust
 // This proc macro is NOT hygienic
@@ -1477,14 +1480,14 @@ Proc macros run during compilation. Each proc macro crate is compiled once and c
 Execution of the macro itself adds to compile time. Strategies to mitigate this:
 
 1. **Minimize `syn` features**: Only enable the `syn` features you need. `full` pulls in every
- parser in the crate. If you only need structs, enable `["derive", "parsing"]` instead of
- `["full"]`.
+   parser in the crate. If you only need structs, enable `["derive", "parsing"]` instead of
+   `["full"]`.
 
 2. **Avoid heavy computation**: Proc macros should be fast. Do not perform network requests, file
- I/O, or expensive computations inside a proc macro.
+   I/O, or expensive computations inside a proc macro.
 
 3. **Avoid generating excessive code**: A macro that generates thousands of lines of code per
- invocation will slow down the compiler. Consider using generics or runtime dispatch instead.
+   invocation will slow down the compiler. Consider using generics or runtime dispatch instead.
 
 #### Binary Size
 
@@ -1536,102 +1539,102 @@ Names that include parts of the input.
 ## Common Pitfalls
 
 1. **Using `proc_macro::TokenStream` directly instead of `proc_macro2::TokenStream`.** The
- `proc_macro::TokenStream` type cannot be cloned or compared. Always convert to
- `proc_macro2::TokenStream` immediately at the proc-macro entry point and work with `proc_macro2`
- throughout.
+   `proc_macro::TokenStream` type cannot be cloned or compared. Always convert to
+   `proc_macro2::TokenStream` immediately at the proc-macro entry point and work with `proc_macro2`
+   throughout.
 
 2. **Forgetting `#[macro_use]` or proper imports.** In edition 2018+, `macro_rules!` macros from
- external crates must be imported with `use crate_name::macro_name;` (without the `!`). The old
- `#[macro_use] extern crate` syntax is deprecated in edition 2021.
+   external crates must be imported with `use crate_name::macro_name;` (without the `!`). The old
+   `#[macro_use] extern crate` syntax is deprecated in edition 2021.
 
 3. **Hygiene violations in proc macros.** Procedural macros are not hygienic for local variables. If
- your proc macro generates a variable named `x`It can shadow a variable `x` at the call site.
- Use unique names (prefixed with `__` or using `paste!`) to avoid collisions.
+   your proc macro generates a variable named `x`It can shadow a variable `x` at the call site. Use
+   unique names (prefixed with `__` or using `paste!`) to avoid collisions.
 
 4. **Pattern matching order in `macro_rules!`.** Arms are matched top-to-bottom. A more specific
- pattern placed after a more general one will never match. Always put the most specific arms first
- and the most general (catch-all) arms last.
+   pattern placed after a more general one will never match. Always put the most specific arms first
+   and the most general (catch-all) arms last.
 
 5. **Using `expr` fragment specifier where `tt` is needed.** The `expr` fragment specifier requires
- the matched expression to form a complete expression, which means it consumes trailing tokens
- like `>>` (right-shift) ambiguously. When in doubt, use `tt` and pass the tokens through to
- another macro or built-in.
+   the matched expression to form a complete expression, which means it consumes trailing tokens
+   like `>>` (right-shift) ambiguously. When in doubt, use `tt` and pass the tokens through to
+   another macro or built-in.
 
 6. **Not handling all struct field types.** When writing derive macros, you must handle both named
- fields (`struct S { x: i32 }`) and unnamed fields (`struct S(i32)`). Forgetting tuple structs or
- unit structs will cause a panic at derive time. Always match on all `Fields` variants.
+   fields (`struct S { x: i32 }`) and unnamed fields (`struct S(i32)`). Forgetting tuple structs or
+   unit structs will cause a panic at derive time. Always match on all `Fields` variants.
 
 7. **Error messages that point to the macro invocation instead of the cause.** Use `quote_spanned!`
- to attach the correct span to generated code, and use `Error::new_spanned()` to attach errors to
- specific tokens. This makes errors much easier to debug.
+   to attach the correct span to generated code, and use `Error::new_spanned()` to attach errors to
+   specific tokens. This makes errors much easier to debug.
 
 8. **Proc macro crates cannot export regular items.** A crate with `proc-macro = true` can only
- export proc-macro functions (`#[proc_macro]``#[proc_macro_derive]``#[proc_macro_attribute]`).
- Any non-macro exports will cause a compile error. Put shared types and helper functions in a
- separate crate and depend on it from both the proc-macro crate and the consumer.
+   export proc-macro functions (`#[proc_macro]``#[proc_macro_derive]``#[proc_macro_attribute]`). Any
+   non-macro exports will cause a compile error. Put shared types and helper functions in a separate
+   crate and depend on it from both the proc-macro crate and the consumer.
 
 9. **`macro_rules!` arms with overlapping patterns.** Two arms that can match the same input cause
- ambiguity. The compiler will error with "ambiguous macro call" if two arms both match and produce
- different expansions. If they produce the same expansion, the compiler silently picks the first
- one -- but this is fragile and confusing.
+   ambiguity. The compiler will error with "ambiguous macro call" if two arms both match and produce
+   different expansions. If they produce the same expansion, the compiler silently picks the first
+   one -- but this is fragile and confusing.
 
 10. **Over-reliance on macros for simple abstractions.** Not everything needs to be a macro. If a
- function, trait, or generic can solve the problem, use it instead. Macros are harder to read,
- harder to debug, and harder to document than ordinary Rust code. Reserve macros for cases where
- functions and traits genuinely cannot express the abstraction.
+    function, trait, or generic can solve the problem, use it instead. Macros are harder to read,
+    harder to debug, and harder to document than ordinary Rust code. Reserve macros for cases where
+    functions and traits genuinely cannot express the abstraction.
 
 ## Reference
 
 ### Standard Library Macros
 
-| Macro | Purpose |
+| Macro            | Purpose                                                       |
 | ---------------- | ------------------------------------------------------------- |
-| `println!` | Print to stdout with formatting |
-| `eprintln!` | Print to stderr with formatting |
-| `format!` | Create formatted string |
-| `vec!` | Create a `Vec<T>` |
-| `panic!` | Panic with a message |
-| `assert!` | Assert a condition at runtime |
-| `assert_eq!` | Assert two values are equal |
-| `assert_ne!` | Assert two values are not equal |
-| `dbg!` | Print and return a value (debug-only) |
-| `todo!` | Mark unimplemented code (panics) |
-| `unimplemented!` | Mark unimplemented code (panics) |
-| `unreachable!` | Mark unreachable code (panics) |
-| `compile_error!` | Emit a compile-time error |
-| `concat!` | Concatenate string literals at compile time |
-| `stringify!` | Convert tokens to a string literal |
-| `include!` | Include a file as source code |
-| `include_str!` | Include a file as a `&'static str` |
-| `include_bytes!` | Include a file as `&'static [u8]` |
-| `env!` | Read an environment variable at compile time |
-| `option_env!` | Read an environment variable at compile time (returns Option) |
-| `cfg!` | Check a configuration flag at compile time |
-| `file!` | Current file path |
-| `line!` | Current line number |
-| `column!` | Current column number |
-| `module_path!` | Current module path |
-| `thread_local!` | Declare a thread-local static |
-| `matches!` | Match an expression against a pattern |
+| `println!`       | Print to stdout with formatting                               |
+| `eprintln!`      | Print to stderr with formatting                               |
+| `format!`        | Create formatted string                                       |
+| `vec!`           | Create a `Vec<T>`                                             |
+| `panic!`         | Panic with a message                                          |
+| `assert!`        | Assert a condition at runtime                                 |
+| `assert_eq!`     | Assert two values are equal                                   |
+| `assert_ne!`     | Assert two values are not equal                               |
+| `dbg!`           | Print and return a value (debug-only)                         |
+| `todo!`          | Mark unimplemented code (panics)                              |
+| `unimplemented!` | Mark unimplemented code (panics)                              |
+| `unreachable!`   | Mark unreachable code (panics)                                |
+| `compile_error!` | Emit a compile-time error                                     |
+| `concat!`        | Concatenate string literals at compile time                   |
+| `stringify!`     | Convert tokens to a string literal                            |
+| `include!`       | Include a file as source code                                 |
+| `include_str!`   | Include a file as a `&'static str`                            |
+| `include_bytes!` | Include a file as `&'static [u8]`                             |
+| `env!`           | Read an environment variable at compile time                  |
+| `option_env!`    | Read an environment variable at compile time (returns Option) |
+| `cfg!`           | Check a configuration flag at compile time                    |
+| `file!`          | Current file path                                             |
+| `line!`          | Current line number                                           |
+| `column!`        | Current column number                                         |
+| `module_path!`   | Current module path                                           |
+| `thread_local!`  | Declare a thread-local static                                 |
+| `matches!`       | Match an expression against a pattern                         |
 
 ### Useful Proc-Macro Crates
 
-| Crate | Purpose |
-| ----------------------- | ------------------------------------------------------------ |
-| `syn` | Full Rust parser for proc macros |
-| `quote` | Code generation via quasi-quoting |
-| `proc-macro2` | Stable wrapper around `proc_macro` types |
-| `thiserror` | Derive macro for error types |
-| `serde` | Derive macros for serialization (`Serialize``Deserialize`) |
-| `derive_builder` | Builder pattern derive macro |
-| `derive_more` | Additional derives (From, Into, Constructor, etc.) |
-| `paste` | Identifier pasting in macros |
-| `proc-macro-error` | Better error handling in proc macros |
-| ` darling` | Attribute parsing helpers for proc macros |
-| `macro_rules_attribute` | Apply `macro_rules!` as attributes |
-| `cargo-expand` | Tool to view macro expansions |
-| `trybuild` | Test harness for proc macro compile-fail tests |
-| `insta` | Snapshot testing (useful for proc macro output) |
+| Crate                   | Purpose                                                    |
+| ----------------------- | ---------------------------------------------------------- |
+| `syn`                   | Full Rust parser for proc macros                           |
+| `quote`                 | Code generation via quasi-quoting                          |
+| `proc-macro2`           | Stable wrapper around `proc_macro` types                   |
+| `thiserror`             | Derive macro for error types                               |
+| `serde`                 | Derive macros for serialization (`Serialize``Deserialize`) |
+| `derive_builder`        | Builder pattern derive macro                               |
+| `derive_more`           | Additional derives (From, Into, Constructor, etc.)         |
+| `paste`                 | Identifier pasting in macros                               |
+| `proc-macro-error`      | Better error handling in proc macros                       |
+| ` darling`              | Attribute parsing helpers for proc macros                  |
+| `macro_rules_attribute` | Apply `macro_rules!` as attributes                         |
+| `cargo-expand`          | Tool to view macro expansions                              |
+| `trybuild`              | Test harness for proc macro compile-fail tests             |
+| `insta`                 | Snapshot testing (useful for proc macro output)            |
 
 ## Summary
 

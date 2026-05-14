@@ -1,6 +1,8 @@
 ---
 title: Algebra and Calculus
-description: "SQA Higher Mathematics: Algebra and Calculus — Higher Algebra; Functions and Notation; Quadratic Functions; Domain and Range:."
+description:
+  'SQA Higher Mathematics: Algebra and Calculus — Higher Algebra; Functions and Notation; Quadratic
+  Functions; Domain and Range:.'
 date: 2026-04-14
 tags:
   - Mathematics
@@ -9,18 +11,13 @@ categories:
   - Mathematics
 slug: algebra-and-calculus
 ---
+
 # Algebra and Calculus
 
 ## Higher Algebra
 
-
-
-<DesmosGraph
- title="Graph Transformations: y = af(x + b) + c"
- expressions={["af(x+b)+c", "f(x)=x^2"]}
- width={800}
- height={500}
-/>
+<DesmosGraph title="Graph Transformations: y = af(x + b) + c" expressions={["af(x+b)+c",
+"f(x)=x^2"]} width={800} height={500} />
 
 Adjust the parameters in the graph above to explore the relationships between variables.
 
@@ -81,9 +78,9 @@ Confirmed.
 
 :::info
 
-The domain of $f^{-1}$ equals the range of $f$And vice versa. A function has an inverse if and
-Only if it is a **bijection** (both one-to-one and onto). For functions $\mathbb{'\{'}R{'\}'} \to \mathbb{'\{'}R{'\}'}$
-This means the function must be strictly monotone.
+The domain of $f^{-1}$ equals the range of $f$And vice versa. A function has an inverse if and Only
+if it is a **bijection** (both one-to-one and onto). For functions
+$\mathbb{'\{'}R{'\}'} \to \mathbb{'\{'}R{'\}'}$ This means the function must be strictly monotone.
 
 :::
 
@@ -122,11 +119,11 @@ $-11$.
 
 For $ax^2 + bx + c = 0$The discriminant is $\Delta = b^2 - 4ac$.
 
-| Condition | Number of Roots |
+| Condition    | Number of Roots         |
 | ------------ | ----------------------- |
 | $\Delta > 0$ | Two distinct real roots |
-| $\Delta = 0$ | One repeated real root |
-| $\Delta < 0$ | No real roots |
+| $\Delta = 0$ | One repeated real root  |
+| $\Delta < 0$ | No real roots           |
 
 **Proof.** The quadratic formula gives $x = \frac{-b \pm \sqrt{\Delta}}{2a}$. If $\Delta > 0$The
 Square root is real and positive, yielding two distinct values. If $\Delta = 0$Both values are
@@ -295,14 +292,14 @@ Solutions: $(3, 0)$ and $(-1, 8)$.
 
 Given $y = f(x)$:
 
-| Transformation | Effect |
+| Transformation | Effect                                     |
 | -------------- | ------------------------------------------ |
-| $y = f(x) + c$ | Vertical translation by $c$ units up |
-| $y = f(x - c)$ | Horizontal translation by $c$ units right |
-| $y = af(x)$ | Vertical stretch by factor $a$ |
-| $y = f(bx)$ | Horizontal stretch by factor $\frac{1}{b}$ |
-| $y = -f(x)$ | Reflection in the $x$-axis |
-| $y = f(-x)$ | Reflection in the $y$-axis |
+| $y = f(x) + c$ | Vertical translation by $c$ units up       |
+| $y = f(x - c)$ | Horizontal translation by $c$ units right  |
+| $y = af(x)$    | Vertical stretch by factor $a$             |
+| $y = f(bx)$    | Horizontal stretch by factor $\frac{1}{b}$ |
+| $y = -f(x)$    | Reflection in the $x$-axis                 |
+| $y = f(-x)$    | Reflection in the $y$-axis                 |
 
 ---
 
@@ -319,13 +316,13 @@ $$
 
 **Standard Derivatives:**
 
-| $f(x)$ | $f'(x)$ |
+| $f(x)$   | $f'(x)$        |
 | -------- | -------------- |
-| $x^n$ | $nx^{n-1}$ |
-| $e^{kx}$ | $ke^{kx}$ |
-| $\ln x$ | $\dfrac{1}{x}$ |
-| $\sin x$ | $\cos x$ |
-| $\cos x$ | $-\sin x$ |
+| $x^n$    | $nx^{n-1}$     |
+| $e^{kx}$ | $ke^{kx}$      |
+| $\ln x$  | $\dfrac{1}{x}$ |
+| $\sin x$ | $\cos x$       |
+| $\cos x$ | $-\sin x$      |
 
 **Differentiation Rules:**
 
@@ -456,9 +453,9 @@ $$
 Optimisation problems require you to express the quantity to be optimised as a function of a single
 Variable, then find the stationary points.
 
-**Example:** A rectangular box with a square base has a volume of $128 \mathrm{ cm{}^3$. The material
-For the base costs 5 pence per $\mathrm{cm{}^2$ and the material for the sides costs 3 pence per
-$\mathrm{cm{}^2$. Find the dimensions that minimise the cost.
+**Example:** A rectangular box with a square base has a volume of $128 \mathrm{ cm{}^3$. The
+material For the base costs 5 pence per $\mathrm{cm{}^2$ and the material for the sides costs 3
+pence per $\mathrm{cm{}^2$. Find the dimensions that minimise the cost.
 
 Let the base have side length $x$ cm and height $h$ cm.
 
@@ -549,11 +546,9 @@ $$
 A = \int_a^b |f(x)| \, dx
 $$
 
-:::warning
-If the curve crosses the $x$-axis between $a$ and $b$You must split the integral at
-Each crossing point and take the absolute value. The integral itself gives the signed area, which
-Can cancel out.
-:::
+:::warning If the curve crosses the $x$-axis between $a$ and $b$You must split the integral at Each
+crossing point and take the absolute value. The integral itself gives the signed area, which Can
+cancel out. :::
 
 **Example:** Find the area enclosed by $y = x^2 - 4x + 3$ and the $x$-axis.
 
@@ -674,62 +669,62 @@ $y^2 = x^2 + 3$Giving $y = \sqrt{x^2 + 3}$ (taking the positive root since $y = 
 ## Common Pitfalls
 
 1. **Forgetting the chain rule:** When differentiating $\sin(3x)$The answer is $3\cos(3x)$Not
- $\cos(3x)$. Every composite function requires the chain rule.
+   $\cos(3x)$. Every composite function requires the chain rule.
 
 2. **Missing the $+C$:** Always include the constant of integration for indefinite integrals.
- Omitting it is equivalent to asserting that you know the particular solution without initial
- conditions.
+   Omitting it is equivalent to asserting that you know the particular solution without initial
+   conditions.
 
-3. **Sign errors in the product rule:** It is $f'g + fg'$Not $f'g - fg'$. The minus sign belongs
- in the quotient rule.
+3. **Sign errors in the product rule:** It is $f'g + fg'$Not $f'g - fg'$. The minus sign belongs in
+   the quotient rule.
 
 4. **Incorrect domain for logarithms:** $\ln(x)$ is only defined for $x > 0$. Always check your
- solutions satisfy the domain restrictions. When solving $\log_2(x+3)$You need $x > -3$.
+   solutions satisfy the domain restrictions. When solving $\log_2(x+3)$You need $x > -3$.
 
 5. **Confusing $f^{-1}(x)$ with $\dfrac{1}{f(x)}$:** The notation $f^{-1}$ denotes the inverse
- function, not the reciprocal. This is a notation collision that causes persistent confusion.
+   function, not the reciprocal. This is a notation collision that causes persistent confusion.
 
 6. **Forgetting absolute values in integrals of $1/x$:** $\int \frac{dx}{x} = \ln|x| + C$Not
- $\ln x + C$.
+   $\ln x + C$.
 
 7. **Not checking that optimisation solutions are minima:** Always verify with the second derivative
- test or a sign chart.
+   test or a sign chart.
 
 8. **Forgetting to change the limits** when using substitution for definite integrals.
 
-9. **Sign error in the quotient rule:** It is $\dfrac{f'g - fg'}{g^2}$Not
- $\dfrac{fg' - f'g}{g^2}$. "Low d-High minus High d-Low."
+9. **Sign error in the quotient rule:** It is $\dfrac{f'g - fg'}{g^2}$Not $\dfrac{fg' - f'g}{g^2}$.
+   "Low d-High minus High d-Low."
 
 ---
 
 ## Practice Questions
 
-1. Given $f(x) = 2x^2 - 8x + 5$Express $f(x)$ in completed square form and state the coordinates
- of the vertex.
+1. Given $f(x) = 2x^2 - 8x + 5$Express $f(x)$ in completed square form and state the coordinates of
+   the vertex.
 
 2. Solve $4^{x+1} = 3^{2x-1}$Giving your answer in terms of natural logarithms.
 
 3. Given $p(x) = x^3 + 2x^2 - 5x - 6$Show that $(x + 1)$ is a factor and hence fully factorise
- $p(x)$.
+   $p(x)$.
 
 4. Differentiate $f(x) = \dfrac{x^2 + 1}{e^{3x}}$ and find the coordinates of any stationary points.
 
 5. Find the area enclosed by the curves $y = x^3$ and $y = x$.
 
 6. A closed cylindrical can must hold $500 \mathrm{ cm{}^3$ of liquid. Find the dimensions that
- minimise the surface area.
+   minimise the surface area.
 
 7. Solve $\log_3(x) + \log_3(x - 2) = 1$.
 
 8. Find the equation of the tangent to $y = x^3 - 3x + 1$ at the point where $x = 2$.
 
 9. Given $f(x) = \frac{1}{3}x^3 - x^2 - 3x + 2$Find the intervals on which $f$ is increasing and
- decreasing.
+   decreasing.
 
 10. Evaluate $\int_0^2 \frac{x}{x^2 + 1}\,dx$ using substitution.
 
 11. The curve $y = x^2 + px + q$ passes through $(1, 5)$ and has a turning point at $x = 2$. Find
- $p$ and $q$.
+    $p$ and $q$.
 
 12. Find the area between the curves $y = x^2 + 1$ and $y = 3x + 1$.
 
@@ -738,7 +733,7 @@ $y^2 = x^2 + 3$Giving $y = \sqrt{x^2 + 3}$ (taking the positive root since $y = 
 14. Find the equation of the normal to $y = x^2 - 4x + 3$ at the point where $x = 4$.
 
 15. A population of bacteria grows according to $P(t) = P_0 e^{0.02t}$. If the initial population is
- 1000, how long does it take for the population to reach 5000?
+    1000, how long does it take for the population to reach 5000?
 
 16. Find the range of values of $k$ for which $x^2 + 2kx + k^2 + 3 = 0$ has no real roots.
 

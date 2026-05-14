@@ -1,6 +1,8 @@
 ---
 title: Dynamics and Newton's Laws
-description: "Rigorous IB physics notes covering Dynamics and Newtons Laws. Includes definitions, derivations, worked examples, and exam-style problems."
+description:
+  'Rigorous IB physics notes covering Dynamics and Newtons Laws. Includes definitions, derivations,
+  worked examples, and exam-style problems.'
 slug: dynamics
 ---
 
@@ -183,12 +185,12 @@ $$
 
 ### Common Action-Reaction Pairs
 
-| Action | Reaction |
+| Action                           | Reaction                               |
 | -------------------------------- | -------------------------------------- |
-| Book pushes down on table | Table pushes up on book (normal force) |
-| Earth pulls on apple (weight) | Apple pulls on Earth |
-| Foot pushes backward on ground | Ground pushes forward on foot |
-| Rocket pushes exhaust gases down | Exhaust gases push rocket up |
+| Book pushes down on table        | Table pushes up on book (normal force) |
+| Earth pulls on apple (weight)    | Apple pulls on Earth                   |
+| Foot pushes backward on ground   | Ground pushes forward on foot          |
+| Rocket pushes exhaust gases down | Exhaust gases push rocket up           |
 
 :::warning[Exam Tip]
 
@@ -254,12 +256,12 @@ Since $\tan 35\degree \gt \mu_s = 0.6$The block slides.
 
 For a block on an incline at angle $\theta$:
 
-| Force | Expression |
+| Force                                      | Expression                     |
 | ------------------------------------------ | ------------------------------ |
-| Component of weight along plane | $mg\sin\theta$ |
-| Component of weight perpendicular to plane | $mg\cos\theta$ |
-| Normal force | $N = mg\cos\theta$ |
-| Friction force | $f = \mu N = \mu mg\cos\theta$ |
+| Component of weight along plane            | $mg\sin\theta$                 |
+| Component of weight perpendicular to plane | $mg\cos\theta$                 |
+| Normal force                               | $N = mg\cos\theta$             |
+| Friction force                             | $f = \mu N = \mu mg\cos\theta$ |
 
 The block slides down if $mg\sin\theta \gt \mu_s mg\cos\theta$I.e., $\tan\theta \gt \mu_s$.
 
@@ -322,11 +324,11 @@ $$
 
 ### Elastic and Inelastic Collisions
 
-| Type | Kinetic Energy | Momentum |
+| Type                | Kinetic Energy | Momentum                           |
 | ------------------- | -------------- | ---------------------------------- |
-| Perfectly elastic | Conserved | Conserved |
-| Inelastic | NOT conserved | Conserved |
-| Perfectly inelastic | Maximum loss | Conserved (objects stick together) |
+| Perfectly elastic   | Conserved      | Conserved                          |
+| Inelastic           | NOT conserved  | Conserved                          |
+| Perfectly inelastic | Maximum loss   | Conserved (objects stick together) |
 
 :::info[Example]
 
@@ -530,25 +532,25 @@ $$
 
 ## Summary
 
-| Law | Statement |
+| Law             | Statement                                                                     |
 | --------------- | ----------------------------------------------------------------------------- |
-| Newton's First | An object continues at rest or constant velocity unless acted on by net force |
-| Newton's Second | $\vec{F}_{\mathrm{net}} = m\vec{a}$ or $\vec{F} = \dfrac{d\vec{p}}{dt}$ |
-| Newton's Third | Every action has an equal and opposite reaction |
+| Newton's First  | An object continues at rest or constant velocity unless acted on by net force |
+| Newton's Second | $\vec{F}_{\mathrm{net}} = m\vec{a}$ or $\vec{F} = \dfrac{d\vec{p}}{dt}$       |
+| Newton's Third  | Every action has an equal and opposite reaction                               |
 
-| Quantity | Formula | Unit |
+| Quantity       | Formula                                     | Unit                             |
 | -------------- | ------------------------------------------- | -------------------------------- |
-| Momentum | $\vec{p} = m\vec{v}$ | $\mathrm{kg} \cdot \mathrm{m/s}$ |
-| Impulse | $\vec{J} = \vec{F}\Delta t = \Delta\vec{p}$ | $\mathrm{N} \cdot \mathrm{s}$ |
-| Work | $W = Fd\cos\theta$ | $\mathrm{J}$ |
-| Kinetic energy | $E_k = \dfrac{1}{2}mv^2$ | $\mathrm{J}$ |
-| Power | $P = \dfrac{W}{t} = Fv$ | $\mathrm{W}$ |
+| Momentum       | $\vec{p} = m\vec{v}$                        | $\mathrm{kg} \cdot \mathrm{m/s}$ |
+| Impulse        | $\vec{J} = \vec{F}\Delta t = \Delta\vec{p}$ | $\mathrm{N} \cdot \mathrm{s}$    |
+| Work           | $W = Fd\cos\theta$                          | $\mathrm{J}$                     |
+| Kinetic energy | $E_k = \dfrac{1}{2}mv^2$                    | $\mathrm{J}$                     |
+| Power          | $P = \dfrac{W}{t} = Fv$                     | $\mathrm{W}$                     |
 
 :::tip[Exam Strategy]
 
 Always draw free-body diagrams. Resolve forces into components along the chosen axes. For momentum
-Questions, define the positive direction. For efficiency questions, remember that efficiency
-Is always less than 100% in real systems.
+Questions, define the positive direction. For efficiency questions, remember that efficiency Is
+always less than 100% in real systems.
 
 :::
 
@@ -558,12 +560,12 @@ Is always less than 100% in real systems.
 
 ### Motion in Lifts (Elevators)
 
-| Situation | Equation | Apparent Weight |
+| Situation                       | Equation       | Apparent Weight     |
 | ------------------------------- | -------------- | ------------------- |
-| Stationary or constant velocity | $N = mg$ | Normal ($mg$) |
-| Accelerating upward | $N = m(g + a)$ | Greater than normal |
-| Accelerating downward | $N = m(g - a)$ | Less than normal |
-| Free fall ($a = g$) | $N = 0$ | Weightless |
+| Stationary or constant velocity | $N = mg$       | Normal ($mg$)       |
+| Accelerating upward             | $N = m(g + a)$ | Greater than normal |
+| Accelerating downward           | $N = m(g - a)$ | Less than normal    |
+| Free fall ($a = g$)             | $N = 0$        | Weightless          |
 
 :::info[Example]
 
@@ -618,7 +620,7 @@ As the applied force increases from zero:
 1. The static friction matches the applied force (up to $\mu_s N$).
 2. At the limiting friction point, the object begins to move.
 3. Once moving, kinetic friction ($\mu_k N$) applies, which is less than the maximum static
- friction.
+   friction.
 4. Kinetic friction is approximately constant regardless of speed.
 
 ### Rolling Friction
@@ -735,10 +737,10 @@ $$
 
 ### Question 6 (Paper 2 style)
 
-Two objects, one of mass $m$ and the other of mass $3m$Collide head-on. The lighter object is
-Moving at $6\mathrm{ m/s}$ and the heavier one at $2\mathrm{ m/s}$ in the opposite direction. After
-The collision, the lighter object moves at $2\mathrm{ m/s}$ in the opposite direction to its
-Original motion.
+Two objects, one of mass $m$ and the other of mass $3m$Collide head-on. The lighter object is Moving
+at $6\mathrm{ m/s}$ and the heavier one at $2\mathrm{ m/s}$ in the opposite direction. After The
+collision, the lighter object moves at $2\mathrm{ m/s}$ in the opposite direction to its Original
+motion.
 
 **(a)** Find the velocity of the heavier object after the collision.
 
@@ -800,8 +802,8 @@ Where $\theta$ is the angle of the surface with the horizontal.
 
 ### Friction on a Banked Curve with Speed Different from Ideal
 
-On a banked curve designed for speed $v_0$If a car travels at speed $v \neq v_0$Friction
-Provides the additional centripetal force:
+On a banked curve designed for speed $v_0$If a car travels at speed $v \neq v_0$Friction Provides
+the additional centripetal force:
 
 - $v \gt v_0$: friction acts down the slope (adds to centripetal force).
 - $v \lt v_0$: friction acts up the slope (reduces centripetal force).
@@ -890,18 +892,20 @@ $$
 E_e = \frac{1}{2}kx^2 \implies 26.67 = 1000x^2 \implies x = 0.163\mathrm{ m}
 $$
 
-For the A-Level treatment of this topic, see [Dynamics](https://alevel.wyattau.com/docs/physics/mechanics/dynamics).
+For the A-Level treatment of this topic, see
+[Dynamics](https://alevel.wyattau.com/docs/physics/mechanics/dynamics).
 
 ---
 
-:::tip
-Diagnostic Test
-Ready to test your understanding of **Dynamics**? The [diagnostic test](/docs/ib/physics/diagnostics/diag-dynamics) contains the hardest questions within the IB specification for this topic, each with a full worked solution.
+:::tip Diagnostic Test Ready to test your understanding of **Dynamics**? The
+[diagnostic test](/docs/ib/physics/diagnostics/diag-dynamics) contains the hardest questions within
+the IB specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Dynamics with other physics topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Dynamics
+with other physics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/ib/physics/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/ib/physics/diagnostics/diagnostic-guide) for instructions on
+self-marking and building a personal test matrix. :::
 
 ## Common Pitfalls
 

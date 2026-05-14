@@ -1,7 +1,9 @@
 ---
 id: dse-chemistry-energetics
 title: Chemistry - Energetics / Thermochemistry
-description: "DSE Chemistry notes covering enthalpy changes, standard enthalpy of formation/combustion/neutralisation, Hess's Law and energy cycles, bond enthalpies,"
+description:
+  "DSE Chemistry notes covering enthalpy changes, standard enthalpy of
+  formation/combustion/neutralisation, Hess's Law and energy cycles, bond enthalpies,"
 slug: energetics
 tags: [DSE, Chemistry]
 categories: [DSE, Chemistry]
@@ -57,10 +59,7 @@ By definition, $\Delta H_f^\circ$ of any element in its standard state = 0.
 
 $$\Delta H_f^\circ(\mathrm{C}_{(s,\mathrm{ graphite})}) = 0 \quad ; \quad \Delta H_f^\circ(\mathrm{H}_{2(g)}) = 0$$
 
-:::warning
-Warning
-Involves formation FROM elements, not the other way around.
-:::
+:::warning Warning Involves formation FROM elements, not the other way around. :::
 
 ### Standard Enthalpy of Combustion ($\Delta H_c^\circ$)
 
@@ -94,16 +93,16 @@ This is always endothermic (bonds must be broken).
 
 ### Key Reference Values
 
-| Substance | $\Delta H_f^\circ$ (kJ/mol) | $\Delta H_c^\circ$ (kJ/mol) |
+| Substance                                     | $\Delta H_f^\circ$ (kJ/mol) | $\Delta H_c^\circ$ (kJ/mol) |
 | --------------------------------------------- | --------------------------- | --------------------------- |
-| $\mathrm{CO}_{2(g)}$ | $-393.5$ | -- |
-| $\mathrm{H}_2\mathrm{O}_{(l)}$ | $-285.8$ | -- |
-| $\mathrm{H}_2\mathrm{O}_{(g)}$ | $-241.8$ | -- |
-| $\mathrm{CH}_{4(g)}$ | $-74.8$ | $-890.3$ |
-| $\mathrm{C}_2\mathrm{H}_{5}\mathrm{OH}_{(l)}$ | $-277.7$ | $-1367$ |
-| $\mathrm{C}_3\mathrm{H}_{8(g)}$ | $-103.8$ | $-2220$ |
-| $\mathrm{NH}_{3(g)}$ | $-46.0$ | $-383$ |
-| $\mathrm{NaOH}_{(aq)}$ | $-470.1$ | -- |
+| $\mathrm{CO}_{2(g)}$                          | $-393.5$                    | --                          |
+| $\mathrm{H}_2\mathrm{O}_{(l)}$                | $-285.8$                    | --                          |
+| $\mathrm{H}_2\mathrm{O}_{(g)}$                | $-241.8$                    | --                          |
+| $\mathrm{CH}_{4(g)}$                          | $-74.8$                     | $-890.3$                    |
+| $\mathrm{C}_2\mathrm{H}_{5}\mathrm{OH}_{(l)}$ | $-277.7$                    | $-1367$                     |
+| $\mathrm{C}_3\mathrm{H}_{8(g)}$               | $-103.8$                    | $-2220$                     |
+| $\mathrm{NH}_{3(g)}$                          | $-46.0$                     | $-383$                      |
+| $\mathrm{NaOH}_{(aq)}$                        | $-470.1$                    | --                          |
 
 ---
 
@@ -219,22 +218,20 @@ $$\Delta H \approx \sum (\mathrm{bonds broken}) - \sum (\mathrm{bonds formed})$$
 
 ### Common Bond Enthalpies
 
-| Bond | Enthalpy (kJ/mol) | Bond | Enthalpy (kJ/mol) |
+| Bond       | Enthalpy (kJ/mol)          | Bond       | Enthalpy (kJ/mol) |
 | ---------- | -------------------------- | ---------- | ----------------- |
-| C--C | 347 | C--H | 413 |
-| C=C | 614 | O--H | 464 |
-| C$\equiv$C | 839 | H--H | 436 |
-| C--O | 358 | O=O | 498 |
-| C=O | 805 (in $\mathrm{CO}_2$) | N$\equiv$N | 945 |
-| C=O | 743 (in aldehydes/ketones) | N--H | 391 |
-| C--Cl | 346 | F--F | 158 |
-| O--O | 146 | Cl--Cl | 243 |
+| C--C       | 347                        | C--H       | 413               |
+| C=C        | 614                        | O--H       | 464               |
+| C$\equiv$C | 839                        | H--H       | 436               |
+| C--O       | 358                        | O=O        | 498               |
+| C=O        | 805 (in $\mathrm{CO}_2$)   | N$\equiv$N | 945               |
+| C=O        | 743 (in aldehydes/ketones) | N--H       | 391               |
+| C--Cl      | 346                        | F--F       | 158               |
+| O--O       | 146                        | Cl--Cl     | 243               |
 
-:::warning
-Bond enthalpies give only **average** values. For reactions involving the gas phase, they
+:::warning Bond enthalpies give only **average** values. For reactions involving the gas phase, they
 Give good estimates. For reactions involving liquids or aqueous solutions, additional energy changes
-(vaporisation, dissolution) are not accounted for, so the estimate is less accurate.
-:::
+(vaporisation, dissolution) are not accounted for, so the estimate is less accurate. :::
 
 **Worked example 4:** Estimate $\Delta H$ for the combustion of methane using bond enthalpies.
 
@@ -376,12 +373,12 @@ To heat losses to the surroundings and incomplete combustion.
 
 ### Sources of Error in Calorimetry
 
-| Error | Effect | Minimisation |
+| Error                               | Effect                                         | Minimisation                           |
 | ----------------------------------- | ---------------------------------------------- | -------------------------------------- |
-| Heat loss to surroundings | $\Delta T$ too small; $\Delta H$ less negative | Use a polystyrene cup (good insulator) |
-| Incomplete combustion | Less heat released | Ensure good air supply |
-| Evaporation of fuel during weighing | Apparent mass too low | Weigh quickly; use a cap |
-| Heat absorbed by calorimeter | $\Delta T$ too small | Account for calorimeter heat capacity |
+| Heat loss to surroundings           | $\Delta T$ too small; $\Delta H$ less negative | Use a polystyrene cup (good insulator) |
+| Incomplete combustion               | Less heat released                             | Ensure good air supply                 |
+| Evaporation of fuel during weighing | Apparent mass too low                          | Weigh quickly; use a cap               |
+| Heat absorbed by calorimeter        | $\Delta T$ too small                           | Account for calorimeter heat capacity  |
 
 ---
 
@@ -395,17 +392,17 @@ Is the enthalpy change when 1 mole of an ionic solid is formed from its gaseous 
 ### Steps in a Born-Haber Cycle (for NaCl)
 
 1. **Atomisation of sodium:** $\mathrm{Na}_{(s)} \to \mathrm{Na}_{(g)}$
- ($\Delta H_{\mathrm{at}}^\circ = +108 \mathrm{ kJ/mol}$)
+   ($\Delta H_{\mathrm{at}}^\circ = +108 \mathrm{ kJ/mol}$)
 2. **Ionisation of sodium:** $\mathrm{Na}_{(g)} \to \mathrm{Na}^+_{(g)} + e^-$
- ($\mathrm{IE}_1 = +496 \mathrm{ kJ/mol}$)
+   ($\mathrm{IE}_1 = +496 \mathrm{ kJ/mol}$)
 3. **Atomisation of chlorine:** $\frac{1}{2}\mathrm{Cl}_{2(g)} \to \mathrm{Cl}_{(g)}$
- ($\Delta H_{\mathrm{at}}^\circ = +122 \mathrm{ kJ/mol}$)
+   ($\Delta H_{\mathrm{at}}^\circ = +122 \mathrm{ kJ/mol}$)
 4. **Electron affinity of chlorine:** $\mathrm{Cl}_{(g)} + e^- \to \mathrm{Cl}^-_{(g)}$
- ($\mathrm{EA} = -349 \mathrm{ kJ/mol}$)
+   ($\mathrm{EA} = -349 \mathrm{ kJ/mol}$)
 5. **Lattice energy:** $\mathrm{Na}^+_{(g)} + \mathrm{Cl}^-_{(g)} \to \mathrm{NaCl}_{(s)}$
- ($\Delta H_{\mathrm{latt}} = ?$)
+   ($\Delta H_{\mathrm{latt}} = ?$)
 6. **Formation:** $\mathrm{Na}_{(s)} + \frac{1}{2}\mathrm{Cl}_{2(g)} \to \mathrm{NaCl}_{(s)}$
- ($\Delta H_f^\circ = -411 \mathrm{ kJ/mol}$)
+   ($\Delta H_f^\circ = -411 \mathrm{ kJ/mol}$)
 
 By Hess's Law:
 
@@ -417,10 +414,8 @@ $$-411 = 377 + \Delta H_{\mathrm{latt}}$$
 
 $$\Delta H_{\mathrm{latt}} = -411 - 377 = -788 \mathrm{ kJ/mol}$$
 
-:::info
-Lattice energy is always exothermic (negative) because energy is released when oppositely
-Charged ions come together.
-:::
+:::info Lattice energy is always exothermic (negative) because energy is released when oppositely
+Charged ions come together. :::
 
 **Worked example 8:** Calculate the lattice energy of $\mathrm{MgO}$ given:
 
@@ -428,7 +423,7 @@ Charged ions come together.
 - $\mathrm{IE}_1(\mathrm{Mg}) = +738 \mathrm{ kJ/mol}$
 - $\mathrm{IE}_2(\mathrm{Mg}) = +1451 \mathrm{ kJ/mol}$
 - $\Delta H_{\mathrm{at}}^\circ(\mathrm{O}) = +248 \mathrm{ kJ/mol}$ (for
- $\frac{1}{2}\mathrm{O}_{2(g)} \to \mathrm{O}_{(g)}$)
+  $\frac{1}{2}\mathrm{O}_{2(g)} \to \mathrm{O}_{(g)}$)
 - $\mathrm{EA}_1(\mathrm{O}) = -141 \mathrm{ kJ/mol}$
 - $\mathrm{EA}_2(\mathrm{O}) = +798 \mathrm{ kJ/mol}$ (second electron affinity is endothermic)
 - $\Delta H_f^\circ(\mathrm{MgO}) = -602 \mathrm{ kJ/mol}$
@@ -479,15 +474,15 @@ $$\mathrm{N}_{2(g)} + 3\mathrm{H}_{2(g)} \to 2\mathrm{NH}_{3(g)} \quad \Delta S 
 
 Typical values (J mol$^{-1}$ K$^{-1}$):
 
-| Substance | $S^\circ$ (J mol$^{-1}$ K$^{-1}$) |
+| Substance                      | $S^\circ$ (J mol$^{-1}$ K$^{-1}$) |
 | ------------------------------ | --------------------------------- |
-| $\mathrm{C}_{(s)}$ | 5.7 |
-| $\mathrm{NaCl}_{(s)}$ | 72.1 |
-| $\mathrm{H}_2\mathrm{O}_{(l)}$ | 69.9 |
-| $\mathrm{H}_2\mathrm{O}_{(g)}$ | 188.7 |
-| $\mathrm{CO}_{2(g)}$ | 213.6 |
-| $\mathrm{N}_{2(g)}$ | 191.5 |
-| $\mathrm{NH}_{3(g)}$ | 192.3 |
+| $\mathrm{C}_{(s)}$             | 5.7                               |
+| $\mathrm{NaCl}_{(s)}$          | 72.1                              |
+| $\mathrm{H}_2\mathrm{O}_{(l)}$ | 69.9                              |
+| $\mathrm{H}_2\mathrm{O}_{(g)}$ | 188.7                             |
+| $\mathrm{CO}_{2(g)}$           | 213.6                             |
+| $\mathrm{N}_{2(g)}$            | 191.5                             |
+| $\mathrm{NH}_{3(g)}$           | 192.3                             |
 
 ---
 
@@ -504,29 +499,27 @@ Where:
 - $T$ = temperature (K)
 - $\Delta S$ = entropy change (kJ mol$^{-1}$ K$^{-1}$)
 
-:::warning
-Ensure units are consistent. If $\Delta H$ is in kJ/mol and $\Delta S$ is in J mol$^{-1}$
-K$^{-1}$Convert $\Delta S$ to kJ mol$^{-1}$ K$^{-1}$ by dividing by 1000.
-:::
+:::warning Ensure units are consistent. If $\Delta H$ is in kJ/mol and $\Delta S$ is in J mol$^{-1}$
+K$^{-1}$Convert $\Delta S$ to kJ mol$^{-1}$ K$^{-1}$ by dividing by 1000. :::
 
 ### Feasibility of Reactions
 
-| $\Delta G$ | Reaction |
+| $\Delta G$       | Reaction                                                  |
 | ---------------- | --------------------------------------------------------- |
-| $\Delta G \lt 0$ | Feasible (spontaneous) under the given conditions |
-| $\Delta G = 0$ | At equilibrium |
+| $\Delta G \lt 0$ | Feasible (spontaneous) under the given conditions         |
+| $\Delta G = 0$   | At equilibrium                                            |
 | $\Delta G \gt 0$ | Not feasible (non-spontaneous) under the given conditions |
 
 ### Effect of Temperature on Feasibility
 
 The table below shows when $\Delta G \lt 0$ depending on the signs of $\Delta H$ and $\Delta S$:
 
-| $\Delta H$ | $\Delta S$ | $\Delta G = \Delta H - T\Delta S$ | Feasibility |
+| $\Delta H$ | $\Delta S$ | $\Delta G = \Delta H - T\Delta S$     | Feasibility             |
 | ---------- | ---------- | ------------------------------------- | ----------------------- |
-| $-$ | $+$ | Always negative | Always feasible |
-| $+$ | $-$ | Always positive | Never feasible |
-| $-$ | $-$ | Negative at low T, positive at high T | Feasible at low T only |
-| $+$ | $+$ | Positive at low T, negative at high T | Feasible at high T only |
+| $-$        | $+$        | Always negative                       | Always feasible         |
+| $+$        | $-$        | Always positive                       | Never feasible          |
+| $-$        | $-$        | Negative at low T, positive at high T | Feasible at low T only  |
+| $+$        | $+$        | Positive at low T, negative at high T | Feasible at high T only |
 
 ### Temperature of Equilibrium
 
@@ -581,28 +574,28 @@ A catalyst and continuous removal of $\mathrm{NH}_3$ to shift equilibrium.
 ## Common Pitfalls
 
 1. **Sign errors in Hess's Law:** When using $\Delta H_c^\circ$Remember:
- $\Delta H = \sum \Delta H_c^\circ(\mathrm{reactants}) - \sum \Delta H_c^\circ(\mathrm{products})$.
- The signs are reversed compared to using $\Delta H_f^\circ$.
+   $\Delta H = \sum \Delta H_c^\circ(\mathrm{reactants}) - \sum \Delta H_c^\circ(\mathrm{products})$.
+   The signs are reversed compared to using $\Delta H_f^\circ$.
 
 2. **Forgetting $\Delta H_f^\circ = 0$ for elements:** Elements in their standard states have zero
- enthalpy of formation. Do not skip them or assign them non-zero values.
+   enthalpy of formation. Do not skip them or assign them non-zero values.
 
 3. **Bond enthalpy limitations:** Bond enthalpies are averages. They do not account for
- intermolecular forces, phase changes, or the specific molecular environment. Estimates using bond
- enthalpies differ from experimental values.
+   intermolecular forces, phase changes, or the specific molecular environment. Estimates using bond
+   enthalpies differ from experimental values.
 
-4. **Unit inconsistency in Gibbs free energy:** $\Delta H$ is in kJ/mol, but $\Delta S$ is
- often given in J mol$^{-1}$ K$^{-1}$. Always convert to the same units.
+4. **Unit inconsistency in Gibbs free energy:** $\Delta H$ is in kJ/mol, but $\Delta S$ is often
+   given in J mol$^{-1}$ K$^{-1}$. Always convert to the same units.
 
 5. **Calorimetry assumptions:** Assuming no heat loss and density = 1.00 g/cm$^3$ introduces
- systematic errors. Experimental values of $\Delta H_c$ are always less exothermic than literature
- values.
+   systematic errors. Experimental values of $\Delta H_c$ are always less exothermic than literature
+   values.
 
 6. **Second electron affinity is endothermic:** Adding a second electron to a negative ion
- ($\mathrm{O}^-$) requires energy because of electron-electron repulsion.
+   ($\mathrm{O}^-$) requires energy because of electron-electron repulsion.
 
 7. **$\Delta G$ predicts feasibility, not rate:** A reaction with $\Delta G \lt 0$ may still be
- extremely slow. Thermodynamic feasibility does not imply kinetic practicality.
+   extremely slow. Thermodynamic feasibility does not imply kinetic practicality.
 
 ---
 
@@ -751,21 +744,21 @@ Explain why the experimental value of $\Delta H_c$ for ethanol determined by sim
 The discrepancy is due to:
 
 1. **Heat loss to surroundings:** Much of the heat produced escapes to the air and the calorimeter
- rather than being absorbed by the water.
+   rather than being absorbed by the water.
 
 2. **Incomplete combustion:** Ethanol may burn incompletely, producing CO and soot instead of only
- $\mathrm{CO}_2$ and $\mathrm{H}_2\mathrm{O}$Releasing less heat per mole.
+   $\mathrm{CO}_2$ and $\mathrm{H}_2\mathrm{O}$Releasing less heat per mole.
 
 3. **Evaporation of ethanol:** Some ethanol evaporates before/during combustion, meaning not all the
- measured mass actually burns.
+   measured mass actually burns.
 
 Improvements:
 
 1. Use a bomb calorimeter (sealed, insulated vessel) to minimise heat loss and ensure complete
- combustion.
+   combustion.
 
 2. Reduce the distance between the flame and the calorimeter, or use a draught shield to reduce
- convective heat loss.
+   convective heat loss.
 
 </details>
 
@@ -875,16 +868,16 @@ $\Delta H = -5.936 / 0.100 = -59.4 \mathrm{ kJ/mol}$
 
 ## Summary of Key Equations
 
-| Equation | Use |
+| Equation                                                                                          | Use                                |
 | ------------------------------------------------------------------------------------------------- | ---------------------------------- |
-| $\Delta H = \sum \Delta H_f^\circ(\mathrm{products}) - \sum \Delta H_f^\circ(\mathrm{reactants})$ | Hess's Law (formation) |
-| $\Delta H = \sum \Delta H_c^\circ(\mathrm{reactants}) - \sum \Delta H_c^\circ(\mathrm{products})$ | Hess's Law (combustion) |
-| $\Delta H \approx \sum (\mathrm{bonds broken}) - \sum (\mathrm{bonds formed})$ | Bond enthalpy estimate |
-| $q = mc\Delta T$ | Calorimetry |
-| $\Delta H = -q/n$ | From calorimetry to molar enthalpy |
-| $\Delta G = \Delta H - T\Delta S$ | Gibbs free energy |
-| $T = \Delta H / \Delta S$ (when $\Delta G = 0$) | Feasibility temperature |
-| $\Delta H_{\mathrm{sol}} = \Delta H_{\mathrm{latt}} + \Delta H_{\mathrm{hyd}}$ | Solution enthalpy |
+| $\Delta H = \sum \Delta H_f^\circ(\mathrm{products}) - \sum \Delta H_f^\circ(\mathrm{reactants})$ | Hess's Law (formation)             |
+| $\Delta H = \sum \Delta H_c^\circ(\mathrm{reactants}) - \sum \Delta H_c^\circ(\mathrm{products})$ | Hess's Law (combustion)            |
+| $\Delta H \approx \sum (\mathrm{bonds broken}) - \sum (\mathrm{bonds formed})$                    | Bond enthalpy estimate             |
+| $q = mc\Delta T$                                                                                  | Calorimetry                        |
+| $\Delta H = -q/n$                                                                                 | From calorimetry to molar enthalpy |
+| $\Delta G = \Delta H - T\Delta S$                                                                 | Gibbs free energy                  |
+| $T = \Delta H / \Delta S$ (when $\Delta G = 0$)                                                   | Feasibility temperature            |
+| $\Delta H_{\mathrm{sol}} = \Delta H_{\mathrm{latt}} + \Delta H_{\mathrm{hyd}}$                    | Solution enthalpy                  |
 
 ## Worked Examples
 

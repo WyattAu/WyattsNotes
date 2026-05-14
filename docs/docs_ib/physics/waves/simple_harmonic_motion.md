@@ -1,9 +1,11 @@
 ---
 title: Simple Harmonic Motion
 tags:
-- physics
+  - physics
 slug: simple-harmonic-motion
-description: "Rigorous IB physics notes covering Simple Harmonic Motion. Includes definitions, derivations, worked examples, and exam-style problems."
+description:
+  'Rigorous IB physics notes covering Simple Harmonic Motion. Includes definitions, derivations,
+  worked examples, and exam-style problems.'
 ---
 
 ## Specification
@@ -15,9 +17,9 @@ description: "Rigorous IB physics notes covering Simple Harmonic Motion. Include
 - Conditions that lead to simple harmonic motion
 - The defining equation of simple harmonic motion: $a = -\omega^2 x$
 - A particle undergoing SHM can be described using time period $T$Frequency $f$Angular frequency
- $\omega$Amplitude, equilibrium position, and displacement
+  $\omega$Amplitude, equilibrium position, and displacement
 - The time period in terms of frequency and angular frequency:
- $T = \frac{1}{f} = \frac{2\pi}{\omega}$
+  $T = \frac{1}{f} = \frac{2\pi}{\omega}$
 - The time period of a mass-spring system: $T = 2\pi \sqrt{\frac{m}{k}}$
 - The time period of a simple pendulum: $T = 2\pi \sqrt{\frac{L}{g}}$
 - A qualitative approach to energy changes during one cycle of an oscillation
@@ -94,8 +96,8 @@ Phase Relationships:
 - Displacement-Velocity: $v = \pm \omega \sqrt{A^2 - x^2}$ (from energy conservation).
 - Displacement-Acceleration: $a = -\omega^2 x$ (definitive property of SHM).
 - Extrema:
- - $|v|_{\mathrm{max}} = \omega A$ at $x = 0$ (equilibrium).
- - $|a|_{\mathrm{max}} = \omega^2 A$ at $x = \pm A$ (max displacement).
+- $|v|_{\mathrm{max}} = \omega A$ at $x = 0$ (equilibrium).
+- $|a|_{\mathrm{max}} = \omega^2 A$ at $x = \pm A$ (max displacement).
 
 Graphical Interpretation:
 
@@ -195,22 +197,22 @@ $$
 
 - Phase Difference ($\Delta\phi$): Temporal shift between two SHMs:
   $$
- \Delta\phi = \omega \Delta t = \frac{2\pi \Delta t}{T}. \tag{14}
+  \Delta\phi = \omega \Delta t = \frac{2\pi \Delta t}{T}. \tag{14}
   $$
 - Measured in radians (1 rad $\approx$ 57.3°).
 
 ## Summary of Key Equations
 
-| Quantity | Expression |
+| Quantity          | Expression                                                       |
 | ----------------- | ---------------------------------------------------------------- |
-| Displacement | $x = A \cos(\omega t + \phi_0)$ |
-| Velocity | $v = -\omega A \sin(\omega t + \phi_0)$ |
-| Acceleration | $a = -\omega^2 x$ |
+| Displacement      | $x = A \cos(\omega t + \phi_0)$                                  |
+| Velocity          | $v = -\omega A \sin(\omega t + \phi_0)$                          |
+| Acceleration      | $a = -\omega^2 x$                                                |
 | Angular Frequency | $\omega = \sqrt{k/m}$ (spring), $\omega = \sqrt{g/L}$ (pendulum) |
-| Period | $T = 2\pi / \omega$ |
-| Kinetic Energy | $K = \frac{1}{2}m\omega^2(A^2 - x^2)$ |
-| Potential Energy | $U = \frac{1}{2}m\omega^2 x^2$ |
-| Total Energy | $E_{\mathrm{total}} = \frac{1}{2}m\omega^2 A^2$ |
+| Period            | $T = 2\pi / \omega$                                              |
+| Kinetic Energy    | $K = \frac{1}{2}m\omega^2(A^2 - x^2)$                            |
+| Potential Energy  | $U = \frac{1}{2}m\omega^2 x^2$                                   |
+| Total Energy      | $E_{\mathrm{total}} = \frac{1}{2}m\omega^2 A^2$                  |
 
 ## Derivation of the SHM Solution
 
@@ -262,11 +264,11 @@ $$
 The two forms are physically equivalent; the choice is a matter of convenience based on initial
 Conditions.
 
-| Initial condition | Preferred form | Rationale |
+| Initial condition                         | Preferred form                   | Rationale                      |
 | ----------------------------------------- | -------------------------------- | ------------------------------ |
-| Released from $x = A$ with $v = 0$ | $x = A\cos(\omega t)$ | $\cos(0) = 1$$\sin(0) = 0$ |
-| Released from $x = 0$ with $v = v_{\max}$ | $x = A\sin(\omega t)$ | $\sin(0) = 0$$\cos(0) = 1$ |
-| General initial state | Either with appropriate $\phi_0$ | Phase angle absorbs the offset |
+| Released from $x = A$ with $v = 0$        | $x = A\cos(\omega t)$            | $\cos(0) = 1$$\sin(0) = 0$     |
+| Released from $x = 0$ with $v = v_{\max}$ | $x = A\sin(\omega t)$            | $\sin(0) = 0$$\cos(0) = 1$     |
+| General initial state                     | Either with appropriate $\phi_0$ | Phase angle absorbs the offset |
 
 The IB data booklet uses the sine convention ($x = x_0 \sin(\omega t + \Phi)$). Both conventions are
 Correct. Pick one and remain consistent within a single problem. Switching conventions mid-problem
@@ -310,8 +312,8 @@ $$
 V(0.125) = -\omega A \sin(\omega t) = -4\pi(0.10)\sin\!\left(\frac{\pi}{2}\right) = -1.26\mathrm{ m/s}
 $$
 
-The mass passes through equilibrium at $t = T/4 = 0.125\mathrm{ s}$Moving in the negative
-Direction with speed $|v| = \omega A = 1.26\mathrm{ m/s}$.
+The mass passes through equilibrium at $t = T/4 = 0.125\mathrm{ s}$Moving in the negative Direction
+with speed $|v| = \omega A = 1.26\mathrm{ m/s}$.
 
 ### Example 3: Amplitude from Energy
 
@@ -515,7 +517,7 @@ The amplitude decays exponentially: $A(t) = A_0 e^{-bt}$Where $b$ is the damping
 - The period is slightly **longer** than the undamped period: $T_{\mathrm{damped}} \gt T_0$.
 - Energy is dissipated each cycle, primarily as heat via friction or air resistance.
 - The quality factor $Q = 2\pi \times \frac{\mathrm{energy stored}}{\mathrm{energy lost per cycle}}$
- quantifies how underdamped the system is. High $Q$ means low energy loss per cycle.
+  quantifies how underdamped the system is. High $Q$ means low energy loss per cycle.
 
 ### Critical Damping
 
@@ -537,11 +539,11 @@ Critical damping.
 
 ### Comparison of Damping Regimes
 
-| Regime | Oscillation | Return speed | Period vs undamped |
+| Regime   | Oscillation        | Return speed | Period vs undamped |
 | -------- | ------------------ | ------------ | ------------------ |
-| Light | Yes (decaying $A$) | Moderate | Slightly longer |
-| Critical | No | Fastest | N/A |
-| Heavy | No | Slowest | N/A |
+| Light    | Yes (decaying $A$) | Moderate     | Slightly longer    |
+| Critical | No                 | Fastest      | N/A                |
+| Heavy    | No                 | Slowest      | N/A                |
 
 ### Energy Dissipation
 
@@ -678,8 +680,7 @@ Is less accurate at $10^\circ$But this difference is negligible at the IB level.
 ### Problem 5 (SL)
 
 A $2.0\mathrm{ kg}$ object on a spring oscillates with amplitude $0.30\mathrm{ m}$. At
-$x = 0.20\mathrm{ m}$The speed is $2.0\mathrm{ m/s}$. Find the total energy and the spring
-Constant.
+$x = 0.20\mathrm{ m}$The speed is $2.0\mathrm{ m/s}$. Find the total energy and the spring Constant.
 
 <details>
 <summary>Solution</summary>
@@ -800,17 +801,19 @@ $$
 V = \omega\sqrt{A^2 - x^2} = 2.21\sqrt{(1.42)^2 - (0.92)^2} = 2.21\sqrt{1.170} = 2.21(1.082) = 2.39\mathrm{ m/s}
 $$
 
-For the A-Level treatment of this topic, see [Oscillations](https://alevel.wyattau.com/docs/physics/mechanics/oscillations).
+For the A-Level treatment of this topic, see
+[Oscillations](https://alevel.wyattau.com/docs/physics/mechanics/oscillations).
 
 </details>
 
 ---
 
-:::tip
-Diagnostic Test
-Ready to test your understanding of **Simple Harmonic Motion**? The [diagnostic test](/docs/ib/physics/diagnostics/diag-shm) contains the hardest questions within the IB specification for this topic, each with a full worked solution.
+:::tip Diagnostic Test Ready to test your understanding of **Simple Harmonic Motion**? The
+[diagnostic test](/docs/ib/physics/diagnostics/diag-shm) contains the hardest questions within the
+IB specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Simple Harmonic Motion with other physics topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Simple
+Harmonic Motion with other physics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/ib/physics/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/ib/physics/diagnostics/diagnostic-guide) for instructions on
+self-marking and building a personal test matrix. :::

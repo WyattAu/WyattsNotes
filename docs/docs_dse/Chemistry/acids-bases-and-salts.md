@@ -1,6 +1,8 @@
 ---
 title: Chemistry - Acids, Bases, and Salts
-description: "DSE Chemistry notes on acids, bases, and salts covering properties, pH scale, neutralisation reactions, salt preparation methods, and titration."
+description:
+  'DSE Chemistry notes on acids, bases, and salts covering properties, pH scale, neutralisation
+  reactions, salt preparation methods, and titration.'
 date: 2026-04-23T00:00:00.000Z
 tags:
   - Chemistry
@@ -17,6 +19,7 @@ slug: dse-chemistry-acids-bases-and-salts
 An acid is a substance that produces hydrogen ions ($\mathrm{H^+}$) when dissolved in water.
 
 **General properties:**
+
 - Turn blue litmus red
 - Have a sour taste
 - React with metals to produce hydrogen gas
@@ -29,6 +32,7 @@ A base is a substance that neutralises an acid. A **soluble base** is called an 
 Produces hydroxide ions ($\mathrm{OH^-}$) in solution.
 
 **General properties of alkalis:**
+
 - Turn red litmus blue
 - Have a soapy feel
 - React with acids in neutralisation reactions
@@ -36,7 +40,8 @@ Produces hydroxide ions ($\mathrm{OH^-}$) in solution.
 
 ### Worked Example 1
 
-Write balanced equations for the reaction of hydrochloric acid with (a) zinc and (b) calcium carbonate.
+Write balanced equations for the reaction of hydrochloric acid with (a) zinc and (b) calcium
+carbonate.
 
 (a) $$\mathrm{Zn} + 2\mathrm{HCl} \to \mathrm{ZnCl_2} + \mathrm{H_2}$$
 
@@ -57,7 +62,8 @@ $$\mathrm{H_2SO_4} \to 2\mathrm{H^+} + \mathrm{SO_4^{2-}}$$
 
 $$\mathrm{HNO_3} \to \mathrm{H^+} + \mathrm{NO_3^-}$$
 
-For a strong acid of concentration $c$$[\mathrm{H^+}] = c$ (for monoprotic) or $[\mathrm{H^+}] = 2c$ (for diprotic like $\mathrm{H_2SO_4}$).
+For a strong acid of concentration $c$$[\mathrm{H^+}] = c$ (for monoprotic) or $[\mathrm{H^+}] = 2c$
+(for diprotic like $\mathrm{H_2SO_4}$).
 
 ### Weak Acids
 
@@ -70,13 +76,13 @@ For a weak acid of concentration $c$$[\mathrm{H^+}] \ll c$.
 **Key point:** A weak acid is not the same as a dilute acid. Concentration refers to how much acid
 Is dissolved; strength refers to the degree of dissociation.
 
-| Comparison | Strong Acid | Weak Acid |
-| -------------- | -------------------------- | ----------------------------------- |
-| Dissociation | Complete | Partial |
-| Equilibrium | Lies far to the right | Lies to the left |
-| pH (same conc) | Lower (more acidic) | Higher (less acidic) |
-| Conductivity | Higher (more ions) | Lower (fewer ions) |
-| Reaction rate | Faster | Slower |
+| Comparison     | Strong Acid           | Weak Acid            |
+| -------------- | --------------------- | -------------------- |
+| Dissociation   | Complete              | Partial              |
+| Equilibrium    | Lies far to the right | Lies to the left     |
+| pH (same conc) | Lower (more acidic)   | Higher (less acidic) |
+| Conductivity   | Higher (more ions)    | Lower (fewer ions)   |
+| Reaction rate  | Faster                | Slower               |
 
 ### Worked Example 2
 
@@ -101,10 +107,10 @@ $$[\mathrm{H^+}] = 10^{-\mathrm{pH}}$$
 At $25^\circ\mathrm{C}$: $\mathrm{pH} + \mathrm{pOH} = 14$
 
 | pH Range | Classification |
-| ----------- | -------------------- |
-| $0 - 6$ | Acidic |
-| 7 | Neutral |
-| $8 - 14$ | Alkaline |
+| -------- | -------------- |
+| $0 - 6$  | Acidic         |
+| 7        | Neutral        |
+| $8 - 14$ | Alkaline       |
 
 ### Worked Example 3
 
@@ -120,14 +126,15 @@ $$[\mathrm{OH^-}] = \frac{K_w}{[\mathrm{H^+}]} = \frac{1.0 \times 10^{-14}}{3.98
 
 Indicators are substances that change colour depending on the pH of the solution.
 
-| Indicator | Colour in Acid | Colour in Alkali | pH Range |
-| -------------- | --------------- | ---------------- | ------------- |
-| Litmus | Red | Blue | $4.5 - 8.3$ |
-| Methyl orange | Red | Yellow | $3.1 - 4.4$ |
-| Phenolphthalein| Colourless | Pink | $8.3 - 10.0$ |
-| Universal | Varies | Varies | $1 - 14$ |
+| Indicator       | Colour in Acid | Colour in Alkali | pH Range     |
+| --------------- | -------------- | ---------------- | ------------ |
+| Litmus          | Red            | Blue             | $4.5 - 8.3$  |
+| Methyl orange   | Red            | Yellow           | $3.1 - 4.4$  |
+| Phenolphthalein | Colourless     | Pink             | $8.3 - 10.0$ |
+| Universal       | Varies         | Varies           | $1 - 14$     |
 
 For titrations:
+
 - Strong acid vs. Strong base: use methyl orange or phenolphthalein
 - Strong acid vs. Weak base: use methyl orange
 - Weak acid vs. Strong base: use phenolphthalein
@@ -150,13 +157,13 @@ This is the net ionic equation for all acid-base neutralisations in aqueous solu
 
 ## Common Acids and Their Properties
 
-| Acid | Formula | Type | Key Property |
-| --------------------- | ------------- | -------------- | ------------------------------------------------------ |
-| Hydrochloric acid | $\mathrm{HCl}$ | Monoprotic, strong | Used in stomach, reacts with metals, carbonates |
-| Sulphuric acid | $\mathrm{H_2SO_4}$ | Diprotic, strong | Dehydrating agent, diprotic (2 $\mathrm{H^+}$ per molecule) |
-| Nitric acid | $\mathrm{HNO_3}$ | Monoprotic, strong | Oxidising agent, reacts with metals to produce NO/NO$_2$ |
-| Ethanoic acid | $\mathrm{CH_3COOH}$ | Monoprotic, weak | Found in vinegar, partial dissociation |
-| Carbonic acid | $\mathrm{H_2CO_3}$ | Diprotic, weak | Formed when $\mathrm{CO_2}$ dissolves in water |
+| Acid              | Formula             | Type               | Key Property                                                |
+| ----------------- | ------------------- | ------------------ | ----------------------------------------------------------- |
+| Hydrochloric acid | $\mathrm{HCl}$      | Monoprotic, strong | Used in stomach, reacts with metals, carbonates             |
+| Sulphuric acid    | $\mathrm{H_2SO_4}$  | Diprotic, strong   | Dehydrating agent, diprotic (2 $\mathrm{H^+}$ per molecule) |
+| Nitric acid       | $\mathrm{HNO_3}$    | Monoprotic, strong | Oxidising agent, reacts with metals to produce NO/NO$_2$    |
+| Ethanoic acid     | $\mathrm{CH_3COOH}$ | Monoprotic, weak   | Found in vinegar, partial dissociation                      |
+| Carbonic acid     | $\mathrm{H_2CO_3}$  | Diprotic, weak     | Formed when $\mathrm{CO_2}$ dissolves in water              |
 
 ### Worked Example 4
 
@@ -170,12 +177,12 @@ $$3\mathrm{Cu} + 8\mathrm{HNO_3}(\mathrm{dilute}) \to 3\mathrm{Cu(NO_3)_2} + 2\m
 
 ## Common Bases
 
-| Base | Formula | Type | Use |
-| ---------------------- | -------------------- | ----------- | -------------------------------- |
-| Sodium hydroxide | $\mathrm{NaOH}$ | Strong alkali | Soap manufacture, neutralisation |
-| Potassium hydroxide | $\mathrm{KOH}$ | Strong alkali | Making soft soaps |
-| Calcium hydroxide | $\mathrm{Ca(OH)_2}$ | Weak alkali | Limewater, agriculture |
-| Ammonia solution | $\mathrm{NH_3(aq)}$ | Weak alkali | Cleaning, fertiliser production |
+| Base                | Formula             | Type          | Use                              |
+| ------------------- | ------------------- | ------------- | -------------------------------- |
+| Sodium hydroxide    | $\mathrm{NaOH}$     | Strong alkali | Soap manufacture, neutralisation |
+| Potassium hydroxide | $\mathrm{KOH}$      | Strong alkali | Making soft soaps                |
+| Calcium hydroxide   | $\mathrm{Ca(OH)_2}$ | Weak alkali   | Limewater, agriculture           |
+| Ammonia solution    | $\mathrm{NH_3(aq)}$ | Weak alkali   | Cleaning, fertiliser production  |
 
 ---
 
@@ -186,14 +193,14 @@ Metal or base.
 
 ### Solubility Rules
 
-| Ion | Soluble? |
-| ------------ | ------------------------------------------------- |
-| $\mathrm{Na^+}$$\mathrm{K^+}$$\mathrm{NH_4^+}$ | Always soluble |
-| $\mathrm{NO_3^-}$ | Always soluble |
-| $\mathrm{Cl^-}$ | Soluble except $\mathrm{AgCl}$$\mathrm{PbCl_2}$ |
-| $\mathrm{SO_4^{2-}}$ | Soluble except $\mathrm{BaSO_4}$$\mathrm{PbSO_4}$$\mathrm{CaSO_4}$ |
-| $\mathrm{CO_3^{2-}}$ | Insoluble except $\mathrm{Na^+}$$\mathrm{K^+}$$\mathrm{NH_4^+}$ |
-| $\mathrm{OH^-}$ | Insoluble except $\mathrm{Na^+}$$\mathrm{K^+}$$\mathrm{Ca^{2+}}$ (slightly) |
+| Ion                                            | Soluble?                                                                    |
+| ---------------------------------------------- | --------------------------------------------------------------------------- |
+| $\mathrm{Na^+}$$\mathrm{K^+}$$\mathrm{NH_4^+}$ | Always soluble                                                              |
+| $\mathrm{NO_3^-}$                              | Always soluble                                                              |
+| $\mathrm{Cl^-}$                                | Soluble except $\mathrm{AgCl}$$\mathrm{PbCl_2}$                             |
+| $\mathrm{SO_4^{2-}}$                           | Soluble except $\mathrm{BaSO_4}$$\mathrm{PbSO_4}$$\mathrm{CaSO_4}$          |
+| $\mathrm{CO_3^{2-}}$                           | Insoluble except $\mathrm{Na^+}$$\mathrm{K^+}$$\mathrm{NH_4^+}$             |
+| $\mathrm{OH^-}$                                | Insoluble except $\mathrm{Na^+}$$\mathrm{K^+}$$\mathrm{Ca^{2+}}$ (slightly) |
 
 ### Method 1: Acid + Metal
 
@@ -235,7 +242,8 @@ Describe how to prepare pure, dry crystals of copper(II) sulphate from copper(II
 Sulphuric acid.
 
 1. Add excess $\mathrm{CuO}$ to dilute $\mathrm{H_2SO_4}$ in a beaker.
-2. Warm gently and stir until no more $\mathrm{CuO}$ dissolves (excess ensures all acid is consumed).
+2. Warm gently and stir until no more $\mathrm{CuO}$ dissolves (excess ensures all acid is
+   consumed).
 3. Filter to remove the excess $\mathrm{CuO}$.
 4. Heat the filtrate to concentrate it by evaporation until crystals begin to form.
 5. Allow the solution to cool slowly for crystallisation.
@@ -315,30 +323,30 @@ $$\mathrm{ZnCO_3} \xrightarrow{\Delta} \mathrm{ZnO} + \mathrm{CO_2}$$
 ## Common Pitfalls
 
 - Confusing strong acids with concentrated acids. Strength refers to the degree of dissociation;
- concentration refers to the amount dissolved.
+  concentration refers to the amount dissolved.
 - Writing $\mathrm{H^+}$ instead of $\mathrm{H_3O^+}$ (hydronium ion). While $\mathrm{H^+}$ is
- acceptable in most exam answers, remember that protons in water exist as $\mathrm{H_3O^+}$.
+  acceptable in most exam answers, remember that protons in water exist as $\mathrm{H_3O^+}$.
 - Forgetting state symbols in ionic equations. State symbols are essential for correctly identifying
- spectator ions.
+  spectator ions.
 - Using the wrong indicator for a titration. Remember: strong acid + weak base uses methyl orange;
- weak acid + strong base uses phenolphthalein.
+  weak acid + strong base uses phenolphthalein.
 - Assuming all metal oxides are basic. Some metal oxides (e.g., $\mathrm{Al_2O_3}$$\mathrm{ZnO}$)
- are amphoteric and react with both acids and bases.
+  are amphoteric and react with both acids and bases.
 - Forgetting that $\mathrm{NH_3}$ is a weak base, not a strong base.
 
 ---
 
 ## Summary Table
 
-| Concept | Key Point |
-| ----------------- | ------------------------------------------------------ |
-| pH | $\mathrm{pH} = -\log_{10}[\mathrm{H^+}]$ |
-| Strong acid | Completely dissociated in water |
-| Weak acid | Partially dissociated; equilibrium lies to the left |
-| Neutralisation | $\mathrm{H^+} + \mathrm{OH^-} \to \mathrm{H_2O}$ |
-| Soluble salts | $\mathrm{Na^+}$$\mathrm{K^+}$$\mathrm{NH_4^+}$$\mathrm{NO_3^-}$ always soluble |
-| Carbonate + acid | Produces salt + water + $\mathrm{CO_2}$ |
-| Limewater test | $\mathrm{CO_2}$ turns limewater milky |
+| Concept          | Key Point                                                                      |
+| ---------------- | ------------------------------------------------------------------------------ |
+| pH               | $\mathrm{pH} = -\log_{10}[\mathrm{H^+}]$                                       |
+| Strong acid      | Completely dissociated in water                                                |
+| Weak acid        | Partially dissociated; equilibrium lies to the left                            |
+| Neutralisation   | $\mathrm{H^+} + \mathrm{OH^-} \to \mathrm{H_2O}$                               |
+| Soluble salts    | $\mathrm{Na^+}$$\mathrm{K^+}$$\mathrm{NH_4^+}$$\mathrm{NO_3^-}$ always soluble |
+| Carbonate + acid | Produces salt + water + $\mathrm{CO_2}$                                        |
+| Limewater test   | $\mathrm{CO_2}$ turns limewater milky                                          |
 
 ---
 
@@ -346,7 +354,8 @@ $$\mathrm{ZnCO_3} \xrightarrow{\Delta} \mathrm{ZnO} + \mathrm{CO_2}$$
 
 ### Worked Example: Weak Acid pH
 
-Calculate the pH of a $0.10 \mathrm{ mol/dm^3}$ solution of ethanoic acid ($K_a = 1.8 \times 10^{-5}$).
+Calculate the pH of a $0.10 \mathrm{ mol/dm^3}$ solution of ethanoic acid
+($K_a = 1.8 \times 10^{-5}$).
 
 <details>
 <summary>Solution</summary>
@@ -363,7 +372,9 @@ $$\mathrm{pH} = -\log_{10}(1.34 \times 10^{-3}) = 2.87$$
 
 ### Worked Example: Titration with Diprotic Acid
 
-$25.0 \mathrm{ cm^3}$ of $\mathrm{NaOH}$ solution is titrated with $0.100 \mathrm{ mol/dm^3}$ $\mathrm{H_2SO_4}$. The average titre is $18.75 \mathrm{ cm^3}$. Find the concentration of $\mathrm{NaOH}$.
+$25.0 \mathrm{ cm^3}$ of $\mathrm{NaOH}$ solution is titrated with $0.100 \mathrm{ mol/dm^3}$
+$\mathrm{H_2SO_4}$. The average titre is $18.75 \mathrm{ cm^3}$. Find the concentration of
+$\mathrm{NaOH}$.
 
 <details>
 <summary>Solution</summary>
@@ -380,7 +391,8 @@ $$[\mathrm{NaOH}] = \frac{3.750 \times 10^{-3}}{25.0/1000} = 0.150 \mathrm{ mol/
 
 ### Worked Example: Limiting Reactant with Carbonate
 
-$3.00 \mathrm{ g}$ of $\mathrm{MgCO_3}$ is added to $50.0 \mathrm{ cm^3}$ of $2.00 \mathrm{ mol/dm^3}$ $\mathrm{HCl}$. Calculate the volume of $\mathrm{CO_2}$ produced at RTP.
+$3.00 \mathrm{ g}$ of $\mathrm{MgCO_3}$ is added to $50.0 \mathrm{ cm^3}$ of
+$2.00 \mathrm{ mol/dm^3}$ $\mathrm{HCl}$. Calculate the volume of $\mathrm{CO_2}$ produced at RTP.
 
 <details>
 <summary>Solution</summary>
@@ -391,7 +403,9 @@ $$n(\mathrm{MgCO_3}) = \frac{3.00}{84.3} = 0.0356 \mathrm{ mol}$$
 
 $$n(\mathrm{HCl}) = 2.00 \times 0.0500 = 0.100 \mathrm{ mol}$$
 
-$\mathrm{HCl}$ needed for $0.0356 \mathrm{ mol}$ $\mathrm{MgCO_3}$: $2 \times 0.0356 = 0.0712 \mathrm{ mol}$. Since $0.100 \mathrm{ mol}$ is available, $\mathrm{MgCO_3}$ is the limiting reactant.
+$\mathrm{HCl}$ needed for $0.0356 \mathrm{ mol}$ $\mathrm{MgCO_3}$:
+$2 \times 0.0356 = 0.0712 \mathrm{ mol}$. Since $0.100 \mathrm{ mol}$ is available,
+$\mathrm{MgCO_3}$ is the limiting reactant.
 
 $$n(\mathrm{CO_2}) = 0.0356 \mathrm{ mol}$$
 
@@ -401,7 +415,8 @@ $$V(\mathrm{CO_2}) = 0.0356 \times 24.0 = 0.854 \mathrm{ dm^3}$$
 
 ### Worked Example: Choosing a Salt Preparation Method
 
-A student wants to prepare pure, dry crystals of lead(II) iodide. Describe the method and write the relevant equation.
+A student wants to prepare pure, dry crystals of lead(II) iodide. Describe the method and write the
+relevant equation.
 
 <details>
 <summary>Solution</summary>
@@ -409,7 +424,8 @@ A student wants to prepare pure, dry crystals of lead(II) iodide. Describe the m
 $\mathrm{PbI_2}$ is insoluble, so the **precipitation method** is used:
 
 1. Prepare aqueous solutions of lead(II) nitrate and potassium iodide.
-2. Mix the two solutions: $\mathrm{Pb(NO_3)_2}(aq) + 2\mathrm{KI}(aq) \to \mathrm{PbI_2}(s) + 2\mathrm{KNO_3}(aq)$
+2. Mix the two solutions:
+   $\mathrm{Pb(NO_3)_2}(aq) + 2\mathrm{KI}(aq) \to \mathrm{PbI_2}(s) + 2\mathrm{KNO_3}(aq)$
 3. A bright yellow precipitate of $\mathrm{PbI_2}$ forms.
 4. Filter the precipitate.
 5. Wash with distilled water to remove soluble impurities.
@@ -459,15 +475,17 @@ $$V(\mathrm{CO_2}) = 0.0250 \times 24.0 = 0.600 \mathrm{ dm^3}$$
 **Question 5:** Explain why a $0.10 \mathrm{ mol/dm^3}$ solution of ethanoic acid has a higher pH
 Than a $0.10 \mathrm{ mol/dm^3}$ solution of $\mathrm{HCl}$.
 
-$\mathrm{HCl}$ is a strong acid and dissociates completely: $[\mathrm{H^+}] = 0.10 \mathrm{ mol/dm^3}$
-Giving $\mathrm{pH} = 1.0$. Ethanoic acid is a weak acid and only partially dissociates:
-$[\mathrm{H^+}] \lt 0.10 \mathrm{ mol/dm^3}$Giving a pH greater than 1.0.
+$\mathrm{HCl}$ is a strong acid and dissociates completely:
+$[\mathrm{H^+}] = 0.10 \mathrm{ mol/dm^3}$ Giving $\mathrm{pH} = 1.0$. Ethanoic acid is a weak acid
+and only partially dissociates: $[\mathrm{H^+}] \lt 0.10 \mathrm{ mol/dm^3}$Giving a pH greater than
+1.0.
 
-**Question 6:** A student wants to prepare sodium chloride. Which method is most appropriate, and why?
+**Question 6:** A student wants to prepare sodium chloride. Which method is most appropriate, and
+why?
 
 Titration method: react $\mathrm{NaOH}$ with $\mathrm{HCl}$ using a suitable indicator (methyl
-Orange or phenolphthalein). Both reactants are soluble, and the salt $\mathrm{NaCl}$ is soluble,
-So evaporation of the neutralised solution yields pure crystals.
+Orange or phenolphthalein). Both reactants are soluble, and the salt $\mathrm{NaCl}$ is soluble, So
+evaporation of the neutralised solution yields pure crystals.
 
 </details>
 
@@ -477,7 +495,7 @@ So evaporation of the neutralised solution yields pure crystals.
 
 **Problem 1:** Calculate the pH of $0.0050 \mathrm{ mol/dm^3}$ $\mathrm{HNO_3}$.
 
-*If you get this wrong, revise: Strong and Weak Acids*
+_If you get this wrong, revise: Strong and Weak Acids_
 
 <details>
 <summary>Solution</summary>
@@ -490,7 +508,7 @@ $$\mathrm{pH} = -\log_{10}(0.0050) = 2.30$$
 
 **Problem 2:** A solution has $\mathrm{pH} = 4.55$. Find $[\mathrm{H^+}]$ and $[\mathrm{OH^-}]$.
 
-*If you get this wrong, revise: The pH Scale*
+_If you get this wrong, revise: The pH Scale_
 
 <details>
 <summary>Solution</summary>
@@ -501,20 +519,25 @@ $$[\mathrm{OH^-}] = \frac{10^{-14}}{2.82 \times 10^{-5}} = 3.55 \times 10^{-10} 
 
 </details>
 
-**Problem 3:** Which indicator should be used for titrating ethanoic acid with sodium hydroxide? Explain your choice.
+**Problem 3:** Which indicator should be used for titrating ethanoic acid with sodium hydroxide?
+Explain your choice.
 
-*If you get this wrong, revise: Indicators*
+_If you get this wrong, revise: Indicators_
 
 <details>
 <summary>Solution</summary>
 
-Phenolphthalein (pH range 8.3--10.0). Ethanoic acid is a weak acid and $\mathrm{NaOH}$ is a strong base, so the equivalence point has $\mathrm{pH} \gt 7$. Phenolphthalein changes colour within this alkaline range. Methyl orange (3.1--4.4) would change colour too early, before the equivalence point.
+Phenolphthalein (pH range 8.3--10.0). Ethanoic acid is a weak acid and $\mathrm{NaOH}$ is a strong
+base, so the equivalence point has $\mathrm{pH} \gt 7$. Phenolphthalein changes colour within this
+alkaline range. Methyl orange (3.1--4.4) would change colour too early, before the equivalence
+point.
 
 </details>
 
-**Problem 4:** Write the ionic equation for the reaction between barium chloride and sodium sulphate.
+**Problem 4:** Write the ionic equation for the reaction between barium chloride and sodium
+sulphate.
 
-*If you get this wrong, revise: Ionic Equations*
+_If you get this wrong, revise: Ionic Equations_
 
 <details>
 <summary>Solution</summary>
@@ -529,7 +552,7 @@ $\mathrm{Na^+}$ and $\mathrm{Cl^-}$ are spectator ions.
 
 **Problem 5:** Describe how to prepare pure, dry lead(II) sulphate.
 
-*If you get this wrong, revise: Salt Preparation Methods*
+_If you get this wrong, revise: Salt Preparation Methods_
 
 <details>
 <summary>Solution</summary>
@@ -542,9 +565,10 @@ $\mathrm{PbSO_4}$ is insoluble, so use precipitation:
 
 </details>
 
-**Problem 6:** $10.0 \mathrm{ g}$ of $\mathrm{CaCO_3}$ is heated strongly. Calculate the mass of $\mathrm{CaO}$ produced and the volume of $\mathrm{CO_2}$ at RTP.
+**Problem 6:** $10.0 \mathrm{ g}$ of $\mathrm{CaCO_3}$ is heated strongly. Calculate the mass of
+$\mathrm{CaO}$ produced and the volume of $\mathrm{CO_2}$ at RTP.
 
-*If you get this wrong, revise: Thermal Decomposition of Carbonates*
+_If you get this wrong, revise: Thermal Decomposition of Carbonates_
 
 <details>
 <summary>Solution</summary>
@@ -559,9 +583,10 @@ $$V(\mathrm{CO_2}) = 0.100 \times 24.0 = 2.40 \mathrm{ dm^3}$$
 
 </details>
 
-**Problem 7:** Explain why zinc oxide is described as amphoteric, giving equations for its reaction with both an acid and a base.
+**Problem 7:** Explain why zinc oxide is described as amphoteric, giving equations for its reaction
+with both an acid and a base.
 
-*If you get this wrong, revise: Common Pitfalls*
+_If you get this wrong, revise: Common Pitfalls_
 
 <details>
 <summary>Solution</summary>
@@ -574,9 +599,11 @@ With base: $\mathrm{ZnO} + 2\mathrm{NaOH} \to \mathrm{Na_2ZnO_2} + \mathrm{H_2O}
 
 </details>
 
-**Problem 8:** $25.0 \mathrm{ cm^3}$ of $0.200 \mathrm{ mol/dm^3}$ $\mathrm{HCl}$ is mixed with $25.0 \mathrm{ cm^3}$ of $0.200 \mathrm{ mol/dm^3}$ $\mathrm{NaOH}$. What is the pH of the resulting solution?
+**Problem 8:** $25.0 \mathrm{ cm^3}$ of $0.200 \mathrm{ mol/dm^3}$ $\mathrm{HCl}$ is mixed with
+$25.0 \mathrm{ cm^3}$ of $0.200 \mathrm{ mol/dm^3}$ $\mathrm{NaOH}$. What is the pH of the resulting
+solution?
 
-*If you get this wrong, revise: Neutralisation*
+_If you get this wrong, revise: Neutralisation_
 
 <details>
 <summary>Solution</summary>
@@ -585,37 +612,47 @@ $n(\mathrm{HCl}) = 0.200 \times 0.0250 = 0.00500 \mathrm{ mol}$
 
 $n(\mathrm{NaOH}) = 0.200 \times 0.0250 = 0.00500 \mathrm{ mol}$
 
-Equal moles of strong monoprotic acid and strong monoprotic base exactly neutralise each other. The product $\mathrm{NaCl}$ is a neutral salt, so $\mathrm{pH} = 7$.
+Equal moles of strong monoprotic acid and strong monoprotic base exactly neutralise each other. The
+product $\mathrm{NaCl}$ is a neutral salt, so $\mathrm{pH} = 7$.
 
 </details>
 
-**Problem 9:** State the solubility rules for chlorides, sulphates, and carbonates, including exceptions.
+**Problem 9:** State the solubility rules for chlorides, sulphates, and carbonates, including
+exceptions.
 
-*If you get this wrong, revise: Solubility Rules*
+_If you get this wrong, revise: Solubility Rules_
 
 <details>
 <summary>Solution</summary>
 
-**Chlorides:** most soluble. Exceptions: $\mathrm{AgCl}$$\mathrm{PbCl_2}$$\mathrm{Hg_2Cl_2}$ (insoluble).
+**Chlorides:** most soluble. Exceptions: $\mathrm{AgCl}$$\mathrm{PbCl_2}$$\mathrm{Hg_2Cl_2}$
+(insoluble).
 
-**Sulphates:** most soluble. Exceptions: $\mathrm{BaSO_4}$$\mathrm{PbSO_4}$ (insoluble); $\mathrm{CaSO_4}$ (slightly soluble).
+**Sulphates:** most soluble. Exceptions: $\mathrm{BaSO_4}$$\mathrm{PbSO_4}$ (insoluble);
+$\mathrm{CaSO_4}$ (slightly soluble).
 
 **Carbonates:** most insoluble. Exceptions: Group 1 and $\mathrm{NH_4^+}$ salts are soluble.
 
 </details>
 
-**Problem 10:** A student tests an unknown solution with litmus (turns red), then adds magnesium ribbon and observes bubbling. The gas produced turns limewater milky. Identify the unknown solution and write two equations for the reactions observed.
+**Problem 10:** A student tests an unknown solution with litmus (turns red), then adds magnesium
+ribbon and observes bubbling. The gas produced turns limewater milky. Identify the unknown solution
+and write two equations for the reactions observed.
 
-*If you get this wrong, revise: Properties of Acids and Carbonates*
+_If you get this wrong, revise: Properties of Acids and Carbonates_
 
 <details>
 <summary>Solution</summary>
 
-The solution is an acid (red litmus). The gas from the metal reaction turns limewater milky, confirming $\mathrm{CO_2}$So the acid contains carbonate or the metal is reacting to produce $\mathrm{H_2}$ while a separate carbonate reaction produces $\mathrm{CO_2}$. However, since magnesium reacts with acid to produce $\mathrm{H_2}$ (not $\mathrm{CO_2}$), the limewater must have turned milky due to $\mathrm{CO_2}$ already dissolved in the acid. The unknown solution is likely carbonic acid ($\mathrm{H_2CO_3}$) or a solution of $\mathrm{CO_2}$ in water.
+The solution is an acid (red litmus). The gas from the metal reaction turns limewater milky,
+confirming $\mathrm{CO_2}$So the acid contains carbonate or the metal is reacting to produce
+$\mathrm{H_2}$ while a separate carbonate reaction produces $\mathrm{CO_2}$. However, since
+magnesium reacts with acid to produce $\mathrm{H_2}$ (not $\mathrm{CO_2}$), the limewater must have
+turned milky due to $\mathrm{CO_2}$ already dissolved in the acid. The unknown solution is likely
+carbonic acid ($\mathrm{H_2CO_3}$) or a solution of $\mathrm{CO_2}$ in water.
 
 Reaction with Mg: $\mathrm{Mg} + 2\mathrm{H^+} \to \mathrm{Mg^{2+}} + \mathrm{H_2}$
 
 Limewater: $\mathrm{CO_2} + \mathrm{Ca(OH)_2} \to \mathrm{CaCO_3}(s) + \mathrm{H_2O}$
 
 </details>
-

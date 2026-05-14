@@ -1,6 +1,8 @@
 ---
 title: Probability and Statistics
-description: "Probability and Statistics — Counting Principles; Fundamental Counting Principle (OL/HL); Permutations (OL/HL); Combinations (OL/HL)."
+description:
+  'Probability and Statistics — Counting Principles; Fundamental Counting Principle (OL/HL);
+  Permutations (OL/HL); Combinations (OL/HL).'
 date: 2026-04-14
 tags:
   - Mathematics
@@ -9,6 +11,7 @@ categories:
   - Mathematics
 slug: probability-and-statistics
 ---
+
 # Probability and Statistics
 
 Probability and statistics appear on both papers of the Leaving Certificate Mathematics examination.
@@ -124,7 +127,7 @@ Properties: $0 \leq P(A) \leq 1$ and $P(A') = 1 - P(A)$.
 1. $P(A) \ge 0$ for any event $A$
 2. $P(\Omega) = 1$ where $\Omega$ is the sample space
 3. For mutually exclusive events $A_1, A_2, \ldots$:
- $P\!\left(\bigcup_{i=1}^{\infty} A_i\right) = \sum_{i=1}^{\infty} P(A_i)$
+   $P\!\left(\bigcup_{i=1}^{\infty} A_i\right) = \sum_{i=1}^{\infty} P(A_i)$
 
 ### Rules of Probability (OL/HL)
 
@@ -224,11 +227,11 @@ $$
 
 These concepts are frequently confused:
 
-| Property | Independent | Mutually Exclusive |
+| Property            | Independent                                 | Mutually Exclusive |
 | ------------------- | ------------------------------------------- | ------------------ | ---- | ------- |
-| Definition | $P(A \cap B) = P(A)P(B)$ | $P(A \cap B) = 0$ |
-| Meaning | Occurrence of one does not affect the other | Cannot both occur |
-| If $P(A), P(B) > 0$ | $P(A                                        | B) = P(A)$ | $P(A | B) = 0$ |
+| Definition          | $P(A \cap B) = P(A)P(B)$                    | $P(A \cap B) = 0$  |
+| Meaning             | Occurrence of one does not affect the other | Cannot both occur  |
+| If $P(A), P(B) > 0$ | $P(A                                        | B) = P(A)$         | $P(A | B) = 0$ |
 
 **Important:** If two events with positive probability are mutually exclusive, they cannot be
 Independent (since $P(A \cap B) = 0 \neq P(A)P(B)$ when both probabilities are positive).
@@ -290,7 +293,8 @@ $$
 
 ### Binomial Distribution (HL)
 
-$X \sim \mathrm{Bin{}(n, p)$ where $n$ is the number of trials and $p$ is the probability of success.
+$X \sim \mathrm{Bin{}(n, p)$ where $n$ is the number of trials and $p$ is the probability of
+success.
 
 $$
 P(X = k) = \binom{n}{k} p^k (1-p)^{n-k}
@@ -435,10 +439,11 @@ $$
 
 A box plot displays five statistics: minimum, $Q_1$Median, $Q_3$Maximum.
 
-**Outlier:** A value below $Q_1 - 1.5 \times \mathrm{IQR{}$ or above $Q_3 + 1.5 \times \mathrm{IQR{}$.
+**Outlier:** A value below $Q_1 - 1.5 \times \mathrm{IQR{}$ or above
+$Q_3 + 1.5 \times \mathrm{IQR{}$.
 
-**Example (HL):** A data set has $Q_1 = 25$$Q_3 = 45$Minimum $= 10$Maximum $= 65$. Identify
-Any outliers.
+**Example (HL):** A data set has $Q_1 = 25$$Q_3 = 45$Minimum $= 10$Maximum $= 65$. Identify Any
+outliers.
 
 $\mathrm{IQR{} = 45 - 25 = 20$.
 
@@ -468,17 +473,15 @@ Is longer.
 
 ### One-Tailed vs. Two-Tailed Tests (HL)
 
-| Feature | One-tailed | Two-tailed |
+| Feature         | One-tailed             | Two-tailed              |
 | --------------- | ---------------------- | ----------------------- |
-| $H_1$ | $p > p_0$ or $p < p_0$ | $p \neq p_0$ |
-| Critical region | One tail only | Both tails |
-| Critical value | $z_{1-\alpha}$ | $z_{1-\alpha/2}$ |
-| p-value | One tail area | Two tail areas combined |
+| $H_1$           | $p > p_0$ or $p < p_0$ | $p \neq p_0$            |
+| Critical region | One tail only          | Both tails              |
+| Critical value  | $z_{1-\alpha}$         | $z_{1-\alpha/2}$        |
+| p-value         | One tail area          | Two tail areas combined |
 
-:::warning
-Choose one-tailed or two-tailed before collecting data. Never decide after seeing the
-Results.
-:::
+:::warning Choose one-tailed or two-tailed before collecting data. Never decide after seeing the
+Results. :::
 
 ### z-test for a Proportion (HL)
 
@@ -522,10 +525,10 @@ The population mean differs from 25.
 
 ### Type I and Type II Errors (HL)
 
-| Error Type | Description | Probability |
+| Error Type | Description                                 | Probability |
 | ---------- | ------------------------------------------- | ----------- |
-| Type I | Rejecting $H_0$ when $H_0$ is true | $\alpha$ |
-| Type II | Failing to reject $H_0$ when $H_0$ is false | $\beta$ |
+| Type I     | Rejecting $H_0$ when $H_0$ is true          | $\alpha$    |
+| Type II    | Failing to reject $H_0$ when $H_0$ is false | $\beta$     |
 
 The **power** of a test is $1 - \beta$: the probability of correctly rejecting a false $H_0$.
 
@@ -611,24 +614,24 @@ Of the data (interpolation). Extrapolation beyond the data range is unreliable.
 ## Common Pitfalls
 
 1. **Confusing permutations and combinations** -- order matters for permutations, not for
- combinations. Ask: "Is `\{A,B,C\}` the same as `\{C,B,A\}`?"
+   combinations. Ask: "Is `\{A,B,C\}` the same as `\{C,B,A\}`?"
 2. **Forgetting independence** in the multiplication rule -- always check whether events are
- independent before using $P(A \cap B) = P(A)P(B)$.
+   independent before using $P(A \cap B) = P(A)P(B)$.
 3. **Normal distribution** -- always standardise before using tables. $Z = \frac{X - \mu}{\sigma}$.
-4. **Hypothesis testing** -- state $H_0$ and $H_1$ before computing. The conclusion must
- address the original question in context.
+4. **Hypothesis testing** -- state $H_0$ and $H_1$ before computing. The conclusion must address the
+   original question in context.
 5. **Binomial vs normal** -- use the binomial for discrete counts and normal for continuous
- measurements. Use the normal approximation only when the conditions are met.
+   measurements. Use the normal approximation only when the conditions are met.
 6. **Continuity correction** -- when approximating a binomial with a normal, apply a continuity
- correction (e.g., $P(X \le 5) \approx P(X < 5.5)$).
+   correction (e.g., $P(X \le 5) \approx P(X < 5.5)$).
 7. **Base rate fallacy** -- in Bayes' theorem problems, the prior probability matters enormously. A
- test with 99% accuracy can still have a low positive predictive value if the condition is rare.
+   test with 99% accuracy can still have a low positive predictive value if the condition is rare.
 8. **Confusing independence with mutual exclusivity** -- mutually exclusive events with positive
- probability are never independent.
+   probability are never independent.
 9. **Forgetting to check conditions** for the Poisson distribution -- events must occur
- independently at a constant rate.
+   independently at a constant rate.
 10. **Interpreting confidence intervals incorrectly** -- a 95% CI does not mean there is a 95%
- probability that $\mu$ lies in the interval.
+    probability that $\mu$ lies in the interval.
 
 ## Practice Questions
 
@@ -637,66 +640,66 @@ Of the data (interpolation). Extrapolation beyond the data range is unreliable.
 1. How many ways can 5 students be selected from a class of 20?
 2. A fair six-sided die is rolled. Find the probability of rolling a number greater than 4.
 3. A bag contains 3 red and 5 green balls. Two are drawn at random without replacement. Find the
- probability both are green.
+   probability both are green.
 4. Find the mean, median, and mode of: 3, 5, 5, 7, 8, 9, 12.
 5. Given $E(X) = 4$ and $\mathrm{Var{}(X) = 9$Find $E(X^2)$.
 6. In a class of 35 students, 20 study maths, 15 study physics, and 8 study both. How many study
- neither?
+   neither?
 
 ### Higher Level
 
 1. $X \sim \mathrm{Bin{}(15, 0.3)$. Find $P(X \geq 10)$.
-2. Heights are normally distributed with $\mu = 170\mathrm{ cm{}$ and $\sigma = 8\mathrm{ cm{}$. Find the
- probability a randomly selected person is between 160 cm and 180 cm tall.
+2. Heights are normally distributed with $\mu = 170\mathrm{ cm{}$ and $\sigma = 8\mathrm{ cm{}$.
+   Find the probability a randomly selected person is between 160 cm and 180 cm tall.
 3. A sample of 8 measurements has $\bar{x} = 23.4$ and $s = 2.1$. Test at the 5% level whether the
- population mean is 25.
-4. For the data set $\{(1,3), (2,5), (3,4), (4,7), (5,6)\}$Find the correlation coefficient $r$
- and the equation of the regression line of $y$ on $x$.
+   population mean is 25.
+4. For the data set $\{(1,3), (2,5), (3,4), (4,7), (5,6)\}$Find the correlation coefficient $r$ and
+   the equation of the regression line of $y$ on $x$.
 5. Prove that $\binom{n}{r} = \binom{n}{n-r}$.
 6. A test for a disease has 99% sensitivity and 1% false positive rate. If 0.5% of the population
- has the disease, find the probability that a positive test result is a true positive.
-7. $X \sim \mathrm{Bin{}(80, 0.6)$. Use the normal approximation with continuity correction to estimate
- $P(X \le 50)$.
+   has the disease, find the probability that a positive test result is a true positive.
+7. $X \sim \mathrm{Bin{}(80, 0.6)$. Use the normal approximation with continuity correction to
+   estimate $P(X \le 50)$.
 8. Find the number of ways to arrange the letters of the word "STATISTICS".
 9. A helpdesk receives an average of 3.2 emails per hour. Find the probability of receiving more
- than 5 emails in a given hour.
+   than 5 emails in a given hour.
 10. A 95% confidence interval for a mean is $(12.3, 15.7)$ based on a sample of size $n = 25$. Find
- $\bar{x}$ and the margin of error.
+    $\bar{x}$ and the margin of error.
 11. Prove that $\mathrm{Var{}(aX + b) = a^2\mathrm{Var{}(X)$.
 12. Two events $A$ and $B$ satisfy $P(A) = 0.4$$P(B) = 0.5$And $P(A \cup B) = 0.7$. Determine
- whether $A$ and $B$ are independent.
+    whether $A$ and $B$ are independent.
 13. Find the coefficient of $x^4$ in the expansion of $(1 - 2x)^8$.
 14. Explain the difference between Type I and Type II errors in hypothesis testing.
 15. $X \sim \mathrm{Po{}(2.5)$. Find $P(1 < X < 5)$.
 16. A factory produces items with a defect rate of 5%. In a sample of 200 items, use the normal
- approximation to estimate the probability of finding more than 12 defective items.
+    approximation to estimate the probability of finding more than 12 defective items.
 17. Prove Pascal's identity: $\binom{n}{r} = \binom{n-1}{r-1} + \binom{n-1}{r}$.
 18. A random variable $X$ has $E(X) = 5$ and $\mathrm{Var{}(X) = 4$. Find $E(3X - 2)$ and
- $\mathrm{Var{}(3X - 2)$.
+    $\mathrm{Var{}(3X - 2)$.
 19. Two dice are rolled. Find the probability that the sum is prime given that at least one die
- shows a 4.
+    shows a 4.
 20. Explain why a high correlation coefficient does not necessarily mean that one variable causes
- the other. Give an example.
+    the other. Give an example.
 
 ### Extended Practice
 
 21. Prove that for any two events $A$ and $B$: $P(A \cup B) = P(A) + P(B) - P(A \cap B)$.
 22. Find the expected value and variance of $X \sim \mathrm{Po{}(4)$.
 23. A sample of 50 students has a mean study time of 15.2 hours per week with standard deviation 4.3
- hours. Construct a 95% confidence interval for the population mean.
+    hours. Construct a 95% confidence interval for the population mean.
 24. Use the binomial expansion to find the first four terms of $(1 + x)^{10}$.
 25. A quality control inspector checks items from a production line. The probability of a defect is
- 0.02. In a batch of 100 items, find the probability of at most 3 defects using the Poisson
- approximation.
+    0.02. In a batch of 100 items, find the probability of at most 3 defects using the Poisson
+    approximation.
 26. Given the data below, calculate the Spearman rank correlation coefficient:
 
- | $x$ | 1 | 2 | 3 | 4 | 5 |
- | --- | --- | --- | --- | --- | --- |
- | $y$ | 3 | 1 | 4 | 2 | 5 |
+| $x$ | 1   | 2   | 3   | 4   | 5   |
+| --- | --- | --- | --- | --- | --- |
+| $y$ | 3   | 1   | 4   | 2   | 5   |
 
 27. Prove that if $A$ and $B$ are independent, then so are $A$ and $B'$.
 28. The regression line of $y$ on $x$ is $y = 2.5x - 3.0$ and the regression line of $x$ on $y$ is
- $x = 0.35y + 1.2$. Find $\bar{x}$$\bar{y}$And the correlation coefficient $r$.
+    $x = 0.35y + 1.2$. Find $\bar{x}$$\bar{y}$And the correlation coefficient $r$.
 
 ### 8.4 Poisson Approximation to the Binomial
 
@@ -721,27 +724,25 @@ $$
 
 ### 8.5 Choosing the Right Distribution
 
-| Distribution | When to use | Parameters |
+| Distribution | When to use                                        | Parameters      |
 | ------------ | -------------------------------------------------- | --------------- |
-| Binomial | Fixed number of trials, two outcomes, constant $p$ | $n, p$ |
-| Poisson | Events occur at constant rate, independently | $\lambda$ |
-| Normal | Continuous data, symmetric bell shape | $\mu, \sigma^2$ |
+| Binomial     | Fixed number of trials, two outcomes, constant $p$ | $n, p$          |
+| Poisson      | Events occur at constant rate, independently       | $\lambda$       |
+| Normal       | Continuous data, symmetric bell shape              | $\mu, \sigma^2$ |
 
-:::tip
-If a question mentions "per unit time" or "per unit area" and events are rare, think Poisson.
-If it mentions "out of $n$ trials," think Binomial.
-:::
+:::tip If a question mentions "per unit time" or "per unit area" and events are rare, think Poisson.
+If it mentions "out of $n$ trials," think Binomial. :::
 
 ### 8.6 Relationship Between Distributions
 
 The three main distributions covered in this topic are connected:
 
 - **Binomial to Normal:** When $n$ is large and $p$ is not too close to 0 or 1,
- $\mathrm{Bin{}(n,p) \approx N(np, np(1-p))$.
+  $\mathrm{Bin{}(n,p) \approx N(np, np(1-p))$.
 - **Binomial to Poisson:** When $n$ is large and $p$ is small,
- $\mathrm{Bin{}(n,p) \approx \mathrm{Po{}(np)$.
+  $\mathrm{Bin{}(n,p) \approx \mathrm{Po{}(np)$.
 - **Poisson to Normal:** When $\lambda$ is large ( $\lambda > 15$),
- $\mathrm{Po{}(\lambda) \approx N(\lambda, \lambda)$.
+  $\mathrm{Po{}(\lambda) \approx N(\lambda, \lambda)$.
 
 ### 8.7 Law of Large Numbers (HL - awareness)
 

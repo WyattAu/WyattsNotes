@@ -1,21 +1,24 @@
 ---
 title: Quantum and Nuclear Physics
 tags:
-- IB
-- Physics
+  - IB
+  - Physics
 slug: quantum-and-nuclear-physics
-description: "Rigorous IB physics notes covering Quantum and Nuclear Physics. Includes definitions, derivations, worked examples, and exam-style problems."
+description:
+  'Rigorous IB physics notes covering Quantum and Nuclear Physics. Includes definitions,
+  derivations, worked examples, and exam-style problems.'
 ---
 
 ## 1. Quantum Physics (Topic 12, HL)
 
 ### 1.1 The Photoelectric Effect
 
-When electromagnetic radiation is incident on a metal surface, electrons may be ejected. This phenomenon
-Is called the **photoelectric effect**. The experimental observations cannot be explained by classical
-Wave theory:
+When electromagnetic radiation is incident on a metal surface, electrons may be ejected. This
+phenomenon Is called the **photoelectric effect**. The experimental observations cannot be explained
+by classical Wave theory:
 
-- There is a **threshold frequency** $f_0$ below which no electrons are emitted, regardless of intensity.
+- There is a **threshold frequency** $f_0$ below which no electrons are emitted, regardless of
+  intensity.
 - The maximum kinetic energy of emitted electrons depends on the frequency, not the intensity.
 - Electrons are emitted instantaneously, even at very low intensities.
 
@@ -26,9 +29,9 @@ $$E = hf$$
 
 Where $h = 6.63 \times 10^{-34}\,\mathrm{J\,s}$ is Planck's constant and $f$ is the frequency.
 
-A photon can transfer all its energy to a single electron. The **work function** $\phi$ is the minimum
-Energy required to liberate an electron from the metal surface. Einstein's photoelectric equation gives
-The maximum kinetic energy of emitted electrons:
+A photon can transfer all its energy to a single electron. The **work function** $\phi$ is the
+minimum Energy required to liberate an electron from the metal surface. Einstein's photoelectric
+equation gives The maximum kinetic energy of emitted electrons:
 
 $$E_{k,\mathrm{max}} = hf - \phi$$
 
@@ -64,16 +67,17 @@ $\lambda = \frac{h}{m_0 v}$ where $m_0$ is the rest mass.
 **Evidence for wave nature of matter:**
 
 - **Electron diffraction:** Electrons passing through a thin crystal produce a diffraction pattern
- identical to that produced by X-rays. The diffraction condition is $d\sin\theta = n\lambda$Confirming
- that electrons have a wavelength given by the de Broglie equation.
-- **Davisson-Germer experiment:** Electrons scattered from a nickel crystal showed intensity maxima at
- specific angles consistent with diffraction of waves.
+  identical to that produced by X-rays. The diffraction condition is
+  $d\sin\theta = n\lambda$Confirming that electrons have a wavelength given by the de Broglie
+  equation.
+- **Davisson-Germer experiment:** Electrons scattered from a nickel crystal showed intensity maxima
+  at specific angles consistent with diffraction of waves.
 
 **Evidence for particle nature of light:**
 
 - The photoelectric effect (photons transfer discrete quanta of energy).
-- **Compton scattering** (see Section 1.5): X-ray photons scatter off electrons, behaving as particles
- in collisions.
+- **Compton scattering** (see Section 1.5): X-ray photons scatter off electrons, behaving as
+  particles in collisions.
 
 The wave-particle duality is a fundamental principle: all quantum objects exhibit both wave-like and
 Particle-like properties depending on the type of observation performed.
@@ -81,8 +85,8 @@ Particle-like properties depending on the type of observation performed.
 ### 1.3 Energy Levels and Spectral Lines
 
 The **Bohr model** of the atom postulates that electrons orbit the nucleus only in certain allowed
-Energy levels. When an electron transitions between energy levels, a photon is emitted or absorbed with
-Energy equal to the difference between the two levels:
+Energy levels. When an electron transitions between energy levels, a photon is emitted or absorbed
+with Energy equal to the difference between the two levels:
 
 $$hf = E_{\mathrm{upper}} - E_{\mathrm{lower}}$$
 
@@ -93,27 +97,28 @@ $$E_n = \frac{-13.6\,\mathrm{eV}}{n^2}$$
 Where $n = 1, 2, 3, \ldots$ is the principal quantum number.
 
 **Emission spectra** are produced when electrons fall from higher to lower energy levels, emitting
-Photons of specific frequencies. Each element produces a unique line spectrum, a "fingerprint" used in
-Spectroscopy.
+Photons of specific frequencies. Each element produces a unique line spectrum, a "fingerprint" used
+in Spectroscopy.
 
-**Absorption spectra** are produced when white light passes through a cool gas. Electrons absorb photons
-Of specific frequencies to jump to higher energy levels, producing dark lines in a continuous spectrum.
+**Absorption spectra** are produced when white light passes through a cool gas. Electrons absorb
+photons Of specific frequencies to jump to higher energy levels, producing dark lines in a
+continuous spectrum.
 
 The **Rydberg formula** for hydrogen gives the wavelengths of spectral lines:
 
 $$\frac{1}{\lambda} = R\left(\frac{1}{n_f^2} - \frac{1}{n_i^2}\right)$$
 
-Where $R = 1.097 \times 10^7\,\mathrm{m}^{-1}$ is the Rydberg constant, $n_i$ is the initial level, and
-$n_f$ is the final level.
+Where $R = 1.097 \times 10^7\,\mathrm{m}^{-1}$ is the Rydberg constant, $n_i$ is the initial level,
+and $n_f$ is the final level.
 
 **Spectral series:**
 
-| Series | $n_f$ | Region |
-| -------- | ----- | ------------- |
-| Lyman | 1 | Ultraviolet |
-| Balmer | 2 | Visible |
-| Paschen | 3 | Infrared |
-| Brackett | 4 | Infrared |
+| Series   | $n_f$ | Region      |
+| -------- | ----- | ----------- |
+| Lyman    | 1     | Ultraviolet |
+| Balmer   | 2     | Visible     |
+| Paschen  | 3     | Infrared    |
+| Brackett | 4     | Infrared    |
 
 <details>
 <summary>Worked Example: Photon Emission in Hydrogen</summary>
@@ -143,8 +148,8 @@ This is in the visible range (blue-green), part of the **Balmer series** ($n_f =
 
 ### 1.4 Heisenberg Uncertainty Principle
 
-The Heisenberg uncertainty principle is a fundamental limit on the precision with which certain pairs of
-Physical properties can be known simultaneously. For position and momentum:
+The Heisenberg uncertainty principle is a fundamental limit on the precision with which certain
+pairs of Physical properties can be known simultaneously. For position and momentum:
 
 $$\Delta x \, \Delta p \geq \frac{\hbar}{2}$$
 
@@ -152,12 +157,12 @@ Where $\hbar = \frac{h}{2\pi}$ is the reduced Planck constant.
 
 This means:
 
-- The more precisely we know a particle's position ($\Delta x$ small), the less precisely we can know
- its momentum ($\Delta p$ large), and vice versa.
+- The more precisely we know a particle's position ($\Delta x$ small), the less precisely we can
+  know its momentum ($\Delta p$ large), and vice versa.
 - This is **not** a limitation of measurement instruments; it is a fundamental property of nature.
 - The uncertainty principle has important consequences: electrons cannot orbit the nucleus in
- classical trajectories (Bohr model is an approximation), and it explains why particles can tunnel
- through classically forbidden regions.
+  classical trajectories (Bohr model is an approximation), and it explains why particles can tunnel
+  through classically forbidden regions.
 
 There is also an energy-time uncertainty relation:
 
@@ -168,8 +173,8 @@ Explains the natural width of spectral lines.
 
 ### 1.5 Compton Scattering
 
-When an X-ray photon collides with a free (or loosely bound) electron, the photon is scattered with a
-Longer wavelength. This shift in wavelength is called **Compton scattering** and provides direct
+When an X-ray photon collides with a free (or loosely bound) electron, the photon is scattered with
+a Longer wavelength. This shift in wavelength is called **Compton scattering** and provides direct
 Evidence for the particle nature of photons.
 
 The change in wavelength of the scattered photon is:
@@ -187,17 +192,17 @@ Where:
 **Key observations:**
 
 - The wavelength shift depends only on the scattering angle, not the initial wavelength.
-- $\Delta\lambda = 0$ when $\theta = 0$ (no scattering) and $\Delta\lambda = \frac{2h}{m_e c}$
- when $\theta = 180^\circ$ (back-scattering).
-- The scattered photon has less energy than the incident photon; the difference is transferred to the
- electron as kinetic energy.
+- $\Delta\lambda = 0$ when $\theta = 0$ (no scattering) and $\Delta\lambda = \frac{2h}{m_e c}$ when
+  $\theta = 180^\circ$ (back-scattering).
+- The scattered photon has less energy than the incident photon; the difference is transferred to
+  the electron as kinetic energy.
 
 <details>
 <summary>Worked Example: Compton Scattering Calculation</summary>
 
-An X-ray photon with wavelength $\lambda = 5.00 \times 10^{-12}\,\mathrm{m}$ is scattered at an angle
-Of $\theta = 90^\circ$ by a free electron. Find the wavelength of the scattered photon and the kinetic
-Energy transferred to the electron.
+An X-ray photon with wavelength $\lambda = 5.00 \times 10^{-12}\,\mathrm{m}$ is scattered at an
+angle Of $\theta = 90^\circ$ by a free electron. Find the wavelength of the scattered photon and the
+kinetic Energy transferred to the electron.
 
 Wavelength shift:
 
@@ -240,19 +245,19 @@ Converted entirely into photon energy. For example, when an electron and positro
 
 $$e^- + e^+ \to 2\gamma$$
 
-Two photons are produced (not one) to conserve momentum. Each photon has energy $E = m_e c^2 = 0.511\,\mathrm{MeV}$
-And the photons travel in opposite directions.
+Two photons are produced (not one) to conserve momentum. Each photon has energy
+$E = m_e c^2 = 0.511\,\mathrm{MeV}$ And the photons travel in opposite directions.
 
 ### 1.7 Quantum Tunnelling (Qualitative)
 
-**Quantum tunnelling** is the phenomenon where a particle can pass through a potential energy barrier
-That it classically could not surmount. This is a consequence of the wave nature of particles and the
-Uncertainty principle.
+**Quantum tunnelling** is the phenomenon where a particle can pass through a potential energy
+barrier That it classically could not surmount. This is a consequence of the wave nature of
+particles and the Uncertainty principle.
 
 **Key points:**
 
 - The probability of tunnelling depends on the barrier height and width. Higher and wider barriers
- have lower transmission probabilities.
+  have lower transmission probabilities.
 - Tunnelling probability increases exponentially as the barrier width decreases.
 - The wavefunction does not abruptly go to zero inside the barrier; it decays exponentially.
 - There is a non-zero probability of finding the particle on the other side of the barrier.
@@ -260,11 +265,11 @@ Uncertainty principle.
 **Applications of quantum tunnelling:**
 
 - **Alpha decay:** An alpha particle inside a nucleus encounters a potential barrier due to the
- strong nuclear force. Tunnelling through this barrier allows alpha decay.
-- **Scanning tunnelling microscope (STM):** Uses the exponential dependence of tunnelling current
- on distance to create atomic-resolution images of surfaces.
+  strong nuclear force. Tunnelling through this barrier allows alpha decay.
+- **Scanning tunnelling microscope (STM):** Uses the exponential dependence of tunnelling current on
+  distance to create atomic-resolution images of surfaces.
 - **Nuclear fusion in stars:** Protons tunnel through the Coulomb barrier to undergo fusion at
- temperatures lower than classical physics would predict.
+  temperatures lower than classical physics would predict.
 
 ---
 
@@ -272,8 +277,8 @@ Uncertainty principle.
 
 ### 2.1 Nuclear Structure
 
-The nucleus of an atom contains **protons** (positively charged, $+e$) and **neutrons** (electrically
-Neutral). Together, protons and neutrons are called **nucleons**.
+The nucleus of an atom contains **protons** (positively charged, $+e$) and **neutrons**
+(electrically Neutral). Together, protons and neutrons are called **nucleons**.
 
 **Key definitions:**
 
@@ -281,7 +286,8 @@ Neutral). Together, protons and neutrons are called **nucleons**.
 - **Mass number (nucleon number)** $A$: the total number of protons and neutrons ($A = Z + N$).
 - **Neutron number** $N = A - Z$: the number of neutrons.
 - **Nuclide notation:** $\prescript{A}{}{Z}\mathrm{X}$Where X is the chemical symbol.
-- **Isotopes:** atoms of the same element with different numbers of neutrons (same $Z$Different $A$).
+- **Isotopes:** atoms of the same element with different numbers of neutrons (same $Z$Different
+  $A$).
 - **Isobars:** nuclei with the same mass number but different proton number (same $A$Different $Z$).
 - **Isotones:** nuclei with the same neutron number (same $N$Different $Z$).
 
@@ -301,8 +307,8 @@ This is enormously greater than typical atomic or everyday densities.
 
 ### 2.2 Radioactive Decay
 
-Unstable nuclei undergo radioactive decay by emitting particles or electromagnetic radiation. There are
-Three main types:
+Unstable nuclei undergo radioactive decay by emitting particles or electromagnetic radiation. There
+are Three main types:
 
 **Alpha decay ($\alpha$):**
 
@@ -310,8 +316,8 @@ An alpha particle ($\prescript{4}{}{2}\mathrm{He}$I.e., a helium-4 nucleus) is e
 
 $$\prescript{A}{}{Z}\mathrm{X} \to \prescript{A-4}{}{Z-2}\mathrm{Y} + \prescript{4}{}{2}\mathrm{He}$$
 
-Alpha particles are highly ionising but have low penetration (stopped by a few centimetres of air or a
-Sheet of paper).
+Alpha particles are highly ionising but have low penetration (stopped by a few centimetres of air or
+a Sheet of paper).
 
 **Beta-minus decay ($\beta^-$):**
 
@@ -349,25 +355,25 @@ $$\prescript{A}{}{Z}\mathrm{X}^* \to \prescript{A}{}{Z}\mathrm{X} + \gamma$$
 Gamma rays are highly penetrating but weakly ionising. They require thick lead or concrete for
 Shielding.
 
-| Property | Alpha ($\alpha$) | Beta ($\beta$) | Gamma ($\gamma$) |
-| ---------------- | ---------------- | -------------- | ---------------- |
-| Particle | $\prescript{4}{}{2}\mathrm{He}$ nucleus | Electron / Positron | Photon |
-| Charge | $+2e$ | $\pm e$ | 0 |
-| Ionising power | High | Moderate | Low |
-| Penetrating power| Low | Moderate | High |
-| Stopped by | Paper / few cm air | Aluminium | Lead / concrete |
+| Property          | Alpha ($\alpha$)                        | Beta ($\beta$)      | Gamma ($\gamma$) |
+| ----------------- | --------------------------------------- | ------------------- | ---------------- |
+| Particle          | $\prescript{4}{}{2}\mathrm{He}$ nucleus | Electron / Positron | Photon           |
+| Charge            | $+2e$                                   | $\pm e$             | 0                |
+| Ionising power    | High                                    | Moderate            | Low              |
+| Penetrating power | Low                                     | Moderate            | High             |
+| Stopped by        | Paper / few cm air                      | Aluminium           | Lead / concrete  |
 
 ### 2.3 Half-Life and Decay Constant
 
-Radioactive decay is a **random** and **spontaneous** process. The probability that any given nucleus
-Will decay in a given time interval is constant, independent of:
+Radioactive decay is a **random** and **spontaneous** process. The probability that any given
+nucleus Will decay in a given time interval is constant, independent of:
 
 - The number of nuclei present
 - External conditions (temperature, pressure, chemical state)
 - How long the nucleus has already existed
 
-The **decay constant** $\lambda$ is the probability per unit time that a nucleus will decay. The number
-Of undecayed nuclei at time $t$ is:
+The **decay constant** $\lambda$ is the probability per unit time that a nucleus will decay. The
+number Of undecayed nuclei at time $t$ is:
 
 $$N = N_0 e^{-\lambda t}$$
 
@@ -410,7 +416,8 @@ $$-\lambda t = \ln 0.0625 = -2.773$$
 
 $$t = \frac{2.773}{9.98 \times 10^{-7}} = 2.78 \times 10^6\,\mathrm{s} \approx 32.2\,\mathrm{days}$$
 
-Check using half-lives: $\frac{640}{40} = 16 = 2^4$So exactly 4 half-lives = $4 \times 8.04 = 32.2\,\mathrm{days}$.
+Check using half-lives: $\frac{640}{40} = 16 = 2^4$So exactly 4 half-lives =
+$4 \times 8.04 = 32.2\,\mathrm{days}$.
 
 **If you get this wrong, revise:** Section 2.3.
 
@@ -421,8 +428,9 @@ Check using half-lives: $\frac{640}{40} = 16 = 2^4$So exactly 4 half-lives = $4 
 All nuclear reactions must satisfy the following conservation laws:
 
 1. **Conservation of nucleon number** (mass number $A$): the total number of nucleons is the same on
- both sides.
-2. **Conservation of proton number** (atomic number $Z$): the total charge is the same on both sides.
+   both sides.
+2. **Conservation of proton number** (atomic number $Z$): the total charge is the same on both
+   sides.
 3. **Conservation of energy:** total energy (including rest energy) is conserved.
 4. **Conservation of momentum:** total momentum is conserved.
 
@@ -431,7 +439,8 @@ All nuclear reactions must satisfy the following conservation laws:
 
 Complete the following nuclear equations:
 
-(a) $\prescript{238}{}{92}\mathrm{U} \to \prescript{234}{}{90}\mathrm{Th} + \prescript{4}{}{2}\mathrm{He}$
+(a)
+$\prescript{238}{}{92}\mathrm{U} \to \prescript{234}{}{90}\mathrm{Th} + \prescript{4}{}{2}\mathrm{He}$
 
 This is alpha decay. Check conservation: $A = 238 = 234 + 4$ and $Z = 92 = 90 + 2$.
 
@@ -468,20 +477,21 @@ Given by Einstein's mass-energy equivalence:
 
 $$E_b = \Delta m \, c^2$$
 
-:::info[Data Booklet Reference] The unified atomic mass unit (u) is defined such that $1\,\mathrm{u} = 931.5\,\mathrm{MeV}/c^2$.
-This conversion factor appears in the IB data booklet.
+:::info[Data Booklet Reference] The unified atomic mass unit (u) is defined such that
+$1\,\mathrm{u} = 931.5\,\mathrm{MeV}/c^2$. This conversion factor appears in the IB data booklet.
 
 :::
 
-**Binding energy per nucleon** is a measure of nuclear stability. Plotting binding energy per nucleon
-Against mass number gives the binding energy curve, which shows:
+**Binding energy per nucleon** is a measure of nuclear stability. Plotting binding energy per
+nucleon Against mass number gives the binding energy curve, which shows:
 
 - Very light nuclei (e.g., $\prescript{2}{}{1}\mathrm{H}$) have low binding energy per nucleon.
 - The curve peaks around $A \approx 56$ (iron-56 is the most stable nucleus).
 - Heavy nuclei (e.g., uranium) have lower binding energy per nucleon.
 
-The **most stable** nucleus is $\prescript{62}{}{28}\mathrm{Ni}$ or $\prescript{56}{}{26}\mathrm{Fe}$
-With the highest binding energy per nucleon of approximately $8.8\,\mathrm{MeV/nucleon}$.
+The **most stable** nucleus is $\prescript{62}{}{28}\mathrm{Ni}$ or
+$\prescript{56}{}{26}\mathrm{Fe}$ With the highest binding energy per nucleon of approximately
+$8.8\,\mathrm{MeV/nucleon}$.
 
 <details>
 <summary>Worked Example: Binding Energy of Helium-4</summary>
@@ -489,6 +499,7 @@ With the highest binding energy per nucleon of approximately $8.8\,\mathrm{MeV/n
 Calculate the binding energy per nucleon of $\prescript{4}{}{2}\mathrm{He}$ (alpha particle).
 
 Given masses:
+
 - $m_p = 1.00728\,\mathrm{u}$
 - $m_n = 1.00867\,\mathrm{u}$
 - $m(\prescript{4}{}{2}\mathrm{He}) = 4.00151\,\mathrm{u}$
@@ -513,9 +524,9 @@ $$\frac{E_b}{A} = \frac{28.3}{4} = 7.08\,\mathrm{MeV/nucleon}$$
 
 ### 2.6 Nuclear Fission and Fusion
 
-**Nuclear fission** is the splitting of a heavy nucleus into two (or more) lighter nuclei, accompanied
-By the release of energy. Fission occurs because the products have a higher binding energy per nucleon
-Than the parent nucleus.
+**Nuclear fission** is the splitting of a heavy nucleus into two (or more) lighter nuclei,
+accompanied By the release of energy. Fission occurs because the products have a higher binding
+energy per nucleon Than the parent nucleus.
 
 A typical fission reaction:
 
@@ -523,11 +534,11 @@ $$\prescript{235}{}{92}\mathrm{U} + \prescript{1}{}{0}\mathrm{n} \to \prescript{
 
 Key features:
 
-- A **chain reaction** is possible because each fission event releases neutrons that can trigger further
- fission events.
+- A **chain reaction** is possible because each fission event releases neutrons that can trigger
+  further fission events.
 - A **critical mass** is the minimum mass of fissile material needed to sustain a chain reaction.
 - **Controlled fission** occurs in nuclear reactors; **uncontrolled fission** occurs in nuclear
- weapons.
+  weapons.
 - The released energy comes from the mass difference between reactants and products.
 
 **Nuclear fusion** is the joining of two light nuclei to form a heavier nucleus, releasing energy.
@@ -540,15 +551,16 @@ $$\prescript{2}{}{1}\mathrm{H} + \prescript{2}{}{1}\mathrm{H} \to \prescript{3}{
 $$\prescript{2}{}{1}\mathrm{H} + \prescript{3}{}{1}\mathrm{H} \to \prescript{4}{}{2}\mathrm{He} + \prescript{1}{}{0}\mathrm{n} + 17.6\,\mathrm{MeV}$$
 
 Fusion requires extremely high temperatures ($\sim 10^7\,\mathrm{K}$) to overcome the electrostatic
-Repulsion between the positively charged nuclei. At these temperatures, matter exists as a **plasma**.
+Repulsion between the positively charged nuclei. At these temperatures, matter exists as a
+**plasma**.
 
 **Conditions for fusion in a reactor:**
 
 - **High temperature:** to give nuclei sufficient kinetic energy to overcome the Coulomb barrier.
 - **High density:** to increase the collision rate between nuclei.
 - **Confinement time:** to keep the plasma contained long enough for sufficient reactions to occur.
- The Lawson criterion ($n\tau \gt 10^{20}\,\mathrm{s\,m}^{-3}$) gives the minimum product of
- density and confinement time.
+  The Lawson criterion ($n\tau \gt 10^{20}\,\mathrm{s\,m}^{-3}$) gives the minimum product of
+  density and confinement time.
 
 <details>
 <summary>Worked Example: Energy from Fission</summary>
@@ -557,6 +569,7 @@ Calculate the energy released when $\prescript{235}{}{92}\mathrm{U}$ undergoes f
 $\prescript{141}{}{56}\mathrm{Ba}$$\prescript{92}{}{36}\mathrm{Kr}$And 3 neutrons.
 
 Given masses:
+
 - $m(\prescript{235}{}{92}\mathrm{U}) = 235.044\,\mathrm{u}$
 - $m(\prescript{141}{}{56}\mathrm{Ba}) = 140.914\,\mathrm{u}$
 - $m(\prescript{92}{}{36}\mathrm{Kr}) = 91.926\,\mathrm{u}$
@@ -582,27 +595,29 @@ This energy appears as kinetic energy of the fission fragments, neutrons, and ga
 
 ### 2.7 Background Radiation and Detection
 
-**Background radiation** is the ionising radiation that is always present in the environment. Sources
-Include:
+**Background radiation** is the ionising radiation that is always present in the environment.
+Sources Include:
 
 - **Cosmic rays:** high-energy particles from space (primarily protons and alpha particles).
 - **Terrestrial radiation:** radioactive isotopes in rocks and soil (e.g., uranium, thorium,
- radon-222 gas).
+  radon-222 gas).
 - **Medical sources:** X-rays, radioactive tracers used in diagnosis and treatment.
 - **Nuclear power and weapons testing:** fallout and waste from nuclear facilities.
 
-Typical background radiation dose is approximately $2.4\,\mathrm{mSv}$ per year, varying by location.
+Typical background radiation dose is approximately $2.4\,\mathrm{mSv}$ per year, varying by
+location.
 
 **Radiation detection methods:**
 
 - **Geiger-Muller (GM) tube:** detects ionising radiation by the ionisation of gas inside the tube.
- Each particle produces a current pulse, counted electronically. It does not distinguish between
- types of radiation.
-- **Photographic film:** darkens when exposed to radiation. Used in radiation badges worn by workers.
-- **Scintillation detector:** a material (e.g., sodium iodide) that emits light when radiation passes
- through it. The light is converted to an electrical signal by a photomultiplier tube.
+  Each particle produces a current pulse, counted electronically. It does not distinguish between
+  types of radiation.
+- **Photographic film:** darkens when exposed to radiation. Used in radiation badges worn by
+  workers.
+- **Scintillation detector:** a material (e.g., sodium iodide) that emits light when radiation
+  passes through it. The light is converted to an electrical signal by a photomultiplier tube.
 - **Semiconductor detector:** radiation creates electron-hole pairs in a semiconductor material,
- producing a current proportional to the energy deposited.
+  producing a current proportional to the energy deposited.
 
 ---
 
@@ -639,8 +654,8 @@ $$f_0 = \frac{\phi}{h} = \frac{2.28 \times 1.60 \times 10^{-19}}{6.63 \times 10^
 <details>
 <summary>Worked Example 2: De Broglie Wavelength</summary>
 
-An electron is accelerated through a potential difference of $200\,\mathrm{V}$. Calculate its de Broglie
-Wavelength.
+An electron is accelerated through a potential difference of $200\,\mathrm{V}$. Calculate its de
+Broglie Wavelength.
 
 The kinetic energy gained by the electron:
 
@@ -654,7 +669,8 @@ De Broglie wavelength:
 
 $$\lambda = \frac{h}{p} = \frac{6.63 \times 10^{-34}}{7.64 \times 10^{-24}} = 8.68 \times 10^{-11}\,\mathrm{m}$$
 
-This is comparable to atomic spacings, explaining why electron diffraction can probe crystal structures.
+This is comparable to atomic spacings, explaining why electron diffraction can probe crystal
+structures.
 
 </details>
 
@@ -674,8 +690,8 @@ Total kinetic energy:
 
 $$E_k = E_{\mathrm{photon}} - 2m_e c^2 = 3.00 - 1.022 = 1.978\,\mathrm{MeV}$$
 
-This kinetic energy is shared between the electron and positron (not necessarily equally, depending on
-How momentum is shared with any recoiling nucleus).
+This kinetic energy is shared between the electron and positron (not necessarily equally, depending
+on How momentum is shared with any recoiling nucleus).
 
 </details>
 
@@ -685,6 +701,7 @@ How momentum is shared with any recoiling nucleus).
 Calculate the binding energy per nucleon of $\prescript{56}{}{26}\mathrm{Fe}$.
 
 Given masses:
+
 - $m_p = 1.00728\,\mathrm{u}$
 - $m_n = 1.00867\,\mathrm{u}$
 - $m(\prescript{56}{}{26}\mathrm{Fe}) = 55.93493\,\mathrm{u}$
@@ -736,8 +753,8 @@ $$t = \frac{1.386}{\lambda} = \frac{1.386 \times 5730}{\ln 2} = \frac{1.386 \tim
 <details>
 <summary>Worked Example 6: Heisenberg Uncertainty Principle</summary>
 
-An electron is confined to a region of width $\Delta x = 1.0 \times 10^{-10}\,\mathrm{m}$ (roughly the
-Size of an atom). Estimate the minimum uncertainty in its momentum.
+An electron is confined to a region of width $\Delta x = 1.0 \times 10^{-10}\,\mathrm{m}$ (roughly
+the Size of an atom). Estimate the minimum uncertainty in its momentum.
 
 Using the Heisenberg uncertainty principle:
 
@@ -759,22 +776,22 @@ In atoms.
 
 ## Summary of Key Results
 
-| Concept | Key Formula |
-| -------------------------- | ------------------------------------------------------------------ |
-| Photon energy | $E = hf$ |
-| Photoelectric equation | $E_{k,\mathrm{max}} = hf - \phi$ |
-| Work function | $\phi = hf_0$ |
-| De Broglie wavelength | $\lambda = \frac{h}{p}$ |
-| Heisenberg uncertainty | $\Delta x \, \Delta p \geq \frac{\hbar}{2}$ |
-| Compton scattering | $\Delta\lambda = \frac{h}{m_e c}(1 - \cos\theta)$ |
-| Energy levels (hydrogen) | $E_n = \frac{-13.6}{n^2}\,\mathrm{eV}$ |
-| Pair production minimum | $E_{\mathrm{min}} = 2m_e c^2$ |
-| Radioactive decay | $N = N_0 e^{-\lambda t}$ |
-| Half-life | $t_{1/2} = \frac{\ln 2}{\lambda}$ |
-| Activity | $A = \lambda N$ |
-| Binding energy | $E_b = \Delta m \, c^2$ |
-| Nuclear radius | $r = r_0 A^{1/3}$ |
-| Mass-energy conversion | $1\,\mathrm{u} = 931.5\,\mathrm{MeV}/c^2$ |
+| Concept                  | Key Formula                                       |
+| ------------------------ | ------------------------------------------------- |
+| Photon energy            | $E = hf$                                          |
+| Photoelectric equation   | $E_{k,\mathrm{max}} = hf - \phi$                  |
+| Work function            | $\phi = hf_0$                                     |
+| De Broglie wavelength    | $\lambda = \frac{h}{p}$                           |
+| Heisenberg uncertainty   | $\Delta x \, \Delta p \geq \frac{\hbar}{2}$       |
+| Compton scattering       | $\Delta\lambda = \frac{h}{m_e c}(1 - \cos\theta)$ |
+| Energy levels (hydrogen) | $E_n = \frac{-13.6}{n^2}\,\mathrm{eV}$            |
+| Pair production minimum  | $E_{\mathrm{min}} = 2m_e c^2$                     |
+| Radioactive decay        | $N = N_0 e^{-\lambda t}$                          |
+| Half-life                | $t_{1/2} = \frac{\ln 2}{\lambda}$                 |
+| Activity                 | $A = \lambda N$                                   |
+| Binding energy           | $E_b = \Delta m \, c^2$                           |
+| Nuclear radius           | $r = r_0 A^{1/3}$                                 |
+| Mass-energy conversion   | $1\,\mathrm{u} = 931.5\,\mathrm{MeV}/c^2$         |
 
 ---
 
@@ -782,8 +799,8 @@ In atoms.
 
 ### Problem 1
 
-Light of wavelength $550\,\mathrm{nm}$ is incident on a metal surface. The stopping potential is found
-To be $0.45\,\mathrm{V}$. Calculate the work function of the metal in eV.
+Light of wavelength $550\,\mathrm{nm}$ is incident on a metal surface. The stopping potential is
+found To be $0.45\,\mathrm{V}$. Calculate the work function of the metal in eV.
 
 <details>
 <summary>Solution</summary>
@@ -880,8 +897,8 @@ The three possible wavelengths are $656\,\mathrm{nm}$$121.6\,\mathrm{nm}$And $10
 
 ### Problem 5
 
-A proton is confined within a nucleus of radius $5.0 \times 10^{-15}\,\mathrm{m}$. Estimate the minimum
-Uncertainty in its kinetic energy.
+A proton is confined within a nucleus of radius $5.0 \times 10^{-15}\,\mathrm{m}$. Estimate the
+minimum Uncertainty in its kinetic energy.
 
 <details>
 <summary>Solution</summary>
@@ -902,9 +919,9 @@ $$E_k \geq \frac{8.35 \times 10^{-15}}{1.60 \times 10^{-19}} = 5.22 \times 10^4\
 
 ### Problem 6
 
-X-rays of wavelength $1.00 \times 10^{-11}\,\mathrm{m}$ are scattered at an angle of $60^\circ$ by free
-Electrons. Calculate the wavelength of the scattered X-rays and the kinetic energy of the recoil
-Electrons.
+X-rays of wavelength $1.00 \times 10^{-11}\,\mathrm{m}$ are scattered at an angle of $60^\circ$ by
+free Electrons. Calculate the wavelength of the scattered X-rays and the kinetic energy of the
+recoil Electrons.
 
 <details>
 <summary>Solution</summary>
@@ -1023,13 +1040,13 @@ In a nuclear fusion reaction, two deuterium nuclei ($\prescript{2}{}{1}\mathrm{H
 Helium-3 ($\prescript{3}{}{2}\mathrm{He}$) and a neutron. Calculate the energy released.
 
 Given: $m(\prescript{2}{}{1}\mathrm{H}) = 2.01410\,\mathrm{u}$
-$m(\prescript{3}{}{2}\mathrm{He}) = 3.01603\,\mathrm{u}$
-$m_n = 1.00867\,\mathrm{u}$.
+$m(\prescript{3}{}{2}\mathrm{He}) = 3.01603\,\mathrm{u}$ $m_n = 1.00867\,\mathrm{u}$.
 
 <details>
 <summary>Solution</summary>
 
-Reaction: $\prescript{2}{}{1}\mathrm{H} + \prescript{2}{}{1}\mathrm{H} \to \prescript{3}{}{2}\mathrm{He} + \prescript{1}{}{0}\mathrm{n}$
+Reaction:
+$\prescript{2}{}{1}\mathrm{H} + \prescript{2}{}{1}\mathrm{H} \to \prescript{3}{}{2}\mathrm{He} + \prescript{1}{}{0}\mathrm{n}$
 
 Mass of reactants: $2(2.01410) = 4.02820\,\mathrm{u}$
 
@@ -1049,11 +1066,11 @@ $$E = 0.00350 \times 931.5 = 3.26\,\mathrm{MeV}$$
 
 ### Problem 11
 
-A GM tube records a count rate of $120\,\mathrm{counts/min}$ from a radioactive source. When a $2.0\,\mathrm{mm}$
-Thick aluminium sheet is placed in front of the source, the count rate drops to $15\,\mathrm{counts/min}$.
-When the sheet is replaced by a $5.0\,\mathrm{mm}$ thick lead sheet, the count rate drops to
-$10\,\mathrm{counts/min}$. The background count rate is $10\,\mathrm{counts/min}$. Identify the types of
-Radiation emitted by the source.
+A GM tube records a count rate of $120\,\mathrm{counts/min}$ from a radioactive source. When a
+$2.0\,\mathrm{mm}$ Thick aluminium sheet is placed in front of the source, the count rate drops to
+$15\,\mathrm{counts/min}$. When the sheet is replaced by a $5.0\,\mathrm{mm}$ thick lead sheet, the
+count rate drops to $10\,\mathrm{counts/min}$. The background count rate is
+$10\,\mathrm{counts/min}$. Identify the types of Radiation emitted by the source.
 
 <details>
 <summary>Solution</summary>
@@ -1100,7 +1117,8 @@ Note that this equals the Compton wavelength of the electron, $\frac{h}{m_e c}$.
 
 **If you get this wrong, revise:** Section 1.6.
 
-For the A-Level treatment of this topic, see [Radioactivity](https://alevel.wyattau.com/docs/physics/nuclear-physics/radioactivity).
+For the A-Level treatment of this topic, see
+[Radioactivity](https://alevel.wyattau.com/docs/physics/nuclear-physics/radioactivity).
 
 </details>
 

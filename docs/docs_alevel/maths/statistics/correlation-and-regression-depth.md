@@ -1,21 +1,22 @@
 ---
 title: Correlation and Regression (Extended)
-description: "A-Level Mathematics notes on Correlation and Regression (Extended): Correlation and Regression (Extended Treatment); 1. Scatter Diagrams; 1.1 Interpretation."
+description:
+  'A-Level Mathematics notes on Correlation and Regression (Extended): Correlation and Regression
+  (Extended Treatment); 1. Scatter Diagrams; 1.1 Interpretation.'
 date: 2026-04-23T00:00:00.000Z
 tags: [Mathematics, ALevel]
 categories: [Mathematics]
 slug: correlation-and-regression-extended
 ---
+
 ## Correlation and Regression (Extended Treatment)
 
 This document covers scatter diagrams, the product moment correlation coefficient, Spearman's rank
 Correlation, least squares regression, and residual analysis.
 
-:::info
-Correlation measures the strength of a linear association. It does not imply causation, and it
-Does not capture non-linear relationships. Always plot your data before interpreting correlation
-Values.
-:::
+:::info Correlation measures the strength of a linear association. It does not imply causation, and
+it Does not capture non-linear relationships. Always plot your data before interpreting correlation
+Values. :::
 
 <hr />
 
@@ -23,8 +24,8 @@ Values.
 
 ### 1.1 Interpretation
 
-A **scatter diagram** (scatter plot) displays pairs of values $(x_i, y_i)$ as points on a
-Coordinate grid. Visual inspection reveals:
+A **scatter diagram** (scatter plot) displays pairs of values $(x_i, y_i)$ as points on a Coordinate
+grid. Visual inspection reveals:
 
 - The **direction** of association (positive, negative, or none).
 - The **strength** of association (strong, moderate, weak).
@@ -33,27 +34,25 @@ Coordinate grid. Visual inspection reveals:
 
 ### 1.2 Types of correlation
 
-| Pattern | Description |
-| ------------- | ---------------------------------------------------- |
-| Strong + | Points lie close to an upward-sloping line |
-| Moderate + | General upward trend with more scatter |
-| Weak + | Slight upward tendency, much scatter |
-| No correlation| No discernible pattern |
-| Strong - | Points lie close to a downward-sloping line |
-| Non-linear | Clear pattern but not a straight line |
+| Pattern        | Description                                 |
+| -------------- | ------------------------------------------- |
+| Strong +       | Points lie close to an upward-sloping line  |
+| Moderate +     | General upward trend with more scatter      |
+| Weak +         | Slight upward tendency, much scatter        |
+| No correlation | No discernible pattern                      |
+| Strong -       | Points lie close to a downward-sloping line |
+| Non-linear     | Clear pattern but not a straight line       |
 
 ### 1.3 Outliers
 
 An **outlier** is a data point that lies far from the general pattern. Outliers can:
+
 - Be genuine extreme values.
 - Result from measurement errors.
 - Significantly affect the correlation coefficient and regression line.
 
-:::warning
-Common Pitfall
-A single outlier can dramatically change the value of the correlation coefficient. Always examine
-Your scatter diagram before relying on numerical measures.
-:::
+:::warning Common Pitfall A single outlier can dramatically change the value of the correlation
+coefficient. Always examine Your scatter diagram before relying on numerical measures. :::
 
 <hr />
 
@@ -61,8 +60,8 @@ Your scatter diagram before relying on numerical measures.
 
 ### 2.1 Definition
 
-The **product moment correlation coefficient** (also called Pearson's correlation coefficient)
-For a sample of $n$ pairs $(x_i, y_i)$ is:
+The **product moment correlation coefficient** (also called Pearson's correlation coefficient) For a
+sample of $n$ pairs $(x_i, y_i)$ is:
 
 $$r = \frac◆LB◆S_{xy}◆RB◆◆LB◆\sqrt{S_{xx}\,S_{yy}}◆RB◆$$
 
@@ -82,7 +81,7 @@ $$S_{yy} = \sum(y_i - \bar{y})^2 = \sum y_i^2 - n\bar{y}^2$$
 - $r = 0$: no linear correlation (but there may be a non-linear relationship).
 - $r$ is independent of the units of measurement.
 - $r$ is unchanged if both variables are transformed linearly ($x' = ax + b$$y' = cy + d$ with
- $a, c \gt 0$).
+  $a, c \gt 0$).
 
 ### 2.3 Proof that $|r| \leq 1$
 
@@ -100,9 +99,9 @@ $$r^2 = \frac{S_{xy}^2}{S_{xx}\,S_{yy}} \leq 1 \implies |r| \leq 1 \quad \blacks
 
 **Problem.** Find the PMCC for the following data:
 
-| $x$ | 2 | 4 | 6 | 8 | 10 |
-| --- | -- | -- | -- | -- | -- |
-| $y$ | 3 | 5 | 4 | 7 | 9 |
+| $x$ | 2   | 4   | 6   | 8   | 10  |
+| --- | --- | --- | --- | --- | --- |
+| $y$ | 3   | 5   | 4   | 7   | 9   |
 
 $n = 5$$\bar{x} = 6$$\bar{y} = 5.6$.
 
@@ -136,7 +135,8 @@ Relationship between two variables:
 
 $$r_s = 1 - \frac◆LB◆6\sum d_i^2◆RB◆◆LB◆n(n^2 - 1)◆RB◆$$
 
-Where $d_i = \mathrm{rank}(x_i) - \mathrm{rank}(y_i)$ is the difference in ranks for the $i$-th pair.
+Where $d_i = \mathrm{rank}(x_i) - \mathrm{rank}(y_i)$ is the difference in ranks for the $i$-th
+pair.
 
 ### 3.2 When to use Spearman's rank
 
@@ -147,8 +147,8 @@ Where $d_i = \mathrm{rank}(x_i) - \mathrm{rank}(y_i)$ is the difference in ranks
 
 ### 3.3 Handling tied ranks
 
-When values are tied, assign the **average rank** to all tied values. For example, if two values
-Are tied for ranks 3 and 4, both receive rank 3.5.
+When values are tied, assign the **average rank** to all tied values. For example, if two values Are
+tied for ranks 3 and 4, both receive rank 3.5.
 
 When ties exist, the simplified formula is only approximate. A more accurate formula uses:
 
@@ -160,13 +160,13 @@ Applied to the rank data.
 
 **Problem.** Two judges rank 6 competitors:
 
-| Competitor | A | B | C | D | E | F |
-| ---------- | - | - | - | - | - | - |
-| Judge 1 | 1 | 3 | 2 | 5 | 4 | 6 |
-| Judge 2 | 2 | 1 | 3 | 6 | 5 | 4 |
+| Competitor | A   | B   | C   | D   | E   | F   |
+| ---------- | --- | --- | --- | --- | --- | --- |
+| Judge 1    | 1   | 3   | 2   | 5   | 4   | 6   |
+| Judge 2    | 2   | 1   | 3   | 6   | 5   | 4   |
 
-| $d_i$ | -1 | 2 | -1 | -1 | -1 | 2 |
-| ----- | -- | - | -- | -- | -- | - |
+| $d_i$ | -1  | 2   | -1  | -1  | -1  | 2   |
+| ----- | --- | --- | --- | --- | --- | --- |
 
 $\sum d_i^2 = 1 + 4 + 1 + 1 + 1 + 4 = 12$
 
@@ -178,9 +178,9 @@ This indicates moderate positive agreement between the judges.
 
 **Problem.** Find $r_s$ for the following data:
 
-| $x$ | 10 | 20 | 20 | 30 | 40 |
-| --- | -- | -- | -- | -- | -- |
-| $y$ | 5 | 8 | 12 | 15 | 20 |
+| $x$ | 10  | 20  | 20  | 30  | 40  |
+| --- | --- | --- | --- | --- | --- |
+| $y$ | 5   | 8   | 12  | 15  | 20  |
 
 Ranks of $x$: 1, 2.5, 2.5, 4, 5 (tied at 20).
 
@@ -200,12 +200,13 @@ Very strong positive monotonic relationship.
 
 ### 4.1 The regression line of $y$ on $x$
 
-The **least squares regression line** of $y$ on $x$ is the line $y = a + bx$ that minimises the
-Sum of squared residuals:
+The **least squares regression line** of $y$ on $x$ is the line $y = a + bx$ that minimises the Sum
+of squared residuals:
 
 $$S = \sum_{i=1}^{n}(y_i - a - bx_i)^2$$
 
-Setting $\dfrac◆LB◆\partial S◆RB◆◆LB◆\partial a◆RB◆ = 0$ and $\dfrac◆LB◆\partial S◆RB◆◆LB◆\partial b◆RB◆ = 0$:
+Setting $\dfrac◆LB◆\partial S◆RB◆◆LB◆\partial a◆RB◆ = 0$ and
+$\dfrac◆LB◆\partial S◆RB◆◆LB◆\partial b◆RB◆ = 0$:
 
 $$b = \frac{S_{xy}}{S_{xx}} = \frac◆LB◆\sum(x_i - \bar{x})(y_i - \bar{y})◆RB◆◆LB◆\sum(x_i - \bar{x})^2◆RB◆$$
 
@@ -246,17 +247,14 @@ Minimises vertical residuals; the line of $x$ on $y$ minimises horizontal residu
 ### 4.5 Restrictions on using regression
 
 1. **Interpolation** (predicting within the data range) is generally reliable.
-2. **Extrapolation** (predicting outside the data range) is unreliable -- the relationship may
- not hold.
+2. **Extrapolation** (predicting outside the data range) is unreliable -- the relationship may not
+   hold.
 3. The regression line assumes a **linear** relationship.
-4. The model assumes the residuals are independent and normally distributed with constant
- variance (homoscedasticity).
+4. The model assumes the residuals are independent and normally distributed with constant variance
+   (homoscedasticity).
 
-:::warning
-Warning
-Do not use the regression line of $y$ on $x$ to predict $x$ from a given $y$Or vice versa.
-Use the appropriate regression line for the direction of prediction.
-:::
+:::warning Warning Do not use the regression line of $y$ on $x$ to predict $x$ from a given $y$Or
+vice versa. Use the appropriate regression line for the direction of prediction. :::
 
 <hr />
 
@@ -290,16 +288,16 @@ Using the data and regression line $y = 1.4 + 0.7x$ from Section 4.3:
 
 | $x$ | $y$ | $\hat{y}$ | Residual $e$ |
 | --- | --- | --------- | ------------ |
-| 2 | 3 | 2.8 | 0.2 |
-| 4 | 5 | 4.2 | 0.8 |
-| 6 | 4 | 5.6 | -1.6 |
-| 8 | 7 | 7.0 | 0.0 |
-| 10 | 9 | 8.4 | 0.6 |
+| 2   | 3   | 2.8       | 0.2          |
+| 4   | 5   | 4.2       | 0.8          |
+| 6   | 4   | 5.6       | -1.6         |
+| 8   | 7   | 7.0       | 0.0          |
+| 10  | 9   | 8.4       | 0.6          |
 
 Check: $\sum e = 0.2 + 0.8 - 1.6 + 0 + 0.6 = 0$.
 
-The residual at $x = 6$ is relatively large ($-1.6$), suggesting this point deviates most from
-The linear model.
+The residual at $x = 6$ is relatively large ($-1.6$), suggesting this point deviates most from The
+linear model.
 
 <hr />
 
@@ -346,10 +344,10 @@ When $x = 7$: $y = 0.734 + 8.200 = 8.934 \approx 8.9$.
 
 Two teachers rank 8 students by exam performance. Calculate Spearman's rank correlation coefficient.
 
-| Student | A | B | C | D | E | F | G | H |
-| ------- | - | - | - | - | - | - | - | - |
-| Teacher 1 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
-| Teacher 2 | 3 | 1 | 4 | 2 | 6 | 5 | 8 | 7 |
+| Student   | A   | B   | C   | D   | E   | F   | G   | H   |
+| --------- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Teacher 1 | 1   | 2   | 3   | 4   | 5   | 6   | 7   | 8   |
+| Teacher 2 | 3   | 1   | 4   | 2   | 6   | 5   | 8   | 7   |
 
 <details>
 <summary>Solution</summary>

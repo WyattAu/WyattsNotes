@@ -1,6 +1,8 @@
 ---
 title: Filesystem Library
-description: "C++: Filesystem Library — `std::filesystem::path`; Path Composition; Path Iteration; Directory Iterators with worked examples and exam-style questions."
+description:
+  'C++: Filesystem Library — `std::filesystem::path`; Path Composition; Path Iteration; Directory
+  Iterators with worked examples and exam-style questions.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -8,6 +10,7 @@ categories:
   - Cpp
 slug: filesystem-library
 ---
+
 ## The Filesystem Library
 
 `std::filesystem` (C++17) provides a portable interface for manipulating paths, querying file
@@ -26,12 +29,10 @@ The library abstracts away platform differences between POSIX and Windows file s
 Separators (`/` vs `\`), permissions models, and file metadata are normalized into a common
 Interface.
 
-:::info
-On POSIX systems, `std::filesystem` is implemented on top of POSIX system calls (`stat`
+:::info On POSIX systems, `std::filesystem` is implemented on top of POSIX system calls (`stat`
 `opendir``readdir``unlink`Etc.). On Windows, it uses the Win32 API (`CreateFileW`
 `FindFirstFileW`Etc.). The interface is the same on both platforms, but some features are only
-Available on one (e.g., file permissions are more expressive on POSIX).
-:::
+Available on one (e.g., file permissions are more expressive on POSIX). :::
 
 ### `std::filesystem::path`
 
@@ -109,21 +110,19 @@ void path_iteration() {
 }
 ```
 
-:::tip
-`fs::path::lexically_normal()` removes `.` and `..` components without touching the
+:::tip `fs::path::lexically_normal()` removes `.` and `..` components without touching the
 Filesystem. `fs::canonical()` resolves them by actually querying the filesystem (and throws if the
 Path does not exist). Use `lexically_normal()` for string-level cleanup, `canonical()` when you need
-The true absolute path.
-:::
+The true absolute path. :::
 
 ### Directory Iterators
 
 The library provides two directory iterators [N4950 §30.10.11]:
 
-| Iterator | Behavior |
+| Iterator                           | Behavior                                            |
 | :--------------------------------- | :-------------------------------------------------- |
-| `fs::directory_iterator` | Iterates over the immediate children of a directory |
-| `fs::recursive_directory_iterator` | Iterates over all descendants recursively |
+| `fs::directory_iterator`           | Iterates over the immediate children of a directory |
+| `fs::recursive_directory_iterator` | Iterates over all descendants recursively           |
 
 Both are input iterators and follow the RAII pattern — they close the directory handle in their
 Destructor.
@@ -151,12 +150,10 @@ void list_directory(const fs::path& dir) {
 }
 ```
 
-:::warning
-`fs::directory_iterator` does **not** follow symlinks by default. A symlink to a
+:::warning `fs::directory_iterator` does **not** follow symlinks by default. A symlink to a
 Directory returns `is_symlink() == true` but also `is_directory() == true` (since `is_directory()`
 Follows symlinks by default). Use `fs::directory_options::follow_directory_symlink` to follow
-Symlinks into directories, but be careful of symlink cycles.
-:::
+Symlinks into directories, but be careful of symlink cycles. :::
 
 ### Recursive Directory Listing
 
@@ -212,34 +209,32 @@ void recursive_list(const fs::path& root, int max_depth = 3) {
 }
 ```
 
-:::info
-`fs::directory_options::skip_permission_denied` causes the iterator to silently skip
+:::info `fs::directory_options::skip_permission_denied` causes the iterator to silently skip
 Directories that the current process lacks permission to read. Without this option, a
 `fs::filesystem_error` exception is thrown. This is essential for recursively scanning directories
 Like `/home` or `/tmp` where some subdirectories may have restricted permissions [N4950
-§30.10.11.1].
-:::
+§30.10.11.1]. :::
 
 ### File Operations
 
 The `std::filesystem` namespace provides free functions for common file operations [N4950
 §30.10.14]:
 
-| Function | Purpose |
+| Function                           | Purpose                                         |
 | :--------------------------------- | :---------------------------------------------- |
-| `fs::copy(src, dst, options)` | Copy files or directories |
-| `fs::copy_file(src, dst, options)` | Copy a single file (overwrite control) |
-| `fs::remove(path)` | Remove a file or empty directory |
-| `fs::remove_all(path)` | Remove a file or directory tree recursively |
-| `fs::rename(old, new)` | Rename or move a file/directory |
-| `fs::resize_file(path, size)` | Truncate or extend a file |
-| `fs::space(path)` | Get disk space info (capacity, free, available) |
-| `fs::status(path)` | Get file status (type, permissions) |
-| `fs::last_write_time(path)` | Get/set last modification time |
-| `fs::create_directory(path)` | Create a single directory |
-| `fs::create_directories(path)` | Create directory tree (like `mkdir -p`) |
-| `fs::current_path()` | Get/set the current working directory |
-| `fs::temp_directory_path()` | Get the system temp directory |
+| `fs::copy(src, dst, options)`      | Copy files or directories                       |
+| `fs::copy_file(src, dst, options)` | Copy a single file (overwrite control)          |
+| `fs::remove(path)`                 | Remove a file or empty directory                |
+| `fs::remove_all(path)`             | Remove a file or directory tree recursively     |
+| `fs::rename(old, new)`             | Rename or move a file/directory                 |
+| `fs::resize_file(path, size)`      | Truncate or extend a file                       |
+| `fs::space(path)`                  | Get disk space info (capacity, free, available) |
+| `fs::status(path)`                 | Get file status (type, permissions)             |
+| `fs::last_write_time(path)`        | Get/set last modification time                  |
+| `fs::create_directory(path)`       | Create a single directory                       |
+| `fs::create_directories(path)`     | Create directory tree (like `mkdir -p`)         |
+| `fs::current_path()`               | Get/set the current working directory           |
+| `fs::temp_directory_path()`        | Get the system temp directory                   |
 
 ```cpp
 #include <filesystem>
@@ -283,11 +278,9 @@ void file_operations_demo(const fs::path& work_dir) {
 }
 ```
 
-:::warning
-`fs::remove_all()` is dangerous — it recursively deletes an entire directory tree without
+:::warning `fs::remove_all()` is dangerous — it recursively deletes an entire directory tree without
 Confirmation. Never call it with a path derived from untrusted user input without validation. Unlike
-`rm -rf`There is no "trash" or "undo" mechanism.
-:::
+`rm -rf`There is no "trash" or "undo" mechanism. :::
 
 ## See Also
 
@@ -326,12 +319,10 @@ void file_time_demo(const fs::path& file) {
 }
 ```
 
-:::warning
-On Windows with MSVC, `fs::file_time_type` historically used a resolution of 100
+:::warning On Windows with MSVC, `fs::file_time_type` historically used a resolution of 100
 Nanoseconds (Windows FILETIME), while on POSIX it used 1-second resolution (`stat` `st_mtime`).
 C++20 improves this, but portability issues remain for sub-second precision. Always test on your
-Target platforms.
-:::
+Target platforms. :::
 
 ### Permissions
 
@@ -373,17 +364,15 @@ void permissions_demo(const fs::path& file) {
 }
 ```
 
-| `fs::perm_options` | Effect |
+| `fs::perm_options` | Effect                                                |
 | :----------------- | :---------------------------------------------------- |
-| `replace` | Replace current permissions with the given bitmask |
-| `add` | Add the given permission bits to the current set |
-| `remove` | Remove the given permission bits from the current set |
-| `nofollow` | Do not follow symlinks (applicable on POSIX) |
+| `replace`          | Replace current permissions with the given bitmask    |
+| `add`              | Add the given permission bits to the current set      |
+| `remove`           | Remove the given permission bits from the current set |
+| `nofollow`         | Do not follow symlinks (applicable on POSIX)          |
 
-:::warning
-On Windows, `fs::permissions` can only control the read-only attribute. Group and other
-Permissions are not supported. The `owner_exec` permission is not meaningful on Windows.
-:::
+:::warning On Windows, `fs::permissions` can only control the read-only attribute. Group and other
+Permissions are not supported. The `owner_exec` permission is not meaningful on Windows. :::
 
 ### Symbolic Links
 
@@ -534,11 +523,9 @@ void error_handling_demo() {
 }
 ```
 
-:::tip
-Use the `std::error_code` overloads in performance-critical code or when errors are expected
+:::tip Use the `std::error_code` overloads in performance-critical code or when errors are expected
 (e.g., checking if a file exists by trying to open it). Exception-based error handling has overhead
-From stack unwinding, while error codes do not.
-:::
+From stack unwinding, while error codes do not. :::
 
 ### Temporary Files and Atomic Write Patterns
 
@@ -577,27 +564,27 @@ void atomic_write(const fs::path& target, std::string_view content) {
 ### Common Pitfalls
 
 1. **`fs::path` comparison is lexicographic:** `fs::path("a/b") != fs::path("a//b")` — they are not
- the same path object even though they refer to the same file. Use `fs::canonical()` or
- `fs::equivalent()` for semantic comparison.
+   the same path object even though they refer to the same file. Use `fs::canonical()` or
+   `fs::equivalent()` for semantic comparison.
 
 2. **`fs::remove_all` is not undoable:** There is no "trash" mechanism. Once called, the files are
- gone. Never call it with untrusted input without validation.
+   gone. Never call it with untrusted input without validation.
 
 3. **Symlink cycles:** `fs::recursive_directory_iterator` can follow symlink cycles indefinitely if
- you use `follow_directory_symlink`. Use `directory_options::follow_directory_symlink` with
- caution, and consider tracking visited directories by device/inode to detect cycles.
+   you use `follow_directory_symlink`. Use `directory_options::follow_directory_symlink` with
+   caution, and consider tracking visited directories by device/inode to detect cycles.
 
 4. **Path separator on Windows:** `fs::path` uses the preferred separator on construction, but the
- `/` operator always works on both platforms. Avoid hardcoding `\\` — always use `/` or
- `fs::path::preferred_separator`.
+   `/` operator always works on both platforms. Avoid hardcoding `\\` — always use `/` or
+   `fs::path::preferred_separator`.
 
 5. **`fs::exists` TOCTOU race:** The check `if (fs::exists(p)) fs::remove(p)` is vulnerable to a
- time-of-check-to-time-of-use (TOCTOU) race — another process may create or delete the file
- between the check and the removal. Prefer just performing the operation and handling the error.
+   time-of-check-to-time-of-use (TOCTOU) race — another process may create or delete the file
+   between the check and the removal. Prefer just performing the operation and handling the error.
 
 6. **File permissions on Windows:** The POSIX permission model does not map cleanly to Windows ACLs.
- `fs::permissions` on Windows can only reliably set/clear the read-only attribute. Do not rely on
- group/other permissions on Windows.
+   `fs::permissions` on Windows can only reliably set/clear the read-only attribute. Do not rely on
+   group/other permissions on Windows.
 
 :::
 

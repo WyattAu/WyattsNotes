@@ -1,6 +1,8 @@
 ---
 title: Data and Databases
-description: "Data and Databases — Data Representation; Text Encoding (OL/HL); Images (OL/HL); Sound (HL) with worked examples and exam-style questions."
+description:
+  'Data and Databases — Data Representation; Text Encoding (OL/HL); Images (OL/HL); Sound (HL) with
+  worked examples and exam-style questions.'
 date: 2026-04-14
 tags:
   - Computer Science
@@ -9,6 +11,7 @@ categories:
   - Computer Science
 slug: data-and-databases
 ---
+
 # Data and Databases
 
 This topic covers data representation, data types, database concepts, SQL, normalisation, and data
@@ -39,9 +42,9 @@ To 'a', add 32 to the ASCII code: 65 + 32 = 97.
 **Bitmap images:** composed of pixels. Each pixel has a colour value.
 
 - **Colour depth:** number of bits per pixel.
- - 1 bit: black and white (2 colours).
- - 8 bits: 256 colours.
- - 24 bits: true colour ($16,777,216$ colours).
+- 1 bit: black and white (2 colours).
+- 8 bits: 256 colours.
+- 24 bits: true colour ($16,777,216$ colours).
 
 **Image file size (bits):** width $\times$ height $\times$ colour depth.
 
@@ -60,12 +63,12 @@ Smaller file sizes for simple images.
 
 **Bitmap vs Vector comparison:**
 
-| Feature | Bitmap | Vector |
+| Feature        | Bitmap                      | Vector                      |
 | -------------- | --------------------------- | --------------------------- |
-| Representation | Grid of pixels | Mathematical descriptions |
-| Scaling | Loses quality when enlarged | No quality loss at any size |
-| File size | Depends on resolution | Depends on complexity |
-| Best for | Photographs | Logos, icons, diagrams |
+| Representation | Grid of pixels              | Mathematical descriptions   |
+| Scaling        | Loses quality when enlarged | No quality loss at any size |
+| File size      | Depends on resolution       | Depends on complexity       |
+| Best for       | Photographs                 | Logos, icons, diagrams      |
 
 ### Sound (HL)
 
@@ -113,14 +116,14 @@ Value).
 
 ## Data Types (OL/HL)
 
-| Type | Description | Example |
+| Type       | Description            | Example      |
 | ---------- | ---------------------- | ------------ |
-| Integer | Whole numbers | 42, -7 |
-| Real/Float | Decimal numbers | 3.14, -0.001 |
-| Character | Single character | 'A', 'z' |
-| String | Sequence of characters | "Hello" |
-| Boolean | True or false | true, false |
-| Date | Calendar date | 2026-04-14 |
+| Integer    | Whole numbers          | 42, -7       |
+| Real/Float | Decimal numbers        | 3.14, -0.001 |
+| Character  | Single character       | 'A', 'z'     |
+| String     | Sequence of characters | "Hello"      |
+| Boolean    | True or false          | true, false  |
+| Date       | Calendar date          | 2026-04-14   |
 
 **Worked Example (OL).** Which data type would you use for each of the following?
 
@@ -140,24 +143,24 @@ Of updating.
 **Relational database:** data stored in multiple related tables. Advantages: reduced redundancy,
 Data integrity, easier maintenance.
 
-| Feature | Flat File | Relational Database |
+| Feature           | Flat File           | Relational Database         |
 | ----------------- | ------------------- | --------------------------- |
-| Tables | Single | Multiple, related |
-| Redundancy | High | Minimised by normalisation |
-| Data integrity | Not enforced | Enforced by constraints |
-| Concurrent access | Not supported | Supported with locking |
-| Querying | Manual (sequential) | SQL (declarative, powerful) |
+| Tables            | Single              | Multiple, related           |
+| Redundancy        | High                | Minimised by normalisation  |
+| Data integrity    | Not enforced        | Enforced by constraints     |
+| Concurrent access | Not supported       | Supported with locking      |
+| Querying          | Manual (sequential) | SQL (declarative, powerful) |
 
 ### Key Terms
 
-| Term | Definition |
+| Term        | Definition                                                    |
 | ----------- | ------------------------------------------------------------- |
-| Entity | A thing/object about which data is stored (e.g., Student) |
-| Attribute | A property of an entity (e.g., Name, Date of Birth) |
-| Primary key | Uniquely identifies each record in a table |
+| Entity      | A thing/object about which data is stored (e.g., Student)     |
+| Attribute   | A property of an entity (e.g., Name, Date of Birth)           |
+| Primary key | Uniquely identifies each record in a table                    |
 | Foreign key | A primary key from another table, establishing a relationship |
-| Record | A single row in a table |
-| Field | A single column in a table |
+| Record      | A single row in a table                                       |
+| Field       | A single column in a table                                    |
 
 **Worked Example (OL).** In a Student table, which field would be the best primary key?
 
@@ -170,9 +173,9 @@ An ER diagram shows entities, attributes, and relationships.
 
 - **One-to-one (1:1):** each record in one table relates to exactly one record in another.
 - **One-to-many (1:M):** one record in a table relates to many in another (e.g., one teacher has
- many students).
+  many students).
 - **Many-to-many (M:N):** many records in one table relate to many in another (e.g., students and
- courses). Resolved using a junction table.
+  courses). Resolved using a junction table.
 
 **Worked Example (HL).** A school has Teachers and Subjects. Each teacher teaches one subject, but a
 Subject can be taught by many teachers. What is the relationship?
@@ -362,14 +365,14 @@ Normalisation reduces data redundancy and dependency.
 
 | StudentID | Name | Subject1 | Teacher1 | Subject2 | Teacher2 |
 | --------- | ---- | -------- | -------- | -------- | -------- |
-| 1 | John | Maths | Ms Lee | Physics | Mr Kelly |
+| 1         | John | Maths    | Ms Lee   | Physics  | Mr Kelly |
 
 **1NF:** Remove repeating groups.
 
-| StudentID | Name | Subject | Teacher |
+| StudentID | Name | Subject | Teacher  |
 | --------- | ---- | ------- | -------- |
-| 1 | John | Maths | Ms Lee |
-| 1 | John | Physics | Mr Kelly |
+| 1         | John | Maths   | Ms Lee   |
+| 1         | John | Physics | Mr Kelly |
 
 **2NF:** Separate into Students and Enrolments tables.
 
@@ -397,9 +400,9 @@ Enrolments: StudentID, Subject.
 
 - **Entity integrity:** no null values in primary key.
 - **Referential integrity:** every foreign key value must match a primary key value in the related
- table (or be null).
+  table (or be null).
 - **Domain integrity:** values in a column must be of the correct data type and within the valid
- range.
+  range.
 
 **Worked Example (HL).** Explain referential integrity with an example.
 
@@ -484,11 +487,11 @@ CREATE TABLE Enrolment (
 
 **Unicode and UTF-8 encoding:**
 
-| Character | Unicode | UTF-8 Bytes |
-| --------- | ------- | ----------------- |
-| A | U+0041 | 01000001 (1 byte) |
-| Euro | U+20AC | 11100010 10000010 10101100 (3 bytes) |
-| Emoji | U+1F600 | 4 bytes |
+| Character | Unicode | UTF-8 Bytes                          |
+| --------- | ------- | ------------------------------------ |
+| A         | U+0041  | 01000001 (1 byte)                    |
+| Euro      | U+20AC  | 11100010 10000010 10101100 (3 bytes) |
+| Emoji     | U+1F600 | 4 bytes                              |
 
 **Why UTF-8 is preferred:** Backward-compatible with ASCII, variable-length (efficient for English
 Text), and supports all Unicode characters.
@@ -521,7 +524,7 @@ Original can be perfectly reconstructed.
 12. Explain the difference between DELETE, DROP, and TRUNCATE in SQL.
 
 13. A school database needs tables for Teacher, Subject, and Classroom. Design the schema with
- appropriate primary and foreign keys.
+    appropriate primary and foreign keys.
 
 14. Write SQL to find all students whose marks are above the class average in every subject.
 
@@ -532,8 +535,8 @@ Original can be perfectly reconstructed.
 17. Explain three types of SQL injection attacks and how to prevent each.
 
 18. A music streaming service stores songs as MP3 files at 128 kbps. A 4-minute song at CD quality
- (44,100 Hz, 16-bit, stereo) would be approximately 30 MB. Estimate the MP3 file size and
- explain the compression ratio.
+    (44,100 Hz, 16-bit, stereo) would be approximately 30 MB. Estimate the MP3 file size and explain
+    the compression ratio.
 
 ## Additional SQL Practice
 
@@ -575,14 +578,14 @@ FROM Students;
 
 ### Aggregate Functions in Detail
 
-| Function | Description | Ignores NULL? |
-| --------- | ------------------------------------ | ------------- |
-| COUNT(*) | Count all rows | No |
-| COUNT(col)| Count non-NULL values in column | Yes |
-| SUM | Sum of values | Yes |
-| AVG | Average of values | Yes |
-| MIN | Smallest value | Yes |
-| MAX | Largest value | Yes |
+| Function   | Description                     | Ignores NULL? |
+| ---------- | ------------------------------- | ------------- |
+| COUNT(\*)  | Count all rows                  | No            |
+| COUNT(col) | Count non-NULL values in column | Yes           |
+| SUM        | Sum of values                   | Yes           |
+| AVG        | Average of values               | Yes           |
+| MIN        | Smallest value                  | Yes           |
+| MAX        | Largest value                   | Yes           |
 
 **Worked Example.** Find the student with the highest mark in each subject.
 
@@ -618,33 +621,33 @@ Characters and longer codes to less frequent characters.
 
 | Character | Frequency | Huffman Code |
 | --------- | --------- | ------------ |
-| C | 6 | 00 |
-| B | 4 | 01 |
-| D | 4 | 10 |
-| A | 3 | 110 |
-| E | 2 | 111 |
+| C         | 6         | 00           |
+| B         | 4         | 01           |
+| D         | 4         | 10           |
+| A         | 3         | 110          |
+| E         | 2         | 111          |
 
-Original: 19 characters x 8 bits = 152 bits.
-Compressed: (6x2) + (4x2) + (4x2) + (3x3) + (2x3) = 12 + 8 + 8 + 9 + 6 = 43 bits.
+Original: 19 characters x 8 bits = 152 bits. Compressed: (6x2) + (4x2) + (4x2) + (3x3) + (2x3) =
+12 + 8 + 8 + 9 + 6 = 43 bits.
 
 ## Additional Practice Questions
 
 11. Write SQL to find all students who scored above 80 in at least 3 different subjects.
 
-12. Write SQL using a CASE expression to convert numerical marks to letter grades: A (90-100),
- B (80-89), C (70-79), D (60-69), F (below 60).
+12. Write SQL using a CASE expression to convert numerical marks to letter grades: A (90-100), B
+    (80-89), C (70-79), D (60-69), F (below 60).
 
 13. Explain how Huffman coding achieves compression. Why is it lossless?
 
 14. Write SQL to create a view that shows each student's name, their average mark, and a count of
- how many subjects they are enrolled in.
+    how many subjects they are enrolled in.
 
 15. Compress the string "MMMMMMNNNOOOOOPP" using RLE. Calculate the compression ratio.
 
 16. Write SQL using NOT EXISTS to find products that have never been ordered.
 
-17. Explain the difference between COUNT(*) and COUNT(column). Give an example where they produce
- different results.
+17. Explain the difference between COUNT(\*) and COUNT(column). Give an example where they produce
+    different results.
 
 18. Write SQL to find the top 3 students by total marks across all subjects, using a CTE.
 
@@ -671,9 +674,9 @@ DELETE FROM Results WHERE StudentID = 42;
 ### Anonymisation vs Pseudonymisation
 
 - **Anonymisation:** Permanently removes identifying information. Data cannot be linked back to
- individuals.
+  individuals.
 - **Pseudonymisation:** Replaces identifying information with artificial identifiers. Data can be
- linked back using a key.
+  linked back using a key.
 
 **Worked Example.** A hospital wants to share patient data for research. Explain why
 Pseudonymisation might be preferred over anonymisation.
@@ -687,22 +690,22 @@ Small re-identification risk.
 19. Explain the difference between anonymisation and pseudonymisation. When might each be used?
 
 20. Write SQL to implement the "right to be forgotten" for a specific student, ensuring all related
- records are deleted across all tables.
+    records are deleted across all tables.
 
 21. Explain why data minimisation is important in database design. Give an example of collecting
- unnecessary data.
+    unnecessary data.
 
 22. A company stores customer data including names, addresses, purchase history, and payment
- details. Explain which data protection principles apply and how they should be implemented.
+    details. Explain which data protection principles apply and how they should be implemented.
 
 ## Common Pitfalls
 
 1. **Image file size** -- remember to convert from bits to bytes to MB.
 2. **SQL syntax** -- keywords are case-insensitive but conventionally uppercase; strings in single
- quotes.
+   quotes.
 3. **JOIN vs WHERE** -- use explicit JOIN syntax rather than implicit joins.
 4. **Normalisation** -- identify functional dependencies carefully; 3NF requires no transitive
- dependencies.
+   dependencies.
 5. **Lossy vs lossless** -- know which formats use which type of compression.
 6. **Forgetting WHERE in UPDATE/DELETE** -- without WHERE, all rows are affected.
 7. **NULL in aggregates** -- COUNT(\*) counts all rows; COUNT(column) counts non-NULL values.
@@ -721,16 +724,16 @@ Small re-identification risk.
 
 1. Calculate the file size of 5 minutes of stereo audio at 48,000 Hz, 24-bit resolution.
 2. Normalise the following table to 3NF: Order(OrderNo, CustomerName, CustomerAddress, ProductName,
- Quantity, Price).
+   Quantity, Price).
 3. Write an SQL query to find all students whose average mark is above 75, grouped by grade level.
 4. Explain the difference between entity integrity and referential integrity with examples.
 
 5. Write SQL to create tables for a library database with Books, Members, and Loans. Include primary
- keys and foreign keys.
+   keys and foreign keys.
 6. Write SQL to find the most popular book (most loans) in the library.
 7. Explain the three types of anomalies that can occur in an unnormalised database.
 8. Write SQL to create a view showing all members who have overdue loans (loan date more than 14
- days ago).
+   days ago).
 
 9. A bitmap image has resolution 1600 $\times$ 900 and file size 3 MB. Calculate the colour depth.
 10. Write SQL that uses a subquery to find students who are NOT enrolled in any course.

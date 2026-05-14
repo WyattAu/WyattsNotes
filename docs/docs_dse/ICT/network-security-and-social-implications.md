@@ -1,6 +1,8 @@
 ---
 title: Network Security and Social Implications
-description: "DSE ICT notes on network security and social implications covering cybersecurity threats, encryption, authentication, privacy, legal frameworks, and digital"
+description:
+  'DSE ICT notes on network security and social implications covering cybersecurity threats,
+  encryption, authentication, privacy, legal frameworks, and digital'
 date: 2026-04-08T00:00:00.000Z
 tags:
   - DSE
@@ -24,17 +26,17 @@ Threats, security measures, legal frameworks, and professional considerations.
 Malware (malicious software) is software designed to damage, disrupt, or gain unauthorised access to
 A computer system.
 
-| Type | Self-replicating | Requires Host | Primary Purpose |
+| Type           | Self-replicating | Requires Host | Primary Purpose                                          |
 | -------------- | ---------------- | ------------- | -------------------------------------------------------- |
-| Virus | Yes | Yes | Corrupt or modify files, spread to other files |
-| Worm | Yes | No | Spread across networks, consume bandwidth |
-| Trojan | No | Yes | Disguised as legitimate software, create backdoor |
-| Ransomware | No | Yes | Encrypt files, demand payment for decryption key |
-| Spyware | No | Yes | Monitor user activity, collect data covertly |
-| Adware | No | Yes | Display unwanted advertisements |
-| Rootkit | No | Yes | Hide malicious processes, maintain persistent access |
-| Keylogger | No | Yes | Record keystrokes to capture passwords and personal data |
-| Botnet malware | No | Yes | Enrol the device in a botnet for DDoS or spam |
+| Virus          | Yes              | Yes           | Corrupt or modify files, spread to other files           |
+| Worm           | Yes              | No            | Spread across networks, consume bandwidth                |
+| Trojan         | No               | Yes           | Disguised as legitimate software, create backdoor        |
+| Ransomware     | No               | Yes           | Encrypt files, demand payment for decryption key         |
+| Spyware        | No               | Yes           | Monitor user activity, collect data covertly             |
+| Adware         | No               | Yes           | Display unwanted advertisements                          |
+| Rootkit        | No               | Yes           | Hide malicious processes, maintain persistent access     |
+| Keylogger      | No               | Yes           | Record keystrokes to capture passwords and personal data |
+| Botnet malware | No               | Yes           | Enrol the device in a botnet for DDoS or spam            |
 
 **Virus vs Worm -- the critical distinction:**
 
@@ -42,63 +44,63 @@ A virus attaches itself to a legitimate file and requires user action (opening a
 Program, booting from an infected disk) to execute and spread. A worm is a standalone program that
 Self-replicates over network connections without requiring any user action or host file.
 
-| Aspect | Virus | Worm |
+| Aspect      | Virus                 | Worm                     |
 | ----------- | --------------------- | ------------------------ |
-| Host file | Required | Not required |
-| Spreads via | Infected files, media | Network, email |
-| User action | Needed to activate | Not needed |
-| Speed | Slower | Can spread rapidly |
-| Detection | File integrity checks | Network traffic analysis |
+| Host file   | Required              | Not required             |
+| Spreads via | Infected files, media | Network, email           |
+| User action | Needed to activate    | Not needed               |
+| Speed       | Slower                | Can spread rapidly       |
+| Detection   | File integrity checks | Network traffic analysis |
 
 ### Phishing and Social Engineering
 
-**Phishing** is a type of social engineering attack that uses fraudulent communications (
-Email) to trick victims into revealing sensitive information or installing malware.
+**Phishing** is a type of social engineering attack that uses fraudulent communications ( Email) to
+trick victims into revealing sensitive information or installing malware.
 
-| Phishing Type | Description | Target |
+| Phishing Type  | Description                                           | Target          |
 | -------------- | ----------------------------------------------------- | --------------- |
-| Bulk phishing | Mass emails sent to many recipients | General public |
-| Spear phishing | Targeted at a specific individual or organisation | Specific person |
-| Whaling | Spear phishing targeting senior executives (CEO, CFO) | C-level execs |
-| Smishing | Phishing via SMS/text messages | Mobile users |
-| Vishing | Phishing via voice calls (often using VoIP) | Phone users |
+| Bulk phishing  | Mass emails sent to many recipients                   | General public  |
+| Spear phishing | Targeted at a specific individual or organisation     | Specific person |
+| Whaling        | Spear phishing targeting senior executives (CEO, CFO) | C-level execs   |
+| Smishing       | Phishing via SMS/text messages                        | Mobile users    |
+| Vishing        | Phishing via voice calls (often using VoIP)           | Phone users     |
 
 **Common social engineering techniques:**
 
 1. **Pretexting:** Creating a fabricated scenario (a pretext) to obtain information. Example:
- impersonating an IT support technician who needs the victim's login credentials to "fix a
- problem."
+   impersonating an IT support technician who needs the victim's login credentials to "fix a
+   problem."
 2. **Baiting:** Offering something enticing (free software, USB drive left in a car park) that
- contains malware.
+   contains malware.
 3. **Tailgating:** Physically following an authorised person through a secured door to gain access
- to a building or restricted area.
+   to a building or restricted area.
 4. **Urgency/scarcity:** Creating a false sense of urgency ("Your account will be locked in 24
- hours") to pressure the victim into acting without thinking.
+   hours") to pressure the victim into acting without thinking.
 5. **Authority impersonation:** Posing as a person of authority (bank manager, police officer, IT
- admin) to exploit trust.
+   admin) to exploit trust.
 
 ### Denial of Service (DoS) and Distributed DoS (DDoS)
 
 A DoS attack overwhelms a target system with traffic or requests, making it unavailable to
 Legitimate users.
 
-| Attack Type | Description |
+| Attack Type       | Description                                                         |
 | ----------------- | ------------------------------------------------------------------- |
-| **DoS** | Single source floods the target with traffic |
-| **DDoS** | Multiple compromised devices (botnet) attack simultaneously |
-| **SYN flood** | Exploits TCP handshake: sends many SYN requests, never completes |
-| **UDP flood** | Sends massive UDP packets to random ports, consuming resources |
+| **DoS**           | Single source floods the target with traffic                        |
+| **DDoS**          | Multiple compromised devices (botnet) attack simultaneously         |
+| **SYN flood**     | Exploits TCP handshake: sends many SYN requests, never completes    |
+| **UDP flood**     | Sends massive UDP packets to random ports, consuming resources      |
 | **Amplification** | Uses third-party servers to amplify attack traffic (e.g., DNS, NTP) |
 
 ### Other Attack Vectors
 
-| Attack | Description |
+| Attack                         | Description                                                                    |
 | ------------------------------ | ------------------------------------------------------------------------------ |
-| **Man-in-the-middle** | Attacker intercepts communication between two parties, possibly altering it |
-| **SQL injection** | Inserts malicious SQL into input fields to manipulate or extract database data |
-| **Cross-site scripting (XSS)** | Injects malicious scripts into web pages viewed by other users |
-| **Brute force** | Systematically tries all possible passwords until one works |
-| **Dictionary attack** | Tries passwords from a precompiled list of common passwords |
+| **Man-in-the-middle**          | Attacker intercepts communication between two parties, possibly altering it    |
+| **SQL injection**              | Inserts malicious SQL into input fields to manipulate or extract database data |
+| **Cross-site scripting (XSS)** | Injects malicious scripts into web pages viewed by other users                 |
+| **Brute force**                | Systematically tries all possible passwords until one works                    |
+| **Dictionary attack**          | Tries passwords from a precompiled list of common passwords                    |
 
 ---
 
@@ -109,31 +111,31 @@ Legitimate users.
 Basic firewall concepts are in
 [internet-and-data-communications.md](internet-and-data-communications.md).
 
-| Type | OSI Layer | Method | Speed | Thoroughness |
+| Type                          | OSI Layer  | Method                                                           | Speed    | Thoroughness |
 | ----------------------------- | ---------- | ---------------------------------------------------------------- | -------- | ------------ |
-| **Packet filtering** | Layer 3 | Examines source/dest IP, port, protocol | Fast | Low |
-| **Stateful inspection** | Layer 3/4 | Tracks connection state, context | Medium | Medium |
-| **Application-level (proxy)** | Layer 7 | Inspects actual application data | Slow | High |
-| **Next-generation (NGFW)** | Layer 3--7 | Combines all above + IPS, deep packet inspection, TLS decryption | Variable | Very High |
+| **Packet filtering**          | Layer 3    | Examines source/dest IP, port, protocol                          | Fast     | Low          |
+| **Stateful inspection**       | Layer 3/4  | Tracks connection state, context                                 | Medium   | Medium       |
+| **Application-level (proxy)** | Layer 7    | Inspects actual application data                                 | Slow     | High         |
+| **Next-generation (NGFW)**    | Layer 3--7 | Combines all above + IPS, deep packet inspection, TLS decryption | Variable | Very High    |
 
 ### Encryption -- Algorithms and Applications
 
 **Symmetric encryption algorithms:**
 
-| Algorithm | Key Length | Speed | Notes |
+| Algorithm | Key Length               | Speed     | Notes                                 |
 | --------- | ------------------------ | --------- | ------------------------------------- |
-| DES | 56 bits | Fast | Obsolete (broken by brute force) |
-| 3DES | 168 bits (effective 112) | Medium | Still used in legacy systems |
-| AES | 128/192/256 bits | Very fast | Current standard; used by governments |
-| Blowfish | 32--448 bits | Fast | Used in some older applications |
+| DES       | 56 bits                  | Fast      | Obsolete (broken by brute force)      |
+| 3DES      | 168 bits (effective 112) | Medium    | Still used in legacy systems          |
+| AES       | 128/192/256 bits         | Very fast | Current standard; used by governments |
+| Blowfish  | 32--448 bits             | Fast      | Used in some older applications       |
 
 **Asymmetric encryption algorithms:**
 
-| Algorithm | Key Length | Speed | Notes |
+| Algorithm | Key Length | Speed  | Notes                                          |
 | --------- | ---------- | ------ | ---------------------------------------------- |
-| RSA | 2048+ bits | Slow | Most widely used; based on prime factorisation |
-| ECC | 256+ bits | Faster | Smaller keys for equivalent security |
-| DSA | 2048+ bits | Slow | Used for digital signatures |
+| RSA       | 2048+ bits | Slow   | Most widely used; based on prime factorisation |
+| ECC       | 256+ bits  | Faster | Smaller keys for equivalent security           |
+| DSA       | 2048+ bits | Slow   | Used for digital signatures                    |
 
 **Key exchange problem:** Symmetric encryption is fast but requires secure key distribution.
 Asymmetric encryption solves distribution but is slow. The practical solution is **hybrid
@@ -149,53 +151,53 @@ Documents.
 
 1. The sender creates a hash of the message using a cryptographic hash function (e.g., SHA-256).
 2. The sender encrypts the hash with their **private key**. This encrypted hash is the digital
- signature.
+   signature.
 3. The message and digital signature are sent to the receiver.
 4. The receiver decrypts the signature with the sender's **public key** to obtain the hash.
 5. The receiver independently hashes the received message and compares the two hashes.
 6. If they match, the message is authentic and has not been tampered with.
 
-| Property | How Digital Signatures Provide It |
+| Property        | How Digital Signatures Provide It                                     |
 | --------------- | --------------------------------------------------------------------- |
-| Authentication | Only the holder of the private key can create the signature |
-| Integrity | Any change to the message changes the hash, breaking verification |
+| Authentication  | Only the holder of the private key can create the signature           |
+| Integrity       | Any change to the message changes the hash, breaking verification     |
 | Non-repudiation | The sender cannot deny having signed (only they have the private key) |
 
 ### Two-Factor Authentication (2FA)
 
 2FA requires two independent forms of identification before granting access.
 
-| Factor Type | Examples | Description |
+| Factor Type        | Examples                                   | Description       |
 | ------------------ | ------------------------------------------ | ----------------- |
-| Something you know | Password, PIN, security question | Knowledge factor |
-| Something you have | Phone, hardware token, smart card | Possession factor |
-| Something you are | Fingerprint, facial recognition, iris scan | Biometric factor |
+| Something you know | Password, PIN, security question           | Knowledge factor  |
+| Something you have | Phone, hardware token, smart card          | Possession factor |
+| Something you are  | Fingerprint, facial recognition, iris scan | Biometric factor  |
 
 2FA mitigates password compromise: even if an attacker obtains the password, they still need the
 Second factor (e.g., a time-based one-time password from a phone app) to gain access.
 
 ### Intrusion Detection Systems (IDS)
 
-| Type | Description |
+| Type                | Description                                                         |
 | ------------------- | ------------------------------------------------------------------- |
-| **NIDS** | Network-based IDS; monitors network traffic for suspicious patterns |
-| **HIDS** | Host-based IDS; monitors activity on a single device |
-| **Signature-based** | Matches traffic against a database of known attack patterns |
-| **Anomaly-based** | Establishes a baseline of normal behaviour and flags deviations |
+| **NIDS**            | Network-based IDS; monitors network traffic for suspicious patterns |
+| **HIDS**            | Host-based IDS; monitors activity on a single device                |
+| **Signature-based** | Matches traffic against a database of known attack patterns         |
+| **Anomaly-based**   | Establishes a baseline of normal behaviour and flags deviations     |
 
 ### Security Best Practices Summary
 
-| Measure | Purpose |
+| Measure                      | Purpose                                      |
 | ---------------------------- | -------------------------------------------- |
-| Strong passwords | Resist brute force and dictionary attacks |
-| 2FA | Add a second authentication factor |
-| Regular updates/patches | Fix known vulnerabilities |
-| Antivirus/anti-malware | Detect and remove malicious software |
-| Firewall | Filter network traffic |
-| Encryption | Protect data confidentiality |
-| Backups | Enable recovery from ransomware or data loss |
-| User education | Reduce human-factor vulnerabilities |
-| Principle of least privilege | Users have minimum necessary permissions |
+| Strong passwords             | Resist brute force and dictionary attacks    |
+| 2FA                          | Add a second authentication factor           |
+| Regular updates/patches      | Fix known vulnerabilities                    |
+| Antivirus/anti-malware       | Detect and remove malicious software         |
+| Firewall                     | Filter network traffic                       |
+| Encryption                   | Protect data confidentiality                 |
+| Backups                      | Enable recovery from ransomware or data loss |
+| User education               | Reduce human-factor vulnerabilities          |
+| Principle of least privilege | Users have minimum necessary permissions     |
 
 ---
 
@@ -208,21 +210,21 @@ Privacy Commissioner for Personal Data.
 
 **Six Data Protection Principles (DPPs):**
 
-| DPP | Principle | Requirement |
+| DPP | Principle              | Requirement                                                                                                |
 | --- | ---------------------- | ---------------------------------------------------------------------------------------------------------- |
-| 1 | Purpose and collection | Personal data must be collected for a lawful purpose; data subject should be informed of the purpose |
-| 2 | Accuracy and retention | Data must be accurate and kept no longer than necessary for the purpose |
-| 3 | Use | Data must only be used for the purpose stated at collection (or a directly related purpose) |
-| 4 | Security | Appropriate security measures must be taken to protect against unauthorised access, processing, or erasure |
-| 5 | Information openness | Data users must be open about their data handling practices |
-| 6 | Access | Data subjects have the right to request access to their personal data and request correction |
+| 1   | Purpose and collection | Personal data must be collected for a lawful purpose; data subject should be informed of the purpose       |
+| 2   | Accuracy and retention | Data must be accurate and kept no longer than necessary for the purpose                                    |
+| 3   | Use                    | Data must only be used for the purpose stated at collection (or a directly related purpose)                |
+| 4   | Security               | Appropriate security measures must be taken to protect against unauthorised access, processing, or erasure |
+| 5   | Information openness   | Data users must be open about their data handling practices                                                |
+| 6   | Access                 | Data subjects have the right to request access to their personal data and request correction               |
 
 **Key provisions:**
 
 - Data users must appoint a Data Protection Officer (DPO) .
 - Direct marketing use of personal data requires the data subject's **opt-in consent**.
 - Data users must notify the Privacy Commissioner of any data breach involving 500 or more data
- subjects.
+  subjects.
 - Penalties for non-compliance include fines up to HKD 1,000,000 and imprisonment.
 
 ### General Data Protection Regulation (GDPR) -- EU
@@ -230,22 +232,22 @@ Privacy Commissioner for Personal Data.
 GDPR applies to any organisation processing personal data of EU residents, regardless of where the
 Organisation is located.
 
-| Feature | PDPO (Hong Kong) | GDPR (EU) |
+| Feature          | PDPO (Hong Kong)             | GDPR (EU)                           |
 | ---------------- | ---------------------------- | ----------------------------------- |
-| Jurisdiction | Hong Kong only | Global (for EU residents' data) |
-| Consent model | Opt-out for direct marketing | Opt-in required (explicit consent) |
-| Data breach | Notify PCPD (500+ affected) | Notify authority within 72 hours |
-| Right to erasure | Not explicitly stated | Yes ("right to be forgotten") |
-| Data portability | Not explicitly stated | Yes |
-| Fines | Up to HKD 1M + imprisonment | Up to EUR 20M or 4% global turnover |
-| DPO requirement | Case-by-case | Mandatory for certain organisations |
+| Jurisdiction     | Hong Kong only               | Global (for EU residents' data)     |
+| Consent model    | Opt-out for direct marketing | Opt-in required (explicit consent)  |
+| Data breach      | Notify PCPD (500+ affected)  | Notify authority within 72 hours    |
+| Right to erasure | Not explicitly stated        | Yes ("right to be forgotten")       |
+| Data portability | Not explicitly stated        | Yes                                 |
+| Fines            | Up to HKD 1M + imprisonment  | Up to EUR 20M or 4% global turnover |
+| DPO requirement  | Case-by-case                 | Mandatory for certain organisations |
 
 ### Data Protection Principles -- Comparison
 
 Regardless of jurisdiction, all modern data protection laws share these core principles:
 
 1. **Lawfulness, fairness, and transparency:** Data must be processed legally and the data subject
- must be informed.
+   must be informed.
 2. **Purpose limitation:** Data collected for one purpose should not be used for unrelated purposes.
 3. **Data minimisation:** Collect only the minimum data necessary.
 4. **Accuracy:** Data must be kept accurate and up to date.
@@ -259,32 +261,32 @@ Regardless of jurisdiction, all modern data protection laws share these core pri
 
 ### Types of Intellectual Property
 
-| Type | Protects | Duration | Registration |
+| Type             | Protects                                                    | Duration                      | Registration                         |
 | ---------------- | ----------------------------------------------------------- | ----------------------------- | ------------------------------------ |
-| **Copyright** | Original creative works (text, software, music, art, film) | Creator's life + 50--70 years | Automatic (no registration required) |
-| **Patent** | Inventions (new, useful, non-obvious processes or products) | 20 years from filing | Required (examination) |
-| **Trademark** | Brand identifiers (names, logos, slogans, sounds) | Indefinite (if renewed) | Required |
-| **Trade secret** | Confidential business information (formulas, algorithms) | As long as kept secret | No registration |
+| **Copyright**    | Original creative works (text, software, music, art, film)  | Creator's life + 50--70 years | Automatic (no registration required) |
+| **Patent**       | Inventions (new, useful, non-obvious processes or products) | 20 years from filing          | Required (examination)               |
+| **Trademark**    | Brand identifiers (names, logos, slogans, sounds)           | Indefinite (if renewed)       | Required                             |
+| **Trade secret** | Confidential business information (formulas, algorithms)    | As long as kept secret        | No registration                      |
 
 ### Software Licensing
 
-| License Type | Description | Source Code | Redistribution | Examples |
+| License Type    | Description                                                | Source Code | Redistribution | Examples                       |
 | --------------- | ---------------------------------------------------------- | ----------- | -------------- | ------------------------------ |
-| **Proprietary** | All rights reserved by the owner; licence governs use | Closed | Prohibited | Windows, MS Office, Adobe |
-| **Freeware** | Free to use but may not be modified or redistributed | Closed | Prohibited | Skype (original), Adobe Reader |
-| **Shareware** | Free trial with limited features or time; payment required | Closed | Prohibited | WinZIP (trial) |
-| **Open source** | Source code is available; specific licence terms apply | Open | Varies | Linux, Apache, Python |
+| **Proprietary** | All rights reserved by the owner; licence governs use      | Closed      | Prohibited     | Windows, MS Office, Adobe      |
+| **Freeware**    | Free to use but may not be modified or redistributed       | Closed      | Prohibited     | Skype (original), Adobe Reader |
+| **Shareware**   | Free trial with limited features or time; payment required | Closed      | Prohibited     | WinZIP (trial)                 |
+| **Open source** | Source code is available; specific licence terms apply     | Open        | Varies         | Linux, Apache, Python          |
 
 ### Open Source Licenses
 
-| License | Copyleft | Commercial use | Modification | Distribution | Patent grant |
+| License                   | Copyleft | Commercial use | Modification                | Distribution     | Patent grant  |
 | ------------------------- | -------- | -------------- | --------------------------- | ---------------- | ------------- |
-| **GPL v3** | Strong | Yes | Yes, must release under GPL | Yes, same terms | Yes |
-| **LGPL** | Weak | Yes | Yes | Yes | Yes |
-| **MIT** | None | Yes | Yes | Yes, with notice | No explicit |
-| **Apache 2.0** | None | Yes | Yes | Yes, with notice | Yes, explicit |
-| **BSD** | Minimal | Yes | Yes | Yes, with notice | No explicit |
-| **Creative Commons (CC)** | Varies | Varies | Varies | Varies | No |
+| **GPL v3**                | Strong   | Yes            | Yes, must release under GPL | Yes, same terms  | Yes           |
+| **LGPL**                  | Weak     | Yes            | Yes                         | Yes              | Yes           |
+| **MIT**                   | None     | Yes            | Yes                         | Yes, with notice | No explicit   |
+| **Apache 2.0**            | None     | Yes            | Yes                         | Yes, with notice | Yes, explicit |
+| **BSD**                   | Minimal  | Yes            | Yes                         | Yes, with notice | No explicit   |
+| **Creative Commons (CC)** | Varies   | Varies         | Varies                      | Varies           | No            |
 
 **Copyleft (viral licensing):** GPL requires that any derivative work must also be licensed under
 GPL. This means if you modify GPL software and distribute it, you must release your modifications
@@ -294,15 +296,15 @@ Under the same GPL terms. MIT and Apache are permissive licenses with no such re
 
 Creative Commons (CC) licenses allow creators to specify how their work may be used by others.
 
-| License | Commercial Use | Modification | Requirement |
+| License     | Commercial Use | Modification | Requirement                              |
 | ----------- | -------------- | ------------ | ---------------------------------------- |
-| CC BY | Yes | Yes | Credit the author |
-| CC BY-SA | Yes | Yes | Credit + share under same license |
-| CC BY-NC | No | Yes | Credit + non-commercial only |
-| CC BY-ND | Yes | No | Credit + no derivatives |
-| CC BY-NC-SA | No | Yes | Credit + non-commercial + share alike |
-| CC BY-NC-ND | No | No | Credit + non-commercial + no derivatives |
-| CC0 | Yes | Yes | Public domain (no restrictions) |
+| CC BY       | Yes            | Yes          | Credit the author                        |
+| CC BY-SA    | Yes            | Yes          | Credit + share under same license        |
+| CC BY-NC    | No             | Yes          | Credit + non-commercial only             |
+| CC BY-ND    | Yes            | No           | Credit + no derivatives                  |
+| CC BY-NC-SA | No             | Yes          | Credit + non-commercial + share alike    |
+| CC BY-NC-ND | No             | No           | Credit + non-commercial + no derivatives |
+| CC0         | Yes            | Yes          | Public domain (no restrictions)          |
 
 ---
 
@@ -313,12 +315,12 @@ Creative Commons (CC) licenses allow creators to specify how their work may be u
 RSI is an umbrella term for conditions caused by repetitive movements, forceful exertions, and
 Sustained or awkward postures.
 
-| Condition | Cause | Symptoms |
+| Condition                  | Cause                                          | Symptoms                                |
 | -------------------------- | ---------------------------------------------- | --------------------------------------- |
-| **Carpal Tunnel Syndrome** | Pressure on median nerve in wrist | Numbness, tingling in fingers, weakness |
-| **Tendonitis** | Inflammation of tendons from repetitive motion | Pain, swelling, restricted movement |
-| **Tenosynovitis** | Inflammation of tendon sheath | Pain during movement, swelling |
-| **De Quervain's** | Repetitive thumb movement | Pain at base of thumb |
+| **Carpal Tunnel Syndrome** | Pressure on median nerve in wrist              | Numbness, tingling in fingers, weakness |
+| **Tendonitis**             | Inflammation of tendons from repetitive motion | Pain, swelling, restricted movement     |
+| **Tenosynovitis**          | Inflammation of tendon sheath                  | Pain during movement, swelling          |
+| **De Quervain's**          | Repetitive thumb movement                      | Pain at base of thumb                   |
 
 **Prevention strategies:**
 
@@ -350,24 +352,24 @@ Difficulty focusing.
 Ergonomics is the science of designing the workplace to fit the worker, reducing physical strain and
 Improving productivity.
 
-| Component | Recommended Setup |
+| Component    | Recommended Setup                                               |
 | ------------ | --------------------------------------------------------------- |
-| **Chair** | Adjustable height, lumbar support, feet flat on floor |
-| **Desk** | Elbow height when seated; keyboard at elbow level |
-| **Monitor** | Top of screen at or slightly below eye level, arm's length away |
-| **Keyboard** | At elbow height, wrists neutral, elbows at 90 degrees |
-| **Mouse** | Same level as keyboard, close enough to avoid reaching |
-| **Lighting** | Even ambient lighting, no direct glare on screen |
-| **Posture** | Back supported, shoulders relaxed, no slouching |
+| **Chair**    | Adjustable height, lumbar support, feet flat on floor           |
+| **Desk**     | Elbow height when seated; keyboard at elbow level               |
+| **Monitor**  | Top of screen at or slightly below eye level, arm's length away |
+| **Keyboard** | At elbow height, wrists neutral, elbows at 90 degrees           |
+| **Mouse**    | Same level as keyboard, close enough to avoid reaching          |
+| **Lighting** | Even ambient lighting, no direct glare on screen                |
+| **Posture**  | Back supported, shoulders relaxed, no slouching                 |
 
 ### Other Health Concerns
 
-| Concern | Description | Mitigation |
+| Concern            | Description                                                | Mitigation                                                    |
 | ------------------ | ---------------------------------------------------------- | ------------------------------------------------------------- |
-| **Back/neck pain** | Poor posture, unsuitable furniture, prolonged sitting | Ergonomic chair, standing desk, breaks |
-| **Radiation** | Concerns about EMF from screens and Wi-Fi devices | Evidence shows no significant harm at typical exposure levels |
-| **Stress** | Work overload, constant connectivity, information overload | Time management, digital detox, exercise |
-| **Obesity** | Sedentary lifestyle associated with heavy computer use | Regular physical activity, movement breaks |
+| **Back/neck pain** | Poor posture, unsuitable furniture, prolonged sitting      | Ergonomic chair, standing desk, breaks                        |
+| **Radiation**      | Concerns about EMF from screens and Wi-Fi devices          | Evidence shows no significant harm at typical exposure levels |
+| **Stress**         | Work overload, constant connectivity, information overload | Time management, digital detox, exercise                      |
+| **Obesity**        | Sedentary lifestyle associated with heavy computer use     | Regular physical activity, movement breaks                    |
 
 ---
 
@@ -380,44 +382,44 @@ Fastest-growing waste stream globally.
 
 **Composition of e-waste:**
 
-| Component | Examples | Environmental Hazard |
+| Component           | Examples                   | Environmental Hazard                             |
 | ------------------- | -------------------------- | ------------------------------------------------ |
-| **Heavy metals** | Lead, mercury, cadmium | Toxic to nervous systems, carcinogenic |
-| **Precious metals** | Gold, silver, palladium | Mining impact, but recoverable through recycling |
-| **Plastics** | PVC, ABS, flame retardants | Non-biodegradable, release toxins when burned |
-| **Glass** | CRT monitors, LCD panels | Lead in CRT glass; difficult to recycle |
-| **Batteries** | Lithium-ion, NiCd | Fire risk, heavy metal contamination |
+| **Heavy metals**    | Lead, mercury, cadmium     | Toxic to nervous systems, carcinogenic           |
+| **Precious metals** | Gold, silver, palladium    | Mining impact, but recoverable through recycling |
+| **Plastics**        | PVC, ABS, flame retardants | Non-biodegradable, release toxins when burned    |
+| **Glass**           | CRT monitors, LCD panels   | Lead in CRT glass; difficult to recycle          |
+| **Batteries**       | Lithium-ion, NiCd          | Fire risk, heavy metal contamination             |
 
 **Global e-waste statistics (approximate):**
 
 - Over 50 million metric tonnes generated annually worldwide.
 - Less than 20% is formally recycled.
 - A significant portion is shipped to developing countries for informal recycling, where workers
- (including children) are exposed to toxic substances.
+  (including children) are exposed to toxic substances.
 
 ### Energy Consumption
 
 ICT infrastructure consumes significant energy:
 
-| Component | Energy Consumption |
+| Component                  | Energy Consumption                      |
 | -------------------------- | --------------------------------------- |
-| **Data centres** | 1--2% of global electricity consumption |
-| **Network infrastructure** | Growing with internet traffic growth |
-| **Personal devices** | Increasing with more powerful devices |
-| **Bitcoin mining** | Comparable to some small countries |
+| **Data centres**           | 1--2% of global electricity consumption |
+| **Network infrastructure** | Growing with internet traffic growth    |
+| **Personal devices**       | Increasing with more powerful devices   |
+| **Bitcoin mining**         | Comparable to some small countries      |
 
 ### Green Computing Strategies
 
-| Strategy | Description | Impact |
+| Strategy                 | Description                                                    | Impact                                    |
 | ------------------------ | -------------------------------------------------------------- | ----------------------------------------- |
-| **Energy Star devices** | Hardware meeting energy efficiency standards | 20--50% energy reduction per device |
-| **Power management** | Sleep mode, auto-shutdown, screen dimming | Reduces idle power consumption |
-| **Virtualisation** | Running multiple virtual machines on fewer physical servers | Reduces hardware needs and energy use |
-| **Cloud computing** | Shared resources, economies of scale in data centres | More efficient than local servers |
-| **Proper recycling** | Certified e-waste recyclers, manufacturer take-back programmes | Recovers precious metals, prevents toxins |
-| **Extend device life** | Upgrade components instead of replacing entire systems | Reduces manufacturing and disposal impact |
-| **Renewable energy** | Powering data centres with solar, wind, or hydroelectric | Reduces carbon footprint |
-| **Responsible disposal** | Follow WEEE directive or local e-waste regulations | Prevents environmental contamination |
+| **Energy Star devices**  | Hardware meeting energy efficiency standards                   | 20--50% energy reduction per device       |
+| **Power management**     | Sleep mode, auto-shutdown, screen dimming                      | Reduces idle power consumption            |
+| **Virtualisation**       | Running multiple virtual machines on fewer physical servers    | Reduces hardware needs and energy use     |
+| **Cloud computing**      | Shared resources, economies of scale in data centres           | More efficient than local servers         |
+| **Proper recycling**     | Certified e-waste recyclers, manufacturer take-back programmes | Recovers precious metals, prevents toxins |
+| **Extend device life**   | Upgrade components instead of replacing entire systems         | Reduces manufacturing and disposal impact |
+| **Renewable energy**     | Powering data centres with solar, wind, or hydroelectric       | Reduces carbon footprint                  |
+| **Responsible disposal** | Follow WEEE directive or local e-waste regulations             | Prevents environmental contamination      |
 
 ---
 
@@ -428,31 +430,31 @@ Responsibly.
 
 ### Key Professional Bodies
 
-| Body | Jurisdiction | Focus |
+| Body                                                         | Jurisdiction       | Focus                   |
 | ------------------------------------------------------------ | ------------------ | ----------------------- |
-| **ACM** (Association for Computing Machinery) | International | Computing professionals |
-| **BCS** (British Computer Society) | UK / International | IT professionals |
-| **HKCS** (Hong Kong Computer Society) | Hong Kong | IT professionals in HK |
-| **IEEE** (Institute of Electrical and Electronics Engineers) | International | Engineering ethics |
+| **ACM** (Association for Computing Machinery)                | International      | Computing professionals |
+| **BCS** (British Computer Society)                           | UK / International | IT professionals        |
+| **HKCS** (Hong Kong Computer Society)                        | Hong Kong          | IT professionals in HK  |
+| **IEEE** (Institute of Electrical and Electronics Engineers) | International      | Engineering ethics      |
 
 ### Core Principles (ACM Code of Ethics)
 
 1. **Contribute to society and to human well-being:** Computing should benefit society.
- Professionals should consider the social impact of their work.
+   Professionals should consider the social impact of their work.
 2. **Avoid harm:** Avoid causing injury to others, including harm resulting from poor system design,
- security failures, or data breaches.
+   security failures, or data breaches.
 3. **Be honest and trustworthy:** Do not misrepresent qualifications, claim credit for others' work,
- or provide misleading information.
+   or provide misleading information.
 4. **Be fair and act to avoid discrimination:** Treat all people fairly regardless of race, gender,
- disability, religion, or other characteristics.
+   disability, religion, or other characteristics.
 5. **Respect the work required to produce new ideas, inventions, creative works, and computing
- artifacts:** Respect intellectual property rights; do not plagiarise or use others' work without
- attribution.
+   artifacts:** Respect intellectual property rights; do not plagiarise or use others' work without
+   attribution.
 6. **Respect privacy:** Protect personal data; collect only what is necessary; obtain informed
- consent.
+   consent.
 7. **Maintain confidentiality:** Respect the confidentiality of information entrusted to you.
 8. **Competence:** Only undertake work within your competence; maintain and develop professional
- skills.
+   skills.
 
 ### Professional Responsibility in Practice
 
@@ -470,78 +472,78 @@ A computing professional confronted with an ethical dilemma should:
 
 ### Arguments for Internet Censorship
 
-| Argument | Reasoning |
+| Argument                 | Reasoning                                                     |
 | ------------------------ | ------------------------------------------------------------- |
-| **Protect children** | Block access to inappropriate, violent, or harmful content |
-| **National security** | Prevent the spread of classified or sensitive information |
-| **Prevent crime** | Disrupt illegal activities (terrorism, drug trafficking) |
+| **Protect children**     | Block access to inappropriate, violent, or harmful content    |
+| **National security**    | Prevent the spread of classified or sensitive information     |
+| **Prevent crime**        | Disrupt illegal activities (terrorism, drug trafficking)      |
 | **Copyright protection** | Enforce intellectual property rights by blocking piracy sites |
-| **Public morality** | Maintain community standards and social harmony |
-| **Public health** | Combat misinformation (e.g., false medical claims) |
+| **Public morality**      | Maintain community standards and social harmony               |
+| **Public health**        | Combat misinformation (e.g., false medical claims)            |
 
 ### Arguments against Internet Censorship
 
-| Argument | Reasoning |
+| Argument                  | Reasoning                                                           |
 | ------------------------- | ------------------------------------------------------------------- |
-| **Freedom of expression** | Censorship violates the fundamental right to free speech |
-| **Right to information** | Citizens have the right to access information freely |
-| **Government abuse** | Censorship powers can be misused to suppress dissent and opposition |
-| **Over-blocking** | Filtering technologies often block legitimate content |
-| **Circumvention** | Technical measures (VPNs, proxies) make censorship ineffective |
-| **Economic impact** | Censorship can hinder innovation and economic growth |
+| **Freedom of expression** | Censorship violates the fundamental right to free speech            |
+| **Right to information**  | Citizens have the right to access information freely                |
+| **Government abuse**      | Censorship powers can be misused to suppress dissent and opposition |
+| **Over-blocking**         | Filtering technologies often block legitimate content               |
+| **Circumvention**         | Technical measures (VPNs, proxies) make censorship ineffective      |
+| **Economic impact**       | Censorship can hinder innovation and economic growth                |
 
 ### Methods of Internet Censorship
 
-| Method | Description |
+| Method                           | Description                                                      |
 | -------------------------------- | ---------------------------------------------------------------- |
-| **DNS filtering** | Block DNS queries for specific domain names |
-| **IP blocking** | Block traffic to/from specific IP addresses |
-| **URL filtering** | Block access to specific URLs based on keyword or category |
+| **DNS filtering**                | Block DNS queries for specific domain names                      |
+| **IP blocking**                  | Block traffic to/from specific IP addresses                      |
+| **URL filtering**                | Block access to specific URLs based on keyword or category       |
 | **Deep packet inspection (DPI)** | Examine packet contents to identify and block prohibited content |
-| **Throttling** | Reduce bandwidth for specific services or protocols |
-| **Firewall rules** | Block specific ports, protocols, or network ranges |
+| **Throttling**                   | Reduce bandwidth for specific services or protocols              |
+| **Firewall rules**               | Block specific ports, protocols, or network ranges               |
 
 ---
 
 ## Common Pitfalls
 
 1. **Virus vs Worm:** A virus requires a host file and user action to spread. A worm is standalone
- and spreads automatically over networks. Do not confuse the two.
+   and spreads automatically over networks. Do not confuse the two.
 
 2. **Phishing is not hacking:** Phishing tricks the user into voluntarily revealing information. It
- exploits human psychology, not technical vulnerabilities. Hacking involves unauthorised access
- through technical means.
+   exploits human psychology, not technical vulnerabilities. Hacking involves unauthorised access
+   through technical means.
 
 3. **Symmetric vs Asymmetric encryption:** Symmetric uses one shared key (fast); asymmetric uses a
- key pair (slow but solves key distribution). Most practical systems use both (hybrid encryption).
+   key pair (slow but solves key distribution). Most practical systems use both (hybrid encryption).
 
 4. **Digital signature vs Encryption:** A digital signature uses the sender's private key to sign
- (proving authenticity). Encryption uses the receiver's public key to protect confidentiality.
- These serve different purposes and use different keys.
+   (proving authenticity). Encryption uses the receiver's public key to protect confidentiality.
+   These serve different purposes and use different keys.
 
 5. **Copyright is automatic:** Unlike patents and trademarks, copyright does not require
- registration. Original work is automatically protected from the moment of creation. However,
- registration can strengthen legal claims.
+   registration. Original work is automatically protected from the moment of creation. However,
+   registration can strengthen legal claims.
 
 6. **Open source does not mean public domain:** Open source software has a license that specifies
- terms of use. Public domain works have no restrictions. GPL software, for example, has strict
- copyleft requirements.
+   terms of use. Public domain works have no restrictions. GPL software, for example, has strict
+   copyleft requirements.
 
 7. **PDPO vs GDPR scope:** PDPO applies only within Hong Kong. GDPR applies globally to any
- organisation processing EU residents' data. GDPR is generally stricter and imposes higher
- penalties.
+   organisation processing EU residents' data. GDPR is generally stricter and imposes higher
+   penalties.
 
 8. **Ergonomics is about prevention, not cure:** RSI, eye strain, and back pain are cumulative
- conditions that develop over time. Prevention (proper posture, breaks, equipment) is far more
- effective than treatment after symptoms appear.
+   conditions that develop over time. Prevention (proper posture, breaks, equipment) is far more
+   effective than treatment after symptoms appear.
 
 9. **E-waste contains valuable resources:** Discarded electronics contain significant quantities of
- gold, silver, copper, and rare earth elements. Proper recycling recovers these materials and
- reduces the need for mining.
+   gold, silver, copper, and rare earth elements. Proper recycling recovers these materials and
+   reduces the need for mining.
 
 10. **Professional codes are not laws:** Codes of conduct provide ethical guidelines, not legal
- requirements (though some principles may be enshrined in law). Violating a code of conduct may
- result in professional sanctions (loss of membership) but not necessarily legal penalties.
+    requirements (though some principles may be enshrined in law). Violating a code of conduct may
+    result in professional sanctions (loss of membership) but not necessarily legal penalties.
 
 ---
 
@@ -653,17 +655,17 @@ The company must comply with both frameworks for the respective data subjects.
 (c) Two measures:
 
 1. **Purpose notification:** When collecting student data, the school must inform students (and
- their parents/guardians for minors) of the specific purpose for which the data is being
- collected, who will have access, and how long it will be retained (DPP 1).
+   their parents/guardians for minors) of the specific purpose for which the data is being
+   collected, who will have access, and how long it will be retained (DPP 1).
 
 2. **Data security:** The school must implement appropriate technical and organisational measures to
- protect student data from unauthorised access, loss, or disclosure. This includes access controls
- (only authorised staff can view student records), encryption of sensitive data, secure storage,
- and staff training on data protection obligations (DPP 4).
+   protect student data from unauthorised access, loss, or disclosure. This includes access controls
+   (only authorised staff can view student records), encryption of sensitive data, secure storage,
+   and staff training on data protection obligations (DPP 4).
 
 3. **Access and correction:** The school must establish procedures for students (or parents) to
- request access to their personal data and to request corrections if the data is inaccurate (DPP
- 6).
+   request access to their personal data and to request corrections if the data is inaccurate (DPP
+   6).
 
 </details>
 
@@ -725,17 +727,17 @@ Answer:
 (a) Three threats and mitigations:
 
 1. **Ransomware:** Malware could encrypt patient records and demand payment. Mitigation: regular
- offline backups (3-2-1 rule), endpoint protection, network segmentation, staff training on
- phishing.
+   offline backups (3-2-1 rule), endpoint protection, network segmentation, staff training on
+   phishing.
 
 2. **Unauthorised access:** An employee could access records they are not authorised to view.
- Mitigation: role-based access control (RBAC) -- doctors can only access records of their own
- patients; administrative staff have limited access to scheduling data only. Audit logging of all
- access.
+   Mitigation: role-based access control (RBAC) -- doctors can only access records of their own
+   patients; administrative staff have limited access to scheduling data only. Audit logging of all
+   access.
 
 3. **Phishing:** An attacker could trick hospital staff into revealing login credentials via
- phishing emails. Mitigation: 2FA for all accounts, email filtering, regular security awareness
- training, simulated phishing exercises.
+   phishing emails. Mitigation: 2FA for all accounts, email filtering, regular security awareness
+   training, simulated phishing exercises.
 
 (b) Under DPP 6 (Access), the patient has the right to request access to their personal data held by
 The hospital. The hospital must comply with the request within 40 days. The hospital may charge a

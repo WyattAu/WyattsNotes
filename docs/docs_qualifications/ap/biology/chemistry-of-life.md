@@ -1,6 +1,8 @@
 ---
 title: Chemistry of Life
-description: "Chemistry of Life — Elements and Compounds (CED Unit 1); Essential Elements; Bonding in Biological Molecules; Water (CED Unit 1)."
+description:
+  'Chemistry of Life — Elements and Compounds (CED Unit 1); Essential Elements; Bonding in
+  Biological Molecules; Water (CED Unit 1).'
 date: 2026-04-14
 tags:
   - Biology
@@ -9,20 +11,21 @@ categories:
   - Biology
 slug: chemistry-of-life
 ---
+
 ## Elements and Compounds (CED Unit 1)
 
 ### Essential Elements
 
 The most common elements in living organisms:
 
-| Element | Symbol | Role |
+| Element    | Symbol | Role                                  |
 | ---------- | ------ | ------------------------------------- |
-| Carbon | C | Backbone of organic molecules |
-| Hydrogen | H | Component of water, organic molecules |
-| Oxygen | O | Component of water, electron acceptor |
-| Nitrogen | N | Amino acids, nucleotides |
-| Phosphorus | P | ATP, nucleic acids, phospholipids |
-| Sulfur | S | Amino acids (cysteine, methionine) |
+| Carbon     | C      | Backbone of organic molecules         |
+| Hydrogen   | H      | Component of water, organic molecules |
+| Oxygen     | O      | Component of water, electron acceptor |
+| Nitrogen   | N      | Amino acids, nucleotides              |
+| Phosphorus | P      | ATP, nucleic acids, phospholipids     |
+| Sulfur     | S      | Amino acids (cysteine, methionine)    |
 
 Trace elements (required in small amounts): Fe, Cu, Zn, Mn, I, Mo.
 
@@ -35,29 +38,29 @@ Regulates metabolism. Iodine deficiency causes goitre (enlarged thyroid gland).
 
 - **Covalent bonds:** Strong, stable bonds sharing electrons (C--C, C--H, C--O, C--N).
 - **Hydrogen bonds:** Weak, between H bonded to N/O/F and a lone pair on N/O/F. Critical for water
- properties, protein secondary structure, and DNA base pairing.
+  properties, protein secondary structure, and DNA base pairing.
 - **Ionic bonds:** Between charged groups (e.g., in salt bridges in proteins).
 - **Van der Waals forces:** Weak, transient attractions between molecules.
 
 **Comparison of bond strengths in biological systems:**
 
-| Bond Type | Strength (kJ/mol) | Biological Role |
+| Bond Type     | Strength (kJ/mol) | Biological Role                                      |
 | ------------- | ----------------- | ---------------------------------------------------- |
-| Covalent | 200--500 | Backbone of organic molecules |
-| Ionic | 100--400 | Salt bridges in proteins, bone mineral structure |
-| Hydrogen | 5--40 | DNA base pairing, protein secondary structure, water |
-| Van der Waals | 0.5--5 | Protein folding, lipid interactions |
+| Covalent      | 200--500          | Backbone of organic molecules                        |
+| Ionic         | 100--400          | Salt bridges in proteins, bone mineral structure     |
+| Hydrogen      | 5--40             | DNA base pairing, protein secondary structure, water |
+| Van der Waals | 0.5--5            | Protein folding, lipid interactions                  |
 
 ### Water (CED Unit 1)
 
 Water is essential for life due to its unique properties:
 
 1. **Cohesion and adhesion:** H-bonds between water molecules (cohesion) and between water and other
- surfaces (adhesion). Enables capillary action and transpiration in plants.
+   surfaces (adhesion). Enables capillary action and transpiration in plants.
 2. **High specific heat:** $4.18 \mathrm{ J/(g{}\cdot^\circ\mathrm{C){}$. Moderates temperature
- changes.
+   changes.
 3. **High heat of vaporization:** Requires significant energy to evaporate. Provides cooling through
- sweating.
+   sweating.
 4. **Lower density as a solid:** Ice floats, insulating aquatic environments.
 5. **Universal solvent:** Polar molecules and ions dissolve .
 6. **High surface tension:** Due to cohesion at the air-water interface.
@@ -65,13 +68,13 @@ Water is essential for life due to its unique properties:
 **Worked Example: How water properties support life.**
 
 - **Cohesion:** Water molecules stick together due to hydrogen bonding. This allows water to be
- pulled up the xylem in plants (transpiration stream) as a continuous column.
+  pulled up the xylem in plants (transpiration stream) as a continuous column.
 - **High specific heat:** Oceans absorb and release large amounts of heat with minimal temperature
- change, creating stable climates near coastlines.
+  change, creating stable climates near coastlines.
 - **Ice floats:** In winter, ice forms on the surface of lakes, insulating the water below and
- allowing aquatic organisms to survive.
+  allowing aquatic organisms to survive.
 - **Universal solvent:** Many biochemical reactions occur in aqueous solution because water
- dissolves ions, sugars, amino acids, and other polar molecules.
+  dissolves ions, sugars, amino acids, and other polar molecules.
 
 ### pH and Buffers
 
@@ -79,11 +82,11 @@ $$
 \mathrm{pH{} = -\log[\mathrm{H{}^+]
 $$
 
-| pH | Classification |
+| pH      | Classification |
 | ------- | -------------- |
-| $\lt 7$ | Acidic |
-| $7$ | Neutral |
-| $\gt 7$ | Basic |
+| $\lt 7$ | Acidic         |
+| $7$     | Neutral        |
+| $\gt 7$ | Basic          |
 
 **Buffers** resist pH changes. The carbonic acid/bicarbonate buffer system in blood:
 
@@ -127,21 +130,21 @@ $\mathrm{CO{}_2$ is removed by increased breathing rate. Blood pH is maintained 
 **Polymerization:** Dehydration synthesis (condensation) forms glycosidic bonds. Hydrolysis breaks
 Them.
 
-| Type | Structure | Function | Examples |
+| Type           | Structure            | Function                           | Examples                    |
 | -------------- | -------------------- | ---------------------------------- | --------------------------- |
-| Monosaccharide | Single sugar ring | Energy source, building block | Glucose, fructose |
-| Disaccharide | Two monosaccharides | Energy source | Sucrose, lactose, maltose |
+| Monosaccharide | Single sugar ring    | Energy source, building block      | Glucose, fructose           |
+| Disaccharide   | Two monosaccharides  | Energy source                      | Sucrose, lactose, maltose   |
 | Polysaccharide | Long chain of sugars | Energy storage, structural support | Starch, glycogen, cellulose |
 
 **Key polysaccharides:**
 
 - **Starch:** Energy storage in plants. Amylose (unbranched) + amylopectin (branched).
- $\alpha$-glycosidic linkages (digestible).
+  $\alpha$-glycosidic linkages (digestible).
 - **Glycogen:** Energy storage in animals. Highly branched. $\alpha$-glycosidic linkages.
 - **Cellulose:** Structural in plant cell walls. Unbranched. $\beta$-glycosidic linkages
- (indigestible by most animals).
+  (indigestible by most animals).
 - **Chitin:** Structural in arthropod exoskeletons and fungal cell walls. Modified glucose with
- nitrogen-containing groups.
+  nitrogen-containing groups.
 
 **Worked Example: Alpha vs. Beta linkages.**
 
@@ -160,19 +163,19 @@ Indigestible by humans.
 
 Lipids are **not** true polymers but are hydrophobic organic molecules.
 
-| Type | Structure | Function |
+| Type          | Structure                            | Function                   |
 | ------------- | ------------------------------------ | -------------------------- |
-| Triglycerides | Glycerol + 3 fatty acids | Energy storage, insulation |
-| Phospholipids | Glycerol + 2 fatty acids + phosphate | Cell membrane structure |
-| Steroids | Four fused rings | Hormones, cholesterol |
-| Waxes | Long-chain alcohol + fatty acid | Waterproof coatings |
+| Triglycerides | Glycerol + 3 fatty acids             | Energy storage, insulation |
+| Phospholipids | Glycerol + 2 fatty acids + phosphate | Cell membrane structure    |
+| Steroids      | Four fused rings                     | Hormones, cholesterol      |
+| Waxes         | Long-chain alcohol + fatty acid      | Waterproof coatings        |
 
 **Saturated vs unsaturated fatty acids:**
 
 - **Saturated:** No double bonds, straight chains, solid at room temperature.
 - **Unsaturated:** One or more double bonds, kinked chains, liquid at room temperature.
 - **Trans fats:** Unsaturated fats with hydrogens on opposite sides of double bonds. Associated with
- cardiovascular disease.
+  cardiovascular disease.
 
 **Phospholipids:** Amphipathic -- hydrophilic phosphate head and hydrophobic fatty acid tails. Form
 The bilayer of cell membranes.
@@ -206,10 +209,12 @@ Group of one amino acid and the amino group of another.
 
 1. **Primary:** Linear sequence of amino acids. Determined by the gene.
 2. **Secondary:** Local folding patterns stabilized by hydrogen bonds.
- - $\alpha$-helix: right-handed coiled structure.
- - $\beta$-pleated sheet: extended, zigzag structure.
+
+- $\alpha$-helix: right-handed coiled structure.
+- $\beta$-pleated sheet: extended, zigzag structure.
+
 3. **Tertiary:** Overall 3D shape of a single polypeptide. Stabilized by hydrogen bonds, disulfide
- bridges, ionic interactions, and hydrophobic interactions.
+   bridges, ionic interactions, and hydrophobic interactions.
 4. **Quaternary:** Assembly of multiple polypeptide subunits (e.g., hemoglobin has 4 subunits).
 
 **Denaturation:** Loss of protein structure (secondary, tertiary, quaternary) due to heat, pH
@@ -277,9 +282,9 @@ $$
 
 1. **Temperature:** Rate increases until the optimal temperature, then denaturation occurs.
 2. **pH:** Each enzyme has an optimal pH. Pepsin (stomach) $\approx 2$; trypsin (small intestine)
- $\approx 8$.
+   $\approx 8$.
 3. **Substrate concentration:** Rate increases with [S] until all active sites are saturated
- ($V_{\max}$ is reached). Described by the Michaelis-Menten equation.
+   ($V_{\max}$ is reached). Described by the Michaelis-Menten equation.
 4. **Enzyme concentration:** Rate is proportional to [E] when substrate is not limiting.
 
 ### Michaelis-Menten Kinetics
@@ -297,12 +302,12 @@ An enzyme has the following rates at different substrate concentrations:
 
 | [S] ($\mu$M) | v ($\mu$Mol/min) |
 | ------------ | ---------------- |
-| 2 | 5.0 |
-| 5 | 10.0 |
-| 10 | 14.3 |
-| 20 | 16.7 |
-| 50 | 18.9 |
-| 100 | 19.6 |
+| 2            | 5.0              |
+| 5            | 10.0             |
+| 10           | 14.3             |
+| 20           | 16.7             |
+| 50           | 18.9             |
+| 100          | 19.6             |
 
 At very high [S], $v$ approaches $V_{\max} \approx 20$ $\mu$Mol/min.
 
@@ -313,12 +318,12 @@ Lower $K_m$ would indicate a higher affinity between enzyme and substrate.
 
 ### Enzyme Inhibition
 
-| Type | Binding Site | Reversibility | Effect on $K_m$ | Effect on $V_{\max}$ |
+| Type           | Binding Site         | Reversibility | Effect on $K_m$ | Effect on $V_{\max}$ |
 | -------------- | -------------------- | ------------- | --------------- | -------------------- |
-| Competitive | Active site | Reversible | Increases | No change |
-| Noncompetitive | Allosteric site | Reversible | No change | Decreases |
-| Uncompetitive | ES complex only | Reversible | Decreases | Decreases |
-| Irreversible | Active or allosteric | Irreversible | -- | Decreases |
+| Competitive    | Active site          | Reversible    | Increases       | No change            |
+| Noncompetitive | Allosteric site      | Reversible    | No change       | Decreases            |
+| Uncompetitive  | ES complex only      | Reversible    | Decreases       | Decreases            |
+| Irreversible   | Active or allosteric | Irreversible  | --              | Decreases            |
 
 **Worked Example: Why competitive inhibition increases $K_m$ but not $V_{\max}$.**
 
@@ -344,10 +349,10 @@ $$
 \Delta G = \Delta H - T\Delta S
 $$
 
-| Type | $\Delta G$ | Description |
+| Type       | $\Delta G$ | Description                           |
 | ---------- | ---------- | ------------------------------------- |
-| Exergonic | $\lt 0$ | Spontaneous, releases energy |
-| Endergonic | $\gt 0$ | Nonspontaneous, requires energy input |
+| Exergonic  | $\lt 0$    | Spontaneous, releases energy          |
+| Endergonic | $\gt 0$    | Nonspontaneous, requires energy input |
 
 ### ATP: The Energy Currency
 
@@ -380,91 +385,91 @@ Energy from ATP hydrolysis.
 ## Common Pitfalls
 
 1. **Confusing dehydration synthesis with hydrolysis.** Dehydration removes water to build polymers;
- hydrolysis adds water to break them.
+   hydrolysis adds water to break them.
 2. **Confusing $\alpha$ and $\beta$ glycosidic linkages.** $\alpha$ linkages are found in starch
- (digestible); $\beta$ linkages are found in cellulose (not digestible by humans).
+   (digestible); $\beta$ linkages are found in cellulose (not digestible by humans).
 3. **Thinking all lipids are fats.** Steroids and phospholipids are also lipids.
 4. **Confusing saturated and unsaturated fats.** Saturated fats have no double bonds and are solid;
- unsaturated fats have double bonds and are liquid.
+   unsaturated fats have double bonds and are liquid.
 5. **Misidentifying enzyme inhibition effects.** Competitive inhibition increases $K_m$ but does not
- change $V_{\max}$; noncompetitive decreases $V_{\max}$ but does not change $K_m$.
+   change $V_{\max}$; noncompetitive decreases $V_{\max}$ but does not change $K_m$.
 6. **Confusing DNA and RNA.** DNA has deoxyribose and thymine; RNA has ribose and uracil.
 7. **Thinking enzymes change $\Delta G$.** Enzymes only lower activation energy; they do not change
- the thermodynamics of the reaction.
+   the thermodynamics of the reaction.
 8. **Confusing purines and pyrimidines.** Purines (A, G) have two rings; pyrimidines (C, T, U) have
- one ring. "Pure As Gold" for purines.
+   one ring. "Pure As Gold" for purines.
 9. **Forgetting that denaturation only affects secondary, tertiary, and quaternary structure.** The
- primary structure (amino acid sequence) is not changed by denaturation.
-10. **Confusing exergonic and endergonic.** Exergonic: $\Delta G \lt 0$Releases energy.
- Endergonic: $\Delta G \gt 0$Requires energy.
+   primary structure (amino acid sequence) is not changed by denaturation.
+10. **Confusing exergonic and endergonic.** Exergonic: $\Delta G \lt 0$Releases energy. Endergonic:
+    $\Delta G \gt 0$Requires energy.
 
 ## Practice Questions
 
 1. Compare and contrast starch, glycogen, and cellulose in terms of structure and function.
 
 2. Explain how the properties of water (cohesion, adhesion, high specific heat) contribute to the
- ability of plants to transport water from roots to leaves.
+   ability of plants to transport water from roots to leaves.
 
 3. Draw the general structure of an amino acid and identify the components that differ among the 20
- common amino acids.
+   common amino acids.
 
 4. Describe the four levels of protein structure and the types of bonds that stabilize each level.
 
 5. Explain why a competitive inhibitor increases $K_m$ but does not change $V_{\max}$While a
- noncompetitive inhibitor decreases $V_{\max}$ but does not change $K_m$.
+   noncompetitive inhibitor decreases $V_{\max}$ but does not change $K_m$.
 
 6. Compare DNA and RNA in terms of structure, bases, sugar, and function.
 
 7. Explain how ATP hydrolysis can drive an endergonic reaction.
 
 8. A researcher observes that an enzyme has maximum activity at pH 7.0 and $37^\circ\mathrm{C{}$.
- Explain what happens to the reaction rate if the pH is changed to 10.0 and why.
+   Explain what happens to the reaction rate if the pH is changed to 10.0 and why.
 
 9. Calculate the pH of a solution with $[\mathrm{H{}^+] = 2.5 \times 10^{-3}$ M.
 
 10. A DNA molecule is found to be 24% cytosine. Using Chargaff's rules, determine the percentage of
- all four bases.
+    all four bases.
 
 11. Explain why ice is less dense than liquid water and describe the ecological significance of this
- property.
+    property.
 
 12. Describe the induced-fit model of enzyme action and explain how it differs from the lock-and-key
- model.
+    model.
 
 13. A triglyceride is hydrolysed. Name the products and describe the chemical bonds that are broken.
 
 14. Explain how the buffer system in blood maintains pH close to 7.4 during exercise.
 
 15. Calculate the $\Delta G$ of a coupled reaction where the endergonic step has $\Delta G = +17$
- kJ/mol and the exergonic step (ATP hydrolysis) has $\Delta G = -30.5$ kJ/mol. Is the overall
- reaction spontaneous?
+    kJ/mol and the exergonic step (ATP hydrolysis) has $\Delta G = -30.5$ kJ/mol. Is the overall
+    reaction spontaneous?
 
 16. Explain why phospholipids spontaneously form bilayers in water.
 
 17. Describe the role of chaperone proteins in protein folding and explain why their function is
- important.
+    important.
 
 18. Compare the structure and function of DNA polymerase and RNA polymerase.
 
 19. Explain why enzymes are sensitive to pH changes, with reference to the effect on amino acid side
- chains.
+    chains.
 
 20. A student measures enzyme activity at different temperatures and finds that the rate peaks at
- $40^\circ\mathrm{C{}$ and drops to zero at $60^\circ\mathrm{C{}$. Explain these results with
- reference to protein structure.
+    $40^\circ\mathrm{C{}$ and drops to zero at $60^\circ\mathrm{C{}$. Explain these results with
+    reference to protein structure.
 
 ## Review: Macromolecule Identification Tests
 
 Several biochemical tests are used to identify the presence of specific macromolecules in samples.
 These are commonly tested on the AP exam.
 
-| Test | Reagent | Positive Result | Macromolecule Detected |
+| Test            | Reagent             | Positive Result                     | Macromolecule Detected |
 | --------------- | ------------------- | ----------------------------------- | ---------------------- |
-| Benedict's test | Benedict's solution | Brick-red precipitate (when heated) | Reducing sugars |
-| Iodine test | Iodine solution | Blue-black colour | Starch |
-| Biuret test | Biuret reagent | Violet/purple colour | Protein |
-| Emulsion test | Ethanol | Cloudy white emulsion layer | Lipids |
-| Sudan III test | Sudan III stain | Red-stained oil layer | Lipids |
+| Benedict's test | Benedict's solution | Brick-red precipitate (when heated) | Reducing sugars        |
+| Iodine test     | Iodine solution     | Blue-black colour                   | Starch                 |
+| Biuret test     | Biuret reagent      | Violet/purple colour                | Protein                |
+| Emulsion test   | Ethanol             | Cloudy white emulsion layer         | Lipids                 |
+| Sudan III test  | Sudan III stain     | Red-stained oil layer               | Lipids                 |
 
 **Worked Example: Designing an identification experiment.**
 
@@ -473,7 +478,7 @@ Which contains protein, and which contains glucose.
 
 1. Add iodine solution to each: the one that turns blue-black contains starch.
 2. Add Benedict's solution to each of the remaining two and heat: the one that produces a brick-red
- precipitate contains glucose.
+   precipitate contains glucose.
 3. Add Biuret reagent to the last remaining solution: a violet colour indicates protein.
 
 **Worked Example: Interpreting Benedict's test results.**
@@ -527,12 +532,11 @@ Geometry), allowing it to create complex, diverse structures. Key concepts:
 - Carbon chains can be straight, branched, or ring-shaped.
 - Carbon can bond with many other elements (H, O, N, P, S).
 - **Isomers** are molecules with the same molecular formula but different structures:
- - **Structural isomers:** Different arrangement of the carbon skeleton (e.g., butane vs
- isobutane).
- - **Geometric isomers (cis-trans):** Different spatial arrangement around a double bond.
- - **Enantiomers:** Mirror images of each other (chirality). Enantiomers can have very different
- biological activities (e.g., one enantiomer of thalidomide is therapeutic, the other is
- teratogenic).
+- **Structural isomers:** Different arrangement of the carbon skeleton (e.g., butane vs isobutane).
+- **Geometric isomers (cis-trans):** Different spatial arrangement around a double bond.
+- **Enantiomers:** Mirror images of each other (chirality). Enantiomers can have very different
+  biological activities (e.g., one enantiomer of thalidomide is therapeutic, the other is
+  teratogenic).
 
 **Worked Example: Why carbon's bonding versatility matters.**
 
@@ -547,14 +551,14 @@ Their functions.
 **DNA replication (semiconservative):**
 
 1. **Initiation:** Helicase unwinds the double helix at the origin of replication. Single-strand
- binding proteins prevent the strands from re-annealing. Topoisomerase relieves tension ahead of
- the replication fork.
+   binding proteins prevent the strands from re-annealing. Topoisomerase relieves tension ahead of
+   the replication fork.
 2. **Elongation:** DNA polymerase III adds nucleotides to the 3' end of the growing strand (DNA
- synthesis is always 5' to 3'). The leading strand is synthesised continuously; the lagging strand
- is synthesised in short Okazaki fragments, which are later joined by DNA ligase. RNA primase
- synthesises a short RNA primer to initiate each fragment.
+   synthesis is always 5' to 3'). The leading strand is synthesised continuously; the lagging strand
+   is synthesised in short Okazaki fragments, which are later joined by DNA ligase. RNA primase
+   synthesises a short RNA primer to initiate each fragment.
 3. **Termination:** The two daughter DNA molecules each contain one original strand and one new
- strand (semiconservative replication).
+   strand (semiconservative replication).
 
 **Evidence for semiconservative replication:** The Meselson-Stahl experiment (1958) used heavy
 Nitrogen (${}^{15}\mathrm{N{}$) to label DNA. After one round of replication in ${}^{14}\mathrm{N{}$
@@ -573,20 +577,20 @@ Effect.
 **Saturated vs unsaturated fatty acids:**
 
 - **Saturated fatty acids:** No carbon-carbon double bonds. The hydrocarbon chains are straight and
- can pack tightly together. This makes the membrane more rigid. Found primarily in animal fats.
+  can pack tightly together. This makes the membrane more rigid. Found primarily in animal fats.
 - **Unsaturated fatty acids:** One or more carbon-carbon double bonds, creating kinks in the chain.
- These kinks prevent tight packing, increasing membrane fluidity. Found primarily in plant oils.
+  These kinks prevent tight packing, increasing membrane fluidity. Found primarily in plant oils.
 - **Trans fats:** Artificially hydrogenated unsaturated fats. The hydrogenation process straightens
- the kinks, making them behave like saturated fats. Associated with increased risk of
- cardiovascular disease because they raise LDL cholesterol and lower HDL cholesterol.
+  the kinks, making them behave like saturated fats. Associated with increased risk of
+  cardiovascular disease because they raise LDL cholesterol and lower HDL cholesterol.
 
 **Cholesterol in the membrane:** Cholesterol is a steroid molecule embedded in the hydrophobic
 Interior of the phospholipid bilayer. It acts as a fluidity buffer:
 
 - At high temperatures: cholesterol restrains the movement of phospholipids, reducing fluidity and
- preventing the membrane from becoming too permeable.
+  preventing the membrane from becoming too permeable.
 - At low temperatures: cholesterol prevents tight packing of phospholipids, maintaining fluidity and
- preventing the membrane from solidifying.
+  preventing the membrane from solidifying.
 
 **Worked Example: Why phospholipids form bilayers but not micelles in cell membranes.**
 
@@ -599,20 +603,20 @@ Layers, which is essential for the function of cell membranes.
 ## Review: Carbohydrate Chemistry in Detail
 
 **Monosaccharides:** The simplest carbohydrates, with the general formula
-$\mathrm{C{}_n(\mathrm{H{}_2\mathrm{O{})_n$. Glucose ($\mathrm{C{}_6\mathrm{H{}_{12}\mathrm{O{}_6$) exists
-In two isomeric forms: alpha ($\alpha$) and beta ($\beta$) glucose. The difference is the position
-Of the hydroxyl (-OH) group on carbon 1. In $\alpha$-glucose, the -OH is below the plane of the
-Ring; in $\beta$-glucose, it is above. This apparently small difference has enormous consequences:
-$\alpha$-glucose forms starch (digestible) and glycogen, while $\beta$-glucose forms cellulose
-(indigestible by most animals).
+$\mathrm{C{}_n(\mathrm{H{}_2\mathrm{O{})_n$. Glucose ($\mathrm{C{}_6\mathrm{H{}_{12}\mathrm{O{}_6$)
+exists In two isomeric forms: alpha ($\alpha$) and beta ($\beta$) glucose. The difference is the
+position Of the hydroxyl (-OH) group on carbon 1. In $\alpha$-glucose, the -OH is below the plane of
+the Ring; in $\beta$-glucose, it is above. This apparently small difference has enormous
+consequences: $\alpha$-glucose forms starch (digestible) and glycogen, while $\beta$-glucose forms
+cellulose (indigestible by most animals).
 
 **Disaccharides:** Formed by condensation reactions between two monosaccharides:
 
-| Disaccharide | Component monosaccharides | Bond type | Found in |
+| Disaccharide | Component monosaccharides | Bond type    | Found in          |
 | ------------ | ------------------------- | ------------ | ----------------- |
-| Maltose | Glucose + glucose | $\alpha$-1,4 | Germinating seeds |
-| Sucrose | Glucose + fructose | $\alpha$-1,2 | Sugar cane, beet |
-| Lactose | Galactose + glucose | $\beta$-1,4 | Milk |
+| Maltose      | Glucose + glucose         | $\alpha$-1,4 | Germinating seeds |
+| Sucrose      | Glucose + fructose        | $\alpha$-1,2 | Sugar cane, beet  |
+| Lactose      | Galactose + glucose       | $\beta$-1,4  | Milk              |
 
 **Why lactose intolerance occurs:** Lactase, the enzyme that hydrolyses lactose into glucose and
 Galactose, is produced in the small intestine of infants. In many populations, lactase production
@@ -641,8 +645,8 @@ Sugars and give a positive Benedict's test.
 Histidine, isoleucine, leucine, lysine, methionine, phenylalanine, threonine, tryptophan, valine).
 
 **Zwitterions:** At physiological pH (approximately 7.4), amino acids exist as zwitterions --
-Molecules with both a positive charge (on the amino group, $-\mathrm{NH{}_3^+$) and a negative charge
-(on the carboxyl group, $-\mathrm{COO{}^-$). The overall charge is neutral.
+Molecules with both a positive charge (on the amino group, $-\mathrm{NH{}_3^+$) and a negative
+charge (on the carboxyl group, $-\mathrm{COO{}^-$). The overall charge is neutral.
 
 **Peptide bond formation:** A condensation reaction between the carboxyl group of one amino acid and
 The amino group of another forms a peptide bond (covalent bond) and releases a water molecule. A
@@ -677,13 +681,13 @@ Threonine deaminase, the first enzyme in the pathway.
 **Variables to control:**
 
 - **Temperature:** Use a water bath to maintain a constant temperature. Allow time for the enzyme
- and substrate to reach the bath temperature before starting the reaction.
+  and substrate to reach the bath temperature before starting the reaction.
 - **pH:** Use a buffer solution to maintain a constant pH.
 - **Substrate concentration:** Prepare solutions of known concentration using a volumetric flask.
 - **Enzyme concentration:** Use the same volume and concentration of enzyme solution in each trial.
 - **Volume:** Use the same total volume of reaction mixture in each trial.
 - **Timing:** Start the clock at the moment of mixing and stop it at a consistent end point (e.g.,
- colour change, gas production).
+  colour change, gas production).
 
 **Reliability:** Repeat each measurement at least three times and calculate a mean. Identify and
 Exclude anomalous results (those that are inconsistent with the other repeats).
@@ -698,11 +702,11 @@ Amounts of heat with relatively small changes in temperature. This property has 
 Consequences:
 
 - **Oceans moderate coastal climates:** Because water heats and cools slowly, coastal areas have
- smaller temperature fluctuations than inland areas at the same latitude.
-- **Organisms maintain stable internal temperatures:** The high water content of organisms
- ( 60--90%) contributes to thermal stability.
+  smaller temperature fluctuations than inland areas at the same latitude.
+- **Organisms maintain stable internal temperatures:** The high water content of organisms (
+  60--90%) contributes to thermal stability.
 - **Evaporative cooling:** Water's high heat of vaporisation ($2260$ J/g at $100\degree$C) means
- that sweating (in mammals) and transpiration (in plants) are very effective cooling mechanisms.
+  that sweating (in mammals) and transpiration (in plants) are very effective cooling mechanisms.
 
 **Worked Example:** A person running on a hot day produces approximately 500 mL of sweat per hour.
 To evaporate 500 mL of water requires approximately $500 \times 2260 = 1,130,000$ J (1130 kJ) of
@@ -714,14 +718,14 @@ Preventing overheating.
 Functional groups are specific groups of atoms within molecules that determine the characteristics
 Of the molecule and how it reacts.
 
-| Functional Group | Structure | Found in | Properties |
-| ---------------- | --------- | ----------------------------- | ---------------------------------------- |
-| Hydroxyl (-OH) | -OH | Alcohols, sugars, amino acids | Polar; forms hydrogen bonds |
-| Carbonyl (C=O) | C=O | Aldehydes, ketones, sugars | Polar; reactive |
-| Carboxyl (-COOH) | -COOH | Amino acids, fatty acids | Acts as an acid; releases $\mathrm{H{}^+$ |
-| Amino (-NH$_2$) | -NH$_2$ | Amino acids | Acts as a base; accepts $\mathrm{H{}^+$ |
-| Phosphate | -PO$_4$ | ATP, DNA, phospholipids | Negative charge; energy transfer |
-| Sulfhydryl (-SH) | -SH | Cysteine (amino acid) | Forms disulfide bridges in proteins |
+| Functional Group | Structure | Found in                      | Properties                                |
+| ---------------- | --------- | ----------------------------- | ----------------------------------------- |
+| Hydroxyl (-OH)   | -OH       | Alcohols, sugars, amino acids | Polar; forms hydrogen bonds               |
+| Carbonyl (C=O)   | C=O       | Aldehydes, ketones, sugars    | Polar; reactive                           |
+| Carboxyl (-COOH) | -COOH     | Amino acids, fatty acids      | Acts as an acid; releases $\mathrm{H{}^+$ |
+| Amino (-NH$_2$)  | -NH$_2$   | Amino acids                   | Acts as a base; accepts $\mathrm{H{}^+$   |
+| Phosphate        | -PO$_4$   | ATP, DNA, phospholipids       | Negative charge; energy transfer          |
+| Sulfhydryl (-SH) | -SH       | Cysteine (amino acid)         | Forms disulfide bridges in proteins       |
 
 **Worked Example:** The role of functional groups in amino acid behaviour.
 

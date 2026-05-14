@@ -1,10 +1,12 @@
 ---
 title: JETS
 tags:
-- CS
+  - CS
 slug: jets
 draft: false
-description: "Rigorous IB computer science notes covering JETS. Includes definitions, derivations, worked examples, and exam-style problems."
+description:
+  'Rigorous IB computer science notes covering JETS. Includes definitions, derivations, worked
+  examples, and exam-style problems.'
 ---
 
 # Java Examination Tool Sebset (JETS)
@@ -16,12 +18,12 @@ Students to present OOP concepts
 
 ### Styles
 
-| Token | Conventions |
+| Token               | Conventions        |
 | ------------------- | ------------------ |
-| Classes identifier | `CapitalCamelCase` |
-| Variable identifier | `camelCase` |
-| Method identifier | `camelCase` |
-| Constant identifier | `UPPER_CASE` |
+| Classes identifier  | `CapitalCamelCase` |
+| Variable identifier | `camelCase`        |
+| Method identifier   | `camelCase`        |
+| Constant identifier | `UPPER_CASE`       |
 
 ### Ordering
 
@@ -31,22 +33,22 @@ Students to present OOP concepts
 ## Operators Permitted
 
 - Arithmetic
- - `+`
- - `-`
- - `*`
- - `/`
- - `%`
+- `+`
+- `-`
+- `*`
+- `/`
+- `%`
 - Relational
- - `==`
- - `!=`
- - `>`
- - `<`
- - `$\ge$`
- - `$\le$`
+- `==`
+- `!=`
+- `>`
+- `<`
+- `$\ge$`
+- `$\le$`
 - Boolean
- - `!`
- - `&&`
- - `||`
+- `!`
+- `&&`
+- `||`
 
 ## Types
 
@@ -203,7 +205,7 @@ class Dog extends Animal {
 - `super()` calls the parent class constructor.
 - The subclass inherits all `public` and `protected` members of the superclass.
 - `private` members are not directly accessible but can be accessed through inherited public
- methods.
+  methods.
 
 ### Polymorphism
 
@@ -307,16 +309,16 @@ Programs. IB exams frequently include UML diagrams and ask you to interpret or c
 
 ### Key UML Notation
 
-| Element | Symbol | Meaning |
+| Element         | Symbol                                          | Meaning                                    |
 | :-------------- | :---------------------------------------------- | :----------------------------------------- |
-| Class | Rectangle with three sections | Class name, attributes, methods |
-| `-` (private) | Minus sign before attribute/method | Only accessible within the class |
-| `+` (public) | Plus sign before attribute/method | Accessible from any class |
-| `#` (protected) | Hash sign before attribute/method | Accessible within the class and subclasses |
-| Inheritance | Solid line with hollow arrow pointing to parent | "Is-a" relationship |
-| Association | Solid line with arrow | "Has-a" relationship |
-| Aggregation | Solid line with hollow diamond | "Has-a" (weak ownership) |
-| Composition | Solid line with filled diamond | "Has-a" (strong ownership) |
+| Class           | Rectangle with three sections                   | Class name, attributes, methods            |
+| `-` (private)   | Minus sign before attribute/method              | Only accessible within the class           |
+| `+` (public)    | Plus sign before attribute/method               | Accessible from any class                  |
+| `#` (protected) | Hash sign before attribute/method               | Accessible within the class and subclasses |
+| Inheritance     | Solid line with hollow arrow pointing to parent | "Is-a" relationship                        |
+| Association     | Solid line with arrow                           | "Has-a" relationship                       |
+| Aggregation     | Solid line with hollow diamond                  | "Has-a" (weak ownership)                   |
+| Composition     | Solid line with filled diamond                  | "Has-a" (strong ownership)                 |
 
 ### Example UML Diagram (Text Representation)
 
@@ -563,25 +565,25 @@ void selectionSort(int[] arr) {
 ## IB Exam Tips for JETS
 
 1. **Know the access modifiers:** Understand when to use `public``private`And `protected`. Most
- attributes should be `private`; most methods should be `public`.
+   attributes should be `private`; most methods should be `public`.
 
 2. **Constructors come first:** In JETS convention, constructors are placed as the first method in a
- class.
+   class.
 
 3. **Use `this` keyword:** When a parameter has the same name as an attribute, use `this.attribute`
- to distinguish them.
+   to distinguish them.
 
 4. **Read UML diagrams carefully:** Identify the attributes (with types and access modifiers),
- methods, and relationships between classes.
+   methods, and relationships between classes.
 
 5. **Practise tracing code:** IB exams often include code tracing questions where you must determine
- the output of a given program. Step through the code line by line.
+   the output of a given program. Step through the code line by line.
 
 6. **Understand polymorphism:** Be prepared to explain how method overriding works and why it is
- useful.
+   useful.
 
 7. **Be careful with array indices:** Arrays in Java are zero-indexed. `arr.length` gives the number
- of elements, but the last valid index is `arr.length - 1`.
+   of elements, but the last valid index is `arr.length - 1`.
 
 ## Common Pitfalls
 

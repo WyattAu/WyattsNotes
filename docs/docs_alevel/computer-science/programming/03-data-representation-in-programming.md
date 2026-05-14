@@ -1,6 +1,8 @@
 ---
 title: Data Representation in Programming
-description: "A-Level Computer Science notes on Data Representation in Programming: 1. Primitive Types and Their Representation; Integer Representation; Floating-Point Rep."
+description:
+  'A-Level Computer Science notes on Data Representation in Programming: 1. Primitive Types and
+  Their Representation; Integer Representation; Floating-Point Rep.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - ComputerScience
@@ -9,18 +11,19 @@ categories:
   - ComputerScience
 slug: data-representation-in-programming
 ---
+
 ## 1. Primitive Types and Their Representation
 
 ### Integer Representation
 
 Programming languages provide integer types of various sizes:
 
-| Type | Size | Range (signed) | Range (unsigned) |
+| Type  | Size    | Range (signed)        | Range (unsigned) |
 | ----- | ------- | --------------------- | ---------------- |
-| byte | 8 bits | $[-128, 127]$ | $[0, 255]$ |
-| short | 16 bits | $[-32768, 32767]$ | $[0, 65535]$ |
-| int | 32 bits | $[-2^{31}, 2^{31}-1]$ | $[0, 2^{32}-1]$ |
-| long | 64 bits | $[-2^{63}, 2^{63}-1]$ | $[0, 2^{64}-1]$ |
+| byte  | 8 bits  | $[-128, 127]$         | $[0, 255]$       |
+| short | 16 bits | $[-32768, 32767]$     | $[0, 65535]$     |
+| int   | 32 bits | $[-2^{31}, 2^{31}-1]$ | $[0, 2^{32}-1]$  |
+| long  | 64 bits | $[-2^{63}, 2^{63}-1]$ | $[0, 2^{64}-1]$  |
 
 Python integers have arbitrary precision — they grow to accommodate any value, limited only by
 Available memory.
@@ -41,8 +44,7 @@ False
 **Why:** $0.1$ cannot be represented exactly in binary floating point (like $1/3$ cannot be
 Represented exactly in decimal).
 
-:::warning
-Pitfall Never use `==` to compare floating-point numbers. Use `abs(a - b) < epsilon` with
+:::warning Pitfall Never use `==` to compare floating-point numbers. Use `abs(a - b) < epsilon` with
 A small tolerance (e.g., `1e-9`).
 
 ```python
@@ -82,12 +84,12 @@ print(a)    # [99, 2, 3] — a is also modified!
 
 **Key distinction:**
 
-| Operation | Effect |
+| Operation                           | Effect                                 |
 | ----------------------------------- | -------------------------------------- |
-| `b = a` | `b` references the same object as `a` |
-| `b = a.copy()` | `b` references a new, independent copy |
-| `b = list(a)` | Same as `a.copy()` |
-| `import copy; b = copy.deepcopy(a)` | Deep copy (copies nested objects) |
+| `b = a`                             | `b` references the same object as `a`  |
+| `b = a.copy()`                      | `b` references a new, independent copy |
+| `b = list(a)`                       | Same as `a.copy()`                     |
+| `import copy; b = copy.deepcopy(a)` | Deep copy (copies nested objects)      |
 
 ### Aliasing
 
@@ -114,19 +116,17 @@ Codes (e.g., UTF-8 or UTF-16).
 
 ### String Operations and Complexity
 
-| Operation | Python method | Time |
+| Operation        | Python method  | Time                              |
 | ---------------- | -------------- | --------------------------------- |
-| Access character | `s[i]` | $O(1)$ |
-| Length | `len(s)` | $O(1)$ |
-| Concatenation | `s1 + s2` | $O(n+m)$ |
-| Substring search | `s1 in s2` | $O(nm)$ naive, $O(n+m)$ optimized |
-| Split | `s.split(sep)` | $O(n)$ |
-| Slice | `s[a:b]` | $O(b-a)$ |
+| Access character | `s[i]`         | $O(1)$                            |
+| Length           | `len(s)`       | $O(1)$                            |
+| Concatenation    | `s1 + s2`      | $O(n+m)$                          |
+| Substring search | `s1 in s2`     | $O(nm)$ naive, $O(n+m)$ optimized |
+| Split            | `s.split(sep)` | $O(n)$                            |
+| Slice            | `s[a:b]`       | $O(b-a)$                          |
 
-:::warning
-Pitfall In Python, strings are **immutable** — you cannot modify individual characters.
-`s[0] = 'x'` raises a `TypeError`. Use `s = 'x' + s[1:]` to create a new string.
-:::
+:::warning Pitfall In Python, strings are **immutable** — you cannot modify individual characters.
+`s[0] = 'x'` raises a `TypeError`. Use `s = 'x' + s[1:]` to create a new string. :::
 
 ### String Immutability
 
@@ -137,14 +137,12 @@ Strings are immutable for several reasons:
 3. **Hashing:** Immutable strings can be used as dictionary keys (hash is stable)
 4. **Interning:** Python can reuse identical string objects, saving memory
 
-:::info
-Board-specific **AQA** requires ASCII, Unicode (UTF-8, UTF-16), image representation
+:::info Board-specific **AQA** requires ASCII, Unicode (UTF-8, UTF-16), image representation
 (pixels, colour depth, resolution), sound sampling (sample rate, bit depth). **CIE (9618)** covers
 Similar topics but may emphasise different aspects; requires understanding of file sizes and
 Capacity calculations. **OCR (A)** requires character encoding, image representation, and sound
 Representation with specific detail on compression (lossy vs lossless). **Edexcel** covers data
-Representation fundamentals including number systems and character encoding.
-:::
+Representation fundamentals including number systems and character encoding. :::
 
 <hr />
 
@@ -152,12 +150,12 @@ Representation fundamentals including number systems and character encoding.
 
 ### File Modes
 
-| Mode | Description | Creates? | Truncates? |
+| Mode   | Description  | Creates? | Truncates? |
 | ------ | ------------ | -------- | ---------- |
-| `'r'` | Read | No | No |
-| `'w'` | Write | Yes | Yes |
-| `'a'` | Append | Yes | No |
-| `'r+'` | Read + Write | No | No |
+| `'r'`  | Read         | No       | No         |
+| `'w'`  | Write        | Yes      | Yes        |
+| `'a'`  | Append       | Yes      | No         |
+| `'r+'` | Read + Write | No       | No         |
 
 ### Reading Files
 
@@ -476,11 +474,11 @@ Bytes. The CJK characters cannot be stored.
 
 **UTF-8:**
 
-| Character | Bytes |
-| ------------------------------------------ | --------------------- |
+| Character                                 | Bytes                 |
+| ----------------------------------------- | --------------------- |
 | H, e, l, l, o, , space, ! (8 ASCII chars) | 1 byte each = 8 bytes |
-| 世 | 3 bytes |
-| 界 | 3 bytes |
+| 世                                        | 3 bytes               |
+| 界                                        | 3 bytes               |
 
 $\mathrm{Total} = 8 + 3 + 3 = 14 \mathrm{ bytes}$
 

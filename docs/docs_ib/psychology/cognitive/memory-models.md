@@ -1,6 +1,8 @@
 ---
 title: Memory Models
-description: "Detailed coverage of the multi-store model, working memory model, levels of processing, reconstructive memory, schema theory, and eyewitness testimony for IB"
+description:
+  'Detailed coverage of the multi-store model, working memory model, levels of processing,
+  reconstructive memory, schema theory, and eyewitness testimony for IB'
 slug: memory-models
 ---
 
@@ -38,17 +40,17 @@ Associations, and connections between new information and existing knowledge. LT
 Store but comprises several distinct types:
 
 - **Episodic memory:** Memory for personal experiences and events, situated in a specific time and
- place (e.g., remembering your first day of school).
+  place (e.g., remembering your first day of school).
 - **Semantic memory:** General knowledge about the world, independent of personal experience (e.g.,
- knowing that Paris is the capital of France).
+  knowing that Paris is the capital of France).
 - **Procedural memory:** Memory for skills and procedures (e.g., riding a bicycle, typing).
 
 #### Processes in the MSM
 
 1. **Attention:** Information from the environment is attended to and transferred from sensory
- memory to STM. Most sensory information is not attended to and is rapidly lost.
+   memory to STM. Most sensory information is not attended to and is rapidly lost.
 2. **Maintenance rehearsal:** Information in STM is maintained through repetition. Without
- rehearsal, information decays within approximately 30 seconds.
+   rehearsal, information decays within approximately 30 seconds.
 3. **Elaborative rehearsal:** Deep processing of meaning transfers information from STM to LTM.
 4. **Retrieval:** Information stored in LTM can be retrieved back into STM when needed.
 
@@ -57,27 +59,27 @@ Store but comprises several distinct types:
 **Strengths:**
 
 - The model is supported by clinical evidence from case studies. Patient HM (Scoville and Milner,
- 1957), who had bilateral removal of the hippocampus to treat epilepsy, could form no new long-term
- memories (anterograde amnesia) but had intact short-term memory. This double dissociation supports
- the distinction between STM and LTM as separate stores.
+  1957), who had bilateral removal of the hippocampus to treat epilepsy, could form no new long-term
+  memories (anterograde amnesia) but had intact short-term memory. This double dissociation supports
+  the distinction between STM and LTM as separate stores.
 - The model has generated a vast body of research and has been highly influential in shaping the
- study of memory.
+  study of memory.
 - The serial position effect (Glanzer and Cunitz, 1966) provides behavioural evidence for the
- distinction between STM and LTM. In a free recall task, participants show primacy (superior recall
- of items at the beginning of the list, attributed to transfer to LTM) and recency (superior recall
- of items at the end of the list, attributed to items still being held in STM).
+  distinction between STM and LTM. In a free recall task, participants show primacy (superior recall
+  of items at the beginning of the list, attributed to transfer to LTM) and recency (superior recall
+  of items at the end of the list, attributed to items still being held in STM).
 
 **Limitations:**
 
 - The model is overly simplistic. It treats STM as a unitary store, but the working memory model
- (see below) demonstrates that STM consists of multiple components serving different functions.
+  (see below) demonstrates that STM consists of multiple components serving different functions.
 - The model overemphasises the role of rehearsal in transferring information to LTM. Craik and
- Lockhart (1972) demonstrated that the depth of processing, not the amount of rehearsal, determines
- whether information is remembered.
+  Lockhart (1972) demonstrated that the depth of processing, not the amount of rehearsal, determines
+  whether information is remembered.
 - The model treats LTM as a unitary store, but research has identified multiple distinct types of
- LTM (episodic, semantic, procedural), each with different properties and neural substrates.
+  LTM (episodic, semantic, procedural), each with different properties and neural substrates.
 - The linear flow of information is an oversimplification. Information does not always flow in one
- direction; retrieval from LTM can influence how information is encoded in STM.
+  direction; retrieval from LTM can influence how information is encoded in STM.
 
 ## The Working Memory Model
 
@@ -99,13 +101,13 @@ Well-specified component of the model.
 Subcomponents:
 
 - **The phonological store:** A limited-capacity store that holds auditory information in a
- phonological (sound-based) code. Information in the phonological store decays in approximately 2
- seconds unless refreshed.
+  phonological (sound-based) code. Information in the phonological store decays in approximately 2
+  seconds unless refreshed.
 - **The articulatory rehearsal process:** A subvocal rehearsal mechanism that refreshes the contents
- of the phonological store by silently "speaking" the information. This component is subject to the
- word length effect (longer words take longer to rehearse, so fewer can be maintained) and the
- phonological similarity effect (lists of phonologically similar words are harder to remember
- because they compete for the same store).
+  of the phonological store by silently "speaking" the information. This component is subject to the
+  word length effect (longer words take longer to rehearse, so fewer can be maintained) and the
+  phonological similarity effect (lists of phonologically similar words are harder to remember
+  because they compete for the same store).
 
 **The visuospatial sketchpad** processes visual and spatial information. It is responsible for
 Creating and manipulating mental images and representing spatial relationships. The visuospatial
@@ -134,11 +136,11 @@ As predicted by the working memory model.
 **Evaluation of the working memory model:**
 
 - Strongly supported by experimental evidence from dual-task paradigms, neuroimaging, and case
- studies of patients with specific working memory deficits.
+  studies of patients with specific working memory deficits.
 - The model has been highly influential in understanding cognitive deficits in developmental
- disorders (dyslexia, ADHD) and in educational contexts.
+  disorders (dyslexia, ADHD) and in educational contexts.
 - The central executive remains underspecified. Subsequent research has attempted to fractionate it
- into distinct executive functions (inhibition, shifting, updating; Miyake et al., 2000).
+  into distinct executive functions (inhibition, shifting, updating; Miyake et al., 2000).
 
 ## Levels of Processing
 
@@ -152,12 +154,12 @@ Rather of the depth of processing applied to the information at encoding.
 **Three levels of processing:**
 
 1. **Structural processing:** Processing the physical features of a stimulus (e.g., "Is the word
- written in uppercase?"). This is the shallowest level and produces the poorest recall.
+   written in uppercase?"). This is the shallowest level and produces the poorest recall.
 2. **Phonological processing:** Processing the sound of a stimulus (e.g., "Does the word rhyme with
- 'cat'?"). This is an intermediate level.
+   'cat'?"). This is an intermediate level.
 3. **Semantic processing:** Processing the meaning of a stimulus (e.g., "Does the word fit into the
- sentence 'The \_\_\_\_ chased the mouse'?"). This is the deepest level and produces the best
- recall.
+   sentence 'The \_\_\_\_ chased the mouse'?"). This is the deepest level and produces the best
+   recall.
 
 ### Craik and Tulving (1975)
 
@@ -169,15 +171,15 @@ Semantically than those processed phonologically or structurally.
 **Evaluation of the levels of processing framework:**
 
 - The LOP framework has been robustly replicated and provides a parsimonious explanation for memory
- differences.
+  differences.
 - However, the framework has been criticised for being vague and unfalsifiable. What counts as
- "deep" processing is not precisely defined, making it difficult to generate specific, testable
- predictions.
+  "deep" processing is not precisely defined, making it difficult to generate specific, testable
+  predictions.
 - Morris, Bransford, and Franks (1977) demonstrated that the effectiveness of processing depends on
- the type of memory test. Rhyming (phonological) processing produced better performance on a rhyme
- recognition test, while semantic processing produced better performance on a standard recognition
- test. This finding, which cannot be explained by the simple LOP account, led to the development of
- transfer-appropriate processing theory.
+  the type of memory test. Rhyming (phonological) processing produced better performance on a rhyme
+  recognition test, while semantic processing produced better performance on a standard recognition
+  test. This finding, which cannot be explained by the simple LOP account, led to the development of
+  transfer-appropriate processing theory.
 
 ## Reconstructive Memory and Schema Theory
 
@@ -192,9 +194,9 @@ Immediately to several months later).
 
 - Participants' recollections became progressively shorter and more distorted with each recall.
 - Details that were unfamiliar or inconsistent with British cultural expectations were omitted or
- altered (e.g., "canoes" became "boats," "hunting seals" became "fishing").
+  altered (e.g., "canoes" became "boats," "hunting seals" became "fishing").
 - The story became more coherent and conventional, conforming to participants' existing cultural
- schemas.
+  schemas.
 
 Bartlett introduced the concept of **schemas**: organised packets of knowledge and expectations
 About the world that influence how information is encoded, stored, and retrieved. When we encounter
@@ -207,11 +209,11 @@ Schema theory, further developed by Brewer and Treyens (1981) among others, prop
 Serve several functions in memory:
 
 1. **Encoding:** Schemas direct attention to schema-relevant information and influence how incoming
- information is interpreted.
+   information is interpreted.
 2. **Storage:** Schema-consistent information is more likely to be stored than schema-inconsistent
- information.
+   information.
 3. **Retrieval:** Schemas provide a framework for reconstructing memories, filling in gaps with
- schema-consistent details.
+   schema-consistent details.
 
 #### Brewer and Treyens (1981)
 
@@ -225,11 +227,11 @@ Skis that had been placed in the office).
 **Evaluation of schema theory:**
 
 - Schema theory provides a powerful explanation for memory errors and distortions, particularly in
- eyewitness testimony.
+  eyewitness testimony.
 - The theory is difficult to falsify because schemas are latent constructs that cannot be directly
- observed. It can explain any pattern of results by postulating different schemas.
+  observed. It can explain any pattern of results by postulating different schemas.
 - The theory does not specify the precise mechanisms by which schemas influence encoding, storage,
- and retrieval.
+  and retrieval.
 
 ## Eyewitness Testimony
 
@@ -248,20 +250,19 @@ Each other."
 **Key findings:**
 
 - The verb used significantly affected speed estimates. Participants in the "smashed" condition
- estimated speeds of approximately 65 km/h, compared to approximately 50 km/h in the "contacted"
- condition.
+  estimated speeds of approximately 65 km/h, compared to approximately 50 km/h in the "contacted"
+  condition.
 - In a follow-up experiment, participants who had been asked the "smashed" question were more likely
- (one week later) to report having seen broken glass at the accident scene, even though no glass
- was present in the film.
+  (one week later) to report having seen broken glass at the accident scene, even though no glass
+  was present in the film.
 
 **Interpretation:** The post-event information (the leading question) altered participants' memory
 Of the event. Loftus proposed two explanations:
 
 1. **Response bias:** The wording of the question influences the response without actually changing
- the memory. Participants adjust their answer to match the expectations conveyed by the
- question.
+   the memory. Participants adjust their answer to match the expectations conveyed by the question.
 2. **Memory impairment:** The post-event information actually alters the stored memory
- representation, overwriting or merging with the original memory.
+   representation, overwriting or merging with the original memory.
 
 Subsequent research has supported the memory impairment explanation, particularly when the
 Misleading information is introduced after a delay (when the original memory has begun to fade).
@@ -269,32 +270,32 @@ Misleading information is introduced after a delay (when the original memory has
 **Evaluation:**
 
 - Loftus's research has been highly influential in demonstrating the fallibility of eyewitness
- memory and has led to changes in police interviewing procedures (e.g., the cognitive interview
- technique developed by Fisher and Geiselman, 1992).
+  memory and has led to changes in police interviewing procedures (e.g., the cognitive interview
+  technique developed by Fisher and Geiselman, 1992).
 - The ecological validity of laboratory studies has been questioned: watching a film of a car
- accident is qualitatively different from witnessing a real accident, which is more emotionally
- arousing and has more personal consequences.
+  accident is qualitatively different from witnessing a real accident, which is more emotionally
+  arousing and has more personal consequences.
 - Yuille and Cutshall (1986) found that witnesses to a real armed robbery had very accurate memories
- 4--5 months later and were resistant to misleading questions, suggesting that emotional arousal
- may enhance rather than impair memory accuracy .
+  4--5 months later and were resistant to misleading questions, suggesting that emotional arousal
+  may enhance rather than impair memory accuracy .
 
 <details>
 <summary>Common Pitfalls: Memory Models</summary>
 
 - **Do not confuse the MSM with the working memory model.** The MSM is a structural model describing
- how information flows between three stores. The working memory model is a functional model
- describing the components of STM and how they interact.
+  how information flows between three stores. The working memory model is a functional model
+  describing the components of STM and how they interact.
 - **Do not describe the central executive as a storage component.** The central executive is an
- attentional control system that coordinates the other components; it does not store information
- itself.
+  attentional control system that coordinates the other components; it does not store information
+  itself.
 - **Do not present the levels of processing framework as if it contradicts the MSM.** The LOP
- framework describes factors that influence encoding, while the MSM describes the structure of
- memory stores. They address different questions and are not mutually exclusive.
+  framework describes factors that influence encoding, while the MSM describes the structure of
+  memory stores. They address different questions and are not mutually exclusive.
 - **Do not claim that eyewitness testimony is always unreliable.** While Loftus's research
- demonstrates that eyewitness memory can be distorted, research also shows that memory can be
- highly accurate . The accuracy of eyewitness testimony depends on multiple
- factors, including the nature of the event, the delay between the event and the testimony, the
- type of questioning, and the individual characteristics of the witness.
+  demonstrates that eyewitness memory can be distorted, research also shows that memory can be
+  highly accurate . The accuracy of eyewitness testimony depends on multiple factors, including the
+  nature of the event, the delay between the event and the testimony, the type of questioning, and
+  the individual characteristics of the witness.
 
 </details>
 

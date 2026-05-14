@@ -1,6 +1,8 @@
 ---
 title: DC Circuits
-description: "A-Level Physics notes on DC Circuits: 1. Kirchhoff's Laws; Kirchhoff's First Law (Current Law); Kirchhoff's Second Law (Voltage Law)."
+description:
+  "A-Level Physics notes on DC Circuits: 1. Kirchhoff's Laws; Kirchhoff's First Law (Current Law);
+  Kirchhoff's Second Law (Voltage Law)."
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Physics
@@ -9,11 +11,10 @@ categories:
   - Physics
 slug: dc-circuits
 ---
+
 ## DC Circuits
 
-:::info
-Board Coverage AQA Paper 1 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2
-:::
+:::info Board Coverage AQA Paper 1 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2 :::
 
 <PhetSimulation simulationId="circuit-construction-kit-dc" title="Circuit Construction Kit: DC" />
 
@@ -56,11 +57,9 @@ $$\frac◆LB◆W_{\mathrm{gained}}◆RB◆◆LB◆Q◆RB◆ = \frac◆LB◆W_{\m
 
 $\square$
 
-:::tip
-Exam Technique When applying Kirchhoff's second law, choose a direction around the loop and
+:::tip Exam Technique When applying Kirchhoff's second law, choose a direction around the loop and
 Stick to it. E.m.f.s are positive if they drive current in your chosen direction; p.d.s are positive
-If current flows through the resistor in your chosen direction.
-:::
+If current flows through the resistor in your chosen direction. :::
 
 ## 2. Series and Parallel Resistors
 
@@ -136,11 +135,9 @@ Light intensity:
 
 $$V_{\mathrm{out}} = V_{\mathrm{in}} \cdot \frac◆LB◆R_{\mathrm{sensor}}◆RB◆◆LB◆R_{\mathrm{fixed}} + R_{\mathrm{sensor}}◆RB◆$$
 
-:::warning
-Common Pitfall A potential divider circuit loaded by connecting a component across $R_2$
+:::warning Common Pitfall A potential divider circuit loaded by connecting a component across $R_2$
 Changes the effective resistance. The simple divider formula no longer applies — you must
-Recalculate the parallel combination of $R_2$ and the load.
-:::
+Recalculate the parallel combination of $R_2$ and the load. :::
 
 ## 4. Internal Resistance
 
@@ -152,8 +149,8 @@ Potential difference below the e.m.f.
 Of a power source when it is delivering current, equal to the e.m.f. Minus the potential difference
 Across the internal resistance: $V = \mathcal{E} - Ir$.
 
-Real power sources have **internal resistance** $r$Which causes the terminal p.d. To drop as
-Current increases.
+Real power sources have **internal resistance** $r$Which causes the terminal p.d. To drop as Current
+increases.
 
 ### Derivation of $V = \mathcal{E} - Ir$
 
@@ -211,8 +208,8 @@ The Thevenin resistance is the resistance between the two terminals when all ind
 Sources are replaced by short circuits (and current sources by open circuits).
 
 **Intuition.** Thevenin's theorem is powerful because it lets you simplify any complex circuit into
-A simple source-resistor pair. Once you know $V_{\mathrm{Th}}$ and $R_{\mathrm{Th}}$You can
-Predict the behaviour of the circuit for any load.
+A simple source-resistor pair. Once you know $V_{\mathrm{Th}}$ and $R_{\mathrm{Th}}$You can Predict
+the behaviour of the circuit for any load.
 
 <details>
 <summary>Example: Thevenin Equivalent</summary>
@@ -282,18 +279,15 @@ Where $R$ is the known resistance, $S$ is the unknown, and $l$ is the balance le
 <details>
 <summary>Example: Wheatstone Bridge Calculation</summary>
 
-A Wheatstone bridge has $R_1 = 100\,\Omega$$R_2 = 200\,\Omega$$R_3 = 150\,\Omega$. Find $R_4$
-For balance.
+A Wheatstone bridge has $R_1 = 100\,\Omega$$R_2 = 200\,\Omega$$R_3 = 150\,\Omega$. Find $R_4$ For
+balance.
 
 **Answer.** $R_4 = \frac{R_2 R_3}{R_1} = \frac◆LB◆200 \times 150◆RB◆◆LB◆100◆RB◆ = 300\,\Omega$.
 
 </details>
 
-:::warning
-Warning
-Current is exactly zero. If the bridge is unbalanced, you must use Kirchhoff's laws (or Thevenin
-Analysis) to find the galvanometer current.
-:::
+:::warning Warning Current is exactly zero. If the bridge is unbalanced, you must use Kirchhoff's
+laws (or Thevenin Analysis) to find the galvanometer current. :::
 
 ## 7. Norton's Theorem
 
@@ -325,11 +319,9 @@ Current $= V_{\mathrm{Th}}/R_{\mathrm{Th}}$. For the Norton equivalent: short-ci
 $= I_N$Open-circuit voltage $= I_N R_N$. For equivalence: $I_N = V_{\mathrm{Th}}/R_{\mathrm{Th}}$
 And $R_N = R_{\mathrm{Th}}$. $\square$
 
-:::tip
-Exam Technique Source transformations are useful for simplifying circuits step by step.
+:::tip Exam Technique Source transformations are useful for simplifying circuits step by step.
 Convert a voltage source with series resistance to a Norton equivalent, combine parallel current
-Sources, then convert back.
-:::
+Sources, then convert back. :::
 
 ## 8. Multi-Loop Circuit Analysis
 
@@ -378,8 +370,8 @@ For a circuit with $b$ branches and $n$ nodes:
 ### Ideal vs Real Instruments
 
 An **ideal voltmeter** has infinite resistance ($R_V \to \infty$) and draws zero current. A **real
-Voltmeter** has finite resistance ( $10\,\mathrm{k}\Omega$ to $10\,\mathrm{M}\Omega$ for
-Digital meters).
+Voltmeter** has finite resistance ( $10\,\mathrm{k}\Omega$ to $10\,\mathrm{M}\Omega$ for Digital
+meters).
 
 An **ideal ammeter** has zero resistance ($R_A \to 0$) and drops zero voltage. A **real ammeter**
 Has finite (but small) resistance.
@@ -404,8 +396,8 @@ Resistance in the divider, we have $V_{\mathrm{measured}} \lt V_{\mathrm{true}}$
 
 ### Voltmeter Multiplier
 
-To extend the range of a galvanometer (full-scale current $I_g$Internal resistance $R_g$) to
-Measure voltage up to $V_{\mathrm{range}}$:
+To extend the range of a galvanometer (full-scale current $I_g$Internal resistance $R_g$) to Measure
+voltage up to $V_{\mathrm{range}}$:
 
 A series "multiplier" resistor $R_s$ is added so that at full scale:
 
@@ -437,11 +429,8 @@ Note the very small shunt resistance — most current bypasses the galvanometer.
 
 </details>
 
-:::warning
-Warning
-The circuit it is measuring. Always ensure $R_V \gg R_{\mathrm{circuit}}$ (rule of thumb:
-$R_V \gt 10 \times R_{\mathrm{circuit}}$ for less than 10% loading error).
-:::
+:::warning Warning The circuit it is measuring. Always ensure $R_V \gg R_{\mathrm{circuit}}$ (rule
+of thumb: $R_V \gt 10 \times R_{\mathrm{circuit}}$ for less than 10% loading error). :::
 
 ## Problem Set
 
@@ -475,7 +464,8 @@ A cell of e.m.f. 12 V and internal resistance 0.50 $\Omega$ is connected to a 5.
 Resistor. Calculate: (a) the current, (b) the terminal p.d., (c) the power dissipated in the
 External resistor.
 
-**Answer.** (a) $I = \frac◆LB◆\mathcal{E}◆RB◆◆LB◆R + r◆RB◆ = \frac{12}{5.5 + 0.5} = \frac{12}{6.0} = 2.0$ A.
+**Answer.** (a)
+$I = \frac◆LB◆\mathcal{E}◆RB◆◆LB◆R + r◆RB◆ = \frac{12}{5.5 + 0.5} = \frac{12}{6.0} = 2.0$ A.
 
 (b) $V = \mathcal{E} - Ir = 12 - 2.0 \times 0.50 = 11$ V.
 
@@ -645,7 +635,8 @@ $V_{\mathrm{out}} = 15 \times \frac{500}{10000 + 500} = 15 \times \frac{500}{105
 A cell of e.m.f. $\mathcal{E}$ and internal resistance $r$ delivers maximum power to an external
 Load. Prove that maximum power is delivered when $R = r$And find the efficiency at this condition.
 
-**Answer.** $P = \left(\frac◆LB◆\mathcal{E}◆RB◆◆LB◆R+r◆RB◆\right)^2 R = \frac◆LB◆\mathcal{E}^2 R◆RB◆◆LB◆(R+r)^2◆RB◆$.
+**Answer.**
+$P = \left(\frac◆LB◆\mathcal{E}◆RB◆◆LB◆R+r◆RB◆\right)^2 R = \frac◆LB◆\mathcal{E}^2 R◆RB◆◆LB◆(R+r)^2◆RB◆$.
 
 $\frac{dP}{dR} = \mathcal{E}^2 \cdot \frac{(R+r)^2 - 2R(R+r)}{(R+r)^4} = \mathcal{E}^2 \cdot \frac{r - R}{(R+r)^3}$.
 
@@ -749,28 +740,36 @@ $S = R \times 60/40 = 10 \times 1.5 = 15\,\Omega$.
 
 </details>
 
-
 ---
 
-:::tip
-Tip
-Ready to test your understanding of **DC Circuits**? The [diagnostic test](/docs/alevel/physics/diagnostics/diag-dc-circuits) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
+:::tip Tip Ready to test your understanding of **DC Circuits**? The
+[diagnostic test](/docs/alevel/physics/diagnostics/diag-dc-circuits) contains the hardest questions
+within the A-Level specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine DC Circuits with other physics topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine DC Circuits
+with other physics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on
+self-marking and building a personal test matrix. :::
 
-:::danger
-Danger
+:::danger Danger
 
-- **Applying Kirchhoff's second law incorrectly to parallel circuits:** The sum of p.d.s around ANY closed loop equals the sum of e.m.f.s. In a parallel circuit, each branch is a separate loop. The p.d. Across each parallel branch equals the e.m.f. Of the supply, not a fraction of it.
+- **Applying Kirchhoff's second law incorrectly to parallel circuits:** The sum of p.d.s around ANY
+  closed loop equals the sum of e.m.f.s. In a parallel circuit, each branch is a separate loop. The
+  p.d. Across each parallel branch equals the e.m.f. Of the supply, not a fraction of it.
 
-- **Confusing series and parallel resistance formulas:** For resistors in SERIES, resistances add (R_total = R1 + R2 + ...). For resistors in PARALLEL, the reciprocal formula applies (1/R_total = 1/R1 + 1/R2 + ...). Students frequently invert these. A useful check: the total parallel resistance is always LESS than the smallest individual resistor.
+- **Confusing series and parallel resistance formulas:** For resistors in SERIES, resistances add
+  (R_total = R1 + R2 + ...). For resistors in PARALLEL, the reciprocal formula applies (1/R_total =
+  1/R1 + 1/R2 + ...). Students frequently invert these. A useful check: the total parallel
+  resistance is always LESS than the smallest individual resistor.
 
-- **Forgetting internal resistance in calculations:** When a battery has internal resistance r, the terminal p.d. (V = E - Ir) is LESS than the e.m.f. E. If a question gives both the e.m.f. And the terminal p.d., the difference is the p.d. Across the internal resistance (lost volts = Ir).
+- **Forgetting internal resistance in calculations:** When a battery has internal resistance r, the
+  terminal p.d. (V = E - Ir) is LESS than the e.m.f. E. If a question gives both the e.m.f. And the
+  terminal p.d., the difference is the p.d. Across the internal resistance (lost volts = Ir).
 
-- **Misapplying the potential divider formula:** V_out = V_in * R2 / (R1 + R2) only works for two resistors in series with no load connected. If a load resistance is connected across R2, the effective resistance of the parallel combination must be used instead.
+- **Misapplying the potential divider formula:** V_out = V_in \* R2 / (R1 + R2) only works for two
+  resistors in series with no load connected. If a load resistance is connected across R2, the
+  effective resistance of the parallel combination must be used instead.
 
 :::
 

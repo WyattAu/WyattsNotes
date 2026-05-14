@@ -1,6 +1,8 @@
 ---
 title: Data Validation
-description: "Data Validation — Pydantic v2; BaseModel; Field Types; Automatic Type Coercion with worked examples and exam-style questions."
+description:
+  'Data Validation — Pydantic v2; BaseModel; Field Types; Automatic Type Coercion with worked
+  examples and exam-style questions.'
 date: 2026-04-05T00:00:00.000Z
 tags:
   - Python
@@ -8,6 +10,7 @@ categories:
   - Python
 slug: data-validation
 ---
+
 ## Why Data Validation
 
 Every non-trivial system receives data from sources it does not control: HTTP request bodies parsed
@@ -141,10 +144,10 @@ print(c.timeout) # 30.5  (str -> float)
 ```
 
 Coercion rules are extensive. Strings that look like numbers are converted to `int` or `float`.
-Strings that look like booleans (`"true"``"false"``"1"``"0"``"yes"``"no"`) are converted
-To `bool`. Strings that look like ISO 8601 dates/datetimes are converted to `date`/`datetime`
-Objects. Lists and dicts are recursively validated. The full coercion logic lives in pydantic-core
-And is well-documented in the Pydantic docs.
+Strings that look like booleans (`"true"``"false"``"1"``"0"``"yes"``"no"`) are converted To `bool`.
+Strings that look like ISO 8601 dates/datetimes are converted to `date`/`datetime` Objects. Lists
+and dicts are recursively validated. The full coercion logic lives in pydantic-core And is
+well-documented in the Pydantic docs.
 
 ### Validation Errors
 
@@ -172,7 +175,7 @@ Each error in `e.errors()` is a dict with these keys:
 
 - `type` -- a machine-readable error code (e.g., `"int_parsing"``"string_too_short"``"missing"`)
 - `loc` -- a tuple indicating the path to the offending field (e.g., `('id',)`
- `('address', 'city')`)
+  `('address', 'city')`)
 - `msg` -- a human-readable error message
 - `input` -- the actual value that failed validation
 
@@ -199,12 +202,12 @@ class Sensor(BaseModel):
 
 The constraint parameters for numeric types are:
 
-| Parameter | Meaning |
+| Parameter     | Meaning                          |
 | ------------- | -------------------------------- |
-| `gt` | strictly greater than |
-| `ge` | greater than or equal |
-| `lt` | strictly less than |
-| `le` | less than or equal |
+| `gt`          | strictly greater than            |
+| `ge`          | greater than or equal            |
+| `lt`          | strictly less than               |
+| `le`          | less than or equal               |
 | `multiple_of` | must be a multiple of this value |
 
 ### String Constraints
@@ -220,11 +223,11 @@ class Account(BaseModel):
 
 The constraint parameters for `str` are:
 
-| Parameter | Meaning |
+| Parameter    | Meaning                             |
 | ------------ | ----------------------------------- |
-| `min_length` | minimum string length |
-| `max_length` | maximum string length |
-| `pattern` | regex pattern the string must match |
+| `min_length` | minimum string length               |
+| `max_length` | maximum string length               |
+| `pattern`    | regex pattern the string must match |
 
 Note: `pattern` uses Python's `re` module. The regex is matched against the entire string (anchored
 At both ends), so you do not need `^` and `$` anchors, though including them is harmless.
@@ -339,11 +342,11 @@ class Measurement(BaseModel):
 ```
 
 - `mode="before"` -- the validator runs **before** Pydantic's built-in type coercion. The raw input
- value is passed in. This is where you preprocess or normalize input.
+  value is passed in. This is where you preprocess or normalize input.
 - `mode="after"` -- the validator runs **after** type coercion. You receive a value that is already
- the declared type. This is where you apply business rules.
+  the declared type. This is where you apply business rules.
 - `mode="wrap"` -- the validator receives both the value and a handler function. It can run custom
- logic before, after, or around the default validation:
+  logic before, after, or around the default validation:
 
 ```python
 from pydantic import BaseModel, field_validator
@@ -402,8 +405,8 @@ class DateRange(BaseModel):
         return self
 ```
 
-`mode="before"` receives the raw input ( a dict) before any field validation runs. This
-Lets you preprocess the entire input structure:
+`mode="before"` receives the raw input ( a dict) before any field validation runs. This Lets you
+preprocess the entire input structure:
 
 ```python
 from pydantic import BaseModel, model_validator
@@ -426,8 +429,8 @@ class Event(BaseModel):
 ## Nested Models
 
 Real-world data is hierarchical. A user has an address, which has a city and postal code. An order
-Has a list of line items. A configuration has nested sections. Pydantic handles all of these
- by using models as field types.
+Has a list of line items. A configuration has nested sections. Pydantic handles all of these by
+using models as field types.
 
 ### Models as Fields
 
@@ -643,16 +646,16 @@ print(p.x)  # 1.0
 
 ### Key Differences
 
-| Feature | `BaseModel` | `@pydantic.dataclass` |
+| Feature                               | `BaseModel`  | `@pydantic.dataclass`        |
 | ------------------------------------- | ------------ | ---------------------------- |
-| Inheritance from `BaseModel` | Yes | No (inherits from dataclass) |
-| `model_dump()` / `model_dump_json()` | Yes | Yes |
-| `model_validate()` | Yes | Yes |
-| `model_json_schema()` | Yes | Yes |
-| `model_config` | Yes | Via `Config` or `kw_only` |
-| Composability with other dataclasses | No | Yes (dataclass interop) |
-| Standard `dataclasses.is_dataclass()` | No | Yes |
-| Extra fields behavior | Configurable | Configurable |
+| Inheritance from `BaseModel`          | Yes          | No (inherits from dataclass) |
+| `model_dump()` / `model_dump_json()`  | Yes          | Yes                          |
+| `model_validate()`                    | Yes          | Yes                          |
+| `model_json_schema()`                 | Yes          | Yes                          |
+| `model_config`                        | Yes          | Via `Config` or `kw_only`    |
+| Composability with other dataclasses  | No           | Yes (dataclass interop)      |
+| Standard `dataclasses.is_dataclass()` | No           | Yes                          |
+| Extra fields behavior                 | Configurable | Configurable                 |
 
 ### When to Use Which
 
@@ -661,9 +664,9 @@ Schemas, configuration objects, domain entities. `BaseModel` is the default choi
 Complete feature set.
 
 Use `@pydantic.dataclass` when you need to interoperate with code that expects standard dataclasses
-(e.g., `dataclasses.asdict()``dataclasses.fields()`), when you want value-based equality and
-Hashing without implementing `__eq__` and `__hash__`Or when you are working within a codebase that
-Already uses dataclasses extensively and you want to add validation without changing the overall
+(e.g., `dataclasses.asdict()``dataclasses.fields()`), when you want value-based equality and Hashing
+without implementing `__eq__` and `__hash__`Or when you are working within a codebase that Already
+uses dataclasses extensively and you want to add validation without changing the overall
 Architecture.
 
 Do not mix them casually. A `BaseModel` instance is not a dataclass and vice versa. Pick one pattern
@@ -692,8 +695,8 @@ print(json.dumps(schema, indent=2))
 ```
 
 The output is a complete JSON Schema document that encodes all type information, constraints,
-Defaults, descriptions, and examples. Field constraints like `min_length``pattern`And `ge`/`le`
-Are translated to their JSON Schema equivalents (`minLength``pattern``minimum`/`maximum`).
+Defaults, descriptions, and examples. Field constraints like `min_length``pattern`And `ge`/`le` Are
+translated to their JSON Schema equivalents (`minLength``pattern``minimum`/`maximum`).
 
 ### Schema for API Documentation
 
@@ -804,9 +807,9 @@ print(config.database.port)  # 5433
 ### Validation of Configuration Values
 
 All of Pydantic's validation machinery works inside `BaseSettings`. If you declare
-`port: int = Field(ge=1, le=65535)`Setting `PORT=99999` will raise `ValidationError` at import
-Time, failing fast before your application starts. This is exactly what you want -- configuration
-Errors should be caught at startup, not at 3 AM when a request finally hits the invalid code path.
+`port: int = Field(ge=1, le=65535)`Setting `PORT=99999` will raise `ValidationError` at import Time,
+failing fast before your application starts. This is exactly what you want -- configuration Errors
+should be caught at startup, not at 3 AM when a request finally hits the invalid code path.
 
 ```python
 from pydantic_settings import BaseSettings, SettingsConfigDict
@@ -865,17 +868,17 @@ Dataclasses.
 
 ### Comparison with Pydantic
 
-| Concern | Pydantic | attrs |
+| Concern                | Pydantic                      | attrs                 |
 | ---------------------- | ----------------------------- | --------------------- |
-| Primary purpose | Data validation and parsing | Boilerplate reduction |
-| Type coercion | Automatic | None |
-| Validation errors | Structured `ValidationError` | Raw `ValueError` |
-| JSON serialization | Built-in | Requires `cattrs` |
-| JSON Schema generation | Built-in | Not available |
-| Settings management | Built-in (`BaseSettings`) | Not available |
-| Runtime overhead | Higher (Rust validation core) | Minimal |
-| Validation granularity | Field-level, model-level | Attribute-level |
-| Ecosystem integration | FastAPI, Django, etc. | Independent |
+| Primary purpose        | Data validation and parsing   | Boilerplate reduction |
+| Type coercion          | Automatic                     | None                  |
+| Validation errors      | Structured `ValidationError`  | Raw `ValueError`      |
+| JSON serialization     | Built-in                      | Requires `cattrs`     |
+| JSON Schema generation | Built-in                      | Not available         |
+| Settings management    | Built-in (`BaseSettings`)     | Not available         |
+| Runtime overhead       | Higher (Rust validation core) | Minimal               |
+| Validation granularity | Field-level, model-level      | Attribute-level       |
+| Ecosystem integration  | FastAPI, Django, etc.         | Independent           |
 
 ### When to Use attrs
 
@@ -1017,8 +1020,8 @@ StrictUser(id="42", name="Alice")   # ValidationError
 ```
 
 Always consider whether coercion is appropriate for your use case. For API endpoints, coercion is
- desirable (HTTP form data is always strings). For internal data structures, strict mode may
-Be safer.
+desirable (HTTP form data is always strings). For internal data structures, strict mode may Be
+safer.
 
 ### Extra Fields
 
@@ -1082,8 +1085,8 @@ class Node(BaseModel):
 Node.model_rebuild()  # REQUIRED
 ```
 
-Without `model_rebuild()`Pydantic will raise `SchemaError` or produce incorrect behavior because
-The forward reference `"Node"` has not been resolved. Always call `model_rebuild()` after defining
+Without `model_rebuild()`Pydantic will raise `SchemaError` or produce incorrect behavior because The
+forward reference `"Node"` has not been resolved. Always call `model_rebuild()` after defining
 Recursive models.
 
 ### JSON Schema Precision Loss

@@ -1,6 +1,8 @@
 ---
 title: The C Runtime (CRT)
-description: "C++: The C Runtime (CRT) — What the CRT Provides Beyond Language Features; The Physical Entry Point; ELF Entry Point Details; Entry point address: 0x401020."
+description:
+  'C++: The C Runtime (CRT) — What the CRT Provides Beyond Language Features; The Physical Entry
+  Point; ELF Entry Point Details; Entry point address: 0x401020.'
 date: 2025-12-12T04:23:24.345Z
 tags:
   - cpp
@@ -8,6 +10,7 @@ categories:
   - cpp
 slug: runtime-crt
 ---
+
 Import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 A common misconception is that the execution of a C++ program begins at `main()`. In reality,
@@ -23,14 +26,14 @@ Critically for C++, orchestrating the construction of global objects.
 The CRT implements services that the C++ standard library relies on but that are not part of the
 Language itself:
 
-- **Memory allocation:** The implementation of `malloc``free``operator new`And
- `operator delete` (ultimately backed by `brk`/`mmap` on Linux or `VirtualAlloc` on Windows).
+- **Memory allocation:** The implementation of `malloc``free``operator new`And `operator delete`
+  (ultimately backed by `brk`/`mmap` on Linux or `VirtualAlloc` on Windows).
 - **Thread support:** `pthread_create` on Linux, `CreateThread` on Windows. `std::thread` is built
- on top of these.
+  on top of these.
 - **File I/O:** `fopen``fread``fwrite` wrap system calls (`open``read``write`).
 - **Signal handling:** `signal()``raise()` provide POSIX signal semantics.
 - **Exception infrastructure:** Stack unwinding for C++ exceptions requires CRT support
- (`__cxa_begin_catch``__cxa_throw` on Itanium ABI platforms).
+  (`__cxa_begin_catch``__cxa_throw` on Itanium ABI platforms).
 - **Locale and ctype:** Character classification, numeric formatting, and locale management.
 - **Exit and cleanup:** `atexit``exit``abort`And the termination sequence.
 
@@ -44,9 +47,9 @@ The address specified in the file header (ELF or PE). This address does **not** 
 
 ### ELF Entry Point Details
 
-The ELF header's `e_entry` field specifies the virtual address of the entry point. This is 
-Set by the linker script (`ENTRY(_start)`) or by the compiler driver when linking with the CRT
-Startup objects. You can inspect it:
+The ELF header's `e_entry` field specifies the virtual address of the entry point. This is Set by
+the linker script (`ENTRY(_start)`) or by the compiler driver when linking with the CRT Startup
+objects. You can inspect it:
 
 ```bash
 readelf -h ./app | grep Entry
@@ -62,17 +65,19 @@ Address after mapping the binary's `PT_LOAD` segments into memory.
 The full startup path on Linux (glibc) is:
 
 1. **Kernel Handoff:** The OS maps pages into memory and sets the Instruction Pointer (RIP) to the
- Entry Point (`_start`).
+   Entry Point (`_start`).
 2. **`_start` (in `crt1.o`):** This is a tiny assembly stub. It pops `argc` from the stack, sets up
- `argv`And calls `__libc_start_main`.
+   `argv`And calls `__libc_start_main`.
 3. **`__libc_start_main` (in libc.so):** The main CRT initialization function. It:
- - Registers the program's `main` function as an `atexit` callback.
- - Calls `__libc_csu_init`Which walks the `.init_array` section.
- - **`.init_array` processing:** Each function pointer in `.init_array` is called. This is where
- C++ global constructors execute.
+
+- Registers the program's `main` function as an `atexit` callback.
+- Calls `__libc_csu_init`Which walks the `.init_array` section.
+- **`.init_array` processing:** Each function pointer in `.init_array` is called. This is where C++
+  global constructors execute.
+
 4. **`main()` is called** with `argc``argv`And `envp`.
 5. **Return from `main`:** The return value is passed to `exit()`Triggering the termination
- sequence.
+   sequence.
 
 ```cpp
 // Simplified conceptual flow
@@ -91,8 +96,8 @@ __libc_start_main(main, argc, argv, init, fini, rtld_fini, stack_end):
 
 ### Detailed Stack Layout at `_start`
 
-When the kernel transfers control to `_start`The stack contains the program's execution
-Parameters, laid out by the kernel in a specific format defined by the System V ABI:
+When the kernel transfers control to `_start`The stack contains the program's execution Parameters,
+laid out by the kernel in a specific format defined by the System V ABI:
 
 ```
 High Address
@@ -119,8 +124,8 @@ High Address
 Low Address
 ```
 
-The `_start` stub reads `argc` from the top of the stack, computes `argv` as `RSP + 8`And `envp`
-As `RSP + 8 + (argc + 1) * 8`. This layout is guaranteed by the System V AMD64 ABI and is
+The `_start` stub reads `argc` from the top of the stack, computes `argv` as `RSP + 8`And `envp` As
+`RSP + 8 + (argc + 1) * 8`. This layout is guaranteed by the System V AMD64 ABI and is
 Platform-specific (Windows uses a different layout passed via the MSVC CRT).
 
 ## C++ Static Initialization
@@ -139,7 +144,7 @@ Constructor. These pointers are stored in specific binary sections.
 **Sections:**
 
 - `.init_array`: An array of function pointers executed by the CRT startup routine
- (`__libc_csu_init`).
+  (`__libc_csu_init`).
 - `.fini_array`: An array of function pointers executed at termination.
 
 **Inspection:**
@@ -198,7 +203,7 @@ Linker input and cause a previously correct program to crash during startup.
 **Architectural Mitigation:**
 
 1. **Constinit (C++20):** Use `constinit` variables which are guaranteed to be initialized at
- compile-time (placed in `.data`), avoiding runtime execution code entirely.
+   compile-time (placed in `.data`), avoiding runtime execution code entirely.
 2. **Construct On First Use:** Wrap static globals in a function.
 
 ```cpp
@@ -237,9 +242,9 @@ The CRT uses `atexit` to manage cleanup. When a C++ program returns from `main()
 Sequence runs:
 
 1. **`atexit` handlers:** Functions registered via `std::atexit()` are called in reverse
- registration order.
+   registration order.
 2. **Static destructors:** Destructors for global/static C++ objects are called in reverse order of
- construction.
+   construction.
 3. **Stream flushing:** `std::cout` and `printf` buffers are flushed to file descriptors.
 4. **OS Exit:** The CRT invokes the `exit_group` syscall (Linux) or `ExitProcess` API (Windows).
 
@@ -310,8 +315,8 @@ MSVC provides two CRT variants with significantly different behavior:
 - **Dynamic (`/MD`):** Links against `ucrtbase.dll` (Universal C Runtime) and `vcruntime140.dll`.
 - **Static (`/MT`):** Embeds the CRT into the executable.
 
-The MSVC startup calls `mainCRTStartup`Which initializes the heap, runs `.CRT$XCU` initializers,
-And calls `main`.
+The MSVC startup calls `mainCRTStartup`Which initializes the heap, runs `.CRT$XCU` initializers, And
+calls `main`.
 
 ```cmd
 dumpbin /DEPENDENTS app.exe
@@ -339,10 +344,10 @@ Only a minimal subset of the language is available:
 - No exceptions (no `try`/`catch`No `throw`).
 - No RTTI (no `dynamic_cast`No `typeid`).
 - Only these standard library headers are required: `&lt;cstddef&gt;``&lt;cfloat&gt;`
- `&lt;climits&gt;``&lt;cstdalign&gt;``&lt;cstdarg&gt;``&lt;cstdbool&gt;``&lt;cstdlib&gt;`
- (only `abort``atexit``at_quick_exit``exit``quick_exit``_Exit`), `&lt;cstdint&gt;`
- `&lt;cstdio&gt;``&lt;cstring&gt;``&lt;ctime&gt;``&lt;type_traits&gt;``&lt;limits&gt;`
- `&lt;new&gt;` (placement new only), `&lt;initializer_list&gt;``&lt;ciso646&gt;`.
+  `&lt;climits&gt;``&lt;cstdalign&gt;``&lt;cstdarg&gt;``&lt;cstdbool&gt;``&lt;cstdlib&gt;` (only
+  `abort``atexit``at_quick_exit``exit``quick_exit``_Exit`), `&lt;cstdint&gt;`
+  `&lt;cstdio&gt;``&lt;cstring&gt;``&lt;ctime&gt;``&lt;type_traits&gt;``&lt;limits&gt;`
+  `&lt;new&gt;` (placement new only), `&lt;initializer_list&gt;``&lt;ciso646&gt;`.
 
 Per [N4950 S6.9.1 p4], in a freestanding environment, the startup and termination semantics are
 Implementation-defined. There is no guarantee that `.init_array` is processed or that `atexit`
@@ -388,8 +393,8 @@ extern "C" void _start() {
 ### Stack Initialization in Freestanding Environments
 
 In a hosted environment, the kernel sets up the stack before jumping to `_start`. In a freestanding
-Environment (e.g., a bare-metal bootloader), the stack must be configured manually, in the
-Assembly entry point or via a linker script:
+Environment (e.g., a bare-metal bootloader), the stack must be configured manually, in the Assembly
+entry point or via a linker script:
 
 ```ld
 /* linker.ld */
@@ -431,30 +436,28 @@ End immediately; the CRT must unwind the environment.
 
 1. **Return from `main`:** The return value is passed to the CRT.
 2. **`atexit` Handlers:** Functions registered via `std::atexit` are called in reverse order of
- registration.
+   registration.
 3. **Static Destructors:** Destructors for global/static C++ objects are called (reverse order of
- construction).
+   construction).
 4. **Stream Flushing:** `std::cout` / `printf` buffers are flushed to file descriptors.
 5. **OS Exit:** The CRT invokes the `exit` syscall (Linux) or `ExitProcess` API (Windows), returning
- control to the kernel.
+   control to the kernel.
 
-:::warning
-`std::terminate` vs `std::exit` If an exception escapes `main`Or an unjoinable
+:::warning `std::terminate` vs `std::exit` If an exception escapes `main`Or an unjoinable
 `std::thread` is destroyed, the CRT calls `std::terminate`. This calls `std::abort`Which kills the
 Process **without** running static destructors or file buffer flushing. This often results in
-Truncated logs or corrupted data files.
-:::
+Truncated logs or corrupted data files. :::
 
 ### `std::exit` vs `std::quick_exit` vs `std::_Exit`
 
 Per [N4950 S18.5], the C++ standard provides three termination functions with distinct semantics:
 
-| Function | `atexit` handlers | `at_quick_exit` handlers | Static destructors | Stream flush |
+| Function          | `atexit` handlers | `at_quick_exit` handlers | Static destructors | Stream flush |
 | :---------------- | :---------------- | :----------------------- | :----------------- | :----------- |
-| `std::exit` | Yes (reverse) | No | Yes (reverse) | Yes |
-| `std::quick_exit` | No | Yes (reverse) | No | No |
-| `std::_Exit` | No | No | No | No |
-| `std::abort` | No | No | No | No |
+| `std::exit`       | Yes (reverse)     | No                       | Yes (reverse)      | Yes          |
+| `std::quick_exit` | No                | Yes (reverse)            | No                 | No           |
+| `std::_Exit`      | No                | No                       | No                 | No           |
+| `std::abort`      | No                | No                       | No                 | No           |
 
 `std::quick_exit` was introduced in C++11 for scenarios where fast termination is needed (e.g.,
 Process restart in a supervised environment) and cleanup is handled externally. It is the
@@ -468,9 +471,9 @@ That profoundly affects architecture.
 ### 1. Dynamic Linking (`/MD``/MDd`)
 
 - **Mechanism:** The executable relies on `VCRUNTIME140.DLL` and `UCRTBASE.DLL` present on the
- system.
+  system.
 - **Pros:** Smaller binary; OS patches to the CRT apply automatically; Memory ownership (Heap) is
- shared across DLL boundaries.
+  shared across DLL boundaries.
 - **Cons:** "DLL Hell" (missing redistributables).
 
 ### 2. Static Linking (`/MT``/MTd`)
@@ -481,8 +484,8 @@ That profoundly affects architecture.
 
 ### The Heap Isolation Trap
 
-If `App.exe` is linked with `/MT` and `Lib.dll` is linked with `/MT`They essentially have
-**separate Heaps**.
+If `App.exe` is linked with `/MT` and `Lib.dll` is linked with `/MT`They essentially have **separate
+Heaps**.
 
 - Allocating memory in `Lib.dll` and freeing it in `App.exe` causes a Heap Corruption crash.
 - **Best Practice:** Always use `/MD` (Dynamic) for non-trivial systems involving multiple DLLs.
@@ -514,21 +517,21 @@ CLI tools and short-lived microservices.
 ## Common Pitfalls
 
 - **Static init fiasco:** Global objects in different TUs have undefined initialization order. Use
- "construct on first use" (magic statics) or `constinit`.
+  "construct on first use" (magic statics) or `constinit`.
 - **`std::terminate` skips destructors:** An uncaught exception or destroyed joinable thread calls
- `std::abort`Bypassing cleanup. Always catch exceptions in `main` or use `std::set_terminate`.
+  `std::abort`Bypassing cleanup. Always catch exceptions in `main` or use `std::set_terminate`.
 - **Heap isolation on Windows with `/MT`:** Memory allocated in one DLL must be freed in the same
- DLL. Use `/MD` or provide deallocation functions in the DLL.
+  DLL. Use `/MD` or provide deallocation functions in the DLL.
 - **Excessive global constructors in CLI tools:** Each global constructor adds startup latency.
- Profile with `LD_DEBUG=statistics` and minimize.
+  Profile with `LD_DEBUG=statistics` and minimize.
 - **Freestanding without `-nostdlib`:** Using `-ffreestanding` alone still links the CRT. Use
- `-nostdlib` and provide your own `_start` for true freestanding.
-- **Using `std::quick_exit` without registering handlers:** Unlike `std::exit``quick_exit` does
- not run static destructors or flush streams. If you use it, register any necessary cleanup with
- `std::at_quick_exit`.
+  `-nostdlib` and provide your own `_start` for true freestanding.
+- **Using `std::quick_exit` without registering handlers:** Unlike `std::exit``quick_exit` does not
+  run static destructors or flush streams. If you use it, register any necessary cleanup with
+  `std::at_quick_exit`.
 - **Assuming the stack is initialized in freestanding environments:** The kernel initializes the
- stack in hosted environments, but in bare-metal contexts, you must set `SP` manually before
- calling any C++ code.
+  stack in hosted environments, but in bare-metal contexts, you must set `SP` manually before
+  calling any C++ code.
 
 ## Thread-Local Storage Initialization
 
@@ -536,15 +539,15 @@ TLS variables have their own initialization lifecycle that interacts with the CR
 The two categories have fundamentally different performance characteristics:
 
 1. **Static TLS:** Variables declared `thread_local` with constant initializers (zero-initialization
- or constant-expression initialization) are placed in the `.tbss` or `.tdata` ELF sections. The
- dynamic linker (`ld.so`) allocates and initializes these when a new thread is created via the TLS
- block template. Access cost is a single segment register load (`%fs:offset` on x86-64) —
- effectively free after thread creation.
+   or constant-expression initialization) are placed in the `.tbss` or `.tdata` ELF sections. The
+   dynamic linker (`ld.so`) allocates and initializes these when a new thread is created via the TLS
+   block template. Access cost is a single segment register load (`%fs:offset` on x86-64) —
+   effectively free after thread creation.
 2. **Dynamic TLS:** Variables with non-constant initializers (including function-local
- `thread_local` and types with non-trivial constructors) require a guard variable and an
- initialization function. On first access, the CRT checks the guard atomically, calls the
- initializer if needed, and registers a destructor via `__cxa_thread_atexit`. First access has
- significant overhead compared to static TLS.
+   `thread_local` and types with non-trivial constructors) require a guard variable and an
+   initialization function. On first access, the CRT checks the guard atomically, calls the
+   initializer if needed, and registers a destructor via `__cxa_thread_atexit`. First access has
+   significant overhead compared to static TLS.
 
 ```cpp
 #include <iostream>
@@ -564,11 +567,9 @@ Analogous to how `atexit` works for the main thread. If the main thread accesses
 Destructors run during the normal termination sequence. On Windows, the mechanism is `DllMain` with
 `DLL_THREAD_DETACH`.
 
-:::warning
-Dynamic TLS has a significant first-access penalty (guard variable check, potential
+:::warning Dynamic TLS has a significant first-access penalty (guard variable check, potential
 Initialization, destructor registration). On hot paths, prefer static TLS (constant initialization)
-Or pass data explicitly via function parameters.
-:::
+Or pass data explicitly via function parameters. :::
 
 ## DSO Constructor and Destructor Ordering
 
@@ -577,7 +578,7 @@ Own `.init_array` and `.fini_array`. The dynamic linker coordinates initializati
 
 1. The dynamic linker loads all DSOs in **breadth-first dependency order**.
 2. Constructors run in **reverse dependency order**: leaf DSOs initialize first, then their
- dependencies.
+   dependencies.
 3. Destructors run in **dependency order**: dependencies destroyed first, then leaf DSOs.
 
 ```bash
@@ -592,11 +593,9 @@ Another DSO -- if the DSO ordering is wrong, the dependency may not yet be const
 "construct on first use" pattern (magic statics) mitigates this by deferring initialization to first
 Access rather than load time.
 
-:::warning
-`LD_PRELOAD` interposes symbols but does not change `.init_array` ordering. A preloaded
+:::warning `LD_PRELOAD` interposes symbols but does not change `.init_array` ordering. A preloaded
 Library's constructors still run in dependency order relative to other DSOs. If the preloaded
-Library depends on symbols from the main executable, those symbols may not yet be initialized.
-:::
+Library depends on symbols from the main executable, those symbols may not yet be initialized. :::
 
 ## The `main` Function Signature and Return Value
 
@@ -614,7 +613,7 @@ Translates it to the process exit status:
 - `0` indicates success.
 - Non-zero values are implementation-defined but conventionally indicate failure.
 - Only the low 8 bits of the exit status are visible to the parent process (via `waitpid` on Linux
- or `GetExitCodeProcess` on Windows). Values $0$ through $255$ are representable.
+  or `GetExitCodeProcess` on Windows). Values $0$ through $255$ are representable.
 
 Per [N4950 S6.6.1 p3], the `argv[0]` element points to the name used to invoke the program (or an
 Empty string if the name is not available). The `argv` array is terminated by a null pointer, and
@@ -643,22 +642,20 @@ Allocation mechanism ( zeroed pages from the page cache, but this is not guarant
 The CRT initializes the heap allocator before any user code runs. The heap implementation varies by
 CRT:
 
-| CRT | Heap Implementation | Backing System Calls |
+| CRT          | Heap Implementation     | Backing System Calls                       |
 | :----------- | :---------------------- | :----------------------------------------- |
-| **glibc** | ptmalloc2 (malloc/free) | `brk` (small), `mmap` (large, &gt; 128 KB) |
-| **musl** | oom-safe malloc | `mmap` with `MAP_ANONYMOUS` |
-| **MSVC** | Low-fragmentation heap | `VirtualAlloc` / `HeapAlloc` |
-| **jemalloc** | Arena-based allocator | `mmap` / `sbrk` |
+| **glibc**    | ptmalloc2 (malloc/free) | `brk` (small), `mmap` (large, &gt; 128 KB) |
+| **musl**     | oom-safe malloc         | `mmap` with `MAP_ANONYMOUS`                |
+| **MSVC**     | Low-fragmentation heap  | `VirtualAlloc` / `HeapAlloc`               |
+| **jemalloc** | Arena-based allocator   | `mmap` / `sbrk`                            |
 
 The heap is initialized during `__libc_start_main` (glibc) or `mainCRTStartup` (MSVC) before the
 `.init_array` processing. This ensures that global constructors can safely use `new`/`malloc`.
 
-:::warning
-The heap is **not** thread-safe at initialization time. If a global constructor spawns a
+:::warning The heap is **not** thread-safe at initialization time. If a global constructor spawns a
 Thread that allocates memory, the thread may encounter a partially-initialized heap. In practice,
 This is safe on glibc and MSVC because the heap is fully initialized before `.init_array`
-Processing, but it is a theoretical concern on custom CRTs.
-:::
+Processing, but it is a theoretical concern on custom CRTs. :::
 
 ### `operator new` and the CRT
 
@@ -691,11 +688,10 @@ The CRT provides the interface between POSIX/OS signals and C++ exception handli
 Delivered (e.g., `SIGSEGV``SIGFPE`), the CRT's signal handler may:
 
 1. **Translate to C++ exception:** Some CRTs translate signals like `SIGFPE` (divide by zero) into
- C++ exceptions, allowing `try`/`catch` to handle hardware faults.
+   C++ exceptions, allowing `try`/`catch` to handle hardware faults.
 2. **Call the registered handler:** If the program registered a handler via `std::signal()`The CRT
- invokes it.
-3. **Default action:** If no handler is registered, the default action ( termination) is
- taken.
+   invokes it.
+3. **Default action:** If no handler is registered, the default action ( termination) is taken.
 
 On Itanium ABI platforms (Linux, macOS), the CRT installs a signal handler during startup that uses
 The `.eh_frame` section to unwind the stack when an exception is thrown. The unwinder (`_Unwind_* `
@@ -721,10 +717,8 @@ On Linux, the environment variables are located on the stack above `argv` (see t
 Diagram in the startup sequence section). The CRT constructs `envp` from this data and passes it to
 `main` on platforms that support it.
 
-:::info
-Per [N4950 S6.6.1], the `main` function signature with `char* envp[]` as a third parameter
-Is a common extension but not standard C++. Portable code should use `std::getenv()` instead.
-:::
+:::info Per [N4950 S6.6.1], the `main` function signature with `char* envp[]` as a third parameter
+Is a common extension but not standard C++. Portable code should use `std::getenv()` instead. :::
 
 ## See Also
 

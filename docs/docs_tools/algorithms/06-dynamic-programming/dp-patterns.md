@@ -1,9 +1,12 @@
 ---
 id: dp-patterns
 title: Dynamic Programming Patterns
-description: "Dynamic Programming Patterns — Pattern Classification; Decision Tree; Knapsack Family; 0/1 Knapsack with worked examples and exam-style questions."
+description:
+  'Dynamic Programming Patterns — Pattern Classification; Decision Tree; Knapsack Family; 0/1
+  Knapsack with worked examples and exam-style questions.'
 slug: dp-patterns
 ---
+
 ## Pattern Classification
 
 Recognising which DP pattern applies to a problem is the key skill. This section provides a decision
@@ -11,23 +14,23 @@ Framework.
 
 ### Decision Tree
 
-| Signal | Pattern | Example |
+| Signal                                | Pattern             | Example                      |
 | ------------------------------------- | ------------------- | ---------------------------- |
-| Choose items with capacity constraint | Knapsack | 0/1 knapsack, subset sum |
-| Optimise over intervals/substrings | Interval DP | Matrix chain, burst balloons |
-| Problem on a tree structure | Tree DP | Diameter, independent set |
-| Small set of items (n &lt;= 20) | Bitmask DP | TSP, assignment |
-| Count numbers with digit properties | Digit DP | Numbers with no '4' and '7' |
-| Optimise over subsequences/strings | String DP | Edit distance, LCS |
-| Two players taking turns | Game theory DP | Nim, coin game |
-| Greedy seems to work | Greedy-reducible DP | Activity selection |
+| Choose items with capacity constraint | Knapsack            | 0/1 knapsack, subset sum     |
+| Optimise over intervals/substrings    | Interval DP         | Matrix chain, burst balloons |
+| Problem on a tree structure           | Tree DP             | Diameter, independent set    |
+| Small set of items (n &lt;= 20)       | Bitmask DP          | TSP, assignment              |
+| Count numbers with digit properties   | Digit DP            | Numbers with no '4' and '7'  |
+| Optimise over subsequences/strings    | String DP           | Edit distance, LCS           |
+| Two players taking turns              | Game theory DP      | Nim, coin game               |
+| Greedy seems to work                  | Greedy-reducible DP | Activity selection           |
 
 ## Knapsack Family
 
 ### 0/1 Knapsack
 
-Given $n$ items with weights $w_i$ and values $v_i$And a knapsack of capacity $W$Maximise the
-Total value of items selected. Each item can be taken at most once.
+Given $n$ items with weights $w_i$ and values $v_i$And a knapsack of capacity $W$Maximise the Total
+value of items selected. Each item can be taken at most once.
 
 $$dp[i][c] = \max(dp[i-1][c], dp[i-1][c - w_i] + v_i) \quad \mathrm{if {} c \ge w_i$$
 
@@ -289,8 +292,8 @@ def interval_dp_template(arr):
 
 ## Tree DP
 
-Tree DP applies dynamic programming on tree structures, using post-order traversal
-(process children before parent).
+Tree DP applies dynamic programming on tree structures, using post-order traversal (process children
+before parent).
 
 ### Tree Diameter
 
@@ -748,28 +751,28 @@ The locally optimal choice always lead to the globally optimal solution?
 
 ### When Greedy Works Instead of DP
 
-| Problem | Greedy Works? | Greedy Strategy |
+| Problem                    | Greedy Works? | Greedy Strategy                |
 | -------------------------- | ------------- | ------------------------------ |
-| Fractional knapsack | Yes | Sort by value/weight ratio |
-| Activity selection | Yes | Earliest finish time |
-| Huffman coding | Yes | Merge two smallest frequencies |
-| Minimum spanning tree | Yes | Kruskal / Prim |
-| Dijkstra (non-negative) | Yes | Process smallest distance |
-| 0/1 knapsack | No | DP required |
-| Partition equal subset sum | No | DP required |
-| Edit distance | No | DP required |
+| Fractional knapsack        | Yes           | Sort by value/weight ratio     |
+| Activity selection         | Yes           | Earliest finish time           |
+| Huffman coding             | Yes           | Merge two smallest frequencies |
+| Minimum spanning tree      | Yes           | Kruskal / Prim                 |
+| Dijkstra (non-negative)    | Yes           | Process smallest distance      |
+| 0/1 knapsack               | No            | DP required                    |
+| Partition equal subset sum | No            | DP required                    |
+| Edit distance              | No            | DP required                    |
 
 ## State Compression Techniques
 
 ### Reducing State Space
 
-| Technique | When to Use | Example |
+| Technique              | When to Use                         | Example                                |
 | ---------------------- | ----------------------------------- | -------------------------------------- |
-| Coordinate compression | Large coordinate values, few unique | `sorted(set(values))` + binary search |
-| Difference encoding | State depends on differences | `dp[i][diff]` instead of `dp[i][a][b]` |
-| Rolling array | Only previous row/column needed | `prev` and `curr` arrays |
-| Bitmask | Small set of choices (n &lt;= 20) | TSP, assignment |
-| Sparse DP | Many states unreachable | Dictionary instead of array |
+| Coordinate compression | Large coordinate values, few unique | `sorted(set(values))` + binary search  |
+| Difference encoding    | State depends on differences        | `dp[i][diff]` instead of `dp[i][a][b]` |
+| Rolling array          | Only previous row/column needed     | `prev` and `curr` arrays               |
+| Bitmask                | Small set of choices (n &lt;= 20)   | TSP, assignment                        |
+| Sparse DP              | Many states unreachable             | Dictionary instead of array            |
 
 ## Common Pitfalls
 
@@ -811,10 +814,9 @@ Digit of the upper bound. Forgetting to propagate `tight` correctly produces wro
 
 ### 7. Tree DP Root Assumption
 
-Tree DP solutions often assume a specific root ( node 0). If the problem asks for a
-Property of the tree regardless of root (e.g., diameter), make sure the solution does not depend on
-The root choice. For problems that require computing a value for every node as root, use rerooting
-DP.
+Tree DP solutions often assume a specific root ( node 0). If the problem asks for a Property of the
+tree regardless of root (e.g., diameter), make sure the solution does not depend on The root choice.
+For problems that require computing a value for every node as root, use rerooting DP.
 
 ### 8. Overcounting in Game Theory DP
 

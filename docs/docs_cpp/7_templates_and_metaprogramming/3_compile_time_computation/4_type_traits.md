@@ -1,6 +1,8 @@
 ---
 title: Type Traits and Static Reflection Patterns
-description: "C++: Type Traits and Static Reflection Patterns — The `<type_traits>` Header; `std::enable_if` and SFINAE; Tag Dispatch."
+description:
+  'C++: Type Traits and Static Reflection Patterns — The `<type_traits>` Header; `std::enable_if`
+  and SFINAE; Tag Dispatch.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -8,6 +10,7 @@ categories:
   - Cpp
 slug: type-traits-and-static-reflection-patterns
 ---
+
 # Type Traits and Static Reflection Patterns
 
 Type traits provide compile-time type introspection and transformation, forming the foundation of
@@ -20,14 +23,14 @@ Runtime overhead.
 The `<type_traits>` header [N4950 §20.15] provides a comprehensive set of compile-time type
 Introspection and transformation utilities. They fall into several categories:
 
-| Category | Examples |
-| ------------------------- | --------------------------------------------------------------------------- |
-| Primary type categories | `is_void``is_integral``is_floating_point``is_pointer``is_reference` |
-| Composite type categories | `is_arithmetic``is_compound``is_reference``is_fundamental` |
-| Type properties | `is_const``is_volatile``is_trivial``is_standard_layout``is_empty` |
-| Type relationships | `is_same``is_base_of``is_convertible``is_nothrow_convertible` |
-| Type modifications | `remove_cv``add_pointer``decay``enable_if``conditional` |
-| Query properties | `alignment_of``rank``extent``tuple_size` |
+| Category                  | Examples                                                            |
+| ------------------------- | ------------------------------------------------------------------- |
+| Primary type categories   | `is_void``is_integral``is_floating_point``is_pointer``is_reference` |
+| Composite type categories | `is_arithmetic``is_compound``is_reference``is_fundamental`          |
+| Type properties           | `is_const``is_volatile``is_trivial``is_standard_layout``is_empty`   |
+| Type relationships        | `is_same``is_base_of``is_convertible``is_nothrow_convertible`       |
+| Type modifications        | `remove_cv``add_pointer``decay``enable_if``conditional`             |
+| Query properties          | `alignment_of``rank``extent``tuple_size`                            |
 
 ```cpp
 #include <iostream>
@@ -63,8 +66,8 @@ int main() {
 ## `std::enable_if` and SFINAE
 
 **SFINAE** (Substitution Failure Is Not An Error) [N4950 §13.8.3] means that when substituting
-Deduced template arguments into the function type causes a failure, the function is removed
-From the overload set rather than causing a compilation error.
+Deduced template arguments into the function type causes a failure, the function is removed From the
+overload set rather than causing a compilation error.
 
 `std::enable_if<Condition, Type = void>` [N4950 §20.15.8] is the classic SFINAE tool: if `Condition`
 Is true, it provides the nested type `type` (defaults to `void`); otherwise, no `type` member
@@ -121,12 +124,10 @@ int main() {
 }
 ```
 
-:::warning
-`std::enable_if` SFINAE is effective but produces terrible error messages and makes
+:::warning `std::enable_if` SFINAE is effective but produces terrible error messages and makes
 Function signatures hard to read. In C++17 and later, prefer `if constexpr` for compile-time
 Branching inside function bodies. In C++20, prefer **concepts** and **constraints** [N4950 §13.7.7]
-For the clearest syntax.
-:::
+For the clearest syntax. :::
 
 ## Tag Dispatch
 
@@ -288,12 +289,10 @@ int main() {
 
 ```
 
-:::tip
-Prefer `if constexpr` over `std::enable_if` when you have a single function that needs to
+:::tip Prefer `if constexpr` over `std::enable_if` when you have a single function that needs to
 Handle multiple type categories. Prefer `std::enable_if` (or better, C++20 concepts) when different
 Implementations should be entirely separate overloads. The `if constexpr` approach is generally
-Easier to read, debug, and maintain.
-:::
+Easier to read, debug, and maintain. :::
 
 ## Comparison: Tag Dispatch vs `if constexpr` vs Concepts
 
@@ -374,12 +373,12 @@ int main() {
 }
 ```
 
-| Technique | C++ version | Readability | Error messages | Flexibility |
+| Technique            | C++ version | Readability | Error messages | Flexibility              |
 | -------------------- | ----------- | ----------- | -------------- | ------------------------ |
-| `enable_if` (SFINAE) | C++11 | Poor | Terrible | High |
-| Tag dispatch | C++11 | Medium | Medium | High |
-| `if constexpr` | C++17 | Good | Good | Medium (single function) |
-| Concepts/constraints | C++20 | Excellent | Excellent | Highest |
+| `enable_if` (SFINAE) | C++11       | Poor        | Terrible       | High                     |
+| Tag dispatch         | C++11       | Medium      | Medium         | High                     |
+| `if constexpr`       | C++17       | Good        | Good           | Medium (single function) |
+| Concepts/constraints | C++20       | Excellent   | Excellent      | Highest                  |
 
 ## Advanced Type Traits
 
@@ -387,26 +386,26 @@ Beyond the basic `std::is_*` traits, several advanced traits are essential for g
 
 ### Tuple Traits
 
-| Trait | Description |
+| Trait                            | Description                                         |
 | -------------------------------- | --------------------------------------------------- |
 | `std::tuple_element_t<I, Tuple>` | The type of the `I`-th element of `Tuple` [§20.5.3] |
-| `std::tuple_size_v<Tuple>` | The number of elements in `Tuple` [§20.5.3] |
-| `std::tuple_size<Tuple>::value` | Same as above (C++11 style) |
+| `std::tuple_size_v<Tuple>`       | The number of elements in `Tuple` [§20.5.3]         |
+| `std::tuple_size<Tuple>::value`  | Same as above (C++11 style)                         |
 
 ### Variant Traits
 
-| Trait | Description |
+| Trait                                    | Description                                               |
 | ---------------------------------------- | --------------------------------------------------------- |
 | `std::variant_alternative_t<I, Variant>` | The type of the `I`-th alternative of `Variant` [§20.7.3] |
-| `std::variant_size_v<Variant>` | The number of alternatives in `Variant` [§20.7.3] |
+| `std::variant_size_v<Variant>`           | The number of alternatives in `Variant` [§20.7.3]         |
 
 ### Conditional Type Selection
 
-| Trait | Description |
+| Trait                         | Description                                                                          |
 | ----------------------------- | ------------------------------------------------------------------------------------ |
-| `std::conditional_t<B, T, F>` | `T` if `B` is true, `F` otherwise [§20.15.8] |
-| `std::type_identity_t<T>` | `T` --- used to prevent deduction [§20.15.8] |
-| `std::decay_t<T>` | Applies array-to-pointer, function-to-pointer, and cv-qualifier removal [§20.15.7.2] |
+| `std::conditional_t<B, T, F>` | `T` if `B` is true, `F` otherwise [§20.15.8]                                         |
+| `std::type_identity_t<T>`     | `T` --- used to prevent deduction [§20.15.8]                                         |
+| `std::decay_t<T>`             | Applies array-to-pointer, function-to-pointer, and cv-qualifier removal [§20.15.7.2] |
 
 ```cpp
 #include <iostream>
@@ -496,11 +495,11 @@ int main() {
 A type. It is the primary mechanism for "unrolling" variadic templates and tuples. The key utilities
 Are:
 
-| Type | Description |
+| Type                                | Description                                                    |
 | ----------------------------------- | -------------------------------------------------------------- |
-| `std::index_sequence<Is...>` | A type representing the compile-time sequence `0, 1, ..., n-1` |
-| `std::make_index_sequence<N>` | Produces `std::index_sequence<0, 1, ..., N-1>` |
-| `std::index_sequence_for<Types...>` | Produces `std::make_index_sequence<sizeof...(Types)>` |
+| `std::index_sequence<Is...>`        | A type representing the compile-time sequence `0, 1, ..., n-1` |
+| `std::make_index_sequence<N>`       | Produces `std::index_sequence<0, 1, ..., N-1>`                 |
+| `std::index_sequence_for<Types...>` | Produces `std::make_index_sequence<sizeof...(Types)>`          |
 
 These work by mapping the count `N` to a parameter pack of integers, which can then be expanded with
 Parameter pack expansion:
@@ -575,13 +574,11 @@ for_each output: [1] [2.5] [hello]
 transformed: [2] [5] [hello!]
 ```
 
-:::info
-Fold Expressions and index_sequence The pattern `(f(std::get<Is>(t)), ...)` is a **fold
+:::info Fold Expressions and index_sequence The pattern `(f(std::get<Is>(t)), ...)` is a **fold
 Expression** [N4950 §7.5.6] that expands the comma operator over the parameter pack `Is`. This is
 The idiomatic way to iterate over a tuple at compile time. Without `index_sequence`There is no way
 To iterate over a tuple's elements in a generic function, because tuples do not have a
-Runtime-iterable interface.
-:::
+Runtime-iterable interface. :::
 
 ## Unrolling a Tuple with `index_sequence`
 
@@ -739,11 +736,9 @@ Min version: 2.99.99
 1, 2, three
 ```
 
-:::tip
-`std::apply` for Tuple Unpacking `std::apply` [N4950 §20.14.4] is the standard library
+:::tip `std::apply` for Tuple Unpacking `std::apply` [N4950 §20.14.4] is the standard library
 Utility that unpacks a tuple as arguments to a callable. It is implemented using the same
-`index_sequence` pattern shown above. Prefer `std::apply` over writing your own unpacking code.
-:::
+`index_sequence` pattern shown above. Prefer `std::apply` over writing your own unpacking code. :::
 
 ## Reflection Preview (C++26)
 
@@ -752,25 +747,23 @@ Utility that unpacks a tuple as arguments to a callable. It is implemented using
 C++26 introduces **static reflection** through the `<meta>` header [P2996R9], which provides the
 Ability to inspect types, functions, and class members at compile time. The core types are:
 
-| Type | Description |
+| Type               | Description                                                                                   |
 | ------------------ | --------------------------------------------------------------------------------------------- |
-| `std::meta::info` | A compile-time value representing a reflection of a C++ entity (type, function, member, etc.) |
-| `std::meta::value` | A type-erased compile-time value that can hold any reflection |
+| `std::meta::info`  | A compile-time value representing a reflection of a C++ entity (type, function, member, etc.) |
+| `std::meta::value` | A type-erased compile-time value that can hold any reflection                                 |
 
 The key operations include:
 
 - `std::meta::infoof(expression)` --- obtains a `std::meta::info` representing the type or entity of
- the expression.
+  the expression.
 - `^^identifier` --- the reflection operator, produces `std::meta::info` for the named entity.
 - `std::meta::members_of(type_info)` --- returns a `std::vector<std::meta::info>` of the members of
- a class type.
+  a class type.
 - `std::meta::name_of(info)` --- returns the name of the reflected entity as a `std::string_view`.
 
-:::warning
-C++26 Status Static reflection is approved for C++26 but the exact API is still being
+:::warning C++26 Status Static reflection is approved for C++26 but the exact API is still being
 Finalized. The examples below follow the direction of P2996R9, which is the leading proposal.
-Compiler support may vary. Check the latest compiler documentation for current support.
-:::
+Compiler support may vary. Check the latest compiler documentation for current support. :::
 
 ### Code Example: Aggregate Introspection Pattern
 
@@ -904,24 +897,22 @@ Config (4 fields):
 Port via index: 8080
 ```
 
-:::tip
-When to Use Boost.PFR Boost.PFR works for **standard-layout aggregates** (plain structs with
+:::tip When to Use Boost.PFR Boost.PFR works for **standard-layout aggregates** (plain structs with
 Public members, no virtual functions, no base classes, no custom constructors). It does not work for
 Types with private members, virtual functions, or non-standard layout. If your types satisfy these
 Constraints, Boost.PFR is a practical, header-only solution that requires no code generation or
 Macro registration. For more complex types, wait for C++26 reflection or use a library like Magic
-Enum for enums.
-:::
+Enum for enums. :::
 
 ### Comparison: Current Approaches to Compile-Time Introspection
 
-| Approach | C++ Version | Limitations | Overhead |
+| Approach                              | C++ Version       | Limitations                     | Overhead     |
 | ------------------------------------- | ----------------- | ------------------------------- | ------------ |
-| Manual macros (e.g., `DEFINE_FIELDS`) | Any | Boilerplate, error-prone | Zero runtime |
-| Boost.PFR | C++14+ | Standard-layout aggregates only | Zero runtime |
-| Magic Get (Agate/Boost) | C++14+ | Same as Boost.PFR | Zero runtime |
-| `__builtin_*` compiler intrinsics | Compiler-specific | Non-portable | Zero runtime |
-| C++26 `<meta>` reflection | C++26 | Not yet widely supported | Zero runtime |
+| Manual macros (e.g., `DEFINE_FIELDS`) | Any               | Boilerplate, error-prone        | Zero runtime |
+| Boost.PFR                             | C++14+            | Standard-layout aggregates only | Zero runtime |
+| Magic Get (Agate/Boost)               | C++14+            | Same as Boost.PFR               | Zero runtime |
+| `__builtin_*` compiler intrinsics     | Compiler-specific | Non-portable                    | Zero runtime |
+| C++26 `<meta>` reflection             | C++26             | Not yet widely supported        | Zero runtime |
 
 All of these approaches are **zero-overhead** --- the introspection happens at compile time, and the
 Generated code is equivalent to hand-written member access. The primary difference is in

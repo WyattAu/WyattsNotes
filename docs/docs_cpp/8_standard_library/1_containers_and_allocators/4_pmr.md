@@ -1,6 +1,8 @@
 ---
 title: Polymorphic Memory Resources (PMR)
-description: "C++: Polymorphic Memory Resources (PMR) — `std::pmr::memory_resource`: The Polymorphic Allocator Interface for thorough revision and examination preparat."
+description:
+  'C++: Polymorphic Memory Resources (PMR) — `std::pmr::memory_resource`: The Polymorphic Allocator
+  Interface for thorough revision and examination preparat.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -8,12 +10,13 @@ categories:
   - Cpp
 slug: polymorphic-memory-resources-pmr
 ---
+
 ## Polymorphic Memory Resources (PMR) and Monotonic Buffers
 
-C++17 introduced **polymorphic memory resources** (PMR) in `&lt;memory_resource>`Enabling
-Containers to use different allocation strategies without changing their type. PMR decouples the
-Allocation strategy from the container, supporting patterns like arena allocation, pool allocation,
-And dependency injection of memory resources. This section covers the `memory_resource` abstraction,
+C++17 introduced **polymorphic memory resources** (PMR) in `&lt;memory_resource>`Enabling Containers
+to use different allocation strategies without changing their type. PMR decouples the Allocation
+strategy from the container, supporting patterns like arena allocation, pool allocation, And
+dependency injection of memory resources. This section covers the `memory_resource` abstraction,
 `monotonic_buffer_resource``unsynchronized_pool_resource`And practical integration patterns.
 
 ### `std::pmr::memory_resource`: The Polymorphic Allocator Interface
@@ -133,11 +136,9 @@ int main() {
 }
 ```
 
-:::tip
-`monotonic_buffer_resource` is perfect for parsing, JSON processing, AST construction, and
+:::tip `monotonic_buffer_resource` is perfect for parsing, JSON processing, AST construction, and
 Any scenario where many objects are created and destroyed together. Since individual `deallocate`
-Calls are no-ops, allocation is extremely fast.
-:::
+Calls are no-ops, allocation is extremely fast. :::
 
 ### `std::pmr::unsynchronized_pool_resource`
 
@@ -146,9 +147,8 @@ Manages a set of pools, one for each commonly-used allocation size. It provides:
 
 - **Fast allocation**: faster than `new` for small objects
 - **Thread-unsafe**: must not be used from multiple threads simultaneously (use
- `synchronized_pool_resource` for thread safety)
-- **Proper deallocation**: unlike `monotonic_buffer_resource`Individual deallocations work
- correctly
+  `synchronized_pool_resource` for thread safety)
+- **Proper deallocation**: unlike `monotonic_buffer_resource`Individual deallocations work correctly
 
 ```cpp
 #include <memory_resource>
@@ -266,12 +266,10 @@ int main() {
 }
 ```
 
-:::warning
-When using `monotonic_buffer_resource`Remember that `deallocate` is a no-op. If you
+:::warning When using `monotonic_buffer_resource`Remember that `deallocate` is a no-op. If you
 Create container A, then container B, and A still holds references to memory allocated from B's
 Objects, those references may dangle if B is destroyed and its memory is recycled. Arena allocation
-Is safest when all allocations share the same lifetime scope.
-:::
+Is safest when all allocations share the same lifetime scope. :::
 
 ### Integration Pattern: Dependency Injection of Memory Resources
 
@@ -431,9 +429,8 @@ Allocation/deallocation logs and leak detection without modifying the code that 
 ### `std::pmr::synchronized_pool_resource`: Thread-Safe Pool Allocation
 
 For multi-threaded contexts, `std::pmr::synchronized_pool_resource` [N4950 §23.10.4] provides the
-Same pool-based allocation as `unsynchronized_pool_resource` but with internal synchronization
-( a mutex per pool). The trade-off is thread safety at the cost of higher per-allocation
-Overhead:
+Same pool-based allocation as `unsynchronized_pool_resource` but with internal synchronization ( a
+mutex per pool). The trade-off is thread safety at the cost of higher per-allocation Overhead:
 
 ```cpp
 #include <memory_resource>
@@ -469,12 +466,10 @@ int main() {
 }
 ```
 
-:::info
-The performance advantage of `synchronized_pool_resource` over `new_delete_resource()` in
-Multi-threaded code comes from reduced contention: each thread allocates from its own
-Thread-local pool chunk, and the global heap lock is only contended when a new chunk is needed. For
-Single-threaded code, `unsynchronized_pool_resource` is strictly faster.
-:::
+:::info The performance advantage of `synchronized_pool_resource` over `new_delete_resource()` in
+Multi-threaded code comes from reduced contention: each thread allocates from its own Thread-local
+pool chunk, and the global heap lock is only contended when a new chunk is needed. For
+Single-threaded code, `unsynchronized_pool_resource` is strictly faster. :::
 
 ### Common Pitfalls
 
@@ -485,9 +480,9 @@ Reference dangles. All objects using a `monotonic_buffer_resource` should share 
 Scope as the resource itself.
 
 **2. Buffer sizing for `monotonic_buffer_resource`:** If the initial buffer is too small, the
-Resource falls back to the upstream allocator ( `new_delete_resource`), negating the
-Performance benefit. Profile actual allocation patterns and size the buffer accordingly. A common
-Technique is to measure peak allocation during a trial run and use that plus a safety margin.
+Resource falls back to the upstream allocator ( `new_delete_resource`), negating the Performance
+benefit. Profile actual allocation patterns and size the buffer accordingly. A common Technique is
+to measure peak allocation during a trial run and use that plus a safety margin.
 
 **3. `polymorphic_allocator` is not a drop-in replacement for `std::allocator`:** PMR containers
 Have a different type (`std::vector&lt;T, std::pmr::polymorphic_allocator&lt;T>>`) from standard

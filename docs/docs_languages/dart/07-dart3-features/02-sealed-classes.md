@@ -1,6 +1,8 @@
 ---
 title: Sealed Classes
-description: "Sealed Classes — The Systems Engineering Motivation; Sum Types in Language Design; Basic Syntax; The Same-Library Restriction."
+description:
+  'Sealed Classes — The Systems Engineering Motivation; Sum Types in Language Design; Basic Syntax;
+  The Same-Library Restriction.'
 date: 2026-04-05T00:00:00.000Z
 tags:
   - Dart
@@ -8,6 +10,7 @@ categories:
   - Dart
 slug: sealed-classes
 ---
+
 ## What Sealed Classes Are
 
 Sealed classes are a language-level constraint that restricts a class hierarchy to a known, finite
@@ -70,7 +73,7 @@ The `sealed` modifier on `NetworkResult` means:
 
 1. `NetworkResult` cannot be instantiated directly (it is implicitly abstract).
 2. Direct subtypes of `NetworkResult` must be in the **same library** (same file, or files in the
- same `part`/`part of` chain).
+   same `part`/`part of` chain).
 3. The compiler can enumerate all direct subtypes.
 
 ### The Same-Library Restriction
@@ -182,9 +185,9 @@ class Square implements Shape {
 The difference between `extends` and `implements` for sealed subtypes:
 
 - `extends`: Inherits implementation (methods, fields). Is a subtype in both the type hierarchy and
- the sealed hierarchy.
+  the sealed hierarchy.
 - `implements`: Does not inherit implementation. Only commits to the interface contract. Is still a
- direct subtype of the sealed class for exhaustiveness.
+  direct subtype of the sealed class for exhaustiveness.
 
 ### `enum` as Sealed Subtype
 
@@ -354,13 +357,13 @@ String describe(Result&lt;int&gt; r) => switch (r) {
 
 The key difference: abstract classes allow external subtypes; sealed classes do not.
 
-| Property | `abstract class` | `sealed class` |
+| Property                | `abstract class`              | `sealed class`            |
 | ----------------------- | ----------------------------- | ------------------------- |
-| Instantiable directly | No | No |
-| External subtypes | Yes (any library can extend) | No (same library only) |
-| Exhaustive switch | No (must use `default`) | Yes (compiler-enforced) |
-| Type hierarchy openness | Open (extensible) | Closed (fixed) |
-| Use case | Polymorphism, shared behavior | Sum types, state machines |
+| Instantiable directly   | No                            | No                        |
+| External subtypes       | Yes (any library can extend)  | No (same library only)    |
+| Exhaustive switch       | No (must use `default`)       | Yes (compiler-enforced)   |
+| Type hierarchy openness | Open (extensible)             | Closed (fixed)            |
+| Use case                | Polymorphism, shared behavior | Sum types, state machines |
 
 ### When to Use Abstract Classes
 
@@ -450,15 +453,15 @@ class HttpLoading extends HttpResponse&lt;Never&gt; {}
 
 ### Comparison
 
-| Property | `enum` | `sealed class` |
+| Property                 | `enum`                             | `sealed class`                              |
 | ------------------------ | ---------------------------------- | ------------------------------------------- |
-| Variant-specific fields | No (all variants share fields) | Yes (each class has its own fields) |
-| Variant-specific methods | Limited (no override per variant) | Yes (each class has its own methods) |
-| Exhaustive switch | Yes | Yes |
-| Compile-time constants | Yes (`const` values) | No |
-| Memory overhead | Minimal (single object per value) | Higher (each instance is a separate object) |
-| Complexity | Simple | More complex |
-| Use case | Fixed value sets with uniform data | Heterogeneous types with different shapes |
+| Variant-specific fields  | No (all variants share fields)     | Yes (each class has its own fields)         |
+| Variant-specific methods | Limited (no override per variant)  | Yes (each class has its own methods)        |
+| Exhaustive switch        | Yes                                | Yes                                         |
+| Compile-time constants   | Yes (`const` values)               | No                                          |
+| Memory overhead          | Minimal (single object per value)  | Higher (each instance is a separate object) |
+| Complexity               | Simple                             | More complex                                |
+| Use case                 | Fixed value sets with uniform data | Heterogeneous types with different shapes   |
 
 ### When to Use Which
 
@@ -471,7 +474,7 @@ Use **enums** when:
 Use **sealed classes** when:
 
 - Each variant has a fundamentally different structure (Success has data, Error has message, Loading
- has nothing).
+  has nothing).
 - Each variant needs its own methods.
 - The type hierarchy is more complex than a flat list of values.
 

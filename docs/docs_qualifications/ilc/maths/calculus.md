@@ -1,6 +1,8 @@
 ---
 title: Calculus
-description: "Calculus — Differentiation; The Derivative; Differentiation from First Principles (HL); Proof of the Product Rule (HL). and examination."
+description:
+  'Calculus — Differentiation; The Derivative; Differentiation from First Principles (HL); Proof of
+  the Product Rule (HL). and examination.'
 date: 2026-04-14
 tags:
   - Mathematics
@@ -9,6 +11,7 @@ categories:
   - Mathematics
 slug: calculus
 ---
+
 # Calculus
 
 Calculus is divided into two main branches: **differentiation** (finding rates of change) and
@@ -17,14 +20,8 @@ Both levels.
 
 ## Differentiation
 
-
-
-<DesmosGraph
- title="Differentiation: Tangent Lines"
- expressions={["f(x)=x^3-3x^2+2", "f'(x)=3x^2-6x"]}
- width={800}
- height={500}
-/>
+<DesmosGraph title="Differentiation: Tangent Lines" expressions={["f(x)=x^3-3x^2+2",
+"f'(x)=3x^2-6x"]} width={800} height={500} />
 
 Adjust the parameters in the graph above to explore the relationships between variables.
 
@@ -120,13 +117,13 @@ $$
 
 | Function $f(x)$ | Derivative $f'(x)$ |
 | --------------- | ------------------ |
-| $c$ (constant) | $0$ |
-| $x^n$ | $nx^{n-1}$ |
-| $e^x$ | $e^x$ |
-| $\ln x$ | $\frac{1}{x}$ |
-| $\sin x$ | $\cos x$ |
-| $\cos x$ | $-\sin x$ |
-| $\tan x$ | $\sec^2 x$ |
+| $c$ (constant)  | $0$                |
+| $x^n$           | $nx^{n-1}$         |
+| $e^x$           | $e^x$              |
+| $\ln x$         | $\frac{1}{x}$      |
+| $\sin x$        | $\cos x$           |
+| $\cos x$        | $-\sin x$          |
+| $\tan x$        | $\sec^2 x$         |
 
 ### Rules of Differentiation (OL/HL)
 
@@ -284,10 +281,10 @@ $$
 
 Stationary points occur where $f'(x) = 0$. Use the second derivative to classify:
 
-| Condition | Type |
-| ------------------------- | ----------------- |
-| $f'(x) = 0$$f''(x) > 0$ | Local minimum |
-| $f'(x) = 0$$f''(x) < 0$ | Local maximum |
+| Condition               | Type              |
+| ----------------------- | ----------------- |
+| $f'(x) = 0$$f''(x) > 0$ | Local minimum     |
+| $f'(x) = 0$$f''(x) < 0$ | Local maximum     |
 | $f'(x) = 0$$f''(x) = 0$ | Test inconclusive |
 
 **Example (OL):** Find and classify the stationary points of $f(x) = x^3 - 6x^2 + 9x + 1$.
@@ -335,8 +332,8 @@ Point of inflexion with a horizontal tangent (a "saddle point").
 
 ### The Mean Value Theorem (HL)
 
-If $f$ is continuous on $[a, b]$ and differentiable on $(a, b)$Then there exists $c \in (a, b)$
-Such that:
+If $f$ is continuous on $[a, b]$ and differentiable on $(a, b)$Then there exists $c \in (a, b)$ Such
+that:
 
 $$
 F'(c) = \frac{f(b) - f(a)}{b - a}
@@ -358,18 +355,18 @@ We need $f'(c) = 2c = 4$So $c = 2$. Since $1 < 2 < 3$The MVT is verified.
 
 ### Rates of Change (OL/HL)
 
-**Example (OL):** The radius of a circle is increasing at $3\mathrm{ cm/s{}$. Find the rate of increase
-Of the area when $r = 5\mathrm{ cm{}$.
+**Example (OL):** The radius of a circle is increasing at $3\mathrm{ cm/s{}$. Find the rate of
+increase Of the area when $r = 5\mathrm{ cm{}$.
 
 $$
 A = \pi r^2 \implies \frac{dA}{dt} = 2\pi r \frac{dr}{dt} = 2\pi(5)(3) = 30\pi \mathrm{ cm{}^2/\mathrm{s{}
 $$
 
 **Example (HL):** A conical tank with height 10 m and base radius 5 m is being filled with water at
-A rate of $3\mathrm{ m{}^3/\mathrm{min{}$. How fast is the water level rising when the water is 4 m deep?
+A rate of $3\mathrm{ m{}^3/\mathrm{min{}$. How fast is the water level rising when the water is 4 m
+deep?
 
-The tank has similar cross-sections, so $\frac{r}{h} = \frac{5}{10} = \frac{1}{2}$Giving
-$r = h/2$.
+The tank has similar cross-sections, so $\frac{r}{h} = \frac{5}{10} = \frac{1}{2}$Giving $r = h/2$.
 
 $$
 V = \frac{1}{3}\pi r^2 h = \frac{1}{3}\pi\left(\frac{h}{2}\right)^2 h = \frac{\pi h^3}{12}
@@ -410,8 +407,8 @@ $x = 1$ is $y = ex$.
 
 ### Optimisation (HL)
 
-**Example (HL):** A rectangular box with a square base has a surface area of $150\mathrm{ cm{}^2$. Find
-The dimensions that maximise the volume.
+**Example (HL):** A rectangular box with a square base has a surface area of $150\mathrm{ cm{}^2$.
+Find The dimensions that maximise the volume.
 
 Let the base have side $x$ and the height be $h$. Then:
 
@@ -446,20 +443,18 @@ $$
 
 ### Standard Integrals (OL/HL)
 
-| Function | Integral |
+| Function      | Integral                  |
 | ------------- | ------------------------- | --- | ---- |
-| $x^n$ | $\frac{x^{n+1}}{n+1} + C$ |
-| $e^x$ | $e^x + C$ |
+| $x^n$         | $\frac{x^{n+1}}{n+1} + C$ |
+| $e^x$         | $e^x + C$                 |
 | $\frac{1}{x}$ | $\ln                      | x   | + C$ |
-| $\cos x$ | $\sin x + C$ |
-| $\sin x$ | $-\cos x + C$ |
-| $\sec^2 x$ | $\tan x + C$ |
+| $\cos x$      | $\sin x + C$              |
+| $\sin x$      | $-\cos x + C$             |
+| $\sec^2 x$    | $\tan x + C$              |
 
-:::note
-The absolute value in $\int \frac{1}{x}\,dx = \ln|x| + C$ is essential. It accounts for the
+:::note The absolute value in $\int \frac{1}{x}\,dx = \ln|x| + C$ is essential. It accounts for the
 Fact that $\frac{d}{dx}[\ln x] = \frac{1}{x}$ for $x > 0$ and
-$\frac{d}{dx}[\ln(-x)] = \frac{-1}{-x} = \frac{1}{x}$ for $x < 0$.
-:::
+$\frac{d}{dx}[\ln(-x)] = \frac{-1}{-x} = \frac{1}{x}$ for $x < 0$. :::
 
 ### Definite Integration (OL/HL)
 
@@ -484,10 +479,8 @@ $$
 A = \int_a^b |f(x)| \, dx
 $$
 
-:::warning
-If the curve crosses the $x$-axis between $a$ and $b$Split the integral and take the
-Absolute value of each part. The integral itself gives the signed area.
-:::
+:::warning If the curve crosses the $x$-axis between $a$ and $b$Split the integral and take the
+Absolute value of each part. The integral itself gives the signed area. :::
 
 **Example (OL):** Find the area enclosed by $y = x^2$The $x$-axis, $x = 0$And $x = 3$.
 
@@ -781,23 +774,23 @@ At $t = 9$: $V = (10 - 0.9)^2 = 9.1^2 = 82.81$ litres.
 ## Common Pitfalls
 
 1. **Forgetting the $+C$** in indefinite integrals. This is equivalent to losing the constant of
- integration and makes it impossible to apply initial conditions.
+   integration and makes it impossible to apply initial conditions.
 2. **Chain rule errors** -- always multiply by the derivative of the inner function.
 3. **Sign errors** with $\sin x$ and $\cos x$ derivatives/integrals. Remember:
- $\int \sin x\,dx = -\cos x$ (the integral has a negative sign).
+   $\int \sin x\,dx = -\cos x$ (the integral has a negative sign).
 4. **Not splitting integrals** when a curve crosses the $x$-axis. Use the absolute value.
 5. **Integration by parts:** choosing the wrong $u$ and $dv$. Apply LIATE.
 6. **Limits in definite integrals** -- substitute the upper limit first, then subtract the lower
- limit result.
+   limit result.
 7. **Forgetting to change limits** when using substitution in a definite integral.
 8. **Confusing $\frac{d}{dx}[\ln x] = \frac{1}{x}$ with $\int \frac{1}{x}\,dx = \ln|x|$** -- the
- absolute value in the integral is essential.
+   absolute value in the integral is essential.
 9. **Cyclic integration by parts** -- when integrating $e^x \sin x$ or $e^x \cos x$The integral
- reappears. Move it to one side and divide by 2. Do not loop forever.
+   reappears. Move it to one side and divide by 2. Do not loop forever.
 10. **Stationary point classification** -- when $f''(x) = 0$The second derivative test is
- inconclusive. Use the first derivative test instead.
+    inconclusive. Use the first derivative test instead.
 11. **Domain issues with implicit differentiation** -- when finding $\frac{dy}{dx}$ implicitly,
- always check that the point lies on the curve before substituting.
+    always check that the point lies on the curve before substituting.
 
 ## Practice Questions
 
@@ -810,8 +803,8 @@ At $t = 9$: $V = (10 - 0.9)^2 = 9.1^2 = 82.81$ litres.
 5. Find the area under $y = 4x - x^2$ above the $x$-axis.
 6. Find the equation of the normal to $y = x^2 + 1$ at $x = 1$.
 7. Evaluate $\int \frac{3}{x}\,dx$ and hence evaluate $\int_1^4 \frac{3}{x}\,dx$.
-8. The radius of a sphere is increasing at $2\mathrm{ cm/s{}$. Find the rate of increase of the volume
- when $r = 5\mathrm{ cm{}$.
+8. The radius of a sphere is increasing at $2\mathrm{ cm/s{}$. Find the rate of increase of the
+   volume when $r = 5\mathrm{ cm{}$.
 
 ### Higher Level
 
@@ -828,10 +821,10 @@ At $t = 9$: $V = (10 - 0.9)^2 = 9.1^2 = 82.81$ litres.
 11. Evaluate $\int e^x \cos x\,dx$ using integration by parts.
 12. Find $\frac{dy}{dx}$ when $e^{xy} + y = x^2$ and evaluate it at $(1, 0)$.
 13. A cylindrical can is to hold $500\mathrm{ cm{}^3$. Find the dimensions that minimise the surface
- area.
+    area.
 14. Prove the product rule from first principles.
 15. Find the volume generated by rotating $y = \frac{1}{x}$ about the $x$-axis from $x = 1$ to
- $x = e$.
+    $x = e$.
 
 ## Summary
 

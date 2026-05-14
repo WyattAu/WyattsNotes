@@ -1,6 +1,8 @@
 ---
 title: Contiguous Memory Views (std::span)
-description: "C++: Contiguous Memory Views (std::span) — Contiguous Memory Views (`std::span`); 1. Definition and Layout; 2. Relationship to `std::string_view`."
+description:
+  'C++: Contiguous Memory Views (std::span) — Contiguous Memory Views (`std::span`); 1. Definition
+  and Layout; 2. Relationship to `std::string_view`.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -9,6 +11,7 @@ categories:
   - Cpp
 slug: contiguous-memory-views-std-span
 ---
+
 Import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 # Contiguous Memory Views (`std::span`)
@@ -39,13 +42,13 @@ On 64-bit systems:
 
 ## 2. Relationship to `std::string_view`
 
-| Property | `std::span<const char>` | `std::string_view` |
+| Property             | `std::span<const char>`     | `std::string_view`                        |
 | :------------------- | :-------------------------- | :---------------------------------------- |
-| Null-termination | Not assumed | Partially (implementation detail) |
-| Character traits | No | Yes (`char_traits`) |
-| Stream output | No `operator<<` | Yes |
-| Hash | `std::hash` not specialized | `std::hash<std::string_view>` specialized |
-| General element type | Any `T` | `char`-like only |
+| Null-termination     | Not assumed                 | Partially (implementation detail)         |
+| Character traits     | No                          | Yes (`char_traits`)                       |
+| Stream output        | No `operator<<`             | Yes                                       |
+| Hash                 | `std::hash` not specialized | `std::hash<std::string_view>` specialized |
+| General element type | Any `T`                     | `char`-like only                          |
 
 `std::string_view` is a domain-specific specialization. Prefer `std::string_view` for text. Prefer
 `std::span` for everything else.
@@ -124,8 +127,8 @@ Preserved through the span interface.
 
 ## 5. Subviews and Splitting
 
-`std::span` provides `first()``last()`And `subspan()` for creating views into subsets of the
-Data. These operations return new `span` objects and are **O(1)** — no data is copied.
+`std::span` provides `first()``last()`And `subspan()` for creating views into subsets of the Data.
+These operations return new `span` objects and are **O(1)** — no data is copied.
 
 ```cpp
 void parse_header(std::span<const uint8_t> packet) {
@@ -245,14 +248,14 @@ ssize_t read_into(int fd, std::span<std::byte> buf) {
 
 ### Comparison Table
 
-| Feature | C array `T[N]` | `std::array<T, N>` | `std::span<T>` |
+| Feature                    | C array `T[N]` | `std::array<T, N>` | `std::span<T>`                          |
 | :------------------------- | :------------- | :----------------- | :-------------------------------------- |
-| Owns data | Yes (stack) | Yes (stack) | **No** |
-| Size known at compile time | Yes | Yes | Dynamic (or static extent) |
-| Copyable | No (decays) | Yes | Yes ( copyable) |
-| Dynamic sizing | No | No | Yes |
-| Bounds checking | No | `.at()` | `.at()` (C++26 `operator[]` is checked) |
-| Slicing | No | No | Yes (`first``last``subspan`) |
+| Owns data                  | Yes (stack)    | Yes (stack)        | **No**                                  |
+| Size known at compile time | Yes            | Yes                | Dynamic (or static extent)              |
+| Copyable                   | No (decays)    | Yes                | Yes ( copyable)                         |
+| Dynamic sizing             | No             | No                 | Yes                                     |
+| Bounds checking            | No             | `.at()`            | `.at()` (C++26 `operator[]` is checked) |
+| Slicing                    | No             | No                 | Yes (`first``last``subspan`)            |
 
 ## 8. Range-For Integration
 
@@ -331,7 +334,7 @@ void legacy_analyze(const Container& data) {
 Problems with the template approach:
 
 1. **Header-only requirement:** The template must be defined in the header, exposing implementation
- details.
+   details.
 2. **Compile-time bloat:** Each instantiation generates new code.
 3. **Error messages:** Template instantiation failures produce enormous error messages.
 4. **No size constraint:** Accepts any range, including non-contiguous ones like `std::list`.
@@ -341,8 +344,8 @@ Guarantees contiguity, and error messages are concise.
 
 ### Const-Correctness: `std::span<const T>`
 
-`std::span<const T>` provides read-only access to the elements. The pointer is `const T*`
-Preventing modification through the span:
+`std::span<const T>` provides read-only access to the elements. The pointer is `const T*` Preventing
+modification through the span:
 
 ```cpp
 void inspect(std::span<const int> data) {

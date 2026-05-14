@@ -1,8 +1,11 @@
 ---
 title: GitHub Actions CI/CD Patterns
-description: "GitHub Actions CI/CD Patterns — What is GitHub Actions; Core Concepts; Runner Taxonomy; Actions Marketplace with worked examples and exam-style questions."
+description:
+  'GitHub Actions CI/CD Patterns — What is GitHub Actions; Core Concepts; Runner Taxonomy; Actions
+  Marketplace with worked examples and exam-style questions.'
 slug: github-actions-patterns
 ---
+
 ## What is GitHub Actions
 
 GitHub Actions is an event-driven continuous integration and continuous deployment (CI/CD) platform
@@ -12,29 +15,29 @@ Comments, scheduled cron expressions, and manual dispatches.
 
 ### Core Concepts
 
-| Concept | Description |
-| ------------ | ------------------------------------------------------------------------------------------------------------------------ |
-| **Workflow** | An automated process defined in a YAML file under `.github/workflows/` |
-| **Event** | A specific activity that triggers a workflow run (e.g., `push``pull_request``schedule`) |
-| **Job** | A set of steps executed on the same runner; jobs run in parallel unless linked with `needs` |
-| **Step** | An individual task within a job — either a `run` (shell command) or `uses` (action reference) |
-| **Action** | A reusable unit of code packaged for use in workflows, sourced from the Marketplace or custom |
-| **Runner** | The server that executes the workflow — GitHub-hosted (`ubuntu-latest``windows-latest``macos-latest`) or self-hosted |
-| **Artifact** | A file or collection of files produced during a workflow run, persisted after the run completes |
-| **Secret** | An encrypted environment variable accessible only within the workflow context |
+| Concept      | Description                                                                                                          |
+| ------------ | -------------------------------------------------------------------------------------------------------------------- |
+| **Workflow** | An automated process defined in a YAML file under `.github/workflows/`                                               |
+| **Event**    | A specific activity that triggers a workflow run (e.g., `push``pull_request``schedule`)                              |
+| **Job**      | A set of steps executed on the same runner; jobs run in parallel unless linked with `needs`                          |
+| **Step**     | An individual task within a job — either a `run` (shell command) or `uses` (action reference)                        |
+| **Action**   | A reusable unit of code packaged for use in workflows, sourced from the Marketplace or custom                        |
+| **Runner**   | The server that executes the workflow — GitHub-hosted (`ubuntu-latest``windows-latest``macos-latest`) or self-hosted |
+| **Artifact** | A file or collection of files produced during a workflow run, persisted after the run completes                      |
+| **Secret**   | An encrypted environment variable accessible only within the workflow context                                        |
 
 ### Runner Taxonomy
 
 GitHub-hosted runners are ephemeral virtual machines provisioned per job and destroyed after
 Completion. They come in three operating system families:
 
-| Runner identifier | OS | Architecture | Notes |
+| Runner identifier  | OS                  | Architecture | Notes                            |
 | ------------------ | ------------------- | ------------ | -------------------------------- |
-| `ubuntu-latest` | Ubuntu 24.04 LTS | x64 | Most common; fastest startup |
-| `ubuntu-24.04-arm` | Ubuntu 24.04 | arm64 | For ARM-native workloads |
-| `windows-latest` | Windows Server 2022 | x64 | Uses PowerShell as default shell |
-| `macos-latest` | macOS 14 (Sonoma) | arm64 (M1) | 10× billing multiplier vs ubuntu |
-| `macos-13` | macOS Ventura | x64 | Intel-based macOS |
+| `ubuntu-latest`    | Ubuntu 24.04 LTS    | x64          | Most common; fastest startup     |
+| `ubuntu-24.04-arm` | Ubuntu 24.04        | arm64        | For ARM-native workloads         |
+| `windows-latest`   | Windows Server 2022 | x64          | Uses PowerShell as default shell |
+| `macos-latest`     | macOS 14 (Sonoma)   | arm64 (M1)   | 10× billing multiplier vs ubuntu |
+| `macos-13`         | macOS Ventura       | x64          | Intel-based macOS                |
 
 Self-hosted runners allow execution on custom infrastructure and are not subject to the 6-hour job
 Timeout or IP egress restrictions, but require the operator to manage security, isolation, and
@@ -44,8 +47,8 @@ Cleanup.
 
 The [Actions Marketplace](https://github.com/marketplace?type=actions) provides community-maintained
 And official actions. First-party actions live under the `actions/` organization (e.g.,
-`actions/checkout@v4``actions/cache@v4``actions/upload-artifact@v4`). Third-party actions should
-Be audited for supply-chain security before adoption.
+`actions/checkout@v4``actions/cache@v4``actions/upload-artifact@v4`). Third-party actions should Be
+audited for supply-chain security before adoption.
 
 ---
 
@@ -76,17 +79,17 @@ jobs:
 A step is either an action reference (`uses`) or a shell command (`run`). The two are mutually
 Exclusive within a single step.
 
-| Key | Purpose |
+| Key                 | Purpose                                                                                    |
 | ------------------- | ------------------------------------------------------------------------------------------ |
-| `name` | Human-readable label displayed in the workflow run log |
-| `uses` | Reference to an action (`owner/repo@ref` or `./local/path`) |
-| `run` | Shell command to execute; shell defaults to `bash` on Linux/macOS, `pwsh` on Windows |
-| `with` | Input parameters passed to an `uses` action |
-| `env` | Environment variables scoped to the step |
-| `if` | Conditional expression; step is skipped when the expression evaluates to `false` |
-| `id` | Unique identifier so subsequent steps can reference outputs via `steps.&lt;id&gt;.outputs` |
-| `timeout-minutes` | Maximum time before the step is killed (overrides job-level timeout) |
-| `continue-on-error` | If `true`The workflow treats a failure in this step as a success |
+| `name`              | Human-readable label displayed in the workflow run log                                     |
+| `uses`              | Reference to an action (`owner/repo@ref` or `./local/path`)                                |
+| `run`               | Shell command to execute; shell defaults to `bash` on Linux/macOS, `pwsh` on Windows       |
+| `with`              | Input parameters passed to an `uses` action                                                |
+| `env`               | Environment variables scoped to the step                                                   |
+| `if`                | Conditional expression; step is skipped when the expression evaluates to `false`           |
+| `id`                | Unique identifier so subsequent steps can reference outputs via `steps.&lt;id&gt;.outputs` |
+| `timeout-minutes`   | Maximum time before the step is killed (overrides job-level timeout)                       |
+| `continue-on-error` | If `true`The workflow treats a failure in this step as a success                           |
 
 ### Environment Variables
 
@@ -362,12 +365,12 @@ jobs:
       - run: echo "This always runs"
 ```
 
-| Condition function | Meaning |
+| Condition function | Meaning                                   |
 | ------------------ | ----------------------------------------- |
-| `success()` | All dependency jobs succeeded (default) |
-| `failure()` | At least one dependency job failed |
-| `always()` | Run regardless of dependency job outcomes |
-| `cancelled()` | The workflow was cancelled |
+| `success()`        | All dependency jobs succeeded (default)   |
+| `failure()`        | At least one dependency job failed        |
+| `always()`         | Run regardless of dependency job outcomes |
+| `cancelled()`      | The workflow was cancelled                |
 
 ### Concurrency Control
 
@@ -420,20 +423,20 @@ Purpose.
       pip-
 ```
 
-| Key component | Purpose |
+| Key component  | Purpose                                                |
 | -------------- | ------------------------------------------------------ |
-| `key` | Primary cache key; exact match required |
+| `key`          | Primary cache key; exact match required                |
 | `restore-keys` | Fallback prefix keys used when no exact match is found |
-| `path` | File or directory to cache |
+| `path`         | File or directory to cache                             |
 
 Cache lookup proceeds as follows:
 
 1. An exact match for `key` is sought. If found, the cache is restored and marked as a **cache
- hit**.
+   hit**.
 2. If no exact match, `restore-keys` are searched in order by most recent creation date. The first
- match is restored and marked as a **partial hit**.
+   match is restored and marked as a **partial hit**.
 3. If no match at all, no cache is restored (cache miss). A new cache entry is written at the end of
- the job using the `key`.
+   the job using the `key`.
 
 ### Language-Specific Cache Patterns
 
@@ -498,8 +501,7 @@ Cache lookup proceeds as follows:
 
 ### Cache Invalidation
 
-Caches are immutable once written. To invalidate, change the `key` — by bumping a version
-Prefix:
+Caches are immutable once written. To invalidate, change the `key` — by bumping a version Prefix:
 
 ```yaml
 key: v2-${{ runner.os }}-pip-${{ hashFiles('**/requirements*.txt') }}
@@ -528,13 +530,13 @@ For human consumption or cross-job data transfer and are retained after the run 
     compression-level: 6
 ```
 
-| Parameter | Description |
-| ------------------- | ------------------------------------------------------- |
-| `name` | Artifact name (unique within the run) |
-| `path` | File or directory to upload; supports glob patterns |
-| `retention-days` | Days to retain (default 90, max 90 on free plans) |
+| Parameter           | Description                                         |
+| ------------------- | --------------------------------------------------- |
+| `name`              | Artifact name (unique within the run)               |
+| `path`              | File or directory to upload; supports glob patterns |
+| `retention-days`    | Days to retain (default 90, max 90 on free plans)   |
 | `if-no-files-found` | Behavior when no files match: `warn``error``ignore` |
-| `compression-level` | 0 (none) to 9 (max); default 6 |
+| `compression-level` | 0 (none) to 9 (max); default 6                      |
 
 ### Downloading Artifacts
 
@@ -586,11 +588,11 @@ jobs:
 
 ### Artifact Size Limits
 
-| Limit | Value |
+| Limit                           | Value                                 |
 | ------------------------------- | ------------------------------------- |
-| Single artifact max size | 5 GB |
-| Total artifacts per run | No hard cap (storage billing applies) |
-| Max number of artifacts per run | 500 |
+| Single artifact max size        | 5 GB                                  |
+| Total artifacts per run         | No hard cap (storage billing applies) |
+| Max number of artifacts per run | 500                                   |
 
 ---
 
@@ -730,12 +732,12 @@ jobs:
       - run: python --version
 ```
 
-| Matrix option | Purpose |
+| Matrix option  | Purpose                                                           |
 | -------------- | ----------------------------------------------------------------- |
-| `fail-fast` | If `true` (default), cancel all in-progress jobs on first failure |
-| `exclude` | Remove specific combinations from the matrix |
-| `include` | Add specific combinations to the matrix |
-| `max-parallel` | Limit the number of concurrent matrix job runs |
+| `fail-fast`    | If `true` (default), cancel all in-progress jobs on first failure |
+| `exclude`      | Remove specific combinations from the matrix                      |
+| `include`      | Add specific combinations to the matrix                           |
+| `max-parallel` | Limit the number of concurrent matrix job runs                    |
 
 ---
 
@@ -1052,11 +1054,11 @@ jobs:
 
 ### Secret Scoping
 
-| Scope | Visibility | Use case |
+| Scope        | Visibility                           | Use case                                  |
 | ------------ | ------------------------------------ | ----------------------------------------- |
-| Repository | All workflows in the repository | Deploy credentials, API tokens |
-| Environment | Workflows using that environment | Per-environment secrets (staging vs prod) |
-| Organization | All repositories in the organization | Shared SSO tokens, registry credentials |
+| Repository   | All workflows in the repository      | Deploy credentials, API tokens            |
+| Environment  | Workflows using that environment     | Per-environment secrets (staging vs prod) |
+| Organization | All repositories in the organization | Shared SSO tokens, registry credentials   |
 
 Environment-level secrets require the job to specify the `environment` key:
 
@@ -1095,15 +1097,15 @@ jobs:
 Default `GITHUB_TOKEN` permissions are read-only. To grant write access, declare `permissions` at
 The workflow or job level:
 
-| Permission | Scope |
+| Permission      | Scope                                  |
 | --------------- | -------------------------------------- |
-| `contents` | Repository content (commits, releases) |
-| `pull-requests` | Pull request operations |
-| `issues` | Issue operations |
-| `packages` | Container and package registry |
-| `id-token` | OIDC token generation (for cloud auth) |
-| `actions` | Workflow operations |
-| `pages` | GitHub Pages deployment |
+| `contents`      | Repository content (commits, releases) |
+| `pull-requests` | Pull request operations                |
+| `issues`        | Issue operations                       |
+| `packages`      | Container and package registry         |
+| `id-token`      | OIDC token generation (for cloud auth) |
+| `actions`       | Workflow operations                    |
+| `pages`         | GitHub Pages deployment                |
 
 ### Variables vs Secrets
 
@@ -1157,7 +1159,7 @@ A wait timer introduces a mandatory delay between the workflow trigger and job e
 - Configured in **Settings &gt; Environments &gt; [environment name] &gt; Protection rules**
 - Range: 0 to 43,200 minutes (30 days)
 - Use case: cool-down period before production deployments, allowing reviewers time to inspect
- changes
+  changes
 
 ### Branch Restrictions
 
@@ -1315,12 +1317,12 @@ jobs:
 
 GitHub-hosted runners have finite resources:
 
-| Resource | Limit (2-core runner) | Limit (larger runners) |
+| Resource       | Limit (2-core runner) | Limit (larger runners) |
 | -------------- | --------------------- | ---------------------- |
-| CPU | 2 cores | Up to 64 cores |
-| Memory | 7 GB RAM | Up to 512 GB RAM |
-| Disk (SSD) | 14 GB free | Up to 32 TB |
-| Network egress | ~250 Mbps | Same |
+| CPU            | 2 cores               | Up to 64 cores         |
+| Memory         | 7 GB RAM              | Up to 512 GB RAM       |
+| Disk (SSD)     | 14 GB free            | Up to 32 TB            |
+| Network egress | ~250 Mbps             | Same                   |
 
 Long-running builds that compile large codebases, run heavy test suites, or process large datasets
 Should consider self-hosted runners or larger runner types.
@@ -1329,11 +1331,11 @@ Should consider self-hosted runners or larger runner types.
 
 GitHub Actions bills per minute of runner usage, with multipliers per OS:
 
-| Runner | Multiplier |
+| Runner  | Multiplier |
 | ------- | ---------- |
-| Linux | 1× |
-| Windows | 2× |
-| macOS | 10× |
+| Linux   | 1×         |
+| Windows | 2×         |
+| macOS   | 10×        |
 
 Cost optimization strategies:
 

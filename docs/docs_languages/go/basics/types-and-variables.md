@@ -1,6 +1,8 @@
 ---
 title: Types and Variables
-description: "Types and Variables — Integer Types; Integer Overflow; Floating-Point Types; Boolean Type with worked examples and exam-style questions."
+description:
+  'Types and Variables — Integer Types; Integer Overflow; Floating-Point Types; Boolean Type with
+  worked examples and exam-style questions.'
 slug: types-and-variables
 date: 2026-04-18
 tags:
@@ -8,18 +10,19 @@ tags:
 categories:
   - Go
 ---
+
 ## Integer Types
 
 Go provides signed and unsigned integers at standard widths:
 
-| Type | Size (bytes) | Range (signed) | Range (unsigned) |
+| Type               | Size (bytes) | Range (signed)                                          | Range (unsigned)                |
 | ------------------ | ------------ | ------------------------------------------------------- | ------------------------------- |
-| `int8` / `uint8` | 1 | -128 to 127 | 0 to 255 |
-| `int16` / `uint16` | 2 | -32,768 to 32,767 | 0 to 65,535 |
-| `int32` / `uint32` | 4 | -2,147,483,648 to 2,147,483,647 | 0 to 4,294,967,295 |
-| `int64` / `uint64` | 8 | -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 | 0 to 18,446,744,073,709,551,615 |
-| `int` / `uint` | 4 or 8 | Same as `int32` or `int64` (platform-dependent) | Same as `uint32` or `uint64` |
-| `uintptr` | 4 or 8 | Unsigned integer large enough to store a pointer value | |
+| `int8` / `uint8`   | 1            | -128 to 127                                             | 0 to 255                        |
+| `int16` / `uint16` | 2            | -32,768 to 32,767                                       | 0 to 65,535                     |
+| `int32` / `uint32` | 4            | -2,147,483,648 to 2,147,483,647                         | 0 to 4,294,967,295              |
+| `int64` / `uint64` | 8            | -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 | 0 to 18,446,744,073,709,551,615 |
+| `int` / `uint`     | 4 or 8       | Same as `int32` or `int64` (platform-dependent)         | Same as `uint32` or `uint64`    |
+| `uintptr`          | 4 or 8       | Unsigned integer large enough to store a pointer value  |                                 |
 
 `int` and `uint` are the default integer types. Their size matches the native word size of the
 Platform: 32 bits on 32-bit systems, 64 bits on 64-bit systems. Use `int` unless you need a specific
@@ -48,9 +51,9 @@ a, carry := bits.Add(255, 1, 0) // a == 0, carry == 1
 
 ## Floating-Point Types
 
-| Type | Size | Precision |
+| Type      | Size    | Precision             |
 | --------- | ------- | --------------------- |
-| `float32` | 4 bytes | ~6-7 decimal digits |
+| `float32` | 4 bytes | ~6-7 decimal digits   |
 | `float64` | 8 bytes | ~15-16 decimal digits |
 
 `float64` is the default. Both conform to IEEE 754.
@@ -130,19 +133,19 @@ result := sb.String()
 Every type in Go has a zero value. Variables declared without an explicit initializer are set to
 Zero. This eliminates uninitialized variable bugs.
 
-| Type | Zero Value |
+| Type      | Zero Value                            |
 | --------- | ------------------------------------- |
-| `int` | `0` |
-| `float64` | `0.0` |
-| `bool` | `false` |
-| `string` | `""` |
-| Pointer | `nil` |
-| Slice | `nil` |
-| Map | `nil` |
-| Channel | `nil` |
-| Interface | `nil` |
-| Struct | All fields set to their zero values |
-| Array | All elements set to their zero values |
+| `int`     | `0`                                   |
+| `float64` | `0.0`                                 |
+| `bool`    | `false`                               |
+| `string`  | `""`                                  |
+| Pointer   | `nil`                                 |
+| Slice     | `nil`                                 |
+| Map       | `nil`                                 |
+| Channel   | `nil`                                 |
+| Interface | `nil`                                 |
+| Struct    | All fields set to their zero values   |
+| Array     | All elements set to their zero values |
 
 ```go
 var x int
@@ -296,24 +299,24 @@ type Rune = int32
 ## Common Pitfalls
 
 1. **Using `==` to compare floats.** IEEE 754 makes exact equality unreliable. Use an epsilon
- comparison: `math.Abs(a-b) < epsilon`.
+   comparison: `math.Abs(a-b) < epsilon`.
 
-2. **String indexing yields bytes.** `s[i]` returns a `byte`Not a `rune`. For multi-byte UTF-8,
- this can split a character. Use `for i, r := range s` for rune iteration.
+2. **String indexing yields bytes.** `s[i]` returns a `byte`Not a `rune`. For multi-byte UTF-8, this
+   can split a character. Use `for i, r := range s` for rune iteration.
 
 3. **Assuming `int` is 64-bit.** On 32-bit systems, `int` is 32 bits. Use `int64` explicitly when
- the value may exceed 2^31 - 1.
+   the value may exceed 2^31 - 1.
 
 4. **`:=` in outer scope.** `:=` in an inner block creates a new variable that shadows the outer
- one. Use `=` for assignment to an existing variable.
+   one. Use `=` for assignment to an existing variable.
 
 5. **`nil` slices vs empty slices.** A `nil` slice has length and capacity 0 but is not equal to an
- empty slice (`[]int{}`). JSON marshaling treats them differently: `nil` becomes `null``[]int{}`
- becomes `[]`.
+   empty slice (`[]int{}`). JSON marshaling treats them differently: `nil` becomes `null``[]int{}`
+   becomes `[]`.
 
 6. **Integer overflow is silent.** Unlike Rust (debug panics) or Python (arbitrary precision), Go
- wraps on overflow without any runtime error. Use `math/bits` or explicit checks when overflow is
- a concern.
+   wraps on overflow without any runtime error. Use `math/bits` or explicit checks when overflow is
+   a concern.
 
 ## Summary
 

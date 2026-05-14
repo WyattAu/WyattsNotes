@@ -1,12 +1,15 @@
 ---
 title: Style and Patterns
-description: "Style and Patterns — Naming Conventions; Packages; Classes and Interfaces; Methods with worked examples and exam-style questions."
+description:
+  'Style and Patterns — Naming Conventions; Packages; Classes and Interfaces; Methods with worked
+  examples and exam-style questions.'
 date: 2025-06-05T16:00:00.000Z
 tags: ['java']
 categories: ['java']
 slug: style-and-patterns
 sidebar_position: 1
 ---
+
 ## Naming Conventions
 
 Naming is the single most visible signal of code quality. Java naming conventions are codified in
@@ -60,10 +63,9 @@ public boolean isAuthenticated() { }
 public static <T> List<T> unmodifiableList(List<? extends T> list) { }
 ```
 
-Boolean-returning methods conventionally begin with `is``has``can``should`Or `will`.
-Accessors for non-boolean fields use the `get` prefix; mutators use `set`. These conventions are
-Required for JavaBeans property introspection and are relied upon by frameworks like Spring,
-Jackson, and JPA.
+Boolean-returning methods conventionally begin with `is``has``can``should`Or `will`. Accessors for
+non-boolean fields use the `get` prefix; mutators use `set`. These conventions are Required for
+JavaBeans property introspection and are relied upon by frameworks like Spring, Jackson, and JPA.
 
 ### Constants
 
@@ -84,15 +86,15 @@ Accessors, or the object itself should be wrapped in an unmodifiable view.
 
 Type parameters use a single uppercase letter. The standard letters carry domain-specific meaning:
 
-| Letter | Meaning | Example |
-| -------- | ------------------- | ------------------------------ |
-| `T` | Type | `Box<T>` |
-| `E` | Element | `List<E>` |
-| `K` | Key | `Map<K, V>` |
-| `V` | Value | `Map<K, V>` |
-| `S``U` | Second, third types | `Pair<S, U>` |
-| `R` | Return type | `Function<T, R>` |
-| `N` | Number | `Calculator<N extends Number>` |
+| Letter | Meaning             | Example                        |
+| ------ | ------------------- | ------------------------------ |
+| `T`    | Type                | `Box<T>`                       |
+| `E`    | Element             | `List<E>`                      |
+| `K`    | Key                 | `Map<K, V>`                    |
+| `V`    | Value               | `Map<K, V>`                    |
+| `S``U` | Second, third types | `Pair<S, U>`                   |
+| `R`    | Return type         | `Function<T, R>`               |
+| `N`    | Number              | `Calculator<N extends Number>` |
 
 When a single letter is insufficient, use a descriptive name prefixed with `T`:
 
@@ -122,14 +124,12 @@ String pName;   // unclear
 long t;         // meaningless
 ```
 
-:::info
-JLS Reference
+:::info JLS Reference
 [JLS §6.1](https://docs.oracle.com/javase/specs/jls/se21/html/jls-6.html#jls-6.1) defines the rules
 For declaring names.
 [JLS §3.8](https://docs.oracle.com/javase/specs/jls/se21/html/jls-3.html#jls-3.8) defines what
 Constitutes a valid identifier. Unicode characters are permitted, but ASCII identifiers are the de
-Facto standard.
-:::
+Facto standard. :::
 
 ## Code Organization
 
@@ -168,13 +168,11 @@ com.example.project/
 Feature-first packaging has a significant advantage for projects of any non-trivial size: it
 Localizes changes. When a requirement changes for the "user" domain, all the files you need to
 Modify are in a single package. In layer-first packaging, a change to `User` might require edits
-Across `controller/``service/``repository/`And `model/` -- four separate directories that are
-Far apart in the tree.
+Across `controller/``service/``repository/`And `model/` -- four separate directories that are Far
+apart in the tree.
 
-:::tip
-Recommendation Use feature-first packaging for any project with more than two bounded
-Contexts. For small projects or libraries, layer-first packaging remains acceptable.
-:::
+:::tip Recommendation Use feature-first packaging for any project with more than two bounded
+Contexts. For small projects or libraries, layer-first packaging remains acceptable. :::
 
 ### Class Structure
 
@@ -210,9 +208,9 @@ Compile code, run tests, and package artifacts, but they differ fundamentally in
 #### Maven: Convention Over Configuration
 
 Maven uses a declarative XML-based build lifecycle. A Maven project has a rigidly defined directory
-Structure and a fixed set of lifecycle phases (`compile``test``package``install``deploy`).
-The `pom.xml` declares what the project is and what on; the _how_ is handled by plugins
-Bound to lifecycle phases.
+Structure and a fixed set of lifecycle phases (`compile``test``package``install``deploy`). The
+`pom.xml` declares what the project is and what on; the _how_ is handled by plugins Bound to
+lifecycle phases.
 
 ```xml
 <project xmlns="http://maven.apache.org/POM/4.0.0"
@@ -282,12 +280,10 @@ tasks.test {
 }
 ```
 
-:::tip
-Recommendation Use Gradle with the Kotlin DSL for new projects. Gradle's build cache,
+:::tip Recommendation Use Gradle with the Kotlin DSL for new projects. Gradle's build cache,
 Incremental compilation, and configuration avoidance yield measurable performance improvements, and
 The Kotlin DSL provides type safety and IDE autocompletion. Use Maven when integrating with legacy
-Enterprise infrastructure that requires it, or when team familiarity makes the trade-off clear.
-:::
+Enterprise infrastructure that requires it, or when team familiarity makes the trade-off clear. :::
 
 ### Dependency Management
 
@@ -296,12 +292,12 @@ Enterprise infrastructure that requires it, or when team familiarity makes the t
 Both Maven and Gradle categorize dependencies by scope, controlling when a dependency is available
 On the classpath:
 
-| Scope | Available During | Packaged Into | Purpose |
+| Scope                | Available During  | Packaged Into | Purpose                        |
 | -------------------- | ----------------- | ------------- | ------------------------------ |
-| `compile` / `api` | compile + runtime | yes | Required at all phases |
-| `runtimeOnly` | runtime only | yes | JDBC drivers, logging backends |
-| `provided` | compile only | no | Servlet API, JPA API |
-| `testImplementation` | test compile+run | no | JUnit, Mockito, testcontainers |
+| `compile` / `api`    | compile + runtime | yes           | Required at all phases         |
+| `runtimeOnly`        | runtime only      | yes           | JDBC drivers, logging backends |
+| `provided`           | compile only      | no            | Servlet API, JPA API           |
+| `testImplementation` | test compile+run  | no            | JUnit, Mockito, testcontainers |
 
 The distinction between `api` and `implementation` in Gradle is critical. A dependency declared as
 `api` is transitively exposed to consumers of your library. A dependency declared as
@@ -370,8 +366,8 @@ class UserServiceTest {
 }
 ```
 
-The lifecycle annotations `@BeforeEach``@AfterEach``@BeforeAll`And `@AfterAll` control setup
-And teardown. `@BeforeAll` methods must be `static` unless the test class is annotated with
+The lifecycle annotations `@BeforeEach``@AfterEach``@BeforeAll`And `@AfterAll` control setup And
+teardown. `@BeforeAll` methods must be `static` unless the test class is annotated with
 `@TestInstance(Lifecycle.PER_CLASS)`.
 
 ### Assertions
@@ -431,8 +427,8 @@ class EmailValidatorTest {
 }
 ```
 
-`@MethodSource` accepts a factory method that returns a `Stream``Collection``Iterator`Or array
-Of arguments. This is the most flexible parameterization strategy because the data source can be any
+`@MethodSource` accepts a factory method that returns a `Stream``Collection``Iterator`Or array Of
+arguments. This is the most flexible parameterization strategy because the data source can be any
 Method, including one that reads from a file or generates values programmatically.
 
 ### Mocking with Mockito
@@ -479,12 +475,10 @@ The `verify` API with `never()` ensures that when an operation fails partway thr
 Effects leak through. The `argThat` matcher enables assertions on the arguments passed to
 Collaborators without requiring an equality implementation that may not exist on the domain object.
 
-:::warning
-Over-Mocking If a test requires more than three mocks, the unit under test likely has too
+:::warning Over-Mocking If a test requires more than three mocks, the unit under test likely has too
 Many responsibilities. Restructure the code rather than adding more mocks. Tests that mock
 Extensively tend to be brittle: they break when implementation details change even when the
-Externally observable behavior is correct.
-:::
+Externally observable behavior is correct. :::
 
 ## Logging
 
@@ -563,8 +557,7 @@ Unconditionally, wasting CPU cycles and allocating objects that are immediately 
 </configuration>
 ```
 
-:::tip
-Recommendation Always use SLF4J for application logging. Use JUL only in library code where
+:::tip Recommendation Always use SLF4J for application logging. Use JUL only in library code where
 Adding external dependencies is undesirable. Never use `System.out.println` for logging in
 Production code; it cannot be filtered by log level, redirected to files, or formatted consistently.
 :::
@@ -602,13 +595,11 @@ By serialized field data). A traditional class-based singleton with a private co
 Broken by reflection (`Constructor.setAccessible(true)`) and by deserialization (which creates a new
 Instance unless `readResolve` is implemented).
 
-:::caution
-When to Use Singleton Singletons are appropriate for stateless service objects and
+:::caution When to Use Singleton Singletons are appropriate for stateless service objects and
 Expensive resources (connection pools, thread pools). They are inappropriate for stateful objects
 That represent business domain concepts, because a global mutable singleton is essentially a hidden
 Global variable that makes testing difficult and introduces hidden coupling between unrelated parts
-Of the codebase.
-:::
+Of the codebase. :::
 
 ### Factory
 
@@ -666,11 +657,11 @@ public class HttpRequest {
 This approach fails for three reasons:
 
 1. **Readability collapses.** A call like `new HttpRequest("/api", "POST", headers, timeout)` is
- meaningless without checking the constructor signature to determine which argument is which.
+   meaningless without checking the constructor signature to determine which argument is which.
 2. **Combination explosion.** With 6 optional parameters, you need 2^6 = 64 constructors to cover
- every combination, or callers must pass `null` for parameters they do not care about.
+   every combination, or callers must pass `null` for parameters they do not care about.
 3. **Type unsafety.** If two parameters have the same type, the compiler cannot catch a
- transposition.
+   transposition.
 
 The Builder pattern eliminates all three problems:
 
@@ -908,16 +899,16 @@ public class OrderService {
 Dependency Injection is preferred for three reasons:
 
 1. **Explicitness.** The constructor signature declares every dependency. A Service Locator hides
- dependencies inside method bodies; you must read every line of code to discover what an object
- depends on. With DI, the dependencies are visible at the point of instantiation.
+   dependencies inside method bodies; you must read every line of code to discover what an object
+   depends on. With DI, the dependencies are visible at the point of instantiation.
 2. **Testability.** With constructor injection, tests pass mock or stub implementations directly.
- With a Service Locator, tests must either modify global state (setting up the locator before each
- test and tearing it down after) or use PowerMock/inline mocking to intercept the static `get()`
- call. Modifying global state in tests causes test pollution when tests run in parallel.
+   With a Service Locator, tests must either modify global state (setting up the locator before each
+   test and tearing it down after) or use PowerMock/inline mocking to intercept the static `get()`
+   call. Modifying global state in tests causes test pollution when tests run in parallel.
 3. **Compile-time safety.** A missing dependency with DI produces a compilation error (the
- constructor call fails). A missing dependency with a Service Locator produces a
- `NullPointerException` or a `ClassCastException` at runtime -- precisely when you least want to
- discover it.
+   constructor call fails). A missing dependency with a Service Locator produces a
+   `NullPointerException` or a `ClassCastException` at runtime -- precisely when you least want to
+   discover it.
 
 ```java
 // Test with DI -- direct, no framework, no global state
@@ -994,8 +985,7 @@ public record Triangle(double base, double height) implements Shape { }
 
 The `permits` clause lists exactly which classes can implement the sealed interface. These permitted
 Subclasses must be in the same module (if the sealed class is in a named module) or the same package
-(if in the unnamed module). Each permitted subclass must be declared `final``sealed`Or
-`non-sealed`.
+(if in the unnamed module). Each permitted subclass must be declared `final``sealed`Or `non-sealed`.
 
 ### Pattern Matching for `instanceof`
 
@@ -1134,9 +1124,9 @@ Concurrently, the invariants can be violated even though each setter validates i
 Immutable version has no such problem because the state is fixed at construction time and validated
 Atomically in the constructor.
 
-To make a class immutable: declare all fields `final`Make the class `final` (or prevent
-Subclassing by sealing), do not provide setters, and ensure that all mutable state reachable from
-The class (collections, arrays) is defensively copied or wrapped in unmodifiable views.
+To make a class immutable: declare all fields `final`Make the class `final` (or prevent Subclassing
+by sealing), do not provide setters, and ensure that all mutable state reachable from The class
+(collections, arrays) is defensively copied or wrapped in unmodifiable views.
 
 ### Favor Composition Over Inheritance
 
@@ -1218,12 +1208,12 @@ The count is correct.
 The principle of information hiding states that a module should hide its implementation details
 Behind a well-defined interface. In Java, this is enforced through access modifiers:
 
-| Modifier | Class | Package | Subclass | World |
+| Modifier        | Class | Package | Subclass | World |
 | --------------- | ----- | ------- | -------- | ----- |
-| `public` | yes | yes | yes | yes |
-| `protected` | yes | yes | yes | no |
-| package-private | yes | yes | no | no |
-| `private` | yes | no | no | no |
+| `public`        | yes   | yes     | yes      | yes   |
+| `protected`     | yes   | yes     | yes      | no    |
+| package-private | yes   | yes     | no       | no    |
+| `private`       | yes   | no      | no       | no    |
 
 The rule is simple: make every field and method as inaccessible as possible. If a method is only
 Used within its own class, make it `private`. If it is used by other classes in the same package,
@@ -1273,8 +1263,8 @@ public class UserRepository {
 
 ### Essential JVM Flags
 
-The JVM's default settings are adequate for development, but production deployments 
-Require explicit configuration. The most important categories of flags are:
+The JVM's default settings are adequate for development, but production deployments Require explicit
+configuration. The most important categories of flags are:
 
 **Memory allocation:**
 
@@ -1354,13 +1344,11 @@ Total memory, which causes containers to be killed by the OOM killer:
 -XX:InitialRAMPercentage=50.0
 ```
 
-:::warning
-Production Advice Never set `-XX:+AlwaysPreTouch` without understanding its implications.
+:::warning Production Advice Never set `-XX:+AlwaysPreTouch` without understanding its implications.
 This flag touches every page in the heap at JVM startup, which forces the operating system to
 Allocate physical memory for the entire heap immediately. It eliminates page fault pauses during
 Runtime, but it delays startup and can cause the container to be killed if the memory limit is
-Tight.
-:::
+Tight. :::
 
 ## Common Pitfalls
 

@@ -1,20 +1,22 @@
 ---
 title: Energy and Work (Extended)
-description: "A-Level Mathematics notes on Energy and Work (Extended): Energy and Work (Extended Treatment); 1. Work Done by a Force; 1.1 Definition."
+description:
+  'A-Level Mathematics notes on Energy and Work (Extended): Energy and Work (Extended Treatment); 1.
+  Work Done by a Force; 1.1 Definition.'
 date: 2026-04-23T00:00:00.000Z
 tags: [Mathematics, ALevel]
 categories: [Mathematics]
 slug: energy-and-work-extended
 ---
+
 ## Energy and Work (Extended Treatment)
 
 This document provides a thorough treatment of the work-energy principle, power, conservation of
 Energy, and elastic potential energy with proofs and applications.
 
-:::info
-Energy methods often provide elegant shortcuts in mechanics problems. Where a Newton's-law approach
-Requires solving differential equations, an energy approach may give the answer in a single step.
-:::
+:::info Energy methods often provide elegant shortcuts in mechanics problems. Where a Newton's-law
+approach Requires solving differential equations, an energy approach may give the answer in a single
+step. :::
 
 <hr />
 
@@ -32,6 +34,7 @@ Where $\theta$ is the angle between the force and the displacement.
 The SI unit of work is the joule ($\mathrm{J} = \mathrm{Nm}$). Work is a **scalar** quantity.
 
 **Special cases:**
+
 - $\theta = 0^\circ$: $W = Fs$ (force in the direction of motion).
 - $\theta = 90^\circ$: $W = 0$ (force perpendicular to motion -- no work done).
 - $\theta = 180^\circ$: $W = -Fs$ (force opposing motion).
@@ -126,8 +129,8 @@ This is valid near the Earth's surface where $g$ is approximately constant.
 
 ### 3.2 Reference level
 
-The choice of reference level (where $\mathrm{GPE} = 0$) is arbitrary. Only **changes** in GPE
-Have physical significance:
+The choice of reference level (where $\mathrm{GPE} = 0$) is arbitrary. Only **changes** in GPE Have
+physical significance:
 
 $$\Delta\mathrm{GPE} = mg\Delta h$$
 
@@ -184,11 +187,12 @@ $$\mathrm{KE} + \mathrm{GPE} + \mathrm{EPE} = \mathrm{constant}$$
 
 ### 5.2 Worked example: pendulum
 
-**Problem.** A simple pendulum has a bob of mass $0.5\;\mathrm{kg}$ on a string of length $1.5\;\mathrm{m}$.
-It is released from rest when the string makes an angle of $40^\circ$ with the vertical. Find the
-Speed of the bob at the lowest point, neglecting air resistance.
+**Problem.** A simple pendulum has a bob of mass $0.5\;\mathrm{kg}$ on a string of length
+$1.5\;\mathrm{m}$. It is released from rest when the string makes an angle of $40^\circ$ with the
+vertical. Find the Speed of the bob at the lowest point, neglecting air resistance.
 
-Height gain: $h = 1.5 - 1.5\cos 40^\circ = 1.5(1 - \cos 40^\circ) \approx 1.5(1 - 0.766) = 0.351\;\mathrm{m}$.
+Height gain:
+$h = 1.5 - 1.5\cos 40^\circ = 1.5(1 - \cos 40^\circ) \approx 1.5(1 - 0.766) = 0.351\;\mathrm{m}$.
 
 Conservation of energy: $\mathrm{GPE}_{\mathrm{top}} = \mathrm{KE}_{\mathrm{bottom}}$.
 
@@ -198,10 +202,10 @@ $$v = \sqrt{2gh} = \sqrt◆LB◆2 \times 9.8 \times 0.351◆RB◆ = \sqrt{6.88} 
 
 ### 5.3 Worked example: roller coaster
 
-**Problem.** A roller coaster car of mass $500\;\mathrm{kg}$ starts from rest at point $A$$30\;\mathrm{m}$
-Above the ground. It descends to point $B$ at ground level, then rises to point $C$ at $20\;\mathrm{m}$
-Above ground. The average frictional force is $200\;\mathrm{N}$ and the total track length from $A$
-To $C$ is $300\;\mathrm{m}$. Find the speed at $C$.
+**Problem.** A roller coaster car of mass $500\;\mathrm{kg}$ starts from rest at point
+$A$$30\;\mathrm{m}$ Above the ground. It descends to point $B$ at ground level, then rises to point
+$C$ at $20\;\mathrm{m}$ Above ground. The average frictional force is $200\;\mathrm{N}$ and the
+total track length from $A$ To $C$ is $300\;\mathrm{m}$. Find the speed at $C$.
 
 $$\mathrm{GPE}_A + \mathrm{KE}_A = \mathrm{GPE}_C + \mathrm{KE}_C + W_{\mathrm{friction}}$$
 
@@ -214,20 +218,17 @@ $$250v^2 = 147000 - 158000 = -11000$$
 Since $250v^2$ cannot be negative, the car **cannot** reach point $C$. It comes to rest before
 Reaching $C$.
 
-Let us find how far along the track it travels before stopping (let this be $d$ metres from $A$
-At height $h$):
+Let us find how far along the track it travels before stopping (let this be $d$ metres from $A$ At
+height $h$):
 
 $$500g(30) = 500gh + 200d$$
 
-Without more information about the track profile, we cannot determine the exact stopping point.
-This illustrates the importance of knowing the track geometry.
+Without more information about the track profile, we cannot determine the exact stopping point. This
+illustrates the importance of knowing the track geometry.
 
-:::warning
-Common Pitfall
-The work-energy principle gives the change in kinetic energy, not the velocity directly. Remember
-To take the square root to find speed, and always check that the result is physically meaningful
-(i.e., the quantity under the square root must be non-negative).
-:::
+:::warning Common Pitfall The work-energy principle gives the change in kinetic energy, not the
+velocity directly. Remember To take the square root to find speed, and always check that the result
+is physically meaningful (i.e., the quantity under the square root must be non-negative). :::
 
 <hr />
 
@@ -273,11 +274,12 @@ $$2666.7 - 800 = 1000a \implies a = 1.867\;\mathrm{m\,s^{-2}}$$
 
 ### 6.4 Worked example: car on an incline
 
-**Problem.** A car of mass $800\;\mathrm{kg}$ travels up a hill inclined at $\sin^{-1}(0.05)$ to
-The horizontal. The engine works at a constant $30\;\mathrm{kW}$ and the resistance is $300\;\mathrm{N}$.
-Find the maximum speed.
+**Problem.** A car of mass $800\;\mathrm{kg}$ travels up a hill inclined at $\sin^{-1}(0.05)$ to The
+horizontal. The engine works at a constant $30\;\mathrm{kW}$ and the resistance is
+$300\;\mathrm{N}$. Find the maximum speed.
 
-At maximum speed: driving force $= 300 + 800g\sin\alpha = 300 + 800(9.8)(0.05) = 300 + 392 = 692\;\mathrm{N}$.
+At maximum speed: driving force
+$= 300 + 800g\sin\alpha = 300 + 800(9.8)(0.05) = 300 + 392 = 692\;\mathrm{N}$.
 
 $$v_{\max} = \frac{P}{F} = \frac{30000}{692} \approx 43.4\;\mathrm{m\,s^{-1}}$$
 
@@ -295,12 +297,13 @@ $$T = kx$$
 Where $k$ is the **stiffness** (or spring constant) in $\mathrm{N\,m^{-1}}$ and $x$ is the extension
 In metres.
 
-Alternatively, $T = \dfrac◆LB◆\lambda x◆RB◆◆LB◆l◆RB◆$ where $\lambda$ is the **modulus of elasticity** and $l$
-Is the natural length.
+Alternatively, $T = \dfrac◆LB◆\lambda x◆RB◆◆LB◆l◆RB◆$ where $\lambda$ is the **modulus of
+elasticity** and $l$ Is the natural length.
 
 ### 7.2 Elastic potential energy
 
-The **elastic potential energy** (EPE) stored in a spring extended by $x$ from its natural length is:
+The **elastic potential energy** (EPE) stored in a spring extended by $x$ from its natural length
+is:
 
 $$\boxed{\mathrm{EPE} = \frac{1}{2}kx^2 = \frac◆LB◆\lambda x^2◆RB◆◆LB◆2l◆RB◆}$$
 
@@ -348,13 +351,13 @@ $$v^2 = 3.841 \implies v \approx 1.96\;\mathrm{m\,s^{-1}}$$
 **Problem.** A particle of mass $3\;\mathrm{kg}$ is attached to two elastic strings. One string has
 Natural length $0.8\;\mathrm{m}$ and modulus $40\;\mathrm{N}$And is fixed at a point $A$. The other
 Has natural length $1.0\;\mathrm{m}$ and modulus $50\;\mathrm{N}$And is fixed at a point $B$. The
-Distance $AB$ is $3\;\mathrm{m}$. The particle hangs in equilibrium. Find the distance of the particle
-From $A$.
+Distance $AB$ is $3\;\mathrm{m}$. The particle hangs in equilibrium. Find the distance of the
+particle From $A$.
 
 Let the particle be at distance $d$ from $A$ (and $3 - d$ from $B$).
 
-Extension of string from $A$: $d - 0.8$ (if $d \gt 0.8$).
-Extension of string from $B$: $(3 - d) - 1.0 = 2 - d$ (if $d \lt 2$).
+Extension of string from $A$: $d - 0.8$ (if $d \gt 0.8$). Extension of string from $B$:
+$(3 - d) - 1.0 = 2 - d$ (if $d \lt 2$).
 
 For equilibrium, both strings must be stretched, so $0.8 \lt d \lt 2$.
 
@@ -382,11 +385,9 @@ $$T_A = 3g \implies 50(d - 0.8) = 29.4 \implies d = 1.388\;\mathrm{m}$$
 But $1.388 \lt 2$Contradiction. This problem needs a 2D treatment with the particle hanging below
 The line, with both strings at angles.
 
-:::warning
-Warning
-Elastic potential energy problems often require careful consideration of whether strings are taut or
-Slack at different points in the motion. Always check the assumptions about extensions at each stage.
-:::
+:::warning Warning Elastic potential energy problems often require careful consideration of whether
+strings are taut or Slack at different points in the motion. Always check the assumptions about
+extensions at each stage. :::
 
 <hr />
 
@@ -405,7 +406,8 @@ Work done by the pushing force: $300 \times 12 = 3600\;\mathrm{J}$.
 
 Work done against gravity: $50g \times 12\sin 15^\circ = 50(9.8)(12)(0.2588) = 1521.7\;\mathrm{J}$.
 
-Work done against friction: $0.25 \times 50g\cos 15^\circ \times 12 = 0.25 \times 50(9.8)(0.9659) \times 12 = 1419.0\;\mathrm{J}$.
+Work done against friction:
+$0.25 \times 50g\cos 15^\circ \times 12 = 0.25 \times 50(9.8)(0.9659) \times 12 = 1419.0\;\mathrm{J}$.
 
 Net work $= 3600 - 1521.7 - 1419.0 = 659.3\;\mathrm{J}$.
 
@@ -457,11 +459,12 @@ The string first becomes slack; (b) the maximum height above the release point.
 <details>
 <summary>Solution</summary>
 
-(a) At the release point, extension $= 1.0\;\mathrm{m}$So EPE $= \dfrac{80(1.0)^2}{2(1.5)} = 26.67\;\mathrm{J}$.
-GPE (taking release point as reference) $= 0$. KE $= 0$.
+(a) At the release point, extension $= 1.0\;\mathrm{m}$So EPE
+$= \dfrac{80(1.0)^2}{2(1.5)} = 26.67\;\mathrm{J}$. GPE (taking release point as reference) $= 0$. KE
+$= 0$.
 
-When the string becomes slack, the particle is at the natural length position, i.e. $1.0\;\mathrm{m}$
-Above the release point.
+When the string becomes slack, the particle is at the natural length position, i.e.
+$1.0\;\mathrm{m}$ Above the release point.
 
 GPE gained $= 4g(1.0) = 39.2\;\mathrm{J}$.
 

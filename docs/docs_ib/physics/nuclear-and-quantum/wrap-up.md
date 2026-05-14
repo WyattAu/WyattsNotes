@@ -1,9 +1,11 @@
 ---
 title: Wrap Up
 tags:
-- physics
+  - physics
 slug: wrap
-description: "Comprehensive IB physics notes on Wrap Up key concepts and principles. Covers key definitions, worked examples, and practice problems for revision."
+description:
+  'Comprehensive IB physics notes on Wrap Up key concepts and principles. Covers key definitions,
+  worked examples, and practice problems for revision.'
 ---
 
 <details>
@@ -38,12 +40,12 @@ description: "Comprehensive IB physics notes on Wrap Up key concepts and princip
 </details>
 
 2. **Question (E.1 & A.5 - HL Only):** A hydrogen atom in the n=3 excited state is moving away from
- an observer at a relativistic speed. The atom de-excites, emitting a photon that an observer at
- rest with the atom would measure as a Balmer-alpha transition (n=3 to n=2). The observer on
- Earth, however, measures the wavelength of this photon to be 700 nm. A) What is the wavelength of
- the Balmer-alpha photon in its rest frame? b) What is the speed of the hydrogen atom relative to
- the Earth observer? c) From the Earth observer's perspective, what is the lifetime of the n=3
- excited state, if its proper lifetime is 10.0 ns?
+   an observer at a relativistic speed. The atom de-excites, emitting a photon that an observer at
+   rest with the atom would measure as a Balmer-alpha transition (n=3 to n=2). The observer on
+   Earth, however, measures the wavelength of this photon to be 700 nm. A) What is the wavelength of
+   the Balmer-alpha photon in its rest frame? b) What is the speed of the hydrogen atom relative to
+   the Earth observer? c) From the Earth observer's perspective, what is the lifetime of the n=3
+   excited state, if its proper lifetime is 10.0 ns?
 
 <details>
 <summary>Answer</summary>
@@ -68,10 +70,10 @@ description: "Comprehensive IB physics notes on Wrap Up key concepts and princip
 </details>
 
 3. **Question (E.3, E.4 & B.1):** A nuclear fission power plant generates 900 MW of electrical power
- with an overall efficiency of 35%. The plant uses Uranium-235. The fission of one U-235 nucleus
- releases 200 MeV of energy. A) What is the thermal power output of the reactor? b) How many U-235
- fissions must occur per second to produce this thermal power? c) Calculate the mass of U-235
- consumed in one year of operation. (1 year ≈ 3.15 x 10⁷ s).
+   with an overall efficiency of 35%. The plant uses Uranium-235. The fission of one U-235 nucleus
+   releases 200 MeV of energy. A) What is the thermal power output of the reactor? b) How many U-235
+   fissions must occur per second to produce this thermal power? c) Calculate the mass of U-235
+   consumed in one year of operation. (1 year ≈ 3.15 x 10⁷ s).
 
 <details>
 <summary>Answer</summary>
@@ -93,13 +95,13 @@ description: "Comprehensive IB physics notes on Wrap Up key concepts and princip
 </details>
 
 4. **Question (E.2 & E.3 - HL Only):** A sample of Cobalt-60 (half-life 5.27 years) is a gamma-ray
- source. It undergoes beta decay, and the resulting excited Nickel-60 nucleus immediately emits
- two gamma photons in succession with energies of 1.17 MeV and 1.33 MeV. A) Calculate the de
- Broglie wavelength of the 1.17 MeV photon. (This is a trick question). B) A particular sample has
- an initial activity of 100 GBq. What will its activity be after 10 years? c) A lead shield is
- used to absorb the gamma rays. The 1.33 MeV photons have a much greater penetrating power. If
- this shield reduces the intensity of the 1.33 MeV photons to 1/16 of its initial value, and the
- half-value thickness of lead for these photons is 1.2 cm, how thick is the shield?
+   source. It undergoes beta decay, and the resulting excited Nickel-60 nucleus immediately emits
+   two gamma photons in succession with energies of 1.17 MeV and 1.33 MeV. A) Calculate the de
+   Broglie wavelength of the 1.17 MeV photon. (This is a trick question). B) A particular sample has
+   an initial activity of 100 GBq. What will its activity be after 10 years? c) A lead shield is
+   used to absorb the gamma rays. The 1.33 MeV photons have a much greater penetrating power. If
+   this shield reduces the intensity of the 1.33 MeV photons to 1/16 of its initial value, and the
+   half-value thickness of lead for these photons is 1.2 cm, how thick is the shield?
 
 <details>
 <summary>Answer</summary>
@@ -120,12 +122,12 @@ description: "Comprehensive IB physics notes on Wrap Up key concepts and princip
 </details>
 
 5. **Question (E.5 & D.1):** A main-sequence star is analyzed and found to have the same surface
- temperature as the Sun (5800 K) but is 100 times more luminous. A) Determine the radius of this
- star in terms of the Sun's radius ($R_\odot$). B) Assuming the star has a mass 4 times that of
- the Sun ($M_\odot$), what is the escape velocity from the surface of this star compared to the
- Sun's? c) A planet orbits this star at a distance equal to the Earth's orbital radius (1 AU).
- Would you expect this planet to be habitable? Justify your answer with a calculation involving
- the star's radiation intensity.
+   temperature as the Sun (5800 K) but is 100 times more luminous. A) Determine the radius of this
+   star in terms of the Sun's radius ($R_\odot$). B) Assuming the star has a mass 4 times that of
+   the Sun ($M_\odot$), what is the escape velocity from the surface of this star compared to the
+   Sun's? c) A planet orbits this star at a distance equal to the Earth's orbital radius (1 AU).
+   Would you expect this planet to be habitable? Justify your answer with a calculation involving
+   the star's radiation intensity.
 
 <details>
 <summary>Answer</summary>
@@ -161,12 +163,12 @@ Conditions.
 
 ### Types of Radiation
 
-| Type | Symbol | Charge | Mass (u) | Penetrating Power | Ionising Power | Stopped By |
+| Type       | Symbol                            | Charge | Mass (u) | Penetrating Power | Ionising Power | Stopped By            |
 | :--------- | :-------------------------------- | :----- | :------- | :---------------- | :------------- | :-------------------- |
-| Alpha | $\alpha$ (${}^4_2\mathrm{He}$) | +2e | 4 | Low | High | Paper / few cm of air |
-| Beta-minus | $\beta^-$ (${}^0_{-1}\mathrm{e}$) | -1e | ~0 | Medium | Medium | Few mm of aluminium |
-| Beta-plus | $\beta^+$ (${}^0_{+1}\mathrm{e}$) | +1e | ~0 | Medium | Medium | Few mm of aluminium |
-| Gamma | $\gamma$ | 0 | 0 | High | Low | Several cm of lead |
+| Alpha      | $\alpha$ (${}^4_2\mathrm{He}$)    | +2e    | 4        | Low               | High           | Paper / few cm of air |
+| Beta-minus | $\beta^-$ (${}^0_{-1}\mathrm{e}$) | -1e    | ~0       | Medium            | Medium         | Few mm of aluminium   |
+| Beta-plus  | $\beta^+$ (${}^0_{+1}\mathrm{e}$) | +1e    | ~0       | Medium            | Medium         | Few mm of aluminium   |
+| Gamma      | $\gamma$                          | 0      | 0        | High              | Low            | Several cm of lead    |
 
 ### Decay Equations
 
@@ -211,11 +213,11 @@ $$
 
 | Half-lives elapsed | Fraction remaining | Percentage remaining |
 | :----------------- | :----------------- | :------------------- |
-| 0 | 1 | 100% |
-| 1 | 1/2 | 50% |
-| 2 | 1/4 | 25% |
-| 3 | 1/8 | 12.5% |
-| 4 | 1/16 | 6.25% |
+| 0                  | 1                  | 100%                 |
+| 1                  | 1/2                | 50%                  |
+| 2                  | 1/4                | 25%                  |
+| 3                  | 1/8                | 12.5%                |
+| 4                  | 1/16               | 6.25%                |
 
 ### Activity
 
@@ -305,7 +307,7 @@ $$
 $$
 
 - Iron-56 (${}^{56}_{26}\mathrm{Fe}$) has the highest binding energy per nucleon (~8.8 MeV/nucleon),
- making it the most stable nucleus.
+  making it the most stable nucleus.
 - Light nuclei (A &lt; 56) can **increase** binding energy per nucleon through **fusion**.
 - Heavy nuclei (A &gt; 56) can **increase** binding energy per nucleon through **fission**.
 
@@ -330,14 +332,14 @@ $$
 
 ### Fission vs Fusion
 
-| Feature | Fission | Fusion |
+| Feature        | Fission                                  | Fusion                                          |
 | :------------- | :--------------------------------------- | :---------------------------------------------- |
-| Process | Heavy nucleus splits into lighter nuclei | Light nuclei combine to form a heavier nucleus |
-| Energy release | ~200 MeV per fission | ~17.6 MeV per fusion (D-T) |
-| Fuel | Uranium-235, Plutonium-239 | Deuterium, Tritium, Helium-3 |
-| By-products | Radioactive waste | Helium (non-radioactive) |
-| Conditions | Neutron bombardment | Extreme temperature ($\sim 10^8$ K) and density |
-| Chain reaction | Yes (self-sustaining with critical mass) | No (requires continuous conditions) |
+| Process        | Heavy nucleus splits into lighter nuclei | Light nuclei combine to form a heavier nucleus  |
+| Energy release | ~200 MeV per fission                     | ~17.6 MeV per fusion (D-T)                      |
+| Fuel           | Uranium-235, Plutonium-239               | Deuterium, Tritium, Helium-3                    |
+| By-products    | Radioactive waste                        | Helium (non-radioactive)                        |
+| Conditions     | Neutron bombardment                      | Extreme temperature ($\sim 10^8$ K) and density |
+| Chain reaction | Yes (self-sustaining with critical mass) | No (requires continuous conditions)             |
 
 ---
 
@@ -349,13 +351,13 @@ Frequency is incident upon it. It provided key evidence for the particle nature 
 ### Key Observations
 
 1. **Threshold frequency ($f_0$):** Electrons are only emitted if the frequency of the incident
- light exceeds a minimum value, regardless of intensity.
+   light exceeds a minimum value, regardless of intensity.
 2. **Instantaneous emission:** Electrons are emitted immediately — there is no time delay, even at
- low intensity.
+   low intensity.
 3. **Intensity effect:** Increasing the intensity of light above $f_0$ increases the **number** of
- photoelectrons, not their maximum kinetic energy.
+   photoelectrons, not their maximum kinetic energy.
 4. **Frequency effect:** Increasing the frequency of light above $f_0$ increases the **maximum
- kinetic energy** of the photoelectrons.
+   kinetic energy** of the photoelectrons.
 
 ### Einstein's Photoelectric Equation
 
@@ -369,17 +371,17 @@ Where:
 - $h = 6.63 \times 10^{-34}$ Js is Planck's constant
 - $f$ is the frequency of incident light (Hz)
 - $\Phi = hf_0$ is the work function of the metal (J) — the minimum energy needed to liberate an
- electron
+  electron
 
 **Work function values:**
 
-| Metal | $\Phi$ (eV) |
+| Metal    | $\Phi$ (eV) |
 | :------- | :---------- |
-| Cesium | 2.1 |
-| Sodium | 2.3 |
-| Zinc | 4.3 |
-| Copper | 4.7 |
-| Platinum | 5.6 |
+| Cesium   | 2.1         |
+| Sodium   | 2.3         |
+| Zinc     | 4.3         |
+| Copper   | 4.7         |
+| Platinum | 5.6         |
 
 ### Why Classical Wave Theory Fails
 
@@ -423,17 +425,17 @@ $$
 
 - **Emission:** Electron drops from a higher level to a lower level; a photon is released.
 - **Absorption:** A photon of exactly the right energy is absorbed; the electron jumps to a higher
- level.
+  level.
 
 ### Spectral Series
 
 Transitions ending at a particular level produce a series of spectral lines:
 
-| Series | Final level ($n_f$) | Region of Spectrum |
+| Series  | Final level ($n_f$) | Region of Spectrum |
 | :------ | :------------------ | :----------------- |
-| Lyman | 1 | Ultraviolet |
-| Balmer | 2 | Visible |
-| Paschen | 3 | Infrared |
+| Lyman   | 1                   | Ultraviolet        |
+| Balmer  | 2                   | Visible            |
+| Paschen | 3                   | Infrared           |
 
 ### Worked Example: Energy Levels
 
@@ -504,25 +506,25 @@ Diffraction is observable.
 ## Exam Tips for Nuclear and Quantum Physics
 
 1. **Always check units in nuclear problems.** Mass defect is often given in atomic mass units (u) —
- convert to kg or use $1 \mathrm{ u} = 931.5$ MeV/c² directly. Energy may be in eV or MeV —
- convert to joules when using SI formulae.
+   convert to kg or use $1 \mathrm{ u} = 931.5$ MeV/c² directly. Energy may be in eV or MeV —
+   convert to joules when using SI formulae.
 
 2. **Distinguish between activity, count rate, and number of nuclei.** Activity ($A = \lambda N$) is
- the rate of decay. Count rate is what a detector measures (always less than activity). $N$ is the
- number of undecayed nuclei.
+   the rate of decay. Count rate is what a detector measures (always less than activity). $N$ is the
+   number of undecayed nuclei.
 
 3. **The photoelectric effect requires $hf \geq \Phi$.** If the frequency is below the threshold, no
- electrons are emitted regardless of intensity. This is the single most important concept.
+   electrons are emitted regardless of intensity. This is the single most important concept.
 
 4. **Energy levels are negative.** The ground state has the most negative energy. An electron is
- free (ionised) when $E \geq 0$. Transitions to higher $n$ require energy input; transitions to
- lower $n$ release energy as photons.
+   free (ionised) when $E \geq 0$. Transitions to higher $n$ require energy input; transitions to
+   lower $n$ release energy as photons.
 
 5. **Know your spectral series.** Lyman (UV, to $n=1$), Balmer (visible, to $n=2$), Paschen (IR, to
- $n=3$). Be able to calculate the wavelength of any transition.
+   $n=3$). Be able to calculate the wavelength of any transition.
 
 6. **De Broglie wavelength applies to matter, not photons.** For photons, use
- $\lambda = c/f = hc/E$. For matter particles, use $\lambda = h/p = h/(mv)$.
+   $\lambda = c/f = hc/E$. For matter particles, use $\lambda = h/p = h/(mv)$.
 
 ## Common Pitfalls
 

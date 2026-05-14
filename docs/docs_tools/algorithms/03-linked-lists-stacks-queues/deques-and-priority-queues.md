@@ -1,9 +1,12 @@
 ---
 id: deques-and-priority-queues
 title: Deques and Priority Queues
-description: "Deque and priority queue data structures: circular buffer implementations, binary heaps, binomial heaps, Fibonacci heaps, and their associated operations."
+description:
+  'Deque and priority queue data structures: circular buffer implementations, binary heaps, binomial
+  heaps, Fibonacci heaps, and their associated operations.'
 slug: deques-and-priority-queues
 ---
+
 ## Deque ADT
 
 A deque (double-ended queue) is a linear collection that supports insertion and removal at both
@@ -11,16 +14,16 @@ Ends. It generalises both stacks (LIFO) and queues (FIFO).
 
 ### Operations
 
-| Operation | Description | Array-backed | Linked-list |
+| Operation       | Description          | Array-backed | Linked-list |
 | --------------- | -------------------- | ------------ | ----------- |
-| `push_front(x)` | Insert at front | $O(1)$ | $O(1)$ |
-| `push_back(x)` | Insert at back | $O(1)$ | $O(1)$ |
-| `pop_front()` | Remove from front | $O(1)$ | $O(1)$ |
-| `pop_back()` | Remove from back | $O(1)$ | $O(1)$ |
-| `front()` | Access front element | $O(1)$ | $O(1)$ |
-| `back()` | Access back element | $O(1)$ | $O(1)$ |
-| `is_empty()` | Check if empty | $O(1)$ | $O(1)$ |
-| `size()` | Number of elements | $O(1)$ | $O(1)$ |
+| `push_front(x)` | Insert at front      | $O(1)$       | $O(1)$      |
+| `push_back(x)`  | Insert at back       | $O(1)$       | $O(1)$      |
+| `pop_front()`   | Remove from front    | $O(1)$       | $O(1)$      |
+| `pop_back()`    | Remove from back     | $O(1)$       | $O(1)$      |
+| `front()`       | Access front element | $O(1)$       | $O(1)$      |
+| `back()`        | Access back element  | $O(1)$       | $O(1)$      |
+| `is_empty()`    | Check if empty       | $O(1)$       | $O(1)$      |
+| `size()`        | Number of elements   | $O(1)$       | $O(1)$      |
 
 ### Circular Buffer Implementation
 
@@ -160,13 +163,13 @@ class LinkedListDeque:
 
 ### Standard Library Support
 
-| Language | Type | Implementation | Notes |
+| Language | Type                | Implementation  | Notes                        |
 | -------- | ------------------- | --------------- | ---------------------------- |
-| Python | `collections.deque` | Circular buffer | $O(1)$ all operations |
-| C++ | `std::deque` | Segmented array | $O(1)$ all operations |
-| Java | `ArrayDeque` | Circular buffer | $O(1)$ all operations |
-| Rust | `VecDeque` | Ring buffer | $O(1)$ all operations |
-| Go | None (use slice) | N/A | Manual implementation needed |
+| Python   | `collections.deque` | Circular buffer | $O(1)$ all operations        |
+| C++      | `std::deque`        | Segmented array | $O(1)$ all operations        |
+| Java     | `ArrayDeque`        | Circular buffer | $O(1)$ all operations        |
+| Rust     | `VecDeque`          | Ring buffer     | $O(1)$ all operations        |
+| Go       | None (use slice)    | N/A             | Manual implementation needed |
 
 :::info
 
@@ -184,14 +187,14 @@ With the highest (or lowest) priority.
 
 ### Operations
 
-| Operation | Description | Binary Heap | Binomial Heap | Fibonacci Heap |
+| Operation            | Description                       | Binary Heap | Binomial Heap | Fibonacci Heap     |
 | -------------------- | --------------------------------- | ----------- | ------------- | ------------------ |
-| `insert(x)` | Insert element with priority | $O(\log n)$ | $O(\log n)$ | $O(1)$ amort. |
-| `extract_min()` | Remove and return minimum element | $O(\log n)$ | $O(\log n)$ | $O(\log n)$ amort. |
-| `decrease_key(x, k)` | Decrease priority of element x | $O(\log n)$ | $O(\log n)$ | $O(1)$ amort. |
-| `find_min()` | Return minimum without removing | $O(1)$ | $O(1)$ | $O(1)$ |
-| `delete(x)` | Remove arbitrary element | $O(\log n)$ | $O(\log n)$ | $O(\log n)$ amort. |
-| `merge(q1, q2)` | Merge two priority queues | $O(n)$ | $O(\log n)$ | $O(1)$ amort. |
+| `insert(x)`          | Insert element with priority      | $O(\log n)$ | $O(\log n)$   | $O(1)$ amort.      |
+| `extract_min()`      | Remove and return minimum element | $O(\log n)$ | $O(\log n)$   | $O(\log n)$ amort. |
+| `decrease_key(x, k)` | Decrease priority of element x    | $O(\log n)$ | $O(\log n)$   | $O(1)$ amort.      |
+| `find_min()`         | Return minimum without removing   | $O(1)$      | $O(1)$        | $O(1)$             |
+| `delete(x)`          | Remove arbitrary element          | $O(\log n)$ | $O(\log n)$   | $O(\log n)$ amort. |
+| `merge(q1, q2)`      | Merge two priority queues         | $O(n)$      | $O(\log n)$   | $O(1)$ amort.      |
 
 ## Binary Heap
 
@@ -202,11 +205,11 @@ A binary heap is a complete binary tree that satisfies the heap property: each n
 
 For a node at index $i$ (0-based):
 
-| Relationship | Formula |
+| Relationship | Formula                       |
 | ------------ | ----------------------------- |
-| Parent | $\lfloor (i - 1) / 2 \rfloor$ |
-| Left child | $2i + 1$ |
-| Right child | $2i + 2$ |
+| Parent       | $\lfloor (i - 1) / 2 \rfloor$ |
+| Left child   | $2i + 1$                      |
+| Right child  | $2i + 2$                      |
 
 ```mermaid
 graph TD
@@ -366,16 +369,16 @@ def heap_sort(arr):
 A d-ary heap is a generalisation where each node has up to $d$ children. For a node at index $i$
 (0-based):
 
-| Relationship | Formula |
+| Relationship | Formula                                 |
 | ------------ | --------------------------------------- |
-| Parent | $\lfloor (i - 1) / d \rfloor$ |
-| Child $j$ | $d \cdot i + j + 1$ for $0 \le j \lt d$ |
+| Parent       | $\lfloor (i - 1) / d \rfloor$           |
+| Child $j$    | $d \cdot i + j + 1$ for $0 \le j \lt d$ |
 
-| Metric | Binary ($d=2$) | 4-ary ($d=4$) | Choice of $d$ |
+| Metric         | Binary ($d=2$)  | 4-ary ($d=4$)   | Choice of $d$                               |
 | -------------- | --------------- | --------------- | ------------------------------------------- |
-| Height | $O(\log_2 n)$ | $O(\log_4 n)$ | $d = E/V + 1$ optimises Dijkstra |
+| Height         | $O(\log_2 n)$   | $O(\log_4 n)$   | $d = E/V + 1$ optimises Dijkstra            |
 | Sift-down cost | $O(d \log_d n)$ | $O(d \log_d n)$ | Larger $d$ = fewer levels but more compares |
-| Sift-up cost | $O(\log_d n)$ | $O(\log_d n)$ | Smaller $d$ = cheaper sift-up |
+| Sift-up cost   | $O(\log_d n)$   | $O(\log_d n)$   | Smaller $d$ = cheaper sift-up               |
 
 For Dijkstra's algorithm on sparse graphs ($E = O(V)$), $d = 2$ is optimal. For dense graphs
 ($E = O(V^2)$), $d \approx V/2$ gives the best performance because sift-down is called more often
@@ -395,11 +398,11 @@ A binomial tree $B_k$ is defined recursively:
 
 Properties of $B_k$:
 
-| Property | Value |
+| Property         | Value                           |
 | ---------------- | ------------------------------- |
-| Number of nodes | $2^k$ |
-| Height | $k$ |
-| Root degree | $k$ |
+| Number of nodes  | $2^k$                           |
+| Height           | $k$                             |
+| Root degree      | $k$                             |
 | Children of root | $B_{k-1}, B_{k-2}, \ldots, B_0$ |
 
 ### Merge Operation
@@ -527,14 +530,14 @@ Perform consolidation only during `extract_min`. This laziness is what gives amo
 
 ### Operations
 
-| Operation | Amortised Time | Worst Case | Mechanism |
+| Operation    | Amortised Time | Worst Case  | Mechanism                                  |
 | ------------ | -------------- | ----------- | ------------------------------------------ |
-| Insert | $O(1)$ | $O(1)$ | Add tree to root list |
-| Find-min | $O(1)$ | $O(1)$ | Pointer to minimum root |
-| Extract-min | $O(\log n)$ | $O(n)$ | Consolidate trees during extraction |
-| Decrease-key | $O(1)$ | $O(\log n)$ | Cut and cascade if parent marked |
-| Delete | $O(\log n)$ | $O(n)$ | Decrease-key to $-\infty$ then extract-min |
-| Merge | $O(1)$ | $O(1)$ | Concatenate root lists |
+| Insert       | $O(1)$         | $O(1)$      | Add tree to root list                      |
+| Find-min     | $O(1)$         | $O(1)$      | Pointer to minimum root                    |
+| Extract-min  | $O(\log n)$    | $O(n)$      | Consolidate trees during extraction        |
+| Decrease-key | $O(1)$         | $O(\log n)$ | Cut and cascade if parent marked           |
+| Delete       | $O(\log n)$    | $O(n)$      | Decrease-key to $-\infty$ then extract-min |
+| Merge        | $O(1)$         | $O(1)$      | Concatenate root lists                     |
 
 ### Marking and Cascading Cuts
 
@@ -686,12 +689,12 @@ Fibonacci heaps have high constant factors (due to the complex pointer manipulat
 Structure). They are asymptotically better than binary heaps only when `decrease_key` is called many
 Times relative to `extract_min`. In practice:
 
-| Algorithm | Binary Heap Time | Fibonacci Heap Time | Practical Winner |
+| Algorithm         | Binary Heap Time  | Fibonacci Heap Time | Practical Winner |
 | ----------------- | ----------------- | ------------------- | ---------------- |
-| Dijkstra (sparse) | $O((V+E) \log V)$ | $O(V \log V + E)$ | Binary heap |
-| Dijkstra (dense) | $O(V^2 \log V)$ | $O(V^2)$ | Fibonacci heap |
-| Prim (sparse) | $O((V+E) \log V)$ | $O(V \log V + E)$ | Binary heap |
-| Prim (dense) | $O(V^2 \log V)$ | $O(V^2)$ | Fibonacci heap |
+| Dijkstra (sparse) | $O((V+E) \log V)$ | $O(V \log V + E)$   | Binary heap      |
+| Dijkstra (dense)  | $O(V^2 \log V)$   | $O(V^2)$            | Fibonacci heap   |
+| Prim (sparse)     | $O((V+E) \log V)$ | $O(V \log V + E)$   | Binary heap      |
+| Prim (dense)      | $O(V^2 \log V)$   | $O(V^2)$            | Fibonacci heap   |
 
 :::warning
 

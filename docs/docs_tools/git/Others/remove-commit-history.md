@@ -1,27 +1,30 @@
 ---
 title: Remove Commit History
 date: 2025-06-02T21:52:46.700Z
-description: "Git version control: Remove Commit History — Proposed Solution... Covering essential concepts and techniques for practic."
+description:
+  'Git version control: Remove Commit History — Proposed Solution... Covering essential concepts and
+  techniques for practic.'
 tags:
   - git
 categories:
   - CS
 slug: remove-commit-history
 ---
+
 ## Proposed Solution
 
 - Clone Git repository
 - Create orphan branch
- - `git checkout --orphan temp`
+- `git checkout --orphan temp`
 - Stage all changes
- - `git add -A`
- - `git commit -m "init commit (cleaned history)"`
+- `git add -A`
+- `git commit -m "init commit (cleaned history)"`
 - Delete old branch
- - `git branch -D main`
+- `git branch -D main`
 - Rename current temp branch to main
- - `git branch -m main`
+- `git branch -m main`
 - Force-push current branch to GitHub
- - `git push -f origin main`
+- `git push -f origin main`
 - Delete all other branches and tags if needed
   ```bash
   git tag | xargs git tag -d  # Delete local tags

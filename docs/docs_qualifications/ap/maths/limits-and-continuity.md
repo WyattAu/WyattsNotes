@@ -1,6 +1,8 @@
 ---
 title: Limits and Continuity
-description: "Limits and Continuity — Intuitive Notion of a Limit (CED Unit 1); Left-Hand and Right-Hand Limits; Common Limits; The Squeeze Theorem."
+description:
+  'Limits and Continuity — Intuitive Notion of a Limit (CED Unit 1); Left-Hand and Right-Hand
+  Limits; Common Limits; The Squeeze Theorem.'
 date: 2026-04-14
 tags:
   - Mathematics
@@ -9,6 +11,7 @@ categories:
   - Mathematics
 slug: limits-and-continuity
 ---
+
 ## Intuitive Notion of a Limit (CED Unit 1)
 
 The limit of a function $f(x)$ as $x$ approaches $a$ is the value that $f(x)$ approaches, regardless
@@ -58,23 +61,22 @@ Left limit $= -1$Right limit $= 1$. The limit does not exist.
 
 ### Common Limits
 
-| Limit | Value |
+| Limit                                                             | Value |
 | ----------------------------------------------------------------- | ----- |
-| $\displaystyle\lim_{x \to 0} \frac{\sin x}{x}$ | $1$ |
-| $\displaystyle\lim_{x \to 0} \frac{1 - \cos x}{x}$ | $0$ |
-| $\displaystyle\lim_{x \to \infty} \frac{1}{x}$ | $0$ |
-| $\displaystyle\lim_{x \to \infty} \left(1 + \frac{1}{x}\right)^x$ | $e$ |
-| $\displaystyle\lim_{x \to 0} \frac{e^x - 1}{x}$ | $1$ |
-| $\displaystyle\lim_{x \to 0} \frac{\ln(1+x)}{x}$ | $1$ |
+| $\displaystyle\lim_{x \to 0} \frac{\sin x}{x}$                    | $1$   |
+| $\displaystyle\lim_{x \to 0} \frac{1 - \cos x}{x}$                | $0$   |
+| $\displaystyle\lim_{x \to \infty} \frac{1}{x}$                    | $0$   |
+| $\displaystyle\lim_{x \to \infty} \left(1 + \frac{1}{x}\right)^x$ | $e$   |
+| $\displaystyle\lim_{x \to 0} \frac{e^x - 1}{x}$                   | $1$   |
+| $\displaystyle\lim_{x \to 0} \frac{\ln(1+x)}{x}$                  | $1$   |
 
 **Proof that $\displaystyle\lim_{x \to 0} \frac{\sin x}{x} = 1$.**
 
-This is proved using the squeeze theorem and the geometric inequality
-$\sin x \lt x \lt \tan x$ for $0 \lt x \lt \frac{\pi}{2}$Which gives
-$\cos x \lt \frac{\sin x}{x} \lt 1$.
+This is proved using the squeeze theorem and the geometric inequality $\sin x \lt x \lt \tan x$ for
+$0 \lt x \lt \frac{\pi}{2}$Which gives $\cos x \lt \frac{\sin x}{x} \lt 1$.
 
-As $x \to 0^+$$\cos x \to 1$So by the squeeze theorem, $\frac{\sin x}{x} \to 1$. A similar
-Argument applies from the left. $\blacksquare$
+As $x \to 0^+$$\cos x \to 1$So by the squeeze theorem, $\frac{\sin x}{x} \to 1$. A similar Argument
+applies from the left. $\blacksquare$
 
 **Proof of the geometric inequality $\sin x \lt x \lt \tan x$ for $0 \lt x \lt \frac{\pi}{2}$.**
 Consider a unit circle sector with angle $x$. The area of triangle $OAP$ (with altitude $\sin x$) is
@@ -206,7 +208,7 @@ For rational functions $\displaystyle\frac{P(x)}{Q(x)}$ where $P$ and $Q$ are po
 
 - If $\deg P \lt \deg Q$: $\displaystyle\lim_{x \to \pm\infty} \frac{P(x)}{Q(x)} = 0$
 - If $\deg P = \deg Q$:
- $\displaystyle\lim_{x \to \pm\infty} \frac{P(x)}{Q(x)} = \frac{\mathrm{leading coeff of {} P}{\mathrm{leading coeff of {} Q}$
+  $\displaystyle\lim_{x \to \pm\infty} \frac{P(x)}{Q(x)} = \frac{\mathrm{leading coeff of {} P}{\mathrm{leading coeff of {} Q}$
 - If $\deg P \gt \deg Q$: the limit is $\pm\infty$
 
 **Why this works.** For large $x$The leading term dominates. Dividing numerator and denominator by
@@ -483,7 +485,7 @@ The general approach is:
 2. If $f$ involves products, use the "restrict delta" technique: bound each factor separately.
 3. If $f$ involves roots, rationalise and use the fact that $\sqrt{x} + \sqrt{a} \ge \sqrt{a}$.
 4. Choose $\delta = \min(\mathrm{bound{}, \epsilon / \mathrm{constant{})$ to handle both the
- restriction and the $\epsilon$ requirement.
+   restriction and the $\epsilon$ requirement.
 
 ## Continuity (CED Unit 1)
 
@@ -505,17 +507,17 @@ $x^2 + 1 \ge 1 \gt 0$).
 
 ### Types of Discontinuities
 
-| Type | Description | Example |
+| Type                     | Description                                                            | Example                                          |
 | ------------------------ | ---------------------------------------------------------------------- | ------------------------------------------------ |
-| Removable | Limit exists but $f(a)$ is undefined or $f(a) \ne \lim_{x \to a} f(x)$ | $f(x) = \frac{x^2 - 1}{x - 1}$ at $x=1$ |
-| Jump (Non-removable) | One-sided limits exist but are not equal | $f(x) = \lfloor x \rfloor$ |
-| Infinite (Non-removable) | Function approaches $\pm\infty$ | $f(x) = \frac{1}{x}$ at $x = 0$ |
-| Oscillating | Function oscillates without approaching a single value | $f(x) = \sin\!\left(\frac{1}{x}\right)$ at $x=0$ |
+| Removable                | Limit exists but $f(a)$ is undefined or $f(a) \ne \lim_{x \to a} f(x)$ | $f(x) = \frac{x^2 - 1}{x - 1}$ at $x=1$          |
+| Jump (Non-removable)     | One-sided limits exist but are not equal                               | $f(x) = \lfloor x \rfloor$                       |
+| Infinite (Non-removable) | Function approaches $\pm\infty$                                        | $f(x) = \frac{1}{x}$ at $x = 0$                  |
+| Oscillating              | Function oscillates without approaching a single value                 | $f(x) = \sin\!\left(\frac{1}{x}\right)$ at $x=0$ |
 
 ### Intermediate Value Theorem (IVT)
 
-If $f$ is continuous on $[a, b]$ and $k$ is any number between $f(a)$ and $f(b)$Then there exists
-At least one $c \in (a, b)$ such that $f(c) = k$.
+If $f$ is continuous on $[a, b]$ and $k$ is any number between $f(a)$ and $f(b)$Then there exists At
+least one $c \in (a, b)$ such that $f(c) = k$.
 
 :::info[Example]
 
@@ -551,15 +553,13 @@ At least one zero in $(a, b)$.
 If $f$ is continuous on a closed interval $[a, b]$Then $f$ attains both an absolute maximum and an
 Absolute minimum on $[a, b]$.
 
-:::warning
-The EVT requires continuity on a **closed** interval. The function $f(x) = \frac{1}{x}$
-On $(0, 1)$ has no maximum, despite being continuous.
-:::
+:::warning The EVT requires continuity on a **closed** interval. The function $f(x) = \frac{1}{x}$
+On $(0, 1)$ has no maximum, despite being continuous. :::
 
 ### Boundedness Theorem
 
-If $f$ is continuous on a closed interval $[a, b]$Then $f$ is bounded on $[a, b]$ -- that is,
-There exist real numbers $m$ and $M$ such that $m \le f(x) \le M$ for all $x \in [a, b]$.
+If $f$ is continuous on a closed interval $[a, b]$Then $f$ is bounded on $[a, b]$ -- that is, There
+exist real numbers $m$ and $M$ such that $m \le f(x) \le M$ for all $x \in [a, b]$.
 
 This follows directly from the EVT: the absolute minimum and maximum serve as the bounds.
 
@@ -570,14 +570,14 @@ This follows directly from the EVT: the absolute minimum and maximum serve as th
 If $\displaystyle\lim_{x \to a^+} f(x) = \pm\infty$ or
 $\displaystyle\lim_{x \to a^-} f(x) = \pm\infty$Then $x = a$ is a vertical asymptote.
 
-For rational functions $\frac{P(x)}{Q(x)}$Vertical asymptotes occur at zeros of $Q(x)$ that are
-Not also zeros of $P(x)$ (after cancellation).
+For rational functions $\frac{P(x)}{Q(x)}$Vertical asymptotes occur at zeros of $Q(x)$ that are Not
+also zeros of $P(x)$ (after cancellation).
 
 ### Horizontal Asymptotes
 
 - If $\displaystyle\lim_{x \to \pm\infty} f(x) = L$Then $y = L$ is a horizontal asymptote.
 - A function can have at most two horizontal asymptotes (one as $x \to \infty$One as
- $x \to -\infty$).
+  $x \to -\infty$).
 
 ### Oblique (Slant) Asymptotes
 
@@ -759,25 +759,25 @@ Achievable -- on whether the one-sided limits can be made to agree.
 ## Common Pitfalls
 
 1. **Confusing the value of a function at a point with its limit.** The limit at $a$ does not depend
- on $f(a)$ at all. A function can have a limit at a point where it is undefined.
+   on $f(a)$ at all. A function can have a limit at a point where it is undefined.
 2. **Assuming
- $\displaystyle\lim_{x \to a} \frac{f(x)}{g(x)} = \frac{\lim_{x \to a} f(x)}{\lim_{x \to a} g(x)}$
- when the denominator limit is zero.** This is invalid when the denominator limit is zero.
+   $\displaystyle\lim_{x \to a} \frac{f(x)}{g(x)} = \frac{\lim_{x \to a} f(x)}{\lim_{x \to a} g(x)}$
+   when the denominator limit is zero.** This is invalid when the denominator limit is zero.
 3. **Forgetting to check both one-sided limits** for piecewise functions and absolute values.
 4. **Misapplying L'Hopital's Rule** when the limit is not in indeterminate form. Always verify
- $\frac{0}{0}$ or $\frac{\pm\infty}{\pm\infty}$ before applying.
+   $\frac{0}{0}$ or $\frac{\pm\infty}{\pm\infty}$ before applying.
 5. **Claiming a limit exists when only one-sided limits are checked.** Both must agree.
 6. **Using thousands separators in math mode.** Write $1000000$ in math expressions, not
- $1,000,000$.
+   $1,000,000$.
 7. **Using angle brackets in math mode.** Use $\lt$ and $\gt$ commands instead of `<` and `>`.
 8. **Forgetting the EVT requires a closed interval.** Open intervals do not guarantee maxima/minima.
 9. **Assuming L'Hopital's Rule always works.** If $\displaystyle\lim \frac{f'(x)}{g'(x)}$ does not
- exist, you cannot conclude anything about the original limit. Try algebraic methods instead.
+   exist, you cannot conclude anything about the original limit. Try algebraic methods instead.
 10. **Applying the product rule for limits to indeterminate products.** The limit
- $\displaystyle\lim_{x \to 0^+} x \ln x$ is not $0 \cdot (-\infty) = 0$; it requires rewriting as
- a quotient and applying L'Hopital's Rule.
+    $\displaystyle\lim_{x \to 0^+} x \ln x$ is not $0 \cdot (-\infty) = 0$; it requires rewriting as
+    a quotient and applying L'Hopital's Rule.
 11. **Forgetting the "restrict delta" step** in epsilon-delta proofs for nonlinear functions. You
- must bound $|x - a|$ before bounding the other factors.
+    must bound $|x - a|$ before bounding the other factors.
 
 ## Practice Questions
 
@@ -788,17 +788,17 @@ Achievable -- on whether the one-sided limits can be made to agree.
 3. Determine all points of discontinuity for $f(x) = \frac{x^2 + x - 6}{x^2 - 9}$ and classify each.
 
 4. Find the horizontal and vertical asymptotes of
- $\displaystyle f(x) = \frac{3x^2 - 2x + 1}{x^2 - 4}$.
+   $\displaystyle f(x) = \frac{3x^2 - 2x + 1}{x^2 - 4}$.
 
 5. Use L'Hopital's Rule to find $\displaystyle\lim_{x \to \infty} \frac{\ln x}{\sqrt{x}}$.
 
 6. Let $f(x) = \begin{cases} \frac{x^2 - 9}{x - 3} & x \ne 3 \\ k & x = 3 \end{cases}$. Find the
- value of $k$ that makes $f$ continuous at $x = 3$.
+   value of $k$ that makes $f$ continuous at $x = 3$.
 
 7. Use the squeeze theorem to find $\displaystyle\lim_{x \to 0} x \cos\!\left(\frac{1}{x}\right)$.
 
 8. Given $f(x) = x^3 - 3x + 1$Use the IVT to show there is at least one root in the interval
- $(1, 2)$.
+   $(1, 2)$.
 
 9. Find $\displaystyle\lim_{x \to 0} \frac{\tan x}{x}$.
 
@@ -811,18 +811,18 @@ Achievable -- on whether the one-sided limits can be made to agree.
 13. Find $\displaystyle\lim_{x \to 0} \frac{e^x - 1 - x}{x^2}$.
 
 14. Prove that $\displaystyle\lim_{x \to 3} \frac{1}{x} = \frac{1}{3}$ using the epsilon-delta
- definition.
+    definition.
 
 15. Find the value of $c$ such that
- $f(x) = \begin{cases} cx^2 + 2x & x \lt 1 \\ 3x - 1 & x \ge 1 \end{cases}$ is continuous at
- $x = 1$.
+    $f(x) = \begin{cases} cx^2 + 2x & x \lt 1 \\ 3x - 1 & x \ge 1 \end{cases}$ is continuous at
+    $x = 1$.
 
 16. Evaluate $\displaystyle\lim_{x \to 0} \frac{\sin^2 x}{x^2}$.
 
 17. Find $\displaystyle\lim_{x \to \infty} \left(\sqrt{x^2 + x} - x\right)$.
 
 18. Determine whether $\displaystyle\lim_{x \to 0} \frac{1}{x^2}\sin\!\left(\frac{1}{x}\right)$
- exists.
+    exists.
 
 ## Practice Problems
 
@@ -935,14 +935,15 @@ By the Squeeze Theorem: $\displaystyle\lim_{x \to 0} x^2 \sin\!\left(\frac{1}{x}
 
 ---
 
-:::tip
-Tip
-Ready to test your understanding of **Limits and Continuity**? The [diagnostic test](/docs/qualifications/ap/maths/diagnostics/diag-limits-continuity) contains the hardest questions within the AP specification for this topic, each with a full worked solution.
+:::tip Tip Ready to test your understanding of **Limits and Continuity**? The
+[diagnostic test](/docs/qualifications/ap/maths/diagnostics/diag-limits-continuity) contains the
+hardest questions within the AP specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Limits and Continuity with other AP Calculus topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Limits and
+Continuity with other AP Calculus topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/qualifications/ap/maths/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/qualifications/ap/maths/diagnostics/diagnostic-guide) for instructions
+on self-marking and building a personal test matrix. :::
 
 ## Summary
 

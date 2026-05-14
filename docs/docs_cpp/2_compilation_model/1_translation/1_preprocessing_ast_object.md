@@ -1,7 +1,10 @@
 ---
 title: Preprocessing and AST Generation, and Object Code
-description: "C++: Preprocessing and AST Generation, and Object Code — Stage 1: The Preprocessor; Mechanics; Inspection; -E: Run preprocessor only."
+description:
+  'C++: Preprocessing and AST Generation, and Object Code — Stage 1: The Preprocessor; Mechanics;
+  Inspection; -E: Run preprocessor only.'
 ---
+
 Import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 Understanding the translation stages are critical for debugging compilation errors, optimizing build
@@ -19,11 +22,11 @@ Only knows tokens.
 ### Mechanics
 
 1. **File Inclusion (`#include`):** The preprocessor locates the target file and recursively
- copy-pastes its entire contents into the current file. This explains why C++ compilation is slow:
- a single `.cpp` file often expands to tens of thousands of lines of code after headers are
- merged.
+   copy-pastes its entire contents into the current file. This explains why C++ compilation is slow:
+   a single `.cpp` file often expands to tens of thousands of lines of code after headers are
+   merged.
 2. **Macro Expansion (`#define`):** Token replacement. This happens blindly, disregarding scope or
- namespaces.
+   namespaces.
 3. **Conditional Compilation (`#ifdef`):** Text is stripped or kept based on conditions.
 
 ### Inspection
@@ -69,7 +72,7 @@ The tokens are assembled into an **Abstract Syntax Tree (AST)**.
 
 - **Syntax:** Does the code follow the grammar? (e.g., matching braces, semicolons).
 - **Semantics:** Does the code make sense? (e.g., type checking, overload resolution, access
- control).
+  control).
 
 **Template Note:** At this stage, templates are parsed for basic syntax, but they are not fully
 Instantiated until they are used.
@@ -139,7 +142,7 @@ Machine (x86_64, ARM64, WASM).
 
 1. **Instruction Selection:** Mapping IR operations to machine opcodes.
 2. **Register Allocation:** Mapping infinite IR registers to the limited physical CPU registers
- (RAX, RDI, etc.).
+   (RAX, RDI, etc.).
 3. **Instruction Scheduling:** Reordering instructions to optimize pipeline throughput.
 
 ### Output: Assembly
@@ -169,13 +172,13 @@ Addresses (symbols) that are outside the current TU.
 An object file is divided into **Sections**. Understanding these is essential for systems
 Programming and embedded work.
 
-| Section | Description | Content |
+| Section       | Description        | Content                                                                                                     |
 | :------------ | :----------------- | :---------------------------------------------------------------------------------------------------------- |
-| **`.text`** | Executable Code | The actual machine instructions (read-only, executable). |
-| **`.data`** | Initialized Data | Global/Static variables with non-zero values (read-write). |
-| **`.bss`** | Uninitialized Data | Global/Static variables initialized to zero. Does not take space on disk; allocated at runtime. |
-| **`.rodata`** | Read-Only Data | String literals, constants, switch tables (`const static`). |
-| **`.symtab`** | Symbol Table | List of functions/variables defined in this file (exported) and required by this file (imported/undefined). |
+| **`.text`**   | Executable Code    | The actual machine instructions (read-only, executable).                                                    |
+| **`.data`**   | Initialized Data   | Global/Static variables with non-zero values (read-write).                                                  |
+| **`.bss`**    | Uninitialized Data | Global/Static variables initialized to zero. Does not take space on disk; allocated at runtime.             |
+| **`.rodata`** | Read-Only Data     | String literals, constants, switch tables (`const static`).                                                 |
+| **`.symtab`** | Symbol Table       | List of functions/variables defined in this file (exported) and required by this file (imported/undefined). |
 
 ### Inspection Tools
 
@@ -233,17 +236,17 @@ The C++ standard [N4950 §5.1.1] defines the translation of a source file into a
 Sequence of **translation phases** (also called "phases of translation"). These are numbered 1
 Through 9:
 
-| Phase | Description |
+| Phase | Description                                                                                                  |
 | :---- | :----------------------------------------------------------------------------------------------------------- |
-| 1 | Physical source file characters are mapped to the source character set |
-| 2 | Line splicing: backslash-newline sequences are deleted, joining physical lines |
-| 3 | Tokenization and preprocessing: comments replaced by whitespace, preprocessing directives executed |
-| 4 | Preprocessing directives are executed, macros expanded, `#include` files recursively included |
-| 5 | Each source character set member that cannot be represented is mapped to an implementation-defined character |
-| 6 | Adjacent string literal tokens are concatenated |
-| 7 | Whitespace and comment removal (except within ` preprocessing` directives), token conversion |
-| 8 | Each preprocessing token is converted to a regular token (the compiler proper begins) |
-| 9 | Linkage: all external references are resolved, program image is generated |
+| 1     | Physical source file characters are mapped to the source character set                                       |
+| 2     | Line splicing: backslash-newline sequences are deleted, joining physical lines                               |
+| 3     | Tokenization and preprocessing: comments replaced by whitespace, preprocessing directives executed           |
+| 4     | Preprocessing directives are executed, macros expanded, `#include` files recursively included                |
+| 5     | Each source character set member that cannot be represented is mapped to an implementation-defined character |
+| 6     | Adjacent string literal tokens are concatenated                                                              |
+| 7     | Whitespace and comment removal (except within ` preprocessing` directives), token conversion                 |
+| 8     | Each preprocessing token is converted to a regular token (the compiler proper begins)                        |
+| 9     | Linkage: all external references are resolved, program image is generated                                    |
 
 Phases 1-4 constitute preprocessing. Phase 8 is where the compiler frontend performs semantic
 Analysis and builds the AST. Phase 9 is linking.
@@ -483,16 +486,16 @@ clang++ -S -emit-llvm -O2 sum.cpp -o sum.ll
 
 Key IR concepts visible in the output:
 
-| Concept | IR Representation |
+| Concept      | IR Representation                                     |
 | :----------- | :---------------------------------------------------- |
-| Function | `define i32 @sum(i32 %n)` |
-| SSA register | `%0 = add i32 %total.0, %i.0` |
-| Basic block | `entry:``for.body:``for.end:` |
-| PHI node | `%total.0 = phi i32 [ 0, %entry ], [ %1, %for.body ]` |
-| Branch | `br i1 %cmp, label %for.body, label %for.end` |
+| Function     | `define i32 @sum(i32 %n)`                             |
+| SSA register | `%0 = add i32 %total.0, %i.0`                         |
+| Basic block  | `entry:``for.body:``for.end:`                         |
+| PHI node     | `%total.0 = phi i32 [ 0, %entry ], [ %1, %for.body ]` |
+| Branch       | `br i1 %cmp, label %for.body, label %for.end`         |
 
-At `-O2`The optimizer may recognize this as a closed-form formula and emit a multiplication
-Instead of a loop:
+At `-O2`The optimizer may recognize this as a closed-form formula and emit a multiplication Instead
+of a loop:
 
 ```llvm
 define i32 @sum(i32 %n) {
@@ -548,15 +551,15 @@ Writing it into the appropriate location in the machine code.
 ### Common Object File Pitfalls
 
 - **Debug builds without `-g` produce useless backtraces.** The compiler emits DWARF debug info
- (`.debug_info``.debug_line`) only when `-g` is specified. Without it, `gdb` and `addr2line`
- cannot map addresses to source lines.
+  (`.debug_info``.debug_line`) only when `-g` is specified. Without it, `gdb` and `addr2line` cannot
+  map addresses to source lines.
 - **Not using `-fPIC` for shared library code.** Position-Independent Code generates PC-relative
- addressing instead of absolute addressing. Without it, the loader must perform text relocations
- (patching code sections at load time), which is slow and prevents code segment sharing across
- processes.
+  addressing instead of absolute addressing. Without it, the loader must perform text relocations
+  (patching code sections at load time), which is slow and prevents code segment sharing across
+  processes.
 - **Stripping before creating a debug link.** Always run `objcopy --only-keep-debug` before `strip`
- and use `objcopy --add-gnu-debuglink` to associate the debug file with the stripped binary.
- Otherwise, you lose the ability to debug crashes in production.
+  and use `objcopy --add-gnu-debuglink` to associate the debug file with the stripped binary.
+  Otherwise, you lose the ability to debug crashes in production.
 
 ## Common Pitfalls
 

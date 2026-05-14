@@ -1,7 +1,9 @@
 ---
 id: dse-chemistry-mole-concept-stoichiometry
 title: Chemistry - Mole Concept and Stoichiometry
-description: "DSE Chemistry notes covering relative atomic/molecular masses, the mole, Avogadro's number, molar volume, empirical and molecular formulae, percentage"
+description:
+  "DSE Chemistry notes covering relative atomic/molecular masses, the mole, Avogadro's number, molar
+  volume, empirical and molecular formulae, percentage"
 slug: mole-concept-and-stoichiometry
 tags: [DSE, Chemistry]
 categories: [DSE, Chemistry]
@@ -37,11 +39,8 @@ For ionic compounds, the term **relative formula mass** is used, calculated the 
 
 $$M_r(\mathrm{NaCl}) = 23.0 + 35.5 = 58.5$$
 
-:::info
-Info
-Problems. Memorise the common values: H = 1.0, C = 12.0, N = 14.0, O = 16.0, Na = 23.0, Mg = 24.3,
-Al = 27.0, S = 32.1, Cl = 35.5, K = 39.1, Ca = 40.1, Fe = 55.8, Cu = 63.5, Zn = 65.4.
-:::
+:::info Info Problems. Memorise the common values: H = 1.0, C = 12.0, N = 14.0, O = 16.0, Na = 23.0,
+Mg = 24.3, Al = 27.0, S = 32.1, Cl = 35.5, K = 39.1, Ca = 40.1, Fe = 55.8, Cu = 63.5, Zn = 65.4. :::
 
 ---
 
@@ -64,30 +63,30 @@ Unit g/mol.
 
 $$n = \frac{m}{M}$$
 
-| Substance | Formula | $M_r$ | Molar Mass |
+| Substance         | Formula                     | $M_r$ | Molar Mass  |
 | ----------------- | --------------------------- | ----- | ----------- |
-| Water | $\mathrm{H}_2\mathrm{O}$ | 18.0 | 18.0 g/mol |
-| Carbon dioxide | $\mathrm{CO}_2$ | 44.0 | 44.0 g/mol |
-| Sodium chloride | $\mathrm{NaCl}$ | 58.5 | 58.5 g/mol |
-| Sulfuric acid | $\mathrm{H}_2\mathrm{SO}_4$ | 98.1 | 98.1 g/mol |
-| Calcium carbonate | $\mathrm{CaCO}_3$ | 100.1 | 100.1 g/mol |
+| Water             | $\mathrm{H}_2\mathrm{O}$    | 18.0  | 18.0 g/mol  |
+| Carbon dioxide    | $\mathrm{CO}_2$             | 44.0  | 44.0 g/mol  |
+| Sodium chloride   | $\mathrm{NaCl}$             | 58.5  | 58.5 g/mol  |
+| Sulfuric acid     | $\mathrm{H}_2\mathrm{SO}_4$ | 98.1  | 98.1 g/mol  |
+| Calcium carbonate | $\mathrm{CaCO}_3$           | 100.1 | 100.1 g/mol |
 
 ### Molar Volume of Gas at STP
 
-At standard temperature and pressure (STP: $0^\circ\mathrm{C}$1 atm), one mole of any ideal gas
-Occupies **22.4 dm$^3$**.
+At standard temperature and pressure (STP:
+$0^\circ\mathrm{C}$1 atm), one mole of any ideal gas
+Occupies **22.4 dm$^3$\*\*.
 
-At room temperature and pressure (RTP: $25^\circ\mathrm{C}$1 atm), one mole occupies **24.0
-Dm$^3$**.
+At room temperature and pressure (RTP:
+$25^\circ\mathrm{C}$1 atm), one mole occupies **24.0
+Dm$^3$\*\*.
 
 $$n = \frac{V}{V_m}$$
 
 Where $V_m$ = 22.4 dm$^3$/mol (STP) or 24.0 dm$^3$/mol (RTP).
 
-:::warning
-Pay close attention to whether the question specifies STP or RTP. Using the wrong molar
-Volume is one of the most common errors in DSE stoichiometry questions.
-:::
+:::warning Pay close attention to whether the question specifies STP or RTP. Using the wrong molar
+Volume is one of the most common errors in DSE stoichiometry questions. :::
 
 ---
 
@@ -118,11 +117,11 @@ Find its empirical formula.
 <details>
 <summary>Answer</summary>
 
-| Element | Mass (%) | $A_r$ | Moles | Ratio |
+| Element | Mass (%) | $A_r$ | Moles              | Ratio           |
 | ------- | -------- | ----- | ------------------ | --------------- |
-| C | 40.0 | 12.0 | 40.0 / 12.0 = 3.33 | 3.33 / 3.33 = 1 |
-| H | 6.7 | 1.0 | 6.7 / 1.0 = 6.7 | 6.7 / 3.33 = 2 |
-| O | 53.3 | 16.0 | 53.3 / 16.0 = 3.33 | 3.33 / 3.33 = 1 |
+| C       | 40.0     | 12.0  | 40.0 / 12.0 = 3.33 | 3.33 / 3.33 = 1 |
+| H       | 6.7      | 1.0   | 6.7 / 1.0 = 6.7    | 6.7 / 3.33 = 2  |
+| O       | 53.3     | 16.0  | 53.3 / 16.0 = 3.33 | 3.33 / 3.33 = 1 |
 
 Empirical formula = $\mathrm{CH}_2\mathrm{O}$
 
@@ -394,21 +393,19 @@ $\%\mathrm{ yield} = \dfrac{4.20}{5.60} \times 100\% = 75.0\%$
 
 $$PV = nRT$$
 
-| Symbol | Meaning | Units |
+| Symbol | Meaning      | Units                                        |
 | ------ | ------------ | -------------------------------------------- |
-| P | Pressure | Pa (or atm, kPa) |
-| V | Volume | m$^3$ (or dm$^3$) |
-| n | Moles | mol |
-| R | Gas constant | 8.314 J/(mol K) or 0.0821 atm dm$^3$/(mol K) |
-| T | Temperature | K |
+| P      | Pressure     | Pa (or atm, kPa)                             |
+| V      | Volume       | m$^3$ (or dm$^3$)                            |
+| n      | Moles        | mol                                          |
+| R      | Gas constant | 8.314 J/(mol K) or 0.0821 atm dm$^3$/(mol K) |
+| T      | Temperature  | K                                            |
 
-:::info
-At STP ($0^\circ\mathrm{C}$ = 273 K, 1 atm), using $PV = nRT$:
+:::info At STP ($0^\circ\mathrm{C}$ = 273 K, 1 atm), using $PV = nRT$:
 
 $V_m = \dfrac{nRT}{P} = \dfrac{1 \times 0.0821 \times 273}{1} = 22.4 \mathrm{ dm}^3$
 
-This confirms the molar volume at STP.
-:::
+This confirms the molar volume at STP. :::
 
 **Worked example 12:** Calculate the volume occupied by 5.00 g of $\mathrm{O}_2$ at 2.0 atm and
 $27^\circ\mathrm{C}$.
@@ -460,12 +457,12 @@ Reaction with a standard solution of known concentration.
 
 ### Key Apparatus
 
-| Apparatus | Purpose |
+| Apparatus        | Purpose                                             |
 | ---------------- | --------------------------------------------------- |
-| Burette | Delivers variable volumes, graduated to 0.05 cm$^3$ |
-| Pipette | Delivers a fixed volume accurately |
-| Volumetric flask | Prepares solutions of precise concentration |
-| Conical flask | Contains the analyte for titration |
+| Burette          | Delivers variable volumes, graduated to 0.05 cm$^3$ |
+| Pipette          | Delivers a fixed volume accurately                  |
+| Volumetric flask | Prepares solutions of precise concentration         |
+| Conical flask    | Contains the analyte for titration                  |
 
 ### Titration Calculations
 
@@ -595,9 +592,9 @@ $c = 20.0 / 40.0 = 0.500 \mathrm{ mol/dm}^3$
 ## Water of Crystallisation and Stoichiometry Combined
 
 **Worked example 18:** 5.00 g of hydrated magnesium sulfate,
-$\mathrm{MgSO}_4 \cdot x\mathrm{H}_2\mathrm{O}$Is dissolved in water and made up to 250 cm$^3$.
-25.0 cm$^3$ of this solution requires 20.0 cm$^3$ of 0.100 mol/dm$^3$ $\mathrm{NaOH}$ to precipitate
-All the magnesium as $\mathrm{Mg(OH)}_2$. Find $x$.
+$\mathrm{MgSO}_4 \cdot x\mathrm{H}_2\mathrm{O}$Is dissolved in water and made up to 250 cm$^3$. 25.0
+cm$^3$ of this solution requires 20.0 cm$^3$ of 0.100 mol/dm$^3$ $\mathrm{NaOH}$ to precipitate All
+the magnesium as $\mathrm{Mg(OH)}_2$. Find $x$.
 
 $$\mathrm{MgSO}_4 + 2\mathrm{NaOH} \to \mathrm{Mg(OH)}_2 + \mathrm{Na}_2\mathrm{SO}_4$$
 
@@ -622,9 +619,9 @@ $x = 0.211 / 0.0100 = 21.1$
 
 This is unrealistic for magnesium sulfate. The expected value is $x = 7$ for Epsom salt. The data
 Likely has an issue. For $\mathrm{MgSO}_4 \cdot 7\mathrm{H}_2\mathrm{O}$:
-$M_r = 120.4 + 7(18.0) = 246.4$. 5.00 g would give $5.00/246.4 = 0.0203 \mathrm{ mol}$And 25
-Cm$^3$ aliquot would need $0.00203 \times 2 = 0.00406 \mathrm{ mol}$ $\mathrm{NaOH}$I.e. 40.6
-Cm$^3$ of 0.100 M NaOH.
+$M_r = 120.4 + 7(18.0) = 246.4$. 5.00 g would give $5.00/246.4 = 0.0203 \mathrm{ mol}$And 25 Cm$^3$
+aliquot would need $0.00203 \times 2 = 0.00406 \mathrm{ mol}$ $\mathrm{NaOH}$I.e. 40.6 Cm$^3$ of
+0.100 M NaOH.
 
 Revised problem: using titre of 40.6 cm$^3$:
 
@@ -651,27 +648,27 @@ Therefore $x = 7$Confirming the formula $\mathrm{MgSO}_4 \cdot 7\mathrm{H}_2\mat
 ## Common Pitfalls
 
 1. **Confusing STP and RTP:** STP molar volume is 22.4 dm$^3$/mol; RTP is 24.0 dm$^3$/mol. Always
- check the conditions stated in the question.
+   check the conditions stated in the question.
 
 2. **Forgetting to convert cm$^3$ to dm$^3$:** Divide cm$^3$ by 1000 before using in $c = n/V$.
 
 3. **Using total mass instead of solute mass:** When calculating molarity, use the mass of the
- solute only, not the total mass of the solution.
+   solute only, not the total mass of the solution.
 
 4. **Incorrect mole ratios:** Always use the balanced equation to determine mole ratios. Never
- assume a 1:1 ratio.
+   assume a 1:1 ratio.
 
 5. **Choosing the wrong limiting reagent:** Always calculate both reactants and compare. The one
- that produces less product is the limiting reagent.
+   that produces less product is the limiting reagent.
 
 6. **Mixing up empirical and molecular formulae:** The empirical formula is the simplest ratio; the
- molecular formula is a multiple of it.
+   molecular formula is a multiple of it.
 
 7. **Ignoring significant figures in titration:** Burette readings should be recorded to 2 decimal
- places (e.g., 24.50 cm$^3$Not 24.5 cm$^3$).
+   places (e.g., 24.50 cm$^3$Not 24.5 cm$^3$).
 
 8. **Forgetting the factor of 2 in back titrations:** Account for the stoichiometry of both
- reactions involved.
+   reactions involved.
 
 ---
 
@@ -685,11 +682,11 @@ Formula and, given that the molar mass is 126 g/mol, the molecular formula.
 <details>
 <summary>Answer</summary>
 
-| Element | Mass (%) | $A_r$ | Moles | Ratio |
+| Element | Mass (%) | $A_r$ | Moles               | Ratio                 |
 | ------- | -------- | ----- | ------------------- | --------------------- |
-| Na | 36.5 | 23.0 | 36.5 / 23.0 = 1.587 | 1.587 / 0.793 = 2.00 |
-| S | 25.4 | 32.1 | 25.4 / 32.1 = 0.791 | 0.791 / 0.793 = 0.997 |
-| O | 38.1 | 16.0 | 38.1 / 16.0 = 2.381 | 2.381 / 0.793 = 3.00 |
+| Na      | 36.5     | 23.0  | 36.5 / 23.0 = 1.587 | 1.587 / 0.793 = 2.00  |
+| S       | 25.4     | 32.1  | 25.4 / 32.1 = 0.791 | 0.791 / 0.793 = 0.997 |
+| O       | 38.1     | 16.0  | 38.1 / 16.0 = 2.381 | 2.381 / 0.793 = 3.00  |
 
 Empirical formula = $\mathrm{Na}_2\mathrm{SO}_3$
 
@@ -844,11 +841,11 @@ Mass of H in $\mathrm{H}_2\mathrm{O}$ = $0.108 \times \dfrac{2.0}{18.0} = 0.0120
 
 Mass of O = $0.120 - 0.0720 - 0.0120 = 0.0360 \mathrm{ g}$
 
-| Element | Mass (g) | $A_r$ | Moles | Ratio |
+| Element | Mass (g) | $A_r$ | Moles   | Ratio |
 | ------- | -------- | ----- | ------- | ----- |
-| C | 0.0720 | 12.0 | 0.00600 | 1 |
-| H | 0.0120 | 1.0 | 0.0120 | 2 |
-| O | 0.0360 | 16.0 | 0.00225 | 0.375 |
+| C       | 0.0720   | 12.0  | 0.00600 | 1     |
+| H       | 0.0120   | 1.0   | 0.0120  | 2     |
+| O       | 0.0360   | 16.0  | 0.00225 | 0.375 |
 
 Multiply all by 8 to clear the fraction: C : H : O = 8 : 16 : 3
 

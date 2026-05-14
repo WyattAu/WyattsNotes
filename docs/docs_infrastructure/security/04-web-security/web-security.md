@@ -1,27 +1,30 @@
 ---
 id: web-security
 title: Web Security
-description: "Web Security — OWASP Top 10 (2021); Cross-Site Scripting (XSS); Types of XSS; Reflected XSS with worked examples and exam-style questions."
+description:
+  'Web Security — OWASP Top 10 (2021); Cross-Site Scripting (XSS); Types of XSS; Reflected XSS with
+  worked examples and exam-style questions.'
 slug: web-security
 sidebar_position: 5
 ---
+
 ## OWASP Top 10 (2021)
 
 The OWASP Top 10 is the de facto standard for web application security awareness. The 2021 edition
 Reflects the shift toward cloud-native architectures and API-driven applications.
 
-| # | Category | Root Cause |
+| #   | Category                                   | Root Cause                                            |
 | --- | ------------------------------------------ | ----------------------------------------------------- |
-| A01 | Broken Access Control | Missing authorization checks, IDOR |
-| A02 | Cryptographic Failures | Weak or missing encryption, exposed sensitive data |
-| A03 | Injection | Unsanitized input in queries, commands, templates |
-| A04 | Insecure Design | Missing threat modeling, abuse case analysis |
-| A05 | Security Misconfiguration | Default configs, unnecessary features, verbose errors |
-| A06 | Vulnerable and Outdated Components | Unaudited dependencies, known CVEs |
-| A07 | Identification and Authentication Failures | Weak passwords, broken session management |
-| A08 | Software and Data Integrity Failures | Insecure deserialization, unsigned updates |
-| A09 | Security Logging and Monitoring Failures | Insufficient logging, no alerting |
-| A10 | Server-Side Request Forgery (SSRF) | Server coerced into making unauthorized requests |
+| A01 | Broken Access Control                      | Missing authorization checks, IDOR                    |
+| A02 | Cryptographic Failures                     | Weak or missing encryption, exposed sensitive data    |
+| A03 | Injection                                  | Unsanitized input in queries, commands, templates     |
+| A04 | Insecure Design                            | Missing threat modeling, abuse case analysis          |
+| A05 | Security Misconfiguration                  | Default configs, unnecessary features, verbose errors |
+| A06 | Vulnerable and Outdated Components         | Unaudited dependencies, known CVEs                    |
+| A07 | Identification and Authentication Failures | Weak passwords, broken session management             |
+| A08 | Software and Data Integrity Failures       | Insecure deserialization, unsigned updates            |
+| A09 | Security Logging and Monitoring Failures   | Insufficient logging, no alerting                     |
+| A10 | Server-Side Request Forgery (SSRF)         | Server coerced into making unauthorized requests      |
 
 ## Cross-Site Scripting (XSS)
 
@@ -30,11 +33,11 @@ Escaping, allowing an attacker to execute scripts in the victim's browser.
 
 ### Types of XSS
 
-| Type | Storage Location | Execution Context | Difficulty |
+| Type      | Storage Location            | Execution Context            | Difficulty |
 | --------- | --------------------------- | ---------------------------- | ---------- |
-| Reflected | URL parameters, form inputs | Response HTML | Medium |
-| Stored | Database, user content | When content is rendered | High |
-| DOM-based | Client-side JavaScript | Client-side DOM manipulation | Medium |
+| Reflected | URL parameters, form inputs | Response HTML                | Medium     |
+| Stored    | Database, user content      | When content is rendered     | High       |
+| DOM-based | Client-side JavaScript      | Client-side DOM manipulation | Medium     |
 
 ### Reflected XSS
 
@@ -80,13 +83,13 @@ document.getElementById('output').innerHTML = userInput;
 
 **Primary defense: Output encoding.** Encode data based on the context where it appears:
 
-| Context | Encoding Required | Example |
+| Context        | Encoding Required    | Example                                 |
 | -------------- | -------------------- | --------------------------------------- |
-| HTML body | HTML entity encoding | `&lt;script&gt;` → `&lt;script&gt;` |
-| HTML attribute | Attribute encoding | `" onclick="` → `&quot; onclick=&quot;` |
-| JavaScript | JavaScript encoding | `</script>` → `\x3c/script\x3e` |
-| URL | URL encoding | `javascript:` → `javascript%3A` |
-| CSS | CSS encoding | `expression()` → `\65xpression()` |
+| HTML body      | HTML entity encoding | `&lt;script&gt;` → `&lt;script&gt;`     |
+| HTML attribute | Attribute encoding   | `" onclick="` → `&quot; onclick=&quot;` |
+| JavaScript     | JavaScript encoding  | `</script>` → `\x3c/script\x3e`         |
+| URL            | URL encoding         | `javascript:` → `javascript%3A`         |
+| CSS            | CSS encoding         | `expression()` → `\65xpression()`       |
 
 ```javascript
 // Using a templating engine with auto-escaping (safe)
@@ -127,12 +130,12 @@ sequenceDiagram
 
 ### CSRF Prevention
 
-| Defense | Mechanism | Effectiveness |
+| Defense                    | Mechanism                                            | Effectiveness       |
 | -------------------------- | ---------------------------------------------------- | ------------------- |
-| SameSite cookie attribute | Browser does not send cookies on cross-site requests | Strong (Lax/Strict) |
-| CSRF token | Hidden form field validated on submission | Strong |
-| Custom request header | JavaScript sets header, cross-origin cannot | Strong (API-only) |
-| Requiring user interaction | Re-authentication for sensitive actions | Strong |
+| SameSite cookie attribute  | Browser does not send cookies on cross-site requests | Strong (Lax/Strict) |
+| CSRF token                 | Hidden form field validated on submission            | Strong              |
+| Custom request header      | JavaScript sets header, cross-origin cannot          | Strong (API-only)   |
+| Requiring user interaction | Re-authentication for sensitive actions              | Strong              |
 
 **SameSite cookies** are the primary defense for modern applications:
 
@@ -226,23 +229,22 @@ cursor.execute("SELECT * FROM users WHERE username = ? AND password = ?", (usern
 user = User.query.filter_by(username=username, password_hash=hash).first()
 ```
 
-| Language/Framework | Safe Method |
+| Language/Framework  | Safe Method                                                 |
 | ------------------- | ----------------------------------------------------------- |
-| Python (sqlite3) | `cursor.execute("SELECT * FROM users WHERE id = ?", (id,))` |
-| Python (SQLAlchemy) | `session.query(User).filter(User.id == id)` |
-| Java (JDBC) | `PreparedStatement` with `?` placeholders |
-| Node.js (pg) | `client.query("SELECT * FROM users WHERE id = $1", [id])` |
-| Go (database/sql) | `db.Query("SELECT * FROM users WHERE id = ?", id)` |
-| PHP (PDO) | `$stmt = $pdo->prepare("SELECT * FROM users WHERE id = ?")` |
+| Python (sqlite3)    | `cursor.execute("SELECT * FROM users WHERE id = ?", (id,))` |
+| Python (SQLAlchemy) | `session.query(User).filter(User.id == id)`                 |
+| Java (JDBC)         | `PreparedStatement` with `?` placeholders                   |
+| Node.js (pg)        | `client.query("SELECT * FROM users WHERE id = $1", [id])`   |
+| Go (database/sql)   | `db.Query("SELECT * FROM users WHERE id = ?", id)`          |
+| PHP (PDO)           | `$stmt = $pdo->prepare("SELECT * FROM users WHERE id = ?")` |
 
 **Additional defenses:**
 
-- **Least privilege**: Application database user should not have `DROP``ALTER`Or `GRANT`
- permissions
+- **Least privilege**: Application database user should not have `DROP``ALTER`Or `GRANT` permissions
 - **Allowlist input validation**: For known-format inputs (integers, UUIDs), validate format before
- querying
+  querying
 - **WAF**: Web Application Firewall can block common injection patterns (but is not a substitute for
- parameterized queries)
+  parameterized queries)
 
 ## Cross-Origin Resource Sharing (CORS)
 
@@ -266,22 +268,22 @@ sequenceDiagram
 
 ### CORS Headers
 
-| Header | Purpose |
+| Header                             | Purpose                                       |
 | ---------------------------------- | --------------------------------------------- |
-| `Access-Control-Allow-Origin` | Which origins can access the resource |
-| `Access-Control-Allow-Methods` | Which HTTP methods are allowed |
-| `Access-Control-Allow-Headers` | Which request headers are allowed |
-| `Access-Control-Allow-Credentials` | Whether cookies/auth headers can be sent |
-| `Access-Control-Max-Age` | How long the preflight result can be cached |
-| `Access-Control-Expose-Headers` | Which response headers the browser can expose |
+| `Access-Control-Allow-Origin`      | Which origins can access the resource         |
+| `Access-Control-Allow-Methods`     | Which HTTP methods are allowed                |
+| `Access-Control-Allow-Headers`     | Which request headers are allowed             |
+| `Access-Control-Allow-Credentials` | Whether cookies/auth headers can be sent      |
+| `Access-Control-Max-Age`           | How long the preflight result can be cached   |
+| `Access-Control-Expose-Headers`    | Which response headers the browser can expose |
 
 ### CORS Misconfigurations
 
-| Misconfiguration | Risk |
+| Misconfiguration                                  | Risk                                            |
 | ------------------------------------------------- | ----------------------------------------------- |
-| `Access-Control-Allow-Origin: *` with credentials | Any site can make authenticated requests |
-| Reflecting `Origin` header without validation | Any origin is allowed |
-| `null` origin allowed | Sandboxed iframes and redirects can bypass CORS |
+| `Access-Control-Allow-Origin: *` with credentials | Any site can make authenticated requests        |
+| Reflecting `Origin` header without validation     | Any origin is allowed                           |
+| `null` origin allowed                             | Sandboxed iframes and redirects can bypass CORS |
 
 ```javascript
 // VULNERABLE — reflecting origin without validation
@@ -305,20 +307,20 @@ It is a defense-in-depth mechanism against XSS and data injection.
 
 ### CSP Directives
 
-| Directive | Purpose | Example |
+| Directive                   | Purpose                              | Example                            |
 | --------------------------- | ------------------------------------ | ---------------------------------- |
-| `default-src` | Fallback for other resource types | `'self'` |
-| `script-src` | Allowed JavaScript sources | `'self' 'nonce-abc123'` |
-| `style-src` | Allowed CSS sources | `'self' 'unsafe-inline'` |
-| `img-src` | Allowed image sources | `'self' data: https:` |
-| `font-src` | Allowed font sources | `'self' https://fonts.gstatic.com` |
-| `connect-src` | Allowed fetch/XHR/WebSocket targets | `'self' https://api.example.com` |
-| `frame-src` | Allowed iframe sources | `'none'` |
-| `object-src` | Allowed plugin (Flash, etc.) sources | `'none'` |
-| `base-uri` | Allowed base URL for relative URLs | `'self'` |
-| `form-action` | Allowed form submission targets | `'self'` |
-| `frame-ancestors` | Who can embed this page in a frame | `'none'` |
-| `upgrade-insecure-requests` | Automatically upgrade HTTP to HTTPS | N/A |
+| `default-src`               | Fallback for other resource types    | `'self'`                           |
+| `script-src`                | Allowed JavaScript sources           | `'self' 'nonce-abc123'`            |
+| `style-src`                 | Allowed CSS sources                  | `'self' 'unsafe-inline'`           |
+| `img-src`                   | Allowed image sources                | `'self' data: https:`              |
+| `font-src`                  | Allowed font sources                 | `'self' https://fonts.gstatic.com` |
+| `connect-src`               | Allowed fetch/XHR/WebSocket targets  | `'self' https://api.example.com`   |
+| `frame-src`                 | Allowed iframe sources               | `'none'`                           |
+| `object-src`                | Allowed plugin (Flash, etc.) sources | `'none'`                           |
+| `base-uri`                  | Allowed base URL for relative URLs   | `'self'`                           |
+| `form-action`               | Allowed form submission targets      | `'self'`                           |
+| `frame-ancestors`           | Who can embed this page in a frame   | `'none'`                           |
+| `upgrade-insecure-requests` | Automatically upgrade HTTP to HTTPS  | N/A                                |
 
 ### Example CSP Policy
 
@@ -414,13 +416,13 @@ Attacker to manipulate application logic or execute arbitrary code.
 
 ### Affected Formats
 
-| Format | Languages | Risk Level |
-| ------------------ | --------------------- | ------------------------- |
-| Java Serialization | Java | Critical (RCE) |
-| Pickle | Python | Critical (RCE) |
-| YAML (unsafe load) | Python, Ruby, Node.js | Critical (RCE) |
-| JSON | Most languages | Low ( data-only) |
-| XML | Java, .NET, Node.js | High (XXE) |
+| Format             | Languages             | Risk Level       |
+| ------------------ | --------------------- | ---------------- |
+| Java Serialization | Java                  | Critical (RCE)   |
+| Pickle             | Python                | Critical (RCE)   |
+| YAML (unsafe load) | Python, Ruby, Node.js | Critical (RCE)   |
+| JSON               | Most languages        | Low ( data-only) |
+| XML                | Java, .NET, Node.js   | High (XXE)       |
 
 ```python
 # VULNERABLE — deserializing untrusted pickle data
@@ -437,10 +439,10 @@ obj = json.loads(data)  # JSON cannot execute code
 ### Prevention
 
 - **Never deserialize untrusted data** with formats that support code execution (pickle, Java
- serialization)
+  serialization)
 - **Use safe formats**: JSON, protocol buffers, or other data-only serialization
 - **If you must deserialize**: Use integrity checks (HMAC signatures), type restrictions, and
- allowlists
+  allowlists
 - **Implement type safety**: Enforce that deserialized objects match expected types
 
 ## Server-Side Request Forgery (SSRF)
@@ -450,24 +452,24 @@ This can expose internal services, cloud metadata endpoints, and sensitive inter
 
 ### Common SSRF Targets
 
-| Target | URL Pattern |
+| Target                    | URL Pattern                                           |
 | ------------------------- | ----------------------------------------------------- |
-| AWS metadata | `http://169.254.169.254/latest/meta-data/` |
-| GCP metadata | `http://metadata.google.internal/computeMetadata/v1/` |
-| Azure metadata | `http://169.254.169.254/metadata/instance` |
-| Internal APIs | `http://internal-api:8080/admin` |
-| Redis | `dict://127.0.0.1:6379/CONFIG SET ...` |
-| File access (via file://) | `file:///etc/passwd` |
+| AWS metadata              | `http://169.254.169.254/latest/meta-data/`            |
+| GCP metadata              | `http://metadata.google.internal/computeMetadata/v1/` |
+| Azure metadata            | `http://169.254.169.254/metadata/instance`            |
+| Internal APIs             | `http://internal-api:8080/admin`                      |
+| Redis                     | `dict://127.0.0.1:6379/CONFIG SET ...`                |
+| File access (via file://) | `file:///etc/passwd`                                  |
 
 ### SSRF Prevention
 
-| Defense | Implementation |
-| ------------------------------ | ------------------------------------------------------------------- |
-| Allowlist URLs | Only permit requests to approved domains/IPs |
+| Defense                        | Implementation                                                |
+| ------------------------------ | ------------------------------------------------------------- |
+| Allowlist URLs                 | Only permit requests to approved domains/IPs                  |
 | Block internal/loopback ranges | Deny `127.0.0.0/8``10.0.0.0/8``172.16.0.0/12``192.168.0.0/16` |
-| Disable unnecessary schemes | Block `file://``gopher://``dict://` |
-| Use network segmentation | Application server cannot reach internal services directly |
-| Cloud metadata protection | Use IMDSv2 on AWS, require signed headers on GCP |
+| Disable unnecessary schemes    | Block `file://``gopher://``dict://`                           |
+| Use network segmentation       | Application server cannot reach internal services directly    |
+| Cloud metadata protection      | Use IMDSv2 on AWS, require signed headers on GCP              |
 
 ```python
 from urllib.parse import urlparse
@@ -560,15 +562,15 @@ Cross-Origin-Resource-Policy: same-origin
 Cross-Origin-Embedder-Policy: require-corp
 ```
 
-| Header | Purpose | Browser Support |
+| Header                       | Purpose                          | Browser Support |
 | ---------------------------- | -------------------------------- | --------------- |
-| `X-Content-Type-Options` | Prevents MIME type sniffing | All |
-| `X-Frame-Options` | Prevents clickjacking | All |
-| `Strict-Transport-Security` | Forces HTTPS connections | All |
-| `Content-Security-Policy` | Controls resource loading | All |
-| `Referrer-Policy` | Controls referrer header leakage | All |
-| `Permissions-Policy` | Controls browser feature access | Modern |
-| `Cross-Origin-Opener-Policy` | Isolates browsing context group | Modern |
+| `X-Content-Type-Options`     | Prevents MIME type sniffing      | All             |
+| `X-Frame-Options`            | Prevents clickjacking            | All             |
+| `Strict-Transport-Security`  | Forces HTTPS connections         | All             |
+| `Content-Security-Policy`    | Controls resource loading        | All             |
+| `Referrer-Policy`            | Controls referrer header leakage | All             |
+| `Permissions-Policy`         | Controls browser feature access  | Modern          |
+| `Cross-Origin-Opener-Policy` | Isolates browsing context group  | Modern          |
 
 ## Input Validation vs Output Encoding
 
@@ -597,13 +599,13 @@ def render_comment(comment_text):
     return f"<div class='comment'>{html.escape(comment_text)}</div>"
 ```
 
-| Concern | Input Validation | Output Encoding |
+| Concern                | Input Validation         | Output Encoding           |
 | ---------------------- | ------------------------ | ------------------------- |
-| Purpose | Data quality | Safe rendering |
-| When | On data entry | On data output |
-| What it checks | Format, length, type | Context-specific escaping |
-| Prevents | Bad data, some injection | XSS in all contexts |
-| Can replace the other? | No | No |
+| Purpose                | Data quality             | Safe rendering            |
+| When                   | On data entry            | On data output            |
+| What it checks         | Format, length, type     | Context-specific escaping |
+| Prevents               | Bad data, some injection | XSS in all contexts       |
+| Can replace the other? | No                       | No                        |
 
 Both are necessary. Input validation alone does not prevent XSS (valid input can contain HTML).
 Output encoding alone does not prevent all injection (SQL injection is not an output encoding
@@ -634,25 +636,25 @@ mvn org.owasp:dependency-check-maven:check
 
 ### Dependency Management Best Practices
 
-1. **Pin dependencies**: Use lockfiles (`package-lock.json``poetry.lock``go.sum``Cargo.lock`)
- to ensure reproducible builds
+1. **Pin dependencies**: Use lockfiles (`package-lock.json``poetry.lock``go.sum``Cargo.lock`) to
+   ensure reproducible builds
 2. **Automate scanning**: Integrate vulnerability scanning into CI/CD pipeline
 3. **Minimize dependencies**: Fewer dependencies = smaller attack surface
 4. **Review new dependencies**: Check maintenance activity, known vulnerabilities, license
- compatibility
+   compatibility
 5. **Update regularly**: Establish a regular cadence for dependency updates
 6. **Use SLSA framework**: Supply-chain Levels for Software Artifacts provides a checklist for
- supply chain integrity
+   supply chain integrity
 
 ### Software Composition Analysis (SCA) Tools
 
-| Tool | Language(s) | Integration |
+| Tool       | Language(s) | Integration     |
 | ---------- | ----------- | --------------- |
-| Snyk | Most | CI/CD, IDE, CLI |
-| Dependabot | Most | GitHub-native |
-| Renovate | Most | CI/CD |
-| Trivy | Most | CLI, CI/CD |
-| Grype | Most | CLI |
+| Snyk       | Most        | CI/CD, IDE, CLI |
+| Dependabot | Most        | GitHub-native   |
+| Renovate   | Most        | CI/CD           |
+| Trivy      | Most        | CLI, CI/CD      |
+| Grype      | Most        | CLI             |
 
 ## Subdomain Takeover
 
@@ -661,14 +663,14 @@ Deleted. An attacker can claim the resource and serve content on the subdomain.
 
 ### Common Vulnerable Services
 
-| Service | Detection Indicator |
+| Service            | Detection Indicator                       |
 | ------------------ | ----------------------------------------- |
-| GitHub Pages | CNAME to `username.github.io` |
-| AWS S3 | CNAME to `bucket.s3.amazonaws.com` |
-| Heroku | CNAME to `app.herokuapp.com` |
-| Azure Blob Storage | CNAME to `*.blob.core.windows.net` |
-| CloudFront | CNAME to `*.cloudfront.net` |
-| Vercel/Netlify | CNAME to `*.vercel.app` / `*.netlify.app` |
+| GitHub Pages       | CNAME to `username.github.io`             |
+| AWS S3             | CNAME to `bucket.s3.amazonaws.com`        |
+| Heroku             | CNAME to `app.herokuapp.com`              |
+| Azure Blob Storage | CNAME to `*.blob.core.windows.net`        |
+| CloudFront         | CNAME to `*.cloudfront.net`               |
+| Vercel/Netlify     | CNAME to `*.vercel.app` / `*.netlify.app` |
 
 ### Prevention
 
@@ -687,8 +689,8 @@ Client-side check. Always validate on the server, regardless of what the client 
 ### Pitfall 2: Ignoring Security Headers
 
 Many web applications run without security headers. Adding `X-Content-Type-Options: nosniff`
-`X-Frame-Options: DENY``Strict-Transport-Security`And a reasonable CSP takes minutes and
-Provides meaningful protection against common attacks.
+`X-Frame-Options: DENY``Strict-Transport-Security`And a reasonable CSP takes minutes and Provides
+meaningful protection against common attacks.
 
 ### Pitfall 3: Using string concatenation for SQL
 
@@ -744,13 +746,13 @@ Tracing). The `DELETE` and `PUT` methods must require authentication and authori
 
 ### Testing Types
 
-| Type | Abbreviation | When | What It Finds |
+| Type                                     | Abbreviation | When                | What It Finds                                       |
 | ---------------------------------------- | ------------ | ------------------- | --------------------------------------------------- |
-| Static Application Security Testing | SAST | During development | Code-level vulnerabilities (SQLi, XSS patterns) |
-| Dynamic Application Security Testing | DAST | Running application | Exploitable vulnerabilities from outside |
-| Interactive Application Security Testing | IAST | During runtime | Vulnerabilities with context (line number, request) |
-| Software Composition Analysis | SCA | During build | Vulnerable dependencies (CVEs) |
-| Penetration Testing | Pentest | Periodically | Business-logic flaws, chained vulnerabilities |
+| Static Application Security Testing      | SAST         | During development  | Code-level vulnerabilities (SQLi, XSS patterns)     |
+| Dynamic Application Security Testing     | DAST         | Running application | Exploitable vulnerabilities from outside            |
+| Interactive Application Security Testing | IAST         | During runtime      | Vulnerabilities with context (line number, request) |
+| Software Composition Analysis            | SCA          | During build        | Vulnerable dependencies (CVEs)                      |
+| Penetration Testing                      | Pentest      | Periodically        | Business-logic flaws, chained vulnerabilities       |
 
 ### SAST in CI/CD
 

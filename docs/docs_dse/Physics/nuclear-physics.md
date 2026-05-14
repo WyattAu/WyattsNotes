@@ -1,6 +1,8 @@
 ---
 title: Nuclear Physics
-description: "DSE Physics nuclear physics notes covering radioactivity, alpha beta gamma radiation, half-life, nuclear reactions, fission, fusion, and binding energy."
+description:
+  'DSE Physics nuclear physics notes covering radioactivity, alpha beta gamma radiation, half-life,
+  nuclear reactions, fission, fusion, and binding energy.'
 date: 2026-04-07T00:00:00.000Z
 tags:
   - DSE
@@ -18,11 +20,11 @@ slug: nuclear-physics
 An atom consists of a small, dense, positively charged **nucleus** surrounded by negatively charged
 **electrons** orbiting in shells. The nucleus contains two types of nucleons:
 
-| Particle | Symbol | Charge | Mass (u) | Mass (kg) |
+| Particle | Symbol | Charge                   | Mass (u)   | Mass (kg)               |
 | -------- | ------ | ------------------------ | ---------- | ----------------------- |
-| Proton | $p$ | $+1.6 \times 10^{-19}$ C | $1.007276$ | $1.673 \times 10^{-27}$ |
-| Neutron | $n$ | $0$ | $1.008665$ | $1.675 \times 10^{-27}$ |
-| Electron | $e^-$ | $-1.6 \times 10^{-19}$ C | $0.000549$ | $9.11 \times 10^{-31}$ |
+| Proton   | $p$    | $+1.6 \times 10^{-19}$ C | $1.007276$ | $1.673 \times 10^{-27}$ |
+| Neutron  | $n$    | $0$                      | $1.008665$ | $1.675 \times 10^{-27}$ |
+| Electron | $e^-$  | $-1.6 \times 10^{-19}$ C | $0.000549$ | $9.11 \times 10^{-31}$  |
 
 The **atomic mass unit** (u) is defined as $\frac{1}{12}$ the mass of a carbon-12 atom:
 
@@ -56,23 +58,21 @@ Examples:
 **Definition.** **Isotopes** are atoms of the same element (same $Z$) but different mass number
 (different $N$). They have identical chemical properties but different nuclear properties.
 
-| Term | Same $Z$ | Same $N$ | Same $A$ |
+| Term     | Same $Z$ | Same $N$ | Same $A$ |
 | -------- | -------- | -------- | -------- |
-| Isotopes | Yes | No | No |
-| Isobars | No | No | Yes |
-| Isotones | No | Yes | No |
+| Isotopes | Yes      | No       | No       |
+| Isobars  | No       | No       | Yes      |
+| Isotones | No       | Yes      | No       |
 
 Examples:
 
 - Isotopes: $\prescript{1}{}{1}\mathrm{H}$$\prescript{2}{}{1}\mathrm{H}$
- $\prescript{3}{}{1}\mathrm{H}$
+  $\prescript{3}{}{1}\mathrm{H}$
 - Isobars: $\prescript{40}{}{20}\mathrm{Ca}$ and $\prescript{40}{}{18}\mathrm{Ar}$
 - Isotones: $\prescript{14}{}{6}\mathrm{C}$ and $\prescript{15}{}{7}\mathrm{N}$ (both have $N = 8$)
 
-:::info
-In DSE exams, isotopes share the same chemical symbol and chemical behaviour. Only nuclear
-Reactions can distinguish between isotopes of the same element.
-:::
+:::info In DSE exams, isotopes share the same chemical symbol and chemical behaviour. Only nuclear
+Reactions can distinguish between isotopes of the same element. :::
 
 ### Nuclear Forces
 
@@ -81,7 +81,7 @@ The nucleus is held together by the **strong nuclear force**, which is:
 - Attractive at distances of $1$ to $3 \mathrm{ fm}$ ($1 \mathrm{ fm} = 10^{-15}$ m)
 - Repulsive at distances shorter than about $0.5 \mathrm{ fm}$ (hard core repulsion)
 - Independent of charge (acts equally between proton-proton, neutron-neutron, and proton-neutron
- pairs)
+  pairs)
 - Much stronger than the electrostatic force at short range, but has a very short range
 - Not described by a simple inverse-square law
 
@@ -123,17 +123,17 @@ Expose photographic plates. Marie and Pierre Curie subsequently isolated poloniu
 
 There are three main types of radiation emitted by radioactive nuclei:
 
-| Property | Alpha ($\alpha$) | Beta-minus ($\beta^-$) | Beta-plus ($\beta^+$) | Gamma ($\gamma$) |
+| Property                    | Alpha ($\alpha$)                                    | Beta-minus ($\beta^-$)                      | Beta-plus ($\beta^+$)                       | Gamma ($\gamma$)                            |
 | --------------------------- | --------------------------------------------------- | ------------------------------------------- | ------------------------------------------- | ------------------------------------------- |
-| **Nature** | Helium nucleus $\prescript{4}{}{2}\mathrm{He}^{2+}$ | Electron $e^-$ | Positron $e^+$ | Electromagnetic wave |
-| **Charge** | $+2e$ | $-e$ | $+e$ | $0$ |
-| **Mass (u)** | $4.0015$ | $0.00055$ | $0.00055$ | $0$ |
-| **Speed** | $\sim 5\%$ of $c$ | Up to $99\%$ of $c$ | Up to $99\%$ of $c$ | $c$ (speed of light) |
-| **Ionising power** | Very high | Moderate | Moderate | Low |
-| **Penetrating power** | Very low (stopped by paper or a few cm of air) | Moderate (stopped by a few mm of aluminium) | Moderate (stopped by a few mm of aluminium) | Very high (requires thick lead/concrete) |
-| **Range in air** | $\sim 5 \mathrm{ cm}$ | $\sim 1 \mathrm{ m}$ | $\sim 1 \mathrm{ m}$ | Infinite (intensity decreases with $1/r^2$) |
-| **Deflection in E/B field** | Deflected towards negative plate | Deflected towards positive plate | Deflected towards negative plate | Not deflected |
-| **Energy spectrum** | Discrete (monoenergetic) | Continuous (shared with antineutrino) | Continuous (shared with neutrino) | Discrete (line spectrum) |
+| **Nature**                  | Helium nucleus $\prescript{4}{}{2}\mathrm{He}^{2+}$ | Electron $e^-$                              | Positron $e^+$                              | Electromagnetic wave                        |
+| **Charge**                  | $+2e$                                               | $-e$                                        | $+e$                                        | $0$                                         |
+| **Mass (u)**                | $4.0015$                                            | $0.00055$                                   | $0.00055$                                   | $0$                                         |
+| **Speed**                   | $\sim 5\%$ of $c$                                   | Up to $99\%$ of $c$                         | Up to $99\%$ of $c$                         | $c$ (speed of light)                        |
+| **Ionising power**          | Very high                                           | Moderate                                    | Moderate                                    | Low                                         |
+| **Penetrating power**       | Very low (stopped by paper or a few cm of air)      | Moderate (stopped by a few mm of aluminium) | Moderate (stopped by a few mm of aluminium) | Very high (requires thick lead/concrete)    |
+| **Range in air**            | $\sim 5 \mathrm{ cm}$                               | $\sim 1 \mathrm{ m}$                        | $\sim 1 \mathrm{ m}$                        | Infinite (intensity decreases with $1/r^2$) |
+| **Deflection in E/B field** | Deflected towards negative plate                    | Deflected towards positive plate            | Deflected towards negative plate            | Not deflected                               |
+| **Energy spectrum**         | Discrete (monoenergetic)                            | Continuous (shared with antineutrino)       | Continuous (shared with neutrino)           | Discrete (line spectrum)                    |
 
 ### Alpha Decay
 
@@ -206,8 +206,8 @@ Lower energy state:
 
 $$\prescript{A}{}{Z}\mathrm{X}^* \to \prescript{A}{}{Z}\mathrm{X} + \gamma$$
 
-The asterisk denotes an excited nuclear state. Gamma emission does not change $A$ or $Z$. It
- follows alpha or beta decay when the daughter nucleus is left in an excited state.
+The asterisk denotes an excited nuclear state. Gamma emission does not change $A$ or $Z$. It follows
+alpha or beta decay when the daughter nucleus is left in an excited state.
 
 Gamma rays have a discrete line spectrum because the nuclear energy levels are quantised. They are
 The most penetrating form of radiation but the least ionising.
@@ -223,11 +223,9 @@ Every nuclear decay must satisfy:
 5. **Conservation of momentum**: linear momentum is conserved
 6. **Conservation of lepton number**: total lepton number is conserved
 
-:::warning
-Warning
-Equations. While DSE exams sometimes omit them for simplicity, always check whether the question
-Requires them. Also, ensure $A$ and $Z$ balance on both sides of every decay equation.
-:::
+:::warning Warning Equations. While DSE exams sometimes omit them for simplicity, always check
+whether the question Requires them. Also, ensure $A$ and $Z$ balance on both sides of every decay
+equation. :::
 
 ### Worked Example: Balancing Decay Equations
 
@@ -319,12 +317,12 @@ $$\frac{N}{N_0} = \left(\frac{1}{2}\right)^n = \frac{1}{2^n}$$
 
 | Number of half-lives ($n$) | Fraction remaining | Percentage remaining |
 | -------------------------- | ------------------ | -------------------- |
-| $0$ | $1$ | $100\%$ |
-| $1$ | $1/2$ | $50\%$ |
-| $2$ | $1/4$ | $25\%$ |
-| $3$ | $1/8$ | $12.5\%$ |
-| $4$ | $1/16$ | $6.25\%$ |
-| $5$ | $1/32$ | $3.125\%$ |
+| $0$                        | $1$                | $100\%$              |
+| $1$                        | $1/2$              | $50\%$               |
+| $2$                        | $1/4$              | $25\%$               |
+| $3$                        | $1/8$              | $12.5\%$             |
+| $4$                        | $1/16$             | $6.25\%$             |
+| $5$                        | $1/32$             | $3.125\%$            |
 
 ### Determining Half-Life from a Graph
 
@@ -347,11 +345,9 @@ The half-life is then:
 
 $$t_{1/2} = \frac{\ln 2}{\lvert\mathrm{slope}\rvert}$$
 
-:::info
-Info
-Plot, remember the slope is negative: $\lvert\mathrm{slope}\rvert = \lambda$. Always check the axes carefully
--- count rate is proportional to activity but is lower due to detector efficiency.
-:::
+:::info Info Plot, remember the slope is negative: $\lvert\mathrm{slope}\rvert = \lambda$. Always
+check the axes carefully -- count rate is proportional to activity but is lower due to detector
+efficiency. :::
 
 ### Relationship Between Activity and Mass
 
@@ -365,15 +361,12 @@ The activity is then:
 
 $$A = \lambda N = \frac{\lambda m N_A}{M} = \frac{m N_A \ln 2}{M t_{1/2}}$$
 
-:::warning
-Warning
-Detected by a particular instrument). The count rate is always less than or equal to the activity
-Because:
+:::warning Warning Detected by a particular instrument). The count rate is always less than or equal
+to the activity Because:
 
 - The detector only captures a fraction of emitted radiation (solid angle)
 - Not all radiation reaches the detector (absorption by air, source holder)
-- The detector has less than 100% efficiency
-:::
+- The detector has less than 100% efficiency :::
 
 ---
 
@@ -438,18 +431,18 @@ The nucleus.
 
 The binding energy per nucleon curve is one of the most important graphs in nuclear physics:
 
-| Region | Mass number range | Binding energy per nucleon | Characteristics |
+| Region              | Mass number range | Binding energy per nucleon | Characteristics               |
 | ------------------- | ----------------- | -------------------------- | ----------------------------- |
-| Very light nuclei | $A \lt 20$ | Rising sharply | Fusion releases energy |
-| Peak region (Fe-56) | $A \approx 50-60$ | Maximum ($\sim 8.8$ MeV) | Most stable nuclei |
-| Medium nuclei | $20 \lt A \lt 60$ | Relatively flat | Stable |
-| Heavy nuclei | $A \gt 60$ | Gradually decreasing | Fission releases energy |
-| Very heavy nuclei | $A \gt 200$ | $\sim 7.5$ MeV | Unstable, can undergo fission |
+| Very light nuclei   | $A \lt 20$        | Rising sharply             | Fusion releases energy        |
+| Peak region (Fe-56) | $A \approx 50-60$ | Maximum ($\sim 8.8$ MeV)   | Most stable nuclei            |
+| Medium nuclei       | $20 \lt A \lt 60$ | Relatively flat            | Stable                        |
+| Heavy nuclei        | $A \gt 60$        | Gradually decreasing       | Fission releases energy       |
+| Very heavy nuclei   | $A \gt 200$       | $\sim 7.5$ MeV             | Unstable, can undergo fission |
 
 Key points:
 
 - Iron-56 ($\prescript{56}{}{26}\mathrm{Fe}$) has the highest binding energy per nucleon and is the
- most stable nucleus
+  most stable nucleus
 - Energy is released when light nuclei **fuse** (move towards the peak from the left)
 - Energy is released when heavy nuclei **fission** (move towards the peak from the right)
 - The curve explains why both fusion and fission can release energy
@@ -471,14 +464,14 @@ Supercritical, the reaction rate increases exponentially.
 
 #### Components of a Nuclear Reactor
 
-| Component | Function | Material examples |
+| Component    | Function                                                          | Material examples            |
 | ------------ | ----------------------------------------------------------------- | ---------------------------- |
-| Fuel rods | Contain fissile material | U-235, Pu-239 |
-| Moderator | Slow down fast neutrons to thermal energies for efficient fission | Water, heavy water, graphite |
-| Control rods | Absorb excess neutrons to control the reaction rate | Boron, cadmium, hafnium |
-| Coolant | Remove heat from the reactor core | Water, liquid sodium, CO$_2$ |
-| Containment | Prevent radiation leaks to the environment | Thick concrete and steel |
-| Shielding | Absorb gamma rays and neutrons | Lead, concrete, water |
+| Fuel rods    | Contain fissile material                                          | U-235, Pu-239                |
+| Moderator    | Slow down fast neutrons to thermal energies for efficient fission | Water, heavy water, graphite |
+| Control rods | Absorb excess neutrons to control the reaction rate               | Boron, cadmium, hafnium      |
+| Coolant      | Remove heat from the reactor core                                 | Water, liquid sodium, CO$_2$ |
+| Containment  | Prevent radiation leaks to the environment                        | Thick concrete and steel     |
+| Shielding    | Absorb gamma rays and neutrons                                    | Lead, concrete, water        |
 
 **Moderator:** Fast neutrons from fission have energies of about $2 \mathrm{ MeV}$. U-235 fission is
 Much more probable with thermal (slow) neutrons ($\sim 0.025 \mathrm{ eV}$). The moderator slows
@@ -507,14 +500,14 @@ Down the reactor.
 - Simpler design but radioactive steam passes through the turbine
 - Lower operating pressure than PWR
 
-| Feature | PWR | BWR |
+| Feature           | PWR                               | BWR                        |
 | ----------------- | --------------------------------- | -------------------------- |
-| Coolant | Pressurised water (does not boil) | Boiling water |
-| Steam generation | Secondary loop (heat exchanger) | Direct in reactor core |
-| Moderator | Water (primary loop) | Water |
-| Pressure | $\sim 155$ bar | $\sim 70$ bar |
-| Fuel enrichment | $3$-$5\%$ U-235 | $2$-$4\%$ U-235 |
-| Radioactive steam | No (secondary loop is clean) | Yes (steam is radioactive) |
+| Coolant           | Pressurised water (does not boil) | Boiling water              |
+| Steam generation  | Secondary loop (heat exchanger)   | Direct in reactor core     |
+| Moderator         | Water (primary loop)              | Water                      |
+| Pressure          | $\sim 155$ bar                    | $\sim 70$ bar              |
+| Fuel enrichment   | $3$-$5\%$ U-235                   | $2$-$4\%$ U-235            |
+| Radioactive steam | No (secondary loop is clean)      | Yes (steam is radioactive) |
 
 ### Nuclear Fusion
 
@@ -535,7 +528,7 @@ $$\prescript{2}{}{1}\mathrm{H} + \prescript{3}{}{1}\mathrm{H} \to \prescript{4}{
 For fusion to occur, nuclei must overcome the electrostatic repulsion between them. This requires:
 
 1. **High temperature** ($\sim 10^7$ to $10^8$ K): nuclei must have sufficient kinetic energy to
- overcome the Coulomb barrier
+   overcome the Coulomb barrier
 2. **High density**: increases the collision rate between nuclei
 3. **Confinement time**: nuclei must be held together long enough for fusion to occur
 
@@ -579,11 +572,9 @@ For the D-T fusion reaction:
 
 $$Q = [m(\prescript{2}{}{1}\mathrm{H}) + m(\prescript{3}{}{1}\mathrm{H}) - m(\prescript{4}{}{2}\mathrm{He}) - m(\prescript{1}{}{0}\mathrm{n})]c^2 = 17.6 \mathrm{ MeV}$$
 
-:::info
-In DSE calculations, always convert masses to the same units (preferably u) before computing
+:::info In DSE calculations, always convert masses to the same units (preferably u) before computing
 The Q-value. Use $1 \mathrm{ u} = 931.5 \mathrm{ MeV}/c^2$ for the energy conversion. Remember that
-The Q-value is shared among all products as kinetic energy (and possibly photons).
-:::
+The Q-value is shared among all products as kinetic energy (and possibly photons). :::
 
 ---
 
@@ -596,13 +587,12 @@ The Geiger-Muller (GM) tube is the most commonly used radiation detector in scho
 **Construction and operation:**
 
 1. A thin mica window at one end allows radiation to enter
-2. The tube contains a low-pressure gas ( argon with a small amount of halogen quenching
- gas)
+2. The tube contains a low-pressure gas ( argon with a small amount of halogen quenching gas)
 3. A central anode wire is at high positive potential ($\sim 400$-$900$ V); the cylindrical cathode
- is at ground potential
+   is at ground potential
 4. When radiation enters the tube, it ionises gas atoms, producing ion pairs
 5. The electrons are accelerated towards the anode and ionise more gas atoms in an **avalanche**
- (Townsend avalanche)
+   (Townsend avalanche)
 6. Each avalanche produces a detectable pulse of current
 7. The pulse is counted by an electronic counter
 
@@ -614,7 +604,7 @@ Time**. At high count rates, some events are missed, leading to an undercount.
 Electrons, causing multiple pulses from a single radiation event. Quenching is achieved by:
 
 - Adding a small amount of halogen gas (self-quenching tube) that absorbs the energy of positive
- ions
+  ions
 - Using an external quenching circuit
 
 **Limitations of the GM tube:**
@@ -632,7 +622,7 @@ Total dose received.
 - Used in **film badges** worn by radiation workers to monitor cumulative exposure
 - Can provide a permanent record of radiation exposure
 - Different filters (e.g., aluminium, lead) over different sections allow estimation of the type and
- energy of radiation
+  energy of radiation
 - Simple, inexpensive, and requires no power supply
 - Cannot provide real-time readings; must be developed in a laboratory
 
@@ -669,11 +659,11 @@ A cloud chamber makes the paths of ionising radiation visible by creating a supe
 
 **Track characteristics:**
 
-| Radiation | Track appearance | Length |
+| Radiation | Track appearance                                               | Length              |
 | --------- | -------------------------------------------------------------- | ------------------- |
-| Alpha | Thick, straight, dense track | Short ($\sim 5$ cm) |
-| Beta | Thin, winding track ( deflected) | Long ($\sim 1$ m) |
-| Gamma | Very faint, short, scattered tracks (pair production, Compton) | Very short |
+| Alpha     | Thick, straight, dense track                                   | Short ($\sim 5$ cm) |
+| Beta      | Thin, winding track ( deflected)                               | Long ($\sim 1$ m)   |
+| Gamma     | Very faint, short, scattered tracks (pair production, Compton) | Very short          |
 
 ### Semiconductor Detector
 
@@ -688,19 +678,17 @@ Semiconductor material (e.g., silicon or germanium).
 
 ### Comparison of Detectors
 
-| Detector | Radiation types detected | Energy measurement | Advantages | Disadvantages |
+| Detector              | Radiation types detected   | Energy measurement | Advantages                        | Disadvantages                     |
 | --------------------- | -------------------------- | ------------------ | --------------------------------- | --------------------------------- |
-| GM tube | Alpha, beta, gamma | No | Simple, portable, cheap | No energy resolution, dead time |
-| Photographic film | Alpha, beta, gamma, X-rays | No | Permanent record, no power needed | No real-time reading, slow |
-| Scintillation counter | Alpha, beta, gamma | Yes | Good energy resolution, fast | Expensive, requires PMT |
-| Cloud chamber | Alpha, beta, gamma | Limited | Visualises tracks | Bulky, requires careful setup |
-| Semiconductor | Alpha, beta, gamma, X-rays | Yes (excellent) | Best energy resolution, compact | Expensive, often requires cooling |
+| GM tube               | Alpha, beta, gamma         | No                 | Simple, portable, cheap           | No energy resolution, dead time   |
+| Photographic film     | Alpha, beta, gamma, X-rays | No                 | Permanent record, no power needed | No real-time reading, slow        |
+| Scintillation counter | Alpha, beta, gamma         | Yes                | Good energy resolution, fast      | Expensive, requires PMT           |
+| Cloud chamber         | Alpha, beta, gamma         | Limited            | Visualises tracks                 | Bulky, requires careful setup     |
+| Semiconductor         | Alpha, beta, gamma, X-rays | Yes (excellent)    | Best energy resolution, compact   | Expensive, often requires cooling |
 
-:::info
-In DSE exams, the GM tube is the most important detector. Know its construction, operation
+:::info In DSE exams, the GM tube is the most important detector. Know its construction, operation
 Principle, dead time, and limitations. Be prepared to explain why a GM tube cannot distinguish
-Between alpha and beta radiation.
-:::
+Between alpha and beta radiation. :::
 
 ---
 
@@ -713,7 +701,7 @@ Ionisation can damage biological tissue through several mechanisms:
 
 1. **Direct ionisation:** Radiation directly ionises DNA molecules, causing strand breaks
 2. **Indirect ionisation:** Radiation ionises water molecules (the most abundant molecule in the
- body), producing reactive free radicals ($\mathrm{OH}^*$$\mathrm{H}^*$) that attack DNA
+   body), producing reactive free radicals ($\mathrm{OH}^*$$\mathrm{H}^*$) that attack DNA
 
 Types of DNA damage:
 
@@ -724,22 +712,22 @@ Types of DNA damage:
 
 ### Dose Units
 
-| Quantity | Unit | Definition |
+| Quantity                          | Unit           | Definition                                                         |
 | --------------------------------- | -------------- | ------------------------------------------------------------------ |
-| Absorbed dose | Gray (Gy) | Energy absorbed per unit mass: $1 \mathrm{ Gy} = 1 \mathrm{ J/kg}$ |
-| Equivalent dose (dose equivalent) | Sievert (Sv) | Absorbed dose weighted by radiation type: $H = D \times w_R$ |
-| Effective dose | Sievert (Sv) | Equivalent dose weighted by tissue sensitivity: $E = \sum H_T w_T$ |
-| Activity | Becquerel (Bq) | One decay per second: $1 \mathrm{ Bq} = 1 \mathrm{ s}^{-1}$ |
+| Absorbed dose                     | Gray (Gy)      | Energy absorbed per unit mass: $1 \mathrm{ Gy} = 1 \mathrm{ J/kg}$ |
+| Equivalent dose (dose equivalent) | Sievert (Sv)   | Absorbed dose weighted by radiation type: $H = D \times w_R$       |
+| Effective dose                    | Sievert (Sv)   | Equivalent dose weighted by tissue sensitivity: $E = \sum H_T w_T$ |
+| Activity                          | Becquerel (Bq) | One decay per second: $1 \mathrm{ Bq} = 1 \mathrm{ s}^{-1}$        |
 
 Radiation weighting factors $w_R$:
 
-| Radiation type | $w_R$ |
+| Radiation type         | $w_R$                        |
 | ---------------------- | ---------------------------- |
-| X-rays, gamma rays | $1$ |
-| Beta particles | $1$ |
-| Thermal neutrons | $1$ |
+| X-rays, gamma rays     | $1$                          |
+| Beta particles         | $1$                          |
+| Thermal neutrons       | $1$                          |
 | Fast neutrons, protons | $2$-$20$ (depends on energy) |
-| Alpha particles | $20$ |
+| Alpha particles        | $20$                         |
 
 Alpha particles have a high $w_R$ because of their high ionising power, which causes concentrated
 Damage along a short track.
@@ -752,22 +740,22 @@ $$1 \mathrm{ mSv} = 1000 \ \mu\mathrm{Sv}$$
 
 ### Exposure Limits
 
-| Category | Annual limit (typical) |
+| Category                         | Annual limit (typical)                                                           |
 | -------------------------------- | -------------------------------------------------------------------------------- |
-| General public | $1 \mathrm{ mSv}$ |
+| General public                   | $1 \mathrm{ mSv}$                                                                |
 | Radiation workers (occupational) | $20 \mathrm{ mSv}$ averaged over 5 years ($50 \mathrm{ mSv}$ in any single year) |
-| Pregnant radiation workers | $1 \mathrm{ mSv}$ to the foetus |
+| Pregnant radiation workers       | $1 \mathrm{ mSv}$ to the foetus                                                  |
 
 Typical radiation doses:
 
-| Source | Typical dose |
+| Source                          | Typical dose                  |
 | ------------------------------- | ----------------------------- |
-| Chest X-ray | $0.02$-$0.1 \mathrm{ mSv}$ |
-| Dental X-ray | $0.005 \mathrm{ mSv}$ |
-| CT scan (abdomen) | $8$-$10 \mathrm{ mSv}$ |
-| Background radiation (per year) | $2.4$-$3.0 \mathrm{ mSv}$ |
-| Flight at 35,000 ft (per hour) | $0.003$-$0.005 \mathrm{ mSv}$ |
-| Mammogram | $0.4 \mathrm{ mSv}$ |
+| Chest X-ray                     | $0.02$-$0.1 \mathrm{ mSv}$    |
+| Dental X-ray                    | $0.005 \mathrm{ mSv}$         |
+| CT scan (abdomen)               | $8$-$10 \mathrm{ mSv}$        |
+| Background radiation (per year) | $2.4$-$3.0 \mathrm{ mSv}$     |
+| Flight at 35,000 ft (per hour)  | $0.003$-$0.005 \mathrm{ mSv}$ |
+| Mammogram                       | $0.4 \mathrm{ mSv}$           |
 
 ### ALARA Principle
 
@@ -782,11 +770,11 @@ Typical radiation doses:
 
 The choice of shielding material depends on the type of radiation:
 
-| Radiation | Shielding material | Reason |
+| Radiation | Shielding material                     | Reason                                                                                            |
 | --------- | -------------------------------------- | ------------------------------------------------------------------------------------------------- |
-| Alpha | Paper, human skin | Alpha particles have low penetration; stopped by a few cm of air |
-| Beta | Aluminium ($\sim 1$-$5$ mm) or perspex | Beta particles are stopped by low-Z materials; high-Z materials can produce bremsstrahlung X-rays |
-| Gamma | Lead ($\sim$ cm) or thick concrete | High penetration requires dense, high-Z materials; intensity reduced exponentially |
+| Alpha     | Paper, human skin                      | Alpha particles have low penetration; stopped by a few cm of air                                  |
+| Beta      | Aluminium ($\sim 1$-$5$ mm) or perspex | Beta particles are stopped by low-Z materials; high-Z materials can produce bremsstrahlung X-rays |
+| Gamma     | Lead ($\sim$ cm) or thick concrete     | High penetration requires dense, high-Z materials; intensity reduced exponentially                |
 
 **Half-value thickness (HVT):** The thickness of material that reduces the intensity of gamma
 Radiation to half its original value:
@@ -797,12 +785,10 @@ $$\mathrm{HVT} = \frac{\ln 2}{\mu}$$
 
 Where $\mu$ is the linear attenuation coefficient.
 
-:::warning
-Never use lead shielding for beta radiation. High-Z materials like lead produce
+:::warning Never use lead shielding for beta radiation. High-Z materials like lead produce
 Bremsstrahlung (breaking radiation) when beta particles decelerate rapidly, creating X-rays that are
 More penetrating than the original beta particles. Use aluminium or perspex for beta shielding
-Instead.
-:::
+Instead. :::
 
 ---
 
@@ -815,7 +801,7 @@ Carbon-14 dating is used to determine the age of organic materials up to about $
 **Principle:**
 
 - Carbon-14 ($\prescript{14}{}{6}\mathrm{C}$) is produced in the upper atmosphere by cosmic ray
- neutrons interacting with nitrogen-14:
+  neutrons interacting with nitrogen-14:
 
   $$\prescript{1}{}{0}\mathrm{n} + \prescript{14}{}{7}\mathrm{N} \to \prescript{14}{}{6}\mathrm{C} + \prescript{1}{}{1}\mathrm{H}$$
 
@@ -824,7 +810,7 @@ Carbon-14 dating is used to determine the age of organic materials up to about $
   $$\prescript{14}{}{6}\mathrm{C} \to \prescript{14}{}{7}\mathrm{N} + e^- + \bar{\nu}_e$$
 
 - Living organisms continuously exchange carbon with the environment, maintaining a constant ratio
- of C-14 to C-12 ($\sim 1.3 \times 10^{-12}$)
+  of C-14 to C-12 ($\sim 1.3 \times 10^{-12}$)
 - When an organism dies, it stops exchanging carbon. The C-14 decays while C-12 remains constant
 - The ratio of C-14 to C-12 decreases over time, allowing the age to be calculated
 
@@ -840,25 +826,25 @@ $$t = \frac{1}{\lambda} \ln\left(\frac{N_0}{N}\right) = \frac{t_{1/2}}{\ln 2} \l
 
 - Maximum useful age is about $50,000$ years (after about 10 half-lives, too little C-14 remains)
 - Requires calibration with other dating methods (tree rings, ice cores) because atmospheric C-14
- concentration has varied over time
+  concentration has varied over time
 - Contamination by modern or old carbon can affect results
 - Only works for organic materials (formerly living things)
 
 ### Medical Isotopes
 
-| Isotope | Half-life | Radiation emitted | Application |
+| Isotope | Half-life    | Radiation emitted | Application                                              |
 | ------- | ------------ | ----------------- | -------------------------------------------------------- |
-| I-131 | $8.02$ days | Beta-minus, gamma | Treatment of thyroid cancer and hyperthyroidism |
-| Tc-99m | $6.01$ hours | Gamma ($140$ keV) | Diagnostic imaging (most widely used medical isotope) |
-| Co-60 | $5.27$ years | Beta-minus, gamma | Radiotherapy (external beam), sterilisation of equipment |
-| P-32 | $14.3$ days | Beta-minus | Treatment of certain blood disorders |
-| Sr-90 | $28.8$ years | Beta-minus | Treatment of eye diseases, superficial radiotherapy |
-| F-18 | $110$ min | Beta-plus | PET scans (FDG: fluorodeoxyglucose) |
+| I-131   | $8.02$ days  | Beta-minus, gamma | Treatment of thyroid cancer and hyperthyroidism          |
+| Tc-99m  | $6.01$ hours | Gamma ($140$ keV) | Diagnostic imaging (most widely used medical isotope)    |
+| Co-60   | $5.27$ years | Beta-minus, gamma | Radiotherapy (external beam), sterilisation of equipment |
+| P-32    | $14.3$ days  | Beta-minus        | Treatment of certain blood disorders                     |
+| Sr-90   | $28.8$ years | Beta-minus        | Treatment of eye diseases, superficial radiotherapy      |
+| F-18    | $110$ min    | Beta-plus         | PET scans (FDG: fluorodeoxyglucose)                      |
 
 **Technetium-99m** is the most widely used diagnostic radioisotope because:
 
 - Its half-life ($6.01$ hours) is short enough to minimise patient dose but long enough for imaging
- procedures
+  procedures
 - It emits a single, well-defined gamma ray at $140$ keV, ideal for gamma camera detection
 - It can be attached to various pharmaceutical compounds to target specific organs
 - It is produced from a Mo-99/Tc-99m generator, making it readily available in hospitals
@@ -883,7 +869,7 @@ Process:
 **Advantages of nuclear power:**
 
 - Very high energy density: $1 \mathrm{ kg}$ of U-235 produces as much energy as about $2.7$ million
- kg of coal
+  kg of coal
 - No greenhouse gas emissions during operation (CO$_2$-free electricity generation)
 - Reliable baseload power (not dependent on weather)
 - Relatively small fuel volume compared to fossil fuels
@@ -956,18 +942,18 @@ Given a decay equation, identify the missing particle. Check:
 ### Graph Interpretation Skills
 
 1. **Exponential decay graph ($N$ or $A$ vs $t$):** Verify that it is exponential by checking that
- halving the activity always takes the same time. Read half-life directly from the graph.
+   halving the activity always takes the same time. Read half-life directly from the graph.
 
 2. **Log-linear graph ($\ln A$ vs $t$):** Should be a straight line with negative slope
- $= -\lambda$. Use the slope to find $\lambda$ and then $t_{1/2}$.
+   $= -\lambda$. Use the slope to find $\lambda$ and then $t_{1/2}$.
 
 3. **Binding energy per nucleon curve:** Identify the region of maximum stability (around Fe-56).
- Determine whether fusion or fission is energetically favourable for a given nucleus.
+   Determine whether fusion or fission is energetically favourable for a given nucleus.
 
 4. **Alpha energy spectrum:** Discrete lines at specific energies.
 
 5. **Beta energy spectrum:** Continuous distribution from zero to a maximum energy $E_{\max}$. The
- "missing" energy is carried by the neutrino/antineutrino.
+   "missing" energy is carried by the neutrino/antineutrino.
 
 ### Experimental Skills
 
@@ -977,30 +963,27 @@ Given a decay equation, identify the missing particle. Check:
 - Account for background radiation by subtracting the background count rate
 - Understand sources of error: statistical fluctuations, dead time, geometry, absorption
 
-:::info
-Info
-Calculations and explanations. In Paper 2, it appears as multiple-choice questions testing concepts,
-Definitions, and quick calculations. Practise balancing decay equations and calculating binding
-Energy -- these are high-frequency topics.
-:::
+:::info Info Calculations and explanations. In Paper 2, it appears as multiple-choice questions
+testing concepts, Definitions, and quick calculations. Practise balancing decay equations and
+calculating binding Energy -- these are high-frequency topics. :::
 
 ### Key Formulae Summary
 
-| Quantity | Formula |
+| Quantity                | Formula                                                   |
 | ----------------------- | --------------------------------------------------------- |
-| Activity | $A = \lambda N$ |
-| Decay law | $N = N_0 e^{-\lambda t}$ |
-| Activity decay | $A = A_0 e^{-\lambda t}$ |
-| Half-life | $t_{1/2} = \frac{\ln 2}{\lambda}$ |
-| Decay constant | $\lambda = \frac{\ln 2}{t_{1/2}}$ |
-| Number of nuclei | $N = \frac{m}{M} N_A$ |
-| Mass-energy equivalence | $E = mc^2$ |
-| Mass defect | $\Delta m = Zm_p + Nm_n - m_{\mathrm{nucleus}}$ |
-| Binding energy | $BE = \Delta m \cdot c^2$ |
-| Q-value | $Q = (m_{\mathrm{reactants}} - m_{\mathrm{products}})c^2$ |
-| Energy conversion | $1 \mathrm{ u} = 931.5 \mathrm{ MeV}$ |
-| Radiation intensity | $I = I_0 e^{-\mu x}$ |
-| Half-value thickness | $\mathrm{HVT} = \frac{\ln 2}{\mu}$ |
+| Activity                | $A = \lambda N$                                           |
+| Decay law               | $N = N_0 e^{-\lambda t}$                                  |
+| Activity decay          | $A = A_0 e^{-\lambda t}$                                  |
+| Half-life               | $t_{1/2} = \frac{\ln 2}{\lambda}$                         |
+| Decay constant          | $\lambda = \frac{\ln 2}{t_{1/2}}$                         |
+| Number of nuclei        | $N = \frac{m}{M} N_A$                                     |
+| Mass-energy equivalence | $E = mc^2$                                                |
+| Mass defect             | $\Delta m = Zm_p + Nm_n - m_{\mathrm{nucleus}}$           |
+| Binding energy          | $BE = \Delta m \cdot c^2$                                 |
+| Q-value                 | $Q = (m_{\mathrm{reactants}} - m_{\mathrm{products}})c^2$ |
+| Energy conversion       | $1 \mathrm{ u} = 931.5 \mathrm{ MeV}$                     |
+| Radiation intensity     | $I = I_0 e^{-\mu x}$                                      |
+| Half-value thickness    | $\mathrm{HVT} = \frac{\ln 2}{\mu}$                        |
 
 ---
 
@@ -1136,11 +1119,9 @@ $$t = \frac{2.303}{1.209 \times 10^{-4}} = 19,040 \mathrm{ years}$$
 
 The ancient wood is approximately $19,000$ years old.
 
-:::info
-Info
-Many half-lives correspond to this fraction. $2^n = 10$ gives $n = \frac{\ln 10}{\ln 2} = 3.32$
-Half-lives. So $t = 3.32 \times 5730 = 19,024$ years. Both methods give the same result.
-:::
+:::info Info Many half-lives correspond to this fraction. $2^n = 10$ gives
+$n = \frac{\ln 10}{\ln 2} = 3.32$ Half-lives. So $t = 3.32 \times 5730 = 19,024$ years. Both methods
+give the same result. :::
 
 </details>
 
@@ -1266,14 +1247,14 @@ Still determine half-life from count rate measurements.
 
 ### Mistake 2: Mixing Up Radiation Types
 
-| Confusion | Correct understanding |
+| Confusion                      | Correct understanding                                        |
 | ------------------------------ | ------------------------------------------------------------ |
-| Alpha = helium-4 nucleus | $\prescript{4}{}{2}\mathrm{He}^{2+}$ (not just "helium") |
-| Beta-minus = electron | Emitted from the nucleus (not an orbital electron) |
-| Beta-plus = positron | Not the same as beta-minus; emitted by proton-rich nuclei |
-| Gamma = photon | No charge, no mass; travels at $c$ |
-| Alpha has highest penetration | Wrong -- alpha has the LOWEST penetration (stopped by paper) |
-| Beta has the lowest ionisation | Wrong -- gamma has the lowest ionisation power |
+| Alpha = helium-4 nucleus       | $\prescript{4}{}{2}\mathrm{He}^{2+}$ (not just "helium")     |
+| Beta-minus = electron          | Emitted from the nucleus (not an orbital electron)           |
+| Beta-plus = positron           | Not the same as beta-minus; emitted by proton-rich nuclei    |
+| Gamma = photon                 | No charge, no mass; travels at $c$                           |
+| Alpha has highest penetration  | Wrong -- alpha has the LOWEST penetration (stopped by paper) |
+| Beta has the lowest ionisation | Wrong -- gamma has the lowest ionisation power               |
 
 ### Mistake 3: Binding Energy Sign Conventions
 
@@ -1307,8 +1288,8 @@ This is particularly important when the source count rate is comparable to the b
 When determining half-life from an exponential decay graph:
 
 - The half-life is the time for the activity to drop to **half its current value**, not half the
- **initial** value after the first half-life. After the first half-life, the next half-life is
- measured from the current value, not from the initial value.
+  **initial** value after the first half-life. After the first half-life, the next half-life is
+  measured from the current value, not from the initial value.
 - On a log-linear plot, the slope is $-\lambda$Not $-t_{1/2}$. Use $t_{1/2} = \ln 2 / \lambda$.
 - Ensure you are reading the correct values from the axes (check units).
 
@@ -1326,17 +1307,17 @@ Common errors:
 - Forgetting that beta-minus decay increases $Z$ by $1$ (daughter is the next element)
 - Forgetting that alpha decay decreases $Z$ by $2$ (daughter is two elements back)
 - Confusing beta-minus (emits electron, $Z$ increases) with beta-plus (emits positron, $Z$
- decreases)
+  decreases)
 
 ### Mistake 7: Using Electron Mass Instead of Atomic Mass
 
 When calculating mass defects and binding energies, be consistent with the masses used:
 
 - If using **nuclear masses** (mass of the bare nucleus): use $m_p$ for protons and $m_n$ for
- neutrons
+  neutrons
 - If using **atomic masses** (mass of the neutral atom): the atomic mass already includes the mass
- of the electrons, so use the atomic mass directly. The electron masses cancel out in the
- calculation
+  of the electrons, so use the atomic mass directly. The electron masses cancel out in the
+  calculation
 
 For most DSE problems, atomic masses are given, and the calculation simplifies because the electron
 Masses cancel:
@@ -1345,12 +1326,9 @@ $$\Delta m = Z \cdot m(\prescript{1}{}{1}\mathrm{H}) + N \cdot m_n - m(\prescrip
 
 Where $m(\prescript{1}{}{1}\mathrm{H})$ is the atomic mass of hydrogen (proton + electron).
 
-:::warning
-Warning
-Atomic masses are provided. Mixing the two conventions will lead to incorrect results. When in
-Doubt, use atomic masses (the more common convention in exam questions) and note that the electron
-Masses approximately cancel.
-:::
+:::warning Warning Atomic masses are provided. Mixing the two conventions will lead to incorrect
+results. When in Doubt, use atomic masses (the more common convention in exam questions) and note
+that the electron Masses approximately cancel. :::
 
 ### Mistake 8: Assuming All Radiation Is Equally Harmful
 
@@ -1360,7 +1338,7 @@ The biological effect of radiation depends on:
 - The **dose** received (higher dose = more damage)
 - The **duration** of exposure
 - Whether the source is **external** (alpha cannot penetrate skin) or **internal** (alpha is
- extremely dangerous if ingested)
+  extremely dangerous if ingested)
 
 An alpha source outside the body is relatively harmless (stopped by skin). An alpha source inside
 The body (e.g., inhaled or ingested) is extremely dangerous due to the high ionising power
@@ -1388,7 +1366,7 @@ $\prescript{60}{}{27}\mathrm{Co} \to \prescript{60}{}{28}\mathrm{Ni} + e^- + \ba
 
 The daughter is nickel-60 ($\prescript{60}{}{28}\mathrm{Ni}$).
 
-*If you get this wrong, revise: Beta-minus decay — $Z$ increases by 1, $A$ stays the same.*
+_If you get this wrong, revise: Beta-minus decay — $Z$ increases by 1, $A$ stays the same._
 
 </details>
 </details>
@@ -1408,8 +1386,8 @@ $$N = \frac{m}{M} N_A = \frac{0.48 \times 10^{-3}}{0.024} \times 6.02 \times 10^
 
 $$A = \lambda N = (1.283 \times 10^{-5})(1.204 \times 10^{22}) = 1.545 \times 10^{17} \mathrm{ Bq}$$
 
-*If you get this wrong, revise: Relationship between activity, decay constant, and number of nuclei
-($A = \lambda N$) and $N = \frac{m}{M}N_A$.*
+_If you get this wrong, revise: Relationship between activity, decay constant, and number of nuclei
+($A = \lambda N$) and $N = \frac{m}{M}N_A$._
 
 </details>
 </details>
@@ -1440,8 +1418,8 @@ $$\lambda = \frac{-\ln(0.2105)}{1200} = \frac{1.558}{1200} = 1.298 \times 10^{-3
 
 $$t_{1/2} = \frac{\ln 2}{\lambda} = \frac{0.693}{1.298 \times 10^{-3}} = 533.9 \mathrm{ s} = 8.90 \mathrm{ minutes}$$
 
-*If you get this wrong, revise: Background subtraction and half-life determination from count rate
-Data.*
+_If you get this wrong, revise: Background subtraction and half-life determination from count rate
+Data._
 
 </details>
 </details>
@@ -1467,8 +1445,8 @@ $$\Delta m = 236.052595 - 235.866578 = 0.186017 \mathrm{ u}$$
 
 $$Q = 0.186017 \times 931.5 = 173.2 \mathrm{ MeV}$$
 
-*If you get this wrong, revise: Q-value calculation — remember to account for all product particles
-Including released neutrons.*
+_If you get this wrong, revise: Q-value calculation — remember to account for all product particles
+Including released neutrons._
 
 </details>
 </details>
@@ -1476,9 +1454,10 @@ Including released neutrons.*
 <details>
 <summary>Problem 5: Comparing Binding Energies</summary>
 
-The binding energy per nucleon of deuterium ($\prescript{2}{}{1}\mathrm{H}$) is $1.11 \mathrm{ MeV/nucleon}$
-And that of helium-4 ($\prescript{4}{}{2}\mathrm{He}$) is $7.07 \mathrm{ MeV/nucleon}$. Calculate
-The energy released when two deuterium nuclei fuse to form helium-4:
+The binding energy per nucleon of deuterium ($\prescript{2}{}{1}\mathrm{H}$) is
+$1.11 \mathrm{ MeV/nucleon}$ And that of helium-4 ($\prescript{4}{}{2}\mathrm{He}$) is
+$7.07 \mathrm{ MeV/nucleon}$. Calculate The energy released when two deuterium nuclei fuse to form
+helium-4:
 
 $2\prescript{2}{}{1}\mathrm{H} \to \prescript{4}{}{2}\mathrm{He}$
 
@@ -1497,8 +1476,8 @@ Energy released:
 
 $$Q = BE_{\mathrm{product}} - BE_{\mathrm{reactants}} = 28.28 - 4.44 = 23.84 \mathrm{ MeV}$$
 
-*If you get this wrong, revise: Binding energy per nucleon curve and how energy release relates to
-The increase in binding energy per nucleon.*
+_If you get this wrong, revise: Binding energy per nucleon curve and how energy release relates to
+The increase in binding energy per nucleon._
 
 </details>
 </details>
@@ -1520,7 +1499,7 @@ $$n = \frac{\ln(1/0.03)}{\ln 2} = \frac{3.507}{0.693} = 5.06 \mathrm{ half-value
 
 $$\mathrm{Thickness} = 5.06 \times 1.5 = 7.59 \mathrm{ cm} \approx 7.6 \mathrm{ cm}$$
 
-*If you get this wrong, revise: Half-value thickness and exponential attenuation.*
+_If you get this wrong, revise: Half-value thickness and exponential attenuation._
 
 </details>
 </details>
@@ -1528,8 +1507,8 @@ $$\mathrm{Thickness} = 5.06 \times 1.5 = 7.59 \mathrm{ cm} \approx 7.6 \mathrm{ 
 <details>
 <summary>Problem 7: Fraction Remaining After Multiple Half-Lives</summary>
 
-A radioactive isotope has a half-life of $8$ days. What fraction of the original sample remains after
-30 days?
+A radioactive isotope has a half-life of $8$ days. What fraction of the original sample remains
+after 30 days?
 
 <details>
 <summary>Solution</summary>
@@ -1544,7 +1523,7 @@ Alternatively, using the exponential decay law:
 
 $$\frac{N}{N_0} = e^{-\lambda t} = e^{-(\ln 2 / 8) \times 30} = e^{-2.601} = 0.0743$$
 
-*If you get this wrong, revise: Fraction remaining after $n$ half-lives: $(1/2)^n$.*
+_If you get this wrong, revise: Fraction remaining after $n$ half-lives: $(1/2)^n$._
 
 </details>
 </details>
@@ -1560,7 +1539,7 @@ The equivalent dose in mSv.
 
 $$H = D \times w_R = 0.5 \times 20 = 10 \mathrm{ mSv}$$
 
-*If you get this wrong, revise: Absorbed dose vs equivalent dose and radiation weighting factors.*
+_If you get this wrong, revise: Absorbed dose vs equivalent dose and radiation weighting factors._
 
 </details>
 </details>
@@ -1578,8 +1557,8 @@ The fraction of time the tube is dead:
 
 $$f = R_{\mathrm{measured}} \times \tau = 5000 \times 200 \times 10^{-6} = 1.0$$
 
-Since $f = 1.0$The tube is dead $100\%$ of the time, which is physically impossible. This means
-The measured count rate of $5000$ counts/s is unreliable with this dead time.
+Since $f = 1.0$The tube is dead $100\%$ of the time, which is physically impossible. This means The
+measured count rate of $5000$ counts/s is unreliable with this dead time.
 
 For a more realistic scenario, if the measured rate were $1000$ counts/s:
 
@@ -1587,8 +1566,8 @@ $$f = 1000 \times 200 \times 10^{-6} = 0.2$$
 
 $$R_{\mathrm{true}} \approx \frac{R_{\mathrm{measured}}}{1 - f} = \frac{1000}{0.8} = 1250 \mathrm{ counts/s}$$
 
-*If you get this wrong, revise: GM tube dead time and its effect on measured count rates at high
-Activities.*
+_If you get this wrong, revise: GM tube dead time and its effect on measured count rates at high
+Activities._
 
 </details>
 </details>
@@ -1605,18 +1584,18 @@ Nuclear fission and nuclear fusion.
 The binding energy per nucleon curve has a peak around iron-56 ($\sim 8.8 \mathrm{ MeV/nucleon}$).
 
 - **Fusion:** Light nuclei (low $A$) have low binding energy per nucleon. When they fuse to form
- heavier nuclei closer to the peak, the binding energy per nucleon **increases**. This means the
- products are more tightly bound than the reactants, so energy is released.
+  heavier nuclei closer to the peak, the binding energy per nucleon **increases**. This means the
+  products are more tightly bound than the reactants, so energy is released.
 
 - **Fission:** Heavy nuclei (high $A$) have lower binding energy per nucleon than medium-mass nuclei
- near the peak. When a heavy nucleus splits into two lighter nuclei closer to the peak, the total
- binding energy **increases**. Energy is released because the products are more stable than the
- parent.
+  near the peak. When a heavy nucleus splits into two lighter nuclei closer to the peak, the total
+  binding energy **increases**. Energy is released because the products are more stable than the
+  parent.
 
 In both cases, energy is released because the products have a higher binding energy per nucleon
 (i.e., are more stable) than the reactants.
 
-*If you get this wrong, revise: The binding energy per nucleon curve and its interpretation.*
+_If you get this wrong, revise: The binding energy per nucleon curve and its interpretation._
 
 </details>
 </details>
@@ -1638,7 +1617,7 @@ $$t = \frac{-\ln(0.35)}{\lambda} = \frac{-(-1.050)}{(\ln 2)/5730} = \frac{1.050}
 
 The artefact is approximately $8700$ years old.
 
-*If you get this wrong, revise: Radiocarbon dating formula and the decay law.*
+_If you get this wrong, revise: Radiocarbon dating formula and the decay law._
 
 </details>
 </details>
@@ -1646,21 +1625,22 @@ The artefact is approximately $8700$ years old.
 <details>
 <summary>Problem 12: Moderator — Elastic Collision with Neutron</summary>
 
-Explain why a moderator with a small mass number (like graphite or heavy water) is more effective
-At slowing neutrons than a heavy material like lead.
+Explain why a moderator with a small mass number (like graphite or heavy water) is more effective At
+slowing neutrons than a heavy material like lead.
 
 <details>
 <summary>Solution</summary>
 
-In an elastic head-on collision between a neutron (mass $m$) and a stationary nucleus (mass $M$), the
-Fraction of kinetic energy transferred is:
+In an elastic head-on collision between a neutron (mass $m$) and a stationary nucleus (mass $M$),
+the Fraction of kinetic energy transferred is:
 
 $$\frac{\Delta E_k}{E_k} = \frac{4mM}{(m + M)^2}$$
 
 This fraction is maximised when $M \approx m$ (i.e., when the moderator nucleus has a similar mass
 To the neutron).
 
-For hydrogen ($M \approx m$): $\frac{\Delta E_k}{E_k} = \frac{4m^2}{(2m)^2} = 1$ (100% energy transfer)
+For hydrogen ($M \approx m$): $\frac{\Delta E_k}{E_k} = \frac{4m^2}{(2m)^2} = 1$ (100% energy
+transfer)
 
 For carbon-12 ($M = 12m$): $\frac{\Delta E_k}{E_k} = \frac{48m^2}{169m^2} = 0.284$ (28.4%)
 
@@ -1669,7 +1649,7 @@ For lead-207 ($M = 207m$): $\frac{\Delta E_k}{E_k} = \frac{828m^2}{43264m^2} = 0
 A lighter moderator transfers much more energy per collision, so fewer collisions are needed to
 Thermalise the neutrons.
 
-*If you get this wrong, revise: Nuclear reactor moderator and elastic collision energy transfer.*
+_If you get this wrong, revise: Nuclear reactor moderator and elastic collision energy transfer._
 
 </details>
 </details>
@@ -1698,8 +1678,8 @@ $$E_{k,\alpha} = Q \times \frac{m_{\mathrm{Pb}}}{m_{\mathrm{Pb}} + m_\alpha} = 5
 
 The alpha particle carries approximately $98\%$ of the total kinetic energy.
 
-*If you get this wrong, revise: Conservation of momentum in nuclear decay and the distribution of
-Kinetic energy between products.*
+_If you get this wrong, revise: Conservation of momentum in nuclear decay and the distribution of
+Kinetic energy between products._
 
 </details>
 </details>
@@ -1707,8 +1687,8 @@ Kinetic energy between products.*
 <details>
 <summary>Problem 14: Electron Capture</summary>
 
-Write the equation for electron capture by beryllium-7 and explain why electron capture is
-Favoured over beta-plus decay for this isotope.
+Write the equation for electron capture by beryllium-7 and explain why electron capture is Favoured
+over beta-plus decay for this isotope.
 
 <details>
 <summary>Solution</summary>
@@ -1716,15 +1696,16 @@ Favoured over beta-plus decay for this isotope.
 $$\prescript{7}{}{4}\mathrm{Be} + e^- \to \prescript{7}{}{3}\mathrm{Li} + \nu_e$$
 
 Electron capture is favoured because:
-- Beta-plus decay requires $m(\mathrm{parent}) \gt m(\mathrm{daughter}) + 2m_e$Creating a positron
- and an additional electron
-- Electron capture only requires $m(\mathrm{parent}) \gt m(\mathrm{daughter})$ (since the
- captured electron already exists)
-- For light nuclei like Be-7, the mass difference is too small to create a positron, so electron
- capture is the only available decay mode
 
-*If you get this wrong, revise: Electron capture as an alternative to beta-plus decay and the
-Condition $m(\mathrm{parent}) \gt m(\mathrm{daughter}) + 2m_e$.*
+- Beta-plus decay requires $m(\mathrm{parent}) \gt m(\mathrm{daughter}) + 2m_e$Creating a positron
+  and an additional electron
+- Electron capture only requires $m(\mathrm{parent}) \gt m(\mathrm{daughter})$ (since the captured
+  electron already exists)
+- For light nuclei like Be-7, the mass difference is too small to create a positron, so electron
+  capture is the only available decay mode
+
+_If you get this wrong, revise: Electron capture as an alternative to beta-plus decay and the
+Condition $m(\mathrm{parent}) \gt m(\mathrm{daughter}) + 2m_e$._
 
 </details>
 </details>
@@ -1746,21 +1727,23 @@ $$\lambda = 0.05 \mathrm{ min}^{-1} = \frac{0.05}{60} = 8.33 \times 10^{-4} \mat
 
 $$t_{1/2} = \frac{\ln 2}{\lambda} = \frac{0.693}{0.05} = 13.86 \mathrm{ min}$$
 
-*If you get this wrong, revise: Log-linear plots of radioactive decay — the gradient equals $-\lambda$
-Not $-t_{1/2}$.*
+_If you get this wrong, revise: Log-linear plots of radioactive decay — the gradient equals
+$-\lambda$ Not $-t_{1/2}$.\_
 
-For the A-Level treatment of this topic, see [Radioactivity](https://alevel.wyattau.com/docs/physics/nuclear-physics/radioactivity).
+For the A-Level treatment of this topic, see
+[Radioactivity](https://alevel.wyattau.com/docs/physics/nuclear-physics/radioactivity).
 
 ---
 
-:::tip
-Diagnostic Test
-Ready to test your understanding of **Nuclear Physics**? The [diagnostic test](/docs/dse/Physics/diagnostics/diag-nuclear-physics) contains the hardest questions within the DSE specification for this topic, each with a full worked solution.
+:::tip Diagnostic Test Ready to test your understanding of **Nuclear Physics**? The
+[diagnostic test](/docs/dse/Physics/diagnostics/diag-nuclear-physics) contains the hardest questions
+within the DSE specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Nuclear Physics with other physics topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Nuclear
+Physics with other physics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/dse/Physics/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/dse/Physics/diagnostics/diagnostic-guide) for instructions on
+self-marking and building a personal test matrix. :::
 
 ---
 
@@ -1800,8 +1783,8 @@ $$t_{1/2} = \frac{\ln 2}{\lambda} = \frac{0.693}{\lambda}$$
 
 ### Derivation: Mass-Energy Equivalence Applied to Nuclear Reactions
 
-In a nuclear reaction, the total mass of the products differs from the total mass of the
-Reactants. The mass defect $\Delta m$ corresponds to the energy released (or absorbed):
+In a nuclear reaction, the total mass of the products differs from the total mass of the Reactants.
+The mass defect $\Delta m$ corresponds to the energy released (or absorbed):
 
 $$\Delta E = \Delta m \cdot c^2$$
 
@@ -1820,6 +1803,7 @@ $$B = [Zm_p + Nm_n - m_{\mathrm{nucleus}}]c^2$$
 Where $m_{\mathrm{nucleus}}$ is the actual mass of the nucleus.
 
 The binding energy per nucleon is $B/A$. Plotting $B/A$ versus $A$ shows:
+
 - Light nuclei (low $A$): increasing $B/A$ (fusion releases energy).
 - Iron-56 ($A = 56$): maximum $B/A$ (most stable nucleus).
 - Heavy nuclei (high $A$): decreasing $B/A$ (fission releases energy).
@@ -1830,31 +1814,33 @@ The binding energy per nucleon is $B/A$. Plotting $B/A$ versus $A$ shows:
 
 ### Investigating Radioactive Decay with a Geiger-Muller Tube
 
-**Apparatus:** A Geiger-Muller (GM) tube connected to a counter/timer, a radioactive source
-(e.g., cobalt-60 or radon-220), and a ruler.
+**Apparatus:** A Geiger-Muller (GM) tube connected to a counter/timer, a radioactive source (e.g.,
+cobalt-60 or radon-220), and a ruler.
 
 **Procedure:**
+
 1. Place the GM tube at a fixed distance from the source.
-2. Record the count rate at regular time intervals (e.g., every 30 seconds for radon-220, which
- has a short half-life of about 55 seconds).
+2. Record the count rate at regular time intervals (e.g., every 30 seconds for radon-220, which has
+   a short half-life of about 55 seconds).
 3. Subtract the background count rate (measured with the source removed) from each reading.
 4. Plot corrected count rate (or $\ln(\mathrm{count\ rate})$) versus time.
-5. The half-life is determined from the time for the count rate to halve, or from the gradient
- of the ln(count rate) versus time graph.
+5. The half-life is determined from the time for the count rate to halve, or from the gradient of
+   the ln(count rate) versus time graph.
 
 **Sources of error:**
+
 - Statistical fluctuations in radioactive decay (random nature).
 - Background radiation changes during the experiment.
 - Dead time of the GM tube (it cannot register counts during a brief recovery period after each
- detection).
+  detection).
 
 **Improvements:** Take longer counting times to reduce statistical uncertainty. Repeat the
 Experiment several times and average.
 
 ### Determining the Half-Life of a Long-Lived Source
 
-For a source with a half-life much longer than the practical measurement time, measure the
-Activity at two widely separated times $t_1$ and $t_2$:
+For a source with a half-life much longer than the practical measurement time, measure the Activity
+at two widely separated times $t_1$ and $t_2$:
 
 $$A_1 = A_0 e^{-\lambda t_1}, \quad A_2 = A_0 e^{-\lambda t_2}$$
 
@@ -1947,22 +1933,26 @@ $$\Delta E = 0.2153 \times 931.5 = 200.6 \mathrm{ MeV}$$
 
 ### Worked Example 13
 
-A nuclear power station produces $1500 \mathrm{ MW}$ of electrical power with an overall
-Efficiency of $33\%$. Each fission of U-235 releases approximately $200 \mathrm{ MeV}$ of energy.
-Calculate the mass of U-235 consumed per day.
+A nuclear power station produces $1500 \mathrm{ MW}$ of electrical power with an overall Efficiency
+of $33\%$. Each fission of U-235 releases approximately $200 \mathrm{ MeV}$ of energy. Calculate the
+mass of U-235 consumed per day.
 
 <details>
 <summary>Solution</summary>
 
-Total thermal power: $P_{\mathrm{thermal}} = 1500/0.33 = 4545 \mathrm{ MW} = 4.545 \times 10^9 \mathrm{ W}$
+Total thermal power:
+$P_{\mathrm{thermal}} = 1500/0.33 = 4545 \mathrm{ MW} = 4.545 \times 10^9 \mathrm{ W}$
 
 Energy per day: $E = 4.545 \times 10^9 \times 86400 = 3.93 \times 10^{14} \mathrm{ J}$
 
-Energy per fission: $200 \mathrm{ MeV} = 200 \times 1.6 \times 10^{-13} = 3.2 \times 10^{-11} \mathrm{ J}$
+Energy per fission:
+$200 \mathrm{ MeV} = 200 \times 1.6 \times 10^{-13} = 3.2 \times 10^{-11} \mathrm{ J}$
 
-Number of fissions per day: $N = \frac{3.93 \times 10^{14}}{3.2 \times 10^{-11}} = 1.23 \times 10^{25}$
+Number of fissions per day:
+$N = \frac{3.93 \times 10^{14}}{3.2 \times 10^{-11}} = 1.23 \times 10^{25}$
 
-Mass of U-235 per day: $m = N \times 235 \times 1.661 \times 10^{-27} = 1.23 \times 10^{25} \times 3.90 \times 10^{-25} = 4.80 \mathrm{ kg}$
+Mass of U-235 per day:
+$m = N \times 235 \times 1.661 \times 10^{-27} = 1.23 \times 10^{25} \times 3.90 \times 10^{-25} = 4.80 \mathrm{ kg}$
 
 </details>
 
@@ -1988,16 +1978,18 @@ $4.0 \times 10^{20}$ undecayed nuclei.
 <details>
 <summary>Solution</summary>
 
-(a) The half-life is the time taken for half of the radioactive nuclei in a sample to decay
-(or equivalently, for the activity to fall to half its initial value).
+(a) The half-life is the time taken for half of the radioactive nuclei in a sample to decay (or
+equivalently, for the activity to fall to half its initial value).
 
 (b) (i) Number of half-lives in $24 \mathrm{ days}$: $n = 24/8 = 3$
 
 $$N = N_0 \times \left(\frac{1}{2}\right)^3 = 4.0 \times 10^{20} \times 0.125 = 5.0 \times 10^{19}$$
 
-(ii) $\lambda = \frac{\ln 2}{t_{1/2}} = \frac{0.693}{8.0 \times 24 \times 3600} = \frac{0.693}{691200} = 1.00 \times 10^{-6} \mathrm{ s}^{-1}$
+(ii)
+$\lambda = \frac{\ln 2}{t_{1/2}} = \frac{0.693}{8.0 \times 24 \times 3600} = \frac{0.693}{691200} = 1.00 \times 10^{-6} \mathrm{ s}^{-1}$
 
-(iii) $A_0 = \lambda N_0 = 1.00 \times 10^{-6} \times 4.0 \times 10^{20} = 4.0 \times 10^{14} \mathrm{ Bq}$
+(iii)
+$A_0 = \lambda N_0 = 1.00 \times 10^{-6} \times 4.0 \times 10^{20} = 4.0 \times 10^{14} \mathrm{ Bq}$
 
 (iv) $A = 5.0 \times 10^8 = A_0 e^{-\lambda t} = 4.0 \times 10^{14} e^{-\lambda t}$
 
@@ -2015,13 +2007,13 @@ $$t = \frac{13.59}{1.00 \times 10^{-6}} = 1.36 \times 10^7 \mathrm{ s} = 157 \ma
 
 (b) The following data are for several nuclei:
 
-| Nucleus | Mass (u) | Nucleon number $A$ |
-| --------- | --------- | ------------------ |
-| H-2 | 2.01410 | 2 |
-| He-4 | 4.00260 | 4 |
-| C-12 | 12.00000 | 12 |
-| Fe-56 | 55.93494 | 56 |
-| U-235 | 235.04393 | 235 |
+| Nucleus | Mass (u)  | Nucleon number $A$ |
+| ------- | --------- | ------------------ |
+| H-2     | 2.01410   | 2                  |
+| He-4    | 4.00260   | 4                  |
+| C-12    | 12.00000  | 12                 |
+| Fe-56   | 55.93494  | 56                 |
+| U-235   | 235.04393 | 235                |
 
 Mass of proton $= 1.00728 \mathrm{ u}$Mass of neutron $= 1.00867 \mathrm{ u}$.
 
@@ -2029,15 +2021,15 @@ Mass of proton $= 1.00728 \mathrm{ u}$Mass of neutron $= 1.00867 \mathrm{ u}$.
 
 (ii) Calculate the binding energy per nucleon of He-4 and Fe-56.
 
-(iii) Explain why energy is released when light nuclei undergo fusion and when heavy nuclei
-Undergo fission.
+(iii) Explain why energy is released when light nuclei undergo fusion and when heavy nuclei Undergo
+fission.
 
 <details>
 <summary>Solution</summary>
 
 (a) The binding energy per nucleon is the total binding energy of a nucleus divided by its mass
-Number $A$. It represents the average energy needed to remove one nucleon from the nucleus. A
-Higher binding energy per nucleon indicates greater nuclear stability.
+Number $A$. It represents the average energy needed to remove one nucleon from the nucleus. A Higher
+binding energy per nucleon indicates greater nuclear stability.
 
 (b) (i) He-4 has 2 protons and 2 neutrons.
 
@@ -2056,10 +2048,10 @@ $$B = 0.51444 \times 931.5 = 479.2 \mathrm{ MeV}$$
 $$B/A = 479.2/56 = 8.56 \mathrm{ MeV/nucleon}$
 
 (iii) The binding energy per nucleon curve peaks around Fe-56. Light nuclei (lower $B/A$) can
-Increase their $B/A$ by fusing together (moving towards the peak), releasing energy equal to
-The difference in binding energies. Heavy nuclei (lower $B/A$ than the peak) can increase their
-$B/A$ by splitting apart (fission), also releasing energy. In both cases, the products have a
-Higher binding energy per nucleon than the reactants, meaning they are more stable.
+Increase their $B/A$ by fusing together (moving towards the peak), releasing energy equal to The
+difference in binding energies. Heavy nuclei (lower $B/A$ than the peak) can increase their $B/A$ by
+splitting apart (fission), also releasing energy. In both cases, the products have a Higher binding
+energy per nucleon than the reactants, meaning they are more stable.
 
 </details>
 
@@ -2067,59 +2059,58 @@ Higher binding energy per nucleon than the reactants, meaning they are more stab
 
 (a) Describe the operation of a Geiger-Muller tube.
 
-(b) In a radiation experiment, a student measures the following count rates at different
-Distances from a gamma source:
+(b) In a radiation experiment, a student measures the following count rates at different Distances
+from a gamma source:
 
 | Distance $d$ (cm) | Count rate $R$ (counts/min) |
 | ----------------- | --------------------------- |
-| 2.0 | 3600 |
-| 4.0 | 900 |
-| 6.0 | 400 |
-| 8.0 | 225 |
-| 10.0 | 144 |
+| 2.0               | 3600                        |
+| 4.0               | 900                         |
+| 6.0               | 400                         |
+| 8.0               | 225                         |
+| 10.0              | 144                         |
 
 (i) Explain why the count rate decreases with distance.
 
 (ii) Plot a suitable graph to verify the inverse square law.
 
-(iii) The background count rate is $20 \mathrm{ counts/min}$. Calculate the corrected count
-Rate at $d = 4.0 \mathrm{ cm}$ and the percentage correction.
+(iii) The background count rate is $20 \mathrm{ counts/min}$. Calculate the corrected count Rate at
+$d = 4.0 \mathrm{ cm}$ and the percentage correction.
 
 <details>
 <summary>Solution</summary>
 
 (a) A Geiger-Muller tube consists of a metal cylinder (cathode) with a thin wire (anode) running
-Along its axis, filled with an inert gas at low pressure. A high voltage is applied between
-The anode and cathode. When radiation enters the tube through a thin mica window, it ionises
-Gas atoms. The ions are accelerated by the electric field, producing further ionisation
-(townsend avalanche). This creates a pulse of current that is registered as one count. The
-Quenching gas (e.g., halogen) absorbs UV photons to prevent secondary discharges.
+Along its axis, filled with an inert gas at low pressure. A high voltage is applied between The
+anode and cathode. When radiation enters the tube through a thin mica window, it ionises Gas atoms.
+The ions are accelerated by the electric field, producing further ionisation (townsend avalanche).
+This creates a pulse of current that is registered as one count. The Quenching gas (e.g., halogen)
+absorbs UV photons to prevent secondary discharges.
 
-(b) (i) Gamma radiation obeys the inverse square law: $R \propto 1/d^2$. As the distance
-Increases, the radiation is spread over a larger area, so the count rate decreases.
+(b) (i) Gamma radiation obeys the inverse square law: $R \propto 1/d^2$. As the distance Increases,
+the radiation is spread over a larger area, so the count rate decreases.
 
 (ii) Plot $R$ (y-axis) versus $1/d^2$ (x-axis):
 
 | $1/d^2$ (cm$^{-2}$) | $R$ (counts/min) |
-| -------------------- | ----------------- |
-| 0.250 | 3600 |
-| 0.0625 | 900 |
-| 0.0278 | 400 |
-| 0.0156 | 225 |
-| 0.0100 | 144 |
+| ------------------- | ---------------- |
+| 0.250               | 3600             |
+| 0.0625              | 900              |
+| 0.0278              | 400              |
+| 0.0156              | 225              |
+| 0.0100              | 144              |
 
-The graph is approximately a straight line through the origin, confirming the inverse square
-Law.
+The graph is approximately a straight line through the origin, confirming the inverse square Law.
 
-(iii) Corrected count rate at $d = 4.0 \mathrm{ cm}$: $R_{\mathrm{corrected}} = 900 - 20 = 880 \mathrm{ counts/min}$
+(iii) Corrected count rate at $d = 4.0 \mathrm{ cm}$:
+$R_{\mathrm{corrected}} = 900 - 20 = 880 \mathrm{ counts/min}$
 
 Percentage correction: $\frac{20}{900} \times 100\% = 2.2\%$
 
-The background correction is small at close range but becomes more significant at larger
-Distances where the count rate is lower.
+The background correction is small at close range but becomes more significant at larger Distances
+where the count rate is lower.
 
 </details>
-
 
 </details>
 

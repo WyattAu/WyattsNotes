@@ -1,6 +1,8 @@
 ---
 title: Return Value Optimization (RVO) and NRVO
-description: "C++: Return Value Optimization (RVO) and NRVO — 8.1 Guaranteed Copy Elision (C++17 RVO); Proof of Zero-Copy Guarantee for URVO in C++17."
+description:
+  'C++: Return Value Optimization (RVO) and NRVO — 8.1 Guaranteed Copy Elision (C++17 RVO); Proof of
+  Zero-Copy Guarantee for URVO in C++17.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -8,6 +10,7 @@ categories:
   - Cpp
 slug: return-value-optimization-rvo-and-nrvo
 ---
+
 # Return Value Optimization (RVO) and NRVO
 
 Return value optimization is the compiler's ability to construct a return value directly in the
@@ -57,14 +60,14 @@ Direct construction of `T` in the caller's storage. No temporary object is creat
 
 1. `T{args}` is a prvalue of type `T` [N4950 S7.3.4].
 2. In C++17 and later, a prvalue is not an object. It is an initializer — a set of instructions for
- constructing an object of type `T` [N4950 S7.3.4]/1.
+   constructing an object of type `T` [N4950 S7.3.4]/1.
 3. When a prvalue of type `T` is used to initialize an object of type `T` (whether a local variable,
- a function parameter, or the return value of a function), the prvalue directly initializes the
- destination object [N4950 S8.4.4].
+   a function parameter, or the return value of a function), the prvalue directly initializes the
+   destination object [N4950 S8.4.4].
 4. "Directly initializes" means the constructor for `T` is invoked with the destination object's
- storage as the `this` pointer. There is no intermediate temporary.
-5. In a function `T f() { return T{args}; }`The prvalue `T{args}` directly initializes the
- **result object** of the function call expression [N4950 S8.4.4]/1.
+   storage as the `this` pointer. There is no intermediate temporary.
+5. In a function `T f() { return T{args}; }`The prvalue `T{args}` directly initializes the **result
+   object** of the function call expression [N4950 S8.4.4]/1.
 6. The result object is the object in the caller's storage that the function call initializes.
 7. Therefore, exactly one `T(args)` constructor call occurs, directly in the caller's storage. QED.
 
@@ -123,14 +126,14 @@ Provided by the caller. This is not an optimization — it is the ABI contract f
 The difference between URVO and NRVO is a difference between a language rule and a compiler
 Optimization:
 
-| Property | URVO (Unnamed RVO) | NRVO (Named RVO) |
+| Property           | URVO (Unnamed RVO)            | NRVO (Named RVO)                                   |
 | :----------------- | :---------------------------- | :------------------------------------------------- |
-| Standard status | **Guaranteed** (C++17+) | Optional optimization |
-| Applies to | `return T{args};` (prvalue) | `return local;` (named variable) |
-| Fails when | Never (it is a language rule) | Multiple return paths, address-taken, debug builds |
-| Can be disabled | No (not an optimization) | Yes (`-fno-elide-constructors`) |
-| Requires move ctor | No (not needed) | As fallback if NRVO fails |
-| Standard reference | [N4950 S8.4.4] | [N4950 S11.9.6] (implicit move rule) |
+| Standard status    | **Guaranteed** (C++17+)       | Optional optimization                              |
+| Applies to         | `return T{args};` (prvalue)   | `return local;` (named variable)                   |
+| Fails when         | Never (it is a language rule) | Multiple return paths, address-taken, debug builds |
+| Can be disabled    | No (not an optimization)      | Yes (`-fno-elide-constructors`)                    |
+| Requires move ctor | No (not needed)               | As fallback if NRVO fails                          |
+| Standard reference | [N4950 S8.4.4]                | [N4950 S11.9.6] (implicit move rule)               |
 
 ## 8.2 When NRVO Applies
 
@@ -186,10 +189,10 @@ NRVO is applicable when **all** of the following conditions hold:
 1. The function returns a **single** named local variable (the same variable on every return path).
 2. The local variable's type matches the function's return type.
 3. The local variable's address does not escape (it is not passed to another function that might
- store the address).
+   store the address).
 4. The compiler is performing optimization (NRVO is disabled at `-O0`).
 5. No inline assembly or other constructs prevent the compiler from redirecting the variable's
- storage.
+   storage.
 
 ```cpp
 #include <iostream>
@@ -345,16 +348,15 @@ int main() {
 When returning a local variable from a function, the compiler tries each strategy in order:
 
 1. **Guaranteed elision (C++17 RVO):** If the return expression is a prvalue of the same type as the
- function return type, no copy/move occurs. This is mandatory.
+   function return type, no copy/move occurs. This is mandatory.
 2. **NRVO:** If the return expression names a local variable, the compiler may construct it in the
- caller's storage. This is optional but widely implemented.
+   caller's storage. This is optional but widely implemented.
 3. **Implicit move:** If NRVO does not apply, the compiler treats the return as if
- `std::move(local)` were written. The move constructor is called [N4950 S11.9.6].
+   `std::move(local)` were written. The move constructor is called [N4950 S11.9.6].
 4. **Copy:** If no move constructor exists (or it is deleted), the copy constructor is called. If
- neither exists, compilation fails.
+   neither exists, compilation fails.
 
-:::warning
-Do not write `return std::move(local);` in a function that returns by value. This
+:::warning Do not write `return std::move(local);` in a function that returns by value. This
 Prevents NRVO from applying (because `std::move(local)` is an xvalue, not a named local variable)
 And forces a move. Let the compiler apply NRVO or implicit move automatically. The only correct use
 Of `std::move` in a return statement is when returning a member variable or a function parameter.
@@ -362,17 +364,17 @@ Of `std::move` in a return statement is when returning a member variable or a fu
 
 ### Decision Table: RVO Applicability
 
-| Return Expression | Type Match? | RVO (Guaranteed)? | NRVO (Optional)? | Fallback |
+| Return Expression                           | Type Match? | RVO (Guaranteed)? | NRVO (Optional)? | Fallback       |
 | :------------------------------------------ | :---------- | :---------------- | :--------------- | :------------- |
-| `return T{args};` | Yes | Yes | N/A | None needed |
-| `return T(args);` | Yes | Yes | N/A | None needed |
-| `return local;` (single return path) | Yes | N/A | Yes | Implicit move |
-| `return local;` (multiple paths) | Yes | N/A | Maybe | Implicit move |
-| `return local;` (address taken) | Yes | N/A | No | Implicit move |
-| `return param;` (function parameter) | Yes | N/A | No | Implicit move |
-| `return member_;` (data member) | Yes | N/A | No | Implicit move |
-| `return Derived{};` (function returns Base) | No | No | N/A | Move (slicing) |
-| `return std::move(local);` | Yes | No | No | Explicit move |
+| `return T{args};`                           | Yes         | Yes               | N/A              | None needed    |
+| `return T(args);`                           | Yes         | Yes               | N/A              | None needed    |
+| `return local;` (single return path)        | Yes         | N/A               | Yes              | Implicit move  |
+| `return local;` (multiple paths)            | Yes         | N/A               | Maybe            | Implicit move  |
+| `return local;` (address taken)             | Yes         | N/A               | No               | Implicit move  |
+| `return param;` (function parameter)        | Yes         | N/A               | No               | Implicit move  |
+| `return member_;` (data member)             | Yes         | N/A               | No               | Implicit move  |
+| `return Derived{};` (function returns Base) | No          | No                | N/A              | Move (slicing) |
+| `return std::move(local);`                  | Yes         | No                | No               | Explicit move  |
 
 ## 8.5 Anti-Pattern: `return std::move(local)`
 
@@ -442,7 +444,7 @@ It prevents NRVO and forces the move that the compiler would have done automatic
 The only correct uses of `std::move` in a return statement are:
 
 1. **Returning a data member:** Data members are not local variables, so NRVO never applies. The
- implicit move rule also does not apply to data members. You must use `std::move` explicitly.
+   implicit move rule also does not apply to data members. You must use `std::move` explicitly.
 
 ```cpp
 #include <utility>
@@ -460,9 +462,9 @@ public:
 ```
 
 2. **Returning a function parameter (by value):** When a function takes a parameter by value and
- returns it, the implicit move rule applies to the parameter. However, some older compilers may
- not implement this correctly. Using `std::move` is defensive but not necessary on conforming
- C++11+ compilers.
+   returns it, the implicit move rule applies to the parameter. However, some older compilers may
+   not implement this correctly. Using `std::move` is defensive but not necessary on conforming
+   C++11+ compilers.
 
 ```cpp
 #include <utility>
@@ -475,7 +477,7 @@ std::string transform(std::string s) {
 ```
 
 3. **Returning through a wrapper that does not support NRVO:** When the return expression goes
- through a helper function or a type cast that obscures the named variable, NRVO cannot apply.
+   through a helper function or a type cast that obscures the named variable, NRVO cannot apply.
 
 ```cpp
 #include <utility>
@@ -490,13 +492,11 @@ std::string wrapped_return() {
 }
 ```
 
-:::info
-Relevance The interaction between value categories, move semantics, and copy elision is one
+:::info Relevance The interaction between value categories, move semantics, and copy elision is one
 Of the most performance-critical aspects of C++. In a well-written C++ program, objects are
 Constructed in place (RVO), moved between scopes (move constructors), and swapped (swap idiom).
 Copies are the exception, not the rule. Understanding the fallback chain (RVO → NRVO → implicit move
-→ copy) is essential for writing code that is both correct and efficient.
-:::
+→ copy) is essential for writing code that is both correct and efficient. :::
 
 ## 8.6 RVO in Other Contexts
 
@@ -615,8 +615,8 @@ Has a different layout than the `Base` object. The compiler must construct the f
 
 ## 8.8 RVO and `std::optional`
 
-When returning a prvalue wrapped in `std::optional`The prvalue is constructed inside the
-Optional's storage. This is also guaranteed elision:
+When returning a prvalue wrapped in `std::optional`The prvalue is constructed inside the Optional's
+storage. This is also guaranteed elision:
 
 ```cpp
 #include <iostream>
@@ -685,9 +685,9 @@ The copy. The Standard specified the conditions under which elision was allowed 
 S12.8/31], but it was always optional. This meant:
 
 1. Code that relied on RVO for correctness (e.g., types with deleted copy/move constructors) was not
- portable.
-2. The `std::move` anti-pattern was less harmful because both the `std::move` version and
- the bare `local` version could result in a move if the compiler chose not to elide.
+   portable.
+2. The `std::move` anti-pattern was less harmful because both the `std::move` version and the bare
+   `local` version could result in a move if the compiler chose not to elide.
 
 C++17 eliminated this ambiguity by making URVO a language rule rather than an optimization
 Permission.
@@ -705,20 +705,19 @@ The ABI.
 
 ## 8.10 NRVO and Debug Builds
 
-NRVO is an optimization that is disabled in debug builds (`-O0`). This has practical
-Consequences:
+NRVO is an optimization that is disabled in debug builds (`-O0`). This has practical Consequences:
 
 1. **Move constructors are called more frequently in debug builds.** If your move constructor has
- side effects (e.g., logging, releasing locks), you will see more invocations in debug builds.
+   side effects (e.g., logging, releasing locks), you will see more invocations in debug builds.
 
 2. **Debug builds may be slower due to extra copies/moves.** For types with expensive move
- operations (rare, but possible if the move constructor does non-trivial work), the debug build
- may be significantly slower than the release build.
+   operations (rare, but possible if the move constructor does non-trivial work), the debug build
+   may be significantly slower than the release build.
 
 3. **Destructors are called on moved-from objects in debug builds.** If NRVO applies, the local
- variable is constructed in the return slot and is not destroyed in the callee. If NRVO fails, the
- local variable is moved from, and the moved-from object is destroyed at the end of the callee.
- This changes the order and count of destructor calls.
+   variable is constructed in the return slot and is not destroyed in the callee. If NRVO fails, the
+   local variable is moved from, and the moved-from object is destroyed at the end of the callee.
+   This changes the order and count of destructor calls.
 
 ```cpp
 #include <iostream>
@@ -756,13 +755,13 @@ int main() {
 On some platforms, the ABI imposes constraints on copy elision that go beyond what the Standard
 Requires. For example:
 
-- **Return value registers:** On x86_64, small -copyable types (e.g., `int``double`
- small structs) are returned in registers, not via the hidden return slot pointer. For these types,
- RVO is irrelevant — there is no memory location to elide into.
+- **Return value registers:** On x86_64, small -copyable types (e.g., `int``double` small structs)
+  are returned in registers, not via the hidden return slot pointer. For these types, RVO is
+  irrelevant — there is no memory location to elide into.
 
 - **Virtual function returns:** If a virtual function returns a non-trivial type, the ABI must
- ensure that the caller provides a return slot. The callee cannot construct the return value in a
- register because the caller does not know the dynamic type at the call site.
+  ensure that the caller provides a return slot. The callee cannot construct the return value in a
+  register because the caller does not know the dynamic type at the call site.
 
 ```cpp
 #include <iostream>
@@ -786,9 +785,9 @@ int main() {
 
 ## 8.12 Interaction with `std::initializer_list`
 
-Returning a `std::initializer_list` from a function is dangerous because the list 
-References a temporary array. The temporary array's lifetime ends when the function returns, so the
-Returned `initializer_list` is dangling:
+Returning a `std::initializer_list` from a function is dangerous because the list References a
+temporary array. The temporary array's lifetime ends when the function returns, so the Returned
+`initializer_list` is dangling:
 
 ```cpp
 #include <initializer_list>
@@ -813,9 +812,9 @@ It references is a temporary whose lifetime does not extend past the function re
 ### 1. NRVO and Debug Builds
 
 NRVO is an optimization that compilers apply at higher optimization levels. In debug builds (`-O0`
-On GCC/Clang), NRVO is not applied, resulting in extra move constructor calls. This means
-Code that works correctly in debug mode (relying on destructors being called for moved-from objects)
-May exhibit different behavior than optimized builds. Always test move semantics at `-O2` or higher.
+On GCC/Clang), NRVO is not applied, resulting in extra move constructor calls. This means Code that
+works correctly in debug mode (relying on destructors being called for moved-from objects) May
+exhibit different behavior than optimized builds. Always test move semantics at `-O2` or higher.
 
 ### 2. NRVO and Address-Taken Variables
 

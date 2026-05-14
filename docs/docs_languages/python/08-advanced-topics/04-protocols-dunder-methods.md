@@ -1,9 +1,12 @@
 ---
 id: protocols-dunder-methods
 title: Protocols and Dunder Methods
-description: "Protocols and Dunder Methods — Data Model Protocols; \_\_init\_\_ and \_\_new\_\_; \_\_repr\_\_ and \_\_str\_\_ for thorough revision and examination prepar."
+description:
+  "Protocols and Dunder Methods — Data Model Protocols; \_\_init\_\_ and \_\_new\_\_; \_\_repr\_\_
+  and \_\_str\_\_ for thorough revision and examination prepar."
 slug: protocols-dunder-methods
 ---
+
 ## Data Model Protocols
 
 Python's data model defines a set of protocols that objects can implement to integrate with built-in
@@ -33,11 +36,9 @@ s2 = Singleton()
 print(s1 is s2)  # True
 ```
 
-:::info
-`__new__` is a static method (receives the class, not the instance). It is rarely
+:::info `__new__` is a static method (receives the class, not the instance). It is rarely
 Overridden. Use cases include: singletons, immutable types that need pre-initialization validation,
-And subclassing immutable built-in types like `str` and `int`.
-:::
+And subclassing immutable built-in types like `str` and `int`. :::
 
 ### \_\_repr\_\_ and \_\_str\_\_
 
@@ -120,11 +121,9 @@ versions = {v1: "stable"}
 print(versions[v2])  # "stable"
 ```
 
-:::warning
-If you define `__eq__` without `__hash__`Python sets `__hash__ = None`Making the
-Object unhashable. If you define `__hash__` without `__eq__`Objects may compare equal but hash
-Differently, breaking dict and set invariants.
-:::
+:::warning If you define `__eq__` without `__hash__`Python sets `__hash__ = None`Making the Object
+unhashable. If you define `__hash__` without `__eq__`Objects may compare equal but hash Differently,
+breaking dict and set invariants. :::
 
 ### Rich Comparison
 
@@ -521,11 +520,9 @@ c += 5        # Counter with value 15 (same object)
 c += Counter(5)  # Counter with value 20
 ```
 
-:::warning
-If `__iadd__` is not defined, Python falls back to `__add__` and assigns the result:
+:::warning If `__iadd__` is not defined, Python falls back to `__add__` and assigns the result:
 `c = c + other`. This creates a new object. Define `__iadd__` when you want in-place mutation for
-Performance.
-:::
+Performance. :::
 
 ## Bitwise Protocols
 
@@ -780,10 +777,8 @@ mk.value = 2  # Mutate after insertion
 print(mk in s)  # May be False — hash changed but position didn't
 ```
 
-:::danger
-Never mutate objects that are used as dict keys or set members. If mutability is needed,
-Use immutable snapshots or compute hash from immutable attributes.
-:::
+:::danger Never mutate objects that are used as dict keys or set members. If mutability is needed,
+Use immutable snapshots or compute hash from immutable attributes. :::
 
 ### 5. \_\_del\_\_ and Circular References
 

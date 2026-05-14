@@ -1,7 +1,9 @@
 ---
 id: intro
 title: Introduction to Networking
-description: "Comprehensive infrastructure and DevOps networking notes on Introduction to Networking. Presents core theory, worked examples, and problem-solving strategies."
+description:
+  'Comprehensive infrastructure and DevOps networking notes on Introduction to Networking. Presents
+  core theory, worked examples, and problem-solving strategies.'
 slug: intro
 sidebar_position: 1
 tags:
@@ -9,6 +11,7 @@ tags:
 categories:
   - Networking
 ---
+
 ## Why Networking Matters
 
 Every system you operate, deploy, or debug depends on networking. A container cannot reach its
@@ -68,15 +71,15 @@ A transit provider, or it may be a misconfigured MTU on a VPN tunnel.
 
 ## What This Subject Covers
 
-| Topic | Focus |
+| Topic                 | Focus                                                     |
 | --------------------- | --------------------------------------------------------- |
-| OSI and TCP/IP Models | Reference models, encapsulation, layer violations |
-| IP Addressing | IPv4, IPv6, subnetting, CIDR, NAT, DHCP, ARP |
-| TCP and UDP | Connection management, congestion control, flow control |
-| DNS | Hierarchy, resolution, caching, DNSSEC, DoH/DoT |
-| HTTP | HTTP/1.1, HTTP/2, HTTP/3, caching, REST |
-| TLS | Handshake, cipher suites, certificates, PKI |
-| Network Tools | tcpdump, Wireshark, curl, dig, ss, diagnostic methodology |
+| OSI and TCP/IP Models | Reference models, encapsulation, layer violations         |
+| IP Addressing         | IPv4, IPv6, subnetting, CIDR, NAT, DHCP, ARP              |
+| TCP and UDP           | Connection management, congestion control, flow control   |
+| DNS                   | Hierarchy, resolution, caching, DNSSEC, DoH/DoT           |
+| HTTP                  | HTTP/1.1, HTTP/2, HTTP/3, caching, REST                   |
+| TLS                   | Handshake, cipher suites, certificates, PKI               |
+| Network Tools         | tcpdump, Wireshark, curl, dig, ss, diagnostic methodology |
 
 ## Core Principles
 
@@ -84,9 +87,9 @@ Every protocol covered in this subject shares a few fundamental properties:
 
 1. **Encapsulation** -- higher-layer data is wrapped in lower-layer headers for delivery
 2. **Multiplexing** -- port numbers, connection identifiers, and session tags allow multiple
- concurrent flows on a single link
+   concurrent flows on a single link
 3. **Best-effort delivery** -- IP provides no guarantees; reliability is an end-to-end concern
- implemented by TCP
+   implemented by TCP
 4. **End-to-end principle** -- complexity belongs at the endpoints, not in the network (RFC 8890)
 
 These principles explain why certain design decisions were made and why real-world networks behave

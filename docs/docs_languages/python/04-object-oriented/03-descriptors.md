@@ -1,21 +1,24 @@
 ---
 id: descriptors
 title: Descriptors and Properties
-description: "Descriptors and Properties — Descriptor Protocol; Data vs Non-Data Descriptors; Instance attribute overrides non-data descriptor; Data descriptor always wins."
+description:
+  'Descriptors and Properties — Descriptor Protocol; Data vs Non-Data Descriptors; Instance
+  attribute overrides non-data descriptor; Data descriptor always wins.'
 slug: descriptors
 ---
+
 ## Descriptor Protocol
 
-Descriptors are the mechanism behind `property``classmethod``staticmethod`And the entire
-Attribute access system in Python. A descriptor is any object that implements at least one of
+Descriptors are the mechanism behind `property``classmethod``staticmethod`And the entire Attribute
+access system in Python. A descriptor is any object that implements at least one of
 `__get__``__set__`Or `__delete__`.
 
 ### Data vs Non-Data Descriptors
 
-| Type | Methods | Behavior |
+| Type                | Methods                               | Behavior                                       |
 | ------------------- | ------------------------------------- | ---------------------------------------------- |
-| Non-data descriptor | `__get__` only | Instance attribute takes precedence |
-| Data descriptor | `__get__` + `__set__` or `__delete__` | Descriptor always wins over instance attribute |
+| Non-data descriptor | `__get__` only                        | Instance attribute takes precedence            |
+| Data descriptor     | `__get__` + `__set__` or `__delete__` | Descriptor always wins over instance attribute |
 
 This distinction is fundamental to understanding Python's attribute lookup.
 
@@ -190,8 +193,7 @@ t2 = time.time()
 print(f"First: {t1-t0:.3f}s, Second: {t2-t1:.3f}s")
 ```
 
-:::warning
-`cached_property` is a non-data descriptor. This means instance attributes override it:
+:::warning `cached_property` is a non-data descriptor. This means instance attributes override it:
 
 ```python
 e = ExpensiveComputation(range(100))
@@ -285,11 +287,9 @@ class StaticMethod:
         return self.func
 ```
 
-:::tip
-Use `@staticmethod` when a method does not need access to `self` or `cls`. Use `@classmethod`
+:::tip Use `@staticmethod` when a method does not need access to `self` or `cls`. Use `@classmethod`
 When you need the class (e.g., for alternative constructors). Use a regular method when you need the
-Instance.
-:::
+Instance. :::
 
 ## \_\_slots\_\_
 
@@ -342,13 +342,13 @@ Have many instances.
 
 ### **slots** Rules
 
-1. **All parent classes must also use `__slots__`** — If a parent has `__dict__`The child will
- too, negating the benefit.
+1. **All parent classes must also use `__slots__`** — If a parent has `__dict__`The child will too,
+   negating the benefit.
 2. **`__slots__` is inherited** — A child class gets the parent's slots plus its own.
 3. **You cannot add attributes not in `__slots__`** — This is the whole point.
 4. **`__slots__` must contain strings** — Not expressions.
 5. **`__dict__` and `__weakref__` are special** — You can add them to `__slots__` to enable dynamic
- attributes or weak references.
+   attributes or weak references.
 
 ```python
 class Base:
@@ -371,10 +371,8 @@ f.x = 1
 f.dynamic = "allowed"  # Stored in __dict__
 ```
 
-:::warning
-`__slots__` prevents `__dict__` by default, which means `pickle` with protocol 0 may not
-Work correctly. Always test serialization with your chosen protocol when using `__slots__`.
-:::
+:::warning `__slots__` prevents `__dict__` by default, which means `pickle` with protocol 0 may not
+Work correctly. Always test serialization with your chosen protocol when using `__slots__`. :::
 
 ## \_\_getattr\_\_ and \_\_getattribute\_\_
 
@@ -423,11 +421,9 @@ print(s.x)        # Works
 # print(s.z)      # AttributeError: Access to 'z' is not allowed
 ```
 
-:::danger
-When implementing `__getattribute__`You **must** use
-`object.__getattribute__(self, name)` for any attribute access within the method. Using `self.name`
-Will cause infinite recursion because it triggers `__getattribute__` again.
-:::
+:::danger When implementing `__getattribute__`You **must** use `object.__getattribute__(self, name)`
+for any attribute access within the method. Using `self.name` Will cause infinite recursion because
+it triggers `__getattribute__` again. :::
 
 ## \_\_setattr\_\_ and \_\_delattr\_\_
 
@@ -470,10 +466,8 @@ pa.version = "1.0"
 # del pa.version  # AttributeError: Cannot delete protected attribute 'version'
 ```
 
-:::warning
-Same recursion rule applies: always use `object.__setattr__(self, name, value)` and
-`object.__delattr__(self, name)` within these methods.
-:::
+:::warning Same recursion rule applies: always use `object.__setattr__(self, name, value)` and
+`object.__delattr__(self, name)` within these methods. :::
 
 ## \_\_dir\_\_
 
@@ -533,10 +527,8 @@ print(v1 > v2)   # False (generated)
 print(v1 >= v2)  # False (generated)
 ```
 
-:::warning
-`@total_ordering` adds overhead because each generated method calls the others. For
-Performance-critical code, implement all six comparison methods explicitly.
-:::
+:::warning `@total_ordering` adds overhead because each generated method calls the others. For
+Performance-critical code, implement all six comparison methods explicitly. :::
 
 ### functools.singledispatchmethod
 

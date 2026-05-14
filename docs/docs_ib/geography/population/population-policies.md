@@ -1,6 +1,8 @@
 ---
 title: Population Policies
-description: "Pro-natalist policies, anti-natalist policies, population control ethics, gender equality and fertility, and case studies for IB Geography."
+description:
+  'Pro-natalist policies, anti-natalist policies, population control ethics, gender equality and
+  fertility, and case studies for IB Geography.'
 slug: population-policies
 ---
 
@@ -21,8 +23,8 @@ About population ageing and decline in developed countries drive pro-natalist po
 
 ## Anti-Natalist Policies
 
-Anti-natalist policies aim to reduce fertility rates, in response to rapid population
-Growth that strains resources, infrastructure, and public services. They may employ a combination of
+Anti-natalist policies aim to reduce fertility rates, in response to rapid population Growth that
+strains resources, infrastructure, and public services. They may employ a combination of
 Information, incentive, and coercion.
 
 ### China's One-Child Policy (1979--2015)
@@ -52,18 +54,18 @@ Through socio-economic development alone.
 **Unintended consequences:**
 
 1. **Skewed sex ratio:** a cultural preference for sons (rooted in patrilineal inheritance and the
- expectation that sons provide old-age support) combined with restricted fertility led to
- sex-selective abortion and female infanticide. The sex ratio at birth peaked at approximately 120
- males per 100 females in 2005 (biological norm: 105). China has an estimated 30--40 million
- "missing women."
+   expectation that sons provide old-age support) combined with restricted fertility led to
+   sex-selective abortion and female infanticide. The sex ratio at birth peaked at approximately 120
+   males per 100 females in 2005 (biological norm: 105). China has an estimated 30--40 million
+   "missing women."
 2. **Rapid population ageing:** the proportion of the population aged 65 and over increased from
- approximately 5% (1980) to approximately 14% (2023). The old-age dependency ratio is projected to
- exceed 40% by 2050.
+   approximately 5% (1980) to approximately 14% (2023). The old-age dependency ratio is projected to
+   exceed 40% by 2050.
 3. **The "4-2-1" problem:** an only child is potentially responsible for supporting two parents and
- four grandparents, creating an enormous financial and caregiving burden.
+   four grandparents, creating an enormous financial and caregiving burden.
 4. **Female "marriage squeeze":** the excess of males over females in the marriage market makes it
- difficult for lower-income and rural men to find wives, with potential social stability
- implications.
+   difficult for lower-income and rural men to find wives, with potential social stability
+   implications.
 
 **Policy reversal.** China replaced the one-child policy with a two-child policy in 2016 and a
 Three-child policy in 2021, accompanied by financial incentives for larger families. However,
@@ -111,9 +113,9 @@ Assess their effectiveness and ethical implications separately.
 
 ## Pro-Natalist Policies
 
-Pro-natalist policies aim to increase fertility rates, in response to below-replacement
-Fertility and population ageing. They range from financial incentives to structural reforms aimed at
-Reducing the cost of childbearing and supporting work-family balance.
+Pro-natalist policies aim to increase fertility rates, in response to below-replacement Fertility
+and population ageing. They range from financial incentives to structural reforms aimed at Reducing
+the cost of childbearing and supporting work-family balance.
 
 ### France
 
@@ -125,23 +127,23 @@ With employment.
 **Financial measures:**
 
 - **Family allowances:** means-tested payments that increase with the number of children
- (approximately EUR 130 per month for the first child, EUR 170 for the second, EUR 360 for the
- third and subsequent children).
+  (approximately EUR 130 per month for the first child, EUR 170 for the second, EUR 360 for the
+  third and subsequent children).
 - **Birth grant:** a one-time payment of approximately EUR 940 upon the birth or adoption of a
- child.
+  child.
 - **Tax benefits:** the quotient familial system reduces income tax liability for families, with
- greater reductions for larger families.
+  greater reductions for larger families.
 
 **Structural measures:**
 
 - **Childcare:** subsidised childcare (creches) is widely available for children from 3 months to 3
- years, with means-tested fees. School is free and mandatory from age 3. After-school care
- (garderie) is available until approximately 18:00.
+  years, with means-tested fees. School is free and mandatory from age 3. After-school care
+  (garderie) is available until approximately 18:00.
 - **Parental leave:** up to 3 years of parental leave per child, with job protection. The first 6
- months are paid at approximately EUR 400 per month for the first child and approximately EUR 600
- for two or more children.
+  months are paid at approximately EUR 400 per month for the first child and approximately EUR 600
+  for two or more children.
 - **Work-family balance:** the 35-hour working week, limits on overtime, and strong employment
- protection for pregnant women and parents.
+  protection for pregnant women and parents.
 
 **Analysis.** France's relatively high fertility is attributed not to financial incentives alone but
 To the comprehensive structural support that reduces the opportunity cost of childbearing for women.

@@ -1,6 +1,8 @@
 ---
 title: Pattern Matching
-description: "Dart: Pattern Matching — Pattern Matching Overview; Refutable vs Irrefutable Patterns; Where Patterns Appear; Logical Patterns."
+description:
+  'Dart: Pattern Matching — Pattern Matching Overview; Refutable vs Irrefutable Patterns; Where
+  Patterns Appear; Logical Patterns.'
 date: 2026-04-05T00:00:00.000Z
 tags:
   - Dart
@@ -8,6 +10,7 @@ categories:
   - Dart
 slug: pattern-matching
 ---
+
 ## Pattern Matching Overview
 
 Pattern matching in Dart 3 is a compile-time mechanism for decomposing and inspecting values. A
@@ -62,13 +65,13 @@ if (x case int n when n > 0) {
 
 Patterns are not limited to switch statements. Dart 3 allows patterns in five contexts:
 
-| Context | Pattern Type | Example |
+| Context              | Pattern Type               | Example                        |
 | -------------------- | -------------------------- | ------------------------------ |
-| Switch cases | Refutable | `case [a, b]:` |
-| if-case | Refutable | `if (x case [a, b])` |
-| for-in | Irrefutable (each element) | `for (var (k, v) in pairs)` |
-| Variable declaration | Irrefutable | `var (a, b) = record` |
-| catch clauses | Refutable | `on FormatException catch (e)` |
+| Switch cases         | Refutable                  | `case [a, b]:`                 |
+| if-case              | Refutable                  | `if (x case [a, b])`           |
+| for-in               | Irrefutable (each element) | `for (var (k, v) in pairs)`    |
+| Variable declaration | Irrefutable                | `var (a, b) = record`          |
+| catch clauses        | Refutable                  | `on FormatException catch (e)` |
 
 The compiler enforces the refutability constraint at each site. A refutable pattern in a variable
 Declaration produces a hard error. An irrefutable pattern in a switch case is allowed but pointless
@@ -144,8 +147,8 @@ Bound variables.
 
 ### Relational Patterns
 
-Relational patterns use `==``!=``<``>``<=``>=` to compare the matched value against a
-Constant. These are not general-purpose — the right-hand side must be a compile-time constant.
+Relational patterns use `==``!=``<``>``<=``>=` to compare the matched value against a Constant.
+These are not general-purpose — the right-hand side must be a compile-time constant.
 
 ```dart
 String categorize(int score) => switch (score) {

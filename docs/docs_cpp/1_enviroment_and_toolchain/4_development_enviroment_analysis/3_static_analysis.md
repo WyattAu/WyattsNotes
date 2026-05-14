@@ -1,6 +1,8 @@
 ---
 title: Static Analysis
-description: "C++: Static Analysis — 1. Clang-Tidy (The AST Linter); Capabilities; Configuration Architecture (`.clang-tidy`); Enable specific checks."
+description:
+  'C++: Static Analysis — 1. Clang-Tidy (The AST Linter); Capabilities; Configuration Architecture
+  (`.clang-tidy`); Enable specific checks.'
 date: 2025-12-11T06:39:06.995Z
 tags:
   - cpp
@@ -8,6 +10,7 @@ categories:
   - cpp
 slug: static-analysis
 ---
+
 Import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 Static Analysis involves examining source code without executing it. Unlike the compiler, which
@@ -27,7 +30,7 @@ Type deductions with the exact same precision as the compiler.
 
 1. **Linter:** Checks for style violations and legacy patterns (e.g., `modernize-use-std-print`).
 2. **Static Analyzer:** Performs path-sensitive analysis to find null pointer dereferences or
- use-after-free (via the `clang-analyzer-*` module).
+   use-after-free (via the `clang-analyzer-*` module).
 3. **Refactoring Tool:** Can automatically apply fixes to the source code.
 
 ### Configuration Architecture (`.clang-tidy`)
@@ -176,13 +179,13 @@ Capabilities for C++.
 
 ### Comparison of Analysis Techniques
 
-| Technique | Precision | Cost | Tools Using It |
+| Technique               | Precision | Cost      | Tools Using It           |
 | :---------------------- | :-------- | :-------- | :----------------------- |
-| AST Pattern Matching | Low | Very Low | clang-tidy (most checks) |
-| Data Flow Analysis | Medium | Medium | cppcheck, clang-analyzer |
-| Path-Sensitive | High | High | clang-analyzer, Coverity |
-| Abstract Interpretation | High | Very High | Polyspace, Astrée |
-| Taint Analysis | High | High | PVS-Studio, SonarQube |
+| AST Pattern Matching    | Low       | Very Low  | clang-tidy (most checks) |
+| Data Flow Analysis      | Medium    | Medium    | cppcheck, clang-analyzer |
+| Path-Sensitive          | High      | High      | clang-analyzer, Coverity |
+| Abstract Interpretation | High      | Very High | Polyspace, Astrée        |
+| Taint Analysis          | High      | High      | PVS-Studio, SonarQube    |
 
 ## 3. Cppcheck (The Data Flow Analyzer)
 
@@ -345,56 +348,56 @@ Checks incrementally without overwhelming the build with warnings.
 
 Modernizes code to use contemporary C++ idioms. These are the safest checks to enable first.
 
-| Check | What it does | Example |
+| Check                            | What it does                                         | Example                                        |
 | :------------------------------- | :--------------------------------------------------- | :--------------------------------------------- |
-| `modernize-use-std-print` | Replaces `std::cout` / `printf` with `std::print` | `std::cout &lt;&lt; x` → `std::print("{}", x)` |
-| `modernize-use-override` | Adds `override` to virtual function overrides | `void f()` → `void f() override` |
-| `modernize-use-auto` | Replaces explicit type with `auto` where appropriate | `int x = foo()` → `auto x = foo()` |
-| `modernize-use-nullptr` | Replaces `NULL` / `0` with `nullptr` | `NULL` → `nullptr` |
-| `modernize-use-using` | Replaces `typedef` with `using` | `typedef int X` → `using X = int` |
-| `modernize-use-enum-class` | Suggests `enum class` over unscoped `enum` | `enum Color` → `enum class Color` |
-| `modernize-loop-convert` | Converts `for` loops to range-for where applicable | Index-based → range-based |
-| `modernize-use-starts-ends-with` | Replaces hand-rolled prefix/suffix checks | `s.find(x) == 0` → `s.starts_with(x)` |
+| `modernize-use-std-print`        | Replaces `std::cout` / `printf` with `std::print`    | `std::cout &lt;&lt; x` → `std::print("{}", x)` |
+| `modernize-use-override`         | Adds `override` to virtual function overrides        | `void f()` → `void f() override`               |
+| `modernize-use-auto`             | Replaces explicit type with `auto` where appropriate | `int x = foo()` → `auto x = foo()`             |
+| `modernize-use-nullptr`          | Replaces `NULL` / `0` with `nullptr`                 | `NULL` → `nullptr`                             |
+| `modernize-use-using`            | Replaces `typedef` with `using`                      | `typedef int X` → `using X = int`              |
+| `modernize-use-enum-class`       | Suggests `enum class` over unscoped `enum`           | `enum Color` → `enum class Color`              |
+| `modernize-loop-convert`         | Converts `for` loops to range-for where applicable   | Index-based → range-based                      |
+| `modernize-use-starts-ends-with` | Replaces hand-rolled prefix/suffix checks            | `s.find(x) == 0` → `s.starts_with(x)`          |
 
 ### 7.2 bugprone-\*
 
 Catches common mistakes that compilers often miss. These are higher-priority checks.
 
-| Check | What it detects |
+| Check                                 | What it detects                                        |
 | :------------------------------------ | :----------------------------------------------------- |
-| `bugprone-use-after-move` | Using an object after it has been moved from |
-| `bugprone-string-integer-assignment` | Assigning integer to `std::string` (implicit `char`) |
-| `bugprone-narrowing-conversions` | Implicit narrowing (e.g., `double` to `int`) |
+| `bugprone-use-after-move`             | Using an object after it has been moved from           |
+| `bugprone-string-integer-assignment`  | Assigning integer to `std::string` (implicit `char`)   |
+| `bugprone-narrowing-conversions`      | Implicit narrowing (e.g., `double` to `int`)           |
 | `bugprone-redundant-branch-condition` | Same condition tested twice in an `if`/`else if` chain |
-| `bugprone-assert-side-effect` | `assert()` with side effects (removed in release) |
-| `bugprone-sizeof-expression` | `sizeof(ptr)` instead of `sizeof(*ptr)` |
-| `bugprone-integer-division` | Integer division where floating-point was intended |
+| `bugprone-assert-side-effect`         | `assert()` with side effects (removed in release)      |
+| `bugprone-sizeof-expression`          | `sizeof(ptr)` instead of `sizeof(*ptr)`                |
+| `bugprone-integer-division`           | Integer division where floating-point was intended     |
 
 ### 7.3 readability-\*
 
 Enforces consistent style. Some are opinionated — disable the ones that conflict with your project's
 Conventions.
 
-| Check | What it does |
+| Check                                  | What it does                                        |
 | :------------------------------------- | :-------------------------------------------------- |
-| `readability-identifier-naming` | Enforces naming conventions (camelCase, snake_case) |
-| `readability-const-return-type` | Warns about unnecessary `const` on return types |
-| `readability-braces-around-statements` | Requires braces on single-line `if`/`else` bodies |
-| `readability-else-after-return` | Flags `else` after `return` / `break` / `continue` |
-| `readability-implicit-bool-conversion` | Flags implicit conversions to/from `bool` |
-| `readability-simplify-boolean-expr` | Simplifies redundant boolean expressions |
+| `readability-identifier-naming`        | Enforces naming conventions (camelCase, snake_case) |
+| `readability-const-return-type`        | Warns about unnecessary `const` on return types     |
+| `readability-braces-around-statements` | Requires braces on single-line `if`/`else` bodies   |
+| `readability-else-after-return`        | Flags `else` after `return` / `break` / `continue`  |
+| `readability-implicit-bool-conversion` | Flags implicit conversions to/from `bool`           |
+| `readability-simplify-boolean-expr`    | Simplifies redundant boolean expressions            |
 
 ### 7.4 performance-\*
 
 Identifies patterns that prevent the compiler from generating optimal code.
 
-| Check | What it detects |
+| Check                                         | What it detects                                            |
 | :-------------------------------------------- | :--------------------------------------------------------- |
-| `performance-unnecessary-value-param` | Function parameters passed by value but only read |
-| `performance-unnecessary-copy-initialization` | Unnecessary copies during initialization |
-| `performance-for-range-copy` | Range-for loop copies elements instead of using references |
-| `performance-no-int-to-ptr` | Integer-to-pointer conversion without `reinterpret_cast` |
-| `performance-move-const-arg` | Moving from a const value (copy, not move, occurs) |
+| `performance-unnecessary-value-param`         | Function parameters passed by value but only read          |
+| `performance-unnecessary-copy-initialization` | Unnecessary copies during initialization                   |
+| `performance-for-range-copy`                  | Range-for loop copies elements instead of using references |
+| `performance-no-int-to-ptr`                   | Integer-to-pointer conversion without `reinterpret_cast`   |
+| `performance-move-const-arg`                  | Moving from a const value (copy, not move, occurs)         |
 
 ## 8. Incremental Adoption Strategy
 
@@ -468,7 +471,7 @@ Diagnostics:
 
 - clangd runs clang-tidy checks on the fly as you type. Enabling too many checks can cause latency.
 - For large projects, start with `bugprone-*` and `modernize-*` in clangd, and run the full check
- suite via `run-clang-tidy` in CI.
+  suite via `run-clang-tidy` in CI.
 - The `--header-filter` option in `.clang-tidy` reduces analysis scope and speeds up clangd.
 
 ## 10. Cppcheck: Usage and Comparison
@@ -488,19 +491,19 @@ cppcheck --enable=all --htmlstep=2 --report-minimum-severity=warning src/ --outp
 
 ### Tool Comparison Table
 
-| Feature | Clang-Tidy | Cppcheck | PVS-Studio | SonarQube |
+| Feature             | Clang-Tidy                        | Cppcheck                              | PVS-Studio                   | SonarQube                      |
 | :------------------ | :-------------------------------- | :------------------------------------ | :--------------------------- | :----------------------------- |
-| Parser | Clang AST (full C++ support) | Custom parser (limited templates) | Clang-based + custom | Clang-based |
-| Data flow analysis | Via `clang-analyzer-*` module | Built-in, strong | Path-sensitive | Path-sensitive |
-| Taint analysis | No | No | Yes | Yes |
-| Template support | Full | Limited | Full | Full |
-| Speed | Slower (full AST parse) | Faster | Slow (commercial) | Slow (commercial) |
-| Autofix | Yes (`--fix`) | No | No (suggests fixes) | No |
-| CI/CD integration | Via CMake or `run-clang-tidy` | Via CMake or direct invocation | Native CI plugin | Native CI pipeline |
-| IDE integration | clangd (real-time) | Limited (plugin-based) | Plugin for VS/JetBrains | Plugin for VS/JetBrains |
-| False positive rate | Moderate (template edge cases) | Moderate (data flow edge cases) | Low | Low-Medium |
-| Licensing | Open source (Apache 2.0) | Open source (GPL) | Commercial | Commercial |
-| Best at | Style, modernization, refactoring | Buffer overruns, leaks, uninitialized | Complex logic bugs, security | Code quality metrics, security |
+| Parser              | Clang AST (full C++ support)      | Custom parser (limited templates)     | Clang-based + custom         | Clang-based                    |
+| Data flow analysis  | Via `clang-analyzer-*` module     | Built-in, strong                      | Path-sensitive               | Path-sensitive                 |
+| Taint analysis      | No                                | No                                    | Yes                          | Yes                            |
+| Template support    | Full                              | Limited                               | Full                         | Full                           |
+| Speed               | Slower (full AST parse)           | Faster                                | Slow (commercial)            | Slow (commercial)              |
+| Autofix             | Yes (`--fix`)                     | No                                    | No (suggests fixes)          | No                             |
+| CI/CD integration   | Via CMake or `run-clang-tidy`     | Via CMake or direct invocation        | Native CI plugin             | Native CI pipeline             |
+| IDE integration     | clangd (real-time)                | Limited (plugin-based)                | Plugin for VS/JetBrains      | Plugin for VS/JetBrains        |
+| False positive rate | Moderate (template edge cases)    | Moderate (data flow edge cases)       | Low                          | Low-Medium                     |
+| Licensing           | Open source (Apache 2.0)          | Open source (GPL)                     | Commercial                   | Commercial                     |
+| Best at             | Style, modernization, refactoring | Buffer overruns, leaks, uninitialized | Complex logic bugs, security | Code quality metrics, security |
 
 ### When to Use Both
 
@@ -514,12 +517,12 @@ Beyond correctness and style, static analysis tools can enforce security rules f
 Coding Standard**. Clang-tidy includes the `cert-*` check group, which maps directly to CERT
 Recommendations:
 
-| CERT Rule | clang-tidy Check | Vulnerability |
+| CERT Rule | clang-tidy Check | Vulnerability            |
 | :-------- | :--------------- | :----------------------- |
-| EXP50-CPP | `cert-err52-cpp` | Throwing in destructor |
-| EXP63-CPP | `cert-dcl03-c` | Implicit conversions |
-| DCL50-CPP | `cert-dcl58-cpp` | Uninitialized const |
-| INT30-C | `cert-int30-c` | Unsigned integer wrap |
+| EXP50-CPP | `cert-err52-cpp` | Throwing in destructor   |
+| EXP63-CPP | `cert-dcl03-c`   | Implicit conversions     |
+| DCL50-CPP | `cert-dcl58-cpp` | Uninitialized const      |
+| INT30-C   | `cert-int30-c`   | Unsigned integer wrap    |
 | OOP57-CPP | `cert-oop57-cpp` | Copy constructor missing |
 | OOP58-CPP | `cert-oop58-cpp` | Move constructor missing |
 
@@ -536,12 +539,12 @@ Them prevents the suppression mechanism from becoming a liability:
 
 1. **Fix immediately:** Warnings with a clear, safe fix. No suppression needed.
 2. **Suppress with justification:** Warnings that are false positives but require a documented
- reason: `// NOLINT(bugprone-narrowing-conversion): intentional truncation for wire format`.
+   reason: `// NOLINT(bugprone-narrowing-conversion): intentional truncation for wire format`.
 3. **Disable at project level:** Warnings that are overwhelmingly false positives for the entire
- codebase (e.g., `cppcoreguidelines-avoid-magic-numbers` in a numerical library). Disable in
- `.clang-tidy`Not per-line.
+   codebase (e.g., `cppcoreguidelines-avoid-magic-numbers` in a numerical library). Disable in
+   `.clang-tidy`Not per-line.
 4. **File-level suppression:** For legacy files that cannot be fixed without a major refactor, use
- `// NOLINTBEGIN` / `// NOLINTEND` blocks.
+   `// NOLINTBEGIN` / `// NOLINTEND` blocks.
 
 ```cpp
 // NOLINTBEGIN(cert-err58-cpp): legacy C API, exceptions not propagated across boundary
@@ -573,11 +576,11 @@ For large projects, clang-tidy can become the bottleneck in the CI pipeline. Und
 Time is spent helps optimize the analysis configuration:
 
 - **Per-file overhead:** Each file requires a full AST parse (~0.5-2 seconds for a typical source
- file). This is unavoidable.
+  file). This is unavoidable.
 - **Check overhead:** Data flow analysis checks (`clang-analyzer-*`) are 3-10x slower than simple
- AST pattern matching checks (`modernize-*`). Enable `clang-analyzer-*` only in a dedicated CI job.
+  AST pattern matching checks (`modernize-*`). Enable `clang-analyzer-*` only in a dedicated CI job.
 - **Header traversal:** If `HeaderFilterRegex` allows analysis of deeply included system headers,
- analysis time can explode. Restrict the filter to project headers.
+  analysis time can explode. Restrict the filter to project headers.
 
 ```bash
 # Profile clang-tidy on a single file
@@ -588,8 +591,8 @@ time clang-tidy -p build/ src/main.cpp --checks='bugprone-*,modernize-*,clang-an
 ```
 
 In practice, splitting analysis into a fast path (`bugprone-*``modernize-*``readability-*`) that
-Runs on every commit and a slow path (`clang-analyzer-*``cppcoreguidelines-pro-bounds-*`) that
-Runs nightly provides the best developer experience.
+Runs on every commit and a slow path (`clang-analyzer-*``cppcoreguidelines-pro-bounds-*`) that Runs
+nightly provides the best developer experience.
 
 ## 14. Clang-Tidy Autofix Infrastructure
 
@@ -610,11 +613,9 @@ clang-tidy -p build/ --checks='modernize-*' --fix-errors src/
 clang-format -i src/**/*.cpp src/**/*.hpp src/**/*.h
 ```
 
-:::warning
-Always run clang-tidy fixes in a separate commit. Review the diff carefully before
+:::warning Always run clang-tidy fixes in a separate commit. Review the diff carefully before
 Merging. Some fixes (e.g., `modernize-use-auto`) can change semantics if the deduced type is not
-What you expected.
-:::
+What you expected. :::
 
 ### Bulk Refactoring with `--fix`
 
@@ -677,12 +678,12 @@ Clang AST.
 Static analysis tools are most effective when integrated into the code review process:
 
 1. **Pre-commit hooks:** Run `clang-tidy --fix` and `clang-format` as a pre-commit hook to catch
- issues before they reach the review.
+   issues before they reach the review.
 2. **CI gate:** Fail the build if clang-tidy reports errors on the changed files.
 3. **Review comments:** clang-tidy warnings appear as review comments on GitHub/GitLab via Codecov
- or similar tools.
+   or similar tools.
 4. **Metrics tracking:** Track the number of clang-tidy warnings over time. A decreasing trend
- indicates improving code quality.
+   indicates improving code quality.
 
 ### Pre-Commit Hook Example
 
@@ -702,19 +703,19 @@ fi
 ## Common Pitfalls
 
 - **Enabling `-*` without understanding what it disables.** This turns off ALL checks, then you
- selectively re-enable. Forgetting to re-enable important checks means they are silently skipped.
+  selectively re-enable. Forgetting to re-enable important checks means they are silently skipped.
 - **Suppressing warnings instead of fixing them.** Every `NOLINT` comment should have a
- justification. Use `// NOLINT(check-name): reason` to document why the suppression exists.
+  justification. Use `// NOLINT(check-name): reason` to document why the suppression exists.
 - **Not pinning clang-tidy version.** Different clang-tidy versions have different check sets. Pin
- the version in CI to avoid surprising new warnings.
+  the version in CI to avoid surprising new warnings.
 - **Ignoring header files.** If `HeaderFilterRegex` is too restrictive, bugs in headers go
- undetected.
+  undetected.
 - **Running analysis without a compilation database.** Without `compile_commands.json`Clang-tidy
- cannot resolve includes, macros, or platform-specific code correctly.
+  cannot resolve includes, macros, or platform-specific code correctly.
 - **Enabling `clang-analyzer-*` in clangd.** The path-sensitive analysis is too expensive for
- real-time feedback. Enable it only in CI or via explicit `run-clang-tidy` invocation.
+  real-time feedback. Enable it only in CI or via explicit `run-clang-tidy` invocation.
 - **Not using `HeaderFilterRegex`.** Without this, clang-tidy may attempt to analyze system headers,
- which can produce false positives and slow down analysis significantly.
+  which can produce false positives and slow down analysis significantly.
 
 ## See Also
 

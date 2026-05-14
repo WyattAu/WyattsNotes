@@ -1,6 +1,8 @@
 ---
 title: Demographic Transition Model
-description: "The DTM stages, critique and limitations, population pyramids, dependency ratios, demographic dividend, and case studies for IB Geography."
+description:
+  'The DTM stages, critique and limitations, population pyramids, dependency ratios, demographic
+  dividend, and case studies for IB Geography.'
 slug: demographic-transition-model
 ---
 
@@ -15,27 +17,27 @@ Of Western Europe and North America.
 
 ### The Five Stages
 
-| Stage | Birth Rate (per 1000) | Death Rate (per 1000) | Natural Increase | Population Growth | Example Countries |
+| Stage | Birth Rate (per 1000) | Death Rate (per 1000)     | Natural Increase               | Population Growth      | Example Countries                                         |
 | ----- | --------------------- | ------------------------- | ------------------------------ | ---------------------- | --------------------------------------------------------- |
-| **1** | High (35--40) | High (35--40) | Near zero or fluctuating | Very slow, stable | Isolated indigenous communities; pre-industrial societies |
-| **2** | High (35--40) | Falling rapidly (15--25) | High (15--25) | Rapid | Afghanistan, Niger, Mali, Chad |
-| **3** | Falling (15--25) | Low (8--12) | Moderate and declining (5--15) | Slowing | India, Brazil, Egypt, Mexico |
-| **4** | Low (8--12) | Low (8--12) | Low or stable (0--5) | Slow or stable | UK, France, USA, Australia |
-| **5** | Very low (6--9) | Rising or stable (10--12) | Negative or near zero | Declining or very slow | Japan, Germany, Italy, South Korea |
+| **1** | High (35--40)         | High (35--40)             | Near zero or fluctuating       | Very slow, stable      | Isolated indigenous communities; pre-industrial societies |
+| **2** | High (35--40)         | Falling rapidly (15--25)  | High (15--25)                  | Rapid                  | Afghanistan, Niger, Mali, Chad                            |
+| **3** | Falling (15--25)      | Low (8--12)               | Moderate and declining (5--15) | Slowing                | India, Brazil, Egypt, Mexico                              |
+| **4** | Low (8--12)           | Low (8--12)               | Low or stable (0--5)           | Slow or stable         | UK, France, USA, Australia                                |
+| **5** | Very low (6--9)       | Rising or stable (10--12) | Negative or near zero          | Declining or very slow | Japan, Germany, Italy, South Korea                        |
 
 ### Mechanisms Driving Each Transition
 
-**Stage 1 to Stage 2 (mortality decline).** The transition begins when death rates fall, 
-Due to improvements in public health that precede economic modernisation:
+**Stage 1 to Stage 2 (mortality decline).** The transition begins when death rates fall, Due to
+improvements in public health that precede economic modernisation:
 
 - **Improved sanitation:** clean water supplies, sewage systems, and improved hygiene reduce deaths
- from waterborne diseases (cholera, dysentery, typhoid).
+  from waterborne diseases (cholera, dysentery, typhoid).
 - **Vaccination programmes:** immunisation against smallpox, measles, diphtheria, polio, and other
- infectious diseases reduces child mortality.
+  infectious diseases reduces child mortality.
 - **Better nutrition:** improved food production and distribution reduce deaths from malnutrition
- and increase resistance to disease.
+  and increase resistance to disease.
 - **Medical advances:** antibiotics, antiseptic surgery, and maternal healthcare reduce deaths from
- infection and childbirth.
+  infection and childbirth.
 
 Crucially, birth rates remain high during this transition because the social and economic conditions
 That sustain high fertility (value of children as agricultural labour, high infant mortality
@@ -47,33 +49,33 @@ Persistently high birth rates produces rapid population growth.
 Conditions sustaining high fertility erode:
 
 - **Female education:** each additional year of female education is associated with a measurable
- reduction in fertility. Educated women tend to marry later, have greater knowledge of and access
- to contraception, and have wider economic opportunities that increase the opportunity cost of
- childbearing.
+  reduction in fertility. Educated women tend to marry later, have greater knowledge of and access
+  to contraception, and have wider economic opportunities that increase the opportunity cost of
+  childbearing.
 - **Urbanisation:** in urban areas, children are an economic cost (housing, education, food) rather
- than a source of labour, reducing the economic incentive for large families.
+  than a source of labour, reducing the economic incentive for large families.
 - **Access to family planning:** the widespread availability and cultural acceptance of
- contraception (oral contraceptive pill, IUDs, sterilisation, condoms) enables couples to limit
- family size.
+  contraception (oral contraceptive pill, IUDs, sterilisation, condoms) enables couples to limit
+  family size.
 - **Declining infant mortality:** as parents become more confident that their children will survive
- to adulthood, they tend to have fewer children (the "replacement effect").
+  to adulthood, they tend to have fewer children (the "replacement effect").
 - **Employment structure shift:** the decline of agriculture and growth of manufacturing and
- services reduce the economic value of child labour.
+  services reduce the economic value of child labour.
 
 **Stage 4 to Stage 5 (sub-replacement fertility).** In some highly developed countries, fertility
 Falls below replacement level (approximately 2.1 children per woman), and the population ages and
 May begin to decline. Factors driving very low fertility include:
 
 - **High cost of raising children:** housing costs, childcare, education, and extracurricular
- activities create a significant financial burden.
+  activities create a significant financial burden.
 - **Opportunity cost of childbearing:** for highly educated women, career interruptions associated
- with childbearing represent a substantial earnings loss.
+  with childbearing represent a substantial earnings loss.
 - **Cultural shifts:** individualism, secularisation, changing gender roles, and the normalisation
- of childlessness.
+  of childlessness.
 - **Delayed family formation:** later marriage and later first childbirth reduce the window for
- childbearing and the number of children born.
+  childbearing and the number of children born.
 - **Work-life balance:** demanding work cultures with long hours (particularly in East Asia) limit
- the time available for parenting.
+  the time available for parenting.
 
 ## Critique and Limitations
 
@@ -83,15 +85,15 @@ The DTM was developed from the historical experience of Western Europe and North
 That all societies will follow the same path. This assumption is problematic because:
 
 - The conditions that drove the European transition (industrialisation, urbanisation, the
- Enlightenment, the development of the welfare state) may not be replicated in other cultural and
- institutional contexts.
+  Enlightenment, the development of the welfare state) may not be replicated in other cultural and
+  institutional contexts.
 - Some countries have achieved rapid fertility decline through mechanisms not anticipated by the
- model. China's one-child policy (1979--2015) produced a dramatic fertility reduction from a TFR of
- approximately 2.7 to 1.6 within a decade, driven by state coercion rather than the gradual
- socio-economic changes envisaged by the model.
+  model. China's one-child policy (1979--2015) produced a dramatic fertility reduction from a TFR of
+  approximately 2.7 to 1.6 within a decade, driven by state coercion rather than the gradual
+  socio-economic changes envisaged by the model.
 - Some countries (e.g., Iran under the Islamic Republic from 1989 to 2012) achieved rapid fertility
- decline through state-sponsored family planning programmes combined with female education,
- challenging the assumption that economic modernisation is a prerequisite.
+  decline through state-sponsored family planning programmes combined with female education,
+  challenging the assumption that economic modernisation is a prerequisite.
 
 ### Ignores Migration
 
@@ -106,15 +108,15 @@ The model implies a unidirectional, sequential progression through stages. In re
 Can be non-linear:
 
 - **HIV/AIDS:** the HIV/AIDS epidemic in southern Africa caused mortality spikes in the 1990s and
- 2000s, reversing the mortality transition in countries such as Botswana, Zimbabwe, and South
- Africa. Life expectancy in Botswana fell from 65 years (1990) to 49 years (2002) before
- recovering.
+  2000s, reversing the mortality transition in countries such as Botswana, Zimbabwe, and South
+  Africa. Life expectancy in Botswana fell from 65 years (1990) to 49 years (2002) before
+  recovering.
 - **Post-Soviet fertility collapse:** the dissolution of the Soviet Union was accompanied by severe
- economic disruption, and TFR fell below 1.3 in several countries (Russia, Ukraine, Belarus) in the
- late 1990s, partly due to economic uncertainty and delayed childbearing.
+  economic disruption, and TFR fell below 1.3 in several countries (Russia, Ukraine, Belarus) in the
+  late 1990s, partly due to economic uncertainty and delayed childbearing.
 - **Fertility stalls:** some countries have experienced prolonged periods of stagnation in fertility
- decline. Kenya's TFR fell from 8.1 (1978) to 4.7 (1998) but then stalled at approximately 4.5--5.0
- for a decade before resuming its decline to 3.4 (2023).
+  decline. Kenya's TFR fell from 8.1 (1978) to 4.7 (1998) but then stalled at approximately 4.5--5.0
+  for a decade before resuming its decline to 3.4 (2023).
 
 ### The "Stage 5" Debate
 
@@ -167,15 +169,15 @@ Numbers or percentages of the total population.
 
 $$\mathrm{TDR} = \frac{P_{0\mathrm{--}14} + P_{65+}}{P_{15\mathrm{--}64}} \times 100$$
 
-Where $P_{0\mathrm{--}14}$ is the population aged 0--14, $P_{65+}$ is the population aged 65 and over,
-And $P_{15\mathrm{--}64}$ is the working-age population. The youth dependency ratio uses only
+Where $P_{0\mathrm{--}14}$ is the population aged 0--14, $P_{65+}$ is the population aged 65 and
+over, And $P_{15\mathrm{--}64}$ is the working-age population. The youth dependency ratio uses only
 $P_{0\mathrm{--}14}$ in the numerator; the elderly dependency ratio uses only $P_{65+}$.
 
 - **High youth dependency** (common in Stage 2): the large child population strains education
- systems, healthcare, and household budgets. Niger's youth dependency ratio exceeds 90%.
+  systems, healthcare, and household budgets. Niger's youth dependency ratio exceeds 90%.
 - **High elderly dependency** (common in Stage 5): the growing elderly population strains pension
- systems, healthcare, and social services. Japan's elderly dependency ratio exceeds 50% (more than
- one elderly person for every two working-age people).
+  systems, healthcare, and social services. Japan's elderly dependency ratio exceeds 50% (more than
+  one elderly person for every two working-age people).
 
 ## The Demographic Dividend
 
@@ -192,11 +194,11 @@ Driving higher per capita income growth.
 The demographic dividend operates through several channels:
 
 1. **Labour supply effect:** a growing working-age population increases the labour force,
- potentially boosting output if employment opportunities are available.
+   potentially boosting output if employment opportunities are available.
 2. **Savings effect:** with fewer dependent children, households can save a higher proportion of
- income, increasing the pool of capital available for investment.
+   income, increasing the pool of capital available for investment.
 3. **Human capital effect:** with fewer children, families can invest more per child in education
- and health, producing a more skilled and productive workforce.
+   and health, producing a more skilled and productive workforce.
 
 ### Conditions for Realising the Dividend
 
@@ -204,13 +206,13 @@ The demographic dividend is not automatic. It is realised only if the growing wo
 Is productively employed, which requires:
 
 - **Investment in education and skills:** to ensure the workforce has the human capital demanded by
- a modernising economy.
+  a modernising economy.
 - **Labour market creation:** sufficient employment opportunities in productive sectors
- (manufacturing, services, not just informal employment).
+  (manufacturing, services, not just informal employment).
 - **Good governance and institutions:** sound macroeconomic policy, rule of law, and effective
- public administration.
+  public administration.
 - **Gender equality:** enabling women to participate in the labour force, which doubles the
- effective labour supply.
+  effective labour supply.
 
 ### Case Study: East Asia
 

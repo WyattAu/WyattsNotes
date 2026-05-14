@@ -1,6 +1,8 @@
 ---
 title: Work, Energy, and Power
-description: "Work, Energy, and Power — Work (CED Unit 4); Definition; Why the Dot Product; Work by a Variable Force (AP Physics C), ensuring thorough understanding."
+description:
+  'Work, Energy, and Power — Work (CED Unit 4); Definition; Why the Dot Product; Work by a Variable
+  Force (AP Physics C), ensuring thorough understanding.'
 date: 2026-04-14
 tags:
   - Physics
@@ -9,6 +11,7 @@ categories:
   - Physics
 slug: work-energy-power
 ---
+
 ## Work (CED Unit 4)
 
 Work is the energy transferred to or from an object by a force acting through a displacement.
@@ -120,8 +123,8 @@ Problems.
 
 :::info[Example]
 
-A $2.0 \mathrm{ kg{}$ block initially at rest is pushed by a $12 \mathrm{ N{}$ horizontal force across
-A frictionless surface for $5.0 \mathrm{ m{}$. Find its final speed.
+A $2.0 \mathrm{ kg{}$ block initially at rest is pushed by a $12 \mathrm{ N{}$ horizontal force
+across A frictionless surface for $5.0 \mathrm{ m{}$. Find its final speed.
 
 $$
 W_{\mathrm{net{}} = 12 \times 5.0 = 60 \mathrm{ J{}
@@ -170,7 +173,7 @@ Negative total energy; an unbound trajectory has positive total energy. The boun
 ### Conservative vs Non-Conservative Forces
 
 - **Conservative force:** Work done is path-independent; work around a closed loop is zero.
- Examples: gravity, spring force, electrostatic force.
+  Examples: gravity, spring force, electrostatic force.
 - **Non-conservative force:** Work depends on the path. Examples: friction, air resistance, tension.
 
 ### Mathematical Criterion for Conservative Forces
@@ -182,8 +185,8 @@ $$
 $$
 
 For every closed path. Equivalently, the curl of $\vec{F}$ is zero: $\nabla \times \vec{F} = 0$. For
-One-dimensional motion, a force is conservative if and only if only on position (not on
-Velocity or time): $F = F(x)$.
+One-dimensional motion, a force is conservative if and only if only on position (not on Velocity or
+time): $F = F(x)$.
 
 ## Conservation of Energy (CED Unit 4)
 
@@ -217,7 +220,8 @@ A roller coaster car starts from rest at height $h = 20 \mathrm{ m{}$Goes throug
 $6.0 \mathrm{ m{}$And reaches a second hill of height $12 \mathrm{ m{}$. Find the speed at the top
 Of the loop (neglecting friction).
 
-Using conservation of energy from the start to the top of the loop (height $= 2R = 12 \mathrm{ m{}$):
+Using conservation of energy from the start to the top of the loop (height
+$= 2R = 12 \mathrm{ m{}$):
 
 $$
 Mgh_i = \frac{1}{2}mv_f^2 + mgh_f
@@ -357,54 +361,54 @@ Mass.
 ## Common Pitfalls
 
 1. **Forgetting that work is a scalar.** It can be positive, negative, or zero depending on the
- angle between force and displacement.
+   angle between force and displacement.
 2. **Using the wrong height for gravitational PE.** $h$ is measured from the chosen reference level,
- which can be set anywhere convenient.
+   which can be set anywhere convenient.
 3. **Confusing force and power.** Power is force times velocity, not just force.
 4. **Applying conservation of mechanical energy when non-conservative forces are present.** Use
- $W_{\mathrm{nc{}} = \Delta E$ instead.
+   $W_{\mathrm{nc{}} = \Delta E$ instead.
 5. **Forgetting the sign convention.** Work done by gravity is $W_g = -mg\Delta h$ (positive when
- the object moves down).
+   the object moves down).
 6. **Using $U = mgh$ far from Earth's surface.** Use $U = -\frac{GMm}{r}$ instead.
 7. **Incorrectly computing power as force divided by time.** Power is work divided by time, or force
- times velocity.
+   times velocity.
 8. **Confusing the total energy with the mechanical energy.** Total energy includes thermal energy,
- sound energy, and all other forms. Mechanical energy ($K + U$) is conserved only when
- non-conservative forces do no work.
+   sound energy, and all other forms. Mechanical energy ($K + U$) is conserved only when
+   non-conservative forces do no work.
 
 ## Practice Questions
 
-1. A $5.0 \mathrm{ kg{}$ block slides $3.0 \mathrm{ m{}$ down a $25^\circ$ frictionless incline. Find
- the work done by gravity and the final speed.
+1. A $5.0 \mathrm{ kg{}$ block slides $3.0 \mathrm{ m{}$ down a $25^\circ$ frictionless incline.
+   Find the work done by gravity and the final speed.
 
 2. A spring with $k = 500 \mathrm{ N/m{}$ is compressed $0.10 \mathrm{ m{}$ and launches a
- $0.50 \mathrm{ kg{}$ block on a frictionless surface. Find the maximum speed of the block and the
- maximum height it reaches on a frictionless incline.
+   $0.50 \mathrm{ kg{}$ block on a frictionless surface. Find the maximum speed of the block and the
+   maximum height it reaches on a frictionless incline.
 
 3. A $1000 \mathrm{ kg{}$ elevator starts from rest and accelerates upward at $2.0 \mathrm{ m/s{}^2$
- for $3.0 \mathrm{ s{}$. Find the power output of the motor at $t = 3.0 \mathrm{ s{}$.
+   for $3.0 \mathrm{ s{}$. Find the power output of the motor at $t = 3.0 \mathrm{ s{}$.
 
 4. A pendulum of length $1.5 \mathrm{ m{}$ is released from horizontal. Find its speed at the lowest
- point (neglect air resistance).
+   point (neglect air resistance).
 
-5. A $0.50 \mathrm{ kg{}$ ball is thrown straight up with speed $15 \mathrm{ m/s{}$. If air resistance
- does $-5.0 \mathrm{ J{}$ of work, find the maximum height.
+5. A $0.50 \mathrm{ kg{}$ ball is thrown straight up with speed $15 \mathrm{ m/s{}$. If air
+   resistance does $-5.0 \mathrm{ J{}$ of work, find the maximum height.
 
 6. A car of mass $1500 \mathrm{ kg{}$ travels at constant speed $20 \mathrm{ m/s{}$ up a $10^\circ$
- incline. If the engine produces $50 \mathrm{ kW{}$Find the frictional force.
+   incline. If the engine produces $50 \mathrm{ kW{}$Find the frictional force.
 
 7. A satellite in circular orbit at altitude $500 \mathrm{ km{}$ needs to escape Earth. What
- additional speed must it acquire?
+   additional speed must it acquire?
 
 8. Derive the relationship $F = -\frac{dU}{dx}$ from the work-energy theorem for one-dimensional
- motion.
+   motion.
 
 9. A force $F(x) = 3x^2 - 2x$ (in N, with $x$ in m) acts on a $2.0 \mathrm{ kg{}$ object. Find the
- work done as the object moves from $x = 0$ to $x = 3.0 \mathrm{ m{}$And the speed at $x = 3.0$ m
- if the object started from rest.
+   work done as the object moves from $x = 0$ to $x = 3.0 \mathrm{ m{}$And the speed at $x = 3.0$ m
+   if the object started from rest.
 
 10. A potential energy function is given by $U(x) = x^4 - 2x^2$ (in J, with $x$ in m). Find all
- equilibrium positions and classify each as stable, unstable, or neutral.
+    equilibrium positions and classify each as stable, unstable, or neutral.
 
 ## 11. Work by a Variable Force: Detailed Examples (AP Physics C)
 
@@ -435,8 +439,8 @@ $$v_f = \sqrt{\frac{2W}{m}} = \sqrt{\frac{72}{2}} = \sqrt{36} = 6 \mathrm{ m/s{}
 
 ### Worked Example: Block-Spring System on a Frictionless Surface
 
-A $3 \mathrm{ kg{}$ block slides on a frictionless surface at $4 \mathrm{ m/s{}$ and strikes a spring
-With $k = 500 \mathrm{ N/m{}$. Find the maximum compression of the spring.
+A $3 \mathrm{ kg{}$ block slides on a frictionless surface at $4 \mathrm{ m/s{}$ and strikes a
+spring With $k = 500 \mathrm{ N/m{}$. Find the maximum compression of the spring.
 
 At maximum compression, all kinetic energy has been converted to elastic potential energy:
 
@@ -501,8 +505,8 @@ $$P(t) = \vec{F}(t) \cdot \vec{v}(t)$$
 
 ### Worked Example: Power as a Function of Time
 
-A force $F(t) = 6t$ N acts on a $2 \mathrm{ kg{}$ object initially at rest. Find the power at $t = 3$
-S.
+A force $F(t) = 6t$ N acts on a $2 \mathrm{ kg{}$ object initially at rest. Find the power at
+$t = 3$ S.
 
 $$a = \frac{F}{m} = 3t$$
 
@@ -524,54 +528,54 @@ Difficulty of climbing even a modest gradient.
 
 ## 15. Summary Table: Energy Forms and Equations
 
-| Energy Type | Formula | Key Notes |
+| Energy Type                     | Formula                    | Key Notes                                       |
 | ------------------------------- | -------------------------- | ----------------------------------------------- |
-| Kinetic (translational) | $K = \frac{1}{2}mv^2$ | Always positive; depends on speed, not velocity |
-| Kinetic (rotational) | $K = \frac{1}{2}I\omega^2$ | Depends on moment of inertia |
-| Gravitational PE (near surface) | $U_g = mgh$ | $h$ measured from arbitrary reference |
-| Gravitational PE (general) | $U = -GMm/r$ | Zero at infinity; negative for bound systems |
-| Elastic PE | $U_s = \frac{1}{2}kx^2$ | Requires Hooke's law to hold |
-| Total mechanical | $E = K + U$ | Conserved when only conservative forces act |
-| Work by non-conservative forces | $W_{nc} = \Delta E$ | Equals change in total mechanical energy |
+| Kinetic (translational)         | $K = \frac{1}{2}mv^2$      | Always positive; depends on speed, not velocity |
+| Kinetic (rotational)            | $K = \frac{1}{2}I\omega^2$ | Depends on moment of inertia                    |
+| Gravitational PE (near surface) | $U_g = mgh$                | $h$ measured from arbitrary reference           |
+| Gravitational PE (general)      | $U = -GMm/r$               | Zero at infinity; negative for bound systems    |
+| Elastic PE                      | $U_s = \frac{1}{2}kx^2$    | Requires Hooke's law to hold                    |
+| Total mechanical                | $E = K + U$                | Conserved when only conservative forces act     |
+| Work by non-conservative forces | $W_{nc} = \Delta E$        | Equals change in total mechanical energy        |
 
 ## 16. Common Pitfalls: Extended
 
 9. **Using the wrong sign for work done by gravity.** When an object moves down, gravity does
- positive work ($W_g = +mg\Delta h$Where $\Delta h$ is negative if up is positive). When an
- object moves up, gravity does negative work. Be careful with sign conventions.
+   positive work ($W_g = +mg\Delta h$Where $\Delta h$ is negative if up is positive). When an object
+   moves up, gravity does negative work. Be careful with sign conventions.
 
 10. **Confusing the reference level for gravitational PE.** The choice of $h = 0$ is arbitrary. What
- matters is the _change_ in height, $\Delta h$Not the absolute height.
+    matters is the _change_ in height, $\Delta h$Not the absolute height.
 
 11. **Applying $U = mgh$ when the height change is a significant fraction of the distance from
- Earth's centre.** Use $U = -GMm/r$ for large altitude changes.
+    Earth's centre.** Use $U = -GMm/r$ for large altitude changes.
 
 12. **Forgetting that power is the time derivative of work, not force.** $P = dW/dt = Fv$. Power is
- not $F/t$ or $F/t^2$.
+    not $F/t$ or $F/t^2$.
 
 13. **Assuming the force is constant when using $W = Fd\cos\theta$.** If the force varies with
- position, you must integrate: $W = \int F(x)\, dx$.
+    position, you must integrate: $W = \int F(x)\, dx$.
 
 ## Practice Questions (Additional)
 
 11. A $1.5 \mathrm{ kg{}$ object slides from rest down a curved frictionless ramp of height
- $3 \mathrm{ m{}$ and enters a rough horizontal section with $\mu_k = 0.4$. How far does it slide
- on the rough section before stopping?
+    $3 \mathrm{ m{}$ and enters a rough horizontal section with $\mu_k = 0.4$. How far does it slide
+    on the rough section before stopping?
 
 12. A spring with $k = 800 \mathrm{ N/m{}$ is compressed $0.10 \mathrm{ m{}$ and launches a
- $0.2 \mathrm{ kg{}$ ball vertically. Find the maximum height reached (a) on Earth and (b) on the
- Moon ($g = 1.62 \mathrm{ m/s{}^2$).
+    $0.2 \mathrm{ kg{}$ ball vertically. Find the maximum height reached (a) on Earth and (b) on the
+    Moon ($g = 1.62 \mathrm{ m/s{}^2$).
 
 13. A force $F(x) = -kx + bx^3$ acts on a particle. Find the potential energy function $U(x)$ and
- identify the equilibrium positions.
+    identify the equilibrium positions.
 
 14. A $50 \mathrm{ kg{}$ child on a swing is pushed to a height $0.8 \mathrm{ m{}$ above the lowest
- point. Find the speed at the lowest point and the speed when the swing is $0.4 \mathrm{ m{}$
- above the lowest point.
+    point. Find the speed at the lowest point and the speed when the swing is $0.4 \mathrm{ m{}$
+    above the lowest point.
 
 15. The potential energy of a particle is $U(r) = \frac{A}{r} - \frac{B}{r^2}$ where $A$ and $B$ are
- positive constants. Find (a) the force, (b) the equilibrium position, and (c) whether the
- equilibrium is stable or unstable.
+    positive constants. Find (a) the force, (b) the equilibrium position, and (c) whether the
+    equilibrium is stable or unstable.
 
 ## Extended Worked Examples
 
@@ -618,17 +622,14 @@ $$F_{\mathrm{total resist{}}(30) = 1440 + 200 = 1640 \mathrm{ N{}$$
 The car cannot maintain $30 \mathrm{ m/s{}$ with the same driving force -- air resistance increases
 Too rapidly.
 
-:::info
-Info
-Air density, $C_D$ is the drag coefficient, and $A$ is the cross-sectional area. This quadratic
-Dependence on velocity is why fuel consumption increases dramatically at high speeds.
-:::
+:::info Info Air density, $C_D$ is the drag coefficient, and $A$ is the cross-sectional area. This
+quadratic Dependence on velocity is why fuel consumption increases dramatically at high speeds. :::
 
 ### Example 17: Energy in a Mass-Spring System with Gravity
 
 A $2 \mathrm{ kg{}$ block hangs from a vertical spring with $k = 200 \mathrm{ N/m{}$. The block is
-Pulled down $0.15 \mathrm{ m{}$ from equilibrium and released. Find the maximum speed and the maximum
-Height above the release point.
+Pulled down $0.15 \mathrm{ m{}$ from equilibrium and released. Find the maximum speed and the
+maximum Height above the release point.
 
 **Step 1: Find the equilibrium extension**
 
@@ -654,13 +655,14 @@ $$v_{\max} = A\sqrt{\frac{k}{m}} = 0.15 \times \sqrt{\frac{200}{2}} = 0.15 \time
 **Step 4: Maximum height above release point**
 
 The block oscillates symmetrically about equilibrium, so it rises $0.15 \mathrm{ m{}$ above
-Equilibrium to $0.15 \mathrm{ m{}$ above equilibrium, which is $0.15 + 0.15 = 0.30 \mathrm{ m{}$ above
-The lowest point (the release point).
+Equilibrium to $0.15 \mathrm{ m{}$ above equilibrium, which is $0.15 + 0.15 = 0.30 \mathrm{ m{}$
+above The lowest point (the release point).
 
 ### Example 18: Work Done Against a Non-Conservative Force
 
 A $5 \mathrm{ kg{}$ block starts from rest at the top of a rough curved ramp of height
-$3 \mathrm{ m{}$. At the bottom, its speed is $6 \mathrm{ m/s{}$. Calculate the work done by friction.
+$3 \mathrm{ m{}$. At the bottom, its speed is $6 \mathrm{ m/s{}$. Calculate the work done by
+friction.
 
 **Step 1: Energy at the top**
 
@@ -715,27 +717,28 @@ Ensure you are consistent throughout the problem.
 ## Additional Practice Problems
 
 16. A $1200 \mathrm{ kg{}$ car accelerates from $0$ to $30 \mathrm{ m/s{}$ in $8 \mathrm{ s{}$.
- Calculate (a) the average power developed, (b) the instantaneous power at $t = 4 \mathrm{ s{}$
- assuming constant acceleration, and (c) the total distance covered.
+    Calculate (a) the average power developed, (b) the instantaneous power at $t = 4 \mathrm{ s{}$
+    assuming constant acceleration, and (c) the total distance covered.
 
-17. A $0.5 \mathrm{ kg{}$ ball is dropped from a height of $20 \mathrm{ m{}$. On each bounce, it loses
- $20\%$ of its kinetic energy. Calculate the height after the first bounce, the velocity just
- before the second bounce, and the total vertical distance travelled before the ball comes to
- rest.
+17. A $0.5 \mathrm{ kg{}$ ball is dropped from a height of $20 \mathrm{ m{}$. On each bounce, it
+    loses $20\%$ of its kinetic energy. Calculate the height after the first bounce, the velocity
+    just before the second bounce, and the total vertical distance travelled before the ball comes
+    to rest.
 
-18. A force $F = 10 + 3x$ (N) acts on a $4 \mathrm{ kg{}$ object from $x = 0$ to $x = 5 \mathrm{ m{}$.
- Calculate the work done, the final speed if starting from rest, and the power delivered at
- $x = 3 \mathrm{ m{}$ if the object is moving at $4 \mathrm{ m/s{}$ at that point.
+18. A force $F = 10 + 3x$ (N) acts on a $4 \mathrm{ kg{}$ object from $x = 0$ to
+    $x = 5 \mathrm{ m{}$. Calculate the work done, the final speed if starting from rest, and the
+    power delivered at $x = 3 \mathrm{ m{}$ if the object is moving at $4 \mathrm{ m/s{}$ at that
+    point.
 
 19. A roller coaster car of mass $500 \mathrm{ kg{}$ starts from rest at point A, height
- $30 \mathrm{ m{}$. It goes through a loop of radius $10 \mathrm{ m{}$ and then up a ramp to point
- B. If $80\%$ of the initial PE is converted to KE at the top of the loop, calculate the normal
- force at the top of the loop and the maximum possible height of point B.
+    $30 \mathrm{ m{}$. It goes through a loop of radius $10 \mathrm{ m{}$ and then up a ramp to
+    point B. If $80\%$ of the initial PE is converted to KE at the top of the loop, calculate the
+    normal force at the top of the loop and the maximum possible height of point B.
 
 20. Two springs with $k_1 = 200 \mathrm{ N/m{}$ and $k_2 = 300 \mathrm{ N/m{}$ are connected (a) in
- series and (b) in parallel. For each arrangement, find the effective spring constant, the period
- of oscillation for a $2 \mathrm{ kg{}$ mass, and the energy stored when compressed
- $0.1 \mathrm{ m{}$.
+    series and (b) in parallel. For each arrangement, find the effective spring constant, the period
+    of oscillation for a $2 \mathrm{ kg{}$ mass, and the energy stored when compressed
+    $0.1 \mathrm{ m{}$.
 
 ## Practice Problems
 
@@ -763,8 +766,8 @@ $v = \sqrt{2W/m} = \sqrt{2 \times 27/3} = \sqrt{18} = 4.24 \mathrm{ m/s{}$.
 <summary>Question 2: Conservation of energy with spring</summary>
 
 A $0.5 \mathrm{ kg{}$ block slides on a frictionless surface and collides with a horizontal spring
-($k = 200 \mathrm{ N/m{}$). The block compresses the spring by $0.15 \mathrm{ m{}$ before momentarily
-Stopping. What was the speed of the block just before it hit the spring?
+($k = 200 \mathrm{ N/m{}$). The block compresses the spring by $0.15 \mathrm{ m{}$ before
+momentarily Stopping. What was the speed of the block just before it hit the spring?
 
 </details>
 

@@ -1,22 +1,26 @@
 ---
-title: "Organic Chemistry -- Diagnostic Tests"
-description: "Challenging DSE chemistry diagnostic questions on Organic Chemistry -- Diagnostic Tests. With full worked solutions and examiner commentary."
+title: 'Organic Chemistry -- Diagnostic Tests'
+description:
+  'Challenging DSE chemistry diagnostic questions on Organic Chemistry -- Diagnostic Tests. With
+  full worked solutions and examiner commentary.'
 slug: diag-organic-chemistry
 hide_table_of_contents: true
 ---
+
 # DSE Chemistry Diagnostic: Organic Chemistry
 
 ## Unit Test 1: Functional Group Identification from Tests
 
 **Question**
 
-An unknown organic compound $X$ has the molecular formula $C_{3}H_{6}O_{2}$. The following test results were obtained:
+An unknown organic compound $X$ has the molecular formula $C_{3}H_{6}O_{2}$. The following test
+results were obtained:
 
-| Test | Observation |
-|------|------------|
-| Add solid $Na_{2}CO_{3}$ | Effervescence observed |
-| Add Fehling's solution and heat | No change |
-| Add acidified $K_{2}Cr_{2}O_{7}$ and warm | Orange to green |
+| Test                                                                       | Observation            |
+| -------------------------------------------------------------------------- | ---------------------- |
+| Add solid $Na_{2}CO_{3}$                                                   | Effervescence observed |
+| Add Fehling's solution and heat                                            | No change              |
+| Add acidified $K_{2}Cr_{2}O_{7}$ and warm                                  | Orange to green        |
 | Sweet-smelling compound obtained on heating with ethanol and $H_{2}SO_{4}$ |
 
 (a) Identify the functional group(s) present in $X$. [3 marks]
@@ -29,15 +33,22 @@ An unknown organic compound $X$ has the molecular formula $C_{3}H_{6}O_{2}$. The
 
 **Worked Solution**
 
-(a) - **Effervescence with $Na_{2}CO_{3}$**: $X$ is acidic, producing $CO_{2}$. This indicates a **carboxylic acid** ($-COOH$) group.
+(a) - **Effervescence with $Na_{2}CO_{3}$**: $X$ is acidic, producing $CO_{2}$. This indicates a
+**carboxylic acid** ($-COOH$) group.
 
-- **No reaction with Fehling's solution**: $X$ does **not** contain an aldehyde ($-CHO$) group. (Fehling's solution is reduced by aldehydes, giving a brick-red precipitate.)
+- **No reaction with Fehling's solution**: $X$ does **not** contain an aldehyde ($-CHO$) group.
+  (Fehling's solution is reduced by aldehydes, giving a brick-red precipitate.)
 
-- **Orange to green with $K_{2}Cr_{2}O_{7}$**: $X$ is oxidised, but since we already know it has a $-COOH$ group (which cannot be further oxidised by this reagent), the colour change is likely due to an **alcohol** group also being present. However, the molecular formula is $C_{3}H_{6}O_{2}$Which accounts for exactly one $-COOH$ group ($C_{2}H_{3}O_{2}$) plus one additional carbon ($CH_{3}$). The only structure is $CH_{3}CH_{2}COOH$ (propanoic acid), which has no alcohol group.
+- **Orange to green with $K_{2}Cr_{2}O_{7}$**: $X$ is oxidised, but since we already know it has a
+  $-COOH$ group (which cannot be further oxidised by this reagent), the colour change is likely due
+  to an **alcohol** group also being present. However, the molecular formula is
+  $C_{3}H_{6}O_{2}$Which accounts for exactly one $-COOH$ group ($C_{2}H_{3}O_{2}$) plus one
+  additional carbon ($CH_{3}$). The only structure is $CH_{3}CH_{2}COOH$ (propanoic acid), which has
+  no alcohol group.
 
-**Note:** $CH_{3}CH_{2}COOH$ would NOT give orange-to-green with $K_{2}Cr_{2}O_{7}$ since
-Carboxylic acids are not oxidised by this reagent. However, the $Na_{2}CO_{3}$ result is definitive
-For carboxylic acid. No other $C_{3}H_{6}O_{2}$ structure (e.g., hydroxypropanal) would react with
+**Note:** $CH_{3}CH_{2}COOH$ would NOT give orange-to-green with $K_{2}Cr_{2}O_{7}$ since Carboxylic
+acids are not oxidised by this reagent. However, the $Na_{2}CO_{3}$ result is definitive For
+carboxylic acid. No other $C_{3}H_{6}O_{2}$ structure (e.g., hydroxypropanal) would react with
 $Na_{2}CO_{3}$. The orange-to-green result may be due to a slight impurity, or the question is
 Designed to test whether students recognise that carboxylic acids are the endpoint of oxidation.
 Given the $Na_{2}CO_{3}$ result, $X$ must be propanoic acid.
@@ -58,11 +69,13 @@ Consider the reaction of 2-bromo-2-methylpropane with aqueous sodium hydroxide:
 
 $$(CH_{3})_{3}CBr + NaOH(aq) \rightarrow (CH_{3})_{3}COH + NaBr$$
 
-(a) State the type of mechanism for this reaction and explain why this mechanism is favoured for tertiary halogenoalkanes. [3 marks]
+(a) State the type of mechanism for this reaction and explain why this mechanism is favoured for
+tertiary halogenoalkanes. [3 marks]
 
 (b) Outline the mechanism, showing the movement of electrons using curly arrows. [3 marks]
 
-(c) Explain why this reaction is first order with respect to the halogenoalkane and zero order with respect to NaOH. [2 marks]
+(c) Explain why this reaction is first order with respect to the halogenoalkane and zero order with
+respect to NaOH. [2 marks]
 
 ---
 
@@ -71,13 +84,18 @@ $$(CH_{3})_{3}CBr + NaOH(aq) \rightarrow (CH_{3})_{3}COH + NaBr$$
 (a) The mechanism is **$S_{N}1$ (unimolecular nucleophilic substitution)**.
 
 Tertiary halogenoalkanes favour $S_{N}1$ because:
-1. The three alkyl groups on the carbon bearing the halogen **stabilise the carbocation intermediate** through electron-donating inductive effects and hyperconjugation.
-2. Steric hindrance from the three bulky alkyl groups makes it difficult for the nucleophile ($OH^{-}$) to approach the carbon in a single step ($S_{N}2$).
-3. The formation of a stable tertiary carbocation lowers the activation energy for the rate-determining step.
+
+1. The three alkyl groups on the carbon bearing the halogen **stabilise the carbocation
+   intermediate** through electron-donating inductive effects and hyperconjugation.
+2. Steric hindrance from the three bulky alkyl groups makes it difficult for the nucleophile
+   ($OH^{-}$) to approach the carbon in a single step ($S_{N}2$).
+3. The formation of a stable tertiary carbocation lowers the activation energy for the
+   rate-determining step.
 
 (b) **Step 1 (slow, rate-determining)**: Heterolytic fission of the $C-Br$ bond.
 
-The $C-Br$ bond breaks, with both electrons going to the bromine atom. A tertiary carbocation intermediate is formed.
+The $C-Br$ bond breaks, with both electrons going to the bromine atom. A tertiary carbocation
+intermediate is formed.
 
 $$(CH_{3})_{3}C-Br \rightarrow (CH_{3})_{3}C^{+} + Br^{-}$$
 
@@ -91,11 +109,13 @@ $$(CH_{3})_{3}C^{+} + OH^{-} \rightarrow (CH_{3})_{3}COH$$
 
 (Curly arrow from the lone pair on $O$ of $OH^{-}$ to the carbocation carbon.)
 
-(c) The rate-determining step (step 1) involves **only the halogenoalkane** molecule. The $OH^{-}$ is not involved until the fast second step. Therefore:
+(c) The rate-determining step (step 1) involves **only the halogenoalkane** molecule. The $OH^{-}$
+is not involved until the fast second step. Therefore:
 
 $$\text{Rate} = k[(CH_{3})_{3}CBr]$$
 
-The reaction is **first order** with respect to the halogenoalkane and **zero order** with respect to NaOH (or $OH^{-}$).
+The reaction is **first order** with respect to the halogenoalkane and **zero order** with respect
+to NaOH (or $OH^{-}$).
 
 ---
 
@@ -107,7 +127,8 @@ The molecular formula $C_{4}H_{8}$ can give rise to multiple isomers.
 
 (a) Draw **all structural isomers** of $C_{4}H_{8}$ (including cyclic isomers). Name each. [4 marks]
 
-(b) Which of these isomers exhibit **cis-trans (geometric) isomerism**? Explain the requirement for cis-trans isomerism. [3 marks]
+(b) Which of these isomers exhibit **cis-trans (geometric) isomerism**? Explain the requirement for
+cis-trans isomerism. [3 marks]
 
 (c) Does but-1-ene exhibit cis-trans isomerism? Explain. [2 marks]
 
@@ -124,21 +145,29 @@ The molecular formula $C_{4}H_{8}$ can give rise to multiple isomers.
 5. **Cyclobutane**: (square ring of 4 CH$_{2}$ groups)
 6. **Methylcyclopropane**: (3-membered ring with $CH_{3}$ substituent)
 
-Note: cis- and trans-but-2-ene are stereoisomers of the same structural isomer (but-2-ene). As structural isomers (different connectivity): but-1-ene, but-2-ene, 2-methylpropene, cyclobutane, methylcyclopropane = **5 structural isomers**.
+Note: cis- and trans-but-2-ene are stereoisomers of the same structural isomer (but-2-ene). As
+structural isomers (different connectivity): but-1-ene, but-2-ene, 2-methylpropene, cyclobutane,
+methylcyclopropane = **5 structural isomers**.
 
 (b) **But-2-ene** exhibits cis-trans isomerism.
 
 Requirements for cis-trans isomerism:
+
 1. There must be a **$C=C$ double bond** (or a ring structure that restricts rotation).
 2. Each carbon of the double bond must be bonded to **two different groups**.
 
-In but-2-ene ($CH_{3}-CH=CH-CH_{3}$), each carbon of the $C=C$ is bonded to a $CH_{3}$ group and an $H$ atom -- two different groups on each carbon. This allows cis (same side) and trans (opposite sides) arrangements.
+In but-2-ene ($CH_{3}-CH=CH-CH_{3}$), each carbon of the $C=C$ is bonded to a $CH_{3}$ group and an
+$H$ atom -- two different groups on each carbon. This allows cis (same side) and trans (opposite
+sides) arrangements.
 
-2-Methylpropene does NOT exhibit cis-trans isomerism because one carbon of the $C=C$ is bonded to **two identical $CH_{3}$ groups**.
+2-Methylpropene does NOT exhibit cis-trans isomerism because one carbon of the $C=C$ is bonded to
+**two identical $CH_{3}$ groups**.
 
 (c) **But-1-ene** ($CH_{2}=CH-CH_{2}-CH_{3}$) does **not** exhibit cis-trans isomerism.
 
-Reason: One carbon of the $C=C$ double bond (the $CH_{2}=$ end) is bonded to **two hydrogen atoms** (identical groups). Since each carbon of the double bond must have two different groups for cis-trans isomerism to occur, but-1-ene fails this requirement.
+Reason: One carbon of the $C=C$ double bond (the $CH_{2}=$ end) is bonded to **two hydrogen atoms**
+(identical groups). Since each carbon of the double bond must have two different groups for
+cis-trans isomerism to occur, but-1-ene fails this requirement.
 
 ---
 
@@ -164,24 +193,26 @@ $$A \xrightarrow{CH_{3}CH_{2}OH / H^{+}} E$$
 
 **Worked Solution**
 
-(a) **$A$**: $CH_{3}CH_{2}OH$ is a primary alcohol. Oxidation with excess acidified $K_{2}Cr_{2}O_{7}$ gives the carboxylic acid: $CH_{3}COOH$ (**ethanoic acid**).
+(a) **$A$**: $CH_{3}CH_{2}OH$ is a primary alcohol. Oxidation with excess acidified
+$K_{2}Cr_{2}O_{7}$ gives the carboxylic acid: $CH_{3}COOH$ (**ethanoic acid**).
 
-**$B$**: The iodoform reaction works for methyl ketones ($CH_{3}CO-$) and ethanol ($CH_{3}CH_{2}OH$).
-Ethanoic acid ($CH_{3}COOH$) does not give the iodoform test. The scheme therefore requires $A$ to be
-The aldehyde $CH_{3}CHO$ (ethanal), formed by controlled oxidation (interpreting the question as
-Intending the aldehyde stage). Ethanal undergoes the iodoform reaction:
+**$B$**: The iodoform reaction works for methyl ketones ($CH_{3}CO-$) and ethanol
+($CH_{3}CH_{2}OH$). Ethanoic acid ($CH_{3}COOH$) does not give the iodoform test. The scheme
+therefore requires $A$ to be The aldehyde $CH_{3}CHO$ (ethanal), formed by controlled oxidation
+(interpreting the question as Intending the aldehyde stage). Ethanal undergoes the iodoform
+reaction:
 
 $CH_{3}CHO + 3I_{2} + 4NaOH \rightarrow CHI_{3} + HCOONa + 3NaI + 3H_{2}O$
 
 So $B =$ **HCOOH** (methanoic acid).
 
-| Compound | Identity | Name |
-|----------|----------|------|
-| $A$ | $CH_{3}CHO$ | Ethanal |
-| $B$ | $HCOOH$ | Methanoic acid |
-| $C$ | $CH_{3}OH$ | Methanol |
-| $D$ | $CH_{3}Br$ | Bromomethane |
-| $E$ | $CH_{3}CH(OCH_{2}CH_{3})_{2}$ | 1,1-Diethoxyethane (acetal) |
+| Compound | Identity                      | Name                        |
+| -------- | ----------------------------- | --------------------------- |
+| $A$      | $CH_{3}CHO$                   | Ethanal                     |
+| $B$      | $HCOOH$                       | Methanoic acid              |
+| $C$      | $CH_{3}OH$                    | Methanol                    |
+| $D$      | $CH_{3}Br$                    | Bromomethane                |
+| $E$      | $CH_{3}CH(OCH_{2}CH_{3})_{2}$ | 1,1-Diethoxyethane (acetal) |
 
 (b) Step 1: $CH_{3}CH_{2}OH \rightarrow A$: **Oxidation** (controlled)
 
@@ -195,7 +226,8 @@ Step 5: $D \rightarrow C$: **Nucleophilic substitution** ($-Br$ replaced by $-OH
 
 Step 6: $A \rightarrow E$: **Acetal formation** (nucleophilic addition)
 
-(c) The formation of a **bright yellow precipitate** of $CHI_{3}$ (iodoform) confirms the iodoform reaction.
+(c) The formation of a **bright yellow precipitate** of $CHI_{3}$ (iodoform) confirms the iodoform
+reaction.
 
 ---
 
@@ -205,17 +237,20 @@ Step 6: $A \rightarrow E$: **Acetal formation** (nucleophilic addition)
 
 Consider the addition of $HBr$ to but-2-ene.
 
-(a) Write the mechanism for the electrophilic addition of $HBr$ to trans-but-2-ene. Show curly arrows and intermediates. [4 marks]
+(a) Write the mechanism for the electrophilic addition of $HBr$ to trans-but-2-ene. Show curly
+arrows and intermediates. [4 marks]
 
 (b) Does the product show optical activity? Explain. [2 marks]
 
-(c) If but-2-ene is reacted with bromine ($Br_{2}$) in an inert solvent, state the stereochemistry of the product and explain. [3 marks]
+(c) If but-2-ene is reacted with bromine ($Br_{2}$) in an inert solvent, state the stereochemistry
+of the product and explain. [3 marks]
 
 ---
 
 **Worked Solution**
 
-(a) **Step 1 (electrophilic attack)**: The electron-rich $C=C$ double bond attacks the electrophilic $H$ atom of $HBr$.
+(a) **Step 1 (electrophilic attack)**: The electron-rich $C=C$ double bond attacks the electrophilic
+$H$ atom of $HBr$.
 
 The $H-Br$ bond breaks heterolytically, with the electron pair going to $Br$.
 
@@ -223,7 +258,8 @@ A carbocation intermediate is formed: $CH_{3}-\overset{+}{C}H-CH_{2}CH_{3}$ (sec
 
 (Curly arrow from the $C=C$ pi bond to the $H$ of $HBr$; curly arrow from the $H-Br$ bond to $Br$.)
 
-**Step 2 (nucleophilic attack)**: The bromide ion ($Br^{-}$) attacks the carbocation from either side.
+**Step 2 (nucleophilic attack)**: The bromide ion ($Br^{-}$) attacks the carbocation from either
+side.
 
 $CH_{3}-\overset{+}{C}H-CH_{2}CH_{3} + Br^{-} \rightarrow CH_{3}-CHBr-CH_{2}CH_{3}$
 
@@ -231,15 +267,23 @@ Product: **2-bromobutane**.
 
 (Curly arrow from lone pair on $Br^{-}$ to the carbocation carbon.)
 
-(b) The product (2-bromobutane) has a chiral centre at $C-2$ (carbon bonded to four different groups: $CH_{3}$-, $H$$Br$$CH_{2}CH_{3}$). However, the reaction produces a **racemic mixture** (equal amounts of both enantiomers) because the $Br^{-}$ can attack the planar carbocation intermediate with equal probability from either face. Since equal amounts of both enantiomers are produced, the mixture is **optically inactive** (no net rotation of plane-polarised light).
+(b) The product (2-bromobutane) has a chiral centre at $C-2$ (carbon bonded to four different
+groups: $CH_{3}$-, $H$$Br$$CH_{2}CH_{3}$). However, the reaction produces a **racemic mixture**
+(equal amounts of both enantiomers) because the $Br^{-}$ can attack the planar carbocation
+intermediate with equal probability from either face. Since equal amounts of both enantiomers are
+produced, the mixture is **optically inactive** (no net rotation of plane-polarised light).
 
-(c) The addition of $Br_{2}$ to but-2-ene proceeds via a **bromonium ion intermediate**, which is a three-membered ring involving the two carbons and one bromine atom.
+(c) The addition of $Br_{2}$ to but-2-ene proceeds via a **bromonium ion intermediate**, which is a
+three-membered ring involving the two carbons and one bromine atom.
 
 The bromonium ion is attacked by $Br^{-}$ from the **opposite side** (anti-addition), giving:
 
-- From **trans-but-2-ene**: the product is a **meso compound** (2,3-dibromobutane) because the molecule has a plane of symmetry. The product is optically inactive.
+- From **trans-but-2-ene**: the product is a **meso compound** (2,3-dibromobutane) because the
+  molecule has a plane of symmetry. The product is optically inactive.
 
-- From **cis-but-2-ene**: the product is a **racemic mixture** of $(2R,3R)$- and $(2S,3S)$-2,3-dibromobutane. The two enantiomers are produced in equal amounts, so the mixture is optically inactive.
+- From **cis-but-2-ene**: the product is a **racemic mixture** of $(2R,3R)$- and
+  $(2S,3S)$-2,3-dibromobutane. The two enantiomers are produced in equal amounts, so the mixture is
+  optically inactive.
 
 In both cases, the addition is **stereospecific anti-addition**.
 
@@ -249,13 +293,15 @@ In both cases, the addition is **stereospecific anti-addition**.
 
 **Question**
 
-Starting from propene ($CH_{2}=CHCH_{3}$), propose a synthesis of 1,2-dibromopropane ($CH_{2}Br-CHBr-CH_{3}$).
+Starting from propene ($CH_{2}=CHCH_{3}$), propose a synthesis of 1,2-dibromopropane
+($CH_{2}Br-CHBr-CH_{3}$).
 
 (a) Give the reagent(s) and conditions for each step. [3 marks]
 
 (b) Write balanced equations for each step. [3 marks]
 
-(c) Explain why direct addition of $HBr$ to propene followed by reaction with $Br_{2}$ would NOT give the desired product. [2 marks]
+(c) Explain why direct addition of $HBr$ to propene followed by reaction with $Br_{2}$ would NOT
+give the desired product. [2 marks]
 
 ---
 
@@ -269,7 +315,8 @@ Conditions: Room temperature, in the dark (or with light excluded)
 
 $$CH_{2}=CHCH_{3} + Br_{2} \rightarrow CH_{2}Br-CHBr-CH_{3}$$
 
-This is a **one-step** synthesis: direct addition of $Br_{2}$ across the double bond gives exactly the desired 1,2-dibromopropane.
+This is a **one-step** synthesis: direct addition of $Br_{2}$ across the double bond gives exactly
+the desired 1,2-dibromopropane.
 
 (b) $$CH_{2}=CHCH_{3} + Br_{2} \rightarrow CH_{2}BrCHBrCH_{3}$$
 
@@ -285,8 +332,13 @@ Then adding $Br_{2}$ to 2-bromopropane would give:
 
 $$CH_{3}-CHBr-CH_{3} + Br_{2} \rightarrow CH_{3}-CBr_{2}-CH_{3} + HBr$$
 
-This is a **substitution** reaction (not addition, since there is no $C=C$), giving 2,2-dibromopropane, NOT 1,2-dibromopropane.
+This is a **substitution** reaction (not addition, since there is no $C=C$), giving
+2,2-dibromopropane, NOT 1,2-dibromopropane.
 
-Alternatively, if the addition of $HBr$ gave 1-bromopropane (anti-Markovnikov, requiring peroxide), then $Br_{2}$ would substitute at the terminal position, still not giving the desired 1,2-dibromo product.
+Alternatively, if the addition of $HBr$ gave 1-bromopropane (anti-Markovnikov, requiring peroxide),
+then $Br_{2}$ would substitute at the terminal position, still not giving the desired 1,2-dibromo
+product.
 
-The key point: once the $C=C$ is consumed in step 1, the subsequent $Br_{2}$ reaction is substitution (not addition), placing $Br$ at a different position. The direct addition of $Br_{2}$ to the alkene is the only efficient route.
+The key point: once the $C=C$ is consumed in step 1, the subsequent $Br_{2}$ reaction is
+substitution (not addition), placing $Br$ at a different position. The direct addition of $Br_{2}$
+to the alkene is the only efficient route.

@@ -1,6 +1,8 @@
 ---
-title: "Heat and Gases -- Diagnostic Tests"
-description: "Hardest DSE heat questions: specific vs latent heat, gas law unit conversions, kinetic theory derivations, PV work, and thermodynamic processes."
+title: 'Heat and Gases -- Diagnostic Tests'
+description:
+  'Hardest DSE heat questions: specific vs latent heat, gas law unit conversions, kinetic theory
+  derivations, PV work, and thermodynamic processes.'
 slug: diag-heat-gases
 hide_table_of_contents: true
 ---
@@ -13,7 +15,13 @@ hide_table_of_contents: true
 
 **Question:**
 
-A $200$ g block of ice at $-15°$C is heated by a $500$ W heater until it becomes steam at $110°$C. The specific heat capacity of ice is $2100 \text{ J kg}^{-1}\text{K}^{-1}$The specific heat capacity of water is $4200 \text{ J kg}^{-1}\text{K}^{-1}$The specific heat capacity of steam is $2010 \text{ J kg}^{-1}\text{K}^{-1}$The specific latent heat of fusion of ice is $3.34 \times 10^5 \text{ J kg}^{-1}$And the specific latent heat of vaporisation of water is $2.26 \times 10^6 \text{ J kg}^{-1}$. Find (a) the total energy required, and (b) the total time taken.
+A $200$ g block of ice at $-15°$C is heated by a $500$ W heater until it becomes steam at $110°$C.
+The specific heat capacity of ice is $2100 \text{ J kg}^{-1}\text{K}^{-1}$The specific heat capacity
+of water is $4200 \text{ J kg}^{-1}\text{K}^{-1}$The specific heat capacity of steam is
+$2010 \text{ J kg}^{-1}\text{K}^{-1}$The specific latent heat of fusion of ice is
+$3.34 \times 10^5 \text{ J kg}^{-1}$And the specific latent heat of vaporisation of water is
+$2.26 \times 10^6 \text{ J kg}^{-1}$. Find (a) the total energy required, and (b) the total time
+taken.
 
 **Solution:**
 
@@ -47,7 +55,9 @@ $$Q_{\text{total}} = 6300 + 66800 + 84000 + 452000 + 4020 = 613120 \text{ J} = 6
 
 $$t = \frac{Q_{\text{total}}}{P} = \frac{613120}{500} = 1226.2 \text{ s} = 20.4 \text{ min}$$
 
-**Key insight:** The latent heat of vaporisation ($Q_4 = 452$ kJ) accounts for $73.7\%$ of the total energy. The phase change at $100°$C requires far more energy than raising the temperature of water by $100°$C ($Q_3 = 84$ kJ). This is the most common energy mistake in these problems.
+**Key insight:** The latent heat of vaporisation ($Q_4 = 452$ kJ) accounts for $73.7\%$ of the total
+energy. The phase change at $100°$C requires far more energy than raising the temperature of water
+by $100°$C ($Q_3 = 84$ kJ). This is the most common energy mistake in these problems.
 
 ---
 
@@ -55,7 +65,11 @@ $$t = \frac{Q_{\text{total}}}{P} = \frac{613120}{500} = 1226.2 \text{ s} = 20.4 
 
 **Question:**
 
-A gas cylinder contains $8$ g of oxygen ($O_2$Molar mass $= 32$ g mol$^{-1}$) at a pressure of $2.5 \times 10^5$ Pa and temperature $27°$C. (a) Calculate the volume of the cylinder. (b) If the temperature is raised to $127°$C while the volume is kept constant, what is the new pressure? (c) If the gas is then allowed to expand isothermally until the pressure returns to $2.5 \times 10^5$ Pa, what is the final volume?
+A gas cylinder contains $8$ g of oxygen ($O_2$Molar mass $= 32$ g mol$^{-1}$) at a pressure of
+$2.5 \times 10^5$ Pa and temperature $27°$C. (a) Calculate the volume of the cylinder. (b) If the
+temperature is raised to $127°$C while the volume is kept constant, what is the new pressure? (c) If
+the gas is then allowed to expand isothermally until the pressure returns to $2.5 \times 10^5$ Pa,
+what is the final volume?
 
 **Solution:**
 
@@ -79,7 +93,8 @@ $$\frac{P_1}{T_1} = \frac{P_2}{T_2}$$
 
 $$P_2 = P_1 \times \frac{T_2}{T_1} = 2.5 \times 10^5 \times \frac{400}{300} = 3.333 \times 10^5 \text{ Pa}$$
 
-**Common mistake:** Using $127/27$ instead of $400/300$ gives a completely wrong answer. Temperature in gas laws MUST always be in Kelvin.
+**Common mistake:** Using $127/27$ instead of $400/300$ gives a completely wrong answer. Temperature
+in gas laws MUST always be in Kelvin.
 
 **(c) Final volume (isothermal expansion):**
 
@@ -97,7 +112,10 @@ $$V_3 = \frac{3.333 \times 2.493}{2.5} \times 10^{-3} = \frac{8.310}{2.5} \times
 
 **Question:**
 
-(a) Starting from the assumptions of the kinetic theory, derive the expression $p = \frac{1}{3}\rho\langle c^2 \rangle$ for the pressure exerted by an ideal gas. (b) Oxygen gas ($M = 32$ g mol$^{-1}$) is at temperature $300$ K and pressure $1.01 \times 10^5$ Pa. Calculate the RMS speed of the molecules and the density of the gas.
+(a) Starting from the assumptions of the kinetic theory, derive the expression
+$p = \frac{1}{3}\rho\langle c^2 \rangle$ for the pressure exerted by an ideal gas. (b) Oxygen gas
+($M = 32$ g mol$^{-1}$) is at temperature $300$ K and pressure $1.01 \times 10^5$ Pa. Calculate the
+RMS speed of the molecules and the density of the gas.
 
 **Solution:**
 
@@ -105,7 +123,9 @@ $$V_3 = \frac{3.333 \times 2.493}{2.5} \times 10^{-3} = \frac{8.310}{2.5} \times
 
 Consider $N$ molecules in a cubical container of side $L$Each of mass $m$.
 
-A single molecule with velocity component $v_x$ in the $x$-direction travels between opposite walls in time $\Delta t = 2L / v_x$. Each collision with a wall reverses $v_x$So the change in momentum per collision $= 2mv_x$.
+A single molecule with velocity component $v_x$ in the $x$-direction travels between opposite walls
+in time $\Delta t = 2L / v_x$. Each collision with a wall reverses $v_x$So the change in momentum
+per collision $= 2mv_x$.
 
 Force on the wall from this molecule:
 
@@ -115,7 +135,8 @@ Total force on the wall from all molecules:
 
 $$F = \sum \frac{mv_{xi}^2}{L} = \frac{m}{L}\sum v_{xi}^2 = \frac{mN\langle v_x^2\rangle}{L}$$
 
-Since the motion is random: $\langle v_x^2\rangle = \langle v_y^2\rangle = \langle v_z^2\rangle = \frac{1}{3}\langle c^2\rangle$
+Since the motion is random:
+$\langle v_x^2\rangle = \langle v_y^2\rangle = \langle v_z^2\rangle = \frac{1}{3}\langle c^2\rangle$
 
 $$p = \frac{F}{L^2} = \frac{mN\langle v_x^2\rangle}{L^3} = \frac{mN}{V} \times \frac{1}{3}\langle c^2\rangle = \frac{1}{3}\frac{Nm}{V}\langle c^2\rangle = \frac{1}{3}\rho\langle c^2\rangle$$
 
@@ -129,9 +150,12 @@ Also: $\frac{1}{2}m\langle c^2\rangle = \frac{3}{2}\frac{R}{N_A}T = \frac{3}{2}k
 
 $$c_{\text{rms}} = \sqrt{\frac{3RT}{M}} = \sqrt{\frac{3 \times 8.31 \times 300}{0.032}} = \sqrt{\frac{7479}{0.032}} = \sqrt{233719} = 483.4 \text{ m s}^{-1}$$
 
-Density: $\rho = \frac{pM}{RT} = \frac{1.01 \times 10^5 \times 0.032}{8.31 \times 300} = \frac{3232}{2493} = 1.296 \text{ kg m}^{-3}$
+Density:
+$\rho = \frac{pM}{RT} = \frac{1.01 \times 10^5 \times 0.032}{8.31 \times 300} = \frac{3232}{2493} = 1.296 \text{ kg m}^{-3}$
 
-**Key insight:** The RMS speed depends only on temperature and molar mass, NOT on pressure. At the same temperature, lighter molecules move faster. This is why hydrogen escapes from planetary atmospheres more than heavier gases.
+**Key insight:** The RMS speed depends only on temperature and molar mass, NOT on pressure. At the
+same temperature, lighter molecules move faster. This is why hydrogen escapes from planetary
+atmospheres more than heavier gases.
 
 ---
 
@@ -142,11 +166,14 @@ Density: $\rho = \frac{pM}{RT} = \frac{1.01 \times 10^5 \times 0.032}{8.31 \time
 **Question:**
 
 An ideal monatomic gas undergoes the following cycle:
+
 - Process A$\to$B: Isothermal expansion at $T = 400$ K from $V_A = 2$ L to $V_B = 6$ L.
 - Process B$\to$C: Isochoric (constant volume) cooling until pressure $P_C = P_A$.
 - Process C$\to$A: Isobaric (constant pressure) compression back to state A.
 
-The gas has $n = 0.5$ mol. Find (a) the pressure, volume, and temperature at each state, (b) the work done, heat exchanged, and internal energy change for each process, and (c) the efficiency of the cycle.
+The gas has $n = 0.5$ mol. Find (a) the pressure, volume, and temperature at each state, (b) the
+work done, heat exchanged, and internal energy change for each process, and (c) the efficiency of
+the cycle.
 
 **Solution:**
 
@@ -195,15 +222,20 @@ $$Q_{CA} = \Delta U_{CA} + W_{CA} = -4986 + (-3324) = -8310 \text{ J} \text{ (he
 
 $$W_{\text{net}} = W_{AB} + W_{BC} + W_{CA} = 1826 + 0 + (-3324) = -1498 \text{ J}$$
 
-The negative sign means net work is done ON the gas (this is a refrigeration cycle, not a heat engine). To get a heat engine, we should reverse the cycle direction. But proceeding with the given cycle:
+The negative sign means net work is done ON the gas (this is a refrigeration cycle, not a heat
+engine). To get a heat engine, we should reverse the cycle direction. But proceeding with the given
+cycle:
 
 $$Q_{\text{absorbed}} = Q_{AB} + Q_{BC} = 1826 + 4986 = 6812 \text{ J}$$
 
-Since net work is negative (work done on gas), this is not a conventional heat engine cycle. The "efficiency" as a refrigerator would be:
+Since net work is negative (work done on gas), this is not a conventional heat engine cycle. The
+"efficiency" as a refrigerator would be:
 
 $$\text{COP} = \frac{Q_{\text{absorbed}}}{|W_{\text{net}}|} = \frac{6812}{1498} = 4.55$$
 
-**Key insight:** Not every thermodynamic cycle is a heat engine. The sign of the net work determines whether it operates as an engine (net work out) or a refrigerator (net work in). Students must check the signs carefully.
+**Key insight:** Not every thermodynamic cycle is a heat engine. The sign of the net work determines
+whether it operates as an engine (net work out) or a refrigerator (net work in). Students must check
+the signs carefully.
 
 ---
 
@@ -211,7 +243,10 @@ $$\text{COP} = \frac{Q_{\text{absorbed}}}{|W_{\text{net}}|} = \frac{6812}{1498} 
 
 **Question:**
 
-A monatomic ideal gas ($\gamma = 5/3$) is compressed adiabatically from $V_1 = 10$ L at $P_1 = 1 \times 10^5$ Pa to $V_2 = 4$ L. Find (a) the final pressure, (b) the final temperature (initial temperature $= 300$ K), (c) the work done on the gas, and (d) the change in internal energy.
+A monatomic ideal gas ($\gamma = 5/3$) is compressed adiabatically from $V_1 = 10$ L at
+$P_1 = 1 \times 10^5$ Pa to $V_2 = 4$ L. Find (a) the final pressure, (b) the final temperature
+(initial temperature $= 300$ K), (c) the work done on the gas, and (d) the change in internal
+energy.
 
 **Solution:**
 
@@ -253,7 +288,8 @@ $$\Delta U = 0.4011 \times \frac{3}{2} \times 8.31 \times (552.6 - 300) = 0.4011
 
 Check: $\Delta U = -W = 1263$ J (consistent, since $Q = 0$).
 
-**Key insight:** In an adiabatic compression, ALL the work done on the gas increases its internal energy (and thus its temperature). This is why pumping air into a bicycle tyre makes the pump warm.
+**Key insight:** In an adiabatic compression, ALL the work done on the gas increases its internal
+energy (and thus its temperature). This is why pumping air into a bicycle tyre makes the pump warm.
 
 ---
 
@@ -261,7 +297,10 @@ Check: $\Delta U = -W = 1263$ J (consistent, since $Q = 0$).
 
 **Question:**
 
-$300$ g of water at $80°$C is mixed with $200$ g of water at $20°$C in an insulated calorimeter of heat capacity $50 \text{ J K}^{-1}$. Find the final equilibrium temperature. Then, a $100$ g aluminium block ($c_{\text{Al}} = 900 \text{ J kg}^{-1}\text{K}^{-1}$) at $150°$C is added to the mixture. Find the new equilibrium temperature.
+$300$ g of water at $80°$C is mixed with $200$ g of water at $20°$C in an insulated calorimeter of
+heat capacity $50 \text{ J K}^{-1}$. Find the final equilibrium temperature. Then, a $100$ g
+aluminium block ($c_{\text{Al}} = 900 \text{ J kg}^{-1}\text{K}^{-1}$) at $150°$C is added to the
+mixture. Find the new equilibrium temperature.
 
 **Solution:**
 
@@ -301,4 +340,6 @@ $$132094 = 2240T_{f2}$$
 
 $$T_{f2} = 58.97°\text{C}$$
 
-**Key insight:** The calorimeter absorbs some heat, which is often forgotten. Also, when mixing substances, the final temperature must be between the initial temperatures of all components. If the calculation gives a temperature outside this range, there is an error.
+**Key insight:** The calorimeter absorbs some heat, which is often forgotten. Also, when mixing
+substances, the final temperature must be between the initial temperatures of all components. If the
+calculation gives a temperature outside this range, there is an error.

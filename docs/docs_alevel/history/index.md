@@ -1,12 +1,15 @@
 ---
 sidebar_position: 1
 title: A-Level History
-description: "A-Level History notes covering modern history, source analysis, historical interpretation, and coursework investigation."
+description:
+  'A-Level History notes covering modern history, source analysis, historical interpretation, and
+  coursework investigation.'
 date: 2026-05-12T00:00:00.000Z
 tags:
   - History
   - ALevel
 ---
+
 # A-Level History
 
 :::note Content Under Development

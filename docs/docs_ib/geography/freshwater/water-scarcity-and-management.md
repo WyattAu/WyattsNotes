@@ -1,6 +1,8 @@
 ---
 title: Water Scarcity and Management
-description: "Physical and economic water scarcity, water stress indices, supply-side and demand-side management strategies, and case studies for IB Geography."
+description:
+  'Physical and economic water scarcity, water stress indices, supply-side and demand-side
+  management strategies, and case studies for IB Geography.'
 slug: water-scarcity-and-management
 ---
 
@@ -31,12 +33,12 @@ Economic water scarcity, predominantly in Sub-Saharan Africa and parts of South 
 
 Several composite indices measure water stress at national and subnational scales:
 
-| Index | Description | Key Variables |
+| Index                                       | Description                                                             | Key Variables                                                  |
 | ------------------------------------------- | ----------------------------------------------------------------------- | -------------------------------------------------------------- |
-| **Falkenmark Water Stress Indicator** | Annual renewable freshwater per capita | Total renewable freshwater, population |
+| **Falkenmark Water Stress Indicator**       | Annual renewable freshwater per capita                                  | Total renewable freshwater, population                         |
 | **Basin-level Water Stress (WRI Aqueduct)** | Ratio of total freshwater withdrawals to available renewable freshwater | Withdrawals, renewable supply, environmental flow requirements |
-| **Water Poverty Index (WPI)** | Combines water availability with access, capacity, use, and environment | Five components: resources, access, capacity, use, environment |
-| **UN Water SDG 6 Indicator 6.4.2** | Water-use efficiency (value added per unit of water withdrawn) | GDP, total freshwater withdrawals |
+| **Water Poverty Index (WPI)**               | Combines water availability with access, capacity, use, and environment | Five components: resources, access, capacity, use, environment |
+| **UN Water SDG 6 Indicator 6.4.2**          | Water-use efficiency (value added per unit of water withdrawn)          | GDP, total freshwater withdrawals                              |
 
 The WRI Aqueduct tool classifies water stress into five categories: extremely high ($\gt{80}\%$ of
 Available supply withdrawn), high (40--80%), medium to high (20--40%), low to medium (10--20%), and
@@ -50,13 +52,13 @@ The United Nations World Water Development Report (2023) documents the scale of 
 - Approximately 2 billion people worldwide lack access to safely managed drinking water services.
 - Approximately 3.6 billion people lack access to safely managed sanitation services.
 - Global freshwater demand has increased sixfold since 1900 and continues to rise at approximately
- 1% per year.
+  1% per year.
 - Agriculture accounts for approximately 70% of global freshwater withdrawals; industry for
- approximately 19%; and municipal use for approximately 11%.
+  approximately 19%; and municipal use for approximately 11%.
 - By 2050, global water demand is projected to increase by 20--30% above current levels, driven by
- population growth, economic development, and changing consumption patterns.
+  population growth, economic development, and changing consumption patterns.
 - Climate change is projected to reduce renewable water resources in regions that are already
- water-stressed, particularly the Middle East, North Africa, and Central Asia.
+  water-stressed, particularly the Middle East, North Africa, and Central Asia.
 
 ## Supply-Side Management Strategies
 
@@ -83,12 +85,12 @@ Reducing reservoir capacity over time, and the risk of catastrophic dam failure.
 
 Desalination converts seawater or brackish water into freshwater. The two dominant technologies are:
 
-- **Reverse osmosis (RO):** water is forced through a semi-permeable membrane under high pressure
- ( 55--80 bar), rejecting dissolved salts. RO accounts for approximately 69% of global
- desalination capacity.
+- **Reverse osmosis (RO):** water is forced through a semi-permeable membrane under high pressure (
+  55--80 bar), rejecting dissolved salts. RO accounts for approximately 69% of global desalination
+  capacity.
 - **Thermal distillation:** seawater is heated to produce steam, which is then condensed.
- Multi-stage flash (MSF) distillation and multi-effect distillation (MED) are the main thermal
- methods. These are dominant in the Middle East, where energy is cheap.
+  Multi-stage flash (MSF) distillation and multi-effect distillation (MED) are the main thermal
+  methods. These are dominant in the Middle East, where energy is cheap.
 
 **Global capacity:** approximately 100 million m$^3$ of desalinated water produced per day (2023).
 The largest desalination plant is the Sorek plant in Israel (capacity approximately 624 000
@@ -105,11 +107,11 @@ M$^3$ for RO, depending on scale and energy costs).
 Inter-basin transfers move water from basins with surplus to basins with deficit via canals,
 Tunnels, or pipelines.
 
-| Scheme | Location | Scale | Issues |
+| Scheme                              | Location             | Scale                                                                                            | Issues                                                                                                                    |
 | ----------------------------------- | -------------------- | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------- |
-| **South-to-North Water Transfer** | China | Three routes transferring up to 45 billion m$^3$/year from the Yangtze to the Yellow River basin | Cost approximately USD 62 billion; displacement of over 300 000 people; ecological impacts on source and receiving basins |
-| **California Aqueduct** | USA | Transfers approximately 5 billion m$^3$/year from northern to southern California | Energy-intensive (pumping water over the Tehachapi Mountains); ecological impacts on the Sacramento-San Joaquin Delta |
-| **Lesotho Highlands Water Project** | Lesotho/South Africa | Transfers approximately 780 million m$^3$/year from Lesotho to South Africa's Gauteng province | Displacement of communities in Lesotho; dependence of Gauteng on a foreign water source |
+| **South-to-North Water Transfer**   | China                | Three routes transferring up to 45 billion m$^3$/year from the Yangtze to the Yellow River basin | Cost approximately USD 62 billion; displacement of over 300 000 people; ecological impacts on source and receiving basins |
+| **California Aqueduct**             | USA                  | Transfers approximately 5 billion m$^3$/year from northern to southern California                | Energy-intensive (pumping water over the Tehachapi Mountains); ecological impacts on the Sacramento-San Joaquin Delta     |
+| **Lesotho Highlands Water Project** | Lesotho/South Africa | Transfers approximately 780 million m$^3$/year from Lesotho to South Africa's Gauteng province   | Displacement of communities in Lesotho; dependence of Gauteng on a foreign water source                                   |
 
 ## Demand-Side Management Strategies
 
@@ -117,14 +119,14 @@ Demand-side strategies reduce water consumption without increasing supply. They 
 Cheaper, more environmentally sustainable, and faster to implement than supply-side strategies, but
 Their effectiveness depends on strong governance, appropriate pricing, and behavioural change.
 
-| Strategy | Mechanism | Effectiveness | Limitations |
+| Strategy                       | Mechanism                                                                                                               | Effectiveness                                                                                              | Limitations                                                                                                             |
 | ------------------------------ | ----------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| **Water pricing and metering** | Charging by volume consumed rather than a flat rate | Proven effective where enforcement is strong; can reduce domestic consumption by 15--30% | Regressive: low-income households spend a higher proportion of income on water; political resistance to price increases |
-| **Drip irrigation** | Delivering water directly to plant roots through perforated tubes | Reduces agricultural water use by 40--60% compared to flood irrigation; improves crop yields | High capital cost; requires maintenance (clogging); energy required for pumping |
-| **Greywater recycling** | Treating and reusing water from showers, sinks, and washing machines for toilet flushing, irrigation, or industrial use | Can reduce household water demand by 30--40% | Requires dual plumbing systems; public acceptance of recycled water varies |
-| **Leakage reduction** | Repairing and maintaining water distribution infrastructure | London loses approximately 25% of treated water through leaks; many developing-country cities lose 40--60% | Expensive to replace buried infrastructure; difficult to prioritise among competing demands |
-| **Public education campaigns** | Promoting water conservation behaviour (shorter showers, full washing loads, fixing leaks) | Modest effect alone (5--10% reduction); most effective when combined with pricing measures | Difficult to measure impact; effect may diminish over time without reinforcement |
-| **Industrial water recycling** | Closed-loop systems that treat and reuse process water within factories | Can reduce industrial freshwater consumption by 50--90% | Capital-intensive; requires process redesign |
+| **Water pricing and metering** | Charging by volume consumed rather than a flat rate                                                                     | Proven effective where enforcement is strong; can reduce domestic consumption by 15--30%                   | Regressive: low-income households spend a higher proportion of income on water; political resistance to price increases |
+| **Drip irrigation**            | Delivering water directly to plant roots through perforated tubes                                                       | Reduces agricultural water use by 40--60% compared to flood irrigation; improves crop yields               | High capital cost; requires maintenance (clogging); energy required for pumping                                         |
+| **Greywater recycling**        | Treating and reusing water from showers, sinks, and washing machines for toilet flushing, irrigation, or industrial use | Can reduce household water demand by 30--40%                                                               | Requires dual plumbing systems; public acceptance of recycled water varies                                              |
+| **Leakage reduction**          | Repairing and maintaining water distribution infrastructure                                                             | London loses approximately 25% of treated water through leaks; many developing-country cities lose 40--60% | Expensive to replace buried infrastructure; difficult to prioritise among competing demands                             |
+| **Public education campaigns** | Promoting water conservation behaviour (shorter showers, full washing loads, fixing leaks)                              | Modest effect alone (5--10% reduction); most effective when combined with pricing measures                 | Difficult to measure impact; effect may diminish over time without reinforcement                                        |
+| **Industrial water recycling** | Closed-loop systems that treat and reuse process water within factories                                                 | Can reduce industrial freshwater consumption by 50--90%                                                    | Capital-intensive; requires process redesign                                                                            |
 
 <details>
 <summary>Common Pitfalls: Evaluating Water Management Strategies in Isolation</summary>
@@ -172,13 +174,13 @@ Significant aquifers. Despite this, it has achieved near-universal access to cle
 "Four National Taps" strategy:
 
 1. **Local catchment:** approximately 17 reservoirs capture rainfall from approximately two-thirds
- of Singapore's land area.
+   of Singapore's land area.
 2. **Imported water:** from Malaysia under the 1962 Water Agreement (expiring 2061).
 3. **NEWater:** advanced treatment of wastewater using microfiltration, reverse osmosis, and
- ultraviolet disinfection produces water exceeding WHO drinking water standards. NEWater supplies
- approximately 40% of total demand.
+   ultraviolet disinfection produces water exceeding WHO drinking water standards. NEWater supplies
+   approximately 40% of total demand.
 4. **Desalination:** three plants supply approximately 25% of demand; a fourth is under
- construction.
+   construction.
 
 Singapore's governance model is distinctive: the Public Utilities Board (PUB) manages the entire
 Water cycle in an integrated manner. Water is priced at full cost recovery with a conservation
@@ -200,17 +202,17 @@ Depletion: the aquifer beneath the plain has declined by over 50 m in some areas
 **Structure.** The SNWTP consists of three routes:
 
 - **Eastern Route:** follows the route of the ancient Grand Canal, transferring water from the
- Yangtze near Yangzhou to Tianjin (approximately 115 billion m$^3$ total capacity; completed 2013).
- Water quality was initially poor due to industrial pollution along the canal corridor, requiring
- extensive treatment.
+  Yangtze near Yangzhou to Tianjin (approximately 115 billion m$^3$ total capacity; completed 2013).
+  Water quality was initially poor due to industrial pollution along the canal corridor, requiring
+  extensive treatment.
 - **Central Route:** transfers water from the Danjiangkou Reservoir on the Han River (a Yangtze
- tributary) to Beijing via a 1267 km canal and tunnel system (approximately 13 billion m$^3$/year
- capacity; completed 2014). Over 300 000 people were relocated to expand the Danjiangkou Reservoir.
+  tributary) to Beijing via a 1267 km canal and tunnel system (approximately 13 billion m$^3$/year
+  capacity; completed 2014). Over 300 000 people were relocated to expand the Danjiangkou Reservoir.
 - **Western Route (planned):** would transfer water from the upper Yangtze headwaters across the
- Tibetan Plateau to the upper Yellow River. This route is technically extremely challenging
- (tunnels through mountains at elevations exceeding 4000 m) and has not been constructed due to
- engineering difficulties, environmental concerns, and tensions over transboundary water resources
- with downstream riparian states.
+  Tibetan Plateau to the upper Yellow River. This route is technically extremely challenging
+  (tunnels through mountains at elevations exceeding 4000 m) and has not been constructed due to
+  engineering difficulties, environmental concerns, and tensions over transboundary water resources
+  with downstream riparian states.
 
 **Impacts.** The Central Route now supplies approximately 70% of Beijing's municipal water. However,
 The project has been criticised for its enormous cost (estimated at over USD 62 billion), the

@@ -1,11 +1,14 @@
 ---
 title: TypeScript -- Course Overview
-description: "TypeScript: TypeScript -- Course Overview — What Is TypeScript; Relationship to JavaScript; Key Language Features; The Toolchain."
+description:
+  'TypeScript: TypeScript -- Course Overview — What Is TypeScript; Relationship to JavaScript; Key
+  Language Features; The Toolchain.'
 slug: typescript
 date: 2026-04-22T00:00:00.000Z
 tags: [TypeScript]
 categories: [TypeScript]
 ---
+
 ## What Is TypeScript
 
 TypeScript is a statically typed programming language developed by Microsoft. It is a **strict
@@ -25,7 +28,7 @@ Tasks:
 
 1. **Type checking** -- verifying that the program respects all declared types and constraints.
 2. **Code emission** -- producing JavaScript output (ES3 through ESNext targets) with type
- annotations removed.
+   annotations removed.
 
 Because TypeScript is a superset, existing JavaScript codebases can be adopted incrementally. The
 Compiler's `strict` flag can be enabled progressively, allowing teams to tighten type safety at
@@ -33,16 +36,16 @@ Their own pace.
 
 ## Key Language Features
 
-| Feature | Description |
-| --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Type system | Primitive types, object types, union/intersection types, generics, conditional types, mapped types, template literal types |
-| Generics | Parametric polymorphism with constraints, variance, and type-level inference |
-| Enums | Numeric enums, string enums, const enums, and union enum patterns |
-| Decorators | Stage 3 proposal for class and member decoration (experimental in current TS releases) |
-| Modules | ES module import/export, declaration merging, ambient modules, namespaces |
-| Utility types | Built-in generic utilities: `Partial``Required``Readonly``Pick``Omit``Record``Exclude``Extract``ReturnType``Parameters``NonNullable` |
-| Type narrowing | Discriminated unions, `typeof``instanceof``in` operator, user-defined type guards |
-| Toolchain integration | `tsconfig.json`Declaration files (`.d.ts`), `@types/` packages, project references |
+| Feature               | Description                                                                                                                          |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| Type system           | Primitive types, object types, union/intersection types, generics, conditional types, mapped types, template literal types           |
+| Generics              | Parametric polymorphism with constraints, variance, and type-level inference                                                         |
+| Enums                 | Numeric enums, string enums, const enums, and union enum patterns                                                                    |
+| Decorators            | Stage 3 proposal for class and member decoration (experimental in current TS releases)                                               |
+| Modules               | ES module import/export, declaration merging, ambient modules, namespaces                                                            |
+| Utility types         | Built-in generic utilities: `Partial``Required``Readonly``Pick``Omit``Record``Exclude``Extract``ReturnType``Parameters``NonNullable` |
+| Type narrowing        | Discriminated unions, `typeof``instanceof``in` operator, user-defined type guards                                                    |
+| Toolchain integration | `tsconfig.json`Declaration files (`.d.ts`), `@types/` packages, project references                                                   |
 
 ## The Toolchain
 
@@ -54,8 +57,7 @@ Behaviour is controlled by `tsconfig.json` at the project root. Key compiler opt
 - **`strict`** -- enables all strict type-checking options.
 - **`target`** -- the ECMAScript version for emitted JavaScript.
 - **`module`** -- the module system for emitted code (CommonJS, ESNext, etc.).
-- **`moduleResolution`** -- the strategy for resolving module imports (`node``bundler`
- `classic`).
+- **`moduleResolution`** -- the strategy for resolving module imports (`node``bundler` `classic`).
 - **`noEmit`** -- type-check without producing output files.
 
 ### Configuration (`tsconfig.json`)

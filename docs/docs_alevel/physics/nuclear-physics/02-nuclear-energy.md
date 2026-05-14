@@ -1,6 +1,8 @@
 ---
 title: Nuclear Energy
-description: "A-Level Physics notes on Nuclear Energy: 1. Mass Defect and Binding Energy; Mass Defect; Einstein's Mass-Energy Equation; Derivation of Mass-Energy Equivalence."
+description:
+  "A-Level Physics notes on Nuclear Energy: 1. Mass Defect and Binding Energy; Mass Defect;
+  Einstein's Mass-Energy Equation; Derivation of Mass-Energy Equivalence."
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Physics
@@ -9,11 +11,10 @@ categories:
   - Physics
 slug: nuclear-energy
 ---
+
 ## Nuclear Energy
 
-:::info
-Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4
-:::
+:::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4 :::
 
 <PhetSimulation simulationId="nuclear-fission" title="Nuclear Fission" />
 
@@ -48,7 +49,7 @@ From its constituents.
 
 1. From Einstein's special relativity, the total energy of a body at rest is $E = mc^2$.
 2. A nucleus of mass $m_{\mathrm{nucleus}}$ is lighter than its constituent nucleons by the mass
- defect $\Delta m$.
+   defect $\Delta m$.
 3. The "missing mass" has been converted to energy that holds the nucleus together.
 4. The energy equivalent of the mass defect is the binding energy:
 
@@ -100,11 +101,11 @@ $$\frac{E_b}{A} = \frac◆LB◆\Delta m \cdot c^2◆RB◆◆LB◆A◆RB◆$$
 The plot of $E_b/A$ versus mass number $A$ has the following key features:
 
 - **Light nuclei** ($A < 20$): binding energy per nucleon rises rapidly with $A$. Nuclei become more
- stable by **fusion** (combining light nuclei to reach higher $E_b/A$).
+  stable by **fusion** (combining light nuclei to reach higher $E_b/A$).
 - **Iron-56** ($\prescript{56}{}{26}\mathrm{Fe}$): the peak of the curve at $\sim 8.8$ MeV/nucleon.
- Iron-56 is the most stable nucleus.
+  Iron-56 is the most stable nucleus.
 - **Heavy nuclei** ($A > 60$): binding energy per nucleon gradually decreases. Nuclei become more
- stable by **fission** (splitting heavy nuclei to reach higher $E_b/A$).
+  stable by **fission** (splitting heavy nuclei to reach higher $E_b/A$).
 
 **Intuition.** Both fusion and fission release energy because they move nuclei towards the peak of
 The binding energy curve, where $E_b/A$ is maximum. The released energy equals the increase in total
@@ -113,9 +114,9 @@ Binding energy.
 ### Derivation of Energy Released from the Binding Energy Curve
 
 1. For any nuclear process, the total number of nucleons is conserved:
- $A_{\mathrm{products}} = A_{\mathrm{reactants}}$.
+   $A_{\mathrm{products}} = A_{\mathrm{reactants}}$.
 2. The binding energy per nucleon changes from $(E_b/A)_{\mathrm{initial}}$ to
- $(E_b/A)_{\mathrm{final}}$.
+   $(E_b/A)_{\mathrm{final}}$.
 3. Total binding energy before: $E_{b,\mathrm{initial}} = (E_b/A)_{\mathrm{initial}} \times A$.
 4. Total binding energy after: $E_{b,\mathrm{final}} = (E_b/A)_{\mathrm{final}} \times A$.
 5. Energy released equals the increase in total binding energy:
@@ -217,22 +218,19 @@ $E_b^{\mathrm{added}}$. Fission occurs only if this exceeds the fission barrier 
 For $\prescript{235}{}{92}\mathrm{U} + \mathrm{n} \to \prescript{236}{}{92}\mathrm{U}^*$:
 
 - $\prescript{235}{}{92}\mathrm{U}$ has 143 neutrons (odd). Adding a neutron pairs the last neutron,
- gaining extra pairing energy.
+  gaining extra pairing energy.
 - $E_b^{\mathrm{added}} \approx 6.5$ MeV while $E_f \approx 5.3$ MeV.
 - Since $E_b^{\mathrm{added}} \gt{} E_f$Fission proceeds even with thermal neutrons.
 
 For $\prescript{238}{}{92}\mathrm{U} + \mathrm{n} \to \prescript{239}{}{92}\mathrm{U}^*$:
 
 - $\prescript{238}{}{92}\mathrm{U}$ has 146 neutrons (even). Adding a neutron creates an unpaired
- neutron with less pairing energy gain.
+  neutron with less pairing energy gain.
 - $E_b^{\mathrm{added}} \approx 4.9$ MeV while $E_f \approx 5.5$ MeV.
 - Since $E_b^{\mathrm{added}} \lt{} E_f$Thermal neutrons cannot induce fission.
 
-:::warning
-Warning
-But is not fissile --- it cannot sustain a chain reaction with thermal neutrons. The only 
-Occurring fissile isotope is U-235 (0.72\% of natural uranium).
-:::
+:::warning Warning But is not fissile --- it cannot sustain a chain reaction with thermal neutrons.
+The only Occurring fissile isotope is U-235 (0.72\% of natural uranium). :::
 
 ### Fast Fission of U-238
 
@@ -275,10 +273,10 @@ De-excite. 2--3 are emitted per fission.
 That undergo beta decay to excited states above the neutron separation energy. Key precursors for
 U-235 thermal fission:
 
-| Precursor | Half-life | Yield per 100 fissions |
+| Precursor                         | Half-life | Yield per 100 fissions |
 | --------------------------------- | --------- | ---------------------- |
-| $\prescript{87}{}{35}\mathrm{Br}$ | 55.7 s | 0.027 |
-| $\prescript{137}{}{53}\mathrm{I}$ | 24.5 s | 0.025 |
+| $\prescript{87}{}{35}\mathrm{Br}$ | 55.7 s    | 0.027                  |
+| $\prescript{137}{}{53}\mathrm{I}$ | 24.5 s    | 0.025                  |
 
 The **delayed neutron fraction** $\beta$ is the fraction of all fission neutrons that are delayed.
 For U-235, $\beta \approx 0.0065$ (0.65\%). Although tiny, these neutrons are essential for reactor
@@ -292,9 +290,9 @@ Reaction.
 **Xenon-135** is the worst offender:
 
 - Thermal absorption cross-section: $\sigma_a \approx 2.65 \times 10^6$ barns (the largest known for
- any stable nuclide)
+  any stable nuclide)
 - Produced mainly by decay:
- $\prescript{135}{}{52}\mathrm{Te} \to \prescript{135}{}{53}\mathrm{I}
+  $\prescript{135}{}{52}\mathrm{Te} \to \prescript{135}{}{53}\mathrm{I}
  \xrightarrow{\beta^-} \prescript{135}{}{54}\mathrm{Xe} \xrightarrow{\beta^-} \prescript{135}{}{55}\mathrm{Cs}$
 - $\prescript{135}{}{54}\mathrm{Xe}$ has $t_{1/2} = 9.2$ hours
 
@@ -307,22 +305,19 @@ After a reactor shutdown, xenon-135 builds up from iodine-135 decay faster than 
 
 The $\sim 200$ MeV released per U-235 fission is distributed as follows:
 
-| Component | Energy (MeV) | Form |
+| Component                         | Energy (MeV)   | Form                       |
 | --------------------------------- | -------------- | -------------------------- |
-| Kinetic energy of fragments | $\sim 170$ | Heat (immediate) |
-| Kinetic energy of prompt neutrons | $\sim 5$ | Heat (after moderation) |
-| Prompt gamma rays | $\sim 7$ | Radiation / heat |
-| Beta particles (product decay) | $\sim 5$ | Heat (delayed) |
-| Gamma rays (product decay) | $\sim 6$ | Radiation / heat (delayed) |
-| Anti-neutrinos | $\sim 12$ | Lost (escape reactor) |
-| **Total recoverable** | **$\sim 193$** | |
+| Kinetic energy of fragments       | $\sim 170$     | Heat (immediate)           |
+| Kinetic energy of prompt neutrons | $\sim 5$       | Heat (after moderation)    |
+| Prompt gamma rays                 | $\sim 7$       | Radiation / heat           |
+| Beta particles (product decay)    | $\sim 5$       | Heat (delayed)             |
+| Gamma rays (product decay)        | $\sim 6$       | Radiation / heat (delayed) |
+| Anti-neutrinos                    | $\sim 12$      | Lost (escape reactor)      |
+| **Total recoverable**             | **$\sim 193$** |                            |
 
-:::warning
-Warning
-Anti-neutrinos, which interact so weakly that they escape the reactor entirely. When calculating
-Thermal power output, use $\sim 200$ MeV total but $\sim 193$ MeV recoverable. The neutrino energy
-Is unrecoverable.
-:::
+:::warning Warning Anti-neutrinos, which interact so weakly that they escape the reactor entirely.
+When calculating Thermal power output, use $\sim 200$ MeV total but $\sim 193$ MeV recoverable. The
+neutrino energy Is unrecoverable. :::
 
 ### Breeder Reactors
 
@@ -345,18 +340,16 @@ Abundant than uranium and produces less long-lived transuranic waste.
 
 ### Nuclear Waste Classification
 
-| Level | Description | Examples | Disposal |
+| Level              | Description                   | Examples              | Disposal                 |
 | ------------------ | ----------------------------- | --------------------- | ------------------------ |
-| High Level (HLW) | Highly radioactive, high heat | Spent fuel rods | Deep geological disposal |
-| Intermediate (ILW) | Some shielding required | Reactor components | Engineered facilities |
-| Low Level (LLW) | Minimal radioactivity | Contaminated clothing | Near-surface disposal |
+| High Level (HLW)   | Highly radioactive, high heat | Spent fuel rods       | Deep geological disposal |
+| Intermediate (ILW) | Some shielding required       | Reactor components    | Engineered facilities    |
+| Low Level (LLW)    | Minimal radioactivity         | Contaminated clothing | Near-surface disposal    |
 
-:::tip
-Tip
-Short half-life isotopes can be stored and left to decay. Long half-life isotopes (thousands to
-Millions of years) require geological disposal relying on multiple barriers: waste form
-(vitrification), container (steel/copper), buffer (bentonite clay), and host rock (granite/clay).
-:::
+:::tip Tip Short half-life isotopes can be stored and left to decay. Long half-life isotopes
+(thousands to Millions of years) require geological disposal relying on multiple barriers: waste
+form (vitrification), container (steel/copper), buffer (bentonite clay), and host rock
+(granite/clay). :::
 
 ## 6. Nuclear Reactor Design
 
@@ -395,11 +388,11 @@ Its energy in a single collision. $\square$
 
 **Consequences for moderator choice:**
 
-| Moderator | $M/m_n$ | $\Delta E_{\max}/E$ | Collisions to thermalise |
+| Moderator                                  | $M/m_n$ | $\Delta E_{\max}/E$ | Collisions to thermalise |
 | ------------------------------------------ | ------- | ------------------- | ------------------------ |
-| Hydrogen ($\prescript{1}{}{1}\mathrm{H}$) | 1 | 1.000 | $\sim 18$ |
-| Deuterium ($\prescript{2}{}{1}\mathrm{H}$) | 2 | 0.889 | $\sim 25$ |
-| Carbon-12 | 12 | 0.284 | $\sim 115$ |
+| Hydrogen ($\prescript{1}{}{1}\mathrm{H}$)  | 1       | 1.000               | $\sim 18$                |
+| Deuterium ($\prescript{2}{}{1}\mathrm{H}$) | 2       | 0.889               | $\sim 25$                |
+| Carbon-12                                  | 12      | 0.284               | $\sim 115$               |
 
 The average logarithmic energy decrement per collision is $\xi$And the number of collisions to
 Thermalise from $E_0 = 2$ MeV to $E_{\mathrm{th}} = 0.025$ eV is $n = \ln(E_0/E_{\mathrm{th}})/\xi$.
@@ -416,21 +409,19 @@ The **multiplication factor** is:
 
 $$k = \frac◆LB◆\mathrm{neutrons in generation } n + 1◆RB◆◆LB◆\mathrm{neutrons in generation } n◆RB◆$$
 
-| Regime | Condition | Behaviour |
+| Regime        | Condition   | Behaviour                       |
 | ------------- | ----------- | ------------------------------- |
-| Subcritical | $k \lt{} 1$ | Fission rate decreases |
-| Critical | $k = 1$ | Steady power (normal operation) |
-| Supercritical | $k \gt{} 1$ | Power increases |
+| Subcritical   | $k \lt{} 1$ | Fission rate decreases          |
+| Critical      | $k = 1$     | Steady power (normal operation) |
+| Supercritical | $k \gt{} 1$ | Power increases                 |
 
 The **effective** multiplication factor $k_{\mathrm{eff}}$ accounts for neutron leakage and non-fuel
 Absorption: $k_{\mathrm{eff}} = k_{\infty} \cdot P_{\mathrm{non-leak}}$Where $k_{\infty}$ is the
 Infinite-medium factor and $P_{\mathrm{non-leak}}$ is the non-leakage probability.
 
-:::tip
-Tip
-Critical when $k_{\mathrm{eff}} = 1$. Control rods absorb neutrons to reduce $k_{\mathrm{eff}}$
-Below 1 for shutdown, or are adjusted to maintain $k_{\mathrm{eff}} = 1$ for steady power."
-:::
+:::tip Tip Critical when $k_{\mathrm{eff}} = 1$. Control rods absorb neutrons to reduce
+$k_{\mathrm{eff}}$ Below 1 for shutdown, or are adjusted to maintain $k_{\mathrm{eff}} = 1$ for
+steady power." :::
 
 ### Delayed Neutrons and Reactor Control
 
@@ -455,15 +446,12 @@ Prompt lifetime. The effective time constant becomes:
 $$\tau_{\mathrm{eff}} \approx \frac◆LB◆\beta / \bar{\lambda}◆RB◆◆LB◆k_{\mathrm{eff}} - 1◆RB◆$$
 
 Where $\bar{\lambda} \approx 0.08\,\mathrm{s}^{-1}$. For $k_{\mathrm{eff}} = 1.001$:
-$\tau_{\mathrm{eff}} \approx 0.0065 / (0.08 \times 0.001) \approx 81$ s --- manageable by
-Mechanical control systems. $\square$
+$\tau_{\mathrm{eff}} \approx 0.0065 / (0.08 \times 0.001) \approx 81$ s --- manageable by Mechanical
+control systems. $\square$
 
-:::warning
-Warning
-Responds on the timescale set by delayed neutrons ($\sim$Tens of seconds), provided
-$k_{\mathrm{eff}} \lt 1 + \beta$. Only if $k_{\mathrm{eff}}$ exceeds $1 + \beta$ does the reactor
-Become "prompt supercritical" and uncontrollable.
-:::
+:::warning Warning Responds on the timescale set by delayed neutrons ($\sim$Tens of seconds),
+provided $k_{\mathrm{eff}} \lt 1 + \beta$. Only if $k_{\mathrm{eff}}$ exceeds $1 + \beta$ does the
+reactor Become "prompt supercritical" and uncontrollable. :::
 
 ### Coolant
 
@@ -471,12 +459,12 @@ The coolant transfers heat from the fuel to the steam generators or turbine. Req
 Thermal conductivity and specific heat capacity, low neutron absorption, chemical stability under
 Radiation, and high boiling point.
 
-| Coolant | Used in | Advantages | Disadvantages |
+| Coolant              | Used in      | Advantages                             | Disadvantages                                |
 | -------------------- | ------------ | -------------------------------------- | -------------------------------------------- |
-| Light water | PWR, BWR | Cheap, good moderator | Boils at 100 deg C (1 atm), absorbs neutrons |
-| Heavy water (D$_2$O) | CANDU | Excellent moderator, low absorption | Expensive |
-| Carbon dioxide | AGR | Chemically inert, no phase change | Lower heat capacity |
-| Liquid sodium | Fast breeder | Excellent heat transfer, no moderation | Reacts violently with water/air |
+| Light water          | PWR, BWR     | Cheap, good moderator                  | Boils at 100 deg C (1 atm), absorbs neutrons |
+| Heavy water (D$_2$O) | CANDU        | Excellent moderator, low absorption    | Expensive                                    |
+| Carbon dioxide       | AGR          | Chemically inert, no phase change      | Lower heat capacity                          |
+| Liquid sodium        | Fast breeder | Excellent heat transfer, no moderation | Reacts violently with water/air              |
 
 ### Fuel and Enrichment
 
@@ -493,21 +481,18 @@ For compact gamma shielding. **Water** provides both shielding and moderation in
 
 ### PWR versus AGR Comparison
 
-| Feature | PWR | AGR |
+| Feature             | PWR                                 | AGR                                         |
 | ------------------- | ----------------------------------- | ------------------------------------------- |
-| Moderator | Light water | Graphite |
-| Coolant | Pressurised water ($\sim 155$ bar) | CO$_2$ gas ($\sim 40$ bar) |
-| Fuel | Enriched UO$_2$ (3--5\%) | Enriched UO$_2$ (2--3\%) in stainless steel |
-| Coolant temperature | $\sim 315$ deg C | $\sim 650$ deg C |
-| Thermal efficiency | $\sim 33\%$ | $\sim 41\%$ |
-| Steam cycle | Secondary loop (no boiling in core) | Direct (CO$_2$ heats water in boiler) |
+| Moderator           | Light water                         | Graphite                                    |
+| Coolant             | Pressurised water ($\sim 155$ bar)  | CO$_2$ gas ($\sim 40$ bar)                  |
+| Fuel                | Enriched UO$_2$ (3--5\%)            | Enriched UO$_2$ (2--3\%) in stainless steel |
+| Coolant temperature | $\sim 315$ deg C                    | $\sim 650$ deg C                            |
+| Thermal efficiency  | $\sim 33\%$                         | $\sim 41\%$                                 |
+| Steam cycle         | Secondary loop (no boiling in core) | Direct (CO$_2$ heats water in boiler)       |
 
-:::tip
-Tip
-Moderator and coolant (simpler but lower efficiency), while AGRs separate them (graphite moderator,
-CO$_2$ coolant), allowing higher temperature and thus higher efficiency from
-$\eta \lt{} 1 - T_c/T_h$.
-:::
+:::tip Tip Moderator and coolant (simpler but lower efficiency), while AGRs separate them (graphite
+moderator, CO$_2$ coolant), allowing higher temperature and thus higher efficiency from
+$\eta \lt{} 1 - T_c/T_h$. :::
 
 ## 7. Nuclear Fusion
 
@@ -537,10 +522,8 @@ Fission is initiated by a neutral particle (neutron), so there is no Coulomb bar
 Fusion requires positively charged nuclei to approach within $\sim 10^{-15}$ m, requiring enormous
 Kinetic energy to overcome the Coulomb repulsion.
 
-:::info
-Board Note AQA and Edexcel focus on the qualitative aspects of fission and fusion. CIE may
-Require calculation of energy released from mass defect.
-:::
+:::info Board Note AQA and Edexcel focus on the qualitative aspects of fission and fusion. CIE may
+Require calculation of energy released from mass defect. :::
 
 ## 8. Nuclear Fusion in Detail
 
@@ -570,8 +553,8 @@ $4\prescript{1}{}{1}\mathrm{H} \to \prescript{4}{}{2}\mathrm{He} + 2\mathrm{e}^+
 
 ### The CNO Cycle
 
-In stars more massive than $\sim 1.5\,M_\odot$The CNO cycle dominates. Carbon, nitrogen, and
-Oxygen act as catalysts:
+In stars more massive than $\sim 1.5\,M_\odot$The CNO cycle dominates. Carbon, nitrogen, and Oxygen
+act as catalysts:
 
 $$\prescript{12}{}{6}\mathrm{C} \xrightarrow{+\mathrm{p}} \prescript{13}{}{7}\mathrm{N} \xrightarrow{\beta^+} \prescript{13}{}{6}\mathrm{C} \xrightarrow{+\mathrm{p}} \prescript{14}{}{7}\mathrm{N} \xrightarrow{+\mathrm{p}} \prescript{15}{}{8}\mathrm{O} \xrightarrow{\beta^+} \prescript{15}{}{7}\mathrm{N} \xrightarrow{+\mathrm{p}} \prescript{12}{}{6}\mathrm{C} + \prescript{4}{}{2}\mathrm{He}$$
 
@@ -609,7 +592,7 @@ A tokamak confines hot plasma in a toroidal (doughnut-shaped) chamber using magn
 
 - **Toroidal field** $B_t$: produced by coils wound around the torus, prevents outward radial drift.
 - **Poloidal field** $B_p$: produced by the plasma current itself (induced by a central solenoid),
- prevents vertical drift.
+  prevents vertical drift.
 - The combined helical field lines confine particles as they spiral along them.
 
 The safety factor $q = rB_t / RB_p$ (minor radius $r$Major radius $R$) must satisfy $q \gt{} 1$
@@ -658,11 +641,9 @@ The iron core exceeds the Chandrasekhar limit ($\sim 1.4\,M_\odot$), it collapse
 Supernova, whose energy drives the creation of elements heavier than iron via the s-process and
 R-process.
 
-:::warning
-Warning
-Strictly, Ni-62 has the highest $E_b/A$ (8.7945 MeV/nucleon versus Fe-56's 8.7906 MeV/nucleon), but
-Fe-56 is produced in greater abundance because the alpha process favours nuclei with $N = Z$.
-:::
+:::warning Warning Strictly, Ni-62 has the highest $E_b/A$ (8.7945 MeV/nucleon versus Fe-56's 8.7906
+MeV/nucleon), but Fe-56 is produced in greater abundance because the alpha process favours nuclei
+with $N = Z$. :::
 
 ## Problem Set
 
@@ -937,28 +918,39 @@ Fusion, if achieved practically, promises such high energy output per unit fuel 
 
 </details>
 
-
 ---
 
-:::tip
-Tip
-Ready to test your understanding of **Nuclear Energy**? The [diagnostic test](/docs/alevel/physics/diagnostics/diag-nuclear-energy) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
+:::tip Tip Ready to test your understanding of **Nuclear Energy**? The
+[diagnostic test](/docs/alevel/physics/diagnostics/diag-nuclear-energy) contains the hardest
+questions within the A-Level specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Nuclear Energy with other physics topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Nuclear
+Energy with other physics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on
+self-marking and building a personal test matrix. :::
 
-:::danger
-Danger
+:::danger Danger
 
-- **Confusing nuclear fission with nuclear fusion:** Fission splits a HEAVY nucleus into lighter fragments (uranium-235 split by a neutron). Fusion joins LIGHT nuclei into a heavier one (hydrogen isotopes fusing into helium). Both release energy because the binding energy per nucleon curve peaks around iron-56. Fission and fusion move towards this peak from opposite sides.
+- **Confusing nuclear fission with nuclear fusion:** Fission splits a HEAVY nucleus into lighter
+  fragments (uranium-235 split by a neutron). Fusion joins LIGHT nuclei into a heavier one (hydrogen
+  isotopes fusing into helium). Both release energy because the binding energy per nucleon curve
+  peaks around iron-56. Fission and fusion move towards this peak from opposite sides.
 
-- **Misunderstanding mass defect and binding energy:** Mass defect is the difference between the mass of a nucleus and the sum of its constituent nucleon masses. Binding energy is the energy EQUIVALENT of this mass defect (E = delta_m * c squared). A larger binding energy per nucleon means a MORE stable nucleus, not that it has more energy available.
+- **Misunderstanding mass defect and binding energy:** Mass defect is the difference between the
+  mass of a nucleus and the sum of its constituent nucleon masses. Binding energy is the energy
+  EQUIVALENT of this mass defect (E = delta_m \* c squared). A larger binding energy per nucleon
+  means a MORE stable nucleus, not that it has more energy available.
 
-- **Forgetting the role of the moderator and control rods:** In a nuclear reactor, the moderator (e.g., graphite, water) SLOWS DOWN fast neutrons so they can be captured by uranium-235 (which preferentially absorbs slow neutrons). Control rods (e.g., boron, cadmium) ABSORB neutrons to control the rate of reaction. These serve different purposes and students frequently confuse them.
+- **Forgetting the role of the moderator and control rods:** In a nuclear reactor, the moderator
+  (e.g., graphite, water) SLOWS DOWN fast neutrons so they can be captured by uranium-235 (which
+  preferentially absorbs slow neutrons). Control rods (e.g., boron, cadmium) ABSORB neutrons to
+  control the rate of reaction. These serve different purposes and students frequently confuse them.
 
-- **Assuming all uranium isotopes are fissile:** Only uranium-235 (about 0.7% of natural uranium) is readily fissile by slow neutrons. Uranium-238 (99.3%) can capture fast neutrons but generally does not undergo fission -- instead it becomes plutonium-239 after beta decays. Enrichment increases the proportion of U-235.
+- **Assuming all uranium isotopes are fissile:** Only uranium-235 (about 0.7% of natural uranium) is
+  readily fissile by slow neutrons. Uranium-238 (99.3%) can capture fast neutrons but generally does
+  not undergo fission -- instead it becomes plutonium-239 after beta decays. Enrichment increases
+  the proportion of U-235.
 
 :::
 

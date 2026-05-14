@@ -1,6 +1,8 @@
 ---
 title: Momentum
-description: "A-Level Physics notes on Momentum: Proof from Newton's Laws for comprehensive revision and examination preparation. and examination pre."
+description:
+  "A-Level Physics notes on Momentum: Proof from Newton's Laws for comprehensive revision and
+  examination preparation. and examination pre."
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Physics
@@ -9,11 +11,10 @@ categories:
   - Physics
 slug: momentum
 ---
+
 ## Momentum
 
-:::info
-Board Coverage AQA Paper 1 | Edexcel CP2 | OCR (A) Paper 1 | CIE P2
-:::
+:::info Board Coverage AQA Paper 1 | Edexcel CP2 | OCR (A) Paper 1 | CIE P2 :::
 
 <PhetSimulation simulationId="collision-lab" title="Collision Lab" />
 
@@ -177,8 +178,7 @@ A particle of mass $2m$ moving with speed $u$ collides with a stationary particl
 
 **Answer.** Let the original direction be the $x$-axis.
 
-Momentum conservation ($x$): $2mu = 2mv_1\cos 60° + mv_2\cos\theta$I.e.,
-$2u = v_1 + v_2\cos\theta$.
+Momentum conservation ($x$): $2mu = 2mv_1\cos 60° + mv_2\cos\theta$I.e., $2u = v_1 + v_2\cos\theta$.
 
 Momentum conservation ($y$): $0 = 2mv_1\sin 60° - mv_2\sin\theta$I.e.,
 $v_2\sin\theta = v_1\sqrt{3}$.
@@ -188,8 +188,8 @@ KE conservation: $2mu^2 = 2mv_1^2 + mv_2^2$I.e., $2u^2 = 2v_1^2 + v_2^2$.
 From the $x$-momentum: $v_2\cos\theta = 2u - v_1$. Squaring and adding the $y$-equation:
 $v_2^2 = (2u - v_1)^2 + 3v_1^2 = 4u^2 - 4uv_1 + 4v_1^2$.
 
-Substituting into KE: $2u^2 = 2v_1^2 + 4u^2 - 4uv_1 + 4v_1^2$I.e., $6v_1^2 - 4uv_1 + 2u^2 = 0$
-I.e., $3v_1^2 - 2uv_1 + u^2 = 0$I.e., $(v_1 - u)(3v_1 - u) = 0$.
+Substituting into KE: $2u^2 = 2v_1^2 + 4u^2 - 4uv_1 + 4v_1^2$I.e., $6v_1^2 - 4uv_1 + 2u^2 = 0$ I.e.,
+$3v_1^2 - 2uv_1 + u^2 = 0$I.e., $(v_1 - u)(3v_1 - u) = 0$.
 
 Since $v_1 \neq u$ (the particle deflects), $v_1 = u/3$. Then
 $v_2^2 = 4u^2 - 4u^2/3 + 4u^2/9 = \frac{36 - 12 + 4}{9}u^2 = \frac{28}{9}u^2$So
@@ -201,8 +201,8 @@ $v_2 = \frac◆LB◆2\sqrt{7}◆RB◆◆LB◆3◆RB◆u$.
 
 The area under a force-time graph equals the impulse, which equals the change in momentum.
 
-For a collision, the force rises rapidly, peaks, and falls. A larger maximum force
-Corresponds to a shorter collision time (for the same impulse).
+For a collision, the force rises rapidly, peaks, and falls. A larger maximum force Corresponds to a
+shorter collision time (for the same impulse).
 
 ## Problem Set
 
@@ -240,7 +240,8 @@ $J = \Delta p = m(v - u) = 0.15(8 - (-12)) = 0.15 \times 20 = 3.0$ N s (away fro
 <summary>Problem 3</summary>
 In a nuclear reactor, a neutron of mass $m$ travelling at $v$ collides elastically with a stationary carbon nucleus of mass $12m$. What fraction of the neutron's kinetic energy is transferred to the carbon nucleus?
 
-**Answer.** $v_2 = \frac{2m_1 u_1}{m_1 + m_2} = \frac◆LB◆2m \cdot v◆RB◆◆LB◆m + 12m◆RB◆ = \frac{2v}{13}$.
+**Answer.**
+$v_2 = \frac{2m_1 u_1}{m_1 + m_2} = \frac◆LB◆2m \cdot v◆RB◆◆LB◆m + 12m◆RB◆ = \frac{2v}{13}$.
 
 KE of carbon =
 $\frac{1}{2}(12m)\left(\frac{2v}{13}\right)^2 = \frac{1}{2}(12m)\frac{4v^2}{169} = \frac{48mv^2}{338}$.
@@ -280,8 +281,8 @@ $u = \frac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆v_1 + \frac{1}{2}v_2$.
 Momentum ($y$): $0 = mv_1\sin 30° - mv_2\sin 60^\circ$I.e., $v_1 = \sqrt{3}\,v_2$.
 
 Substituting:
-$u = \frac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆(\sqrt{3}v_2) + \frac{v_2}{2} = \frac{3v_2}{2} + \frac{v_2}{2} = 2v_2$. So
-$v_2 = u/2$ and $v_1 = \sqrt{3}u/2$.
+$u = \frac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆(\sqrt{3}v_2) + \frac{v_2}{2} = \frac{3v_2}{2} + \frac{v_2}{2} = 2v_2$.
+So $v_2 = u/2$ and $v_1 = \sqrt{3}u/2$.
 
 <b>If you get this wrong, revise:</b> [2D Collisions](#5-2d-collisions)
 
@@ -291,8 +292,8 @@ $v_2 = u/2$ and $v_1 = \sqrt{3}u/2$.
 <summary>Problem 6</summary>
 Prove that kinetic energy is not conserved in a perfectly inelastic collision between two bodies, using the general result for energy loss.
 
-**Answer.** For $e = 0$The common velocity is $v = (m_1 u_1 + m_2 u_2)/(m_1 + m_2)$. The KE loss
-Is $\Delta E_k = \frac{m_1 m_2}{2(m_1+m_2)}(u_1 - u_2)^2$. This is zero only if $u_1 = u_2$ (no
+**Answer.** For $e = 0$The common velocity is $v = (m_1 u_1 + m_2 u_2)/(m_1 + m_2)$. The KE loss Is
+$\Delta E_k = \frac{m_1 m_2}{2(m_1+m_2)}(u_1 - u_2)^2$. This is zero only if $u_1 = u_2$ (no
 Collision). For any actual collision ($u_1 \neq u_2$), $\Delta E_k > 0$So KE is not conserved.
 $\square$
 
@@ -305,8 +306,8 @@ $\square$
 A $60$ kg astronaut floating in space throws a $2.0$ kg tool at $8.0$ m s$^{-1}$. What is the astronaut's recoil velocity?
 
 **Answer.** By conservation of momentum: $0 = m_a v_a + m_t v_t$.
-$v_a = -\frac{m_t v_t}{m_a} = -\frac◆LB◆2.0 \times 8.0◆RB◆◆LB◆60◆RB◆ = -0.267$ m s$^{-1}$ (opposite to the
-Throw).
+$v_a = -\frac{m_t v_t}{m_a} = -\frac◆LB◆2.0 \times 8.0◆RB◆◆LB◆60◆RB◆ = -0.267$ m s$^{-1}$ (opposite
+to the Throw).
 
 <b>If you get this wrong, revise:</b> [Conservation of Momentum](#2-conservation-of-momentum)
 
@@ -316,10 +317,11 @@ Throw).
 <summary>Problem 8</summary>
 A $0.50$ kg ball falls vertically from height $5.0$ m onto a concrete floor and rebounds to height $3.2$ m. Find the coefficient of restitution between the ball and the floor.
 
-**Answer.** Speed just before impact: $v_1 = \sqrt◆LB◆2g \times 5.0◆RB◆ = \sqrt{98.1} = 9.90$ m s$^{-1}$
-(downward, so $u_1 = -9.90$).
+**Answer.** Speed just before impact: $v_1 = \sqrt◆LB◆2g \times 5.0◆RB◆ = \sqrt{98.1} = 9.90$ m
+s$^{-1}$ (downward, so $u_1 = -9.90$).
 
-Speed just after impact: $v_2 = \sqrt◆LB◆2g \times 3.2◆RB◆ = \sqrt{62.78} = 7.92$ m s$^{-1}$ (upward).
+Speed just after impact: $v_2 = \sqrt◆LB◆2g \times 3.2◆RB◆ = \sqrt{62.78} = 7.92$ m s$^{-1}$
+(upward).
 
 The floor has infinite mass, so
 $e = \frac◆LB◆v_{\mathrm{separation}}◆RB◆◆LB◆v_{\mathrm{approach}}◆RB◆ = \frac{7.92}{9.90} = 0.80$.
@@ -334,8 +336,7 @@ A $3.0$ kg body moving at $4.0$ m s$^{-1}$ collides with a $5.0$ kg body moving 
 
 **Answer.** Momentum: $3(4) + 5(2) = 3v_1 + 5v_2$I.e., $22 = 3v_1 + 5v_2$ ... (i).
 
-Restitution: $0.6 = -\frac{v_1 - v_2}{4 - 2} = -\frac{v_1 - v_2}{2}$So $v_1 - v_2 = -1.2$ ...
-(ii).
+Restitution: $0.6 = -\frac{v_1 - v_2}{4 - 2} = -\frac{v_1 - v_2}{2}$So $v_1 - v_2 = -1.2$ ... (ii).
 
 From (ii): $v_1 = v_2 - 1.2$. Substituting into (i): $22 = 3(v_2 - 1.2) + 5v_2 = 8v_2 - 3.6$.
 $v_2 = 25.6/8 = 3.2$ m s$^{-1}$. $v_1 = 3.2 - 1.2 = 2.0$ m s$^{-1}$.
@@ -388,13 +389,11 @@ $$|\mathbf{J}| = \sqrt{J_x^2 + J_y^2}$$
 When a ball strikes a smooth wall, only the component of momentum perpendicular to the wall changes.
 The parallel component is unchanged because the wall exerts no force parallel to its surface.
 
-:::tip
-Exam Technique For a ball hitting a smooth wall at angle $\alpha$ to the normal with speed
+:::tip Exam Technique For a ball hitting a smooth wall at angle $\alpha$ to the normal with speed
 $u$ and rebounding with the normal component reduced by factor $e$: the impulse is
 $J = m(1+e)u\cos\alpha$ perpendicular to the wall, and the rebound angle $\beta$ satisfies
-$\tan\beta = \frac◆LB◆u\sin\alpha◆RB◆◆LB◆eu\cos\alpha◆RB◆ = \frac◆LB◆\tan\alpha◆RB◆◆LB◆e◆RB◆$Which is greater than
-$\alpha$ when $e \lt 1$.
-:::
+$\tan\beta = \frac◆LB◆u\sin\alpha◆RB◆◆LB◆eu\cos\alpha◆RB◆ = \frac◆LB◆\tan\alpha◆RB◆◆LB◆e◆RB◆$Which
+is greater than $\alpha$ when $e \lt 1$. :::
 
 <details>
 <summary>Example: Ball Hitting a Wall at an Angle</summary>
@@ -457,12 +456,9 @@ $\square$
 Materials involved), not of the individual bodies. For a perfectly elastic collision ($e = 1$), the
 Relative speed is unchanged -- the bodies bounce off each other just as fast as they approached.
 
-:::warning
-Warning
-Line joining the centres of the two bodies at the moment of impact). In oblique collisions, only the
-Components along this line are used in the restitution equation. The perpendicular components are
-Governed by the smoothness of the surfaces.
-:::
+:::warning Warning Line joining the centres of the two bodies at the moment of impact). In oblique
+collisions, only the Components along this line are used in the restitution equation. The
+perpendicular components are Governed by the smoothness of the surfaces. :::
 
 ## 9. Bouncing Ball: Proof that $e = \sqrt{h'/h}$
 
@@ -488,12 +484,10 @@ $$e = \frac{v}{u} = \frac◆LB◆\sqrt{2gh'}◆RB◆◆LB◆\sqrt{2gh}◆RB◆ =
 
 $\square$
 
-:::tip
-Exam Technique This result provides a quick experimental method to determine $e$: drop a ball
+:::tip Exam Technique This result provides a quick experimental method to determine $e$: drop a ball
 From a known height, measure the rebound height, and compute $e = \sqrt{h'/h}$. This is often tested
 In practical exams. For successive bounces, the heights form a geometric sequence:
-$h,\ e^2h,\ e^4h,\ \ldots$
-:::
+$h,\ e^2h,\ e^4h,\ \ldots$ :::
 
 ## 10. Explosions and Rocket Propulsion
 
@@ -553,13 +547,11 @@ $$\Delta v = u\ln\left(\frac{m_0}{m_f}\right)$$
 Ratio $m_0/m_f$. This is why multi-stage rockets are used -- dropping empty stages reduces $m_f$
 Without reducing $m_0$.
 
-:::info
-Board Coverage AQA: Momentum conservation in explosions is required; the rocket equation is
+:::info Board Coverage AQA: Momentum conservation in explosions is required; the rocket equation is
 Extension material. Edexcel CP2: Explosions appear in the momentum topic; the rocket equation is not
 Explicitly required but may appear in context. OCR (A): Explosions are core; rocket propulsion is
 Stretch material. CIE P2: Explosions are required; the rocket equation occasionally appears as a
-Challenging problem.
-:::
+Challenging problem. :::
 
 ## Further Problems
 
@@ -666,28 +658,39 @@ $\Delta v = u\ln(m_0/m_f) = 2000\ln(1000/200) = 2000\ln 5 = 2000 \times 1.609 = 
 
 </details>
 
-
 ---
 
-:::tip
-Diagnostic Test
-Ready to test your understanding of **Momentum**? The [diagnostic test](/docs/alevel/physics/diagnostics/diag-momentum) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
+:::tip Diagnostic Test Ready to test your understanding of **Momentum**? The
+[diagnostic test](/docs/alevel/physics/diagnostics/diag-momentum) contains the hardest questions
+within the A-Level specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Momentum with other physics topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Momentum
+with other physics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on
+self-marking and building a personal test matrix. :::
 
-:::danger
-Common Pitfalls
+:::danger Common Pitfalls
 
-- **Confusing momentum and kinetic energy in collisions:** Momentum is always conserved in a collision (if no external forces). Kinetic energy is only conserved in PERFECTLY ELASTIC collisions. In inelastic collisions, kinetic energy is lost (converted to heat, sound, deformation) but momentum is still conserved. Never assume a collision is elastic unless told so.
+- **Confusing momentum and kinetic energy in collisions:** Momentum is always conserved in a
+  collision (if no external forces). Kinetic energy is only conserved in PERFECTLY ELASTIC
+  collisions. In inelastic collisions, kinetic energy is lost (converted to heat, sound,
+  deformation) but momentum is still conserved. Never assume a collision is elastic unless told so.
 
-- **Forgetting that momentum is a vector:** When solving 2D collision problems, momentum must be conserved separately in each direction (x and y). A common error is to add momentum magnitudes without considering direction. Two objects of equal mass moving at equal speeds in opposite directions have a total momentum of ZERO.
+- **Forgetting that momentum is a vector:** When solving 2D collision problems, momentum must be
+  conserved separately in each direction (x and y). A common error is to add momentum magnitudes
+  without considering direction. Two objects of equal mass moving at equal speeds in opposite
+  directions have a total momentum of ZERO.
 
-- **Assuming impulse only changes the faster object's momentum:** In a collision, both objects experience equal and opposite impulses (Newton's third law). The change in momentum of object A is equal in magnitude and opposite in direction to the change in momentum of object B, regardless of their relative masses or speeds.
+- **Assuming impulse only changes the faster object's momentum:** In a collision, both objects
+  experience equal and opposite impulses (Newton's third law). The change in momentum of object A is
+  equal in magnitude and opposite in direction to the change in momentum of object B, regardless of
+  their relative masses or speeds.
 
-- **Misapplying the coefficient of restitution:** The coefficient of restitution e relates the RELATIVE speed of separation to the RELATIVE speed of approach: e = (v2 - v1) / (u1 - u2). Note the order of subtraction -- the sign matters. For a perfectly elastic collision e = 1, for perfectly inelastic e = 0.
+- **Misapplying the coefficient of restitution:** The coefficient of restitution e relates the
+  RELATIVE speed of separation to the RELATIVE speed of approach: e = (v2 - v1) / (u1 - u2). Note
+  the order of subtraction -- the sign matters. For a perfectly elastic collision e = 1, for
+  perfectly inelastic e = 0.
 
 :::
 

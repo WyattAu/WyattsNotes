@@ -1,6 +1,8 @@
 ---
 title: Software Licensing
-description: "Software licensing: copyleft and permissive licences, GPL family, Apache, MIT, licence compatibility, and guidance on choosing open-source licences."
+description:
+  'Software licensing: copyleft and permissive licences, GPL family, Apache, MIT, licence
+  compatibility, and guidance on choosing open-source licences.'
 date: 2025-07-07T23:37:45.807Z
 tags:
   - CS
@@ -9,6 +11,7 @@ categories:
 slug: software-licensing
 sidebar_position: 2
 ---
+
 ## Copyleft Licenses
 
 ### AGPLv3 (Affero General Public License v3)
@@ -27,18 +30,18 @@ Traditional copyright law sense.
 **What triggers AGPLv3 obligations:**
 
 - Modifying AGPLv3-licensed code and making it available over a network (e.g., deploying it as a
- SaaS product)
+  SaaS product)
 - Distributing modified copies to third parties
 - Distributing a combined work that incorporates AGPLv3 code
 
 **Compliance obligations:**
 
-- Provide complete source code (including all of your modifications) to network users, via
- a conspicuous notice and link embedded in the user interface
+- Provide complete source code (including all of your modifications) to network users, via a
+  conspicuous notice and link embedded in the user interface
 - Include all license notices, copyright notices, and attribution
 - Ensure downstream recipients receive the same AGPLv3 license rights
 - Comply with all GPLv3 requirements: anti-Tivoization provisions (Section 6), patent provisions
- (Section 11), and source distribution requirements (Section 4)
+  (Section 11), and source distribution requirements (Section 4)
 
 **Why it is the strongest copyleft in common use:**
 
@@ -50,15 +53,15 @@ Microservice architecture where services communicate over HTTP, any web applicat
 **Real-world consequences:**
 
 - **MongoDB** was originally licensed under AGPLv3. This was deliberately chosen to prevent cloud
- providers from offering MongoDB-as-a-Service without contributing back. When AWS launched
- DocumentDB (a MongoDB-compatible service) without contributing to MongoDB, MongoDB created the
- SSPL and eventually moved to a proprietary license entirely.
+  providers from offering MongoDB-as-a-Service without contributing back. When AWS launched
+  DocumentDB (a MongoDB-compatible service) without contributing to MongoDB, MongoDB created the
+  SSPL and eventually moved to a proprietary license entirely.
 - **Mastodon** uses AGPLv3 to ensure that anyone hosting a Mastodon instance and making
- modifications must share those modifications. This preserves the federated, community-driven
- nature of the Fediverse.
+  modifications must share those modifications. This preserves the federated, community-driven
+  nature of the Fediverse.
 - Many enterprise organizations maintain explicit policies prohibiting AGPLv3 dependencies because
- the network interaction trigger is broad enough that even internal network services could
- potentially trigger compliance obligations.
+  the network interaction trigger is broad enough that even internal network services could
+  potentially trigger compliance obligations.
 
 **Key nuance:** Section 13 applies to the _modified version_ of the program. If you deploy
 Unmodified AGPLv3 software as-is, you still must provide the source code to users under Section 13
@@ -80,24 +83,24 @@ Internal use does not trigger the license. Hosting as a SaaS does **NOT** trigge
 **Key differences from GPLv2:**
 
 - **Patent retaliation (Section 11):** If a user initiates patent litigation against any party
- alleging that the GPL-covered software constitutes patent infringement, that user's patent license
- for the software is terminated. This acts as both an implicit patent grant (the license grants
- permission to use the software, which would be meaningless if contributors could sue for patent
- infringement of their own contributions) and a deterrent against patent aggression.
+  alleging that the GPL-covered software constitutes patent infringement, that user's patent license
+  for the software is terminated. This acts as both an implicit patent grant (the license grants
+  permission to use the software, which would be meaningless if contributors could sue for patent
+  infringement of their own contributions) and a deterrent against patent aggression.
 - **Anti-Tivoization (Section 6):** If you distribute a consumer product containing GPLv3 software,
- and the product includes installation information that allows the user to reinstall modified
- software on the device, you must provide that installation information. If the product does not
- include such information, you must offer it in writing. This prevents hardware manufacturers from
- using GPLv3 code while cryptographically locking the device to prevent user modifications — the
- practice that gave "Tivoization" its name (TiVo used Linux but locked down the bootloader to
- prevent users from running modified firmware).
+  and the product includes installation information that allows the user to reinstall modified
+  software on the device, you must provide that installation information. If the product does not
+  include such information, you must offer it in writing. This prevents hardware manufacturers from
+  using GPLv3 code while cryptographically locking the device to prevent user modifications — the
+  practice that gave "Tivoization" its name (TiVo used Linux but locked down the bootloader to
+  prevent users from running modified firmware).
 - **Compatibility with Apache 2.0:** GPLv3 was specifically designed to be compatible with Apache
- 2.0, resolving a major incompatibility with GPLv2. The GPLv3 text explicitly permits the
- additional conditions imposed by Apache 2.0 (including its patent retaliation clause), which GPLv2
- does not permit.
+  2.0, resolving a major incompatibility with GPLv2. The GPLv3 text explicitly permits the
+  additional conditions imposed by Apache 2.0 (including its patent retaliation clause), which GPLv2
+  does not permit.
 - **Internationalization:** GPLv3 was drafted with international copyright frameworks in mind (Berne
- Convention, WIPO Copyright Treaty), while GPLv2's language was primarily oriented toward US
- copyright law.
+  Convention, WIPO Copyright Treaty), while GPLv2's language was primarily oriented toward US
+  copyright law.
 
 **Compatibility with GPLv2:** GPLv3 is **NOT** compatible with "GPLv2 only" code. GPLv2 code that
 Carries the "or any later version" clause (e.g., "Licensed under the GNU General Public License,
@@ -118,20 +121,20 @@ LGPLv3's copyleft obligation applies to modifications of the LGPL-licensed work 
 Static linking, to the combined work as a whole. The specific rules:
 
 - **Dynamic linking:** If a proprietary application dynamically links to an LGPL library at runtime,
- the proprietary application is generally NOT considered a derivative work of the LGPL library. The
- proprietary application can remain under its own license. However, you must still distribute the
- source code of the LGPL library (including any modifications you made to it), and you must provide
- the object files or a mechanism for the user to relink the proprietary application against a
- modified version of the LGPL library (Section 4(d)). This ensures users can replace the LGPL
- library with their own version.
+  the proprietary application is generally NOT considered a derivative work of the LGPL library. The
+  proprietary application can remain under its own license. However, you must still distribute the
+  source code of the LGPL library (including any modifications you made to it), and you must provide
+  the object files or a mechanism for the user to relink the proprietary application against a
+  modified version of the LGPL library (Section 4(d)). This ensures users can replace the LGPL
+  library with their own version.
 - **Static linking:** If a proprietary application statically links to an LGPL library, the
- combination is generally considered a single work under copyright law, and the entire combined
- work (including the proprietary application code) must be distributed under LGPLv3. You can avoid
- this by providing object files for the proprietary parts and a mechanism for the user to relink
- (Section 4(d) allows this as a compliance mechanism).
+  combination is generally considered a single work under copyright law, and the entire combined
+  work (including the proprietary application code) must be distributed under LGPLv3. You can avoid
+  this by providing object files for the proprietary parts and a mechanism for the user to relink
+  (Section 4(d) allows this as a compliance mechanism).
 - **Modifying the library:** Any modifications to the LGPL-licensed library source code must be
- distributed under LGPLv3, regardless of whether the application that uses the library is
- statically or dynamically linked.
+  distributed under LGPLv3, regardless of whether the application that uses the library is
+  statically or dynamically linked.
 
 **When proprietary apps CAN use LGPL libraries:** Dynamic linking is the safe path. If your
 Application loads the LGPL library at runtime (via `dlopen`Shared library loading, or equivalent),
@@ -185,9 +188,9 @@ Covered by MPL 2.0, not to the entire combined work or project.
 **File-level copyleft in practice:**
 
 - If you modify an MPL-licensed file, the modified file must be distributed under MPL 2.0 (Section
- 3.3)
+  3.3)
 - If you add new files that are not derivative works of existing MPL-licensed files, those new files
- can be under any license whatsoever — including a proprietary license
+  can be under any license whatsoever — including a proprietary license
 - The copyleft does not propagate to unrelated code in the same project, repository, or binary
 
 **Why Firefox uses MPL 2.0:** Firefox is a large project with contributions from many organizations,
@@ -225,16 +228,16 @@ Applied to new repositories on GitHub.
 
 - Include the copyright notice in all copies or substantial portions of the software
 - Include the license text (the permission grant and warranty disclaimer) in all copies or
- substantial portions of the software
-- The license text must be included in any binary distribution ( as a `LICENSE` file
- shipped alongside the binary)
+  substantial portions of the software
+- The license text must be included in any binary distribution ( as a `LICENSE` file shipped
+  alongside the binary)
 
 **What you CAN do:**
 
 - Use, copy, modify, merge, publish, distribute, sublicense, and sell copies of the software
 - Use it in proprietary, closed-source products without any obligation to release your modifications
 - Distribute it under a different license entirely (the "sublicense" right — you can take MIT code
- and redistribute it under Apache 2.0, GPL, or even a proprietary license)
+  and redistribute it under Apache 2.0, GPL, or even a proprietary license)
 - Use it in commercial products without payment or royalties of any kind
 
 **What you CANNOT do:**
@@ -242,7 +245,7 @@ Applied to new repositories on GitHub.
 - Hold the copyright holders liable for any damages arising from the use of the software
 - Remove or alter the copyright notice
 - Represent that the copyright holders endorse your product (the license grants rights to the
- software, not to the authors' identities or reputation)
+  software, not to the authors' identities or reputation)
 
 **Why it is the most popular:** The MIT License is extremely short (under 200 words of substantive
 Text), easy to understand, and imposes minimal obligations. Its simplicity is both a strength (low
@@ -265,37 +268,37 @@ Projects. It is more comprehensive than MIT but remains permissive.
 **Key provisions:**
 
 - **Patent grant (Section 3):** Each contributor grants "a world-wide, royalty-free, non-exclusive
- ... Irrevocable (except as stated in this section) patent license" covering their contributions.
- This explicitly protects users from patent infringement claims by the contributors themselves — a
- protection that MIT entirely lacks.
+  ... Irrevocable (except as stated in this section) patent license" covering their contributions.
+  This explicitly protects users from patent infringement claims by the contributors themselves — a
+  protection that MIT entirely lacks.
 - **Patent retaliation (Section 3.3):** If you initiate patent litigation against the software
- (asserting that the software infringes one of your patents), your patent license under Section 3
- is automatically terminated. This is a defense mechanism that discourages contributors or users
- from filing patent suits against the project.
+  (asserting that the software infringes one of your patents), your patent license under Section 3
+  is automatically terminated. This is a defense mechanism that discourages contributors or users
+  from filing patent suits against the project.
 - **Trademark protection (Section 7):** The license does not grant any trademark rights whatsoever.
- You cannot use the names, trade names, trademarks, or service marks of any contributor to endorse
- or promote your product without separate written permission. MIT is silent on trademarks; Apache
- 2.0 explicitly addresses them.
+  You cannot use the names, trade names, trademarks, or service marks of any contributor to endorse
+  or promote your product without separate written permission. MIT is silent on trademarks; Apache
+  2.0 explicitly addresses them.
 - **Attribution (Section 4):** If the work includes a `NOTICE` file, you must include a copy of the
- `NOTICE` file in your distribution and provide attribution as specified in the `NOTICE` file. This
- creates a clear, machine-readable mechanism for tracking attribution obligations across a large
- dependency tree.
+  `NOTICE` file in your distribution and provide attribution as specified in the `NOTICE` file. This
+  creates a clear, machine-readable mechanism for tracking attribution obligations across a large
+  dependency tree.
 - **State changes (Section 4(b)):** If you modify files, you must include a prominent notice stating
- that you changed the files. This creates an audit trail that makes it clear which code is original
- and which is modified.
+  that you changed the files. This creates an audit trail that makes it clear which code is original
+  and which is modified.
 - **Source distribution (Section 4(a)):** You must include a copy of the license in every
- distributed source file. This is implemented as a file header comment containing the
- Apache 2.0 boilerplate.
+  distributed source file. This is implemented as a file header comment containing the Apache 2.0
+  boilerplate.
 
 **Why large companies prefer Apache 2.0 over MIT:**
 
 - Explicit patent grant reduces legal risk from contributors asserting patents against users
 - Trademark protection prevents brand dilution and endorsement misrepresentation
 - `NOTICE` file mechanism provides a clear, auditable system for tracking attribution across large
- dependency trees
+  dependency trees
 - State changes requirement creates a compliance trail
 - Explicit source-file notice requirement eliminates the ambiguity around "substantial portions" in
- MIT
+  MIT
 
 **Compatibility note:** Apache 2.0 is compatible with GPLv3 but NOT with GPLv2. The patent
 Retaliation clause in Apache 2.0 Section 3.3 constitutes an "additional restriction" under GPLv2's
@@ -310,18 +313,18 @@ University of California, Berkeley Computer Systems Research Group (CSRG).
 **BSD 2-Clause ("Simplified BSD"):**
 
 - Redistribution and use in source and binary forms, with or without modification, are permitted
- provided that the copyright notice and this license text are included
+  provided that the copyright notice and this license text are included
 - The names of the copyright holders may not be used to endorse or promote products derived from the
- software without prior written permission
+  software without prior written permission
 
 **BSD 3-Clause ("New BSD" or "Modified BSD"):**
 
 - All BSD 2-Clause requirements, plus:
 - **Non-endorsement clause:** Redistributions in binary form must reproduce the copyright notice,
- the license conditions, and a disclaimer in the documentation and/or other materials provided with
- the distribution. In practice, this means if you ship a binary that includes BSD 3-Clause code,
- you must list the copyright holders and license terms in your product documentation or a `NOTICE`
- file.
+  the license conditions, and a disclaimer in the documentation and/or other materials provided with
+  the distribution. In practice, this means if you ship a binary that includes BSD 3-Clause code,
+  you must list the copyright holders and license terms in your product documentation or a `NOTICE`
+  file.
 
 **Historical context — the original 4-Clause BSD license:**
 
@@ -378,11 +381,11 @@ This software for any purpose with or without fee is hereby granted. THERE IS NO
 **Key characteristics:**
 
 - No copyright notice requirement (hence "0BSD" — zero substantive clauses beyond the bare
- permission grant)
+  permission grant)
 - No requirement to include the license text in distributions
 - No warranty disclaimer beyond the single "THERE IS NO WARRANTY" statement
 - Functionally equivalent to placing the work in the public domain, with a fallback license for
- jurisdictions that do not recognize public domain dedication
+  jurisdictions that do not recognize public domain dedication
 
 **Adoption:** Some Go projects and utilities use 0BSD, particularly for trivial contributions. It is
 OSI-approved. Its minimalism makes it suitable for very small code snippets where any non-trivial
@@ -399,10 +402,10 @@ Permitted by law.
 **Legal standing varies by jurisdiction:**
 
 - In jurisdictions that recognize public domain dedication (most common law countries, including the
- US), CC0 effectively places the work in the public domain — the author retains no copyright
+  US), CC0 effectively places the work in the public domain — the author retains no copyright
 - In jurisdictions that do not allow copyright waiver (some civil law countries in continental
- Europe, where authors' rights are considered inalienable), CC0 falls back to a broad, permissive
- license that grants all rights without requiring attribution or imposing any conditions
+  Europe, where authors' rights are considered inalienable), CC0 falls back to a broad, permissive
+  license that grants all rights without requiring attribution or imposing any conditions
 - CC0 explicitly disclaims all copyright and neighboring rights worldwide to the extent possible
 
 **Limitations:**
@@ -410,10 +413,10 @@ Permitted by law.
 - CC0 does NOT include a patent grant — it waives copyright only, not patent rights
 - CC0 does NOT include a trademark license — you cannot use the author's trademarks
 - CC0 is NOT OSI-approved — the OSI requires that open-source licenses include copyright notice and
- license text redistribution requirements, which CC0 explicitly does not impose
+  license text redistribution requirements, which CC0 explicitly does not impose
 - CC0 is not formally GPL-compatible — the FSF considers public domain works to have "no license,"
- which can create theoretical problems in GPL compliance (in practice, public domain code can be
- included in GPL projects because there are no copyright restrictions to conflict with)
+  which can create theoretical problems in GPL compliance (in practice, public domain code can be
+  included in GPL projects because there are no copyright restrictions to conflict with)
 
 **Use case:** CC0 is most commonly used for data sets, documentation, images, and other creative
 Works where the author genuinely wants no restrictions whatsoever. It is less common for software,
@@ -428,15 +431,15 @@ The Unlicense is a public domain dedication with a fallback license, created by 
 
 1. The author dedicates the work to the public domain using explicit, unambiguous legal language
 2. If the public domain dedication is not legally effective in a given jurisdiction, a fallback
- all-permissive license grants the same rights (use, copy, modify, merge, publish, distribute,
- sublicense, and sell)
+   all-permissive license grants the same rights (use, copy, modify, merge, publish, distribute,
+   sublicense, and sell)
 
 **Ambiguity in some jurisdictions:**
 
 - Like CC0, the Unlicense faces the challenge that some jurisdictions do not recognize public domain
- dedication as a valid legal act
+  dedication as a valid legal act
 - The fallback license is less comprehensive than Apache 2.0 or MIT — it lacks explicit patent
- provisions and trademark provisions
+  provisions and trademark provisions
 - The Unlicense is NOT OSI-approved
 
 **Practical note:** The Unlicense is more commonly used for small utilities and scripts than for
@@ -451,12 +454,12 @@ Hocevar and is essentially a novelty license.
 **Legal status:**
 
 - Despite its informal language, WTFPL has been reviewed by legal scholars and is generally
- considered to grant the same practical rights as MIT or BSD
+  considered to grant the same practical rights as MIT or BSD
 - However, its informal phrasing ("DO WHAT THE FUCK YOU WANT TO") may not be recognized as a valid
- legal instrument in all jurisdictions, particularly in courts that expect formal legal language in
- license documents
+  legal instrument in all jurisdictions, particularly in courts that expect formal legal language in
+  license documents
 - It includes NO patent grant, NO trademark provisions, and NO warranty disclaimer beyond a brief
- statement
+  statement
 
 **Do not use for serious projects.** While technically functional, WTFPL's informal language creates
 Unnecessary legal ambiguity with no corresponding benefit. If you want a minimal permissive license,
@@ -465,41 +468,45 @@ Novelty, not a serious licensing choice for production software.
 
 ### Eclipse Public License 2.0 (EPL 2.0)
 
-EPL 2.0 is a weak-copyleft license maintained by the Eclipse Foundation. It is the primary license for
-The Eclipse IDE, Jakarta EE, and a large portion of the Java enterprise ecosystem. It occupies a
+EPL 2.0 is a weak-copyleft license maintained by the Eclipse Foundation. It is the primary license
+for The Eclipse IDE, Jakarta EE, and a large portion of the Java enterprise ecosystem. It occupies a
 Middle ground between permissive licenses (MIT, Apache 2.0) and strong copyleft licenses (GPL).
 
 **Key characteristics:**
 
-- **File-level copyleft:** Like MPL 2.0, EPL's copyleft obligation applies only to files that contain
- EPL-licensed code or are derivative works of EPL-licensed files. You can combine EPL-licensed modules
- with proprietary code in the same project as long as they remain in separate files and modules.
-- **Patent grant with retaliation:** EPL 2.0 includes an explicit patent grant from contributors (Section
- 1(b)) and a patent retaliation clause (Section 10) that terminates the patent grant if a recipient
- brings a patent infringement claim against the software. This is similar in effect to Apache 2.0's
- patent retaliation provisions.
-- **No copyleft compatibility with GPLv2:** EPL 2.0 is compatible with GPLv3 (you can combine EPL and
- GPLv3 code) but NOT with GPLv2. The incompatibility with GPLv2 arises from EPL's additional
- conditions (patent retaliation, indemnification) that GPLv2 Section 4 does not permit.
+- **File-level copyleft:** Like MPL 2.0, EPL's copyleft obligation applies only to files that
+  contain EPL-licensed code or are derivative works of EPL-licensed files. You can combine
+  EPL-licensed modules with proprietary code in the same project as long as they remain in separate
+  files and modules.
+- **Patent grant with retaliation:** EPL 2.0 includes an explicit patent grant from contributors
+  (Section 1(b)) and a patent retaliation clause (Section 10) that terminates the patent grant if a
+  recipient brings a patent infringement claim against the software. This is similar in effect to
+  Apache 2.0's patent retaliation provisions.
+- **No copyleft compatibility with GPLv2:** EPL 2.0 is compatible with GPLv3 (you can combine EPL
+  and GPLv3 code) but NOT with GPLv2. The incompatibility with GPLv2 arises from EPL's additional
+  conditions (patent retaliation, indemnification) that GPLv2 Section 4 does not permit.
 - **Explicit compatibility with GPLv3:** Section 4.1 of EPL 2.0 states that a work distributed under
- both EPL 2.0 and GPLv3 may be distributed under GPLv3 alone, making the combination straightforward.
+  both EPL 2.0 and GPLv3 may be distributed under GPLv3 alone, making the combination
+  straightforward.
 
 **EPL 2.0 vs MPL 2.0:**
 
 - Both are file-level copyleft licenses with patent grants and retaliation clauses
-- EPL is more commonly used in the Java ecosystem; MPL is more common in the C++/Firefox/Rust ecosystem
-- EPL has broader compatibility with GPLv3 by explicit provision; MPL 2.0 can be combined with GPLv2+
- if the MPL 2.0's GPL compatibility option is used (Section 3.3)
-- EPL includes a "secondary license" mechanism (Section 4.1) allowing the copyright holder to designate
- a secondary license ( GPLv3) under which the code may also be distributed
+- EPL is more commonly used in the Java ecosystem; MPL is more common in the C++/Firefox/Rust
+  ecosystem
+- EPL has broader compatibility with GPLv3 by explicit provision; MPL 2.0 can be combined with
+  GPLv2+ if the MPL 2.0's GPL compatibility option is used (Section 3.3)
+- EPL includes a "secondary license" mechanism (Section 4.1) allowing the copyright holder to
+  designate a secondary license ( GPLv3) under which the code may also be distributed
 
 **When you encounter EPL 2.0:**
 
 - Common in enterprise Java projects: Eclipse IDE, Jakarta EE, JGit, Eclipse Vert.x, JFace, SWT
-- If you are building a proprietary application that uses EPL-licensed libraries, you can do so as long
- as your modifications to the EPL-licensed code are made available under EPL 2.0
-- If you are distributing a combined work that includes both EPL and proprietary code, the EPL-licensed
- portions must remain under EPL 2.0, but your proprietary portions can remain under their own license
+- If you are building a proprietary application that uses EPL-licensed libraries, you can do so as
+  long as your modifications to the EPL-licensed code are made available under EPL 2.0
+- If you are distributing a combined work that includes both EPL and proprietary code, the
+  EPL-licensed portions must remain under EPL 2.0, but your proprietary portions can remain under
+  their own license
 
 ### Boost Software License 1.0 (BSL 1.0)
 
@@ -510,30 +517,31 @@ Incorporated into the C++ standard library itself.
 **Key characteristics:**
 
 - **Permissive with a mandatory attribution notice:** The license requires including a copy of the
- license text in all copies of the software. The required notice includes the copyright holder's name,
- the license text, and a disclaimer — similar to MIT/BSD in this regard.
+  license text in all copies of the software. The required notice includes the copyright holder's
+  name, the license text, and a disclaimer — similar to MIT/BSD in this regard.
 - **No patent grant:** Unlike Apache 2.0 and EPL 2.0, BSL 1.0 does not include an explicit patent
- grant. This means that contributors grant copyright licenses but do not grant patent licenses. This
- is a significant difference from Apache 2.0, which explicitly grants patent rights.
-- **Broad redistribution rights:** You may use, copy, modify, merge, publish, distribute, sublicense,
- and sell copies of the software under any license of your choice, including proprietary licenses.
+  grant. This means that contributors grant copyright licenses but do not grant patent licenses.
+  This is a significant difference from Apache 2.0, which explicitly grants patent rights.
+- **Broad redistribution rights:** You may use, copy, modify, merge, publish, distribute,
+  sublicense, and sell copies of the software under any license of your choice, including
+  proprietary licenses.
 - **GPL compatible:** BSL 1.0 is compatible with all versions of the GPL because it imposes no
- additional restrictions beyond attribution.
+  additional restrictions beyond attribution.
 
 **Why Boost matters even if you don't use C++:**
 
 - Many C++ standard library features originated in Boost (smart pointers, `std::optional`
- `std::variant`Regular expressions, filesystem, threading)
+  `std::variant`Regular expressions, filesystem, threading)
 - Understanding BSL 1.0 is relevant for any organization that uses C++ in production, because Boost
- libraries are a near-universal dependency in serious C++ projects
-- The license text is short and clear, making it a reasonable choice for projects that want permissive
- terms without the overhead of Apache 2.0's longer text
+  libraries are a near-universal dependency in serious C++ projects
+- The license text is short and clear, making it a reasonable choice for projects that want
+  permissive terms without the overhead of Apache 2.0's longer text
 
 **BSL 1.0 vs BSL 1.1 (Business Source License):** Do not confuse the Boost Software License with the
-Business Source License (BSL 1.1). They are entirely different licenses. The Boost Software License is
-A simple, permissive, OSI-approved open-source license. The Business Source License is a source-available
-License that restricts production use until a change date, after which it converts to an open-source
-License ( GPL). The naming collision is unfortunate but well-established.
+Business Source License (BSL 1.1). They are entirely different licenses. The Boost Software License
+is A simple, permissive, OSI-approved open-source license. The Business Source License is a
+source-available License that restricts production use until a change date, after which it converts
+to an open-source License ( GPL). The naming collision is unfortunate but well-established.
 
 ## Proprietary and Source-Available Licenses
 
@@ -544,28 +552,28 @@ The Business Source License was created by MariaDB Corporation (now MariaDB plc)
 
 **Mechanism:** BSL is a time-limited proprietary license with an automatic conversion to open
 Source. The software is distributed under a license that grants broad usage rights (use, modify,
-Distribute) but imposes restrictions on competitive use — , you may not use the software to
-Offer a competing product or service to the licensor's commercial offering. After a specified date
-(the "Change Date"), the license automatically converts to an approved open-source license
-( GPLv2 or Apache 2.0).
+Distribute) but imposes restrictions on competitive use — , you may not use the software to Offer a
+competing product or service to the licensor's commercial offering. After a specified date (the
+"Change Date"), the license automatically converts to an approved open-source license ( GPLv2 or
+Apache 2.0).
 
 **Structure:**
 
 - Grants use, modification, and distribution rights, subject to specific restrictions
-- Restrictions prohibit using the software as a competitor to the licensor's commercial
- product or service
+- Restrictions prohibit using the software as a competitor to the licensor's commercial product or
+  service
 - After the Change Date (e.g., 3-5 years from publication), the software converts to the specified
- open-source license
+  open-source license
 - The licensor controls the Change Date, the fallback open-source license, and the specific use
- restrictions
+  restrictions
 
 **Why companies use it:**
 
 - **Sentry** uses BSL for its core product, with a Change Date that converts to Apache 2.0
 - **CockroachDB** adopted BSL (with an "Enterprise" use restriction to limit competitive cloud
- deployment), later moved to a custom BSL variant
+  deployment), later moved to a custom BSL variant
 - **HashiCorp** adopted BSL for Terraform, Consul, Vault, and other products in 2023, precipitating
- the creation of OpenTofu (a fork of the last MPL 2.0-licensed Terraform)
+  the creation of OpenTofu (a fork of the last MPL 2.0-licensed Terraform)
 
 **Criticism:** BSL violates the Open Source Definition on multiple grounds. OSD 5 (No Discrimination
 Against Persons or Groups) and OSD 6 (No Discrimination Against Fields of Endeavor) prohibit
@@ -595,10 +603,10 @@ Maintaining a competitive cloud service, which is precisely the intent.
 **AWS reaction and downstream effects:**
 
 - When MongoDB adopted SSPL, AWS responded by forking the last AGPLv3-licensed version of MongoDB
- and creating Amazon DocumentDB (a MongoDB-compatible API layer backed by a different storage
- engine)
+  and creating Amazon DocumentDB (a MongoDB-compatible API layer backed by a different storage
+  engine)
 - Red Hat removed MongoDB from its package repositories because SSPL is not an open-source license
- and therefore cannot be shipped as part of a distribution committed to open-source licensing
+  and therefore cannot be shipped as part of a distribution committed to open-source licensing
 - Debian, Fedora, and several other Linux distributions followed suit
 - The Linux kernel's `COPYING` file explicitly states that SSPL is not compatible with GPL
 
@@ -637,12 +645,12 @@ Source requires.
 **Why Redis and HashiCorp moved to source-available:**
 
 - **Redis** moved from BSD 3-Clause to RSALv2 (Redis Source Available License 2.0) and SSPL in March
- 2024, citing cloud providers — particularly AWS with ElastiCache — offering Redis-compatible
- managed services without contributing to the Redis project
+  2024, citing cloud providers — particularly AWS with ElastiCache — offering Redis-compatible
+  managed services without contributing to the Redis project
 - **HashiCorp** moved Terraform from MPL 2.0 to BSL in August 2023, and subsequently moved Consul,
- Vault, and other products to BSL, citing the same concern about cloud providers (AWS, Google
- Cloud, Microsoft Azure) offering managed versions of HashiCorp products without contributing
- commensurately
+  Vault, and other products to BSL, citing the same concern about cloud providers (AWS, Google
+  Cloud, Microsoft Azure) offering managed versions of HashiCorp products without contributing
+  commensurately
 
 **The economic argument:** The core tension is between the open-source community's expectation of
 Unrestricted freedom and the economic reality that large cloud providers can monetize open-source
@@ -675,9 +683,9 @@ Holder (17 U.S.C. § 106(3)). Key forms of distribution:
 - **Electronic distribution:** Making software available for download from a server or file share
 - **Transferring a copy:** Giving a copy to another party on any medium
 - **Container distribution:** Shipping a Docker image or other container that contains the software
- — a container image is a distributable artifact that embeds copies of the software
+  — a container image is a distributable artifact that embeds copies of the software
 - **Application store distribution:** Publishing software through an app store, package repository,
- or similar distribution channel
+  or similar distribution channel
 
 **Internal use is NOT distribution.** Running software on your own servers, even if accessed by
 Employees or contractors, does not constitute distribution. The copyleft obligations of GPL and LGPL
@@ -700,23 +708,22 @@ Copyleft obligations:
 
 - Under GPL: the entire combined work must be distributed under GPL
 - Under LGPL: the entire combined work must be distributed under LGPL, OR you must provide object
- files for the non-LGPL portions and a mechanism for the user to re-link
+  files for the non-LGPL portions and a mechanism for the user to re-link
 
 **Dynamic linking:** The library code is loaded at runtime from a separate shared object (`.so`
-`.dll``.dylib`). The executable and the library remain separate files. The legal status is
-Debated:
+`.dll``.dylib`). The executable and the library remain separate files. The legal status is Debated:
 
 - **FSF position (for GPL):** Dynamic linking to a GPL library creates a derivative work, triggering
- copyleft obligations for the entire application. This is the FSF's interpretation, but it has
- never been tested in court in the US.
+  copyleft obligations for the entire application. This is the FSF's interpretation, but it has
+  never been tested in court in the US.
 - **LGPL exception:** LGPL explicitly allows dynamic linking to proprietary applications without
- triggering copyleft for the proprietary application. The proprietary application can remain under
- its own license, but the LGPL library must be distributed with source and the user must be able to
- re-link the proprietary application against modified versions of the library.
+  triggering copyleft for the proprietary application. The proprietary application can remain under
+  its own license, but the LGPL library must be distributed with source and the user must be able to
+  re-link the proprietary application against modified versions of the library.
 - **Industry practice:** Most conservative legal advice treats dynamic linking to GPL libraries as
- creating a derivative work. Many organizations avoid dynamically linking to GPL libraries in
- proprietary applications for this reason. For LGPL libraries, dynamic linking is widely accepted
- as safe.
+  creating a derivative work. Many organizations avoid dynamically linking to GPL libraries in
+  proprietary applications for this reason. For LGPL libraries, dynamic linking is widely accepted
+  as safe.
 
 **Linux kernel syscall exception:** The Linux kernel's `COPYING` file includes an explicit NOTE that
 User-space programs calling kernel system calls (the syscall interface) are NOT considered
@@ -735,24 +742,23 @@ An image to a registry (Docker Hub, ECR, GCR, etc.) and another party pulls it, 
 Copies of every piece of software in that image. This means:
 
 - If the container includes GPL-licensed code, the copyleft obligations apply to the entire
- container image as a combined work
+  container image as a combined work
 - If the container includes LGPL-licensed code, the dynamic linking analysis applies — but in
- practice, container images often bundle statically linked binaries (via multi-stage builds), which
- means static linking rules apply
-- License notices must be included in the container image ( as files in the image
- filesystem)
+  practice, container images often bundle statically linked binaries (via multi-stage builds), which
+  means static linking rules apply
+- License notices must be included in the container image ( as files in the image filesystem)
 - For AGPLv3-licensed code in the container, network users must have access to the source code
 
 **Practical guidance:**
 
 - Audit the licenses of all packages (direct and transitive dependencies) in your Docker image
 - Include `LICENSE` files for all dependencies in your container, either in a dedicated directory or
- alongside the relevant packages
+  alongside the relevant packages
 - If your container includes AGPLv3 code, provide a mechanism for users to obtain the complete
- source (e.g., a link in the application UI, a `SOURCE` label on the image, or a `LICENSES`
- directory)
+  source (e.g., a link in the application UI, a `SOURCE` label on the image, or a `LICENSES`
+  directory)
 - Consider using permissively-licensed alternatives for any containerized service that will be
- distributed to third parties
+  distributed to third parties
 
 ### SaaS and AGPL Implications
 
@@ -766,24 +772,24 @@ The relevant text:
 **What this means in practice:**
 
 - If you deploy an AGPLv3 application (modified or unmodified) and external users interact with it
- over a network, you must provide the complete source code to those users
+  over a network, you must provide the complete source code to those users
 - "Interacting remotely" is broadly interpreted — any HTTP request, API call, WebSocket connection,
- or similar network communication likely qualifies
+  or similar network communication likely qualifies
 - The source must be provided "prominently" — a deeply buried link in a privacy policy footer would
- not satisfy this requirement; a conspicuous notice in the application's UI is expected
+  not satisfy this requirement; a conspicuous notice in the application's UI is expected
 - You must provide the source of _your version_, including all modifications you have made
 
 **Why companies fear AGPLv3:**
 
 1. The network interaction trigger is broader than distribution — any network-accessible service
- triggers it, regardless of whether a copy is conveyed
+   triggers it, regardless of whether a copy is conveyed
 2. The source code must be prominently offered to ALL users, not just those who explicitly request
- it
+   it
 3. Compliance is operationally complex — you need to maintain a source distribution mechanism for
- every AGPLv3 service you deploy
+   every AGPLv3 service you deploy
 4. The definition of "interaction" is broad enough that internal microservices calling each other
- could theoretically trigger the obligation, though most legal interpretations focus on
- user-facing interactions
+   could theoretically trigger the obligation, though most legal interpretations focus on
+   user-facing interactions
 
 **Common corporate policy:** Many organizations categorize AGPLv3 as "do not use" or "require legal
 Review." If your organization has an approved license list, AGPLv3 is almost certainly on the
@@ -798,37 +804,36 @@ Your dependency tree and to identify compliance risks before they become legal p
 **Automated tools:**
 
 - **`licensee`** — GitHub's own tool for detecting the license of a repository. It analyzes the
- `LICENSE` file and provides the SPDX identifier.
+  `LICENSE` file and provides the SPDX identifier.
 - **`license-checker`** (npm) / **`pip-licenses`** (Python) / **`go-licenses`** (Go) —
- language-specific tools that scan your dependency tree and report the license of each package.
+  language-specific tools that scan your dependency tree and report the license of each package.
 - **`licenserc`** — a tool that checks that all dependencies in a project comply with a configured
- allowlist. It can be run in CI/CD to prevent introduction of disallowed licenses.
+  allowlist. It can be run in CI/CD to prevent introduction of disallowed licenses.
 - **SPDX (Software Package Data Exchange)** — a standard format (ISO/IEC 5962:2021) for
- communicating software bill of materials (SBOM) and license information. The SPDX License List at
- spdx.org/licenses/ provides canonical, standardized identifiers for every known license. These
- identifiers can be used in `package.json``Cargo.toml``pyproject.toml`And other package
- manifests.
+  communicating software bill of materials (SBOM) and license information. The SPDX License List at
+  spdx.org/licenses/ provides canonical, standardized identifiers for every known license. These
+  identifiers can be used in `package.json``Cargo.toml``pyproject.toml`And other package manifests.
 - **FOSSA, Snyk, Black Duck** — commercial dependency scanning tools that provide license compliance
- reports, vulnerability scanning, and SBOM generation.
+  reports, vulnerability scanning, and SBOM generation.
 
 **Manual approaches:**
 
 - Check the `LICENSE` file in each dependency's source repository
 - Review package manifest files for license metadata (`license` field in `package.json``license`
- field in `Cargo.toml``license` field in `go.mod`)
+  field in `Cargo.toml``license` field in `go.mod`)
 - Cross-reference with the SPDX License List to ensure the declared license matches the actual
- license text
+  license text
 
 **Best practices:**
 
 - Maintain an organization-wide approved license list with defined tiers (e.g., permitted,
- restricted, prohibited)
+  restricted, prohibited)
 - Run automated license checks in CI/CD pipelines so that new dependencies are checked before they
- are merged
+  are merged
 - Document the license of every direct and transitive dependency in a machine-readable format (SPDX
- SBOM)
+  SBOM)
 - Review license changes when updating dependencies — a project CAN change its license between
- versions, and this can introduce compliance risk
+  versions, and this can introduce compliance risk
 - Treat license compliance as a continuous process, not a one-time audit
 
 ### When You Find a Conflicting License
@@ -837,42 +842,42 @@ If your dependency audit reveals a license conflict (e.g., a GPLv3 dependency in
 Project, or an incompatible license combination), you have several options, in order of preference:
 
 1. **Replace the dependency** with a permissively-licensed alternative. This is the preferred
- solution — it eliminates the compliance risk entirely. Check alternatives on GitHub,
- alternativeTo, or language-specific package registries.
+   solution — it eliminates the compliance risk entirely. Check alternatives on GitHub,
+   alternativeTo, or language-specific package registries.
 2. **Isolate the dependency** so that it does not form a combined work with your proprietary code.
- For LGPL-licensed libraries, this means using dynamic linking and providing the library source
- separately. For GPL-licensed code, isolation is far more difficult because the FSF takes the
- position that any linking creates a derivative work.
+   For LGPL-licensed libraries, this means using dynamic linking and providing the library source
+   separately. For GPL-licensed code, isolation is far more difficult because the FSF takes the
+   position that any linking creates a derivative work.
 3. **Relicense your project** to be compatible with the dependency. This is only viable if you own
- the copyright to all code in your project or if all contributors have agreed to a license change
- (e.g., via a CLA that grants relicensing rights).
+   the copyright to all code in your project or if all contributors have agreed to a license change
+   (e.g., via a CLA that grants relicensing rights).
 4. **Obtain a commercial license** from the copyright holders. Some projects offer dual licensing
- (e.g., MySQL is available under GPL from the community or under a commercial license from
- Oracle). This is common for companies that want to use GPL software in proprietary products.
+   (e.g., MySQL is available under GPL from the community or under a commercial license from
+   Oracle). This is common for companies that want to use GPL software in proprietary products.
 5. **Remove the dependency** if the functionality it provides is not essential.
 
 ## Comparison Table
 
-| License | Copyleft Strength | Patent Grant | Trademark | Attribution | Distribution Trigger | SaaS Trigger | OSI Approved | GPL Compatible |
-| ------------ | ------------------------- | ------------------------- | ----------------------- | ----------------- | ---------------------- | -------------- | ------------ | ------------------ |
-| AGPLv3 | Strong + Network | Implied (Sec 11) | Not granted | Yes | Convey (Sec 4) | Yes (Sec 13) | Yes | GPLv3 only |
-| GPLv3 | Strong | Implied (Sec 11) | Not granted | Yes | Convey (Sec 4) | No | Yes | — |
-| LGPLv3 | Weak (linking exception) | Inherited from GPLv3 | Not granted | Yes | Convey (Sec 4) | No | Yes | GPLv3 |
-| GPLv2 | Strong | None | Not granted | Yes | Distribution (Sec 3) | No | Yes | — |
-| MPL 2.0 | Weak (file-level) | Yes (Sec 2.1(b)) | Not granted | Yes | Distribution (Sec 3.2) | No | Yes | GPLv2+ if enabled |
-| EPL 2.0 | Weak (file-level) | Yes (Sec 1(b)) + retaliation | Not granted | Yes | Distribution (Sec 1) | No | Yes | GPLv3 only |
-| MIT | None | No | No | Yes | N/A | No | Yes | Yes (all versions) |
-| Apache 2.0 | None | Yes (Sec 3) + retaliation | Limited (Sec 7) | Yes (NOTICE file) | N/A | No | Yes | GPLv3 only |
-| Boost 1.0 | None | No | No | Yes | N/A | No | Yes | Yes (all versions) |
-| BSD 2-Clause | None | No | No | Yes | N/A | No | Yes | Yes (all versions) |
-| BSD 3-Clause | None | No | Endorsement restriction | Yes | N/A | No | Yes | Yes (all versions) |
-| ISC | None | No | No | Yes | N/A | No | Yes | Yes (all versions) |
-| 0BSD | None | No | No | No | N/A | No | Yes | Yes (all versions) |
-| CC0 | None (public domain) | No | No | No | N/A | N/A | No | No |
-| Unlicense | None (public domain) | No | No | No | N/A | No | No | No |
-| WTFPL | None | No | No | No | N/A | No | No | No |
-| BSL | Restricted (time-limited) | Varies | Varies | Yes | Yes | No | No | No |
-| SSPL | Strong + Server-side | No explicit | No | Yes | Distribution (Sec 13) | Yes (de facto) | No | No |
+| License      | Copyleft Strength         | Patent Grant                 | Trademark               | Attribution       | Distribution Trigger   | SaaS Trigger   | OSI Approved | GPL Compatible     |
+| ------------ | ------------------------- | ---------------------------- | ----------------------- | ----------------- | ---------------------- | -------------- | ------------ | ------------------ |
+| AGPLv3       | Strong + Network          | Implied (Sec 11)             | Not granted             | Yes               | Convey (Sec 4)         | Yes (Sec 13)   | Yes          | GPLv3 only         |
+| GPLv3        | Strong                    | Implied (Sec 11)             | Not granted             | Yes               | Convey (Sec 4)         | No             | Yes          | —                  |
+| LGPLv3       | Weak (linking exception)  | Inherited from GPLv3         | Not granted             | Yes               | Convey (Sec 4)         | No             | Yes          | GPLv3              |
+| GPLv2        | Strong                    | None                         | Not granted             | Yes               | Distribution (Sec 3)   | No             | Yes          | —                  |
+| MPL 2.0      | Weak (file-level)         | Yes (Sec 2.1(b))             | Not granted             | Yes               | Distribution (Sec 3.2) | No             | Yes          | GPLv2+ if enabled  |
+| EPL 2.0      | Weak (file-level)         | Yes (Sec 1(b)) + retaliation | Not granted             | Yes               | Distribution (Sec 1)   | No             | Yes          | GPLv3 only         |
+| MIT          | None                      | No                           | No                      | Yes               | N/A                    | No             | Yes          | Yes (all versions) |
+| Apache 2.0   | None                      | Yes (Sec 3) + retaliation    | Limited (Sec 7)         | Yes (NOTICE file) | N/A                    | No             | Yes          | GPLv3 only         |
+| Boost 1.0    | None                      | No                           | No                      | Yes               | N/A                    | No             | Yes          | Yes (all versions) |
+| BSD 2-Clause | None                      | No                           | No                      | Yes               | N/A                    | No             | Yes          | Yes (all versions) |
+| BSD 3-Clause | None                      | No                           | Endorsement restriction | Yes               | N/A                    | No             | Yes          | Yes (all versions) |
+| ISC          | None                      | No                           | No                      | Yes               | N/A                    | No             | Yes          | Yes (all versions) |
+| 0BSD         | None                      | No                           | No                      | No                | N/A                    | No             | Yes          | Yes (all versions) |
+| CC0          | None (public domain)      | No                           | No                      | No                | N/A                    | N/A            | No           | No                 |
+| Unlicense    | None (public domain)      | No                           | No                      | No                | N/A                    | No             | No           | No                 |
+| WTFPL        | None                      | No                           | No                      | No                | N/A                    | No             | No           | No                 |
+| BSL          | Restricted (time-limited) | Varies                       | Varies                  | Yes               | Yes                    | No             | No           | No                 |
+| SSPL         | Strong + Server-side      | No explicit                  | No                      | Yes               | Distribution (Sec 13)  | Yes (de facto) | No           | No                 |
 
 ## Common Pitfalls
 
@@ -915,15 +920,15 @@ Generate license notice bundles for your distribution.
 ## Further Reading
 
 - [Choose a License](https://choosealicense.com) — straightforward guide to selecting a license for
- your project, maintained by GitHub
+  your project, maintained by GitHub
 - [SPDX License List](https://spdx.org/licenses/) — canonical reference for standardized license
- identifiers and full license text
+  identifiers and full license text
 - [tl;drLegal](https://tldrlegal.com) — plain-English summaries of common software licenses with key
- provisions highlighted
+  provisions highlighted
 - [GNU License Recommendations](https://www.gnu.org/licenses/license-recommendations.html) — the
- Free Software Foundation's guidance on choosing a license
+  Free Software Foundation's guidance on choosing a license
 - [OSI Approved Licenses](https://opensource.org/licenses) — the definitive list of OSI-approved
- open-source licenses and the Open Source Definition
+  open-source licenses and the Open Source Definition
 
 ## Summary
 

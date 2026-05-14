@@ -1,6 +1,8 @@
 ---
 title: Alignment and Layout
-description: "C++: Alignment and Layout — 1. Natural Alignment; The Rules of Alignment; Inspection Tools; 2. Structure Padding and Layout."
+description:
+  'C++: Alignment and Layout — 1. Natural Alignment; The Rules of Alignment; Inspection Tools; 2.
+  Structure Padding and Layout.'
 date: 2025-12-12T05:45:45.940Z
 tags:
   - cpp
@@ -8,6 +10,7 @@ categories:
   - cpp
 slug: layout
 ---
+
 Import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 In C++, `sizeof(T)` is rarely equal to the sum of the sizes of its members. The compiler inserts
@@ -17,22 +20,24 @@ Understanding alignment is critical for systems programming for three reasons:
 
 1. **Memory Footprint:** Poorly ordered structures can waste memory on padding.
 2. **Hardware Faults:** Architectures like ARM, SPARC, and specialized DSPs raises hardware
- exceptions (SIGBUS) upon misaligned memory access.
+   exceptions (SIGBUS) upon misaligned memory access.
 3. **Concurrency Performance:** Unintentional sharing of cache lines (False Sharing) can degrade
- multi-threaded performance.
+   multi-threaded performance.
 
 ## 1. Natural Alignment
 
-CPUs access memory in words ( 4 or 8 bytes). Accessing a 4-byte integer located at address
-`0x1001` requires the CPU to perform two memory fetches (fetching `0x1000` and `0x1004`) and
-Bit-shift the results. To prevent this inefficiency, types have a **Natural Alignment**.
+CPUs access memory in words ( 4 or 8 bytes). Accessing a 4-byte integer located at address `0x1001`
+requires the CPU to perform two memory fetches (fetching `0x1000` and `0x1004`) and Bit-shift the
+results. To prevent this inefficiency, types have a **Natural Alignment**.
 
 ### The Rules of Alignment
 
 1. **Fundamental Types:** A type of size $N$ requires an address divisible by $N$.
- - `char` (1 byte): Alignment 1 (Any address).
- - `int32_t` (4 bytes): Alignment 4 (Address ending in 0, 4, 8, C).
- - `double` (8 bytes): Alignment 8.
+
+- `char` (1 byte): Alignment 1 (Any address).
+- `int32_t` (4 bytes): Alignment 4 (Address ending in 0, 4, 8, C).
+- `double` (8 bytes): Alignment 8.
+
 2. **Structures:** The alignment of a `struct` is equal to the alignment of its strictest member.
 3. **Arrays:** An array `T[N]` has the same alignment as `T`.
 
@@ -88,8 +93,8 @@ Is used in an array, the second element properly aligns.
 
 ### Layout Optimization
 
-To minimize size, members should be ordered by alignment requirement ( size), from largest
-To smallest.
+To minimize size, members should be ordered by alignment requirement ( size), from largest To
+smallest.
 
 ```cpp
 struct GoodLayout {
@@ -158,14 +163,14 @@ Guarantees alignment up to `max_align_t` ( 8 or 16 bytes).
 C++17 introduced **Aligned New**:
 
 - The compiler automatically generates calls to `operator new(size_t, std::align_val_t)` when
- allocating over-aligned types.
+  allocating over-aligned types.
 - The runtime maps this to aligned allocation APIs (e.g., `_aligned_malloc` on Windows,
- `posix_memalign` on Linux).
+  `posix_memalign` on Linux).
 
 ## 4. Hardware Architecture: Cache Lines and False Sharing
 
-Modern CPUs interact with memory in **Cache Lines** ( 64 bytes). The CPU cannot load a
-Single byte; it loads the entire 64-byte line containing that byte.
+Modern CPUs interact with memory in **Cache Lines** ( 64 bytes). The CPU cannot load a Single byte;
+it loads the entire 64-byte line containing that byte.
 
 ### False Sharing
 
@@ -241,9 +246,9 @@ Accessing `id` in the example above generates different assembly instructions.
 
 - **Aligned:** A single `MOV` instruction.
 - **Packed (x86):** A `MOV` instruction (hardware handles the split load, but with a latency
- penalty).
+  penalty).
 - **Packed (ARMv7/RISC-V):** Multiple single-byte loads followed by shifts and ORs, or a hardware
- trap handled by the kernel (extremely slow).
+  trap handled by the kernel (extremely slow).
 
 **Best Practice:** Do not pass packed structures around your application. Deserialize them
 Immediately into aligned native structures at the I/O boundary.
@@ -283,7 +288,7 @@ Defined:
 
 - Whether bit-fields are allocated from the high-order or low-order bit.
 - Whether a bit-field that does not fit in the remaining space is packed into the next unit or
- padding is inserted.
+  padding is inserted.
 - The alignment of the storage unit.
 
 ```cpp
@@ -359,11 +364,9 @@ int main() {
 }
 ```
 
-:::warning
-Reading from a union member other than the one most recently written to is **undefined
+:::warning Reading from a union member other than the one most recently written to is **undefined
 Behavior** in C++ (unlike C, where it is implementation-defined). Use `std::memcpy` for type
-Punning, which is well-defined by the standard.
-:::
+Punning, which is well-defined by the standard. :::
 
 ### Type Punning with `std::memcpy`
 
@@ -542,10 +545,10 @@ void parse_correct(const char* buffer) {
 
 ### 4. `std::hardware_destructive_interference_size` is Non-Constant
 
-`std::hardware_destructive_interference_size` is 64 on x86 but may differ on other
-Architectures (e.g., 128 on some ARM implementations). It is a `const` value determined at runtime
-On some implementations, not a compile-time constant. This means it cannot be used as a template
-Argument or in `constexpr` contexts on all implementations:
+`std::hardware_destructive_interference_size` is 64 on x86 but may differ on other Architectures
+(e.g., 128 on some ARM implementations). It is a `const` value determined at runtime On some
+implementations, not a compile-time constant. This means it cannot be used as a template Argument or
+in `constexpr` contexts on all implementations:
 
 ```cpp
 #include <iostream>

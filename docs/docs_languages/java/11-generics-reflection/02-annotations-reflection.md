@@ -1,6 +1,8 @@
 ---
 title: Annotations and Reflection
-description: "Annotations and Reflection — Built-in Annotations; @Override; @Deprecated; @SuppressWarnings with worked examples and exam-style questions."
+description:
+  'Annotations and Reflection — Built-in Annotations; @Override; @Deprecated; @SuppressWarnings with
+  worked examples and exam-style questions.'
 date: 2026-04-04T00:00:00.000Z
 tags:
   - Java
@@ -8,6 +10,7 @@ categories:
   - Java
 slug: annotations-reflection
 ---
+
 ## Built-in Annotations
 
 ### @Override
@@ -76,14 +79,14 @@ Parameters (all optional, added in JDK 9):
 
 `@SuppressWarnings` (JDK 5) suppresses compiler warnings at the declaration level. Common keys:
 
-| Key | Suppresses |
+| Key             | Suppresses                                           |
 | --------------- | ---------------------------------------------------- |
-| `"unchecked"` | Unchecked casts and raw type usage |
-| `"deprecation"` | Use of deprecated APIs |
-| `"rawtypes"` | Raw type usage (subset of unchecked) |
-| `"unused"` | Unused variables, methods, parameters |
-| `"serial"` | Missing `serialVersionUID` in Serializable classes |
-| `"varargs"` | Heap pollution from varargs with non-reifiable types |
+| `"unchecked"`   | Unchecked casts and raw type usage                   |
+| `"deprecation"` | Use of deprecated APIs                               |
+| `"rawtypes"`    | Raw type usage (subset of unchecked)                 |
+| `"unused"`      | Unused variables, methods, parameters                |
+| `"serial"`      | Missing `serialVersionUID` in Serializable classes   |
+| `"varargs"`     | Heap pollution from varargs with non-reifiable types |
 
 Apply at the narrowest scope possible:
 
@@ -135,10 +138,10 @@ It makes intent explicit and catches accidental additions.
 ### Other Built-in Annotations
 
 - `@SafeVarargs` (JDK 7) — suppresses heap pollution warnings on varargs methods/constructors. Must
- be on `final``static`Or `private` methods (or constructors). Applying it on non-final instance
- methods is a compile error (JDK 9+).
+  be on `final``static`Or `private` methods (or constructors). Applying it on non-final instance
+  methods is a compile error (JDK 9+).
 - `@Native` (JDK 8) — marks a `static final` field as a constant that may be referenced from native
- code. The field must be initialized to a compile-time constant.
+  code. The field must be initialized to a compile-time constant.
 - `@Repeatable` (JDK 8) — covered in [Meta-Annotations](#meta-annotations).
 
 ## Meta-Annotations
@@ -151,11 +154,11 @@ Custom annotations behave.
 `@Retention` (JDK 5) specifies how long an annotation is retained. Takes a `RetentionPolicy` enum
 Value:
 
-| Policy | Retained through |
+| Policy    | Retained through                                               |
 | --------- | -------------------------------------------------------------- |
-| `SOURCE` | Discarded by the compiler (not in `.class` files) |
-| `CLASS` | Retained in `.class` files but not loaded at runtime (default) |
-| `RUNTIME` | Available at runtime via reflection |
+| `SOURCE`  | Discarded by the compiler (not in `.class` files)              |
+| `CLASS`   | Retained in `.class` files but not loaded at runtime (default) |
+| `RUNTIME` | Available at runtime via reflection                            |
 
 ```java
 @Retention(RetentionPolicy.SOURCE)
@@ -178,20 +181,20 @@ Files without loading them into the JVM.
 `@Target` (JDK 5) specifies which program elements an annotation can be applied to. Takes
 `ElementType` enum values (combinable with OR):
 
-| ElementType | Applies to |
+| ElementType                 | Applies to                                         |
 | --------------------------- | -------------------------------------------------- |
-| `TYPE` | Classes, interfaces, enums, records |
-| `FIELD` | Fields (including enum constants) |
-| `METHOD` | Methods |
-| `PARAMETER` | Method/constructor parameters |
-| `CONSTRUCTOR` | Constructors |
-| `LOCAL_VARIABLE` | Local variables |
-| `ANNOTATION_TYPE` | Annotation declarations |
-| `PACKAGE` | Package declarations (in `package-info.java`) |
-| `TYPE_PARAMETER` (JDK 8) | Type parameter declarations |
-| `TYPE_USE` (JDK 8) | Any type use (generics, casts, implements, throws) |
-| `MODULE` (JDK 9) | Module declarations |
-| `RECORD_COMPONENT` (JDK 16) | Record components |
+| `TYPE`                      | Classes, interfaces, enums, records                |
+| `FIELD`                     | Fields (including enum constants)                  |
+| `METHOD`                    | Methods                                            |
+| `PARAMETER`                 | Method/constructor parameters                      |
+| `CONSTRUCTOR`               | Constructors                                       |
+| `LOCAL_VARIABLE`            | Local variables                                    |
+| `ANNOTATION_TYPE`           | Annotation declarations                            |
+| `PACKAGE`                   | Package declarations (in `package-info.java`)      |
+| `TYPE_PARAMETER` (JDK 8)    | Type parameter declarations                        |
+| `TYPE_USE` (JDK 8)          | Any type use (generics, casts, implements, throws) |
+| `MODULE` (JDK 9)            | Module declarations                                |
+| `RECORD_COMPONENT` (JDK 16) | Record components                                  |
 
 ```java
 @Target({ElementType.FIELD, ElementType.PARAMETER})
@@ -229,7 +232,7 @@ Limitations:
 
 - Only works for class-level annotations, not methods or fields.
 - Only applies to direct inheritance — interfaces implementing other interfaces do not inherit
- annotations.
+  annotations.
 - A subclass annotation overrides the inherited one.
 
 ### @Repeatable
@@ -593,9 +596,9 @@ proxy.getUserName(42);
 Limitations:
 
 - Only works with **interfaces**, not concrete classes. For class-based proxying, use CGLIB or
- ByteBuddy.
-- `equals``hashCode`And `toString` are also dispatched to the handler (default implementations
- in `Proxy`).
+  ByteBuddy.
+- `equals``hashCode`And `toString` are also dispatched to the handler (default implementations in
+  `Proxy`).
 - The proxy object is an instance of `java.lang.reflect.Proxy` and all specified interfaces.
 
 ### Common Proxy Use Cases
@@ -650,13 +653,13 @@ Match exactly. `invoke` allows implicit conversions as defined by the JVM's meth
 
 ### MethodHandle vs Reflection
 
-| Aspect | MethodHandle | Reflection (Method) |
-| -------------- | --------------------------------- | --------------------------- |
-| Performance | Can be JIT-optimized, close to direct invocation | Slower, no JIT optimization |
-| Access control | Checked at creation time | Checked at every invocation |
-| Type safety | Enforced at invoke time | Weaker |
-| Flexibility | Adapters for currying, binding | No built-in adapters |
-| Learning curve | Steeper | Simpler API |
+| Aspect         | MethodHandle                                     | Reflection (Method)         |
+| -------------- | ------------------------------------------------ | --------------------------- |
+| Performance    | Can be JIT-optimized, close to direct invocation | Slower, no JIT optimization |
+| Access control | Checked at creation time                         | Checked at every invocation |
+| Type safety    | Enforced at invoke time                          | Weaker                      |
+| Flexibility    | Adapters for currying, binding                   | No built-in adapters        |
+| Learning curve | Steeper                                          | Simpler API                 |
 
 For performance-critical code, `MethodHandle` is preferred over `Method.invoke()`. The JIT can
 Inline method handles , especially after warmup.
@@ -729,14 +732,14 @@ public class AtomicCounter {
 
 VarHandle modes:
 
-| Method | Memory semantics |
+| Method                        | Memory semantics                      |
 | ----------------------------- | ------------------------------------- |
-| `get` / `set` | Plain (no ordering guarantees) |
-| `getVolatile` / `setVolatile` | Volatile read/write |
-| `getAcquire` / `setRelease` | Acquire/release semantics |
-| `getOpaque` / `setOpaque` | Opaque (no reordering, no visibility) |
-| `compareAndSet` | Atomic CAS |
-| `getAndAdd``getAndSet` | Atomic RMW |
+| `get` / `set`                 | Plain (no ordering guarantees)        |
+| `getVolatile` / `setVolatile` | Volatile read/write                   |
+| `getAcquire` / `setRelease`   | Acquire/release semantics             |
+| `getOpaque` / `setOpaque`     | Opaque (no reordering, no visibility) |
+| `compareAndSet`               | Atomic CAS                            |
+| `getAndAdd``getAndSet`        | Atomic RMW                            |
 
 Array VarHandles:
 
@@ -860,8 +863,7 @@ List<String> list = (List<String>) field.get(obj);
 ```
 
 The cast succeeds at runtime because erasure reduces it to `(List)`. If the field actually contains
-A `List<Integer>`You get a `ClassCastException` later when accessing elements, not at the cast
-Site.
+A `List<Integer>`You get a `ClassCastException` later when accessing elements, not at the cast Site.
 
 ### Primitive Type Handling
 

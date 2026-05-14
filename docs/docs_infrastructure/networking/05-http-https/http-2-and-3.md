@@ -1,13 +1,16 @@
 ---
 id: http-2-and-3
 title: HTTP/2 and HTTP/3
-description: "HTTP/2 and HTTP/3 — HTTP/2; Binary Framing Layer; Streams and Multiplexing; Flow Control with worked examples and exam-style questions."
+description:
+  'HTTP/2 and HTTP/3 — HTTP/2; Binary Framing Layer; Streams and Multiplexing; Flow Control with
+  worked examples and exam-style questions.'
 slug: http-2-and-3
 tags:
   - Networking
 categories:
   - Networking
 ---
+
 ## Overview
 
 HTTP/2 (RFC 9113) and HTTP/3 (RFC 9114) are the modern versions of the Hypertext Transfer Protocol.
@@ -83,17 +86,17 @@ Client                                          Server
 ### HPACK Header Compression
 
 HTTP/1.1 sends headers as plain text, repeated on every request. For a typical page load with 30-100
-Requests, headers like `User-Agent``Accept``Cookie`And `Accept-Encoding` are sent dozens of
-Times, each time consuming hundreds of bytes.
+Requests, headers like `User-Agent``Accept``Cookie`And `Accept-Encoding` are sent dozens of Times,
+each time consuming hundreds of bytes.
 
 HPACK (RFC 7541) compresses headers using three techniques:
 
 1. **Static table:** 61 predefined common header field/value pairs (e.g., `:method: GET`
- `:path: /``accept-encoding: gzip, deflate`)
+   `:path: /``accept-encoding: gzip, deflate`)
 2. **Dynamic table:** Header fields sent in previous messages are cached and referenced by index
- number
+   number
 3. **Huffman coding:** Literal header values are encoded using Huffman coding, which reduces common
- ASCII strings by ~20-30%
+   ASCII strings by ~20-30%
 
 ```
 First request:
@@ -181,7 +184,7 @@ For critical performance optimization.
 HTTP/2 starts with a connection preface:
 
 - **Client sends:** the string `PRI * HTTP/2.0\r\n\r\nSM\r\n\r\n` (a magic string that ensures the
- server speaks HTTP/2) followed by a SETTINGS frame
+  server speaks HTTP/2) followed by a SETTINGS frame
 - **Server sends:** a SETTINGS frame ( with default settings)
 
 Both sides must send their SETTINGS as the first frame of the connection. The SETTINGS frame is not
@@ -191,14 +194,14 @@ Acknowledged until the receiver sends a SETTINGS_ACK frame.
 
 The SETTINGS frame configures connection-level parameters:
 
-| Parameter | Default | Description |
+| Parameter              | Default   | Description                                  |
 | ---------------------- | --------- | -------------------------------------------- |
-| HEADER_TABLE_SIZE | 4096 | Maximum size of the HPACK dynamic table |
-| ENABLE_PUSH | 1 | Server push enabled (0 = disabled) |
-| MAX_CONCURRENT_STREAMS | unlimited | Maximum concurrent streams per connection |
-| INITIAL_WINDOW_SIZE | 65535 | Initial flow control window for new streams |
-| MAX_FRAME_SIZE | 16384 | Maximum frame payload size (16384 to 2^24-1) |
-| MAX_HEADER_LIST_SIZE | unlimited | Maximum total header size |
+| HEADER_TABLE_SIZE      | 4096      | Maximum size of the HPACK dynamic table      |
+| ENABLE_PUSH            | 1         | Server push enabled (0 = disabled)           |
+| MAX_CONCURRENT_STREAMS | unlimited | Maximum concurrent streams per connection    |
+| INITIAL_WINDOW_SIZE    | 65535     | Initial flow control window for new streams  |
+| MAX_FRAME_SIZE         | 16384     | Maximum frame payload size (16384 to 2^24-1) |
+| MAX_HEADER_LIST_SIZE   | unlimited | Maximum total header size                    |
 
 ```bash
 # Test HTTP/2 with curl
@@ -253,15 +256,15 @@ Recovery per-stream, so a lost packet on one stream does not block other streams
 
 QUIC (RFC 9000) is a general-purpose transport protocol, not specific to HTTP/3. Key properties:
 
-| Property | TCP + TLS | QUIC |
+| Property                  | TCP + TLS                | QUIC                     |
 | ------------------------- | ------------------------ | ------------------------ |
-| Transport | TCP | UDP |
-| Encryption | TLS (separate handshake) | Integrated (TLS 1.3) |
-| Handshake | 2-3 RTT | 1 RTT (0-RTT for repeat) |
-| Head-of-line blocking | Yes (TCP level) | No (per-stream recovery) |
-| Connection identification | 4-tuple (IP+port) | Connection ID |
-| Connection migration | No | Yes (IP/port change) |
-| Middlebox interference | Significant | Minimal (encrypted) |
+| Transport                 | TCP                      | UDP                      |
+| Encryption                | TLS (separate handshake) | Integrated (TLS 1.3)     |
+| Handshake                 | 2-3 RTT                  | 1 RTT (0-RTT for repeat) |
+| Head-of-line blocking     | Yes (TCP level)          | No (per-stream recovery) |
+| Connection identification | 4-tuple (IP+port)        | Connection ID            |
+| Connection migration      | No                       | Yes (IP/port change)     |
+| Middlebox interference    | Significant              | Minimal (encrypted)      |
 
 ### 0-RTT Connection Establishment
 
@@ -341,18 +344,18 @@ Carried in QUIC CRYPTO frames. All QUIC packets (except Version Negotiation) are
 
 ## HTTP/3 vs HTTP/2 Comparison
 
-| Feature | HTTP/2 | HTTP/3 |
+| Feature              | HTTP/2              | HTTP/3                      |
 | -------------------- | ------------------- | --------------------------- |
-| Transport | TCP | QUIC (over UDP) |
-| Encryption | TLS 1.2+ (optional) | TLS 1.3 (mandatory) |
-| Handshake RTT | 2-3 RTT | 1 RTT (0-RTT for repeat) |
-| HOL blocking | TCP-level | Eliminated |
-| Connection migration | No | Yes |
-| Header compression | HPACK | QPACK (RFC 9204) |
-| Stream multiplexing | Yes | Yes |
-| Server push | Supported | Supported (also deprecated) |
-| Prioritization | Weight/dependency | Extensible prioritization |
-| Binary framing | Yes | Yes (different format) |
+| Transport            | TCP                 | QUIC (over UDP)             |
+| Encryption           | TLS 1.2+ (optional) | TLS 1.3 (mandatory)         |
+| Handshake RTT        | 2-3 RTT             | 1 RTT (0-RTT for repeat)    |
+| HOL blocking         | TCP-level           | Eliminated                  |
+| Connection migration | No                  | Yes                         |
+| Header compression   | HPACK               | QPACK (RFC 9204)            |
+| Stream multiplexing  | Yes                 | Yes                         |
+| Server push          | Supported           | Supported (also deprecated) |
+| Prioritization       | Weight/dependency   | Extensible prioritization   |
+| Binary framing       | Yes                 | Yes (different format)      |
 
 ### QPACK Header Compression
 
@@ -413,12 +416,12 @@ Clients should always fall back gracefully:
 
 Major CDNs support HTTP/3:
 
-| CDN | HTTP/3 Support | Alt-Svc Header |
+| CDN        | HTTP/3 Support | Alt-Svc Header      |
 | ---------- | -------------- | ------------------- |
-| Cloudflare | Yes (default) | h3=":443"; ma=86400 |
-| Fastly | Yes | h3=":443"; ma=86400 |
-| Akamai | Yes | h3=":443"; ma=86400 |
-| AWS CF | Yes | h3=":443"; ma=86400 |
+| Cloudflare | Yes (default)  | h3=":443"; ma=86400 |
+| Fastly     | Yes            | h3=":443"; ma=86400 |
+| Akamai     | Yes            | h3=":443"; ma=86400 |
+| AWS CF     | Yes            | h3=":443"; ma=86400 |
 
 ### Browser Support
 
@@ -436,10 +439,10 @@ All modern browsers support HTTP/3:
 HTTP/3's 1-RTT handshake (vs HTTP/2's 2-3 RTT) provides a measurable latency improvement for first
 Connections. For repeat connections with 0-RTT, the improvement is even more significant.
 
-| Scenario | HTTP/1.1 | HTTP/2 | HTTP/3 |
+| Scenario             | HTTP/1.1             | HTTP/2             | HTTP/3                       |
 | -------------------- | -------------------- | ------------------ | ---------------------------- |
-| New connection | 3 RTT | 3 RTT | 1 RTT |
-| Repeat connection | 1 RTT | 1 RTT | 0 RTT |
+| New connection       | 3 RTT                | 3 RTT              | 1 RTT                        |
+| Repeat connection    | 1 RTT                | 1 RTT              | 0 RTT                        |
 | Lost packet (mobile) | 1 RTT per connection | Blocks all streams | Only affected stream blocked |
 
 ### Throughput
@@ -451,12 +454,12 @@ Lossy networks (mobile, satellite) due to the elimination of TCP-level HOL block
 
 Measured over a 100ms RTT link:
 
-| Protocol | Setup Time | Data First Byte |
+| Protocol           | Setup Time    | Data First Byte |
 | ------------------ | ------------- | --------------- |
-| HTTP/1.1 + TLS 1.2 | 300ms (3 RTT) | 400ms (4 RTT) |
-| HTTP/2 + TLS 1.2 | 300ms (3 RTT) | 400ms (4 RTT) |
-| HTTP/3 (new) | 100ms (1 RTT) | 200ms (2 RTT) |
-| HTTP/3 (repeat) | 0ms (0-RTT) | 100ms (1 RTT) |
+| HTTP/1.1 + TLS 1.2 | 300ms (3 RTT) | 400ms (4 RTT)   |
+| HTTP/2 + TLS 1.2   | 300ms (3 RTT) | 400ms (4 RTT)   |
+| HTTP/3 (new)       | 100ms (1 RTT) | 200ms (2 RTT)   |
+| HTTP/3 (repeat)    | 0ms (0-RTT)   | 100ms (1 RTT)   |
 
 ## HTTP/4 and Beyond
 
@@ -464,10 +467,10 @@ There is no formal HTTP/4 specification as of 2024. The IETF's QUIC working grou
 Group are focused on:
 
 - **Multipath QUIC:** Using multiple network paths simultaneously for a single connection (RFC 9185
- defines the extension framework)
+  defines the extension framework)
 - **Extended CONNECT:** HTTP/3 support for tunneling arbitrary protocols (RFC 9220)
 - **WebTransport:** A framework for client-server communication using QUIC streams and datagrams
- (for gaming, real-time collaboration)
+  (for gaming, real-time collaboration)
 - **MASQUE:** Proxying over QUIC (RFC 9298), enabling better VPN and proxy performance
 
 The trend is toward QUIC as the universal transport, with HTTP/3 as the primary application protocol
@@ -631,22 +634,22 @@ Further frames can be sent on that stream.
 
 Error codes:
 
-| Code | Name | Description |
+| Code | Name                | Description                                     |
 | ---- | ------------------- | ----------------------------------------------- |
-| 0x0 | NO_ERROR | Graceful shutdown |
-| 0x1 | PROTOCOL_ERROR | Protocol violation |
-| 0x2 | INTERNAL_ERROR | Internal error in the peer |
-| 0x3 | FLOW_CONTROL_ERROR | Flow control violation |
-| 0x4 | SETTINGS_TIMEOUT | SETTINGS ACK not received in time |
-| 0x5 | STREAM_CLOSED | Frame received for a half-closed (local) stream |
-| 0x6 | FRAME_SIZE_ERROR | Frame too large |
-| 0x7 | REFUSED_STREAM | Stream refused before processing |
-| 0x8 | CANCEL | End-user canceled the stream |
-| 0x9 | COMPRESSION_ERROR | HPACK decoding failure |
-| 0xa | CONNECT_ERROR | CONNECT frame error (for extended CONNECT) |
-| 0xb | ENHANCE_YOUR_CALM | Too many frames (stop sending so fast) |
-| 0xc | INADEQUATE_SECURITY | TLS not acceptable |
-| 0xd | HTTP_1_1_REQUIRED | Use HTTP/1.1 instead |
+| 0x0  | NO_ERROR            | Graceful shutdown                               |
+| 0x1  | PROTOCOL_ERROR      | Protocol violation                              |
+| 0x2  | INTERNAL_ERROR      | Internal error in the peer                      |
+| 0x3  | FLOW_CONTROL_ERROR  | Flow control violation                          |
+| 0x4  | SETTINGS_TIMEOUT    | SETTINGS ACK not received in time               |
+| 0x5  | STREAM_CLOSED       | Frame received for a half-closed (local) stream |
+| 0x6  | FRAME_SIZE_ERROR    | Frame too large                                 |
+| 0x7  | REFUSED_STREAM      | Stream refused before processing                |
+| 0x8  | CANCEL              | End-user canceled the stream                    |
+| 0x9  | COMPRESSION_ERROR   | HPACK decoding failure                          |
+| 0xa  | CONNECT_ERROR       | CONNECT frame error (for extended CONNECT)      |
+| 0xb  | ENHANCE_YOUR_CALM   | Too many frames (stop sending so fast)          |
+| 0xc  | INADEQUATE_SECURITY | TLS not acceptable                              |
+| 0xd  | HTTP_1_1_REQUIRED   | Use HTTP/1.1 instead                            |
 
 ### GOAWAY (0x7)
 
@@ -727,30 +730,30 @@ Frame {
 
 ### HTTP/3 Frame Types
 
-| Type | Name | Description |
+| Type | Name         | Description                                    |
 | ---- | ------------ | ---------------------------------------------- |
-| 0x00 | DATA | Request or response body |
-| 0x01 | HEADERS | Request or response headers (QPACK compressed) |
-| 0x04 | SETTINGS | Connection parameters |
-| 0x05 | PUSH_PROMISE | Server push promise |
-| 0x06 | GOAWAY | Connection shutdown |
-| 0x07 | MAX_PUSH_ID | Maximum push ID the client will accept |
-| 0x0d | GREASE | For testing extensibility |
-| 0x21 | CANCEL_PUSH | Cancel a server push |
-| 0x40 | RESERVED | Reserved (was HTTP/2 SETTINGS) |
-| 0x41 | CONNECT_IP | Extended CONNECT for IP proxying |
-| 0x42 | CONNECT_UDP | Extended CONNECT for UDP proxying |
+| 0x00 | DATA         | Request or response body                       |
+| 0x01 | HEADERS      | Request or response headers (QPACK compressed) |
+| 0x04 | SETTINGS     | Connection parameters                          |
+| 0x05 | PUSH_PROMISE | Server push promise                            |
+| 0x06 | GOAWAY       | Connection shutdown                            |
+| 0x07 | MAX_PUSH_ID  | Maximum push ID the client will accept         |
+| 0x0d | GREASE       | For testing extensibility                      |
+| 0x21 | CANCEL_PUSH  | Cancel a server push                           |
+| 0x40 | RESERVED     | Reserved (was HTTP/2 SETTINGS)                 |
+| 0x41 | CONNECT_IP   | Extended CONNECT for IP proxying               |
+| 0x42 | CONNECT_UDP  | Extended CONNECT for UDP proxying              |
 
 ### Variable-Length Integer Encoding
 
 HTTP/3 uses QUIC's variable-length integer encoding to save bytes:
 
-| First 2 Bits | Length | Usable Bits | Maximum Value |
+| First 2 Bits | Length  | Usable Bits | Maximum Value             |
 | ------------ | ------- | ----------- | ------------------------- |
-| 00 | 1 byte | 6 | 63 |
-| 01 | 2 bytes | 14 | 16,383 |
-| 10 | 4 bytes | 30 | 1,073,741,823 |
-| 11 | 8 bytes | 62 | 4,611,686,018,427,387,903 |
+| 00           | 1 byte  | 6           | 63                        |
+| 01           | 2 bytes | 14          | 16,383                    |
+| 10           | 4 bytes | 30          | 1,073,741,823             |
+| 11           | 8 bytes | 62          | 4,611,686,018,427,387,903 |
 
 Small values (common in practice) use fewer bytes. For example, a DATA frame with 50 bytes of
 Payload needs only 1 byte for the length field (50 fits in 6 bits), whereas HTTP/2 always uses 3

@@ -1,6 +1,8 @@
 ---
 title: Standard Library Implementation
-description: "C++: Standard Library Implementation — The Major Implementations; 1. libstdc++ (The GNU Standard C++ Library); 2. libc++ ( The LLVM C++ Standard Library)."
+description:
+  'C++: Standard Library Implementation — The Major Implementations; 1. libstdc++ (The GNU Standard
+  C++ Library); 2. libc++ ( The LLVM C++ Standard Library).'
 date: 2025-12-10T04:57:07.543Z
 tags:
   - cpp
@@ -8,6 +10,7 @@ categories:
   - cpp
 slug: standard-library-implementation
 ---
+
 In C++, the language specification (syntax, keywords, type system) and the Standard Library (headers
 Like `<vector>``<iostream>`) are distinct entities. While the ISO C++ standard defines the
 _interface_ and _behavior_ of the library, the actual code is provided by a specific **Standard
@@ -21,19 +24,19 @@ There are three primary implementations of the C++ Standard Library currently in
 
 - **Maintainer:** Free Software Foundation (GCC Project).
 - **Architecture:**
- - Historically prioritizes extreme ABI stability.
- - Tightly coupled with GCC but usable by Clang.
- - Implements a "Dual ABI" system to support legacy C++ standards alongside modern ones.
+- Historically prioritizes extreme ABI stability.
+- Tightly coupled with GCC but usable by Clang.
+- Implements a "Dual ABI" system to support legacy C++ standards alongside modern ones.
 - **License:** GPL v3 with runtime exception.
 
 ### 2. Libc++ ( The LLVM C++ Standard Library)
 
 - **Maintainer:** The LLVM Project.
 - **Architecture:**
- - Designed from scratch for C++11 and later (no legacy C++98 baggage).
- - Prioritizes compilation speed, minimal memory footprint, and correctness.
- - Uses "Inline Namespaces" for symbol versioning to prevent accidental linking of incompatible
- binaries.
+- Designed from scratch for C++11 and later (no legacy C++98 baggage).
+- Prioritizes compilation speed, minimal memory footprint, and correctness.
+- Uses "Inline Namespaces" for symbol versioning to prevent accidental linking of incompatible
+  binaries.
 - **Usage on Linux:** Can be installed alongside libstdc++ and targeted via Clang.
 - **License:** Apache 2.0 with LLVM exception.
 
@@ -41,34 +44,34 @@ There are three primary implementations of the C++ Standard Library currently in
 
 - **Maintainer:** Microsoft.
 - **Architecture:**
- - Open-source (GitHub) but specifically targeted for Windows and the MSVC compiler.
- - Focuses on ABI compatibility within major Visual Studio versions (VS 2015-2022 are binary
- compatible).
- - Heavily utilizes Windows-specific debugging hooks.
+- Open-source (GitHub) but specifically targeted for Windows and the MSVC compiler.
+- Focuses on ABI compatibility within major Visual Studio versions (VS 2015-2022 are binary
+  compatible).
+- Heavily utilizes Windows-specific debugging hooks.
 - **License:** MIT.
 
 ---
 
 ## Implementation Comparison Matrix
 
-| Dimension | libstdc++ | libc++ | MSVC STL |
+| Dimension                          | libstdc++                           | libc++                                  | MSVC STL                               |
 | :--------------------------------- | :---------------------------------- | :-------------------------------------- | :------------------------------------- |
-| **Maintainer** | FSF / GCC Project | LLVM Project | Microsoft |
-| **License** | GPL v3 + runtime exception | Apache 2.0 + LLVM exception | MIT |
-| **Primary platform** | Linux | macOS, FreeBSD, Android | Windows |
-| **Default compiler** | GCC | Clang | MSVC |
-| **Usable with Clang** | Yes (default on Linux) | Yes (`-stdlib=libc++`) | No |
-| **Usable with GCC** | Yes (default) | Difficult (requires patching) | No |
-| **Header-only components** | `<algorithm>``<numeric>`Etc. | Same | Same |
-| **Linked components** | `libstdc++.so``libsupc++.a` | `libc++.so``libc++abi.so` | Merged into `msvcprt.lib` / DLL |
-| **ABI versioning** | Dual ABI (`_GLIBCXX_USE_CXX11_ABI`) | Inline namespaces (`__1`) | VS version-aligned |
-| **Debug mode** | `-D_GLIBCXX_DEBUG` (ABI-breaking) | `_LIBCPP_HARDENING_MODE` (non-breaking) | `_ITERATOR_DEBUG_LEVEL` (ABI-breaking) |
-| **Parallel algorithms** | Yes (`<parallel/algorithm>`) | No (as of LLVM 18) | No |
-| **COW `std::string`** | Legacy ABI only | Never | Never |
-| **SSO buffer size (64-bit)** | 15 bytes | 22 bytes | 15 bytes |
-| **`sizeof(std::string)` (64-bit)** | 32 bytes | 24 bytes | 32 bytes |
-| **Modules support** | Partial (GCC 12+) | Good (Clang 16+) | Partial |
-| **Concepts/Ranges completeness** | High (GCC 13+) | High (Clang 16+) | High (MSVC 19.38+) |
+| **Maintainer**                     | FSF / GCC Project                   | LLVM Project                            | Microsoft                              |
+| **License**                        | GPL v3 + runtime exception          | Apache 2.0 + LLVM exception             | MIT                                    |
+| **Primary platform**               | Linux                               | macOS, FreeBSD, Android                 | Windows                                |
+| **Default compiler**               | GCC                                 | Clang                                   | MSVC                                   |
+| **Usable with Clang**              | Yes (default on Linux)              | Yes (`-stdlib=libc++`)                  | No                                     |
+| **Usable with GCC**                | Yes (default)                       | Difficult (requires patching)           | No                                     |
+| **Header-only components**         | `<algorithm>``<numeric>`Etc.        | Same                                    | Same                                   |
+| **Linked components**              | `libstdc++.so``libsupc++.a`         | `libc++.so``libc++abi.so`               | Merged into `msvcprt.lib` / DLL        |
+| **ABI versioning**                 | Dual ABI (`_GLIBCXX_USE_CXX11_ABI`) | Inline namespaces (`__1`)               | VS version-aligned                     |
+| **Debug mode**                     | `-D_GLIBCXX_DEBUG` (ABI-breaking)   | `_LIBCPP_HARDENING_MODE` (non-breaking) | `_ITERATOR_DEBUG_LEVEL` (ABI-breaking) |
+| **Parallel algorithms**            | Yes (`<parallel/algorithm>`)        | No (as of LLVM 18)                      | No                                     |
+| **COW `std::string`**              | Legacy ABI only                     | Never                                   | Never                                  |
+| **SSO buffer size (64-bit)**       | 15 bytes                            | 22 bytes                                | 15 bytes                               |
+| **`sizeof(std::string)` (64-bit)** | 32 bytes                            | 24 bytes                                | 32 bytes                               |
+| **Modules support**                | Partial (GCC 12+)                   | Good (Clang 16+)                        | Partial                                |
+| **Concepts/Ranges completeness**   | High (GCC 13+)                      | High (Clang 16+)                        | High (MSVC 19.38+)                     |
 
 ## ABI Architectures and Symbol Mangling
 
@@ -113,12 +116,10 @@ namespace std {
 #endif
 ```
 
-:::danger
-Linker Errors If library `A.a` is compiled with `_GLIBCXX_USE_CXX11_ABI=0` and application
-`B.exe` is compiled with `_GLIBCXX_USE_CXX11_ABI=1`The linker will fail with "Undefined Reference
-To `std::string`" because the application is looking for `std::__cxx11::string`But the library
-Provides `std::string`.
-:::
+:::danger Linker Errors If library `A.a` is compiled with `_GLIBCXX_USE_CXX11_ABI=0` and application
+`B.exe` is compiled with `_GLIBCXX_USE_CXX11_ABI=1`The linker will fail with "Undefined Reference To
+`std::string`" because the application is looking for `std::__cxx11::string`But the library Provides
+`std::string`. :::
 
 ### The `std::list` ABI Change
 
@@ -133,12 +134,11 @@ State.
 
 ### libc++: Inline Namespace Versioning
 
-`libc++` uses a different strategy. It wraps the entire library in an inline namespace, 
-`std::__1`.
+`libc++` uses a different strategy. It wraps the entire library in an inline namespace, `std::__1`.
 
 - A `std::vector<int>` in source code becomes `std::__1::vector<int>` in the symbol table.
-- This prevents a binary linked against `libstdc++` from accidentally linking against `libc++`As
- the symbols will not match.
+- This prevents a binary linked against `libstdc++` from accidentally linking against `libc++`As the
+  symbols will not match.
 
 When libc++ needs to break ABI (e.g., changing the internal layout of `std::optional`), it creates a
 New inline namespace (e.g., `std::__2`) and re-exports symbols there. The `_LIBCPP_ABI_VERSION`
@@ -171,15 +171,15 @@ These are "header-only" in the sense that the implementation is entirely in head
 
 The following require linking against a runtime library:
 
-| Component | libstdc++ library | libc++ library | MSVC library |
+| Component                             | libstdc++ library | libc++ library | MSVC library  |
 | :------------------------------------ | :---------------- | :------------- | :------------ |
-| Exception handling (`throw``try`) | `libstdc++.so` | `libc++abi.so` | `msvcprt.lib` |
-| `dynamic_cast``typeid` (RTTI) | `libstdc++.so` | `libc++abi.so` | `msvcprt.lib` |
-| `new` / `delete` (operator overloads) | `libstdc++.so` | `libc++abi.so` | `msvcrt.lib` |
-| `std::locale``std::cout` (I/O) | `libstdc++.so` | `libc++.so` | `msvcprt.lib` |
-| Thread support (`std::thread`) | `libstdc++.so` | `libc++.so` | `msvcprt.lib` |
-| `std::regex` | `libstdc++.so` | `libc++.so` | `msvcprt.lib` |
-| `std::filesystem` | `libstdc++.so` | `libc++.so` | `msvcprt.lib` |
+| Exception handling (`throw``try`)     | `libstdc++.so`    | `libc++abi.so` | `msvcprt.lib` |
+| `dynamic_cast``typeid` (RTTI)         | `libstdc++.so`    | `libc++abi.so` | `msvcprt.lib` |
+| `new` / `delete` (operator overloads) | `libstdc++.so`    | `libc++abi.so` | `msvcrt.lib`  |
+| `std::locale``std::cout` (I/O)        | `libstdc++.so`    | `libc++.so`    | `msvcprt.lib` |
+| Thread support (`std::thread`)        | `libstdc++.so`    | `libc++.so`    | `msvcprt.lib` |
+| `std::regex`                          | `libstdc++.so`    | `libc++.so`    | `msvcprt.lib` |
+| `std::filesystem`                     | `libstdc++.so`    | `libc++.so`    | `msvcprt.lib` |
 
 The split between the "C++ library" (`libc++.so`) and the "ABI library" (`libc++abi.so`) is unique
 To libc++. The ABI library handles the low-level runtime support (exception unwinding, RTTI, memory
@@ -196,9 +196,9 @@ Result in silent memory corruption.
 
 - **Flag:** `-D_GLIBCXX_DEBUG`
 - **Effect:** Changes the layout of containers (e.g., `std::vector` becomes larger to store iterator
- tracking info).
+  tracking info).
 - **Constraint:** **ABI Breaking.** The entire application and all linked dependencies must be
- compiled with this flag, or the program will crash due to object size mismatches.
+  compiled with this flag, or the program will crash due to object size mismatches.
 
 The debug mode works by replacing standard containers with debug wrappers (e.g., `__debug::vector`
 Instead of `std::vector`). These wrappers maintain a list of all live iterators and validate every
@@ -212,25 +212,25 @@ Operation acquires a mutex (in thread-safe mode).
 - **Flag:** `-D_LIBCPP_HARDENING_MODE=_LIBCPP_HARDENING_MODE_EXTENSIVE` (LLVM 18+).
 - **Effect:** Enables bounds checking on `operator[]` and internal assertions.
 - **Constraint:** Generally ABI stable (depending on specific configuration), allowing it to be
- enabled for specific translation units.
+  enabled for specific translation units.
 
 The hardening modes are:
 
-| Mode | Flag Value | Effect |
-| :------------- | :--------------------------------- | :------------------------------------ |
-| None (default) | `_LIBCPP_HARDENING_MODE_NONE` | No additional checks |
-| Minimal | `_LIBCPP_HARDENING_MODE_MINIMAL` | Assertions only in debug builds |
-| Extensive | `_LIBCPP_HARDENING_MODE_EXTENSIVE` | Bounds checking on `operator[]`Etc. |
-| Debug | `_LIBCPP_HARDENING_MODE_DEBUG` | All checks, plus abort on UB |
+| Mode           | Flag Value                         | Effect                              |
+| :------------- | :--------------------------------- | :---------------------------------- |
+| None (default) | `_LIBCPP_HARDENING_MODE_NONE`      | No additional checks                |
+| Minimal        | `_LIBCPP_HARDENING_MODE_MINIMAL`   | Assertions only in debug builds     |
+| Extensive      | `_LIBCPP_HARDENING_MODE_EXTENSIVE` | Bounds checking on `operator[]`Etc. |
+| Debug          | `_LIBCPP_HARDENING_MODE_DEBUG`     | All checks, plus abort on UB        |
 
 ### MSVC Iterator Debugging
 
 - **Flag:** `_ITERATOR_DEBUG_LEVEL` (IDL).
- - `IDL=0`: Release mode (No checks).
- - `IDL=2`: Debug mode (Full checks).
+- `IDL=0`: Release mode (No checks).
+- `IDL=2`: Debug mode (Full checks).
 - **Effect:** Changes container layout.
 - **Constraint:** ABI Breaking. The linker will explicitly refuse to link object files with
- mismatched IDL levels (`mismatch detected for '_ITERATOR_DEBUG_LEVEL'`).
+  mismatched IDL levels (`mismatch detected for '_ITERATOR_DEBUG_LEVEL'`).
 
 MSVC's checked iterators work by adding a `_Container_proxy` object to each container. This proxy
 Maintains a list of all iterators created from the container. When the container is modified, the
@@ -239,15 +239,15 @@ With a detailed diagnostic.
 
 ### Checked Iterators Comparison
 
-| Feature | libstdc++ Debug | libc++ Hardening | MSVC STL (IDL=2) |
+| Feature                    | libstdc++ Debug      | libc++ Hardening         | MSVC STL (IDL=2)    |
 | :------------------------- | :------------------- | :----------------------- | :------------------ |
-| Out-of-bounds `operator[]` | Yes (always) | Yes (extensive mode) | Yes |
-| Iterator invalidation | Yes | Partial | Yes |
-| Use-after-move detection | No | Yes (extensive mode) | Yes |
-| Container overflow | Yes | Yes | Yes |
-| ABI breaking? | Yes | No | Yes |
-| Per-TU enablement | No (all-or-nothing) | Yes | No (all-or-nothing) |
-| Performance overhead | High (2-5x slowdown) | Low (5-10% in extensive) | Moderate (1.5-3x) |
+| Out-of-bounds `operator[]` | Yes (always)         | Yes (extensive mode)     | Yes                 |
+| Iterator invalidation      | Yes                  | Partial                  | Yes                 |
+| Use-after-move detection   | No                   | Yes (extensive mode)     | Yes                 |
+| Container overflow         | Yes                  | Yes                      | Yes                 |
+| ABI breaking?              | Yes                  | No                       | Yes                 |
+| Per-TU enablement          | No (all-or-nothing)  | Yes                      | No (all-or-nothing) |
+| Performance overhead       | High (2-5x slowdown) | Low (5-10% in extensive) | Moderate (1.5-3x)   |
 
 ## Configuration and Selection
 
@@ -376,17 +376,17 @@ int main() {
 
 ### Important Feature Test Macros
 
-| Macro | Feature | Minimum Standard |
+| Macro                 | Feature          | Minimum Standard |
 | --------------------- | ---------------- | ---------------- |
-| `__cpp_lib_concepts` | Concepts library | C++20 |
-| `__cpp_lib_ranges` | Ranges library | C++20 |
-| `__cpp_lib_coroutine` | Coroutines | C++20 |
-| `__cpp_lib_format` | `std::format` | C++20 |
-| `__cpp_lib_span` | `std::span` | C++20 |
-| `__cpp_lib_print` | `std::print` | C++23 |
-| `__cpp_lib_expected` | `std::expected` | C++23 |
-| `__cpp_lib_flat_map` | `std::flat_map` | C++23 |
-| `__cpp_lib_mdspan` | `std::mdspan` | C++23 |
+| `__cpp_lib_concepts`  | Concepts library | C++20            |
+| `__cpp_lib_ranges`    | Ranges library   | C++20            |
+| `__cpp_lib_coroutine` | Coroutines       | C++20            |
+| `__cpp_lib_format`    | `std::format`    | C++20            |
+| `__cpp_lib_span`      | `std::span`      | C++20            |
+| `__cpp_lib_print`     | `std::print`     | C++23            |
+| `__cpp_lib_expected`  | `std::expected`  | C++23            |
+| `__cpp_lib_flat_map`  | `std::flat_map`  | C++23            |
+| `__cpp_lib_mdspan`    | `std::mdspan`    | C++23            |
 
 The value of each macro is a date `YYYYMML` indicating when the feature was finalized. A higher
 Value means a more complete implementation.
@@ -399,12 +399,12 @@ Appear to succeed, but runtime will fail unpredictably.
 ### Why Mixing Fails
 
 1. **Different memory layouts:** `std::string` has different sizes and internal layouts in libstdc++
- (SSO with 15-byte buffer) vs libc++ (SSO with 22-byte buffer) vs MSVC STL (SSO with 15-byte
- buffer, different layout).
+   (SSO with 15-byte buffer) vs libc++ (SSO with 22-byte buffer) vs MSVC STL (SSO with 15-byte
+   buffer, different layout).
 2. **Different symbol names:** Each implementation uses different name mangling for template
- instantiations.
+   instantiations.
 3. **Different allocator contracts:** The internal memory management functions (`operator new`
- `operator delete`) may have different expectations.
+   `operator delete`) may have different expectations.
 
 ### Real-World Failure Scenario
 
@@ -478,11 +478,11 @@ clang++ -std=c++23 -stdlib=libc++ -lc++abi main.cpp -o app
 ### When to Use libc++
 
 1. **Sanitizer development:** The LLVM sanitizers (ASan, UBSan, MSan) are tested against libc++.
- Using libstdc++ with sanitizers can mask issues.
+   Using libstdc++ with sanitizers can mask issues.
 2. **Embedding in other languages:** Rust's `cxx` crate and Swift's C++ interop work best with
- libc++.
+   libc++.
 3. **Freedesktop SDK / Flatpak:** Many modern Linux container environments ship libc++ as the
- standard.
+   standard.
 
 ### Verifying the Active Library at Runtime
 
@@ -597,29 +597,29 @@ Measurable in specific scenarios.
 
 ### Benchmark: `std::vector<int>` Push Back (Millions of elements)
 
-| Operation | libstdc++ (GCC 13) | libc++ (Clang 17) | MSVC STL (VS 2022) |
+| Operation                 | libstdc++ (GCC 13) | libc++ (Clang 17) | MSVC STL (VS 2022) |
 | ------------------------- | ------------------ | ----------------- | ------------------ |
-| `push_back` (1M elements) | 12ms | 11ms | 13ms |
-| `reserve` + `push_back` | 8ms | 7ms | 9ms |
-| Random access (1M reads) | 2ms | 2ms | 2ms |
+| `push_back` (1M elements) | 12ms               | 11ms              | 13ms               |
+| `reserve` + `push_back`   | 8ms                | 7ms               | 9ms                |
+| Random access (1M reads)  | 2ms                | 2ms               | 2ms                |
 
 ### Benchmark: `std::string` Operations
 
-| Operation | libstdc++ | libc++ | MSVC STL |
+| Operation                       | libstdc++ | libc++ | MSVC STL |
 | ------------------------------- | --------- | ------ | -------- |
-| Construction from `const char*` | 15ns | 12ns | 16ns |
-| SSO hit (short string) | 8ns | 5ns | 7ns |
-| Concatenation (medium) | 120ns | 95ns | 130ns |
-| `find` substring (1KB) | 450ns | 380ns | 420ns |
+| Construction from `const char*` | 15ns      | 12ns   | 16ns     |
+| SSO hit (short string)          | 8ns       | 5ns    | 7ns      |
+| Concatenation (medium)          | 120ns     | 95ns   | 130ns    |
+| `find` substring (1KB)          | 450ns     | 380ns  | 420ns    |
 
 ### Key Differences
 
 - **libc++** tends to be faster for `std::string` operations due to its larger SSO buffer (22 bytes
- vs 15 bytes in libstdc++ and MSVC).
+  vs 15 bytes in libstdc++ and MSVC).
 - **libstdc++** tends to be faster for `std::vector` operations due to aggressive inlining
- optimizations in GCC.
+  optimizations in GCC.
 - **MSVC STL** provides the best debugging experience (checked iterators, iterator debugging) but
- has slightly higher overhead in debug builds.
+  has slightly higher overhead in debug builds.
 
 ## Feature Support Matrix by Implementation
 
@@ -628,46 +628,46 @@ Feature implementations. The following table shows feature support status as of 
 
 ### C++23 Library Feature Support
 
-| Feature | libstdc++ (GCC 14) | libc++ (Clang 18) | MSVC STL (VS 2022 17.10+) |
+| Feature                           | libstdc++ (GCC 14) | libc++ (Clang 18) | MSVC STL (VS 2022 17.10+) |
 | :-------------------------------- | :----------------- | :---------------- | :------------------------ |
-| `std::print` / `std::println` | Yes | Yes | Yes |
-| `std::expected` | Yes | Yes | Yes |
-| `std::flat_map` / `std::flat_set` | Yes | Yes | Yes |
-| `std::mdspan` | Yes | Yes | Yes |
-| `std::move_only_function` | Yes | Yes | Yes |
-| `std::generator` (coroutines) | Partial | Yes | Partial |
-| `std::ranges::to` | Yes | Yes | Partial |
-| `std::format` (full C++23 spec) | Yes | Yes | Partial |
-| `std::stacktrace` | Yes | Yes | Yes |
-| `std::out_ptr` / `std::inout_ptr` | Yes | Yes | Yes |
-| `std::byteswap` | Yes | Yes | Yes |
-| `std::start_lifetime_as` | Partial | Yes | No |
+| `std::print` / `std::println`     | Yes                | Yes               | Yes                       |
+| `std::expected`                   | Yes                | Yes               | Yes                       |
+| `std::flat_map` / `std::flat_set` | Yes                | Yes               | Yes                       |
+| `std::mdspan`                     | Yes                | Yes               | Yes                       |
+| `std::move_only_function`         | Yes                | Yes               | Yes                       |
+| `std::generator` (coroutines)     | Partial            | Yes               | Partial                   |
+| `std::ranges::to`                 | Yes                | Yes               | Partial                   |
+| `std::format` (full C++23 spec)   | Yes                | Yes               | Partial                   |
+| `std::stacktrace`                 | Yes                | Yes               | Yes                       |
+| `std::out_ptr` / `std::inout_ptr` | Yes                | Yes               | Yes                       |
+| `std::byteswap`                   | Yes                | Yes               | Yes                       |
+| `std::start_lifetime_as`          | Partial            | Yes               | No                        |
 
 ### C++20 Library Feature Support
 
-| Feature | libstdc++ (GCC 13) | libc++ (Clang 17) | MSVC STL (VS 2022) |
+| Feature                    | libstdc++ (GCC 13) | libc++ (Clang 17) | MSVC STL (VS 2022) |
 | :------------------------- | :----------------- | :---------------- | :----------------- |
-| Concepts | Yes | Yes | Yes |
-| Ranges (full) | Yes | Yes | Yes |
-| Coroutines (`<coroutine>`) | Partial | Yes | Partial |
-| Modules | Experimental | Partial | Partial |
-| `std::format` | Yes | Yes | Yes |
-| `std::span` | Yes | Yes | Yes |
-| Three-way comparison | Yes | Yes | Yes |
-| `std::jthread` | Yes | Yes | Yes |
-| Calendar / Time zone | Yes | Yes | Yes |
-| `<source_location>` | Yes | Yes | Yes |
+| Concepts                   | Yes                | Yes               | Yes                |
+| Ranges (full)              | Yes                | Yes               | Yes                |
+| Coroutines (`<coroutine>`) | Partial            | Yes               | Partial            |
+| Modules                    | Experimental       | Partial           | Partial            |
+| `std::format`              | Yes                | Yes               | Yes                |
+| `std::span`                | Yes                | Yes               | Yes                |
+| Three-way comparison       | Yes                | Yes               | Yes                |
+| `std::jthread`             | Yes                | Yes               | Yes                |
+| Calendar / Time zone       | Yes                | Yes               | Yes                |
+| `<source_location>`        | Yes                | Yes               | Yes                |
 
 ### Thread Support Comparison
 
-| Feature | libstdc++ | libc++ | MSVC STL |
+| Feature                        | libstdc++ | libc++ | MSVC STL |
 | :----------------------------- | :-------- | :----- | :------- |
-| Thread pool (`std::jthread`) | Yes | Yes | Yes |
-| Latch / Barrier | Yes | Yes | Yes |
-| Semaphore | Yes | Yes | Yes |
-| `std::atomic_ref` | Yes | Yes | Yes |
-| `std::atomic<shared_ptr>` | Yes | Yes | Yes |
-| Stop token (`std::stop_token`) | Yes | Yes | Yes |
+| Thread pool (`std::jthread`)   | Yes       | Yes    | Yes      |
+| Latch / Barrier                | Yes       | Yes    | Yes      |
+| Semaphore                      | Yes       | Yes    | Yes      |
+| `std::atomic_ref`              | Yes       | Yes    | Yes      |
+| `std::atomic<shared_ptr>`      | Yes       | Yes    | Yes      |
+| Stop token (`std::stop_token`) | Yes       | Yes    | Yes      |
 
 ## Choosing the Right Implementation
 
@@ -721,35 +721,35 @@ extern "C" {
 ## Common Pitfalls
 
 1. **Ignoring the dual ABI on older GCC:** If you link against a library compiled with GCC 5
- (pre-dual-ABI) using GCC 13 (post-dual-ABI), you must compile with `-D_GLIBCXX_USE_CXX11_ABI=0`
- to match the old ABI. This is a common source of linker errors in legacy codebases.
+   (pre-dual-ABI) using GCC 13 (post-dual-ABI), you must compile with `-D_GLIBCXX_USE_CXX11_ABI=0`
+   to match the old ABI. This is a common source of linker errors in legacy codebases.
 2. **Debug modes in production:** Never ship binaries compiled with `_GLIBCXX_DEBUG` or
- `_ITERATOR_DEBUG_LEVEL=2`. These change container layouts, making the binary ABI-incompatible
- with release builds of the same library.
+   `_ITERATOR_DEBUG_LEVEL=2`. These change container layouts, making the binary ABI-incompatible
+   with release builds of the same library.
 3. **Assuming `sizeof(std::string)` is portable:** The size of `std::string` varies between
- implementations. Never serialize `std::string` by writing its raw bytes. Use
- `std::string::data()` and `std::string::size()` instead.
+   implementations. Never serialize `std::string` by writing its raw bytes. Use
+   `std::string::data()` and `std::string::size()` instead.
 4. **Missing `-lc++abi` when using libc++:** On Linux, libc++ requires linking against `libc++abi`
- for exception handling and RTTI support. Forgetting this causes linker errors about missing
- `__cxa_begin_catch` and `__gxx_personality_v0`.
+   for exception handling and RTTI support. Forgetting this causes linker errors about missing
+   `__cxa_begin_catch` and `__gxx_personality_v0`.
 5. **Using `libstdc++` debug containers with release libraries:** If your application is compiled
- with `-D_GLIBCXX_DEBUG` but links against a system library that was not, the size mismatch
- between debug and release containers causes immediate crashes. The debug mode changes the layout
- of every container, so both sides of the boundary must agree.
+   with `-D_GLIBCXX_DEBUG` but links against a system library that was not, the size mismatch
+   between debug and release containers causes immediate crashes. The debug mode changes the layout
+   of every container, so both sides of the boundary must agree.
 6. **Relying on implementation-specific SSO buffer size:** Code that optimizes for SSO by checking
- string length against a magic number (15, 22, etc.) is non-portable. The SSO threshold is an
- implementation detail. Use `std::string` normally and let the implementation handle optimization.
+   string length against a magic number (15, 22, etc.) is non-portable. The SSO threshold is an
+   implementation detail. Use `std::string` normally and let the implementation handle optimization.
 7. **Forgetting that `libstdc++` parallel algorithms require `-fopenmp`:** Including
- `<parallel/algorithm>` without linking with `-fopenmp` results in a sequential fallback with no
- parallelism. The performance difference can be 4-8x on multi-core systems.
+   `<parallel/algorithm>` without linking with `-fopenmp` results in a sequential fallback with no
+   parallelism. The performance difference can be 4-8x on multi-core systems.
 
 ## See Also
 
 - [Installing a Compiler](1_installing_compiler.md) -- Setting up GCC, Clang, or MSVC
 - [Language Standard and ABI Compatibility](2_language_standard_and_abi_compatibility.md) -- How ABI
- changes across standard versions
+  changes across standard versions
 - [Cross-compilation Toolchains](4_crosscompilation_toolchains.md) -- Choosing the right standard
- library for cross-compilation
+  library for cross-compilation
 - [Linker Configuration](5_linker_configuration.md) -- Linking against the standard library
 
 ## Summary

@@ -1,11 +1,14 @@
 ---
 title: Class Loading and Memory Model
-description: "Java: Class Loading and Memory Model — Class Loading; The Delegation Model; Bootstrap Class Loader; Platform Class Loader."
+description:
+  'Java: Class Loading and Memory Model — Class Loading; The Delegation Model; Bootstrap Class
+  Loader; Platform Class Loader.'
 date: 2026-04-03T00:00:00.000Z
 tags: ['java']
 categories: ['java']
 slug: class-loading-memory
 ---
+
 ## Class Loading
 
 ### The Delegation Model
@@ -54,8 +57,8 @@ Loaders has been restructured. The platform class loader loads platform modules 
 ### Application Class Loader
 
 The application class loader loads classes from the classpath: directories and JARs specified by
-`-cp``-classpath`Or the `CLASSPATH` environment variable. It is also the default class loader
-For `ClassLoader.getSystemClassLoader()`.
+`-cp``-classpath`Or the `CLASSPATH` environment variable. It is also the default class loader For
+`ClassLoader.getSystemClassLoader()`.
 
 ### Custom Class Loaders
 
@@ -63,11 +66,11 @@ Custom class loaders extend `java.lang.ClassLoader` and override `findClass(Stri
 Use cases:
 
 - **Application servers**: Tomcat, WebSphere each load web applications in isolated class loaders so
- different apps can use different versions of the same library.
+  different apps can use different versions of the same library.
 - **OSGi frameworks**: Each bundle has its own class loader with a directed graph of dependencies.
 - **Hot reload**: Development tools reload changed classes without restarting the JVM.
 - **Security sandboxing**: Untrusted code is loaded in a restricted class loader with limited
- permissions.
+  permissions.
 
 ```java
 public class EncryptedClassLoader extends ClassLoader {
@@ -121,9 +124,9 @@ The process has three phases:
 
 1. **Loading**: Read the `.class` file bytes and create a `java.lang.Class` object.
 2. **Linking**: Verify bytecode, prepare static fields (allocate memory, set to defaults), resolve
- symbolic references.
+   symbolic references.
 3. **Initialization**: Execute static initializers (`&lt;clinit&gt;` methods) and static field
- assignments.
+   assignments.
 
 Verification catches malformed class files, stack overflow attacks, and type safety violations
 Before any code executes. This is why the JVM is inherently safer than languages that load and
@@ -141,8 +144,8 @@ Generations based on the generational hypothesis:
 
 - **Eden**: Where new objects are allocated. When Eden fills up, a minor GC occurs.
 - **Survivor spaces (S0, S1)**: Objects that survive a minor GC are copied from Eden into a survivor
- space. Each subsequent minor GC that an object survives increments its "age." Objects that reach a
- configurable tenuring threshold are promoted to the old generation.
+  space. Each subsequent minor GC that an object survives increments its "age." Objects that reach a
+  configurable tenuring threshold are promoted to the old generation.
 
 **Old Generation (Tenured)** -- Objects that have survived multiple minor GC cycles are promoted
 Here. Old generation collections (major GCs) are much more expensive because they must scan a much
@@ -170,9 +173,8 @@ java -Xms512m -Xmx4g MyApp
 # -Xmx: maximum heap size
 ```
 
-The young generation size is 1/3 of the total heap, but this is configurable. The ratio of
-Eden to survivor spaces is controlled by `-XX:SurvivorRatio=8` (Eden is 8 parts, each survivor is 1
-Part).
+The young generation size is 1/3 of the total heap, but this is configurable. The ratio of Eden to
+survivor spaces is controlled by `-XX:SurvivorRatio=8` (Eden is 8 parts, each survivor is 1 Part).
 
 ### Stack
 
@@ -199,8 +201,8 @@ A fixed maximum size).
 java -XX:MaxMetaspaceSize=256m MyApp  # Limit metaspace growth
 ```
 
-Metaspace exhaustion occurs in applications that generate classes dynamically (JSP
-Engines, proxy generators, Groovy/Scala REPLs, Spring CGLIB proxies). Symptoms include
+Metaspace exhaustion occurs in applications that generate classes dynamically (JSP Engines, proxy
+generators, Groovy/Scala REPLs, Spring CGLIB proxies). Symptoms include
 `OutOfMemoryError: Metaspace`.
 
 ### Code Cache
@@ -257,21 +259,21 @@ The basic GC algorithm has three phases:
 1. **Mark**: Traverse the object graph from GC roots, marking reachable objects.
 2. **Sweep**: Identify unmarked objects as garbage and reclaim their memory.
 3. **Compact**: Move surviving objects to eliminate fragmentation (optional but common in old
- generation collections).
+   generation collections).
 
 Compaction is expensive because it requires updating all references to moved objects. Some
 Collectors (CMS) skip compaction to reduce pause times, trading pause time for fragmentation.
 
 ### Collector Comparison
 
-| Collector | Threads | Generations | Compaction | Pause Goal | Use Case |
+| Collector  | Threads      | Generations | Compaction | Pause Goal       | Use Case                  |
 | ---------- | ------------ | ----------- | ---------- | ---------------- | ------------------------- |
-| Serial | Single | Both | Yes | Long pauses | Client, embedded devices |
-| Parallel | Multiple STW | Both | Yes | Throughput | Batch processing |
-| CMS | Multiple | Both | Optional | Low pauses | Deprecated (JDK 14) |
-| G1 | Multiple STW | Both | Regions | Low pauses | General purpose (default) |
-| ZGC | Concurrent | Both | Relocating | &lt; 1 ms pauses | Low latency |
-| Shenandoah | Concurrent | Both | Relocating | &lt; 1 ms pauses | Low latency |
+| Serial     | Single       | Both        | Yes        | Long pauses      | Client, embedded devices  |
+| Parallel   | Multiple STW | Both        | Yes        | Throughput       | Batch processing          |
+| CMS        | Multiple     | Both        | Optional   | Low pauses       | Deprecated (JDK 14)       |
+| G1         | Multiple STW | Both        | Regions    | Low pauses       | General purpose (default) |
+| ZGC        | Concurrent   | Both        | Relocating | &lt; 1 ms pauses | Low latency               |
+| Shenandoah | Concurrent   | Both        | Relocating | &lt; 1 ms pauses | Low latency               |
 
 **STW** = Stop-The-World (all application threads paused during the GC phase).
 
@@ -352,13 +354,13 @@ Many classes.
 
 Java 8 replaced PermGen with Metaspace:
 
-| Aspect | PermGen (pre-Java 8) | Metaspace (Java 8+) |
+| Aspect      | PermGen (pre-Java 8)        | Metaspace (Java 8+)                      |
 | ----------- | --------------------------- | ---------------------------------------- |
-| Location | Part of the Java heap | Native memory (outside the heap) |
-| Size | Fixed (`-XX:MaxPermSize`) | Unlimited by default (bounded by native) |
-| String pool | In PermGen | In the regular heap |
-| GC | Full GC to reclaim | Triggered when usage exceeds threshold |
-| OOM | `OutOfMemoryError: PermGen` | `OutOfMemoryError: Metaspace` |
+| Location    | Part of the Java heap       | Native memory (outside the heap)         |
+| Size        | Fixed (`-XX:MaxPermSize`)   | Unlimited by default (bounded by native) |
+| String pool | In PermGen                  | In the regular heap                      |
+| GC          | Full GC to reclaim          | Triggered when usage exceeds threshold   |
+| OOM         | `OutOfMemoryError: PermGen` | `OutOfMemoryError: Metaspace`            |
 
 ## GC Tuning
 
@@ -534,9 +536,9 @@ Module declares which packages it exports and which modules it requires. The mod
 With class loading in two ways:
 
 1. **Readable modules**: A class in module A can only access classes in module B if A `requires` B
- (or B is in the boot layer).
+   (or B is in the boot layer).
 2. **Exported packages**: Even if module A can read module B, it can only access classes in packages
- that B explicitly `exports`.
+   that B explicitly `exports`.
 
 ```java
 // module-info.java
@@ -674,11 +676,11 @@ Native memory that is not part of the heap. Virtual threads eliminate this probl
 
 - [Concurrency](../06-concurrency/01-concurrency.md) -- how threads interact with JVM memory
 - [Style and Patterns](../07-best-practices/01-style-and-patterns.md) -- memory management best
- practices
+  practices
 - [JIT Compilation](../09-jvm-internals/02-jit-compilation.md) -- how the JIT compiler optimizes hot
- code
+  code
 - [Virtual Threads and Structured Concurrency](../08-modern-java/02-virtual-threads-structured-concurrency.md)
- -- virtual thread memory characteristics
+  -- virtual thread memory characteristics
 
 ## Summary
 

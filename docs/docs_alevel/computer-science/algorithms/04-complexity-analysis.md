@@ -1,6 +1,8 @@
 ---
 title: Complexity Analysis
-description: "A-Level Computer Science notes on Complexity Analysis: 1. Formal Definitions; Asymptotic Notation; Big-O (Upper Bound); Big-Omega (Lower Bound)."
+description:
+  'A-Level Computer Science notes on Complexity Analysis: 1. Formal Definitions; Asymptotic
+  Notation; Big-O (Upper Bound); Big-Omega (Lower Bound).'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - ComputerScience
@@ -9,6 +11,7 @@ categories:
   - ComputerScience
 slug: complexity-analysis
 ---
+
 ## 1. Formal Definitions
 
 ### Asymptotic Notation
@@ -67,23 +70,21 @@ $\square$
 
 ### Common Complexity Classes
 
-| Class | Name | Example |
+| Class         | Name         | Example                         |
 | ------------- | ------------ | ------------------------------- |
-| $O(1)$ | Constant | Array access |
-| $O(\log n)$ | Logarithmic | Binary search |
-| $O(n)$ | Linear | Linear search |
-| $O(n \log n)$ | Linearithmic | Merge sort, heap sort |
-| $O(n^2)$ | Quadratic | Bubble sort, insertion sort |
-| $O(n^3)$ | Cubic | Floyd-Warshall, matrix multiply |
-| $O(2^n)$ | Exponential | Subset enumeration, brute force |
-| $O(n!)$ | Factorial | Permutation enumeration (TSP) |
+| $O(1)$        | Constant     | Array access                    |
+| $O(\log n)$   | Logarithmic  | Binary search                   |
+| $O(n)$        | Linear       | Linear search                   |
+| $O(n \log n)$ | Linearithmic | Merge sort, heap sort           |
+| $O(n^2)$      | Quadratic    | Bubble sort, insertion sort     |
+| $O(n^3)$      | Cubic        | Floyd-Warshall, matrix multiply |
+| $O(2^n)$      | Exponential  | Subset enumeration, brute force |
+| $O(n!)$       | Factorial    | Permutation enumeration (TSP)   |
 
-:::info
-Board-specific **AQA** requires Big-O notation for standard algorithms (searching, sorting);
+:::info Board-specific **AQA** requires Big-O notation for standard algorithms (searching, sorting);
 Focuses on time complexity. **CIE (9618)** covers Big-O, Big-Theta, and Big-Omega notation; requires
 Space complexity analysis. **OCR (A)** requires Big-O notation; may require comparison of algorithm
-Performance. **Edexcel** covers time and space complexity with Big-O notation.
-:::
+Performance. **Edexcel** covers time and space complexity with Big-O notation. :::
 
 <hr />
 
@@ -91,8 +92,8 @@ Performance. **Edexcel** covers time and space complexity with Big-O notation.
 
 ### Definitions
 
-For an algorithm with input size $n$Let $D_n$ be the set of all possible inputs of size $n$And
-Let $T(A, I)$ be the running time of algorithm $A$ on input $I$.
+For an algorithm with input size $n$Let $D_n$ be the set of all possible inputs of size $n$And Let
+$T(A, I)$ be the running time of algorithm $A$ on input $I$.
 
 - **Best case:** $T_{\mathrm{best}}(n) = \min_{I \in D_n} T(A, I)$
 - **Worst case:** $T_{\mathrm{worst}}(n) = \max_{I \in D_n} T(A, I)$
@@ -102,14 +103,13 @@ Where $P(I)$ is the probability of input $I$.
 
 ### Example: Quick Sort
 
-| Case | Complexity | When |
+| Case    | Complexity    | When                          |
 | ------- | ------------- | ----------------------------- |
-| Best | $O(n \log n)$ | Pivot always splits in half |
-| Average | $O(n \log n)$ | Random inputs (expected) |
-| Worst | $O(n^2)$ | Already sorted, min/max pivot |
+| Best    | $O(n \log n)$ | Pivot always splits in half   |
+| Average | $O(n \log n)$ | Random inputs (expected)      |
+| Worst   | $O(n^2)$      | Already sorted, min/max pivot |
 
-:::warning
-Pitfall Average case assumes a **uniform distribution** of inputs. Real-world data may
+:::warning Pitfall Average case assumes a **uniform distribution** of inputs. Real-world data may
 Not be uniformly distributed. Always state the distribution assumption when discussing average case.
 :::
 
@@ -123,11 +123,11 @@ For recurrences of the form $T(n) = aT(n/b) + f(n)$ where $a \geq 1$$b \gt{} 1$:
 
 Let $c = \log_b a$. Compare $f(n)$ with $n^c$:
 
-| Case | Condition | Solution |
+| Case | Condition                                                  | Solution                          |
 | ---- | ---------------------------------------------------------- | --------------------------------- |
-| 1 | $f(n) = O(n^{c - \epsilon})$ | $T(n) = \Theta(n^c)$ |
-| 2 | $f(n) = \Theta(n^c \log^k n)$ | $T(n) = \Theta(n^c \log^{k+1} n)$ |
-| 3 | $f(n) = \Omega(n^{c + \epsilon})$ and $af(n/b) \leq cf(n)$ | $T(n) = \Theta(f(n))$ |
+| 1    | $f(n) = O(n^{c - \epsilon})$                               | $T(n) = \Theta(n^c)$              |
+| 2    | $f(n) = \Theta(n^c \log^k n)$                              | $T(n) = \Theta(n^c \log^{k+1} n)$ |
+| 3    | $f(n) = \Omega(n^{c + \epsilon})$ and $af(n/b) \leq cf(n)$ | $T(n) = \Theta(f(n))$             |
 
 ### Worked Examples
 
@@ -197,8 +197,8 @@ Capacity/2, else 0.
 
 - **Insert without resize:** Actual cost = 1. $\Phi$ increases by 2. Amortised cost = $1 + 2 = 3$.
 - **Insert with resize from $k$ to $2k$:** Actual cost = $k$ (copy) + 1 (insert). Before: size =
- $k$Capacity = $k$$\Phi = 2(k - k/2) = k$. After: size = $k+1$Capacity = $2k$
- $\Phi = 2(k+1 - k) = 2$. Change: $2 - k$. Amortised = $(k + 1) + (2 - k) = 3$.
+  $k$Capacity = $k$$\Phi = 2(k - k/2) = k$. After: size = $k+1$Capacity = $2k$
+  $\Phi = 2(k+1 - k) = 2$. Change: $2 - k$. Amortised = $(k + 1) + (2 - k) = 3$.
 
 Amortised cost per operation: $O(3) = O(1)$. $\square$
 
@@ -211,22 +211,22 @@ Amortised cost per operation: $O(3) = O(1)$. $\square$
 Sometimes we can reduce time complexity by using more memory, or reduce space by accepting more
 Time.
 
-| Tradeoff | Example |
+| Tradeoff           | Example                                 |
 | ------------------ | --------------------------------------- |
-| Hash table | $O(1)$ search vs $O(n)$ space |
-| Memoization | $O(1)$ repeated lookups vs $O(n)$ space |
-| Precomputed tables | $O(1)$ trig functions vs large ROM |
+| Hash table         | $O(1)$ search vs $O(n)$ space           |
+| Memoization        | $O(1)$ repeated lookups vs $O(n)$ space |
+| Precomputed tables | $O(1)$ trig functions vs large ROM      |
 
 ### Logarithmic Factors
 
 $\log n$ grows very slowly. For all practical input sizes, $O(n \log n)$ is often acceptable even
 When $O(n)$ is achievable with more complex algorithms.
 
-| $n$ | $\log_2 n$ | $n \log_2 n$ |
+| $n$    | $\log_2 n$ | $n \log_2 n$       |
 | ------ | ---------- | ------------------ |
-| $10^3$ | 10 | $10^4$ |
-| $10^6$ | 20 | $2 \times 10^7$ |
-| $10^9$ | 30 | $3 \times 10^{10}$ |
+| $10^3$ | 10         | $10^4$             |
+| $10^6$ | 20         | $2 \times 10^7$    |
+| $10^9$ | 30         | $3 \times 10^{10}$ |
 
 <hr />
 
@@ -511,12 +511,12 @@ Testing values:
 
 | $n$ | $10 \log_2 n$ | $n$ | A faster? |
 | --- | ------------- | --- | --------- |
-| 10 | 33.2 | 10 | No |
-| 20 | 43.2 | 20 | No |
-| 30 | 49.1 | 30 | No |
-| 40 | 53.2 | 40 | No |
-| 50 | 56.4 | 50 | No |
-| 60 | 59.1 | 60 | Yes |
+| 10  | 33.2          | 10  | No        |
+| 20  | 43.2          | 20  | No        |
+| 30  | 49.1          | 30  | No        |
+| 40  | 53.2          | 40  | No        |
+| 50  | 56.4          | 50  | No        |
+| 60  | 59.1          | 60  | Yes       |
 
 Algorithm A becomes faster at approximately **$n = 60$**.
 
@@ -532,8 +532,8 @@ $O(n^3)$(c) $O(n)$ vs $O(\log n)$.
 <details>
 <summary>Hint</summary>
 
-Use the limit test: if $\lim_{n \to \infty} \frac{f(n)}{g(n)} = 0$Then $f(n) = o(g(n))$Meaning
-$f$ grows strictly slower than $g$.
+Use the limit test: if $\lim_{n \to \infty} \frac{f(n)}{g(n)} = 0$Then $f(n) = o(g(n))$Meaning $f$
+grows strictly slower than $g$.
 
 </details>
 
@@ -541,14 +541,15 @@ $f$ grows strictly slower than $g$.
 <summary>Answer</summary>
 
 **(a) $O(n \log n)$ is more efficient than $O(n^2)$.**
-$\lim_{n \to \infty} \frac◆LB◆n \log n◆RB◆◆LB◆n^2◆RB◆ = \lim_{n \to \infty} \frac◆LB◆\log n◆RB◆◆LB◆n◆RB◆ = 0$. So
-$n \log n = o(n^2)$ — it grows strictly slower.
+$\lim_{n \to \infty} \frac◆LB◆n \log n◆RB◆◆LB◆n^2◆RB◆ = \lim_{n \to \infty} \frac◆LB◆\log n◆RB◆◆LB◆n◆RB◆ = 0$.
+So $n \log n = o(n^2)$ — it grows strictly slower.
 
 **(b) $O(n^3)$ is more efficient than $O(2^n)$.** $\lim_{n \to \infty} \frac{n^3}{2^n} = 0$
 (exponential always dominates polynomial). So $n^3 = o(2^n)$.
 
-**(c) $O(\log n)$ is more efficient than $O(n)$.** $\lim_{n \to \infty} \frac◆LB◆\log n◆RB◆◆LB◆n◆RB◆ = 0$ (by
-L'Hôpital's rule or the known hierarchy). So $\log n = o(n)$.
+**(c) $O(\log n)$ is more efficient than $O(n)$.**
+$\lim_{n \to \infty} \frac◆LB◆\log n◆RB◆◆LB◆n◆RB◆ = 0$ (by L'Hôpital's rule or the known hierarchy).
+So $\log n = o(n)$.
 
 **Summary (most to least efficient):**
 $O(\log n) \subset O(n) \subset O(n \log n) \subset O(n^3) \subset O(2^n)$.
@@ -642,11 +643,11 @@ The pivot is the median element, a random element, and the minimum or maximum el
 <details>
 <summary>Answer</summary>
 
-| Case | Complexity | Input condition | Explanation |
+| Case    | Complexity    | Input condition                        | Explanation                                                                                                                                   |
 | ------- | ------------- | -------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| Best | $O(n \log n)$ | Pivot always divides array in half | Each level processes all $n$ elements, and there are $\log n$ levels. Total: $O(n \log n)$. |
-| Average | $O(n \log n)$ | Random inputs | With a random pivot, the expected split ratio is balanced. The recurrence $T(n) = T(n/2) + T(n/2) + O(n)$ holds on average. |
-| Worst | $O(n^2)$ | Already sorted (with first/last pivot) | If pivot is always the minimum or maximum, one partition has $n-1$ elements and the other has 0. Recurrence: $T(n) = T(n-1) + O(n) = O(n^2)$. |
+| Best    | $O(n \log n)$ | Pivot always divides array in half     | Each level processes all $n$ elements, and there are $\log n$ levels. Total: $O(n \log n)$.                                                   |
+| Average | $O(n \log n)$ | Random inputs                          | With a random pivot, the expected split ratio is balanced. The recurrence $T(n) = T(n/2) + T(n/2) + O(n)$ holds on average.                   |
+| Worst   | $O(n^2)$      | Already sorted (with first/last pivot) | If pivot is always the minimum or maximum, one partition has $n-1$ elements and the other has 0. Recurrence: $T(n) = T(n-1) + O(n) = O(n^2)$. |
 
 **Mitigation:** Randomised quicksort (choosing a random pivot) or median-of-three pivot selection
 Makes the worst case extremely unlikely in practice, giving expected $O(n \log n)$ regardless of
@@ -685,8 +686,8 @@ So the maximum number of iterations is $\lfloor \log_2 n \rfloor + 1 = O(\log n)
 
 $$T(n) = T(n/2) + O(1), \quad T(1) = O(1)$$
 
-Here $a = 1$$b = 2$$c = \log_2 1 = 0$. Since $f(n) = O(1) = O(n^0) = O(n^c)$This is Master
-Theorem Case 2 with $k = 0$:
+Here $a = 1$$b = 2$$c = \log_2 1 = 0$. Since $f(n) = O(1) = O(n^0) = O(n^c)$This is Master Theorem
+Case 2 with $k = 0$:
 
 $$T(n) = \Theta(n^c \log^{k+1} n) = \Theta(\log n)$$
 
@@ -795,10 +796,10 @@ Inversion count is accumulated during the merge step without changing the merge 
 
 **(b) Estimated operations for $n = 10\,000$:**
 
-| Algorithm | Formula | Operations |
-| --------- | ------------ | ---------------------------------------------------- |
-| P | $n(n-1)/2$ | $10\,000 \times 9\,999 / 2 \approx 49\,995\,000$ |
-| Q | $n \log_2 n$ | $10\,000 \times 13.3 \approx 133\,000$ |
+| Algorithm | Formula      | Operations                                       |
+| --------- | ------------ | ------------------------------------------------ |
+| P         | $n(n-1)/2$   | $10\,000 \times 9\,999 / 2 \approx 49\,995\,000$ |
+| Q         | $n \log_2 n$ | $10\,000 \times 13.3 \approx 133\,000$           |
 
 **(c) Comparison:**
 

@@ -1,6 +1,8 @@
 ---
-title: "Quantum and Nuclear Physics"
-description: "IB Physics — photoelectric effect, photon model, de Broglie wavelength, energy levels, spectra, radioactive decay, nuclear reactions, and binding energy."
+title: 'Quantum and Nuclear Physics'
+description:
+  'IB Physics — photoelectric effect, photon model, de Broglie wavelength, energy levels, spectra,
+  radioactive decay, nuclear reactions, and binding energy.'
 slug: quantum-and-nuclear-physics-advanced
 ---
 
@@ -27,8 +29,8 @@ $$E = hf$$
 Where $h = 6.626 \times 10^{-34}\,\mathrm{J\,s}$ is Planck's constant and $f$ is the frequency.
 
 A single photon can eject at most one electron. The photon gives its entire energy to the electron.
-Some energy overcomes the **work function** $\Phi$ (minimum energy to escape the metal); the remainder
-Becomes kinetic energy:
+Some energy overcomes the **work function** $\Phi$ (minimum energy to escape the metal); the
+remainder Becomes kinetic energy:
 
 $$E_k = hf - \Phi$$
 
@@ -49,10 +51,10 @@ $$eV_s = E_{k,\max} = hf - \Phi$$
 
 ### Experimental Graphs
 
-| Graph | Gradient | $y$-intercept | $x$-intercept |
-| :--- | :--- | :--- | :--- |
-| $E_{k,\max}$ vs $f$ | $h$ | $-\Phi$ | $f_0$ |
-| $V_s$ vs $f$ | $h/e$ | $-\Phi/e$ | $f_0$ |
+| Graph               | Gradient | $y$-intercept | $x$-intercept |
+| :------------------ | :------- | :------------ | :------------ |
+| $E_{k,\max}$ vs $f$ | $h$      | $-\Phi$       | $f_0$         |
+| $V_s$ vs $f$        | $h/e$    | $-\Phi/e$     | $f_0$         |
 
 **Example.** Light of wavelength $400\,\mathrm{nm}$ is incident on a zinc surface with work function
 $\Phi = 4.3\,\mathrm{eV}$. Find the maximum kinetic energy of the emitted electrons.
@@ -94,8 +96,8 @@ Wavelength increases. The **Compton shift** is:
 
 $$\Delta\lambda = \lambda' - \lambda = \frac{h}{m_e c}(1 - \cos\theta)$$
 
-Where $\theta$ is the scattering angle and $\dfrac{h}{m_e c} = 2.43 \times 10^{-12}\,\mathrm{m}$ is the
-**Compton wavelength** of the electron. This demonstrates the particle nature of electromagnetic
+Where $\theta$ is the scattering angle and $\dfrac{h}{m_e c} = 2.43 \times 10^{-12}\,\mathrm{m}$ is
+the **Compton wavelength** of the electron. This demonstrates the particle nature of electromagnetic
 Radiation.
 
 <details>
@@ -186,11 +188,11 @@ $$\frac{1}{\lambda} = R_H\!\left(\frac{1}{n_f^2} - \frac{1}{n_i^2}\right)$$
 
 Where $R_H = 1.097 \times 10^7\,\mathrm{m^{-1}}$ is the Rydberg constant, $n_i \gt n_f$.
 
-| Series | $n_f$ | Region |
-| :--- | :--- | :--- |
-| Lyman | 1 | Ultraviolet |
-| Balmer | 2 | Visible |
-| Paschen | 3 | Infrared |
+| Series  | $n_f$ | Region      |
+| :------ | :---- | :---------- |
+| Lyman   | 1     | Ultraviolet |
+| Balmer  | 2     | Visible     |
+| Paschen | 3     | Infrared    |
 
 **Example.** Find the wavelength of the first Balmer line ($n_i = 3 \to n_f = 2$).
 
@@ -242,12 +244,12 @@ To counteract the increasing Coulomb repulsion between protons.
 
 ### Types of Radioactive Decay
 
-| Decay | Emission | Change | Example |
-| :--- | :--- | :--- | :--- |
-| Alpha ($\alpha$) | $^4_2\mathrm{He}$ (helium nucleus) | $Z \to Z - 2$$A \to A - 4$ | $^{238}_{92}\mathrm{U} \to ^{234}_{90}\mathrm{Th} + \alpha$ |
-| Beta-minus ($\beta^-$) | $e^-$ (electron) + $\bar{\nu}_e$ | $n \to p$: $Z \to Z + 1$$A$ unchanged | $^{14}_6\mathrm{C} \to ^{14}_7\mathrm{N} + e^- + \bar{\nu}_e$ |
-| Beta-plus ($\beta^+$) | $e^+$ (positron) + $\nu_e$ | $p \to n$: $Z \to Z - 1$$A$ unchanged | $^{11}_6\mathrm{C} \to ^{11}_5\mathrm{B} + e^+ + \nu_e$ |
-| Gamma ($\gamma$) | High-energy photon | No change in $Z$ or $A$ | Excited nucleus de-excites |
+| Decay                  | Emission                           | Change                                | Example                                                       |
+| :--------------------- | :--------------------------------- | :------------------------------------ | :------------------------------------------------------------ |
+| Alpha ($\alpha$)       | $^4_2\mathrm{He}$ (helium nucleus) | $Z \to Z - 2$$A \to A - 4$            | $^{238}_{92}\mathrm{U} \to ^{234}_{90}\mathrm{Th} + \alpha$   |
+| Beta-minus ($\beta^-$) | $e^-$ (electron) + $\bar{\nu}_e$   | $n \to p$: $Z \to Z + 1$$A$ unchanged | $^{14}_6\mathrm{C} \to ^{14}_7\mathrm{N} + e^- + \bar{\nu}_e$ |
+| Beta-plus ($\beta^+$)  | $e^+$ (positron) + $\nu_e$         | $p \to n$: $Z \to Z - 1$$A$ unchanged | $^{11}_6\mathrm{C} \to ^{11}_5\mathrm{B} + e^+ + \nu_e$       |
+| Gamma ($\gamma$)       | High-energy photon                 | No change in $Z$ or $A$               | Excited nucleus de-excites                                    |
 
 ### The Decay Law
 
@@ -255,8 +257,8 @@ Radioactive decay is a random process governed by:
 
 $$N = N_0 e^{-\lambda t}$$
 
-Where $N$ is the number of undecayed nuclei at time $t$$N_0$ is the initial number, and $\lambda$
-Is the **decay constant**.
+Where $N$ is the number of undecayed nuclei at time $t$$N_0$ is the initial number, and $\lambda$ Is
+the **decay constant**.
 
 **Activity** (rate of decay): $A = -\dfrac{dN}{dt} = \lambda N = A_0 e^{-\lambda t}$Measured in
 **becquerels** ($\mathrm{Bq}$), where $1\,\mathrm{Bq} = 1$ decay per second.
@@ -279,8 +281,8 @@ $$A = 800 \times \left(\frac{1}{2}\right)^3 = 100\,\mathrm{Bq}$$
 <details>
 <summary>Worked Example: Decay Constant and Half-Life</summary>
 
-A radioactive isotope has a half-life of $8.0\,\mathrm{days}$. A sample contains $4.0 \times 10^{15}$
-Undecayed nuclei at $t = 0$.
+A radioactive isotope has a half-life of $8.0\,\mathrm{days}$. A sample contains
+$4.0 \times 10^{15}$ Undecayed nuclei at $t = 0$.
 
 **(a) Find the decay constant.**
 
@@ -359,17 +361,17 @@ $$E_b = \Delta m \cdot c^2$$
 The **binding energy per nucleon** $E_b/A$ is a measure of nuclear stability. It peaks around
 Iron-56 ($\sim 8.8\,\mathrm{MeV/nucleon}$), which is the most stable nucleus.
 
-| Nucleus | Binding Energy per Nucleon (MeV) |
-| :--- | :--- |
-| $^2_1\mathrm{H}$ (deuterium) | 1.11 |
-| $^4_2\mathrm{He}$ | 7.07 |
-| $^{56}_{26}\mathrm{Fe}$ | 8.79 |
-| $^{235}_{92}\mathrm{U}$ | 7.59 |
+| Nucleus                      | Binding Energy per Nucleon (MeV) |
+| :--------------------------- | :------------------------------- |
+| $^2_1\mathrm{H}$ (deuterium) | 1.11                             |
+| $^4_2\mathrm{He}$            | 7.07                             |
+| $^{56}_{26}\mathrm{Fe}$      | 8.79                             |
+| $^{235}_{92}\mathrm{U}$      | 7.59                             |
 
 **Implications:**
 
 - **Fission** of heavy nuclei ($A \gt 56$) releases energy because the products have higher binding
- energy per nucleon.
+  energy per nucleon.
 - **Fusion** of light nuclei ($A \lt 56$) releases energy for the same reason.
 - Iron-56 is the most stable nucleus; neither fission nor fusion of iron releases energy.
 
@@ -395,8 +397,8 @@ $$^{235}_{92}\mathrm{U} + ^1_0\mathrm{n} \to ^{141}_{56}\mathrm{Ba} + ^{92}_{36}
 Masses: $m_{\mathrm{U-235}} = 235.0439\,\mathrm{u}$$m_{\mathrm{Ba-141}} = 140.9139\,\mathrm{u}$
 $m_{\mathrm{Kr-92}} = 91.8973\,\mathrm{u}$$m_n = 1.0087\,\mathrm{u}$.
 
-Reactants: $235.0439 + 1.0087 = 236.0526\,\mathrm{u}$.
-Products: $140.9139 + 91.8973 + 3(1.0087) = 235.8373\,\mathrm{u}$.
+Reactants: $235.0439 + 1.0087 = 236.0526\,\mathrm{u}$. Products:
+$140.9139 + 91.8973 + 3(1.0087) = 235.8373\,\mathrm{u}$.
 
 $$\Delta m = 236.0526 - 235.8373 = 0.2153\,\mathrm{u}$$
 
@@ -405,8 +407,7 @@ $$E = 0.2153 \times 931.5 \approx 200.6\,\mathrm{MeV}$$
 <details>
 <summary>Worked Example: Binding Energy per Nucleon</summary>
 
-Calculate the binding energy per nucleon of lithium-7
-($^7_3\mathrm{Li}$).
+Calculate the binding energy per nucleon of lithium-7 ($^7_3\mathrm{Li}$).
 
 Given: $m_p = 1.00728\,\mathrm{u}$$m_n = 1.00867\,\mathrm{u}$
 $m_{\mathrm{Li-7}} = 7.01600\,\mathrm{u}$$1\,\mathrm{u} = 931.5\,\mathrm{MeV}/c^2$.
@@ -452,8 +453,8 @@ Is sufficiently small.
 <details>
 <summary>Worked Example: Heisenberg Uncertainty Principle</summary>
 
-An electron is confined within a region of width $\Delta x = 1.0 \times 10^{-10}\,\mathrm{m}$ (roughly
-The diameter of a hydrogen atom).
+An electron is confined within a region of width $\Delta x = 1.0 \times 10^{-10}\,\mathrm{m}$
+(roughly The diameter of a hydrogen atom).
 
 **Find the minimum uncertainty in its momentum.**
 
@@ -517,13 +518,13 @@ $$t = \frac{5730}{0.693}\ln(4) = 5730 \times 2 = 11460\,\mathrm{years}$$
 
 ### Nuclear Reactor Components
 
-| Component | Function |
-| :--- | :--- |
-| Fuel ($^{235}\mathrm{U}$) | Undergoes fission, releasing energy |
-| Moderator (water, graphite) | Slows neutrons to thermal energies |
-| Control rods (boron, cadmium) | Absorb neutrons to control reaction rate |
-| Coolant (water, $\mathrm{CO}_2$) | Transfers heat from reactor core |
-| Shielding (concrete, lead) | Absorbs radiation for safety |
+| Component                        | Function                                 |
+| :------------------------------- | :--------------------------------------- |
+| Fuel ($^{235}\mathrm{U}$)        | Undergoes fission, releasing energy      |
+| Moderator (water, graphite)      | Slows neutrons to thermal energies       |
+| Control rods (boron, cadmium)    | Absorb neutrons to control reaction rate |
+| Coolant (water, $\mathrm{CO}_2$) | Transfers heat from reactor core         |
+| Shielding (concrete, lead)       | Absorbs radiation for safety             |
 
 ---
 
@@ -550,7 +551,8 @@ $$\int_{-\infty}^{\infty} |\psi(x)|^2\,dx = 1$$
 
 ### Particle in a Box
 
-For a particle confined to a one-dimensional box of length $L$ ($V = 0$ inside, $V = \infty$ outside):
+For a particle confined to a one-dimensional box of length $L$ ($V = 0$ inside, $V = \infty$
+outside):
 
 $$\psi_n(x) = \sqrt{\frac{2}{L}}\sin\!\left(\frac{n\pi x}{L}\right), \qquad n = 1, 2, 3, \ldots$$
 
@@ -590,12 +592,12 @@ Quantum tunneling is responsible for alpha decay, tunnel diodes, and scanning tu
 
 ### The Four Fundamental Forces
 
-| Force | Mediator | Relative Strength | Range |
-| :--- | :--- | :--- | :--- |
-| Strong | Gluon | 1 | $\sim 10^{-15}\,\mathrm{m}$ |
-| Electromagnetic | Photon | $\sim 10^{-2}$ | Infinite |
-| Weak | $W$$Z$ bosons | $\sim 10^{-6}$ | $\sim 10^{-18}\,\mathrm{m}$ |
-| Gravitational | Graviton (hypothetical) | $\sim 10^{-38}$ | Infinite |
+| Force           | Mediator                | Relative Strength | Range                       |
+| :-------------- | :---------------------- | :---------------- | :-------------------------- |
+| Strong          | Gluon                   | 1                 | $\sim 10^{-15}\,\mathrm{m}$ |
+| Electromagnetic | Photon                  | $\sim 10^{-2}$    | Infinite                    |
+| Weak            | $W$$Z$ bosons           | $\sim 10^{-6}$    | $\sim 10^{-18}\,\mathrm{m}$ |
+| Gravitational   | Graviton (hypothetical) | $\sim 10^{-38}$   | Infinite                    |
 
 ---
 
@@ -620,8 +622,7 @@ $e^- + e^+ \to \gamma + \gamma$: The electron and positron annihilate into a vir
 Produces two real photons. The diagram has two incoming fermion lines, one internal photon line, and
 Two outgoing photon lines.
 
-:::warning
-Common Pitfall
+:::warning Common Pitfall
 
 The binding energy curve shows a peak at iron-56, but the curve is relatively flat around this peak.
 Elements from nickel to lead all have binding energies per nucleon in the range
@@ -680,8 +681,8 @@ Structures.
 
 ### Problem 3
 
-A hydrogen atom absorbs a photon of wavelength $97.3\,\mathrm{nm}$. Determine the transition involved
-(initial and final energy levels).
+A hydrogen atom absorbs a photon of wavelength $97.3\,\mathrm{nm}$. Determine the transition
+involved (initial and final energy levels).
 
 <details>
 <summary>Solution</summary>
@@ -710,8 +711,9 @@ The transition is $n = 1 \to n = 4$ (absorption, Lyman series).
 
 ### Problem 4
 
-Strontium-90 has a half-life of $28.8\,\mathrm{years}$. A sample initially contains $2.0 \times 10^{20}$
-Atoms. How many atoms remain after $100\,\mathrm{years}$? What is the activity at that time?
+Strontium-90 has a half-life of $28.8\,\mathrm{years}$. A sample initially contains
+$2.0 \times 10^{20}$ Atoms. How many atoms remain after $100\,\mathrm{years}$? What is the activity
+at that time?
 
 <details>
 <summary>Solution</summary>
@@ -751,8 +753,7 @@ Conserving mass number: $234 = 234 + A \implies A = 0$
 
 Conserving atomic number: $90 = 91 + Z \implies Z = -1$
 
-The emitted particle has $A = 0$ and $Z = -1$Which is an electron: $e^{-}$ (or
-$\beta^{-}$).
+The emitted particle has $A = 0$ and $Z = -1$Which is an electron: $e^{-}$ (or $\beta^{-}$).
 
 This is **beta-minus decay**, in which a neutron converts to a proton, emitting an electron and an
 Antineutrino:
@@ -765,10 +766,9 @@ $$^{234}_{90}\mathrm{Th} \to ^{234}_{91}\mathrm{Pa} + e^{-} + \bar{\nu}_e$$
 
 ### Problem 6
 
-Calculate the binding energy of carbon-12 ($^{12}_{6}\mathrm{C}$).
-Given: $m_p = 1.00728\,\mathrm{u}$$m_n = 1.00867\,\mathrm{u}$
-$m_{\mathrm{C-12}} = 12.00000\,\mathrm{u}$ (by definition of the atomic mass unit),
-$1\,\mathrm{u} = 931.5\,\mathrm{MeV}/c^2$.
+Calculate the binding energy of carbon-12 ($^{12}_{6}\mathrm{C}$). Given:
+$m_p = 1.00728\,\mathrm{u}$$m_n = 1.00867\,\mathrm{u}$ $m_{\mathrm{C-12}} = 12.00000\,\mathrm{u}$
+(by definition of the atomic mass unit), $1\,\mathrm{u} = 931.5\,\mathrm{MeV}/c^2$.
 
 <details>
 <summary>Solution</summary>
@@ -842,7 +842,8 @@ This is in the ultraviolet region.
 ### Problem 9
 
 A sample of wood from an archaeological site has $^{14}\mathrm{C}$ activity that is $35\%$ of the
-Activity of a living sample. Estimate the age of the wood. ($t_{1/2}$ of $^{14}\mathrm{C} = 5730\,\mathrm{years}$)
+Activity of a living sample. Estimate the age of the wood. ($t_{1/2}$ of
+$^{14}\mathrm{C} = 5730\,\mathrm{years}$)
 
 <details>
 <summary>Solution</summary>

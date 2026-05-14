@@ -1,6 +1,8 @@
 ---
 title: PSU Selection and BIOS Configuration
-description: "PSU Selection and BIOS Configuration — 1. PSU Fundamentals; AC/DC Conversion; Rectification; Ripple and Noise with worked examples and exam-style questions."
+description:
+  'PSU Selection and BIOS Configuration — 1. PSU Fundamentals; AC/DC Conversion; Rectification;
+  Ripple and Noise with worked examples and exam-style questions.'
 date: 2026-04-07T00:00:00.000Z
 tags:
   - Tuning
@@ -10,6 +12,7 @@ categories:
   - Hardware
 slug: psu-and-bios-guide
 ---
+
 ## 1. PSU Fundamentals
 
 ### AC/DC Conversion
@@ -28,9 +31,9 @@ High-voltage DC bus to the final output rails).
 
 After EMI filtering, the AC mains passes through a bridge rectifier — four diodes arranged in a
 Full-wave bridge configuration. This produces a pulsating DC waveform. A bulk capacitor (or
-Capacitor bank) smooths this into a relatively flat high-voltage DC bus, around 340 V for
-240 V mains or 170 V for 120 V mains (peak voltage, not RMS). The quality and capacitance of these
-Bulk capacitors directly affect hold-up time and ripple suppression.
+Capacitor bank) smooths this into a relatively flat high-voltage DC bus, around 340 V for 240 V
+mains or 170 V for 120 V mains (peak voltage, not RMS). The quality and capacitance of these Bulk
+capacitors directly affect hold-up time and ripple suppression.
 
 ### Ripple and Noise
 
@@ -40,13 +43,13 @@ Remain within the ATX specification limits.
 
 ATX specifications define maximum ripple and noise per rail:
 
-| Rail | Max Ripple + Noise (ATX 3.0) |
+| Rail   | Max Ripple + Noise (ATX 3.0) |
 | ------ | ---------------------------- |
-| +12 V | 120 mV peak-to-peak |
-| +5 V | 50 mV peak-to-peak |
-| +3.3 V | 50 mV peak-to-peak |
-| -12 V | 120 mV peak-to-peak |
-| +5 VSB | 50 mV peak-to-peak |
+| +12 V  | 120 mV peak-to-peak          |
+| +5 V   | 50 mV peak-to-peak           |
+| +3.3 V | 50 mV peak-to-peak           |
+| -12 V  | 120 mV peak-to-peak          |
+| +5 VSB | 50 mV peak-to-peak           |
 
 Excessive ripple can cause instability, random reboots, and long-term degradation of components,
 Particularly electrolytic capacitors on motherboards and GPUs. Japanese capacitors (Nichicon,
@@ -70,30 +73,28 @@ Percentage. The difference is dissipated as heat.
 Efficiency is not constant across the load range. Typical efficiency curves show:
 
 - Low efficiency at very light loads (&lt; 20%), because fixed losses (fan, controller ICs, standby
- circuitry) represent a larger fraction of total input power.
+  circuitry) represent a larger fraction of total input power.
 - Peak efficiency between 50--60% of rated capacity.
 - Gradual decline at loads above 80% due to increased switching losses and resistive losses (I^2R)
- in transformer windings, traces, and connectors.
+  in transformer windings, traces, and connectors.
 
-:::info
-When selecting a PSU, aim for your typical system load to fall within the 40--70% range of
+:::info When selecting a PSU, aim for your typical system load to fall within the 40--70% range of
 The PSU's rated capacity. This places you near peak efficiency while maintaining headroom for
-Transient spikes.
-:::
+Transient spikes. :::
 
 ### 80 PLUS Certification
 
 The 80 PLUS program certifies PSU efficiency at 20%, 50%, and 100% of rated load at 115 V AC (230 V
 AC for Titanium). Higher tiers require increasingly stringent efficiency targets.
 
-| Tier | 115V - 20% | 115V - 50% | 115V - 100% | 230V - 20% | 230V - 50% | 230V - 100% |
+| Tier     | 115V - 20% | 115V - 50% | 115V - 100% | 230V - 20% | 230V - 50% | 230V - 100% |
 | -------- | ---------- | ---------- | ----------- | ---------- | ---------- | ----------- |
-| White | 80% | 80% | 80% | -- | -- | -- |
-| Bronze | 82% | 85% | 82% | 81% | 85% | 81% |
-| Silver | 85% | 88% | 85% | 85% | 89% | 85% |
-| Gold | 87% | 90% | 87% | 88% | 92% | 88% |
-| Platinum | 90% | 92% | 89% | 90% | 94% | 90% |
-| Titanium | -- | -- | -- | 94% | 96% | 91% |
+| White    | 80%        | 80%        | 80%         | --         | --         | --          |
+| Bronze   | 82%        | 85%        | 82%         | 81%        | 85%        | 81%         |
+| Silver   | 85%        | 88%        | 85%         | 85%        | 89%        | 85%         |
+| Gold     | 87%        | 90%        | 87%         | 88%        | 92%        | 88%         |
+| Platinum | 90%        | 92%        | 89%         | 90%        | 94%        | 90%         |
+| Titanium | --         | --         | --          | 94%        | 96%        | 91%         |
 
 80 PLUS is a necessary but insufficient indicator of quality. It measures efficiency only, not
 Ripple, voltage regulation, build quality, or transient response. A cheap Bronze unit can be far
@@ -104,24 +105,22 @@ Worse than a well-engineered Gold unit. Always consult independent reviews.
 The ATX power supply specification is maintained by Intel. Key versions include:
 
 - **ATX 2.0 (2003):** Introduced the 24-pin main power connector and split 12V rails (minimum two).
- Mandated active PFC.
+  Mandated active PFC.
 - **ATX 2.2 (2005):** Increased efficiency expectations, mandated SATA connectors.
 - **ATX 2.3 (2007):** Minimum 80% efficiency at 50% load. Added 8-pin PCIe power connector
- requirement.
+  requirement.
 - **ATX 2.4 (2008):** Minor updates to cross-load regulation requirements.
 - **ATX 2.52 (2018):** Added low-load efficiency requirements and updated standby power
- specifications.
+  specifications.
 - **ATX 3.0 (2022):** Introduced the 12VHPWR (12+4 pin) connector for PCIe 5.0 GPUs. Added transient
- power excursion tests (200% of rated power for 100 microseconds on the 12V2 rail). Strict ripple
- and voltage regulation requirements under transient load.
+  power excursion tests (200% of rated power for 100 microseconds on the 12V2 rail). Strict ripple
+  and voltage regulation requirements under transient load.
 - **ATX 3.1 (2023):** Refined 12V-2x6 connector (revised 12VHPWR with improved sense pins and
- mechanical design). Tightened low-load efficiency at &lt; 2% rated power.
+  mechanical design). Tightened low-load efficiency at &lt; 2% rated power.
 
-:::info
-ATX 3.0/3.1 compliance is particularly important for modern high-power GPUs (RTX 4090,
+:::info ATX 3.0/3.1 compliance is particularly important for modern high-power GPUs (RTX 4090,
 RTX 5090) that can draw extremely high transient loads. Non-ATX 3.0 units may trigger OPP during
-These transients, causing system shutdowns under load.
-:::
+These transients, causing system shutdowns under load. :::
 
 ---
 
@@ -145,60 +144,56 @@ Peripherals and are supplied via small DC-DC converters from the +12 V rail.
 **Single-rail 12V:** The entire +12 V capacity is available on a single output channel. No
 Peripheral OCP trip point. Simpler for the user — you cannot accidentally trip a rail by connecting
 Too many devices to one cable set. The theoretical risk is that a short circuit could draw the full
-PSU capacity through one wire before SCP triggers, but SCP is faster than the thermal
-Limit of the wire.
+PSU capacity through one wire before SCP triggers, but SCP is faster than the thermal Limit of the
+wire.
 
 **Multi-rail 12V:** The +12 V output is split into two or more channels, each with independent OCP
-Trip points ( 20--40 A per rail). This limits the maximum current on any single cable run,
-Adding an extra layer of safety. The downside is that unbalanced loading can leave capacity unused
-On one rail while another hits its limit.
+Trip points ( 20--40 A per rail). This limits the maximum current on any single cable run, Adding an
+extra layer of safety. The downside is that unbalanced loading can leave capacity unused On one rail
+while another hits its limit.
 
-:::info
-For most users, single-rail is simpler and eliminates OCP tripping as a concern. Multi-rail
+:::info For most users, single-rail is simpler and eliminates OCP tripping as a concern. Multi-rail
 Designs are preferred in enterprise and server environments where cable management and fault
-Isolation are critical. The quality of the PSU matters far more than the rail configuration.
-:::
+Isolation are critical. The quality of the PSU matters far more than the rail configuration. :::
 
 ### Connectors
 
-| Connector | Pins | Use | Max Current (per spec) |
+| Connector    | Pins      | Use                                             | Max Current (per spec)    |
 | ------------ | --------- | ----------------------------------------------- | ------------------------- |
-| 24-pin ATX | 24 | Motherboard main power (+3.3V, +5V, +12V, -12V) | 18 A per pin |
-| 4-pin EPS | 4 (2x2) | CPU supplementary power | 7 A per pin / 192 W total |
-| 8-pin EPS | 8 (4x2) | CPU supplementary power (high-draw CPUs) | 7 A per pin / 384 W total |
-| 6+2-pin PCIe | 6 or 8 | GPU power | 75 W (6-pin) / 150 W (8) |
-| 12V-2x6 | 16 (12+4) | PCIe 5.0 GPUs (ATX 3.1) | 600 W |
-| 15-pin SATA | 15 | SATA drives, SSDs | 4.5 A per connector |
-| 4-pin Molex | 4 | Legacy drives, fans, accessories | 11 A per connector |
-| 4-pin Berg | 4 | Floppy drive (obsolete) | 2 A |
+| 24-pin ATX   | 24        | Motherboard main power (+3.3V, +5V, +12V, -12V) | 18 A per pin              |
+| 4-pin EPS    | 4 (2x2)   | CPU supplementary power                         | 7 A per pin / 192 W total |
+| 8-pin EPS    | 8 (4x2)   | CPU supplementary power (high-draw CPUs)        | 7 A per pin / 384 W total |
+| 6+2-pin PCIe | 6 or 8    | GPU power                                       | 75 W (6-pin) / 150 W (8)  |
+| 12V-2x6      | 16 (12+4) | PCIe 5.0 GPUs (ATX 3.1)                         | 600 W                     |
+| 15-pin SATA  | 15        | SATA drives, SSDs                               | 4.5 A per connector       |
+| 4-pin Molex  | 4         | Legacy drives, fans, accessories                | 11 A per connector        |
+| 4-pin Berg   | 4         | Floppy drive (obsolete)                         | 2 A                       |
 
-:::warning
-Never use Molex-to-SATA adapters. SATA connectors are rated for 4.5 A, but the contact
+:::warning Never use Molex-to-SATA adapters. SATA connectors are rated for 4.5 A, but the contact
 Resistance of cheap adapters can cause excessive voltage drop and heating at the SATA end. This is a
-Documented fire hazard. Use native SATA connectors or replace the PSU.
-:::
+Documented fire hazard. Use native SATA connectors or replace the PSU. :::
 
 ### Modular vs Non-Modular vs Semi-Modular
 
 - **Non-modular (fixed-cable):** All cables are permanently attached. Maximum reliability (fewer
- contact points), but cable management is harder and unused cables clutter the case. Typical of
- budget units and high-end server PSUs.
+  contact points), but cable management is harder and unused cables clutter the case. Typical of
+  budget units and high-end server PSUs.
 - **Fully modular:** All cables are detachable. Cleanest builds, but each connector adds a contact
- point with potential resistance. Quality matters — cheap modular PSUs have been known to melt
- modular connectors under sustained high current.
+  point with potential resistance. Quality matters — cheap modular PSUs have been known to melt
+  modular connectors under sustained high current.
 - **Semi-modular:** The 24-pin ATX and EPS connectors are fixed (since every build needs them),
- while peripheral cables (PCIe, SATA, Molex) are modular. The pragmatic middle ground.
+  while peripheral cables (PCIe, SATA, Molex) are modular. The pragmatic middle ground.
 
 ### Form Factors
 
-| Form Factor | Dimensions (mm) | Typical Use Case |
+| Form Factor | Dimensions (mm)   | Typical Use Case                      |
 | ----------- | ----------------- | ------------------------------------- |
-| ATX | 150 x 86 x 140 | Standard desktop PCs |
-| SFX | 125 x 63.5 x 100 | Small form factor (ITX) builds |
-| SFX-L | 125 x 63.5 x 130 | ITX builds needing more capacity |
-| TFX | 85 x 63.5 x 175 | Slim desktop / HTPC / OEM SFF |
-| Flex ATX | 81.5 x 40.5 x 150 | 1U servers, embedded |
-| ATX 12VO | ATX dimensions | Servers, some OEM desktops (12V only) |
+| ATX         | 150 x 86 x 140    | Standard desktop PCs                  |
+| SFX         | 125 x 63.5 x 100  | Small form factor (ITX) builds        |
+| SFX-L       | 125 x 63.5 x 130  | ITX builds needing more capacity      |
+| TFX         | 85 x 63.5 x 175   | Slim desktop / HTPC / OEM SFF         |
+| Flex ATX    | 81.5 x 40.5 x 150 | 1U servers, embedded                  |
+| ATX 12VO    | ATX dimensions    | Servers, some OEM desktops (12V only) |
 
 ---
 
@@ -210,26 +205,26 @@ The fundamental approach is to sum the worst-case power draw of every component 
 For each major component:
 
 1. **CPU:** Use the TDP as a starting point, but understand that TDP is a thermal design metric, not
- a power limit. Modern CPUs can draw significantly more than TDP under multi-core boost. Check PL2
- (Intel) or PPT (AMD) values for actual peak power. Add 15--25% overhead for motherboard VRM
- losses and transient spikes.
+   a power limit. Modern CPUs can draw significantly more than TDP under multi-core boost. Check PL2
+   (Intel) or PPT (AMD) values for actual peak power. Add 15--25% overhead for motherboard VRM
+   losses and transient spikes.
 
 2. **GPU:** Check the Total Board Power (TBP) or Total Graphics Power (TGP). Note that Founders
- Edition / reference cards may differ from custom board designs. Add 10--20% for transient spikes,
- especially with RTX 30-series and 40-series cards which have extremely aggressive power
- excursions (up to 2x TBP for microseconds).
+   Edition / reference cards may differ from custom board designs. Add 10--20% for transient spikes,
+   especially with RTX 30-series and 40-series cards which have extremely aggressive power
+   excursions (up to 2x TBP for microseconds).
 
 3. **Motherboard:** 30--80 W depending on chipset, VRM quality, and peripheral load.
 
 4. **Storage:** NVMe SSDs draw 5--10 W under load, SATA SSDs 2--5 W. HDDs draw 6--12 W during
- spin-up (surge). Multiply by the number of drives.
+   spin-up (surge). Multiply by the number of drives.
 
 5. **RAM:** 3--5 W per DIMM. Overclocked kits can draw 8--15 W per DIMM.
 
 6. **Fans and pumps:** 2--10 W per fan. AIO pump: 10--25 W.
 
 7. **USB peripherals:** Budget 2.5 W per USB 2.0 port and 4.5 W per USB 3.0 port for self-powered
- devices, though most peripherals use their own power supplies.
+   devices, though most peripherals use their own power supplies.
 
 ### Transient Load Handling
 
@@ -239,9 +234,9 @@ These transients quickly enough, the voltage on the 12V rail will sag below the 
 Minimum, triggering UVP or causing GPU crashes.
 
 ATX 3.0/3.1 certified units are tested against standardized transient load profiles. Non-certified
-Units may or may not handle transients well — on the bulk capacitor bank size, DC-DC
-Converter bandwidth, and overall topology. Independent PSU reviewers (Cybenetics, Hardware Busters)
-Now include transient load tests.
+Units may or may not handle transients well — on the bulk capacitor bank size, DC-DC Converter
+bandwidth, and overall topology. Independent PSU reviewers (Cybenetics, Hardware Busters) Now
+include transient load tests.
 
 ### Capacitor Aging
 
@@ -253,11 +248,9 @@ Japanese capacitors rated at 105 C have significantly longer lifetimes than 85 C
 Arrhenius equation dictates that every 10 C reduction in operating temperature roughly doubles
 Capacitor lifespan. This is why PSU temperature rating and fan curves matter.
 
-:::info
-A PSU that is 10 years old may still work, but its ripple performance, hold-up time, and
+:::info A PSU that is 10 years old may still work, but its ripple performance, hold-up time, and
 Transient response have likely degraded. For high-end systems, consider replacing PSUs older than
-7--8 years, especially if they use non-Japanese capacitors.
-:::
+7--8 years, especially if they use non-Japanese capacitors. :::
 
 ### Headroom Recommendations
 
@@ -277,42 +270,42 @@ Typical loads near the 70% mark — a good operating point.
 When evaluating a PSU beyond wattage and efficiency rating:
 
 - **OEM (Original Equipment Manufacturer):** The actual manufacturer, not the brand on the box.
- Top-tier OEMs include Seasonic, CWT (Channel Well Technology), Super Flower, Delta Electronics,
- FSP, and Enhance. The same OEM can produce units of vastly different quality depending on the
- platform and component selection.
+  Top-tier OEMs include Seasonic, CWT (Channel Well Technology), Super Flower, Delta Electronics,
+  FSP, and Enhance. The same OEM can produce units of vastly different quality depending on the
+  platform and component selection.
 
 - **Topology:** LLC resonant with DC-DC is the gold standard for modern units. Group-regulated
- designs are obsolete and should be avoided.
+  designs are obsolete and should be avoided.
 
 - **Capacitors:** Japanese primary and secondary capacitors (Chemi-Con, Rubycon, Nichicon,
- Panasonic) are strongly preferred. Chinese capacitors (Teapo, CapXon, SamXon) are acceptable in
- secondary positions but not in primary bulk or high-frequency filtering roles.
+  Panasonic) are strongly preferred. Chinese capacitors (Teapo, CapXon, SamXon) are acceptable in
+  secondary positions but not in primary bulk or high-frequency filtering roles.
 
 - **Protections:** All reputable units include OVP, UVP, OCP, OPP, OTP, and SCP. The quality of the
- protection IC and the tuning of the trip points matter. Some cheap units claim these protections
- but implement them poorly.
+  protection IC and the tuning of the trip points matter. Some cheap units claim these protections
+  but implement them poorly.
 
 - **Reviews:** Prioritize reviews that measure ripple/noise (oscilloscope), voltage regulation under
- cross-load conditions, transient response, and efficiency across the entire load range. Written
- reviews at Tom's Hardware, JonnyGURU (archived), and video reviews at Hardware Busters are
- thorough. Cybenetics certification provides standardized efficiency and noise measurements.
+  cross-load conditions, transient response, and efficiency across the entire load range. Written
+  reviews at Tom's Hardware, JonnyGURU (archived), and video reviews at Hardware Busters are
+  thorough. Cybenetics certification provides standardized efficiency and noise measurements.
 
 ### Reading PSU Reviews
 
 Key metrics to evaluate in independent PSU reviews:
 
 - **Voltage regulation:** All rails should stay within +/- 2% of nominal under any load. The best
- units achieve +/- 1% or better.
+  units achieve +/- 1% or better.
 - **Ripple and noise:** Should be well under ATX limits. Premium units achieve &lt; 20 mV on +12 V
- and &lt; 15 mV on +3.3 V and +5 V.
+  and &lt; 15 mV on +3.3 V and +5 V.
 - **Cross-load performance:** Voltage regulation when load is concentrated on one rail (e.g., heavy
- +12 V draw with minimal +3.3 V / +5 V draw). DC-DC topologies excel here; group-regulated designs
- fail.
+  +12 V draw with minimal +3.3 V / +5 V draw). DC-DC topologies excel here; group-regulated designs
+  fail.
 - **Transient response:** Oscilloscope captures showing how quickly the PSU recovers from sudden
- load changes. Recovery should be within 1--2 ms with minimal overshoot.
+  load changes. Recovery should be within 1--2 ms with minimal overshoot.
 - **Efficiency:** Full curve from 2% to 100% load, not just the three 80 PLUS test points.
 - **Fan curve and acoustics:** At what load percentage does the fan activate? How loud is it at 50%
- load? At full load?
+  load? At full load?
 
 ---
 
@@ -368,11 +361,9 @@ Circuit. Voltage on one rail is affected by the load on the other rail. If you d
 +3.3 V and lightly from +5 V, the +5 V voltage rises. This is a fundamental limitation that makes
 Group-regulated PSUs unsuitable for modern systems where the load is almost entirely on +12 V.
 
-:::warning
-Avoid any PSU that uses group regulation. Nearly all modern PC power draw is on the +12 V
+:::warning Avoid any PSU that uses group regulation. Nearly all modern PC power draw is on the +12 V
 Rail (CPU, GPU, fans, pumps). With group regulation, the lightly-loaded +3.3 V and +5 V rails will
-Have their voltages pushed out of specification, potentially damaging connected devices.
-:::
+Have their voltages pushed out of specification, potentially damaging connected devices. :::
 
 ### Active PFC vs Passive PFC
 
@@ -381,13 +372,13 @@ Reducing reactive power. Without PFC, the PSU draws current in short pulses at t
 Voltage cycle, which is inefficient and stresses the electrical grid.
 
 - **Passive PFC:** Uses a large inductor to smooth the current draw. Simple and reliable but bulky,
- heavy, and only achieves a power factor of 0.7--0.8. Rare in modern PSUs and prohibited in many
- regions for units above 75 W.
+  heavy, and only achieves a power factor of 0.7--0.8. Rare in modern PSUs and prohibited in many
+  regions for units above 75 W.
 
 - **Active PFC:** Uses a boost converter circuit to actively shape the input current waveform.
- Achieves a power factor of 0.95--0.99. Smaller, lighter, and works across a wide input voltage
- range (100--240 V, universal input). Mandatory under EU regulations (ErP directive) and ATX
- specification since ATX 2.0. All quality modern PSUs use active PFC.
+  Achieves a power factor of 0.95--0.99. Smaller, lighter, and works across a wide input voltage
+  range (100--240 V, universal input). Mandatory under EU regulations (ErP directive) and ATX
+  specification since ATX 2.0. All quality modern PSUs use active PFC.
 
 ---
 
@@ -400,12 +391,12 @@ Protecting connected components from voltage damage.
 
 Typical OVP trip points:
 
-| Rail | OVP Trip Point |
+| Rail   | OVP Trip Point   |
 | ------ | ---------------- |
-| +12 V | 13.4 -- 15.6 V |
-| +5 V | 5.75 -- 6.75 V |
-| +3.3 V | 4.05 -- 4.65 V |
-| -12 V | -15.3 -- -13.2 V |
+| +12 V  | 13.4 -- 15.6 V   |
+| +5 V   | 5.75 -- 6.75 V   |
+| +3.3 V | 4.05 -- 4.65 V   |
+| -12 V  | -15.3 -- -13.2 V |
 
 OVP should trigger before any connected component is at risk. ATX specification defines the maximum
 Safe voltage for each rail. Quality PSUs set OVP trip points close to but above these limits. Units
@@ -429,17 +420,15 @@ OCP prevents damage from short circuits or excessive loads on individual cable r
 Designs, each virtual rail has its own OCP setting. In single-rail designs, OCP protects the entire
 +12 V output.
 
-:::info
-OCP is the most common protection to cause false trips in multi-rail PSUs. If you connect
+:::info OCP is the most common protection to cause false trips in multi-rail PSUs. If you connect
 Too many GPU power cables to the same rail segment, OCP may trigger even though the total PSU
 Capacity has not been exceeded. Distributing cables across different rail segments (or using a
-Single-rail unit) resolves this.
-:::
+Single-rail unit) resolves this. :::
 
 ### OPP (Over Power Protection)
 
-**Definition.** OPP shuts down the PSU when total output power exceeds a safe threshold, 
-110--130% of rated continuous power.
+**Definition.** OPP shuts down the PSU when total output power exceeds a safe threshold, 110--130%
+of rated continuous power.
 
 OPP is the last line of defense before the PSU's internal components (transformer, switching
 Transistors, capacitors) are stressed beyond their ratings. Unlike OCP, which is per-rail, OPP
@@ -448,8 +437,8 @@ Above the threshold are allowed, but sustained over-power triggers shutdown.
 
 ### OTP (Over Temperature Protection)
 
-**Definition.** OTP shuts down the PSU when internal temperatures exceed a safe threshold, 
-85--95 C measured at the primary side (hottest components).
+**Definition.** OTP shuts down the PSU when internal temperatures exceed a safe threshold, 85--95 C
+measured at the primary side (hottest components).
 
 OTP protects against fan failure, blocked ventilation, or ambient temperatures beyond the PSU's
 Operating range. Quality PSUs implement OTP with hysteresis — the PSU will not restart until the
@@ -464,11 +453,9 @@ SCP is the fastest-acting protection mechanism. It must trigger before the short
 Melt wires, damage connectors, or harm the motherboard. Modern PSUs use dedicated comparator ICs
 That monitor each rail for sudden current surges characteristic of short circuits.
 
-:::warning
-If your PSU repeatedly trips SCP or OCP, do not disable these protections or bypass them.
+:::warning If your PSU repeatedly trips SCP or OCP, do not disable these protections or bypass them.
 This indicates a genuine fault — either a short circuit in a component, a damaged cable, or a
-Failing PSU. Continued operation risks fire and total system destruction.
-:::
+Failing PSU. Continued operation risks fire and total system destruction. :::
 
 ---
 
@@ -486,16 +473,16 @@ A generic term for the firmware interface, even when the underlying implementati
 
 ### Legacy BIOS vs UEFI
 
-| Feature | Legacy BIOS | UEFI |
+| Feature          | Legacy BIOS                    | UEFI                                        |
 | ---------------- | ------------------------------ | ------------------------------------------- |
-| Boot mode | MBR (max 2.2 TB disk) | GPT (up to 9.4 ZB) |
-| Interface | Text-only, keyboard navigation | Graphical, mouse support |
-| Secure Boot | No | Yes (signature verification of bootloaders) |
-| Driver model | 16-bit real mode | 32-bit or 64-bit |
-| Boot speed | Slower | Faster (optimized handoff to OS) |
-| Network support | Limited | Full network stack (HTTP boot, PXE) |
-| Firmware updates | Risky (DOS-based flash) | Secure (in-OS update, capsule updates) |
-| Extensibility | None | UEFI applications, modules, shell |
+| Boot mode        | MBR (max 2.2 TB disk)          | GPT (up to 9.4 ZB)                          |
+| Interface        | Text-only, keyboard navigation | Graphical, mouse support                    |
+| Secure Boot      | No                             | Yes (signature verification of bootloaders) |
+| Driver model     | 16-bit real mode               | 32-bit or 64-bit                            |
+| Boot speed       | Slower                         | Faster (optimized handoff to OS)            |
+| Network support  | Limited                        | Full network stack (HTTP boot, PXE)         |
+| Firmware updates | Risky (DOS-based flash)        | Secure (in-OS update, capsule updates)      |
+| Extensibility    | None                           | UEFI applications, modules, shell           |
 
 ### Secure Boot
 
@@ -505,8 +492,8 @@ Trusted key are allowed to execute. This prevents rootkits and bootkits from hij
 Process.
 
 Secure Boot is required for Windows 11. Linux distributions ship with signed bootloaders
-(shim-signed), so Secure Boot works out of the box. Custom kernels or unsigned bootloaders
-Require enrolling custom keys or disabling Secure Boot.
+(shim-signed), so Secure Boot works out of the box. Custom kernels or unsigned bootloaders Require
+enrolling custom keys or disabling Secure Boot.
 
 ### BIOS Chip
 
@@ -521,9 +508,9 @@ Feature a physical BIOS selector switch; others auto-recover from the backup.
 
 ### CMOS Battery
 
-The CMOS (Complementary Metal-Oxide-Semiconductor) battery — a CR2032 lithium coin cell —
-Provides power to the CMOS SRAM that stores BIOS settings when the system is powered off. This
-Includes boot order, fan curves, overclocking settings, and hardware configuration.
+The CMOS (Complementary Metal-Oxide-Semiconductor) battery — a CR2032 lithium coin cell — Provides
+power to the CMOS SRAM that stores BIOS settings when the system is powered off. This Includes boot
+order, fan curves, overclocking settings, and hardware configuration.
 
 When the CMOS battery dies (typical lifespan 3--5 years), the system loses its settings on every
 Power cycle and reverts to defaults. The system will still boot, but any custom configuration will
@@ -536,9 +523,9 @@ Be lost. Some boards display a "CMOS checksum error" or "CMOS battery low" messa
 ### Common BIOS Layouts
 
 **AMI (American Megatrends International):** Used by ASUS, ASRock, Gigabyte (AMIBIOS8), and others.
-AMI UEFI implementations are the most common. They use a left-hand navigation pane with
-Categorized settings (EZ Mode / Advanced Mode toggle on ASUS boards). Keyboard shortcut F7 toggles
-Between EZ and Advanced modes on ASUS.
+AMI UEFI implementations are the most common. They use a left-hand navigation pane with Categorized
+settings (EZ Mode / Advanced Mode toggle on ASUS boards). Keyboard shortcut F7 toggles Between EZ
+and Advanced modes on ASUS.
 
 **Award/Phoenix:** Historically common, now largely absorbed into AMI and proprietary UEFI
 Implementations. Award BIOS had a distinctive blue text-on-black interface. Modern Phoenix
@@ -552,19 +539,19 @@ Environments, not enthusiast tuning.
 
 Universal BIOS navigation keys:
 
-| Key | Action |
+| Key        | Action                                    |
 | ---------- | ----------------------------------------- |
-| F1 | General help |
-| F2 | Save changes and exit (on some boards) |
-| F5/F6 | Load optimized defaults (varies by board) |
-| F7 | Toggle EZ/Advanced mode (ASUS) |
-| F10 | Save changes and exit (most AMI boards) |
-| Del | Enter BIOS setup on boot |
-| Esc | Back / Exit without saving |
-| +/- | Adjust values |
-| Enter | Select sub-menu |
-| Tab | Switch between panes |
-| Arrow keys | Navigate menus |
+| F1         | General help                              |
+| F2         | Save changes and exit (on some boards)    |
+| F5/F6      | Load optimized defaults (varies by board) |
+| F7         | Toggle EZ/Advanced mode (ASUS)            |
+| F10        | Save changes and exit (most AMI boards)   |
+| Del        | Enter BIOS setup on boot                  |
+| Esc        | Back / Exit without saving                |
+| +/-        | Adjust values                             |
+| Enter      | Select sub-menu                           |
+| Tab        | Switch between panes                      |
+| Arrow keys | Navigate menus                            |
 
 ### Mouse Support in UEFI
 
@@ -589,19 +576,18 @@ CPU frequency of 5000 MHz (5.0 GHz).
 Modern CPUs have multiple clock domains:
 
 - **CPU Core Ratio (All-Core):** Applied uniformly to all cores. Simple but may not account for
- binning differences between cores.
+  binning differences between cores.
 - **Per-Core Ratio:** Each core can have its own multiplier. This is how Intel Turbo Boost works —
- the best-binned core(s) boost higher than the rest.
+  the best-binned core(s) boost higher than the rest.
 - **Ring/Cache Ratio:** Controls the frequency of the L3 cache and ring bus (Intel) or the L3 cache
- clock (AMD). On Intel, the ring ratio is often the limiting factor in overclocking. Decoupling it
- from the core ratio can allow higher core frequencies at the cost of cache performance.
+  clock (AMD). On Intel, the ring ratio is often the limiting factor in overclocking. Decoupling it
+  from the core ratio can allow higher core frequencies at the cost of cache performance.
 
 ### Base Clock (BCLK)
 
 **Definition.** BCLK is the reference clock from which most other clocks in the system are derived.
 On Intel platforms, the default BCLK is 100 MHz. On AMD AM4 platforms, the reference clock (REFCLK)
-Is also 100 MHz. On AM5, BCLK is 100 MHz but the architecture is more tolerant of BCLK
-Adjustments.
+Is also 100 MHz. On AM5, BCLK is 100 MHz but the architecture is more tolerant of BCLK Adjustments.
 
 Changing BCLK affects multiple subsystems simultaneously:
 
@@ -610,13 +596,11 @@ Changing BCLK affects multiple subsystems simultaneously:
 - PCIe frequency = BCLK x PCIe ratio (often 100 MHz)
 - DMI / UPI interconnect frequency
 
-:::warning
-Increasing BCLK is a blunt instrument that affects every clock-derived frequency in the
+:::warning Increasing BCLK is a blunt instrument that affects every clock-derived frequency in the
 System. On Intel platforms, BCLK overclocking above 103--105 MHz is rarely stable because the PCIe
 And DMI buses diverge from their specifications. Use the multiplier for CPU overclocking and the
 Memory ratio for RAM overclocking. Reserve BCLK adjustments for fine-tuning when the multiplier
-Limits have been reached.
-:::
+Limits have been reached. :::
 
 ### FCLK (Infinity Fabric)
 
@@ -627,11 +611,11 @@ Controller. FCLK is directly tied to the memory controller's performance.
 FCLK operates in a 1:1 or 2:1 ratio with the memory (UCLK):
 
 - **1:1 mode (FCLK = UCLK/2 = Memory/2):** For DDR4-3600, FCLK = 1800 MHz. This is the preferred
- mode for latency-sensitive workloads. FCLK can be pushed to 1800--1900 MHz on Zen 3 and
- 1900--2000 MHz on Zen 4.
+  mode for latency-sensitive workloads. FCLK can be pushed to 1800--1900 MHz on Zen 3 and 1900--2000
+  MHz on Zen 4.
 - **2:1 mode (FCLK = UCLK/4 = Memory/4):** Used when memory frequency exceeds what the Infinity
- Fabric can handle. This doubles the Infinity Fabric latency, which can significantly impact gaming
- performance despite higher memory bandwidth.
+  Fabric can handle. This doubles the Infinity Fabric latency, which can significantly impact gaming
+  performance despite higher memory bandwidth.
 
 ### Voltage Settings
 
@@ -644,8 +628,8 @@ On AMD AM4, VDDIO/MC feeds the memory controller. Typical range: 1.05--1.20 V fo
 DDR5.
 
 **VDDP:** The voltage for the CPU's PHY (physical layer) interface. Primarily relevant for AMD AM4
-Memory stability. Default is 0.95 V. Increasing to 1.0--1.05 V can improve memory
-Stability at high frequencies.
+Memory stability. Default is 0.95 V. Increasing to 1.0--1.05 V can improve memory Stability at high
+frequencies.
 
 **System Agent (SA) Voltage:** Intel-specific. Supplies the system agent (memory controller, PCIe
 Controller, display controller). Increasing SA voltage can improve memory stability and allow higher
@@ -664,19 +648,19 @@ Droop under load. See the undervolting guide for a detailed LLC level table.
 Intel platforms define CPU power limits as follows:
 
 - **PL1 (Power Limit 1):** Long-term sustained power limit. The CPU will throttle to maintain this
- average over an indefinite period.
+  average over an indefinite period.
 - **PL2 (Power Limit 2):** Short-term turbo power limit. The CPU can exceed PL1 for a limited
- duration before throttling back to PL1.
+  duration before throttling back to PL1.
 - **PL4 (Power Limit 4):** Absolute maximum power. The CPU will not exceed this under any
- circumstance. This is a hard hardware limit, not configurable.
-- **Tau:** The duration (in seconds) that the CPU can sustain PL2 before dropping to PL1. 
- 28 seconds on Intel desktop platforms. Can be extended or disabled on some boards.
+  circumstance. This is a hard hardware limit, not configurable.
+- **Tau:** The duration (in seconds) that the CPU can sustain PL2 before dropping to PL1. 28 seconds
+  on Intel desktop platforms. Can be extended or disabled on some boards.
 
 AMD platforms use analogous limits:
 
 - **PPT (Package Power Tracking):** The total socket power limit, analogous to PL2. AMD defines
- separate TDC (Thermal Design Current) and EDC (Electrical Design Current) limits in addition to
- PPT.
+  separate TDC (Thermal Design Current) and EDC (Electrical Design Current) limits in addition to
+  PPT.
 - **TDC:** Maximum continuous current.
 - **EDC:** Maximum peak (short-duration) current.
 
@@ -691,13 +675,11 @@ More CPU subsystems (clocks, core voltage, cache) to reduce power consumption wh
 - **C3:** Clock and core voltage reduced. Cache maintained. Wake latency ~50 microseconds.
 - **C6:** Core voltage off, cache flushed. Deep power savings. Wake latency ~100 microseconds.
 - **C8/C10:** Deepest states on modern Intel CPUs. Package-level C-states that affect the entire CPU
- package. Lowest power but highest wake latency.
+  package. Lowest power but highest wake latency.
 
-:::info
-For overclocking and stability testing, disable C-states. They introduce voltage and
+:::info For overclocking and stability testing, disable C-states. They introduce voltage and
 Frequency transitions that can cause instability during stress tests. For daily use, enable them —
-The power savings are significant (10--40 W at idle on modern CPUs).
-:::
+The power savings are significant (10--40 W at idle on modern CPUs). :::
 
 ### EIST / SpeedStep
 
@@ -738,14 +720,12 @@ XMP and EXPO are functionally identical — they are vendor-specific names for t
 XMP 3.0 adds two user-customizable profiles in addition to the three factory profiles.
 
 When you enable XMP/EXPO in BIOS, the firmware reads the profile from the SPD and applies the
-Specified settings. Without enabling a profile, the memory runs at JEDEC standard speeds (
-DDR4-2133 to DDR4-2666, or DDR5-4800), regardless of the kit's rated capability.
+Specified settings. Without enabling a profile, the memory runs at JEDEC standard speeds ( DDR4-2133
+to DDR4-2666, or DDR5-4800), regardless of the kit's rated capability.
 
-:::info
-XMP/EXPO profiles are overclocking settings. They exceed JEDEC specifications and require
+:::info XMP/EXPO profiles are overclocking settings. They exceed JEDEC specifications and require
 Manual enabling. Memory running on XMP/EXPO is technically overclocked, though the manufacturer has
-Validated the kit at those settings.
-:::
+Validated the kit at those settings. :::
 
 ### Frequency
 
@@ -757,13 +737,13 @@ Common memory frequencies and their corresponding clock rates:
 
 | DDR4 Speed (MT/s) | Clock (MHz) | DDR5 Speed (MT/s) | Clock (MHz) |
 | ----------------- | ----------- | ----------------- | ----------- |
-| 2400 | 1200 | 4800 | 2400 |
-| 2666 | 1333 | 5200 | 2600 |
-| 3200 | 1600 | 5600 | 2800 |
-| 3600 | 1800 | 6000 | 3000 |
-| 4000 | 2000 | 6400 | 3200 |
-| 4400 | 2200 | 7200 | 3600 |
-| 4800 | 2400 | 8000 | 4000 |
+| 2400              | 1200        | 4800              | 2400        |
+| 2666              | 1333        | 5200              | 2600        |
+| 3200              | 1600        | 5600              | 2800        |
+| 3600              | 1800        | 6000              | 3000        |
+| 4000              | 2000        | 6400              | 3200        |
+| 4400              | 2200        | 7200              | 3600        |
+| 4800              | 2400        | 8000              | 4000        |
 
 ### Timings
 
@@ -796,20 +776,18 @@ Memory is commonly advertised as "CL16-18-18-38" meaning CL=16, tRCD=18, tRP=18,
 
 **Definition.** VDIMM is the supply voltage to the memory modules.
 
-| Standard | Default VDIMM | Typical Overclock Range |
+| Standard      | Default VDIMM  | Typical Overclock Range |
 | ------------- | -------------- | ----------------------- |
-| DDR4 JEDEC | 1.20 V | -- |
-| DDR4 XMP | 1.35 V | 1.35 -- 1.50 V |
-| DDR5 JEDEC | 1.10 V | -- |
-| DDR5 XMP/EXPO | 1.25 -- 1.35 V | 1.35 -- 1.45 V |
+| DDR4 JEDEC    | 1.20 V         | --                      |
+| DDR4 XMP      | 1.35 V         | 1.35 -- 1.50 V          |
+| DDR5 JEDEC    | 1.10 V         | --                      |
+| DDR5 XMP/EXPO | 1.25 -- 1.35 V | 1.35 -- 1.45 V          |
 
-:::warning
-Exceeding 1.45 V VDIMM on DDR5 carries a risk of memory degradation over time. DDR5 runs
+:::warning Exceeding 1.45 V VDIMM on DDR5 carries a risk of memory degradation over time. DDR5 runs
 Significantly hotter than DDR4 due to higher density and the on-die PMIC (Power Management IC). Some
 Kits specify 1.40--1.45 V in their XMP profiles. For daily use, keep VDIMM at or below the kit's
 Rated XMP voltage. The absolute maximum recommended by most memory manufacturers is 1.50 V, but
-Longevity at that voltage is not guaranteed.
-:::
+Longevity at that voltage is not guaranteed. :::
 
 ### Memory Training
 
@@ -834,17 +812,15 @@ Memory training failures manifest as:
 The memory controller frequency.
 
 - **Gear 1:** Memory controller runs at the same frequency as the memory bus (1:1 ratio). Lower
- latency, best performance. Limited to DDR5-5600--6000 depending on the CPU's memory
- controller quality.
+  latency, best performance. Limited to DDR5-5600--6000 depending on the CPU's memory controller
+  quality.
 - **Gear 2:** Memory controller runs at half the memory bus frequency (1:2 ratio). Higher latency
- but allows higher memory frequencies (DDR5-6400+). The latency penalty from Gear 2 can negate the
- bandwidth gains from higher frequency in latency-sensitive workloads.
+  but allows higher memory frequencies (DDR5-6400+). The latency penalty from Gear 2 can negate the
+  bandwidth gains from higher frequency in latency-sensitive workloads.
 
-:::info
-For gaming and general use, Gear 1 at DDR5-6000 is the sweet spot. Gear 2 becomes
-Worthwhile only when running DDR5-6400 or higher, and even then the improvement depends on the
-Application. Always benchmark both configurations.
-:::
+:::info For gaming and general use, Gear 1 at DDR5-6000 is the sweet spot. Gear 2 becomes Worthwhile
+only when running DDR5-6400 or higher, and even then the improvement depends on the Application.
+Always benchmark both configurations. :::
 
 ---
 
@@ -876,13 +852,11 @@ Requirements:
 - UEFI firmware with ReBAR support
 - Above 4G Decoding enabled
 
-Performance gains vary by game and resolution. At 1080p, gains are 1--5%. At 1440p and 4K,
-Gains can reach 5--15% in certain titles. Not all games benefit.
+Performance gains vary by game and resolution. At 1080p, gains are 1--5%. At 1440p and 4K, Gains can
+reach 5--15% in certain titles. Not all games benefit.
 
-:::info
-Enable Resizable BAR. There is no downside and the performance gains are free. Ensure Above
-4G Decoding is also enabled, as ReBAR requires it.
-:::
+:::info Enable Resizable BAR. There is no downside and the performance gains are free. Ensure Above
+4G Decoding is also enabled, as ReBAR requires it. :::
 
 ### PCIe Lane Allocation
 
@@ -905,7 +879,7 @@ On boards with integrated graphics and a discrete GPU, the BIOS setting for prim
 Determines which GPU drives the display during POST and early boot:
 
 - **iGPU:** Integrated graphics. Slower but always available. Useful for troubleshooting discrete
- GPU issues.
+  GPU issues.
 - **PEG/PCIe:** Discrete GPU. Preferred for performance.
 - **Auto:** BIOS selects the discrete GPU if one is detected, falling back to iGPU.
 
@@ -921,33 +895,29 @@ Configuration for GPU compute servers and passthrough setups.
 Some platforms support NVMe RAID arrays configured through the BIOS. Common implementations:
 
 - **Intel RST (Rapid Storage Technology):** Supports RAID 0 (striping), RAID 1 (mirroring), and RAID
- 5 on supported Intel platforms. Requires the Intel RST driver in the OS.
+  5 on supported Intel platforms. Requires the Intel RST driver in the OS.
 - **AMD RAID:** Supports RAID 0, RAID 1, and RAID 10 on AMD platforms. Similar to Intel RST.
 
 NVMe RAID configured in BIOS is hardware/firmware RAID, not true hardware RAID. The RAID logic runs
 On the CPU via the chipset. It offers no performance advantage over software RAID (Linux mdadm,
 Windows Storage Spaces) and ties the array to the specific platform.
 
-:::warning
-NVMe RAID 0 provides no redundancy. If any drive fails, all data is lost. The performance
+:::warning NVMe RAID 0 provides no redundancy. If any drive fails, all data is lost. The performance
 Gain over a single NVMe SSD is marginal in most consumer workloads. Use RAID 0 only for scratch
-Space or workloads where the data is disposable and rebuildable.
-:::
+Space or workloads where the data is disposable and rebuildable. :::
 
 ### SATA Mode
 
 - **AHCI (Advanced Host Controller Interface):** The standard SATA mode. Supports NCQ (Native
- Command Queuing), hot-swapping, and power management. Use this for all modern SATA SSDs and HDDs.
+  Command Queuing), hot-swapping, and power management. Use this for all modern SATA SSDs and HDDs.
 - **RAID:** Enables the chipset's firmware RAID capabilities for SATA drives. Requires the chipset
- RAID driver in the OS. Only use this if you are actually configuring a SATA RAID array.
+  RAID driver in the OS. Only use this if you are actually configuring a SATA RAID array.
 - **IDE/Legacy:** Emulates legacy IDE behavior. Disables NCQ and hot-swapping. Only use this for
- legacy operating systems (Windows XP and earlier).
+  legacy operating systems (Windows XP and earlier).
 
-:::warning
-Switching SATA mode after installing an OS will cause a boot failure. The OS storage
+:::warning Switching SATA mode after installing an OS will cause a boot failure. The OS storage
 Driver is tied to the SATA mode selected during installation. If you need to change SATA mode,
-Reinstall the OS or pre-load the appropriate driver before switching.
-:::
+Reinstall the OS or pre-load the appropriate driver before switching. :::
 
 ### Boot Order
 
@@ -962,11 +932,9 @@ Common boot order configurations:
 2. Network boot (PXE, iSCSI) — for network installations or diskless systems
 3. USB device — for OS installation or live environments
 
-:::info
-Modern UEFI implementations use a boot priority list rather than a simple order. Boot
+:::info Modern UEFI implementations use a boot priority list rather than a simple order. Boot
 Entries can be added, removed, and reordered. Hard drive boot entries are specific to partitions,
-Not physical drives. Removing a drive does not leave a stale boot entry (unlike legacy BIOS).
-:::
+Not physical drives. Removing a drive does not leave a stale boot entry (unlike legacy BIOS). :::
 
 ### CSM (Compatibility Support Module)
 
@@ -997,26 +965,24 @@ Devices to virtual machines (PCIe passthrough). Required for GPU passthrough (VF
 Windows Hyper-V), NVMe passthrough, and SR-IOV. Enable if you use or plan to use virtualization with
 Device passthrough.
 
-:::info
-VT-x/AMD-V and VT-d/IOMMU are separate settings. You need both enabled for full
+:::info VT-x/AMD-V and VT-d/IOMMU are separate settings. You need both enabled for full
 Virtualization support. Some boards group these under a single "Virtualization" toggle; others
-Expose them individually.
-:::
+Expose them individually. :::
 
 ### USB Configuration
 
 Key USB settings in BIOS:
 
 - **XHCI Hand-off:** When enabled, the BIOS hands control of USB 3.0 (xHCI) controllers to the OS.
- When disabled, the BIOS retains control. Enable this for modern operating systems (Windows 10+,
- any modern Linux).
+  When disabled, the BIOS retains control. Enable this for modern operating systems (Windows 10+,
+  any modern Linux).
 - **Legacy USB Support:** Enables USB keyboard and mouse support in legacy BIOS mode and during
- POST. Required for booting from USB drives on some boards. Disable if you do not use USB keyboards
- (e.g., server with IPMI/iKVM).
+  POST. Required for booting from USB drives on some boards. Disable if you do not use USB keyboards
+  (e.g., server with IPMI/iKVM).
 - **EHCI Hand-off:** Similar to xHCI hand-off but for USB 2.0 (EHCI) controllers. Enable for modern
- OS compatibility.
+  OS compatibility.
 - **USB Port Configuration:** Some boards allow enabling/disabling individual USB ports, which can
- be useful for security (preventing unauthorized USB device access) or troubleshooting.
+  be useful for security (preventing unauthorized USB device access) or troubleshooting.
 
 ### Fan Curves
 
@@ -1031,11 +997,11 @@ Fan headers are :
 
 - **CPU_FAN:** 4-pin PWM header for the CPU cooler. BIOS controls this based on CPU temperature.
 - **CPU_OPT / PUMP:** 4-pin header designed for AIO pump control. Should be set to 100% duty cycle
- (full speed) unless the AIO manufacturer specifies otherwise.
+  (full speed) unless the AIO manufacturer specifies otherwise.
 - **SYS_FAN / CHA_FAN:** System/chassis fan headers. Can be controlled by CPU temperature,
- motherboard temperature, or a fixed duty cycle.
+  motherboard temperature, or a fixed duty cycle.
 - **GPU fan headers:** Some boards include headers specifically for supplemental GPU cooling,
- controllable via GPU temperature monitoring.
+  controllable via GPU temperature monitoring.
 
 ### RGB Control
 
@@ -1054,14 +1020,14 @@ OS is required.
 ### Wake Settings
 
 - **Wake on LAN (WoL):** Allows the system to be powered on via a "magic packet" sent over the
- network. Requires the network adapter to receive standby power (+5 VSB) and the NIC driver to be
- configured for WoL.
+  network. Requires the network adapter to receive standby power (+5 VSB) and the NIC driver to be
+  configured for WoL.
 - **Wake on USB:** Allows USB device activity (keyboard press, mouse movement) to wake the system
- from sleep (S3) or sometimes from soft-off (S5). Useful for HTPC builds.
+  from sleep (S3) or sometimes from soft-off (S5). Useful for HTPC builds.
 - **Wake on PCI/PCIe:** Allows PCIe devices to wake the system. Used by some TV tuners and network
- cards.
+  cards.
 - **Power On by RTC/Alarm:** Allows the system to power on at a scheduled time. Useful for systems
- that need to be available at specific times (e.g., daily builds, scheduled tasks).
+  that need to be available at specific times (e.g., daily builds, scheduled tasks).
 
 ### Fast Boot
 
@@ -1085,41 +1051,41 @@ Require disabling Fast Boot to access BIOS reliably.
 The standard overclocking methodology follows a disciplined, iterative process:
 
 1. **Baseline:** Establish stock performance with benchmarks (Cinebench, y-cruncher, 3DMark,
- MemTest86). Record temperatures, clock speeds, and voltages at stock settings.
+   MemTest86). Record temperatures, clock speeds, and voltages at stock settings.
 
 2. **Stress test stock:** Run Prime95 (small FFTs) or OCCT (CPU) for 30 minutes at stock settings.
- Verify that temperatures and voltages are within expected ranges. This confirms cooling adequacy.
+   Verify that temperatures and voltages are within expected ranges. This confirms cooling adequacy.
 
 3. **Increment:** Increase the target parameter (multiplier, BCLK, memory frequency) by a small
- step. For CPU overclocking, increase the multiplier by 1 (100 MHz). For memory, increase
- frequency by 200 MT/s or tighten one timing by 1 clock cycle.
+   step. For CPU overclocking, increase the multiplier by 1 (100 MHz). For memory, increase
+   frequency by 200 MT/s or tighten one timing by 1 clock cycle.
 
 4. **Stabilize:** If unstable, increase voltage by a small step (10--25 mV for Vcore, 10 mV for
- VDIMM). If voltage is already at or near the safe limit, reduce the overclock by one step.
+   VDIMM). If voltage is already at or near the safe limit, reduce the overclock by one step.
 
 5. **Verify:** Run stress tests for a meaningful duration. For daily-use stability: 2 hours Prime95
- or OCCT, 4 passes MemTest86, 30 minutes Cinebench R23 multicore loop. For extreme stability: 24
- hours Prime95 blend test.
+   or OCCT, 4 passes MemTest86, 30 minutes Cinebench R23 multicore loop. For extreme stability: 24
+   hours Prime95 blend test.
 
 6. **Document:** Record the final settings (multiplier, voltage, timings, LLC level). Save a BIOS
- profile. Note the temperatures achieved under sustained load.
+   profile. Note the temperatures achieved under sustained load.
 
 ### Tools
 
-| Tool | Purpose | Platform |
+| Tool           | Purpose                                    | Platform         |
 | -------------- | ------------------------------------------ | ---------------- |
-| HWiNFO64 | Real-time sensor monitoring, logging | Windows |
-| Prime95 | CPU stress test (AVX, SSE, FMA) | Windows, Linux |
-| OCCT | CPU, GPU, VRAM, and power supply stress | Windows |
-| y-cruncher | Multi-threaded CPU stress (real-world) | Windows, Linux |
-| MemTest86 | Memory stress test (bootable, OS-agnostic) | Bootable |
-| TestMem5 (TM5) | Memory stress test (Windows, more configs) | Windows |
-| Cinebench R23 | CPU benchmark (multi-core, single-core) | Windows, macOS |
-| 3DMark | GPU benchmark suite | Windows |
-| ThrottleStop | Intel undervolting and power limit control | Windows (laptop) |
-| Ryzen Master | AMD overclocking and monitoring | Windows |
-| CPU-Z | System information, memory timing details | Windows |
-| Taichi | AM5 memory timing tool | Windows |
+| HWiNFO64       | Real-time sensor monitoring, logging       | Windows          |
+| Prime95        | CPU stress test (AVX, SSE, FMA)            | Windows, Linux   |
+| OCCT           | CPU, GPU, VRAM, and power supply stress    | Windows          |
+| y-cruncher     | Multi-threaded CPU stress (real-world)     | Windows, Linux   |
+| MemTest86      | Memory stress test (bootable, OS-agnostic) | Bootable         |
+| TestMem5 (TM5) | Memory stress test (Windows, more configs) | Windows          |
+| Cinebench R23  | CPU benchmark (multi-core, single-core)    | Windows, macOS   |
+| 3DMark         | GPU benchmark suite                        | Windows          |
+| ThrottleStop   | Intel undervolting and power limit control | Windows (laptop) |
+| Ryzen Master   | AMD overclocking and monitoring            | Windows          |
+| CPU-Z          | System information, memory timing details  | Windows          |
+| Taichi         | AM5 memory timing tool                     | Windows          |
 
 ### Thermal Limits
 
@@ -1127,21 +1093,19 @@ Overclocking increases power dissipation, which increases temperature. Exceeding
 Causes throttling (reducing clock speeds to stay within Tjmax) and, if sustained, can degrade
 Silicon.
 
-| Component | Max Safe Temperature | Throttle Temperature | Notes |
+| Component    | Max Safe Temperature | Throttle Temperature | Notes                             |
 | ------------ | -------------------- | -------------------- | --------------------------------- |
-| Intel CPU | 100 C (sustained) | 100 C (Tjmax) | 105 C on some 14th Gen models |
-| AMD CPU | 95 C (sustained) | 95 C (Tctl/Tdie) | 110 C on some Zen 4 mobile parts |
-| GPU Core | 90--100 C | 83--90 C | Varies by model |
-| VRAM (GDDR6) | 100--110 C | N/A (no throttle) | Thermal pads critical |
-| VRM | 105--115 C | Varies by board | MOSFET/DrMOS temperature |
-| NVMe SSD | 70 C | ~70 C | Throttles to 30--50% of max speed |
+| Intel CPU    | 100 C (sustained)    | 100 C (Tjmax)        | 105 C on some 14th Gen models     |
+| AMD CPU      | 95 C (sustained)     | 95 C (Tctl/Tdie)     | 110 C on some Zen 4 mobile parts  |
+| GPU Core     | 90--100 C            | 83--90 C             | Varies by model                   |
+| VRAM (GDDR6) | 100--110 C           | N/A (no throttle)    | Thermal pads critical             |
+| VRM          | 105--115 C           | Varies by board      | MOSFET/DrMOS temperature          |
+| NVMe SSD     | 70 C                 | ~70 C                | Throttles to 30--50% of max speed |
 
-:::info
-For daily-use overclocking, aim for temperatures no higher than 80--85 C under sustained
+:::info For daily-use overclocking, aim for temperatures no higher than 80--85 C under sustained
 Full load. This provides thermal headroom for ambient temperature fluctuations and ensures the
 Cooling system is not operating at its limit. If you cannot keep temperatures below 85 C, your
-Overclock is limited by cooling, not silicon.
-:::
+Overclock is limited by cooling, not silicon. :::
 
 ### Silicon Lottery
 
@@ -1173,39 +1137,35 @@ Process:
 1. Download the correct BIOS file from the motherboard manufacturer's website.
 2. Rename it to the specific filename required (varies by manufacturer — check the manual).
 3. Copy the file to a FAT32-formatted USB drive.
-4. Insert the USB drive into the dedicated BIOS flashback USB port ( marked with a specific
- label).
+4. Insert the USB drive into the dedicated BIOS flashback USB port ( marked with a specific label).
 5. Press and hold the BIOS flashback button for 3--5 seconds. The LED indicator will flash.
-6. Wait for the LED to stop flashing ( 3--10 minutes). Do not power off during this
- process.
+6. Wait for the LED to stop flashing ( 3--10 minutes). Do not power off during this process.
 
 **Crisis recovery (Dell, HP, Lenovo):** OEM systems may require a different recovery procedure,
- involving a special key combination during power-on and a recovery file on a USB drive.
-Consult the specific manufacturer's documentation.
+involving a special key combination during power-on and a recovery file on a USB drive. Consult the
+specific manufacturer's documentation.
 
 ### Clearing CMOS
 
 Clearing CMOS resets all BIOS settings to factory defaults. Methods, in order of preference:
 
 1. **BIOS reset option:** Many boards have a "Clear CMOS" or "Load Optimized Defaults" option within
- the BIOS menu itself. Use this first if the system boots.
+   the BIOS menu itself. Use this first if the system boots.
 
 2. **CMOS jumper:** Locate the CMOS jumper ( labeled JBAT1, CLR_CMOS, or similar) on the
- motherboard. With the system powered off and unplugged, move the jumper from pins 1-2 to pins 2-3
- for 5--10 seconds, then return it to pins 1-2.
+   motherboard. With the system powered off and unplugged, move the jumper from pins 1-2 to pins 2-3
+   for 5--10 seconds, then return it to pins 1-2.
 
 3. **CMOS button:** Some boards have a dedicated clear CMOS button on the rear I/O panel. Press and
- hold for 5 seconds with the system powered off.
+   hold for 5 seconds with the system powered off.
 
 4. **Battery removal:** Power off, unplug, remove the CR2032 battery for 60 seconds, reinstall. This
- is the universal method but requires case access and may reset the RTC (Real Time Clock).
+   is the universal method but requires case access and may reset the RTC (Real Time Clock).
 
-:::warning
-Clearing CMOS erases all BIOS settings including boot order, fan curves, overclocking
+:::warning Clearing CMOS erases all BIOS settings including boot order, fan curves, overclocking
 Profiles, and RAID configurations. RAID arrays configured through the chipset are not destroyed (the
 Data remains), but the RAID metadata may need to be re-imported. Document your settings before
-Clearing CMOS.
-:::
+Clearing CMOS. :::
 
 ### No-Post Debugging
 
@@ -1215,48 +1175,48 @@ No display, no beep codes, and the system appears frozen.
 Diagnostic steps, in order:
 
 1. **Check the DRAM LED:** If the DRAM debug LED is lit, the memory controller cannot train. Reseat
- the RAM. Try a single DIMM in the second slot (the slot closest to the CPU on most boards). Clear
- CMOS.
+   the RAM. Try a single DIMM in the second slot (the slot closest to the CPU on most boards). Clear
+   CMOS.
 2. **Check the VGA LED:** If the VGA debug LED is lit, the GPU is not detected. Reseat the GPU. Try
- a different PCIe slot. Check PCIe power cables.
+   a different PCIe slot. Check PCIe power cables.
 3. **Check the CPU LED:** If the CPU LED is lit, the CPU is not detected or has failed. Reseat the
- CPU. Check for bent pins in the socket (AMD AM4/AM5).
+   CPU. Check for bent pins in the socket (AMD AM4/AM5).
 4. **Remove all peripherals:** Disconnect all drives, USB devices, and PCIe cards except the GPU and
- one stick of RAM. Try to POST with minimal configuration.
+   one stick of RAM. Try to POST with minimal configuration.
 5. **External display:** Verify the display is connected to the GPU, not the motherboard.
 6. **PSU test:** Verify the PSU is providing correct voltages using a multimeter or PSU tester.
- Check the EPS cable connection.
+   Check the EPS cable connection.
 7. **BIOS recovery:** If the system powers on but shows no signs of life (no debug LEDs, no
- display), try BIOS flashback to reflash the firmware.
+   display), try BIOS flashback to reflash the firmware.
 
 ### Common BIOS Error Codes
 
 Q-Code (AMI) diagnostic codes commonly seen on debug displays:
 
-| Code | Meaning | Likely Cause |
+| Code | Meaning                       | Likely Cause                        |
 | ---- | ----------------------------- | ----------------------------------- |
-| 00 | Not used | System not yet started |
-| 0d | Reserved | CPU microcode loading |
-| 13 | Pre-memory CPU initialization | CPU issue |
-| 15 | Pre-memory northbridge init | IMC or northbridge failure |
-| 19 | Memory initialization | Memory not detected or incompatible |
-| 24 | Memory auto-size | Memory training in progress |
-| 2b | Memory test | Memory test failure |
-| 40 | DXE IPL | Firmware volume issue |
-| 50 | DXE phase | UEFI driver loading |
-| 55 | Memory initialization error | DIMM issue, reseat or replace |
-| 60 | DXE dispatcher | Boot device enumeration |
-| 62 | Installation of PciBus | PCIe device issue |
-| 99 | Super IO initialization | Legacy I/O failure |
-| A0 | IDE initialization | SATA/NVMe not detected |
-| A2 | IDE detect | Storage device issue |
-| A9 | USB initialization | USB controller issue |
-| AE | Legacy Boot Event | Bootable device not found |
-| AF | Exit Boot Services | Handoff to OS bootloader |
-| b0 | Internal table | ACPI table error |
-| b2 | Legacy Option ROM | PCIe option ROM issue |
-| b6 | S3 resume | Wake from sleep failure |
-| d6 | No console output | Display/GPU not detected |
+| 00   | Not used                      | System not yet started              |
+| 0d   | Reserved                      | CPU microcode loading               |
+| 13   | Pre-memory CPU initialization | CPU issue                           |
+| 15   | Pre-memory northbridge init   | IMC or northbridge failure          |
+| 19   | Memory initialization         | Memory not detected or incompatible |
+| 24   | Memory auto-size              | Memory training in progress         |
+| 2b   | Memory test                   | Memory test failure                 |
+| 40   | DXE IPL                       | Firmware volume issue               |
+| 50   | DXE phase                     | UEFI driver loading                 |
+| 55   | Memory initialization error   | DIMM issue, reseat or replace       |
+| 60   | DXE dispatcher                | Boot device enumeration             |
+| 62   | Installation of PciBus        | PCIe device issue                   |
+| 99   | Super IO initialization       | Legacy I/O failure                  |
+| A0   | IDE initialization            | SATA/NVMe not detected              |
+| A2   | IDE detect                    | Storage device issue                |
+| A9   | USB initialization            | USB controller issue                |
+| AE   | Legacy Boot Event             | Bootable device not found           |
+| AF   | Exit Boot Services            | Handoff to OS bootloader            |
+| b0   | Internal table                | ACPI table error                    |
+| b2   | Legacy Option ROM             | PCIe option ROM issue               |
+| b6   | S3 resume                     | Wake from sleep failure             |
+| d6   | No console output             | Display/GPU not detected            |
 
 ---
 
@@ -1268,18 +1228,18 @@ LLC level selection is one of the most consequential BIOS settings for system st
 Longevity. The common mistakes are:
 
 - **LLC too low:** Excessive Vdroop means the CPU receives significantly less voltage under load
- than what you set. A Vcore of 1.30 V with LLC Level 1 might deliver only 1.22 V under heavy load,
- causing instability despite what appears to be adequate voltage in BIOS.
+  than what you set. A Vcore of 1.30 V with LLC Level 1 might deliver only 1.22 V under heavy load,
+  causing instability despite what appears to be adequate voltage in BIOS.
 
 - **LLC too high:** Minimal or negative Vdroop means the CPU receives more voltage under load than
- at idle. On load-to-idle transitions, the voltage overshoots the set value by a margin
- proportional to the LLC aggressiveness. At LLC Level 7 with Vcore set to 1.35 V, the actual
- voltage during load-to-idle transitions can briefly exceed 1.45 V — dangerously close to or
- exceeding the safe limit for many CPUs.
+  at idle. On load-to-idle transitions, the voltage overshoots the set value by a margin
+  proportional to the LLC aggressiveness. At LLC Level 7 with Vcore set to 1.35 V, the actual
+  voltage during load-to-idle transitions can briefly exceed 1.45 V — dangerously close to or
+  exceeding the safe limit for many CPUs.
 
 - **Recommended approach:** Set LLC to a moderate level (4--5 on a 1--7 scale, or Medium/High on a
- descriptive scale). Stress test and verify with HWiNFO64 that Vcore under load is close to the set
- value and that there is no significant overshoot on load-to-idle transitions.
+  descriptive scale). Stress test and verify with HWiNFO64 that Vcore under load is close to the set
+  value and that there is no significant overshoot on load-to-idle transitions.
 
 ### Forgetting to Save
 
@@ -1297,9 +1257,9 @@ Attempting to enable XMP and then manually override individual timings is a comm
 Confusion. The behavior depends on the BIOS implementation:
 
 - Some BIOSes apply the XMP profile first, then apply your manual overrides on top. This works as
- expected.
+  expected.
 - Other BIOSes ignore XMP entirely when any timing is set manually, defaulting to JEDEC timings and
- then applying only your manual overrides. This can result in much looser timings than intended.
+  then applying only your manual overrides. This can result in much looser timings than intended.
 
 The safest approach is to either use the full XMP profile or set all timings manually from JEDEC
 Defaults. Do not partially override an XMP profile unless you understand your specific BIOS
@@ -1310,20 +1270,18 @@ Behavior.
 BIOS versions are not universally forward or backward compatible:
 
 - **Downgrading BIOS:** Some boards do not allow downgrading to an older BIOS version. This prevents
- reverting a problematic update. Check the changelog before updating.
+  reverting a problematic update. Check the changelog before updating.
 - **CPU compatibility:** Newer CPU steppings often require a minimum BIOS version. A Ryzen 7000 CPU
- with a newer stepping may not POST on an early revision X670 BIOS.
+  with a newer stepping may not POST on an early revision X670 BIOS.
 - **Memory compatibility:** BIOS updates frequently include improved memory training algorithms and
- compatibility fixes. If your memory is unstable at its rated XMP speed, a BIOS update may resolve
- it.
+  compatibility fixes. If your memory is unstable at its rated XMP speed, a BIOS update may resolve
+  it.
 - **Beta BIOS:** Beta firmware can introduce new features and fixes but may also introduce new bugs.
- Only install beta BIOS if you need a specific feature or fix it provides.
+  Only install beta BIOS if you need a specific feature or fix it provides.
 
-:::warning
-Never interrupt a BIOS flash. If the flash is interrupted (power loss, accidental reset),
+:::warning Never interrupt a BIOS flash. If the flash is interrupted (power loss, accidental reset),
 The SPI flash will be corrupted and the board will not POST. Recovery requires BIOS flashback (if
-Available) or an external SPI programmer. Always use a UPS when flashing BIOS.
-:::
+Available) or an external SPI programmer. Always use a UPS when flashing BIOS. :::
 
 ### Dual BIOS Boards
 
@@ -1331,25 +1289,25 @@ Motherboards with dual BIOS chips are designed to provide redundancy against fir
 Common implementations:
 
 - **Primary + Backup (automatic):** The board boots from the primary BIOS. If a flash fails or the
- primary is corrupted, the backup automatically takes over on the next boot and restores the
- primary. This is the most user-friendly implementation.
+  primary is corrupted, the backup automatically takes over on the next boot and restores the
+  primary. This is the most user-friendly implementation.
 - **Manual switch:** A physical switch on the board selects between two BIOS chips. The user must
- manually switch to the backup and flash the primary from it. More control but requires user
- intervention.
+  manually switch to the backup and flash the primary from it. More control but requires user
+  intervention.
 - **BIOS 1 / BIOS 2 (selectable):** Similar to a manual switch but accessible through BIOS or a
- rear-panel button.
+  rear-panel button.
 
 Pitfalls with dual BIOS:
 
 - Both chips may be flashed simultaneously during a BIOS update. If the update is interrupted, both
- chips may be corrupted, negating the redundancy benefit. Check whether your board updates one or
- both chips.
+  chips may be corrupted, negating the redundancy benefit. Check whether your board updates one or
+  both chips.
 - The backup BIOS may be an older version. After restoring from backup, you may need to re-flash to
- the latest version.
+  the latest version.
 - Switching BIOS chips does not clear CMOS. Settings from the previous chip may not be compatible
- with the new chip's firmware version. Clear CMOS after switching.
+  with the new chip's firmware version. Clear CMOS after switching.
 - Some dual-BIOS boards have different firmware on each chip (e.g., one optimized for memory
- overclocking, one for CPU overclocking). This is rare but documented on some enthusiast boards.
+  overclocking, one for CPU overclocking). This is rare but documented on some enthusiast boards.
 
 ## Summary
 

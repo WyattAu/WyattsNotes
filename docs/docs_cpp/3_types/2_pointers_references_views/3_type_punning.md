@@ -1,6 +1,8 @@
 ---
 title: Type Punning and the Strict Aliasing Rule
-description: "C++: Type Punning and the Strict Aliasing Rule — 1. What Is Type Punning?; 2. The Strict Aliasing Rule for thorough revision and examination preparation."
+description:
+  'C++: Type Punning and the Strict Aliasing Rule — 1. What Is Type Punning?; 2. The Strict Aliasing
+  Rule for thorough revision and examination preparation.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -9,6 +11,7 @@ categories:
   - Cpp
 slug: type-punning-strict-aliasing
 ---
+
 Import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 # Type Punning and the Strict Aliasing Rule
@@ -29,7 +32,7 @@ Type `U`. Common motivations:
 1. **Network packet parsing:** Reinterpreting a byte buffer as a structured header.
 2. **Serialization/Deserialization:** Converting between wire format and in-memory representation.
 3. **Floating-point bit manipulation:** Accessing the IEEE 754 representation of a `float` via
- integer operations.
+   integer operations.
 4. **Hardware register access:** Mapping memory-mapped I/O registers onto typed overlays.
 
 The naive approach uses `reinterpret_cast`:
@@ -54,8 +57,8 @@ C++17). Informally:
 > - a type that is the signed or unsigned variant of the dynamic type,
 > - a type that is the signed or unsigned variant of the cv-qualified dynamic type,
 > - an aggregate or union type that includes one of the aforementioned types among its elements or
-> non-static data members (including, recursively, an element or non-static data member of a
-> subaggregate or contained union),
+>   non-static data members (including, recursively, an element or non-static data member of a
+>   subaggregate or contained union),
 > - a type that is a (possibly cv-qualified) base class type of the dynamic type,
 > - a `char``unsigned char`Or `std::byte` type.
 
@@ -70,15 +73,15 @@ Aliasing list for `T`) is undefined behavior.
 **Proof:**
 
 1. The expression `reinterpret_cast<U*>(&t)` produces a value of type `U*` that points to the
- storage of `t` [N4950 S7.6.2.9]. The pointer value is well-defined (it points to the beginning of
- `t`'s storage).
+   storage of `t` [N4950 S7.6.2.9]. The pointer value is well-defined (it points to the beginning of
+   `t`'s storage).
 2. The expression `*reinterpret_cast<U*>(&t)` is a glvalue of type `U` that designates the same
- storage as `t`.
+   storage as `t`.
 3. When this glvalue is used to read `t`'s stored value, the program "attempts to access the stored
- value of an object through a glvalue" of type `U` [N4950 S6.9.2.1]/11.
+   value of an object through a glvalue" of type `U` [N4950 S6.9.2.1]/11.
 4. `U` is not in the permitted aliasing list for `T` (by assumption: `U` is neither `T`Nor a
- cv-qualified variant, nor a signed/unsigned variant, nor an aggregate containing `T`Nor a base
- class of `T`Nor `char`/`unsigned char`/`std::byte`).
+   cv-qualified variant, nor a signed/unsigned variant, nor an aggregate containing `T`Nor a base
+   class of `T`Nor `char`/`unsigned char`/`std::byte`).
 5. Therefore, the access is undefined behavior per [N4950 S6.9.2.1]/11. QED.
 
 The critical point is that the UB occurs at the **read**, not at the `reinterpret_cast`. The cast
@@ -113,11 +116,11 @@ Contract.
 Modern compilers (GCC, Clang, MSVC) use TBAA to:
 
 1. **Eliminate redundant loads.** If `*pf` was stored and no `float*` store has occurred since, the
- compiler reuses the stored value without reloading from memory.
+   compiler reuses the stored value without reloading from memory.
 2. **Reorder loads and stores.** If `*pi` and `*pf` are known not to alias, the compiler can reorder
- their accesses for better instruction scheduling.
+   their accesses for better instruction scheduling.
 3. **Hoist loads out of loops.** If a load through a `float*` is inside a loop and no `float*` store
- occurs in the loop, the compiler moves the load before the loop.
+   occurs in the loop, the compiler moves the load before the loop.
 
 These optimizations are valid **only** because the Strict Aliasing Rule guarantees that a load
 Through a `float*` cannot observe a store through an `int*`.
@@ -212,24 +215,25 @@ Works on all platforms, and (c) produces zero-overhead code at `-O2`.
 **Proof:**
 
 1. **Well-defined per the Standard:** [N4950 S6.9]/2 states that copying an object's object
- representation via `memcpy` into an array of `unsigned char` or `std::byte` produces a value
- that, when copied back via `memcpy`Compares equal to the original. This is a direct guarantee
- in the Standard. `reinterpret_cast`-based punning has no such guarantee — it is explicitly UB.
+   representation via `memcpy` into an array of `unsigned char` or `std::byte` produces a value
+   that, when copied back via `memcpy`Compares equal to the original. This is a direct guarantee in
+   the Standard. `reinterpret_cast`-based punning has no such guarantee — it is explicitly UB.
 
 2. **Works on all platforms:** `memcpy` handles alignment correctly on all architectures, including
- those that trap on misaligned access (e.g., some ARM variants). `reinterpret_cast`-based punning
- can produce misaligned accesses, which is UB on its own regardless of the aliasing rule.
+   those that trap on misaligned access (e.g., some ARM variants). `reinterpret_cast`-based punning
+   can produce misaligned accesses, which is UB on its own regardless of the aliasing rule.
 
 3. **Zero-overhead at `-O2`:** All major compilers (GCC, Clang, MSVC, ICC) recognize small `memcpy`
- calls with compile-time-known sizes and inline them as register moves or load/store instructions.
- The generated code is identical to what a hand-written `reinterpret_cast` would produce on
- x86_64, but it is well-defined.
+   calls with compile-time-known sizes and inline them as register moves or load/store instructions.
+   The generated code is identical to what a hand-written `reinterpret_cast` would produce on
+   x86_64, but it is well-defined.
 
 4. **No alternative is portable:**
- - `reinterpret_cast` punning: UB per [N4950 S6.9.2.1]/11.
- - Union-based punning: Well-defined in C++ (see Section 3.3), but not `constexpr`And some
- compilers issue warnings. The lifetime rules for non-active union members are subtle.
- - `std::bit_cast`: Well-defined and `constexpr`But requires C++20. Not available in C++14/17.
+
+- `reinterpret_cast` punning: UB per [N4950 S6.9.2.1]/11.
+- Union-based punning: Well-defined in C++ (see Section 3.3), but not `constexpr`And some compilers
+  issue warnings. The lifetime rules for non-active union members are subtle.
+- `std::bit_cast`: Well-defined and `constexpr`But requires C++20. Not available in C++14/17.
 
 Therefore, for C++14/17 code, `memcpy` is the unique method that satisfies all three criteria. For
 C++20 code, `std::bit_cast` is equally portable and adds `constexpr` support. QED.
@@ -321,11 +325,11 @@ Use `std::bit_cast` for compile-time punning.
 The legality of union-based type punning in C++ depends on several conditions:
 
 1. **The union must be a standard-layout union.** If the union has non-trivial special member
- functions, the aliasing behavior is not guaranteed.
+   functions, the aliasing behavior is not guaranteed.
 2. **The types must be standard-layout.** Both the active and non-active members should be
- standard-layout types for the alias to be well-defined.
+   standard-layout types for the alias to be well-defined.
 3. **You must access through the union member syntax.** Taking the address of the non-active member
- and dereferencing it through a pointer of the wrong type is still UB.
+   and dereferencing it through a pointer of the wrong type is still UB.
 
 ```cpp
 #include <cstdint>
@@ -517,10 +521,10 @@ Full object representation. This means padding bits are preserved, which matters
 
 1. Comparing objects for equality via bitwise comparison (do not do this — use `operator==`).
 2. Serializing objects that may have padding (the padding bits are indeterminate and may contain
- trap representations).
+   trap representations).
 
-For copyable types with no padding, value representation and object representation are
-Identical. Use `std::has_unique_object_representations<T>` to check at compile time.
+For copyable types with no padding, value representation and object representation are Identical.
+Use `std::has_unique_object_representations<T>` to check at compile time.
 
 ```cpp
 static_assert(std::has_unique_object_representations_v<uint32_t>);
@@ -531,8 +535,8 @@ static_assert(!std::has_unique_object_representations_v<short>); // may have pad
 
 When type-punning between types that have different padding layouts, the padding bits are preserved
 By `memcpy` and `std::bit_cast`. This is generally harmless when punning between types of the same
-Size (e.g., `float` and `uint32_t`Which both have no padding on typical platforms), but it can
-Cause issues when punning between types with different padding:
+Size (e.g., `float` and `uint32_t`Which both have no padding on typical platforms), but it can Cause
+issues when punning between types with different padding:
 
 ```cpp
 #include <cstdint>
@@ -690,27 +694,27 @@ Or use `std::endian` (C++20) with conditional byte swapping.
 
 ## 8. Comparison Table of All Type Punning Methods
 
-| Method | Legality (C++ Standard) | `constexpr` | Alignment Safe | Performance | Portability |
+| Method                                            | Legality (C++ Standard)              | `constexpr`        | Alignment Safe            | Performance            | Portability         |
 | :------------------------------------------------ | :----------------------------------- | :----------------- | :------------------------ | :--------------------- | :------------------ |
-| `reinterpret_cast` pointer punning | **UB** [N4950 S6.9.2.1]/11 | No | No | Zero overhead (but UB) | Non-portable |
-| `memcpy` | **Well-defined** [N4950 S6.9]/2 | No (C++23 may add) | Yes | Zero overhead at `-O2` | All platforms |
-| `std::bit_cast` (C++20) | **Well-defined** [N4950 S20.15.5] | Yes | Yes | Zero overhead | All C++20 platforms |
-| Union member read | **Well-defined** [N4950 S6.9.2.1]/11 | No | Yes (if union is aligned) | Zero overhead | All C++ compilers |
-| Union + pointer cast outside union | **UB** | No | No | Zero overhead | Non-portable |
-| `std::aligned_storage` + placement new + `memcpy` | **Well-defined** | No | Yes | Zero overhead | All C++11+ |
-| `alignas` + placement new + `memcpy` | **Well-defined** | No | Yes | Zero overhead | All C++11+ |
+| `reinterpret_cast` pointer punning                | **UB** [N4950 S6.9.2.1]/11           | No                 | No                        | Zero overhead (but UB) | Non-portable        |
+| `memcpy`                                          | **Well-defined** [N4950 S6.9]/2      | No (C++23 may add) | Yes                       | Zero overhead at `-O2` | All platforms       |
+| `std::bit_cast` (C++20)                           | **Well-defined** [N4950 S20.15.5]    | Yes                | Yes                       | Zero overhead          | All C++20 platforms |
+| Union member read                                 | **Well-defined** [N4950 S6.9.2.1]/11 | No                 | Yes (if union is aligned) | Zero overhead          | All C++ compilers   |
+| Union + pointer cast outside union                | **UB**                               | No                 | No                        | Zero overhead          | Non-portable        |
+| `std::aligned_storage` + placement new + `memcpy` | **Well-defined**                     | No                 | Yes                       | Zero overhead          | All C++11+          |
+| `alignas` + placement new + `memcpy`              | **Well-defined**                     | No                 | Yes                       | Zero overhead          | All C++11+          |
 
 ### Decision Matrix: Which Method to Use
 
-| Requirement | Technique | `constexpr` | Portability | Performance |
+| Requirement                | Technique                 | `constexpr` | Portability             | Performance                |
 | :------------------------- | :------------------------ | :---------- | :---------------------- | :------------------------- |
-| Compile-time punning | `std::bit_cast` | Yes | All conforming C++20 | Zero overhead |
-| Runtime punning (C++20+) | `std::bit_cast` | Yes | All conforming C++20 | Zero overhead |
-| Runtime punning (C++14/17) | `std::memcpy` | No | All C++ implementations | Zero overhead at `-O2` |
-| Legacy C++ code | `union` member read | No | All C++ compilers | Zero overhead |
-| Type-erased buffer | `alignas` + placement new | No | All C++11+ | Zero overhead |
-| I/O boundary parsing | `memcpy` into struct | No | All | Correct alignment handling |
-| Endianness-aware parsing | Explicit byte extraction | Possible | All | Zero overhead |
+| Compile-time punning       | `std::bit_cast`           | Yes         | All conforming C++20    | Zero overhead              |
+| Runtime punning (C++20+)   | `std::bit_cast`           | Yes         | All conforming C++20    | Zero overhead              |
+| Runtime punning (C++14/17) | `std::memcpy`             | No          | All C++ implementations | Zero overhead at `-O2`     |
+| Legacy C++ code            | `union` member read       | No          | All C++ compilers       | Zero overhead              |
+| Type-erased buffer         | `alignas` + placement new | No          | All C++11+              | Zero overhead              |
+| I/O boundary parsing       | `memcpy` into struct      | No          | All                     | Correct alignment handling |
+| Endianness-aware parsing   | Explicit byte extraction  | Possible    | All                     | Zero overhead              |
 
 ## 9. Common Pitfalls
 
@@ -734,21 +738,21 @@ union Bad {
 ```
 
 This is well-formed but dangerous. Writing to `s` then reading from `i` is UB because `std::string`
-Is not copyable. The union-based punning exception only applies to copyable
-Types where the value representations can be meaningfully reinterpreted.
+Is not copyable. The union-based punning exception only applies to copyable Types where the value
+representations can be meaningfully reinterpreted.
 
 ### Pitfall 3: Assuming `char*` Aliasing Applies to `signed char*`
 
-Only `char``unsigned char`And `std::byte` have the universal aliasing exemption. `signed char`
-Is listed in the Standard, but historically some compilers only exempted `unsigned char`. In C++23,
-All three are explicitly listed. For maximum portability on pre-C++23 compilers, prefer
-`unsigned char` or `std::byte`.
+Only `char``unsigned char`And `std::byte` have the universal aliasing exemption. `signed char` Is
+listed in the Standard, but historically some compilers only exempted `unsigned char`. In C++23, All
+three are explicitly listed. For maximum portability on pre-C++23 compilers, prefer `unsigned char`
+or `std::byte`.
 
 ### Pitfall 4: Endianness in Cross-Platform Punning
 
 `std::bit_cast` and `memcpy` preserve the **byte order** of the source. If you pun a `float` to
-`uint32_t`The result depends on the target platform's endianness. For portable wire formats,
-Always use explicit byte extraction:
+`uint32_t`The result depends on the target platform's endianness. For portable wire formats, Always
+use explicit byte extraction:
 
 ```cpp
 uint32_t to_big_endian_uint32(uint32_t native) {
@@ -786,10 +790,9 @@ std::memcpy(&i, &f, sizeof(f));  // Only copies 4 bytes into an 8-byte variable
 
 ### Pitfall 6: Type Punning and `constexpr`
 
-Prior to C++20, `memcpy` is not `constexpr`So type punning cannot be done at compile time. In
-C++20, `std::bit_cast` is `constexpr`And `memcpy` is conditionally `constexpr` for 
-Copyable types. If you need compile-time punning in C++17, your options are limited to manual bit
-Manipulation:
+Prior to C++20, `memcpy` is not `constexpr`So type punning cannot be done at compile time. In C++20,
+`std::bit_cast` is `constexpr`And `memcpy` is conditionally `constexpr` for Copyable types. If you
+need compile-time punning in C++17, your options are limited to manual bit Manipulation:
 
 ```cpp
 #include <cstdint>

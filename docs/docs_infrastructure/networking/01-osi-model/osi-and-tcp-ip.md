@@ -1,7 +1,9 @@
 ---
 id: osi-and-tcp-ip
 title: OSI and TCP/IP Models
-description: "OSI and TCP/IP Models — Why Reference Models Matter for Systems Engineers; The End-to-End Principle; The OSI 7-Layer Model; Layer 1: Physical."
+description:
+  'OSI and TCP/IP Models — Why Reference Models Matter for Systems Engineers; The End-to-End
+  Principle; The OSI 7-Layer Model; Layer 1: Physical.'
 slug: osi-and-tcp-ip
 sidebar_position: 2
 tags:
@@ -9,6 +11,7 @@ tags:
 categories:
   - Networking
 ---
+
 ## Overview
 
 Network reference models provide a structured vocabulary for discussing protocol behavior. They are
@@ -24,18 +27,18 @@ Describes how the Internet works. Understanding both, and the gaps between them,
 Reference models are not academic exercises. They provide:
 
 1. **A common vocabulary.** When you say "this is a layer-3 problem," every engineer understands
- that you are talking about IP routing, not application logic. This precision accelerates
- troubleshooting.
+   that you are talking about IP routing, not application logic. This precision accelerates
+   troubleshooting.
 2. **A troubleshooting framework.** The layered approach provides a systematic methodology: verify
- physical connectivity first, then link-layer, then network-layer, and so on. This prevents wasted
- time investigating application code when the cable is unplugged.
+   physical connectivity first, then link-layer, then network-layer, and so on. This prevents wasted
+   time investigating application code when the cable is unplugged.
 3. **An abstraction boundary.** The transport layer abstracts away the details of IP routing and
- Ethernet framing. Application developers write to the socket API without knowing whether the
- underlying link is Ethernet, Wi-Fi, or fiber. This is what allows the Internet to work over
- vastly different physical media.
+   Ethernet framing. Application developers write to the socket API without knowing whether the
+   underlying link is Ethernet, Wi-Fi, or fiber. This is what allows the Internet to work over
+   vastly different physical media.
 4. **A mental model for protocol design.** When designing a new protocol, the layered model helps
- you decide where each function belongs. Should error recovery go in the transport layer (TCP) or
- the application layer (HTTP retries)? The model provides a framework for that decision.
+   you decide where each function belongs. Should error recovery go in the transport layer (TCP) or
+   the application layer (HTTP retries)? The model provides a framework for that decision.
 
 ### The End-to-End Principle
 
@@ -56,17 +59,17 @@ This principle explains many design decisions:
 - Why IP does not encrypt data (TLS does that)
 - Why IP does not reorder packets (TCP does that)
 - Why middleboxes (NAT, firewalls, proxies) that modify traffic in transit are controversial -- they
- violate the end-to-end principle
+  violate the end-to-end principle
 
 The end-to-end principle is not absolute. Some functions are more efficiently implemented in the
 Network than at the endpoints:
 
 - **Congestion control** benefits from network-level signals (ECN, packet loss) even though the
- endpoints make the decisions.
+  endpoints make the decisions.
 - **Multicast** is impossible without network support -- the endpoints cannot duplicate packets to
- multiple recipients.
+  multiple recipients.
 - **QoS (Quality of Service)** requires network devices to prioritize traffic based on DSCP markings
- or other criteria.
+  or other criteria.
 
 The tension between the end-to-end principle and the desire for network-level intelligence is one of
 The central debates in networking. NAT, firewalls, CDNs, and SD-WAN all represent varying degrees of
@@ -115,16 +118,16 @@ Transmission medium. It is concerned with **bits on the wire** (or fiber, or air
 **Key specifications:**
 
 - **Ethernet (IEEE 802.3):** 100BASE-TX uses 4B/5B encoding over Cat5 at 125 MHz signaling rate to
- deliver 100 Mbps. 1000BASE-T uses all four pairs with PAM-5 encoding. 10GBASE-T uses PAM-16 with
- DSQ128 encoding over Cat6a at 800 MHz.
+  deliver 100 Mbps. 1000BASE-T uses all four pairs with PAM-5 encoding. 10GBASE-T uses PAM-16 with
+  DSQ128 encoding over Cat6a at 800 MHz.
 - **Fiber optics:** Single-mode fiber (SMF) supports distances up to 80+ km at 10 Gbps using 1310 nm
- or 1550 nm lasers. Multi-mode fiber (MMF) is limited to ~550 m at 10 Gbps due to modal dispersion.
- VCSELs (Vertical-Cavity Surface-Emitting Lasers) are used for MMF; Fabry-Perot and DFB lasers are
- used for SMF.
+  or 1550 nm lasers. Multi-mode fiber (MMF) is limited to ~550 m at 10 Gbps due to modal dispersion.
+  VCSELs (Vertical-Cavity Surface-Emitting Lasers) are used for MMF; Fabry-Perot and DFB lasers are
+  used for SMF.
 - **RS-232:** Legacy serial standard using +/- 12V levels, limited to ~20 kbps over ~15 m. Now
- largely replaced by USB and RS-485 in industrial applications.
+  largely replaced by USB and RS-485 in industrial applications.
 - **DSL:** Uses OFDM (Orthogonal Frequency-Division Multiplexing) to transmit data over copper
- telephone lines. VDSL2 can achieve 100 Mbps symmetric over short distances (~300 m).
+  telephone lines. VDSL2 can achieve 100 Mbps symmetric over short distances (~300 m).
 
 **PDU:** Bits
 
@@ -146,35 +149,35 @@ Responsible for **framing**, MAC addressing, and error detection on the local li
 **Sublayers (IEEE 802):**
 
 - **LLC (Logical Link Control):** 802.2 -- provides an interface to the network layer, handles
- multiplexing of protocols (EtherType). The LLC header is 3 bytes: 1 byte DSAP (Destination Service
- Access Point), 1 byte SSAP (Source Service Access Point), 1 byte Control field.
+  multiplexing of protocols (EtherType). The LLC header is 3 bytes: 1 byte DSAP (Destination Service
+  Access Point), 1 byte SSAP (Source Service Access Point), 1 byte Control field.
 - **MAC (Media Access Control):** specific to the physical medium (802.3 for Ethernet, 802.11 for
- Wi-Fi). Defines how devices access the shared medium and how frames are formatted.
+  Wi-Fi). Defines how devices access the shared medium and how frames are formatted.
 
 **Key protocols:**
 
 - **Ethernet (IEEE 802.3):** Dominant wired LAN protocol. Frame format includes 8-byte preamble (7
- bytes sync + 1 byte SFD), 6-byte destination MAC, 6-byte source MAC, 2-byte EtherType (or length
- in 802.3 frames), payload (46-1500 bytes), 4-byte FCS (CRC-32). Maximum frame size is 1518 bytes
- (1522 with 802.1Q VLAN tag, 1522 with QinQ double tagging).
+  bytes sync + 1 byte SFD), 6-byte destination MAC, 6-byte source MAC, 2-byte EtherType (or length
+  in 802.3 frames), payload (46-1500 bytes), 4-byte FCS (CRC-32). Maximum frame size is 1518 bytes
+  (1522 with 802.1Q VLAN tag, 1522 with QinQ double tagging).
 
- Ethernet addressing uses 48-bit MAC addresses, written as six pairs of hex digits (e.g.,
- `00:11:22:33:44:55`). The first three octets are the Organizationally Unique Identifier (OUI)
- assigned by IEEE to the manufacturer. The first bit of the first octet is the Unicast/Multicast
- bit (0 = unicast, 1 = multicast). The second bit is the Locally Administered bit (0 = universally
- administered, 1 = locally assigned).
+Ethernet addressing uses 48-bit MAC addresses, written as six pairs of hex digits (e.g.,
+`00:11:22:33:44:55`). The first three octets are the Organizationally Unique Identifier (OUI)
+assigned by IEEE to the manufacturer. The first bit of the first octet is the Unicast/Multicast bit
+(0 = unicast, 1 = multicast). The second bit is the Locally Administered bit (0 = universally
+administered, 1 = locally assigned).
 
 - **Wi-Fi (IEEE 802.11):** Uses CSMA/CA (Collision Avoidance) rather than CSMA/CD because wireless
- stations cannot detect collisions while transmitting (the "hidden node" problem). RTCTS/CTS
- handshake mitigates hidden nodes. 802.11ax (Wi-Fi 6) adds OFDMA, MU-MIMO, and BSS Coloring for
- improved efficiency in dense environments.
+  stations cannot detect collisions while transmitting (the "hidden node" problem). RTCTS/CTS
+  handshake mitigates hidden nodes. 802.11ax (Wi-Fi 6) adds OFDMA, MU-MIMO, and BSS Coloring for
+  improved efficiency in dense environments.
 
 - **PPP (Point-to-Point Protocol):** Used on serial links, DSL, and some VPNs. LCP (Link Control
- Protocol) establishes the link; NCP (Network Control Protocol) negotiates network-layer protocols.
- PPP over Ethernet (PPPoE) is used by many DSL ISPs to encapsulate PPP frames in Ethernet frames.
+  Protocol) establishes the link; NCP (Network Control Protocol) negotiates network-layer protocols.
+  PPP over Ethernet (PPPoE) is used by many DSL ISPs to encapsulate PPP frames in Ethernet frames.
 
 - **ARP (Address Resolution Protocol):** Maps IP addresses to MAC addresses on the local link. ARP
- operates at layer 2 but carries layer-3 information, making it a classic layer violation.
+  operates at layer 2 but carries layer-3 information, making it a classic layer violation.
 
 **PDU:** Frames
 
@@ -196,24 +199,24 @@ The layer that makes internetworking possible.
 **Key protocols:**
 
 - **IPv4 (RFC 791):** 32-bit addresses, connectionless, best-effort delivery. Header is 20-60 bytes
- (20 bytes fixed + up to 40 bytes of options). The Identification, Flags, and Fragment Offset
- fields handle fragmentation. The Protocol field identifies the upper-layer protocol (6=TCP,
- 17=UDP, 1=ICMP). The Header Checksum covers only the header (not the data), and is recomputed at
- each hop because the TTL changes.
+  (20 bytes fixed + up to 40 bytes of options). The Identification, Flags, and Fragment Offset
+  fields handle fragmentation. The Protocol field identifies the upper-layer protocol (6=TCP,
+  17=UDP, 1=ICMP). The Header Checksum covers only the header (not the data), and is recomputed at
+  each hop because the TTL changes.
 
 - **IPv6 (RFC 8200):** 128-bit addresses, simplified 40-byte fixed header, built-in support for
- extension headers (routing, fragmentation, AH, ESP, destination options). The Flow Label field
- enables routers to identify packets belonging to the same flow for QoS treatment. IPv6 requires
- the source to perform Path MTU Discovery -- routers do not fragment.
+  extension headers (routing, fragmentation, AH, ESP, destination options). The Flow Label field
+  enables routers to identify packets belonging to the same flow for QoS treatment. IPv6 requires
+  the source to perform Path MTU Discovery -- routers do not fragment.
 
 - **ICMP (RFC 792):** Used for diagnostics (ping, traceroute) and error reporting (destination
- unreachable, time exceeded, redirect, parameter problem). ICMP messages are carried in IP packets
- with Protocol=1 (IPv4) or Next Header=58 (IPv6). Not a transport protocol -- it is a companion to
- IP that provides feedback about the network layer.
+  unreachable, time exceeded, redirect, parameter problem). ICMP messages are carried in IP packets
+  with Protocol=1 (IPv4) or Next Header=58 (IPv6). Not a transport protocol -- it is a companion to
+  IP that provides feedback about the network layer.
 
 - **IPSec:** Provides authentication (AH) and encryption (ESP) at the network layer. Used in VPN
- tunnels (site-to-site, remote access) to secure all traffic between endpoints. IKE (Internet Key
- Exchange) negotiates the security association (SA) parameters.
+  tunnels (site-to-site, remote access) to secure all traffic between endpoints. IKE (Internet Key
+  Exchange) negotiates the security association (SA) parameters.
 
 **PDU:** Packets
 
@@ -227,29 +230,29 @@ Different hosts. It is the first layer where the concept of a "connection" exist
 **Responsibilities:**
 
 - Multiplexing/demultiplexing: port numbers allow multiple applications to share a single IP
- address. The kernel uses the 4-tuple (source IP, source port, destination IP, destination port) to
- demultiplex incoming packets to the correct socket.
+  address. The kernel uses the 4-tuple (source IP, source port, destination IP, destination port) to
+  demultiplex incoming packets to the correct socket.
 - Connection-oriented reliable delivery (TCP): sequencing, acknowledgment, retransmission, duplicate
- suppression, and ordered delivery.
+  suppression, and ordered delivery.
 - Connectionless datagram delivery (UDP): minimal overhead, no guarantees. Used when the application
- implements its own reliability or when reliability is not needed.
+  implements its own reliability or when reliability is not needed.
 - Flow control: preventing a fast sender from overwhelming a slow receiver. TCP uses a sliding
- window mechanism where the receiver advertises the number of bytes it is willing to accept.
+  window mechanism where the receiver advertises the number of bytes it is willing to accept.
 - Congestion control: preventing the sender from overwhelming the network. TCP uses slow start,
- congestion avoidance, fast retransmit, and fast recovery (or BBR) to adapt to network conditions.
+  congestion avoidance, fast retransmit, and fast recovery (or BBR) to adapt to network conditions.
 
 **Key protocols:**
 
 - **TCP (RFC 793):** Connection-oriented, reliable, ordered, byte-stream protocol. 20-byte minimum
- header (up to 60 bytes with options). Provides flow control (sliding window), congestion control
- (cwnd/ssthresh), and reliable delivery (sequence numbers, ACKs, retransmission). Discussed in
- detail in the TCP and UDP section.
+  header (up to 60 bytes with options). Provides flow control (sliding window), congestion control
+  (cwnd/ssthresh), and reliable delivery (sequence numbers, ACKs, retransmission). Discussed in
+  detail in the TCP and UDP section.
 - **UDP (RFC 768):** Connectionless, unreliable, datagram protocol. 8-byte header (source port,
- destination port, length, checksum). No flow control, no congestion control, no ordering. Used by
- DNS, NTP, SNMP, QUIC, WebRTC, and streaming protocols.
+  destination port, length, checksum). No flow control, no congestion control, no ordering. Used by
+  DNS, NTP, SNMP, QUIC, WebRTC, and streaming protocols.
 - **SCTP (RFC 4960):** Message-oriented, supports multi-homing (multiple IP addresses per endpoint)
- and multi-streaming (independent streams within a single association, avoiding head-of-line
- blocking). Used in telecommunications (SS7 signaling over IP) and WebRTC data channels.
+  and multi-streaming (independent streams within a single association, avoiding head-of-line
+  blocking). Used in telecommunications (SS7 signaling over IP) and WebRTC data channels.
 
 **PDU:** Segments (TCP) or datagrams (UDP)
 
@@ -263,20 +266,20 @@ Layer.
 
 - Session establishment, maintenance, and teardown
 - Synchronization: checkpoints in the data stream to allow recovery from failures. If a transfer is
- interrupted, the session layer can resume from the last checkpoint rather than starting over.
+  interrupted, the session layer can resume from the last checkpoint rather than starting over.
 - Dialog control: determining which side transmits (simplex, half-duplex, full-duplex)
 - Token management: controlling which side is allowed to transmit in half-duplex sessions
 
 **Key protocols:**
 
 - **NetBIOS:** Used in Windows networking for name resolution and session management. NetBIOS over
- TCP/IP (NBT) encapsulates NetBIOS in TCP and UDP frames. Largely superseded by DNS for name
- resolution and SMB/CIFS for file sharing.
+  TCP/IP (NBT) encapsulates NetBIOS in TCP and UDP frames. Largely superseded by DNS for name
+  resolution and SMB/CIFS for file sharing.
 - **RPC (Remote Procedure Call):** Allows a program on one machine to call a procedure on another.
- Implemented at the application layer in practice (e.g., gRPC over HTTP/2, XML-RPC over HTTP). ONC
- RPC (RFC 5531) is used by NFS.
+  Implemented at the application layer in practice (e.g., gRPC over HTTP/2, XML-RPC over HTTP). ONC
+  RPC (RFC 5531) is used by NFS.
 - **PPTP (Point-to-Point Tunneling Protocol):** VPN protocol that encapsulates PPP frames in GRE
- packets. Now considered insecure due to known cryptographic weaknesses.
+  packets. Now considered insecure due to known cryptographic weaknesses.
 - **PPT (Presentation Protocol for Teleconferencing):** Historically associated with this layer.
 
 **Reality check:** Most "session layer" functionality is implemented within application protocols or
@@ -300,19 +303,19 @@ Responsible for data representation, encoding, and encryption.
 **Historical protocols:**
 
 - **TLS/SSL:** Historically mapped to the presentation layer. In the TCP/IP model, TLS sits between
- the transport and application layers (some call this "layer 6.5"). TLS provides encryption,
- authentication, and integrity -- all presentation-layer functions.
+  the transport and application layers (some call this "layer 6.5"). TLS provides encryption,
+  authentication, and integrity -- all presentation-layer functions.
 - **MIME (Multipurpose Internet Mail Extensions):** Defines encoding for email attachments (Base64,
- quoted-printable) and content types (text/plain, application/json). Used beyond email in HTTP
- (Content-Type header) and other protocols.
+  quoted-printable) and content types (text/plain, application/json). Used beyond email in HTTP
+  (Content-Type header) and other protocols.
 - **XDR (External Data Representation):** Used in NFS and RPC for platform-independent data
- encoding. Defines a canonical representation that is the same regardless of the sender's or
- receiver's architecture (endianness, integer size, float format).
+  encoding. Defines a canonical representation that is the same regardless of the sender's or
+  receiver's architecture (endianness, integer size, float format).
 - **ASN.1 (Abstract Syntax Notation One):** Used in SNMP, LDAP, and X.509 certificates for defining
- data structures. BER (Basic Encoding Rules) and DER (Distinguished Encoding Rules) define how
- ASN.1 structures are serialized to bytes.
+  data structures. BER (Basic Encoding Rules) and DER (Distinguished Encoding Rules) define how
+  ASN.1 structures are serialized to bytes.
 - **JPEG, MPEG, GIF:** Data compression standards that the presentation layer would handle. In
- practice, these are implemented in application libraries.
+  practice, these are implemented in application libraries.
 
 **Reality check:** Like the session layer, presentation-layer functions are absorbed into
 Application protocols. JSON, Protocol Buffers, MessagePack, and CBOR handle data serialization. TLS
@@ -337,23 +340,23 @@ The services that applications use to communicate over the network.
 - **HTTP/HTTPS:** Web communication. Discussed in detail in the HTTP section.
 - **DNS:** Name resolution. Discussed in detail in the DNS section.
 - **SMTP/POP3/IMAP:** Email delivery and retrieval. SMTP (RFC 5321) sends mail between servers. POP3
- (RFC 1939) and IMAP (RFC 3501) retrieve mail from servers.
+  (RFC 1939) and IMAP (RFC 3501) retrieve mail from servers.
 - **SSH (RFC 4251):** Secure remote shell access and tunneling. Provides encrypted terminal
- sessions, file transfer (SCP/SFTP), and port forwarding (local, remote, dynamic/SOCKS proxy).
+  sessions, file transfer (SCP/SFTP), and port forwarding (local, remote, dynamic/SOCKS proxy).
 - **FTP (RFC 959):** File transfer (legacy; largely replaced by SFTP and HTTP). Uses separate
- control (port 21) and data connections, which complicates NAT traversal.
+  control (port 21) and data connections, which complicates NAT traversal.
 - **SNMP (RFC 3416):** Network device monitoring and management. Uses UDP port 161 for queries and
- traps, UDP port 162 for trap notifications. SNMPv3 adds authentication and encryption.
+  traps, UDP port 162 for trap notifications. SNMPv3 adds authentication and encryption.
 - **NTP (RFC 5905):** Network time synchronization. Uses UDP port 123. Stratum levels indicate
- distance from the reference clock (Stratum 1 = directly connected to a reference clock like GPS or
- atomic clock). Precision is 1-10 ms over the Internet, sub-millisecond on LANs.
+  distance from the reference clock (Stratum 1 = directly connected to a reference clock like GPS or
+  atomic clock). Precision is 1-10 ms over the Internet, sub-millisecond on LANs.
 - **LDAP (RFC 4511):** Directory service protocol used for authentication, authorization, and
- directory lookups. Microsoft Active Directory is based on LDAP.
+  directory lookups. Microsoft Active Directory is based on LDAP.
 - **SIP (RFC 3261):** Session Initiation Protocol for VoIP and video conferencing. Establishes,
- modifies, and terminates multimedia sessions. Used with SDP (Session Description Protocol) to
- negotiate media parameters.
+  modifies, and terminates multimedia sessions. Used with SDP (Session Description Protocol) to
+  negotiate media parameters.
 - **Syslog (RFC 5424):** Event logging protocol. Uses UDP port 514 by default. TLS-encrypted syslog
- (RFC 8446) uses TCP port 6514.
+  (RFC 8446) uses TCP port 6514.
 
 **PDU:** Data (application-specific)
 
@@ -388,8 +391,8 @@ Between presentation and session concerns.
 
 This is why TLS is awkward to place in the OSI model -- it provides encryption (presentation) and
 Session management (session) but runs over TCP (transport) and under HTTP (application). In the
-TCP/IP model, TLS is part of the application layer, or more precisely, an application-layer
-Library that applications use.
+TCP/IP model, TLS is part of the application layer, or more precisely, an application-layer Library
+that applications use.
 
 The TCP/IP application layer also includes the socket API, which is the de facto standard interface
 For network programming. The socket API was developed at UC Berkeley in the early 1980s as part of
@@ -424,15 +427,15 @@ Frames to the next hop.
 
 ## OSI vs TCP/IP Comparison
 
-| OSI Layer | OSI Name | TCP/IP Layer | Protocols |
+| OSI Layer | OSI Name     | TCP/IP Layer | Protocols                      |
 | --------- | ------------ | ------------ | ------------------------------ |
-| 7 | Application | Application | HTTP, DNS, SSH, FTP, SMTP |
-| 6 | Presentation | Application | TLS (mapped here in practice) |
-| 5 | Session | Application | NetBIOS, RPC (mostly absorbed) |
-| 4 | Transport | Transport | TCP, UDP, SCTP |
-| 3 | Network | Internet | IPv4, IPv6, ICMP |
-| 2 | Data Link | Link | Ethernet, Wi-Fi, PPP |
-| 1 | Physical | Link | Fiber, copper, radio |
+| 7         | Application  | Application  | HTTP, DNS, SSH, FTP, SMTP      |
+| 6         | Presentation | Application  | TLS (mapped here in practice)  |
+| 5         | Session      | Application  | NetBIOS, RPC (mostly absorbed) |
+| 4         | Transport    | Transport    | TCP, UDP, SCTP                 |
+| 3         | Network      | Internet     | IPv4, IPv6, ICMP               |
+| 2         | Data Link    | Link         | Ethernet, Wi-Fi, PPP           |
+| 1         | Physical     | Link         | Fiber, copper, radio           |
 
 ### Why TCP/IP Won
 
@@ -443,22 +446,22 @@ Mature enough for deployment, TCP/IP had already been running on the ARPANET for
 Several concrete reasons:
 
 1. **Working code over academic design.** TCP/IP was implemented and tested on real networks
- starting in the 1970s. OSI protocols existed primarily on paper until the late 1980s and early
- 1990s. By then, TCP/IP had been battle-tested by thousands of users and refined over years of
- operational experience.
+   starting in the 1970s. OSI protocols existed primarily on paper until the late 1980s and early
+   1990s. By then, TCP/IP had been battle-tested by thousands of users and refined over years of
+   operational experience.
 2. **Simplicity.** The TCP/IP model has 4 layers. The IP header is 20 bytes minimum. The OSI network
- layer protocol (CLNP) had variable-length addresses (up to 20 bytes) and a more complex header
- (up to 254 bytes). Simpler protocols are easier to implement, debug, and optimize.
+   layer protocol (CLNP) had variable-length addresses (up to 20 bytes) and a more complex header
+   (up to 254 bytes). Simpler protocols are easier to implement, debug, and optimize.
 3. **Free and open.** TCP/IP implementations were freely available (especially the BSD
- implementation released with 4.2BSD in 1983). OSI protocols required commercial implementations
- that were expensive and varied between vendors, creating interoperability problems.
+   implementation released with 4.2BSD in 1983). OSI protocols required commercial implementations
+   that were expensive and varied between vendors, creating interoperability problems.
 4. **Layer 3 addressing.** IPv4 used 32-bit addresses that could be hierarchically allocated to
- support routing at scale. OSI used variable-length NSAP addresses (up to 20 bytes) that were more
- flexible but harder to route at scale due to the variable-length prefix matching requirement.
+   support routing at scale. OSI used variable-length NSAP addresses (up to 20 bytes) that were more
+   flexible but harder to route at scale due to the variable-length prefix matching requirement.
 5. **Market momentum.** By the time the OSI protocols were ready, the University of California,
- Berkeley had embedded TCP/IP in BSD Unix, which was widely distributed and became the basis for
- most commercial Unix implementations. Sun Microsystems, DEC, and other vendors adopted TCP/IP,
- creating a large installed base that made switching to OSI impractical.
+   Berkeley had embedded TCP/IP in BSD Unix, which was widely distributed and became the basis for
+   most commercial Unix implementations. Sun Microsystems, DEC, and other vendors adopted TCP/IP,
+   creating a large installed base that made switching to OSI impractical.
 
 RFC 874 ("A Critique of X.25") and RFC 895 ("A Standard for the Transmission of IP Datagrams over
 Ethernet Networks") capture the engineering pragmatism that drove TCP/IP adoption.
@@ -467,13 +470,13 @@ Ethernet Networks") capture the engineering pragmatism that drove TCP/IP adoptio
 
 Many textbooks and engineers use a hybrid 5-layer model that combines the best of both:
 
-| Layer | Name | Description |
+| Layer | Name        | Description          |
 | ----- | ----------- | -------------------- |
-| 5 | Application | HTTP, DNS, SSH, TLS |
-| 4 | Transport | TCP, UDP |
-| 3 | Network | IPv4, IPv6, ICMP |
-| 2 | Data Link | Ethernet, Wi-Fi, ARP |
-| 1 | Physical | Fiber, copper, radio |
+| 5     | Application | HTTP, DNS, SSH, TLS  |
+| 4     | Transport   | TCP, UDP             |
+| 3     | Network     | IPv4, IPv6, ICMP     |
+| 2     | Data Link   | Ethernet, Wi-Fi, ARP |
+| 1     | Physical    | Fiber, copper, radio |
 
 This model is a practical compromise: it keeps the physical and data link layers separate (which is
 Useful for network engineering) while collapsing the upper layers (which is how real protocols
@@ -513,13 +516,13 @@ graph LR
 
 Each layer names its data unit differently:
 
-| Layer | PDU Name | Size |
+| Layer       | PDU Name                       | Size                           |
 | ----------- | ------------------------------ | ------------------------------ |
-| Physical | Bits | Individual signal transitions |
-| Data Link | Frame | Up to 1518 bytes (Ethernet) |
-| Network | Packet | Varies; limited by MTU |
-| Transport | Segment (TCP) / Datagram (UDP) | Up to 65,535 bytes (UDP limit) |
-| Application | Data / Message | Application-defined |
+| Physical    | Bits                           | Individual signal transitions  |
+| Data Link   | Frame                          | Up to 1518 bytes (Ethernet)    |
+| Network     | Packet                         | Varies; limited by MTU         |
+| Transport   | Segment (TCP) / Datagram (UDP) | Up to 65,535 bytes (UDP limit) |
+| Application | Data / Message                 | Application-defined            |
 
 ### Concrete Example: HTTP GET over Ethernet
 
@@ -548,13 +551,13 @@ The **MSS** (Maximum Segment Size) for a standard Ethernet link with no options.
 Understanding protocol overhead is critical for capacity planning and performance analysis. The
 Following table shows the overhead for common encapsulations:
 
-| Encapsulation | Header Overhead | Efficiency (1460-byte payload) |
+| Encapsulation                            | Header Overhead | Efficiency (1460-byte payload) |
 | ---------------------------------------- | --------------- | ------------------------------ |
-| Ethernet + IPv4 + TCP | 54 bytes | 96.4% |
-| Ethernet + 802.1Q + IPv4 + TCP | 58 bytes | 96.2% |
-| Ethernet + IPv4 + TCP + TLS | 89 bytes | 94.3% |
-| Ethernet + GRE + IPv4 + TCP | 78 bytes | 94.9% |
-| Ethernet + VXLAN + Ethernet + IPv4 + TCP | 90 bytes | 94.2% |
+| Ethernet + IPv4 + TCP                    | 54 bytes        | 96.4%                          |
+| Ethernet + 802.1Q + IPv4 + TCP           | 58 bytes        | 96.2%                          |
+| Ethernet + IPv4 + TCP + TLS              | 89 bytes        | 94.3%                          |
+| Ethernet + GRE + IPv4 + TCP              | 78 bytes        | 94.9%                          |
+| Ethernet + VXLAN + Ethernet + IPv4 + TCP | 90 bytes        | 94.2%                          |
 
 For small packets (e.g., VoIP with 20-byte payload), the overhead is proportionally much higher. A
 20-byte VoIP payload in an Ethernet + IPv4 + UDP frame uses 20 + 20 + 8 + 14 + 4 = 66 bytes of
@@ -621,17 +624,17 @@ Protocol) to authenticate devices before they are allowed on the network.
 Layer violations are not mistakes. They occur because:
 
 1. **Performance:** Processing at a lower layer can be faster (e.g., MPLS label switching vs full IP
- routing table lookup). Hardware implementations at lower layers are faster than software
- implementations at higher layers.
+   routing table lookup). Hardware implementations at lower layers are faster than software
+   implementations at higher layers.
 2. **Firewall traversal:** Protocols embed their signaling inside other protocols to bypass
- middleboxes (e.g., SIP over UDP, FTP data connections, HTTP CONNECT tunneling). This is a
- consequence of middleboxes violating the end-to-end principle.
+   middleboxes (e.g., SIP over UDP, FTP data connections, HTTP CONNECT tunneling). This is a
+   consequence of middleboxes violating the end-to-end principle.
 3. **Deployment reality:** NAT, firewalls, and load balancers all operate between layers and modify
- traffic in transit. Protocols must work in a world where middleboxes exist, which means adapting
- to their behavior.
+   traffic in transit. Protocols must work in a world where middleboxes exist, which means adapting
+   to their behavior.
 4. **Historical evolution:** The Internet was not designed top-down from a model. Protocols evolved
- to solve real problems, sometimes spanning multiple layers. DNS predates HTTP. TLS was designed
- as an add-on to TCP, not as a native layer.
+   to solve real problems, sometimes spanning multiple layers. DNS predates HTTP. TLS was designed
+   as an add-on to TCP, not as a native layer.
 
 ## Data Flow Through the Stack
 
@@ -641,49 +644,49 @@ When a user clicks a link in their browser, data flows through the stack as foll
 
 1. **Application layer:** Browser constructs an HTTP GET request (application-level data)
 2. **Transport layer:** TCP segments the request, adds sequence numbers, and establishes a
- connection via the three-way handshake (SYN, SYN-ACK, ACK)
+   connection via the three-way handshake (SYN, SYN-ACK, ACK)
 3. **Internet layer:** IP encapsulates the TCP segment in a packet, adds source and destination IP
- addresses, decrements TTL, and routes the packet based on the routing table
+   addresses, decrements TTL, and routes the packet based on the routing table
 4. **Link layer:** Ethernet adds source and destination MAC addresses (resolved via ARP), adds
- EtherType (0x0800 for IPv4), calculates FCS, and transmits the frame
+   EtherType (0x0800 for IPv4), calculates FCS, and transmits the frame
 
 **Network transit:**
 
 5. Routers at each hop strip the Ethernet header, examine the IP destination, consult their routing
- table, and re-encapsulate with new Ethernet headers for the next hop
+   table, and re-encapsulate with new Ethernet headers for the next hop
 6. The IP source and destination addresses remain unchanged throughout transit; only the link-layer
- addresses change at each hop
+   addresses change at each hop
 7. The TTL is decremented by 1 at each router. If TTL reaches 0, the router sends an ICMP Time
- Exceeded message back to the source
+   Exceeded message back to the source
 
 **Receiving side:**
 
 8. **Link layer:** NIC receives the frame, verifies the FCS, strips the Ethernet header, and passes
- the IP packet to the network layer
+   the IP packet to the network layer
 9. **Internet layer:** IP verifies the header checksum, checks the destination address matches a
- local address, strips the IP header, and passes the TCP segment to the transport layer
+   local address, strips the IP header, and passes the TCP segment to the transport layer
 10. **Transport layer:** TCP reassembles segments in order, acknowledges receipt, delivers data to
- the application socket identified by the destination port
+    the application socket identified by the destination port
 11. **Application layer:** Web server receives the HTTP request on the listening socket and
- constructs a response (200 OK with HTML content)
+    constructs a response (200 OK with HTML content)
 
 ## Practical Implications
 
 Understanding the protocol stack matters for troubleshooting because symptoms at one layer often
 Have root causes at another:
 
-| Symptom | Likely Layer | Diagnostic Tool |
-| ------------------------------ | ------------- | --------------------------- |
-| No link light | Physical | `ethtool`Cable tester |
-| Wrong VLAN tag | Data Link | `tcpdump -e`Switch CLI |
-| Packet loss on specific routes | Network | `traceroute``mtr` |
-| Connection refused | Transport | `ss -tlnp``nc -zv` |
-| 502 Bad Gateway | Application | `curl -v`Application logs |
-| High latency on first request | Transport | TCP slow start, keep-alive |
-| Intermittent connectivity | Physical/Link | Cable, duplex mismatch |
-| ARP flux / MAC flapping | Data Link | `arp -a`Switch logs |
-| MTU black hole | Network | `ping -M do -s 1472`ICMP |
-| TLS handshake failure | Application | `openssl s_client`Cipher |
+| Symptom                        | Likely Layer  | Diagnostic Tool            |
+| ------------------------------ | ------------- | -------------------------- |
+| No link light                  | Physical      | `ethtool`Cable tester      |
+| Wrong VLAN tag                 | Data Link     | `tcpdump -e`Switch CLI     |
+| Packet loss on specific routes | Network       | `traceroute``mtr`          |
+| Connection refused             | Transport     | `ss -tlnp``nc -zv`         |
+| 502 Bad Gateway                | Application   | `curl -v`Application logs  |
+| High latency on first request  | Transport     | TCP slow start, keep-alive |
+| Intermittent connectivity      | Physical/Link | Cable, duplex mismatch     |
+| ARP flux / MAC flapping        | Data Link     | `arp -a`Switch logs        |
+| MTU black hole                 | Network       | `ping -M do -s 1472`ICMP   |
+| TLS handshake failure          | Application   | `openssl s_client`Cipher   |
 
 :::tip
 
@@ -697,43 +700,42 @@ Misdiagnosis.
 ## Common Pitfalls
 
 1. **Treating the OSI model as prescriptive.** The OSI model describes, it does not prescribe. No
- protocol stack in production implements all seven layers distinctly. Arguments about "which layer
- is X" are unproductive. The model is a tool for understanding, not a standard for
- implementation.
+   protocol stack in production implements all seven layers distinctly. Arguments about "which layer
+   is X" are unproductive. The model is a tool for understanding, not a standard for implementation.
 
 2. **Confusing logical and physical topology.** A layer-3 IP network can span multiple layer-2
- broadcast domains connected by routers. A layer-2 VLAN can span multiple physical switches. The
- topology at each layer is independent. Understanding this distinction is essential for designing
- and troubleshooting networks.
+   broadcast domains connected by routers. A layer-2 VLAN can span multiple physical switches. The
+   topology at each layer is independent. Understanding this distinction is essential for designing
+   and troubleshooting networks.
 
 3. **Assuming MTU is always 1500 bytes.** Jumbo frames use 9000 bytes. VPN overhead (IPSec, GRE)
- reduces effective MTU. Path MTU Discovery can fail silently if ICMP is filtered, causing "black
- hole" connections where TCP connections hang after the initial handshake. Cloud environments
- often use 1450-byte MTU for overlay networks (VXLAN adds 50 bytes).
+   reduces effective MTU. Path MTU Discovery can fail silently if ICMP is filtered, causing "black
+   hole" connections where TCP connections hang after the initial handshake. Cloud environments
+   often use 1450-byte MTU for overlay networks (VXLAN adds 50 bytes).
 
 4. **Ignoring the link layer when debugging network problems.** ARP failures, MAC address flapping,
- and spanning-tree issues cause symptoms that look like IP routing problems. Always check `arp -a`
- and switch MAC tables when troubleshooting connectivity. A common mistake is to assume that
- because `ip addr show` displays the correct IP address, the network is configured correctly --
- the link layer may be down or misconfigured.
+   and spanning-tree issues cause symptoms that look like IP routing problems. Always check `arp -a`
+   and switch MAC tables when troubleshooting connectivity. A common mistake is to assume that
+   because `ip addr show` displays the correct IP address, the network is configured correctly --
+   the link layer may be down or misconfigured.
 
 5. **Believing all traffic follows the protocol stack.** Tunnels (GRE, VXLAN, IPsec), overlays
- (SD-WAN), and middleboxes (proxies, load balancers) all encapsulate traffic in ways that break
- simple layer models. A single Ethernet frame may contain: Ethernet + IP + GRE + IP + TCP + HTTP.
- Use `tcpdump -e` to see encapsulation depth.
+   (SD-WAN), and middleboxes (proxies, load balancers) all encapsulate traffic in ways that break
+   simple layer models. A single Ethernet frame may contain: Ethernet + IP + GRE + IP + TCP + HTTP.
+   Use `tcpdump -e` to see encapsulation depth.
 
 6. **Over-reliance on the OSI model for firewall rules.** "Layer 3 firewalls" and "layer 7
- firewalls" are marketing terms. A stateful firewall that tracks TCP connections is not strictly a
- layer-4 device -- it understands layer-4 state to make layer-3 forwarding decisions.
- Application-layer firewalls (WAFs) inspect layer-7 content but still operate on layer-3/4
- traffic. Classifying firewalls by "layer" is imprecise and can lead to incorrect assumptions
- about what traffic is filtered.
+   firewalls" are marketing terms. A stateful firewall that tracks TCP connections is not strictly a
+   layer-4 device -- it understands layer-4 state to make layer-3 forwarding decisions.
+   Application-layer firewalls (WAFs) inspect layer-7 content but still operate on layer-3/4
+   traffic. Classifying firewalls by "layer" is imprecise and can lead to incorrect assumptions
+   about what traffic is filtered.
 
 7. **Forgetting that each layer has its own addressing.** Physical layer: no addressing (shared
- medium). Data link: MAC addresses (48-bit, flat). Network: IP addresses (32-bit IPv4, 128-bit
- IPv6, hierarchical). Transport: port numbers (16-bit, local scope). Application: URIs, email
- addresses, etc. Understanding which addressing scheme is relevant at each layer is fundamental to
- troubleshooting.
+   medium). Data link: MAC addresses (48-bit, flat). Network: IP addresses (32-bit IPv4, 128-bit
+   IPv6, hierarchical). Transport: port numbers (16-bit, local scope). Application: URIs, email
+   addresses, etc. Understanding which addressing scheme is relevant at each layer is fundamental to
+   troubleshooting.
 
 ## Network Topologies and the OSI Model
 
@@ -751,9 +753,9 @@ Into multiple broadcast domains. Routers separate broadcast domains entirely.
 
 | Device | Collision Domains | Broadcast Domains |
 | ------ | ----------------- | ----------------- |
-| Hub | 1 (shared) | 1 (shared) |
-| Switch | 1 per port | 1 per VLAN |
-| Router | 1 per port | 1 per port |
+| Hub    | 1 (shared)        | 1 (shared)        |
+| Switch | 1 per port        | 1 per VLAN        |
+| Router | 1 per port        | 1 per port        |
 
 ### VLANs and Layer 2 Segmentation
 
@@ -775,8 +777,8 @@ The 802.1Q tag contains:
 - **DEI (Drop Eligible Indicator):** 1 bit for congestion marking
 - **VID (VLAN Identifier):** 12 bits, supporting 4,094 VLANs (0 and 4095 are reserved)
 
-VLANs are a layer-2 concept that has layer-3 implications: each VLAN corresponds to a
-Different IP subnet, and inter-VLAN routing requires a layer-3 device (router or layer-3 switch).
+VLANs are a layer-2 concept that has layer-3 implications: each VLAN corresponds to a Different IP
+subnet, and inter-VLAN routing requires a layer-3 device (router or layer-3 switch).
 
 ### Spanning Tree Protocol (STP)
 

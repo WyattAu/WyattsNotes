@@ -1,6 +1,8 @@
 ---
 title: Capacitance
-description: "A-Level Physics notes on Capacitance: 2. Parallel Plate Capacitor; Derivation of $C = \varepsilon_0 A/d$; 3. Energy Stored in a Capacitor."
+description:
+  "A-Level Physics notes on Capacitance: 2. Parallel Plate Capacitor; Derivation of $C =
+  \varepsilon_0 A/d$; 3. Energy Stored in a Capacitor."
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Physics
@@ -9,11 +11,10 @@ categories:
   - Physics
 slug: capacitance
 ---
+
 ## Capacitance
 
-:::info
-Board Coverage AQA Paper 1 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2
-:::
+:::info Board Coverage AQA Paper 1 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2 :::
 
 <PhetSimulation simulationId="capacitor-lab-basics" title="Capacitor Lab: Basics" />
 
@@ -115,8 +116,7 @@ $$\frac◆LB◆1◆RB◆◆LB◆C_{\mathrm{total}}◆RB◆ = \frac{1}{C_1} + \fr
 $V = V_1 + V_2 + \cdots = Q/C_1 + Q/C_2 + \cdots = Q(1/C_1 + 1/C_2 + \cdots)$. Since
 $V = Q/C_{\mathrm{total}}$: $1/C_{\mathrm{total}} = 1/C_1 + 1/C_2 + \cdots$ $\square$
 
-:::warning
-Common Pitfall Note the "mirror" relationship with resistors: capacitors in parallel add
+:::warning Common Pitfall Note the "mirror" relationship with resistors: capacitors in parallel add
 (like resistors in series), and capacitors in series add reciprocally (like resistors in parallel).
 :::
 
@@ -203,23 +203,20 @@ For discharging: $\frac{Q}{Q_0} = e^{-1} = 0.368$So **36.8%** remains (63.2% is 
 
 **Other useful values:**
 
-| Time | Charged | Discharged remaining |
+| Time    | Charged | Discharged remaining |
 | ------- | ------- | -------------------- |
-| $1\tau$ | 63.2% | 36.8% |
-| $2\tau$ | 86.5% | 13.5% |
-| $3\tau$ | 95.0% | 5.0% |
-| $5\tau$ | 99.3% | 0.7% |
+| $1\tau$ | 63.2%   | 36.8%                |
+| $2\tau$ | 86.5%   | 13.5%                |
+| $3\tau$ | 95.0%   | 5.0%                 |
+| $5\tau$ | 99.3%   | 0.7%                 |
 
 **Intuition.** The time constant is the "characteristic time" of the circuit. A large resistance
 Limits the charging current, and a large capacitance requires more charge — both increase the time
 Needed. After $5\tau$The capacitor is effectively fully charged or discharged.
 
-:::tip
-Tip
-At which the curve reaches 63.2% of its final value. For discharging, find the time at which the
-Curve drops to 36.8% of its initial value. Alternatively, find the time at which the tangent at
-$t = 0$ intersects the final value line.
-:::
+:::tip Tip At which the curve reaches 63.2% of its final value. For discharging, find the time at
+which the Curve drops to 36.8% of its initial value. Alternatively, find the time at which the
+tangent at $t = 0$ intersects the final value line. :::
 
 ## 8. Dielectrics in Detail
 
@@ -230,13 +227,13 @@ External electric field $E_0$ is applied (by charging the plates), the molecules
 Dielectric respond in one of two ways depending on the material:
 
 1. **Polar dielectrics** (e.g. Water, HCl): Molecules possess a permanent electric dipole moment. In
- the absence of a field, these dipoles are randomly oriented. When $E_0$ is applied, the dipoles
- tend to align with the field. Thermal agitation prevents perfect alignment, but a net
- polarisation emerges.
+   the absence of a field, these dipoles are randomly oriented. When $E_0$ is applied, the dipoles
+   tend to align with the field. Thermal agitation prevents perfect alignment, but a net
+   polarisation emerges.
 
 2. **Non-polar dielectrics** (e.g. Polystyrene, glass): Molecules have no permanent dipole moment.
- The applied field distorts the electron cloud relative to the nucleus, **inducing** a dipole
- moment proportional to the applied field.
+   The applied field distorts the electron cloud relative to the nucleus, **inducing** a dipole
+   moment proportional to the applied field.
 
 In both cases, the net effect is the same: the dielectric material becomes **polarised** — the
 Positive and negative charges within the molecules shift slightly in opposite directions along the
@@ -251,7 +248,7 @@ The polarisation creates a layer of **bound charge** on the surfaces of the diel
 The plates:
 
 - The surface of the dielectric facing the $+Q$ plate acquires a **negative** bound charge density
- $-\sigma_b$.
+  $-\sigma_b$.
 - The surface facing the $-Q$ plate acquires a **positive** bound charge density $+\sigma_b$.
 
 These bound charges produce their own electric field $E_b$ that **opposes** the applied field $E_0$:
@@ -331,23 +328,21 @@ $$V_{\mathrm{max}} = E_{\mathrm{breakdown}} \cdot d$$
 
 ### Common Dielectrics
 
-| Material | $\varepsilon_r$ | Dielectric Strength (kV/mm) |
+| Material        | $\varepsilon_r$ | Dielectric Strength (kV/mm) |
 | --------------- | --------------- | --------------------------- |
-| Vacuum | 1.00 | $\infty$ |
-| Air (1 atm) | 1.0006 | 3.0 |
-| Paper (dry) | 2.0 -- 4.0 | 16 |
-| Polyethylene | 2.25 | 20 |
-| Polystyrene | 2.56 | 20 |
-| Glass | 5 -- 10 | 10 -- 40 |
-| Mica | 5.4 -- 8.0 | 160 |
-| Water (pure) | 80 | $\approx 0.065$ |
-| Barium titanate | 1200 -- 10000 | 3 |
+| Vacuum          | 1.00            | $\infty$                    |
+| Air (1 atm)     | 1.0006          | 3.0                         |
+| Paper (dry)     | 2.0 -- 4.0      | 16                          |
+| Polyethylene    | 2.25            | 20                          |
+| Polystyrene     | 2.56            | 20                          |
+| Glass           | 5 -- 10         | 10 -- 40                    |
+| Mica            | 5.4 -- 8.0      | 160                         |
+| Water (pure)    | 80              | $\approx 0.065$             |
+| Barium titanate | 1200 -- 10000   | 3                           |
 
-:::warning
-Common Pitfall A high $\varepsilon_r$ does not imply high dielectric strength. Water has
+:::warning Common Pitfall A high $\varepsilon_r$ does not imply high dielectric strength. Water has
 An enormous $\varepsilon_r = 80$ but a very low breakdown voltage ($\approx 65$ V/mm), so water is a
-Poor practical dielectric for high-voltage capacitors despite its high permittivity.
-:::
+Poor practical dielectric for high-voltage capacitors despite its high permittivity. :::
 
 ### Effect of Dielectric on Energy Stored
 
@@ -371,11 +366,9 @@ $$E_{\mathrm{new}} = \frac{1}{2}C_{\mathrm{new}}V^2 = \frac{1}{2}\varepsilon_r C
 The additional energy comes from the battery, which supplies extra charge
 $Q' = (\varepsilon_r - 1)CV$ to the plates.
 
-:::tip
-Exam Technique When a question asks about inserting a dielectric, always check whether the
+:::tip Exam Technique When a question asks about inserting a dielectric, always check whether the
 Capacitor is isolated or connected to a supply. This completely determines whether $Q$ or $V$ is
-Held constant, and therefore whether energy increases or decreases.
-:::
+Held constant, and therefore whether energy increases or decreases. :::
 
 ## 9. Charge Sharing Between Capacitors
 
@@ -435,11 +428,8 @@ Redistribution, a transient current flows through the connecting wires. The resi
 Electromagnetic radiation. The "missing" energy is accounted for by Joule heating and radiative
 Losses.
 
-:::warning
-Warning
-But the system loses energy to the surroundings. Never assume $E_i = E_f$ when solving
-Charge-sharing problems.
-:::
+:::warning Warning But the system loses energy to the surroundings. Never assume $E_i = E_f$ when
+solving Charge-sharing problems. :::
 
 ### Worked Example
 
@@ -449,7 +439,8 @@ Capacitor. Find the final p.d., the final charge on each capacitor, and the ener
 **Step 1: Initial charge.** $Q_1 = C_1 V_1 = 10 \times 10^{-6} \times 100 = 1.0 \times 10^{-3}$ C.
 
 **Step 2: Final p.d.**
-$V' = \frac{C_1 V_1}{C_1 + C_2} = \frac◆LB◆10 \times 100◆RB◆◆LB◆10 + 30◆RB◆ = \frac{1000}{40} = 25$ V.
+$V' = \frac{C_1 V_1}{C_1 + C_2} = \frac◆LB◆10 \times 100◆RB◆◆LB◆10 + 30◆RB◆ = \frac{1000}{40} = 25$
+V.
 
 **Step 3: Final charges.** $Q_1' = 10 \times 10^{-6} \times 25 = 250\,\mu$C.
 $Q_2' = 30 \times 10^{-6} \times 25 = 750\,\mu$C. Check: $250 + 750 = 1000\,\mu$C $= Q_1$.
@@ -513,7 +504,7 @@ $$T \approx 0.693 \cdot RC$$
 This principle is used in:
 
 - **Monostable circuits**: a single pulse of fixed duration is produced in response to a trigger
- input.
+  input.
 - **Astable circuits**: a continuous square wave output with a frequency determined by $R$ and $C$.
 
 ### Smoothing Circuits
@@ -523,7 +514,7 @@ With the load acts as a **smoothing filter**:
 
 - During the peak of the rectified waveform, the capacitor charges to the peak voltage.
 - Between peaks, the capacitor discharges through the load resistor $R_L$Maintaining the output
- voltage.
+  voltage.
 
 The **ripple voltage** is approximately:
 
@@ -537,12 +528,11 @@ $C$ produces smaller ripple, hence smoother DC output.
 A camera flash uses a capacitor to store energy and release it rapidly through a xenon gas tube:
 
 1. A battery slowly charges a capacitor ($C \approx 100$ -- $1000\,\mu$F) to a high voltage
- ($V \approx 300$ V) through a step-up converter circuit.
+   ($V \approx 300$ V) through a step-up converter circuit.
 2. When the shutter is triggered, the capacitor discharges through the flash tube in a time of order
- $\tau = RC$Where $R$ is the resistance of the ionised gas (very small, $\lt{}$ 1
- $\Omega$).
+   $\tau = RC$Where $R$ is the resistance of the ionised gas (very small, $\lt{}$ 1 $\Omega$).
 3. The rapid discharge ($\tau \approx 1$ ms) delivers a large pulse of power:
- $P = E/\tau \approx \frac{1}{2}CV^2 / \tau$.
+   $P = E/\tau \approx \frac{1}{2}CV^2 / \tau$.
 
 **Example.** A $330\,\mu$F capacitor charged to $300$ V stores
 $E = \frac{1}{2} \times 330 \times 10^{-6} \times 90000 = 14.85$ J. If discharged in $1$ ms, the
@@ -558,7 +548,7 @@ This is the most common method at A-level.
 
 1. Charge the capacitor to a known p.d. $V_0$.
 2. Disconnect the supply and immediately start recording the p.d. $V$ across the capacitor at
- regular time intervals as it discharges through a known resistor $R$.
+   regular time intervals as it discharges through a known resistor $R$.
 3. Plot $\ln(V)$ against $t$.
 
 **Derivation of the method.** From the discharge equation:
@@ -583,15 +573,14 @@ $$C = -\frac{1}{mR}$$
 - Uncertainty in the resistor $R$ ( $\pm 1$% for a standard resistor).
 - Uncertainty in the gradient of the $\ln(V)$ vs $t$ graph (from the line of best fit).
 - Systematic errors: the voltmeter has its own resistance $R_V$ in parallel with the capacitor. If
- $R_V$ is not much larger than $R$The effective discharge resistance is
- $R_{\mathrm{eff}} = \frac◆LB◆R \cdot R_V◆RB◆◆LB◆R + R_V◆RB◆$Leading to a systematic underestimate of $C$.
+  $R_V$ is not much larger than $R$The effective discharge resistance is
+  $R_{\mathrm{eff}} = \frac◆LB◆R \cdot R_V◆RB◆◆LB◆R + R_V◆RB◆$Leading to a systematic underestimate
+  of $C$.
 
-:::tip
-Exam Technique When asked to determine $C$ from a discharge curve, always take the natural
+:::tip Exam Technique When asked to determine $C$ from a discharge curve, always take the natural
 Log of the voltage values and plot $\ln(V)$ vs $t$. Do NOT attempt to fit an exponential curve
 Directly. The gradient gives you $-1/(RC)$And since $R$ is known, you extract $C$. Show the
-Log-linear transformation explicitly.
-:::
+Log-linear transformation explicitly. :::
 
 ### Method 2: Repeating Capacitor (Ballistic Galvanometer)
 
@@ -767,8 +756,8 @@ $E = \frac{1}{2}CV^2 = \frac{1}{2}C(V_0 e^{-1})^2 = E_0 e^{-2} = 13.5 \times 0.1
 A parallel plate capacitor has plate area $0.050$ m$^2$ and separation $1.0$ mm, with vacuum between the plates. It is charged to $500$ V and then isolated. A dielectric with $\varepsilon_r = 4.0$ is inserted, filling the gap. Calculate: (a) the capacitance before and after insertion, (b) the charge on the plates, (c) the p.d. After insertion, (d) the energy stored before and after insertion, (e) the energy change and where it went.
 
 **Answer.** (a) Before:
-$C_0 = \frac◆LB◆8.85 \times 10^{-12} \times 0.050◆RB◆◆LB◆1.0 \times 10^{-3}◆RB◆ = 4.43 \times 10^{-10}$ F
-$= 443$ pF. After: $C = \varepsilon_r C_0 = 4.0 \times 443 = 1772$ pF $= 1.77$ nF.
+$C_0 = \frac◆LB◆8.85 \times 10^{-12} \times 0.050◆RB◆◆LB◆1.0 \times 10^{-3}◆RB◆ = 4.43 \times 10^{-10}$
+F $= 443$ pF. After: $C = \varepsilon_r C_0 = 4.0 \times 443 = 1772$ pF $= 1.77$ nF.
 
 (b) The capacitor is isolated, so $Q$ is constant:
 $Q = C_0 V_0 = 4.43 \times 10^{-10} \times 500 = 2.21 \times 10^{-7}$ C $= 221$ nC.
@@ -794,7 +783,8 @@ The gap (fringe-field forces attract the polarised dielectric into the capacitor
 A $20\,\mu$F capacitor is charged to $60$ V. It is then connected to an uncharged $80\,\mu$F capacitor. Calculate: (a) the final common p.d., (b) the final charge on each capacitor, (c) the initial and final total energy, (d) the energy lost.
 
 **Answer.** (a)
-$V' = \frac{C_1 V_1}{C_1 + C_2} = \frac◆LB◆20 \times 60◆RB◆◆LB◆20 + 80◆RB◆ = \frac{1200}{100} = 12$ V.
+$V' = \frac{C_1 V_1}{C_1 + C_2} = \frac◆LB◆20 \times 60◆RB◆◆LB◆20 + 80◆RB◆ = \frac{1200}{100} = 12$
+V.
 
 (b) $Q_1' = 20 \times 10^{-6} \times 12 = 240\,\mu$C.
 $Q_2' = 80 \times 10^{-6} \times 12 = 960\,\mu$C. Verification: $240 + 960 = 1200\,\mu$C
@@ -829,8 +819,7 @@ The additional charge $\Delta Q = 2.40$ mC.
 $E_1 = \frac{1}{2}CV^2 = \frac{1}{2} \times 100 \times 10^{-6} \times 144 = 7.20 \times 10^{-3}$ J.
 After:
 $E_2 = \frac{1}{2}C'V^2 = \frac{1}{2} \times 300 \times 10^{-6} \times 144 = 2.16 \times 10^{-2}$ J
-$= 21.6$ mJ. Energy increased by a factor of $\varepsilon_r = 3$Consistent with the $V$-fixed
-Case.
+$= 21.6$ mJ. Energy increased by a factor of $\varepsilon_r = 3$Consistent with the $V$-fixed Case.
 
 <b>If you get this wrong, revise:</b> [Dielectrics in Detail](#8-dielectrics-in-detail)
 
@@ -841,8 +830,8 @@ Case.
 Two parallel plate capacitors have the same plate area $A = 0.010$ m$^2$ and separation $d = 0.50$ mm. Capacitor A has vacuum between the plates and is charged to $400$ V. Capacitor B has a mica dielectric ($\varepsilon_r = 6.0$) and is charged to the same p.d. Calculate: (a) the capacitance of each, (b) the energy density of each, (c) the maximum p.d. Each can withstand if the dielectric strength of mica is $160$ kV/mm.
 
 **Answer.** (a)
-$C_A = \frac◆LB◆8.85 \times 10^{-12} \times 0.010◆RB◆◆LB◆5.0 \times 10^{-4}◆RB◆ = 1.77 \times 10^{-10}$ F
-$= 177$ pF. $C_B = \varepsilon_r C_A = 6.0 \times 177 = 1062$ pF $= 1.06$ nF.
+$C_A = \frac◆LB◆8.85 \times 10^{-12} \times 0.010◆RB◆◆LB◆5.0 \times 10^{-4}◆RB◆ = 1.77 \times 10^{-10}$
+F $= 177$ pF. $C_B = \varepsilon_r C_A = 6.0 \times 177 = 1062$ pF $= 1.06$ nF.
 
 (b) Energy density $u = \frac{1}{2}\varepsilon_0 \varepsilon_r E^2$ where
 $E = V/d = 400/(5.0 \times 10^{-4}) = 8.0 \times 10^5$ V/m. For A:
@@ -894,12 +883,12 @@ A student investigates an unknown capacitor by charging it to $10.0$ V and measu
 
 | $t$ (s) | $V$ (V) |
 | ------- | ------- |
-| 0 | 10.0 |
-| 10 | 7.45 |
-| 20 | 5.55 |
-| 30 | 4.13 |
-| 40 | 3.08 |
-| 50 | 2.30 |
+| 0       | 10.0    |
+| 10      | 7.45    |
+| 20      | 5.55    |
+| 30      | 4.13    |
+| 40      | 3.08    |
+| 50      | 2.30    |
 
 (a) Plot $\ln(V)$ against $t$ and determine the gradient. (b) Hence calculate the capacitance $C$.
 (c) Estimate the uncertainty in $C$ if the uncertainty in $R$ is $\pm 2$% and the uncertainty in the
@@ -909,12 +898,12 @@ Gradient is $\pm 0.005$ s$^{-1}$.
 
 | $t$ (s) | $V$ (V) | $\ln(V)$ |
 | ------- | ------- | -------- |
-| 0 | 10.0 | 2.303 |
-| 10 | 7.45 | 2.008 |
-| 20 | 5.55 | 1.714 |
-| 30 | 4.13 | 1.418 |
-| 40 | 3.08 | 1.125 |
-| 50 | 2.30 | 0.833 |
+| 0       | 10.0    | 2.303    |
+| 10      | 7.45    | 2.008    |
+| 20      | 5.55    | 1.714    |
+| 30      | 4.13    | 1.418    |
+| 40      | 3.08    | 1.125    |
+| 50      | 2.30    | 0.833    |
 
 The gradient from a line of best fit through these points: $m \approx -0.0294$ s$^{-1}$.
 
@@ -931,28 +920,38 @@ $C = (7.2 \pm 1.4) \times 10^{-4}$ F.
 
 </details>
 
-
 ---
 
-:::tip
-Diagnostic Test
-Ready to test your understanding of **Capacitance**? The [diagnostic test](/docs/alevel/physics/diagnostics/diag-capacitance) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
+:::tip Diagnostic Test Ready to test your understanding of **Capacitance**? The
+[diagnostic test](/docs/alevel/physics/diagnostics/diag-capacitance) contains the hardest questions
+within the A-Level specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Capacitance with other physics topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Capacitance
+with other physics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on
+self-marking and building a personal test matrix. :::
 
-:::danger
-Common Pitfalls
+:::danger Common Pitfalls
 
-- **Assuming charge is shared equally between capacitors in series:** In series, all capacitors store the SAME charge, not equal charge. The total charge stored is NOT Q1 + Q2 -- it is the common charge Q that flows through all of them. This is because the same current flows through each capacitor in series.
+- **Assuming charge is shared equally between capacitors in series:** In series, all capacitors
+  store the SAME charge, not equal charge. The total charge stored is NOT Q1 + Q2 -- it is the
+  common charge Q that flows through all of them. This is because the same current flows through
+  each capacitor in series.
 
-- **Forgetting that energy is lost when capacitors are reconnected:** When a charged capacitor is disconnected from a source and connected to another (uncharged) capacitor, charge is conserved but energy is NOT conserved. Some energy is always lost as heat in the connecting wires, even though this is not obvious from the equations.
+- **Forgetting that energy is lost when capacitors are reconnected:** When a charged capacitor is
+  disconnected from a source and connected to another (uncharged) capacitor, charge is conserved but
+  energy is NOT conserved. Some energy is always lost as heat in the connecting wires, even though
+  this is not obvious from the equations.
 
-- **Confusing capacitance formulas for series and parallel:** Capacitors in PARALLEL add directly (C_total = C1 + C2), just like resistors in series. Capacitors in SERIES use the reciprocal formula (1/C_total = 1/C1 + 1/C2), just like resistors in parallel. Students frequently mix these up.
+- **Confusing capacitance formulas for series and parallel:** Capacitors in PARALLEL add directly
+  (C_total = C1 + C2), just like resistors in series. Capacitors in SERIES use the reciprocal
+  formula (1/C_total = 1/C1 + 1/C2), just like resistors in parallel. Students frequently mix these
+  up.
 
-- **Misidentifying the area in C = epsilon_0 * A / d:** The area A is the area of ONE plate (the overlapping area), not the total area of both plates. If plates have different areas, use the smaller area. Also, d is the separation between plates, not the thickness of a plate.
+- **Misidentifying the area in C = epsilon_0 \* A / d:** The area A is the area of ONE plate (the
+  overlapping area), not the total area of both plates. If plates have different areas, use the
+  smaller area. Also, d is the separation between plates, not the thickness of a plate.
 
 :::
 

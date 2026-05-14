@@ -1,9 +1,12 @@
 ---
 id: trie-and-pattern-matching
 title: Tries and String Algorithms
-description: "Tries and String Algorithms — Trie (Prefix Tree); Node Definition; Operations; Complexity Analysis with worked examples and exam-style questions."
+description:
+  'Tries and String Algorithms — Trie (Prefix Tree); Node Definition; Operations; Complexity
+  Analysis with worked examples and exam-style questions.'
 slug: trie-and-pattern-matching
 ---
+
 ## Trie (Prefix Tree)
 
 A trie is a tree data structure where each node represents a character of a string. The path from
@@ -125,13 +128,13 @@ graph TD
 
 ### Complexity Analysis
 
-| Operation | Time | Space |
+| Operation     | Time        | Space                   |
 | ------------- | ----------- | ----------------------- |
-| Insert | $O(m)$ | $O(1)$ additional nodes |
-| Search | $O(m)$ | $O(1)$ |
-| Delete | $O(m)$ | $O(1)$ freed nodes |
-| StartsWith | $O(m)$ | $O(1)$ |
-| Prefix search | $O(m + kL)$ | $O(kL)$ for results |
+| Insert        | $O(m)$      | $O(1)$ additional nodes |
+| Search        | $O(m)$      | $O(1)$                  |
+| Delete        | $O(m)$      | $O(1)$ freed nodes      |
+| StartsWith    | $O(m)$      | $O(1)$                  |
+| Prefix search | $O(m + kL)$ | $O(kL)$ for results     |
 
 Where $m$ is the word length, $k$ is the number of results, and $L$ is the average result length.
 
@@ -266,14 +269,14 @@ A suffix tree is a compressed suffix trie. It has at most $2n - 1$ nodes for a s
 
 ### Properties
 
-| Property | Value |
+| Property                   | Value                             |
 | -------------------------- | --------------------------------- |
-| Number of nodes | $O(n)$ |
-| Construction | $O(n)$ (Ukkonen's algorithm) |
-| Space | $O(n)$ |
-| Substring search | $O(m)$ where $m$ = pattern length |
-| Longest repeated substring | Find deepest internal node |
-| Longest common substring | Generalised suffix tree |
+| Number of nodes            | $O(n)$                            |
+| Construction               | $O(n)$ (Ukkonen's algorithm)      |
+| Space                      | $O(n)$                            |
+| Substring search           | $O(m)$ where $m$ = pattern length |
+| Longest repeated substring | Find deepest internal node        |
+| Longest common substring   | Generalised suffix tree           |
 
 ### Ukkonen's Algorithm (Conceptual)
 
@@ -285,10 +288,10 @@ The key ideas:
 
 1. **Implicit suffix tree**: during construction, suffixes may end in the middle of an edge
 2. **Suffix links**: each internal node has a link to the node representing its longest proper
- suffix
+   suffix
 3. **Rule 1 / Rule 2 extension**: when adding character $S[i]$Extend all suffixes. Rule 1 applies
- when the extension is trivial (character already exists on the current edge); Rule 2 applies when
- a new leaf must be created
+   when the extension is trivial (character already exists on the current edge); Rule 2 applies when
+   a new leaf must be created
 
 ```python
 class SuffixTreeNode:
@@ -788,9 +791,9 @@ def boyer_moore_search(text, pattern):
 
 :::warning
 
-Boyer-Moore's worst case is $O(nm)$Which is worse than KMP. In practice, Boyer-Moore is sublinear
-On average (it examines fewer than $n$ characters of the text). For guaranteed $O(n)$ worst case,
-Use the Boyer-Moore-Horspool variant or KMP.
+Boyer-Moore's worst case is $O(nm)$Which is worse than KMP. In practice, Boyer-Moore is sublinear On
+average (it examines fewer than $n$ characters of the text). For guaranteed $O(n)$ worst case, Use
+the Boyer-Moore-Horspool variant or KMP.
 
 :::
 
@@ -903,14 +906,14 @@ def manacher(s):
 
 ## Algorithm Comparison
 
-| Algorithm | Preprocessing | Search Time | Worst Case | Sublinear? | Multi-pattern? |
+| Algorithm    | Preprocessing | Search Time                  | Worst Case    | Sublinear? | Multi-pattern? |
 | ------------ | ------------- | ---------------------------- | ------------- | ---------- | -------------- |
-| Naive | $O(1)$ | $O(nm)$ | $O(nm)$ | No | No |
-| KMP | $O(m)$ | $O(n)$ | $O(n)$ | No | No |
-| Rabin-Karp | $O(m)$ | $O(n+m)$ avg | $O(nm)$ | No | Yes (simple) |
-| Boyer-Moore | $O(m+\sigma)$ | $O(nm)$ worst, sublinear avg | $O(nm)$ | Yes | No |
-| Aho-Corasick | $O(km)$ | $O(n + z)$ | $O(n + z)$ | No | Yes |
-| Suffix Array | $O(n \log n)$ | $O(m \log n)$ | $O(m \log n)$ | No | Yes |
+| Naive        | $O(1)$        | $O(nm)$                      | $O(nm)$       | No         | No             |
+| KMP          | $O(m)$        | $O(n)$                       | $O(n)$        | No         | No             |
+| Rabin-Karp   | $O(m)$        | $O(n+m)$ avg                 | $O(nm)$       | No         | Yes (simple)   |
+| Boyer-Moore  | $O(m+\sigma)$ | $O(nm)$ worst, sublinear avg | $O(nm)$       | Yes        | No             |
+| Aho-Corasick | $O(km)$       | $O(n + z)$                   | $O(n + z)$    | No         | Yes            |
+| Suffix Array | $O(n \log n)$ | $O(m \log n)$                | $O(m \log n)$ | No         | Yes            |
 
 Where $n$ = text length, $m$ = pattern length, $k$ = number of patterns, $z$ = number of matches,
 $\sigma$ = alphabet size.
@@ -944,8 +947,8 @@ Suffixes at `SA[j]` and `SA[j-1]`Not between suffixes starting at `j` and `j-1`.
 
 A single hash function has collision probability $1/m$ per comparison. For large texts, this can
 Lead to many false positives, each requiring an $O(m)$ string comparison. Use double hashing (two
-Independent moduli) to reduce the collision probability to approximately $1/(m_1 \cdot m_2)$Or use
-A 64-bit hash (which effectively eliminates collisions in practice).
+Independent moduli) to reduce the collision probability to approximately $1/(m_1 \cdot m_2)$Or use A
+64-bit hash (which effectively eliminates collisions in practice).
 
 ### 4. KMP Failure Function Edge Cases
 

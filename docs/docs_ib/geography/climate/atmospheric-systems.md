@@ -1,8 +1,11 @@
 ---
 title: Atmospheric Systems
-description: "Rigorous IB geography notes covering Atmospheric Systems. Includes definitions, derivations, worked examples, and exam-style problems."
+description:
+  'Rigorous IB geography notes covering Atmospheric Systems. Includes definitions, derivations,
+  worked examples, and exam-style problems.'
 slug: atmospheric-systems
 ---
+
 # Atmospheric Systems
 
 ## Global Atmospheric Circulation
@@ -43,29 +46,29 @@ Air of the Ferrel cell, rising at the polar front.
 
 The three-cell model produces a characteristic pattern of pressure belts and wind systems:
 
-| Latitude | Pressure System | Surface Winds | Climate Characteristics |
+| Latitude               | Pressure System                                 | Surface Winds                    | Climate Characteristics                       |
 | ---------------------- | ----------------------------------------------- | -------------------------------- | --------------------------------------------- |
-| 0$^\circ$ | Equatorial low (ITCZ) | Variable, light (doldrums) | Hot, wet, convective rainfall |
-| 0$^\circ$--30$^\circ$ | Subtropical high (descending air at 30$^\circ$) | Trade winds (NE in NH, SE in SH) | Dry at 30$^\circ$; wet at equatorward margins |
-| 30$^\circ$--60$^\circ$ | Variable (mid-latitude cyclones) | Prevailing westerlies | Variable; seasonal; cyclonic rainfall |
-| 60$^\circ$ | Subpolar low (polar front) | Convergence zone | Cool, wet, stormy |
-| 60$^\circ$--90$^\circ$ | Polar high | Polar easterlies | Cold, dry |
+| 0$^\circ$              | Equatorial low (ITCZ)                           | Variable, light (doldrums)       | Hot, wet, convective rainfall                 |
+| 0$^\circ$--30$^\circ$  | Subtropical high (descending air at 30$^\circ$) | Trade winds (NE in NH, SE in SH) | Dry at 30$^\circ$; wet at equatorward margins |
+| 30$^\circ$--60$^\circ$ | Variable (mid-latitude cyclones)                | Prevailing westerlies            | Variable; seasonal; cyclonic rainfall         |
+| 60$^\circ$             | Subpolar low (polar front)                      | Convergence zone                 | Cool, wet, stormy                             |
+| 60$^\circ$--90$^\circ$ | Polar high                                      | Polar easterlies                 | Cold, dry                                     |
 
 ### Limitations of the Three-Cell Model
 
 1. **Seasonal variation.** The three-cell model is based on annual averages. In reality, the
- circulation shifts seasonally: the ITCZ migrates northward in the northern summer (reaching
- approximately 15$^\circ$--20$^\circ$N over South Asia, producing the monsoon) and southward in
- the southern summer.
+   circulation shifts seasonally: the ITCZ migrates northward in the northern summer (reaching
+   approximately 15$^\circ$--20$^\circ$N over South Asia, producing the monsoon) and southward in
+   the southern summer.
 2. **Continental effects.** Land surfaces heat and cool more rapidly than oceans, creating
- continental pressure systems that modify the zonal pattern. In winter, large continents develop
- high-pressure anticyclones (the Siberian High, which drives cold, dry air southward over East
- Asia). In summer, continents develop low-pressure thermal lows (the Asian Low, which draws warm,
- moist air northward from the Indian Ocean).
+   continental pressure systems that modify the zonal pattern. In winter, large continents develop
+   high-pressure anticyclones (the Siberian High, which drives cold, dry air southward over East
+   Asia). In summer, continents develop low-pressure thermal lows (the Asian Low, which draws warm,
+   moist air northward from the Indian Ocean).
 3. **Ocean-continent contrasts.** The zonal pattern is significantly modified by the distribution of
- land and sea, particularly in the Northern Hemisphere where continents are large.
+   land and sea, particularly in the Northern Hemisphere where continents are large.
 4. **It is a simplification.** The real atmosphere is turbulent, with complex wave patterns, jet
- streams, and mesoscale systems that the three-cell model does not capture.
+   streams, and mesoscale systems that the three-cell model does not capture.
 
 ## The Intertropical Convergence Zone (ITCZ)
 
@@ -85,17 +88,17 @@ Approximately 11 000 mm of rain annually, most of it during the monsoon season).
 ### Rossby Waves
 
 Rossby waves are large-scale meanders in the mid-latitude westerly flow, caused by the latitudinal
-Variation of the Coriolis parameter (the beta effect). Rossby waves have wavelengths of
-4000--8000 km and propagate westward relative to the mean westerly flow.
+Variation of the Coriolis parameter (the beta effect). Rossby waves have wavelengths of 4000--8000
+km and propagate westward relative to the mean westerly flow.
 
 **Wave types.** Rossby waves can be classified by their amplitude:
 
 - **Low-amplitude (zonal) flow:** relatively straight west-to-east flow with weak meridional
- (north-south) excursion. Associated with relatively stable, moderate weather.
+  (north-south) excursion. Associated with relatively stable, moderate weather.
 - **High-amplitude (meridional) flow:** large north-south meanders, with ridges (northward bulges of
- warm air) and troughs (southward excursions of cold air). High-amplitude patterns can produce
- extreme weather: ridges bring warm, dry conditions (heat waves); troughs bring cold, wet
- conditions (cold spells, storms).
+  warm air) and troughs (southward excursions of cold air). High-amplitude patterns can produce
+  extreme weather: ridges bring warm, dry conditions (heat waves); troughs bring cold, wet
+  conditions (cold spells, storms).
 
 **Blocking patterns.** Occasionally, Rossby waves become quasi-stationary, with large-amplitude
 Ridges and troughs that persist for days or weeks. These "blocks" can cause prolonged extreme
@@ -104,14 +107,14 @@ Europe; the 2010 Russian heat wave was associated with a blocking anticyclone.
 
 ### Jet Streams
 
-Jet streams are narrow bands of fast-moving air (wind speeds exceeding 60 knots,
-Approximately 110 km/h) in the upper troposphere. They form at the boundaries between air masses of
-Different temperatures, where the temperature gradient creates a strong pressure gradient that
-Accelerates the air.
+Jet streams are narrow bands of fast-moving air (wind speeds exceeding 60 knots, Approximately 110
+km/h) in the upper troposphere. They form at the boundaries between air masses of Different
+temperatures, where the temperature gradient creates a strong pressure gradient that Accelerates the
+air.
 
 **The polar front jet stream** flows at approximately 9--12 km altitude, along the boundary between
-The cold polar air and warm subtropical air, at 50$^\circ$--60$^\circ$ latitude. It is
-Closely associated with Rossby waves and the development of mid-latitude cyclones.
+The cold polar air and warm subtropical air, at 50$^\circ$--60$^\circ$ latitude. It is Closely
+associated with Rossby waves and the development of mid-latitude cyclones.
 
 **The subtropical jet stream** flows at approximately 12--15 km altitude, near the tropopause, at
 Approximately 25$^\circ$--35$^\circ$ latitude. It is associated with the poleward edge of the Hadley
@@ -142,14 +145,14 @@ In the Southern Hemisphere.
 
 **Major surface currents and their climatic effects:**
 
-| Current | Type | Region | Climatic Effect |
+| Current                     | Type | Region                                           | Climatic Effect                                                                                                                                                        |
 | --------------------------- | ---- | ------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Gulf Stream** | Warm | North Atlantic (Florida to north-west Europe) | Raises winter temperatures in western Europe by 5--10$^\circ$C relative to comparable latitudes (e.g., the UK is at similar latitudes to Labrador, but is much warmer) |
-| **North Atlantic Drift** | Warm | North Atlantic (continuation of Gulf Stream) | Keeps north-west European ports ice-free in winter (e.g., Murmansk in Russia at 69$^\circ$N is ice-free) |
-| **Kuroshio Current** | Warm | North Pacific (Japan) | Moderates the climate of Japan; increases rainfall on windward coasts |
-| **Humboldt (Peru) Current** | Cold | South Pacific (west coast of South America) | Produces the arid Atacama Desert; supports one of the world's most productive fisheries |
-| **Benguela Current** | Cold | South Atlantic (west coast of southern Africa) | Contributes to the aridity of the Namib Desert; supports productive fisheries |
-| **Canary Current** | Cold | North Atlantic (west coast of north-west Africa) | Contributes to the aridity of the Sahara's western margin |
+| **Gulf Stream**             | Warm | North Atlantic (Florida to north-west Europe)    | Raises winter temperatures in western Europe by 5--10$^\circ$C relative to comparable latitudes (e.g., the UK is at similar latitudes to Labrador, but is much warmer) |
+| **North Atlantic Drift**    | Warm | North Atlantic (continuation of Gulf Stream)     | Keeps north-west European ports ice-free in winter (e.g., Murmansk in Russia at 69$^\circ$N is ice-free)                                                               |
+| **Kuroshio Current**        | Warm | North Pacific (Japan)                            | Moderates the climate of Japan; increases rainfall on windward coasts                                                                                                  |
+| **Humboldt (Peru) Current** | Cold | South Pacific (west coast of South America)      | Produces the arid Atacama Desert; supports one of the world's most productive fisheries                                                                                |
+| **Benguela Current**        | Cold | South Atlantic (west coast of southern Africa)   | Contributes to the aridity of the Namib Desert; supports productive fisheries                                                                                          |
+| **Canary Current**          | Cold | North Atlantic (west coast of north-west Africa) | Contributes to the aridity of the Sahara's western margin                                                                                                              |
 
 ### Thermohaline Circulation (THC)
 
@@ -194,22 +197,22 @@ Conditions in the eastern Pacific.
 
 ### El Nino
 
-During El Nino events ( occurring every 2--7 years, lasting 9--12 months), the trade winds
-Weaken or reverse, allowing warm water to flow eastward across the Pacific. The warm pool shifts
-Eastward, suppressing upwelling off South America and raising sea surface temperatures in the
-Central and eastern Pacific by 1--3$^\circ$C.
+During El Nino events ( occurring every 2--7 years, lasting 9--12 months), the trade winds Weaken or
+reverse, allowing warm water to flow eastward across the Pacific. The warm pool shifts Eastward,
+suppressing upwelling off South America and raising sea surface temperatures in the Central and
+eastern Pacific by 1--3$^\circ$C.
 
 **Global impacts of El Nino:**
 
-| Region | Impact |
+| Region                                | Impact                                                                                                           |
 | ------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
-| **South America (west coast)** | Heavy rainfall and flooding in Peru and Ecuador; reduced upwelling devastates anchovy fisheries |
-| **South America (north-east Brazil)** | Drought; crop failures in the Amazon |
-| **Southeast Asia and Australia** | Drought; increased risk of bushfires (the 2019--2020 Australian bushfires coincided with a strong El Nino) |
-| **East Africa** | Enhanced rainfall; increased risk of flooding and waterborne disease |
-| **Southern Africa** | Drought; reduced crop yields |
-| **North America (southern USA)** | Increased rainfall and storminess in southern states; warmer and drier conditions in the Pacific Northwest |
-| **Global temperature** | El Nino years tend to be warmer globally (the warmest year on record, 2023, was amplified by El Nino conditions) |
+| **South America (west coast)**        | Heavy rainfall and flooding in Peru and Ecuador; reduced upwelling devastates anchovy fisheries                  |
+| **South America (north-east Brazil)** | Drought; crop failures in the Amazon                                                                             |
+| **Southeast Asia and Australia**      | Drought; increased risk of bushfires (the 2019--2020 Australian bushfires coincided with a strong El Nino)       |
+| **East Africa**                       | Enhanced rainfall; increased risk of flooding and waterborne disease                                             |
+| **Southern Africa**                   | Drought; reduced crop yields                                                                                     |
+| **North America (southern USA)**      | Increased rainfall and storminess in southern states; warmer and drier conditions in the Pacific Northwest       |
+| **Global temperature**                | El Nino years tend to be warmer globally (the warmest year on record, 2023, was amplified by El Nino conditions) |
 
 ### La Nina
 

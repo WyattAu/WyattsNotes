@@ -1,6 +1,8 @@
 ---
 title: Pointers
-description: "C++: Pointers — Pointer Arithmetic, Array Decay, and Nullability; 1. Pointer Arithmetic Mechanics; The Arithmetic Formula; Architectural Implications."
+description:
+  'C++: Pointers — Pointer Arithmetic, Array Decay, and Nullability; 1. Pointer Arithmetic
+  Mechanics; The Arithmetic Formula; Architectural Implications.'
 date: 2026-01-03T01:32:50.298Z
 tags:
   - cpp
@@ -8,6 +10,7 @@ categories:
   - cpp
 slug: pointers
 ---
+
 Import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 # Pointer Arithmetic, Array Decay, and Nullability
@@ -36,14 +39,16 @@ $$
 ### Architectural Implications
 
 1. **Instruction Generation:** The compiler compiles `ptr[i]` or `*(ptr + i)` into specific assembly
- instructions like `LEA` (Load Effective Address) on x86_64, utilizing hardware scaling factors
- (1, 2, 4, 8) if the type size matches.
+   instructions like `LEA` (Load Effective Address) on x86_64, utilizing hardware scaling factors
+   (1, 2, 4, 8) if the type size matches.
 2. **Void Pointer Restriction:** Arithmetic on `void*` is **ill-formed** in ISO C++ because
- `sizeof(void)` is undefined.
- - _GCC/Clang Extension:_ These compilers treat `sizeof(void)` as 1 to allow arithmetic.
- - _Best Practice:_ Disable this extension via `-Wpointer-arith` to ensure portability.
+   `sizeof(void)` is undefined.
+
+- _GCC/Clang Extension:_ These compilers treat `sizeof(void)` as 1 to allow arithmetic.
+- _Best Practice:_ Disable this extension via `-Wpointer-arith` to ensure portability.
+
 3. **Difference (`ptrdiff_t`):** Subtracting two pointers (`ptrB - ptrA`) returns a signed integer
- of type `std::ptrdiff_t`Representing the number of elements (not bytes) between them.
+   of type `std::ptrdiff_t`Representing the number of elements (not bytes) between them.
 
 ```cpp
 struct Block {
@@ -93,13 +98,13 @@ void byte_offset_examples() {
 
 ### The Commutativity of Indexing
 
-Because `arr[i]` is defined as `*(arr + i)`And addition is commutative, C++ technically supports
-The syntax `i[arr]`.
+Because `arr[i]` is defined as `*(arr + i)`And addition is commutative, C++ technically supports The
+syntax `i[arr]`.
 
 - `arr + i` $\to$ Address of i-th element.
 - `i + arr` $\to$ Address of i-th element.
 - **Conclusion:** Never use `i[arr]` in production code, but understand it to grasp the underlying
- arithmetic mechanics.
+  arithmetic mechanics.
 
 ### Pointer Arithmetic Bounds [N4950 §7.6.6]
 
@@ -122,16 +127,16 @@ Is undefined behavior.
 **Proof:**
 
 1. By [N4950 §7.6.6.6], if an expression `e` points to element $x[i]$ of an array object `x` with
- $n$ elements, the expressions `e + j` and `e - j` point to (respectively) element $x[i + j]$ and
- $x[i - j]$Provided $0 \le i + j \le n$.
+   $n$ elements, the expressions `e + j` and `e - j` point to (respectively) element $x[i + j]$ and
+   $x[i - j]$Provided $0 \le i + j \le n$.
 
 2. When $i + j = n$The pointer points "one past the last element." The Standard explicitly permits
- this pointer value. The constraint $0 \le i + j \le n$ (note the inclusive upper bound) is the
- formal statement of the one-past-the-end rule.
+   this pointer value. The constraint $0 \le i + j \le n$ (note the inclusive upper bound) is the
+   formal statement of the one-past-the-end rule.
 
 3. By [N4950 §7.6.1.1], the indirection operator `*` requires that its operand be a pointer to an
- object. The one-past-the-end pointer does not point to any object — it points to the position
- immediately after the last element.
+   object. The one-past-the-end pointer does not point to any object — it points to the position
+   immediately after the last element.
 
 4. Therefore, `*(arr + n)` is undefined behavior. QED.
 
@@ -142,9 +147,9 @@ Is undefined behavior.
 **Proof:**
 
 1. By [N4950 §7.6.6.6], pointer addition is well-defined only when the result points to an element
- of the array or one past the last element.
+   of the array or one past the last element.
 2. `arr + 6` points to two past the last element of `int arr[5]`Which violates the constraint
- $i + j \le n$ (since $0 + 6 = 6 \gt 5$).
+   $i + j \le n$ (since $0 + 6 = 6 \gt 5$).
 3. The Standard states that computing such a pointer value is undefined behavior. QED.
 
 This means you cannot use pointer arithmetic as a general address computation mechanism. Even
@@ -277,14 +282,14 @@ void process(Forward* p);  // OK: parameter declaration does not require complet
 
 ### Comparison Table of Pointer Types
 
-| Type | Arithmetic | Dereference | sizeof | Implicitly Convertible To |
+| Type                    | Arithmetic | Dereference | sizeof       | Implicitly Convertible To   |
 | :---------------------- | :--------- | :---------- | :----------- | :-------------------------- |
-| `T*` (object pointer) | Yes | Yes | Platform ptr | `void*``const void*` |
-| `const T*` | Yes | Yes (r/o) | Platform ptr | `void*``const void*` |
-| `void*` | No | No | Platform ptr | (none) |
-| `T(*)()` (function ptr) | No | Yes (call) | Platform ptr | `void(*)()` |
-| `T C::*` (member ptr) | No | With object | 2x ptr size | (none — requires object) |
-| `nullptr_t` | No | No | Platform ptr | Any object/function pointer |
+| `T*` (object pointer)   | Yes        | Yes         | Platform ptr | `void*``const void*`        |
+| `const T*`              | Yes        | Yes (r/o)   | Platform ptr | `void*``const void*`        |
+| `void*`                 | No         | No          | Platform ptr | (none)                      |
+| `T(*)()` (function ptr) | No         | Yes (call)  | Platform ptr | `void(*)()`                 |
+| `T C::*` (member ptr)   | No         | With object | 2x ptr size  | (none — requires object)    |
+| `nullptr_t`             | No         | No          | Platform ptr | Any object/function pointer |
 
 Note: On most platforms, `sizeof(T*)` is 8 bytes (64-bit) or 4 bytes (32-bit). Pointer-to-member may
 Be larger due to the need for virtual base adjustment.
@@ -431,11 +436,11 @@ func(nullptr); // Calls func(char*) unambiguously.
 
 ### `nullptr` vs `NULL` vs `0`
 
-| Literal | Type | Convertible to | Recommended? |
-| --------- | -------------------------------------------- | ------------------------ | ------------ |
-| `0` | `int` | Any integral type | No |
-| `NULL` | Implementation-defined ( `0` or `0L`) | Pointers + integral | No |
-| `nullptr` | `std::nullptr_t` | Any pointer type, `bool` | **Yes** |
+| Literal   | Type                                  | Convertible to           | Recommended? |
+| --------- | ------------------------------------- | ------------------------ | ------------ |
+| `0`       | `int`                                 | Any integral type        | No           |
+| `NULL`    | Implementation-defined ( `0` or `0L`) | Pointers + integral      | No           |
+| `nullptr` | `std::nullptr_t`                      | Any pointer type, `bool` | **Yes**      |
 
 `nullptr` is the only null pointer constant that cannot be confused with an integer. Modern C++ code
 Should always use `nullptr`.
@@ -483,17 +488,17 @@ void dangerous(int* ptr) {
 In modern C++23 design, raw pointers (`T*`) should **only** be used for:
 
 1. **Nullable, Non-Owning Views:** Pointing to an object owned by `unique_ptr` or the stack, where
- the relationship is optional.
+   the relationship is optional.
 2. **Legacy Interfaces:** Interacting with C libraries.
 
 For non-nullable, non-owning views, use `T&` (Reference) or `std::reference_wrapper<T>`.
 
-| Semantics | Type |
+| Semantics                 | Type                                         |
 | :------------------------ | :------------------------------------------- |
-| Ownership + Nullable | `std::unique_ptr<T>` |
-| Ownership + Non-Nullable | `std::unique_ptr<T>` (Assert on dereference) |
-| Non-Owning + Nullable | `T*` |
-| Non-Owning + Non-Nullable | `T&` |
+| Ownership + Nullable      | `std::unique_ptr<T>`                         |
+| Ownership + Non-Nullable  | `std::unique_ptr<T>` (Assert on dereference) |
+| Non-Owning + Nullable     | `T*`                                         |
+| Non-Owning + Non-Nullable | `T&`                                         |
 
 ### `std::assume` (C++23)
 
@@ -545,11 +550,11 @@ void safety_hierarchy() {
 Raw pointers remain essential in modern C++ for:
 
 1. **Non-owning observation.** When lifetime is guaranteed by design (parent-child, tree
- structures).
+   structures).
 2. **C interoperability.** C APIs use raw pointers exclusively.
 3. **Performance-critical paths.** When atomic operations from smart pointers are unacceptable.
 4. **Custom data structures.** Linked lists, trees, and graphs often use raw pointers internally
- while exposing smart pointer interfaces.
+   while exposing smart pointer interfaces.
 
 ## 6. Strict Aliasing and Pointers [N4950 §6.8.4]
 
@@ -601,22 +606,22 @@ Compile-time type punning facility that is guaranteed correct.
 
 ## 7. Alignment and Pointers
 
-Every type `T` has an alignment requirement, `alignof(T)`Which is a power-of-two integer. A
-Pointer `T*` is guaranteed to point to an address that is a multiple of `alignof(T)` [N4950 §7.7.2].
+Every type `T` has an alignment requirement, `alignof(T)`Which is a power-of-two integer. A Pointer
+`T*` is guaranteed to point to an address that is a multiple of `alignof(T)` [N4950 §7.7.2].
 
 ### Alignment Requirements by Type
 
-| Type | Typical Alignment | Notes |
-| :------------------------ | :---------------- | :------------------------------ |
-| `char``int8_t` | 1 | Any address |
-| `int16_t``short` | 2 | Even address |
-| `int32_t``int``float` | 4 | 4-byte aligned |
-| `int64_t``double` | 8 | 8-byte aligned |
-| `__int128` | 16 | 16-byte aligned |
-| `__m128` | 16 | SSE requirement |
-| `__m256` | 32 | AVX requirement |
-| `max_align_t` | 16 (typical) | Maximum fundamental alignment |
-| `std::max_align_t` | Implementation | Alignment of the largest scalar |
+| Type                  | Typical Alignment | Notes                           |
+| :-------------------- | :---------------- | :------------------------------ |
+| `char``int8_t`        | 1                 | Any address                     |
+| `int16_t``short`      | 2                 | Even address                    |
+| `int32_t``int``float` | 4                 | 4-byte aligned                  |
+| `int64_t``double`     | 8                 | 8-byte aligned                  |
+| `__int128`            | 16                | 16-byte aligned                 |
+| `__m128`              | 16                | SSE requirement                 |
+| `__m256`              | 32                | AVX requirement                 |
+| `max_align_t`         | 16 (typical)      | Maximum fundamental alignment   |
+| `std::max_align_t`    | Implementation    | Alignment of the largest scalar |
 
 ### `std::aligned_alloc` for Custom Alignment
 
@@ -743,8 +748,8 @@ Classes of bugs by construction.
 
 ### Comparing Pointers from Different Arrays
 
-Comparing relational operators (`&lt;``&gt;``&lt;=``&gt;=`) on pointers that do not point into
-The same array is undefined behavior [N4950 §7.6.9]. Equality operators (`==``!=`) are always
+Comparing relational operators (`&lt;``&gt;``&lt;=``&gt;=`) on pointers that do not point into The
+same array is undefined behavior [N4950 §7.6.9]. Equality operators (`==``!=`) are always
 Well-defined:
 
 ```cpp

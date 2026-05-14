@@ -1,6 +1,8 @@
 ---
 title: Quantitative Chemistry
-description: "Quantitative Chemistry — 1. Relative Formula Mass; 1.1 Calculating Relative Formula Mass; 1.2 Conservation of Mass and Balancing Equations."
+description:
+  'Quantitative Chemistry — 1. Relative Formula Mass; 1.1 Calculating Relative Formula Mass; 1.2
+  Conservation of Mass and Balancing Equations.'
 date: 2026-04-14
 tags:
   - Chemistry
@@ -9,11 +11,10 @@ categories:
   - Chemistry
 slug: quantitative-chemistry
 ---
+
 ## Quantitative Chemistry
 
-:::info
-Board Coverage AQA Paper 1 | Edexcel Paper 1 | OCR A Gateway C3 | WJEC C3
-:::
+:::info Board Coverage AQA Paper 1 | Edexcel Paper 1 | OCR A Gateway C3 | WJEC C3 :::
 
 ## 1. Relative Formula Mass
 
@@ -30,11 +31,9 @@ $$M_r(\mathrm{CaCO{}_3) = 40.1 + 12.0 + (3 \times 16.0) = 100.1$$
 
 $$M_r = (2 \times 14.0) + (8 \times 1.0) + 32.1 + (4 \times 16.0) = 28 + 8 + 32.1 + 64 = 132.1$$
 
-:::warning
-Remember to multiply the relative atomic mass of each atom by the number of that atom in
+:::warning Remember to multiply the relative atomic mass of each atom by the number of that atom in
 The formula, including atoms inside brackets. The subscript outside the bracket applies to every
-Atom inside.
-:::
+Atom inside. :::
 
 **Worked Example.** Calculate $M_r$ for Cu(NO$_3$)$_2$.
 
@@ -53,14 +52,15 @@ $$M_r = 2(55.8) + 3(16.0) = 111.6 + 48.0 = 159.6$$
 In a balanced chemical equation, the total $M_r$ of reactants equals the total $M_r$ of products.
 This is a direct consequence of the conservation of mass.
 
-**Worked Example.** Verify that the equation $\mathrm{CaCO{}_3 \to \mathrm{CaO{} + \mathrm{CO{}_2$ obeys the
-Law of conservation of mass.
+**Worked Example.** Verify that the equation $\mathrm{CaCO{}_3 \to \mathrm{CaO{} + \mathrm{CO{}_2$
+obeys the Law of conservation of mass.
 
 $M_r(\mathrm{CaCO{}_3) = 100.1$$M_r(\mathrm{CaO{}) = 56.1$$M_r(\mathrm{CO{}_2) = 44.0$.
 
 $100.1 = 56.1 + 44.0 = 100.1$. The equation is balanced.
 
-**Worked Example.** Verify the conservation of mass for: $2\mathrm{Mg{} + \mathrm{O{}_2 \to 2\mathrm{MgO{}$.
+**Worked Example.** Verify the conservation of mass for:
+$2\mathrm{Mg{} + \mathrm{O{}_2 \to 2\mathrm{MgO{}$.
 
 $$2(24.3) + 2(16.0) = 48.6 + 32.0 = 80.6$$ $$2(24.3 + 16.0) = 2(40.3) = 80.6$$
 
@@ -338,7 +338,8 @@ Reactant? What mass of water is formed?
 
 $$2\mathrm{H{}_2 + \mathrm{O{}_2 \to 2\mathrm{H{}_2\mathrm{O{}$$
 
-$$n(\mathrm{H{}_2) = \frac{8}{2} = 4 \mathrm{ mol{}$$ $$n(\mathrm{O{}_2) = \frac{32}{32} = 1 \mathrm{ mol{}$$
+$$n(\mathrm{H{}_2) = \frac{8}{2} = 4 \mathrm{ mol{}$$
+$$n(\mathrm{O{}_2) = \frac{32}{32} = 1 \mathrm{ mol{}$$
 
 Divide by coefficients: H$_2$: $4/2 = 2$O$_2$: $1/1 = 1$. O$_2$ gives the smaller value, so it is
 Limiting.
@@ -397,16 +398,17 @@ End up in the desired product.
 
 $$\mathrm{Atom economy{} = \frac{M_r \mathrm{ of desired product{}}{\sum M_r \mathrm{ of all products{}} \times 100\%$$
 
-**Worked Example.** For the reaction $\mathrm{CaCO{}_3 \to \mathrm{CaO{} + \mathrm{CO{}_2$Calculate the
-Atom economy if CaO is the desired product.
+**Worked Example.** For the reaction $\mathrm{CaCO{}_3 \to \mathrm{CaO{} + \mathrm{CO{}_2$Calculate
+the Atom economy if CaO is the desired product.
 
 $$\mathrm{Atom economy{} = \frac{56}{56 + 44} \times 100\% = \frac{56}{100} \times 100\% = 56\%$$
 
 **Note:** Addition reactions have 100% atom economy. Reactions that produce waste products have
 Lower atom economy.
 
-**Worked Example.** For the reaction $\mathrm{CH{}_4 + \mathrm{H{}_2\mathrm{O{} \to \mathrm{CO{} + 3\mathrm{H{}_2$
-Calculate the atom economy if H$_2$ is the desired product.
+**Worked Example.** For the reaction
+$\mathrm{CH{}_4 + \mathrm{H{}_2\mathrm{O{} \to \mathrm{CO{} + 3\mathrm{H{}_2$ Calculate the atom
+economy if H$_2$ is the desired product.
 
 $$\mathrm{Atom economy{} = \frac{3 \times 2}{28 + 3 \times 2} = \frac{6}{34} \times 100\% = 17.6\%$$
 
@@ -414,7 +416,8 @@ This is a very low atom economy, meaning most of the mass of the reactants ends 
 (CO) rather than the desired product (H$_2$).
 
 **Worked Example.** Calculate the atom economy for the reaction of iron with copper(II) sulfate:
-$\mathrm{Fe{} + \mathrm{CuSO{}_4 \to \mathrm{FeSO{}_4 + \mathrm{Cu{}$Where copper is the desired product.
+$\mathrm{Fe{} + \mathrm{CuSO{}_4 \to \mathrm{FeSO{}_4 + \mathrm{Cu{}$Where copper is the desired
+product.
 
 $$\mathrm{Atom economy{} = \frac{63.5}{151.9 + 63.5} = \frac{63.5}{215.4} \times 100\% = 29.5\%$$
 
@@ -424,11 +427,11 @@ In industry, both yield and atom economy are important. A reaction with high ato
 Yield may waste less material per mole of reactant but produce little product overall. A reaction
 With high yield but low atom economy produces a lot of waste. The best processes maximise both.
 
-| Reaction | Atom Economy | Comment |
+| Reaction                                         | Atom Economy | Comment                      |
 | ------------------------------------------------ | ------------ | ---------------------------- |
-| Addition (e.g. H$_2$ + Cl$_2$ $\to$ 2HCl) | 100% | No waste products |
-| Decomposition (CaCO$_3$ $\to$ CaO + CO$_2$) | 56% | CO$_2$ is waste |
-| Displacement (Fe + CuSO$_4$ $\to$ FeSO$_4$ + Cu) | 100% | All atoms end up in products |
+| Addition (e.g. H$_2$ + Cl$_2$ $\to$ 2HCl)        | 100%         | No waste products            |
+| Decomposition (CaCO$_3$ $\to$ CaO + CO$_2$)      | 56%          | CO$_2$ is waste              |
+| Displacement (Fe + CuSO$_4$ $\to$ FeSO$_4$ + Cu) | 100%         | All atoms end up in products |
 
 ## 6. The Mole and Gas Volumes in Calculations
 
@@ -584,24 +587,24 @@ Since the yield exceeds 100%, this indicates experimental error -- likely the pr
 ## Common Pitfalls
 
 - **Forgetting to convert between cm$^3$ and dm$^3$.** 1000 cm$^3$ = 1 dm$^3$. Divide cm$^3$ by 1000
- to get dm$^3$. This is the single most common arithmetic error in quantitative chemistry.
+  to get dm$^3$. This is the single most common arithmetic error in quantitative chemistry.
 - **Using the wrong mole ratio.** Always check the balanced equation carefully. The coefficients
- directly give the mole ratio.
+  directly give the mole ratio.
 - **Identifying the wrong limiting reactant.** Compare the actual mole ratio with the stoichiometric
- ratio. Divide each number of moles by its coefficient: the smallest result is the limiting
- reactant.
+  ratio. Divide each number of moles by its coefficient: the smallest result is the limiting
+  reactant.
 - **Confusing percentage yield with atom economy.** Yield is about practical losses; atom economy is
- about theoretical efficiency. A reaction can have 100% yield but 50% atom economy (or vice versa).
+  about theoretical efficiency. A reaction can have 100% yield but 50% atom economy (or vice versa).
 - **Forgetting that the molar volume of gas (24 dm$^3$) applies at RTP**, not at standard
- temperature and pressure (STP uses 22.4 dm$^3$). Check which conditions are specified.
+  temperature and pressure (STP uses 22.4 dm$^3$). Check which conditions are specified.
 - **Arithmetic errors in calculating $M_r$.** Always double-check, especially with brackets and
- subscripts.
+  subscripts.
 - **Forgetting to include water of crystallisation in $M_r$ calculations.** When calculating the
- $M_r$ of a hydrated salt, include the mass of the water molecules.
+  $M_r$ of a hydrated salt, include the mass of the water molecules.
 - **Using the molar volume for solids or liquids.** The molar volume of 24 dm$^3$/mol applies only
- to gases at RTP.
+  to gases at RTP.
 - **Not reading the question carefully for limiting reactant problems.** If a reactant is "in
- excess", it is not the limiting reactant.
+  excess", it is not the limiting reactant.
 
 ## Practice Questions
 
@@ -610,59 +613,59 @@ Since the yield exceeds 100%, this indicates experimental error -- likely the pr
 2. How many moles are there in 22 g of CO$_2$?
 
 3. 6 g of magnesium reacts with excess hydrochloric acid. Calculate the volume of hydrogen produced
- at RTP.
+   at RTP.
 
 4. 25 cm$^3$ of 0.5 mol/dm$^3$ H$_2$SO$_4$ reacts with NaOH. Calculate the mass of Na$_2$SO$_4$
- produced.
+   produced.
 
 5. 10 g of iron is heated with 6.4 g of sulfur to form iron(II) sulfide. Identify the limiting
- reactant and calculate the maximum mass of FeS that can be produced.
+   reactant and calculate the maximum mass of FeS that can be produced.
 
 6. The theoretical yield of a reaction is 25 g, but the actual yield is 20 g. Calculate the
- percentage yield.
+   percentage yield.
 
 7. Calculate the atom economy for the reaction:
- $\mathrm{CH{}_4 + \mathrm{H{}_2\mathrm{O{} \to \mathrm{CO{} + 3\mathrm{H{}_2$Where H$_2$ is the desired
- product.
+   $\mathrm{CH{}_4 + \mathrm{H{}_2\mathrm{O{} \to \mathrm{CO{} + 3\mathrm{H{}_2$Where H$_2$ is the
+   desired product.
 
 8. A solution is made by dissolving 12 g of NaOH in water to make 500 cm$^3$ of solution. Calculate
- the concentration in mol/dm$^3$.
+   the concentration in mol/dm$^3$.
 
 9. In a titration, 20 cm$^3$ of 0.1 mol/dm$^3$ HCl neutralises 25 cm$^3$ of NaOH solution. Calculate
- the concentration of the NaOH.
+   the concentration of the NaOH.
 
 10. 2.4 g of magnesium carbonate is heated until it decomposes completely. Calculate the mass of
- magnesium oxide produced and the volume of CO$_2$ released at RTP.
+    magnesium oxide produced and the volume of CO$_2$ released at RTP.
 
 11. A student dissolves 4.0 g of NaOH in 250 cm$^3$ of water, then dilutes 25 cm$^3$ of this
- solution to 100 cm$^3$. Calculate the concentration of the diluted solution.
+    solution to 100 cm$^3$. Calculate the concentration of the diluted solution.
 
 12. Calculate the percentage of water of crystallisation in CuSO$_4 \cdot 5$H$_2$O.
 
 13. 15.0 g of CaCO$_3$ is reacted with 100 cm$^3$ of 2.0 mol/dm$^3$ HCl. Calculate the mass of
- CaCl$_2$ produced and the volume of CO$_2$ released at RTP. Identify the limiting reactant.
+    CaCl$_2$ produced and the volume of CO$_2$ released at RTP. Identify the limiting reactant.
 
 14. Explain the difference between percentage yield and atom economy, and why both are important in
- the chemical industry.
+    the chemical industry.
 
 15. 3.36 g of iron(III) oxide is reduced by carbon monoxide according to the equation:
- $\mathrm{Fe{}_2\mathrm{O{}_3 + 3\mathrm{CO{} \to 2\mathrm{Fe{} + 3\mathrm{CO{}_2$. Calculate the mass of iron
- produced and the volume of CO$_2$ released at RTP.
+    $\mathrm{Fe{}_2\mathrm{O{}_3 + 3\mathrm{CO{} \to 2\mathrm{Fe{} + 3\mathrm{CO{}_2$. Calculate the
+    mass of iron produced and the volume of CO$_2$ released at RTP.
 
 16. What volume of 0.5 mol/dm$^3$ sulfuric acid is needed to react completely with 10 g of sodium
- hydroxide?
+    hydroxide?
 
 17. Calculate the percentage yield if 4.0 g of CaCO$_3$ produces 1.8 g of CaO. The equation is
- $\mathrm{CaCO{}_3 \to \mathrm{CaO{} + \mathrm{CO{}_2$.
+    $\mathrm{CaCO{}_3 \to \mathrm{CaO{} + \mathrm{CO{}_2$.
 
 18. What mass of aluminium is produced when 51 g of Al$_2$O$_3$ is electrolysed? (Assume 100%
- yield.)
+    yield.)
 
 19. A student wants to make 250 cm$^3$ of 0.10 mol/dm$^3$ HCl from 2.0 mol/dm$^3$ stock solution.
- What volume of stock solution is needed, and how much water must be added?
+    What volume of stock solution is needed, and how much water must be added?
 
 20. 8.0 g of CuSO$_4 \cdot x$H$_2$O is heated, leaving 5.1 g of anhydrous CuSO$_4$. Calculate $x$
- and state the full formula of the hydrated salt.
+    and state the full formula of the hydrated salt.
 
 ## 9. Multi-Step Calculations
 
@@ -688,7 +691,8 @@ Hydrogen produced occupies 1.22 dm$^3$ at RTP. Calculate the percentage purity o
 
 $$n(\mathrm{H{}_2) = \frac{1.22}{24} = 0.0508 \mathrm{ mol{}$$
 
-From $\mathrm{Mg{} + \mathrm{H{}_2\mathrm{SO{}_4 \to \mathrm{MgSO{}_4 + \mathrm{H{}_2$: mole ratio 1:1.
+From $\mathrm{Mg{} + \mathrm{H{}_2\mathrm{SO{}_4 \to \mathrm{MgSO{}_4 + \mathrm{H{}_2$: mole ratio
+1:1.
 
 $$m(\mathrm{Mg pure{}) = 0.0508 \times 24.3 = 1.23 \mathrm{ g{}$$
 
@@ -746,24 +750,25 @@ $$\mathrm{Percentage uncertainty{} = \frac{0.05}{22.50} \times 100\% = 0.22\%$$
 
 ## 11. Summary Table: Key Equations
 
-| Quantity | Equation | Units |
-| ------------------------ | -------------------------------------------------------------------- | ---------- |
-| Moles from mass | $n = m / M_r$ | mol |
-| Mass from moles | $m = n \times M_r$ | g |
-| Moles from gas volume | $n = V / 24$ | mol |
-| Gas volume from moles | $V = n \times 24$ | dm$^3$ |
-| Concentration | $c = n / V$ | mol/dm$^3$ |
-| Moles from concentration | $n = c \times V$ | mol |
-| Dilution | $c_1 V_1 = c_2 V_2$ | various |
-| Percentage yield | $\frac{\mathrm{actual{}}{\mathrm{theoretical{}} \times 100\%$ | % |
-| Atom economy | $\frac{M_r\mathrm{(desired){}}{\sum M_r\mathrm{(products){}} \times 100\%$ | % |
+| Quantity                 | Equation                                                                   | Units      |
+| ------------------------ | -------------------------------------------------------------------------- | ---------- |
+| Moles from mass          | $n = m / M_r$                                                              | mol        |
+| Mass from moles          | $m = n \times M_r$                                                         | g          |
+| Moles from gas volume    | $n = V / 24$                                                               | mol        |
+| Gas volume from moles    | $V = n \times 24$                                                          | dm$^3$     |
+| Concentration            | $c = n / V$                                                                | mol/dm$^3$ |
+| Moles from concentration | $n = c \times V$                                                           | mol        |
+| Dilution                 | $c_1 V_1 = c_2 V_2$                                                        | various    |
+| Percentage yield         | $\frac{\mathrm{actual{}}{\mathrm{theoretical{}} \times 100\%$              | %          |
+| Atom economy             | $\frac{M_r\mathrm{(desired){}}{\sum M_r\mathrm{(products){}} \times 100\%$ | %          |
 
 ## Practice Problems
 
 <details>
 <summary>Question 1: Moles and mass calculation</summary>
 
-Calculate the number of moles in $12.5 \mathrm{ g{}$ of calcium carbonate ($\mathrm{CaCO{}_3$). Then calculate the number of molecules.
+Calculate the number of moles in $12.5 \mathrm{ g{}$ of calcium carbonate ($\mathrm{CaCO{}_3$). Then
+calculate the number of molecules.
 
 </details>
 
@@ -781,7 +786,9 @@ Number of molecules $= 0.125 \times 6.02 \times 10^{23} = 7.53 \times 10^{22}$.
 <details>
 <summary>Question 2: Titration calculation</summary>
 
-$25.0 \mathrm{ cm{}^3$ of sodium hydroxide solution is titrated with $0.100 \mathrm{ mol/dm{}^3$ hydrochloric acid. The average titre is $20.0 \mathrm{ cm{}^3$. Calculate the concentration of the sodium hydroxide solution.
+$25.0 \mathrm{ cm{}^3$ of sodium hydroxide solution is titrated with $0.100 \mathrm{ mol/dm{}^3$
+hydrochloric acid. The average titre is $20.0 \mathrm{ cm{}^3$. Calculate the concentration of the
+sodium hydroxide solution.
 
 </details>
 
@@ -794,34 +801,39 @@ $\mathrm{NaOH{} + \mathrm{HCl{} \to \mathrm{NaCl{} + \mathrm{H{}_2\mathrm{O{}$ (
 
 Moles of $\mathrm{NaOH{} = 0.00200 \mathrm{ mol{}$.
 
-Concentration of $\mathrm{NaOH{} = \frac{0.00200}{25.0/1000} = \frac{0.00200}{0.0250} = 0.0800 \mathrm{ mol/dm{}^3$.
+Concentration of
+$\mathrm{NaOH{} = \frac{0.00200}{25.0/1000} = \frac{0.00200}{0.0250} = 0.0800 \mathrm{ mol/dm{}^3$.
 
 </details>
 
 <details>
 <summary>Question 3: Limiting reactant</summary>
 
-$6.0 \mathrm{ g{}$ of magnesium reacts with $10.0 \mathrm{ g{}$ of hydrochloric acid ($\mathrm{HCl{}$): $\mathrm{Mg{} + 2\mathrm{HCl{} \to \mathrm{MgCl{}_2 + \mathrm{H{}_2$. Identify the limiting reactant and calculate the mass of hydrogen produced.
+$6.0 \mathrm{ g{}$ of magnesium reacts with $10.0 \mathrm{ g{}$ of hydrochloric acid
+($\mathrm{HCl{}$): $\mathrm{Mg{} + 2\mathrm{HCl{} \to \mathrm{MgCl{}_2 + \mathrm{H{}_2$. Identify
+the limiting reactant and calculate the mass of hydrogen produced.
 
 </details>
 
 <details>
 <summary>Answer</summary>
 
-Moles of $\mathrm{Mg{} = 6.0/24.3 = 0.247 \mathrm{ mol{}$.
-Moles of $\mathrm{HCl{} = 10.0/36.5 = 0.274 \mathrm{ mol{}$.
+Moles of $\mathrm{Mg{} = 6.0/24.3 = 0.247 \mathrm{ mol{}$. Moles of
+$\mathrm{HCl{} = 10.0/36.5 = 0.274 \mathrm{ mol{}$.
 
-Required $\mathrm{HCl{} = 2 \times 0.247 = 0.494 \mathrm{ mol{}$. Only $0.274 \mathrm{ mol{}$ available, so $\mathrm{HCl{}$ is limiting.
+Required $\mathrm{HCl{} = 2 \times 0.247 = 0.494 \mathrm{ mol{}$. Only $0.274 \mathrm{ mol{}$
+available, so $\mathrm{HCl{}$ is limiting.
 
-Moles of $\mathrm{H{}_2 = 0.274/2 = 0.137 \mathrm{ mol{}$.
-Mass of $\mathrm{H{}_2 = 0.137 \times 2.0 = 0.274 \mathrm{ g{}$.
+Moles of $\mathrm{H{}_2 = 0.274/2 = 0.137 \mathrm{ mol{}$. Mass of
+$\mathrm{H{}_2 = 0.137 \times 2.0 = 0.274 \mathrm{ g{}$.
 
 </details>
 
 <details>
 <summary>Question 4: Percentage yield</summary>
 
-When $10.0 \mathrm{ g{}$ of calcium carbonate is heated, $4.20 \mathrm{ g{}$ of calcium oxide is produced: $\mathrm{CaCO{}_3 \to \mathrm{CaO{} + \mathrm{CO{}_2$. Calculate the percentage yield.
+When $10.0 \mathrm{ g{}$ of calcium carbonate is heated, $4.20 \mathrm{ g{}$ of calcium oxide is
+produced: $\mathrm{CaCO{}_3 \to \mathrm{CaO{} + \mathrm{CO{}_2$. Calculate the percentage yield.
 
 </details>
 
@@ -841,7 +853,9 @@ Percentage yield $= (4.20/5.60) \times 100 = 75.0\%$.
 <details>
 <summary>Question 5: Molar gas volume</summary>
 
-Calculate the volume of carbon dioxide produced (at room temperature and pressure) when $5.0 \mathrm{ g{}$ of calcium carbonate reacts with excess hydrochloric acid. One mole of any gas occupies $24.0 \mathrm{ dm{}^3$ at RTP.
+Calculate the volume of carbon dioxide produced (at room temperature and pressure) when
+$5.0 \mathrm{ g{}$ of calcium carbonate reacts with excess hydrochloric acid. One mole of any gas
+occupies $24.0 \mathrm{ dm{}^3$ at RTP.
 
 </details>
 

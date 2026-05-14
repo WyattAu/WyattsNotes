@@ -1,9 +1,12 @@
 ---
 id: garbage-collection
 title: Garbage Collection
-description: "Garbage Collection — GC Fundamentals; What Is Garbage?; GC Roots; Reachability Phases with worked examples and exam-style questions."
+description:
+  'Garbage Collection — GC Fundamentals; What Is Garbage?; GC Roots; Reachability Phases with worked
+  examples and exam-style questions.'
 slug: garbage-collection
 ---
+
 ## GC Fundamentals
 
 ### What Is Garbage?
@@ -67,13 +70,13 @@ Heap
 ### Young Generation
 
 - **Eden:** All new objects (except very large ones) are allocated in Eden. When Eden fills up, a
- **minor GC** (young GC) is triggered.
+  **minor GC** (young GC) is triggered.
 - **Survivor spaces:** Two equally-sized spaces (S0 and S1) that act as a holding area. After a
- minor GC, surviving objects from Eden and one survivor space are copied to the other survivor
- space. Objects accumulate an "age" counter; each time they survive a GC, the age increments.
+  minor GC, surviving objects from Eden and one survivor space are copied to the other survivor
+  space. Objects accumulate an "age" counter; each time they survive a GC, the age increments.
 
-- **Promotion:** When an object's age exceeds a threshold (`-XX:MaxTenuringThreshold`Default 15
- for G1, 6 for Parallel), it is promoted to the old generation.
+- **Promotion:** When an object's age exceeds a threshold (`-XX:MaxTenuringThreshold`Default 15 for
+  G1, 6 for Parallel), it is promoted to the old generation.
 
 ```bash
 # Young generation sizing
@@ -164,9 +167,9 @@ Especially during full GC on large heaps.
 
 ### G1 GC
 
-The default collector since JDK 9. Divides the heap into fixed-size regions ( 2048 regions,
-Each 1-32 MB). The collector can selectively collect regions, mixing young and old generation
-Collection in a single pass ("mixed collection").
+The default collector since JDK 9. Divides the heap into fixed-size regions ( 2048 regions, Each
+1-32 MB). The collector can selectively collect regions, mixing young and old generation Collection
+in a single pass ("mixed collection").
 
 ```bash
 -XX:+UseG1GC                      # Enable G1 GC (default since JDK 9)
@@ -180,10 +183,10 @@ Collection in a single pass ("mixed collection").
 **G1 phases:**
 
 1. **Young-only collection** — collects Eden and survivor regions (same as minor GC in other
- collectors).
+   collectors).
 2. **Concurrent marking** — while the application runs, G1 marks live objects across all regions.
 3. **Mixed collection** — collects some young regions AND some old regions with the most garbage.
- Balances pause time against overall memory release.
+   Balances pause time against overall memory release.
 
 **G1 advantages:**
 
@@ -212,14 +215,14 @@ A scalable, low-latency collector designed for multi-TB heaps with pause times u
 **ZGC design:**
 
 - **Concurrent:** Almost all GC work (marking, relocation, compaction) happens concurrently with the
- application. STW pauses are limited to root scanning and a few other operations, under 1
- ms regardless of heap size.
+  application. STW pauses are limited to root scanning and a few other operations, under 1 ms
+  regardless of heap size.
 - **Colored pointers:** ZGC uses 64-bit pointers with metadata bits (color bits) to track object
- state (marked, relocated, finalized) without requiring per-object headers.
+  state (marked, relocated, finalized) without requiring per-object headers.
 - **Load barriers:** ZGC uses load barriers (triggered on every reference read) to detect and fix
- stale references. This is the main concurrency mechanism.
+  stale references. This is the main concurrency mechanism.
 - **Region-based:** Like G1, the heap is divided into regions, but ZGC regions are more dynamic (2
- MB, 32 MB, or N MB for large objects).
+  MB, 32 MB, or N MB for large objects).
 
 **ZGC limitations:**
 
@@ -249,13 +252,13 @@ Ms, no requests can be served during that time.
 Modern collectors (G1, ZGC, Shenandoah) perform significant work concurrently with the application.
 Only specific phases require STW pauses:
 
-| Collector | STW Phases | Concurrent Phases |
+| Collector  | STW Phases                          | Concurrent Phases                  |
 | ---------- | ----------------------------------- | ---------------------------------- |
-| Serial | All | None |
-| Parallel | All | None |
-| G1 | Root scanning, evacuation (partial) | Marking, remembered set processing |
-| ZGC | Root scanning (sub-ms) | Marking, relocation, compaction |
-| Shenandoah | Root scanning (sub-ms) | Marking, evacuation, compaction |
+| Serial     | All                                 | None                               |
+| Parallel   | All                                 | None                               |
+| G1         | Root scanning, evacuation (partial) | Marking, remembered set processing |
+| ZGC        | Root scanning (sub-ms)              | Marking, relocation, compaction    |
+| Shenandoah | Root scanning (sub-ms)              | Marking, evacuation, compaction    |
 
 ## GC Tuning Flags
 
@@ -344,10 +347,10 @@ Metrics to watch:
 
 1. **Static collections** — accumulating entries without removal.
 2. **Unclosed resources** — holding references through unclosed streams, connections, or
- `ThreadLocal` instances.
+   `ThreadLocal` instances.
 3. **Listener registration** — registering listeners but never unregistering.
 4. **Internal caches without eviction** — `HashMap` used as a cache without size limits or eviction
- policy.
+   policy.
 5. **`ThreadLocal` in thread pools** — values not cleaned up when tasks complete.
 6. **String interning** — interning unbounded unique strings.
 
@@ -433,10 +436,10 @@ Finalizers.** They are deprecated for removal since JDK 18.
 1. **Unpredictable timing** — there is no guarantee when (or if) the finalizer will run.
 2. **Performance** — finalizable objects require extra GC cycles.
 3. **Resurrection** — a finalizer can make the object reachable again by storing `this` in a static
- field.
+   field.
 4. **Exceptions in finalizers are silently swallowed** — they do not propagate.
 5. **Finalizer thread bottleneck** — a single finalizer thread processes all finalizable objects,
- creating a bottleneck.
+   creating a bottleneck.
 
 ```java
 // DEPRECATED — do not use
@@ -586,11 +589,9 @@ java -XX:+UseG1GC -Xms2g -Xmx2g -jar app.jar
 java -XX:+UseZGC -XX:MaxRAMPercentage=75.0 -jar app.jar
 ```
 
-:::tip
-Use `-XX:MaxRAMPercentage` instead of fixed `-Xmx` for containerized deployments. This allows
+:::tip Use `-XX:MaxRAMPercentage` instead of fixed `-Xmx` for containerized deployments. This allows
 The same container image to work with different memory limits without rebuilding. A value of 70-80%
-Is typical, leaving room for metaspace, native memory, and off-heap buffers.
-:::
+Is typical, leaving room for metaspace, native memory, and off-heap buffers. :::
 
 ### Native Memory Tracking
 
@@ -612,14 +613,14 @@ jcmd <pid> VM.native_memory detail scale=MB
 
 A typical memory breakdown for a JVM process:
 
-| Component | Typical Allocation |
+| Component      | Typical Allocation                 |
 | -------------- | ---------------------------------- |
-| Java heap | 60-75% of container memory |
-| Metaspace | 50-256 MB |
-| Thread stacks | 1 MB per thread (default `-Xss1m`) |
-| Code cache | 128-256 MB |
-| Direct buffers | Application-dependent |
-| GC overhead | 10-20% of heap |
+| Java heap      | 60-75% of container memory         |
+| Metaspace      | 50-256 MB                          |
+| Thread stacks  | 1 MB per thread (default `-Xss1m`) |
+| Code cache     | 128-256 MB                         |
+| Direct buffers | Application-dependent              |
+| GC overhead    | 10-20% of heap                     |
 
 ## GC Troubleshooting Workflow
 
@@ -635,7 +636,7 @@ A typical memory breakdown for a JVM process:
 - **Low throughput** — check GC time ratio. If GC takes more than 5-10% of CPU time, investigate.
 - **Heap exhaustion** — check old generation growth. Is it linear (memory leak) or stable?
 - **Allocation failure** — check allocation rate. If the young generation fills too fast, increase
- its size.
+  its size.
 
 ### Step 3: Analyze and Fix
 
@@ -657,11 +658,9 @@ After making changes, compare GC logs before and after. Look for:
 - Reduced promotion rate (fewer objects surviving to old generation).
 - No increase in full GC frequency.
 
-:::info
-JDK Mission Control (JMC) and Java Flight Recorder (JFR) provide the most comprehensive GC
+:::info JDK Mission Control (JMC) and Java Flight Recorder (JFR) provide the most comprehensive GC
 Analysis. JFR has near-zero overhead and can be enabled in production:
-`-XX:StartFlightRecording=duration=60s,filename=recording.jfr`
-:::
+`-XX:StartFlightRecording=duration=60s,filename=recording.jfr` :::
 
 ## GC Internals: Detailed Algorithms
 
@@ -670,13 +669,13 @@ Analysis. JFR has near-zero overhead and can be enabled in production:
 The classic GC algorithm used by Serial and Parallel collectors:
 
 1. **Mark phase** — Starting from GC roots, traverse the object graph and mark all reachable
- objects. This requires a STW pause. The Parallel collector uses multiple threads for marking.
+   objects. This requires a STW pause. The Parallel collector uses multiple threads for marking.
 
 2. **Sweep phase** — Scan the heap linearly. Unmarked objects are garbage. Their memory is added to
- free lists. Live objects are not moved.
+   free lists. Live objects are not moved.
 
 3. **Compact phase** — Move all live objects to the beginning of the heap, eliminating
- fragmentation. Update all references to moved objects. This requires another STW pause.
+   fragmentation. Update all references to moved objects. This requires another STW pause.
 
 **Time complexity:** O(heap size) for mark, O(heap size) for sweep, O(live objects) for compact. The
 Entire heap is scanned, so pause times scale linearly with heap size. This is why Serial and
@@ -691,19 +690,19 @@ Regions with the most garbage.
 **G1 concurrent marking cycle:**
 
 1. **Initial mark** — STW pause. Marks GC roots and marks the regions they point to as "dirty."
- Piggybacks on a young GC pause (minimal additional cost).
+   Piggybacks on a young GC pause (minimal additional cost).
 
 2. **Root region scanning** — Concurrent. Scans the dirty regions from the initial mark to find
- references to old generation regions.
+   references to old generation regions.
 
 3. **Concurrent marking** — Concurrent. Traces the object graph from roots to mark all live objects.
- Uses a SATB (Snapshot-At-The-Beginning) write barrier to handle mutations during marking.
+   Uses a SATB (Snapshot-At-The-Beginning) write barrier to handle mutations during marking.
 
 4. **Remark** — STW pause. Processes any remaining SATB buffers and completes marking. Reclaims
- completely empty regions.
+   completely empty regions.
 
 5. **Cleanup** — Optional concurrent phase. Resets region state and reclaims empty regions. May
- trigger mixed collections.
+   trigger mixed collections.
 
 **Mixed collections:** After a marking cycle, G1 selects old regions with the most reclaimable space
 (along with all young regions) and collects them. The number of mixed collections per cycle is
@@ -716,12 +715,12 @@ ZGC's design is fundamentally different from G1 and Parallel:
 **Colored pointers:** On 64-bit platforms, ZGC uses the high bits of each reference (which are
 Normally unused because no system has 2^48 bytes of addressable memory) to store metadata bits:
 
-| Bits | Usage |
+| Bits  | Usage                                              |
 | ----- | -------------------------------------------------- |
-| 0-41 | Object address (4 TB addressable) |
+| 0-41  | Object address (4 TB addressable)                  |
 | 42-43 | Metadata (Finalizable, Remapped, Marked1, Marked0) |
-| 44-62 | Unused (reserved for future use) |
-| 63 | Unused |
+| 44-62 | Unused (reserved for future use)                   |
+| 63    | Unused                                             |
 
 The metadata bits encode the state of the object: whether it has been marked, relocated, or
 Finalized. No per-object header space is needed for GC metadata.
@@ -731,7 +730,7 @@ Checks the metadata bits of the loaded reference:
 
 - If the reference points to a relocated object, the barrier fixes it to point to the new location.
 - If the reference points to a not-yet-marked object, the barrier marks it (or adds it to a marking
- queue).
+  queue).
 
 This is how ZGC achieves concurrent relocation — the GC can move objects while the application is
 Running, and the load barriers transparently fix any stale references the application encounters.
@@ -744,7 +743,7 @@ Running, and the load barriers transparently fix any stale references the applic
 4. **Concurrent relocate prepare** — Concurrent. Identify regions to evacuate.
 5. **Pause relocate start** — STW (sub-ms). Select relocation set.
 6. **Concurrent relocate** — Concurrent. Move live objects to new regions. Load barriers fix stale
- references.
+   references.
 
 ### Generational ZGC (JDK 21+)
 
@@ -757,8 +756,8 @@ Data the GC must scan during old generation collections.
 -XX:+UseZGC -XX:+ZGenerational
 ```
 
-Generational ZGC is the default ZGC mode in JDK 21+. It uses 4-8x less memory for GC
-Metadata compared to non-generational ZGC and achieves higher throughput for most workloads.
+Generational ZGC is the default ZGC mode in JDK 21+. It uses 4-8x less memory for GC Metadata
+compared to non-generational ZGC and achieves higher throughput for most workloads.
 
 ## Practical GC Tuning Examples
 

@@ -1,6 +1,8 @@
 ---
-title: "Differential Equations"
-description: "IB Mathematics — first order separable equations, integrating factors, second order homogeneous equations, applications, and numerical methods."
+title: 'Differential Equations'
+description:
+  'IB Mathematics — first order separable equations, integrating factors, second order homogeneous
+  equations, applications, and numerical methods.'
 slug: differential-equations
 ---
 
@@ -12,9 +14,9 @@ A **differential equation** (DE) is an equation involving derivatives of an unkn
 **first order** DE involves only the first derivative. A DE is **ordinary** (ODE) if all derivatives
 Are with respect to a single variable.
 
-The **order** of a DE is the highest derivative that appears. The **general solution** of an
-$n$-th order DE contains $n$ arbitrary constants. A **particular solution** is obtained by imposing
-Initial or boundary conditions.
+The **order** of a DE is the highest derivative that appears. The **general solution** of an $n$-th
+order DE contains $n$ arbitrary constants. A **particular solution** is obtained by imposing Initial
+or boundary conditions.
 
 ---
 
@@ -189,8 +191,7 @@ Characteristic equation: $\lambda^2 - 1 = 0 \implies \lambda = \pm 1$.
 
 $$y = Ae^x + Be^{-x}, \qquad y' = Ae^x - Be^{-x}$$
 
-$y(0) = A + B = 0 \implies B = -A$.
-$y'(0) = A - B = 1 \implies 2A = 1 \implies A = \dfrac{1}{2}$.
+$y(0) = A + B = 0 \implies B = -A$. $y'(0) = A - B = 1 \implies 2A = 1 \implies A = \dfrac{1}{2}$.
 
 $$y = \frac{1}{2}e^x - \frac{1}{2}e^{-x} = \sinh x$$
 
@@ -225,8 +226,9 @@ $k \gt 0$.
 
 Solution: $T(t) = T_{\mathrm{env}} + (T_0 - T_{\mathrm{env}})e^{-kt}$.
 
-**Example.** A body at $90\,{}^{\circ}\mathrm{C}$ is placed in a room at $20\,{}^{\circ}\mathrm{C}$. After
-$10$ minutes, its temperature is $60\,{}^{\circ}\mathrm{C}$. Find its temperature after $30$ minutes.
+**Example.** A body at $90\,{}^{\circ}\mathrm{C}$ is placed in a room at $20\,{}^{\circ}\mathrm{C}$.
+After $10$ minutes, its temperature is $60\,{}^{\circ}\mathrm{C}$. Find its temperature after $30$
+minutes.
 
 $$60 = 20 + 70e^{-10k} \implies e^{-10k} = \frac{40}{70} = \frac{4}{7}$$
 
@@ -247,14 +249,14 @@ $\phi = \arctan\!\left(-\dfrac{B}{A}\right)$.
 
 **Key quantities:**
 
-| Quantity | Formula |
-| :--- | :--- |
-| Amplitude | $R = \sqrt{A^2 + B^2}$ |
-| Period | $T = \dfrac{2\pi}{\omega}$ |
-| Frequency | $f = \dfrac{1}{T} = \dfrac{\omega}{2\pi}$ |
-| Angular frequency | $\omega = 2\pi f$ |
-| Maximum velocity | $v_{\max} = R\omega$ |
-| Maximum acceleration | $a_{\max} = R\omega^2$ |
+| Quantity             | Formula                                   |
+| :------------------- | :---------------------------------------- |
+| Amplitude            | $R = \sqrt{A^2 + B^2}$                    |
+| Period               | $T = \dfrac{2\pi}{\omega}$                |
+| Frequency            | $f = \dfrac{1}{T} = \dfrac{\omega}{2\pi}$ |
+| Angular frequency    | $\omega = 2\pi f$                         |
+| Maximum velocity     | $v_{\max} = R\omega$                      |
+| Maximum acceleration | $a_{\max} = R\omega^2$                    |
 
 **Example.** A particle moves with SHM. At $t = 0$$x = 3$ and $v = 4$. The angular frequency is
 $\omega = 2$. Find $x(t)$.
@@ -279,18 +281,18 @@ Characteristic equation: $\lambda^2 + 2\gamma\lambda + \omega_0^2 = 0$.
 
 $$\lambda = -\gamma \pm \sqrt{\gamma^2 - \omega_0^2}$$
 
-| Condition | Type of damping | Solution |
-| :--- | :--- | :--- |
-| $\gamma^2 \gt \omega_0^2$ | Overdamped | Two distinct real roots: exponentials |
-| $\gamma^2 = \omega_0^2$ | Critically damped | Repeated root: $(A + Bt)e^{-\gamma t}$ |
-| $\gamma^2 \lt \omega_0^2$ | Underdamped | $\lambda = -\gamma \pm i\omega_d$: decaying oscillation |
+| Condition                 | Type of damping   | Solution                                                |
+| :------------------------ | :---------------- | :------------------------------------------------------ |
+| $\gamma^2 \gt \omega_0^2$ | Overdamped        | Two distinct real roots: exponentials                   |
+| $\gamma^2 = \omega_0^2$   | Critically damped | Repeated root: $(A + Bt)e^{-\gamma t}$                  |
+| $\gamma^2 \lt \omega_0^2$ | Underdamped       | $\lambda = -\gamma \pm i\omega_d$: decaying oscillation |
 
 Where $\omega_d = \sqrt{\omega_0^2 - \gamma^2}$ is the **damped frequency**.
 
 ### Mechanics Applications
 
-**Example.** A particle of mass $m$ falls under gravity with air resistance proportional to velocity.
-Find the velocity as a function of time.
+**Example.** A particle of mass $m$ falls under gravity with air resistance proportional to
+velocity. Find the velocity as a function of time.
 
 Taking downward as positive, with drag force $-kv$:
 
@@ -314,8 +316,8 @@ The **terminal velocity** is $v_T = \dfrac{mg}{k}$ (as $t \to \infty$).
 
 ### Euler's Method
 
-For the initial value problem $\dfrac{dy}{dx} = f(x, y)$ with $y(x_0) = y_0$Euler's method
-Generates approximate values using:
+For the initial value problem $\dfrac{dy}{dx} = f(x, y)$ with $y(x_0) = y_0$Euler's method Generates
+approximate values using:
 
 $$y_{n+1} = y_n + h \cdot f(x_n, y_n)$$
 
@@ -327,21 +329,22 @@ Where $h$ is the step size.
 
 1. Set $x_0, y_0$ from the initial condition.
 2. For each step $n = 0, 1, 2, \ldots$:
- - Compute the slope: $m_n = f(x_n, y_n)$.
- - Update: $y_{n+1} = y_n + h \cdot m_n$.
- - Advance: $x_{n+1} = x_n + h$.
+
+- Compute the slope: $m_n = f(x_n, y_n)$.
+- Update: $y_{n+1} = y_n + h \cdot m_n$.
+- Advance: $x_{n+1} = x_n + h$.
 
 **Example.** Use Euler's method with $h = 0.1$ to approximate $y(0.5)$ for
 $\dfrac{dy}{dx} = x + y$$y(0) = 1$.
 
 | $n$ | $x_n$ | $y_n$ | $f(x_n, y_n) = x_n + y_n$ |
-| :-- | :---- | :---- | :------------------------- |
-| 0 | 0.0 | 1.000 | 1.000 |
-| 1 | 0.1 | 1.100 | 1.200 |
-| 2 | 0.2 | 1.220 | 1.420 |
-| 3 | 0.3 | 1.362 | 1.662 |
-| 4 | 0.4 | 1.528 | 1.928 |
-| 5 | 0.5 | 1.721 | — |
+| :-- | :---- | :---- | :------------------------ |
+| 0   | 0.0   | 1.000 | 1.000                     |
+| 1   | 0.1   | 1.100 | 1.200                     |
+| 2   | 0.2   | 1.220 | 1.420                     |
+| 3   | 0.3   | 1.362 | 1.662                     |
+| 4   | 0.4   | 1.528 | 1.928                     |
+| 5   | 0.5   | 1.721 | —                         |
 
 Euler's approximation: $y(0.5) \approx 1.721$.
 
@@ -355,8 +358,8 @@ $$y = 2e^x - x - 1$$
 
 At $x = 0.5$: $y = 2e^{0.5} - 1.5 \approx 1.797$.
 
-The Euler approximation of $1.721$ underestimates the true value by about $0.076$A relative error
-Of roughly $4.2\%$.
+The Euler approximation of $1.721$ underestimates the true value by about $0.076$A relative error Of
+roughly $4.2\%$.
 
 ### Error Analysis
 
@@ -367,19 +370,16 @@ Proportional to $h$. Halving the step size approximately halves the global error
 
 A more accurate variant uses the average of the slopes at the beginning and end of each step:
 
-$$k_1 = f(x_n, y_n)$$
-$$k_2 = f(x_n + h, y_n + hk_1)$$
-$$y_{n+1} = y_n + \frac{h}{2}(k_1 + k_2)$$
+$$k_1 = f(x_n, y_n)$$ $$k_2 = f(x_n + h, y_n + hk_1)$$ $$y_{n+1} = y_n + \frac{h}{2}(k_1 + k_2)$$
 
 This is a **second order** method with global error proportional to $h^2$Offering significantly
 Better accuracy than the basic Euler method for the same step size.
 
-:::warning
-Warning
+:::warning Warning
 
-Euler's method can produce wildly inaccurate results for stiff equations or when the step size is too
-Large. Always check whether the approximation is reasonable by comparing with qualitative behaviour
-Of the DE (equilibrium, asymptotes, periodicity).
+Euler's method can produce wildly inaccurate results for stiff equations or when the step size is
+too Large. Always check whether the approximation is reasonable by comparing with qualitative
+behaviour Of the DE (equilibrium, asymptotes, periodicity).
 
 :::
 
@@ -398,7 +398,8 @@ Separate variables:
 
 $$\frac{dy}{y^2 - 1} = \frac{dx}{x}$$
 
-Apply partial fractions to the left side: $\dfrac{1}{y^2 - 1} = \dfrac{1}{2(y-1)} - \dfrac{1}{2(y+1)}$.
+Apply partial fractions to the left side:
+$\dfrac{1}{y^2 - 1} = \dfrac{1}{2(y-1)} - \dfrac{1}{2(y+1)}$.
 
 $$\int \frac{1}{2(y-1)} - \frac{1}{2(y+1)}\,dy = \int \frac{dx}{x}$$
 
@@ -474,8 +475,8 @@ $$y = e^{2x}\!\left(\cos 3x + \frac{4}{3}\sin 3x\right)$$
 
 **Worked Example: Newton's Law of Cooling with Two Data Points**
 
-A cup of coffee at $85\,{}^{\circ}\mathrm{C}$ is placed in a room at $22\,{}^{\circ}\mathrm{C}$. After
-$5$ minutes the temperature is $70\,{}^{\circ}\mathrm{C}$And after $10$ minutes it is
+A cup of coffee at $85\,{}^{\circ}\mathrm{C}$ is placed in a room at $22\,{}^{\circ}\mathrm{C}$.
+After $5$ minutes the temperature is $70\,{}^{\circ}\mathrm{C}$And after $10$ minutes it is
 $60\,{}^{\circ}\mathrm{C}$. Find the temperature after $20$ minutes.
 
 <details>
@@ -499,21 +500,20 @@ $$T(20) = 22 + 63\left(\frac{38}{63}\right)^2 = 22 + \frac{1444}{63} \approx 22 
 
 **Worked Example: Euler's Method with Small Step Size**
 
-Use Euler's method with $h = 0.05$ to approximate $y(0.3)$ for $\dfrac{dy}{dx} = x - y$
-$y(0) = 2$.
+Use Euler's method with $h = 0.05$ to approximate $y(0.3)$ for $\dfrac{dy}{dx} = x - y$ $y(0) = 2$.
 
 <details>
 <summary>Solution</summary>
 
-| $n$ | $x_n$ | $y_n$ | $f(x_n, y_n) = x_n - y_n$ |
-| :-- | :---- | :---- | :------------------------- |
-| 0 | 0.00 | 2.0000 | $-2.0000$ |
-| 1 | 0.05 | 1.9000 | $-1.8500$ |
-| 2 | 0.10 | 1.8075 | $-1.7075$ |
-| 3 | 0.15 | 1.7221 | $-1.5721$ |
-| 4 | 0.20 | 1.6435 | $-1.4435$ |
-| 5 | 0.25 | 1.5713 | $-1.3213$ |
-| 6 | 0.30 | 1.5053 | — |
+| $n$ | $x_n$ | $y_n$  | $f(x_n, y_n) = x_n - y_n$ |
+| :-- | :---- | :----- | :------------------------ |
+| 0   | 0.00  | 2.0000 | $-2.0000$                 |
+| 1   | 0.05  | 1.9000 | $-1.8500$                 |
+| 2   | 0.10  | 1.8075 | $-1.7075$                 |
+| 3   | 0.15  | 1.7221 | $-1.5721$                 |
+| 4   | 0.20  | 1.6435 | $-1.4435$                 |
+| 5   | 0.25  | 1.5713 | $-1.3213$                 |
+| 6   | 0.30  | 1.5053 | —                         |
 
 Euler approximation: $y(0.3) \approx 1.505$.
 
@@ -534,36 +534,36 @@ Error: $|1.522 - 1.505| \approx 0.017$Roughly $1.1\%$.
 ## Common Pitfalls
 
 1. **Forgetting the constant of integration.** When solving a separable equation, each side of the
- separated equation produces its own constant. These combine into a single constant $C$But omitting
- it entirely loses the generality of the solution.
+   separated equation produces its own constant. These combine into a single constant $C$But
+   omitting it entirely loses the generality of the solution.
 
 2. **Losing solutions during separation.** Dividing by $g(y)$ implicitly assumes $g(y) \ne 0$. The
- equilibrium solution $g(y) = 0$ must be checked separately. For example, in $\dfrac{dy}{dx} = y^2$
- dividing by $y^2$ loses the solution $y = 0$.
+   equilibrium solution $g(y) = 0$ must be checked separately. For example, in
+   $\dfrac{dy}{dx} = y^2$ dividing by $y^2$ loses the solution $y = 0$.
 
 3. **Incorrect sign in the integrating factor.** The standard form is
- $\dfrac{dy}{dx} + P(x)y = Q(x)$. If the equation is $\dfrac{dy}{dx} = P(x)y + Q(x)$You must
- rewrite it as $\dfrac{dy}{dx} - P(x)y = Q(x)$ before computing $\mu = e^{\int -P(x)\,dx}$.
+   $\dfrac{dy}{dx} + P(x)y = Q(x)$. If the equation is $\dfrac{dy}{dx} = P(x)y + Q(x)$You must
+   rewrite it as $\dfrac{dy}{dx} - P(x)y = Q(x)$ before computing $\mu = e^{\int -P(x)\,dx}$.
 
 4. **Misidentifying the discriminant for second order equations.** For
- $a\lambda^2 + b\lambda + c = 0$The discriminant is $\Delta = b^2 - 4ac$. If $\Delta = 0$The
- repeated root gives $(A + Bx)e^{\lambda x}$**not** $Ae^{\lambda x}$.
+   $a\lambda^2 + b\lambda + c = 0$The discriminant is $\Delta = b^2 - 4ac$. If $\Delta = 0$The
+   repeated root gives $(A + Bx)e^{\lambda x}$**not** $Ae^{\lambda x}$.
 
 5. **Confusing the damping cases.** In the damped oscillation equation
- $\ddot{x} + 2\gamma\dot{x} + \omega_0^2 x = 0$It is $\gamma^2$ that is compared with $\omega_0^2$.
- A common error is to compare $\gamma$ with $\omega_0$ directly.
+   $\ddot{x} + 2\gamma\dot{x} + \omega_0^2 x = 0$It is $\gamma^2$ that is compared with
+   $\omega_0^2$. A common error is to compare $\gamma$ with $\omega_0$ directly.
 
-6. **Euler's method sign errors.** The update formula is $y_{n+1} = y_n + h \cdot f(x_n, y_n)$.
- A negative sign in $f$ does **not** change the formula; it only affects the value of the slope
- $f(x_n, y_n)$ at each step.
+6. **Euler's method sign errors.** The update formula is $y_{n+1} = y_n + h \cdot f(x_n, y_n)$. A
+   negative sign in $f$ does **not** change the formula; it only affects the value of the slope
+   $f(x_n, y_n)$ at each step.
 
 7. **Applying initial conditions prematurely.** Apply the initial condition only after finding the
- general solution with the constant $C$. Applying it during the separation or integration step leads
- to incorrect particular solutions.
+   general solution with the constant $C$. Applying it during the separation or integration step
+   leads to incorrect particular solutions.
 
-8. **Ignoring the domain of the solution.** Solutions to DEs may only be valid on specific intervals.
- For example, $y = \dfrac{3 + x^2}{3 - x^2}$ blows up at $x = \sqrt{3}$. Always state the domain
- on which the solution is defined.
+8. **Ignoring the domain of the solution.** Solutions to DEs may only be valid on specific
+   intervals. For example, $y = \dfrac{3 + x^2}{3 - x^2}$ blows up at $x = \sqrt{3}$. Always state
+   the domain on which the solution is defined.
 
 ---
 
@@ -576,40 +576,45 @@ Error: $|1.522 - 1.505| \approx 0.017$Roughly $1.1\%$.
 3. Find the general solution of $y'' + 6y' + 9y = 0$ and identify the type of damping.
 
 4. A radioactive isotope has a half-life of $8$ days. A sample initially contains $200\,\mathrm{g}$.
- How long until only $12.5\,\mathrm{g}$ remain? Give your answer to the nearest day.
+   How long until only $12.5\,\mathrm{g}$ remain? Give your answer to the nearest day.
 
-5. Use Euler's method with $h = 0.25$ to estimate $y(1)$ for $\dfrac{dy}{dx} = 2x - y$
- $y(0) = 0$. Find the exact solution and compute the percentage error.
+5. Use Euler's method with $h = 0.25$ to estimate $y(1)$ for $\dfrac{dy}{dx} = 2x - y$ $y(0) = 0$.
+   Find the exact solution and compute the percentage error.
 
 6. A particle of mass $2\,\mathrm{kg}$ falls from rest under gravity with air resistance equal to
- $0.5v$ (where $v$ is the velocity in $\mathrm{m/s}$). Find the terminal velocity and the time
- taken to reach $90\%$ of terminal velocity. Take $g = 9.8\,\mathrm{m/s}^2$.
+   $0.5v$ (where $v$ is the velocity in $\mathrm{m/s}$). Find the terminal velocity and the time
+   taken to reach $90\%$ of terminal velocity. Take $g = 9.8\,\mathrm{m/s}^2$.
 
 7. Solve $\dfrac{dy}{dx} = \dfrac{x^2 + 1}{2y}$ with $y(0) = 2$. Find the value of $y$ when $x = 2$.
 
-8. The temperature of an object follows Newton's law of cooling. It cools from $95\,{}^{\circ}\mathrm{C}$
- to $75\,{}^{\circ}\mathrm{C}$ in $15$ minutes in a room at $20\,{}^{\circ}\mathrm{C}$. How long
- does it take to cool from $95\,{}^{\circ}\mathrm{C}$ to $30\,{}^{\circ}\mathrm{C}$?
+8. The temperature of an object follows Newton's law of cooling. It cools from
+   $95\,{}^{\circ}\mathrm{C}$ to $75\,{}^{\circ}\mathrm{C}$ in $15$ minutes in a room at
+   $20\,{}^{\circ}\mathrm{C}$. How long does it take to cool from $95\,{}^{\circ}\mathrm{C}$ to
+   $30\,{}^{\circ}\mathrm{C}$?
 
 ---
 
 ## Cross-References
 
-- **Integration techniques** used in solving DEs: see [Integration Techniques](integration-techniques)
-- **Maclaurin series** arise when linearising DE solutions: see [Sequences and Series](sequences-and-series)
+- **Integration techniques** used in solving DEs: see
+  [Integration Techniques](integration-techniques)
+- **Maclaurin series** arise when linearising DE solutions: see
+  [Sequences and Series](sequences-and-series)
 
-For the A-Level Further Maths treatment of this topic, see [Differential Equations](https://alevel.wyattau.com/docs/further-maths/pure-mathematics/differential-equations).
+For the A-Level Further Maths treatment of this topic, see
+[Differential Equations](https://alevel.wyattau.com/docs/further-maths/pure-mathematics/differential-equations).
 
 ---
 
-:::tip
-Tip
-Ready to test your understanding of **Differential Equations**? The [diagnostic test](/docs/ib/maths/diagnostics/diag-differential-equations) contains the hardest questions within the IB specification for this topic, each with a full worked solution.
+:::tip Tip Ready to test your understanding of **Differential Equations**? The
+[diagnostic test](/docs/ib/maths/diagnostics/diag-differential-equations) contains the hardest
+questions within the IB specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Differential Equations with other IB mathematics topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine
+Differential Equations with other IB mathematics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/ib/maths/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/ib/maths/diagnostics/diagnostic-guide) for instructions on self-marking
+and building a personal test matrix. :::
 
 ## Summary
 

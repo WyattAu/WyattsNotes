@@ -1,6 +1,8 @@
 ---
 title: Exponentials and Logarithms
-description: "A-Level Mathematics notes on Exponentials and Logarithms: Board Coverage; 1. The Number $e$; 1.1 Definition of $e$; 1.2 Alternative characterisations."
+description:
+  'A-Level Mathematics notes on Exponentials and Logarithms: Board Coverage; 1. The Number $e$; 1.1
+  Definition of $e$; 1.2 Alternative characterisations.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Maths
@@ -9,19 +11,18 @@ categories:
   - Maths
 slug: exponentials-and-logarithms
 ---
+
 ## Board Coverage
 
-| Board | Paper | Notes |
+| Board      | Paper      | Notes                                             |
 | ---------- | ---------- | ------------------------------------------------- |
-| AQA | Paper 1, 2 | Exponentials in P1; modelling, natural logs in P2 |
-| Edexcel | P1, P2 | Similar split |
-| OCR (A) | Paper 1, 2 | Includes $e^x$ and $\ln x$ graphs |
-| CIE (9709) | P1, P2, P3 | Exponentials/logarithms in P1; further in P3 |
+| AQA        | Paper 1, 2 | Exponentials in P1; modelling, natural logs in P2 |
+| Edexcel    | P1, P2     | Similar split                                     |
+| OCR (A)    | Paper 1, 2 | Includes $e^x$ and $\ln x$ graphs                 |
+| CIE (9709) | P1, P2, P3 | Exponentials/logarithms in P1; further in P3      |
 
-:::info
-The formula booklet gives the laws of logarithms and the derivatives of $e^x$ and $\ln x$.
-You must know how to use them and where they come from.
-:::
+:::info The formula booklet gives the laws of logarithms and the derivatives of $e^x$ and $\ln x$.
+You must know how to use them and where they come from. :::
 
 <hr />
 
@@ -35,15 +36,15 @@ $$e = \lim_{n\to\infty}\left(1+\frac{1}{n}\right)^n$$
 
 To see that this limit converges, consider a sequence of values:
 
-| $n$ | $\left(1+\frac{1}{n}\right)^n$ |
+| $n$    | $\left(1+\frac{1}{n}\right)^n$ |
 | ------ | ------------------------------ |
-| 1 | 2 |
-| 2 | 2.25 |
-| 10 | 2.5937... |
-| 100 | 2.7048... |
-| 1000 | 2.7169... |
-| 10000 | 2.7181... |
-| $10^6$ | 2.71828... |
+| 1      | 2                              |
+| 2      | 2.25                           |
+| 10     | 2.5937...                      |
+| 100    | 2.7048...                      |
+| 1000   | 2.7169...                      |
+| 10000  | 2.7181...                      |
+| $10^6$ | 2.71828...                     |
 
 The sequence is increasing and bounded above (by 3, as can be shown via the binomial theorem), so by
 The Monotone Convergence Theorem it converges. Its value is
@@ -59,11 +60,8 @@ $$\frac{d}{dx}e^x \bigg|_{x=0} = 1$$
 That is, the exponential function with base $e$ is its own derivative — the only exponential
 Function with this property. We prove this rigorously in the next section.
 
-:::tip
-Tip
-$\lim_{n\to\infty}(1+1/n)^n$", substitute a large value of $n$ (e.g., $n=10^6$) and round
-Appropriately.
-:::
+:::tip Tip $\lim_{n\to\infty}(1+1/n)^n$", substitute a large value of $n$ (e.g., $n=10^6$) and round
+Appropriately. :::
 
 <hr />
 
@@ -83,9 +81,9 @@ Let $e^h - 1 = t$So that $h = \ln(1+t)$. As $h \to 0$We have $t \to 0$. Then:
 
 $$\lim_{h\to 0}\frac{e^h - 1}{h} = \lim_{t\to 0}\frac◆LB◆t◆RB◆◆LB◆\ln(1+t)◆RB◆ = \lim_{t\to 0}\frac◆LB◆1◆RB◆◆LB◆\frac{\ln(1+t)}{t}◆RB◆$$
 
-We use the fundamental limit $\displaystyle\lim_{t\to 0}\frac◆LB◆\ln(1+t)◆RB◆◆LB◆t◆RB◆ = 1$ (which follows from
-The definition of $\ln x$ as the area under $1/u$ from $1$ to $1+t$Plus the squeeze theorem on
-$1/(1+t) \leq \ln(1+t)/t \leq 1$). Therefore:
+We use the fundamental limit $\displaystyle\lim_{t\to 0}\frac◆LB◆\ln(1+t)◆RB◆◆LB◆t◆RB◆ = 1$ (which
+follows from The definition of $\ln x$ as the area under $1/u$ from $1$ to $1+t$Plus the squeeze
+theorem on $1/(1+t) \leq \ln(1+t)/t \leq 1$). Therefore:
 
 $$\lim_{h\to 0}\frac{e^h - 1}{h} = \frac{1}{1} = 1$$
 
@@ -99,10 +97,8 @@ $$\frac{d}{dx}a^x = \frac{d}{dx}e^{x\ln a} = (\ln a)\, e^{x\ln a} = a^x \ln a$$
 
 This follows immediately from the chain rule applied to $e^{x\ln a}$.
 
-:::warning
-Warning
-$\frac{d}{dx}x^n = nx^{n-1}$ applies when the variable is in the **base**, not the exponent.
-:::
+:::warning Warning $\frac{d}{dx}x^n = nx^{n-1}$ applies when the variable is in the **base**, not
+the exponent. :::
 
 **Intuition.** The function $e^x$ is the unique function whose rate of change at any point equals
 Its value at that point. If a population of bacteria doubles every hour, its growth rate is
@@ -169,13 +165,11 @@ $$x^n = (a^p)^n = a^{pn}$$
 
 Therefore $\log_a(x^n) = pn = n\log_a x$. $\blacksquare$
 
-:::warning
-Common errors:
+:::warning Common errors:
 
 - $\log_a(x+y) \neq \log_a x + \log_a y$ (you cannot split a log of a sum)
 - $\log_a x + \log_a y \neq \log_a(x+y)$ (same mistake, reversed)
-- $(\log_a x)^n \neq n\log_a x$ (the power law applies to the argument, not the log itself)
-:::
+- $(\log_a x)^n \neq n\log_a x$ (the power law applies to the argument, not the log itself) :::
 
 <hr />
 
@@ -191,10 +185,8 @@ $$\ln(a^y) = \ln b$$ $$y \ln a = \ln b$$ $$y = \frac◆LB◆\ln b◆RB◆◆LB�
 
 Since $y = \log_a b$We have $\log_a b = \dfrac◆LB◆\ln b◆RB◆◆LB◆\ln a◆RB◆$. $\blacksquare$
 
-:::tip
-Your calculator likely has $\log$ (base 10) and $\ln$ (base $e$) buttons, but not a general
-$\log_a$ button. Use the change of base formula to compute logarithms in any base.
-:::
+:::tip Your calculator likely has $\log$ (base 10) and $\ln$ (base $e$) buttons, but not a general
+$\log_a$ button. Use the change of base formula to compute logarithms in any base. :::
 
 **Intuition.** The change of base formula tells us that logarithms in different bases are just
 Constant multiples of each other. If you think of $\log_a x$ as "how many times do I need to use
@@ -228,10 +220,8 @@ $$\frac{d}{dx}\ln x = \frac{1}{x}$$
 
 This follows directly from the Fundamental Theorem of Calculus applied to the integral definition.
 
-:::tip
-This integral definition is why $\ln x$ is called the "natural" logarithm — it arises
- from calculus, whereas $\log_{10}$ is an artefact of our base-10 number system.
-:::
+:::tip This integral definition is why $\ln x$ is called the "natural" logarithm — it arises from
+calculus, whereas $\log_{10}$ is an artefact of our base-10 number system. :::
 
 **Intuition.** Think of $\ln x$ as measuring "how much area does $1/t$ sweep out from 1 to $x$?".
 Since $1/t$ decreases as $t$ grows, each additional unit of $x$ contributes less area. This is why
@@ -274,10 +264,8 @@ Sometimes we can use a substitution. For example, $e^{2x} + 3e^x - 4 = 0$.
 Let $u = e^x$ (note $u \gt{} 0$). Then $u^2 + 3u - 4 = 0$Giving $(u+4)(u-1) = 0$So $u = 1$
 (rejecting $u = -4$). Hence $e^x = 1$Giving $x = 0$.
 
-:::warning
-When substituting $u = a^x$ or $u = \ln x$Always check the domain. For $u = a^x$ we
-Have $u \gt{} 0$; for $u = \ln x$ we have $x \gt{} 0$. Always reject invalid solutions.
-:::
+:::warning When substituting $u = a^x$ or $u = \ln x$Always check the domain. For $u = a^x$ we Have
+$u \gt{} 0$; for $u = \ln x$ we have $x \gt{} 0$. Always reject invalid solutions. :::
 
 <hr />
 
@@ -321,16 +309,15 @@ K &= \frac◆LB◆\ln 2◆RB◆◆LB◆3◆RB◆
 \end{aligned}
 $$
 
-Doubling time: $T_d = \dfrac◆LB◆\ln 2◆RB◆◆LB◆k◆RB◆ = \dfrac◆LB◆\ln 2◆RB◆◆LB◆\ln 2 / 3◆RB◆ = 3$ hours.
+Doubling time: $T_d = \dfrac◆LB◆\ln 2◆RB◆◆LB◆k◆RB◆ = \dfrac◆LB◆\ln 2◆RB◆◆LB◆\ln 2 / 3◆RB◆ = 3$
+hours.
 
-:::tip
-In modelling questions, always:
+:::tip In modelling questions, always:
 
 1. Identify the model (growth or decay)
 2. Use the initial condition to find one parameter
 3. Use a second data point to find the remaining parameter
-4. State the complete model before answering the question
-:::
+4. State the complete model before answering the question :::
 
 <hr />
 
@@ -360,7 +347,8 @@ $y = \ln(x-a)$ (horizontal translation) follow from standard transformation rule
 **Intuition.** The graphs of $y = e^x$ and $y = \ln x$ are reflections of each other in the line
 $y = x$Since they are inverse functions.
 
-<DesmosGraph title="e^x and ln(x) Graphs" expressions={["e^x", "\ln(x)", "e^{-x}"]} width={800} height={500} /> Explore the relationship between $y = e^x$ and $y = \ln x$ as inverse functions
+<DesmosGraph title="e^x and ln(x) Graphs" expressions={["e^x", "\ln(x)", "e^{-x}"]} width={800}
+height={500} /> Explore the relationship between $y = e^x$ and $y = \ln x$ as inverse functions
 Reflected in $y = x$. Add transformations such as $y = e^{x+c}$ and $y = \ln(x - a)$ to see how they
 Shift the curves.
 
@@ -378,10 +366,8 @@ $$\frac{1}{y}\frac{dy}{dx} = g'(x)\ln f(x) + \frac{g(x) f'(x)}{f(x)}$$
 
 $$\frac{dy}{dx} = f(x)^{g(x)}\left[g'(x)\ln f(x) + \frac{g(x) f'(x)}{f(x)}\right]$$
 
-:::warning
-Warning
-Rule alone — it requires logarithmic differentiation or rewriting as $e^{g(x)\ln f(x)}$.
-:::
+:::warning Warning Rule alone — it requires logarithmic differentiation or rewriting as
+$e^{g(x)\ln f(x)}$. :::
 
 <hr />
 
@@ -609,14 +595,16 @@ Domain restrictions.
 
 ---
 
-:::tip
-Tip
-Ready to test your understanding of **Exponentials and Logarithms**? The [diagnostic test](/docs/alevel/maths/diagnostics/diag-exponentials-and-logarithms) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
+:::tip Tip Ready to test your understanding of **Exponentials and Logarithms**? The
+[diagnostic test](/docs/alevel/maths/diagnostics/diag-exponentials-and-logarithms) contains the
+hardest questions within the A-Level specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Exponentials and Logarithms with other pure mathematics topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine
+Exponentials and Logarithms with other pure mathematics topics to test synthesis under exam
+conditions.
 
-See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and
+building a personal test matrix. :::
 
 ## Common Pitfalls
 

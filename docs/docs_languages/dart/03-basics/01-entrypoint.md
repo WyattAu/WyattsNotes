@@ -1,6 +1,8 @@
 ---
 title: Entry Point
-description: "Entry Point — Program Entry; main() Function Variants; Command-Line Arguments; Output: with worked examples and exam-style questions."
+description:
+  'Entry Point — Program Entry; main() Function Variants; Command-Line Arguments; Output: with
+  worked examples and exam-style questions.'
 date: 2025-07-12T15:49:11.104Z
 tags:
   - Dart
@@ -8,6 +10,7 @@ categories:
   - Dart
 slug: entry-point
 ---
+
 ## Program Entry
 
 When the project creates an executable, the entry point of the project is located in `main()`Where
@@ -34,12 +37,12 @@ void runApp(Widget app) {
 ```
 
 - `WidgetsFlutterBinding.ensureInitialized();` creates the binders required (`GestureBinding`
- `RendererBinding``SchedulerBinding``WidgetsBinding`)
+  `RendererBinding``SchedulerBinding``WidgetsBinding`)
 - This `binding` is pass into `_runWidget`
 - The widget (app) passed in will be wrapped with a `View` widget, this widget will now be the root
- widget and be rendered through the `RendererBinding`
+  widget and be rendered through the `RendererBinding`
 - This now calls the `mount()` function which recursively adds the child elements and instantiates
- `RenderObject` for each `RenderObjectWidget`.
+  `RenderObject` for each `RenderObjectWidget`.
 - `SchedulerBinding.scheduleFrame()` hooks into `window.onDrawFrame`
 - The event loop will now initialize, each loop will update render objects and draw schedule frames.
 
@@ -427,18 +430,18 @@ Write `final status = name ? 'exists' : 'missing';` — that is a compile error.
 ## Common Pitfalls
 
 - **Using `var` for everything**: `var` is fine for local variables with obvious initializers. For
- fields and parameters, always specify the type explicitly — it serves as documentation.
+  fields and parameters, always specify the type explicitly — it serves as documentation.
 - **Confusing `final` with immutable**: `final` means the reference cannot change. The object itself
- is still mutable. Use `const` for compile-time constants, or use immutable collections from
- `package:collection` / `package:built_collection` for deep immutability.
+  is still mutable. Use `const` for compile-time constants, or use immutable collections from
+  `package:collection` / `package:built_collection` for deep immutability.
 - **Overusing `!` (null assertion)**: Every `!` is a potential crash. Prefer `?.``??`Or explicit
- null checks. Use `!` only when the null state is provably impossible (e.g., after an `is` check).
+  null checks. Use `!` only when the null state is provably impossible (e.g., after an `is` check).
 - **Forgetting that Dart has no truthy coercion**: `if (list)` does not check if the list is
- non-empty. Use `if (list.isNotEmpty)`. `if (value)` does not check if value is non-zero. Use
- `if (value != 0)`.
+  non-empty. Use `if (list.isNotEmpty)`. `if (value)` does not check if value is non-zero. Use
+  `if (value != 0)`.
 - **Using `late` without guaranteeing initialization**: `late` defers the runtime check. If you
- access a `late` variable before it is set, you get a `LateInitializationError`. This is a runtime
- crash, not a compile-time error.
+  access a `late` variable before it is set, you get a `LateInitializationError`. This is a runtime
+  crash, not a compile-time error.
 
 ## Summary
 

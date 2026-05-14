@@ -1,10 +1,13 @@
 ---
 id: incident-response
 title: Incident Response
-description: "Incident Response — Preparation; Playbooks; Tools and Infrastructure; Tabletop Exercises with worked examples and exam-style questions."
+description:
+  'Incident Response — Preparation; Playbooks; Tools and Infrastructure; Tabletop Exercises with
+  worked examples and exam-style questions.'
 slug: incident-response
 sidebar_position: 7
 ---
+
 ## The Incident Response Lifecycle
 
 NIST SP 800-61 Rev. 2 defines the incident response lifecycle as four phases: Preparation, Detection
@@ -43,29 +46,29 @@ Incidents. It should be a living document that is reviewed and updated at least 
 
 **Essential IRP components:**
 
-| Component | Description |
+| Component                  | Description                                               |
 | -------------------------- | --------------------------------------------------------- |
-| Scope and objectives | What constitutes an incident, what the plan covers |
-| Roles and responsibilities | Who does what during each phase (RACI matrix) |
-| Severity classification | How to categorize incidents by impact and urgency |
-| Communication procedures | Internal escalation, external notification, public comms |
-| Technical procedures | Step-by-step instructions for common incident types |
-| Evidence handling | Chain of custody, forensic imaging, log preservation |
-| Tool inventory | What tools are available and how to use them |
-| Contact lists | IR team, management, legal, law enforcement, regulators |
-| Legal and regulatory | Data breach notification requirements, retention policies |
+| Scope and objectives       | What constitutes an incident, what the plan covers        |
+| Roles and responsibilities | Who does what during each phase (RACI matrix)             |
+| Severity classification    | How to categorize incidents by impact and urgency         |
+| Communication procedures   | Internal escalation, external notification, public comms  |
+| Technical procedures       | Step-by-step instructions for common incident types       |
+| Evidence handling          | Chain of custody, forensic imaging, log preservation      |
+| Tool inventory             | What tools are available and how to use them              |
+| Contact lists              | IR team, management, legal, law enforcement, regulators   |
+| Legal and regulatory       | Data breach notification requirements, retention policies |
 
 ### Incident Response Team
 
-| Role | Responsibility |
+| Role               | Responsibility                                       |
 | ------------------ | ---------------------------------------------------- |
 | Incident Commander | Overall coordination, decision-making, communication |
-| Technical Lead | Directs investigation, containment, and eradication |
-| Forensic Analyst | Evidence collection, preservation, and analysis |
-| Communications | Internal and external messaging, media relations |
-| Legal Counsel | Regulatory compliance, law enforcement liaison |
-| Management Liaison | Executive communication, resource authorization |
-| IT Operations | Infrastructure support, isolation, recovery |
+| Technical Lead     | Directs investigation, containment, and eradication  |
+| Forensic Analyst   | Evidence collection, preservation, and analysis      |
+| Communications     | Internal and external messaging, media relations     |
+| Legal Counsel      | Regulatory compliance, law enforcement liaison       |
+| Management Liaison | Executive communication, resource authorization      |
+| IT Operations      | Infrastructure support, isolation, recovery          |
 
 For small organizations, roles may overlap. The critical requirement is that **someone is explicitly
 Responsible for each function**.
@@ -75,29 +78,29 @@ Responsible for each function**.
 Playbooks are predefined procedures for specific incident types. They reduce decision-making under
 Pressure and ensure consistent, repeatable responses.
 
-| Incident Type | Key Playbook Actions |
+| Incident Type         | Key Playbook Actions                                                                                |
 | --------------------- | --------------------------------------------------------------------------------------------------- |
-| Ransomware | Isolate affected systems, identify ransomware variant, assess data exposure, do not pay immediately |
-| Data breach | Identify scope, preserve evidence, notify affected parties, assess regulatory requirements |
-| Credential compromise | Force password reset, revoke sessions, check for lateral movement |
-| DDoS | Activate scrubbing, increase capacity, identify attack vector |
-| Malware | Isolate infected host, identify malware family, scan for propagation |
-| Insider threat | Preserve evidence (legal hold), revoke access, coordinate with HR/legal |
-| Supply chain attack | Identify affected software, assess blast radius, patch/revert, verify integrity |
+| Ransomware            | Isolate affected systems, identify ransomware variant, assess data exposure, do not pay immediately |
+| Data breach           | Identify scope, preserve evidence, notify affected parties, assess regulatory requirements          |
+| Credential compromise | Force password reset, revoke sessions, check for lateral movement                                   |
+| DDoS                  | Activate scrubbing, increase capacity, identify attack vector                                       |
+| Malware               | Isolate infected host, identify malware family, scan for propagation                                |
+| Insider threat        | Preserve evidence (legal hold), revoke access, coordinate with HR/legal                             |
+| Supply chain attack   | Identify affected software, assess blast radius, patch/revert, verify integrity                     |
 
 ### Tools and Infrastructure
 
-| Category | Tools |
+| Category            | Tools                                          |
 | ------------------- | ---------------------------------------------- |
-| SIEM | Splunk, Elastic Security, Microsoft Sentinel |
-| EDR/XDR | CrowdStrike, SentinelOne, Microsoft Defender |
-| Forensic imaging | FTK Imager, dd, dc3dd, ewf |
-| Memory forensics | Volatility, Rekall |
-| Log aggregation | Fluentd, Logstash, Vector |
-| Threat intelligence | MITRE ATT&CK, VirusTotal, Shodan, CIRCL |
-| Communication | Slack (dedicated channel), PagerDuty, Opsgenie |
-| Ticketing | Jira, ServiceNow, RT |
-| Documentation | Confluence, shared drive (access-controlled) |
+| SIEM                | Splunk, Elastic Security, Microsoft Sentinel   |
+| EDR/XDR             | CrowdStrike, SentinelOne, Microsoft Defender   |
+| Forensic imaging    | FTK Imager, dd, dc3dd, ewf                     |
+| Memory forensics    | Volatility, Rekall                             |
+| Log aggregation     | Fluentd, Logstash, Vector                      |
+| Threat intelligence | MITRE ATT&CK, VirusTotal, Shodan, CIRCL        |
+| Communication       | Slack (dedicated channel), PagerDuty, Opsgenie |
+| Ticketing           | Jira, ServiceNow, RT                           |
+| Documentation       | Confluence, shared drive (access-controlled)   |
 
 ### Tabletop Exercises
 
@@ -115,30 +118,30 @@ Of a real incident.
 
 **Example inject sequence for a ransomware exercise:**
 
-| Time | Inject |
+| Time     | Inject                                                                |
 | -------- | --------------------------------------------------------------------- |
-| T+0 | User reports files are encrypted and a ransom note is displayed |
-| T+15min | Second user reports the same. IT discovers network share is encrypted |
-| T+30min | EDR alerts on lateral movement attempts from the first host |
-| T+60min | Legal asks: "Do we know what data was accessed before encryption?" |
-| T+90min | Media inquiry received. Board asks for status update |
-| T+120min | Threat intel: ransomware variant has known data exfiltration |
-| T+180min | Executive demands: "Can we restore from backups?" |
+| T+0      | User reports files are encrypted and a ransom note is displayed       |
+| T+15min  | Second user reports the same. IT discovers network share is encrypted |
+| T+30min  | EDR alerts on lateral movement attempts from the first host           |
+| T+60min  | Legal asks: "Do we know what data was accessed before encryption?"    |
+| T+90min  | Media inquiry received. Board asks for status update                  |
+| T+120min | Threat intel: ransomware variant has known data exfiltration          |
+| T+180min | Executive demands: "Can we restore from backups?"                     |
 
 ## Detection and Analysis
 
 ### Detection Sources
 
-| Source | Detection Capability | Limitations |
+| Source              | Detection Capability                               | Limitations                               |
 | ------------------- | -------------------------------------------------- | ----------------------------------------- |
-| SIEM alerts | Correlated events across sources | Requires tuning, high false positive rate |
-| EDR/XDR | Endpoint behavior, process execution, file changes | Agent must be running and healthy |
-| Network IDS/IPS | Suspicious network traffic, known signatures | Cannot inspect encrypted traffic |
-| Log analysis | Application errors, authentication failures | Requires logging to be enabled |
-| User reports | Phishing, suspicious emails, slow systems | Inconsistent, delayed |
-| Threat intelligence | Known IOCs, vulnerability announcements | Reactive, not proactive |
-| File integrity | Unauthorized changes to critical files | Requires baseline |
-| Cloud audit logs | Unusual API calls, privilege escalation | Volume can be overwhelming |
+| SIEM alerts         | Correlated events across sources                   | Requires tuning, high false positive rate |
+| EDR/XDR             | Endpoint behavior, process execution, file changes | Agent must be running and healthy         |
+| Network IDS/IPS     | Suspicious network traffic, known signatures       | Cannot inspect encrypted traffic          |
+| Log analysis        | Application errors, authentication failures        | Requires logging to be enabled            |
+| User reports        | Phishing, suspicious emails, slow systems          | Inconsistent, delayed                     |
+| Threat intelligence | Known IOCs, vulnerability announcements            | Reactive, not proactive                   |
+| File integrity      | Unauthorized changes to critical files             | Requires baseline                         |
+| Cloud audit logs    | Unusual API calls, privilege escalation            | Volume can be overwhelming                |
 
 ### Alert Triage
 
@@ -162,26 +165,26 @@ graph TD
 
 ### Severity Classification
 
-| Severity | Definition | Response Time | Example |
+| Severity | Definition                                               | Response Time     | Example                                       |
 | -------- | -------------------------------------------------------- | ----------------- | --------------------------------------------- |
-| Critical | Active breach, data exfiltration, system-wide compromise | Immediate | Ransomware encrypting production DB |
-| High | Confirmed compromise, limited scope, active threat | Within 1 hour | Single server compromised |
-| Medium | Suspicious activity, potential compromise | Within 4 hours | Credential reuse alert from HaveIBeenPwned |
-| Low | Policy violation, reconnaissance, informational | Within 24 hours | Port scan from external IP |
-| Info | No security impact, awareness item | Next business day | Vulnerability disclosure (unaffected version) |
+| Critical | Active breach, data exfiltration, system-wide compromise | Immediate         | Ransomware encrypting production DB           |
+| High     | Confirmed compromise, limited scope, active threat       | Within 1 hour     | Single server compromised                     |
+| Medium   | Suspicious activity, potential compromise                | Within 4 hours    | Credential reuse alert from HaveIBeenPwned    |
+| Low      | Policy violation, reconnaissance, informational          | Within 24 hours   | Port scan from external IP                    |
+| Info     | No security impact, awareness item                       | Next business day | Vulnerability disclosure (unaffected version) |
 
 ### Indicators of Compromise (IOCs)
 
-| IOC Type | Example | Detection Method |
+| IOC Type         | Example                                                      | Detection Method          |
 | ---------------- | ------------------------------------------------------------ | ------------------------- |
-| IP address | `198.51.100.42` (known C2 server) | Firewall logs, IDS alerts |
-| Domain | `evil-update.example.com` | DNS logs, proxy logs |
-| File hash | SHA-256: `abc123...` (known malware) | EDR, AV scans |
-| URL | `https://evil.com/payload.exe` | Proxy logs, URL filtering |
-| Email subject | "Urgent: Verify your account" | Email gateway logs |
-| Registry key | `HKLM\Software\Microsoft\Windows\CurrentVersion\Run\malware` | EDR, system logs |
-| Mutex | `Global\{A1B2C3D4-E5F6-7890}` | Memory analysis, EDR |
-| Network artifact | Unusual user-agent, certificate pin mismatch | IDS, TLS logs |
+| IP address       | `198.51.100.42` (known C2 server)                            | Firewall logs, IDS alerts |
+| Domain           | `evil-update.example.com`                                    | DNS logs, proxy logs      |
+| File hash        | SHA-256: `abc123...` (known malware)                         | EDR, AV scans             |
+| URL              | `https://evil.com/payload.exe`                               | Proxy logs, URL filtering |
+| Email subject    | "Urgent: Verify your account"                                | Email gateway logs        |
+| Registry key     | `HKLM\Software\Microsoft\Windows\CurrentVersion\Run\malware` | EDR, system logs          |
+| Mutex            | `Global\{A1B2C3D4-E5F6-7890}`                                | Memory analysis, EDR      |
+| Network artifact | Unusual user-agent, certificate pin mismatch                 | IDS, TLS logs             |
 
 ### IOC Sharing and Threat Intelligence Platforms
 
@@ -189,14 +192,14 @@ Sharing IOCs within your organization and with the broader security community am
 Capability. A compromise detected at one organization can be prevented at others if IOCs are shared
 Rapidly.
 
-| Platform | Type | Access | Use Case |
+| Platform       | Type          | Access      | Use Case                                     |
 | -------------- | ------------- | ----------- | -------------------------------------------- |
-| MISP | Open source | Self-hosted | Internal and community IOC sharing |
-| STIX/TAXII | Standard | Various | Structured threat intelligence exchange |
-| AlienVault OTX | Community | Free | Open threat intelligence sharing |
-| CISA AIS | Government | Authorized | US government cyber threat sharing |
-| VirusTotal | Malware | Free/Paid | File and URL reputation lookup |
-| Shodan | Internet scan | Free/Paid | Exposed services and vulnerability detection |
+| MISP           | Open source   | Self-hosted | Internal and community IOC sharing           |
+| STIX/TAXII     | Standard      | Various     | Structured threat intelligence exchange      |
+| AlienVault OTX | Community     | Free        | Open threat intelligence sharing             |
+| CISA AIS       | Government    | Authorized  | US government cyber threat sharing           |
+| VirusTotal     | Malware       | Free/Paid   | File and URL reputation lookup               |
+| Shodan         | Internet scan | Free/Paid   | Exposed services and vulnerability detection |
 
 Sharing IOCs must be done carefully. Sanitize internal information before sharing externally —
 Remove internal hostnames, usernames, and any information that could reveal your network topology or
@@ -289,13 +292,13 @@ Is to stop the bleeding without destroying evidence.
 
 Immediate actions to stop the active threat:
 
-| Action | When to Use | Risk |
+| Action                        | When to Use                                    | Risk                                 |
 | ----------------------------- | ---------------------------------------------- | ------------------------------------ |
 | Network isolation (pull plug) | Fast-spreading ransomware, active exfiltration | Disrupts service, may alert attacker |
-| Firewall rule blocking | Known C2 IP/domain | Less disruptive |
-| Account disable | Compromised credentials | User loses access |
-| VLAN isolation | Compromised host on shared network | Isolates without full disconnection |
-| API key revocation | Leaked or compromised keys | Dependent services break |
+| Firewall rule blocking        | Known C2 IP/domain                             | Less disruptive                      |
+| Account disable               | Compromised credentials                        | User loses access                    |
+| VLAN isolation                | Compromised host on shared network             | Isolates without full disconnection  |
+| API key revocation            | Leaked or compromised keys                     | Dependent services break             |
 
 ### Long-Term Containment
 
@@ -318,16 +321,16 @@ System is rebooted or powered off, volatile data is permanently lost.
 
 **Order of volatility** (what to collect first):
 
-| Priority | Evidence Type | Collection Method |
+| Priority | Evidence Type         | Collection Method                           |
 | -------- | --------------------- | ------------------------------------------- |
-| 1 | CPU registers, cache | Hardware debugger (rarely available) |
-| 2 | RAM / physical memory | Memory dump tool (LiME, WinPmem, Belkasoft) |
-| 3 | Network connections | `netstat``ss`Network capture (tcpdump) |
-| 4 | Running processes | `ps auxf`Process tree capture |
-| 5 | Logged-in users | `w``who``/var/run/utmp` |
-| 6 | Open files | `lsof` |
-| 7 | Disk | Full forensic image (FTK Imager, dd) |
-| 8 | Remote logs | SIEM, syslog, centralized logging |
+| 1        | CPU registers, cache  | Hardware debugger (rarely available)        |
+| 2        | RAM / physical memory | Memory dump tool (LiME, WinPmem, Belkasoft) |
+| 3        | Network connections   | `netstat``ss`Network capture (tcpdump)      |
+| 4        | Running processes     | `ps auxf`Process tree capture               |
+| 5        | Logged-in users       | `w``who``/var/run/utmp`                     |
+| 6        | Open files            | `lsof`                                      |
+| 7        | Disk                  | Full forensic image (FTK Imager, dd)        |
+| 8        | Remote logs           | SIEM, syslog, centralized logging           |
 
 ```bash
 # Memory capture on Linux (before any containment)
@@ -357,15 +360,15 @@ dc3dd if=/dev/sda of=/evidence/disk_image.dd hash=sha256 log=/evidence/imaging_l
 Every piece of evidence must have a documented chain of custody — a record of who handled it, when,
 And what was done.
 
-| Field | Description |
+| Field            | Description                                                     |
 | ---------------- | --------------------------------------------------------------- |
-| Evidence ID | Unique identifier |
-| Description | What the evidence is (e.g., "Forensic image of server-01 disk") |
-| Collection time | Date and time of collection (with timezone) |
-| Collector | Name and role of person who collected it |
-| Storage location | Where the evidence is stored (physical or digital) |
-| Hash values | SHA-256 of original, verified at each transfer |
-| Transfer log | Every time evidence changed hands |
+| Evidence ID      | Unique identifier                                               |
+| Description      | What the evidence is (e.g., "Forensic image of server-01 disk") |
+| Collection time  | Date and time of collection (with timezone)                     |
+| Collector        | Name and role of person who collected it                        |
+| Storage location | Where the evidence is stored (physical or digital)              |
+| Hash values      | SHA-256 of original, verified at each transfer                  |
+| Transfer log     | Every time evidence changed hands                               |
 
 ## Eradication
 
@@ -374,15 +377,15 @@ Malicious artifacts, and addressing the vulnerability that allowed the compromis
 
 ### Root Cause Analysis
 
-| Question | What to Investigate |
+| Question                              | What to Investigate                                    |
 | ------------------------------------- | ------------------------------------------------------ |
-| How did the attacker get in? | Phishing, exploited vulnerability, stolen creds |
-| What vulnerabilities were exploited? | Unpatched software, misconfiguration, weak credentials |
-| What did the attacker access? | File access logs, database queries, email |
-| What did the attacker modify? | File integrity monitoring, configuration changes |
-| What persistence mechanisms exist? | Scheduled tasks, startup items, registry, cron jobs |
-| Did the attacker establish backdoors? | New accounts, SSH keys, certificates, web shells |
-| Was data exfiltrated? | Network traffic analysis, DNS logs, cloud egress |
+| How did the attacker get in?          | Phishing, exploited vulnerability, stolen creds        |
+| What vulnerabilities were exploited?  | Unpatched software, misconfiguration, weak credentials |
+| What did the attacker access?         | File access logs, database queries, email              |
+| What did the attacker modify?         | File integrity monitoring, configuration changes       |
+| What persistence mechanisms exist?    | Scheduled tasks, startup items, registry, cron jobs    |
+| Did the attacker establish backdoors? | New accounts, SSH keys, certificates, web shells       |
+| Was data exfiltrated?                 | Network traffic analysis, DNS logs, cloud egress       |
 
 ### Eradication Actions
 
@@ -410,26 +413,26 @@ Eradicated.
 ### Recovery Steps
 
 1. **Restore from clean backups**: Use backups from before the compromise. Verify backup integrity
- before restoration.
+   before restoration.
 2. **Rebuild from scratch**: If the extent of compromise is unclear, rebuild systems from known-good
- images.
+   images.
 3. **Validate configurations**: Ensure restored systems match the intended hardened configuration.
 4. **Re-enable monitoring**: Restore enhanced monitoring implemented during containment.
 5. **Phased restoration**: Bring systems back online incrementally, monitoring for signs of
- re-compromise.
+   re-compromise.
 6. **Verify business function**: Confirm that restored systems operate correctly.
 7. **Continue monitoring**: Maintain heightened monitoring for at least 30 days after recovery.
 
 ### Backup Considerations
 
-| Backup Property | Requirement |
+| Backup Property | Requirement                                                                   |
 | --------------- | ----------------------------------------------------------------------------- |
-| Immutability | Backups must be immutable (not modifiable or deletable) to survive ransomware |
-| Air-gapping | At least one backup copy must be offline/disconnected |
-| Encryption | Backups must be encrypted at rest |
-| Testing | Restore tests must be performed regularly (not just backup verification) |
-| Retention | Retain backups long enough to recover from delayed detection |
-| 3-2-1 rule | 3 copies, 2 different media, 1 offsite |
+| Immutability    | Backups must be immutable (not modifiable or deletable) to survive ransomware |
+| Air-gapping     | At least one backup copy must be offline/disconnected                         |
+| Encryption      | Backups must be encrypted at rest                                             |
+| Testing         | Restore tests must be performed regularly (not just backup verification)      |
+| Retention       | Retain backups long enough to recover from delayed detection                  |
+| 3-2-1 rule      | 3 copies, 2 different media, 1 offsite                                        |
 
 ## Post-Incident Activity
 
@@ -443,16 +446,16 @@ Goal is systemic improvement, not punishment.
 
 **Post-mortem structure:**
 
-| Section | Content |
+| Section          | Content                                                        |
 | ---------------- | -------------------------------------------------------------- |
-| Incident summary | One-paragraph description of what happened |
-| Timeline | Detailed chronological sequence of events |
-| Impact | What systems/data/users were affected, duration, business cost |
-| Root cause | Technical and process root causes (5 Whys analysis) |
-| Detection | How was the incident detected? How could detection be faster? |
-| Response | What went well? What could be improved? |
-| Lessons learned | Specific, actionable takeaways |
-| Action items | Assigned tasks with owners and deadlines |
+| Incident summary | One-paragraph description of what happened                     |
+| Timeline         | Detailed chronological sequence of events                      |
+| Impact           | What systems/data/users were affected, duration, business cost |
+| Root cause       | Technical and process root causes (5 Whys analysis)            |
+| Detection        | How was the incident detected? How could detection be faster?  |
+| Response         | What went well? What could be improved?                        |
+| Lessons learned  | Specific, actionable takeaways                                 |
+| Action items     | Assigned tasks with owners and deadlines                       |
 
 ### 5 Whys Analysis
 
@@ -480,16 +483,16 @@ Security training and secure code review."
 
 ### Metrics and KPIs
 
-| Metric | Description | Target |
+| Metric                                 | Description                                    | Target           |
 | -------------------------------------- | ---------------------------------------------- | ---------------- |
-| MTTD (Mean Time to Detect) | Average time from attack start to detection | Decreasing trend |
-| MTTR (Mean Time to Respond) | Average time from detection to containment | Decreasing trend |
-| MTTE (Mean Time to Eradicate) | Average time from containment to eradication | Decreasing trend |
-| MTTR (Mean Time to Recover) | Average time from eradication to full recovery | Decreasing trend |
-| Number of incidents | Total incidents by severity | Decreasing trend |
-| False positive rate | Alerts that were not real incidents | Decreasing trend |
-| Time to patch critical vulnerabilities | Average time from CVE disclosure to patch | Decreasing trend |
-| Backup restoration success rate | Percentage of successful restore tests | 100% |
+| MTTD (Mean Time to Detect)             | Average time from attack start to detection    | Decreasing trend |
+| MTTR (Mean Time to Respond)            | Average time from detection to containment     | Decreasing trend |
+| MTTE (Mean Time to Eradicate)          | Average time from containment to eradication   | Decreasing trend |
+| MTTR (Mean Time to Recover)            | Average time from eradication to full recovery | Decreasing trend |
+| Number of incidents                    | Total incidents by severity                    | Decreasing trend |
+| False positive rate                    | Alerts that were not real incidents            | Decreasing trend |
+| Time to patch critical vulnerabilities | Average time from CVE disclosure to patch      | Decreasing trend |
+| Backup restoration success rate        | Percentage of successful restore tests         | 100%             |
 
 ## Forensic Basics
 
@@ -559,76 +562,76 @@ mactime -b /tmp/body.txt > /tmp/timeline.csv
 
 ### Ransomware
 
-| Phase | Response Action |
+| Phase         | Response Action                                                |
 | ------------- | -------------------------------------------------------------- |
-| Detection | Identify variant (ransom note, file extension, behavior) |
-| Containment | Isolate affected systems immediately |
-| Assessment | Determine encryption type, affected data, backup status |
-| Decision | Do not pay ransom (funds criminal organizations, no guarantee) |
-| Recovery | Restore from immutable, tested backups |
-| Investigation | Determine initial access vector, lateral movement path |
+| Detection     | Identify variant (ransom note, file extension, behavior)       |
+| Containment   | Isolate affected systems immediately                           |
+| Assessment    | Determine encryption type, affected data, backup status        |
+| Decision      | Do not pay ransom (funds criminal organizations, no guarantee) |
+| Recovery      | Restore from immutable, tested backups                         |
+| Investigation | Determine initial access vector, lateral movement path         |
 
 ### Data Breach
 
-| Phase | Response Action |
+| Phase         | Response Action                                                           |
 | ------------- | ------------------------------------------------------------------------- |
-| Detection | Identify what data was accessed/exfiltrated |
-| Containment | Close the access vector, revoke compromised credentials |
-| Assessment | Classify the data (PII, PHI, financial, intellectual property) |
-| Notification | Determine regulatory notification requirements (GDPR 72hr, HIPAA 60 days) |
-| Communication | Prepare internal and external messaging |
-| Recovery | Implement additional controls to prevent recurrence |
+| Detection     | Identify what data was accessed/exfiltrated                               |
+| Containment   | Close the access vector, revoke compromised credentials                   |
+| Assessment    | Classify the data (PII, PHI, financial, intellectual property)            |
+| Notification  | Determine regulatory notification requirements (GDPR 72hr, HIPAA 60 days) |
+| Communication | Prepare internal and external messaging                                   |
+| Recovery      | Implement additional controls to prevent recurrence                       |
 
 ### Credential Compromise
 
-| Phase | Response Action |
+| Phase         | Response Action                                                           |
 | ------------- | ------------------------------------------------------------------------- |
-| Detection | Identify which accounts are affected |
-| Containment | Force password reset, revoke all sessions |
-| Assessment | Check for MFA bypass, password reuse, credential stuffing |
-| Investigation | Determine how credentials were obtained (phishing, breach, reuse) |
-| Recovery | Implement password policy changes, enable MFA, check for lateral movement |
+| Detection     | Identify which accounts are affected                                      |
+| Containment   | Force password reset, revoke all sessions                                 |
+| Assessment    | Check for MFA bypass, password reuse, credential stuffing                 |
+| Investigation | Determine how credentials were obtained (phishing, breach, reuse)         |
+| Recovery      | Implement password policy changes, enable MFA, check for lateral movement |
 
 ### Supply Chain Attack
 
-| Phase | Response Action |
+| Phase         | Response Action                                                       |
 | ------------- | --------------------------------------------------------------------- |
-| Detection | Identify the compromised dependency or update |
-| Containment | Pin to last known-good version, revoke compromised artifacts |
-| Assessment | Determine blast radius — which systems used the compromised component |
-| Investigation | Trace the supply chain path, identify the root compromise |
-| Recovery | Replace with verified, signed artifacts (SLSA) |
+| Detection     | Identify the compromised dependency or update                         |
+| Containment   | Pin to last known-good version, revoke compromised artifacts          |
+| Assessment    | Determine blast radius — which systems used the compromised component |
+| Investigation | Trace the supply chain path, identify the root compromise             |
+| Recovery      | Replace with verified, signed artifacts (SLSA)                        |
 
 ## Communication
 
 ### Internal Communication
 
-| Audience | Timing | Content |
+| Audience       | Timing         | Content                                                |
 | -------------- | -------------- | ------------------------------------------------------ |
-| IR team | Immediately | Technical details, assigned tasks, evidence status |
-| Executive team | Within 1 hour | Business impact, customer impact, response status |
-| All employees | As needed | General awareness, phishing warnings, policy reminders |
-| Legal/PR | Within 2 hours | Regulatory implications, media strategy |
+| IR team        | Immediately    | Technical details, assigned tasks, evidence status     |
+| Executive team | Within 1 hour  | Business impact, customer impact, response status      |
+| All employees  | As needed      | General awareness, phishing warnings, policy reminders |
+| Legal/PR       | Within 2 hours | Regulatory implications, media strategy                |
 
 ### External Communication
 
-| Audience | Timing | Content |
+| Audience        | Timing                | Content                                                  |
 | --------------- | --------------------- | -------------------------------------------------------- |
-| Affected users | Per regulatory req | What happened, what data was affected, what to do |
-| Customers | As appropriate | Impact assessment, mitigation steps |
-| Public/Media | Via PR team | Factual statement, no speculation, commitment to resolve |
-| Law enforcement | If criminal activity | Forensic evidence, IOCs, timeline |
-| Regulators | Per legal requirement | Formal notification with required details |
+| Affected users  | Per regulatory req    | What happened, what data was affected, what to do        |
+| Customers       | As appropriate        | Impact assessment, mitigation steps                      |
+| Public/Media    | Via PR team           | Factual statement, no speculation, commitment to resolve |
+| Law enforcement | If criminal activity  | Forensic evidence, IOCs, timeline                        |
+| Regulators      | Per legal requirement | Formal notification with required details                |
 
 ### Regulatory Notification Requirements
 
-| Regulation | Notification Deadline | Authority |
+| Regulation | Notification Deadline                     | Authority                           |
 | ---------- | ----------------------------------------- | ----------------------------------- |
-| GDPR | 72 hours | Supervisory authority |
-| HIPAA | 60 days | HHS OCR |
-| PCI-DSS | Immediately | Payment card brands, acquiring bank |
-| CCPA | "Expeditious" | California Attorney General |
-| NIS2 (EU) | 24 hours (early warning), 72 hours (full) | National CSIRT |
+| GDPR       | 72 hours                                  | Supervisory authority               |
+| HIPAA      | 60 days                                   | HHS OCR                             |
+| PCI-DSS    | Immediately                               | Payment card brands, acquiring bank |
+| CCPA       | "Expeditious"                             | California Attorney General         |
+| NIS2 (EU)  | 24 hours (early warning), 72 hours (full) | National CSIRT                      |
 
 :::warning
 
@@ -713,16 +716,16 @@ Repeat the same mistakes with increasing severity.
 Different jurisdictions have different notification requirements. Understanding these before an
 Incident occurs is critical.
 
-| Jurisdiction | Regulation | Notification Deadline | Who to Notify |
+| Jurisdiction   | Regulation             | Notification Deadline                                                     | Who to Notify                       |
 | -------------- | ---------------------- | ------------------------------------------------------------------------- | ----------------------------------- |
-| European Union | GDPR | 72 hours to supervisory authority; "without undue delay" to data subjects | DPA + affected individuals |
-| United States | State laws (50 states) | Varies: 30-90 days typical | State AG + affected individuals |
-| United States | HIPAA | 60 days to HHS, affected individuals | HHS + affected individuals |
-| United States | PCI-DSS | Immediately to card brands and acquirer | Payment card brands, acquiring bank |
-| California | CCPA/CPRA | "Expeditious" to CA AG (if &gt;500 CA residents) | CA Attorney General + consumers |
-| Australia | Privacy Act | 30 days to OAIC and affected individuals | OAIC + affected individuals |
-| Germany | GDPR + BDSG | 72 hours (GDPR), 72 hours (BDSG) | DPA + affected individuals |
-| Japan | APPI | "Promptly" to PPC and affected individuals | PPC + affected individuals |
+| European Union | GDPR                   | 72 hours to supervisory authority; "without undue delay" to data subjects | DPA + affected individuals          |
+| United States  | State laws (50 states) | Varies: 30-90 days typical                                                | State AG + affected individuals     |
+| United States  | HIPAA                  | 60 days to HHS, affected individuals                                      | HHS + affected individuals          |
+| United States  | PCI-DSS                | Immediately to card brands and acquirer                                   | Payment card brands, acquiring bank |
+| California     | CCPA/CPRA              | "Expeditious" to CA AG (if &gt;500 CA residents)                          | CA Attorney General + consumers     |
+| Australia      | Privacy Act            | 30 days to OAIC and affected individuals                                  | OAIC + affected individuals         |
+| Germany        | GDPR + BDSG            | 72 hours (GDPR), 72 hours (BDSG)                                          | DPA + affected individuals          |
+| Japan          | APPI                   | "Promptly" to PPC and affected individuals                                | PPC + affected individuals          |
 
 ### Evidence Handling for Legal Proceedings
 
@@ -734,39 +737,39 @@ Handled according to forensic standards:
 3. **Hash verification**: Compute SHA-256 hashes at every stage of evidence handling
 4. **Documentation**: Photograph screens, log timestamps, and system state before any action
 5. **Legal hold**: Issue a legal hold notice to preserve all relevant data when litigation is
- anticipated
+   anticipated
 
 ### Working with Law Enforcement
 
-| Consideration | Guidance |
+| Consideration         | Guidance                                                                              |
 | --------------------- | ------------------------------------------------------------------------------------- |
-| When to involve | For criminal activity, significant financial loss, or nation-state attribution |
-| Which agency | FBI (IC3), CISA, local CERT, national CERT |
-| What to provide | Forensic evidence (images, logs), IOCs, timeline |
-| What to expect | Slow response for non-critical incidents, may require court order for certain actions |
-| Internal coordination | Legal counsel should manage all law enforcement contact |
+| When to involve       | For criminal activity, significant financial loss, or nation-state attribution        |
+| Which agency          | FBI (IC3), CISA, local CERT, national CERT                                            |
+| What to provide       | Forensic evidence (images, logs), IOCs, timeline                                      |
+| What to expect        | Slow response for non-critical incidents, may require court order for certain actions |
+| Internal coordination | Legal counsel should manage all law enforcement contact                               |
 
 ## Building an Incident Response Capability
 
 ### Maturity Levels
 
-| Level | Description | Characteristics |
+| Level          | Description                                      | Characteristics                                    |
 | -------------- | ------------------------------------------------ | -------------------------------------------------- |
-| 1 - Initial | No formal IR capability | Ad-hoc response, no plan, no tools |
-| 2 - Managed | Basic IR plan exists | Documented but untested, basic tools |
-| 3 - Defined | IR plan tested and maintained | Regular tabletop exercises, defined roles |
-| 4 - Quantified | Metrics-driven improvement | MTTD/MTTR tracked, automated detection |
-| 5 - Optimized | Continuous improvement, proactive threat hunting | Threat intelligence integrated, red team exercises |
+| 1 - Initial    | No formal IR capability                          | Ad-hoc response, no plan, no tools                 |
+| 2 - Managed    | Basic IR plan exists                             | Documented but untested, basic tools               |
+| 3 - Defined    | IR plan tested and maintained                    | Regular tabletop exercises, defined roles          |
+| 4 - Quantified | Metrics-driven improvement                       | MTTD/MTTR tracked, automated detection             |
+| 5 - Optimized  | Continuous improvement, proactive threat hunting | Threat intelligence integrated, red team exercises |
 
 ### Automation Opportunities
 
-| Phase | What to Automate | Tool Examples |
+| Phase         | What to Automate                                | Tool Examples                              |
 | ------------- | ----------------------------------------------- | ------------------------------------------ |
-| Detection | Alert triage, IOC matching, anomaly detection | SOAR platforms (Splunk SOAR, Cortex XSOAR) |
-| Containment | Automated host isolation, account disable | EDR response actions, AWS Lambda |
-| Investigation | Log correlation, timeline reconstruction | SIEM queries, automated playbooks |
-| Communication | Status page updates, notification routing | PagerDuty, Slack webhooks, statuspage.io |
-| Reporting | Metric collection, compliance report generation | Custom dashboards, SIEM reporting |
+| Detection     | Alert triage, IOC matching, anomaly detection   | SOAR platforms (Splunk SOAR, Cortex XSOAR) |
+| Containment   | Automated host isolation, account disable       | EDR response actions, AWS Lambda           |
+| Investigation | Log correlation, timeline reconstruction        | SIEM queries, automated playbooks          |
+| Communication | Status page updates, notification routing       | PagerDuty, Slack webhooks, statuspage.io   |
+| Reporting     | Metric collection, compliance report generation | Custom dashboards, SIEM reporting          |
 
 ### Continuous Improvement Cycle
 
@@ -791,13 +794,13 @@ While tabletop exercises test the decision-making process, red team exercises te
 Detection and response capabilities. A red team simulates a real adversary attempting to breach the
 Organization, while the blue team (defenders) attempts to detect and stop them.
 
-| Exercise Type | Scope | Duration | Frequency |
+| Exercise Type            | Scope                    | Duration  | Frequency     |
 | ------------------------ | ------------------------ | --------- | ------------- |
-| Tabletop | Discussion-based | 2-4 hours | Quarterly |
-| Red team / Blue team | Technical simulation | 1-4 weeks | Annually |
-| Purple team | Collaborative (red+blue) | 1-2 weeks | Semi-annually |
-| Vulnerability assessment | Targeted scanning | 1-5 days | Monthly |
-| Penetration test | Scoped exploitation | 1-3 weeks | Annually |
+| Tabletop                 | Discussion-based         | 2-4 hours | Quarterly     |
+| Red team / Blue team     | Technical simulation     | 1-4 weeks | Annually      |
+| Purple team              | Collaborative (red+blue) | 1-2 weeks | Semi-annually |
+| Vulnerability assessment | Targeted scanning        | 1-5 days  | Monthly       |
+| Penetration test         | Scoped exploitation      | 1-3 weeks | Annually      |
 
 Red team exercises should be conducted by an independent team (internal red team or external
 Consultant) that does not share detection rules or playbooks with the blue team. The goal is to test

@@ -1,6 +1,8 @@
 ---
 title: Best Practices
-description: "Best Practices — Null Safety; Typing; Concurrency; Collections including key definitions, derivations, and problem-solving techniques."
+description:
+  'Best Practices — Null Safety; Typing; Concurrency; Collections including key definitions,
+  derivations, and problem-solving techniques.'
 date: 2025-07-17T20:40:50.912Z
 tags:
   - dart
@@ -8,6 +10,7 @@ categories:
   - dart
 slug: practices
 ---
+
 ## Dart Best Practices
 
 ### Null Safety
@@ -15,7 +18,7 @@ slug: practices
 - Always enable null safety (`dart migrate`).
 - Avoid usage of `dynamic` and `Object` declaration, always use `var` or explicit typing.
 - Follow the order of `const` >> `final` >> `var` with no nullability specifier >> `final late` >>
- `var?`.
+  `var?`.
 - Avoid non const top-level variables.
 - Favor immutable data classes (with `freezed` or `equatable`).
 
@@ -114,7 +117,7 @@ slug: practices
 ## Platform specific
 
 - ndk version mismatch
- - Set `ndkVersion` in build.gradle.kts to the specific ndk version installed
+- Set `ndkVersion` in build.gradle.kts to the specific ndk version installed
 
 ## Common Pitfalls
 

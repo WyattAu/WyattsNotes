@@ -1,9 +1,12 @@
 ---
 id: build-tools
 title: Build Tools and Dependency Management
-description: "Build Tools and Dependency Management — Project Structure Conventions; Maven; POM Structure; Lifecycle Phases with worked examples and exam-style questions."
+description:
+  'Build Tools and Dependency Management — Project Structure Conventions; Maven; POM Structure;
+  Lifecycle Phases with worked examples and exam-style questions.'
 slug: build-tools
 ---
+
 ## Project Structure Conventions
 
 Java projects follow a standard directory layout established by Maven and adopted by Gradle and most
@@ -109,15 +112,15 @@ Dependencies, plugins, and build configuration.
 Maven's build lifecycle is a sequence of phases. Each phase delegates to plugins that implement the
 Behavior. Running a phase executes all prior phases in order.
 
-| Phase | Description |
+| Phase      | Description                                                         |
 | ---------- | ------------------------------------------------------------------- |
-| `validate` | Validate project structure and POM correctness |
-| `compile` | Compile production source code |
-| `test` | Compile and run unit tests |
-| `package` | Package compiled code into JAR/WAR |
-| `verify` | Run integration tests and verify quality checks |
-| `install` | Install the artifact into the local repository (`~/.m2/repository`) |
-| `deploy` | Copy the artifact to a remote repository |
+| `validate` | Validate project structure and POM correctness                      |
+| `compile`  | Compile production source code                                      |
+| `test`     | Compile and run unit tests                                          |
+| `package`  | Package compiled code into JAR/WAR                                  |
+| `verify`   | Run integration tests and verify quality checks                     |
+| `install`  | Install the artifact into the local repository (`~/.m2/repository`) |
+| `deploy`   | Copy the artifact to a remote repository                            |
 
 ```bash
 # Run a specific phase (and all prior phases)
@@ -135,13 +138,13 @@ mvn package -DskipTests
 
 Maven scopes control when a dependency is available:
 
-| Scope | Compile | Test | Runtime | Package | Transitively Available |
+| Scope               | Compile | Test | Runtime | Package | Transitively Available |
 | ------------------- | ------- | ---- | ------- | ------- | ---------------------- |
-| `compile` (default) | Yes | Yes | Yes | Yes | Yes |
-| `provided` | Yes | Yes | No | No | No |
-| `runtime` | No | Yes | Yes | Yes | Yes |
-| `test` | No | Yes | No | No | No |
-| `system` | Yes | Yes | No | Yes | No |
+| `compile` (default) | Yes     | Yes  | Yes     | Yes     | Yes                    |
+| `provided`          | Yes     | Yes  | No      | No      | No                     |
+| `runtime`           | No      | Yes  | Yes     | Yes     | Yes                    |
+| `test`              | No      | Yes  | No      | No      | No                     |
+| `system`            | Yes     | Yes  | No      | Yes     | No                     |
 
 ```xml
 <!-- compile (default) — needed for compilation, included in package -->
@@ -185,9 +188,9 @@ When your project depends on library A, and library A depends on library B, libr
 **Mediation rules (when version conflicts exist):**
 
 1. **Nearest definition wins** — if two dependency paths provide the same artifact with different
- versions, the version from the nearest path (shortest path in the dependency tree) is selected.
+   versions, the version from the nearest path (shortest path in the dependency tree) is selected.
 2. **First declaration wins** — if two paths have the same depth, the version declared first in the
- POM wins.
+   POM wins.
 
 ```bash
 # View the dependency tree
@@ -357,15 +360,15 @@ Incremental build system skips tasks whose inputs and outputs have not changed (
 
 Gradle uses configurations to declare dependencies with different roles:
 
-| Configuration | Maven Equivalent | Description |
+| Configuration        | Maven Equivalent | Description                                                             |
 | -------------------- | ---------------- | ----------------------------------------------------------------------- |
-| `implementation` | `compile` | Used for compilation and runtime, not exposed to dependents |
-| `api` | `compile` | Used for compilation and runtime, exposed to dependents (use sparingly) |
-| `compileOnly` | `provided` | Needed for compilation only, not included in runtime classpath |
-| `runtimeOnly` | `runtime` | Needed at runtime only |
-| `testImplementation` | `test` | Used for compiling and running tests |
-| `testCompileOnly` | N/A | Needed for test compilation only |
-| `testRuntimeOnly` | `test` (runtime) | Needed for running tests only |
+| `implementation`     | `compile`        | Used for compilation and runtime, not exposed to dependents             |
+| `api`                | `compile`        | Used for compilation and runtime, exposed to dependents (use sparingly) |
+| `compileOnly`        | `provided`       | Needed for compilation only, not included in runtime classpath          |
+| `runtimeOnly`        | `runtime`        | Needed at runtime only                                                  |
+| `testImplementation` | `test`           | Used for compiling and running tests                                    |
+| `testCompileOnly`    | N/A              | Needed for test compilation only                                        |
+| `testRuntimeOnly`    | `test` (runtime) | Needed for running tests only                                           |
 
 ```kotlin
 dependencies {
@@ -430,16 +433,16 @@ sourceSets {
 
 ## Maven vs Gradle
 
-| Aspect | Maven | Gradle |
+| Aspect             | Maven                        | Gradle                                  |
 | ------------------ | ---------------------------- | --------------------------------------- |
-| Build model | Phase-based lifecycle | Task-based DAG |
-| Configuration | XML (verbose, declarative) | Groovy/Kotlin DSL (concise, imperative) |
-| Incremental builds | Limited (re-runs phases) | Up-to-date checks per task |
-| Performance | Slower for large projects | Build cache, configuration avoidance |
-| Learning curve | Lower (conventions) | Higher (more flexible) |
-| Multi-module | Good (inheritance, profiles) | Excellent (composite builds) |
-| Ecosystem | Central (Maven Central) | Central (can consume Maven repos) |
-| Custom logic | Plugins (Java/MXML) | Any Groovy/Kotlin code in build script |
+| Build model        | Phase-based lifecycle        | Task-based DAG                          |
+| Configuration      | XML (verbose, declarative)   | Groovy/Kotlin DSL (concise, imperative) |
+| Incremental builds | Limited (re-runs phases)     | Up-to-date checks per task              |
+| Performance        | Slower for large projects    | Build cache, configuration avoidance    |
+| Learning curve     | Lower (conventions)          | Higher (more flexible)                  |
+| Multi-module       | Good (inheritance, profiles) | Excellent (composite builds)            |
+| Ecosystem          | Central (Maven Central)      | Central (can consume Maven repos)       |
+| Custom logic       | Plugins (Java/MXML)          | Any Groovy/Kotlin code in build script  |
 
 ## Version Management
 
@@ -456,7 +459,7 @@ MAJOR.MINOR.PATCH[-QUALIFIER]
 ### SNAPSHOT vs RELEASE
 
 - **`SNAPSHOT`** — a development version that may change. Maven repositories can serve the latest
- SNAPSHOT for each request (`-SNAPSHOT` suffix).
+  SNAPSHOT for each request (`-SNAPSHOT` suffix).
 - **RELEASE** — a stable, immutable version. Once published, the artifact never changes.
 
 ```xml
@@ -480,11 +483,9 @@ Maven supports version ranges, but they are a source of non-reproducible builds.
 <version>[3.14.0]</version>         <!-- exactly 3.14.0 -->
 ```
 
-:::warning
-Avoid version ranges in production. They make builds non-reproducible — a build that
+:::warning Avoid version ranges in production. They make builds non-reproducible — a build that
 Works today may break tomorrow when a new compatible version is published. Pin exact versions and
-Update them deliberately through dependency review.
-:::
+Update them deliberately through dependency review. :::
 
 ## Multi-Module Projects
 
@@ -590,12 +591,10 @@ mvn clean install
 ./gradlew :web:build
 ```
 
-:::info
-In Maven, a parent POM with `&lt;packaging&gt;pom&lt;/packaging&gt;` serves as an
+:::info In Maven, a parent POM with `&lt;packaging&gt;pom&lt;/packaging&gt;` serves as an
 Aggregation point and a source of shared configuration. In Gradle, the `settings.gradle.kts` file
 Declares which modules belong to the build, and shared configuration is applied through convention
-Plugins or the `subprojects` block.
-:::
+Plugins or the `subprojects` block. :::
 
 ## Common Pitfalls
 
@@ -609,8 +608,8 @@ mvn dependency:tree -Dverbose | grep "conflict"
 ./gradlew dependencies --configuration runtimeClasspath
 ```
 
-**Symptoms:** `NoSuchMethodError``ClassNotFoundException``NoClassDefFoundError` at runtime.
-These occur when multiple versions of the same library are on the classpath.
+**Symptoms:** `NoSuchMethodError``ClassNotFoundException``NoClassDefFoundError` at runtime. These
+occur when multiple versions of the same library are on the classpath.
 
 **Fix:** Use `dependencyManagement` (Maven) or `constraints`/BOM (Gradle) to force a single version
 Across all modules.
@@ -828,8 +827,8 @@ publishing {
 
 ### Private Repositories (Nexus, Artifactory)
 
-Corporate environments run a private Maven repository manager (Sonatype Nexus, JFrog
-Artifactory) that:
+Corporate environments run a private Maven repository manager (Sonatype Nexus, JFrog Artifactory)
+that:
 
 - **Proxies Maven Central** — reduces external bandwidth and provides a local cache.
 - **Hosts internal libraries** — first-party artifacts not published to Maven Central.
@@ -975,12 +974,10 @@ gradle wrapper --gradle-version=8.5
 The wrapper downloads the specified Gradle distribution to `~/.gradle/wrapper/dists/`. Check
 `gradlew``gradlew.bat`And `gradle/wrapper/gradle-wrapper.properties` into version control.
 
-:::warning
-Always use wrapper scripts. Never depend on a globally installed Maven or Gradle.
+:::warning Always use wrapper scripts. Never depend on a globally installed Maven or Gradle.
 Different developers (and CI agents) may have different versions installed, leading to "works on my
 Machine" build failures. Pin the wrapper version in version control and update it deliberately
-Through a PR.
-:::
+Through a PR. :::
 
 ## Summary
 

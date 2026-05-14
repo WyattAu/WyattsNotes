@@ -1,6 +1,8 @@
 ---
 title: Complex Numbers
-description: "A-Level Further Maths notes on Complex Numbers: Board Coverage; 1.1 The Argand Diagram; 1.2 Modulus and Argument; 2. De Moivre's Theorem."
+description:
+  "A-Level Further Maths notes on Complex Numbers: Board Coverage; 1.1 The Argand Diagram; 1.2
+  Modulus and Argument; 2. De Moivre's Theorem."
 date: 2026-04-02T00:00:00.000Z
 tags:
   - FurtherMaths
@@ -10,6 +12,7 @@ categories:
 slug: further-complex-numbers
 sidebar_position: 1
 ---
+
 ## Complex Numbers
 
 Complex numbers extend the real number system by introducing a solution to the equation
@@ -19,12 +22,12 @@ Polynomial equations.
 
 ### Board Coverage
 
-| Board | Paper | Notes |
+| Board   | Paper   | Notes                                                       |
 | ------- | ------- | ----------------------------------------------------------- |
-| AQA | Paper 1 | Full coverage including transformations $w = f(z)$ |
-| Edexcel | FP1/FP2 | De Moivre, roots of unity, loci in FP2 |
-| OCR (A) | Paper 1 | De Moivre, exponential form, roots of unity |
-| CIE | P1 | Loci required; exponential form and roots of unity in depth |
+| AQA     | Paper 1 | Full coverage including transformations $w = f(z)$          |
+| Edexcel | FP1/FP2 | De Moivre, roots of unity, loci in FP2                      |
+| OCR (A) | Paper 1 | De Moivre, exponential form, roots of unity                 |
+| CIE     | P1      | Loci required; exponential form and roots of unity in depth |
 
 <hr />
 
@@ -50,8 +53,8 @@ $\operatorname{Im}(z)$. The complex number $z = a + bi$ is plotted as the point 
 
 - The _modulus_ $|z|$ is defined as $|z| = \sqrt{a^2 + b^2}$.
 - The _argument_ $\arg(z)$ is the angle $\theta$ (measured anticlockwise from the positive real
- axis) such that $\tan\theta = \dfrac{b}{a}$With $-\pi < \theta \leq \pi$ (the _principal
- argument_).
+  axis) such that $\tan\theta = \dfrac{b}{a}$With $-\pi < \theta \leq \pi$ (the _principal
+  argument_).
 
 $$\boxed{z = a + bi = |z|(\cos\theta + i\sin\theta) = r(\cos\theta + i\sin\theta)}$$
 
@@ -121,9 +124,8 @@ $\dfrac◆LB◆1◆RB◆◆LB◆\cos\theta + i\sin\theta◆RB◆ = \cos\theta - 
 So the result follows. $\square$
 
 **Intuition.** De Moivre's theorem says that raising a complex number on the unit circle to the
-$n$-th power multiplies its angle by $n$. This is because multiplication of complex numbers
-Adds their arguments:
-$r_1 e^{i\theta_1} \cdot r_2 e^{i\theta_2} = r_1 r_2 e^{i(\theta_1 + \theta_2)}$.
+$n$-th power multiplies its angle by $n$. This is because multiplication of complex numbers Adds
+their arguments: $r_1 e^{i\theta_1} \cdot r_2 e^{i\theta_2} = r_1 r_2 e^{i(\theta_1 + \theta_2)}$.
 
 ### 2.1 Applications: Trigonometric Identities
 
@@ -300,8 +302,8 @@ $$
 
 ### 5.1 Circles: $|z - a| = r$
 
-**Definition.** The locus $|z - a| = r$Where $a \in \mathbb{C}$ and $r \in \mathbb{R}^+$Is a
-Circle with centre $a$ and radius $r$ in the Argand diagram.
+**Definition.** The locus $|z - a| = r$Where $a \in \mathbb{C}$ and $r \in \mathbb{R}^+$Is a Circle
+with centre $a$ and radius $r$ in the Argand diagram.
 
 $$|z - a| = r \iff \sqrt◆LB◆(x - \alpha)^2 + (y - \beta)^2◆RB◆ = r \iff (x - \alpha)^2 + (y - \beta)^2 = r^2$$
 
@@ -311,8 +313,8 @@ The region $|z - a| < r$ is the _interior_ of the circle, and $|z - a| > r$ is t
 
 ### 5.2 Perpendicular Bisectors: $|z - a| = |z - b|$
 
-This locus represents all points equidistant from $a$ and $b$Which is the perpendicular bisector
-Of the line segment joining $a$ and $b$.
+This locus represents all points equidistant from $a$ and $b$Which is the perpendicular bisector Of
+the line segment joining $a$ and $b$.
 
 ### 5.3 Half-Lines: $\arg(z - a) = \alpha$
 
@@ -602,9 +604,9 @@ $x > 2$.
 $(x - 2)(1 - \sqrt{3}) = 0$So $x = 2$ (gives $y = 0$But the half-line requires $x > 2$) or
 $1 = \sqrt{3}$Which is false.
 
-There is no intersection. The half-line from $(2, 0)$ at angle $\pi/3$ has slope $\sqrt{3}$While
-The perpendicular bisector has slope 1, and they only meet at the point $(2, 0)$ which is excluded
-From the half-line.
+There is no intersection. The half-line from $(2, 0)$ at angle $\pi/3$ has slope $\sqrt{3}$While The
+perpendicular bisector has slope 1, and they only meet at the point $(2, 0)$ which is excluded From
+the half-line.
 
 **Answer:** No complex number satisfies both conditions simultaneously.
 
@@ -701,8 +703,8 @@ If $z = re^{i\theta}$Then $w = r^2 e^{2i\theta}$.
 
 - Modulus: $1 \leq r \leq 2 \implies 1 \leq r^2 \leq 4$So $1 \leq |w| \leq 4$.
 - Argument:
- $0 \leq \theta \leq \dfrac◆LB◆\pi◆RB◆◆LB◆4◆RB◆ \implies 0 \leq 2\theta \leq \dfrac◆LB◆\pi◆RB◆◆LB◆2◆RB◆$
- so $0 \leq \arg(w) \leq \dfrac◆LB◆\pi◆RB◆◆LB◆2◆RB◆$.
+  $0 \leq \theta \leq \dfrac◆LB◆\pi◆RB◆◆LB◆4◆RB◆ \implies 0 \leq 2\theta \leq \dfrac◆LB◆\pi◆RB◆◆LB◆2◆RB◆$
+  so $0 \leq \arg(w) \leq \dfrac◆LB◆\pi◆RB◆◆LB◆2◆RB◆$.
 
 The image is the region in the first quadrant of the $w$-plane between the circles $|w| = 1$ and
 $|w| = 4$Bounded by the rays $\arg(w) = 0$ and $\arg(w) = \dfrac◆LB◆\pi◆RB◆◆LB◆2◆RB◆$.
@@ -898,12 +900,12 @@ $\blacksquare$
 
 ## 9. Common Pitfalls
 
-| Pitfall | Correct Approach |
-| ----------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ | -------- | --- | --- | --- | --- | --- | --- | --------------------------------------------------- | --- | ---- | --- | --- | --- | --- |
-| Forgetting that $\arg(z)$ is measured from the positive real axis | $\arg(z)$ is the angle anticlockwise from the positive $x$-axis, range $(-\pi, \pi]$ or $[0, 2\pi)$ |
-| Confusing $                                                       | z-w                                                                                                          | $ with $ | z   | -   | w   | $ | $   | z-w | $ is the distance between $z$ and $w$; $ | z-w | \neq | z   | -   | w   | $ |
-| Missing roots when solving $z^n = w$ | There are always exactly $n$ distinct roots; check your $k$ values cover $0$ to $n-1$ |
-| Incorrectly applying de Moivre to non-integer powers | De Moivre's theorem $(\cos\theta + i\sin\theta)^n = \cos n\theta + i\sin n\theta$ holds for integer $n$ only |
+| Pitfall                                                           | Correct Approach                                                                                             |
+| ----------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ | -------- | --- | --- | --- | --- | --- | --- | ---------------------------------------- | --- | ---- | --- | --- | --- | --- |
+| Forgetting that $\arg(z)$ is measured from the positive real axis | $\arg(z)$ is the angle anticlockwise from the positive $x$-axis, range $(-\pi, \pi]$ or $[0, 2\pi)$          |
+| Confusing $                                                       | z-w                                                                                                          | $ with $ | z   | -   | w   | $   | $   | z-w | $ is the distance between $z$ and $w$; $ | z-w | \neq | z   | -   | w   | $   |
+| Missing roots when solving $z^n = w$                              | There are always exactly $n$ distinct roots; check your $k$ values cover $0$ to $n-1$                        |
+| Incorrectly applying de Moivre to non-integer powers              | De Moivre's theorem $(\cos\theta + i\sin\theta)^n = \cos n\theta + i\sin n\theta$ holds for integer $n$ only |
 
 ---
 
@@ -981,16 +983,16 @@ Argand diagrams and polar form $(r, \theta)$ connect to polar coordinates. See
 
 ## 12. Key Results Summary
 
-| Result | Formula |
+| Result                        | Formula                                                   |
 | ----------------------------- | --------------------------------------------------------- | --- | -------------------------------- | --- | --- |
-| Modulus | $                                                         | z   | = \sqrt{a^2+b^2}$ for $z = a+bi$ |
-| Argument | $\arg(z) = \arctan(b/a)$ (adjusting for quadrant) |
-| Euler's formula | $e^{i\theta} = \cos\theta+i\sin\theta$ |
-| De Moivre | $(\cos\theta+i\sin\theta)^n = \cos n\theta+i\sin n\theta$ |
-| $n$-th roots of unity | $z_k = e^{2\pi ik/n}$$k = 0, \ldots, n-1$ |
-| Locus: circle | $                                                         | z-a | =r$ |
-| Locus: perpendicular bisector | $                                                         | z-a | =                                | z-b | $ |
-| Locus: half-line | $\arg(z-a) = \theta$ |
+| Modulus                       | $                                                         | z   | = \sqrt{a^2+b^2}$ for $z = a+bi$ |
+| Argument                      | $\arg(z) = \arctan(b/a)$ (adjusting for quadrant)         |
+| Euler's formula               | $e^{i\theta} = \cos\theta+i\sin\theta$                    |
+| De Moivre                     | $(\cos\theta+i\sin\theta)^n = \cos n\theta+i\sin n\theta$ |
+| $n$-th roots of unity         | $z_k = e^{2\pi ik/n}$$k = 0, \ldots, n-1$                 |
+| Locus: circle                 | $                                                         | z-a | =r$                              |
+| Locus: perpendicular bisector | $                                                         | z-a | =                                | z-b | $   |
+| Locus: half-line              | $\arg(z-a) = \theta$                                      |
 
 ---
 
@@ -1058,13 +1060,13 @@ Is also a root. This is because $\overline{P(z)} = P(\bar{z})$ for real-coeffici
 
 ### 14.4 Regions in the Argand diagram
 
-| Inequality | Region |
+| Inequality                   | Region                             |
 | ---------------------------- | ---------------------------------- |
-| $\|z-a\| < r$ | Interior of circle (open disc) |
-| $\|z-a\| \leq r$ | Closed disc |
-| $\alpha < \arg(z-a) < \beta$ | Sector (angular region) |
-| $\mathrm{Re}(z) > k$ | Half-plane to the right of $x = k$ |
-| $\mathrm{Im}(z) > k$ | Half-plane above $y = k$ |
+| $\|z-a\| < r$                | Interior of circle (open disc)     |
+| $\|z-a\| \leq r$             | Closed disc                        |
+| $\alpha < \arg(z-a) < \beta$ | Sector (angular region)            |
+| $\mathrm{Re}(z) > k$         | Half-plane to the right of $x = k$ |
+| $\mathrm{Im}(z) > k$         | Half-plane above $y = k$           |
 
 ### 14.5 The exponential form of $\sin$ and $\cos$
 
@@ -1238,7 +1240,7 @@ While complex analysis (Cauchy's theorem, residue calculus) is beyond A-Level, t
 Concepts appear:
 
 - Cauchy's integral formula:
- $f(a) = \dfrac◆LB◆1◆RB◆◆LB◆2\pi i◆RB◆\displaystyle\oint_C \frac{f(z)}{z-a}\,dz$
+  $f(a) = \dfrac◆LB◆1◆RB◆◆LB◆2\pi i◆RB◆\displaystyle\oint_C \frac{f(z)}{z-a}\,dz$
 - Residue theorem: $\displaystyle\oint_C f(z)\,dz = 2\pi i \sum \text{Res}(f, a_k)$
 
 These are mentioned for context and further study.

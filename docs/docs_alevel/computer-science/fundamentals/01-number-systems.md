@@ -1,6 +1,8 @@
 ---
 title: Number Systems
-description: "A-Level Computer Science notes on Number Systems: Definition; Conversion Between Bases; Base $b$ to Denary; Denary to Base $b$ (Repeated Division)."
+description:
+  'A-Level Computer Science notes on Number Systems: Definition; Conversion Between Bases; Base $b$
+  to Denary; Denary to Base $b$ (Repeated Division).'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - ComputerScience
@@ -9,6 +11,7 @@ categories:
   - ComputerScience
 slug: number-systems
 ---
+
 ## 1. Positional Number Systems
 
 ### Definition
@@ -25,12 +28,12 @@ And the **least significant digit** (LSD) is $d_0$.
 
 The bases relevant to A Level Computer Science are:
 
-| Base | Name | Digits Used |
+| Base | Name   | Digits Used           |
 | ---- | ------ | --------------------- |
-| 10 | Denary | 0, 1, 2, ..., 9 |
-| 2 | Binary | 0, 1 |
-| 8 | Octal | 0, 1, 2, ..., 7 |
-| 16 | Hex | 0–9, A, B, C, D, E, F |
+| 10   | Denary | 0, 1, 2, ..., 9       |
+| 2    | Binary | 0, 1                  |
+| 8    | Octal  | 0, 1, 2, ..., 7       |
+| 16   | Hex    | 0–9, A, B, C, D, E, F |
 
 We use subscript notation to denote the base: $1011_2 = 11_{10}$.
 
@@ -84,14 +87,14 @@ This maintains the invariant. When $N_k = 0$The representation is complete.
 
 | Step | $N$ | $N \bmod 2$ | $\lfloor N/2 \rfloor$ |
 | ---- | --- | ----------- | --------------------- |
-| 1 | 156 | 0 | 78 |
-| 2 | 78 | 0 | 39 |
-| 3 | 39 | 1 | 19 |
-| 4 | 19 | 1 | 9 |
-| 5 | 9 | 1 | 4 |
-| 6 | 4 | 0 | 2 |
-| 7 | 2 | 0 | 1 |
-| 8 | 1 | 1 | 0 |
+| 1    | 156 | 0           | 78                    |
+| 2    | 78  | 0           | 39                    |
+| 3    | 39  | 1           | 19                    |
+| 4    | 19  | 1           | 9                     |
+| 5    | 9   | 1           | 4                     |
+| 6    | 4   | 0           | 2                     |
+| 7    | 2   | 0           | 1                     |
+| 8    | 1   | 1           | 0                     |
 
 Reading bottom to top: $156_{10} = 10011100_2$
 
@@ -141,14 +144,14 @@ We add bitwise from right to left, with carries:
 
 | $A$ | $B$ | $C_{in}$ | Sum | $C_{out}$ |
 | --- | --- | -------- | --- | --------- |
-| 0 | 0 | 0 | 0 | 0 |
-| 0 | 0 | 1 | 1 | 0 |
-| 0 | 1 | 0 | 1 | 0 |
-| 0 | 1 | 1 | 0 | 1 |
-| 1 | 0 | 0 | 1 | 0 |
-| 1 | 0 | 1 | 0 | 1 |
-| 1 | 1 | 0 | 0 | 1 |
-| 1 | 1 | 1 | 1 | 1 |
+| 0   | 0   | 0        | 0   | 0         |
+| 0   | 0   | 1        | 1   | 0         |
+| 0   | 1   | 0        | 1   | 0         |
+| 0   | 1   | 1        | 0   | 1         |
+| 1   | 0   | 0        | 1   | 0         |
+| 1   | 0   | 1        | 0   | 1         |
+| 1   | 1   | 0        | 0   | 1         |
+| 1   | 1   | 1        | 1   | 1         |
 
 **Proposition (Carry propagation).** The carry into bit position $i$ depends only on bits $0$
 Through $i-1$.
@@ -191,8 +194,8 @@ For an $n$-bit two's complement representation, the range of representable integ
 
 $$[-2^{n-1},\ 2^{n-1} - 1]$$
 
-The representation of a non-negative integer $x$ is its standard $n$-bit binary
-Representation. The representation of a negative integer $-x$ (where $x \gt{} 0$) is:
+The representation of a non-negative integer $x$ is its standard $n$-bit binary Representation. The
+representation of a negative integer $-x$ (where $x \gt{} 0$) is:
 
 $$\mathrm{TwosComp}_n(-x) = 2^n - x$$
 
@@ -203,8 +206,8 @@ Complement representation of $-x$ equals $\bar{x} + 1$ (where $\bar{x}$ is the b
 $n$-bit representation of $x$And $+1$ is binary addition).
 
 **Proof.** The $n$-bit representation of $x$ has bits $x_{n-1}\ldots x_0$. The bitwise complement
-$\bar{x}$ has bits $\bar{x}_{n-1}\ldots\bar{x}_0$Where $\bar{x}_i = 1 - x_i$. The value of
-$\bar{x}$ as an unsigned $n$-bit number is:
+$\bar{x}$ has bits $\bar{x}_{n-1}\ldots\bar{x}_0$Where $\bar{x}_i = 1 - x_i$. The value of $\bar{x}$
+as an unsigned $n$-bit number is:
 
 $$\bar{x} = \sum_{i=0}^{n-1}(1 - x_i) \cdot 2^i = \sum_{i=0}^{n-1} 2^i - \sum_{i=0}^{n-1} x_i \cdot 2^i = (2^n - 1) - x$$
 
@@ -230,12 +233,12 @@ If no overflow occurs.
 
 **Overflow detection rules:**
 
-| Condition | Overflow? |
+| Condition                           | Overflow? |
 | ----------------------------------- | --------- |
-| Positive + Positive = Negative | Yes |
-| Negative + Negative = Positive | Yes |
-| Positive + Negative | Never |
-| Same signs produce same sign result | No |
+| Positive + Positive = Negative      | Yes       |
+| Negative + Negative = Positive      | Yes       |
+| Positive + Negative                 | Never     |
+| Same signs produce same sign result | No        |
 
 **Formally:** overflow occurs if and only if the carry into the MSB differs from the carry out of
 The MSB.
@@ -272,18 +275,16 @@ $6 = 0110_2$$5 = 0101_2$
        1 0 1 1
 ```
 
-Result: $1011_2 = -5$ in two's complement. But $6 + 5 = 11$Which is outside the range $[-8, 7]$
-For 4 bits. Overflow detected: positive + positive yielded negative. ✓
+Result: $1011_2 = -5$ in two's complement. But $6 + 5 = 11$Which is outside the range $[-8, 7]$ For
+4 bits. Overflow detected: positive + positive yielded negative. ✓
 
 </details>
 
-:::info
-Info
+:::info Info
 
 - **AQA:** Requires two's complement for 8-bit and 16-bit numbers.
 - **CIE:** Requires two's complement for 8-bit numbers specifically.
-- **OCR:** Requires understanding of sign and magnitude as well as two's complement.
-:::
+- **OCR:** Requires understanding of sign and magnitude as well as two's complement. :::
 
 <hr />
 
@@ -334,13 +335,13 @@ Range: $[0,\ 31.875]$Precision: $0.125$
 In **Binary Coded Decimal (BCD)**, each decimal digit (0–9) is represented by its 4-bit binary
 Equivalent.
 
-| Decimal | BCD |
+| Decimal | BCD  |
 | ------- | ---- |
-| 0 | 0000 |
-| 1 | 0001 |
-| 2 | 0010 |
-| ... | ... |
-| 9 | 1001 |
+| 0       | 0000 |
+| 1       | 0001 |
+| 2       | 0010 |
+| ...     | ...  |
+| 9       | 1001 |
 
 The codes $1010$ through $1111$ are **invalid** in BCD.
 
@@ -349,13 +350,11 @@ The codes $1010$ through $1111$ are **invalid** in BCD.
 - Each decimal digit requires exactly 4 bits (a **nibble**)
 - A $k$-digit decimal number requires $4k$ bits in BCD
 - BCD is less space-efficient than pure binary: e.g., $999_{10}$ requires 12 bits in BCD but only 10
- bits in pure binary ($1111100111_2$)
+  bits in pure binary ($1111100111_2$)
 - BCD avoids rounding errors in decimal arithmetic — useful in financial systems
 
-:::warning
-Pitfall BCD is NOT the same as converting the entire number to binary. $12_{10}$ in BCD
-Is $00010010_2$NOT $1100_2$.
-:::
+:::warning Pitfall BCD is NOT the same as converting the entire number to binary. $12_{10}$ in BCD
+Is $00010010_2$NOT $1100_2$. :::
 
 <hr />
 
@@ -383,7 +382,7 @@ Extended ASCII uses 8 bits (256 characters) but is not standardised — various 
 Every writing system. Key facts:
 
 - Unicode assigns a unique **code point** to each character, written as `U+XXXX` (e.g., 'A' =
- `U+0041`'€' = `U+20AC`)
+  `U+0041`'€' = `U+20AC`)
 - As of Unicode 15.0, there are over 149,000 characters across 161 scripts
 - Unicode is an abstract standard — it defines code points, not how they are stored in bytes
 
@@ -394,18 +393,18 @@ With ASCII.
 
 **Encoding rules:**
 
-| Code Point Range | Binary Pattern | Bytes |
+| Code Point Range       | Binary Pattern                        | Bytes |
 | ---------------------- | ------------------------------------- | ----- |
-| `U+0000` – `U+007F` | `0xxxxxxx` | 1 |
-| `U+0080` – `U+07FF` | `110xxxxx 10xxxxxx` | 2 |
-| `U+0800` – `U+FFFF` | `1110xxxx 10xxxxxx 10xxxxxx` | 3 |
-| `U+10000` – `U+10FFFF` | `11110xxx 10xxxxxx 10xxxxxx 10xxxxxx` | 4 |
+| `U+0000` – `U+007F`    | `0xxxxxxx`                            | 1     |
+| `U+0080` – `U+07FF`    | `110xxxxx 10xxxxxx`                   | 2     |
+| `U+0800` – `U+FFFF`    | `1110xxxx 10xxxxxx 10xxxxxx`          | 3     |
+| `U+10000` – `U+10FFFF` | `11110xxx 10xxxxxx 10xxxxxx 10xxxxxx` | 4     |
 
 **Properties of UTF-8:**
 
 1. **Self-synchronising:** Any byte can identify whether it is a single-byte character, the start of
- a multi-byte sequence, or a continuation byte. Continuation bytes always start with `10`Start
- bytes start with `11...0`.
+   a multi-byte sequence, or a continuation byte. Continuation bytes always start with `10`Start
+   bytes start with `11...0`.
 2. **ASCII compatible:** All ASCII text is valid UTF-8.
 3. **Prefix-free:** No valid UTF-8 sequence is a prefix of another valid sequence.
 
@@ -438,13 +437,11 @@ Magnitude.
 - Range for $n$ bits: $[-(2^{n-1} - 1),\ 2^{n-1} - 1]$
 - Two representations of zero: $+0 = 000\ldots0$ and $-0 = 100\ldots0$
 
-:::warning
-Pitfall Sign and magnitude is rarely used in practice because:
+:::warning Pitfall Sign and magnitude is rarely used in practice because:
 
 1. It has two representations of zero
 2. Addition requires different logic depending on the signs
-3. The range is asymmetric
-:::
+3. The range is asymmetric :::
 
 <hr />
 

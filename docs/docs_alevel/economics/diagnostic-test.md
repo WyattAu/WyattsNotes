@@ -1,6 +1,8 @@
 ---
 title: Economics Diagnostic Test
-description: "A-Level General diagnostic test: Part A: Microeconomics (22 Questions); Topic 1: The Economic Problem for targeted revision."
+description:
+  'A-Level General diagnostic test: Part A: Microeconomics (22 Questions); Topic 1: The Economic
+  Problem for targeted revision.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Economics
@@ -9,6 +11,7 @@ categories:
   - Economics
 slug: economics-diagnostic-test
 ---
+
 This diagnostic test covers all A Level Economics micro and macro topics. Each question tests a
 Specific concept, requires 2–5 steps, and includes a revision redirect to the relevant topic.
 
@@ -440,9 +443,9 @@ Overall: globalisation has lifted billions out of poverty (especially in East As
 
 ### Topic 7: Macroeconomic Policy Debates
 
-**Q36.** Using the Taylor Rule with $r^* = 1.5\%$$\pi^* = 2\%$And equal weights of 0.5,
-Calculate the prescribed policy rate when inflation is 1% and the output gap is –2%. What does this
-Tell you about the central bank's dilemma at the ZLB?
+**Q36.** Using the Taylor Rule with $r^* = 1.5\%$$\pi^* = 2\%$And equal weights of 0.5, Calculate
+the prescribed policy rate when inflation is 1% and the output gap is –2%. What does this Tell you
+about the central bank's dilemma at the ZLB?
 
 <details>
 <summary>Answer</summary>
@@ -559,7 +562,10 @@ Using the concepts of comparative advantage, trade creation/diversion, and suppl
 
 ## Section 3: Quantitative Skills Assessment
 
-**Q46.** A country's GDP data (GBP billions) is as follows: consumption = 900, investment = 200, government spending = 350, exports = 280, imports = 310. The GDP deflator is 115 (base year = 100). Population is 67 million. Calculate: (a) nominal GDP, (b) real GDP, (c) GDP per capita, (d) real GDP per capita, (e) the current account balance.
+**Q46.** A country's GDP data (GBP billions) is as follows: consumption = 900, investment = 200,
+government spending = 350, exports = 280, imports = 310. The GDP deflator is 115 (base year = 100).
+Population is 67 million. Calculate: (a) nominal GDP, (b) real GDP, (c) GDP per capita, (d) real GDP
+per capita, (e) the current account balance.
 
 <details>
 <summary>Answer</summary>
@@ -570,7 +576,10 @@ Using the concepts of comparative advantage, trade creation/diversion, and suppl
 (e) Current account balance $= X - M = 280 - 310 = -\pounds 30\text{bn}$ (deficit).
 </details>
 
-**Q47.** The consumption function is $C = 150 + 0.75Y_d$Investment $I = 100$Government spending $G = 200$Taxes $T = 0.2Y$And imports $M = 40 + 0.1Y$. Exports $X = 60$. Calculate: (a) the equilibrium level of income, (b) the government spending multiplier, (c) the tax multiplier, (d) whether the government budget is in surplus or deficit.
+**Q47.** The consumption function is $C = 150 + 0.75Y_d$Investment $I = 100$Government spending
+$G = 200$Taxes $T = 0.2Y$And imports $M = 40 + 0.1Y$. Exports $X = 60$. Calculate: (a) the
+equilibrium level of income, (b) the government spending multiplier, (c) the tax multiplier, (d)
+whether the government budget is in surplus or deficit.
 
 <details>
 <summary>Answer</summary>
@@ -583,13 +592,20 @@ $0.5Y = 470 \Rightarrow Y = 940$.
 (b) The multiplier with proportional tax and imports:
 $k = \frac{1}{1 - MPC(1-t) + MPM} = \frac{1}{1 - 0.75(0.8) + 0.1} = \frac{1}{1 - 0.6 + 0.1} = \frac{1}{0.5} = 2$.
 
-(c) The tax multiplier with proportional tax: $\frac{dY}{dT} = \frac{-MPC}{1 - MPC(1-t) + MPM} = \frac{-0.75}{0.5} = -1.5$.
-Note: since the tax rate $t$ is proportional, a change in the tax rate changes the intercept of the tax function. A change in $t$ by $\Delta t$ gives $\Delta Y = \frac{-0.75Y}{0.5}\Delta t$. At $Y = 940$: a 1 percentage point increase in $t$ reduces $Y$ by $0.75 \times 940 / 0.5 = 1410$. This is the lump-sum equivalent.
+(c) The tax multiplier with proportional tax:
+$\frac{dY}{dT} = \frac{-MPC}{1 - MPC(1-t) + MPM} = \frac{-0.75}{0.5} = -1.5$. Note: since the tax
+rate $t$ is proportional, a change in the tax rate changes the intercept of the tax function. A
+change in $t$ by $\Delta t$ gives $\Delta Y = \frac{-0.75Y}{0.5}\Delta t$. At $Y = 940$: a 1
+percentage point increase in $t$ reduces $Y$ by $0.75 \times 940 / 0.5 = 1410$. This is the lump-sum
+equivalent.
 
 (d) Budget: $T = 0.2(940) = 188$. $G = 200$. Budget deficit $= 200 - 188 = \pounds 12\text{bn}$.
+
 </details>
 
-**Q48.** A monopolist faces demand $P = 100 - 2Q$ and has total cost $TC = 200 + 10Q + Q^2$. Calculate: (a) the profit-maximising output and price, (b) the level of profit, (c) the allocatively efficient output, (d) the deadweight loss.
+**Q48.** A monopolist faces demand $P = 100 - 2Q$ and has total cost $TC = 200 + 10Q + Q^2$.
+Calculate: (a) the profit-maximising output and price, (b) the level of profit, (c) the allocatively
+efficient output, (d) the deadweight loss.
 
 <details>
 <summary>Answer</summary>
@@ -597,40 +613,49 @@ Note: since the tax rate $t$ is proportional, a change in the tax rate changes t
 $MR = MC$: $100 - 4Q = 10 + 2Q \Rightarrow 90 = 6Q \Rightarrow Q = 15$.
 $P = 100 - 2(15) = 70$.
 
-(b) $TR = 70 \times 15 = 1050$. $TC = 200 + 150 + 225 = 575$.
-$\pi = 1050 - 575 = 475$.
+(b) $TR = 70 \times 15 = 1050$. $TC = 200 + 150 + 225 = 575$. $\pi = 1050 - 575 = 475$.
 
-(c) Allocative efficiency: $P = MC$.
-$100 - 2Q = 10 + 2Q \Rightarrow 90 = 4Q \Rightarrow Q = 22.5$.
+(c) Allocative efficiency: $P = MC$. $100 - 2Q = 10 + 2Q \Rightarrow 90 = 4Q \Rightarrow Q = 22.5$.
 $P = 100 - 2(22.5) = 55$.
 
-(d) DWL $= \frac{1}{2}(P_{monopoly} - P_{efficient})(Q_{efficient} - Q_{monopoly}) = \frac{1}{2}(70 - 55)(22.5 - 15) = \frac{1}{2}(15)(7.5) = 56.25$.
+(d) DWL
+$= \frac{1}{2}(P_{monopoly} - P_{efficient})(Q_{efficient} - Q_{monopoly}) = \frac{1}{2}(70 - 55)(22.5 - 15) = \frac{1}{2}(15)(7.5) = 56.25$.
+
 </details>
 
-**Q49.** The demand for a good is $Q_D = 500 - 2P$ and supply is $Q_S = 3P - 100$. The government imposes a specific tax of $\pounds 10$ per unit. Calculate: (a) the equilibrium price and quantity before the tax, (b) the price paid by consumers and received by producers after the tax, (c) the tax revenue, (d) the deadweight loss, (e) the consumer and producer burden of the tax.
+**Q49.** The demand for a good is $Q_D = 500 - 2P$ and supply is $Q_S = 3P - 100$. The government
+imposes a specific tax of $\pounds 10$ per unit. Calculate: (a) the equilibrium price and quantity
+before the tax, (b) the price paid by consumers and received by producers after the tax, (c) the tax
+revenue, (d) the deadweight loss, (e) the consumer and producer burden of the tax.
 
 <details>
 <summary>Answer</summary>
 (a) $500 - 2P = 3P - 100 \Rightarrow 600 = 5P \Rightarrow P = 120$$Q = 500 - 240 = 260$.
 
 (b) With tax: supply shifts up. $Q_S = 3(P - 10) - 100 = 3P - 130$.
-$500 - 2P = 3P - 130 \Rightarrow 630 = 5P \Rightarrow P = 126$ (price paid by consumers).
-Price received by producers $= 126 - 10 = 116$.
-$Q = 500 - 2(126) = 248$.
+$500 - 2P = 3P - 130 \Rightarrow 630 = 5P \Rightarrow P = 126$ (price paid by consumers). Price
+received by producers $= 126 - 10 = 116$. $Q = 500 - 2(126) = 248$.
 
 (c) Tax revenue $= 10 \times 248 = 2480$.
 
 (d) DWL $= \frac{1}{2} \times 10 \times (260 - 248) = \frac{1}{2} \times 10 \times 12 = 60$.
 
-(e) Consumer burden $= (126 - 120) \times 248 = 1488$ (60% of tax revenue).
-Producer burden $= (120 - 116) \times 248 = 992$ (40% of tax revenue).
-Total $= 1488 + 992 = 2480 = $ tax revenue. Correct.
+(e) Consumer burden $= (126 - 120) \times 248 = 1488$ (60% of tax revenue). Producer burden
+$= (120 - 116) \times 248 = 992$ (40% of tax revenue). Total
+$= 1488 + 992 = 2480 = $ tax revenue. Correct.
 The consumer burden is larger because demand is less elastic than supply:
-$PED = \frac◆LB◆-2 \times 120◆RB◆◆LB◆260◆RB◆ = -0.92$ (inelastic). $PES = \frac◆LB◆3 \times 120◆RB◆◆LB◆260◆RB◆ = 1.38$ (elastic).
-Consumers bear $60\%$ of the burden because demand is less elastic.
+$PED
+= \frac◆LB◆-2 \times 120◆RB◆◆LB◆260◆RB◆ = -0.92$ (inelastic).
+$PES = \frac◆LB◆3 \times 120◆RB◆◆LB◆260◆RB◆ = 1.38$ (elastic). Consumers bear $60\%$ of the burden
+because demand is less elastic.
+
 </details>
 
-**Q50.** A monopsonist faces labour supply $w = 20 + 0.1L$ where $w$ is the daily wage and $L$ is the number of workers. The marginal revenue product of labour is $MRPL = 100 - 0.2L$. Calculate: (a) the profit-maximising number of workers and wage, (b) the number of workers and wage that would be hired under perfect competition, (c) the deadweight loss from monopsony, (d) the effect of a minimum wage set at $\pounds 50$.
+**Q50.** A monopsonist faces labour supply $w = 20 + 0.1L$ where $w$ is the daily wage and $L$ is
+the number of workers. The marginal revenue product of labour is $MRPL = 100 - 0.2L$. Calculate: (a)
+the profit-maximising number of workers and wage, (b) the number of workers and wage that would be
+hired under perfect competition, (c) the deadweight loss from monopsony, (d) the effect of a minimum
+wage set at $\pounds 50$.
 
 <details>
 <summary>Answer</summary>
@@ -643,19 +668,23 @@ $20 + 0.1L = 100 - 0.2L \Rightarrow 0.3L = 80 \Rightarrow L = 266.67$.
 $w = 20 + 0.1(266.67) = 46.67$.
 
 (c) DWL: This is the area between the MRPL and labour supply curves from $L = 200$ to $L = 266.67$.
-At $L = 200$: $MRPL = 100 - 40 = 60$$w = 40$.
-At $L = 266.67$: $MRPL = w = 46.67$.
-DWL $= \frac{1}{2}(60 - 46.67)(266.67 - 200) = \frac{1}{2}(13.33)(66.67) = 444.4$.
+At $L = 200$: $MRPL = 100 - 40 = 60$$w = 40$. At $L = 266.67$: $MRPL = w = 46.67$. DWL
+$= \frac{1}{2}(60 - 46.67)(266.67 - 200) = \frac{1}{2}(13.33)(66.67) = 444.4$.
 
-(d) Minimum wage at $\pounds 50$:
-If $w = 50$The labour supply curve becomes horizontal at $w = 50$ up to the point where the original supply curve equals 50: $50 = 20 + 0.1L \Rightarrow L = 300$.
-For $L \leq 300$: $MFCL = 50$ (horizontal supply means MFCL = wage).
-$MFCL = MRPL$: $50 = 100 - 0.2L \Rightarrow 0.2L = 50 \Rightarrow L = 250$.
-The monopsonist now hires 250 workers at $\pounds 50$ each.
-This is between the monopsony level (200 workers) and the competitive level (266.67 workers). The minimum wage has increased both employment and wages -- a result unique to monopsony.
+(d) Minimum wage at $\pounds 50$: If $w = 50$The labour supply curve becomes horizontal at $w = 50$
+up to the point where the original supply curve equals 50: $50 = 20 + 0.1L \Rightarrow L = 300$. For
+$L \leq 300$: $MFCL = 50$ (horizontal supply means MFCL = wage). $MFCL = MRPL$:
+$50 = 100 - 0.2L \Rightarrow 0.2L = 50 \Rightarrow L = 250$. The monopsonist now hires 250 workers
+at $\pounds 50$ each. This is between the monopsony level (200 workers) and the competitive level
+(266.67 workers). The minimum wage has increased both employment and wages -- a result unique to
+monopsony.
+
 </details>
 
-**Q51.** An economy has the following Phillips curve: $\pi = \pi^e - 0.4(u - 5)$ where $\pi^e = \pi_{-1}$ (adaptive expectations). Initially, $\pi = 3\%$ and $u = 5\%$. The government reduces unemployment to 3% and keeps it there. Calculate the inflation rate for each of the next 6 years. Explain why this policy is unsustainable.
+**Q51.** An economy has the following Phillips curve: $\pi = \pi^e - 0.4(u - 5)$ where
+$\pi^e = \pi_{-1}$ (adaptive expectations). Initially, $\pi = 3\%$ and $u = 5\%$. The government
+reduces unemployment to 3% and keeps it there. Calculate the inflation rate for each of the next 6
+years. Explain why this policy is unsustainable.
 
 <details>
 <summary>Answer</summary>
@@ -673,45 +702,67 @@ Year 5: $u = 3\%$$\pi^e = 6.2\%$. $\pi = 6.2 + 0.8 = 7.0\%$.
 
 Year 6: $u = 3\%$$\pi^e = 7.0\%$. $\pi = 7.0 + 0.8 = 7.8\%$.
 
-Inflation accelerates by 0.8 percentage points per year. This is **accelerating inflation** -- the inevitable result of attempting to hold unemployment below the natural rate. The government cannot permanently exploit the Phillips curve trade-off because expectations adjust.
+Inflation accelerates by 0.8 percentage points per year. This is **accelerating inflation** -- the
+inevitable result of attempting to hold unemployment below the natural rate. The government cannot
+permanently exploit the Phillips curve trade-off because expectations adjust.
 
-The policy is unsustainable because: (1) rising inflation erodes real incomes and savings. (2) Eventually, the central bank must tighten policy, causing a painful recession to bring inflation back down. (3) The longer the policy is maintained, the more entrenched inflation expectations become, and the more costly the eventual disinflation.
+The policy is unsustainable because: (1) rising inflation erodes real incomes and savings. (2)
+Eventually, the central bank must tighten policy, causing a painful recession to bring inflation
+back down. (3) The longer the policy is maintained, the more entrenched inflation expectations
+become, and the more costly the eventual disinflation.
+
 </details>
 
-**Q52.** The production function for an economy is $Y = K^{0.3}L^{0.7}$. Capital grows at 3% per year, labour grows at 1% per year, and total factor productivity grows at 1.5% per year. Calculate: (a) the growth rate of output, (b) the contribution of capital, labour, and TFP to growth, (c) the growth rate of output per worker.
+**Q52.** The production function for an economy is $Y = K^{0.3}L^{0.7}$. Capital grows at 3% per
+year, labour grows at 1% per year, and total factor productivity grows at 1.5% per year. Calculate:
+(a) the growth rate of output, (b) the contribution of capital, labour, and TFP to growth, (c) the
+growth rate of output per worker.
 
 <details>
 <summary>Answer</summary>
 (a) $g_Y = g_A + \alpha g_K + (1-\alpha)g_L = 1.5 + 0.3(3) + 0.7(1) = 1.5 + 0.9 + 0.7 = 3.1\%$.
 
-(b) Capital contribution: $0.3 \times 3 = 0.9\%$ (29.0% of total growth).
-Labour contribution: $0.7 \times 1 = 0.7\%$ (22.6% of total growth).
-TFP contribution: $1.5\%$ (48.4% of total growth).
+(b) Capital contribution: $0.3 \times 3 = 0.9\%$ (29.0% of total growth). Labour contribution:
+$0.7 \times 1 = 0.7\%$ (22.6% of total growth). TFP contribution: $1.5\%$ (48.4% of total growth).
 
 TFP is the largest contributor to growth, highlighting the importance of technology and efficiency.
 
-(c) Growth rate of output per worker:
-$g_{Y/L} = g_Y - g_L = 3.1 - 1 = 2.1\%$.
+(c) Growth rate of output per worker: $g_{Y/L} = g_Y - g_L = 3.1 - 1 = 2.1\%$.
 
-Alternatively: $g_{Y/L} = g_A + \alpha g_K - \alpha g_L = 1.5 + 0.3(3) - 0.3(1) = 1.5 + 0.9 - 0.3 = 2.1\%$. Correct.
+Alternatively:
+$g_{Y/L} = g_A + \alpha g_K - \alpha g_L = 1.5 + 0.3(3) - 0.3(1) = 1.5 + 0.9 - 0.3 = 2.1\%$.
+Correct.
+
 </details>
 
-**Q53.** A country's balance of payments data (USD billions) shows: exports of goods = 300, imports of goods = 450, exports of services = 200, imports of services = 120, primary income received = 80, primary income paid = 150, secondary income received = 20, secondary income paid = 50. Calculate: (a) the trade balance, (b) the current account balance, (c) the current account as a percentage of GDP (GDP = USD 2,000bn), (d) the capital account balance required for the balance of payments to balance.
+**Q53.** A country's balance of payments data (USD billions) shows: exports of goods = 300, imports
+of goods = 450, exports of services = 200, imports of services = 120, primary income received = 80,
+primary income paid = 150, secondary income received = 20, secondary income paid = 50. Calculate:
+(a) the trade balance, (b) the current account balance, (c) the current account as a percentage of
+GDP (GDP = USD 2,000bn), (d) the capital account balance required for the balance of payments to
+balance.
 
 <details>
 <summary>Answer</summary>
 (a) Trade balance $= (X_{goods} - M_{goods}) + (X_{services} - M_{services}) = (300 - 450) + (200 - 120) = -150 + 80 = -\text{USD } 70\text{bn}$.
 
-(b) Current account $= \text{trade balance} + \text{primary income} + \text{secondary income} = -70 + (80 - 150) + (20 - 50) = -70 - 70 - 30 = -\text{USD } 170\text{bn}$.
+(b) Current account
+$= \text{trade balance} + \text{primary income} + \text{secondary income} = -70 + (80 - 150) + (20 - 50) = -70 - 70 - 30 = -\text{USD } 170\text{bn}$.
 
-(c) CA as % of GDP $= \frac{-170}{2000} \times 100 = -8.5\%$. This is a very large current account deficit (the Maastricht criterion is 3%).
+(c) CA as % of GDP $= \frac{-170}{2000} \times 100 = -8.5\%$. This is a very large current account
+deficit (the Maastricht criterion is 3%).
 
-(d) For the balance of payments to balance: Current account + Capital account + Financial account = 0.
-$-170 + \text{Capital account} + \text{Financial account} = 0$.
-The capital and financial accounts together must show a surplus of USD 170bn. This means the country is a net borrower from the rest of the world (capital inflows of USD 170bn).
+(d) For the balance of payments to balance: Current account + Capital account + Financial account
+= 0. $-170 + \text{Capital account} + \text{Financial account} = 0$. The capital and financial
+accounts together must show a surplus of USD 170bn. This means the country is a net borrower from
+the rest of the world (capital inflows of USD 170bn).
+
 </details>
 
-**Q54.** Using the Solow growth model, an economy has savings rate $s = 0.25$Depreciation $\delta = 0.05$Population growth $n = 0.02$And production function $y = k^{0.5}$ (per worker). Calculate: (a) the steady-state capital per worker, (b) steady-state output per worker, (c) steady-state consumption per worker, (d) the golden rule savings rate.
+**Q54.** Using the Solow growth model, an economy has savings rate $s = 0.25$Depreciation
+$\delta = 0.05$Population growth $n = 0.02$And production function $y = k^{0.5}$ (per worker).
+Calculate: (a) the steady-state capital per worker, (b) steady-state output per worker, (c)
+steady-state consumption per worker, (d) the golden rule savings rate.
 
 <details>
 <summary>Answer</summary>
@@ -724,16 +775,20 @@ $k = (0.28)^{-2} = 12.755$.
 
 (c) $c = (1-s)y = 0.75 \times 3.571 = 2.678$.
 
-(d) Golden rule: $MPK = n + \delta$.
-$MPK = 0.5k^{-0.5} = 0.07$.
-$k^{-0.5} = 0.14 \Rightarrow k = (0.14)^{-2} = 51.02$.
-$y_{GR} = (51.02)^{0.5} = 7.143$.
+(d) Golden rule: $MPK = n + \delta$. $MPK = 0.5k^{-0.5} = 0.07$.
+$k^{-0.5} = 0.14 \Rightarrow k = (0.14)^{-2} = 51.02$. $y_{GR} = (51.02)^{0.5} = 7.143$.
 $s_{GR} = (n + \delta)k / y = 0.07 \times 51.02 / 7.143 = 3.571 / 7.143 = 0.5$.
 
-The golden rule savings rate is 50%, which is much higher than the current 25%. The economy is saving too little -- consumption per worker could be higher if the savings rate were increased to 50%.
+The golden rule savings rate is 50%, which is much higher than the current 25%. The economy is
+saving too little -- consumption per worker could be higher if the savings rate were increased to
+50%.
+
 </details>
 
-**Q55.** A bond has a face value of $\pounds 100$Pays an annual coupon of $\pounds 4$And has 3 years to maturity. Market interest rates are 5%. Calculate: (a) the current price of the bond, (b) the current yield, (c) the yield to maturity, (d) what happens to the price if market interest rates rise to 6%.
+**Q55.** A bond has a face value of $\pounds 100$Pays an annual coupon of $\pounds 4$And has 3 years
+to maturity. Market interest rates are 5%. Calculate: (a) the current price of the bond, (b) the
+current yield, (c) the yield to maturity, (d) what happens to the price if market interest rates
+rise to 6%.
 
 <details>
 <summary>Answer</summary>
@@ -741,15 +796,26 @@ The golden rule savings rate is 50%, which is much higher than the current 25%. 
 
 (b) Current yield $= \frac◆LB◆\text{coupon}◆RB◆◆LB◆\text{price}◆RB◆ = \frac{4}{97.28} = 4.11\%$.
 
-(c) Yield to maturity: the YTM is the discount rate that equates the present value of cash flows to the price. Since we used 5% to price the bond and the price is below par, the YTM is above the coupon rate. Using trial and error:
-At 5%: $PV = 97.28$. Since the coupon rate (4%) is below the market rate (5%), the bond trades at a discount. The YTM equals the market rate (5%) because we priced it at 5%. YTM = 5%.
+(c) Yield to maturity: the YTM is the discount rate that equates the present value of cash flows to
+the price. Since we used 5% to price the bond and the price is below par, the YTM is above the
+coupon rate. Using trial and error: At 5%: $PV = 97.28$. Since the coupon rate (4%) is below the
+market rate (5%), the bond trades at a discount. The YTM equals the market rate (5%) because we
+priced it at 5%. YTM = 5%.
 
-(d) At 6%: $P = \frac{4}{1.06} + \frac{4}{1.06^2} + \frac{104}{1.06^3} = 3.77 + 3.56 + 87.34 = \pounds 94.67$.
+(d) At 6%:
+$P = \frac{4}{1.06} + \frac{4}{1.06^2} + \frac{104}{1.06^3} = 3.77 + 3.56 + 87.34 = \pounds 94.67$.
 
-The price falls from $\pounds 97.28$ to $\pounds 94.67$ (a fall of $\pounds 2.61$ or 2.68%). This illustrates the inverse relationship between bond prices and interest rates.
+The price falls from $\pounds 97.28$ to $\pounds 94.67$ (a fall of $\pounds 2.61$ or 2.68%). This
+illustrates the inverse relationship between bond prices and interest rates.
+
 </details>
 
-**Q56.** The UK experiences a simultaneous increase in government spending and a decrease in consumer confidence. AD is initially $Y = 800 - 4P$SRAS is $Y = 2P + 200$. (a) Find the initial equilibrium. (b) Government spending increases by 50, shifting AD right. Consumer confidence falls, reducing autonomous consumption by 30, shifting AD left. Calculate the net shift in AD and the new equilibrium. (c) If potential output is 500, describe the output gap and appropriate policy response.
+**Q56.** The UK experiences a simultaneous increase in government spending and a decrease in
+consumer confidence. AD is initially $Y = 800 - 4P$SRAS is $Y = 2P + 200$. (a) Find the initial
+equilibrium. (b) Government spending increases by 50, shifting AD right. Consumer confidence falls,
+reducing autonomous consumption by 30, shifting AD left. Calculate the net shift in AD and the new
+equilibrium. (c) If potential output is 500, describe the output gap and appropriate policy
+response.
 
 <details>
 <summary>Answer</summary>
@@ -758,13 +824,21 @@ The price falls from $\pounds 97.28$ to $\pounds 94.67$ (a fall of $\pounds 2.61
 (b) Net AD shift: $+50 - 30 = +20$. New AD: $Y = 820 - 4P$.
 $820 - 4P = 2P + 200 \Rightarrow 620 = 6P \Rightarrow P = 103.33$$Y = 406.67$.
 
-The net effect is a small rightward shift in AD (output rises from 400 to 406.67, price rises from 100 to 103.33). The fiscal expansion was partially offset by the fall in consumer confidence.
+The net effect is a small rightward shift in AD (output rises from 400 to 406.67, price rises from
+100 to 103.33). The fiscal expansion was partially offset by the fall in consumer confidence.
 
-(c) Output gap $= 500 - 406.67 = 93.33$ (recessionary gap). The economy is producing well below potential.
+(c) Output gap $= 500 - 406.67 = 93.33$ (recessionary gap). The economy is producing well below
+potential.
 
-Policy response: expansionary monetary policy (cut interest rates to stimulate investment and consumption) or further expansionary fiscal policy (increase $G$ or cut $T$). The required AD shift to close the gap: at $Y = 500$$P = 150$ (from SRAS). AD must pass through $(150, 500)$. New AD: $Y = a - 4P$. $500 = a - 600 \Rightarrow a = 1100$. The AD intercept must increase from 820 to 1100 -- a shift of 280.
+Policy response: expansionary monetary policy (cut interest rates to stimulate investment and
+consumption) or further expansionary fiscal policy (increase $G$ or cut $T$). The required AD shift
+to close the gap: at $Y = 500$$P = 150$ (from SRAS). AD must pass through $(150, 500)$. New AD:
+$Y = a - 4P$. $500 = a - 600 \Rightarrow a = 1100$. The AD intercept must increase from 820 to 1100
+-- a shift of 280.
 
-This is a large shift, suggesting that demand-side policy alone may not be sufficient. Supply-side policies to shift SRAS right (and LRAS right from 500 to a higher level) would also be beneficial.
+This is a large shift, suggesting that demand-side policy alone may not be sufficient. Supply-side
+policies to shift SRAS right (and LRAS right from 500 to a higher level) would also be beneficial.
+
 </details>
 
 ---
@@ -773,58 +847,59 @@ This is a large shift, suggesting that demand-side policy alone may not be suffi
 
 ### UK Economy Key Statistics (2023-24)
 
-| Indicator | Value | Source |
-|---|---|---|
-| GDP | GBP 2.2 trillion | ONS |
-| GDP per capita | GBP 33,000 | ONS |
-| Real GDP growth | 0.1% | ONS |
-| Inflation (CPI) | 4.0% | ONS |
-| Unemployment rate | 4.2% | ONS |
-| Employment rate | 75.0% | ONS |
-| Public sector net debt | 97.5% of GDP | ONS |
-| Budget deficit | 4.5% of GDP | ONS |
-| Current account deficit | 2.4% of GDP | ONS |
-| Bank Rate | 5.25% | BoE |
-| Population | 67.7 million | ONS |
-| Gini coefficient | 0.35 | ONS |
-| Poverty rate (relative) | 17% | DWP |
+| Indicator               | Value            | Source |
+| ----------------------- | ---------------- | ------ |
+| GDP                     | GBP 2.2 trillion | ONS    |
+| GDP per capita          | GBP 33,000       | ONS    |
+| Real GDP growth         | 0.1%             | ONS    |
+| Inflation (CPI)         | 4.0%             | ONS    |
+| Unemployment rate       | 4.2%             | ONS    |
+| Employment rate         | 75.0%            | ONS    |
+| Public sector net debt  | 97.5% of GDP     | ONS    |
+| Budget deficit          | 4.5% of GDP      | ONS    |
+| Current account deficit | 2.4% of GDP      | ONS    |
+| Bank Rate               | 5.25%            | BoE    |
+| Population              | 67.7 million     | ONS    |
+| Gini coefficient        | 0.35             | ONS    |
+| Poverty rate (relative) | 17%              | DWP    |
 
 ### Key Elasticity Estimates (UK)
 
-| Elasticity | Estimate | Source |
-|---|:---:|---|
-| PED for cigarettes | -0.4 to -0.5 | IFS |
-| PED for alcohol | -0.7 to -0.9 | IFS |
-| PED for petrol | -0.2 to -0.3 (short-run), -0.5 to -0.7 (long-run) | DfT |
-| PES for housing | 0.1 to 0.3 (short-run) | BoE |
-| YED for foreign holidays | +1.5 to +2.0 | ONS |
-| XED for tea and coffee | +0.2 to +0.5 | Industry estimates |
-| Labour demand elasticity (overall) | -0.3 to -0.5 | Low Pay Commission |
-| Interest elasticity of investment | -0.5 to -1.0 | BoE |
+| Elasticity                         |                     Estimate                      | Source             |
+| ---------------------------------- | :-----------------------------------------------: | ------------------ |
+| PED for cigarettes                 |                   -0.4 to -0.5                    | IFS                |
+| PED for alcohol                    |                   -0.7 to -0.9                    | IFS                |
+| PED for petrol                     | -0.2 to -0.3 (short-run), -0.5 to -0.7 (long-run) | DfT                |
+| PES for housing                    |              0.1 to 0.3 (short-run)               | BoE                |
+| YED for foreign holidays           |                   +1.5 to +2.0                    | ONS                |
+| XED for tea and coffee             |                   +0.2 to +0.5                    | Industry estimates |
+| Labour demand elasticity (overall) |                   -0.3 to -0.5                    | Low Pay Commission |
+| Interest elasticity of investment  |                   -0.5 to -1.0                    | BoE                |
 
 ### Important Dates in Economic History
 
-| Date | Event | Relevance |
-|---|---|---|
-| 1944 | Bretton Woods Conference | Fixed exchange rate system |
-| 1971 | Nixon ends gold convertibility | End of Bretton Woods |
-| 1973 | First oil crisis | Cost-push inflation, stagflation |
-| 1979 | Thatcher elected | Monetarism, supply-side reform |
-| 1990 | UK joins ERM | Exchange rate crisis (Black Wednesday, 1992) |
-| 1992 | Bank of England independence | Inflation targeting |
-| 1997 | Asian Financial Crisis | Currency crises, IMF role |
-| 2007-08 | Global Financial Crisis | Bank bailouts, QE, ZLB |
-| 2010 | Austerity begins | Fiscal consolidation |
-| 2016 | Brexit referendum | Trade, labour mobility, exchange rate |
-| 2020 | COVID-19 pandemic | Furlough, QE expansion |
-| 2021-23 | Post-pandemic inflation | Cost-push, monetary tightening |
-| 2022 | Truss mini-budget | Fiscal credibility, gilt market crisis |
+| Date    | Event                          | Relevance                                    |
+| ------- | ------------------------------ | -------------------------------------------- |
+| 1944    | Bretton Woods Conference       | Fixed exchange rate system                   |
+| 1971    | Nixon ends gold convertibility | End of Bretton Woods                         |
+| 1973    | First oil crisis               | Cost-push inflation, stagflation             |
+| 1979    | Thatcher elected               | Monetarism, supply-side reform               |
+| 1990    | UK joins ERM                   | Exchange rate crisis (Black Wednesday, 1992) |
+| 1992    | Bank of England independence   | Inflation targeting                          |
+| 1997    | Asian Financial Crisis         | Currency crises, IMF role                    |
+| 2007-08 | Global Financial Crisis        | Bank bailouts, QE, ZLB                       |
+| 2010    | Austerity begins               | Fiscal consolidation                         |
+| 2016    | Brexit referendum              | Trade, labour mobility, exchange rate        |
+| 2020    | COVID-19 pandemic              | Furlough, QE expansion                       |
+| 2021-23 | Post-pandemic inflation        | Cost-push, monetary tightening               |
+| 2022    | Truss mini-budget              | Fiscal credibility, gilt market crisis       |
 
 ### Key Economist Quotes for Essays
 
 - "In the long run, we are all dead." -- Keynes (justifying short-run focus)
 - "Inflation is always and everywhere a monetary phenomenon." -- Friedman
-- "The curious task of economics is to demonstrate to men how little they really know about what they imagine they can design." -- Hayek
+- "The curious task of economics is to demonstrate to men how little they really know about what
+  they imagine they can design." -- Hayek
 - "There is no such thing as a free lunch." -- Friedman (opportunity cost)
 - "The powerful idea is that markets are efficient." -- Lucas (rational expectations)
 - "Poverty is not an accident. Like slavery and apartheid, it is man-made." -- Mandela (development)

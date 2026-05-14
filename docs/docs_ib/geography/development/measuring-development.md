@@ -1,6 +1,8 @@
 ---
 title: Measuring Development
-description: "Development indicators including HDI, GNI, GII, MPI, composite indices critique, alternative measures, and limitations of GDP for IB Geography."
+description:
+  'Development indicators including HDI, GNI, GII, MPI, composite indices critique, alternative
+  measures, and limitations of GDP for IB Geography.'
 slug: measuring-development
 ---
 
@@ -25,43 +27,43 @@ Abroad and subtracting income earned by foreigners domestically.
 Per capita figures (GDP per capita, GNI per capita) are standardised by population and are the most
 Widely used indicators for comparing economic development across countries.
 
-| Measure | Formula | Strengths | Limitations |
+| Measure                          | Formula                                                                 | Strengths                                                                                                      | Limitations                                                                                                                                                   |
 | -------------------------------- | ----------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **GDP per capita (current USD)** | GDP / population | Widely available; standardised; facilitates international comparison | Does not account for income distribution; ignores non-market activities (subsistence farming, unpaid domestic labour); affected by exchange rate fluctuations |
-| **GNI per capita (PPP)** | GNI / population, adjusted for purchasing power parity | Accounts for differences in price levels between countries; reflects income of residents including remittances | Still does not capture distribution; PPP adjustments are imprecise for rapidly changing economies |
-| **GDP growth rate** | $(\mathrm{GDP}_t - \mathrm{GDP}_{t-1}) / \mathrm{GDP}_{t-1} \times 100$ | Measures economic dynamism | Growth may not be inclusive; environmental costs not deducted |
+| **GDP per capita (current USD)** | GDP / population                                                        | Widely available; standardised; facilitates international comparison                                           | Does not account for income distribution; ignores non-market activities (subsistence farming, unpaid domestic labour); affected by exchange rate fluctuations |
+| **GNI per capita (PPP)**         | GNI / population, adjusted for purchasing power parity                  | Accounts for differences in price levels between countries; reflects income of residents including remittances | Still does not capture distribution; PPP adjustments are imprecise for rapidly changing economies                                                             |
+| **GDP growth rate**              | $(\mathrm{GDP}_t - \mathrm{GDP}_{t-1}) / \mathrm{GDP}_{t-1} \times 100$ | Measures economic dynamism                                                                                     | Growth may not be inclusive; environmental costs not deducted                                                                                                 |
 
 ### The World Bank Income Classification
 
 The World Bank classifies countries into four income groups based on GNI per capita (2023
 Thresholds):
 
-| Classification | GNI per Capita (USD) | Examples |
+| Classification          | GNI per Capita (USD) | Examples                                      |
 | ----------------------- | -------------------- | --------------------------------------------- |
-| **Low income** | $\lt{1145}$ | Afghanistan, Burundi, South Sudan, Mozambique |
-| **Lower-middle income** | 1145--4465 | India, Nigeria, Bangladesh, Kenya |
-| **Upper-middle income** | 4466--13 845 | China, Brazil, South Africa, Mexico |
-| **High income** | $\gt{13 845}$ | USA, UK, Japan, Germany, South Korea |
+| **Low income**          | $\lt{1145}$          | Afghanistan, Burundi, South Sudan, Mozambique |
+| **Lower-middle income** | 1145--4465           | India, Nigeria, Bangladesh, Kenya             |
+| **Upper-middle income** | 4466--13 845         | China, Brazil, South Africa, Mexico           |
+| **High income**         | $\gt{13 845}$        | USA, UK, Japan, Germany, South Korea          |
 
 ### Limitations of GDP as a Development Measure
 
 1. **Does not measure distribution.** GDP per capita is an average that conceals inequality.
- Equatorial Guinea has a GNI per capita of approximately USD 8000 (upper-middle income), yet over
- 70% of its population lives below the national poverty line, because oil revenues accrue to a
- small elite.
+   Equatorial Guinea has a GNI per capita of approximately USD 8000 (upper-middle income), yet over
+   70% of its population lives below the national poverty line, because oil revenues accrue to a
+   small elite.
 2. **Ignores non-market activities.** Subsistence agriculture (which supports approximately 2
- billion people globally), unpaid domestic labour (predominantly performed by women), and the
- informal economy (estimated at 60--80% of employment in Sub-Saharan Africa) are not captured by
- GDP.
+   billion people globally), unpaid domestic labour (predominantly performed by women), and the
+   informal economy (estimated at 60--80% of employment in Sub-Saharan Africa) are not captured by
+   GDP.
 3. **Counts negative outcomes as positive.** Environmental degradation (oil spills increase cleanup
- spending, raising GDP), traffic accidents (medical and repair costs increase GDP), and crime
- (security expenditure increases GDP) all contribute positively to GDP despite reducing
- well-being.
+   spending, raising GDP), traffic accidents (medical and repair costs increase GDP), and crime
+   (security expenditure increases GDP) all contribute positively to GDP despite reducing
+   well-being.
 4. **Does not account for sustainability.** A country can achieve high GDP growth by depleting its
- natural capital (deforestation, overfishing, mineral extraction without reinvestment), which may
- undermine long-term development.
+   natural capital (deforestation, overfishing, mineral extraction without reinvestment), which may
+   undermine long-term development.
 5. **Affected by exchange rate distortions.** GDP per capita at current exchange rates can be
- misleading for countries with undervalued or overvalued currencies.
+   misleading for countries with undervalued or overvalued currencies.
 
 <details>
 <summary>Common Pitfalls: Using GDP per Capita Without Qualification</summary>
@@ -91,12 +93,12 @@ Where $I_{\mathrm{health}}$ is measured by life expectancy at birth, $I_{\mathrm
 Geometric mean of mean years of schooling and expected years of schooling, and $I_{\mathrm{income}}$
 Is measured by GNI per capita (PPP).
 
-| HDI Category | Range | Number of Countries (2023) | Examples |
+| HDI Category | Range         | Number of Countries (2023) | Examples                                               |
 | ------------ | ------------- | -------------------------- | ------------------------------------------------------ |
-| Very high | $\geq{0.800}$ | 66 | Switzerland (0.962), Norway (0.966), Australia (0.946) |
-| High | 0.700--0.799 | 53 | China (0.788), Brazil (0.760), Turkey (0.838) |
-| Medium | 0.550--0.699 | 46 | India (0.644), Kenya (0.601), Bangladesh (0.670) |
-| Low | $\lt{0.550}$ | 34 | South Sudan (0.385), Chad (0.394), Niger (0.394) |
+| Very high    | $\geq{0.800}$ | 66                         | Switzerland (0.962), Norway (0.966), Australia (0.946) |
+| High         | 0.700--0.799  | 53                         | China (0.788), Brazil (0.760), Turkey (0.838)          |
+| Medium       | 0.550--0.699  | 46                         | India (0.644), Kenya (0.601), Bangladesh (0.670)       |
+| Low          | $\lt{0.550}$  | 34                         | South Sudan (0.385), Chad (0.394), Niger (0.394)       |
 
 ### Critique of the HDI
 
@@ -107,18 +109,18 @@ Of development.
 **Limitations:**
 
 1. **Does not capture inequality.** The HDI uses national averages, which can mask large internal
- disparities. Two countries with the same HDI may have very different distributions of health,
- education, and income. The Inequality-Adjusted HDI (IHDI) corrects for this by discounting each
- dimension according to its level of inequality.
+   disparities. Two countries with the same HDI may have very different distributions of health,
+   education, and income. The Inequality-Adjusted HDI (IHDI) corrects for this by discounting each
+   dimension according to its level of inequality.
 2. **Ignores environmental sustainability.** A country can achieve a high HDI while degrading its
- environment and exceeding its ecological footprint. The Planetary pressures-adjusted HDI (PHDI)
- adjusts the HDI for $\mathrm{CO_2}$ emissions and material footprint.
+   environment and exceeding its ecological footprint. The Planetary pressures-adjusted HDI (PHDI)
+   adjusts the HDI for $\mathrm{CO_2}$ emissions and material footprint.
 3. **Averages can obscure deprivation.** A country with moderate average life expectancy but high
- infant mortality (and correspondingly low old-age mortality) can achieve the same health index as
- a country with low infant mortality and moderate old-age mortality, despite very different
- population experiences.
+   infant mortality (and correspondingly low old-age mortality) can achieve the same health index as
+   a country with low infant mortality and moderate old-age mortality, despite very different
+   population experiences.
 4. **Limited dimensions.** The HDI does not capture political freedom, gender equality, personal
- security, social cohesion, mental health, or environmental quality.
+   security, social cohesion, mental health, or environmental quality.
 
 ### Gender-Related Indices
 
@@ -138,10 +140,10 @@ Male HDI.
 The MPI, developed by the Oxford Poverty and Human Development Initiative (OPHI) and the UNDP,
 Identifies overlapping deprivations across three dimensions using ten indicators:
 
-| Dimension | Indicators |
+| Dimension            | Indicators                                                                                                                                                                                                                                                              |
 | -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Health** | Nutrition (undernourishment), child mortality |
-| **Education** | Years of schooling (no household member has completed at least 6 years), school attendance (any school-aged child not attending) |
+| **Health**           | Nutrition (undernourishment), child mortality                                                                                                                                                                                                                           |
+| **Education**        | Years of schooling (no household member has completed at least 6 years), school attendance (any school-aged child not attending)                                                                                                                                        |
 | **Living standards** | Cooking fuel (dung, wood, charcoal), sanitation (unimproved or shared), drinking water (unimproved or long walk), electricity, housing (inadequate materials), assets (lack of more than one of: radio, TV, telephone, computer, bicycle, motorbike, refrigerator, car) |
 
 A person is classified as multidimensionally poor if deprived in at least one-third of the weighted
@@ -153,7 +155,7 @@ Population) live in multidimensional poverty. The highest rates are in Sub-Sahar
 
 - Captures the non-income dimensions of poverty (health, education, living standards).
 - Reveals the pattern of overlapping deprivations (a person may have adequate income but lack
- sanitation, clean water, and electricity).
+  sanitation, clean water, and electricity).
 - Identifies specific deprivations that policy can target.
 
 ## Alternative Measures of Development
@@ -182,10 +184,10 @@ The HPI measures the ecological efficiency with which countries achieve well-bei
 High well-being and long life expectancy but low ecological footprints score highest.
 
 **Results:** Costa Rica consistently ranks first (high life expectancy of approximately 80 years,
-High reported well-being, and a relatively low ecological footprint). High-income countries
- score poorly because their high well-being is achieved at the cost of large ecological
-Footprints. The USA, despite high GDP per capita, ranks approximately 122nd out of approximately 140
-Countries because of its very high ecological footprint.
+High reported well-being, and a relatively low ecological footprint). High-income countries score
+poorly because their high well-being is achieved at the cost of large ecological Footprints. The
+USA, despite high GDP per capita, ranks approximately 122nd out of approximately 140 Countries
+because of its very high ecological footprint.
 
 ### Social Progress Index (SPI)
 

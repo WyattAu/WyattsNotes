@@ -1,6 +1,8 @@
 ---
 title: Electrostatics
-description: "Electrostatics -- Electric Charge, Coulomb's Law, Electric Fields, Gauss's Law, Electric Potential, Capacitance, and Dielectrics (AP Physics C: E&M)."
+description:
+  "Electrostatics -- Electric Charge, Coulomb's Law, Electric Fields, Gauss's Law, Electric
+  Potential, Capacitance, and Dielectrics (AP Physics C: E&M)."
 date: 2026-05-05
 tags:
   - Physics
@@ -9,6 +11,7 @@ categories:
   - Physics
 slug: electrostatics
 ---
+
 ## Electric Charge
 
 Charge is a fundamental property of matter. There are two types: positive and negative.
@@ -48,17 +51,18 @@ $$
 $$
 
 Where $dq$ depends on the geometry:
+
 - Linear: $dq = \lambda\, dl$ (charge per unit length)
 - Surface: $dq = \sigma\, dA$ (charge per unit area)
 - Volume: $dq = \rho\, dV$ (charge per unit volume)
 
 :::info[Example: Force from a uniformly charged rod]
 
-A rod of length $L$ carries total charge $Q$ distributed uniformly. Find the force on a point charge $q$
-Placed along the rod's axis at distance $a$ from one end.
+A rod of length $L$ carries total charge $Q$ distributed uniformly. Find the force on a point charge
+$q$ Placed along the rod's axis at distance $a$ from one end.
 
-The linear charge density is $\lambda = Q/L$. Place the rod along the $x$-axis from $x = 0$ to $x = L$
-And the point charge at $x = L + a$.
+The linear charge density is $\lambda = Q/L$. Place the rod along the $x$-axis from $x = 0$ to
+$x = L$ And the point charge at $x = L + a$.
 
 $$
 F = \int_0^L \frac{1}{4\pi\epsilon_0} \frac{q \lambda\, dx}{(L + a - x)^2} = \frac{q\lambda}{4\pi\epsilon_0} \int_0^L \frac{dx}{(L+a-x)^2}
@@ -90,7 +94,8 @@ $$
 
 :::info[Example: Electric field on the axis of a charged ring]
 
-A ring of radius $R$ carries total charge $Q$. Find the electric field at distance $x$ along its axis.
+A ring of radius $R$ carries total charge $Q$. Find the electric field at distance $x$ along its
+axis.
 
 By symmetry, the perpendicular components cancel. Only the axial component survives:
 
@@ -108,8 +113,8 @@ At the center ($x = 0$): $E = 0$As expected by symmetry.
 
 :::info[Example: Electric field of an infinite line of charge]
 
-For an infinite line with linear charge density $\lambda$Use cylindrical symmetry. Place the line along
-The $z$-axis. A segment $dz$ at the origin produces a field with perpendicular component:
+For an infinite line with linear charge density $\lambda$Use cylindrical symmetry. Place the line
+along The $z$-axis. A segment $dz$ at the origin produces a field with perpendicular component:
 
 $$
 DE_\perp = \frac{1}{4\pi\epsilon_0} \frac{\lambda\, dz}{z^2 + r^2} \cdot \frac{r}{\sqrt{z^2 + r^2}}
@@ -202,7 +207,8 @@ $$
 E = \frac{\rho_0}{\epsilon_0}\left(\frac{r}{3} - \frac{r^2}{4R}\right)
 $$
 
-Outside ($r > R$): First find $Q_{\text{total{}} = 4\pi\rho_0 [R^3/3 - R^3/4] = 4\pi\rho_0 R^3/12 = \pi\rho_0 R^3/3$.
+Outside ($r > R$): First find
+$Q_{\text{total{}} = 4\pi\rho_0 [R^3/3 - R^3/4] = 4\pi\rho_0 R^3/12 = \pi\rho_0 R^3/3$.
 
 $$
 E = \frac{\pi\rho_0 R^3}{12\epsilon_0 r^2}
@@ -240,10 +246,11 @@ $$
 
 :::info[Example: Potential on the axis of a charged disk]
 
-A disk of radius $R$ has surface charge density $\sigma$. Find the potential at distance $x$ along the
-Axis.
+A disk of radius $R$ has surface charge density $\sigma$. Find the potential at distance $x$ along
+the Axis.
 
-Divide the disk into rings of radius $r$ and width $dr$. Each ring has charge $dq = \sigma \cdot 2\pi r\, dr$.
+Divide the disk into rings of radius $r$ and width $dr$. Each ring has charge
+$dq = \sigma \cdot 2\pi r\, dr$.
 
 The distance from a ring at radius $r$ to the point at height $x$ is $\sqrt{r^2 + x^2}$.
 
@@ -265,7 +272,8 @@ $$
 U = \frac{1}{2}\sum_{i=1}^{n} q_i V_i
 $$
 
-Where $V_i$ is the potential at the location of $q_i$ due to all other charges. For two point charges:
+Where $V_i$ is the potential at the location of $q_i$ due to all other charges. For two point
+charges:
 
 $$
 U = \frac{q_1 q_2}{4\pi\epsilon_0 r}
@@ -300,8 +308,9 @@ $$
 C = \frac{\epsilon_0 A}{d}
 $$
 
-**Derivation:** The field between infinite parallel plates is $E = \sigma/\epsilon_0 = Q/(\epsilon_0 A)$.
-The potential difference is $V = Ed = Qd/(\epsilon_0 A)$So $C = Q/V = \epsilon_0 A/d$.
+**Derivation:** The field between infinite parallel plates is
+$E = \sigma/\epsilon_0 = Q/(\epsilon_0 A)$. The potential difference is
+$V = Ed = Qd/(\epsilon_0 A)$So $C = Q/V = \epsilon_0 A/d$.
 
 ### Cylindrical Capacitor
 
@@ -365,8 +374,9 @@ For a parallel plate capacitor: $U = \frac{1}{2}\epsilon_0 E^2 \cdot Ad = u_E \c
 
 ## Dielectrics
 
-A dielectric is an insulating material placed between capacitor plates. When an external field $\vec{E}_0$
-Is applied, the dielectric polarizes, creating an opposing field $\vec{E}_p$. The net field is reduced:
+A dielectric is an insulating material placed between capacitor plates. When an external field
+$\vec{E}_0$ Is applied, the dielectric polarizes, creating an opposing field $\vec{E}_p$. The net
+field is reduced:
 
 $$
 E = \frac{E_0}{\kappa}
@@ -400,8 +410,8 @@ $$
 
 :::info[Example: Parallel plate capacitor with partial dielectric]
 
-A parallel plate capacitor has plate area $A$ and separation $d$. A dielectric of thickness $t < d$ and
-Constant $\kappa$ is inserted. Find the capacitance.
+A parallel plate capacitor has plate area $A$ and separation $d$. A dielectric of thickness $t < d$
+and Constant $\kappa$ is inserted. Find the capacitance.
 
 Treat the gap as two capacitors in series: one with dielectric ($t$) and one air-filled ($d - t$).
 
@@ -418,58 +428,59 @@ $$
 ## Common Pitfalls
 
 1. **Confusing electric field and electric force.** $\vec{E} = \vec{F}/q_0$. The field exists
- independently of any test charge. The force depends on the charge placed in the field.
+   independently of any test charge. The force depends on the charge placed in the field.
 2. **Forgetting that Gauss's law gives the total flux, not the field directly.** You must exploit
- symmetry to pull $E$ out of the integral. Gauss's law is always true, but it is only useful when
- symmetry allows you to determine $\vec{E}$.
+   symmetry to pull $E$ out of the integral. Gauss's law is always true, but it is only useful when
+   symmetry allows you to determine $\vec{E}$.
 3. **Incorrect sign in the potential integral.** $V_B - V_A = -\int_A^B \vec{E} \cdot d\vec{l}$. The
- negative sign is essential. When you move against the field, the potential increases.
+   negative sign is essential. When you move against the field, the potential increases.
 4. **Confusing potential and potential energy.** $U = qV$. Potential is a property of the field;
- potential energy depends on the charge placed in the field.
+   potential energy depends on the charge placed in the field.
 5. **Using the wrong Gaussian surface.** Choose the surface that matches the symmetry of the charge
- distribution. For a point charge or sphere, use a sphere. For a line or cylinder, use a cylinder.
- For a plane, use a cylinder with flat ends parallel to the plane.
-6. **Ignoring conductor behavior in electrostatics.** Inside a conductor in equilibrium, $\vec{E} = 0$
- and all excess charge resides on the surface. The surface is an equipotential.
-7. **Incorrectly handling series and parallel capacitors.** In series, the charge on each capacitor is
- the same. In parallel, the voltage across each capacitor is the same.
+   distribution. For a point charge or sphere, use a sphere. For a line or cylinder, use a cylinder.
+   For a plane, use a cylinder with flat ends parallel to the plane.
+6. **Ignoring conductor behavior in electrostatics.** Inside a conductor in equilibrium,
+   $\vec{E} = 0$ and all excess charge resides on the surface. The surface is an equipotential.
+7. **Incorrectly handling series and parallel capacitors.** In series, the charge on each capacitor
+   is the same. In parallel, the voltage across each capacitor is the same.
 8. **Forgetting the factor of $1/2$ in potential energy of a charge distribution.** The energy to
- assemble $n$ charges is $\frac{1}{2}\sum q_i V_i$Not $\sum q_i V_i$. Without the factor of $1/2$
- each pair is counted twice.
+   assemble $n$ charges is $\frac{1}{2}\sum q_i V_i$Not $\sum q_i V_i$. Without the factor of $1/2$
+   each pair is counted twice.
 
 ## Practice Questions
 
-1. Three point charges $q_1 = 2\,\mu\text{C{}$$q_2 = -3\,\mu\text{C{}$$q_3 = 4\,\mu\text{C{}$ are placed
- at the corners of an equilateral triangle of side 0.5 m. Find the net force on $q_1$.
+1. Three point charges $q_1 = 2\,\mu\text{C{}$$q_2 = -3\,\mu\text{C{}$$q_3 = 4\,\mu\text{C{}$ are
+   placed at the corners of an equilateral triangle of side 0.5 m. Find the net force on $q_1$.
 
-2. A uniformly charged rod of length $L = 2$ m carries charge $Q = 8\,\mu\text{C{}$. Find the electric
- field at a point 1 m from one end along the perpendicular bisector of the rod.
+2. A uniformly charged rod of length $L = 2$ m carries charge $Q = 8\,\mu\text{C{}$. Find the
+   electric field at a point 1 m from one end along the perpendicular bisector of the rod.
 
-3. A solid insulating sphere of radius $R = 0.1$ m has charge density $\rho = 10^{-6}$ C/m$^3$.
- Find the electric field at (a) $r = 0.05$ m and (b) $r = 0.2$ m from the center.
+3. A solid insulating sphere of radius $R = 0.1$ m has charge density $\rho = 10^{-6}$ C/m$^3$. Find
+   the electric field at (a) $r = 0.05$ m and (b) $r = 0.2$ m from the center.
 
 4. Derive the potential on the perpendicular bisector of a uniformly charged rod of length $L$ and
- total charge $Q$.
+   total charge $Q$.
 
-5. A spherical capacitor has inner radius 2 cm and outer radius 5 cm. The space between is filled with
- a dielectric of $\kappa = 3$. Find the capacitance.
+5. A spherical capacitor has inner radius 2 cm and outer radius 5 cm. The space between is filled
+   with a dielectric of $\kappa = 3$. Find the capacitance.
 
 6. A parallel plate capacitor with $C = 10\,\mu\text{F{}$ is charged to $100$ V. A dielectric with
- $\kappa = 4$ is inserted while the battery remains connected. Find the new charge on the plates and
- the change in stored energy.
+   $\kappa = 4$ is inserted while the battery remains connected. Find the new charge on the plates
+   and the change in stored energy.
 
-7. A conducting sphere of radius $a$ is surrounded by a conducting spherical shell of inner radius $b$
- and outer radius $c$. The inner sphere has charge $+Q$ and the outer shell has charge $-2Q$.
- Find the electric field in all regions and the potential at $r = a$.
+7. A conducting sphere of radius $a$ is surrounded by a conducting spherical shell of inner radius
+   $b$ and outer radius $c$. The inner sphere has charge $+Q$ and the outer shell has charge $-2Q$.
+   Find the electric field in all regions and the potential at $r = a$.
 
-8. Calculate the work required to bring four charges of $+1\,\mu\text{C{}$ from infinity to the corners
- of a square of side 1 m.
+8. Calculate the work required to bring four charges of $+1\,\mu\text{C{}$ from infinity to the
+   corners of a square of side 1 m.
 
 <details>
 <summary>Question 9: AP Exam-Style -- Field of a non-uniformly charged cylinder</summary>
 
 An infinitely long solid cylinder of radius $R$ has volume charge density $\rho(r) = \rho_0 r/R$ for
-$0 \le r \le R$. Find the electric field (a) inside ($r < R$) and (b) outside ($r > R$) the cylinder.
+$0 \le r \le R$. Find the electric field (a) inside ($r < R$) and (b) outside ($r > R$) the
+cylinder.
 
 </details>
 
@@ -497,9 +508,9 @@ $$E = \frac{\rho_0 R^2}{3\epsilon_0 r}$$
 <details>
 <summary>Question 10: AP Exam-Style -- Potential and field from a charged arc</summary>
 
-A thin rod is bent into a semicircular arc of radius $R$ with total charge $Q$ uniformly distributed.
-Find (a) the electric field at the center of the semicircle and (b) the electric potential at the
-Center.
+A thin rod is bent into a semicircular arc of radius $R$ with total charge $Q$ uniformly
+distributed. Find (a) the electric field at the center of the semicircle and (b) the electric
+potential at the Center.
 
 </details>
 
@@ -510,7 +521,8 @@ Let the arc span from $\theta = -\pi/2$ to $\theta = \pi/2$. The linear charge d
 $\lambda = Q/(\pi R)$.
 
 (a) By symmetry, the field points along the axis of symmetry (let us call it the $y$-direction, with
-The arc opening to the right). A charge element $dq = \lambda R\, d\theta$ at angle $\theta$ produces:
+The arc opening to the right). A charge element $dq = \lambda R\, d\theta$ at angle $\theta$
+produces:
 
 $$dE_y = \frac{1}{4\pi\epsilon_0}\frac{dq}{R^2}\sin\theta = \frac{\lambda}{4\pi\epsilon_0 R}\sin\theta\, d\theta$$
 

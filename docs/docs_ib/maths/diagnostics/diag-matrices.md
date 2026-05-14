@@ -1,6 +1,8 @@
 ---
-title: "Matrices -- Diagnostic Tests"
-description: "Hardest IB Mathematics diagnostic tests for matrices covering non-commutativity, eigenvalues with complex roots, diagonalisation for matrix powers, and inverse"
+title: 'Matrices -- Diagnostic Tests'
+description:
+  'Hardest IB Mathematics diagnostic tests for matrices covering non-commutativity, eigenvalues with
+  complex roots, diagonalisation for matrix powers, and inverse'
 slug: diag-matrices
 hide_table_of_contents: true
 ---
@@ -15,15 +17,18 @@ hide_table_of_contents: true
 
 **Question:**
 
-Let $A = \begin{pmatrix} 1 & 2 \\ 0 & -1 \end{pmatrix}$ and $B = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}$.
+Let $A = \begin{pmatrix} 1 & 2 \\ 0 & -1 \end{pmatrix}$ and
+$B = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}$.
 
 **(a)** Show that $AB \neq BA$.
 
 **(b)** Find all $2 \times 2$ matrices $X$ such that $AX = XA$Where $A$ is as defined above.
 
-**(c)** A student claims that since $A$ and $B$ do not commute, no matrix can commute with $A$. Explain the error.
+**(c)** A student claims that since $A$ and $B$ do not commute, no matrix can commute with $A$.
+Explain the error.
 
-[Difficulty: hard. Tests understanding of matrix non-commutativity and solving the commutator equation.]
+[Difficulty: hard. Tests understanding of matrix non-commutativity and solving the commutator
+equation.]
 
 **Solution:**
 
@@ -33,7 +38,9 @@ $$AB = \begin{pmatrix} 1 & 2 \\ 0 & -1 \end{pmatrix}\begin{pmatrix} 0 & 1 \\ 1 &
 
 $$BA = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}\begin{pmatrix} 1 & 2 \\ 0 & -1 \end{pmatrix} = \begin{pmatrix} 0 & -1 \\ 1 & 2 \end{pmatrix}$$
 
-Since $AB = \begin{pmatrix} 2 & 1 \\ -1 & 0 \end{pmatrix} \neq \begin{pmatrix} 0 & -1 \\ 1 & 2 \end{pmatrix} = BA$The matrices do not commute.
+Since
+$AB = \begin{pmatrix} 2 & 1 \\ -1 & 0 \end{pmatrix} \neq \begin{pmatrix} 0 & -1 \\ 1 & 2 \end{pmatrix} = BA$The
+matrices do not commute.
 
 **(b)** Let $X = \begin{pmatrix} a & b \\ c & d \end{pmatrix}$. Then:
 
@@ -50,7 +57,10 @@ Setting $AX = XA$:
 
 So $X = \begin{pmatrix} 0 & b \\ 0 & 0 \end{pmatrix}$ for any $b \in \mathbb{'\{'}R{'\}'}$.
 
-**(c)** The student's error is a logical fallacy: the fact that $B$ does not commute with $A$ does not imply that *no* matrix commutes with $A$. The identity matrix $I$The zero matrix $O$And all scalar multiples of $I$ commute with every matrix. Part (b) shows that there is in fact a one-parameter family of matrices commuting with $A$.
+**(c)** The student's error is a logical fallacy: the fact that $B$ does not commute with $A$ does
+not imply that _no_ matrix commutes with $A$. The identity matrix $I$The zero matrix $O$And all
+scalar multiples of $I$ commute with every matrix. Part (b) shows that there is in fact a
+one-parameter family of matrices commuting with $A$.
 
 ---
 
@@ -62,9 +72,11 @@ Let $M = \begin{pmatrix} 2 & 1 & 0 \\ 0 & 2 & 0 \\ 0 & 0 & 3 \end{pmatrix}$.
 
 **(a)** Find the eigenvalues and eigenvectors of $M$.
 
-**(b)** A student claims that since $M$ is triangular, the eigenvalues are the diagonal entries, so there should be three linearly independent eigenvectors. Is this correct?
+**(b)** A student claims that since $M$ is triangular, the eigenvalues are the diagonal entries, so
+there should be three linearly independent eigenvectors. Is this correct?
 
-[Difficulty: hard. Tests eigenvalue computation for a matrix with a repeated eigenvalue and the concept of defective matrices.]
+[Difficulty: hard. Tests eigenvalue computation for a matrix with a repeated eigenvalue and the
+concept of defective matrices.]
 
 **Solution:**
 
@@ -78,15 +90,21 @@ For $\lambda_1 = 2$: $(M - 2I)\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'}$:
 
 $$\begin{pmatrix} 0 & 1 & 0 \\ 0 & 0 & 0 \\ 0 & 0 & 1 \end{pmatrix}\begin{pmatrix} x \\ y \\ z \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \\ 0 \end{pmatrix}$$
 
-This gives $y = 0$ and $z = 0$With $x$ free. So the eigenvectors are $\begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix}$ times any scalar. There is only **one** linearly independent eigenvector for $\lambda = 2$.
+This gives $y = 0$ and $z = 0$With $x$ free. So the eigenvectors are
+$\begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix}$ times any scalar. There is only **one** linearly
+independent eigenvector for $\lambda = 2$.
 
 For $\lambda_2 = 3$: $(M - 3I)\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'}$:
 
 $$\begin{pmatrix} -1 & 1 & 0 \\ 0 & -1 & 0 \\ 0 & 0 & 0 \end{pmatrix}\begin{pmatrix} x \\ y \\ z \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \\ 0 \end{pmatrix}$$
 
-This gives $y = 0$$-x = 0$ so $x = 0$With $z$ free. Eigenvector: $\begin{pmatrix} 0 \\ 0 \\ 1 \end{pmatrix}$.
+This gives $y = 0$$-x = 0$ so $x = 0$With $z$ free. Eigenvector:
+$\begin{pmatrix} 0 \\ 0 \\ 1 \end{pmatrix}$.
 
-**(b)** The student is incorrect. While it is true that the eigenvalues of a triangular matrix are the diagonal entries, the number of linearly independent eigenvectors is not necessarily equal to the number of eigenvalues (counting multiplicity). Here $\lambda = 2$ has algebraic multiplicity $2$ but geometric multiplicity $1$. The matrix is **defective** — it cannot be diagonalised.
+**(b)** The student is incorrect. While it is true that the eigenvalues of a triangular matrix are
+the diagonal entries, the number of linearly independent eigenvectors is not necessarily equal to
+the number of eigenvalues (counting multiplicity). Here $\lambda = 2$ has algebraic multiplicity $2$
+but geometric multiplicity $1$. The matrix is **defective** — it cannot be diagonalised.
 
 ---
 
@@ -106,7 +124,8 @@ Let $A = \begin{pmatrix} 5 & -6 \\ 2 & -2 \end{pmatrix}$.
 
 **(c)** Hence find $A^5$.
 
-**(d)** A student claims that since $A$ has two distinct eigenvalues, $A^n$ can always be computed as $PD^nP^{-1}$ for any positive integer $n$. Is this correct? What conditions must be verified?
+**(d)** A student claims that since $A$ has two distinct eigenvalues, $A^n$ can always be computed
+as $PD^nP^{-1}$ for any positive integer $n$. Is this correct? What conditions must be verified?
 
 [Difficulty: hard. Combines eigenvalue computation, diagonalisation, and matrix exponentiation.]
 
@@ -138,7 +157,8 @@ $$\det P = 3 - 4 = -1$$
 
 $$P^{-1} = -\begin{pmatrix} 1 & -2 \\ -2 & 3 \end{pmatrix} = \begin{pmatrix} -1 & 2 \\ 2 & -3 \end{pmatrix}$$
 
-Verify: $PDP^{-1} = \begin{pmatrix} 3 & 2 \\ 2 & 1 \end{pmatrix}\begin{pmatrix} 1 & 0 \\ 0 & 2 \end{pmatrix}\begin{pmatrix} -1 & 2 \\ 2 & -3 \end{pmatrix} = \begin{pmatrix} 3 & 4 \\ 2 & 2 \end{pmatrix}\begin{pmatrix} -1 & 2 \\ 2 & -3 \end{pmatrix}$
+Verify:
+$PDP^{-1} = \begin{pmatrix} 3 & 2 \\ 2 & 1 \end{pmatrix}\begin{pmatrix} 1 & 0 \\ 0 & 2 \end{pmatrix}\begin{pmatrix} -1 & 2 \\ 2 & -3 \end{pmatrix} = \begin{pmatrix} 3 & 4 \\ 2 & 2 \end{pmatrix}\begin{pmatrix} -1 & 2 \\ 2 & -3 \end{pmatrix}$
 
 $$= \begin{pmatrix} -3 + 8 & 6 - 12 \\ -2 + 4 & 4 - 6 \end{pmatrix} = \begin{pmatrix} 5 & -6 \\ 2 & -2 \end{pmatrix} = A$$
 
@@ -152,6 +172,12 @@ $$= \begin{pmatrix} 3 & 64 \\ 2 & 32 \end{pmatrix}\begin{pmatrix} -1 & 2 \\ 2 & 
 
 $$= \begin{pmatrix} 125 & -186 \\ 62 & -92 \end{pmatrix}$$
 
-**(d)** The student's claim is correct with the caveat that the matrix must be diagonalisable. Two distinct eigenvalues are a **sufficient** condition for diagonalisability, since each eigenvalue contributes at least one eigenvector and eigenvectors corresponding to distinct eigenvalues are linearly independent. So with two distinct eigenvalues for a $2 \times 2$ matrix, we are guaranteed two linearly independent eigenvectors, meaning $P$ is invertible.
+**(d)** The student's claim is correct with the caveat that the matrix must be diagonalisable. Two
+distinct eigenvalues are a **sufficient** condition for diagonalisability, since each eigenvalue
+contributes at least one eigenvector and eigenvectors corresponding to distinct eigenvalues are
+linearly independent. So with two distinct eigenvalues for a $2 \times 2$ matrix, we are guaranteed
+two linearly independent eigenvectors, meaning $P$ is invertible.
 
-However, the student should verify that $P$ is indeed invertible (i.e., $\det P \neq 0$) before using this method. If the eigenvectors were accidentally computed incorrectly (e.g., picking a dependent pair), $P^{-1}$ would not exist.
+However, the student should verify that $P$ is indeed invertible (i.e., $\det P \neq 0$) before
+using this method. If the eigenvectors were accidentally computed incorrectly (e.g., picking a
+dependent pair), $P^{-1}$ would not exist.

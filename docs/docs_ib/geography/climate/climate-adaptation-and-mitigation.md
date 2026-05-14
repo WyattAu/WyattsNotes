@@ -1,8 +1,11 @@
 ---
 title: Climate Adaptation and Mitigation
-description: "Rigorous IB geography notes covering Climate Adaptation and Mitigation. Includes definitions, derivations, worked examples, and exam-style problems."
+description:
+  'Rigorous IB geography notes covering Climate Adaptation and Mitigation. Includes definitions,
+  derivations, worked examples, and exam-style problems.'
 slug: climate-adaptation-and-mitigation
 ---
+
 # Climate Adaptation and Mitigation
 
 ## Distinguishing Adaptation and Mitigation
@@ -31,19 +34,19 @@ Global greenhouse gas emissions. Mitigation in this sector involves:
 Wind, hydroelectric, geothermal, biomass).
 
 - **Solar photovoltaic (PV):** global installed capacity exceeded 1200 GW in 2023. The cost of solar
- PV has declined by approximately 90% since 2010, reaching approximately USD 0.05 per kWh in
- optimal locations, making it the cheapest source of new electricity in most of the world.
+  PV has declined by approximately 90% since 2010, reaching approximately USD 0.05 per kWh in
+  optimal locations, making it the cheapest source of new electricity in most of the world.
 - **Wind energy:** global installed capacity exceeded 1000 GW in 2023 (approximately 740 GW onshore,
- 260 GW offshore). Offshore wind is expanding rapidly, with the UK (approximately 14 GW), China
- (approximately 38 GW), and Germany leading installation.
+  260 GW offshore). Offshore wind is expanding rapidly, with the UK (approximately 14 GW), China
+  (approximately 38 GW), and Germany leading installation.
 - **Limitations:** intermittency (solar and wind generation vary with weather and time of day);
- energy storage requirements; land-use conflicts; grid integration challenges; supply chain
- constraints for critical minerals (lithium, cobalt, rare earth elements).
+  energy storage requirements; land-use conflicts; grid integration challenges; supply chain
+  constraints for critical minerals (lithium, cobalt, rare earth elements).
 
 **Nuclear energy.** Nuclear provides approximately 10% of global electricity from approximately 440
 Reactors. It is a low-carbon baseload source but faces challenges: high capital cost (approximately
-USD 5000--10 000 per kW), long construction times ( 8--12 years), radioactive waste
-Disposal, and public safety concerns following the Chernobyl (1986) and Fukushima (2011) accidents.
+USD 5000--10 000 per kW), long construction times ( 8--12 years), radioactive waste Disposal, and
+public safety concerns following the Chernobyl (1986) and Fukushima (2011) accidents.
 
 **Energy efficiency.** Reducing energy consumption per unit of economic output or per unit of
 Service delivered. Key measures include: building energy codes (requiring improved insulation,
@@ -103,22 +106,22 @@ Climate change poses severe risks to food security through altered precipitation
 Temperature stress, increased pest and disease pressure, and increased frequency of extreme events
 (droughts, floods, heat waves).
 
-| Strategy | Description | Example |
+| Strategy                                | Description                                                                                                  | Example                                                                                                                         |
 | --------------------------------------- | ------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------- |
-| **Drought-resistant crop varieties** | Breeding or genetic modification of crops to tolerate heat and water stress | Drought-tolerant maize varieties developed by CGIAR centres for Sub-Saharan Africa; salt-tolerant rice varieties for Bangladesh |
-| **Conservation agriculture** | Minimum tillage, crop residue retention, crop rotation to improve soil moisture retention and reduce erosion | Widely adopted in Brazil, Argentina, and Australia |
-| **Irrigation expansion and efficiency** | Expanding irrigated area; shifting from flood to drip irrigation to reduce water use | Drip irrigation adoption in India has increased water-use efficiency by 40--60% |
-| **Adjusted planting dates** | Shifting sowing and harvesting dates to match changing seasonal patterns | Farmers in the Sahel shifting planting dates earlier to take advantage of changing onset of rains |
-| **Crop diversification** | Reducing reliance on a single crop to spread climate risk | Promoting millet and sorghum alongside maize in southern Africa |
+| **Drought-resistant crop varieties**    | Breeding or genetic modification of crops to tolerate heat and water stress                                  | Drought-tolerant maize varieties developed by CGIAR centres for Sub-Saharan Africa; salt-tolerant rice varieties for Bangladesh |
+| **Conservation agriculture**            | Minimum tillage, crop residue retention, crop rotation to improve soil moisture retention and reduce erosion | Widely adopted in Brazil, Argentina, and Australia                                                                              |
+| **Irrigation expansion and efficiency** | Expanding irrigated area; shifting from flood to drip irrigation to reduce water use                         | Drip irrigation adoption in India has increased water-use efficiency by 40--60%                                                 |
+| **Adjusted planting dates**             | Shifting sowing and harvesting dates to match changing seasonal patterns                                     | Farmers in the Sahel shifting planting dates earlier to take advantage of changing onset of rains                               |
+| **Crop diversification**                | Reducing reliance on a single crop to spread climate risk                                                    | Promoting millet and sorghum alongside maize in southern Africa                                                                 |
 
 ### Infrastructural Adaptation
 
-| Strategy | Description | Example |
+| Strategy                             | Description                                                                    | Example                                                                                                                                                                                                        |
 | ------------------------------------ | ------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Sea walls and coastal defences** | Hard engineering structures to protect against sea level rise and storm surges | Netherlands Delta Programme (EUR 20+ billion); MOSE barrier in Venice (EUR 5.5 billion) |
-| **Flood-resistant infrastructure** | Designing buildings, roads, and utilities to withstand flooding | Bangladesh's elevated schools and cyclone shelters; floating housing in the Netherlands |
-| **Improved drainage** | Upgrading urban drainage systems to handle increased rainfall intensity | Sustainable Urban Drainage Systems (SUDS) in UK cities; Tokyo's underground floodwater storage (the Metropolitan Area Outer Underground Discharge Channel, completed 2006, stores 670 000 m$^3$ of floodwater) |
-| **Climate-resilient building codes** | Updating construction standards to account for projected climate conditions | Caribbean building codes for hurricane resistance; Japan's earthquake and tsunami-resistant standards |
+| **Sea walls and coastal defences**   | Hard engineering structures to protect against sea level rise and storm surges | Netherlands Delta Programme (EUR 20+ billion); MOSE barrier in Venice (EUR 5.5 billion)                                                                                                                        |
+| **Flood-resistant infrastructure**   | Designing buildings, roads, and utilities to withstand flooding                | Bangladesh's elevated schools and cyclone shelters; floating housing in the Netherlands                                                                                                                        |
+| **Improved drainage**                | Upgrading urban drainage systems to handle increased rainfall intensity        | Sustainable Urban Drainage Systems (SUDS) in UK cities; Tokyo's underground floodwater storage (the Metropolitan Area Outer Underground Discharge Channel, completed 2006, stores 670 000 m$^3$ of floodwater) |
+| **Climate-resilient building codes** | Updating construction standards to account for projected climate conditions    | Caribbean building codes for hurricane resistance; Japan's earthquake and tsunami-resistant standards                                                                                                          |
 
 ### Community-Based Adaptation
 
@@ -131,7 +134,7 @@ Recipients.
 **Characteristics of CBA:**
 
 - Focus on the most vulnerable communities (often those with the least resources and political
- influence).
+  influence).
 - Emphasis on local knowledge and participatory decision-making.
 - Integration of indigenous and traditional knowledge with scientific knowledge.
 - Attention to gender, ethnicity, and social inequality in vulnerability and adaptive capacity.
@@ -156,17 +159,17 @@ Climate action.
 **Key features:**
 
 - **Temperature goals:** hold the increase in global average temperature to "well below 2$^\circ$C"
- above pre-industrial levels, while pursuing efforts to limit it to 1.5$^\circ$C.
+  above pre-industrial levels, while pursuing efforts to limit it to 1.5$^\circ$C.
 - **Nationally Determined Contributions (NDCs):** each party submits its own climate pledge,
- specifying its emission reduction targets, adaptation priorities, and support needs. NDCs are
- updated every five years, with a "ratchet mechanism" requiring each successive submission to be
- more ambitious than the previous one.
+  specifying its emission reduction targets, adaptation priorities, and support needs. NDCs are
+  updated every five years, with a "ratchet mechanism" requiring each successive submission to be
+  more ambitious than the previous one.
 - **Global Stocktake:** a periodic assessment of collective progress toward the Agreement's goals.
- The first Global Stocktake concluded at COP28 (2023), finding that current NDCs are insufficient
- to meet the temperature goals.
+  The first Global Stocktake concluded at COP28 (2023), finding that current NDCs are insufficient
+  to meet the temperature goals.
 - **Climate finance:** developed countries committed to mobilising USD 100 billion per year in
- climate finance for developing countries. This target was reportedly met in 2022 (two years late),
- but much of this finance was in the form of loans rather than grants.
+  climate finance for developing countries. This target was reportedly met in 2022 (two years late),
+  but much of this finance was in the form of loans rather than grants.
 
 ### Assessment of the Paris Agreement
 
@@ -182,13 +185,13 @@ Approximately USD 1 trillion per year is needed for both mitigation and adaptati
 
 ### Key COP Outcomes
 
-| COP | Year | Key Outcome |
+| COP                         | Year | Key Outcome                                                                                                                                                              |
 | --------------------------- | ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **COP21 (Paris)** | 2015 | Paris Agreement adopted |
-| **COP24 (Katowice)** | 2018 | Paris Rulebook (rules for implementing the Agreement) |
-| **COP26 (Glasgow)** | 2021 | Glasgow Climate Pact; completion of Article 6 rules (carbon markets); pledge to phase down unabated coal |
-| **COP27 (Sharm el-Sheikh)** | 2022 | Establishment of a Loss and Damage Fund |
-| **COP28 (Dubai)** | 2023 | First Global Stocktake; operationalisation of the Loss and Damage Fund (initial pledges approximately USD 700 million); agreement to "transition away from fossil fuels" |
+| **COP21 (Paris)**           | 2015 | Paris Agreement adopted                                                                                                                                                  |
+| **COP24 (Katowice)**        | 2018 | Paris Rulebook (rules for implementing the Agreement)                                                                                                                    |
+| **COP26 (Glasgow)**         | 2021 | Glasgow Climate Pact; completion of Article 6 rules (carbon markets); pledge to phase down unabated coal                                                                 |
+| **COP27 (Sharm el-Sheikh)** | 2022 | Establishment of a Loss and Damage Fund                                                                                                                                  |
+| **COP28 (Dubai)**           | 2023 | First Global Stocktake; operationalisation of the Loss and Damage Fund (initial pledges approximately USD 700 million); agreement to "transition away from fossil fuels" |
 
 ## Case Study: The Netherlands
 

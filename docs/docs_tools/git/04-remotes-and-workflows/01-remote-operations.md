@@ -1,6 +1,8 @@
 ---
 title: Remote Operations
-description: "Remote Operations — Distributed Architecture; Bare vs Non-Bare Repositories; Create a bare repository; Clone from a bare repository."
+description:
+  'Remote Operations — Distributed Architecture; Bare vs Non-Bare Repositories; Create a bare
+  repository; Clone from a bare repository.'
 date: 2025-06-03T06:00:00.000Z
 tags:
   - git
@@ -9,9 +11,12 @@ categories:
   - CS
 slug: remote-operations
 ---
+
 ## Distributed Architecture
 
-Git's distributed architecture means there is no intrinsic client-server relationship. Any repository can act as a "remote" for any other. In practice, one repository is designated as the "canonical" or "origin" repository, and all others sync with it.
+Git's distributed architecture means there is no intrinsic client-server relationship. Any
+repository can act as a "remote" for any other. In practice, one repository is designated as the
+"canonical" or "origin" repository, and all others sync with it.
 
 ```mermaid
 flowchart LR
@@ -42,12 +47,13 @@ flowchart LR
 
 ### Bare vs Non-Bare Repositories
 
-| Type | Working Directory | Purpose |
+| Type                   | Working Directory | Purpose                                       |
 | ---------------------- | ----------------- | --------------------------------------------- |
-| **Non-bare** (default) | Yes | Developer workstation — edit, commit, push |
-| **Bare** (`--bare`) | No | Server-side repository — receives pushes only |
+| **Non-bare** (default) | Yes               | Developer workstation — edit, commit, push    |
+| **Bare** (`--bare`)    | No                | Server-side repository — receives pushes only |
 
-A bare repository is just the `.git/` directory without a working tree. It is the standard format for remote servers (GitHub, GitLab, Gitea):
+A bare repository is just the `.git/` directory without a working tree. It is the standard format
+for remote servers (GitHub, GitLab, Gitea):
 
 ```bash
 # Create a bare repository
@@ -59,7 +65,10 @@ $ git clone user@server:/path/to/project.git
 
 :::info
 
-Never push to a non-bare repository that has a checked-out working tree. The push will update the remote's branch pointer, but the remote's working directory and index will not be updated, causing inconsistencies. If you need a server-side repo with a working tree, use a **post-receive hook** to check out the files.
+Never push to a non-bare repository that has a checked-out working tree. The push will update the
+remote's branch pointer, but the remote's working directory and index will not be updated, causing
+inconsistencies. If you need a server-side repo with a working tree, use a **post-receive hook** to
+check out the files.
 
 :::
 
@@ -103,20 +112,23 @@ $ git remote set-url origin git@github.com:user/repo.git
 
 ### URLs: HTTPS vs SSH
 
-| Protocol | URL Format | Authentication | Use Case |
+| Protocol  | URL Format                         | Authentication   | Use Case                                     |
 | --------- | ---------------------------------- | ---------------- | -------------------------------------------- |
 | **HTTPS** | `https://github.com/user/repo.git` | Token / password | Public repos, CI/CD, firewalled environments |
-| **SSH** | `git@github.com:user/repo.git` | SSH key | Frequent pushes, personal development |
+| **SSH**   | `git@github.com:user/repo.git`     | SSH key          | Frequent pushes, personal development        |
 
 :::tip
 
-Use SSH for personal development (no password prompts after key setup). Use HTTPS for CI/CD (easier to inject tokens as environment variables). GitHub recommends HTTPS for all new repositories.
+Use SSH for personal development (no password prompts after key setup). Use HTTPS for CI/CD (easier
+to inject tokens as environment variables). GitHub recommends HTTPS for all new repositories.
 
 :::
 
 ## Fetch
 
-`git fetch` downloads objects and references from a remote repository **without modifying your working directory or branches**. It updates your remote-tracking branches (e.g., `origin/main`) but does not merge anything.
+`git fetch` downloads objects and references from a remote repository **without modifying your
+working directory or branches**. It updates your remote-tracking branches (e.g., `origin/main`) but
+does not merge anything.
 
 ```bash
 # Fetch all remotes and all branches
@@ -204,7 +216,9 @@ gitGraph
 
 :::warning
 
-`git pull --rebase` rewrites your local commit hashes. This is safe as long as you have not pushed those commits to a shared branch. If you have, see the [Golden Rule of Rebasing](../03-branching-and-merging/03-rebasing.md#the-golden-rule-of-rebasing).
+`git pull --rebase` rewrites your local commit hashes. This is safe as long as you have not pushed
+those commits to a shared branch. If you have, see the
+[Golden Rule of Rebasing](../03-branching-and-merging/03-rebasing.md#the-golden-rule-of-rebasing).
 
 :::
 
@@ -244,7 +258,8 @@ This prevents overwriting commits that other developers may have based their wor
 
 ### Force Push
 
-Force pushing overwrites the remote branch with your local branch, discarding any commits on the remote that are not in your local history:
+Force pushing overwrites the remote branch with your local branch, discarding any commits on the
+remote that are not in your local history:
 
 ```bash
 # Force push (DANGEROUS)
@@ -278,13 +293,15 @@ flowchart LR
 :::warning
 
 - **`--force`**: Unconditionally overwrites the remote. Use only on branches you exclusively own.
-- **`--force-with-lease`**: Only overwrites if the remote has not changed since your last fetch. **Always prefer this over `--force`.**
+- **`--force-with-lease`**: Only overwrites if the remote has not changed since your last fetch.
+  **Always prefer this over `--force`.**
 
 Never force push `main` or any shared branch. The consequences are:
 
 1. Other developers' histories diverge from the remote.
 2. Their next `git push` will be rejected.
-3. They must `git pull --rebase` or reset their branches, potentially losing their own unpushed commits.
+3. They must `git pull --rebase` or reset their branches, potentially losing their own unpushed
+   commits.
 
 :::
 
@@ -329,26 +346,28 @@ $ git checkout -b main origin/main  # or whatever the default branch is
 
 The clone creates:
 
-| Component | Description |
+| Component              | Description                                     |
 | ---------------------- | ----------------------------------------------- |
-| `.git/` | Full local repository with all objects and refs |
-| Working directory | Checkout of the default branch |
-| `origin` remote | Points to the source URL |
-| `main` tracking branch | Tracks `origin/main` |
+| `.git/`                | Full local repository with all objects and refs |
+| Working directory      | Checkout of the default branch                  |
+| `origin` remote        | Points to the source URL                        |
+| `main` tracking branch | Tracks `origin/main`                            |
 
 ### Clone Variants
 
-| Variant | Command | Use Case |
+| Variant     | Command               | Use Case                                       |
 | ----------- | --------------------- | ---------------------------------------------- |
-| **Full** | `git clone` | Development — full history, all branches |
+| **Full**    | `git clone`           | Development — full history, all branches       |
 | **Shallow** | `git clone --depth=1` | CI/CD — only latest commit, minimal disk usage |
-| **Sparse** | `git clone --sparse` | Monorepos — only specific directories |
-| **Mirror** | `git clone --mirror` | Backup/migration — all refs, bare repository |
-| **Bare** | `git clone --bare` | Server setup — no working directory |
+| **Sparse**  | `git clone --sparse`  | Monorepos — only specific directories          |
+| **Mirror**  | `git clone --mirror`  | Backup/migration — all refs, bare repository   |
+| **Bare**    | `git clone --bare`    | Server setup — no working directory            |
 
 ## Remote-Tracking Branches
 
-Remote-tracking branches (e.g., `origin/main`) are local references that represent the state of a remote branch as of the last `git fetch`. They are updated automatically by `fetch` and `pull`But **never by local commits**.
+Remote-tracking branches (e.g., `origin/main`) are local references that represent the state of a
+remote branch as of the last `git fetch`. They are updated automatically by `fetch` and `pull`But
+**never by local commits**.
 
 ```mermaid
 flowchart LR

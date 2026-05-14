@@ -1,6 +1,8 @@
 ---
 title: Metaclasses and Class Creation
-description: "Metaclasses and Class Creation — How Class Statements Work; `type()` as Metaclass; Custom Metaclasses; `__new__`: Controlling Class Creation."
+description:
+  'Metaclasses and Class Creation — How Class Statements Work; `type()` as Metaclass; Custom
+  Metaclasses; `__new__`: Controlling Class Creation.'
 date: 2026-04-05T00:00:00.000Z
 tags:
   - Python
@@ -8,6 +10,7 @@ categories:
   - Python
 slug: metaclasses
 ---
+
 ## How Class Statements Work
 
 The `class` statement in Python is not a declarative construct. It is an executable statement that
@@ -19,17 +22,17 @@ Metaclass -- which produces the class object.
 The full sequence when Python encounters `class Foo(Base, metaclass=Meta):` is:
 
 1. The class name (`Foo`), base classes (`(Base,)`), and keyword arguments (including `metaclass=`)
- are captured from the class header.
+   are captured from the class header.
 2. If no `metaclass` keyword is given, the metaclass is determined by looking at the `__class__` of
- the first base class (if any), or defaulting to `type`. This is the metaclass computation rule.
+   the first base class (if any), or defaulting to `type`. This is the metaclass computation rule.
 3. The metaclass's `__prepare__` method is called with the class name and base classes. It returns a
- namespace mapping (by default, an empty `dict`). This namespace is where all assignments and
- function definitions in the class body will be stored.
+   namespace mapping (by default, an empty `dict`). This namespace is where all assignments and
+   function definitions in the class body will be stored.
 4. The class body is executed as a code block, using the namespace from step 3 as the local
- namespace. Every `def`Every assignment, every expression at the top level of the class body
- runs right now.
+   namespace. Every `def`Every assignment, every expression at the top level of the class body runs
+   right now.
 5. The resulting namespace dict, along with the class name and base classes, is passed to the
- metaclass's `__new__` and `__init__` methods to construct and initialize the class object.
+   metaclass's `__new__` and `__init__` methods to construct and initialize the class object.
 6. The class object is bound to the class name (`Foo`) in the enclosing scope.
 
 The critical insight is step 4: the class body is arbitrary Python code. It can contain `if`
@@ -188,8 +191,8 @@ Whether the class defines the required abstract methods.
 
 `__prepare__` is called before the class body is executed. It receives the class name and base
 Classes and must return a mapping object that will serve as the namespace for the class body. The
-Default implementation returns a plain `dict`But you can return an `OrderedDict` (or any mapping)
-To control the order in which attributes are recorded.
+Default implementation returns a plain `dict`But you can return an `OrderedDict` (or any mapping) To
+control the order in which attributes are recorded.
 
 ```python
 class OrderedMeta(type):
@@ -231,7 +234,7 @@ Validation on assignment during class body execution.
 
 1. Calls `MyClass.__new__(MyClass, *args, **kwargs)` to allocate the instance.
 2. If the returned object is an instance of `MyClass`Calls
- `MyClass.__init__(instance, *args, **kwargs)` to initialize it.
+   `MyClass.__init__(instance, *args, **kwargs)` to initialize it.
 3. Returns the instance.
 
 By overriding `__call__` on the metaclass, you can intercept and modify any of these steps. This is
@@ -316,7 +319,7 @@ uv.validate({"email": "a@b.com"})  # ValueError: Missing fields: ['name']
 `__init_subclass__` is the right choice when:
 
 - You need to hook into subclass creation but do not need to control the namespace before the class
- body executes.
+  body executes.
 - You want to pass configuration via keyword arguments in the class header.
 - You want the hook to be inherited through the class hierarchy.
 - You want to avoid metaclass conflicts (see below).
@@ -382,9 +385,9 @@ The call sequence during class creation is:
 
 1. `__prepare__` returns the namespace.
 2. The class body executes. `name = TypedField(str)` creates a `TypedField` instance and stores it
- in the namespace under the key `"name"`.
+   in the namespace under the key `"name"`.
 3. After the class body finishes, the metaclass iterates over all items in the namespace. For each
- item that has a `__set_name__` method, it calls `item.__set_name__(class_object, key_name)`.
+   item that has a `__set_name__` method, it calls `item.__set_name__(class_object, key_name)`.
 4. `__new__` and `__init__` are called to create and initialize the class.
 
 This means `__set_name__` runs before `__init__` on the metaclass but after the class body has fully
@@ -679,16 +682,16 @@ Entirely because they do not introduce a new metaclass into the hierarchy.
 
 ## Comparison: Metaclasses vs Decorators vs Descriptors vs `__init_subclass__`
 
-| Criterion | Metaclass | Class Decorator | Descriptor | `__init_subclass__` |
-| ------------------------------------------ | ------------------------------ | ---------------------------- | ------------------- | -------------------- |
-| Intercepts namespace before class creation | Yes (`__new__``__prepare__`) | No (class already exists) | No | No |
-| Modifies class after creation | Yes (`__init__`) | Yes | No | Yes (runs in parent) |
-| Controls instance creation | Yes (`__call__`) | No | Yes (per attribute) | No |
-| Inherited by subclasses automatically | Yes | No (must re-apply) | Yes (on class) | Yes |
-| Can pass keyword args in class header | No | No | No | Yes |
-| Metaclass conflict risk | Yes | No | No | No |
-| Complexity | High | Low | Medium | Low |
-| Visibility to readers | Low (implicit magic) | High (explicit `@decorator`) | Medium | Medium |
+| Criterion                                  | Metaclass                    | Class Decorator              | Descriptor          | `__init_subclass__`  |
+| ------------------------------------------ | ---------------------------- | ---------------------------- | ------------------- | -------------------- |
+| Intercepts namespace before class creation | Yes (`__new__``__prepare__`) | No (class already exists)    | No                  | No                   |
+| Modifies class after creation              | Yes (`__init__`)             | Yes                          | No                  | Yes (runs in parent) |
+| Controls instance creation                 | Yes (`__call__`)             | No                           | Yes (per attribute) | No                   |
+| Inherited by subclasses automatically      | Yes                          | No (must re-apply)           | Yes (on class)      | Yes                  |
+| Can pass keyword args in class header      | No                           | No                           | No                  | Yes                  |
+| Metaclass conflict risk                    | Yes                          | No                           | No                  | No                   |
+| Complexity                                 | High                         | Low                          | Medium              | Low                  |
+| Visibility to readers                      | Low (implicit magic)         | High (explicit `@decorator`) | Medium              | Medium               |
 
 **Use a class decorator when:** You need to modify a class after it is created, and the modification
 Does not need to propagate to subclasses. Decorators are the simplest tool and should be your first
@@ -711,22 +714,22 @@ Before the class object exists.
 The "metaclass hell" anti-pattern occurs when metaclasses are used for tasks that simpler mechanisms
 Handle more cleanly. The symptoms are:
 
-1. **Unreadable stack traces.** When something goes wrong in a metaclass `__new__` or `__init__`
- the traceback points to the `class` statement itself, which gives no indication of which line in
- the metaclass is responsible. Debugging metaclass code is significantly harder than debugging
- normal Python code.
+1. **Unreadable stack traces.** When something goes wrong in a metaclass `__new__` or `__init__` the
+   traceback points to the `class` statement itself, which gives no indication of which line in the
+   metaclass is responsible. Debugging metaclass code is significantly harder than debugging normal
+   Python code.
 
 2. **Metaclass conflicts.** As discussed above, combining classes with different metaclasses creates
- friction that scales poorly with codebase size.
+   friction that scales poorly with codebase size.
 
 3. **Implicit behavior.** A reader looking at `class Foo(Base):` has no indication that a metaclass
- is modifying the class, registering it, adding methods, or changing its behavior. Class
- decorators are explicit: `@register class Foo(Base):` immediately communicates that something is
- happening.
+   is modifying the class, registering it, adding methods, or changing its behavior. Class
+   decorators are explicit: `@register class Foo(Base):` immediately communicates that something is
+   happening.
 
 4. **Poor tooling support.** IDEs, linters, and type checkers have limited understanding of
- metaclass semantics. Attributes added by a metaclass may not be recognized by static analysis,
- and refactoring tools may not correctly handle metaclass-modified classes.
+   metaclass semantics. Attributes added by a metaclass may not be recognized by static analysis,
+   and refactoring tools may not correctly handle metaclass-modified classes.
 
 Prefer these alternatives:
 

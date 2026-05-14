@@ -1,10 +1,12 @@
 ---
 title: The Cold War
 tags:
-- IB
-- History
+  - IB
+  - History
 slug: the-cold-war
-description: "Rigorous IB history notes covering The Cold War. Includes definitions, derivations, worked examples, and exam-style problems."
+description:
+  'Rigorous IB history notes covering The Cold War. Includes definitions, derivations, worked
+  examples, and exam-style problems.'
 ---
 
 ## The Cold War: A Systems-Level Analysis (1945--1991)
@@ -42,12 +44,10 @@ Marxist-Leninist framework, viewed capitalist states as inherently imperialist a
 Peaceful coexistence was at best a temporary tactical measure while the conditions for revolution
 Matured.
 
-:::info
-For Paper 3 essays, the ideological dimension should not be treated as the sole cause of the
+:::info For Paper 3 essays, the ideological dimension should not be treated as the sole cause of the
 Cold War. Instead, it functioned as a lens through which both sides interpreted each other's
 Actions, often amplifying mistrust and escalating tensions beyond what objective strategic interests
-Alone would have produced.
-:::
+Alone would have produced. :::
 
 The ideological clash manifested in diametrically opposed visions of the post-war international
 Order. The United States favoured an open, multilateral economic system based on free trade and
@@ -114,9 +114,9 @@ For four decades.
 
 The immediate post-war period saw the rapid consolidation of Soviet control over Eastern Europe. By
 1947, communist governments had been installed -- through a combination of electoral manipulation,
-Political pressure, and outright coercion -- in Poland, Hungary, Romania, Bulgaria,
-And Albania. Yugoslavia, under Josip Broz Tito, also became communist but pursued an independent
-Course that would eventually lead to a rupture with Stalin.
+Political pressure, and outright coercion -- in Poland, Hungary, Romania, Bulgaria, And Albania.
+Yugoslavia, under Josip Broz Tito, also became communist but pursued an independent Course that
+would eventually lead to a rupture with Stalin.
 
 The critical turning point came with the Greek Civil War (1946--1949) and the perceived Soviet
 Threat to Turkey. Britain, exhausted by the war, announced in February 1947 that it could no longer
@@ -134,15 +134,13 @@ American foreign policy from peacetime isolationism to permanent global engageme
 States now assumed the role of the principal defender of the "free world" against communist
 Expansion -- a commitment that would define its foreign policy for the next four decades.
 
-:::note
-George F. Kennan's "Long Telegram" (1946) and his subsequent article published under the
+:::note George F. Kennan's "Long Telegram" (1946) and his subsequent article published under the
 Pseudonym "X" in _Foreign Affairs_ (1947) provided the intellectual framework for containment.
 Kennan argued that Soviet behaviour was driven by a combination of Marxist-Leninist ideology and
 Traditional Russian insecurity, and that the Soviet threat could be managed through "firm and
 Vigilant containment of Russian expansive tendencies." Kennan later argued that he had advocated
 Primarily for political and economic containment, not the militarised version that American policy
-Ultimately adopted.
-:::
+Ultimately adopted. :::
 
 ### 1.4 The Marshall Plan (1947)
 
@@ -193,9 +191,8 @@ Regime, eliminating political opponents through show trials, imprisonment, and e
 
 In Czechoslovakia, the "Prague Coup" of February 1948 marked the decisive moment. Non-communist
 Ministers resigned in protest at communist domination of the police, but the communist Prime
-Minister Klement Gottwald, backed by Soviet pressure, replaced them. The coup demonstrated
-That even in countries where communist parties lacked popular majorities, Soviet backing could
-Deliver power.
+Minister Klement Gottwald, backed by Soviet pressure, replaced them. The coup demonstrated That even
+in countries where communist parties lacked popular majorities, Soviet backing could Deliver power.
 
 In Yugoslavia, Tito's communist partisans had liberated the country with minimal Soviet assistance.
 Tito pursued an independent foreign policy, supporting the communist side in the Greek Civil War and
@@ -1059,27 +1056,34 @@ Multi-causal phenomenon that cannot be adequately explained by any single interp
 They will also recognise that historical interpretations are themselves products of their time and
 Are shaped by the political and intellectual contexts in which they are produced.
 
-:::note
-When evaluating historiography in essays, avoid the trap of listing the three schools
-One after another. Instead, integrate historiographical analysis into your argument, using it to
-Support or challenge specific points. The best essays will demonstrate that you understand not only
-What each school argues but why it argues it -- and what evidence supports or undermines its claims.
-:::
+:::note When evaluating historiography in essays, avoid the trap of listing the three schools One
+after another. Instead, integrate historiographical analysis into your argument, using it to Support
+or challenge specific points. The best essays will demonstrate that you understand not only What
+each school argues but why it argues it -- and what evidence supports or undermines its claims. :::
 
+:::danger Common Pitfalls
 
-:::danger
-Common Pitfalls
+- **Presenting the Cold War as a simple US vs USSR binary:** The Cold War involved multiple actors
+  -- China, Cuba, European allies, the Non-Aligned Movement, and proxy states in the Third World. IB
+  essays that treat every conflict as purely US-USSR miss the agency of other actors and the
+  complexity of alliances (e.g., the Sino-Soviet split).
 
-- **Presenting the Cold War as a simple US vs USSR binary:** The Cold War involved multiple actors -- China, Cuba, European allies, the Non-Aligned Movement, and proxy states in the Third World. IB essays that treat every conflict as purely US-USSR miss the agency of other actors and the complexity of alliances (e.g., the Sino-Soviet split).
+- **Over-generalising causation without evidence:** Claims like "the arms race caused the Cold War"
+  or "Gorbachev ended the Cold War" are insufficient without specific evidence. IB mark schemes
+  require precise dating, named leaders, specific events, and historiographical debate. Use phrases
+  like "a significant factor" rather than "the cause."
 
-- **Over-generalising causation without evidence:** Claims like "the arms race caused the Cold War" or "Gorbachev ended the Cold War" are insufficient without specific evidence. IB mark schemes require precise dating, named leaders, specific events, and historiographical debate. Use phrases like "a significant factor" rather than "the cause."
+- **Confusing long-term and short-term causes:** The origins of the Cold War have deep roots
+  (ideological differences, WW2 alliances) and immediate triggers (Yalta/Potsdam disagreements, the
+  atomic bomb). A strong essay distinguishes between underlying conditions and precipitating events,
+  showing how both contributed to the breakdown of cooperation.
 
-- **Confusing long-term and short-term causes:** The origins of the Cold War have deep roots (ideological differences, WW2 alliances) and immediate triggers (Yalta/Potsdam disagreements, the atomic bomb). A strong essay distinguishes between underlying conditions and precipitating events, showing how both contributed to the breakdown of cooperation.
+- **Presenting historiography as a list of quotes:** quoting different historians without engaging
+  with their ARGUMENTS and METHODOLOGY does not score well. Explain WHY a historian reached their
+  conclusion -- what evidence did they prioritise? What evidence did they dismiss? How does their
+  perspective challenge or complement other interpretations?
 
-- **Presenting historiography as a list of quotes:** quoting different historians without engaging with their ARGUMENTS and METHODOLOGY does not score well. Explain WHY a historian reached their conclusion -- what evidence did they prioritise? What evidence did they dismiss? How does their perspective challenge or complement other interpretations?
-
-:::
----
+## :::
 
 ## Exam Preparation: Key Essay Questions
 

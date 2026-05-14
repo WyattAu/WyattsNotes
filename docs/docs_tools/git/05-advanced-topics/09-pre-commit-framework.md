@@ -1,8 +1,11 @@
 ---
 title: The pre-commit Framework
-description: "The pre-commit Framework — What pre-commit Is; Installation; Installing the Framework; Install via pip with worked examples and exam-style questions."
+description:
+  'The pre-commit Framework — What pre-commit Is; Installation; Installing the Framework; Install
+  via pip with worked examples and exam-style questions.'
 slug: pre-commit-framework
 ---
+
 ## What pre-commit Is
 
 `pre-commit` is a Python-based framework for managing and executing Git hooks in a declarative,
@@ -12,15 +15,15 @@ Not shared across contributors, and each developer must manually install and mai
 The framework provides:
 
 - **A declarative configuration file** (`.pre-commit-config.yaml`) that defines which hooks run,
- when they run, and what files they target. This file is committed to the repository and shared
- with all contributors.
+  when they run, and what files they target. This file is committed to the repository and shared
+  with all contributors.
 - **Isolated execution environments** — each hook runs in its own virtual environment or container,
- so hook dependencies never conflict with project dependencies or with each other.
+  so hook dependencies never conflict with project dependencies or with each other.
 - **A caching layer** — hooks skip files that have not changed since the last successful run, making
- incremental commits fast.
+  incremental commits fast.
 - **Language-agnostic hook support** — hooks can be written in any language: Python, Bash, Node.js,
- Go, Rust, or run inside Docker containers. The framework does not care what the hook is, only that
- it follows the contract (exit code 0 = pass, non-zero = fail).
+  Go, Rust, or run inside Docker containers. The framework does not care what the hook is, only that
+  it follows the contract (exit code 0 = pass, non-zero = fail).
 
 The `pre-commit` framework is not the same as the `pre-commit` Git hook. The framework installs
 Itself as the `pre-commit` hook in `.git/hooks/` and then orchestrates all configured hooks from
@@ -145,32 +148,32 @@ The framework clones these repos (at the pinned `rev`) and reads their hook meta
 
 ### Per-Repo Fields
 
-| Field | Required | Description |
+| Field   | Required | Description                                      |
 | ------- | -------- | ------------------------------------------------ |
-| `repo` | Yes | URL of the hook repository (HTTPS or local path) |
-| `rev` | Yes | Git ref to checkout (tag, branch, or SHA) |
-| `hooks` | Yes | Array of hook definitions from this repo |
+| `repo`  | Yes      | URL of the hook repository (HTTPS or local path) |
+| `rev`   | Yes      | Git ref to checkout (tag, branch, or SHA)        |
+| `hooks` | Yes      | Array of hook definitions from this repo         |
 
 ### Per-Hook Fields
 
-| Field | Required | Description |
+| Field            | Required | Description                                                                  |
 | ---------------- | -------- | ---------------------------------------------------------------------------- |
-| `id` | Yes | Hook identifier (must match an entry in the repo's `.pre-commit-hooks.yaml`) |
-| `name` | No | Human-readable name (defaults to `id`) |
-| `entry` | No | Command to run (for local hooks; remote hooks define this in their metadata) |
-| `language` | No | Execution environment (`system``python``node``docker`Etc.) |
-| `files` | No | Regex pattern: only run on files matching this pattern |
-| `exclude` | No | Regex pattern: skip files matching this pattern |
-| `types` | No | Array of file types (e.g., `[python]``[text]``[json]`) |
-| `types_or` | No | Array of file types (match if file is ANY type) |
-| `exclude_types` | No | Array of file types to exclude |
-| `args` | No | Additional arguments passed to the hook entry point |
-| `stages` | No | Array of stages: `[commit]``[push]``[commit-msg]``[manual]` |
-| `pass_filenames` | No | Whether to pass filenames as arguments (default: `true`) |
-| `always_run` | No | Run even when no files match (default: `false`) |
-| `verbose` | No | Print more output (default: `false`) |
-| `log_file` | No | Write hook output to this file |
-| `require_serial` | No | Do not run this hook in parallel with other hooks (default: `false`) |
+| `id`             | Yes      | Hook identifier (must match an entry in the repo's `.pre-commit-hooks.yaml`) |
+| `name`           | No       | Human-readable name (defaults to `id`)                                       |
+| `entry`          | No       | Command to run (for local hooks; remote hooks define this in their metadata) |
+| `language`       | No       | Execution environment (`system``python``node``docker`Etc.)                   |
+| `files`          | No       | Regex pattern: only run on files matching this pattern                       |
+| `exclude`        | No       | Regex pattern: skip files matching this pattern                              |
+| `types`          | No       | Array of file types (e.g., `[python]``[text]``[json]`)                       |
+| `types_or`       | No       | Array of file types (match if file is ANY type)                              |
+| `exclude_types`  | No       | Array of file types to exclude                                               |
+| `args`           | No       | Additional arguments passed to the hook entry point                          |
+| `stages`         | No       | Array of stages: `[commit]``[push]``[commit-msg]``[manual]`                  |
+| `pass_filenames` | No       | Whether to pass filenames as arguments (default: `true`)                     |
+| `always_run`     | No       | Run even when no files match (default: `false`)                              |
+| `verbose`        | No       | Print more output (default: `false`)                                         |
+| `log_file`       | No       | Write hook output to this file                                               |
+| `require_serial` | No       | Do not run this hook in parallel with other hooks (default: `false`)         |
 
 ### File Type Matching
 
@@ -263,28 +266,28 @@ repos:
 
 ### Reference Table
 
-| Hook ID | What It Checks | Auto-Fix? | Common Arguments |
+| Hook ID                                | What It Checks                                                | Auto-Fix? | Common Arguments                            |
 | -------------------------------------- | ------------------------------------------------------------- | --------- | ------------------------------------------- |
-| `trailing-whitespace` | Trailing whitespace on any line | Yes | |
-| `end-of-file-fixer` | File ends with exactly one newline | Yes | |
-| `check-yaml` | Valid YAML syntax (via `pyyaml`) | No | `--unsafe` to allow custom tags |
-| `check-json` | Valid JSON syntax | No | |
-| `check-toml` | Valid TOML syntax | No | |
-| `check-merge-conflict` | Unresolved conflict markers (`<<<<<<<``=======``>>>>>>`) | No | `--assume-in-merge` to check outside merges |
-| `check-added-large-files` | Files exceeding size threshold | No | `--maxkb=500` (default: 500KB) |
-| `detect-private-key` | PEM-encoded private key material in files | No | |
-| `no-commit-to-branch` | Prevents commits to protected branches | No | `--branch main --branch release/*` |
-| `mixed-line-ending` | Inconsistent line endings (LF vs CRLF) | Yes | `--fix=lf` or `--fix=crlf` |
-| `check-case-conflict` | Filename case collisions (problematic on case-insensitive FS) | No | |
-| `check-executables-have-shebangs` | Executable files must have a shebang line | No | |
-| `check-shebang-scripts-are-executable` | Files with shebangs must be executable | No | |
-| `check-byte-order-marker` | Detects BOM in UTF-8 files | No | |
-| `check-docstring-first` | Python files: docstring before code | No | |
-| `debug-statements` | Python `import pdb``import ipdb``breakpoint()` | No | |
-| `destroyed-symlinks` | Symlinks that point to nothing | No | |
-| `fix-byte-order-marker` | Removes BOM from UTF-8 files | Yes | |
-| `fix-encoding-pragma` | Adds `# -*- coding: utf-8 -*-` to Python files if needed | Yes | |
-| `name-tests-test` | Python test files follow naming convention | No | `--pytest` to only match pytest-style names |
+| `trailing-whitespace`                  | Trailing whitespace on any line                               | Yes       |                                             |
+| `end-of-file-fixer`                    | File ends with exactly one newline                            | Yes       |                                             |
+| `check-yaml`                           | Valid YAML syntax (via `pyyaml`)                              | No        | `--unsafe` to allow custom tags             |
+| `check-json`                           | Valid JSON syntax                                             | No        |                                             |
+| `check-toml`                           | Valid TOML syntax                                             | No        |                                             |
+| `check-merge-conflict`                 | Unresolved conflict markers (`<<<<<<<``=======``>>>>>>`)      | No        | `--assume-in-merge` to check outside merges |
+| `check-added-large-files`              | Files exceeding size threshold                                | No        | `--maxkb=500` (default: 500KB)              |
+| `detect-private-key`                   | PEM-encoded private key material in files                     | No        |                                             |
+| `no-commit-to-branch`                  | Prevents commits to protected branches                        | No        | `--branch main --branch release/*`          |
+| `mixed-line-ending`                    | Inconsistent line endings (LF vs CRLF)                        | Yes       | `--fix=lf` or `--fix=crlf`                  |
+| `check-case-conflict`                  | Filename case collisions (problematic on case-insensitive FS) | No        |                                             |
+| `check-executables-have-shebangs`      | Executable files must have a shebang line                     | No        |                                             |
+| `check-shebang-scripts-are-executable` | Files with shebangs must be executable                        | No        |                                             |
+| `check-byte-order-marker`              | Detects BOM in UTF-8 files                                    | No        |                                             |
+| `check-docstring-first`                | Python files: docstring before code                           | No        |                                             |
+| `debug-statements`                     | Python `import pdb``import ipdb``breakpoint()`                | No        |                                             |
+| `destroyed-symlinks`                   | Symlinks that point to nothing                                | No        |                                             |
+| `fix-byte-order-marker`                | Removes BOM from UTF-8 files                                  | Yes       |                                             |
+| `fix-encoding-pragma`                  | Adds `# -*- coding: utf-8 -*-` to Python files if needed      | Yes       |                                             |
+| `name-tests-test`                      | Python test files follow naming convention                    | No        | `--pytest` to only match pytest-style names |
 
 ### Practical Configuration
 
@@ -932,8 +935,8 @@ Mirror repo's release page and compare with the upstream release before pinning 
 ### Multiple Hooks Modifying the Same File
 
 When two hooks both modify the same file (e.g., `black` reformats and `isort` reorders imports), the
-Order matters. If `isort` runs after `black`It may reformat in a way that `black` would change.
-The framework runs hooks in the order they appear in the configuration. Order your hooks so that the
+Order matters. If `isort` runs after `black`It may reformat in a way that `black` would change. The
+framework runs hooks in the order they appear in the configuration. Order your hooks so that the
 Last modifier is the one whose output is canonical:
 
 ```yaml

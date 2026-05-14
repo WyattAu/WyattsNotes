@@ -1,9 +1,12 @@
 ---
 id: structs-and-enums
 title: Structs and Enums
-description: "Structs and Enums — Structs; Unit Structs; Tuple Structs; Named-Field Structs with worked examples and exam-style questions."
+description:
+  'Structs and Enums — Structs; Unit Structs; Tuple Structs; Named-Field Structs with worked
+  examples and exam-style questions.'
 slug: structs-and-enums
 ---
+
 ## Structs
 
 Structs are the primary mechanism for defining custom types in Rust. Unlike classes in C++ or Java,
@@ -108,8 +111,8 @@ let bob = Person {
 // bob.name == "Bob", bob.age == 30, bob.email == Some("alice@example.com")
 ```
 
-Struct update syntax moves the remaining fields. After `..alice`The `alice` binding can no longer
-Be used in its entirety (it is partially moved), but individual `Copy` fields remain accessible.
+Struct update syntax moves the remaining fields. After `..alice`The `alice` binding can no longer Be
+used in its entirety (it is partially moved), but individual `Copy` fields remain accessible.
 
 ### Struct Layout and `#[repr]`
 
@@ -651,17 +654,17 @@ struct User {
 }
 ```
 
-| Trait | What it generates |
+| Trait        | What it generates                                              |
 | ------------ | -------------------------------------------------------------- |
-| `Debug` | `fmt::Debug` for `{:?}` formatting |
-| `Clone` | `clone()` — deep copy (requires all fields to be `Clone`) |
-| `Copy` | Implicit bitwise copy (requires `Clone`No `Drop`) |
-| `PartialEq` | `==` and `!=` — structural equality |
-| `Eq` | Marks type as having reflexive equality (requires `PartialEq`) |
-| `PartialOrd` | `&lt;``&gt;``&lt;=``&gt;=` — derived from field order |
-| `Ord` | Total ordering (requires `PartialOrd``Eq`) |
-| `Hash` | Hash function for `HashMap`/`HashSet` keys |
-| `Default` | Default value (all fields must implement `Default`) |
+| `Debug`      | `fmt::Debug` for `{:?}` formatting                             |
+| `Clone`      | `clone()` — deep copy (requires all fields to be `Clone`)      |
+| `Copy`       | Implicit bitwise copy (requires `Clone`No `Drop`)              |
+| `PartialEq`  | `==` and `!=` — structural equality                            |
+| `Eq`         | Marks type as having reflexive equality (requires `PartialEq`) |
+| `PartialOrd` | `&lt;``&gt;``&lt;=``&gt;=` — derived from field order          |
+| `Ord`        | Total ordering (requires `PartialOrd``Eq`)                     |
+| `Hash`       | Hash function for `HashMap`/`HashSet` keys                     |
+| `Default`    | Default value (all fields must implement `Default`)            |
 
 :::warning
 
@@ -870,41 +873,41 @@ let opt: Option<i32> = res.ok(); // Some(42)
 ## Common Pitfalls
 
 1. **Forgetting to handle all enum variants.** The compiler will error if a `match` is not
- exhaustive. Add a `_ =>` catch-all only when it makes semantic sense — it hides future variant
- additions. Prefer explicit handling of every variant for types you control.
+   exhaustive. Add a `_ =>` catch-all only when it makes semantic sense — it hides future variant
+   additions. Prefer explicit handling of every variant for types you control.
 
 2. **Struct update syntax and partial moves.** `Struct { ..other }` moves the remaining fields. If
- `other` has any `Drop` types, the entire struct is considered partially moved and cannot be used
- as a whole afterward. This is correct behavior — you have transferred ownership of some fields.
+   `other` has any `Drop` types, the entire struct is considered partially moved and cannot be used
+   as a whole afterward. This is correct behavior — you have transferred ownership of some fields.
 
 3. **Matching on references without understanding match ergonomics.** Pre-2021 Rust required
- explicit `&` in patterns when matching through references. Match ergonomics simplify this, but
- can be confusing when you need to capture a reference vs. A value. If the compiler suggests
- adding `ref`Pay attention — it is telling you that a move would occur otherwise.
+   explicit `&` in patterns when matching through references. Match ergonomics simplify this, but
+   can be confusing when you need to capture a reference vs. A value. If the compiler suggests
+   adding `ref`Pay attention — it is telling you that a move would occur otherwise.
 
 4. **Using `unwrap()` in production code.** `unwrap()` panics on `None`/`Err`. Panics are for
- unrecoverable programming errors (bugs), not for expected failure modes. Use `?``unwrap_or`
- `unwrap_or_else`Or pattern matching for expected failures.
+   unrecoverable programming errors (bugs), not for expected failure modes. Use `?``unwrap_or`
+   `unwrap_or_else`Or pattern matching for expected failures.
 
 5. **Enum size explosion.** An enum's size is the size of its largest variant plus the discriminant,
- aligned to the largest variant's alignment. If one variant is much larger than the others (e.g.,
- a `String` variant alongside `u8` variants), consider boxing the large variant: `Large(String)`
- vs `Large(Box&lt;String&gt;)`.
+   aligned to the largest variant's alignment. If one variant is much larger than the others (e.g.,
+   a `String` variant alongside `u8` variants), consider boxing the large variant: `Large(String)`
+   vs `Large(Box&lt;String&gt;)`.
 
 6. **Deriving traits on enums with non-unit variants.** `#[derive(PartialEq)]` compares variant
- discriminants first, then compares the inner data. For structs, it compares field-by-field. If
- your type contains `f64`You cannot derive `Eq` or `Ord` because `f64` does not implement them.
+   discriminants first, then compares the inner data. For structs, it compares field-by-field. If
+   your type contains `f64`You cannot derive `Eq` or `Ord` because `f64` does not implement them.
 
 7. **Not using `if let`/`let-else` when appropriate.** A `match` with a single non-trivial arm and a
- `_ =>` catch-all is less readable than an `if let` or `let-else`. Use `match` when you need
- exhaustive handling; use `if let`/`let-else` for focused pattern extraction.
+   `_ =>` catch-all is less readable than an `if let` or `let-else`. Use `match` when you need
+   exhaustive handling; use `if let`/`let-else` for focused pattern extraction.
 
 8. **Overusing `Option` for boolean semantics.** `Option<bool>` has three states: `None`
- `Some(true)``Some(false)`. If you need three states, use an enum instead — it is clearer and
- self-documenting.
+   `Some(true)``Some(false)`. If you need three states, use an enum instead — it is clearer and
+   self-documenting.
 
 9. **Pattern binding shadowing.** In match arms, the binding name shadows any outer binding with the
- same name. This can lead to confusion when the same variable name appears in multiple arms:
+   same name. This can lead to confusion when the same variable name appears in multiple arms:
 
    ```rust
    let x = 5;
@@ -918,8 +921,8 @@ let opt: Option<i32> = res.ok(); // Some(42)
    ```
 
 10. **Enum variants are not types.** You cannot write `fn takes_v4(addr: IpAddr::V4)`. Enum variants
- are not types — they are constructors. Use the full enum type and pattern match inside the
- function body, or use a newtype wrapper around the variant.
+    are not types — they are constructors. Use the full enum type and pattern match inside the
+    function body, or use a newtype wrapper around the variant.
 
 ## Summary
 

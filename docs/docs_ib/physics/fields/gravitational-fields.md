@@ -1,7 +1,9 @@
 ---
 title: Gravitational Fields
 slug: gravitational-fields
-description: "Rigorous IB physics notes covering Gravitational Fields. Includes definitions, derivations, worked examples, and exam-style problems."
+description:
+  'Rigorous IB physics notes covering Gravitational Fields. Includes definitions, derivations,
+  worked examples, and exam-style problems.'
 ---
 
 ## Point Mass
@@ -52,8 +54,8 @@ $$
 $$
 
 As orbital bodies can be approximated by point masses, the
-[moment of inertia ($I$)](../space-time-and-motions/forces-and-momentums#moment-of-inertia) of
-The orbital body can be approximated by:
+[moment of inertia ($I$)](../space-time-and-motions/forces-and-momentums#moment-of-inertia) of The
+orbital body can be approximated by:
 
 $$
 \begin`\{aligned}`
@@ -61,9 +63,8 @@ $$
 \end`\{aligned}`
 $$
 
-Hence the
-[angular momentum ($L$)](../space-time-and-motions/forces-and-momentums#angular-momentum) of the
-Orbital body would be:
+Hence the [angular momentum ($L$)](../space-time-and-motions/forces-and-momentums#angular-momentum)
+of the Orbital body would be:
 
 $$
 \begin`\{aligned}`
@@ -115,8 +116,7 @@ $m_1, m_2$: The mass of the two point masses
 $r$: The separation distance between the point mass, where bodies approximated to point masses are
 Measured from the center
 
-:::info
-The IB uses the Newton's Universal Law of Gravitation published in 1687, where the equation
+:::info The IB uses the Newton's Universal Law of Gravitation published in 1687, where the equation
 Only describes the magnitude of the force, the vector form is required to describe the force
 $\bm{F}$ on $m_2$ with the direction, with $\bm{r}$ being the separation displacement
 ($r= r_2 - r_1$) from $m_1$ to $m_2$:
@@ -127,13 +127,10 @@ $$
 \end`\{aligned}`
 $$
 
-This describes the force in the inverse direction as the displacement vector from $m_1$
-:::
+This describes the force in the inverse direction as the displacement vector from $m_1$ :::
 
-:::warning
-IB extends Newton's Law of Universal Gravitation to include spherical masses with uniform
-Density by assuming to be point mass.
-:::
+:::warning IB extends Newton's Law of Universal Gravitation to include spherical masses with uniform
+Density by assuming to be point mass. :::
 
 ## Gravitational Field
 
@@ -143,8 +140,8 @@ Simulate gravitational interactions between a star, planet, and moon. Adjust the
 How orbital speed, period, and gravitational force change.
 
 A gravitational field ($g$) is a vector field with dimension of
-[acceleration](../space-time-and-motions/forces-and-momentums#acceleration), where the
-Acceleration of each point determine the motion of bodies in the field.
+[acceleration](../space-time-and-motions/forces-and-momentums#acceleration), where the Acceleration
+of each point determine the motion of bodies in the field.
 
 ### Gravitational Potential Energy
 
@@ -160,8 +157,8 @@ $$
 \end`\{aligned}`
 $$
 
-Since $d\bm{r}$ act inwards, and $F(\bm{r})$ acts opposite to $\bm{\hat{r}}$The dot product
-Between two vectors simplify to a scalar calculation:
+Since $d\bm{r}$ act inwards, and $F(\bm{r})$ acts opposite to $\bm{\hat{r}}$The dot product Between
+two vectors simplify to a scalar calculation:
 
 $$
 \begin`\{aligned}`
@@ -183,9 +180,9 @@ $$
 
 The gravitational potential ($V_g$) is the
 [gravitational potential energy](#gravitational-potential-energy) per unit mass of a body with a
-[displacement](../space-time-and-motions/forces-and-momentums#displacement) magnitude of $r$. For
-A body with mass $m_2$ interacting with the magnetic field of a body with mass $m_1$The
-Gravitational potential is:
+[displacement](../space-time-and-motions/forces-and-momentums#displacement) magnitude of $r$. For A
+body with mass $m_2$ interacting with the magnetic field of a body with mass $m_1$The Gravitational
+potential is:
 
 $$
 \begin`\{aligned}`
@@ -316,11 +313,9 @@ $$
 Orbital speed is the required speed for an object to remain in stable orbit around a barycenter or a
 Center of a body with significantly more mass.
 
-:::warning
-In IB, only the cases of orbiting a body with significantly more mass is present. The IB
+:::warning In IB, only the cases of orbiting a body with significantly more mass is present. The IB
 Also assume all orbits to be circular instead of elliptic as stated by
-[Keplar's First Law](#first-law).
-:::
+[Keplar's First Law](#first-law). :::
 
 In a stable circular orbit, equivalent force in the opposite direction is required to balance the
 [centripetal force](../space-time-and-motions/forces-and-momentums#centripetal-force) $F_c$ of
@@ -336,8 +331,7 @@ $$
 \end`\{aligned}`
 $$
 
-:::info
-IB does only consider the magnitude of orbital velocity, therefore, the equation above is
+:::info IB does only consider the magnitude of orbital velocity, therefore, the equation above is
 The one written in the formula booklet. The angle of orbital velocity is dependent on the angular
 Position $\theta$ of the orbital body:
 
@@ -398,10 +392,8 @@ $$
 \end`\{aligned}`
 $$
 
-:::info
-Since $\frac{4\pi^2}{GM}$ is constant for a given central body, this reduces to
-$T^2 \propto r^3$. For elliptical orbits, replace $r$ with semi-major axis $a$.
-:::
+:::info Since $\frac{4\pi^2}{GM}$ is constant for a given central body, this reduces to
+$T^2 \propto r^3$. For elliptical orbits, replace $r$ with semi-major axis $a$. :::
 
 ## Gravitational Field Inside a Spherical Shell
 
@@ -410,17 +402,15 @@ $T^2 \propto r^3$. For elliptical orbits, replace $r$ with semi-major axis $a$.
 The shell theorem states two key results:
 
 1. **Outside a uniform spherical shell**: The field is identical to that of a point mass at the
- center.
+   center.
 2. **Inside a uniform spherical shell**: The net gravitational field at any interior point is zero.
 
 Qualitatively: for any point $P$ inside, the shell can be divided into pairs of opposing mass
 Elements. A near-side element pulls more strongly (inverse-square law), but the corresponding
 Far-side element has more mass (larger solid angle). These effects cancel exactly.
 
-:::warning
-The IB requires only qualitative understanding of the shell theorem. A full proof
-Requires integration over the spherical shell.
-:::
+:::warning The IB requires only qualitative understanding of the shell theorem. A full proof
+Requires integration over the spherical shell. :::
 
 ### Field Inside a Solid Sphere
 
@@ -462,8 +452,8 @@ Decreases as $1/r^2$.
 
 ### $g$ vs $r$: Field Strength vs Distance
 
-Outside a sphere, $g = GM/r^2$: large near $r = 0$Decreasing as $r^{-2}$Asymptotically
-Approaching zero. For a solid sphere of radius $R$:
+Outside a sphere, $g = GM/r^2$: large near $r = 0$Decreasing as $r^{-2}$Asymptotically Approaching
+zero. For a solid sphere of radius $R$:
 
 - **Interior** ($r \lt{} R$): $g$ increases linearly from $0$ to $g_{\max} = GM/R^2$.
 - **Exterior** ($r \gt{} R$): $g$ follows the inverse-square law.
@@ -497,8 +487,7 @@ A geostationary orbit must satisfy three conditions:
 
 1. Orbital period equals Earth's rotational period ($T = 86400$ s)
 2. Orbit lies in the equatorial plane
-3. Orbit is circular
-:::
+3. Orbit is circular :::
 
 The required orbital radius is found from Kepler's third law:
 
@@ -519,13 +508,13 @@ $$
 
 ### Low Earth Orbit vs Geostationary Orbit
 
-| Property | Low Earth Orbit (LEO) | Geostationary Orbit (GEO) |
+| Property       | Low Earth Orbit (LEO)      | Geostationary Orbit (GEO) |
 | -------------- | -------------------------- | ------------------------- |
-| Altitude | 160 -- 2,000 km | ~35,800 km |
-| Orbital radius | ~6,531 -- 8,371 km | ~42,200 km |
-| Orbital period | 88 -- 127 min | 24 hours |
-| Orbital speed | 7.5 -- 7.8 km/s | ~3.07 km/s |
-| Applications | ISS, Earth imaging, Hubble | Communications, weather |
+| Altitude       | 160 -- 2,000 km            | ~35,800 km                |
+| Orbital radius | ~6,531 -- 8,371 km         | ~42,200 km                |
+| Orbital period | 88 -- 127 min              | 24 hours                  |
+| Orbital speed  | 7.5 -- 7.8 km/s            | ~3.07 km/s                |
+| Applications   | ISS, Earth imaging, Hubble | Communications, weather   |
 
 ### Total Orbital Energy
 
@@ -549,9 +538,9 @@ Orbits. It uses an elliptical orbit tangent to both the initial and final circul
 Two engine burns:
 
 1. **First burn (perigee)**: Increase speed from $v_1 = \sqrt{GM/r_1}$ to the transfer orbit perigee
- speed, entering an ellipse with apogee at $r_2$.
+   speed, entering an ellipse with apogee at $r_2$.
 2. **Second burn (apogee)**: At $r_2$Increase speed from the transfer orbit apogee speed to
- $v_2 = \sqrt{GM/r_2}$Circularizing at the target radius.
+   $v_2 = \sqrt{GM/r_2}$Circularizing at the target radius.
 
 The transfer minimizes total $\Delta v$. To go to a higher orbit, both burns increase speed; to go
 Lower, both decrease speed. The transfer time equals half the period of the elliptical transfer
@@ -869,14 +858,15 @@ $$
 
 ---
 
-:::tip
-Diagnostic Test
-Ready to test your understanding of **Gravitational Fields**? The [diagnostic test](/docs/ib/physics/diagnostics/diag-gravitational-fields) contains the hardest questions within the IB specification for this topic, each with a full worked solution.
+:::tip Diagnostic Test Ready to test your understanding of **Gravitational Fields**? The
+[diagnostic test](/docs/ib/physics/diagnostics/diag-gravitational-fields) contains the hardest
+questions within the IB specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Gravitational Fields with other physics topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine
+Gravitational Fields with other physics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/ib/physics/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/ib/physics/diagnostics/diagnostic-guide) for instructions on
+self-marking and building a personal test matrix. :::
 
 ## Summary
 

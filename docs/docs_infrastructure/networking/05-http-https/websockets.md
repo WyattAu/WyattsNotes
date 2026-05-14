@@ -1,13 +1,16 @@
 ---
 id: websockets
 title: WebSockets
-description: "WebSockets — HTTP Upgrade Handshake; Client Request; Server Response; Handshake Validation with worked examples and exam-style questions."
+description:
+  'WebSockets — HTTP Upgrade Handshake; Client Request; Server Response; Handshake Validation with
+  worked examples and exam-style questions.'
 slug: websockets
 tags:
   - Networking
 categories:
   - Networking
 ---
+
 ## Overview
 
 WebSockets (RFC 6455) provide full-duplex, bidirectional communication over a single TCP connection.
@@ -17,8 +20,8 @@ Real-time applications: chat, collaboration, financial tickers, live dashboards,
 Device control.
 
 WebSockets start as an HTTP upgrade. The client sends a regular HTTP request with an
-`Upgrade: websocket` header. If the server agrees, it responds with `101 Switching Protocols`And
-The connection becomes a WebSocket from that point forward.
+`Upgrade: websocket` header. If the server agrees, it responds with `101 Switching Protocols`And The
+connection becomes a WebSocket from that point forward.
 
 ## HTTP Upgrade Handshake
 
@@ -119,16 +122,16 @@ After the handshake, communication uses a binary frame format:
 
 ### Frame Fields
 
-| Field | Bits | Description |
+| Field                   | Bits  | Description                                                                      |
 | ----------------------- | ----- | -------------------------------------------------------------------------------- |
-| FIN | 1 | 1 = final frame of message, 0 = more frames follow |
-| RSV1, RSV2, RSV3 | 3 | Reserved for extensions. Must be 0 unless an extension is negotiated. |
-| Opcode | 4 | Frame type (see opcodes table) |
-| MASK | 1 | 1 = payload is masked (must be 1 for client-to-server frames) |
-| Payload length | 7 | Length of payload: 0-125 = actual length, 126 = next 2 bytes, 127 = next 8 bytes |
-| Extended payload length | 16/64 | Actual payload length when payload length is 126 or 127 |
-| Masking key | 32 | 4-byte key used to unmask the payload (if MASK=1) |
-| Payload data | var | The actual data |
+| FIN                     | 1     | 1 = final frame of message, 0 = more frames follow                               |
+| RSV1, RSV2, RSV3        | 3     | Reserved for extensions. Must be 0 unless an extension is negotiated.            |
+| Opcode                  | 4     | Frame type (see opcodes table)                                                   |
+| MASK                    | 1     | 1 = payload is masked (must be 1 for client-to-server frames)                    |
+| Payload length          | 7     | Length of payload: 0-125 = actual length, 126 = next 2 bytes, 127 = next 8 bytes |
+| Extended payload length | 16/64 | Actual payload length when payload length is 126 or 127                          |
+| Masking key             | 32    | 4-byte key used to unmask the payload (if MASK=1)                                |
+| Payload data            | var   | The actual data                                                                  |
 
 ### Fragmentation
 
@@ -191,16 +194,16 @@ On modern hardware, this is negligible even at high throughput.
 
 ## Opcodes
 
-| Opcode | Meaning | Description |
+| Opcode | Meaning          | Description                          |
 | ------ | ---------------- | ------------------------------------ |
-| 0x0 | Continuation | Continuation of a fragmented message |
-| 0x1 | Text | Text frame (UTF-8 encoded) |
-| 0x2 | Binary | Binary frame (arbitrary binary data) |
-| 0x3-7 | Reserved | For future use |
-| 0x8 | Connection Close | Close the connection |
-| 0x9 | Ping | Keepalive ping |
-| 0xA | Pong | Response to a ping |
-| 0xB-F | Reserved | For future use |
+| 0x0    | Continuation     | Continuation of a fragmented message |
+| 0x1    | Text             | Text frame (UTF-8 encoded)           |
+| 0x2    | Binary           | Binary frame (arbitrary binary data) |
+| 0x3-7  | Reserved         | For future use                       |
+| 0x8    | Connection Close | Close the connection                 |
+| 0x9    | Ping             | Keepalive ping                       |
+| 0xA    | Pong             | Response to a ping                   |
+| 0xB-F  | Reserved         | For future use                       |
 
 ### Text vs Binary
 
@@ -209,7 +212,7 @@ Application:
 
 - **Text:** Human-readable messages (JSON, XML, plain text). Easier to debug.
 - **Binary:** Efficient for binary protocols (Protocol Buffers, MessagePack, custom binary formats).
- No base64 encoding overhead.
+  No base64 encoding overhead.
 
 :::warning
 
@@ -229,23 +232,23 @@ The close frame begins the WebSocket closing handshake. The payload contains:
 
 Standard close codes:
 
-| Code | Meaning | Description |
+| Code | Meaning                    | Description                                        |
 | ---- | -------------------------- | -------------------------------------------------- |
-| 1000 | Normal Closure | Purpose fulfilled, connection closing |
-| 1001 | Going Away | Server shutting down, navigation away |
-| 1002 | Protocol Error | Protocol violation detected |
-| 1003 | Unsupported Data | Received data type it cannot handle |
-| 1005 | No Status Received | Reserved (must not be sent) |
-| 1006 | Abnormal Closure | Connection lost (no close frame received) |
-| 1007 | Invalid frame payload data | Data in frame inconsistent with message type |
-| 1008 | Policy Violation | Policy violation (e.g., message too large) |
-| 1009 | Message Too Big | Message too large to process |
-| 1010 | Mandatory Extension | Server requires extension client did not offer |
-| 1011 | Internal Error | Unexpected condition |
-| 1012 | Service Restart | Server restarting |
-| 1013 | Try Again Later | Server temporarily overloaded |
-| 1014 | Bad Gateway | Server acting as gateway received invalid response |
-| 1015 | TLS Handshake Failure | Reserved (must not be sent by endpoints) |
+| 1000 | Normal Closure             | Purpose fulfilled, connection closing              |
+| 1001 | Going Away                 | Server shutting down, navigation away              |
+| 1002 | Protocol Error             | Protocol violation detected                        |
+| 1003 | Unsupported Data           | Received data type it cannot handle                |
+| 1005 | No Status Received         | Reserved (must not be sent)                        |
+| 1006 | Abnormal Closure           | Connection lost (no close frame received)          |
+| 1007 | Invalid frame payload data | Data in frame inconsistent with message type       |
+| 1008 | Policy Violation           | Policy violation (e.g., message too large)         |
+| 1009 | Message Too Big            | Message too large to process                       |
+| 1010 | Mandatory Extension        | Server requires extension client did not offer     |
+| 1011 | Internal Error             | Unexpected condition                               |
+| 1012 | Service Restart            | Server restarting                                  |
+| 1013 | Try Again Later            | Server temporarily overloaded                      |
+| 1014 | Bad Gateway                | Server acting as gateway received invalid response |
+| 1015 | TLS Handshake Failure      | Reserved (must not be sent by endpoints)           |
 
 ### Ping/Pong (0x9/0xA)
 
@@ -300,7 +303,7 @@ Common subprotocol patterns:
 - **STOMP over WebSocket:** Simple Text Oriented Messaging Protocol, used by Spring Framework
 - **MQTT over WebSocket:** IoT messaging protocol tunneled through WebSocket
 - **Socket.IO:** Uses its own framing protocol on top of WebSocket (and falls back to long-polling
- when WebSocket is unavailable)
+  when WebSocket is unavailable)
 
 ## WebSocket Extensions
 
@@ -320,7 +323,7 @@ Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
 Parameters:
 
 - **client_max_window_bits:** Client limits its LZ77 sliding window size (reduces memory usage at
- the cost of compression ratio)
+  the cost of compression ratio)
 - **server_max_window_bits:** Server limits its LZ77 sliding window size
 - **client_no_context_takeover:** Client does not reuse LZ77 context between messages
 - **server_no_context_takeover:** Server does not reuse LZ77 context between messages
@@ -405,18 +408,18 @@ function createWebSocket(url, protocols) {
 
 ## WebSocket vs HTTP vs SSE
 
-| Feature | WebSocket | HTTP (polling) | SSE |
+| Feature        | WebSocket     | HTTP (polling)   | SSE              |
 | -------------- | ------------- | ---------------- | ---------------- |
-| Direction | Bidirectional | Request-response | Server-to-client |
-| Transport | TCP | TCP | TCP |
-| Framing | Binary | HTTP | Text (UTF-8) |
-| Binary data | Yes | Yes | No (base64 only) |
-| Connection | Persistent | Per-request | Persistent |
-| Overhead | Low (2 bytes) | High (headers) | Low |
-| Browser API | WebSocket | fetch/XHR | EventSource |
-| Auto-reconnect | Manual | N/A | Built-in |
-| Proxy/firewall | May block | Works | Works |
-| Scalability | Challenging | Easy | Moderate |
+| Direction      | Bidirectional | Request-response | Server-to-client |
+| Transport      | TCP           | TCP              | TCP              |
+| Framing        | Binary        | HTTP             | Text (UTF-8)     |
+| Binary data    | Yes           | Yes              | No (base64 only) |
+| Connection     | Persistent    | Per-request      | Persistent       |
+| Overhead       | Low (2 bytes) | High (headers)   | Low              |
+| Browser API    | WebSocket     | fetch/XHR        | EventSource      |
+| Auto-reconnect | Manual        | N/A              | Built-in         |
+| Proxy/firewall | May block     | Works            | Works            |
+| Scalability    | Challenging   | Easy             | Moderate         |
 
 ### When to Choose WebSocket
 
@@ -449,11 +452,11 @@ Client  ──>  Load Balancer  ──>  Backend Server B (for connection 2)
 Affinity methods:
 
 - **IP hash:** Hash the client IP to select a backend. Simple but breaks when clients are behind NAT
- (multiple clients share an IP).
+  (multiple clients share an IP).
 - **Cookie-based:** The load balancer injects a cookie on the first request. Subsequent requests
- include the cookie, directing to the same backend. More reliable than IP hash.
+  include the cookie, directing to the same backend. More reliable than IP hash.
 - **Consistent hashing with connection ID:** For WebSocket-specific load balancers, use the
- WebSocket connection parameters.
+  WebSocket connection parameters.
 
 ### Connection Draining
 
@@ -548,11 +551,11 @@ Connections, depending on:
 
 - **Memory per connection:** ~10-50KB per connection (buffers, state)
 - **File descriptor limits:** Linux default is 1024 (`ulimit -n`). Increase to 100,000+ for
- WebSocket servers.
+  WebSocket servers.
 - **CPU:** Message parsing and framing add CPU overhead. Binary protocols are more efficient than
- JSON.
+  JSON.
 - **Network bandwidth:** Each connection consumes bandwidth for control frames and keepalives, even
- when idle.
+  when idle.
 
 ```bash
 # Increase file descriptor limits for WebSocket server
@@ -572,20 +575,20 @@ sysctl -w net.ipv4.tcp_tw_reuse=1
 ### Horizontal Scaling Patterns
 
 1. **Sticky sessions + Redis pub/sub:** Each connection is pinned to a backend. Redis distributes
- messages between backends. Simple but does not survive backend failure (connections are lost).
+   messages between backends. Simple but does not survive backend failure (connections are lost).
 2. **Connection migration:** Clients detect backend failure and reconnect. The application must
- handle reconnection gracefully (resubscribe to channels, replay missed messages).
+   handle reconnection gracefully (resubscribe to channels, replay missed messages).
 3. **Message queue (Kafka, NATS):** Instead of Redis pub/sub (which does not persist messages), use
- a durable message queue. Messages published while a client is disconnected are queued and
- delivered on reconnect.
+   a durable message queue. Messages published while a client is disconnected are queued and
+   delivered on reconnect.
 
 ## Common Pitfalls
 
 ### 1. Not Implementing Heartbeats
 
 Without ping/pong or application-level heartbeats, dead connections accumulate on the server. The
-TCP stack detects dead connections eventually (via keepalive, 2 hours), but this is far
-Too slow. Implement heartbeats with a 30-60 second interval and a 10-second pong timeout.
+TCP stack detects dead connections eventually (via keepalive, 2 hours), but this is far Too slow.
+Implement heartbeats with a 30-60 second interval and a 10-second pong timeout.
 
 ### 2. Assuming Messages Arrive in Order
 
@@ -636,12 +639,12 @@ State from previous messages.
 
 Compression negotiation parameters:
 
-| Parameter | Description |
+| Parameter                  | Description                                             |
 | -------------------------- | ------------------------------------------------------- |
-| server_no_context_takeover | Server creates a new zlib context for each message |
-| client_no_context_takeover | Client creates a new zlib context for each message |
-| server_max_window_bits | Server's LZ77 sliding window size (8-15, 15 is default) |
-| client_max_window_bits | Client's LZ77 window size limit (8-15, 15 is default) |
+| server_no_context_takeover | Server creates a new zlib context for each message      |
+| client_no_context_takeover | Client creates a new zlib context for each message      |
+| server_max_window_bits     | Server's LZ77 sliding window size (8-15, 15 is default) |
+| client_max_window_bits     | Client's LZ77 window size limit (8-15, 15 is default)   |
 
 Smaller window sizes reduce memory usage but also reduce compression ratio. For most server
 Applications, the default window size (15) is appropriate.
@@ -672,7 +675,7 @@ Defense layers:
 1. **Verify Origin header:** Reject connections with unexpected origins
 2. **Use token-based auth:** Include a CSRF token in the WebSocket URL or handshake headers
 3. **Cookie SameSite attribute:** Set `SameSite=Strict` or `SameSite=Lax` on cookies to prevent them
- from being sent in cross-site requests
+   from being sent in cross-site requests
 
 ### WebSocket and CORS
 
@@ -736,10 +739,10 @@ In microservice architectures, WebSocket connections may need to traverse multip
 Boundaries. Common patterns:
 
 1. **Direct WebSocket passthrough:** The API gateway passes the WebSocket connection through to the
- backend service. The gateway does not terminate the WebSocket.
+   backend service. The gateway does not terminate the WebSocket.
 2. **WebSocket termination at gateway:** The API gateway terminates the WebSocket and communicates
- with backend services via HTTP/gRPC. This gives the gateway control over the connection but adds
- latency.
+   with backend services via HTTP/gRPC. This gives the gateway control over the connection but adds
+   latency.
 
 ### WebSocket and Service Mesh
 

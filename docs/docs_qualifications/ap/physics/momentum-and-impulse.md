@@ -1,6 +1,8 @@
 ---
 title: Momentum and Impulse
-description: "Momentum and Impulse — Linear Momentum (CED Unit 5); Newton's Second Law in Terms of Momentum; Why Momentum Is More Fundamental Than Force."
+description:
+  "Momentum and Impulse — Linear Momentum (CED Unit 5); Newton's Second Law in Terms of Momentum;
+  Why Momentum Is More Fundamental Than Force."
 date: 2026-04-14
 tags:
   - Physics
@@ -9,6 +11,7 @@ categories:
   - Physics
 slug: momentum-and-impulse
 ---
+
 ## Linear Momentum (CED Unit 5)
 
 The linear momentum of an object is:
@@ -99,10 +102,10 @@ The magnitude is $6750 \mathrm{ N{}$Directed opposite to the initial pitch.
 
 ### Why Increasing Contact Time Reduces Force
 
-For a given change in momentum $\Delta p$The average force is inversely proportional to the
-Contact time: $F = \Delta p / \Delta t$. This is the principle behind all safety devices: seat
-Belts, air bags, crumple zones, and crash mats all increase the time over which the momentum
-Changes, thereby reducing the peak force on the body.
+For a given change in momentum $\Delta p$The average force is inversely proportional to the Contact
+time: $F = \Delta p / \Delta t$. This is the principle behind all safety devices: seat Belts, air
+bags, crumple zones, and crash mats all increase the time over which the momentum Changes, thereby
+reducing the peak force on the body.
 
 ## Conservation of Momentum (CED Unit 5)
 
@@ -138,20 +141,19 @@ $\blacksquare$
 ### When External Forces Are Negligible
 
 During a collision, the internal forces (contact forces between the colliding objects) are very
-Large but act for a very short time. The external forces (gravity, friction) are much
-Smaller. The impulse from external forces is negligible compared to the impulse from internal
-Forces, so momentum is approximately conserved during the collision even though the system is not
-Truly isolated.
+Large but act for a very short time. The external forces (gravity, friction) are much Smaller. The
+impulse from external forces is negligible compared to the impulse from internal Forces, so momentum
+is approximately conserved during the collision even though the system is not Truly isolated.
 
 ## Collisions (CED Unit 5)
 
 ### Types of Collisions
 
-| Type | Momentum Conserved? | Kinetic Energy Conserved? |
+| Type                | Momentum Conserved? | Kinetic Energy Conserved? |
 | ------------------- | ------------------- | ------------------------- |
-| Elastic | Yes | Yes |
-| Inelastic | Yes | No |
-| Perfectly Inelastic | Yes | No (maximum KE loss) |
+| Elastic             | Yes                 | Yes                       |
+| Inelastic           | Yes                 | No                        |
+| Perfectly Inelastic | Yes                 | No (maximum KE loss)      |
 
 ### Coefficient of Restitution
 
@@ -175,9 +177,9 @@ $$
 
 :::info[Example]
 
-A $1500 \mathrm{ kg{}$ car traveling east at $20 \mathrm{ m/s{}$ collides with a $2500 \mathrm{ kg{}$
-Truck traveling west at $15 \mathrm{ m/s{}$. They stick together. Find their velocity after the
-Collision.
+A $1500 \mathrm{ kg{}$ car traveling east at $20 \mathrm{ m/s{}$ collides with a
+$2500 \mathrm{ kg{}$ Truck traveling west at $15 \mathrm{ m/s{}$. They stick together. Find their
+velocity after the Collision.
 
 Take east as positive.
 
@@ -225,8 +227,7 @@ $$
 
 Starting from conservation of momentum and kinetic energy with $v_{2i} = 0$:
 
-From momentum: $m_1 v_{1i} = m_1 v_{1f} + m_2 v_{2f}$So
-$v_{2f} = \frac{m_1}{m_2}(v_{1i} - v_{1f})$.
+From momentum: $m_1 v_{1i} = m_1 v_{1f} + m_2 v_{2f}$So $v_{2f} = \frac{m_1}{m_2}(v_{1i} - v_{1f})$.
 
 Substitute into the KE equation and simplify:
 
@@ -238,7 +239,7 @@ $$
 
 1. **Equal masses** ($m_1 = m_2$): The objects exchange velocities. $v_{1f} = 0$$v_{2f} = v_{1i}$.
 2. **Stationary target with $m_1 \gg m_2$:** $m_1$ continues essentially unchanged; $m_2$ moves off
- at roughly $2v_{1i}$.
+   at roughly $2v_{1i}$.
 3. **Stationary target with $m_1 \ll m_2$:** $m_1$ bounces back with $-v_{1i}$; $m_2$ barely moves.
 
 :::info[Example]
@@ -359,53 +360,54 @@ Direction, and the rocket acquires equal and opposite momentum. This works equal
 ## Common Pitfalls
 
 1. **Confusing momentum and kinetic energy.** Both depend on mass and velocity, but momentum is a
- vector ($m\vec{v}$) while KE is a scalar ($\frac{1}{2}mv^2$).
+   vector ($m\vec{v}$) while KE is a scalar ($\frac{1}{2}mv^2$).
 2. **Forgetting that momentum is a vector.** In 2D collisions, you must conserve momentum in both
- the $x$ and $y$ directions separately.
+   the $x$ and $y$ directions separately.
 3. **Assuming all collisions are elastic.** Most real collisions are inelastic. Only use the elastic
- collision formulas when KE is explicitly conserved.
+   collision formulas when KE is explicitly conserved.
 4. **Sign errors with velocity directions.** Always define a positive direction and be consistent.
 5. **Using impulse incorrectly with variable forces.** For non-constant forces, integrate or find
- the area under the $F$-vs-$t$ graph.
+   the area under the $F$-vs-$t$ graph.
 6. **Forgetting that momentum is conserved only when the net external force is zero.** During a
- collision, external forces (like gravity) are negligible compared to the large internal
- forces, so momentum is approximately conserved.
+   collision, external forces (like gravity) are negligible compared to the large internal forces,
+   so momentum is approximately conserved.
 7. **Computing the center of mass incorrectly for non-uniform objects.** Use the integral form.
 
 ## Practice Questions
 
-1. A $0.50 \mathrm{ kg{}$ ball hits a wall at $10 \mathrm{ m/s{}$ and rebounds at $8.0 \mathrm{ m/s{}$.
- If the contact time is $0.020 \mathrm{ s{}$Find the average force on the ball.
+1. A $0.50 \mathrm{ kg{}$ ball hits a wall at $10 \mathrm{ m/s{}$ and rebounds at
+   $8.0 \mathrm{ m/s{}$. If the contact time is $0.020 \mathrm{ s{}$Find the average force on the
+   ball.
 
-2. A $10 \mathrm{ g{}$ bullet embeds in a $2.0 \mathrm{ kg{}$ wooden block on a frictionless surface.
- The block then slides into a spring ($k = 200 \mathrm{ N/m{}$) and compresses it
- $5.0 \mathrm{ cm{}$. Find the initial speed of the bullet.
+2. A $10 \mathrm{ g{}$ bullet embeds in a $2.0 \mathrm{ kg{}$ wooden block on a frictionless
+   surface. The block then slides into a spring ($k = 200 \mathrm{ N/m{}$) and compresses it
+   $5.0 \mathrm{ cm{}$. Find the initial speed of the bullet.
 
 3. Two ice skaters push off each other. Skater A ($60 \mathrm{ kg{}$) moves at $2.0 \mathrm{ m/s{}$
- and skater B ($40 \mathrm{ kg{}$) moves at $3.0 \mathrm{ m/s{}$. What was the initial momentum of
- the system?
+   and skater B ($40 \mathrm{ kg{}$) moves at $3.0 \mathrm{ m/s{}$. What was the initial momentum of
+   the system?
 
 4. A $3.0 \mathrm{ kg{}$ object moving at $4.0 \mathrm{ m/s{}$ collides elastically with a
- $1.0 \mathrm{ kg{}$ object moving at $-6.0 \mathrm{ m/s{}$. Find the final velocities.
+   $1.0 \mathrm{ kg{}$ object moving at $-6.0 \mathrm{ m/s{}$. Find the final velocities.
 
 5. Find the center of mass of a uniform rod of length $L$ and mass $M$.
 
-6. A $2000 \mathrm{ kg{}$ cannon fires a $50 \mathrm{ kg{}$ shell horizontally at $400 \mathrm{ m/s{}$.
- What is the recoil velocity of the cannon?
+6. A $2000 \mathrm{ kg{}$ cannon fires a $50 \mathrm{ kg{}$ shell horizontally at
+   $400 \mathrm{ m/s{}$. What is the recoil velocity of the cannon?
 
 7. Prove that in a one-dimensional elastic collision with a stationary target, the relative velocity
- of approach equals the relative velocity of separation: $v_{1i} - v_{2i} = -(v_{1f} - v_{2f})$.
+   of approach equals the relative velocity of separation: $v_{1i} - v_{2i} = -(v_{1f} - v_{2f})$.
 
 8. Two identical balls collide. One was moving at $5.0 \mathrm{ m/s{}$ and the other was stationary.
- After the collision, one ball moves at $30^\circ$ above the original direction. Find the speeds
- and direction of both balls after the collision (assume elastic).
+   After the collision, one ball moves at $30^\circ$ above the original direction. Find the speeds
+   and direction of both balls after the collision (assume elastic).
 
-9. A force $F(t) = 6t^2 - 2t$ (in N, with $t$ in s) acts on a $3.0 \mathrm{ kg{}$ object initially at
- rest. Find the impulse from $t = 0$ to $t = 4.0 \mathrm{ s{}$ and the velocity at
- $t = 4.0 \mathrm{ s{}$.
+9. A force $F(t) = 6t^2 - 2t$ (in N, with $t$ in s) acts on a $3.0 \mathrm{ kg{}$ object initially
+   at rest. Find the impulse from $t = 0$ to $t = 4.0 \mathrm{ s{}$ and the velocity at
+   $t = 4.0 \mathrm{ s{}$.
 
 10. A flat disk of mass $M$ and radius $R$ has a small hole of mass $m$ removed at a distance $r$
- from the center. Find the center of mass of the remaining object.
+    from the center. Find the center of mass of the remaining object.
 
 ## 11. Impulse: Extended Analysis and Examples
 
@@ -443,8 +445,8 @@ $$v = \frac{J}{m} = \frac{112}{3} = 37.3 \mathrm{ m/s{}$$
 ### Worked Example: Two-Dimensional Collision
 
 A $2 \mathrm{ kg{}$ ball moving at $5 \mathrm{ m/s{}$ strikes a stationary $3 \mathrm{ kg{}$ ball.
-After the collision, the $2 \mathrm{ kg{}$ ball moves at $30^{\circ}$ above the original direction at
-$3 \mathrm{ m/s{}$. Find the velocity of the $3 \mathrm{ kg{}$ ball.
+After the collision, the $2 \mathrm{ kg{}$ ball moves at $30^{\circ}$ above the original direction
+at $3 \mathrm{ m/s{}$. Find the velocity of the $3 \mathrm{ kg{}$ ball.
 
 **Conservation of $x$-momentum:**
 
@@ -496,8 +498,8 @@ Conserved during the upward swing (only gravity does work).
 
 ### Worked Example: CM of a Non-Uniform Rod
 
-A thin rod of length $L$ and mass $M$ has linear mass density $\lambda(x) = \lambda_0 x/L$Where
-$x$ is the distance from one end. Find the center of mass.
+A thin rod of length $L$ and mass $M$ has linear mass density $\lambda(x) = \lambda_0 x/L$Where $x$
+is the distance from one end. Find the center of mass.
 
 $$\bar{x} = \frac{\int_0^L x\lambda(x)\, dx}{\int_0^L \lambda(x)\, dx} = \frac{\int_0^L x \cdot \frac{\lambda_0 x}{L}\, dx}{\int_0^L \frac{\lambda_0 x}{L}\, dx}$$
 
@@ -508,8 +510,8 @@ Mass is concentrated toward the heavier end.
 
 ### Worked Example: CM of an L-Shaped Object
 
-Two uniform rods, each of mass $M$ and length $L$Are joined at right angles to form an L shape.
-Find the center of mass.
+Two uniform rods, each of mass $M$ and length $L$Are joined at right angles to form an L shape. Find
+the center of mass.
 
 Take the origin at the corner. Rod 1 lies along the positive $x$-axis with CM at $(L/2, 0)$. Rod 2
 Lies along the positive $y$-axis with CM at $(0, L/2)$.
@@ -524,8 +526,8 @@ The center of mass is at $(L/4, L/4)$ from the corner.
 
 ### Worked Example: Rocket Velocity
 
-A rocket has initial mass $m_0 = 50000 \mathrm{ kg{}$ and final mass $m_f = 10000 \mathrm{ kg{}$. The
-Exhaust velocity is $v_e = 3000 \mathrm{ m/s{}$. Find the velocity gained.
+A rocket has initial mass $m_0 = 50000 \mathrm{ kg{}$ and final mass $m_f = 10000 \mathrm{ kg{}$.
+The Exhaust velocity is $v_e = 3000 \mathrm{ m/s{}$. Find the velocity gained.
 
 $$\Delta v = v_e \ln\frac{m_0}{m_f} = 3000 \times \ln\left(\frac{50000}{10000}\right) = 3000 \times \ln 5 = 3000 \times 1.609 = 4828 \mathrm{ m/s{}$$
 
@@ -547,39 +549,39 @@ Load.
 
 ## 15. Summary Table: Collision Types
 
-| Property | Elastic | Inelastic | Perfectly Inelastic |
+| Property                   | Elastic  | Inelastic       | Perfectly Inelastic  |
 | -------------------------- | -------- | --------------- | -------------------- |
-| Momentum conserved | Yes | Yes | Yes |
-| Kinetic energy conserved | Yes | No | No |
-| Maximum KE loss | 0 | Varies | Maximum |
-| Objects stick together | No | No | Yes |
-| Coefficient of restitution | $e = 1$ | $0 \lt e \lt 1$ | $e = 0$ |
-| Relative velocity | Reverses | Reduced | Zero (same velocity) |
+| Momentum conserved         | Yes      | Yes             | Yes                  |
+| Kinetic energy conserved   | Yes      | No              | No                   |
+| Maximum KE loss            | 0        | Varies          | Maximum              |
+| Objects stick together     | No       | No              | Yes                  |
+| Coefficient of restitution | $e = 1$  | $0 \lt e \lt 1$ | $e = 0$              |
+| Relative velocity          | Reverses | Reduced         | Zero (same velocity) |
 
 ## 16. Practice Questions (Additional)
 
 11. A $0.05 \mathrm{ kg{}$ tennis ball hits a racket at $20 \mathrm{ m/s{}$ and rebounds at
- $25 \mathrm{ m/s{}$ at an angle of $30^{\circ}$ from the original direction. If the contact time
- is $5 \mathrm{ ms{}$Find the average force exerted by the racket.
+    $25 \mathrm{ m/s{}$ at an angle of $30^{\circ}$ from the original direction. If the contact time
+    is $5 \mathrm{ ms{}$Find the average force exerted by the racket.
 
 12. A $5 \mathrm{ kg{}$ object moving at $8 \mathrm{ m/s{}$ collides with a $3 \mathrm{ kg{}$ object
- moving at $4 \mathrm{ m/s{}$ in the same direction. After the collision, the $5 \mathrm{ kg{}$
- object moves at $5 \mathrm{ m/s{}$ in the same direction. Find the velocity of the
- $3 \mathrm{ kg{}$ object and the coefficient of restitution.
+    moving at $4 \mathrm{ m/s{}$ in the same direction. After the collision, the $5 \mathrm{ kg{}$
+    object moves at $5 \mathrm{ m/s{}$ in the same direction. Find the velocity of the
+    $3 \mathrm{ kg{}$ object and the coefficient of restitution.
 
 13. A force $F(t) = 12t - 3t^2$ (in N) acts on a $4 \mathrm{ kg{}$ object initially moving at
- $2 \mathrm{ m/s{}$. Find (a) the time when the object is at rest, (b) the impulse from $t = 0$ to
- that time, and (c) the impulse from $t = 0$ to $t = 6 \mathrm{ s{}$.
+    $2 \mathrm{ m/s{}$. Find (a) the time when the object is at rest, (b) the impulse from $t = 0$
+    to that time, and (c) the impulse from $t = 0$ to $t = 6 \mathrm{ s{}$.
 
 14. Two ice skaters of masses $50 \mathrm{ kg{}$ and $70 \mathrm{ kg{}$ stand facing each other on
- frictionless ice. They push off each other, and the $50 \mathrm{ kg{}$ skater moves at
- $3 \mathrm{ m/s{}$. Find the velocity of the $70 \mathrm{ kg{}$ skater and the total kinetic
- energy of the system.
+    frictionless ice. They push off each other, and the $50 \mathrm{ kg{}$ skater moves at
+    $3 \mathrm{ m/s{}$. Find the velocity of the $70 \mathrm{ kg{}$ skater and the total kinetic
+    energy of the system.
 
 15. A rocket burns fuel at a rate of $100 \mathrm{ kg/s{}$ with an exhaust velocity of
- $2500 \mathrm{ m/s{}$. The initial mass is $20000 \mathrm{ kg{}$. Find (a) the thrust and (b) the
- velocity after $60 \mathrm{ s{}$ of burning, assuming the rocket starts from rest in deep space
- (no gravity).
+    $2500 \mathrm{ m/s{}$. The initial mass is $20000 \mathrm{ kg{}$. Find (a) the thrust and (b)
+    the velocity after $60 \mathrm{ s{}$ of burning, assuming the rocket starts from rest in deep
+    space (no gravity).
 
 ## Extended Worked Examples
 
@@ -629,8 +631,8 @@ A $2 \mathrm{ kg{}$ object initially at rest is subjected to a force described b
 
 $$F(t) = \begin{cases} 20t & 0 \le t \le 2 \\ 40 - 10t & 2 \lt t \le 4 \\ 0 & t \gt 4 \end{cases}$$
 
-Where $F$ is in newtons and $t$ in seconds. Find the velocity at $t = 4 \mathrm{ s{}$ and the average
-Force.
+Where $F$ is in newtons and $t$ in seconds. Find the velocity at $t = 4 \mathrm{ s{}$ and the
+average Force.
 
 **Step 1: Calculate total impulse**
 
@@ -688,11 +690,8 @@ $$T = 2 \times \frac{321.6}{2} - 2 \times 9.8 = 321.6 - 19.6 = 302 \mathrm{ N{}$
 
 The tension is positive, so the block does indeed complete full vertical circles.
 
-:::info
-Info
-Make the block complete full vertical circles. In most textbook versions, the block only swings to a
-Modest height.
-:::
+:::info Info Make the block complete full vertical circles. In most textbook versions, the block
+only swings to a Modest height. :::
 
 ## Common Pitfalls Extended
 
@@ -715,36 +714,36 @@ Elastic (or that the problem states it is).
 
 ## Additional Practice Problems
 
-16. A $1500 \mathrm{ kg{}$ car travelling at $20 \mathrm{ m/s{}$ rear-ends a $2500 \mathrm{ kg{}$ truck
- travelling at $15 \mathrm{ m/s{}$ in the same direction. The vehicles stick together. Calculate
- the final velocity, the KE lost, and the impulse on each vehicle.
+16. A $1500 \mathrm{ kg{}$ car travelling at $20 \mathrm{ m/s{}$ rear-ends a $2500 \mathrm{ kg{}$
+    truck travelling at $15 \mathrm{ m/s{}$ in the same direction. The vehicles stick together.
+    Calculate the final velocity, the KE lost, and the impulse on each vehicle.
 
 17. A tennis ball of mass $0.06 \mathrm{ kg{}$ is struck by a racket. The force on the ball during
- the $0.005 \mathrm{ s{}$ contact is $F(t) = 1200 \sin(200\pi t)$ (N). Calculate the impulse and
- the speed of the ball after impact if it was initially at rest.
+    the $0.005 \mathrm{ s{}$ contact is $F(t) = 1200 \sin(200\pi t)$ (N). Calculate the impulse and
+    the speed of the ball after impact if it was initially at rest.
 
 18. A $3 \mathrm{ kg{}$ object moving at $5 \mathrm{ m/s{}$ collides elastically with a
- $1 \mathrm{ kg{}$ object at rest. Use the elastic collision formulas to find the final velocities
- of both objects.
+    $1 \mathrm{ kg{}$ object at rest. Use the elastic collision formulas to find the final
+    velocities of both objects.
 
 19. A $60 \mathrm{ kg{}$ person standing on ice catches a $2 \mathrm{ kg{}$ ball thrown at
- $15 \mathrm{ m/s{}$. Calculate the person's velocity after catching the ball. If the person then
- throws the ball back at $15 \mathrm{ m/s{}$ (relative to the person), what is the person's new
- velocity?
+    $15 \mathrm{ m/s{}$. Calculate the person's velocity after catching the ball. If the person then
+    throws the ball back at $15 \mathrm{ m/s{}$ (relative to the person), what is the person's new
+    velocity?
 
 20. Two identical objects collide. Object A has velocity $3\hat{i} + 2\hat{j}$ m/s and Object B has
- velocity $-1\hat{i} + 4\hat{j}$ m/s. After the elastic collision, Object A moves with velocity
- $1\hat{i} + 3\hat{j}$ m/s. Find the final velocity of Object B and verify both momentum and KE
- conservation.
+    velocity $-1\hat{i} + 4\hat{j}$ m/s. After the elastic collision, Object A moves with velocity
+    $1\hat{i} + 3\hat{j}$ m/s. Find the final velocity of Object B and verify both momentum and KE
+    conservation.
 
 ## Practice Problems
 
 <details>
 <summary>Question 1: Perfectly inelastic collision</summary>
 
-A $1500 \mathrm{ kg{}$ car travelling east at $20 \mathrm{ m/s{}$ collides with a $2500 \mathrm{ kg{}$
-Truck travelling west at $15 \mathrm{ m/s{}$. They stick together after the collision. Find the
-Velocity of the wreckage and the kinetic energy lost.
+A $1500 \mathrm{ kg{}$ car travelling east at $20 \mathrm{ m/s{}$ collides with a
+$2500 \mathrm{ kg{}$ Truck travelling west at $15 \mathrm{ m/s{}$. They stick together after the
+collision. Find the Velocity of the wreckage and the kinetic energy lost.
 
 </details>
 
@@ -770,8 +769,8 @@ Energy lost: $581,250 - 7,031 = 574,219 \mathrm{ J{}$ (about 98.8% lost to defor
 
 A $0.15 \mathrm{ kg{}$ baseball is hit by a bat. The force on the ball as a function of time is
 Approximately triangular: it rises linearly from 0 to $6000 \mathrm{ N{}$ in $1 \mathrm{ ms{}$ and
-Falls back to 0 in the next $1 \mathrm{ ms{}$. Calculate the impulse, the change in velocity, and the
-Average force.
+Falls back to 0 in the next $1 \mathrm{ ms{}$. Calculate the impulse, the change in velocity, and
+the Average force.
 
 </details>
 

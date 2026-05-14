@@ -1,9 +1,12 @@
 ---
 id: packaging-distribution
 title: Packaging and Distribution
-description: "Packaging and Distribution — pyproject.toml; Minimal pyproject.toml; PEP 621 Metadata Fields; Tool Sections with worked examples and exam-style questions."
+description:
+  'Packaging and Distribution — pyproject.toml; Minimal pyproject.toml; PEP 621 Metadata Fields;
+  Tool Sections with worked examples and exam-style questions.'
 slug: packaging-distribution
 ---
+
 ## pyproject.toml
 
 `pyproject.toml` is the modern standard for Python project configuration, defined by PEP 518 (build
@@ -113,11 +116,9 @@ source = ["src/mylib"]
 branch = true
 ```
 
-:::info
-PEP 621 standardizes project metadata in `pyproject.toml`. Before this, metadata was
+:::info PEP 621 standardizes project metadata in `pyproject.toml`. Before this, metadata was
 Scattered across `setup.py``setup.cfg`And `setup.cfg`/`pyproject.toml`. The new standard
-Consolidates everything into one file.
-:::
+Consolidates everything into one file. :::
 
 ## setup.py Legacy vs pyproject.toml
 
@@ -164,11 +165,9 @@ myapp = "myapp.cli:main"
 where = ["src"]
 ```
 
-:::warning
-`setup.py` is not deprecated, but `pyproject.toml` is preferred for new projects. The
+:::warning `setup.py` is not deprecated, but `pyproject.toml` is preferred for new projects. The
 `setup.py` file can still exist for complex build logic that cannot be expressed declaratively, but
-Most projects do not need it.
-:::
+Most projects do not need it. :::
 
 ## setuptools
 
@@ -306,11 +305,9 @@ requests==2.31.0 \
     --hash=sha256:942c5a758f98d790eaed1a29cb6eefc7cb0f27a2e5e71b6ed7d0e640c265d3a5
 ```
 
-:::warning
-Always use `--generate-hashes` in production deployments. Hashes verify that the
+:::warning Always use `--generate-hashes` in production deployments. Hashes verify that the
 Installed package matches exactly what you tested. Without hashes, a compromised PyPI mirror could
-Serve malicious packages.
-:::
+Serve malicious packages. :::
 
 ## Virtual Environments
 
@@ -358,11 +355,9 @@ conda env export > environment.yml
 conda env create -f environment.yml
 ```
 
-:::info
-`venv` is the standard and ships with Python. Use `virtualenv` when you need features like
+:::info `venv` is the standard and ships with Python. Use `virtualenv` when you need features like
 `--system-site-packages` or faster creation. Use `conda` when you need non-Python dependencies
-(e.g., CUDA, MKL).
-:::
+(e.g., CUDA, MKL). :::
 
 ## Dependency Management
 
@@ -427,14 +422,14 @@ poetry build
 
 ### Comparison
 
-| Feature | pip | poetry | pipenv | conda |
+| Feature         | pip                   | poetry            | pipenv         | conda             |
 | --------------- | --------------------- | ----------------- | -------------- | ----------------- |
-| Lock file | Manual (pip-tools) | `poetry.lock` | `Pipfile.lock` | `environment.yml` |
-| Resolution | Basic | Full (resolvelib) | Full (pip) | Full |
-| Non-Python deps | No | No | No | Yes |
-| Build system | setuptools/hatch/flit | Built-in | pip | Built-in |
-| Speed | Fast | Medium | Slow | Slow |
-| Ecosystem | Largest | Growing | Declining | Scientific |
+| Lock file       | Manual (pip-tools)    | `poetry.lock`     | `Pipfile.lock` | `environment.yml` |
+| Resolution      | Basic                 | Full (resolvelib) | Full (pip)     | Full              |
+| Non-Python deps | No                    | No                | No             | Yes               |
+| Build system    | setuptools/hatch/flit | Built-in          | pip            | Built-in          |
+| Speed           | Fast                  | Medium            | Slow           | Slow              |
+| Ecosystem       | Largest               | Growing           | Declining      | Scientific        |
 
 ## Package Structure
 
@@ -481,12 +476,10 @@ mylib/
     └── test_core.py
 ```
 
-:::warning
-The `src` layout is preferred because it prevents a subtle bug: when you run tests from
+:::warning The `src` layout is preferred because it prevents a subtle bug: when you run tests from
 The project root, Python may import the local package instead of the installed one. The `src` layout
 Forces you to install the package before testing, catching missing dependencies and incorrect
-Packaging.
-:::
+Packaging. :::
 
 ## Entry Points
 
@@ -578,10 +571,8 @@ global-exclude *.pyo
 prune tests
 ```
 
-:::tip
-With the `src` layout and `[tool.setuptools.package-data]`Most projects do not need
-`MANIFEST.in`. Only use it when you need to include files that setuptools cannot auto-discover.
-:::
+:::tip With the `src` layout and `[tool.setuptools.package-data]`Most projects do not need
+`MANIFEST.in`. Only use it when you need to include files that setuptools cannot auto-discover. :::
 
 ## Versioning
 
@@ -774,19 +765,17 @@ Packages.
 
 ### Comparison
 
-| Feature | setuptools | hatch | flit |
+| Feature        | setuptools  | hatch    | flit       |
 | -------------- | ----------- | -------- | ---------- |
-| Maturity | Most mature | Modern | Minimal |
-| Legacy compat | Full | Partial | None |
-| Plugins | Many | Growing | None |
-| Speed | Medium | Fast | Fast |
-| Complexity | High | Medium | Low |
-| VCS versioning | Via plugin | Built-in | Via plugin |
+| Maturity       | Most mature | Modern   | Minimal    |
+| Legacy compat  | Full        | Partial  | None       |
+| Plugins        | Many        | Growing  | None       |
+| Speed          | Medium      | Fast     | Fast       |
+| Complexity     | High        | Medium   | Low        |
+| VCS versioning | Via plugin  | Built-in | Via plugin |
 
-:::tip
-For new projects, `hatch` or `flit` are excellent choices. Use `setuptools` only when you
-Need compatibility with existing tooling or complex build requirements (e.g., C extensions).
-:::
+:::tip For new projects, `hatch` or `flit` are excellent choices. Use `setuptools` only when you
+Need compatibility with existing tooling or complex build requirements (e.g., C extensions). :::
 
 ## Wheel vs sdist
 
@@ -947,8 +936,8 @@ RUN pip install --no-dev .
 requires-python = ">=3.10"
 ```
 
-Without `requires-python`Pip will try to install your package on any Python version, which fails
-At runtime with cryptic errors.
+Without `requires-python`Pip will try to install your package on any Python version, which fails At
+runtime with cryptic errors.
 
 ### 12.Editable Install Not Working with src Layout
 

@@ -1,6 +1,8 @@
 ---
 title: Numerical Methods
-description: "A-Level Mathematics notes on Numerical Methods: Board Coverage; 1. Locating Roots: Sign Change; 1.1 Sign change theorem; 1.2 Limitations."
+description:
+  'A-Level Mathematics notes on Numerical Methods: Board Coverage; 1. Locating Roots: Sign Change;
+  1.1 Sign change theorem; 1.2 Limitations.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Maths
@@ -9,19 +11,18 @@ categories:
   - Maths
 slug: numerical-methods
 ---
+
 ## Board Coverage
 
-| Board | Paper | Notes |
+| Board      | Paper   | Notes                                                  |
 | ---------- | ------- | ------------------------------------------------------ |
-| AQA | Paper 2 | Sign change, iteration, Newton-Raphson, Simpson's rule |
-| Edexcel | P2 | Similar |
-| OCR (A) | Paper 2 | Includes fixed-point iteration and convergence |
-| CIE (9709) | P2, P3 | Numerical solutions of equations, integration in P2/P3 |
+| AQA        | Paper 2 | Sign change, iteration, Newton-Raphson, Simpson's rule |
+| Edexcel    | P2      | Similar                                                |
+| OCR (A)    | Paper 2 | Includes fixed-point iteration and convergence         |
+| CIE (9709) | P2, P3  | Numerical solutions of equations, integration in P2/P3 |
 
-:::info
-The formula booklet gives the Newton-Raphson formula and the trapezium/Simpson's rule. You
-Must know when each method is applicable and its limitations.
-:::
+:::info The formula booklet gives the Newton-Raphson formula and the trapezium/Simpson's rule. You
+Must know when each method is applicable and its limitations. :::
 
 <hr />
 
@@ -39,12 +40,10 @@ The sign change theorem tells us a root **exists** but says nothing about:
 - How many roots are in the interval (there could be 1, 3, 5, ...).
 - The exact location of the root.
 
-:::warning
-A sign change is **sufficient but not necessary** for a root. If $f(x) = x^2$Then
+:::warning A sign change is **sufficient but not necessary** for a root. If $f(x) = x^2$Then
 $f(-1) = f(1) = 1$ (no sign change), but there is a root at $x = 0$. Additionally, a sign change
 Could arise from a **discontinuity** rather than a root: $f(x) = 1/x$ has $f(-1) = -1$ and
-$f(1) = 1$But no root.
-:::
+$f(1) = 1$But no root. :::
 
 **Intuition.** The sign change theorem is the Intermediate Value Theorem applied to the special case
 Of crossing zero. If you walk from a point below sea level to one above sea level, you must cross
@@ -88,21 +87,18 @@ $\blacksquare$
 
 ### 2.3 Rearrangement choices
 
-Different rearrangements of $f(x) = 0$ give different $g(x)$And some converge while others
-Diverge.
+Different rearrangements of $f(x) = 0$ give different $g(x)$And some converge while others Diverge.
 
 **Example.** Solve $x^3 + x - 1 = 0$.
 
 - $g(x) = 1 - x^3$: $g'(x) = -3x^2$. Near the root $\alpha \approx 0.68$:
- $|g'(\alpha)| \approx 1.39 \gt{} 1$. **Diverges.**
+  $|g'(\alpha)| \approx 1.39 \gt{} 1$. **Diverges.**
 - $g(x) = \sqrt[3]{1-x}$: $g'(x) = \dfrac{-1}{3(1-x)^{2/3}}$. Near $\alpha$:
- $|g'(\alpha)| \approx 0.72 \lt{} 1$. **Converges.**
+  $|g'(\alpha)| \approx 0.72 \lt{} 1$. **Converges.**
 
-:::tip
-In exams, if a question asks you to show that a particular rearrangement converges, compute
+:::tip In exams, if a question asks you to show that a particular rearrangement converges, compute
 $g'(x)$ at the root and show $|g'(\alpha)| \lt{} 1$. If asked why a rearrangement fails, show
-$|g'(\alpha)| \gt{} 1$.
-:::
+$|g'(\alpha)| \gt{} 1$. :::
 
 ### 2.4 Geometric interpretation
 
@@ -114,9 +110,9 @@ Then horizontally to $y = x$Then vertically to $y = g(x_1) = x_2$And so on.
 - If $-1 \lt{} g'(\alpha) \lt{} 0$: the cobweb zigzags inward (oscillatory convergence).
 - If $|g'(\alpha)| \gt{} 1$: the cobweb spirals or zigzags outward (divergence).
 
-The closer $|g'(\alpha)|$ is to zero, the faster the convergence. When $g'(\alpha) = 0$The
-Iteration achieves quadratic convergence (similar to Newton-Raphson), since the leading error term
-In the Taylor expansion vanishes.
+The closer $|g'(\alpha)|$ is to zero, the faster the convergence. When $g'(\alpha) = 0$The Iteration
+achieves quadratic convergence (similar to Newton-Raphson), since the leading error term In the
+Taylor expansion vanishes.
 
 <hr />
 
@@ -172,10 +168,7 @@ Newton-Raphson fails when:
 - $f'(x_n)$ is close to zero (the next iterate jumps far away).
 - The starting point is not close enough to the root.
 
-:::warning
-Warning
-A different starting point.
-:::
+:::warning Warning A different starting point. :::
 
 ### 3.4 Horizontal tangent failure
 
@@ -191,23 +184,19 @@ The formula gives $x_1 = 1 - f(1)/f'(1) = 1 - 1/0$Which is undefined.
 Even starting at $x_0 = 0.9$: $f(0.9) = 0.729 - 2.7 + 3 = 1.029$$f'(0.9) = 2.43 - 3 = -0.57$.
 $x_1 = 0.9 - 1.029/(-0.57) = 0.9 + 1.805 = 2.705$.
 
-The root is near $\alpha \approx -2.10$So the iterate has been sent in the wrong direction. The
-Next iterate $x_2$ will be pulled back, but convergence is erratic compared to a well-chosen
-Starting point.
+The root is near $\alpha \approx -2.10$So the iterate has been sent in the wrong direction. The Next
+iterate $x_2$ will be pulled back, but convergence is erratic compared to a well-chosen Starting
+point.
 
-:::warning
-Warning
-Tangent is not close to horizontal near your starting point.
-:::
+:::warning Warning Tangent is not close to horizontal near your starting point. :::
 
 ### 3.5 Slow convergence near inflection points
 
 The quadratic convergence proof in Section 3.2 requires $f'(\alpha) \neq 0$. When the root coincides
-With an inflection point, so that $f'(\alpha) = 0$Convergence degrades from quadratic to
-**linear**.
+With an inflection point, so that $f'(\alpha) = 0$Convergence degrades from quadratic to **linear**.
 
-**Theorem.** If $f(\alpha) = 0$$f'(\alpha) = 0$$f''(\alpha) \neq 0$And $x_0$ is sufficiently
-Close to $\alpha$Then Newton-Raphson converges linearly with rate $1/2$:
+**Theorem.** If $f(\alpha) = 0$$f'(\alpha) = 0$$f''(\alpha) \neq 0$And $x_0$ is sufficiently Close
+to $\alpha$Then Newton-Raphson converges linearly with rate $1/2$:
 
 $$|x_{n+1} - \alpha| \approx \frac{1}{2}|x_n - \alpha|$$
 
@@ -355,23 +344,21 @@ Doubling the number of strips reduces the error by a factor of 16 for Simpson's 
 Trapezium rule. This is because quadratic approximations match the curvature of the function much
 Better than linear ones.
 
-:::tip
-Simpson's rule requires an **even** number of strips. The trapezium rule works with any
-Number. Simpson's rule is exact for cubics (since the error depends on $f^{(4)}$).
-:::
+:::tip Simpson's rule requires an **even** number of strips. The trapezium rule works with any
+Number. Simpson's rule is exact for cubics (since the error depends on $f^{(4)}$). :::
 
 <hr />
 
 ## 6. Comparison of Methods
 
-| Method | Convergence | Requirement | Speed |
+| Method         | Convergence | Requirement        | Speed        |
 | -------------- | ----------- | ------------------ | ------------ |
-| Sign change | N/A | Continuous $f$ | Locates only |
-| Bisection | Linear | Sign change | Slow |
-| Fixed-point | Linear | $\|g'\| \lt{} 1$ | Moderate |
-| Newton-Raphson | Quadratic | $f'(\alpha)\neq 0$ | Fast |
-| Trapezium rule | $O(1/n^2)$ | Any $f$ | Integration |
-| Simpson's rule | $O(1/n^4)$ | Even $n$ strips | Integration |
+| Sign change    | N/A         | Continuous $f$     | Locates only |
+| Bisection      | Linear      | Sign change        | Slow         |
+| Fixed-point    | Linear      | $\|g'\| \lt{} 1$   | Moderate     |
+| Newton-Raphson | Quadratic   | $f'(\alpha)\neq 0$ | Fast         |
+| Trapezium rule | $O(1/n^2)$  | Any $f$            | Integration  |
+| Simpson's rule | $O(1/n^4)$  | Even $n$ strips    | Integration  |
 
 <hr />
 
@@ -398,22 +385,20 @@ In practice, numerical software often combines methods:
 
 1. **Bracket the root** using sign change to find an interval $[a, b]$ containing the root.
 2. **Refine** using Newton-Raphson or fixed-point iteration starting from the midpoint or a
- favourable endpoint.
+   favourable endpoint.
 3. **Verify** the result by checking $f(x_n)$ is sufficiently close to zero.
 
-:::info
-Newton-Raphson is the method of choice when derivatives are available and the function is
-Well-behaved. Fixed-point iteration is useful when the problem gives a contraction
-Mapping. Bisection is the reliable fallback when nothing else is guaranteed to work.
-:::
+:::info Newton-Raphson is the method of choice when derivatives are available and the function is
+Well-behaved. Fixed-point iteration is useful when the problem gives a contraction Mapping.
+Bisection is the reliable fallback when nothing else is guaranteed to work. :::
 
 ### 7.3 Cost comparison
 
-| Method | Cost per step | Convergence rate | Total cost to reach tolerance $\varepsilon$ |
+| Method         | Cost per step | Convergence rate          | Total cost to reach tolerance $\varepsilon$ |
 | -------------- | ------------- | ------------------------- | ------------------------------------------- |
-| Bisection | 1 evaluation | $1/2$ (linear) | $O(\log_2(1/\varepsilon))$ steps |
-| Fixed-point | 1 evaluation | $\|g'(\alpha)\|$ (linear) | $O(\log_{1/\|g'\|}(1/\varepsilon))$ steps |
-| Newton-Raphson | 2 evaluations | Quadratic | $O(\log_2 \log_2(1/\varepsilon))$ steps |
+| Bisection      | 1 evaluation  | $1/2$ (linear)            | $O(\log_2(1/\varepsilon))$ steps            |
+| Fixed-point    | 1 evaluation  | $\|g'(\alpha)\|$ (linear) | $O(\log_{1/\|g'\|}(1/\varepsilon))$ steps   |
+| Newton-Raphson | 2 evaluations | Quadratic                 | $O(\log_2 \log_2(1/\varepsilon))$ steps     |
 
 Newton-Raphson requires both $f$ and $f'$ per step (two evaluations), but its quadratic convergence
 Means it needs far fewer steps in total. For high accuracy requirements, Newton-Raphson is
@@ -524,8 +509,8 @@ $f(\ln 3) = 3 - 3\ln 3 \approx 3 - 3.296 = -0.296 \lt{} 0$.
 Since $f''(x) = e^x \gt{} 0$This is a global minimum. The minimum value is negative, and
 $f(x) \to \infty$ as $x \to \pm\infty$So $f(x) = 0$ has exactly two roots.
 
-$f(0) = 1 \gt{} 0$$f(1) = e-3 \lt{} 0$: root in $(0,1)$. $f(1) \lt{} 0$$f(2) = e^2-6 \gt{} 0$:
-Root in $(1,2)$.
+$f(0) = 1 \gt{} 0$$f(1) = e-3 \lt{} 0$: root in $(0,1)$. $f(1) \lt{} 0$$f(2) = e^2-6 \gt{} 0$: Root
+in $(1,2)$.
 
 **If you get this wrong, revise:** [Sign Change Theorem](#1-locating-roots-sign-change) — Section 1.
 
@@ -727,8 +712,8 @@ The iterates are approaching $x = 1$ but slowly. Errors: $e_0 = 0.5$$e_1 \approx
 $e_2 \approx 0.1067$. The ratio $e_2/e_1 \approx 0.48$And $e_1/e_0 \approx 0.44$. This is
 Approximately linear convergence.
 
-At the double root $x = 1$: $f(1) = 0$$f'(1) = 0$. Since $f'(\alpha) = 0$Quadratic convergence
-Is lost (as in Section 3.5). For a double root, Newton-Raphson converges linearly with rate
+At the double root $x = 1$: $f(1) = 0$$f'(1) = 0$. Since $f'(\alpha) = 0$Quadratic convergence Is
+lost (as in Section 3.5). For a double root, Newton-Raphson converges linearly with rate
 Approximately $1/2$.
 
 **If you get this wrong, revise:**
@@ -848,14 +833,15 @@ Section 3.4.
 
 ---
 
-:::tip
-Diagnostic Test
-Ready to test your understanding of **Numerical Methods**? The [diagnostic test](/docs/alevel/maths/diagnostics/diag-numerical-methods) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
+:::tip Diagnostic Test Ready to test your understanding of **Numerical Methods**? The
+[diagnostic test](/docs/alevel/maths/diagnostics/diag-numerical-methods) contains the hardest
+questions within the A-Level specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Numerical Methods with other pure mathematics topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Numerical
+Methods with other pure mathematics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and
+building a personal test matrix. :::
 
 ## Common Pitfalls
 

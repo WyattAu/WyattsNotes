@@ -1,6 +1,8 @@
 ---
-title: "Coordinate Geometry -- Diagnostic Tests"
-description: "Diagnostic tests for DSE Coordinate Geometry: distance formula, straight lines, circle equations, locus, and completing the square."
+title: 'Coordinate Geometry -- Diagnostic Tests'
+description:
+  'Diagnostic tests for DSE Coordinate Geometry: distance formula, straight lines, circle equations,
+  locus, and completing the square.'
 slug: diag-coordinate-geometry
 hide_table_of_contents: true
 ---
@@ -33,7 +35,8 @@ Centre: $(3,\; -2)$Radius: $5$.
 
 **Question:**
 
-The line $L_1$ passes through $A(1, 3)$ and $B(5, 7)$. The line $L_2$ passes through $C(4, -1)$ and is perpendicular to $L_1$. Find the equation of $L_2$.
+The line $L_1$ passes through $A(1, 3)$ and $B(5, 7)$. The line $L_2$ passes through $C(4, -1)$ and
+is perpendicular to $L_1$. Find the equation of $L_2$.
 
 **Solution:**
 
@@ -75,7 +78,8 @@ Length of tangent: $PT = \sqrt{PC^2 - r^2} = \sqrt{36 - 4} = \sqrt{32} = 4\sqrt{
 
 **Question:**
 
-A point $P(x, y)$ moves such that its distance from $(3, -1)$ is always twice its distance from the line $x = -1$. Find the equation of the locus of $P$.
+A point $P(x, y)$ moves such that its distance from $(3, -1)$ is always twice its distance from the
+line $x = -1$. Find the equation of the locus of $P$.
 
 **Solution:**
 
@@ -103,7 +107,8 @@ This is a hyperbola.
 
 **Question:**
 
-Find the coordinates of the points of intersection of the line $y = 2x - 1$ and the circle $x^2 + y^2 - 10x - 6y + 25 = 0$.
+Find the coordinates of the points of intersection of the line $y = 2x - 1$ and the circle
+$x^2 + y^2 - 10x - 6y + 25 = 0$.
 
 **Solution:**
 
@@ -119,7 +124,8 @@ $$(5x - 16)(x - 2) = 0$$
 
 $$x = \frac{16}{5} \quad \text{or} \quad x = 2$$
 
-$x = \dfrac{16}{5}$: $y = \dfrac{32}{5} - 1 = \dfrac{27}{5}$. Point: $\left(\dfrac{16}{5},\; \dfrac{27}{5}\right)$.
+$x = \dfrac{16}{5}$: $y = \dfrac{32}{5} - 1 = \dfrac{27}{5}$. Point:
+$\left(\dfrac{16}{5},\; \dfrac{27}{5}\right)$.
 
 $x = 2$: $y = 3$. Point: $(2,\; 3)$.
 
@@ -167,7 +173,8 @@ $$c = \pm 2\sqrt{1 + m^2}$$
 
 **Question:**
 
-The points $A(1, 0)$ and $B(0, 1)$ are on the unit circle. Find the coordinates of point $C$ on the unit circle such that triangle $ABC$ is equilateral.
+The points $A(1, 0)$ and $B(0, 1)$ are on the unit circle. Find the coordinates of point $C$ on the
+unit circle such that triangle $ABC$ is equilateral.
 
 **Solution:**
 
@@ -175,11 +182,15 @@ $OA = OB = OC = 1$ (all on unit circle).
 
 Angle $AOB$: $\angle AOB$ where $A = (1, 0)$ and $B = (0, 1)$.
 
-$\cos \angle AOB = \dfrac{\vec{OA} \cdot \vec{OB}}{|OA||OB|} = \dfrac{0 + 0}{1} = 0$So $\angle AOB = 90°$.
+$\cos \angle AOB = \dfrac{\vec{OA} \cdot \vec{OB}}{|OA||OB|} = \dfrac{0 + 0}{1} = 0$So
+$\angle AOB = 90°$.
 
-For an equilateral triangle inscribed in a circle, each angle is $60°$. But $\angle AOB = 90° \neq 60°$So there is **no** equilateral triangle with vertices $A$$B$$C$ all on the unit circle.
+For an equilateral triangle inscribed in a circle, each angle is $60°$. But
+$\angle AOB = 90° \neq 60°$So there is **no** equilateral triangle with vertices $A$$B$$C$ all on
+the unit circle.
 
-This tests the misconception of assuming any three points on a circle can form an equilateral triangle.
+This tests the misconception of assuming any three points on a circle can form an equilateral
+triangle.
 
 ---
 
@@ -187,7 +198,9 @@ This tests the misconception of assuming any three points on a circle can form a
 
 **Question:**
 
-The parabola $y = x^2 - 4x + 7$ has vertex $V$. Find the coordinates of $V$And the equation of the axis of symmetry. If the parabola is reflected in the $y$-axis, find the equation of the reflected parabola.
+The parabola $y = x^2 - 4x + 7$ has vertex $V$. Find the coordinates of $V$And the equation of the
+axis of symmetry. If the parabola is reflected in the $y$-axis, find the equation of the reflected
+parabola.
 
 **Solution:**
 
@@ -213,8 +226,7 @@ The reflected parabola has vertex $(-2, 3)$ and axis $x = -2$.
 
 $A(3, -1)$$B(7, 5)$And $C(11, -1)$ are three points.
 
-(a) Show that triangle $ABC$ is isosceles. (2 marks)
-(b) Find the area of triangle $ABC$. (3 marks)
+(a) Show that triangle $ABC$ is isosceles. (2 marks) (b) Find the area of triangle $ABC$. (3 marks)
 
 **Solution:**
 
@@ -238,7 +250,8 @@ Area $= \dfrac{1}{2} \times 8 \times 6 = 24$ square units.
 
 **Question:**
 
-Find the equation of the circle with centre on the line $y = 2x$ that passes through the points $(1, 3)$ and $(4, 6)$.
+Find the equation of the circle with centre on the line $y = 2x$ that passes through the points
+$(1, 3)$ and $(4, 6)$.
 
 **Solution:**
 
@@ -262,9 +275,11 @@ $$a = \frac{42}{18} = \frac{7}{3}$$
 
 Centre: $\left(\dfrac{7}{3},\; \dfrac{14}{3}\right)$.
 
-Radius squared: $\left(\dfrac{7}{3} - 1\right)^2 + \left(\dfrac{14}{3} - 3\right)^2 = \dfrac{16}{9} + \dfrac{25}{9} = \dfrac{41}{9}$.
+Radius squared:
+$\left(\dfrac{7}{3} - 1\right)^2 + \left(\dfrac{14}{3} - 3\right)^2 = \dfrac{16}{9} + \dfrac{25}{9} = \dfrac{41}{9}$.
 
-Equation: $\left(x - \dfrac{7}{3}\right)^2 + \left(y - \dfrac{14}{3}\right)^2 = \dfrac{41}{9}$Or $9x^2 + 9y^2 - 42x - 84y + 128 = 0$.
+Equation: $\left(x - \dfrac{7}{3}\right)^2 + \left(y - \dfrac{14}{3}\right)^2 = \dfrac{41}{9}$Or
+$9x^2 + 9y^2 - 42x - 84y + 128 = 0$.
 
 ---
 
@@ -272,7 +287,8 @@ Equation: $\left(x - \dfrac{7}{3}\right)^2 + \left(y - \dfrac{14}{3}\right)^2 = 
 
 **Question:**
 
-A point $P(x, y)$ moves so that its distance from the point $(2, -3)$ always equals its distance from the line $y = 1$. Find the equation of the locus of $P$.
+A point $P(x, y)$ moves so that its distance from the point $(2, -3)$ always equals its distance
+from the line $y = 1$. Find the equation of the locus of $P$.
 
 **Solution:**
 
@@ -354,8 +370,8 @@ $$d = \frac{|4(3) + 3(-1) - 10|}{\sqrt{4^2 + 3^2}} = \frac{|12 - 3 - 10|}{5} = \
 
 Circle $C_1$: $x^2 + y^2 - 4x - 6y + 9 = 0$. Circle $C_2$: $x^2 + y^2 + 6x + 2y - 15 = 0$.
 
-(a) Find the centres and radii of $C_1$ and $C_2$. (3 marks)
-(b) Show that $C_1$ and $C_2$ touch externally. (2 marks)
+(a) Find the centres and radii of $C_1$ and $C_2$. (3 marks) (b) Show that $C_1$ and $C_2$ touch
+externally. (2 marks)
 
 **Solution:**
 
@@ -395,15 +411,24 @@ Equation: $y - 2 = 1(x - 1) \implies y = x + 1$Or $x - y + 1 = 0$.
 
 ## Common Pitfalls
 
-1. **Incorrect sign when completing the square in circle equations.** When completing the square for $x^2 - 6x$The result is $(x - 3)^2 - 9$Not $(x - 3)^2 + 9$. Remember: you add and subtract the same quantity. Always verify by expanding back.
+1. **Incorrect sign when completing the square in circle equations.** When completing the square for
+   $x^2 - 6x$The result is $(x - 3)^2 - 9$Not $(x - 3)^2 + 9$. Remember: you add and subtract the
+   same quantity. Always verify by expanding back.
 
-2. **Forgetting to square the distance formula.** When equating distances (e.g. For a locus problem), square both sides immediately to avoid messy square roots. A common error is trying to work with $\sqrt{\ldots} = \sqrt{\ldots}$ without squaring.
+2. **Forgetting to square the distance formula.** When equating distances (e.g. For a locus
+   problem), square both sides immediately to avoid messy square roots. A common error is trying to
+   work with $\sqrt{\ldots} = \sqrt{\ldots}$ without squaring.
 
-3. **Confusing the radius with the diameter in circle equations.** The standard form $(x - h)^2 + (y - k)^2 = r^2$ gives the radius squared on the right side. If the equation is $(x-h)^2 + (y-k)^2 = d^2$Then $d$ is the diameter, not the radius.
+3. **Confusing the radius with the diameter in circle equations.** The standard form
+   $(x - h)^2 + (y - k)^2 = r^2$ gives the radius squared on the right side. If the equation is
+   $(x-h)^2 + (y-k)^2 = d^2$Then $d$ is the diameter, not the radius.
 
-4. **Wrong slope for perpendicular lines.** If a line has slope $m$The perpendicular line has slope $-\dfrac{1}{m}$Not $\dfrac{1}{m}$. This sign error is extremely common in DSE.
+4. **Wrong slope for perpendicular lines.** If a line has slope $m$The perpendicular line has slope
+   $-\dfrac{1}{m}$Not $\dfrac{1}{m}$. This sign error is extremely common in DSE.
 
-5. **Not considering both intersection points of line and circle.** When a line intersects a circle, there can be 0, 1 (tangent), or 2 intersection points. Always check the discriminant of the resulting quadratic.
+5. **Not considering both intersection points of line and circle.** When a line intersects a circle,
+   there can be 0, 1 (tangent), or 2 intersection points. Always check the discriminant of the
+   resulting quadratic.
 
 ---
 
@@ -413,9 +438,9 @@ Equation: $y - 2 = 1(x - 1) \implies y = x + 1$Or $x - y + 1 = 0$.
 
 The equation of a circle $C$ is $x^2 + y^2 + 4x - 10y + 20 = 0$.
 
-(a) Find the centre and radius of $C$. (3 marks)
-(b) Find the equation of the tangent to $C$ at the point $(-1, 5)$. (4 marks)
-(c) The tangent in (b) meets the $y$-axis at $P$. Find the coordinates of $P$. (2 marks)
+(a) Find the centre and radius of $C$. (3 marks) (b) Find the equation of the tangent to $C$ at the
+point $(-1, 5)$. (4 marks) (c) The tangent in (b) meets the $y$-axis at $P$. Find the coordinates of
+$P$. (2 marks)
 
 **Solution:**
 
@@ -431,9 +456,11 @@ Slope of radius $= \dfrac{5 - 5}{-1 - (-2)} = 0$ (horizontal).
 
 So the tangent is vertical: $x = -1$.
 
-(c) $x = -1$ meets the $y$-axis ($x = 0$)? A vertical line $x = -1$ is parallel to the $y$-axis and never meets it. There is no intersection point $P$.
+(c) $x = -1$ meets the $y$-axis ($x = 0$)? A vertical line $x = -1$ is parallel to the $y$-axis and
+never meets it. There is no intersection point $P$.
 
-This reveals an important check: when the point $(-1, 5)$ has the same $y$-coordinate as the centre, the radius is horizontal and the tangent is vertical.
+This reveals an important check: when the point $(-1, 5)$ has the same $y$-coordinate as the centre,
+the radius is horizontal and the tangent is vertical.
 
 ---
 
@@ -441,9 +468,9 @@ This reveals an important check: when the point $(-1, 5)$ has the same $y$-coord
 
 The line $L: y = mx + 1$ intersects the circle $x^2 + y^2 = 9$ at two distinct points.
 
-(a) Show that $(1 + m^2)x^2 + 2mx - 8 = 0$. (2 marks)
-(b) Find the range of values of $m$ for which $L$ intersects the circle at two distinct points. (3 marks)
-(c) For $m = 1$Find the length of the chord of intersection. (3 marks)
+(a) Show that $(1 + m^2)x^2 + 2mx - 8 = 0$. (2 marks) (b) Find the range of values of $m$ for which
+$L$ intersects the circle at two distinct points. (3 marks) (c) For $m = 1$Find the length of the
+chord of intersection. (3 marks)
 
 **Solution:**
 
@@ -459,7 +486,8 @@ $(1 + m^2)x^2 + 2mx - 8 = 0$.
 
 $\Delta = (2m)^2 - 4(1+m^2)(-8) = 4m^2 + 32(1 + m^2) = 4m^2 + 32 + 32m^2 = 36m^2 + 32$.
 
-Since $36m^2 + 32 > 0$ for all real $m$The line always intersects the circle at two distinct points for all $m$.
+Since $36m^2 + 32 > 0$ for all real $m$The line always intersects the circle at two distinct points
+for all $m$.
 
 (c) For $m = 1$: $(1 + 1)x^2 + 2x - 8 = 0 \implies 2x^2 + 2x - 8 = 0 \implies x^2 + x - 4 = 0$.
 
@@ -467,17 +495,18 @@ $x = \dfrac{-1 \pm \sqrt{1 + 16}}{2} = \dfrac{-1 \pm \sqrt{17}}{2}$.
 
 $y$-coordinates: $y = x + 1$So $y = \dfrac{1 \pm \sqrt{17}}{2}$.
 
-Chord length $= \sqrt{(x_1 - x_2)^2 + (y_1 - y_2)^2} = \sqrt{(\sqrt{17})^2 + (\sqrt{17})^2} = \sqrt{34}$.
+Chord length
+$= \sqrt{(x_1 - x_2)^2 + (y_1 - y_2)^2} = \sqrt{(\sqrt{17})^2 + (\sqrt{17})^2} = \sqrt{34}$.
 
 ---
 
 ### DSE-3
 
-A variable point $P(x, y)$ moves such that its distance from $A(1, 2)$ is always equal to its distance from $B(5, 6)$.
+A variable point $P(x, y)$ moves such that its distance from $A(1, 2)$ is always equal to its
+distance from $B(5, 6)$.
 
-(a) Find the equation of the locus of $P$. (3 marks)
-(b) Verify that $(3, 4)$ lies on the locus. (1 mark)
-(c) Describe the locus geometrically. (1 mark)
+(a) Find the equation of the locus of $P$. (3 marks) (b) Verify that $(3, 4)$ lies on the locus. (1
+mark) (c) Describe the locus geometrically. (1 mark)
 
 **Solution:**
 
@@ -503,9 +532,9 @@ $x + y - 7 = 0$.
 
 The vertices of a triangle are $A(0, 0)$$B(8, 0)$And $C(4, 6)$.
 
-(a) Find the equation of the median from $C$ to $AB$. (2 marks)
-(b) Find the equation of the altitude from $A$ to $BC$. (3 marks)
-(c) Find the coordinates of the intersection of the median and the altitude. (3 marks)
+(a) Find the equation of the median from $C$ to $AB$. (2 marks) (b) Find the equation of the
+altitude from $A$ to $BC$. (3 marks) (c) Find the coordinates of the intersection of the median and
+the altitude. (3 marks)
 
 **Solution:**
 
@@ -529,9 +558,9 @@ Intersection point: $\left(4,\; \dfrac{8}{3}\right)$.
 
 $C_1: (x-1)^2 + (y+2)^2 = 25$ and $C_2: (x-7)^2 + (y-4)^2 = 9$.
 
-(a) Find the distance between the centres of $C_1$ and $C_2$. (2 marks)
-(b) Determine the number of intersection points of $C_1$ and $C_2$. (2 marks)
-(c) Find the equation of the common chord of $C_1$ and $C_2$. (4 marks)
+(a) Find the distance between the centres of $C_1$ and $C_2$. (2 marks) (b) Determine the number of
+intersection points of $C_1$ and $C_2$. (2 marks) (c) Find the equation of the common chord of $C_1$
+and $C_2$. (4 marks)
 
 **Solution:**
 
@@ -549,4 +578,6 @@ The circles do not intersect. There are 0 intersection points.
 
 Wait: $6\sqrt{2} = 6 \times 1.414 = 8.485 > 8 = r_1 + r_2$.
 
-Therefore the circles are **separate** (0 intersection points). Part (c) would have no common chord. The question may have an error, or the circles may need adjustment. If the problem is solvable, we proceed assuming the circles do intersect.
+Therefore the circles are **separate** (0 intersection points). Part (c) would have no common chord.
+The question may have an error, or the circles may need adjustment. If the problem is solvable, we
+proceed assuming the circles do intersect.

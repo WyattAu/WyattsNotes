@@ -1,7 +1,9 @@
 ---
 id: ip-addressing
 title: IP Addressing
-description: "Networking: IP Addressing — IPv4 Address Structure; Binary Representation; Special IPv4 Addresses; Address Classes (Historical)."
+description:
+  'Networking: IP Addressing — IPv4 Address Structure; Binary Representation; Special IPv4
+  Addresses; Address Classes (Historical).'
 slug: ip-addressing
 sidebar_position: 3
 tags:
@@ -9,6 +11,7 @@ tags:
 categories:
   - Networking
 ---
+
 ## Overview
 
 IP addressing is the mechanism by which hosts are identified and located on an IP network. Every
@@ -18,8 +21,8 @@ Infrastructure of the Internet.
 
 ## IPv4 Address Structure
 
-An IPv4 address is a **32-bit** number, represented in **dotted decimal notation** as four
-Octets separated by periods. Each octet represents 8 bits and ranges from 0 to 255.
+An IPv4 address is a **32-bit** number, represented in **dotted decimal notation** as four Octets
+separated by periods. Each octet represents 8 bits and ranges from 0 to 255.
 
 ```
 192.168.1.100
@@ -48,23 +51,23 @@ Quick reference for binary-to-decimal conversion:
 
 | Bit | Value | Bit | Value | Bit | Value | Bit | Value |
 | --- | ----- | --- | ----- | --- | ----- | --- | ----- |
-| 7 | 128 | 6 | 64 | 5 | 32 | 4 | 16 |
-| 3 | 8 | 2 | 4 | 1 | 2 | 0 | 1 |
+| 7   | 128   | 6   | 64    | 5   | 32    | 4   | 16    |
+| 3   | 8     | 2   | 4     | 1   | 2     | 0   | 1     |
 
 ### Special IPv4 Addresses
 
-| Address | Purpose |
+| Address         | Purpose                                                   |
 | --------------- | --------------------------------------------------------- |
-| 0.0.0.0 | Unspecified source (used in DHCP requests, default route) |
-| 127.0.0.1 | Loopback (localhost) -- packets never leave the host |
-| 255.255.255.255 | Limited broadcast (all hosts on the local segment) |
-| 169.254.0.0/16 | Link-local (APIPA -- automatic when DHCP fails) |
-| 224.0.0.0/4 | Multicast (224.0.0.0-239.255.255.255) |
-| 240.0.0.0/4 | Reserved (formerly Class E, 240.0.0.0-255.255.255.255) |
-| 192.0.0.0/24 | IETF Protocol Assignments |
-| 192.0.2.0/24 | Documentation (RFC 5737, TEST-NET-1) |
-| 198.51.100.0/24 | Documentation (RFC 5737, TEST-NET-2) |
-| 203.0.113.0/24 | Documentation (RFC 5737, TEST-NET-3) |
+| 0.0.0.0         | Unspecified source (used in DHCP requests, default route) |
+| 127.0.0.1       | Loopback (localhost) -- packets never leave the host      |
+| 255.255.255.255 | Limited broadcast (all hosts on the local segment)        |
+| 169.254.0.0/16  | Link-local (APIPA -- automatic when DHCP fails)           |
+| 224.0.0.0/4     | Multicast (224.0.0.0-239.255.255.255)                     |
+| 240.0.0.0/4     | Reserved (formerly Class E, 240.0.0.0-255.255.255.255)    |
+| 192.0.0.0/24    | IETF Protocol Assignments                                 |
+| 192.0.2.0/24    | Documentation (RFC 5737, TEST-NET-1)                      |
+| 198.51.100.0/24 | Documentation (RFC 5737, TEST-NET-2)                      |
+| 203.0.113.0/24  | Documentation (RFC 5737, TEST-NET-3)                      |
 
 ### Address Classes (Historical)
 
@@ -72,11 +75,11 @@ Before CIDR (Classless Inter-Domain Routing), IPv4 addresses were divided into f
 
 | Class | First Octet Range | Network Bits | Host Bits | Default Subnet Mask | Usable Hosts |
 | ----- | ----------------- | ------------ | --------- | ------------------- | ------------ |
-| A | 0-127 | 8 | 24 | 255.0.0.0 (/8) | 16,777,214 |
-| B | 128-191 | 16 | 16 | 255.255.0.0 (/16) | 65,534 |
-| C | 192-223 | 24 | 8 | 255.255.255.0 (/24) | 254 |
-| D | 224-239 | N/A | N/A | N/A (multicast) | N/A |
-| E | 240-255 | N/A | N/A | N/A (reserved) | N/A |
+| A     | 0-127             | 8            | 24        | 255.0.0.0 (/8)      | 16,777,214   |
+| B     | 128-191           | 16           | 16        | 255.255.0.0 (/16)   | 65,534       |
+| C     | 192-223           | 24           | 8         | 255.255.255.0 (/24) | 254          |
+| D     | 224-239           | N/A          | N/A       | N/A (multicast)     | N/A          |
+| E     | 240-255           | N/A          | N/A       | N/A (reserved)      | N/A          |
 
 The class was determined by the first few bits of the first octet:
 
@@ -119,17 +122,17 @@ Address. The subnet mask is the binary representation of this boundary.
 A /24 prefix means the first 24 bits are network bits. In binary:
 `11111111.11111111.11111111.00000000` = `255.255.255.0`.
 
-| CIDR | Subnet Mask | Binary |
+| CIDR | Subnet Mask     | Binary                              |
 | ---- | --------------- | ----------------------------------- |
-| /8 | 255.0.0.0 | 11111111.00000000.00000000.00000000 |
-| /12 | 255.240.0.0 | 11111111.11110000.00000000.00000000 |
-| /16 | 255.255.0.0 | 11111111.11111111.00000000.00000000 |
-| /20 | 255.255.240.0 | 11111111.11111111.11110000.00000000 |
-| /24 | 255.255.255.0 | 11111111.11111111.11111111.00000000 |
-| /25 | 255.255.255.128 | 11111111.11111111.11111111.10000000 |
-| /28 | 255.255.255.240 | 11111111.11111111.11111111.11110000 |
-| /30 | 255.255.255.252 | 11111111.11111111.11111111.11111100 |
-| /32 | 255.255.255.255 | 11111111.11111111.11111111.11111111 |
+| /8   | 255.0.0.0       | 11111111.00000000.00000000.00000000 |
+| /12  | 255.240.0.0     | 11111111.11110000.00000000.00000000 |
+| /16  | 255.255.0.0     | 11111111.11111111.00000000.00000000 |
+| /20  | 255.255.240.0   | 11111111.11111111.11110000.00000000 |
+| /24  | 255.255.255.0   | 11111111.11111111.11111111.00000000 |
+| /25  | 255.255.255.128 | 11111111.11111111.11111111.10000000 |
+| /28  | 255.255.255.240 | 11111111.11111111.11111111.11110000 |
+| /30  | 255.255.255.252 | 11111111.11111111.11111111.11111100 |
+| /32  | 255.255.255.255 | 11111111.11111111.11111111.11111111 |
 
 ### Number of Hosts Formula
 
@@ -209,14 +212,14 @@ The "magic number" method for /24 and larger subnets:
 
 | Prefix | Block Size | Usable Hosts | Subnets from /24 |
 | ------ | ---------- | ------------ | ---------------- |
-| /25 | 128 | 126 | 2 |
-| /26 | 64 | 62 | 4 |
-| /27 | 32 | 30 | 8 |
-| /28 | 16 | 14 | 16 |
-| /29 | 8 | 6 | 32 |
-| /30 | 4 | 2 | 64 |
-| /31 | 2 | 2\* | 128 |
-| /32 | 1 | 1 | 256 |
+| /25    | 128        | 126          | 2                |
+| /26    | 64         | 62           | 4                |
+| /27    | 32         | 30           | 8                |
+| /28    | 16         | 14           | 16               |
+| /29    | 8          | 6            | 32               |
+| /30    | 4          | 2            | 64               |
+| /31    | 2          | 2\*          | 128              |
+| /32    | 1          | 1            | 256              |
 
 \*A /31 (RFC 3021) is used for point-to-point links where the network and broadcast addresses are
 Not needed. Both addresses are usable as host addresses.
@@ -247,13 +250,13 @@ VLSM is how every real network operates. The subnetting example above is a VLSM 
 ### VLSM Design Principles
 
 1. **Start with the largest requirement.** Allocate subnets from the largest to the smallest to
- avoid fragmentation.
+   avoid fragmentation.
 2. **Use the smallest subnet that fits.** A point-to-point link needs 2 addresses, so use /30 (4
- addresses) or /31 (2 addresses). A server VLAN with 50 servers needs /26 (62 usable).
+   addresses) or /31 (2 addresses). A server VLAN with 50 servers needs /26 (62 usable).
 3. **Leave room for growth.** Allocate slightly more than the current requirement to accommodate
- future expansion without renumbering.
+   future expansion without renumbering.
 4. **Document allocations.** Maintain an IP address management (IPAM) system to track allocations
- and prevent conflicts.
+   and prevent conflicts.
 
 ## Supernetting (Route Aggregation)
 
@@ -289,11 +292,11 @@ Supernetting only works when the networks are contiguous and aligned on the summ
 RFC 1918 defines three ranges of private IPv4 addresses that are not routable on the public
 Internet:
 
-| Range | CIDR | Block Size | Class |
+| Range                         | CIDR           | Block Size           | Class |
 | ----------------------------- | -------------- | -------------------- | ----- |
-| 10.0.0.0 - 10.255.255.255 | 10.0.0.0/8 | 16,777,216 addresses | A |
-| 172.16.0.0 - 172.31.255.255 | 172.16.0.0/12 | 1,048,576 addresses | B |
-| 192.168.0.0 - 192.168.255.255 | 192.168.0.0/16 | 65,536 addresses | C |
+| 10.0.0.0 - 10.255.255.255     | 10.0.0.0/8     | 16,777,216 addresses | A     |
+| 172.16.0.0 - 172.31.255.255   | 172.16.0.0/12  | 1,048,576 addresses  | B     |
+| 192.168.0.0 - 192.168.255.255 | 192.168.0.0/16 | 65,536 addresses     | C     |
 
 These addresses are used for internal networks. Traffic from private addresses must pass through a
 NAT device (or a proxy) to reach the public Internet. Multiple organizations can use the same
@@ -302,11 +305,11 @@ Private address ranges simultaneously because the addresses are not globally uni
 ### Choosing a Private Address Range
 
 - **10.0.0.0/8:** Use for large organizations or when you need many subnets. Provides 16 million
- addresses, more than enough for most internal networks.
+  addresses, more than enough for most internal networks.
 - **172.16.0.0/12:** Rarely used because it is awkward to work with (the boundary falls in the
- middle of the second octet).
+  middle of the second octet).
 - **192.168.0.0/16:** The most commonly used range for home and small office networks. Limited to
- 256 /24 subnets.
+  256 /24 subnets.
 
 ### Carrier-Grade NAT (CGNAT / NAT444)
 
@@ -376,22 +379,22 @@ nft add rule nat prerouting iif eth0 tcp dport 80 dnat to 192.168.1.10:80
 ### NAT Drawbacks
 
 1. **Breaks end-to-end connectivity.** Incoming connections cannot reach internal hosts unless
- explicitly forwarded. This breaks peer-to-peer protocols (BitTorrent, WebRTC, SIP).
+   explicitly forwarded. This breaks peer-to-peer protocols (BitTorrent, WebRTC, SIP).
 2. **Breaks protocols that embed IP addresses in the payload.** FTP active mode, SIP, and IPsec
- (without NAT traversal) fail through NAT because the payload contains IP addresses that are not
- rewritten. ALGs (Application Layer Gateways) attempt to fix this but are often buggy.
+   (without NAT traversal) fail through NAT because the payload contains IP addresses that are not
+   rewritten. ALGs (Application Layer Gateways) attempt to fix this but are often buggy.
 3. **Stateful.** NAT devices maintain per-connection state. High connection rates exhaust NAT
- tables, causing new connections to fail. The NAT table size is a hard limit on concurrent
- connections.
+   tables, causing new connections to fail. The NAT table size is a hard limit on concurrent
+   connections.
 4. **Port exhaustion.** A single public IP has approximately 65,536 ports. With many internal hosts
- making many connections, ports can be exhausted. The practical limit is around 50,000-60,000
- concurrent connections per public IP.
+   making many connections, ports can be exhausted. The practical limit is around 50,000-60,000
+   concurrent connections per public IP.
 5. **Hides the real source.** Logs show the NAT device's IP, not the actual internal host. This
- complicates auditing and security analysis.
+   complicates auditing and security analysis.
 6. **ALGs (Application Layer Gateways).** Some NAT devices implement protocol-specific helpers (FTP
- ALG, SIP ALG) that modify application-layer data to work around NAT. These ALGs are often buggy
- and cause subtle interoperability issues. Many experienced network engineers disable ALGs and use
- application-level workarounds instead.
+   ALG, SIP ALG) that modify application-layer data to work around NAT. These ALGs are often buggy
+   and cause subtle interoperability issues. Many experienced network engineers disable ALGs and use
+   application-level workarounds instead.
 
 ## DHCP (Dynamic Host Configuration Protocol)
 
@@ -403,14 +406,14 @@ Configuration. RFC 2131 defines DHCP. DHCP operates over UDP ports 67 (server) a
 DHCP uses four messages to assign an address:
 
 1. **Discover (client to server, broadcast):** Client broadcasts DHCPDISCOVER to 255.255.255.255 on
- UDP port 67, seeking available DHCP servers. The source IP is 0.0.0.0 (unconfigured).
+   UDP port 67, seeking available DHCP servers. The source IP is 0.0.0.0 (unconfigured).
 2. **Offer (server to server, broadcast/unicast):** DHCP server responds with DHCPOFFER containing
- an offered IP address, subnet mask, lease duration, and other options (gateway, DNS servers). The
- server may broadcast or unicast depending on the client's capabilities.
+   an offered IP address, subnet mask, lease duration, and other options (gateway, DNS servers). The
+   server may broadcast or unicast depending on the client's capabilities.
 3. **Request (client to server, broadcast):** Client broadcasts DHCPREQUEST to accept the offer. If
- multiple servers offered addresses, this implicitly declines the others.
+   multiple servers offered addresses, this implicitly declines the others.
 4. **Acknowledge (server to client, broadcast/unicast):** Server sends DHCPACK confirming the lease.
- The client is now configured.
+   The client is now configured.
 
 ```mermaid
 sequenceDiagram
@@ -425,17 +428,17 @@ sequenceDiagram
 
 ### DHCP Lease Lifecycle
 
-- **Lease time:** Configurable by the server, 8-24 hours. Shorter leases are better for
- dynamic environments (e.g., coffee shop Wi-Fi). Longer leases reduce DHCP traffic but delay
- address reclamation.
+- **Lease time:** Configurable by the server, 8-24 hours. Shorter leases are better for dynamic
+  environments (e.g., coffee shop Wi-Fi). Longer leases reduce DHCP traffic but delay address
+  reclamation.
 - **T1 timer (50% of lease):** Client attempts to renew the lease with the original server via
- DHCPREQUEST (unicast). If the server agrees, the lease is renewed with the original or new lease
- duration.
+  DHCPREQUEST (unicast). If the server agrees, the lease is renewed with the original or new lease
+  duration.
 - **T2 timer (87.5% of lease):** If renewal fails, client broadcasts DHCPREQUEST to any DHCP server.
- Any server that can honor the request responds with DHCPACK.
+  Any server that can honor the request responds with DHCPACK.
 - **Lease expiration (100%):** Client must stop using the address and begin the DORA process from
- scratch. The client should also send a DHCPRELEASE when it shuts down cleanly, but this is not
- guaranteed.
+  scratch. The client should also send a DHCPRELEASE when it shuts down cleanly, but this is not
+  guaranteed.
 
 ### DHCP Relay
 
@@ -458,21 +461,21 @@ apt install isc-dhcp-relay
 
 DHCP options carry configuration parameters beyond the IP address:
 
-| Option Code | Name | Example |
+| Option Code | Name                     | Example                           |
 | ----------- | ------------------------ | --------------------------------- |
-| 1 | Subnet Mask | 255.255.255.0 |
-| 3 | Router (Default Gateway) | 192.168.1.1 |
-| 6 | DNS Server | 8.8.8.8, 8.8.4.4 |
-| 12 | Hostname | client-01 |
-| 15 | Domain Name | example.com |
-| 42 | NTP Server | time.google.com |
-| 51 | Lease Time | 86400 (seconds) |
-| 53 | DHCP Message Type | 1 (Discover), 2 (Offer), etc. |
-| 60 | Vendor Class Identifier | PXEClient for network boot |
-| 67 | TFTP Server Name | 192.168.1.50 |
-| 81 | Client FQDN | client01.example.com |
-| 119 | Domain Search List | example.com, corp.example.com |
-| 252 | WPAD URL | http://proxy.example.com/wpad.dat |
+| 1           | Subnet Mask              | 255.255.255.0                     |
+| 3           | Router (Default Gateway) | 192.168.1.1                       |
+| 6           | DNS Server               | 8.8.8.8, 8.8.4.4                  |
+| 12          | Hostname                 | client-01                         |
+| 15          | Domain Name              | example.com                       |
+| 42          | NTP Server               | time.google.com                   |
+| 51          | Lease Time               | 86400 (seconds)                   |
+| 53          | DHCP Message Type        | 1 (Discover), 2 (Offer), etc.     |
+| 60          | Vendor Class Identifier  | PXEClient for network boot        |
+| 67          | TFTP Server Name         | 192.168.1.50                      |
+| 81          | Client FQDN              | client01.example.com              |
+| 119         | Domain Search List       | example.com, corp.example.com     |
+| 252         | WPAD URL                 | http://proxy.example.com/wpad.dat |
 
 ### DHCP Servers
 
@@ -511,7 +514,7 @@ Destination MAC address to construct an Ethernet frame. ARP is defined in RFC 82
 3. The ARP request is sent to MAC address ff:ff:ff:ff:ff:ff (broadcast)
 4. Host B responds with an ARP reply (unicast): "192.168.1.20 is at aa:bb:cc:dd:ee:ff"
 5. Host A caches this mapping and sends the IP packet in an Ethernet frame addressed to
- aa:bb:cc:dd:ee:ff
+   aa:bb:cc:dd:ee:ff
 
 ```mermaid
 sequenceDiagram
@@ -571,20 +574,20 @@ ip neigh add 192.168.1.20 lladdr aa:bb:cc:dd:ee:ff dev eth0 nud permanent
 
 Cache states (Linux `ip neigh`):
 
-| State | Meaning |
+| State      | Meaning                                                     |
 | ---------- | ----------------------------------------------------------- |
-| REACHABLE | Entry is valid and reachable |
-| STALE | Entry is valid but unverified; will be confirmed before use |
-| DELAY | Waiting before probing (after STALE entry used) |
-| PROBE | Currently probing (ARP request sent) |
-| INCOMPLETE | ARP request sent, no reply received yet |
-| FAILED | ARP resolution failed |
-| PERMANENT | Static entry, never expires |
+| REACHABLE  | Entry is valid and reachable                                |
+| STALE      | Entry is valid but unverified; will be confirmed before use |
+| DELAY      | Waiting before probing (after STALE entry used)             |
+| PROBE      | Currently probing (ARP request sent)                        |
+| INCOMPLETE | ARP request sent, no reply received yet                     |
+| FAILED     | ARP resolution failed                                       |
+| PERMANENT  | Static entry, never expires                                 |
 
 Cache timers vary by OS:
 
 - **Linux:** Reachable entries: 30 seconds. Stale entries: retained but re-verified (NUD -- Neighbor
- Unreachability Detection) before use.
+  Unreachability Detection) before use.
 - **Windows:** 2-10 minutes for positive entries. 2 minutes for negative entries.
 - **macOS:** 20 minutes for positive entries.
 
@@ -594,9 +597,9 @@ A host sends a gratuitous ARP (GARP) to announce its own IP-to-MAC mapping. This
 
 1. **Duplicate address detection:** If another host responds, there is an IP conflict.
 2. **Address change notification:** After a failover event (e.g., VRRP, CARP), the new owner of a
- virtual IP broadcasts a GARP to update switches' MAC tables.
+   virtual IP broadcasts a GARP to update switches' MAC tables.
 3. **VM migration:** When a VM moves between physical hosts, a GARP updates the network's forwarding
- tables.
+   tables.
 
 A gratuitous ARP is an ARP request where the source and target IP are the same, or an ARP reply sent
 Without a corresponding request. Some implementations ignore gratuitous ARPs as a security measure
@@ -608,14 +611,14 @@ ARP has no authentication. Any host on the local segment can send a forged ARP r
 Another IP address. This is called **ARP spoofing** or **ARP poisoning** and enables:
 
 - **Man-in-the-middle attacks:** The attacker claims to be the default gateway, intercepting all
- outbound traffic.
+  outbound traffic.
 - **Denial of service:** The attacker claims to be a legitimate host, redirecting traffic to a
- non-existent MAC address.
+  non-existent MAC address.
 
 Mitigations include:
 
-- **Dynamic ARP Inspection (DAI):** Switches validate ARP packets against a trusted database
- ( populated by DHCP snooping).
+- **Dynamic ARP Inspection (DAI):** Switches validate ARP packets against a trusted database (
+  populated by DHCP snooping).
 - **Static ARP entries:** Manual ARP mappings that cannot be overwritten (impractical at scale).
 - **Network segmentation:** VLANs limit the broadcast domain, reducing the attack surface.
 - **Arpwatch:** A tool that monitors ARP traffic and alerts on changes to IP-MAC mappings.
@@ -633,7 +636,7 @@ Colons:
 
 - Leading zeros in each group can be omitted: `2001:db8:85a3:0:0:8a2e:370:7334`
 - Consecutive groups of zeros can be replaced with `::` (once per address):
- `2001:db8:85a3::8a2e:370:7334`
+  `2001:db8:85a3::8a2e:370:7334`
 - The loopback address is `::1`
 - The unspecified address is `::` (used as source during address autoconfiguration)
 - Prefix notation: `2001:db8:85a3::/48` (48-bit prefix)
@@ -653,22 +656,22 @@ Would still be approximately $1.5 \times 10^{17}$ addresses per atom remaining.
 **Unicast:** Identifies a single interface. Packets sent to a unicast address are delivered to that
 Specific interface.
 
-| Prefix | Scope | Purpose |
+| Prefix      | Scope            | Purpose                                                   |
 | ----------- | ---------------- | --------------------------------------------------------- |
-| `::1/128` | Link-local | Loopback |
-| `fe80::/10` | Link-local | Automatic address for local communication |
-| `fc00::/7` | Site-local (ULA) | Unique Local Addresses (RFC 4193), equivalent to RFC 1918 |
-| `2000::/3` | Global | Globally routable addresses |
+| `::1/128`   | Link-local       | Loopback                                                  |
+| `fe80::/10` | Link-local       | Automatic address for local communication                 |
+| `fc00::/7`  | Site-local (ULA) | Unique Local Addresses (RFC 4193), equivalent to RFC 1918 |
+| `2000::/3`  | Global           | Globally routable addresses                               |
 
 **Multicast:** Identifies a group of interfaces. Packets sent to a multicast address are delivered
 To all members of the group. IPv6 has no broadcast -- multicast replaces it.
 
-| Prefix | Purpose |
+| Prefix     | Purpose                       |
 | ---------- | ----------------------------- |
-| `ff00::/8` | All multicast |
-| `ff02::1` | All nodes on the local link |
-| `ff02::2` | All routers on the local link |
-| `ff05::1` | All nodes in the site |
+| `ff00::/8` | All multicast                 |
+| `ff02::1`  | All nodes on the local link   |
+| `ff02::2`  | All routers on the local link |
+| `ff05::1`  | All nodes in the site         |
 
 **Anycast:** Assigned to multiple interfaces. Packets are routed to the "nearest" interface (by
 Routing protocol metric). Used for DNS anycast (e.g., `8.8.8.8` and `8.8.4.4` are anycast addresses
@@ -705,18 +708,18 @@ SLAAC allows hosts to generate their own IPv6 address without a DHCP server:
 2. The host generates the interface identifier using EUI-64 or privacy extensions.
 3. The host combines the prefix and interface identifier to form a full address.
 4. The host performs Duplicate Address Detection (DAD) by sending a Neighbor Solicitation for its
- own address. If no response, the address is unique.
+   own address. If no response, the address is unique.
 
 ### DHCPv6
 
 DHCPv6 operates similarly to DHCPv4 but uses different message types and multicast addresses:
 
 - **Stateless (SLAAC + DHCPv6):** Host autoconfigures its address via SLAAC but uses DHCPv6 for
- additional options (DNS, NTP, domain search list). This is the most common deployment.
+  additional options (DNS, NTP, domain search list). This is the most common deployment.
 - **Stateful:** DHCPv6 assigns the full address (no SLAAC). Used in environments requiring strict
- address control.
+  address control.
 - **Rapid Commit:** Two-message exchange (Solicit/Reply) instead of four-message
- (Solicit/Advertise/Request/Reply) for faster assignment.
+  (Solicit/Advertise/Request/Reply) for faster assignment.
 
 DHCPv6 uses UDP port 546 (client) and 547 (server). Multicast addresses: `ff02::1:2` (All DHCP Relay
 Agents and Servers).
@@ -743,43 +746,43 @@ DNS64 synthesizes AAAA records for IPv4-only hosts by embedding the IPv4 address
 ## Common Pitfalls
 
 1. **Off-by-one errors in usable host calculation.** A /24 has 256 addresses. Subtract the network
- address (first) and broadcast address (last) to get 254 usable hosts. A /30 has 4 addresses and 2
- usable hosts. A /31 has 2 addresses and 2 usable hosts (point-to-point links per RFC 3021).
+   address (first) and broadcast address (last) to get 254 usable hosts. A /30 has 4 addresses and 2
+   usable hosts. A /31 has 2 addresses and 2 usable hosts (point-to-point links per RFC 3021).
 
 2. **Confusing network address with first usable host.** The network address (e.g., 192.168.1.0/24)
- is not assignable to a host. The first usable host is 192.168.1.1.
+   is not assignable to a host. The first usable host is 192.168.1.1.
 
 3. **NAT is not a security feature.** NAT provides accidental address obscurity but does not provide
- security. A stateful firewall provides security. NAT without a firewall provides no meaningful
- protection against determined attackers. NAT was invented to address IPv4 address scarcity, not
- for security.
+   security. A stateful firewall provides security. NAT without a firewall provides no meaningful
+   protection against determined attackers. NAT was invented to address IPv4 address scarcity, not
+   for security.
 
 4. **Forgetting about ARP when troubleshooting connectivity.** If you can ping by IP but not by
- name, that is a DNS problem. If you cannot ping a host on the same subnet, check ARP. If ARP
- shows an incomplete entry, the host may be down or a firewall is blocking ARP.
+   name, that is a DNS problem. If you cannot ping a host on the same subnet, check ARP. If ARP
+   shows an incomplete entry, the host may be down or a firewall is blocking ARP.
 
 5. **IPv6 is not optional anymore.** Major cloud providers (AWS, GCP, Azure) default to dual-stack
- or IPv6-only networking. Disabling IPv6 on Linux hosts (`ipv6.disable=1` kernel parameter) causes
- issues with applications that expect IPv6 loopback to be available. SSH, PostgreSQL, and MySQL
- may fail to start with IPv6 disabled.
+   or IPv6-only networking. Disabling IPv6 on Linux hosts (`ipv6.disable=1` kernel parameter) causes
+   issues with applications that expect IPv6 loopback to be available. SSH, PostgreSQL, and MySQL
+   may fail to start with IPv6 disabled.
 
 6. **DHCP failover without shared state.** If you run multiple DHCP servers, they must not offer the
- same address to different clients. Solutions include split scopes (each server serves a different
- range), DHCP failover protocol (RFC 3074), or a shared lease database (e.g., Kea with
- MySQL/PostgreSQL backend).
+   same address to different clients. Solutions include split scopes (each server serves a different
+   range), DHCP failover protocol (RFC 3074), or a shared lease database (e.g., Kea with
+   MySQL/PostgreSQL backend).
 
 7. **Ignoring link-local addressing.** Link-local addresses (`169.254.0.0/16` in IPv4, `fe80::/10`
- in IPv6) are used for critical protocols (ARP in IPv4, NDP in IPv6, mDNS, LLMNR). If link-local
- communication is blocked by a firewall or switch configuration, these protocols fail silently.
+   in IPv6) are used for critical protocols (ARP in IPv4, NDP in IPv6, mDNS, LLMNR). If link-local
+   communication is blocked by a firewall or switch configuration, these protocols fail silently.
 
 8. **Subnet overlap in multi-NIC hosts.** If a host has interfaces on overlapping subnets (e.g.,
- eth0: 192.168.1.0/24 and eth1: 192.168.1.0/24), the routing table may route traffic out the wrong
- interface. Always use non-overlapping subnets or configure policy routing.
+   eth0: 192.168.1.0/24 and eth1: 192.168.1.0/24), the routing table may route traffic out the wrong
+   interface. Always use non-overlapping subnets or configure policy routing.
 
 9. **CIDR boundary confusion.** The prefix length must divide cleanly at a power-of-two boundary.
- You cannot have a "10.0.0.0/23" that starts at 10.0.1.0 -- it must start at 10.0.0.0. The start
- address must have the host bits set to zero. `10.0.0.0/23` covers 10.0.0.0-10.0.1.255.
- `10.0.2.0/23` covers 10.0.2.0-10.0.3.255.
+   You cannot have a "10.0.0.0/23" that starts at 10.0.1.0 -- it must start at 10.0.0.0. The start
+   address must have the host bits set to zero. `10.0.0.0/23` covers 10.0.0.0-10.0.1.255.
+   `10.0.2.0/23` covers 10.0.2.0-10.0.3.255.
 
 ## IP Addressing on Linux
 
@@ -888,7 +891,7 @@ Allocations, prevent conflicts, and automate provisioning.
 ### IPAM Tools
 
 - **NetBox:** Open-source DCIM/IPAM tool by DigitalOcean. Tracks IP addresses, VLANs, racks,
- devices, and cables. REST API for automation.
+  devices, and cables. REST API for automation.
 - **phpIPAM:** Open-source PHP-based IPAM. Supports IPv4/IPv6, VLANs, VRFs, and subnet scanning.
 - **Infoblox:** Commercial DDI (DNS, DHCP, IPAM) platform. Widely used in enterprise environments.
 - **AWS VPC IPAM:** Managed IPAM service for AWS VPCs. Integrates with AWS resource tagging.

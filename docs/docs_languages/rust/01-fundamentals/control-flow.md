@@ -1,9 +1,12 @@
 ---
 id: control-flow
 title: Control Flow and Pattern Matching
-description: "Control Flow and Pattern Matching — `if` / `else`; `else if` Chains; Conditional Assignment Patterns; Blocks as Expressions."
+description:
+  'Control Flow and Pattern Matching — `if` / `else`; `else if` Chains; Conditional Assignment
+  Patterns; Blocks as Expressions.'
 slug: control-flow
 ---
+
 ## `if` / `else`
 
 Rust's `if` expression does not require parentheses around the condition, but braces around the body
@@ -460,8 +463,8 @@ fn parse_or_default(s: &str) -> u64 {
 }
 ```
 
-The `else` block can contain `return``break``continue``panic!`Or another diverging
-Expression. It cannot be a non-diverging block.
+The `else` block can contain `return``break``continue``panic!`Or another diverging Expression. It
+cannot be a non-diverging block.
 
 ### `while let`
 
@@ -998,40 +1001,40 @@ Not appear in production code.
 ## Common Pitfalls
 
 1. **Using `if` without braces.** Rust requires braces around the body of `if``else``while`And
- `for`. Unlike C, `if (x) return;` is invalid — you must write `if x { return; }`.
+   `for`. Unlike C, `if (x) return;` is invalid — you must write `if x { return; }`.
 
 2. **Forgetting `match` exhaustiveness.** Adding a new enum variant without updating all `match`
- expressions is a compile error. This is a feature, not a bug — it prevents silent logic errors.
- Do not paper over it with `_ => {}` unless the variant genuinely does not matter.
+   expressions is a compile error. This is a feature, not a bug — it prevents silent logic errors.
+   Do not paper over it with `_ => {}` unless the variant genuinely does not matter.
 
 3. **`if let` hiding missing arms.** `if let Some(x) = val` ignores the `None` case by default. If
- you need to handle both cases, use `match` or add an `else` block.
+   you need to handle both cases, use `match` or add an `else` block.
 
 4. **Shadowing in match arms.** Pattern bindings in match arms shadow outer variables with the same
- name. This is intentional but can be confusing. Use distinct names if shadowing would be unclear.
+   name. This is intentional but can be confusing. Use distinct names if shadowing would be unclear.
 
 5. **Match guards not participating in exhaustiveness.** The compiler cannot prove that a guard will
- always match, so `Some(x) if x > 0` does not cover all `Some` variants. You still need a
- catch-all arm.
+   always match, so `Some(x) if x > 0` does not cover all `Some` variants. You still need a
+   catch-all arm.
 
 6. **Using `loop` when `for` suffices.** `for` is preferred over `loop { ... next() }` because it is
- more idiomatic, handles iterator exhaustion automatically, and does not require manual `break`.
+   more idiomatic, handles iterator exhaustion automatically, and does not require manual `break`.
 
 7. **Labeled breaks on the wrong loop.** `'outer: loop { loop { break 'outer; } }` breaks the outer
- loop. Forgetting the label breaks only the inner loop. Use labels intentionally and document
- complex nesting.
+   loop. Forgetting the label breaks only the inner loop. Use labels intentionally and document
+   complex nesting.
 
 8. **Mutating through a `for` loop incorrectly.** `for item in &mut collection` requires `*item` to
- modify the value. Writing `item = new_value` rebinds the local variable without modifying the
- collection.
+   modify the value. Writing `item = new_value` rebinds the local variable without modifying the
+   collection.
 
 9. **Integer range off-by-one.** `1..5` produces `[1, 2, 3, 4]` (exclusive end). `1..=5` produces
- `[1, 2, 3, 4, 5]` (inclusive end). Mixing these up is a common source of bugs.
+   `[1, 2, 3, 4, 5]` (inclusive end). Mixing these up is a common source of bugs.
 
 10. **Using `?` in `main` without proper error types.** `main` can return `Result<(), E>` where
- `E: Debug`. Use `Box<dyn Error>` for heterogeneous errors, or a specific error type for
- consistency. The runtime prints the `Debug` representation, so ensure your error type has a
- useful `Debug` impl.
+    `E: Debug`. Use `Box<dyn Error>` for heterogeneous errors, or a specific error type for
+    consistency. The runtime prints the `Debug` representation, so ensure your error type has a
+    useful `Debug` impl.
 
 ## Control Flow Decision Guide
 

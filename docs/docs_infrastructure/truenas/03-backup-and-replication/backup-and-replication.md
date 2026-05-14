@@ -1,9 +1,12 @@
 ---
 id: backup-and-replication
 title: Backup and Replication
-description: "Backup and Replication — The 3-2-1 Backup Rule; ZFS Snapshots; Snapshot Lifecycle; Snapshot Types with worked examples and exam-style questions."
+description:
+  'Backup and Replication — The 3-2-1 Backup Rule; ZFS Snapshots; Snapshot Lifecycle; Snapshot Types
+  with worked examples and exam-style questions.'
 slug: backup-and-replication
 ---
+
 ## The 3-2-1 Backup Rule
 
 The 3-2-1 rule is the minimum standard for data protection:
@@ -16,12 +19,11 @@ ZFS makes this rule easy to implement:
 
 1. **Primary copy:** Your live ZFS pool.
 2. **Secondary copy:** A second ZFS pool (on the same NAS or a second NAS) via snapshot and
- send/receive.
+   send/receive.
 3. **Tertiary copy (offsite):** Cloud storage via TrueNAS Cloud Sync or a remote NAS via ZFS
- replication.
+   replication.
 
-:::warning
-The 3-2-1 rule is a minimum, not a maximum. For critical data, consider extending to
+:::warning The 3-2-1 rule is a minimum, not a maximum. For critical data, consider extending to
 3-2-1-1-0: 3 copies, 2 media, 1 offsite, 1 air-gapped (disconnected), 0 errors (verified restores).
 :::
 
@@ -41,24 +43,24 @@ graph LR
 
 ### Snapshot Types
 
-| Type | Trigger | Retention | Use Case |
+| Type             | Trigger            | Retention                   | Use Case                |
 | ---------------- | ------------------ | --------------------------- | ----------------------- |
-| Periodic | Cron schedule | Configured policy | Day-to-day protection |
-| Pre-dataset sync | Before replication | Until replication completes | Consistency |
-| Manual | Administrator | Manual | Before risky operations |
-| Boot environment | System update | Until rollback needed | System recovery |
+| Periodic         | Cron schedule      | Configured policy           | Day-to-day protection   |
+| Pre-dataset sync | Before replication | Until replication completes | Consistency             |
+| Manual           | Administrator      | Manual                      | Before risky operations |
+| Boot environment | System update      | Until rollback needed       | System recovery         |
 
 ### Snapshot Retention Policies
 
 TrueNAS provides built-in snapshot task scheduling with configurable retention:
 
-| Schedule | Naming Pattern | Retention | Typical Use |
+| Schedule         | Naming Pattern     | Retention | Typical Use            |
 | ---------------- | ------------------ | --------- | ---------------------- |
-| Every 15 minutes | `autosnap_15min` | 1 day | Active work, databases |
-| Hourly | `autosnap_hourly` | 2 days | General use |
-| Daily | `autosnap_daily` | 2 weeks | File servers |
-| Weekly | `autosnap_weekly` | 1 month | Media, archives |
-| Monthly | `autosnap_monthly` | 1 year | Long-term retention |
+| Every 15 minutes | `autosnap_15min`   | 1 day     | Active work, databases |
+| Hourly           | `autosnap_hourly`  | 2 days    | General use            |
+| Daily            | `autosnap_daily`   | 2 weeks   | File servers           |
+| Weekly           | `autosnap_weekly`  | 1 month   | Media, archives        |
+| Monthly          | `autosnap_monthly` | 1 year    | Long-term retention    |
 
 ### Snapshot Space Management
 
@@ -116,15 +118,15 @@ zfs send -Rcv tank/data@snapshot2 | \
 
 ### Send Flags
 
-| Flag | Meaning | When to Use |
+| Flag | Meaning                                     | When to Use                    |
 | ---- | ------------------------------------------- | ------------------------------ |
-| `-R` | Recursive — send all child datasets | Replicating entire hierarchies |
-| `-p` | Send properties | Preserving dataset settings |
-| `-c` | Compress data during transfer | Slow or metered network links |
-| `-v` | Verbose output | Monitoring progress |
-| `-i` | Incremental (from snapshot) | All subsequent replications |
-| `-w` | Raw send (preserves encryption) | Encrypted datasets |
-| `-L` | Large block send (for recordsize &gt; 128K) | Large recordsize datasets |
+| `-R` | Recursive — send all child datasets         | Replicating entire hierarchies |
+| `-p` | Send properties                             | Preserving dataset settings    |
+| `-c` | Compress data during transfer               | Slow or metered network links  |
+| `-v` | Verbose output                              | Monitoring progress            |
+| `-i` | Incremental (from snapshot)                 | All subsequent replications    |
+| `-w` | Raw send (preserves encryption)             | Encrypted datasets             |
+| `-L` | Large block send (for recordsize &gt; 128K) | Large recordsize datasets      |
 
 ### Bandwidth Limiting
 
@@ -145,14 +147,14 @@ zfs send -Rv tank/data@snapshot2 | \
 
 TrueNAS Cloud Sync supports:
 
-| Provider | Protocol | Encryption | Notes |
+| Provider             | Protocol      | Encryption        | Notes                |
 | -------------------- | ------------- | ----------------- | -------------------- |
-| Amazon S3 | S3 API | TLS + server-side | Most common |
-| Backblaze B2 | S3-compatible | TLS | Cost-effective |
-| Google Cloud Storage | S3-compatible | TLS | Good for GCP users |
-| Microsoft Azure Blob | Azure API | TLS | Good for Azure users |
-| Wasabi | S3-compatible | TLS | No egress fees |
-| MinIO | S3-compatible | TLS | Self-hosted S3 |
+| Amazon S3            | S3 API        | TLS + server-side | Most common          |
+| Backblaze B2         | S3-compatible | TLS               | Cost-effective       |
+| Google Cloud Storage | S3-compatible | TLS               | Good for GCP users   |
+| Microsoft Azure Blob | Azure API     | TLS               | Good for Azure users |
+| Wasabi               | S3-compatible | TLS               | No egress fees       |
+| MinIO                | S3-compatible | TLS               | Self-hosted S3       |
 
 ### Cloud Sync Configuration
 
@@ -160,21 +162,23 @@ TrueNAS Cloud Sync supports:
 2. Select the source (local dataset or snapshot).
 3. Select the cloud provider and configure credentials.
 4. Choose the transfer mode:
- - **Sync:** One-way mirror from local to cloud.
- - **Move:** Transfer to cloud and delete local copies.
+
+- **Sync:** One-way mirror from local to cloud.
+- **Move:** Transfer to cloud and delete local copies.
+
 5. Set the schedule (real-time, hourly, daily).
 6. Configure snapshot retention on the cloud side.
 
 ### Cloud Sync Considerations
 
 - **Egress costs:** Most cloud providers charge for data egress (download). Backblaze B2 and Wasabi
- are exceptions with no egress fees.
+  are exceptions with no egress fees.
 - **Upload bandwidth:** Uploading to cloud is limited by your ISP's upload speed. A 1 TB backup over
- a 50 Mbps upload connection takes ~48 hours.
+  a 50 Mbps upload connection takes ~48 hours.
 - **Encryption:** TrueNAS can encrypt data before uploading (client-side encryption), ensuring the
- cloud provider cannot read your data. Configure this under "Encryption" in the Cloud Sync task.
+  cloud provider cannot read your data. Configure this under "Encryption" in the Cloud Sync task.
 - **Versioning:** Enable cloud bucket versioning to protect against accidental deletion or
- ransomware.
+  ransomware.
 
 ---
 
@@ -187,7 +191,7 @@ Restore procedure:
 
 1. **Monthly:** Restore a random subset of files from the most recent backup and verify integrity.
 2. **Quarterly:** Perform a full dataset restore to a test environment and validate application
- functionality.
+   functionality.
 3. **Annually:** Test a bare-metal restore (pool recovery from replicated snapshots).
 
 ```bash
@@ -203,13 +207,13 @@ zfs destroy tank/data-test-restore
 Set up monitoring and alerting to detect backup failures:
 
 1. **Snapshot task failures:** TrueNAS sends alerts when snapshot tasks fail. Configure email
- notifications under **System** → **Alert Settings**.
+   notifications under **System** → **Alert Settings**.
 2. **Replication failures:** Monitor the replication task status and ensure the lag time between
- source and destination is within your RPO target.
+   source and destination is within your RPO target.
 3. **Cloud sync failures:** Cloud sync tasks can fail due to credential expiration, network issues,
- or quota limits. Set up alerting for these failures.
+   or quota limits. Set up alerting for these failures.
 4. **Storage capacity:** Monitor both local and remote backup storage capacity. A full backup
- destination is as bad as no backup.
+   destination is as bad as no backup.
 
 ---
 
@@ -220,24 +224,24 @@ Set up monitoring and alerting to detect backup failures:
 RPO defines the maximum acceptable data loss measured in time. If your RPO is 1 hour, your backup
 Strategy must ensure that no more than 1 hour of data can be lost.
 
-| RPO | Strategy | TrueNAS Configuration |
+| RPO                | Strategy                              | TrueNAS Configuration                        |
 | ------------------ | ------------------------------------- | -------------------------------------------- |
-| 0 (zero data loss) | Synchronous replication | Active-passive cluster with shared storage |
-| 15 minutes | Frequent snapshots + replication | Snapshot every 15 min, replicate immediately |
-| 1 hour | Hourly snapshots + replication | Snapshot every hour, replicate hourly |
-| 24 hours | Daily snapshots + daily replication | Snapshot daily, replicate daily |
-| 1 week | Weekly snapshots + weekly replication | Snapshot weekly, replicate weekly |
+| 0 (zero data loss) | Synchronous replication               | Active-passive cluster with shared storage   |
+| 15 minutes         | Frequent snapshots + replication      | Snapshot every 15 min, replicate immediately |
+| 1 hour             | Hourly snapshots + replication        | Snapshot every hour, replicate hourly        |
+| 24 hours           | Daily snapshots + daily replication   | Snapshot daily, replicate daily              |
+| 1 week             | Weekly snapshots + weekly replication | Snapshot weekly, replicate weekly            |
 
 ### Recovery Time Objective (RTO)
 
 RTO defines the maximum acceptable downtime after a disaster. If your RTO is 4 hours, you must be
 Able to restore service within 4 hours.
 
-| RTO | Strategy |
+| RTO     | Strategy                                              |
 | ------- | ----------------------------------------------------- |
-| Minutes | Active-passive cluster with automatic failover |
-| Hours | Standby hardware + ZFS replication + scripted restore |
-| Days | New hardware + cloud backup restore |
+| Minutes | Active-passive cluster with automatic failover        |
+| Hours   | Standby hardware + ZFS replication + scripted restore |
+| Days    | New hardware + cloud backup restore                   |
 
 ---
 
@@ -250,15 +254,15 @@ Window. This protects against ransomware that attempts to encrypt files and dele
 
 1. Configure a snapshot task with a retention period that exceeds your recovery window.
 2. TrueNAS SCALE supports "protected" snapshots that cannot be deleted manually within the retention
- period.
+   period.
 3. For maximum protection, replicate snapshots to a separate system where the replication
- destination has its own snapshot retention policy.
+   destination has its own snapshot retention policy.
 
 ### Defense in Depth
 
 1. **Immutable snapshots:** Prevent snapshot deletion.
 2. **Offsite replication:** Even if the primary system is compromised, the offsite copy is
- protected.
+   protected.
 3. **Air-gapped backup:** Periodically create a backup that is disconnected from the network.
 4. **User education:** Train users on phishing and suspicious attachments.
 5. **Network segmentation:** Limit access to the NAS from untrusted networks.
@@ -287,14 +291,14 @@ zfs mount -l tank/encrypted-data
 ### Encryption Considerations
 
 - **Performance impact:** AES-NI hardware acceleration makes the overhead negligible on modern CPUs
- ( 1–3%).
+  ( 1–3%).
 - **Key management:** You must securely store the encryption key/passphrase. Losing the key means
- losing the data permanently. Store keys in a password manager, hardware security module, or
- offline location.
+  losing the data permanently. Store keys in a password manager, hardware security module, or
+  offline location.
 - **Send/receive:** Encrypted datasets can be sent with raw mode (`-w`), preserving encryption
- without needing to decrypt and re-encrypt.
+  without needing to decrypt and re-encrypt.
 - **Backup implications:** If you replicate an encrypted dataset to an untrusted location, the
- destination cannot read the data without the key.
+  destination cannot read the data without the key.
 
 ---
 
@@ -376,7 +380,7 @@ Incrementals, without reading the source data again. This reduces the load on th
 1. **Initial full backup:** Read all data from source.
 2. **Daily incrementals:** Read only changed blocks from source.
 3. **Weekly synthetic full:** Construct full backup from incremental chain on the backup
- destination.
+   destination.
 
 TrueNAS supports synthetic full backups through its replication task configuration.
 
@@ -388,14 +392,14 @@ $$
 Time = \frac{Data\_Size}{Effective\_Bandwidth}
 $$
 
-Where `Effective_Bandwidth` accounts for compression, deduplication, and network overhead (
-50–80% of raw bandwidth).
+Where `Effective_Bandwidth` accounts for compression, deduplication, and network overhead ( 50–80%
+of raw bandwidth).
 
-| Backup Type | Data Size | Network Bandwidth | Effective Bandwidth | Time |
+| Backup Type      | Data Size | Network Bandwidth | Effective Bandwidth | Time        |
 | ---------------- | --------- | ----------------- | ------------------- | ----------- |
-| Full (1 TB) | 1 TB | 1 Gbps | 80 MB/s | ~3.5 hours |
-| Incremental (5%) | 50 GB | 1 Gbps | 80 MB/s | ~10 minutes |
-| Full (1 TB) | 1 TB | 100 Mbps | 8 MB/s | ~35 hours |
+| Full (1 TB)      | 1 TB      | 1 Gbps            | 80 MB/s             | ~3.5 hours  |
+| Incremental (5%) | 50 GB     | 1 Gbps            | 80 MB/s             | ~10 minutes |
+| Full (1 TB)      | 1 TB      | 100 Mbps          | 8 MB/s              | ~35 hours   |
 
 ## ZFS Snapshot Advanced Configuration
 
@@ -477,18 +481,18 @@ Backblaze B2 is a cost-effective alternative to AWS S3 for backup storage:
 
 ### RPO/RTO Matrix
 
-| Data Category | RPO | RTO | Backup Method | Recovery Procedure |
+| Data Category        | RPO    | RTO      | Backup Method                   | Recovery Procedure         |
 | -------------------- | ------ | -------- | ------------------------------- | -------------------------- |
-| Critical databases | 15 min | 1 hour | ZFS replication + snapshots | Failover to replica |
-| User files | 1 day | 4 hours | Daily snapshots + cloud sync | Restore from snapshot |
-| Media library | 1 week | 24 hours | Weekly snapshots + cloud sync | Restore from cloud |
-| System configuration | 1 day | 2 hours | Daily snapshots + config export | Reinstall + restore config |
+| Critical databases   | 15 min | 1 hour   | ZFS replication + snapshots     | Failover to replica        |
+| User files           | 1 day  | 4 hours  | Daily snapshots + cloud sync    | Restore from snapshot      |
+| Media library        | 1 week | 24 hours | Weekly snapshots + cloud sync   | Restore from cloud         |
+| System configuration | 1 day  | 2 hours  | Daily snapshots + config export | Reinstall + restore config |
 
 ### Disaster Recovery Runbook
 
 1. **Assess the disaster.** What was lost? Pool, server, site?
 2. **Verify backups are intact.** Log into the backup destination and verify recent snapshots exist
- and are readable.
+   and are readable.
 3. **Prioritize recovery.** Restore critical data first, then less critical data.
 4. **Test the restore.** Restore a sample of data and verify integrity.
 5. **Document the recovery.** Record what was restored, what was lost, and the timeline.
@@ -500,9 +504,9 @@ If the entire TrueNAS server is lost (fire, flood, theft):
 1. **Procure replacement hardware.** Match the original specifications if possible.
 2. **Install TrueNAS on the new hardware.**
 3. **Import the remote replica pool.** If using ZFS replication, the remote pool can be imported
- directly.
+   directly.
 4. **Configure services.** Restore SMB shares, NFS exports, users, and permissions from the
- configuration backup.
+   configuration backup.
 5. **Verify data integrity.** Run a scrub on the imported pool.
 6. **Restore any data not in the replication.** Use cloud sync or offline backups.
 
@@ -531,12 +535,12 @@ zfs get encryption tank/encrypted
 
 Encryption keys can be managed in several ways:
 
-| Method | Storage | Security | Convenience |
+| Method     | Storage            | Security         | Convenience |
 | ---------- | ------------------ | ---------------- | ----------- |
-| Passphrase | Human memory | High (if strong) | Medium |
-| Key file | File on disk/USB | Medium | High |
-| Hex key | Configuration file | Medium | High |
-| PKCS#11 | Hardware token | Very High | Low |
+| Passphrase | Human memory       | High (if strong) | Medium      |
+| Key file   | File on disk/USB   | Medium           | High        |
+| Hex key    | Configuration file | Medium           | High        |
+| PKCS#11    | Hardware token     | Very High        | Low         |
 
 ### Key Escrow
 
@@ -546,10 +550,8 @@ Store encryption keys in a secure, offsite location:
 2. **Physical copy:** Write the passphrase on paper and store in a safe deposit box.
 3. **Key escrow service:** Some password managers offer key escrow for trusted contacts.
 
-:::danger
-If you lose the encryption key, all data on the encrypted dataset is permanently
-Irrecoverable. There is no backdoor. Always have a verified backup of the key.
-:::
+:::danger If you lose the encryption key, all data on the encrypted dataset is permanently
+Irrecoverable. There is no backdoor. Always have a verified backup of the key. :::
 
 ## Backup Monitoring and Alerting
 
@@ -557,14 +559,14 @@ Irrecoverable. There is no backdoor. Always have a verified backup of the key.
 
 Configure alerts under **System** → **Alert Settings** → **Advanced**:
 
-| Alert Condition | Severity | Action |
+| Alert Condition                  | Severity | Action                             |
 | -------------------------------- | -------- | ---------------------------------- |
-| Snapshot task failed | Critical | Investigate immediately |
-| Replication lag exceeds 24 hours | Warning | Check network and destination |
-| Cloud sync failed | Critical | Check credentials and connectivity |
-| Pool capacity above 80% | Warning | Plan expansion |
-| SMART predictive failure | Critical | Replace drive immediately |
-| Scrub errors found | Critical | Investigate and repair |
+| Snapshot task failed             | Critical | Investigate immediately            |
+| Replication lag exceeds 24 hours | Warning  | Check network and destination      |
+| Cloud sync failed                | Critical | Check credentials and connectivity |
+| Pool capacity above 80%          | Warning  | Plan expansion                     |
+| SMART predictive failure         | Critical | Replace drive immediately          |
+| Scrub errors found               | Critical | Investigate and repair             |
 
 ### Backup Health Dashboard
 
@@ -674,8 +676,7 @@ zfs get receive_resume_token backup/data
 zfs recv -s backup/data <<< "$(zfs get -H -o value receive_resume_token backup/data)"
 ```
 
-:::tip
-Resume tokens expire after approximately 5 minutes of inactivity in some implementations. For
+:::tip Resume tokens expire after approximately 5 minutes of inactivity in some implementations. For
 Very large transfers over unreliable networks, consider using `mbuffer` as a network buffer to
 Absorb short interruptions:
 
@@ -820,13 +821,13 @@ graph LR
 
 ### RPO/RTO Matrix by Workload
 
-| Workload | Acceptable RPO | Acceptable RTO | Recommended Strategy |
+| Workload                | Acceptable RPO     | Acceptable RTO | Recommended Strategy                            |
 | ----------------------- | ------------------ | -------------- | ----------------------------------------------- |
-| Production database | 0 (zero data loss) | 15-30 min | Synchronous replication + streaming replication |
-| File server (documents) | 1 hour | 4 hours | Hourly snapshots + 4-hourly replication |
-| Media library | 24 hours | 24 hours | Daily snapshots + daily replication |
-| Development environment | 24 hours | 48 hours | Daily snapshots + weekly replication |
-| Archive/cold storage | 7 days | 72 hours | Weekly snapshots + monthly cloud sync |
+| Production database     | 0 (zero data loss) | 15-30 min      | Synchronous replication + streaming replication |
+| File server (documents) | 1 hour             | 4 hours        | Hourly snapshots + 4-hourly replication         |
+| Media library           | 24 hours           | 24 hours       | Daily snapshots + daily replication             |
+| Development environment | 24 hours           | 48 hours       | Daily snapshots + weekly replication            |
+| Archive/cold storage    | 7 days             | 72 hours       | Weekly snapshots + monthly cloud sync           |
 
 ## Cloud Sync Error Handling and Retention
 
@@ -864,11 +865,11 @@ midclt call cloudsync.update 1 '{
 
 Retention strategies:
 
-| Strategy | When to Use | Trade-offs |
+| Strategy                      | When to Use                  | Trade-offs                            |
 | ----------------------------- | ---------------------------- | ------------------------------------- |
-| Count-based (keep last N) | Unpredictable snapshot sizes | May keep too much or too little data |
-| Time-based (keep last N days) | Predictable recovery window | Storage usage varies with change rate |
-| Custom (count + lifetime) | Balanced approach | More complex to reason about |
+| Count-based (keep last N)     | Unpredictable snapshot sizes | May keep too much or too little data  |
+| Time-based (keep last N days) | Predictable recovery window  | Storage usage varies with change rate |
+| Custom (count + lifetime)     | Balanced approach            | More complex to reason about          |
 
 ### Handling Rate Limits
 
@@ -984,11 +985,9 @@ midclt call cloudsync.update 1 '{
 }'
 ```
 
-:::warning
-If you lose the encryption key, all cloud backups become permanently unrecoverable. Store
+:::warning If you lose the encryption key, all cloud backups become permanently unrecoverable. Store
 Encryption keys in multiple secure locations: a password manager, a hardware security key, and a
-Printed copy in a physical safe. Never store encryption keys alongside the backups themselves.
-:::
+Printed copy in a physical safe. Never store encryption keys alongside the backups themselves. :::
 
 ### Compliance Considerations
 
@@ -997,11 +996,11 @@ Encryption procedures:
 
 - **Data classification:** Identify which datasets contain regulated data.
 - **Encryption at rest:** Cloud storage providers encrypt at rest, but client-side encryption adds a
- layer of protection against provider-side breaches.
+  layer of protection against provider-side breaches.
 - **Data residency:** Some regulations require data to remain in specific geographic regions. Choose
- cloud providers with data centers in compliant regions.
+  cloud providers with data centers in compliant regions.
 - **Retention policies:** Regulations may mandate minimum or maximum retention periods. Configure
- snapshot and cloud sync retention accordingly.
+  snapshot and cloud sync retention accordingly.
 - **Audit trail:** Enable logging for all backup and restoration operations.
 
 ```bash

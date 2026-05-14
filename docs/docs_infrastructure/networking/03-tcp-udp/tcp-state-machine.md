@@ -1,13 +1,16 @@
 ---
 id: tcp-state-machine
 title: TCP State Machine
-description: "Networking: TCP State Machine — The 11 TCP States; State Diagram; Normal Open: The Three-Way Handshake; State Trace: Client Side."
+description:
+  'Networking: TCP State Machine — The 11 TCP States; State Diagram; Normal Open: The Three-Way
+  Handshake; State Trace: Client Side.'
 slug: tcp-state-machine
 tags:
   - Networking
 categories:
   - Networking
 ---
+
 ## Overview
 
 The TCP connection state machine (defined in RFC 793, with updates in RFC 1122) is one of the most
@@ -24,19 +27,19 @@ Production.
 
 TCP defines 11 states. An endpoint is always in exactly one of these states:
 
-| State | Description |
+| State       | Description                                          |
 | ----------- | ---------------------------------------------------- |
-| CLOSED | No connection. Initial state. |
-| LISTEN | Waiting for connection requests. |
-| SYN_SENT | Sent SYN, waiting for response. |
-| SYN_RCVD | Received SYN, sent SYN+ACK, waiting for ACK. |
-| ESTABLISHED | Connection open. Data transfer in progress. |
-| FIN_WAIT_1 | Initiated close, sent FIN, waiting for ACK or FIN. |
-| FIN_WAIT_2 | Received ACK for our FIN, waiting for peer's FIN. |
-| CLOSE_WAIT | Received peer's FIN, waiting for local close. |
-| LAST_ACK | Sent our FIN after peer closed, waiting for ACK. |
-| TIME_WAIT | Waited for peer's ACK after our close. 2\*MSL timer. |
-| CLOSING | Both sides sent FIN simultaneously, waiting for ACK. |
+| CLOSED      | No connection. Initial state.                        |
+| LISTEN      | Waiting for connection requests.                     |
+| SYN_SENT    | Sent SYN, waiting for response.                      |
+| SYN_RCVD    | Received SYN, sent SYN+ACK, waiting for ACK.         |
+| ESTABLISHED | Connection open. Data transfer in progress.          |
+| FIN_WAIT_1  | Initiated close, sent FIN, waiting for ACK or FIN.   |
+| FIN_WAIT_2  | Received ACK for our FIN, waiting for peer's FIN.    |
+| CLOSE_WAIT  | Received peer's FIN, waiting for local close.        |
+| LAST_ACK    | Sent our FIN after peer closed, waiting for ACK.     |
+| TIME_WAIT   | Waited for peer's ACK after our close. 2\*MSL timer. |
+| CLOSING     | Both sides sent FIN simultaneously, waiting for ACK. |
 
 ## State Diagram
 
@@ -191,8 +194,8 @@ ss -tan state fin-wait-2 | wc -l
 :::warning
 
 If you see thousands of FIN_WAIT_2 connections on a server, the remote peers are not closing their
-Side of the connection. This is a client application bug (not calling `close()` or
-`shutdown()`) or a firewall silently dropping the peer's FIN.
+Side of the connection. This is a client application bug (not calling `close()` or `shutdown()`) or
+a firewall silently dropping the peer's FIN.
 
 :::
 
@@ -245,14 +248,14 @@ Both sides end up in TIME_WAIT and must wait 2\*MSL before fully closing.
 TIME_WAIT exists for two critical reasons (RFC 793 Section 3.5):
 
 1. **To ensure the last ACK is received.** The active closer sends the final ACK and enters
- TIME_WAIT. If the passive closer never receives this ACK, it retransmits FIN. The TIME_WAIT
- endpoint must still be alive to re-ACK. Without TIME_WAIT, a new connection could receive the
- stale FIN and break.
+   TIME_WAIT. If the passive closer never receives this ACK, it retransmits FIN. The TIME_WAIT
+   endpoint must still be alive to re-ACK. Without TIME_WAIT, a new connection could receive the
+   stale FIN and break.
 
 2. **To allow stale segments to expire.** Any delayed or duplicated segments from the old connection
- must have time to arrive and be discarded before a new connection reuses the same 4-tuple (source
- IP, source port, destination IP, destination port). MSL (Maximum Segment Lifetime) is 
- 30-60 seconds, so 2\*MSL is 60-120 seconds.
+   must have time to arrive and be discarded before a new connection reuses the same 4-tuple (source
+   IP, source port, destination IP, destination port). MSL (Maximum Segment Lifetime) is 30-60
+   seconds, so 2\*MSL is 60-120 seconds.
 
 ### Problems at Scale
 
@@ -395,11 +398,11 @@ A half-open connection occurs when one side believes the connection is establish
 Side does not. Common causes:
 
 1. **Network partition.** One side sends data, the network goes down, the other side never receives
- it. When the network recovers, the sender still thinks the connection is alive.
+   it. When the network recovers, the sender still thinks the connection is alive.
 2. **Application crash without close.** The crashed side's kernel does not send FIN. The other side
- has an open connection to nowhere.
+   has an open connection to nowhere.
 3. **Firewall dropping FIN.** A stateful firewall drops the FIN packet, leaving one side in
- ESTABLISHED and the other in CLOSE_WAIT or LAST_ACK.
+   ESTABLISHED and the other in CLOSE_WAIT or LAST_ACK.
 
 ### Detecting Half-Open Connections
 
@@ -460,17 +463,17 @@ ss -s
 
 ### State-by-State Diagnostic Guide
 
-| State | Meaning | Common Cause |
+| State       | Meaning                                     | Common Cause                                              |
 | ----------- | ------------------------------------------- | --------------------------------------------------------- |
-| ESTABLISHED | Normal data transfer | Healthy |
-| TIME_WAIT | Active close completed, waiting 2\*MSL | Normal, but excessive = port exhaustion |
-| CLOSE_WAIT | Remote closed, local app has not closed | Application bug -- not calling `close()` on the socket |
-| FIN_WAIT_1 | Local sent FIN, waiting for ACK or FIN | Normal close sequence |
-| FIN_WAIT_2 | Local FIN ACKed, waiting for remote FIN | Remote app not closing (crash, bug) |
-| LAST_ACK | Local sent FIN after remote close, wait ACK | Normal close sequence |
-| SYN_SENT | Sent SYN, no response yet | Remote unreachable, firewall blocking, port not listening |
-| SYN_RCVD | Received SYN, waiting for ACK | Normal handshake, or SYN flood |
-| CLOSING | Simultaneous close, waiting for ACK | Rare, both sides closed at once |
+| ESTABLISHED | Normal data transfer                        | Healthy                                                   |
+| TIME_WAIT   | Active close completed, waiting 2\*MSL      | Normal, but excessive = port exhaustion                   |
+| CLOSE_WAIT  | Remote closed, local app has not closed     | Application bug -- not calling `close()` on the socket    |
+| FIN_WAIT_1  | Local sent FIN, waiting for ACK or FIN      | Normal close sequence                                     |
+| FIN_WAIT_2  | Local FIN ACKed, waiting for remote FIN     | Remote app not closing (crash, bug)                       |
+| LAST_ACK    | Local sent FIN after remote close, wait ACK | Normal close sequence                                     |
+| SYN_SENT    | Sent SYN, no response yet                   | Remote unreachable, firewall blocking, port not listening |
+| SYN_RCVD    | Received SYN, waiting for ACK               | Normal handshake, or SYN flood                            |
+| CLOSING     | Simultaneous close, waiting for ACK         | Rare, both sides closed at once                           |
 
 ### CLOSE_WAIT Accumulation
 
@@ -524,15 +527,15 @@ sysctl -w net.ipv4.tcp_keepalive_probes=6
 
 ### Keepalive vs Application-Level Heartbeats
 
-| Aspect | TCP Keepalive | Application Heartbeat |
+| Aspect          | TCP Keepalive                | Application Heartbeat     |
 | --------------- | ---------------------------- | ------------------------- |
-| Granularity | Per-connection | Per-session |
-| Detection time | Minutes to hours (default) | Seconds (tunable) |
-| NAT traversal | Resets NAT timeout | Same |
-| Overhead | Minimal (kernel-level) | Application code |
-| Data path | Does not pass to application | Application processes it |
-| Configurability | System-wide (sysctl) | Per-connection (app code) |
-| Failure signal | `ECONNRESET` or `ETIMEDOUT` | Application-defined |
+| Granularity     | Per-connection               | Per-session               |
+| Detection time  | Minutes to hours (default)   | Seconds (tunable)         |
+| NAT traversal   | Resets NAT timeout           | Same                      |
+| Overhead        | Minimal (kernel-level)       | Application code          |
+| Data path       | Does not pass to application | Application processes it  |
+| Configurability | System-wide (sysctl)         | Per-connection (app code) |
+| Failure signal  | `ECONNRESET` or `ETIMEDOUT`  | Application-defined       |
 
 :::tip
 
@@ -616,11 +619,11 @@ ss -tani | grep -i wscale
 TCP timestamps serve two purposes:
 
 1. **PAWS (Protection Against Wrapped Sequences).** At high speeds, the 32-bit sequence number wraps
- quickly. On a 10 Gbps link, the sequence space wraps in ~3.4 seconds. Timestamps allow the
- receiver to distinguish between old and new segments with the same sequence number.
+   quickly. On a 10 Gbps link, the sequence space wraps in ~3.4 seconds. Timestamps allow the
+   receiver to distinguish between old and new segments with the same sequence number.
 2. **RTT measurement.** The sender includes a timestamp value (TSval), and the receiver echoes it
- (TSecr). This provides per-segment RTT measurement, which is critical for accurate RTT estimation
- used by congestion control.
+   (TSecr). This provides per-segment RTT measurement, which is critical for accurate RTT estimation
+   used by congestion control.
 
 ```bash
 # Check if timestamps are enabled
@@ -730,8 +733,8 @@ SRTT   = (1 - beta) * SRTT + beta * R                   (beta = 1/4)
 RTO    = SRTT + max(G, 4 * RTTVAR)                      (G = clock granularity)
 ```
 
-The initial RTO is 1 second. The minimum RTO is 200ms (RFC 6298). The maximum RTO is 
-60-120 seconds depending on the implementation.
+The initial RTO is 1 second. The minimum RTO is 200ms (RFC 6298). The maximum RTO is 60-120 seconds
+depending on the implementation.
 
 ```bash
 # View TCP retransmission statistics
@@ -751,8 +754,8 @@ As covered earlier, TCP keepalive sends probes after `tcp_keepalive_time` second
 
 ### 2MSL Timer
 
-The TIME_WAIT timer is set to 2 \* MSL (Maximum Segment Lifetime). MSL is 30 seconds
-(Linux), so TIME_WAIT lasts 60 seconds.
+The TIME_WAIT timer is set to 2 \* MSL (Maximum Segment Lifetime). MSL is 30 seconds (Linux), so
+TIME_WAIT lasts 60 seconds.
 
 ## TCP Congestion Control and State Interactions
 

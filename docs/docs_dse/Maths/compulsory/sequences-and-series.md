@@ -1,6 +1,8 @@
 ---
 title: Sequences and Series
-description: "DSE Mathematics sequences and series notes covering arithmetic sequences, geometric sequences, series summation, sigma notation, and convergence tests."
+description:
+  'DSE Mathematics sequences and series notes covering arithmetic sequences, geometric sequences,
+  series summation, sigma notation, and convergence tests.'
 date: 2025-08-16T17:59:54.768Z
 tags:
   - maths
@@ -17,10 +19,10 @@ Covers arithmetic and geometric progressions, sigma notation manipulation, and r
 
 ### Sequences
 
-A **sequence** is a function $a: \mathbb{'\{'}N{'\}'} \to \mathbb{'\{'}R{'\}'}$ (or a subset of $\mathbb{'\{'}N{'\}'}$). We write
-The sequence as $a_1, a_2, a_3, \ldots$Or $\{a_n\}$. Each $a_n$ is called a **term** of the
-Sequence. The expression $a_n$ giving the $n$-th term in terms of $n$ is the **general term** or
-**formula for the $n$-th term**.
+A **sequence** is a function $a: \mathbb{'\{'}N{'\}'} \to \mathbb{'\{'}R{'\}'}$ (or a subset of
+$\mathbb{'\{'}N{'\}'}$). We write The sequence as $a_1, a_2, a_3, \ldots$Or $\{a_n\}$. Each $a_n$ is
+called a **term** of the Sequence. The expression $a_n$ giving the $n$-th term in terms of $n$ is
+the **general term** or **formula for the $n$-th term**.
 
 ### Series
 
@@ -435,20 +437,20 @@ Since $a_n \gt 0$$L = 2$.
 ## Common Pitfalls
 
 - **Confusing $a_n$ and $S_n$.** $a_n$ is a single term; $S_n$ is the sum up to that term. Read the
- question carefully.
+  question carefully.
 - **Off-by-one errors in the $n$-th term formula.** The formula is $a_n = a_1 + (n-1)d$Not
- $a_1 + nd$. The exponent in the geometric formula is $r^{n-1}$Not $r^n$.
+  $a_1 + nd$. The exponent in the geometric formula is $r^{n-1}$Not $r^n$.
 - **Forgetting the convergence condition for infinite series.** $S_\infty = \frac{a_1}{1-r}$ is only
- valid when $|r| \lt 1$. If $|r| \geq 1$The sum does not exist.
+  valid when $|r| \lt 1$. If $|r| \geq 1$The sum does not exist.
 - **Mixing up the common ratio and common difference.** $d$ is for arithmetic (difference), $r$ is
- for geometric (ratio).
+  for geometric (ratio).
 - **Sigma notation index errors.** When shifting indices, verify by checking the first and last
- terms. $\sum_{k=1}^{n} a_k \neq \sum_{k=0}^{n} a_k$ .
+  terms. $\sum_{k=1}^{n} a_k \neq \sum_{k=0}^{n} a_k$ .
 - **Assuming a recurrence converges without justification.** Setting $L = f(L)$ gives candidate
- limits. You still need to verify the sequence actually converges (e.g., via the Monotone
- Convergence Theorem).
-- **Arithmetic series formula with wrong $n$.** If asked to sum from $a_3$ to $a_{10}$The number
- of terms is $10 - 3 + 1 = 8$Not 10 or 7.
+  limits. You still need to verify the sequence actually converges (e.g., via the Monotone
+  Convergence Theorem).
+- **Arithmetic series formula with wrong $n$.** If asked to sum from $a_3$ to $a_{10}$The number of
+  terms is $10 - 3 + 1 = 8$Not 10 or 7.
 
 ---
 
@@ -458,10 +460,10 @@ Since $a_n \gt 0$$L = 2$.
 <summary>Wrap-up Questions</summary>
 
 1. **Question:** A student starts a savings plan. In the first year, they deposit USD 1,200. In each
- subsequent year, they increase their deposit by a constant USD 300. After 5 years of deposits,
- they stop adding money and invest the total accumulated amount in an account that earns 6%
- interest compounded annually. What is the value of the investment 10 years after they made their
- _last_ deposit?
+   subsequent year, they increase their deposit by a constant USD 300. After 5 years of deposits,
+   they stop adding money and invest the total accumulated amount in an account that earns 6%
+   interest compounded annually. What is the value of the investment 10 years after they made their
+   _last_ deposit?
 
 <details>
 <summary>Answer</summary>
@@ -485,9 +487,9 @@ Sequence application).
 </details>
 
 2. **Question:** A patient is given an initial dose of 20mg of a medication. Every day, they take a
- 10mg maintenance dose. The drug is eliminated from the body such that 50% of the total amount is
- removed every 24 hours. What is the limiting amount of the drug in the body in the long run
- (i.e., the steady state amount)?
+   10mg maintenance dose. The drug is eliminated from the body such that 50% of the total amount is
+   removed every 24 hours. What is the limiting amount of the drug in the body in the long run
+   (i.e., the steady state amount)?
 
 <details>
 <summary>Answer</summary>
@@ -512,7 +514,7 @@ Relations and finding the fixed point or steady state of the system by taking th
 </details>
 
 3. **Question:** Find the exact sum of the infinite series
- $\sum_{n=1}^{\infty} \frac{1}{n(n+1)(n+2)}$.
+   $\sum_{n=1}^{\infty} \frac{1}{n(n+1)(n+2)}$.
 
 <details>
 <summary>Answer</summary>
@@ -542,10 +544,10 @@ Denominators and identifying the cancellation pattern in telescoping series.
 </details>
 
 4. **Question:** The area of a Koch snowflake can be found by summing an infinite series. Start with
- an equilateral triangle of area $A$. At each step, a new equilateral triangle is added to the
- middle third of each existing side. The new triangle's side length is 1/3 of the side it's added
- to. Find the total area of the snowflake after an infinite number of steps in terms of the
- initial area $A$.
+   an equilateral triangle of area $A$. At each step, a new equilateral triangle is added to the
+   middle third of each existing side. The new triangle's side length is 1/3 of the side it's added
+   to. Find the total area of the snowflake after an infinite number of steps in terms of the
+   initial area $A$.
 
 <details>
 <summary>Answer</summary>
@@ -579,9 +581,9 @@ First term and common ratio of the resulting geometric series, and calculating t
 </details>
 
 5. **Question:** A student is trying to determine if the series
- $\sum_{n=1}^{\infty} \frac{n^2+n}{n^3+2}$ converges. They first try the Ratio Test, but find it
- inconclusive. Show why the Ratio Test is inconclusive, and then use a more appropriate test to
- definitively determine convergence or divergence.
+   $\sum_{n=1}^{\infty} \frac{n^2+n}{n^3+2}$ converges. They first try the Ratio Test, but find it
+   inconclusive. Show why the Ratio Test is inconclusive, and then use a more appropriate test to
+   definitively determine convergence or divergence.
 
 <details>
 <summary>Answer</summary>
@@ -611,8 +613,8 @@ Appropriate p-series to compare with.
 </details>
 
 6. **Question:** A programmer needs to approximate $\cos(0.2)$ for a low-power device. They decide
- to use a Maclaurin polynomial. What is the minimum degree of the polynomial required to guarantee
- an approximation error less than $10^{-7}$?
+   to use a Maclaurin polynomial. What is the minimum degree of the polynomial required to guarantee
+   an approximation error less than $10^{-7}$?
 
 <details>
 <summary>Answer</summary>
@@ -636,8 +638,8 @@ It applies to Taylor series approximations for functions like sine and cosine.
 </details>
 
 7. **Question:** The function $f(x) = \sin(x^2)$ is notoriously difficult to integrate. Approximate
- the value of the definite integral $\int_0^1 \sin(x^2) dx$ by integrating the first three
- non-zero terms of its Maclaurin series.
+   the value of the definite integral $\int_0^1 \sin(x^2) dx$ by integrating the first three
+   non-zero terms of its Maclaurin series.
 
 <details>
 <summary>Answer</summary>
@@ -664,9 +666,9 @@ Definite integral.
 </details>
 
 8. **Question:** A ball is dropped from a height of 10 meters. After each bounce, it returns to 75%
- of its previous height. The time it takes to fall from a height $h$ is $\sqrt{h/5}$ seconds, and
- the time it takes to rise to a height $h$ is also $\sqrt{h/5}$ seconds. What is the total time
- the ball is in the air?
+   of its previous height. The time it takes to fall from a height $h$ is $\sqrt{h/5}$ seconds, and
+   the time it takes to rise to a height $h$ is also $\sqrt{h/5}$ seconds. What is the total time
+   the ball is in the air?
 
 <details>
 <summary>Answer</summary>
@@ -698,7 +700,7 @@ Geometric series.
 </details>
 
 9. **Question:** Show that the series $\sum_{n=2}^{\infty} \frac{(-1)^n}{\sqrt{n} \ln(n)}$ is
- conditionally convergent.
+   conditionally convergent.
 
 <details>
 <summary>Answer</summary>
@@ -726,7 +728,7 @@ Suitable bounding function (like comparing $\ln(n)$ to a power of $n$).
 </details>
 
 10. **Question:** Find the complete interval of convergence for the power series
- $\sum_{n=1}^{\infty} \frac{(2x-5)^n}{n \cdot 3^n}$.
+    $\sum_{n=1}^{\infty} \frac{(2x-5)^n}{n \cdot 3^n}$.
 
 <details>
 <summary>Answer</summary>
@@ -758,9 +760,9 @@ AST).
 </details>
 
 11. **Question:** A sequence is defined by the recurrence relation
- $a_{n+1} = \frac{1}{2}(a_n + \frac{9}{a_n})$ with $a_1 = 1$. Assuming the sequence converges,
- what is its limit? Then, calculate the first four terms of the sequence to observe its rate of
- convergence.
+    $a_{n+1} = \frac{1}{2}(a_n + \frac{9}{a_n})$ with $a_1 = 1$. Assuming the sequence converges,
+    what is its limit? Then, calculate the first four terms of the sequence to observe its rate of
+    convergence.
 
 <details>
 <summary>Answer</summary>
@@ -786,7 +788,7 @@ Convergent recursive sequence and performing iterative calculations.
 </details>
 
 12. **Question:** Determine if the series $\sum_{n=1}^\infty \left(1 - \frac{1}{n}\right)^{n^2}$
- converges or diverges. (Hint: A test other than the Ratio Test will be much more effective).
+    converges or diverges. (Hint: A test other than the Ratio Test will be much more effective).
 
 <details>
 <summary>Answer</summary>
@@ -840,11 +842,11 @@ The terms are not consecutive.
 </details>
 
 14. **Question:** A bank offers a special savings account. If you deposit USD 100 on the first day
- of the month, they add a USD 1 bonus at the end of the month. If you deposit USD 100 on the
- first day of the next month, they add a USD 2 bonus, and so on, with the bonus increasing by USD
- 1 each month. You deposit USD 100 each month for 2 years (24 months). What is the total amount
- of money in the account immediately after the 24th month's bonus is paid? (Assume no other
- interest is paid).
+    of the month, they add a USD 1 bonus at the end of the month. If you deposit USD 100 on the
+    first day of the next month, they add a USD 2 bonus, and so on, with the bonus increasing by USD
+    1 each month. You deposit USD 100 each month for 2 years (24 months). What is the total amount
+    of money in the account immediately after the 24th month's bonus is paid? (Assume no other
+    interest is paid).
 
 <details>
 <summary>Answer</summary>
@@ -867,8 +869,8 @@ Parts and recognizing how to apply the formula for the sum of a simple arithmeti
 </details>
 
 15. **Question:** Using the Maclaurin series for $e^x$Find the exact value of the sum
- $\sum_{n=0}^{\infty} \frac{2^n}{n!}$. Then, use this result to find the sum of the related
- series $\sum_{n=2}^{\infty} \frac{2^n}{(n-1)!}$.
+    $\sum_{n=0}^{\infty} \frac{2^n}{n!}$. Then, use this result to find the sum of the related
+    series $\sum_{n=2}^{\infty} \frac{2^n}{(n-1)!}$.
 
 <details>
 <summary>Answer</summary>
@@ -893,7 +895,7 @@ Index manipulation (re-indexing) to transform a given series into a more familia
 </details>
 
 16. **Question:** The sum $\sum_{k=1}^n k^2 = \frac{n(n+1)(2n+1)}{6}$ is a well-known formula. Use
- this to find the value of the series $\sum_{k=5}^{20} (3k^2 - 5)$.
+    this to find the value of the series $\sum_{k=5}^{20} (3k^2 - 5)$.
 
 <details>
 <summary>Answer</summary>
@@ -916,7 +918,7 @@ Change the starting and ending indices of a sum to match a known formula.
 </details>
 
 17. **Question:** Does the series $\sum_{n=1}^\infty \frac{n^n}{n!}$ converge or diverge? Justify
- your answer with an appropriate test.
+    your answer with an appropriate test.
 
 <details>
 <summary>Answer</summary>
@@ -939,7 +941,7 @@ And the application of the Ratio Test leading to the limit definition of $e$.
 </details>
 
 18. **Question:** A sequence is defined recursively by $x_1 = \sqrt{2}$ and
- $x_{n+1} = \sqrt{2 + x_n}$ for $n \ge 1$. Prove that this sequence converges and find its limit.
+    $x_{n+1} = \sqrt{2 + x_n}$ for $n \ge 1$. Prove that this sequence converges and find its limit.
 
 <details>
 <summary>Answer</summary>
@@ -976,18 +978,20 @@ Defined sequence.
 
 </details>
 
-For the A-Level treatment of this topic, see [Sequences and Series](https://alevel.wyattau.com/docs/maths/pure-mathematics/sequences-and-series).
+For the A-Level treatment of this topic, see
+[Sequences and Series](https://alevel.wyattau.com/docs/maths/pure-mathematics/sequences-and-series).
 
 ---
 
-:::tip
-Tip
-Ready to test your understanding of **Sequences and Series**? The [diagnostic test](/docs/dse/Maths/diagnostics/diag-sequences-series) contains the hardest questions within the DSE specification for this topic, each with a full worked solution.
+:::tip Tip Ready to test your understanding of **Sequences and Series**? The
+[diagnostic test](/docs/dse/Maths/diagnostics/diag-sequences-series) contains the hardest questions
+within the DSE specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Sequences and Series with other DSE mathematics topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Sequences
+and Series with other DSE mathematics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/dse/Maths/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/dse/Maths/diagnostics/diagnostic-guide) for instructions on
+self-marking and building a personal test matrix. :::
 
 ## Summary
 

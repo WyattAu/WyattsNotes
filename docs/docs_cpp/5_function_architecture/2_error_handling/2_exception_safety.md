@@ -1,6 +1,8 @@
 ---
 title: Exception Safety Guarantees
-description: "C++: Exception Safety Guarantees — 2.1 No-Throw Guarantee (Strongest); Conditional `noexcept` and Exception Propagation; Destructors and `noexcept`."
+description:
+  'C++: Exception Safety Guarantees — 2.1 No-Throw Guarantee (Strongest); Conditional `noexcept` and
+  Exception Propagation; Destructors and `noexcept`.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -8,6 +10,7 @@ categories:
   - Cpp
 slug: exception-safety-guarantees
 ---
+
 # Exception Safety Guarantees
 
 The exception safety taxonomy, formalized by Abrahams (2001) and referenced in the C++ Standard
@@ -463,31 +466,31 @@ int main() {
 }
 ```
 
-| Guarantee | Resource Safety | State Consistency | Example |
+| Guarantee | Resource Safety | State Consistency      | Example                           |
 | --------- | --------------- | ---------------------- | --------------------------------- |
-| No-throw | Yes | Guaranteed identical | `swap()`Destructors |
-| Strong | Yes | Rolled back on failure | `std::vector::push_back` (C++11+) |
-| Basic | Yes | Valid but unspecified | `std::sort` |
-| None | No | No guarantee | Manual `new[]` without cleanup |
+| No-throw  | Yes             | Guaranteed identical   | `swap()`Destructors               |
+| Strong    | Yes             | Rolled back on failure | `std::vector::push_back` (C++11+) |
+| Basic     | Yes             | Valid but unspecified  | `std::sort`                       |
+| None      | No              | No guarantee           | Manual `new[]` without cleanup    |
 
 ## Exception Safety in the Standard Library
 
 The standard library mandates specific guarantees for every container operation [N4950 §23.2]. Here
 Is a non-exhaustive mapping of commonly used operations:
 
-| Operation | Guarantee | Rationale |
+| Operation                     | Guarantee | Rationale                                                             |
 | ----------------------------- | --------- | --------------------------------------------------------------------- |
-| `std::vector::push_back` | Strong | If reallocation fails, original buffer is untouched |
-| `std::vector::insert` | Strong | Copy elements to new buffer, swap on success |
-| `std::vector::erase` | No-throw | Element destruction + move-assignment of trailing elements |
-| `std::vector::reserve` | Basic | If allocation succeeds but move throws, elements may be in new buffer |
-| `std::map::insert` | Strong | Node allocation is separate from tree rebalancing |
-| `std::unordered_map::insert` | Basic | Rehash may fail after partial element insertion |
-| `std::sort` | Basic | In-place partition; mid-sort throw leaves valid but scrambled state |
-| `std::make_shared` | Strong | Allocation succeeds before construction begins |
-| `std::make_unique` | Strong | Allocation precedes construction; exception frees memory |
-| `std::vector::resize(n, val)` | Basic | If copy of `val` throws mid-resize, vector is valid but partial |
-| `std::vector::swap` | No-throw | O(1) pointer swap |
+| `std::vector::push_back`      | Strong    | If reallocation fails, original buffer is untouched                   |
+| `std::vector::insert`         | Strong    | Copy elements to new buffer, swap on success                          |
+| `std::vector::erase`          | No-throw  | Element destruction + move-assignment of trailing elements            |
+| `std::vector::reserve`        | Basic     | If allocation succeeds but move throws, elements may be in new buffer |
+| `std::map::insert`            | Strong    | Node allocation is separate from tree rebalancing                     |
+| `std::unordered_map::insert`  | Basic     | Rehash may fail after partial element insertion                       |
+| `std::sort`                   | Basic     | In-place partition; mid-sort throw leaves valid but scrambled state   |
+| `std::make_shared`            | Strong    | Allocation succeeds before construction begins                        |
+| `std::make_unique`            | Strong    | Allocation precedes construction; exception frees memory              |
+| `std::vector::resize(n, val)` | Basic     | If copy of `val` throws mid-resize, vector is valid but partial       |
+| `std::vector::swap`           | No-throw  | O(1) pointer swap                                                     |
 
 ### Why `std::unordered_map::insert` Is Only Basic
 
@@ -570,9 +573,9 @@ Error that must be checked manually. Prefer the throwing version.
 
 ### Pitfall 4: Self-Assignment in Strong-Guarantee Code
 
-Copy-and-swap handles self-assignment because the copy is made before any modification
-Occurs. But if you implement assignment without copy-and-swap, you must check for self-assignment to
-Avoid destroying the source before copying from it:
+Copy-and-swap handles self-assignment because the copy is made before any modification Occurs. But
+if you implement assignment without copy-and-swap, you must check for self-assignment to Avoid
+destroying the source before copying from it:
 
 ```cpp
 #include <cstring>

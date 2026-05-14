@@ -1,6 +1,8 @@
 ---
-title: "Vectors -- Diagnostic Tests"
-description: Hardest IB Mathematics diagnostic tests for vectors covering skew lines, scalar triple product, reflection in planes, and point-to-plane distance.
+title: 'Vectors -- Diagnostic Tests'
+description:
+  Hardest IB Mathematics diagnostic tests for vectors covering skew lines, scalar triple product,
+  reflection in planes, and point-to-plane distance.
 slug: diag-vectors
 hide_table_of_contents: true
 ---
@@ -25,13 +27,17 @@ $$L_2: \mathbf{'\{'}r{'\}'} = \begin{pmatrix} 3 \\ 1 \\ 4 \end{pmatrix} + \mu \b
 
 **(b)** If skew, find the shortest distance between them.
 
-**(c)** A student claims: "Since the direction vectors are not scalar multiples, the lines must intersect." Explain why this reasoning is wrong.
+**(c)** A student claims: "Since the direction vectors are not scalar multiples, the lines must
+intersect." Explain why this reasoning is wrong.
 
-[Difficulty: hard. Tests classification of lines in 3D and computation of shortest distance between skew lines.]
+[Difficulty: hard. Tests classification of lines in 3D and computation of shortest distance between
+skew lines.]
 
 **Solution:**
 
-**(a)** The direction vectors are $\mathbf{'\{'}d{'\}'}_1 = \begin{pmatrix} 2 \\ 1 \\ -1 \end{pmatrix}$ and $\mathbf{'\{'}d{'\}'}_2 = \begin{pmatrix} 1 \\ -1 \\ 2 \end{pmatrix}$.
+**(a)** The direction vectors are
+$\mathbf{'\{'}d{'\}'}_1 = \begin{pmatrix} 2 \\ 1 \\ -1 \end{pmatrix}$ and
+$\mathbf{'\{'}d{'\}'}_2 = \begin{pmatrix} 1 \\ -1 \\ 2 \end{pmatrix}$.
 
 These are not scalar multiples, so the lines are not parallel.
 
@@ -45,7 +51,8 @@ $$0 - \lambda = 4 + 2\mu \implies -\lambda - 2\mu = 4 \quad \text{(iii)}$$
 
 From (i) and (ii): adding gives $3\lambda = 1$So $\lambda = \frac{1}{3}$Then $\mu = -\frac{4}{3}$.
 
-Check (iii): $-\frac{1}{3} - 2\!\left(-\frac{4}{3}\right) = -\frac{1}{3} + \frac{8}{3} = \frac{7}{3} \neq 4$.
+Check (iii):
+$-\frac{1}{3} - 2\!\left(-\frac{4}{3}\right) = -\frac{1}{3} + \frac{8}{3} = \frac{7}{3} \neq 4$.
 
 The system is inconsistent, so the lines do **not** intersect. They are **skew**.
 
@@ -63,7 +70,9 @@ $$(\mathbf{'\{'}a{'\}'}_2 - \mathbf{'\{'}a{'\}'}_1) \cdot (\mathbf{'\{'}d{'\}'}_
 
 $$d = \frac{5}{\sqrt{35}} = \frac{5\sqrt{35}}{35} = \frac{\sqrt{35}}{7}$$
 
-**(c)** The student's error is that in three dimensions, two lines that are not parallel can still fail to intersect. In 2D, non-parallel lines always intersect, but in 3D they can be skew — they pass at different "heights" and never meet. The student has incorrectly generalised the 2D result.
+**(c)** The student's error is that in three dimensions, two lines that are not parallel can still
+fail to intersect. In 2D, non-parallel lines always intersect, but in 3D they can be skew — they
+pass at different "heights" and never meet. The student has incorrectly generalised the 2D result.
 
 ---
 
@@ -77,9 +86,12 @@ Three points are given: $A(1, 0, 2)$$B(3, 1, -1)$And $C(2, 2, 3)$.
 
 **(b)** Find the perpendicular distance from the origin to $\Pi$.
 
-**(c)** A student computes $\overrightarrow{AB} \times \overrightarrow{AC}$ and gets $\begin{pmatrix} 3 \\ 3 \\ 3 \end{pmatrix}$Concluding the plane equation is $x + y + z = 3$. Identify the error.
+**(c)** A student computes $\overrightarrow{AB} \times \overrightarrow{AC}$ and gets
+$\begin{pmatrix} 3 \\ 3 \\ 3 \end{pmatrix}$Concluding the plane equation is $x + y + z = 3$.
+Identify the error.
 
-[Difficulty: hard. Tests plane from three points, normal vector computation, and point-to-plane distance.]
+[Difficulty: hard. Tests plane from three points, normal vector computation, and point-to-plane
+distance.]
 
 **Solution:**
 
@@ -103,7 +115,9 @@ $$7x - 5y + 3z = 13$$
 
 $$d = \frac{|7(0) - 5(0) + 3(0) - 13|}{\sqrt{49 + 25 + 9}} = \frac{13}{\sqrt{83}}$$
 
-**(c)** The student's cross product computation is wrong. The correct cross product is $\begin{pmatrix} 7 \\ -5 \\ 3 \end{pmatrix}$Not $\begin{pmatrix} 3 \\ 3 \\ 3 \end{pmatrix}$. Specifically:
+**(c)** The student's cross product computation is wrong. The correct cross product is
+$\begin{pmatrix} 7 \\ -5 \\ 3 \end{pmatrix}$Not $\begin{pmatrix} 3 \\ 3 \\ 3 \end{pmatrix}$.
+Specifically:
 
 - The $x$-component: $1 \times 1 - (-3) \times 2 = 1 + 6 = 7$Not $3$.
 - The $y$-component: $-(2 \times 1 - (-3) \times 1) = -(2 + 3) = -5$Not $3$.
@@ -123,7 +137,8 @@ Four points are given: $O(0, 0, 0)$$A(2, 1, 0)$$B(1, 3, 2)$And $C(0, 1, 4)$.
 
 **(a)** Find the volume of tetrahedron $OABC$.
 
-**(b)** Show that the four points are coplanar if and only if the scalar triple product $[\overrightarrow{OA}, \overrightarrow{OB}, \overrightarrow{OC}] = 0$.
+**(b)** Show that the four points are coplanar if and only if the scalar triple product
+$[\overrightarrow{OA}, \overrightarrow{OB}, \overrightarrow{OC}] = 0$.
 
 [Difficulty: hard. Combines scalar triple product with geometric interpretation.]
 
@@ -143,11 +158,22 @@ $$[\overrightarrow{OA}, \overrightarrow{OB}, \overrightarrow{OC}] = 2(10) + 1(-4
 
 $$V = \frac{16}{6} = \frac{8}{3}$$
 
-**(b)** The scalar triple product $[\mathbf{'\{'}a{'\}'}, \mathbf{'\{'}b{'\}'}, \mathbf{'\{'}c{'\}'}] = \mathbf{'\{'}a{'\}'} \cdot (\mathbf{'\{'}b{'\}'} \times \mathbf{'\{'}c{'\}'})$ equals the volume of the parallelepiped spanned by $\mathbf{'\{'}a{'\}'}$$\mathbf{'\{'}b{'\}'}$And $\mathbf{'\{'}c{'\}'}$.
+**(b)** The scalar triple product
+$[\mathbf{'\{'}a{'\}'}, \mathbf{'\{'}b{'\}'}, \mathbf{'\{'}c{'\}'}] = \mathbf{'\{'}a{'\}'} \cdot (\mathbf{'\{'}b{'\}'} \times \mathbf{'\{'}c{'\}'})$
+equals the volume of the parallelepiped spanned by $\mathbf{'\{'}a{'\}'}$$\mathbf{'\{'}b{'\}'}$And
+$\mathbf{'\{'}c{'\}'}$.
 
-If the four points are coplanar, the three vectors $\overrightarrow{OA}$$\overrightarrow{OB}$$\overrightarrow{OC}$ all lie in the same plane, meaning the parallelepiped they span has zero volume (it is flat). Therefore $[\overrightarrow{OA}, \overrightarrow{OB}, \overrightarrow{OC}] = 0$.
+If the four points are coplanar, the three vectors
+$\overrightarrow{OA}$$\overrightarrow{OB}$$\overrightarrow{OC}$ all lie in the same plane, meaning
+the parallelepiped they span has zero volume (it is flat). Therefore
+$[\overrightarrow{OA}, \overrightarrow{OB}, \overrightarrow{OC}] = 0$.
 
-Conversely, if the scalar triple product is zero, then $\mathbf{'\{'}a{'\}'} \cdot (\mathbf{'\{'}b{'\}'} \times \mathbf{'\{'}c{'\}'}) = 0$Which means $\mathbf{'\{'}a{'\}'}$ is perpendicular to $\mathbf{'\{'}b{'\}'} \times \mathbf{'\{'}c{'\}'}$. Since $\mathbf{'\{'}b{'\}'} \times \mathbf{'\{'}c{'\}'}$ is perpendicular to the plane containing $\mathbf{'\{'}b{'\}'}$ and $\mathbf{'\{'}c{'\}'}$It follows that $\mathbf{'\{'}a{'\}'}$ lies in the same plane as $\mathbf{'\{'}b{'\}'}$ and $\mathbf{'\{'}c{'\}'}$. Hence the four points are coplanar.
+Conversely, if the scalar triple product is zero, then
+$\mathbf{'\{'}a{'\}'} \cdot (\mathbf{'\{'}b{'\}'} \times \mathbf{'\{'}c{'\}'}) = 0$Which means
+$\mathbf{'\{'}a{'\}'}$ is perpendicular to $\mathbf{'\{'}b{'\}'} \times \mathbf{'\{'}c{'\}'}$. Since
+$\mathbf{'\{'}b{'\}'} \times \mathbf{'\{'}c{'\}'}$ is perpendicular to the plane containing
+$\mathbf{'\{'}b{'\}'}$ and $\mathbf{'\{'}c{'\}'}$It follows that $\mathbf{'\{'}a{'\}'}$ lies in the
+same plane as $\mathbf{'\{'}b{'\}'}$ and $\mathbf{'\{'}c{'\}'}$. Hence the four points are coplanar.
 
 ---
 
@@ -187,12 +213,18 @@ The reflection $P'$ is such that $M$ is the midpoint of $PP'$:
 
 $$M = \frac{P + P'}{2} \implies P' = 2M - P = 2\begin{pmatrix} \frac{25}{9} \\ \frac{19}{9} \\ \frac{7}{9} \end{pmatrix} - \begin{pmatrix} 1 \\ 3 \\ -1 \end{pmatrix} = \begin{pmatrix} \frac{41}{9} \\ \frac{11}{9} \\ \frac{23}{9} \end{pmatrix}$$
 
-**(b)** The line $PP'$ passes through $P(1, 3, -1)$ and $P'\!\left(\frac{41}{9}, \frac{11}{9}, \frac{23}{9}\right)$:
+**(b)** The line $PP'$ passes through $P(1, 3, -1)$ and
+$P'\!\left(\frac{41}{9}, \frac{11}{9}, \frac{23}{9}\right)$:
 
-Direction: $\begin{pmatrix} \frac{41}{9} - 1 \\ \frac{11}{9} - 3 \\ \frac{23}{9} + 1 \end{pmatrix} = \begin{pmatrix} \frac{32}{9} \\ -\frac{16}{9} \\ \frac{32}{9} \end{pmatrix} = \frac{16}{9}\begin{pmatrix} 2 \\ -1 \\ 2 \end{pmatrix}$
+Direction:
+$\begin{pmatrix} \frac{41}{9} - 1 \\ \frac{11}{9} - 3 \\ \frac{23}{9} + 1 \end{pmatrix} = \begin{pmatrix} \frac{32}{9} \\ -\frac{16}{9} \\ \frac{32}{9} \end{pmatrix} = \frac{16}{9}\begin{pmatrix} 2 \\ -1 \\ 2 \end{pmatrix}$
 
-This is parallel to $\mathbf{'\{'}n{'\}'} = \begin{pmatrix} 2 \\ -1 \\ 2 \end{pmatrix}$Confirming $PP'$ is perpendicular to $\Pi$.
+This is parallel to $\mathbf{'\{'}n{'\}'} = \begin{pmatrix} 2 \\ -1 \\ 2 \end{pmatrix}$Confirming
+$PP'$ is perpendicular to $\Pi$.
 
-Verify midpoint: $\frac{1}{2}\!\left[\begin{pmatrix} 1 \\ 3 \\ -1 \end{pmatrix} + \begin{pmatrix} \frac{41}{9} \\ \frac{11}{9} \\ \frac{23}{9} \end{pmatrix}\right] = \begin{pmatrix} \frac{25}{9} \\ \frac{19}{9} \\ \frac{7}{9} \end{pmatrix}$.
+Verify midpoint:
+$\frac{1}{2}\!\left[\begin{pmatrix} 1 \\ 3 \\ -1 \end{pmatrix} + \begin{pmatrix} \frac{41}{9} \\ \frac{11}{9} \\ \frac{23}{9} \end{pmatrix}\right] = \begin{pmatrix} \frac{25}{9} \\ \frac{19}{9} \\ \frac{7}{9} \end{pmatrix}$.
 
-Check on $\Pi$: $2\!\left(\frac{25}{9}\right) - \frac{19}{9} + 2\!\left(\frac{7}{9}\right) = \frac{50 - 19 + 14}{9} = \frac{45}{9} = 5$. Confirmed.
+Check on $\Pi$:
+$2\!\left(\frac{25}{9}\right) - \frac{19}{9} + 2\!\left(\frac{7}{9}\right) = \frac{50 - 19 + 14}{9} = \frac{45}{9} = 5$.
+Confirmed.

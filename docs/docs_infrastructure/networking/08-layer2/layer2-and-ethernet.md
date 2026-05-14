@@ -1,7 +1,9 @@
 ---
 id: layer2-and-ethernet
 title: Layer 2 and Ethernet
-description: "Layer 2 and Ethernet — Data Link Layer Functions; Relationship to Layer 1 and Layer 3; Ethernet History; DIX Ethernet (1980)."
+description:
+  'Layer 2 and Ethernet — Data Link Layer Functions; Relationship to Layer 1 and Layer 3; Ethernet
+  History; DIX Ethernet (1980).'
 slug: layer2-and-ethernet
 sidebar_position: 2
 date: 2026-04-08T00:00:00.000Z
@@ -10,21 +12,22 @@ tags:
 categories:
   - Networking
 ---
+
 ## Data Link Layer Functions
 
 The data link layer (OSI Layer 2) sits between the physical layer and the network layer. Its
 Responsibilities are concrete and well-defined:
 
 1. **Framing.** Encapsulate network-layer packets into a frame with header and trailer fields that
- allow the receiver to identify where each frame begins and ends on the wire.
+   allow the receiver to identify where each frame begins and ends on the wire.
 2. **MAC addressing.** Provide a unique identifier for each interface on a LAN so that frames can be
- delivered to the correct destination.
+   delivered to the correct destination.
 3. **Error detection.** Detect (but not correct) bit errors introduced during transmission using a
- Frame Check Sequence (FCS).
+   Frame Check Sequence (FCS).
 4. **Flow control.** Prevent a fast sender from overwhelming a slow receiver (relevant in
- half-duplex environments, less so in modern full-duplex switched LANs).
+   half-duplex environments, less so in modern full-duplex switched LANs).
 5. **Media access control.** Determine which device may transmit on a shared medium and when
- (CSMA/CD for classic Ethernet).
+   (CSMA/CD for classic Ethernet).
 
 Layer 2 does not provide routing. It provides node-to-node delivery within the same broadcast
 Domain. If the destination MAC is not on the local segment, the frame is sent to the default gateway
@@ -69,15 +72,15 @@ Or 802.2 LLC.
 
 ### Evolution of Speeds
 
-| Standard | Year | Speed | Medium | Max Segment |
+| Standard   | Year | Speed    | Medium             | Max Segment |
 | ---------- | ---- | -------- | ------------------ | ----------- |
-| 10BASE5 | 1983 | 10 Mbps | Thick coax (10 mm) | 500 m |
-| 10BASE2 | 1988 | 10 Mbps | Thin coax (RG-58) | 185 m |
-| 10BASE-T | 1990 | 10 Mbps | Cat3 UTP | 100 m |
-| 100BASE-TX | 1995 | 100 Mbps | Cat5 UTP | 100 m |
-| 1000BASE-T | 1999 | 1 Gbps | Cat5e UTP | 100 m |
-| 10GBASE-T | 2006 | 10 Gbps | Cat6a UTP | 100 m |
-| 40GBASE-T | 2018 | 40 Gbps | Cat8 UTP | 30 m |
+| 10BASE5    | 1983 | 10 Mbps  | Thick coax (10 mm) | 500 m       |
+| 10BASE2    | 1988 | 10 Mbps  | Thin coax (RG-58)  | 185 m       |
+| 10BASE-T   | 1990 | 10 Mbps  | Cat3 UTP           | 100 m       |
+| 100BASE-TX | 1995 | 100 Mbps | Cat5 UTP           | 100 m       |
+| 1000BASE-T | 1999 | 1 Gbps   | Cat5e UTP          | 100 m       |
+| 10GBASE-T  | 2006 | 10 Gbps  | Cat6a UTP          | 100 m       |
+| 40GBASE-T  | 2018 | 40 Gbps  | Cat8 UTP           | 30 m        |
 
 Each generation maintained backward compatibility at the physical layer while dramatically
 Increasing throughput. The shift from shared medium (coax, hubs) to switched (full-duplex point-to-
@@ -122,16 +125,16 @@ Multicast or broadcast address).
 
 Identifies the protocol encapsulated in the payload. Common values:
 
-| EtherType (hex) | Protocol |
+| EtherType (hex) | Protocol     |
 | --------------- | ------------ |
-| 0x0800 | IPv4 |
-| 0x86DD | IPv6 |
-| 0x0806 | ARP |
-| 0x8035 | RARP |
-| 0x8100 | 802.1Q VLAN |
-| 0x8864 | PPPoE |
-| 0x8847 | MPLS Unicast |
-| 0x88CC | LLDP |
+| 0x0800          | IPv4         |
+| 0x86DD          | IPv6         |
+| 0x0806          | ARP          |
+| 0x8035          | RARP         |
+| 0x8100          | 802.1Q VLAN  |
+| 0x8864          | PPPoE        |
+| 0x8847          | MPLS Unicast |
+| 0x88CC          | LLDP         |
 
 When the value is $\le$ 1500 (0x05DC), the field is interpreted as a Length field (802.3 frame)
 Rather than an EtherType, and the encapsulated protocol is identified by the LLC/SNAP header.
@@ -165,8 +168,8 @@ And any burst error of 32 bits or fewer.
 
 ### Format
 
-A MAC address is a 48-bit identifier written in hexadecimal as six groups of two digits
-Separated by colons or hyphens:
+A MAC address is a 48-bit identifier written in hexadecimal as six groups of two digits Separated by
+colons or hyphens:
 
 ```
 00:1A:2B:3C:4D:5E    (colon notation -- common on Linux/macOS)
@@ -219,9 +222,9 @@ Used by IPv4 multicast group 224.0.0.1.
 
 ### MAC Address Table Size Limits
 
-Enterprise switches support between 8,000 and 1,000,000+ MAC address table entries. When
-The table fills, new addresses either replace the oldest entries (LRU eviction) or cause the switch
-To flood frames to all ports, degrading performance. Plan your network segmentation accordingly.
+Enterprise switches support between 8,000 and 1,000,000+ MAC address table entries. When The table
+fills, new addresses either replace the oldest entries (LRU eviction) or cause the switch To flood
+frames to all ports, degrading performance. Plan your network segmentation accordingly.
 
 ## CSMA/CD
 
@@ -234,19 +237,19 @@ Frame size.
 The algorithm works as follows:
 
 1. **Carrier Sense.** Before transmitting, a station listens to the medium. If the medium is busy,
- the station defers and waits until it is idle.
+   the station defers and waits until it is idle.
 2. **Multiple Access.** Multiple stations share the same medium. Any station can transmit when the
- medium is idle.
+   medium is idle.
 3. **Collision Detection.** While transmitting, the station monitors the medium. If it detects a
- signal that differs from what it is sending (indicating another station is transmitting
- simultaneously), a collision has occurred.
+   signal that differs from what it is sending (indicating another station is transmitting
+   simultaneously), a collision has occurred.
 
 ### Collision Handling
 
 When a collision is detected:
 
 1. The station sends a 32-bit **jam signal** to ensure all stations on the segment detect the
- collision.
+   collision.
 2. Both stations stop transmitting.
 3. Each station selects a random **backoff period** using the binary exponential backoff algorithm.
 4. After the backoff period, the station attempts to retransmit.
@@ -308,14 +311,14 @@ Undetected collision.
 
 ## Full-Duplex vs Half-Duplex Ethernet
 
-| Property | Half-Duplex | Full-Duplex |
+| Property           | Half-Duplex                       | Full-Duplex                                   |
 | ------------------ | --------------------------------- | --------------------------------------------- |
-| Direction | One at a time (send or receive) | Simultaneous send and receive |
-| CSMA/CD | Required | Not used |
-| Collision domain | Shared segment | Point-to-point link |
-| Minimum frame size | 64 bytes enforced | Not enforced (but standard frames still used) |
-| Cable | Single pair (old coax) or 2 pairs | Separate TX/RX pairs |
-| Modern use | Legacy/hubs only | Switches, virtually universal |
+| Direction          | One at a time (send or receive)   | Simultaneous send and receive                 |
+| CSMA/CD            | Required                          | Not used                                      |
+| Collision domain   | Shared segment                    | Point-to-point link                           |
+| Minimum frame size | 64 bytes enforced                 | Not enforced (but standard frames still used) |
+| Cable              | Single pair (old coax) or 2 pairs | Separate TX/RX pairs                          |
+| Modern use         | Legacy/hubs only                  | Switches, virtually universal                 |
 
 Full-duplex Ethernet eliminates collisions entirely because each station has dedicated transmit and
 Receive paths. A switch port connected to a single host is inherently full-duplex -- there is no
@@ -327,27 +330,27 @@ Have been obsolete for over two decades.
 
 ## Ethernet Standards Comparison
 
-| Standard | Speed | Medium | Encoding | Pairs | Max Distance | Notes |
+| Standard   | Speed    | Medium    | Encoding        | Pairs | Max Distance | Notes                       |
 | ---------- | -------- | --------- | --------------- | ----- | ------------ | --------------------------- |
-| 10BASE-T | 10 Mbps | Cat3+ UTP | Manchester | 2 | 100 m | Half/full duplex |
-| 100BASE-TX | 100 Mbps | Cat5 UTP | 4B5B + MLT-3 | 2 | 100 m | Full duplex |
-| 1000BASE-T | 1 Gbps | Cat5e UTP | PAM-5 (4D-PAM5) | 4 | 100 m | Bi-directional on all pairs |
-| 10GBASE-T | 10 Gbps | Cat6a UTP | 16QAM / DSQ128 | 4 | 100 m | 400 MHz bandwidth |
-| 40GBASE-T | 40 Gbps | Cat8 UTP | PAM-16 | 4 | 30 m | 2 GHz bandwidth |
+| 10BASE-T   | 10 Mbps  | Cat3+ UTP | Manchester      | 2     | 100 m        | Half/full duplex            |
+| 100BASE-TX | 100 Mbps | Cat5 UTP  | 4B5B + MLT-3    | 2     | 100 m        | Full duplex                 |
+| 1000BASE-T | 1 Gbps   | Cat5e UTP | PAM-5 (4D-PAM5) | 4     | 100 m        | Bi-directional on all pairs |
+| 10GBASE-T  | 10 Gbps  | Cat6a UTP | 16QAM / DSQ128  | 4     | 100 m        | 400 MHz bandwidth           |
+| 40GBASE-T  | 40 Gbps  | Cat8 UTP  | PAM-16          | 4     | 30 m         | 2 GHz bandwidth             |
 
 ### Fiber Variants
 
 Fiber optic Ethernet variants are common in data center and campus backbone deployments:
 
-| Standard | Speed | Fiber Type | Wavelength | Max Distance |
+| Standard     | Speed    | Fiber Type             | Wavelength  | Max Distance      |
 | ------------ | -------- | ---------------------- | ----------- | ----------------- |
-| 1000BASE-SX | 1 Gbps | Multimode (62.5/50 um) | 850 nm | 275 m (50 um OM2) |
-| 1000BASE-LX | 1 Gbps | Single-mode (9 um) | 1310 nm | 10 km |
-| 10GBASE-SR | 10 Gbps | Multimode (50 um) | 850 nm | 300 m (OM3) |
-| 10GBASE-LR | 10 Gbps | Single-mode (9 um) | 1310 nm | 10 km |
-| 40GBASE-SR4 | 40 Gbps | Multimate (50 um) | 850 nm | 100 m (OM3) |
-| 100GBASE-LR4 | 100 Gbps | Single-mode (9 um) | 4 x 1310 nm | 10 km |
-| 400GBASE-DR4 | 400 Gbps | Single-mode (9 um) | 4 x 1310 nm | 500 m |
+| 1000BASE-SX  | 1 Gbps   | Multimode (62.5/50 um) | 850 nm      | 275 m (50 um OM2) |
+| 1000BASE-LX  | 1 Gbps   | Single-mode (9 um)     | 1310 nm     | 10 km             |
+| 10GBASE-SR   | 10 Gbps  | Multimode (50 um)      | 850 nm      | 300 m (OM3)       |
+| 10GBASE-LR   | 10 Gbps  | Single-mode (9 um)     | 1310 nm     | 10 km             |
+| 40GBASE-SR4  | 40 Gbps  | Multimate (50 um)      | 850 nm      | 100 m (OM3)       |
+| 100GBASE-LR4 | 100 Gbps | Single-mode (9 um)     | 4 x 1310 nm | 10 km             |
+| 400GBASE-DR4 | 400 Gbps | Single-mode (9 um)     | 4 x 1310 nm | 500 m             |
 
 ### 1000BASE-T Details
 
@@ -371,12 +374,12 @@ $$
 A Layer 2 switch operates at the data link layer. Its primary functions are:
 
 1. **Learning.** When a frame arrives on a port, the switch records the source MAC address and the
- incoming port in its MAC address table (also called a CAM table -- Content Addressable Memory).
+   incoming port in its MAC address table (also called a CAM table -- Content Addressable Memory).
 2. **Forwarding.** When a frame arrives, the switch looks up the destination MAC address in its
- table. If found, it forwards the frame only out the port associated with that MAC. If not found,
- it floods the frame out all ports except the incoming port (unknown unicast flooding).
+   table. If found, it forwards the frame only out the port associated with that MAC. If not found,
+   it floods the frame out all ports except the incoming port (unknown unicast flooding).
 3. **Filtering.** If the destination MAC is found and the associated port is the same as the
- incoming port, the switch drops the frame (the destination is on the same segment as the source).
+   incoming port, the switch drops the frame (the destination is on the same segment as the source).
 
 ### MAC Address Table
 
@@ -454,7 +457,7 @@ IEEE 802.1Q inserts a 4-byte tag between the Source MAC and the EtherType field:
 - **PCP (Priority Code Point):** 3 bits -- used for QoS (802.1p). Values 0-7 map to traffic classes.
 - **DEI (Drop Eligible Indicator):** 1 bit -- marks frames eligible for dropping during congestion.
 - **VID (VLAN Identifier):** 12 bits -- identifies the VLAN (0-4095). VID 0 is reserved, VID 4095 is
- reserved. Usable range: 1-4094.
+  reserved. Usable range: 1-4094.
 
 The tagged frame increases the maximum frame size from 1518 to 1522 bytes. This is sometimes called
 A "jumbo" frame by older devices that do not support 802.1Q, but modern switches handle it
@@ -462,12 +465,12 @@ Correctly.
 
 ### Access Ports vs Trunk Ports
 
-| Property | Access Port | Trunk Port |
+| Property        | Access Port                                              | Trunk Port                              |
 | --------------- | -------------------------------------------------------- | --------------------------------------- |
-| Tagged frames | No -- strips tags on egress, expects untagged on ingress | Yes -- carries multiple VLANs with tags |
-| VLAN membership | Single VLAN (access VLAN) | Multiple VLANs (allowed VLAN list) |
-| Native VLAN | N/A (or assigns frames to access VLAN) | Untagged traffic mapped to native VLAN |
-| Typical use | End devices (PCs, printers, servers) | Switch-to-switch, switch-to-router |
+| Tagged frames   | No -- strips tags on egress, expects untagged on ingress | Yes -- carries multiple VLANs with tags |
+| VLAN membership | Single VLAN (access VLAN)                                | Multiple VLANs (allowed VLAN list)      |
+| Native VLAN     | N/A (or assigns frames to access VLAN)                   | Untagged traffic mapped to native VLAN  |
+| Typical use     | End devices (PCs, printers, servers)                     | Switch-to-switch, switch-to-router      |
 
 Configuration example (Cisco):
 
@@ -505,7 +508,7 @@ Tag and forwards the frame to the target VLAN.
 Prevention:
 
 1. **Do not use the native VLAN for any legitimate traffic.** Set the native VLAN to an unused,
- dedicated VLAN (e.g., VLAN 999).
+   dedicated VLAN (e.g., VLAN 999).
 2. **Explicitly tag the native VLAN:** `switchport trunk native vlan tag` (Cisco IOS 15.2+).
 3. **Prune unnecessary VLANs from trunks:** `switchport trunk allowed vlan 10,20,30`.
 4. **Disable unused ports and place them in a dead VLAN:**
@@ -561,13 +564,13 @@ This sets Switch A's priority to 4096, making its BID lower than Switch B's 8192
 
 ### Port States (802.1D)
 
-| State | Forwards Data | Learns MACs | Duration |
+| State      | Forwards Data | Learns MACs | Duration             |
 | ---------- | ------------- | ----------- | -------------------- |
-| Disabled | No | No | Administrative |
-| Blocking | No | No | Stable |
-| Listening | No | No | Forward delay (15 s) |
-| Learning | No | Yes | Forward delay (15 s) |
-| Forwarding | Yes | Yes | Stable |
+| Disabled   | No            | No          | Administrative       |
+| Blocking   | No            | No          | Stable               |
+| Listening  | No            | No          | Forward delay (15 s) |
+| Learning   | No            | Yes         | Forward delay (15 s) |
+| Forwarding | Yes           | Yes         | Stable               |
 
 The total time from blocking to forwarding is the **max age** (20 s) + 2 x **forward delay** (30 s)
 = 50 seconds in the worst case. This is painfully slow for modern networks.
@@ -577,22 +580,22 @@ The total time from blocking to forwarding is the **max age** (20 s) + 2 x **for
 STP uses BPDUs to exchange topology information. There are two types:
 
 - **Configuration BPDU:** Sent by the root bridge every 2 seconds (hello time). Contains the root
- BID, root path cost, sender BID, and port IDs.
+  BID, root path cost, sender BID, and port IDs.
 - **TCN (Topology Change Notification) BPDU:** Sent by a non-root bridge when it detects a topology
- change (port going up/down).
+  change (port going up/down).
 
 ### RSTP (802.1w) Improvements
 
 Rapid Spanning Tree Protocol (RSTP, IEEE 802.1w) reduces convergence time from 50 seconds to a few
 Seconds or less. Key improvements:
 
-| Feature | STP (802.1D) | RSTP (802.1w) |
+| Feature             | STP (802.1D)                                            | RSTP (802.1w)                            |
 | ------------------- | ------------------------------------------------------- | ---------------------------------------- |
-| Port states | 5 (blocking, listening, learning, forwarding, disabled) | 3 (discarding, learning, forwarding) |
-| Convergence | 30-50 seconds | 1-10 seconds (often sub-second) |
-| Sync mechanism | Timer-based | Proposal/Agreement handshake |
-| Edge ports | No concept | Explicitly defined (PortFast equivalent) |
-| Link type detection | No | Point-to-point vs shared |
+| Port states         | 5 (blocking, listening, learning, forwarding, disabled) | 3 (discarding, learning, forwarding)     |
+| Convergence         | 30-50 seconds                                           | 1-10 seconds (often sub-second)          |
+| Sync mechanism      | Timer-based                                             | Proposal/Agreement handshake             |
+| Edge ports          | No concept                                              | Explicitly defined (PortFast equivalent) |
+| Link type detection | No                                                      | Point-to-point vs shared                 |
 
 RSTP uses a proposal/agreement mechanism: when a port becomes designated, it proposes itself as the
 Forwarding port. The downstream switch acknowledges (agrees) only if all its non-edge ports are in
@@ -633,7 +636,7 @@ Administrative key. Ports with the same key on the same device form a LAG (Link 
 
 - **Active:** Actively sends LACPDU frames to negotiate aggregation.
 - **Passive:** Responds to LACPDUs but does not initiate negotiation. Used when one side should not
- actively form the LAG.
+  actively form the LAG.
 
 At least one side must be active for the LAG to form.
 
@@ -678,9 +681,9 @@ The same subnet, it uses ARP to discover the destination's MAC address.
 
 1. The sender checks its **ARP cache** for an existing mapping.
 2. If no mapping exists, the sender broadcasts an **ARP Request**: "Who has 192.168.1.100? Tell
- 192.168.1.1."
+   192.168.1.1."
 3. The host with IP 192.168.1.100 replies with a unicast **ARP Reply**: "192.168.1.100 is at
- 00:1A:2B:3C:4D:5E."
+   00:1A:2B:3C:4D:5E."
 4. The sender caches the mapping and sends the Ethernet frame.
 
 ARP packet format:
@@ -704,11 +707,11 @@ A gratuitous ARP is an ARP request (or reply) where the sender and target IP are
 Used for:
 
 1. **Duplicate address detection.** When a host boots, it sends a gratuitous ARP for its own IP. If
- another host replies, there is an IP address conflict.
+   another host replies, there is an IP address conflict.
 2. **ARP cache update.** When a host's MAC address changes (e.g., NIC replacement, failover), it
- sends a gratuitous ARP to update other hosts' caches.
+   sends a gratuitous ARP to update other hosts' caches.
 3. **VRRP/HSRP failover notification.** When a virtual router failover occurs, the new active router
- sends a gratuitous ARP to update the network's ARP caches.
+   sends a gratuitous ARP to update the network's ARP caches.
 
 ### Proxy ARP
 
@@ -721,8 +724,8 @@ Routing instead. It can cause confusion because hosts believe remote hosts are o
 
 ### ARP Cache
 
-The ARP cache maps IP addresses to MAC addresses and has a limited lifetime ( 20-60 minutes
-On Linux, 4 hours on Windows). Viewing the ARP cache:
+The ARP cache maps IP addresses to MAC addresses and has a limited lifetime ( 20-60 minutes On
+Linux, 4 hours on Windows). Viewing the ARP cache:
 
 ```
 # Linux
@@ -750,7 +753,7 @@ Man-in-the-middle attacks.
 Countermeasures:
 
 - **Dynamic ARP Inspection (DAI):** Validates ARP packets against a trusted database (DHCP snooping
- binding table).
+  binding table).
 - **Static ARP entries:** For critical devices (gateways, servers).
 - **ARP monitoring tools:** arpwatch, XArp.
 
@@ -774,13 +777,13 @@ Assign the native VLAN to an unused, dedicated VLAN.
 The most common STP mistakes are:
 
 1. **No root bridge planning.** Leaving the default priority on all switches means the root bridge
- is elected arbitrarily. The root bridge should be the most central, most powerful switch.
+   is elected arbitrarily. The root bridge should be the most central, most powerful switch.
 2. **BPDU Guard not enabled on edge ports.** Without BPDU Guard, any device (or attacker) connected
- to an edge port can participate in STP and potentially become root bridge.
+   to an edge port can participate in STP and potentially become root bridge.
 3. **Mixing STP and RSTP.** Older devices running 802.1D force the network to fall back to legacy
- STP timers, negating RSTP's convergence benefits.
+   STP timers, negating RSTP's convergence benefits.
 4. **Ignoring STP entirely.** Some administrators disable STP to "eliminate convergence delays."
- This is catastrophic if any physical loop exists in the network.
+   This is catastrophic if any physical loop exists in the network.
 
 ### ARP on Different Subnets
 
@@ -815,8 +818,8 @@ Identify the destination MAC, source MAC, EtherType, and determine what type of 
 - **Source MAC:** `00:1A:2B:3C:4D:5E`
 - **EtherType:** `0x0806` -- ARP
 - **Frame type:** This is an ARP request broadcast frame. The sender IP is `192.168.1.10`
- (`C0 A8 01 0A`) and the target IP is `192.168.1.20` (`C0 A8 01 14`). The target MAC is
- `00:00:00:00:00:00`Indicating it is unknown (this is a request).
+  (`C0 A8 01 0A`) and the target IP is `192.168.1.20` (`C0 A8 01 14`). The target MAC is
+  `00:00:00:00:00:00`Indicating it is unknown (this is a request).
 
 </details>
 

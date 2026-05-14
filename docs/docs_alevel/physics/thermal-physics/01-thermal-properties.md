@@ -1,6 +1,8 @@
 ---
 title: Thermal Properties
-description: "A-Level Physics notes on Thermal Properties: 1. Temperature Scales; The Kelvin Scale; Triple Point of Water; Brownian Motion as Evidence for the Particle Model."
+description:
+  'A-Level Physics notes on Thermal Properties: 1. Temperature Scales; The Kelvin Scale; Triple
+  Point of Water; Brownian Motion as Evidence for the Particle Model.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Physics
@@ -9,11 +11,10 @@ categories:
   - Physics
 slug: thermal-properties
 ---
+
 ## Thermal Properties
 
-:::info
-Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P2
-:::
+:::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P2 :::
 
 ## 1. Temperature Scales
 
@@ -45,19 +46,16 @@ Effect on a larger particle is visible.
 
 **Random walk argument.** After $N$ collisions, each producing a displacement $\delta$ in a random
 Direction, the net displacement scales as $\sqrt{N}\,\delta$ (not $N\delta$), because steps in
-Different directions partially cancel. Since the collision rate is proportional to time $t$The
-Mean displacement grows as:
+Different directions partially cancel. Since the collision rate is proportional to time $t$The Mean
+displacement grows as:
 
 $$\boxed{\langle x^2\rangle^{1/2} \propto \sqrt{t}}$$
 
 This is a hallmark signature of Brownian motion and provided the first direct evidence for the
 Existence of atoms and molecules.
 
-:::info
-Info
-In terms of molecular bombardment. OCR (A): Historical context and Einstein's analysis. CIE:
-Qualitative and quantitative treatment.
-:::
+:::info Info In terms of molecular bombardment. OCR (A): Historical context and Einstein's analysis.
+CIE: Qualitative and quantitative treatment. :::
 
 ## 2. Specific Heat Capacity
 
@@ -86,12 +84,9 @@ $$\boxed{Q = mL}$$
 Increasing kinetic energy, so the temperature remains constant despite energy input. Vaporisation
 Requires much more energy than fusion because gas molecules are completely separated.
 
-:::warning
-Warning
-Latent heat (which changes state at constant temperature). In a heating curve, the flat sections are
-Phase changes (latent heat), and the sloped sections are temperature changes (specific heat
-Capacity).
-:::
+:::warning Warning Latent heat (which changes state at constant temperature). In a heating curve,
+the flat sections are Phase changes (latent heat), and the sloped sections are temperature changes
+(specific heat Capacity). :::
 
 ### Internal Energy
 
@@ -257,11 +252,11 @@ Equilibrium has an average energy of $\frac{1}{2}k_BT$ per particle.
 
 **Degrees of freedom** for common gas molecules:
 
-| Molecule type | Translational | Rotational | Total DOF | $C_v$ (per mole) | $\gamma = C_p/C_v$ |
-| --------------------------- | ------------- | ---------- | --------- | ---------------- | ------------------ |
-| Monatomic (He, Ne, Ar) | 3 | 0 | 3 | $\frac{3}{2}R$ | $5/3 \approx 1.67$ |
-| Diatomic (N$_2$O$_2$) | 3 | 2 | 5 | $\frac{5}{2}R$ | $7/5 = 1.40$ |
-| Polyatomic (CO$_2$CH$_4$) | 3 | 3 | 6 | $3R$ | $4/3 \approx 1.33$ |
+| Molecule type             | Translational | Rotational | Total DOF | $C_v$ (per mole) | $\gamma = C_p/C_v$ |
+| ------------------------- | ------------- | ---------- | --------- | ---------------- | ------------------ |
+| Monatomic (He, Ne, Ar)    | 3             | 0          | 3         | $\frac{3}{2}R$   | $5/3 \approx 1.67$ |
+| Diatomic (N$_2$O$_2$)     | 3             | 2          | 5         | $\frac{5}{2}R$   | $7/5 = 1.40$       |
+| Polyatomic (CO$_2$CH$_4$) | 3             | 3          | 6         | $3R$             | $4/3 \approx 1.33$ |
 
 **Proof that $\gamma = C_p/C_v = (f+2)/f$.** For $f$ degrees of freedom:
 
@@ -278,11 +273,9 @@ $\square$
 Moment of inertia. For a diatomic molecule, rotation about the bond axis does not count (moment of
 Inertia is negligible), leaving only 2 rotational DOF.
 
-:::warning
-Warning
-At high temperatures). The equipartition theorem applies to each fully-excited quadratic DOF. At
-Room temperature, diatomic molecules have 5 active DOF (3 translational + 2 rotational), not 6.
-:::
+:::warning Warning At high temperatures). The equipartition theorem applies to each fully-excited
+quadratic DOF. At Room temperature, diatomic molecules have 5 active DOF (3 translational + 2
+rotational), not 6. :::
 
 ## 7. Maxwell-Boltzmann Speed Distribution
 
@@ -306,11 +299,8 @@ As temperature increases, the distribution broadens and the peak shifts right (f
 But the area under the curve stays normalised to 1 (total probability). As mass increases, the
 Distribution narrows and shifts left (heavier molecules move more slowly at the same temperature).
 
-:::info
-Info
-Of speeds at different temperatures. OCR (A): Ratio of speeds for different gases. CIE: Quantitative
-Use of all three speed measures.
-:::
+:::info Info Of speeds at different temperatures. OCR (A): Ratio of speeds for different gases. CIE:
+Quantitative Use of all three speed measures. :::
 
 <details>
 <summary>Example: Speed Ratio for Different Gases</summary>
@@ -626,11 +616,11 @@ Gas does work on its surroundings.
 
 **Answer.** During isothermal expansion, the gas does work on the surroundings
 ($W_{\mathrm{by}} > 0$). By the first law: $\Delta U = Q + W_{\mathrm{on}} = Q - W_{\mathrm{by}}$.
-For the internal energy to remain constant ($\Delta U = 0$Since $U$ depends only on $T$ for an
-Ideal gas), we need $Q = W_{\mathrm{by}}$. Heat must flow into the gas from the surroundings at
-Exactly the rate at which the gas does work. The expansion is carried out slowly enough
-(quasi-statically) that thermal equilibrium is maintained throughout. If the expansion were
-Adiabatic instead, the gas would cool.
+For the internal energy to remain constant ($\Delta U = 0$Since $U$ depends only on $T$ for an Ideal
+gas), we need $Q = W_{\mathrm{by}}$. Heat must flow into the gas from the surroundings at Exactly
+the rate at which the gas does work. The expansion is carried out slowly enough (quasi-statically)
+that thermal equilibrium is maintained throughout. If the expansion were Adiabatic instead, the gas
+would cool.
 
 <b>If you get this wrong, revise:</b> [Root Mean Square Speed](#5-root-mean-square-speed)
 
@@ -678,16 +668,27 @@ The same energy.
 
 </details>
 
-
 ---:::danger Common Pitfalls
 
-- **Confusing heat capacity with specific heat capacity:** Heat capacity C is the energy needed to raise the temperature of an ENTIRE OBJECT by 1 K (J/K). Specific heat capacity c is the energy per unit MASS (J/(kg K)). For a 2 kg block, C = 2c. Always check whether the question gives or asks for heat capacity or specific heat capacity.
+- **Confusing heat capacity with specific heat capacity:** Heat capacity C is the energy needed to
+  raise the temperature of an ENTIRE OBJECT by 1 K (J/K). Specific heat capacity c is the energy per
+  unit MASS (J/(kg K)). For a 2 kg block, C = 2c. Always check whether the question gives or asks
+  for heat capacity or specific heat capacity.
 
-- **Forgetting that temperature remains constant during a phase change:** When a substance is melting or boiling, energy input goes into breaking intermolecular bonds (increasing potential energy), NOT increasing kinetic energy. The temperature stays constant until the phase change is complete. This is why the heating curve has flat sections at melting and boiling points.
+- **Forgetting that temperature remains constant during a phase change:** When a substance is
+  melting or boiling, energy input goes into breaking intermolecular bonds (increasing potential
+  energy), NOT increasing kinetic energy. The temperature stays constant until the phase change is
+  complete. This is why the heating curve has flat sections at melting and boiling points.
 
-- **Confusing latent heat of fusion with latent heat of vaporisation:** Latent heat of fusion is the energy per unit mass to change from SOLID to LIQUID at constant temperature. Latent heat of vaporisation is the energy to change from LIQUID to GAS. Vaporisation requires much more energy because all bonds must be broken, not just reorganised.
+- **Confusing latent heat of fusion with latent heat of vaporisation:** Latent heat of fusion is the
+  energy per unit mass to change from SOLID to LIQUID at constant temperature. Latent heat of
+  vaporisation is the energy to change from LIQUID to GAS. Vaporisation requires much more energy
+  because all bonds must be broken, not just reorganised.
 
-- **Misidentifying the direction of heat flow in specific latent heat calculations:** When steam at 100 degrees condenses into water at 100 degrees, it RELEASES energy (the latent heat of vaporisation is given out, not absorbed). When ice melts, it ABSORBS energy. Always consider whether the phase change is absorbing or releasing energy.
+- **Misidentifying the direction of heat flow in specific latent heat calculations:** When steam at
+  100 degrees condenses into water at 100 degrees, it RELEASES energy (the latent heat of
+  vaporisation is given out, not absorbed). When ice melts, it ABSORBS energy. Always consider
+  whether the phase change is absorbing or releasing energy.
 
 :::
 

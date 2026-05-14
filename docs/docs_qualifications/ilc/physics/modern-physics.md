@@ -1,6 +1,8 @@
 ---
 title: Modern Physics
-description: "Modern Physics — The Photoelectric Effect (HL); Phenomenon; Key Observations; Why Classical Wave Theory Fails with worked examples and exam-style questions."
+description:
+  'Modern Physics — The Photoelectric Effect (HL); Phenomenon; Key Observations; Why Classical Wave
+  Theory Fails with worked examples and exam-style questions.'
 date: 2026-04-14
 tags:
   - Physics
@@ -9,6 +11,7 @@ categories:
   - Physics
 slug: modern-physics
 ---
+
 # Modern Physics
 
 Modern physics covers the physics of the very small (atomic and subatomic scale) and the very fast.
@@ -28,8 +31,8 @@ When light of sufficiently high frequency is incident on a metal surface, electr
 This is the photoelectric effect, first observed by Heinrich Hertz in 1887 and later studied in
 Detail by Philipp Lenard.
 
-The emitted electrons are called **photoelectrons**. The setup consists of an evacuated
-Tube containing a metal plate (the cathode) and a collector plate (the anode). Light shines on the
+The emitted electrons are called **photoelectrons**. The setup consists of an evacuated Tube
+containing a metal plate (the cathode) and a collector plate (the anode). Light shines on the
 Cathode, and any emitted electrons travel to the anode, producing a measurable current.
 
 ### Key Observations
@@ -37,12 +40,12 @@ Cathode, and any emitted electrons travel to the anode, producing a measurable c
 The experimental results were surprising and incompatible with classical wave theory:
 
 1. **Threshold frequency.** Electrons are emitted only if the incident light frequency exceeds a
- **threshold frequency** $f_0$. Below $f_0$No electrons are emitted regardless of intensity or
- exposure time.
+   **threshold frequency** $f_0$. Below $f_0$No electrons are emitted regardless of intensity or
+   exposure time.
 2. **Maximum kinetic energy depends on frequency, not intensity.** Increasing the intensity of light
- above $f_0$ increases the number of photoelectrons but not their maximum kinetic energy.
+   above $f_0$ increases the number of photoelectrons but not their maximum kinetic energy.
 3. **Instantaneous emission.** Electrons are emitted essentially instantaneously (within $10^{-9}$
- s) when the light exceeds $f_0$. There is no measurable time delay even at very low intensities.
+   s) when the light exceeds $f_0$. There is no measurable time delay even at very low intensities.
 
 ### Why Classical Wave Theory Fails
 
@@ -50,7 +53,7 @@ Classical wave theory predicts that:
 
 - The energy of a light wave depends on its intensity (amplitude), not its frequency.
 - Higher intensity should give electrons more energy, and should eventually cause emission at any
- frequency given enough time.
+  frequency given enough time.
 - At low intensities, electrons should need time to accumulate sufficient energy before emission.
 
 None of these predictions match observation. The threshold frequency and the instantaneous emission
@@ -96,7 +99,7 @@ This equation explains all three key observations:
 - Below $f_0$Each photon has insufficient energy to overcome $\phi$So no emission occurs.
 - Above $f_0$Increasing $f$ increases each photon's energy, raising $E_{k(\max)}$.
 - Increasing intensity means more photons per second, so more electrons are emitted, but each photon
- still carries the same energy.
+  still carries the same energy.
 
 ### The Photon Momentum
 
@@ -123,8 +126,8 @@ A plot of $E_{k(\max)}$ versus $f$ yields a straight line with slope $h$ and int
 Is how Millikan experimentally determined Planck's constant in 1916, confirming Einstein's equation.
 
 **Example (HL):** Light of wavelength $400\mathrm{ nm{}$ is incident on a metal surface with work
-Function $2.0\mathrm{ eV{}$. Find the maximum kinetic energy of the emitted electrons and the stopping
-Voltage.
+Function $2.0\mathrm{ eV{}$. Find the maximum kinetic energy of the emitted electrons and the
+stopping Voltage.
 
 $$
 E = \frac{hc}{\lambda} = \frac{6.63 \times 10^{-34} \times 3 \times 10^8}{400 \times 10^{-9}} = 4.97 \times 10^{-19}\mathrm{ J{} = 3.11\mathrm{ eV{}
@@ -156,8 +159,8 @@ $$
 For wavelengths longer than $\lambda_0$ (i.e., frequencies below $f_0$), no photoelectric emission
 Occurs regardless of intensity.
 
-**Example (HL):** The work function of sodium is $2.28\mathrm{ eV{}$. Find the threshold frequency and
-Threshold wavelength.
+**Example (HL):** The work function of sodium is $2.28\mathrm{ eV{}$. Find the threshold frequency
+and Threshold wavelength.
 
 $$
 F_0 = \frac{\phi}{h} = \frac{2.28 \times 1.6 \times 10^{-19}}{6.63 \times 10^{-34}} = 5.50 \times 10^{14}\mathrm{ Hz{}
@@ -206,28 +209,28 @@ Struck by an alpha particle.
 **Observations:**
 
 - The vast majority of alpha particles passed straight through the foil with little or no
- deflection.
+  deflection.
 - A small fraction were deflected through moderate angles.
-- A very small number (about 1 in 8000) were deflected through angles greater than $90^\circ$And some
- bounced nearly straight back.
+- A very small number (about 1 in 8000) were deflected through angles greater than $90^\circ$And
+  some bounced nearly straight back.
 
 **Conclusions:**
 
 1. **The atom is mostly empty space.** Most alpha particles passed through because the nucleus is
- tiny compared to the atomic diameter.
+   tiny compared to the atomic diameter.
 2. **There is a small, dense, positively charged nucleus.** Large-angle deflections require a strong
- repulsive force (Coulomb repulsion between the $+2e$ alpha particle and the concentrated positive
- charge of the nucleus). The fact that only a few particles were deflected at large angles means
- the target (nucleus) is very small.
+   repulsive force (Coulomb repulsion between the $+2e$ alpha particle and the concentrated positive
+   charge of the nucleus). The fact that only a few particles were deflected at large angles means
+   the target (nucleus) is very small.
 3. **Electrons orbit the nucleus.** The negative electrons must occupy the space around the nucleus
- at relatively large distances.
+   at relatively large distances.
 
 **Why the Thomson model failed:** In the plum pudding model, the positive charge is spread out. The
 Maximum Coulomb force on an alpha particle passing through a diffuse positive sphere would be much
 Smaller than what is needed to produce the observed large-angle deflections. Rutherford calculated
-That to produce a deflection of greater than $90^\circ$The alpha particle must encounter a concentrated
-Charge within a radius of approximately $10^{-14}\mathrm{ m{}$About four orders of magnitude smaller
-Than the known atomic radius ($\approx 10^{-10}\mathrm{ m{}$).
+That to produce a deflection of greater than $90^\circ$The alpha particle must encounter a
+concentrated Charge within a radius of approximately $10^{-14}\mathrm{ m{}$About four orders of
+magnitude smaller Than the known atomic radius ($\approx 10^{-10}\mathrm{ m{}$).
 
 ### The Stability Problem
 
@@ -244,26 +247,26 @@ Atom with quantum ideas from Planck and Einstein.
 **Postulates:**
 
 1. **Stationary states.** Electrons orbit the nucleus in fixed energy levels (stationary states)
- without radiating energy. Only certain orbits are allowed, corresponding to specific energy
- values.
+   without radiating energy. Only certain orbits are allowed, corresponding to specific energy
+   values.
 2. **Photon emission and absorption.** An electron can jump between levels by absorbing or emitting
- a photon whose energy equals the difference between the two levels:
+   a photon whose energy equals the difference between the two levels:
 
    $$
- hf = E_n - E_m
+   hf = E_n - E_m
    $$
 
- where $E_n \gt E_m$ for emission and $E_n \lt E_m$ for absorption.
+where $E_n \gt E_m$ for emission and $E_n \lt E_m$ for absorption.
 
 3. **Quantised angular momentum.** The angular momentum of the electron is quantised in units of
- $h/(2\pi)$:
+   $h/(2\pi)$:
 
    $$
- mvr = \frac{nh}{2\pi} = n\hbar
+   mvr = \frac{nh}{2\pi} = n\hbar
    $$
 
- where $n = 1, 2, 3, \ldots$ is the principal quantum number and $\hbar = h/(2\pi)$ is the reduced
- Planck constant.
+where $n = 1, 2, 3, \ldots$ is the principal quantum number and $\hbar = h/(2\pi)$ is the reduced
+Planck constant.
 
 ### Deriving the Bohr Energy Levels
 
@@ -339,12 +342,12 @@ $$
 
 The discrete spectral lines of hydrogen fall into series named after their discoverers:
 
-| Series | Transition | Region |
+| Series   | Transition | Region      |
 | -------- | ---------- | ----------- |
-| Lyman | $n \to 1$ | Ultraviolet |
-| Balmer | $n \to 2$ | Visible |
-| Paschen | $n \to 3$ | Infrared |
-| Brackett | $n \to 4$ | Infrared |
+| Lyman    | $n \to 1$  | Ultraviolet |
+| Balmer   | $n \to 2$  | Visible     |
+| Paschen  | $n \to 3$  | Infrared    |
+| Brackett | $n \to 4$  | Infrared    |
 
 The Balmer series is the most well-known because its lines fall in the visible range. The H-alpha
 Line ($n = 3 \to 2$) at $656\mathrm{ nm{}$ is a distinctive red line often observed in astrophysics.
@@ -493,8 +496,8 @@ $$
 \lambda = \frac{6.63 \times 10^{-34}}{9.11 \times 10^{-31} \times 5.93 \times 10^6} = 1.23 \times 10^{-10}\mathrm{ m{} = 0.123\mathrm{ nm{}
 $$
 
-This is comparable to the spacing between atomic planes in a crystal ($\sim 0.2\mathrm{ nm{}$), which
-Is why electron diffraction is observable.
+This is comparable to the spacing between atomic planes in a crystal ($\sim 0.2\mathrm{ nm{}$),
+which Is why electron diffraction is observable.
 
 ### Heisenberg Uncertainty Principle (HL)
 
@@ -514,10 +517,10 @@ Spread in momentum, and vice versa.
 **Implications:**
 
 - Electrons in atoms cannot have well-defined orbits (as in the Bohr model). Instead, we describe
- them using probability distributions (orbitals).
+  them using probability distributions (orbitals).
 - An electron confined to a nucleus ($\Delta x \approx 10^{-14}\mathrm{ m{}$) would have a momentum
- uncertainty far exceeding $mc$Implying relativistic speeds -- another argument against electrons
- existing inside the nucleus.
+  uncertainty far exceeding $mc$Implying relativistic speeds -- another argument against electrons
+  existing inside the nucleus.
 
 There is also an energy-time uncertainty relation:
 
@@ -551,13 +554,13 @@ Notation: an element $X$ with mass number $A$ and atomic number $Z$ is written $
 The strong nuclear force has several key properties:
 
 - It is attractive and very strong (about 100 times stronger than the electromagnetic force at
- nuclear distances).
+  nuclear distances).
 - It has a very short range, falling to near zero beyond about $3\mathrm{ fm{}$
- ($3 \times 10^{-15}\mathrm{ m{}$).
+  ($3 \times 10^{-15}\mathrm{ m{}$).
 - It is charge-independent: it acts between any two nucleons (proton-proton, neutron-neutron, or
- proton-neutron).
+  proton-neutron).
 - At very short distances (less than about $0.5\mathrm{ fm{}$), it becomes repulsive, preventing the
- nucleus from collapsing to a point.
+  nucleus from collapsing to a point.
 
 The competition between the attractive strong force (short range) and the repulsive Coulomb force
 (long range, between protons) determines which nuclei are stable. Large nuclei have more protons, so
@@ -619,14 +622,15 @@ Probability per unit time.
 
 Types of decay:
 
-| Type | Symbol | Change | Penetrating Power |
-| ---------------- | ------------------------------- | -------------------------------------- | -------------------- |
-| Alpha decay | $\alpha$ (${}^4_2\mathrm{He{}$) | $Z$ decreases by 2, $A$ decreases by 4 | Low (paper) |
-| Beta-minus decay | $\beta^-$ (${}^0_{-1}\mathrm{e{}$) | $Z$ increases by 1, $A$ unchanged | Moderate (aluminium) |
-| Gamma decay | $\gamma$ | No change in $Z$ or $A$ | High (lead/concrete) |
+| Type             | Symbol                             | Change                                 | Penetrating Power    |
+| ---------------- | ---------------------------------- | -------------------------------------- | -------------------- |
+| Alpha decay      | $\alpha$ (${}^4_2\mathrm{He{}$)    | $Z$ decreases by 2, $A$ decreases by 4 | Low (paper)          |
+| Beta-minus decay | $\beta^-$ (${}^0_{-1}\mathrm{e{}$) | $Z$ increases by 1, $A$ unchanged      | Moderate (aluminium) |
+| Gamma decay      | $\gamma$                           | No change in $Z$ or $A$                | High (lead/concrete) |
 
 **Alpha decay** occurs mainly in heavy nuclei ($A \gt 150$). The emitted alpha particle is a
-Helium-4 nucleus. Example: ${}^{238}_{92}\mathrm{U{} \to {}^{234}_{90}\mathrm{Th{} + {}^4_2\mathrm{He{}$.
+Helium-4 nucleus. Example:
+${}^{238}_{92}\mathrm{U{} \to {}^{234}_{90}\mathrm{Th{} + {}^4_2\mathrm{He{}$.
 
 **Beta-minus decay** occurs when a neutron converts to a proton, emitting an electron and an
 Antineutrino: $n \to p + e^- + \bar{\nu}_e$. This process is mediated by the weak nuclear force.
@@ -730,8 +734,8 @@ $$
 \lambda = \frac{\ln 2}{5.27} = 0.1315\mathrm{ yr{}^{-1}
 $$
 
-**Example (HL):** A sample of iodine-131 ($t_{1/2} = 8.02\mathrm{ days{}$) initially has an activity of
-$400\mathrm{ Bq{}$. Find the activity after 30 days.
+**Example (HL):** A sample of iodine-131 ($t_{1/2} = 8.02\mathrm{ days{}$) initially has an activity
+of $400\mathrm{ Bq{}$. Find the activity after 30 days.
 
 $$
 A = A_0 e^{-\lambda t} = 400 \times e^{-\frac{\ln 2}{8.02} \times 30} = 400 \times e^{-2.59} = 400 \times 0.0749 = 30.0\mathrm{ Bq{}
@@ -764,100 +768,103 @@ $$
 $$
 
 Fusion is the process that powers stars. In the Sun, the proton-proton chain converts hydrogen to
-Helium, releasing approximately $26.7\mathrm{ MeV{}$ per helium-4 nucleus formed. Achieving controlled
-Fusion on Earth remains an active area of research (e.g., tokamak reactors and laser fusion).
+Helium, releasing approximately $26.7\mathrm{ MeV{}$ per helium-4 nucleus formed. Achieving
+controlled Fusion on Earth remains an active area of research (e.g., tokamak reactors and laser
+fusion).
 
 ### Energy Released in Fission
 
-The energy released in a single fission event of U-235 is approximately $200\mathrm{ MeV{}$. This can
-Be estimated from the binding energy per nucleon: U-235 has about $7.6\mathrm{ MeV/nucleon{}$While
-The fission products have about $8.5\mathrm{ MeV/nucleon{}$. The difference of about
-$0.9\mathrm{ MeV/nucleon{}$ times 235 nucleons gives approximately $210\mathrm{ MeV{}$.
+The energy released in a single fission event of U-235 is approximately $200\mathrm{ MeV{}$. This
+can Be estimated from the binding energy per nucleon: U-235 has about
+$7.6\mathrm{ MeV/nucleon{}$While The fission products have about $8.5\mathrm{ MeV/nucleon{}$. The
+difference of about $0.9\mathrm{ MeV/nucleon{}$ times 235 nucleons gives approximately
+$210\mathrm{ MeV{}$.
 
 ### Background Radiation
 
 We are constantly exposed to ionising radiation from natural and artificial sources:
 
-- **Radon gas:** A occurring radioactive gas (from uranium decay in rocks) that can
- accumulate in buildings. This is the largest source of natural background radiation.
+- **Radon gas:** A occurring radioactive gas (from uranium decay in rocks) that can accumulate in
+  buildings. This is the largest source of natural background radiation.
 - **Cosmic rays:** High-energy particles from space, primarily muons and protons. Exposure increases
- with altitude.
+  with altitude.
 - **Terrestrial radiation:** From radioactive isotopes (potassium-40, carbon-14, uranium, thorium)
- in rocks, soil, and food.
+  in rocks, soil, and food.
 - **Medical sources:** X-rays and radioactive tracers used in medicine.
 - **Artificial sources:** Nuclear power plants, fallout from nuclear weapons testing (now a minor
- contributor).
+  contributor).
 
 ### Applications of Radioactivity
 
 - **Medical imaging:** Technetium-99m is used as a radioactive tracer in gamma cameras.
 - **Radiotherapy:** Cobalt-60 or other high-energy gamma sources are used to destroy cancer cells.
 - **Carbon dating:** The ratio of carbon-14 to carbon-12 in organic material decreases after death
- with a half-life of 5730 years, allowing estimation of the age of archaeological samples.
+  with a half-life of 5730 years, allowing estimation of the age of archaeological samples.
 - **Smoke detectors:** Americium-241 emits alpha particles that ionise air, allowing current flow.
- Smoke particles disrupt this current, triggering the alarm.
+  Smoke particles disrupt this current, triggering the alarm.
 - **Tracers in industry:** Radioactive isotopes are used to detect leaks in pipelines and monitor
- wear in engine parts.
+  wear in engine parts.
 
 ## Common Pitfalls
 
 1. **Photoelectric effect** -- it is the frequency, not the intensity, that determines whether
- electrons are emitted. Intensity affects the number of electrons, not their maximum energy.
+   electrons are emitted. Intensity affects the number of electrons, not their maximum energy.
 2. **Bohr model** -- the formula $E_n = -13.6/n^2$ applies only to hydrogen (and hydrogen-like ions
- with a correction factor of $Z^2$). It does not work for multi-electron atoms.
+   with a correction factor of $Z^2$). It does not work for multi-electron atoms.
 3. **Binding energy** -- always divide by the mass number to get binding energy per nucleon for
- comparison. Higher binding energy per nucleon means greater stability.
+   comparison. Higher binding energy per nucleon means greater stability.
 4. **Half-life calculations** -- the fraction remaining is $(1/2)^{n}$ where $n$ is the number of
- half-lives elapsed. Do not confuse the number of half-lives with the time itself.
+   half-lives elapsed. Do not confuse the number of half-lives with the time itself.
 5. **Alpha vs beta decay** -- alpha decreases $A$ by 4 and $Z$ by 2; beta-minus increases $Z$ by 1
- with no change in $A$.
-6. **Unit conversions** -- $1\mathrm{ eV{} = 1.6 \times 10^{-19}\mathrm{ J{}$. Always work in SI units
- (joules) for calculations involving $h$$c$And $m$And convert to eV at the end if needed.
+   with no change in $A$.
+6. **Unit conversions** -- $1\mathrm{ eV{} = 1.6 \times 10^{-19}\mathrm{ J{}$. Always work in SI
+   units (joules) for calculations involving $h$$c$And $m$And convert to eV at the end if needed.
 7. **Nuclear equations** -- always check conservation of $Z$ and $A$ on both sides.
 8. **De Broglie wavelength** -- use the relativistic momentum $p = \gamma mv$ for particles moving
- at speeds approaching $c$. For electrons accelerated through less than about $10\mathrm{ kV{}$The
- non-relativistic formula is accurate enough.
+   at speeds approaching $c$. For electrons accelerated through less than about $10\mathrm{ kV{}$The
+   non-relativistic formula is accurate enough.
 
 ## Practice Questions
 
 ### Ordinary Level
 
 1. Define the photoelectric effect. State two observations that cannot be explained by classical
- wave theory.
+   wave theory.
 2. State Rutherford's conclusions from the gold foil experiment. Why did these results contradict
- Thomson's plum pudding model?
+   Thomson's plum pudding model?
 3. Uranium-238 undergoes alpha decay. Write the nuclear equation and identify the daughter nucleus.
 4. A radioactive isotope has a half-life of 6 hours. After 18 hours, what fraction of the original
- sample remains?
+   sample remains?
 5. Distinguish between alpha, beta, and gamma radiation in terms of their penetrating power and the
- effect each has on atomic number and mass number.
+   effect each has on atomic number and mass number.
 6. What is background radiation? List three natural sources.
 
 ### Higher Level
 
-1. Light of wavelength $300\mathrm{ nm{}$ is incident on a zinc surface ($\phi = 3.63\mathrm{ eV{}$). Find
- the maximum kinetic energy of photoelectrons in eV. Will photoelectrons be emitted?
+1. Light of wavelength $300\mathrm{ nm{}$ is incident on a zinc surface
+   ($\phi = 3.63\mathrm{ eV{}$). Find the maximum kinetic energy of photoelectrons in eV. Will
+   photoelectrons be emitted?
 2. The work function of caesium is $1.95\mathrm{ eV{}$. Find the threshold frequency and threshold
- wavelength. If light of wavelength $450\mathrm{ nm{}$ is incident on the surface, find the stopping
- voltage.
+   wavelength. If light of wavelength $450\mathrm{ nm{}$ is incident on the surface, find the
+   stopping voltage.
 3. Calculate the first three energy levels of hydrogen. Find the wavelength of the photon emitted
- for a transition from $n = 4$ to $n = 1$. In which spectral series does this line belong?
+   for a transition from $n = 4$ to $n = 1$. In which spectral series does this line belong?
 4. Find the de Broglie wavelength of a neutron moving at $2 \times 10^4\mathrm{ m/s{}$
- ($m_n = 1.675 \times 10^{-27}\mathrm{ kg{}$).
-5. The mass defect of helium-4 is $0.0304\mathrm{ u{}$ ($1\mathrm{ u{} = 931.5\mathrm{ MeV{}/c^2$). Find the
- binding energy per nucleon.
+   ($m_n = 1.675 \times 10^{-27}\mathrm{ kg{}$).
+5. The mass defect of helium-4 is $0.0304\mathrm{ u{}$ ($1\mathrm{ u{} = 931.5\mathrm{ MeV{}/c^2$).
+   Find the binding energy per nucleon.
 6. A sample of strontium-90 ($t_{1/2} = 28.8\mathrm{ years{}$) has an initial activity of
- $1000\mathrm{ Bq{}$. Find the activity after 100 years and the time for the activity to fall to
- $100\mathrm{ Bq{}$.
+   $1000\mathrm{ Bq{}$. Find the activity after 100 years and the time for the activity to fall to
+   $100\mathrm{ Bq{}$.
 7. Carbon-14 has a half-life of 5730 years. A sample of ancient wood has a carbon-14 activity that
- is 25% of the activity of a living tree. Estimate the age of the wood.
+   is 25% of the activity of a living tree. Estimate the age of the wood.
 8. Explain why beta decay requires the existence of the neutrino. What conservation laws would be
- violated without it?
+   violated without it?
 9. A hydrogen atom absorbs a photon of wavelength $97.3\mathrm{ nm{}$. Determine the transition that
- occurred (initial and final energy levels).
-10. An electron is accelerated from rest through a potential difference of $200\mathrm{ V{}$. Find its
- de Broglie wavelength. Would this electron be suitable for diffraction by a crystal with lattice
- spacing $0.25\mathrm{ nm{}$? Justify your answer.
+   occurred (initial and final energy levels).
+10. An electron is accelerated from rest through a potential difference of $200\mathrm{ V{}$. Find
+    its de Broglie wavelength. Would this electron be suitable for diffraction by a crystal with
+    lattice spacing $0.25\mathrm{ nm{}$? Justify your answer.
 
 ## Summary
 

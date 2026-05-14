@@ -1,6 +1,8 @@
 ---
 title: Integration
-description: "A-Level Mathematics notes on Integration: Board Coverage; 1.1 Definition; 2. The Fundamental Theorem of Calculus; 2.1 Sketch proof of Part 2."
+description:
+  'A-Level Mathematics notes on Integration: Board Coverage; 1.1 Definition; 2. The Fundamental
+  Theorem of Calculus; 2.1 Sketch proof of Part 2.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Maths
@@ -9,19 +11,18 @@ categories:
   - Maths
 slug: integration
 ---
+
 ## Board Coverage
 
-| Board | Paper | Notes |
+| Board      | Paper      | Notes                                                      |
 | ---------- | ---------- | ---------------------------------------------------------- |
-| AQA | Paper 1, 2 | Basic integration in P1; by parts, substitution in P2 |
-| Edexcel | P1, P2 | Similar split |
-| OCR (A) | Paper 1, 2 | Includes trapezium rule |
+| AQA        | Paper 1, 2 | Basic integration in P1; by parts, substitution in P2      |
+| Edexcel    | P1, P2     | Similar split                                              |
+| OCR (A)    | Paper 1, 2 | Includes trapezium rule                                    |
 | CIE (9709) | P1, P2, P3 | Basic in P1; by parts/substitution in P2/P3; further in P3 |
 
-:::info
-The formula booklet provides standard integrals. You must know how to apply integration
-Techniques and when to use each method.
-:::
+:::info The formula booklet provides standard integrals. You must know how to apply integration
+Techniques and when to use each method. :::
 
 <hr />
 
@@ -34,8 +35,8 @@ Sums:
 
 $$\int_a^b f(x)\,dx = \lim_{n\to\infty}\sum_{i=1}^{n}f(x_i^*)\,\Delta x$$
 
-Where $[a,b]$ is divided into $n$ subintervals of width $\Delta x = \dfrac{b-a}{n}$And $x_i^*$ is
-A sample point in the $i$-th subinterval.
+Where $[a,b]$ is divided into $n$ subintervals of width $\Delta x = \dfrac{b-a}{n}$And $x_i^*$ is A
+sample point in the $i$-th subinterval.
 
 **Geometric picture.** We divide the area under $y = f(x)$ between $x = a$ and $x = b$ into $n$ thin
 Rectangles. The sum of their areas approximates the total area. As $n \to \infty$ (rectangles become
@@ -49,7 +50,8 @@ Infinitely thin), the approximation becomes exact.
 Contributions. If $f(x)$ is a rate (like velocity), then $\int_a^b f(x)\,dx$ is the total change
 (displacement).
 
-<DesmosGraph title="Integration as Area Under a Curve" expressions={["int_{0}^{b} x^2 dx"]} width={800} height={500} /> Increase the number of rectangles to see how Riemann sums converge to
+<DesmosGraph title="Integration as Area Under a Curve" expressions={["int_{0}^{b} x^2 dx"]}
+width={800} height={500} /> Increase the number of rectangles to see how Riemann sums converge to
 The exact area under the curve. Compare the upper and lower sums as the partition gets finer.
 
 <hr />
@@ -75,11 +77,9 @@ $$F(x) = G(x) + C \implies F(b) - F(a) = G(b) - G(a) = \int_a^b f(t)\,dt - 0$$
 
 Hence $\displaystyle\int_a^b f(x)\,dx = F(b) - F(a)$. $\blacksquare$
 
-:::info
-The Fundamental Theorem of Calculus is one of the most important results in all of
+:::info The Fundamental Theorem of Calculus is one of the most important results in all of
 Mathematics. It connects the two seemingly unrelated operations of differentiation (finding rates of
-Change) and integration (finding areas).
-:::
+Change) and integration (finding areas). :::
 
 <hr />
 
@@ -111,14 +111,14 @@ $$\int \sec^2 x\,dx = \tan x + C$$
 
 ### 3.2 Summary table
 
-| $f(x)$ | $\int f(x)\,dx$ |
+| $f(x)$              | $\int f(x)\,dx$            |
 | ------------------- | -------------------------- | --- | ---- |
 | $x^n$ ($n \neq -1$) | $\dfrac{x^{n+1}}{n+1} + C$ |
-| $1/x$ | $\ln                       | x   | + C$ |
-| $e^{kx}$ | $\dfrac{1}{k}e^{kx} + C$ |
-| $\cos x$ | $\sin x + C$ |
-| $\sin x$ | $-\cos x + C$ |
-| $\sec^2 x$ | $\tan x + C$ |
+| $1/x$               | $\ln                       | x   | + C$ |
+| $e^{kx}$            | $\dfrac{1}{k}e^{kx} + C$   |
+| $\cos x$            | $\sin x + C$               |
+| $\sin x$            | $-\cos x + C$              |
+| $\sec^2 x$          | $\tan x + C$               |
 
 <hr />
 
@@ -138,11 +138,9 @@ If $f(x)$ changes sign on $[a,b]$We must split the integral at each root:
 
 $$A = \int_a^b |f(x)|\,dx$$
 
-:::warning
-$\int_a^b f(x)\,dx$ gives the **signed area** (negative below the $x$-axis). To find the
+:::warning $\int_a^b f(x)\,dx$ gives the **signed area** (negative below the $x$-axis). To find the
 Actual geometric area, take the absolute value and integrate separately over regions where $f$ is
-Positive and negative.
-:::
+Positive and negative. :::
 
 ### 4.3 Area between two curves
 
@@ -182,10 +180,7 @@ Let $u = x^2 + 1$$du = 2x\,dx$.
 
 $$\int 2x\sqrt{x^2+1}\,dx = \int \sqrt{u}\,du = \frac{2}{3}u^{3/2} + C = \frac{2}{3}(x^2+1)^{3/2} + C$$
 
-:::tip
-Tip
-$\sqrt{g(x)}$ and $g'(x)$ in the integrand, try $u = g(x)$.
-:::
+:::tip Tip $\sqrt{g(x)}$ and $g'(x)$ in the integrand, try $u = g(x)$. :::
 
 ### 5.3 Definite integrals with substitution
 
@@ -219,10 +214,7 @@ I.e., $\displaystyle\int u\,dv = uv - \int v\,du$. $\blacksquare$
 Use the mnemonic **LIATE** (Logarithmic, Inverse trig, Algebraic, Trig, Exponential). Choose $u$
 From the leftmost category that appears.
 
-:::warning
-Warning
-After applying the formula, swap $u$ and $dv$.
-:::
+:::warning Warning After applying the formula, swap $u$ and $dv$. :::
 
 **Example.** Find $\displaystyle\int x e^x\,dx$.
 
@@ -278,9 +270,9 @@ Satisfies
 $$|E| \leq \frac{(b-a)^3}{12n^2}M$$
 
 **Proof (sketch).** For a single strip of width $h$The trapezium rule gives area
-$\dfrac{h}{2}[f(a) + f(a+h)]$While the true area is $\int_a^{a+h}f(x)\,dx$. By Taylor's theorem,
-The error per strip is $-\dfrac{h^3}{12}f''(\xi)$ for some $\xi \in (a, a+h)$. Summing $n$ strips
-And using the bound $|f''| \leq M$:
+$\dfrac{h}{2}[f(a) + f(a+h)]$While the true area is $\int_a^{a+h}f(x)\,dx$. By Taylor's theorem, The
+error per strip is $-\dfrac{h^3}{12}f''(\xi)$ for some $\xi \in (a, a+h)$. Summing $n$ strips And
+using the bound $|f''| \leq M$:
 
 $$|E| \leq n \cdot \frac{h^3}{12} M = n \cdot \frac{(b-a)^3}{12n^3}M = \frac{(b-a)^3}{12n^2}M \quad \blacksquare$$
 
@@ -288,10 +280,7 @@ $$|E| \leq n \cdot \frac{h^3}{12} M = n \cdot \frac{(b-a)^3}{12n^3}M = \frac{(b-
 The error also depends on how curved the function is (via $f''$). For a straight line ($f'' = 0$),
 The trapezium rule is exact.
 
-:::tip
-Tip
-Concave-down functions and overestimates for concave-up functions.
-:::
+:::tip Tip Concave-down functions and overestimates for concave-up functions. :::
 
 <hr />
 
@@ -579,14 +568,15 @@ $\blacksquare$
 
 ---
 
-:::tip
-Tip
-Ready to test your understanding of **Integration**? The [diagnostic test](/docs/alevel/maths/diagnostics/diag-integration) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
+:::tip Tip Ready to test your understanding of **Integration**? The
+[diagnostic test](/docs/alevel/maths/diagnostics/diag-integration) contains the hardest questions
+within the A-Level specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Integration with other pure mathematics topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Integration
+with other pure mathematics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and
+building a personal test matrix. :::
 
 ## Common Pitfalls
 

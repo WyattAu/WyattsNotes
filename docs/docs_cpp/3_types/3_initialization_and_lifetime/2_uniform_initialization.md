@@ -1,6 +1,8 @@
 ---
 title: Uniform Initialization
-description: "C++: Uniform Initialization — Initialization Syntaxes; Direct Initialization; Copy Initialization; List Initialization. and examination."
+description:
+  'C++: Uniform Initialization — Initialization Syntaxes; Direct Initialization; Copy
+  Initialization; List Initialization. and examination.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -8,13 +10,14 @@ categories:
   - Cpp
 slug: uniform-initialization
 ---
+
 Import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
-C++98 had three initialization syntaxes: `T()``T = x`And `T x`. Each had subtly different rules,
-And none could initialize containers or arrays uniformly. C++11 introduced brace initialization
-(`{}`) as a "uniform" syntax intended to work everywhere. The reality is more nuanced: brace
-Initialization interacts with overload resolution, `std::initializer_list`And narrowing
-Conversions in ways that every systems programmer must understand.
+C++98 had three initialization syntaxes: `T()``T = x`And `T x`. Each had subtly different rules, And
+none could initialize containers or arrays uniformly. C++11 introduced brace initialization (`{}`)
+as a "uniform" syntax intended to work everywhere. The reality is more nuanced: brace Initialization
+interacts with overload resolution, `std::initializer_list`And narrowing Conversions in ways that
+every systems programmer must understand.
 
 ## Initialization Syntaxes
 
@@ -180,10 +183,10 @@ A narrowing conversion is any implicit conversion where [N4950 §9.4.5.3]:
 
 - A floating-point type is converted to an integer type
 - A `long double` is converted to `double` or `float`Or `double` to `float`Unless the value is
- constant and fits
+  constant and fits
 - An integer type is converted to a narrower integer type, unless the value is constant and fits
 - An integer type is converted to an unsigned type that cannot represent all values of the source
- type
+  type
 
 ```cpp
 int a{100};             // OK: constant, fits
@@ -330,10 +333,10 @@ Point make_origin() {
 When braces are used, the compiler follows this priority for overload resolution [N4950 §12.4.3]:
 
 1. If a constructor takes `std::initializer_list`And the arguments can be converted to the list
- element type, the `initializer_list` constructor is preferred.
+   element type, the `initializer_list` constructor is preferred.
 2. If no `initializer_list` constructor matches, normal overload resolution applies.
 3. If the arguments cannot be converted to the `initializer_list` type, the `initializer_list`
- constructor is not considered.
+   constructor is not considered.
 
 ```cpp
 struct Widget {
@@ -495,7 +498,7 @@ int a3[3](1, 2, 3);       // ERROR: arrays can't use parenthesized init
 - **Module 7 (Data Layout)**: Fundamental types, struct layout, and alignment
 - **Module 8 (Pointers, References, Views)**: Reference binding during initialization
 - **Module 9.3 (Aggregate Initialization)**: Detailed aggregate initialization rules and designated
- initializers
+  initializers
 - **Module 9.4 (Constant Expressions)**: `constexpr` and `constinit` initialization
 - **Module 10 (Ownership and RAII)**: RAII and initialization of resource-holding objects
 

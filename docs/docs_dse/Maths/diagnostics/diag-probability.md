@@ -1,6 +1,8 @@
 ---
-title: "Probability -- Diagnostic Tests"
-description: "Diagnostic tests for DSE Probability: conditional probability, independence, tree diagrams, and common fallacies in probability reasoning."
+title: 'Probability -- Diagnostic Tests'
+description:
+  'Diagnostic tests for DSE Probability: conditional probability, independence, tree diagrams, and
+  common fallacies in probability reasoning.'
 slug: diag-probability
 hide_table_of_contents: true
 ---
@@ -15,10 +17,10 @@ hide_table_of_contents: true
 
 **Question:**
 
-In a school, $60\%$ of students play basketball and $30\%$ play football. $20\%$ play both sports. Find:
+In a school, $60\%$ of students play basketball and $30\%$ play football. $20\%$ play both sports.
+Find:
 
-(a) $P(\text{Football} \mid \text{Basketball})$
-(b) $P(\text{Basketball} \mid \text{Football})$
+(a) $P(\text{Football} \mid \text{Basketball})$ (b) $P(\text{Basketball} \mid \text{Football})$
 
 Are they equal?
 
@@ -54,7 +56,8 @@ If both $P(A) > 0$ and $P(B) > 0$Then mutually exclusive events CANNOT be indepe
 
 Only the trivial case (where one event has probability zero) allows both properties simultaneously.
 
-A common mistake is confusing "independent" with "mutually exclusive." They are generally opposite concepts.
+A common mistake is confusing "independent" with "mutually exclusive." They are generally opposite
+concepts.
 
 ---
 
@@ -68,7 +71,8 @@ A fair die is rolled 5 times. Find the probability of getting at least one 6.
 
 $$P(\text{at least one 6}) = 1 - P(\text{no 6s}) = 1 - \left(\frac{5}{6}\right)^5 = 1 - \frac{3125}{7776} = \frac{4651}{7776}$$
 
-A common mistake is trying to enumerate all cases with "at least one 6" directly (which has many terms), instead of using the complement.
+A common mistake is trying to enumerate all cases with "at least one 6" directly (which has many
+terms), instead of using the complement.
 
 ---
 
@@ -76,10 +80,10 @@ A common mistake is trying to enumerate all cases with "at least one 6" directly
 
 **Question:**
 
-A bag contains 3 red and 5 blue balls. Two balls are drawn **with replacement**. Find the probability that:
+A bag contains 3 red and 5 blue balls. Two balls are drawn **with replacement**. Find the
+probability that:
 
-(a) Both are red.
-(b) They are of different colours.
+(a) Both are red. (b) They are of different colours.
 
 **Solution:**
 
@@ -87,7 +91,8 @@ After replacement, the bag always has 3 red and 5 blue (8 total).
 
 (a) $P(\text{RR}) = \dfrac{3}{8} \times \dfrac{3}{8} = \dfrac{9}{64}$
 
-(b) $P(\text{different}) = P(\text{RB}) + P(\text{BR}) = \dfrac{3}{8} \times \dfrac{5}{8} + \dfrac{5}{8} \times \dfrac{3}{8} = \dfrac{15}{64} + \dfrac{15}{64} = \dfrac{30}{64} = \dfrac{15}{32}$
+(b)
+$P(\text{different}) = P(\text{RB}) + P(\text{BR}) = \dfrac{3}{8} \times \dfrac{5}{8} + \dfrac{5}{8} \times \dfrac{3}{8} = \dfrac{15}{64} + \dfrac{15}{64} = \dfrac{30}{64} = \dfrac{15}{32}$
 
 ---
 
@@ -95,7 +100,8 @@ After replacement, the bag always has 3 red and 5 blue (8 total).
 
 **Question:**
 
-Events $A$ and $B$ satisfy $P(A) = 0.4$$P(B) = 0.7$And $P(A \cup B) = 0.85$. Find $P(A \cap B)$ and determine whether $A$ and $B$ are independent.
+Events $A$ and $B$ satisfy $P(A) = 0.4$$P(B) = 0.7$And $P(A \cup B) = 0.85$. Find $P(A \cap B)$ and
+determine whether $A$ and $B$ are independent.
 
 **Solution:**
 
@@ -119,7 +125,8 @@ Since $P(A \cap B) = 0.25 \neq 0.28$The events are **not** independent.
 
 **Question:**
 
-A committee of 5 is chosen from 7 men and 6 women. Find the probability that the committee contains exactly 3 women.
+A committee of 5 is chosen from 7 men and 6 women. Find the probability that the committee contains
+exactly 3 women.
 
 **Solution:**
 
@@ -135,7 +142,8 @@ $$P = \frac{420}{1287} = \frac{140}{429}$$
 
 **Question:**
 
-Events $A$ and $B$ are independent with $P(A) = p$ and $P(B) = 2p$. Given that $P(A \cap B) = \dfrac{1}{8}$Find $p$.
+Events $A$ and $B$ are independent with $P(A) = p$ and $P(B) = 2p$. Given that
+$P(A \cap B) = \dfrac{1}{8}$Find $p$.
 
 **Solution:**
 
@@ -153,7 +161,9 @@ $$2p^2 = \frac{1}{8} \implies p^2 = \frac{1}{16} \implies p = \frac{1}{4}$$
 
 **Question:**
 
-A coin is tossed until the first head appears. If the probability of heads is $p$Find the probability that the first head appears on the $n$-th toss. Show that the total probability sums to 1.
+A coin is tossed until the first head appears. If the probability of heads is $p$Find the
+probability that the first head appears on the $n$-th toss. Show that the total probability sums
+to 1.
 
 **Solution:**
 
@@ -165,7 +175,8 @@ Total probability:
 
 $$\sum_{n=1}^{\infty} p(1-p)^{n-1} = p \cdot \frac{1}{1 - (1-p)} = p \cdot \frac{1}{p} = 1$$
 
-This is a geometric series with first term $p$ and ratio $(1-p)$Converging since $0 < 1-p < 1$ when $0 < p < 1$.
+This is a geometric series with first term $p$ and ratio $(1-p)$Converging since $0 < 1-p < 1$ when
+$0 < p < 1$.
 
 ---
 
@@ -175,7 +186,10 @@ This is a geometric series with first term $p$ and ratio $(1-p)$Converging since
 
 **Question:**
 
-A factory has two machines producing items. Machine $A$ produces $60\%$ of the items and has a defect rate of $3\%$. Machine $B$ produces $40\%$ of the items and has a defect rate of $5\%$. An item is randomly selected and found to be defective. Find the probability that it was produced by Machine $B$.
+A factory has two machines producing items. Machine $A$ produces $60\%$ of the items and has a
+defect rate of $3\%$. Machine $B$ produces $40\%$ of the items and has a defect rate of $5\%$. An
+item is randomly selected and found to be defective. Find the probability that it was produced by
+Machine $B$.
 
 **Solution:**
 
@@ -191,7 +205,9 @@ By Bayes' theorem:
 
 $$P(B \mid D) = \frac{P(D \mid B)P(B)}{P(D)} = \frac{0.05 \times 0.4}{0.038} = \frac{0.020}{0.038} = \frac{10}{19}$$
 
-**DSE Exam Technique:** When applying Bayes' theorem, always state the law of total probability step explicitly. The HKEAA awards method marks for this intermediate step even if the final answer has a minor arithmetic error.
+**DSE Exam Technique:** When applying Bayes' theorem, always state the law of total probability step
+explicitly. The HKEAA awards method marks for this intermediate step even if the final answer has a
+minor arithmetic error.
 
 ---
 
@@ -199,11 +215,10 @@ $$P(B \mid D) = \frac{P(D \mid B)P(B)}{P(D)} = \frac{0.05 \times 0.4}{0.038} = \
 
 **Question:**
 
-A bag contains 5 red marbles and 3 blue marbles. Three marbles are drawn without replacement. Find the probability that:
+A bag contains 5 red marbles and 3 blue marbles. Three marbles are drawn without replacement. Find
+the probability that:
 
-(a) All three are red.
-(b) Exactly two are red.
-(c) At least one is blue.
+(a) All three are red. (b) Exactly two are red. (c) At least one is blue.
 
 **Solution:**
 
@@ -227,7 +242,8 @@ $$P(\text{at least 1 blue}) = 1 - \frac{5}{28} = \frac{23}{28}$$
 
 **Question:**
 
-The letters of the word "PROBABILITY" are arranged at random. Find the probability that the two B's are together.
+The letters of the word "PROBABILITY" are arranged at random. Find the probability that the two B's
+are together.
 
 **Solution:**
 
@@ -257,7 +273,8 @@ This follows a binomial distribution: $X \sim \mathrm{Bin}(4,\; 0.5)$.
 
 $$P(X = 3) = \dbinom{4}{3}\left(\frac{1}{2}\right)^3\left(\frac{1}{2}\right)^1 = 4 \times \frac{1}{16} = \frac{1}{4}$$
 
-Alternatively, listing: there are $\dbinom{4}{3} = 4$ arrangements with exactly 3 heads (HHHT, HHTH, HTHH, THHH), each with probability $\left(\dfrac{1}{2}\right)^4 = \dfrac{1}{16}$.
+Alternatively, listing: there are $\dbinom{4}{3} = 4$ arrangements with exactly 3 heads (HHHT, HHTH,
+HTHH, THHH), each with probability $\left(\dfrac{1}{2}\right)^4 = \dfrac{1}{16}$.
 
 $$P = 4 \times \frac{1}{16} = \frac{1}{4}$$
 
@@ -267,7 +284,9 @@ $$P = 4 \times \frac{1}{16} = \frac{1}{4}$$
 
 **Question:**
 
-In a class of 40 students, 25 study Mathematics, 20 study Physics, and 8 study neither. A student is chosen at random. Given that the student studies Mathematics, find the probability that the student also studies Physics.
+In a class of 40 students, 25 study Mathematics, 20 study Physics, and 8 study neither. A student is
+chosen at random. Given that the student studies Mathematics, find the probability that the student
+also studies Physics.
 
 **Solution:**
 
@@ -293,7 +312,8 @@ $$P(P \mid M) = \frac{P(M \cap P)}{P(M)} = \frac{13/40}{25/40} = \frac{13}{25}$$
 
 **Question:**
 
-A game costs $\$5$ to play. A fair six-sided die is rolled. If the result is 6, you win $\$20$. Otherwise, you win nothing. Determine whether this game is fair.
+A game costs $\$5$ to play. A fair six-sided die is rolled. If the result is 6, you win $\$20$.
+Otherwise, you win nothing. Determine whether this game is fair.
 
 **Solution:**
 
@@ -303,9 +323,11 @@ $$E(X) = 0 \times \frac{5}{6} + 20 \times \frac{1}{6} = \frac{20}{6} = \frac{10}
 
 Net expected gain: $E(X) - 5 = \dfrac{10}{3} - 5 = -\dfrac{5}{3} \approx -\$1.67$.
 
-Since the expected net gain is negative, the game is **not fair**. The player loses on average $\dfrac{5}{3}$ dollars per game.
+Since the expected net gain is negative, the game is **not fair**. The player loses on average
+$\dfrac{5}{3}$ dollars per game.
 
-A fair game would require the cost to equal the expected winnings, i.e. The cost should be $\dfrac{10}{3}$ dollars.
+A fair game would require the cost to equal the expected winnings, i.e. The cost should be
+$\dfrac{10}{3}$ dollars.
 
 ---
 
@@ -313,7 +335,8 @@ A fair game would require the cost to equal the expected winnings, i.e. The cost
 
 **Question:**
 
-A box contains 4 gold coins and 6 silver coins. Coins are drawn one at a time without replacement until a gold coin is drawn. Find the probability that exactly 3 draws are needed.
+A box contains 4 gold coins and 6 silver coins. Coins are drawn one at a time without replacement
+until a gold coin is drawn. Find the probability that exactly 3 draws are needed.
 
 **Solution:**
 
@@ -321,7 +344,8 @@ Exactly 3 draws means: first two are silver, third is gold.
 
 $$P = \frac{6}{10} \times \frac{5}{9} \times \frac{4}{8} = \frac{6 \times 5 \times 4}{10 \times 9 \times 8} = \frac{120}{720} = \frac{1}{6}$$
 
-**DSE Exam Technique:** Show each multiplication step . Write the probability of each individual draw before combining them.
+**DSE Exam Technique:** Show each multiplication step . Write the probability of each individual
+draw before combining them.
 
 ---
 
@@ -329,7 +353,8 @@ $$P = \frac{6}{10} \times \frac{5}{9} \times \frac{4}{8} = \frac{6 \times 5 \tim
 
 **Question:**
 
-A point is chosen at random inside a square of side 4 cm. Find the probability that the point is more than 1 cm from all sides of the square.
+A point is chosen at random inside a square of side 4 cm. Find the probability that the point is
+more than 1 cm from all sides of the square.
 
 **Solution:**
 
@@ -341,15 +366,25 @@ $$P = \frac{\text{area of inner square}}{\text{area of outer square}} = \frac{2^
 
 ## Common Pitfalls
 
-1. **Confusing $P(A \mid B)$ with $P(B \mid A)$.** These are generally different. Always identify which is the "given" condition and apply the formula $P(A \mid B) = \dfrac{P(A \cap B)}{P(B)}$ correctly. In DSE Paper 2, this distinction is frequently tested.
+1. **Confusing $P(A \mid B)$ with $P(B \mid A)$.** These are generally different. Always identify
+   which is the "given" condition and apply the formula $P(A \mid B) = \dfrac{P(A \cap B)}{P(B)}$
+   correctly. In DSE Paper 2, this distinction is frequently tested.
 
-2. **Assuming independence without justification.** Two events are independent only if $P(A \cap B) = P(A) \times P(B)$. You must verify this algebraically; never assume it from the context of the problem.
+2. **Assuming independence without justification.** Two events are independent only if
+   $P(A \cap B) = P(A) \times P(B)$. You must verify this algebraically; never assume it from the
+   context of the problem.
 
-3. **Forgetting to check if events are mutually exclusive when using addition rule.** The general formula is $P(A \cup B) = P(A) + P(B) - P(A \cap B)$. Only if $A$ and $B$ are mutually exclusive can you simplify to $P(A) + P(B)$.
+3. **Forgetting to check if events are mutually exclusive when using addition rule.** The general
+   formula is $P(A \cup B) = P(A) + P(B) - P(A \cap B)$. Only if $A$ and $B$ are mutually exclusive
+   can you simplify to $P(A) + P(B)$.
 
-4. **Not using the complement for "at least" problems.** For questions asking "at least one" or "at least two," always consider using $P(\text{at least } k) = 1 - P(\text{fewer than } k)$. Direct enumeration often leads to errors and missed cases.
+4. **Not using the complement for "at least" problems.** For questions asking "at least one" or "at
+   least two," always consider using $P(\text{at least } k) = 1 - P(\text{fewer than } k)$. Direct
+   enumeration often leads to errors and missed cases.
 
-5. **Incorrect counting with identical objects.** When arranging letters or selecting items with identical elements, remember to divide by the factorial of the number of identical items. For example, the arrangements of "AABB" is $\dfrac{4!}{2! \times 2!} = 6$Not $4! = 24$.
+5. **Incorrect counting with identical objects.** When arranging letters or selecting items with
+   identical elements, remember to divide by the factorial of the number of identical items. For
+   example, the arrangements of "AABB" is $\dfrac{4!}{2! \times 2!} = 6$Not $4! = 24$.
 
 ---
 
@@ -357,11 +392,13 @@ $$P = \frac{\text{area of inner square}}{\text{area of outer square}} = \frac{2^
 
 ### DSE-1
 
-A school has 120 students. 70 play basketball, 50 play football, and 30 play volleyball. 20 play both basketball and football, 15 play both basketball and volleyball, 10 play both football and volleyball, and 5 play all three sports.
+A school has 120 students. 70 play basketball, 50 play football, and 30 play volleyball. 20 play
+both basketball and football, 15 play both basketball and volleyball, 10 play both football and
+volleyball, and 5 play all three sports.
 
-(a) Draw a Venn diagram to represent this information. (2 marks)
-(b) A student is chosen at random. Find the probability that the student plays exactly one sport. (3 marks)
-(c) Given that a student plays basketball, find the probability that the student also plays volleyball. (2 marks)
+(a) Draw a Venn diagram to represent this information. (2 marks) (b) A student is chosen at random.
+Find the probability that the student plays exactly one sport. (3 marks) (c) Given that a student
+plays basketball, find the probability that the student also plays volleyball. (2 marks)
 
 **Solution:**
 
@@ -395,10 +432,9 @@ $$P(\text{volleyball} \mid \text{basketball}) = \frac{15}{70} = \frac{3}{14}$$
 
 Two unbiased dice are thrown. Find the probability that:
 
-(a) The sum of the numbers shown is 7. (2 marks)
-(b) The sum is at least 10. (2 marks)
-(c) The product is a prime number. (3 marks)
-(d) Given that the sum is 7, find the probability that one of the dice shows a 3. (2 marks)
+(a) The sum of the numbers shown is 7. (2 marks) (b) The sum is at least 10. (2 marks) (c) The
+product is a prime number. (3 marks) (d) Given that the sum is 7, find the probability that one of
+the dice shows a 3. (2 marks)
 
 **Solution:**
 
@@ -412,7 +448,8 @@ $$P = \frac{6}{36} = \frac{1}{6}$$
 
 $$P = \frac{6}{36} = \frac{1}{6}$$
 
-(c) Product is prime: The only way is one die shows 1 and the other shows a prime (2, 3, or 5). The pairs are $(1,2), (2,1), (1,3), (3,1), (1,5), (5,1)$ --- 6 outcomes.
+(c) Product is prime: The only way is one die shows 1 and the other shows a prime (2, 3, or 5). The
+pairs are $(1,2), (2,1), (1,3), (3,1), (1,5), (5,1)$ --- 6 outcomes.
 
 $$P = \frac{6}{36} = \frac{1}{6}$$
 
@@ -426,9 +463,9 @@ $$P = \frac{2}{6} = \frac{1}{3}$$
 
 The probability that it rains on any given day in June is $0.3$. Assuming independence between days:
 
-(a) Find the probability that it does not rain for 5 consecutive days. (2 marks)
-(b) Find the probability that it rains on exactly 2 out of 7 days. (3 marks)
-(c) Find the probability that it rains on at least 3 out of 7 days. (3 marks)
+(a) Find the probability that it does not rain for 5 consecutive days. (2 marks) (b) Find the
+probability that it rains on exactly 2 out of 7 days. (3 marks) (c) Find the probability that it
+rains on at least 3 out of 7 days. (3 marks)
 
 **Solution:**
 
@@ -452,11 +489,11 @@ $$P(X \geq 3) = 1 - (0.08235 + 0.24707 + 0.3177) = 1 - 0.64712 = 0.35288$$
 
 ### DSE-4
 
-A box contains $n$ red balls and $n$ blue balls. Three balls are drawn at random without replacement. Find, in terms of $n$The probability that:
+A box contains $n$ red balls and $n$ blue balls. Three balls are drawn at random without
+replacement. Find, in terms of $n$The probability that:
 
-(a) All three balls are of the same colour. (3 marks)
-(b) The three balls are not all of the same colour. (2 marks)
-(c) For $n = 5$Evaluate the probability in part (a) as a fraction. (1 mark)
+(a) All three balls are of the same colour. (3 marks) (b) The three balls are not all of the same
+colour. (2 marks) (c) For $n = 5$Evaluate the probability in part (a) as a fraction. (1 mark)
 
 **Solution:**
 
@@ -484,10 +521,8 @@ $$P = \frac{5 - 2}{4(10 - 1)} = \frac{3}{36} = \frac{1}{12}$$
 
 Events $A$ and $B$ are such that $P(A) = 0.5$$P(B) = 0.6$And $P(A \mid B) = 0.4$.
 
-(a) Find $P(A \cap B)$. (1 mark)
-(b) Determine whether $A$ and $B$ are independent. Justify your answer. (3 marks)
-(c) Find $P(A \cup B)$. (2 marks)
-(d) Find $P(A' \cap B')$. (2 marks)
+(a) Find $P(A \cap B)$. (1 mark) (b) Determine whether $A$ and $B$ are independent. Justify your
+answer. (3 marks) (c) Find $P(A \cup B)$. (2 marks) (d) Find $P(A' \cap B')$. (2 marks)
 
 **Solution:**
 

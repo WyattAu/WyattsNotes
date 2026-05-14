@@ -1,6 +1,8 @@
 ---
 title: Object-Oriented Programming
-description: "A-Level Computer Science notes on Object-Oriented Programming: 1. Classes and Objects; Definition; Python Implementation; Class vs Instance."
+description:
+  'A-Level Computer Science notes on Object-Oriented Programming: 1. Classes and Objects;
+  Definition; Python Implementation; Class vs Instance.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - ComputerScience
@@ -9,6 +11,7 @@ categories:
   - ComputerScience
 slug: object-oriented-programming
 ---
+
 ## 1. Classes and Objects
 
 ### Definition
@@ -42,12 +45,12 @@ class BankAccount:
 
 ### Class vs Instance
 
-| Concept | Class | Instance (Object) |
+| Concept  | Class                 | Instance (Object)         |
 | -------- | --------------------- | ------------------------- |
-| Nature | Template / Blueprint | Concrete realisation |
-| Number | One class definition | Many objects |
-| Creation | Defined by programmer | Created at runtime |
-| Memory | One copy of methods | Own copy of instance vars |
+| Nature   | Template / Blueprint  | Concrete realisation      |
+| Number   | One class definition  | Many objects              |
+| Creation | Defined by programmer | Created at runtime        |
+| Memory   | One copy of methods   | Own copy of instance vars |
 
 <hr />
 
@@ -60,11 +63,11 @@ A class, and restricting direct access to internal state.
 
 ### Access Modifiers
 
-| Modifier | Meaning | Python convention |
+| Modifier  | Meaning                                | Python convention        |
 | --------- | -------------------------------------- | ------------------------ |
-| Public | Accessible from anywhere | `name` |
-| Protected | Accessible within class and subclasses | `_name` (convention) |
-| Private | Accessible only within the class | `__name` (name mangling) |
+| Public    | Accessible from anywhere               | `name`                   |
+| Protected | Accessible within class and subclasses | `_name` (convention)     |
+| Private   | Accessible only within the class       | `__name` (name mangling) |
 
 ```python
 class Student:
@@ -87,10 +90,8 @@ class Student:
 3. **Flexibility:** Internal implementation can change without affecting users
 4. **Maintainability:** Reduces coupling between components
 
-:::tip
-Exam tip In exams, always justify why encapsulation is important. Focus on data integrity
-(preventing invalid states) and implementation flexibility.
-:::
+:::tip Exam tip In exams, always justify why encapsulation is important. Focus on data integrity
+(preventing invalid states) and implementation flexibility. :::
 
 <hr />
 
@@ -132,13 +133,13 @@ class Circle(Shape):
 
 ### Types of Inheritance
 
-| Type | Description | Python support |
+| Type         | Description                   | Python support |
 | ------------ | ----------------------------- | -------------- |
-| Single | One child, one parent | Yes |
-| Multiple | One child, multiple parents | Yes |
-| Multilevel | Chain: A → B → C | Yes |
-| Hierarchical | One parent, multiple children | Yes |
-| Hybrid | Combination of the above | Yes |
+| Single       | One child, one parent         | Yes            |
+| Multiple     | One child, multiple parents   | Yes            |
+| Multilevel   | Chain: A → B → C              | Yes            |
+| Hierarchical | One parent, multiple children | Yes            |
+| Hybrid       | Combination of the above      | Yes            |
 
 ### Method Overriding
 
@@ -203,19 +204,17 @@ Meow
 Some sound
 ```
 
-**Theorem (Liskov Substitution Principle).** If $S$ is a subtype of $T$Then objects of type $T$
-May be replaced with objects of type $S$ without altering any of the desirable properties of the
+**Theorem (Liskov Substitution Principle).** If $S$ is a subtype of $T$Then objects of type $T$ May
+be replaced with objects of type $S$ without altering any of the desirable properties of the
 Program.
 
 This means: wherever a superclass object is expected, a subclass object should work correctly.
 
-:::info
-Board-specific **AQA** requires understanding of classes, objects, inheritance,
+:::info Board-specific **AQA** requires understanding of classes, objects, inheritance,
 Polymorphism, encapsulation; uses pseudocode class definitions. **CIE (9618)** covers OOP
 Principles; may require implementation in a specific language (Python/Pascal). **OCR (A)** requires
 Class definitions with attributes and methods; constructor/destructor understanding. **Edexcel**
-Covers OOP with pseudocode; emphasises encapsulation and data hiding.
-:::
+Covers OOP with pseudocode; emphasises encapsulation and data hiding. :::
 
 <hr />
 
@@ -247,8 +246,8 @@ class Vehicle(ABC):
 ### Interfaces
 
 An **interface** is a contract specifying methods a class must implement, without providing any
-Implementation. In Python, interfaces are simulated using abstract classes with only
-Abstract methods.
+Implementation. In Python, interfaces are simulated using abstract classes with only Abstract
+methods.
 
 <hr />
 
@@ -297,23 +296,23 @@ class Room:
 
 When a `House` is destroyed, its `Room` objects are also destroyed.
 
-| Relationship | Independence | Lifecycle | Example |
+| Relationship | Independence | Lifecycle            | Example            |
 | ------------ | ------------ | -------------------- | ------------------ |
-| Association | Independent | Independent | Doctor-Patient |
-| Aggregation | Independent | Independent | Department-Teacher |
-| Composition | Dependent | Part dies with whole | House-Room |
+| Association  | Independent  | Independent          | Doctor-Patient     |
+| Aggregation  | Independent  | Independent          | Department-Teacher |
+| Composition  | Dependent    | Part dies with whole | House-Room         |
 
 <hr />
 
 ## 7. SOLID Principles
 
-| Principle | Name | Description |
+| Principle | Name                  | Description                                         |
 | --------- | --------------------- | --------------------------------------------------- |
-| S | Single Responsibility | A class should have one reason to change |
-| O | Open/Closed | Open for extension, closed for modification |
-| L | Liskov Substitution | Subtypes must be substitutable for their base types |
-| I | Interface Segregation | Clients shouldn't depend on methods they don't use |
-| D | Dependency Inversion | Depend on abstractions, not concretions |
+| S         | Single Responsibility | A class should have one reason to change            |
+| O         | Open/Closed           | Open for extension, closed for modification         |
+| L         | Liskov Substitution   | Subtypes must be substitutable for their base types |
+| I         | Interface Segregation | Clients shouldn't depend on methods they don't use  |
+| D         | Dependency Inversion  | Depend on abstractions, not concretions             |
 
 ### Example: Single Responsibility
 
@@ -622,8 +621,8 @@ Increasing order. For `D(B, C)`:
 - MRO: D, B, C, A, object
 - `B`'s version is preferred over `C`'s
 
-If `D` calls `super().__init__()`Python follows the MRO, ensuring each class's `__init__` is
-Called exactly once.
+If `D` calls `super().__init__()`Python follows the MRO, ensuring each class's `__init__` is Called
+exactly once.
 
 Languages like C++ resolve this differently (requiring explicit disambiguation).
 

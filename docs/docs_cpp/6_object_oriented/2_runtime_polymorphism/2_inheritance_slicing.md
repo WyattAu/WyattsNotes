@@ -1,6 +1,8 @@
 ---
 title: Inheritance, Object Slicing, and Virtual Destructors
-description: "C++: Inheritance, Object Slicing, and Virtual Destructors — 2.1 Single and Multiple Inheritance; 2.2 Object Slicing; Formal Definition [N4950 S11.4.5.3]."
+description:
+  'C++: Inheritance, Object Slicing, and Virtual Destructors — 2.1 Single and Multiple Inheritance;
+  2.2 Object Slicing; Formal Definition [N4950 S11.4.5.3].'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -8,6 +10,7 @@ categories:
   - Cpp
 slug: inheritance-slicing-virtual-destructors
 ---
+
 # Inheritance, Object Slicing, and Virtual Destructors
 
 Inheritance allows derived classes to extend base classes, but copying polymorphic objects by value
@@ -64,12 +67,10 @@ int main() {
 }
 ```
 
-:::info
-With multiple inheritance, `pa` and `pb` point to **different addresses** within the same
+:::info With multiple inheritance, `pa` and `pb` point to **different addresses** within the same
 `C` object -- they point to the respective base subobjects. The compiler generates **thunks** (small
 Adjustment stubs) to correct the `this` pointer when dispatching virtual calls through non-primary
-Bases.
-:::
+Bases. :::
 
 ## 2.2 Object Slicing
 
@@ -85,14 +86,14 @@ Derived-class members are not copied, and the vptr is set to the base class's vt
 
 ### Proof That Slicing Loses the Dynamic Type
 
-Let `B` be a base class with virtual function `f`And `D` be a derived class that overrides `f`.
-Let `d` be an object of type `D`. Consider the copy `B b = d;`.
+Let `B` be a base class with virtual function `f`And `D` be a derived class that overrides `f`. Let
+`d` be an object of type `D`. Consider the copy `B b = d;`.
 
 1. The copy constructor of `B` is called (the static type of `b` is `B`).
 2. `B`'s copy constructor copies only the `B` subobject of `d` -- it has no knowledge of `D`'s
- members [N4950 S11.4.5.3].
+   members [N4950 S11.4.5.3].
 3. The vptr of `b` is initialized to `B::vtable` (not `D::vtable`), because `b` is an object of type
- `B`.
+   `B`.
 4. Therefore, `b.f()` dispatches through `B::vtable` and calls `B::f`Not `D::f`.
 
 This proves that object slicing discards both the derived data members and the overridden virtual
@@ -148,14 +149,12 @@ process_by_ptr:   Woof!
 Sliced:           ...
 ```
 
-When `d` is passed by value to `process_by_value`Only the `Animal` subobject is copied. The vptr
-Is set to `Animal`'s vtable, so `a.speak()` dispatches to `Animal::speak`. The `Dog`-specific data
+When `d` is passed by value to `process_by_value`Only the `Animal` subobject is copied. The vptr Is
+set to `Animal`'s vtable, so `a.speak()` dispatches to `Animal::speak`. The `Dog`-specific data
 (`breed`) and the `Dog::speak` override are lost.
 
-:::warning
-Never pass polymorphic objects by value. Always use pointers (`Animal*`) or references
-(`Animal&` / `const Animal&`) to preserve the dynamic type.
-:::
+:::warning Never pass polymorphic objects by value. Always use pointers (`Animal*`) or references
+(`Animal&` / `const Animal&`) to preserve the dynamic type. :::
 
 ## 2.3 Slicing in Containers
 
@@ -225,13 +224,13 @@ Rectangle: area=20
 
 ### Solutions to Container Slicing
 
-| Approach | Syntax | Ownership | Slicing Safe |
+| Approach                                           | Syntax                                    | Ownership | Slicing Safe          |
 | -------------------------------------------------- | ----------------------------------------- | --------- | --------------------- |
-| `std::vector&lt;std::unique_ptr&lt;Base&gt;&gt;` | Heap allocation, unique ownership | Yes | Yes |
-| `std::vector&lt;std::shared_ptr&lt;Base&gt;&gt;` | Heap allocation, shared ownership | Yes | Yes |
-| `std::vector&lt;Base*&gt;` | Raw pointers (manual lifetime) | Manual | Yes |
-| `std::vector&lt;std::variant&lt;A, B, C&gt;&gt;` | Stack allocation, type-indexed | Yes | Yes (not polymorphic) |
-| `std::vector&lt;polymorphic_value&lt;Base&gt;&gt;` | Proposed `std::polymorphic_value` (C++26) | Yes | Yes |
+| `std::vector&lt;std::unique_ptr&lt;Base&gt;&gt;`   | Heap allocation, unique ownership         | Yes       | Yes                   |
+| `std::vector&lt;std::shared_ptr&lt;Base&gt;&gt;`   | Heap allocation, shared ownership         | Yes       | Yes                   |
+| `std::vector&lt;Base*&gt;`                         | Raw pointers (manual lifetime)            | Manual    | Yes                   |
+| `std::vector&lt;std::variant&lt;A, B, C&gt;&gt;`   | Stack allocation, type-indexed            | Yes       | Yes (not polymorphic) |
+| `std::vector&lt;polymorphic_value&lt;Base&gt;&gt;` | Proposed `std::polymorphic_value` (C++26) | Yes       | Yes                   |
 
 ## 2.4 Virtual Destructors
 
@@ -245,12 +244,12 @@ _static type_ of the pointer if `B`'s destructor is non-virtual. If `B`'s destru
 Destructor selected is determined by the _dynamic type_ of the object.
 
 1. If `Base::~Base()` is non-virtual and `delete base_ptr` is called where `base_ptr` actually
- points to a `Derived` object, the static type is `Base*`. The compiler generates a direct call to
- `Base::~Base()`.
+   points to a `Derived` object, the static type is `Base*`. The compiler generates a direct call to
+   `Base::~Base()`.
 2. `Derived::~Derived()` never runs. Resources held by `Derived` (file handles, heap memory, network
- connections) are leaked.
+   connections) are leaked.
 3. By [N4950 S11.4.7], if the static type of the operand of `delete` is different from its dynamic
- type and the static type's destructor is not virtual, the behavior is undefined.
+   type and the static type's destructor is not virtual, the behavior is undefined.
 
 ```cpp
 #include <iostream>
@@ -296,11 +295,9 @@ With `BadBase`Only `BadBase::~BadBase()` is called -- `BadDerived::~BadDerived()
 Causing resource leaks. With `GoodBase`The virtual dispatch mechanism selects
 `GoodDerived::~GoodDerived()`Which then implicitly calls `GoodBase::~GoodBase()`.
 
-:::tip
-Rule If a class has **any** virtual function, its destructor **must** also be virtual. If a
+:::tip Rule If a class has **any** virtual function, its destructor **must** also be virtual. If a
 Class is designed to be a polymorphic base class, always declare `virtual ~Base() = default;` (or
-Provide a virtual destructor with a body).
-:::
+Provide a virtual destructor with a body). :::
 
 ### Destructor Chaining Order
 
@@ -309,7 +306,7 @@ When a `Derived` object is destroyed through a `Base*` with a virtual destructor
 1. `Derived::~Derived()` runs (body, then member destruction).
 2. `Base::~Base()` runs (body, then member destruction).
 3. The deallocation function (`operator delete`) is called with the size and alignment of the
- _most-derived_ type (the Itanium ABI stores the size in the vtable for this purpose).
+   _most-derived_ type (the Itanium ABI stores the size in the vtable for this purpose).
 
 This ordering is guaranteed by [N4950 S11.9.3]: destructors are called in the reverse order of
 Construction.
@@ -393,9 +390,9 @@ int main() {
 Key properties of pure virtual functions:
 
 - A pure virtual function **may** have a definition in the base class. The class is still abstract,
- but derived classes can explicitly call it via `Base::f()`.
+  but derived classes can explicitly call it via `Base::f()`.
 - A derived class that does not provide an override for all inherited pure virtual functions is
- itself abstract.
+  itself abstract.
 - Abstract classes can have data members and non-pure virtual functions.
 
 ## 2.6 Interfaces in C++
@@ -439,11 +436,9 @@ private:
 };
 ```
 
-:::info
-Convention Prefixing interface names with `I` (e.g., `ISerializable`) is a common C++
+:::info Convention Prefixing interface names with `I` (e.g., `ISerializable`) is a common C++
 Convention borrowed from COM and C#. It is not mandated by the Standard. Alternatives include
-Suffixes like `-able` (e.g., `Serializable`).
-:::
+Suffixes like `-able` (e.g., `Serializable`). :::
 
 ## 2.7 Virtual Inheritance and the Diamond Problem
 
@@ -514,12 +509,10 @@ Pointer (stored in the vtable or as a separate vptr) to locate the shared `Devic
 Runtime. This adds one level of indirection to every access of a virtual base member [N4950
 S11.7.1].
 
-:::warning
-Virtual inheritance adds runtime cost: accessing members of a virtual base requires an
+:::warning Virtual inheritance adds runtime cost: accessing members of a virtual base requires an
 Extra indirection through the vbase offset table. Construction order is also affected -- virtual
 Bases are constructed by the most-derived class, before any non-virtual base classes [N4950
-S11.9.3]. Avoid virtual inheritance unless the diamond pattern is genuinely needed.
-:::
+S11.9.3]. Avoid virtual inheritance unless the diamond pattern is genuinely needed. :::
 
 ## 2.8 `override``final`And Name Hiding
 
@@ -565,11 +558,9 @@ The `using Base::process;` declaration in `Derived_Right` un-hides the remaining
 Applies even when the derived function is `virtual` and does override one specific overload -- all
 Other overloads are still hidden.
 
-:::tip
-Best Practice When overriding a base class function that participates in overloading, always
+:::tip Best Practice When overriding a base class function that participates in overloading, always
 Add `using Base::function_name;` in the derived class to avoid accidentally hiding sibling
-Overloads. The `override` keyword catches signature mismatches but does not prevent hiding.
-:::
+Overloads. The `override` keyword catches signature mismatches but does not prevent hiding. :::
 
 ## 2.9 Slicing and Return Values
 
@@ -688,11 +679,9 @@ int main() {
 }
 ```
 
-:::warning
-Always catch exceptions by reference (`const std::exception& e`). Catching by value
+:::warning Always catch exceptions by reference (`const std::exception& e`). Catching by value
 Slices the exception object, losing derived-class information and potentially invoking slicing in
-The exception handler itself.
-:::
+The exception handler itself. :::
 
 ## 2.12 Preventing Slicing at Compile Time
 

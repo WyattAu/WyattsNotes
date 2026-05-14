@@ -1,10 +1,13 @@
 ---
 id: text-processing
 title: Text Processing
-description: "Text Processing — Regular Expressions; BRE vs ERE vs PCRE; Character Classes and Anchors; Quantifiers with worked examples and exam-style questions."
+description:
+  'Text Processing — Regular Expressions; BRE vs ERE vs PCRE; Character Classes and Anchors;
+  Quantifiers with worked examples and exam-style questions.'
 slug: text-processing
 sidebar_position: 3
 ---
+
 ## Regular Expressions
 
 Regular expressions are the backbone of text processing on Linux. Three major flavors exist, each
@@ -12,11 +15,11 @@ With different capabilities and syntax.
 
 ### BRE vs ERE vs PCRE
 
-| Flavor | Engine | Activator | Metacharacters Require Escape | Lookaround |
-| ------ | --------------- | -------------------- | ----------------------------- | ----------- | --- |
-| BRE | POSIX `grep` | Default | `+``?``{``              | ``(``)` | No |
-| ERE | POSIX `grep -E` | `grep -E``egrep` | None | No |
-| PCRE | Perl-compatible | `grep -P``ripgrep` | None | Yes |
+| Flavor | Engine          | Activator          | Metacharacters Require Escape | Lookaround |
+| ------ | --------------- | ------------------ | ----------------------------- | ---------- | --- |
+| BRE    | POSIX `grep`    | Default            | `+`?`{``                      | `(`)`      | No  |
+| ERE    | POSIX `grep -E` | `grep -E``egrep`   | None                          | No         |
+| PCRE   | Perl-compatible | `grep -P``ripgrep` | None                          | Yes        |
 
 ```text
 BRE:  \{1,3\}    \+    \?    \(group\)

@@ -1,6 +1,8 @@
 ---
 title: Ratio, Proportion, and Rates of Change
-description: "Ratio, Proportion, and Rates of Change — 1. Ratio; 1.1 Writing and Simplifying Ratios; 1.2 Sharing in a Ratio; 1.3 Ratios and Fractions."
+description:
+  'Ratio, Proportion, and Rates of Change — 1. Ratio; 1.1 Writing and Simplifying Ratios; 1.2
+  Sharing in a Ratio; 1.3 Ratios and Fractions.'
 date: 2026-04-14
 tags:
   - Maths
@@ -9,10 +11,10 @@ categories:
   - Maths
 slug: ratio-proportion-rates-of-change
 ---
+
 ## Ratio, Proportion, and Rates of Change
 
-:::info
-Board Coverage AQA Paper 1 & 2 | Edexcel Paper 1 & 2 | OCR Paper 1, 2, 3 | WJEC Unit 1 & 2
+:::info Board Coverage AQA Paper 1 & 2 | Edexcel Paper 1 & 2 | OCR Paper 1, 2, 3 | WJEC Unit 1 & 2
 :::
 
 ## 1. Ratio
@@ -160,12 +162,12 @@ $$E = 5 \times 225 = 1125 \mathrm{ J{}$$
 
 ### 3.1 Distance-Time Graphs
 
-| Feature | Meaning |
+| Feature            | Meaning                 |
 | ------------------ | ----------------------- |
-| Gradient | Speed |
-| Horizontal section | Stationary |
-| Steeper section | Faster speed |
-| Downhill section | Returning towards start |
+| Gradient           | Speed                   |
+| Horizontal section | Stationary              |
+| Steeper section    | Faster speed            |
+| Downhill section   | Returning towards start |
 
 **Worked Example.** A person walks at 2 m/s for 10 seconds, then stops for 5 seconds, then runs at 5
 M/s for 4 seconds. Draw and interpret the distance-time graph.
@@ -182,11 +184,11 @@ Distance function if given.
 
 ### 3.2 Speed-Time (Velocity-Time) Graphs
 
-| Feature | Meaning |
+| Feature              | Meaning                          |
 | -------------------- | -------------------------------- |
-| Gradient | Acceleration |
-| Area under the graph | Distance travelled |
-| Below the time axis | Moving in the opposite direction |
+| Gradient             | Acceleration                     |
+| Area under the graph | Distance travelled               |
+| Below the time axis  | Moving in the opposite direction |
 
 **Key equations of motion (constant acceleration):**
 
@@ -212,8 +214,7 @@ Total: 140 m.
 
 ### 3.3 Rates of Change
 
-The **rate of change** of a quantity is how fast it changes per unit of another quantity (
-Time).
+The **rate of change** of a quantity is how fast it changes per unit of another quantity ( Time).
 
 $$\mathrm{Rate of change{} = \frac{\mathrm{change in quantity{}}{\mathrm{change in time{}}$$
 
@@ -234,7 +235,8 @@ In minutes. Find the rate at which the volume is increasing when $t = 4$.
 
 Draw the tangent at $t = 4$ (or differentiate):
 
-$$\frac{dV}{dt} = 4t + 3$$ $$\mathrm{At {} t = 4: \frac{dV}{dt} = 16 + 3 = 19 \mathrm{ litres/minute{}$$
+$$\frac{dV}{dt} = 4t + 3$$
+$$\mathrm{At {} t = 4: \frac{dV}{dt} = 16 + 3 = 19 \mathrm{ litres/minute{}$$
 
 ## 4. Growth and Decay
 
@@ -277,11 +279,11 @@ $$t = \frac{\ln 0.5}{\ln 0.95} = \frac{-0.693}{-0.0513} \approx 13.5 \mathrm{ ye
 
 ### 5.1 Speed, Density, and Pressure
 
-| Measure | Formula | Units |
-| -------- | ---------------------------------------------------- | ------------------ |
-| Speed | $\mathrm{speed{} = \frac{\mathrm{distance{}}{\mathrm{time{}}$ | m/s, km/h |
-| Density | $\rho = \frac{\mathrm{mass{}}{\mathrm{volume{}}$ | kg/m$^3$G/cm$^3$ |
-| Pressure | $P = \frac{\mathrm{force{}}{\mathrm{area{}}$ | Pa (N/m$^2$) |
+| Measure  | Formula                                                       | Units            |
+| -------- | ------------------------------------------------------------- | ---------------- |
+| Speed    | $\mathrm{speed{} = \frac{\mathrm{distance{}}{\mathrm{time{}}$ | m/s, km/h        |
+| Density  | $\rho = \frac{\mathrm{mass{}}{\mathrm{volume{}}$              | kg/m$^3$G/cm$^3$ |
+| Pressure | $P = \frac{\mathrm{force{}}{\mathrm{area{}}$                  | Pa (N/m$^2$)     |
 
 **Worked Example.** A block of metal has mass 1.8 kg and volume 200 cm$^3$. Find its density in
 G/cm$^3$.
@@ -299,13 +301,13 @@ $$F = P \times A = 5000 \times 0.04 = 200 \mathrm{ N{}$$
 
 ### 5.2 Unit Conversions
 
-| Conversion | Factor |
-| ------------------------ | -------------------------- |
-| 1 km = 1000 m | $\times 1000$ |
-| 1 m = 100 cm | $\times 100$ |
+| Conversion               | Factor                   |
+| ------------------------ | ------------------------ |
+| 1 km = 1000 m            | $\times 1000$            |
+| 1 m = 100 cm             | $\times 100$             |
 | 1 hour = 60 min = 3600 s | $\times 60$$\times 3600$ |
-| 1 litre = 1000 cm$^3$ | $\times 1000$ |
-| 1 kg = 1000 g | $\times 1000$ |
+| 1 litre = 1000 cm$^3$    | $\times 1000$            |
+| 1 kg = 1000 g            | $\times 1000$            |
 
 **Worked Example.** Convert 72 km/h to m/s.
 
@@ -439,8 +441,9 @@ Volume $= \frac{1}{3}\pi \times 16 \times 9 = 48\pi \approx 150.80 \mathrm{ cm{}
 
 Mass $= 8.4 \times 150.80 \approx 1266.7 \mathrm{ g{}$.
 
-**Worked Example.** A cuboid measures $5 \mathrm{ cm{} \times 3 \mathrm{ cm{} \times 2 \mathrm{ cm{}$. It has
-Mass 180 g. Find its density in kg/m$^3$.
+**Worked Example.** A cuboid measures
+$5 \mathrm{ cm{} \times 3 \mathrm{ cm{} \times 2 \mathrm{ cm{}$. It has Mass 180 g. Find its density
+in kg/m$^3$.
 
 Volume $= 30 \mathrm{ cm{}^3 = 30 \times 10^{-6} \mathrm{ m{}^3$.
 
@@ -452,35 +455,35 @@ Density $= \frac{0.180}{30 \times 10^{-6}} = \frac{0.180}{0.00003} = 6000 \mathr
 
 - **Mixing up the order of a ratio.** The ratio $A : B = 3 : 5$ means $A/B = 3/5$Not $B/A$.
 - **Forgetting to add all parts** when sharing in a ratio. The total number of parts is $a + b$Not
- just $a$ or $b$.
+  just $a$ or $b$.
 - **Confusing direct and inverse proportion graphs.** Direct proportion is a straight line through
- the origin; inverse proportion is a curve.
+  the origin; inverse proportion is a curve.
 - **Incorrect unit conversions**, especially km/h to m/s (divide by 3.6, not multiply).
 - **Reading the wrong axis** on distance-time or speed-time graphs. Always check what each axis
- represents.
+  represents.
 - **Forgetting that the area under a speed-time graph gives distance**, even when the graph goes
- below the time axis (in which case it represents returning).
+  below the time axis (in which case it represents returning).
 - **Forgetting to use consistent units** in density/pressure problems. Convert everything to SI
- units before calculating.
+  units before calculating.
 - **Assuming that a ratio of $a : b : c$ with three unknowns has a unique solution** without
- additional constraints.
+  additional constraints.
 
 ### 9.1 Compound Measures Summary
 
-| Measure | Formula | Units |
-| -------- | ------------------------------- | ------------------ |
-| Speed | $\mathrm{speed{} = \frac{d}{t}$ | m/s, km/h |
-| Density | $\mathrm{density{} = \frac{m}{V}$ | kg/m$^3$G/cm$^3$ |
-| Pressure | $\mathrm{pressure{} = \frac{F}{A}$ | Pa (N/m$^2$) |
+| Measure  | Formula                            | Units            |
+| -------- | ---------------------------------- | ---------------- |
+| Speed    | $\mathrm{speed{} = \frac{d}{t}$    | m/s, km/h        |
+| Density  | $\mathrm{density{} = \frac{m}{V}$  | kg/m$^3$G/cm$^3$ |
+| Pressure | $\mathrm{pressure{} = \frac{F}{A}$ | Pa (N/m$^2$)     |
 
 ### 9.2 Proportionality: A Quick Reference
 
-| Type | Equation | Graph shape |
+| Type          | Equation        | Graph shape                  |
 | ------------- | --------------- | ---------------------------- |
-| Direct | $y = kx$ | Straight line through origin |
-| Inverse | $y = k/x$ | Reciprocal curve |
-| Direct sq. | $y = kx^2$ | Quadratic through origin |
-| Direct sq.rt. | $y = k\sqrt{x}$ | Square root curve |
+| Direct        | $y = kx$        | Straight line through origin |
+| Inverse       | $y = k/x$       | Reciprocal curve             |
+| Direct sq.    | $y = kx^2$      | Quadratic through origin     |
+| Direct sq.rt. | $y = k\sqrt{x}$ | Square root curve            |
 
 **How to determine the type of proportionality from a table of values:**
 
@@ -491,12 +494,12 @@ Density $= \frac{0.180}{30 \times 10^{-6}} = \frac{0.180}{0.00003} = 6000 \mathr
 
 **Worked Example.** Given the table:
 
-| $x$ | 2 | 4 | 8 |
+| $x$ | 2   | 4   | 8   |
 | --- | --- | --- | --- |
-| $y$ | 6 | 12 | 24 |
+| $y$ | 6   | 12  | 24  |
 
-Check $y/x$: $6/2 = 3$$12/4 = 3$$24/8 = 3$. Constant, so $y$ is directly proportional to $x$.
-The equation is $y = 3x$.
+Check $y/x$: $6/2 = 3$$12/4 = 3$$24/8 = 3$. Constant, so $y$ is directly proportional to $x$. The
+equation is $y = 3x$.
 
 ### 9.3 Graphical Interpretation of Rates
 
@@ -514,16 +517,16 @@ The equation is $y = 3x$.
 - A horizontal line means constant speed (zero acceleration).
 - Area below the time axis represents motion in the opposite direction.
 
-**Worked Example.** A car accelerates from rest at $2\mathrm{ m/s{}^2$ for 10 seconds, then travels at
-Constant speed for 20 seconds, then decelerates uniformly to rest in 5 seconds.
+**Worked Example.** A car accelerates from rest at $2\mathrm{ m/s{}^2$ for 10 seconds, then travels
+at Constant speed for 20 seconds, then decelerates uniformly to rest in 5 seconds.
 
 Acceleration phase: $v = 2 \times 10 = 20$ m/s. Distance = $\frac{1}{2} \times 20 \times 10 = 100$
 M.
 
 Constant speed phase: Distance = $20 \times 20 = 400$ m.
 
-Deceleration phase: $a = -20/5 = -4\mathrm{ m/s{}^2$. Distance = $\frac{1}{2} \times 20 \times 5 = 50$
-M.
+Deceleration phase: $a = -20/5 = -4\mathrm{ m/s{}^2$. Distance =
+$\frac{1}{2} \times 20 \times 5 = 50$ M.
 
 Total distance = $100 + 400 + 50 = 550$ m.
 
@@ -583,39 +586,39 @@ $3 \times 1.15 = 3.45$ euros. Net: $575 - 3.45 = 571.55$ euros.
 3. $y$ is inversely proportional to $x^2$. When $x = 3$$y = 12$. Find $y$ when $x = 6$.
 
 4. A car travels 45 km in 30 minutes, then 60 km in 45 minutes. Calculate the average speed for the
- whole journey.
+   whole journey.
 
 5. The density of a material is 7.8 g/cm$^3$. Find the mass of a block of dimensions
- $5 \mathrm{ cm{} \times 3 \mathrm{ cm{} \times 2 \mathrm{ cm{}$.
+   $5 \mathrm{ cm{} \times 3 \mathrm{ cm{} \times 2 \mathrm{ cm{}$.
 
 6. A population grows by 4% each year. If the initial population is 50000, find the population after
- 7 years.
+   7 years.
 
 7. On a speed-time graph, a car accelerates uniformly from 10 m/s to 30 m/s over 8 seconds.
- Calculate the distance travelled during this acceleration.
+   Calculate the distance travelled during this acceleration.
 
 8. Two numbers are in the ratio $4 : 7$. When 10 is subtracted from each, the ratio becomes $1 : 2$.
- Find the numbers.
+   Find the numbers.
 
 9. A 500 g box of cereal costs 2.40 pounds and a 750 g box costs 3.30 pounds. Which is better value
- per 100 g?
+   per 100 g?
 
 10. The half-life of carbon-14 is 5730 years. A sample contains 12.5% of its original carbon-14. How
- old is the sample?
+    old is the sample?
 
 11. A cylinder has radius 5 cm, height 12 cm, and mass 1.2 kg. Find its density in g/cm$^3$.
 
 12. Water flows from a tap at a rate of 0.5 litres per second. How long does it take to fill a tank
- of volume 450 litres?
+    of volume 450 litres?
 
 13. $y$ is directly proportional to $x^n$. When $x = 2$$y = 24$. When $x = 4$$y = 192$. Find the
- value of $n$.
+    value of $n$.
 
 14. The ratio of boys to girls in a school is $3 : 5$. If there are 240 more girls than boys, how
- many students are there in total?
+    many students are there in total?
 
 15. A car decelerates uniformly from 25 m/s to 5 m/s in 4 seconds. Sketch the speed-time graph and
- find the distance travelled.
+    find the distance travelled.
 
 ### Extended Practice (Higher Tier)
 
@@ -624,29 +627,29 @@ $3 \times 1.15 = 3.45$ euros. Net: $575 - 3.45 = 571.55$ euros.
 17. $y$ is directly proportional to $\sqrt{x}$. When $x = 9$$y = 18$. Find $y$ when $x = 25$.
 
 18. A train travels at 120 km/h for 45 minutes, then at 80 km/h for 1 hour 15 minutes. Calculate the
- average speed for the entire journey.
+    average speed for the entire journey.
 
 19. Three friends share a pizza in the ratio of their ages. If their ages are 12, 15, and 18, what
- fraction of the pizza does the oldest friend receive?
+    fraction of the pizza does the oldest friend receive?
 
 20. The population of a town was 80000 in 2020 and 88000 in 2025. Assuming exponential growth, find
- the annual growth rate as a percentage.
+    the annual growth rate as a percentage.
 
 21. Water flows into a tank at 12 litres per minute and out at 5 litres per minute. If the tank
- initially contains 200 litres, how long until it contains 500 litres?
+    initially contains 200 litres, how long until it contains 500 litres?
 
 22. A rectangular field has dimensions in the ratio $3 : 5$. If the perimeter is 320 m, find the
- area of the field.
+    area of the field.
 
 23. On a journey, a cyclist accelerates from rest to 8 m/s over 10 seconds, maintains this speed for
- 2 minutes, then decelerates to rest over 5 seconds. Draw the speed-time graph and find the total
- distance.
+    2 minutes, then decelerates to rest over 5 seconds. Draw the speed-time graph and find the total
+    distance.
 
 24. The cost of petrol increases by 8% one year and then by 5% the next year. What is the overall
- percentage increase over the two years?
+    percentage increase over the two years?
 
 25. A map has a scale of $1 : 25000$. Two towns are 8 cm apart on the map. Find the actual distance
- between them in kilometres.
+    between them in kilometres.
 
 ### Extended Content
 
@@ -678,9 +681,11 @@ The compound interest earns EUR 15.25 more than simple interest over 3 years.
 
 #### 10.2 Percentage Change Calculations
 
-**Percentage increase:** $\frac{\mathrm{new{} - \mathrm{original{}}{\mathrm{original{}} \times 100\%$
+**Percentage increase:**
+$\frac{\mathrm{new{} - \mathrm{original{}}{\mathrm{original{}} \times 100\%$
 
-**Percentage decrease:** $\frac{\mathrm{original{} - \mathrm{new{}}{\mathrm{original{}} \times 100\%$
+**Percentage decrease:**
+$\frac{\mathrm{original{} - \mathrm{new{}}{\mathrm{original{}} \times 100\%$
 
 **Worked Example.** A shirt originally costs 40 pounds. It is reduced to 32 pounds in a sale. What
 Is the percentage decrease?

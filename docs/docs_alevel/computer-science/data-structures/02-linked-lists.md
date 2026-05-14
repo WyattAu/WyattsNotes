@@ -1,6 +1,8 @@
 ---
 title: Linked Lists
-description: "A-Level Computer Science notes on Linked Lists: 1. Introduction; Definition; Node Structure; 2. Singly Linked List with worked examples and exam-style questi."
+description:
+  'A-Level Computer Science notes on Linked Lists: 1. Introduction; Definition; Node Structure; 2.
+  Singly Linked List with worked examples and exam-style questi.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - ComputerScience
@@ -9,6 +11,7 @@ categories:
   - ComputerScience
 slug: linked-lists
 ---
+
 ## 1. Introduction
 
 ### Definition
@@ -200,28 +203,26 @@ def dll_delete(node):
 
 ### Operations Summary
 
-| Operation | Singly | Doubly |
+| Operation                    | Singly | Doubly |
 | ---------------------------- | ------ | ------ |
-| Insert at head | $O(1)$ | $O(1)$ |
-| Insert at tail (given tail) | $O(1)$ | $O(1)$ |
+| Insert at head               | $O(1)$ | $O(1)$ |
+| Insert at tail (given tail)  | $O(1)$ | $O(1)$ |
 | Insert at tail (no tail ptr) | $O(n)$ | $O(n)$ |
-| Insert after node | $O(1)$ | $O(1)$ |
-| Insert before node | $O(n)$ | $O(1)$ |
-| Delete head | $O(1)$ | $O(1)$ |
-| Delete tail (given tail) | $O(n)$ | $O(1)$ |
-| Delete given node | $O(n)$ | $O(1)$ |
-| Search by value | $O(n)$ | $O(n)$ |
-| Access by index | $O(n)$ | $O(n)$ |
+| Insert after node            | $O(1)$ | $O(1)$ |
+| Insert before node           | $O(n)$ | $O(1)$ |
+| Delete head                  | $O(1)$ | $O(1)$ |
+| Delete tail (given tail)     | $O(n)$ | $O(1)$ |
+| Delete given node            | $O(n)$ | $O(1)$ |
+| Search by value              | $O(n)$ | $O(n)$ |
+| Access by index              | $O(n)$ | $O(n)$ |
 
-:::info
-Board-specific
+:::info Board-specific
 
 - **AQA** focuses on singly linked lists with pointer-based implementation (using `NULL` / `nil`
- pointers)
+  pointers)
 - **CIE (9618)** may require both singly and doubly linked lists
 - **OCR (A)** links linked lists to stack and queue implementations (dynamic data structures)
-- **Edexcel** covers basic singly linked list operations
-:::
+- **Edexcel** covers basic singly linked list operations :::
 
 <hr />
 
@@ -229,19 +230,19 @@ Board-specific
 
 ### Formal Comparison
 
-| Property | Array | Linked List |
+| Property          | Array                | Linked List         |
 | ----------------- | -------------------- | ------------------- |
-| Memory layout | Contiguous | Scattered |
-| Access by index | $O(1)$ | $O(n)$ |
-| Insert at head | $O(n)$ | $O(1)$ |
-| Insert at tail | $O(1)$ amortised | $O(1)$ with tail |
-| Insert at middle | $O(n)$ | $O(1)$ given node |
-| Delete at head | $O(n)$ | $O(1)$ |
-| Delete at middle | $O(n)$ | $O(1)$ given node |
-| Search | $O(n)$ / $O(\log n)$ | $O(n)$ |
-| Memory overhead | None | Pointer(s) per node |
-| Cache performance | Excellent | Poor |
-| Memory allocation | Pre-allocated | Per-node dynamic |
+| Memory layout     | Contiguous           | Scattered           |
+| Access by index   | $O(1)$               | $O(n)$              |
+| Insert at head    | $O(n)$               | $O(1)$              |
+| Insert at tail    | $O(1)$ amortised     | $O(1)$ with tail    |
+| Insert at middle  | $O(n)$               | $O(1)$ given node   |
+| Delete at head    | $O(n)$               | $O(1)$              |
+| Delete at middle  | $O(n)$               | $O(1)$ given node   |
+| Search            | $O(n)$ / $O(\log n)$ | $O(n)$              |
+| Memory overhead   | None                 | Pointer(s) per node |
+| Cache performance | Excellent            | Poor                |
+| Memory allocation | Pre-allocated        | Per-node dynamic    |
 
 ### Cache Performance Analysis
 
@@ -255,13 +256,11 @@ Linked list nodes are scattered in memory, so each `next` pointer dereference is
 Miss** (probability approaches 1 as list size exceeds cache capacity). Each cache miss costs ~100
 Cycles vs ~1 cycle for a cache hit. $\square$
 
-:::tip
-Exam tip When asked "when would you use a linked list instead of an array?", focus on:
+:::tip Exam tip When asked "when would you use a linked list instead of an array?", focus on:
 
 - Frequent insertions/deletions at known positions
 - Unknown or highly variable size
-- When random access is not needed
-:::
+- When random access is not needed :::
 
 <hr />
 
@@ -461,13 +460,13 @@ Iterative reverse algorithm. Show the state after each iteration.
 
 Initial: `prev = None``current = [1] → [2] → [3] → [4] → None`
 
-| Iteration | prev | current | next_node |
+| Iteration | prev            | current         | next_node |
 | --------- | --------------- | --------------- | --------- |
-| 1 | None | [1] → [2] → ... | [2] → ... |
-| (after 1) | [1] | [2] → [3] → ... | [3] → ... |
-| (after 2) | [2]→[1] | [3] → [4] → ... | [4] → ... |
-| (after 3) | [3]→[2]→[1] | [4] → None | None |
-| (after 4) | [4]→[3]→[2]→[1] | None | None |
+| 1         | None            | [1] → [2] → ... | [2] → ... |
+| (after 1) | [1]             | [2] → [3] → ... | [3] → ... |
+| (after 2) | [2]→[1]         | [3] → [4] → ... | [4] → ... |
+| (after 3) | [3]→[2]→[1]     | [4] → None      | None      |
+| (after 4) | [4]→[3]→[2]→[1] | None            | None      |
 
 Result: `[4] → [3] → [2] → [1] → None`
 
@@ -480,14 +479,14 @@ Operations, and memory usage.
 <details>
 <summary>Answer</summary>
 
-| Property | Array-based circular buffer | Circular linked list |
+| Property   | Array-based circular buffer    | Circular linked list             |
 | ---------- | ------------------------------ | -------------------------------- |
-| Enqueue | $O(1)$ | $O(1)$ |
-| Dequeue | $O(1)$ | $O(1)$ |
-| Memory | Fixed, no per-element overhead | 1 pointer per node |
-| Max size | Fixed at creation | Dynamic (until memory exhausted) |
-| Cache perf | Excellent (contiguous) | Poor (scattered) |
-| Overflow | Possible (fixed size) | Not possible |
+| Enqueue    | $O(1)$                         | $O(1)$                           |
+| Dequeue    | $O(1)$                         | $O(1)$                           |
+| Memory     | Fixed, no per-element overhead | 1 pointer per node               |
+| Max size   | Fixed at creation              | Dynamic (until memory exhausted) |
+| Cache perf | Excellent (contiguous)         | Poor (scattered)                 |
+| Overflow   | Possible (fixed size)          | Not possible                     |
 
 The array implementation is preferred when the maximum size is known and memory efficiency matters.
 The linked list is preferred when the size is highly variable.
@@ -600,16 +599,16 @@ Go through each operation one at a time. For `insert_at`Position 1 means the sec
 2. After `insert_head(20)`: `head → [20|•] → [10|•] → None`
 3. After `insert_tail(30)`: `head → [20|•] → [10|•] → [30|•] → None`
 4. After `insert_at(15, 1)`: Traverse to position 0 (value 20), insert after it:
- `head → [20|•] → [15|•] → [10|•] → [30|•] → None`
+   `head → [20|•] → [15|•] → [10|•] → [30|•] → None`
 5. After `delete_value(20)`: Head contains 20, so return `head.next`:
- `head → [15|•] → [10|•] → [30|•] → None`
+   `head → [15|•] → [10|•] → [30|•] → None`
 
 Final list: 15, 10, 30.
 
 </details>
 
-**Problem 4.** Given the singly linked list `head → [5|•] → [12|•] → [3|•] → [8|•] → None`Trace
-The `search` function looking for the value 3. How many nodes are visited? Repeat for searching for
+**Problem 4.** Given the singly linked list `head → [5|•] → [12|•] → [3|•] → [8|•] → None`Trace The
+`search` function looking for the value 3. How many nodes are visited? Repeat for searching for
 Value 9.
 
 <details>
@@ -658,12 +657,12 @@ Whether you can go backwards in a singly linked list.
 <details>
 <summary>Answer</summary>
 
-| Operation | Singly | Doubly |
+| Operation                            | Singly                                          | Doubly                                   |
 | ------------------------------------ | ----------------------------------------------- | ---------------------------------------- |
-| (a) Memory per node | $O(d + p)$ (1 pointer) | $O(d + 2p)$ (2 pointers) |
-| (b) Insert at tail (no tail pointer) | $O(n)$ — traverse to end | $O(n)$ — must still traverse from head |
-| (c) Insert before a given node | $O(n)$ — traverse from head to find predecessor | $O(1)$ — use `node.prev` |
-| (d) Delete a given node (reference) | $O(n)$ — need predecessor to update its `next` | $O(1)$ — use `node.prev` and `node.next` |
+| (a) Memory per node                  | $O(d + p)$ (1 pointer)                          | $O(d + 2p)$ (2 pointers)                 |
+| (b) Insert at tail (no tail pointer) | $O(n)$ — traverse to end                        | $O(n)$ — must still traverse from head   |
+| (c) Insert before a given node       | $O(n)$ — traverse from head to find predecessor | $O(1)$ — use `node.prev`                 |
+| (d) Delete a given node (reference)  | $O(n)$ — need predecessor to update its `next`  | $O(1)$ — use `node.prev` and `node.next` |
 
 Where $d$ is data size and $p$ is pointer size. The doubly linked list uses more memory per node (an
 Extra pointer) but provides $O(1)$ insertion before and deletion of a known node.
@@ -794,7 +793,7 @@ ENDPROCEDURE
 
 - Empty list case: both `head` and `tail` point to the new node. The list has one element. ✓
 - Non-empty case: the old tail's `next` now points to the new node (linking it in). The `tail`
- pointer is updated to the new node. The list grows by one element at the end. ✓
+  pointer is updated to the new node. The list grows by one element at the end. ✓
 
 Time complexity: $O(1)$ — no traversal needed because the tail pointer is available.
 
@@ -820,11 +819,11 @@ Data structure supports each operation most efficiently.
 
 Required operations and their complexities:
 
-| Operation | Dynamic Array | Singly Linked List |
+| Operation         | Dynamic Array                                     | Singly Linked List                           |
 | ----------------- | ------------------------------------------------- | -------------------------------------------- |
-| Add to end | $O(1)$ amortised | $O(1)$ with tail pointer |
-| Remove from front | $O(n)$ — shift all elements | $O(1)$ — update head pointer |
-| Move to front | $O(n)$ — remove from middle + shift + insert at 0 | $O(n)$ — find node, remove, reinsert at head |
+| Add to end        | $O(1)$ amortised                                  | $O(1)$ with tail pointer                     |
+| Remove from front | $O(n)$ — shift all elements                       | $O(1)$ — update head pointer                 |
+| Move to front     | $O(n)$ — remove from middle + shift + insert at 0 | $O(n)$ — find node, remove, reinsert at head |
 
 **Analysis:**
 

@@ -1,6 +1,8 @@
 ---
 title: Electrical Circuits
-description: "DSE Physics electrical circuits notes covering Ohm's law, series and parallel circuits, resistance, Kirchhoff's laws, and electrical energy and power."
+description:
+  "DSE Physics electrical circuits notes covering Ohm's law, series and parallel circuits,
+  resistance, Kirchhoff's laws, and electrical energy and power."
 date: 2026-04-18T00:00:00.000Z
 tags:
   - DSE
@@ -54,12 +56,12 @@ Resistivity depends on the material and temperature but not on the dimensions of
 
 ### Factors Affecting Resistance
 
-| Factor | Effect |
+| Factor                                  | Effect                                 |
 | --------------------------------------- | -------------------------------------- |
-| Increasing length | $R$ increases (proportional) |
-| Increasing cross-section | $R$ decreases (inversely proportional) |
-| Increasing temperature (metals) | $R$ increases |
-| Increasing temperature (semiconductors) | $R$ decreases |
+| Increasing length                       | $R$ increases (proportional)           |
+| Increasing cross-section                | $R$ decreases (inversely proportional) |
+| Increasing temperature (metals)         | $R$ increases                          |
+| Increasing temperature (semiconductors) | $R$ decreases                          |
 
 ### Worked Example 1
 
@@ -80,8 +82,8 @@ $$V = IR = 2 \times 2.16 = 4.33 \mathrm{ V}$$
 
 ### Worked Example 2
 
-A wire has resistance $10 \Omega$. If its length is doubled and its diameter is halved, what is
-Its new resistance?
+A wire has resistance $10 \Omega$. If its length is doubled and its diameter is halved, what is Its
+new resistance?
 
 <details>
 <summary>Solution</summary>
@@ -97,7 +99,8 @@ $$R_2 = \frac{\rho L_2}{A_2} = \frac{\rho(2L)}{A/4} = 8 \times \frac{\rho L}{A} 
 ### Worked Example 3
 
 A copper wire has resistance $4 \Omega$ at $20^\circ\mathrm{C}$. The temperature coefficient of
-Resistance of copper is $0.0039\ \mathrm{per\ ^\circ C}$. Find the resistance at $80^\circ\mathrm{C}$.
+Resistance of copper is $0.0039\ \mathrm{per\ ^\circ C}$. Find the resistance at
+$80^\circ\mathrm{C}$.
 
 <details>
 <summary>Solution</summary>
@@ -214,7 +217,7 @@ Equals the energy lost in the resistors.
 ### Solving Circuit Problems with Kirchhoff's Laws
 
 1. Assign currents to each branch (choose a direction; if the actual direction is opposite, the
- calculated current will be negative).
+   calculated current will be negative).
 2. Apply KCL at each junction.
 3. Apply KVL to each independent loop.
 4. Solve the resulting system of equations.
@@ -249,10 +252,10 @@ $2 \mathrm{ A}$ (upward).
 
 ### Worked Example 6
 
-A circuit has a $12 \mathrm{ V}$ battery with internal resistance $1 \Omega$ connected to
-Three resistors: $R_1 = 3 \Omega$ in series with a parallel combination of $R_2 = 6 \Omega$
-And $R_3 = 6 \Omega$. Find the current from the battery, the terminal PD, and the current
-Through each resistor.
+A circuit has a $12 \mathrm{ V}$ battery with internal resistance $1 \Omega$ connected to Three
+resistors: $R_1 = 3 \Omega$ in series with a parallel combination of $R_2 = 6 \Omega$ And
+$R_3 = 6 \Omega$. Find the current from the battery, the terminal PD, and the current Through each
+resistor.
 
 <details>
 <summary>Solution</summary>
@@ -265,7 +268,8 @@ $$I_{\mathrm{total}} = \frac{\varepsilon}{R_{\mathrm{ext}} + r} = \frac{12}{6 + 
 
 Terminal PD: $V = \varepsilon - I_{\mathrm{total}} r = 12 - 1.71 \times 1 = 10.29 \mathrm{ V}$
 
-Voltage across parallel combination: $V_{23} = I_{\mathrm{total}} \times R_{23} = 1.71 \times 3 = 5.14 \mathrm{ V}$
+Voltage across parallel combination:
+$V_{23} = I_{\mathrm{total}} \times R_{23} = 1.71 \times 3 = 5.14 \mathrm{ V}$
 
 Current through each $6 \Omega$: $I_2 = I_3 = \frac{5.14}{6} = 0.857 \mathrm{ A}$
 
@@ -386,8 +390,8 @@ Two parts, allowing continuous adjustment of $V_{\mathrm{out}}$ from $0$ to $V_{
 
 ### Worked Example 9
 
-A potential divider consists of a $12 \mathrm{ V}$ supply, a $8 \mathrm{ k}\Omega$ resistor
-($R_1$), and a $4 \mathrm{ k}\Omega$ resistor ($R_2$) in series. A voltmeter of resistance
+A potential divider consists of a $12 \mathrm{ V}$ supply, a $8 \mathrm{ k}\Omega$ resistor ($R_1$),
+and a $4 \mathrm{ k}\Omega$ resistor ($R_2$) in series. A voltmeter of resistance
 $12 \mathrm{ k}\Omega$ is connected across $R_2$. Find the reading on the voltmeter (a) before and
 (b) after it is connected.
 
@@ -410,38 +414,38 @@ The voltmeter draws current and reduces the measured voltage (loading effect).
 ## Common Pitfalls
 
 - Confusing EMF with terminal PD. EMF is the total energy per unit charge supplied by the source;
- terminal PD is the energy per unit charge delivered to the external circuit.
+  terminal PD is the energy per unit charge delivered to the external circuit.
 - Forgetting that current flows from higher potential to lower potential **through** an external
- resistor, but from lower to higher potential **inside** a battery.
+  resistor, but from lower to higher potential **inside** a battery.
 - Incorrectly combining parallel resistances. The total parallel resistance is always less than the
- smallest individual resistance.
+  smallest individual resistance.
 - Applying Ohm's law to non-ohmic components (e.g., diodes, filament lamps).
 - Forgetting to include internal resistance in circuit calculations. The total resistance in a
- circuit includes both external and internal resistances.
+  circuit includes both external and internal resistances.
 
 ---
 
 ## Summary Table
 
-| Topic | Key Formula | Key Concept |
+| Topic               | Key Formula                                        | Key Concept                      |
 | ------------------- | -------------------------------------------------- | -------------------------------- |
-| Ohm's Law | $V = IR$ | Linear I-V for ohmic conductors |
-| Resistivity | $R = \rho L/A$ | Material and geometry dependence |
-| Series resistance | $R = R_1 + R_2 + \cdots$ | Same current |
-| Parallel resistance | $1/R = 1/R_1 + 1/R_2 + \cdots$ | Same voltage |
-| KCL | $\sum I = 0$ | Conservation of charge |
-| KVL | $\sum V = 0$ | Conservation of energy |
-| Internal resistance | $V = \varepsilon - Ir$ | Lost volts |
-| Power | $P = IV = I^2 R = V^2/R$ | Rate of energy transfer |
-| Potential divider | $V_{\mathrm{out}} = V_{\mathrm{in}} R_2/(R_1+R_2)$ | Voltage fraction |
+| Ohm's Law           | $V = IR$                                           | Linear I-V for ohmic conductors  |
+| Resistivity         | $R = \rho L/A$                                     | Material and geometry dependence |
+| Series resistance   | $R = R_1 + R_2 + \cdots$                           | Same current                     |
+| Parallel resistance | $1/R = 1/R_1 + 1/R_2 + \cdots$                     | Same voltage                     |
+| KCL                 | $\sum I = 0$                                       | Conservation of charge           |
+| KVL                 | $\sum V = 0$                                       | Conservation of energy           |
+| Internal resistance | $V = \varepsilon - Ir$                             | Lost volts                       |
+| Power               | $P = IV = I^2 R = V^2/R$                           | Rate of energy transfer          |
+| Potential divider   | $V_{\mathrm{out}} = V_{\mathrm{in}} R_2/(R_1+R_2)$ | Voltage fraction                 |
 
 ---
 
 ## Problem Set
 
 **Problem 1.** A cell of EMF $6 \mathrm{ V}$ and internal resistance $1.5 \Omega$ is connected to a
-Variable resistor $R$. Find the value of $R$ that maximises the power delivered to $R$And
-Calculate this maximum power.
+Variable resistor $R$. Find the value of $R$ that maximises the power delivered to $R$And Calculate
+this maximum power.
 
 <details>
 <summary>Solution</summary>
@@ -484,9 +488,9 @@ $$\rho = \frac{RA}{L} = \frac{44 \times 5.0 \times 10^{-7}}{2.0} = \frac{2.2 \ti
 
 If you get this wrong, revise: Ohm's Law and Resistance / Resistivity
 
-**Problem 4.** Two resistors $R_1 = 8 \Omega$ and $R_2 = 24 \Omega$ are connected in parallel
-Across a $12 \mathrm{ V}$ battery with negligible internal resistance. Find the total current
-And the current through each resistor.
+**Problem 4.** Two resistors $R_1 = 8 \Omega$ and $R_2 = 24 \Omega$ are connected in parallel Across
+a $12 \mathrm{ V}$ battery with negligible internal resistance. Find the total current And the
+current through each resistor.
 
 <details>
 <summary>Solution</summary>
@@ -495,15 +499,16 @@ $$I_1 = \frac{12}{8} = 1.5 \mathrm{ A}, \quad I_2 = \frac{12}{24} = 0.5 \mathrm{
 
 $$I_{\mathrm{total}} = 1.5 + 0.5 = 2.0 \mathrm{ A}$$
 
-Verify: $R_{\mathrm{total}} = \frac{8 \times 24}{8 + 24} = 6 \Omega$$I = \frac{12}{6} = 2.0 \mathrm{ A}$
+Verify:
+$R_{\mathrm{total}} = \frac{8 \times 24}{8 + 24} = 6 \Omega$$I = \frac{12}{6} = 2.0 \mathrm{ A}$
 
 </details>
 
 If you get this wrong, revise: Series and Parallel Circuits
 
 **Problem 5.** A circuit has a $9 \mathrm{ V}$ battery with internal resistance $0.8 \Omega$
-Connected to two $6 \Omega$ resistors in parallel. Find the current from the battery and the
-Power dissipated in each resistor.
+Connected to two $6 \Omega$ resistors in parallel. Find the current from the battery and the Power
+dissipated in each resistor.
 
 <details>
 <summary>Solution</summary>
@@ -522,14 +527,16 @@ Power in each: $P = I_6^2 \times 6 = 1.18^2 \times 6 = 8.38 \mathrm{ W}$
 
 If you get this wrong, revise: Internal Resistance and EMF / Parallel Circuits
 
-**Problem 6.** In a potential divider circuit, $R_1 = 10 \mathrm{ k}\Omega$ and $R_2 = 5 \mathrm{ k}\Omega$
-Are connected in series across a $15 \mathrm{ V}$ supply. Find the output voltage across $R_2$.
-If a $10 \mathrm{ k}\Omega$ load is connected across $R_2$What is the new output voltage?
+**Problem 6.** In a potential divider circuit, $R_1 = 10 \mathrm{ k}\Omega$ and
+$R_2 = 5 \mathrm{ k}\Omega$ Are connected in series across a $15 \mathrm{ V}$ supply. Find the
+output voltage across $R_2$. If a $10 \mathrm{ k}\Omega$ load is connected across $R_2$What is the
+new output voltage?
 
 <details>
 <summary>Solution</summary>
 
-Without load: $V_{\mathrm{out}} = 15 \times \frac{5}{10 + 5} = 15 \times \frac{1}{3} = 5.0 \mathrm{ V}$
+Without load:
+$V_{\mathrm{out}} = 15 \times \frac{5}{10 + 5} = 15 \times \frac{1}{3} = 5.0 \mathrm{ V}$
 
 With load: $R_2$ in parallel with load $= \frac{5 \times 10}{5 + 10} = 3.33 \mathrm{ k}\Omega$
 
@@ -539,9 +546,9 @@ $$V_{\mathrm{out}} = 15 \times \frac{3.33}{10 + 3.33} = 15 \times \frac{3.33}{13
 
 If you get this wrong, revise: Potential Divider
 
-**Problem 7.** A $100 \mathrm{ W}$ light bulb and a $60 \mathrm{ W}$ light bulb are connected
-In series across a $240 \mathrm{ V}$ supply. Find the current and the power dissipated in each
-Bulb. Which bulb is brighter?
+**Problem 7.** A $100 \mathrm{ W}$ light bulb and a $60 \mathrm{ W}$ light bulb are connected In
+series across a $240 \mathrm{ V}$ supply. Find the current and the power dissipated in each Bulb.
+Which bulb is brighter?
 
 <details>
 <summary>Solution</summary>
@@ -560,16 +567,16 @@ $P_{100} = I^2 R_{100} = 0.156^2 \times 576 = 14.0 \mathrm{ W}$
 
 $P_{60} = I^2 R_{60} = 0.156^2 \times 960 = 23.4 \mathrm{ W}$
 
-The $60 \mathrm{ W}$ bulb is brighter in series because it has higher resistance and dissipates
-More power.
+The $60 \mathrm{ W}$ bulb is brighter in series because it has higher resistance and dissipates More
+power.
 
 </details>
 
 If you get this wrong, revise: Series and Parallel Circuits / Electrical Power
 
-**Problem 8.** A student connects an ammeter (resistance $0.5 \Omega$) in series with a
-$10 \Omega$ resistor and a $6 \mathrm{ V}$ battery (internal resistance $1 \Omega$). Find the
-Reading on the ammeter and the percentage error caused by the ammeter's resistance.
+**Problem 8.** A student connects an ammeter (resistance $0.5 \Omega$) in series with a $10 \Omega$
+resistor and a $6 \mathrm{ V}$ battery (internal resistance $1 \Omega$). Find the Reading on the
+ammeter and the percentage error caused by the ammeter's resistance.
 
 <details>
 <summary>Solution</summary>
@@ -586,9 +593,9 @@ $$\mathrm{Percentage\ error} = \frac{0.545 - 0.522}{0.545} \times 100\% = 4.2\%$
 If you get this wrong, revise: Internal Resistance and EMF / Ohm's Law
 
 **Problem 9.** A copper wire and a steel wire of the same length and diameter are connected in
-Series. The resistivity of copper is $1.7 \times 10^{-8} \Omega\,\mathrm{m}$ and that of steel
-Is $1.0 \times 10^{-7} \Omega\,\mathrm{m}$. Find the ratio of power dissipated in the steel
-Wire to that in the copper wire.
+Series. The resistivity of copper is $1.7 \times 10^{-8} \Omega\,\mathrm{m}$ and that of steel Is
+$1.0 \times 10^{-7} \Omega\,\mathrm{m}$. Find the ratio of power dissipated in the steel Wire to
+that in the copper wire.
 
 <details>
 <summary>Solution</summary>
@@ -601,9 +608,9 @@ $$\frac{P_{\mathrm{steel}}}{P_{\mathrm{copper}}} = \frac{I^2 R_{\mathrm{steel}}}
 
 If you get this wrong, revise: Ohm's Law and Resistance / Resistivity
 
-**Problem 10.** A battery of EMF $12 \mathrm{ V}$ and internal resistance $0.5 \Omega$ is
-Connected to an external circuit consisting of a $4 \Omega$ resistor in series with a parallel
-Combination of two $6 \Omega$ resistors. Find the total current and the terminal PD.
+**Problem 10.** A battery of EMF $12 \mathrm{ V}$ and internal resistance $0.5 \Omega$ is Connected
+to an external circuit consisting of a $4 \Omega$ resistor in series with a parallel Combination of
+two $6 \Omega$ resistors. Find the total current and the terminal PD.
 
 <details>
 <summary>Solution</summary>
@@ -620,18 +627,20 @@ $$V = \varepsilon - Ir = 12 - 1.60 \times 0.5 = 12 - 0.80 = 11.2 \mathrm{ V}$$
 
 If you get this wrong, revise: Series and Parallel Circuits / Internal Resistance
 
-For the A-Level treatment of this topic, see [DC Circuits](https://alevel.wyattau.com/docs/physics/electricity/dc-circuits).
+For the A-Level treatment of this topic, see
+[DC Circuits](https://alevel.wyattau.com/docs/physics/electricity/dc-circuits).
 
 ---
 
-:::tip
-Diagnostic Test
-Ready to test your understanding of **Electrical Circuits**? The [diagnostic test](/docs/dse/Physics/diagnostics/diag-electrical-circuits) contains the hardest questions within the DSE specification for this topic, each with a full worked solution.
+:::tip Diagnostic Test Ready to test your understanding of **Electrical Circuits**? The
+[diagnostic test](/docs/dse/Physics/diagnostics/diag-electrical-circuits) contains the hardest
+questions within the DSE specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Electrical Circuits with other physics topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Electrical
+Circuits with other physics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/dse/Physics/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/dse/Physics/diagnostics/diagnostic-guide) for instructions on
+self-marking and building a personal test matrix. :::
 
 ---
 
@@ -639,13 +648,13 @@ See [Diagnostic Guide](/docs/dse/Physics/diagnostics/diagnostic-guide) for instr
 
 ### Derivation: Resistivity from Drift Velocity
 
-For a conductor of length $L$Cross-sectional area $A$With $n$ charge carriers per unit volume
-Each of charge $e$ and drift velocity $v_d$:
+For a conductor of length $L$Cross-sectional area $A$With $n$ charge carriers per unit volume Each
+of charge $e$ and drift velocity $v_d$:
 
 $$I = nAev_d$$
 
-The electric field in the conductor is $E = V/L$. The drift velocity is proportional to the
-Electric field: $v_d = \mu E = \mu V/L$Where $\mu$ is the mobility of the charge carriers.
+The electric field in the conductor is $E = V/L$. The drift velocity is proportional to the Electric
+field: $v_d = \mu E = \mu V/L$Where $\mu$ is the mobility of the charge carriers.
 
 $$I = nAe\mu\frac{V}{L} = \frac{nAe\mu}{L}V$$
 
@@ -657,13 +666,13 @@ Defining $\rho = \frac{1}{ne\mu}$ (resistivity):
 
 $$R = \frac{\rho L}{A}$$
 
-This shows that resistivity is an intrinsic property of the material (dependent on $n$$e$And
-$\mu$) and is independent of the conductor's dimensions.
+This shows that resistivity is an intrinsic property of the material (dependent on $n$$e$And $\mu$)
+and is independent of the conductor's dimensions.
 
 ### Derivation: Maximum Power Transfer Theorem
 
-A battery of EMF $\varepsilon$ and internal resistance $r$ is connected to an external load $R$.
-The current is $I = \varepsilon / (R + r)$.
+A battery of EMF $\varepsilon$ and internal resistance $r$ is connected to an external load $R$. The
+current is $I = \varepsilon / (R + r)$.
 
 Power delivered to the load:
 
@@ -692,8 +701,8 @@ $$V_{\mathrm{out}} = IR_2 = \frac{V_{\mathrm{in}}}{R_1 + R_2} \times R_2 = V_{\m
 ### Derivation: Energy Dissipated in a Resistor
 
 When a current $I$ flows through a resistor $R$ for time $t$The charge that passes through is
-$Q = It$. Each coulomb of charge loses energy $V = IR$ joules (the potential difference across
-The resistor).
+$Q = It$. Each coulomb of charge loses energy $V = IR$ joules (the potential difference across The
+resistor).
 
 $$E = QV = (It)(IR) = I^2 Rt$$
 
@@ -705,26 +714,29 @@ This energy is dissipated as thermal energy in the resistor (Joule heating).
 
 ### Determining Resistivity of a Wire
 
-**Apparatus:** A long wire (e.g., constantan), a metre rule, a micrometer screw gauge, an ammeter,
-A voltmeter, a variable resistor (rheostat), and a power supply.
+**Apparatus:** A long wire (e.g., constantan), a metre rule, a micrometer screw gauge, an ammeter, A
+voltmeter, a variable resistor (rheostat), and a power supply.
 
 **Procedure:**
+
 1. Measure the diameter of the wire at several points using the micrometer. Calculate the mean
- diameter and hence the cross-sectional area $A = \pi d^2/4$.
-2. Connect the wire in series with the ammeter, rheostat, and power supply. Connect the voltmeter
- in parallel across a known length $L$ of the wire.
+   diameter and hence the cross-sectional area $A = \pi d^2/4$.
+2. Connect the wire in series with the ammeter, rheostat, and power supply. Connect the voltmeter in
+   parallel across a known length $L$ of the wire.
 3. Adjust the rheostat to obtain different values of current $I$ and record the corresponding
- voltage $V$.
+   voltage $V$.
 4. Calculate $R = V/I$ for each pair.
 5. Plot $R$ (y-axis) versus $L$ (x-axis). The gradient gives $R/L = \rho/A$So
- $\rho = \mathrm{gradient} \times A$.
+   $\rho = \mathrm{gradient} \times A$.
 
 **Precautions:**
+
 - Keep the current low to avoid heating the wire (which would change its resistance).
 - Measure the diameter at multiple points and orientations to account for non-uniformity.
 - Use a thin wire to ensure measurable resistance.
 
 **Sources of error:**
+
 - Contact resistance at the connections.
 - Temperature rise of the wire due to current flow.
 - Reading error on the micrometer (zero error).
@@ -735,8 +747,9 @@ A voltmeter, a variable resistor (rheostat), and a power supply.
 Voltmeter, a variable resistor, and connecting wires.
 
 **Procedure:**
+
 1. Connect the cell in series with the ammeter and variable resistor. Connect the voltmeter in
- parallel across the cell terminals.
+   parallel across the cell terminals.
 2. For several values of the variable resistor, record the current $I$ and terminal PD $V$.
 3. Plot $V$ (y-axis) versus $I$ (x-axis).
 4. The y-intercept gives the EMF $\varepsilon$ (when $I = 0$$V = \varepsilon$).
@@ -751,17 +764,19 @@ The internal resistance.
 Variable resistor, and power supply.
 
 **Procedure:**
-1. Connect the component in series with the ammeter and variable resistor. Connect the voltmeter
- in parallel across the component.
+
+1. Connect the component in series with the ammeter and variable resistor. Connect the voltmeter in
+   parallel across the component.
 2. For both positive and negative voltages, record pairs of $V$ and $I$.
 3. Plot $I$ (y-axis) versus $V$ (x-axis) for each component.
 
 **Expected results:**
+
 - **Ohmic resistor:** Straight line through the origin (constant resistance).
-- **Filament lamp:** Non-linear curve. Current increases more slowly at higher voltages because
- the filament heats up, increasing its resistance.
-- **Diode:** Almost zero current for negative voltages (reverse bias). Current rises sharply
- above a threshold voltage (about $0.7 \mathrm{ V}$ for silicon) in forward bias.
+- **Filament lamp:** Non-linear curve. Current increases more slowly at higher voltages because the
+  filament heats up, increasing its resistance.
+- **Diode:** Almost zero current for negative voltages (reverse bias). Current rises sharply above a
+  threshold voltage (about $0.7 \mathrm{ V}$ for silicon) in forward bias.
 
 ---
 
@@ -807,13 +822,14 @@ Because of the factor of 2.
 
 A circuit consists of a $12 \mathrm{ V}$ battery (internal resistance $0.5 \Omega$) connected to
 Three resistors: $R_1 = 4 \Omega$ in series with a parallel combination of $R_2 = 6 \Omega$ and
-$R_3 = 12 \Omega$. Find the current through each resistor, the terminal PD, and the power
-Dissipated in $R_3$.
+$R_3 = 12 \Omega$. Find the current through each resistor, the terminal PD, and the power Dissipated
+in $R_3$.
 
 <details>
 <summary>Solution</summary>
 
-Parallel combination: $\frac{1}{R_p} = \frac{1}{6} + \frac{1}{12} = \frac{3}{12} = \frac{1}{4}$So $R_p = 4 \Omega$.
+Parallel combination: $\frac{1}{R_p} = \frac{1}{6} + \frac{1}{12} = \frac{3}{12} = \frac{1}{4}$So
+$R_p = 4 \Omega$.
 
 Total resistance: $R_{\mathrm{total}} = 4 + 4 = 8 \Omega$.
 
@@ -823,7 +839,8 @@ Terminal PD: $V = \varepsilon - I_{\mathrm{total}} r = 12 - 1.41 \times 0.5 = 11
 
 Current through $R_1$: $I_1 = 1.41 \mathrm{ A}$
 
-Voltage across parallel combination: $V_p = V - I_1 R_1 = 11.3 - 1.41 \times 4 = 11.3 - 5.65 = 5.65 \mathrm{ V}$
+Voltage across parallel combination:
+$V_p = V - I_1 R_1 = 11.3 - 1.41 \times 4 = 11.3 - 5.65 = 5.65 \mathrm{ V}$
 
 Current through $R_2$: $I_2 = \frac{5.65}{6} = 0.942 \mathrm{ A}$
 
@@ -854,8 +871,8 @@ $$\varepsilon_B = \varepsilon_A \times \frac{L_B}{L_A} = 1.50 \times \frac{42.5}
 
 ### Worked Example 12
 
-A $220 \mathrm{ V}$ mains supply is connected to a $10 \Omega$ heater and a $20 \Omega$ heater
-In parallel. Find the total power drawn from the supply and the current through each heater.
+A $220 \mathrm{ V}$ mains supply is connected to a $10 \Omega$ heater and a $20 \Omega$ heater In
+parallel. Find the total power drawn from the supply and the current through each heater.
 
 <details>
 <summary>Solution</summary>
@@ -868,7 +885,8 @@ Total current: $I = 22.0 + 11.0 = 33.0 \mathrm{ A}$
 
 Total power: $P = VI = 220 \times 33.0 = 7260 \mathrm{ W} = 7.26 \mathrm{ kW}$
 
-Verify: $P_1 = \frac{220^2}{10} = 4840 \mathrm{ W}$$P_2 = \frac{220^2}{20} = 2420 \mathrm{ W}$$P = 4840 + 2420 = 7260 \mathrm{ W}$.
+Verify:
+$P_1 = \frac{220^2}{10} = 4840 \mathrm{ W}$$P_2 = \frac{220^2}{20} = 2420 \mathrm{ W}$$P = 4840 + 2420 = 7260 \mathrm{ W}$.
 
 </details>
 
@@ -887,11 +905,11 @@ $6 \mathrm{ W}$.
 
 | Voltage (V) | Current (mA) |
 | ----------- | ------------ |
-| 1.0 | 120 |
-| 2.0 | 160 |
-| 3.0 | 195 |
-| 4.0 | 220 |
-| 5.0 | 245 |
+| 1.0         | 120          |
+| 2.0         | 160          |
+| 3.0         | 195          |
+| 4.0         | 220          |
+| 5.0         | 245          |
 
 Calculate the resistance at each voltage and explain why the resistance increases with voltage.
 
@@ -907,30 +925,30 @@ Calculate the resistance at each voltage and explain why the resistance increase
 (b)
 
 | Voltage (V) | Current (mA) | Resistance ($\Omega$) |
-| ----------- | ------------ | -------------------- |
-| 1.0 | 120 | $1.0/0.120 = 8.3$ |
-| 2.0 | 160 | $2.0/0.160 = 12.5$ |
-| 3.0 | 195 | $3.0/0.195 = 15.4$ |
-| 4.0 | 220 | $4.0/0.220 = 18.2$ |
-| 5.0 | 245 | $5.0/0.245 = 20.4$ |
+| ----------- | ------------ | --------------------- |
+| 1.0         | 120          | $1.0/0.120 = 8.3$     |
+| 2.0         | 160          | $2.0/0.160 = 12.5$    |
+| 3.0         | 195          | $3.0/0.195 = 15.4$    |
+| 4.0         | 220          | $4.0/0.220 = 18.2$    |
+| 5.0         | 245          | $5.0/0.245 = 20.4$    |
 
-The resistance increases with voltage because higher current causes greater heating of the
-Filament ($P = I^2R$). As the temperature increases, the metal ions in the filament vibrate more,
-Increasing the scattering of conduction electrons and hence increasing the resistivity.
+The resistance increases with voltage because higher current causes greater heating of the Filament
+($P = I^2R$). As the temperature increases, the metal ions in the filament vibrate more, Increasing
+the scattering of conduction electrons and hence increasing the resistivity.
 
-(c) The I-V graph is a curve that starts steep and flattens out (increasing gradient of $V/I$
-With increasing $V$). It passes through the origin but is not a straight line.
+(c) The I-V graph is a curve that starts steep and flattens out (increasing gradient of $V/I$ With
+increasing $V$). It passes through the origin but is not a straight line.
 
-(d) A filament lamp is non-ohmic because its resistance is not constant; it changes with the
-Current flowing through it (due to temperature dependence). The I-V graph is not a straight line.
+(d) A filament lamp is non-ohmic because its resistance is not constant; it changes with the Current
+flowing through it (due to temperature dependence). The I-V graph is not a straight line.
 
 </details>
 
 ### Question 2 (DSE Structured)
 
-A battery has EMF $\varepsilon$ and internal resistance $r$. When connected to an external
-Resistor $R_1 = 5.0 \Omega$The terminal PD is $5.5 \mathrm{ V}$ and the current is
-$1.1 \mathrm{ A}$. When connected to $R_2 = 12.0 \Omega$The terminal PD is $7.2 \mathrm{ V}$.
+A battery has EMF $\varepsilon$ and internal resistance $r$. When connected to an external Resistor
+$R_1 = 5.0 \Omega$The terminal PD is $5.5 \mathrm{ V}$ and the current is $1.1 \mathrm{ A}$. When
+connected to $R_2 = 12.0 \Omega$The terminal PD is $7.2 \mathrm{ V}$.
 
 (a) Calculate the EMF and internal resistance of the battery.
 
@@ -939,8 +957,8 @@ $1.1 \mathrm{ A}$. When connected to $R_2 = 12.0 \Omega$The terminal PD is $7.2 
 (c) Determine the value of the external resistance that maximises the power delivered to it, and
 Calculate this maximum power.
 
-(d) Sketch a graph of power delivered to the external resistor versus the resistance $R$
-Marking the maximum power point.
+(d) Sketch a graph of power delivered to the external resistor versus the resistance $R$ Marking the
+maximum power point.
 
 <details>
 <summary>Solution</summary>
@@ -964,8 +982,8 @@ $$\varepsilon = 5.5 + 1.1 \times 3.4 = 5.5 + 3.74 = 9.24 \mathrm{ V}$$
 $$P_{\max} = \frac{\varepsilon^2}{4r} = \frac{(9.24)^2}{4 \times 3.4} = \frac{85.4}{13.6} = 6.28 \mathrm{ W}$$
 
 (d) The graph of $P$ versus $R$ starts at zero ($R = 0$), rises to a maximum of $6.28 \mathrm{ W}$
-At $R = 3.4 \Omega$Then gradually decreases towards zero as $R \to \infty$. The curve is
-Asymmetric, peaking at $R = r$.
+At $R = 3.4 \Omega$Then gradually decreases towards zero as $R \to \infty$. The curve is Asymmetric,
+peaking at $R = r$.
 
 </details>
 
@@ -973,9 +991,9 @@ Asymmetric, peaking at $R = r$.
 
 (a) State Kirchhoff's two laws.
 
-(b) In the circuit shown below, $\varepsilon_1 = 12 \mathrm{ V}$ (internal resistance
-$1 \Omega$), $\varepsilon_2 = 6 \mathrm{ V}$ (internal resistance $0.5 \Omega$), $R_1 = 4 \Omega$
-And $R_2 = 6 \Omega$. The two batteries are connected in parallel with their positive terminals
+(b) In the circuit shown below, $\varepsilon_1 = 12 \mathrm{ V}$ (internal resistance $1 \Omega$),
+$\varepsilon_2 = 6 \mathrm{ V}$ (internal resistance $0.5 \Omega$), $R_1 = 4 \Omega$ And
+$R_2 = 6 \Omega$. The two batteries are connected in parallel with their positive terminals
 Together, and the resistors are in series across the combination. Find the current through each
 Battery and the terminal PD across the combination.
 
@@ -984,17 +1002,17 @@ Battery and the terminal PD across the combination.
 <details>
 <summary>Solution</summary>
 
-(a) **Kirchhoff's Current Law (KCL):** The algebraic sum of currents at any junction in a circuit
-Is zero (current in = current out). This follows from conservation of charge.
+(a) **Kirchhoff's Current Law (KCL):** The algebraic sum of currents at any junction in a circuit Is
+zero (current in = current out). This follows from conservation of charge.
 
-**Kirchhoff's Voltage Law (KVL):** The algebraic sum of potential differences around any closed
-Loop is zero (energy gained = energy lost). This follows from conservation of energy.
+**Kirchhoff's Voltage Law (KVL):** The algebraic sum of potential differences around any closed Loop
+is zero (energy gained = energy lost). This follows from conservation of energy.
 
 (b) The two batteries in parallel (same polarity) have equivalent EMF and internal resistance.
 However, since they have different EMFs, we must use Kirchhoff's laws.
 
-Let $I_1$ flow out of $\varepsilon_1$ and $I_2$ flow out of $\varepsilon_2$. The external
-Resistors $R_1$ and $R_2$ are in series, total $R_{\mathrm{ext}} = 10 \Omega$.
+Let $I_1$ flow out of $\varepsilon_1$ and $I_2$ flow out of $\varepsilon_2$. The external Resistors
+$R_1$ and $R_2$ are in series, total $R_{\mathrm{ext}} = 10 \Omega$.
 
 At the junction: $I_1 + I_2 = I_{\mathrm{ext}}$ (current through external circuit)
 
@@ -1010,7 +1028,8 @@ Also: $I_1 + I_2 = V / 10$
 
 From the two equations: $12 - I_1 = 6 - 0.5I_2 \implies I_1 - 0.5I_2 = 6 \quad (1)$
 
-And: $I_1 + I_2 = V/10 = (12 - I_1)/10 \implies 10I_1 + 10I_2 = 12 - I_1 \implies 11I_1 + 10I_2 = 12 \quad (2)$
+And:
+$I_1 + I_2 = V/10 = (12 - I_1)/10 \implies 10I_1 + 10I_2 = 12 - I_1 \implies 11I_1 + 10I_2 = 12 \quad (2)$
 
 From (1): $I_1 = 6 + 0.5I_2$. Substituting into (2):
 
@@ -1026,23 +1045,22 @@ $$I_1 = 6 + 0.5(-3.48) = 6 - 1.74 = 4.26 \mathrm{ A}$$
 $$V = 12 - 4.26 \times 1 = 7.74 \mathrm{ V}$$
 
 (c) If $\varepsilon_2$ is reversed, both batteries would oppose each other. The net EMF would be
-$12 - 6 = 6 \mathrm{ V}$And the total internal resistance would be $1 + 0.5 = 1.5 \Omega$.
-Current would flow from $\varepsilon_1$ through $\varepsilon_2$ (in reverse), and the terminal
-PD would be much lower.
+$12 - 6 = 6 \mathrm{ V}$And the total internal resistance would be $1 + 0.5 = 1.5 \Omega$. Current
+would flow from $\varepsilon_1$ through $\varepsilon_2$ (in reverse), and the terminal PD would be
+much lower.
 
 </details>
 
 ### Question 4 (DSE Structured)
 
 A student designs a circuit to measure an unknown resistance $R_x$ using a Wheatstone bridge
-Arrangement. Three known resistors are used: $R_1 = 100 \Omega$$R_2 = 200 \Omega$And a
-Variable resistor $R_3$. A galvanometer is connected between the junction of $R_1$ and $R_2$
-And the junction of $R_3$ and $R_x$.
+Arrangement. Three known resistors are used: $R_1 = 100 \Omega$$R_2 = 200 \Omega$And a Variable
+resistor $R_3$. A galvanometer is connected between the junction of $R_1$ and $R_2$ And the junction
+of $R_3$ and $R_x$.
 
 (a) Explain the principle of the Wheatstone bridge.
 
-(b) When the bridge is balanced (zero galvanometer deflection), $R_3 = 150 \Omega$. Calculate
-$R_x$.
+(b) When the bridge is balanced (zero galvanometer deflection), $R_3 = 150 \Omega$. Calculate $R_x$.
 
 (c) The student estimates the uncertainty in each known resistance as $\pm 1\%$. Calculate the
 Percentage uncertainty in $R_x$.
@@ -1053,26 +1071,29 @@ Method.
 <details>
 <summary>Solution</summary>
 
-(a) A Wheatstone bridge is balanced when no current flows through the galvanometer. At balance,
-The potential at both sides of the galvanometer is equal, giving:
+(a) A Wheatstone bridge is balanced when no current flows through the galvanometer. At balance, The
+potential at both sides of the galvanometer is equal, giving:
 
 $$\frac{R_1}{R_2} = \frac{R_3}{R_x}$$
 
 This condition is independent of the supply voltage and galvanometer sensitivity.
 
-(b) At balance: $R_x = R_2 \times \frac{R_3}{R_1} = 200 \times \frac{150}{100} = 200 \times 1.5 = 300 \Omega$
+(b) At balance:
+$R_x = R_2 \times \frac{R_3}{R_1} = 200 \times \frac{150}{100} = 200 \times 1.5 = 300 \Omega$
 
-(c) $\frac{\Delta R_x}{R_x} = \sqrt{\left(\frac{\Delta R_2}{R_2}\right)^2 + \left(\frac{\Delta R_3}{R_3}\right)^2 + \left(\frac{\Delta R_1}{R_1}\right)^2} = \sqrt{(0.01)^2 + (0.01)^2 + (0.01)^2} = \sqrt{0.0003} = 0.0173 = 1.7\%$
+(c)
+$\frac{\Delta R_x}{R_x} = \sqrt{\left(\frac{\Delta R_2}{R_2}\right)^2 + \left(\frac{\Delta R_3}{R_3}\right)^2 + \left(\frac{\Delta R_1}{R_1}\right)^2} = \sqrt{(0.01)^2 + (0.01)^2 + (0.01)^2} = \sqrt{0.0003} = 0.0173 = 1.7\%$
 
 $$\Delta R_x = 0.017 \times 300 = 5.1 \Omega$$
 
 $$R_x = (300 \pm 5) \Omega$$
 
 (d) Two advantages:
-1. The Wheatstone bridge is a null method: the measurement is made when the galvanometer reads
- zero, eliminating errors due to the galvanometer's calibration or non-linearity.
+
+1. The Wheatstone bridge is a null method: the measurement is made when the galvanometer reads zero,
+   eliminating errors due to the galvanometer's calibration or non-linearity.
 2. The result is independent of the supply voltage and the galvanometer sensitivity, reducing
- systematic errors.
+   systematic errors.
 
 </details>
 
@@ -1097,11 +1118,14 @@ Calculate the current that flows and explain why this is dangerous.
 
 (b) Power to starter motor: $P_{\mathrm{motor}} = VI = 2.0 \times 200 = 400 \mathrm{ W}$
 
-Power dissipated in battery: $P_r = I^2 r = (200)^2 \times 0.05 = 40000 \times 0.05 = 2000 \mathrm{ W}$
+Power dissipated in battery:
+$P_r = I^2 r = (200)^2 \times 0.05 = 40000 \times 0.05 = 2000 \mathrm{ W}$
 
-Total power from battery: $P = \varepsilon I = 12 \times 200 = 2400 \mathrm{ W}$ (equals $400 + 2000$).
+Total power from battery: $P = \varepsilon I = 12 \times 200 = 2400 \mathrm{ W}$ (equals
+$400 + 2000$).
 
-(c) Short circuit current: $I = \frac{\varepsilon}{r + R_{\mathrm{jumper}}} = \frac{12}{0.05 + 0.01} = \frac{12}{0.06} = 200 \mathrm{ A}$
+(c) Short circuit current:
+$I = \frac{\varepsilon}{r + R_{\mathrm{jumper}}} = \frac{12}{0.05 + 0.01} = \frac{12}{0.06} = 200 \mathrm{ A}$
 
 Power dissipated: $P = I^2 R = (200)^2 \times 0.06 = 2400 \mathrm{ W}$
 
@@ -1114,24 +1138,25 @@ Battery.
 Any two-terminal network can be replaced by an equivalent circuit consisting of a single EMF
 $\varepsilon_{\mathrm{Th}}$ in series with a single resistance $R_{\mathrm{Th}}$.
 
-$\varepsilon_{\mathrm{Th}}$ is the open-circuit voltage (voltage across the terminals when no
-Load is connected).
+$\varepsilon_{\mathrm{Th}}$ is the open-circuit voltage (voltage across the terminals when no Load
+is connected).
 
 $R_{\mathrm{Th}}$ is the resistance seen looking back into the terminals when all independent
 Voltage sources are replaced by short circuits (and current sources by open circuits).
 
-**Example:** A circuit has a $12 \mathrm{ V}$ battery ($r = 1 \Omega$) in series with a
-$4 \Omega$ resistor, all in parallel with a $6 \Omega$ resistor. Find the Thevenin equivalent
-Across the $6 \Omega$ resistor terminals.
+**Example:** A circuit has a $12 \mathrm{ V}$ battery ($r = 1 \Omega$) in series with a $4 \Omega$
+resistor, all in parallel with a $6 \Omega$ resistor. Find the Thevenin equivalent Across the
+$6 \Omega$ resistor terminals.
 
 <details>
 <summary>Solution</summary>
 
-$\varepsilon_{\mathrm{Th}}$: Open-circuit voltage across the $6 \Omega$ resistor. With no load,
-The $6 \Omega$ is in parallel with the series combination of battery ($12 \mathrm{ V}$$1 \Omega$)
-And $4 \Omega$.
+$\varepsilon_{\mathrm{Th}}$: Open-circuit voltage across the $6 \Omega$ resistor. With no load, The
+$6 \Omega$ is in parallel with the series combination of battery ($12 \mathrm{ V}$$1 \Omega$) And
+$4 \Omega$.
 
-Voltage across $6 \Omega$ (by potential divider): $V = 12 \times \frac{6}{1 + 4 + 6} = 12 \times \frac{6}{11} = 6.55 \mathrm{ V}$
+Voltage across $6 \Omega$ (by potential divider):
+$V = 12 \times \frac{6}{1 + 4 + 6} = 12 \times \frac{6}{11} = 6.55 \mathrm{ V}$
 
 $R_{\mathrm{Th}}$: Resistance seen from the $6 \Omega$ terminals with the battery shorted.
 
@@ -1141,10 +1166,8 @@ $R_{\mathrm{Th}} = 6 \parallel (1 + 4) = \frac{6 \times 5}{6 + 5} = \frac{30}{11
 
 (d) When the starter motor engages, it draws a very large current ($200 \mathrm{ A}$). The large
 Current causes a significant voltage drop across the internal resistance of the battery
-($Ir = 200 \times 0.05 = 10 \mathrm{ V}$), so the terminal PD drops from $12 \mathrm{ V}$ to
-About $2 \mathrm{ V}$. Since the headlights are connected in parallel across the battery
-Terminals, they receive only about $2 \mathrm{ V}$ instead of $12 \mathrm{ V}$Causing them
-To dim significantly.
+($Ir = 200 \times 0.05 = 10 \mathrm{ V}$), so the terminal PD drops from $12 \mathrm{ V}$ to About
+$2 \mathrm{ V}$. Since the headlights are connected in parallel across the battery Terminals, they
+receive only about $2 \mathrm{ V}$ instead of $12 \mathrm{ V}$Causing them To dim significantly.
 
 </details>
-

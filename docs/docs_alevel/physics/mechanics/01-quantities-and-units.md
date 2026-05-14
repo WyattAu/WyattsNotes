@@ -1,6 +1,8 @@
 ---
 title: Quantities and Units
-description: "A-Level Physics notes on Quantities and Units: 1. Physical Quantities and the SI System; The Seven SI Base Units; Derived Units; 2. Dimensional Analysis."
+description:
+  'A-Level Physics notes on Quantities and Units: 1. Physical Quantities and the SI System; The
+  Seven SI Base Units; Derived Units; 2. Dimensional Analysis.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Physics
@@ -9,11 +11,10 @@ categories:
   - Physics
 slug: quantities-and-units
 ---
+
 ## Quantities and Units
 
-:::info
-Board Coverage AQA Paper 1 & 3 | Edexcel CP1 | OCR (A) Paper 1 | CIE P1
-:::
+:::info Board Coverage AQA Paper 1 & 3 | Edexcel CP1 | OCR (A) Paper 1 | CIE P1 :::
 
 ## 1. Physical Quantities and the SI System
 
@@ -24,34 +25,32 @@ Value and compared with other instances of the same quantity. Physical quantitie
 Varieties:
 
 - **Base quantities** are irreducible; they cannot be expressed in terms of other quantities. The SI
- system defines seven base quantities.
+  system defines seven base quantities.
 - **Derived quantities** are expressed as products and quotients of base quantities.
 
 ### The Seven SI Base Units
 
-| Base Quantity | Symbol | SI Unit | Unit Symbol |
+| Base Quantity       | Symbol | SI Unit  | Unit Symbol |
 | ------------------- | ------ | -------- | ----------- |
-| Length | $l$ | metre | m |
-| Mass | $m$ | kilogram | kg |
-| Time | $t$ | second | s |
-| Electric current | $I$ | ampere | A |
-| Temperature | $T$ | kelvin | K |
-| Amount of substance | $n$ | mole | mol |
-| Luminous intensity | $I_v$ | candela | cd |
+| Length              | $l$    | metre    | m           |
+| Mass                | $m$    | kilogram | kg          |
+| Time                | $t$    | second   | s           |
+| Electric current    | $I$    | ampere   | A           |
+| Temperature         | $T$    | kelvin   | K           |
+| Amount of substance | $n$    | mole     | mol         |
+| Luminous intensity  | $I_v$  | candela  | cd          |
 
-:::info
-Note The candela is rarely encountered in A Level Physics. Focus on the first six.
-:::
+:::info Note The candela is rarely encountered in A Level Physics. Focus on the first six. :::
 
 ### Derived Units
 
 A derived unit is obtained by combining base units according to the physical relationship. We denote
 The dimensions of a quantity using square brackets.
 
-**Definition.** The **dimension** of a physical quantity $Q$Written $[Q]$Is its expression in
-Terms of the base dimensions $\mathsf{M}$ (mass), $\mathsf{L}$ (length), $\mathsf{T}$ (time),
-$\mathsf{I}$ (current), $\mathsf{\Theta}$ (temperature), $\mathsf{N}$ (amount of substance),
-$\mathsf{J}$ (luminous intensity).
+**Definition.** The **dimension** of a physical quantity $Q$Written $[Q]$Is its expression in Terms
+of the base dimensions $\mathsf{M}$ (mass), $\mathsf{L}$ (length), $\mathsf{T}$ (time), $\mathsf{I}$
+(current), $\mathsf{\Theta}$ (temperature), $\mathsf{N}$ (amount of substance), $\mathsf{J}$
+(luminous intensity).
 
 **Examples.**
 
@@ -63,15 +62,15 @@ $\mathsf{J}$ (luminous intensity).
 
 Some derived units have special names:
 
-| Derived Quantity | Name | Symbol | In Base Units |
+| Derived Quantity | Name    | Symbol   | In Base Units                                   |
 | ---------------- | ------- | -------- | ----------------------------------------------- |
-| Force | newton | N | $\mathrm{kg m s}^{-2}$ |
-| Energy | joule | J | $\mathrm{kg m}^2\mathrm{s}^{-2}$ |
-| Power | watt | W | $\mathrm{kg m}^2\mathrm{s}^{-3}$ |
-| Pressure | pascal | Pa | $\mathrm{kg m}^{-1}\mathrm{s}^{-2}$ |
-| Charge | coulomb | C | $\mathrm{A s}$ |
-| Voltage | volt | V | $\mathrm{kg m}^2\mathrm{s}^{-3}\mathrm{A}^{-1}$ |
-| Resistance | ohm | $\Omega$ | $\mathrm{kg m}^2\mathrm{s}^{-3}\mathrm{A}^{-2}$ |
+| Force            | newton  | N        | $\mathrm{kg m s}^{-2}$                          |
+| Energy           | joule   | J        | $\mathrm{kg m}^2\mathrm{s}^{-2}$                |
+| Power            | watt    | W        | $\mathrm{kg m}^2\mathrm{s}^{-3}$                |
+| Pressure         | pascal  | Pa       | $\mathrm{kg m}^{-1}\mathrm{s}^{-2}$             |
+| Charge           | coulomb | C        | $\mathrm{A s}$                                  |
+| Voltage          | volt    | V        | $\mathrm{kg m}^2\mathrm{s}^{-3}\mathrm{A}^{-1}$ |
+| Resistance       | ohm     | $\Omega$ | $\mathrm{kg m}^2\mathrm{s}^{-3}\mathrm{A}^{-2}$ |
 
 ## 2. Dimensional Analysis
 
@@ -115,32 +114,30 @@ $$
 
 Therefore $T = k\sqrt{l/g}$. Full analysis reveals $k = 2\pi$.
 
-:::tip
-Exam Technique Dimensional analysis is invaluable for checking your working. Get into the
-Habit of verifying dimensions for every formula you derive in an exam.
-:::
+:::tip Exam Technique Dimensional analysis is invaluable for checking your working. Get into the
+Habit of verifying dimensions for every formula you derive in an exam. :::
 
 ## 3. SI Prefixes
 
-| Prefix | Symbol | Factor |
+| Prefix | Symbol | Factor     |
 | ------ | ------ | ---------- |
-| tera | T | $10^{12}$ |
-| giga | G | $10^9$ |
-| mega | M | $10^6$ |
-| kilo | k | $10^3$ |
-| centi | c | $10^{-2}$ |
-| milli | m | $10^{-3}$ |
-| micro | $\mu$ | $10^{-6}$ |
-| nano | n | $10^{-9}$ |
-| pico | p | $10^{-12}$ |
-| femto | f | $10^{-15}$ |
+| tera   | T      | $10^{12}$  |
+| giga   | G      | $10^9$     |
+| mega   | M      | $10^6$     |
+| kilo   | k      | $10^3$     |
+| centi  | c      | $10^{-2}$  |
+| milli  | m      | $10^{-3}$  |
+| micro  | $\mu$  | $10^{-6}$  |
+| nano   | n      | $10^{-9}$  |
+| pico   | p      | $10^{-12}$ |
+| femto  | f      | $10^{-15}$ |
 
 ## 4. Scalars and Vectors
 
 **Definition.** A **scalar** is a physical quantity that has magnitude only. A **vector** is a
 Physical quantity that has both magnitude and direction.
 
-| Scalar Examples | Vector Examples |
+| Scalar Examples                                  | Vector Examples                                               |
 | ------------------------------------------------ | ------------------------------------------------------------- |
 | Mass, temperature, speed, energy, time, distance | Displacement, velocity, acceleration, force, weight, momentum |
 
@@ -166,14 +163,13 @@ $$|\mathbf{F}| = \sqrt{F_x^2 + F_y^2}$$
 ### Types of Error
 
 - **Systematic error**: A consistent deviation from the true value, caused by a flaw in the
- apparatus or method. It affects accuracy (closeness to true value) but not precision
- (repeatability). Example: a zero error on a micrometer.
+  apparatus or method. It affects accuracy (closeness to true value) but not precision
+  (repeatability). Example: a zero error on a micrometer.
 - **Random error**: Unpredictable fluctuations in measured values, caused by limitations in
- resolution or environmental factors. It affects precision but not accuracy. Random errors are
- reduced by taking repeated measurements.
+  resolution or environmental factors. It affects precision but not accuracy. Random errors are
+  reduced by taking repeated measurements.
 
-:::warning
-Common Pitfall Do not confuse precision with accuracy. A precise measurement is
+:::warning Common Pitfall Do not confuse precision with accuracy. A precise measurement is
 Repeatable; an accurate measurement is close to the true value. You can have one without the other.
 :::
 
@@ -197,8 +193,8 @@ If $z = x + y$ or $z = x - y$Then:
 $$\Delta z = \Delta x + \Delta y$$
 
 **Derivation.** The worst-case scenario for $z = x + y$ is that both errors push $z$ in the same
-Direction. The maximum possible value is $z_{\max} = (x + \Delta x) + (y + \Delta y)$And the
-Minimum is $z_{\min} = (x - \Delta x) + (y - \Delta y)$. Hence:
+Direction. The maximum possible value is $z_{\max} = (x + \Delta x) + (y + \Delta y)$And the Minimum
+is $z_{\min} = (x - \Delta x) + (y - \Delta y)$. Hence:
 
 $$\Delta z = \frac◆LB◆z_{\max} - z_{\min}◆RB◆◆LB◆2◆RB◆ = \Delta x + \Delta y$$
 
@@ -268,10 +264,8 @@ And the uncertainty should be quoted to at most 2 significant figures.
 (matching the uncertainty's one significant figure). We do not write $12.30 \pm 0.4$ cm — the
 Trailing zero implies precision we do not have.
 
-:::tip
-Exam Technique When you compute $g = 9.78 \pm 0.15 \mathrm{ m s}^{-2}$Write $9.8 \pm 0.2$ m
-S$^{-2}$ (round the uncertainty to 1 s.f. And match the result). This is what examiners expect.
-:::
+:::tip Exam Technique When you compute $g = 9.78 \pm 0.15 \mathrm{ m s}^{-2}$Write $9.8 \pm 0.2$ m
+S$^{-2}$ (round the uncertainty to 1 s.f. And match the result). This is what examiners expect. :::
 
 ## 6. Determining Uncertainty from Repeated Measurements
 
@@ -333,8 +327,8 @@ A force $F = 12.0 \pm 0.3$ N acts over a distance $d = 3.45 \pm 0.05$ m. Calcula
 
 **Answer.** $W = Fd = 12.0 \times 3.45 = 41.4$ J. The fractional uncertainties are
 $\frac{0.3}{12.0} = 0.025$ and $\frac{0.05}{3.45} = 0.0145$. By the multiplication rule:
-$\frac◆LB◆\Delta W◆RB◆◆LB◆W◆RB◆ = 0.025 + 0.0145 = 0.0395$So $\Delta W = 41.4 \times 0.0395 \approx 1.6$ J.
-Result: $W = 41.4 \pm 1.6$ J (3.9% uncertainty).
+$\frac◆LB◆\Delta W◆RB◆◆LB◆W◆RB◆ = 0.025 + 0.0145 = 0.0395$So
+$\Delta W = 41.4 \times 0.0395 \approx 1.6$ J. Result: $W = 41.4 \pm 1.6$ J (3.9% uncertainty).
 
 <b>If you get this wrong, revise:</b>
 [Rule 2: Multiplication and Division](#rule-2-multiplication-and-division)
@@ -358,10 +352,11 @@ $\square$
 <summary>Problem 5</summary>
 The density of a cylinder is $\rho = \frac◆LB◆m◆RB◆◆LB◆\pi r^2 h◆RB◆$. The mass $m = 150.0 \pm 0.5$ g, radius $r = 1.20 \pm 0.05$ cm, and height $h = 5.00 \pm 0.02$ cm. Calculate $\rho$ and its uncertainty.
 
-**Answer.** $\rho = \frac◆LB◆150.0◆RB◆◆LB◆\pi(1.20)^2(5.00)◆RB◆ = \frac{150.0}{22.62} = 6.63$ g cm$^{-3}$.
+**Answer.** $\rho = \frac◆LB◆150.0◆RB◆◆LB◆\pi(1.20)^2(5.00)◆RB◆ = \frac{150.0}{22.62} = 6.63$ g
+cm$^{-3}$.
 
-Fractional uncertainties: $\frac{0.5}{150.0} = 0.0033$$\frac{2(0.05)}{1.20} = 0.0833$ (power
-Rule), $\frac{0.02}{5.00} = 0.004$.
+Fractional uncertainties: $\frac{0.5}{150.0} = 0.0033$$\frac{2(0.05)}{1.20} = 0.0833$ (power Rule),
+$\frac{0.02}{5.00} = 0.004$.
 
 Total fractional uncertainty: $0.0033 + 0.0833 + 0.004 = 0.0907$.
 $\Delta\rho = 6.63 \times 0.0907 = 0.60$ g cm$^{-3}$. Result: $\rho = 6.6 \pm 0.6$ g cm$^{-3}$.
@@ -440,8 +435,8 @@ Varies unpredictably from trial to trial.
 The gravitational potential energy is given by $E_p = -\frac{GMm}{r}$. Use dimensional analysis to determine the SI units of the gravitational constant $G$.
 
 **Answer.** $[E_p] = \mathsf{M}\mathsf{L}^2\mathsf{T}^{-2}$.
-$[Mm/r] = \frac◆LB◆\mathsf{M} \cdot \mathsf{M}◆RB◆◆LB◆\mathsf{L}◆RB◆ = \mathsf{M}^2\mathsf{L}^{-1}$. Since
-$E_p = -\frac{GMm}{r}$:
+$[Mm/r] = \frac◆LB◆\mathsf{M} \cdot \mathsf{M}◆RB◆◆LB◆\mathsf{L}◆RB◆ = \mathsf{M}^2\mathsf{L}^{-1}$.
+Since $E_p = -\frac{GMm}{r}$:
 $[G] = \frac{[E_p][r]}{[Mm]} = \frac◆LB◆\mathsf{M}\mathsf{L}^2\mathsf{T}^{-2} \cdot \mathsf{L}◆RB◆◆LB◆\mathsf{M}^2◆RB◆ = \mathsf{M}^{-1}\mathsf{L}^3\mathsf{T}^{-2}$.
 In SI units: m$^3$ kg$^{-1}$ s$^{-2}$.
 
@@ -471,21 +466,19 @@ $\Delta Q = 16.0 \times 0.150 = 2.4$. Result: $Q = 16.0 \pm 2.4$ (15%).
 Understanding how each SI base unit is defined is essential for experimental physics and for
 Interpreting measurements correctly.
 
-| Base Quantity | SI Unit | Current Definition (SI 2019) |
-| ------------------- | ------------- | ------------------------------------------------------------------------------------------ |
-| Length | metre (m) | Defined by fixing the speed of light $c = 299\,792\,458$ m s$^{-1}$ |
-| Mass | kilogram (kg) | Defined by fixing the Planck constant $h = 6.626\,070\,15 \times 10^{-34}$ J s |
-| Time | second (s) | Defined by fixing the caesium frequency $\Delta\nu_{Cs} = 9\,192\,631\,770$ Hz |
-| Electric current | ampere (A) | Defined by fixing the elementary charge $e = 1.602\,176\,634 \times 10^{-19}$ C |
-| Temperature | kelvin (K) | Defined by fixing the Boltzmann constant $k_B = 1.380\,649 \times 10^{-23}$ J K$^{-1}$ |
-| Amount of substance | mole (mol) | Defined by fixing the Avogadro constant $N_A = 6.022\,140\,76 \times 10^{23}$ mol$^{-1}$ |
-| Luminous intensity | candela (cd) | Defined by fixing the luminous efficacy $K_{cd} = 683$ lm W$^{-1}$ |
+| Base Quantity       | SI Unit       | Current Definition (SI 2019)                                                             |
+| ------------------- | ------------- | ---------------------------------------------------------------------------------------- |
+| Length              | metre (m)     | Defined by fixing the speed of light $c = 299\,792\,458$ m s$^{-1}$                      |
+| Mass                | kilogram (kg) | Defined by fixing the Planck constant $h = 6.626\,070\,15 \times 10^{-34}$ J s           |
+| Time                | second (s)    | Defined by fixing the caesium frequency $\Delta\nu_{Cs} = 9\,192\,631\,770$ Hz           |
+| Electric current    | ampere (A)    | Defined by fixing the elementary charge $e = 1.602\,176\,634 \times 10^{-19}$ C          |
+| Temperature         | kelvin (K)    | Defined by fixing the Boltzmann constant $k_B = 1.380\,649 \times 10^{-23}$ J K$^{-1}$   |
+| Amount of substance | mole (mol)    | Defined by fixing the Avogadro constant $N_A = 6.022\,140\,76 \times 10^{23}$ mol$^{-1}$ |
+| Luminous intensity  | candela (cd)  | Defined by fixing the luminous efficacy $K_{cd} = 683$ lm W$^{-1}$                       |
 
-:::info
-Note Since 2019, all SI base units are defined in terms of fundamental physical constants.
-The values of $c$$h$$e$$k_B$$N_A$And $\Delta\nu_{Cs}$ are now exact defined quantities,
-While the unit values are derived from them.
-:::
+:::info Note Since 2019, all SI base units are defined in terms of fundamental physical constants.
+The values of $c$$h$$e$$k_B$$N_A$And $\Delta\nu_{Cs}$ are now exact defined quantities, While the
+unit values are derived from them. :::
 
 ## 9. Dimensional Analysis: Extended Worked Examples
 
@@ -542,15 +535,15 @@ M$)^{-3} = 5.4 \times 10^{-3} \times 10^6$ kg m$^{-3} = 5400$ kg m$^{-3}$.
 
 ## 10. Systematic Errors vs Random Errors: Detailed Comparison
 
-| Feature | Systematic Error | Random Error |
+| Feature               | Systematic Error                                    | Random Error                                                     |
 | --------------------- | --------------------------------------------------- | ---------------------------------------------------------------- |
-| Cause | Faulty apparatus or method | Environmental fluctuations, resolution limits |
-| Effect on accuracy | Reduces accuracy (shifts mean away from true value) | Does not affect mean accuracy |
-| Effect on precision | Does not affect precision | Reduces precision (increases scatter) |
-| Detection | Compare with accepted value or use different method | Take repeated measurements; large scatter indicates random error |
-| Reduction | Calibrate instruments, improve method | Take more readings, use instruments with finer resolution |
-| Effect on mean | Shifts the mean consistently | Mean approaches true value as $n$ increases |
-| Effect on uncertainty | Not reduced by averaging | Reduced by $\Delta x = \sigma / \sqrt{n}$ |
+| Cause                 | Faulty apparatus or method                          | Environmental fluctuations, resolution limits                    |
+| Effect on accuracy    | Reduces accuracy (shifts mean away from true value) | Does not affect mean accuracy                                    |
+| Effect on precision   | Does not affect precision                           | Reduces precision (increases scatter)                            |
+| Detection             | Compare with accepted value or use different method | Take repeated measurements; large scatter indicates random error |
+| Reduction             | Calibrate instruments, improve method               | Take more readings, use instruments with finer resolution        |
+| Effect on mean        | Shifts the mean consistently                        | Mean approaches true value as $n$ increases                      |
+| Effect on uncertainty | Not reduced by averaging                            | Reduced by $\Delta x = \sigma / \sqrt{n}$                        |
 
 ### Identifying Systematic Errors in Practice
 
@@ -634,30 +627,30 @@ Result: $A = 1.00 \pm 0.04$ m$^2$.
 ## 12. Common Pitfalls
 
 1. **Mixing absolute and percentage uncertainty when combining quantities.** When adding or
- subtracting, use absolute uncertainties. When multiplying or dividing, use fractional (or
- percentage) uncertainties. Applying the wrong rule is a frequent source of error.
+   subtracting, use absolute uncertainties. When multiplying or dividing, use fractional (or
+   percentage) uncertainties. Applying the wrong rule is a frequent source of error.
 
 2. **Forgetting the power rule.** If $z = x^3$Then $\Delta z / z = 3(\Delta x / x)$Not
- $\Delta z / z = \Delta x / x$. A common mistake is treating all operations as simple
- multiplication.
+   $\Delta z / z = \Delta x / x$. A common mistake is treating all operations as simple
+   multiplication.
 
-3. **Quoting too many significant figures.** If the uncertainty is $0.3$The result should be
- quoted to one decimal place. Writing $9.814 \pm 0.3$ is wrong; write $9.8 \pm 0.3$. Match the
- result to the uncertainty.
+3. **Quoting too many significant figures.** If the uncertainty is $0.3$The result should be quoted
+   to one decimal place. Writing $9.814 \pm 0.3$ is wrong; write $9.8 \pm 0.3$. Match the result to
+   the uncertainty.
 
 4. **Assuming dimensional consistency implies correctness.** An equation can be dimensionally
- correct but still wrong (e.g., missing a factor of $\pi$ or a numerical constant). Dimensional
- analysis is a necessary but not sufficient check.
+   correct but still wrong (e.g., missing a factor of $\pi$ or a numerical constant). Dimensional
+   analysis is a necessary but not sufficient check.
 
 5. **Confusing precision with accuracy.** A precise set of readings (small scatter) can still be
- inaccurate if there is an undetected systematic error. Always consider both.
+   inaccurate if there is an undetected systematic error. Always consider both.
 
 6. **Ignoring the resolution uncertainty for single readings.** If you take only one reading with a
- ruler (smallest division $1$ mm), the uncertainty is $\pm 0.5$ mm (half the smallest division for
- analogue instruments), not zero.
+   ruler (smallest division $1$ mm), the uncertainty is $\pm 0.5$ mm (half the smallest division for
+   analogue instruments), not zero.
 
 7. **Using the wrong rule for digital instruments.** For a digital instrument, the uncertainty
- equals the smallest division (the last digit), not half the smallest division.
+   equals the smallest division (the last digit), not half the smallest division.
 
 ## 13. Extension Problem Set
 
@@ -684,7 +677,8 @@ A student proposes the formula for the frequency of a mass-spring system: $f = \
 $[m/k] = \frac◆LB◆\mathsf{M}◆RB◆◆LB◆[\mathrm{force}]/[\mathrm{displacement}]◆RB◆ = \frac◆LB◆\mathsf{M}◆RB◆◆LB◆\mathsf{M}\mathsf{L}\mathsf{T}^{-2}/\mathsf{L}◆RB◆ = \frac◆LB◆\mathsf{M}◆RB◆◆LB◆\mathsf{M}\mathsf{T}^{-2}◆RB◆ = \mathsf{T}^2$.
 
 $[\sqrt{m/k}] = \mathsf{T} \neq \mathsf{T}^{-1}$. The formula is incorrect. The correct form is
-$f = \frac◆LB◆1◆RB◆◆LB◆2\pi◆RB◆\sqrt◆LB◆\frac{k}{m}◆RB◆$Giving $[\sqrt{k/m}] = \mathsf{T}^{-1} = [f]$. $\square$
+$f = \frac◆LB◆1◆RB◆◆LB◆2\pi◆RB◆\sqrt◆LB◆\frac{k}{m}◆RB◆$Giving
+$[\sqrt{k/m}] = \mathsf{T}^{-1} = [f]$. $\square$
 
 <b>If you get this wrong, revise:</b>
 [Determining the Form of an Equation](#determining-the-form-of-an-equation)
@@ -770,17 +764,17 @@ S$^{-2}$), so the result is consistent with the accepted value. $\square$
 
 </details>
 
-
 ---
 
-:::tip
-Tip
-Ready to test your understanding of **Quantities and Units**? The [diagnostic test](/docs/alevel/physics/diagnostics/diag-quantities-units) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
+:::tip Tip Ready to test your understanding of **Quantities and Units**? The
+[diagnostic test](/docs/alevel/physics/diagnostics/diag-quantities-units) contains the hardest
+questions within the A-Level specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Quantities and Units with other physics topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Quantities
+and Units with other physics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on
+self-marking and building a personal test matrix. :::
 
 ## Summary
 

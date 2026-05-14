@@ -1,6 +1,8 @@
 ---
 title: Web Technologies
-description: "A-Level Computer Science notes on Web Technologies: 1. The Internet and the World Wide Web; The Internet vs the Web; Historical Development; Key Internet Pro."
+description:
+  'A-Level Computer Science notes on Web Technologies: 1. The Internet and the World Wide Web; The
+  Internet vs the Web; Historical Development; Key Internet Pro.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - ComputerScience
@@ -9,10 +11,9 @@ categories:
   - ComputerScience
 slug: web-technologies
 ---
-:::info
-Board-specific This topic is examined by Edexcel (P1, Topic 5) only. Other boards cover some
-Of these concepts within their networking modules.
-:::
+
+:::info Board-specific This topic is examined by Edexcel (P1, Topic 5) only. Other boards cover some
+Of these concepts within their networking modules. :::
 
 ## 1. The Internet and the World Wide Web
 
@@ -24,39 +25,39 @@ Switches, and servers — communicating via the TCP/IP protocol suite.
 The **World Wide Web** (WWW) is an application running on top of the Internet: a system of
 Interlinked documents accessed via browsers using URLs, HTTP, and HTML.
 
-| Aspect | Internet | World Wide Web |
+| Aspect    | Internet                              | World Wide Web                 |
 | --------- | ------------------------------------- | ------------------------------ |
-| Nature | Physical infrastructure | Application/service |
-| Created | 1969 (ARPANET) | 1989 (Tim Berners-Lee at CERN) |
-| Protocols | TCP/IP, BGP, OSPF | HTTP, HTML, URL |
-| Scope | All networked communication | Document and resource sharing |
-| Access | Any application (email, gaming, VoIP) | Web browsers |
+| Nature    | Physical infrastructure               | Application/service            |
+| Created   | 1969 (ARPANET)                        | 1989 (Tim Berners-Lee at CERN) |
+| Protocols | TCP/IP, BGP, OSPF                     | HTTP, HTML, URL                |
+| Scope     | All networked communication           | Document and resource sharing  |
+| Access    | Any application (email, gaming, VoIP) | Web browsers                   |
 
 ### Historical Development
 
 - **1969 — ARPANET:** US Department of Defence created the first packet-switching network, linking
- four universities. Precursor to the modern Internet.
+  four universities. Precursor to the modern Internet.
 - **1973 — TCP/IP:** Vint Cerf and Bob Kahn developed the protocol suite for inter-network
- communication.
+  communication.
 - **1983 — TCP/IP adopted:** ARPANET officially switched to TCP/IP on 1 January 1983.
 - **1989 — WWW invented:** Tim Berners-Lee proposed the Web at CERN, defining HTML, URLs, and HTTP.
 - **1991 — First website:** `info.cern.ch` went live at CERN.
 - **1993 — Mosaic browser:** First graphical web browser made the Web accessible to non-technical
- users.
+  users.
 
 ### Key Internet Protocols
 
-| Protocol | Full Name | Port | Purpose |
+| Protocol | Full Name                   | Port  | Purpose                      |
 | -------- | --------------------------- | ----- | ---------------------------- |
-| TCP | Transmission Control Proto | — | Reliable, ordered delivery |
-| IP | Internet Protocol | — | Addressing and routing |
-| HTTP | HyperText Transfer Protocol | 80 | Requesting web pages |
-| HTTPS | HTTP Secure | 443 | Encrypted web communication |
-| DNS | Domain Name System | 53 | Domain name to IP resolution |
-| FTP | File Transfer Protocol | 20/21 | Uploading and downloading |
-| SMTP | Simple Mail Transfer Proto | 25 | Sending email |
-| POP3 | Post Office Protocol v3 | 110 | Retrieving email (download) |
-| IMAP | Internet Message Access Pr | 143 | Accessing email on server |
+| TCP      | Transmission Control Proto  | —     | Reliable, ordered delivery   |
+| IP       | Internet Protocol           | —     | Addressing and routing       |
+| HTTP     | HyperText Transfer Protocol | 80    | Requesting web pages         |
+| HTTPS    | HTTP Secure                 | 443   | Encrypted web communication  |
+| DNS      | Domain Name System          | 53    | Domain name to IP resolution |
+| FTP      | File Transfer Protocol      | 20/21 | Uploading and downloading    |
+| SMTP     | Simple Mail Transfer Proto  | 25    | Sending email                |
+| POP3     | Post Office Protocol v3     | 110   | Retrieving email (download)  |
+| IMAP     | Internet Message Access Pr  | 143   | Accessing email on server    |
 
 <hr />
 
@@ -89,16 +90,16 @@ HTML (HyperText Markup Language) defines the structure and content of web pages:
 
 Semantic elements describe meaning to browsers and assistive technologies:
 
-| Element | Purpose |
+| Element     | Purpose                                      |
 | ----------- | -------------------------------------------- |
-| `<header>` | Introductory content or navigation links |
-| `<nav>` | Navigation links (menus, tables of contents) |
-| `<main>` | Primary content of the document |
-| `<footer>` | Footer for the nearest sectioning element |
-| `<article>` | Self-contained, independently distributable |
-| `<section>` | Thematic grouping of content with a heading |
-| `<aside>` | Tangentially related content (sidebars) |
-| `<figure>` | Self-contained content (images, diagrams) |
+| `<header>`  | Introductory content or navigation links     |
+| `<nav>`     | Navigation links (menus, tables of contents) |
+| `<main>`    | Primary content of the document              |
+| `<footer>`  | Footer for the nearest sectioning element    |
+| `<article>` | Self-contained, independently distributable  |
+| `<section>` | Thematic grouping of content with a heading  |
+| `<aside>`   | Tangentially related content (sidebars)      |
+| `<figure>`  | Self-contained content (images, diagrams)    |
 
 ### Common HTML Elements
 
@@ -135,13 +136,13 @@ selector {
 }
 ```
 
-| Selector | Example | Selects |
+| Selector     | Example   | Selects                      |
 | ------------ | --------- | ---------------------------- |
-| Element | `p` | All `` elements |
-| Class | `.card` | Elements with `class="card"` |
-| ID | `#header` | Element with `id="header"` |
-| Descendant | `nav a` | All `<a>` inside `<nav>` |
-| Pseudo-class | `a:hover` | `<a>` when hovered |
+| Element      | `p`       | All `` elements              |
+| Class        | `.card`   | Elements with `class="card"` |
+| ID           | `#header` | Element with `id="header"`   |
+| Descendant   | `nav a`   | All `<a>` inside `<nav>`     |
+| Pseudo-class | `a:hover` | `<a>` when hovered           |
 
 **Specificity** (highest to lowest): inline style &gt; ID &gt; class &gt; element.
 
@@ -265,12 +266,12 @@ Common events: `click``keydown``keyup``mouseover``submit``load``change`.
 
 ### Client-Side vs Server-Side Validation
 
-| Aspect | Client-side | Server-side |
+| Aspect   | Client-side                       | Server-side                |
 | -------- | --------------------------------- | -------------------------- |
-| Location | Browser (JavaScript) | Server (Python, PHP, etc.) |
-| Speed | Instant feedback | Requires round-trip |
-| Security | Can be bypassed | Cannot be bypassed |
-| Purpose | UX, reducing unnecessary requests | Data integrity, security |
+| Location | Browser (JavaScript)              | Server (Python, PHP, etc.) |
+| Speed    | Instant feedback                  | Requires round-trip        |
+| Security | Can be bypassed                   | Cannot be bypassed         |
+| Purpose  | UX, reducing unnecessary requests | Data integrity, security   |
 
 **Best practice:** Always perform both. Client-side for UX; server-side for security.
 
@@ -298,23 +299,23 @@ function validateForm(event) {
 
 ### HTTP Methods
 
-| Method | Purpose | Idempotent | Has body |
+| Method | Purpose                     | Idempotent | Has body |
 | ------ | --------------------------- | ---------- | -------- |
-| GET | Retrieve a resource | Yes | No |
-| POST | Submit data (create) | No | Yes |
-| PUT | Replace a resource entirely | Yes | Yes |
-| DELETE | Remove a resource | Yes | No |
+| GET    | Retrieve a resource         | Yes        | No       |
+| POST   | Submit data (create)        | No         | Yes      |
+| PUT    | Replace a resource entirely | Yes        | Yes      |
+| DELETE | Remove a resource           | Yes        | No       |
 
 **Idempotent:** making the same request multiple times produces the same result as once.
 
 ### HTTP Status Codes
 
-| Code | Name | Meaning |
+| Code | Name                | Meaning                        |
 | ---- | ------------------- | ------------------------------ |
-| 200 | OK | Successful request |
-| 301 | Moved Permanently | Resource permanently relocated |
-| 404 | Not Found | Resource does not exist |
-| 500 | Internal Server Err | Server-side failure |
+| 200  | OK                  | Successful request             |
+| 301  | Moved Permanently   | Resource permanently relocated |
+| 404  | Not Found           | Resource does not exist        |
+| 500  | Internal Server Err | Server-side failure            |
 
 Ranges: 1xx (information), 2xx (success), 3xx (redirection), 4xx (client error), 5xx (server error).
 
@@ -355,12 +356,12 @@ Authentication (server identity verified via certificates), and SEO (search engi
 Set-Cookie: session_id=abc123; HttpOnly; Secure; SameSite=Strict
 ```
 
-| Flag | Purpose |
+| Flag       | Purpose                                  |
 | ---------- | ---------------------------------------- |
 | `HttpOnly` | Prevents JavaScript access (XSS defence) |
-| `Secure` | Cookie sent only over HTTPS |
-| `SameSite` | Controls cross-site request behaviour |
-| `Max-Age` | Cookie lifetime in seconds |
+| `Secure`   | Cookie sent only over HTTPS              |
+| `SameSite` | Controls cross-site request behaviour    |
+| `Max-Age`  | Cookie lifetime in seconds               |
 
 A **session** is server-side state. The server stores the session and sends the session ID as a
 Cookie. On subsequent requests, the cookie identifies the session.
@@ -373,20 +374,20 @@ Cookie. On subsequent requests, the cookie identifies the session.
 
 1. **Crawling:** Automated **spiders** follow links, discovering new and updated content.
 2. **Indexing:** Crawled pages are analysed and stored in a massive database. Content, structure,
- and metadata are recorded.
+   and metadata are recorded.
 3. **Ranking:** Algorithms rank pages by relevance using 200+ factors including keywords, backlinks,
- page speed, and mobile-friendliness.
+   page speed, and mobile-friendliness.
 
 ### On-Page SEO
 
-| Technique | Description |
+| Technique        | Description                                        |
 | ---------------- | -------------------------------------------------- |
-| Title tag | Unique, descriptive `<title>` per page |
-| Meta description | Summary shown in search results |
-| Headings | `<h1>` once per page; `<h2>`–`<h6>` hierarchically |
-| Semantic HTML | `<article>``<section>``<nav>` for structure |
-| Alt text | Describe images for accessibility |
-| URL structure | Clean URLs: `/products/laptops` not `/p?id=3` |
+| Title tag        | Unique, descriptive `<title>` per page             |
+| Meta description | Summary shown in search results                    |
+| Headings         | `<h1>` once per page; `<h2>`–`<h6>` hierarchically |
+| Semantic HTML    | `<article>``<section>``<nav>` for structure        |
+| Alt text         | Describe images for accessibility                  |
+| URL structure    | Clean URLs: `/products/laptops` not `/p?id=3`      |
 
 ### Off-Page SEO
 
@@ -455,7 +456,7 @@ Critical actions.
 1. **Input validation:** Validate all input server-side. Whitelist known-good values.
 2. **Output encoding:** Encode data before rendering in HTML, JavaScript, or URLs.
 3. **Principle of least privilege:** Minimum permissions for users, processes, and database
- accounts.
+   accounts.
 4. **HTTPS everywhere:** TLS for all communication.
 5. **Keep software updated:** Apply security patches promptly.
 6. **Strong password policies:** Use bcrypt/Argon2 for hashing.
@@ -556,10 +557,10 @@ Displayed.
 
 1. **URL parsing:** Protocol (`https`), domain (`www.example.com`), path (`/page`).
 2. **DNS resolution:** Browser cache &rarr; OS cache &rarr; recursive resolver &rarr; root server
- &rarr; TLD server &rarr; authoritative server &rarr; IP address (cached at each level).
+   &rarr; TLD server &rarr; authoritative server &rarr; IP address (cached at each level).
 3. **TCP handshake:** SYN &rarr; SYN-ACK &rarr; ACK (connection established on port 443).
 4. **TLS handshake:** Client/server negotiate cipher suite, server presents certificate, key
- exchange establishes a symmetric session key.
+   exchange establishes a symmetric session key.
 5. **HTTP request:** `GET /page HTTP/1.1` with headers sent over encrypted connection.
 6. **HTTP response:** Server returns `200 OK` with HTML, CSS, JS, images.
 7. **Rendering:** Browser parses HTML, builds DOM, executes JavaScript, paints the page.
@@ -646,10 +647,10 @@ Reasons.
 
 1. **JavaScript can be disabled** — users or attackers can turn it off in browser settings.
 2. **Requests can be crafted directly** — tools like `curl` send HTTP requests bypassing all
- browser-side validation.
+   browser-side validation.
 3. **Client code is modifiable** — developer tools allow inspection and modification of JavaScript.
 4. **Business logic requires the server** — rules like "sufficient funds" can only be enforced with
- database access.
+   database access.
 5. **Race conditions** — server state may change between client validation and request arrival.
 
 Client-side validation is a UX feature only. Server-side validation is the only reliable security

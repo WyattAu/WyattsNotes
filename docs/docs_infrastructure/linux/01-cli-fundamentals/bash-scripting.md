@@ -1,10 +1,13 @@
 ---
 id: bash-scripting
 title: Bash Scripting
-description: "Bash Scripting — Conditional Expressions; if / elif / else / fi; test / [ / [[; POSIX test — requires quoting with worked examples and exam-style questions."
+description:
+  'Bash Scripting — Conditional Expressions; if / elif / else / fi; test / [ / [[; POSIX test —
+  requires quoting with worked examples and exam-style questions.'
 slug: bash-scripting
 sidebar_position: 4
 ---
+
 ## Conditional Expressions
 
 ### if / elif / else / fi
@@ -23,14 +26,14 @@ fi
 
 Three test constructs exist, with important differences:
 
-| Feature | `[ ]` (POSIX test) | `[[ ]]` (bash) |
+| Feature             | `[ ]` (POSIX test) | `[[ ]]` (bash)      |
 | ------------------- | ------------------ | ------------------- |
-| Word splitting | Yes (quote vars) | No |
-| Glob expansion | Yes | No |
-| Pattern matching | No | Yes (`==``!=`) |
-| Regex matching | No | Yes (`=~`) |
-| Logical operators | `-a``-o` | `&&``\|\|` |
-| Empty string safety | Requires quoting | Safe without quotes |
+| Word splitting      | Yes (quote vars)   | No                  |
+| Glob expansion      | Yes                | No                  |
+| Pattern matching    | No                 | Yes (`==``!=`)      |
+| Regex matching      | No                 | Yes (`=~`)          |
+| Logical operators   | `-a``-o`           | `&&``\|\|`          |
+| Empty string safety | Requires quoting   | Safe without quotes |
 
 ```bash
 # POSIX test — requires quoting
@@ -805,18 +808,18 @@ done
 
 ### Signal Reference
 
-| Signal | Number | Description | Default Action |
+| Signal  | Number | Description             | Default Action |
 | ------- | ------ | ----------------------- | -------------- |
-| SIGHUP | 1 | Terminal hangup | Terminate |
-| SIGINT | 2 | Interrupt (Ctrl+C) | Terminate |
-| SIGQUIT | 3 | Quit (Ctrl+\) | Core dump |
-| SIGKILL | 9 | Kill (cannot be caught) | Terminate |
-| SIGTERM | 15 | Termination signal | Terminate |
-| SIGUSR1 | 10 | User-defined signal 1 | Terminate |
-| SIGUSR2 | 12 | User-defined signal 2 | Terminate |
-| SIGPIPE | 13 | Broken pipe | Terminate |
-| SIGSTOP | 19 | Stop (cannot be caught) | Stop |
-| SIGTSTP | 20 | Stop (Ctrl+Z) | Stop |
+| SIGHUP  | 1      | Terminal hangup         | Terminate      |
+| SIGINT  | 2      | Interrupt (Ctrl+C)      | Terminate      |
+| SIGQUIT | 3      | Quit (Ctrl+\)           | Core dump      |
+| SIGKILL | 9      | Kill (cannot be caught) | Terminate      |
+| SIGTERM | 15     | Termination signal      | Terminate      |
+| SIGUSR1 | 10     | User-defined signal 1   | Terminate      |
+| SIGUSR2 | 12     | User-defined signal 2   | Terminate      |
+| SIGPIPE | 13     | Broken pipe             | Terminate      |
+| SIGSTOP | 19     | Stop (cannot be caught) | Stop           |
+| SIGTSTP | 20     | Stop (Ctrl+Z)           | Stop           |
 
 ```bash
 # List all signals
@@ -849,14 +852,14 @@ echo "$VAR"
 
 Common shellcheck warnings and fixes:
 
-| Code | Issue | Fix |
+| Code   | Issue                                    | Fix                               |
 | ------ | ---------------------------------------- | --------------------------------- |
-| SC2086 | Double-quote to prevent globbing | `"$VAR"` instead of `$VAR` |
+| SC2086 | Double-quote to prevent globbing         | `"$VAR"` instead of `$VAR`        |
 | SC2004 | `$/${} is unnecessary on arithmetic vars | `((count++))` instead of `$count` |
-| SC2181 | Check exit code directly | `if mycmd;` instead of `if $?` |
-| SC2034 | Variable appears unused | Remove or use the variable |
-| SC2155 | Declare and assign separately | Split `local a=$(cmd)` into two |
-| SC1091 | Not following sourced file | Add `# shellcheck source=...` |
+| SC2181 | Check exit code directly                 | `if mycmd;` instead of `if $?`    |
+| SC2034 | Variable appears unused                  | Remove or use the variable        |
+| SC2155 | Declare and assign separately            | Split `local a=$(cmd)` into two   |
+| SC1091 | Not following sourced file               | Add `# shellcheck source=...`     |
 
 ### Quoting
 

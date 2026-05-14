@@ -1,10 +1,12 @@
 ---
 title: Rights and Protest
 tags:
-- IB
-- History
+  - IB
+  - History
 slug: rights-and-protest
-description: "Rigorous IB history notes covering Rights and Protest. Includes definitions, derivations, worked examples, and exam-style problems."
+description:
+  'Rigorous IB history notes covering Rights and Protest. Includes definitions, derivations, worked
+  examples, and exam-style problems.'
 ---
 
 # Rights and Protest
@@ -27,25 +29,25 @@ Roots of institutionalised racial discrimination lie in the colonial and post-co
 The region:
 
 - **Dutch colonial period (1652--1795):** The Dutch East India Company established a settlement at
- the Cape of Good Hope in 1652. Slavery was introduced almost immediately, and the indigenous
- Khoikhoi and San peoples were dispossessed of their land. The system of racial categorisation that
- would later become apartheid had its origins in this colonial society.
+  the Cape of Good Hope in 1652. Slavery was introduced almost immediately, and the indigenous
+  Khoikhoi and San peoples were dispossessed of their land. The system of racial categorisation that
+  would later become apartheid had its origins in this colonial society.
 - **British colonial period (1795--1910):** British rule brought abolition of slavery (1834) but did
- not fundamentally alter the racial hierarchy. The discovery of diamonds (1867) and gold (1886)
- intensified racial segregation as the mining industry relied on cheap African labour controlled
- through pass laws and compound systems.
+  not fundamentally alter the racial hierarchy. The discovery of diamonds (1867) and gold (1886)
+  intensified racial segregation as the mining industry relied on cheap African labour controlled
+  through pass laws and compound systems.
 - **The Union of South Africa (1910):** The union of the four British colonies (Cape, Natal,
- Transvaal, Orange Free State) created a unified South African state dominated by the white
- minority (approximately 20% of the population). The South Africa Act (1909) explicitly excluded
- black South Africans from political participation in three of the four provinces.
+  Transvaal, Orange Free State) created a unified South African state dominated by the white
+  minority (approximately 20% of the population). The South Africa Act (1909) explicitly excluded
+  black South Africans from political participation in three of the four provinces.
 - **The Natives Land Act (1913):** This legislation restricted African land ownership to
- approximately 7% of South Africa's total land area (later expanded to approximately 13% under the
- Natives Trust and Land Act of 1936). The remaining 87% was reserved for the white minority
- (approximately 20% of the population). This grossly unequal distribution of land was a
- foundational injustice that apartheid would perpetuate and deepen.
+  approximately 7% of South Africa's total land area (later expanded to approximately 13% under the
+  Natives Trust and Land Act of 1936). The remaining 87% was reserved for the white minority
+  (approximately 20% of the population). This grossly unequal distribution of land was a
+  foundational injustice that apartheid would perpetuate and deepen.
 - **The Natives (Urban Areas) Act (1923):** This act established the legal framework for urban
- segregation, restricting African residence in urban areas and laying the groundwork for the pass
- system.
+  segregation, restricting African residence in urban areas and laying the groundwork for the pass
+  system.
 
 #### The National Party Victory (1948)
 
@@ -63,17 +65,17 @@ Culturally threatened by English-speaking white South Africans.
 The NP's victory was facilitated by several factors:
 
 - **White fear of black political mobilisation:** The rapid growth of black urbanisation and the
- formation of mass political organisations (the ANC, the Industrial and Commercial Workers' Union)
- alarmed white voters.
+  formation of mass political organisations (the ANC, the Industrial and Commercial Workers' Union)
+  alarmed white voters.
 - **Afrikaner nationalism:** The ideology of Afrikaner nationalism, nurtured by the Dutch Reformed
- Church and organisations such as the Broederbond (a secret Afrikaner fraternal organisation),
- emphasised the distinctiveness of Afrikaner culture and the need to protect it from external
- threats.
+  Church and organisations such as the Broederbond (a secret Afrikaner fraternal organisation),
+  emphasised the distinctiveness of Afrikaner culture and the need to protect it from external
+  threats.
 - **Economic anxiety:** Many poor whites feared economic competition from black workers,
- particularly in the aftermath of the Great Depression.
+  particularly in the aftermath of the Great Depression.
 - **The gerrymandering of electoral boundaries:** The electoral system was structured to
- over-represent rural (predominantly Afrikaner) constituencies at the expense of urban
- (predominantly English-speaking) constituencies.
+  over-represent rural (predominantly Afrikaner) constituencies at the expense of urban
+  (predominantly English-speaking) constituencies.
 
 ### 1.2 Implementation of Apartheid
 
@@ -109,13 +111,13 @@ Of certain forms of labour."
 The consequences of Bantu education were profound:
 
 - African schools received significantly less funding than white schools (approximately one-tenth
- per pupil).
+  per pupil).
 - The curriculum was designed to prepare Africans for manual labour, not for professional or
- intellectual careers. Subjects such as mathematics and science were deemphasised or eliminated.
+  intellectual careers. Subjects such as mathematics and science were deemphasised or eliminated.
 - Teacher training for African schools was inferior. The government produced a surplus of poorly
- educated teachers and a deficit of skilled professionals.
+  educated teachers and a deficit of skilled professionals.
 - The system created a long-term human capital deficit that would plague South Africa long after the
- end of apartheid.
+  end of apartheid.
 
 #### Pass Laws
 
@@ -132,24 +134,24 @@ Violations.
 #### Other Key Legislation
 
 - **The Prohibition of Mixed Marriages Act (1949)** and **The Immorality Act (1950):** Prohibited
- marriage and sexual relations across racial lines.
+  marriage and sexual relations across racial lines.
 - **The Reservation of Separate Amenities Act (1953):** Mandated the segregation of public
- facilities -- buses, trains, beaches, parks, toilets, benches -- by race. The facilities provided
- for black, coloured, and Indian South Africans were invariably inferior to those for whites.
+  facilities -- buses, trains, beaches, parks, toilets, benches -- by race. The facilities provided
+  for black, coloured, and Indian South Africans were invariably inferior to those for whites.
 - **The Bantu Authorities Act (1951) and **The Promotion of Bantu Self-Government Act (1959):\*\*
- Established the system of "Bantustans" or "homelands" -- nominally independent territories to
- which all black South Africans were assigned on the basis of ethnicity. The homelands covered
- approximately 13% of South Africa's land area and were economically unviable. The policy was
- designed to strip black South Africans of their South African citizenship and transform them into
- citizens of the homelands -- thereby denying them any claim to political rights in South Africa
- itself. Ten homelands were eventually established; four (Transkei, Bophuthatswana, Venda, and
- Ciskei) were declared "independent," though no country other than South Africa recognised them.
+  Established the system of "Bantustans" or "homelands" -- nominally independent territories to
+  which all black South Africans were assigned on the basis of ethnicity. The homelands covered
+  approximately 13% of South Africa's land area and were economically unviable. The policy was
+  designed to strip black South Africans of their South African citizenship and transform them into
+  citizens of the homelands -- thereby denying them any claim to political rights in South Africa
+  itself. Ten homelands were eventually established; four (Transkei, Bophuthatswana, Venda, and
+  Ciskei) were declared "independent," though no country other than South Africa recognised them.
 - **The Suppression of Communism Act (1950):** Defined communism so broadly that it could be used to
- ban virtually any organisation or individual opposed to apartheid. The ANC was banned under this
- Act in 1960.
+  ban virtually any organisation or individual opposed to apartheid. The ANC was banned under this
+  Act in 1960.
 - **The Sabotage Act (1962) and the Terrorism Act (1967):** Granted the state sweeping powers to
- detain individuals without trial and to impose the death penalty for politically motivated
- offences.
+  detain individuals without trial and to impose the death penalty for politically motivated
+  offences.
 
 ### 1.3 Internal Resistance
 
@@ -208,12 +210,12 @@ The consequences of Sharpeville were far-reaching:
 
 - **The ANC and PAC were banned** (8 April 1960) under the Unlawful Organisations Act.
 - **The state of emergency** declared in the aftermath of Sharpeville resulted in approximately
- 18,000 detentions.
+  18,000 detentions.
 - **The ANC abandoned nonviolent resistance** and established Umkhonto we Sizwe ("Spear of the
- Nation," abbreviated MK), the armed wing, in December 1961. Nelson Mandela was a co-founder and
- the first commander of MK.
+  Nation," abbreviated MK), the armed wing, in December 1961. Nelson Mandela was a co-founder and
+  the first commander of MK.
 - **International condemnation** of the Sharpeville massacre significantly increased external
- pressure on the apartheid regime.
+  pressure on the apartheid regime.
 
 #### The Rivonia Trial (1963--1964)
 
@@ -245,11 +247,11 @@ To overcome the internalised inferiority that apartheid had imposed on them.
 The BCM's core principles included:
 
 - **Black pride:** The assertion of the dignity and value of black identity, culture, and history in
- opposition to the apartheid narrative of white superiority.
+  opposition to the apartheid narrative of white superiority.
 - **Self-reliance:** The development of independent black institutions (schools, clinics, community
- organisations) to reduce dependence on the apartheid state.
+  organisations) to reduce dependence on the apartheid state.
 - **Psychological liberation:** The rejection of the internalised belief that black people were
- inferior to white people.
+  inferior to white people.
 
 The BCM was influential in the formation of the South African Students' Organisation (SASO, 1969)
 And the Black People's Convention (BPC, 1972). Biko was banned in 1973, meaning he could not speak
@@ -285,16 +287,16 @@ Sanctions.
 
 ### 1.4 Key Figures
 
-| Figure | Role | Significance |
+| Figure         | Role                                                     | Significance                                                                                                              |
 | :------------- | :------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------ |
-| Nelson Mandela | Leader of the ANC; co-founder of MK | Symbol of the anti-apartheid struggle; first black president of South Africa (1994--1999); Nobel Peace Prize (1993) |
-| Oliver Tambo | President of the ANC in exile (1967--1991) | Led the ANC during Mandela's imprisonment; built international diplomatic support |
-| Walter Sisulu | Secretary-General of the ANC; close associate of Mandela | Key organiser of the Defiance Campaign and MK |
-| Robert Sobukwe | Founder of the PAC | Organised the Sharpeville protest; imprisoned on Robben Island for six years, then held under house arrest |
-| Steve Biko | Founder of the Black Consciousness Movement | Led the psychological liberation struggle; died in police custody (1977) |
-| Desmond Tutu | Anglican Archbishop of Cape Town | Moral authority of the anti-apartheid movement; Nobel Peace Prize (1984); chaired the Truth and Reconciliation Commission |
-| P.W. Botha | Prime Minister/President (1978--1989) | "The Crocodile" -- attempted reform while maintaining apartheid; declared state of emergency (1985--1986) |
-| F.W. De Klerk | President (1989--1994) | Released Mandela (February 1990); unbanned the ANC; negotiated the transition to democracy; Nobel Peace Prize (1993) |
+| Nelson Mandela | Leader of the ANC; co-founder of MK                      | Symbol of the anti-apartheid struggle; first black president of South Africa (1994--1999); Nobel Peace Prize (1993)       |
+| Oliver Tambo   | President of the ANC in exile (1967--1991)               | Led the ANC during Mandela's imprisonment; built international diplomatic support                                         |
+| Walter Sisulu  | Secretary-General of the ANC; close associate of Mandela | Key organiser of the Defiance Campaign and MK                                                                             |
+| Robert Sobukwe | Founder of the PAC                                       | Organised the Sharpeville protest; imprisoned on Robben Island for six years, then held under house arrest                |
+| Steve Biko     | Founder of the Black Consciousness Movement              | Led the psychological liberation struggle; died in police custody (1977)                                                  |
+| Desmond Tutu   | Anglican Archbishop of Cape Town                         | Moral authority of the anti-apartheid movement; Nobel Peace Prize (1984); chaired the Truth and Reconciliation Commission |
+| P.W. Botha     | Prime Minister/President (1978--1989)                    | "The Crocodile" -- attempted reform while maintaining apartheid; declared state of emergency (1985--1986)                 |
+| F.W. De Klerk  | President (1989--1994)                                   | Released Mandela (February 1990); unbanned the ANC; negotiated the transition to democracy; Nobel Peace Prize (1993)      |
 
 ### 1.5 External Pressure
 
@@ -303,29 +305,29 @@ Sanctions.
 The United Nations played a significant role in building international opposition to apartheid:
 
 - **UN General Assembly Resolution 1761 (1962):** Called on member states to break diplomatic,
- economic, and military relations with South Africa.
+  economic, and military relations with South Africa.
 - **UN Security Council arms embargo (1977):** Resolution 418 imposed a mandatory arms embargo on
- South Africa -- the first time the Security Council had imposed sanctions on a member state for
- human rights violations.
+  South Africa -- the first time the Security Council had imposed sanctions on a member state for
+  human rights violations.
 - **International Convention on the Suppression and Punishment of the Crime of Apartheid (1973):**
- Declared apartheid a crime against humanity.
+  Declared apartheid a crime against humanity.
 
 #### Economic Sanctions
 
 Economic sanctions were the most significant form of external pressure on the apartheid regime:
 
 - **Oil embargo:** South Africa had no domestic oil reserves and depended entirely on imports. The
- oil embargo forced South Africa to develop expensive synthetic fuel technology (Sasol) and to
- circumvent the embargo through covert purchases.
+  oil embargo forced South Africa to develop expensive synthetic fuel technology (Sasol) and to
+  circumvent the embargo through covert purchases.
 - **Financial sanctions:** The withdrawal of international loans and investment placed significant
- pressure on the South African economy. In 1985, Chase Manhattan Bank refused to roll over South
- African loans, triggering a financial crisis. Foreign banks withdrew approximately $10 billion
- from South Africa between 1985 and 1987.
+  pressure on the South African economy. In 1985, Chase Manhattan Bank refused to roll over South
+  African loans, triggering a financial crisis. Foreign banks withdrew approximately $10 billion
+  from South Africa between 1985 and 1987.
 - **Trade sanctions:** Many countries imposed restrictions on trade with South Africa. The US
- Comprehensive Anti-Apartheid Act (1986) imposed sanctions over President Reagan's veto.
+  Comprehensive Anti-Apartheid Act (1986) imposed sanctions over President Reagan's veto.
 - **Cultural and sports boycotts:** The international boycott of South African sports teams
- (cricket, rugby, athletics) and cultural institutions was deeply resented by white South Africans
- and contributed to a growing awareness of their international pariah status.
+  (cricket, rugby, athletics) and cultural institutions was deeply resented by white South Africans
+  and contributed to a growing awareness of their international pariah status.
 
 #### Commonwealth
 
@@ -342,20 +344,20 @@ Resisted comprehensive sanctions, creating a significant rift within the Commonw
 The end of apartheid was driven by the convergence of internal and external pressures:
 
 - **Economic pressure:** Sanctions, capital flight, and the cost of maintaining the apartheid
- apparatus (the military, the bureaucracy of racial classification, the homelands system) strained
- the South African economy. Economic growth slowed significantly in the 1980s.
+  apparatus (the military, the bureaucracy of racial classification, the homelands system) strained
+  the South African economy. Economic growth slowed significantly in the 1980s.
 - **Internal resistance:** The township uprising of the mid-1980s, led by the United Democratic
- Front (UDF, founded in 1983), made the townships increasingly ungovernable. The state of emergency
- (1985--1986 and 1986--1990) failed to suppress resistance.
+  Front (UDF, founded in 1983), made the townships increasingly ungovernable. The state of emergency
+  (1985--1986 and 1986--1990) failed to suppress resistance.
 - **International isolation:** South Africa's pariah status was increasingly costly in diplomatic,
- economic, and sporting terms.
+  economic, and sporting terms.
 - **The end of the Cold War:** The collapse of the Soviet Union removed the regime's primary
- ideological justification for apartheid -- the claim that it was a bulwark against communism. The
- ANC's alliance with the South African Communist Party became less threatening in a post-Cold War
- context.
+  ideological justification for apartheid -- the claim that it was a bulwark against communism. The
+  ANC's alliance with the South African Communist Party became less threatening in a post-Cold War
+  context.
 - **Demographic reality:** The white minority (approximately 5 million) could not permanently govern
- the black majority (approximately 35 million) in the face of sustained resistance and
- international pressure.
+  the black majority (approximately 35 million) in the face of sustained resistance and
+  international pressure.
 
 #### CODESA (1991--1992)
 
@@ -419,18 +421,18 @@ Public transportation was segregated with inferior accommodations for black pass
 Jim Crow extended far beyond physical segregation:
 
 - **Disfranchisement:** Southern states used a variety of legal mechanisms to prevent African
- Americans from voting, including literacy tests (which were administered discriminatorily -- white
- voters were exempted through "grandfather clauses"), poll taxes, and white primaries. By the
- 1940s, fewer than 5% of eligible African Americans in the Deep South were registered to vote.
+  Americans from voting, including literacy tests (which were administered discriminatorily -- white
+  voters were exempted through "grandfather clauses"), poll taxes, and white primaries. By the
+  1940s, fewer than 5% of eligible African Americans in the Deep South were registered to vote.
 - **Violence:** Lynching was used as a tool of racial terror. Between 1882 and 1968, approximately
- 3,446 African Americans were lynched in the United States. The threat of lynching enforced the
- racial hierarchy and deterred political activism.
+  3,446 African Americans were lynched in the United States. The threat of lynching enforced the
+  racial hierarchy and deterred political activism.
 - **Economic discrimination:** African Americans were confined to the lowest-paying jobs and were
- systematically denied access to credit, housing, and education.
+  systematically denied access to credit, housing, and education.
 - **Social etiquette:** Elaborate rules governed interactions between the races: black men were
- expected to remove their hats in the presence of white men; black people were required to address
- white people as "Mr." or "Mrs." while white people addressed black people by their first names;
- black people were expected to yield the sidewalk to white people.
+  expected to remove their hats in the presence of white men; black people were required to address
+  white people as "Mr." or "Mrs." while white people addressed black people by their first names;
+  black people were expected to yield the sidewalk to white people.
 
 ### 2.2 Key Events
 
@@ -559,10 +561,10 @@ Was the most comprehensive civil rights legislation in American history. Its key
 Included:
 
 - **Title II:** Prohibited discrimination in public accommodations (hotels, restaurants, theatres,
- and other places of public accommodation).
+  and other places of public accommodation).
 - **Title VI:** Prohibited discrimination in federally funded programmes.
 - **Title VII:** Prohibited employment discrimination on the basis of race, colour, religion, sex,
- or national origin.
+  or national origin.
 - **Voting rights:** Strengthened the ability of the federal government to enforce voting rights.
 
 The Act was passed in the aftermath of President Kennedy's assassination (22 November 1963) and was
@@ -575,12 +577,12 @@ The Voting Rights Act of 1965, signed on 6 August 1965, was the most effective p
 Legislation in American history. It directly addressed the mechanisms of black disfranchisement:
 
 - **Section 2:** Prohibited the use of voting qualifications or prerequisites that resulted in the
- denial or abridgement of the right to vote on the basis of race.
+  denial or abridgement of the right to vote on the basis of race.
 - **Section 5:** Required jurisdictions with a history of voting discrimination ("covered
- jurisdictions") to obtain federal approval ("preclearance") before making any changes to their
- voting laws. This provision was the most powerful tool for protecting black voting rights.
+  jurisdictions") to obtain federal approval ("preclearance") before making any changes to their
+  voting laws. This provision was the most powerful tool for protecting black voting rights.
 - **Federal registrars:** The Act authorised the appointment of federal registrars to register
- voters in covered jurisdictions where local officials refused to do so.
+  voters in covered jurisdictions where local officials refused to do so.
 
 The impact was dramatic. Within four months of the Act's passage, approximately 250,000 new black
 Voters were registered. By 1968, black voter registration in Mississippi had increased from 6.7% to
@@ -588,16 +590,16 @@ Voters were registered. By 1968, black voter registration in Mississippi had inc
 
 ### 2.3 Key Figures
 
-| Figure | Role | Significance |
+| Figure                 | Role                                               | Significance                                                                                                                                   |
 | :--------------------- | :------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------- |
-| Martin Luther King Jr. | Leader of the SCLC | The most prominent leader of the civil rights movement; advocate of nonviolent resistance; Nobel Peace Prize (1964); assassinated 4 April 1968 |
-| Rosa Parks | NAACP secretary; Montgomery activist | Refused to give up her bus seat (December 1955), triggering the Montgomery Bus Boycott; "mother of the civil rights movement" |
-| Malcolm X | Minister of the Nation of Islam; later independent | Advocate of black nationalism and self-defence; assassinated 21 February 1965; "The Autobiography of Malcolm X" (1965) |
-| Lyndon B. Johnson | President (1963--1969) | Pushed through the Civil Rights Act (1964), the Voting Rights Act (1965), and the Fair Housing Act (1968) |
-| Medgar Evers | NAACP field secretary in Mississippi | Assassinated outside his home on 12 June 1963; his death contributed to the momentum for federal civil rights legislation |
-| John Lewis | Chairman of SNCC (1963--1966) | Led the Freedom Rides; helped organise the March on Washington; beaten on the Edmund Pettus Bridge at Selma |
-| Ella Baker | Executive director of the SCLC; founder of SNCC | Organisational genius who emphasised grassroots organising and grassroots leadership |
-| Stokely Carmichael | Leader of SNCC; coined "Black Power" | Shifted the movement toward a more militant stance; advocated black self-determination |
+| Martin Luther King Jr. | Leader of the SCLC                                 | The most prominent leader of the civil rights movement; advocate of nonviolent resistance; Nobel Peace Prize (1964); assassinated 4 April 1968 |
+| Rosa Parks             | NAACP secretary; Montgomery activist               | Refused to give up her bus seat (December 1955), triggering the Montgomery Bus Boycott; "mother of the civil rights movement"                  |
+| Malcolm X              | Minister of the Nation of Islam; later independent | Advocate of black nationalism and self-defence; assassinated 21 February 1965; "The Autobiography of Malcolm X" (1965)                         |
+| Lyndon B. Johnson      | President (1963--1969)                             | Pushed through the Civil Rights Act (1964), the Voting Rights Act (1965), and the Fair Housing Act (1968)                                      |
+| Medgar Evers           | NAACP field secretary in Mississippi               | Assassinated outside his home on 12 June 1963; his death contributed to the momentum for federal civil rights legislation                      |
+| John Lewis             | Chairman of SNCC (1963--1966)                      | Led the Freedom Rides; helped organise the March on Washington; beaten on the Edmund Pettus Bridge at Selma                                    |
+| Ella Baker             | Executive director of the SCLC; founder of SNCC    | Organisational genius who emphasised grassroots organising and grassroots leadership                                                           |
+| Stokely Carmichael     | Leader of SNCC; coined "Black Power"               | Shifted the movement toward a more militant stance; advocated black self-determination                                                         |
 
 ### 2.4 Methods and Strategies
 
@@ -607,23 +609,23 @@ Nonviolent resistance was the defining strategy of the civil rights movement's m
 (1954--1965). Its intellectual and moral foundations were drawn from multiple sources:
 
 - **Christian theology:** King's conception of nonviolent resistance was rooted in the Christian
- ethic of love ("agape") and the Sermon on the Mount. King argued that nonviolent resistance was
- not passive but was an active, courageous form of resistance that sought to defeat injustice
- without defeating the opponent.
+  ethic of love ("agape") and the Sermon on the Mount. King argued that nonviolent resistance was
+  not passive but was an active, courageous form of resistance that sought to defeat injustice
+  without defeating the opponent.
 - **Gandhi's satyagraha:** King studied Gandhi's campaigns in India and adopted the principle of
- nonviolent civil disobedience. King's trip to India in 1959 reinforced his commitment to Gandhi's
- methods.
+  nonviolent civil disobedience. King's trip to India in 1959 reinforced his commitment to Gandhi's
+  methods.
 - **The Social Gospel movement:** The Social Gospel, influential in American Protestantism in the
- early 20th century, emphasised the application of Christian ethics to social problems.
+  early 20th century, emphasised the application of Christian ethics to social problems.
 
 The tactical principles of nonviolent resistance, as articulated by King, included:
 
 - **Direct action:** The deliberate violation of unjust laws to provoke a crisis and force
- negotiation.
+  negotiation.
 - **Willingness to suffer:** Nonviolent resisters accepted suffering without retaliation,
- demonstrating moral superiority and generating public sympathy.
+  demonstrating moral superiority and generating public sympathy.
 - **The aim of reconciliation:** The ultimate goal was not to defeat or humiliate the opponent but
- to achieve a "beloved community" of racial reconciliation and justice.
+  to achieve a "beloved community" of racial reconciliation and justice.
 
 #### Legal Challenges
 
@@ -649,20 +651,20 @@ June 1966.
 The Black Power movement encompassed several related but distinct strands:
 
 - **Black nationalism:** The advocacy of black political self-determination, economic independence,
- and cultural pride. The Nation of Islam (led by Elijah Muhammad and later Louis Farrakhan) and
- Malcolm X (before his break with the Nation in 1964) were influential in articulating black
- nationalist ideas.
+  and cultural pride. The Nation of Islam (led by Elijah Muhammad and later Louis Farrakhan) and
+  Malcolm X (before his break with the Nation in 1964) were influential in articulating black
+  nationalist ideas.
 - **Self-defence:** The rejection of nonviolence in favour of the right to armed self-defence
- against police violence and white supremacist terrorism. The Black Panther Party for Self-Defense,
- founded in Oakland, California, in October 1966 by Huey P. Newton and Bobby Seale, embodied this
- principle. The Panthers' armed patrols of police, their free breakfast programmes, and their
- Ten-Point Programme made them the most visible and controversial Black Power organisation.
+  against police violence and white supremacist terrorism. The Black Panther Party for Self-Defense,
+  founded in Oakland, California, in October 1966 by Huey P. Newton and Bobby Seale, embodied this
+  principle. The Panthers' armed patrols of police, their free breakfast programmes, and their
+  Ten-Point Programme made them the most visible and controversial Black Power organisation.
 - **Cultural pride:** The celebration of African heritage, natural hairstyles ("afros"), and
- African-inspired clothing. James Brown's "Say It Loud -- I'm Black and I'm Proud" (1968) was an
- anthem of Black Power cultural expression.
+  African-inspired clothing. James Brown's "Say It Loud -- I'm Black and I'm Proud" (1968) was an
+  anthem of Black Power cultural expression.
 - **Community organising:** The emphasis on building independent black institutions -- schools,
- health clinics, cooperatives, and political organisations -- to serve black communities
- independently of white-dominated institutions.
+  health clinics, cooperatives, and political organisations -- to serve black communities
+  independently of white-dominated institutions.
 
 The Black Power movement had a significant impact on American society. It shifted the discourse of
 The civil rights movement from integration to empowerment, from civil rights to human rights, and
@@ -678,19 +680,19 @@ The Voting Rights Act (1965), and the Fair Housing Act (1968) -- that dismantled
 Of Jim Crow segregation. However, de facto racial inequality persisted in multiple dimensions:
 
 - **Economic inequality:** The racial wealth gap remained enormous. In 1968, the median black family
- income was approximately 55% of the median white family income. Decades later, this ratio had
- improved only modestly.
+  income was approximately 55% of the median white family income. Decades later, this ratio had
+  improved only modestly.
 - **Mass incarceration:** The "War on Drugs," launched by President Nixon in 1971 and intensified by
- President Reagan in the 1980s, produced a system of mass incarceration that disproportionately
- affected African American communities. By the 2000s, approximately one in three African American
- men could expect to be incarcerated at some point in their lives.
+  President Reagan in the 1980s, produced a system of mass incarceration that disproportionately
+  affected African American communities. By the 2000s, approximately one in three African American
+  men could expect to be incarcerated at some point in their lives.
 - **Voting rights:** The Supreme Court's decision in Shelby County v. Holder (2013) struck down the
- preclearance provision (Section 5) of the Voting Rights Act, opening the door to a new wave of
- voting restrictions in Southern and Midwestern states.
+  preclearance provision (Section 5) of the Voting Rights Act, opening the door to a new wave of
+  voting restrictions in Southern and Midwestern states.
 - **Police violence:** The killings of Michael Brown (Ferguson, 2014), Eric Garner (New York, 2014),
- George Floyd (Minneapolis, 2020), and many others demonstrated that the struggle against racial
- injustice in policing was far from over. The Black Lives Matter movement, founded in 2013, became
- the largest social movement in American history.
+  George Floyd (Minneapolis, 2020), and many others demonstrated that the struggle against racial
+  injustice in policing was far from over. The Black Lives Matter movement, founded in 2013, became
+  the largest social movement in American history.
 
 ---
 
@@ -698,32 +700,32 @@ Of Jim Crow segregation. However, de facto racial inequality persisted in multip
 
 ### 3.1 Comparison of Conditions
 
-| Dimension | Apartheid South Africa | US Civil Rights Movement |
+| Dimension             | Apartheid South Africa                             | US Civil Rights Movement                                           |
 | :-------------------- | :------------------------------------------------- | :----------------------------------------------------------------- |
-| Legal basis | Comprehensive statutory system (1948 onward) | Jim Crow laws, state and local statutes; Plessy v. Ferguson (1896) |
-| Minority status | White minority (20%) ruling black majority (80%) | White majority ruling black minority (approximately 12%) |
-| Nature of segregation | Enforced nationally from 1948 | Varied by region; most intense in the South |
-| Economic structure | Extractive economy dependent on cheap black labour | Industrial economy with racially segmented labour market |
+| Legal basis           | Comprehensive statutory system (1948 onward)       | Jim Crow laws, state and local statutes; Plessy v. Ferguson (1896) |
+| Minority status       | White minority (20%) ruling black majority (80%)   | White majority ruling black minority (approximately 12%)           |
+| Nature of segregation | Enforced nationally from 1948                      | Varied by region; most intense in the South                        |
+| Economic structure    | Extractive economy dependent on cheap black labour | Industrial economy with racially segmented labour market           |
 
 ### 3.2 Comparison of Resistance Methods
 
-| Method | South Africa | United States |
+| Method                 | South Africa                                             | United States                                                           |
 | :--------------------- | :------------------------------------------------------- | :---------------------------------------------------------------------- |
-| Nonviolent resistance | Defiance Campaign (1952); pass law protests | Montgomery Bus Boycott; sit-ins; Freedom Rides; Birmingham Campaign |
-| Armed resistance | MK (Umkhonto we Sizwe) from 1961 | Limited; Black Panther Party (1966 onward) advocated self-defence |
-| International pressure | UN sanctions; Commonwealth pressure; cultural boycotts | Limited international pressure; Cold War dynamics constrained US policy |
-| Legal challenges | Early ANC petitions (1910s--1930s); largely unsuccessful | NAACP Legal Defense Fund; Brown v. Board (1954) -- landmark victory |
-| Mass mobilisation | Soweto Uprising (1976); UDF (1983) | March on Washington (1963); Selma to Montgomery marches (1965) |
-| Leadership | Mandela, Tambo, Sisulu, Biko | King, Parks, Malcolm X, Lewis, Baker |
+| Nonviolent resistance  | Defiance Campaign (1952); pass law protests              | Montgomery Bus Boycott; sit-ins; Freedom Rides; Birmingham Campaign     |
+| Armed resistance       | MK (Umkhonto we Sizwe) from 1961                         | Limited; Black Panther Party (1966 onward) advocated self-defence       |
+| International pressure | UN sanctions; Commonwealth pressure; cultural boycotts   | Limited international pressure; Cold War dynamics constrained US policy |
+| Legal challenges       | Early ANC petitions (1910s--1930s); largely unsuccessful | NAACP Legal Defense Fund; Brown v. Board (1954) -- landmark victory     |
+| Mass mobilisation      | Soweto Uprising (1976); UDF (1983)                       | March on Washington (1963); Selma to Montgomery marches (1965)          |
+| Leadership             | Mandela, Tambo, Sisulu, Biko                             | King, Parks, Malcolm X, Lewis, Baker                                    |
 
 ### 3.3 Comparison of Outcomes
 
-| Dimension | South Africa | United States |
+| Dimension                  | South Africa                                                    | United States                                                                    |
 | :------------------------- | :-------------------------------------------------------------- | :------------------------------------------------------------------------------- |
-| Nature of transition | Negotiated transition (CODESA); first democratic elections 1994 | Legislative victories (Civil Rights Act 1964, Voting Rights Act 1965) |
-| Post-transition leadership | Mandela as first black president (1994--1999) | No equivalent figurehead; movement fragmented after King's assassination |
-| Truth and reconciliation | TRC (1995--2002) provided a framework for dealing with the past | No equivalent mechanism; Confederate monuments and symbols remained contentious |
-| Economic outcomes | Persistent inequality; land redistribution largely unresolved | Persistent racial wealth gap; mass incarceration as a new form of racial control |
+| Nature of transition       | Negotiated transition (CODESA); first democratic elections 1994 | Legislative victories (Civil Rights Act 1964, Voting Rights Act 1965)            |
+| Post-transition leadership | Mandela as first black president (1994--1999)                   | No equivalent figurehead; movement fragmented after King's assassination         |
+| Truth and reconciliation   | TRC (1995--2002) provided a framework for dealing with the past | No equivalent mechanism; Confederate monuments and symbols remained contentious  |
+| Economic outcomes          | Persistent inequality; land redistribution largely unresolved   | Persistent racial wealth gap; mass incarceration as a new form of racial control |
 
 ---
 
@@ -731,21 +733,21 @@ Of Jim Crow segregation. However, de facto racial inequality persisted in multip
 
 ### 4.1 South African Historiography
 
-| School | Key Proponents | Arguments |
+| School              | Key Proponents                     | Arguments                                                                                                        |
 | :------------------ | :--------------------------------- | :--------------------------------------------------------------------------------------------------------------- |
-| Liberal | Leonard Thompson, Rodney Davenport | Apartheid was a product of Afrikaner nationalism; emphasises the role of white politics |
-| Radical/Revisionist | Colin Bundy, Shula Marks | Apartheid was a product of capitalist economic interests; segregation served the needs of mining and agriculture |
-| Africanist | Gail Gerhart, Tom Lodge | Emphasises African agency and resistance; apartheid was not a monolithic system but was constantly contested |
-| Post-apartheid | Nigel Worden, William Beinart | More nuanced synthesis; acknowledges both economic and ideological drivers |
+| Liberal             | Leonard Thompson, Rodney Davenport | Apartheid was a product of Afrikaner nationalism; emphasises the role of white politics                          |
+| Radical/Revisionist | Colin Bundy, Shula Marks           | Apartheid was a product of capitalist economic interests; segregation served the needs of mining and agriculture |
+| Africanist          | Gail Gerhart, Tom Lodge            | Emphasises African agency and resistance; apartheid was not a monolithic system but was constantly contested     |
+| Post-apartheid      | Nigel Worden, William Beinart      | More nuanced synthesis; acknowledges both economic and ideological drivers                                       |
 
 ### 4.2 US Civil Rights Historiography
 
-| School | Key Proponents | Arguments |
+| School                     | Key Proponents                     | Arguments                                                                                 |
 | :------------------------- | :--------------------------------- | :---------------------------------------------------------------------------------------- |
-| Traditional | Taylor Branch, David Garrow | King-centred narrative; nonviolent resistance as the primary driver of change |
-| Bottom-up | Charles Payne, John Dittmer | Emphasises grassroots organising and local movements rather than national leadership |
-| Cold War revisionist | Mary Dudziak, Brenda Gayle Plummer | Cold War dynamics shaped both the movement and the government response |
-| Long civil rights movement | Jacquelyn Dowd Hall | Extends the chronology of the movement before Brown and after 1968; emphasises continuity |
+| Traditional                | Taylor Branch, David Garrow        | King-centred narrative; nonviolent resistance as the primary driver of change             |
+| Bottom-up                  | Charles Payne, John Dittmer        | Emphasises grassroots organising and local movements rather than national leadership      |
+| Cold War revisionist       | Mary Dudziak, Brenda Gayle Plummer | Cold War dynamics shaped both the movement and the government response                    |
+| Long civil rights movement | Jacquelyn Dowd Hall                | Extends the chronology of the movement before Brown and after 1968; emphasises continuity |
 
 ---
 
@@ -756,40 +758,40 @@ Of Jim Crow segregation. However, de facto racial inequality persisted in multip
 Paper 1 questions on Rights and Protest require source analysis skills:
 
 - **Q1 (Comprehension):** Identify and compare content of sources. Be precise about what each source
- says and does not say.
+  says and does not say.
 - **Q2 (OPVL):** Evaluate one source using Origin, Purpose, Value, and Limitation. Consider who
- created the source, when, and why, and how these factors affect its reliability and usefulness.
+  created the source, when, and why, and how these factors affect its reliability and usefulness.
 - **Q3 (Comparison):** Compare the value and limitations of two sources. Focus on the differences in
- origin, purpose, and perspective between the two sources.
+  origin, purpose, and perspective between the two sources.
 - **Q4 (Synthesis):** Use all sources and your own knowledge to address the question. Group by
- theme, not by source. Do not merely summarise each source.
+  theme, not by source. Do not merely summarise each source.
 
 ### 5.2 Essay Questions
 
 Common question types for Rights and Protest include:
 
 - **"To what extent was [method] the most effective form of resistance against [apartheid/Jim
- Crow]?"** -- Evaluate multiple methods (nonviolent resistance, armed struggle, international
- pressure, legal challenges) and reach a balanced judgement.
+  Crow]?"** -- Evaluate multiple methods (nonviolent resistance, armed struggle, international
+  pressure, legal challenges) and reach a balanced judgement.
 - **"Compare and contrast the methods used to resist [apartheid/Jim Crow] in two different
- countries."** -- Identify similarities and differences; explain why they exist.
+  countries."** -- Identify similarities and differences; explain why they exist.
 - **"Assess the significance of [individual/event] in the struggle for [civil rights/the end of
- apartheid]."** -- Evaluate impact using criteria such as scale, duration, and turning-point
- status.
+  apartheid]."** -- Evaluate impact using criteria such as scale, duration, and turning-point
+  status.
 
 ### 5.3 Common Pitfalls
 
 - **Narrating events without analysis.** Merely recounting what happened will not earn high marks.
- You must explain significance, causation, and consequence.
+  You must explain significance, causation, and consequence.
 - **Over-simplifying the relationship between internal resistance and external pressure.** Both were
- important; the question is how they interacted. External sanctions would have been less effective
- without internal resistance, and internal resistance was strengthened by external support.
+  important; the question is how they interacted. External sanctions would have been less effective
+  without internal resistance, and internal resistance was strengthened by external support.
 - **Presenting the civil rights movement as monolithic.** The movement was characterised by
- significant internal disagreements about strategy, tactics, and goals. The tension between
- nonviolent resistance and Black Power is a central feature of the movement's history.
+  significant internal disagreements about strategy, tactics, and goals. The tension between
+  nonviolent resistance and Black Power is a central feature of the movement's history.
 - **Neglecting the role of women.** Women played critical roles in both movements that are often
- under-recognised: Rosa Parks, Ella Baker, Fannie Lou Hamer, Diane Nash, and Septima Clark in the
- US; Albertina Sisulu, Winnie Madikizela-Mandela, and Helen Suzman in South Africa.
+  under-recognised: Rosa Parks, Ella Baker, Fannie Lou Hamer, Diane Nash, and Septima Clark in the
+  US; Albertina Sisulu, Winnie Madikizela-Mandela, and Helen Suzman in South Africa.
 
 ---
 
@@ -797,43 +799,43 @@ Common question types for Rights and Protest include:
 
 ### South Africa
 
-| Date | Event |
+| Date             | Event                                                        |
 | :--------------- | :----------------------------------------------------------- |
-| 1912 | ANC founded |
-| 1913 | Natives Land Act |
-| 1948 | National Party wins election; apartheid begins |
-| 1950 | Population Registration Act; Group Areas Act; Immorality Act |
-| 1952 | Defiance Campaign |
-| 1955 | Congress of the People; Freedom Charter adopted |
-| 21 March 1960 | Sharpeville massacre |
-| 1961 | Umkhonto we Sizwe (MK) formed |
-| 1963--1964 | Rivonia Trial; Mandela sentenced to life imprisonment |
-| 1976 | Soweto uprising (16 June) |
-| 1977 | Steve Biko dies in police custody (12 September) |
-| 1984--1986 | Township uprising; state of emergency |
-| 11 February 1990 | Mandela released from prison |
-| 1991--1992 | CODESA negotiations |
-| 27 April 1994 | First democratic elections; ANC wins |
-| 1995--2002 | Truth and Reconciliation Commission |
+| 1912             | ANC founded                                                  |
+| 1913             | Natives Land Act                                             |
+| 1948             | National Party wins election; apartheid begins               |
+| 1950             | Population Registration Act; Group Areas Act; Immorality Act |
+| 1952             | Defiance Campaign                                            |
+| 1955             | Congress of the People; Freedom Charter adopted              |
+| 21 March 1960    | Sharpeville massacre                                         |
+| 1961             | Umkhonto we Sizwe (MK) formed                                |
+| 1963--1964       | Rivonia Trial; Mandela sentenced to life imprisonment        |
+| 1976             | Soweto uprising (16 June)                                    |
+| 1977             | Steve Biko dies in police custody (12 September)             |
+| 1984--1986       | Township uprising; state of emergency                        |
+| 11 February 1990 | Mandela released from prison                                 |
+| 1991--1992       | CODESA negotiations                                          |
+| 27 April 1994    | First democratic elections; ANC wins                         |
+| 1995--2002       | Truth and Reconciliation Commission                          |
 
 ### United States
 
-| Date | Event |
+| Date            | Event                                              |
 | :-------------- | :------------------------------------------------- |
-| 1896 | Plessy v. Ferguson ("separate but equal") |
-| 17 May 1954 | Brown v. Board of Education |
+| 1896            | Plessy v. Ferguson ("separate but equal")          |
+| 17 May 1954     | Brown v. Board of Education                        |
 | 1 December 1955 | Rosa Parks arrested; Montgomery Bus Boycott begins |
-| 1957 | Little Rock Central High School crisis |
-| 1 February 1960 | Greensboro sit-ins begin |
-| 1961 | Freedom Rides |
-| April--May 1963 | Birmingham Campaign |
-| 28 August 1963 | March on Washington; "I Have a Dream" speech |
-| 16 June 1963 | Medgar Evers assassinated |
-| 2 July 1964 | Civil Rights Act signed |
-| 6 August 1965 | Voting Rights Act signed |
-| 1966 | Black Panther Party founded; "Black Power" coined |
-| 4 April 1968 | Martin Luther King Jr. Assassinated |
-| 1968 | Fair Housing Act signed |
+| 1957            | Little Rock Central High School crisis             |
+| 1 February 1960 | Greensboro sit-ins begin                           |
+| 1961            | Freedom Rides                                      |
+| April--May 1963 | Birmingham Campaign                                |
+| 28 August 1963  | March on Washington; "I Have a Dream" speech       |
+| 16 June 1963    | Medgar Evers assassinated                          |
+| 2 July 1964     | Civil Rights Act signed                            |
+| 6 August 1965   | Voting Rights Act signed                           |
+| 1966            | Black Panther Party founded; "Black Power" coined  |
+| 4 April 1968    | Martin Luther King Jr. Assassinated                |
+| 1968            | Fair Housing Act signed                            |
 
 ## Common Pitfalls
 

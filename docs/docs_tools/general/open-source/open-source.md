@@ -1,24 +1,27 @@
 ---
 id: open-source
 title: Open Source Contribution Guide
-description: "Open Source Contribution Guide — Why Contribute to Open Source; Finding the Right Project. with additional techniques and methods."
+description:
+  'Open Source Contribution Guide — Why Contribute to Open Source; Finding the Right Project. with
+  additional techniques and methods.'
 slug: open-source
 ---
+
 ## Why Contribute to Open Source
 
 Open source contribution benefits you as a systems engineer in several ways:
 
 1. **Skill development:** You work with large, real-world codebases that are maintained by
- experienced developers. This teaches patterns and practices that are difficult to learn from
- tutorials alone.
+   experienced developers. This teaches patterns and practices that are difficult to learn from
+   tutorials alone.
 2. **Visibility:** Your contributions are public and permanent. They serve as a portfolio that
- demonstrates your skills to potential employers and collaborators.
+   demonstrates your skills to potential employers and collaborators.
 3. **Network:** You interact with developers from diverse backgrounds and organizations. These
- connections can lead to job opportunities, collaborations, and mentorship.
+   connections can lead to job opportunities, collaborations, and mentorship.
 4. **Reputation:** Consistent, high-quality contributions build your reputation in the community.
- This opens doors to speaking opportunities, advisory roles, and consulting work.
+   This opens doors to speaking opportunities, advisory roles, and consulting work.
 5. **Giving back:** You use open source software daily (Linux, Git, Docker, Kubernetes, your editor,
- your terminal). Contributing back is professional reciprocity.
+   your terminal). Contributing back is professional reciprocity.
 
 ---
 
@@ -28,40 +31,40 @@ Open source contribution benefits you as a systems engineer in several ways:
 
 Many projects label beginner-friendly issues:
 
-| Label | Meaning | Where to Find |
+| Label               | Meaning                           | Where to Find                 |
 | ------------------- | --------------------------------- | ----------------------------- |
-| `good first issue` | Suitable for new contributors | GitHub issue filters |
-| `first-timers-only` | Structured for absolute beginners | firsttimersonly.com |
-| `help wanted` | Maintainers actively seeking help | GitHub issue filters |
-| `easy` | Low complexity | Project-specific |
-| `documentation` | Docs need improvement | Often overlooked, high impact |
+| `good first issue`  | Suitable for new contributors     | GitHub issue filters          |
+| `first-timers-only` | Structured for absolute beginners | firsttimersonly.com           |
+| `help wanted`       | Maintainers actively seeking help | GitHub issue filters          |
+| `easy`              | Low complexity                    | Project-specific              |
+| `documentation`     | Docs need improvement             | Often overlooked, high impact |
 
 ### Choosing a Project
 
 Criteria for selecting a project to contribute to:
 
 1. **You use it.** The best projects to contribute to are ones you already use. You understand the
- domain, the pain points, and the user experience.
+   domain, the pain points, and the user experience.
 2. **The project is active.** Check the commit frequency, issue response time, and release cadence.
- A project with no activity in 6 months is likely unmaintained.
+   A project with no activity in 6 months is likely unmaintained.
 3. **The project is welcoming.** Check the CONTRIBUTING.md file, response times on issues, and how
- maintainers interact with new contributors. Some projects are notoriously difficult to contribute
- to.
+   maintainers interact with new contributors. Some projects are notoriously difficult to contribute
+   to.
 4. **The codebase is readable.** Open the source code and skim it. If you cannot understand the
- project structure within 30 minutes, consider a different project.
+   project structure within 30 minutes, consider a different project.
 5. **The project matches your skills.** If you are a systems engineer, contributing to Linux kernel,
- ZFS, or infrastructure tools (Terraform, Kubernetes) leverages your strengths.
+   ZFS, or infrastructure tools (Terraform, Kubernetes) leverages your strengths.
 
 ### Sources for Finding Projects
 
-| Source | URL | Best For |
+| Source            | URL                 | Best For                      |
 | ----------------- | ------------------- | ----------------------------- |
-| GitHub Explore | github.com/explore | Trending projects |
-| Good First Issue | goodfirstissue.dev | Filtered beginner issues |
-| First Timers Only | firsttimersonly.com | Structured beginner issues |
-| Up For Grabs | up-for-grabs.net | Projects seeking contributors |
-| CodeTriage | codetriage.com | Projects needing issue triage |
-| 24 Pull Requests | 24pullrequests.com | Holiday contribution drive |
+| GitHub Explore    | github.com/explore  | Trending projects             |
+| Good First Issue  | goodfirstissue.dev  | Filtered beginner issues      |
+| First Timers Only | firsttimersonly.com | Structured beginner issues    |
+| Up For Grabs      | up-for-grabs.net    | Projects seeking contributors |
+| CodeTriage        | codetriage.com      | Projects needing issue triage |
+| 24 Pull Requests  | 24pullrequests.com  | Holiday contribution drive    |
 
 ---
 
@@ -74,20 +77,20 @@ Criteria for selecting a project to contribute to:
 3. **Architecture documentation** — Some projects have `docs/architecture.md` or `docs/design/`.
 4. **Directory structure** — Skim the top-level directories to understand the project layout.
 5. **Entry points** — Find the `main()` function or equivalent. Trace the execution path from
- startup to the feature you are interested in.
+   startup to the feature you are interested in.
 
 ### Code Reading Strategy
 
 1. **Start with tests.** Tests document expected behavior. Reading tests is often faster than
- reading implementation code.
+   reading implementation code.
 2. **Use `git log --follow`** to understand the history of a file. The commit messages explain why
- changes were made.
-3. **Use the project's search tools.** `grep -r``rg`Or the IDE's "Find in Files" to locate where
- a function is defined and used.
+   changes were made.
+3. **Use the project's search tools.** `grep -r``rg`Or the IDE's "Find in Files" to locate where a
+   function is defined and used.
 4. **Draw diagrams.** Sketch the component relationships, data flow, or call graph on paper. This
- forces you to understand the structure.
+   forces you to understand the structure.
 5. **Read the commit history of the area you are modifying.** Recent commits provide context for
- design decisions and ongoing work.
+   design decisions and ongoing work.
 
 ### Common Project Structures
 
@@ -226,13 +229,13 @@ Any caveats, follow-up work, or questions for reviewers
 ### PR Best Practices
 
 1. **Keep PRs small.** Under 400 lines of meaningful change. Large PRs take longer to review and are
- more likely to have bugs. Break large changes into a series of smaller PRs.
+   more likely to have bugs. Break large changes into a series of smaller PRs.
 2. **Self-review before requesting review.** Run lint, typecheck, and tests. Review your own diff.
 3. **Provide context.** Explain the problem, the solution, and why this approach was chosen.
 4. **Include tests.** Every bug fix should include a test that reproduces the bug and verifies the
- fix. Every new feature should include tests.
+   fix. Every new feature should include tests.
 5. **Be responsive.** Address review feedback promptly. If a reviewer requests changes, make them
- and push to the same branch (the PR updates automatically).
+   and push to the same branch (the PR updates automatically).
 
 ---
 
@@ -251,7 +254,7 @@ Any caveats, follow-up work, or questions for reviewers
 - **Do not take feedback personally.** Code review is about the code, not you.
 - **Ask for clarification.** If you do not understand a review comment, ask.
 - **Push back respectfully.** If you disagree with a suggestion, explain your reasoning. Review is a
- dialogue, not a directive.
+  dialogue, not a directive.
 - **Thank the reviewer.** They are volunteering their time to improve your code.
 
 ---
@@ -260,13 +263,13 @@ Any caveats, follow-up work, or questions for reviewers
 
 ### Common Open Source Licenses
 
-| License | Copyleft | Patent Grant | Commercial Use | Distribution Requirement |
+| License      | Copyleft | Patent Grant | Commercial Use | Distribution Requirement |
 | ------------ | -------- | ------------ | -------------- | ------------------------ |
-| MIT | No | No | Yes | Include license |
-| Apache 2.0 | No | Yes | Yes | Include license, notice |
-| GPL v3 | Yes | No | Yes | Source code disclosure |
-| BSD 2-Clause | No | No | Yes | Include license |
-| Unlicense | No | No | Yes | None |
+| MIT          | No       | No           | Yes            | Include license          |
+| Apache 2.0   | No       | Yes          | Yes            | Include license, notice  |
+| GPL v3       | Yes      | No           | Yes            | Source code disclosure   |
+| BSD 2-Clause | No       | No           | Yes            | Include license          |
+| Unlicense    | No       | No           | Yes            | None                     |
 
 ### CLA vs. DCO
 
@@ -274,9 +277,9 @@ Some projects require a Contributor License Agreement (CLA) or a Developer Certi
 (DCO):
 
 - **CLA:** A legal agreement where you grant the project a license to your contributions. Some
- projects (Apache, Google) require this. It is a one-time web form.
+  projects (Apache, Google) require this. It is a one-time web form.
 - **DCO:** A lightweight alternative where you certify that your contribution is your own work (or
- you have the right to submit it) by adding a `Signed-off-by:` line to your commit message.
+  you have the right to submit it) by adding a `Signed-off-by:` line to your commit message.
 
 ```bash
 # DCO sign-off
@@ -297,18 +300,18 @@ git commit -s -m "Fix memory leak in parser"
 ### Release Management
 
 - **Semantic Versioning (SemVer):** `MAJOR.MINOR.PATCH` (e.g., `2.1.0`). MAJOR for breaking changes,
- MINOR for new features, PATCH for bug fixes.
+  MINOR for new features, PATCH for bug fixes.
 - **Changelog:** Maintain a CHANGELOG.md documenting all changes per release.
 - **Release notes:** Write a summary of the release highlighting key changes.
 - **Tag releases:** `git tag -a v2.1.0 -m "Release v2.1.0"`.
 
 ### Semantic Versioning
 
-| Change Type | Version Bump | Example |
+| Change Type                       | Version Bump | Example        |
 | --------------------------------- | ------------ | -------------- |
-| Breaking API change | MAJOR | 1.x.x to 2.0.0 |
-| New feature (backward compatible) | MINOR | 1.0.x to 1.1.0 |
-| Bug fix (backward compatible) | PATCH | 1.0.0 to 1.0.1 |
+| Breaking API change               | MAJOR        | 1.x.x to 2.0.0 |
+| New feature (backward compatible) | MINOR        | 1.0.x to 1.1.0 |
+| Bug fix (backward compatible)     | PATCH        | 1.0.0 to 1.0.1 |
 
 ---
 
@@ -317,15 +320,15 @@ git commit -s -m "Fix memory leak in parser"
 ### Strategies
 
 1. **Contribute to projects you use daily.** Your contributions will be motivated by real needs and
- your expertise in the domain will show.
+   your expertise in the domain will show.
 2. **Start with documentation and tests.** These are high-impact, low-barrier contributions that
- demonstrate attention to detail.
+   demonstrate attention to detail.
 3. **Fix real bugs.** Look at the issue tracker and find bugs you can reproduce. A bug fix PR is
- concrete evidence of debugging skill.
+   concrete evidence of debugging skill.
 4. **Build a tool.** If no tool exists for a problem you face, build it and open-source it. Even a
- small utility demonstrates initiative and problem-solving ability.
+   small utility demonstrates initiative and problem-solving ability.
 5. **Maintain your contributions.** Consistent contributions over time are more impressive than a
- single large contribution.
+   single large contribution.
 
 ### What Employers Look For
 
@@ -333,20 +336,20 @@ git commit -s -m "Fix memory leak in parser"
 - **Diverse contributions.** Bug fixes, features, documentation, and reviews show breadth.
 - **Communication skills.** How you interact in issues and PR discussions matters.
 - **Domain expertise.** Contributions to Linux, ZFS, or Kubernetes demonstrate systems engineering
- depth.
+  depth.
 
 ---
 
 ## Popular Communities
 
-| Platform | Focus | Notable Projects |
+| Platform                   | Focus                      | Notable Projects                       |
 | -------------------------- | -------------------------- | -------------------------------------- |
-| GitHub | General | Most major open source projects |
-| GitLab | DevOps, self-hosted | GitLab itself, many community projects |
-| Codeberg | Privacy-focused, Fediverse | Forgejo, Mastodon |
-| Apache Software Foundation | Enterprise software | Kafka, Spark, Lucene |
-| CNCF | Cloud native | Kubernetes, Prometheus, Envoy |
-| Linux Foundation | Infrastructure | Linux kernel, Node.js, PyTorch |
+| GitHub                     | General                    | Most major open source projects        |
+| GitLab                     | DevOps, self-hosted        | GitLab itself, many community projects |
+| Codeberg                   | Privacy-focused, Fediverse | Forgejo, Mastodon                      |
+| Apache Software Foundation | Enterprise software        | Kafka, Spark, Lucene                   |
+| CNCF                       | Cloud native               | Kubernetes, Prometheus, Envoy          |
+| Linux Foundation           | Infrastructure             | Linux kernel, Node.js, PyTorch         |
 
 ---
 
@@ -389,12 +392,12 @@ Important as the code itself. Contribute to at least one project you do not cont
 Before contributing, evaluate the project's health:
 
 1. **Release cadence:** Is the project actively maintained? Check the GitHub "Insights" tab for
- commit frequency and release history.
+   commit frequency and release history.
 2. **Issue responsiveness:** Are issues triaged and responded to within a reasonable time? Check the
- oldest open issues.
+   oldest open issues.
 3. **PR merge rate:** Are pull requests reviewed and merged? Check the "Pull Requests" tab.
 4. **Contributor diversity:** Does the project have multiple active contributors, or is it a
- one-person project?
+   one-person project?
 5. **Test coverage:** Does the project have automated tests? Check for CI/CD configuration.
 6. **Documentation quality:** Is the documentation up-to-date and comprehensive?
 
@@ -569,7 +572,7 @@ Reading other people's code is one of the most effective ways to improve as a de
 Trust is built incrementally:
 
 1. **First 5 PRs:** Small, well-scoped changes (typo fixes, documentation). Demonstrate that you
- follow the project's conventions.
+   follow the project's conventions.
 2. **Next 10 PRs:** Bug fixes and small features. Show you can work independently.
 3. **Next 10 PRs:** Larger features and architectural improvements. Show design thinking.
 4. **Ongoing:** Code reviews, mentoring, triage, release management. Become a maintainer.
@@ -618,14 +621,14 @@ Dependency management. Understanding the trade-offs helps you navigate different
 
 ### Monorepo Characteristics
 
-| Aspect | Monorepo | Polyrepo |
+| Aspect                | Monorepo                                 | Polyrepo                               |
 | --------------------- | ---------------------------------------- | -------------------------------------- |
-| Examples | Google, Meta, Babel, React | Linux kernel, most npm packages |
-| Dependency management | Shared in-tree, always up to date | Versioned separately, can drift |
-| CI/CD | Complex (needs change detection) | Simple per-repo pipelines |
-| Code reuse | Trivial (same repo) | Requires published packages |
-| Onboarding | Larger clone, but single source of truth | Smaller clones, but more repos to find |
-| Branching model | Feature branches across all packages | Independent per-package branches |
+| Examples              | Google, Meta, Babel, React               | Linux kernel, most npm packages        |
+| Dependency management | Shared in-tree, always up to date        | Versioned separately, can drift        |
+| CI/CD                 | Complex (needs change detection)         | Simple per-repo pipelines              |
+| Code reuse            | Trivial (same repo)                      | Requires published packages            |
+| Onboarding            | Larger clone, but single source of truth | Smaller clones, but more repos to find |
+| Branching model       | Feature branches across all packages     | Independent per-package branches       |
 
 ### Build Systems for Monorepos
 
@@ -657,9 +660,9 @@ cc_binary(
 ### When to Choose Which
 
 - **Monorepo** when: packages are tightly coupled, you want atomic commits across packages, the team
- is small enough to manage repo complexity.
+  is small enough to manage repo complexity.
 - **Polyrepo** when: packages are independently versioned and released, different teams own
- different packages, you want minimal CI/CD coupling.
+  different packages, you want minimal CI/CD coupling.
 
 ## Testing Infrastructure for Open Source
 
@@ -724,42 +727,42 @@ jobs:
 
 ### Test Categories for Systems Software
 
-| Test Type | Scope | Tools | Examples |
+| Test Type        | Scope                         | Tools                          | Examples                                  |
 | ---------------- | ----------------------------- | ------------------------------ | ----------------------------------------- |
-| Unit | Single function/module | pytest, jest, go test | Testing a hash function |
-| Integration | Multiple components | docker-compose, testcontainers | API + database interaction |
-| Contract | API compatibility | Pact, OpenAPI validation | Ensuring API changes do not break clients |
-| Property-based | Input space exploration | QuickCheck, Hypothesis | Verifying sort is idempotent |
-| Fuzzing | Security and crash resistance | libFuzzer, AFL | Finding buffer overflows |
-| Load/Performance | Under stress | k6, wrk, locust | Verifying latency under 10k RPS |
+| Unit             | Single function/module        | pytest, jest, go test          | Testing a hash function                   |
+| Integration      | Multiple components           | docker-compose, testcontainers | API + database interaction                |
+| Contract         | API compatibility             | Pact, OpenAPI validation       | Ensuring API changes do not break clients |
+| Property-based   | Input space exploration       | QuickCheck, Hypothesis         | Verifying sort is idempotent              |
+| Fuzzing          | Security and crash resistance | libFuzzer, AFL                 | Finding buffer overflows                  |
+| Load/Performance | Under stress                  | k6, wrk, locust                | Verifying latency under 10k RPS           |
 
 ## License Compatibility Matrix
 
 When contributing to open source, understanding license compatibility prevents legal issues for both
 You and the project. The most common licenses in systems software:
 
-| License | Commercial Use | Modify | Distribute | Patent Grant | Copyleft |
+| License        | Commercial Use | Modify | Distribute               | Patent Grant | Copyleft     |
 | -------------- | -------------- | ------ | ------------------------ | ------------ | ------------ |
-| MIT | Yes | Yes | Yes | No | No |
-| Apache 2.0 | Yes | Yes | Yes | Yes | No |
-| BSD 2/3-Clause | Yes | Yes | Yes | No | No |
-| GPL 2.0 | Yes | Yes | Yes (source required) | No | Strong |
-| GPL 3.0 | Yes | Yes | Yes (source required) | Yes | Strong |
-| LGPL | Yes | Yes | Yes (dynamic linking ok) | No | Weak |
-| AGPL 3.0 | Yes | Yes | Yes (network use counts) | Yes | Network |
-| BSL 1.1 | Varies | Varies | Varies | Yes | No (delayed) |
-| Unlicense | Yes | Yes | Yes | No | No |
+| MIT            | Yes            | Yes    | Yes                      | No           | No           |
+| Apache 2.0     | Yes            | Yes    | Yes                      | Yes          | No           |
+| BSD 2/3-Clause | Yes            | Yes    | Yes                      | No           | No           |
+| GPL 2.0        | Yes            | Yes    | Yes (source required)    | No           | Strong       |
+| GPL 3.0        | Yes            | Yes    | Yes (source required)    | Yes          | Strong       |
+| LGPL           | Yes            | Yes    | Yes (dynamic linking ok) | No           | Weak         |
+| AGPL 3.0       | Yes            | Yes    | Yes (network use counts) | Yes          | Network      |
+| BSL 1.1        | Varies         | Varies | Varies                   | Yes          | No (delayed) |
+| Unlicense      | Yes            | Yes    | Yes                      | No           | No           |
 
 ### Key Compatibility Rules
 
 1. **MIT/Apache/BSD code can be included in GPL projects.** The GPL project must honor the original
- license for those specific files, but the overall project remains GPL.
+   license for those specific files, but the overall project remains GPL.
 2. **GPL code cannot be included in MIT/Apache projects.** This would violate the GPL's copyleft
- requirement because the MIT project does not require source distribution.
+   requirement because the MIT project does not require source distribution.
 3. **Apache 2.0 and GPL 3.0 are compatible** (Apache 2.0 has an explicit GPL 3.0 compatibility
- clause). Apache 2.0 and GPL 2.0 are not compatible due to patent clause differences.
+   clause). Apache 2.0 and GPL 2.0 are not compatible due to patent clause differences.
 4. **When in doubt, ask the project maintainer.** Most maintainers are happy to clarify their
- licensing intentions.
+   licensing intentions.
 
 ## Maintainer Responsibilities
 
@@ -771,13 +774,13 @@ Enabling others to write code. This is a significant mindset change.
 A maintainer's primary responsibilities, in rough order of time spent:
 
 1. **Reviewing pull requests:** The single most time-consuming activity. Good reviews are thorough
- but constructive.
+   but constructive.
 2. **Triaging issues:** Categorizing, reproducing, and prioritizing bug reports.
 3. **Project planning:** Defining the roadmap, setting milestones, and making design decisions.
 4. **Writing documentation:** Keeping docs current as the codebase evolves.
 5. **Writing code:** Maintainers still write code, but it becomes a smaller fraction of their time.
 6. **Community management:** Welcoming new contributors, enforcing the code of conduct, handling
- disputes.
+   disputes.
 7. **Release management:** Tagging releases, writing changelogs, managing semantic versioning.
 
 ### Release Management
@@ -810,14 +813,14 @@ Procrastinating on reviews, and feeling resentment toward contributors.
 
 **Mitigation strategies:**
 
-- **Set expectations :** Document response time expectations (e.g., "PRs are reviewed within
- 7 days"). This reduces contributor anxiety and your guilt.
+- **Set expectations :** Document response time expectations (e.g., "PRs are reviewed within 7
+  days"). This reduces contributor anxiety and your guilt.
 - **Rotate maintainers:** If possible, share maintainer duties with others. A bus factor of 1 is a
- project risk, not a badge of honor.
+  project risk, not a badge of honor.
 - **Use a CONTRIBUTING.md:** A well-written contribution guide answers 80% of newcomer questions and
- reduces maintainer overhead.
+  reduces maintainer overhead.
 - **Take breaks:** It is acceptable to announce "I will be away for 2 weeks" and close issues with a
- polite note.
+  polite note.
 
 ## Popular Open Source Communities
 
@@ -826,16 +829,16 @@ Culture, responsiveness, and newcomer friendliness.
 
 ### Community Comparison
 
-| Community | Primary Language | Culture | Newcomer Friendliness |
+| Community         | Primary Language | Culture                        | Newcomer Friendliness                         |
 | ----------------- | ---------------- | ------------------------------ | --------------------------------------------- |
-| Kubernetes (CNCF) | Go | Formal, governance-heavy | Good docs, steep learning curve |
-| Rust | Rust | Welcoming, thorough review | Excellent, many "good first issue" |
-| Python | Python | Pragmatic, diverse | Very welcoming, clear contribution guide |
-| Arch Linux | C, Shell | Technical, opinionated | Good wiki, IRC/Matrix support |
-| NixOS | Nix | Academic, thorough | Growing, helpful Matrix community |
-| Linux Kernel | C | Meritocratic, strict | Challenging, requires patch submission |
-| PostgreSQL | C | Professional, consensus-driven | Good contribution guide, mailing list culture |
-| Home Assistant | Python | Community-focused | Very welcoming, active Discord |
+| Kubernetes (CNCF) | Go               | Formal, governance-heavy       | Good docs, steep learning curve               |
+| Rust              | Rust             | Welcoming, thorough review     | Excellent, many "good first issue"            |
+| Python            | Python           | Pragmatic, diverse             | Very welcoming, clear contribution guide      |
+| Arch Linux        | C, Shell         | Technical, opinionated         | Good wiki, IRC/Matrix support                 |
+| NixOS             | Nix              | Academic, thorough             | Growing, helpful Matrix community             |
+| Linux Kernel      | C                | Meritocratic, strict           | Challenging, requires patch submission        |
+| PostgreSQL        | C                | Professional, consensus-driven | Good contribution guide, mailing list culture |
+| Home Assistant    | Python           | Community-focused              | Very welcoming, active Discord                |
 
 ### Finding Your Niche
 
@@ -856,24 +859,24 @@ gh api search/repositories -q '.items[].full_name' --method GET \
 ### Giving Reviews
 
 - **Review the code, not the person.** Never say "you made a mistake." Say "this function has a
- potential issue" or "consider an alternative approach here."
+  potential issue" or "consider an alternative approach here."
 - **Distinguish blocking from non-blocking comments.** Use `nit:` or `suggestion:` prefixes for
- non-blocking feedback.
+  non-blocking feedback.
 - **Explain why, not just what.** "This should use `const`" is less helpful than "This should use
- `const` because the value is never reassigned, making the intent clearer."
+  `const` because the value is never reassigned, making the intent clearer."
 - **Acknowledge good work.** "This is a clean implementation of the algorithm" goes a long way
- toward making reviews feel collaborative rather than adversarial.
+  toward making reviews feel collaborative rather than adversarial.
 - **Keep reviews small.** PRs over 400 lines of changes are hard to review thoroughly. If a PR is
- too large, ask for it to be split.
+  too large, ask for it to be split.
 
 ### Receiving Reviews
 
 - **Do not take it personally.** A review of your code is not a review of your competence.
 - **Ask for clarification.** If a review comment is unclear, ask. Do not guess at the intent.
 - **Push back respectfully.** If you disagree with a suggestion, explain your reasoning. Maintainers
- are not always right.
+  are not always right.
 - **Separate concerns.** If a review introduces scope creep, suggest addressing it in a follow-up
- PR.
+  PR.
 
 ### Example Review Comments
 

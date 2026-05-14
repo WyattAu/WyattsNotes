@@ -1,9 +1,12 @@
 ---
 id: inheritance-polymorphism
 title: Inheritance and Polymorphism
-description: "Inheritance and Polymorphism — Inheritance; The `extends` Keyword; Method Overriding with `@Override`; The `super` Keyword."
+description:
+  'Inheritance and Polymorphism — Inheritance; The `extends` Keyword; Method Overriding with
+  `@Override`; The `super` Keyword.'
 slug: inheritance-polymorphism
 ---
+
 ## Inheritance
 
 Inheritance allows a class (subclass) to extend another class (superclass), acquiring its fields and
@@ -69,10 +72,9 @@ public class Dog extends Animal {
 
 - The method must have the same name, return type, and parameter list.
 - The access level cannot be more restrictive (can widen, not narrow).
-- Cannot override `static``final`Or `private` methods (static methods are hidden, not
- overridden).
+- Cannot override `static``final`Or `private` methods (static methods are hidden, not overridden).
 - Cannot throw checked exceptions that are broader than the superclass method's exceptions (can
- narrow, not widen).
+  narrow, not widen).
 
 ### The `super` Keyword
 
@@ -151,12 +153,12 @@ new B();
 
 ## Access Modifiers
 
-| Modifier | Class | Package | Subclass | World |
+| Modifier          | Class | Package | Subclass | World |
 | ----------------- | ----- | ------- | -------- | ----- |
-| `public` | Yes | Yes | Yes | Yes |
-| `protected` | Yes | Yes | Yes | No |
-| (package-private) | Yes | Yes | No | No |
-| `private` | Yes | No | No | No |
+| `public`          | Yes   | Yes     | Yes      | Yes   |
+| `protected`       | Yes   | Yes     | Yes      | No    |
+| (package-private) | Yes   | Yes     | No       | No    |
+| `private`         | Yes   | No      | No       | No    |
 
 ### Package-Private (Default Access)
 
@@ -318,7 +320,7 @@ Use abstract classes when:
 - You want to share code among closely related classes (common fields, utility methods).
 - You need to declare fields that subclasses will use.
 - You want to use the template method pattern (base class defines the algorithm skeleton, subclasses
- fill in steps).
+  fill in steps).
 - You need to control access to state (fields can be `private`).
 
 Abstract classes provide "is-a" semantics with shared implementation. Interfaces provide "can-do"
@@ -375,15 +377,15 @@ int len = lengthExtractor.transform("hello"); // 5
 
 Built-in functional interfaces in `java.util.function`:
 
-| Interface | Abstract Method | Signature |
+| Interface                 | Abstract Method   | Signature       |
 | ------------------------- | ----------------- | --------------- |
-| `Predicate&lt;T&gt;` | `boolean test(T)` | T -&gt; boolean |
-| `Function&lt;T,R&gt;` | `R apply(T)` | T -&gt; R |
-| `Consumer&lt;T&gt;` | `void accept(T)` | T -&gt; void |
-| `Supplier&lt;T&gt;` | `T get()` | () -&gt; T |
-| `UnaryOperator&lt;T&gt;` | `T apply(T)` | T -&gt; T |
-| `BinaryOperator&lt;T&gt;` | `T apply(T, T)` | (T,T) -&gt; T |
-| `BiFunction&lt;T,U,R&gt;` | `R apply(T, U)` | (T,U) -&gt; R |
+| `Predicate&lt;T&gt;`      | `boolean test(T)` | T -&gt; boolean |
+| `Function&lt;T,R&gt;`     | `R apply(T)`      | T -&gt; R       |
+| `Consumer&lt;T&gt;`       | `void accept(T)`  | T -&gt; void    |
+| `Supplier&lt;T&gt;`       | `T get()`         | () -&gt; T      |
+| `UnaryOperator&lt;T&gt;`  | `T apply(T)`      | T -&gt; T       |
+| `BinaryOperator&lt;T&gt;` | `T apply(T, T)`   | (T,T) -&gt; T   |
+| `BiFunction&lt;T,U,R&gt;` | `R apply(T, U)`   | (T,U) -&gt; R   |
 
 ### Multiple Inheritance of Interfaces
 
@@ -492,21 +494,19 @@ void resize(Rectangle r, int w, int h) {
 }
 ```
 
-:::info
-The classic Rectangle/Square example demonstrates that behavioral subtyping is stricter than
+:::info The classic Rectangle/Square example demonstrates that behavioral subtyping is stricter than
 Structural subtyping. Just because a class can be made to extend another does not mean it should. If
-A subclass must violate the superclass's contract to work correctly, use composition instead.
-:::
+A subclass must violate the superclass's contract to work correctly, use composition instead. :::
 
 ## SOLID Principles Overview
 
-| Principle | Guideline |
+| Principle                     | Guideline                                                           |
 | ----------------------------- | ------------------------------------------------------------------- |
-| **S** — Single Responsibility | A class should have only one reason to change. |
-| **O** — Open/Closed | Open for extension, closed for modification. |
-| **L** — Liskov Substitution | Subtypes must be substitutable for their base types. |
+| **S** — Single Responsibility | A class should have only one reason to change.                      |
+| **O** — Open/Closed           | Open for extension, closed for modification.                        |
+| **L** — Liskov Substitution   | Subtypes must be substitutable for their base types.                |
 | **I** — Interface Segregation | Prefer many specific interfaces over one general-purpose interface. |
-| **D** — Dependency Inversion | Depend on abstractions, not concretions. |
+| **D** — Dependency Inversion  | Depend on abstractions, not concretions.                            |
 
 ### Single Responsibility Example
 
@@ -625,7 +625,7 @@ public String describe(Object obj) {
 
 - Case labels are matched top-to-bottom. More specific patterns must come before more general ones.
 - The `null` case must come first (or be handled with a nullable pattern `case String s` which
- matches non-null strings).
+  matches non-null strings).
 - A `default` case is required if the switch expression does not cover all possible values.
 - Guards (`when` clauses) refine pattern matching with boolean conditions.
 
@@ -681,10 +681,10 @@ public non-sealed class Multiply extends Expr {
 **Permitted subclass rules:**
 
 - The permitted subclasses must be in the same module (if the sealed class is in a named module) or
- the same package (if in the unnamed module).
+  the same package (if in the unnamed module).
 - Permitted subclasses must use one of: `final``sealed`Or `non-sealed`.
 - The sealed class and its permitted subclasses must co-compile (or be in the same compilation
- unit).
+  unit).
 
 ## Record Patterns
 
@@ -732,11 +732,9 @@ if (r instanceof Rectangle(
 }
 ```
 
-:::info
-Record patterns work with any record class. The pattern variables are inferred from the
+:::info Record patterns work with any record class. The pattern variables are inferred from the
 Record components. You can use `var` for type inference or specify the exact type. The number of
-Pattern components must match the number of record components.
-:::
+Pattern components must match the number of record components. :::
 
 ## Common Pitfalls
 
@@ -794,12 +792,10 @@ public class Derived extends Base {
 new Derived(); // throws NullPointerException
 ```
 
-:::warning
-Never call an overridable method from a constructor. The subclass constructor has not yet
+:::warning Never call an overridable method from a constructor. The subclass constructor has not yet
 Run, so its fields are uninitialized. If the overridden method accesses subclass fields, you get
 `NullPointerException` or incorrect behavior. Mark the method `final` or `private` if you must call
-It from a constructor.
-:::
+It from a constructor. :::
 
 ### `instanceof` and `null`
 

@@ -1,6 +1,8 @@
 ---
 title: Stackless Coroutine Frames and Heap Allocation
-description: "C++: Stackless Coroutine Frames and Heap Allocation — Coroutines as Suspendable Functions; Stackless vs Stackful Coroutines; Coroutine Frame Layout."
+description:
+  'C++: Stackless Coroutine Frames and Heap Allocation — Coroutines as Suspendable Functions;
+  Stackless vs Stackful Coroutines; Coroutine Frame Layout.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -8,6 +10,7 @@ categories:
   - Cpp
 slug: stackless-coroutine-frames-heap-allocation
 ---
+
 # Stackless Coroutine Frames and Heap Allocation
 
 This section covers coroutines as suspendable functions, the stackless vs stackful design trade-off,
@@ -23,7 +26,7 @@ C++20 coroutine mechanism is defined in terms of three keywords:
 
 - `co_await`: suspend execution until an awaitable completes [N4950 §9.5.4].
 - `co_yield`: suspend execution while producing a value (syntactic sugar for `co_await` on the
- promise's `yield_value`).
+  promise's `yield_value`).
 - `co_return`: complete the coroutine and return a value.
 
 Any function body containing one of these keywords is a **coroutine** [N4950 §9.5.2]. The compiler
@@ -87,31 +90,29 @@ resumed
 step 3
 ```
 
-:::info
-The function `my_coroutine` is a coroutine because its body contains `co_await`. The
+:::info The function `my_coroutine` is a coroutine because its body contains `co_await`. The
 Compiler generates a `promise_type` lookup, allocates a coroutine frame, and transforms the function
 Body into a state machine. The `promise_type` member alias tells the compiler which promise type to
-Use [N4950 §9.5.2].
-:::
+Use [N4950 §9.5.2]. :::
 
 ## Stackless vs Stackful Coroutines
 
 C++ chose **stackless coroutines** — the coroutine frame is a single heap-allocated block, not a
 Separate stack. This is a deliberate design decision with important trade-offs.
 
-| Property | Stackless (C++) | Stackful (e.g., Boost.Context, goroutines) |
+| Property                     | Stackless (C++)                                 | Stackful (e.g., Boost.Context, goroutines)         |
 | :--------------------------- | :---------------------------------------------- | :------------------------------------------------- |
-| Frame size | Fixed at compile time (known locals) | Dynamic (grows/shrinks like a regular stack) |
-| Memory per coroutine | $\mathcal{'\{'}O{'\}'}(1)$ — hundreds of bytes | $\mathcal{'\{'}O{'\}'}(n)$ — megabytes reserved |
-| Allocation | Single heap allocation | Separate stack allocation |
-| Suspend inside callee | No — only at explicit `co_await` points | Yes — any function call can be a suspend point |
-| Implementation cost | Compiler transforms function into state machine | Context switching (save/restore registers + stack) |
-| Migrating between OS threads | Must resume on same or specified thread | Can freely migrate (stack is self-contained) |
-| Composability | Requires explicit chaining of coroutines | composable via call stack |
+| Frame size                   | Fixed at compile time (known locals)            | Dynamic (grows/shrinks like a regular stack)       |
+| Memory per coroutine         | $\mathcal{'\{'}O{'\}'}(1)$ — hundreds of bytes  | $\mathcal{'\{'}O{'\}'}(n)$ — megabytes reserved    |
+| Allocation                   | Single heap allocation                          | Separate stack allocation                          |
+| Suspend inside callee        | No — only at explicit `co_await` points         | Yes — any function call can be a suspend point     |
+| Implementation cost          | Compiler transforms function into state machine | Context switching (save/restore registers + stack) |
+| Migrating between OS threads | Must resume on same or specified thread         | Can freely migrate (stack is self-contained)       |
+| Composability                | Requires explicit chaining of coroutines        | composable via call stack                          |
 
 The key limitation of stackless coroutines is that **you cannot suspend in a function called by the
-Coroutine unless that function is itself a coroutine**. If a regular function calls `co_await`It
-Is a compile error — `co_await` can only appear in a coroutine body [N4950 §9.5.4].
+Coroutine unless that function is itself a coroutine**. If a regular function calls `co_await`It Is
+a compile error — `co_await` can only appear in a coroutine body [N4950 §9.5.4].
 
 ```cpp
 #include <coroutine>
@@ -314,18 +315,16 @@ There are two guaranteed elision scenarios where the compiler **may not** alloca
 [N4950 §9.5.4]:
 
 1. **Guaranteed elision when the coroutine is in the final suspend point and the return object holds
- the coroutine handle.** If `final_suspend` returns `std::suspend_never`The compiler may destroy
- the frame immediately upon return.
+   the coroutine handle.** If `final_suspend` returns `std::suspend_never`The compiler may destroy
+   the frame immediately upon return.
 
 2. **When the coroutine result is prvalue and the promise's `get_return_object` returns a handle
- that does not escape.**
+   that does not escape.**
 
-:::warning
-The standard does not require that the compiler actually perform elision — it only
+:::warning The standard does not require that the compiler actually perform elision — it only
 _permits_ it. In practice, most major compilers (GCC 12+, Clang 16+, MSVC 19.30+) do elide the
 Allocation in simple cases, but for complex promise types or when the handle escapes, heap
-Allocation occurs. Always profile if allocation overhead is a concern.
-:::
+Allocation occurs. Always profile if allocation overhead is a concern. :::
 
 ### Heap Allocation Elision (HALO)
 
@@ -495,27 +494,27 @@ struct Pooled {
 
 ## `std::coroutine_handle<P>` for Manual Lifetime Management
 
-`std::coroutine_handle<P>` [N4950 §21.4.4] is a lightweight, copyable, -destructible handle
-To a coroutine frame. It does **not** own the frame — it is a non-owning observer. The programmer is
+`std::coroutine_handle<P>` [N4950 §21.4.4] is a lightweight, copyable, -destructible handle To a
+coroutine frame. It does **not** own the frame — it is a non-owning observer. The programmer is
 Responsible for calling `destroy()` when the coroutine is no longer needed.
 
 Key members of `std::coroutine_handle<P>` [N4950 §21.4.4]:
 
-| Member | Description |
+| Member                   | Description                                               |
 | :----------------------- | :-------------------------------------------------------- |
-| `handle.done()` | Returns `true` if the coroutine reached its final suspend |
-| `handle.resume()` | Resumes a suspended coroutine |
-| `handle.destroy()` | Destroys the coroutine frame and calls all destructors |
-| `handle.promise()` | Returns a reference to the promise object |
-| `handle.from_promise(p)` | Constructs a handle from a promise reference |
-| `coroutine_handle<>()` | Default-constructed handle (null) |
-| `handle.operator bool()` | `true` if the handle refers to a coroutine frame |
+| `handle.done()`          | Returns `true` if the coroutine reached its final suspend |
+| `handle.resume()`        | Resumes a suspended coroutine                             |
+| `handle.destroy()`       | Destroys the coroutine frame and calls all destructors    |
+| `handle.promise()`       | Returns a reference to the promise object                 |
+| `handle.from_promise(p)` | Constructs a handle from a promise reference              |
+| `coroutine_handle<>()`   | Default-constructed handle (null)                         |
+| `handle.operator bool()` | `true` if the handle refers to a coroutine frame          |
 
 ### Handle Nullability and Validity
 
 A default-constructed `coroutine_handle` is a **null handle** — it does not refer to any frame. The
-Following operations are undefined on a null handle: `resume()``destroy()``promise()`And
-`done()`. Always check `operator bool()` before calling these.
+Following operations are undefined on a null handle: `resume()``destroy()``promise()`And `done()`.
+Always check `operator bool()` before calling these.
 
 A handle becomes **invalid** after `destroy()` is called. Using an invalid handle is undefined
 Behavior [N4950 §21.4.4].
@@ -528,14 +527,12 @@ Calling `destroy()` on a handle triggers:
 2. Destruction of the promise object.
 3. Deallocation of the frame memory (via the matching `operator delete`).
 
-After `destroy()`The handle becomes **invalid** — using it is undefined behavior [N4950 §21.4.4].
-If `destroy()` is never called and no other mechanism cleans up, the frame leaks.
+After `destroy()`The handle becomes **invalid** — using it is undefined behavior [N4950 §21.4.4]. If
+`destroy()` is never called and no other mechanism cleans up, the frame leaks.
 
-:::tip
-RAII wrappers In production code, wrap `std::coroutine_handle` in an RAII type (e.g.,
+:::tip RAII wrappers In production code, wrap `std::coroutine_handle` in an RAII type (e.g.,
 `std::unique_ptr` with a custom deleter, or a dedicated `coroutine` class) to ensure `destroy()` is
-Called even if an exception propagates.
-:::
+Called even if an exception propagates. :::
 
 ## Complete Example: Handle Lifecycle Management
 
@@ -644,17 +641,18 @@ Coroutine-to-coroutine chaining prevents unbounded stack growth.
 **Proof:**
 
 1. Consider a chain of $n$ coroutines: $C_1 \to C_2 \to \ldots \to C_n$Where each coroutine
- `co_await`S the next.
+   `co_await`S the next.
 2. **Without symmetric transfer:** When $C_1$ `co_await`S $C_2$The `await_suspend` of $C_2$ calls
- `C_1.resume()` inside $C_2$'s suspension handler. This is a regular function call, which grows
- the call stack by one frame. For $n$ coroutines, the stack grows by $\mathcal{'\{'}O{'\}'}(n)$ frames. For
- unbounded $n$This causes stack overflow.
+   `C_1.resume()` inside $C_2$'s suspension handler. This is a regular function call, which grows
+   the call stack by one frame. For $n$ coroutines, the stack grows by $\mathcal{'\{'}O{'\}'}(n)$
+   frames. For unbounded $n$This causes stack overflow.
 3. **With symmetric transfer:** When $C_1$ `co_await`S $C_2$`await_suspend` returns the handle of
- $C_2$. The compiler generates a tail call from $C_1$'s resume trampoline to $C_2$'s resume
- trampoline. A tail call reuses the current stack frame, so the stack depth is $\mathcal{'\{'}O{'\}'}(1)$.
+   $C_2$. The compiler generates a tail call from $C_1$'s resume trampoline to $C_2$'s resume
+   trampoline. A tail call reuses the current stack frame, so the stack depth is
+   $\mathcal{'\{'}O{'\}'}(1)$.
 4. The C++ standard guarantees [N4950 §9.5.4] that when `await_suspend` returns a
- `coroutine_handle`The resumption is performed by returning the handle to the language runtime,
- which then calls `resume()` on it. This is equivalent to a tail call.
+   `coroutine_handle`The resumption is performed by returning the handle to the language runtime,
+   which then calls `resume()` on it. This is equivalent to a tail call.
 5. Therefore, symmetric transfer bounds stack growth to $\mathcal{'\{'}O{'\}'}(1)$.
 
 $\square$
@@ -733,19 +731,19 @@ int main() {
 ## Common Pitfalls
 
 - **Frame leaks:** The most common bug is forgetting to `destroy()` a coroutine handle. If
- `final_suspend` returns `std::suspend_always` and the handle is never destroyed, the frame leaks.
- Always use RAII wrappers.
+  `final_suspend` returns `std::suspend_always` and the handle is never destroyed, the frame leaks.
+  Always use RAII wrappers.
 - **Double destroy:** Calling `destroy()` twice on the same handle is undefined behavior. Set the
- handle to null after `destroy()`.
+  handle to null after `destroy()`.
 - **Resuming a done coroutine:** Calling `resume()` on a coroutine that has reached its final
- suspend point is undefined behavior [N4950 §21.4.4]. Always check `done()` before `resume()`.
+  suspend point is undefined behavior [N4950 §21.4.4]. Always check `done()` before `resume()`.
 - **Frame size surprises:** Coroutines with many local variables or large objects (e.g.,
- `std::array` or containers) can have very large frames. Profile frame sizes with compiler flags
- like `-fcoroutines=split` or by measuring `operator new` sizes.
+  `std::array` or containers) can have very large frames. Profile frame sizes with compiler flags
+  like `-fcoroutines=split` or by measuring `operator new` sizes.
 - `final_suspend` returning `std::suspend_never` when the return type needs to observe the result:
- If the coroutine's return type (e.g., `Task<T>`) reads the result from the promise after the
- coroutine finishes, `final_suspend` must return `std::suspend_always`. Returning
- `std::suspend_never` destroys the frame (and the promise) before the result can be read.
+  If the coroutine's return type (e.g., `Task<T>`) reads the result from the promise after the
+  coroutine finishes, `final_suspend` must return `std::suspend_always`. Returning
+  `std::suspend_never` destroys the frame (and the promise) before the result can be read.
 
 ## See Also
 

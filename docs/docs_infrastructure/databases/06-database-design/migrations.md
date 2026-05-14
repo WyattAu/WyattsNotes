@@ -1,9 +1,12 @@
 ---
 id: migrations
 title: Schema Migrations
-description: "Databases: Schema Migrations — Why Migrations Matter; Migration Tools; Flyway; Naming convention: V{version}__{description}.sql."
+description:
+  'Databases: Schema Migrations — Why Migrations Matter; Migration Tools; Flyway; Naming convention:
+  V{version}__{description}.sql.'
 slug: migrations
 ---
+
 ## Why Migrations Matter
 
 Schema changes in a production database are one of the highest-risk operations you perform. A bad
@@ -179,14 +182,14 @@ npx prisma migrate status
 
 ### Tool Comparison
 
-| Feature | Flyway | Liquibase | golang-migrate | Alembic | Django | Prisma |
+| Feature           | Flyway            | Liquibase            | golang-migrate | Alembic | Django     | Prisma                        |
 | ----------------- | ----------------- | -------------------- | -------------- | ------- | ---------- | ----------------------------- |
-| Languages | SQL, Java, Kotlin | XML, YAML, JSON, SQL | SQL | Python | Python | SQL, TS |
-| Schema diffing | Pro | Pro | No | Auto | Auto | Auto |
-| Rollback support | Yes | Yes | Yes | Yes | Yes | Limited |
-| Transactional DDL | Yes | Yes | Yes | Yes | Yes | Yes |
-| Branching/merge | Paid | Manual | Manual | Manual | Manual | Manual |
-| Database support | Many | Many | Many | Many | Django DBs | Postgres, MySQL, SQLite, etc. |
+| Languages         | SQL, Java, Kotlin | XML, YAML, JSON, SQL | SQL            | Python  | Python     | SQL, TS                       |
+| Schema diffing    | Pro               | Pro                  | No             | Auto    | Auto       | Auto                          |
+| Rollback support  | Yes               | Yes                  | Yes            | Yes     | Yes        | Limited                       |
+| Transactional DDL | Yes               | Yes                  | Yes            | Yes     | Yes        | Yes                           |
+| Branching/merge   | Paid              | Manual               | Manual         | Manual  | Manual     | Manual                        |
+| Database support  | Many              | Many                 | Many           | Many    | Django DBs | Postgres, MySQL, SQLite, etc. |
 
 ## Migration File Naming
 
@@ -204,10 +207,10 @@ V3__create_orders.sql
 20240116100000__create_orders.sql
 ```
 
-| Approach | Pros | Cons |
+| Approach    | Pros                          | Cons                                     |
 | ----------- | ----------------------------- | ---------------------------------------- |
-| Sequential | Simple, easy to read | Conflicts in team development (V3 vs V3) |
-| Timestamped | No conflicts in parallel work | Verbose, ordering may not match intent |
+| Sequential  | Simple, easy to read          | Conflicts in team development (V3 vs V3) |
+| Timestamped | No conflicts in parallel work | Verbose, ordering may not match intent   |
 
 ## Up/Down Migrations (Reversibility)
 
@@ -329,12 +332,12 @@ ALTER TABLE users DROP COLUMN legacy_field;
 
 ### When to Separate
 
-| Concern | Schema Migration | Data Migration |
+| Concern           | Schema Migration                   | Data Migration                 |
 | ----------------- | ---------------------------------- | ------------------------------ |
-| Duration | Milliseconds to seconds | Minutes to hours |
-| Transaction scope | DDL is transactional in PostgreSQL | May need batch processing |
-| Rollback | Reverse DDL | May be impossible or very slow |
-| Tool | Flyway, Liquibase, Alembic | Application code, batch jobs |
+| Duration          | Milliseconds to seconds            | Minutes to hours               |
+| Transaction scope | DDL is transactional in PostgreSQL | May need batch processing      |
+| Rollback          | Reverse DDL                        | May be impossible or very slow |
+| Tool              | Flyway, Liquibase, Alembic         | Application code, batch jobs   |
 
 ### Batched Data Migrations
 

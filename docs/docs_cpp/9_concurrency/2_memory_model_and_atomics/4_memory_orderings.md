@@ -1,6 +1,8 @@
 ---
 title: Memory Orderings
-description: "C++: Memory Orderings — `memory_order` Enum; The Memory Model Hierarchy; Relaxed Ordering; When Relaxed Is Insufficient: The Message Passing Idiom."
+description:
+  'C++: Memory Orderings — `memory_order` Enum; The Memory Model Hierarchy; Relaxed Ordering; When
+  Relaxed Is Insufficient: The Message Passing Idiom.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -8,6 +10,7 @@ categories:
   - Cpp
 slug: memory-orderings
 ---
+
 # Memory Orderings: Relaxed, Acquire/Release, Sequentially Consistent
 
 This section covers the `std::memory_order` enum values, relaxed ordering, acquire/release
@@ -18,14 +21,14 @@ Cross-architecture comparison table, and fence operations.
 
 The `std::memory_order` enum [N4950 §31.7.5] defines six values:
 
-| Value | Constant | Ordering Guarantee |
+| Value                  | Constant               | Ordering Guarantee                            |
 | ---------------------- | ---------------------- | --------------------------------------------- |
-| `memory_order_relaxed` | $\emptyset$ | No ordering |
-| `memory_order_consume` | dependency-ordered | Data dependency on loaded value |
-| `memory_order_acquire` | acquire | No reads/writes after can be reordered before |
-| `memory_order_release` | release | No reads/writes before can be reordered after |
-| `memory_order_acq_rel` | acquire + release | Both acquire and release |
-| `memory_order_seq_cst` | sequential consistency | Total order across all seq_cst operations |
+| `memory_order_relaxed` | $\emptyset$            | No ordering                                   |
+| `memory_order_consume` | dependency-ordered     | Data dependency on loaded value               |
+| `memory_order_acquire` | acquire                | No reads/writes after can be reordered before |
+| `memory_order_release` | release                | No reads/writes before can be reordered after |
+| `memory_order_acq_rel` | acquire + release      | Both acquire and release                      |
+| `memory_order_seq_cst` | sequential consistency | Total order across all seq_cst operations     |
 
 ### The Memory Model Hierarchy
 
@@ -77,11 +80,8 @@ int main() {
 }
 ```
 
-:::tip
-Tip
-Loads and stores compile to plain `mov` instructions. On ARM, `relaxed` loads use `ldar` and stores
-Use `stlr` (or `ldr`/`str` with `relaxed` semantics depending on the ARM version).
-:::
+:::tip Tip Loads and stores compile to plain `mov` instructions. On ARM, `relaxed` loads use `ldar`
+and stores Use `stlr` (or `ldr`/`str` with `relaxed` semantics depending on the ARM version). :::
 
 ### When Relaxed Is Insufficient: The Message Passing Idiom
 
@@ -188,18 +188,15 @@ $\mathrm{S{}$ over all `seq_cst` operations such that:
 
 1. Every `seq_cst` operation in $\mathrm{S{}$ is consistent with the happens-before order.
 2. Every `seq_cst` load reads either the last preceding `seq_cst` store in $\mathrm{S{}$ or a value
- written by a non-`seq_cst` store.
+   written by a non-`seq_cst` store.
 
 $$\forall\, a, b \in \mathrm{seq\_cst ops{}: a \lt_{\mathrm{total{}} b \mathrm{ or {} b \lt_{\mathrm{total{}} a$$
 
 On x86, `seq_cst` stores require a `MFENCE` (or `LOCK XCHG`), and `seq_cst` loads require `LFENCE`
 On some implementations. On ARM, `seq_cst` operations use `dmb ish` barriers.
 
-:::info
-Info
-Specified. This ensures maximum safety but may not be necessary in all cases. For
-Performance-critical code, consider using weaker orderings where appropriate.
-:::
+:::info Info Specified. This ensures maximum safety but may not be necessary in all cases. For
+Performance-critical code, consider using weaker orderings where appropriate. :::
 
 ### The Store Buffering Problem (Why seq_cst Is Needed)
 
@@ -241,8 +238,8 @@ int main() {
 
 With `memory_order_seq_cst`The outcome `r1==0 && r2==0` is impossible because the total order on
 `seq_cst` operations prevents it. The seq_cst total order ensures that either Thread 1's store to
-`x` happens before Thread 2's store to `y`Or vice versa, and in either case, the other thread's
-Load sees the store.
+`x` happens before Thread 2's store to `y`Or vice versa, and in either case, the other thread's Load
+sees the store.
 
 ## Producer-Consumer with Acquire/Release
 
@@ -333,22 +330,20 @@ Multi-core systems.
 
 ## Memory Ordering Comparison Table
 
-| Operation | x86 | ARMv8 | POWER8 | Compiler Barrier Only |
+| Operation       | x86                  | ARMv8            | POWER8                    | Compiler Barrier Only |
 | --------------- | -------------------- | ---------------- | ------------------------- | --------------------- |
-| `relaxed` load | `mov` | `ldar` | `ld` | No |
-| `relaxed` store | `mov` | `stlr` | `st` | No |
-| `acquire` load | `mov` | `ldar` | `ld + sync` | No |
-| `release` store | `mov` | `stlr` | `lwsync + st` | No |
-| `seq_cst` load | `mov` | `ldar` | `ld + sync` | No |
-| `seq_cst` store | `MFENCE` (or `XCHG`) | `stlr + dmb ish` | `lwsync + st + sync` | No |
-| `acq_rel` RMW | `LOCK XADD` | `ldaxr+stlxr` | `sync + ldar + st + sync` | No |
+| `relaxed` load  | `mov`                | `ldar`           | `ld`                      | No                    |
+| `relaxed` store | `mov`                | `stlr`           | `st`                      | No                    |
+| `acquire` load  | `mov`                | `ldar`           | `ld + sync`               | No                    |
+| `release` store | `mov`                | `stlr`           | `lwsync + st`             | No                    |
+| `seq_cst` load  | `mov`                | `ldar`           | `ld + sync`               | No                    |
+| `seq_cst` store | `MFENCE` (or `XCHG`) | `stlr + dmb ish` | `lwsync + st + sync`      | No                    |
+| `acq_rel` RMW   | `LOCK XADD`          | `ldaxr+stlxr`    | `sync + ldar + st + sync` | No                    |
 
-:::tip
-Tip
-Provides those ordering guarantees. The only extra cost is for `seq_cst` stores (which require
-`MFENCE`). On ARM and POWER, acquire and release require explicit barrier instructions, so the
-Performance difference between relaxed and acquire/release is significant on those architectures.
-:::
+:::tip Tip Provides those ordering guarantees. The only extra cost is for `seq_cst` stores (which
+require `MFENCE`). On ARM and POWER, acquire and release require explicit barrier instructions, so
+the Performance difference between relaxed and acquire/release is significant on those
+architectures. :::
 
 ### Hardware Memory Models
 
@@ -384,11 +379,11 @@ Models:
 Operation:
 
 - `std::atomic_thread_fence(std::memory_order_release)`: Prevents preceding memory operations from
- being reordered past the fence.
+  being reordered past the fence.
 - `std::atomic_thread_fence(std::memory_order_acquire)`: Prevents subsequent memory operations from
- being reordered before the fence.
+  being reordered before the fence.
 - `std::atomic_thread_fence(std::memory_order_seq_cst)`: Both acquire and release, plus participates
- in the total seq_cst order.
+  in the total seq_cst order.
 
 `std::atomic_signal_fence` [N4950 §31.7.8] is a lighter-weight fence that prevents reordering
 Between a signal handler and the code interrupted by the signal. It generates only a compiler
@@ -428,11 +423,9 @@ A release fence `F` synchronizes-with an acquire fence `G` if:
 This is more complex than direct acquire/release on atomic operations and is why fences are
 Discouraged in favor of direct memory ordering on atomic loads and stores.
 
-:::info
-Info
-Stores directly, as they are more readable and equally efficient. Fences are primarily useful when
-Interfacing with hardware or when the atomic operation itself is performed by non-standard means.
-:::
+:::info Info Stores directly, as they are more readable and equally efficient. Fences are primarily
+useful when Interfacing with hardware or when the atomic operation itself is performed by
+non-standard means. :::
 
 ## `memory_order_consume`: The Problematic Ordering
 

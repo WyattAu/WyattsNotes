@@ -1,9 +1,12 @@
 ---
 id: cpu-fundamentals
 title: CPU Architecture and Tuning
-description: "CPU Architecture and Tuning — Microarchitecture Overview; Instruction Pipeline; Fetch and Decode; Out-of-Order Execution."
+description:
+  'CPU Architecture and Tuning — Microarchitecture Overview; Instruction Pipeline; Fetch and Decode;
+  Out-of-Order Execution.'
 slug: cpu-fundamentals
 ---
+
 ## Microarchitecture Overview
 
 A modern CPU is a superscalar, out-of-order, speculative execution engine. Understanding these
@@ -17,7 +20,7 @@ P-core) has a pipeline depth of approximately 19 stages; AMD's Zen 4 is roughly 
 Depth is a fundamental trade-off:
 
 - **Deeper pipelines** allow higher clock frequencies (each stage does less work per clock), but
- incur larger penalties on branch mispredictions and pipeline flushes.
+  incur larger penalties on branch mispredictions and pipeline flushes.
 - **Shallower pipelines** have lower clock ceilings but recover from mispredictions faster.
 
 The pipeline stages broadly follow this sequence:
@@ -34,12 +37,12 @@ graph LR
 
 ### Fetch and Decode
 
-The front-end fetches instruction bytes from the L1 instruction cache ( 32 KB, 8-way set
-Associative on Intel, 64 KB on AMD Zen 4). The decoder translates x86 CISC instructions into
-Internal micro-ops ($\mu$Ops). Intel CPUs can decode up to 6 instructions per cycle; AMD Zen 4 can
-Decode up to 6 as well. Instructions that decode to more than one $\mu$Op (complex instructions like
-`ENTER`String operations, or instructions with memory operands using complex addressing modes)
-Consume more decoder bandwidth.
+The front-end fetches instruction bytes from the L1 instruction cache ( 32 KB, 8-way set Associative
+on Intel, 64 KB on AMD Zen 4). The decoder translates x86 CISC instructions into Internal micro-ops
+($\mu$Ops). Intel CPUs can decode up to 6 instructions per cycle; AMD Zen 4 can Decode up to 6 as
+well. Instructions that decode to more than one $\mu$Op (complex instructions like `ENTER`String
+operations, or instructions with memory operands using complex addressing modes) Consume more
+decoder bandwidth.
 
 The micro-op cache (MSB on Intel, OP cache on AMD) caches already-decoded $\mu$Ops, bypassing the
 Legacy decoder entirely. On Intel 12th Gen, the micro-op cache can deliver up to 8 $\mu$Ops per
@@ -55,12 +58,12 @@ Dependencies and resource availability.
 Key components:
 
 - **Reservation Stations:** Hold $\mu$Ops waiting for their operands to become available. When all
- operands are ready, the $\mu$Op is dispatched to an execution port.
+  operands are ready, the $\mu$Op is dispatched to an execution port.
 - **Register Renaming:** Eliminates false dependencies (Write-After-Write, Write-After-Read) by
- mapping architectural registers (e.g., `RAX`) to physical registers. Intel Golden Cove has ~280
- physical integer registers; AMD Zen 4 has 160.
+  mapping architectural registers (e.g., `RAX`) to physical registers. Intel Golden Cove has ~280
+  physical integer registers; AMD Zen 4 has 160.
 - **Reorder Buffer:** Tracks in-flight $\mu$Ops and ensures they retire in program order. Intel
- Golden Cove ROB size is 512 entries; AMD Zen 4 is 416.
+  Golden Cove ROB size is 512 entries; AMD Zen 4 is 416.
 
 The out-of-order window size (determined by ROB size, scheduler entries, and load/store queue depth)
 Directly affects how much instruction-level parallelism the CPU can extract. Larger windows find
@@ -73,11 +76,11 @@ The front-end needs to know which instructions to fetch next. Branch predictors 
 Outcome of conditional branches before they execute.
 
 - **BTB (Branch Target Buffer):** Caches the target addresses of previously seen branches. Intel
- 12th Gen has a ~1.5K-entry L1 BTB and a ~5K-entry L2 BTB.
+  12th Gen has a ~1.5K-entry L1 BTB and a ~5K-entry L2 BTB.
 - **Pattern History:** Uses 2-bit saturating counters (strongly taken, weakly taken, weakly not
- taken, strongly not taken) to track branch behavior.
+  taken, strongly not taken) to track branch behavior.
 - **TAGE (TAgged GEometric):** Used on recent Intel and AMD designs. Combines multiple predictor
- tables with different history lengths to achieve high accuracy.
+  tables with different history lengths to achieve high accuracy.
 
 Branch misprediction penalty is proportional to pipeline depth: on a 19-stage pipeline, a
 Misprediction flushes the pipeline and wastes roughly 15–19 cycles. This is why branch-heavy code
@@ -88,20 +91,20 @@ Can perform significantly worse than expected.
 Modern CPUs have multiple execution ports that can process $\mu$Ops in parallel. Intel Golden Cove
 Has 12 execution ports:
 
-| Ports | Function |
+| Ports | Function                         |
 | ----- | -------------------------------- |
-| 0 | ALU, MUL, DIV, JMP, LEA |
-| 1 | ALU, MUL, fast LEA, shift/rotate |
-| 2 | Load (AGU) |
-| 3 | Load (AGU), simple ALU |
-| 4 | Store address (AGU) |
-| 5 | ALU, branch, fast LEA |
-| 6 | Store data |
-| 7 | ALU, shift/rotate |
-| 8 | ALU, branch |
-| 9 | ALU |
-| 10 | Store address (AGU) |
-| 11 | Load (AGU) |
+| 0     | ALU, MUL, DIV, JMP, LEA          |
+| 1     | ALU, MUL, fast LEA, shift/rotate |
+| 2     | Load (AGU)                       |
+| 3     | Load (AGU), simple ALU           |
+| 4     | Store address (AGU)              |
+| 5     | ALU, branch, fast LEA            |
+| 6     | Store data                       |
+| 7     | ALU, shift/rotate                |
+| 8     | ALU, branch                      |
+| 9     | ALU                              |
+| 10    | Store address (AGU)              |
+| 11    | Load (AGU)                       |
 
 AMD Zen 4 has 10 execution ports with a different allocation. The key takeaway for tuning is that
 Your code (or the compiler's output) must have enough independent $\mu$Ops to fill these ports. If
@@ -116,14 +119,14 @@ Latency gap drives every architectural decision in cache design.
 
 ### Latency Comparison
 
-| Level | Size (Typical) | Latency (Cycles) | Latency (ns at 5 GHz) |
+| Level          | Size (Typical) | Latency (Cycles) | Latency (ns at 5 GHz) |
 | -------------- | -------------- | ---------------- | --------------------- |
-| L1 Data | 32–48 KB | 4–5 | ~1.0 |
-| L1 Instruction | 32–64 KB | 4–5 | ~1.0 |
-| L2 | 1–2 MB | 12–14 | ~2.8 |
-| L3 (Shared) | 16–64 MB | 35–50 | ~8.0 |
-| DRAM (DDR5) | Variable | 200–400+ | ~60–80 |
-| NVMe SSD | Variable | ~10,000 | ~2,000 |
+| L1 Data        | 32–48 KB       | 4–5              | ~1.0                  |
+| L1 Instruction | 32–64 KB       | 4–5              | ~1.0                  |
+| L2             | 1–2 MB         | 12–14            | ~2.8                  |
+| L3 (Shared)    | 16–64 MB       | 35–50            | ~8.0                  |
+| DRAM (DDR5)    | Variable       | 200–400+         | ~60–80                |
+| NVMe SSD       | Variable       | ~10,000          | ~2,000                |
 
 ### Cache Lines and Spatial Locality
 
@@ -142,22 +145,22 @@ Each cache level uses set-associative mapping. An N-way set-associative cache me
 Address can map to N different cache lines within a set. Higher associativity reduces conflict
 Misses but increases lookup latency and power consumption.
 
-| CPU | L1 Data | L2 | L3 |
+| CPU                     | L1 Data      | L2           | L3                 |
 | ----------------------- | ------------ | ------------ | ------------------ |
 | Intel 12th Gen (P-core) | 8-way, 48 KB | 12-way, 2 MB | 16-way (per slice) |
-| AMD Zen 4 | 8-way, 32 KB | 16-way, 1 MB | 16-way (per CCD) |
+| AMD Zen 4               | 8-way, 32 KB | 16-way, 1 MB | 16-way (per CCD)   |
 
 ### MESI Protocol
 
 Multi-core systems use a cache coherence protocol to ensure all cores see consistent data. The MESI
 Protocol defines four states for each cache line:
 
-| State | Meaning |
+| State             | Meaning                                          |
 | ----------------- | ------------------------------------------------ |
-| **M** (Modified) | Line is modified in this cache only; dirty |
-| **E** (Exclusive) | Line is clean and present only in this cache |
-| **S** (Shared) | Line is clean and may be present in other caches |
-| **I** (Invalid) | Line is not valid in this cache |
+| **M** (Modified)  | Line is modified in this cache only; dirty       |
+| **E** (Exclusive) | Line is clean and present only in this cache     |
+| **S** (Shared)    | Line is clean and may be present in other caches |
+| **I** (Invalid)   | Line is not valid in this cache                  |
 
 When Core A modifies a line in Shared state, it must issue a RFO (Read For Ownership) request to
 Invalidate all other copies. This is why false sharing — where unrelated variables share a cache
@@ -177,7 +180,7 @@ Characteristics. This has tuning implications:
 - P-cores have larger L2 caches (2 MB per P-core vs ~0.5 MB per E-core) and higher clock speeds.
 - E-cores are more power-efficient but have lower single-thread performance.
 - On Linux, the `intel_pstate` driver and the scheduler's asym packing support handle this
- automatically. On Windows, Thread Director requires Windows 11.
+  automatically. On Windows, Thread Director requires Windows 11.
 
 ---
 
@@ -186,11 +189,11 @@ Characteristics. This has tuning implications:
 ### Base Clock vs. Boost Clock
 
 - **Base Clock:** The guaranteed minimum frequency all cores can sustain simultaneously at the TDP
- power limit. For a Core i7-13700K, this is 3.4 GHz (P-cores).
+  power limit. For a Core i7-13700K, this is 3.4 GHz (P-cores).
 - **Boost Clock:** The maximum single-core frequency under favorable thermal and power conditions.
- For the same CPU, this is 5.4 GHz.
+  For the same CPU, this is 5.4 GHz.
 - **All-Core Boost:** The maximum frequency all P-cores can sustain simultaneously. This is lower
- than the single-core boost because the TDP/PL2 power envelope must be shared across all cores.
+  than the single-core boost because the TDP/PL2 power envelope must be shared across all cores.
 
 The actual frequency at any given moment depends on:
 
@@ -214,14 +217,14 @@ P-states" or HWP (Hardware P-States) on Intel.
 C-States are idle power-saving states. When a core has no work to do, it can enter progressively
 Deeper C-states:
 
-| State | Description | Exit Latency | Power Savings |
+| State     | Description                      | Exit Latency    | Power Savings |
 | --------- | -------------------------------- | --------------- | ------------- |
-| C0 | Active execution | 0 | None |
-| C1 | Halt, clock gated | ~1 $\mu$S | Minimal |
-| C1E | Enhanced halt, voltage reduced | ~1–2 $\mu$S | Moderate |
-| C3 | Sleep, L1/L2 cache flushed | ~50 $\mu$S | Significant |
-| C6 | Deep power down, core state lost | ~100–200 $\mu$S | Very high |
-| C8/C9/C10 | Package-level idle | ~1–2 ms | Maximum |
+| C0        | Active execution                 | 0               | None          |
+| C1        | Halt, clock gated                | ~1 $\mu$S       | Minimal       |
+| C1E       | Enhanced halt, voltage reduced   | ~1–2 $\mu$S     | Moderate      |
+| C3        | Sleep, L1/L2 cache flushed       | ~50 $\mu$S      | Significant   |
+| C6        | Deep power down, core state lost | ~100–200 $\mu$S | Very high     |
+| C8/C9/C10 | Package-level idle               | ~1–2 ms         | Maximum       |
 
 Deeper C-states save more power but have higher exit latencies. For latency-sensitive workloads
 (e.g., audio processing, real-time trading), you may want to limit C-states to C1 or C1E to avoid
@@ -244,7 +247,7 @@ Workload demand, thermal headroom, and power budget.
 
 HWP is generally faster and more responsive than OS-managed P-states because the CPU can react to
 Workload changes within microseconds rather than milliseconds. On server and desktop workloads, HWP
- matches or exceeds OS-managed P-state performance while using less power.
+matches or exceeds OS-managed P-state performance while using less power.
 
 Enable HWP on Linux:
 
@@ -277,11 +280,11 @@ CPU affinity binds a process or thread to a specific core or set of cores. This 
 Performance by:
 
 1. Reducing cache migration overhead — when a thread moves between cores, its working set must be
- loaded into the new core's caches.
+   loaded into the new core's caches.
 2. Preventing scheduler ping-pong — the OS scheduler may bounce a thread between cores, causing
- repeated cache invalidations.
+   repeated cache invalidations.
 3. Ensuring NUMA locality — on multi-socket systems, binding a process to cores on the same NUMA
- node as its memory ensures low-latency memory access.
+   node as its memory ensures low-latency memory access.
 
 On Linux, use `taskset` or `numactl`:
 
@@ -300,11 +303,11 @@ Directly attached DRAM. Accessing local memory is fast; accessing remote memory 
 Socket) traverses an interconnect (UPI on Intel, Infinity Fabric on AMD) and is significantly
 Slower.
 
-| Access Type | Latency | Bandwidth |
+| Access Type           | Latency     | Bandwidth         |
 | --------------------- | ----------- | ----------------- |
-| Local DRAM | ~80 ns | Full |
-| Remote DRAM (1 hop) | ~120–140 ns | Reduced (~60–70%) |
-| Remote DRAM (2+ hops) | ~160–200 ns | Further reduced |
+| Local DRAM            | ~80 ns      | Full              |
+| Remote DRAM (1 hop)   | ~120–140 ns | Reduced (~60–70%) |
+| Remote DRAM (2+ hops) | ~160–200 ns | Further reduced   |
 
 On NUMA systems, the OS NUMA scheduler attempts to allocate memory local to the process's current
 CPU. However, this can be suboptimal for workloads with specific memory access patterns. Use
@@ -318,17 +321,17 @@ CPU. However, this can be suboptimal for workloads with specific memory access p
 
 Linux offers two primary CPU frequency scaling drivers for Intel CPUs:
 
-| Driver | Description | Recommended For |
+| Driver         | Description                         | Recommended For              |
 | -------------- | ----------------------------------- | ---------------------------- |
-| `intel_pstate` | Hardware-managed P-states via HWP | Modern Intel (Sandy Bridge+) |
-| `acpi-cpufreq` | OS-managed P-states via ACPI tables | Legacy hardware, VMs |
+| `intel_pstate` | Hardware-managed P-states via HWP   | Modern Intel (Sandy Bridge+) |
+| `acpi-cpufreq` | OS-managed P-states via ACPI tables | Legacy hardware, VMs         |
 
 The `intel_pstate` driver operates in two modes:
 
 - **Active mode:** HWP is enabled. The CPU manages frequency autonomously. This is the default on
- most modern systems and generally provides the best performance.
+  most modern systems and generally provides the best performance.
 - **Passive mode:** The CPU suggests frequencies, but the OS governor makes the final decision. This
- allows use of the `schedutil` governor.
+  allows use of the `schedutil` governor.
 
 Check the current driver:
 
@@ -340,13 +343,13 @@ cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_driver
 
 The CPU frequency governor determines the policy for frequency scaling:
 
-| Governor | Behavior | Use Case |
+| Governor       | Behavior                                             | Use Case                                |
 | -------------- | ---------------------------------------------------- | --------------------------------------- |
-| `performance` | Always at maximum frequency | Benchmarks, latency-sensitive workloads |
-| `powersave` | Minimum frequency (with HWP, allows boost on demand) | Energy-efficient servers |
-| `ondemand` | Increases frequency when load exceeds threshold | Legacy driver (not used with HWP) |
-| `schedutil` | Frequency driven by scheduler utilization data | Works with passive mode |
-| `conservative` | Gradually increases frequency | Legacy, rarely used |
+| `performance`  | Always at maximum frequency                          | Benchmarks, latency-sensitive workloads |
+| `powersave`    | Minimum frequency (with HWP, allows boost on demand) | Energy-efficient servers                |
+| `ondemand`     | Increases frequency when load exceeds threshold      | Legacy driver (not used with HWP)       |
+| `schedutil`    | Frequency driven by scheduler utilization data       | Works with passive mode                 |
+| `conservative` | Gradually increases frequency                        | Legacy, rarely used                     |
 
 With `intel_pstate` in active mode, the governor has limited effect because HWP manages frequency
 Autonomously. The `performance` governor sets the HWP minimum to maximum, preventing any frequency
@@ -380,7 +383,7 @@ echo power | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/energy_performance_pr
 
 This interacts with HWP's autonomous frequency selection. `performance` biases HWP toward higher
 Frequencies; `power` biases toward lower frequencies. For desktop tuning, `balance_performance` is
- the best default.
+the best default.
 
 ---
 
@@ -392,7 +395,7 @@ Modern CPUs have a thermal monitor that continuously reads the on-die digital th
 The temperature reaches the thermal throttling threshold (PROCHOT), the CPU takes corrective action:
 
 1. **Clock modulation:** The CPU inserts idle cycles to reduce power dissipation. It may skip every
- Nth clock cycle (e.g., 50% modulation means the CPU is effectively running at half speed).
+   Nth clock cycle (e.g., 50% modulation means the CPU is effectively running at half speed).
 2. **Frequency reduction:** The CPU reduces its operating frequency to lower power consumption.
 3. **Voltage reduction:** On some platforms, the CPU reduces voltage along with frequency.
 
@@ -404,9 +407,9 @@ Non-configurable hardware limits designed to prevent permanent damage.
 Thermal throttling can occur at two levels:
 
 - **Per-core throttling:** Only the hottest core(s) reduce frequency. Other cores continue at full
- speed. This is the default behavior on modern Intel and AMD CPUs.
+  speed. This is the default behavior on modern Intel and AMD CPUs.
 - **Package throttling:** The entire package reduces frequency when the package average or peak
- temperature exceeds the limit.
+  temperature exceeds the limit.
 
 On hybrid Intel CPUs (P-cores and E-cores), per-core throttling is important because P-cores and
 E-cores have different thermal densities. A P-core running AVX-512 can hit 100 °C while adjacent
@@ -416,11 +419,11 @@ E-cores are at 70 °C. Per-core throttling ensures the E-cores are not penalized
 
 Intel CPUs implement two configurable power limits:
 
-- **PL1 (Sustained Power Limit):** The long-term average power limit, equal to the TDP.
- For a Core i7-13700K, PL1 is 125 W by default. The CPU may exceed PL1 for up to the PL2 time
- window (Tau, 28 seconds on desktop).
+- **PL1 (Sustained Power Limit):** The long-term average power limit, equal to the TDP. For a Core
+  i7-13700K, PL1 is 125 W by default. The CPU may exceed PL1 for up to the PL2 time window (Tau, 28
+  seconds on desktop).
 - **PL2 (Short-term Power Limit):** The peak power limit during turbo boost. For the same CPU, PL2
- is 253 W by default.
+  is 253 W by default.
 
 After the Tau window expires, the CPU must reduce its power draw to PL1. This is why you see
 Benchmark scores drop after the first 30 seconds — the CPU transitions from PL2 to PL1.
@@ -482,20 +485,20 @@ Entries. With SMT enabled, two logical threads share these resources:
 
 - Each thread has its own architectural state (registers, instruction pointers).
 - Execution ports, caches, and execution units are shared and dynamically allocated between the two
- threads based on availability.
+  threads based on availability.
 - When one thread stalls (e.g., waiting for a cache miss), the other thread can use the execution
- resources.
+  resources.
 
 ### Performance Impact
 
 SMT performance depends entirely on the workload:
 
 - **Highly parallel workloads with independent threads:** SMT provides 20–30% throughput
- improvement.
+  improvement.
 - **Workloads with shared data structures:** SMT can degrade performance due to cache contention and
- increased cache coherence traffic.
+  increased cache coherence traffic.
 - **Single-threaded workloads:** SMT provides no benefit; disabling it may slightly improve
- single-thread performance by giving one thread exclusive access to all execution resources.
+  single-thread performance by giving one thread exclusive access to all execution resources.
 
 ```bash
 # Disable SMT (Hyper-Threading) on Linux
@@ -505,11 +508,9 @@ echo 0 | sudo tee /sys/devices/system/cpu/smt/active
 echo 1 | sudo tee /sys/devices/system/cpu/smt/active
 ```
 
-:::warning
-Disabling SMT halves your logical core count. Ensure your workload can run within the
+:::warning Disabling SMT halves your logical core count. Ensure your workload can run within the
 Physical core limit before disabling it. Some applications are licensed per logical core and will
-Not work correctly with SMT disabled.
-:::
+Not work correctly with SMT disabled. :::
 
 ### Security Considerations
 
@@ -612,8 +613,8 @@ The actual average frequency over a period, not the instantaneous value reported
 ### Confusing TDP with Actual Power Draw
 
 TDP (Thermal Design Power) is a marketing metric, not a power consumption limit. An Intel CPU with a
-125 W TDP can draw 200–250 W during multi-core boost (PL2 window). Always monitor actual
-Power draw with `turbostat``RAPL`Or HWiNFO64 rather than relying on TDP specifications.
+125 W TDP can draw 200–250 W during multi-core boost (PL2 window). Always monitor actual Power draw
+with `turbostat``RAPL`Or HWiNFO64 rather than relying on TDP specifications.
 
 ### Applying Desktop Tuning to Servers
 
@@ -652,17 +653,15 @@ Userspace code runs.
 Microcode updates can change CPU behavior in ways that affect performance measurements:
 
 - **Spectre/Meltdown mitigations:** Some microcode updates add IBRS, STIBP, or PSFD instructions
- that add overhead to syscalls and indirect branches. The performance impact ranges from 2% to 30%
- depending on workload.
+  that add overhead to syscalls and indirect branches. The performance impact ranges from 2% to 30%
+  depending on workload.
 - **Voltage/frequency adjustments:** Intel has shipped microcode updates that reduce maximum turbo
- frequencies to address stability issues (e.g., the Ice Lake PL1/PL2 fixes).
+  frequencies to address stability issues (e.g., the Ice Lake PL1/PL2 fixes).
 - **Cache behavior changes:** Some updates modify L3 cache allocation or prefetcher behavior.
 
-:::warning
-Never benchmark a CPU before verifying the microcode version. A BIOS update that includes
+:::warning Never benchmark a CPU before verifying the microcode version. A BIOS update that includes
 A new microcode revision can invalidate months of tuning work if it changes turbo behavior or adds
-Mitigation overhead.
-:::
+Mitigation overhead. :::
 
 ### Forcing Microcode Reload
 
@@ -687,15 +686,15 @@ Scheduling technology that communicates per-thread classification to the operati
 And MSR interfaces. ITD classifies each instruction stream as belonging to one of several
 Categories:
 
-| Class ID | Category | Typical Use Case |
+| Class ID | Category          | Typical Use Case              |
 | -------- | ----------------- | ----------------------------- |
-| 0 | None | Idle or unknown |
-| 1 | Interactive | UI thread, input handling |
-| 2 | Background | File indexing, telemetry |
-| 3 | Management | Service threads, daemons |
-| 4 | Non-Turbo | Thermal-constrained workloads |
-| 5 | Throughput | Parallel compute |
-| 6 | Latency-sensitive | Real-time audio, game logic |
+| 0        | None              | Idle or unknown               |
+| 1        | Interactive       | UI thread, input handling     |
+| 2        | Background        | File indexing, telemetry      |
+| 3        | Management        | Service threads, daemons      |
+| 4        | Non-Turbo         | Thermal-constrained workloads |
+| 5        | Throughput        | Parallel compute              |
+| 6        | Latency-sensitive | Real-time audio, game logic   |
 
 ### Monitoring Thread Director
 
@@ -717,9 +716,9 @@ ITD works in conjunction with the kernel scheduler. On Linux, the `intel_pstate`
 Architectures (P-cores and E-cores):
 
 - **P-cores** have higher single-thread performance and should receive latency-sensitive and
- throughput-classified threads.
+  throughput-classified threads.
 - **E-cores** are more power-efficient and should receive background and throughput workloads where
- per-thread latency is less critical.
+  per-thread latency is less critical.
 
 You can influence this behavior with process affinity and cgroups:
 
@@ -733,11 +732,9 @@ echo "8-15" > /sys/fs/cgroup/batch_jobs/cpuset.cpus
 echo $PID > /sys/fs/cgroup/batch_jobs/cgroup.procs
 ```
 
-:::info
-On server platforms with homogeneous cores (Xeon Scalable), ITD is less relevant because all
+:::info On server platforms with homogeneous cores (Xeon Scalable), ITD is less relevant because all
 Cores have identical capabilities. ITD primarily benefits client and workstation platforms with
-Big.LITTLE-style heterogeneous core layouts.
-:::
+Big.LITTLE-style heterogeneous core layouts. :::
 
 ## AMD Precision Boost Overdrive 2
 
@@ -753,8 +750,8 @@ Offset (undervolt) or positive offset (overvolt) at each frequency point:
 
 $$V_{actual}(f) = V_{stock}(f) + \mathrm{offset{}$$
 
-Where `offset` is in the range of -30 to +30 steps, with each step approximately equal to
-5mV. So a `-20` step offset reduces voltage by roughly 100mV at every frequency point.
+Where `offset` is in the range of -30 to +30 steps, with each step approximately equal to 5mV. So a
+`-20` step offset reduces voltage by roughly 100mV at every frequency point.
 
 ### Configuring PBO2
 
@@ -763,9 +760,10 @@ On most AMD motherboards, PBO2 is configured in the BIOS:
 1. Enable Precision Boost Overdrive (Advanced > AMD Overclocking > PBO)
 2. Set PBO Mode to `Advanced`
 3. Configure Curve Optimizer:
- - **Mode:** All Core or Per Core
- - **Sign:** Negative (undervolt) or Positive (overvolt)
- - **Magnitude:** 0-30 steps
+
+- **Mode:** All Core or Per Core
+- **Sign:** Negative (undervolt) or Positive (overvolt)
+- **Magnitude:** 0-30 steps
 
 ```bash
 # On Linux, check if PBO2 settings are active
@@ -798,8 +796,7 @@ done
 :::warning A negative offset that is too aggressive causes WHEA (Windows Hardware Error
 Architecture) errors on Windows or Machine Check Exceptions (MCE) on Linux. These can cause silent
 Data corruption. Always verify stability with both compute tests (Prime95, stress-ng) and memory
-Tests (memtester) when changing voltage offsets.
-:::
+Tests (memtester) when changing voltage offsets. :::
 
 ## Interpreting turbostat Output
 
@@ -822,17 +819,17 @@ turbostat ./my_benchmark
 
 ### Key Columns Explained
 
-| Column | Meaning | What to Look For |
+| Column    | Meaning                              | What to Look For                                      |
 | --------- | ------------------------------------ | ----------------------------------------------------- |
-| `Bzy_MHz` | Average frequency while busy | Should be close to max turbo during load |
-| `Busy%` | Percentage of time core was not idle | 100% under full load |
-| `IPC` | Instructions per cycle | Higher is better; architecture-dependent |
-| `PkgWatt` | Package power draw in watts | Compare against TDP/TDP PL2 |
-| `PkgTmp` | Package temperature in Celsius | Should stay below thermal throttle point |
-| `IRQ` | Time servicing interrupts | High values indicate driver or I/O overhead |
-| `SMI` | System Management Interrupts | Should be near zero; high values indicate BIOS issues |
-| `CORE%c1` | Core C1 residency | Higher means more idle time |
-| `POLL%` | Polling idle time | Should be low unless using `idle=poll` |
+| `Bzy_MHz` | Average frequency while busy         | Should be close to max turbo during load              |
+| `Busy%`   | Percentage of time core was not idle | 100% under full load                                  |
+| `IPC`     | Instructions per cycle               | Higher is better; architecture-dependent              |
+| `PkgWatt` | Package power draw in watts          | Compare against TDP/TDP PL2                           |
+| `PkgTmp`  | Package temperature in Celsius       | Should stay below thermal throttle point              |
+| `IRQ`     | Time servicing interrupts            | High values indicate driver or I/O overhead           |
+| `SMI`     | System Management Interrupts         | Should be near zero; high values indicate BIOS issues |
+| `CORE%c1` | Core C1 residency                    | Higher means more idle time                           |
+| `POLL%`   | Polling idle time                    | Should be low unless using `idle=poll`                |
 
 ### Example: Detecting Thermal Throttling
 
@@ -882,7 +879,7 @@ On Intel K-series (via BIOS or Intel XTU):
 1. Set all-core multiplier to your desired base overclock.
 2. Test each core individually at +2, +3, +4 bins above the all-core setting.
 3. Apply per-core positive offsets only to cores that pass 1-hour stability testing at the higher
- multiplier.
+   multiplier.
 4. Pin latency-sensitive processes to the best cores.
 
 ```bash
@@ -901,13 +898,13 @@ Tuning change.
 
 ### Benchmark Categories
 
-| Category | Tools | What It Measures |
+| Category      | Tools                                    | What It Measures                    |
 | ------------- | ---------------------------------------- | ----------------------------------- |
-| Single-thread | Cinebench R23 ST, Geekbench 6 ST | Max turbo frequency, IPC |
-| Multi-thread | Cinebench R23 MT, stress-ng | All-core frequency, thermal limits |
-| Memory-bound | STREAM, memcpy benchmarks | Memory subsystem, cache performance |
-| I/O-bound | fio, sysbench fileio | CPU impact on storage throughput |
-| Real-world | Application-specific (compile, database) | Actual workload performance |
+| Single-thread | Cinebench R23 ST, Geekbench 6 ST         | Max turbo frequency, IPC            |
+| Multi-thread  | Cinebench R23 MT, stress-ng              | All-core frequency, thermal limits  |
+| Memory-bound  | STREAM, memcpy benchmarks                | Memory subsystem, cache performance |
+| I/O-bound     | fio, sysbench fileio                     | CPU impact on storage throughput    |
+| Real-world    | Application-specific (compile, database) | Actual workload performance         |
 
 ### Running Controlled Benchmarks
 
@@ -936,18 +933,16 @@ Cinebench R23 is the de facto standard for quick CPU performance assessment. Key
 Points:
 
 - **Single-core score** correlates directly with max turbo frequency and IPC. If your single-core
- score is below expected values for your CPU model, check that turbo boost is working and that
- thermal throttling is not occurring.
-- **Multi-core score** should scale roughly linearly with core count, minus a degradation factor
- ( 10-25%) due to shared cache contention, memory bandwidth saturation, and thermal
- limits.
+  score is below expected values for your CPU model, check that turbo boost is working and that
+  thermal throttling is not occurring.
+- **Multi-core score** should scale roughly linearly with core count, minus a degradation factor (
+  10-25%) due to shared cache contention, memory bandwidth saturation, and thermal limits.
 - **Multi-core ratio** (MT/ST) indicates scaling efficiency. A ratio below `cores * 0.75` suggests
- memory bandwidth or thermal throttling issues.
+  memory bandwidth or thermal throttling issues.
 
 :::tip Always run Cinebench at least 3 times and report the median. The first run may be slower due
 To caching effects. Let the CPU cool between runs (wait for temperatures to drop below 50C) to
-Ensure consistent thermal conditions.
-:::
+Ensure consistent thermal conditions. :::
 
 ### Geekbench vs Cinebench
 

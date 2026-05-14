@@ -1,6 +1,8 @@
 ---
 title: Correlation and Regression
-description: "A-Level Mathematics notes on Correlation and Regression: Board Coverage; 1. Pearson's Product Moment Correlation Coefficient (PMCC); 1.1 Definition; 1.2 Prop."
+description:
+  "A-Level Mathematics notes on Correlation and Regression: Board Coverage; 1. Pearson's Product
+  Moment Correlation Coefficient (PMCC); 1.1 Definition; 1.2 Prop."
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Maths
@@ -9,19 +11,18 @@ categories:
   - Maths
 slug: correlation-and-regression
 ---
+
 ## Board Coverage
 
-| Board | Paper | Notes |
+| Board      | Paper   | Notes                               |
 | ---------- | ------- | ----------------------------------- |
-| AQA | Paper 1 | PMCC, regression lines |
-| Edexcel | P1 | Includes Spearman's rank |
-| OCR (A) | Paper 1 | Similar |
-| CIE (9709) | P1, P6 | Correlation and regression in P1/P6 |
+| AQA        | Paper 1 | PMCC, regression lines              |
+| Edexcel    | P1      | Includes Spearman's rank            |
+| OCR (A)    | Paper 1 | Similar                             |
+| CIE (9709) | P1, P6  | Correlation and regression in P1/P6 |
 
-:::info
-The formula booklet gives the formula for PMCC and the least squares regression line. You
-Must be able to interpret these and understand their limitations.
-:::
+:::info The formula booklet gives the formula for PMCC and the least squares regression line. You
+Must be able to interpret these and understand their limitations. :::
 
 <hr />
 
@@ -47,22 +48,20 @@ $$S_{xy} = \sum(x_i-\bar{x})(y_i-\bar{y}) = \sum x_i y_i - n\bar{x}\bar{y}$$
 - $r = 0$: no linear correlation (but there may be non-linear relationship)
 - $r$ measures the strength of **linear** relationship only
 
-:::warning
-Correlation does not imply causation. Two variables may be strongly correlated because
-They are both influenced by a third (confounding) variable, or by coincidence.
-:::
+:::warning Correlation does not imply causation. Two variables may be strongly correlated because
+They are both influenced by a third (confounding) variable, or by coincidence. :::
 
 ### 1.3 Real-World Applications
 
-**Economics:** GDP per capita and life expectancy across countries show $r \approx 0.7$ to
-$0.85$. The relationship is strong but non-linear at high income levels (diminishing returns). The
-PMCC captures the overall linear trend but underestimates the strength of the relationship at lower
+**Economics:** GDP per capita and life expectancy across countries show $r \approx 0.7$ to $0.85$.
+The relationship is strong but non-linear at high income levels (diminishing returns). The PMCC
+captures the overall linear trend but underestimates the strength of the relationship at lower
 Incomes.
 
 **Medical studies:** Dose-response relationships often yield strong positive PMCC values. A clinical
 Trial might find $r = 0.92$ between drug dosage and reduction in blood pressure, suggesting a strong
-Linear dose-response. However, biological systems have thresholds and saturation points
-Where linearity breaks down.
+Linear dose-response. However, biological systems have thresholds and saturation points Where
+linearity breaks down.
 
 **Psychology:** Study hours and exam scores often show moderate positive correlation
 ($r \approx 0.4$ to $0.7$). The PMCC captures the linear trend, but individual variation means
@@ -94,17 +93,17 @@ Formula above does not account for ties — a correction factor is needed for ti
 
 ### 2.4 PMCC vs. Spearman's Rank: When to Use Which
 
-| Criterion | PMCC | Spearman's |
+| Criterion                    | PMCC                        | Spearman's                |
 | ---------------------------- | --------------------------- | ------------------------- |
-| Data type | Continuous (interval/ratio) | Ordinal or continuous |
-| Relationship type | Linear only | Any monotonic |
-| Sensitivity to outliers | High | Low (ranks reduce impact) |
-| Distribution assumption | Bivariate normal | None |
-| Power (when assumptions met) | Higher | Lower |
+| Data type                    | Continuous (interval/ratio) | Ordinal or continuous     |
+| Relationship type            | Linear only                 | Any monotonic             |
+| Sensitivity to outliers      | High                        | Low (ranks reduce impact) |
+| Distribution assumption      | Bivariate normal            | None                      |
+| Power (when assumptions met) | Higher                      | Lower                     |
 
 **Key point:** If the data has a strong linear relationship and no extreme outliers, PMCC is
-Preferred as it uses more information from the data. If the relationship is monotonic but
-Curved, or if outliers are present, Spearman's is more appropriate.
+Preferred as it uses more information from the data. If the relationship is monotonic but Curved, or
+if outliers are present, Spearman's is more appropriate.
 
 **Example.** Consider judge rankings in a competition. The data is inherently ordinal, so Spearman's
 Rank is the natural choice regardless of whether PMCC could technically be computed. Similarly, in a
@@ -123,7 +122,8 @@ $$S(a,b) = \sum_{i=1}^{n}(y_i - a - bx_i)^2$$
 
 ### 3.2 Derivation using partial derivatives
 
-Setting $\dfrac◆LB◆\partial S◆RB◆◆LB◆\partial a◆RB◆ = 0$ and $\dfrac◆LB◆\partial S◆RB◆◆LB◆\partial b◆RB◆ = 0$:
+Setting $\dfrac◆LB◆\partial S◆RB◆◆LB◆\partial a◆RB◆ = 0$ and
+$\dfrac◆LB◆\partial S◆RB◆◆LB◆\partial b◆RB◆ = 0$:
 
 $$\frac◆LB◆\partial S◆RB◆◆LB◆\partial a◆RB◆ = -2\sum(y_i - a - bx_i) = 0 \implies \sum y_i = na + b\sum x_i \tag{1}$$
 
@@ -175,11 +175,9 @@ Properties:
 
 ### 5.2 Extrapolation
 
-:::warning
-The regression line should only be used for **interpolation** (predicting within the
+:::warning The regression line should only be used for **interpolation** (predicting within the
 Range of the data). **Extrapolation** (predicting outside the data range) is unreliable because the
-Linear relationship may not hold.
-:::
+Linear relationship may not hold. :::
 
 ### 5.3 Regression of $y$ on $x$ vs. $x$ on $y$
 
@@ -199,7 +197,7 @@ $x_i$).
 - **Random scatter** around zero: the linear model is appropriate.
 - **Curved pattern** (e.g., U-shape): the relationship is non-linear; a linear model is unsuitable.
 - **Funnel shape** (increasing spread): the variance is not constant (heteroscedasticity);
- predictions are less reliable at extremes.
+  predictions are less reliable at extremes.
 
 Residual plots are a diagnostic tool — they reveal whether the assumptions of linear regression are
 Met. In A Level exams, you may be asked to comment on a residual plot to assess whether the
@@ -217,8 +215,8 @@ Is why it is essential to inspect scatter plots alongside numerical summaries.
 
 **Example.** In a study of height vs. Salary across 50 people, most data shows weak positive
 Correlation ($r \approx 0.2$). If one NBA player earning millions is included, the PMCC may jump to
-$r \approx 0.6$Giving a misleading impression. In such cases, Spearman's rank is more robust
-Because ranking reduces the disproportionate influence of extreme values.
+$r \approx 0.6$Giving a misleading impression. In such cases, Spearman's rank is more robust Because
+ranking reduces the disproportionate influence of extreme values.
 
 ### 5.6 Dangers of Extrapolation
 
@@ -229,12 +227,12 @@ Economic conditions changed entirely.
 
 **Medical example:** A linear dose-response model calibrated for doses of 0--50 mg might predict
 $y = -3$ for a dose of 0 mg, which is physically impossible (negative response). The model is only
-Valid within its calibration range. Biological systems exhibit thresholds and saturation
-Effects that linear models cannot capture.
+Valid within its calibration range. Biological systems exhibit thresholds and saturation Effects
+that linear models cannot capture.
 
 **General principle:** Always state the range of the original data and note that predictions outside
-This range are unreliable. In exam questions, you will lose marks if you extrapolate
-Without commenting on the limitation.
+This range are unreliable. In exam questions, you will lose marks if you extrapolate Without
+commenting on the limitation.
 
 <hr />
 
@@ -446,8 +444,8 @@ Two datasets have the same PMCC of $r = 0.85$. Dataset A has $n = 10$ observatio
 <summary>Solution 10</summary>
 
 With a larger sample size, the PMCC is estimated more precisely (smaller standard error). For
-$n = 10$The PMCC must exceed approximately 0.632 to be significant at the 5% level (two-tailed).
-For $n = 100$The threshold is approximately 0.197. While both datasets show the same correlation,
+$n = 10$The PMCC must exceed approximately 0.632 to be significant at the 5% level (two-tailed). For
+$n = 100$The threshold is approximately 0.197. While both datasets show the same correlation,
 Dataset B provides far stronger statistical evidence because random fluctuations are much less
 Likely to produce $r = 0.85$ with 100 observations.
 
@@ -459,10 +457,10 @@ Likely to produce $r = 0.85$ with 100 observations.
 <summary>Problem 11</summary>
 Eight students were ranked by two teachers for a presentation. The rankings are:
 
-| Student | A | B | C | D | E | F | G | H |
+| Student   | A   | B   | C   | D   | E   | F   | G   | H   |
 | --------- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Teacher 1 | 2 | 5 | 1 | 7 | 3 | 8 | 4 | 6 |
-| Teacher 2 | 1 | 6 | 2 | 8 | 4 | 7 | 3 | 5 |
+| Teacher 1 | 2   | 5   | 1   | 7   | 3   | 8   | 4   | 6   |
+| Teacher 2 | 1   | 6   | 2   | 8   | 4   | 7   | 3   | 5   |
 
 Calculate Spearman's rank correlation coefficient and interpret the result.
 
@@ -473,14 +471,15 @@ Calculate Spearman's rank correlation coefficient and interpret the result.
 
 The data is already ranked, so:
 
-| Student | A | B | C | D | E | F | G | H |
+| Student | A   | B   | C   | D   | E   | F   | G   | H   |
 | ------- | --- | --- | --- | --- | --- | --- | --- | --- |
-| $d_i$ | 1 | -1 | -1 | -1 | -1 | 1 | 1 | 1 |
-| $d_i^2$ | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
+| $d_i$   | 1   | -1  | -1  | -1  | -1  | 1   | 1   | 1   |
+| $d_i^2$ | 1   | 1   | 1   | 1   | 1   | 1   | 1   | 1   |
 
 $\sum d_i^2 = 8$.
 
-$r_s = 1 - \dfrac◆LB◆6 \times 8◆RB◆◆LB◆8(64 - 1)◆RB◆ = 1 - \dfrac{48}{504} = 1 - 0.0952 = 0.905$ (3 s.f.).
+$r_s = 1 - \dfrac◆LB◆6 \times 8◆RB◆◆LB◆8(64 - 1)◆RB◆ = 1 - \dfrac{48}{504} = 1 - 0.0952 = 0.905$ (3
+s.f.).
 
 This indicates very strong positive agreement between the two teachers' rankings, suggesting
 Consistent assessment standards.
@@ -567,9 +566,9 @@ A dataset of 15 observations has regression line $y = 5 + 2x$ with $\bar{x} = 10
 <details>
 <summary>Solution 14</summary>
 
-The point $(25, 70)$ has $x = 25$Which is far from $\bar{x} = 10$So it has **high leverage**.
-Its predicted $y$-value from the current line would be $\hat{y} = 5 + 2(25) = 55$But the actual
-Value is $70$. The residual is $70 - 55 = 15$Which is positive and large.
+The point $(25, 70)$ has $x = 25$Which is far from $\bar{x} = 10$So it has **high leverage**. Its
+predicted $y$-value from the current line would be $\hat{y} = 5 + 2(25) = 55$But the actual Value is
+$70$. The residual is $70 - 55 = 15$Which is positive and large.
 
 (a) Since the point lies above the regression line and has high leverage, it will **increase** the
 Gradient (pull the line upward at the right side).
@@ -590,17 +589,17 @@ A large amount.
 
 :::
 
-
 ---
 
-:::tip
-Tip
-Ready to test your understanding of **Correlation and Regression**? The [diagnostic test](/docs/alevel/maths/diagnostics/diag-correlation-and-regression) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
+:::tip Tip Ready to test your understanding of **Correlation and Regression**? The
+[diagnostic test](/docs/alevel/maths/diagnostics/diag-correlation-and-regression) contains the
+hardest questions within the A-Level specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Correlation and Regression with other topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Correlation
+and Regression with other topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and
+building a personal test matrix. :::
 
 ## Common Pitfalls
 

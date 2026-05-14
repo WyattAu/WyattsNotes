@@ -1,6 +1,8 @@
 ---
 title: Classes and Inheritance
-description: "Dart: Classes and Inheritance — Class Fundamentals; Class Declaration; Constructor Variants, covering core concepts and practical techniques."
+description:
+  'Dart: Classes and Inheritance — Class Fundamentals; Class Declaration; Constructor Variants,
+  covering core concepts and practical techniques.'
 date: 2025-07-20T10:00:00.000Z
 tags:
   - dart
@@ -8,6 +10,7 @@ categories:
   - dart
 slug: classes-and-inheritance
 ---
+
 ## Class Fundamentals
 
 Dart is an **object-oriented language with single inheritance**. Every class implicitly extends
@@ -287,13 +290,13 @@ mixin Persistable on Serializable {
 
 ### Mixin vs Inheritance vs Interface
 
-| Feature | `extends` | `implements` | `with` (mixin) |
+| Feature                 | `extends`         | `implements`            | `with` (mixin)            |
 | ----------------------- | ----------------- | ----------------------- | ------------------------- |
-| Inherit implementation | Yes | No | Yes |
-| Require method override | Optional | All methods | Optional |
-| Multiple | No (single) | Yes | Yes |
-| Can have constructors | Yes | No (if mixin) | No |
-| Use case | Is-a relationship | Has-capability contract | Code reuse across classes |
+| Inherit implementation  | Yes               | No                      | Yes                       |
+| Require method override | Optional          | All methods             | Optional                  |
+| Multiple                | No (single)       | Yes                     | Yes                       |
+| Can have constructors   | Yes               | No (if mixin)           | No                        |
+| Use case                | Is-a relationship | Has-capability contract | Code reuse across classes |
 
 :::tip
 
@@ -334,8 +337,8 @@ print(a.dot(b));   // 11.0
 
 :::warning
 
-When overriding `==`You **must** also override `hashCode`. Two objects that are equal must have
-The same hash code. Use `Object.hash()` or `Object.hashAll()` for combining multiple values.
+When overriding `==`You **must** also override `hashCode`. Two objects that are equal must have The
+same hash code. Use `Object.hash()` or `Object.hashAll()` for combining multiple values.
 
 :::
 

@@ -1,6 +1,8 @@
 ---
 title: Defining Concepts and Requires Clauses
-description: "C++: Defining Concepts and Requires Clauses — The `concept` Keyword; Formal Semantics of the `concept` Keyword for thorough revision and examination prep."
+description:
+  'C++: Defining Concepts and Requires Clauses — The `concept` Keyword; Formal Semantics of the
+  `concept` Keyword for thorough revision and examination prep.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -8,6 +10,7 @@ categories:
   - Cpp
 slug: defining-concepts-and-requires-clauses
 ---
+
 # Defining Concepts and Requires Clauses
 
 C++20 introduced **concepts** --- named requirements for template parameters that allow the compiler
@@ -75,22 +78,24 @@ concept-definition:
 Several constraints on this grammar are important:
 
 1. The template-parameter-list must contain at least one type or type-constraint parameter. A
- concept with no parameters is ill-formed.
+   concept with no parameters is ill-formed.
 2. The constraint-expression must be a _constraint-expression_ as defined in [N4950 §13.5.3], which
- means it must be one of:
- - A logical AND expression of constraints (`&&`)
- - A logical OR expression of constraints (`||`)
- - A `requires`-expression
- - A concept name with arguments
-3. A concept is implicitly `constexpr` --- the compiler evaluates it at compile time. You cannot
- declare a concept that depends on runtime values.
+   means it must be one of:
 
-4. A concept cannot be `virtual``explicit``friend`Or have storage class specifiers. It is a
- purely compile-time entity.
+- A logical AND expression of constraints (`&&`)
+- A logical OR expression of constraints (`||`)
+- A `requires`-expression
+- A concept name with arguments
+
+3. A concept is implicitly `constexpr` --- the compiler evaluates it at compile time. You cannot
+   declare a concept that depends on runtime values.
+
+4. A concept cannot be `virtual``explicit``friend`Or have storage class specifiers. It is a purely
+   compile-time entity.
 
 5. A concept is not a type. You cannot use it as a type argument, return type, or variable type. It
- can only appear in constrained contexts: template parameter lists, `requires` clauses, and
- `static_assert` declarations.
+   can only appear in constrained contexts: template parameter lists, `requires` clauses, and
+   `static_assert` declarations.
 
 ## Proof: Concepts Are Compile-Time Boolean Predicates
 
@@ -100,25 +105,25 @@ Either `true` or `false` during compilation, and the evaluation has no runtime s
 **Proof:**
 
 1. By [N4950 §13.5.3/1], a constraint-expression is defined as a logical AND/OR of _atomic
- constraints_. An atomic constraint is either a concept-id or a `requires`-expression.
+   constraints_. An atomic constraint is either a concept-id or a `requires`-expression.
 
 2. By [N4950 §13.5.3/3], an atomic constraint is formed from an expression and a mapping from
- template parameters to template arguments. The atomic constraint is **satisfied** if and only if
- substitution of the mapped arguments into the expression is valid and the resulting expression is
- `true`.
+   template parameters to template arguments. The atomic constraint is **satisfied** if and only if
+   substitution of the mapped arguments into the expression is valid and the resulting expression is
+   `true`.
 
 3. The substitution in step 2 is performed in an **unevaluated operand** context [N4950 §7.5.8]. No
- runtime code is generated for the substitution, and no runtime side effects occur.
+   runtime code is generated for the substitution, and no runtime side effects occur.
 
 4. If the substitution fails (i.e., the expression is ill-formed after substitution), the atomic
- constraint is **not satisfied** --- this is not a hard error. This is the SFINAE principle
- applied to constraints [N4950 §13.5.3/2].
+   constraint is **not satisfied** --- this is not a hard error. This is the SFINAE principle
+   applied to constraints [N4950 §13.5.3/2].
 
 5. The logical combination of satisfied/unsatisfied atomic constraints via `&&` and `||` produces a
- single boolean result. By the laws of boolean algebra, this result is well-defined and unique.
+   single boolean result. By the laws of boolean algebra, this result is well-defined and unique.
 
 6. Since all evaluation occurs during template argument deduction and constraint checking (which are
- compilation phases), the result is available at compile time with zero runtime cost.
+   compilation phases), the result is available at compile time with zero runtime cost.
 
 Therefore, `C<T>` is a compile-time boolean predicate. $\blacksquare$
 
@@ -138,14 +143,12 @@ static_assert(!Numeric<std::string>, "string must not be numeric");
 Zero overhead on the generated binary. The concept is "compiled away" after constraint checking
 Succeeds or fails.
 
-:::info
-Semantic Difference from `constexpr bool` A `constexpr bool` variable template and a
+:::info Semantic Difference from `constexpr bool` A `constexpr bool` variable template and a
 `concept` are both compile-time boolean predicates, but a concept participates in **partial
 Ordering** (subsumption) during overload resolution, while a `constexpr bool` variable template does
 Not. Concepts are also required to be `true` for all substitutions --- a concept that is `false` for
 Some argument is well-formed, whereas a `static_assert(false)` in the concept body would be
-Ill-formed.
-:::
+Ill-formed. :::
 
 ## Requires-Expressions
 
@@ -318,9 +321,9 @@ Constraints form a lattice ordered by **subsumption** [N4950 §13.5.4]. The logi
 (conjunction) and `||` (disjunction) are used to combine constraints:
 
 - **Conjunction (`&&`):** All atomic constraints must be satisfied. This produces a constraint that
- is **at least as strict** as any individual component.
+  is **at least as strict** as any individual component.
 - **Disjunction (`||`):** At least one atomic constraint must be satisfied. This produces a
- constraint that is **at most as strict** as any individual component.
+  constraint that is **at most as strict** as any individual component.
 
 ```cpp
 #include <concepts>
@@ -349,13 +352,11 @@ int main() {
 }
 ```
 
-:::warning
-Negation with `!` The negation operator `!` is defined for constraints but **does not
+:::warning Negation with `!` The negation operator `!` is defined for constraints but **does not
 Participate in subsumption ordering**. A concept `!C` does not subsume or is not subsumed by `C` ---
 They are incomparable. This means `!C` cannot be used to establish a partial ordering between
 Overloads, which limits its usefulness in overload resolution. Prefer using a positive constraint on
-An alternative overload instead of negating a constraint.
-:::
+An alternative overload instead of negating a constraint. :::
 
 ## Standard Library Concepts Overview
 
@@ -365,42 +366,42 @@ Hierarchy of the standard library.
 
 ### Core Language Concepts
 
-| Concept | Description | Key relationships |
-| ------------------------------- | ---------------------------------------------------- | --------------------------------------------- |
-| `std::same_as<T, U>` | `T` and `U` are the same type | Reflexive, symmetric, transitive |
-| `std::derived_from<D, B>` | `D` is derived from `B` | Implies `is_base_of_v<B, D>` |
-| `std::convertible_to<From, To>` | `From` is implicitly convertible to `To` | Includes numeric promotions |
-| `std::integral<T>` | `T` is an integral type (excluding `bool` by design) | Includes `char``short``int``long`Etc. |
-| `std::signed_integral<T>` | `T` is a signed integral type | Subsumes `std::integral<T>` |
-| `std::unsigned_integral<T>` | `T` is an unsigned integral type | Subsumes `std::integral<T>` |
-| `std::floating_point<T>` | `T` is a floating-point type | `float``double``long double` |
+| Concept                         | Description                                          | Key relationships                     |
+| ------------------------------- | ---------------------------------------------------- | ------------------------------------- |
+| `std::same_as<T, U>`            | `T` and `U` are the same type                        | Reflexive, symmetric, transitive      |
+| `std::derived_from<D, B>`       | `D` is derived from `B`                              | Implies `is_base_of_v<B, D>`          |
+| `std::convertible_to<From, To>` | `From` is implicitly convertible to `To`             | Includes numeric promotions           |
+| `std::integral<T>`              | `T` is an integral type (excluding `bool` by design) | Includes `char``short``int``long`Etc. |
+| `std::signed_integral<T>`       | `T` is a signed integral type                        | Subsumes `std::integral<T>`           |
+| `std::unsigned_integral<T>`     | `T` is an unsigned integral type                     | Subsumes `std::integral<T>`           |
+| `std::floating_point<T>`        | `T` is a floating-point type                         | `float``double``long double`          |
 
 ### Comparison Concepts
 
-| Concept | Description |
-| ------------------------------ | ---------------------------------------------------- |
-| `std::equality_comparable<T>` | `==` is an equivalence relation on `T` |
-| `std::totally_ordered<T>` | `\<``\>``\<=``\>=` define a total order on `T` |
-| `std::three_way_comparable<T>` | `\<=\>` is defined for `T` |
+| Concept                        | Description                                    |
+| ------------------------------ | ---------------------------------------------- |
+| `std::equality_comparable<T>`  | `==` is an equivalence relation on `T`         |
+| `std::totally_ordered<T>`      | `\<``\>``\<=``\>=` define a total order on `T` |
+| `std::three_way_comparable<T>` | `\<=\>` is defined for `T`                     |
 
 ### Object Concepts
 
-| Concept | Description |
+| Concept                | Description                                                  |
 | ---------------------- | ------------------------------------------------------------ |
-| `std::copyable<T>` | `T` is copy-constructible, copy-assignable, and destructible |
-| `std::movable<T>` | `T` is move-constructible, move-assignable, and swappable |
-| `std::semiregular<T>` | `T` is copyable and default-constructible |
-| `std::regular<T>` | `T` is semiregular and equality_comparable |
-| `std::destructible<T>` | `T` can be destroyed |
+| `std::copyable<T>`     | `T` is copy-constructible, copy-assignable, and destructible |
+| `std::movable<T>`      | `T` is move-constructible, move-assignable, and swappable    |
+| `std::semiregular<T>`  | `T` is copyable and default-constructible                    |
+| `std::regular<T>`      | `T` is semiregular and equality_comparable                   |
+| `std::destructible<T>` | `T` can be destroyed                                         |
 
 ### Callable Concepts
 
-| Concept | Description |
+| Concept                           | Description                                                       |
 | --------------------------------- | ----------------------------------------------------------------- |
-| `std::invocable<F, Args...>` | `F` can be called with `Args...` |
-| `std::predicate<F, Args...>` | `F(Args...)` returns something convertible to `bool` |
-| `std::relation<F, T, U>` | `F(T, U)` defines an equivalence relation or strict weak ordering |
-| `std::strict_weak_order<F, T, U>` | `F(T, U)` defines a strict weak ordering |
+| `std::invocable<F, Args...>`      | `F` can be called with `Args...`                                  |
+| `std::predicate<F, Args...>`      | `F(Args...)` returns something convertible to `bool`              |
+| `std::relation<F, T, U>`          | `F(T, U)` defines an equivalence relation or strict weak ordering |
+| `std::strict_weak_order<F, T, U>` | `F(T, U)` defines a strict weak ordering                          |
 
 ### Iterator and Range Concepts
 
@@ -435,19 +436,19 @@ This hierarchy is designed so that subsumption works correctly: a `forward_itera
 ## SFINAE vs Concepts: A Detailed Comparison
 
 Before C++20, template constraints were expressed using SFINAE (Substitution Failure Is Not An
-Error) with techniques like `std::enable_if``std::void_t`And `decltype`. Concepts provide a
-Cleaner, more expressive, and more composable alternative.
+Error) with techniques like `std::enable_if``std::void_t`And `decltype`. Concepts provide a Cleaner,
+more expressive, and more composable alternative.
 
-| Aspect | SFINAE (`enable_if`) | Concepts |
+| Aspect                  | SFINAE (`enable_if`)                                         | Concepts                                    |
 | ----------------------- | ------------------------------------------------------------ | ------------------------------------------- |
-| **Syntax** | Verbose, often nested in return types or default arguments | Concise, declarative |
-| **Error messages** | Cryptic (deep in the instantiation stack) | Clear (constraint not satisfied) |
-| **Readability** | Low (logic buried in type traits) | High (named predicates) |
-| **Composability** | Manual conjunction via `std::enable_if<... && ...>` | Natural `&&` and `\|\|` operators |
-| **Subsumption** | Not supported (compiler cannot compare enable_if conditions) | Supported (partial ordering on constraints) |
-| **Overload resolution** | Ambiguity-prone with multiple enable_if | Ambiguity-free with proper concept design |
-| **Performance** | Zero runtime overhead | Zero runtime overhead |
-| **Standard reference** | [N4950 §13.10.3] (SFINAE context) | [N4950 §18.4] (concept definitions) |
+| **Syntax**              | Verbose, often nested in return types or default arguments   | Concise, declarative                        |
+| **Error messages**      | Cryptic (deep in the instantiation stack)                    | Clear (constraint not satisfied)            |
+| **Readability**         | Low (logic buried in type traits)                            | High (named predicates)                     |
+| **Composability**       | Manual conjunction via `std::enable_if<... && ...>`          | Natural `&&` and `\|\|` operators           |
+| **Subsumption**         | Not supported (compiler cannot compare enable_if conditions) | Supported (partial ordering on constraints) |
+| **Overload resolution** | Ambiguity-prone with multiple enable_if                      | Ambiguity-free with proper concept design   |
+| **Performance**         | Zero runtime overhead                                        | Zero runtime overhead                       |
+| **Standard reference**  | [N4950 §13.10.3] (SFINAE context)                            | [N4950 §18.4] (concept definitions)         |
 
 **Example: SFINAE approach (pre-C++20)**
 
@@ -574,13 +575,11 @@ mean(3, 7) = 10.0
 mean(3.0, 7.0) = 10.0
 ```
 
-:::tip
-Concept Design Principle A well-designed concept should be **minimal** (only require what is
+:::tip Concept Design Principle A well-designed concept should be **minimal** (only require what is
 Necessary) and **specific** (exclude types that would cause undefined behavior). Avoid overly broad
 Concepts like `requires(T t) { t + t; }` --- this would accept `std::string` (which supports `+` for
 Concatenation) even if the algorithm is intended for arithmetic. Use the standard library concepts
-In `<concepts>` as building blocks whenever possible.
-:::
+In `<concepts>` as building blocks whenever possible. :::
 
 ## Recursive Concept Constraints
 
@@ -882,8 +881,8 @@ They do not appear in the concept's template parameter list and cannot be refere
 Requires-expression. This is a common source of confusion when mixing `requires`-clauses and
 `requires`-expressions.
 
-**8. Concepts evaluate to `bool`Not to types:** You cannot use a concept in a context that expects
-A type. `std::vector<Addable>` is ill-formed; you must write `std::vector<Addable auto>` or use a
+**8. Concepts evaluate to `bool`Not to types:** You cannot use a concept in a context that expects A
+type. `std::vector<Addable>` is ill-formed; you must write `std::vector<Addable auto>` or use a
 Constrained template parameter.
 
 ## See Also

@@ -1,9 +1,12 @@
 ---
 id: data-modeling
 title: Data Modeling Patterns
-description: "Databases: Data Modeling Patterns — Normalization Review; When to Stop Normalizing; 3NF vs Denormalization; When to Denormalize."
+description:
+  'Databases: Data Modeling Patterns — Normalization Review; When to Stop Normalizing; 3NF vs
+  Denormalization; When to Denormalize.'
 slug: data-modeling
 ---
+
 ## Normalization Review
 
 ### When to Stop Normalizing
@@ -12,14 +15,14 @@ Normalization eliminates redundancy and update anomalies, but there is a point o
 Returns. The decision of when to stop depends on your read/write ratio, performance requirements,
 And complexity tolerance.
 
-| Normal Form | Eliminates | Practical Impact |
+| Normal Form | Eliminates                             | Practical Impact                           |
 | ----------- | -------------------------------------- | ------------------------------------------ |
-| 1NF | Repeating groups, non-atomic values | Foundation; every table should be in 1NF |
-| 2NF | Partial dependencies on composite keys | Eliminates redundant data in composite PKs |
-| 3NF | Transitive dependencies (A → B → C) | Most OLTP schemas stop here |
-| BCNF | All candidate keys fully determined | Slight refinement over 3NF |
-| 4NF | Multi-valued dependencies | Rarely needed in practice |
-| 5NF | Join dependencies | Theoretical; almost never practical |
+| 1NF         | Repeating groups, non-atomic values    | Foundation; every table should be in 1NF   |
+| 2NF         | Partial dependencies on composite keys | Eliminates redundant data in composite PKs |
+| 3NF         | Transitive dependencies (A → B → C)    | Most OLTP schemas stop here                |
+| BCNF        | All candidate keys fully determined    | Slight refinement over 3NF                 |
+| 4NF         | Multi-valued dependencies              | Rarely needed in practice                  |
+| 5NF         | Join dependencies                      | Theoretical; almost never practical        |
 
 ### 3NF vs Denormalization
 
@@ -60,13 +63,13 @@ CREATE TABLE order_summary (
 
 ### When to Denormalize
 
-| Scenario | Recommendation |
+| Scenario                                     | Recommendation                  |
 | -------------------------------------------- | ------------------------------- |
-| OLTP with frequent writes | Normalize (3NF) |
-| Read-heavy reporting dashboards | Denormalize (materialized view) |
-| High-frequency reads with infrequent updates | Cached/precomputed column |
-| Data warehousing / OLAP | Star/snowflake schema |
-| Real-time aggregation requirements | Precomputed aggregates |
+| OLTP with frequent writes                    | Normalize (3NF)                 |
+| Read-heavy reporting dashboards              | Denormalize (materialized view) |
+| High-frequency reads with infrequent updates | Cached/precomputed column       |
+| Data warehousing / OLAP                      | Star/snowflake schema           |
+| Real-time aggregation requirements           | Precomputed aggregates          |
 
 ## Denormalization Patterns
 
@@ -217,11 +220,11 @@ SET previous_category = current_category,
 WHERE product_id = 42;
 ```
 
-| SCD Type | History Retained | Storage | Complexity | Use Case |
+| SCD Type | History Retained | Storage | Complexity | Use Case                           |
 | -------- | ---------------- | ------- | ---------- | ---------------------------------- |
-| Type 1 | None | Minimal | Low | Corrections, insignificant changes |
-| Type 2 | Full | High | High | Audit trails, analytics |
-| Type 3 | One previous | Low | Medium | Limited history needed |
+| Type 1   | None             | Minimal | Low        | Corrections, insignificant changes |
+| Type 2   | Full             | High    | High       | Audit trails, analytics            |
+| Type 3   | One previous     | Low     | Medium     | Limited history needed             |
 
 ## Hierarchical Data
 
@@ -323,12 +326,12 @@ VALUES (NEW.node_id, NEW.node_id, 0);
 
 ### Comparison
 
-| Pattern | Insert | Update (move subtree) | Read ancestors | Read descendants | Storage |
+| Pattern          | Insert | Update (move subtree) | Read ancestors | Read descendants | Storage     |
 | ---------------- | ------ | --------------------- | -------------- | ---------------- | ----------- |
-| Adjacency List | O(1) | O(1) | O(depth) CTE | O(depth) CTE | Minimal |
-| Nested Sets | O(n) | O(n) | O(1) | O(1) | Minimal |
-| Path Enumeration | O(1) | O(n) | O(1) | O(1) LIKE | Path column |
-| Closure Table | O(n) | O(n\*depth) | O(depth) | O(depth) | O(n^2) |
+| Adjacency List   | O(1)   | O(1)                  | O(depth) CTE   | O(depth) CTE     | Minimal     |
+| Nested Sets      | O(n)   | O(n)                  | O(1)           | O(1)             | Minimal     |
+| Path Enumeration | O(1)   | O(n)                  | O(1)           | O(1) LIKE        | Path column |
+| Closure Table    | O(n)   | O(n\*depth)           | O(depth)       | O(depth)         | O(n^2)      |
 
 ## Polymorphic Associations
 
@@ -407,11 +410,11 @@ SELECT * FROM payments WHERE metadata ->> 'card_last_four' = '1234';
 CREATE INDEX idx_payments_metadata ON payments USING GIN (metadata);
 ```
 
-| Approach | Pros | Cons |
+| Approach     | Pros                           | Cons                              |
 | ------------ | ------------------------------ | --------------------------------- |
-| Shared table | Simple queries, no JOINs | Many NULL columns, weak typing |
-| Class table | Strong typing, no wasted space | JOINs required, complex queries |
-| JSON columns | Flexible, schemaless fields | No foreign keys, no type checking |
+| Shared table | Simple queries, no JOINs       | Many NULL columns, weak typing    |
+| Class table  | Strong typing, no wasted space | JOINs required, complex queries   |
+| JSON columns | Flexible, schemaless fields    | No foreign keys, no type checking |
 
 ## Many-to-Many Relationships
 
@@ -465,13 +468,13 @@ SELECT * FROM users WHERE deleted_at IS NULL;
 DELETE FROM users WHERE user_id = 42;
 ```
 
-| Aspect | Soft Delete | Hard Delete |
+| Aspect      | Soft Delete                      | Hard Delete                |
 | ----------- | -------------------------------- | -------------------------- |
-| Recovery | Reversible (set deleted_at=NULL) | Not reversible |
-| Storage | Rows accumulate | Space freed |
-| Query perf | All queries need WHERE clause | No filter overhead |
-| Uniqueness | Must handle deleted emails | Natural uniqueness |
-| Referential | FK constraints still apply | CASCADE removes dependents |
+| Recovery    | Reversible (set deleted_at=NULL) | Not reversible             |
+| Storage     | Rows accumulate                  | Space freed                |
+| Query perf  | All queries need WHERE clause    | No filter overhead         |
+| Uniqueness  | Must handle deleted emails       | Natural uniqueness         |
+| Referential | FK constraints still apply       | CASCADE removes dependents |
 
 :::warning
 
@@ -635,11 +638,11 @@ ALTER TABLE app_settings ADD CONSTRAINT valid_config CHECK (
 );
 ```
 
-| Approach | Query Performance | Type Safety | Schema Flexibility | Storage |
+| Approach | Query Performance   | Type Safety | Schema Flexibility | Storage     |
 | -------- | ------------------- | ----------- | ------------------ | ----------- |
-| EAV | Terrible (pivoting) | None | High | Inefficient |
-| JSONB | Good (GIN index) | Limited | High | Efficient |
-| Columns | Best | Full | Low (ALTER TABLE) | Efficient |
+| EAV      | Terrible (pivoting) | None        | High               | Inefficient |
+| JSONB    | Good (GIN index)    | Limited     | High               | Efficient   |
+| Columns  | Best                | Full        | Low (ALTER TABLE)  | Efficient   |
 
 ## Status Machines
 
@@ -708,8 +711,8 @@ stateDiagram-v2
 ### Over-Normalization
 
 Normalizing to 4NF or 5NF often creates so many tables that simple queries require dozens of JOINs.
-The cognitive overhead and query complexity outweigh the theoretical benefit. Stop at 3NF
-Unless you have a specific reason to go further.
+The cognitive overhead and query complexity outweigh the theoretical benefit. Stop at 3NF Unless you
+have a specific reason to go further.
 
 ### Using JSONB for Everything
 

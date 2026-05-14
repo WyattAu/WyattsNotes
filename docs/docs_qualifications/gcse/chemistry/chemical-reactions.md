@@ -1,6 +1,8 @@
 ---
 title: Chemical Reactions
-description: "GCSE Chemistry: Chemical Reactions — 1. Writing Chemical Equations; 1.1 Word Equations; 1.2 Symbol Equations; 1.3 State Symbols."
+description:
+  'GCSE Chemistry: Chemical Reactions — 1. Writing Chemical Equations; 1.1 Word Equations; 1.2
+  Symbol Equations; 1.3 State Symbols.'
 date: 2026-04-14
 tags:
   - Chemistry
@@ -9,10 +11,10 @@ categories:
   - Chemistry
 slug: chemical-reactions
 ---
+
 ## Chemical Reactions
 
-:::info
-Board Coverage AQA Paper 1 & 2 | Edexcel Paper 1 & 2 | OCR A Gateway C2-C4 | WJEC C2 & C3
+:::info Board Coverage AQA Paper 1 & 2 | Edexcel Paper 1 & 2 | OCR A Gateway C2-C4 | WJEC C2 & C3
 :::
 
 ## 1. Writing Chemical Equations
@@ -33,8 +35,8 @@ A symbol equation uses chemical formulae. It must be **balanced** -- the same nu
 Atom must appear on both sides (conservation of mass).
 
 The conservation of mass is a consequence of the fact that atoms are neither created nor destroyed
-In a chemical reaction. The atoms are rearranged into different molecules. This is one of the
-Most fundamental principles in chemistry.
+In a chemical reaction. The atoms are rearranged into different molecules. This is one of the Most
+fundamental principles in chemistry.
 
 **Worked Example.** Balance the equation for the reaction between iron and oxygen to form iron(III)
 Oxide.
@@ -57,7 +59,8 @@ $$2\mathrm{Al{} + 6\mathrm{HCl{} \to 2\mathrm{AlCl{}_3 + 3\mathrm{H{}_2$$
 
 **Worked Example.** Balance the combustion of ethane.
 
-Unbalanced: $\mathrm{C{}_2\mathrm{H{}_6 + \mathrm{O{}_2 \to \mathrm{CO{}_2 + \mathrm{H{}_2\mathrm{O{}$
+Unbalanced:
+$\mathrm{C{}_2\mathrm{H{}_6 + \mathrm{O{}_2 \to \mathrm{CO{}_2 + \mathrm{H{}_2\mathrm{O{}$
 
 $$2\mathrm{C{}_2\mathrm{H{}_6 + 7\mathrm{O{}_2 \to 4\mathrm{CO{}_2 + 6\mathrm{H{}_2\mathrm{O{}$$
 
@@ -69,12 +72,12 @@ This equation is already balanced. One atom of each element appears on both side
 
 ### 1.3 State Symbols
 
-| Symbol | State |
+| Symbol | State                        |
 | ------ | ---------------------------- |
-| (s) | Solid |
-| (l) | Liquid |
-| (g) | Gas |
-| (aq) | Aqueous (dissolved in water) |
+| (s)    | Solid                        |
+| (l)    | Liquid                       |
+| (g)    | Gas                          |
+| (aq)   | Aqueous (dissolved in water) |
 
 State symbols provide information about the physical state of each substance under the reaction
 Conditions. This is important because the state affects the energy change and the type of reaction
@@ -115,12 +118,14 @@ Net ionic: $\mathrm{Ag{}^+\mathrm{(aq){} + \mathrm{Cl{}^-\mathrm{(aq){} \to \mat
 
 **Worked Example.** Write the ionic equation for the reaction of zinc with copper(II) sulfate.
 
-Full: $\mathrm{Zn(s){} + \mathrm{CuSO{}_4\mathrm{(aq){} \to \mathrm{ZnSO{}_4\mathrm{(aq){} + \mathrm{Cu(s){}$
+Full:
+$\mathrm{Zn(s){} + \mathrm{CuSO{}_4\mathrm{(aq){} \to \mathrm{ZnSO{}_4\mathrm{(aq){} + \mathrm{Cu(s){}$
 
 Ionic:
 $\mathrm{Zn(s){} + \mathrm{Cu{}^{2+}\mathrm{(aq){} + \mathrm{SO{}_4^{2-}\mathrm{(aq){} \to \mathrm{Zn{}^{2+}\mathrm{(aq){} + \mathrm{SO{}_4^{2-}\mathrm{(aq){} + \mathrm{Cu(s){}$
 
-Net ionic: $\mathrm{Zn(s){} + \mathrm{Cu{}^{2+}\mathrm{(aq){} \to \mathrm{Zn{}^{2+}\mathrm{(aq){} + \mathrm{Cu(s){}$
+Net ionic:
+$\mathrm{Zn(s){} + \mathrm{Cu{}^{2+}\mathrm{(aq){} \to \mathrm{Zn{}^{2+}\mathrm{(aq){} + \mathrm{Cu(s){}$
 
 Spectator ion: SO$_4^{2-}$.
 
@@ -277,18 +282,18 @@ Correct orientation) will increase the rate.
 
 ### 3.2 Factors Affecting Rate of Reaction
 
-| Factor | Effect on Rate | Reason |
+| Factor                      | Effect on Rate | Reason                                                                       |
 | --------------------------- | -------------- | ---------------------------------------------------------------------------- |
-| Increasing concentration | Increases | More particles per unit volume, more frequent collisions |
-| Increasing temperature | Increases | Particles have more kinetic energy; more collisions exceed activation energy |
-| Increasing surface area | Increases | More particles exposed for collision |
-| Adding a catalyst | Increases | Provides an alternative pathway with lower activation energy |
-| Increasing pressure (gases) | Increases | More particles per unit volume |
+| Increasing concentration    | Increases      | More particles per unit volume, more frequent collisions                     |
+| Increasing temperature      | Increases      | Particles have more kinetic energy; more collisions exceed activation energy |
+| Increasing surface area     | Increases      | More particles exposed for collision                                         |
+| Adding a catalyst           | Increases      | Provides an alternative pathway with lower activation energy                 |
+| Increasing pressure (gases) | Increases      | More particles per unit volume                                               |
 
 **Temperature** has a particularly strong effect because it changes the distribution of molecular
 Energies. A small increase in temperature shifts a much larger fraction of molecules above the
-Activation energy threshold. The rate approximately doubles for every $10^{\circ}\mathrm{C{}$ increase
-In temperature.
+Activation energy threshold. The rate approximately doubles for every $10^{\circ}\mathrm{C{}$
+increase In temperature.
 
 **Surface area** matters for solid reactants. A lump of calcium carbonate has a small surface area,
 But the same mass as a powder has a much larger surface area. Since reactions occur at the surface,
@@ -396,18 +401,18 @@ System is not closed (e.g., a gas escapes), equilibrium cannot be established.
 **Le Chatelier's principle:** If a system at equilibrium is subjected to a change, the equilibrium
 Shifts in the direction that counteracts the change.
 
-| Change | Effect on equilibrium |
+| Change                               | Effect on equilibrium                                          |
 | ------------------------------------ | -------------------------------------------------------------- |
 | Increase concentration of a reactant | Equilibrium shifts to the right (to use up the added reactant) |
-| Increase temperature | Shifts in the endothermic direction |
-| Increase pressure | Shifts to the side with fewer gas molecules |
-| Add a catalyst | No effect on position; reaches equilibrium faster |
+| Increase temperature                 | Shifts in the endothermic direction                            |
+| Increase pressure                    | Shifts to the side with fewer gas molecules                    |
+| Add a catalyst                       | No effect on position; reaches equilibrium faster              |
 
 **Key points:**
 
 - Only temperature changes affect the value of the equilibrium constant
 - Pressure changes affect the position but not the value of the equilibrium constant (for a given
- temperature)
+  temperature)
 - Concentration changes affect the position but not the value of the equilibrium constant
 
 ### 4.4 The Haber Process
@@ -417,9 +422,9 @@ $$\mathrm{N{}_2\mathrm{(g){} + 3\mathrm{H{}_2\mathrm{(g){} \rightleftharpoons 2\
 **Conditions used:**
 
 - Temperature: 450$^{\circ}$C (compromise: lower temperature favours product, but reaction would be
- too slow)
+  too slow)
 - Pressure: 200 atm (high pressure favours product, 4 moles $\to$ 2 moles; but high pressure is
- expensive and dangerous)
+  expensive and dangerous)
 - Catalyst: iron (speeds up the rate)
 
 The conditions chosen represent an economic compromise. The theoretically optimal conditions (low
@@ -445,9 +450,9 @@ $\to$ 2 moles of gas), so very high pressure is not economically justified.
 
 ### 4.6 Equilibrium Summary Table
 
-| Process | Equation | Favourable Conditions |
-| --------------- | ----------------------------------------------------------- | ----------------------------------------------------- |
-| Haber process | $\mathrm{N{}_2 + 3\mathrm{H{}_2 \rightleftharpoons 2\mathrm{NH{}_3$ | High pressure, moderate temp, iron catalyst |
+| Process         | Equation                                                             | Favourable Conditions                                 |
+| --------------- | -------------------------------------------------------------------- | ----------------------------------------------------- |
+| Haber process   | $\mathrm{N{}_2 + 3\mathrm{H{}_2 \rightleftharpoons 2\mathrm{NH{}_3$  | High pressure, moderate temp, iron catalyst           |
 | Contact process | $2\mathrm{SO{}_2 + \mathrm{O{}_2 \rightleftharpoons 2\mathrm{SO{}_3$ | Moderate pressure, moderate temp, V$_2$O$_5$ catalyst |
 
 ## 5. Acids, Bases, and Salts
@@ -456,10 +461,10 @@ $\to$ 2 moles of gas), so very high pressure is not economically justified.
 
 The pH scale measures how acidic or alkaline a solution is:
 
-| pH | Description |
+| pH    | Description                       |
 | ----- | --------------------------------- |
-| 0--6 | Acidic (lower = more acidic) |
-| 7 | Neutral |
+| 0--6  | Acidic (lower = more acidic)      |
+| 7     | Neutral                           |
 | 8--14 | Alkaline (higher = more alkaline) |
 
 **Acids** produce H$^+$ ions in solution.
@@ -488,10 +493,10 @@ A strong acid can have a higher pH than a concentrated solution of a weak acid.
 
 ### 5.3 Reactions of Acids
 
-| Reaction | General Equation | Example |
+| Reaction                                     | General Equation                              | Example                                          |
 | -------------------------------------------- | --------------------------------------------- | ------------------------------------------------ |
-| Acid + metal $\to$ salt + hydrogen | acid + metal $\to$ salt + H$_2$ | 2HCl + Zn $\to$ ZnCl$_2$ + H$_2$ |
-| Acid + base $\to$ salt + water | acid + base $\to$ salt + H$_2$O | HCl + NaOH $\to$ NaCl + H$_2$O |
+| Acid + metal $\to$ salt + hydrogen           | acid + metal $\to$ salt + H$_2$               | 2HCl + Zn $\to$ ZnCl$_2$ + H$_2$                 |
+| Acid + base $\to$ salt + water               | acid + base $\to$ salt + H$_2$O               | HCl + NaOH $\to$ NaCl + H$_2$O                   |
 | Acid + carbonate $\to$ salt + water + CO$_2$ | acid + carbonate $\to$ salt + H$_2$O + CO$_2$ | 2HCl + CaCO$_3$ $\to$ CaCl$_2$ + H$_2$O + CO$_2$ |
 
 ### 5.4 Making Salts
@@ -533,13 +538,13 @@ $$c(\mathrm{HCl{}) = \frac{0.00250}{0.0225} = 0.111 \mathrm{ mol/dm{}^3$$
 
 ### 5.6 Tests for Gases
 
-| Gas | Test | Result |
+| Gas            | Test                  | Result                            |
 | -------------- | --------------------- | --------------------------------- |
-| Hydrogen | Lighted splint | Squeaky pop |
-| Oxygen | Glowing splint | Relights |
-| Carbon dioxide | Limewater | Turns cloudy/milky |
-| Chlorine | Damp litmus paper | Bleaches the litmus (turns white) |
-| Ammonia | Damp red litmus paper | Turns blue |
+| Hydrogen       | Lighted splint        | Squeaky pop                       |
+| Oxygen         | Glowing splint        | Relights                          |
+| Carbon dioxide | Limewater             | Turns cloudy/milky                |
+| Chlorine       | Damp litmus paper     | Bleaches the litmus (turns white) |
+| Ammonia        | Damp red litmus paper | Turns blue                        |
 
 ## 6. Electrolysis
 
@@ -634,13 +639,13 @@ The cathode, a copper bar is the anode, and the electrolyte is copper(II) sulfat
 
 ### 7.1 Classification Table
 
-| Type | Description | Example |
-| --------------------- | --------------------------------------------------- | ----------------------------------------------------------------- |
-| Combustion | Burning in oxygen | $\mathrm{CH{}_4 + 2\mathrm{O{}_2 \to \mathrm{CO{}_2 + 2\mathrm{H{}_2\mathrm{O{}$ |
-| Thermal decomposition | Breaking down with heat | $\mathrm{CaCO{}_3 \to \mathrm{CaO{} + \mathrm{CO{}_2$ |
-| Neutralisation | Acid + base $\to$ salt + water | $\mathrm{HCl{} + \mathrm{NaOH{} \to \mathrm{NaCl{} + \mathrm{H{}_2\mathrm{O{}$ |
-| Displacement | More reactive element displaces a less reactive one | $\mathrm{Zn{} + \mathrm{CuSO{}_4 \to \mathrm{ZnSO{}_4 + \mathrm{Cu{}$ |
-| Oxidation/reduction | Transfer of electrons | $\mathrm{Fe{}^{2+} \to \mathrm{Fe{}^{3+} + e^-$ |
+| Type                  | Description                                         | Example                                                                          |
+| --------------------- | --------------------------------------------------- | -------------------------------------------------------------------------------- |
+| Combustion            | Burning in oxygen                                   | $\mathrm{CH{}_4 + 2\mathrm{O{}_2 \to \mathrm{CO{}_2 + 2\mathrm{H{}_2\mathrm{O{}$ |
+| Thermal decomposition | Breaking down with heat                             | $\mathrm{CaCO{}_3 \to \mathrm{CaO{} + \mathrm{CO{}_2$                            |
+| Neutralisation        | Acid + base $\to$ salt + water                      | $\mathrm{HCl{} + \mathrm{NaOH{} \to \mathrm{NaCl{} + \mathrm{H{}_2\mathrm{O{}$   |
+| Displacement          | More reactive element displaces a less reactive one | $\mathrm{Zn{} + \mathrm{CuSO{}_4 \to \mathrm{ZnSO{}_4 + \mathrm{Cu{}$            |
+| Oxidation/reduction   | Transfer of electrons                               | $\mathrm{Fe{}^{2+} \to \mathrm{Fe{}^{3+} + e^-$                                  |
 
 ### 7.2 Oxidation States
 
@@ -667,24 +672,24 @@ $2\mathrm{Cr{} + (-14) = -2$So $2\mathrm{Cr{} = +12$Giving Cr = $+6$.
 ## Common Pitfalls
 
 - **Not balancing equations correctly.** Always count atoms of each element on both sides. Check
- that the total charge is balanced in ionic equations.
+  that the total charge is balanced in ionic equations.
 - **Confusing exothermic and endothermic.** Exothermic = releases heat ($\Delta H \lt 0$);
- endothermic = absorbs heat ($\Delta H \gt 0$).
+  endothermic = absorbs heat ($\Delta H \gt 0$).
 - **Forgetting state symbols in equations.** These are often required in exams and provide useful
- information.
+  information.
 - **Misapplying Le Chatelier's principle.** The equilibrium shifts to COUNTERACT the change, not to
- reinforce it.
+  reinforce it.
 - **Confusing a catalyst with a reactant.** A catalyst speeds up the reaction but is not consumed.
- It does not change the yield.
+  It does not change the yield.
 - **Writing the wrong products in electrolysis.** Remember the rules for discharge at each
- electrode. In aqueous solution, hydrogen may be produced at the cathode if the metal is reactive,
- and oxygen may be produced at the anode if the anion is not a halide.
+  electrode. In aqueous solution, hydrogen may be produced at the cathode if the metal is reactive,
+  and oxygen may be produced at the anode if the anion is not a halide.
 - **Forgetting that the pH scale is logarithmic.** A change of 1 pH unit means a tenfold change in
- $[\mathrm{H{}^+]$.
+  $[\mathrm{H{}^+]$.
 - **Using the wrong reagent to identify a gas.** Know each test precisely: limewater for CO$_2$
- glowing splint for O$_2$Lighted splint for H$_2$.
-- **Confusing the oxidation state of oxygen in peroxides.** In H$_2$O$_2$Oxygen has oxidation
- state $-1$Not $-2$.
+  glowing splint for O$_2$Lighted splint for H$_2$.
+- **Confusing the oxidation state of oxygen in peroxides.** In H$_2$O$_2$Oxygen has oxidation state
+  $-1$Not $-2$.
 - **Not including the correct charges in half equations.** Always balance both atoms and charge.
 
 ## Practice Questions
@@ -692,45 +697,46 @@ $2\mathrm{Cr{} + (-14) = -2$So $2\mathrm{Cr{} = +12$Giving Cr = $+6$.
 1. Balance the equation: $\mathrm{Al{} + \mathrm{HCl{} \to \mathrm{AlCl{}_3 + \mathrm{H{}_2$
 
 2. Using the bond energies H-H = 436 kJ/mol, O=O = 498 kJ/mol, and O-H = 464 kJ/mol, calculate the
- enthalpy change for $2\mathrm{H{}_2 + \mathrm{O{}_2 \to 2\mathrm{H{}_2\mathrm{O{}$.
+   enthalpy change for $2\mathrm{H{}_2 + \mathrm{O{}_2 \to 2\mathrm{H{}_2\mathrm{O{}$.
 
 3. Explain how increasing the temperature increases the rate of a reaction, with reference to
- collision theory.
+   collision theory.
 
 4. State Le Chatelier's principle and use it to predict the effect of increasing pressure on the
- equilibrium: $\mathrm{N{}_2\mathrm{O{}_4\mathrm{(g){} \rightleftharpoons 2\mathrm{NO{}_2\mathrm{(g){}$.
+   equilibrium:
+   $\mathrm{N{}_2\mathrm{O{}_4\mathrm{(g){} \rightleftharpoons 2\mathrm{NO{}_2\mathrm{(g){}$.
 
 5. Write the ionic equation for the reaction between zinc and copper(II) sulfate solution.
 
 6. 25.0 cm$^3$ of sodium hydroxide solution (concentration 0.100 mol/dm$^3$) is neutralised by
- hydrochloric acid. Calculate the volume of 0.200 mol/dm$^3$ hydrochloric acid needed.
+   hydrochloric acid. Calculate the volume of 0.200 mol/dm$^3$ hydrochloric acid needed.
 
 7. Describe the products formed at each electrode during the electrolysis of molten lead(II)
- bromide.
+   bromide.
 
 8. Explain why a catalyst increases the rate of reaction but does not change the position of
- equilibrium.
+   equilibrium.
 
 9. Describe how you would prepare a pure, dry sample of copper(II) sulfate crystals.
 
 10. Explain the difference between a strong acid and a weak acid of the same concentration.
 
 11. A student investigates the rate of reaction between marble chips and hydrochloric acid at two
- different temperatures. Sketch the two graphs on the same axes and explain the differences.
+    different temperatures. Sketch the two graphs on the same axes and explain the differences.
 
 12. Explain why the Haber process uses a temperature of 450$^{\circ}$C rather than room temperature
- or 100$^{\circ}$C.
+    or 100$^{\circ}$C.
 
 13. Write the balanced equation for the reaction between sulfuric acid and sodium hydroxide,
- including state symbols.
+    including state symbols.
 
 14. Describe a test to identify (a) hydrogen gas and (b) carbon dioxide gas.
 
 15. Explain, in terms of electrode reactions, why the mass of the anode decreases during the
- electroplating of a metal object.
+    electroplating of a metal object.
 
 16. Balance the equation:
- $\mathrm{C{}_4\mathrm{H{}_{10} + \mathrm{O{}_2 \to \mathrm{CO{}_2 + \mathrm{H{}_2\mathrm{O{}$
+    $\mathrm{C{}_4\mathrm{H{}_{10} + \mathrm{O{}_2 \to \mathrm{CO{}_2 + \mathrm{H{}_2\mathrm{O{}$
 
 17. Predict the products of electrolysis of aqueous sodium sulfate using inert electrodes.
 
@@ -739,26 +745,26 @@ $2\mathrm{Cr{} + (-14) = -2$So $2\mathrm{Cr{} = +12$Giving Cr = $+6$.
 19. Write half equations for the reaction between magnesium and silver nitrate.
 
 20. Explain, using Le Chatelier's principle, why increasing the pressure increases the yield of
- ammonia in the Haber process.
+    ammonia in the Haber process.
 
 ## Practice Problems
 
 <details>
 <summary>Question 1: Balancing equations</summary>
 
-Balance the following chemical equations:
-(a) $\mathrm{Fe{} + \mathrm{O{}_2 \to \mathrm{Fe{}_2\mathrm{O{}_3$
-(b) $\mathrm{Al{} + \mathrm{HCl{} \to \mathrm{AlCl{}_3 + \mathrm{H{}_2$
-(c) $\mathrm{C{}_3\mathrm{H{}_8 + \mathrm{O{}_2 \to \mathrm{CO{}_2 + \mathrm{H{}_2\mathrm{O{}$
+Balance the following chemical equations: (a)
+$\mathrm{Fe{} + \mathrm{O{}_2 \to \mathrm{Fe{}_2\mathrm{O{}_3$ (b)
+$\mathrm{Al{} + \mathrm{HCl{} \to \mathrm{AlCl{}_3 + \mathrm{H{}_2$ (c)
+$\mathrm{C{}_3\mathrm{H{}_8 + \mathrm{O{}_2 \to \mathrm{CO{}_2 + \mathrm{H{}_2\mathrm{O{}$
 
 </details>
 
 <details>
 <summary>Answer</summary>
 
-(a) $4\mathrm{Fe{} + 3\mathrm{O{}_2 \to 2\mathrm{Fe{}_2\mathrm{O{}_3$
-(b) $2\mathrm{Al{} + 6\mathrm{HCl{} \to 2\mathrm{AlCl{}_3 + 3\mathrm{H{}_2$
-(c) $\mathrm{C{}_3\mathrm{H{}_8 + 5\mathrm{O{}_2 \to 3\mathrm{CO{}_2 + 4\mathrm{H{}_2\mathrm{O{}$
+(a) $4\mathrm{Fe{} + 3\mathrm{O{}_2 \to 2\mathrm{Fe{}_2\mathrm{O{}_3$ (b)
+$2\mathrm{Al{} + 6\mathrm{HCl{} \to 2\mathrm{AlCl{}_3 + 3\mathrm{H{}_2$ (c)
+$\mathrm{C{}_3\mathrm{H{}_8 + 5\mathrm{O{}_2 \to 3\mathrm{CO{}_2 + 4\mathrm{H{}_2\mathrm{O{}$
 
 </details>
 
@@ -766,74 +772,90 @@ Balance the following chemical equations:
 <summary>Question 2: Types of chemical reactions</summary>
 
 Classify each of the following reactions as combination, decomposition, displacement, or combustion:
-(a) $2\mathrm{Mg{} + \mathrm{O{}_2 \to 2\mathrm{MgO{}$
-(b) $2\mathrm{H{}_2\mathrm{O{}_2 \to 2\mathrm{H{}_2\mathrm{O{} + \mathrm{O{}_2$
-(c) $\mathrm{Zn{} + \mathrm{CuSO{}_4 \to \mathrm{ZnSO{}_4 + \mathrm{Cu{}$
-(d) $\mathrm{CH{}_4 + 2\mathrm{O{}_2 \to \mathrm{CO{}_2 + 2\mathrm{H{}_2\mathrm{O{}$
+(a) $2\mathrm{Mg{} + \mathrm{O{}_2 \to 2\mathrm{MgO{}$ (b)
+$2\mathrm{H{}_2\mathrm{O{}_2 \to 2\mathrm{H{}_2\mathrm{O{} + \mathrm{O{}_2$ (c)
+$\mathrm{Zn{} + \mathrm{CuSO{}_4 \to \mathrm{ZnSO{}_4 + \mathrm{Cu{}$ (d)
+$\mathrm{CH{}_4 + 2\mathrm{O{}_2 \to \mathrm{CO{}_2 + 2\mathrm{H{}_2\mathrm{O{}$
 
 </details>
 
 <details>
 <summary>Answer</summary>
 
-(a) Combination (two elements combine to form one compound).
-(b) Decomposition (one compound breaks down into simpler substances).
-(c) Displacement (zinc displaces copper from copper sulfate).
-(d) Combustion (hydrocarbon burns in oxygen to produce carbon dioxide and water).
+(a) Combination (two elements combine to form one compound). (b) Decomposition (one compound breaks
+down into simpler substances). (c) Displacement (zinc displaces copper from copper sulfate). (d)
+Combustion (hydrocarbon burns in oxygen to produce carbon dioxide and water).
 
 </details>
 
 <details>
 <summary>Question 3: Reactivity series predictions</summary>
 
-A student places pieces of zinc, copper, and magnesium into separate test tubes containing iron(II) sulfate solution. Predict what will happen in each test tube and explain your reasoning.
+A student places pieces of zinc, copper, and magnesium into separate test tubes containing iron(II)
+sulfate solution. Predict what will happen in each test tube and explain your reasoning.
 
 </details>
 
 <details>
 <summary>Answer</summary>
 
-Using the reactivity series: potassium, sodium, calcium, magnesium, aluminium, (carbon), zinc, iron, (hydrogen), copper.
+Using the reactivity series: potassium, sodium, calcium, magnesium, aluminium, (carbon), zinc, iron,
+(hydrogen), copper.
 
-Zinc: zinc is above iron in the reactivity series, so it will displace iron: $\mathrm{Zn{} + \mathrm{FeSO{}_4 \to \mathrm{ZnSO{}_4 + \mathrm{Fe{}$. The blue solution fades as iron is displaced.
+Zinc: zinc is above iron in the reactivity series, so it will displace iron:
+$\mathrm{Zn{} + \mathrm{FeSO{}_4 \to \mathrm{ZnSO{}_4 + \mathrm{Fe{}$. The blue solution fades as
+iron is displaced.
 
 Copper: copper is below iron, so no reaction occurs. Copper cannot displace iron.
 
-Magnesium: magnesium is above iron, so it displaces iron: $\mathrm{Mg{} + \mathrm{FeSO{}_4 \to \mathrm{MgSO{}_4 + \mathrm{Fe{}$. This reaction is more vigorous than zinc's because magnesium is more reactive.
+Magnesium: magnesium is above iron, so it displaces iron:
+$\mathrm{Mg{} + \mathrm{FeSO{}_4 \to \mathrm{MgSO{}_4 + \mathrm{Fe{}$. This reaction is more
+vigorous than zinc's because magnesium is more reactive.
 
 </details>
 
 <details>
 <summary>Question 4: Exothermic and endothermic reactions</summary>
 
-Explain the difference between exothermic and endothermic reactions. Give one example of each and describe how the temperature changes.
+Explain the difference between exothermic and endothermic reactions. Give one example of each and
+describe how the temperature changes.
 
 </details>
 
 <details>
 <summary>Answer</summary>
 
-Exothermic: energy is released to the surroundings. Temperature increases. Example: combustion of methane -- the products ($\mathrm{CO{}_2$ and $\mathrm{H{}_2\mathrm{O{}$) have less chemical energy than the reactants.
+Exothermic: energy is released to the surroundings. Temperature increases. Example: combustion of
+methane -- the products ($\mathrm{CO{}_2$ and $\mathrm{H{}_2\mathrm{O{}$) have less chemical energy
+than the reactants.
 
-Endothermic: energy is absorbed from the surroundings. Temperature decreases. Example: thermal decomposition of calcium carbonate -- energy is needed to break the bonds in $\mathrm{CaCO{}_3$.
+Endothermic: energy is absorbed from the surroundings. Temperature decreases. Example: thermal
+decomposition of calcium carbonate -- energy is needed to break the bonds in $\mathrm{CaCO{}_3$.
 
 </details>
 
 <details>
 <summary>Question 5: Le Chatelier's principle</summary>
 
-The Haber process: $\mathrm{N{}_2(g) + 3\mathrm{H{}_2(g) \rightleftharpoons 2\mathrm{NH{}_3(g)$$\Delta H = -92 \mathrm{ kJ/mol{}$. Explain the effect on the yield of ammonia of (a) increasing pressure, (b) increasing temperature, and (c) removing ammonia as it is formed.
+The Haber process:
+$\mathrm{N{}_2(g) + 3\mathrm{H{}_2(g) \rightleftharpoons 2\mathrm{NH{}_3(g)$$\Delta H = -92 \mathrm{ kJ/mol{}$.
+Explain the effect on the yield of ammonia of (a) increasing pressure, (b) increasing temperature,
+and (c) removing ammonia as it is formed.
 
 </details>
 
 <details>
 <summary>Answer</summary>
 
-(a) Increasing pressure: equilibrium shifts to the side with fewer gas molecules (4 mol reactants $\to$ 2 mol products). Yield of ammonia increases.
+(a) Increasing pressure: equilibrium shifts to the side with fewer gas molecules (4 mol reactants
+$\to$ 2 mol products). Yield of ammonia increases.
 
-(b) Increasing temperature: the forward reaction is exothermic, so increasing temperature shifts equilibrium in the endothermic (backward) direction. Yield of ammonia decreases, but the rate of reaction is faster.
+(b) Increasing temperature: the forward reaction is exothermic, so increasing temperature shifts
+equilibrium in the endothermic (backward) direction. Yield of ammonia decreases, but the rate of
+reaction is faster.
 
-(c) Removing ammonia: reducing the concentration of a product shifts equilibrium to the right (forward direction) to replace the removed ammonia. Yield increases.
+(c) Removing ammonia: reducing the concentration of a product shifts equilibrium to the right
+(forward direction) to replace the removed ammonia. Yield increases.
 
 </details>
 

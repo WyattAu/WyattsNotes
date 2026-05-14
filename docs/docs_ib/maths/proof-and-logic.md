@@ -1,10 +1,12 @@
 ---
 title: Proof and Logic
 tags:
-- IB
-- Maths
+  - IB
+  - Maths
 slug: proof-and-logic
-description: "Rigorous IB mathematics notes covering Proof and Logic. Includes definitions, derivations, worked examples, and exam-style problems."
+description:
+  'Rigorous IB mathematics notes covering Proof and Logic. Includes definitions, derivations, worked
+  examples, and exam-style problems.'
 ---
 
 # Proof and Logic
@@ -28,13 +30,13 @@ The truth value of a proposition $P$ is denoted $\mathcal{'\{'}T{'\}'}(P) \in \{
 
 There are five fundamental connectives. Let $P$ and $Q$ be propositions.
 
-| Connective | Symbol | Read as | Meaning |
+| Connective    | Symbol         | Read as              | Meaning                                 |
 | :------------ | :------------- | :------------------- | :-------------------------------------- |
-| Negation | $\neg P$ | "not P" | True when P is false |
-| Conjunction | $P \wedge Q$ | "P and Q" | True when both are true |
-| Disjunction | $P \vee Q$ | "P or Q" | True when at least one is true |
-| Implication | $P \implies Q$ | "P implies Q" | False only when P true and Q false |
-| Biconditional | $P \iff Q$ | "P if and only if Q" | True when P and Q have same truth value |
+| Negation      | $\neg P$       | "not P"              | True when P is false                    |
+| Conjunction   | $P \wedge Q$   | "P and Q"            | True when both are true                 |
+| Disjunction   | $P \vee Q$     | "P or Q"             | True when at least one is true          |
+| Implication   | $P \implies Q$ | "P implies Q"        | False only when P true and Q false      |
+| Biconditional | $P \iff Q$     | "P if and only if Q" | True when P and Q have same truth value |
 
 #### Truth Tables
 
@@ -42,35 +44,35 @@ There are five fundamental connectives. Let $P$ and $Q$ be propositions.
 
 | $P$ | $\neg P$ |
 | :-: | :------: |
-| T | F |
-| F | T |
+|  T  |    F     |
+|  F  |    T     |
 
 **Conjunction:**
 
 | $P$ | $Q$ | $P \wedge Q$ |
 | :-: | :-: | :----------: |
-| T | T | T |
-| T | F | F |
-| F | T | F |
-| F | F | F |
+|  T  |  T  |      T       |
+|  T  |  F  |      F       |
+|  F  |  T  |      F       |
+|  F  |  F  |      F       |
 
 **Disjunction (inclusive OR):**
 
 | $P$ | $Q$ | $P \vee Q$ |
 | :-: | :-: | :--------: |
-| T | T | T |
-| T | F | T |
-| F | T | T |
-| F | F | F |
+|  T  |  T  |     T      |
+|  T  |  F  |     T      |
+|  F  |  T  |     T      |
+|  F  |  F  |     F      |
 
 **Implication:**
 
 | $P$ | $Q$ | $P \implies Q$ |
 | :-: | :-: | :------------: |
-| T | T | T |
-| T | F | F |
-| F | T | T |
-| F | F | T |
+|  T  |  T  |       T        |
+|  T  |  F  |       F        |
+|  F  |  T  |       T        |
+|  F  |  F  |       T        |
 
 The implication $P \implies Q$ is only false when a true premise leads to a false conclusion. This
 Is the single most misunderstood truth table entry in all of mathematics. When $P$ is false, the
@@ -80,10 +82,10 @@ Implication is **vacuously true** — there is no counterexample to "whenever P 
 
 | $P$ | $Q$ | $P \iff Q$ |
 | :-: | :-: | :--------: |
-| T | T | T |
-| T | F | F |
-| F | T | F |
-| F | F | T |
+|  T  |  T  |     T      |
+|  T  |  F  |     F      |
+|  F  |  T  |     F      |
+|  F  |  F  |     T      |
 
 ### 1.3 Logical Equivalence
 
@@ -95,7 +97,7 @@ Truth values for every possible assignment of truth values to their component pr
 1. **Commutative:** $P \wedge Q \equiv Q \wedge P$And $P \vee Q \equiv Q \vee P$
 2. **Associative:** $(P \wedge Q) \wedge R \equiv P \wedge (Q \wedge R)$And similarly for $\vee$
 3. **Distributive:** $P \wedge (Q \vee R) \equiv (P \wedge Q) \vee (P \wedge R)$And
- $P \vee (Q \wedge R) \equiv (P \vee Q) \wedge (P \vee R)$
+   $P \vee (Q \wedge R) \equiv (P \vee Q) \wedge (P \vee R)$
 4. **Identity:** $P \wedge T \equiv P$And $P \vee F \equiv P$
 5. **Domination:** $P \vee T \equiv T$And $P \wedge F \equiv F$
 6. **Idempotent:** $P \wedge P \equiv P$And $P \vee P \equiv P$
@@ -120,11 +122,9 @@ Negate: "The function $f$ is continuous and differentiable."
 Let $C$: "$f$ is continuous." Let $D$: "$f$ is differentiable." The statement is $C \wedge D$. Its
 Negation is $\neg C \vee \neg D$I.e., "$f$ is either not continuous or not differentiable."
 
-:::info
-A common mistake is to negate "P and Q" as "not P and not Q." That is wrong. The negation of
+:::info A common mistake is to negate "P and Q" as "not P and not Q." That is wrong. The negation of
 "$f$ is continuous and differentiable" is NOT "$f$ is not continuous and not differentiable" — that
-Is too strong.
-:::
+Is too strong. :::
 
 ### 1.5 The Contrapositive
 
@@ -139,13 +139,10 @@ This is proved by comparing truth tables. Both are false only when $P$ is true a
 Compare with two other related statements that are NOT equivalent:
 
 - The **converse** of $P \implies Q$ is $Q \implies P$ (not equivalent )
-- The **inverse** of $P \implies Q$ is $\neg P \implies \neg Q$ (not equivalent , but
- equivalent to the converse)
+- The **inverse** of $P \implies Q$ is $\neg P \implies \neg Q$ (not equivalent , but equivalent to
+  the converse)
 
-:::danger
-Danger
-Implication. Never confuse the contrapositive with the converse.
-:::
+:::danger Danger Implication. Never confuse the contrapositive with the converse. :::
 
 **Worked Example:**
 
@@ -213,11 +210,8 @@ $$\neg\left(\forall \varepsilon \gt 0, \; \exists \delta \gt 0, \; P(\varepsilon
 The existential becomes universal and the universal becomes existential. This is the logical
 Backbone of epsilon-delta definitions in analysis.
 
-:::warning
-Warning
-Negate the predicate. The order of quantifiers does NOT change — it remains the same sequence but
-With each quantifier flipped.
-:::
+:::warning Warning Negate the predicate. The order of quantifiers does NOT change — it remains the
+same sequence but With each quantifier flipped. :::
 
 <details>
 <summary>Worked Example: Negate $\forall n \in \mathbb{'\{'}Z{'\}'}^+, \; \exists p \mathrm{ prime}, \; p \gt n$</summary>
@@ -225,7 +219,8 @@ With each quantifier flipped.
 Step 1: Identify the structure — it is $\forall n, \; \exists p, \; P(n,p)$ where $P(n,p)$ is "$p$
 Is prime and $p \gt n$."
 
-Step 2: Negate — $\exists n \in \mathbb{'\{'}Z{'\}'}^+, \; \forall p \mathrm{ prime}, \; \neg(p \gt n)$
+Step 2: Negate —
+$\exists n \in \mathbb{'\{'}Z{'\}'}^+, \; \forall p \mathrm{ prime}, \; \neg(p \gt n)$
 
 Step 3: Simplify — $\exists n \in \mathbb{'\{'}Z{'\}'}^+, \; \forall p \mathrm{ prime}, \; p \le n$
 
@@ -240,8 +235,7 @@ Is false (there are infinitely many primes), so the original statement is true.
 
 ### 2.1 Direct Proof
 
-**Strategy:** To prove $P \implies Q$Assume $P$ is true and use logical deduction to arrive at
-$Q$.
+**Strategy:** To prove $P \implies Q$Assume $P$ is true and use logical deduction to arrive at $Q$.
 
 This is the most straightforward method. You chain together known results, definitions, and
 Algebraic manipulations.
@@ -259,8 +253,8 @@ Assume $n$ is odd. By definition, $n = 2k + 1$ for some $k \in \mathbb{'\{'}Z{'\
 
 $$n^2 = (2k+1)^2 = 4k^2 + 4k + 1 = 2(2k^2 + 2k) + 1$$
 
-Since $2k^2 + 2k$ is an integer (sum and product of integers), let $m = 2k^2 + 2k \in \mathbb{'\{'}Z{'\}'}$.
-Then $n^2 = 2m + 1$Which is odd by definition.
+Since $2k^2 + 2k$ is an integer (sum and product of integers), let
+$m = 2k^2 + 2k \in \mathbb{'\{'}Z{'\}'}$. Then $n^2 = 2m + 1$Which is odd by definition.
 
 Therefore, if $n$ is odd, then $n^2$ is odd.
 
@@ -285,8 +279,8 @@ Since $2mn + m + n \in \mathbb{'\{'}Z{'\}'}$The product is of the form $2k + 1$H
 
 ### 2.2 Proof by Contradiction
 
-**Strategy:** To prove a statement $P$Assume $\neg P$ and derive a logical contradiction
-(something that is always false, like $1 = 0$ or $0 \lt 0$).
+**Strategy:** To prove a statement $P$Assume $\neg P$ and derive a logical contradiction (something
+that is always false, like $1 = 0$ or $0 \lt 0$).
 
 **Template:**
 
@@ -298,11 +292,8 @@ Since $2mn + m + n \in \mathbb{'\{'}Z{'\}'}$The product is of the form $2k + 1$H
 This method is especially powerful when the statement you want to prove is a negation itself ("there
 Does not exist..." or "there are no...").
 
-:::info
-Info
-Which means $\neg P$ must be false, hence $P$ is true. It relies on the Law of Excluded Middle
-($P \vee \neg P$ must be true).
-:::
+:::info Info Which means $\neg P$ must be false, hence $P$ is true. It relies on the Law of Excluded
+Middle ($P \vee \neg P$ must be true). :::
 
 **Worked Example — $\sqrt{2}$ is irrational:**
 
@@ -311,8 +302,8 @@ $\gcd(a, b) = 1$ (the fraction is in lowest terms).
 
 Squaring both sides: $2 = \frac{a^2}{b^2}$So $a^2 = 2b^2$.
 
-Since $a^2 = 2b^2$We have $a^2$ is even. Therefore $a$ is even (by the lemma: if $a^2$ is even,
-Then $a$ is even — proved below).
+Since $a^2 = 2b^2$We have $a^2$ is even. Therefore $a$ is even (by the lemma: if $a^2$ is even, Then
+$a$ is even — proved below).
 
 Write $a = 2k$ for some $k \in \mathbb{'\{'}Z{'\}'}^+$. Substituting:
 
@@ -324,18 +315,15 @@ But now both $a$ and $b$ are even, contradicting $\gcd(a, b) = 1$.
 
 Therefore our assumption is false, and $\sqrt{2}$ is irrational.
 
-:::note
-Note
-Odd, then $a = 2k+1$So $a^2 = 4k^2 + 4k + 1 = 2(2k^2+2k) + 1$Which is odd. Hence if $a^2$ is
-Even, $a$ cannot be odd, so $a$ is even.
-:::
+:::note Note Odd, then $a = 2k+1$So $a^2 = 4k^2 + 4k + 1 = 2(2k^2+2k) + 1$Which is odd. Hence if
+$a^2$ is Even, $a$ cannot be odd, so $a$ is even. :::
 
 <details>
 <summary>Exercise: Prove that $\sqrt{3}$ is irrational.</summary>
 
-Assume $\sqrt{3} = \frac{a}{b}$ in lowest terms. Then $a^2 = 3b^2$So $a^2$ is divisible by 3. By
-The lemma (if $3 \mid a^2$Then $3 \mid a$), write $a = 3k$. Then $9k^2 = 3b^2$So $b^2 = 3k^2$
-Hence $3 \mid b^2$So $3 \mid b$. Both $a$ and $b$ are divisible by 3, contradicting lowest terms.
+Assume $\sqrt{3} = \frac{a}{b}$ in lowest terms. Then $a^2 = 3b^2$So $a^2$ is divisible by 3. By The
+lemma (if $3 \mid a^2$Then $3 \mid a$), write $a = 3k$. Then $9k^2 = 3b^2$So $b^2 = 3k^2$ Hence
+$3 \mid b^2$So $3 \mid b$. Both $a$ and $b$ are divisible by 3, contradicting lowest terms.
 
 The supporting lemma "if $p \mid a^2$ for prime $p$Then $p \mid a$" follows from the Fundamental
 Theorem of Arithmetic: if $p$ appears in the prime factorization of $a^2$It must appear in the
@@ -345,8 +333,8 @@ Factorization of $a$.
 
 ### 2.3 Proof by Contrapositive
 
-**Strategy:** To prove $P \implies Q$Instead prove $\neg Q \implies \neg P$. Since an implication
-Is logically equivalent to its contrapositive, this proves the original statement.
+**Strategy:** To prove $P \implies Q$Instead prove $\neg Q \implies \neg P$. Since an implication Is
+logically equivalent to its contrapositive, this proves the original statement.
 
 **When to use this:** When the hypothesis $P$ feels "too big" or "too loose" to work with directly,
 But the negation of the conclusion $\neg Q$ gives you something concrete to grab.
@@ -370,12 +358,9 @@ $n^2 = (2k+1)^2 = 4k^2 + 4k + 1 = 2(2k^2 + 2k) + 1$
 This is odd. Therefore, if $n$ is odd, $n^2$ is odd. By contrapositive, if $n^2$ is even, then $n$
 Is even.
 
-:::tip
-Tip
-"$n^2$ even implies $n$ even" by contradiction (assume $n^2$ even and $n$ odd, derive that $n^2$ is
-Both even and odd). But the contrapositive proof is cleaner — it is a direct proof of the equivalent
-Statement.
-:::
+:::tip Tip "$n^2$ even implies $n$ even" by contradiction (assume $n^2$ even and $n$ odd, derive
+that $n^2$ is Both even and odd). But the contrapositive proof is cleaner — it is a direct proof of
+the equivalent Statement. :::
 
 <details>
 <summary>Exercise: Prove that if $3n + 2$ is odd, then $n$ is odd (by contrapositive).</summary>
@@ -386,14 +371,15 @@ Assume $n$ is even, so $n = 2k$ for some $k \in \mathbb{'\{'}Z{'\}'}$.
 
 $3n + 2 = 3(2k) + 2 = 6k + 2 = 2(3k + 1)$
 
-Since $3k + 1 \in \mathbb{'\{'}Z{'\}'}$$3n + 2$ is even. By contrapositive, if $3n + 2$ is odd, then $n$ is
-Odd.
+Since $3k + 1 \in \mathbb{'\{'}Z{'\}'}$$3n + 2$ is even. By contrapositive, if $3n + 2$ is odd, then
+$n$ is Odd.
 
 </details>
 
 ### 2.4 Mathematical Induction
 
-Induction proves statements of the form $\forall n \ge n_0, \; P(n)$Where $n_0 \in \mathbb{'\{'}Z{'\}'}$.
+Induction proves statements of the form $\forall n \ge n_0, \; P(n)$Where
+$n_0 \in \mathbb{'\{'}Z{'\}'}$.
 
 #### 2.4.1 Standard (Weak) Induction
 
@@ -500,11 +486,9 @@ Not just $P(k)$.
 **When to use strong induction:** When proving $P(k+1)$ requires not just $P(k)$ but some earlier
 Case $P(j)$ where $j \lt k$.
 
-:::warning
-Weak and strong induction are logically equivalent — anything provable by one is provable
+:::warning Weak and strong induction are logically equivalent — anything provable by one is provable
 By the other. But strong induction can make certain proofs much more natural. Use it when the
-Inductive step needs to reference cases earlier than just $k$.
-:::
+Inductive step needs to reference cases earlier than just $k$. :::
 
 **Worked Example — Every integer $n \ge 2$ is a product of primes:**
 
@@ -535,15 +519,15 @@ Actually, we need $P(8)$: two 4-cent stamps. $P(9)$: one 4-cent + one 5-cent. $P
 Stamps. $P(11)$: ... Hmm, $P(12)$: three 4-cent stamps. $P(13)$: two 4-cent + one 5-cent. $P(14)$:
 One 4-cent + two 5-cent. $P(15)$: three 5-cent stamps.
 
-Let us use base cases $P(12)$$P(13)$$P(14)$$P(15)$. Strong inductive hypothesis: assume $P(j)$
-For all $12 \le j \le k$Where $k \ge 15$.
+Let us use base cases $P(12)$$P(13)$$P(14)$$P(15)$. Strong inductive hypothesis: assume $P(j)$ For
+all $12 \le j \le k$Where $k \ge 15$.
 
 For $P(k+1)$: note that $(k+1) - 4 = k - 3 \ge 12$ (since $k \ge 15$). By strong IH, $P(k-3)$ holds,
 Meaning we can form $(k-3)$ cents. Adding one 4-cent stamp gives $(k-3) + 4 = k+1$ cents.
 
 By strong induction, $P(n)$ holds for all $n \ge 12$. But we should verify the smaller cases: $P(4)$
-Through $P(11)$. We find $P(4)$$P(5)$$P(8)$$P(9)$$P(10)$ hold, but $P(6)$$P(7)$$P(11)$
-Do not. So the correct statement is: all postage $n \ge 8$ except $n = 11$. Or: all $n \ge 12$.
+Through $P(11)$. We find $P(4)$$P(5)$$P(8)$$P(9)$$P(10)$ hold, but $P(6)$$P(7)$$P(11)$ Do not. So
+the correct statement is: all postage $n \ge 8$ except $n = 11$. Or: all $n \ge 12$.
 
 The cleanest formulation: all $n \ge 12$ can be formed. Base cases $P(12)$ through $P(15)$.
 Inductive step as above.
@@ -579,16 +563,14 @@ Counterexample: $2$ is prime and $2$ is even.
 
 When $n = 41$: $41^2 - 41 + 41 = 41^2 = 1681$Which is composite ($41 \times 41$).
 
-:::tip
-To prove a universal claim requires a general proof. To disprove it requires only one
-Counterexample. This asymmetry is fundamental to mathematical logic.
-:::
+:::tip To prove a universal claim requires a general proof. To disprove it requires only one
+Counterexample. This asymmetry is fundamental to mathematical logic. :::
 
 <details>
 <summary>Exercise: Disprove: "For all positive integers $a$ and $b$$\gcd(a+b, a-b) = \gcd(a, b)$."</summary>
 
-Take $a = 3$$b = 1$. Then $\gcd(3+1, 3-1) = \gcd(4, 2) = 2$But $\gcd(3, 1) = 1$. Since
-$2 \ne 1$The statement is false.
+Take $a = 3$$b = 1$. Then $\gcd(3+1, 3-1) = \gcd(4, 2) = 2$But $\gcd(3, 1) = 1$. Since $2 \ne 1$The
+statement is false.
 
 </details>
 
@@ -606,8 +588,8 @@ This proof appeared in Section 2.2. Here we present it with full commentary on e
 
 We proceed by contradiction.
 
-Assume $\sqrt{2} \in \mathbb{'\{'}Q{'\}'}$. Then there exist coprime integers $a, b$ with $b \gt 0$ such that
-$\sqrt{2} = \frac{a}{b}$.
+Assume $\sqrt{2} \in \mathbb{'\{'}Q{'\}'}$. Then there exist coprime integers $a, b$ with $b \gt 0$
+such that $\sqrt{2} = \frac{a}{b}$.
 
 The requirement that $\gcd(a, b) = 1$ is without loss of generality: any rational number can be
 Expressed as a fraction in lowest terms.
@@ -625,7 +607,8 @@ From (2): $b^2$ is even, so $b$ is even (same reasoning as above).
 
 But now $a$ and $b$ are both even, meaning $\gcd(a, b) \ge 2$Contradicting $\gcd(a, b) = 1$.
 
-This contradiction shows our assumption is false. Hence $\sqrt{2} \notin \mathbb{'\{'}Q{'\}'}$. $\blacksquare$
+This contradiction shows our assumption is false. Hence $\sqrt{2} \notin \mathbb{'\{'}Q{'\}'}$.
+$\blacksquare$
 
 ### 3.2 There Are Infinitely Many Primes
 
@@ -651,11 +634,8 @@ So $p_i \nmid N$ for all $i$. This contradicts that some $p_i$ divides $N$.
 
 Therefore, there are infinitely many primes. $\blacksquare$
 
-:::info
-Info
-Example, $2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 + 1 = 30031 = 59 \times 509$. The proof only
-Requires that $N$ has SOME prime factor not in the list.
-:::
+:::info Info Example, $2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 + 1 = 30031 = 59 \times 509$. The
+proof only Requires that $N$ has SOME prime factor not in the list. :::
 
 ### 3.3 $\log_2{3}$ is Irrational
 
@@ -734,29 +714,28 @@ We proved this by contrapositive in Section 2.3. Here are additional divisibilit
 
 **Proof:**
 
-Since $a \mid b$There exists $m \in \mathbb{'\{'}Z{'\}'}$ such that $b = am$. Since $b \mid c$There exists
-$n \in \mathbb{'\{'}Z{'\}'}$ such that $c = bn$.
+Since $a \mid b$There exists $m \in \mathbb{'\{'}Z{'\}'}$ such that $b = am$. Since $b \mid c$There
+exists $n \in \mathbb{'\{'}Z{'\}'}$ such that $c = bn$.
 
 Therefore $c = bn = (am)n = a(mn)$.
 
 Since $mn \in \mathbb{'\{'}Z{'\}'}$We have $a \mid c$. $\blacksquare$
 
-**Theorem:** If $d \mid a$ and $d \mid b$Then $d \mid (ax + by)$ for all $x, y \in \mathbb{'\{'}Z{'\}'}$.
+**Theorem:** If $d \mid a$ and $d \mid b$Then $d \mid (ax + by)$ for all
+$x, y \in \mathbb{'\{'}Z{'\}'}$.
 
 **Proof:**
 
-Since $d \mid a$Write $a = dm$ for some $m \in \mathbb{'\{'}Z{'\}'}$. Since $d \mid b$Write $b = dn$ for
-Some $n \in \mathbb{'\{'}Z{'\}'}$.
+Since $d \mid a$Write $a = dm$ for some $m \in \mathbb{'\{'}Z{'\}'}$. Since $d \mid b$Write $b = dn$
+for Some $n \in \mathbb{'\{'}Z{'\}'}$.
 
 $ax + by = (dm)x + (dn)y = d(mx + ny)$.
 
 Since $mx + ny \in \mathbb{'\{'}Z{'\}'}$$d \mid (ax + by)$. $\blacksquare$
 
-:::note
-This theorem is the foundation of the Euclidean algorithm. The expression $ax + by$ is
+:::note This theorem is the foundation of the Euclidean algorithm. The expression $ax + by$ is
 Called a **linear combination** of $a$ and $b$. The greatest common divisor $\gcd(a, b)$ can always
-Be expressed as a linear combination of $a$ and $b$ (Bezout's identity).
-:::
+Be expressed as a linear combination of $a$ and $b$ (Bezout's identity). :::
 
 ### 3.6 Inequality Proofs
 
@@ -784,8 +763,8 @@ With equality when the vectors are proportional ($a_i = \lambda b_i$ for all $i$
 $\lambda$).
 
 The proof is beyond the scope of this note but uses the fact that $\sum (a_i x + b_i)^2 \ge 0$ for
-All $x \in \mathbb{'\{'}R{'\}'}$And a quadratic in $x$ that is always non-negative must have a non-positive
-Discriminant.
+All $x \in \mathbb{'\{'}R{'\}'}$And a quadratic in $x$ that is always non-negative must have a
+non-positive Discriminant.
 
 <details>
 <summary>Exercise: Prove the AM-GM inequality for three variables: $\frac{a+b+c}{3} \ge \sqrt[3]{abc}$ for $a, b, c \ge 0$.</summary>
@@ -815,8 +794,8 @@ Substituting back gives the result.
 
 For integers $a, b, c$ with $a \ne 0$:
 
-**Definition:** $a \mid b$ (read "$a$ divides $b$") means there exists $k \in \mathbb{'\{'}Z{'\}'}$ such that
-$b = ak$.
+**Definition:** $a \mid b$ (read "$a$ divides $b$") means there exists $k \in \mathbb{'\{'}Z{'\}'}$
+such that $b = ak$.
 
 **Key properties:**
 
@@ -827,8 +806,8 @@ $b = ak$.
 
 **Proof of property 3:**
 
-$a \mid b$ implies $b = ma$ for some $m \in \mathbb{'\{'}Z{'\}'}$. $b \mid a$ implies $a = nb$ for some
-$n \in \mathbb{'\{'}Z{'\}'}$.
+$a \mid b$ implies $b = ma$ for some $m \in \mathbb{'\{'}Z{'\}'}$. $b \mid a$ implies $a = nb$ for
+some $n \in \mathbb{'\{'}Z{'\}'}$.
 
 Substituting: $a = n(ma) = (nm)a$So $(nm - 1)a = 0$. Since $a \ne 0$We have $nm = 1$.
 
@@ -866,11 +845,9 @@ $ac = (b + kn)(d + ln) = bd + bln + dkn + kln^2 = bd + n(bl + dk + kln)$.
 
 Therefore $n \mid (ac - bd)$So $ac \equiv bd \pmod{n}$. $\blacksquare$
 
-:::warning
-Division does NOT work with congruences . From $ac \equiv bc \pmod{n}$You can
-Only conclude $a \equiv b \pmod{n}$ if $\gcd(c, n) = 1$. For example, $6 \equiv 0 \pmod{3}$ and
-$3 \equiv 0 \pmod{3}$But $\frac{6}{3} = 2 \not\equiv \frac{0}{0}$ (undefined).
-:::
+:::warning Division does NOT work with congruences . From $ac \equiv bc \pmod{n}$You can Only
+conclude $a \equiv b \pmod{n}$ if $\gcd(c, n) = 1$. For example, $6 \equiv 0 \pmod{3}$ and
+$3 \equiv 0 \pmod{3}$But $\frac{6}{3} = 2 \not\equiv \frac{0}{0}$ (undefined). :::
 
 <details>
 <summary>Worked Example: Find the last two digits of $7^{100}$.</summary>
@@ -904,8 +881,8 @@ $\{1, 2, \ldots, p-1\}$ modulo $p$):**
 
 Consider the product $1 \cdot 2 \cdot 3 \cdots (p-1) = (p-1)!$.
 
-Modulo $p$The numbers $a, 2a, 3a, \ldots, (p-1)a$ are all nonzero and pairwise non-congruent
-Modulo $p$ (since $ja \equiv ka \pmod{p}$ implies $p \mid (j-k)a$And since $p \nmid a$We get
+Modulo $p$The numbers $a, 2a, 3a, \ldots, (p-1)a$ are all nonzero and pairwise non-congruent Modulo
+$p$ (since $ja \equiv ka \pmod{p}$ implies $p \mid (j-k)a$And since $p \nmid a$We get
 $p \mid (j-k)$Which means $j \equiv k \pmod{p}$And since $1 \le j, k \le p-1$We get $j = k$).
 
 Therefore $\{a, 2a, \ldots, (p-1)a\}$ is a complete residue system modulo $p$ excluding 0, so:
@@ -974,8 +951,8 @@ $$\gcd(a, b) \cdot \mathrm{lcm}(a, b) = |ab|$$
 
 **Proof (using prime factorizations):**
 
-Let $a = \prod p_i^{\alpha_i}$ and $b = \prod p_i^{\beta_i}$ (with $\alpha_i, \beta_i \ge 0$
-Padding with zeros where needed).
+Let $a = \prod p_i^{\alpha_i}$ and $b = \prod p_i^{\beta_i}$ (with $\alpha_i, \beta_i \ge 0$ Padding
+with zeros where needed).
 
 $\gcd(a, b) = \prod p_i^{\min(\alpha_i, \beta_i)}$
 
@@ -1018,8 +995,8 @@ Decrease, the process must eventually reach remainder 0 (by the well-ordering pr
 Follows from the key lemma: $\gcd(a, b) = \gcd(b, a - bq)$ for any integer $q$.
 
 Proof of the key lemma: if $d \mid a$ and $d \mid b$Then $d \mid (a - bq)$. Conversely, if
-$d \mid b$ and $d \mid (a - bq)$Then $d \mid (a - bq + bq) = a$. So $d$ divides both $a$ and $b$
-If and only if $d$ divides both $b$ and $a - bq$. Therefore $\gcd(a, b) = \gcd(b, a - bq)$.
+$d \mid b$ and $d \mid (a - bq)$Then $d \mid (a - bq + bq) = a$. So $d$ divides both $a$ and $b$ If
+and only if $d$ divides both $b$ and $a - bq$. Therefore $\gcd(a, b) = \gcd(b, a - bq)$.
 
 **Claim 4:** $\gcd(r_{n-1}, r_n) = r_n$. Since $r_n \mid r_{n-1}$ (the last step is
 $r_{n-1} = r_n q_{n+1}$), the GCD is $r_n$.
@@ -1065,11 +1042,9 @@ The conclusion ($\sqrt{2}$ is irrational) appears in the hypothesis. This proves
 **How to avoid:** Check that every step of your proof relies only on axioms, definitions, and
 Previously established theorems — never on the statement you are proving.
 
-:::danger
-Circular reasoning is the most dangerous logical fallacy in mathematics because it can
+:::danger Circular reasoning is the most dangerous logical fallacy in mathematics because it can
 Look convincing. Always verify that your proof does not contain the conclusion as an unstated
-Assumption.
-:::
+Assumption. :::
 
 ### 5.2 Assuming the Conclusion
 
@@ -1109,10 +1084,8 @@ Fails.)
 Incorrect negation: "If it rains, the ground does not get wet." (This is a different implication
 Entirely.)
 
-:::warning
-This is one of the most common errors on IB exams. Memorize: the negation of "$P$ implies
-$Q$" is "$P$ AND not $Q$."
-:::
+:::warning This is one of the most common errors on IB exams. Memorize: the negation of "$P$ implies
+$Q$" is "$P$ AND not $Q$." :::
 
 ### 5.4 Induction Base Case Errors
 
@@ -1165,22 +1138,20 @@ Would not suffice because $F_{k+1}$ depends on $F_{k-1}$ as well.
 $P(k-1)$ or earlier, weak induction's hypothesis is insufficient.
 
 **Common mistake (reverse):** Always using strong induction "to be safe." While not logically wrong,
-This is unnecessary and makes proofs harder to read. Use weak induction unless the structure
-Of the problem requires strong induction.
+This is unnecessary and makes proofs harder to read. Use weak induction unless the structure Of the
+problem requires strong induction.
 
-:::tip
-**Rule of thumb:** If the statement for $n$ depends only on the statement for $n-1$ (like
-$n! = n \cdot (n-1)!$), use weak induction. If on earlier terms (like
-$F_n = F_{n-1} + F_{n-2}$), use strong induction.
-:::
+:::tip **Rule of thumb:** If the statement for $n$ depends only on the statement for $n-1$ (like
+$n! = n \cdot (n-1)!$), use weak induction. If on earlier terms (like $F_n = F_{n-1} + F_{n-2}$),
+use strong induction. :::
 
 ### 5.6 Confusing Converse with Contrapositive
 
-| Original | $P \implies Q$ |
+| Original                    | $P \implies Q$           |
 | :-------------------------- | :----------------------- |
 | Contrapositive (equivalent) | $\neg Q \implies \neg P$ |
-| Converse (NOT equivalent) | $Q \implies P$ |
-| Inverse (NOT equivalent) | $\neg P \implies \neg Q$ |
+| Converse (NOT equivalent)   | $Q \implies P$           |
+| Inverse (NOT equivalent)    | $\neg P \implies \neg Q$ |
 
 A true implication does NOT guarantee a true converse.
 
@@ -1199,33 +1170,31 @@ Showing $P$ is false does NOT disprove the implication.
 
 ### 5.8 Incorrect Quantifier Negation
 
-| Statement | Correct Negation |
+| Statement                            | Correct Negation                          |
 | :----------------------------------- | :---------------------------------------- |
-| $\forall x, \; P(x)$ | $\exists x, \; \neg P(x)$ |
-| $\exists x, \; P(x)$ | $\forall x, \; \neg P(x)$ |
+| $\forall x, \; P(x)$                 | $\exists x, \; \neg P(x)$                 |
+| $\exists x, \; P(x)$                 | $\forall x, \; \neg P(x)$                 |
 | $\forall x, \; \exists y, \; P(x,y)$ | $\exists x, \; \forall y, \; \neg P(x,y)$ |
 | $\exists x, \; \forall y, \; P(x,y)$ | $\forall x, \; \exists y, \; \neg P(x,y)$ |
 
-:::danger
-The order of quantifiers matters. "For every person, there exists a mother" is very
+:::danger The order of quantifiers matters. "For every person, there exists a mother" is very
 Different from "There exists a person who is the mother of everyone." The negation of "for every x
 There exists y" is "there exists x such that for every y" — quantifiers flip but their order is
-Preserved.
-:::
+Preserved. :::
 
 ---
 
 ## 6. Proof Techniques Summary
 
-| Method | When to Use | Key Idea |
+| Method             | When to Use                                        | Key Idea                           |
 | :----------------- | :------------------------------------------------- | :--------------------------------- |
-| Direct | Straightforward chain from P to Q | Assume P, derive Q |
-| Contradiction | Statement is a negation, or no obvious direct path | Assume not-P, find contradiction |
-| Contrapositive | Not-Q gives more to work with than P | Prove not-Q implies not-P |
-| Induction (weak) | Statement depends on previous case | Base case + inductive step |
-| Induction (strong) | Statement depends on multiple previous cases | Base cases + strong inductive step |
-| Exhaustion | Finite, small number of cases | Check each case |
-| Counterexample | Disproving a universal claim | Find one exception |
+| Direct             | Straightforward chain from P to Q                  | Assume P, derive Q                 |
+| Contradiction      | Statement is a negation, or no obvious direct path | Assume not-P, find contradiction   |
+| Contrapositive     | Not-Q gives more to work with than P               | Prove not-Q implies not-P          |
+| Induction (weak)   | Statement depends on previous case                 | Base case + inductive step         |
+| Induction (strong) | Statement depends on multiple previous cases       | Base cases + strong inductive step |
+| Exhaustion         | Finite, small number of cases                      | Check each case                    |
+| Counterexample     | Disproving a universal claim                       | Find one exception                 |
 
 <details>
 <summary>Comprehensive Exercise Set</summary>
@@ -1255,9 +1224,9 @@ Preserved.
 <summary>Answers to Selected Exercises</summary>
 
 **Exercise 1:** Assume $\sqrt{6} = \frac{a}{b}$ in lowest terms. Then $a^2 = 6b^2$So $a^2$ is even
-(divisible by 2), hence $a$ is even. Write $a = 2k$. Then $4k^2 = 6b^2$So $2k^2 = 3b^2$. This
-Means $3b^2$ is even, so $b^2$ is even, so $b$ is even. Both $a$ and $b$ are even, contradicting
-Lowest terms.
+(divisible by 2), hence $a$ is even. Write $a = 2k$. Then $4k^2 = 6b^2$So $2k^2 = 3b^2$. This Means
+$3b^2$ is even, so $b^2$ is even, so $b$ is even. Both $a$ and $b$ are even, contradicting Lowest
+terms.
 
 **Exercise 2:** Among any three consecutive integers $n, n+1, n+2$: one is divisible by 3 (since one
 Of $n, n+1, n+2$ is a multiple of 3), and at least one is even (among any two consecutive integers,
@@ -1271,7 +1240,8 @@ $n^2 \equiv 4 \equiv 1 \pmod{3}$. In either case $n^2 \not\equiv 0 \pmod{3}$So $
 **Exercise 5:** Counterexample: $x = 0.5$. Then $x^2 = 0.25 \not\gt 0.5$. Also $x = 0$:
 $0^2 = 0 \not\gt 0$.
 
-**Exercise 6:** $\exists x \in \mathbb{'\{'}R{'\}'}, \; \forall y \in \mathbb{'\{'}R{'\}'}, \; x + y \ne 0$.
+**Exercise 6:**
+$\exists x \in \mathbb{'\{'}R{'\}'}, \; \forall y \in \mathbb{'\{'}R{'\}'}, \; x + y \ne 0$.
 
 **Exercise 10:** $a \equiv b \pmod{m}$ means $m \mid (a-b)$. Since $n \mid m$ and $m \mid (a-b)$By
 Transitivity of divisibility, $n \mid (a-b)$. Therefore $a \equiv b \pmod{n}$.
@@ -1280,14 +1250,15 @@ Transitivity of divisibility, $n \mid (a-b)$. Therefore $a \equiv b \pmod{n}$.
 
 ---
 
-:::tip
-Diagnostic Test
-Ready to test your understanding of **Proof and Logic**? The [diagnostic test](/docs/ib/maths/diagnostics/diag-proof-logic) contains the hardest questions within the IB specification for this topic, each with a full worked solution.
+:::tip Diagnostic Test Ready to test your understanding of **Proof and Logic**? The
+[diagnostic test](/docs/ib/maths/diagnostics/diag-proof-logic) contains the hardest questions within
+the IB specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Proof and Logic with other IB mathematics topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Proof and
+Logic with other IB mathematics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/ib/maths/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/ib/maths/diagnostics/diagnostic-guide) for instructions on self-marking
+and building a personal test matrix. :::
 
 ## Worked Examples
 

@@ -1,6 +1,8 @@
 ---
 title: Electricity
-description: "Electricity — 1. Electrical Circuits; 1.1 Circuit Symbols; 1.2 Current, Potential Difference, and Resistance; 1.3 What Current Actually Is."
+description:
+  'Electricity — 1. Electrical Circuits; 1.1 Circuit Symbols; 1.2 Current, Potential Difference, and
+  Resistance; 1.3 What Current Actually Is.'
 date: 2026-04-14
 tags:
   - Physics
@@ -9,11 +11,10 @@ categories:
   - Physics
 slug: electricity
 ---
+
 ## Electricity
 
-:::info
-Board Coverage AQA Paper 1 & 2 | Edexcel Paper 1 & 2 | OCR A Gateway P4 | WJEC P4
-:::
+:::info Board Coverage AQA Paper 1 & 2 | Edexcel Paper 1 & 2 | OCR A Gateway P4 | WJEC P4 :::
 
 <PhetSimulation simulationId="circuit-construction-kit-dc" title="Circuit Construction Kit: DC" />
 
@@ -23,22 +24,22 @@ Explore the simulation above to develop intuition for this topic.
 
 ### 1.1 Circuit Symbols
 
-| Symbol | Component |
+| Symbol                                 | Component            |
 | -------------------------------------- | -------------------- |
-| Long thin line, short thick line | Cell |
-| Two pairs of lines | Battery |
-| Single horizontal line | Wire |
-| Vertical line across wire | Switch (open/closed) |
-| Zigzag | Resistor |
-| Rectangle | Variable resistor |
-| Circle with X | Lamp |
-| Circle with A | Ammeter |
-| Circle with V | Voltmeter |
-| Two parallel lines (different lengths) | Capacitor |
-| Circle with M | Motor |
-| Three horizontal lines (decreasing) | Thermistor |
-| Circle with arrow (diode) | Diode |
-| Circle with arrow and bar | LED |
+| Long thin line, short thick line       | Cell                 |
+| Two pairs of lines                     | Battery              |
+| Single horizontal line                 | Wire                 |
+| Vertical line across wire              | Switch (open/closed) |
+| Zigzag                                 | Resistor             |
+| Rectangle                              | Variable resistor    |
+| Circle with X                          | Lamp                 |
+| Circle with A                          | Ammeter              |
+| Circle with V                          | Voltmeter            |
+| Two parallel lines (different lengths) | Capacitor            |
+| Circle with M                          | Motor                |
+| Three horizontal lines (decreasing)    | Thermistor           |
+| Circle with arrow (diode)              | Diode                |
+| Circle with arrow and bar              | LED                  |
 
 ### 1.2 Current, Potential Difference, and Resistance
 
@@ -64,9 +65,9 @@ In a metal wire, current is the flow of free (delocalised) electrons. The number
 Passing a point per second is enormous: even a current of 1 A corresponds to about
 $6.25 \times
 10^{18}$ electrons per second. The drift velocity of these electrons is surprisingly
-Slow -- about 0.1 mm/s in a copper wire carrying 1 A. The signal (the electric field that
-Drives the electrons) propagates at nearly the speed of light, which is why a light turns on
-Essentially instantly when you flip the switch, even though the individual electrons move slowly.
+Slow -- about 0.1 mm/s in a copper wire carrying 1 A. The signal (the electric field that Drives the
+electrons) propagates at nearly the speed of light, which is why a light turns on Essentially
+instantly when you flip the switch, even though the individual electrons move slowly.
 
 ### 1.4 Ohm's Law
 
@@ -86,11 +87,10 @@ $$V = IR = 0.5 \times 60 = 30 \mathrm{ V{}$$
 
 ### 1.5 Why Ohm's Law Is Not a Universal Law
 
-Ohm's law applies only to ohmic conductors ( metals at constant temperature). Many
-Components do not obey Ohm's law: a filament lamp has increasing resistance with current (because
-The filament heats up), a diode only conducts in one direction, and a thermistor changes resistance
-With temperature. The term "law" is historical; it is better thought of as a property of certain
-Materials .
+Ohm's law applies only to ohmic conductors ( metals at constant temperature). Many Components do not
+obey Ohm's law: a filament lamp has increasing resistance with current (because The filament heats
+up), a diode only conducts in one direction, and a thermistor changes resistance With temperature.
+The term "law" is historical; it is better thought of as a property of certain Materials .
 
 ## 2. Series and Parallel Circuits
 
@@ -102,9 +102,9 @@ Components are connected one after another in a single loop.
 
 - Current is the same through all components: $I_1 = I_2 = I_3 = \ldots$
 - Total potential difference is the sum of the p.d. Across each component:
- $V_{\mathrm{total{}} = V_1 + V_2 + V_3 + \ldots$
+  $V_{\mathrm{total{}} = V_1 + V_2 + V_3 + \ldots$
 - Total resistance is the sum of individual resistances:
- $R_{\mathrm{total{}} = R_1 + R_2 + R_3 + \ldots$
+  $R_{\mathrm{total{}} = R_1 + R_2 + R_3 + \ldots$
 - If one component fails, the whole circuit breaks
 
 ### 2.2 Parallel Circuits
@@ -114,7 +114,7 @@ Components are connected in separate branches.
 **Rules:**
 
 - Total current is the sum of the currents in each branch:
- $I_{\mathrm{total{}} = I_1 + I_2 + I_3 + \ldots$
+  $I_{\mathrm{total{}} = I_1 + I_2 + I_3 + \ldots$
 - Potential difference is the same across each branch: $V_1 = V_2 = V_3 = \ldots$
 - $\frac{1}{R_{\mathrm{total{}}} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3} + \ldots$
 - If one branch fails, other branches continue to work
@@ -233,7 +233,7 @@ In the UK, mains electricity is supplied at approximately 230 V (AC, 50 Hz).
 Power stations to consumers.
 
 - **Step-up transformers** increase the voltage at power stations (reducing current, which reduces
- energy losses in cables)
+  energy losses in cables)
 - **Step-down transformers** decrease the voltage for safe domestic use
 
 **Power rating:** Every electrical appliance has a power rating (in watts or kilowatts) that tells
@@ -313,11 +313,11 @@ Outdoors.
 
 ### 5.6 Electrical Hazards
 
-| Hazard | Cause | Prevention |
+| Hazard         | Cause                               | Prevention                                      |
 | -------------- | ----------------------------------- | ----------------------------------------------- |
-| Electric shock | Contact with live wire | Insulation, earthing, double insulation |
-| Fire | Overheating due to too much current | Fuses, circuit breakers, correct wire thickness |
-| Electrocution | Wet conditions + electricity | Keep appliances away from water |
+| Electric shock | Contact with live wire              | Insulation, earthing, double insulation         |
+| Fire           | Overheating due to too much current | Fuses, circuit breakers, correct wire thickness |
+| Electrocution  | Wet conditions + electricity        | Keep appliances away from water                 |
 
 ## 6. Static Electricity
 
@@ -393,67 +393,67 @@ $$V = \varepsilon - Ir = 9 - 2 \times 0.5 = 8 \mathrm{ V{}$$
 ## Common Pitfalls
 
 - **Confusing series and parallel circuit rules.** Current adds in parallel; resistance adds in
- series.
+  series.
 - **Placing ammeters in parallel or voltmeters in series.** Ammeters must be in series (low
- resistance); voltmeters must be in parallel (high resistance).
+  resistance); voltmeters must be in parallel (high resistance).
 - **Forgetting that $P = I^2R$ and $P = V^2/R$ only apply to resistive components.**
 - **Using the wrong fuse rating.** The fuse should be slightly above the normal operating current,
- not much higher.
+  not much higher.
 - **Confusing the live and neutral wires.** The live wire is at the supply voltage; the neutral wire
- is at approximately 0 V.
+  is at approximately 0 V.
 - **Forgetting to convert units** (kW to W, hours to seconds) in energy calculations.
 - **Assuming the total resistance in parallel is the sum of individual resistances.** It is the
- reciprocal of the sum of reciprocals.
+  reciprocal of the sum of reciprocals.
 - **Confusing EMF and terminal p.d.** EMF is the total energy per unit charge supplied; terminal
- p.d. Is what is available to the external circuit (EMF minus internal losses).
+  p.d. Is what is available to the external circuit (EMF minus internal losses).
 - **Measuring current with a voltmeter or voltage with an ammeter.** Ammeters measure current and
- are placed in series; voltmeters measure potential difference and are placed in parallel.
+  are placed in series; voltmeters measure potential difference and are placed in parallel.
 
 ## Practice Questions
 
 1. A circuit has a 9 V battery connected to two resistors of 3 $\Omega$ and 6 $\Omega$ in series.
- Calculate the total resistance, the current, and the p.d. Across each resistor.
+   Calculate the total resistance, the current, and the p.d. Across each resistor.
 
 2. Three resistors of 4 $\Omega$6 $\Omega$And 12 $\Omega$ are connected in parallel to a 12 V
- supply. Calculate the current through each resistor and the total current.
+   supply. Calculate the current through each resistor and the total current.
 
 3. A 60 W bulb is connected to the 230 V mains. Calculate the current it draws and suggest an
- appropriate fuse rating.
+   appropriate fuse rating.
 
 4. Explain why a filament lamp is a non-ohmic conductor, referring to its I-V characteristic.
 
 5. An electric heater has a power rating of 1.5 kW. Calculate the energy transferred when it is used
- for 45 minutes, giving your answer in kWh and in joules.
+   for 45 minutes, giving your answer in kWh and in joules.
 
 6. Describe the function of each of the three wires in a UK mains plug.
 
 7. A thermistor has a resistance of 200 $\Omega$ at $20^{\circ}\mathrm{C{}$ and 50 $\Omega$ at
- $80^{\circ}\mathrm{C{}$. It is connected in series with a 100 $\Omega$ fixed resistor to a 12 V
- supply. Calculate the current at each temperature.
+   $80^{\circ}\mathrm{C{}$. It is connected in series with a 100 $\Omega$ fixed resistor to a 12 V
+   supply. Calculate the current at each temperature.
 
 8. Explain why the national grid uses high voltages for transmission.
 
 9. Calculate the cost of running a 200 W television for 6 hours per day for 30 days, at a rate of 20
- p per kWh.
+   p per kWh.
 
 10. Describe how static electricity is used in a spray paint gun, explaining the role of electric
- fields.
+    fields.
 
 11. A battery of EMF 12 V and internal resistance 1.5 $\Omega$ is connected to an external circuit.
- The terminal p.d. Is 10.5 V. Calculate the current and the external resistance.
+    The terminal p.d. Is 10.5 V. Calculate the current and the external resistance.
 
 12. A 3 $\Omega$ resistor and a 6 $\Omega$ resistor are connected in parallel, and this combination
- is connected in series with a 2 $\Omega$ resistor to a 12 V supply. Calculate the current
- through each resistor and the power dissipated in each.
+    is connected in series with a 2 $\Omega$ resistor to a 12 V supply. Calculate the current
+    through each resistor and the power dissipated in each.
 
 13. Explain the difference between a fuse and a circuit breaker. State one advantage of each.
 
 14. A hairdryer rated at 2000 W is connected to the 230 V mains. Calculate the current it draws.
- Explain why it is important not to use an extension lead rated for 5 A with this appliance.
+    Explain why it is important not to use an extension lead rated for 5 A with this appliance.
 
 15. Two identical resistors of resistance $R$ are connected first in series and then in parallel to
- the same battery. Show that the ratio of the power dissipated in the parallel arrangement to the
- power dissipated in the series arrangement is 4:1.
+    the same battery. Show that the ratio of the power dissipated in the parallel arrangement to the
+    power dissipated in the series arrangement is 4:1.
 
 ## 8. Worked Example: Combined Series-Parallel Circuit with Power
 
@@ -545,11 +545,11 @@ Increased by a factor of 10, the power loss decreases by a factor of 100. If a p
 Generates $500 \mathrm{ MW{}$ and the cable resistance is $5 \mathrm{ {}\Omega$:
 
 - At $25 \mathrm{ kV{}$: $I = 20000 \mathrm{ A{}$
- $P_{\mathrm{loss{}} = 20000^2 \times 5 = 2 \times 10^9 \mathrm{ W{}$ = 2000 MW (four times the
- generated power -- absurd)
+  $P_{\mathrm{loss{}} = 20000^2 \times 5 = 2 \times 10^9 \mathrm{ W{}$ = 2000 MW (four times the
+  generated power -- absurd)
 - At $400 \mathrm{ kV{}$: $I = 1250 \mathrm{ A{}$
- $P_{\mathrm{loss{}} = 1250^2 \times 5 = 7.8 \times 10^6 \mathrm{ W{}$ = 7.8 MW (1.6% of generated
- power -- feasible)
+  $P_{\mathrm{loss{}} = 1250^2 \times 5 = 7.8 \times 10^6 \mathrm{ W{}$ = 7.8 MW (1.6% of generated
+  power -- feasible)
 
 ## 13. Worked Example: Cost of Electrical Appliances
 
@@ -582,12 +582,12 @@ A filament lamp is connected to a variable power supply. The following measureme
 
 | PD (V) | Current (A) | Resistance ($\Omega$) |
 | ------ | ----------- | --------------------- |
-| 2.0 | 0.20 | 10.0 |
-| 4.0 | 0.35 | 11.4 |
-| 6.0 | 0.45 | 13.3 |
-| 8.0 | 0.52 | 15.4 |
-| 10.0 | 0.57 | 17.5 |
-| 12.0 | 0.60 | 20.0 |
+| 2.0    | 0.20        | 10.0                  |
+| 4.0    | 0.35        | 11.4                  |
+| 6.0    | 0.45        | 13.3                  |
+| 8.0    | 0.52        | 15.4                  |
+| 10.0   | 0.57        | 17.5                  |
+| 12.0   | 0.60        | 20.0                  |
 
 The resistance increases from 10 $\Omega$ at 2 V to 20 $\Omega$ at 12 V. This confirms that the
 Filament lamp is non-ohmic: the resistance is not constant. The I-V graph curves away from the
@@ -595,75 +595,75 @@ Straight line because the filament heats up as the current increases.
 
 ## 15. Summary Table: Series vs Parallel Circuits
 
-| Property | Series | Parallel |
-| ---------------------- | ----------------------------------------- | ----------------------------------------------- |
-| Current | Same through all components | Splits at junctions; adds up |
-| Voltage | Splits across components; adds up | Same across all branches |
-| Resistance | $R_{\mathrm{total{}} = R_1 + R_2 + \cdots$ | $1/R_{\mathrm{total{}} = 1/R_1 + 1/R_2 + \cdots$ |
-| If one component fails | Whole circuit breaks | Other branches continue working |
-| Adding more resistors | Increases $R_{\mathrm{total{}}$ | Decreases $R_{\mathrm{total{}}$ |
-| Example | Old Christmas tree lights | Household wiring |
+| Property               | Series                                     | Parallel                                         |
+| ---------------------- | ------------------------------------------ | ------------------------------------------------ |
+| Current                | Same through all components                | Splits at junctions; adds up                     |
+| Voltage                | Splits across components; adds up          | Same across all branches                         |
+| Resistance             | $R_{\mathrm{total{}} = R_1 + R_2 + \cdots$ | $1/R_{\mathrm{total{}} = 1/R_1 + 1/R_2 + \cdots$ |
+| If one component fails | Whole circuit breaks                       | Other branches continue working                  |
+| Adding more resistors  | Increases $R_{\mathrm{total{}}$            | Decreases $R_{\mathrm{total{}}$                  |
+| Example                | Old Christmas tree lights                  | Household wiring                                 |
 
 ## 16. Safety Features Summary
 
-| Feature | How It Works | What It Protects |
+| Feature           | How It Works                      | What It Protects                            |
 | ----------------- | --------------------------------- | ------------------------------------------- |
-| Fuse | Thin wire melts at a set current | Prevents fire from overheating |
-| Circuit breaker | Electromagnetic switch trips | Prevents fire; reusable |
-| Earth wire | Low-resistance path to ground | Prevents electric shock from faulty casing |
-| Double insulation | Plastic casing, no earth needed | Prevents shock from internal faults |
-| RCD | Compares live and neutral current | Detects current leakage to earth; very fast |
-| Insulation | Non-conductive coating on wires | Prevents contact with live conductors |
+| Fuse              | Thin wire melts at a set current  | Prevents fire from overheating              |
+| Circuit breaker   | Electromagnetic switch trips      | Prevents fire; reusable                     |
+| Earth wire        | Low-resistance path to ground     | Prevents electric shock from faulty casing  |
+| Double insulation | Plastic casing, no earth needed   | Prevents shock from internal faults         |
+| RCD               | Compares live and neutral current | Detects current leakage to earth; very fast |
+| Insulation        | Non-conductive coating on wires   | Prevents contact with live conductors       |
 
 ## 17. Practice Questions (Additional)
 
-16. A circuit contains a $9 \mathrm{ V{}$ battery, a $100 \mathrm{ {}\Omega$ resistor in series with a
- parallel combination of $200 \mathrm{ {}\Omega$ and $300 \mathrm{ {}\Omega$ resistors. Calculate
- the current through each resistor and the power dissipated in the $200 \mathrm{ {}\Omega$
- resistor.
+16. A circuit contains a $9 \mathrm{ V{}$ battery, a $100 \mathrm{ {}\Omega$ resistor in series with
+    a parallel combination of $200 \mathrm{ {}\Omega$ and $300 \mathrm{ {}\Omega$ resistors.
+    Calculate the current through each resistor and the power dissipated in the
+    $200 \mathrm{ {}\Omega$ resistor.
 
 17. A student connects an ammeter in parallel with a resistor. Explain why this is dangerous and
- what will happen.
+    what will happen.
 
 18. A $6 \mathrm{ V{}$ battery with internal resistance $0.3 \mathrm{ {}\Omega$ is connected to an
- external circuit. The terminal PD is $5.4 \mathrm{ V{}$. Calculate the current and the external
- resistance.
+    external circuit. The terminal PD is $5.4 \mathrm{ V{}$. Calculate the current and the external
+    resistance.
 
 19. Design a potential divider circuit using a $9 \mathrm{ V{}$ battery and two resistors that
- produces an output voltage of $3 \mathrm{ V{}$. Specify the values of both resistors.
+    produces an output voltage of $3 \mathrm{ V{}$. Specify the values of both resistors.
 
 20. Explain the difference between a thermistor and an LDR. Describe a sensing circuit for each and
- explain how the output voltage changes as the sensed quantity changes.
+    explain how the output voltage changes as the sensed quantity changes.
 
 21. A hairdryer rated at $1800 \mathrm{ W{}$ is connected to the $230 \mathrm{ V{}$ mains. Calculate
- the current it draws. If the mains cable has a resistance of $0.5 \mathrm{ {}\Omega$Calculate
- the power lost in the cable and the voltage reaching the hairdryer.
+    the current it draws. If the mains cable has a resistance of $0.5 \mathrm{ {}\Omega$Calculate
+    the power lost in the cable and the voltage reaching the hairdryer.
 
-22. Three identical resistors, each of resistance $R$Are connected to a battery. Calculate the
- total resistance when they are connected (a) all in series, (b) all in parallel, and (c) two in
- parallel with the third in series.
+22. Three identical resistors, each of resistance $R$Are connected to a battery. Calculate the total
+    resistance when they are connected (a) all in series, (b) all in parallel, and (c) two in
+    parallel with the third in series.
 
 23. Explain why the resistance of a filament lamp increases with temperature, while the resistance
- of a thermistor (NTC) decreases with temperature.
+    of a thermistor (NTC) decreases with temperature.
 
 24. A mobile phone charger has an output of $5 \mathrm{ V{}$ and $2 \mathrm{ A{}$. If the phone
- battery has a capacity of $3000 \mathrm{ mAh{}$How long does it take to charge from empty?
- Calculate the energy transferred to the battery during a full charge.
+    battery has a capacity of $3000 \mathrm{ mAh{}$How long does it take to charge from empty?
+    Calculate the energy transferred to the battery during a full charge.
 
-25. A circuit contains a variable resistor, a fixed resistor of $470 \mathrm{ {}\Omega$And an LED
- in series with a $9 \mathrm{ V{}$ battery. The LED requires a minimum current of
- $10 \mathrm{ mA{}$ to light and has a forward voltage drop of $2 \mathrm{ V{}$. Calculate the
- range of resistance values for the variable resistor that keeps the LED lit without exceeding a
- maximum current of $20 \mathrm{ mA{}$.
+25. A circuit contains a variable resistor, a fixed resistor of $470 \mathrm{ {}\Omega$And an LED in
+    series with a $9 \mathrm{ V{}$ battery. The LED requires a minimum current of $10 \mathrm{ mA{}$
+    to light and has a forward voltage drop of $2 \mathrm{ V{}$. Calculate the range of resistance
+    values for the variable resistor that keeps the LED lit without exceeding a maximum current of
+    $20 \mathrm{ mA{}$.
 
 ## Extended Worked Examples
 
 ### Example 26: Energy and Cost of Household Appliances
 
 A household uses the following appliances daily: a $2 \mathrm{ kW{}$ heater for 4 hours, six
-$10 \mathrm{ W{}$ LED lights for 6 hours, a $200 \mathrm{ W{}$ TV for 3 hours, and a $3 \mathrm{ kW{}$
-Kettle for $0.5 \mathrm{ hours{}$. Electricity costs $28 \mathrm{p{}$ per kWh. Calculate the daily and
-Monthly (30-day) cost.
+$10 \mathrm{ W{}$ LED lights for 6 hours, a $200 \mathrm{ W{}$ TV for 3 hours, and a
+$3 \mathrm{ kW{}$ Kettle for $0.5 \mathrm{ hours{}$. Electricity costs $28 \mathrm{p{}$ per kWh.
+Calculate the daily and Monthly (30-day) cost.
 
 **Step 1: Energy used by each appliance**
 
@@ -682,11 +682,8 @@ $$\mathrm{Daily cost{} = 10.46 \times 28 = 292.9 \mathrm{ p{} = \pounds 2.93$$
 
 $$\mathrm{Monthly cost{} = 292.9 \times 30 = 8787 \mathrm{ p{} = \pounds 87.87$$
 
-:::info
-Info
-Heating appliances dominate household electricity bills. Switching to a more efficient heater or
-Improving insulation can significantly reduce costs.
-:::
+:::info Info Heating appliances dominate household electricity bills. Switching to a more efficient
+heater or Improving insulation can significantly reduce costs. :::
 
 ### Example 27: Parallel Circuit with Multiple Branches
 
@@ -742,10 +739,8 @@ $$P_{\mathrm{internal{}} = I^2 r = 36 \times 1.5 = 54 \mathrm{ W{}$$
 
 This energy is converted to heat inside the battery, which can cause it to overheat or even explode.
 
-:::warning
-Warning
-The energy is dissipated as heat inside the battery. Never short-circuit a battery.
-:::
+:::warning Warning The energy is dissipated as heat inside the battery. Never short-circuit a
+battery. :::
 
 ## Common Pitfalls Extended
 
@@ -769,22 +764,22 @@ $P_{\mathrm{peak{}} = 2P_{\mathrm{avg{}}$.
 ## Additional Practice Problems
 
 26. A $12 \mathrm{ V{}$ car battery has internal resistance $0.05 \Omega$. The starter motor draws
- $200 \mathrm{ A{}$. Calculate (a) the terminal PD, (b) the power delivered to the starter, and
- (c) the power wasted in the battery.
+    $200 \mathrm{ A{}$. Calculate (a) the terminal PD, (b) the power delivered to the starter, and
+    (c) the power wasted in the battery.
 
 27. Three identical resistors each of $R$ are connected to a battery. Calculate the total resistance
- for all possible arrangements and rank them from largest to smallest.
+    for all possible arrangements and rank them from largest to smallest.
 
 28. An electric shower has a power rating of $8.5 \mathrm{ kW{}$ and operates at $230 \mathrm{ V{}$.
- Calculate the current it draws and explain why it requires a dedicated high-current circuit.
+    Calculate the current it draws and explain why it requires a dedicated high-current circuit.
 
 29. A student sets up a circuit with a thermistor and a fixed resistor in series with a
- $6 \mathrm{ V{}$ battery. The thermistor has resistance $2000 \Omega$ at $20°\mathrm{C{}$ and
- $500 \Omega$ at $60°\mathrm{C{}$. Calculate the voltage across the thermistor at each
- temperature.
+    $6 \mathrm{ V{}$ battery. The thermistor has resistance $2000 \Omega$ at $20°\mathrm{C{}$ and
+    $500 \Omega$ at $60°\mathrm{C{}$. Calculate the voltage across the thermistor at each
+    temperature.
 
 30. Explain the difference between conventional current and electron flow. Why do we still use
- conventional current in circuit diagrams?
+    conventional current in circuit diagrams?
 
 ## Practice Problems
 
@@ -864,8 +859,8 @@ $Q = It = 0.3 \times 120 = 36 \mathrm{ C{}$.
 <details>
 <summary>Question 5: Potential difference and energy transfer</summary>
 
-A $10 \Omega$ resistor in a circuit has a current of $0.5 \mathrm{ A{}$ flowing through it. Calculate
-The energy transferred by the resistor in 30 seconds.
+A $10 \Omega$ resistor in a circuit has a current of $0.5 \mathrm{ A{}$ flowing through it.
+Calculate The energy transferred by the resistor in 30 seconds.
 
 </details>
 

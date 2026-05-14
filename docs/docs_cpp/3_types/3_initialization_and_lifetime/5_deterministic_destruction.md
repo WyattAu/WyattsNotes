@@ -1,6 +1,8 @@
 ---
 title: Deterministic Destruction
-description: "C++: Deterministic Destruction — Destructor Semantics; When Destructors Run; The Reverse-Construction-Order Guarantee. and examination."
+description:
+  'C++: Deterministic Destruction — Destructor Semantics; When Destructors Run; The
+  Reverse-Construction-Order Guarantee. and examination.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -8,6 +10,7 @@ categories:
   - Cpp
 slug: deterministic-destruction
 ---
+
 Import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 C++ guarantees that destructors run at well-defined points in program execution. Unlike Java
@@ -40,12 +43,12 @@ public:
 ### When Destructors Run
 
 1. **Block scope exit** (normal or exception): Local automatic objects destroyed in reverse order of
- construction.
+   construction.
 2. **`delete` expression**: The pointed-to object is destroyed before deallocation.
 3. **Program termination**: Static and thread-local objects destroyed in reverse order of
- construction.
+   construction.
 4. **Container operations**: `vector::erase``vector::clear``map::erase` destroy the removed
- elements.
+   elements.
 5. **Algorithm operations**: `std::destroy``std::destroy_n``std::destroy_at`.
 
 ### The Reverse-Construction-Order Guarantee
@@ -474,13 +477,13 @@ See **Module 10 (Ownership and RAII)** for comprehensive coverage of this patter
 Java `finalize()` (deprecated in Java 9, removed in Java 18) and C# finalizers are fundamentally
 Different from C++ destructors:
 
-| Property | C++ Destructor | Java Finalizer | C# Finalizer |
+| Property              | C++ Destructor                       | Java Finalizer                 | C# Finalizer                   |
 | :-------------------- | :----------------------------------- | :----------------------------- | :----------------------------- |
-| **When called** | Deterministic (scope exit, `delete`) | Non-deterministic (GC decides) | Non-deterministic (GC decides) |
-| **Order guarantee** | Reverse of construction | No ordering guarantee | No ordering guarantee |
-| **Exception safety** | Terminates if throws during unwind | Ignored | Ignored |
-| **Performance** | Zero overhead (same as scope exit) | Significant GC overhead | Significant GC overhead |
-| **Guaranteed to run** | Yes (for automatic/static storage) | No (GC may never run) | No (GC may never run) |
+| **When called**       | Deterministic (scope exit, `delete`) | Non-deterministic (GC decides) | Non-deterministic (GC decides) |
+| **Order guarantee**   | Reverse of construction              | No ordering guarantee          | No ordering guarantee          |
+| **Exception safety**  | Terminates if throws during unwind   | Ignored                        | Ignored                        |
+| **Performance**       | Zero overhead (same as scope exit)   | Significant GC overhead        | Significant GC overhead        |
+| **Guaranteed to run** | Yes (for automatic/static storage)   | No (GC may never run)          | No (GC may never run)          |
 
 ### Why Java/C# Need `using` / `try-with-resources`
 

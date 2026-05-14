@@ -1,6 +1,8 @@
 ---
 title: Installation
-description: "Installation — IDE choice; Standalone Dart SDK; macOS; Linux (Debian/Ubuntu) with worked examples and exam-style questions."
+description:
+  'Installation — IDE choice; Standalone Dart SDK; macOS; Linux (Debian/Ubuntu) with worked examples
+  and exam-style questions.'
 date: 2025-07-12T15:51:40.399Z
 tags:
   - Dart
@@ -8,6 +10,7 @@ categories:
   - Dart
 slug: installation
 ---
+
 ## IDE choice
 
 My recommended IDE for Dart is modifying the text editor VSCode with Dart and Flutter extensions:
@@ -54,8 +57,8 @@ sudo apt install dart
 
 ### Windows
 
-Download the installer from https://dart.dev/get-dart. Run the `.exe` — it adds
-`dart` to your PATH automatically. Verify with:
+Download the installer from https://dart.dev/get-dart. Run the `.exe` — it adds `dart` to your PATH
+automatically. Verify with:
 
 ```bash
 dart --version
@@ -165,25 +168,25 @@ Output.
 
 Install VS Code, then add these extensions:
 
-| Extension | ID | Purpose |
+| Extension        | ID                          | Purpose                                    |
 | ---------------- | --------------------------- | ------------------------------------------ |
-| Dart | `dart-code.dart-code` | Syntax, analysis, debugging, pub support |
-| Flutter | `dart-code.flutter` | Widget editing, DevTools, emulator control |
-| Flutter Snippets | `alexisvt.flutter-snippets` | Boilerplate code generation |
+| Dart             | `dart-code.dart-code`       | Syntax, analysis, debugging, pub support   |
+| Flutter          | `dart-code.flutter`         | Widget editing, DevTools, emulator control |
+| Flutter Snippets | `alexisvt.flutter-snippets` | Boilerplate code generation                |
 
 After installing, open a Dart/Flutter project folder. VS Code will prompt you to select the Flutter
 SDK location if it is not already in PATH.
 
 Key VS Code shortcuts for Dart:
 
-| Action | Shortcut |
+| Action           | Shortcut                               |
 | ---------------- | -------------------------------------- |
-| Run (debug) | `F5` |
-| Hot reload | `Ctrl+F5` / `Cmd+F5` (while debugging) |
-| Go to definition | `F12` |
-| Rename symbol | `F2` |
-| Quick fix | `Ctrl+.` / `Cmd+.` |
-| Format document | `Shift+Alt+F` / `Shift+Option+F` |
+| Run (debug)      | `F5`                                   |
+| Hot reload       | `Ctrl+F5` / `Cmd+F5` (while debugging) |
+| Go to definition | `F12`                                  |
+| Rename symbol    | `F2`                                   |
+| Quick fix        | `Ctrl+.` / `Cmd+.`                     |
+| Format document  | `Shift+Alt+F` / `Shift+Option+F`       |
 
 ### Android Studio
 
@@ -193,7 +196,7 @@ Through its installer:
 1. Download Android Studio from https://developer.android.com/studio
 2. Install the Flutter and Dart plugins: **Settings &gt; Plugins &gt; Marketplace &gt; "Flutter"**
 3. Configure the SDK path: **Settings &gt; Languages &amp; Frameworks &gt; Flutter &gt; Flutter SDK
- path**
+   path**
 
 Android Studio provides:
 
@@ -211,15 +214,15 @@ Studio without the Android-specific tooling.
 1. Ensure VS Code, the extensions, and git is installed and updated.
 2. Launch VS Code and open command palette (`Ctrl+Shift+P`)
 3. With the `dart-code.flutter` installed, typing `flutter` in command palette shows a command of
- `Flutter: New Project`.
+   `Flutter: New Project`.
 4. VS Code will now prompt you to locate your Flutter SDK, select `Download SDK` which automatically
- installs the Flutter SDK and adds to PATH, _Remember to choose a location that doesnt require
- elevated priviledges_.
+   installs the Flutter SDK and adds to PATH, _Remember to choose a location that doesnt require
+   elevated priviledges_.
 5. Now type `flutter doctor` in the terminal and resolve any missing SDK or packages
- 1. I would recommend installing android sdk from android studio
- 2. I would also recommend installing Visual Studio if windows development is needed.
- 3. If the developement platform is Windows, the path may not have added correctly, include the
- android sdk, dart sdk and flutter sdk in path.
+6. I would recommend installing android sdk from android studio
+7. I would also recommend installing Visual Studio if windows development is needed.
+8. If the developement platform is Windows, the path may not have added correctly, include the
+   android sdk, dart sdk and flutter sdk in path.
 
 ## Creating Your First Project
 
@@ -262,15 +265,15 @@ my_cli/
 ## Common Pitfalls
 
 - **PATH issues on Windows**: The Flutter SDK modifies PATH during installation but many terminals
- (especially PowerShell) need a restart to pick up changes. Run `refreshenv` or restart the
- terminal.
+  (especially PowerShell) need a restart to pick up changes. Run `refreshenv` or restart the
+  terminal.
 - **Multiple SDK versions**: If you install both standalone Dart SDK and Flutter SDK, the `dart`
- binary on PATH may point to the wrong one. Use `which dart` / `where dart` to verify. Uninstall
- the standalone Dart SDK if you are using Flutter.
+  binary on PATH may point to the wrong one. Use `which dart` / `where dart` to verify. Uninstall
+  the standalone Dart SDK if you are using Flutter.
 - **Xcode license on macOS**: Even for pure Dart development, `flutter doctor` may complain about
- Xcode. Run `sudo xcodebuild -license accept` to resolve this.
+  Xcode. Run `sudo xcodebuild -license accept` to resolve this.
 - **Android SDK cmdline-tools**: `flutter doctor` expects `cmdline-tools/latest/bin` in the Android
- SDK path. Install it via Android Studio's SDK Manager under "SDK Tools".
+  SDK path. Install it via Android Studio's SDK Manager under "SDK Tools".
 
 ## Android SDK Setup
 
@@ -282,7 +285,7 @@ Android Studio.
 1. Download from https://developer.android.com/studio
 2. Run the installer (it bundles Android SDK, SDK Platform-Tools, and Android Emulator)
 3. Launch Android Studio and complete the setup wizard — it downloads the latest SDK and system
- images
+   images
 
 ### Configuring environment variables
 
@@ -309,13 +312,13 @@ SDK**
 
 Required components:
 
-| Component | Purpose |
+| Component                                    | Purpose                            |
 | -------------------------------------------- | ---------------------------------- |
-| Android SDK Platform 34 (or latest) | Target API level |
-| Android SDK Build-Tools | `aapt``d8``dx` build tools |
-| Android SDK Platform-Tools | `adb``fastboot` |
-| Android SDK Command-line Tools | `sdkmanager` CLI |
-| Android Emulator | `emulator` binary |
+| Android SDK Platform 34 (or latest)          | Target API level                   |
+| Android SDK Build-Tools                      | `aapt``d8``dx` build tools         |
+| Android SDK Platform-Tools                   | `adb``fastboot`                    |
+| Android SDK Command-line Tools               | `sdkmanager` CLI                   |
+| Android Emulator                             | `emulator` binary                  |
 | Intel x86 Emulator Accelerator (HAXM) or KVM | Hardware acceleration for emulator |
 
 ### Verifying Android setup
@@ -352,8 +355,10 @@ flutter devices                          # should show "macOS" and "iPhone" simu
 For Windows desktop development (UWP/Win32 Flutter apps):
 
 1. Install Visual Studio 2022 with the following workloads:
- - **Desktop development with C++**
- - **Universal Windows Platform development** (optional, for UWP)
+
+- **Desktop development with C++**
+- **Universal Windows Platform development** (optional, for UWP)
+
 2. Ensure the Windows 10/11 SDK is installed
 
 ```bash

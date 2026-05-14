@@ -1,6 +1,8 @@
 ---
 title: Functions, Closures, and Decorators
-description: "Functions, Closures, and Decorators — Functions as First-Class Objects; Functions Are Objects; {'name': <class 'str'>, 'return': <class 'str'>}."
+description:
+  "Functions, Closures, and Decorators — Functions as First-Class Objects; Functions Are Objects;
+  {'name': <class 'str'>, 'return': <class 'str'>}."
 date: 2026-04-05T00:00:00.000Z
 tags:
   - Python
@@ -9,6 +11,7 @@ categories:
 slug: functions-closures-decorators
 sidebar_position: 3
 ---
+
 ## Functions as First-Class Objects
 
 In Python, **"first-class"** means that functions are values on equal footing with every other kind
@@ -117,9 +120,8 @@ print(apply(str.upper, "hello"))  # 'HELLO'
 print(apply(len, [1, 2, 3]))      # 3
 ```
 
-This is how `sorted``map``filter``min``max`And many other built-ins work. The `key`
-Parameter of `sorted` is a function object; `map` and `filter` take function objects as their first
-Argument.
+This is how `sorted``map``filter``min``max`And many other built-ins work. The `key` Parameter of
+`sorted` is a function object; `map` and `filter` take function objects as their first Argument.
 
 ### Returning from Functions
 
@@ -196,12 +198,12 @@ def add(x, y):
 **Lambda limitations -- these are not oversights, they are deliberate constraints:**
 
 1. **Single expression only.** You cannot write `lambda x: if x > 0: x else: -x`. Use a conditional
- expression instead: `lambda x: x if x > 0 else -x`.
+   expression instead: `lambda x: x if x > 0 else -x`.
 2. **No statements.** No `for``while``try``with``assert``import``global``nonlocal`.
 3. **No annotations.** `lambda x: int -> x` is a syntax error.
 4. **No docstring.** A `lambda`'s `__doc__` is always `None`.
 5. **No assignment.** `lambda x: (y := x + 1)` works in Python 3.8+ via the walrus operator, but
- this is an expression, not a statement -- and it is poor style.
+   this is an expression, not a statement -- and it is poor style.
 
 ### Common Lambda Patterns
 
@@ -250,8 +252,8 @@ for f in funcs:
     print(f())  # 4, 4, 4, 4, 4
 ```
 
-All five lambdas reference the **same** variable `i`Which is `4` by the time the loop finishes.
-The fix is to bind the value with a default argument:
+All five lambdas reference the **same** variable `i`Which is `4` by the time the loop finishes. The
+fix is to bind the value with a default argument:
 
 ```python
 funcs = []
@@ -723,8 +725,8 @@ def with_args():
 ```
 
 When `@rate_limit` is used without parentheses, Python calls `rate_limit(no_args)`. The function
-Object is passed as `_func`And since it is not `None`We immediately return `decorator(_func)`.
-When `@rate_limit(requests_per_second=5.0)` is used, Python calls
+Object is passed as `_func`And since it is not `None`We immediately return `decorator(_func)`. When
+`@rate_limit(requests_per_second=5.0)` is used, Python calls
 `rate_limit(requests_per_second=5.0)``_func` defaults to `None`And we return `decorator` to be
 Applied by the `@` syntax.
 
@@ -800,8 +802,8 @@ def api_request(endpoint: str) -> dict:
     return {"endpoint": endpoint, "status": "ok"}
 ```
 
-Class-based decorators accumulate state in instance attributes, which is cleaner than
-Using mutable closures or `nonlocal` variables for complex state management.
+Class-based decorators accumulate state in instance attributes, which is cleaner than Using mutable
+closures or `nonlocal` variables for complex state management.
 
 ## Common Decorator Patterns
 
@@ -993,8 +995,8 @@ print(DateFormatter.is_valid_format("2024-01-01"))  # True
 ```
 
 `from_timestamp` is a classmethod that acts as an alternative constructor. Because it receives
-`cls`Subclasses of `DateFormatter` that override `format_string` will automatically use the
-Subclass when `cls(date_string)` is called.
+`cls`Subclasses of `DateFormatter` that override `format_string` will automatically use the Subclass
+when `cls(date_string)` is called.
 
 ### `@property`
 
@@ -1025,10 +1027,10 @@ class Temperature:
         self.celsius = (value - 32) * 5 / 9  # reuses celsius setter for validation
 ```
 
-Properties are descriptors -- they are objects with `__get__``__set__`And/or `__delete__`
-Methods. The `@property` decorator creates a `property` object (an instance of `property`) and
-Assigns it as a class attribute. When you access `instance.celsius`Python's descriptor protocol
-Invokes `property.__get__`.
+Properties are descriptors -- they are objects with `__get__``__set__`And/or `__delete__` Methods.
+The `@property` decorator creates a `property` object (an instance of `property`) and Assigns it as
+a class attribute. When you access `instance.celsius`Python's descriptor protocol Invokes
+`property.__get__`.
 
 ### `@abstractmethod`
 
@@ -1210,14 +1212,14 @@ functools.WRAPPER_UPDATES = (
 ```
 
 - **`WRAPPER_ASSIGNMENTS`:** These attributes are **replaced** (assigned by name). The wrapper's
- `__name__` becomes the wrapped function's `__name__`Etc. If the wrapped function does not have
- one of these attributes, the wrapper's attribute is deleted (via `delattr`).
+  `__name__` becomes the wrapped function's `__name__`Etc. If the wrapped function does not have one
+  of these attributes, the wrapper's attribute is deleted (via `delattr`).
 - **`WRAPPER_UPDATES`:** These attributes are **merged** (updated). The wrapper's `__dict__` is
- updated with the wrapped function's `__dict__`Meaning any custom attributes set on the original
- function are available on the wrapper.
+  updated with the wrapped function's `__dict__`Meaning any custom attributes set on the original
+  function are available on the wrapper.
 
-Additionally, `update_wrapper` sets `wrapper.__wrapped__ = wrapped`Which provides a direct
-Reference to the original function.
+Additionally, `update_wrapper` sets `wrapper.__wrapped__ = wrapped`Which provides a direct Reference
+to the original function.
 
 ### Full Mechanism
 
@@ -1279,9 +1281,9 @@ All will see the final value. Fix it with default argument binding or a factory 
 ### Forgetting `functools.wraps`
 
 Without `@functools.wraps(func)`The decorated function loses its `__name__``__doc__`
-`__module__``__qualname__``__annotations__`And `__wrapped__`. This breaks tracebacks,
-Documentation, introspection, `help()``inspect.signature()`And pickling. **Always use
-`functools.wraps` in production decorators.** There is no good reason to omit it.
+`__module__``__qualname__``__annotations__`And `__wrapped__`. This breaks tracebacks, Documentation,
+introspection, `help()``inspect.signature()`And pickling. **Always use `functools.wraps` in
+production decorators.** There is no good reason to omit it.
 
 ### Decorator Order Matters
 

@@ -1,6 +1,8 @@
 ---
 title: FFI and Advanced Topics
-description: "FFI and Advanced Topics — Null Safety Deep Dive; Sound vs Unsounded Null Safety; Nullable and Non-Nullable Types; Null Assertion Operator (`!`)."
+description:
+  'FFI and Advanced Topics — Null Safety Deep Dive; Sound vs Unsounded Null Safety; Nullable and
+  Non-Nullable Types; Null Assertion Operator (`!`).'
 date: 2026-04-07T00:00:00.000Z
 tags:
   - Dart
@@ -8,6 +10,7 @@ categories:
   - Dart
 slug: dart-ffi-and-advanced
 ---
+
 ## Null Safety Deep Dive
 
 Dart 2.12 introduced sound null safety. This is not a nullable annotation system bolted onto an
@@ -51,9 +54,9 @@ List<String?> mixed = ['a', null]; // non-nullable list, elements can be null
 List<String>? maybeNames = null;   // nullable list reference
 ```
 
-**Definition.** The nullability hierarchy: `Never` is a subtype of `Null`Which is a subtype of
-Every `T`Which is a subtype of `T?`Which is a subtype of `Object?`. `Object` is the supertype of
-All non-nullable types. `Object?` is the top type.
+**Definition.** The nullability hierarchy: `Never` is a subtype of `Null`Which is a subtype of Every
+`T`Which is a subtype of `T?`Which is a subtype of `Object?`. `Object` is the supertype of All
+non-nullable types. `Object?` is the top type.
 
 ```
 Never        (bottom — no values inhabit this type)
@@ -413,11 +416,11 @@ Will not promote it inside the closure.
 When migrating legacy Dart code to null safety:
 
 1. **Add `?` to types that can be null.** This is the safest first step — it makes the type system
- honest about what the code actually does.
+   honest about what the code actually does.
 2. **Replace `!` assertions with guard clauses.** Every `!` is a potential crash site. Guard clauses
- make the handling explicit.
+   make the handling explicit.
 3. **Use `late` for fields initialized outside the constructor.** This avoids making fields nullable
- when they are logically non-nullable.
+   when they are logically non-nullable.
 4. **Add `required` to named parameters that callers must provide.**
 5. **Use default values for optional parameters that should not be nullable.**
 
@@ -517,23 +520,23 @@ The two typedefs must agree on parameter and return types. The C typedef uses FF
 Dart and C have different primitive type systems. `dart:ffi` provides native types that map to C
 Types:
 
-| FFI Type | C Type | Dart Type | Size (bytes) |
+| FFI Type            | C Type                            | Dart Type    | Size (bytes) |
 | ------------------- | --------------------------------- | ------------ | ------------ |
-| `Int8` | `int8_t` / `char` | `int` | 1 |
-| `Int16` | `int16_t` / `short` | `int` | 2 |
-| `Int32` | `int32_t` / `int` | `int` | 4 |
-| `Int64` | `int64_t` / `long long` | `int` | 8 |
-| `Uint8` | `uint8_t` / `unsigned char` | `int` | 1 |
-| `Uint16` | `uint16_t` / `unsigned short` | `int` | 2 |
-| `Uint32` | `uint32_t` / `unsigned int` | `int` | 4 |
-| `Uint64` | `uint64_t` / `unsigned long long` | `int` | 8 |
-| `Float` | `float` | `double` | 4 |
-| `Double` | `double` | `double` | 8 |
-| `Bool` | `bool` (C99 `_Bool`) | `bool` | 1 |
-| `Void` | `void` | N/A | 0 |
-| `Handle` | Dart object handle | `Object` | platform |
-| `NativeFunction<T>` | function pointer | N/A | platform |
-| `Pointer<T>` | `T*` | `Pointer<T>` | platform |
+| `Int8`              | `int8_t` / `char`                 | `int`        | 1            |
+| `Int16`             | `int16_t` / `short`               | `int`        | 2            |
+| `Int32`             | `int32_t` / `int`                 | `int`        | 4            |
+| `Int64`             | `int64_t` / `long long`           | `int`        | 8            |
+| `Uint8`             | `uint8_t` / `unsigned char`       | `int`        | 1            |
+| `Uint16`            | `uint16_t` / `unsigned short`     | `int`        | 2            |
+| `Uint32`            | `uint32_t` / `unsigned int`       | `int`        | 4            |
+| `Uint64`            | `uint64_t` / `unsigned long long` | `int`        | 8            |
+| `Float`             | `float`                           | `double`     | 4            |
+| `Double`            | `double`                          | `double`     | 8            |
+| `Bool`              | `bool` (C99 `_Bool`)              | `bool`       | 1            |
+| `Void`              | `void`                            | N/A          | 0            |
+| `Handle`            | Dart object handle                | `Object`     | platform     |
+| `NativeFunction<T>` | function pointer                  | N/A          | platform     |
+| `Pointer<T>`        | `T*`                              | `Pointer<T>` | platform     |
 
 :::info
 
@@ -574,8 +577,8 @@ for (var i = 0; i < 10; i++) {
 malloc.free(array);
 ```
 
-The `malloc` and `calloc` functions are from `package:ffi`Which provides convenience wrappers
-Around `dart:ffi`'s allocation functions.
+The `malloc` and `calloc` functions are from `package:ffi`Which provides convenience wrappers Around
+`dart:ffi`'s allocation functions.
 
 #### Pointer Arithmetic
 
@@ -623,8 +626,8 @@ int addViaFfi(int a, int b) {
 ### Structs
 
 **Definition.** An FFI struct is a Dart class that extends `Struct` and maps to a C `struct` in
-Memory. Fields are declared using `@Int32()``@Double()``@Pointer()`And other annotations. The
-Struct layout in memory matches the C layout.
+Memory. Fields are declared using `@Int32()``@Double()``@Pointer()`And other annotations. The Struct
+layout in memory matches the C layout.
 
 ```dart
 import 'dart:ffi';
@@ -721,10 +724,10 @@ callback.close();
 
 `NativeCallable` has two variants:
 
-| Variant | Thread Safety | Exception Handling | Use Case |
+| Variant                       | Thread Safety        | Exception Handling                 | Use Case                    |
 | ----------------------------- | -------------------- | ---------------------------------- | --------------------------- |
-| `NativeCallable.listener` | Any thread can call | Exceptions become unhandled errors | Callbacks from any thread |
-| `NativeCallable.isolateLocal` | Only calling isolate | Exceptions propagate to caller | Callbacks from same isolate |
+| `NativeCallable.listener`     | Any thread can call  | Exceptions become unhandled errors | Callbacks from any thread   |
+| `NativeCallable.isolateLocal` | Only calling isolate | Exceptions propagate to caller     | Callbacks from same isolate |
 
 :::warning
 
@@ -801,12 +804,12 @@ final result = nativeWindowsReturnString();
 final dartResult = result.toDartString();
 ```
 
-| Conversion | Direction | Encoding |
+| Conversion                    | Direction | Encoding                     |
 | ----------------------------- | --------- | ---------------------------- |
-| `toNativeUtf8()` | Dart to C | UTF-8 |
-| `toNativeUtf16()` | Dart to C | UTF-16 |
-| `ptr.toDartString()` | C to Dart | UTF-8 (auto-detected length) |
-| `ptr.toDartString(length: n)` | C to Dart | UTF-8 (fixed length) |
+| `toNativeUtf8()`              | Dart to C | UTF-8                        |
+| `toNativeUtf16()`             | Dart to C | UTF-16                       |
+| `ptr.toDartString()`          | C to Dart | UTF-8 (auto-detected length) |
+| `ptr.toDartString(length: n)` | C to Dart | UTF-8 (fixed length)         |
 
 :::warning
 
@@ -1096,12 +1099,12 @@ Interleaved — there is no global ordering guarantee across multiple senders.
 Dart's event loop processes two types of tasks:
 
 1. **Microtasks** — High-priority tasks scheduled with `scheduleMicrotask` or via `Future.then()`.
- Microtasks run to completion before the event loop processes the next event. They are used for
- internal async plumbing.
+   Microtasks run to completion before the event loop processes the next event. They are used for
+   internal async plumbing.
 
 2. **Events (macrotasks)** — I/O events, timers, UI events, isolate messages, etc. The event loop
- processes one event at a time, running all microtasks queued during event processing before
- moving to the next event.
+   processes one event at a time, running all microtasks queued during event processing before
+   moving to the next event.
 
 ```
 while (true) {
@@ -1213,15 +1216,15 @@ dart compile wasm bin/app.dart
 
 ### Advantages over dart2js
 
-| Characteristic | dart2js | dart2wasm |
+| Characteristic  | dart2js                 | dart2wasm                                    |
 | --------------- | ----------------------- | -------------------------------------------- |
-| Output format | JavaScript | WebAssembly + JS bootstrap |
-| Execution speed | V8 JIT on JS | Near-native via WASM |
-| Startup time | Slower (JS parse + JIT) | Faster (WASM is compact) |
-| Code size | Larger | Smaller |
-| Debugging | Source maps | DWARF debug info |
-| JS interop | Direct | Via `package:web` |
-| Browser support | All | WASM GC required (Chrome 119+, Firefox 120+) |
+| Output format   | JavaScript              | WebAssembly + JS bootstrap                   |
+| Execution speed | V8 JIT on JS            | Near-native via WASM                         |
+| Startup time    | Slower (JS parse + JIT) | Faster (WASM is compact)                     |
+| Code size       | Larger                  | Smaller                                      |
+| Debugging       | Source maps             | DWARF debug info                             |
+| JS interop      | Direct                  | Via `package:web`                            |
+| Browser support | All                     | WASM GC required (Chrome 119+, Firefox 120+) |
 
 ### JS Interop via package:web
 
@@ -1245,8 +1248,7 @@ void main() {
 ```
 
 `package:web` provides typed bindings for all Web APIs (DOM, Fetch, WebSocket, etc.). These bindings
-Use Dart's JS interop types (`JSObject``JSString``JSArray`Etc.) rather than Dart's native
-Types.
+Use Dart's JS interop types (`JSObject``JSString``JSArray`Etc.) rather than Dart's native Types.
 
 ### Performance Characteristics
 
@@ -1723,8 +1725,7 @@ void worker(SendPort sendPort) {
 
 Not all Dart objects can be sent between isolates. Sendable objects include: primitives, `String`
 `List` and `Map` of sendable elements, `SendPort``TransferableTypedData`And `Capability`. Non-
-Sendable objects include: closures, `Socket``HttpClient``File``Isolate`And most `dart:io`
-Types.
+Sendable objects include: closures, `Socket``HttpClient``File``Isolate`And most `dart:io` Types.
 
 ## Summary
 

@@ -1,6 +1,8 @@
 ---
 title: Hyperbolic Functions
-description: "A-Level Further Maths notes on Hyperbolic Functions: Board Coverage for comprehensive revision and examination preparation."
+description:
+  'A-Level Further Maths notes on Hyperbolic Functions: Board Coverage for comprehensive revision
+  and examination preparation.'
 date: 2026-04-02T00:00:00.000Z
 tags:
   - FurtherMaths
@@ -10,25 +12,27 @@ categories:
 slug: hyperbolic-functions
 sidebar_position: 6
 ---
+
 ## Hyperbolic Functions
 
 Hyperbolic functions are defined in terms of the exponential function and share remarkable
-Similarities with trigonometric functions. They arise in the solution of differential
-Equations, the description of hanging cables (catenary), special relativity, and many areas of
-Physics and engineering.
+Similarities with trigonometric functions. They arise in the solution of differential Equations, the
+description of hanging cables (catenary), special relativity, and many areas of Physics and
+engineering.
 
-<DesmosGraph title="Hyperbolic Functions: sinh, cosh, tanh" expressions={["\sinh(x)=(e^x-e^{-x})/2", "\cosh(x)=(e^x+e^{-x})/2", "\tanh(x)=\sinh(x)/\cosh(x)"]} width={800} height={500} />
+<DesmosGraph title="Hyperbolic Functions: sinh, cosh, tanh" expressions={["\sinh(x)=(e^x-e^{-x})/2",
+"\cosh(x)=(e^x+e^{-x})/2", "\tanh(x)=\sinh(x)/\cosh(x)"]} width={800} height={500} />
 
 Adjust the parameters in the graph above to explore the relationships between variables.
 
 ### Board Coverage
 
-| Board | Paper | Notes |
+| Board      | Paper   | Notes                                                      |
 | ---------- | ------- | ---------------------------------------------------------- |
-| AQA | Paper 1 | Definitions, identities, calculus |
-| Edexcel | FP2 | Full coverage: definitions, identities, inverses, calculus |
-| OCR (A) | Paper 1 | Definitions and basic identities |
-| CIE (9231) | P2 | Full coverage including logarithmic forms of inverses |
+| AQA        | Paper 1 | Definitions, identities, calculus                          |
+| Edexcel    | FP2     | Full coverage: definitions, identities, inverses, calculus |
+| OCR (A)    | Paper 1 | Definitions and basic identities                           |
+| CIE (9231) | P2      | Full coverage including logarithmic forms of inverses      |
 
 :::info The formula booklet lists hyperbolic identities and the logarithmic forms of the inverse
 Hyperbolic functions. CIE requires the derivation of these logarithmic forms. :::
@@ -54,18 +58,17 @@ $$\boxed{\tanh x = \frac◆LB◆\sinh x◆RB◆◆LB◆\cosh x◆RB◆ = \frac{e
 
 $$\mathrm{sech}\,x = \frac◆LB◆1◆RB◆◆LB◆\cosh x◆RB◆, \qquad \mathrm{cosech}\,x = \frac◆LB◆1◆RB◆◆LB◆\sinh x◆RB◆, \qquad \coth\,x = \frac◆LB◆\cosh x◆RB◆◆LB◆\sinh x◆RB◆$$
 
-:::warning Note the spelling: $\cosh$$\sinh$$\tanh$ are standard abbreviations. The reciprocals
-Use $\mathrm{sech}$ (not $\mathrm{sec h}$), $\mathrm{cosech}$ (not $\mathrm{csch}$), and $\coth$.
-:::
+:::warning Note the spelling: $\cosh$$\sinh$$\tanh$ are standard abbreviations. The reciprocals Use
+$\mathrm{sech}$ (not $\mathrm{sec h}$), $\mathrm{cosech}$ (not $\mathrm{csch}$), and $\coth$. :::
 
 ### 1.3 Domain and range
 
-| Function | Domain | Range |
+| Function           | Domain       | Range         |
 | ------------------ | ------------ | ------------- |
-| $\sinh x$ | $\mathbb{R}$ | $\mathbb{R}$ |
-| $\cosh x$ | $\mathbb{R}$ | $[1, \infty)$ |
-| $\tanh x$ | $\mathbb{R}$ | $(-1, 1)$ |
-| $\mathrm{sech}\,x$ | $\mathbb{R}$ | $(0, 1]$ |
+| $\sinh x$          | $\mathbb{R}$ | $\mathbb{R}$  |
+| $\cosh x$          | $\mathbb{R}$ | $[1, \infty)$ |
+| $\tanh x$          | $\mathbb{R}$ | $(-1, 1)$     |
+| $\mathrm{sech}\,x$ | $\mathbb{R}$ | $(0, 1]$      |
 
 ### 1.4 Key values
 
@@ -137,8 +140,8 @@ Corresponding hyperbolic identity by:
 1. Replacing $\cos$ with $\cosh$ and $\sin$ with $\sinh$.
 2. Changing the sign of **every** term that contains a product of two $\sinh$ factors.
 
-This works because $\cos(ix) = \cosh x$ and $\sin(ix) = i\sinh x$So each $\sin$ introduces a
-Factor of $i$And $\sin^2$ introduces $i^2 = -1$.
+This works because $\cos(ix) = \cosh x$ and $\sin(ix) = i\sinh x$So each $\sin$ introduces a Factor
+of $i$And $\sin^2$ introduces $i^2 = -1$.
 
 **Example.** $\cos^2 x + \sin^2 x = 1 \xrightarrow{\mathrm{Osborn}} \cosh^2 x - \sinh^2 x = 1$. (The
 $\sinh^2$ term flips sign.)
@@ -345,19 +348,19 @@ $$\mathrm{gd}\,x = \int_0^x \mathrm{sech}\,t\,dt = 2\arctan(e^x) - \frac◆LB◆
 
 ## 6. Summary of Key Results
 
-| Function | Definition | Inverse |
+| Function  | Definition                             | Inverse                             |
 | --------- | -------------------------------------- | ----------------------------------- | --- | --- |
-| $\sinh x$ | $\dfrac{e^x-e^{-x}}{2}$ | $\ln(x+\sqrt{x^2+1})$ |
-| $\cosh x$ | $\dfrac{e^x+e^{-x}}{2}$ | $\ln(x+\sqrt{x^2-1}),\ x\geq 1$ |
+| $\sinh x$ | $\dfrac{e^x-e^{-x}}{2}$                | $\ln(x+\sqrt{x^2+1})$               |
+| $\cosh x$ | $\dfrac{e^x+e^{-x}}{2}$                | $\ln(x+\sqrt{x^2-1}),\ x\geq 1$     |
 | $\tanh x$ | $\dfrac◆LB◆\sinh x◆RB◆◆LB◆\cosh x◆RB◆$ | $\dfrac{1}{2}\ln\dfrac{1+x}{1-x},\  | x   | <1$ |
 
-| Derivative | Integral |
+| Derivative                                                              | Integral                                                                     |
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
-| $\dfrac{d}{dx}\sinh x = \cosh x$ | $\int\cosh x\,dx = \sinh x+C$ |
-| $\dfrac{d}{dx}\cosh x = \sinh x$ | $\int\sinh x\,dx = \cosh x+C$ |
-| $\dfrac{d}{dx}\tanh x = \mathrm{sech}^2\,x$ | $\int\mathrm{sech}^2\,x\,dx = \tanh x+C$ |
+| $\dfrac{d}{dx}\sinh x = \cosh x$                                        | $\int\cosh x\,dx = \sinh x+C$                                                |
+| $\dfrac{d}{dx}\cosh x = \sinh x$                                        | $\int\sinh x\,dx = \cosh x+C$                                                |
+| $\dfrac{d}{dx}\tanh x = \mathrm{sech}^2\,x$                             | $\int\mathrm{sech}^2\,x\,dx = \tanh x+C$                                     |
 | $\dfrac{d}{dx}\mathrm{arsinh}\,x = \dfrac◆LB◆1◆RB◆◆LB◆\sqrt{x^2+1}◆RB◆$ | $\int\dfrac◆LB◆dx◆RB◆◆LB◆\sqrt{x^2+a^2}◆RB◆ = \mathrm{arsinh}\dfrac{x}{a}+C$ |
-| $\dfrac{d}{dx}\mathrm{artanh}\,x = \dfrac{1}{1-x^2}$ | $\int\dfrac{dx}{a^2-x^2} = \dfrac{1}{a}\mathrm{artanh}\dfrac{x}{a}+C$ |
+| $\dfrac{d}{dx}\mathrm{artanh}\,x = \dfrac{1}{1-x^2}$                    | $\int\dfrac{dx}{a^2-x^2} = \dfrac{1}{a}\mathrm{artanh}\dfrac{x}{a}+C$        |
 
 <hr />
 
@@ -890,11 +893,11 @@ $\blacksquare$
 
 ## 9. Common Pitfalls
 
-| Pitfall | Correct Approach |
+| Pitfall                                                               | Correct Approach                                                           |
 | --------------------------------------------------------------------- | -------------------------------------------------------------------------- |
-| Using $x = a\cosh u$ when $x < a$ | $\cosh u \geq 1$So this requires $x \geq a$ |
+| Using $x = a\cosh u$ when $x < a$                                     | $\cosh u \geq 1$So this requires $x \geq a$                                |
 | Confusing $\operatorname{arsinh}$ and $\operatorname{arcosh}$ domains | $\operatorname{arsinh}$: all real $x$; $\operatorname{arcosh}$: $x \geq 1$ |
-| Forgetting $\cosh^2 x - \sinh^2 x = 1$ | This is the fundamental identity, analogous to $\cos^2 x + \sin^2 x = 1$ |
+| Forgetting $\cosh^2 x - \sinh^2 x = 1$                                | This is the fundamental identity, analogous to $\cos^2 x + \sin^2 x = 1$   |
 
 ---
 
@@ -973,21 +976,21 @@ $\cos(ix) = \cosh x$ and $\sin(ix) = i\sinh x$. See
 
 ## 12. Key Results Summary
 
-| Function | Definition | Derivative | Integral |
+| Function                    | Definition                                       | Derivative                            | Integral           |
 | --------------------------- | ------------------------------------------------ | ------------------------------------- | ------------------ |
-| $\sinh x$ | $\dfrac{e^x-e^{-x}}{2}$ | $\cosh x$ | $\cosh x + C$ |
-| $\cosh x$ | $\dfrac{e^x+e^{-x}}{2}$ | $\sinh x$ | $\sinh x + C$ |
-| $\tanh x$ | $\dfrac◆LB◆\sinh x◆RB◆◆LB◆\cosh x◆RB◆$ | $\operatorname{sech}^2 x$ | $\ln(\cosh x) + C$ |
-| $\operatorname{arsinh}\, x$ | $\ln(x+\sqrt{x^2+1})$ | $\dfrac◆LB◆1◆RB◆◆LB◆\sqrt{x^2+1}◆RB◆$ | — |
-| $\operatorname{arcosh}\, x$ | $\ln(x+\sqrt{x^2-1})$ | $\dfrac◆LB◆1◆RB◆◆LB◆\sqrt{x^2-1}◆RB◆$ | — |
-| $\operatorname{artanh}\, x$ | $\dfrac{1}{2}\ln\!\left(\dfrac{1+x}{1-x}\right)$ | $\dfrac{1}{1-x^2}$ | — |
+| $\sinh x$                   | $\dfrac{e^x-e^{-x}}{2}$                          | $\cosh x$                             | $\cosh x + C$      |
+| $\cosh x$                   | $\dfrac{e^x+e^{-x}}{2}$                          | $\sinh x$                             | $\sinh x + C$      |
+| $\tanh x$                   | $\dfrac◆LB◆\sinh x◆RB◆◆LB◆\cosh x◆RB◆$           | $\operatorname{sech}^2 x$             | $\ln(\cosh x) + C$ |
+| $\operatorname{arsinh}\, x$ | $\ln(x+\sqrt{x^2+1})$                            | $\dfrac◆LB◆1◆RB◆◆LB◆\sqrt{x^2+1}◆RB◆$ | —                  |
+| $\operatorname{arcosh}\, x$ | $\ln(x+\sqrt{x^2-1})$                            | $\dfrac◆LB◆1◆RB◆◆LB◆\sqrt{x^2-1}◆RB◆$ | —                  |
+| $\operatorname{artanh}\, x$ | $\dfrac{1}{2}\ln\!\left(\dfrac{1+x}{1-x}\right)$ | $\dfrac{1}{1-x^2}$                    | —                  |
 
-| Identity | Formula |
-| ------------------- | ---------------------------------------------------------------------- |
-| Fundamental | $\cosh^2 x - \sinh^2 x = 1$ |
-| Osborn's rule | Replace $\cos^2 \to \cosh^2$$\sin^2 \to -\sinh^2$ in trig identities |
-| Double angle (cosh) | $\cosh 2x = 2\cosh^2 x - 1 = 1 + 2\sinh^2 x$ |
-| Double angle (sinh) | $\sinh 2x = 2\sinh x\cosh x$ |
+| Identity            | Formula                                                              |
+| ------------------- | -------------------------------------------------------------------- |
+| Fundamental         | $\cosh^2 x - \sinh^2 x = 1$                                          |
+| Osborn's rule       | Replace $\cos^2 \to \cosh^2$$\sin^2 \to -\sinh^2$ in trig identities |
+| Double angle (cosh) | $\cosh 2x = 2\cosh^2 x - 1 = 1 + 2\sinh^2 x$                         |
+| Double angle (sinh) | $\sinh 2x = 2\sinh x\cosh x$                                         |
 
 ---
 
@@ -1047,14 +1050,14 @@ This connects the arc length along a unit circle to the arc length along a caten
 
 ### 14.4 Hyperbolic identities — comprehensive list
 
-| Identity | Formula |
+| Identity     | Formula                               |
 | ------------ | ------------------------------------- |
-| $\sinh(x+y)$ | $\sinh x\cosh y + \cosh x\sinh y$ |
-| $\cosh(x+y)$ | $\cosh x\cosh y + \sinh x\sinh y$ |
-| $\sinh 2x$ | $2\sinh x\cosh x$ |
-| $\cosh 2x$ | $2\cosh^2 x - 1 = 1 + 2\sinh^2 x$ |
-| $\sinh^2 x$ | $\dfrac◆LB◆\cosh 2x - 1◆RB◆◆LB◆2◆RB◆$ |
-| $\cosh^2 x$ | $\dfrac◆LB◆\cosh 2x + 1◆RB◆◆LB◆2◆RB◆$ |
+| $\sinh(x+y)$ | $\sinh x\cosh y + \cosh x\sinh y$     |
+| $\cosh(x+y)$ | $\cosh x\cosh y + \sinh x\sinh y$     |
+| $\sinh 2x$   | $2\sinh x\cosh x$                     |
+| $\cosh 2x$   | $2\cosh^2 x - 1 = 1 + 2\sinh^2 x$     |
+| $\sinh^2 x$  | $\dfrac◆LB◆\cosh 2x - 1◆RB◆◆LB◆2◆RB◆$ |
+| $\cosh^2 x$  | $\dfrac◆LB◆\cosh 2x + 1◆RB◆◆LB◆2◆RB◆$ |
 
 ---
 

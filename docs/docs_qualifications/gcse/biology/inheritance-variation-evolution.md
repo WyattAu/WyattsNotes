@@ -1,6 +1,8 @@
 ---
 title: Inheritance, Variation, and Evolution
-description: "Inheritance, Variation, and Evolution — 1. DNA and Genetics; 1.1 DNA Structure; 1.2 Genes and Chromosomes; 1.3 Protein Synthesis."
+description:
+  'Inheritance, Variation, and Evolution — 1. DNA and Genetics; 1.1 DNA Structure; 1.2 Genes and
+  Chromosomes; 1.3 Protein Synthesis.'
 date: 2026-04-14
 tags:
   - Biology
@@ -9,11 +11,10 @@ categories:
   - Biology
 slug: inheritance-variation-evolution
 ---
+
 ## Inheritance, Variation, and Evolution
 
-:::info
-Board Coverage AQA Paper 2 | Edexcel Paper 2 | OCR A Gateway B3 | WJEC B3
-:::
+:::info Board Coverage AQA Paper 2 | Edexcel Paper 2 | OCR A Gateway B3 | WJEC B3 :::
 
 ## 1. DNA and Genetics
 
@@ -25,12 +26,12 @@ Nucleus of cells and is organised into structures called **chromosomes**.
 **Structure of DNA:**
 
 - Two strands forming a **double helix** (discovered by Watson and Crick in 1953, based on X-ray
- diffraction data from Rosalind Franklin)
+  diffraction data from Rosalind Franklin)
 - Each strand is made of nucleotides
 - Each nucleotide contains: a sugar (deoxyribose), a phosphate group, and a base
 - Four bases: **adenine (A), thymine (T), cytosine (C), guanine (G)**
 - Base pairing: A always pairs with T (two hydrogen bonds); C always pairs with G (three hydrogen
- bonds)
+  bonds)
 - The two strands are **antiparallel** (they run in opposite directions)
 
 **Why base pairing is specific.** The sizes and shapes of the bases determine which pairs can form.
@@ -51,10 +52,10 @@ From the backbone and pair with complementary bases on the opposite strand.
 ### 1.2 Genes and Chromosomes
 
 - A **gene** is a short section of DNA on a chromosome that codes for a specific protein (and
- therefore a specific characteristic). The sequence of bases in a gene determines the sequence of
- amino acids in the protein, which determines the protein's shape and function.
+  therefore a specific characteristic). The sequence of bases in a gene determines the sequence of
+  amino acids in the protein, which determines the protein's shape and function.
 - Humans have 23 pairs of chromosomes (46 total). One of each pair comes from the mother and one
- from the father.
+  from the father.
 - Each chromosome contains many genes (approximately 20,000--25,000 genes in the human genome).
 - The complete set of genes in an organism is called the **genome**.
 
@@ -77,12 +78,12 @@ Demonstrating the remarkable efficiency of DNA packaging.
 The genetic code in DNA is used to make proteins through a two-stage process:
 
 1. **Transcription:** The DNA code is copied into mRNA (messenger RNA) in the nucleus. RNA
- polymerase binds to the DNA and synthesises a complementary mRNA strand. The mRNA is a "working
- copy" of the gene that can leave the nucleus.
+   polymerase binds to the DNA and synthesises a complementary mRNA strand. The mRNA is a "working
+   copy" of the gene that can leave the nucleus.
 2. **Translation:** The mRNA moves to a ribosome, where its code is read three bases at a time (each
- group of three bases is called a **codon**). Each codon specifies a particular amino acid.
- Transfer RNA (tRNA) molecules bring the correct amino acids, and they are joined together by
- peptide bonds to form a polypeptide chain. The chain folds into its functional protein shape.
+   group of three bases is called a **codon**). Each codon specifies a particular amino acid.
+   Transfer RNA (tRNA) molecules bring the correct amino acids, and they are joined together by
+   peptide bonds to form a polypeptide chain. The chain folds into its functional protein shape.
 
 The sequence of bases in a gene determines the sequence of amino acids in a protein, which
 Determines the protein's shape and function. A change in the DNA sequence (mutation) can change the
@@ -90,10 +91,10 @@ Amino acid sequence, potentially altering the protein's shape and function.
 
 **Summary of protein synthesis steps.**
 
-| Stage | Location | Template | Product | Key molecules involved |
+| Stage         | Location | Template | Product | Key molecules involved       |
 | ------------- | -------- | -------- | ------- | ---------------------------- |
-| Transcription | Nucleus | DNA | mRNA | RNA polymerase |
-| Translation | Ribosome | mRNA | Protein | tRNA, ribosomes, amino acids |
+| Transcription | Nucleus  | DNA      | mRNA    | RNA polymerase               |
+| Translation   | Ribosome | mRNA     | Protein | tRNA, ribosomes, amino acids |
 
 ### 1.4 Genome
 
@@ -103,9 +104,9 @@ In 2003) mapped all the genes in human DNA.
 **Benefits of the Human Genome Project:**
 
 - Understanding genetic diseases and developing new treatments (e.g., identifying the mutations that
- cause cystic fibrosis or Huntington's disease)
+  cause cystic fibrosis or Huntington's disease)
 - Predicting disease risk (identifying alleles associated with increased risk of certain cancers or
- heart disease)
+  heart disease)
 - Tracing human migration patterns (comparing DNA sequences from populations around the world)
 - Developing personalised medicine (tailoring drug treatments to an individual's genetic profile)
 - Forensic applications (DNA fingerprinting for identifying individuals)
@@ -121,13 +122,13 @@ In 2003) mapped all the genes in human DNA.
 The genetic code has three important properties:
 
 - **Degenerate:** Most amino acids are coded for by more than one codon. For example, the amino acid
- leucine is coded by six different codons. This provides some protection against mutations: if one
- base changes, the same amino acid may still be specified.
+  leucine is coded by six different codons. This provides some protection against mutations: if one
+  base changes, the same amino acid may still be specified.
 - **Universal:** The same codons code for the same amino acids in almost all organisms (from
- bacteria to humans). This is powerful evidence for common ancestry and allows genes from one
- organism to be expressed in another (the basis of genetic engineering).
+  bacteria to humans). This is powerful evidence for common ancestry and allows genes from one
+  organism to be expressed in another (the basis of genetic engineering).
 - **Non-overlapping:** Each base is part of only one codon. The code is read in a fixed reading
- frame from a specific start point.
+  frame from a specific start point.
 
 ## 2. Reproduction
 
@@ -141,21 +142,23 @@ Variation.
 
 1. The cell replicates its DNA (each chromosome has two identical chromatids).
 2. The cell divides twice:
- - First division: Homologous chromosomes separate (reducing the chromosome number by half).
- Crossing over occurs during Prophase I, where non-sister chromatids exchange segments of DNA.
- - Second division: Chromatids separate (similar to mitosis).
+
+- First division: Homologous chromosomes separate (reducing the chromosome number by half). Crossing
+  over occurs during Prophase I, where non-sister chromatids exchange segments of DNA.
+- Second division: Chromatids separate (similar to mitosis).
+
 3. Four genetically unique daughter cells are produced, each with half the normal number of
- chromosomes (haploid).
+   chromosomes (haploid).
 
 **Key differences from mitosis:**
 
-| Feature | Mitosis | Meiosis |
+| Feature           | Mitosis        | Meiosis                   |
 | ----------------- | -------------- | ------------------------- |
-| Divisions | One | Two |
-| Daughter cells | 2 (identical) | 4 (genetically different) |
-| Chromosome number | Same as parent | Half of parent |
-| Purpose | Growth, repair | Producing gametes |
-| Crossing over? | No | Yes (Prophase I) |
+| Divisions         | One            | Two                       |
+| Daughter cells    | 2 (identical)  | 4 (genetically different) |
+| Chromosome number | Same as parent | Half of parent            |
+| Purpose           | Growth, repair | Producing gametes         |
+| Crossing over?    | No             | Yes (Prophase I)          |
 
 ### 2.2 Asexual Reproduction
 
@@ -173,7 +176,7 @@ Genetically identical offspring (clones).
 **Disadvantages:**
 
 - No genetic variation (vulnerable to disease and environmental change; if a disease kills one
- individual, it can kill all of them)
+  individual, it can kill all of them)
 - Overcrowding and competition for resources
 
 **Worked Example: Bacterial growth by binary fission.**
@@ -198,39 +201,43 @@ This shows how rapidly asexual reproduction can produce large numbers of organis
 **Method:**
 
 1. Mash strawberries (or kiwi) in a zip-lock bag with salt water and detergent.
- - Salt: neutralises the negative charges on DNA, allowing it to clump together.
- - Detergent: breaks down the cell membranes and nuclear membranes, releasing the DNA.
+
+- Salt: neutralises the negative charges on DNA, allowing it to clump together.
+- Detergent: breaks down the cell membranes and nuclear membranes, releasing the DNA.
+
 2. Filter the mixture to remove the pulp (cell debris, proteins, and other large molecules).
 3. Add cold ethanol to the filtrate.
- - DNA is insoluble in cold ethanol, so it precipitates out of solution.
+
+- DNA is insoluble in cold ethanol, so it precipitates out of solution.
+
 4. DNA precipitates out as a white, stringy substance that can be spooled onto a glass rod.
 
 ### 2.4 Higher Tier: Sexual and Asexual Reproduction Compared
 
-| Feature | Sexual Reproduction | Asexual Reproduction |
+| Feature           | Sexual Reproduction            | Asexual Reproduction                 |
 | ----------------- | ------------------------------ | ------------------------------------ |
-| Number of parents | Two | One |
-| Gametes involved? | Yes | No |
-| Cell division | Meiosis + fertilisation | Mitosis |
-| Genetic variation | High (offspring are unique) | None (offspring are clones) |
-| Speed | Slower (need to find a mate) | Faster |
-| Adaptability | High (variety aids adaptation) | Low (all vulnerable to same threats) |
+| Number of parents | Two                            | One                                  |
+| Gametes involved? | Yes                            | No                                   |
+| Cell division     | Meiosis + fertilisation        | Mitosis                              |
+| Genetic variation | High (offspring are unique)    | None (offspring are clones)          |
+| Speed             | Slower (need to find a mate)   | Faster                               |
+| Adaptability      | High (variety aids adaptation) | Low (all vulnerable to same threats) |
 
 ## 3. Inheritance
 
 ### 3.1 Key Terms
 
-| Term | Definition |
+| Term         | Definition                                                                                  |
 | ------------ | ------------------------------------------------------------------------------------------- |
-| Gene | A section of DNA that codes for a specific protein |
-| Allele | A version of a gene (e.g. Brown or blue eye colour) |
-| Dominant | An allele that is expressed when one or two copies are present (capital letter, e.g. B) |
-| Recessive | An allele that is expressed only when two copies are present (lowercase letter, e.g. B) |
-| Homozygous | Two identical alleles for a gene (e.g. BB or bb) |
-| Heterozygous | Two different alleles for a gene (e.g. Bb) |
-| Genotype | The combination of alleles an individual has (e.g. Bb) |
-| Phenotype | The observable characteristic produced by the genotype (e.g. Brown eyes) |
-| Carrier | A heterozygous individual who carries a recessive allele without showing the characteristic |
+| Gene         | A section of DNA that codes for a specific protein                                          |
+| Allele       | A version of a gene (e.g. Brown or blue eye colour)                                         |
+| Dominant     | An allele that is expressed when one or two copies are present (capital letter, e.g. B)     |
+| Recessive    | An allele that is expressed only when two copies are present (lowercase letter, e.g. B)     |
+| Homozygous   | Two identical alleles for a gene (e.g. BB or bb)                                            |
+| Heterozygous | Two different alleles for a gene (e.g. Bb)                                                  |
+| Genotype     | The combination of alleles an individual has (e.g. Bb)                                      |
+| Phenotype    | The observable characteristic produced by the genotype (e.g. Brown eyes)                    |
+| Carrier      | A heterozygous individual who carries a recessive allele without showing the characteristic |
 
 ### 3.2 Genetic Crosses
 
@@ -243,10 +250,10 @@ Parental genotypes: Tt $\times$ tt
 
 Punnett square:
 
-| | T | t |
+|     | T   | t   |
 | --- | --- | --- |
-| t | Tt | tt |
-| t | Tt | tt |
+| t   | Tt  | tt  |
+| t   | Tt  | tt  |
 
 Genotypic ratio: 2 Tt : 2 tt (1:1)
 
@@ -259,10 +266,10 @@ Probability of tall offspring: 50%
 
 Punnett square:
 
-| | F | f |
+|     | F   | f   |
 | --- | --- | --- |
-| F | FF | Ff |
-| f | Ff | ff |
+| F   | FF  | Ff  |
+| f   | Ff  | ff  |
 
 Genotypic ratio: 1 FF : 2 Ff : 1 ff
 
@@ -288,10 +295,10 @@ Now cross two F1 offspring: Bb $\times$ Bb
 
 Punnett square:
 
-| | B | b |
+|     | B   | b   |
 | --- | --- | --- |
-| B | BB | Bb |
-| b | Bb | bb |
+| B   | BB  | Bb  |
+| b   | Bb  | bb  |
 
 F2 genotypic ratio: 1 BB : 2 Bb : 1 bb
 
@@ -308,22 +315,22 @@ Sex is determined by the X and Y chromosomes:
 
 **Sex of offspring:**
 
-| | X | X |
+|     | X           | X           |
 | --- | ----------- | ----------- |
-| X | XX (female) | XX (female) |
-| Y | XY (male) | XY (male) |
+| X   | XX (female) | XX (female) |
+| Y   | XY (male)   | XY (male)   |
 
 Probability of male or female: 50% each. This is because the father can contribute either an X or a
 Y chromosome, while the mother always contributes an X chromosome.
 
 ### 3.4 Inherited Disorders
 
-| Disorder | Pattern of Inheritance |
+| Disorder             | Pattern of Inheritance                             |
 | -------------------- | -------------------------------------------------- |
-| Cystic fibrosis | Recessive (caused by mutation in CFTR gene) |
-| Huntington's disease | Dominant (caused by mutation on chromosome 4) |
-| Sickle cell disease | Recessive (caused by mutation in haemoglobin gene) |
-| Polydactyly | Dominant (extra fingers or toes) |
+| Cystic fibrosis      | Recessive (caused by mutation in CFTR gene)        |
+| Huntington's disease | Dominant (caused by mutation on chromosome 4)      |
+| Sickle cell disease  | Recessive (caused by mutation in haemoglobin gene) |
+| Polydactyly          | Dominant (extra fingers or toes)                   |
 
 **Why recessive disorders are more common than dominant disorders.** A recessive disorder can be
 "hidden" in carriers (heterozygotes) who do not show the disease. These carriers can pass the
@@ -335,19 +342,19 @@ Disorders can persist in the population for many generations through carriers.
 **Genetic testing and screening:**
 
 - **Pre-implantation genetic diagnosis (PGD):** Embryos are tested before implantation during IVF.
- Only embryos without the disorder are implanted.
+  Only embryos without the disorder are implanted.
 - **Antenatal testing:** Testing the fetus during pregnancy (e.g., amniocentesis, chorionic villus
- sampling).
+  sampling).
 - **Genetic counselling:** Advising families about the risks of inherited conditions.
 
 **Ethical considerations:**
 
 - Right to know vs. Right not to know (should parents be told if their unborn child has a genetic
- disorder?)
+  disorder?)
 - Potential for discrimination based on genetic information (by employers or insurance companies)
 - Implications for insurance and employment (genetic discrimination)
 - Decisions about termination of pregnancy (is it ethical to terminate a pregnancy because the fetus
- has a genetic disorder?)
+  has a genetic disorder?)
 
 ### 3.5 Higher Tier: Sex-Linked Inheritance
 
@@ -358,9 +365,9 @@ Recessive allele to show the condition.
 **Example:** Red-green colour blindness is caused by a recessive allele on the X chromosome ($X^n$).
 A carrier female ($X^NX^n$) crossed with a normal male ($X^NY$):
 
-| | $X^N$ | $Y$ |
+|       | $X^N$                     | $Y$                    |
 | ----- | ------------------------- | ---------------------- |
-| $X^N$ | $X^NX^N$ (normal female) | $X^NY$ (normal male) |
+| $X^N$ | $X^NX^N$ (normal female)  | $X^NY$ (normal male)   |
 | $X^n$ | $X^NX^n$ (carrier female) | $X^nY$ (affected male) |
 
 This cross shows that colour blindness affects males more frequently than females. In this cross,
@@ -373,9 +380,9 @@ A man who does not have haemophilia ($X^HY$).
 
 Punnett square:
 
-| | $X^H$ | $Y$ |
+|       | $X^H$                     | $Y$                   |
 | ----- | ------------------------- | --------------------- |
-| $X^H$ | $X^HX^H$ (normal female) | $X^HY$ (normal male) |
+| $X^H$ | $X^HX^H$ (normal female)  | $X^HY$ (normal male)  |
 | $X^h$ | $X^HX^h$ (carrier female) | $X^hY$ (haemophiliac) |
 
 Results: 25% normal female, 25% carrier female, 25% normal male, 25% haemophiliac male.
@@ -424,7 +431,7 @@ Classify each characteristic as genetic (G), environmental (E), or both (B):
 1. Individuals within a species show variation (due to genetic differences).
 2. There is competition for limited resources (food, mates, territory).
 3. Individuals with characteristics better suited to the environment are more likely to survive and
- reproduce.
+   reproduce.
 4. They pass on their advantageous alleles to their offspring.
 5. Over many generations, the frequency of advantageous alleles increases in the population.
 6. The species evolves.
@@ -436,23 +443,23 @@ But the alleles that produce that phenotype are what are passed to the next gene
 **Example:** Peppered moths during the Industrial Revolution.
 
 - Before industrialisation: Light moths were better camouflaged on lichen-covered trees, so they
- were eaten less frequently by birds. The frequency of the light allele was high.
+  were eaten less frequently by birds. The frequency of the light allele was high.
 - During industrialisation: Soot darkened tree bark, killing the lichen. Dark moths became better
- camouflaged. The frequency of the dark allele increased through natural selection.
+  camouflaged. The frequency of the dark allele increased through natural selection.
 - After clean-air legislation: Tree bark became lighter again. The frequency of the light allele
- began to increase.
+  began to increase.
 
 This example demonstrates that natural selection is not directional in a fixed sense; it responds to
 Changes in the environment.
 
 ### 4.3 Evidence for Evolution
 
-| Evidence | Description |
+| Evidence       | Description                                                           |
 | -------------- | --------------------------------------------------------------------- |
-| Fossil record | Shows gradual changes in organisms over millions of years |
-| DNA comparison | More similar DNA = more closely related species |
-| Anatomy | Homologous structures suggest common ancestry (e.g. Pentadactyl limb) |
-| Embryology | Early embryos of different species look remarkably similar |
+| Fossil record  | Shows gradual changes in organisms over millions of years             |
+| DNA comparison | More similar DNA = more closely related species                       |
+| Anatomy        | Homologous structures suggest common ancestry (e.g. Pentadactyl limb) |
+| Embryology     | Early embryos of different species look remarkably similar            |
 
 **Homologous vs. Analogous structures.** Homologous structures have the same evolutionary origin but
 May serve different functions (e.g., the pentadactyl limb in humans, bats, whales, and birds -- all
@@ -472,7 +479,7 @@ Become reproductively isolated and evolve differently.
 2. The two populations experience different environmental conditions and selection pressures.
 3. Over time, each population accumulates different mutations and adaptations.
 4. Eventually, the two populations become so different that they can no longer interbreed to produce
- fertile offspring.
+   fertile offspring.
 5. A new species has formed.
 
 **Why reproductive isolation is the defining criterion.** Two populations may look different, but if
@@ -496,12 +503,12 @@ Become much more dangerous because the risk of untreatable infections increases.
 **Preventing antibiotic resistance:**
 
 - Only use antibiotics when necessary (not for viral infections like the common cold, which
- antibiotics cannot treat)
+  antibiotics cannot treat)
 - Complete the full course of antibiotics (stopping early allows partially resistant bacteria to
- survive)
+  survive)
 - Develop new antibiotics (research into new classes of antibiotics is urgently needed)
 - Reduce antibiotic use in agriculture (antibiotics are widely used in livestock farming, which
- contributes to the spread of resistance)
+  contributes to the spread of resistance)
 
 ### 4.6 Classification
 
@@ -533,7 +540,7 @@ Desirable characteristics to be parents of the next generation.
 - Cattle bred for increased milk yield or lean meat.
 - Wheat bred for disease resistance or higher protein content.
 - Dogs bred for specific physical or behavioural traits (resulting in the many different breeds we
- see today).
+  see today).
 
 **Process:**
 
@@ -563,9 +570,9 @@ Characteristic.
 **Examples:**
 
 - Human insulin gene inserted into bacteria for mass production of insulin (used to treat type 1
- diabetes). This replaced the previous method of extracting insulin from pig pancreases.
+  diabetes). This replaced the previous method of extracting insulin from pig pancreases.
 - GM crops: insect-resistant maize (contains a gene from Bacillus thuringiensis that produces a
- toxin lethal to insect pests), herbicide-resistant soya beans.
+  toxin lethal to insect pests), herbicide-resistant soya beans.
 
 **Advantages:** Can produce organisms with specific, useful traits. Medical applications (insulin,
 Growth hormone, clotting factors).
@@ -573,59 +580,59 @@ Growth hormone, clotting factors).
 **Disadvantages and ethical concerns:**
 
 - Potential ecological risks (GM crops could cross-breed with wild relatives, spreading the modified
- genes into natural ecosystems).
+  genes into natural ecosystems).
 - Long-term health effects of GM foods are not fully known.
 - Ethical concerns about modifying the genetic code of living organisms.
 - Patents on GM seeds can make farmers dependent on large biotechnology companies.
 
 **Comparison of selective breeding and genetic engineering.**
 
-| Feature | Selective Breeding | Genetic Engineering |
+| Feature           | Selective Breeding                     | Genetic Engineering                           |
 | ----------------- | -------------------------------------- | --------------------------------------------- |
-| Process | Breeding organisms with desired traits | Transferring specific genes between organisms |
-| Speed | Slow (many generations) | Fast (one generation) |
-| Specificity | Cannot select single genes | Can select specific genes |
-| Genetic variation | Reduced over time | Can introduce genes from any species |
-| Ethical concerns | Animal welfare | Unnatural gene transfer, ecological risks |
+| Process           | Breeding organisms with desired traits | Transferring specific genes between organisms |
+| Speed             | Slow (many generations)                | Fast (one generation)                         |
+| Specificity       | Cannot select single genes             | Can select specific genes                     |
+| Genetic variation | Reduced over time                      | Can introduce genes from any species          |
+| Ethical concerns  | Animal welfare                         | Unnatural gene transfer, ecological risks     |
 
 ## Common Pitfalls
 
 - **Confusing mitosis and meiosis.** Mitosis: 2 identical cells (growth/repair). Meiosis: 4 unique
- cells (gametes). Crossing over only occurs in meiosis.
+  cells (gametes). Crossing over only occurs in meiosis.
 - **Using the wrong notation for alleles.** Dominant = capital letter (B); recessive = lowercase
- (b). Never use different letters for the same gene.
+  (b). Never use different letters for the same gene.
 - **Forgetting that carriers are heterozygous.** A carrier has one dominant and one recessive allele
- (Bb) and does not show the recessive characteristic. Only recessive homozygotes (bb) show the
- recessive phenotype.
+  (Bb) and does not show the recessive characteristic. Only recessive homozygotes (bb) show the
+  recessive phenotype.
 - **Confusing genotype and phenotype.** Genotype = alleles (e.g. Bb); phenotype = physical
- appearance (e.g. Brown eyes). The genotype determines the phenotype.
+  appearance (e.g. Brown eyes). The genotype determines the phenotype.
 - **Thinking evolution happens to individuals.** Evolution occurs in populations over many
- generations, not within an individual's lifetime. An individual cannot evolve; a population
- evolves as allele frequencies change.
+  generations, not within an individual's lifetime. An individual cannot evolve; a population
+  evolves as allele frequencies change.
 - **Confusing Darwin's theory with Lamarck's.** Lamarck proposed inheritance of acquired
- characteristics (e.g. Giraffes stretch their necks and pass this on) -- this is incorrect. Darwin
- proposed natural selection (giraffes with longer necks survive better and pass on the genes for
- longer necks).
+  characteristics (e.g. Giraffes stretch their necks and pass this on) -- this is incorrect. Darwin
+  proposed natural selection (giraffes with longer necks survive better and pass on the genes for
+  longer necks).
 - **Forgetting that dominant does not mean more common.** A dominant allele is expressed when
- present, but it may be rare in the population (e.g., the allele for Huntington's disease is
- dominant but rare).
+  present, but it may be rare in the population (e.g., the allele for Huntington's disease is
+  dominant but rare).
 - **Confusing the terms "gene" and "allele."** A gene is a section of DNA coding for a protein.
- Alleles are different versions of the same gene.
+  Alleles are different versions of the same gene.
 - **Writing probabilities as percentages incorrectly.** A 3:1 ratio means 75% dominant and 25%
- recessive, not 3% and 1%.
+  recessive, not 3% and 1%.
 - **Forgetting to state the expected ratio before the Punnett square.** Always show the parental
- genotypes and the gametes .
+  genotypes and the gametes .
 
 ## Practice Questions
 
 1. Describe the structure of DNA, including how the bases pair.
 
 2. Explain the difference between mitosis and meiosis, including when each type of cell division
- occurs.
+   occurs.
 
 3. In cats, the allele for black fur (B) is dominant over the allele for white fur (b). A
- heterozygous black cat mates with a white cat. Use a Punnett square to show the possible
- genotypes and phenotypes of the offspring.
+   heterozygous black cat mates with a white cat. Use a Punnett square to show the possible
+   genotypes and phenotypes of the offspring.
 
 4. Explain how antibiotic resistance develops in bacteria, with reference to natural selection.
 
@@ -636,39 +643,39 @@ Growth hormone, clotting factors).
 7. Describe two types of evidence that support the theory of evolution.
 
 8. Both parents are carriers of cystic fibrosis (Ff). Calculate the probability that their child
- will have cystic fibrosis.
+   will have cystic fibrosis.
 
 9. Explain the difference between genetic and environmental variation, giving examples of each.
 
 10. Describe the binomial naming system and explain why it is useful for scientists worldwide.
 
 11. **(Higher Tier)** Explain why males are more likely to show sex-linked recessive conditions than
- females, using a genetic cross to support your answer.
+    females, using a genetic cross to support your answer.
 
 12. **(Higher Tier)** Describe the process of selective breeding and explain two potential
- disadvantages.
+    disadvantages.
 
 13. A genetic cross between two pea plants produces offspring in a ratio of 3 tall : 1 dwarf.
- Explain this result, naming the probable genotypes of the parents.
+    Explain this result, naming the probable genotypes of the parents.
 
 14. Explain the role of mutation in evolution. Why are most mutations harmful, but some beneficial?
 
 15. Describe how genetic engineering could be used to produce human insulin, and discuss one
- advantage and one disadvantage of this approach.
+    advantage and one disadvantage of this approach.
 
 16. A woman with blood group A (genotype $I^A i$) has a child with a man who has blood group B
- (genotype $I^B i$). What are the possible blood groups of their child? Use a Punnett square to
- show your working.
+    (genotype $I^B i$). What are the possible blood groups of their child? Use a Punnett square to
+    show your working.
 
 17. Explain the difference between homologous and analogous structures, giving one example of each.
 
 18. Describe the process of natural selection using antibiotic resistance in bacteria as an example.
 
 19. A farmer wants to breed chickens that lay more eggs. Describe the process of selective breeding
- they would use and explain one potential disadvantage of this approach.
+    they would use and explain one potential disadvantage of this approach.
 
 20. Explain why the Human Genome Project is both beneficial and controversial, giving at least two
- examples of each.
+    examples of each.
 
 ## 6. Higher Tier: Codominance and Incomplete Dominance
 
@@ -683,14 +690,14 @@ Recessive. The heterozygote shows both phenotypes simultaneously.
 **Example: Blood groups.** Human ABO blood groups are determined by three alleles: $I^A$$I^B$And
 $i$. $I^A$ and $I^B$ are codominant to each other, and both are dominant over $i$.
 
-| Genotype | Blood group | Phenotype |
+| Genotype  | Blood group | Phenotype                          |
 | --------- | ----------- | ---------------------------------- |
-| $I^A I^A$ | A | Antigen A on red blood cells |
-| $I^A i$ | A | Antigen A on red blood cells |
-| $I^B I^B$ | B | Antigen B on red blood cells |
-| $I^B i$ | B | Antigen B on red blood cells |
-| $I^A I^B$ | AB | Both antigens A and B (codominant) |
-| $ii$ | O | Neither antigen |
+| $I^A I^A$ | A           | Antigen A on red blood cells       |
+| $I^A i$   | A           | Antigen A on red blood cells       |
+| $I^B I^B$ | B           | Antigen B on red blood cells       |
+| $I^B i$   | B           | Antigen B on red blood cells       |
+| $I^A I^B$ | AB          | Both antigens A and B (codominant) |
+| $ii$      | O           | Neither antigen                    |
 
 **Worked Example: Blood group inheritance.**
 
@@ -699,10 +706,10 @@ What are the possible blood groups of their children?
 
 Punnett square:
 
-| | $I^A$ | $i$ |
+|       | $I^A$          | $i$         |
 | ----- | -------------- | ----------- |
 | $I^B$ | $I^A I^B$ (AB) | $I^B i$ (B) |
-| $i$ | $I^A i$ (A) | $ii$ (O) |
+| $i$   | $I^A i$ (A)    | $ii$ (O)    |
 
 Possible blood groups: A, B, AB, and O (all four groups are possible, each with 25% probability).
 
@@ -718,10 +725,10 @@ Cross: RR (red) $\times$ WW (white) $\to$ all RW (pink).
 
 Cross: RW (pink) $\times$ RW (pink):
 
-| | R | W |
+|     | R         | W          |
 | --- | --------- | ---------- |
-| R | RR (red) | RW (pink) |
-| W | RW (pink) | WW (white) |
+| R   | RR (red)  | RW (pink)  |
+| W   | RW (pink) | WW (white) |
 
 Phenotypic ratio: 1 red : 2 pink : 1 white.
 
@@ -749,11 +756,11 @@ Affected.
 **How to determine the inheritance pattern from a pedigree:**
 
 1. **Autosomal recessive:** Appears in both sexes equally; affected children can have unaffected
- parents (carriers); skips generations; two affected parents always have affected children.
+   parents (carriers); skips generations; two affected parents always have affected children.
 2. **Autosomal dominant:** Appears in both sexes equally; affected children always have at least one
- affected parent; does not skip generations.
+   affected parent; does not skip generations.
 3. **X-linked recessive:** More males affected than females; affected males pass the allele to all
- daughters (who become carriers) but not to sons; cannot be passed from father to son.
+   daughters (who become carriers) but not to sons; cannot be passed from father to son.
 
 **Worked Example: Interpreting a pedigree chart.**
 
@@ -768,7 +775,7 @@ A pedigree chart for a rare disorder shows:
 - Equal numbers of affected males and females $\to$ not X-linked.
 - Unaffected parents having an affected child $\to$ must be recessive (both parents are carriers).
 - Skipping generations $\to$ consistent with a recessive allele being hidden in heterozygous
- carriers.
+  carriers.
 
 ## 8. Higher Tier: Genetic Crosses with Multiple Characteristics
 
@@ -786,12 +793,12 @@ Each parent can produce four types of gamete: RY, Ry, rY, ry (in equal proportio
 
 Punnett square (4 $\times$ 4):
 
-| | RY | Ry | rY | ry |
+|     | RY        | Ry        | rY        | ry        |
 | --- | --------- | --------- | --------- | --------- |
-| RY | RRYY (RY) | RRYy (RY) | RrYY (RY) | RrYy (RY) |
-| Ry | RRYy (RY) | RRyy (Ry) | RrYy (RY) | Rryy (Ry) |
-| rY | RrYY (RY) | RrYy (RY) | rrYY (rY) | rrYy (rY) |
-| ry | RrYy (RY) | Rryy (Ry) | rrYy (rY) | rryy (ry) |
+| RY  | RRYY (RY) | RRYy (RY) | RrYY (RY) | RrYy (RY) |
+| Ry  | RRYy (RY) | RRyy (Ry) | RrYy (RY) | Rryy (Ry) |
+| rY  | RrYY (RY) | RrYy (RY) | rrYY (rY) | rrYy (rY) |
+| ry  | RrYy (RY) | Rryy (Ry) | rrYy (rY) | rryy (ry) |
 
 Phenotypic ratio: 9 round yellow : 3 round green : 3 wrinkled yellow : 1 wrinkled green.
 
@@ -803,9 +810,9 @@ Genes, each with a dominant and recessive allele.
 - Probability of round: 3/4. Probability of yellow: 3/4. Round and yellow: 3/4 $\times$ 3/4 = 9/16.
 - Probability of round: 3/4. Probability of green: 1/4. Round and green: 3/4 $\times$ 1/4 = 3/16.
 - Probability of wrinkled: 1/4. Probability of yellow: 3/4. Wrinkled and yellow: 1/4 $\times$ 3/4 =
- 3/16.
+  3/16.
 - Probability of wrinkled: 1/4. Probability of green: 1/4. Wrinkled and green: 1/4 $\times$ 1/4 =
- 1/16.
+  1/16.
 
 This confirms the 9:3:3:1 ratio.
 
@@ -814,7 +821,8 @@ This confirms the 9:3:3:1 ratio.
 <details>
 <summary>Question 1: Monohybrid cross</summary>
 
-In pea plants, tall stems (T) are dominant over short stems (t). A heterozygous tall plant is crossed with a short plant. What are the expected genotype and phenotype ratios of the offspring?
+In pea plants, tall stems (T) are dominant over short stems (t). A heterozygous tall plant is
+crossed with a short plant. What are the expected genotype and phenotype ratios of the offspring?
 
 </details>
 
@@ -827,20 +835,21 @@ Gametes: $T$$t$ and $t$$t$.
 
 Punnett square:
 
-| | T | t |
-|---|---|---|
-| t | Tt | tt |
-| t | Tt | tt |
+|     | T   | t   |
+| --- | --- | --- |
+| t   | Tt  | tt  |
+| t   | Tt  | tt  |
 
-Genotype ratio: 1 Tt : 1 tt (50% : 50%).
-Phenotype ratio: 1 tall : 1 short (50% : 50%).
+Genotype ratio: 1 Tt : 1 tt (50% : 50%). Phenotype ratio: 1 tall : 1 short (50% : 50%).
 
 </details>
 
 <details>
 <summary>Question 2: Sex-linked inheritance</summary>
 
-Red-green colour blindness is caused by a recessive allele on the X chromosome. A carrier female ($X^NX^n$) and a normal male ($X^NY$) have children. What is the probability that their son will be colour blind?
+Red-green colour blindness is caused by a recessive allele on the X chromosome. A carrier female
+($X^NX^n$) and a normal male ($X^NY$) have children. What is the probability that their son will be
+colour blind?
 
 </details>
 
@@ -849,51 +858,68 @@ Red-green colour blindness is caused by a recessive allele on the X chromosome. 
 
 Punnett square:
 
-| | $X^N$ | Y |
-|---|---|---|
+|       | $X^N$    | Y      |
+| ----- | -------- | ------ |
 | $X^N$ | $X^NX^N$ | $X^NY$ |
 | $X^n$ | $X^NX^n$ | $X^nY$ |
 
-Each child has a 50% chance of being a boy. For sons: 50% normal ($X^NY$), 50% colour blind ($X^nY$).
+Each child has a 50% chance of being a boy. For sons: 50% normal ($X^NY$), 50% colour blind
+($X^nY$).
 
-Probability of a colour blind son = P(son) $\times$ P(colour blind | son) = $0.5 \times 0.5 = 0.25$ (25%).
+Probability of a colour blind son = P(son) $\times$ P(colour blind | son) = $0.5 \times 0.5 = 0.25$
+(25%).
 
 </details>
 
 <details>
 <summary>Question 3: DNA and protein synthesis</summary>
 
-Describe the process of transcription. Explain how mRNA is used to produce a protein at the ribosome.
+Describe the process of transcription. Explain how mRNA is used to produce a protein at the
+ribosome.
 
 </details>
 
 <details>
 <summary>Answer</summary>
 
-Transcription: The enzyme RNA polymerase binds to the DNA at the start of a gene. It unwinds the double helix and uses one strand as a template to build a complementary mRNA molecule. The base pairing rules are A-U (instead of A-T) and C-G. Once complete, the mRNA detaches and leaves the nucleus through a nuclear pore.
+Transcription: The enzyme RNA polymerase binds to the DNA at the start of a gene. It unwinds the
+double helix and uses one strand as a template to build a complementary mRNA molecule. The base
+pairing rules are A-U (instead of A-T) and C-G. Once complete, the mRNA detaches and leaves the
+nucleus through a nuclear pore.
 
-Translation (protein synthesis): The mRNA attaches to a ribosome. Transfer RNA (tRNA) molecules bring amino acids to the ribosome, matching their anticodon to the codon on the mRNA. The ribosome joins the amino acids together with peptide bonds, forming a polypeptide chain. The chain folds into a functional protein.
+Translation (protein synthesis): The mRNA attaches to a ribosome. Transfer RNA (tRNA) molecules
+bring amino acids to the ribosome, matching their anticodon to the codon on the mRNA. The ribosome
+joins the amino acids together with peptide bonds, forming a polypeptide chain. The chain folds into
+a functional protein.
 
 </details>
 
 <details>
 <summary>Question 4: Natural selection and antibiotic resistance</summary>
 
-Explain how the overuse of antibiotics has led to the development of antibiotic-resistant bacteria, using the concept of natural selection.
+Explain how the overuse of antibiotics has led to the development of antibiotic-resistant bacteria,
+using the concept of natural selection.
 
 </details>
 
 <details>
 <summary>Answer</summary>
 
-In any bacterial population, random mutations occur. Some bacteria may acquire a mutation that provides resistance to an antibiotic. When antibiotics are used, susceptible bacteria are killed, but resistant bacteria survive. These survivors reproduce, passing the resistance allele to their offspring. Over time, the proportion of resistant bacteria in the population increases. Overuse of antibiotics creates a strong selection pressure that favours resistant strains. This is natural selection in action: the antibiotic acts as the selective pressure, and resistance is the advantageous trait.
+In any bacterial population, random mutations occur. Some bacteria may acquire a mutation that
+provides resistance to an antibiotic. When antibiotics are used, susceptible bacteria are killed,
+but resistant bacteria survive. These survivors reproduce, passing the resistance allele to their
+offspring. Over time, the proportion of resistant bacteria in the population increases. Overuse of
+antibiotics creates a strong selection pressure that favours resistant strains. This is natural
+selection in action: the antibiotic acts as the selective pressure, and resistance is the
+advantageous trait.
 
 </details>
 
 <details>
 <summary>Question 5: Genetic variation</summary>
 
-Describe two sources of genetic variation and explain why genetic variation is important for the survival of a species.
+Describe two sources of genetic variation and explain why genetic variation is important for the
+survival of a species.
 
 </details>
 
@@ -901,9 +927,13 @@ Describe two sources of genetic variation and explain why genetic variation is i
 <summary>Answer</summary>
 
 1. Mutation: a random change in the DNA sequence that can create new alleles.
-2. Sexual reproduction: meiosis produces gametes with different combinations of alleles through independent assortment and crossing over. Random fertilisation further increases variation.
+2. Sexual reproduction: meiosis produces gametes with different combinations of alleles through
+   independent assortment and crossing over. Random fertilisation further increases variation.
 
-Genetic variation is important because it provides the raw material for natural selection. If the environment changes (e.g., new disease, climate change), some individuals may possess advantageous alleles that allow them to survive and reproduce. Without variation, a species cannot adapt and is more vulnerable to extinction.
+Genetic variation is important because it provides the raw material for natural selection. If the
+environment changes (e.g., new disease, climate change), some individuals may possess advantageous
+alleles that allow them to survive and reproduce. Without variation, a species cannot adapt and is
+more vulnerable to extinction.
 
 </details>
 

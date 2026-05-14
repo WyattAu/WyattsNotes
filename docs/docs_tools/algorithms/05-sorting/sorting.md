@@ -1,19 +1,22 @@
 ---
 id: sorting
 title: Sorting Algorithms
-description: "Sorting Algorithms — Sorting Fundamentals; Properties; Comparison Model; Comparison-Based Sorting with worked examples and exam-style questions."
+description:
+  'Sorting Algorithms — Sorting Fundamentals; Properties; Comparison Model; Comparison-Based Sorting
+  with worked examples and exam-style questions.'
 slug: sorting
 ---
+
 ## Sorting Fundamentals
 
 ### Properties
 
-| Property | Definition | Why It Matters |
+| Property     | Definition                                              | Why It Matters                                               |
 | ------------ | ------------------------------------------------------- | ------------------------------------------------------------ |
-| **Stable** | Equal elements retain their relative order | Preserves secondary sort keys, needed for multi-key sorting |
-| **In-place** | Uses $O(1)$ extra memory (or $O(\log n)$ for recursion) | Critical when memory is constrained |
-| **Adaptive** | Runs faster on partially sorted input | Common in practice — incremental updates, nearly-sorted logs |
-| **Online** | Can sort elements as they arrive | Streaming scenarios where the full input is not available |
+| **Stable**   | Equal elements retain their relative order              | Preserves secondary sort keys, needed for multi-key sorting  |
+| **In-place** | Uses $O(1)$ extra memory (or $O(\log n)$ for recursion) | Critical when memory is constrained                          |
+| **Adaptive** | Runs faster on partially sorted input                   | Common in practice — incremental updates, nearly-sorted logs |
+| **Online**   | Can sort elements as they arrive                        | Streaming scenarios where the full input is not available    |
 
 ### Comparison Model
 
@@ -209,13 +212,13 @@ def _partition_lomuto(arr, low, high):
 
 **Pivot selection strategies:**
 
-| Strategy | Average | Worst Case | Notes |
+| Strategy           | Average                  | Worst Case                           | Notes                                  |
 | ------------------ | ------------------------ | ------------------------------------ | -------------------------------------- |
-| First/last element | $O(n \log n)$ | $O(n^2)$ on sorted input | exploitable |
-| Middle element | $O(n \log n)$ | $O(n^2)$ on specific patterns | Better than first/last |
-| Random element | $O(n \log n)$ expected | $O(n^2)$ with negligible probability | Requires RNG |
-| Median of three | $O(n \log n)$ | $O(n \log n)$ typical | Samples first, middle, last |
-| Median of medians | $O(n \log n)$ guaranteed | $O(n \log n)$ guaranteed | High constant, rarely used in practice |
+| First/last element | $O(n \log n)$            | $O(n^2)$ on sorted input             | exploitable                            |
+| Middle element     | $O(n \log n)$            | $O(n^2)$ on specific patterns        | Better than first/last                 |
+| Random element     | $O(n \log n)$ expected   | $O(n^2)$ with negligible probability | Requires RNG                           |
+| Median of three    | $O(n \log n)$            | $O(n \log n)$ typical                | Samples first, middle, last            |
+| Median of medians  | $O(n \log n)$ guaranteed | $O(n \log n)$ guaranteed             | High constant, rarely used in practice |
 
 ### Heapsort
 
@@ -325,8 +328,8 @@ def counting_sort(arr):
     return output
 ```
 
-**When to use:** Small integer ranges ($k = O(n)$). If $k \gg n$Counting sort uses more memory
-Than the input and may be slower than comparison sort.
+**When to use:** Small integer ranges ($k = O(n)$). If $k \gg n$Counting sort uses more memory Than
+the input and may be slower than comparison sort.
 
 ### Radix Sort
 
@@ -410,8 +413,8 @@ def bucket_sort(arr, num_buckets=10):
 ```
 
 **When bucket sort works well:** When the input is uniformly distributed, each bucket has $O(n/k)$
-Elements and sorting each bucket takes $O((n/k)^2)$Giving total $O(n + k \cdot (n/k)^2) = O(n)$
-When $k = \Theta(n)$.
+Elements and sorting each bucket takes $O((n/k)^2)$Giving total $O(n + k \cdot (n/k)^2) = O(n)$ When
+$k = \Theta(n)$.
 
 **When it degrades:** When all elements fall into a single bucket, it degrades to the bucket's
 Internal sort — $O(n^2)$ with insertion sort.
@@ -462,8 +465,8 @@ def external_sort_conceptual(data, chunk_size, num_buffers):
     return result
 ```
 
-External sorting is the foundation of database `ORDER BY` operations, `GROUP BY`And join
-Algorithms when the working set exceeds memory.
+External sorting is the foundation of database `ORDER BY` operations, `GROUP BY`And join Algorithms
+when the working set exceeds memory.
 
 ## TimSort
 
@@ -473,46 +476,47 @@ Tim Peters for Python in 2002. It is the default sort in Python, Java (for objec
 ### How TimSort Works
 
 1. **Find runs:** Scan the array for contiguous subsequences that are already sorted (ascending or
- strictly descending, which is reversed in-place)
-2. **Extend short runs:** If a run is shorter than `minrun` ( 32-64), extend it using
- binary insertion sort to length `minrun`
+   strictly descending, which is reversed in-place)
+2. **Extend short runs:** If a run is shorter than `minrun` ( 32-64), extend it using binary
+   insertion sort to length `minrun`
 3. **Merge runs:** Maintain a stack of run lengths. Merge runs when the top of the stack violates
- two invariants:
- - $|\mathrm{run{}_i| \gt |\mathrm{run{}_{i+1}| + |\mathrm{run{}_{i+2}|$
- - $|\mathrm{run{}_{i+1}| \gt |\mathrm{run{}_{i+2}|$
+   two invariants:
+
+- $|\mathrm{run{}_i| \gt |\mathrm{run{}_{i+1}| + |\mathrm{run{}_{i+2}|$
+- $|\mathrm{run{}_{i+1}| \gt |\mathrm{run{}_{i+2}|$
 
 ### Why TimSort Is Fast in Practice
 
 - **Adaptive:** Exploits existing order. On already-sorted data, it runs in $O(n)$ — just one pass
- to identify the single run.
+  to identify the single run.
 - **Cache-friendly:** Merge operations work on contiguous memory regions.
 - **Stable:** Preserves the relative order of equal elements.
 - **Optimised merges:** Uses galloping mode (exponential search) when one run is much larger than
- the other, reducing the number of comparisons from $O(n)$ to $O(n \log m)$ where $m$ is the
- smaller run length.
+  the other, reducing the number of comparisons from $O(n)$ to $O(n \log m)$ where $m$ is the
+  smaller run length.
 
-| Input Pattern | TimSort Time | Quicksort Time | Merge Sort Time |
+| Input Pattern  | TimSort Time      | Quicksort Time       | Merge Sort Time |
 | -------------- | ----------------- | -------------------- | --------------- |
-| Already sorted | $O(n)$ | $O(n^2)$ (bad pivot) | $O(n \log n)$ |
-| Reverse sorted | $O(n)$ | $O(n^2)$ (bad pivot) | $O(n \log n)$ |
-| Random | $O(n \log n)$ | $O(n \log n)$ | $O(n \log n)$ |
-| Mostly sorted | $O(n + k \log k)$ | $O(n \log n)$ | $O(n \log n)$ |
+| Already sorted | $O(n)$            | $O(n^2)$ (bad pivot) | $O(n \log n)$   |
+| Reverse sorted | $O(n)$            | $O(n^2)$ (bad pivot) | $O(n \log n)$   |
+| Random         | $O(n \log n)$     | $O(n \log n)$        | $O(n \log n)$   |
+| Mostly sorted  | $O(n + k \log k)$ | $O(n \log n)$        | $O(n \log n)$   |
 
 ## Sorting Complexity Summary
 
-| Algorithm | Best | Average | Worst | Space | Stable | Adaptive |
+| Algorithm      | Best          | Average       | Worst         | Space       | Stable | Adaptive  |
 | -------------- | ------------- | ------------- | ------------- | ----------- | ------ | --------- |
-| Bubble sort | $O(n)$ | $O(n^2)$ | $O(n^2)$ | $O(1)$ | Yes | Yes |
-| Selection sort | $O(n^2)$ | $O(n^2)$ | $O(n^2)$ | $O(1)$ | No | No |
-| Insertion sort | $O(n)$ | $O(n^2)$ | $O(n^2)$ | $O(1)$ | Yes | Yes |
-| Merge sort | $O(n \log n)$ | $O(n \log n)$ | $O(n \log n)$ | $O(n)$ | Yes | No |
-| Quicksort | $O(n \log n)$ | $O(n \log n)$ | $O(n^2)$ | $O(\log n)$ | No | No |
-| Heapsort | $O(n \log n)$ | $O(n \log n)$ | $O(n \log n)$ | $O(1)$ | No | No |
-| Introsort | $O(n \log n)$ | $O(n \log n)$ | $O(n \log n)$ | $O(\log n)$ | No | No |
-| Counting sort | $O(n+k)$ | $O(n+k)$ | $O(n+k)$ | $O(n+k)$ | Yes | No |
-| Radix sort | $O(d(n+b))$ | $O(d(n+b))$ | $O(d(n+b))$ | $O(n+b)$ | Yes | No |
-| Bucket sort | $O(n+k)$ | $O(n)$ | $O(n^2)$ | $O(n+k)$ | Yes | Partially |
-| TimSort | $O(n)$ | $O(n \log n)$ | $O(n \log n)$ | $O(n)$ | Yes | Yes |
+| Bubble sort    | $O(n)$        | $O(n^2)$      | $O(n^2)$      | $O(1)$      | Yes    | Yes       |
+| Selection sort | $O(n^2)$      | $O(n^2)$      | $O(n^2)$      | $O(1)$      | No     | No        |
+| Insertion sort | $O(n)$        | $O(n^2)$      | $O(n^2)$      | $O(1)$      | Yes    | Yes       |
+| Merge sort     | $O(n \log n)$ | $O(n \log n)$ | $O(n \log n)$ | $O(n)$      | Yes    | No        |
+| Quicksort      | $O(n \log n)$ | $O(n \log n)$ | $O(n^2)$      | $O(\log n)$ | No     | No        |
+| Heapsort       | $O(n \log n)$ | $O(n \log n)$ | $O(n \log n)$ | $O(1)$      | No     | No        |
+| Introsort      | $O(n \log n)$ | $O(n \log n)$ | $O(n \log n)$ | $O(\log n)$ | No     | No        |
+| Counting sort  | $O(n+k)$      | $O(n+k)$      | $O(n+k)$      | $O(n+k)$    | Yes    | No        |
+| Radix sort     | $O(d(n+b))$   | $O(d(n+b))$   | $O(d(n+b))$   | $O(n+b)$    | Yes    | No        |
+| Bucket sort    | $O(n+k)$      | $O(n)$        | $O(n^2)$      | $O(n+k)$    | Yes    | Partially |
+| TimSort        | $O(n)$        | $O(n \log n)$ | $O(n \log n)$ | $O(n)$      | Yes    | Yes       |
 
 ## When to Use Which Sort
 
@@ -601,8 +605,8 @@ Preserves the ordering for positive floats, and reversing it for negative floats
 ### 4. Counting Sort Memory Blowup
 
 Counting sort uses $O(k)$ space where $k$ is the range of values. If you have 1,000 integers ranging
-From 0 to $10^9$Counting sort allocates a $10^9$-element array. Always check that $k = O(n)$
-Before using counting sort, or use radix sort instead.
+From 0 to $10^9$Counting sort allocates a $10^9$-element array. Always check that $k = O(n)$ Before
+using counting sort, or use radix sort instead.
 
 ### 5. Ignoring the Base Case in Recursive Sorts
 
@@ -627,8 +631,8 @@ Alternatively, use a compound comparison key.
 
 ### Parallel Merge Sort
 
-Merge sort parallelises because the two recursive sorts are independent. The parallel
-Speedup is limited by the merge step, which requires $O(n)$ work sequentially.
+Merge sort parallelises because the two recursive sorts are independent. The parallel Speedup is
+limited by the merge step, which requires $O(n)$ work sequentially.
 
 ```python
 def parallel_merge_sort(arr, depth=0, max_depth=3):
@@ -666,38 +670,38 @@ Sample sort is a parallel generalisation of quicksort:
 
 ### Comparison of Parallel Sorts
 
-| Algorithm | Parallel Time | Work Efficiency | Notes |
+| Algorithm           | Parallel Time              | Work Efficiency | Notes                              |
 | ------------------- | -------------------------- | --------------- | ---------------------------------- |
-| Parallel merge sort | $O(\log n)$ depth | Yes | Merge is sequential bottleneck |
-| Parallel quicksort | $O(\log n)$ expected depth | Yes | Load imbalance on bad pivots |
-| Sample sort | $O(n/p + \log p)$ expected | Mostly | Communication overhead |
-| Bitonic sort | $O(\log^2 n)$ | No | Good for GPU, poor work efficiency |
+| Parallel merge sort | $O(\log n)$ depth          | Yes             | Merge is sequential bottleneck     |
+| Parallel quicksort  | $O(\log n)$ expected depth | Yes             | Load imbalance on bad pivots       |
+| Sample sort         | $O(n/p + \log p)$ expected | Mostly          | Communication overhead             |
+| Bitonic sort        | $O(\log^2 n)$              | No              | Good for GPU, poor work efficiency |
 
 ## Sorting in Practice
 
 ### Standard Library Sorts
 
-| Language | Algorithm | Stable | Notes |
+| Language                | Algorithm                   | Stable   | Notes                              |
 | ----------------------- | --------------------------- | -------- | ---------------------------------- |
-| Python | TimSort | Yes | Hybrid merge + insertion, adaptive |
-| Java (objects) | TimSort | Yes | Since Java 7 |
-| Java (primitives) | Dual-pivot quicksort | No | Since Java 7 |
-| C++ `std::sort` | Introsort | No | Quicksort + heapsort fallback |
-| C++ `stable_sort` | Merge sort | Yes | $O(n \log n)$Uses extra memory |
-| Rust `sort` | Modified merge sort | No | Also called "timsort" |
-| Rust `sort_unstable` | Pattern-defeating quicksort | No | PDQSort |
-| Go `sort` | Pattern-defeating quicksort | No | Since Go 1.19 |
-| JavaScript `Array.sort` | TimSort (V8) | Yes (V8) | Implementation varies by engine |
+| Python                  | TimSort                     | Yes      | Hybrid merge + insertion, adaptive |
+| Java (objects)          | TimSort                     | Yes      | Since Java 7                       |
+| Java (primitives)       | Dual-pivot quicksort        | No       | Since Java 7                       |
+| C++ `std::sort`         | Introsort                   | No       | Quicksort + heapsort fallback      |
+| C++ `stable_sort`       | Merge sort                  | Yes      | $O(n \log n)$Uses extra memory     |
+| Rust `sort`             | Modified merge sort         | No       | Also called "timsort"              |
+| Rust `sort_unstable`    | Pattern-defeating quicksort | No       | PDQSort                            |
+| Go `sort`               | Pattern-defeating quicksort | No       | Since Go 1.19                      |
+| JavaScript `Array.sort` | TimSort (V8)                | Yes (V8) | Implementation varies by engine    |
 
 ### PDQSort (Pattern-Defeating Quicksort)
 
 PDQSort is a modern improvement over introsort used in Rust and Go:
 
 1. **Pattern detection:** Checks for already-sorted and reverse-sorted patterns, switching to
- insertion sort or reverse-insertion sort
+   insertion sort or reverse-insertion sort
 2. **Block partition:** Uses a branchless partitioning scheme that is faster on modern CPUs
 3. **Heap sort fallback:** Switches to heapsort if the recursion depth exceeds
- $2\lfloor\log_2 n\rfloor$
+   $2\lfloor\log_2 n\rfloor$
 4. **Tukey's ninther pivot:** Uses a median-of-three of medians-of-three for better pivot selection
 
 ### Dual-Pivot Quicksort
@@ -736,7 +740,7 @@ Why does merge sort preserve stability? Consider two equal elements $a$ and $b$ 
 Before $b$ in the input. During the merge step, when we compare $a$ and $b$:
 
 1. If $a$ and $b$ are in different halves, $a$ (from the left half) is chosen first because the
- merge uses `<=` (not `\lt{}`)
+   merge uses `<=` (not `\lt{}`)
 2. If $a$ and $b$ are in the same half, stability is preserved by the recursive invariant
 
 This inductive argument proves that merge sort is stable. Quicksort is unstable because the
@@ -748,12 +752,12 @@ The left side of the pivot may pass over an equal element on the right side.
 A sorting network is a fixed sequence of compare-and-swap operations that sorts any input. The depth
 Of a sorting network is the minimum number of parallel steps needed. Known bounds:
 
-| Network | Depth | Comparators | Notes |
+| Network             | Depth         | Comparators     | Notes                              |
 | ------------------- | ------------- | --------------- | ---------------------------------- |
-| Bubble sort network | $O(n^2)$ | $O(n^2)$ | Trivial |
-| Bitonic sort | $O(\log^2 n)$ | $O(n \log^2 n)$ | Good for hardware |
-| Odd-even mergesort | $O(\log^2 n)$ | $O(n \log^2 n)$ | Practical |
-| AKS network | $O(\log n)$ | $O(n \log n)$ | Theoretical, impractical constants |
+| Bubble sort network | $O(n^2)$      | $O(n^2)$        | Trivial                            |
+| Bitonic sort        | $O(\log^2 n)$ | $O(n \log^2 n)$ | Good for hardware                  |
+| Odd-even mergesort  | $O(\log^2 n)$ | $O(n \log^2 n)$ | Practical                          |
+| AKS network         | $O(\log n)$   | $O(n \log n)$   | Theoretical, impractical constants |
 
 Sorting networks are used in GPU sorting (where the compare-and-swap operations can be executed in
 Parallel by many threads) and in hardware sorters (e.g., in network switches for packet
@@ -819,14 +823,14 @@ This uses $O(n)$ extra space and adds a comparison, but guarantees stability.
 
 ### MSD vs LSD Radix Sort
 
-| Property | LSD (Least Significant Digit) | MSD (Most Significant Digit) |
+| Property                  | LSD (Least Significant Digit)   | MSD (Most Significant Digit) |
 | ------------------------- | ------------------------------- | ---------------------------- |
-| Pass order | Least to most significant | Most to least significant |
-| Stability requirement | Stable per-digit sort needed | Not required (uses buckets) |
-| Bucket handling | No buckets to recurse into | Recursive buckets |
-| Character strings | Cannot skip trailing characters | Can skip common prefixes |
-| Cache behaviour | Excellent (sequential passes) | Poor (random bucket access) |
-| Implementation complexity | Simple | More complex |
+| Pass order                | Least to most significant       | Most to least significant    |
+| Stability requirement     | Stable per-digit sort needed    | Not required (uses buckets)  |
+| Bucket handling           | No buckets to recurse into      | Recursive buckets            |
+| Character strings         | Cannot skip trailing characters | Can skip common prefixes     |
+| Cache behaviour           | Excellent (sequential passes)   | Poor (random bucket access)  |
+| Implementation complexity | Simple                          | More complex                 |
 
 ### Radix Sort for Strings
 
@@ -915,11 +919,11 @@ A comparison-based sorting algorithm can be modelled as a binary decision tree:
 ### Proof
 
 1. There are $n!$ possible permutations of $n$ elements, so the decision tree has at least $n!$
- leaves
+   leaves
 2. A binary tree of height $h$ has at most $2^h$ leaves
 3. Therefore: $2^h \ge n!$So $h \ge \log_2(n!)$
 4. By Stirling's approximation:
- $\log_2(n!) = n \log_2 n - n \log_2 e + O(\log n) = \Omega(n \log n)$
+   $\log_2(n!) = n \log_2 n - n \log_2 e + O(\log n) = \Omega(n \log n)$
 5. Therefore, any comparison-based sort requires $\Omega(n \log n)$ comparisons in the worst case
 
 ### Tightness

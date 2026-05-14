@@ -1,21 +1,22 @@
 ---
 title: Statics (Extended)
-description: "A-Level Mathematics notes on Statics (Extended): Statics (Extended Treatment); 1. Moments; 1.1 Definition; 1.2 Moment of a force at an angle."
+description:
+  'A-Level Mathematics notes on Statics (Extended): Statics (Extended Treatment); 1. Moments; 1.1
+  Definition; 1.2 Moment of a force at an angle.'
 date: 2026-04-23T00:00:00.000Z
 tags: [Mathematics, ALevel]
 categories: [Mathematics]
 slug: statics-extended
 ---
+
 ## Statics (Extended Treatment)
 
 This document covers moments, equilibrium conditions, centres of mass, ladder problems, and
 Frameworks with a rigorous, proof-based approach.
 
-:::info
-Statics problems require careful consideration of every force and every moment. A systematic
+:::info Statics problems require careful consideration of every force and every moment. A systematic
 Approach -- drawing the diagram, listing forces, choosing a pivot -- is more reliable than
-Intuition.
-:::
+Intuition. :::
 
 <hr />
 
@@ -36,9 +37,8 @@ Negative.
 
 ### 1.2 Moment of a force at an angle
 
-If a force $F$ acts at angle $\theta$ to the line joining the point of application to the pivot,
-The moment is $M = Fd\sin\theta$Where $d$ is the distance from the pivot to the point of
-Application.
+If a force $F$ acts at angle $\theta$ to the line joining the point of application to the pivot, The
+moment is $M = Fd\sin\theta$Where $d$ is the distance from the pivot to the point of Application.
 
 **Proof.** Resolve the force into components parallel and perpendicular to the line from the pivot
 To the point of application. The parallel component passes through the pivot and produces zero
@@ -48,8 +48,9 @@ $\blacksquare$
 ### 1.3 Worked example: beam on two supports
 
 **Problem.** A uniform beam $AB$ of mass $20\;\mathrm{kg}$ and length $4\;\mathrm{m}$ rests
-Horizontally on supports at $A$ and at a point $C$$1\;\mathrm{m}$ from $B$. A load of $50\;\mathrm{N}$
-Is hung from the beam at a point $0.5\;\mathrm{m}$ from $A$. Find the reactions at $A$ and $C$.
+Horizontally on supports at $A$ and at a point $C$$1\;\mathrm{m}$ from $B$. A load of
+$50\;\mathrm{N}$ Is hung from the beam at a point $0.5\;\mathrm{m}$ from $A$. Find the reactions at
+$A$ and $C$.
 
 Taking moments about $A$ (anticlockwise positive):
 
@@ -63,11 +64,8 @@ Resolving vertically: $R_A + R_C = 20g + 50$
 
 $$R_A = 20g + 50 - 139 = 196 + 50 - 139 = 107\;\mathrm{N}$$
 
-:::warning
-Common Pitfall
-When taking moments, always measure the **perpendicular distance** from the line of action of the
-Force to the pivot point, not just the distance along the beam.
-:::
+:::warning Common Pitfall When taking moments, always measure the **perpendicular distance** from
+the line of action of the Force to the pivot point, not just the distance along the beam. :::
 
 <hr />
 
@@ -77,8 +75,7 @@ Force to the pivot point, not just the distance along the beam.
 
 A rigid body is in equilibrium if and only if:
 
-1. **The resultant force is zero:**
-   $$\sum \mathbf{F} = \mathbf{0}$$
+1. **The resultant force is zero:** $$\sum \mathbf{F} = \mathbf{0}$$
 
 2. **The resultant moment about any point is zero:**
    $$\sum M_O = 0 \quad \mathrm{for\ any\ point}\ O$$
@@ -92,8 +89,8 @@ $$M_B = M_A + \mathbf{r}_{BA} \times \sum \mathbf{F} = 0 + \mathbf{r}_{BA} \time
 
 Where $\mathbf{r}_{BA}$ is the position vector from $B$ to $A$. $\blacksquare$
 
-This theorem means we only need to take moments about **one** point, but we can choose any point
-To simplify the calculation.
+This theorem means we only need to take moments about **one** point, but we can choose any point To
+simplify the calculation.
 
 ### 2.2 Resolving forces in two dimensions
 
@@ -109,11 +106,12 @@ This gives three equations, which can determine up to three unknowns.
 Supports at $A$ and $B$. When a load of $200\;\mathrm{N}$ is placed at a point $2\;\mathrm{m}$ from
 $A$The reaction at $A$ is $350\;\mathrm{N}$. Find the position of the centre of mass of the beam.
 
-Let the centre of mass be at distance $x$ from $A$. Taking moments about $B$ (anticlockwise positive):
+Let the centre of mass be at distance $x$ from $A$. Taking moments about $B$ (anticlockwise
+positive):
 
-The beam's weight $30g$ acts downward at distance $x$ from $A$Which is $(6 - x)$ from $B$.
-The $200\;\mathrm{N}$ load acts at distance $4\;\mathrm{m}$ from $B$.
-The reaction at $A$ ($350\;\mathrm{N}$) acts at distance $6\;\mathrm{m}$ from $B$.
+The beam's weight $30g$ acts downward at distance $x$ from $A$Which is $(6 - x)$ from $B$. The
+$200\;\mathrm{N}$ load acts at distance $4\;\mathrm{m}$ from $B$. The reaction at $A$
+($350\;\mathrm{N}$) acts at distance $6\;\mathrm{m}$ from $B$.
 
 $$350 \times 6 + 200 \times 4 - 30g(6 - x) = 0$$
 
@@ -125,12 +123,14 @@ $$294x = 1764 - 2900 = -1136$$
 
 Wait -- this gives a negative result, which suggests an error in sign convention. Let me reconsider.
 
-Taking moments about $B$ with anticlockwise positive: forces pushing the beam to rotate anticlockwise
-About $B$ contribute positively.
+Taking moments about $B$ with anticlockwise positive: forces pushing the beam to rotate
+anticlockwise About $B$ contribute positively.
 
-$R_A = 350\;\mathrm{N}$ acts upward at distance $6\;\mathrm{m}$ from $B$: moment $= +350 \times 6 = 2100$.
+$R_A = 350\;\mathrm{N}$ acts upward at distance $6\;\mathrm{m}$ from $B$: moment
+$= +350 \times 6 = 2100$.
 
-$200\;\mathrm{N}$ acts downward at distance $4\;\mathrm{m}$ from $B$: moment $= -200 \times 4 = -800$.
+$200\;\mathrm{N}$ acts downward at distance $4\;\mathrm{m}$ from $B$: moment
+$= -200 \times 4 = -800$.
 
 $30g\;\mathrm{N}$ acts downward at distance $(6-x)$ from $B$: moment $= -30g(6-x)$.
 
@@ -148,7 +148,8 @@ The centre of mass is approximately $1.58\;\mathrm{m}$ from $A$.
 
 ### 3.1 Centre of mass of a system of particles
 
-For particles of masses $m_1, m_2, \ldots, m_n$ at positions $(x_1, y_1), (x_2, y_2), \ldots, (x_n, y_n)$:
+For particles of masses $m_1, m_2, \ldots, m_n$ at positions
+$(x_1, y_1), (x_2, y_2), \ldots, (x_n, y_n)$:
 
 $$\bar{x} = \frac◆LB◆\sum m_i x_i◆RB◆◆LB◆\sum m_i◆RB◆, \qquad \bar{y} = \frac◆LB◆\sum m_i y_i◆RB◆◆LB◆\sum m_i◆RB◆$$
 
@@ -161,14 +162,14 @@ $$\bar{x} = \frac◆LB◆\sum m_i x_i◆RB◆◆LB◆\sum m_i◆RB◆, \qquad \b
 **Uniform triangular lamina:** At the intersection of the medians, which is at a distance
 $\dfrac{2}{3}$ of the median length from each vertex.
 
-**Proof for a triangle.** Place the triangle with vertices at $(0,0)$$(a,0)$And $(0,b)$.
-A strip parallel to the base at height $y$ has width $a\!\left(1 - \dfrac{y}{b}\right)$ and mass
+**Proof for a triangle.** Place the triangle with vertices at $(0,0)$$(a,0)$And $(0,b)$. A strip
+parallel to the base at height $y$ has width $a\!\left(1 - \dfrac{y}{b}\right)$ and mass
 Proportional to this width.
 
 $$\bar{y} = \frac◆LB◆\int_0^b y \cdot a\!\left(1 - \frac{y}{b}\right)dy◆RB◆◆LB◆\int_0^b a\!\left(1 - \frac{y}{b}\right)dy◆RB◆ = \frac◆LB◆\left[\frac{y^2}{2} - \frac{y^3}{3b}\right]_0^b◆RB◆◆LB◆\left[y - \frac{y^2}{2b}\right]_0^b◆RB◆ = \frac◆LB◆\frac{b^2}{2} - \frac{b^2}{3}◆RB◆◆LB◆b - \frac{b}{2}◆RB◆ = \frac◆LB◆\frac{b^2}{6}◆RB◆◆LB◆\frac{b}{2}◆RB◆ = \frac{b}{3}$$
 
-The centre of mass is at height $\dfrac{b}{3}$Which is $\dfrac{1}{3}$ of the way from the base
-And $\dfrac{2}{3}$ from the apex. $\blacksquare$
+The centre of mass is at height $\dfrac{b}{3}$Which is $\dfrac{1}{3}$ of the way from the base And
+$\dfrac{2}{3}$ from the apex. $\blacksquare$
 
 ### 3.3 Composite bodies
 
@@ -178,14 +179,14 @@ By treating each part as a particle at its own centre of mass.
 ### 3.4 Worked example: composite lamina
 
 **Problem.** A uniform lamina consists of a rectangle $ABCD$ with $AB = 8\;\mathrm{cm}$
-$BC = 6\;\mathrm{cm}$With a semicircle of diameter $8\;\mathrm{cm}$ removed from the top edge
-$AD$. Find the centre of mass of the remaining lamina.
+$BC = 6\;\mathrm{cm}$With a semicircle of diameter $8\;\mathrm{cm}$ removed from the top edge $AD$.
+Find the centre of mass of the remaining lamina.
 
 Rectangle: area $= 48\;\mathrm{cm}^2$Centre at $(4, 3)$.
 
-Semicircle: radius $= 4\;\mathrm{cm}$Area $= \dfrac{1}{2}\pi(16) = 8\pi\;\mathrm{cm}^2$.
-Centre of mass of the semicircle is at distance $\dfrac◆LB◆4r◆RB◆◆LB◆3\pi◆RB◆ = \dfrac◆LB◆16◆RB◆◆LB◆3\pi◆RB◆$ from the
-Diameter, i.e. At $(4, 6 - \dfrac◆LB◆16◆RB◆◆LB◆3\pi◆RB◆)$.
+Semicircle: radius $= 4\;\mathrm{cm}$Area $= \dfrac{1}{2}\pi(16) = 8\pi\;\mathrm{cm}^2$. Centre of
+mass of the semicircle is at distance $\dfrac◆LB◆4r◆RB◆◆LB◆3\pi◆RB◆ = \dfrac◆LB◆16◆RB◆◆LB◆3\pi◆RB◆$
+from the Diameter, i.e. At $(4, 6 - \dfrac◆LB◆16◆RB◆◆LB◆3\pi◆RB◆)$.
 
 Treating the removed semicircle as a negative mass:
 
@@ -197,12 +198,9 @@ $$\bar{y} = \frac◆LB◆48 \times 3 - 8\pi\!\left(6 - \frac{16}{3\pi}\right)◆
 
 $$\bar{y} = \frac{144 + 42.67 - 150.80}{48 - 25.13} = \frac{35.87}{22.87} \approx 1.57\;\mathrm{cm}$$
 
-:::warning
-Common Pitfall
-When a shape has a hole or a section removed, use the **negative mass** method: treat the removed
-Section as having negative area. The formula remains the same but with negative contributions from
-The removed part.
-:::
+:::warning Common Pitfall When a shape has a hole or a section removed, use the **negative mass**
+method: treat the removed Section as having negative area. The formula remains the same but with
+negative contributions from The removed part. :::
 
 <hr />
 
@@ -264,11 +262,9 @@ $$\alpha = \arctan(1.25) \approx 51.3^\circ$$
 
 The minimum angle is approximately $51.3^\circ$.
 
-:::warning
-Warning
-In ladder problems, always take moments about the **foot** of the ladder (or the point where two
-Unknown forces act) to eliminate as many unknowns as possible from the moment equation.
-:::
+:::warning Warning In ladder problems, always take moments about the **foot** of the ladder (or the
+point where two Unknown forces act) to eliminate as many unknowns as possible from the moment
+equation. :::
 
 <hr />
 
@@ -276,14 +272,15 @@ Unknown forces act) to eliminate as many unknowns as possible from the moment eq
 
 ### 5.1 Method of joints
 
-A **framework** (or truss) is a structure made of light rods joined at points called **joints**
-(or **nodes**). To analyse a framework:
+A **framework** (or truss) is a structure made of light rods joined at points called **joints** (or
+**nodes**). To analyse a framework:
 
 1. Find the external reactions (support forces) using equilibrium of the whole structure.
 2. Analyse each joint in turn, resolving forces in two perpendicular directions.
 3. Determine whether each rod is in **tension** (pulling) or **compression** (pushing).
 
 **Assumptions:**
+
 - All rods are light (weightless).
 - All joints are smooth pin joints.
 - All forces act along the rods (no bending).
@@ -291,9 +288,9 @@ A **framework** (or truss) is a structure made of light rods joined at points ca
 ### 5.2 Worked example: simple truss
 
 **Problem.** A framework consists of six light rods forming a equilateral triangle $ABC$ (side
-$2\;\mathrm{m}$) with midpoints $D$$E$$F$ on $AB$$BC$$CA$ respectively, connected to the
-Opposite vertices. A vertical load of $100\;\mathrm{N}$ acts at $A$. The framework is supported at
-$B$ and $C$ on smooth horizontal surfaces. Find the forces in all rods.
+$2\;\mathrm{m}$) with midpoints $D$$E$$F$ on $AB$$BC$$CA$ respectively, connected to the Opposite
+vertices. A vertical load of $100\;\mathrm{N}$ acts at $A$. The framework is supported at $B$ and
+$C$ on smooth horizontal surfaces. Find the forces in all rods.
 
 By symmetry, the vertical reactions at $B$ and $C$ are equal:
 
@@ -307,7 +304,8 @@ $$2T_{AD}\sin 60^\circ = 100 \implies T_{AD} = \frac◆LB◆100◆RB◆◆LB◆2
 
 Both $AD$ and $AE$ are in **tension** (pulling away from $A$).
 
-**Joint $B$:** Horizontal: $T_{BD} = R_B\cot 60^\circ = 50/\sqrt{3} \approx 28.9\;\mathrm{N}$ (tension).
+**Joint $B$:** Horizontal: $T_{BD} = R_B\cot 60^\circ = 50/\sqrt{3} \approx 28.9\;\mathrm{N}$
+(tension).
 
 Vertical: $T_{BF} = R_B = 50\;\mathrm{N}$ (compression, pushing into $B$).
 
@@ -325,8 +323,8 @@ Through the framework, and equilibrium of one of the resulting sections is analy
 ### Problem 1
 
 A uniform beam $AB$ of length $5\;\mathrm{m}$ and weight $200\;\mathrm{N}$ is hinged at $A$ and
-Supported by a wire attached at $B$Making an angle of $30^\circ$ with the beam. Find the tension
-In the wire and the reaction at the hinge.
+Supported by a wire attached at $B$Making an angle of $30^\circ$ with the beam. Find the tension In
+the wire and the reaction at the hinge.
 
 <details>
 <summary>Solution</summary>
@@ -352,8 +350,8 @@ The composite lamina.
 <details>
 <summary>Solution</summary>
 
-Square: area $= 100$Centre at $(5, 5)$.
-Triangle: area $= 30$Centre at $\left(\dfrac{10}{3}, 3\right)$ (one-third from the base).
+Square: area $= 100$Centre at $(5, 5)$. Triangle: area $= 30$Centre at
+$\left(\dfrac{10}{3}, 3\right)$ (one-third from the base).
 
 $$\bar{x} = \frac◆LB◆100 \times 5 + 30 \times \frac{10}{3}◆RB◆◆LB◆130◆RB◆ = \frac{500 + 100}{130} = \frac{600}{130} \approx 4.62\;\mathrm{cm}$$
 
@@ -364,10 +362,9 @@ $$\bar{y} = \frac◆LB◆100 \times 5 + 30 \times 3◆RB◆◆LB◆130◆RB◆ =
 ### Problem 3
 
 A uniform ladder of length $8\;\mathrm{m}$ and mass $25\;\mathrm{kg}$ rests against a rough vertical
-Wall (coefficient of friction $0.3$) on rough horizontal ground (coefficient of friction $0.4$).
-The ladder makes an angle of $55^\circ$ with the horizontal. A man of mass $75\;\mathrm{kg}$ stands
-On the ladder at a point $5\;\mathrm{m}$ from the foot. Determine whether the ladder is in
-Equilibrium.
+Wall (coefficient of friction $0.3$) on rough horizontal ground (coefficient of friction $0.4$). The
+ladder makes an angle of $55^\circ$ with the horizontal. A man of mass $75\;\mathrm{kg}$ stands On
+the ladder at a point $5\;\mathrm{m}$ from the foot. Determine whether the ladder is in Equilibrium.
 
 <details>
 <summary>Solution</summary>
@@ -388,16 +385,16 @@ So $F_g = 407.5\;\mathrm{N}$. Available friction at ground: $0.4 \times 980 = 39
 
 Available friction at wall: $F_w \leq 0.3 R_w = 0.3 \times 407.5 = 122.3\;\mathrm{N}$.
 
-For vertical equilibrium at the wall: $F_w + 25g + 75g = R_g$Which gives $F_w = 0$ by our
-Equation. But we should check: resolving vertically for the whole system gives $R_g = 980\;\mathrm{N}$
-And the wall friction $F_w$ acts upward.
+For vertical equilibrium at the wall: $F_w + 25g + 75g = R_g$Which gives $F_w = 0$ by our Equation.
+But we should check: resolving vertically for the whole system gives $R_g = 980\;\mathrm{N}$ And the
+wall friction $F_w$ acts upward.
 
 Taking moments about the foot again with $F_w$ included:
 
 $R_w \times 8\sin 55^\circ + F_w \times 8\cos 55^\circ = 475g\cos 55^\circ + 25g \times 4\cos 55^\circ$
 
-This gives $F_w = 0$ by the vertical resolution. Since $F_g = 407.5 \gt 392$The ladder
-**would slip** at the ground.
+This gives $F_w = 0$ by the vertical resolution. Since $F_g = 407.5 \gt 392$The ladder **would
+slip** at the ground.
 
 </details>
 
@@ -413,7 +410,8 @@ The string.
 
 The string $BC$ has length $\sqrt{9 + 4} = \sqrt{13}\;\mathrm{m}$.
 
-$\sin\theta = \dfrac◆LB◆2◆RB◆◆LB◆\sqrt{13}◆RB◆$ where $\theta$ is the angle between the string and the rod.
+$\sin\theta = \dfrac◆LB◆2◆RB◆◆LB◆\sqrt{13}◆RB◆$ where $\theta$ is the angle between the string and
+the rod.
 
 Taking moments about $A$:
 

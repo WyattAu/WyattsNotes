@@ -1,10 +1,13 @@
 ---
 id: processes-and-signals
 title: Processes and Signals
-description: "Processes and Signals — Process Lifecycle; Creating Processes: `fork`, `exec`, `wait`; `fork(2)`; `execve(2)` with worked examples and exam-style questions."
+description:
+  'Processes and Signals — Process Lifecycle; Creating Processes: `fork`, `exec`, `wait`; `fork(2)`;
+  `execve(2)` with worked examples and exam-style questions.'
 slug: processes-and-signals
 sidebar_position: 1
 ---
+
 ## Process Lifecycle
 
 Every running program in Linux is a **process** — an instance of an executing program with its own
@@ -72,8 +75,8 @@ perror("execve");
 exit(1);
 ```
 
-Variants of `exec`: `execl``execlp``execle``execv``execvp``execvpe` — they differ in how
-Arguments and environment are passed.
+Variants of `exec`: `execl``execlp``execle``execv``execvp``execvpe` — they differ in how Arguments
+and environment are passed.
 
 #### `wait(2)` / `waitpid(2)`
 
@@ -96,15 +99,15 @@ if (WIFEXITED(status)) {
 
 ### Process Identification
 
-| Identifier | Field in `task_struct` | Description |
+| Identifier   | Field in `task_struct` | Description                               |
 | ------------ | ---------------------- | ----------------------------------------- |
-| **PID** | `pid` | Process identifier (unique system-wide) |
-| **TID** | `pid` | Thread identifier (same namespace as PID) |
-| **PPID** | `real_parent->pid` | Parent process ID |
-| **PGID** | `group_leader->pid` | Process group ID (for signal delivery) |
-| **SID** | `signal->leader->pid` | Session ID (for job control) |
-| **UID/EUID** | `real_cred/cred` | Real and effective user ID |
-| **GID/EGID** | `real_cred/cred` | Real and effective group ID |
+| **PID**      | `pid`                  | Process identifier (unique system-wide)   |
+| **TID**      | `pid`                  | Thread identifier (same namespace as PID) |
+| **PPID**     | `real_parent->pid`     | Parent process ID                         |
+| **PGID**     | `group_leader->pid`    | Process group ID (for signal delivery)    |
+| **SID**      | `signal->leader->pid`  | Session ID (for job control)              |
+| **UID/EUID** | `real_cred/cred`       | Real and effective user ID                |
+| **GID/EGID** | `real_cred/cred`       | Real and effective group ID               |
 
 In Linux, threads are implemented as processes that share certain resources (address space, file
 Descriptors, signal handlers). Each thread has its own TID, but all threads in a process share the
@@ -151,15 +154,15 @@ stateDiagram-v2
     ZOMBIE --> [*]: parent calls wait
 ```
 
-| State | Code | Description |
+| State                    | Code | Description                                                    |
 | ------------------------ | ---- | -------------------------------------------------------------- |
-| **TASK_RUNNING** | R | Runnable (either executing or on a run queue) |
-| **TASK_INTERRUPTIBLE** | S | Sleeping, waiting for an event (can be interrupted by signals) |
-| **TASK_UNINTERRUPTIBLE** | D | Sleeping, waiting for disk I/O (cannot be interrupted) |
-| **TASK_STOPPED** | T | Stopped by `SIGSTOP``SIGTSTP`Or ptrace |
-| **TASK_TRACED** | t | Stopped by debugger (ptrace) |
-| **EXIT_ZOMBIE** | Z | Terminated, parent has not called `wait` |
-| **EXIT_DEAD** | X | Completely dead, waiting to be reaped |
+| **TASK_RUNNING**         | R    | Runnable (either executing or on a run queue)                  |
+| **TASK_INTERRUPTIBLE**   | S    | Sleeping, waiting for an event (can be interrupted by signals) |
+| **TASK_UNINTERRUPTIBLE** | D    | Sleeping, waiting for disk I/O (cannot be interrupted)         |
+| **TASK_STOPPED**         | T    | Stopped by `SIGSTOP``SIGTSTP`Or ptrace                         |
+| **TASK_TRACED**          | t    | Stopped by debugger (ptrace)                                   |
+| **EXIT_ZOMBIE**          | Z    | Terminated, parent has not called `wait`                       |
+| **EXIT_DEAD**            | X    | Completely dead, waiting to be reaped                          |
 
 ```bash
 # View process states
@@ -179,9 +182,9 @@ ps -eo pid,stat,comm
 
 :::warning
 
-A process in the **D state** (uninterruptible sleep) cannot be killed with `SIGKILL`. This 
-Means it is waiting for disk I/O that will never complete (e.g., NFS server down, failed disk). The
-Only way to clear it is to fix the underlying I/O or reboot.
+A process in the **D state** (uninterruptible sleep) cannot be killed with `SIGKILL`. This Means it
+is waiting for disk I/O that will never complete (e.g., NFS server down, failed disk). The Only way
+to clear it is to fix the underlying I/O or reboot.
 
 :::
 
@@ -193,27 +196,27 @@ User-space processes.
 
 ### Standard Signals
 
-| Signal | Number | Default Action | Description |
+| Signal    | Number | Default Action | Description                                    |
 | --------- | ------ | -------------- | ---------------------------------------------- |
-| `SIGHUP` | 1 | Terminate | Terminal hangup (daemon reload convention) |
-| `SIGINT` | 2 | Terminate | Terminal interrupt (Ctrl+C) |
-| `SIGQUIT` | 3 | Core dump | Terminal quit (Ctrl+\) |
-| `SIGILL` | 4 | Core dump | Illegal instruction |
-| `SIGABRT` | 6 | Core dump | Abort (from `abort()`) |
-| `SIGFPE` | 8 | Core dump | Floating-point exception |
-| `SIGKILL` | 9 | Terminate | Kill (cannot be caught or ignored) |
-| `SIGSEGV` | 11 | Core dump | Segmentation fault |
-| `SIGPIPE` | 13 | Terminate | Broken pipe (write to closed pipe) |
-| `SIGALRM` | 14 | Terminate | Alarm clock (from `alarm()`) |
-| `SIGTERM` | 15 | Terminate | Termination (polite kill — default for `kill`) |
-| `SIGUSR1` | 10 | Terminate | User-defined signal 1 |
-| `SIGUSR2` | 12 | Terminate | User-defined signal 2 |
-| `SIGCHLD` | 17 | Ignore | Child process status changed |
-| `SIGCONT` | 18 | Continue | Continue if stopped |
-| `SIGSTOP` | 19 | Stop | Stop (cannot be caught or ignored) |
-| `SIGTSTP` | 20 | Stop | Terminal stop (Ctrl+Z) |
-| `SIGTTIN` | 21 | Stop | Background read from terminal |
-| `SIGTTOU` | 22 | Stop | Background write to terminal |
+| `SIGHUP`  | 1      | Terminate      | Terminal hangup (daemon reload convention)     |
+| `SIGINT`  | 2      | Terminate      | Terminal interrupt (Ctrl+C)                    |
+| `SIGQUIT` | 3      | Core dump      | Terminal quit (Ctrl+\)                         |
+| `SIGILL`  | 4      | Core dump      | Illegal instruction                            |
+| `SIGABRT` | 6      | Core dump      | Abort (from `abort()`)                         |
+| `SIGFPE`  | 8      | Core dump      | Floating-point exception                       |
+| `SIGKILL` | 9      | Terminate      | Kill (cannot be caught or ignored)             |
+| `SIGSEGV` | 11     | Core dump      | Segmentation fault                             |
+| `SIGPIPE` | 13     | Terminate      | Broken pipe (write to closed pipe)             |
+| `SIGALRM` | 14     | Terminate      | Alarm clock (from `alarm()`)                   |
+| `SIGTERM` | 15     | Terminate      | Termination (polite kill — default for `kill`) |
+| `SIGUSR1` | 10     | Terminate      | User-defined signal 1                          |
+| `SIGUSR2` | 12     | Terminate      | User-defined signal 2                          |
+| `SIGCHLD` | 17     | Ignore         | Child process status changed                   |
+| `SIGCONT` | 18     | Continue       | Continue if stopped                            |
+| `SIGSTOP` | 19     | Stop           | Stop (cannot be caught or ignored)             |
+| `SIGTSTP` | 20     | Stop           | Terminal stop (Ctrl+Z)                         |
+| `SIGTTIN` | 21     | Stop           | Background read from terminal                  |
+| `SIGTTOU` | 22     | Stop           | Background write to terminal                   |
 
 ### Real-Time Signals
 
@@ -221,7 +224,7 @@ Linux supports real-time signals (signals 32-64, or `SIGRTMIN` to `SIGRTMAX`). U
 Signals, real-time signals:
 
 - Are **queued** — multiple instances of the same signal are delivered (standard signals collapse
- into one)
+  into one)
 - Have a **defined delivery order** — lower-numbered signals are delivered first
 - Can carry **additional data** (`sigqueue(2)` sends a `union sigval` with the signal)
 - Are guaranteed to be delivered in FIFO order within the same signal number
@@ -267,8 +270,8 @@ sigaction(SIGTERM, &amp;sa, NULL);
 ```
 
 **Signal-safe functions**: Only async-signal-safe functions may be called from within a signal
-Handler. Calling non-signal-safe functions (like `printf``malloc``free`) from a handler is
-Undefined behavior if the handler interrupts one of those functions in the main program.
+Handler. Calling non-signal-safe functions (like `printf``malloc``free`) from a handler is Undefined
+behavior if the handler interrupts one of those functions in the main program.
 
 Signal-safe functions include: `write``read``_exit``kill``sigaction``sigprocmask`
 `sigaddset``sigemptyset``sigfillset`.
@@ -457,12 +460,12 @@ ionice -c 3 command             # idle (only uses I/O when no one else is)
 
 ### Real-Time Scheduling Policies
 
-| Policy | `sched_setscheduler` | Description |
+| Policy           | `sched_setscheduler` | Description                                          |
 | ---------------- | -------------------- | ---------------------------------------------------- |
-| `SCHED_FIFO` | 1 | First-in, first-out, runs until blocked or preempted |
-| `SCHED_RR` | 2 | Round-robin with configurable time quantum |
-| `SCHED_DEADLINE` | 6 | Earliest Deadline First (EDF) scheduling |
-| `SCHED_OTHER` | 0 | Default CFS policy |
+| `SCHED_FIFO`     | 1                    | First-in, first-out, runs until blocked or preempted |
+| `SCHED_RR`       | 2                    | Round-robin with configurable time quantum           |
+| `SCHED_DEADLINE` | 6                    | Earliest Deadline First (EDF) scheduling             |
+| `SCHED_OTHER`    | 0                    | Default CFS policy                                   |
 
 ```bash
 # View scheduling policy
@@ -492,13 +495,13 @@ Kubernetes, systemd).
 
 ### cgroups v1 vs v2
 
-| Aspect | cgroups v1 | cgroups v2 |
-| ----------- | ------------------------------ | ---------------------------------- |
-| Hierarchy | Multiple (one per controller) | Single unified hierarchy |
-| Mount point | `/sys/fs/cgroup/memory/`Etc. | `/sys/fs/cgroup/` |
-| Controllers | Independent, per-subsystem | Unified, coordinated |
-| Delegation | Complex | Simplified |
-| Default | Legacy systems | Modern distributions (since ~2020) |
+| Aspect      | cgroups v1                    | cgroups v2                         |
+| ----------- | ----------------------------- | ---------------------------------- |
+| Hierarchy   | Multiple (one per controller) | Single unified hierarchy           |
+| Mount point | `/sys/fs/cgroup/memory/`Etc.  | `/sys/fs/cgroup/`                  |
+| Controllers | Independent, per-subsystem    | Unified, coordinated               |
+| Delegation  | Complex                       | Simplified                         |
+| Default     | Legacy systems                | Modern distributions (since ~2020) |
 
 ```bash
 # Check cgroups version
@@ -591,17 +594,17 @@ ulimit -u 4096     # increase max processes
 # root      hard  nproc   unlimited
 ```
 
-| Limit Type | Soft Limit | Hard Limit |
+| Limit Type  | Soft Limit                     | Hard Limit                              |
 | ----------- | ------------------------------ | --------------------------------------- |
-| Definition | Enforced for the process | Maximum the soft limit can be raised to |
-| Who can set | Any process (up to hard limit) | Root (can lower from any value) |
-| Per-process | Yes | Yes |
+| Definition  | Enforced for the process       | Maximum the soft limit can be raised to |
+| Who can set | Any process (up to hard limit) | Root (can lower from any value)         |
+| Per-process | Yes                            | Yes                                     |
 
 :::warning
 
-`ulimit` settings in `/etc/security/limits.conf` apply to PAM sessions (login, `su``sudo`). They
-Do NOT apply to services started by systemd. For systemd services, configure limits in the unit file
-Or systemd's override mechanism (`systemctl edit`).
+`ulimit` settings in `/etc/security/limits.conf` apply to PAM sessions (login, `su``sudo`). They Do
+NOT apply to services started by systemd. For systemd services, configure limits in the unit file Or
+systemd's override mechanism (`systemctl edit`).
 
 :::
 
@@ -624,9 +627,9 @@ ps aux | awk '$8 ~ /Z/' | wc -l
 
 1. **Find the parent**: `ps -eo pid,ppid,stat,comm | grep Z`
 2. **Kill the parent**: `kill -TERM $PPID` — when the parent dies, its children are reparented to
- PID 1 (or a subreaper), which automatically reaps zombies.
+   PID 1 (or a subreaper), which automatically reaps zombies.
 3. **Fix the parent**: If the parent is your application, add a `SIGCHLD` handler or call `waitpid`
- in a loop.
+   in a loop.
 
 Long-lived zombies are always a bug in the parent process. They are not a resource concern (each
 Zombie uses ~1 KiB of kernel memory), but they consume PIDs, and if PID exhaustion occurs (PID max

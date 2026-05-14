@@ -1,6 +1,8 @@
 ---
 title: Type-Safe Formatting (std::format, std::print)
-description: "Rigorous C++ programming notes on Type Rigorous treatment with definitions, proofs, worked examples, and exam questions."
+description:
+  'Rigorous C++ programming notes on Type Rigorous treatment with definitions, proofs, worked
+  examples, and exam questions.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -8,13 +10,14 @@ categories:
   - Cpp
 slug: type-safe-formatting
 ---
+
 ## Type-Safe Formatting (std::format, std::print)
 
-C++20 introduced `std::format`A type-safe formatting function that checks argument types at
-Compile time using a concise format specification syntax. C++23 added `std::print` and
-`std::println` for direct output to `FILE*` streams without intermediate string construction. This
-Section covers the format specification grammar, argument IDs, alignment, sign, width, precision,
-Type specifiers, `std::print`And custom type formatters.
+C++20 introduced `std::format`A type-safe formatting function that checks argument types at Compile
+time using a concise format specification syntax. C++23 added `std::print` and `std::println` for
+direct output to `FILE*` streams without intermediate string construction. This Section covers the
+format specification grammar, argument IDs, alignment, sign, width, precision, Type specifiers,
+`std::print`And custom type formatters.
 
 ### `std::format` --- Overview
 
@@ -39,12 +42,10 @@ Returns a `std::string` by value. The format string is checked at compile time f
 Mismatch between the format specification and the argument type is a compile-time error [N4950
 §22.14.6.2].
 
-:::info
-The format string is a **constant expression** --- it must be known at compile time. This
+:::info The format string is a **constant expression** --- it must be known at compile time. This
 Enables the compiler to parse it and verify that every `{}` field has a corresponding argument of
 The correct type. Runtime-computed format strings are not supported by `std::format` (use
-`std::vformat` for runtime format strings, at the cost of losing compile-time checking).
-:::
+`std::vformat` for runtime format strings, at the cost of losing compile-time checking). :::
 
 ### Format Specification Syntax
 
@@ -66,11 +67,11 @@ type              ::= type-specifier
 
 #### Argument ID
 
-| Syntax | Meaning |
-| :----------- | :------------------------------------------------------------------ |
-| `{}` | Automatic indexing --- arguments are consumed in order |
-| `{0}``{1}` | Manual indexing --- refers to the argument at that position |
-| `{name}` | Named argument (only when using `std::format_args` with named pack) |
+| Syntax     | Meaning                                                             |
+| :--------- | :------------------------------------------------------------------ |
+| `{}`       | Automatic indexing --- arguments are consumed in order              |
+| `{0}``{1}` | Manual indexing --- refers to the argument at that position         |
+| `{name}`   | Named argument (only when using `std::format_args` with named pack) |
 
 ```cpp
 #include <format>
@@ -90,12 +91,12 @@ void arg_id_demo() {
 
 Alignment controls how text is padded within a given width [N4950 §22.14.2.2]:
 
-| Align | Meaning | Default for |
+| Align  | Meaning                                 | Default for |
 | :----- | :-------------------------------------- | :---------- |
-| `&lt;` | Left-align | Strings |
-| `&gt;` | Right-align | Numbers |
-| `^` | Center | --- |
-| `=` | Pad after sign/0x prefix (numbers only) | --- |
+| `&lt;` | Left-align                              | Strings     |
+| `&gt;` | Right-align                             | Numbers     |
+| `^`    | Center                                  | ---         |
+| `=`    | Pad after sign/0x prefix (numbers only) | ---         |
 
 ```cpp
 #include <format>
@@ -112,13 +113,13 @@ void alignment_demo() {
 
 #### Sign, `#`And Zero-Padding
 
-| Specifier | Meaning |
+| Specifier | Meaning                                                                    |
 | :-------- | :------------------------------------------------------------------------- |
-| `+` | Always show sign for signed types (`+42``-7`) |
-| `-` | Only show sign for negative values (default) |
-| (space) | Show space for positive, minus for negative (` 42``-7`) |
-| `#` | Alternate form: `0x` prefix for hex, `0b` for binary, `0` prefix for octal |
-| `0` | Pad with zeros instead of spaces |
+| `+`       | Always show sign for signed types (`+42``-7`)                              |
+| `-`       | Only show sign for negative values (default)                               |
+| (space)   | Show space for positive, minus for negative (` 42``-7`)                    |
+| `#`       | Alternate form: `0x` prefix for hex, `0b` for binary, `0` prefix for octal |
+| `0`       | Pad with zeros instead of spaces                                           |
 
 ```cpp
 #include <format>
@@ -155,28 +156,26 @@ void width_precision_demo() {
 }
 ```
 
-:::warning
-Dynamic width and precision use the next argument in the argument list. Mixing manual
+:::warning Dynamic width and precision use the next argument in the argument list. Mixing manual
 Argument IDs with dynamic width/precision can lead to confusing index errors. When using dynamic
-Width/precision, keep the argument ordering simple.
-:::
+Width/precision, keep the argument ordering simple. :::
 
 #### Type Specifiers
 
-| Type | Meaning | Example |
+| Type      | Meaning                          | Example                                      |
 | :-------- | :------------------------------- | :------------------------------------------- |
-| `d` | Decimal integer | `{}` --- `42` |
-| `x` / `X` | Hexadecimal | `{}` --- `2a` / `2A` |
-| `o` | Octal | `{}` --- `52` |
-| `b` / `B` | Binary | `{}` --- `101010` |
-| `f` | Fixed-point | `{}` --- `3.141593` |
-| `e` / `E` | Scientific notation | `{}` --- `3.141593e+00` |
-| `g` / `G` | General (shortest of `f` or `e`) | `{}` --- `3.14159` |
-| `a` / `A` | Hex float | `{}` --- `0x1.921fb54411744p+1` |
-| `s` | String | `{}` --- `hello` |
-| `c` | Character | `{}` --- `A` |
-| `p` | Pointer | `{}` --- `0x7ffc1234` |
-| `?` | Debug output (C++23) | `{}` --- `"hello"` (with quotes and escapes) |
+| `d`       | Decimal integer                  | `{}` --- `42`                                |
+| `x` / `X` | Hexadecimal                      | `{}` --- `2a` / `2A`                         |
+| `o`       | Octal                            | `{}` --- `52`                                |
+| `b` / `B` | Binary                           | `{}` --- `101010`                            |
+| `f`       | Fixed-point                      | `{}` --- `3.141593`                          |
+| `e` / `E` | Scientific notation              | `{}` --- `3.141593e+00`                      |
+| `g` / `G` | General (shortest of `f` or `e`) | `{}` --- `3.14159`                           |
+| `a` / `A` | Hex float                        | `{}` --- `0x1.921fb54411744p+1`              |
+| `s`       | String                           | `{}` --- `hello`                             |
+| `c`       | Character                        | `{}` --- `A`                                 |
+| `p`       | Pointer                          | `{}` --- `0x7ffc1234`                        |
+| `?`       | Debug output (C++23)             | `{}` --- `"hello"` (with quotes and escapes) |
 
 ### Format Specification Reference Table
 
@@ -241,18 +240,18 @@ Compile time.
 Functions and NTTPs (non-type template parameters).
 
 1. `std::format` is declared as a variadic function template. Its format string parameter is a
- `consteval`-checked NTTP of type `std::format_string<Args...>` [N4950 §22.14.6.2].
+   `consteval`-checked NTTP of type `std::format_string<Args...>` [N4950 §22.14.6.2].
 
 2. The `std::format_string<Args...>` constructor is `consteval`. It parses the format string at
- compile time, counting replacement fields and verifying that each field's type specification is
- compatible with the corresponding argument type from `Args...`.
+   compile time, counting replacement fields and verifying that each field's type specification is
+   compatible with the corresponding argument type from `Args...`.
 
 3. If the number of replacement fields does not match `sizeof...(Args)`Or if a type specifier is
- incompatible (e.g., `{:d}` for a `double` argument), the constructor fails to compile with a
- diagnostic.
+   incompatible (e.g., `{:d}` for a `double` argument), the constructor fails to compile with a
+   diagnostic.
 
 4. Because the constructor is `consteval`Any failure produces a compile-time error, not a runtime
- exception. This is a structural guarantee: no runtime path can bypass the check. QED.
+   exception. This is a structural guarantee: no runtime path can bypass the check. QED.
 
 ```cpp
 #include <format>
@@ -291,19 +290,15 @@ int main() {
 }
 ```
 
-:::info
-`std::print` is declared in `<print>` [N4950 §22.14.1]. It writes directly to the C `FILE*`
+:::info `std::print` is declared in `<print>` [N4950 §22.14.1]. It writes directly to the C `FILE*`
 Stream, bypassing `std::cout` and its stream buffer. This makes it faster for simple console output
 But means it does not synchronize with `std::cout` by default. Avoid mixing
 `std::print(stdout, ...)` and `std::cout` in the same program without calling
-`std::ios_base::sync_with_stdio(true)` first.
-:::
+`std::ios_base::sync_with_stdio(true)` first. :::
 
-:::warning
-`std::print` to stdout does **not** lock the stdout mutex by default. Concurrent calls to
+:::warning `std::print` to stdout does **not** lock the stdout mutex by default. Concurrent calls to
 `std::print` from multiple threads can produce interleaved output. Use `std::print(stderr, ...)` for
-Error messages (stderr is unbuffered) or protect stdout with a mutex.
-:::
+Error messages (stderr is unbuffered) or protect stdout with a mutex. :::
 
 ### Custom Type Formatter
 
@@ -440,19 +435,15 @@ int main() {
 }
 ```
 
-:::tip
-Inheriting from `std::formatter&lt;std::string>` (or any standard formatter) gives you access
+:::tip Inheriting from `std::formatter&lt;std::string>` (or any standard formatter) gives you access
 To the standard format specification parsing logic. If your custom type needs to support the full
 Standard specification set (width, fill, alignment), parse the standard spec first with the base
-Class's `parse()`Then check for your custom specifiers.
-:::
+Class's `parse()`Then check for your custom specifiers. :::
 
-:::warning
-The specialization of `std::formatter` must be in namespace `std` for `std::format` to
+:::warning The specialization of `std::formatter` must be in namespace `std` for `std::format` to
 Find it. However, adding declarations to namespace `std` is technically undefined behavior unless it
 Is a **template specialization** of a standard library template [N4950 §16.5.4.2.1]. Specializing
-`std::formatter` is explicitly permitted.
-:::
+`std::formatter` is explicitly permitted. :::
 
 ### Runtime Format Strings with `std::vformat`
 
@@ -682,29 +673,29 @@ int main() {
 
 ### Common Pitfalls
 
-- **Mixing argument ID modes:** You cannot mix automatic (`{}`) and manual (`{0}``{1}`) argument
- IDs in the same format string. Doing so is a compile-time error [N4950 §22.14.6.2]. Pick one mode
- per format string.
+- **Mixing argument ID modes:** You cannot mix automatic (`{}`) and manual (`{0}``{1}`) argument IDs
+  in the same format string. Doing so is a compile-time error [N4950 §22.14.6.2]. Pick one mode per
+  format string.
 
 - **Dynamic width/precision with manual IDs:** When using dynamic width (`{:{}}`) with manual
- argument IDs, the dynamic width/precision argument is consumed at its position in the argument
- list, which can create confusing off-by-one index errors. Explicitly index all arguments when
- using dynamic width.
+  argument IDs, the dynamic width/precision argument is consumed at its position in the argument
+  list, which can create confusing off-by-one index errors. Explicitly index all arguments when
+  using dynamic width.
 
 - **`std::print` thread safety:** `std::print(stdout, ...)` does not acquire a lock on the stdout
- mutex. Concurrent `std::print` calls from multiple threads produce interleaved output. Either use
- `std::print(stderr, ...)` (stderr is unbuffered) or guard stdout with a `std::mutex`.
+  mutex. Concurrent `std::print` calls from multiple threads produce interleaved output. Either use
+  `std::print(stderr, ...)` (stderr is unbuffered) or guard stdout with a `std::mutex`.
 
 - **`std::formatter` specialization in wrong namespace:** The specialization must be in namespace
- `std`. Placing it in any other namespace, including the type's own namespace, causes the formatter
- to not be found by overload resolution [N4950 §22.14.6.3].
+  `std`. Placing it in any other namespace, including the type's own namespace, causes the formatter
+  to not be found by overload resolution [N4950 §22.14.6.3].
 
 - **Format spec `=` alignment with strings:** The `=` alignment (pad after sign/prefix) is only
- valid for numeric types. Applying it to a string throws `std::format_error` at runtime.
+  valid for numeric types. Applying it to a string throws `std::format_error` at runtime.
 
 - **Locale-dependent formatting:** By default, `std::format` uses the default locale for
- locale-sensitive specifiers (e.g., the `L` specifier for localized numbers). For
- locale-independent output, avoid the `L` specifier or use `std::format` without locale arguments.
+  locale-sensitive specifiers (e.g., the `L` specifier for localized numbers). For
+  locale-independent output, avoid the `L` specifier or use `std::format` without locale arguments.
 
 ## See Also
 

@@ -1,9 +1,12 @@
 ---
 id: owasp-top-10
 title: OWASP Top 10 (2021) Detailed
-description: "OWASP Top 10 (2021) Detailed — A01: Broken Access Control; IDOR (Insecure Direct Object Reference) for thorough revision and examination preparation."
+description:
+  'OWASP Top 10 (2021) Detailed — A01: Broken Access Control; IDOR (Insecure Direct Object
+  Reference) for thorough revision and examination preparation.'
 slug: owasp-top-10
 ---
+
 ## A01: Broken Access Control
 
 Broken access control is the most critical web application security risk. It occurs when users can
@@ -79,12 +82,12 @@ def download():
 
 ### Detection and Remediation
 
-| Method | Tool / Approach |
+| Method                | Tool / Approach                      |
 | --------------------- | ------------------------------------ |
-| Automated scanning | OWASP ZAP, Burp Suite Pro |
-| Manual testing | Modify IDs, roles, paths in requests |
-| Code review | Check for missing authorization |
-| Access control matrix | Document and test all routes |
+| Automated scanning    | OWASP ZAP, Burp Suite Pro            |
+| Manual testing        | Modify IDs, roles, paths in requests |
+| Code review           | Check for missing authorization      |
+| Access control matrix | Document and test all routes         |
 
 :::tip
 
@@ -162,12 +165,12 @@ server {
 
 ### Detection and Remediation
 
-| Method | Approach |
+| Method                 | Approach                                             |
 | ---------------------- | ---------------------------------------------------- |
-| Credential scanning | TruffleHog, git-secrets, detect-secrets |
-| TLS configuration | SSL Labs, testssl.sh, nmap --script ssl-enum-ciphers |
-| Password storage audit | Code review for hashing algorithm used |
-| Transport security | Verify TLS 1.2+, HSTS, no mixed content |
+| Credential scanning    | TruffleHog, git-secrets, detect-secrets              |
+| TLS configuration      | SSL Labs, testssl.sh, nmap --script ssl-enum-ciphers |
+| Password storage audit | Code review for hashing algorithm used               |
+| Transport security     | Verify TLS 1.2+, HSTS, no mixed content              |
 
 ## A03: Injection
 
@@ -237,12 +240,12 @@ ldap_filter = f"(uid={safe_username})"
 
 ### Detection and Remediation
 
-| Method | Tool / Approach |
+| Method                | Tool / Approach                                       |
 | --------------------- | ----------------------------------------------------- |
-| Automated scanning | SQLMap, OWASP ZAP, Burp Suite |
-| SAST | Semgrep, CodeQL, Bandit (Python) |
+| Automated scanning    | SQLMap, OWASP ZAP, Burp Suite                         |
+| SAST                  | Semgrep, CodeQL, Bandit (Python)                      |
 | Parameterized queries | Use prepared statements for ALL database interactions |
-| Input validation | Whitelist allowed characters/values |
+| Input validation      | Whitelist allowed characters/values                   |
 
 ## A04: Insecure Design
 
@@ -277,12 +280,12 @@ Secure design checklist:
 
 ### Detection and Remediation
 
-| Method | Approach |
+| Method                | Approach                                         |
 | --------------------- | ------------------------------------------------ |
-| Threat modeling | STRIDE, DREAD, attack trees |
-| Abuse cases | Define what an attacker SHOULD NOT be able to do |
-| Security requirements | NIST SP 800-53, OWASP ASVS |
-| Design review | Security-focused architecture review |
+| Threat modeling       | STRIDE, DREAD, attack trees                      |
+| Abuse cases           | Define what an attacker SHOULD NOT be able to do |
+| Security requirements | NIST SP 800-53, OWASP ASVS                       |
+| Design review         | Security-focused architecture review             |
 
 ## A05: Security Misconfiguration
 
@@ -337,12 +340,12 @@ def handle_error(e):
 
 ### Detection and Remediation
 
-| Method | Approach |
+| Method                  | Approach                         |
 | ----------------------- | -------------------------------- |
-| Configuration audit | CIS benchmarks, SCAP |
-| Directory/file scanning | DirBuster, gobuster, ffuf |
-| Header scanning | SecurityHeaders.com, Observatory |
-| Automated compliance | InSpec, Open Policy Agent |
+| Configuration audit     | CIS benchmarks, SCAP             |
+| Directory/file scanning | DirBuster, gobuster, ffuf        |
+| Header scanning         | SecurityHeaders.com, Observatory |
+| Automated compliance    | InSpec, Open Policy Agent        |
 
 ## A06: Vulnerable and Outdated Components
 
@@ -435,14 +438,14 @@ def login():
 
 ### Brute Force Prevention
 
-| Defense | Implementation |
+| Defense                     | Implementation                         |
 | --------------------------- | -------------------------------------- |
-| Rate limiting | Per-IP and per-account limits |
-| Account lockout | Temporary lock after N failed attempts |
-| CAPTCHA | After N failed attempts |
-| MFA | TOTP, WebAuthn, push notification |
-| Progressive delay | Exponential backoff on failed attempts |
-| Breached password detection | Check against HaveIBeenPwned API |
+| Rate limiting               | Per-IP and per-account limits          |
+| Account lockout             | Temporary lock after N failed attempts |
+| CAPTCHA                     | After N failed attempts                |
+| MFA                         | TOTP, WebAuthn, push notification      |
+| Progressive delay           | Exponential backoff on failed attempts |
+| Breached password detection | Check against HaveIBeenPwned API       |
 
 ### Session Fixation
 
@@ -656,8 +659,8 @@ SSRF. Use a comprehensive testing methodology that covers all 10 categories.
 
 ### Ignoring Security Headers
 
-Missing security headers (`X-Content-Type-Options``X-Frame-Options``CSP``HSTS`) provides no
-Defense against client-side attacks. Add them to every response.
+Missing security headers (`X-Content-Type-Options``X-Frame-Options``CSP``HSTS`) provides no Defense
+against client-side attacks. Add them to every response.
 
 ### Not Keeping Dependencies Updated
 

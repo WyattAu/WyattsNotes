@@ -1,22 +1,23 @@
 ---
 id: core-utilities
 title: Core Utilities
-description: "Core Utilities — GNU Coreutils Overview; Text Processing Pipeline Patterns; `grep` — Pattern Matching; Basic pattern matching."
+description:
+  'Core Utilities — GNU Coreutils Overview; Text Processing Pipeline Patterns; `grep` — Pattern
+  Matching; Basic pattern matching.'
 slug: core-utilities
 sidebar_position: 2
 ---
+
 ## GNU Coreutils Overview
 
 GNU coreutils is the package that provides the fundamental file, shell, and text manipulation
 Utilities on virtually every Linux distribution. These utilities implement the POSIX specifications
 And extend them with GNU-specific options. The package contains roughly 105 programs, grouped into:
 
-- **File utilities**: `ls``cp``mv``rm``ln``chmod``chown``touch``mkdir``rmdir`
- `stat``du``df``sync`
-- **Text utilities**: `cat``head``tail``sort``uniq``tr``cut``paste``join``wc`
- `nl``fmt``fold``pr`
+- **File utilities**: `ls``cp``mv``rm``ln``chmod``chown``touch``mkdir``rmdir` `stat``du``df``sync`
+- **Text utilities**: `cat``head``tail``sort``uniq``tr``cut``paste``join``wc` `nl``fmt``fold``pr`
 - **Shell utilities**: `echo``printf``date``tee``basename``dirname``sleep``true`
- `false``test``expr``yes``timeout`
+  `false``test``expr``yes``timeout`
 
 ## Text Processing Pipeline Patterns
 
@@ -29,11 +30,11 @@ Competency.
 `grep` searches input lines for patterns matching a regular expression and prints matching lines.
 Three main variants exist:
 
-| Variant | Regex Flavor | Description |
+| Variant   | Regex Flavor | Description                         |
 | --------- | ------------ | ----------------------------------- |
-| `grep` | BRE | Basic Regular Expressions (default) |
-| `grep -E` | ERE | Extended Regular Expressions |
-| `grep -P` | PCRE | Perl-Compatible Regular Expressions |
+| `grep`    | BRE          | Basic Regular Expressions (default) |
+| `grep -E` | ERE          | Extended Regular Expressions        |
+| `grep -P` | PCRE         | Perl-Compatible Regular Expressions |
 
 ```bash
 # Basic pattern matching
@@ -75,28 +76,28 @@ grep --color=always "pattern" file
 
 #### BRE vs ERE vs PCRE
 
-| Feature | BRE | ERE | PCRE |
+| Feature             | BRE      | ERE     | PCRE                     |
 | ------------------- | -------- | ------- | ------------------------ |
-| Literal match | `abc` | `abc` | `abc` |
-| Any character | `.` | `.` | `.` |
-| Zero or more | `*` | `*` | `*` |
-| One or more | `\{1,\}` | `+` | `+` |
-| Zero or one | `\?` | `?` | `?` |
-| Alternation | `\|` | `\|` | `\|` |
-| Grouping | `\(\)` | `()` | `()` |
-| Character class | `[abc]` | `[abc]` | `[abc]` |
-| Lookahead | No | No | `(?=...)` |
-| Lookbehind | No | No | `(?&lt;=...)` |
-| Non-capturing group | No | No | `(?:...)` |
-| Named capture | No | No | `(?P&lt;name&gt;...)` |
-| Backreference | `\1` | `\1` | `\1` or `\k&lt;name&gt;` |
-| Unicode properties | No | No | `\p{L}` |
+| Literal match       | `abc`    | `abc`   | `abc`                    |
+| Any character       | `.`      | `.`     | `.`                      |
+| Zero or more        | `*`      | `*`     | `*`                      |
+| One or more         | `\{1,\}` | `+`     | `+`                      |
+| Zero or one         | `\?`     | `?`     | `?`                      |
+| Alternation         | `\|`     | `\|`    | `\|`                     |
+| Grouping            | `\(\)`   | `()`    | `()`                     |
+| Character class     | `[abc]`  | `[abc]` | `[abc]`                  |
+| Lookahead           | No       | No      | `(?=...)`                |
+| Lookbehind          | No       | No      | `(?&lt;=...)`            |
+| Non-capturing group | No       | No      | `(?:...)`                |
+| Named capture       | No       | No      | `(?P&lt;name&gt;...)`    |
+| Backreference       | `\1`     | `\1`    | `\1` or `\k&lt;name&gt;` |
+| Unicode properties  | No       | No      | `\p{L}`                  |
 
 :::warning
 
-In BRE, `+``?``{``|``(``)` are literal characters. You must escape them with `\` to get
-Their special meaning. In ERE, the reverse is true — they are special by default and must be escaped
-To be literal. This is a frequent source of confusion.
+In BRE, `+``?``{``|``(``)` are literal characters. You must escape them with `\` to get Their
+special meaning. In ERE, the reverse is true — they are special by default and must be escaped To be
+literal. This is a frequent source of confusion.
 
 :::
 
@@ -382,12 +383,12 @@ find . -name "*.log" -print0 | xargs -0 -P 4 gzip
 find . -name "*.c" -print0 | xargs -0 -I {} cp {} /backup/
 ```
 
-| Method | Invocation Count | Safety | Use Case |
+| Method            | Invocation Count | Safety             | Use Case                           |
 | ----------------- | ---------------- | ------------------ | ---------------------------------- |
-| `-exec {} \;` | Once per file | Safest | Few files, complex commands |
-| `-exec {} +` | Batched | Safe | Many files, simple commands |
-| `xargs` (default) | Batched | Unsafe with spaces | Simple filenames |
-| `xargs -0` | Batched | Safe | Any filenames (use with `-print0`) |
+| `-exec {} \;`     | Once per file    | Safest             | Few files, complex commands        |
+| `-exec {} +`      | Batched          | Safe               | Many files, simple commands        |
+| `xargs` (default) | Batched          | Unsafe with spaces | Simple filenames                   |
+| `xargs -0`        | Batched          | Safe               | Any filenames (use with `-print0`) |
 
 :::warning
 
@@ -525,13 +526,13 @@ tar --preserve-permissions --same-owner -xvf archive.tar
 
 ### Compression Formats
 
-| Format | Command | Compression | Speed | Typical Ratio |
+| Format | Command           | Compression     | Speed     | Typical Ratio |
 | ------ | ----------------- | --------------- | --------- | ------------- |
-| gzip | `gzip`/`gunzip` | Deflate | Fast | 5:1 - 8:1 |
-| bzip2 | `bzip2`/`bunzip2` | Burrows-Wheeler | Slow | 8:1 - 12:1 |
-| xz | `xz`/`unxz` | LZMA2 | Slower | 10:1 - 15:1 |
-| zstd | `zstd`/`unzstd` | Zstandard | Fastest | 5:1 - 10:1 |
-| lz4 | `lz4`/`unlz4` | LZ4 | Very fast | 3:1 - 5:1 |
+| gzip   | `gzip`/`gunzip`   | Deflate         | Fast      | 5:1 - 8:1     |
+| bzip2  | `bzip2`/`bunzip2` | Burrows-Wheeler | Slow      | 8:1 - 12:1    |
+| xz     | `xz`/`unxz`       | LZMA2           | Slower    | 10:1 - 15:1   |
+| zstd   | `zstd`/`unzstd`   | Zstandard       | Fastest   | 5:1 - 10:1    |
+| lz4    | `lz4`/`unlz4`     | LZ4             | Very fast | 3:1 - 5:1     |
 
 ```bash
 # gzip
@@ -606,25 +607,25 @@ Type   Owner    Group    Other
 -       rwx      r-x      r--
 ```
 
-| Bit Position | Name | Value | Description |
+| Bit Position | Name      | Value | Description                            |
 | ------------ | --------- | ----- | -------------------------------------- |
-| 0-2 | Other | 0-7 | Permissions for others |
-| 3-5 | Group | 0-7 | Permissions for group members |
-| 6-8 | Owner | 0-7 | Permissions for file owner |
-| 9-11 | File type | — | Regular file, directory, symlink, etc. |
+| 0-2          | Other     | 0-7   | Permissions for others                 |
+| 3-5          | Group     | 0-7   | Permissions for group members          |
+| 6-8          | Owner     | 0-7   | Permissions for file owner             |
+| 9-11         | File type | —     | Regular file, directory, symlink, etc. |
 
 Each permission triplet:
 
-| Octal | Binary | Permissions |
+| Octal | Binary | Permissions            |
 | ----- | ------ | ---------------------- |
-| 0 | 000 | No permissions |
-| 1 | 001 | Execute only |
-| 2 | 010 | Write only |
-| 3 | 011 | Write + Execute |
-| 4 | 100 | Read only |
-| 5 | 101 | Read + Execute |
-| 6 | 110 | Read + Write |
-| 7 | 111 | Read + Write + Execute |
+| 0     | 000    | No permissions         |
+| 1     | 001    | Execute only           |
+| 2     | 010    | Write only             |
+| 3     | 011    | Write + Execute        |
+| 4     | 100    | Read only              |
+| 5     | 101    | Read + Execute         |
+| 6     | 110    | Read + Write           |
+| 7     | 111    | Read + Write + Execute |
 
 ```bash
 # Symbolic mode
@@ -649,11 +650,11 @@ chmod --reference=reference_file target_file
 
 ### Special Permission Bits
 
-| Bit | Octal | Name | Effect on Files | Effect on Directories |
+| Bit    | Octal | Name   | Effect on Files       | Effect on Directories       |
 | ------ | ----- | ------ | --------------------- | --------------------------- |
-| setuid | 4000 | SUID | Execute as file owner | — |
-| setgid | 2000 | SGID | Execute as file group | New files inherit group |
-| sticky | 1000 | Sticky | — | Only owner can delete files |
+| setuid | 4000  | SUID   | Execute as file owner | —                           |
+| setgid | 2000  | SGID   | Execute as file group | New files inherit group     |
+| sticky | 1000  | Sticky | —                     | Only owner can delete files |
 
 ```bash
 # Set SUID (execute as owner)
@@ -775,8 +776,7 @@ chown --reference=ref_file target_file
 
 ### Pitfall: `grep` Returning Non-Zero on No Matches
 
-In scripts, `grep` returns exit code 1 when no lines match. With `set -e`This terminates the
-Script:
+In scripts, `grep` returns exit code 1 when no lines match. With `set -e`This terminates the Script:
 
 ```bash
 # WRONG — exits script if no matches

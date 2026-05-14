@@ -1,6 +1,8 @@
 ---
 title: Essential Modules
-description: "Essential Modules — `os` and `pathlib`: File System Operations; The Case for `pathlib` Over `os.path`; When `os` Is Still Needed."
+description:
+  'Essential Modules — `os` and `pathlib`: File System Operations; The Case for `pathlib` Over
+  `os.path`; When `os` Is Still Needed.'
 date: 2025-06-04T14:00:00.000Z
 tags:
   - Python
@@ -8,6 +10,7 @@ categories:
   - Python
 slug: essential-modules
 ---
+
 ## `os` and `pathlib`: File System Operations
 
 ### The Case for `pathlib` Over `os.path`
@@ -20,25 +23,25 @@ The argument for `pathlib` is not aesthetic preference. It is about **composabil
 **correctness**:
 
 1. **Method chaining.** `os.path` requires you to thread a string through successive function calls:
- `os.path.join(os.path.dirname(os.path.abspath(p)), 'config.json')`. The equivalent `Path`
- expression is `Path(p).resolve().parent / 'config.json'`. The `/` operator is overloaded on
- `PurePosixPath` and `PureWindowsPath` to join path components, which reads as natural composition
- rather than nested function calls.
+   `os.path.join(os.path.dirname(os.path.abspath(p)), 'config.json')`. The equivalent `Path`
+   expression is `Path(p).resolve().parent / 'config.json'`. The `/` operator is overloaded on
+   `PurePosixPath` and `PureWindowsPath` to join path components, which reads as natural composition
+   rather than nested function calls.
 
 2. **No silent truncation.** `os.path.join('/etc', '/var')` returns `/var` -- an absolute second
- argument silently discards the first. `Path('/etc') / '/var'` raises no error but returns
- `PosixPath('/var')`. Both are surprising, but `pathlib` at least provides a single consistent
- type (`PosixPath` or `WindowsPath`) whose semantics are visible in the type.
+   argument silently discards the first. `Path('/etc') / '/var'` raises no error but returns
+   `PosixPath('/var')`. Both are surprising, but `pathlib` at least provides a single consistent
+   type (`PosixPath` or `WindowsPath`) whose semantics are visible in the type.
 
 3. **Uniform access to filesystem operations.** `os.path` only handles path manipulation. Actual I/O
- (reading, writing, stat, mkdir, glob) requires importing `os``shutil``glob``stat`And
- others. `Path` objects carry methods for all of these: `.read_text()``.write_text()`
- `.stat()``.mkdir()``.glob()``.rename()``.unlink()`.
+   (reading, writing, stat, mkdir, glob) requires importing `os``shutil``glob``stat`And others.
+   `Path` objects carry methods for all of these: `.read_text()``.write_text()`
+   `.stat()``.mkdir()``.glob()``.rename()``.unlink()`.
 
 4. **Cross-platform correctness.** `os.path` relies on the host operating system to determine
- separator behavior. `pathlib` exposes `PurePosixPath` and `PureWindowsPath` for explicit control
- when you need to manipulate paths for a different platform (e.g., generating URLs on a Linux
- server that target Windows).
+   separator behavior. `pathlib` exposes `PurePosixPath` and `PureWindowsPath` for explicit control
+   when you need to manipulate paths for a different platform (e.g., generating URLs on a Linux
+   server that target Windows).
 
 ```python
 from pathlib import Path
@@ -65,7 +68,7 @@ print(config_file.stem)           # 'settings'
 - `os.walk()`: recursive directory traversal (though `Path.rglob()` covers most use cases).
 - `os.umask()``os.getuid()``os.setsid()`: low-level process and permission operations.
 - `os.path.expandvars()``os.path.expanduser()`: shell variable expansion (note: `Path` does expand
- `~` in constructors but not `$VAR`).
+  `~` in constructors but not `$VAR`).
 
 ```python
 import os
@@ -259,14 +262,14 @@ class CustomDecoder(json.JSONDecoder):
 
 ### JSON vs Pickle
 
-| Property | JSON | Pickle |
+| Property          | JSON                        | Pickle                                 |
 | ----------------- | --------------------------- | -------------------------------------- |
-| Format | Text | Binary |
-| Language-agnostic | Yes | No (Python-only) |
-| Security | Safe for untrusted data | **Never** untrusted data |
-| Supported types | Primitives, dict, list, str | Almost any Python object |
-| Human-readable | Yes | No |
-| Version-stable | Yes (RFC 8259) | No (protocol changes between versions) |
+| Format            | Text                        | Binary                                 |
+| Language-agnostic | Yes                         | No (Python-only)                       |
+| Security          | Safe for untrusted data     | **Never** untrusted data               |
+| Supported types   | Primitives, dict, list, str | Almost any Python object               |
+| Human-readable    | Yes                         | No                                     |
+| Version-stable    | Yes (RFC 8259)              | No (protocol changes between versions) |
 
 Pickle can serialize functions, classes, and object graphs with cycles. But `pickle.loads()` on
 Untrusted data is equivalent to arbitrary code execution -- the pickled byte stream can contain
@@ -310,8 +313,8 @@ print(match.groups())  # ('alice', 'example', 'com')
 ```
 
 Always use raw strings (`r'...'`) for regex patterns. Without the raw prefix, `\b` is interpreted as
-A backspace character, and `\d``\w``\s` are interpreted as escape sequences (some of which are
-Valid in Python strings, producing the wrong character in the regex).
+A backspace character, and `\d``\w``\s` are interpreted as escape sequences (some of which are Valid
+in Python strings, producing the wrong character in the regex).
 
 ### Named Groups and Non-Capturing Groups
 
@@ -377,8 +380,8 @@ print(result)  # HELLO world TEST
 ### `functools.partial`
 
 `partial` creates a new callable with some arguments pre-filled. This is not currying -- it does not
-Transform a multi-argument function into a chain of single-argument functions. It binds
-Positional or keyword arguments.
+Transform a multi-argument function into a chain of single-argument functions. It binds Positional
+or keyword arguments.
 
 ```python
 from functools import partial
@@ -696,8 +699,8 @@ def with_user_id(
 ```
 
 `ParamSpec` solves a real problem: without it, a decorator that preserves the signature of arbitrary
-Callables must use `*args, **kwargs` with untyped `Any`Losing all type information about the
-Wrapped function's parameters. `ParamSpec` captures the full parameter signature as a type variable.
+Callables must use `*args, **kwargs` with untyped `Any`Losing all type information about the Wrapped
+function's parameters. `ParamSpec` captures the full parameter signature as a type variable.
 
 ## `dataclasses`: Beyond Basics
 
@@ -747,15 +750,15 @@ class Config:
     created_at: float = field(default_factory=time.time, repr=False, compare=False)
 ```
 
-| `field()` parameter | Effect |
+| `field()` parameter | Effect                                             |
 | ------------------- | -------------------------------------------------- |
-| `default` | Static default value (never use for mutable types) |
-| `default_factory` | Zero-arg callable producing the default value |
-| `init` | Include in `__init__` (default `True`) |
-| `repr` | Include in `__repr__` (default `True`) |
-| `compare` | Include in `__eq__`/`__hash__` (default `True`) |
-| `hash` | Include in `__hash__` (default `None`Inherits) |
-| `metadata` | Arbitrary dict for external tools |
+| `default`           | Static default value (never use for mutable types) |
+| `default_factory`   | Zero-arg callable producing the default value      |
+| `init`              | Include in `__init__` (default `True`)             |
+| `repr`              | Include in `__repr__` (default `True`)             |
+| `compare`           | Include in `__eq__`/`__hash__` (default `True`)    |
+| `hash`              | Include in `__hash__` (default `None`Inherits)     |
+| `metadata`          | Arbitrary dict for external tools                  |
 
 ### Inheritance and `slots=True`
 
@@ -780,8 +783,8 @@ Use `slots=True` -- mixing slotted and non-slotted dataclasses in an inheritance
 ### Why `IntEnum` Over Raw Constants
 
 Raw integer constants have no type identity. If two modules define `STATUS_OK = 0` and
-`ERROR_NONE = 0`They are indistinguishable -- they are both `int` with value `0`. This causes
-Silent bugs in comparisons and makes debugging harder because log messages show bare integers.
+`ERROR_NONE = 0`They are indistinguishable -- they are both `int` with value `0`. This causes Silent
+bugs in comparisons and makes debugging harder because log messages show bare integers.
 
 `IntEnum` members are both integers and enum members. They compare equal to their integer values
 (for backward compatibility) but have a distinct type and `repr`.
@@ -827,10 +830,10 @@ print(Role.ADMIN == "admin")  # True
 ```
 
 - Use `Enum` when members have no natural comparison with primitive types and you want strict type
- safety.
+  safety.
 - Use `IntEnum` when members must interoperate with C APIs or integer-based protocols.
 - Use `StrEnum` (Python 3.11+) when members represent string constants that are also used in
- serialization or string comparisons.
+  serialization or string comparisons.
 
 :::danger
 
@@ -852,14 +855,14 @@ Cannot control.
 
 The `logging` module solves all of these problems:
 
-1. **Severity levels** (`DEBUG``INFO``WARNING``ERROR``CRITICAL`) allow you to control
- verbosity without changing code.
+1. **Severity levels** (`DEBUG``INFO``WARNING``ERROR``CRITICAL`) allow you to control verbosity
+   without changing code.
 2. **Loggers are hierarchical.** A logger named `"myapp.db"` inherits configuration from `"myapp"`.
- Libraries use loggers named after their module (`__name__`), and the application configures them
- centrally.
+   Libraries use loggers named after their module (`__name__`), and the application configures them
+   centrally.
 3. **Handlers route messages** to different destinations: stdout, stderr, files, sockets, email.
 4. **Formatters control output format**, including timestamps, logger names, severity, and message
- text.
+   text.
 
 ```python
 import logging
@@ -1061,21 +1064,21 @@ print(datetime.fromisoformat("2025-06-04T14:30:00"))  # round-trip
 
 The most commonly used format codes:
 
-| Code | Meaning | Example |
+| Code | Meaning                     | Example   |
 | ---- | --------------------------- | --------- |
-| `%Y` | Four-digit year | 2025 |
-| `%m` | Zero-padded month | 06 |
-| `%d` | Zero-padded day | 04 |
-| `%H` | Hour (24-hour, zero-padded) | 14 |
-| `%I` | Hour (12-hour, zero-padded) | 02 |
-| `%M` | Minute (zero-padded) | 30 |
-| `%S` | Second (zero-padded) | 00 |
-| `%p` | AM/PM | PM |
-| `%f` | Microsecond (zero-padded) | 000000 |
-| `%z` | UTC offset | +0000 |
-| `%Z` | Timezone name | UTC |
-| `%A` | Full weekday name | Wednesday |
-| `%B` | Full month name | June |
+| `%Y` | Four-digit year             | 2025      |
+| `%m` | Zero-padded month           | 06        |
+| `%d` | Zero-padded day             | 04        |
+| `%H` | Hour (24-hour, zero-padded) | 14        |
+| `%I` | Hour (12-hour, zero-padded) | 02        |
+| `%M` | Minute (zero-padded)        | 30        |
+| `%S` | Second (zero-padded)        | 00        |
+| `%p` | AM/PM                       | PM        |
+| `%f` | Microsecond (zero-padded)   | 000000    |
+| `%z` | UTC offset                  | +0000     |
+| `%Z` | Timezone name               | UTC       |
+| `%A` | Full weekday name           | Wednesday |
+| `%B` | Full month name             | June      |
 
 ### `datetime.fromtimestamp()` and UTC
 

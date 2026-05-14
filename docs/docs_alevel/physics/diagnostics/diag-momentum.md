@@ -1,6 +1,8 @@
 ---
-title: "Momentum -- Diagnostic Tests"
-description: Diagnostic tests for conservation of momentum, impulse, elastic and inelastic collisions, and vector momentum problems at A-Level Physics maximum difficulty.
+title: 'Momentum -- Diagnostic Tests'
+description:
+  Diagnostic tests for conservation of momentum, impulse, elastic and inelastic collisions, and
+  vector momentum problems at A-Level Physics maximum difficulty.
 slug: diag-momentum
 hide_table_of_contents: true
 ---
@@ -13,7 +15,10 @@ hide_table_of_contents: true
 
 **Question:**
 
-Particle $A$ of mass $2.0\,\text{kg}$ moves with velocity $(4.0\hat{i} + 3.0\hat{j})\,\text{m}\,\text{s}^{-1}$ on a smooth horizontal surface. It collides with stationary particle $B$ of mass $3.0\,\text{kg}$. After the collision, $A$ moves with velocity $(-1.0\hat{i} + 4.0\hat{j})\,\text{m}\,\text{s}^{-1}$.
+Particle $A$ of mass $2.0\,\text{kg}$ moves with velocity
+$(4.0\hat{i} + 3.0\hat{j})\,\text{m}\,\text{s}^{-1}$ on a smooth horizontal surface. It collides
+with stationary particle $B$ of mass $3.0\,\text{kg}$. After the collision, $A$ moves with velocity
+$(-1.0\hat{i} + 4.0\hat{j})\,\text{m}\,\text{s}^{-1}$.
 
 (a) Calculate the velocity of $B$ after the collision.
 
@@ -36,7 +41,8 @@ $$\mathbf{v}_B = (3.33\hat{i} - 0.667\hat{j})\,\text{m}\,\text{s}^{-1}$$
 
 Before: $E_k = \frac{1}{2}(2.0)(4^2 + 3^2) = 1.0 \times 25 = 25\,\text{J}$
 
-After: $E_k = \frac{1}{2}(2.0)(1 + 16) + \frac{1}{2}(3.0)(11.11 + 0.444) = 17 + \frac{1}{2}(3.0)(11.56) = 17 + 17.33 = 34.3\,\text{J}$
+After:
+$E_k = \frac{1}{2}(2.0)(1 + 16) + \frac{1}{2}(3.0)(11.11 + 0.444) = 17 + \frac{1}{2}(3.0)(11.56) = 17 + 17.33 = 34.3\,\text{J}$
 
 Verifying the kinetic energies:
 
@@ -48,7 +54,9 @@ $E_{kB} = \frac{1}{2}(3.0)(11.56) = 17.33\,\text{J}$
 
 Total after $= 34.33\,\text{J}$Total before $= 25\,\text{J}$.
 
-Since $34.33 \ne 25$The collision is **not elastic** (kinetic energy is not conserved). KE has increased by $9.33\,\text{J}$Making this a **superelastic** collision -- energy was released from an internal store (e.g. An explosion).
+Since $34.33 \ne 25$The collision is **not elastic** (kinetic energy is not conserved). KE has
+increased by $9.33\,\text{J}$Making this a **superelastic** collision -- energy was released from an
+internal store (e.g. An explosion).
 
 (c) Impulse on $A$ $= \Delta\mathbf{p}_A = m_A(\mathbf{v}_A - \mathbf{u}_A)$
 
@@ -57,15 +65,18 @@ $$= 2.0[(-1 - 4)\hat{i} + (4 - 3)\hat{j}] = 2.0(-5\hat{i} + 1\hat{j}) = (-10\hat
 Magnitude $= \sqrt{100 + 4} = \sqrt{104} = 10.2\,\text{N}\,\text{s}$
 
 ---
+
 ### UT-2: Coefficient of Restitution and Multiple Collisions
 
 **Question:**
 
-A ball of mass $0.15\,\text{kg}$ is dropped from a height of $2.0\,\text{m}$ onto a horizontal floor. The coefficient of restitution between the ball and the floor is $e = 0.80$.
+A ball of mass $0.15\,\text{kg}$ is dropped from a height of $2.0\,\text{m}$ onto a horizontal
+floor. The coefficient of restitution between the ball and the floor is $e = 0.80$.
 
 (a) Calculate the height reached after the first bounce.
 
-(b) Calculate the total time from release until the ball comes to rest. (The ball undergoes infinitely many bounces.)
+(b) Calculate the total time from release until the ball comes to rest. (The ball undergoes
+infinitely many bounces.)
 
 (c) Calculate the total distance travelled by the ball.
 
@@ -73,7 +84,8 @@ Take $g = 9.81\,\text{m}\,\text{s}^{-2}$.
 
 **Solution:**
 
-(a) Speed just before first impact: $v = \sqrt{2gh} = \sqrt◆LB◆2 \times 9.81 \times 2.0◆RB◆ = \sqrt{39.24} = 6.264\,\text{m}\,\text{s}^{-1}$
+(a) Speed just before first impact:
+$v = \sqrt{2gh} = \sqrt◆LB◆2 \times 9.81 \times 2.0◆RB◆ = \sqrt{39.24} = 6.264\,\text{m}\,\text{s}^{-1}$
 
 Speed after first bounce: $v' = ev = 0.80 \times 6.264 = 5.012\,\text{m}\,\text{s}^{-1}$
 
@@ -100,17 +112,20 @@ $$= h + 2he^2(1 + e^2 + e^4 + \ldots) = h + \frac{2he^2}{1 - e^2}$$
 $$= 2.0 + \frac◆LB◆2 \times 2.0 \times 0.64◆RB◆◆LB◆1 - 0.64◆RB◆ = 2.0 + \frac{2.56}{0.36} = 2.0 + 7.11 = 9.11\,\text{m}$$
 
 ---
+
 ### UT-3: Impulse-Momentum with Variable Force
 
 **Question:**
 
-A ball of mass $0.40\,\text{kg}$ is initially at rest. A force $F = (6.0t - 0.5t^2)\,\text{N}$ acts on it for $4.0\,\text{s}$ in a fixed direction.
+A ball of mass $0.40\,\text{kg}$ is initially at rest. A force $F = (6.0t - 0.5t^2)\,\text{N}$ acts
+on it for $4.0\,\text{s}$ in a fixed direction.
 
 (a) Calculate the impulse imparted to the ball.
 
 (b) Calculate the velocity of the ball at $t = 4.0\,\text{s}$.
 
-(c) Calculate the average force over the $4.0\,\text{s}$ interval and explain why it differs from the force at $t = 2.0\,\text{s}$.
+(c) Calculate the average force over the $4.0\,\text{s}$ interval and explain why it differs from
+the force at $t = 2.0\,\text{s}$.
 
 **Solution:**
 
@@ -126,7 +141,10 @@ $$v = J/m = 37.33/0.40 = 93.3\,\text{m}\,\text{s}^{-1}$$
 
 Force at $t = 2.0\,\text{s}$: $F(2) = 6.0(2) - 0.5(4) = 12 - 2 = 10\,\text{N}$
 
-The average force ($9.33\,\text{N}$) differs from the force at the midpoint ($10\,\text{N}$) because the force is not linear in time -- it is quadratic. For a linearly varying force, the average equals the midpoint value, but for a quadratic force this is not the case. The average force is determined by the integral over the entire interval, weighted by time.
+The average force ($9.33\,\text{N}$) differs from the force at the midpoint ($10\,\text{N}$) because
+the force is not linear in time -- it is quadratic. For a linearly varying force, the average equals
+the midpoint value, but for a quadratic force this is not the case. The average force is determined
+by the integral over the entire interval, weighted by time.
 
 ## Integration Tests
 
@@ -134,19 +152,24 @@ The average force ($9.33\,\text{N}$) differs from the force at the midpoint ($10
 
 **Question:**
 
-A ball of mass $0.20\,\text{kg}$ hits a smooth vertical wall with velocity $(8.0\hat{i} - 6.0\hat{j})\,\text{m}\,\text{s}^{-1}$Where $\hat{i}$ is horizontal (perpendicular to the wall) and $\hat{j}$ is vertical (parallel to the wall). The coefficient of restitution between the ball and wall is $e = 0.75$. The wall is smooth, so there is no friction.
+A ball of mass $0.20\,\text{kg}$ hits a smooth vertical wall with velocity
+$(8.0\hat{i} - 6.0\hat{j})\,\text{m}\,\text{s}^{-1}$Where $\hat{i}$ is horizontal (perpendicular to
+the wall) and $\hat{j}$ is vertical (parallel to the wall). The coefficient of restitution between
+the ball and wall is $e = 0.75$. The wall is smooth, so there is no friction.
 
 (a) Calculate the velocity of the ball after the collision.
 
 (b) Calculate the impulse exerted by the wall on the ball.
 
-(c) After rebounding, the ball moves freely under gravity. Calculate the horizontal distance from the wall at which the ball returns to its original height.
+(c) After rebounding, the ball moves freely under gravity. Calculate the horizontal distance from
+the wall at which the ball returns to its original height.
 
 Take $g = 9.81\,\text{m}\,\text{s}^{-2}$.
 
 **Solution:**
 
-(a) The wall is vertical and smooth. The $\hat{j}$-component (parallel to the wall) is unchanged. The $\hat{i}$-component (perpendicular to the wall) reverses with restitution:
+(a) The wall is vertical and smooth. The $\hat{j}$-component (parallel to the wall) is unchanged.
+The $\hat{i}$-component (perpendicular to the wall) reverses with restitution:
 
 $$v_x' = -e \cdot u_x = -0.75 \times 8.0 = -6.0\,\text{m}\,\text{s}^{-1}$$
 
@@ -161,7 +184,8 @@ $$= 0.20(-14.0\hat{i} + 0\hat{j}) = (-2.8\hat{i})\,\text{N}\,\text{s}$$
 
 The impulse is purely horizontal (perpendicular to the wall), as expected for a smooth wall.
 
-(c) The ball rebounds with $v_x = -6.0\,\text{m}\,\text{s}^{-1}$ (away from wall) and $v_y = -6.0\,\text{m}\,\text{s}^{-1}$ (downward).
+(c) The ball rebounds with $v_x = -6.0\,\text{m}\,\text{s}^{-1}$ (away from wall) and
+$v_y = -6.0\,\text{m}\,\text{s}^{-1}$ (downward).
 
 Time to return to original height: $\Delta y = 0 = v_y t + \frac{1}{2}(-g)t^2$
 
@@ -169,20 +193,32 @@ $$0 = -6.0t - 4.905t^2 \Rightarrow t(-6.0 - 4.905t) = 0$$
 
 Ignoring $t = 0$: $t = -6.0/4.905 = -1.223\,\text{s}$
 
-This is negative, which means the ball is below its original height and moving downward. The ball never returns to its original height -- it hits the ground first.
+This is negative, which means the ball is below its original height and moving downward. The ball
+never returns to its original height -- it hits the ground first.
 
-If the collision happens at height $h$ above the ground, we need $h$. Since no height is specified, we note that with $v_y = -6.0\,\text{m}\,\text{s}^{-1}$ downward and decelerating (gravity acts downward), the ball continues to descend. The ball would need an upward component to return to its original height. Since $v_y$ is negative, the ball never rises back to its collision height.
+If the collision happens at height $h$ above the ground, we need $h$. Since no height is specified,
+we note that with $v_y = -6.0\,\text{m}\,\text{s}^{-1}$ downward and decelerating (gravity acts
+downward), the ball continues to descend. The ball would need an upward component to return to its
+original height. Since $v_y$ is negative, the ball never rises back to its collision height.
 
-Horizontal distance from wall at time $t$: $x = |v_x| \times t = 6.0t$. But since the ball never returns to its original height, the question's premise requires that the collision occurred at ground level, or the ball was given height. If we interpret "returns to its original height" as asking about the trajectory, the ball cannot return since it is moving downward with no upward component.
+Horizontal distance from wall at time $t$: $x = |v_x| \times t = 6.0t$. But since the ball never
+returns to its original height, the question's premise requires that the collision occurred at
+ground level, or the ball was given height. If we interpret "returns to its original height" as
+asking about the trajectory, the ball cannot return since it is moving downward with no upward
+component.
 
-**Answer:** The ball cannot return to its original height after the collision since its vertical velocity component is directed downward and gravity does not reverse it.
+**Answer:** The ball cannot return to its original height after the collision since its vertical
+velocity component is directed downward and gravity does not reverse it.
 
 ---
+
 ### IT-2: Rocket Propulsion and Momentum (with Dynamics)
 
 **Question:**
 
-A rocket of mass $500\,\text{kg}$ (including fuel) is initially at rest in deep space (no external forces). It burns fuel at a rate of $5.0\,\text{kg}\,\text{s}^{-1}$Ejecting exhaust gas at a speed of $2000\,\text{m}\,\text{s}^{-1}$ relative to the rocket.
+A rocket of mass $500\,\text{kg}$ (including fuel) is initially at rest in deep space (no external
+forces). It burns fuel at a rate of $5.0\,\text{kg}\,\text{s}^{-1}$Ejecting exhaust gas at a speed
+of $2000\,\text{m}\,\text{s}^{-1}$ relative to the rocket.
 
 (a) Calculate the thrust produced by the rocket engine.
 
@@ -198,38 +234,49 @@ A rocket of mass $500\,\text{kg}$ (including fuel) is initially at rest in deep 
 
 $$a_0 = \frac◆LB◆F_{\text{thrust}}◆RB◆◆LB◆m◆RB◆ = \frac{10000}{500} = 20.0\,\text{m}\,\text{s}^{-2}$$
 
-At $t = 60\,\text{s}$: fuel burned $= 5.0 \times 60 = 300\,\text{kg}$Remaining mass $= 200\,\text{kg}$
+At $t = 60\,\text{s}$: fuel burned $= 5.0 \times 60 = 300\,\text{kg}$Remaining mass
+$= 200\,\text{kg}$
 
 $$a_{60} = \frac{10000}{200} = 50.0\,\text{m}\,\text{s}^{-2}$$
 
-The acceleration increases with time because the rocket's mass decreases while the thrust remains constant.
+The acceleration increases with time because the rocket's mass decreases while the thrust remains
+constant.
 
 (c) Using the rocket equation (Tsiolkovsky):
 
 $$\Delta v = v_{\text{exhaust}} \ln\left(\frac{m_0}{m_f}\right) = 2000 \ln\left(\frac{500}{200}\right) = 2000 \ln(2.5) = 2000 \times 0.9163 = 1833\,\text{m}\,\text{s}^{-1}$$
 
-Alternatively, using impulse: the total momentum of all exhaust gas ejected provides the momentum gain of the rocket. The difficulty is that the exhaust speed relative to an inertial frame changes as the rocket accelerates, so the integral form (rocket equation) is needed.
+Alternatively, using impulse: the total momentum of all exhaust gas ejected provides the momentum
+gain of the rocket. The difficulty is that the exhaust speed relative to an inertial frame changes
+as the rocket accelerates, so the integral form (rocket equation) is needed.
 
-Check using approximation (treating exhaust velocity as constant in lab frame, which gives a lower bound):
+Check using approximation (treating exhaust velocity as constant in lab frame, which gives a lower
+bound):
 
-Total fuel ejected $= 300\,\text{kg}$. Total impulse $= 300 \times 2000 = 600000\,\text{N}\,\text{s}$.
+Total fuel ejected $= 300\,\text{kg}$. Total impulse
+$= 300 \times 2000 = 600000\,\text{N}\,\text{s}$.
 
-If all went to the rocket: $\Delta v = 600000/500 = 1200\,\text{m}\,\text{s}^{-1}$ (underestimate since it ignores the rocket's decreasing mass).
+If all went to the rocket: $\Delta v = 600000/500 = 1200\,\text{m}\,\text{s}^{-1}$ (underestimate
+since it ignores the rocket's decreasing mass).
 
 The correct answer from the rocket equation is $1833\,\text{m}\,\text{s}^{-1}$.
 
 ---
+
 ### IT-3: Collision Analysis with Energy Dissipation (with Work-Energy)
 
 **Question:**
 
-A bullet of mass $10\,\text{g}$ is fired horizontally with speed $400\,\text{m}\,\text{s}^{-1}$ into a wooden block of mass $1.99\,\text{kg}$ resting on a rough horizontal surface. The bullet embeds itself in the block. The coefficient of friction between the block and the surface is $\mu = 0.30$.
+A bullet of mass $10\,\text{g}$ is fired horizontally with speed $400\,\text{m}\,\text{s}^{-1}$ into
+a wooden block of mass $1.99\,\text{kg}$ resting on a rough horizontal surface. The bullet embeds
+itself in the block. The coefficient of friction between the block and the surface is $\mu = 0.30$.
 
 (a) Calculate the speed of the block (with embedded bullet) immediately after the collision.
 
 (b) Calculate the distance the block slides before coming to rest.
 
-(c) Calculate the energy lost in the collision and the energy lost due to friction. Express each as a percentage of the bullet's initial kinetic energy.
+(c) Calculate the energy lost in the collision and the energy lost due to friction. Express each as
+a percentage of the bullet's initial kinetic energy.
 
 Take $g = 9.81\,\text{m}\,\text{s}^{-2}$.
 
@@ -237,16 +284,13 @@ Take $g = 9.81\,\text{m}\,\text{s}^{-2}$.
 
 (a) Conservation of momentum (perfectly inelastic collision):
 
-$$m_b v_b = (m_b + m_B)V$$
-$$0.010 \times 400 = (0.010 + 1.99)V$$
-$$4.0 = 2.00V$$
+$$m_b v_b = (m_b + m_B)V$$ $$0.010 \times 400 = (0.010 + 1.99)V$$ $$4.0 = 2.00V$$
 $$V = 2.00\,\text{m}\,\text{s}^{-1}$$
 
 (b) Using the work-energy principle for the sliding block:
 
 $$\frac{1}{2}(2.00)V^2 = \mu(2.00)g \times d$$
-$$\frac{1}{2}(2.00)(4.0) = 0.30 \times 2.00 \times 9.81 \times d$$
-$$4.0 = 5.886d$$
+$$\frac{1}{2}(2.00)(4.0) = 0.30 \times 2.00 \times 9.81 \times d$$ $$4.0 = 5.886d$$
 $$d = 0.680\,\text{m}$$
 
 (c) Initial KE of bullet: $E_{k0} = \frac{1}{2}(0.010)(400)^2 = 800\,\text{J}$
@@ -261,4 +305,5 @@ Energy lost due to friction: $= E_{k1} = 4.0\,\text{J}$ (all remaining KE is los
 
 Percentage: $\frac{4.0}{800} \times 100 = 0.50\%$
 
-This demonstrates why perfectly inelastic collisions are so inefficient: $99.5\%$ of the bullet's kinetic energy is converted to heat, sound, and deformation in the collision.
+This demonstrates why perfectly inelastic collisions are so inefficient: $99.5\%$ of the bullet's
+kinetic energy is converted to heat, sound, and deformation in the collision.

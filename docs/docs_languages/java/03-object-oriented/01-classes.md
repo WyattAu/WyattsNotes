@@ -1,12 +1,15 @@
 ---
 title: Classes and Inheritance
-description: "Classes and Inheritance — Class Declaration; Constructors; No-Arg Constructor; Parameterized Constructor with worked examples and exam-style questions."
+description:
+  'Classes and Inheritance — Class Declaration; Constructors; No-Arg Constructor; Parameterized
+  Constructor with worked examples and exam-style questions.'
 date: 2025-06-05T12:00:00.000Z
 tags: ['java']
 categories: ['java']
 slug: classes
 sidebar_position: 1
 ---
+
 ## Class Declaration
 
 A Java class is a template that defines the structure and behavior of objects. Every class
@@ -38,12 +41,10 @@ public final class ImmutableList<E> extends AbstractList<E> implements List<E>, 
 }
 ```
 
-:::info
-JLS Reference
+:::info JLS Reference
 [JLS §8.1](https://docs.oracle.com/javase/specs/jls/se21/html/jls-8.html#jls-8.1) defines class
 Declarations. The top-level class can be `public` or package-private (no modifier). Only one
-`public` class per compilation unit (.java file) is permitted.
-:::
+`public` class per compilation unit (.java file) is permitted. :::
 
 A class body can contain: field declarations, method declarations, constructors, static and instance
 Initializer blocks, nested class and interface declarations, and enum declarations.
@@ -186,12 +187,12 @@ graph TB
     end
 ```
 
-| Modifier | Same Class | Same Package | Subclass (diff pkg) | Unrelated |
+| Modifier        | Same Class | Same Package | Subclass (diff pkg) | Unrelated |
 | --------------- | :--------: | :----------: | :-----------------: | :-------: |
-| `public` | Y | Y | Y | Y |
-| `protected` | Y | Y | Y | N |
-| package-private | Y | Y | N | N |
-| `private` | Y | N | N | N |
+| `public`        |     Y      |      Y       |          Y          |     Y     |
+| `protected`     |     Y      |      Y       |          Y          |     N     |
+| package-private |     Y      |      Y       |          N          |     N     |
+| `private`       |     Y      |      N       |          N          |     N     |
 
 ```java
 public class AccessDemo {
@@ -239,19 +240,15 @@ class SubclassDemo extends AccessDemo {
 }
 ```
 
-:::warning
-`protected` access is narrower than most developers expect. A subclass in a different
+:::warning `protected` access is narrower than most developers expect. A subclass in a different
 Package can access a `protected` member only through `this` or a reference of the subclass's own
 Type. It cannot access the `protected` member through a reference of the superclass type, even if
-The actual object is an instance of the subclass.
-:::
+The actual object is an instance of the subclass. :::
 
-:::info
-JLS Reference
+:::info JLS Reference
 [JLS §6.6](https://docs.oracle.com/javase/specs/jls/se21/html/jls-6.html#jls-6.6) defines access
 Control in exhaustive detail. The rules for `protected` are specified in
-[JLS §6.6.2](https://docs.oracle.com/javase/specs/jls/se21/html/jls-6.html#jls-6.6.2).
-:::
+[JLS §6.6.2](https://docs.oracle.com/javase/specs/jls/se21/html/jls-6.html#jls-6.6.2). :::
 
 ## Fields and Methods
 
@@ -336,11 +333,9 @@ public class Config {
 }
 ```
 
-:::danger
-Never use a static mutable field to store per-request or per-user state. Static fields are
+:::danger Never use a static mutable field to store per-request or per-user state. Static fields are
 Shared across all threads and all instances of the class. This is the source of countless
-Concurrency bugs in web applications.
-:::
+Concurrency bugs in web applications. :::
 
 ## Final Classes and Methods
 
@@ -432,8 +427,7 @@ public class Circle extends Shape {
 }
 ```
 
-:::info
-JLS Reference
+:::info JLS Reference
 [JLS §8.1.1.1](https://docs.oracle.com/javase/specs/jls/se21/html/jls-8.html#jls-8.1.1.1) defines
 Abstract classes. An abstract class must be declared `abstract` if it has any abstract methods, but
 A class can be declared `abstract` even with no abstract methods (to prevent direct instantiation).
@@ -732,19 +726,17 @@ public Iterator<E> filteredIterator(final Predicate<? super E> predicate) {
 
 ### Inner Class Summary
 
-| Type | Holds enclosing ref? | Can access enclosing members? | Needs enclosing instance? | Can be `static`? |
+| Type          | Holds enclosing ref? | Can access enclosing members? | Needs enclosing instance? | Can be `static`? |
 | ------------- | :------------------: | :---------------------------: | :-----------------------: | :--------------: |
-| Static nested | No | Static members only | No | Yes |
-| Member inner | Yes | All members | Yes | No |
-| Anonymous | Yes | All members | Yes | No |
-| Local | Yes | All members | Yes | No |
+| Static nested |          No          |      Static members only      |            No             |       Yes        |
+| Member inner  |         Yes          |          All members          |            Yes            |        No        |
+| Anonymous     |         Yes          |          All members          |            Yes            |        No        |
+| Local         |         Yes          |          All members          |            Yes            |        No        |
 
-:::warning
-Prefer static nested classes over member inner classes. A member inner class holds an
+:::warning Prefer static nested classes over member inner classes. A member inner class holds an
 Implicit reference to its enclosing instance, which can prevent garbage collection of the enclosing
 Object and creates a coupling that makes testing harder. Use a member inner class only when it
-Genuinely needs to access the enclosing instance's state.
-:::
+Genuinely needs to access the enclosing instance's state. :::
 
 ## Inheritance
 
@@ -762,21 +754,21 @@ Java allows a class to extend only one superclass. This is a deliberate simplifi
 Which supports multiple inheritance. The reasons are:
 
 1. **The diamond problem**: With multiple inheritance, if two superclasses define the same method,
- which one does the subclass inherit? C++ solves this with virtual inheritance, which adds
- significant complexity. Java avoids the problem entirely for classes.
+   which one does the subclass inherit? C++ solves this with virtual inheritance, which adds
+   significant complexity. Java avoids the problem entirely for classes.
 
 2. **Simplicity and predictability**: Single inheritance produces a linear type hierarchy. Method
- resolution is unambiguous -- you always know exactly which method implementation will be called
- by following the single chain from the subclass up to `Object`.
+   resolution is unambiguous -- you always know exactly which method implementation will be called
+   by following the single chain from the subclass up to `Object`.
 
 3. **Complexity of multiple inheritance**: Multiple inheritance introduces problems beyond the
- diamond problem: conflicting field layouts, constructor ordering ambiguity, and access control
- complications. The C++ experience showed that these complexities caused more bugs than they
- solved.
+   diamond problem: conflicting field layouts, constructor ordering ambiguity, and access control
+   complications. The C++ experience showed that these complexities caused more bugs than they
+   solved.
 
 4. **Interfaces provide multiple subtyping**: Java compensates for single inheritance by allowing a
- class to implement any number of interfaces. This gives you the type polymorphism benefit of
- multiple inheritance without the implementation complexity.
+   class to implement any number of interfaces. This gives you the type polymorphism benefit of
+   multiple inheritance without the implementation complexity.
 
 ```mermaid
 graph TD
@@ -800,8 +792,8 @@ graph TD
 
 ### Liskov Substitution Principle (LSP)
 
-The Liskov Substitution Principle states that if `S` is a subtype of `T`Then objects of type `T`
-May be replaced with objects of type `S` without altering any of the desirable properties of the
+The Liskov Substitution Principle states that if `S` is a subtype of `T`Then objects of type `T` May
+be replaced with objects of type `S` without altering any of the desirable properties of the
 Program.
 
 Violating LSP means that a subclass does not truly honor the contract of its superclass. Classic
@@ -876,9 +868,9 @@ Rules for overriding:
 - The method must have the same name, parameter types, and return type (or a covariant return type).
 - The access level cannot be **more restrictive** than the overridden method.
 - The overriding method cannot throw checked exceptions that are broader than those declared by the
- overridden method.
+  overridden method.
 - The `@Override` annotation is optional but strongly recommended -- it causes a compile error if
- the method does not actually override a superclass method.
+  the method does not actually override a superclass method.
 - `static` methods, `private` methods, and `final` methods cannot be overridden.
 
 ### Method Hiding (Static Methods)
@@ -907,11 +899,9 @@ Child c = new Child();
 c.classify();     // "Child"  -- compile-time type is Child
 ```
 
-:::danger
-Never hide static methods. It creates extremely confusing behavior where the method called
+:::danger Never hide static methods. It creates extremely confusing behavior where the method called
 Depends on the declared type of the variable rather than the actual object. If you need polymorphic
-Behavior, use instance methods.
-:::
+Behavior, use instance methods. :::
 
 ### Covariant Return Types
 
@@ -973,22 +963,22 @@ The contract exists because hash-based collections (`HashMap``HashSet``Hashtable
 Invariants:
 
 1. **If two objects are equal, they MUST have the same hash code.** If this is violated, equal
- objects could end up in different hash buckets, and lookups would fail.
+   objects could end up in different hash buckets, and lookups would fail.
 
 2. **If two objects have the same hash code, they need NOT be equal.** This is a normal collision
- that hash tables handle correctly via linear probing or chaining.
+   that hash tables handle correctly via linear probing or chaining.
 
 If you override `equals()` without overriding `hashCode()`You break invariant 1. Objects that your
-`equals()` says are equal will have different hash codes (from `Object.hashCode()`Which is
- based on memory address), causing them to be placed in different buckets. A `HashSet`
-Would then contain duplicates, and a `HashMap` would fail to find keys.
+`equals()` says are equal will have different hash codes (from `Object.hashCode()`Which is based on
+memory address), causing them to be placed in different buckets. A `HashSet` Would then contain
+duplicates, and a `HashMap` would fail to find keys.
 
 The contract, as defined in `Object.hashCode()`:
 
 - If two objects are equal according to `equals(Object)`Then calling `hashCode()` on each must
- produce the same integer result.
+  produce the same integer result.
 - If two objects are unequal according to `equals(Object)`It is NOT required that they produce
- distinct hash codes. However, distinct hash codes improve hash table performance.
+  distinct hash codes. However, distinct hash codes improve hash table performance.
 
 The contract for `equals(Object)`As defined in `Object.equals()`:
 
@@ -996,7 +986,7 @@ The contract for `equals(Object)`As defined in `Object.equals()`:
 - **Symmetric**: `x.equals(y)` must return the same result as `y.equals(x)`.
 - **Transitive**: if `x.equals(y)` and `y.equals(z)`Then `x.equals(z)`.
 - **Consistent**: multiple invocations of `x.equals(y)` must consistently return `true` or `false`
- provided neither object is modified.
+  provided neither object is modified.
 - `x.equals(null)` must return `false`.
 
 ```java
@@ -1037,12 +1027,10 @@ public int hashCode() {
 }
 ```
 
-:::warning
-If you use an object as a key in a `HashMap` or add it to a `HashSet`And then mutate
-Its state in a way that changes `equals()` or `hashCode()`The collection will behave incorrectly.
-The object may become "lost" in the wrong bucket. Always use immutable objects as hash keys, or
-Ensure that fields used in `equals()`/`hashCode()` are never modified after insertion.
-:::
+:::warning If you use an object as a key in a `HashMap` or add it to a `HashSet`And then mutate Its
+state in a way that changes `equals()` or `hashCode()`The collection will behave incorrectly. The
+object may become "lost" in the wrong bucket. Always use immutable objects as hash keys, or Ensure
+that fields used in `equals()`/`hashCode()` are never modified after insertion. :::
 
 ### clone()
 
@@ -1086,13 +1074,11 @@ class Person implements Cloneable {
 }
 ```
 
-:::danger
-`clone()` is broken by design. It is based on a combination of `Object.clone()` (which
+:::danger `clone()` is broken by design. It is based on a combination of `Object.clone()` (which
 Does a shallow copy) and the `Cloneable` marker interface (which has no methods). The pattern is
 Awkward: you must call `super.clone()` (which checks runtime type), then manually deep-copy mutable
 Fields. Most experts recommend using copy constructors or static factory methods instead. Josh Bloch
-(Effective Java) recommends against using `clone()`.
-:::
+(Effective Java) recommends against using `clone()`. :::
 
 ### finalize()
 
@@ -1237,13 +1223,11 @@ public enum Operation {
 }
 ```
 
-:::info
-JLS Reference
+:::info JLS Reference
 [JLS §8.9](https://docs.oracle.com/javase/specs/jls/se21/html/jls-8.html#jls-8.9) defines enum
 Declarations. Enum constants are implicitly `public static final`. Enum types implicitly extend
 `java.lang.Enum` and cannot be instantiated with `new`. Enum types are implicitly `final` unless
-They have constant-specific class bodies.
-:::
+They have constant-specific class bodies. :::
 
 ## Generics Basics
 
@@ -1402,8 +1386,7 @@ String s = (String) strings.get(0);  // compiler inserts the cast
 List<String>[] array = (List<String>[]) new List<?>[10];
 ```
 
-:::info
-JLS Reference
+:::info JLS Reference
 [JLS §4.6](https://docs.oracle.com/javase/specs/jls/se21/html/jls-4.html#jls-4.6) defines type
 Erasure. [JLS §4.5](https://docs.oracle.com/javase/specs/jls/se21/html/jls-4.html#jls-4.5) defines
 Parameterized types.
@@ -1439,31 +1422,31 @@ graph TD
 ## Summary of Design Principles
 
 1. **Single inheritance trades flexibility for simplicity.** Multiple inheritance of implementation
- creates the diamond problem, ambiguous constructor ordering, and conflicting field layouts. Java
- avoids this entirely for classes while providing multiple interface implementation for type
- polymorphism.
+   creates the diamond problem, ambiguous constructor ordering, and conflicting field layouts. Java
+   avoids this entirely for classes while providing multiple interface implementation for type
+   polymorphism.
 
 2. **Default methods solve interface evolution, not multiple inheritance.** They exist so that
- interfaces can grow without breaking existing implementations. The diamond problem is resolved by
- requiring explicit disambiguation when conflicts arise.
+   interfaces can grow without breaking existing implementations. The diamond problem is resolved by
+   requiring explicit disambiguation when conflicts arise.
 
 3. **The equals/hashCode contract exists because hash-based collections depend on it.** Without the
- contract, `HashMap` and `HashSet` would silently fail -- equal objects could end up in different
- buckets. The contract is a correctness invariant, not a suggestion.
+   contract, `HashMap` and `HashSet` would silently fail -- equal objects could end up in different
+   buckets. The contract is a correctness invariant, not a suggestion.
 
 4. **Access modifiers enforce encapsulation boundaries.** `private` ensures invariants cannot be
- violated from outside the class. `protected` provides extension points for subclasses.
- `package-private` enables cooperation within a package. `public` defines the API contract.
+   violated from outside the class. `protected` provides extension points for subclasses.
+   `package-private` enables cooperation within a package. `public` defines the API contract.
 
 5. **Prefer composition over inheritance.** Inheritance creates the tightest coupling between
- classes. Composition (HAS-A) is more flexible, easier to test, and avoids Liskov Substitution
- Principle violations. Use inheritance only when there is a genuine IS-A relationship with a
- stable superclass contract.
+   classes. Composition (HAS-A) is more flexible, easier to test, and avoids Liskov Substitution
+   Principle violations. Use inheritance only when there is a genuine IS-A relationship with a
+   stable superclass contract.
 
 6. **Generics provide compile-time type safety through type erasure.** The JVM does not know about
- generic types at runtime -- it sees raw types. This design was chosen for backward compatibility
- with pre-generics Java code. The cost is that you cannot use `new T()``instanceof T`Or create
- arrays of generic types.
+   generic types at runtime -- it sees raw types. This design was chosen for backward compatibility
+   with pre-generics Java code. The cost is that you cannot use `new T()``instanceof T`Or create
+   arrays of generic types.
 
 ## Common Pitfalls
 

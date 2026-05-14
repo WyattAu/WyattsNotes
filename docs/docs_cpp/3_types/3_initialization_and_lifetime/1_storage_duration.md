@@ -1,6 +1,8 @@
 ---
 title: Storage Duration
-description: "C++: Storage Duration — Stack Behavior; Temporary Objects; Initialization Phases; The Static Initialization Order Fiasco."
+description:
+  'C++: Storage Duration — Stack Behavior; Temporary Objects; Initialization Phases; The Static
+  Initialization Order Fiasco.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -8,6 +10,7 @@ categories:
   - Cpp
 slug: storage-duration
 ---
+
 Import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 Every object in C++ has a **storage duration** that determines when its storage is allocated, when
@@ -18,12 +21,12 @@ Thread safety, and program startup/shutdown behavior.
 
 ## The Four Storage Durations
 
-| Storage Duration | Allocation Time | Deallocation Time | Initial State | Thread Safety |
+| Storage Duration | Allocation Time        | Deallocation Time            | Initial State                                | Thread Safety                         |
 | :--------------- | :--------------------- | :--------------------------- | :------------------------------------------- | :------------------------------------ |
-| **Automatic** | Block entry | Block exit | Indeterminate (unless initialized) | N/A (per-thread stack) |
-| **Static** | Program startup | Program termination | Zero-initialized, then constant/dynamic init | Safe (guaranteed by [N4950 §6.6.3.2]) |
-| **Thread** | Thread creation | Thread termination | Zero-initialized, then constant/dynamic init | Per-thread copy |
-| **Dynamic** | `new` / `operator new` | `delete` / `operator delete` | Indeterminate | Must synchronize externally |
+| **Automatic**    | Block entry            | Block exit                   | Indeterminate (unless initialized)           | N/A (per-thread stack)                |
+| **Static**       | Program startup        | Program termination          | Zero-initialized, then constant/dynamic init | Safe (guaranteed by [N4950 §6.6.3.2]) |
+| **Thread**       | Thread creation        | Thread termination           | Zero-initialized, then constant/dynamic init | Per-thread copy                       |
+| **Dynamic**      | `new` / `operator new` | `delete` / `operator delete` | Indeterminate                                | Must synchronize externally           |
 
 [N4950 §6.7] defines these categories and their semantics.
 
@@ -45,8 +48,8 @@ void example() {
 
 ### Stack Behavior
 
-Automatic storage is allocated on the call stack. The compiler generates prologue/epilogue
-Code that adjusts the stack pointer:
+Automatic storage is allocated on the call stack. The compiler generates prologue/epilogue Code that
+adjusts the stack pointer:
 
 ```cpp
 struct Widget {
@@ -66,10 +69,9 @@ Key properties:
 
 - **Zero-cost allocation/deallocation**: Stack pointer arithmetic, no allocator involvement.
 - **Deterministic lifetime**: Destruction occurs at block exit in reverse order of construction
- [N4950 §6.7.7.2].
+  [N4950 §6.7.7.2].
 - **No fragmentation**: The stack is a contiguous LIFO structure.
-- **Limited size**: Stack overflow is a real risk; default stack size is 1-8 MB depending
- on OS.
+- **Limited size**: Stack overflow is a real risk; default stack size is 1-8 MB depending on OS.
 
 ### Temporary Objects
 
@@ -103,12 +105,13 @@ Objects with static storage duration persist for the entire lifetime of the prog
 Static initialization proceeds in two phases [N4950 §6.6.3.2]:
 
 1. **Zero-initialization**: All static-duration objects are zero-initialized before any other
- initialization takes place.
+   initialization takes place.
 2. **Constant initialization / Dynamic initialization**:
- - **Constant initialization**: Objects initialized with constant expressions or `constexpr`
- constructors. This happens at compile time (the object is placed in the binary's `.data` or
- `.rodata` segment).
- - **Dynamic initialization**: All other initialization. This happens during program startup.
+
+- **Constant initialization**: Objects initialized with constant expressions or `constexpr`
+  constructors. This happens at compile time (the object is placed in the binary's `.data` or
+  `.rodata` segment).
+- **Dynamic initialization**: All other initialization. This happens during program startup.
 
 ```cpp
 constexpr int compile_time = 42;           // constant initialization (in binary)
@@ -142,8 +145,8 @@ struct Logger {
 Logger global_logger;  // dynamic initialization
 ```
 
-If `logger.cpp` is initialized before `config.cpp``global_logger`'s constructor calls
-`get_config()` before `Config::instance` is constructed. The behavior is undefined.
+If `logger.cpp` is initialized before `config.cpp``global_logger`'s constructor calls `get_config()`
+before `Config::instance` is constructed. The behavior is undefined.
 
 #### The Construct On First Use Idiom
 
@@ -168,8 +171,7 @@ The compiler generates a guard variable (e.g., `_ZGV15get_databaseE9instance`) a
 
 #### `constexpr` Initialization as a Solution
 
-If the object can be `constexpr`It is initialized at compile time and sidesteps the fiasco
-Entirely:
+If the object can be `constexpr`It is initialized at compile time and sidesteps the fiasco Entirely:
 
 ```cpp
 struct Flags {
@@ -198,11 +200,11 @@ void worker(int id) {
 
 TLS can be implemented in several ways:
 
-| Implementation | Description | Trade-off |
+| Implementation                        | Description                                                | Trade-off                                  |
 | :------------------------------------ | :--------------------------------------------------------- | :----------------------------------------- |
-| **PEB/TLS slots** (Windows) | Per-thread array of pointers, allocated on thread creation | Fast access, limited slots |
-| **`__thread` / `thread_local`** (ELF) | Compiler reserves a TLS segment in the binary | Fast access via `fs`/`gs` segment register |
-| **`pthread_getspecific`** | Runtime key-value lookup | Slow, but unlimited slots |
+| **PEB/TLS slots** (Windows)           | Per-thread array of pointers, allocated on thread creation | Fast access, limited slots                 |
+| **`__thread` / `thread_local`** (ELF) | Compiler reserves a TLS segment in the binary              | Fast access via `fs`/`gs` segment register |
+| **`pthread_getspecific`**             | Runtime key-value lookup                                   | Slow, but unlimited slots                  |
 
 ### Initialization Order
 
@@ -224,17 +226,17 @@ std::string get_thread_name() {
 
 ### Performance Considerations
 
-TLS access via the `fs` segment register on x86_64 is a single instruction
-(`mov rax, fs:[offset]`), making it nearly as fast as regular variable access. However:
+TLS access via the `fs` segment register on x86_64 is a single instruction (`mov rax, fs:[offset]`),
+making it nearly as fast as regular variable access. However:
 
 - TLS variables in shared libraries can be significantly slower if the TLS block is not
- pre-allocated.
+  pre-allocated.
 - Excessive TLS usage increases per-thread memory overhead.
 
 ## Dynamic Storage Duration
 
-Dynamic storage duration is obtained through allocation functions (`new``operator new``malloc`)
-And released through deallocation functions (`delete``operator delete``free`).
+Dynamic storage duration is obtained through allocation functions (`new``operator new``malloc`) And
+released through deallocation functions (`delete``operator delete``free`).
 
 ### new and delete
 
@@ -316,13 +318,13 @@ Similarly, `operator delete` handles deallocation, and the destructor runs befor
 
 ### The Global Allocation Functions
 
-| Function | Behavior | Customization |
+| Function                            | Behavior                      | Customization        |
 | :---------------------------------- | :---------------------------- | :------------------- |
-| `operator new(size_t)` | Single-object allocation | Replaceable globally |
-| `operator new[](size_t)` | Array allocation | Replaceable globally |
-| `operator new(size_t, nothrow_t)` | Returns `nullptr` on failure | Replaceable globally |
-| `operator new(size_t, align_val_t)` | C++17 aligned allocation | Replaceable globally |
-| `operator new(size_t, void* p)` | Placement new (no allocation) | Not replaceable |
+| `operator new(size_t)`              | Single-object allocation      | Replaceable globally |
+| `operator new[](size_t)`            | Array allocation              | Replaceable globally |
+| `operator new(size_t, nothrow_t)`   | Returns `nullptr` on failure  | Replaceable globally |
+| `operator new(size_t, align_val_t)` | C++17 aligned allocation      | Replaceable globally |
+| `operator new(size_t, void* p)`     | Placement new (no allocation) | Not replaceable      |
 
 ## Storage Duration Summary Table
 
@@ -339,8 +341,8 @@ void demonstrate_all_durations() {
 
 ### Alignment in Dynamic Storage
 
-`operator new` returns memory aligned for any type with a fundamental alignment ( 16 bytes
-On x86_64). For over-aligned types, C++17 provides `operator new(size_t, align_val_t)`:
+`operator new` returns memory aligned for any type with a fundamental alignment ( 16 bytes On
+x86_64). For over-aligned types, C++17 provides `operator new(size_t, align_val_t)`:
 
 ```cpp
 struct alignas(64) CacheLine {
@@ -373,8 +375,8 @@ delete[] arr;  // must use delete[] for arrays
 // 2. Calls operator delete[](arr) to free the memory
 ```
 
-The array size is stored by the allocator alongside the allocation (a "cookie" before the
-Array data). This is why `new[]`/`delete[]` must be matched.
+The array size is stored by the allocator alongside the allocation (a "cookie" before the Array
+data). This is why `new[]`/`delete[]` must be matched.
 
 ### Memory Leaks and Ownership
 
@@ -456,12 +458,12 @@ public:
 
 ### Thread Safety and Storage Duration
 
-| Storage Duration | Thread Safety for Initialization | Thread Safety for Access |
+| Storage Duration | Thread Safety for Initialization | Thread Safety for Access     |
 | :--------------- | :------------------------------- | :--------------------------- |
-| Automatic | N/A (stack is per-thread) | Must synchronize shared data |
-| Static | Thread-safe (C++11 guarantee) | Must synchronize writes |
-| Thread | Thread-safe per-thread init | Inherently per-thread |
-| Dynamic | Not thread-safe | Must synchronize externally |
+| Automatic        | N/A (stack is per-thread)        | Must synchronize shared data |
+| Static           | Thread-safe (C++11 guarantee)    | Must synchronize writes      |
+| Thread           | Thread-safe per-thread init      | Inherently per-thread        |
+| Dynamic          | Not thread-safe                  | Must synchronize externally  |
 
 ### Static Destruction Order
 
@@ -546,7 +548,7 @@ Use the `nothrow` variant when exceptions are undesirable.
 
 - **Module 7 (Data Layout)**: How storage maps to physical memory and struct layout rules
 - **Module 8 (Pointers, References, Views)**: Pointer lifetime, dangling references, reference
- binding
+  binding
 - **Module 10 (Ownership and RAII)**: RAII pattern for managing dynamic storage duration
 - **Module 13 (Error Handling)**: Exception safety during object construction and destruction
 

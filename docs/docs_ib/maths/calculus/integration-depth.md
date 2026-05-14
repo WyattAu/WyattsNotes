@@ -1,11 +1,12 @@
 ---
 tags:
-- maths
+  - maths
 slug: integration-depth
-description: "Comprehensive IB mathematics notes on Calculus. Covers key definitions, worked examples, and practice problems for revision."
+description:
+  'Comprehensive IB mathematics notes on Calculus. Covers key definitions, worked examples, and
+  practice problems for revision.'
 title: Calculus
 ---
-
 
 ## Integration
 
@@ -16,9 +17,9 @@ In calculus with wide-ranging applications in geometry, physics, and probability
 Two principal forms exist:
 
 - **Indefinite integration** (antidifferentiation): finds the general antiderivative of a function,
- producing a family of functions differing by a constant.
+  producing a family of functions differing by a constant.
 - **Definite integration**: computes a numerical value representing the signed area under a curve
- between two limits.
+  between two limits.
 
 These are linked by the Fundamental Theorem of Calculus, which unifies differentiation and
 Integration into a single coherent framework.
@@ -73,23 +74,23 @@ $$
 
 ### Common Antiderivatives
 
-| $f(x)$ | $\int f(x)\,dx$ |
+| $f(x)$                     | $\int f(x)\,dx$                              |
 | -------------------------- | -------------------------------------------- | ------ | ---- |
-| $k$ | $kx + C$ | | |
-| $x^n$ | $\dfrac{x^{n+1}}{n+1} + C \quad (n \neq -1)$ | | |
-| $\dfrac{1}{x}$ | $\ln                                         | x      | + C$ |
-| $e^x$ | $e^x + C$ | | |
-| $a^x$ | $\dfrac{a^x}{\ln a} + C$ | | |
-| $\sin x$ | $-\cos x + C$ | | |
-| $\cos x$ | $\sin x + C$ | | |
-| $\sec^2 x$ | $\tan x + C$ | | |
-| $\csc^2 x$ | $-\cot x + C$ | | |
-| $\sec x \tan x$ | $\sec x + C$ | | |
-| $\csc x \cot x$ | $-\csc x + C$ | | |
-| $\tan x$ | $\ln                                         | \sec x | + C$ |
-| $\cot x$ | $\ln                                         | \sin x | + C$ |
-| $\frac{1}{\sqrt{1 - x^2}}$ | $\arcsin x + C$ | | |
-| $\frac{1}{1 + x^2}$ | $\arctan x + C$ | | |
+| $k$                        | $kx + C$                                     |        |      |
+| $x^n$                      | $\dfrac{x^{n+1}}{n+1} + C \quad (n \neq -1)$ |        |      |
+| $\dfrac{1}{x}$             | $\ln                                         | x      | + C$ |
+| $e^x$                      | $e^x + C$                                    |        |      |
+| $a^x$                      | $\dfrac{a^x}{\ln a} + C$                     |        |      |
+| $\sin x$                   | $-\cos x + C$                                |        |      |
+| $\cos x$                   | $\sin x + C$                                 |        |      |
+| $\sec^2 x$                 | $\tan x + C$                                 |        |      |
+| $\csc^2 x$                 | $-\cot x + C$                                |        |      |
+| $\sec x \tan x$            | $\sec x + C$                                 |        |      |
+| $\csc x \cot x$            | $-\csc x + C$                                |        |      |
+| $\tan x$                   | $\ln                                         | \sec x | + C$ |
+| $\cot x$                   | $\ln                                         | \sin x | + C$ |
+| $\frac{1}{\sqrt{1 - x^2}}$ | $\arcsin x + C$                              |        |      |
+| $\frac{1}{1 + x^2}$        | $\arctan x + C$                              |        |      |
 
 :::info[Examples]
 
@@ -161,8 +162,8 @@ $$
 
 ### Area Under a Curve
 
-If $f(x) \geq 0$ on $[a, b]$Then $\int_a^b f(x)\,dx$ gives the area between the curve $y = f(x)$
-The $x$-axis, and the vertical lines $x = a$ and $x = b$.
+If $f(x) \geq 0$ on $[a, b]$Then $\int_a^b f(x)\,dx$ gives the area between the curve $y = f(x)$ The
+$x$-axis, and the vertical lines $x = a$ and $x = b$.
 
 If $f(x)$ changes sign on $[a, b]$The integral gives the **net** (signed) area. The total area is
 Computed by splitting at the zeros of $f$ and taking absolute values:
@@ -171,7 +172,8 @@ $$
 \mathrm{Total area} = \int_a^b |f(x)|\,dx
 $$
 
-<DesmosGraph title="Integration as Area Under a Curve" expressions={["\int_{a}^{b} f(x) \, dx"]} width={800} height={500} />
+<DesmosGraph title="Integration as Area Under a Curve" expressions={["\int_{a}^{b} f(x) \, dx"]}
+width={800} height={500} />
 
 Adjust the sliders to change the function and limits, and observe how the shaded area approximates
 The definite integral.
@@ -264,8 +266,8 @@ $$
 Algebraic, Trigonometric, Exponential) to select $u$ as the function that appears first in the list.
 
 Integration by parts may need to be applied repeatedly. For integrals of the form
-$\int e^{ax}\sin(bx)\,dx$ or $\int e^{ax}\cos(bx)\,dx$Apply integration by parts twice and solve
-The resulting equation algebraically.
+$\int e^{ax}\sin(bx)\,dx$ or $\int e^{ax}\cos(bx)\,dx$Apply integration by parts twice and solve The
+resulting equation algebraically.
 
 **Tabular (DI) method:** For integrals of the form $\int f(x) g(x)\,dx$ where one factor
 Differentiates to zero after finitely many steps, the tabular method provides an efficient
@@ -313,11 +315,11 @@ Integrand into a sum of simpler fractions.
 
 **Decomposition rules:**
 
-| Factor in $Q(x)$ | Term in decomposition |
+| Factor in $Q(x)$              | Term in decomposition                                                          |
 | ----------------------------- | ------------------------------------------------------------------------------ |
-| $(ax + b)$ | $\dfrac{A}{ax + b}$ |
-| $(ax + b)^k$ | $\dfrac{A_1}{ax + b} + \dfrac{A_2}{(ax+b)^2} + \cdots + \dfrac{A_k}{(ax+b)^k}$ |
-| $ax^2 + bx + c$ (irreducible) | $\dfrac{Ax + B}{ax^2 + bx + c}$ |
+| $(ax + b)$                    | $\dfrac{A}{ax + b}$                                                            |
+| $(ax + b)^k$                  | $\dfrac{A_1}{ax + b} + \dfrac{A_2}{(ax+b)^2} + \cdots + \dfrac{A_k}{(ax+b)^k}$ |
+| $ax^2 + bx + c$ (irreducible) | $\dfrac{Ax + B}{ax^2 + bx + c}$                                                |
 
 :::info[Examples]
 
@@ -441,8 +443,8 @@ $$
 
 ### 4.2 Volumes of Revolution
 
-When a region bounded by $y = f(x)$The $x$-axis, and the lines $x = a$$x = b$ is revolved about
-The $x$-axis, the volume of the solid of revolution is:
+When a region bounded by $y = f(x)$The $x$-axis, and the lines $x = a$$x = b$ is revolved about The
+$x$-axis, the volume of the solid of revolution is:
 
 $$
 V = \pi \int_a^b [f(x)]^2\,dx
@@ -499,13 +501,13 @@ $$
 S(t) = \int v(t)\,dt + s_0
 $$
 
-Where $a(t)$ is acceleration, $v(t)$ is velocity, $s(t)$ is displacement, and $v_0$$s_0$ are
-Initial conditions.
+Where $a(t)$ is acceleration, $v(t)$ is velocity, $s(t)$ is displacement, and $v_0$$s_0$ are Initial
+conditions.
 
 **Key relationships:**
 
 - The **displacement** over a time interval $[t_1, t_2]$ is
- $\displaystyle\int_{t_1}^{t_2} v(t)\,dt$.
+  $\displaystyle\int_{t_1}^{t_2} v(t)\,dt$.
 - The **total distance travelled** is $\displaystyle\int_{t_1}^{t_2} |v(t)|\,dt$.
 - The velocity is the derivative of displacement: $v = \dfrac{ds}{dt}$.
 - The acceleration is the derivative of velocity: $a = \dfrac{dv}{dt}$.
@@ -940,15 +942,15 @@ $$
 ## Cross-References
 
 - **Differentiation** -- Integration is the inverse operation of differentiation. See the
- [Number and Algebra](../Number-and-algebra/number-algebra) notes for function fundamentals
- including derivative rules that motivate integration techniques.
+  [Number and Algebra](../Number-and-algebra/number-algebra) notes for function fundamentals
+  including derivative rules that motivate integration techniques.
 - **Functions** -- Domain and range considerations determine when antiderivatives are valid. See
- [Number and Algebra](../Number-and-algebra/number-algebra) for function fundamentals.
+  [Number and Algebra](../Number-and-algebra/number-algebra) for function fundamentals.
 - **Complex Numbers** -- The exponential form $e^{i\theta} = \cos\theta + i\sin\theta$ provides an
- elegant derivation of trigonometric integral results. See
- [Complex Numbers](../Number-and-algebra/complex-numbers).
+  elegant derivation of trigonometric integral results. See
+  [Complex Numbers](../Number-and-algebra/complex-numbers).
 - **Logic** -- Proof techniques (direct proof, contradiction) are used to justify properties of
- integrals. See [Logic](../Discrete-maths/logic).
+  integrals. See [Logic](../Discrete-maths/logic).
 
 ## Common Pitfalls
 

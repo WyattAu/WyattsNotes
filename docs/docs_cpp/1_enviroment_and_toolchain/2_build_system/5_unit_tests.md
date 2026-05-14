@@ -1,6 +1,8 @@
 ---
 title: Unit Testing
-description: "C++: Unit Testing — CTest Architecture; Dependency Management Strategy; 1. GoogleTest Integration; CMake Implementation."
+description:
+  'C++: Unit Testing — CTest Architecture; Dependency Management Strategy; 1. GoogleTest
+  Integration; CMake Implementation.'
 date: 2025-12-10T19:05:13.846Z
 tags:
   - cpp
@@ -8,6 +10,7 @@ categories:
   - cpp
 slug: unit-testing
 ---
+
 Import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 In a standard workflow, unit tests are compiled and executed as part of the build process. The build
@@ -83,8 +86,8 @@ gtest_discover_tests(UnitTests)
 
 ### Discovery Mechanics (`gtest_discover_tests`)
 
-Legacy CMake used `add_test()`Which treated the entire `UnitTests` executable as a single test.
-This is undesirable because a crash in test #1 prevents running test #100.
+Legacy CMake used `add_test()`Which treated the entire `UnitTests` executable as a single test. This
+is undesirable because a crash in test #1 prevents running test #100.
 
 `gtest_discover_tests`:
 
@@ -329,8 +332,7 @@ INSTANTIATE_TEST_SUITE_P(
 ```
 
 With `gtest_discover_tests`Each instantiation appears as a separate test in CTest:
-`PrimeNumbers/PrimeTest.ReturnsCorrectResult/0``PrimeNumbers/PrimeTest.ReturnsCorrectResult/1`
-Etc.
+`PrimeNumbers/PrimeTest.ReturnsCorrectResult/0``PrimeNumbers/PrimeTest.ReturnsCorrectResult/1` Etc.
 
 ## CMake Test Properties
 
@@ -544,13 +546,13 @@ jobs:
 ## Architectural Considerations
 
 1. **Macro Isolation:** Do not expose GTest/Catch2 macros in your public headers. Tests are
- implementation details.
+   implementation details.
 2. **Private Visibility:** If you need to test private class members, prefer the **Friend Fixture**
- pattern or compile private implementations as a separate `OBJECT` library rather than making
- members public.
+   pattern or compile private implementations as a separate `OBJECT` library rather than making
+   members public.
 3. **Sanitizers:** Running tests with Address Sanitizer (ASan) enabled is the primary method for
- detecting memory leaks. Ensure your `testPresets` inherit from sanitizer-enabled build
- configurations.
+   detecting memory leaks. Ensure your `testPresets` inherit from sanitizer-enabled build
+   configurations.
 
 ## Common Pitfalls
 

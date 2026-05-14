@@ -1,9 +1,12 @@
 ---
 id: dse-ict-programming-and-databases
 title: ICT - Programming and Databases
-description: "Rigorous DSE notes covering ICT - Programming and Databases. Includes definitions, derivations, worked examples, and exam-style problems."
+description:
+  'Rigorous DSE notes covering ICT - Programming and Databases. Includes definitions, derivations,
+  worked examples, and exam-style problems.'
 slug: ict-programming-and-databases
 ---
+
 ## Programming Fundamentals
 
 ### Variables and Data Types
@@ -11,14 +14,14 @@ slug: ict-programming-and-databases
 A variable is a named storage location in memory that holds a value which can change during program
 Execution.
 
-| Data Type | Description | Example |
-| ------------ | --------------------------- | ------------------ |
-| Integer | Whole numbers | `42``-7``0` |
-| Float / Real | Numbers with decimal points | `3.14``-0.5` |
-| String | Text enclosed in quotes | `"Hello"``'DSE'` |
-| Boolean | Logical values | `True``False` |
-| Character | A single character | `'A'``'9'` |
-| Array / List | Collection of values | `[1, 2, 3, 4]` |
+| Data Type    | Description                 | Example          |
+| ------------ | --------------------------- | ---------------- |
+| Integer      | Whole numbers               | `42``-7``0`      |
+| Float / Real | Numbers with decimal points | `3.14``-0.5`     |
+| String       | Text enclosed in quotes     | `"Hello"``'DSE'` |
+| Boolean      | Logical values              | `True``False`    |
+| Character    | A single character          | `'A'``'9'`       |
+| Array / List | Collection of values        | `[1, 2, 3, 4]`   |
 
 ### Constants
 
@@ -29,10 +32,8 @@ PI = 3.14159
 MAX_STUDENTS = 40
 ```
 
-:::info
-In DSE ICT, constants are written in UPPER_CASE to distinguish them from
-Variables. Using constants improves code readability and reduces errors.
-:::
+:::info In DSE ICT, constants are written in UPPER_CASE to distinguish them from Variables. Using
+constants improves code readability and reduces errors. :::
 
 ### Input and Output
 
@@ -54,34 +55,34 @@ x += 5     # shorthand, x is now 20
 
 **Arithmetic operators:**
 
-| Operator | Meaning | Example |
+| Operator | Meaning            | Example       |
 | -------- | ------------------ | ------------- |
-| `+` | Addition | `5 + 3 = 8` |
-| `-` | Subtraction | `5 - 3 = 2` |
-| `*` | Multiplication | `5 * 3 = 15` |
-| `/` | Division | `7 / 2 = 3.5` |
-| `//` | Integer division | `7 // 2 = 3` |
-| `%` | Modulo (remainder) | `7 % 2 = 1` |
-| `**` | Exponentiation | `2 ** 3 = 8` |
+| `+`      | Addition           | `5 + 3 = 8`   |
+| `-`      | Subtraction        | `5 - 3 = 2`   |
+| `*`      | Multiplication     | `5 * 3 = 15`  |
+| `/`      | Division           | `7 / 2 = 3.5` |
+| `//`     | Integer division   | `7 // 2 = 3`  |
+| `%`      | Modulo (remainder) | `7 % 2 = 1`   |
+| `**`     | Exponentiation     | `2 ** 3 = 8`  |
 
 **Comparison operators:**
 
-| Operator | Meaning |
+| Operator | Meaning                  |
 | -------- | ------------------------ |
-| `==` | Equal to |
-| `!=` | Not equal to |
-| `>` | Greater than |
-| `<` | Less than |
-| `$\ge$` | Greater than or equal to |
-| `$\le$` | Less than or equal to |
+| `==`     | Equal to                 |
+| `!=`     | Not equal to             |
+| `>`      | Greater than             |
+| `<`      | Less than                |
+| `$\ge$`  | Greater than or equal to |
+| `$\le$`  | Less than or equal to    |
 
 **Logical operators:**
 
-| Operator | Meaning | Example |
+| Operator | Meaning                             | Example            |
 | -------- | ----------------------------------- | ------------------ |
-| `and` | Both conditions must be True | `x > 0 and x < 10` |
-| `or` | At least one condition must be True | `x == 0 or x == 1` |
-| `not` | Reverses the condition | `not(x > 5)` |
+| `and`    | Both conditions must be True        | `x > 0 and x < 10` |
+| `or`     | At least one condition must be True | `x == 0 or x == 1` |
+| `not`    | Reverses the condition              | `not(x > 5)`       |
 
 ---
 
@@ -161,11 +162,9 @@ while True:
     print("Try again")
 ```
 
-:::warning
-Be careful with WHILE loops to avoid infinite loops. Always ensure the loop condition
+:::warning Be careful with WHILE loops to avoid infinite loops. Always ensure the loop condition
 Will eventually become False. A common mistake is forgetting to update the loop variable inside the
-Loop body.
-:::
+Loop body. :::
 
 ### Worked Example 1
 
@@ -264,10 +263,8 @@ add_to_total(20)
 print("Total:", total)  # Output: Total: 30
 ```
 
-:::tip
-Avoid using global variables where possible. They make code harder to debug and maintain.
-Instead, pass values as parameters and return results.
-:::
+:::tip Avoid using global variables where possible. They make code harder to debug and maintain.
+Instead, pass values as parameters and return results. :::
 
 ### Worked Example 3
 
@@ -395,18 +392,18 @@ print(student["name"])  # Chan Tai Man
 
 Flowcharts use standard symbols to represent algorithms visually:
 
-| Symbol | Meaning |
+| Symbol        | Meaning        |
 | ------------- | -------------- |
-| Oval | Start / End |
+| Oval          | Start / End    |
 | Parallelogram | Input / Output |
-| Rectangle | Process |
-| Diamond | Decision |
-| Arrow | Flow direction |
+| Rectangle     | Process        |
+| Diamond       | Decision       |
+| Arrow         | Flow direction |
 
 ### Pseudocode
 
 Pseudocode is a structured English-like description of an algorithm. It is not executable but
- expresses the logic.
+expresses the logic.
 
 ```python
 BEGIN
@@ -436,14 +433,14 @@ ENDWHILE
 OUTPUT sum
 ```
 
-| Iteration | `count` | `sum` | `count $\le$` n |
-| --------- | ------- | ----------- | ------------ |
-| 1 | 1 | 0 + 1 = 1 | True |
-| 2 | 2 | 1 + 2 = 3 | True |
-| 3 | 3 | 3 + 3 = 6 | True |
-| 4 | 4 | 6 + 4 = 10 | True |
-| 5 | 5 | 10 + 5 = 15 | True |
-| 6 | 6 | 15 | False |
+| Iteration | `count` | `sum`       | `count $\le$` n |
+| --------- | ------- | ----------- | --------------- |
+| 1         | 1       | 0 + 1 = 1   | True            |
+| 2         | 2       | 1 + 2 = 3   | True            |
+| 3         | 3       | 3 + 3 = 6   | True            |
+| 4         | 4       | 6 + 4 = 10  | True            |
+| 5         | 5       | 10 + 5 = 15 | True            |
+| 6         | 6       | 15          | False           |
 
 Output: `sum = 15`
 
@@ -506,14 +503,12 @@ with open("data.txt", "r") as file:
     content = file.read()
 ```
 
-:::info
-File modes:
+:::info File modes:
 
 - `"r"`: read (default)
 - `"w"`: write (overwrites existing content)
 - `"a"`: append (adds to existing content)
-- `"r+"`: read and write
-:::
+- `"r+"`: read and write :::
 
 ---
 
@@ -526,15 +521,15 @@ Management System (DBMS) is software for creating, managing, and manipulating da
 
 ### Flat File vs Relational Database
 
-| Feature | Flat File | Relational Database |
+| Feature           | Flat File             | Relational Database              |
 | ----------------- | --------------------- | -------------------------------- |
-| Structure | Single table | Multiple linked tables |
-| Data redundancy | High | Low |
-| Data integrity | Difficult to maintain | Enforced by constraints |
-| Data consistency | Prone to anomalies | Maintained through normalisation |
-| Query flexibility | Limited | Powerful (SQL) |
-| Multi-user access | Difficult | Supported |
-| Example | CSV file | MySQL, PostgreSQL |
+| Structure         | Single table          | Multiple linked tables           |
+| Data redundancy   | High                  | Low                              |
+| Data integrity    | Difficult to maintain | Enforced by constraints          |
+| Data consistency  | Prone to anomalies    | Maintained through normalisation |
+| Query flexibility | Limited               | Powerful (SQL)                   |
+| Multi-user access | Difficult             | Supported                        |
+| Example           | CSV file              | MySQL, PostgreSQL                |
 
 ### Advantages of Relational Databases
 
@@ -563,17 +558,17 @@ An ER diagram models the data and relationships in a database.
 - **One-to-one (1:1):** Each record in one table relates to exactly one record in another
 - **One-to-many (1:N):** One record in one table relates to many records in another
 - **Many-to-many (M:N):** Many records in one table relate to many records in another (requires a
- junction table)
+  junction table)
 
 ### Keys
 
-| Key Type | Description |
+| Key Type          | Description                                                |
 | ----------------- | ---------------------------------------------------------- |
-| **Primary key** | Uniquely identifies each record in a table; cannot be null |
-| **Foreign key** | A field that references the primary key of another table |
-| **Composite key** | A primary key made up of two or more fields |
+| **Primary key**   | Uniquely identifies each record in a table; cannot be null |
+| **Foreign key**   | A field that references the primary key of another table   |
+| **Composite key** | A primary key made up of two or more fields                |
 | **Candidate key** | Any field or combination that could serve as a primary key |
-| **Superkey** | Any set of fields that uniquely identifies a record |
+| **Superkey**      | Any set of fields that uniquely identifies a record        |
 
 ### Normalisation
 
@@ -596,20 +591,18 @@ Normalisation is the process of organising data to minimise redundancy and depen
 - In 2NF
 - No transitive dependencies (non-key attributes do not depend on other non-key attributes)
 
-:::tip
-A simple check for 3NF: every non-key field must depend on the key, the whole key, and
-Nothing but the key.
-:::
+:::tip A simple check for 3NF: every non-key field must depend on the key, the whole key, and
+Nothing but the key. :::
 
 ### Worked Example 5
 
 Convert the following unnormalised data to 3NF.
 
-| StudentID | Name | CourseCode | CourseName | Teacher |
+| StudentID | Name | CourseCode | CourseName  | Teacher  |
 | --------- | ---- | ---------- | ----------- | -------- |
-| 001 | Chan | CS101 | Programming | Mr. Lee |
-| 001 | Chan | CS102 | Database | Ms. Wong |
-| 002 | Lee | CS101 | Programming | Mr. Lee |
+| 001       | Chan | CS101      | Programming | Mr. Lee  |
+| 001       | Chan | CS102      | Database    | Ms. Wong |
+| 002       | Lee  | CS101      | Programming | Mr. Lee  |
 
 **1NF:** Remove repeating groups.
 
@@ -688,10 +681,8 @@ DELETE FROM Student
 WHERE Score < 50;
 ```
 
-:::warning
-Be very careful with UPDATE and DELETE without a WHERE clause. They will modify or delete
-ALL records in the table. Always double-check your WHERE clause before executing.
-:::
+:::warning Be very careful with UPDATE and DELETE without a WHERE clause. They will modify or delete
+ALL records in the table. Always double-check your WHERE clause before executing. :::
 
 ### Data Query Language (DQL)
 
@@ -712,18 +703,18 @@ WHERE Class = '5A' AND Score >= 70;
 
 **Comparison operators in WHERE:**
 
-| Operator | Meaning |
+| Operator     | Meaning                     |
 | ------------ | --------------------------- |
-| `=` | Equal to |
-| `<>` or `!=` | Not equal to |
-| `>` | Greater than |
-| `<` | Less than |
-| `$\ge$` | Greater than or equal to |
-| `$\le$` | Less than or equal to |
-| `BETWEEN` | Range |
-| `LIKE` | Pattern matching |
-| `IN` | Matches any value in a list |
-| `IS NULL` | Null value |
+| `=`          | Equal to                    |
+| `<>` or `!=` | Not equal to                |
+| `>`          | Greater than                |
+| `<`          | Less than                   |
+| `$\ge$`      | Greater than or equal to    |
+| `$\le$`      | Less than or equal to       |
+| `BETWEEN`    | Range                       |
+| `LIKE`       | Pattern matching            |
+| `IN`         | Matches any value in a list |
+| `IS NULL`    | Null value                  |
 
 **ORDER BY:**
 
@@ -735,13 +726,13 @@ ORDER BY Score DESC;
 
 **Aggregate functions:**
 
-| Function | Description |
+| Function  | Description         |
 | --------- | ------------------- |
-| `COUNT()` | Number of rows |
-| `SUM()` | Total of a column |
-| `AVG()` | Average of a column |
-| `MAX()` | Maximum value |
-| `MIN()` | Minimum value |
+| `COUNT()` | Number of rows      |
+| `SUM()`   | Total of a column   |
+| `AVG()`   | Average of a column |
+| `MAX()`   | Maximum value       |
+| `MIN()`   | Minimum value       |
 
 ```sql
 SELECT AVG(Score) AS AverageScore, MAX(Score) AS Highest
@@ -834,54 +825,54 @@ GROUP BY Course.CourseName;
 
 Validation checks that data is reasonable and follows specified rules before it is accepted.
 
-| Validation Type | Description | Example |
+| Validation Type | Description                             | Example                       |
 | --------------- | --------------------------------------- | ----------------------------- |
-| Presence check | Ensures data is not empty | Name cannot be blank |
-| Type check | Ensures correct data type | Age must be an integer |
-| Length check | Ensures data has correct length | Phone number must be 8 digits |
-| Range check | Ensures data falls within a range | Score between 0 and 100 |
-| Format check | Ensures data follows a pattern | Email format: contains `@` |
-| Lookup check | Compares against a list of valid values | Class must be in school list |
+| Presence check  | Ensures data is not empty               | Name cannot be blank          |
+| Type check      | Ensures correct data type               | Age must be an integer        |
+| Length check    | Ensures data has correct length         | Phone number must be 8 digits |
+| Range check     | Ensures data falls within a range       | Score between 0 and 100       |
+| Format check    | Ensures data follows a pattern          | Email format: contains `@`    |
+| Lookup check    | Compares against a list of valid values | Class must be in school list  |
 
 ### Verification
 
 Verification ensures that data entered matches the original source.
 
-| Method | Description |
+| Method       | Description                                             |
 | ------------ | ------------------------------------------------------- |
-| Double entry | Data is entered twice and compared |
-| Visual check | User visually compares entered data with the source |
-| Check digit | A digit calculated from other digits (e.g., ISBN, HKID) |
+| Double entry | Data is entered twice and compared                      |
+| Visual check | User visually compares entered data with the source     |
+| Check digit  | A digit calculated from other digits (e.g., ISBN, HKID) |
 
 ---
 
 ## Summary Table
 
-| Topic | Key Concept | Example |
+| Topic         | Key Concept             | Example                     |
 | ------------- | ----------------------- | --------------------------- |
-| Variables | Named storage locations | `score = 85` |
-| Selection | Conditional execution | `if-elif-else` |
-| Iteration | Repeated execution | `for``while` loops |
-| Functions | Reusable code blocks | `def calculate(x):` |
-| Arrays | Indexed collections | `scores[0]` |
-| Searching | Finding elements | Linear search |
-| Sorting | Ordering elements | Bubble sort |
-| Databases | Organised data storage | Tables, keys, relationships |
-| SQL | Querying databases | `SELECT``WHERE``JOIN` |
-| Normalisation | Reducing redundancy | 1NF, 2NF, 3NF |
+| Variables     | Named storage locations | `score = 85`                |
+| Selection     | Conditional execution   | `if-elif-else`              |
+| Iteration     | Repeated execution      | `for``while` loops          |
+| Functions     | Reusable code blocks    | `def calculate(x):`         |
+| Arrays        | Indexed collections     | `scores[0]`                 |
+| Searching     | Finding elements        | Linear search               |
+| Sorting       | Ordering elements       | Bubble sort                 |
+| Databases     | Organised data storage  | Tables, keys, relationships |
+| SQL           | Querying databases      | `SELECT``WHERE``JOIN`       |
+| Normalisation | Reducing redundancy     | 1NF, 2NF, 3NF               |
 
 ---
 
 ## Exam Tips
 
 - In pseudocode questions, use consistent indentation and show the structure (IF/ENDIF,
- WHILE/ENDWHILE).
+  WHILE/ENDWHILE).
 - For trace tables, show every iteration and update variable values step by step.
 - In SQL questions, always specify the table name in SELECT and use WHERE to filter records.
 - Know the difference between WHERE (filters rows before grouping) and HAVING (filters groups after
- grouping).
+  grouping).
 - For normalisation questions, identify the primary key first, then check for partial and transitive
- dependencies.
+  dependencies.
 - In validation questions, be specific about the type of validation and give a concrete example.
 
 <details>
@@ -928,25 +919,47 @@ Password twice to confirm it was typed correctly).
 
 ## Common Pitfalls
 
-1. **Confusing SQL WHERE and HAVING clauses:** WHERE filters individual ROWS before grouping. HAVING filters GROUPS after a GROUP BY clause. Use WHERE for conditions on individual records (e.g., price > 100) and HAVING for conditions on aggregate values (e.g., COUNT(*) > 5). Applying aggregate functions in a WHERE clause will cause an error.
+1. **Confusing SQL WHERE and HAVING clauses:** WHERE filters individual ROWS before grouping. HAVING
+   filters GROUPS after a GROUP BY clause. Use WHERE for conditions on individual records (e.g.,
+   price > 100) and HAVING for conditions on aggregate values (e.g., COUNT(\*) > 5). Applying
+   aggregate functions in a WHERE clause will cause an error.
 
-2. **Off-by-one errors in loop conditions:** When using a loop to process n items, students frequently set the loop condition incorrectly (e.g., using &lt;= n instead of &lt; n, or starting the counter at 1 instead of 0). Always trace through the loop manually for a small example to verify the boundary conditions are correct.
+2. **Off-by-one errors in loop conditions:** When using a loop to process n items, students
+   frequently set the loop condition incorrectly (e.g., using &lt;= n instead of &lt; n, or starting
+   the counter at 1 instead of 0). Always trace through the loop manually for a small example to
+   verify the boundary conditions are correct.
 
-3. **Not normalising databases sufficiently:** A database table should not contain redundant data. If a customer's address appears in multiple order records, the design is not normalised. Each piece of data should appear in only one place. Violating normalisation leads to update anomalies, insertion anomalies, and deletion anomalies.
+3. **Not normalising databases sufficiently:** A database table should not contain redundant data.
+   If a customer's address appears in multiple order records, the design is not normalised. Each
+   piece of data should appear in only one place. Violating normalisation leads to update anomalies,
+   insertion anomalies, and deletion anomalies.
 
-4. **Confusing PRIMARY KEY with FOREIGN KEY:** A primary key uniquely identifies each record in its table and cannot be NULL. A foreign key is a field in one table that references the primary key of another table, establishing a relationship. A field can be both a primary key in its own table and a foreign key referencing another table.
+4. **Confusing PRIMARY KEY with FOREIGN KEY:** A primary key uniquely identifies each record in its
+   table and cannot be NULL. A foreign key is a field in one table that references the primary key
+   of another table, establishing a relationship. A field can be both a primary key in its own table
+   and a foreign key referencing another table.
 
-5. **Assignment vs comparison in IF statements:** Using `=` (assignment) instead of `==` (comparison) in an IF condition will assign the value rather than compare it. This is one of the most common logical errors in programming.
+5. **Assignment vs comparison in IF statements:** Using `=` (assignment) instead of `==`
+   (comparison) in an IF condition will assign the value rather than compare it. This is one of the
+   most common logical errors in programming.
 
-6. **Forgetting to initialise variables:** Using a variable before assigning it a value leads to undefined behaviour. Always initialise variables before use, especially counters and accumulators in loops.
+6. **Forgetting to initialise variables:** Using a variable before assigning it a value leads to
+   undefined behaviour. Always initialise variables before use, especially counters and accumulators
+   in loops.
 
-7. **Infinite WHILE loops:** If the loop condition never becomes false, the program will run indefinitely. Always ensure the loop variable is updated inside the loop body.
+7. **Infinite WHILE loops:** If the loop condition never becomes false, the program will run
+   indefinitely. Always ensure the loop variable is updated inside the loop body.
 
-8. **Array index out of bounds:** Accessing an index that does not exist (e.g., index 5 in an array of size 5, where valid indices are 0--4) causes a runtime error. Remember that arrays are 0-indexed in most languages.
+8. **Array index out of bounds:** Accessing an index that does not exist (e.g., index 5 in an array
+   of size 5, where valid indices are 0--4) causes a runtime error. Remember that arrays are
+   0-indexed in most languages.
 
-9. **DELETE without WHERE:** Executing `DELETE FROM Student` without a WHERE clause removes ALL records from the table. This is irreversible. Always double-check the WHERE clause.
+9. **DELETE without WHERE:** Executing `DELETE FROM Student` without a WHERE clause removes ALL
+   records from the table. This is irreversible. Always double-check the WHERE clause.
 
-10. **Confusing function and procedure:** A function returns a value; a procedure does not. In DSE ICT, this distinction is tested. If the algorithm needs to produce a result, use a function with a RETURN statement.
+10. **Confusing function and procedure:** A function returns a value; a procedure does not. In DSE
+    ICT, this distinction is tested. If the algorithm needs to produce a result, use a function with
+    a RETURN statement.
 
 ---
 
@@ -977,23 +990,25 @@ Answer:
 
 (a)
 
-| Iteration | B | result | B > 0 |
+| Iteration | B   | result | B > 0 |
 | --------- | --- | ------ | ----- |
-| Initial | 3 | 5 | True |
-| 1 | 2 | 10 | True |
-| 2 | 1 | 15 | True |
-| 3 | 0 | 20 | False |
+| Initial   | 3   | 5      | True  |
+| 1         | 2   | 10     | True  |
+| 2         | 1   | 15     | True  |
+| 3         | 0   | 20     | False |
 
 Output: `result = 20`
 
-(b) This algorithm calculates `A * (B + 1)`. With A=5, B=3, it computes 5 * 4 = 20. Alternatively, it can be described as multiplying A by (initial B + 1).
+(b) This algorithm calculates `A * (B + 1)`. With A=5, B=3, it computes 5 \* 4 = 20. Alternatively,
+it can be described as multiplying A by (initial B + 1).
 
 </details>
 
 <details>
 <summary>Question 2: Sorting Algorithm</summary>
 
-(a) Write pseudocode for a bubble sort algorithm that sorts an array of N numbers in ascending order.
+(a) Write pseudocode for a bubble sort algorithm that sorts an array of N numbers in ascending
+order.
 
 (b) Trace the first two passes of the bubble sort on the array: `[5, 3, 8, 1, 4]`.
 
@@ -1026,22 +1041,22 @@ END
 
 **Pass 1 (i=0):**
 
-| j | Compare | Action | Array after swap |
-| - | ------------- | ------------- | -------------------- |
-| 0 | 5 > 3 | Swap | [3, 5, 8, 1, 4] |
-| 1 | 5 > 8 | No swap | [3, 5, 8, 1, 4] |
-| 2 | 8 > 1 | Swap | [3, 5, 1, 8, 4] |
-| 3 | 8 > 4 | Swap | [3, 5, 1, 4, 8] |
+| j   | Compare | Action  | Array after swap |
+| --- | ------- | ------- | ---------------- |
+| 0   | 5 > 3   | Swap    | [3, 5, 8, 1, 4]  |
+| 1   | 5 > 8   | No swap | [3, 5, 8, 1, 4]  |
+| 2   | 8 > 1   | Swap    | [3, 5, 1, 8, 4]  |
+| 3   | 8 > 4   | Swap    | [3, 5, 1, 4, 8]  |
 
 After Pass 1: `[3, 5, 1, 4, 8]` (8 is in final position)
 
 **Pass 2 (i=1):**
 
-| j | Compare | Action | Array after swap |
-| - | ------------- | ------------- | -------------------- |
-| 0 | 3 > 5 | No swap | [3, 5, 1, 4, 8] |
-| 1 | 5 > 1 | Swap | [3, 1, 5, 4, 8] |
-| 2 | 5 > 4 | Swap | [3, 1, 4, 5, 8] |
+| j   | Compare | Action  | Array after swap |
+| --- | ------- | ------- | ---------------- |
+| 0   | 3 > 5   | No swap | [3, 5, 1, 4, 8]  |
+| 1   | 5 > 1   | Swap    | [3, 1, 5, 4, 8]  |
+| 2   | 5 > 4   | Swap    | [3, 1, 4, 5, 8]  |
 
 After Pass 2: `[3, 1, 4, 5, 8]` (5 and 8 are in final positions)
 
@@ -1054,19 +1069,21 @@ A company records orders in a single table:
 
 | OrderID | CustomerName | CustomerAddress | ProductCode | ProductName | Quantity | UnitPrice |
 | ------- | ------------ | --------------- | ----------- | ----------- | -------- | --------- |
-| 001 | Chan | 10 Main St | P01 | Keyboard | 2 | 200 |
-| 002 | Lee | 5 Oak Rd | P02 | Mouse | 1 | 150 |
-| 003 | Chan | 10 Main St | P02 | Mouse | 3 | 150 |
+| 001     | Chan         | 10 Main St      | P01         | Keyboard    | 2        | 200       |
+| 002     | Lee          | 5 Oak Rd        | P02         | Mouse       | 1        | 150       |
+| 003     | Chan         | 10 Main St      | P02         | Mouse       | 3        | 150       |
 
 (a) Identify the redundancies in this table.
 
-(b) Convert this table to Third Normal Form (3NF). Show all tables with primary keys and foreign keys.
+(b) Convert this table to Third Normal Form (3NF). Show all tables with primary keys and foreign
+keys.
 
 (c) Explain why the normalised design is better than the original.
 
 Answer:
 
 (a) Redundancies:
+
 - CustomerName and CustomerAddress are repeated for Chan (appears in OrderID 001 and 003).
 - ProductName and UnitPrice are repeated for P02/Mouse (appears in OrderID 002 and 003).
 - If Chan's address changes, multiple records must be updated (update anomaly).
@@ -1077,33 +1094,35 @@ Answer:
 
 | CustomerID | CustomerName | CustomerAddress |
 | ---------- | ------------ | --------------- |
-| C01 | Chan | 10 Main St |
-| C02 | Lee | 5 Oak Rd |
+| C01        | Chan         | 10 Main St      |
+| C02        | Lee          | 5 Oak Rd        |
 
 **Product** (ProductCode PK, ProductName, UnitPrice)
 
 | ProductCode | ProductName | UnitPrice |
 | ----------- | ----------- | --------- |
-| P01 | Keyboard | 200 |
-| P02 | Mouse | 150 |
+| P01         | Keyboard    | 200       |
+| P02         | Mouse       | 150       |
 
 **Order** (OrderID PK, CustomerID FK, OrderDate)
 
 | OrderID | CustomerID FK |
 | ------- | ------------- |
-| 001 | C01 |
-| 002 | C02 |
-| 003 | C01 |
+| 001     | C01           |
+| 002     | C02           |
+| 003     | C01           |
 
 **OrderLine** (OrderID FK, ProductCode FK, Quantity) -- composite PK
 
 | OrderID FK | ProductCode FK | Quantity |
 | ---------- | -------------- | -------- |
-| 001 | P01 | 2 |
-| 002 | P02 | 1 |
-| 003 | P02 | 3 |
+| 001        | P01            | 2        |
+| 002        | P02            | 1        |
+| 003        | P02            | 3        |
 
-(c) The normalised design eliminates data redundancy (customer and product details stored once), improves data integrity (no update, insertion, or deletion anomalies), and makes queries more flexible (e.g., finding all orders by a customer is done via the CustomerID foreign key).
+(c) The normalised design eliminates data redundancy (customer and product details stored once),
+improves data integrity (no update, insertion, or deletion anomalies), and makes queries more
+flexible (e.g., finding all orders by a customer is done via the CustomerID foreign key).
 
 </details>
 
@@ -1125,7 +1144,7 @@ Write SQL queries for:
 
 (c) Find the customer name and product name for all orders.
 
-(d) Find the total revenue (Quantity * UnitPrice) for each order.
+(d) Find the total revenue (Quantity \* UnitPrice) for each order.
 
 Answer:
 
@@ -1172,7 +1191,8 @@ GROUP BY Order.OrderID;
 
 (a) Write a function in pseudocode that takes an array of numbers and returns the average.
 
-(b) Write a procedure that takes a student's score and prints the corresponding grade (A: &gt;= 80, B: &gt;= 60, C: &gt;= 40, F: &lt; 40).
+(b) Write a procedure that takes a student's score and prints the corresponding grade (A: &gt;= 80,
+B: &gt;= 60, C: &gt;= 40, F: &lt; 40).
 
 (c) Explain the difference between a function and a procedure.
 
@@ -1206,7 +1226,11 @@ PROCEDURE printGrade(score)
 END PROCEDURE
 ```
 
-(c) A **function** performs a task and returns a value to the calling code (using a RETURN statement). It can be used within expressions (e.g., `x = calculateAverage(arr, 5)`). A **procedure** performs a task but does not return a value. It is called as a standalone statement (e.g., `printGrade(75)`). The key distinction in DSE ICT is whether the subprogram produces a return value.
+(c) A **function** performs a task and returns a value to the calling code (using a RETURN
+statement). It can be used within expressions (e.g., `x = calculateAverage(arr, 5)`). A
+**procedure** performs a task but does not return a value. It is called as a standalone statement
+(e.g., `printGrade(75)`). The key distinction in DSE ICT is whether the subprogram produces a return
+value.
 
 </details>
 
@@ -1255,7 +1279,8 @@ BEGIN
 END
 ```
 
-This program reads scores into an array while accumulating the total. It then computes the average, iterates through the array again to count scores above average, and outputs both results.
+This program reads scores into an array while accumulating the total. It then computes the average,
+iterates through the array again to count scores above average, and outputs both results.
 
 </details>
 
@@ -1269,17 +1294,27 @@ This program reads scores into an array while accumulating the total. It then co
 
 :::
 
+:::danger Common Pitfalls
 
-:::danger
-Common Pitfalls
+- **Confusing SQL WHERE and HAVING clauses:** WHERE filters individual ROWS before grouping. HAVING
+  filters GROUPS after a GROUP BY clause. Use WHERE for conditions on individual records (e.g.,
+  price &gt; 100) and HAVING for conditions on aggregate values (e.g., COUNT(\*) &gt; 5). Applying
+  aggregate functions in a WHERE clause will cause an error.
 
-- **Confusing SQL WHERE and HAVING clauses:** WHERE filters individual ROWS before grouping. HAVING filters GROUPS after a GROUP BY clause. Use WHERE for conditions on individual records (e.g., price &gt; 100) and HAVING for conditions on aggregate values (e.g., COUNT(*) &gt; 5). Applying aggregate functions in a WHERE clause will cause an error.
+- **Off-by-one errors in loop conditions:** When using a loop to process n items, students
+  frequently set the loop condition incorrectly (e.g., using &lt;= n instead of &lt; n, or starting
+  the counter at 1 instead of 0). Always trace through the loop manually for a small example to
+  verify the boundary conditions are correct.
 
-- **Off-by-one errors in loop conditions:** When using a loop to process n items, students frequently set the loop condition incorrectly (e.g., using &lt;= n instead of &lt; n, or starting the counter at 1 instead of 0). Always trace through the loop manually for a small example to verify the boundary conditions are correct.
+- **Not normalising databases sufficiently:** A database table should not contain redundant data. If
+  a customer's address appears in multiple order records, the design is not normalised. Each piece
+  of data should appear in only one place. Violating normalisation leads to update anomalies,
+  insertion anomalies, and deletion anomalies.
 
-- **Not normalising databases sufficiently:** A database table should not contain redundant data. If a customer's address appears in multiple order records, the design is not normalised. Each piece of data should appear in only one place. Violating normalisation leads to update anomalies, insertion anomalies, and deletion anomalies.
-
-- **Confusing PRIMARY KEY with FOREIGN KEY:** A primary key uniquely identifies each record in its table and cannot be NULL. A foreign key is a field in one table that references the primary key of another table, establishing a relationship. A field can be both a primary key in its own table and a foreign key referencing another table.
+- **Confusing PRIMARY KEY with FOREIGN KEY:** A primary key uniquely identifies each record in its
+  table and cannot be NULL. A foreign key is a field in one table that references the primary key of
+  another table, establishing a relationship. A field can be both a primary key in its own table and
+  a foreign key referencing another table.
 
 :::
 

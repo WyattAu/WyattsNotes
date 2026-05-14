@@ -1,12 +1,15 @@
 ---
 title: Collections Framework
-description: "Collections Framework — Architecture Overview; The Iterable Interface; List Implementations; ArrayList with worked examples and exam-style questions."
+description:
+  'Collections Framework — Architecture Overview; The Iterable Interface; List Implementations;
+  ArrayList with worked examples and exam-style questions.'
 date: 2025-06-05T13:00:00.000Z
 tags: ['java']
 categories: ['java']
 slug: collections-framework
 sidebar_position: 1
 ---
+
 ## Architecture Overview
 
 The Java Collections Framework (JCF) is a unified architecture for representing and manipulating
@@ -56,14 +59,12 @@ graph TD
     style Deque fill:#d5f5e3
 ```
 
-:::info
-`Map` is not a subtype of `Collection` because it models a mapping from keys to values
+:::info `Map` is not a subtype of `Collection` because it models a mapping from keys to values
 Rather than a collection of elements. Josh Bloch, the original framework designer, explained that
 `Map` was excluded from the `Collection` hierarchy because the two abstractions are fundamentally
 Different: collections are groups of elements, while maps are groups of key-value pairs. Forcing
 `Map` into the `Collection` hierarchy would have required either contrived semantics or a separate
-Parallel hierarchy for map entries.
-:::
+Parallel hierarchy for map entries. :::
 
 ## The Iterable Interface
 
@@ -182,16 +183,16 @@ private void add(E e, Object[] elementData, int s) {
 
 #### Time Complexity
 
-| Operation | Average | Worst Case | Notes |
+| Operation             | Average        | Worst Case | Notes                     |
 | --------------------- | -------------- | ---------- | ------------------------- |
-| `get(index)` | O(1) | O(1) | Direct array index |
-| `set(index, element)` | O(1) | O(1) | Direct array index |
-| `add(element)` | O(1) amortized | O(n) | O(n) when resize needed |
-| `add(index, element)` | O(n) | O(n) | Must shift elements right |
-| `remove(index)` | O(n) | O(n) | Must shift elements left |
-| `remove(Object)` | O(n) | O(n) | Linear scan + shift |
-| `contains(Object)` | O(n) | O(n) | Linear scan |
-| `indexOf(Object)` | O(n) | O(n) | Linear scan |
+| `get(index)`          | O(1)           | O(1)       | Direct array index        |
+| `set(index, element)` | O(1)           | O(1)       | Direct array index        |
+| `add(element)`        | O(1) amortized | O(n)       | O(n) when resize needed   |
+| `add(index, element)` | O(n)           | O(n)       | Must shift elements right |
+| `remove(index)`       | O(n)           | O(n)       | Must shift elements left  |
+| `remove(Object)`      | O(n)           | O(n)       | Linear scan + shift       |
+| `contains(Object)`    | O(n)           | O(n)       | Linear scan               |
+| `indexOf(Object)`     | O(n)           | O(n)       | Linear scan               |
 
 ### LinkedList
 
@@ -221,14 +222,14 @@ public class LinkedList<E> extends AbstractSequentialList<E>
 
 #### Time Complexity
 
-| Operation | Average | Worst Case | Notes |
+| Operation                        | Average | Worst Case | Notes                           |
 | -------------------------------- | ------- | ---------- | ------------------------------- |
-| `get(index)` | O(n) | O(n) | Must traverse from head or tail |
-| `add(element)` | O(1) | O(1) | Appends to tail |
-| `add(index, element)` | O(n) | O(n) | Must traverse to index |
-| `remove(index)` | O(n) | O(n) | Must traverse to index |
-| `addFirst()` / `addLast()` | O(1) | O(1) | Direct pointer manipulation |
-| `removeFirst()` / `removeLast()` | O(1) | O(1) | Direct pointer manipulation |
+| `get(index)`                     | O(n)    | O(n)       | Must traverse from head or tail |
+| `add(element)`                   | O(1)    | O(1)       | Appends to tail                 |
+| `add(index, element)`            | O(n)    | O(n)       | Must traverse to index          |
+| `remove(index)`                  | O(n)    | O(n)       | Must traverse to index          |
+| `addFirst()` / `addLast()`       | O(1)    | O(1)       | Direct pointer manipulation     |
+| `removeFirst()` / `removeLast()` | O(1)    | O(1)       | Direct pointer manipulation     |
 
 #### ArrayList vs LinkedList: When to Use Each
 
@@ -253,15 +254,13 @@ queue.addLast("tail");
 String head = queue.removeFirst();  // O(1)
 ```
 
-:::warning
-In practice, `ArrayList` is almost always the better choice. The O(1) random access and
+:::warning In practice, `ArrayList` is almost always the better choice. The O(1) random access and
 Cache-friendly contiguous memory layout make `ArrayList` faster for nearly all real-world workloads,
 Even those with frequent insertions. The O(n) cost of shifting elements in `ArrayList` is offset by
 The fact that `System.arraycopy()` is a native, highly optimized operation that moves memory in
 Bulk. Furthermore, each `LinkedList` node requires an extra object allocation (16+ bytes of overhead
 For the object header, plus three reference fields), so a `LinkedList` with N elements uses
-Significantly more memory than an `ArrayList` with the same elements.
-:::
+Significantly more memory than an `ArrayList` with the same elements. :::
 
 `ArrayList` also implements the `RandomAccess` marker interface, which signals that it supports fast
 Random access. Generic algorithms in `Collections` check for this interface to choose between
@@ -319,9 +318,9 @@ Degrades to O(n) in the worst case if all elements hash to the same bucket.
 
 `LinkedHashSet<E>` extends `HashSet` but overrides the constructor to create a `LinkedHashMap`
 Instead of a `HashMap`. It maintains a doubly-linked list running through all of its entries, which
-Defines the **insertion order**. Unlike `LinkedHashMap``LinkedHashSet` does not support
-Access-order mode — iteration order always matches insertion order. This is the primary reason to
-Choose `LinkedHashSet` over `HashSet`.
+Defines the **insertion order**. Unlike `LinkedHashMap``LinkedHashSet` does not support Access-order
+mode — iteration order always matches insertion order. This is the primary reason to Choose
+`LinkedHashSet` over `HashSet`.
 
 ```java
 public class LinkedHashSet<E> extends HashSet<E>
@@ -388,22 +387,20 @@ EnumSet<Day> all = EnumSet.allOf(Day.class);
 // weekdays = 0b0011111 = 31
 ```
 
-:::info
-For enums with 64 or fewer constants, `EnumSet` uses a single `long` as its backing
+:::info For enums with 64 or fewer constants, `EnumSet` uses a single `long` as its backing
 Representation, making the entire set occupy just 16 bytes (object header + long field). For enums
-With more than 64 constants, it uses a `long[]`. All bulk operations (`containsAll``retainAll`
-Etc.) are implemented as bitwise AND, OR, and NOT operations on the bit vectors.
-:::
+With more than 64 constants, it uses a `long[]`. All bulk operations (`containsAll``retainAll` Etc.)
+are implemented as bitwise AND, OR, and NOT operations on the bit vectors. :::
 
 ### Set Implementation Comparison
 
-| Feature | HashSet | LinkedHashSet | TreeSet | EnumSet |
+| Feature                       | HashSet     | LinkedHashSet   | TreeSet                        | EnumSet                |
 | ----------------------------- | ----------- | --------------- | ------------------------------ | ---------------------- |
-| Backing structure | HashMap | LinkedHashMap | TreeMap (red-black tree) | Bit vector |
-| Ordering | None | Insertion order | Sorted (natural or Comparator) | Enum declaration order |
-| Null elements | One allowed | One allowed | Not allowed | Not allowed |
-| `add` / `contains` / `remove` | O(1) avg | O(1) avg | O(log n) | O(1) |
-| Element type | Any | Any | Comparable or Comparator | Enum only |
+| Backing structure             | HashMap     | LinkedHashMap   | TreeMap (red-black tree)       | Bit vector             |
+| Ordering                      | None        | Insertion order | Sorted (natural or Comparator) | Enum declaration order |
+| Null elements                 | One allowed | One allowed     | Not allowed                    | Not allowed            |
+| `add` / `contains` / `remove` | O(1) avg    | O(1) avg        | O(log n)                       | O(1)                   |
+| Element type                  | Any         | Any             | Comparable or Comparator       | Enum only              |
 
 ## Map Implementations
 
@@ -416,8 +413,8 @@ For `get` and `put`But does not guarantee any ordering of its entries.
 
 A `HashMap` is built on an array of buckets (called `table`). Each bucket is the head of a linked
 List (or, since Java 8, a balanced tree when a bucket's chain exceeds a threshold). The bucket index
-For a key is determined by `hash(key) & (table.length - 1)`Where `table.length` is always a power
-Of two.
+For a key is determined by `hash(key) & (table.length - 1)`Where `table.length` is always a power Of
+two.
 
 ```mermaid
 graph TD
@@ -520,20 +517,18 @@ final V putVal(int hash, K key, V value, boolean onlyIfAbsent, boolean evict) {
 }
 ```
 
-:::warning
-`treeifyBin()` does not immediately convert to a tree. It first checks whether the table
+:::warning `treeifyBin()` does not immediately convert to a tree. It first checks whether the table
 Has fewer than `MIN_TREEIFY_CAPACITY` (64) entries. If so, it prefers to resize the table instead,
 Because a larger table distributes keys across more buckets and may resolve the collision without
 The overhead of tree nodes. Only when the table already has at least 64 entries does it actually
-Convert the linked list to a red-black tree.
-:::
+Convert the linked list to a red-black tree. :::
 
 #### Load Factor and Capacity
 
 The **load factor** (default 0.75) determines when the table is resized. When
-`size > capacity * loadFactor`The table is doubled in size and all entries are rehashed into the
-New buckets. A load factor of 0.75 balances time and space costs -- it provides a good tradeoff
-Between collision probability and memory usage according to the Poisson distribution analysis in the
+`size > capacity * loadFactor`The table is doubled in size and all entries are rehashed into the New
+buckets. A load factor of 0.75 balances time and space costs -- it provides a good tradeoff Between
+collision probability and memory usage according to the Poisson distribution analysis in the
 Original `HashMap` documentation.
 
 ```java
@@ -557,7 +552,7 @@ A red-black tree is a self-balancing binary search tree with the following invar
 3. Every leaf (null node) is black.
 4. If a node is red, both its children are black (no two consecutive red nodes).
 5. Every path from a node to its descendant null nodes contains the same number of black nodes
- (black-height is uniform).
+   (black-height is uniform).
 
 These invariants guarantee that the longest path from root to any leaf is at most twice the length
 Of the shortest path, which ensures O(log n) height and therefore O(log n) operations.
@@ -616,12 +611,10 @@ private void fixAfterInsertion(Entry<K,V> x) {
 }
 ```
 
-:::info
-The rotation operation is the fundamental tree restructuring primitive. A left rotation at
+:::info The rotation operation is the fundamental tree restructuring primitive. A left rotation at
 Node X makes X's right child Y the new root of the subtree, with X becoming Y's left child and Y's
 Former left child becoming X's right child. Rotations preserve the binary search tree property
-(in-order traversal yields sorted order) while changing the tree's shape to reduce height.
-:::
+(in-order traversal yields sorted order) while changing the tree's shape to reduce height. :::
 
 ```java
 // Range operations are efficient in TreeMap because they leverage the sorted structure
@@ -684,27 +677,25 @@ public class LRUCache<K, V> extends LinkedHashMap<K, V> {
 }
 ```
 
-:::warning
-`LinkedHashMap` with `accessOrder = true` is **not thread-safe**. Using it as an LRU
+:::warning `LinkedHashMap` with `accessOrder = true` is **not thread-safe**. Using it as an LRU
 Cache in a concurrent environment requires external synchronization or a wrapper like
 `Collections.synchronizedMap()`. For high-concurrency LRU caches, consider `Caffeine` or
-`Guava Cache` instead.
-:::
+`Guava Cache` instead. :::
 
 ### ConcurrentHashMap
 
 `ConcurrentHashMap<K,V>` is a thread-safe Map designed for high concurrency. Unlike `Hashtable` or
-`Collections.synchronizedMap()`Which use a single lock for the entire map, `ConcurrentHashMap`
-Uses fine-grained locking to allow concurrent reads and writes.
+`Collections.synchronizedMap()`Which use a single lock for the entire map, `ConcurrentHashMap` Uses
+fine-grained locking to allow concurrent reads and writes.
 
 #### Evolution
 
 - **Java 7**: Segment-based locking. The map is divided into segments (default 16), each with its
- own `ReentrantLock`. Concurrent writes to different segments do not block each other. Reads are
- lock-free.
+  own `ReentrantLock`. Concurrent writes to different segments do not block each other. Reads are
+  lock-free.
 - **Java 8+**: The segment-based design was replaced with a flat array of nodes. Locking is done at
- the individual bucket level using CAS (compare-and-swap) and `synchronized` on the first node of a
- bucket. This eliminates the fixed segment count limitation and provides better scalability.
+  the individual bucket level using CAS (compare-and-swap) and `synchronized` on the first node of a
+  bucket. This eliminates the fixed segment count limitation and provides better scalability.
 
 ```java
 // Basic usage -- thread-safe without external synchronization
@@ -721,26 +712,24 @@ counts.putIfAbsent("key", new AtomicInteger(0));  // atomic
 // if (!map.containsKey("key")) { map.put("key", value); }  // WRONG in concurrent code
 ```
 
-:::danger
-`ConcurrentHashMap` does not allow null keys or null values. This is a deliberate design
+:::danger `ConcurrentHashMap` does not allow null keys or null values. This is a deliberate design
 Choice. The reason is that the `containsKey()` and `get()` methods must be unambiguous in a
 Concurrent setting. If null values were allowed, `get(key)` returning `null` could mean either "the
 Key is absent" or "the key maps to null." In a single-threaded map, you can disambiguate with
-`containsKey()`But in a concurrent map, the state could change between `get()` and
-`containsKey()`. By prohibiting null values, `ConcurrentHashMap` ensures that `get()` returning
-`null` unambiguously means "the key is absent."
-:::
+`containsKey()`But in a concurrent map, the state could change between `get()` and `containsKey()`.
+By prohibiting null values, `ConcurrentHashMap` ensures that `get()` returning `null` unambiguously
+means "the key is absent." :::
 
 ### Map Implementation Comparison
 
-| Feature | HashMap | LinkedHashMap | TreeMap | ConcurrentHashMap |
+| Feature            | HashMap                    | LinkedHashMap             | TreeMap        | ConcurrentHashMap                |
 | ------------------ | -------------------------- | ------------------------- | -------------- | -------------------------------- |
-| Backing structure | Array + linked list / tree | HashMap + linked list | Red-black tree | Array + linked list / tree + CAS |
-| Ordering | None | Insertion or access order | Sorted by key | None |
-| Null keys/values | One null key, null values | One null key, null values | Not allowed | Not allowed |
-| `get` / `put` | O(1) avg | O(1) avg | O(log n) | O(1) avg |
-| Thread-safe | No | No | No | Yes |
-| Fail-fast iterator | Yes | Yes | Yes | Weakly consistent |
+| Backing structure  | Array + linked list / tree | HashMap + linked list     | Red-black tree | Array + linked list / tree + CAS |
+| Ordering           | None                       | Insertion or access order | Sorted by key  | None                             |
+| Null keys/values   | One null key, null values  | One null key, null values | Not allowed    | Not allowed                      |
+| `get` / `put`      | O(1) avg                   | O(1) avg                  | O(log n)       | O(1) avg                         |
+| Thread-safe        | No                         | No                        | No             | Yes                              |
+| Fail-fast iterator | Yes                        | Yes                       | Yes            | Weakly consistent                |
 
 ## Iterator and ListIterator
 
@@ -777,12 +766,10 @@ while (it.hasNext()) {
 // names is now [Alice, Charlie]
 ```
 
-:::danger
-Never call `Collection.remove()` during iteration. This modifies the collection's
+:::danger Never call `Collection.remove()` during iteration. This modifies the collection's
 Structure while the iterator is active and will throw `ConcurrentModificationException`. Always use
 `Iterator.remove()` instead, which updates the iterator's internal state and the expected
-Modification count atomically.
-:::
+Modification count atomically. :::
 
 ### ListIterator
 
@@ -836,12 +823,10 @@ private class Itr implements Iterator<E> {
 }
 ```
 
-:::warning
-Fail-fast behavior is on a best-effort basis. It cannot be guaranteed because the check
+:::warning Fail-fast behavior is on a best-effort basis. It cannot be guaranteed because the check
 Happens in the iterator, not via synchronization. The exception is thrown when the inconsistency is
 Detected, not when it occurs. In a concurrent setting without external synchronization, a fail-fast
-Exception should be used to **detect bugs**, not as a correctness mechanism.
-:::
+Exception should be used to **detect bugs**, not as a correctness mechanism. :::
 
 ### Fail-Safe Iterators
 
@@ -947,13 +932,11 @@ mixed.stream().sorted(nullSafe).forEach(System.out::println);
 // null, Alice, Charlie -- null comes first
 ```
 
-:::info
-The difference is one of **where** the comparison logic lives. `Comparable` is implemented
+:::info The difference is one of **where** the comparison logic lives. `Comparable` is implemented
 By the class being compared (one fixed natural ordering). `Comparator` is a separate object that
 Defines a comparison strategy (many orderings for the same type). Use `Comparable` for the most
 Natural, obvious ordering. Use `Comparator` when you need alternative orderings or when you cannot
-Modify the class to implement `Comparable`.
-:::
+Modify the class to implement `Comparable`. :::
 
 Both `compareTo()` and `compare()` must satisfy the same contract as `equals()`:
 
@@ -961,15 +944,13 @@ Both `compareTo()` and `compare()` must satisfy the same contract as `equals()`:
 2. **Transitive**: if compare(x, y) > 0 and compare(y, z) > 0, then compare(x, z) > 0
 3. **Consistent**: repeated calls with the same arguments return the same result
 4. **compare(x, y) == 0 implies sgn(compare(x, z)) == sgn(compare(y, z))** (consistency with equals
- is recommended but not required)
+   is recommended but not required)
 
-:::warning
-The recommendation that `compare(x, y) == 0` should imply `x.equals(y)` is important for
+:::warning The recommendation that `compare(x, y) == 0` should imply `x.equals(y)` is important for
 Sorted collections. `TreeSet` and `TreeMap` use the comparator (or `compareTo`) to determine
-Equality, not `equals()`. If the comparator is inconsistent with `equals()`The set will violate
-The `Set` contract (it may contain elements that are equal according to `equals()` but have
-Different comparison results).
-:::
+Equality, not `equals()`. If the comparator is inconsistent with `equals()`The set will violate The
+`Set` contract (it may contain elements that are equal according to `equals()` but have Different
+comparison results). :::
 
 ## Collections Utility Class
 
@@ -994,11 +975,9 @@ Collections.sort(numbers, Comparator.naturalOrder());
 Collections.binarySearch(numbers, 3, Comparator.naturalOrder());
 ```
 
-:::danger
-`Collections.binarySearch()` returns undefined results if the list is not sorted according
+:::danger `Collections.binarySearch()` returns undefined results if the list is not sorted according
 To the same ordering used for the search. Passing a list sorted by natural ordering but searching
-With a custom `Comparator` will produce incorrect results without any exception.
-:::
+With a custom `Comparator` will produce incorrect results without any exception. :::
 
 ### Unmodifiable Wrappers
 
@@ -1030,12 +1009,10 @@ synchronized (syncList) {
 }
 ```
 
-:::warning
-Synchronized wrappers are **not** a substitute for `ConcurrentHashMap` in
+:::warning Synchronized wrappers are **not** a substitute for `ConcurrentHashMap` in
 High-concurrency scenarios. Every method call acquires the monitor lock on the wrapper object, so
 Even reads block each other. For read-heavy workloads, `ConcurrentHashMap` with its lock-free reads
-And fine-grained write locking provides far better throughput.
-:::
+And fine-grained write locking provides far better throughput. :::
 
 ### Other Utility Methods
 
@@ -1126,17 +1103,15 @@ Map<String, Integer> fromEntries = Map.ofEntries(
 );
 ```
 
-:::danger
-`List.of()``Set.of()`And `Map.of()` do **not** allow null elements or null
-Keys/values. Passing null throws `NullPointerException`. This is a deliberate design choice: nulls
-Are a common source of bugs, and immutable collections that cannot contain nulls are easier to
-Reason about. Use `Collections.singletonList(null)` or a mutable collection if nulls are required.
-:::
+:::danger `List.of()``Set.of()`And `Map.of()` do **not** allow null elements or null Keys/values.
+Passing null throws `NullPointerException`. This is a deliberate design choice: nulls Are a common
+source of bugs, and immutable collections that cannot contain nulls are easier to Reason about. Use
+`Collections.singletonList(null)` or a mutable collection if nulls are required. :::
 
 The internal implementation uses compact field-based storage for small sizes. For example,
-`List.of("A", "B")` creates an instance of `ListN` (or for very small lists, `List12``ListN1`
-Etc.) that stores elements in `final` fields rather than in an array. This reduces memory overhead
-And eliminates the indirection of array-based storage.
+`List.of("A", "B")` creates an instance of `ListN` (or for very small lists, `List12``ListN1` Etc.)
+that stores elements in `final` fields rather than in an array. This reduces memory overhead And
+eliminates the indirection of array-based storage.
 
 ## Null Handling in Collections
 
@@ -1145,21 +1120,21 @@ To avoiding `NullPointerException` at unexpected times.
 
 ### Summary Table
 
-| Collection | Null keys | Null values | Notes |
+| Collection          | Null keys                   | Null values                  | Notes                                                    |
 | ------------------- | --------------------------- | ---------------------------- | -------------------------------------------------------- |
-| `ArrayList` | N/A | Allowed | Allows multiple null elements |
-| `LinkedList` | N/A | Allowed | Allows multiple null elements |
-| `HashSet` | N/A | One null allowed | Uses `null.hashCode()` = 0 |
-| `LinkedHashSet` | N/A | One null allowed | Same as HashSet |
-| `TreeSet` | N/A | Not allowed | `compareTo(null)` throws NPE |
-| `EnumSet` | N/A | Not allowed | Enums cannot be null |
-| `HashMap` | One null key allowed | Multiple null values allowed | Null key stored at bucket 0 |
-| `LinkedHashMap` | One null key allowed | Multiple null values allowed | Same as HashMap |
-| `TreeMap` | Not allowed (natural order) | Not allowed | Comparator must handle null; natural ordering throws NPE |
-| `ConcurrentHashMap` | Not allowed | Not allowed | Ambiguity between absent and null-mapped |
-| `List.of()` | N/A | Not allowed | Throws NPE |
-| `Set.of()` | N/A | Not allowed | Throws NPE |
-| `Map.of()` | Not allowed | Not allowed | Throws NPE |
+| `ArrayList`         | N/A                         | Allowed                      | Allows multiple null elements                            |
+| `LinkedList`        | N/A                         | Allowed                      | Allows multiple null elements                            |
+| `HashSet`           | N/A                         | One null allowed             | Uses `null.hashCode()` = 0                               |
+| `LinkedHashSet`     | N/A                         | One null allowed             | Same as HashSet                                          |
+| `TreeSet`           | N/A                         | Not allowed                  | `compareTo(null)` throws NPE                             |
+| `EnumSet`           | N/A                         | Not allowed                  | Enums cannot be null                                     |
+| `HashMap`           | One null key allowed        | Multiple null values allowed | Null key stored at bucket 0                              |
+| `LinkedHashMap`     | One null key allowed        | Multiple null values allowed | Same as HashMap                                          |
+| `TreeMap`           | Not allowed (natural order) | Not allowed                  | Comparator must handle null; natural ordering throws NPE |
+| `ConcurrentHashMap` | Not allowed                 | Not allowed                  | Ambiguity between absent and null-mapped                 |
+| `List.of()`         | N/A                         | Not allowed                  | Throws NPE                                               |
+| `Set.of()`          | N/A                         | Not allowed                  | Throws NPE                                               |
+| `Map.of()`          | Not allowed                 | Not allowed                  | Throws NPE                                               |
 
 ### How HashMap Handles the Null Key
 
@@ -1191,29 +1166,28 @@ System.out.println(nullSafeTree);  // [null, Alice]
 ## Summary of Design Principles
 
 1. **The interface-implementation separation enables polymorphism.** Code written against `List<E>`
- works with `ArrayList``LinkedList``CopyOnWriteArrayList`Or any future implementation
- without modification. Always declare variables with the interface type, not the implementation
- type.
+   works with `ArrayList``LinkedList``CopyOnWriteArrayList`Or any future implementation without
+   modification. Always declare variables with the interface type, not the implementation type.
 
 2. **ArrayList is almost always the right default choice.** Its O(1) random access, cache-friendly
- contiguous memory, and highly optimized `System.arraycopy()` for shifts make it faster than
- `LinkedList` for virtually all workloads. Use `LinkedList` only when you genuinely need frequent
- Deque operations or iterator-positioned insertions.
+   contiguous memory, and highly optimized `System.arraycopy()` for shifts make it faster than
+   `LinkedList` for virtually all workloads. Use `LinkedList` only when you genuinely need frequent
+   Deque operations or iterator-positioned insertions.
 
 3. **HashMap's secondary hash function is critical for performance.** Without `h ^ (h >>> 16)`Keys
- with similar lower bits (common for `Integer``Long`And sequential IDs) would cluster in the
- same bucket. The treeification threshold (8) ensures that even pathological collision scenarios
- degrade only to O(log n) rather than O(n).
+   with similar lower bits (common for `Integer``Long`And sequential IDs) would cluster in the same
+   bucket. The treeification threshold (8) ensures that even pathological collision scenarios
+   degrade only to O(log n) rather than O(n).
 
 4. **Fail-fast iterators are a debugging aid, not a concurrency mechanism.** They detect bugs
- (modifying a collection during iteration) in single-threaded code. For actual concurrent access,
- use `java.util.concurrent` collections, which provide weakly consistent iterators and thread-safe
- operations.
+   (modifying a collection during iteration) in single-threaded code. For actual concurrent access,
+   use `java.util.concurrent` collections, which provide weakly consistent iterators and thread-safe
+   operations.
 
 5. **Prefer immutable collections when possible.** `List.of()``Set.of()`And `Map.of()` create
- compact, unmodifiable collections with lower memory overhead than their mutable counterparts.
- Immutability eliminates entire classes of bugs (shared mutable state, concurrent modification)
- and enables safe sharing across threads without synchronization.
+   compact, unmodifiable collections with lower memory overhead than their mutable counterparts.
+   Immutability eliminates entire classes of bugs (shared mutable state, concurrent modification)
+   and enables safe sharing across threads without synchronization.
 
 ## Common Pitfalls
 

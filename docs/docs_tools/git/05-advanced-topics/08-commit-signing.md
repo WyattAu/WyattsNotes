@@ -1,8 +1,11 @@
 ---
 title: Commit Signing
-description: "Commit Signing — Why Sign Commits; The Threat Model; Anyone can claim to be anyone; Identity Verification with worked examples and exam-style questions."
+description:
+  'Commit Signing — Why Sign Commits; The Threat Model; Anyone can claim to be anyone; Identity
+  Verification with worked examples and exam-style questions.'
 slug: commit-signing
 ---
+
 ## Why Sign Commits
 
 Commit signing uses cryptographic signatures to prove that a commit was authored by the holder of a
@@ -23,13 +26,13 @@ This is not a bug — Git was designed as a distributed system where trust is so
 Cryptographic. But in an era of supply chain attacks, this design assumption is a liability:
 
 - **Commit spoofing**: An attacker modifies a repository's history and sets author fields to match
- legitimate contributors, making malicious commits appear authentic.
+  legitimate contributors, making malicious commits appear authentic.
 - **Man-in-the-middle**: An attacker intercepts a push and replaces commit objects with modified
- versions containing backdoors.
+  versions containing backdoors.
 - **Compromised mirror**: A mirror or fork is altered to include malicious commits attributed to
- real maintainers.
+  real maintainers.
 - **Insider threat**: A contributor with push access introduces a change and attributes it to
- someone else to obscure accountability.
+  someone else to obscure accountability.
 
 Commit signing addresses all of these by binding a commit to a cryptographic key. The signature
 Covers the commit's entire content — tree hash, parent hashes, author, committer, message — making
@@ -52,11 +55,11 @@ Account holder, not by someone pretending to be them.
 Signing commits does not protect against:
 
 - **Key compromise**: If your private key is stolen, the attacker can sign commits as you. Key
- hygiene is critical.
+  hygiene is critical.
 - **Signed malicious commits**: A contributor with a legitimate key can still introduce
- vulnerabilities. Signing proves identity, not intent.
+  vulnerabilities. Signing proves identity, not intent.
 - **Social engineering**: An attacker could create a new account with a similar name and a different
- key. The signature is valid, but the identity is misleading.
+  key. The signature is valid, but the identity is misleading.
 
 Signing is one layer in a defense-in-depth strategy, not a silver bullet.
 
@@ -247,17 +250,17 @@ ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAI... git-signing
 
 ### SSH vs GPG: Practical Comparison
 
-| Aspect | GPG | SSH |
+| Aspect             | GPG                                    | SSH                                       |
 | ------------------ | -------------------------------------- | ----------------------------------------- |
-| Key format | OpenPGP (pubring, secring) | SSH keypair (ed25519, rsa) |
-| Agent | `gpg-agent` (complex configuration) | `ssh-agent` (ubiquitous, simple) |
-| Passphrase caching | Via `gpg-agent` config | Via `ssh-agent` (system-level) |
-| Key storage | `~/.gnupg/` keyring | `~/.ssh/` flat files |
-| Setup complexity | High (keyring, trust database, export) | Low (generate, configure, upload pub) |
-| CI/CD integration | Requires GPG key import | Requires SSH key or ssh-agent socket |
-| Multiple keys | Keyring supports many | Configure per-repo or use `~/.ssh/config` |
-| Subkey support | Yes (separate signing/encryption/auth) | No (each key is a single key pair) |
-| Revocation | Revocation certificates | Remove public key from server |
+| Key format         | OpenPGP (pubring, secring)             | SSH keypair (ed25519, rsa)                |
+| Agent              | `gpg-agent` (complex configuration)    | `ssh-agent` (ubiquitous, simple)          |
+| Passphrase caching | Via `gpg-agent` config                 | Via `ssh-agent` (system-level)            |
+| Key storage        | `~/.gnupg/` keyring                    | `~/.ssh/` flat files                      |
+| Setup complexity   | High (keyring, trust database, export) | Low (generate, configure, upload pub)     |
+| CI/CD integration  | Requires GPG key import                | Requires SSH key or ssh-agent socket      |
+| Multiple keys      | Keyring supports many                  | Configure per-repo or use `~/.ssh/config` |
+| Subkey support     | Yes (separate signing/encryption/auth) | No (each key is a single key pair)        |
+| Revocation         | Revocation certificates                | Remove public key from server             |
 
 For new setups, SSH signing is recommended. It eliminates the entire `gpg-agent` complexity layer
 And works with infrastructure you already have.
@@ -422,12 +425,12 @@ feat: add user authentication
 The verification process performs three distinct checks:
 
 1. **Signature validity**: The cryptographic signature over the commit content matches the public
- key. This is pure mathematics — if the signature is valid, the commit content was produced by
- someone with access to the corresponding private key.
+   key. This is pure mathematics — if the signature is valid, the commit content was produced by
+   someone with access to the corresponding private key.
 
 2. **Key identity**: The public key's User ID matches the commit's author or committer field. Git
- checks that the key's email matches `user.email`. If there is a mismatch, Git reports it as a
- warning, not an error:
+   checks that the key's email matches `user.email`. If there is a mismatch, Git reports it as a
+   warning, not an error:
 
 ```
 WARNING: This key is not certified with a trusted signature!
@@ -435,8 +438,8 @@ There is no indication that the signature belongs to the author.
 ```
 
 3. **Commit hash integrity**: The commit's SHA-1 (or SHA-256) hash matches the content. This is
- always true for any well-formed Git object — it is not specific to signed commits. But combined
- with the signature, it means the commit cannot be tampered with.
+   always true for any well-formed Git object — it is not specific to signed commits. But combined
+   with the signature, it means the commit cannot be tampered with.
 
 ### Trust Models
 
@@ -456,8 +459,8 @@ Primary key fingerprint: 1122 3344 5566 7788 9900  AABB CCDD EEFF 0011 2233
 ```
 
 The "WARNING: This key is not certified" message means the key is not signed by any other key in
-Your local trust database. This is **normal** and does not indicate a problem — it means you
-Have not built a web of trust. The signature itself is still valid.
+Your local trust database. This is **normal** and does not indicate a problem — it means you Have
+not built a web of trust. The signature itself is still valid.
 
 ## Key Management
 
@@ -583,8 +586,7 @@ KEY_A
 
 ### "gpg failed to sign the data"
 
-This is the most common GPG signing error. It means `gpg-agent` cannot prompt for a
-Passphrase:
+This is the most common GPG signing error. It means `gpg-agent` cannot prompt for a Passphrase:
 
 ```
 error: gpg failed to sign the data
@@ -604,7 +606,7 @@ $ echo "test" | gpg --clearsign
 **Common causes**:
 
 1. **No terminal for passphrase input** — `gpg-agent` needs a terminal or pinentry program to prompt
- for your passphrase. In CI/CD environments, there is no terminal.
+   for your passphrase. In CI/CD environments, there is no terminal.
 2. **`gpg-agent` not running** — the agent must be started before Git can use it.
 3. **`GPG_TTY` not set** — Git (and GPG) need to know which terminal to use for pinentry.
 
@@ -687,11 +689,11 @@ $ echo "test" | gpg --clearsign > /dev/null
 If GitHub shows "Unverified" for your SSH-signed commits:
 
 1. **Wrong key type on GitHub**: The SSH key must be added as a "Signing Key," not an
- "Authentication Key." Go to Settings > SSH and GPG keys and check the key type.
+   "Authentication Key." Go to Settings > SSH and GPG keys and check the key type.
 
 2. **Email mismatch**: The email in your Git config must match the email on your GitHub account, or
- you must have added the email as a verified email address on GitHub. You can also use GitHub's
- noreply email:
+   you must have added the email as a verified email address on GitHub. You can also use GitHub's
+   noreply email:
 
 ```bash
 # Use GitHub's noreply address
@@ -709,7 +711,7 @@ $ git config --global user.signingkey ~/.ssh/git-signing-key
 ```
 
 4. **`gpg.format` not set**: If you configured `user.signingkey` to an SSH key but didn't set
- `gpg.format = ssh`Git still tries to use GPG:
+   `gpg.format = ssh`Git still tries to use GPG:
 
 ```bash
 $ git config --global gpg.format ssh

@@ -1,6 +1,8 @@
 ---
 title: Measurements and Error Analysis
-description: "A-Level Physics notes on Measurements and Error Analysis: 1. Systematic and Random Errors; Systematic Errors; Random Errors; 2. Uncertainty Analysis."
+description:
+  'A-Level Physics notes on Measurements and Error Analysis: 1. Systematic and Random Errors;
+  Systematic Errors; Random Errors; 2. Uncertainty Analysis.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Physics
@@ -9,11 +11,10 @@ categories:
   - Physics
 slug: measurements-and-error-analysis
 ---
+
 ## Measurements and Error Analysis
 
-:::info
-Board Coverage AQA Paper 3 | Edexcel CP1, CP6 | OCR (A) Paper 3 | CIE P5
-:::
+:::info Board Coverage AQA Paper 3 | Edexcel CP1, CP6 | OCR (A) Paper 3 | CIE P5 :::
 
 ## 1. Systematic and Random Errors
 
@@ -67,11 +68,9 @@ Measurement or environmental variability.
 
 **Reduction:** Take multiple readings and calculate the mean. Use more precise instruments.
 
-:::warning
-Common Pitfall Do not confuse accuracy and precision. A measurement can be precise (small
+:::warning Common Pitfall Do not confuse accuracy and precision. A measurement can be precise (small
 Scatter) but inaccurate (systematic error), or accurate (close to true value) but imprecise (large
-Scatter). Neither is sufficient alone.
-:::
+Scatter). Neither is sufficient alone. :::
 
 ## 2. Uncertainty Analysis
 
@@ -190,26 +189,24 @@ $$\Delta m = \frac◆LB◆|m_{\mathrm{best}} - m_{\mathrm{worst}}|◆RB◆◆LB�
 **Vertical error bars** represent the uncertainty in the $y$-measurement. **Horizontal error bars**
 Represent the uncertainty in the $x$-measurement.
 
-When error bars are not shown, the uncertainty is assumed to be $\pm$ half the smallest
-Scale division.
+When error bars are not shown, the uncertainty is assumed to be $\pm$ half the smallest Scale
+division.
 
 ### Linearising Data
 
 Many physical relationships can be linearised by choosing appropriate variables:
 
-| Non-linear relation | Linearised form | Plot | Gradient | Intercept |
-| -------------------- | ------------------------- | --------------------- | ---------- | --------- |
-| $y = ax^2 + b$ | $y = aX + b$ | $y$ vs $X = x^2$ | $a$ | $b$ |
-| $y = a\sqrt{x} + b$ | $y = aX + b$ | $y$ vs $X = \sqrt{x}$ | $a$ | $b$ |
-| $y = a/x + b$ | $y = aX + b$ | $y$ vs $X = 1/x$ | $a$ | $b$ |
-| $y = ae^{bx}$ | $\ln y = bx + \ln a$ | $\ln y$ vs $x$ | $b$ | $\ln a$ |
-| $T = 2\pi\sqrt{L/g}$ | $T^2 = \frac◆LB◆4\pi^2◆RB◆◆LB◆g◆RB◆L$ | $T^2$ vs $L$ | $4\pi^2/g$ | $0$ |
+| Non-linear relation  | Linearised form                       | Plot                  | Gradient   | Intercept |
+| -------------------- | ------------------------------------- | --------------------- | ---------- | --------- |
+| $y = ax^2 + b$       | $y = aX + b$                          | $y$ vs $X = x^2$      | $a$        | $b$       |
+| $y = a\sqrt{x} + b$  | $y = aX + b$                          | $y$ vs $X = \sqrt{x}$ | $a$        | $b$       |
+| $y = a/x + b$        | $y = aX + b$                          | $y$ vs $X = 1/x$      | $a$        | $b$       |
+| $y = ae^{bx}$        | $\ln y = bx + \ln a$                  | $\ln y$ vs $x$        | $b$        | $\ln a$   |
+| $T = 2\pi\sqrt{L/g}$ | $T^2 = \frac◆LB◆4\pi^2◆RB◆◆LB◆g◆RB◆L$ | $T^2$ vs $L$          | $4\pi^2/g$ | $0$       |
 
-:::tip
-Exam Technique When asked to find the percentage uncertainty in a quantity determined from a
+:::tip Exam Technique When asked to find the percentage uncertainty in a quantity determined from a
 Gradient, first find the gradient uncertainty using the worst line method, then divide by the
-Best-fit gradient and multiply by 100%.
-:::
+Best-fit gradient and multiply by 100%. :::
 
 ## Problem Set
 
@@ -332,11 +329,11 @@ A student obtains the following data for a linear relationship $y = mx + c$:
 
 | $x$ (cm) | $y$ (cm) |
 | -------- | -------- |
-| 2.0 | 3.2 |
-| 4.0 | 5.8 |
-| 6.0 | 8.5 |
-| 8.0 | 11.0 |
-| 10.0 | 13.8 |
+| 2.0      | 3.2      |
+| 4.0      | 5.8      |
+| 6.0      | 8.5      |
+| 8.0      | 11.0     |
+| 10.0     | 13.8     |
 
 Using a line of best fit, the gradient is $1.34$ cm/cm. The worst acceptable line gives a gradient
 Of $1.28$ cm/cm. Calculate the gradient and its uncertainty as a percentage.
@@ -366,7 +363,7 @@ By plotting $T^2$ against $L$The gradient gives $4\pi^2/g$From which $g$ can be 
 
 ### 4.2 Sample Data and Calculations
 
-| $L$ (m) | $T$ (s) | $T^2$ (s$^2$) |
+| $L$ (m)           | $T$ (s)         | $T^2$ (s$^2$)   |
 | ----------------- | --------------- | --------------- |
 | $0.400 \pm 0.002$ | $1.26 \pm 0.03$ | $1.59 \pm 0.08$ |
 | $0.600 \pm 0.002$ | $1.55 \pm 0.03$ | $2.40 \pm 0.09$ |
@@ -401,7 +398,7 @@ S$^{-2}$.
 **Systematic errors:**
 
 - The string is not perfectly inextensible, so the effective length is greater than measured,
- leading to overestimated $T$ and underestimated $g$
+  leading to overestimated $T$ and underestimated $g$
 - Air resistance slightly increases the period, causing $g$ to be underestimated
 - The angle of swing may be too large (the formula assumes small angles)
 
@@ -415,19 +412,19 @@ S$^{-2}$.
 
 ### 5.1 Definitions Revisited
 
-| Property | Definition | How to Assess |
+| Property      | Definition                                       | How to Assess                                      |
 | ------------- | ------------------------------------------------ | -------------------------------------------------- |
-| **Accuracy** | Closeness of measurements to the true value | Compare the mean with an accepted value |
+| **Accuracy**  | Closeness of measurements to the true value      | Compare the mean with an accepted value            |
 | **Precision** | Closeness of repeated measurements to each other | Calculate the spread (range or standard deviation) |
 
 ### 5.2 The Four Scenarios
 
-| Scenario | Accuracy | Precision | Interpretation |
+| Scenario | Accuracy | Precision | Interpretation                                                                              |
 | -------- | -------- | --------- | ------------------------------------------------------------------------------------------- |
-| A | High | High | Measurements are clustered near the true value. Ideal. |
-| B | High | Low | Measurements are scattered but the mean is close to the true value. Random errors dominate. |
-| C | Low | High | Measurements are tightly clustered but away from the true value. Systematic error present. |
-| D | Low | Low | Measurements are scattered and the mean is wrong. Both error types present. |
+| A        | High     | High      | Measurements are clustered near the true value. Ideal.                                      |
+| B        | High     | Low       | Measurements are scattered but the mean is close to the true value. Random errors dominate. |
+| C        | Low      | High      | Measurements are tightly clustered but away from the true value. Systematic error present.  |
+| D        | Low      | Low       | Measurements are scattered and the mean is wrong. Both error types present.                 |
 
 ### 5.3 Improving Both Accuracy and Precision
 
@@ -443,22 +440,22 @@ Identifying systematic errors is critical because they cannot be reduced by aver
 Techniques are available:
 
 1. **Comparison with an accepted value.** If the mean of repeated measurements differs significantly
- from the accepted value (considering the random uncertainty), a systematic error is likely
- present.
+   from the accepted value (considering the random uncertainty), a systematic error is likely
+   present.
 
 2. **Using a different method.** If two independent methods give results that disagree beyond their
- combined uncertainties, at least one method has a systematic error.
+   combined uncertainties, at least one method has a systematic error.
 
 3. **Varying the experimental conditions.** Change the range of measurements. If the discrepancy
- from the accepted value varies with the measured quantity (e.g., always a fixed percentage too
- high), this indicates a systematic error.
+   from the accepted value varies with the measured quantity (e.g., always a fixed percentage too
+   high), this indicates a systematic error.
 
 4. **Checking for zero errors.** Measure a known zero before and after the experiment. Any non-zero
- reading indicates a zero error.
+   reading indicates a zero error.
 
 5. **Analysing the graph.** If a straight-line graph does not pass through the expected intercept
- (e.g., $T^2$ vs $L$ should pass through the origin), the non-zero intercept indicates a
- systematic error.
+   (e.g., $T^2$ vs $L$ should pass through the origin), the non-zero intercept indicates a
+   systematic error.
 
 <details>
 <summary>Example: Identifying Systematic Error from a Graph</summary>
@@ -472,9 +469,9 @@ A student plots $T^2$ against $L$ for a pendulum. The line of best fit has a $y$
 Error bars represent the uncertainty in each measurement point:
 
 - **Vertical error bars** show the uncertainty in the $y$-variable. Draw a vertical line of length
- $2\Delta y$ centred on each data point, with small horizontal caps at each end.
+  $2\Delta y$ centred on each data point, with small horizontal caps at each end.
 - **Horizontal error bars** show the uncertainty in the $x$-variable. Draw a horizontal line of
- length $2\Delta x$ centred on each data point, with small vertical caps at each end.
+  length $2\Delta x$ centred on each data point, with small vertical caps at each end.
 
 ### 7.2 Interpreting Error Bars
 
@@ -492,37 +489,34 @@ All the error bars. The uncertainty in the gradient is:
 
 $$\Delta m = \frac◆LB◆|m_{\mathrm{best}} - m_{\mathrm{worst}}|◆RB◆◆LB◆2◆RB◆$$
 
-:::warning
-Warning
-Uncertainty is $\pm$ half the smallest scale division of the measuring instrument used to obtain
-Each data point. State this assumption explicitly.
-:::
+:::warning Warning Uncertainty is $\pm$ half the smallest scale division of the measuring instrument
+used to obtain Each data point. State this assumption explicitly. :::
 
 ## 8. Common Pitfalls
 
 1. **Using the wrong uncertainty for a single reading.** For an analogue instrument, the uncertainty
- is half the smallest division. For a digital instrument, it is the smallest division (the last
- digit). Do not use half the smallest division for a digital instrument.
+   is half the smallest division. For a digital instrument, it is the smallest division (the last
+   digit). Do not use half the smallest division for a digital instrument.
 
 2. **Using the range instead of the half-range.** The absolute uncertainty from repeated
- measurements is the half-range: $\Delta x = (x_{\max} - x_{\min})/2$Not the full range. Using
- the full range overestimates the uncertainty by a factor of 2.
+   measurements is the half-range: $\Delta x = (x_{\max} - x_{\min})/2$Not the full range. Using the
+   full range overestimates the uncertainty by a factor of 2.
 
 3. **Confusing the line of best fit with the worst acceptable line.** The line of best fit passes as
- close as possible to all data points. The worst acceptable line is the steepest or shallowest
- line that passes through all error bars. These are different lines with different gradients.
+   close as possible to all data points. The worst acceptable line is the steepest or shallowest
+   line that passes through all error bars. These are different lines with different gradients.
 
 4. **Forgetting to propagate uncertainty through intermediate calculations.** If you calculate $T^2$
- from $T$You must calculate the uncertainty in $T^2$ using the power rule before plotting. Do
- not plot the raw uncertainty in $T$ on the $T^2$ axis.
+   from $T$You must calculate the uncertainty in $T^2$ using the power rule before plotting. Do not
+   plot the raw uncertainty in $T$ on the $T^2$ axis.
 
 5. **Reporting uncertainty with too many significant figures.** Round the uncertainty to 1 or 2
- significant figures, then round the result to the same decimal place. For example, write
- $9.68 \pm 0.15$Not $9.678 \pm 0.1542$.
+   significant figures, then round the result to the same decimal place. For example, write
+   $9.68 \pm 0.15$Not $9.678 \pm 0.1542$.
 
 6. **Ignoring the uncertainty in the gradient when determining a physical constant.** Always use the
- worst acceptable line method to find the uncertainty in the gradient, and propagate this to the
- final result.
+   worst acceptable line method to find the uncertainty in the gradient, and propagate this to the
+   final result.
 
 ## 9. Extension Problem Set
 

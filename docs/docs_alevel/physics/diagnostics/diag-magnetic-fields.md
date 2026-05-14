@@ -1,6 +1,8 @@
 ---
-title: "Magnetic Fields -- Diagnostic Tests"
-description: "Diagnostic tests for force on a current-carrying conductor, force on a moving charge, electromagnetic induction, and the Hall effect at maximum A-Level Physics"
+title: 'Magnetic Fields -- Diagnostic Tests'
+description:
+  'Diagnostic tests for force on a current-carrying conductor, force on a moving charge,
+  electromagnetic induction, and the Hall effect at maximum A-Level Physics'
 slug: diag-magnetic-fields
 hide_table_of_contents: true
 ---
@@ -13,13 +15,17 @@ hide_table_of_contents: true
 
 **Question:**
 
-A long straight wire carries a current $I_1 = 10\,\text{A}$ vertically upwards. A second straight wire of length $0.30\,\text{m}$ carrying current $I_2 = 5.0\,\text{A}$ is placed parallel to the first wire at a distance of $0.05\,\text{m}$.
+A long straight wire carries a current $I_1 = 10\,\text{A}$ vertically upwards. A second straight
+wire of length $0.30\,\text{m}$ carrying current $I_2 = 5.0\,\text{A}$ is placed parallel to the
+first wire at a distance of $0.05\,\text{m}$.
 
-(a) Calculate the force per unit length between the wires and state whether it is attractive or repulsive.
+(a) Calculate the force per unit length between the wires and state whether it is attractive or
+repulsive.
 
 (b) Calculate the total force on the $0.30\,\text{m}$ wire.
 
-(c) If the second wire is now placed perpendicular to the first (still at $0.05\,\text{m}$ distance), calculate the force on it and explain why it differs from part (b).
+(c) If the second wire is now placed perpendicular to the first (still at $0.05\,\text{m}$
+distance), calculate the force on it and explain why it differs from part (b).
 
 Take $\mu_0 = 4\pi \times 10^{-7}\,\text{T}\,\text{m}\,\text{A}^{-1}$.
 
@@ -29,26 +35,42 @@ Take $\mu_0 = 4\pi \times 10^{-7}\,\text{T}\,\text{m}\,\text{A}^{-1}$.
 
 $$B = \frac◆LB◆\mu_0 I_1◆RB◆◆LB◆2\pi r◆RB◆ = \frac◆LB◆4\pi \times 10^{-7} \times 10◆RB◆◆LB◆2\pi \times 0.05◆RB◆ = \frac◆LB◆4\pi \times 10^{-6}◆RB◆◆LB◆0.1\pi◆RB◆ = 4.0 \times 10^{-5}\,\text{T}$$
 
-Force per unit length: $\frac{F}{L} = \frac◆LB◆\mu_0 I_1 I_2◆RB◆◆LB◆2\pi r◆RB◆ = \frac◆LB◆4\pi \times 10^{-7} \times 10 \times 5.0◆RB◆◆LB◆2\pi \times 0.05◆RB◆$
+Force per unit length:
+$\frac{F}{L} = \frac◆LB◆\mu_0 I_1 I_2◆RB◆◆LB◆2\pi r◆RB◆ = \frac◆LB◆4\pi \times 10^{-7} \times 10 \times 5.0◆RB◆◆LB◆2\pi \times 0.05◆RB◆$
 
 $$= \frac◆LB◆2 \times 10^{-5}◆RB◆◆LB◆0.05◆RB◆ = 4.0 \times 10^{-4}\,\text{N}\,\text{m}^{-1}$$
 
-Using the right-hand grip rule: $I_1$ produces a field that points into the page at the location of $I_2$ (if $I_2$ is to the right of $I_1$ and both carry current upward). Fleming's left-hand rule gives a force on $I_2$ directed toward $I_1$. The force is **attractive**.
+Using the right-hand grip rule: $I_1$ produces a field that points into the page at the location of
+$I_2$ (if $I_2$ is to the right of $I_1$ and both carry current upward). Fleming's left-hand rule
+gives a force on $I_2$ directed toward $I_1$. The force is **attractive**.
 
-(b) Total force: $F = 4.0 \times 10^{-4} \times 0.30 = 1.2 \times 10^{-4}\,\text{N} = 0.12\,\text{mN}$
+(b) Total force:
+$F = 4.0 \times 10^{-4} \times 0.30 = 1.2 \times 10^{-4}\,\text{N} = 0.12\,\text{mN}$
 
-(c) When the second wire is perpendicular, the force depends on the angle between the current and the field. The field from $I_1$ still circles $I_1$. If the second wire is horizontal (perpendicular to $I_1$), the field at the closest point of $I_2$ is tangential to the circle around $I_1$Which is perpendicular to $I_2$ at the closest point. However, along the length of $I_2$The distance from $I_1$ varies and the field direction changes.
+(c) When the second wire is perpendicular, the force depends on the angle between the current and
+the field. The field from $I_1$ still circles $I_1$. If the second wire is horizontal (perpendicular
+to $I_1$), the field at the closest point of $I_2$ is tangential to the circle around $I_1$Which is
+perpendicular to $I_2$ at the closest point. However, along the length of $I_2$The distance from
+$I_1$ varies and the field direction changes.
 
-For a wire perpendicular to $I_1$ with one end at distance $r = 0.05\,\text{m}$The field varies along its length and the direction of the force also varies. The total force requires integration. The key difference from part (b) is that the field is no longer uniform along $I_2$And the angle between the field and current changes along the wire.
+For a wire perpendicular to $I_1$ with one end at distance $r = 0.05\,\text{m}$The field varies
+along its length and the direction of the force also varies. The total force requires integration.
+The key difference from part (b) is that the field is no longer uniform along $I_2$And the angle
+between the field and current changes along the wire.
 
-The force on a perpendicular wire is generally larger per unit length near the close end but the total force depends on the geometry. For a long perpendicular wire, the total force is finite and approximately equal to $\mu_0 I_1 I_2/(2\pi)$ times a geometric factor.
+The force on a perpendicular wire is generally larger per unit length near the close end but the
+total force depends on the geometry. For a long perpendicular wire, the total force is finite and
+approximately equal to $\mu_0 I_1 I_2/(2\pi)$ times a geometric factor.
 
 ---
+
 ### UT-2: Cyclotron Motion of a Charged Particle
 
 **Question:**
 
-A proton (mass $1.67 \times 10^{-27}\,\text{kg}$Charge $1.60 \times 10^{-19}\,\text{C}$) enters a uniform magnetic field $B = 0.50\,\text{T}$ perpendicular to its velocity with speed $4.0 \times 10^6\,\text{m}\,\text{s}^{-1}$.
+A proton (mass $1.67 \times 10^{-27}\,\text{kg}$Charge $1.60 \times 10^{-19}\,\text{C}$) enters a
+uniform magnetic field $B = 0.50\,\text{T}$ perpendicular to its velocity with speed
+$4.0 \times 10^6\,\text{m}\,\text{s}^{-1}$.
 
 (a) Calculate the radius of the circular orbit.
 
@@ -64,24 +86,30 @@ $$Bqv = \frac{mv^2}{r} \Rightarrow r = \frac{mv}{Bq}$$
 
 $$r = \frac◆LB◆1.67 \times 10^{-27} \times 4.0 \times 10^6◆RB◆◆LB◆0.50 \times 1.60 \times 10^{-19}◆RB◆ = \frac◆LB◆6.68 \times 10^{-21}◆RB◆◆LB◆8.0 \times 10^{-20}◆RB◆ = 0.0835\,\text{m} = 8.35\,\text{cm}$$
 
-(b) Cyclotron frequency: $f = \frac◆LB◆Bq◆RB◆◆LB◆2\pi m◆RB◆ = \frac◆LB◆0.50 \times 1.60 \times 10^{-19}◆RB◆◆LB◆2\pi \times 1.67 \times 10^{-27}◆RB◆$
+(b) Cyclotron frequency:
+$f = \frac◆LB◆Bq◆RB◆◆LB◆2\pi m◆RB◆ = \frac◆LB◆0.50 \times 1.60 \times 10^{-19}◆RB◆◆LB◆2\pi \times 1.67 \times 10^{-27}◆RB◆$
 
 $$= \frac◆LB◆8.0 \times 10^{-20}◆RB◆◆LB◆1.049 \times 10^{-26}◆RB◆ = 7.63 \times 10^6\,\text{Hz} = 7.63\,\text{MHz}$$
 
 Period: $T = 1/f = 1.31 \times 10^{-7}\,\text{s} = 131\,\text{ns}$
 
-Note: the cyclotron frequency is independent of the speed (and hence radius), which is the principle behind the cyclotron accelerator.
+Note: the cyclotron frequency is independent of the speed (and hence radius), which is the principle
+behind the cyclotron accelerator.
 
-(c) $E_k = \frac{1}{2}mv^2 = 0.5 \times 1.67 \times 10^{-27} \times (4.0 \times 10^6)^2 = 0.5 \times 1.67 \times 10^{-27} \times 1.6 \times 10^{13} = 1.336 \times 10^{-14}\,\text{J}$
+(c)
+$E_k = \frac{1}{2}mv^2 = 0.5 \times 1.67 \times 10^{-27} \times (4.0 \times 10^6)^2 = 0.5 \times 1.67 \times 10^{-27} \times 1.6 \times 10^{13} = 1.336 \times 10^{-14}\,\text{J}$
 
 In eV: $E_k = 1.336 \times 10^{-14}/(1.60 \times 10^{-19}) = 83500\,\text{eV} = 83.5\,\text{keV}$
 
 ---
+
 ### UT-3: Electromagnetic Induction — Faraday's and Lenz's Laws
 
 **Question:**
 
-A rectangular coil of $200$ turns, each of dimensions $0.05\,\text{m} \times 0.08\,\text{m}$Is rotated at $3000\,\text{rpm}$ in a uniform magnetic field of $0.40\,\text{T}$. The axis of rotation is perpendicular to the field.
+A rectangular coil of $200$ turns, each of dimensions $0.05\,\text{m} \times 0.08\,\text{m}$Is
+rotated at $3000\,\text{rpm}$ in a uniform magnetic field of $0.40\,\text{T}$. The axis of rotation
+is perpendicular to the field.
 
 (a) Calculate the maximum EMF induced in the coil.
 
@@ -95,13 +123,15 @@ A rectangular coil of $200$ turns, each of dimensions $0.05\,\text{m} \times 0.0
 
 Angular velocity: $\omega = 2\pi \times 3000/60 = 2\pi \times 50 = 314.2\,\text{rad}\,\text{s}^{-1}$
 
-Maximum EMF: $\varepsilon_{\max} = NAB\omega = 200 \times 4.0 \times 10^{-3} \times 0.40 \times 314.2$
+Maximum EMF:
+$\varepsilon_{\max} = NAB\omega = 200 \times 4.0 \times 10^{-3} \times 0.40 \times 314.2$
 
 $$= 200 \times 4.0 \times 10^{-3} \times 125.7 = 100.5\,\text{V}$$
 
 (b) $\varepsilon = NAB\omega\sin(\omega t) = 100.5\sin(314.2t)\,\text{V}$
 
-At $t = 0$The flux through the coil is maximum and the rate of change is zero, so $\varepsilon = 0$. This is consistent with $\varepsilon = \varepsilon_{\max}\sin(\omega t)$.
+At $t = 0$The flux through the coil is maximum and the rate of change is zero, so $\varepsilon = 0$.
+This is consistent with $\varepsilon = \varepsilon_{\max}\sin(\omega t)$.
 
 (c) Average EMF over one quarter revolution ($t = 0$ to $t = T/4 = \pi/(2\omega)$):
 
@@ -119,11 +149,15 @@ This is $2/\pi \approx 0.637$ times the peak value, which is the mean of a half 
 
 **Question:**
 
-A velocity selector consists of parallel plates producing a uniform electric field $E = 1.5 \times 10^5\,\text{V}\,\text{m}^{-1}$ and a uniform magnetic field $B = 0.050\,\text{T}$ perpendicular to $E$. Ions pass through undeflected and enter a region of uniform magnetic field $B' = 0.20\,\text{T}$ where they follow semicircular paths before hitting a detector.
+A velocity selector consists of parallel plates producing a uniform electric field
+$E = 1.5 \times 10^5\,\text{V}\,\text{m}^{-1}$ and a uniform magnetic field $B = 0.050\,\text{T}$
+perpendicular to $E$. Ions pass through undeflected and enter a region of uniform magnetic field
+$B' = 0.20\,\text{T}$ where they follow semicircular paths before hitting a detector.
 
 (a) Calculate the velocity of ions that pass through the velocity selector undeflected.
 
-(b) Singly charged ions of neon-20 ($m = 20\,\text{u}$) and neon-22 ($m = 22\,\text{u}$) enter the deflection region. Calculate the separation of their impact points on the detector.
+(b) Singly charged ions of neon-20 ($m = 20\,\text{u}$) and neon-22 ($m = 22\,\text{u}$) enter the
+deflection region. Calculate the separation of their impact points on the detector.
 
 (c) Explain why the velocity selector must use crossed $E$ and $B$ fields (not parallel).
 
@@ -137,30 +171,42 @@ $$v = 1.5 \times 10^5/0.050 = 3.0 \times 10^6\,\text{m}\,\text{s}^{-1}$$
 
 (b) In the deflection region: $B'qv = mv^2/r \Rightarrow r = mv/(B'q)$
 
-For neon-20: $r_{20} = 20 \times 1.66 \times 10^{-27} \times 3.0 \times 10^6/(0.20 \times 1.60 \times 10^{-19})$
+For neon-20:
+$r_{20} = 20 \times 1.66 \times 10^{-27} \times 3.0 \times 10^6/(0.20 \times 1.60 \times 10^{-19})$
 
 $$= \frac◆LB◆9.96 \times 10^{-20}◆RB◆◆LB◆3.2 \times 10^{-20}◆RB◆ = 3.1125\,\text{m}$$
 
-For neon-22: $r_{22} = 22 \times 1.66 \times 10^{-27} \times 3.0 \times 10^6/(0.20 \times 1.60 \times 10^{-19})$
+For neon-22:
+$r_{22} = 22 \times 1.66 \times 10^{-27} \times 3.0 \times 10^6/(0.20 \times 1.60 \times 10^{-19})$
 
 $$= \frac◆LB◆10.956 \times 10^{-20}◆RB◆◆LB◆3.2 \times 10^{-20}◆RB◆ = 3.4238\,\text{m}$$
 
-Separation on detector: $d = 2(r_{22} - r_{20}) = 2(3.4238 - 3.1125) = 2 \times 0.3113 = 0.623\,\text{m} = 62.3\,\text{cm}$
+Separation on detector:
+$d = 2(r_{22} - r_{20}) = 2(3.4238 - 3.1125) = 2 \times 0.3113 = 0.623\,\text{m} = 62.3\,\text{cm}$
 
-(c) Crossed fields are needed so that the electric and magnetic forces can be in opposite directions for the selected velocity. With $E$ and $B$ perpendicular, the electric force ($qE$) and magnetic force ($qvB$) act along the same line (perpendicular to both $E$ and $B$). Only ions with the specific velocity $v = E/B$ experience equal and opposite forces. Slower ions are deflected by $E$; faster ions are deflected by $B$. With parallel fields, the forces would be perpendicular and could not cancel.
+(c) Crossed fields are needed so that the electric and magnetic forces can be in opposite directions
+for the selected velocity. With $E$ and $B$ perpendicular, the electric force ($qE$) and magnetic
+force ($qvB$) act along the same line (perpendicular to both $E$ and $B$). Only ions with the
+specific velocity $v = E/B$ experience equal and opposite forces. Slower ions are deflected by $E$;
+faster ions are deflected by $B$. With parallel fields, the forces would be perpendicular and could
+not cancel.
 
 ---
+
 ### IT-2: Transformer with Load and Efficiency (with DC Circuits)
 
 **Question:**
 
-A transformer has 500 turns on the primary and 50 turns on the secondary. The primary is connected to a $240\,\text{V}$ RMS AC supply. The secondary is connected to a load of $10\,\Omega$.
+A transformer has 500 turns on the primary and 50 turns on the secondary. The primary is connected
+to a $240\,\text{V}$ RMS AC supply. The secondary is connected to a load of $10\,\Omega$.
 
-(a) Calculate the secondary voltage and the primary and secondary currents (assuming an ideal transformer).
+(a) Calculate the secondary voltage and the primary and secondary currents (assuming an ideal
+transformer).
 
 (b) The transformer is $92\%$ efficient. Calculate the actual primary current and the power loss.
 
-(c) The core has a cross-sectional area of $0.010\,\text{m}^2$ and the maximum flux density is $1.5\,\text{T}$. Calculate the minimum supply frequency for the transformer to operate correctly.
+(c) The core has a cross-sectional area of $0.010\,\text{m}^2$ and the maximum flux density is
+$1.5\,\text{T}$. Calculate the minimum supply frequency for the transformer to operate correctly.
 
 **Solution:**
 
@@ -182,22 +228,28 @@ Power loss: $P_{\text{loss}} = P_{\text{in}} - P_{\text{out}} = 62.6 - 57.6 = 5.
 
 (c) The induced EMF equation: $V_p = N_p \times \frac◆LB◆d\Phi◆RB◆◆LB◆dt◆RB◆$
 
-For sinusoidal: $V_p = N_p \times \omega \times \hat{B} \times A$Where $\hat{B}$ is the peak flux density.
+For sinusoidal: $V_p = N_p \times \omega \times \hat{B} \times A$Where $\hat{B}$ is the peak flux
+density.
 
-Using RMS: $V_{p,\text{RMS}} = \frac◆LB◆N_p \times 2\pi f \times \hat{B} \times A◆RB◆◆LB◆\sqrt{2}◆RB◆$
+Using RMS:
+$V_{p,\text{RMS}} = \frac◆LB◆N_p \times 2\pi f \times \hat{B} \times A◆RB◆◆LB◆\sqrt{2}◆RB◆$
 
 $$f_{\min} = \frac◆LB◆V_{p,\text{RMS}}\sqrt{2}◆RB◆◆LB◆2\pi N_p \hat{B} A◆RB◆ = \frac◆LB◆240 \times 1.414◆RB◆◆LB◆2\pi \times 500 \times 1.5 \times 0.010◆RB◆$$
 
 $$= \frac{339.4}{47.12} = 7.20\,\text{Hz}$$
 
-The transformer operates correctly at frequencies above $7.2\,\text{Hz}$. Standard mains frequency ($50\,\text{Hz}$ or $60\,\text{Hz}$) is well above this.
+The transformer operates correctly at frequencies above $7.2\,\text{Hz}$. Standard mains frequency
+($50\,\text{Hz}$ or $60\,\text{Hz}$) is well above this.
 
 ---
+
 ### IT-3: Eddy Currents and Lenz's Law (with Work-Energy)
 
 **Question:**
 
-A square conducting loop of side $0.10\,\text{m}$ and resistance $2.0\,\Omega$ is pulled out of a uniform magnetic field $B = 0.50\,\text{T}$ at a constant speed $v = 5.0\,\text{m}\,\text{s}^{-1}$. The field is directed into the page and the loop moves to the right.
+A square conducting loop of side $0.10\,\text{m}$ and resistance $2.0\,\Omega$ is pulled out of a
+uniform magnetic field $B = 0.50\,\text{T}$ at a constant speed $v = 5.0\,\text{m}\,\text{s}^{-1}$.
+The field is directed into the page and the loop moves to the right.
 
 (a) Calculate the EMF induced in the loop as it exits the field.
 
@@ -207,7 +259,8 @@ A square conducting loop of side $0.10\,\text{m}$ and resistance $2.0\,\Omega$ i
 
 **Solution:**
 
-(a) As the loop exits, the area within the field decreases. If $x$ is the length still inside the field, the flux is $\Phi = B \times 0.10 \times x$.
+(a) As the loop exits, the area within the field decreases. If $x$ is the length still inside the
+field, the flux is $\Phi = B \times 0.10 \times x$.
 
 $$\varepsilon = -\frac◆LB◆d\Phi◆RB◆◆LB◆dt◆RB◆ = -B \times 0.10 \times \frac{dx}{dt} = -B \times 0.10 \times (-v) = B \times 0.10 \times v$$
 
@@ -217,16 +270,21 @@ $$\varepsilon = 0.50 \times 0.10 \times 5.0 = 0.25\,\text{V}$$
 
 (b) Current in the loop: $I = \varepsilon/R = 0.25/2.0 = 0.125\,\text{A}$
 
-By Lenz's law, the induced current flows to oppose the change in flux (to maintain the flux), creating a force that opposes the motion.
+By Lenz's law, the induced current flows to oppose the change in flux (to maintain the flux),
+creating a force that opposes the motion.
 
 Force on the leading vertical side (the only side in the field):
 
 $$F = BIl = 0.50 \times 0.125 \times 0.10 = 6.25 \times 10^{-3}\,\text{N}$$
 
-This force opposes the motion (to the left), so the applied force must be $6.25\,\text{mN}$ to the right.
+This force opposes the motion (to the left), so the applied force must be $6.25\,\text{mN}$ to the
+right.
 
-(c) Power dissipated in the loop: $P = I^2R = (0.125)^2 \times 2.0 = 0.03125\,\text{W} = 31.3\,\text{mW}$
+(c) Power dissipated in the loop:
+$P = I^2R = (0.125)^2 \times 2.0 = 0.03125\,\text{W} = 31.3\,\text{mW}$
 
-Mechanical power input: $P = Fv = 6.25 \times 10^{-3} \times 5.0 = 0.03125\,\text{W} = 31.3\,\text{mW}$
+Mechanical power input:
+$P = Fv = 6.25 \times 10^{-3} \times 5.0 = 0.03125\,\text{W} = 31.3\,\text{mW}$
 
-The power dissipated equals the mechanical power input, confirming conservation of energy. The mechanical work done in pulling the loop is entirely converted to thermal energy in the resistance.
+The power dissipated equals the mechanical power input, confirming conservation of energy. The
+mechanical work done in pulling the loop is entirely converted to thermal energy in the resistance.

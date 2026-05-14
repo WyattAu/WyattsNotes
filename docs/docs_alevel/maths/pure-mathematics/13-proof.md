@@ -1,6 +1,8 @@
 ---
 title: Proof
-description: "A-Level Mathematics notes on Proof: Board Coverage; 1.1 Method; 1.2 Example: the sum of an arithmetic series; 1.3 Example: the difference of squares."
+description:
+  'A-Level Mathematics notes on Proof: Board Coverage; 1.1 Method; 1.2 Example: the sum of an
+  arithmetic series; 1.3 Example: the difference of squares.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Maths
@@ -9,19 +11,18 @@ categories:
   - Maths
 slug: proof
 ---
+
 ## Board Coverage
 
-| Board | Paper | Notes |
+| Board      | Paper      | Notes                                                         |
 | ---------- | ---------- | ------------------------------------------------------------- |
-| AQA | Paper 1 | Proof by deduction, contradiction, exhaustion, counterexample |
-| Edexcel | P1, P2 | Similar; induction in P2 |
-| OCR (A) | Paper 1, 2 | Proof is integrated throughout |
-| CIE (9709) | P1, P2, P3 | Various methods across papers |
+| AQA        | Paper 1    | Proof by deduction, contradiction, exhaustion, counterexample |
+| Edexcel    | P1, P2     | Similar; induction in P2                                      |
+| OCR (A)    | Paper 1, 2 | Proof is integrated throughout                                |
+| CIE (9709) | P1, P2, P3 | Various methods across papers                                 |
 
-:::info
-Proof questions appear on every paper. You must be able to identify the appropriate proof
-Method and execute it , with every step justified.
-:::
+:::info Proof questions appear on every paper. You must be able to identify the appropriate proof
+Method and execute it , with every step justified. :::
 
 <hr />
 
@@ -78,8 +79,8 @@ $p_1, p_2, \ldots, p_n$.
 
 Consider $N = p_1 p_2 \cdots p_n + 1$.
 
-- $N$ is not divisible by any $p_i$: if $p_i \mid N$Then $p_i \mid (N - p_1 \cdots p_n) = 1$
- which is impossible since $p_i \geq 2$.
+- $N$ is not divisible by any $p_i$: if $p_i \mid N$Then $p_i \mid (N - p_1 \cdots p_n) = 1$ which
+  is impossible since $p_i \geq 2$.
 
 So $N$ is either prime itself or divisible by a prime not in our list. Either way, there exists a
 Prime not among $p_1, \ldots, p_n$. This contradicts our assumption that the list was complete.
@@ -139,17 +140,15 @@ So not all primes less than 10 are odd. The claim is **false**. The counterexamp
 
 | $n$ | $n^2 + (n+1)^2$ | Odd? |
 | --- | --------------- | ---- |
-| 1 | 1 + 4 = 5 | Yes |
-| 2 | 4 + 9 = 13 | Yes |
-| 3 | 9 + 16 = 25 | Yes |
-| 4 | 16 + 25 = 41 | Yes |
-| 5 | 25 + 36 = 61 | Yes |
+| 1   | 1 + 4 = 5       | Yes  |
+| 2   | 4 + 9 = 13      | Yes  |
+| 3   | 9 + 16 = 25     | Yes  |
+| 4   | 16 + 25 = 41    | Yes  |
+| 5   | 25 + 36 = 61    | Yes  |
 
 All five cases confirmed. $\blacksquare$
 
-:::warning
-Warning
-Manageable. You cannot use exhaustion for "all integers" or "all real numbers."
+:::warning Warning Manageable. You cannot use exhaustion for "all integers" or "all real numbers."
 :::
 
 <hr />
@@ -183,12 +182,9 @@ To prove a statement $P(n)$ for all integers $n \geq n_0$:
 3. **Inductive step:** Using the hypothesis, prove $P(k+1)$ is true.
 4. **Conclusion:** By the principle of mathematical induction, $P(n)$ is true for all $n \geq n_0$.
 
-:::info
-Info
-Non-empty set of positive integers has a least element. If $P(n_0)$ is true but some $P(m)$ with
-$m \gt{} n_0$ is false, then the set $\{m : P(m) \mathrm{ is false}\}$ has a least element,
-Contradicting the inductive step.
-:::
+:::info Info Non-empty set of positive integers has a least element. If $P(n_0)$ is true but some
+$P(m)$ with $m \gt{} n_0$ is false, then the set $\{m : P(m) \mathrm{ is false}\}$ has a least
+element, Contradicting the inductive step. :::
 
 ### 5.2 Sum of the first $n$ integers
 
@@ -458,8 +454,8 @@ Use proof by exhaustion to show that all integers $n$ with $1 \leq n \leq 6$ sat
 <summary>Solution 8</summary>
 Primes in range: 2, 3, 5.
 
-$n=2$: $n^2-1 = 3$Not divisible by 24 (special case $n=2$). $n=3$: $n^2-1 = 8$Not divisible by
-24 (special case $n=3$). $n=5$: $n^2-1 = 24$Divisible by 24. ✓
+$n=2$: $n^2-1 = 3$Not divisible by 24 (special case $n=2$). $n=3$: $n^2-1 = 8$Not divisible by 24
+(special case $n=3$). $n=5$: $n^2-1 = 24$Divisible by 24. ✓
 
 So the claim holds: primes 2 and 3 are exceptions, and $5^2 - 1 = 24$ is divisible by 24.
 
@@ -540,14 +536,15 @@ $$
 
 ---
 
-:::tip
-Diagnostic Test
-Ready to test your understanding of **Proof**? The [diagnostic test](/docs/alevel/maths/diagnostics/diag-proof) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
+:::tip Diagnostic Test Ready to test your understanding of **Proof**? The
+[diagnostic test](/docs/alevel/maths/diagnostics/diag-proof) contains the hardest questions within
+the A-Level specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Proof with other pure mathematics topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Proof with
+other pure mathematics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and
+building a personal test matrix. :::
 
 ## Common Pitfalls
 

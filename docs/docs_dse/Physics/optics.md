@@ -1,6 +1,8 @@
 ---
 title: Optics
-description: "DSE Physics optics notes covering reflection, refraction, total internal reflection, lenses, optical instruments, and the electromagnetic spectrum."
+description:
+  'DSE Physics optics notes covering reflection, refraction, total internal reflection, lenses,
+  optical instruments, and the electromagnetic spectrum.'
 date: 2026-04-18T00:00:00.000Z
 tags:
   - DSE
@@ -20,12 +22,12 @@ slug: dse-physics-optics
 
 ### Image Formation by Plane Mirrors
 
-| Property | Value |
+| Property    | Value                            |
 | ----------- | -------------------------------- |
-| Size | Same as object |
-| Orientation | Laterally inverted |
-| Nature | Virtual, upright |
-| Distance | Image distance = object distance |
+| Size        | Same as object                   |
+| Orientation | Laterally inverted               |
+| Nature      | Virtual, upright                 |
+| Distance    | Image distance = object distance |
 
 ### Image Formation by Curved Mirrors
 
@@ -43,13 +45,13 @@ The mirror) and negative for virtual ones (behind the mirror).
 
 $$m = \frac{v}{u} = \frac{h_i}{h_o}$$
 
-| Object Position | Image Position | Image Nature |
+| Object Position     | Image Position      | Image Nature                |
 | ------------------- | ------------------- | --------------------------- |
-| Beyond $C$ | Between $C$ and $F$ | Real, inverted, diminished |
-| At $C$ | At $C$ | Real, inverted, same size |
-| Between $C$ and $F$ | Beyond $C$ | Real, inverted, magnified |
-| At $F$ | At infinity | No image (parallel rays) |
-| Inside $F$ | Behind mirror | Virtual, upright, magnified |
+| Beyond $C$          | Between $C$ and $F$ | Real, inverted, diminished  |
+| At $C$              | At $C$              | Real, inverted, same size   |
+| Between $C$ and $F$ | Beyond $C$          | Real, inverted, magnified   |
+| At $F$              | At infinity         | No image (parallel rays)    |
+| Inside $F$          | Behind mirror       | Virtual, upright, magnified |
 
 ### Worked Example 1
 
@@ -155,9 +157,11 @@ $$\sin\theta_2 = \frac{1.33 \times 0.5736}{1.52} = \frac{0.7629}{1.52} = 0.502$$
 
 $$\theta_2 = 30.1^\circ$$
 
-Speed in water: $v_w = \frac{c}{n_w} = \frac{3.0 \times 10^8}{1.33} = 2.26 \times 10^8 \mathrm{ m/s}$
+Speed in water:
+$v_w = \frac{c}{n_w} = \frac{3.0 \times 10^8}{1.33} = 2.26 \times 10^8 \mathrm{ m/s}$
 
-Speed in glass: $v_g = \frac{c}{n_g} = \frac{3.0 \times 10^8}{1.52} = 1.97 \times 10^8 \mathrm{ m/s}$
+Speed in glass:
+$v_g = \frac{c}{n_g} = \frac{3.0 \times 10^8}{1.52} = 1.97 \times 10^8 \mathrm{ m/s}$
 
 </details>
 
@@ -182,12 +186,12 @@ Occurs: all light is reflected back into the denser medium.
 
 ### Applications
 
-| Application | Principle |
-| -------------------- | ---------------------------------------------------------------------------- |
-| Optical fibres | Light undergoes repeated TIR, guided along the fibre |
-| Prismatic binoculars | TIR in prisms redirects light path |
-| Diamond brilliance | Very high $n$ gives small $\theta_c \approx 24.4^\circ$Trapping most light |
-| Mirages | TIR in hot air layers near the ground |
+| Application          | Principle                                                                  |
+| -------------------- | -------------------------------------------------------------------------- |
+| Optical fibres       | Light undergoes repeated TIR, guided along the fibre                       |
+| Prismatic binoculars | TIR in prisms redirects light path                                         |
+| Diamond brilliance   | Very high $n$ gives small $\theta_c \approx 24.4^\circ$Trapping most light |
+| Mirages              | TIR in hot air layers near the ground                                      |
 
 ### Worked Example 3
 
@@ -211,8 +215,8 @@ Core-cladding boundary?
 <details>
 <summary>Solution</summary>
 
-The angle of incidence at the core-cladding boundary is measured from the normal to the boundary.
-If the ray makes $20^\circ$ with the fibre axis, the angle with the normal to the core-cladding
+The angle of incidence at the core-cladding boundary is measured from the normal to the boundary. If
+the ray makes $20^\circ$ with the fibre axis, the angle with the normal to the core-cladding
 Boundary is:
 
 $$\theta_i = 90^\circ - 20^\circ = 70^\circ$$
@@ -251,13 +255,13 @@ A positive $m$ indicates an upright image; a negative $m$ indicates an inverted 
 
 ### Convex (Converging) Lens
 
-| Object Position | Image Position | Image Nature |
+| Object Position      | Image Position         | Image Nature                |
 | -------------------- | ---------------------- | --------------------------- |
-| Beyond $2F$ | Between $F'$ and $2F'$ | Real, inverted, diminished |
-| At $2F$ | At $2F'$ | Real, inverted, same size |
-| Between $F$ and $2F$ | Beyond $2F'$ | Real, inverted, magnified |
-| At $F$ | At infinity | No image |
-| Inside $F$ | Same side as object | Virtual, upright, magnified |
+| Beyond $2F$          | Between $F'$ and $2F'$ | Real, inverted, diminished  |
+| At $2F$              | At $2F'$               | Real, inverted, same size   |
+| Between $F$ and $2F$ | Beyond $2F'$           | Real, inverted, magnified   |
+| At $F$               | At infinity            | No image                    |
+| Inside $F$           | Same side as object    | Virtual, upright, magnified |
 
 ### Power of a Lens
 
@@ -287,9 +291,9 @@ The image is inverted and magnified 3 times.
 
 ### Worked Example 4b
 
-Two thin lenses are placed in contact: a convex lens of focal length $10 \mathrm{ cm}$ and a
-Concave lens of focal length $15 \mathrm{ cm}$. An object is placed $30 \mathrm{ cm}$ from the
-Combination. Find the image position.
+Two thin lenses are placed in contact: a convex lens of focal length $10 \mathrm{ cm}$ and a Concave
+lens of focal length $15 \mathrm{ cm}$. An object is placed $30 \mathrm{ cm}$ from the Combination.
+Find the image position.
 
 <details>
 <summary>Solution</summary>
@@ -306,8 +310,8 @@ Using the thin lens equation:
 
 $$\frac{1}{v} = \frac{1}{30} - \frac{1}{30} = 0$$
 
-This means the image is at infinity. An object placed at the focal point of the combination
-Produces parallel rays.
+This means the image is at infinity. An object placed at the focal point of the combination Produces
+parallel rays.
 
 </details>
 
@@ -319,11 +323,11 @@ Produces parallel rays.
 
 The eye acts as a converging lens system. The cornea and lens together form an image on the retina.
 
-| Defect | Cause | Correction |
+| Defect                   | Cause                           | Correction      |
 | ------------------------ | ------------------------------- | --------------- |
-| Myopia (short-sighted) | Image forms in front of retina | Diverging lens |
-| Hyperopia (long-sighted) | Image forms behind retina | Converging lens |
-| Presbyopia | Lens loses flexibility with age | Bifocal lenses |
+| Myopia (short-sighted)   | Image forms in front of retina  | Diverging lens  |
+| Hyperopia (long-sighted) | Image forms behind retina       | Converging lens |
+| Presbyopia               | Lens loses flexibility with age | Bifocal lenses  |
 
 ### Angular Magnification of a Magnifying Glass
 
@@ -365,30 +369,30 @@ Light.
 ## Common Pitfalls
 
 - Forgetting that the mirror equation and lens equation use different sign conventions. Be
- consistent.
+  consistent.
 - Confusing real and virtual images. Real images can be projected onto a screen; virtual images
- cannot.
+  cannot.
 - Applying Snell's law incorrectly when light goes from a denser to a less dense medium. Always
- check which medium is which.
+  check which medium is which.
 - For total internal reflection, forgetting both conditions: denser to less dense AND angle exceeds
- critical angle.
+  critical angle.
 - In lens problems, forgetting that $f$ is positive for convex lenses and negative for concave
- lenses.
+  lenses.
 
 ---
 
 ## Summary Table
 
-| Topic | Key Formula | Key Concept |
+| Topic            | Key Formula                         | Key Concept                              |
 | ---------------- | ----------------------------------- | ---------------------------------------- |
-| Reflection | $\theta_i = \theta_r$ | Angle of incidence = angle of reflection |
-| Mirror equation | $1/f = 1/u + 1/v$ | Image formation by mirrors |
-| Snell's Law | $n_1\sin\theta_1 = n_2\sin\theta_2$ | Refraction at a boundary |
-| Refractive index | $n = c/v$ | Speed ratio |
-| Critical angle | $\sin\theta_c = n_2/n_1$ | TIR threshold |
-| Lens equation | $1/f = 1/u + 1/v$ | Image formation by lenses |
-| Lens power | $P = 1/f$ | Dioptres |
-| Magnifying glass | $M = D/f$ | Angular magnification |
+| Reflection       | $\theta_i = \theta_r$               | Angle of incidence = angle of reflection |
+| Mirror equation  | $1/f = 1/u + 1/v$                   | Image formation by mirrors               |
+| Snell's Law      | $n_1\sin\theta_1 = n_2\sin\theta_2$ | Refraction at a boundary                 |
+| Refractive index | $n = c/v$                           | Speed ratio                              |
+| Critical angle   | $\sin\theta_c = n_2/n_1$            | TIR threshold                            |
+| Lens equation    | $1/f = 1/u + 1/v$                   | Image formation by lenses                |
+| Lens power       | $P = 1/f$                           | Dioptres                                 |
+| Magnifying glass | $M = D/f$                           | Angular magnification                    |
 
 ---
 
@@ -413,8 +417,8 @@ $$m = \frac{v}{u} = \frac{16.7}{25} = 0.667$$
 
 Real, inverted, diminished image at $16.7 \mathrm{ cm}$ in front of the mirror.
 
-*If you get this wrong, revise: Concave mirror image formation table and the mirror equation sign
-Convention.*
+_If you get this wrong, revise: Concave mirror image formation table and the mirror equation sign
+Convention._
 
 </details>
 </details>
@@ -432,7 +436,7 @@ $$\sin\theta_2 = \frac{n_1}{n_2}\sin\theta_1 = \frac{1.0}{1.52}\sin 55^\circ = \
 
 $$\theta_2 = 32.6^\circ$$
 
-*If you get this wrong, revise: Snell's law and refractive index definition.*
+_If you get this wrong, revise: Snell's law and refractive index definition._
 
 </details>
 </details>
@@ -453,8 +457,8 @@ $$\sin\theta_c = \frac{n_{\mathrm{water}}}{n_{\mathrm{diamond}}} = \frac{1.33}{2
 
 $$\theta_c = 33.3^\circ$$
 
-*If you get this wrong, revise: Conditions for total internal reflection — the light must travel from
-The denser to the less dense medium.*
+_If you get this wrong, revise: Conditions for total internal reflection — the light must travel
+from The denser to the less dense medium._
 
 </details>
 </details>
@@ -479,7 +483,7 @@ $$h_i = mh_o = 2 \times 3 = 6 \mathrm{ cm}$$
 Real, inverted, magnified image of height $6 \mathrm{ cm}$ at $24 \mathrm{ cm}$ on the opposite
 Side.
 
-*If you get this wrong, revise: Thin lens equation and the convex lens image formation table.*
+_If you get this wrong, revise: Thin lens equation and the convex lens image formation table._
 
 </details>
 </details>
@@ -487,8 +491,8 @@ Side.
 <details>
 <summary>Problem 5: Diverging Lens — Virtual Image</summary>
 
-A diverging lens has a focal length of $15 \mathrm{ cm}$. An object is placed $20 \mathrm{ cm}$
-From the lens. Find the image position and magnification.
+A diverging lens has a focal length of $15 \mathrm{ cm}$. An object is placed $20 \mathrm{ cm}$ From
+the lens. Find the image position and magnification.
 
 <details>
 <summary>Solution</summary>
@@ -503,8 +507,8 @@ $$m = \frac{-8.57}{20} = -0.429$$
 
 The image is upright (positive height) and diminished.
 
-*If you get this wrong, revise: Sign convention for diverging lenses — $f$ is negative, and virtual
-Images have negative $v$.*
+_If you get this wrong, revise: Sign convention for diverging lenses — $f$ is negative, and virtual
+Images have negative $v$._
 
 </details>
 </details>
@@ -532,8 +536,8 @@ $\lvert m \rvert = 2.5$Image is magnified and upright.
 
 $$h_i = 2.5 \times 2 = 5 \mathrm{ cm}$$
 
-*If you get this wrong, revise: Concave mirror cases when the object is inside $F$ and the sign
-Convention for virtual images.*
+_If you get this wrong, revise: Concave mirror cases when the object is inside $F$ and the sign
+Convention for virtual images._
 
 </details>
 </details>
@@ -541,8 +545,8 @@ Convention for virtual images.*
 <details>
 <summary>Problem 7: Refraction — Water to Air</summary>
 
-A light ray travels from water ($n = 1.33$) to air at an angle of incidence of $40^\circ$. Does total
-Internal reflection occur? If not, find the angle of refraction.
+A light ray travels from water ($n = 1.33$) to air at an angle of incidence of $40^\circ$. Does
+total Internal reflection occur? If not, find the angle of refraction.
 
 <details>
 <summary>Solution</summary>
@@ -565,8 +569,8 @@ $$\theta_2 = 58.7^\circ$$
 
 The refracted ray bends away from the normal (as expected going from denser to less dense).
 
-*If you get this wrong, revise: Conditions for total internal reflection and Snell's law for light
-Going from denser to less dense media.*
+_If you get this wrong, revise: Conditions for total internal reflection and Snell's law for light
+Going from denser to less dense media._
 
 </details>
 </details>
@@ -574,8 +578,8 @@ Going from denser to less dense media.*
 <details>
 <summary>Problem 8: Convex Lens — Object at 2F</summary>
 
-An object is placed $30 \mathrm{ cm}$ from a convex lens of focal length $15 \mathrm{ cm}$. Find
-The image position and magnification. What special case is this?
+An object is placed $30 \mathrm{ cm}$ from a convex lens of focal length $15 \mathrm{ cm}$. Find The
+image position and magnification. What special case is this?
 
 <details>
 <summary>Solution</summary>
@@ -589,8 +593,8 @@ $$m = \frac{30}{30} = 1$$
 The image is real, inverted, and the **same size** as the object. This is the special case where the
 Object is at $2F$ — the image forms at $2F'$ on the other side.
 
-*If you get this wrong, revise: Convex lens image formation table — the case where the object is at
-$2F$.*
+_If you get this wrong, revise: Convex lens image formation table — the case where the object is at
+$2F$._
 
 </details>
 </details>
@@ -598,8 +602,8 @@ $2F$.*
 <details>
 <summary>Problem 9: Lens Power</summary>
 
-A person has myopia with a far point of $50 \mathrm{ cm}$. What power of diverging lens is needed
-To correct their vision?
+A person has myopia with a far point of $50 \mathrm{ cm}$. What power of diverging lens is needed To
+correct their vision?
 
 <details>
 <summary>Solution</summary>
@@ -613,7 +617,7 @@ $$\frac{1}{f} = \frac{1}{v} - \frac{1}{u} = \frac{1}{-0.50} - 0 = -2.0 \mathrm{ 
 
 A diverging lens of power $-2.0 \mathrm{ D}$ (focal length $-50 \mathrm{ cm}$) is needed.
 
-*If you get this wrong, revise: Defects of vision and the sign convention for corrective lenses.*
+_If you get this wrong, revise: Defects of vision and the sign convention for corrective lenses._
 
 </details>
 </details>
@@ -652,7 +656,7 @@ $$M_e = \frac{v_e}{u_e} = \frac{2.31}{15} = 0.154$$
 
 $$M = M_o \times M_e = 5 \times 0.154 = 0.77$$
 
-*If you get this wrong, revise: Compound microscope magnification formula and two-lens systems.*
+_If you get this wrong, revise: Compound microscope magnification formula and two-lens systems._
 
 </details>
 </details>
@@ -675,8 +679,8 @@ The length of the telescope is the sum of the focal lengths:
 
 $$L = f_o + f_e = 80 + 4 = 84 \mathrm{ cm}$$
 
-*If you get this wrong, revise: Astronomical telescope in normal adjustment and the meaning of tube
-Length.*
+_If you get this wrong, revise: Astronomical telescope in normal adjustment and the meaning of tube
+Length._
 
 </details>
 </details>
@@ -691,19 +695,20 @@ System?
 <details>
 <summary>Solution</summary>
 
-The angle between the mirrors is $\alpha = 60^\circ$. The number of reflections $n$ is determined by:
+The angle between the mirrors is $\alpha = 60^\circ$. The number of reflections $n$ is determined
+by:
 
 $$n = \left\lfloor \frac{180^\circ}{\alpha} \right\rfloor = \left\lfloor \frac{180}{60} \right\rfloor = 3$$
 
 A ray trapped between two mirrors at $60^\circ$ undergoes at most $3$ reflections before exiting.
 (Whether exactly 3 depends on the exact entry angle, but the maximum is 3.)
 
-Alternatively, after each reflection the angle of incidence on the next mirror decreases by $60^\circ$.
-Starting at $40^\circ$: second reflection at $20^\circ$Third reflection at $0^\circ$ (along the
-Normal) — after that the ray retraces its path and exits.
+Alternatively, after each reflection the angle of incidence on the next mirror decreases by
+$60^\circ$. Starting at $40^\circ$: second reflection at $20^\circ$Third reflection at $0^\circ$
+(along the Normal) — after that the ray retraces its path and exits.
 
-*If you get this wrong, revise: Law of reflection and how the angle of incidence changes at successive
-Mirror surfaces.*
+_If you get this wrong, revise: Law of reflection and how the angle of incidence changes at
+successive Mirror surfaces._
 
 </details>
 </details>
@@ -711,8 +716,8 @@ Mirror surfaces.*
 <details>
 <summary>Problem 13: Apparent Depth</summary>
 
-A coin is at the bottom of a pool of water ($n = 1.33$) that is $2.0 \mathrm{ m}$ deep. How deep does
-The coin appear to be when viewed from directly above?
+A coin is at the bottom of a pool of water ($n = 1.33$) that is $2.0 \mathrm{ m}$ deep. How deep
+does The coin appear to be when viewed from directly above?
 
 <details>
 <summary>Solution</summary>
@@ -724,8 +729,8 @@ $$\mathrm{Apparent\ depth} = \frac{\mathrm{Real\ depth}}{n} = \frac{2.0}{1.33} =
 The coin appears at $1.50 \mathrm{ m}$ below the surface, which is shallower than its actual
 Position.
 
-*If you get this wrong, revise: Refraction and the relationship between real depth and apparent
-Depth.*
+_If you get this wrong, revise: Refraction and the relationship between real depth and apparent
+Depth._
 
 </details>
 </details>
@@ -752,8 +757,8 @@ $$\theta_{\mathrm{max}} = 90^\circ - 69.7^\circ = 20.3^\circ$$
 
 Light entering at angles less than $20.3^\circ$ to the axis will undergo total internal reflection.
 
-*If you get this wrong, revise: Optical fibres, critical angle, and the relationship between the
-Angle to the axis and the angle to the normal.*
+_If you get this wrong, revise: Optical fibres, critical angle, and the relationship between the
+Angle to the axis and the angle to the normal._
 
 </details>
 </details>
@@ -761,10 +766,10 @@ Angle to the axis and the angle to the normal.*
 <details>
 <summary>Problem 15: Dispersion — Prism</summary>
 
-White light enters a glass prism ($n_{\mathrm{red}} = 1.51$$n_{\mathrm{violet}} = 1.53$) at an
-Angle of incidence of $45^\circ$. The prism has an apex angle of $60^\circ$. Explain why the violet
-Light is deviated more than the red light and calculate the angle of refraction for each colour at
-The first surface.
+White light enters a glass prism ($n_{\mathrm{red}} = 1.51$$n_{\mathrm{violet}} = 1.53$) at an Angle
+of incidence of $45^\circ$. The prism has an apex angle of $60^\circ$. Explain why the violet Light
+is deviated more than the red light and calculate the angle of refraction for each colour at The
+first surface.
 
 <details>
 <summary>Solution</summary>
@@ -788,21 +793,23 @@ The violet ray is refracted through a smaller angle at the first surface ($27.5^
 $27.9^\circ$), meaning it bends more towards the normal. At the second surface, violet light also
 Bends more away from the normal, resulting in greater total deviation.
 
-*If you get this wrong, revise: Dispersion, Snell's law applied at each prism surface, and how
-Refractive index varies with wavelength.*
+_If you get this wrong, revise: Dispersion, Snell's law applied at each prism surface, and how
+Refractive index varies with wavelength._
 
-For the A-Level treatment of this topic, see [Refraction and Total Internal Reflection](https://alevel.wyattau.com/docs/physics/waves/refraction-and-total-internal-reflection).
+For the A-Level treatment of this topic, see
+[Refraction and Total Internal Reflection](https://alevel.wyattau.com/docs/physics/waves/refraction-and-total-internal-reflection).
 
 ---
 
-:::tip
-Tip
-Ready to test your understanding of **Optics**? The [diagnostic test](/docs/dse/Physics/diagnostics/diag-optics) contains the hardest questions within the DSE specification for this topic, each with a full worked solution.
+:::tip Tip Ready to test your understanding of **Optics**? The
+[diagnostic test](/docs/dse/Physics/diagnostics/diag-optics) contains the hardest questions within
+the DSE specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Optics with other physics topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Optics with
+other physics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/dse/Physics/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/dse/Physics/diagnostics/diagnostic-guide) for instructions on
+self-marking and building a personal test matrix. :::
 
 ---
 
@@ -811,8 +818,8 @@ See [Diagnostic Guide](/docs/dse/Physics/diagnostics/diagnostic-guide) for instr
 ### Derivation: Critical Angle for Total Internal Reflection
 
 Total internal reflection occurs when light travelling from a denser medium (refractive index $n_1$)
-To a less dense medium ($n_2$) strikes the boundary at an angle greater than the critical angle.
-At the critical angle $\theta_c$The refracted ray travels along the boundary ($\theta_r = 90^\circ$):
+To a less dense medium ($n_2$) strikes the boundary at an angle greater than the critical angle. At
+the critical angle $\theta_c$The refracted ray travels along the boundary ($\theta_r = 90^\circ$):
 
 $$n_1 \sin\theta_c = n_2 \sin 90^\circ = n_2$$
 
@@ -827,9 +834,9 @@ Total internal reflection only occurs when light travels from a denser to a less
 
 ### Derivation: Thin Lens Equation
 
-For a thin converging lens, consider a ray from the top of an object at distance $u$ from the
-Lens, passing through the lens and forming an image at distance $v$. By similar triangles formed
-With the principal axis and the focal point:
+For a thin converging lens, consider a ray from the top of an object at distance $u$ from the Lens,
+passing through the lens and forming an image at distance $v$. By similar triangles formed With the
+principal axis and the focal point:
 
 From the object side: $\frac{h_o}{u} = \frac{h_i}{v}$ (magnification triangles)
 
@@ -877,35 +884,37 @@ This is the prism formula. Rearranging allows determination of $n$ by measuring 
 **Apparatus:** A rectangular glass block, four pins, a protractor, a ruler, and a sheet of paper.
 
 **Procedure:**
+
 1. Place the glass block on the paper and trace its outline.
 2. Draw a normal at the point of entry. Insert pins P1 and P2 to define the incident ray.
-3. Looking through the block from the other side, insert pins P3 and P4 so they appear in line
- with the images of P1 and P2.
+3. Looking through the block from the other side, insert pins P3 and P4 so they appear in line with
+   the images of P1 and P2.
 4. Remove the block and draw the refracted ray through P3 and P4.
 5. Measure the angle of incidence $\theta_i$ and angle of refraction $\theta_r$.
 6. Repeat for several angles and plot $\sin\theta_i$ (y-axis) versus $\sin\theta_r$ (x-axis).
 7. The gradient equals the refractive index $n$.
 
 **Sources of error:**
+
 - Difficulty aligning the pins precisely (parallax error).
 - The glass block may not be perfectly rectangular.
 - The faces of the block may not be perfectly parallel.
 
 ### Measuring the Focal Length of a Converging Lens
 
-**Method 1: Distant object method**
-Focus the image of a distant object (e.g., a window or lamp outside the laboratory) on a screen.
-The image distance approximately equals the focal length $f$.
+**Method 1: Distant object method** Focus the image of a distant object (e.g., a window or lamp
+outside the laboratory) on a screen. The image distance approximately equals the focal length $f$.
 
 **Method 2: Lens formula method**
+
 1. Place a illuminated object (e.g., a lit wire mesh) at a measured distance $u$ from the lens.
 2. Move the screen until a sharp image is formed. Record the image distance $v$.
 3. Repeat for different values of $u$.
 4. Plot $1/v$ (y-axis) versus $1/u$ (x-axis). The intercepts on both axes give $1/f$.
 5. Alternatively, plot $uv$ (y-axis) versus $(u + v)$ (x-axis). The gradient equals $f$.
 
-**Method 3: Magnification method**
-Since $m = v/u$ and $\frac{1}{f} = \frac{1}{u} + \frac{1}{v} = \frac{m + 1}{v}$:
+**Method 3: Magnification method** Since $m = v/u$ and
+$\frac{1}{f} = \frac{1}{u} + \frac{1}{v} = \frac{m + 1}{v}$:
 
 Plot $m$ (y-axis) versus $v$ (x-axis). The gradient equals $1/f$.
 
@@ -914,16 +923,17 @@ Plot $m$ (y-axis) versus $v$ (x-axis). The gradient equals $1/f$.
 **Apparatus:** A semi-circular glass block, a ray box, and a protractor.
 
 **Procedure:**
+
 1. Place the semi-circular block on paper with the flat face along a marked line.
 2. Direct a ray of light towards the centre of the flat face.
-3. Vary the angle of incidence until the refracted ray just disappears (the reflected ray
- suddenly becomes much brighter).
+3. Vary the angle of incidence until the refracted ray just disappears (the reflected ray suddenly
+   becomes much brighter).
 4. This is the critical angle $\theta_c$. Measure it with a protractor.
 5. Calculate: $n = 1/\sin\theta_c$.
 
-**Key point:** The ray is directed at the **centre** of the flat face so that it strikes the
-Curved surface at normal incidence (no refraction at the curved surface). Only refraction at
-The flat face matters.
+**Key point:** The ray is directed at the **centre** of the flat face so that it strikes the Curved
+surface at normal incidence (no refraction at the curved surface). Only refraction at The flat face
+matters.
 
 ---
 
@@ -956,8 +966,8 @@ $$n = (1.52 \pm 0.07)$$
 
 ### Worked Example 11
 
-A glass fibre (core refractive index $1.50$Cladding refractive index $1.45$) is used for
-Total internal reflection.
+A glass fibre (core refractive index $1.50$Cladding refractive index $1.45$) is used for Total
+internal reflection.
 
 (a) Calculate the critical angle at the core-cladding boundary.
 
@@ -971,27 +981,26 @@ Undergoes total internal reflection inside the fibre.
 
 $$\theta_c = \sin^{-1}(0.967) = 75.2^\circ$$
 
-(b) The light enters the fibre and refracts. At the core-cladding boundary, the angle of
-Incidence (measured from the normal to the boundary) is $90^\circ - 20^\circ = 70^\circ$.
+(b) The light enters the fibre and refracts. At the core-cladding boundary, the angle of Incidence
+(measured from the normal to the boundary) is $90^\circ - 20^\circ = 70^\circ$.
 
-Since $70^\circ < \theta_c = 75.2^\circ$The light does **not** undergo total internal
-Reflection. The maximum entry angle for total internal reflection is found from:
+Since $70^\circ < \theta_c = 75.2^\circ$The light does **not** undergo total internal Reflection.
+The maximum entry angle for total internal reflection is found from:
 
 $$n_{\mathrm{air}}\sin\theta_{\max} = n_{\mathrm{core}}\sin(90^\circ - \theta_c) = 1.50 \times \sin 14.8^\circ = 1.50 \times 0.256 = 0.383$$
 
 $$\theta_{\max} = \sin^{-1}(0.383) = 22.5^\circ$$
 
-An entry angle of $20^\circ$ is less than $22.5^\circ$So the light does undergo TIR. (Note:
-The angle of incidence at the boundary is $90^\circ - \theta_{\mathrm{refracted}}$ inside the
-Fibre, not $90^\circ - 20^\circ$. A full calculation using Snell's law at the entry face is
-Needed.)
+An entry angle of $20^\circ$ is less than $22.5^\circ$So the light does undergo TIR. (Note: The
+angle of incidence at the boundary is $90^\circ - \theta_{\mathrm{refracted}}$ inside the Fibre, not
+$90^\circ - 20^\circ$. A full calculation using Snell's law at the entry face is Needed.)
 
 </details>
 
 ### Worked Example 12
 
-An object of height $3.0 \mathrm{ cm}$ is placed $20 \mathrm{ cm}$ from a converging lens of
-Focal length $15 \mathrm{ cm}$. Find the image position, height, and nature (real/virtual,
+An object of height $3.0 \mathrm{ cm}$ is placed $20 \mathrm{ cm}$ from a converging lens of Focal
+length $15 \mathrm{ cm}$. Find the image position, height, and nature (real/virtual,
 Upright/inverted, magnified/diminished).
 
 <details>
@@ -1017,8 +1026,8 @@ The image is **real** ($v > 0$), **inverted** ($m > 0$ with real-is-positive con
 ### Worked Example 13
 
 Light of wavelength $590 \mathrm{ nm}$ is incident normally on a diffraction grating with
-$400 \mathrm{ lines/mm}$. Calculate the angles of the first two orders and the maximum number
-Of orders visible.
+$400 \mathrm{ lines/mm}$. Calculate the angles of the first two orders and the maximum number Of
+orders visible.
 
 <details>
 <summary>Solution</summary>
@@ -1037,7 +1046,8 @@ $$\sin\theta_2 = \frac{2\lambda}{d} = 0.472$$
 
 $$\theta_2 = \sin^{-1}(0.472) = 28.2^\circ$$
 
-Maximum order: $n_{\max} = \frac{d}{\lambda} = \frac{2.50 \times 10^{-6}}{590 \times 10^{-9}} = 4.24$
+Maximum order:
+$n_{\max} = \frac{d}{\lambda} = \frac{2.50 \times 10^{-6}}{590 \times 10^{-9}} = 4.24$
 
 Maximum number of orders = **4** (since $n$ must be an integer and $\sin\theta \leq 1$).
 
@@ -1053,20 +1063,20 @@ A student investigates refraction using a rectangular glass block. She measures 
 Incidence and angle of refraction for several rays.
 
 | Angle of incidence $\theta_i$ ($^\circ$) | Angle of refraction $\theta_r$ ($^\circ$) |
-| --------------------------------------- | ---------------------------------------- |
-| 15 | 10 |
-| 30 | 19 |
-| 45 | 28 |
-| 60 | 35 |
-| 75 | 40 |
+| ---------------------------------------- | ----------------------------------------- |
+| 15                                       | 10                                        |
+| 30                                       | 19                                        |
+| 45                                       | 28                                        |
+| 60                                       | 35                                        |
+| 75                                       | 40                                        |
 
-(a) Plot a graph of $\sin\theta_i$ against $\sin\theta_r$ and determine the refractive index of
-The glass.
+(a) Plot a graph of $\sin\theta_i$ against $\sin\theta_r$ and determine the refractive index of The
+glass.
 
 (b) Calculate the critical angle for the glass-air boundary.
 
-(c) The student estimates the angular uncertainty as $\pm 1^\circ$. Calculate the uncertainty in
-The refractive index.
+(c) The student estimates the angular uncertainty as $\pm 1^\circ$. Calculate the uncertainty in The
+refractive index.
 
 (d) Explain why total internal reflection cannot occur when light travels from air into glass.
 
@@ -1077,13 +1087,14 @@ The refractive index.
 
 | $\sin\theta_i$ | $\sin\theta_r$ |
 | -------------- | -------------- |
-| 0.259 | 0.174 |
-| 0.500 | 0.326 |
-| 0.707 | 0.469 |
-| 0.866 | 0.574 |
-| 0.966 | 0.643 |
+| 0.259          | 0.174          |
+| 0.500          | 0.326          |
+| 0.707          | 0.469          |
+| 0.866          | 0.574          |
+| 0.966          | 0.643          |
 
-Gradient of line of best fit $= \frac{\Delta\sin\theta_i}{\Delta\sin\theta_r} \approx \frac{0.966 - 0.259}{0.643 - 0.174} = \frac{0.707}{0.469} = 1.51$
+Gradient of line of best fit
+$= \frac{\Delta\sin\theta_i}{\Delta\sin\theta_r} \approx \frac{0.966 - 0.259}{0.643 - 0.174} = \frac{0.707}{0.469} = 1.51$
 
 The refractive index $n = 1.51$.
 
@@ -1091,8 +1102,8 @@ The refractive index $n = 1.51$.
 
 $$\theta_c = \sin^{-1}(0.662) = 41.5^\circ$$
 
-(c) The uncertainty in $n$ from the graph is estimated from the worst-fit lines. For a single
-Data point at $\theta_i = 45^\circ$$\theta_r = 28^\circ$:
+(c) The uncertainty in $n$ from the graph is estimated from the worst-fit lines. For a single Data
+point at $\theta_i = 45^\circ$$\theta_r = 28^\circ$:
 
 $\Delta\theta = 1^\circ = 0.0175 \mathrm{ rad}$
 
@@ -1101,9 +1112,9 @@ $\sin(45 \pm 1) = 0.707 \pm 0.012$$\sin(28 \pm 1) = 0.469 \pm 0.015$
 The percentage uncertainty in $n$ from the gradient depends on the spread of the worst-fit lines.
 Approximately: $\frac{\Delta n}{n} \approx 3\%$ to $5\%$Giving $\Delta n \approx 0.05$ to $0.08$.
 
-(d) Total internal reflection requires light to travel from a denser medium ($n_1$) to a less
-Dense medium ($n_2$), so that $\sin\theta_c = n_2/n_1 < 1$. When light travels from air
-($n = 1.0$) to glass ($n = 1.51$), the equivalent critical angle would have
+(d) Total internal reflection requires light to travel from a denser medium ($n_1$) to a less Dense
+medium ($n_2$), so that $\sin\theta_c = n_2/n_1 < 1$. When light travels from air ($n = 1.0$) to
+glass ($n = 1.51$), the equivalent critical angle would have
 $\sin\theta_c = 1.51/1.0 = 1.51 > 1$Which is impossible. Therefore TIR cannot occur.
 
 </details>
@@ -1149,22 +1160,23 @@ Magnification of eyepiece: $m_2 = \frac{v_2}{u_2} = \frac{3.16}{12.0} = 0.263$
 
 Total magnification: $M = m_1 \times m_2 = 5.0 \times 0.263 = 1.3$
 
-(Note: In a normal microscope, the final image is virtual at the near point. The calculation
-Above gives a real image because the object is not at the standard position. The
-Eyepiece is used as a magnifying glass with the intermediate image at its focal point.)
+(Note: In a normal microscope, the final image is virtual at the near point. The calculation Above
+gives a real image because the object is not at the standard position. The Eyepiece is used as a
+magnifying glass with the intermediate image at its focal point.)
 
 (d) Two differences:
+
 1. A microscope is used to view nearby objects; a telescope is used to view distant objects.
-2. In a microscope, the objective forms a real, magnified image; in a telescope, the objective
- forms a real, diminished image at its focal point.
+2. In a microscope, the objective forms a real, magnified image; in a telescope, the objective forms
+   a real, diminished image at its focal point.
 
 </details>
 
 ### Question 3 (DSE Structured)
 
 A ray of white light strikes one face of an equilateral glass prism ($60^\circ$) at an angle of
-Incidence of $45^\circ$. The refractive index of the glass for red light is $1.514$ and for
-Violet light is $1.532$.
+Incidence of $45^\circ$. The refractive index of the glass for red light is $1.514$ and for Violet
+light is $1.532$.
 
 (a) Calculate the angle of refraction at the first face for red light.
 
@@ -1226,8 +1238,8 @@ Angular dispersion: $\Delta D = 40.4^\circ - 38.8^\circ = 1.6^\circ$
 (c) Use Huygens' principle to explain why a wave spreads out when passing through a narrow gap.
 
 (d) A plane wave of wavelength $0.5 \mathrm{ m}$ passes through a gap of width $1.0 \mathrm{ m}$.
-Describe the diffraction pattern observed and explain how it differs if the gap width is
-Reduced to $0.3 \mathrm{ m}$.
+Describe the diffraction pattern observed and explain how it differs if the gap width is Reduced to
+$0.3 \mathrm{ m}$.
 
 <details>
 <summary>Solution</summary>
@@ -1236,22 +1248,22 @@ Reduced to $0.3 \mathrm{ m}$.
 Wavefronts are parallel lines or planes. For a circular wave, wavefronts are concentric circles.
 
 (b) Huygens' principle states that every point on a wavefront acts as a source of secondary
-Wavelets. These wavelets spread out at the wave speed. The new wavefront at a later time is
-The envelope (tangent surface) of all these secondary wavelets.
+Wavelets. These wavelets spread out at the wave speed. The new wavefront at a later time is The
+envelope (tangent surface) of all these secondary wavelets.
 
-(c) When a plane wave passes through a narrow gap, each point within the gap acts as a source
-Of secondary wavelets (by Huygens' principle). These wavelets spread out in all directions
-Beyond the gap. The new wavefront is no longer plane but curved, causing the wave to spread
-Out (diffract). The narrower the gap relative to the wavelength, the more the wave spreads out,
-Because fewer secondary sources contribute and their curved wavelets dominate.
+(c) When a plane wave passes through a narrow gap, each point within the gap acts as a source Of
+secondary wavelets (by Huygens' principle). These wavelets spread out in all directions Beyond the
+gap. The new wavefront is no longer plane but curved, causing the wave to spread Out (diffract). The
+narrower the gap relative to the wavelength, the more the wave spreads out, Because fewer secondary
+sources contribute and their curved wavelets dominate.
 
-(d) With a gap of $1.0 \mathrm{ m}$ ($d/\lambda = 2$), moderate diffraction occurs. The wave
-Spreads out somewhat beyond the gap, but there is still a relatively well-defined beam
-Direction with some spreading at the edges.
+(d) With a gap of $1.0 \mathrm{ m}$ ($d/\lambda = 2$), moderate diffraction occurs. The wave Spreads
+out somewhat beyond the gap, but there is still a relatively well-defined beam Direction with some
+spreading at the edges.
 
 With a gap of $0.3 \mathrm{ m}$ ($d/\lambda = 0.6$Gap is smaller than the wavelength), very
-Significant diffraction occurs. The wave spreads out into a wide semicircular pattern beyond
-The gap, similar to a point source. The wavefront is almost completely circular.
+Significant diffraction occurs. The wave spreads out into a wide semicircular pattern beyond The
+gap, similar to a point source. The wavefront is almost completely circular.
 
 </details>
 
@@ -1263,16 +1275,16 @@ The gap, similar to a point source. The wavefront is almost completely circular.
 Find the image position, magnification, and nature.
 
 (c) A converging lens forms an image of an object on a screen placed $50 \mathrm{ cm}$ from the
-Lens. The image is three times the size of the object. Find the focal length of the lens and
-The object distance.
+Lens. The image is three times the size of the object. Find the focal length of the lens and The
+object distance.
 
 <details>
 <summary>Solution</summary>
 
-(a) A **real image** is formed where light rays actually converge. It can be projected onto a
-Screen and is always inverted. A **virtual image** is formed where light rays only appear to
-Diverge from; the rays do not actually pass through the image position. It cannot be projected
-Onto a screen and is always upright.
+(a) A **real image** is formed where light rays actually converge. It can be projected onto a Screen
+and is always inverted. A **virtual image** is formed where light rays only appear to Diverge from;
+the rays do not actually pass through the image position. It cannot be projected Onto a screen and
+is always upright.
 
 (b) For a diverging lens, $f = -12 \mathrm{ cm}$ (using real-is-positive convention).
 
@@ -1280,8 +1292,8 @@ $$\frac{1}{v} = \frac{1}{f} - \frac{1}{u} = \frac{1}{-12} - \frac{1}{8} = -\frac
 
 $$v = -4.8 \mathrm{ cm}$$
 
-The negative sign indicates a virtual image, $4.8 \mathrm{ cm}$ from the lens on the same
-Side as the object.
+The negative sign indicates a virtual image, $4.8 \mathrm{ cm}$ from the lens on the same Side as
+the object.
 
 $$m = \frac{v}{u} = \frac{-4.8}{8} = -0.60$$
 
@@ -1289,14 +1301,14 @@ The image is **virtual**, **upright**, and **diminished** (60% of the object hei
 
 (c) The image is real (on a screen), so $v = +50 \mathrm{ cm}$.
 
-Since $m = 3$ and the image is real (inverted): $|m| = v/u = 3$So $u = v/3 = 50/3 = 16.7 \mathrm{ cm}$.
+Since $m = 3$ and the image is real (inverted): $|m| = v/u = 3$So
+$u = v/3 = 50/3 = 16.7 \mathrm{ cm}$.
 
 $$\frac{1}{f} = \frac{1}{v} + \frac{1}{u} = \frac{1}{50} + \frac{1}{16.7} = 0.0200 + 0.0599 = 0.0799$$
 
 $$f = 12.5 \mathrm{ cm}$$
 
 </details>
-
 
 </details>
 

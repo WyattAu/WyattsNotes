@@ -1,6 +1,8 @@
 ---
-title: "Number and Algebra -- Diagnostic Tests"
-description: Hardest IB Mathematics diagnostic tests for number and algebra covering sigma notation, binomial theorem, permutations, logarithms, and proof by induction.
+title: 'Number and Algebra -- Diagnostic Tests'
+description:
+  Hardest IB Mathematics diagnostic tests for number and algebra covering sigma notation, binomial
+  theorem, permutations, logarithms, and proof by induction.
 slug: diag-number-algebra
 hide_table_of_contents: true
 ---
@@ -21,7 +23,8 @@ $$\sum_{n=1}^{5} n = \sum_{n=0}^{4} n$$
 
 **(a)** Identify the error and write the correct identity for shifting the index by $-1$.
 
-**(b)** Evaluate $\displaystyle\sum_{k=3}^{20} (k - 2)$ by reindexing to start from $k = 1$And verify your answer using the formula for the sum of the first $N$ positive integers.
+**(b)** Evaluate $\displaystyle\sum_{k=3}^{20} (k - 2)$ by reindexing to start from $k = 1$And
+verify your answer using the formula for the sum of the first $N$ positive integers.
 
 **(c)** Evaluate $\displaystyle\sum_{n=1}^{10} n(n+1) - \sum_{n=2}^{11} (n-1)^2$.
 
@@ -29,11 +32,14 @@ $$\sum_{n=1}^{5} n = \sum_{n=0}^{4} n$$
 
 **Solution:**
 
-**(a)** When shifting the index from $n$ to $n' = n - 1$ (so $n = n' + 1$), the bounds change from $n = 1$ to $n' = 0$ and $n = 5$ to $n' = 4$But the general term must also change. The correct identity is:
+**(a)** When shifting the index from $n$ to $n' = n - 1$ (so $n = n' + 1$), the bounds change from
+$n = 1$ to $n' = 0$ and $n = 5$ to $n' = 4$But the general term must also change. The correct
+identity is:
 
 $$\sum_{n=1}^{5} n = \sum_{n'=0}^{4} (n' + 1)$$
 
-The student's error was writing $\sum_{n=0}^{4} n$ instead of $\sum_{n=0}^{4} (n + 1)$. The LHS equals $15$ but the student's RHS equals $10$.
+The student's error was writing $\sum_{n=0}^{4} n$ instead of $\sum_{n=0}^{4} (n + 1)$. The LHS
+equals $15$ but the student's RHS equals $10$.
 
 **(b)** Let $j = k - 2$So when $k = 3$$j = 1$And when $k = 20$$j = 18$:
 
@@ -61,13 +67,18 @@ Therefore the difference is $440 - 385 = 55$.
 
 **(b)** Determine the exact range of $x$ for which the expansion converges.
 
-**(c)** A student claims that the coefficient of $x^2$ in $(1 - 2x)^{-1/2}$ is $-\dfrac{1}{2} \cdot \left(-\dfrac{3}{2}\right) \cdot (-2)^2 = -3$. Identify the error and find the correct coefficient.
+**(c)** A student claims that the coefficient of $x^2$ in $(1 - 2x)^{-1/2}$ is
+$-\dfrac{1}{2} \cdot \left(-\dfrac{3}{2}\right) \cdot (-2)^2 = -3$. Identify the error and find the
+correct coefficient.
 
-[Difficulty: hard. Tests binomial expansion with fractional negative exponent, convergence condition, and sign errors.]
+[Difficulty: hard. Tests binomial expansion with fractional negative exponent, convergence
+condition, and sign errors.]
 
 **Solution:**
 
-**(a)** Using the general binomial expansion $(1 + x)^n = 1 + nx + \frac{n(n-1)}{2!}x^2 + \frac{n(n-1)(n-2)}{3!}x^3 + \cdots$ with $n = -\frac{1}{2}$ and replacing $x$ with $-2x$:
+**(a)** Using the general binomial expansion
+$(1 + x)^n = 1 + nx + \frac{n(n-1)}{2!}x^2 + \frac{n(n-1)(n-2)}{3!}x^3 + \cdots$ with
+$n = -\frac{1}{2}$ and replacing $x$ with $-2x$:
 
 The general term in $x^k$ is:
 
@@ -81,13 +92,16 @@ $$\binom{-1/2}{3}(-2)^3 = -\frac{5}{16} \times (-8) = \frac{5}{2}$$
 
 So the coefficient of $x^3$ is $\dfrac{5}{2}$.
 
-**(b)** The expansion $(1 + x)^n$ for non-integer $n$ converges when $|x| \lt 1$. Here we have $(1 - 2x)^{-1/2}$So we need $|-2x| \lt 1$I.e., $|x| \lt \dfrac{1}{2}$.
+**(b)** The expansion $(1 + x)^n$ for non-integer $n$ converges when $|x| \lt 1$. Here we have
+$(1 - 2x)^{-1/2}$So we need $|-2x| \lt 1$I.e., $|x| \lt \dfrac{1}{2}$.
 
-**(c)** The student computed $\frac{n(n-1)}{2!}(-2)^2$ but used $n = -\frac{1}{2}$ incorrectly. The correct computation for the coefficient of $x^2$:
+**(c)** The student computed $\frac{n(n-1)}{2!}(-2)^2$ but used $n = -\frac{1}{2}$ incorrectly. The
+correct computation for the coefficient of $x^2$:
 
 $$\binom{-1/2}{2}(-2)^2 = \frac{(-1/2)(-3/2)}{2} \times 4 = \frac{3/4}{2} \times 4 = \frac{3}{8} \times 4 = \frac{3}{2}$$
 
-The student's error was multiplying three terms instead of two: $\binom{-1/2}{2}$ only involves two factors $\frac{n(n-1)}{2!}$Not three. The correct coefficient is $\dfrac{3}{2}$Not $-3$.
+The student's error was multiplying three terms instead of two: $\binom{-1/2}{2}$ only involves two
+factors $\frac{n(n-1)}{2!}$Not three. The correct coefficient is $\dfrac{3}{2}$Not $-3$.
 
 ---
 
@@ -95,23 +109,30 @@ The student's error was multiplying three terms instead of two: $\binom{-1/2}{2}
 
 **Question:**
 
-Prove by mathematical induction that $7^n - 1$ is divisible by $6$ for all $n \in \mathbb{'\{'}Z{'\}'}^+$.
+Prove by mathematical induction that $7^n - 1$ is divisible by $6$ for all
+$n \in \mathbb{'\{'}Z{'\}'}^+$.
 
 A student presents the following proof:
 
 > **Base case ($n = 0$):** $7^0 - 1 = 0$Which is divisible by $6$.
 >
-> **Inductive step:** Assume $7^k - 1 = 6m$. Then $7^{k+1} - 1 = 7 \cdot 7^k - 1 = 7(6m + 1) - 1 = 42m + 6 = 6(7m + 1)$.
+> **Inductive step:** Assume $7^k - 1 = 6m$. Then
+> $7^{k+1} - 1 = 7 \cdot 7^k - 1 = 7(6m + 1) - 1 = 42m + 6 = 6(7m + 1)$.
 
 **(a)** Explain the flaw in the student's base case.
 
 **(b)** Write out a complete, correct proof.
 
-[Difficulty: hard. Tests the common error of starting the base case at the wrong value for divisibility results.]
+[Difficulty: hard. Tests the common error of starting the base case at the wrong value for
+divisibility results.]
 
 **Solution:**
 
-**(a)** The statement claims "for all $n \in \mathbb{'\{'}Z{'\}'}^+$", meaning $n \geq 1$. The student verified the base case at $n = 0$Which is outside the domain of the claim. While $n = 0$ does happen to satisfy the property, the proof must start at $n = 1$ to be valid. The base case at $n = 0$ is unnecessary and, if it were the only base case, would not constitute a valid proof of the claim.
+**(a)** The statement claims "for all $n \in \mathbb{'\{'}Z{'\}'}^+$", meaning $n \geq 1$. The
+student verified the base case at $n = 0$Which is outside the domain of the claim. While $n = 0$
+does happen to satisfy the property, the proof must start at $n = 1$ to be valid. The base case at
+$n = 0$ is unnecessary and, if it were the only base case, would not constitute a valid proof of the
+claim.
 
 **(b)**
 
@@ -125,7 +146,8 @@ $$7^{k+1} - 1 = 7 \cdot 7^k - 1 = 7(6m + 1) - 1 = 42m + 7 - 1 = 42m + 6 = 6(7m +
 
 Since $7m + 1$ is an integer, $7^{k+1} - 1$ is divisible by $6$.
 
-**Conclusion:** By the principle of mathematical induction, $7^n - 1$ is divisible by $6$ for all $n \in \mathbb{'\{'}Z{'\}'}^+$.
+**Conclusion:** By the principle of mathematical induction, $7^n - 1$ is divisible by $6$ for all
+$n \in \mathbb{'\{'}Z{'\}'}^+$.
 
 ---
 
@@ -143,7 +165,8 @@ The function $f$ is defined by $f(x) = \dfrac{1}{1 - x^2}$ for $x \in (-1, 1)$.
 
 **(b)** Find the value of $\displaystyle\sum_{n=0}^{\infty} \frac{1}{4^n}$.
 
-**(c)** The series $\displaystyle\sum_{n=0}^{\infty} \frac{x^{2n}}{3^n}$ converges for some values of $x$. Find the sum to infinity and state the range of $x$ for which it converges.
+**(c)** The series $\displaystyle\sum_{n=0}^{\infty} \frac{x^{2n}}{3^n}$ converges for some values
+of $x$. Find the sum to infinity and state the range of $x$ for which it converges.
 
 [Difficulty: hard. Combines geometric series convergence with function domain restrictions.]
 
@@ -163,9 +186,11 @@ Therefore:
 
 $$f(x) = \frac{1}{2}\sum_{n=0}^{\infty}\big(1 + (-1)^n\big)x^n$$
 
-This gives $f(x) = 1 + x^2 + x^4 + x^6 + \cdots$A geometric series with first term $1$ and common ratio $x^2$Valid for $|x^2| \lt 1$I.e., $x \in (-1, 1)$.
+This gives $f(x) = 1 + x^2 + x^4 + x^6 + \cdots$A geometric series with first term $1$ and common
+ratio $x^2$Valid for $|x^2| \lt 1$I.e., $x \in (-1, 1)$.
 
-**(b)** This is a geometric series with first term $1$ and common ratio $r = \dfrac{1}{4}$. Since $|r| \lt 1$:
+**(b)** This is a geometric series with first term $1$ and common ratio $r = \dfrac{1}{4}$. Since
+$|r| \lt 1$:
 
 $$S_{\infty} = \frac{1}{1 - \frac{1}{4}} = \frac{4}{3}$$
 
@@ -173,7 +198,8 @@ $$S_{\infty} = \frac{1}{1 - \frac{1}{4}} = \frac{4}{3}$$
 
 This is a geometric series with first term $1$ and common ratio $r = \dfrac{x^2}{3}$.
 
-Convergence requires $|r| \lt 1$So $\left|\dfrac{x^2}{3}\right| \lt 1$Giving $x^2 \lt 3$I.e., $-\sqrt{3} \lt x \lt \sqrt{3}$.
+Convergence requires $|r| \lt 1$So $\left|\dfrac{x^2}{3}\right| \lt 1$Giving $x^2 \lt 3$I.e.,
+$-\sqrt{3} \lt x \lt \sqrt{3}$.
 
 $$S_{\infty} = \frac{1}{1 - \frac{x^2}{3}} = \frac{3}{3 - x^2}$$
 
@@ -189,7 +215,8 @@ Given $f(x) = \log_3(x + 4)$ and $g(x) = x^2 - 5$:
 
 **(b)** Solve $(f \circ g)(x) = 2$.
 
-**(c)** A student solves the equation $\log_3(x^2 - 1) = 2$ and obtains $x = \pm\sqrt{10}$. Explain why one solution must be rejected.
+**(c)** A student solves the equation $\log_3(x^2 - 1) = 2$ and obtains $x = \pm\sqrt{10}$. Explain
+why one solution must be rejected.
 
 [Difficulty: hard. Combines logarithm domain restrictions with composite function domain analysis.]
 
@@ -198,6 +225,7 @@ Given $f(x) = \log_3(x + 4)$ and $g(x) = x^2 - 5$:
 **(a)** $(f \circ g)(x) = f(g(x)) = \log_3(x^2 - 5 + 4) = \log_3(x^2 - 1)$.
 
 Domain restrictions:
+
 - From $g(x)$: $x \in \mathbb{'\{'}R{'\}'}$ (no restriction, polynomial).
 - From $f$: the argument must be positive, so $x^2 - 1 \gt 0$Giving $x \lt -1$ or $x \gt 1$.
 
@@ -205,11 +233,18 @@ Domain of $f \circ g$: $(-\infty, -1) \cup (1, \infty)$.
 
 **(b)** $\log_3(x^2 - 1) = 2 \implies x^2 - 1 = 9 \implies x^2 = 10 \implies x = \pm\sqrt{10}$.
 
-Check against domain: $\sqrt{10} \approx 3.16 \gt 1$ (valid) and $-\sqrt{10} \approx -3.16 \lt -1$ (valid).
+Check against domain: $\sqrt{10} \approx 3.16 \gt 1$ (valid) and $-\sqrt{10} \approx -3.16 \lt -1$
+(valid).
 
 Both solutions are valid: $x = \sqrt{10}$ and $x = -\sqrt{10}$.
 
-**(c)** The student solved $\log_3(x^2 - 1) = 2$ correctly, but without checking the domain. In this case both solutions are valid. However, if the equation were $\log_3(x - 1) = 2$Solving gives $x - 1 = 9 \implies x = 10$But the domain requires $x \gt 1$So $x = 10$ is valid. If instead the equation were $\log_3(1 - x) = 2$Then $1 - x = 9 \implies x = -8$But the domain requires $1 - x \gt 0 \implies x \lt 1$So $x = -8$ is valid. The key point is that logarithm arguments must always be positive, and extraneous solutions arise when the algebraic solution violates this constraint.
+**(c)** The student solved $\log_3(x^2 - 1) = 2$ correctly, but without checking the domain. In this
+case both solutions are valid. However, if the equation were $\log_3(x - 1) = 2$Solving gives
+$x - 1 = 9 \implies x = 10$But the domain requires $x \gt 1$So $x = 10$ is valid. If instead the
+equation were $\log_3(1 - x) = 2$Then $1 - x = 9 \implies x = -8$But the domain requires
+$1 - x \gt 0 \implies x \lt 1$So $x = -8$ is valid. The key point is that logarithm arguments must
+always be positive, and extraneous solutions arise when the algebraic solution violates this
+constraint.
 
 ---
 
@@ -217,19 +252,22 @@ Both solutions are valid: $x = \sqrt{10}$ and $x = -\sqrt{10}$.
 
 **Question:**
 
-Eight people — Alice, Ben, Charlie, Diana, Elliot, Fiona, George, and Hannah — are to be seated in a row of eight chairs.
+Eight people — Alice, Ben, Charlie, Diana, Elliot, Fiona, George, and Hannah — are to be seated in a
+row of eight chairs.
 
 **(a)** In how many ways can they be seated if Alice and Ben must sit next to each other?
 
 **(b)** In how many ways can they be seated if Alice and Ben must NOT sit next to each other?
 
-**(c)** In how many ways can they be seated if Alice, Ben, and Charlie must all sit together, and Diana and Elliot must also sit together (but the two groups may be in any order)?
+**(c)** In how many ways can they be seated if Alice, Ben, and Charlie must all sit together, and
+Diana and Elliot must also sit together (but the two groups may be in any order)?
 
 [Difficulty: hard. Tests arrangements with multiple restrictions requiring careful case analysis.]
 
 **Solution:**
 
-**(a)** Treat Alice and Ben as a single "block." There are $7$ items to arrange: the AB block and the other $6$ people.
+**(a)** Treat Alice and Ben as a single "block." There are $7$ items to arrange: the AB block and
+the other $6$ people.
 
 Number of arrangements of the blocks: $7! = 5040$.
 
@@ -243,13 +281,13 @@ Arrangements where Alice and Ben sit together: $10080$ (from part a).
 
 Arrangements where they do NOT sit together: $40320 - 10080 = 30240$.
 
-**(c)** There are two groups: ABC (size 3) and DE (size 2), plus the remaining 3 individuals: F, G, H.
+**(c)** There are two groups: ABC (size 3) and DE (size 2), plus the remaining 3 individuals: F, G,
+H.
 
 Items to arrange: 2 groups + 3 individuals = 5 items.
 
 Arrangements of the 5 items: $5! = 120$.
 
-Within the ABC group: $3! = 6$ arrangements.
-Within the DE group: $2! = 2$ arrangements.
+Within the ABC group: $3! = 6$ arrangements. Within the DE group: $2! = 2$ arrangements.
 
 Total: $5! \times 3! \times 2! = 120 \times 6 \times 2 = 1440$.

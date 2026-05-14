@@ -1,6 +1,8 @@
 ---
 title: Differentiation
-description: "A-Level Mathematics notes on Differentiation: Board Coverage; 1. The Derivative from First Principles; 1.1 Definition; 2. Derivative of $x^n$ from First Prin."
+description:
+  'A-Level Mathematics notes on Differentiation: Board Coverage; 1. The Derivative from First
+  Principles; 1.1 Definition; 2. Derivative of $x^n$ from First Prin.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Maths
@@ -9,19 +11,18 @@ categories:
   - Maths
 slug: differentiation
 ---
+
 ## Board Coverage
 
-| Board | Paper | Notes |
+| Board      | Paper      | Notes                                                            |
 | ---------- | ---------- | ---------------------------------------------------------------- |
-| AQA | Paper 1, 2 | First principles, rules, applications in P1; chain/product in P2 |
-| Edexcel | P1, P2 | Similar split |
-| OCR (A) | Paper 1, 2 | Includes connected rates in P2 |
-| CIE (9709) | P1, P2, P3 | Basic differentiation in P1; product/quotient/chain in P2/P3 |
+| AQA        | Paper 1, 2 | First principles, rules, applications in P1; chain/product in P2 |
+| Edexcel    | P1, P2     | Similar split                                                    |
+| OCR (A)    | Paper 1, 2 | Includes connected rates in P2                                   |
+| CIE (9709) | P1, P2, P3 | Basic differentiation in P1; product/quotient/chain in P2/P3     |
 
-:::info
-The formula booklet lists derivatives of standard functions. You must know how to apply the
-Product, quotient, and chain rules, and how to find stationary points.
-:::
+:::info The formula booklet lists derivatives of standard functions. You must know how to apply the
+Product, quotient, and chain rules, and how to find stationary points. :::
 
 <hr />
 
@@ -39,11 +40,8 @@ Provided this limit exists. If it does, we say $f$ is **differentiable** at $x$.
 Line through the points $(x, f(x))$ and $(x+h, f(x+h))$. As $h \to 0$This secant approaches the
 Tangent, so $f'(x)$ is the gradient of the tangent at $x$.
 
-:::info
-Info
-There. Continuity is necessary but not sufficient — $f(x) = |x|$ is continuous at $x=0$ but not
-Differentiable.
-:::
+:::info Info There. Continuity is necessary but not sufficient — $f(x) = |x|$ is continuous at $x=0$
+but not Differentiable. :::
 
 <hr />
 
@@ -124,10 +122,8 @@ By the chain rule, $\dfrac{d}{dx}(v^{-1}) = -v^{-2}\dfrac{dv}{dx}$:
 
 $$= \frac{1}{v}\frac{du}{dx} - \frac{u}{v^2}\frac{dv}{dx} = \frac◆LB◆v\frac{du}{dx} - u\frac{dv}{dx}◆RB◆◆LB◆v^2◆RB◆ \quad \blacksquare$$
 
-:::warning
-The quotient rule has a **minus** sign in the numerator: $v\,u' - u\,v'$. Getting this
-The wrong way around is one of the most common errors in A Level mathematics.
-:::
+:::warning The quotient rule has a **minus** sign in the numerator: $v\,u' - u\,v'$. Getting this
+The wrong way around is one of the most common errors in A Level mathematics. :::
 
 <hr />
 
@@ -141,8 +137,8 @@ Where $u = g(x)$.
 
 ### 5.1 Proof (informal)
 
-If $x$ changes by $\delta x$Then $u$ changes by approximately $g'(x)\,\delta x$And $y$ changes
-By approximately $f'(u) \cdot g'(x)\,\delta x$. Dividing by $\delta x$ and taking the limit:
+If $x$ changes by $\delta x$Then $u$ changes by approximately $g'(x)\,\delta x$And $y$ changes By
+approximately $f'(u) \cdot g'(x)\,\delta x$. Dividing by $\delta x$ and taking the limit:
 
 $$\frac{dy}{dx} = f'(g(x)) \cdot g'(x)$$
 
@@ -150,8 +146,8 @@ A fully rigorous proof uses the mean value theorem to handle the case when $g'(x
 
 **Intuition.** The chain rule handles composite functions: "differentiate the outer function, then
 Multiply by the derivative of the inner function." Think of it as a gearing mechanism: a small turn
-In $x$ causes a turn in $u$Which causes a turn in $y$And the overall effect is the product of
-The two gear ratios.
+In $x$ causes a turn in $u$Which causes a turn in $y$And the overall effect is the product of The
+two gear ratios.
 
 <hr />
 
@@ -201,14 +197,14 @@ $$\frac{d}{dx}\tan x = \frac{d}{dx}\left(\frac◆LB◆\sin x◆RB◆◆LB◆\cos
 
 ### 6.6 Summary table
 
-| $f(x)$ | $f'(x)$ |
+| $f(x)$   | $f'(x)$    |
 | -------- | ---------- |
-| $x^n$ | $nx^{n-1}$ |
-| $e^x$ | $e^x$ |
-| $e^{kx}$ | $ke^{kx}$ |
-| $\ln x$ | $1/x$ |
-| $\sin x$ | $\cos x$ |
-| $\cos x$ | $-\sin x$ |
+| $x^n$    | $nx^{n-1}$ |
+| $e^x$    | $e^x$      |
+| $e^{kx}$ | $ke^{kx}$  |
+| $\ln x$  | $1/x$      |
+| $\sin x$ | $\cos x$   |
+| $\cos x$ | $-\sin x$  |
 | $\tan x$ | $\sec^2 x$ |
 
 <hr />
@@ -227,10 +223,10 @@ $$f''(x) = \frac{d^2y}{dx^2} = \frac{d}{dx}\left(\frac{dy}{dx}\right)$$
 
 There are three types:
 
-| Type | Condition | Shape |
-| ------------------- | ---------------------------------- | ------- |
-| Maximum | $f'(a) = 0$$f''(a) \lt{} 0$ | $\cap$ |
-| Minimum | $f'(a) = 0$$f''(a) \gt{} 0$ | $\cup$ |
+| Type                | Condition                        | Shape   |
+| ------------------- | -------------------------------- | ------- |
+| Maximum             | $f'(a) = 0$$f''(a) \lt{} 0$      | $\cap$  |
+| Minimum             | $f'(a) = 0$$f''(a) \gt{} 0$      | $\cup$  |
 | Point of inflection | $f'(a) = 0$$f''(a) = 0$ (may be) | S-shape |
 
 ### 7.3 Proof of the second derivative test (Taylor expansion intuition)
@@ -247,15 +243,13 @@ $$f(x) - f(a) \approx \frac{f''(a)}{2}(x-a)^2$$
 - If $f''(a) \lt{} 0$: $f(x) - f(a) \lt{} 0$ for $x \neq a$So $f(a)$ is a **maximum**.
 - If $f''(a) = 0$: the test is inconclusive; use a nature table or higher derivatives.
 
-:::warning
-Warning
-Point could still be a maximum, minimum, or inflection. Always use a nature table (checking the sign
-Of $f'$ on either side) if the second derivative test is inconclusive.
-:::
+:::warning Warning Point could still be a maximum, minimum, or inflection. Always use a nature table
+(checking the sign Of $f'$ on either side) if the second derivative test is inconclusive. :::
 
-<DesmosGraph title="Function, Derivative, and Tangent Line" expressions={["f(x)=x^3-6x^2+9x+1", "f'(x)=3x^2-12x+9"]} width={800} height={500} /> Observe how the
-Derivative relates to the gradient of the tangent line. Move the point along the curve to see how
-The tangent changes slope, and note where the derivative is zero at stationary points.
+<DesmosGraph title="Function, Derivative, and Tangent Line" expressions={["f(x)=x^3-6x^2+9x+1",
+"f'(x)=3x^2-12x+9"]} width={800} height={500} /> Observe how the Derivative relates to the gradient
+of the tangent line. Move the point along the curve to see how The tangent changes slope, and note
+where the derivative is zero at stationary points.
 
 <hr />
 
@@ -298,11 +292,8 @@ $f'(x) = 3x^2 - 3 = 3(x^2 - 1) = 3(x-1)(x+1)$.
 For $x \gt{} 1$: $(x-1) \gt{} 0$ and $(x+1) \gt{} 0$So $f'(x) \gt{} 0$. Hence $f$ is strictly
 Increasing for $x \gt{} 1$.
 
-:::tip
-Tip
-Inequality. When asked to "show that a function is increasing", verify that $f'(x) \gt{} 0$ (or
-$\geq 0$) on the given interval.
-:::
+:::tip Tip Inequality. When asked to "show that a function is increasing", verify that
+$f'(x) \gt{} 0$ (or $\geq 0$) on the given interval. :::
 
 <hr />
 
@@ -311,10 +302,8 @@ $\geq 0$) on the given interval.
 A **point of inflection** is where the curve changes concavity (from concave up to concave down, or
 Vice versa). This occurs where $f''(x) = 0$ and the sign of $f''(x)$ changes.
 
-:::warning
-Warning
-Point of inflection at $x = 0$But $f'(0) = 0$ in this case. Consider $f(x) = x^3 + x$:
-$f''(x) = 6x = 0$ at $x = 0$Giving a point of inflection, but $f'(0) = 1 \neq 0$.
+:::warning Warning Point of inflection at $x = 0$But $f'(0) = 0$ in this case. Consider
+$f(x) = x^3 + x$: $f''(x) = 6x = 0$ at $x = 0$Giving a point of inflection, but $f'(0) = 1 \neq 0$.
 :::
 
 <hr />
@@ -446,8 +435,8 @@ Show that $f(x) = e^x + e^{-x}$ is strictly increasing for $x \gt{} 0$.
 <summary>Solution 6</summary>
 $f'(x) = e^x - e^{-x}$.
 
-For $x \gt{} 0$: $e^x \gt{} 1 \gt{} e^{-x}$So $e^x - e^{-x} \gt{} 0$. Hence $f'(x) \gt{} 0$ for
-All $x \gt{} 0$So $f$ is strictly increasing on $(0, \infty)$.
+For $x \gt{} 0$: $e^x \gt{} 1 \gt{} e^{-x}$So $e^x - e^{-x} \gt{} 0$. Hence $f'(x) \gt{} 0$ for All
+$x \gt{} 0$So $f$ is strictly increasing on $(0, \infty)$.
 
 **If you get this wrong, revise:**
 [Increasing and Decreasing Functions](#9-increasing-and-decreasing-functions) — Section 9.
@@ -624,14 +613,15 @@ Section 8.
 
 ---
 
-:::tip
-Tip
-Ready to test your understanding of **Differentiation**? The [diagnostic test](/docs/alevel/maths/diagnostics/diag-differentiation) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
+:::tip Tip Ready to test your understanding of **Differentiation**? The
+[diagnostic test](/docs/alevel/maths/diagnostics/diag-differentiation) contains the hardest
+questions within the A-Level specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Differentiation with other pure mathematics topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine
+Differentiation with other pure mathematics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and
+building a personal test matrix. :::
 
 ## Common Pitfalls
 

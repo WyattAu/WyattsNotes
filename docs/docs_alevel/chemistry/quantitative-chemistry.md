@@ -1,6 +1,8 @@
 ---
 title: Quantitative Chemistry (Stoichiometry)
-description: "A-Level Chemistry notes on Quantitative Chemistry (Stoichiometry): The Mole Concept; Avogadro's Constant; Molar Mass; Molar Volume of Gases."
+description:
+  "A-Level Chemistry notes on Quantitative Chemistry (Stoichiometry): The Mole Concept; Avogadro's
+  Constant; Molar Mass; Molar Volume of Gases."
 date: 2026-04-21T00:00:00.000Z
 tags:
   - Chemistry
@@ -10,13 +12,15 @@ categories:
 slug: quantitative-chemistry
 sidebar_position: 8
 ---
+
 # Quantitative Chemistry (Stoichiometry)
 
 ## The Mole Concept
 
 ### Avogadro's Constant
 
-One mole of any substance contains exactly $N_A = 6.022 \times 10^{23}$ entities (atoms, molecules, ions, or formula units). This is the **Avogadro constant**.
+One mole of any substance contains exactly $N_A = 6.022 \times 10^{23}$ entities (atoms, molecules,
+ions, or formula units). This is the **Avogadro constant**.
 
 $$
 N = \frac{N}{N_A}
@@ -26,7 +30,8 @@ Where $n$ is the amount in moles and $N$ is the number of entities.
 
 ### Molar Mass
 
-The molar mass $M$ of a substance is the mass of one mole, expressed in $\mathrm{g/mol}$. It is numerically equal to the relative molecular mass $M_r$.
+The molar mass $M$ of a substance is the mass of one mole, expressed in $\mathrm{g/mol}$. It is
+numerically equal to the relative molecular mass $M_r$.
 
 $$
 N = \frac{m}{M}
@@ -36,7 +41,9 @@ Where $m$ is the mass in grams.
 
 ### Molar Volume of Gases
 
-At standard temperature and pressure (STP: $0^\circ\mathrm{C}$$1\,\mathrm{atm}$), one mole of any ideal gas occupies $22.4\,\mathrm{dm}^3$. At room temperature and pressure (RTP: $25^\circ\mathrm{C}$$1\,\mathrm{atm}$), one mole occupies $24.0\,\mathrm{dm}^3$.
+At standard temperature and pressure (STP: $0^\circ\mathrm{C}$$1\,\mathrm{atm}$), one mole of any
+ideal gas occupies $22.4\,\mathrm{dm}^3$. At room temperature and pressure (RTP:
+$25^\circ\mathrm{C}$$1\,\mathrm{atm}$), one mole occupies $24.0\,\mathrm{dm}^3$.
 
 $$
 N = \frac{V}{V_m}
@@ -51,6 +58,7 @@ Where $V$ is the volume in $\mathrm{dm}^3$ and $V_m$ is the molar volume.
 The empirical formula gives the simplest whole-number ratio of atoms in a compound.
 
 **Procedure:**
+
 1. Write the mass (or percentage mass) of each element.
 2. Divide each by its relative atomic mass to get moles.
 3. Divide all mole values by the smallest.
@@ -66,13 +74,14 @@ $$
 
 Where $n = M_r(\mathrm{molecular}) / M_r(\mathrm{empirical})$.
 
-**Worked Example.** A compound contains 40.0% carbon, 6.7% hydrogen, and 53.3% oxygen by mass. Its relative molecular mass is 60.0.
+**Worked Example.** A compound contains 40.0% carbon, 6.7% hydrogen, and 53.3% oxygen by mass. Its
+relative molecular mass is 60.0.
 
 | Element | Mass (%) | $M_r$ | Moles | Ratio |
-|---|---|---|---|---|
-| C | 40.0 | 12.0 | 3.33 | 1 |
-| H | 6.7 | 1.0 | 6.7 | 2 |
-| O | 53.3 | 16.0 | 3.33 | 1 |
+| ------- | -------- | ----- | ----- | ----- |
+| C       | 40.0     | 12.0  | 3.33  | 1     |
+| H       | 6.7      | 1.0   | 6.7   | 2     |
+| O       | 53.3     | 16.0  | 3.33  | 1     |
 
 Empirical formula: $\mathrm{CH}_2\mathrm{O}$ ($M_r = 30.0$).
 
@@ -86,9 +95,11 @@ Molecular formula: $\mathrm{C}_2\mathrm{H}_4\mathrm{O}_2$ (ethanoic acid).
 
 ### Stoichiometric Calculations
 
-Given a balanced chemical equation, the molar ratios define the proportions in which reactants combine and products form.
+Given a balanced chemical equation, the molar ratios define the proportions in which reactants
+combine and products form.
 
-**Worked Example.** Calculate the mass of $\mathrm{CaCO}_3$ required to produce $5.60\,\mathrm{dm}^3$ of $\mathrm{CO}_2$ at RTP.
+**Worked Example.** Calculate the mass of $\mathrm{CaCO}_3$ required to produce
+$5.60\,\mathrm{dm}^3$ of $\mathrm{CO}_2$ at RTP.
 
 $$
 \mathrm{CaCO}_3(s) + 2\mathrm{HCl}(aq) \to \mathrm{CaCl}_2(aq) + \mathrm{H}_2\mathrm{O}(l) + \mathrm{CO}_2(g)
@@ -106,14 +117,17 @@ $$
 
 ### Limiting Reagent
 
-The **limiting reagent** is the reactant that is entirely consumed first, limiting the amount of product formed. The reactant in excess is not completely used up.
+The **limiting reagent** is the reactant that is entirely consumed first, limiting the amount of
+product formed. The reactant in excess is not completely used up.
 
 **Procedure:**
+
 1. Calculate the number of moles of each reactant.
 2. Determine the mole ratio from the balanced equation.
 3. Identify which reactant produces the smaller amount of product.
 
-**Worked Example.** $10.0\,\mathrm{g}$ of $\mathrm{Al}$ reacts with $30.0\,\mathrm{g}$ of $\mathrm{Cl}_2$:
+**Worked Example.** $10.0\,\mathrm{g}$ of $\mathrm{Al}$ reacts with $30.0\,\mathrm{g}$ of
+$\mathrm{Cl}_2$:
 
 $$
 2\mathrm{Al} + 3\mathrm{Cl}_2 \to 2\mathrm{AlCl}_3
@@ -129,7 +143,8 @@ $$
 
 Required ratio: $n(\mathrm{Al}) : n(\mathrm{Cl}_2) = 2 : 3$.
 
-Check Al: $0.370\,\mathrm{mol}$ Al requires $\frac{3}{2} \times 0.370 = 0.555\,\mathrm{mol}$ $\mathrm{Cl}_2$. Only $0.423\,\mathrm{mol}$ available. $\mathrm{Cl}_2$ is limiting.
+Check Al: $0.370\,\mathrm{mol}$ Al requires $\frac{3}{2} \times 0.370 = 0.555\,\mathrm{mol}$
+$\mathrm{Cl}_2$. Only $0.423\,\mathrm{mol}$ available. $\mathrm{Cl}_2$ is limiting.
 
 $$
 N(\mathrm{AlCl}_3) = \frac{2}{3} \times 0.423 = 0.282\,\mathrm{mol}
@@ -145,19 +160,20 @@ $$
 \mathrm{Percentage yield} = \frac◆LB◆\mathrm{Actual yield}◆RB◆◆LB◆\mathrm{Theoretical yield}◆RB◆ \times 100\%
 $$
 
-Yields below 100% arise from incomplete reactions, side reactions, product loss during purification, and equilibrium limitations.
+Yields below 100% arise from incomplete reactions, side reactions, product loss during purification,
+and equilibrium limitations.
 
 ## Concentration Calculations
 
 ### Units of Concentration
 
-| Unit | Definition | Conversion |
-|---|---|---|
-| $\mathrm{mol/dm}^3$ (M) | Moles of solute per $\mathrm{dm}^3$ of solution | Standard SI-derived unit |
-| $\mathrm{g/dm}^3$ | Mass of solute per $\mathrm{dm}^3$ of solution | $c(\mathrm{g/dm}^3) = c(\mathrm{mol/dm}^3) \times M_r$ |
-| $\mathrm{ppm}$ | Parts per million (mg/kg or mg/dm$^3$ for dilute aqueous) | $1\,\mathrm{ppm} = 1\,\mathrm{mg/dm}^3$ |
-| % by mass | Mass of solute / mass of solution $\times 100\%$ | -- |
-| % by volume | Volume of solute / volume of solution $\times 100\%$ | -- |
+| Unit                    | Definition                                                | Conversion                                             |
+| ----------------------- | --------------------------------------------------------- | ------------------------------------------------------ |
+| $\mathrm{mol/dm}^3$ (M) | Moles of solute per $\mathrm{dm}^3$ of solution           | Standard SI-derived unit                               |
+| $\mathrm{g/dm}^3$       | Mass of solute per $\mathrm{dm}^3$ of solution            | $c(\mathrm{g/dm}^3) = c(\mathrm{mol/dm}^3) \times M_r$ |
+| $\mathrm{ppm}$          | Parts per million (mg/kg or mg/dm$^3$ for dilute aqueous) | $1\,\mathrm{ppm} = 1\,\mathrm{mg/dm}^3$                |
+| % by mass               | Mass of solute / mass of solution $\times 100\%$          | --                                                     |
+| % by volume             | Volume of solute / volume of solution $\times 100\%$      | --                                                     |
 
 ### Dilution
 
@@ -171,9 +187,12 @@ Where $c_1$$V_1$ are the initial concentration and volume, and $c_2$$V_2$ are th
 
 ### Acid-Base Titrations
 
-Titration is a technique for determining the concentration of an unknown solution by reacting it with a standard solution of known concentration.
+Titration is a technique for determining the concentration of an unknown solution by reacting it
+with a standard solution of known concentration.
 
-**Worked Example.** $25.0\,\mathrm{cm}^3$ of $\mathrm{NaOH}$ solution is titrated with $0.100\,\mathrm{mol/dm}^3$ $\mathrm{HCl}$. The mean titre is $21.5\,\mathrm{cm}^3$. Calculate the concentration of $\mathrm{NaOH}$.
+**Worked Example.** $25.0\,\mathrm{cm}^3$ of $\mathrm{NaOH}$ solution is titrated with
+$0.100\,\mathrm{mol/dm}^3$ $\mathrm{HCl}$. The mean titre is $21.5\,\mathrm{cm}^3$. Calculate the
+concentration of $\mathrm{NaOH}$.
 
 $$
 \mathrm{NaOH} + \mathrm{HCl} \to \mathrm{NaCl} + \mathrm{H}_2\mathrm{O}
@@ -191,19 +210,25 @@ $$
 
 ### Redox Titrations
 
-Redox titrations use oxidation-reduction reactions. A common example is the titration of $\mathrm{Fe}^{2+}$ with $\mathrm{MnO}_4^-$:
+Redox titrations use oxidation-reduction reactions. A common example is the titration of
+$\mathrm{Fe}^{2+}$ with $\mathrm{MnO}_4^-$:
 
 $$
 5\mathrm{Fe}^{2+}(aq) + \mathrm{MnO}_4^-(aq) + 8\mathrm{H}^+(aq) \to 5\mathrm{Fe}^{3+}(aq) + \mathrm{Mn}^{2+}(aq) + 4\mathrm{H}_2\mathrm{O}(l)
 $$
 
-Potassium manganate(VII) is self-indicating: the purple $\mathrm{MnO}_4^-$ is decolourised until the endpoint, when a persistent pink colour appears.
+Potassium manganate(VII) is self-indicating: the purple $\mathrm{MnO}_4^-$ is decolourised until the
+endpoint, when a persistent pink colour appears.
 
 ### Back Titrations
 
-Back titration is used when the analyte reacts too slowly, is insoluble, or cannot be directly titrated. An excess of a standard reagent is added, and the unreacted excess is titrated.
+Back titration is used when the analyte reacts too slowly, is insoluble, or cannot be directly
+titrated. An excess of a standard reagent is added, and the unreacted excess is titrated.
 
-**Worked Example.** $2.00\,\mathrm{g}$ of an insoluble metal carbonate $\mathrm{MCO}_3$ is reacted with $50.0\,\mathrm{cm}^3$ of $1.00\,\mathrm{mol/dm}^3$ $\mathrm{HCl}$ (excess). The remaining acid requires $24.5\,\mathrm{cm}^3$ of $1.00\,\mathrm{mol/dm}^3$ $\mathrm{NaOH}$ for neutralisation. Find the identity of metal $\mathrm{M}$.
+**Worked Example.** $2.00\,\mathrm{g}$ of an insoluble metal carbonate $\mathrm{MCO}_3$ is reacted
+with $50.0\,\mathrm{cm}^3$ of $1.00\,\mathrm{mol/dm}^3$ $\mathrm{HCl}$ (excess). The remaining acid
+requires $24.5\,\mathrm{cm}^3$ of $1.00\,\mathrm{mol/dm}^3$ $\mathrm{NaOH}$ for neutralisation. Find
+the identity of metal $\mathrm{M}$.
 
 $$
 \mathrm{MCO}_3 + 2\mathrm{HCl} \to \mathrm{MCl}_2 + \mathrm{CO}_2 + \mathrm{H}_2\mathrm{O}
@@ -233,9 +258,16 @@ $$
 A_r(\mathrm{M}) = 156.9 - 60.0 = 96.9
 $$
 
-The metal is **barium** ($A_r = 137.3$ is closest for Group 2; recalculating: $M_r = 2.00/0.01275 = 156.9$; $A_r(\mathrm{M}) = 156.9 - 12.0 - 48.0 = 96.9$Which corresponds to **molybdenum**. However, for Group 2 metal carbonates, this suggests a miscalculation. Let us recheck.)
+The metal is **barium** ($A_r = 137.3$ is closest for Group 2; recalculating:
+$M_r = 2.00/0.01275 = 156.9$; $A_r(\mathrm{M}) = 156.9 - 12.0 - 48.0 = 96.9$Which corresponds to
+**molybdenum**. However, for Group 2 metal carbonates, this suggests a miscalculation. Let us
+recheck.)
 
-Actually: $\mathrm{MCO}_3$: $M_r = M + 12 + 48 = M + 60$. So $M = 96.9$But this is not a Group 2 metal. The issue is that the carbonate is $\mathrm{MCO}_3$ where $n(\mathrm{HCl}) = 2n(\mathrm{MCO}_3)$ is correct. If the data yields $A_r = 96.9$Then this is not a standard Group 2 carbonate. In practice, the exam question would yield a clean result such as $\mathrm{CaCO}_3$ or $\mathrm{MgCO}_3$.
+Actually: $\mathrm{MCO}_3$: $M_r = M + 12 + 48 = M + 60$. So $M = 96.9$But this is not a Group 2
+metal. The issue is that the carbonate is $\mathrm{MCO}_3$ where
+$n(\mathrm{HCl}) = 2n(\mathrm{MCO}_3)$ is correct. If the data yields $A_r = 96.9$Then this is not a
+standard Group 2 carbonate. In practice, the exam question would yield a clean result such as
+$\mathrm{CaCO}_3$ or $\mathrm{MgCO}_3$.
 
 ## The Ideal Gas Equation
 
@@ -243,15 +275,16 @@ $$
 PV = nRT
 $$
 
-| Symbol | Meaning | SI Unit |
-|---|---|---|
-| $p$ | Pressure | $\mathrm{Pa}$ ($1\,\mathrm{atm} = 101325\,\mathrm{Pa}$) |
-| $V$ | Volume | $\mathrm{m}^3$ ($1\,\mathrm{dm}^3 = 10^{-3}\,\mathrm{m}^3$) |
-| $n$ | Amount | $\mathrm{mol}$ |
-| $R$ | Gas constant | $8.314\,\mathrm{J\,mol^{-1}\,K^{-1}}$ |
-| $T$ | Temperature | $\mathrm{K}$ ($T\,\mathrm{K} = T\,^\circ\mathrm{C} + 273.15$) |
+| Symbol | Meaning      | SI Unit                                                       |
+| ------ | ------------ | ------------------------------------------------------------- |
+| $p$    | Pressure     | $\mathrm{Pa}$ ($1\,\mathrm{atm} = 101325\,\mathrm{Pa}$)       |
+| $V$    | Volume       | $\mathrm{m}^3$ ($1\,\mathrm{dm}^3 = 10^{-3}\,\mathrm{m}^3$)   |
+| $n$    | Amount       | $\mathrm{mol}$                                                |
+| $R$    | Gas constant | $8.314\,\mathrm{J\,mol^{-1}\,K^{-1}}$                         |
+| $T$    | Temperature  | $\mathrm{K}$ ($T\,\mathrm{K} = T\,^\circ\mathrm{C} + 273.15$) |
 
-**Worked Example.** Calculate the volume occupied by $0.500\,\mathrm{mol}$ of an ideal gas at $100\,\mathrm{kPa}$ and $298\,\mathrm{K}$.
+**Worked Example.** Calculate the volume occupied by $0.500\,\mathrm{mol}$ of an ideal gas at
+$100\,\mathrm{kPa}$ and $298\,\mathrm{K}$.
 
 $$
 V = \frac{nRT}{p} = \frac◆LB◆0.500 \times 8.314 \times 298◆RB◆◆LB◆100 \times 10^3◆RB◆ = \frac{1239}{100000} = 0.01239\,\mathrm{m}^3 = 12.4\,\mathrm{dm}^3
@@ -260,11 +293,14 @@ $$
 ### Deviations from Ideality
 
 The ideal gas model assumes:
+
 1. Gas particles have negligible volume.
 2. No intermolecular forces between particles.
 3. All collisions are perfectly elastic.
 
-Real gases deviate from ideality at high pressure (particles are forced closer, so their volume matters and intermolecular forces become significant) and low temperature (particles move more slowly, so intermolecular forces have a greater effect).
+Real gases deviate from ideality at high pressure (particles are forced closer, so their volume
+matters and intermolecular forces become significant) and low temperature (particles move more
+slowly, so intermolecular forces have a greater effect).
 
 The **van der Waals equation** corrects for these:
 
@@ -272,7 +308,8 @@ $$
 \left(p + \frac{an^2}{V^2}\right)(V - nb) = nRT
 $$
 
-Where $a$ corrects for intermolecular forces and $b$ corrects for molecular volume. This is beyond A-Level but useful for understanding the direction of deviations.
+Where $a$ corrects for intermolecular forces and $b$ corrects for molecular volume. This is beyond
+A-Level but useful for understanding the direction of deviations.
 
 ## Thermochemical Calculations
 
@@ -284,12 +321,12 @@ $$
 Q = mc\Delta T
 $$
 
-| Symbol | Meaning | Unit |
-|---|---|---|
-| $q$ | Heat energy | $\mathrm{J}$ |
-| $m$ | Mass of solution | $\mathrm{g}$ |
-| $c$ | Specific heat capacity | $\mathrm{J\,g^{-1}\,K^{-1}}$ (water: $4.18$) |
-| $\Delta T$ | Temperature change | $\mathrm{K}$ or $^\circ\mathrm{C}$ |
+| Symbol     | Meaning                | Unit                                         |
+| ---------- | ---------------------- | -------------------------------------------- |
+| $q$        | Heat energy            | $\mathrm{J}$                                 |
+| $m$        | Mass of solution       | $\mathrm{g}$                                 |
+| $c$        | Specific heat capacity | $\mathrm{J\,g^{-1}\,K^{-1}}$ (water: $4.18$) |
+| $\Delta T$ | Temperature change     | $\mathrm{K}$ or $^\circ\mathrm{C}$           |
 
 Then:
 
@@ -299,7 +336,10 @@ $$
 
 (negative because exothermic reactions release heat to the surroundings).
 
-**Worked Example.** $50.0\,\mathrm{cm}^3$ of $1.00\,\mathrm{mol/dm}^3$ $\mathrm{HCl}$ is added to $50.0\,\mathrm{cm}^3$ of $1.00\,\mathrm{mol/dm}^3$ $\mathrm{NaOH}$ in a polystyrene cup. The temperature rises from $19.5^\circ\mathrm{C}$ to $26.3^\circ\mathrm{C}$. Calculate the enthalpy of neutralisation.
+**Worked Example.** $50.0\,\mathrm{cm}^3$ of $1.00\,\mathrm{mol/dm}^3$ $\mathrm{HCl}$ is added to
+$50.0\,\mathrm{cm}^3$ of $1.00\,\mathrm{mol/dm}^3$ $\mathrm{NaOH}$ in a polystyrene cup. The
+temperature rises from $19.5^\circ\mathrm{C}$ to $26.3^\circ\mathrm{C}$. Calculate the enthalpy of
+neutralisation.
 
 $$
 M = 50.0 + 50.0 = 100.0\,\mathrm{g}
@@ -323,7 +363,9 @@ $$
 
 ### Hess's Law
 
-Hess's Law states that the enthalpy change for a reaction is independent of the route taken, provided the initial and final conditions are the same. This allows calculation of enthalpy changes that cannot be measured directly.
+Hess's Law states that the enthalpy change for a reaction is independent of the route taken,
+provided the initial and final conditions are the same. This allows calculation of enthalpy changes
+that cannot be measured directly.
 
 **Worked Example.** Calculate $\Delta H_f^\circ$ of $\mathrm{CH}_4$ given:
 
@@ -347,46 +389,58 @@ $$
 
 ### Bond Enthalpies
 
-The **mean bond enthalpy** is the average enthalpy change when one mole of a specified type of bond is broken in the gaseous state, averaged over a range of compounds.
+The **mean bond enthalpy** is the average enthalpy change when one mole of a specified type of bond
+is broken in the gaseous state, averaged over a range of compounds.
 
 $$
 \Delta H \approx \sum \mathrm{(bonds broken)} - \sum \mathrm{(bonds formed)}
 $$
 
-**Worked Example.** Estimate the enthalpy of combustion of $\mathrm{CH}_4$ using bond enthalpies ($\mathrm{kJ/mol}$): $\mathrm{C-H} = 413$$\mathrm{O}=\mathrm{O} = 498$$\mathrm{C}=\mathrm{O} = 805$$\mathrm{O-H} = 464$.
+**Worked Example.** Estimate the enthalpy of combustion of $\mathrm{CH}_4$ using bond enthalpies
+($\mathrm{kJ/mol}$):
+$\mathrm{C-H} = 413$$\mathrm{O}=\mathrm{O} = 498$$\mathrm{C}=\mathrm{O} = 805$$\mathrm{O-H} = 464$.
 
 $$
 \mathrm{CH}_4 + 2\mathrm{O}_2 \to \mathrm{CO}_2 + 2\mathrm{H}_2\mathrm{O}
 $$
 
-Bonds broken: $4 \times \mathrm{C-H} + 2 \times \mathrm{O}=\mathrm{O} = 4(413) + 2(498) = 1652 + 996 = 2648\,\mathrm{kJ/mol}$
+Bonds broken:
+$4 \times \mathrm{C-H} + 2 \times \mathrm{O}=\mathrm{O} = 4(413) + 2(498) = 1652 + 996 = 2648\,\mathrm{kJ/mol}$
 
-Bonds formed: $2 \times \mathrm{C}=\mathrm{O} + 4 \times \mathrm{O-H} = 2(805) + 4(464) = 1610 + 1856 = 3466\,\mathrm{kJ/mol}$
+Bonds formed:
+$2 \times \mathrm{C}=\mathrm{O} + 4 \times \mathrm{O-H} = 2(805) + 4(464) = 1610 + 1856 = 3466\,\mathrm{kJ/mol}$
 
 $$
 \Delta H = 2648 - 3466 = -818\,\mathrm{kJ/mol}
 $$
 
-This is less exothermic than the literature value ($-890\,\mathrm{kJ/mol}$) because mean bond enthalpies are averages and do not account for the specific molecular environment.
+This is less exothermic than the literature value ($-890\,\mathrm{kJ/mol}$) because mean bond
+enthalpies are averages and do not account for the specific molecular environment.
 
 ## Common Pitfalls
 
-1. **Unit errors in gas calculations.** Pressure must be in $\mathrm{Pa}$Volume in $\mathrm{m}^3$. Converting $\mathrm{cm}^3$ to $\mathrm{dm}^3$ to $\mathrm{m}^3$ is a frequent source of error.
+1. **Unit errors in gas calculations.** Pressure must be in $\mathrm{Pa}$Volume in $\mathrm{m}^3$.
+   Converting $\mathrm{cm}^3$ to $\mathrm{dm}^3$ to $\mathrm{m}^3$ is a frequent source of error.
 
-2. **Sign convention for enthalpy.** Exothermic is negative. Many students lose marks by writing positive values for exothermic processes.
+2. **Sign convention for enthalpy.** Exothermic is negative. Many students lose marks by writing
+   positive values for exothermic processes.
 
 3. **Confusing mass of solute with mass of solution** in concentration calculations.
 
-4. **Forgetting to account for the calorimeter** in calorimetry. The heat absorbed by the container should be included if significant.
+4. **Forgetting to account for the calorimeter** in calorimetry. The heat absorbed by the container
+   should be included if significant.
 
-5. **Using mean bond enthalpies for species in condensed phases.** Bond enthalpies are defined for gaseous species. Applying them directly to solids or liquids introduces errors because enthalpy of vaporisation/fusion is not accounted for.
+5. **Using mean bond enthalpies for species in condensed phases.** Bond enthalpies are defined for
+   gaseous species. Applying them directly to solids or liquids introduces errors because enthalpy
+   of vaporisation/fusion is not accounted for.
 
 ## Practice Problems
 
 <details>
 <summary>Problem 1</summary>
 
-$12.5\,\mathrm{g}$ of $\mathrm{CuCO}_3$ is heated until it decomposes completely. Calculate the volume of $\mathrm{CO}_2$ produced at RTP.
+$12.5\,\mathrm{g}$ of $\mathrm{CuCO}_3$ is heated until it decomposes completely. Calculate the
+volume of $\mathrm{CO}_2$ produced at RTP.
 
 $$
 \mathrm{CuCO}_3(s) \to \mathrm{CuO}(s) + \mathrm{CO}_2(g)
@@ -411,7 +465,8 @@ $$
 <details>
 <summary>Problem 2</summary>
 
-A solution of $\mathrm{H}_2\mathrm{SO}_4$ has concentration $0.0500\,\mathrm{mol/dm}^3$. Convert this to $\mathrm{g/dm}^3$ and to $\mathrm{ppm}$.
+A solution of $\mathrm{H}_2\mathrm{SO}_4$ has concentration $0.0500\,\mathrm{mol/dm}^3$. Convert
+this to $\mathrm{g/dm}^3$ and to $\mathrm{ppm}$.
 
 **Solution:**
 
@@ -430,7 +485,8 @@ $$
 \mathrm{N}_2(g) + 3\mathrm{H}_2(g) \to 2\mathrm{NH}_3(g)
 $$
 
-Given bond enthalpies ($\mathrm{kJ/mol}$): $\mathrm{N}\equiv\mathrm{N} = 945$$\mathrm{H-H} = 436$$\mathrm{N-H} = 391$.
+Given bond enthalpies ($\mathrm{kJ/mol}$):
+$\mathrm{N}\equiv\mathrm{N} = 945$$\mathrm{H-H} = 436$$\mathrm{N-H} = 391$.
 
 **Solution:**
 
@@ -449,7 +505,10 @@ $$
 <details>
 <summary>Problem 4</summary>
 
-A sample of impure $\mathrm{Na}_2\mathrm{CO}_3$ weighing $1.35\,\mathrm{g}$ is dissolved in water and titrated with $0.200\,\mathrm{mol/dm}^3$ $\mathrm{HCl}$. The methyl orange endpoint is reached after $22.40\,\mathrm{cm}^3$ of acid. Calculate the percentage purity of the $\mathrm{Na}_2\mathrm{CO}_3$.
+A sample of impure $\mathrm{Na}_2\mathrm{CO}_3$ weighing $1.35\,\mathrm{g}$ is dissolved in water
+and titrated with $0.200\,\mathrm{mol/dm}^3$ $\mathrm{HCl}$. The methyl orange endpoint is reached
+after $22.40\,\mathrm{cm}^3$ of acid. Calculate the percentage purity of the
+$\mathrm{Na}_2\mathrm{CO}_3$.
 
 **Solution:**
 
@@ -480,7 +539,11 @@ The sample is 17.6% $\mathrm{Na}_2\mathrm{CO}_3$ by mass.
 <details>
 <summary>Problem 5</summary>
 
-In an experiment to determine the enthalpy of combustion of ethanol, $1.50\,\mathrm{g}$ of ethanol ($\mathrm{C}_2\mathrm{H}_5\mathrm{OH}$) was burned to heat $200\,\mathrm{g}$ of water in a copper calorimeter. The temperature of the water rose from $18.0^\circ\mathrm{C}$ to $34.5^\circ\mathrm{C}$. Calculate the experimental enthalpy of combustion and explain why it differs from the literature value ($-1367\,\mathrm{kJ/mol}$).
+In an experiment to determine the enthalpy of combustion of ethanol, $1.50\,\mathrm{g}$ of ethanol
+($\mathrm{C}_2\mathrm{H}_5\mathrm{OH}$) was burned to heat $200\,\mathrm{g}$ of water in a copper
+calorimeter. The temperature of the water rose from $18.0^\circ\mathrm{C}$ to
+$34.5^\circ\mathrm{C}$. Calculate the experimental enthalpy of combustion and explain why it differs
+from the literature value ($-1367\,\mathrm{kJ/mol}$).
 
 **Solution:**
 
@@ -496,11 +559,16 @@ $$
 \Delta H_c = -\frac{13.794}{0.0325} = -424\,\mathrm{kJ/mol}
 $$
 
-The experimental value ($-424\,\mathrm{kJ/mol}$) is much less exothermic than the literature value ($-1367\,\mathrm{kJ/mol}$). The discrepancy is due to:
+The experimental value ($-424\,\mathrm{kJ/mol}$) is much less exothermic than the literature value
+($-1367\,\mathrm{kJ/mol}$). The discrepancy is due to:
 
-1. **Heat loss to the surroundings** (air, calorimeter). Not all heat from combustion is transferred to the water. This is the largest source of error.
-2. **Incomplete combustion.** Ethanol may produce $\mathrm{CO}$ instead of $\mathrm{CO}_2$Releasing less heat.
-3. **The calorimeter itself absorbs heat.** The copper calorimeter has a heat capacity that should be included: $q_\mathrm{total} = (m_\mathrm{water}c_\mathrm{water} + C_\mathrm{calorimeter})\Delta T$.
+1. **Heat loss to the surroundings** (air, calorimeter). Not all heat from combustion is transferred
+   to the water. This is the largest source of error.
+2. **Incomplete combustion.** Ethanol may produce $\mathrm{CO}$ instead of $\mathrm{CO}_2$Releasing
+   less heat.
+3. **The calorimeter itself absorbs heat.** The copper calorimeter has a heat capacity that should
+   be included:
+   $q_\mathrm{total} = (m_\mathrm{water}c_\mathrm{water} + C_\mathrm{calorimeter})\Delta T$.
 4. **Evaporation of ethanol.** Some ethanol may evaporate before or during combustion.
 
 </details>
@@ -515,7 +583,9 @@ $$
 \%\,\mathrm{yield} = \frac◆LB◆\mathrm{actual\ yield}◆RB◆◆LB◆\mathrm{theoretical\ yield}◆RB◆ \times 100
 $$
 
-**Worked Example.** $5.00\,\mathrm{g}$ of $\mathrm{CH}_3\mathrm{CH}_2\mathrm{Br}$ (bromoethane, $M_r = 109$) reacts with excess $\mathrm{NaOH}$ to give $2.10\,\mathrm{g}$ of $\mathrm{CH}_3\mathrm{CH}_2\mathrm{OH}$ (ethanol, $M_r = 46$).
+**Worked Example.** $5.00\,\mathrm{g}$ of $\mathrm{CH}_3\mathrm{CH}_2\mathrm{Br}$ (bromoethane,
+$M_r = 109$) reacts with excess $\mathrm{NaOH}$ to give $2.10\,\mathrm{g}$ of
+$\mathrm{CH}_3\mathrm{CH}_2\mathrm{OH}$ (ethanol, $M_r = 46$).
 
 $$
 N(\mathrm{CH}_3\mathrm{CH}_2\mathrm{Br}) = \frac{5.00}{109} = 0.0459\,\mathrm{mol}
@@ -533,7 +603,8 @@ $$
 
 ### Atom Economy
 
-Atom economy measures the efficiency of a reaction in terms of how many atoms from the reactants end up in the desired product:
+Atom economy measures the efficiency of a reaction in terms of how many atoms from the reactants end
+up in the desired product:
 
 $$
 \mathrm{Atom\ economy} = \frac◆LB◆M_r\ \mathrm{of\ desired\ product}◆RB◆◆LB◆\sum M_r\ \mathrm{of\ all\ products}◆RB◆ \times 100
@@ -541,25 +612,33 @@ $$
 
 **Worked Example.** Compare the atom economy of two routes to ethanol:
 
-Route 1 (hydration of ethene): $\mathrm{CH}_2=\mathrm{CH}_2 + \mathrm{H}_2\mathrm{O} \to \mathrm{CH}_3\mathrm{CH}_2\mathrm{OH}$
+Route 1 (hydration of ethene):
+$\mathrm{CH}_2=\mathrm{CH}_2 + \mathrm{H}_2\mathrm{O} \to \mathrm{CH}_3\mathrm{CH}_2\mathrm{OH}$
 
 Atom economy = $46.0 / 46.0 \times 100 = 100\%$
 
-Route 2 (fermentation): $\mathrm{C}_6\mathrm{H}_{12}\mathrm{O}_6 \to 2\mathrm{C}_2\mathrm{H}_5\mathrm{OH} + 2\mathrm{CO}_2$
+Route 2 (fermentation):
+$\mathrm{C}_6\mathrm{H}_{12}\mathrm{O}_6 \to 2\mathrm{C}_2\mathrm{H}_5\mathrm{OH} + 2\mathrm{CO}_2$
 
-Atom economy = $(2 \times 46.0) / (2 \times 46.0 + 2 \times 44.0) \times 100 = 92 / 180 \times 100 = 51.1\%$
+Atom economy =
+$(2 \times 46.0) / (2 \times 46.0 + 2 \times 44.0) \times 100 = 92 / 180 \times 100 = 51.1\%$
 
-Route 1 has higher atom economy (100%) because the only product is the desired one. Route 2 produces $\mathrm{CO}_2$ as a byproduct, reducing atom economy.
+Route 1 has higher atom economy (100%) because the only product is the desired one. Route 2 produces
+$\mathrm{CO}_2$ as a byproduct, reducing atom economy.
 
 ### Green Chemistry Principles
 
-Atom economy is one of the 12 principles of green chemistry. High atom economy reactions are preferred because they minimise waste, reduce raw material consumption, and lower environmental impact. Addition reactions have 100% atom economy; substitution reactions have lower atom economy.
+Atom economy is one of the 12 principles of green chemistry. High atom economy reactions are
+preferred because they minimise waste, reduce raw material consumption, and lower environmental
+impact. Addition reactions have 100% atom economy; substitution reactions have lower atom economy.
 
 ## Limiting Reagent Calculations
 
-When reactants are not in stoichiometric ratio, the **limiting reagent** is the one that produces the least amount of product. The excess reagent remains unreacted.
+When reactants are not in stoichiometric ratio, the **limiting reagent** is the one that produces
+the least amount of product. The excess reagent remains unreacted.
 
-**Worked Example.** $12.0\,\mathrm{g}$ of carbon is burned in $40.0\,\mathrm{g}$ of oxygen. Calculate the mass of $\mathrm{CO}_2$ produced and identify the limiting reagent.
+**Worked Example.** $12.0\,\mathrm{g}$ of carbon is burned in $40.0\,\mathrm{g}$ of oxygen.
+Calculate the mass of $\mathrm{CO}_2$ produced and identify the limiting reagent.
 
 $$
 \mathrm{C}(s) + \mathrm{O}_2(g) \to \mathrm{CO}_2(g)
@@ -573,7 +652,8 @@ $$
 N(\mathrm{O}_2) = \frac{40.0}{32.0} = 1.25\,\mathrm{mol}
 $$
 
-Stoichiometry requires 1 mol $\mathrm{O}_2$ per mol C. Carbon is limiting (1.00 mol C requires 1.00 mol $\mathrm{O}_2$And 1.25 mol $\mathrm{O}_2$ is available).
+Stoichiometry requires 1 mol $\mathrm{O}_2$ per mol C. Carbon is limiting (1.00 mol C requires 1.00
+mol $\mathrm{O}_2$And 1.25 mol $\mathrm{O}_2$ is available).
 
 $$
 M(\mathrm{CO}_2) = 1.00 \times 44.0 = 44.0\,\mathrm{g}
@@ -583,15 +663,20 @@ Excess $\mathrm{O}_2$ = $1.25 - 1.00 = 0.25\,\mathrm{mol}$ = $8.0\,\mathrm{g}$ r
 
 ## Back Titration
 
-A back titration is used when the substance being analysed reacts too slowly, is insoluble, or cannot be determined by direct titration.
+A back titration is used when the substance being analysed reacts too slowly, is insoluble, or
+cannot be determined by direct titration.
 
 ### Principle
 
-An excess of a standard reagent is added to the analyte, and the unreacted excess is titrated with a second standard solution.
+An excess of a standard reagent is added to the analyte, and the unreacted excess is titrated with a
+second standard solution.
 
 ### Worked Example
 
-$2.00\,\mathrm{g}$ of an impure sample of calcium carbonate is reacted with $50.0\,\mathrm{cm}^3$ of $1.00\,\mathrm{mol/dm}^3$ hydrochloric acid (excess). The remaining acid requires $28.5\,\mathrm{cm}^3$ of $0.500\,\mathrm{mol/dm}^3$ $\mathrm{NaOH}$ for neutralisation. Calculate the percentage purity of the calcium carbonate.
+$2.00\,\mathrm{g}$ of an impure sample of calcium carbonate is reacted with $50.0\,\mathrm{cm}^3$ of
+$1.00\,\mathrm{mol/dm}^3$ hydrochloric acid (excess). The remaining acid requires
+$28.5\,\mathrm{cm}^3$ of $0.500\,\mathrm{mol/dm}^3$ $\mathrm{NaOH}$ for neutralisation. Calculate
+the percentage purity of the calcium carbonate.
 
 **Step 1:** Calculate the total moles of $\mathrm{HCl}$ added.
 
@@ -635,13 +720,18 @@ $$
 
 ## Water of Crystallisation
 
-Many ionic compounds crystallise with water molecules incorporated into the crystal lattice. The formula is written as $\mathrm{CuSO}_4\cdot5\mathrm{H}_2\mathrm{O}$Where $5\mathrm{H}_2\mathrm{O}$ is the water of crystallisation.
+Many ionic compounds crystallise with water molecules incorporated into the crystal lattice. The
+formula is written as $\mathrm{CuSO}_4\cdot5\mathrm{H}_2\mathrm{O}$Where $5\mathrm{H}_2\mathrm{O}$
+is the water of crystallisation.
 
 ### Determining the Formula of a Hydrate
 
-**Method:** Heat a known mass of the hydrated salt to constant mass, driving off the water. The mass lost is the mass of water.
+**Method:** Heat a known mass of the hydrated salt to constant mass, driving off the water. The mass
+lost is the mass of water.
 
-**Worked Example.** $5.00\,\mathrm{g}$ of hydrated barium chloride ($\mathrm{BaCl}_2\cdot x\mathrm{H}_2\mathrm{O}$) is heated to constant mass, leaving $4.26\,\mathrm{g}$ of anhydrous $\mathrm{BaCl}_2$. Find $x$.
+**Worked Example.** $5.00\,\mathrm{g}$ of hydrated barium chloride
+($\mathrm{BaCl}_2\cdot x\mathrm{H}_2\mathrm{O}$) is heated to constant mass, leaving
+$4.26\,\mathrm{g}$ of anhydrous $\mathrm{BaCl}_2$. Find $x$.
 
 Mass of water lost $= 5.00 - 4.26 = 0.74\,\mathrm{g}$
 
@@ -663,9 +753,11 @@ The formula is $\mathrm{BaCl}_2\cdot2\mathrm{H}_2\mathrm{O}$.
 
 ### Molar Volume
 
-At room temperature and pressure ($25^\circ\mathrm{C}$$100\,\mathrm{kPa}$), one mole of any ideal gas occupies approximately $24.0\,\mathrm{dm}^3$.
+At room temperature and pressure ($25^\circ\mathrm{C}$$100\,\mathrm{kPa}$), one mole of any ideal
+gas occupies approximately $24.0\,\mathrm{dm}^3$.
 
-At standard temperature and pressure ($0^\circ\mathrm{C}$$100\,\mathrm{kPa}$), one mole occupies approximately $22.7\,\mathrm{dm}^3$.
+At standard temperature and pressure ($0^\circ\mathrm{C}$$100\,\mathrm{kPa}$), one mole occupies
+approximately $22.7\,\mathrm{dm}^3$.
 
 ### Using the Ideal Gas Equation
 
@@ -673,13 +765,16 @@ $$
 PV = nRT
 $$
 
-Where $p$ is pressure ($\mathrm{Pa}$), $V$ is volume ($\mathrm{m}^3$), $n$ is moles, $R = 8.314\,\mathrm{J\,mol^{-1}\,K^{-1}}$And $T$ is temperature ($\mathrm{K}$).
+Where $p$ is pressure ($\mathrm{Pa}$), $V$ is volume ($\mathrm{m}^3$), $n$ is moles,
+$R = 8.314\,\mathrm{J\,mol^{-1}\,K^{-1}}$And $T$ is temperature ($\mathrm{K}$).
 
-**Unit conversions:** $1\,\mathrm{dm}^3 = 10^{-3}\,\mathrm{m}^3$$100\,\mathrm{kPa} = 10^5\,\mathrm{Pa}$.
+**Unit conversions:**
+$1\,\mathrm{dm}^3 = 10^{-3}\,\mathrm{m}^3$$100\,\mathrm{kPa} = 10^5\,\mathrm{Pa}$.
 
 ### Worked Example
 
-Calculate the volume of $\mathrm{CO}_2$ produced at $298\,\mathrm{K}$ and $100\,\mathrm{kPa}$ when $10.0\,\mathrm{g}$ of calcium carbonate decomposes.
+Calculate the volume of $\mathrm{CO}_2$ produced at $298\,\mathrm{K}$ and $100\,\mathrm{kPa}$ when
+$10.0\,\mathrm{g}$ of calcium carbonate decomposes.
 
 $$
 \mathrm{CaCO}_3 \to \mathrm{CaO} + \mathrm{CO}_2
@@ -693,18 +788,19 @@ $$
 V = \frac{nRT}{p} = \frac◆LB◆0.0999 \times 8.314 \times 298◆RB◆◆LB◆100 \times 10^3◆RB◆ = \frac{247.6}{100000} = 2.48 \times 10^{-3}\,\mathrm{m}^3 = 2.48\,\mathrm{dm}^3
 $$
 
-Alternatively, using molar volume: $V = 0.0999 \times 24.0 = 2.40\,\mathrm{dm}^3$ (close but not exact because the molar volume approximation depends on the conditions).
+Alternatively, using molar volume: $V = 0.0999 \times 24.0 = 2.40\,\mathrm{dm}^3$ (close but not
+exact because the molar volume approximation depends on the conditions).
 
 ## Uncertainty and Error Analysis
 
 ### Types of Error
 
-| Error type | Description | Effect on result |
-|---|---|---|
-| Systematic | Consistent error in one direction (e.g. Faulty balance) | Affects accuracy; does not affect precision |
-| Random | Variability in repeated measurements | Affects precision; reduced by repeats |
-| Zero error | Instrument does not read zero when it should | Systematic; affects all readings by the same amount |
-| Parallax error | Reading a scale from the wrong angle | Systematic |
+| Error type     | Description                                             | Effect on result                                    |
+| -------------- | ------------------------------------------------------- | --------------------------------------------------- |
+| Systematic     | Consistent error in one direction (e.g. Faulty balance) | Affects accuracy; does not affect precision         |
+| Random         | Variability in repeated measurements                    | Affects precision; reduced by repeats               |
+| Zero error     | Instrument does not read zero when it should            | Systematic; affects all readings by the same amount |
+| Parallax error | Reading a scale from the wrong angle                    | Systematic                                          |
 
 ### Calculating Percentage Uncertainty
 
@@ -719,7 +815,9 @@ $$
 - **Addition/subtraction:** Add absolute uncertainties.
 - **Multiplication/division:** Add percentage uncertainties.
 
-**Worked Example.** In a titration, the burette readings are $12.50 \pm 0.05\,\mathrm{cm}^3$ (initial) and $26.80 \pm 0.05\,\mathrm{cm}^3$ (final). The titre is $14.30 \pm 0.10\,\mathrm{cm}^3$. If the concentration is $0.100 \pm 0.001\,\mathrm{mol/dm}^3$:
+**Worked Example.** In a titration, the burette readings are $12.50 \pm 0.05\,\mathrm{cm}^3$
+(initial) and $26.80 \pm 0.05\,\mathrm{cm}^3$ (final). The titre is $14.30 \pm 0.10\,\mathrm{cm}^3$.
+If the concentration is $0.100 \pm 0.001\,\mathrm{mol/dm}^3$:
 
 Moles $= 0.100 \times 0.01430 = 1.430 \times 10^{-3}\,\mathrm{mol}$
 
@@ -737,9 +835,14 @@ Result: $(1.43 \pm 0.02) \times 10^{-3}\,\mathrm{mol}$
 
 ### Back-Titration Calculations
 
-Back-titration is used to determine the concentration of a solution that reacts with a standard solution but does not have a suitable indicator. The procedure involves adding excess standard reagent and then titrating the excess.
+Back-titration is used to determine the concentration of a solution that reacts with a standard
+solution but does not have a suitable indicator. The procedure involves adding excess standard
+reagent and then titrating the excess.
 
-**Worked Example:** $25.0\,\mathrm{cm}^3$ of an impure sample of $\mathrm{H}_2\mathrm{SO}_4$ is reacted with $25.0\,\mathrm{cm}^3$ of $0.500\,\mathrm{mol\,dm^{-3}}$ $\mathrm{NaOH}$. The excess $\mathrm{NaOH}$ requires $15.0\,\mathrm{cm}^3$ of $0.200\,\mathrm{mol\,dm^{-3}}$ $\mathrm{HCl}$ for neutralisation. Calculate the concentration of $\mathrm{H}_2\mathrm{SO}_4$.
+**Worked Example:** $25.0\,\mathrm{cm}^3$ of an impure sample of $\mathrm{H}_2\mathrm{SO}_4$ is
+reacted with $25.0\,\mathrm{cm}^3$ of $0.500\,\mathrm{mol\,dm^{-3}}$ $\mathrm{NaOH}$. The excess
+$\mathrm{NaOH}$ requires $15.0\,\mathrm{cm}^3$ of $0.200\,\mathrm{mol\,dm^{-3}}$ $\mathrm{HCl}$ for
+neutralisation. Calculate the concentration of $\mathrm{H}_2\mathrm{SO}_4$.
 
 $$\mathrm{H}_2\mathrm{SO}_4 + 2\mathrm{NaOH} \to \mathrm{Na}_2\mathrm{SO}_4 + 2\mathrm{H}_2\mathrm{O}$$
 
@@ -749,7 +852,8 @@ Moles of $\mathrm{HCl}$ used in back-titration: $0.200 \times 0.0150 = 0.00300\,
 
 Moles of excess $\mathrm{NaOH}$: $0.00300\,\mathrm{mol}$
 
-Moles of $\mathrm{NaOH}$ that reacted with $\mathrm{H}_2\mathrm{SO}_4$: $0.0125 - 0.00300 = 0.00950\,\mathrm{mol}$
+Moles of $\mathrm{NaOH}$ that reacted with $\mathrm{H}_2\mathrm{SO}_4$:
+$0.0125 - 0.00300 = 0.00950\,\mathrm{mol}$
 
 From the stoichiometry (1 mol $\mathrm{H}_2\mathrm{SO}_4$ reacts with 2 mol $\mathrm{NaOH}$):
 
@@ -759,7 +863,10 @@ $$c(\mathrm{H}_2\mathrm{SO}_4) = \frac{0.00475}{0.0250} = 0.190\,\mathrm{mol\,dm
 
 ### Redox Titration Calculations
 
-**Worked Example:** $25.0\,\mathrm{cm}^3$ of potassium manganate(VII) solution was used to titrate $20.0\,\mathrm{cm}^3$ of an iron(II) sulphate solution. The mean titre was $19.6\,\mathrm{cm}^3$ and the $\mathrm{KMnO}_4$ concentration was $0.0200\,\mathrm{mol\,dm^{-3}$. Calculate the concentration of the iron(II) solution.
+**Worked Example:** $25.0\,\mathrm{cm}^3$ of potassium manganate(VII) solution was used to titrate
+$20.0\,\mathrm{cm}^3$ of an iron(II) sulphate solution. The mean titre was $19.6\,\mathrm{cm}^3$ and
+the $\mathrm{KMnO}_4$ concentration was $0.0200\,\mathrm{mol\,dm^{-3}$. Calculate the concentration
+of the iron(II) solution.
 
 $$\mathrm{MnO}_4^- + 5\mathrm{Fe}^{2+} + 8\mathrm{H}^+ \to \mathrm{Mn}^{2+} + 5\mathrm{Fe}^{3+} + 4\mathrm{H}_2\mathrm{O}$$
 
@@ -773,7 +880,9 @@ $$c(\mathrm{Fe}^{2+}) = \frac◆LB◆1.96 \times 10^{-3}◆RB◆◆LB◆0.0200�
 
 ### Gas Volume Calculations
 
-**Worked Example:** Calculate the volume of $\mathrm{CO}_2$ produced when $10.0\,\mathrm{g}$ of calcium carbonate is heated with excess hydrochloric acid, at $298\,\mathrm{K}$ and $101\,\mathrm{kPa}$.
+**Worked Example:** Calculate the volume of $\mathrm{CO}_2$ produced when $10.0\,\mathrm{g}$ of
+calcium carbonate is heated with excess hydrochloric acid, at $298\,\mathrm{K}$ and
+$101\,\mathrm{kPa}$.
 
 $$\mathrm{CaCO}_3(s) + 2\mathrm{HCl}(aq) \to \mathrm{CaCl}_2(aq) + \mathrm{CO}_2(g) + \mathrm{H}_2\mathrm{O}(l)$$
 
@@ -787,7 +896,8 @@ $$V = 2450\,\mathrm{cm}^3$$
 
 ### Empirical and Molecular Formula Determination
 
-**Worked Example:** A compound contains $40.0\%$ carbon, $6.7\%$ hydrogen and $53.3\%$ oxygen by mass.
+**Worked Example:** A compound contains $40.0\%$ carbon, $6.7\%$ hydrogen and $53.3\%$ oxygen by
+mass.
 
 Step 1: Assume $100\,\mathrm{g}$ of compound.
 
@@ -805,13 +915,17 @@ Empirical formula: $\mathrm{CH}_2\mathrm{O}$
 
 Step 3: If $M_r = 62$Calculate the molecular formula.
 
-$\mathrm{CH}_2\mathrm{O}$: $M_r = 12 + 2 + 16 = 30$. Since $62/30 = 2.07 \approx 2$The molecular formula is $\mathrm{C}_2\mathrm{H}_4\mathrm{O}_2$ (ethane-1,2-diol).
+$\mathrm{CH}_2\mathrm{O}$: $M_r = 12 + 2 + 16 = 30$. Since $62/30 = 2.07 \approx 2$The molecular
+formula is $\mathrm{C}_2\mathrm{H}_4\mathrm{O}_2$ (ethane-1,2-diol).
 
 ### Water of Crystallisation
 
-Some ionic compounds crystallise with water molecules incorporated into the crystal lattice. The water molecules are called water of crystallisation.
+Some ionic compounds crystallise with water molecules incorporated into the crystal lattice. The
+water molecules are called water of crystallisation.
 
-**Worked Example:** $5.00\,\mathrm{g}$ of hydrated magnesium sulphate, $\mathrm{MgSO}_4 \cdot x\mathrm{H}_2\mathrm{O}$Was heated to constant mass. The anhydrous mass remaining was $2.44\,\mathrm{g}$. Calculate $x$.
+**Worked Example:** $5.00\,\mathrm{g}$ of hydrated magnesium sulphate,
+$\mathrm{MgSO}_4 \cdot x\mathrm{H}_2\mathrm{O}$Was heated to constant mass. The anhydrous mass
+remaining was $2.44\,\mathrm{g}$. Calculate $x$.
 
 Mass of water lost: $5.00 - 2.44 = 2.56\,\mathrm{g}$
 
@@ -825,7 +939,8 @@ The formula is $\mathrm{MgSO}_4 \cdot 7\mathrm{H}_2\mathrm{O}$ (Epsom salts).
 
 ### Limiting Reactant and Percentage Yield
 
-**Worked Example:** $6.50\,\mathrm{g}$ of zinc reacts with excess $2.00\,\mathrm{mol\,dm^{-3}}$ sulphuric acid. The mass of zinc remaining is $2.00\,\mathrm{g}$.
+**Worked Example:** $6.50\,\mathrm{g}$ of zinc reacts with excess $2.00\,\mathrm{mol\,dm^{-3}}$
+sulphuric acid. The mass of zinc remaining is $2.00\,\mathrm{g}$.
 
 $$\mathrm{Zn} + \mathrm{H}_2\mathrm{SO}_4 \to \mathrm{ZnSO}_4 + \mathrm{H}_2$$
 
@@ -841,7 +956,8 @@ $$\text{Percentage yield} = \frac{0.098}{0.139} \times 100 = 70.5\%$$
 
 ### Atom Economy
 
-Atom economy measures the efficiency of a reaction in terms of how much of the reactants end up in the desired product:
+Atom economy measures the efficiency of a reaction in terms of how much of the reactants end up in
+the desired product:
 
 $$\text{Atom economy} = \frac◆LB◆M_r \text{ of desired product}◆RB◆◆LB◆\text{Sum of } M_r \text{ of all products}◆RB◆ \times 100\%$$
 
@@ -857,19 +973,30 @@ $$\mathrm{C}_6\mathrm{H}_{12}\mathrm{O}_6 \to 2\mathrm{C}_2\mathrm{H}_5\mathrm{O
 
 $$\text{Atom economy} = \frac◆LB◆2 \times 46.0◆RB◆◆LB◆2 \times 46.0 + 2 \times 44.0◆RB◆ \times 100 = \frac{92.0}{180.0} \times 100 = 51.1\%$$
 
-Addition reactions always have 100% atom economy (assuming no side reactions). This is a key advantage of addition reactions in green chemistry.
+Addition reactions always have 100% atom economy (assuming no side reactions). This is a key
+advantage of addition reactions in green chemistry.
 
 ### Common Pitfalls
 
-1. **Moles calculation with volume in $\mathrm{cm}^3$:** Always convert to $\mathrm{dm}^3$ before calculating moles. $250\,\mathrm{cm}^3 = 0.250\,\mathrm{dm}^3$Not $250\,\mathrm{dm}^3$. This is the most common numerical error in quantitative chemistry.
+1. **Moles calculation with volume in $\mathrm{cm}^3$:** Always convert to $\mathrm{dm}^3$ before
+   calculating moles. $250\,\mathrm{cm}^3 = 0.250\,\mathrm{dm}^3$Not $250\,\mathrm{dm}^3$. This is
+   the most common numerical error in quantitative chemistry.
 
-2. **Stoichiometry in titration calculations:** Always write the balanced equation first and identify the mole ratio. Students frequently assume a 1:1 ratio when it is not (e.g. $\mathrm{H}_2\mathrm{SO}_4$ and $\mathrm{NaOH}$ is 1:2).
+2. **Stoichiometry in titration calculations:** Always write the balanced equation first and
+   identify the mole ratio. Students frequently assume a 1:1 ratio when it is not (e.g.
+   $\mathrm{H}_2\mathrm{SO}_4$ and $\mathrm{NaOH}$ is 1:2).
 
-3. **Back-titration logic:** In a back-titration, the moles of excess reagent (determined from the titration) must be subtracted from the moles of reagent originally added to find the moles that actually reacted with the analyte.
+3. **Back-titration logic:** In a back-titration, the moles of excess reagent (determined from the
+   titration) must be subtracted from the moles of reagent originally added to find the moles that
+   actually reacted with the analyte.
 
-4. **Significant figures:** The answer to a calculation should be given to the same number of significant figures as the least precise measurement. If a mass is given as $2.5\,\mathrm{g}$ (2 s.f.), the answer should be to 2 s.f.
+4. **Significant figures:** The answer to a calculation should be given to the same number of
+   significant figures as the least precise measurement. If a mass is given as $2.5\,\mathrm{g}$ (2
+   s.f.), the answer should be to 2 s.f.
 
-5. **Ideal gas equation units:** $p$ must be in pascals ($\mathrm{Pa}$), $V$ in $\mathrm{m}^3$$n$ in mol, $T$ in $\mathrm{K}$. Common conversions: $1\,\mathrm{atm} = 101325\,\mathrm{Pa}$$1\,\mathrm{dm}^3 = 10^{-3}\,\mathrm{m}^3$$1\,\mathrm{cm}^3 = 10^{-6}\,\mathrm{m}^3$.
+5. **Ideal gas equation units:** $p$ must be in pascals ($\mathrm{Pa}$), $V$ in $\mathrm{m}^3$$n$ in
+   mol, $T$ in $\mathrm{K}$. Common conversions:
+   $1\,\mathrm{atm} = 101325\,\mathrm{Pa}$$1\,\mathrm{dm}^3 = 10^{-3}\,\mathrm{m}^3$$1\,\mathrm{cm}^3 = 10^{-6}\,\mathrm{m}^3$.
 
 ## Exam-Style Questions with Full Mark Schemes
 
@@ -884,14 +1011,17 @@ $M_r = 24.3 + 2(14.0 + 3 \times 16.0) = 24.3 + 62.0 + 96.0 = 148.3\,\mathrm{g/mo
 
 Mass of O: $6 \times 16.0 = 96.0\,\mathrm{g}$ (1 mark).
 
-$$\%\,\mathrm{O} = \frac{96.0}{148.3} \times 100 = 64.7\%$$ (2 marks for calculation, 1 mark for answer to 3 s.f.).
+$$\%\,\mathrm{O} = \frac{96.0}{148.3} \times 100 = 64.7\%$$ (2 marks for calculation, 1 mark for
+answer to 3 s.f.).
 
 </details>
 
 <details>
 <summary>Q2 (6 marks)</summary>
 
-$2.00\,\mathrm{g}$ of impure calcium carbonate reacts with excess hydrochloric acid, producing $480\,\mathrm{cm}^3$ of $\mathrm{CO}_2$ at room temperature and pressure ($101\,\mathrm{kPa}$$298\,\mathrm{K}$).
+$2.00\,\mathrm{g}$ of impure calcium carbonate reacts with excess hydrochloric acid, producing
+$480\,\mathrm{cm}^3$ of $\mathrm{CO}_2$ at room temperature and pressure
+($101\,\mathrm{kPa}$$298\,\mathrm{K}$).
 
 (a) Calculate the percentage purity of the calcium carbonate. (4 marks)
 
@@ -899,26 +1029,35 @@ $2.00\,\mathrm{g}$ of impure calcium carbonate reacts with excess hydrochloric a
 
 **Mark Scheme:**
 
-(a) $n(\mathrm{CO}_2) = \frac{pV}{RT} = \frac◆LB◆101000 \times 480 \times 10^{-6}◆RB◆◆LB◆8.314 \times 298◆RB◆ = \frac{48.5}{2478} = 0.0196\,\mathrm{mol}$ (1 mark).
+(a)
+$n(\mathrm{CO}_2) = \frac{pV}{RT} = \frac◆LB◆101000 \times 480 \times 10^{-6}◆RB◆◆LB◆8.314 \times 298◆RB◆ = \frac{48.5}{2478} = 0.0196\,\mathrm{mol}$
+(1 mark).
 
-From $\mathrm{CaCO}_3 + 2\mathrm{HCl} \to \mathrm{CaCl}_2 + \mathrm{CO}_2 + \mathrm{H}_2\mathrm{O}$: $n(\mathrm{CaCO}_3) = n(\mathrm{CO}_2) = 0.0196\,\mathrm{mol}$ (1 mark).
+From $\mathrm{CaCO}_3 + 2\mathrm{HCl} \to \mathrm{CaCl}_2 + \mathrm{CO}_2 + \mathrm{H}_2\mathrm{O}$:
+$n(\mathrm{CaCO}_3) = n(\mathrm{CO}_2) = 0.0196\,\mathrm{mol}$ (1 mark).
 
 Mass of pure $\mathrm{CaCO}_3$: $0.0196 \times 100.09 = 1.96\,\mathrm{g}$ (1 mark).
 
 Percentage purity: $\frac{1.96}{2.00} \times 100 = 98.0\%$ (1 mark).
 
-(b) Two from: $\mathrm{CO}_2$ may be partially soluble in water, reducing the measured volume (1 mark). Temperature and pressure may not be exactly $298\,\mathrm{K}$ and $101\,\mathrm{kPa}$ (1 mark). The reaction may not have gone to completion. Gas collection errors (water displacement may not be perfectly quantitative).
+(b) Two from: $\mathrm{CO}_2$ may be partially soluble in water, reducing the measured volume (1
+mark). Temperature and pressure may not be exactly $298\,\mathrm{K}$ and $101\,\mathrm{kPa}$ (1
+mark). The reaction may not have gone to completion. Gas collection errors (water displacement may
+not be perfectly quantitative).
 
 </details>
 
 <details>
 <summary>Q3 (4 marks)</summary>
 
-$0.500\,\mathrm{g}$ of an unknown metal M reacts with excess dilute hydrochloric acid to produce $120\,\mathrm{cm}^3$ of hydrogen gas at $298\,\mathrm{K}$ and $100\,\mathrm{kPa}$. Identify the metal.
+$0.500\,\mathrm{g}$ of an unknown metal M reacts with excess dilute hydrochloric acid to produce
+$120\,\mathrm{cm}^3$ of hydrogen gas at $298\,\mathrm{K}$ and $100\,\mathrm{kPa}$. Identify the
+metal.
 
 **Mark Scheme:**
 
-$$n(\mathrm{H}_2) = \frac{pV}{RT} = \frac◆LB◆100000 \times 120 \times 10^{-6}◆RB◆◆LB◆8.314 \times 298◆RB◆ = \frac{12.0}{2478} = 0.00484\,\mathrm{mol}$$ (1 mark)
+$$n(\mathrm{H}_2) = \frac{pV}{RT} = \frac◆LB◆100000 \times 120 \times 10^{-6}◆RB◆◆LB◆8.314 \times 298◆RB◆ = \frac{12.0}{2478} = 0.00484\,\mathrm{mol}$$
+(1 mark)
 
 Assume M has valency $+2$: $n(\mathrm{M}) = \frac{0.00484}{2} = 0.00242\,\mathrm{mol}$ (1 mark).
 
@@ -931,7 +1070,11 @@ The metal is **lead** ($A_r = 207$Group 2, forms $\mathrm{Pb}^{2+}$Valency 2) (2
 <details>
 <summary>Q4 (5 marks)</summary>
 
-In a titration to determine the concentration of ethanoic acid in vinegar, $25.0\,\mathrm{cm}^3$ of vinegar was diluted to $250\,\mathrm{cm}^3$ in a volumetric flask. $25.0\,\mathrm{cm}^3$ of this diluted solution was titrated with $0.100\,\mathrm{mol\,dm^{-3}}$ $\mathrm{NaOH}$Requiring $18.4\,\mathrm{cm}^3$ for neutralisation. Calculate the concentration of ethanoic acid in the original vinegar in $\mathrm{g\,dm^{-3}}$.
+In a titration to determine the concentration of ethanoic acid in vinegar, $25.0\,\mathrm{cm}^3$ of
+vinegar was diluted to $250\,\mathrm{cm}^3$ in a volumetric flask. $25.0\,\mathrm{cm}^3$ of this
+diluted solution was titrated with $0.100\,\mathrm{mol\,dm^{-3}}$ $\mathrm{NaOH}$Requiring
+$18.4\,\mathrm{cm}^3$ for neutralisation. Calculate the concentration of ethanoic acid in the
+original vinegar in $\mathrm{g\,dm^{-3}}$.
 
 **Mark Scheme:**
 
@@ -939,28 +1082,32 @@ $$n(\mathrm{NaOH}) = 0.100 \times 0.0184 = 1.84 \times 10^{-3}\,\mathrm{mol}$$ (
 
 $$\mathrm{CH}_3\mathrm{COOH} + \mathrm{NaOH} \to \mathrm{CH}_3\mathrm{COONa} + \mathrm{H}_2\mathrm{O}$$
 
-$n(\mathrm{CH}_3\mathrm{COOH})$ in $25.0\,\mathrm{cm}^3$ of diluted solution $= 1.84 \times 10^{-3}\,\mathrm{mol}$ (1 mark).
+$n(\mathrm{CH}_3\mathrm{COOH})$ in $25.0\,\mathrm{cm}^3$ of diluted solution
+$= 1.84 \times 10^{-3}\,\mathrm{mol}$ (1 mark).
 
-$n(\mathrm{CH}_3\mathrm{COOH})$ in $250\,\mathrm{cm}^3$ of diluted solution $= 1.84 \times 10^{-3} \times 10 = 0.0184\,\mathrm{mol}$ (1 mark).
+$n(\mathrm{CH}_3\mathrm{COOH})$ in $250\,\mathrm{cm}^3$ of diluted solution
+$= 1.84 \times 10^{-3} \times 10 = 0.0184\,\mathrm{mol}$ (1 mark).
 
 This equals $n(\mathrm{CH}_3\mathrm{COOH})$ in $25.0\,\mathrm{cm}^3$ of original vinegar.
 
 $$c(\mathrm{CH}_3\mathrm{COOH}) = \frac{0.0184}{0.0250} = 0.736\,\mathrm{mol\,dm^{-3}}$$
 
-$$\text{Concentration in } \mathrm{g\,dm^{-3}} = 0.736 \times 60.05 = 44.2\,\mathrm{g\,dm^{-3}}$$ (2 marks).
+$$\text{Concentration in } \mathrm{g\,dm^{-3}} = 0.736 \times 60.05 = 44.2\,\mathrm{g\,dm^{-3}}$$ (2
+marks).
 
 </details>
 
 ---
 
-:::tip
-Diagnostic Test
-Ready to test your understanding of **Quantitative Chemistry**? The [diagnostic test](/docs/alevel/chemistry/diagnostics/diag-quantitative-chemistry) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
+:::tip Diagnostic Test Ready to test your understanding of **Quantitative Chemistry**? The
+[diagnostic test](/docs/alevel/chemistry/diagnostics/diag-quantitative-chemistry) contains the
+hardest questions within the A-Level specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Quantitative Chemistry with other chemistry topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine
+Quantitative Chemistry with other chemistry topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/alevel/chemistry/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/alevel/chemistry/diagnostics/diagnostic-guide) for instructions on
+self-marking and building a personal test matrix. :::
 
 ## Summary
 

@@ -1,6 +1,8 @@
 ---
 title: Class Modifiers
-description: "Class Modifiers — The Modifier Matrix; Why They Exist; `sealed`; Brief Recap with worked examples and exam-style questions."
+description:
+  'Class Modifiers — The Modifier Matrix; Why They Exist; `sealed`; Brief Recap with worked examples
+  and exam-style questions.'
 date: 2026-04-05T00:00:00.000Z
 tags:
   - Dart
@@ -8,6 +10,7 @@ categories:
   - Dart
 slug: class-modifiers
 ---
+
 ## Overview of Class Modifiers
 
 Dart 3 introduces class modifiers — keywords that restrict how a class can be used by other
@@ -24,14 +27,14 @@ They are compile-time constraints — the compiler enforces them, not runtime ch
 
 ### The Modifier Matrix
 
-| Modifier | Can be extended (outside lib) | Can be implemented (outside lib) | Can be used as mixin (outside lib) | Can be constructed |
+| Modifier      | Can be extended (outside lib) | Can be implemented (outside lib) | Can be used as mixin (outside lib) | Can be constructed     |
 | ------------- | ----------------------------- | -------------------------------- | ---------------------------------- | ---------------------- |
-| (none) | Yes | Yes | Yes | If not abstract |
-| `sealed` | No (same lib only) | No (same lib only) | No (same lib only) | No (implicit abstract) |
-| `base` | Yes (only via `extends`) | No | No | If not abstract |
-| `interface` | No | Yes (only via `implements`) | No | If not abstract |
-| `final` | No | No | No | If not abstract |
-| `mixin class` | Via `extends` only | Yes | Yes (with restrictions) | If not abstract |
+| (none)        | Yes                           | Yes                              | Yes                                | If not abstract        |
+| `sealed`      | No (same lib only)            | No (same lib only)               | No (same lib only)                 | No (implicit abstract) |
+| `base`        | Yes (only via `extends`)      | No                               | No                                 | If not abstract        |
+| `interface`   | No                            | Yes (only via `implements`)      | No                                 | If not abstract        |
+| `final`       | No                            | No                               | No                                 | If not abstract        |
+| `mixin class` | Via `extends` only            | Yes                              | Yes (with restrictions)            | If not abstract        |
 
 ### Why They Exist
 
@@ -299,8 +302,8 @@ interface mixin Disposable {
 
 ## `final`
 
-Prevents **all** subtyping outside the library. No `extends`No `implements`No `with`. The class
-Is a leaf — it cannot be a supertype of anything defined outside its library.
+Prevents **all** subtyping outside the library. No `extends`No `implements`No `with`. The class Is a
+leaf — it cannot be a supertype of anything defined outside its library.
 
 ### Syntax and Semantics
 
@@ -443,13 +446,13 @@ The constructor is available normally.
 
 ### `mixin class` vs `mixin`
 
-| Property | `mixin` | `mixin class` |
+| Property              | `mixin`              | `mixin class`                                            |
 | --------------------- | -------------------- | -------------------------------------------------------- |
-| Can be extended | No (must use `with`) | Yes |
-| Can be used as mixin | Yes | Yes |
-| Can have constructors | No | Yes (but parameterized constructors prevent mixin usage) |
-| Can be instantiated | No | Yes |
-| Can be abstract | Yes | Yes |
+| Can be extended       | No (must use `with`) | Yes                                                      |
+| Can be used as mixin  | Yes                  | Yes                                                      |
+| Can have constructors | No                   | Yes (but parameterized constructors prevent mixin usage) |
+| Can be instantiated   | No                   | Yes                                                      |
+| Can be abstract       | Yes                  | Yes                                                      |
 
 **When to use `mixin class`**: When you have behavior that can be used both standalone (as a class)
 And composed (as a mixin). For example, a `Serializable` class that can be used directly or mixed
@@ -481,23 +484,23 @@ Class modifiers can be combined to express precise contracts. Not all combinatio
 
 ### Valid Combinations
 
-| Combination | Meaning |
-| ------------------- | ----------------------------------------------------------------------------------------------------------- |
-| `sealed interface` | Cannot be extended or implemented outside. Same-library only, exhaustive switch. |
-| `base mixin` | Can only be used via `with` or `extends`Not `implements`. External code must be in the inheritance chain. |
-| `base mixin class` | Can be extended or used as mixin, not implemented. External code inherits behavior. |
-| `interface mixin` | Can only be implemented, not extended or used as mixin. Pure contract. |
-| `final mixin class` | Cannot be extended, implemented, or used as mixin outside the library. Complete leaf. |
+| Combination         | Meaning                                                                                                   |
+| ------------------- | --------------------------------------------------------------------------------------------------------- |
+| `sealed interface`  | Cannot be extended or implemented outside. Same-library only, exhaustive switch.                          |
+| `base mixin`        | Can only be used via `with` or `extends`Not `implements`. External code must be in the inheritance chain. |
+| `base mixin class`  | Can be extended or used as mixin, not implemented. External code inherits behavior.                       |
+| `interface mixin`   | Can only be implemented, not extended or used as mixin. Pure contract.                                    |
+| `final mixin class` | Cannot be extended, implemented, or used as mixin outside the library. Complete leaf.                     |
 
 ### The Compatibility Matrix
 
 | First \ Second | `sealed` | `base` | `interface` | `final` | `mixin` |
 | -------------- | -------- | ------ | ----------- | ------- | ------- |
-| `sealed` | N/A | Yes | Yes | Yes | Yes |
-| `base` | Yes | N/A | No | No | Yes |
-| `interface` | Yes | No | N/A | No | Yes |
-| `final` | Yes | No | No | N/A | Yes |
-| `mixin` | Yes | Yes | Yes | Yes | N/A |
+| `sealed`       | N/A      | Yes    | Yes         | Yes     | Yes     |
+| `base`         | Yes      | N/A    | No          | No      | Yes     |
+| `interface`    | Yes      | No     | N/A         | No      | Yes     |
+| `final`        | Yes      | No     | No          | N/A     | Yes     |
+| `mixin`        | Yes      | Yes    | Yes         | Yes     | N/A     |
 
 `sealed` can combine with `base``interface``final`And `mixin` (e.g., `sealed interface`
 `sealed mixin class`). These combinations restrict subtypes to the same library while also applying
@@ -564,18 +567,18 @@ class Version implements Comparable&lt;Version&gt; {
 
 Here is the complete reference table for all class modifiers:
 
-| Modifier | Extends (outside) | Implements (outside) | Mixin (outside) | Instantiate | Abstract OK | Key Use Case |
+| Modifier            | Extends (outside)    | Implements (outside)    | Mixin (outside)   | Instantiate   | Abstract OK    | Key Use Case                         |
 | ------------------- | -------------------- | ----------------------- | ----------------- | ------------- | -------------- | ------------------------------------ |
-| (none) | Yes | Yes | Yes | Yes | Yes | Default — no restrictions |
-| `sealed` | Same lib | Same lib | Same lib | No (implicit) | Yes (implicit) | Closed hierarchies, exhaustiveness |
-| `base` | Yes (`extends` only) | No | No | Yes | Yes | Classes designed for inheritance |
-| `interface` | No | Yes (`implements` only) | No | Yes | Yes | Pure contracts, no shared behavior |
-| `final` | No | No | No | Yes | Yes | Leaf classes, immutable API |
-| `mixin` | N/A | Yes | Yes | No | Yes | Additive behavior, no standalone use |
-| `mixin class` | Yes | Yes | Yes | Yes | Yes | Dual-use: class or mixin |
-| `base mixin` | Yes (`extends` only) | No | Yes (`with` only) | No | Yes | Mixin with inheritance enforcement |
-| `interface mixin` | No | Yes (`implements` only) | No | No | Yes | Pure mixin contract |
-| `final mixin class` | No | No | No | Yes | Yes | Complete leaf, no subtyping |
+| (none)              | Yes                  | Yes                     | Yes               | Yes           | Yes            | Default — no restrictions            |
+| `sealed`            | Same lib             | Same lib                | Same lib          | No (implicit) | Yes (implicit) | Closed hierarchies, exhaustiveness   |
+| `base`              | Yes (`extends` only) | No                      | No                | Yes           | Yes            | Classes designed for inheritance     |
+| `interface`         | No                   | Yes (`implements` only) | No                | Yes           | Yes            | Pure contracts, no shared behavior   |
+| `final`             | No                   | No                      | No                | Yes           | Yes            | Leaf classes, immutable API          |
+| `mixin`             | N/A                  | Yes                     | Yes               | No            | Yes            | Additive behavior, no standalone use |
+| `mixin class`       | Yes                  | Yes                     | Yes               | Yes           | Yes            | Dual-use: class or mixin             |
+| `base mixin`        | Yes (`extends` only) | No                      | Yes (`with` only) | No            | Yes            | Mixin with inheritance enforcement   |
+| `interface mixin`   | No                   | Yes (`implements` only) | No                | No            | Yes            | Pure mixin contract                  |
+| `final mixin class` | No                   | No                      | No                | Yes           | Yes            | Complete leaf, no subtyping          |
 
 ### Reading the Table
 
@@ -592,11 +595,11 @@ Here is the complete reference table for all class modifiers:
 You should add class modifiers when:
 
 1. **Publishing a package**: Modifiers are part of your public API contract. Add them before the
- first stable release.
+   first stable release.
 2. **Refactoring an existing package**: Adding modifiers is a **breaking change** for downstream
- code. Any external code that relied on the unrestricted behavior will break.
+   code. Any external code that relied on the unrestricted behavior will break.
 3. **Internal code**: Add modifiers aggressively. They document intent and catch bugs at compile
- time.
+   time.
 
 ### The `base` Migration Path
 
@@ -689,16 +692,16 @@ final class Configuration {
 For library authors, the recommended migration order:
 
 1. **Start with `base`**: Most classes designed for inheritance should be `base`. This is the least
- disruptive change — users who `implement` must switch to `extends`But the behavioral change is
- minimal.
+   disruptive change — users who `implement` must switch to `extends`But the behavioral change is
+   minimal.
 
 2. **Add `interface` to contracts**: Classes that are pure interfaces (no implementation worth
- inheriting) should be `interface`.
+   inheriting) should be `interface`.
 
 3. **Add `final` to leaves**: Classes that are not designed for any subtyping should be `final`.
 
 4. **Add `sealed` to closed hierarchies**: If you have a fixed set of subtypes that should never be
- extended, convert to `sealed`.
+   extended, convert to `sealed`.
 
 ### Modifier Inference
 

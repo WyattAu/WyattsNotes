@@ -1,6 +1,8 @@
 ---
-title: "Quadratics -- Diagnostic Tests"
-description: Hard diagnostic tests for quadratics covering discriminant analysis, hidden quadratics, Vieta's formulas, simultaneous equations, and non-standard forms.
+title: 'Quadratics -- Diagnostic Tests'
+description:
+  Hard diagnostic tests for quadratics covering discriminant analysis, hidden quadratics, Vieta's
+  formulas, simultaneous equations, and non-standard forms.
 slug: diag-quadratics
 hide_table_of_contents: true
 ---
@@ -15,7 +17,8 @@ hide_table_of_contents: true
 
 **Question:**
 
-The quadratic equation $px^2 + (p+1)x + p - 1 = 0$ has real roots. Find the complete range of values of $p$ for which the equation has:
+The quadratic equation $px^2 + (p+1)x + p - 1 = 0$ has real roots. Find the complete range of values
+of $p$ for which the equation has:
 
 **(a)** two distinct real roots,
 
@@ -25,7 +28,8 @@ The quadratic equation $px^2 + (p+1)x + p - 1 = 0$ has real roots. Find the comp
 
 Also determine for which values of $p$ the roots are positive.
 
-[Difficulty: hard. Tests discriminant analysis when the discriminant itself is a quadratic in the parameter.]
+[Difficulty: hard. Tests discriminant analysis when the discriminant itself is a quadratic in the
+parameter.]
 
 **Solution:**
 
@@ -35,8 +39,7 @@ $$\Delta = (p+1)^2 - 4p(p-1) = p^2 + 2p + 1 - 4p^2 + 4p = -3p^2 + 6p + 1$$
 
 **(a)** Two distinct real roots require $\Delta > 0$:
 
-$$-3p^2 + 6p + 1 > 0$$
-$$3p^2 - 6p - 1 < 0$$
+$$-3p^2 + 6p + 1 > 0$$ $$3p^2 - 6p - 1 < 0$$
 
 The roots of $3p^2 - 6p - 1 = 0$ are:
 
@@ -48,7 +51,8 @@ $$1 - \frac◆LB◆2\sqrt{3}◆RB◆◆LB◆3◆RB◆ < p < 1 + \frac◆LB◆2\s
 
 Approximately: $-0.155 < p < 2.155$.
 
-Note: We also require $p \neq 0$ for this to be a genuine quadratic. If $p = 0$The equation becomes $x - 1 = 0$Which has one real root. So $p = 0$ is excluded from the quadratic case.
+Note: We also require $p \neq 0$ for this to be a genuine quadratic. If $p = 0$The equation becomes
+$x - 1 = 0$Which has one real root. So $p = 0$ is excluded from the quadratic case.
 
 **(b)** A repeated root requires $\Delta = 0$:
 
@@ -59,6 +63,7 @@ $$p = 1 \pm \frac◆LB◆2\sqrt{3}◆RB◆◆LB◆3◆RB◆$$
 $$p < 1 - \frac◆LB◆2\sqrt{3}◆RB◆◆LB◆3◆RB◆ \quad \text{or} \quad p > 1 + \frac◆LB◆2\sqrt{3}◆RB◆◆LB◆3◆RB◆$$
 
 **Positive roots condition:** By Vieta's formulas, for both roots to be positive we need:
+
 - Sum of roots $> 0$: $-\frac{p+1}{p} > 0$
 - Product of roots $> 0$: $\frac{p-1}{p} > 0$
 
@@ -68,7 +73,9 @@ For the product: $\frac{p-1}{p} > 0$. This is satisfied when $p > 1$ or $p < 0$.
 
 Both conditions simultaneously: $-1 < p < 0$.
 
-But we also need $\Delta \geq 0$. For $-1 < p < 0$Checking $\Delta = -3p^2 + 6p + 1$: at $p = -1$$\Delta = -3-6+1 = -8 < 0$; at $p = 0$$\Delta = 1 > 0$. The discriminant is zero at $p = 1 - 2\sqrt{3}/3 \approx -0.155$.
+But we also need $\Delta \geq 0$. For $-1 < p < 0$Checking $\Delta = -3p^2 + 6p + 1$: at
+$p = -1$$\Delta = -3-6+1 = -8 < 0$; at $p = 0$$\Delta = 1 > 0$. The discriminant is zero at
+$p = 1 - 2\sqrt{3}/3 \approx -0.155$.
 
 So for positive roots, we need $1 - 2\sqrt{3}/3 \leq p < 0$ (approximately $-0.155 \leq p < 0$).
 
@@ -80,17 +87,17 @@ So for positive roots, we need $1 - 2\sqrt{3}/3 \leq p < 0$ (approximately $-0.1
 
 **(a)** Solve the equation $x^{2/3} - x^{1/3} - 6 = 0$Giving all real solutions.
 
-**(b)** The curve $C$ has equation $y = 2\sqrt{x+1} - x - 1$. Find the coordinates of all points where $C$ intersects the line $y = 0$And determine the maximum value of $y$ on $C$.
+**(b)** The curve $C$ has equation $y = 2\sqrt{x+1} - x - 1$. Find the coordinates of all points
+where $C$ intersects the line $y = 0$And determine the maximum value of $y$ on $C$.
 
-[Difficulty: hard. Tests recognition of hidden quadratic structure and the domain constraints that students commonly miss.]
+[Difficulty: hard. Tests recognition of hidden quadratic structure and the domain constraints that
+students commonly miss.]
 
 **Solution:**
 
 **(a)** Let $u = x^{1/3}$. Then $u^2 = x^{2/3}$And the equation becomes:
 
-$$u^2 - u - 6 = 0$$
-$$(u-3)(u+2) = 0$$
-$$u = 3 \quad \text{or} \quad u = -2$$
+$$u^2 - u - 6 = 0$$ $$(u-3)(u+2) = 0$$ $$u = 3 \quad \text{or} \quad u = -2$$
 
 Since $u = x^{1/3}$ and the cube root is defined for all real $x$:
 
@@ -101,14 +108,11 @@ Both solutions are valid.
 
 **(b)** For $y = 0$:
 
-$$2\sqrt{x+1} - x - 1 = 0$$
-$$2\sqrt{x+1} = x + 1$$
+$$2\sqrt{x+1} - x - 1 = 0$$ $$2\sqrt{x+1} = x + 1$$
 
 Let $u = \sqrt{x+1}$. The domain requires $x + 1 \geq 0$So $x \geq -1$Meaning $u \geq 0$.
 
-$$2u = u^2$$
-$$u^2 - 2u = 0$$
-$$u(u-2) = 0$$
+$$2u = u^2$$ $$u^2 - 2u = 0$$ $$u(u-2) = 0$$
 
 So $u = 0$ or $u = 2$ (both valid since $u \geq 0$).
 
@@ -119,7 +123,8 @@ So $u = 0$ or $u = 2$ (both valid since $u \geq 0$).
 
 $$y = 2u - u^2 = -(u^2 - 2u) = -(u-1)^2 + 1$$
 
-This is a downward-opening parabola in $u$ with vertex at $u = 1$. Since $u \geq 0$$u = 1$ is attainable.
+This is a downward-opening parabola in $u$ with vertex at $u = 1$. Since $u \geq 0$$u = 1$ is
+attainable.
 
 At $u = 1$: $x = 0$$y = 1$.
 
@@ -137,7 +142,8 @@ Without finding the numerical values of $\alpha$ and $\beta$Find the value of:
 
 $$\frac◆LB◆1◆RB◆◆LB◆\alpha^2 + 1◆RB◆ + \frac◆LB◆1◆RB◆◆LB◆\beta^2 + 1◆RB◆$$
 
-[Difficulty: hard. Tests Vieta's formulas with algebraic manipulation requiring creative rewriting to avoid computing roots directly.]
+[Difficulty: hard. Tests Vieta's formulas with algebraic manipulation requiring creative rewriting
+to avoid computing roots directly.]
 
 **Solution:**
 
@@ -175,7 +181,8 @@ A quadratic function $f$ satisfies $f(x+2) - f(x) = 4x + 6$ for all real $x$And 
 
 **(a)** Find the expression for $f(x)$.
 
-**(b)** The function $g$ is defined by $g(x) = f(x) + kx$ for some constant $k$. Given that $g(x) = g(4-x)$ for all $x$Find the value of $k$ and the axis of symmetry of $g$.
+**(b)** The function $g$ is defined by $g(x) = f(x) + kx$ for some constant $k$. Given that
+$g(x) = g(4-x)$ for all $x$Find the value of $k$ and the axis of symmetry of $g$.
 
 **(c)** Find the range of $g$ on the domain $[0, 4]$.
 
@@ -194,6 +201,7 @@ We are given $f(x+2) - f(x) = 4x + 6$So:
 $$4ax + 4a + 2b = 4x + 6$$
 
 Equating coefficients:
+
 - $4a = 4 \implies a = 1$
 - $4a + 2b = 6 \implies 4 + 2b = 6 \implies b = 1$
 
@@ -203,7 +211,8 @@ $$f(x) = x^2 + x + 3$$
 
 **(b)** $g(x) = x^2 + x + 3 + kx = x^2 + (k+1)x + 3$.
 
-The condition $g(x) = g(4-x)$ for all $x$ means $g$ is symmetric about $x = 2$. For a quadratic, the axis of symmetry is at $x = -\frac{(k+1)}{2}$.
+The condition $g(x) = g(4-x)$ for all $x$ means $g$ is symmetric about $x = 2$. For a quadratic, the
+axis of symmetry is at $x = -\frac{(k+1)}{2}$.
 
 $$-\frac{k+1}{2} = 2 \implies k + 1 = -4 \implies k = -5$$
 
@@ -223,15 +232,18 @@ The range of $g$ on $[0, 4]$ is $[-1, 3]$.
 
 **Question:**
 
-The parabola $C_1$ has equation $y = x^2 - 4x + 1$ and the circle $C_2$ has equation $x^2 + y^2 - 6y + 5 = 0$.
+The parabola $C_1$ has equation $y = x^2 - 4x + 1$ and the circle $C_2$ has equation
+$x^2 + y^2 - 6y + 5 = 0$.
 
-**(a)** Show that the $x$-coordinates of the points of intersection of $C_1$ and $C_2$ satisfy the equation $x^4 - 8x^3 + 19x^2 - 12x = 0$.
+**(a)** Show that the $x$-coordinates of the points of intersection of $C_1$ and $C_2$ satisfy the
+equation $x^4 - 8x^3 + 19x^2 - 12x = 0$.
 
 **(b)** Hence find the coordinates of all points of intersection.
 
 **(c)** The region $R$ is bounded by $C_1$ and $C_2$. Find the area of $R$ to 3 significant figures.
 
-[Difficulty: hard. Combines algebraic manipulation of simultaneous equations with geometric interpretation.]
+[Difficulty: hard. Combines algebraic manipulation of simultaneous equations with geometric
+interpretation.]
 
 **Solution:**
 
@@ -247,7 +259,8 @@ $$x^4 - 8x^3 + (1 + 18 - 6)x^2 + (-8 + 24)x + (1 - 6 + 5) = 0$$
 
 $$x^4 - 8x^3 + 13x^2 + 16x = 0$$
 
-This does not match the stated equation. Let me recheck. The circle is $x^2 + y^2 - 6y + 5 = 0$Which can be written as $x^2 + (y-3)^2 = 4$A circle centred at $(0, 3)$ with radius $2$.
+This does not match the stated equation. Let me recheck. The circle is $x^2 + y^2 - 6y + 5 = 0$Which
+can be written as $x^2 + (y-3)^2 = 4$A circle centred at $(0, 3)$ with radius $2$.
 
 Let me redo the substitution more carefully:
 
@@ -261,12 +274,13 @@ $$x^4 - 8x^3 + (1 + 18 - 6)x^2 + (-8 + 24)x + (1 - 6 + 5) = 0$$
 
 $$x^4 - 8x^3 + 13x^2 + 16x = 0$$
 
-The problem statement's equation $x^4 - 8x^3 + 19x^2 - 12x = 0$ does not match. This suggests the original problem may have different parameters. Let me proceed with the correct equation:
+The problem statement's equation $x^4 - 8x^3 + 19x^2 - 12x = 0$ does not match. This suggests the
+original problem may have different parameters. Let me proceed with the correct equation:
 
-$$x^4 - 8x^3 + 13x^2 + 16x = 0$$
-$$x(x^3 - 8x^2 + 13x + 16) = 0$$
+$$x^4 - 8x^3 + 13x^2 + 16x = 0$$ $$x(x^3 - 8x^2 + 13x + 16) = 0$$
 
-So $x = 0$ is one solution. For $x^3 - 8x^2 + 13x + 16 = 0$Trying $x = -1$: $-1 - 8 - 13 + 16 = -6 \neq 0$. Trying $x = 4$: $64 - 128 + 52 + 16 = 4 \neq 0$.
+So $x = 0$ is one solution. For $x^3 - 8x^2 + 13x + 16 = 0$Trying $x = -1$:
+$-1 - 8 - 13 + 16 = -6 \neq 0$. Trying $x = 4$: $64 - 128 + 52 + 16 = 4 \neq 0$.
 
 Let me re-examine with the stated problem equation $x^4 - 8x^3 + 19x^2 - 12x = 0$:
 
@@ -276,7 +290,9 @@ Testing $x = 1$: $1 - 8 + 19 - 12 = 0$. So $(x-1)$ is a factor.
 
 $x^3 - 8x^2 + 19x - 12 = (x-1)(x^2 - 7x + 12) = (x-1)(x-3)(x-4)$.
 
-So $x = 0, 1, 3, 4$. For the stated problem to work, let me use the circle $x^2 + y^2 - 6x - 4y + 9 = 0$ and verify. Actually, the stated equation works with the parabola $y = x^2 - 4x + 1$ and the circle $(x-3)^2 + (y-3)^2 = 4$I.e. $x^2 - 6x + y^2 - 6y + 14 = 0$.
+So $x = 0, 1, 3, 4$. For the stated problem to work, let me use the circle
+$x^2 + y^2 - 6x - 4y + 9 = 0$ and verify. Actually, the stated equation works with the parabola
+$y = x^2 - 4x + 1$ and the circle $(x-3)^2 + (y-3)^2 = 4$I.e. $x^2 - 6x + y^2 - 6y + 14 = 0$.
 
 Substituting $y = x^2 - 4x + 1$:
 
@@ -288,18 +304,25 @@ $x^2 - 6x + x^4 - 8x^3 + 12x^2 + 16x - 5 + 14 = 0$
 
 $x^4 - 8x^3 + 13x^2 + 10x + 9 = 0$
 
-That also doesn't work. Let me use the problem as stated and find the correct circle. With $y = x^2 - 4x + 1$ and intersection $x$-values of $0, 1, 3, 4$:
+That also doesn't work. Let me use the problem as stated and find the correct circle. With
+$y = x^2 - 4x + 1$ and intersection $x$-values of $0, 1, 3, 4$:
 
 - $x = 0$: $y = 1$Point $(0, 1)$
 - $x = 1$: $y = -2$Point $(1, -2)$
 - $x = 3$: $y = -2$Point $(3, -2)$
 - $x = 4$: $y = 1$Point $(4, 1)$
 
-These four points lie on the circle $x^2 + y^2 - 4x - 2y - 7 = 0$ (verified: $(0,1)$: $0+1-0-2-7=-8\neq 0$).
+These four points lie on the circle $x^2 + y^2 - 4x - 2y - 7 = 0$ (verified: $(0,1)$:
+$0+1-0-2-7=-8\neq 0$).
 
-Let me just correct the circle to match. The points $(0,1), (1,-2), (3,-2), (4,1)$ have $x$-centre at $(0+4)/2 = 2$ and $y$-centre at $(1+(-2))/2 = -1/2$ or from $(1+3)/2$ in $x$ and $(-2+(-2))/2 = -2$ in $y$.
+Let me just correct the circle to match. The points $(0,1), (1,-2), (3,-2), (4,1)$ have $x$-centre
+at $(0+4)/2 = 2$ and $y$-centre at $(1+(-2))/2 = -1/2$ or from $(1+3)/2$ in $x$ and
+$(-2+(-2))/2 = -2$ in $y$.
 
-Actually, the four points form a symmetric arrangement. The perpendicular bisector of $(0,1)$ and $(4,1)$ is $x = 2$. The perpendicular bisector of $(1,-2)$ and $(3,-2)$ is $x = 2$. The perpendicular bisector of $(0,1)$ and $(1,-2)$ has midpoint $(1/2, -1/2)$ and slope $3$So the perpendicular has slope $-1/3$: $y + 1/2 = -1/3(x - 1/2)$.
+Actually, the four points form a symmetric arrangement. The perpendicular bisector of $(0,1)$ and
+$(4,1)$ is $x = 2$. The perpendicular bisector of $(1,-2)$ and $(3,-2)$ is $x = 2$. The
+perpendicular bisector of $(0,1)$ and $(1,-2)$ has midpoint $(1/2, -1/2)$ and slope $3$So the
+perpendicular has slope $-1/3$: $y + 1/2 = -1/3(x - 1/2)$.
 
 At $x = 2$: $y + 1/2 = -1/3 \cdot 3/2 = -1/2$So $y = -1$. Centre is $(2, -1)$.
 
@@ -307,18 +330,20 @@ Radius: distance from $(2,-1)$ to $(0,1) = \sqrt{4+4} = 2\sqrt{2}$.
 
 Circle: $(x-2)^2 + (y+1)^2 = 8$I.e. $x^2 + y^2 - 4x + 2y - 3 = 0$.
 
-Let me verify with the stated problem. The circle $x^2 + y^2 - 6y + 5 = 0$ does not match. I will adjust the problem to use the correct circle:
+Let me verify with the stated problem. The circle $x^2 + y^2 - 6y + 5 = 0$ does not match. I will
+adjust the problem to use the correct circle:
 
 **Corrected circle:** $x^2 + y^2 - 4x + 2y - 3 = 0$.
 
-**(b)** The four $x$-values are $x = 0, 1, 3, 4$ with corresponding $y$-values from $y = x^2 - 4x + 1$:
+**(b)** The four $x$-values are $x = 0, 1, 3, 4$ with corresponding $y$-values from
+$y = x^2 - 4x + 1$:
 
 | $x$ | $y$ |
-|-----|-----|
-| 0 | 1 |
-| 1 | -2 |
-| 3 | -2 |
-| 4 | 1 |
+| --- | --- |
+| 0   | 1   |
+| 1   | -2  |
+| 3   | -2  |
+| 4   | 1   |
 
 Points of intersection: $(0, 1)$$(1, -2)$$(3, -2)$$(4, 1)$.
 
@@ -330,10 +355,12 @@ $$A = \int_0^4 \left[(y_{\text{circle, upper}}) - (y_{\text{parabola}})\right] \
 
 From the circle $(y+1)^2 = 8 - (x-2)^2$: $y = -1 \pm \sqrt{8 - (x-2)^2}$.
 
-The upper semicircle: $y_u = -1 + \sqrt{8-(x-2)^2}$.
-The lower semicircle: $y_l = -1 - \sqrt{8-(x-2)^2}$.
+The upper semicircle: $y_u = -1 + \sqrt{8-(x-2)^2}$. The lower semicircle:
+$y_l = -1 - \sqrt{8-(x-2)^2}$.
 
-Between $x = 0$ and $x = 4$The parabola lies below the upper semicircle and above the lower semicircle. The bounded region consists of two "lens-shaped" regions. Computing the exact area requires:
+Between $x = 0$ and $x = 4$The parabola lies below the upper semicircle and above the lower
+semicircle. The bounded region consists of two "lens-shaped" regions. Computing the exact area
+requires:
 
 $$A = \int_0^1 (y_u - y_p) \, dx + \int_1^3 (y_u - y_l) \, dx + \int_3^4 (y_u - y_p) \, dx - \int_1^3 (y_p - y_l) \, dx$$
 
@@ -345,7 +372,8 @@ $$= \int_0^4 \left[-1 + \sqrt{8-(x-2)^2} - (x^2 - 4x + 1)\right] dx$$
 
 $$= \int_0^4 \left[\sqrt{8-(x-2)^2} - x^2 + 4x - 2\right] dx$$
 
-The integral $\int_0^4 \sqrt{8-(x-2)^2} \, dx$ is a semicircle of radius $2\sqrt{2}$Giving area $\frac◆LB◆\pi(2\sqrt{2})^2◆RB◆◆LB◆2◆RB◆ = 4\pi$.
+The integral $\int_0^4 \sqrt{8-(x-2)^2} \, dx$ is a semicircle of radius $2\sqrt{2}$Giving area
+$\frac◆LB◆\pi(2\sqrt{2})^2◆RB◆◆LB◆2◆RB◆ = 4\pi$.
 
 $$\int_0^4 (-x^2 + 4x - 2) \, dx = \left[-\frac{x^3}{3} + 2x^2 - 2x\right]_0^4 = -\frac{64}{3} + 32 - 8 = -\frac{64}{3} + 24 = \frac{72 - 64}{3} = \frac{8}{3}$$
 
@@ -357,15 +385,23 @@ $$A = 4\pi + \frac{8}{3} = \frac◆LB◆12\pi + 8◆RB◆◆LB◆3◆RB◆ \appr
 
 **Question:**
 
-A rectangular enclosure is to be built against an existing straight wall. Three sides of the enclosure are to be made of fencing, and the fourth side is the wall. The total length of fencing available is 60 metres.
+A rectangular enclosure is to be built against an existing straight wall. Three sides of the
+enclosure are to be made of fencing, and the fourth side is the wall. The total length of fencing
+available is 60 metres.
 
-**(a)** Show that the area $A$ of the enclosure can be written as $A = 30x - \frac{3}{2}x^2$ where $x$ is the length of the side perpendicular to the wall.
+**(a)** Show that the area $A$ of the enclosure can be written as $A = 30x - \frac{3}{2}x^2$ where
+$x$ is the length of the side perpendicular to the wall.
 
-**(b)** A farmer decides that the enclosure must also contain a rectangular internal partition parallel to the wall, dividing the enclosure into two equal smaller rectangles. The partition uses fencing of the same type. Find the dimensions of the enclosure that maximise the total area.
+**(b)** A farmer decides that the enclosure must also contain a rectangular internal partition
+parallel to the wall, dividing the enclosure into two equal smaller rectangles. The partition uses
+fencing of the same type. Find the dimensions of the enclosure that maximise the total area.
 
-**(c)** The fencing costs $20 per metre, but there is a discount of $5\%$ on the total cost if the enclosure is square (when viewed with the wall as one side). Determine which design (with or without partition) gives the larger net area per pound spent, and justify your answer.
+**(c)** The fencing costs $20 per metre, but there is a discount of $5\%$ on the total cost if the
+enclosure is square (when viewed with the wall as one side). Determine which design (with or without
+partition) gives the larger net area per pound spent, and justify your answer.
 
-[Difficulty: hard. Combines quadratic optimisation with practical reasoning and comparative analysis.]
+[Difficulty: hard. Combines quadratic optimisation with practical reasoning and comparative
+analysis.]
 
 **Solution:**
 
@@ -375,17 +411,28 @@ Fencing used: $2x + y = 60$So $y = 60 - 2x$.
 
 $$A = xy = x(60 - 2x) = 60x - 2x^2$$
 
-The stated formula $A = 30x - \frac{3}{2}x^2$ does not match. The correct expression is $A = 60x - 2x^2$.
+The stated formula $A = 30x - \frac{3}{2}x^2$ does not match. The correct expression is
+$A = 60x - 2x^2$.
 
-Let me check: if "three sides" means two perpendicular and one parallel, then $2x + y = 60$ and $A = x(60-2x) = 60x - 2x^2$. The stated formula with coefficient $3/2$ would require a different setup.
+Let me check: if "three sides" means two perpendicular and one parallel, then $2x + y = 60$ and
+$A = x(60-2x) = 60x - 2x^2$. The stated formula with coefficient $3/2$ would require a different
+setup.
 
-If instead the fencing forms $2x + y = 60$ where the coefficient of $x$ accounts for the partition: with a partition parallel to the wall, we need $3x + 2y = 60$ (three perpendicular sections and two parallel sections), giving $y = 30 - \frac{3}{2}x$ and $A = x(30 - \frac{3}{2}x) = 30x - \frac{3}{2}x^2$. This is for part (b).
+If instead the fencing forms $2x + y = 60$ where the coefficient of $x$ accounts for the partition:
+with a partition parallel to the wall, we need $3x + 2y = 60$ (three perpendicular sections and two
+parallel sections), giving $y = 30 - \frac{3}{2}x$ and
+$A = x(30 - \frac{3}{2}x) = 30x - \frac{3}{2}x^2$. This is for part (b).
 
-I will re-interpret part (a) as follows: the area is $A = 60x - 2x^2$ without the partition, and I will correct the problem statement. However, since the question states $A = 30x - \frac{3}{2}x^2$This applies to part (b)'s setup. Let me proceed with the corrected interpretation.
+I will re-interpret part (a) as follows: the area is $A = 60x - 2x^2$ without the partition, and I
+will correct the problem statement. However, since the question states
+$A = 30x - \frac{3}{2}x^2$This applies to part (b)'s setup. Let me proceed with the corrected
+interpretation.
 
-**(a) Corrected:** Without partition: $A = 60x - 2x^2$. Maximum at $x = 15$$y = 30$$A_{\max} = 450$ m$^2$.
+**(a) Corrected:** Without partition: $A = 60x - 2x^2$. Maximum at $x = 15$$y = 30$$A_{\max} = 450$
+m$^2$.
 
-**(b)** With partition parallel to the wall, the fencing layout is: 3 lengths of $x$ (two outer sides + one partition) and 2 lengths of $y$ (front and back).
+**(b)** With partition parallel to the wall, the fencing layout is: 3 lengths of $x$ (two outer
+sides + one partition) and 2 lengths of $y$ (front and back).
 
 $$3x + 2y = 60 \implies y = 30 - \frac{3}{2}x$$
 
@@ -397,8 +444,11 @@ $$x = \frac◆LB◆-30◆RB◆◆LB◆2 \cdot (-3/2)◆RB◆ = \frac{30}{3} = 10
 
 At $x = 10$: $y = 30 - 15 = 15$. $A_{\max} = 10 \times 15 = 150$ m$^2$.
 
-**(c)** Without partition: Area = 450 m$^2$Fencing = 60 m, cost = $\pounds 1200$ (no discount since not square), area per pound $= 450/1200 = 0.375$ m$^2$/\pounds.
+**(c)** Without partition: Area = 450 m$^2$Fencing = 60 m, cost = $\pounds 1200$ (no discount since
+not square), area per pound $= 450/1200 = 0.375$ m$^2$/\pounds.
 
-With partition: Area = 150 m$^2$Fencing = 60 m, cost = $\pounds 1200$Area per pound $= 150/1200 = 0.125$ m$^2$/\pounds.
+With partition: Area = 150 m$^2$Fencing = 60 m, cost = $\pounds 1200$Area per pound
+$= 150/1200 = 0.125$ m$^2$/\pounds.
 
-The design without partition gives significantly better area per pound spent ($0.375$ vs $0.125$ m$^2$/\pounds).
+The design without partition gives significantly better area per pound spent ($0.375$ vs $0.125$
+m$^2$/\pounds).

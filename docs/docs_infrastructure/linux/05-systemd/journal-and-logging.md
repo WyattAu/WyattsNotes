@@ -1,10 +1,13 @@
 ---
 id: journal-and-logging
 title: Journal and Logging
-description: "Journal and Logging — systemd-journald Architecture; Log Sources; Storage Modes; Check current storage mode with worked examples and exam-style questions."
+description:
+  'Journal and Logging — systemd-journald Architecture; Log Sources; Storage Modes; Check current
+  storage mode with worked examples and exam-style questions.'
 slug: journal-and-logging
 sidebar_position: 2
 ---
+
 ## systemd-journald Architecture
 
 `systemd-journald` is the central logging daemon in systemd-based systems. It collects log messages
@@ -23,14 +26,14 @@ flowchart LR
 
 ### Log Sources
 
-| Source | Description |
+| Source           | Description                                 |
 | ---------------- | ------------------------------------------- |
-| stdout/stderr | All service output captured by systemd |
-| Kernel messages | `printk()` messages (equivalent to `dmesg`) |
-| syslog() | Traditional syslog calls |
-| Audit events | Kernel audit subsystem |
-| /dev/kmsg | Kernel log device |
-| Internal journal | Journal's own diagnostic messages |
+| stdout/stderr    | All service output captured by systemd      |
+| Kernel messages  | `printk()` messages (equivalent to `dmesg`) |
+| syslog()         | Traditional syslog calls                    |
+| Audit events     | Kernel audit subsystem                      |
+| /dev/kmsg        | Kernel log device                           |
+| Internal journal | Journal's own diagnostic messages           |
 
 ### Storage Modes
 

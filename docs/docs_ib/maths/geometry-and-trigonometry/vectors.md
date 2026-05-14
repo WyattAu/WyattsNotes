@@ -1,9 +1,11 @@
 ---
 title: Vectors
 tags:
-- maths
+  - maths
 slug: vectors
-description: "Rigorous IB mathematics notes covering Vectors. Includes definitions, derivations, worked examples, and exam-style problems."
+description:
+  'Rigorous IB mathematics notes covering Vectors. Includes definitions, derivations, worked
+  examples, and exam-style problems.'
 ---
 
 ## Vector Line
@@ -269,7 +271,7 @@ $$
 - **Area of a parallelogram:** $A = |\bm{a} \times \bm{b}|$
 - **Area of a triangle:** $A = \frac{1}{2}|\bm{a} \times \bm{b}|$
 - **Volume of a parallelepiped:** $V = |\bm{a} \cdot (\bm{b} \times \bm{c})|$ (scalar triple
- product)
+  product)
 
 ### Worked Example 2: Cross Product
 
@@ -303,7 +305,7 @@ $\bm{r}_2 = \bm{a}_2 + s\bm{b}_2$:
 1. Set the parametric equations equal and solve for $t$ and $s$
 2. If a solution exists, substitute back to find the intersection point
 3. If the direction vectors are parallel ($\bm{b}_1 \times \bm{b}_2 = \bm{0}$), the lines are either
- parallel or coincident
+   parallel or coincident
 
 ### Line-Plane Intersection
 
@@ -311,14 +313,14 @@ To find where line $\bm{r} = \bm{a} + t\bm{b}$ intersects plane $\bm{r} \cdot \h
 
 1. Substitute $\bm{r} = \bm{a} + t\bm{b}$ into the plane equation:
    $$
- (\bm{a} + t\bm{b}) \cdot \hat{n} = d
+   (\bm{a} + t\bm{b}) \cdot \hat{n} = d
    $$
 2. Solve for $t$:
    $$
- t = \frac{d - \bm{a} \cdot \hat{n}}{\bm{b} \cdot \hat{n}}
+   t = \frac{d - \bm{a} \cdot \hat{n}}{\bm{b} \cdot \hat{n}}
    $$
 3. If $\bm{b} \cdot \hat{n} = 0$The line is parallel to the plane (no intersection or lies in the
- plane)
+   plane)
 
 ### Worked Example 3: Line-Plane Intersection
 
@@ -412,8 +414,8 @@ $$
 
 ### Proving Three Points Are Collinear
 
-Points $A$$B$$C$ are collinear if and only if $\overrightarrow{AB} = k\overrightarrow{AC}$ for
-Some scalar $k$.
+Points $A$$B$$C$ are collinear if and only if $\overrightarrow{AB} = k\overrightarrow{AC}$ for Some
+scalar $k$.
 
 ### Finding the Foot of a Perpendicular
 
@@ -431,11 +433,9 @@ $$
 (\bm{a} + t\bm{b} - \bm{p}) \cdot \bm{b} = 0 \implies t = \frac{(\bm{p} - \bm{a}) \cdot \bm{b}}{|\bm{b}|^2}
 $$
 
-:::tip
-Exam Tip For vector problems, always draw a diagram first. When finding intersections, check
+:::tip Exam Tip For vector problems, always draw a diagram first. When finding intersections, check
 Your answer by substituting the point back into both equations. Common errors include sign mistakes
-In the cross product and forgetting to take the absolute value in distance formulas.
-:::
+In the cross product and forgetting to take the absolute value in distance formulas. :::
 
 ---
 
@@ -556,27 +556,26 @@ $$
 ## Common Pitfalls
 
 1. **Confusing parametric and Cartesian forms.** In Cartesian form, each component is equated to a
- parameter expression. Forgetting to set the ratios equal is a common error.
+   parameter expression. Forgetting to set the ratios equal is a common error.
 
 2. **Sign errors in the cross product.** The cross product is anti-commutative:
- $\bm{a} \times \bm{b} = -(\bm{b} \times \bm{a})$. Always double-check the order of vectors.
+   $\bm{a} \times \bm{b} = -(\bm{b} \times \bm{a})$. Always double-check the order of vectors.
 
 3. **Forgetting the absolute value in distance formulas.** The distance from a point to a plane is
- always non-negative: use $|\bm{p} \cdot \hat{n} - d|$.
+   always non-negative: use $|\bm{p} \cdot \hat{n} - d|$.
 
 4. **Assuming a line intersects a plane.** Always check that $\bm{b} \cdot \hat{n} \neq 0$ before
- solving. If $\bm{b} \cdot \hat{n} = 0$ and $\bm{a} \cdot \hat{n} = d$The line lies in the
- plane. If $\bm{b} \cdot \hat{n} = 0$ and $\bm{a} \cdot \hat{n} \neq d$The line is parallel to
- the plane.
+   solving. If $\bm{b} \cdot \hat{n} = 0$ and $\bm{a} \cdot \hat{n} = d$The line lies in the plane.
+   If $\bm{b} \cdot \hat{n} = 0$ and $\bm{a} \cdot \hat{n} \neq d$The line is parallel to the plane.
 
 5. **Angle between line and plane vs angle between line and normal.** The angle $\alpha$ between a
- line and a plane satisfies $\sin\alpha = \frac{|\bm{b} \cdot \hat{n}|}{|\bm{b}||\hat{n}|}$. The
- angle between the line and the **normal** satisfies
- $\cos\phi = \frac{|\bm{b} \cdot \hat{n}|}{|\bm{b}||\hat{n}|}$. Note that
- $\alpha + \phi = 90^\circ$.
+   line and a plane satisfies $\sin\alpha = \frac{|\bm{b} \cdot \hat{n}|}{|\bm{b}||\hat{n}|}$. The
+   angle between the line and the **normal** satisfies
+   $\cos\phi = \frac{|\bm{b} \cdot \hat{n}|}{|\bm{b}||\hat{n}|}$. Note that
+   $\alpha + \phi = 90^\circ$.
 
 6. **Assuming skew lines intersect.** Two lines in 3D are generally skew (neither parallel nor
- intersecting). Always verify that a common solution exists for the parameters.
+   intersecting). Always verify that a common solution exists for the parameters.
 
 ---
 

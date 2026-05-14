@@ -1,6 +1,8 @@
 ---
 title: Control Flow
-description: "Control Flow — If / Else; Initialization Statement; Idiomatic Error Check; Switch with worked examples and exam-style questions."
+description:
+  'Control Flow — If / Else; Initialization Statement; Idiomatic Error Check; Switch with worked
+  examples and exam-style questions.'
 slug: control-flow
 date: 2026-04-18
 tags:
@@ -8,6 +10,7 @@ tags:
 categories:
   - Go
 ---
+
 ## If / Else
 
 Go's `if` statements do not require parentheses but do require braces. The condition can include an
@@ -246,8 +249,8 @@ for _, p := range items {
 
 ## Break and Continue
 
-`break` exits the innermost `for``switch`Or `select`. `continue` skips to the next iteration of
-The innermost `for` loop.
+`break` exits the innermost `for``switch`Or `select`. `continue` skips to the next iteration of The
+innermost `for` loop.
 
 ### Labeled Break
 
@@ -361,10 +364,10 @@ Functions execute.
 ## Common Pitfalls
 
 1. **Forgetting that `switch` cases break automatically.** Unlike C, Go does not fall through by
- default. This is a feature, not a bug, but surprises C programmers.
+   default. This is a feature, not a bug, but surprises C programmers.
 
 2. **Modifying loop variable captures in closures.** The loop variable is reused across iterations.
- Capturing it in a closure captures the same variable:
+   Capturing it in a closure captures the same variable:
 
    ```go
    for _, v := range values {
@@ -374,17 +377,17 @@ Functions execute.
    }
    ```
 
- Fix: pass as an argument `go func(val int) { ... }(v)`.
+Fix: pass as an argument `go func(val int) { ... }(v)`.
 
 3. **Using `defer` in a loop.** Each `defer` in a loop accumulates until the function returns. For
- large loops, this can exhaust memory. Use an immediately-invoked function or call the cleanup
- directly.
+   large loops, this can exhaust memory. Use an immediately-invoked function or call the cleanup
+   directly.
 
 4. **Range over `nil` map/slice is safe.** `for range nil` does nothing -- it does not panic. This
- is by design.
+   is by design.
 
 5. **Range copies values.** Modifying the range variable does not modify the original element. Use
- index-based access for mutations.
+   index-based access for mutations.
 
 ## Summary
 

@@ -1,21 +1,24 @@
 ---
 title: Sparse Checkout and Partial Clone
-description: "Git sparse checkout and partial clone: restricting working directory contents and downloading only needed objects to optimise repository size and clone time."
+description:
+  'Git sparse checkout and partial clone: restricting working directory contents and downloading
+  only needed objects to optimise repository size and clone time.'
 slug: sparse-checkout-and-partial-clone
 ---
+
 ## The Problem
 
 As repositories grow into monorepos containing hundreds of thousands of files, the cost of a full
 Clone becomes prohibitive. The problem manifests in three dimensions: **time**, **disk space**, and
 **bandwidth**.
 
-| Repository | Size (Full Clone) | Files | Build Time (Full Clone) |
+| Repository                 | Size (Full Clone) | Files | Build Time (Full Clone)             |
 | -------------------------- | ----------------- | ----- | ----------------------------------- |
-| Android (AOSP) | 300+ GB | 5M+ | N/A (not practical for individuals) |
-| Chromium | 40+ GB | 400K+ | 30+ min |
-| Google (internal monorepo) | 80+ TB (shared) | 1B+ | N/A |
-| Meta (Buck2) | 70+ GB | 500K+ | 20+ min |
-| Microsoft (Windows) | 300+ GB | 4M+ | N/A |
+| Android (AOSP)             | 300+ GB           | 5M+   | N/A (not practical for individuals) |
+| Chromium                   | 40+ GB            | 400K+ | 30+ min                             |
+| Google (internal monorepo) | 80+ TB (shared)   | 1B+   | N/A                                 |
+| Meta (Buck2)               | 70+ GB            | 500K+ | 20+ min                             |
+| Microsoft (Windows)        | 300+ GB           | 4M+   | N/A                                 |
 
 A frontend developer working on the Chromium monorepo does not need the `chrome/browser/`
 `chrome/test/`Or `third_party/ffmpeg/` directories. A backend developer does not need `ui/` or
@@ -187,8 +190,8 @@ Receiving objects: 100% (3000/3000), done.  # Much smaller!
 ```
 
 The initial download includes all commit objects and tree objects (directory structures) but no file
-Content. When you run `git log``git diff``git status`Or `git show`Git transparently fetches
-The blobs it needs:
+Content. When you run `git log``git diff``git status`Or `git show`Git transparently fetches The
+blobs it needs:
 
 ```bash
 $ git log --oneline
@@ -259,15 +262,15 @@ $ git fetch --filter=blob:none origin feature-branch
 
 These two features solve different problems and can be used independently or together.
 
-| Aspect | Sparse Checkout | Partial Clone |
+| Aspect                  | Sparse Checkout                     | Partial Clone                                  |
 | ----------------------- | ----------------------------------- | ---------------------------------------------- |
-| What it controls | Working tree contents | Object database contents |
-| What is downloaded | All objects (commits, trees, blobs) | Only specified objects (e.g., no blobs) |
-| What is checked out | Only specified directories | Everything (or combined with sparse checkout) |
-| Disk usage | Lower working tree size | Lower `.git` object store size |
-| Network usage | Full download | Partial download (fetch on demand) |
-| Requires server support | No (client-side only) | Yes (Git protocol v2) |
-| Offline behavior | Full (all objects are local) | Limited (missing objects cause fetch failures) |
+| What it controls        | Working tree contents               | Object database contents                       |
+| What is downloaded      | All objects (commits, trees, blobs) | Only specified objects (e.g., no blobs)        |
+| What is checked out     | Only specified directories          | Everything (or combined with sparse checkout)  |
+| Disk usage              | Lower working tree size             | Lower `.git` object store size                 |
+| Network usage           | Full download                       | Partial download (fetch on demand)             |
+| Requires server support | No (client-side only)               | Yes (Git protocol v2)                          |
+| Offline behavior        | Full (all objects are local)        | Limited (missing objects cause fetch failures) |
 
 ### Sparse Checkout Only
 
@@ -352,9 +355,9 @@ From a promisor remote.
 
 ### How Promisor Objects Work
 
-When you do a partial clone with `--filter=blob:none`Git downloads all tree objects. Each tree
-Entry points to either a subtree or a blob. The blob SHAs are recorded locally, but the blob content
-Is not downloaded. These blob SHAs are promisor objects.
+When you do a partial clone with `--filter=blob:none`Git downloads all tree objects. Each tree Entry
+points to either a subtree or a blob. The blob SHAs are recorded locally, but the blob content Is
+not downloaded. These blob SHAs are promisor objects.
 
 ```bash
 # In a partial clone, you can see that an object exists but is missing:
@@ -450,18 +453,18 @@ So a shallow clone saves history but downloads all file content. A partial clone
 
 ### Comparison
 
-| Feature | Shallow Clone (`--depth=1`) | Partial Clone (`--filter=blob:none`) |
+| Feature                   | Shallow Clone (`--depth=1`)                         | Partial Clone (`--filter=blob:none`) |
 | ------------------------- | --------------------------------------------------- | ------------------------------------ |
-| What is omitted | Ancestral commits | File contents (blobs) |
-| Commit history available | No (only tip) | Yes (all commits) |
-| File contents available | Yes (all files at tip) | On demand (fetched when accessed) |
-| Can be deepened | Yes (`git fetch --unshallow`) | Yes (objects fetched on demand) |
-| Can create branches | Limited (cannot rebase onto history you don't have) | Yes (full history available) |
-| Can contribute (push PRs) | Limited | Yes |
-| Git log across history | No | Yes |
-| Git bisect | No (not enough history) | Yes |
-| Server requirements | None (works with any Git server) | Protocol v2 |
-| Best for | CI/CD checkouts, one-off scripts | Long-lived development, monorepos |
+| What is omitted           | Ancestral commits                                   | File contents (blobs)                |
+| Commit history available  | No (only tip)                                       | Yes (all commits)                    |
+| File contents available   | Yes (all files at tip)                              | On demand (fetched when accessed)    |
+| Can be deepened           | Yes (`git fetch --unshallow`)                       | Yes (objects fetched on demand)      |
+| Can create branches       | Limited (cannot rebase onto history you don't have) | Yes (full history available)         |
+| Can contribute (push PRs) | Limited                                             | Yes                                  |
+| Git log across history    | No                                                  | Yes                                  |
+| Git bisect                | No (not enough history)                             | Yes                                  |
+| Server requirements       | None (works with any Git server)                    | Protocol v2                          |
+| Best for                  | CI/CD checkouts, one-off scripts                    | Long-lived development, monorepos    |
 
 ### Combining Shallow + Partial
 
@@ -487,17 +490,17 @@ And `clone`.
 
 ### Hosting Platform Support
 
-| Platform | Partial Clone Support | Protocol v2 Default | Notes |
+| Platform                  | Partial Clone Support | Protocol v2 Default | Notes                                                         |
 | ------------------------- | --------------------- | ------------------- | ------------------------------------------------------------- |
-| GitHub.com | Yes (since 2020) | Yes | `--filter=blob:none` and `--filter=tree:0` supported |
-| GitHub Enterprise | Yes (3.0+) | Yes | Same as GitHub.com |
-| GitLab.com | Yes (since 13.5) | Yes | Full support |
-| GitLab Self-Managed | Yes (13.5+) | Yes | May need `gitlab_rails['gitaly_client_query_timeout']` tuning |
-| Bitbucket.org | Yes (since 2021) | Yes | Supported via smart HTTP |
-| Bitbucket Server | Yes (7.0+) | Yes | |
-| Gitea | Yes (1.16+) | Yes (default 1.21+) | |
-| Gerrit | Yes | Yes | |
-| Custom (git-http-backend) | Yes (Git 2.22+) | Configurable | Requires `http.receivepack=true` and protocol v2 |
+| GitHub.com                | Yes (since 2020)      | Yes                 | `--filter=blob:none` and `--filter=tree:0` supported          |
+| GitHub Enterprise         | Yes (3.0+)            | Yes                 | Same as GitHub.com                                            |
+| GitLab.com                | Yes (since 13.5)      | Yes                 | Full support                                                  |
+| GitLab Self-Managed       | Yes (13.5+)           | Yes                 | May need `gitlab_rails['gitaly_client_query_timeout']` tuning |
+| Bitbucket.org             | Yes (since 2021)      | Yes                 | Supported via smart HTTP                                      |
+| Bitbucket Server          | Yes (7.0+)            | Yes                 |                                                               |
+| Gitea                     | Yes (1.16+)           | Yes (default 1.21+) |                                                               |
+| Gerrit                    | Yes                   | Yes                 |                                                               |
+| Custom (git-http-backend) | Yes (Git 2.22+)       | Configurable        | Requires `http.receivepack=true` and protocol v2              |
 
 ### Self-Hosted Server Configuration
 

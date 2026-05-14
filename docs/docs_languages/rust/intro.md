@@ -1,10 +1,13 @@
 ---
 id: intro
 title: Introduction to Rust
-description: "Rigorous programming language Rust notes covering Introduction to Rust. Includes definitions, derivations, worked examples, and exam-style problems."
+description:
+  'Rigorous programming language Rust notes covering Introduction to Rust. Includes definitions,
+  derivations, worked examples, and exam-style problems.'
 slug: intro
 sidebar_position: 1
 ---
+
 ## Why Rust
 
 Rust solves a problem that has plagued systems programming for decades: how to write fast,
@@ -23,21 +26,21 @@ Every large technology company that writes systems software.
 Three pillars define Rust:
 
 1. **Memory safety without a garbage collector.** Ownership and borrowing are checked at compile
- time. There is no runtime GC, no reference counting overhead (unless you opt into it with
- `Rc`/`Arc`), and no stop-the-world pauses. The borrow checker enforces that every reference is
- valid for its entire lifetime, eliminating use-after-free, double-free, and dangling pointer bugs
- at compile time.
+   time. There is no runtime GC, no reference counting overhead (unless you opt into it with
+   `Rc`/`Arc`), and no stop-the-world pauses. The borrow checker enforces that every reference is
+   valid for its entire lifetime, eliminating use-after-free, double-free, and dangling pointer bugs
+   at compile time.
 
 2. **Zero-cost abstractions.** High-level constructs (iterators, pattern matching, trait-based
- dispatch) compile down to the same machine code you would write by hand in C. There is no vtable
- indirection unless you explicitly use dynamic dispatch via `dyn Trait`. Monomorphization means
- generic code is instantiated for each concrete type, giving you the performance of hand-written
- specialized code.
+   dispatch) compile down to the same machine code you would write by hand in C. There is no vtable
+   indirection unless you explicitly use dynamic dispatch via `dyn Trait`. Monomorphization means
+   generic code is instantiated for each concrete type, giving you the performance of hand-written
+   specialized code.
 
 3. **Fearless concurrency.** The type system prevents data races at compile time. `Send` and `Sync`
- are auto-implemented marker traits that the compiler uses to determine whether a type can be
- safely transferred to or shared between threads. If your code compiles, it is free of data races
- (modulo unsafe blocks).
+   are auto-implemented marker traits that the compiler uses to determine whether a type can be
+   safely transferred to or shared between threads. If your code compiles, it is free of data races
+   (modulo unsafe blocks).
 
 ## Compilation Model
 
@@ -66,14 +69,14 @@ Borrow checker operates. MIR is also used for:
 
 Rust uses a unified toolchain managed by `rustup`:
 
-| Component | Purpose |
+| Component       | Purpose                                                    |
 | --------------- | ---------------------------------------------------------- |
-| `rustup` | Toolchain installer and version manager |
-| `rustc` | The compiler |
-| `cargo` | Build system, package manager, test runner, doc generator |
-| `rustfmt` | Code formatter |
-| `clippy` | Lint checker (catches common mistakes beyond the compiler) |
-| `rust-analyzer` | LSP implementation for IDE support |
+| `rustup`        | Toolchain installer and version manager                    |
+| `rustc`         | The compiler                                               |
+| `cargo`         | Build system, package manager, test runner, doc generator  |
+| `rustfmt`       | Code formatter                                             |
+| `clippy`        | Lint checker (catches common mistakes beyond the compiler) |
+| `rust-analyzer` | LSP implementation for IDE support                         |
 
 Install the toolchain:
 
@@ -124,21 +127,21 @@ Key changes in Rust 2024:
 
 ## Where Rust Runs
 
-| Target | Use Case |
-| ----------------------------------------------- | ------------------------------------ |
-| **Embedded** (`thumbv7m-none-eabi``cortex-m`) | Microcontrollers, real-time systems |
-| **Linux/Windows/macOS** (`x86_64``aarch64`) | Desktop applications, CLIs, servers |
-| **WebAssembly** (`wasm32-unknown-unknown`) | Browser, edge computing |
-| **Bare metal** (`x86_64-unknown-none`) | OS kernels, bootloaders, hypervisors |
-| **Android/iOS** | Mobile via FFI or native modules |
+| Target                                        | Use Case                             |
+| --------------------------------------------- | ------------------------------------ |
+| **Embedded** (`thumbv7m-none-eabi``cortex-m`) | Microcontrollers, real-time systems  |
+| **Linux/Windows/macOS** (`x86_64``aarch64`)   | Desktop applications, CLIs, servers  |
+| **WebAssembly** (`wasm32-unknown-unknown`)    | Browser, edge computing              |
+| **Bare metal** (`x86_64-unknown-none`)        | OS kernels, bootloaders, hypervisors |
+| **Android/iOS**                               | Mobile via FFI or native modules     |
 
 ## Common Pitfalls
 
 - **Fighting the borrow checker.** New Rustaceans often try to write C-style code with aliasing
- mutable references. The solution is almost always to restructure your data ownership, not to add
- `clone()`. Interior mutability types (`Cell``RefCell``Mutex`) exist precisely for cases where
- you need shared mutation.
+  mutable references. The solution is almost always to restructure your data ownership, not to add
+  `clone()`. Interior mutability types (`Cell``RefCell``Mutex`) exist precisely for cases where you
+  need shared mutation.
 - **Ignoring clippy warnings.** Clippy catches real bugs. Run `cargo clippy -- -W clippy::all` and
- fix every warning before shipping.
+  fix every warning before shipping.
 - **Overusing `unsafe`.** If you find yourself wrapping large blocks in `unsafe`You are likely
- working against the language. Re-examine your data structure design.
+  working against the language. Re-examine your data structure design.

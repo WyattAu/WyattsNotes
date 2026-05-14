@@ -1,6 +1,8 @@
 ---
 title: Polar Coordinates
-description: "A-Level Further Maths notes on Polar Coordinates: Board Coverage; 1. Converting Between Cartesian and Polar; 1.1 Definitions; 1.2 Converting from polar to Ca."
+description:
+  'A-Level Further Maths notes on Polar Coordinates: Board Coverage; 1. Converting Between Cartesian
+  and Polar; 1.1 Definitions; 1.2 Converting from polar to Ca.'
 date: 2026-04-02T00:00:00.000Z
 tags:
   - FurtherMaths
@@ -10,24 +12,26 @@ categories:
 slug: polar-coordinates
 sidebar_position: 5
 ---
+
 ## Polar Coordinates
 
 Polar coordinates $(r, \theta)$ provide an alternative to Cartesian coordinates $(x, y)$ for
 Describing points in the plane. Many curves that are complicated in Cartesian form have simple and
 Elegant polar equations, making polar coordinates essential for advanced geometry and calculus.
 
-<DesmosGraph title="Polar Coordinate Curves" expressions={["r=a\cos(\theta)", "r=a\sin(\theta)", "r=a(1+\cos(\theta))"]} width={800} height={500} />
+<DesmosGraph title="Polar Coordinate Curves" expressions={["r=a\cos(\theta)", "r=a\sin(\theta)",
+"r=a(1+\cos(\theta))"]} width={800} height={500} />
 
 Adjust the parameters in the graph above to explore the relationships between variables.
 
 ### Board Coverage
 
-| Board | Paper | Notes |
+| Board      | Paper   | Notes                                                |
 | ---------- | ------- | ---------------------------------------------------- |
-| AQA | Paper 1 | Polar curves, area enclosed, tangents |
-| Edexcel | FP2 | Full coverage: conversion, sketching, area, tangents |
-| OCR (A) | — | Not in OCR (A) specification |
-| CIE (9231) | P2 | Full coverage: curves, area, tangents |
+| AQA        | Paper 1 | Polar curves, area enclosed, tangents                |
+| Edexcel    | FP2     | Full coverage: conversion, sketching, area, tangents |
+| OCR (A)    | —       | Not in OCR (A) specification                         |
+| CIE (9231) | P2      | Full coverage: curves, area, tangents                |
 
 :::info Polar coordinates appear in Edexcel FP2 and CIE P2. OCR (A) does not cover this topic. AQA
 Covers the essentials in Paper 1. The formula booklet provides the area formula. :::
@@ -42,7 +46,7 @@ Covers the essentials in Paper 1. The formula booklet provides the area formula.
 
 - $r$ = the distance from the origin $O$ to $P$ (the **radial coordinate**)
 - $\theta$ = the angle measured anticlockwise from the positive $x$-axis to $OP$ (the **angular
- coordinate**)
+  coordinate**)
 
 The relationship between Cartesian and polar coordinates is:
 
@@ -113,7 +117,7 @@ A **cardioid** has equation $r = a(1 + \cos\theta)$ or $r = a(1 + \sin\theta)$.
 **Properties of $r = a(1 + \cos\theta)$:**
 
 - Symmetry: symmetric about the initial line ($\theta = 0$), since replacing $\theta$ with $-\theta$
- gives the same $r$.
+  gives the same $r$.
 - Maximum $r$: at $\theta = 0$$r = 2a$.
 - Minimum $r$: at $\theta = \pi$$r = 0$ (the cusp).
 - Passes through the origin when $\cos\theta = -1$I.e., $\theta = \pi$.
@@ -145,11 +149,12 @@ The radius and the tangent is constant.
 ### 3.1 Systematic method
 
 1. **Identify symmetry:**
- - Symmetric about the initial line ($\theta = 0$) if replacing $\theta$ with $-\theta$ gives the
- same equation.
- - Symmetric about $\theta = \pi/2$ if replacing $\theta$ with $\pi - \theta$ gives the same
- equation.
- - Symmetric about the pole if replacing $r$ with $-r$ gives the same equation.
+
+- Symmetric about the initial line ($\theta = 0$) if replacing $\theta$ with $-\theta$ gives the
+  same equation.
+- Symmetric about $\theta = \pi/2$ if replacing $\theta$ with $\pi - \theta$ gives the same
+  equation.
+- Symmetric about the pole if replacing $r$ with $-r$ gives the same equation.
 
 2. **Find key values:** Evaluate $r$ at $\theta = 0, \pi/6, \pi/4, \pi/3, \pi/2, \pi, 3\pi/2, 2\pi$.
 
@@ -158,7 +163,7 @@ The radius and the tangent is constant.
 4. **Find maximum $|r|$:** Differentiate $r$ with respect to $\theta$ and set $dr/d\theta = 0$.
 
 5. **Trace the curve:** As $\theta$ increases, plot the corresponding $(r, \theta)$ points and join
- them smoothly.
+   them smoothly.
 
 **Example.** Sketch $r = 2 + \cos\theta$ for $0 \leq \theta \leq 2\pi$.
 
@@ -191,8 +196,8 @@ $$\boxed{A = \frac{1}{2}\int_\alpha^\beta r^2\,d\theta}$$
 Divide the angular range $[\alpha, \beta]$ into $n$ equal sectors of angle
 $\Delta\theta = \dfrac◆LB◆\beta-\alpha◆RB◆◆LB◆n◆RB◆$.
 
-Each sector is approximately a circular sector of radius $r(\theta_i)$ and angle $\Delta\theta$
-With area:
+Each sector is approximately a circular sector of radius $r(\theta_i)$ and angle $\Delta\theta$ With
+area:
 
 $$\Delta A_i \approx \frac{1}{2}r^2(\theta_i)\,\Delta\theta$$
 
@@ -228,8 +233,8 @@ The area between curves $r_1(\theta)$ (outer) and $r_2(\theta)$ (inner) from $\a
 
 $$A = \frac{1}{2}\int_\alpha^\beta \bigl[r_1^2(\theta) - r_2^2(\theta)\bigr]\,d\theta$$
 
-:::warning The area formula uses $r^2$Not $r$. When computing the area between two curves,
-Subtract $r_2^2$ from $r_1^2$Not $r_2$ from $r_1$. :::
+:::warning The area formula uses $r^2$Not $r$. When computing the area between two curves, Subtract
+$r_2^2$ from $r_1^2$Not $r_2$ from $r_1$. :::
 
 <hr />
 
@@ -296,12 +301,12 @@ $$\frac◆LB◆dr◆RB◆◆LB◆d\theta◆RB◆\cos\theta - r\sin\theta = 0$$
 
 ## 6. Summary of Key Results
 
-| Result | Formula |
+| Result                    | Formula                                                                                       |
 | ------------------------- | --------------------------------------------------------------------------------------------- |
-| Conversion | $x = r\cos\theta$$y = r\sin\theta$$r^2 = x^2+y^2$ |
-| Circle $r = 2a\cos\theta$ | Centre $(a,0)$Radius $a$ |
-| Area | $A = \dfrac{1}{2}\displaystyle\int_\alpha^\beta r^2\,d\theta$ |
-| Gradient | $\dfrac{dy}{dx} = \dfrac◆LB◆r'\sin\theta + r\cos\theta◆RB◆◆LB◆r'\cos\theta - r\sin\theta◆RB◆$ |
+| Conversion                | $x = r\cos\theta$$y = r\sin\theta$$r^2 = x^2+y^2$                                             |
+| Circle $r = 2a\cos\theta$ | Centre $(a,0)$Radius $a$                                                                      |
+| Area                      | $A = \dfrac{1}{2}\displaystyle\int_\alpha^\beta r^2\,d\theta$                                 |
+| Gradient                  | $\dfrac{dy}{dx} = \dfrac◆LB◆r'\sin\theta + r\cos\theta◆RB◆◆LB◆r'\cos\theta - r\sin\theta◆RB◆$ |
 
 <hr />
 
@@ -845,12 +850,12 @@ $$s = 2a\!\left[\int_0^{\pi} \cos(\theta/2)\,d\theta + \int_{\pi}^{2\pi} (-\cos(
 
 ## 9. Common Pitfalls
 
-| Pitfall | Correct Approach |
+| Pitfall                                                         | Correct Approach                                                                                          |
 | --------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| Forgetting the $\frac{1}{2}$ in the polar area formula | $A = \dfrac{1}{2}\displaystyle\int r^2\,d\theta$Not $\int r^2\,d\theta$ |
-| Not checking if $r$ changes sign when finding enclosed areas | If $r < 0$The curve is on the opposite side; split the integral at sign changes |
+| Forgetting the $\frac{1}{2}$ in the polar area formula          | $A = \dfrac{1}{2}\displaystyle\int r^2\,d\theta$Not $\int r^2\,d\theta$                                   |
+| Not checking if $r$ changes sign when finding enclosed areas    | If $r < 0$The curve is on the opposite side; split the integral at sign changes                           |
 | Confusing the angle $\psi$ (tangent-radius angle) with $\theta$ | $\tan\psi = r / (dr/d\theta)$; the tangent to the curve makes angle $\theta + \psi$ with the initial line |
-| Using the wrong limits for symmetric curves | Exploit symmetry: if the curve is symmetric about $\theta = 0$Integrate from $0$ to $\pi$ and double |
+| Using the wrong limits for symmetric curves                     | Exploit symmetry: if the curve is symmetric about $\theta = 0$Integrate from $0$ to $\pi$ and double      |
 
 ---
 
@@ -918,8 +923,7 @@ The polar form $z = r(\cos\theta+i\sin\theta)$ is identical to polar coordinates
 ### 11.2 Polar curves and calculus
 
 Finding tangents, areas, and arc lengths in polar coordinates requires differentiation and
-Integration. See
-[Further Calculus](/docs/alevel/further-maths/pure-mathematics/further-calculus).
+Integration. See [Further Calculus](/docs/alevel/further-maths/pure-mathematics/further-calculus).
 
 ### 11.3 Polar coordinates and parametric equations
 
@@ -930,14 +934,14 @@ $y = r(\theta)\sin\theta$.
 
 ## 12. Key Results Summary
 
-| Quantity | Formula |
+| Quantity             | Formula                                                                                           |
 | -------------------- | ------------------------------------------------------------------------------------------------- |
-| Cartesian from polar | $x = r\cos\theta$$y = r\sin\theta$ |
-| Polar from Cartesian | $r = \sqrt{x^2+y^2}$$\theta = \arctan(y/x)$ |
-| Polar area | $A = \dfrac{1}{2}\displaystyle\int_\alpha^\beta r^2\,d\theta$ |
-| Polar arc length | $s = \displaystyle\int_\alpha^\beta \sqrt◆LB◆r^2+\left(\dfrac{dr}{d\theta}\right)^2◆RB◆\,d\theta$ |
-| Tangent-radius angle | $\tan\psi = \dfrac◆LB◆r◆RB◆◆LB◆dr/d\theta◆RB◆$ |
-| Tangent to $x$-axis | $\dfrac{dy}{dx} = \dfrac◆LB◆r'\sin\theta + r\cos\theta◆RB◆◆LB◆r'\cos\theta - r\sin\theta◆RB◆$ |
+| Cartesian from polar | $x = r\cos\theta$$y = r\sin\theta$                                                                |
+| Polar from Cartesian | $r = \sqrt{x^2+y^2}$$\theta = \arctan(y/x)$                                                       |
+| Polar area           | $A = \dfrac{1}{2}\displaystyle\int_\alpha^\beta r^2\,d\theta$                                     |
+| Polar arc length     | $s = \displaystyle\int_\alpha^\beta \sqrt◆LB◆r^2+\left(\dfrac{dr}{d\theta}\right)^2◆RB◆\,d\theta$ |
+| Tangent-radius angle | $\tan\psi = \dfrac◆LB◆r◆RB◆◆LB◆dr/d\theta◆RB◆$                                                    |
+| Tangent to $x$-axis  | $\dfrac{dy}{dx} = \dfrac◆LB◆r'\sin\theta + r\cos\theta◆RB◆◆LB◆r'\cos\theta - r\sin\theta◆RB◆$     |
 
 ---
 

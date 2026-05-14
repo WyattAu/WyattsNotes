@@ -1,6 +1,8 @@
 ---
 title: Code Coverage
-description: "C++ environment and toolchain: Code Coverage — Instrumentation Mechanics; The Two Ecosystems; 1. GCC Workflow: gcov & lcov; Prerequisites."
+description:
+  'C++ environment and toolchain: Code Coverage — Instrumentation Mechanics; The Two Ecosystems; 1.
+  GCC Workflow: gcov & lcov; Prerequisites.'
 date: 2025-12-11T01:23:02.734Z
 tags:
   - cpp
@@ -8,6 +10,7 @@ categories:
   - cpp
 slug: code-coverage
 ---
+
 Import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 Code coverage is a metric used to calculate the percentage of source code executed during the
@@ -27,20 +30,18 @@ When the program runs, these counters increment. Upon process termination, the r
 Counter data to raw profile files on the disk, which are then mapped back to the source code by
 Analysis tools.
 
-:::warning
-Performance Overhead Instrumentation significantly increases binary size and execution
+:::warning Performance Overhead Instrumentation significantly increases binary size and execution
 Time. Coverage builds should never be used for performance benchmarking or production release
-Artifacts.
-:::
+Artifacts. :::
 
 ## The Two Ecosystems
 
 There are two primary coverage implementations in the modern C++ landscape:
 
 1. **Gcov (GCC):** The traditional approach. Generates `.gcno` (notes) files during build and
- `.gcda` (data) files during execution.
+   `.gcda` (data) files during execution.
 2. **Source-Based Coverage (Clang/LLVM):** The modern approach. Uses the LLVM profile runtime. It is
- generally faster and handles C++ templates and inlined functions with greater precision.
+   generally faster and handles C++ templates and inlined functions with greater precision.
 
 ## 1. GCC Workflow: gcov & lcov
 
@@ -268,12 +269,12 @@ Internal logic.
 
 ### Metric Comparison
 
-| Metric | Granularity | False Confidence Risk | Cost to Achieve High % |
+| Metric        | Granularity              | False Confidence Risk | Cost to Achieve High % |
 | ------------- | ------------------------ | --------------------- | ---------------------- |
-| **Line** | Coarse | High | Low |
-| **Branch** | Medium | Low | Medium |
-| **Function** | Coarse (per-function) | High | Low |
-| **Condition** | Fine (per-subexpression) | Very Low | High |
+| **Line**      | Coarse                   | High                  | Low                    |
+| **Branch**    | Medium                   | Low                   | Medium                 |
+| **Function**  | Coarse (per-function)    | High                  | Low                    |
+| **Condition** | Fine (per-subexpression) | Very Low              | High                   |
 
 **Industry standard for critical systems:** Branch coverage &gt; 80%, line coverage &gt; 90%. For
 Safety-critical (automotive, medical), branch coverage &gt; 95% is often required (per ISO 26262 /
@@ -312,11 +313,11 @@ Analyze:  gcov main.gcno main.gcda → main.cpp.gcov
 ### Common File Issues
 
 - **Stale `.gcda` files:** If you recompile without running the program, old `.gcda` files from a
- previous run remain. Always run the program after recompilation, or delete `.gcda` files before
- analysis.
+  previous run remain. Always run the program after recompilation, or delete `.gcda` files before
+  analysis.
 - **Missing `.gcda` files:** If the program crashes (segfault) without calling `atexit()` handlers,
- `.gcda` files may not be written. Use `__gcov_flush()` to force-write coverage data at specific
- checkpoints.
+  `.gcda` files may not be written. Use `__gcov_flush()` to force-write coverage data at specific
+  checkpoints.
 
 ```cpp
 #include <gcov.h>  // GCC-specific
@@ -513,26 +514,26 @@ endif()
 ## Common Pitfalls
 
 1. **Running coverage builds in production:** Coverage instrumentation adds 20-50% overhead. Never
- deploy instrumented binaries to production. Use separate build configurations for coverage and
- release.
+   deploy instrumented binaries to production. Use separate build configurations for coverage and
+   release.
 2. **Stale `.gcda` files from previous runs:** Always clean the build directory or delete `.gcda`
- files before running tests. Otherwise, coverage data from a previous run may be merged with the
- current run, producing inaccurate results.
+   files before running tests. Otherwise, coverage data from a previous run may be merged with the
+   current run, producing inaccurate results.
 3. **Optimized builds hiding dead code:** Compiling with `-O2` or higher may eliminate unreachable
- code, causing it to appear as "not covered" rather than "dead code." Always compile with `-O0`
- for coverage builds.
+   code, causing it to appear as "not covered" rather than "dead code." Always compile with `-O0`
+   for coverage builds.
 4. **Coverage of third-party code:** Including system headers or vcpkg libraries in coverage reports
- inflates numbers. Always filter them out with `lcov --remove` or `llvm-cov` exclude paths.
+   inflates numbers. Always filter them out with `lcov --remove` or `llvm-cov` exclude paths.
 5. **Multi-process coverage merge:** When running tests in parallel (e.g., `ctest -j8`), each
- process writes to the same `.gcda` file. Use `LLVM_PROFILE_FILE="app-%p.profraw"` (Clang) or set
- `GCOV_PREFIX` (GCC) to separate output per process.
+   process writes to the same `.gcda` file. Use `LLVM_PROFILE_FILE="app-%p.profraw"` (Clang) or set
+   `GCOV_PREFIX` (GCC) to separate output per process.
 
 ## See Also
 
 - [Unit Tests](5_unit_tests.md) — Writing tests that drive coverage analysis
 - [Build Caching](4_build_caching.md) — Avoiding cache poisoning with instrumented builds
 - [CMake Targets and Properties](1_cmake_targets_properties_generator.md) — Custom targets for
- coverage automation
+  coverage automation
 
 :::
 

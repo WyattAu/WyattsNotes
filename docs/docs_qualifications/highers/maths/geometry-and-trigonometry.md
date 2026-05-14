@@ -1,6 +1,8 @@
 ---
 title: Geometry and Trigonometry
-description: "Geometry and Trigonometry — Higher Trigonometry; Trigonometric Functions; Radians; Trigonometric Identities with worked examples and exam-style questions."
+description:
+  'Geometry and Trigonometry — Higher Trigonometry; Trigonometric Functions; Radians; Trigonometric
+  Identities with worked examples and exam-style questions.'
 date: 2026-04-14
 tags:
   - Mathematics
@@ -9,6 +11,7 @@ categories:
   - Mathematics
 slug: geometry-and-trigonometry
 ---
+
 # Geometry and Trigonometry
 
 ## Higher Trigonometry
@@ -57,7 +60,7 @@ $$
 
 **Why radians?** In calculus, the derivative formula $\frac{d}{dx}[\sin x] = \cos x$ holds only when
 $x$ is in radians. If $x$ is in degrees, you get an extra factor of $\frac{\pi}{180}$. Radians arise
- because the arc length subtended by angle $\theta$ on a unit circle is exactly $\theta$.
+because the arc length subtended by angle $\theta$ on a unit circle is exactly $\theta$.
 
 **Arc Length:**
 
@@ -115,9 +118,9 @@ $$
 $$
 
 **Proof of $\cos(A + B)$.** Consider two points on the unit circle: $P$ at angle $A$ with
-Coordinates $(\cos A, \sin A)$And $Q$ at angle $-(A+B)$ with coordinates
-$(\cos(A+B), -\sin(A+B))$. Rotating the entire figure by angle $A$ maps $P$ to $(1, 0)$ and $Q$ to
-The point at angle $-B$Namely $(\cos B, -\sin B)$. Since rotation preserves distances:
+Coordinates $(\cos A, \sin A)$And $Q$ at angle $-(A+B)$ with coordinates $(\cos(A+B), -\sin(A+B))$.
+Rotating the entire figure by angle $A$ maps $P$ to $(1, 0)$ and $Q$ to The point at angle
+$-B$Namely $(\cos B, -\sin B)$. Since rotation preserves distances:
 
 $$
 [\cos(A+B) - \cos A]^2 + [-\sin(A+B) - \sin A]^2 = (\cos B - 1)^2 + (-\sin B)^2
@@ -211,10 +214,8 @@ $\blacksquare$
 When solving trig equations in a given interval, always check for all solutions. The periodicity of
 Trig functions means there are multiple solutions.
 
-:::warning
-When dividing by a trig function to simplify, always consider the case where that
-Function equals zero separately. Dividing by $\cos x$ loses the solutions where $\cos x = 0$.
-:::
+:::warning When dividing by a trig function to simplify, always consider the case where that
+Function equals zero separately. Dividing by $\cos x$ loses the solutions where $\cos x = 0$. :::
 
 **Example:** Solve $\sin 2x = \cos x$ for $0 \leq x < 2\pi$.
 
@@ -349,8 +350,8 @@ A = \arcsin(0.6372) \approx 39.6° \quad \mathrm{or{} \quad A = 180° - 39.6° =
 $$
 
 Both values are valid since $A + B = 39.6° + 55° = 94.6° < 180^\circ$ and
-$A + B = 140.4° + 55° = 195.4° > 180^\circ$. Only $A \approx 39.6^\circ$ is valid (since the sum of angles
-Must be less than $180^\circ$).
+$A + B = 140.4° + 55° = 195.4° > 180^\circ$. Only $A \approx 39.6^\circ$ is valid (since the sum of
+angles Must be less than $180^\circ$).
 
 ### Wave Function (R-Addition Formula)
 
@@ -437,8 +438,8 @@ $x \approx 0.644 + 2\pi \approx 6.927$ (outside range).
 
 There is exactly one solution in $[0, 2\pi)$.
 
-Note that if $|c| > R = \sqrt{a^2 + b^2}$The equation has no real solutions, because the maximum
-Of $a\sin x + b\cos x$ is $R$.
+Note that if $|c| > R = \sqrt{a^2 + b^2}$The equation has no real solutions, because the maximum Of
+$a\sin x + b\cos x$ is $R$.
 
 ---
 
@@ -569,10 +570,10 @@ D = \frac{|ax_0 + by_0 + c|}{\sqrt{a^2 + b^2}}
 $$
 
 **Proof.** Let $P = (x_0, y_0)$ and let $Q$ be the foot of the perpendicular from $P$ to the line.
-The line through $P$ perpendicular to $ax + by + c = 0$ has direction $(a, b)$So its parametric
-Form is $(x_0 + at, y_0 + bt)$. Substituting into the line equation:
-$a(x_0 + at) + b(y_0 + bt) + c = 0$Giving $t = -\frac{ax_0 + by_0 + c}{a^2 + b^2}$. The distance
-Is $|t|\sqrt{a^2 + b^2} = \frac{|ax_0 + by_0 + c|}{\sqrt{a^2 + b^2}}$. $\blacksquare$
+The line through $P$ perpendicular to $ax + by + c = 0$ has direction $(a, b)$So its parametric Form
+is $(x_0 + at, y_0 + bt)$. Substituting into the line equation:
+$a(x_0 + at) + b(y_0 + bt) + c = 0$Giving $t = -\frac{ax_0 + by_0 + c}{a^2 + b^2}$. The distance Is
+$|t|\sqrt{a^2 + b^2} = \frac{|ax_0 + by_0 + c|}{\sqrt{a^2 + b^2}}$. $\blacksquare$
 
 **Example:** Find the distance from $(3, 2)$ to the line $4x + 3y - 5 = 0$.
 
@@ -609,7 +610,7 @@ Two lines in 3D can be:
 
 - **Parallel**: direction vectors are scalar multiples
 - **Intersecting**: there exists a common point (same values of $s$ and $t$ satisfy all three
- coordinate equations simultaneously)
+  coordinate equations simultaneously)
 - **Skew**: neither parallel nor intersecting
 
 **Example:** Determine whether the following lines intersect:
@@ -633,7 +634,8 @@ Check (3): $2 - 1 = -1 + 0$I.e., $1 = -1$. This is false, so the lines are **ske
 
 ### Distance from a Point to a Line in 3D
 
-The shortest distance from point $P$ to the line through $A$ with direction $\mathbf{'\{'}d{'\}'}$ is:
+The shortest distance from point $P$ to the line through $A$ with direction $\mathbf{'\{'}d{'\}'}$
+is:
 
 $$
 D = \frac{|\overrightarrow{AP} \times \mathbf{'\{'}d{'\}'}|}{|\mathbf{'\{'}d{'\}'}|}
@@ -662,15 +664,16 @@ $$
 
 ### Distance Between Two Skew Lines
 
-The shortest distance between two skew lines $\mathbf{'\{'}r{'\}'}_1 = \mathbf{'\{'}a{'\}'}_1 + t\mathbf{'\{'}d{'\}'}_1$ and
+The shortest distance between two skew lines
+$\mathbf{'\{'}r{'\}'}_1 = \mathbf{'\{'}a{'\}'}_1 + t\mathbf{'\{'}d{'\}'}_1$ and
 $\mathbf{'\{'}r{'\}'}_2 = \mathbf{'\{'}a{'\}'}_2 + s\mathbf{'\{'}d{'\}'}_2$ is:
 
 $$
 D = \frac{|(\mathbf{'\{'}a{'\}'}_2 - \mathbf{'\{'}a{'\}'}_1) \cdot (\mathbf{'\{'}d{'\}'}_1 \times \mathbf{'\{'}d{'\}'}_2)|}{|\mathbf{'\{'}d{'\}'}_1 \times \mathbf{'\{'}d{'\}'}_2|}
 $$
 
-**Example:** Find the shortest distance between the skew lines $\mathbf{'\{'}r{'\}'} = (1, 0, 0) + s(1, 2, 0)$
-And $\mathbf{'\{'}r{'\}'} = (0, 0, 1) + t(0, 1, 1)$.
+**Example:** Find the shortest distance between the skew lines
+$\mathbf{'\{'}r{'\}'} = (1, 0, 0) + s(1, 2, 0)$ And $\mathbf{'\{'}r{'\}'} = (0, 0, 1) + t(0, 1, 1)$.
 
 $\mathbf{'\{'}a{'\}'}_2 - \mathbf{'\{'}a{'\}'}_1 = (-1, 0, 1)$.
 
@@ -697,41 +700,40 @@ $$
 ## Common Pitfalls
 
 1. **Degrees vs radians:** Always check which units are being used. Calculus requires radians. If a
- question gives angles in degrees, convert before differentiating or integrating.
+   question gives angles in degrees, convert before differentiating or integrating.
 
-2. **Forgetting to check the domain:** When solving $\cos x = -\dfrac{2}{3}$There are two
- solutions in $[0, 2\pi)$: one in the second quadrant and one in the third quadrant.
+2. **Forgetting to check the domain:** When solving $\cos x = -\dfrac{2}{3}$There are two solutions
+   in $[0, 2\pi)$: one in the second quadrant and one in the third quadrant.
 
-3. **Sign errors in the wave function:** When writing $a\sin x + b\cos x = R\sin(x + \alpha)$
- ensure $\alpha$ has the correct sign. The quadrant of $\alpha$ depends on the signs of $a$ and
- $b$.
+3. **Sign errors in the wave function:** When writing $a\sin x + b\cos x = R\sin(x + \alpha)$ ensure
+   $\alpha$ has the correct sign. The quadrant of $\alpha$ depends on the signs of $a$ and $b$.
 
 4. **Incorrectly completing the square for circles:** Remember to add the constant terms to both
- sides. For $x^2 + y^2 - 6x + 4y - 12 = 0$You add 9 and 4 to both sides.
+   sides. For $x^2 + y^2 - 6x + 4y - 12 = 0$You add 9 and 4 to both sides.
 
 5. **Assuming lines in 3D always intersect:** Always check all three coordinates when testing for
- intersection. Even if two coordinates match, the third may not.
+   intersection. Even if two coordinates match, the third may not.
 
 6. **Dividing by zero in trig equations:** When you factor and divide by $\cos x$$\sin x$Or
- $\tan x$You lose solutions. Always consider the case where the factor equals zero separately.
+   $\tan x$You lose solutions. Always consider the case where the factor equals zero separately.
 
 7. **Using the wrong form of $\cos 2A$:** All three forms are equivalent, but using the wrong one
- for the given context makes the algebra much harder.
+   for the given context makes the algebra much harder.
 
 8. **Confusing the ambiguous case of the sine rule:** When $\sin A = k$ where $0 < k < 1$There are
- two possible angles ($A$ and $180° - A$). Both may or may not be valid in the triangle. Always
- check the sum of angles.
+   two possible angles ($A$ and $180° - A$). Both may or may not be valid in the triangle. Always
+   check the sum of angles.
 
 9. **Forgetting that $R$ in the wave function is always positive:** $R = \sqrt{a^2 + b^2}$ is
- defined as the positive square root. The maximum of $a\sin x + b\cos x$ is $R$ and the minimum is
- $-R$.
+   defined as the positive square root. The maximum of $a\sin x + b\cos x$ is $R$ and the minimum is
+   $-R$.
 
 ---
 
 ## Practice Questions
 
 1. Express $5\sin\theta - 12\cos\theta$ in the form $R\sin(\theta - \alpha)$ and find its maximum
- value.
+   value.
 
 2. Solve $\cos 2x = 1 - 3\sin x$ for $0 \leq x < 2\pi$.
 
@@ -740,33 +742,34 @@ $$
 4. Find the equation of the tangent to $x^2 + y^2 + 4x - 6y + 9 = 0$ at the point $(-2, 3)$.
 
 5. A sector of a circle of radius 6 cm has an area of $24\pi \mathrm{ cm{}^2$. Find the perimeter of
- the sector.
+   the sector.
 
 6. Prove that $\sin 3\theta = 3\sin\theta - 4\sin^3\theta$.
 
 7. Determine whether the lines $\mathbf{'\{'}r{'\}'} = (1, 2, 0) + s(1, -1, 2)$ and
- $\mathbf{'\{'}r{'\}'} = (3, 0, 4) + t(2, 1, -1)$ intersect, are parallel, or are skew.
+   $\mathbf{'\{'}r{'\}'} = (3, 0, 4) + t(2, 1, -1)$ intersect, are parallel, or are skew.
 
 8. Find the minimum value of $3\cos x + 4\sin x$ and the smallest positive value of $x$ at which it
- occurs.
+   occurs.
 
 9. Find the perpendicular distance from the point $(1, 2, 3)$ to the line
- $\mathbf{'\{'}r{'\}'} = (0, 1, -1) + t(2, -1, 3)$.
+   $\mathbf{'\{'}r{'\}'} = (0, 1, -1) + t(2, -1, 3)$.
 
 10. In triangle $ABC$$a = 7$$b = 9$$B = 55^\circ$. Find angle $A$ (there may be two solutions).
 
 11. Solve $2\sin^2 x + 3\cos x - 3 = 0$ for $0 \le x \lt 2\pi$.
 
-12. Find the shortest distance between the skew lines $\mathbf{'\{'}r{'\}'} = (1, 0, 0) + s(1, 2, 0)$ and
- $\mathbf{'\{'}r{'\}'} = (0, 0, 1) + t(0, 1, 1)$.
+12. Find the shortest distance between the skew lines
+    $\mathbf{'\{'}r{'\}'} = (1, 0, 0) + s(1, 2, 0)$ and
+    $\mathbf{'\{'}r{'\}'} = (0, 0, 1) + t(0, 1, 1)$.
 
 13. Find the angle between the lines $\mathbf{'\{'}r{'\}'} = (0, 0, 0) + s(1, 2, -1)$ and
- $\mathbf{'\{'}r{'\}'} = (1, 1, 0) + t(2, -1, 3)$.
+    $\mathbf{'\{'}r{'\}'} = (1, 1, 0) + t(2, -1, 3)$.
 
 14. Find the area of triangle $ABC$ given $a = 10$$b = 8$$c = 6$.
 
 15. The line $y = mx + 7$ is tangent to the circle $x^2 + y^2 - 4x + 2y - 20 = 0$. Find the possible
- values of $m$.
+    values of $m$.
 
 16. Express $\cos 4\theta$ in terms of $\cos\theta$ using double angle formulae.
 

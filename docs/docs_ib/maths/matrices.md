@@ -1,8 +1,11 @@
 ---
 title: Matrices
-description: "Rigorous IB mathematics notes covering Matrices. Includes definitions, derivations, worked examples, and exam-style problems."
+description:
+  'Rigorous IB mathematics notes covering Matrices. Includes definitions, derivations, worked
+  examples, and exam-style problems.'
 slug: matrices
 ---
+
 ## Matrix Fundamentals
 
 ### Definition and Notation
@@ -23,7 +26,8 @@ Elsewhere. For any compatible matrix $A$: $AI = IA = A$.
 
 ### Addition and Scalar Multiplication
 
-If $A, B \in \mathcal{'\{'}M{'\}'}_{m \times n}(\mathbb{'\{'}R{'\}'})$ and $\lambda \in \mathbb{'\{'}R{'\}'}$:
+If $A, B \in \mathcal{'\{'}M{'\}'}_{m \times n}(\mathbb{'\{'}R{'\}'})$ and
+$\lambda \in \mathbb{'\{'}R{'\}'}$:
 
 $$(A + B)_{ij} = a_{ij} + b_{ij}, \qquad (\lambda A)_{ij} = \lambda \cdot a_{ij}$$
 
@@ -37,7 +41,7 @@ $$c_{ij} = \sum_{k=1}^{p} a_{ik} b_{kj}$$
 
 - **Associative:** $(AB)C = A(BC)$
 - **Distributive:** $A(B + C) = AB + AC$
-- **NOT commutative:** $AB \ne BA$ 
+- **NOT commutative:** $AB \ne BA$
 - **Transpose of product:** $(AB)^T = B^T A^T$
 
 ### Transpose
@@ -127,7 +131,8 @@ Has the unique solution $\mathbf{'\{'}x{'\}'} = A^{-1}\mathbf{'\{'}b{'\}'}$ when
 
 ### Cramer's Rule
 
-For the system $A\mathbf{'\{'}x{'\}'} = \mathbf{'\{'}b{'\}'}$ where $A$ is $n \times n$ and $\det(A) \ne 0$:
+For the system $A\mathbf{'\{'}x{'\}'} = \mathbf{'\{'}b{'\}'}$ where $A$ is $n \times n$ and
+$\det(A) \ne 0$:
 
 $$x_i = \frac{\det(A_i)}{\det(A)}$$
 
@@ -136,8 +141,8 @@ Where $A_i$ is the matrix $A$ with column $i$ replaced by $\mathbf{'\{'}b{'\}'}$
 ### Gaussian Elimination
 
 For larger systems, use elementary row operations to reduce the augmented matrix
-$[A \mid \mathbf{'\{'}b{'\}'}]$ to row echelon form, then solve by back-substitution. The three elementary
-Operations are:
+$[A \mid \mathbf{'\{'}b{'\}'}]$ to row echelon form, then solve by back-substitution. The three
+elementary Operations are:
 
 1. Swap two rows ($R_i \leftrightarrow R_j$)
 2. Multiply a row by a nonzero scalar ($R_i \to kR_i$)
@@ -159,16 +164,16 @@ Each transformation matrix $T$ maps a point $(x, y)$ to a new point by left-mult
 
 $$\begin{pmatrix} x' \\ y' \end{pmatrix} = T\begin{pmatrix} x \\ y \end{pmatrix}$$
 
-| Transformation | Matrix |
+| Transformation                         | Matrix                                                                              |
 | :------------------------------------- | :---------------------------------------------------------------------------------- |
-| Reflection in $x$-axis | $\begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}$ |
-| Reflection in $y$-axis | $\begin{pmatrix} -1 & 0 \\ 0 & 1 \end{pmatrix}$ |
-| Reflection in $y = x$ | $\begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}$ |
-| Rotation by $\theta$ about origin | $\begin{pmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{pmatrix}$ |
-| Enlargement by factor $k$ | $\begin{pmatrix} k & 0 \\ 0 & k \end{pmatrix}$ |
-| Horizontal stretch by factor $k$ | $\begin{pmatrix} k & 0 \\ 0 & 1 \end{pmatrix}$ |
-| Vertical stretch by factor $k$ | $\begin{pmatrix} 1 & 0 \\ 0 & k \end{pmatrix}$ |
-| Shear parallel to $x$-axis, factor $k$ | $\begin{pmatrix} 1 & k \\ 0 & 1 \end{pmatrix}$ |
+| Reflection in $x$-axis                 | $\begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}$                                     |
+| Reflection in $y$-axis                 | $\begin{pmatrix} -1 & 0 \\ 0 & 1 \end{pmatrix}$                                     |
+| Reflection in $y = x$                  | $\begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}$                                      |
+| Rotation by $\theta$ about origin      | $\begin{pmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{pmatrix}$ |
+| Enlargement by factor $k$              | $\begin{pmatrix} k & 0 \\ 0 & k \end{pmatrix}$                                      |
+| Horizontal stretch by factor $k$       | $\begin{pmatrix} k & 0 \\ 0 & 1 \end{pmatrix}$                                      |
+| Vertical stretch by factor $k$         | $\begin{pmatrix} 1 & 0 \\ 0 & k \end{pmatrix}$                                      |
+| Shear parallel to $x$-axis, factor $k$ | $\begin{pmatrix} 1 & k \\ 0 & 1 \end{pmatrix}$                                      |
 
 ### Determinant and Area
 
@@ -187,8 +192,9 @@ $$\mathbf{'\{'}v{'\}'}' = B(A\mathbf{'\{'}v{'\}'}) = (BA)\mathbf{'\{'}v{'\}'}$$
 
 ### Invariant Points and Lines
 
-An **invariant point** satisfies $T\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}v{'\}'}$I.e. $(T - I)\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'}$.
-An **invariant line** is mapped to itself (points may move along the line).
+An **invariant point** satisfies $T\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}v{'\}'}$I.e.
+$(T - I)\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'}$. An **invariant line** is mapped to itself
+(points may move along the line).
 
 ---
 
@@ -201,13 +207,14 @@ Nonzero vector $\mathbf{'\{'}v{'\}'}$ (an **eigenvector**) such that:
 
 $$A\mathbf{'\{'}v{'\}'} = \lambda\mathbf{'\{'}v{'\}'}$$
 
-Geometrically, $A$ stretches or compresses the eigenvector $\mathbf{'\{'}v{'\}'}$ by factor $\lambda$ without
-Changing its direction.
+Geometrically, $A$ stretches or compresses the eigenvector $\mathbf{'\{'}v{'\}'}$ by factor
+$\lambda$ without Changing its direction.
 
 ### Characteristic Equation
 
-Rearranging $A\mathbf{'\{'}v{'\}'} = \lambda\mathbf{'\{'}v{'\}'}$ gives $(A - \lambda I)\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'}$. For a
-Nonzero solution $\mathbf{'\{'}v{'\}'}$We require:
+Rearranging $A\mathbf{'\{'}v{'\}'} = \lambda\mathbf{'\{'}v{'\}'}$ gives
+$(A - \lambda I)\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'}$. For a Nonzero solution
+$\mathbf{'\{'}v{'\}'}$We require:
 
 $$\det(A - \lambda I) = 0$$
 
@@ -225,17 +232,18 @@ $$\lambda^2 - \mathrm{tr}(A)\,\lambda + \det(A) = 0$$
 
 ### Finding Eigenvectors
 
-For each eigenvalue $\lambda_i$Substitute into $(A - \lambda_i I)\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'}$ and
-Solve for $\mathbf{'\{'}v{'\}'}$. The solution space is the **eigenspace** corresponding to $\lambda_i$.
+For each eigenvalue $\lambda_i$Substitute into
+$(A - \lambda_i I)\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'}$ and Solve for $\mathbf{'\{'}v{'\}'}$.
+The solution space is the **eigenspace** corresponding to $\lambda_i$.
 
 ### Properties
 
 - The trace equals the sum of eigenvalues: $\mathrm{tr}(A) = \sum \lambda_i$
 - The determinant equals the product of eigenvalues: $\det(A) = \prod \lambda_i$
 - If $A$ is symmetric ($A = A^T$), all eigenvalues are real and eigenvectors corresponding to
- distinct eigenvalues are orthogonal.
+  distinct eigenvalues are orthogonal.
 - If $A$ has $n$ linearly independent eigenvectors, it is **diagonalisable**: $A = PDP^{-1}$ where
- $D$ is diagonal with eigenvalues on the diagonal.
+  $D$ is diagonal with eigenvalues on the diagonal.
 
 ### Diagonalisation (HL Extension)
 
@@ -244,8 +252,8 @@ $\mathbf{'\{'}v{'\}'}_1, \ldots, \mathbf{'\{'}v{'\}'}_n$ forming a linearly inde
 
 $$A = PDP^{-1}$$
 
-Where $P = \begin{pmatrix} \mathbf{'\{'}v{'\}'}_1 & \cdots & \mathbf{'\{'}v{'\}'}_n \end{pmatrix}$ and
-$D = \mathrm{diag}(\lambda_1, \ldots, \lambda_n)$.
+Where $P = \begin{pmatrix} \mathbf{'\{'}v{'\}'}_1 & \cdots & \mathbf{'\{'}v{'\}'}_n \end{pmatrix}$
+and $D = \mathrm{diag}(\lambda_1, \ldots, \lambda_n)$.
 
 This is useful for computing large powers: $A^n = PD^nP^{-1}$.
 
@@ -253,25 +261,25 @@ This is useful for computing large powers: $A^n = PD^nP^{-1}$.
 
 ## Common Pitfalls
 
-1. **Matrix multiplication order.** $AB \ne BA$ . When composing transformations, the
- rightmost matrix is applied first.
+1. **Matrix multiplication order.** $AB \ne BA$ . When composing transformations, the rightmost
+   matrix is applied first.
 
 2. **Transpose of a product.** $(AB)^T = B^T A^T$Not $A^T B^T$. The order reverses.
 
 3. **Determinant of a scalar multiple.** $\det(kA) = k^n\det(A)$ for an $n \times n$ matrix, not
- $k\det(A)$.
+   $k\det(A)$.
 
 4. **Forgetting to check invertibility.** Only non-singular matrices have inverses. Always verify
- $\det(A) \ne 0$ before attempting to compute $A^{-1}$.
+   $\det(A) \ne 0$ before attempting to compute $A^{-1}$.
 
 5. **Eigenvector scaling.** Eigenvectors are determined only up to a nonzero scalar multiple. Any
- nonzero multiple of an eigenvector is also an eigenvector.
+   nonzero multiple of an eigenvector is also an eigenvector.
 
 6. **Confusing invariant points with fixed points of composition.** A point fixed by $A$ is not
- necessarily fixed by $BA$.
+   necessarily fixed by $BA$.
 
 7. **Cofactor sign errors.** The $(i, j)$-cofactor sign is $(-1)^{i+j}$. Losing track of the sign
- pattern is the most common error in computing adjugates.
+   pattern is the most common error in computing adjugates.
 
 ---
 
@@ -333,8 +341,7 @@ Use Cramer's rule to solve: $$2x - y + z = 3$$ $$x + 3y - z = 1$$ $$3x + y + 2z 
 <details>
 <summary>Problem 8</summary>
 
-For the matrix $A = \begin{pmatrix} 5 & -6 \\ 2 & -2 \end{pmatrix}$Find $A^{10}$ by
-Diagonalisation.
+For the matrix $A = \begin{pmatrix} 5 & -6 \\ 2 & -2 \end{pmatrix}$Find $A^{10}$ by Diagonalisation.
 
 </details>
 
@@ -405,9 +412,9 @@ $$A^{-1} = \frac{1}{12}\begin{pmatrix} 7 & -2 & -1 \\ -2 & 4 & 2 \\ 1 & -2 & 5 \
 
 **Worked Example: Composition of Transformations**
 
-Find the matrix for the transformation that first reflects in the line $y = x$Then rotates $90^\circ$
-Anticlockwise about the origin. Verify the result by applying the combined transformation to the point
-$(3, 1)$.
+Find the matrix for the transformation that first reflects in the line $y = x$Then rotates
+$90^\circ$ Anticlockwise about the origin. Verify the result by applying the combined transformation
+to the point $(3, 1)$.
 
 <details>
 <summary>Solution</summary>
@@ -423,9 +430,11 @@ $$T = R_\theta \cdot R_f = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}\begin{p
 This is a reflection in the $y$-axis.
 
 Verification: $(3, 1)$ reflected in $y = x$ gives $(1, 3)$. Rotating $(1, 3)$ by $90^\circ$
-Anticlockwise: $R_\theta\begin{pmatrix} 1 \\ 3 \end{pmatrix} = \begin{pmatrix} -3 \\ 1 \end{pmatrix}$.
+Anticlockwise:
+$R_\theta\begin{pmatrix} 1 \\ 3 \end{pmatrix} = \begin{pmatrix} -3 \\ 1 \end{pmatrix}$.
 
-Direct application: $T\begin{pmatrix} 3 \\ 1 \end{pmatrix} = \begin{pmatrix} -3 \\ 1 \end{pmatrix}$. Confirmed.
+Direct application: $T\begin{pmatrix} 3 \\ 1 \end{pmatrix} = \begin{pmatrix} -3 \\ 1 \end{pmatrix}$.
+Confirmed.
 
 </details>
 
@@ -433,9 +442,7 @@ Direct application: $T\begin{pmatrix} 3 \\ 1 \end{pmatrix} = \begin{pmatrix} -3 
 
 Solve the system using Gaussian elimination:
 
-$$2x + y - z = 3$$
-$$x - y + 2z = 6$$
-$$3x + 2y + z = 1$$
+$$2x + y - z = 3$$ $$x - y + 2z = 6$$ $$3x + 2y + z = 1$$
 
 <details>
 <summary>Solution</summary>
@@ -462,9 +469,11 @@ $$\begin{pmatrix} 1 & -1 & 2 & | & 6 \\ 0 & 1 & -5/3 & | & -3 \\ 0 & 0 & 20/3 & 
 
 Back-substitution: $R_3 \implies z = -2 \cdot \dfrac{3}{20} = -\dfrac{3}{10}$.
 
-$R_2$: $y - \dfrac{5}{3}\!\left(-\dfrac{3}{10}\right) = -3 \implies y + \dfrac{1}{2} = -3 \implies y = -\dfrac{7}{2}$.
+$R_2$:
+$y - \dfrac{5}{3}\!\left(-\dfrac{3}{10}\right) = -3 \implies y + \dfrac{1}{2} = -3 \implies y = -\dfrac{7}{2}$.
 
-$R_1$: $x - \left(-\dfrac{7}{2}\right) + 2\!\left(-\dfrac{3}{10}\right) = 6 \implies x + \dfrac{7}{2} - \dfrac{3}{5} = 6 \implies x = 6 - \dfrac{29}{10} = \dfrac{31}{10}$.
+$R_1$:
+$x - \left(-\dfrac{7}{2}\right) + 2\!\left(-\dfrac{3}{10}\right) = 6 \implies x + \dfrac{7}{2} - \dfrac{3}{5} = 6 \implies x = 6 - \dfrac{29}{10} = \dfrac{31}{10}$.
 
 Solution: $x = \dfrac{31}{10}$$y = -\dfrac{7}{2}$$z = -\dfrac{3}{10}$.
 
@@ -479,9 +488,11 @@ For $A = \begin{pmatrix} 3 & 1 \\ 0 & 2 \end{pmatrix}$Find $A^5$ using diagonali
 
 The matrix is already upper triangular, so eigenvalues are $\lambda_1 = 3$ and $\lambda_2 = 2$.
 
-For $\lambda_1 = 3$: $(A - 3I)\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'} \implies \begin{pmatrix} 0 & 1 \\ 0 & -1 \end{pmatrix}\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'} \implies \mathbf{'\{'}v{'\}'}_1 = \begin{pmatrix} 1 \\ 0 \end{pmatrix}$.
+For $\lambda_1 = 3$:
+$(A - 3I)\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'} \implies \begin{pmatrix} 0 & 1 \\ 0 & -1 \end{pmatrix}\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'} \implies \mathbf{'\{'}v{'\}'}_1 = \begin{pmatrix} 1 \\ 0 \end{pmatrix}$.
 
-For $\lambda_2 = 2$: $(A - 2I)\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'} \implies \begin{pmatrix} 1 & 1 \\ 0 & 0 \end{pmatrix}\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'} \implies \mathbf{'\{'}v{'\}'}_2 = \begin{pmatrix} 1 \\ -1 \end{pmatrix}$.
+For $\lambda_2 = 2$:
+$(A - 2I)\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'} \implies \begin{pmatrix} 1 & 1 \\ 0 & 0 \end{pmatrix}\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'} \implies \mathbf{'\{'}v{'\}'}_2 = \begin{pmatrix} 1 \\ -1 \end{pmatrix}$.
 
 $P = \begin{pmatrix} 1 & 1 \\ 0 & -1 \end{pmatrix}$$D = \begin{pmatrix} 3 & 0 \\ 0 & 2 \end{pmatrix}$.
 
@@ -498,21 +509,22 @@ $= \begin{pmatrix} 243 & 32 \\ 0 & -32 \end{pmatrix}\begin{pmatrix} 1 & 1 \\ 0 &
 ## Additional Common Pitfalls
 
 - **Inverse of a product order.** $(AB)^{-1} = B^{-1}A^{-1}$Not $A^{-1}B^{-1}$. The order reverses,
- just as with the transpose.
+  just as with the transpose.
 
-- **Gaussian elimination arithmetic errors.** A single arithmetic mistake in row operations propagates
- through all subsequent steps. Always verify the solution by substituting back into the original
- equations.
+- **Gaussian elimination arithmetic errors.** A single arithmetic mistake in row operations
+  propagates through all subsequent steps. Always verify the solution by substituting back into the
+  original equations.
 
-- **Misidentifying eigenvectors.** For each eigenvalue, solve $(A - \lambda I)\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'}$.
- Substituting the eigenvalue into the original matrix $A$ instead of $A - \lambda I$ is a common error.
+- **Misidentifying eigenvectors.** For each eigenvalue, solve
+  $(A - \lambda I)\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'}$. Substituting the eigenvalue into the
+  original matrix $A$ instead of $A - \lambda I$ is a common error.
 
-- **Transformation composition order.** The matrix $BA$ represents "apply $A$ first, then $B$." Writing
- $AB$ when $B$ should be applied first is the single most common transformation error.
+- **Transformation composition order.** The matrix $BA$ represents "apply $A$ first, then $B$."
+  Writing $AB$ when $B$ should be applied first is the single most common transformation error.
 
 - **Determinant and area relationship for reflections.** A reflection matrix has $\det(T) = -1$. The
- area scale factor is $|\det(T)| = 1$But the negative sign indicates orientation reversal. The area
- is always positive; the sign encodes geometric information.
+  area scale factor is $|\det(T)| = 1$But the negative sign indicates orientation reversal. The area
+  is always positive; the sign encodes geometric information.
 
 ---
 
@@ -521,8 +533,8 @@ $= \begin{pmatrix} 243 & 32 \\ 0 & -32 \end{pmatrix}\begin{pmatrix} 1 & 1 \\ 0 &
 <details>
 <summary>Problem 9</summary>
 
-Given $A = \begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix}$ and $B = \begin{pmatrix} 0 & -1 \\ 1 & 2 \end{pmatrix}$
-Verify that $(AB)^{-1} = B^{-1}A^{-1}$.
+Given $A = \begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix}$ and
+$B = \begin{pmatrix} 0 & -1 \\ 1 & 2 \end{pmatrix}$ Verify that $(AB)^{-1} = B^{-1}A^{-1}$.
 
 </details>
 
@@ -538,7 +550,8 @@ $T = \begin{pmatrix} 3 & 1 \\ 0 & 2 \end{pmatrix}$.
 <summary>Problem 11</summary>
 
 The matrix $A = \begin{pmatrix} 1 & 0 & 2 \\ 0 & 1 & -1 \\ 0 & 0 & 1 \end{pmatrix}$ represents a
-Transformation in 3D. Describe the geometric effect of $A$ and find $A^n$ for any positive integer $n$.
+Transformation in 3D. Describe the geometric effect of $A$ and find $A^n$ for any positive integer
+$n$.
 
 </details>
 
@@ -568,12 +581,10 @@ That the eigenvectors are orthogonal and diagonalise $A$.
 <details>
 <summary>Problem 15</summary>
 
-Determine all values of $k$ for which the system has (a) a unique solution, (b) no solution,
-(c) infinitely many solutions:
+Determine all values of $k$ for which the system has (a) a unique solution, (b) no solution, (c)
+infinitely many solutions:
 
-$$x + 2y + kz = 1$$
-$$2x + ky + 2z = 2$$
-$$kx + 2y + z = 3$$
+$$x + 2y + kz = 1$$ $$2x + ky + 2z = 2$$ $$kx + 2y + z = 3$$
 
 </details>
 
@@ -587,11 +598,16 @@ $B^{-1} = \dfrac{1}{1}\begin{pmatrix} 2 & 1 \\ -1 & 0 \end{pmatrix} = \begin{pma
 $B^{-1}A^{-1} = \begin{pmatrix} 2 & 1 \\ -1 & 0 \end{pmatrix}\begin{pmatrix} -2 & 1 \\ 3/2 & -1/2 \end{pmatrix} = \begin{pmatrix} -5/2 & 3/2 \\ 2 & -1 \end{pmatrix}$.
 Verified: $(AB)^{-1} = B^{-1}A^{-1}$.
 
-**Problem 10:** Invariant points: $(T - I)\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'} \implies \begin{pmatrix} 2 & 1 \\ 0 & 1 \end{pmatrix}\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'} \implies 2x + y = 0$ and $y = 0$So $x = 0$$y = 0$. Only the origin is invariant. For invariant lines $y = mx + c$: $T\begin{pmatrix} x \\ mx + c \end{pmatrix}$ must lie on $y = mx + c$. This gives conditions leading to the invariant line $y = 0$ (the $x$-axis is mapped to itself).
+**Problem 10:** Invariant points:
+$(T - I)\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'} \implies \begin{pmatrix} 2 & 1 \\ 0 & 1 \end{pmatrix}\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'} \implies 2x + y = 0$
+and $y = 0$So $x = 0$$y = 0$. Only the origin is invariant. For invariant lines $y = mx + c$:
+$T\begin{pmatrix} x \\ mx + c \end{pmatrix}$ must lie on $y = mx + c$. This gives conditions leading
+to the invariant line $y = 0$ (the $x$-axis is mapped to itself).
 
 **Problem 11:** $A$ is an upper triangular matrix with $1$S on the diagonal. This represents a shear
-Transformation. For any $n$$A^n = \begin{pmatrix} 1 & 0 & 2n \\ 0 & 1 & -n \\ 0 & 0 & 1 \end{pmatrix}$Which
-Can be verified by induction.
+Transformation. For any
+$n$$A^n = \begin{pmatrix} 1 & 0 & 2n \\ 0 & 1 & -n \\ 0 & 0 & 1 \end{pmatrix}$Which Can be verified
+by induction.
 
 **Problem 12:** $\det(A) = 3(-1 - 3) - 2(1 - 6) + (-1)(1 - (-2k)) = -12 + 10 - 1 + 2k = 2k - 3$.
 $A_x = \begin{pmatrix} 4 & 2 & -1 \\ 5 & -1 & 3 \\ 3 & 1 & 1 \end{pmatrix}$$\det(A_x) = 4(-1-3) - 2(5-9) + (-1)(5+3) = -16 + 8 - 8 = -16$.
@@ -599,22 +615,27 @@ $A_y = \begin{pmatrix} 3 & 4 & -1 \\ 1 & 5 & 3 \\ 2 & 3 & 1 \end{pmatrix}$$\det(
 $A_z = \begin{pmatrix} 3 & 2 & 4 \\ 1 & -1 & 5 \\ 2 & 1 & 3 \end{pmatrix}$$\det(A_z) = 3(-3-5) - 2(3-10) + 4(1+2) = -24 + 14 + 12 = 2$.
 $x = -16/(2k-3)$$y = 15/(2k-3)$$z = 2/(2k-3)$.
 
-**Problem 13:** Enlargement by $2$: $E = \begin{pmatrix} 2 & 0 \\ 0 & 2 \end{pmatrix}$.
-Rotation by $45^\circ$: $R = \begin{pmatrix} \cos 45^\circ & -\sin 45^\circ \\ \sin 45^\circ & \cos 45^\circ \end{pmatrix} = \dfrac{1}{\sqrt{2}}\begin{pmatrix} 1 & -1 \\ 1 & 1 \end{pmatrix}$.
+**Problem 13:** Enlargement by $2$: $E = \begin{pmatrix} 2 & 0 \\ 0 & 2 \end{pmatrix}$. Rotation by
+$45^\circ$:
+$R = \begin{pmatrix} \cos 45^\circ & -\sin 45^\circ \\ \sin 45^\circ & \cos 45^\circ \end{pmatrix} = \dfrac{1}{\sqrt{2}}\begin{pmatrix} 1 & -1 \\ 1 & 1 \end{pmatrix}$.
 $T = R \cdot E = \dfrac{1}{\sqrt{2}}\begin{pmatrix} 1 & -1 \\ 1 & 1 \end{pmatrix}\begin{pmatrix} 2 & 0 \\ 0 & 2 \end{pmatrix} = \dfrac{2}{\sqrt{2}}\begin{pmatrix} 1 & -1 \\ 1 & 1 \end{pmatrix} = \sqrt{2}\begin{pmatrix} 1 & -1 \\ 1 & 1 \end{pmatrix}$.
 Area scale factor $= |\det(T)| = |2 - (-2)| = 4$.
 
-**Problem 14:** Characteristic equation: $\lambda^2 - 4\lambda + 3 = 0 \implies \lambda = 1$ or $\lambda = 3$.
-For $\lambda = 1$: $\begin{pmatrix} 1 & 1 \\ 1 & 1 \end{pmatrix}\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'} \implies \mathbf{'\{'}v{'\}'}_1 = \begin{pmatrix} 1 \\ -1 \end{pmatrix}$.
-For $\lambda = 3$: $\begin{pmatrix} -1 & 1 \\ 1 & -1 \end{pmatrix}\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'} \implies \mathbf{'\{'}v{'\}'}_2 = \begin{pmatrix} 1 \\ 1 \end{pmatrix}$.
+**Problem 14:** Characteristic equation: $\lambda^2 - 4\lambda + 3 = 0 \implies \lambda = 1$ or
+$\lambda = 3$. For $\lambda = 1$:
+$\begin{pmatrix} 1 & 1 \\ 1 & 1 \end{pmatrix}\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'} \implies \mathbf{'\{'}v{'\}'}_1 = \begin{pmatrix} 1 \\ -1 \end{pmatrix}$.
+For $\lambda = 3$:
+$\begin{pmatrix} -1 & 1 \\ 1 & -1 \end{pmatrix}\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'} \implies \mathbf{'\{'}v{'\}'}_2 = \begin{pmatrix} 1 \\ 1 \end{pmatrix}$.
 Orthogonality check: $\mathbf{'\{'}v{'\}'}_1 \cdot \mathbf{'\{'}v{'\}'}_2 = 1 - 1 = 0$. Confirmed.
-$A = PDP^{-1}$ where $P = \begin{pmatrix} 1 & 1 \\ -1 & 1 \end{pmatrix}$$D = \begin{pmatrix} 1 & 0 \\ 0 & 3 \end{pmatrix}$.
+$A = PDP^{-1}$ where
+$P = \begin{pmatrix} 1 & 1 \\ -1 & 1 \end{pmatrix}$$D = \begin{pmatrix} 1 & 0 \\ 0 & 3 \end{pmatrix}$.
 
-**Problem 15:** $\det(A) = 1(k - 4) - 2(2 - 2k) + k(4 - k^2) = k - 4 - 4 + 4k + 4k - k^3 = -k^3 + 9k - 8$.
-Factor: $-k^3 + 9k - 8 = -(k-1)(k^2 + k - 8)$. The discriminant of $k^2 + k - 8$ is $1 + 32 = 33$.
-(a) Unique solution when $\det(A) \ne 0$: $k \ne 1$ and $k \ne \dfrac{-1 \pm \sqrt{33}}{2}$.
-(b) No solution when $\det(A) = 0$ and the system is inconsistent.
-(c) Infinitely many solutions when $\det(A) = 0$ and the system is consistent.
+**Problem 15:**
+$\det(A) = 1(k - 4) - 2(2 - 2k) + k(4 - k^2) = k - 4 - 4 + 4k + 4k - k^3 = -k^3 + 9k - 8$. Factor:
+$-k^3 + 9k - 8 = -(k-1)(k^2 + k - 8)$. The discriminant of $k^2 + k - 8$ is $1 + 32 = 33$. (a)
+Unique solution when $\det(A) \ne 0$: $k \ne 1$ and $k \ne \dfrac{-1 \pm \sqrt{33}}{2}$. (b) No
+solution when $\det(A) = 0$ and the system is inconsistent. (c) Infinitely many solutions when
+$\det(A) = 0$ and the system is consistent.
 
 </details>
 
@@ -622,13 +643,16 @@ Factor: $-k^3 + 9k - 8 = -(k-1)(k^2 + k - 8)$. The discriminant of $k^2 + k - 8$
 
 ## If You Get These Wrong, Revise:
 
-- **Solving simultaneous equations** → Review [./matrices](matrices) (sections on Solving Systems and Cramer's Rule)
+- **Solving simultaneous equations** → Review [./matrices](matrices) (sections on Solving Systems
+  and Cramer's Rule)
 - **Trigonometry for rotation matrices** → Review geometry and trigonometry topics
 - **Algebraic manipulation and factorisation** → Review algebra fundamentals
 - **Vectors and linear independence** → Review [./vectors](vectors) for related concepts
-- **Determinants and their geometric meaning** → Review [./matrices](matrices) (section on Determinants and Area)
+- **Determinants and their geometric meaning** → Review [./matrices](matrices) (section on
+  Determinants and Area)
 
-For the A-Level Further Maths treatment of this topic, see [Matrices](https://alevel.wyattau.com/docs/further-maths/pure-mathematics/further-matrices).
+For the A-Level Further Maths treatment of this topic, see
+[Matrices](https://alevel.wyattau.com/docs/further-maths/pure-mathematics/further-matrices).
 
 ## Summary
 

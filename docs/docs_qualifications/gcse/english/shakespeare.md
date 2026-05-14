@@ -1,6 +1,8 @@
 ---
 title: Shakespeare
-description: "Shakespeare — 2.1 Elizabethan and Jacobean England; 2.2 The Globe Theatre; 2.3 Acting Companies; 3.1 Iambic Pentameter. and examination."
+description:
+  'Shakespeare — 2.1 Elizabethan and Jacobean England; 2.2 The Globe Theatre; 2.3 Acting Companies;
+  3.1 Iambic Pentameter. and examination.'
 date: 2026-04-22
 tags:
   - English
@@ -9,12 +11,11 @@ categories:
   - English
 slug: shakespeare
 ---
+
 ## Shakespeare
 
-:::info
-Board Coverage AQA Paper 1 Section A | Edexcel Paper 1 Component 1 | OCR Paper 1 Section A
-(with Pre-1900 Poetry) | WJEC/Eduqas Paper 1 Section A
-:::
+:::info Board Coverage AQA Paper 1 Section A | Edexcel Paper 1 Component 1 | OCR Paper 1 Section A
+(with Pre-1900 Poetry) | WJEC/Eduqas Paper 1 Section A :::
 
 ## 1. Why Shakespeare Is Compulsory
 
@@ -43,19 +44,19 @@ Political instability.
 Key contextual factors for GCSE study include:
 
 - **The Divine Right of Kings.** The belief that monarchs were appointed by God underpinned
- political authority. Regicide, as depicted in _Macbeth_, was not merely treason but an act of
- sacrilege. James I, who claimed descent from Banquo, had a particular interest in the history of
- Scottish kingship.
+  political authority. Regicide, as depicted in _Macbeth_, was not merely treason but an act of
+  sacrilege. James I, who claimed descent from Banquo, had a particular interest in the history of
+  Scottish kingship.
 - **The Great Chain of Being.** A hierarchical model of the universe in which everything -- from
- angels to kings to peasants to animals -- occupied a divinely ordained position. Disruption of
- this order, as in _Macbeth_, was believed to cause cosmic disorder reflected in unnatural events.
+  angels to kings to peasants to animals -- occupied a divinely ordained position. Disruption of
+  this order, as in _Macbeth_, was believed to cause cosmic disorder reflected in unnatural events.
 - **Religious tension.** England was a Protestant nation after the Reformation, but Catholicism
- persisted as an underground faith. The threat of Catholic conspiracy, the Gunpowder Plot of 1605,
- and the anxieties surrounding religious identity permeate the plays of this period.
+  persisted as an underground faith. The threat of Catholic conspiracy, the Gunpowder Plot of 1605,
+  and the anxieties surrounding religious identity permeate the plays of this period.
 - **Gender hierarchy.** Women were legally and economically subordinate to men. Marriage was
- primarily an economic transaction. Female characters who defy gender norms -- Lady Macbeth,
- Beatrice in _Much Ado About Nothing_, Viola in _Twelfth Night_ -- are significant partly because
- of the social constraints they transgress.
+  primarily an economic transaction. Female characters who defy gender norms -- Lady Macbeth,
+  Beatrice in _Much Ado About Nothing_, Viola in _Twelfth Night_ -- are significant partly because
+  of the social constraints they transgress.
 
 ### 2.2 The Globe Theatre
 
@@ -64,19 +65,19 @@ Understanding the physical conditions of the Globe is essential to understanding
 As drama.
 
 - **The stage was thrust into the audience.** There was no proscenium arch separating actors from
- spectators. Audience members stood in the yard (the "groundlings") or sat in the galleries that
- surrounded three sides of the stage. This intimacy meant that soliloquies could be delivered
- directly to the audience, creating a conspiratorial relationship between character and spectator.
+  spectators. Audience members stood in the yard (the "groundlings") or sat in the galleries that
+  surrounded three sides of the stage. This intimacy meant that soliloquies could be delivered
+  directly to the audience, creating a conspiratorial relationship between character and spectator.
 - **There was minimal scenery.** Setting was established through language. When Horatio says "'tis
- bitter cold, / And I am sick at heart" (_Hamlet_, 1.1), the audience understands that the scene
- takes place at night on the battlements of Elsinore. Shakespeare's descriptive language therefore
- serves a practical theatrical function as well as an aesthetic one.
+  bitter cold, / And I am sick at heart" (_Hamlet_, 1.1), the audience understands that the scene
+  takes place at night on the battlements of Elsinore. Shakespeare's descriptive language therefore
+  serves a practical theatrical function as well as an aesthetic one.
 - **Daylight performances.** Plays were performed in the afternoon. There was no artificial
- lighting, so references to night, darkness, and torchlight are communicated through dialogue and
- stage direction rather than actual stage darkness.
+  lighting, so references to night, darkness, and torchlight are communicated through dialogue and
+  stage direction rather than actual stage darkness.
 - **An all-male cast.** Female roles were played by boy actors. This has implications for the
- analysis of gender: when Viola disguises herself as a man in _Twelfth Night_, the audience is
- watching a boy actor playing a woman playing a man, creating layers of theatrical irony.
+  analysis of gender: when Viola disguises herself as a man in _Twelfth Night_, the audience is
+  watching a boy actor playing a woman playing a man, creating layers of theatrical irony.
 
 ### 2.3 Acting Companies
 
@@ -84,14 +85,14 @@ Shakespeare was a shareholder in the Lord Chamberlain's Men (later the King's Me
 Leading playing companies in London. The company system shaped the plays in several ways:
 
 - **Fixed repertoire.** A company might have thirty or more plays in active rotation. This meant
- that plays had to be memorable and immediately engaging -- there was no expectation that the
- audience had seen or would see the play more than once.
+  that plays had to be memorable and immediately engaging -- there was no expectation that the
+  audience had seen or would see the play more than once.
 - **Type-casting.** Actors specialised in particular roles. Richard Burbage, Shakespeare's leading
- tragedian, played Hamlet, Othello, King Lear, and Macbeth. The plays were written with these
- actors' specific talents in mind.
+  tragedian, played Hamlet, Othello, King Lear, and Macbeth. The plays were written with these
+  actors' specific talents in mind.
 - **Collaboration.** Playwriting was a collaborative enterprise. Shakespeare co-authored several
- plays (for example, _Timon of Athens_ with Thomas Middleton, _Pericles_ with George Wilkins).
- Revision and adaptation were standard practice.
+  plays (for example, _Timon of Athens_ with Thomas Middleton, _Pericles_ with George Wilkins).
+  Revision and adaptation were standard practice.
 
 ## 3. Shakespeare's Language
 
@@ -110,22 +111,20 @@ Signals emotional disturbance, urgency, or significance.
 ### 3.2 Blank Verse
 
 **Blank verse** is unrhymed iambic pentameter. It is the default medium of Shakespeare's serious
-Drama. Characters of high status -- kings, nobles, tragic heroes -- speak in blank verse.
-The shift from verse to prose (see below) is therefore a significant marker of tone, status, or
-State of mind.
+Drama. Characters of high status -- kings, nobles, tragic heroes -- speak in blank verse. The shift
+from verse to prose (see below) is therefore a significant marker of tone, status, or State of mind.
 
 ### 3.3 Prose
 
-Approximately twenty per cent of Shakespeare's plays is written in prose. Prose is used
-For:
+Approximately twenty per cent of Shakespeare's plays is written in prose. Prose is used For:
 
 - **Comic and lower-class characters.** The Porter in _Macbeth_, the Gravediggers in _Hamlet_, and
- Bottom in _A Midsummer Night's Dream_ speak in prose, distinguishing them linguistically from the
- verse-speaking aristocracy.
+  Bottom in _A Midsummer Night's Dream_ speak in prose, distinguishing them linguistically from the
+  verse-speaking aristocracy.
 - **Madness and psychological disturbance.** When Lady Macbeth sleepwalks in Act 5, she speaks in
- prose, suggesting the disintegration of her rational mind.
+  prose, suggesting the disintegration of her rational mind.
 - **Letters and written documents.** When a character reads a letter aloud, the shift to prose
- signals the presence of a written medium rather than spoken dialogue.
+  signals the presence of a written medium rather than spoken dialogue.
 
 ### 3.4 Early Modern English Features
 
@@ -133,15 +132,15 @@ Shakespeare wrote in Early Modern English, a stage of the language that is close
 English than to Middle English (Chaucer) but retains features that can cause difficulty:
 
 - **Thou/thee/thy/thine.** These are second-person singular pronouns, used for intimate or
- deliberately informal address. "You" is plural or formal. When a character shifts from "you" to
- "thou," it signals a change in the social or emotional relationship.
+  deliberately informal address. "You" is plural or formal. When a character shifts from "you" to
+  "thou," it signals a change in the social or emotional relationship.
 - **-est and -eth verb endings.** "Thou hast," "he speaketh." These mark the second-person singular
- and third-person singular respectively.
+  and third-person singular respectively.
 - **Inverted word order.** "Goes the king hence today?" Inversion is often used for emphasis,
- rhetorical effect, or to fit the metrical pattern.
+  rhetorical effect, or to fit the metrical pattern.
 - **Multiple meanings.** Many Shakespearean words have shifted in meaning. "Wherefore" means "why,"
- not "where." "Let" means "hinder" or "prevent" in some contexts. "Nice" meant "precise" or
- "subtle." Students must be alert to these semantic shifts.
+  not "where." "Let" means "hinder" or "prevent" in some contexts. "Nice" meant "precise" or
+  "subtle." Students must be alert to these semantic shifts.
 
 ### 3.5 Wordplay, Puns, and Double Meanings
 
@@ -192,19 +191,19 @@ Psychological disintegration; appearance versus reality.
 
 - Act 1, Scene 3: The witches' prophecies and Macbeth's first soliloquy ("Stars, hide your fires").
 - Act 1, Scene 5: Lady Macbeth's invocation of the spirits ("Come, you spirits / That tend on mortal
- thoughts"). The scene establishes her as the dominant partner and introduces the play's concern
- with gender inversion.
+  thoughts"). The scene establishes her as the dominant partner and introduces the play's concern
+  with gender inversion.
 - Act 1, Scene 7: Macbeth's soliloquy on the dagger of the mind ("Is this a dagger which I see
- before me?"). The hallucination signals the beginning of Macbeth's psychological unraveling.
+  before me?"). The hallucination signals the beginning of Macbeth's psychological unraveling.
 - Act 2, Scene 2: The murder of Duncan and its immediate aftermath. Lady Macbeth's claim that "a
- little water clears us of this deed" becomes deeply ironic in retrospect.
+  little water clears us of this deed" becomes deeply ironic in retrospect.
 - Act 3, Scene 4: The banquet scene. Banquo's ghost is visible to Macbeth but not to the other
- guests, creating dramatic irony and signalling Macbeth's isolation.
+  guests, creating dramatic irony and signalling Macbeth's isolation.
 - Act 5, Scene 1: Lady Macbeth's sleepwalking scene. Her compulsive hand-washing ("Out, damned
- spot!") reveals the psychological consequences of the murder she has suppressed.
+  spot!") reveals the psychological consequences of the murder she has suppressed.
 - Act 5, Scene 5: Macbeth's "tomorrow, and tomorrow, and tomorrow" soliloquy. One of the most
- celebrated passages in English literature, it articulates the nihilism to which Macbeth's career
- of violence has reduced him.
+  celebrated passages in English literature, it articulates the nihilism to which Macbeth's career
+  of violence has reduced him.
 
 #### Romeo and Juliet (c. 1595)
 
@@ -219,33 +218,33 @@ Versus age; the individual versus society; passion and reason.
 **Key scenes for analysis:**
 
 - Act 1, Scene 5: The ballroom scene. Romeo and Juliet's first exchange is a **sonnet** -- a
- fourteen-line poem with a specific rhyme scheme (ababcdcdefefgg) -- which they compose together,
- signalling their instant and total connection.
+  fourteen-line poem with a specific rhyme scheme (ababcdcdefefgg) -- which they compose together,
+  signalling their instant and total connection.
 - Act 2, Scene 2: The balcony scene. Juliet's monologue ("O Romeo, Romeo! wherefore art thou
- Romeo?") is one of the most famous in the canon. Note the use of oxymoron ("beautiful tyrant,
- fiend angelical") to express the paradox of loving an enemy.
+  Romeo?") is one of the most famous in the canon. Note the use of oxymoron ("beautiful tyrant,
+  fiend angelical") to express the paradox of loving an enemy.
 - Act 3, Scene 1: The death of Mercutio. This scene marks the structural pivot from comedy to
- tragedy. Mercutio's curse -- "A plague o' both your houses!" -- resonates through the rest of the
- play.
+  tragedy. Mercutio's curse -- "A plague o' both your houses!" -- resonates through the rest of the
+  play.
 - Act 3, Scene 5: The morning after the wedding. The rapid shift from the intimacy of the lovers'
- bedroom to the violence of Capulet's rage at Juliet's refusal to marry Paris demonstrates
- Shakespeare's control of dramatic pace and tone.
+  bedroom to the violence of Capulet's rage at Juliet's refusal to marry Paris demonstrates
+  Shakespeare's control of dramatic pace and tone.
 
 #### Other Tragedies Set on GCSE Specifications
 
 - **Othello (c. 1603):** The tragedy of jealousy. Iago's manipulation of Othello into believing that
- Desdemona has been unfaithful explores themes of racial prejudice, military honour, and the
- destructive power of insinuation. The "handkerchief" motif is a masterclass in how a physical
- object can carry symbolic weight.
+  Desdemona has been unfaithful explores themes of racial prejudice, military honour, and the
+  destructive power of insinuation. The "handkerchief" motif is a masterclass in how a physical
+  object can carry symbolic weight.
 - **King Lear (c. 1605--06):** The tragedy of suffering and redemption. Lear's division of his
- kingdom between his daughters Goneril and Regan, and his banishment of the honest Cordelia, leads
- to madness, civil war, and death. The play's exploration of nothingness, justice, and natural law
- is among the most profound in Shakespeare.
+  kingdom between his daughters Goneril and Regan, and his banishment of the honest Cordelia, leads
+  to madness, civil war, and death. The play's exploration of nothingness, justice, and natural law
+  is among the most profound in Shakespeare.
 - **Hamlet (c. 1600--01):** The tragedy of indecision. Hamlet's delay in avenging his father's
- murder by his uncle Claudius has generated more critical commentary than any other aspect of
- Shakespeare. The play's self-consciousness about theatre ("the play within the play") and its
- preoccupation with death, madness, and moral corruption make it the most intellectually demanding
- of the tragedies.
+  murder by his uncle Claudius has generated more critical commentary than any other aspect of
+  Shakespeare. The play's self-consciousness about theatre ("the play within the play") and its
+  preoccupation with death, madness, and moral corruption make it the most intellectually demanding
+  of the tragedies.
 
 ### 4.2 Comedies
 
@@ -261,14 +260,14 @@ Contrast between appearance and reality; the power of language (gossip, slander,
 **Key scenes for analysis:**
 
 - Act 1, Scene 1: The "merry war" of wit between Beatrice and Benedick establishes their dynamic.
- Note the use of **stichomythia** -- rapid-fire, single-line exchanges -- to create a sense of
- intellectual equals sparring.
+  Note the use of **stichomythia** -- rapid-fire, single-line exchanges -- to create a sense of
+  intellectual equals sparring.
 - Act 2, Scene 3 and Act 3, Scene 1: The "gulling" scenes, in which friends trick Beatrice and
- Benedick into believing the other is in love with them. These scenes use **eavesdropping** as both
- a structural device and a thematic statement about the power of suggestion.
+  Benedick into believing the other is in love with them. These scenes use **eavesdropping** as both
+  a structural device and a thematic statement about the power of suggestion.
 - Act 4, Scene 1: Claudio's public repudiation of Hero at the altar. The scene shifts the play from
- comedy toward near-tragedy and raises questions about male honour and female vulnerability that
- are never fully resolved.
+  comedy toward near-tragedy and raises questions about male honour and female vulnerability that
+  are never fully resolved.
 
 #### Twelfth Night (c. 1601--02)
 
@@ -283,24 +282,24 @@ Disguise; madness (both feigned and genuine); social class and ambition; the pai
 **Key scenes for analysis:**
 
 - Act 1, Scene 5: Viola's first encounter with Olivia as Cesario. The "willow cabin" speech is a
- masterpiece of persuasive rhetoric, and the scene establishes the triangle of desire that drives
- the plot.
+  masterpiece of persuasive rhetoric, and the scene establishes the triangle of desire that drives
+  the plot.
 - Act 2, Scene 5: Malvolio's discovery of the forged letter. The scene is a set-piece of dramatic
- irony, as the audience watches Malvolio interpret the letter in ways that the conspirators
- intended but that he does not recognise as deception.
+  irony, as the audience watches Malvolio interpret the letter in ways that the conspirators
+  intended but that he does not recognise as deception.
 - Act 3, Scene 1: Viola's soliloquy on the paradoxes of disguise ("I am not what I am"). The line
- echoes Iago's declaration in _Othello_ ("I am not what I am") and points to the play's central
- concern with identity and selfhood.
+  echoes Iago's declaration in _Othello_ ("I am not what I am") and points to the play's central
+  concern with identity and selfhood.
 
 #### Other Comedies Set on GCSE Specifications
 
 - **A Midsummer Night's Dream (c. 1595--96):** The most magical of the comedies. Four young lovers
- flee Athens for the forest, where fairy enchantment causes chaos. The play's triple plot (the
- lovers, the mechanicals, the fairies) explores the irrationality of love, the relationship between
- imagination and reality, and the power of theatre itself.
+  flee Athens for the forest, where fairy enchantment causes chaos. The play's triple plot (the
+  lovers, the mechanicals, the fairies) explores the irrationality of love, the relationship between
+  imagination and reality, and the power of theatre itself.
 - **The Tempest (c. 1610--11):** Shakespeare's last solo-authored play. Prospero, the rightful Duke
- of Milan, has been exiled to an island where he uses magical powers to orchestrate the arrival of
- his enemies. The play is often read as Shakespeare's meditation on art, power, and forgiveness.
+  of Milan, has been exiled to an island where he uses magical powers to orchestrate the arrival of
+  his enemies. The play is often read as Shakespeare's meditation on art, power, and forgiveness.
 
 ### 4.3 Histories
 
@@ -318,11 +317,11 @@ Role of women as witnesses and victims of male violence.
 **Key scenes for analysis:**
 
 - Act 1, Scene 1: Richard's opening soliloquy ("Now is the winter of our discontent"). The speech
- establishes Richard's villainy, his intelligence, and his relationship with the audience as a
- confidant. His direct address -- "Determined to prove a villain" -- simultaneously declares his
- intentions and invites the audience into his confidence.
+  establishes Richard's villainy, his intelligence, and his relationship with the audience as a
+  confidant. His direct address -- "Determined to prove a villain" -- simultaneously declares his
+  intentions and invites the audience into his confidence.
 - Act 1, Scene 2: Richard's wooing of Lady Anne over the coffin of her father-in-law Henry VI. This
- scene demonstrates Richard's rhetorical skill, his audacity, and Anne's vulnerability.
+  scene demonstrates Richard's rhetorical skill, his audacity, and Anne's vulnerability.
 
 #### Henry V (c. 1598--99)
 
@@ -336,10 +335,10 @@ Power; rhetoric and persuasion.
 **Key scenes for analysis:**
 
 - Act 3, Scene 1: The St. Crispin's Day speech ("Once more unto the breach, dear friends"). The
- speech is a masterclass in rhetorical technique: direct address, imagery of brotherhood,
- repetition, and the construction of a shared national identity.
+  speech is a masterclass in rhetorical technique: direct address, imagery of brotherhood,
+  repetition, and the construction of a shared national identity.
 - Act 4, Scene 1: Henry's soliloquy on the burdens of kingship ("O hard condition, twin-born with
- greatness"). The speech humanises Henry and complicates the play's presentation of leadership.
+  greatness"). The speech humanises Henry and complicates the play's presentation of leadership.
 
 ## 5. Key Scenes and Soliloquies: Analysis Frameworks
 
@@ -350,9 +349,9 @@ Speaks their thoughts aloud. Soliloquies serve several dramatic functions:
 
 - They reveal a character's inner thoughts, motivations, and conflicts to the audience.
 - They create dramatic irony: the audience knows what the character is thinking, but other
- characters do not.
+  characters do not.
 - They allow the playwright to explore philosophical, moral, or existential questions through the
- voice of a specific character.
+  voice of a specific character.
 - They provide structural punctuation, marking moments of decision, reflection, or crisis.
 
 ### 5.2 How to Analyse a Soliloquy
@@ -360,17 +359,17 @@ Speaks their thoughts aloud. Soliloquies serve several dramatic functions:
 When analysing a soliloquy, address the following elements:
 
 1. **Context within the play.** Where does this soliloquy occur in the dramatic arc? What has just
- happened? What will happen next?
+   happened? What will happen next?
 2. **Speaker and audience.** Who is speaking? To whom? (A soliloquy is technically spoken to no one,
- but the character often addresses themselves, a person who is not present, or a concept.)
+   but the character often addresses themselves, a person who is not present, or a concept.)
 3. **Content.** What is the character saying? What decisions are they reaching? What do they reveal
- about their state of mind?
+   about their state of mind?
 4. **Language and imagery.** What patterns of imagery emerge? What metaphors, similes, or other
- figurative devices are used? What do they reveal about the character's preoccupations?
+   figurative devices are used? What do they reveal about the character's preoccupations?
 5. **Verse form.** Is the speech in iambic pentameter? Are there departures from the pattern? If so,
- where and why?
+   where and why?
 6. **Dramatic function.** What does this soliloquy achieve in the play? How does it advance the
- plot, develop character, or explore theme?
+   plot, develop character, or explore theme?
 
 ## 6. Shakespearean Criticism
 
@@ -427,16 +426,16 @@ Significance.
 Shakespeare's plays are divided into five acts, a convention inherited from Roman comedy. The
 Five-act structure follows this pattern:
 
-| Act | Function |
+| Act                  | Function                                                                             |
 | -------------------- | ------------------------------------------------------------------------------------ |
-| Act 1 | **Exposition.** Introduction of characters, setting, and the central conflict. |
-| Act 2 | **Rising action.** Development of the conflict; complications and obstacles. |
-| Act 3 | **Climax.** The turning point of the play. In tragedy, this is often the point of no |
-| return. |
-| Act 4 | **Falling action.** The consequences of the climax unfold. In tragedy, the hero's |
+| Act 1                | **Exposition.** Introduction of characters, setting, and the central conflict.       |
+| Act 2                | **Rising action.** Development of the conflict; complications and obstacles.         |
+| Act 3                | **Climax.** The turning point of the play. In tragedy, this is often the point of no |
+| return.              |
+| Act 4                | **Falling action.** The consequences of the climax unfold. In tragedy, the hero's    |
 | decline accelerates. |
-| Act 5 | **Resolution.** The conclusion: in tragedy, death; in comedy, marriage and |
-| reconciliation. |
+| Act 5                | **Resolution.** The conclusion: in tragedy, death; in comedy, marriage and           |
+| reconciliation.      |
 
 Students should be able to identify the structural function of any given scene within this framework
 And to explain how Shakespeare uses structure to shape the audience's experience.
@@ -447,13 +446,13 @@ Shakespeare develops character through:
 
 - **Soliloquy and aside.** The most direct means of revealing a character's inner life.
 - **Dialogue.** What a character says, how they say it, and how others respond reveals social
- position, relationships, and personality.
+  position, relationships, and personality.
 - **Action.** What a character does -- especially under pressure -- is often more revealing than
- what they say.
+  what they say.
 - **What others say about them.** Other characters' descriptions provide an external perspective
- that may confirm, complicate, or contradict a character's self-presentation.
+  that may confirm, complicate, or contradict a character's self-presentation.
 - **Dramatic juxtaposition.** Shakespeare frequently pairs contrasting characters (Macbeth and
- Banquo, Romeo and Mercutio, Beatrice and Hero) so that each illuminates the other.
+  Banquo, Romeo and Mercutio, Beatrice and Hero) so that each illuminates the other.
 
 ### 7.3 Language
 
@@ -554,19 +553,19 @@ Question requires an extract-based response linked to the whole play.
 ## 9. Common Pitfalls
 
 - **Retelling the plot.** Narrative summary is not analysis. Every sentence in a Shakespeare essay
- must explain _how_ the text produces meaning, not _what happens_ in the story.
+  must explain _how_ the text produces meaning, not _what happens_ in the story.
 - **Context dumps.** Long paragraphs about the Globe Theatre or the Great Chain of Being that are
- not connected to specific moments in the text will not earn marks under AO3. Every contextual
- point must be anchored to a quotation.
+  not connected to specific moments in the text will not earn marks under AO3. Every contextual
+  point must be anchored to a quotation.
 - **Ignoring dramatic form.** Shakespeare's plays are drama, not novels. Students must consider how
- the play would work in performance: staging, lighting, costume, delivery, audience response.
+  the play would work in performance: staging, lighting, costume, delivery, audience response.
 - **Vague language analysis.** "Shakespeare uses imagery to create an effect" is meaningless.
- Identify the specific image, quote it, name the technique, and explain the precise effect.
+  Identify the specific image, quote it, name the technique, and explain the precise effect.
 - **Not covering the whole play.** Extract-based questions require references to the play as a
- whole. An essay that discusses only the extract will be severely limited in its marks.
+  whole. An essay that discusses only the extract will be severely limited in its marks.
 - **Quoting inaccurately.** In a closed-book examination, misquotation is inevitable to some degree,
- but students should aim to memorise key quotations precisely. A misremembered quotation is better
- than no quotation, but an accurate one is always preferable.
+  but students should aim to memorise key quotations precisely. A misremembered quotation is better
+  than no quotation, but an accurate one is always preferable.
 
 ## Summary
 

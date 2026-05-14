@@ -1,9 +1,12 @@
 ---
 id: maps-and-sets
 title: Maps and Sets
-description: "Maps and Sets — The `Map` Interface; Map Implementations; `HashMap`; `LinkedHashMap` with worked examples and exam-style questions."
+description:
+  'Maps and Sets — The `Map` Interface; Map Implementations; `HashMap`; `LinkedHashMap` with worked
+  examples and exam-style questions.'
 slug: maps-and-sets
 ---
+
 ## The `Map` Interface
 
 `Map<K,V>` maps keys to values. It is not part of the `Collection` hierarchy — it models a
@@ -39,8 +42,8 @@ public interface Map<K, V> {
 ### `HashMap`
 
 The default general-purpose map. Uses an array of buckets (linked lists, converted to balanced trees
-When a bucket exceeds 8 entries — JDK 8+). Provides O(1) average-case for `put``get``remove`
-And `containsKey`.
+When a bucket exceeds 8 entries — JDK 8+). Provides O(1) average-case for `put``get``remove` And
+`containsKey`.
 
 ```java
 Map<String, Integer> scores = new HashMap<>();
@@ -66,10 +69,8 @@ Table is resized (doubled). The initial capacity defaults to 16.
 Map<String, Integer> map = new HashMap<>((int) (1000 / 0.75f) + 1);
 ```
 
-:::warning
-`HashMap` allows one `null` key and multiple `null` values. It is not thread-safe. Use
-`ConcurrentHashMap` for concurrent access.
-:::
+:::warning `HashMap` allows one `null` key and multiple `null` values. It is not thread-safe. Use
+`ConcurrentHashMap` for concurrent access. :::
 
 ### `LinkedHashMap`
 
@@ -114,8 +115,7 @@ public class LRUCache<K, V> extends LinkedHashMap<K, V> {
 ### `TreeMap`
 
 A `NavigableMap` implementation backed by a red-black tree. Keys are sorted by natural order or by a
-`Comparator` provided at construction. Provides O(log n) for `put``get``remove`And range
-Operations.
+`Comparator` provided at construction. Provides O(log n) for `put``get``remove`And range Operations.
 
 ```java
 // Natural ordering
@@ -141,17 +141,17 @@ NavigableMap<String, Integer> subMap =
 
 **Key methods on `NavigableMap`:**
 
-| Method | Description |
+| Method                     | Description                             |
 | -------------------------- | --------------------------------------- |
-| `firstKey()` / `lastKey()` | Lowest / highest key |
-| `lowerKey(K)` | Greatest key strictly less than K |
-| `floorKey(K)` | Greatest key less than or equal to K |
-| `higherKey(K)` | Smallest key strictly greater than K |
-| `ceilingKey(K)` | Smallest key greater than or equal to K |
-| `descendingMap()` | Reverse-ordered view |
-| `subMap(K1, K2)` | View of keys in range [K1, K2) |
-| `headMap(K)` | View of keys less than K |
-| `tailMap(K)` | View of keys greater than or equal to K |
+| `firstKey()` / `lastKey()` | Lowest / highest key                    |
+| `lowerKey(K)`              | Greatest key strictly less than K       |
+| `floorKey(K)`              | Greatest key less than or equal to K    |
+| `higherKey(K)`             | Smallest key strictly greater than K    |
+| `ceilingKey(K)`            | Smallest key greater than or equal to K |
+| `descendingMap()`          | Reverse-ordered view                    |
+| `subMap(K1, K2)`           | View of keys in range [K1, K2)          |
+| `headMap(K)`               | View of keys less than K                |
+| `tailMap(K)`               | View of keys greater than or equal to K |
 
 ### `ConcurrentHashMap`
 
@@ -239,8 +239,7 @@ Behavior: `add` returns `false` if the element already exists.
 ### `HashSet`
 
 Backed by a `HashMap` (each `Set` entry is stored as a key in the underlying `HashMap` with a dummy
-Value). Provides O(1) average-case `add``contains`And `remove`. Does not maintain insertion
-Order.
+Value). Provides O(1) average-case `add``contains`And `remove`. Does not maintain insertion Order.
 
 ```java
 Set<String> names = new HashSet<>();
@@ -305,11 +304,9 @@ Set<Day> workPlusWeekend = EnumSet.copyOf(weekdays);
 workPlusWeekend.addAll(weekend);
 ```
 
-:::info
-`EnumSet` is the fastest `Set` implementation for enums. Its internal representation is a
+:::info `EnumSet` is the fastest `Set` implementation for enums. Its internal representation is a
 Single `long` (for enums with up to 64 values) or a `long[]` (for larger enums). All operations are
-Simple bit manipulations.
-:::
+Simple bit manipulations. :::
 
 ## Set Operations
 
@@ -342,13 +339,13 @@ symmetricDiff.removeAll(temp); // [1, 2, 6, 7]
 
 ## `equals` and `hashCode` Contract
 
-The contract between `equals` and `hashCode` is critical for `HashSet``HashMap`And `Hashtable`.
-The contract (from `Object.hashCode()` Javadoc):
+The contract between `equals` and `hashCode` is critical for `HashSet``HashMap`And `Hashtable`. The
+contract (from `Object.hashCode()` Javadoc):
 
 1. If two objects are equal according to `equals`They **must** have the same hash code.
 2. If two objects have the same hash code, they are **not required** to be equal.
 3. If `equals` is called multiple times on the same object, it must consistently return the same
- result (unless the object is modified).
+   result (unless the object is modified).
 4. `hashCode` must be consistent with `equals`.
 
 ### Why Both Must Be Overridden Together
@@ -381,8 +378,7 @@ public class Person {
 }
 ```
 
-:::warning
-Never use `Map&lt;List&lt;String&gt;, ...&gt;` or `Set&lt;List&lt;String&gt;&gt;` —
+:::warning Never use `Map&lt;List&lt;String&gt;, ...&gt;` or `Set&lt;List&lt;String&gt;&gt;` —
 `List.equals` compares element-by-element and `List.hashCode` depends on all elements. If you modify
 A list after using it as a key, the map will no longer find it. Use immutable collections as keys.
 :::
@@ -491,11 +487,9 @@ List<String> immutableCopy = List.copyOf(mutableList);
 Set<String> immutableSet = Set.copyOf(mutableSet);
 ```
 
-:::warning
-Immutable collections do not allow `null` elements or keys. `List.of(1, null)` throws
+:::warning Immutable collections do not allow `null` elements or keys. `List.of(1, null)` throws
 `NullPointerException`. This is by design — nulls in collections are a common source of bugs, and
-The immutable factories enforce non-null.
-:::
+The immutable factories enforce non-null. :::
 
 ### Unmodifiable Wrappers
 
@@ -550,12 +544,10 @@ String min = Collections.min(list, comparator);
 List<String> syncList = Collections.synchronizedList(mutableList);
 ```
 
-:::info
-`Collections.synchronizedList` returns a list where each method is synchronized. However,
+:::info `Collections.synchronizedList` returns a list where each method is synchronized. However,
 Iteration requires external synchronization:
 `synchronized (syncList) { for (String s : syncList) { ... } }`. For better concurrency, use
-`CopyOnWriteArrayList`.
-:::
+`CopyOnWriteArrayList`. :::
 
 ## Collection Design Patterns
 
@@ -839,11 +831,9 @@ System.gc(); // suggest GC — the entry may be removed
 System.out.println(metadata.size()); // possibly 0
 ```
 
-:::warning
-`WeakHashMap` is not suitable for caching . Entries are collected aggressively
-— as soon as the GC discovers that a key is weakly reachable. If you need size-bounded caching, use
-`LinkedHashMap` with `removeEldestEntry` or a dedicated cache library like Caffeine.
-:::
+:::warning `WeakHashMap` is not suitable for caching . Entries are collected aggressively — as soon
+as the GC discovers that a key is weakly reachable. If you need size-bounded caching, use
+`LinkedHashMap` with `removeEldestEntry` or a dedicated cache library like Caffeine. :::
 
 ### Sorted Collection Views
 

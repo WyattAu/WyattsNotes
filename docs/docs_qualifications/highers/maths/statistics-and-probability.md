@@ -1,6 +1,8 @@
 ---
 title: Statistics and Probability
-description: "Statistics and Probability — Higher Statistics; Measures of Central Tendency and Spread; Interquartile Range and Box Plots; Probability."
+description:
+  'Statistics and Probability — Higher Statistics; Measures of Central Tendency and Spread;
+  Interquartile Range and Box Plots; Probability.'
 date: 2026-04-14
 tags:
   - Mathematics
@@ -9,6 +11,7 @@ categories:
   - Mathematics
 slug: statistics-and-probability
 ---
+
 # Statistics and Probability
 
 ## Higher Statistics
@@ -50,9 +53,9 @@ $$
 
 **Example:** Calculate the mean and standard deviation of the following data:
 
-| $x$ | 2 | 4 | 6 | 8 | 10 |
+| $x$ | 2   | 4   | 6   | 8   | 10  |
 | --- | --- | --- | --- | --- | --- |
-| $f$ | 3 | 5 | 8 | 4 | 2 |
+| $f$ | 3   | 5   | 8   | 4   | 2   |
 
 $$
 \bar{x} = \frac{3(2) + 5(4) + 8(6) + 4(8) + 2(10)}{3 + 5 + 8 + 4 + 2} = \frac{6 + 20 + 48 + 32 + 20}{22} = \frac{126}{22} \approx 5.73
@@ -76,12 +79,12 @@ This is useful when data needs to be converted between units (e.g., Celsius to F
 
 ### Interquartile Range and Box Plots
 
-The **interquartile range** (IQR) is $Q_3 - Q_1$Where $Q_1$ is the 25th percentile and $Q_3$ is
-The 75th percentile.
+The **interquartile range** (IQR) is $Q_3 - Q_1$Where $Q_1$ is the 25th percentile and $Q_3$ is The
+75th percentile.
 
 **Box plots** (box-and-whisker diagrams) display five key statistics: minimum, $Q_1$Median, $Q_3$
-And maximum. The box spans from $Q_1$ to $Q_3$With the median marked inside. Whiskers extend to
-The most extreme data points within $1.5 \times \mathrm{IQR{}$ of the quartiles.
+And maximum. The box spans from $Q_1$ to $Q_3$With the median marked inside. Whiskers extend to The
+most extreme data points within $1.5 \times \mathrm{IQR{}$ of the quartiles.
 
 **Outlier detection:** A value is a potential outlier if it falls below
 $Q_1 - 1.5 \times \mathrm{IQR{}$ or above $Q_3 + 1.5 \times \mathrm{IQR{}$.
@@ -149,13 +152,13 @@ $$
 
 (c) Are the events "studies Maths" and "studies Physics" independent?
 
-$P(M) \times P(P) = 0.6 \times 0.4 = 0.24$But $P(M \cap P) = 0.25$. Since $0.24 \ne 0.25$The
-Events are **not** independent.
+$P(M) \times P(P) = 0.6 \times 0.4 = 0.24$But $P(M \cap P) = 0.25$. Since $0.24 \ne 0.25$The Events
+are **not** independent.
 
 **Example:** A medical test has a 95% true positive rate
 ($P(\mathrm{positive{} | \mathrm{disease{}) = 0.95$) and a 2% false positive rate
-($P(\mathrm{positive{} | \mathrm{no disease{}) = 0.02$). If 1% of the population has the condition, find
-$P(\mathrm{disease{} | \mathrm{positive{})$.
+($P(\mathrm{positive{} | \mathrm{no disease{}) = 0.02$). If 1% of the population has the condition,
+find $P(\mathrm{disease{} | \mathrm{positive{})$.
 
 Let $D$ = has disease, $+$ = tests positive.
 
@@ -278,14 +281,14 @@ Phenomena (heights, blood pressure, measurement errors) tend to be normally dist
 
 **Key standard normal values:**
 
-| $z$ | $P(Z \lt z)$ |
+| $z$   | $P(Z \lt z)$ |
 | ----- | ------------ |
-| 1.00 | 0.8413 |
-| 1.645 | 0.9500 |
-| 1.96 | 0.9750 |
-| 2.00 | 0.9772 |
-| 2.326 | 0.9900 |
-| 2.576 | 0.9950 |
+| 1.00  | 0.8413       |
+| 1.645 | 0.9500       |
+| 1.96  | 0.9750       |
+| 2.00  | 0.9772       |
+| 2.326 | 0.9900       |
+| 2.576 | 0.9950       |
 
 **Example:** The heights of Scottish men are normally distributed with mean 175 cm and standard
 Deviation 8 cm. Find the probability that a randomly chosen man is taller than 185 cm.
@@ -377,9 +380,9 @@ May not hold.
 
 **Example:** Calculate the PMCC for the following data:
 
-| $x$ | 1 | 2 | 3 | 4 | 5 |
+| $x$ | 1   | 2   | 3   | 4   | 5   |
 | --- | --- | --- | --- | --- | --- |
-| $y$ | 2 | 5 | 6 | 9 | 11 |
+| $y$ | 2   | 5   | 6   | 9   | 11  |
 
 $\bar{x} = 3$$\bar{y} = 6.6$.
 
@@ -418,7 +421,7 @@ $$
 - $E(X + Y) = E(X) + E(Y)$ (always, even if $X$ and $Y$ are dependent)
 - If $X$ and $Y$ are independent: $\mathrm{Var{}(X + Y) = \mathrm{Var{}(X) + \mathrm{Var{}(Y)$
 - If $X$ and $Y$ are dependent:
- $\mathrm{Var{}(X + Y) = \mathrm{Var{}(X) + \mathrm{Var{}(Y) + 2\mathrm{Cov{}(X, Y)$
+  $\mathrm{Var{}(X + Y) = \mathrm{Var{}(X) + \mathrm{Var{}(Y) + 2\mathrm{Cov{}(X, Y)$
 
 **Example:** A biased coin lands on heads with probability $p$. Let $X$ be the number of heads in 3
 Tosses.
@@ -538,7 +541,7 @@ $$
 
 - **Type I error:** Rejecting $H_0$ when it is true (false positive). Probability = $\alpha$.
 - **Type II error:** Failing to reject $H_0$ when it is false (false negative). Probability =
- $\beta$.
+  $\beta$.
 - The **power** of a test is $1 - \beta$The probability of correctly rejecting a false $H_0$.
 
 **Trade-off between errors.** Decreasing $\alpha$ (making the test more conservative) increases
@@ -557,8 +560,8 @@ $t = \dfrac{\bar{x} - \mu_0}{s / \sqrt{n}} = \dfrac{497 - 500}{5/\sqrt{16}} = \d
 Critical values for $t$-distribution with 15 degrees of freedom at 5% (two-tailed): approximately
 $\pm 2.131$.
 
-Since $|-2.4| = 2.4 > 2.131$We reject $H_0$. There is sufficient evidence to suggest the mean
-Weight differs from 500 g.
+Since $|-2.4| = 2.4 > 2.131$We reject $H_0$. There is sufficient evidence to suggest the mean Weight
+differs from 500 g.
 
 ### Chi-Squared Test
 
@@ -575,11 +578,11 @@ Where $O_i$ is the observed frequency and $E_i$ is the expected frequency.
 **Example:** A survey investigates whether there is an association between gender and preferred
 Subject among 200 students:
 
-| | Maths | Science | English | Total |
+|        | Maths | Science | English | Total |
 | ------ | ----- | ------- | ------- | ----- |
-| Male | 40 | 35 | 15 | 90 |
-| Female | 30 | 25 | 55 | 110 |
-| Total | 70 | 60 | 70 | 200 |
+| Male   | 40    | 35      | 15      | 90    |
+| Female | 30    | 25      | 55      | 110   |
+| Total  | 70    | 60      | 70      | 200   |
 
 Expected frequencies:
 $E_{ij} = \dfrac{\mathrm{row total{} \times \mathrm{column total{}}{\mathrm{grand total{}}$.
@@ -605,10 +608,10 @@ Since $24.194 > 5.991$We reject $H_0$. There is significant evidence of an assoc
 ### One-Tailed vs Two-Tailed Tests
 
 - **Two-tailed test:** $H_1$ specifies that the parameter differs from $H_0$ in either direction
- (e.g., $\mu \ne \mu_0$). The significance level is split between both tails: $\alpha/2$ in each.
+  (e.g., $\mu \ne \mu_0$). The significance level is split between both tails: $\alpha/2$ in each.
 - **One-tailed test:** $H_1$ specifies a direction (e.g., $\mu > \mu_0$ or $\mu < \mu_0$). The
- entire significance level is in one tail, making the test more powerful for detecting an effect in
- that direction.
+  entire significance level is in one tail, making the test more powerful for detecting an effect in
+  that direction.
 
 **Example:** A machine is supposed to fill bottles with 500 ml. A sample of 20 bottles has mean 498
 Ml with standard deviation 4 ml. Test at the 5% level whether the machine is underfilling.
@@ -623,8 +626,8 @@ Since $-2.236 < -1.729$We reject $H_0$. There is sufficient evidence that the ma
 Underfilling.
 
 Note: If this were a two-tailed test, the critical value would be approximately $\pm 2.093$And
-$|-2.236| = 2.236 > 2.093$So we would still reject $H_0$ in this case. However, the one-tailed
-Test has a lower threshold, making it easier to detect a difference in the specified direction.
+$|-2.236| = 2.236 > 2.093$So we would still reject $H_0$ in this case. However, the one-tailed Test
+has a lower threshold, making it easier to detect a difference in the specified direction.
 
 ### Coefficient of Determination
 
@@ -645,96 +648,96 @@ Regression on $x$. The remaining 15% is due to other factors or random variation
 ## Common Pitfalls
 
 1. **Using $n$ instead of $n - 1$ for sample standard deviation:** The sample standard deviation
- uses $n - 1$ (Bessel's correction) in the denominator. Using $n$ gives a biased estimate that
- systematically underestimates the population standard deviation.
+   uses $n - 1$ (Bessel's correction) in the denominator. Using $n$ gives a biased estimate that
+   systematically underestimates the population standard deviation.
 
 2. **Confusing $P(A | B)$ with $P(B | A)$:** These are not the same. A classic example:
- $P(\mathrm{disease{} | \mathrm{positive test{})$ is much lower than
- $P(\mathrm{positive test{} | \mathrm{disease{})$ because the base rate of the disease matters. Use
- Bayes' theorem if needed.
+   $P(\mathrm{disease{} | \mathrm{positive test{})$ is much lower than
+   $P(\mathrm{positive test{} | \mathrm{disease{})$ because the base rate of the disease matters.
+   Use Bayes' theorem if needed.
 
 3. **Forgetting continuity correction:** When approximating a discrete distribution (e.g., binomial)
- with a continuous one (normal), apply a continuity correction. Without it, your approximation can
- be significantly off.
+   with a continuous one (normal), apply a continuity correction. Without it, your approximation can
+   be significantly off.
 
 4. **Incorrect expected frequencies:** In a chi-squared test, expected frequencies must be
- calculated correctly using row and column totals. Each $E_i$ is the product of its row total and
- column total, divided by the grand total.
+   calculated correctly using row and column totals. Each $E_i$ is the product of its row total and
+   column total, divided by the grand total.
 
 5. **Not stating hypotheses :** Always explicitly state $H_0$ and $H_1$ before performing a
- hypothesis test. The conclusion must be stated in the context of the problem.
+   hypothesis test. The conclusion must be stated in the context of the problem.
 
 6. **Interpreting correlation as causation:** A strong correlation between $X$ and $Y$ does not mean
- $X$ causes $Y$. There may be a confounding variable, or the relationship may be spurious.
+   $X$ causes $Y$. There may be a confounding variable, or the relationship may be spurious.
 
 7. **Extrapolating beyond the data range:** The regression line is only valid within the range of
- observed data. Predicting outside this range is unreliable.
+   observed data. Predicting outside this range is unreliable.
 
 8. **Assuming normality without justification:** The normal approximation to the binomial requires
- $np \ge 5$ and $n(1-p) \ge 5$. For small $n$ or extreme $p$Use the exact binomial distribution.
+   $np \ge 5$ and $n(1-p) \ge 5$. For small $n$ or extreme $p$Use the exact binomial distribution.
 
 9. **Confusing one-tailed and two-tailed tests:** A two-tailed test has a critical region split
- between both tails. The significance level $\alpha$ is shared between the two tails, so each tail
- has $\alpha/2$. Using a two-tailed test when a one-tailed test is appropriate reduces the power
- of the test.
+   between both tails. The significance level $\alpha$ is shared between the two tails, so each tail
+   has $\alpha/2$. Using a two-tailed test when a one-tailed test is appropriate reduces the power
+   of the test.
 
 ---
 
 ## Practice Questions
 
 1. The weights of packets of crisps are normally distributed with mean 35 g and standard deviation
- 1.5 g. Find the probability that a randomly chosen packet weighs between 33 g and 37 g.
+   1.5 g. Find the probability that a randomly chosen packet weighs between 33 g and 37 g.
 
 2. $X \sim B(20, 0.3)$. Find $P(X \le 5)$.
 
 3. A company tests whether a new drug reduces blood pressure. In a sample of 25 patients, the mean
- reduction was 4.2 mmHg with standard deviation 3.1 mmHg. Test at the 1% significance level
- whether the drug reduces blood pressure (one-tailed test).
+   reduction was 4.2 mmHg with standard deviation 3.1 mmHg. Test at the 1% significance level
+   whether the drug reduces blood pressure (one-tailed test).
 
 4. Calculate the PMCC for the following data and interpret the result:
 
-| $x$ | 1 | 2 | 3 | 4 | 5 |
+| $x$ | 1   | 2   | 3   | 4   | 5   |
 | --- | --- | --- | --- | --- | --- |
-| $y$ | 2 | 5 | 6 | 9 | 11 |
+| $y$ | 2   | 5   | 6   | 9   | 11  |
 
 5. In a group of 100 students, 55 study Maths, 40 study Chemistry, and 20 study both. A student is
- selected at random. Find the probability that they study neither subject.
+   selected at random. Find the probability that they study neither subject.
 
 6. A die is rolled until a 6 appears. Find the probability that more than 4 rolls are needed.
 
 7. For the data in question 4, find the equation of the least squares regression line of $y$ on $x$
- and use it to predict $y$ when $x = 6$.
+   and use it to predict $y$ when $x = 6$.
 
 8. A survey of 300 people classified by age group and voting preference gives $\chi^2 = 12.4$ with 4
- degrees of freedom. Test at the 5% significance level whether there is an association between age
- and voting preference.
+   degrees of freedom. Test at the 5% significance level whether there is an association between age
+   and voting preference.
 
 9. A machine produces bolts with mean length 10 cm and standard deviation 0.1 cm. Find the
- probability that a randomly selected bolt is between 9.85 cm and 10.15 cm.
+   probability that a randomly selected bolt is between 9.85 cm and 10.15 cm.
 
 10. $X \sim B(50, 0.4)$. Use the normal approximation with continuity correction to estimate
- $P(X > 20)$.
+    $P(X > 20)$.
 
 11. A medical test has a 95% true positive rate and a 2% false positive rate. If 1% of the
- population has the condition, find the probability that a person who tests positive actually has
- the condition.
+    population has the condition, find the probability that a person who tests positive actually has
+    the condition.
 
 12. Explain the difference between a Type I error and a Type II error in the context of a hypothesis
- test.
+    test.
 
 13. Find $E(X)$ and $\mathrm{Var{}(X)$ for the probability distribution:
 
-| $x$ | 0 | 1 | 2 | 3 |
+| $x$      | 0   | 1   | 2   | 3   |
 | -------- | --- | --- | --- | --- |
 | $P(X=x)$ | 0.1 | 0.3 | 0.4 | 0.2 |
 
 14. Two dice are rolled. Let $X$ be the sum. Find $E(X)$ and $\mathrm{Var{}(X)$.
 
 15. A bag contains 4 red and 6 blue balls. Three balls are drawn without replacement. Find the
- probability that exactly two are red.
+    probability that exactly two are red.
 
 16. Heights are normally distributed with mean 170 cm and standard deviation 10 cm. Find the height
- that only 5% of people exceed.
+    that only 5% of people exceed.
 
 ## Summary
 

@@ -1,6 +1,8 @@
 ---
 title: Thinking and Decision Making
-description: "Detailed coverage of heuristics, cognitive biases, dual-process theories, prospect theory, and key research by Tversky, Kahneman, and Ariely for IB Psychology."
+description:
+  'Detailed coverage of heuristics, cognitive biases, dual-process theories, prospect theory, and
+  key research by Tversky, Kahneman, and Ariely for IB Psychology.'
 slug: thinking-and-decision-making
 ---
 
@@ -36,12 +38,12 @@ Driving versus approximately 1 in 11 million for a single flight).
 Tversky and Kahneman (1973) demonstrated the availability heuristic by asking participants whether
 More words in English begin with the letter "K" or have "K" as the third letter. Most participants
 Judged that more words begin with "K," but in fact approximately twice as many words have "K" as the
-Third letter. Words beginning with "K" are more retrieved from memory (because we search for
-Words by their first letter), making them more "available."
+Third letter. Words beginning with "K" are more retrieved from memory (because we search for Words
+by their first letter), making them more "available."
 
-**Strengths of the availability heuristic:** It is generally adaptive. Events that are 
-Recalled tend to be those that occur frequently or are important, so the heuristic often produces
-Reasonable estimates with minimal cognitive effort.
+**Strengths of the availability heuristic:** It is generally adaptive. Events that are Recalled tend
+to be those that occur frequently or are important, so the heuristic often produces Reasonable
+estimates with minimal cognitive effort.
 
 **Limitations:** The heuristic is systematically biased by factors unrelated to actual frequency,
 Such as media coverage, emotional salience, and personal experience.
@@ -71,14 +73,14 @@ General, leading participants to violate the laws of probability.
 ### The Anchoring Heuristic
 
 The anchoring heuristic is the tendency for numerical estimates to be biased toward an initial value
-(the anchor), even when the anchor is irrelevant. Once an anchor is established, adjustments
-From the anchor are insufficient.
+(the anchor), even when the anchor is irrelevant. Once an anchor is established, adjustments From
+the anchor are insufficient.
 
 **Example:** Tversky and Kahneman (1974) asked participants to estimate the percentage of African
 Countries in the United Nations. Before answering, participants watched the experimenter spin a
 Rigged roulette wheel that stopped at either 10 or 65. Participants who saw the anchor of 10
 Estimated approximately 25%, while those who saw the anchor of 65 estimated approximately 45%. A
- random and irrelevant number significantly influenced participants' numerical estimates.
+random and irrelevant number significantly influenced participants' numerical estimates.
 
 **Mechanism:** Anchoring occurs through at least two processes: (1) insufficient adjustment from the
 Anchor, and (2) selective activation of anchor-consistent information. The effect is robust across
@@ -97,8 +99,8 @@ Rule and were asked to discover the rule by generating their own three-number se
 Receiving feedback on whether each sequence conformed to the rule. Most participants tested
 Sequences consistent with their initial hypothesis (e.g., "increasing even numbers") and announced
 The rule after receiving only confirming evidence. Very few participants tested sequences designed
-To disconfirm their hypothesis (e.g., 10-7-4 or 3-1-5). The actual rule was "any three
-Increasing numbers."
+To disconfirm their hypothesis (e.g., 10-7-4 or 3-1-5). The actual rule was "any three Increasing
+numbers."
 
 **Implications:** Confirmation bias contributes to the persistence of false beliefs, stereotyping,
 And poor decision making in scientific, medical, and legal contexts. It is particularly problematic
@@ -124,12 +126,12 @@ Contributes to overconfidence in judgment.
 
 ### Other Important Biases
 
-| Bias | Description | Example |
+| Bias                | Description                                                                               | Example                                                                                                          |
 | ------------------- | ----------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
-| Overconfidence bias | Tendency to overestimate the accuracy of one's judgments | People consistently rate their judgments as more accurate than they actually are |
-| Belief perseverance | Tendency to maintain beliefs even after the evidence supporting them has been discredited | Participants who were debriefed about a fabricated study still showed the belief it induced |
-| Framing effect | Different presentations of the same information lead to different choices | People prefer a medical treatment described as having a "90% survival rate" over one with a "10% mortality rate" |
-| Sunk cost fallacy | Tendency to continue investing in a losing course of action because of prior investment | Continuing to watch a bad film because you have already paid for the ticket |
+| Overconfidence bias | Tendency to overestimate the accuracy of one's judgments                                  | People consistently rate their judgments as more accurate than they actually are                                 |
+| Belief perseverance | Tendency to maintain beliefs even after the evidence supporting them has been discredited | Participants who were debriefed about a fabricated study still showed the belief it induced                      |
+| Framing effect      | Different presentations of the same information lead to different choices                 | People prefer a medical treatment described as having a "90% survival rate" over one with a "10% mortality rate" |
+| Sunk cost fallacy   | Tendency to continue investing in a losing course of action because of prior investment   | Continuing to watch a bad film because you have already paid for the ticket                                      |
 
 ## Dual-Process Theories
 
@@ -153,10 +155,10 @@ Two distinct systems:
 - Operates slowly, requiring deliberate attention and cognitive resources.
 - Is capable of logical reasoning, complex computation, and careful evaluation.
 - Is lazy: it tends to accept System 1's suggestions without scrutiny unless motivated or prompted
- to do otherwise.
+  to do otherwise.
 - Is capacity-limited: it can only focus on one demanding task at a time.
 - Examples: solving 17 x 24, comparing the value of two complex options, monitoring one's behaviour
- in a social situation.
+  in a social situation.
 
 **Interaction between the systems:** In most situations, System 1 generates automatic impressions
 And intuitions, which System 2 may endorse with minimal scrutiny (leading to heuristic-based biases)
@@ -171,16 +173,16 @@ Monitor and correct System 1's output. This failure is more likely when:
 **Evaluation:**
 
 - The dual-process framework provides an integrative explanation for a wide range of cognitive
- biases and errors.
+  biases and errors.
 - It has been influential across multiple disciplines, including economics, law, medicine, and
- public policy.
+  public policy.
 - Critics argue that the framework is oversimplified: some researchers have identified more than two
- types of processing (e.g., Epstein's cognitive-experiential self-theory, Stanovich's tripartite
- model). The distinction between System 1 and System 2 may be more of a useful heuristic than a
- precise description of cognitive architecture.
+  types of processing (e.g., Epstein's cognitive-experiential self-theory, Stanovich's tripartite
+  model). The distinction between System 1 and System 2 may be more of a useful heuristic than a
+  precise description of cognitive architecture.
 - The neural correlates of System 1 and System 2 processing have been identified in neuroimaging
- studies, lending some biological support to the distinction (e.g., increased prefrontal cortex
- activation during System 2 tasks).
+  studies, lending some biological support to the distinction (e.g., increased prefrontal cortex
+  activation during System 2 tasks).
 
 ## Prospect Theory
 
@@ -193,8 +195,8 @@ Are risk-neutral. Prospect theory demonstrates that people systematically violat
 
 ### Key Principles of Prospect Theory
 
-**1. Reference dependence:** People evaluate outcomes relative to a reference point ( the
-Status quo), not in absolute terms. A gain of USD 100 feels very different depending on whether the
+**1. Reference dependence:** People evaluate outcomes relative to a reference point ( the Status
+quo), not in absolute terms. A gain of USD 100 feels very different depending on whether the
 Reference point is the expectation of receiving USD 50 (in which case it is a gain of USD 50 above
 Expectations) or the expectation of receiving USD 200 (in which case it is a loss of USD 100 below
 Expectations).
@@ -221,7 +223,7 @@ People.
 
 - Programme A: 200 people will be saved.
 - Programme B: 1/3 probability that 600 people will be saved, 2/3 probability that no one will be
- saved.
+  saved.
 - 72% chose Programme A (risk-averse).
 
 **Framing 2 (loss frame):**
@@ -242,32 +244,31 @@ Dan Ariely's research extends the heuristics and biases programme by demonstrati
 Irrationalities in everyday decision making. Key findings include:
 
 - **The power of free:** People are disproportionately attracted to "free" options, even when the
- free option is not the best value. For example, participants offered a choice between a USD 0.01
- Lindt truffle and a USD 0.15 Hershey's Kiss overwhelmingly chose the truffle. When the prices were
- reduced by one cent (truffle: USD 0.00; Kiss: USD 0.14), participants overwhelmingly chose the
- free Kiss, even though the relative value had not changed.
+  free option is not the best value. For example, participants offered a choice between a USD 0.01
+  Lindt truffle and a USD 0.15 Hershey's Kiss overwhelmingly chose the truffle. When the prices were
+  reduced by one cent (truffle: USD 0.00; Kiss: USD 0.14), participants overwhelmingly chose the
+  free Kiss, even though the relative value had not changed.
 - **Arbitrary coherence:** Initial prices serve as anchors that influence subsequent valuations,
- even when the initial prices are arbitrary. Once an anchor is established, prices for
- related items are judged relative to that anchor, creating a coherent but arbitrary price
- structure.
+  even when the initial prices are arbitrary. Once an anchor is established, prices for related
+  items are judged relative to that anchor, creating a coherent but arbitrary price structure.
 - **Decoy effect:** The addition of an inferior option (a decoy) can shift preferences between two
- other options. If option A is superior to option B on one dimension but inferior on another,
- adding an option A' (which is similar to A but slightly worse on the dimension where A is
- superior) makes A look more attractive relative to B.
+  other options. If option A is superior to option B on one dimension but inferior on another,
+  adding an option A' (which is similar to A but slightly worse on the dimension where A is
+  superior) makes A look more attractive relative to B.
 
 <details>
 <summary>Common Pitfalls: Thinking and Decision Making</summary>
 
 - **Do not assume that cognitive biases indicate irrationality in all contexts.** Many heuristics
- are ecologically rational -- they produce accurate judgments in the environments in which they
- evolved, even if they produce errors in artificial laboratory tasks (Gigerenzer, 2008).
+  are ecologically rational -- they produce accurate judgments in the environments in which they
+  evolved, even if they produce errors in artificial laboratory tasks (Gigerenzer, 2008).
 - **Do not confuse the availability heuristic with the representativeness heuristic.** The
- availability heuristic is based on the ease of recalling instances; the representativeness
- heuristic is based on similarity to a prototype. They are distinct processes that produce
- different types of errors.
+  availability heuristic is based on the ease of recalling instances; the representativeness
+  heuristic is based on similarity to a prototype. They are distinct processes that produce
+  different types of errors.
 - **Do not present prospect theory as a normative theory.** Prospect theory describes how people
- actually make decisions; it does not prescribe how people should make decisions. Expected utility
- theory remains the normative standard for rational decision making under risk.
+  actually make decisions; it does not prescribe how people should make decisions. Expected utility
+  theory remains the normative standard for rational decision making under risk.
 
 </details>
 

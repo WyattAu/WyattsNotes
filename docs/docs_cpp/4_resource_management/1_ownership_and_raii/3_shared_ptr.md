@@ -1,6 +1,8 @@
 ---
 title: Shared Ownership (std::shared_ptr) and Control Block
-description: "C++: Shared Ownership (std::shared_ptr) and Control Block — 3.1 Definition; 3.2 Control Block Layout; When the Control Block Is Created."
+description:
+  'C++: Shared Ownership (std::shared_ptr) and Control Block — 3.1 Definition; 3.2 Control Block
+  Layout; When the Control Block Is Created.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -8,6 +10,7 @@ categories:
   - Cpp
 slug: shared-ownership-and-control-block
 ---
+
 # Shared Ownership (std::shared_ptr) and Control Block
 
 `std::shared_ptr` enables multiple owners to share a single heap-allocated object via a
@@ -43,8 +46,8 @@ std::shared_ptr<T> object layout:
 sizeof(std::shared_ptr<T>) == 16 (two pointers on x86_64)
 ```
 
-The control block is allocated separately from the managed object, unless
-`std::make_shared` is used.
+The control block is allocated separately from the managed object, unless `std::make_shared` is
+used.
 
 ### When the Control Block Is Created
 
@@ -55,8 +58,7 @@ A control block is created at the following points:
 3. `std::allocate_shared&lt;T&gt;(alloc, args...)` — uses custom allocator for both
 4. Constructing from a `std::weak_ptr` via `weak_ptr::lock()` — reuses existing control block
 
-:::warning
-Never construct multiple `shared_ptr` instances from the same raw pointer. Each
+:::warning Never construct multiple `shared_ptr` instances from the same raw pointer. Each
 Construction creates a new control block, leading to multiple destructions (double-free):
 
 ````cpp
@@ -213,28 +215,26 @@ shared_ptr(new Sensor) (two allocations):
   Two allocations, two frees
 ```
 
-:::info
-Relevance `std::make_shared` performs a single allocation (better cache locality, fewer
+:::info Relevance `std::make_shared` performs a single allocation (better cache locality, fewer
 Syscalls). However, the control block and object share the same memory block, so the memory for the
 Control block cannot be freed until **all** `weak_ptr` references are also gone. For very large
-Objects with long-lived `weak_ptr` observers, this can delay deallocation.
-:::
+Objects with long-lived `weak_ptr` observers, this can delay deallocation. :::
 
 ### Quantitative Allocation Overhead
 
 Consider a managed object of size $N$ bytes on x86_64:
 
-| Strategy | Heap Allocations | Total Bytes Allocated | `malloc`/`free` Calls | `weak_ptr` Delay |
+| Strategy            | Heap Allocations | Total Bytes Allocated   | `malloc`/`free` Calls | `weak_ptr` Delay                      |
 | :------------------ | :--------------- | :---------------------- | :-------------------- | :------------------------------------ |
-| `make_shared` | 1 | $32 + N$ (rounded up) | 1 alloc, 1 free | Yes: full block held |
-| `shared_ptr(new T)` | 2 | $16 + 8 + N$ (separate) | 2 allocs, 2 frees | No: control block freed independently |
-| `allocate_shared` | 1 | Implementation-defined | 1 alloc, 1 free | Yes: full block held |
+| `make_shared`       | 1                | $32 + N$ (rounded up)   | 1 alloc, 1 free       | Yes: full block held                  |
+| `shared_ptr(new T)` | 2                | $16 + 8 + N$ (separate) | 2 allocs, 2 frees     | No: control block freed independently |
+| `allocate_shared`   | 1                | Implementation-defined  | 1 alloc, 1 free       | Yes: full block held                  |
 
 The "weak_ptr delay" column is the critical tradeoff. With `make_shared`The object memory and the
 32-byte control block are in a single allocation. Even after `strong_count` reaches 0 and the object
 Is destroyed, the allocator cannot return the memory to the OS until `weak_count` also reaches 0.
-For a 1 MiB object with a single long-lived `weak_ptr`This means 1 MiB + 32 bytes of memory is
-Held hostage.
+For a 1 MiB object with a single long-lived `weak_ptr`This means 1 MiB + 32 bytes of memory is Held
+hostage.
 
 With `shared_ptr(new T)`The object memory (8-byte header + N bytes) is returned to the allocator
 Immediately when `strong_count` reaches 0. The 32-byte control block remains, but it is tiny
@@ -247,10 +247,10 @@ Deleter for very large objects that may be observed by long-lived `weak_ptr` ins
 
 `shared_ptr` provides a subtle and often misunderstood thread safety guarantee:
 
-| Operation | Thread-Safe? |
+| Operation                                             | Thread-Safe?                                       |
 | :---------------------------------------------------- | :------------------------------------------------- |
-| Copying a `shared_ptr` (incrementing `strong_count`) | Yes — atomic |
-| Destroying/resetting a `shared_ptr` | Yes — atomic |
+| Copying a `shared_ptr` (incrementing `strong_count`)  | Yes — atomic                                       |
+| Destroying/resetting a `shared_ptr`                   | Yes — atomic                                       |
 | Accessing the **pointed-to object** via `*p` or `p->` | **No** — you must provide your own synchronization |
 
 The control block's reference counts are modified using `std::atomic` operations [N4950 S20.11.3.6].
@@ -311,22 +311,22 @@ Access to the managed object.
 **Argument from the standard [N4950 S20.11.3.5]:**
 
 1. The standard specifies that "multiple threads of execution can invoke non-const member functions
- on different instances of `shared_ptr`" without external synchronization. This guarantees that
- the control block operations (copy constructor, destructor, `reset`) are internally synchronized.
+   on different instances of `shared_ptr`" without external synchronization. This guarantees that
+   the control block operations (copy constructor, destructor, `reset`) are internally synchronized.
 
 2. The standard does **not** specify any synchronization for access through `operator*` or
- `operator->`. These are defined as simple dereference operations with no atomic or locking
- semantics.
+   `operator->`. These are defined as simple dereference operations with no atomic or locking
+   semantics.
 
 3. Therefore, the thread safety guarantee covers only the _ownership bookkeeping_ (the control
- block), not the _resource access_ (the pointed-to object).
+   block), not the _resource access_ (the pointed-to object).
 
 **Formal restatement:** If thread A holds a `shared_ptr&lt;T&gt;` and thread B holds a copy of the
 Same `shared_ptr&lt;T&gt;`Then:
 
 - Concurrent `shared_ptr` copies/destructions are well-defined (atomic control block access).
 - Concurrent `p-&gt;method()` calls are a data race unless `T::method()` is internally synchronized
- [N4950 S6.9.2.2].
+  [N4950 S6.9.2.2].
 
 **Intuition:** The control block is an internal implementation detail of `shared_ptr`And the
 Implementer has full control over its synchronization. The pointed-to object is user-defined —
@@ -340,18 +340,16 @@ S20.11.3.5]. This is the strongest memory ordering and provides a total order on
 Sequentially-consistent operations. The implications:
 
 - When `strong_count` transitions from 1 to 0, the deleter invocation is **happens-before** ordered
- with respect to all prior increments. This means the thread that destroys the last `shared_ptr` is
- guaranteed to see all mutations made through any `shared_ptr` to the same object.
+  with respect to all prior increments. This means the thread that destroys the last `shared_ptr` is
+  guaranteed to see all mutations made through any `shared_ptr` to the same object.
 - When `weak_ptr::lock()` succeeds (returns a non-empty `shared_ptr`), the returned `shared_ptr` is
- ordered such that the caller can safely access the object on the same thread without a subsequent
- memory barrier.
+  ordered such that the caller can safely access the object on the same thread without a subsequent
+  memory barrier.
 
-:::info
-Relevance In practice, some implementations (notably libstdc++) use `memory_order_acq_rel`
+:::info Relevance In practice, some implementations (notably libstdc++) use `memory_order_acq_rel`
 For increment and `memory_order_acq_rel` for decrement instead of `seq_cst`Which is valid because
 The standard only requires that the control block operations do not race with each other. The
-Stronger `seq_cst` default is a conservative choice that implementations may relax.
-:::
+Stronger `seq_cst` default is a conservative choice that implementations may relax. :::
 
 ## 3.5 Custom Deleters
 
@@ -389,9 +387,9 @@ void custom_deleter_demo() {
 }
 ```
 
-The custom deleter is stored in the control block and does **not** affect `sizeof(shared_ptr)`
-Which remains 16 bytes (two pointers). The deleter is type-erased, so different `shared_ptr`
-Instances with different deleters can still point to the same object.
+The custom deleter is stored in the control block and does **not** affect `sizeof(shared_ptr)` Which
+remains 16 bytes (two pointers). The deleter is type-erased, so different `shared_ptr` Instances
+with different deleters can still point to the same object.
 
 ## 3.6 Circular Reference Problem
 
@@ -498,21 +496,19 @@ int main() {
 }
 ```
 
-:::warning
-COW with `shared_ptr` has thread-safety subtleties. The `unique()` check is a data race
+:::warning COW with `shared_ptr` has thread-safety subtleties. The `unique()` check is a data race
 If another thread might modify the object concurrently. COW is safe only in single-threaded contexts
 Or with external synchronization. `std::string` implementations have moved away from COW for this
-Reason.
-:::
+Reason. :::
 
 ## 3.8 `sizeof(shared_ptr)` Across Implementations
 
-| Implementation | `sizeof(shared_ptr&lt;T&gt;)` | Notes |
+| Implementation                | `sizeof(shared_ptr&lt;T&gt;)` | Notes              |
 | ----------------------------- | ----------------------------- | ------------------ |
-| libstdc++ (GCC) | 16 bytes | Two raw pointers |
-| libc++ (Clang) | 16 bytes | Two raw pointers |
-| MSVC STL | 16 bytes | Two raw pointers |
-| `sizeof(unique_ptr&lt;T&gt;)` | 8 bytes | Single raw pointer |
+| libstdc++ (GCC)               | 16 bytes                      | Two raw pointers   |
+| libc++ (Clang)                | 16 bytes                      | Two raw pointers   |
+| MSVC STL                      | 16 bytes                      | Two raw pointers   |
+| `sizeof(unique_ptr&lt;T&gt;)` | 8 bytes                       | Single raw pointer |
 
 `shared_ptr` is always twice the size of `unique_ptr` due to the extra control block pointer. This
 Matters in memory-constrained applications or when storing many pointers in containers.
@@ -524,16 +520,14 @@ Matters in memory-constrained applications or when storing many pointers in cont
 1. **Size:** 16 bytes (two pointers) vs 8 bytes.
 2. **Allocation:** Always allocates a control block on the heap.
 3. **Reference counting:** Every copy and destruction involves an atomic increment/decrement. These
- are **sequentially consistent** by default and act as memory barriers, inhibiting compiler and
- CPU reordering.
+   are **sequentially consistent** by default and act as memory barriers, inhibiting compiler and
+   CPU reordering.
 4. **Cache pressure:** The control block is a separate allocation, causing an additional cache miss
- on every `shared_ptr` copy or destruction.
+   on every `shared_ptr` copy or destruction.
 
-:::warning
-Do not use `shared_ptr` by default. Use `unique_ptr` as your default smart pointer. Only
+:::warning Do not use `shared_ptr` by default. Use `unique_ptr` as your default smart pointer. Only
 Reach for `shared_ptr` when you genuinely need shared ownership. Premature use of `shared_ptr` is a
-Common source of performance bugs in C++ codebases.
-:::
+Common source of performance bugs in C++ codebases. :::
 
 ## 3.10 `enable_shared_from_this`: Internal Mechanics
 
@@ -620,13 +614,11 @@ int main() {
 }
 ```
 
-:::warning
-Calling `shared_from_this()` on an object that is not managed by a `shared_ptr` (e.g., a
+:::warning Calling `shared_from_this()` on an object that is not managed by a `shared_ptr` (e.g., a
 Stack-allocated object or one owned by `unique_ptr`) is undefined behavior. The internal
-`weak_this_` is uninitialized, and `lock()` on an empty `weak_ptr` returns a null `shared_ptr`
-Which when dereferenced causes undefined behavior. Some implementations throw `std::bad_weak_ptr` in
-Debug mode to catch this error early.
-:::
+`weak_this_` is uninitialized, and `lock()` on an empty `weak_ptr` returns a null `shared_ptr` Which
+when dereferenced causes undefined behavior. Some implementations throw `std::bad_weak_ptr` in Debug
+mode to catch this error early. :::
 
 ## 3.11 Aliasing Constructor: Formal Semantics
 
@@ -642,7 +634,7 @@ This constructor produces a `shared_ptr&lt;T&gt;` whose:
 
 - **Control block** is shared with `r` (increments `strong_count` of `r`'s control block).
 - **Stored pointer** is `ptr` (which must be reachable from `r.get()` or must outlive the control
- block).
+  block).
 
 ```cpp
 #include <memory>
@@ -688,18 +680,18 @@ Wrong object or dereference a dangling pointer.
 
 ## 3.12 Comparison: `shared_ptr` vs `unique_ptr`
 
-| Property | `unique_ptr&lt;T, D&gt;` | `shared_ptr&lt;T&gt;` |
+| Property                     | `unique_ptr&lt;T, D&gt;`                        | `shared_ptr&lt;T&gt;`                         |
 | :--------------------------- | :---------------------------------------------- | :-------------------------------------------- |
-| Ownership | Exclusive (single owner) | Shared (multiple owners) |
-| Copyable | No (move-only) | Yes |
-| Size (x86_64) | 8 bytes (stateless deleter) or 8 + `sizeof(D)` | Always 16 bytes |
-| Overhead | Zero (EBO for stateless D) | Control block allocation + atomic refcount |
-| Thread-safe refcount | N/A (single owner) | Yes (atomic) |
-| Deleter in type | Yes (`D` is a template parameter) | No (type-erased in control block) |
-| Cyclic reference safe | Yes (no cycles possible) | No (requires `weak_ptr`) |
-| `make_*` factory | `make_unique` (C++14) | `make_shared``allocate_shared` |
-| Custom deleter compile check | Yes (type mismatch is compile error) | No (type-erased, runtime mismatch) |
-| Array support | `unique_ptr&lt;T[]&gt;` with correct `delete[]` | Requires explicit `default_delete&lt;T[]&gt;` |
+| Ownership                    | Exclusive (single owner)                        | Shared (multiple owners)                      |
+| Copyable                     | No (move-only)                                  | Yes                                           |
+| Size (x86_64)                | 8 bytes (stateless deleter) or 8 + `sizeof(D)`  | Always 16 bytes                               |
+| Overhead                     | Zero (EBO for stateless D)                      | Control block allocation + atomic refcount    |
+| Thread-safe refcount         | N/A (single owner)                              | Yes (atomic)                                  |
+| Deleter in type              | Yes (`D` is a template parameter)               | No (type-erased in control block)             |
+| Cyclic reference safe        | Yes (no cycles possible)                        | No (requires `weak_ptr`)                      |
+| `make_*` factory             | `make_unique` (C++14)                           | `make_shared``allocate_shared`                |
+| Custom deleter compile check | Yes (type mismatch is compile error)            | No (type-erased, runtime mismatch)            |
+| Array support                | `unique_ptr&lt;T[]&gt;` with correct `delete[]` | Requires explicit `default_delete&lt;T[]&gt;` |
 
 **Decision rule:** Use `unique_ptr` as the default. Promote to `shared_ptr` only when the ownership
 Graph genuinely requires multiple owners with non-deterministic lifetime order. The performance and
@@ -735,43 +727,42 @@ int main() {
 ## Common Pitfalls
 
 1. **Reference cycles.** Two `shared_ptr` objects pointing to each other will never be destroyed.
- Use `weak_ptr` for back-references.
+   Use `weak_ptr` for back-references.
 
 2. **Constructing from raw pointer multiple times.** Creates multiple control blocks, causing
- double-free. Always use `make_shared` or `make_unique`.
+   double-free. Always use `make_shared` or `make_unique`.
 
 3. **Passing `shared_ptr` by value unnecessarily.** Each copy triggers an atomic increment. Pass by
- `const&amp;` or pass a raw pointer if ownership transfer is not needed.
+   `const&amp;` or pass a raw pointer if ownership transfer is not needed.
 
 4. **Thread safety misunderstanding.** The control block is thread-safe, but the pointed-to object
- is NOT. Use `std::mutex` or `std::atomic` to protect the object itself.
+   is NOT. Use `std::mutex` or `std::atomic` to protect the object itself.
 
-5. **`make_shared` delays memory release.** With `make_shared`The object and control block share
- one allocation. The memory cannot be freed until all `weak_ptr` references are gone.
+5. **`make_shared` delays memory release.** With `make_shared`The object and control block share one
+   allocation. The memory cannot be freed until all `weak_ptr` references are gone.
 
 6. **Using `shared_ptr` for ownership that is actually exclusive.** If only one owner exists at any
- time, `unique_ptr` is the correct choice. `shared_ptr` adds unnecessary overhead (atomic ops,
- control block allocation, 2x pointer size).
+   time, `unique_ptr` is the correct choice. `shared_ptr` adds unnecessary overhead (atomic ops,
+   control block allocation, 2x pointer size).
 
 7. **Calling `shared_from_this()` before the object is managed by `shared_ptr`.** The internal
- `weak_this_` pointer is uninitialized, leading to undefined behavior. Always ensure the object
- was created via `make_shared` or `shared_ptr(new T(...))` before calling `shared_from_this()`.
+   `weak_this_` pointer is uninitialized, leading to undefined behavior. Always ensure the object
+   was created via `make_shared` or `shared_ptr(new T(...))` before calling `shared_from_this()`.
 
 8. **Aliasing constructor with unrelated pointers.** The aliasing constructor does not extend the
- lifetime of the aliased-to object beyond the control block's lifetime. If the stored pointer
- points to an object with independent lifetime, the `shared_ptr` may dangle after the owned object
- is destroyed.
+   lifetime of the aliased-to object beyond the control block's lifetime. If the stored pointer
+   points to an object with independent lifetime, the `shared_ptr` may dangle after the owned object
+   is destroyed.
 
 9. **Using `weak_ptr::lock()` result without checking.** `lock()` can return an empty `shared_ptr`.
- Always check the return value before dereferencing.
+   Always check the return value before dereferencing.
 
 ## See Also
 
 - [Unique Ownership (std::unique_ptr) and EBO](2_unique_ptr.md)
 - [Weak Pointers and Cyclic Reference Breaking](4_weak_ptr.md)
 - [Common Pitfalls](5_custom_deleters.md)
-- [RAII Patterns](1_raii_patterns.md)
-:::
+- [RAII Patterns](1_raii_patterns.md) :::
 
 ## Summary
 

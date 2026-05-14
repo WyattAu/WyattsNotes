@@ -1,6 +1,8 @@
 ---
 title: Modules and Packages
-description: "Modules and Packages — Packages; Package Naming Conventions; Import Paths; Internal Package with worked examples and exam-style questions."
+description:
+  'Modules and Packages — Packages; Package Naming Conventions; Import Paths; Internal Package with
+  worked examples and exam-style questions.'
 slug: modules-and-packages
 date: 2026-04-18
 tags:
@@ -8,6 +10,7 @@ tags:
 categories:
   - Go
 ---
+
 ## Packages
 
 Every Go file belongs to a package, declared at the top of the file. A directory contains one
@@ -253,25 +256,25 @@ CI with restricted internet).
 ## Common Pitfalls
 
 1. **Not running `go mod tidy` after changes.** After adding or removing imports, always run
- `go mod tidy` to keep `go.mod` and `go.sum` synchronized.
+   `go mod tidy` to keep `go.mod` and `go.sum` synchronized.
 
 2. **V2+ without `/v2` suffix.** If you release v2 of a module without updating the module path to
- include `/v2`Go treats it as v1 and the version number is ignored.
+   include `/v2`Go treats it as v1 and the version number is ignored.
 
 3. **Committing `go.work`.** The workspace file is a local development tool. Commit it only for
- monorepo setups where it is part of the intended workflow.
+   monorepo setups where it is part of the intended workflow.
 
 4. **Overusing `replace`.** `replace` directives in committed `go.mod` files break builds for other
- developers. Use them only for local development or in `go.work`.
+   developers. Use them only for local development or in `go.work`.
 
 5. **Ignoring indirect dependencies.** `go mod tidy` manages indirect dependencies. Manually editing
- them risks build inconsistencies.
+   them risks build inconsistencies.
 
 6. **Large `go.sum` files.** This is normal for projects with many dependencies. Do not try to
- minimize it manually.
+   minimize it manually.
 
 7. **Forgetting `go.work sync`.** After adding modules to a workspace, run `go work sync` to update
- `go.mod` files with workspace-relevant information.
+   `go.mod` files with workspace-relevant information.
 
 ## Summary
 

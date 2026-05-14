@@ -1,6 +1,8 @@
 ---
 title: Waves
-description: "Waves — 1.2 Why the Distinction Matters; 1.3 Wave Terminology; 1.4 The Wave Equation; 1.5 Derivation of the Wave Equation."
+description:
+  'Waves — 1.2 Why the Distinction Matters; 1.3 Wave Terminology; 1.4 The Wave Equation; 1.5
+  Derivation of the Wave Equation.'
 date: 2026-04-14
 tags:
   - Physics
@@ -9,11 +11,10 @@ categories:
   - Physics
 slug: waves
 ---
+
 ## Waves
 
-:::info
-Board Coverage AQA Paper 2 | Edexcel Paper 1 | OCR A Gateway P3 & P6 | WJEC P3
-:::
+:::info Board Coverage AQA Paper 2 | Edexcel Paper 1 | OCR A Gateway P3 & P6 | WJEC P3 :::
 
 <PhetSimulation simulationId="waves-on-a-string" title="Waves on a String" />
 
@@ -41,13 +42,13 @@ Polarisation component while transmitting the other.
 
 ### 1.3 Wave Terminology
 
-| Term | Definition | Symbol/Unit |
+| Term       | Definition                                                 | Symbol/Unit   |
 | ---------- | ---------------------------------------------------------- | ------------- |
-| Amplitude | Maximum displacement from the equilibrium position | $A$ (m) |
+| Amplitude  | Maximum displacement from the equilibrium position         | $A$ (m)       |
 | Wavelength | Distance between two adjacent identical points on the wave | $\lambda$ (m) |
-| Frequency | Number of complete oscillations per second | $f$ (Hz) |
-| Period | Time for one complete oscillation | $T$ (s) |
-| Wave speed | Distance travelled by the wave per unit time | $v$ (m/s) |
+| Frequency  | Number of complete oscillations per second                 | $f$ (Hz)      |
+| Period     | Time for one complete oscillation                          | $T$ (s)       |
+| Wave speed | Distance travelled by the wave per unit time               | $v$ (m/s)     |
 
 **Relationship between frequency and period:**
 
@@ -68,8 +69,8 @@ $$f = \frac{v}{\lambda} = \frac{330}{0.66} = 500 \mathrm{ Hz{}$$
 
 ### 1.5 Derivation of the Wave Equation
 
-Consider a wave moving at speed $v$. In one period $T$Each wavefront travels a distance equal to
-One wavelength $\lambda$. Therefore:
+Consider a wave moving at speed $v$. In one period $T$Each wavefront travels a distance equal to One
+wavelength $\lambda$. Therefore:
 
 $$v = \frac{\mathrm{distance{}}{\mathrm{time{}} = \frac{\lambda}{T} = \lambda \times \frac{1}{T} = \lambda f$$
 
@@ -109,7 +110,7 @@ $$v = \frac{d}{\Delta t} = \frac{3.4}{0.01} = 340 \mathrm{ m/s{}$$
 ### 2.3 Improving Accuracy in Wave Speed Measurements
 
 - Measure across multiple wavelengths and divide (reduces the impact of random error in the position
- measurement).
+  measurement).
 - Repeat the measurement several times and calculate a mean.
 - Use a strobe light to "freeze" the wave pattern, making wavelength measurement more precise.
 - Ensure the microphone is at the same height as the sound source to avoid path-length errors.
@@ -188,15 +189,15 @@ Electromagnetic waves are transverse waves that travel at the speed of light in 
 
 $$c = 3.0 \times 10^8 \mathrm{ m/s{}$$
 
-| Type | Wavelength range | Uses | Dangers |
+| Type          | Wavelength range                           | Uses                             | Dangers                          |
 | ------------- | ------------------------------------------ | -------------------------------- | -------------------------------- |
-| Radio | $\gt 10^{-1}$ m | Broadcasting, communication | Generally safe |
-| Microwave | $10^{-3}$ to $10^{-1}$ m | Cooking, satellite communication | Heating of body tissues |
-| Infrared | $10^{-7}$ to $10^{-3}$ m | Remote controls, thermal imaging | Skin burns |
-| Visible light | $4 \times 10^{-7}$ to $7 \times 10^{-7}$ m | Vision, fibre optics | Very bright light damages retina |
-| Ultraviolet | $10^{-8}$ to $4 \times 10^{-7}$ m | Fluorescent lamps, sunbeds | Skin cancer, eye damage |
-| X-ray | $10^{-10}$ to $10^{-8}$ m | Medical imaging, security | Cell damage, cancer |
-| Gamma ray | $\lt 10^{-10}$ m | Cancer treatment, sterilisation | Cell damage, cancer, mutation |
+| Radio         | $\gt 10^{-1}$ m                            | Broadcasting, communication      | Generally safe                   |
+| Microwave     | $10^{-3}$ to $10^{-1}$ m                   | Cooking, satellite communication | Heating of body tissues          |
+| Infrared      | $10^{-7}$ to $10^{-3}$ m                   | Remote controls, thermal imaging | Skin burns                       |
+| Visible light | $4 \times 10^{-7}$ to $7 \times 10^{-7}$ m | Vision, fibre optics             | Very bright light damages retina |
+| Ultraviolet   | $10^{-8}$ to $4 \times 10^{-7}$ m          | Fluorescent lamps, sunbeds       | Skin cancer, eye damage          |
+| X-ray         | $10^{-10}$ to $10^{-8}$ m                  | Medical imaging, security        | Cell damage, cancer              |
+| Gamma ray     | $\lt 10^{-10}$ m                           | Cancer treatment, sterilisation  | Cell damage, cancer, mutation    |
 
 ### 4.2 Key Properties
 
@@ -233,9 +234,9 @@ Food.
 Causing them to vibrate and heat up. The wavelength (about 12 cm) is chosen so that the microwaves
 Penetrate several centimetres into food, ensuring even heating.
 
-**Mobile phones:** Use microwave frequencies ( 0.8--2.6 GHz). The power output is very low
-( 0.1--2 W), and there is no conclusive evidence that this level of exposure is harmful.
-However, the long-term effects of widespread mobile phone use are still being studied.
+**Mobile phones:** Use microwave frequencies ( 0.8--2.6 GHz). The power output is very low ( 0.1--2
+W), and there is no conclusive evidence that this level of exposure is harmful. However, the
+long-term effects of widespread mobile phone use are still being studied.
 
 **Ultraviolet:** Causes tanning and vitamin D production at low doses, but at high doses causes skin
 Cancer and cataracts. Sunscreen works by absorbing UV radiation before it reaches the skin.
@@ -278,7 +279,7 @@ Decibel (logarithmic) scale is used.
 **Applications:**
 
 - Medical imaging (foetal scanning): ultrasound pulses are sent into the body, and the reflected
- echoes are used to build up an image. Non-ionising, so safer than X-rays.
+  echoes are used to build up an image. Non-ionising, so safer than X-rays.
 - Sonar (measuring depth of water, detecting objects underwater)
 - Cleaning delicate objects: high-frequency vibrations dislodge dirt from surfaces.
 
@@ -321,7 +322,7 @@ When two waves meet, they **superpose** (their displacements add together).
 
 - **Constructive interference:** Waves in phase; amplitudes add. Path difference = $n\lambda$.
 - **Destructive interference:** Waves in antiphase; amplitudes cancel. Path difference
- $= (n + 0.5)\lambda$.
+  $= (n + 0.5)\lambda$.
 
 ### 6.4 Path Difference and Phase Difference
 
@@ -330,9 +331,9 @@ Point. Phase difference is how much one wave is shifted relative to the other, m
 Or radians.
 
 - Path difference $= 0, \lambda, 2\lambda, \ldots$: constructive interference (phase difference
- $= 0, 360^{\circ}, 720^{\circ}, \ldots$).
+  $= 0, 360^{\circ}, 720^{\circ}, \ldots$).
 - Path difference $= 0.5\lambda, 1.5\lambda, \ldots$: destructive interference (phase difference
- $= 180^{\circ}, 540^{\circ}, \ldots$).
+  $= 180^{\circ}, 540^{\circ}, \ldots$).
 
 ### 6.5 Required Practical: Investigating Waves on a String
 
@@ -381,13 +382,13 @@ Three standard rays for a convex lens:
 
 ### 7.3 Images Formed by Convex Lenses
 
-| Object position | Image | Nature | Use |
+| Object position      | Image                | Nature                      | Use              |
 | -------------------- | -------------------- | --------------------------- | ---------------- |
-| Beyond $2f$ | Between $f$ and $2f$ | Real, inverted, diminished | Camera |
-| At $2f$ | At $2f$ | Real, inverted, same size | Photocopier |
-| Between $f$ and $2f$ | Beyond $2f$ | Real, inverted, magnified | Projector |
-| At $f$ | At infinity | No image | Spotlight |
-| Inside $f$ | Same side as object | Virtual, upright, magnified | Magnifying glass |
+| Beyond $2f$          | Between $f$ and $2f$ | Real, inverted, diminished  | Camera           |
+| At $2f$              | At $2f$              | Real, inverted, same size   | Photocopier      |
+| Between $f$ and $2f$ | Beyond $2f$          | Real, inverted, magnified   | Projector        |
+| At $f$               | At infinity          | No image                    | Spotlight        |
+| Inside $f$           | Same side as object  | Virtual, upright, magnified | Magnifying glass |
 
 ### 7.4 Real vs Virtual Images
 
@@ -443,61 +444,61 @@ The ratio is $(6/2)^2 = 9$So the intensity at 6 m is $1/9$ of the intensity at 2
 - **Forgetting to halve the time in echo calculations.** The sound travels there AND back.
 - **Using the wrong boundary for refraction.** The normal is always at the boundary.
 - **Confusing frequency and wavelength.** Higher frequency means shorter wavelength (since
- $v = f\lambda$).
+  $v = f\lambda$).
 - **Drawing ray diagrams incorrectly.** Parallel rays must pass through the focus; rays through the
- centre pass straight through.
+  centre pass straight through.
 - **Forgetting that electromagnetic waves all travel at the same speed in a vacuum.** They differ in
- frequency and wavelength.
+  frequency and wavelength.
 - **Stating that sound is a transverse wave.** Sound is longitudinal: the particles oscillate
- parallel to the direction of energy transfer.
+  parallel to the direction of energy transfer.
 - **Confusing amplitude and frequency.** Amplitude determines loudness; frequency determines pitch.
 - **Forgetting that diffraction requires the gap to be comparable to the wavelength.** A very wide
- gap (compared to the wavelength) produces negligible diffraction.
+  gap (compared to the wavelength) produces negligible diffraction.
 - **Writing the lens equation incorrectly.** The correct form is
- $\frac{1}{f} = \frac{1}{v} + \frac{1}{u}$Not $\frac{1}{f} = \frac{1}{v} - \frac{1}{u}$.
+  $\frac{1}{f} = \frac{1}{v} + \frac{1}{u}$Not $\frac{1}{f} = \frac{1}{v} - \frac{1}{u}$.
 
 ## Practice Questions
 
 1. A radio wave has a frequency of 90 MHz. Calculate its wavelength. (Speed of light
- $= 3 \times 10^8$ m/s.)
+   $= 3 \times 10^8$ m/s.)
 
 2. Explain the difference between reflection and refraction, using wave terminology.
 
 3. Describe how ultrasound can be used to determine the depth of the sea bed, including a
- calculation.
+   calculation.
 
 4. Draw a ray diagram for an object placed between $f$ and $2f$ from a convex lens. Describe the
- image formed.
+   image formed.
 
 5. Explain why diffraction of light is not normally observed in everyday life.
 
 6. A concave lens has a focal length of 10 cm. An object is placed 25 cm from the lens. (Note: this
- is a diverging lens -- describe the expected image.)
+   is a diverging lens -- describe the expected image.)
 
 7. Explain why total internal reflection only occurs when light travels from a denser to a less
- dense medium.
+   dense medium.
 
 8. Describe one use and one danger for each of: microwaves, infrared, ultraviolet, and X-rays.
 
 9. Water waves in a ripple tank have a wavelength of 3 cm and a frequency of 8 Hz. Calculate the
- wave speed.
+   wave speed.
 
 10. Explain, with reference to the wave equation, why the wavelength of sound in water is different
- from that in air, given the same frequency.
+    from that in air, given the same frequency.
 
 11. Light of wavelength 500 nm passes through a single slit of width 0.01 mm. Calculate the angle to
- the first minimum. (Hint: use $\sin\theta = \lambda / a$.)
+    the first minimum. (Hint: use $\sin\theta = \lambda / a$.)
 
 12. A standing wave on a string of length 1.2 m has a fundamental frequency of 100 Hz. Calculate the
- wave speed and the frequency of the third harmonic.
+    wave speed and the frequency of the third harmonic.
 
 13. Explain how polarising filters can be used to reduce glare from a water surface.
 
 14. An object is placed 8 cm from a convex lens of focal length 12 cm. Calculate the image distance
- and magnification. Describe the image.
+    and magnification. Describe the image.
 
 15. The intensity of gamma radiation from a source is 800 W/m$^2$ at a distance of 1 m. Calculate
- the intensity at 5 m and explain why gamma radiation is used for sterilising medical equipment.
+    the intensity at 5 m and explain why gamma radiation is used for sterilising medical equipment.
 
 ## 9. Worked Example: Thin Lens Calculation
 
@@ -588,10 +589,10 @@ Passes through. This is called **crossed Polaroids**.
 **Applications of polarisation:**
 
 - Polarising sunglasses reduce glare by blocking horizontally polarised light reflected from
- surfaces.
+  surfaces.
 - Liquid crystal displays (LCDs) use polarising filters to control which pixels are visible.
 - Stress analysis in engineering: transparent plastic models are placed between crossed Polaroids,
- and stress patterns appear as coloured fringes.
+  and stress patterns appear as coloured fringes.
 
 ## 14. Refractive Index and the Speed of Light
 
@@ -612,13 +613,13 @@ Wavefront to rotate.
 
 ## 15. Summary Table: Wave Behaviours
 
-| Behaviour | What Happens | Key Equation | Everyday Example |
-| ------------ | ------------------------------------------- | --------------------------------------- | -------------------------- |
-| Reflection | Wave bounces off surface | $\theta_i = \theta_r$ | Mirror, echo |
-| Refraction | Wave changes direction due to speed change | $n_1\sin\theta_1 = n_2\sin\theta_2$ | Pencil in water looks bent |
-| Diffraction | Wave spreads through gap or around obstacle | Max when $\mathrm{gap{} \approx \lambda$ | Sound around a corner |
-| Interference | Waves superpose, creating pattern | $\Delta x = n\lambda$ (constructive) | Oil film colours |
-| Polarisation | Oscillations restricted to one plane | Only transverse waves | Sunglasses |
+| Behaviour    | What Happens                                | Key Equation                             | Everyday Example           |
+| ------------ | ------------------------------------------- | ---------------------------------------- | -------------------------- |
+| Reflection   | Wave bounces off surface                    | $\theta_i = \theta_r$                    | Mirror, echo               |
+| Refraction   | Wave changes direction due to speed change  | $n_1\sin\theta_1 = n_2\sin\theta_2$      | Pencil in water looks bent |
+| Diffraction  | Wave spreads through gap or around obstacle | Max when $\mathrm{gap{} \approx \lambda$ | Sound around a corner      |
+| Interference | Waves superpose, creating pattern           | $\Delta x = n\lambda$ (constructive)     | Oil film colours           |
+| Polarisation | Oscillations restricted to one plane        | Only transverse waves                    | Sunglasses                 |
 
 ## 16. Worked Example: Refractive Index and Critical Angle
 
@@ -646,36 +647,36 @@ This is a reasonable value for the speed of sound in air at room temperature.
 ## 18. Practice Questions (Additional)
 
 16. Light of wavelength $480 \mathrm{ nm{}$ passes through a diffraction grating with 400 lines per
- mm. Calculate the angles of the first, second, and third order maxima. How many orders are
- visible in total?
+    mm. Calculate the angles of the first, second, and third order maxima. How many orders are
+    visible in total?
 
 17. An object is placed 20 cm from a concave lens of focal length 15 cm. Calculate the image
- distance and describe the image.
+    distance and describe the image.
 
 18. Explain why two independent light sources cannot produce a stable interference pattern.
 
 19. A sound wave has frequency $250 \mathrm{ Hz{}$ and intensity level $80 \mathrm{ dB{}$ at a
- distance of $3 \mathrm{ m{}$ from the source. Calculate the intensity at $12 \mathrm{ m{}$ and the
- new intensity level in decibels.
+    distance of $3 \mathrm{ m{}$ from the source. Calculate the intensity at $12 \mathrm{ m{}$ and
+    the new intensity level in decibels.
 
 20. Water waves in a ripple tank pass through a gap of width $4 \mathrm{ cm{}$. The wavelength is
- $2 \mathrm{ cm{}$. Describe the diffraction pattern observed. How would the pattern change if the
- gap width were increased to $10 \mathrm{ cm{}$?
+    $2 \mathrm{ cm{}$. Describe the diffraction pattern observed. How would the pattern change if
+    the gap width were increased to $10 \mathrm{ cm{}$?
 
-21. A convex lens has focal length $8 \mathrm{ cm{}$. An object of height $2 \mathrm{ cm{}$ is placed
- $12 \mathrm{ cm{}$ from the lens. Draw a ray diagram (or calculate) to find the image position,
- height, and nature.
+21. A convex lens has focal length $8 \mathrm{ cm{}$. An object of height $2 \mathrm{ cm{}$ is
+    placed $12 \mathrm{ cm{}$ from the lens. Draw a ray diagram (or calculate) to find the image
+    position, height, and nature.
 
 22. Explain how an optical fibre transmits light by total internal reflection. Why must the core
- have a higher refractive index than the cladding?
+    have a higher refractive index than the cladding?
 
 23. The speed of light in a certain type of glass is $1.8 \times 10^8 \mathrm{ m/s{}$. Calculate the
- refractive index of the glass and the critical angle for light travelling from this glass to
- air.
+    refractive index of the glass and the critical angle for light travelling from this glass to
+    air.
 
 24. A standing wave on a string of length $0.8 \mathrm{ m{}$ has a fundamental frequency of
- $150 \mathrm{ Hz{}$. Calculate the wave speed and the frequencies of the second and third
- harmonics.
+    $150 \mathrm{ Hz{}$. Calculate the wave speed and the frequencies of the second and third
+    harmonics.
 
 25. Describe an experiment to demonstrate that light is a transverse wave using polarising filters.
 
@@ -683,8 +684,8 @@ This is a reasonable value for the speed of sound in air at room temperature.
 
 ### Example 26: Combining Wave Properties
 
-A water wave has frequency $2.5 \mathrm{ Hz{}$ and wavelength $0.4 \mathrm{ m{}$. It travels from deep
-Water (speed $1.0 \mathrm{ m/s{}$) into shallow water where its speed is $0.6 \mathrm{ m/s{}$.
+A water wave has frequency $2.5 \mathrm{ Hz{}$ and wavelength $0.4 \mathrm{ m{}$. It travels from
+deep Water (speed $1.0 \mathrm{ m/s{}$) into shallow water where its speed is $0.6 \mathrm{ m/s{}$.
 Calculate the new wavelength and explain what happens to the frequency and amplitude.
 
 **Step 1: Verify the given data**
@@ -705,15 +706,13 @@ When the wave slows down and the wavelength decreases, the wave height (amplitud
 Is conserved, and since the wave is moving more slowly, the energy is concentrated in a shorter
 Wavelength.
 
-:::info
-This is analogous to light bending towards the normal when entering a denser medium. The
-Decrease in wave speed causes the wavelength to decrease while the frequency remains constant.
-:::
+:::info This is analogous to light bending towards the normal when entering a denser medium. The
+Decrease in wave speed causes the wavelength to decrease while the frequency remains constant. :::
 
 ### Example 27: Electromagnetic Spectrum Calculations
 
-A radio station broadcasts at a frequency of $97.4 \mathrm{ MHz{}$. Calculate (a) the wavelength, and
-(b) the time for one complete wave cycle.
+A radio station broadcasts at a frequency of $97.4 \mathrm{ MHz{}$. Calculate (a) the wavelength,
+and (b) the time for one complete wave cycle.
 
 **Step 1: Wavelength**
 
@@ -766,23 +765,23 @@ Next trough, which is only half a wavelength.
 ## Additional Practice Problems
 
 26. Light travels from water ($n = 1.33$) into glass ($n = 1.52$) at an angle of incidence of
- $35^\circ$. Calculate the angle of refraction and state whether the light bends towards or away
- from the normal.
+    $35^\circ$. Calculate the angle of refraction and state whether the light bends towards or away
+    from the normal.
 
 27. A person standing $100 \mathrm{ m{}$ from a cliff claps their hands. If the speed of sound is
- $340 \mathrm{ m/s{}$How long does it take to hear the echo? What is the minimum distance
- between the person and the cliff to hear a distinct echo (assuming the human ear can distinguish
- sounds $0.1 \mathrm{ s{}$ apart)?
+    $340 \mathrm{ m/s{}$How long does it take to hear the echo? What is the minimum distance between
+    the person and the cliff to hear a distinct echo (assuming the human ear can distinguish sounds
+    $0.1 \mathrm{ s{}$ apart)?
 
 28. Compare the properties of transverse and longitudinal waves by completing a table with the
- following headings: direction of oscillation, direction of propagation, example, can be
- polarised, can travel through a vacuum.
+    following headings: direction of oscillation, direction of propagation, example, can be
+    polarised, can travel through a vacuum.
 
 29. A microwave oven operates at a frequency of $2.45 \mathrm{ GHz{}$. Calculate the wavelength.
- Explain why microwaves are particularly effective at heating food containing water molecules.
+    Explain why microwaves are particularly effective at heating food containing water molecules.
 
 30. Describe an experiment to measure the speed of sound in air using two microphones connected to
- an oscilloscope. Explain how you would improve the accuracy of your measurement.
+    an oscilloscope. Explain how you would improve the accuracy of your measurement.
 
 ## Practice Problems
 

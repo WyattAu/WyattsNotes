@@ -1,9 +1,12 @@
 ---
 id: advanced-patterns
 title: Advanced Struct and Enum Patterns
-description: "Advanced Struct and Enum Patterns — Newtype Pattern; Type Safety Through Wrapping; Memory Layout; `impl Deref` for Transparent Access."
+description:
+  'Advanced Struct and Enum Patterns — Newtype Pattern; Type Safety Through Wrapping; Memory Layout;
+  `impl Deref` for Transparent Access.'
 slug: advanced-patterns
 ---
+
 ## Newtype Pattern
 
 The newtype pattern wraps an existing type in a tuple struct, creating a distinct type with the same
@@ -344,13 +347,13 @@ impl Shape {
 
 ### Enum Dispatch vs Trait Objects
 
-| Property | Enum Dispatch | Trait Objects (`dyn Trait`) |
+| Property           | Enum Dispatch               | Trait Objects (`dyn Trait`)  |
 | ------------------ | --------------------------- | ---------------------------- |
-| Dispatch mechanism | Static (branch table) | Dynamic (vtable indirection) |
-| Binary size | One copy per variant | Shared vtable |
-| Extensibility | Closed (all variants known) | Open (any implementor) |
-| Performance | Predictable, inlinable | Indirect call, not inlinable |
-| Type information | Full at compile time | Erased at runtime |
+| Dispatch mechanism | Static (branch table)       | Dynamic (vtable indirection) |
+| Binary size        | One copy per variant        | Shared vtable                |
+| Extensibility      | Closed (all variants known) | Open (any implementor)       |
+| Performance        | Predictable, inlinable      | Indirect call, not inlinable |
+| Type information   | Full at compile time        | Erased at runtime            |
 
 ### When to Use Each
 
@@ -925,43 +928,43 @@ enum Message {
 ## Common Pitfalls
 
 1. **Newtype field access verbosity.** Accessing the inner value requires `.0`Which is not
- descriptive. Implement methods or `Deref` to provide a cleaner API, but be aware that `Deref`
- weakens type safety.
+   descriptive. Implement methods or `Deref` to provide a cleaner API, but be aware that `Deref`
+   weakens type safety.
 
 2. **Builder pattern forgetting required fields.** A basic builder that validates in `build()` only
- catches missing fields at runtime. Use the typestate pattern to enforce required fields at
- compile time.
+   catches missing fields at runtime. Use the typestate pattern to enforce required fields at
+   compile time.
 
 3. **Enum size explosion.** An enum's size is the size of its largest variant plus the discriminant.
- If one variant is much larger than the others, box it: `Large(Box<String>)` instead of
- `Large(String)`.
+   If one variant is much larger than the others, box it: `Large(Box<String>)` instead of
+   `Large(String)`.
 
 4. **Typestate pattern and partial moves.** The typestate pattern consumes `self` in each
- transition. If you need to inspect the state before transitioning, clone or borrow the relevant
- fields before calling the transition method.
+   transition. If you need to inspect the state before transitioning, clone or borrow the relevant
+   fields before calling the transition method.
 
 5. **`#[non_exhaustive]` on structs.** `#[non_exhaustive]` on a struct prevents downstream crates
- from constructing it and from fully destructuring it (the `..` pattern is required). Provide a
- constructor function to allow construction.
+   from constructing it and from fully destructuring it (the `..` pattern is required). Provide a
+   constructor function to allow construction.
 
 6. **`PhantomData` affecting drop order.** `PhantomData<T>` makes the compiler treat the struct as
- if it owns a `T`. If `T` has a destructor, the compiler will require the struct to live no longer
- than `T`. Use `PhantomData<*const T>` or `PhantomData<fn() -> T>` to change variance without
- affecting the drop check.
+   if it owns a `T`. If `T` has a destructor, the compiler will require the struct to live no longer
+   than `T`. Use `PhantomData<*const T>` or `PhantomData<fn() -> T>` to change variance without
+   affecting the drop check.
 
 7. **Struct update syntax with mutable borrows.** `Struct { ..other }` moves fields. If `other` is
- borrowed, you cannot spread from it. Clone the struct first or use individual field copies.
+   borrowed, you cannot spread from it. Clone the struct first or use individual field copies.
 
 8. **Overusing enum dispatch.** Enum dispatch requires all variants to be known at compile time. If
- you need extensibility (plugins, user-defined types), use trait objects or generics.
+   you need extensibility (plugins, user-defined types), use trait objects or generics.
 
 9. **ZST edge cases.** While ZSTs have zero size, they are not "no type." A function taking `()` as
- a parameter still has a calling convention. A `Vec<()>` still has length and capacity metadata.
- ZSTs are real types with real semantics.
+   a parameter still has a calling convention. A `Vec<()>` still has length and capacity metadata.
+   ZSTs are real types with real semantics.
 
 10. **`repr(transparent)` with multiple fields.** `repr(transparent)` requires exactly one non-zero-
- sized field. If your wrapper has multiple fields, the compiler will reject it. Use a single
- field wrapper or a different `repr` attribute.
+    sized field. If your wrapper has multiple fields, the compiler will reject it. Use a single
+    field wrapper or a different `repr` attribute.
 
 ## Pattern Decision Guide
 

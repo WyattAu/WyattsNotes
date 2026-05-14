@@ -1,6 +1,8 @@
 ---
 title: Collections
-description: "Collections — Collection Hierarchy; List; List Operations; Set Operations with worked examples and exam-style questions."
+description:
+  'Collections — Collection Hierarchy; List; List Operations; Set Operations with worked examples
+  and exam-style questions.'
 slug: collections
 date: 2026-04-18
 tags:
@@ -8,6 +10,7 @@ tags:
 categories:
   - Kotlin
 ---
+
 ## Collection Hierarchy
 
 Kotlin's collection types are split into two hierarchies: **read-only** and **mutable**.
@@ -290,15 +293,15 @@ val seq4 = generateSequence(seed = 0) { if (it < 100) it + 1 else null }  // 0..
 ## Common Pitfalls
 
 - \*\* Chaining multiple operations on large lists without using sequences. This creates
- intermediate collections at each step, increasing memory pressure and GC overhead.
+  intermediate collections at each step, increasing memory pressure and GC overhead.
 - \*\* Using `associateBy` when keys are not unique. Only the last value for each key is retained.
- Use `groupBy` when you need to keep all values.
+  Use `groupBy` when you need to keep all values.
 - \*\* Modifying a mutable collection while iterating over it. This throws
- `ConcurrentModificationException`. Use `toList()` to create a snapshot or `removeIf` for
- conditional removal.
+  `ConcurrentModificationException`. Use `toList()` to create a snapshot or `removeIf` for
+  conditional removal.
 - \*\* Assuming read-only collections are immutable. `List<Int>` is a read-only interface; the
- underlying implementation may be mutable. Use `toList()` or `toImmutableList()` (Kotlinx
- Collections) for defensive copies.
+  underlying implementation may be mutable. Use `toList()` or `toImmutableList()` (Kotlinx
+  Collections) for defensive copies.
 
 ## Summary
 

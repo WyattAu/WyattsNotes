@@ -1,6 +1,8 @@
 ---
 title: Probability
-description: "DSE Mathematics probability notes covering sample spaces, events, conditional probability, addition and multiplication rules, and probability distributions."
+description:
+  'DSE Mathematics probability notes covering sample spaces, events, conditional probability,
+  addition and multiplication rules, and probability distributions.'
 date: 2025-06-03T12:07:31.077Z
 tags:
   - Maths
@@ -12,22 +14,22 @@ slug: probability
 
 Probability theory provides a rigorous mathematical framework for quantifying uncertainty. In the
 DSE compulsory syllabus, we focus on discrete probability spaces, combinatorial counting,
-Conditional probability, and independence. This page connects to [combinatorics](combinatorics))
-For counting techniques and [dispersion](dispersion)) for the statistical interpretation of
-Probability distributions.
+Conditional probability, and independence. This page connects to [combinatorics](combinatorics)) For
+counting techniques and [dispersion](dispersion)) for the statistical interpretation of Probability
+distributions.
 
 ## Notations
 
-| Symbol | Meaning |
+| Symbol            | Meaning                                      |
 | ----------------- | -------------------------------------------- |
-| $P(A)$ | Probability of event $A$ |
-| $P(A \mid B)$ | Conditional probability of $A$ given $B$ |
-| $A \cap B$ | Intersection: both $A$ and $B$ occur |
-| $A \cup B$ | Union: $A$ or $B$ or both occur |
-| $A'$ or $\bar{A}$ | Complement of $A$: $A$ does not occur |
-| $A \subseteq B$ | $A$ is a subset of $B$ |
-| $\emptyset$ | Empty set (impossible event) |
-| $S$ or $\Omega$ | Sample space (universal set of all outcomes) |
+| $P(A)$            | Probability of event $A$                     |
+| $P(A \mid B)$     | Conditional probability of $A$ given $B$     |
+| $A \cap B$        | Intersection: both $A$ and $B$ occur         |
+| $A \cup B$        | Union: $A$ or $B$ or both occur              |
+| $A'$ or $\bar{A}$ | Complement of $A$: $A$ does not occur        |
+| $A \subseteq B$   | $A$ is a subset of $B$                       |
+| $\emptyset$       | Empty set (impossible event)                 |
+| $S$ or $\Omega$   | Sample space (universal set of all outcomes) |
 
 ## Basic Probability and Sample Spaces
 
@@ -90,7 +92,7 @@ Any probability measure $P$ defined on a sample space $S$ must satisfy three axi
 1. **Non-negativity**: $P(A) \geq 0$ for every event $A \subseteq S$.
 2. **Normalization**: $P(S) = 1$.
 3. **Additivity**: For any countable collection of pairwise mutually exclusive events
- $A_1, A_2, \ldots$:
+   $A_1, A_2, \ldots$:
 
 $$
 \begin{aligned}
@@ -287,11 +289,9 @@ $$
 
 </details>
 
-:::info
-The addition rule generalises . For any number of events, the key insight is: add
-All individual probabilities, subtract all pairwise intersections, add back all triple
-Intersections, and so on, alternating signs.
-:::
+:::info The addition rule generalises . For any number of events, the key insight is: add All
+individual probabilities, subtract all pairwise intersections, add back all triple Intersections,
+and so on, alternating signs. :::
 
 ## Conditional Probability
 
@@ -471,7 +471,7 @@ Two fair coins are tossed. Let $A$ = "first coin is heads" and $B$ = "second coi
 Now $A'$ = "first coin is tails" and $B'$ = "second coin is heads":
 
 - $P(A') = \frac{1}{2}$$P(B') = \frac{1}{2}$
- $P(A' \cap B') = P(\mathrm{tails, heads}) = \frac{1}{4}$.
+  $P(A' \cap B') = P(\mathrm{tails, heads}) = \frac{1}{4}$.
 - $P(A') \cdot P(B') = \frac{1}{4} = P(A' \cap B')$. Independent. $\checkmark$
 
 </details>
@@ -501,7 +501,7 @@ Tails".
 - $P(A) = \frac{1}{8}$$P(B) = \frac{1}{2}$.
 - $A \cap B = \emptyset$ (cannot have all heads if the first is tails), so $P(A \cap B) = 0$.
 - Check independence:
- $P(A) \cdot P(B) = \frac{1}{8} \times \frac{1}{2} = \frac{1}{16} \neq 0 = P(A \cap B)$.
+  $P(A) \cdot P(B) = \frac{1}{8} \times \frac{1}{2} = \frac{1}{16} \neq 0 = P(A \cap B)$.
 - $A$ and $B$ are mutually exclusive but **not** independent.
 
 For a valid independence example in the same experiment: let $C$ = "first toss is heads" and $D$ =
@@ -511,11 +511,9 @@ Independent.
 
 </details>
 
-:::info
-When testing independence, always compute both $P(A \cap B)$ and $P(A) \cdot P(B)$
+:::info When testing independence, always compute both $P(A \cap B)$ and $P(A) \cdot P(B)$
 Separately and compare. Do not assume independence from the problem description -- it must be
-Verified or explicitly stated.
-:::
+Verified or explicitly stated. :::
 
 ## Bayes' Theorem
 
@@ -641,9 +639,9 @@ Stage, and each branch is labelled with its probability.
 
 1. The probabilities on branches from each node must sum to 1.
 2. The probability of any complete path (root to leaf) is the product of all branch probabilities
- along that path (multiplication rule).
+   along that path (multiplication rule).
 3. The probability of an event is the sum of probabilities of all paths leading to that event
- (addition rule for mutually exclusive paths).
+   (addition rule for mutually exclusive paths).
 
 ### Worked Example
 
@@ -670,8 +668,7 @@ $\checkmark$
 - $P(\mathrm{same colour}) = \frac{12}{30} + \frac{2}{30} = \frac{14}{30} = \frac{7}{15}$.
 - $P(\mathrm{different colours}) = \frac{8}{30} + \frac{8}{30} = \frac{16}{30} = \frac{8}{15}$.
 
-Note: $P(\mathrm{same}) + P(\mathrm{different}) = 1$As expected since these events are
-Complements.
+Note: $P(\mathrm{same}) + P(\mathrm{different}) = 1$As expected since these events are Complements.
 
 </details>
 
@@ -681,7 +678,7 @@ Probability trees are a visual encoding of the multiplication and addition rules
 
 - **Along a path** (sequential stages): multiply probabilities -- this is the multiplication rule.
 - **Across paths** (mutually exclusive ways to reach an event): add probabilities -- this is the
- addition rule for mutually exclusive events.
+  addition rule for mutually exclusive events.
 
 Trees are especially useful for problems involving:
 
@@ -805,8 +802,8 @@ $$
 
 </details>
 
-4. **Question:** Events $A$ and $B$ are such that $P(A) = 0.6$$P(B) = 0.5$And
-$P(A \mid B) = 0.4$. Find $P(A \cup B)$.
+4. **Question:** Events $A$ and $B$ are such that $P(A) = 0.6$$P(B) = 0.5$And $P(A \mid B) = 0.4$.
+Find $P(A \cup B)$.
 <details>
 <summary>Answer</summary>
 
@@ -961,8 +958,8 @@ $(2,6)$Reducing the count from 5 to 4.
 </details>
 
 11. **Question:** $A$$B$And $C$ are three events with $P(A) = P(B) = P(C) = \frac{1}{3}$
-$P(A \cap B) = P(A \cap C) = P(B \cap C) = \frac{1}{6}$And $P(A \cap B \cap C) = \frac{1}{12}$.
-Find $P(A \cup B \cup C)$.
+$P(A \cap B) = P(A \cap C) = P(B \cap C) = \frac{1}{6}$And $P(A \cap B \cap C) = \frac{1}{12}$. Find
+$P(A \cup B \cup C)$.
 <details>
 <summary>Answer</summary>
 
@@ -1003,21 +1000,23 @@ $$
 A positive result means only about 15.4% chance of actually having the condition. This is the base
 Rate fallacy in action: low prevalence swamps even a good test's signal.
 
-For the A-Level treatment of this topic, see [Probability](https://alevel.wyattau.com/docs/maths/statistics/probability).
+For the A-Level treatment of this topic, see
+[Probability](https://alevel.wyattau.com/docs/maths/statistics/probability).
 
 </details>
 </details>
 
 ---
 
-:::tip
-Diagnostic Test
-Ready to test your understanding of **Probability**? The [diagnostic test](/docs/dse/Maths/diagnostics/diag-probability) contains the hardest questions within the DSE specification for this topic, each with a full worked solution.
+:::tip Diagnostic Test Ready to test your understanding of **Probability**? The
+[diagnostic test](/docs/dse/Maths/diagnostics/diag-probability) contains the hardest questions
+within the DSE specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Probability with other DSE mathematics topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Probability
+with other DSE mathematics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/dse/Maths/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/dse/Maths/diagnostics/diagnostic-guide) for instructions on
+self-marking and building a personal test matrix. :::
 
 ## Common Pitfalls
 

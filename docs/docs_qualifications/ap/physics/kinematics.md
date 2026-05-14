@@ -1,6 +1,8 @@
 ---
 title: Kinematics
-description: "Kinematics — Displacement, Velocity, and Acceleration (CED Unit 1); Scalar vs Vector Quantities; Definitions Using Calculus; Constant Acceleration Equations."
+description:
+  'Kinematics — Displacement, Velocity, and Acceleration (CED Unit 1); Scalar vs Vector Quantities;
+  Definitions Using Calculus; Constant Acceleration Equations.'
 date: 2026-04-14
 tags:
   - Physics
@@ -9,19 +11,20 @@ categories:
   - Physics
 slug: kinematics
 ---
+
 ## Displacement, Velocity, and Acceleration (CED Unit 1)
 
 Kinematics describes the motion of objects without considering the forces that cause motion.
 
 ### Scalar vs Vector Quantities
 
-| Quantity | Type | Description |
+| Quantity     | Type   | Description                                        |
 | ------------ | ------ | -------------------------------------------------- |
-| Displacement | Vector | Change in position, $\Delta \vec{r}$ |
-| Distance | Scalar | Total path length traveled |
-| Velocity | Vector | Rate of change of displacement |
-| Speed | Scalar | Rate of change of distance (magnitude of velocity) |
-| Acceleration | Vector | Rate of change of velocity |
+| Displacement | Vector | Change in position, $\Delta \vec{r}$               |
+| Distance     | Scalar | Total path length traveled                         |
+| Velocity     | Vector | Rate of change of displacement                     |
+| Speed        | Scalar | Rate of change of distance (magnitude of velocity) |
+| Acceleration | Vector | Rate of change of velocity                         |
 
 ### Definitions Using Calculus
 
@@ -49,13 +52,11 @@ $$
 
 Velocity is the derivative of position. Acceleration is the derivative of velocity. These are not
 Empirical observations; they are the definitions of velocity and acceleration. The kinematic
-Equations are the results of integrating constant acceleration once (to get velocity) and
-Twice (to get position). Every result in kinematics follows from these definitions plus the
-Assumption of constant acceleration. If you understand the calculus, you understand the kinematics.
+Equations are the results of integrating constant acceleration once (to get velocity) and Twice (to
+get position). Every result in kinematics follows from these definitions plus the Assumption of
+constant acceleration. If you understand the calculus, you understand the kinematics.
 
 ## One-Dimensional Kinematics
-
-
 
 <PhetSimulation simulationId="projectile-motion" title="Projectile Motion" />
 
@@ -120,7 +121,8 @@ This equation is useful because it relates velocity and displacement without req
 
 :::info[Example]
 
-A car accelerates uniformly from rest at $3.0 \mathrm{ m/s{}^2$ for 5.0 s. Find the distance traveled.
+A car accelerates uniformly from rest at $3.0 \mathrm{ m/s{}^2$ for 5.0 s. Find the distance
+traveled.
 
 $$
 X = 0 + 0 \cdot 5.0 + \frac{1}{2}(3.0)(5.0)^2 = \frac{1}{2}(3.0)(25) = 37.5 \mathrm{ m{}
@@ -131,15 +133,15 @@ $$
 ### When to Use Each Equation
 
 Each of the four kinematic equations relates a different subset of the five variables ($v$$v_0$
-$a$$t$$x - x_0$). Choose the equation that contains the variables you know and the variable you
-Need to find:
+$a$$t$$x - x_0$). Choose the equation that contains the variables you know and the variable you Need
+to find:
 
-| Known variables | Use equation |
-| ---------------------- | ----------------------------------- |
-| $v_0$$a$$t$ | $v = v_0 + at$ |
-| $v_0$$a$$t$ | $x - x_0 = v_0 t + \frac{1}{2}at^2$ |
-| $v_0$$a$$\Delta x$ | $v^2 = v_0^2 + 2a\Delta x$ |
-| $v_0$$v$$t$ | $\Delta x = \frac{v_0 + v}{2} t$ |
+| Known variables    | Use equation                        |
+| ------------------ | ----------------------------------- |
+| $v_0$$a$$t$        | $v = v_0 + at$                      |
+| $v_0$$a$$t$        | $x - x_0 = v_0 t + \frac{1}{2}at^2$ |
+| $v_0$$a$$\Delta x$ | $v^2 = v_0^2 + 2a\Delta x$          |
+| $v_0$$v$$t$        | $\Delta x = \frac{v_0 + v}{2} t$    |
 
 The variable that does _not_ appear in each equation tells you when to use it.
 
@@ -177,8 +179,8 @@ Quadratic in $t$.
 
 :::info[Example]
 
-A ball is thrown upward from ground level with initial velocity $20 \mathrm{ m/s{}$. Find the maximum
-Height and the total time in the air.
+A ball is thrown upward from ground level with initial velocity $20 \mathrm{ m/s{}$. Find the
+maximum Height and the total time in the air.
 
 **Maximum height:** At the peak, $v = 0$.
 
@@ -201,8 +203,8 @@ In projectile motion, the horizontal and vertical motions are independent.
 ### Why Horizontal and Vertical Motions Are Independent
 
 The horizontal component of velocity has no effect on the vertical acceleration (which is always
-$g$Downward), and vice versa. This is because the gravitational force acts only vertically. There
-Is no horizontal force (ignoring air resistance), so the horizontal acceleration is zero. The two
+$g$Downward), and vice versa. This is because the gravitational force acts only vertically. There Is
+no horizontal force (ignoring air resistance), so the horizontal acceleration is zero. The two
 Components of motion are completely decoupled, and can be analyzed separately using the same
 Kinematic equations.
 
@@ -275,8 +277,8 @@ Confirms that the parabola opens downward.
 
 :::info[Example]
 
-A projectile is launched at $50 \mathrm{ m/s{}$ at $37^\circ$ above horizontal from ground level. Find
-The range and maximum height.
+A projectile is launched at $50 \mathrm{ m/s{}$ at $37^\circ$ above horizontal from ground level.
+Find The range and maximum height.
 
 $\cos 37^\circ \approx 0.8$$\sin 37^\circ \approx 0.6$.
 
@@ -316,7 +318,7 @@ $y(t) = 0$Then compute $R = v_0\cos\theta \cdot t$.
 - **Zero slope on $x$-vs-$t$:** at rest.
 - **Negative slope on $x$-vs-$t$:** moving in the negative direction.
 - **Curvature on $x$-vs-$t$:** indicates acceleration (concave up = positive $a$Concave down =
- negative $a$).
+  negative $a$).
 
 ### Inflection Points and Velocity Extrema
 
@@ -329,7 +331,7 @@ At this instant, the object is changing from speeding up to slowing down (or vic
 An object moving in a circle of radius $r$ at constant speed $v$ has:
 
 - **Centripetal acceleration:** $\displaystyle a_c = \frac{v^2}{r}$ directed toward the center of
- the circle.
+  the circle.
 - **Period:** $\displaystyle T = \frac{2\pi r}{v}$
 - **Frequency:** $\displaystyle f = \frac{1}{T} = \frac{v}{2\pi r}$
 
@@ -370,10 +372,10 @@ $$
 ### Why Centripetal Acceleration Does Not Change Speed
 
 Centripetal acceleration is always perpendicular to the velocity. Since the dot product
-$\vec{a}_c \cdot \vec{v} = 0$The power delivered is $P = \vec{F} \cdot \vec{v} = 0$And the
-Kinetic energy $\frac{1}{2}mv^2$ is constant. The speed does not change; only the direction of the
-Velocity vector changes. This is why "centripetal" means "centre-seeking" -- the acceleration always
-Points toward the center, never along the velocity.
+$\vec{a}_c \cdot \vec{v} = 0$The power delivered is $P = \vec{F} \cdot \vec{v} = 0$And the Kinetic
+energy $\frac{1}{2}mv^2$ is constant. The speed does not change; only the direction of the Velocity
+vector changes. This is why "centripetal" means "centre-seeking" -- the acceleration always Points
+toward the center, never along the velocity.
 
 :::info[Example]
 
@@ -409,8 +411,8 @@ Integration (counting squares, the trapezoidal rule, or Simpson's rule).
 
 :::info[Example]
 
-The velocity of a particle is $v(t) = 3t^2 - 6t + 2 \mathrm{ m/s{}$. Find the displacement from $t = 0$
-To $t = 3$ s and the acceleration at $t = 2$ s.
+The velocity of a particle is $v(t) = 3t^2 - 6t + 2 \mathrm{ m/s{}$. Find the displacement from
+$t = 0$ To $t = 3$ s and the acceleration at $t = 2$ s.
 
 **Displacement:**
 
@@ -467,8 +469,8 @@ Frame $S'$ relative to frame $S$.
 
 :::info[Example]
 
-A boat heads directly across a river 100 m wide at $4 \mathrm{ m/s{}$ relative to the water. The river
-Flows at $3 \mathrm{ m/s{}$. How far downstream does the boat land?
+A boat heads directly across a river 100 m wide at $4 \mathrm{ m/s{}$ relative to the water. The
+river Flows at $3 \mathrm{ m/s{}$. How far downstream does the boat land?
 
 The boat's velocity relative to the shore has two components:
 
@@ -498,56 +500,56 @@ The boat cannot overcome the current.
 ## Common Pitfalls
 
 1. **Confusing displacement with distance.** Displacement is a vector (net change in position);
- distance is a scalar (total path length).
+   distance is a scalar (total path length).
 2. **Ignoring the sign convention.** In free fall, choosing "up as positive" means $a = -g$. Be
- consistent throughout the problem.
+   consistent throughout the problem.
 3. **Treating horizontal and vertical components as dependent.** In projectile motion, the
- horizontal motion has constant velocity (no horizontal acceleration, ignoring air resistance).
+   horizontal motion has constant velocity (no horizontal acceleration, ignoring air resistance).
 4. **Using the constant acceleration equations when acceleration is not constant.** Use calculus
- (integration) instead.
+   (integration) instead.
 5. **Confusing speed and velocity.** Speed is the magnitude of velocity. An object can have constant
- speed but changing velocity (e.g., uniform circular motion).
+   speed but changing velocity (e.g., uniform circular motion).
 6. **Forgetting that centripetal acceleration changes direction, not speed.** In uniform circular
- motion, the speed is constant but the velocity vector changes direction continuously.
+   motion, the speed is constant but the velocity vector changes direction continuously.
 7. **Incorrectly applying the range formula** when the launch and landing heights differ.
 8. **Forgetting that the kinematic equations assume constant acceleration.** If the problem involves
- variable acceleration (a spring, a pendulum, a rocket losing mass), you must use calculus.
+   variable acceleration (a spring, a pendulum, a rocket losing mass), you must use calculus.
 9. **Mixing up initial and final values.** $v_0$ is the velocity at the start of the interval; $v$
- is the velocity at the end. Be careful about which instant each variable refers to.
+   is the velocity at the end. Be careful about which instant each variable refers to.
 10. **Assuming the maximum height occurs at half the total time.** This is only true when the launch
- and landing heights are the same.
+    and landing heights are the same.
 
 ## Practice Questions
 
 1. A ball is dropped from a height of 80 m. How long does it take to reach the ground, and what is
- its speed at impact?
+   its speed at impact?
 
 2. A projectile is launched from a cliff 60 m high at $30 \mathrm{ m/s{}$ at $40^\circ$ above
- horizontal. Find the time of flight and the horizontal range.
+   horizontal. Find the time of flight and the horizontal range.
 
 3. A particle has acceleration $a(t) = 6t \mathrm{ m/s{}^2$ with initial velocity
- $v(0) = -4 \mathrm{ m/s{}$ and initial position $x(0) = 2 \mathrm{ m{}$. Find $v(t)$$x(t)$And the
- displacement from $t = 0$ to $t = 3$.
+   $v(0) = -4 \mathrm{ m/s{}$ and initial position $x(0) = 2 \mathrm{ m{}$. Find $v(t)$$x(t)$And the
+   displacement from $t = 0$ to $t = 3$.
 
 4. A car accelerates from rest at $2.0 \mathrm{ m/s{}^2$ for 200 m. What is its final velocity?
 
 5. An object moves along the $x$-axis with velocity $v(t) = t^3 - 6t^2 + 9t$. Find the total
- distance traveled from $t = 0$ to $t = 5$.
+   distance traveled from $t = 0$ to $t = 5$.
 
 6. A satellite orbits Earth at an altitude of 300 km in a circular orbit. If the orbital period is
- 90.5 minutes, find the orbital speed and centripetal acceleration. (Earth's radius = $6371$ km.)
+   90.5 minutes, find the orbital speed and centripetal acceleration. (Earth's radius = $6371$ km.)
 
 7. A swimmer can swim at $2.0 \mathrm{ m/s{}$ in still water. She needs to cross a river 50 m wide
- flowing at $1.5 \mathrm{ m/s{}$. At what angle upstream should she head to land directly across?
+   flowing at $1.5 \mathrm{ m/s{}$. At what angle upstream should she head to land directly across?
 
 8. Derive the formula for the maximum height of a projectile using calculus.
 
 9. A ball is thrown from the top of a 50 m building at $20 \mathrm{ m/s{}$ at $30^\circ$ below the
- horizontal. Find the time to hit the ground and the horizontal distance from the building.
+   horizontal. Find the time to hit the ground and the horizontal distance from the building.
 
 10. The position of a particle is $x(t) = t^3 - 6t^2 + 9t + 1$ m. Find (a) the times when the
- particle is at rest, (b) the acceleration at each of those times, and (c) the total distance
- traveled between $t = 0$ and $t = 5$ s.
+    particle is at rest, (b) the acceleration at each of those times, and (c) the total distance
+    traveled between $t = 0$ and $t = 5$ s.
 
 ## Motion Graphs: Advanced Analysis
 
@@ -640,61 +642,61 @@ $$x(t) = 27 + 27(t - 3)$$
 
 ## Summary Table: Kinematic Equations
 
-| Equation | Missing Variable | Best Used When |
+| Equation                            | Missing Variable | Best Used When                                      |
 | ----------------------------------- | ---------------- | --------------------------------------------------- |
-| $v = v_0 + at$ | $x - x_0$ | You know initial velocity, acceleration, time |
-| $x - x_0 = v_0 t + \frac{1}{2}at^2$ | $v$ | You know initial velocity, acceleration, time |
-| $v^2 = v_0^2 + 2a(x - x_0)$ | $t$ | You know velocities and displacement |
-| $x - x_0 = \frac{v_0 + v}{2}t$ | $a$ | You know velocities and time (uniform acceleration) |
+| $v = v_0 + at$                      | $x - x_0$        | You know initial velocity, acceleration, time       |
+| $x - x_0 = v_0 t + \frac{1}{2}at^2$ | $v$              | You know initial velocity, acceleration, time       |
+| $v^2 = v_0^2 + 2a(x - x_0)$         | $t$              | You know velocities and displacement                |
+| $x - x_0 = \frac{v_0 + v}{2}t$      | $a$              | You know velocities and time (uniform acceleration) |
 
 ## Common Pitfalls: Extended
 
 11. **Assuming that the magnitude of acceleration equals $g$ for objects thrown upward.** The
- magnitude is $g$ only when air resistance is negligible. With air resistance, the acceleration
- while going up is greater than $g$ (drag and gravity both act downward) and while coming down is
- less than $g$ (drag opposes gravity).
+    magnitude is $g$ only when air resistance is negligible. With air resistance, the acceleration
+    while going up is greater than $g$ (drag and gravity both act downward) and while coming down is
+    less than $g$ (drag opposes gravity).
 
 12. **Using the wrong reference frame in relative motion problems.** Always identify the observer's
- frame and the moving frame explicitly. Write the velocity addition formula carefully.
+    frame and the moving frame explicitly. Write the velocity addition formula carefully.
 
 13. **Forgetting that in 2D projectile motion, the time determines everything.** Once you find the
- time of flight (from the vertical motion), you can find the horizontal range. You cannot find
- the range without first finding the time.
+    time of flight (from the vertical motion), you can find the horizontal range. You cannot find
+    the range without first finding the time.
 
 14. **Confusing angular displacement with linear displacement in circular motion problems.** Angular
- displacement $\theta$ is dimensionless (radians). Linear displacement $s = r\theta$ has units of
- metres.
+    displacement $\theta$ is dimensionless (radians). Linear displacement $s = r\theta$ has units of
+    metres.
 
 15. **Assuming that $a = v^2/r$ applies when the speed is not constant.** The formula $a_c = v^2/r$
- gives only the centripetal component of acceleration. If the speed is changing, there is also a
- tangential component $a_t = dv/dt$.
+    gives only the centripetal component of acceleration. If the speed is changing, there is also a
+    tangential component $a_t = dv/dt$.
 
 ## Practice Questions (Additional)
 
 11. A particle moves along the $x$-axis with acceleration $a(t) = 8t - 6$ m/s$^2$. At $t = 0$The
- particle is at $x = 2$ m with velocity $v = -3$ m/s. Find (a) the time when the particle is at
- rest, (b) the position at that time, and (c) the total distance traveled between $t = 0$ and
- $t = 3$ s.
+    particle is at $x = 2$ m with velocity $v = -3$ m/s. Find (a) the time when the particle is at
+    rest, (b) the position at that time, and (c) the total distance traveled between $t = 0$ and
+    $t = 3$ s.
 
-12. A projectile is launched from ground level at $40 \mathrm{ m/s{}$. Find the two launch angles that
- give a range of $120 \mathrm{ m{}$.
+12. A projectile is launched from ground level at $40 \mathrm{ m/s{}$. Find the two launch angles
+    that give a range of $120 \mathrm{ m{}$.
 
 13. A car accelerates from rest at $3 \mathrm{ m/s{}^2$ for $4 \mathrm{ s{}$Then travels at constant
- speed for $6 \mathrm{ s{}$Then decelerates uniformly to rest in $3 \mathrm{ s{}$. Find the total
- distance and draw a velocity-time graph.
+    speed for $6 \mathrm{ s{}$Then decelerates uniformly to rest in $3 \mathrm{ s{}$. Find the total
+    distance and draw a velocity-time graph.
 
-14. Two boats leave the same point simultaneously. Boat A heads north at $6 \mathrm{ m/s{}$ and Boat B
- heads northeast at $8 \mathrm{ m/s{}$. Find the velocity of Boat A relative to Boat B.
+14. Two boats leave the same point simultaneously. Boat A heads north at $6 \mathrm{ m/s{}$ and Boat
+    B heads northeast at $8 \mathrm{ m/s{}$. Find the velocity of Boat A relative to Boat B.
 
-15. An astronaut on the Moon throws a ball vertically upward at $15 \mathrm{ m/s{}$. Find the maximum
- height and total time in the air. ($g_{\mathrm{Moon{}} = 1.62 \mathrm{ m/s{}^2$.)
+15. An astronaut on the Moon throws a ball vertically upward at $15 \mathrm{ m/s{}$. Find the
+    maximum height and total time in the air. ($g_{\mathrm{Moon{}} = 1.62 \mathrm{ m/s{}^2$.)
 
 ## Extended Worked Examples
 
 ### Example 16: Relative Motion in Two Dimensions
 
-Airplane A flies north at $250 \mathrm{ m/s{}$. Airplane B flies at $200 \mathrm{ m/s{}$ on a heading of
-$60^\circ$ east of north. Find the velocity of A relative to B.
+Airplane A flies north at $250 \mathrm{ m/s{}$. Airplane B flies at $200 \mathrm{ m/s{}$ on a
+heading of $60^\circ$ east of north. Find the velocity of A relative to B.
 
 **Step 1: Write velocity vectors**
 
@@ -712,12 +714,13 @@ $$|\vec{v}_{AB}| = \sqrt{173.2^2 + 150^2} = \sqrt{29998 + 22500} = \sqrt{52498} 
 
 $$\theta = \arctan\left(\frac{150}{-173.2}\right) = 180° - 40.9° = 139.1° \mathrm{ from east{}$$
 
-So the velocity of A relative to B is $229.1 \mathrm{ m/s{}$ at $139.1^\circ$ from east (or $50.9^\circ$ west of
-North).
+So the velocity of A relative to B is $229.1 \mathrm{ m/s{}$ at $139.1^\circ$ from east (or
+$50.9^\circ$ west of North).
 
 ### Example 17: Non-Uniform Acceleration from a Velocity Function
 
-The velocity of a particle is given by $v(t) = t^3 - 6t^2 + 9t$ (m/s) for $0 \le t \le 5 \mathrm{ s{}$.
+The velocity of a particle is given by $v(t) = t^3 - 6t^2 + 9t$ (m/s) for
+$0 \le t \le 5 \mathrm{ s{}$.
 
 Find (a) when the particle is at rest, (b) the total distance travelled, and (c) the displacement.
 
@@ -745,21 +748,19 @@ $$= \frac{625}{4} - 250 + \frac{225}{2} = 156.25 - 250 + 112.5 = 18.75 \mathrm{ 
 
 $$a(t) = 3t^2 - 12t + 9 = 3(t^2 - 4t + 3) = 3(t - 1)(t - 3)$$
 
-At $t = 0$: $a = 9 \mathrm{ m/s{}^2$ (speeding up) At $t = 3$: $a = 3(9 - 12 + 3) = 0 \mathrm{ m/s{}^2$
-(momentarily stationary, inflection point)
+At $t = 0$: $a = 9 \mathrm{ m/s{}^2$ (speeding up) At $t = 3$:
+$a = 3(9 - 12 + 3) = 0 \mathrm{ m/s{}^2$ (momentarily stationary, inflection point)
 
-:::info
-Even though the particle is stationary at $t = 3 \mathrm{ s{}$The acceleration is also zero
+:::info Even though the particle is stationary at $t = 3 \mathrm{ s{}$The acceleration is also zero
 There, so the particle does not reverse direction. Compare this to projectile motion at the top of
-The trajectory where $v = 0$ but $a = g \ne 0$So the projectile immediately starts moving
-Downward.
+The trajectory where $v = 0$ but $a = g \ne 0$So the projectile immediately starts moving Downward.
 :::
 
 ### Example 18: Kinematics with Air Resistance
 
 A $70 \mathrm{ kg{}$ skydiver falls from rest. The air resistance force is $F_D = kv^2$ where
-$k = 0.25 \mathrm{ kg/m{}$. Calculate (a) the terminal velocity, (b) the velocity after $10 \mathrm{ s{}$
-And (c) the distance fallen after $10 \mathrm{ s{}$.
+$k = 0.25 \mathrm{ kg/m{}$. Calculate (a) the terminal velocity, (b) the velocity after
+$10 \mathrm{ s{}$ And (c) the distance fallen after $10 \mathrm{ s{}$.
 
 **Step 1: Terminal velocity**
 
@@ -800,8 +801,8 @@ Mid-problem, especially when combining horizontal and vertical components.
 ### Pitfall 7: Confusing Average Velocity with Average Speed
 
 Average velocity $= \frac{\mathrm{displacement{}}{\mathrm{time{}}$ (a vector, can be zero for round
-Trips). Average speed $= \frac{\mathrm{total distance{}}{\mathrm{time{}}$ (a scalar, always positive).
-They are equal only for motion in one direction without reversing.
+Trips). Average speed $= \frac{\mathrm{total distance{}}{\mathrm{time{}}$ (a scalar, always
+positive). They are equal only for motion in one direction without reversing.
 
 ### Pitfall 8: Assuming Graph Slopes Give Instantaneous Values Everywhere
 
@@ -812,33 +813,36 @@ Between two points is not the same as the instantaneous slope.
 
 ## Additional Practice Problems
 
-16. A ball is thrown upward from the top of a $50 \mathrm{ m{}$ building at $20 \mathrm{ m/s{}$. Calculate
- (a) the maximum height above ground, (b) the time to reach maximum height, (c) the total time in
- the air, and (d) the velocity just before impact with the ground.
+16. A ball is thrown upward from the top of a $50 \mathrm{ m{}$ building at $20 \mathrm{ m/s{}$.
+    Calculate (a) the maximum height above ground, (b) the time to reach maximum height, (c) the
+    total time in the air, and (d) the velocity just before impact with the ground.
 
 17. A police car chasing a speeding motorist. The motorist passes at $30 \mathrm{ m/s{}$. The police
- car starts $2 \mathrm{ s{}$ later with acceleration $3 \mathrm{ m/s{}^2$. Calculate (a) when and where
- the police car catches the motorist, and (b) the speeds of both vehicles at that moment.
+    car starts $2 \mathrm{ s{}$ later with acceleration $3 \mathrm{ m/s{}^2$. Calculate (a) when and
+    where the police car catches the motorist, and (b) the speeds of both vehicles at that moment.
 
-18. A projectile is launched from a cliff of height $80 \mathrm{ m{}$ at $50 \mathrm{ m/s{}$ at $40^\circ$
- above the horizontal. Calculate (a) the time of flight, (b) the maximum height above the launch
- point, (c) the horizontal range, and (d) the velocity (magnitude and direction) at impact.
+18. A projectile is launched from a cliff of height $80 \mathrm{ m{}$ at $50 \mathrm{ m/s{}$ at
+    $40^\circ$ above the horizontal. Calculate (a) the time of flight, (b) the maximum height above
+    the launch point, (c) the horizontal range, and (d) the velocity (magnitude and direction) at
+    impact.
 
-19. Two trains approach each other on parallel tracks. Train A travels at $60 \mathrm{ m/s{}$ and Train
- B at $40 \mathrm{ m/s{}$. A bird flies at $80 \mathrm{ m/s{}$ from Train A to Train B and back
- repeatedly until the trains meet. If the trains are initially $2 \mathrm{ km{}$ apart, calculate
- the total distance the bird flies.
+19. Two trains approach each other on parallel tracks. Train A travels at $60 \mathrm{ m/s{}$ and
+    Train B at $40 \mathrm{ m/s{}$. A bird flies at $80 \mathrm{ m/s{}$ from Train A to Train B and
+    back repeatedly until the trains meet. If the trains are initially $2 \mathrm{ km{}$ apart,
+    calculate the total distance the bird flies.
 
 20. The position of a particle is given by $x(t) = 2t^3 - 9t^2 + 12t + 1$ (m). Find (a) the times
- when the particle changes direction, (b) the total distance travelled between $t = 0$ and
- $t = 4 \mathrm{ s{}$And (c) the average velocity and average speed over this interval.
+    when the particle changes direction, (b) the total distance travelled between $t = 0$ and
+    $t = 4 \mathrm{ s{}$And (c) the average velocity and average speed over this interval.
 
 ## Practice Problems
 
 <details>
 <summary>Question 1: Two-object kinematics with relative motion</summary>
 
-A ball is thrown vertically upward from ground level with initial velocity $20 \mathrm{ m/s{}$. One second later, a second ball is dropped from a height of $50 \mathrm{ m{}$. At what height above the ground do the two balls meet? Take $g = 9.8 \mathrm{ m/s^2{}$.
+A ball is thrown vertically upward from ground level with initial velocity $20 \mathrm{ m/s{}$. One
+second later, a second ball is dropped from a height of $50 \mathrm{ m{}$. At what height above the
+ground do the two balls meet? Take $g = 9.8 \mathrm{ m/s^2{}$.
 
 </details>
 
@@ -849,13 +853,15 @@ Ball 1 (thrown up at $t = 0$): $y_1 = 20t - 4.9t^2$.
 
 Ball 2 (dropped at $t = 1$): $y_2 = 50 - 4.9(t - 1)^2$ for $t \ge 1$.
 
-Set $y_1 = y_2$: $20t - 4.9t^2 = 50 - 4.9(t^2 - 2t + 1) = 50 - 4.9t^2 + 9.8t - 4.9 = 45.1 - 4.9t^2 + 9.8t$.
+Set $y_1 = y_2$:
+$20t - 4.9t^2 = 50 - 4.9(t^2 - 2t + 1) = 50 - 4.9t^2 + 9.8t - 4.9 = 45.1 - 4.9t^2 + 9.8t$.
 
 $20t = 45.1 + 9.8t$So $10.2t = 45.1$$t = 4.42 \mathrm{ s{}$.
 
 Height: $y_1 = 20(4.42) - 4.9(4.42)^2 = 88.4 - 95.7 = -7.3 \mathrm{ m{}$.
 
-This is negative, meaning the balls don't meet before ball 1 hits the ground. Ball 1 lands when $y_1 = 0$: $20t - 4.9t^2 = 0$$t = 20/4.9 = 4.08 \mathrm{ s{}$.
+This is negative, meaning the balls don't meet before ball 1 hits the ground. Ball 1 lands when
+$y_1 = 0$: $20t - 4.9t^2 = 0$$t = 20/4.9 = 4.08 \mathrm{ s{}$.
 
 Since $4.42 > 4.08$Ball 1 has already landed. The balls do not meet in the air.
 
@@ -864,7 +870,8 @@ Since $4.42 > 4.08$Ball 1 has already landed. The balls do not meet in the air.
 <details>
 <summary>Question 2: Projectile motion with angle optimization</summary>
 
-A football is kicked from ground level with speed $25 \mathrm{ m/s{}$. At what angle should it be kicked to maximise the range? Calculate the maximum range and the time of flight.
+A football is kicked from ground level with speed $25 \mathrm{ m/s{}$. At what angle should it be
+kicked to maximise the range? Calculate the maximum range and the time of flight.
 
 </details>
 
@@ -873,23 +880,27 @@ A football is kicked from ground level with speed $25 \mathrm{ m/s{}$. At what a
 
 For maximum range on level ground, the launch angle is $45^\circ$.
 
-Range: $R = \frac{v^2 \sin(2\theta)}{g} = \frac{25^2 \sin(90^\circ)}{9.8} = \frac{625}{9.8} = 63.8 \mathrm{ m{}$.
+Range:
+$R = \frac{v^2 \sin(2\theta)}{g} = \frac{25^2 \sin(90^\circ)}{9.8} = \frac{625}{9.8} = 63.8 \mathrm{ m{}$.
 
-Time of flight: $T = \frac{2v \sin\theta}{g} = \frac{2 \times 25 \times \sin(45^\circ)}{9.8} = \frac{35.36}{9.8} = 3.61 \mathrm{ s{}$.
+Time of flight:
+$T = \frac{2v \sin\theta}{g} = \frac{2 \times 25 \times \sin(45^\circ)}{9.8} = \frac{35.36}{9.8} = 3.61 \mathrm{ s{}$.
 
 </details>
 
 <details>
 <summary>Question 3: Kinematics with calculus</summary>
 
-The velocity of a particle is given by $v(t) = 6t^2 - 18t + 12 \mathrm{ m/s{}$ for $0 \le t \le 4 \mathrm{ s{}$. Find the total distance travelled and the displacement.
+The velocity of a particle is given by $v(t) = 6t^2 - 18t + 12 \mathrm{ m/s{}$ for
+$0 \le t \le 4 \mathrm{ s{}$. Find the total distance travelled and the displacement.
 
 </details>
 
 <details>
 <summary>Answer</summary>
 
-Set $v = 0$: $6t^2 - 18t + 12 = 0$$t^2 - 3t + 2 = 0$$(t-1)(t-2) = 0$. Direction changes at $t = 1$ and $t = 2$.
+Set $v = 0$: $6t^2 - 18t + 12 = 0$$t^2 - 3t + 2 = 0$$(t-1)(t-2) = 0$. Direction changes at $t = 1$
+and $t = 2$.
 
 Acceleration: $a = dv/dt = 12t - 18$.
 
@@ -897,9 +908,8 @@ Displacement = $\int_0^4 v \, dt = [2t^3 - 9t^2 + 12t]_0^4 = 128 - 144 + 48 = 32
 
 Total distance = $\int_0^1 v \, dt + |\int_1^2 v \, dt| + \int_2^4 v \, dt$.
 
-$\int_0^1 = [2 - 9 + 12] = 5$.
-$\int_1^2 = [16 - 36 + 24] - [2 - 9 + 12] = 4 - 5 = -1$Absolute value = 1.
-$\int_2^4 = [128 - 144 + 48] - [16 - 36 + 24] = 32 - 44 = -12$Absolute value = 12.
+$\int_0^1 = [2 - 9 + 12] = 5$. $\int_1^2 = [16 - 36 + 24] - [2 - 9 + 12] = 4 - 5 = -1$Absolute value
+= 1. $\int_2^4 = [128 - 144 + 48] - [16 - 36 + 24] = 32 - 44 = -12$Absolute value = 12.
 
 Total distance = $5 + 1 + 12 = 18 \mathrm{ m{}$.
 
@@ -910,39 +920,49 @@ Displacement = 32 m, total distance = 18 m.
 <details>
 <summary>Question 4: Free fall with air resistance (conceptual)</summary>
 
-Explain qualitatively how the motion of a falling object differs with and without air resistance. Sketch velocity-time graphs for both cases and label the terminal velocity.
+Explain qualitatively how the motion of a falling object differs with and without air resistance.
+Sketch velocity-time graphs for both cases and label the terminal velocity.
 
 </details>
 
 <details>
 <summary>Answer</summary>
 
-Without air resistance: Velocity increases linearly with time ($v = gt$). The graph is a straight line through the origin.
+Without air resistance: Velocity increases linearly with time ($v = gt$). The graph is a straight
+line through the origin.
 
-With air resistance: As the object falls, air resistance (drag) increases with speed. Net force = weight - drag decreases. Acceleration decreases. Eventually, drag equals weight (net force = 0), and the object reaches terminal velocity ($v_T$). The velocity-time graph curves upward, approaching $v_T$ asymptotically. It is concave down, starting steep and becoming flat.
+With air resistance: As the object falls, air resistance (drag) increases with speed. Net force =
+weight - drag decreases. Acceleration decreases. Eventually, drag equals weight (net force = 0), and
+the object reaches terminal velocity ($v_T$). The velocity-time graph curves upward, approaching
+$v_T$ asymptotically. It is concave down, starting steep and becoming flat.
 
-Terminal velocity depends on mass, cross-sectional area, drag coefficient, and air density. A heavier object with smaller area reaches a higher terminal velocity.
+Terminal velocity depends on mass, cross-sectional area, drag coefficient, and air density. A
+heavier object with smaller area reaches a higher terminal velocity.
 
 </details>
 
 <details>
 <summary>Question 5: Relative motion in two dimensions</summary>
 
-A boat can travel at $5 \mathrm{ m/s{}$ in still water. It needs to cross a river that is $100 \mathrm{ m{}$ wide, flowing at $3 \mathrm{ m/s{}$. If the boat heads directly across the river, how far downstream is it carried? What heading should the boat take to land directly across from the starting point?
+A boat can travel at $5 \mathrm{ m/s{}$ in still water. It needs to cross a river that is
+$100 \mathrm{ m{}$ wide, flowing at $3 \mathrm{ m/s{}$. If the boat heads directly across the river,
+how far downstream is it carried? What heading should the boat take to land directly across from the
+starting point?
 
 </details>
 
 <details>
 <summary>Answer</summary>
 
-Heading directly across: Time to cross = $100 / 5 = 20 \mathrm{ s{}$.
-Downstream distance = $3 \times 20 = 60 \mathrm{ m{}$.
+Heading directly across: Time to cross = $100 / 5 = 20 \mathrm{ s{}$. Downstream distance =
+$3 \times 20 = 60 \mathrm{ m{}$.
 
-To land directly across: The boat must angle upstream so its upstream component cancels the current. Let $\theta$ be the angle upstream from the line perpendicular to the bank.
+To land directly across: The boat must angle upstream so its upstream component cancels the current.
+Let $\theta$ be the angle upstream from the line perpendicular to the bank.
 
 $5\sin\theta = 3$So $\sin\theta = 3/5 = 0.6$$\theta = 36.9^\circ$.
 
-Velocity across river: $5\cos\theta = 5 \times 0.8 = 4 \mathrm{ m/s{}$.
-Time to cross: $100 / 4 = 25 \mathrm{ s{}$.
+Velocity across river: $5\cos\theta = 5 \times 0.8 = 4 \mathrm{ m/s{}$. Time to cross:
+$100 / 4 = 25 \mathrm{ s{}$.
 
 </details>

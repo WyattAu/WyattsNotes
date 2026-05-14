@@ -1,6 +1,8 @@
 ---
 title: Differential Equations
-description: "Differential Equations — First-Order Separable Equations; Separability Test; Worked Example: Separation with Partial Fractions."
+description:
+  'Differential Equations — First-Order Separable Equations; Separability Test; Worked Example:
+  Separation with Partial Fractions.'
 date: 2026-04-14
 tags:
   - Mathematics
@@ -9,6 +11,7 @@ categories:
   - Mathematics
 slug: differential-equations
 ---
+
 ## Introduction to Differential Equations (CED Unit 7)
 
 A **differential equation** (DE) is an equation that relates a function to one or more of its
@@ -16,9 +19,9 @@ Derivatives. The **order** of a DE is the highest derivative that appears. A fir
 Only $\frac{dy}{dx}$; a second-order DE involves $\frac{d^2y}{dx^2}$.
 
 A **solution** to a DE is a function that satisfies the equation. A **general solution** contains
-Arbitrary constants ( equal to the order of the DE), while a **particular solution**
-Satisfies additional initial conditions. Together, the DE and its initial conditions form an
-**initial value problem** (IVP).
+Arbitrary constants ( equal to the order of the DE), while a **particular solution** Satisfies
+additional initial conditions. Together, the DE and its initial conditions form an **initial value
+problem** (IVP).
 
 **Why differential equations matter.** Nearly every physical system whose state evolves continuously
 In time is modelled by a DE: orbital mechanics, circuit analysis, fluid dynamics, population
@@ -42,9 +45,8 @@ $$
 $$
 
 This works because $dy$ and $dx$ are related through the chain rule: $\frac{dy}{dx} = g(x)h(y)$
-Rewrites as $\frac{1}{h(y)}\frac{dy}{dx} = g(x)$And integrating both sides with respect to $x$
-Gives $\int \frac{1}{h(y)}\frac{dy}{dx}\,dx = \int g(x)\,dx$Which is exactly the separated form
-Above.
+Rewrites as $\frac{1}{h(y)}\frac{dy}{dx} = g(x)$And integrating both sides with respect to $x$ Gives
+$\int \frac{1}{h(y)}\frac{dy}{dx}\,dx = \int g(x)\,dx$Which is exactly the separated form Above.
 
 ### Separability Test
 
@@ -217,7 +219,7 @@ $$
 $$
 
 - When $y$ is small relative to $L$Growth is approximately exponential (the factor
- $1 - \frac{y}{L} \approx 1$).
+  $1 - \frac{y}{L} \approx 1$).
 - As $y \to L$The growth rate $\to 0$.
 - The carrying capacity $L$ is a horizontal asymptote.
 - If $y \gt L$The growth rate is negative, pulling $y$ back toward $L$.
@@ -305,13 +307,13 @@ Shows the direction a solution curve must pass through that point.
 
 ### Constructing Slope Fields
 
-For any given grid point $(x_i, y_j)$Compute $f(x_i, y_j)$ and draw a short segment with that
-Slope. The density of the grid determines how accurately the field represents the DE.
+For any given grid point $(x_i, y_j)$Compute $f(x_i, y_j)$ and draw a short segment with that Slope.
+The density of the grid determines how accurately the field represents the DE.
 
 ### Interpreting Slope Fields
 
 - The general shape of solution curves can be visualized by following the direction of the line
- segments.
+  segments.
 - Equilibrium solutions (horizontal lines) occur where $f(x, y) = 0$ for all $x$.
 - The slope field is unique to the DE, but multiple solution curves pass through different points.
 - Solution curves cannot cross (by the uniqueness theorem).
@@ -367,7 +369,7 @@ Approximating the curve locally by its tangent line at each step.
 
 - Euler's method is **first-order accurate**: the global error is proportional to $\Delta x$.
 - **Local truncation error** per step is $O(\Delta x^2)$But errors accumulate over
- $n = \frac{b-a}{\Delta x}$ steps, giving a global error of $O(\Delta x)$.
+  $n = \frac{b-a}{\Delta x}$ steps, giving a global error of $O(\Delta x)$.
 - Smaller step sizes produce more accurate approximations but require more computation.
 - The method can diverge if the step size is too large, especially for rapidly changing solutions.
 
@@ -378,14 +380,14 @@ $y(1) = 0$.
 
 | Step | $x_n$ | $y_n$ | $f(x_n, y_n) = x_n + y_n$ | $y_{n+1} = y_n + f \cdot \Delta x$ |
 | ---- | ----- | ----- | ------------------------- | ---------------------------------- |
-| 0 | 1.0 | 0 | 1.0 | $0 + 1.0(0.5) = 0.5$ |
-| 1 | 1.5 | 0.5 | 2.0 | $0.5 + 2.0(0.5) = 1.5$ |
-| 2 | 2.0 | 1.5 | -- | |
+| 0    | 1.0   | 0     | 1.0                       | $0 + 1.0(0.5) = 0.5$               |
+| 1    | 1.5   | 0.5   | 2.0                       | $0.5 + 2.0(0.5) = 1.5$             |
+| 2    | 2.0   | 1.5   | --                        |                                    |
 
 So $y(2) \approx 1.5$.
 
-(The exact solution is $y = e^{x-1} - x - 1$Giving $y(2) = e - 3 \approx -0.282$. The
-Approximation is poor due to the large step size. With $\Delta x = 0.1$The result is much closer.)
+(The exact solution is $y = e^{x-1} - x - 1$Giving $y(2) = e - 3 \approx -0.282$. The Approximation
+is poor due to the large step size. With $\Delta x = 0.1$The result is much closer.)
 
 :::
 
@@ -396,11 +398,11 @@ $y(0) = 1$.
 
 | Step | $x_n$ | $y_n$ | $f(x_n, y_n)$ | $y_{n+1}$ |
 | ---- | ----- | ----- | ------------- | --------- |
-| 0 | 0.00 | 1.000 | 1.000 | 1.250 |
-| 1 | 0.25 | 1.250 | 1.313 | 1.578 |
-| 2 | 0.50 | 1.578 | 1.828 | 2.035 |
-| 3 | 0.75 | 2.035 | 2.613 | 2.688 |
-| 4 | 1.00 | 2.688 | -- | -- |
+| 0    | 0.00  | 1.000 | 1.000         | 1.250     |
+| 1    | 0.25  | 1.250 | 1.313         | 1.578     |
+| 2    | 0.50  | 1.578 | 1.828         | 2.035     |
+| 3    | 0.75  | 2.035 | 2.613         | 2.688     |
+| 4    | 1.00  | 2.688 | --            | --        |
 
 So $y(1) \approx 2.688$.
 
@@ -429,8 +431,8 @@ Temperature but never quite reaches it.
 
 :::info[Example]
 
-A cup of coffee at $90^\circ\mathrm{C{}$ is placed in a room at $20^\circ\mathrm{C{}$. After 10 minutes,
-The coffee is $60^\circ\mathrm{C{}$. When will the coffee reach $35^\circ\mathrm{C{}$?
+A cup of coffee at $90^\circ\mathrm{C{}$ is placed in a room at $20^\circ\mathrm{C{}$. After 10
+minutes, The coffee is $60^\circ\mathrm{C{}$. When will the coffee reach $35^\circ\mathrm{C{}$?
 
 $$
 T(t) = 20 + 70e^{-kt}
@@ -548,9 +550,9 @@ Interval around $x_0$.
 **Consequences:**
 
 - Solution curves cannot cross (if they did, the IVP at the crossing point would have two
- solutions).
+  solutions).
 - The conditions are sufficient but not necessary: some IVPs without continuous partial derivatives
- still have unique solutions.
+  still have unique solutions.
 
 ### Equilibrium Solutions
 
@@ -561,11 +563,11 @@ For autonomous equations $\frac{dy}{dt} = f(y)$:
 - Find equilibrium solutions by solving $f(y) = 0$.
 - Classify stability by checking the sign of $f(y)$ near each equilibrium.
 
-| Sign of $f(y)$ near equilibrium | Stability |
+| Sign of $f(y)$ near equilibrium        | Stability           |
 | -------------------------------------- | ------------------- |
-| $f(y) \gt 0$ below, $f(y) \lt 0$ above | Stable (attractor) |
+| $f(y) \gt 0$ below, $f(y) \lt 0$ above | Stable (attractor)  |
 | $f(y) \lt 0$ below, $f(y) \gt 0$ above | Unstable (repeller) |
-| Same sign on both sides | Semi-stable |
+| Same sign on both sides                | Semi-stable         |
 
 ### Phase Line Analysis
 
@@ -575,7 +577,7 @@ $y$-axis with arrows indicating the direction of flow.
 - Draw the $y$-axis and mark the equilibrium points (zeros of $f$).
 - In each interval between equilibria, test a point to determine the sign of $f(y)$.
 - Draw rightward arrows where $f(y) \gt 0$ (increasing) and leftward arrows where $f(y) \lt 0$
- (decreasing).
+  (decreasing).
 
 :::info[Example]
 
@@ -583,12 +585,12 @@ Analyse $\displaystyle\frac{dy}{dt} = y(y - 2)(y - 5)$.
 
 Equilibria: $y = 0$$y = 2$$y = 5$.
 
-| Interval | Test point | $f(y)$ | Direction |
+| Interval        | Test point | $f(y)$            | Direction  |
 | --------------- | ---------- | ----------------- | ---------- |
-| $y \lt 0$ | $-1$ | $(-)(-)(-) \lt 0$ | Decreasing |
-| $0 \lt y \lt 2$ | $1$ | $(+)(-)(-) \gt 0$ | Increasing |
-| $2 \lt y \lt 5$ | $3$ | $(+)(+)(-) \lt 0$ | Decreasing |
-| $y \gt 5$ | $6$ | $(+)(+)(+) \gt 0$ | Increasing |
+| $y \lt 0$       | $-1$       | $(-)(-)(-) \lt 0$ | Decreasing |
+| $0 \lt y \lt 2$ | $1$        | $(+)(-)(-) \gt 0$ | Increasing |
+| $2 \lt y \lt 5$ | $3$        | $(+)(+)(-) \lt 0$ | Decreasing |
+| $y \gt 5$       | $6$        | $(+)(+)(+) \gt 0$ | Increasing |
 
 - $y = 0$: arrows point away -- **unstable**
 - $y = 2$: arrows point inward -- **stable**
@@ -608,11 +610,11 @@ $$
 $$
 
 - When $c \gt 0$: $f(y) = y^2 + c \gt 0$ for all $y$. No equilibria. All solutions increase
- monotonically.
+  monotonically.
 - When $c = 0$: $f(y) = y^2$. One semi-stable equilibrium at $y = 0$. Solutions with $y \lt 0$
- decrease toward $-\infty$; solutions with $y \gt 0$ increase toward $+\infty$.
+  decrease toward $-\infty$; solutions with $y \gt 0$ increase toward $+\infty$.
 - When $c \lt 0$: $f(y) = y^2 + c = 0$ has two equilibria at $y = \pm\sqrt{-c}$. The equilibrium at
- $y = -\sqrt{-c}$ is unstable; the one at $y = \sqrt{-c}$ is stable.
+  $y = -\sqrt{-c}$ is unstable; the one at $y = \sqrt{-c}$ is stable.
 
 The parameter value $c = 0$ is a **bifurcation point**: as $c$ passes through zero, the system
 Transitions from having no equilibria to having two.
@@ -695,77 +697,78 @@ Method would be.
 ## Common Pitfalls
 
 1. **Forgetting the constant of integration.** Always include $+C$ and use the initial condition to
- find it. Every separable DE integration produces an arbitrary constant; dropping it means you
- have a family of curves, not the particular solution.
+   find it. Every separable DE integration produces an arbitrary constant; dropping it means you
+   have a family of curves, not the particular solution.
 
 2. **Incorrectly separating variables.** All $y$ terms (including $dy$) must be on one side, and all
- $x$ terms (including $dx$) on the other. If you cannot algebraically factor $f(x, y)$ into
- $g(x)h(y)$The equation is not separable and you need a different technique.
+   $x$ terms (including $dx$) on the other. If you cannot algebraically factor $f(x, y)$ into
+   $g(x)h(y)$The equation is not separable and you need a different technique.
 
 3. **Not checking the domain** of the solution. Some solutions may only be valid on a restricted
- interval. For example, the solution to $\frac{dy}{dx} = \frac{x}{y}$ is $y^2 = x^2 + C$But if
- $C \lt 0$Then $y$ is undefined for $|x| \lt \sqrt{-C}$.
+   interval. For example, the solution to $\frac{dy}{dx} = \frac{x}{y}$ is $y^2 = x^2 + C$But if
+   $C \lt 0$Then $y$ is undefined for $|x| \lt \sqrt{-C}$.
 
 4. **Confusing the logistic growth equation** with exponential growth. The logistic equation has the
- additional factor $\left(1 - \frac{y}{L}\right)$ that caps growth at the carrying capacity.
+   additional factor $\left(1 - \frac{y}{L}\right)$ that caps growth at the carrying capacity.
 
 5. **Sign errors in Euler's method.** Remember: $y_{n+1} = y_n + f(x_n, y_n) \cdot \Delta x$Not
- minus. The slope at the current point tells you which direction to step.
+   minus. The slope at the current point tells you which direction to step.
 
 6. **Identifying the wrong carrying capacity.** In $\frac{dy}{dt} = ky(1 - y/L)$The carrying
- capacity is $L$Not $\frac{1}{L}$ or $kL$. Check: setting $\frac{dy}{dt} = 0$ gives $y = 0$ or
- $y = L$.
+   capacity is $L$Not $\frac{1}{L}$ or $kL$. Check: setting $\frac{dy}{dt} = 0$ gives $y = 0$ or
+   $y = L$.
 
 7. **Forgetting that equilibrium solutions** cannot be found by separation of variables (since you
- would divide by zero). Always check $f(y) = 0$ separately before separating.
+   would divide by zero). Always check $f(y) = 0$ separately before separating.
 
 8. **Applying Euler's method with too large a step size.** The approximation can diverge
- significantly from the true solution. When in doubt, halve the step size and check convergence.
+   significantly from the true solution. When in doubt, halve the step size and check convergence.
 
 ## Practice Questions
 
 1. Solve $\displaystyle\frac{dy}{dx} = \frac{x^2 + 1}{y}$ with $y(0) = 1$.
 
 2. A population grows according to
- $\displaystyle\frac{dP}{dt} = 0.02P\!\left(1 - \frac{P}{50000}\right)$ with $P(0) = 1000$. Find
- the population after 50 years.
+   $\displaystyle\frac{dP}{dt} = 0.02P\!\left(1 - \frac{P}{50000}\right)$ with $P(0) = 1000$. Find
+   the population after 50 years.
 
 3. Use Euler's method with $\Delta x = 0.25$ and two steps to approximate $y(0.5)$ for
- $\frac{dy}{dx} = x^2 + y$$y(0) = 1$.
+   $\frac{dy}{dx} = x^2 + y$$y(0) = 1$.
 
-4. A body at $80^\circ\mathrm{C{}$ is placed in a room at $25^\circ\mathrm{C{}$. After 30 minutes, the
- body is at $50^\circ\mathrm{C{}$. When will it reach $30^\circ\mathrm{C{}$?
+4. A body at $80^\circ\mathrm{C{}$ is placed in a room at $25^\circ\mathrm{C{}$. After 30 minutes,
+   the body is at $50^\circ\mathrm{C{}$. When will it reach $30^\circ\mathrm{C{}$?
 
 5. For $\displaystyle\frac{dy}{dx} = y(y - 2)(y - 5)$Find all equilibrium solutions and classify
- their stability. Draw the phase line.
+   their stability. Draw the phase line.
 
 6. Sketch the slope field for $\displaystyle\frac{dy}{dx} = \frac{x}{y}$ and identify the
- equilibrium solutions (if any).
+   equilibrium solutions (if any).
 
 7. A tank initially contains 200 L of water with 10 kg of salt. Pure water flows in at 3 L/min and
- the mixture flows out at 3 L/min. How much salt remains after 60 minutes?
+   the mixture flows out at 3 L/min. How much salt remains after 60 minutes?
 
 8. Show that the solution to the logistic equation $\displaystyle\frac{dy}{dt} = ky(1 - y/L)$ with
- $y(0) = y_0$ is $\displaystyle y = \frac{L}{1 + \frac{L - y_0}{y_0} e^{-kt}}$.
+   $y(0) = y_0$ is $\displaystyle y = \frac{L}{1 + \frac{L - y_0}{y_0} e^{-kt}}$.
 
 9. Use Euler's method with $\Delta x = 0.2$ and four steps to approximate $y(0.8)$ for
- $\frac{dy}{dx} = xy$$y(0) = 1$. Compare your result with the exact solution.
+   $\frac{dy}{dx} = xy$$y(0) = 1$. Compare your result with the exact solution.
 
 10. A tank contains 100 L of brine with 20 kg of salt. Fresh water flows in at 5 L/min and the
- mixture flows out at 5 L/min. How long does it take for the salt content to drop to 5 kg?
+    mixture flows out at 5 L/min. How long does it take for the salt content to drop to 5 kg?
 
 11. Analyse the bifurcation diagram for $\frac{dy}{dt} = y^2 - 2y + c$. Find the bifurcation point
- and describe the equilibrium structure on either side.
+    and describe the equilibrium structure on either side.
 
 12. Use the improved Euler method (Heun's method) with $h = 0.5$ and two steps to approximate $y(1)$
- for $\frac{dy}{dx} = x - y$$y(0) = 0$. Compare with the exact solution.
+    for $\frac{dy}{dx} = x - y$$y(0) = 0$. Compare with the exact solution.
 
 ## Practice Problems
 
 <details>
 <summary>Question 1: Separable differential equation</summary>
 
-Solve the differential equation $\frac{dy}{dx} = \frac{xy}{x^2 + 1}$ with the initial condition $y(0) = 2$.
+Solve the differential equation $\frac{dy}{dx} = \frac{xy}{x^2 + 1}$ with the initial condition
+$y(0) = 2$.
 
 </details>
 
@@ -787,7 +790,9 @@ $y = 2\sqrt{x^2 + 1}$.
 <details>
 <summary>Question 2: Logistic growth model</summary>
 
-A population grows according to the logistic equation $\frac{dP}{dt} = 0.05P\!\left(1 - \frac{P}{1000}\right)$ with $P(0) = 100$. Find (a) the population at $t = 50$And (b) the time when the population reaches half the carrying capacity.
+A population grows according to the logistic equation
+$\frac{dP}{dt} = 0.05P\!\left(1 - \frac{P}{1000}\right)$ with $P(0) = 100$. Find (a) the population
+at $t = 50$And (b) the time when the population reaches half the carrying capacity.
 
 </details>
 
@@ -796,11 +801,13 @@ A population grows according to the logistic equation $\frac{dP}{dt} = 0.05P\!\l
 
 Carrying capacity $K = 1000$Growth rate $r = 0.05$.
 
-Logistic solution: $P(t) = \frac{K}{1 + Ae^{-rt}}$ where $A = \frac{K - P_0}{P_0} = \frac{1000 - 100}{100} = 9$.
+Logistic solution: $P(t) = \frac{K}{1 + Ae^{-rt}}$ where
+$A = \frac{K - P_0}{P_0} = \frac{1000 - 100}{100} = 9$.
 
 $P(t) = \frac{1000}{1 + 9e^{-0.05t}}$.
 
-(a) $P(50) = \frac{1000}{1 + 9e^{-2.5}} = \frac{1000}{1 + 9(0.0821)} = \frac{1000}{1 + 0.739} = \frac{1000}{1.739} = 575$.
+(a)
+$P(50) = \frac{1000}{1 + 9e^{-2.5}} = \frac{1000}{1 + 9(0.0821)} = \frac{1000}{1 + 0.739} = \frac{1000}{1.739} = 575$.
 
 (b) Half carrying capacity: $P = 500 = \frac{1000}{1 + 9e^{-0.05t}}$.
 
@@ -824,10 +831,10 @@ Characteristic equation: $r^2 - 5r + 6 = 0$$(r-2)(r-3) = 0$. $r = 2, 3$.
 
 General solution: $y = C_1 e^{2x} + C_2 e^{3x}$.
 
-$y(0) = C_1 + C_2 = 1$.
-$y'(0) = 2C_1 + 3C_2 = 0$.
+$y(0) = C_1 + C_2 = 1$. $y'(0) = 2C_1 + 3C_2 = 0$.
 
-From the second equation: $C_1 = -3C_2/2$. Substituting: $-3C_2/2 + C_2 = 1$$-C_2/2 = 1$$C_2 = -2$$C_1 = 3$.
+From the second equation: $C_1 = -3C_2/2$. Substituting:
+$-3C_2/2 + C_2 = 1$$-C_2/2 = 1$$C_2 = -2$$C_1 = 3$.
 
 $y = 3e^{2x} - 2e^{3x}$.
 
@@ -836,7 +843,8 @@ $y = 3e^{2x} - 2e^{3x}$.
 <details>
 <summary>Question 4: Slope field interpretation</summary>
 
-The differential equation $\frac{dy}{dx} = x - y$ has a slope field. Identify the isocline (line where slopes are zero) and describe the long-term behaviour of solutions.
+The differential equation $\frac{dy}{dx} = x - y$ has a slope field. Identify the isocline (line
+where slopes are zero) and describe the long-term behaviour of solutions.
 
 </details>
 
@@ -849,7 +857,8 @@ For $y \gt x$ (above the line $y = x$): $dy/dx = x - y \lt 0$So solutions decrea
 
 For $y \lt x$ (below the line $y = x$): $dy/dx = x - y \gt 0$So solutions increase.
 
-All solutions approach the line $y = x - 1$ as $x \to \infty$ (this can be verified by solving the DE: the general solution is $y = x - 1 + Ce^{-x}$Which approaches $x - 1$).
+All solutions approach the line $y = x - 1$ as $x \to \infty$ (this can be verified by solving the
+DE: the general solution is $y = x - 1 + Ce^{-x}$Which approaches $x - 1$).
 
 The line $y = x - 1$ is a stable equilibrium solution.
 
@@ -858,7 +867,8 @@ The line $y = x - 1$ is a stable equilibrium solution.
 <details>
 <summary>Question 5: Euler's method</summary>
 
-Use Euler's method with step size $h = 0.5$ to approximate $y(2)$ for $\frac{dy}{dx} = x + y$$y(1) = 0$.
+Use Euler's method with step size $h = 0.5$ to approximate $y(2)$ for
+$\frac{dy}{dx} = x + y$$y(1) = 0$.
 
 </details>
 
@@ -877,14 +887,15 @@ Euler's method approximation: $y(2) \approx 1.5$.
 
 ---
 
-:::tip
-Diagnostic Test
-Ready to test your understanding of **Differential Equations**? The [diagnostic test](/docs/qualifications/ap/maths/diagnostics/diag-differential-equations) contains the hardest questions within the AP specification for this topic, each with a full worked solution.
+:::tip Diagnostic Test Ready to test your understanding of **Differential Equations**? The
+[diagnostic test](/docs/qualifications/ap/maths/diagnostics/diag-differential-equations) contains
+the hardest questions within the AP specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Differential Equations with other AP Calculus topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine
+Differential Equations with other AP Calculus topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/qualifications/ap/maths/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/qualifications/ap/maths/diagnostics/diagnostic-guide) for instructions
+on self-marking and building a personal test matrix. :::
 
 ## Summary
 

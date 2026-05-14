@@ -1,19 +1,22 @@
 ---
 id: package-management
 title: Package Management
-description: "Package Management — Package Formats; Package Anatomy; Inspect a DEB package without installing; Inspect an RPM package without installing."
+description:
+  'Package Management — Package Formats; Package Anatomy; Inspect a DEB package without installing;
+  Inspect an RPM package without installing.'
 slug: package-management
 sidebar_position: 1
 ---
+
 ## Package Formats
 
 A Linux package is an archive containing compiled software, configuration files, metadata (version,
 Description, dependencies), and install/uninstall scripts. Two dominant package formats exist:
 
-| Format | Specification | Distributions | Extension |
+| Format  | Specification     | Distributions                            | Extension |
 | ------- | ----------------- | ---------------------------------------- | --------- |
-| **DEB** | Debian Policy | Debian, Ubuntu, Mint, Proxmox | `.deb` |
-| **RPM** | RPM Specification | RHEL, Fedora, CentOS, SUSE, OpenMandriva | `.rpm` |
+| **DEB** | Debian Policy     | Debian, Ubuntu, Mint, Proxmox            | `.deb`    |
+| **RPM** | RPM Specification | RHEL, Fedora, CentOS, SUSE, OpenMandriva | `.rpm`    |
 
 ### Package Anatomy
 
@@ -114,14 +117,14 @@ deb [arch=amd64 signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.
 APT pinning allows you to control which version of a package is installed when multiple sources
 Provide different versions. Pins have a priority (0-1001):
 
-| Priority Range | Effect |
+| Priority Range | Effect                                            |
 | -------------- | ------------------------------------------------- |
-| 0 | Never install (used for blocking) |
-| 1-99 | Install only if no higher-priority version exists |
-| 100-499 | Install only if no installed version exists |
-| 500 | Default priority (any version from this source) |
-| 990 | Prefer over default priority |
-| 1001 | Install even if downgrading |
+| 0              | Never install (used for blocking)                 |
+| 1-99           | Install only if no higher-priority version exists |
+| 100-499        | Install only if no installed version exists       |
+| 500            | Default priority (any version from this source)   |
+| 990            | Prefer over default priority                      |
+| 1001           | Install even if downgrading                       |
 
 ```bash
 # /etc/apt/preferences.d/docker
@@ -398,13 +401,13 @@ graph TD
     G --> I["/nix/store/hash3-package-name/"]
 ```
 
-| Concept | Description |
+| Concept        | Description                                                  |
 | -------------- | ------------------------------------------------------------ |
 | **Derivation** | A build recipe (input sources, build commands, dependencies) |
-| **Store Path** | `/nix/store/hash-name/` — content-addressable storage |
-| **Profile** | A set of packages linked together in a user environment |
-| **Channel** | A named set of Nix expressions (like a repository) |
-| **Shell** | An isolated environment with specific packages |
+| **Store Path** | `/nix/store/hash-name/` — content-addressable storage        |
+| **Profile**    | A set of packages linked together in a user environment      |
+| **Channel**    | A named set of Nix expressions (like a repository)           |
+| **Shell**      | An isolated environment with specific packages               |
 
 ### Nix Commands
 
@@ -551,15 +554,15 @@ snap info firefox
 
 ### Flatpak vs Snap
 
-| Aspect | Flatpak | Snap |
+| Aspect                   | Flatpak                            | Snap                           |
 | ------------------------ | ---------------------------------- | ------------------------------ |
-| **Backend** | OSTree (content-addressable) | SquashFS (custom mount) |
-| **Default store** | Flathub (community) | Snap Store (Canonical) |
-| **Sandbox** | Bubblewrap (portals for access) | AppArmor, seccomp (interfaces) |
-| **Updates** | User-controlled, no forced updates | Automatic, vendor-controlled |
-| **Distribution support** | Most distributions | Primarily Ubuntu/Debian |
-| **Disk usage** | Shares runtimes between apps | Each snap includes its runtime |
-| **Boot impact** | None | Snap daemon starts at boot |
+| **Backend**              | OSTree (content-addressable)       | SquashFS (custom mount)        |
+| **Default store**        | Flathub (community)                | Snap Store (Canonical)         |
+| **Sandbox**              | Bubblewrap (portals for access)    | AppArmor, seccomp (interfaces) |
+| **Updates**              | User-controlled, no forced updates | Automatic, vendor-controlled   |
+| **Distribution support** | Most distributions                 | Primarily Ubuntu/Debian        |
+| **Disk usage**           | Shares runtimes between apps       | Each snap includes its runtime |
+| **Boot impact**          | None                               | Snap daemon starts at boot     |
 
 ## Dependency Resolution
 
@@ -580,13 +583,13 @@ graph LR
 
 ### Resolution Algorithms
 
-| Manager | Algorithm | Characteristics |
+| Manager     | Algorithm                       | Characteristics                                   |
 | ----------- | ------------------------------- | ------------------------------------------------- |
-| **APT** | C++ resolver | Greedy, deterministic, handles conflicts |
-| **DNF** | libsolv (SAT solver) | More robust than YUM, handles complex constraints |
-| **pacman** | Simple dependency following | No SAT solver, less robust for complex conflicts |
-| **Nix** | Built-in (functional) | No global conflicts by design |
-| **Portage** | C++ resolver with slot handling | Gentoo's package manager, handles slots |
+| **APT**     | C++ resolver                    | Greedy, deterministic, handles conflicts          |
+| **DNF**     | libsolv (SAT solver)            | More robust than YUM, handles complex constraints |
+| **pacman**  | Simple dependency following     | No SAT solver, less robust for complex conflicts  |
+| **Nix**     | Built-in (functional)           | No global conflicts by design                     |
+| **Portage** | C++ resolver with slot handling | Gentoo's package manager, handles slots           |
 
 ### Common Dependency Issues
 

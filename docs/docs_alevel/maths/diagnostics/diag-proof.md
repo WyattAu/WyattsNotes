@@ -1,6 +1,8 @@
 ---
-title: "Proof -- Diagnostic Tests"
-description: "Hard diagnostic tests for proof covering contradiction rigour, induction base cases, counterexample construction, necessary versus sufficient conditions, and"
+title: 'Proof -- Diagnostic Tests'
+description:
+  'Hard diagnostic tests for proof covering contradiction rigour, induction base cases,
+  counterexample construction, necessary versus sufficient conditions, and'
 slug: diag-proof
 hide_table_of_contents: true
 ---
@@ -17,15 +19,18 @@ hide_table_of_contents: true
 
 **(a)** Prove by contradiction that $\sqrt{2}$ is irrational.
 
-**(b)** A student's proof contains the following claim: "Since $p^2$ is even, $p$ must be even." Justify this step rigorously by proving its contrapositive.
+**(b)** A student's proof contains the following claim: "Since $p^2$ is even, $p$ must be even."
+Justify this step rigorously by proving its contrapositive.
 
 **(c)** Adapt the method to prove that $\sqrt{3}$ is irrational.
 
-[Difficulty: hard. Tests the full rigour of proof by contradiction, including the contrapositive argument that "if $p^2$ is even then $p$ is even."]
+[Difficulty: hard. Tests the full rigour of proof by contradiction, including the contrapositive
+argument that "if $p^2$ is even then $p$ is even."]
 
 **Solution:**
 
-**(a)** Suppose, for contradiction, that $\sqrt{2}$ is rational. Then $\sqrt{2} = \frac{p}{q}$ where $p, q \in \mathbb{Z}$$q \neq 0$And $\gcd(p, q) = 1$ (i.e. The fraction is in its lowest terms).
+**(a)** Suppose, for contradiction, that $\sqrt{2}$ is rational. Then $\sqrt{2} = \frac{p}{q}$ where
+$p, q \in \mathbb{Z}$$q \neq 0$And $\gcd(p, q) = 1$ (i.e. The fraction is in its lowest terms).
 
 Squaring: $2 = \frac{p^2}{q^2}$So $p^2 = 2q^2$.
 
@@ -49,7 +54,8 @@ $$p^2 = (2k+1)^2 = 4k^2 + 4k + 1 = 2(2k^2 + 2k) + 1$$
 
 Which is odd (of the form $2m + 1$ where $m = 2k^2 + 2k$).
 
-Since the contrapositive is logically equivalent to the original statement, and we have proved the contrapositive, the original statement is also proved.
+Since the contrapositive is logically equivalent to the original statement, and we have proved the
+contrapositive, the original statement is also proved.
 
 **(c)** Suppose $\sqrt{3} = \frac{p}{q}$ in lowest terms.
 
@@ -66,7 +72,8 @@ If $p$ is not divisible by 3, then $p \equiv 1 \pmod 3$ or $p \equiv 2 \pmod 3$.
 
 In either case, $p^2 \not\equiv 0 \pmod 3$So $p^2$ is not divisible by 3.
 
-Therefore $p$ is divisible by 3. Write $p = 3k$. Then $9k^2 = 3q^2$So $q^2 = 3k^2$And by the same argument, $q$ is divisible by 3.
+Therefore $p$ is divisible by 3. Write $p = 3k$. Then $9k^2 = 3q^2$So $q^2 = 3k^2$And by the same
+argument, $q$ is divisible by 3.
 
 Both $p$ and $q$ divisible by 3 contradicts $\gcd(p,q) = 1$. Therefore $\sqrt{3}$ is irrational.
 
@@ -80,17 +87,23 @@ A student is asked to prove that $\sum_{r=1}^{n} r^2 = \frac{n(n+1)(2n+1)}{6}$ f
 
 **(a)** Write out the full proof by induction, including the base case and inductive step.
 
-**(b)** A different student claims the formula holds for all $n \geq 0$ and starts their base case at $n = 0$. Show that the formula also holds for $n = 0$ and explain why starting at $n = 0$ does not invalidate the proof.
+**(b)** A different student claims the formula holds for all $n \geq 0$ and starts their base case
+at $n = 0$. Show that the formula also holds for $n = 0$ and explain why starting at $n = 0$ does
+not invalidate the proof.
 
-**(c)** A third student tries to prove that $2^n \gt n^2$ for all $n \geq 1$ by induction. Show that the inductive step fails at $n = 2 \to n = 3$Even though the statement is true for $n = 3$. Find the smallest value of $N$ such that $2^n \gt n^2$ for all $n \geq N$.
+**(c)** A third student tries to prove that $2^n \gt n^2$ for all $n \geq 1$ by induction. Show that
+the inductive step fails at $n = 2 \to n = 3$Even though the statement is true for $n = 3$. Find the
+smallest value of $N$ such that $2^n \gt n^2$ for all $n \geq N$.
 
-[Difficulty: hard. Tests the role of the base case in anchoring the induction, and the subtlety that the inductive step may require $n$ to be sufficiently large.]
+[Difficulty: hard. Tests the role of the base case in anchoring the induction, and the subtlety that
+the inductive step may require $n$ to be sufficiently large.]
 
 **Solution:**
 
 **(a)** Let $P(n)$ be the statement $\sum_{r=1}^{n} r^2 = \frac{n(n+1)(2n+1)}{6}$.
 
-**Base case ($n = 1$):** LHS $= 1^2 = 1$. RHS $= \frac◆LB◆1 \cdot 2 \cdot 3◆RB◆◆LB◆6◆RB◆ = 1$. LHS $=$ RHS. $P(1)$ is true.
+**Base case ($n = 1$):** LHS $= 1^2 = 1$. RHS $= \frac◆LB◆1 \cdot 2 \cdot 3◆RB◆◆LB◆6◆RB◆ = 1$. LHS
+$=$ RHS. $P(1)$ is true.
 
 **Inductive step:** Assume $P(k)$ is true for some $k \geq 1$:
 
@@ -108,11 +121,15 @@ $$= \frac{(k+1)(k+2)(2k+3)}{6} = \frac{(k+1)((k+1)+1)(2(k+1)+1)}{6}$$
 
 This is $P(k+1)$. By induction, $P(n)$ is true for all $n \geq 1$.
 
-**(b)** At $n = 0$: LHS $= \sum_{r=1}^{0} r^2 = 0$ (empty sum). RHS $= \frac◆LB◆0 \cdot 1 \cdot 1◆RB◆◆LB◆6◆RB◆ = 0$. True.
+**(b)** At $n = 0$: LHS $= \sum_{r=1}^{0} r^2 = 0$ (empty sum). RHS
+$= \frac◆LB◆0 \cdot 1 \cdot 1◆RB◆◆LB◆6◆RB◆ = 0$. True.
 
-Starting at $n = 0$ is valid because the inductive step from $P(k)$ to $P(k+1)$ works for $k \geq 0$. The proof establishes the result for all $n \geq 0$Which is a stronger statement than $n \geq 1$. This does not invalidate the proof; it proves a more general result.
+Starting at $n = 0$ is valid because the inductive step from $P(k)$ to $P(k+1)$ works for
+$k \geq 0$. The proof establishes the result for all $n \geq 0$Which is a stronger statement than
+$n \geq 1$. This does not invalidate the proof; it proves a more general result.
 
-**(c)** **Check values:** $2^1 = 2 \gt 1 = 1^2$. True. $2^2 = 4 = 4 = 2^2$. Not strictly greater (equality, not inequality). $2^3 = 8 \gt 9 = 3^2$. False!
+**(c)** **Check values:** $2^1 = 2 \gt 1 = 1^2$. True. $2^2 = 4 = 4 = 2^2$. Not strictly greater
+(equality, not inequality). $2^3 = 8 \gt 9 = 3^2$. False!
 
 So the statement "$2^n \gt n^2$ for all $n \geq 1$" is actually **false** at $n = 3$.
 
@@ -120,9 +137,11 @@ So the statement "$2^n \gt n^2$ for all $n \geq 1$" is actually **false** at $n 
 
 $2^{k+1} = 2 \cdot 2^k \gt 2k^2$ (by the inductive hypothesis).
 
-We need $2k^2 \geq (k+1)^2 = k^2 + 2k + 1$I.e. $k^2 - 2k - 1 \geq 0$I.e. $k \geq 1 + \sqrt{2} \approx 2.41$.
+We need $2k^2 \geq (k+1)^2 = k^2 + 2k + 1$I.e. $k^2 - 2k - 1 \geq 0$I.e.
+$k \geq 1 + \sqrt{2} \approx 2.41$.
 
-So the inductive step works for $k \geq 3$Meaning $2^n \gt n^2$ for all $n \geq 5$ (since we need to verify the base case at $n = 5$Or anchor at $n = 3$ and step forward).
+So the inductive step works for $k \geq 3$Meaning $2^n \gt n^2$ for all $n \geq 5$ (since we need to
+verify the base case at $n = 5$Or anchor at $n = 3$ and step forward).
 
 Wait, let me check: $2^4 = 16 \gt 16$? No, $16 = 16$. Not strictly greater.
 
@@ -146,15 +165,20 @@ For each of the following, state whether the condition is necessary, sufficient,
 
 **(c)** "$a^2 + b^2 = 0$" (where $a, b \in \mathbb{R}$) as a condition for "$a = 0$ and $b = 0$".
 
-**(d)** A student claims: "If a function is differentiable at a point, then it is continuous at that point." State whether this is a necessary condition, a sufficient condition, or both, for continuity.
+**(d)** A student claims: "If a function is differentiable at a point, then it is continuous at that
+point." State whether this is a necessary condition, a sufficient condition, or both, for
+continuity.
 
-**(e)** Prove that "$x^2 = 4$" is necessary but not sufficient for "$x = 2$", and construct a counterexample to show insufficiency.
+**(e)** Prove that "$x^2 = 4$" is necessary but not sufficient for "$x = 2$", and construct a
+counterexample to show insufficiency.
 
-[Difficulty: hard. Tests the fundamental distinction between necessary and sufficient conditions, which students confuse persistently.]
+[Difficulty: hard. Tests the fundamental distinction between necessary and sufficient conditions,
+which students confuse persistently.]
 
 **Solution:**
 
-**(a)** "$x \gt 2$" implies "$x^2 \gt 4$": if $x \gt 2$ then $x^2 \gt 4$. So "$x \gt 2$" is **sufficient** for "$x^2 \gt 4$".
+**(a)** "$x \gt 2$" implies "$x^2 \gt 4$": if $x \gt 2$ then $x^2 \gt 4$. So "$x \gt 2$" is
+**sufficient** for "$x^2 \gt 4$".
 
 However, "$x \gt 2$" is not necessary: $x = -3$ gives $x^2 = 9 \gt 4$But $x \lt 2$.
 
@@ -162,23 +186,29 @@ Answer: **sufficient but not necessary**.
 
 **(b)** If $n$ is prime and $n \neq 2$Then $n$ is odd. But $n = 2$ is prime and even.
 
-So "prime" does not imply "odd" (counterexample: 2). Also, "odd" does not imply "prime" (counterexample: 9).
+So "prime" does not imply "odd" (counterexample: 2). Also, "odd" does not imply "prime"
+(counterexample: 9).
 
 Answer: **neither necessary nor sufficient**.
 
-**(c)** "$a^2 + b^2 = 0$": since $a^2 \geq 0$ and $b^2 \geq 0$The sum is zero only when both are zero. So $a^2 + b^2 = 0 \iff a = 0 \text{ and } b = 0$.
+**(c)** "$a^2 + b^2 = 0$": since $a^2 \geq 0$ and $b^2 \geq 0$The sum is zero only when both are
+zero. So $a^2 + b^2 = 0 \iff a = 0 \text{ and } b = 0$.
 
 Answer: **both necessary and sufficient** (the condition is equivalent).
 
-**(d)** The statement "If differentiable then continuous" means differentiability is **sufficient** for continuity. Equivalently, continuity is **necessary** for differentiability.
+**(d)** The statement "If differentiable then continuous" means differentiability is **sufficient**
+for continuity. Equivalently, continuity is **necessary** for differentiability.
 
-Note: the converse is false (e.g. $f(x) = \lvert x \rvert$ is continuous at $x = 0$ but not differentiable there), so differentiability is not necessary for continuity.
+Note: the converse is false (e.g. $f(x) = \lvert x \rvert$ is continuous at $x = 0$ but not
+differentiable there), so differentiability is not necessary for continuity.
 
 Answer: Differentiability is **sufficient** (but not necessary) for continuity.
 
-**(e)** "$x^2 = 4$" is necessary for "$x = 2$": if $x = 2$ then $x^2 = 4$. (Every $x = 2$ satisfies $x^2 = 4$.)
+**(e)** "$x^2 = 4$" is necessary for "$x = 2$": if $x = 2$ then $x^2 = 4$. (Every $x = 2$ satisfies
+$x^2 = 4$.)
 
-"$x^2 = 4$" is not sufficient for "$x = 2$": the counterexample is $x = -2$Since $(-2)^2 = 4$ but $-2 \neq 2$.
+"$x^2 = 4$" is not sufficient for "$x = 2$": the counterexample is $x = -2$Since $(-2)^2 = 4$ but
+$-2 \neq 2$.
 
 ---
 
@@ -196,11 +226,13 @@ A sequence $(a_n)$ is defined by $a_1 = 2$ and $a_{n+1} = \frac{a_n + 3}{2}$ for
 
 **(b)** Prove by induction that $a_n \leq a_{n+1}$ for all $n \geq 1$.
 
-**(c)** State the limit of the sequence and justify your answer using the monotone convergence theorem.
+**(c)** State the limit of the sequence and justify your answer using the monotone convergence
+theorem.
 
 **(d)** Find $\sum_{r=1}^{n} a_r$ in terms of $n$Giving your answer in its simplest form.
 
-[Difficulty: hard. Combines proof by induction with recurrence relations, boundedness, monotonicity, and series summation.]
+[Difficulty: hard. Combines proof by induction with recurrence relations, boundedness, monotonicity,
+and series summation.]
 
 **Solution:**
 
@@ -226,7 +258,8 @@ By part (a), $a_{k+1} \lt 3$So $3 - a_{k+1} \gt 0$Giving $a_{k+2} - a_{k+1} \gt 
 
 So $a_{k+1} \lt a_{k+2}$. By induction, $a_n \lt a_{n+1}$ for all $n \geq 1$ (strictly increasing).
 
-**(c)** The sequence is strictly increasing (part b) and bounded above by 3 (part a). By the monotone convergence theorem, the sequence converges.
+**(c)** The sequence is strictly increasing (part b) and bounded above by 3 (part a). By the
+monotone convergence theorem, the sequence converges.
 
 Let $L = \lim_{n \to \infty} a_n$. Then $L = \frac{L+3}{2} \implies 2L = L + 3 \implies L = 3$.
 
@@ -244,13 +277,17 @@ $$= 3n - \frac{1 - (1/2)^n}{1 - 1/2} = 3n - 2\left(1 - \frac{1}{2^n}\right) = 3n
 
 **Question:**
 
-**(a)** Prove that $f(x) = x^3$ is injective on $\mathbb{R}$ using two different methods: (i) by algebra, and (ii) by calculus.
+**(a)** Prove that $f(x) = x^3$ is injective on $\mathbb{R}$ using two different methods: (i) by
+algebra, and (ii) by calculus.
 
-**(b)** Prove that $g(x) = x^2$ is NOT injective on $\mathbb{R}$ by providing a specific counterexample.
+**(b)** Prove that $g(x) = x^2$ is NOT injective on $\mathbb{R}$ by providing a specific
+counterexample.
 
-**(c)** Find the largest subset of $\mathbb{R}$ on which $g(x) = x^2$ is injective, and prove your answer.
+**(c)** Find the largest subset of $\mathbb{R}$ on which $g(x) = x^2$ is injective, and prove your
+answer.
 
-[Difficulty: hard. Combines injectivity proofs with algebraic and calculus-based arguments, and domain restriction analysis.]
+[Difficulty: hard. Combines injectivity proofs with algebraic and calculus-based arguments, and
+domain restriction analysis.]
 
 **Solution:**
 
@@ -268,23 +305,31 @@ So $a^2 + ab + b^2 = 0$ only when $a = b = 0$. In all cases, $a = b$.
 
 Therefore $f$ is injective.
 
-**(ii) Calculus proof:** $f'(x) = 3x^2 \geq 0$ for all $x \in \mathbb{R}$With equality only at $x = 0$.
+**(ii) Calculus proof:** $f'(x) = 3x^2 \geq 0$ for all $x \in \mathbb{R}$With equality only at
+$x = 0$.
 
-$f'(x) \geq 0$ means $f$ is non-decreasing. To show strict monotonicity: for any $a \lt b$ with $a \neq 0$$f'(x) = 3x^2 \gt 0$ on $(a, b)$ (since $x = 0$ is a single point), so by the Mean Value Theorem, $f(b) - f(a) = f'(c)(b-a) \gt 0$ for some $c \in (a, b)$.
+$f'(x) \geq 0$ means $f$ is non-decreasing. To show strict monotonicity: for any $a \lt b$ with
+$a \neq 0$$f'(x) = 3x^2 \gt 0$ on $(a, b)$ (since $x = 0$ is a single point), so by the Mean Value
+Theorem, $f(b) - f(a) = f'(c)(b-a) \gt 0$ for some $c \in (a, b)$.
 
 If $a \lt 0 \lt b$: $f(a) = a^3 \lt 0 \lt b^3 = f(b)$.
 
-Therefore $a \lt b \implies f(a) \lt f(b)$ for all $a, b \in \mathbb{R}$So $f$ is strictly increasing and hence injective.
+Therefore $a \lt b \implies f(a) \lt f(b)$ for all $a, b \in \mathbb{R}$So $f$ is strictly
+increasing and hence injective.
 
-**(b)** $g(1) = 1^2 = 1 = (-1)^2 = g(-1)$But $1 \neq -1$. Therefore $g$ is not injective on $\mathbb{R}$.
+**(b)** $g(1) = 1^2 = 1 = (-1)^2 = g(-1)$But $1 \neq -1$. Therefore $g$ is not injective on
+$\mathbb{R}$.
 
 **(c)** Claim: $g(x) = x^2$ is injective on $[0, \infty)$.
 
-**Proof:** If $a, b \geq 0$ and $a^2 = b^2$Then $a^2 - b^2 = (a-b)(a+b) = 0$. Since $a + b \geq 0$We need $a - b = 0$Giving $a = b$.
+**Proof:** If $a, b \geq 0$ and $a^2 = b^2$Then $a^2 - b^2 = (a-b)(a+b) = 0$. Since $a + b \geq 0$We
+need $a - b = 0$Giving $a = b$.
 
 Similarly, $g$ is injective on $(-\infty, 0]$.
 
-**Maximality:** Any domain that contains both a positive and a negative number fails to make $g$ injective (since $g(k) = g(-k)$ for $k \neq 0$). Adding $0$ to either half preserves injectivity. Therefore the largest subsets are $[0, \infty)$ and $(-\infty, 0]$.
+**Maximality:** Any domain that contains both a positive and a negative number fails to make $g$
+injective (since $g(k) = g(-k)$ for $k \neq 0$). Adding $0$ to either half preserves injectivity.
+Therefore the largest subsets are $[0, \infty)$ and $(-\infty, 0]$.
 
 ---
 
@@ -296,9 +341,11 @@ Similarly, $g$ is injective on $(-\infty, 0]$.
 
 **(b)** Prove that $3^{2n+1} + 2^{n+2}$ is divisible by 7 for all $n \geq 0$.
 
-**(c)** A student claims that $n^2 + n + 1$ is prime for all positive integers $n$. Disprove this claim by counterexample, finding the smallest counterexample.
+**(c)** A student claims that $n^2 + n + 1$ is prime for all positive integers $n$. Disprove this
+claim by counterexample, finding the smallest counterexample.
 
-[Difficulty: hard. Combines induction for divisibility with disproof by counterexample, requiring systematic search.]
+[Difficulty: hard. Combines induction for divisibility with disproof by counterexample, requiring
+systematic search.]
 
 **Solution:**
 
@@ -314,13 +361,16 @@ $$(k+1)^3 - (k+1) = k^3 + 3k^2 + 3k + 1 - k - 1 = k^3 + 3k^2 + 2k$$
 
 $$= (k^3 - k) + 3k^2 + 3k = 6m + 3k(k+1)$$
 
-Since $k(k+1)$ is the product of two consecutive integers, one is even, so $k(k+1)$ is divisible by 2. Therefore $3k(k+1)$ is divisible by $3 \times 2 = 6$.
+Since $k(k+1)$ is the product of two consecutive integers, one is even, so $k(k+1)$ is divisible
+by 2. Therefore $3k(k+1)$ is divisible by $3 \times 2 = 6$.
 
 So $(k+1)^3 - (k+1) = 6m + 6p = 6(m+p)$ for some integer $p$. Divisible by 6.
 
 By induction, $n^3 - n$ is divisible by 6 for all $n \geq 1$.
 
-**(Alternative proof:** $n^3 - n = n(n-1)(n+1) = (n-1)n(n+1)$The product of three consecutive integers. Among any three consecutive integers, one is divisible by 3 and at least one is divisible by 2. So the product is divisible by $3 \times 2 = 6$.)
+**(Alternative proof:** $n^3 - n = n(n-1)(n+1) = (n-1)n(n+1)$The product of three consecutive
+integers. Among any three consecutive integers, one is divisible by 3 and at least one is divisible
+by 2. So the product is divisible by $3 \times 2 = 6$.)
 
 **(b)** Let $P(n)$ be "$3^{2n+1} + 2^{n+2}$ is divisible by 7."
 
@@ -340,11 +390,11 @@ Divisible by 7. By induction, $3^{2n+1} + 2^{n+2}$ is divisible by 7 for all $n 
 
 **(c)** Check values:
 
-| $n$ | $n^2 + n + 1$ | Prime? |
-|-----|------|--------|
-| 1 | 3 | Yes |
-| 2 | 7 | Yes |
-| 3 | 13 | Yes |
-| 4 | 21 | No ($21 = 3 \times 7$) |
+| $n$ | $n^2 + n + 1$ | Prime?                 |
+| --- | ------------- | ---------------------- |
+| 1   | 3             | Yes                    |
+| 2   | 7             | Yes                    |
+| 3   | 13            | Yes                    |
+| 4   | 21            | No ($21 = 3 \times 7$) |
 
 The smallest counterexample is $n = 4$: $4^2 + 4 + 1 = 21$Which is not prime.

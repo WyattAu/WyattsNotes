@@ -1,6 +1,8 @@
 ---
 title: Advanced Type System
-description: "Advanced Type System — `@overload` — Multiple Signatures for One Function; Mechanism; Overloads with `@staticmethod` and `@classmethod`; Limitations."
+description:
+  'Advanced Type System — `@overload` — Multiple Signatures for One Function; Mechanism; Overloads
+  with `@staticmethod` and `@classmethod`; Limitations.'
 date: 2026-04-05T00:00:00.000Z
 tags:
   - Python
@@ -8,6 +10,7 @@ categories:
   - Python
 slug: advanced-typing
 ---
+
 ## `@overload` — Multiple Signatures for One Function
 
 Python is dynamically typed: a single function object can be called with any combination of
@@ -84,16 +87,16 @@ Not a function and would confuse the type checker's overload tracking. The type 
 ### Limitations
 
 1. **Runtime erasure:** At runtime, only the implementation exists. You cannot inspect overloads
- programmatically via `__annotations__` or `typing.get_overloads()` (the latter exists in Python
- 3.11+ but is rarely used).
+   programmatically via `__annotations__` or `typing.get_overloads()` (the latter exists in Python
+   3.11+ but is rarely used).
 2. **Type checker only:** `@overload` has zero effect on runtime behavior. If you call a function
- with arguments that match none of the overloads, the code will still execute -- it just means the
- type checker will flag a type error.
+   with arguments that match none of the overloads, the code will still execute -- it just means the
+   type checker will flag a type error.
 3. **No exhaustiveness checking:** The implementation body has no obligation to handle every
- overload case. A missing branch will only surface at runtime as an unhandled case.
+   overload case. A missing branch will only surface at runtime as an unhandled case.
 4. **Overload resolution is based on call-site argument types.** If the argument type is a `Union`
- the type checker attempts to match against each overload's parameter types individually and picks
- the first match. This means the order of overloads matters when signatures overlap.
+   the type checker attempts to match against each overload's parameter types individually and picks
+   the first match. This means the order of overloads matters when signatures overlap.
 
 ## Literal Types
 
@@ -114,9 +117,8 @@ set_verbosity("verbose")  # type error: not in the literal set
 ```
 
 `Literal` accepts strings, bytes, integers, booleans, `None`And enum values. At the type-system
-Level, `Literal["foo"]` is a subtype of `str``Literal[42]` is a subtype of `int`And
-`Literal[True]` is a subtype of `bool`. The type checker treats each literal value as a distinct
-Type.
+Level, `Literal["foo"]` is a subtype of `str``Literal[42]` is a subtype of `int`And `Literal[True]`
+is a subtype of `bool`. The type checker treats each literal value as a distinct Type.
 
 ```python
 from typing import Literal
@@ -176,11 +178,11 @@ query("SELECT * FROM " + "users")         # OK -- literal + literal = LiteralStr
 ### Use Cases
 
 - **Status enums without `Enum`:** When you don't need the full machinery of `enum.Enum``Literal`
- types provide the same safety with less boilerplate.
+  types provide the same safety with less boilerplate.
 - **API versioning:** `def api_call(version: Literal["v1", "v2"]) -> Response` ensures callers pass
- a known version string.
+  a known version string.
 - **Protocol identifiers:** `def connect(protocol: Literal["tcp", "udp", "unix"])` documents the
- valid transport protocols at the type level.
+  valid transport protocols at the type level.
 
 ## TypedDict
 
@@ -366,19 +368,19 @@ def concatenate(*arrays: *tuple[*Ts]) -> tuple[*Ts]:
 ### Use Cases
 
 - **Array/tensor operations:** Libraries like NumPy and JAX benefit from variadic generics because
- array shapes are multi-dimensional tuples of integers. `TypeVarTuple` can express "an
- N-dimensional array" as `Array[*Shape]` where `Shape` is a variadic tuple of integers.
+  array shapes are multi-dimensional tuples of integers. `TypeVarTuple` can express "an
+  N-dimensional array" as `Array[*Shape]` where `Shape` is a variadic tuple of integers.
 - **Matrix operations:** You can express "a matrix of shape (M, N)" without hardcoding the number of
- dimensions.
+  dimensions.
 - **Protocol-level generics:** When defining decorators or middleware that need to preserve the full
- signature of the wrapped function, including the types of all positional arguments.
+  signature of the wrapped function, including the types of all positional arguments.
 
 ### Limitations
 
 - `TypeVarTuple` support varies across type checkers. Mypy added support in mypy 1.0+, pyright
- supports it. Older type checkers will not understand it.
+  supports it. Older type checkers will not understand it.
 - You cannot have more than one `TypeVarTuple` in the same generic parameter list (in most type
- checkers), because unpacking multiple variadic sequences creates ambiguity.
+  checkers), because unpacking multiple variadic sequences creates ambiguity.
 - The runtime behavior is unchanged -- `TypeVarTuple` is purely a type-system construct.
 
 ## ParamSpec
@@ -388,8 +390,8 @@ This is essential for typing decorators that preserve the wrapped function's sig
 
 ### The Problem
 
-Before `ParamSpec`Typing decorators was fundamentally limited. A decorator that wraps a function
-And returns another function would either lose the original signature or require complex `@overload`
+Before `ParamSpec`Typing decorators was fundamentally limited. A decorator that wraps a function And
+returns another function would either lose the original signature or require complex `@overload`
 Chains:
 
 ```python
@@ -459,11 +461,11 @@ Followed by whatever parameters the original function accepted."
 ### Use Cases
 
 - **Decorators:** Any decorator that wraps a function and returns a wrapper. `ParamSpec` ensures the
- type checker knows the wrapper accepts the same arguments as the original.
-- **Higher-order functions:** Functions that accept callbacks, like `map``filter``sorted(key=)`
- or retry decorators.
+  type checker knows the wrapper accepts the same arguments as the original.
+- **Higher-order functions:** Functions that accept callbacks, like `map``filter``sorted(key=)` or
+  retry decorators.
 - **Dependency injection frameworks:** When the framework needs to accept a user-defined function
- and inject additional parameters at call time.
+  and inject additional parameters at call time.
 
 ## TypeGuard and TypeIs
 
@@ -514,12 +516,12 @@ else:
 
 When to use which:
 
-| Property | `TypeGuard` | `TypeIs` |
+| Property                  | `TypeGuard` | `TypeIs` |
 | ------------------------- | ----------- | -------- |
-| Narrows in `True` branch | Yes | Yes |
-| Narrows in `False` branch | No | Yes |
-| Allows widening | Yes | No |
-| Soundness | Trusts you | Checked |
+| Narrows in `True` branch  | Yes         | Yes      |
+| Narrows in `False` branch | No          | Yes      |
+| Allows widening           | Yes         | No       |
+| Soundness                 | Trusts you  | Checked  |
 
 Use `TypeIs` by default when the narrowed type is a subtype of the input. Use `TypeGuard` only when
 You need to widen (e.g., parsing a string into a structured type).
@@ -624,10 +626,10 @@ class Database:
 
 - `db.connection_pool_size` is valid (access on the class).
 - `db.connection_pool_size` is also valid on an instance (Python looks up the attribute on the class
- when it is not found on the instance).
+  when it is not found on the instance).
 - Assigning to `self.connection_pool_size = 20` inside a method would create an instance attribute
- that shadows the class attribute. The type checker will flag this if the field is annotated with
- `ClassVar`.
+  that shadows the class attribute. The type checker will flag this if the field is annotated with
+  `ClassVar`.
 
 `ClassVar` does not create a descriptor or enforce anything at runtime. It is purely a type-system
 Annotation.
@@ -800,8 +802,8 @@ def process(value: str | None) -> str:
     return ""
 ```
 
-After a truthiness check, the type is narrowed to exclude `None`Empty containers, zero, and
-`False`. The exact narrowing depends on the type: for `str | None`Truthiness narrows to `str`. For
+After a truthiness check, the type is narrowed to exclude `None`Empty containers, zero, and `False`.
+The exact narrowing depends on the type: for `str | None`Truthiness narrows to `str`. For
 `list[int] | None`Truthiness narrows to `list[int]`.
 
 **Length checks:**
@@ -825,8 +827,8 @@ def process(value: object) -> int:
 ```
 
 `assert` triggers narrowing just like `if`. Type checkers treat `assert isinstance(x, T)` as a
-Narrowing guard. Note that `assert` can be disabled at runtime with `python -O`So do not rely on
-It for correctness -- only for type narrowing and development-time checks.
+Narrowing guard. Note that `assert` can be disabled at runtime with `python -O`So do not rely on It
+for correctness -- only for type narrowing and development-time checks.
 
 **Literal matching:**
 
@@ -924,14 +926,14 @@ class Shelter(Generic[T]):
         return self._animals[0]
 ```
 
-Inside `Shelter[T]``T` is known to be `Animal` or a subclass, so you can call `.speak()` on any
-`T` value.
+Inside `Shelter[T]``T` is known to be `Animal` or a subclass, so you can call `.speak()` on any `T`
+value.
 
 ### `__class_getitem__`
 
-When you write `Box[int]`Python calls `Box.__class_getitem__(int)`. This is how subscripting a
-Class works at runtime. `Generic[T]` provides the default `__class_getitem__` implementation. You
-Can override it for custom behavior, but this is rarely needed:
+When you write `Box[int]`Python calls `Box.__class_getitem__(int)`. This is how subscripting a Class
+works at runtime. `Generic[T]` provides the default `__class_getitem__` implementation. You Can
+override it for custom behavior, but this is rarely needed:
 
 ```python
 class Box:
@@ -1015,14 +1017,14 @@ Annotations but no implementation.
 ### When They Are Needed
 
 1. **C extensions:** Modules written in C (`.so` / `.pyd` files) have no Python source code to
- annotate. The `.pyi` file is the only way to provide type information.
+   annotate. The `.pyi` file is the only way to provide type information.
 2. **Compiled/generated modules:** Code generated by tools (Protobuf, Thrift, Pydantic models) may
- produce Python files that are not meant to be edited by hand. Stubs provide a stable interface
- layer.
+   produce Python files that are not meant to be edited by hand. Stubs provide a stable interface
+   layer.
 3. **Separating interface from implementation:** In large codebases, you may want to publish type
- information without publishing the implementation. Stubs serve as a public API surface.
+   information without publishing the implementation. Stubs serve as a public API surface.
 4. **Legacy code:** When you cannot modify the source (third-party code, frozen dependencies), stubs
- let you add types without touching the implementation.
+   let you add types without touching the implementation.
 
 ### Discovery
 
@@ -1062,24 +1064,24 @@ def len(obj: bytearray) -> int: ...
 ## Common Pitfalls
 
 1. **Using `Any` as a shortcut.** `Any` disables all type checking for the annotated value. Code
- typed as `Any` can be used in any context without errors. This defeats the purpose of a type
- system. If you genuinely do not know the type, use `Unknown` (pyright) or add a `# type: ignore`
- comment to acknowledge the gap explicitly. `Any` should be a deliberate choice, not a default.
+   typed as `Any` can be used in any context without errors. This defeats the purpose of a type
+   system. If you genuinely do not know the type, use `Unknown` (pyright) or add a `# type: ignore`
+   comment to acknowledge the gap explicitly. `Any` should be a deliberate choice, not a default.
 
 2. **Confusing `Optional[X]` with default arguments.** `Optional[X]` means the value can be `X` or
- `None`. It does not mean the function parameter has a default value. A parameter typed as
- `Optional[str]` with no default still requires an argument -- the caller must explicitly pass
- `None` or a string. Conversely, a parameter with a default value of `None` should be typed as
- `Optional[str]` (or `str | None`) to reflect that the default is `None`.
+   `None`. It does not mean the function parameter has a default value. A parameter typed as
+   `Optional[str]` with no default still requires an argument -- the caller must explicitly pass
+   `None` or a string. Conversely, a parameter with a default value of `None` should be typed as
+   `Optional[str]` (or `str | None`) to reflect that the default is `None`.
 
 3. **Using `Type` instead of `type`.** `typing.Type[X]` and the builtin `type` are different things.
- `type` is a metaclass. `Type[X]` is a type annotation meaning "the class object `X` or a subclass
- thereof." In Python 3.9+, prefer `type[X]` over `typing.Type[X]` for consistency with the
- lowercase convention introduced by PEP 585.
+   `type` is a metaclass. `Type[X]` is a type annotation meaning "the class object `X` or a subclass
+   thereof." In Python 3.9+, prefer `type[X]` over `typing.Type[X]` for consistency with the
+   lowercase convention introduced by PEP 585.
 
 4. **Forgetting that `TypedDict` is structural, not nominal.** Two TypedDicts with the same keys and
- types are interchangeable to the type checker, even if they have different names. This is by
- design (structural subtyping), but it can be surprising:
+   types are interchangeable to the type checker, even if they have different names. This is by
+   design (structural subtyping), but it can be surprising:
 
    ```python
    class User(TypedDict):
@@ -1095,46 +1097,46 @@ def len(obj: bytearray) -> int: ...
    ```
 
 5. **Using `cast()` instead of proper narrowing.** `cast()` is an escape hatch that silences the
- type checker without any runtime verification. Overusing `cast()` means you are fighting the type
- system instead of working with it. Every `cast()` is a potential bug if your assumption about the
- runtime type is wrong. Always try `isinstance` checks first.
+   type checker without any runtime verification. Overusing `cast()` means you are fighting the type
+   system instead of working with it. Every `cast()` is a potential bug if your assumption about the
+   runtime type is wrong. Always try `isinstance` checks first.
 
 6. **Ignoring variance in generic types.** `TypeVar` supports three variance modes: covariant
- (`covariant=True`), contravariant (`contravariant=True`), and invariant (default). Getting
- variance wrong leads to type unsoundness. For example, a `MutableSequence` must be invariant in
- its element type because you can both read from and write to it. Making it covariant would allow
- inserting a `Dog` into a `list[Animal]` that is actually a `list[Cat]`. If you are unsure, use
- invariant (the default).
+   (`covariant=True`), contravariant (`contravariant=True`), and invariant (default). Getting
+   variance wrong leads to type unsoundness. For example, a `MutableSequence` must be invariant in
+   its element type because you can both read from and write to it. Making it covariant would allow
+   inserting a `Dog` into a `list[Animal]` that is actually a `list[Cat]`. If you are unsure, use
+   invariant (the default).
 
 7. **Relying on `from __future__ import annotations` for runtime behavior.** This import changes
- annotation storage to strings. If you use `__annotations__` at runtime to inspect types, you will
- get string representations instead of actual type objects. Always use `typing.get_type_hints()`
- to resolve annotations when `from __future__ import annotations` is active.
+   annotation storage to strings. If you use `__annotations__` at runtime to inspect types, you will
+   get string representations instead of actual type objects. Always use `typing.get_type_hints()`
+   to resolve annotations when `from __future__ import annotations` is active.
 
-8. **Type-checking only the happy path.** If your function returns `int | None`The type checker
- will require you to handle the `None` case before using the value as an `int`. Do not work around
- this with `cast(int, result)` or `assert result is not None` without understanding the
- consequences. Let the type checker force you to handle edge cases -- that is its job.
+8. **Type-checking only the happy path.** If your function returns `int | None`The type checker will
+   require you to handle the `None` case before using the value as an `int`. Do not work around this
+   with `cast(int, result)` or `assert result is not None` without understanding the consequences.
+   Let the type checker force you to handle edge cases -- that is its job.
 
 9. **Mixing `TypedDict` with regular `dict` annotations.** `dict[str, int]` and a TypedDict with
- `str` keys and `int` values are structurally similar, but they are not the same type to all type
- checkers. Some type checkers treat them as compatible, others do not. Be explicit about which you
- mean.
+   `str` keys and `int` values are structurally similar, but they are not the same type to all type
+   checkers. Some type checkers treat them as compatible, others do not. Be explicit about which you
+   mean.
 
 10. **Overload order matters.** Type checkers resolve overloads top-to-bottom, picking the first
- match. If a more general overload appears before a more specific one, the specific overload will
- never be matched. Always order overloads from most specific to most general.
+    match. If a more general overload appears before a more specific one, the specific overload will
+    never be matched. Always order overloads from most specific to most general.
 
 11. **`TypeGuard` vs `TypeIs` confusion.** `TypeGuard` does not narrow in the `False` branch. If you
- write a function that checks `isinstance(x, str)` and return `TypeGuard[str]`The type checker
- will narrow to `str` in the `True` branch but leave it as the original type in the `False`
- branch. Use `TypeIs` when you need narrowing in both branches and the narrowed type is a subtype
- of the input.
+    write a function that checks `isinstance(x, str)` and return `TypeGuard[str]`The type checker
+    will narrow to `str` in the `True` branch but leave it as the original type in the `False`
+    branch. Use `TypeIs` when you need narrowing in both branches and the narrowed type is a subtype
+    of the input.
 
 12. **Generic `TypeVar` without bound.** An unbounded `TypeVar` can be instantiated with any type,
- including `None`. If you write `T = TypeVar("T")` and use `T` as a parameter type, the caller
- can pass `None` unless you explicitly constrain it. Use `bound=` or explicit constraints if the
- type variable should be restricted.
+    including `None`. If you write `T = TypeVar("T")` and use `T` as a parameter type, the caller
+    can pass `None` unless you explicitly constrain it. Use `bound=` or explicit constraints if the
+    type variable should be restricted.
 
 ## Summary
 

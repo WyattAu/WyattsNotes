@@ -1,6 +1,8 @@
 ---
 title: Algorithms
-description: "Algorithms — 1. What Is an Algorithm?; 1.2 Standard Flowchart Symbols; 2.1 Linear Search; 2.2 Binary Search with worked examples and exam-style questions."
+description:
+  'Algorithms — 1. What Is an Algorithm?; 1.2 Standard Flowchart Symbols; 2.1 Linear Search; 2.2
+  Binary Search with worked examples and exam-style questions.'
 date: 2026-04-14
 tags:
   - Computer Science
@@ -9,11 +11,10 @@ categories:
   - Computer Science
 slug: algorithms
 ---
+
 ## Algorithms
 
-:::info
-Board Coverage AQA Paper 1 | Edexcel Paper 1 | OCR J277 Paper 1 | WJEC Unit 2
-:::
+:::info Board Coverage AQA Paper 1 | Edexcel Paper 1 | OCR J277 Paper 1 | WJEC Unit 2 :::
 
 ## 1. What Is an Algorithm?
 
@@ -39,13 +40,13 @@ Specific programming language.
 
 ### 1.2 Standard Flowchart Symbols
 
-| Symbol | Shape | Purpose |
+| Symbol     | Shape                  | Purpose                                |
 | ---------- | ---------------------- | -------------------------------------- |
-| Terminator | Oval/rounded rectangle | Start/Stop |
-| Process | Rectangle | A single action or assignment |
-| Decision | Diamond | A yes/no question or condition |
-| I/O | Parallelogram | Input or output |
-| Connector | Circle | Links to another part of the flowchart |
+| Terminator | Oval/rounded rectangle | Start/Stop                             |
+| Process    | Rectangle              | A single action or assignment          |
+| Decision   | Diamond                | A yes/no question or condition         |
+| I/O        | Parallelogram          | Input or output                        |
+| Connector  | Circle                 | Links to another part of the flowchart |
 
 ### 1.3 Why Algorithms Matter
 
@@ -151,8 +152,8 @@ Step 1: low=0, high=6, mid=3, array[3]=7. Found. Return 3.
 **Worked Example.** Search for 8 in [1, 3, 5, 7, 9, 11, 13].
 
 Step 1: low=0, high=6, mid=3, array[3]=7. $7 \lt 8$So low=4. Step 2: low=4, high=6, mid=5,
-Array[5]=11. $11 \gt 8$So high=4. Step 3: low=4, high=4, mid=4, array[4]=9. $9 \gt 8$So high=3.
-Step 4: low=4, high=3. $4 \gt 3$Loop ends. Return -1 (not found).
+Array[5]=11. $11 \gt 8$So high=4. Step 3: low=4, high=4, mid=4, array[4]=9. $9 \gt 8$So high=3. Step
+4: low=4, high=3. $4 \gt 3$Loop ends. Return -1 (not found).
 
 **Worked Example.** Search for 3 in [1, 3, 5, 7, 9, 11, 13].
 
@@ -182,12 +183,12 @@ print(f"Found at index: {result}")
 
 ### 2.3 Comparing Search Algorithms
 
-| Feature | Linear Search | Binary Search |
+| Feature              | Linear Search | Binary Search |
 | -------------------- | ------------- | ------------- |
-| Data must be sorted? | No | Yes |
-| Best case | $O(1)$ | $O(1)$ |
-| Average case | $O(n)$ | $O(\log n)$ |
-| Worst case | $O(n)$ | $O(\log n)$ |
+| Data must be sorted? | No            | Yes           |
+| Best case            | $O(1)$        | $O(1)$        |
+| Average case         | $O(n)$        | $O(\log n)$   |
+| Worst case           | $O(n)$        | $O(\log n)$   |
 
 **How big is the difference?** For an array of 1,048,576 ($= 2^{20}$) elements:
 
@@ -207,12 +208,12 @@ Discarding either half.
 
 **Proof sketch.** Let the sorted array be $a_0 \le a_1 \le \cdots \le a_{n-1}$. Suppose the target
 $t$ exists at index $k$. At each step, the algorithm maintains the invariant that
-$a_{\mathrm{low{}} \le t \le a_{\mathrm{high{}}$. If $a_{\mathrm{mid{}} \lt t$Then by monotonicity every
-Element at index $\le \mathrm{mid{}$ is also $\lt t$So $k \gt \mathrm{mid{}$ and we safely set
-$\mathrm{low{} = \mathrm{mid{} - 1$. The argument is symmetric for the other case. The loop terminates
-When $\mathrm{low{} \gt
-\mathrm{high{}$, meaning the search space is empty and $T$ does not exist in the
-Array.
+$a_{\mathrm{low{}} \le t \le a_{\mathrm{high{}}$. If $a_{\mathrm{mid{}} \lt t$Then by monotonicity
+every Element at index $\le \mathrm{mid{}$ is also $\lt t$So $k \gt \mathrm{mid{}$ and we safely set
+$\mathrm{low{} = \mathrm{mid{} - 1$. The argument is symmetric for the other case. The loop
+terminates When $\mathrm{low{} \gt
+\mathrm{high{}$, meaning the search space is empty and $T$ does
+not exist in the Array.
 
 ## 3. Sorting Algorithms
 
@@ -376,8 +377,8 @@ FUNCTION merge(left, right):
 
 **Intuition.** Think of sorting a stack of exam papers by marking scheme. You split the stack in
 Half and give each half to a colleague. They each split their stack again, and so on, until each
-Person has one paper ( sorted). Then you merge: the two single-paper stacks are merged into
-A sorted pair, pairs into sorted fours, and so on.
+Person has one paper ( sorted). Then you merge: the two single-paper stacks are merged into A sorted
+pair, pairs into sorted fours, and so on.
 
 **Time complexity:** $O(n \log n)$ in all cases (best, average, worst).
 
@@ -393,13 +394,13 @@ Split: [38, 27] and [43, 3] Split: [38], [27] and [43], [3] Merge: [27, 38] and 
 
 ### 3.4 Comparing Sorts
 
-| Feature | Bubble Sort | Insertion Sort | Merge Sort (Higher) |
+| Feature      | Bubble Sort | Insertion Sort | Merge Sort (Higher)           |
 | ------------ | ----------- | -------------- | ----------------------------- |
-| Best case | $O(n)$ | $O(n)$ | $O(n \log n)$ |
-| Average case | $O(n^2)$ | $O(n^2)$ | $O(n \log n)$ |
-| Worst case | $O(n^2)$ | $O(n^2)$ | $O(n \log n)$ |
-| Stable? | Yes | Yes | Yes |
-| In-place? | Yes | Yes | No (needs $O(n)$ extra space) |
+| Best case    | $O(n)$      | $O(n)$         | $O(n \log n)$                 |
+| Average case | $O(n^2)$    | $O(n^2)$       | $O(n \log n)$                 |
+| Worst case   | $O(n^2)$    | $O(n^2)$       | $O(n \log n)$                 |
+| Stable?      | Yes         | Yes            | Yes                           |
+| In-place?    | Yes         | Yes            | No (needs $O(n)$ extra space) |
 
 **Stable sort:** Equal elements maintain their relative order. Both bubble and insertion sort are
 Stable because they only swap when `array[j] > array[j+1]` (strictly greater), never when equal.
@@ -465,11 +466,11 @@ OUTPUT max
 
 | element | max |
 | ------- | --- |
-| 3 | 3 |
-| 7 | 7 |
-| 2 | 7 |
-| 9 | 9 |
-| 5 | 9 |
+| 3       | 3   |
+| 7       | 7   |
+| 2       | 7   |
+| 9       | 9   |
+| 5       | 9   |
 
 Output: 9
 
@@ -538,13 +539,13 @@ FOR i = 1 TO 5:
 OUTPUT total / count
 ```
 
-| i | num | num > 2 | total | count | Output |
+| i   | num | num > 2 | total | count | Output |
 | --- | --- | ------- | ----- | ----- | ------ |
-| 1 | 3 | Yes | 3 | 1 | |
-| 2 | 1 | No | 3 | 1 | |
-| 3 | 4 | Yes | 7 | 2 | |
-| 4 | 1 | No | 7 | 2 | |
-| 5 | 5 | Yes | 12 | 3 | 4 |
+| 1   | 3   | Yes     | 3     | 1     |        |
+| 2   | 1   | No      | 3     | 1     |        |
+| 3   | 4   | Yes     | 7     | 2     |        |
+| 4   | 1   | No      | 7     | 2     |        |
+| 5   | 5   | Yes     | 12    | 3     | 4      |
 
 Output: 12 / 3 = 4.
 
@@ -557,18 +558,18 @@ FOR i = 0 TO 3:
             SWAP array[j] AND array[j + 1]
 ```
 
-| i | j | array[j] | array[j+1] | Swap? | Array after |
+| i   | j   | array[j] | array[j+1] | Swap? | Array after     |
 | --- | --- | -------- | ---------- | ----- | --------------- |
-| 0 | 0 | 4 | 2 | Yes | [2, 4, 7, 1, 3] |
-| 0 | 1 | 4 | 7 | No | [2, 4, 7, 1, 3] |
-| 0 | 2 | 7 | 1 | Yes | [2, 4, 1, 7, 3] |
-| 0 | 3 | 7 | 3 | Yes | [2, 4, 1, 3, 7] |
-| 1 | 0 | 2 | 4 | No | [2, 4, 1, 3, 7] |
-| 1 | 1 | 4 | 1 | Yes | [2, 1, 4, 3, 7] |
-| 1 | 2 | 4 | 3 | Yes | [2, 1, 3, 4, 7] |
-| 2 | 0 | 2 | 1 | Yes | [1, 2, 3, 4, 7] |
-| 2 | 1 | 2 | 3 | No | [1, 2, 3, 4, 7] |
-| 3 | 0 | 1 | 2 | No | [1, 2, 3, 4, 7] |
+| 0   | 0   | 4        | 2          | Yes   | [2, 4, 7, 1, 3] |
+| 0   | 1   | 4        | 7          | No    | [2, 4, 7, 1, 3] |
+| 0   | 2   | 7        | 1          | Yes   | [2, 4, 1, 7, 3] |
+| 0   | 3   | 7        | 3          | Yes   | [2, 4, 1, 3, 7] |
+| 1   | 0   | 2        | 4          | No    | [2, 4, 1, 3, 7] |
+| 1   | 1   | 4        | 1          | Yes   | [2, 1, 4, 3, 7] |
+| 1   | 2   | 4        | 3          | Yes   | [2, 1, 3, 4, 7] |
+| 2   | 0   | 2        | 1          | Yes   | [1, 2, 3, 4, 7] |
+| 2   | 1   | 2        | 3          | No    | [1, 2, 3, 4, 7] |
+| 3   | 0   | 1        | 2          | No    | [1, 2, 3, 4, 7] |
 
 Final array: [1, 2, 3, 4, 7]
 
@@ -578,13 +579,13 @@ Big-O notation describes how the running time of an algorithm scales with the si
 
 ### 7.1 Common Complexities
 
-| Complexity | Name | Meaning |
+| Complexity    | Name         | Meaning                                                |
 | ------------- | ------------ | ------------------------------------------------------ |
-| $O(1)$ | Constant | Same time regardless of input size |
-| $O(\log n)$ | Logarithmic | Time grows slowly; each step cuts the problem size |
-| $O(n)$ | Linear | Time grows proportionally with input size |
+| $O(1)$        | Constant     | Same time regardless of input size                     |
+| $O(\log n)$   | Logarithmic  | Time grows slowly; each step cuts the problem size     |
+| $O(n)$        | Linear       | Time grows proportionally with input size              |
 | $O(n \log n)$ | Linearithmic | Slightly worse than linear; typical of efficient sorts |
-| $O(n^2)$ | Quadratic | Time grows with the square of input size |
+| $O(n^2)$      | Quadratic    | Time grows with the square of input size               |
 
 ### 7.2 Why Big-O Matters
 
@@ -654,39 +655,39 @@ print(reverse_array(numbers))
 ## Common Pitfalls
 
 - **Using binary search on unsorted data.** The data MUST be sorted for binary search to work.
- Running binary search on unsorted data may return a wrong answer or miss the target entirely.
+  Running binary search on unsorted data may return a wrong answer or miss the target entirely.
 - **Off-by-one errors in loops.** Check whether the loop should go from 0 to $n-1$ or from 1 to $n$.
- A loop from 0 to `length(array) - 1` visits every element; from 0 to `length(array)` would cause
- an index-out-of-bounds error.
+  A loop from 0 to `length(array) - 1` visits every element; from 0 to `length(array)` would cause
+  an index-out-of-bounds error.
 - **Forgetting to update the search bounds correctly** in binary search. If the target is greater
- than the mid value, set low = mid + 1 (not mid). If you set low = mid, and mid equals low, the
- loop may never terminate.
+  than the mid value, set low = mid + 1 (not mid). If you set low = mid, and mid equals low, the
+  loop may never terminate.
 - **Confusing the worst and best case time complexities.** Linear search is $O(1)$ in the best case
- (target is first) and $O(n)$ in the worst case. Always state which case you are analysing.
+  (target is first) and $O(n)$ in the worst case. Always state which case you are analysing.
 - **Not including a termination condition** in algorithms. Every loop must have a condition that
- eventually becomes false. An infinite loop causes the program to hang.
+  eventually becomes false. An infinite loop causes the program to hang.
 - **Confusing decomposition with abstraction.** Decomposition = breaking down into sub-problems.
- Abstraction = simplifying by removing irrelevant detail. Both are part of computational thinking
- but they serve different purposes.
+  Abstraction = simplifying by removing irrelevant detail. Both are part of computational thinking
+  but they serve different purposes.
 - **Assuming bubble sort detects sorted data early without the optimisation.** The basic bubble sort
- always runs all $n-1$ passes regardless of whether the array is already sorted. Only the optimised
- version with a `swapped` flag can terminate early.
+  always runs all $n-1$ passes regardless of whether the array is already sorted. Only the optimised
+  version with a `swapped` flag can terminate early.
 - **Forgetting that merge sort needs extra memory.** Unlike bubble sort and insertion sort, merge
- sort is not in-place. It requires $O(n)$ additional space for the temporary arrays used during
- merging.
+  sort is not in-place. It requires $O(n)$ additional space for the temporary arrays used during
+  merging.
 
 ## Practice Questions
 
 1. Write pseudocode for a linear search that returns the position of a value in an array, or -1 if
- not found.
+   not found.
 
 2. Use a trace table to show how bubble sort sorts the array [4, 2, 7, 1, 3].
 
 3. Explain the difference between linear search and binary search, including when each would be
- appropriate.
+   appropriate.
 
 4. Use a trace table to show how binary search finds the value 6 in the sorted array [2, 4, 6, 8,
- 10, 12, 14].
+   10, 12, 14].
 
 5. Describe the three parts of computational thinking and give an example of each.
 
@@ -703,13 +704,13 @@ print(reverse_array(numbers))
 11. **(Higher Tier)** Explain why merge sort has time complexity $O(n \log n)$.
 
 12. **(Higher Tier)** A sorted array contains 2,000,000 elements. How many comparisons does binary
- search need in the worst case to determine that a value is not present?
+    search need in the worst case to determine that a value is not present?
 
 13. **(Higher Tier)** Write pseudocode for a procedure that checks whether an array is sorted in
- ascending order.
+    ascending order.
 
 14. **(Higher Tier)** Explain the difference between a stable sort and an unstable sort. Why might
- stability matter?
+    stability matter?
 
 ## Summary
 

@@ -1,6 +1,8 @@
 ---
 title: The Itanium Exception ABI
-description: "C++: The Itanium Exception ABI — 1.1 Table-Based Unwinding Model; Alternative Exception Models; 1.2 Searching for Matching Catch Clauses."
+description:
+  'C++: The Itanium Exception ABI — 1.1 Table-Based Unwinding Model; Alternative Exception Models;
+  1.2 Searching for Matching Catch Clauses.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -8,6 +10,7 @@ categories:
   - Cpp
 slug: the-itanium-exception-abi
 ---
+
 # The Itanium Exception ABI
 
 The dominant exception model on all major platforms (GCC, Clang, MSVC on x64) is the **zero-cost
@@ -20,29 +23,27 @@ When an exception is thrown, the runtime:
 
 1. Allocates the exception object (on a dedicated heap or in a pre-allocated buffer).
 2. Copies or moves the thrown expression into that object. The runtime uses a dedicated allocation
- mechanism for exception objects.
+   mechanism for exception objects.
 3. Walks the **call stack** using tables generated at compile time.
 
-Each function that may participate in exception handling has two tables embedded in the binary
-( in the `.eh_frame` / `.gcc_except_table` ELF sections on Linux):
+Each function that may participate in exception handling has two tables embedded in the binary ( in
+the `.eh_frame` / `.gcc_except_table` ELF sections on Linux):
 
-| Table | Purpose |
+| Table                                  | Purpose                                                                                                                                 |
 | -------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| **LSDA** (Language-Specific Data Area) | Describes which PC ranges map to which `try`/`catch` blocks. |
-| **Unwind table** | Lists every call site in the function so the unwinder can determine whether the function has a cleanup (destructor call) at each point. |
+| **LSDA** (Language-Specific Data Area) | Describes which PC ranges map to which `try`/`catch` blocks.                                                                            |
+| **Unwind table**                       | Lists every call site in the function so the unwinder can determine whether the function has a cleanup (destructor call) at each point. |
 
-:::info
-On platforms using the Itanium ABI, **no runtime cost** is incurred for `try` blocks when no
-Exception is thrown. The tables are consulted only during unwinding.
-:::
+:::info On platforms using the Itanium ABI, **no runtime cost** is incurred for `try` blocks when no
+Exception is thrown. The tables are consulted only during unwinding. :::
 
 ### Alternative Exception Models
 
-| Model | Description | Normal-Path Cost | Platforms |
+| Model                       | Description                                                         | Normal-Path Cost            | Platforms                 |
 | :-------------------------- | :------------------------------------------------------------------ | :-------------------------- | :------------------------ |
-| **Table-based (zero-cost)** | Static tables describe handlers; unwinder walks stack at throw time | ~0 instructions | GCC, Clang, MSVC x64 |
-| **Setjmp/Longjmp (SJLJ)** | `setjmp`/`longjmp` at each `try` entry/exit | ~10-20 instructions per try | Embedded, older compilers |
-| **DWARF CFI** | DWARF Call Frame Information used for unwinding | ~0 instructions | GCC/Clang (Linux, BSD) |
+| **Table-based (zero-cost)** | Static tables describe handlers; unwinder walks stack at throw time | ~0 instructions             | GCC, Clang, MSVC x64      |
+| **Setjmp/Longjmp (SJLJ)**   | `setjmp`/`longjmp` at each `try` entry/exit                         | ~10-20 instructions per try | Embedded, older compilers |
+| **DWARF CFI**               | DWARF Call Frame Information used for unwinding                     | ~0 instructions             | GCC/Clang (Linux, BSD)    |
 
 The SJLJ model incurs cost on every `try` entry (saving registers via `setjmp`) and every `try` exit
 (potentially restoring via `longjmp`). This is why modern compilers default to the table-based model
@@ -55,10 +56,12 @@ The search algorithm [N4950 §14.2] proceeds as follows:
 1. The exception object is associated with a `std::type_info` structure describing its dynamic type.
 2. Starting from the throw site, the unwinder examines the LSDA of each frame on the call stack.
 3. For each `catch` clause, the runtime performs an **exception match**:
- - An exact type match.
- - A base-class match (standard derived-to-base conversion).
- - A pointer or reference conversion to `const`.
- - An ellipsis (`catch (...)`) matches everything.
+
+- An exact type match.
+- A base-class match (standard derived-to-base conversion).
+- A pointer or reference conversion to `const`.
+- An ellipsis (`catch (...)`) matches everything.
+
 4. The **first** matching clause in the innermost scope wins.
 5. If no frame contains a matching handler, `std::terminate()` is called [N4950 §14.7].
 
@@ -159,13 +162,13 @@ The unwinder performs the following steps:
 1. The exception object is allocated and initialized.
 2. The unwinder (`_Unwind_RaiseException`) is called.
 3. For each frame on the stack (starting from `inner()`): a. The personality function
- (`__gxx_personality_v0`) is called with the exception object and the frame's context. B. The
- personality function checks the LSDA for a matching `catch` clause. C. If no match, the
- personality function identifies cleanup code (destructor calls for local variables) and the
- unwinder executes those cleanups. D. The frame is popped, and the unwinder moves to the next
- frame.
+   (`__gxx_personality_v0`) is called with the exception object and the frame's context. B. The
+   personality function checks the LSDA for a matching `catch` clause. C. If no match, the
+   personality function identifies cleanup code (destructor calls for local variables) and the
+   unwinder executes those cleanups. D. The frame is popped, and the unwinder moves to the next
+   frame.
 4. When a matching `catch` is found in `main()`The unwinder sets the instruction pointer to the
- catch clause's entry point and transfers control.
+   catch clause's entry point and transfers control.
 
 ```cpp
 #include <iostream>
@@ -231,31 +234,29 @@ Runtime overhead compared to equivalent code without exception handling.
 **Proof:**
 
 1. The compiler generates exception handling information (LSDA and unwind tables) as **static data**
- in read-only sections of the binary (`.eh_frame``.gcc_except_table`). These tables are not
- loaded into registers or cache during normal execution.
+   in read-only sections of the binary (`.eh_frame``.gcc_except_table`). These tables are not loaded
+   into registers or cache during normal execution.
 2. The generated machine code for the normal path contains **no instructions** that reference the
- exception tables. There are no conditional branches to check for pending exceptions, no global
- flags, and no extra register saves.
+   exception tables. There are no conditional branches to check for pending exceptions, no global
+   flags, and no extra register saves.
 3. The only overhead is binary size: the tables add ~5-15% to the binary. This is a one-time cost at
- load time and does not affect runtime instruction count.
+   load time and does not affect runtime instruction count.
 4. Therefore, the instruction count and execution time of the normal path are identical to code
- compiled without exception support.
+   compiled without exception support.
 
 $\square$
 
-:::tip
-If you compile with `-fno-exceptions` (GCC/Clang), `throw` and `try` become compilation
-Errors. This confirms that exception-neutral code has zero overhead in the normal path.
-:::
+:::tip If you compile with `-fno-exceptions` (GCC/Clang), `throw` and `try` become compilation
+Errors. This confirms that exception-neutral code has zero overhead in the normal path. :::
 
 ## 1.5 Performance Comparison: Throw/Catch vs Error Codes
 
-| Metric | Exception (throw path) | Error-code check |
+| Metric           | Exception (throw path)            | Error-code check            |
 | ---------------- | --------------------------------- | --------------------------- |
-| Normal-path cost | ~0 instructions | 1 branch + compare per call |
-| Throw-path cost | ~5-20 $\mu s$ (unwinding + alloc) | N/A |
-| Code size | +LSDA tables (~1-5% of binary) | No overhead |
-| Cognitive cost | Implicit control flow | Explicit, pervasive |
+| Normal-path cost | ~0 instructions                   | 1 branch + compare per call |
+| Throw-path cost  | ~5-20 $\mu s$ (unwinding + alloc) | N/A                         |
+| Code size        | +LSDA tables (~1-5% of binary)    | No overhead                 |
+| Cognitive cost   | Implicit control flow             | Explicit, pervasive         |
 
 ```cpp
 #include <iostream>
@@ -394,10 +395,8 @@ int main() {
 //   caught NetworkError: connection refused
 ```
 
-:::warning
-Never write `throw e;` in a catch clause — this creates a **new copy** of `e` using its
-Static type, slicing the dynamic type. Always use `throw;` to re-throw the original exception.
-:::
+:::warning Never write `throw e;` in a catch clause — this creates a **new copy** of `e` using its
+Static type, slicing the dynamic type. Always use `throw;` to re-throw the original exception. :::
 
 ## 1.7 Cross-Thread Exception Propagation with `std::exception_ptr`
 
@@ -461,12 +460,12 @@ Last `exception_ptr` referencing it is destroyed.
 The LSDA (Language-Specific Data Area) encodes the exception handling information for each function.
 On the Itanium ABI, it uses a compact bytecode format:
 
-| Field | Description |
-| ------------------- | ----------------------------------------------------------------------- |
-| **LPStart** | Base address for landing pad offsets ( the function entry point) |
-| **CallSite Table** | Array of (begin PC, end PC, landing pad, action) entries |
-| **Action Table** | Array of type-filter and next-action offsets for catch clause matching |
-| **Type Info Table** | Array of `std::type_info*` pointers referenced by the action table |
+| Field               | Description                                                            |
+| ------------------- | ---------------------------------------------------------------------- |
+| **LPStart**         | Base address for landing pad offsets ( the function entry point)       |
+| **CallSite Table**  | Array of (begin PC, end PC, landing pad, action) entries               |
+| **Action Table**    | Array of type-filter and next-action offsets for catch clause matching |
+| **Type Info Table** | Array of `std::type_info*` pointers referenced by the action table     |
 
 Each call site entry describes a range of PC values in the function. When the unwinder finds that
 The current PC falls within a call site range, it checks the action table to determine which catch
@@ -484,13 +483,13 @@ Function throws anyway, `std::terminate()` is called immediately without stack u
 ### Performance Benefits of `noexcept`
 
 1. **Eliminates exception table entries:** The compiler can omit the function's LSDA entry, reducing
- binary size.
+   binary size.
 2. **Enables optimizations:** The compiler knows the function cannot throw, so it can omit cleanup
- code for temporaries created in the calling function. This can eliminate branches and reduce
- register pressure.
+   code for temporaries created in the calling function. This can eliminate branches and reduce
+   register pressure.
 3. **Enables `std::move` in containers:** `std::vector::push_back` uses `noexcept` to decide between
- copy and move during reallocation. If the element's move constructor is `noexcept`The vector
- moves elements; otherwise, it copies them.
+   copy and move during reallocation. If the element's move constructor is `noexcept`The vector
+   moves elements; otherwise, it copies them.
 
 ```cpp
 #include <iostream>
@@ -551,11 +550,11 @@ Is `noexcept` only if the element's move constructor is `noexcept`.
 
 The C++ community recognizes three exception safety guarantees [N4950 §14.5]:
 
-| Guarantee | Description | Example |
+| Guarantee    | Description                                                                                                                      | Example                                   |
 | :----------- | :------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------- |
-| **No-throw** | The operation never throws. All resources are managed. Destructors, `swap`Move operations. | `~T()``std::swap` |
-| **Strong** | If the operation fails, the state is rolled back to the pre-operation state (commit-or-rollback). | `std::vector::push_back` (single element) |
-| **Basic** | If the operation fails, the object is in a valid state (all invariants hold), but the state may have changed. No resource leaks. | `std::sort` |
+| **No-throw** | The operation never throws. All resources are managed. Destructors, `swap`Move operations.                                       | `~T()``std::swap`                         |
+| **Strong**   | If the operation fails, the state is rolled back to the pre-operation state (commit-or-rollback).                                | `std::vector::push_back` (single element) |
+| **Basic**    | If the operation fails, the object is in a valid state (all invariants hold), but the state may have changed. No resource leaks. | `std::sort`                               |
 
 ### Code for Each Safety Level
 
@@ -652,10 +651,10 @@ int main() {
 
 ### 3. Memory Overhead of Exception Tables
 
-The LSDA and unwind tables add 5-15% to binary size. In embedded environments with tight
-Flash budgets, this overhead can be significant. Compiling with `-fno-exceptions` eliminates these
-Tables entirely, but also disables all `try`/`catch`/`throw` semantics. On bare-metal targets, you
-May need to provide a custom `__cxa_pure_virtual` and `__cxa_throw` implementation even when using
+The LSDA and unwind tables add 5-15% to binary size. In embedded environments with tight Flash
+budgets, this overhead can be significant. Compiling with `-fno-exceptions` eliminates these Tables
+entirely, but also disables all `try`/`catch`/`throw` semantics. On bare-metal targets, you May need
+to provide a custom `__cxa_pure_virtual` and `__cxa_throw` implementation even when using
 `-fno-exceptions` if linked libraries reference these symbols.
 
 ### 4. Catching by Value vs Reference

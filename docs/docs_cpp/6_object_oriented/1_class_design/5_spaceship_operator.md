@@ -1,6 +1,8 @@
 ---
 title: The Spaceship Operator
-description: "C++: The Spaceship Operator — 5.1 Three-Way Comparison [N4950 §11.4.5.4]; 5.2 Default Comparisons with `= default`; 5.3 Comparison Categories in Detail."
+description:
+  'C++: The Spaceship Operator — 5.1 Three-Way Comparison [N4950 §11.4.5.4]; 5.2 Default Comparisons
+  with `= default`; 5.3 Comparison Categories in Detail.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -8,6 +10,7 @@ categories:
   - Cpp
 slug: spaceship-operator
 ---
+
 # The Spaceship Operator (`<=>`) and Default Comparisons
 
 C++20 introduced the three-way comparison operator `<=>` (the "spaceship operator") as a unified
@@ -19,11 +22,11 @@ Mechanism for defining all relational comparisons in a single declaration. Combi
 C++20 introduced the **spaceship operator** `<=>` as a unified comparison mechanism. It returns one
 Of three comparison category types from `<compare>`:
 
-| Category | Meaning | Total ordering? | Equality substitutable? |
+| Category                | Meaning                                      | Total ordering? | Equality substitutable? |
 | ----------------------- | -------------------------------------------- | :-------------: | :---------------------: |
-| `std::strong_ordering` | Total, with substitutable equality | Yes | Yes |
-| `std::weak_ordering` | Total, but equality may not be substitutable | Yes | No |
-| `std::partial_ordering` | Partial (incomparable values possible) | No | No |
+| `std::strong_ordering`  | Total, with substitutable equality           |       Yes       |           Yes           |
+| `std::weak_ordering`    | Total, but equality may not be substitutable |       Yes       |           No            |
+| `std::partial_ordering` | Partial (incomparable values possible)       |       No        |           No            |
 
 $$
 \texttt{strong\_ordering} \subset \texttt{weak\_ordering} \subset \texttt{partial\_ordering}
@@ -170,11 +173,9 @@ int main() {
 }
 ```
 
-:::warning
-Performance Note The above implementation allocates temporary strings for each
+:::warning Performance Note The above implementation allocates temporary strings for each
 Comparison. For performance-critical code, implement a locale-aware character-by-character
-Comparison that avoids allocation.
-:::
+Comparison that avoids allocation. :::
 
 ## See Also
 
@@ -189,13 +190,13 @@ Synthesized operators use the `<=>` result and `==` for equality.
 
 ### When Synthesis Does Not Occur
 
-| Condition | Synthesized Operators? |
-| :------------------------------------- | :-------------------------------------------------------------- |
-| `= default` returns `strong_ordering` | Yes — all six operators |
-| `= default` returns `weak_ordering` | Yes — all six operators |
-| `= default` returns `partial_ordering` | Yes — all six operators |
-| `operator<=>` is user-defined | Only `!=``<``>``<=``>=` (if `==` is separately defined) |
-| Only `operator==` is defined | `!=` is synthesized, but not ordering operators |
+| Condition                              | Synthesized Operators?                                  |
+| :------------------------------------- | :------------------------------------------------------ |
+| `= default` returns `strong_ordering`  | Yes — all six operators                                 |
+| `= default` returns `weak_ordering`    | Yes — all six operators                                 |
+| `= default` returns `partial_ordering` | Yes — all six operators                                 |
+| `operator<=>` is user-defined          | Only `!=``<``>``<=``>=` (if `==` is separately defined) |
+| Only `operator==` is defined           | `!=` is synthesized, but not ordering operators         |
 
 ```cpp
 #include <compare>
@@ -248,8 +249,8 @@ The three comparison category types form a hierarchy with different guarantees:
 
 ### `std::strong_ordering`
 
-A **total ordering** where equivalent values are fully substitutable. If `a == b`Then
-`f(a) == f(b)` for all operations `f`.
+A **total ordering** where equivalent values are fully substitutable. If `a == b`Then `f(a) == f(b)`
+for all operations `f`.
 
 **Use when:** The type has natural, unambiguous ordering (integers, strings, version numbers).
 
@@ -517,15 +518,15 @@ int main() {
 ## Common Pitfalls
 
 - **Defaulting `<=>` on types with `bool` and floating-point members.** `bool` uses
- `strong_ordering`But `double` uses `partial_ordering`. When mixed in a struct, the defaulted
- `<=>` returns `partial_ordering` (the weakest category among the members).
+  `strong_ordering`But `double` uses `partial_ordering`. When mixed in a struct, the defaulted `<=>`
+  returns `partial_ordering` (the weakest category among the members).
 - **Using `<=>` with `std::optional` members.** `std::optional` has a defaulted `<=>` that returns
- `partial_ordering` when the value type has `partial_ordering`. Be aware of the propagation.
+  `partial_ordering` when the value type has `partial_ordering`. Be aware of the propagation.
 - **Defining `operator==` separately from `<=>`.** If you define both, they must agree. If they
- disagree, `std::set` and `std::map` will behave inconsistently.
+  disagree, `std::set` and `std::map` will behave inconsistently.
 - **Forgetting `<compare>` header.** `std::strong_ordering``std::weak_ordering`And
- `std::partial_ordering` are defined in `<compare>`. Forgetting to include it causes compilation
- errors.
+  `std::partial_ordering` are defined in `<compare>`. Forgetting to include it causes compilation
+  errors.
 
 :::
 

@@ -1,6 +1,8 @@
 ---
 title: Statistics
-description: "Statistics — 1. Data Collection; 1.1 Types of Data; 1.2 Sampling Methods; 1.3 Bias in Data Collection with worked examples and exam-style questions."
+description:
+  'Statistics — 1. Data Collection; 1.1 Types of Data; 1.2 Sampling Methods; 1.3 Bias in Data
+  Collection with worked examples and exam-style questions.'
 date: 2026-04-14
 tags:
   - Maths
@@ -9,12 +11,11 @@ categories:
   - Maths
 slug: statistics
 ---
+
 ## Statistics
 
-:::info
-Board Coverage AQA Paper 2 | Edexcel Paper 2 | OCR Paper 3 (Higher) / Paper 6 (Foundation) |
-WJEC Unit 2
-:::
+:::info Board Coverage AQA Paper 2 | Edexcel Paper 2 | OCR Paper 3 (Higher) / Paper 6 (Foundation) |
+WJEC Unit 2 :::
 
 ## 1. Data Collection
 
@@ -30,16 +31,16 @@ Car).
 
 ### 1.2 Sampling Methods
 
-| Method | Description | Advantage | Disadvantage |
+| Method        | Description                          | Advantage             | Disadvantage                 |
 | ------------- | ------------------------------------ | --------------------- | ---------------------------- |
-| Simple random | Every member has equal chance | Unbiased | May not represent subgroups |
-| Systematic | Every $k$-th member selected | Easy to implement | Can coincide with a pattern |
-| Stratified | Sample proportionally from subgroups | Represents all groups | Requires knowledge of groups |
-| Quota | Interviewer fills quotas | Quick | Not truly random |
-| Opportunity | Whoever is available | Convenient | Highly biased |
+| Simple random | Every member has equal chance        | Unbiased              | May not represent subgroups  |
+| Systematic    | Every $k$-th member selected         | Easy to implement     | Can coincide with a pattern  |
+| Stratified    | Sample proportionally from subgroups | Represents all groups | Requires knowledge of groups |
+| Quota         | Interviewer fills quotas             | Quick                 | Not truly random             |
+| Opportunity   | Whoever is available                 | Convenient            | Highly biased                |
 
-**Stratified sampling formula.** If a population of size $N$ contains a subgroup of size $n$Then
-The sample from that subgroup should be:
+**Stratified sampling formula.** If a population of size $N$ contains a subgroup of size $n$Then The
+sample from that subgroup should be:
 
 $$\mathrm{sample size{} = \frac{n}{N} \times \mathrm{total sample size{}$$
 
@@ -66,8 +67,7 @@ A sample is **biased** if it does not fairly represent the population. Sources o
 - Non-response (voluntary response bias)
 - Using convenience sampling
 
-:::warning
-A large sample size does not fix a biased sampling method. A sample of 10000 taken from
+:::warning A large sample size does not fix a biased sampling method. A sample of 10000 taken from
 Only one school is still biased if you want to draw conclusions about all schools in the country.
 :::
 
@@ -75,11 +75,11 @@ Only one school is still biased if you want to draw conclusions about all school
 
 ### 2.1 Mean, Median, and Mode
 
-| Measure | Definition | When to use |
+| Measure | Definition                        | When to use                         |
 | ------- | --------------------------------- | ----------------------------------- |
-| Mean | $\bar{x} = \frac{\sum x}{n}$ | Uses all data; affected by outliers |
-| Median | Middle value when data is ordered | Not affected by outliers |
-| Mode | Most frequent value | Useful for categorical data |
+| Mean    | $\bar{x} = \frac{\sum x}{n}$      | Uses all data; affected by outliers |
+| Median  | Middle value when data is ordered | Not affected by outliers            |
+| Mode    | Most frequent value               | Useful for categorical data         |
 
 **Worked Example.** Find the mean, median, and mode of: $3, 5, 2, 7, 5, 8, 5, 1, 9, 4$.
 
@@ -99,12 +99,12 @@ $$\bar{x} = \frac{\sum (f \times x)}{\sum f}$$
 
 | Score $x$ | Frequency $f$ | $f \times x$ |
 | --------- | ------------- | ------------ |
-| 1 | 4 | 4 |
-| 2 | 7 | 14 |
-| 3 | 12 | 36 |
-| 4 | 9 | 36 |
-| 5 | 3 | 15 |
-| **Total** | **35** | **105** |
+| 1         | 4             | 4            |
+| 2         | 7             | 14           |
+| 3         | 12            | 36           |
+| 4         | 9             | 36           |
+| 5         | 3             | 15           |
+| **Total** | **35**        | **105**      |
 
 $$\bar{x} = \frac{105}{35} = 3$$
 
@@ -114,14 +114,14 @@ For grouped data, use the **midpoint** of each class as an estimate for $x$.
 
 **Worked Example.**
 
-| Height (cm) | Frequency $f$ | Midpoint $x$ | $f \times x$ |
+| Height (cm)          | Frequency $f$ | Midpoint $x$ | $f \times x$ |
 | -------------------- | ------------- | ------------ | ------------ |
-| $140 \leq h \lt 150$ | 5 | 145 | 725 |
-| $150 \leq h \lt 160$ | 12 | 155 | 1860 |
-| $160 \leq h \lt 170$ | 18 | 165 | 2970 |
-| $170 \leq h \lt 180$ | 10 | 175 | 1750 |
-| $180 \leq h \lt 190$ | 5 | 185 | 925 |
-| **Total** | **50** | | **8230** |
+| $140 \leq h \lt 150$ | 5             | 145          | 725          |
+| $150 \leq h \lt 160$ | 12            | 155          | 1860         |
+| $160 \leq h \lt 170$ | 18            | 165          | 2970         |
+| $170 \leq h \lt 180$ | 10            | 175          | 1750         |
+| $180 \leq h \lt 190$ | 5             | 185          | 925          |
+| **Total**            | **50**        |              | **8230**     |
 
 $$\mathrm{Estimated mean{} = \frac{8230}{50} = 164.6 \mathrm{ cm{}$$
 
@@ -213,14 +213,14 @@ Since all values are between $-9.125$ and $35.875$There are no outliers.
 
 ### 4.1 Charts and Diagrams
 
-| Chart | Best for |
+| Chart                | Best for                                  |
 | -------------------- | ----------------------------------------- |
-| Bar chart | Comparing categories |
-| Pie chart | Showing proportions |
-| Pictogram | Simple visual comparison |
-| Scatter graph | Relationship between two variables |
-| Histogram | Continuous data with unequal class widths |
-| Cumulative frequency | Finding medians and quartiles |
+| Bar chart            | Comparing categories                      |
+| Pie chart            | Showing proportions                       |
+| Pictogram            | Simple visual comparison                  |
+| Scatter graph        | Relationship between two variables        |
+| Histogram            | Continuous data with unequal class widths |
+| Cumulative frequency | Finding medians and quartiles             |
 
 ### 4.2 Histograms
 
@@ -230,12 +230,12 @@ $$\mathrm{Frequency density{} = \frac{\mathrm{frequency{}}{\mathrm{class width{}
 
 **Worked Example.**
 
-| Distance (km) | Frequency | Class width | Frequency density |
+| Distance (km)      | Frequency | Class width | Frequency density |
 | ------------------ | --------- | ----------- | ----------------- |
-| $0 \leq d \lt 10$ | 15 | 10 | 1.5 |
-| $10 \leq d \lt 25$ | 30 | 15 | 2.0 |
-| $25 \leq d \lt 40$ | 45 | 15 | 3.0 |
-| $40 \leq d \lt 60$ | 20 | 20 | 1.0 |
+| $0 \leq d \lt 10$  | 15        | 10          | 1.5               |
+| $10 \leq d \lt 25$ | 30        | 15          | 2.0               |
+| $25 \leq d \lt 40$ | 45        | 15          | 3.0               |
+| $40 \leq d \lt 60$ | 20        | 20          | 1.0               |
 
 The bar heights (frequency densities) are 1.5, 2.0, 3.0, and 1.0 respectively.
 
@@ -275,20 +275,18 @@ From the ogive, the median falls in the $25 \leq d \lt 40$ class.
 
 **Correlation** describes the relationship between two variables:
 
-| Type | Description |
+| Type           | Description                             |
 | -------------- | --------------------------------------- |
-| Positive | As $x$ increases, $y$ tends to increase |
-| Negative | As $x$ increases, $y$ tends to decrease |
-| No correlation | No apparent relationship |
+| Positive       | As $x$ increases, $y$ tends to increase |
+| Negative       | As $x$ increases, $y$ tends to decrease |
+| No correlation | No apparent relationship                |
 
 **Line of best fit:** A straight line drawn through the data that approximately follows the trend.
 It should pass through the mean point $(\bar{x}, \bar{y})$ and have roughly equal numbers of points
 On each side.
 
-:::warning
-Correlation does not imply causation. Two variables may be correlated due to a third
-Factor, or by coincidence.
-:::
+:::warning Correlation does not imply causation. Two variables may be correlated due to a third
+Factor, or by coincidence. :::
 
 ### 4.5 Interpolation and Extrapolation
 
@@ -406,12 +404,12 @@ $$P(B \mid D) = \frac{P(D \mid B) \cdot P(B)}{P(D)} = \frac{0.03 \times 0.35}{0.
 
 A Venn diagram with two sets $A$ and $B$ has four regions:
 
-| Region | Notation | Description |
+| Region     | Notation      | Description           |
 | ---------- | ------------- | --------------------- |
-| Left only | $A \cap B'$ | In $A$ but not in $B$ |
-| Right only | $A' \cap B$ | In $B$ but not in $A$ |
-| Overlap | $A \cap B$ | In both |
-| Outside | $(A \cup B)'$ | In neither |
+| Left only  | $A \cap B'$   | In $A$ but not in $B$ |
+| Right only | $A' \cap B$   | In $B$ but not in $A$ |
+| Overlap    | $A \cap B$    | In both               |
+| Outside    | $(A \cup B)'$ | In neither            |
 
 **Worked Example.** In a survey of 100 people, 45 like tea, 35 like coffee, and 15 like both. A
 Person is chosen at random. Find the probability they like neither.
@@ -498,18 +496,18 @@ And the overall spread.
 ## Common Pitfalls
 
 - **Using frequency instead of frequency density** in histograms. The bar height is frequency
- density, not frequency.
+  density, not frequency.
 - **Forgetting that cumulative frequency uses upper class boundaries**, not midpoints.
 - **Assuming correlation means causation.** This is one of the most common errors in statistics.
 - **Not subtracting $P(A \cap B)$** in the addition rule for non-mutually exclusive events.
 - **Confusing "with replacement" and "without replacement"** in probability questions. This changes
- the probabilities on the second draw.
+  the probabilities on the second draw.
 - **Counting the overlap twice** when adding probabilities from a Venn diagram.
 - **Using the wrong quartile formula.** For $n$ data points, $Q_1$ is at position $\frac{n+1}{4}$
- not $\frac{n}{4}$.
+  not $\frac{n}{4}$.
 - **Forgetting that the area under a histogram bar equals the frequency**, not the height.
 - **Misinterpreting the median from grouped data.** The estimated median uses linear interpolation
- within the median class, not just the midpoint.
+  within the median class, not just the midpoint.
 
 ### 9.1 Independence vs. Mutual Exclusivity
 
@@ -517,7 +515,7 @@ A very common confusion is between independent events and mutually exclusive eve
 Different concepts:
 
 - **Independent events:** The occurrence of one does not affect the probability of the other.
- $P(A \cap B) = P(A) \times P(B)$.
+  $P(A \cap B) = P(A) \times P(B)$.
 - **Mutually exclusive events:** They cannot occur at the same time. $P(A \cap B) = 0$.
 
 In fact, if two events have positive probability and are mutually exclusive, they cannot be
@@ -534,9 +532,9 @@ The standard deviation uses squared differences from the mean rather than absolu
 Two key reasons:
 
 1. **Mathematical convenience.** Squared differences are differentiable everywhere, enabling the use
- of calculus. Absolute values have a "corner" at zero.
+   of calculus. Absolute values have a "corner" at zero.
 2. **Additivity.** The variance of a sum of independent random variables equals the sum of their
- variances. This does not hold for mean absolute deviation.
+   variances. This does not hold for mean absolute deviation.
 
 ### 9.3 Effect of Coding on Statistical Measures
 
@@ -545,7 +543,7 @@ When data is transformed by a linear coding $y = ax + b$:
 - The new mean is $\bar{y} = a\bar{x} + b$.
 - The new standard deviation is $s_y = |a| \cdot s_x$.
 - Adding a constant $b$ shifts the data but does not change the spread. Multiplying by $a$ scales
- the spread.
+  the spread.
 
 **Worked Example.** Data has mean 50 and standard deviation 8. After coding $y = \frac{x - 50}{8}$:
 $\bar{y} = \frac{50 - 50}{8} = 0$ and $s_y = \frac{1}{8} \times 8 = 1$.
@@ -603,11 +601,11 @@ Variables.
 
 **Types of correlation:**
 
-| Correlation | Description |
+| Correlation | Description                                    |
 | ----------- | ---------------------------------------------- |
-| Positive | As one variable increases, so does the other |
-| Negative | As one variable increases, the other decreases |
-| None | No visible linear pattern |
+| Positive    | As one variable increases, so does the other   |
+| Negative    | As one variable increases, the other decreases |
+| None        | No visible linear pattern                      |
 
 The **line of best fit** is drawn by eye so that it passes through the middle of the data, with
 Roughly equal numbers of points on each side. It can be used to make predictions:
@@ -615,10 +613,8 @@ Roughly equal numbers of points on each side. It can be used to make predictions
 - **Interpolation:** Predicting within the range of the data (reliable).
 - **Extrapolation:** Predicting outside the range of the data (unreliable).
 
-:::warning
-Never extrapolate far beyond the data range. The relationship may not hold outside the
-Observed values.
-:::
+:::warning Never extrapolate far beyond the data range. The relationship may not hold outside the
+Observed values. :::
 
 ### 9.7 Frequency Polygons
 
@@ -630,19 +626,19 @@ The area under a frequency polygon equals the total frequency (just like a histo
 ## Practice Questions
 
 1. The mean of six numbers is 12. When one number is removed, the mean of the remaining five is 10.
- Find the removed number.
+   Find the removed number.
 
 2. A grouped frequency table has classes $0 \leq x \lt 20$$20 \leq x \lt 40$$40 \leq x \lt 60$
- $60 \leq x \lt 80$. Explain why an estimated mean calculated from this table is only an
- approximation.
+   $60 \leq x \lt 80$. Explain why an estimated mean calculated from this table is only an
+   approximation.
 
 3. Draw a box plot for the data: $3, 5, 6, 8, 9, 11, 14, 15, 22, 35$. Identify any outliers.
 
 4. A bag contains 4 green and 6 yellow counters. Three counters are drawn without replacement. Find
- the probability that all three are the same colour.
+   the probability that all three are the same colour.
 
 5. In a survey, 60% of people like tea, 40% like coffee, and 25% like both. A person is chosen at
- random. Given that they like tea, find the probability that they also like coffee.
+   random. Given that they like tea, find the probability that they also like coffee.
 
 6. Calculate the standard deviation of the following data: $5, 7, 3, 9, 6, 4, 8$.
 
@@ -650,78 +646,78 @@ The area under a frequency polygon equals the total frequency (just like a histo
 
 8. A histogram has a bar of width 4 and height 3.5. What frequency does this bar represent?
 
-9. Two events $A$ and $B$ are such that $P(A) = 0.6$$P(B) = 0.5$And $P(A \cup B) = 0.8$. Are $A$
- and $B$ independent? Justify your answer.
+9. Two events $A$ and $B$ are such that $P(A) = 0.6$$P(B) = 0.5$And $P(A \cup B) = 0.8$. Are $A$ and
+   $B$ independent? Justify your answer.
 
 10. The heights of 100 students are summarised in a cumulative frequency table. Explain how you
- would estimate the interquartile range from this table.
+    would estimate the interquartile range from this table.
 
-11. A biased dice has $P(\mathrm{even{}) = 0.6$ and $P(\mathrm{odd{}) = 0.4$. It is rolled twice. Find the
- probability that the sum is greater than 8.
+11. A biased dice has $P(\mathrm{even{}) = 0.6$ and $P(\mathrm{odd{}) = 0.4$. It is rolled twice.
+    Find the probability that the sum is greater than 8.
 
 12. Explain the difference between a histogram and a bar chart, and when each is most appropriate.
 
 13. A set of data has $\bar{x} = 20$ and $\sigma = 4$. If every value is increased by 5, find the
- new mean and standard deviation.
+    new mean and standard deviation.
 
 14. Two classes took the same test. Class A: median 55, IQR 20. Class B: median 52, IQR 30. Compare
- the performance of the two classes.
+    the performance of the two classes.
 
-15. In a Venn diagram for events $A$ and $B$$P(A) = 0.7$$P(B) = 0.5$And $P(A \mid B) = 0.6$.
- Find $P(A \cap B)$ and $P(A \cup B)$.
+15. In a Venn diagram for events $A$ and $B$$P(A) = 0.7$$P(B) = 0.5$And $P(A \mid B) = 0.6$. Find
+    $P(A \cap B)$ and $P(A \cup B)$.
 
 16. A fair coin is tossed 5 times. Find the probability of getting at least 3 heads.
 
 17. The mean height of 8 students is 162 cm. When a ninth student joins, the mean becomes 163 cm.
- Find the height of the ninth student.
+    Find the height of the ninth student.
 
 18. From a histogram, the first three bars have frequency densities 2, 4, and 3 with class widths 5,
- 5, and 10. Estimate the total frequency and the mean.
+    5, and 10. Estimate the total frequency and the mean.
 
 19. A bag contains $n$ red and $n$ blue balls. Two balls are drawn at random without replacement.
- Show that the probability of drawing two balls of the same colour is $\frac{n - 1}{2n - 1}$.
+    Show that the probability of drawing two balls of the same colour is $\frac{n - 1}{2n - 1}$.
 
 20. Explain why the standard deviation is always non-negative, and state when it equals zero.
 
 ### Extended Practice (Higher Tier)
 
 21. The probability that it rains on any given day is 0.3. Find the probability that it rains on
- exactly 2 out of the next 5 days.
+    exactly 2 out of the next 5 days.
 
 22. Two events $A$ and $B$ are mutually exclusive. If $P(A) = 0.35$ and $P(A \cup B) = 0.65$Find
- $P(B)$ and $P(A \cap B)$.
+    $P(B)$ and $P(A \cap B)$.
 
 23. A set of data has a mean of 50 and a standard deviation of 8. After applying the coding
- $y = \frac{x - 50}{8}$Find the new mean and standard deviation.
+    $y = \frac{x - 50}{8}$Find the new mean and standard deviation.
 
 24. The table below shows the distribution of exam scores for a class of 40 students:
 
- | Score range | Frequency |
- | ------------------ | --------- |
- | $0 \le s \lt 20$ | 3 |
- | $20 \le s \lt 40$ | 8 |
- | $40 \le s \lt 60$ | 14 |
- | $60 \le s \lt 80$ | 10 |
- | $80 \le s \lt 100$ | 5 |
+| Score range        | Frequency |
+| ------------------ | --------- |
+| $0 \le s \lt 20$   | 3         |
+| $20 \le s \lt 40$  | 8         |
+| $40 \le s \lt 60$  | 14        |
+| $60 \le s \lt 80$  | 10        |
+| $80 \le s \lt 100$ | 5         |
 
- Draw a cumulative frequency curve and estimate the median and interquartile range.
+Draw a cumulative frequency curve and estimate the median and interquartile range.
 
 25. A bag contains 3 red, 5 blue, and 2 green marbles. Three marbles are drawn at random without
- replacement. Find the probability that exactly two are the same colour.
+    replacement. Find the probability that exactly two are the same colour.
 
 26. Explain why the mean is affected by outliers but the median is not. Use the data set
- $2, 3, 4, 5, 100$ to illustrate your answer.
+    $2, 3, 4, 5, 100$ to illustrate your answer.
 
 27. A fair spinner has the numbers 1, 2, 3, 4. It is spun twice. Find the probability that the
- product of the two numbers is even.
+    product of the two numbers is even.
 
 28. The standard deviation of a data set is zero. What does this tell you about the data?
 
 29. Two classes sit the same exam. Class A has 20 students with mean 65 and standard deviation 8.
- Class B has 30 students with mean 70 and standard deviation 10. Find the overall mean.
+    Class B has 30 students with mean 70 and standard deviation 10. Find the overall mean.
 
 30. A card is drawn from a standard deck of 52 cards. Find the probability that it is a heart or a
- face card (or both).
+    face card (or both).
 
 ## Summary
 

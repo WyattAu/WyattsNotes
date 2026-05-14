@@ -1,10 +1,12 @@
 ---
 title: Current Electricity
 tags:
-- IB
-- Physics
+  - IB
+  - Physics
 slug: current-electricity
-description: "Rigorous IB physics notes covering Current Electricity. Includes definitions, derivations, worked examples, and exam-style problems."
+description:
+  'Rigorous IB physics notes covering Current Electricity. Includes definitions, derivations, worked
+  examples, and exam-style problems.'
 ---
 
 ## 1. Electric Fields
@@ -155,8 +157,7 @@ Where $L$ is the length of the plates.
 
 :::tip[Electron vs Proton Deflection] For the same field and entry speed, a proton is deflected
 $m_p/m_e \approx 1836$ times less than an electron. The direction of deflection is opposite for
-Opposite charges.
-:::
+Opposite charges. :::
 
 <details>
 <summary>Worked Example: Electron Deflection Between Parallel Plates</summary>
@@ -254,8 +255,7 @@ V_d = \frac{I}`\{nAe}` = \frac{1.0}{(8.5 \times 10^{28})(10^{-6})(1.6 \times 10^
 $$
 
 This is extraordinarily slow. The signal (the electric field) propagates at a significant fraction
-Of $c$But the electrons themselves crawl.
-:::
+Of $c$But the electrons themselves crawl. :::
 
 <details>
 <summary>Worked Example: Drift Velocity in Aluminium</summary>
@@ -307,8 +307,8 @@ $$
 
 SI unit: volt ($\mathrm{V}$), where $1\mathrm{ V} = 1\mathrm{ J C}^{-1}$.
 
-**Electromotive force** ($\varepsilon$Or emf) is the energy converted from other forms to
-Electrical energy per unit charge by a source:
+**Electromotive force** ($\varepsilon$Or emf) is the energy converted from other forms to Electrical
+energy per unit charge by a source:
 
 $$
 \varepsilon = \frac{W}{Q}
@@ -348,14 +348,13 @@ $$
 Where $L$ is the length and $A$ is the cross-sectional area. The SI unit of resistivity is
 $\Omega\,\mathrm{m}$.
 
-The inverse quantity is conductivity: $\sigma = 1/\rho$With SI unit $\mathrm{S m}^{-1}$ (siemens
-Per metre).
+The inverse quantity is conductivity: $\sigma = 1/\rho$With SI unit $\mathrm{S m}^{-1}$ (siemens Per
+metre).
 
 :::info[Data Booklet Resistivity Values] Copper:
 $\rho \approx 1.7 \times 10^{-8}\,\Omega\,\mathrm{m}$. Nichrome (alloy):
 $\rho \approx 1.1 \times 10^{-6}\,\Omega\,\mathrm{m}$. Semiconductors: $\rho$ spans many orders of
-Magnitude.
-:::
+Magnitude. :::
 
 ### 3.3 Factors Affecting Resistance
 
@@ -558,8 +557,7 @@ And potential drops across resistors are negative.
 
 Consider a circuit with two cells and three resistors. Cell 1 has emf
 $\varepsilon_1 = 12\mathrm{ V}$ and cell 2 has emf $\varepsilon_2 = 6\mathrm{ V}$ (opposing). The
-Resistors are $R_1 = 4\,\Omega$$R_2 = 6\,\Omega$And $R_3 = 2\,\Omega$All in series with the
-Cells.
+Resistors are $R_1 = 4\,\Omega$$R_2 = 6\,\Omega$And $R_3 = 2\,\Omega$All in series with the Cells.
 
 Applying KVL around the single loop (travelling clockwise):
 
@@ -579,9 +577,9 @@ $$
 I = 0.50\mathrm{ A}
 $$
 
-The p.d. Across each resistor: $V_1 = 2.0\mathrm{ V}$$V_2 = 3.0\mathrm{ V}$
-$V_3 = 1.0\mathrm{ V}$. These sum to $6\mathrm{ V}$Which equals the net emf of
-$12 - 6 = 6\mathrm{ V}$Confirming energy conservation.
+The p.d. Across each resistor: $V_1 = 2.0\mathrm{ V}$$V_2 = 3.0\mathrm{ V}$ $V_3 = 1.0\mathrm{ V}$.
+These sum to $6\mathrm{ V}$Which equals the net emf of $12 - 6 = 6\mathrm{ V}$Confirming energy
+conservation.
 
 </details>
 
@@ -611,10 +609,10 @@ $V_{\mathrm{in}}$ drops across $R_2$And $V_{\mathrm{out}}$ increases.
 <details>
 <summary>Worked Example: Potential Divider with Thermistor</summary>
 
-A potential divider consists of a $10\,\mathrm{k}\Omega$ fixed resistor ($R_1$) and an NTC thermistor
-($R_2$) connected across a $9.0\,\mathrm{V}$ supply. The output is measured across the thermistor. At
-$20^\circ\mathrm{C}$The thermistor has resistance $5.0\,\mathrm{k}\Omega$; at $60^\circ\mathrm{C}$
-Its resistance is $1.0\,\mathrm{k}\Omega$.
+A potential divider consists of a $10\,\mathrm{k}\Omega$ fixed resistor ($R_1$) and an NTC
+thermistor ($R_2$) connected across a $9.0\,\mathrm{V}$ supply. The output is measured across the
+thermistor. At $20^\circ\mathrm{C}$The thermistor has resistance $5.0\,\mathrm{k}\Omega$; at
+$60^\circ\mathrm{C}$ Its resistance is $1.0\,\mathrm{k}\Omega$.
 
 **Find the output voltage at each temperature.**
 
@@ -653,8 +651,8 @@ The sensitivity of the bridge is greatest when all four arms have similar resist
 <details>
 <summary>Worked Example: Wheatstone Bridge</summary>
 
-A Wheatstone bridge has $R_1 = 100\,\Omega$$R_2 = 200\,\Omega$And $R_3 = 150\,\Omega$. The
-Unknown resistor $R_x$ is in the fourth arm. The galvanometer reads zero.
+A Wheatstone bridge has $R_1 = 100\,\Omega$$R_2 = 200\,\Omega$And $R_3 = 150\,\Omega$. The Unknown
+resistor $R_x$ is in the fourth arm. The galvanometer reads zero.
 
 At balance:
 
@@ -783,8 +781,7 @@ $$
 
 :::warning[Efficiency at Maximum Power] At $R_L = r$The efficiency is only 50% (half the power is
 Dissipated in the internal resistance). In power distribution systems, $R_L \gt r$ is preferred for
-Higher efficiency, even though less total power is delivered.
-:::
+Higher efficiency, even though less total power is delivered. :::
 
 ### 5.4 Battery Configurations
 
@@ -954,8 +951,8 @@ Total energy transferred, always multiply power by time.
 
 **Ammeter.** Measures current. Connected in series with the component. An ideal ammeter has zero
 Resistance so it does not alter the current it measures. A real ammeter has a small but finite
-Resistance ( a fraction of an ohm for analogue, or a very small resistance for digital
-Meters based on shunt resistors).
+Resistance ( a fraction of an ohm for analogue, or a very small resistance for digital Meters based
+on shunt resistors).
 
 **Voltmeter.** Measures potential difference. Connected in parallel across the component. An ideal
 Voltmeter has infinite resistance so it draws no current from the circuit. A real voltmeter has a
@@ -985,8 +982,7 @@ Which is always less than $R$. The measured p.d. Is lower than the true p.d.
 :::tip[Minimising Measurement Error] For ammeters: use instruments with the smallest possible
 Internal resistance. For voltmeters: use instruments with the largest possible internal resistance.
 A voltmeter is considered sufficiently ideal if $R_V \gt 100R$Where $R$ is the resistance across
-Which it is connected.
-:::
+Which it is connected. :::
 
 ### 7.3 Galvanometer as Ammeter and Voltmeter
 
@@ -1073,7 +1069,7 @@ When faced with an arbitrary circuit, apply the following systematic approach:
 
 1. Label all known and unknown quantities (currents, voltages, resistances, emfs).
 2. Assign current directions (if the actual direction is unknown, assume one; a negative result
- indicates the current flows in the opposite direction).
+   indicates the current flows in the opposite direction).
 3. Apply KCL at each junction to write current equations.
 4. Apply KVL around each independent loop to write voltage equations.
 5. Solve the resulting system of simultaneous equations.
@@ -1131,7 +1127,7 @@ To determine the resistivity of a material:
 
 1. Measure the length $L$ of the wire with a metre rule.
 2. Measure the diameter with a micrometer screw gauge at several points and average to find
- cross-sectional area $A = \pi d^2/4$.
+   cross-sectional area $A = \pi d^2/4$.
 3. Connect the wire in a circuit with a variable resistor, ammeter, and voltmeter.
 4. Record $V$ and $I$ for a range of currents (keeping the current low to minimise heating).
 5. Calculate $R = V/I$ for each reading and average.
@@ -1165,18 +1161,18 @@ Series to prevent excessive current when the diode conducts.
 :::info[IB Physics Data Booklet — Topic 5] The following are the key equations for current
 Electricity found in the IB Physics data booklet:
 
-| Quantity | Equation |
+| Quantity                         | Equation                                                    |
 | -------------------------------- | ----------------------------------------------------------- |
-| Coulomb's law | $F = \dfrac{q_1 q_2}{4\pi\varepsilon_0 r^2}$ |
-| Electric field (point charge) | $E = \dfrac{q}{4\pi\varepsilon_0 r^2}$ |
-| Electric field (parallel plates) | $E = \dfrac{V}{d}$ |
-| Current (drift velocity) | $I = nAev_d$ |
-| Ohm's law | $V = IR$ |
-| Resistance and resistivity | $R = \dfrac{\rho L}{A}$ |
-| Power | $P = IV = I^2R = \dfrac{V^2}{R}$ |
-| Internal resistance | $V = \varepsilon - Ir$ |
-| Potential divider | $V_{\mathrm{out}} = V_{\mathrm{in}} \dfrac{R_2}{R_1 + R_2}$ |
-| Wheatstone bridge | $\dfrac{R_1}{R_2} = \dfrac{R_3}{R_4}$ |
+| Coulomb's law                    | $F = \dfrac{q_1 q_2}{4\pi\varepsilon_0 r^2}$                |
+| Electric field (point charge)    | $E = \dfrac{q}{4\pi\varepsilon_0 r^2}$                      |
+| Electric field (parallel plates) | $E = \dfrac{V}{d}$                                          |
+| Current (drift velocity)         | $I = nAev_d$                                                |
+| Ohm's law                        | $V = IR$                                                    |
+| Resistance and resistivity       | $R = \dfrac{\rho L}{A}$                                     |
+| Power                            | $P = IV = I^2R = \dfrac{V^2}{R}$                            |
+| Internal resistance              | $V = \varepsilon - Ir$                                      |
+| Potential divider                | $V_{\mathrm{out}} = V_{\mathrm{in}} \dfrac{R_2}{R_1 + R_2}$ |
+| Wheatstone bridge                | $\dfrac{R_1}{R_2} = \dfrac{R_3}{R_4}$                       |
 
 :::
 
@@ -1235,8 +1231,8 @@ The force is attractive (opposite charges).
 
 ### Problem 2
 
-An electron ($m_e = 9.11 \times 10^{-31}\,\mathrm{kg}$$e = 1.6 \times 10^{-19}\,\mathrm{C}$)
-Is suspended stationary between two horizontal parallel plates. The plates are $8.0\,\mathrm{mm}$
+An electron ($m_e = 9.11 \times 10^{-31}\,\mathrm{kg}$$e = 1.6 \times 10^{-19}\,\mathrm{C}$) Is
+suspended stationary between two horizontal parallel plates. The plates are $8.0\,\mathrm{mm}$
 Apart. Find the potential difference across the plates.
 
 <details>
@@ -1358,9 +1354,8 @@ Voltmeter reading (p.d. Across parallel combination):
 
 $$V = IR_{\mathrm{parallel}} = (2.79 \times 10^{-3})(2308) = 6.43\,\mathrm{V}$$
 
-Without the voltmeter, the ideal reading would be
-$12 \times 3000/5000 = 7.20\,\mathrm{V}$. The non-ideal voltmeter loads the circuit and gives a
-Lower reading.
+Without the voltmeter, the ideal reading would be $12 \times 3000/5000 = 7.20\,\mathrm{V}$. The
+non-ideal voltmeter loads the circuit and gives a Lower reading.
 
 **If you get this wrong, revise:** Sections 4.4 and 7.2.
 
@@ -1397,8 +1392,8 @@ $$\eta = \frac{R}{R + r} = \frac{7.0}{7.0 + 3.0} = 70\%$$
 
 ### Problem 8
 
-In a Wheatstone bridge, $R_1 = 100\,\Omega$$R_2 = 200\,\Omega$And $R_3 = 50\,\Omega$. Find the
-Value of the unknown resistance $R_4$ for which the galvanometer reads zero. If $R_4$ is instead
+In a Wheatstone bridge, $R_1 = 100\,\Omega$$R_2 = 200\,\Omega$And $R_3 = 50\,\Omega$. Find the Value
+of the unknown resistance $R_4$ for which the galvanometer reads zero. If $R_4$ is instead
 $120\,\Omega$In which direction does current flow through the galvanometer?
 
 <details>
@@ -1408,10 +1403,9 @@ At balance:
 
 $$\frac{R_1}{R_2} = \frac{R_3}{R_4} \implies \frac{100}{200} = \frac{50}{R_4} \implies R_4 = \frac{200 \times 50}{100} = 100\,\Omega$$
 
-If $R_4 = 120\,\Omega$The bridge is unbalanced. The ratio $R_3/R_4 = 50/120 = 0.417$ is less
-Than $R_1/R_2 = 0.5$So the p.d. At the $R_1$-$R_3$ junction is higher than at the
-$R_2$-$R_4$ junction. Current flows from the $R_1$-$R_3$ junction through the galvanometer to the
-$R_2$-$R_4$ junction.
+If $R_4 = 120\,\Omega$The bridge is unbalanced. The ratio $R_3/R_4 = 50/120 = 0.417$ is less Than
+$R_1/R_2 = 0.5$So the p.d. At the $R_1$-$R_3$ junction is higher than at the $R_2$-$R_4$ junction.
+Current flows from the $R_1$-$R_3$ junction through the galvanometer to the $R_2$-$R_4$ junction.
 
 **If you get this wrong, revise:** Section 4.5.
 
@@ -1534,18 +1528,20 @@ Current when first switched on (cold) than during normal operation.
 ## Related Content at Other Levels
 
 - **A-Level Electricity:** [Physics](https://alevel.wyattau.com/docs/physics/physics)
-- **DSE Electrical Circuits:** [Electrical Circuits](https://academics.wyattau.com/docs/dse/Physics/electrical-circuits)
+- **DSE Electrical Circuits:**
+  [Electrical Circuits](https://academics.wyattau.com/docs/dse/Physics/electrical-circuits)
 
 ---
 
-:::tip
-Diagnostic Test
-Ready to test your understanding of **Current Electricity**? The [diagnostic test](/docs/ib/physics/diagnostics/diag-current-electricity) contains the hardest questions within the IB specification for this topic, each with a full worked solution.
+:::tip Diagnostic Test Ready to test your understanding of **Current Electricity**? The
+[diagnostic test](/docs/ib/physics/diagnostics/diag-current-electricity) contains the hardest
+questions within the IB specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Current Electricity with other physics topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Current
+Electricity with other physics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/ib/physics/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/ib/physics/diagnostics/diagnostic-guide) for instructions on
+self-marking and building a personal test matrix. :::
 
 ## Worked Examples
 

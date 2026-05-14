@@ -1,7 +1,9 @@
 ---
 id: intro
 title: Introduction to Databases
-description: "Rigorous infrastructure and DevOps notes covering Introduction to Databases. Includes definitions, derivations, worked examples, and exam-style problems."
+description:
+  'Rigorous infrastructure and DevOps notes covering Introduction to Databases. Includes
+  definitions, derivations, worked examples, and exam-style problems.'
 slug: intro
 sidebar_position: 1
 tags:
@@ -9,6 +11,7 @@ tags:
 categories:
   - Databases
 ---
+
 ## Why Databases Matter
 
 Every non-trivial system you build, operate, or debug depends on a database. Authentication tokens,
@@ -56,14 +59,14 @@ graph TB
 
 The industry often frames this as "SQL vs NoSQL" but the reality is a spectrum of trade-offs:
 
-| Dimension | Relational | NoSQL |
+| Dimension          | Relational                         | NoSQL                                         |
 | ------------------ | ---------------------------------- | --------------------------------------------- |
-| Data model | Rows and columns, fixed schema | Documents, key-value, graphs, column families |
-| Query language | SQL (declarative, standardised) | Varies per database, often API-based |
-| Consistency | Strong by default (ACID) | Often eventual, tunable |
-| Scaling | Vertical first, then read replicas | Horizontal by design |
-| Schema flexibility | Rigid, migrations required | Flexible, schemaless or schema-on-read |
-| Joins | First-class, optimised | Limited or unsupported |
+| Data model         | Rows and columns, fixed schema     | Documents, key-value, graphs, column families |
+| Query language     | SQL (declarative, standardised)    | Varies per database, often API-based          |
+| Consistency        | Strong by default (ACID)           | Often eventual, tunable                       |
+| Scaling            | Vertical first, then read replicas | Horizontal by design                          |
+| Schema flexibility | Rigid, migrations required         | Flexible, schemaless or schema-on-read        |
+| Joins              | First-class, optimised             | Limited or unsupported                        |
 
 **Choose relational when:** your data has strong relationships, you need complex queries and joins,
 ACID transactions are non-negotiable, or your team knows SQL well.
@@ -74,21 +77,21 @@ Write throughput.
 
 ## What This Subject Covers
 
-| Topic | Focus |
+| Topic                   | Focus                                                         |
 | ----------------------- | ------------------------------------------------------------- |
-| Relational Theory | Codd's model, normalisation, functional dependencies, keys |
-| SQL Fundamentals | DDL, DML, joins, subqueries, window functions, CTEs |
-| Indexing & Optimisation | B-trees, covering indexes, query plans, EXPLAIN |
-| Transactions | ACID, isolation levels, locking, MVCC, deadlocks |
-| NoSQL | Document stores, key-value, column families, graph, CAP |
-| Database Design | ER modelling, partitioning, sharding, replication, migrations |
+| Relational Theory       | Codd's model, normalisation, functional dependencies, keys    |
+| SQL Fundamentals        | DDL, DML, joins, subqueries, window functions, CTEs           |
+| Indexing & Optimisation | B-trees, covering indexes, query plans, EXPLAIN               |
+| Transactions            | ACID, isolation levels, locking, MVCC, deadlocks              |
+| NoSQL                   | Document stores, key-value, column families, graph, CAP       |
+| Database Design         | ER modelling, partitioning, sharding, replication, migrations |
 
 ## Core Principles
 
 1. **Data integrity is non-negotiable** -- a fast system that returns wrong answers is worse than a
- slow system that returns correct ones
+   slow system that returns correct ones
 2. **Index design follows access patterns** -- do not index everything, index what you query
 3. **Transactions are your safety net** -- understand their costs and guarantees before disabling or
- working around them
+   working around them
 4. **Schema evolution is a feature, not a bug** -- design for change from the start
 5. **Measure before optimising** -- `EXPLAIN ANALYZE` before adding indexes, and benchmark after

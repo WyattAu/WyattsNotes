@@ -1,6 +1,8 @@
 ---
 title: Constant Expressions
-description: "C++: Constant Expressions — The Keyword Taxonomy; `const`: Immutability, Not Compile-Time; `const` at Namespace Scope. and examination."
+description:
+  'C++: Constant Expressions — The Keyword Taxonomy; `const`: Immutability, Not Compile-Time;
+  `const` at Namespace Scope. and examination.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -8,6 +10,7 @@ categories:
   - Cpp
 slug: constant-expressions
 ---
+
 Import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 Compile-time computation is one of C++'s most distinctive capabilities. Unlike C macros or Java
@@ -19,12 +22,12 @@ From runtime to compile time -- a zero-cost correctness guarantee.
 
 ## The Keyword Taxonomy
 
-| Keyword | Storage | Initialization | Evaluation | Can be modified? |
+| Keyword     | Storage             | Initialization           | Evaluation               | Can be modified? |
 | :---------- | :------------------ | :----------------------- | :----------------------- | :--------------- |
-| `const` | Any | Runtime or compile-time | Either | No (after init) |
-| `constexpr` | Any | **Must be** compile-time | **Must be** compile-time | No (after init) |
-| `consteval` | N/A (function only) | N/A | **Must be** compile-time | N/A |
-| `constinit` | Static/Thread | **Must be** compile-time | Runtime value OK | Yes (after init) |
+| `const`     | Any                 | Runtime or compile-time  | Either                   | No (after init)  |
+| `constexpr` | Any                 | **Must be** compile-time | **Must be** compile-time | No (after init)  |
+| `consteval` | N/A (function only) | N/A                      | **Must be** compile-time | N/A              |
+| `constinit` | Static/Thread       | **Must be** compile-time | Runtime value OK         | Yes (after init) |
 
 ## `const`: Immutability, Not Compile-Time
 
@@ -293,12 +296,12 @@ g_logger.set_level(3);        // runtime modification is fine
 
 ### When to Use `constinit` vs `constexpr`
 
-| Scenario | Use |
+| Scenario                                                      | Use                                   |
 | :------------------------------------------------------------ | :------------------------------------ |
-| True constant (never changes) | `constexpr` |
-| Global state initialized at compile time, modified at runtime | `constinit` |
-| Avoid static initialization order fiasco | `constinit` + `constexpr` constructor |
-| Performance-critical startup (avoid dynamic init) | `constinit` |
+| True constant (never changes)                                 | `constexpr`                           |
+| Global state initialized at compile time, modified at runtime | `constinit`                           |
+| Avoid static initialization order fiasco                      | `constinit` + `constexpr` constructor |
+| Performance-critical startup (avoid dynamic init)             | `constinit`                           |
 
 ## `if constexpr`
 
@@ -538,11 +541,11 @@ struct S2 {
 ## See Also
 
 - **Module 7 (Data Layout)**: Fundamental types, struct layout, and alignment in constant
- expressions
+  expressions
 - **Module 8 (Pointers, References, Views)**: Pointer and reference behavior in constexpr context
 - **Module 9.2 (Uniform Initialization)**: Brace initialization in constexpr constructors
 - **Module 9.3 (Aggregate Initialization)**: `constexpr` aggregates and compile-time struct
- construction
+  construction
 - **Module 10 (Ownership and RAII)**: RAII and constexpr destructors
 - **Module 13 (Error Handling)**: `static_assert` as a compile-time error mechanism
 

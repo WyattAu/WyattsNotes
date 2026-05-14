@@ -1,6 +1,8 @@
 ---
 title: SFINAE vs Concepts
-description: "C++: SFINAE vs Concepts — How SFINAE Works; Immediate Context: The Hard Error Boundary; Drawbacks of SFINAE; How Concepts Solve SFINAE Problems."
+description:
+  'C++: SFINAE vs Concepts — How SFINAE Works; Immediate Context: The Hard Error Boundary; Drawbacks
+  of SFINAE; How Concepts Solve SFINAE Problems.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -8,6 +10,7 @@ categories:
   - Cpp
 slug: sfinae-vs-concepts
 ---
+
 # SFINAE vs Concepts
 
 **SFINAE** (Substitution Failure Is Not An Error) was the primary mechanism for constraining
@@ -22,8 +25,8 @@ Argument deduction to discard overloads where substituting the deduced type woul
 Type or expression [N4950 §13.10.3.6]. The key idea is:
 
 > If a type or expression used in the function type or template parameter declaration is invalid
-> after substitution, the program is not ill-formed --- instead, the overload is removed from
-> the candidate set.
+> after substitution, the program is not ill-formed --- instead, the overload is removed from the
+> candidate set.
 
 SFINAE applies strictly to the **immediate context** of template argument substitution [N4950
 §13.10.3.6]. Errors in the body of a template function, or in the definition of a nested type that
@@ -172,14 +175,14 @@ With concepts, this problem disappears because subsumption provides a well-defin
 
 ## How Concepts Solve SFINAE Problems
 
-| Problem | SFINAE | Concepts |
+| Problem               | SFINAE                                             | Concepts                                                     |
 | --------------------- | -------------------------------------------------- | ------------------------------------------------------------ |
-| Error messages | Show substitution failure in `enable_if` | Show the concept name and which requirement failed |
-| Overload ordering | No subsumption; ambiguous when multiple are viable | Partial ordering by subsumption selects the most constrained |
-| Syntax | `enable_if<cond, T>::type` | `requires cond` or `concept T` |
-| Readability | Constraint hidden in type manipulation | Constraint is explicit in the signature |
-| Composability | Boolean logic in template parameters | Named concepts composed with `&&``\|\|` |
-| Interacts with `auto` | Problematic | Works |
+| Error messages        | Show substitution failure in `enable_if`           | Show the concept name and which requirement failed           |
+| Overload ordering     | No subsumption; ambiguous when multiple are viable | Partial ordering by subsumption selects the most constrained |
+| Syntax                | `enable_if<cond, T>::type`                         | `requires cond` or `concept T`                               |
+| Readability           | Constraint hidden in type manipulation             | Constraint is explicit in the signature                      |
+| Composability         | Boolean logic in template parameters               | Named concepts composed with `&&``\|\|`                      |
+| Interacts with `auto` | Problematic                                        | Works                                                        |
 
 ## Migration Path
 
@@ -439,12 +442,10 @@ int main() {
 }
 ```
 
-:::tip
-When to Still Use SFINAE Concepts cannot replace all SFINAE use cases. In particular, SFINAE
+:::tip When to Still Use SFINAE Concepts cannot replace all SFINAE use cases. In particular, SFINAE
 Is still needed when the constraint depends on the **function's return type** in a way that cannot
 Be expressed as a simple boolean predicate, or when working with C++17 or earlier codebases.
-However, for new C++20 code, concepts should be the default choice for template constraints.
-:::
+However, for new C++20 code, concepts should be the default choice for template constraints. :::
 
 ## Common Pitfalls
 

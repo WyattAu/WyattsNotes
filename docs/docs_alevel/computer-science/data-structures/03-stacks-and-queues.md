@@ -1,6 +1,8 @@
 ---
 title: Stacks and Queues
-description: "A-Level Computer Science notes on Stacks and Queues: 1. Stacks (LIFO); Definition; Abstract Data Type; Array-Based Implementation."
+description:
+  'A-Level Computer Science notes on Stacks and Queues: 1. Stacks (LIFO); Definition; Abstract Data
+  Type; Array-Based Implementation.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - ComputerScience
@@ -9,6 +11,7 @@ categories:
   - ComputerScience
 slug: stacks-and-queues
 ---
+
 ## 1. Stacks (LIFO)
 
 ### Definition
@@ -18,13 +21,13 @@ Most recently added element is the first to be removed.
 
 ### Abstract Data Type
 
-| Operation | Description | Time |
+| Operation   | Description                             | Time   |
 | ----------- | --------------------------------------- | ------ |
-| `push(x)` | Add element $x$ to the top | $O(1)$ |
-| `pop()` | Remove and return the top element | $O(1)$ |
-| `peek()` | Return the top element without removing | $O(1)$ |
-| `isEmpty()` | Check if the stack is empty | $O(1)$ |
-| `size()` | Return the number of elements | $O(1)$ |
+| `push(x)`   | Add element $x$ to the top              | $O(1)$ |
+| `pop()`     | Remove and return the top element       | $O(1)$ |
+| `peek()`    | Return the top element without removing | $O(1)$ |
+| `isEmpty()` | Check if the stack is empty             | $O(1)$ |
+| `size()`    | Return the number of elements           | $O(1)$ |
 
 ### Array-Based Implementation
 
@@ -93,10 +96,8 @@ class LinkedListStack:
         return self._head.data
 ```
 
-:::tip
-Exam tip Stack push/pop always operate at the **head** of the linked list (not the tail) for
-$O(1)$ time. Pushing at the tail would require traversal.
-:::
+:::tip Exam tip Stack push/pop always operate at the **head** of the linked list (not the tail) for
+$O(1)$ time. Pushing at the tail would require traversal. :::
 
 <hr />
 
@@ -109,12 +110,12 @@ The earliest added element is the first to be removed.
 
 ### Abstract Data Type
 
-| Operation | Description | Time |
+| Operation    | Description                               | Time   |
 | ------------ | ----------------------------------------- | ------ |
-| `enqueue(x)` | Add element $x$ to the rear | $O(1)$ |
-| `dequeue()` | Remove and return the front element | $O(1)$ |
-| `front()` | Return the front element without removing | $O(1)$ |
-| `isEmpty()` | Check if the queue is empty | $O(1)$ |
+| `enqueue(x)` | Add element $x$ to the rear               | $O(1)$ |
+| `dequeue()`  | Remove and return the front element       | $O(1)$ |
+| `front()`    | Return the front element without removing | $O(1)$ |
+| `isEmpty()`  | Check if the queue is empty               | $O(1)$ |
 
 ### Circular Array Implementation
 
@@ -185,16 +186,14 @@ class LinkedListQueue:
         return value
 ```
 
-:::info
-Board-specific
+:::info Board-specific
 
 - **AQA** requires both array-based and pointer-based (linked list) implementations
 - **CIE (9618)** requires understanding of stack and queue operations; may specify pointer-based
- implementations
+  implementations
 - **OCR (A)** requires linear and circular queue implementations (array-based), plus linked list
- implementations
-- **Edexcel** covers stack and queue ADTs with pseudocode
-:::
+  implementations
+- **Edexcel** covers stack and queue ADTs with pseudocode :::
 
 <hr />
 
@@ -224,8 +223,10 @@ Examples: `3 4 +` (= 7), `5 1 2 + 4 * + 3 -` (= 14)
 
 1. Create an empty stack
 2. For each token $t$:
- - If $t$ is an operand: `push(t)`
- - If $t$ is an operator $\oplus$: pop $b$Pop $a$Compute $a \oplus b$`push(result)`
+
+- If $t$ is an operand: `push(t)`
+- If $t$ is an operator $\oplus$: pop $b$Pop $a$Compute $a \oplus b$`push(result)`
+
 3. The result is the single value remaining on the stack
 
 ```python
@@ -259,11 +260,11 @@ _Base case._ $k = 0$: stack is empty. The invariant holds .
 _Inductive step._ Assume the invariant holds after $k$ tokens.
 
 - If token $k+1$ is an operand $v$: it starts a new sub-expression. Pushing $v$ adds it as an
- unprocessed sub-expression. The invariant holds.
+  unprocessed sub-expression. The invariant holds.
 - If token $k+1$ is an operator $\oplus$: by the definition of valid RPN, the top two stack entries
- are the operands $a$ and $b$ for this operator (this follows from the well-formedness of RPN
- expressions). Popping them, computing $a \oplus b$And pushing the result replaces the two
- sub-expressions with their combined result. The invariant holds.
+  are the operands $a$ and $b$ for this operator (this follows from the well-formedness of RPN
+  expressions). Popping them, computing $a \oplus b$And pushing the result replaces the two
+  sub-expressions with their combined result. The invariant holds.
 
 _Termination._ After processing all $n$ tokens of a valid RPN expression, exactly one value remains
 — the value of the entire expression. $\square$
@@ -273,17 +274,17 @@ _Termination._ After processing all $n$ tokens of a valid RPN expression, exactl
 <details>
 <summary>Example: Evaluate `5 1 2 + 4 * + 3 -`</summary>
 
-| Token | Stack (bottom → top) | Action |
+| Token | Stack (bottom → top) | Action                      |
 | ----- | -------------------- | --------------------------- |
-| 5 | [5] | Push 5 |
-| 1 | [5, 1] | Push 1 |
-| 2 | [5, 1, 2] | Push 2 |
-| + | [5, 3] | Pop 2, 1; push 1 + 2 = 3 |
-| 4 | [5, 3, 4] | Push 4 |
-| \* | [5, 12] | Pop 4, 3; push 3 × 4 = 12 |
-| + | [17] | Pop 12, 5; push 5 + 12 = 17 |
-| 3 | [17, 3] | Push 3 |
-| - | [14] | Pop 3, 17; push 17 - 3 = 14 |
+| 5     | [5]                  | Push 5                      |
+| 1     | [5, 1]               | Push 1                      |
+| 2     | [5, 1, 2]            | Push 2                      |
+| +     | [5, 3]               | Pop 2, 1; push 1 + 2 = 3    |
+| 4     | [5, 3, 4]            | Push 4                      |
+| \*    | [5, 12]              | Pop 4, 3; push 3 × 4 = 12   |
+| +     | [17]                 | Pop 12, 5; push 5 + 12 = 17 |
+| 3     | [17, 3]              | Push 3                      |
+| -     | [14]                 | Pop 3, 17; push 17 - 3 = 14 |
 
 Result: 14 ✓
 
@@ -297,26 +298,28 @@ Verification: $5 + ((1 + 2) \times 4) - 3 = 5 + 12 - 3 = 14$ ✓
 
 1. Create an output queue and an operator stack
 2. For each token $t$:
- - If $t$ is an operand: enqueue to output
- - If $t$ is `(`: push to stack
- - If $t$ is `)`: pop from stack to output until `(` is found; discard `(`
- - If $t$ is an operator $\oplus$: while stack is non-empty and top of stack is an operator $\psi$
- with precedence($\psi$) $\geq$ precedence($\oplus$), pop $\psi$ to output. Then push $\oplus$.
+
+- If $t$ is an operand: enqueue to output
+- If $t$ is `(`: push to stack
+- If $t$ is `)`: pop from stack to output until `(` is found; discard `(`
+- If $t$ is an operator $\oplus$: while stack is non-empty and top of stack is an operator $\psi$
+  with precedence($\psi$) $\geq$ precedence($\oplus$), pop $\psi$ to output. Then push $\oplus$.
+
 3. Pop all remaining operators to output
 
 <details>
 <summary>Example: Convert `(3 + 4) * 5` to RPN</summary>
 
-| Token | Output Queue | Operator Stack | Action |
+| Token | Output Queue   | Operator Stack | Action                        |
 | ----- | -------------- | -------------- | ----------------------------- |
-| ( | | ( | Push ( |
-| 3 | 3 | ( | Enqueue 3 |
-| + | 3 | (, + | Push + (precedence, ( blocks) |
-| 4 | 3, 4 | (, + | Enqueue 4 |
-| ) | 3, 4, + | | Pop until ( |
-| \* | 3, 4, + | \* | Push \* |
-| 5 | 3, 4, +, 5 | \* | Enqueue 5 |
-| end | 3, 4, +, 5, \* | | Pop remaining |
+| (     |                | (              | Push (                        |
+| 3     | 3              | (              | Enqueue 3                     |
+| +     | 3              | (, +           | Push + (precedence, ( blocks) |
+| 4     | 3, 4           | (, +           | Enqueue 4                     |
+| )     | 3, 4, +        |                | Pop until (                   |
+| \*    | 3, 4, +        | \*             | Push \*                       |
+| 5     | 3, 4, +, 5     | \*             | Enqueue 5                     |
+| end   | 3, 4, +, 5, \* |                | Pop remaining                 |
 
 Result: `3 4 + 5 *` ✓
 
@@ -351,23 +354,23 @@ Dequeued in priority order (highest first, or lowest first).
 
 ### Implementation Options
 
-| Implementation | Insert | Extract-Max | Notes |
+| Implementation | Insert           | Extract-Max      | Notes                       |
 | -------------- | ---------------- | ---------------- | --------------------------- |
-| Unsorted array | $O(1)$ | $O(n)$ | Insert at end, scan for max |
-| Sorted array | $O(n)$ | $O(1)$ | Maintain sorted order |
-| Linked list | $O(1)$ or $O(n)$ | $O(1)$ or $O(n)$ | Depends on approach |
-| Binary heap | $O(\log n)$ | $O(\log n)$ | Optimal for general use |
+| Unsorted array | $O(1)$           | $O(n)$           | Insert at end, scan for max |
+| Sorted array   | $O(n)$           | $O(1)$           | Maintain sorted order       |
+| Linked list    | $O(1)$ or $O(n)$ | $O(1)$ or $O(n)$ | Depends on approach         |
+| Binary heap    | $O(\log n)$      | $O(\log n)$      | Optimal for general use     |
 
 <hr />
 
 ## 6. Stack vs Queue Comparison
 
-| Property | Stack | Queue |
+| Property  | Stack                | Queue                      |
 | --------- | -------------------- | -------------------------- |
-| Principle | LIFO | FIFO |
-| Insert | push (top) | enqueue (rear) |
-| Remove | pop (top) | dequeue (front) |
-| Peek | top element | front element |
+| Principle | LIFO                 | FIFO                       |
+| Insert    | push (top)           | enqueue (rear)             |
+| Remove    | pop (top)            | dequeue (front)            |
+| Peek      | top element          | front element              |
 | Use cases | Recursion, undo, RPN | BFS, scheduling, buffering |
 
 <hr />
@@ -414,15 +417,15 @@ Queue: [30, 40, 50] (front = 30)
 <details>
 <summary>Answer</summary>
 
-| Token | Stack | Action |
+| Token | Stack     | Action                    |
 | ----- | --------- | ------------------------- |
-| 2 | [2] | Push 2 |
-| 3 | [2, 3] | Push 3 |
-| 1 | [2, 3, 1] | Push 1 |
-| \* | [2, 3] | Pop 1, 3; push 3 × 1 = 3 |
-| + | [5] | Pop 3, 2; push 2 + 3 = 5 |
-| 9 | [5, 9] | Push 9 |
-| - | [-4] | Pop 9, 5; push 5 - 9 = -4 |
+| 2     | [2]       | Push 2                    |
+| 3     | [2, 3]    | Push 3                    |
+| 1     | [2, 3, 1] | Push 1                    |
+| \*    | [2, 3]    | Pop 1, 3; push 3 × 1 = 3  |
+| +     | [5]       | Pop 3, 2; push 2 + 3 = 5  |
+| 9     | [5, 9]    | Push 9                    |
+| -     | [-4]      | Pop 9, 5; push 5 - 9 = -4 |
 
 Result: -4 ✓
 
@@ -438,16 +441,16 @@ Algorithm.
 
 Precedence: `*` > `+``-`
 
-| Token | Output | Stack | Action |
+| Token | Output            | Stack | Action                                  |
 | ----- | ----------------- | ----- | --------------------------------------- |
-| A | A | | Enqueue A |
-| + | A | + | Push + |
-| B | A, B | + | Enqueue B |
-| \* | A, B | +, \* | Push \* (higher precedence) |
-| C | A, B, C | +, \* | Enqueue C |
-| - | A, B, C, \* | - | Pop \* (≥ prec), pop + (≥ prec), push - |
-| D | A, B, C, \*, D | - | Enqueue D |
-| end | A, B, C, \*, D, - | | Pop remaining |
+| A     | A                 |       | Enqueue A                               |
+| +     | A                 | +     | Push +                                  |
+| B     | A, B              | +     | Enqueue B                               |
+| \*    | A, B              | +, \* | Push \* (higher precedence)             |
+| C     | A, B, C           | +, \* | Enqueue C                               |
+| -     | A, B, C, \*       | -     | Pop \* (≥ prec), pop + (≥ prec), push - |
+| D     | A, B, C, \*, D    | -     | Enqueue D                               |
+| end   | A, B, C, \*, D, - |       | Pop remaining                           |
 
 Result: `A B C * + D -` ✓
 
@@ -469,8 +472,8 @@ Are balanced.
 
 (_If_) Suppose the parentheses are balanced. Then every `)` matches a previous `(`. By the
 Well-formedness of balanced parentheses, when we encounter a `)`There is always a matching `(` on
-The stack (otherwise the prefix would have more `)` than `(`Contradicting balance). At the end,
-All `(` have been matched, so the stack is empty.
+The stack (otherwise the prefix would have more `)` than `(`Contradicting balance). At the end, All
+`(` have been matched, so the stack is empty.
 
 (_Only if_) Suppose the algorithm returns "balanced" (stack empty at end, no underflow). No
 Underflow means every `)` matched a previous `(`. Empty stack means every `(` was matched. Hence the
@@ -522,8 +525,8 @@ Text editor.
 
 Each action in the editor (typing, deleting, formatting) can be represented as a state change. When
 The user performs "undo", we need to reverse the **most recent** action — this is exactly LIFO
-Behaviour. Pushing each action onto a stack and popping on undo reverses actions in the
-Correct order. A queue would undo the **oldest** action first, which is not the desired behaviour.
+Behaviour. Pushing each action onto a stack and popping on undo reverses actions in the Correct
+order. A queue would undo the **oldest** action first, which is not the desired behaviour.
 
 </details>
 
@@ -534,17 +537,17 @@ Array contents) after each operation: `enqueue(1)``enqueue(2)``dequeue()``enqueu
 <details>
 <summary>Answer</summary>
 
-| Operation | front | rear | size | Array contents (indices 0-4) |
+| Operation  | front | rear | size | Array contents (indices 0-4) |
 | ---------- | ----- | ---- | ---- | ---------------------------- |
-| Initial | 0 | 0 | 0 | [_, _, _, _, _] |
-| enqueue(1) | 0 | 1 | 1 | [1, _, _, _, _] |
-| enqueue(2) | 0 | 2 | 2 | [1, 2, _, _, _] |
-| dequeue() | 1 | 2 | 1 | [_, 2, _, _, _] |
-| enqueue(3) | 1 | 3 | 2 | [_, 2, 3, _, _] |
-| enqueue(4) | 1 | 4 | 3 | [_, 2, 3, 4, _] |
-| enqueue(5) | 1 | 0 | 4 | [5, 2, 3, 4, _] |
-| dequeue() | 2 | 0 | 3 | [5, _, 3, 4, _] |
-| enqueue(6) | 2 | 1 | 4 | [5, 6, 3, 4, _] |
+| Initial    | 0     | 0    | 0    | [_, _, _, _, _]              |
+| enqueue(1) | 0     | 1    | 1    | [1, _, _, _, _]              |
+| enqueue(2) | 0     | 2    | 2    | [1, 2, _, _, _]              |
+| dequeue()  | 1     | 2    | 1    | [_, 2, _, _, _]              |
+| enqueue(3) | 1     | 3    | 2    | [_, 2, 3, _, _]              |
+| enqueue(4) | 1     | 4    | 3    | [_, 2, 3, 4, _]              |
+| enqueue(5) | 1     | 0    | 4    | [5, 2, 3, 4, _]              |
+| dequeue()  | 2     | 0    | 3    | [5, _, 3, 4, _]              |
+| enqueue(6) | 2     | 1    | 4    | [5, 6, 3, 4, _]              |
 
 Note: rear wraps around using `(rear + 1) % capacity`.
 
@@ -603,8 +606,8 @@ For revision on complexity analysis, see
 ## Problems
 
 **Problem 1.** A stack is initially empty. Perform the following operations in order and show the
-Stack contents after each: `push(5)``push(12)``push(3)``pop()``push(8)``pop()``pop()`
-`push(1)`. What are the values returned by each `pop()` operation?
+Stack contents after each: `push(5)``push(12)``push(3)``pop()``push(8)``pop()``pop()` `push(1)`.
+What are the values returned by each `pop()` operation?
 
 <details>
 <summary>Hint</summary>
@@ -619,14 +622,14 @@ A list with the top at the right.
 
 | Operation | Stack (top on right) | Value returned |
 | --------- | -------------------- | -------------- |
-| push(5) | [5] | — |
-| push(12) | [5, 12] | — |
-| push(3) | [5, 12, 3] | — |
-| pop() | [5, 12] | 3 |
-| push(8) | [5, 12, 8] | — |
-| pop() | [5, 12] | 8 |
-| pop() | [5] | 12 |
-| push(1) | [5, 1] | — |
+| push(5)   | [5]                  | —              |
+| push(12)  | [5, 12]              | —              |
+| push(3)   | [5, 12, 3]           | —              |
+| pop()     | [5, 12]              | 3              |
+| push(8)   | [5, 12, 8]           | —              |
+| pop()     | [5, 12]              | 8              |
+| pop()     | [5]                  | 12             |
+| push(1)   | [5, 1]               | —              |
 
 Values returned by `pop()` in order: **3, 8, 12**.
 
@@ -677,14 +680,14 @@ A queue is FIFO — elements are removed from the front and added at the rear.
 <details>
 <summary>Answer</summary>
 
-| Operation | Queue (front → rear) | Value returned |
+| Operation   | Queue (front → rear) | Value returned |
 | ----------- | -------------------- | -------------- |
-| Initial | [5, 10, 15, 20] | — |
-| dequeue() | [10, 15, 20] | 5 |
-| enqueue(25) | [10, 15, 20, 25] | — |
-| dequeue() | [15, 20, 25] | 10 |
-| enqueue(30) | [15, 20, 25, 30] | — |
-| dequeue() | [20, 25, 30] | 15 |
+| Initial     | [5, 10, 15, 20]      | —              |
+| dequeue()   | [10, 15, 20]         | 5              |
+| enqueue(25) | [10, 15, 20, 25]     | —              |
+| dequeue()   | [15, 20, 25]         | 10             |
+| enqueue(30) | [15, 20, 25, 30]     | —              |
+| dequeue()   | [20, 25, 30]         | 15             |
 
 Final queue: **`[20, 25, 30]`** (front = 20).
 
@@ -692,8 +695,7 @@ Final queue: **`[20, 25, 30]`** (front = 20).
 
 **Problem 4.** A circular queue has capacity 4. Trace the following operations, showing `front`
 `rear``size`And the array contents after each step: `enqueue(7)``enqueue(3)``enqueue(9)`
-`dequeue()``dequeue()``enqueue(5)``enqueue(1)``enqueue(8)`. What happens on the last
-Operation?
+`dequeue()``dequeue()``enqueue(5)``enqueue(1)``enqueue(8)`. What happens on the last Operation?
 
 <details>
 <summary>Hint</summary>
@@ -706,16 +708,16 @@ When `size == capacity`.
 <details>
 <summary>Answer</summary>
 
-| Operation | front | rear | size | Array [0, 1, 2, 3] |
+| Operation  | front | rear | size | Array [0, 1, 2, 3] |
 | ---------- | ----- | ---- | ---- | ------------------ |
-| enqueue(7) | 0 | 1 | 1 | [7, _, _, _] |
-| enqueue(3) | 0 | 2 | 2 | [7, 3, _, _] |
-| enqueue(9) | 0 | 3 | 3 | [7, 3, 9, _] |
-| dequeue() | 1 | 3 | 2 | [_, 3, 9, _] |
-| dequeue() | 2 | 3 | 1 | [_, _, 9, _] |
-| enqueue(5) | 2 | 0 | 2 | [5, _, 9, _] |
-| enqueue(1) | 2 | 1 | 3 | [5, 1, 9, _] |
-| enqueue(8) | 2 | 2 | 4 | [5, 1, 9, 8] |
+| enqueue(7) | 0     | 1    | 1    | [7, _, _, _]       |
+| enqueue(3) | 0     | 2    | 2    | [7, 3, _, _]       |
+| enqueue(9) | 0     | 3    | 3    | [7, 3, 9, _]       |
+| dequeue()  | 1     | 3    | 2    | [_, 3, 9, _]       |
+| dequeue()  | 2     | 3    | 1    | [_, _, 9, _]       |
+| enqueue(5) | 2     | 0    | 2    | [5, _, 9, _]       |
+| enqueue(1) | 2     | 1    | 3    | [5, 1, 9, _]       |
+| enqueue(8) | 2     | 2    | 4    | [5, 1, 9, 8]       |
 
 The last operation (`enqueue(8)`) succeeds. The queue is now **full** (size = capacity = 4). The
 `rear` wraps around: $(1 + 1) \% 4 = 2$. Note that `rear` now equals `front`But the queue is not
@@ -738,11 +740,11 @@ Performance and memory characteristics.
 <details>
 <summary>Answer</summary>
 
-| Property | Array-based | Linked-list-based |
+| Property              | Array-based            | Linked-list-based      |
 | --------------------- | ---------------------- | ---------------------- |
-| (a) Push/Pop time | $O(1)$ | $O(1)$ |
-| (b) Maximum size | Fixed at creation | Limited only by memory |
-| (c) Memory overhead | None per element | One pointer (8 bytes) |
+| (a) Push/Pop time     | $O(1)$                 | $O(1)$                 |
+| (b) Maximum size      | Fixed at creation      | Limited only by memory |
+| (c) Memory overhead   | None per element       | One pointer (8 bytes)  |
 | (d) Cache performance | Excellent (contiguous) | Poor (scattered nodes) |
 
 **Array-based preferable:** When the maximum stack depth is known in advance (e.g., recursion depth
@@ -771,8 +773,8 @@ Consider how many elements need to be moved when dequeuing from the front of a n
 <summary>Answer</summary>
 
 - `enqueue`: $O(1)$ — add element at index `rear`Increment `rear`.
-- `dequeue`: $O(n)$ — remove element at index `front`Then shift elements `front+1` through
- `rear-1` one position left.
+- `dequeue`: $O(n)$ — remove element at index `front`Then shift elements `front+1` through `rear-1`
+  one position left.
 
 **Why inefficient:** After dequeuing, every remaining element must be shifted. For a queue of $n$
 Elements, dequeue performs $n-1$ assignments. If $n$ is large (e.g., a print queue with 10,000
@@ -798,15 +800,15 @@ The result.
 <details>
 <summary>Answer</summary>
 
-| Token | Stack (bottom → top) | Action |
+| Token | Stack (bottom → top) | Action                      |
 | ----- | -------------------- | --------------------------- |
-| 6 | [6] | Push 6 |
-| 2 | [6, 2] | Push 2 |
-| 3 | [6, 2, 3] | Push 3 |
-| + | [6, 5] | Pop 3, 2; push 2 + 3 = 5 |
-| \* | [30] | Pop 5, 6; push 6 × 5 = 30 |
-| 4 | [30, 4] | Push 4 |
-| - | [26] | Pop 4, 30; push 30 - 4 = 26 |
+| 6     | [6]                  | Push 6                      |
+| 2     | [6, 2]               | Push 2                      |
+| 3     | [6, 2, 3]            | Push 3                      |
+| +     | [6, 5]               | Pop 3, 2; push 2 + 3 = 5    |
+| \*    | [30]                 | Pop 5, 6; push 6 × 5 = 30   |
+| 4     | [30, 4]              | Push 4                      |
+| -     | [26]                 | Pop 4, 30; push 30 - 4 = 26 |
 
 Result: **26**.
 
@@ -830,27 +832,27 @@ Corresponding opening bracket.
 
 **Checking `{[()()]}`:**
 
-| Char | Stack (top on right) | Action |
+| Char | Stack (top on right) | Action                  |
 | ---- | -------------------- | ----------------------- |
-| `{` | `[{]` | Push `{` |
-| `[` | `[{, []` | Push `[` |
-| `(` | `[{, [, (]` | Push `(` |
-| `)` | `[{, []` | Pop `(` — matches `)` ✓ |
-| `(` | `[{, [, (]` | Push `(` |
-| `)` | `[{, []` | Pop `(` — matches `)` ✓ |
-| `]` | `[{]` | Pop `[` — matches `]` ✓ |
-| `}` | `[]` | Pop `{` — matches `}` ✓ |
+| `{`  | `[{]`                | Push `{`                |
+| `[`  | `[{, []`             | Push `[`                |
+| `(`  | `[{, [, (]`          | Push `(`                |
+| `)`  | `[{, []`             | Pop `(` — matches `)` ✓ |
+| `(`  | `[{, [, (]`          | Push `(`                |
+| `)`  | `[{, []`             | Pop `(` — matches `)` ✓ |
+| `]`  | `[{]`                | Pop `[` — matches `]` ✓ |
+| `}`  | `[]`                 | Pop `{` — matches `}` ✓ |
 
 Stack is empty → **balanced**. ✓
 
 **Checking `[{(})]`:**
 
-| Char | Stack (top on right) | Action |
+| Char | Stack (top on right) | Action                               |
 | ---- | -------------------- | ------------------------------------ |
-| `[` | `[[]` | Push `[` |
-| `{` | `[{, {}` | Push `{` |
-| `(` | `[{, {, (]` | Push `(` |
-| `}` | `[{, (]` | Pop `(` — expected `}` but got `(` ✗ |
+| `[`  | `[[]`                | Push `[`                             |
+| `{`  | `[{, {}`             | Push `{`                             |
+| `(`  | `[{, {, (]`          | Push `(`                             |
+| `}`  | `[{, (]`             | Pop `(` — expected `}` but got `(` ✗ |
 
 Stack top is `(` but closing bracket is `}` — **mismatch** → **not balanced**. ✗
 
@@ -862,8 +864,8 @@ Variables `_data[]``_front``_size`And `_capacity`. Include error handling for an
 <details>
 <summary>Hint</summary>
 
-Check if the queue is empty first. If not, read the element at `_front`Update `_front` using
-Modular arithmetic, and decrement `_size`.
+Check if the queue is empty first. If not, read the element at `_front`Update `_front` using Modular
+arithmetic, and decrement `_size`.
 
 </details>
 
@@ -888,7 +890,7 @@ ENDFUNCTION
 - `_size = 0` check prevents underflow (dequeuing from an empty queue)
 - The value at `_data[_front]` is saved before updating `_front`
 - `_front = (_front + 1) MOD _capacity` wraps around to the start of the array when the end is
- reached
+  reached
 - Setting `_data[_front] = NULL` is optional but helps with debugging
 - `_size` is decremented to reflect the removal
 - Time complexity: $O(1)$ — constant number of operations regardless of queue size
@@ -924,7 +926,7 @@ Overflow. Push (visit a page) and pop (go back) are both $O(1)$. Two stacks are 
 Back history and one for the forward history.
 
 Why a queue would be wrong: A queue would return the user to the **first** page visited, not the
-Most recent. This would make the back button navigate to the homepage every time, which is 
+Most recent. This would make the back button navigate to the homepage every time, which is
 Incorrect.
 
 **(B) Customer support tickets — Queue**

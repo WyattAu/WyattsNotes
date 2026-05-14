@@ -1,7 +1,9 @@
 ---
 id: relational-theory
 title: Relational Theory
-description: "Relational Theory — The Relational Model; Codd's 12 Rules (and Rule 0); Relations, Tuples, Attributes, and Domains; Key Distinction: Relations Are Sets."
+description:
+  "Relational Theory — The Relational Model; Codd's 12 Rules (and Rule 0); Relations, Tuples,
+  Attributes, and Domains; Key Distinction: Relations Are Sets."
 slug: relational-theory
 sidebar_position: 1
 tags:
@@ -9,6 +11,7 @@ tags:
 categories:
   - Databases
 ---
+
 ## The Relational Model
 
 E.F. Codd introduced the relational model in his 1970 paper "A Relational Model of Data for Large
@@ -22,21 +25,21 @@ Codd defined 13 rules (numbered 0 through 12) that a system must satisfy to be c
 Relational. No commercial database fully satisfies all 13, but they serve as the theoretical
 Benchmark:
 
-| Rule | Name | Summary |
+| Rule | Name                            | Summary                                                                           |
 | ---- | ------------------------------- | --------------------------------------------------------------------------------- |
-| 0 | Foundation | A relational DBMS must manage databases through its relational capabilities alone |
-| 1 | Information | All information is represented as values in tables |
-| 2 | Guaranteed Access | Every value is accessible by table name, primary key, and column name |
-| 3 | Systematic Treatment of NULL | NULL values are distinct from default values and represent missing information |
-| 4 | Dynamic Online Catalog | The database description (catalog) is represented as relational tables |
-| 5 | Comprehensive Sublanguage | Supports at least one relational language (SQL, QBE, etc.) |
-| 6 | View Updating | All views theoretically updatable must be updatable by the system |
-| 7 | High-level Insert/Update/Delete | Set-level operations, not row-by-row processing |
-| 8 | Physical Data Independence | Application logic unaffected by physical storage changes |
-| 9 | Logical Data Independence | Application logic unaffected by logical schema changes (view changes) |
-| 10 | Integrity Independence | Integrity constraints are part of the schema, not the application |
-| 11 | Distribution Independence | Applications unaffected by data distribution |
-| 12 | Nonsubversion | Low-level language cannot bypass integrity constraints |
+| 0    | Foundation                      | A relational DBMS must manage databases through its relational capabilities alone |
+| 1    | Information                     | All information is represented as values in tables                                |
+| 2    | Guaranteed Access               | Every value is accessible by table name, primary key, and column name             |
+| 3    | Systematic Treatment of NULL    | NULL values are distinct from default values and represent missing information    |
+| 4    | Dynamic Online Catalog          | The database description (catalog) is represented as relational tables            |
+| 5    | Comprehensive Sublanguage       | Supports at least one relational language (SQL, QBE, etc.)                        |
+| 6    | View Updating                   | All views theoretically updatable must be updatable by the system                 |
+| 7    | High-level Insert/Update/Delete | Set-level operations, not row-by-row processing                                   |
+| 8    | Physical Data Independence      | Application logic unaffected by physical storage changes                          |
+| 9    | Logical Data Independence       | Application logic unaffected by logical schema changes (view changes)             |
+| 10   | Integrity Independence          | Integrity constraints are part of the schema, not the application                 |
+| 11   | Distribution Independence       | Applications unaffected by data distribution                                      |
+| 12   | Nonsubversion                   | Low-level language cannot bypass integrity constraints                            |
 
 :::info
 
@@ -49,25 +52,25 @@ Through arbitrary views, especially those involving joins, aggregations, or DIST
 
 The relational model uses precise terminology that SQL conflates:
 
-| Relational Term | SQL Term | Mathematical Object |
+| Relational Term | SQL Term  | Mathematical Object                   |
 | --------------- | --------- | ------------------------------------- |
-| Relation | Table | A set of tuples (no duplicate tuples) |
-| Tuple | Row | An ordered list of values |
-| Attribute | Column | A named position in a tuple |
-| Domain | Data type | A set of permissible values |
-| Degree | Arity | Number of attributes in a relation |
-| Cardinality | Row count | Number of tuples in a relation |
+| Relation        | Table     | A set of tuples (no duplicate tuples) |
+| Tuple           | Row       | An ordered list of values             |
+| Attribute       | Column    | A named position in a tuple           |
+| Domain          | Data type | A set of permissible values           |
+| Degree          | Arity     | Number of attributes in a relation    |
+| Cardinality     | Row count | Number of tuples in a relation        |
 
 ### Key Distinction: Relations Are Sets
 
 A mathematical relation is a **set** of tuples, which means:
 
 1. **No duplicate tuples** -- SQL tables allow duplicates (unless you declare `UNIQUE` or
- `PRIMARY KEY`). To get true relational behavior, you must use `SELECT DISTINCT`.
+   `PRIMARY KEY`). To get true relational behavior, you must use `SELECT DISTINCT`.
 2. **No ordering of tuples** -- SQL `ORDER BY` operates on the result set, not on the base relation.
- A table has no inherent row order.
+   A table has no inherent row order.
 3. **Attributes are identified by name, not position** -- SQL allows `SELECT *` which relies on
- column ordering. This is a deviation from the theory.
+   column ordering. This is a deviation from the theory.
 
 ### Domains
 
@@ -143,13 +146,13 @@ CREATE TABLE orders (
 
 Referential actions:
 
-| Action | Behavior |
+| Action        | Behavior                                                            |
 | ------------- | ------------------------------------------------------------------- |
-| `CASCADE` | Propagate the delete/update to child rows |
-| `RESTRICT` | Block the delete/update if child rows exist |
-| `SET NULL` | Set the foreign key to NULL in child rows |
-| `SET DEFAULT` | Set the foreign key to its default value in child rows |
-| `NO ACTION` | Defer check to end of transaction (similar to RESTRICT in practice) |
+| `CASCADE`     | Propagate the delete/update to child rows                           |
+| `RESTRICT`    | Block the delete/update if child rows exist                         |
+| `SET NULL`    | Set the foreign key to NULL in child rows                           |
+| `SET DEFAULT` | Set the foreign key to its default value in child rows              |
+| `NO ACTION`   | Defer check to end of transaction (similar to RESTRICT in practice) |
 
 ### Composite Key
 
@@ -212,14 +215,14 @@ Trillions of rows and exhaust memory.
 A join combines related tuples from two relations based on a join condition. The most common is the
 Natural join, which matches on attributes with the same name.
 
-| Join Type | Description |
+| Join Type   | Description                                                        |
 | ----------- | ------------------------------------------------------------------ |
-| Inner Join | Returns tuples from both relations that satisfy the join condition |
-| Left Outer | All tuples from left, matched tuples from right (NULL if no match) |
+| Inner Join  | Returns tuples from both relations that satisfy the join condition |
+| Left Outer  | All tuples from left, matched tuples from right (NULL if no match) |
 | Right Outer | All tuples from right, matched tuples from left (NULL if no match) |
-| Full Outer | All tuples from both relations (NULL where no match) |
-| Theta Join | General join with arbitrary condition $\theta$ |
-| Equi Join | Theta join where $\theta$ is equality on specific attributes |
+| Full Outer  | All tuples from both relations (NULL where no match)               |
+| Theta Join  | General join with arbitrary condition $\theta$                     |
+| Equi Join   | Theta join where $\theta$ is equality on specific attributes       |
 
 The inner join can be expressed in terms of selection and Cartesian product:
 
@@ -229,8 +232,8 @@ $$R \bowtie_{\theta} S = \sigma_{\theta}(R \times S)$$
 
 Division answers "which X values are associated with ALL Y values?" Denoted $R \div S$.
 
-Given `Takes(student, course)` and `RequiredCourse(course)`Find students who have taken ALL
-Required courses:
+Given `Takes(student, course)` and `RequiredCourse(course)`Find students who have taken ALL Required
+courses:
 
 $$\pi_{\mathrm{student{}, \mathrm{course{}}(\mathrm{Takes{}) \div \pi_{\mathrm{course{}}(\mathrm{RequiredCourse{})$$
 
@@ -286,8 +289,8 @@ JOIN Employee M ON E.manager_id = M.emp_id;
 ## Functional Dependencies
 
 A functional dependency (FD) is a constraint of the form $X \rightarrow Y$Meaning "for any two
-Tuples, if they agree on all attributes in $X$They must also agree on all attributes in $Y$." $X$
-Is called the determinant.
+Tuples, if they agree on all attributes in $X$They must also agree on all attributes in $Y$." $X$ Is
+called the determinant.
 
 Formally:
 
@@ -304,7 +307,7 @@ For a relation `Student(student_id, name, email, major, advisor_id, advisor_name
 ### Trivial vs Non-trivial
 
 - **Trivial:** $Y \subseteq X$ (e.g., `{student_id} → {student_id}`) -- always true, provides no
- information
+  information
 - **Non-trivial:** $Y \not\subseteq X$ -- carries actual semantic meaning
 - **Completely non-trivial:** $X \cap Y = \emptyset$
 
@@ -358,7 +361,7 @@ Algorithm:
 1. Split right sides: replace $X \rightarrow YZ$ with $X \rightarrow Y$ and $X \rightarrow Z$
 2. Remove redundant FDs: for each FD $f \in F$Check if $(F - \{f\})^+ = F^+$. If yes, remove $f$.
 3. Remove redundant attributes from left sides: for each FD $X \rightarrow Y$ and each attribute
- $A \in X$Check if $(X - \{A\})^+ \supseteq Y$. If yes, remove $A$ from $X$.
+   $A \in X$Check if $(X - \{A\})^+ \supseteq Y$. If yes, remove $A$ from $X$.
 
 ## Normalisation
 
@@ -370,11 +373,11 @@ Anomalies. Each normal form addresses specific types of redundancy.
 Unnormalised data suffers from three types of anomalies:
 
 - **Insertion anomaly:** You cannot insert a fact without inserting unrelated facts (e.g., cannot
- add a new department without an employee)
+  add a new department without an employee)
 - **Deletion anomaly:** Deleting a fact unintentionally deletes other facts (e.g., deleting the last
- employee in a department removes the department)
+  employee in a department removes the department)
 - **Update anomaly:** Updating a fact requires updating multiple rows (e.g., changing a department
- name requires updating every employee in that department)
+  name requires updating every employee in that department)
 
 ### First Normal Form (1NF)
 
@@ -476,8 +479,8 @@ The practical compromise.
 ### Fourth Normal Form (4NF)
 
 A relation is in 4NF if it is in BCNF and contains no non-trivial multivalued dependencies. A
-Multivalued dependency $X \twoheadrightarrow Y$ means: for each value of $X$The set of $Y$ values
-Is independent of the set of $Z$ values (where $Z = R - X - Y$).
+Multivalued dependency $X \twoheadrightarrow Y$ means: for each value of $X$The set of $Y$ values Is
+independent of the set of $Z$ values (where $Z = R - X - Y$).
 
 ```text
 R(emp_id, skill, language)
@@ -515,11 +518,11 @@ Workloads, strategic denormalisation trades write complexity for read performanc
 ### Patterns
 
 1. **Precomputed aggregates:** store `total_order_value` alongside order rows instead of computing
- it from `order_items` on every read
+   it from `order_items` on every read
 2. **Embedded documents:** in NoSQL stores, embed frequently accessed related data (e.g., order
- items inside the order document)
+   items inside the order document)
 3. **Copy fields:** duplicate a frequently-filtered field (e.g., `customer_name` in the `orders`
- table) to avoid joins
+   table) to avoid joins
 4. **Materialised views:** precomputed query results that are refreshed on a schedule or trigger
 
 ### Trade-offs
@@ -592,19 +595,19 @@ erDiagram
 
 ### Cardinality Constraints
 
-| Notation | Meaning |
+| Notation  | Meaning                                  |
 | --------- | ---------------------------------------- |
-| 1:1 | Each entity relates to exactly one other |
-| 1:N | One entity relates to many others |
-| M:N | Many entities relate to many others |
-| 0..1:1..N | Optional/mandatory cardinalities |
+| 1:1       | Each entity relates to exactly one other |
+| 1:N       | One entity relates to many others        |
+| M:N       | Many entities relate to many others      |
+| 0..1:1..N | Optional/mandatory cardinalities         |
 
 ### Converting ER Diagrams to Relations
 
 1. **Strong entities** become tables with their attributes as columns
 2. **Weak entities** become tables that include the primary key of the identifying (owner) entity
 3. **1:1 relationships:** add the foreign key to either table (prefer the table where NULL is less
- common)
+   common)
 4. **1:N relationships:** add the foreign key to the "N" side
 5. **M:N relationships:** create an association table with composite primary key
 
@@ -732,8 +735,8 @@ Relational algebra with some relational calculus influences.
 
 The universal relation assumption states that all attributes have globally unique names and that any
 Attribute can be related to any other. This assumption underlies many visual query tools and some
-ORM systems, but it does not hold in practice. Attributes named `id``name`Or `type` appear in
-Many tables with completely different semantics.
+ORM systems, but it does not hold in practice. Attributes named `id``name`Or `type` appear in Many
+tables with completely different semantics.
 
 Implication: always qualify column names with their table (or alias) in queries, and use descriptive
 Names that reflect the domain (e.g., `customer_id` instead of `id`).

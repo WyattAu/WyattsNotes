@@ -1,23 +1,39 @@
 ---
 title: Concurrency
-description: "Concurrency — The Java Memory Model; Why the Memory Model Matters; Happens-Before Rules; Safe Publication with worked examples and exam-style questions."
+description:
+  'Concurrency — The Java Memory Model; Why the Memory Model Matters; Happens-Before Rules; Safe
+  Publication with worked examples and exam-style questions.'
 date: 2025-06-05T15:00:00.000Z
-tags: ["java"]
-categories: ["java"]
+tags: ['java']
+categories: ['java']
 slug: concurrency
 sidebar_position: 1
 ---
+
 ## Why Concurrency Is Hard
 
-Concurrency is not parallelism. Concurrency is about _dealing with_ many things at once; parallelism is about _doing_ many things at once. A single-core processor running an event loop is concurrent but not parallel. A GPU running thousands of identical matrix multiplications is parallel but may not be concurrent in any meaningful sense. Java has supported concurrency since JDK 1.0 via the `Thread` class, and the platform has accumulated nearly three decades of concurrency primitives, each added to address the failure modes of its predecessors.
+Concurrency is not parallelism. Concurrency is about _dealing with_ many things at once; parallelism
+is about _doing_ many things at once. A single-core processor running an event loop is concurrent
+but not parallel. A GPU running thousands of identical matrix multiplications is parallel but may
+not be concurrent in any meaningful sense. Java has supported concurrency since JDK 1.0 via the
+`Thread` class, and the platform has accumulated nearly three decades of concurrency primitives,
+each added to address the failure modes of its predecessors.
 
-The fundamental difficulty of concurrent programming is that the number of possible interleavings of even two threads grows exponentially with the number of shared-memory operations. A bug that manifests once in a billion executions is still a bug, and it is still catastrophic in production. The Java Memory Model (JMM), introduced in JSR-133 (JDK 5), exists precisely to draw a line between "guaranteed correct" and "correct on my machine."
+The fundamental difficulty of concurrent programming is that the number of possible interleavings of
+even two threads grows exponentially with the number of shared-memory operations. A bug that
+manifests once in a billion executions is still a bug, and it is still catastrophic in production.
+The Java Memory Model (JMM), introduced in JSR-133 (JDK 5), exists precisely to draw a line between
+"guaranteed correct" and "correct on my machine."
 
 ## The Java Memory Model
 
 ### Why the Memory Model Matters
 
-On modern hardware, a write to a variable by one thread is not instantly visible to all other threads. Each CPU core has its own cache (L1, L2, L3), and the store buffer may hold writes that have not yet been flushed to main memory. Worse, the compiler and CPU may reorder instructions for optimization purposes, so even a program whose source code appears to execute operations in a specific order may have those operations reordered at the hardware level.
+On modern hardware, a write to a variable by one thread is not instantly visible to all other
+threads. Each CPU core has its own cache (L1, L2, L3), and the store buffer may hold writes that
+have not yet been flushed to main memory. Worse, the compiler and CPU may reorder instructions for
+optimization purposes, so even a program whose source code appears to execute operations in a
+specific order may have those operations reordered at the hardware level.
 
 Without a memory model, the following program could behave unpredictably:
 
@@ -31,29 +47,39 @@ if (ready) {
 }
 ```
 
-The compiler might reorder `ready = true` before the write to `result` (or vice versa) because it sees no data dependency between them. The CPU might write `ready` to its store buffer while `result` sits in a cache line that has not been flushed. Thread B might read the stale value of `result` from its own cache even after seeing `ready = true`.
+The compiler might reorder `ready = true` before the write to `result` (or vice versa) because it
+sees no data dependency between them. The CPU might write `ready` to its store buffer while `result`
+sits in a cache line that has not been flushed. Thread B might read the stale value of `result` from
+its own cache even after seeing `ready = true`.
 
-The JMM defines a partial ordering called **happens-before** that specifies when one operation is guaranteed to be visible to another. If operation A happens-before operation B, then the effects of A are visible to B. The happens-before relationship is the contract between the programmer and the runtime: if you establish a happens-before edge, the JVM and hardware are obligated to make the write visible.
+The JMM defines a partial ordering called **happens-before** that specifies when one operation is
+guaranteed to be visible to another. If operation A happens-before operation B, then the effects of
+A are visible to B. The happens-before relationship is the contract between the programmer and the
+runtime: if you establish a happens-before edge, the JVM and hardware are obligated to make the
+write visible.
 
 ### Happens-Before Rules
 
 The JMM defines the following happens-before relationships:
 
-| Rule | Description |
+| Rule               | Description                                                                                          |
 | ------------------ | ---------------------------------------------------------------------------------------------------- |
-| **Program order** | Each action in a thread happens-before every action that comes later in that thread's program order. |
-| **Monitor lock** | An unlock on a monitor happens-before every subsequent lock on that same monitor. |
-| **volatile** | A write to a `volatile` field happens-before every subsequent read of that same field. |
-| **Thread start** | A call to `Thread.start()` happens-before any action in the started thread. |
-| **Thread join** | All actions in a thread happen-before a return from `Thread.join()` on that thread. |
-| **Transitivity** | If A happens-before B, and B happens-before C, then A happens-before C. |
-| **Interruption** | `Thread.interrupt()` happens-before any thread detects that it has been interrupted. |
-| **Finalizer** | The end of a constructor happens-before the start of a finalizer. |
-| **Initialization** | The static initializer of a class happens-before any use of that class. |
+| **Program order**  | Each action in a thread happens-before every action that comes later in that thread's program order. |
+| **Monitor lock**   | An unlock on a monitor happens-before every subsequent lock on that same monitor.                    |
+| **volatile**       | A write to a `volatile` field happens-before every subsequent read of that same field.               |
+| **Thread start**   | A call to `Thread.start()` happens-before any action in the started thread.                          |
+| **Thread join**    | All actions in a thread happen-before a return from `Thread.join()` on that thread.                  |
+| **Transitivity**   | If A happens-before B, and B happens-before C, then A happens-before C.                              |
+| **Interruption**   | `Thread.interrupt()` happens-before any thread detects that it has been interrupted.                 |
+| **Finalizer**      | The end of a constructor happens-before the start of a finalizer.                                    |
+| **Initialization** | The static initializer of a class happens-before any use of that class.                              |
 
 ### Safe Publication
 
-An object is said to be _safely published_ when a reference to it is made visible to other threads in a way that guarantees all threads see the object in its fully constructed state. Without safe publication, other threads may see a partially constructed object (the notorious "partially constructed object" problem).
+An object is said to be _safely published_ when a reference to it is made visible to other threads
+in a way that guarantees all threads see the object in its fully constructed state. Without safe
+publication, other threads may see a partially constructed object (the notorious "partially
+constructed object" problem).
 
 There are exactly four ways to safely publish an object in Java:
 
@@ -98,15 +124,17 @@ public class SafePublisher {
 }
 ```
 
-:::warning
-Publication via a normal (non-volatile, non-final) field is never safe. Even if Thread A writes the reference after constructing the object, the JIT compiler may reorder the write to `holder` before the writes to the object's fields during construction. This is not theoretical -- it has been observed in practice on x86, ARM, and every major architecture.
-:::
+:::warning Publication via a normal (non-volatile, non-final) field is never safe. Even if Thread A
+writes the reference after constructing the object, the JIT compiler may reorder the write to
+`holder` before the writes to the object's fields during construction. This is not theoretical -- it
+has been observed in practice on x86, ARM, and every major architecture. :::
 
 ## Threads
 
 ### Thread Creation: Runnable and Callable
 
-Java provides two core abstractions for units of concurrent work: `Runnable` (no result, no checked exceptions) and `Callable<V>` (returns a result, can throw checked exceptions).
+Java provides two core abstractions for units of concurrent work: `Runnable` (no result, no checked
+exceptions) and `Callable<V>` (returns a result, can throw checked exceptions).
 
 ```java
 // Runnable -- fire and forget
@@ -134,7 +162,9 @@ thread.join();    // blocks until the thread completes
 
 ### Future and FutureTask
 
-A `Future` represents the result of an asynchronous computation. It is a read-only handle: you can check if the computation is complete, wait for it, and retrieve the result, but you cannot compose it.
+A `Future` represents the result of an asynchronous computation. It is a read-only handle: you can
+check if the computation is complete, wait for it, and retrieve the result, but you cannot compose
+it.
 
 ```java
 ExecutorService executor = Executors.newSingleThreadExecutor();
@@ -162,7 +192,8 @@ executor.shutdown();
 
 ### Thread Lifecycle
 
-Every Java thread moves through a well-defined set of states during its lifetime. Understanding these states is essential for debugging deadlocks, livelocks, and performance problems.
+Every Java thread moves through a well-defined set of states during its lifetime. Understanding
+these states is essential for debugging deadlocks, livelocks, and performance problems.
 
 ```mermaid
 stateDiagram-v2
@@ -184,24 +215,27 @@ stateDiagram-v2
     TERMINATED --> [*]
 ```
 
-| State | Description |
+| State             | Description                                                                                                              |
 | ----------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| **NEW** | Thread has been created but `start()` has not been called. |
-| **RUNNABLE** | Thread is eligible to run. It may be currently executing or waiting for CPU time. The JVM maps this to the OS scheduler. |
-| **BLOCKED** | Thread is waiting to acquire a monitor lock to enter or re-enter a `synchronized` block/method. |
-| **WAITING** | Thread is waiting indefinitely for another thread to perform a particular action (e.g., `notify()`). |
-| **TIMED_WAITING** | Thread is waiting for another thread to perform an action, but with a specified maximum wait time. |
-| **TERMINATED** | Thread has completed execution of its `run()` method. |
+| **NEW**           | Thread has been created but `start()` has not been called.                                                               |
+| **RUNNABLE**      | Thread is eligible to run. It may be currently executing or waiting for CPU time. The JVM maps this to the OS scheduler. |
+| **BLOCKED**       | Thread is waiting to acquire a monitor lock to enter or re-enter a `synchronized` block/method.                          |
+| **WAITING**       | Thread is waiting indefinitely for another thread to perform a particular action (e.g., `notify()`).                     |
+| **TIMED_WAITING** | Thread is waiting for another thread to perform an action, but with a specified maximum wait time.                       |
+| **TERMINATED**    | Thread has completed execution of its `run()` method.                                                                    |
 
-:::info
-`RUNNABLE` in the JVM state machine does not distinguish between "currently executing on a CPU core" and "ready to execute but waiting for CPU time." The JVM delegates scheduling to the operating system, and the OS distinguishes between these two conditions (running vs. Runnable in the OS run queue). From the JVM's perspective, both are `RUNNABLE`.
-:::
+:::info `RUNNABLE` in the JVM state machine does not distinguish between "currently executing on a
+CPU core" and "ready to execute but waiting for CPU time." The JVM delegates scheduling to the
+operating system, and the OS distinguishes between these two conditions (running vs. Runnable in the
+OS run queue). From the JVM's perspective, both are `RUNNABLE`. :::
 
 ## Synchronized
 
 ### Intrinsic Locks (Monitors)
 
-Every Java object has an intrinsic lock (also called a monitor lock or mutex). When a thread enters a `synchronized` block, it acquires the monitor. When it exits, it releases it. Only one thread can hold a monitor at a time.
+Every Java object has an intrinsic lock (also called a monitor lock or mutex). When a thread enters
+a `synchronized` block, it acquires the monitor. When it exits, it releases it. Only one thread can
+hold a monitor at a time.
 
 ```java
 public class Counter {
@@ -229,7 +263,9 @@ public class Counter {
 
 ### Reentrancy
 
-Intrinsic locks are **reentrant**: if a thread already holds the lock on an object, it can re-enter any `synchronized` block or method on that same object without deadlocking. The JVM keeps a hold count per thread per monitor. The lock is released only when the hold count drops to zero.
+Intrinsic locks are **reentrant**: if a thread already holds the lock on an object, it can re-enter
+any `synchronized` block or method on that same object without deadlocking. The JVM keeps a hold
+count per thread per monitor. The lock is released only when the hold count drops to zero.
 
 ```java
 public class ReentrantExample {
@@ -249,17 +285,28 @@ public class ReentrantExample {
 
 ### Why synchronized Was Problematic
 
-`synchronized` has several well-documented shortcomings that motivated the development of `java.util.concurrent.locks`:
+`synchronized` has several well-documented shortcomings that motivated the development of
+`java.util.concurrent.locks`:
 
-1. **No fairness control.** The JVM makes no guarantees about which waiting thread acquires the lock when it becomes available. A thread that has been waiting the longest may starve indefinitely while new threads repeatedly acquire the lock.
+1. **No fairness control.** The JVM makes no guarantees about which waiting thread acquires the lock
+   when it becomes available. A thread that has been waiting the longest may starve indefinitely
+   while new threads repeatedly acquire the lock.
 
-2. **No try-lock.** If a thread calls `synchronized`It blocks indefinitely until the lock is available. There is no way to attempt acquisition with a timeout, which makes it impossible to implement deadlock-avoidance strategies.
+2. **No try-lock.** If a thread calls `synchronized`It blocks indefinitely until the lock is
+   available. There is no way to attempt acquisition with a timeout, which makes it impossible to
+   implement deadlock-avoidance strategies.
 
-3. **No interruptibility.** A thread blocked waiting to acquire a monitor lock cannot be interrupted -- it will not respond to `Thread.interrupt()` until it actually acquires the lock.
+3. **No interruptibility.** A thread blocked waiting to acquire a monitor lock cannot be interrupted
+   -- it will not respond to `Thread.interrupt()` until it actually acquires the lock.
 
-4. **Single condition variable.** A monitor has exactly one wait set (the set of threads that called `wait()`). If a class needs multiple conditions (e.g., "not full" and "not empty" for a bounded buffer), the programmer must use `notifyAll()` and check the condition in a loop, which is error-prone and wasteful.
+4. **Single condition variable.** A monitor has exactly one wait set (the set of threads that called
+   `wait()`). If a class needs multiple conditions (e.g., "not full" and "not empty" for a bounded
+   buffer), the programmer must use `notifyAll()` and check the condition in a loop, which is
+   error-prone and wasteful.
 
-5. **No read-write differentiation.** A `synchronized` block excludes all other threads, even those that only want to read. For data structures with a high read-to-write ratio, this is a significant performance bottleneck.
+5. **No read-write differentiation.** A `synchronized` block excludes all other threads, even those
+   that only want to read. For data structures with a high read-to-write ratio, this is a
+   significant performance bottleneck.
 
 ```java
 // The classic bounded buffer -- single condition variable, must use notifyAll()
@@ -298,17 +345,23 @@ public class BoundedBuffer<V> {
 }
 ```
 
-:::warning
-Always use `wait()` inside a `while` loop, never an `if` statement. The JMM permits **spurious wakeups** -- a thread may return from `wait()` without `notify()` or `notifyAll()` being called. The condition must be re-checked after every wakeup. This is not a theoretical concern; it is mandated by the POSIX specification and the JLS.
-:::
+:::warning Always use `wait()` inside a `while` loop, never an `if` statement. The JMM permits
+**spurious wakeups** -- a thread may return from `wait()` without `notify()` or `notifyAll()` being
+called. The condition must be re-checked after every wakeup. This is not a theoretical concern; it
+is mandated by the POSIX specification and the JLS. :::
 
 ## Volatile
 
-The `volatile` keyword provides a lighter-weight synchronization mechanism than `synchronized`. A `volatile` field has two guarantees:
+The `volatile` keyword provides a lighter-weight synchronization mechanism than `synchronized`. A
+`volatile` field has two guarantees:
 
-1. **Visibility:** A write to a `volatile` variable is immediately visible to all other threads. The JVM inserts memory barriers (on x86, a `lock addl` instruction; on ARM, `dmb ish`) that prevent the write from being reordered with subsequent operations and force cache coherence.
+1. **Visibility:** A write to a `volatile` variable is immediately visible to all other threads. The
+   JVM inserts memory barriers (on x86, a `lock addl` instruction; on ARM, `dmb ish`) that prevent
+   the write from being reordered with subsequent operations and force cache coherence.
 
-2. **Ordering:** Reads and writes to `volatile` variables cannot be reordered with respect to each other or with respect to reads and writes to non-volatile variables that occur before or after them in program order. This is the "happens-before" guarantee.
+2. **Ordering:** Reads and writes to `volatile` variables cannot be reordered with respect to each
+   other or with respect to reads and writes to non-volatile variables that occur before or after
+   them in program order. This is the "happens-before" guarantee.
 
 ```java
 public class VolatileFlag {
@@ -342,11 +395,14 @@ public class VolatileCounter {
 }
 ```
 
-Two threads calling `increment()` simultaneously can both read `count = 0`Both increment to `1`And both write `1`Losing one increment. For atomic compound operations, use `AtomicInteger` or `synchronized`.
+Two threads calling `increment()` simultaneously can both read `count = 0`Both increment to `1`And
+both write `1`Losing one increment. For atomic compound operations, use `AtomicInteger` or
+`synchronized`.
 
 ### The Double-Checked Locking Idiom
 
-Before `volatile` was properly specified in JSR-133 (JDK 5), the double-checked locking idiom was broken. The fix requires `volatile`:
+Before `volatile` was properly specified in JSR-133 (JDK 5), the double-checked locking idiom was
+broken. The fix requires `volatile`:
 
 ```java
 public class Singleton {
@@ -373,13 +429,19 @@ public class Singleton {
 }
 ```
 
-The local variable `result` avoids reading the volatile field more than once in the common (already-initialized) case. This is a micro-optimization that HotSpot applies automatically, but making it explicit ensures correctness across all JVMs.
+The local variable `result` avoids reading the volatile field more than once in the common
+(already-initialized) case. This is a micro-optimization that HotSpot applies automatically, but
+making it explicit ensures correctness across all JVMs.
 
 ## ExecutorService and Thread Pools
 
 ### Why Raw Threads Are Wrong
 
-Creating a `new Thread()` for every unit of work is wrong for three reasons: (1) thread creation is expensive (each OS thread allocates a ~1MB stack and requires a system call), (2) there is no bound on the number of concurrent threads, so a spike in load can exhaust system resources (OutOfMemoryError), and (3) there is no reuse -- threads are created and destroyed rather than being recycled. The `ExecutorService` abstraction solves all three problems.
+Creating a `new Thread()` for every unit of work is wrong for three reasons: (1) thread creation is
+expensive (each OS thread allocates a ~1MB stack and requires a system call), (2) there is no bound
+on the number of concurrent threads, so a spike in load can exhaust system resources
+(OutOfMemoryError), and (3) there is no reuse -- threads are created and destroyed rather than being
+recycled. The `ExecutorService` abstraction solves all three problems.
 
 ### The Executors Factory
 
@@ -405,13 +467,15 @@ fixedPool.awaitTermination(10, TimeUnit.SECONDS);
 fixedPool.shutdownNow();  // forceful shutdown -- interrupts running tasks
 ```
 
-:::danger
-Never use `Executors.newCachedThreadPool()` in production code. It creates a new thread for every submitted task when the pool is saturated, which means a sudden burst of 100,000 tasks creates 100,000 OS threads and almost certainly crashes the JVM with an `OutOfMemoryError: unable to create new native thread`. Always use a bounded pool.
-:::
+:::danger Never use `Executors.newCachedThreadPool()` in production code. It creates a new thread
+for every submitted task when the pool is saturated, which means a sudden burst of 100,000 tasks
+creates 100,000 OS threads and almost certainly crashes the JVM with an
+`OutOfMemoryError: unable to create new native thread`. Always use a bounded pool. :::
 
 ### ThreadPoolExecutor: The Complete Picture
 
-`Executors` factory methods are thin wrappers around `ThreadPoolExecutor`. Understanding the underlying parameters is essential for production configuration:
+`Executors` factory methods are thin wrappers around `ThreadPoolExecutor`. Understanding the
+underlying parameters is essential for production configuration:
 
 ```java
 ThreadPoolExecutor executor = new ThreadPoolExecutor(
@@ -439,21 +503,27 @@ ThreadPoolExecutor executor = new ThreadPoolExecutor(
 
 1. If fewer than `corePoolSize` threads are running, a new thread is created.
 2. If all core threads are busy and the queue is not full, the task is queued.
-3. If the queue is full and fewer than `maximumPoolSize` threads are running, a new thread is created.
-4. If the queue is full and `maximumPoolSize` threads are running, the task is rejected (handled by the `RejectedExecutionHandler`).
+3. If the queue is full and fewer than `maximumPoolSize` threads are running, a new thread is
+   created.
+4. If the queue is full and `maximumPoolSize` threads are running, the task is rejected (handled by
+   the `RejectedExecutionHandler`).
 
-| Rejection Policy | Behavior |
+| Rejection Policy      | Behavior                                                              |
 | --------------------- | --------------------------------------------------------------------- |
-| `AbortPolicy` | Throws `RejectedExecutionException` (default). |
-| `CallerRunsPolicy` | The calling thread executes the task itself -- provides backpressure. |
-| `DiscardPolicy` | Silently discards the task. |
-| `DiscardOldestPolicy` | Discards the oldest queued task and retries submission. |
+| `AbortPolicy`         | Throws `RejectedExecutionException` (default).                        |
+| `CallerRunsPolicy`    | The calling thread executes the task itself -- provides backpressure. |
+| `DiscardPolicy`       | Silently discards the task.                                           |
+| `DiscardOldestPolicy` | Discards the oldest queued task and retries submission.               |
 
 ## CompletableFuture
 
 ### Why CompletableFuture Exists
 
-`Future` is a read-only promise: you can call `get()` to block until the result is ready, but you cannot attach callbacks, compose multiple futures, or handle errors declaratively. `CompletableFuture<T>`Introduced in JDK 8, implements the `CompletionStage<T>` interface and provides a fluent API for composing asynchronous computations. It is to `Future` what `Stream` is to `Collection`: a composable, chainable abstraction that eliminates boilerplate.
+`Future` is a read-only promise: you can call `get()` to block until the result is ready, but you
+cannot attach callbacks, compose multiple futures, or handle errors declaratively.
+`CompletableFuture<T>`Introduced in JDK 8, implements the `CompletionStage<T>` interface and
+provides a fluent API for composing asynchronous computations. It is to `Future` what `Stream` is to
+`Collection`: a composable, chainable abstraction that eliminates boilerplate.
 
 ### Transformation and Composition
 
@@ -568,7 +638,10 @@ graph LR
 
 ### ConcurrentHashMap
 
-`ConcurrentHashMap` is a hash table that supports full concurrency of retrievals and high expected concurrency for updates. Unlike `Hashtable` or `Collections.synchronizedMap()`It does not lock the entire map for writes. Instead, it uses a **striped lock** strategy (JDK 7: lock striping with 16 segments; JDK 8+: CAS on individual bucket nodes).
+`ConcurrentHashMap` is a hash table that supports full concurrency of retrievals and high expected
+concurrency for updates. Unlike `Hashtable` or `Collections.synchronizedMap()`It does not lock the
+entire map for writes. Instead, it uses a **striped lock** strategy (JDK 7: lock striping with 16
+segments; JDK 8+: CAS on individual bucket nodes).
 
 ```java
 ConcurrentHashMap<String, AtomicInteger> counts = new ConcurrentHashMap<>();
@@ -595,13 +668,16 @@ counts.forEach(2, (key, value) -> {
 });
 ```
 
-:::info
-The iteration semantics of `ConcurrentHashMap` are **weakly consistent**: the iterator reflects the state of the map at some point during or since the creation of the iterator. It will never throw `ConcurrentModificationException` and is guaranteed to see each element at most once, but it may miss elements that were added after the iterator was created.
-:::
+:::info The iteration semantics of `ConcurrentHashMap` are **weakly consistent**: the iterator
+reflects the state of the map at some point during or since the creation of the iterator. It will
+never throw `ConcurrentModificationException` and is guaranteed to see each element at most once,
+but it may miss elements that were added after the iterator was created. :::
 
 ### CopyOnWriteArrayList
 
-`CopyOnWriteArrayList` creates a new copy of the underlying array on every write operation. Reads are lock-free and see a snapshot of the array at the time the read began. This is optimal for read-heavy workloads where writes are rare.
+`CopyOnWriteArrayList` creates a new copy of the underlying array on every write operation. Reads
+are lock-free and see a snapshot of the array at the time the read began. This is optimal for
+read-heavy workloads where writes are rare.
 
 ```java
 CopyOnWriteArrayList<String> listeners = new CopyOnWriteArrayList<>();
@@ -618,7 +694,8 @@ for (String listener : listeners) {
 
 ### BlockingQueue
 
-`BlockingQueue` is a queue that supports blocking on `put()` (when full) and `take()` (when empty). It is the foundation of the producer-consumer pattern.
+`BlockingQueue` is a queue that supports blocking on `put()` (when full) and `take()` (when empty).
+It is the foundation of the producer-consumer pattern.
 
 ```java
 BlockingQueue<String> queue = new LinkedBlockingQueue<>(100);
@@ -647,16 +724,18 @@ executor.submit(producer);
 executor.submit(consumer);
 ```
 
-| Implementation | Ordering | Bounded | Notes |
+| Implementation          | Ordering                         | Bounded                                  | Notes                                                                |
 | ----------------------- | -------------------------------- | ---------------------------------------- | -------------------------------------------------------------------- |
-| `ArrayBlockingQueue` | FIFO | Yes (fixed capacity) | Backed by a circular array. |
-| `LinkedBlockingQueue` | FIFO | Optional (defaults to Integer.MAX_VALUE) | Backed by linked nodes. |
-| `PriorityBlockingQueue` | Priority (natural or Comparator) | No (grows as needed) | `take()` always returns the head (lowest-priority element). |
-| `SynchronousQueue` | None (handoff) | Always zero capacity | `put()` blocks until a `take()` arrives. Direct handoff, no storage. |
+| `ArrayBlockingQueue`    | FIFO                             | Yes (fixed capacity)                     | Backed by a circular array.                                          |
+| `LinkedBlockingQueue`   | FIFO                             | Optional (defaults to Integer.MAX_VALUE) | Backed by linked nodes.                                              |
+| `PriorityBlockingQueue` | Priority (natural or Comparator) | No (grows as needed)                     | `take()` always returns the head (lowest-priority element).          |
+| `SynchronousQueue`      | None (handoff)                   | Always zero capacity                     | `put()` blocks until a `take()` arrives. Direct handoff, no storage. |
 
 ### ConcurrentLinkedQueue
 
-`ConcurrentLinkedQueue` is an unbounded, lock-free, FIFO queue based on the Michael-Scott queue algorithm. It uses CAS (compare-and-set) operations instead of locks, which makes it non-blocking but more complex internally.
+`ConcurrentLinkedQueue` is an unbounded, lock-free, FIFO queue based on the Michael-Scott queue
+algorithm. It uses CAS (compare-and-set) operations instead of locks, which makes it non-blocking
+but more complex internally.
 
 ```java
 ConcurrentLinkedQueue<String> queue = new ConcurrentLinkedQueue<>();
@@ -670,7 +749,9 @@ String peek = queue.peek();  // non-blocking inspect -- returns null if empty
 
 ## Atomic Classes
 
-The `java.util.concurrent.atomic` package provides lock-free, thread-safe variables that support atomic read-modify-write operations. They are built on top of CPU-level CAS (compare-and-swap) instructions.
+The `java.util.concurrent.atomic` package provides lock-free, thread-safe variables that support
+atomic read-modify-write operations. They are built on top of CPU-level CAS (compare-and-swap)
+instructions.
 
 ### AtomicInteger
 
@@ -715,7 +796,8 @@ currentUser.compareAndSet(
 
 ### How CAS Works
 
-CAS is a single hardware instruction (e.g., `cmpxchg` on x86, `LDXR/STXR` on ARM) that atomically performs:
+CAS is a single hardware instruction (e.g., `cmpxchg` on x86, `LDXR/STXR` on ARM) that atomically
+performs:
 
 ```
 if (currentValue == expectedValue) {
@@ -726,7 +808,8 @@ if (currentValue == expectedValue) {
 }
 ```
 
-If the CAS fails (because another thread modified the value between the read and the write), the caller retries. This is the core of lock-free algorithms:
+If the CAS fails (because another thread modified the value between the read and the write), the
+caller retries. This is the core of lock-free algorithms:
 
 ```java
 // Simplified implementation of AtomicInteger.incrementAndGet()
@@ -741,15 +824,19 @@ public final int incrementAndGet() {
 }
 ```
 
-:::info
-Under high contention (many threads repeatedly failing CAS on the same cache line), atomic classes can suffer from **cache line contention** (also called "false sharing"). Each failed CAS triggers a cache coherence protocol invalidation on the cache line holding the atomic variable, which can cause severe performance degradation. In extreme cases, a lock-based approach can outperform lock-free CAS.
-:::
+:::info Under high contention (many threads repeatedly failing CAS on the same cache line), atomic
+classes can suffer from **cache line contention** (also called "false sharing"). Each failed CAS
+triggers a cache coherence protocol invalidation on the cache line holding the atomic variable,
+which can cause severe performance degradation. In extreme cases, a lock-based approach can
+outperform lock-free CAS. :::
 
 ## Explicit Locks
 
 ### ReentrantLock
 
-`ReentrantLock` is a mutual exclusion lock with the same basic behavior as `synchronized` but with extended capabilities: fair scheduling, try-lock with timeout, interruptible lock acquisition, and multiple condition variables.
+`ReentrantLock` is a mutual exclusion lock with the same basic behavior as `synchronized` but with
+extended capabilities: fair scheduling, try-lock with timeout, interruptible lock acquisition, and
+multiple condition variables.
 
 ```java
 public class BoundedBufferWithLock<V> {
@@ -799,7 +886,9 @@ public class BoundedBufferWithLock<V> {
 
 ### ReadWriteLock
 
-`ReadWriteLock` maintains a pair of associated locks: one for read operations and one for write operations. Multiple threads can hold the read lock simultaneously, but only one thread can hold the write lock (and no read locks can be held concurrently with the write lock).
+`ReadWriteLock` maintains a pair of associated locks: one for read operations and one for write
+operations. Multiple threads can hold the read lock simultaneously, but only one thread can hold the
+write lock (and no read locks can be held concurrently with the write lock).
 
 ```java
 public class ThreadSafeCache<K, V> {
@@ -826,13 +915,16 @@ public class ThreadSafeCache<K, V> {
 }
 ```
 
-:::warning
-`ReentrantReadWriteLock` is not reentrant between read and write locks. A thread holding the read lock cannot acquire the write lock (it will deadlock). A thread holding the write lock can acquire the read lock (downgrade), but a thread holding the read lock cannot upgrade to the write lock.
-:::
+:::warning `ReentrantReadWriteLock` is not reentrant between read and write locks. A thread holding
+the read lock cannot acquire the write lock (it will deadlock). A thread holding the write lock can
+acquire the read lock (downgrade), but a thread holding the read lock cannot upgrade to the write
+lock. :::
 
 ### StampedLock
 
-`StampedLock`Introduced in JDK 8, provides an optimistic read mode that does not block writers. It uses a single `long` stamp to represent the lock state, which makes it more memory-efficient than `ReadWriteLock`.
+`StampedLock`Introduced in JDK 8, provides an optimistic read mode that does not block writers. It
+uses a single `long` stamp to represent the lock state, which makes it more memory-efficient than
+`ReadWriteLock`.
 
 ```java
 public class StampedLockCache<K, V> {
@@ -865,15 +957,18 @@ public class StampedLockCache<K, V> {
 }
 ```
 
-:::info
-`StampedLock` is NOT reentrant. Each call to `writeLock()` must be matched with exactly one `unlockWrite()` using the returned stamp. Losing the stamp or calling unlock with the wrong stamp will cause an `IllegalMonitorStateException`. Additionally, `StampedLock` does not support `Condition` variables.
-:::
+:::info `StampedLock` is NOT reentrant. Each call to `writeLock()` must be matched with exactly one
+`unlockWrite()` using the returned stamp. Losing the stamp or calling unlock with the wrong stamp
+will cause an `IllegalMonitorStateException`. Additionally, `StampedLock` does not support
+`Condition` variables. :::
 
 ## Synchronizers
 
 ### Semaphore
 
-A `Semaphore` controls access to a shared resource through a counter. A thread must acquire a permit before accessing the resource and release it when done. Unlike a lock, a semaphore has no owner -- any thread can release a permit.
+A `Semaphore` controls access to a shared resource through a counter. A thread must acquire a permit
+before accessing the resource and release it when done. Unlike a lock, a semaphore has no owner --
+any thread can release a permit.
 
 ```java
 // Limit concurrent access to a resource pool (e.g., database connections)
@@ -895,7 +990,9 @@ Runnable task = () -> {
 
 ### CountDownLatch
 
-A `CountDownLatch` allows one or more threads to wait until a set of operations being performed in other threads completes. It is initialized with a count, and each `countDown()` decrements it. `await()` blocks until the count reaches zero.
+A `CountDownLatch` allows one or more threads to wait until a set of operations being performed in
+other threads completes. It is initialized with a count, and each `countDown()` decrements it.
+`await()` blocks until the count reaches zero.
 
 ```java
 // Parallel startup: wait for all services to initialize
@@ -910,13 +1007,13 @@ latch.await();  // blocks until all 3 countDown() calls
 System.out.println("All services initialized");
 ```
 
-:::info
-`CountDownLatch` is one-shot: once the count reaches zero, it cannot be reset. If you need a reusable version, use `CyclicBarrier`.
-:::
+:::info `CountDownLatch` is one-shot: once the count reaches zero, it cannot be reset. If you need a
+reusable version, use `CyclicBarrier`. :::
 
 ### CyclicBarrier
 
-A `CyclicBarrier` allows a set of threads to all wait for each other to reach a common barrier point. Unlike `CountDownLatch`It is reusable after all waiting threads are released.
+A `CyclicBarrier` allows a set of threads to all wait for each other to reach a common barrier
+point. Unlike `CountDownLatch`It is reusable after all waiting threads are released.
 
 ```java
 // MapReduce-style parallel computation
@@ -935,19 +1032,34 @@ for (int i = 0; i < 4; i++) {
 }
 ```
 
-:::warning
-If a thread fails (throws an exception) while waiting at a `CyclicBarrier`The barrier is **broken** and all other waiting threads receive a `BrokenBarrierException`. The barrier must be explicitly reset via `barrier.reset()` before it can be used again.
-:::
+:::warning If a thread fails (throws an exception) while waiting at a `CyclicBarrier`The barrier is
+**broken** and all other waiting threads receive a `BrokenBarrierException`. The barrier must be
+explicitly reset via `barrier.reset()` before it can be used again. :::
 
 ## Virtual Threads (Java 21+)
 
 ### Why Virtual Threads Change Everything
 
-Platform threads (the threads Java has had since JDK 1.0) are a 1:1 wrapper around OS threads. This means every Java thread consumes an OS thread, which consumes a kernel stack (~1MB on Linux). A server handling 10,000 concurrent requests with platform threads requires 10,000 OS threads and ~10GB of stack memory. The OS scheduler context-switches between them with overhead proportional to the number of threads, and the application spends more time context-switching than doing useful work.
+Platform threads (the threads Java has had since JDK 1.0) are a 1:1 wrapper around OS threads. This
+means every Java thread consumes an OS thread, which consumes a kernel stack (~1MB on Linux). A
+server handling 10,000 concurrent requests with platform threads requires 10,000 OS threads and
+~10GB of stack memory. The OS scheduler context-switches between them with overhead proportional to
+the number of threads, and the application spends more time context-switching than doing useful
+work.
 
-The fundamental insight behind **Project Loom** (delivered as virtual threads in JDK 21) is that most server applications spend the vast majority of their time **blocked on I/O** -- waiting for a database query, an HTTP response, or a file read. During this blocked time, the thread holds an OS thread and a ~1MB stack hostage, doing nothing. Virtual threads solve this by decoupling the Java-level thread from the OS thread. When a virtual thread blocks on I/O, it is automatically **unmounted** from its carrier (OS thread), and the carrier is returned to the pool to run other virtual threads. When the I/O operation completes, the virtual thread is **rescheduled** onto a carrier thread.
+The fundamental insight behind **Project Loom** (delivered as virtual threads in JDK 21) is that
+most server applications spend the vast majority of their time **blocked on I/O** -- waiting for a
+database query, an HTTP response, or a file read. During this blocked time, the thread holds an OS
+thread and a ~1MB stack hostage, doing nothing. Virtual threads solve this by decoupling the
+Java-level thread from the OS thread. When a virtual thread blocks on I/O, it is automatically
+**unmounted** from its carrier (OS thread), and the carrier is returned to the pool to run other
+virtual threads. When the I/O operation completes, the virtual thread is **rescheduled** onto a
+carrier thread.
 
-The result: you can create millions of virtual threads, each with its own ~1KB stack that grows on demand, and the JVM multiplexes them onto a small number of carrier threads ( equal to the number of CPU cores). There is no need for reactive programming, callbacks, or async/await syntax. Blocking is cheap.
+The result: you can create millions of virtual threads, each with its own ~1KB stack that grows on
+demand, and the JVM multiplexes them onto a small number of carrier threads ( equal to the number of
+CPU cores). There is no need for reactive programming, callbacks, or async/await syntax. Blocking is
+cheap.
 
 ### Creating Virtual Threads
 
@@ -979,18 +1091,20 @@ try (ExecutorService executor = Executors.newVirtualThreadPerTaskExecutor()) {
 
 ### Virtual Threads vs Platform Threads
 
-| Property | Platform Thread | Virtual Thread |
+| Property                | Platform Thread                       | Virtual Thread                                                  |
 | ----------------------- | ------------------------------------- | --------------------------------------------------------------- |
-| **OS mapping** | 1:1 (one Java thread = one OS thread) | M:N (many virtual threads multiplexed onto few carrier threads) |
-| **Stack size** | Fixed ~1MB | Starts ~1KB, grows on demand |
-| **Creation cost** | Expensive (system call) | Cheap (just a Java object) |
-| **Blocking on I/O** | Wastes the OS thread | Unmounts from carrier; carrier runs other virtual threads |
-| **Max practical count** | Thousands | Millions |
-| **Pin prevention** | N/A | Must not use `synchronized` or native methods during blocking |
+| **OS mapping**          | 1:1 (one Java thread = one OS thread) | M:N (many virtual threads multiplexed onto few carrier threads) |
+| **Stack size**          | Fixed ~1MB                            | Starts ~1KB, grows on demand                                    |
+| **Creation cost**       | Expensive (system call)               | Cheap (just a Java object)                                      |
+| **Blocking on I/O**     | Wastes the OS thread                  | Unmounts from carrier; carrier runs other virtual threads       |
+| **Max practical count** | Thousands                             | Millions                                                        |
+| **Pin prevention**      | N/A                                   | Must not use `synchronized` or native methods during blocking   |
 
 ### Pinning: The One Thing to Avoid
 
-A virtual thread **pins** its carrier thread when it blocks inside a `synchronized` block or method, or inside a native method call (JNI). When pinned, the carrier thread cannot run other virtual threads, defeating the purpose of virtual threads.
+A virtual thread **pins** its carrier thread when it blocks inside a `synchronized` block or method,
+or inside a native method call (JNI). When pinned, the carrier thread cannot run other virtual
+threads, defeating the purpose of virtual threads.
 
 ```java
 // BAD -- pins the carrier thread
@@ -1008,26 +1122,36 @@ try {
 }
 ```
 
-:::warning
-`synchronized` is the only common JDK primitive that causes pinning. `ReentrantLock``Semaphore``CountDownLatch`And all other `java.util.concurrent` synchronizers do NOT cause pinning. The JDK team has been progressively replacing internal uses of `synchronized` with `ReentrantLock` to eliminate pinning in the JDK itself. In JDK 24+, pinning from `synchronized` is being addressed through async monitor enter/exit, but for JDK 21-23, you must be aware of it.
-:::
+:::warning `synchronized` is the only common JDK primitive that causes pinning.
+`ReentrantLock``Semaphore``CountDownLatch`And all other `java.util.concurrent` synchronizers do NOT
+cause pinning. The JDK team has been progressively replacing internal uses of `synchronized` with
+`ReentrantLock` to eliminate pinning in the JDK itself. In JDK 24+, pinning from `synchronized` is
+being addressed through async monitor enter/exit, but for JDK 21-23, you must be aware of it. :::
 
 ### When to Use Virtual Threads
 
 Use virtual threads when:
 
-- You are building a server application with high concurrency (thousands to millions of concurrent requests).
+- You are building a server application with high concurrency (thousands to millions of concurrent
+  requests).
 - Your workload is **I/O-bound** (database calls, HTTP requests, file I/O).
-- You want the simplicity of synchronous, imperative code without the complexity of reactive frameworks (Project Reactor, RxJava).
+- You want the simplicity of synchronous, imperative code without the complexity of reactive
+  frameworks (Project Reactor, RxJava).
 
 Do NOT use virtual threads when:
 
-- Your workload is **CPU-bound** (heavy computation, image processing, cryptography). Virtual threads provide no benefit for CPU-bound work -- the number of carrier threads is bounded by the number of CPU cores, and adding more virtual threads just increases contention for CPU time.
-- You need real-time scheduling guarantees. Virtual threads are scheduled by the JVM (FIFO by default), not the OS, and there is no priority mechanism.
+- Your workload is **CPU-bound** (heavy computation, image processing, cryptography). Virtual
+  threads provide no benefit for CPU-bound work -- the number of carrier threads is bounded by the
+  number of CPU cores, and adding more virtual threads just increases contention for CPU time.
+- You need real-time scheduling guarantees. Virtual threads are scheduled by the JVM (FIFO by
+  default), not the OS, and there is no priority mechanism.
 
 ### Structured Concurrency (Preview)
 
-Virtual threads work best with **structured concurrency** (JEP 453, incubating in JDK 21), which treats the lifetime of child tasks as scoped to the lifetime of their parent. A `StructuredTaskScope` ensures that all child virtual threads are either completed or cancelled before the parent proceeds.
+Virtual threads work best with **structured concurrency** (JEP 453, incubating in JDK 21), which
+treats the lifetime of child tasks as scoped to the lifetime of their parent. A
+`StructuredTaskScope` ensures that all child virtual threads are either completed or cancelled
+before the parent proceeds.
 
 ```java
 try (var scope = new StructuredTaskScope.ShutdownOnFailure()) {
@@ -1043,25 +1167,27 @@ try (var scope = new StructuredTaskScope.ShutdownOnFailure()) {
 // All subtasks are guaranteed to be done here -- no leaked threads
 ```
 
-Structured concurrency prevents thread leaks (you cannot forget to wait for a spawned task), propagates exceptions reliably, and makes the lifetime of concurrent tasks visible in the code structure (the scope is lexically scoped via try-with-resources).
+Structured concurrency prevents thread leaks (you cannot forget to wait for a spawned task),
+propagates exceptions reliably, and makes the lifetime of concurrent tasks visible in the code
+structure (the scope is lexically scoped via try-with-resources).
 
 ## Summary: Choosing the Right Primitive
 
-| Scenario | Recommended Primitive |
+| Scenario                             | Recommended Primitive                                           |
 | ------------------------------------ | --------------------------------------------------------------- |
-| Simple mutual exclusion | `synchronized` (if pinning is not a concern) or `ReentrantLock` |
-| Visibility of a single flag | `volatile` |
-| Atomic counter / accumulator | `AtomicInteger``LongAdder` |
-| Thread pool with bounded concurrency | `ThreadPoolExecutor` (never `Executors.newCachedThreadPool()`) |
-| Composable async pipelines | `CompletableFuture` |
-| High-concurrency map | `ConcurrentHashMap` |
-| Producer-consumer | `BlockingQueue` |
-| Read-heavy shared data | `ReadWriteLock` or `StampedLock` |
-| Limit concurrent resource access | `Semaphore` |
-| One-shot barrier | `CountDownLatch` |
-| Reusable barrier | `CyclicBarrier` |
-| Massive concurrent I/O (server) | Virtual threads + `Executors.newVirtualThreadPerTaskExecutor()` |
-| Scoped concurrent tasks | `StructuredTaskScope` (JDK 21+) |
+| Simple mutual exclusion              | `synchronized` (if pinning is not a concern) or `ReentrantLock` |
+| Visibility of a single flag          | `volatile`                                                      |
+| Atomic counter / accumulator         | `AtomicInteger``LongAdder`                                      |
+| Thread pool with bounded concurrency | `ThreadPoolExecutor` (never `Executors.newCachedThreadPool()`)  |
+| Composable async pipelines           | `CompletableFuture`                                             |
+| High-concurrency map                 | `ConcurrentHashMap`                                             |
+| Producer-consumer                    | `BlockingQueue`                                                 |
+| Read-heavy shared data               | `ReadWriteLock` or `StampedLock`                                |
+| Limit concurrent resource access     | `Semaphore`                                                     |
+| One-shot barrier                     | `CountDownLatch`                                                |
+| Reusable barrier                     | `CyclicBarrier`                                                 |
+| Massive concurrent I/O (server)      | Virtual threads + `Executors.newVirtualThreadPerTaskExecutor()` |
+| Scoped concurrent tasks              | `StructuredTaskScope` (JDK 21+)                                 |
 
 ## Common Pitfalls
 

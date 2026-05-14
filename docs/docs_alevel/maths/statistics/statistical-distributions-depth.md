@@ -1,20 +1,21 @@
 ---
 title: Statistical Distributions (Extended)
-description: "A-Level Mathematics notes on Statistical Distributions (Extended): Statistical Distributions (Extended Treatment); 1. The Binomial Distribution; 1.1 Definition."
+description:
+  'A-Level Mathematics notes on Statistical Distributions (Extended): Statistical Distributions
+  (Extended Treatment); 1. The Binomial Distribution; 1.1 Definition.'
 date: 2026-04-23T00:00:00.000Z
 tags: [Mathematics, ALevel]
 categories: [Mathematics]
 slug: statistical-distributions-extended
 ---
+
 ## Statistical Distributions (Extended Treatment)
 
 This document provides rigorous coverage of the binomial, normal, and Poisson distributions, their
 Approximations, and hypothesis testing applications.
 
-:::info
-Always state the distribution you are using in full, including the parameter values, before
-Calculating probabilities. For example: "$X \sim B(20, 0.3)$".
-:::
+:::info Always state the distribution you are using in full, including the parameter values, before
+Calculating probabilities. For example: "$X \sim B(20, 0.3)$". :::
 
 <hr />
 
@@ -61,11 +62,13 @@ $X \sim B(12, 0.5)$.
 
 (a) $P(X = 7) = \dbinom{12}{7}(0.5)^{12} = \dfrac{792}{4096} = \dfrac{99}{512} \approx 0.1934$
 
-(b) $P(X \leq 4) = \displaystyle\sum_{k=0}^{4}\dbinom{12}{k}(0.5)^{12} = \dfrac{1 + 12 + 66 + 220 + 495}{4096} = \dfrac{794}{4096} \approx 0.1938$
+(b)
+$P(X \leq 4) = \displaystyle\sum_{k=0}^{4}\dbinom{12}{k}(0.5)^{12} = \dfrac{1 + 12 + 66 + 220 + 495}{4096} = \dfrac{794}{4096} \approx 0.1938$
 
 (c) $P(5 \leq X \leq 9) = P(X \leq 9) - P(X \leq 4) = 1 - P(X \leq 4) - P(X \geq 10)$
 
-$P(X \geq 10) = P(X \leq 2)$ (by symmetry of $p = 0.5$) $= \dfrac{1 + 12 + 66}{4096} = \dfrac{79}{4096}$
+$P(X \geq 10) = P(X \leq 2)$ (by symmetry of $p = 0.5$)
+$= \dfrac{1 + 12 + 66}{4096} = \dfrac{79}{4096}$
 
 $P(5 \leq X \leq 9) = 1 - \dfrac{794}{4096} - \dfrac{79}{4096} = \dfrac{3223}{4096} \approx 0.7869$
 
@@ -103,14 +106,16 @@ Where $\Phi(z)$ denotes the cumulative distribution function of the standard nor
 
 **Problem.** The masses of bags of sugar are normally distributed with mean $1.02\;\mathrm{kg}$ and
 Standard deviation $0.03\;\mathrm{kg}$. Find: (a) the probability a randomly selected bag has mass
-Less than $1.00\;\mathrm{kg}$; (b) the probability the mass is between $0.98$ and $1.05\;\mathrm{kg}$;
-(c) the value $m$ such that 90% of bags have mass less than $m$.
+Less than $1.00\;\mathrm{kg}$; (b) the probability the mass is between $0.98$ and
+$1.05\;\mathrm{kg}$; (c) the value $m$ such that 90% of bags have mass less than $m$.
 
 $X \sim N(1.02, 0.03^2)$.
 
-(a) $P(X \lt 1.00) = P\!\left(Z \lt \dfrac{1.00 - 1.02}{0.03}\right) = P(Z \lt -0.667) = 1 - \Phi(0.667) \approx 1 - 0.7476 = 0.2524$
+(a)
+$P(X \lt 1.00) = P\!\left(Z \lt \dfrac{1.00 - 1.02}{0.03}\right) = P(Z \lt -0.667) = 1 - \Phi(0.667) \approx 1 - 0.7476 = 0.2524$
 
-(b) $P(0.98 \lt X \lt 1.05) = P\!\left(\dfrac{0.98 - 1.02}{0.03} \lt Z \lt \dfrac{1.05 - 1.02}{0.03}\right) = P(-1.333 \lt Z \lt 1.000)$
+(b)
+$P(0.98 \lt X \lt 1.05) = P\!\left(\dfrac{0.98 - 1.02}{0.03} \lt Z \lt \dfrac{1.05 - 1.02}{0.03}\right) = P(-1.333 \lt Z \lt 1.000)$
 
 $= \Phi(1.000) - \Phi(-1.333) = 0.8413 - (1 - 0.9088) = 0.8413 - 0.0912 = 0.7501$
 
@@ -171,14 +176,16 @@ The equality of mean and variance is a distinguishing feature of the Poisson dis
 ### 3.3 Worked example
 
 **Problem.** A call centre receives an average of 4.5 calls per minute. Assuming a Poisson model,
-Find: (a) the probability of exactly 6 calls in a minute; (b) the probability of at most 2 calls
-In a minute; (c) the probability of more than 8 calls in a two-minute period.
+Find: (a) the probability of exactly 6 calls in a minute; (b) the probability of at most 2 calls In
+a minute; (c) the probability of more than 8 calls in a two-minute period.
 
 $X \sim \mathrm{Po}(4.5)$.
 
-(a) $P(X = 6) = \dfrac{e^{-4.5}(4.5)^6}{6!} = \dfrac◆LB◆e^{-4.5} \times 8303.8◆RB◆◆LB◆720◆RB◆ \approx 0.1271$
+(a)
+$P(X = 6) = \dfrac{e^{-4.5}(4.5)^6}{6!} = \dfrac◆LB◆e^{-4.5} \times 8303.8◆RB◆◆LB◆720◆RB◆ \approx 0.1271$
 
-(b) $P(X \leq 2) = e^{-4.5}\!\left(1 + 4.5 + \dfrac{4.5^2}{2}\right) = e^{-4.5}(1 + 4.5 + 10.125) = 15.625\,e^{-4.5} \approx 0.1736$
+(b)
+$P(X \leq 2) = e^{-4.5}\!\left(1 + 4.5 + \dfrac{4.5^2}{2}\right) = e^{-4.5}(1 + 4.5 + 10.125) = 15.625\,e^{-4.5} \approx 0.1736$
 
 (c) For two minutes, $Y \sim \mathrm{Po}(9)$.
 
@@ -207,11 +214,11 @@ $$P(X = 3) = \frac◆LB◆e^{-4} \cdot 4^3◆RB◆◆LB◆3!◆RB◆ = \frac{64e
 
 ### 4.1 Decision framework
 
-| Situation | Distribution |
-| ---------------------------------- | -------------------- |
-| Fixed trials, two outcomes, const $p$ | Binomial $B(n, p)$ |
-| Rare events, constant rate | Poisson $\mathrm{Po}(\lambda)$ |
-| Continuous, symmetric, bell-shaped | Normal $N(\mu, \sigma^2)$ |
+| Situation                             | Distribution                   |
+| ------------------------------------- | ------------------------------ |
+| Fixed trials, two outcomes, const $p$ | Binomial $B(n, p)$             |
+| Rare events, constant rate            | Poisson $\mathrm{Po}(\lambda)$ |
+| Continuous, symmetric, bell-shaped    | Normal $N(\mu, \sigma^2)$      |
 
 ### 4.2 Sums of independent Poisson variables
 
@@ -226,18 +233,16 @@ $$= \frac◆LB◆e^{-(\lambda_1+\lambda_2)}◆RB◆◆LB◆r!◆RB◆\sum_{k=0}^
 
 ### 4.3 Worked example
 
-**Problem.** A shop receives orders at an average rate of 3 per hour from online and 2 per hour
-From walk-in customers. Find the probability of receiving more than 7 orders in a two-hour period.
+**Problem.** A shop receives orders at an average rate of 3 per hour from online and 2 per hour From
+walk-in customers. Find the probability of receiving more than 7 orders in a two-hour period.
 
 Total rate per hour $= 3 + 2 = 5$. For two hours, $X \sim \mathrm{Po}(10)$.
 
 $P(X \gt 7) = 1 - P(X \leq 7) = 1 - e^{-10}\displaystyle\sum_{r=0}^{7}\dfrac{10^r}{r!} \approx 1 - 0.2202 = 0.7798$
 
-:::warning
-Common Pitfall
-When using the Poisson approximation to the binomial, always check that the conditions are met
-(large $n$Small $p$). If $p$ is close to 0.5, the normal approximation is more appropriate.
-:::
+:::warning Common Pitfall When using the Poisson approximation to the binomial, always check that
+the conditions are met (large $n$Small $p$). If $p$ is close to 0.5, the normal approximation is
+more appropriate. :::
 
 <hr />
 
@@ -245,8 +250,8 @@ When using the Poisson approximation to the binomial, always check that the cond
 
 ### Problem 1
 
-$X \sim B(15, 0.35)$. Find: (a) $P(X = 5)$; (b) $P(3 \leq X \leq 7)$; (c) the most likely value
-Of $X$.
+$X \sim B(15, 0.35)$. Find: (a) $P(X = 5)$; (b) $P(3 \leq X \leq 7)$; (c) the most likely value Of
+$X$.
 
 <details>
 <summary>Solution</summary>
@@ -264,8 +269,9 @@ $P(X = 5) \approx 0.2123$$P(X = 6) \approx 0.2186$. The mode is $X = 6$.
 ### Problem 2
 
 The heights of men are normally distributed with mean $175\;\mathrm{cm}$ and standard deviation
-$8\;\mathrm{cm}$. Find the probability that a randomly selected man is: (a) taller than $190\;\mathrm{cm}$;
-(b) between $168\;\mathrm{cm}$ and $182\;\mathrm{cm}$; (c) what height is exceeded by only 5% of men?
+$8\;\mathrm{cm}$. Find the probability that a randomly selected man is: (a) taller than
+$190\;\mathrm{cm}$; (b) between $168\;\mathrm{cm}$ and $182\;\mathrm{cm}$; (c) what height is
+exceeded by only 5% of men?
 
 <details>
 <summary>Solution</summary>
@@ -287,7 +293,8 @@ Hours.
 <details>
 <summary>Solution</summary>
 
-(a) $P(X = 4) = \dfrac◆LB◆e^{-6} \cdot 6^4◆RB◆◆LB◆4!◆RB◆ = \dfrac{1296}{24}e^{-6} = 54e^{-6} \approx 0.1335$.
+(a)
+$P(X = 4) = \dfrac◆LB◆e^{-6} \cdot 6^4◆RB◆◆LB◆4!◆RB◆ = \dfrac{1296}{24}e^{-6} = 54e^{-6} \approx 0.1335$.
 
 (b) For two hours, $Y \sim \mathrm{Po}(12)$.
 
@@ -303,7 +310,8 @@ Sixes is between 8 and 14 inclusive.
 <details>
 <summary>Solution</summary>
 
-$X \sim B(60, 1/6)$. $\mu = 10$$\sigma^2 = 60 \times \dfrac{1}{6} \times \dfrac{5}{6} = \dfrac{25}{3} \approx 8.333$.
+$X \sim B(60, 1/6)$.
+$\mu = 10$$\sigma^2 = 60 \times \dfrac{1}{6} \times \dfrac{5}{6} = \dfrac{25}{3} \approx 8.333$.
 
 $\sigma \approx 2.887$.
 

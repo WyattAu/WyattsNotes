@@ -1,6 +1,8 @@
 ---
 title: Iframe Integration
-description: "Iframe Integration — Godbolt; Dartpad; Security Considerations; The `sandbox` Attribute with worked examples and exam-style questions."
+description:
+  'Iframe Integration — Godbolt; Dartpad; Security Considerations; The `sandbox` Attribute with
+  worked examples and exam-style questions.'
 date: 2025-07-11T23:22:50.056Z
 tags:
   - CS
@@ -8,6 +10,7 @@ categories:
   - CS
 slug: godbolt-integration
 ---
+
 ## Godbolt
 
 <div className="godbolt-container">
@@ -47,21 +50,19 @@ slug: godbolt-integration
 The `sandbox` attribute restricts what an iframe is allowed to do. Always use it — omitting it
 Grants the embedded page the same privileges as the parent page.
 
-| Token | Effect |
+| Token                  | Effect                                                                 |
 | ---------------------- | ---------------------------------------------------------------------- |
-| (empty) | Most restrictive: no scripts, no forms, no same-origin, no popups |
-| `allow-scripts` | Allows JavaScript execution |
-| `allow-same-origin` | Allows the iframe to be treated as same-origin (needed for API access) |
-| `allow-popups` | Allows `window.open` / `target="_blank"` |
-| `allow-forms` | Allows form submission |
-| `allow-downloads` | Allows downloading files |
-| `allow-top-navigation` | Allows the iframe to navigate the top-level page (avoid this) |
+| (empty)                | Most restrictive: no scripts, no forms, no same-origin, no popups      |
+| `allow-scripts`        | Allows JavaScript execution                                            |
+| `allow-same-origin`    | Allows the iframe to be treated as same-origin (needed for API access) |
+| `allow-popups`         | Allows `window.open` / `target="_blank"`                               |
+| `allow-forms`          | Allows form submission                                                 |
+| `allow-downloads`      | Allows downloading files                                               |
+| `allow-top-navigation` | Allows the iframe to navigate the top-level page (avoid this)          |
 
-:::warning
-Never combine `allow-scripts` with `allow-same-origin` if the iframe source is
+:::warning Never combine `allow-scripts` with `allow-same-origin` if the iframe source is
 User-controlled or untrusted. Together they allow the embedded page to strip its own sandbox
-Restrictions via JavaScript.
-:::
+Restrictions via JavaScript. :::
 
 For trusted embeds like Godbolt and Dartpad, `sandbox="allow-scripts allow-same-origin"` is
 Acceptable because both services are well-known and operate over HTTPS.
@@ -72,7 +73,7 @@ If your site sets a CSP via HTTP headers or `<meta>` tags, iframes add complexit
 
 - `frame-src` (or the older `child-src`) controls which URLs can be embedded.
 - `frame-ancestors` on the **embedded** site controls who can embed it. Many services set
- `frame-ancestors 'self'` to prevent embedding, which is why not every site works inside an iframe.
+  `frame-ancestors 'self'` to prevent embedding, which is why not every site works inside an iframe.
 
 Example CSP header that allows Godbolt and Dartpad:
 
@@ -239,8 +240,8 @@ Opts in.
 ### X-Frame-Options and CSP Blocking
 
 If an iframe is blank or shows a browser error, the target site likely sets `X-Frame-Options: DENY`
-Or `SAMEORIGIN`Or uses `frame-ancestors` in CSP. There is no workaround — the site owner must
-Allow embedding.
+Or `SAMEORIGIN`Or uses `frame-ancestors` in CSP. There is no workaround — the site owner must Allow
+embedding.
 
 ### Cookie Partitioning (Third-Party)
 
@@ -331,11 +332,11 @@ https://godbolt.org/e#<encoded-state>
 
 Godbolt supports additional embed parameters:
 
-| Parameter | Description |
+| Parameter     | Description                          |
 | ------------- | ------------------------------------ |
-| `#z:...` | Compressed source and compiler state |
-| `&hideEditor` | Hides the source editor panel |
-| `&hideOutput` | Hides the compiler output panel |
+| `#z:...`      | Compressed source and compiler state |
+| `&hideEditor` | Hides the source editor panel        |
+| `&hideOutput` | Hides the compiler output panel      |
 
 ### Dartpad URL Construction
 
@@ -345,11 +346,11 @@ Dartpad embed URLs follow this pattern:
 https://dartpad.dev/embed-inline.html?id=<gist-id>&split=<ratio>&theme=<dark|light>
 ```
 
-| Parameter | Description |
+| Parameter | Description                                    |
 | --------- | ---------------------------------------------- |
-| `id` | GitHub Gist ID containing the Dart source |
-| `split` | Editor/preview split ratio (0–100) |
-| `theme` | `dark` or `light` — must match the parent site |
+| `id`      | GitHub Gist ID containing the Dart source      |
+| `split`   | Editor/preview split ratio (0–100)             |
+| `theme`   | `dark` or `light` — must match the parent site |
 
 Note that Dartpad's theme does not inherit from the parent page. It must be set explicitly in the
 URL. If the site supports dark mode toggling, the Dartpad theme will not switch dynamically without

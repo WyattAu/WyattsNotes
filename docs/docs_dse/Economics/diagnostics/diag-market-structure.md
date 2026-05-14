@@ -1,9 +1,12 @@
 ---
 title: 'Market Structure and Theory of the Firm -- Diagnostic Tests'
-description: "DSE Economics diagnostic tests for market structure: perfect competition, monopoly, oligopoly, monopolistic competition, barriers to entry."
+description:
+  'DSE Economics diagnostic tests for market structure: perfect competition, monopoly, oligopoly,
+  monopolistic competition, barriers to entry.'
 slug: diag-market-structure
 hide_table_of_contents: true
 ---
+
 # Market Structure and Theory of the Firm — Diagnostic Tests
 
 ## Unit Tests
@@ -125,8 +128,7 @@ $Q = Q_A + Q_S = (80 - 2P) + (40 - 2P) = 120 - 4P$.
 
 Inverse demand for $P \le 20$: $P = 30 - 0.25Q$.
 
-$MR = 30 - 0.5Q$. Set $MR = MC = 4$: $30 - 0.5Q = 4$$0.5Q = 26$$Q = 52$.
-$P = 30 - 0.25(52) = \$17$.
+$MR = 30 - 0.5Q$. Set $MR = MC = 4$: $30 - 0.5Q = 4$$0.5Q = 26$$Q = 52$. $P = 30 - 0.25(52) = \$17$.
 
 Since $P = 17 \le 20$Both groups are served. Profit $= 17(52) - 4(52) = 13(52) = \$676$.
 
@@ -142,9 +144,9 @@ $Q_c = 120 - 4(4) = 104$. $DWL = \frac{1}{2}(17 - 4)(104 - 52) = \frac{1}{2}(13)
 Under price discrimination ($Q = 52$ total): total DWL
 $= \frac{1}{2}(22 - 4)(80 - 36) + \frac{1}{2}(12 - 4)(40 - 16) = \frac{1}{2}(18)(44) + \frac{1}{2}(8)(24) = 396 + 96 = \$492$.
 
-**Note:** Price discrimination produces the same total quantity (52) but a different allocation across
-Groups. The DWL calculation requires the competitive benchmark per group. Competitive output ($P = 4$):
-$Q_A = 80 - 8 = 72$$Q_S = 40 - 8 = 32$. Total competitive output $Q_c = 104$.
+**Note:** Price discrimination produces the same total quantity (52) but a different allocation
+across Groups. The DWL calculation requires the competitive benchmark per group. Competitive output
+($P = 4$): $Q_A = 80 - 8 = 72$$Q_S = 40 - 8 = 32$. Total competitive output $Q_c = 104$.
 
 $DWL_{\text{no disc}} = \frac{1}{2}(17 - 4)(104 - 52) = \$338$.
 $DWL_d = \frac{1}{2}(22 - 4)(72 - 36) + \frac{1}{2}(12 - 4)(32 - 16) = \frac{1}{2}(18)(36) + \frac{1}{2}(8)(16) = 324 + 64 = \$388$.
@@ -160,10 +162,10 @@ Costs, the government might use average cost pricing instead.
 High price ($P_H = \$10$) or a low price ($P_L = \$6$). The payoff matrix (monthly profit in
 Thousands of HKD) is:
 
-| | B: High | B: Low |
+|             | B: High       | B: Low        |
 | ----------- | ------------- | ------------- |
-| **A: High** | A: 80, B: 80 | A: 30, B: 100 |
-| **A: Low** | A: 100, B: 30 | A: 50, B: 50 |
+| **A: High** | A: 80, B: 80  | A: 30, B: 100 |
+| **A: Low**  | A: 100, B: 30 | A: 50, B: 50  |
 
 (a) Identify the Nash equilibrium. (b) Is this a prisoner's dilemma? Explain. (c) If the firms
 Collude and split the market equally, what happens to their profits? Why might collusion be
@@ -198,12 +200,12 @@ $q_A = q_B = 26.67$.
 
 $Q_c = 53.33$$P_c = 20 - 0.2(53.33) = \$9.33$. Each firm earns $(9.33 - 4)(26.67) = \$142.2$.
 
-Collusive (joint profit maximisation): $MR = 20 - 0.4Q = MC = 4$$Q_m = 40$$P_m = \$12$. Each
-Firm produces 20, earning $(12 - 4)(20) = \$160$.
+Collusive (joint profit maximisation): $MR = 20 - 0.4Q = MC = 4$$Q_m = 40$$P_m = \$12$. Each Firm
+produces 20, earning $(12 - 4)(20) = \$160$.
 
-The Cournot output (53.33) is between perfect competition ($P = 4$$Q = 80$) and monopoly
-($Q = 40$). Collusion gives higher profit per firm (160 vs 142.2) but each has incentive to produce
-More than their quota.
+The Cournot output (53.33) is between perfect competition ($P = 4$$Q = 80$) and monopoly ($Q = 40$).
+Collusion gives higher profit per firm (160 vs 142.2) but each has incentive to produce More than
+their quota.
 
 ### IT-3: Market Structure Comparison (with Efficiency)
 
@@ -218,8 +220,8 @@ Equals marginal cost.
 
 (a) Competitive: $P = MC = 2 + 0.2Q = 12$So $0.2Q = 10$$Q_c = 50$.
 
-Monopoly: $MC = 2 + 0.2Q$. Need demand: at $P = 12$$Q = 50$. Assume linear demand through this
-Point with choke price. $P = a - bQ$. From $MC$ curve: at $Q = 0$$MC = 2$. Let demand pass through
+Monopoly: $MC = 2 + 0.2Q$. Need demand: at $P = 12$$Q = 50$. Assume linear demand through this Point
+with choke price. $P = a - bQ$. From $MC$ curve: at $Q = 0$$MC = 2$. Let demand pass through
 $(50, 12)$ with intercept at $P = 22$ (so $b = 10/50 = 0.2$). Demand: $P = 22 - 0.2Q$.
 
 $MR = 22 - 0.4Q = MC = 2 + 0.2Q$. $20 = 0.6Q$$Q_m = 33.33$. $P_m = 22 - 0.2(33.33) = \$15.33$.
@@ -234,7 +236,7 @@ $MR = 22 - 0.4Q = MC = 2 + 0.2Q$. $20 = 0.6Q$$Q_m = 33.33$. $P_m = 22 - 0.2(33.3
 
 - CS $= \frac{1}{2}(22 - 15.33)(33.33) = \frac{1}{2}(6.67)(33.33) = \$111.1$.
 - Profit
- $= 15.33(33.33) - [100 + 2(33.33) + 0.1(33.33)^2] = 511 - [100 + 66.67 + 111.1] = 511 - 277.8 = \$233.3$.
+  $= 15.33(33.33) - [100 + 2(33.33) + 0.1(33.33)^2] = 511 - [100 + 66.67 + 111.1] = 511 - 277.8 = \$233.3$.
 - Total surplus $= 111.1 + 233.3 = \$344.4$.
 
 (c) DWL $= 400 - 344.4 = \$55.6$. Verifying directly: at $Q_m = 33.33$, $P_m = 15.33$ and
@@ -253,23 +255,32 @@ Total social surplus, leading to an underallocation of resources to this good.
 
 ### EQ-1: Natural Monopoly and Regulation in Hong Kong
 
-**Question:** The Hong Kong Electric Company (HEC) is a natural monopoly supplying electricity to Hong Kong Island and Lamma Island. Its total cost function is $TC = 500 + 20Q$ (in millions of HKD, where $Q$ is in GWh). The demand for electricity is $P = 100 - 0.5Q$ (in HKD/MWh). (a) Calculate the profit-maximising price, quantity, and profit. (b) Calculate the outcome under marginal cost pricing. (c) Calculate the outcome under average cost pricing. (d) Which regulatory approach would you recommend for Hong Kong's electricity market, and why?
+**Question:** The Hong Kong Electric Company (HEC) is a natural monopoly supplying electricity to
+Hong Kong Island and Lamma Island. Its total cost function is $TC = 500 + 20Q$ (in millions of HKD,
+where $Q$ is in GWh). The demand for electricity is $P = 100 - 0.5Q$ (in HKD/MWh). (a) Calculate the
+profit-maximising price, quantity, and profit. (b) Calculate the outcome under marginal cost
+pricing. (c) Calculate the outcome under average cost pricing. (d) Which regulatory approach would
+you recommend for Hong Kong's electricity market, and why?
 
 **Solution:**
 
-(a) Monopoly: $MR = 100 - Q$. $MC = 20$. Set $MR = MC$: $100 - Q = 20$$Q_m = 80$ GWh. $P_m = 100 - 0.5(80) = \text{HK}\$60$/MWh$.
+(a) Monopoly: $MR = 100 - Q$. $MC = 20$. Set $MR = MC$: $100 - Q = 20$$Q_m = 80$ GWh.
+$P_m = 100 - 0.5(80) = \text{HK}\$60$/MWh$.
 
-Profit $= TR - TC = 60(80) - [500 + 20(80)] = 4800 - [500 + 1600] = 4800 - 2100 = 2700$ (million HKD $=$ HK$2.7 billion).
+Profit $= TR - TC = 60(80) - [500 + 20(80)] = 4800 - [500 + 1600] = 4800 - 2100 = 2700$ (million HKD
+$=$ HK$2.7 billion).
 
 (b) Marginal cost pricing: $P = MC = 20$. $100 - 0.5Q = 20$$0.5Q = 80$$Q = 160$ GWh.
 
 Profit $= 20(160) - [500 + 20(160)] = 3200 - [500 + 3200] = 3200 - 3700 = -500$ (million HKD).
 
-The firm makes a loss of HK$500 million equal to its fixed costs. This is unsustainable without subsidy.
+The firm makes a loss of HK$500 million equal to its fixed costs. This is unsustainable without
+subsidy.
 
 (c) Average cost pricing: $P = AC = \frac{500 + 20Q}{Q} = \frac{500}{Q} + 20$.
 
-$100 - 0.5Q = \frac{500}{Q} + 20$. Multiply by $Q$: $100Q - 0.5Q^2 = 500 + 20Q$. $0.5Q^2 - 80Q + 500 = 0$. $Q^2 - 160Q + 1000 = 0$.
+$100 - 0.5Q = \frac{500}{Q} + 20$. Multiply by $Q$: $100Q - 0.5Q^2 = 500 + 20Q$.
+$0.5Q^2 - 80Q + 500 = 0$. $Q^2 - 160Q + 1000 = 0$.
 
 $Q = \frac{160 \pm \sqrt{25600 - 4000}}{2} = \frac{160 \pm \sqrt{21600}}{2} = \frac{160 \pm 147.0}{2}$.
 
@@ -277,18 +288,33 @@ $Q = 153.5$ GWh (taking the larger root). $P = 100 - 0.5(153.5) = \text{HK}\$23.
 
 Profit $\approx 0$ (the firm breaks even by construction of average cost pricing).
 
-(d) **Recommendation:** For Hong Kong's electricity market, a **modified average cost pricing** approach (known as the Scheme of Control Agreement) is appropriate.
+(d) **Recommendation:** For Hong Kong's electricity market, a **modified average cost pricing**
+approach (known as the Scheme of Control Agreement) is appropriate.
 
-*Rationale:*
-- Marginal cost pricing (HK$20/MWh) is economically efficient (zero DWL) but requires a permanent government subsidy of HK$500 million, creating a fiscal burden and moral hazard.
-- Profit-maximising monopoly (HK$60/MWh) creates large DWL and is politically unacceptable (high electricity prices burden households and businesses).
-- Average cost pricing (HK$23.25/MWh) is a compromise: the firm breaks even (no subsidy needed), prices are much lower than monopoly levels, and the DWL is small (the quantity is 153.5 vs the efficient 160 -- only a 4% shortfall).
+_Rationale:_
 
-Hong Kong's actual regulatory framework (the Scheme of Control Agreement) uses a permitted rate of return on capital, which is similar to average cost pricing. The government sets a maximum rate of return (currently 8%), and if the company earns more, it must refund the excess to consumers through lower tariffs. This provides an incentive for efficiency (the company keeps cost savings up to the permitted return) while protecting consumers from excessive prices.
+- Marginal cost pricing (HK$20/MWh) is economically efficient (zero DWL) but requires a permanent
+  government subsidy of HK$500 million, creating a fiscal burden and moral hazard.
+- Profit-maximising monopoly (HK$60/MWh) creates large DWL and is politically unacceptable (high
+  electricity prices burden households and businesses).
+- Average cost pricing (HK$23.25/MWh) is a compromise: the firm breaks even (no subsidy needed),
+  prices are much lower than monopoly levels, and the DWL is small (the quantity is 153.5 vs the
+  efficient 160 -- only a 4% shortfall).
+
+Hong Kong's actual regulatory framework (the Scheme of Control Agreement) uses a permitted rate of
+return on capital, which is similar to average cost pricing. The government sets a maximum rate of
+return (currently 8%), and if the company earns more, it must refund the excess to consumers through
+lower tariffs. This provides an incentive for efficiency (the company keeps cost savings up to the
+permitted return) while protecting consumers from excessive prices.
 
 ### EQ-2: Perfect Competition in the Long Run with Entry and Exit
 
-**Question:** The market for a homogeneous good is perfectly competitive. Each firm has cost function $TC = 100 + 2Q + 0.5Q^2$. Market demand is $P = 50 - 0.1Q$ (where $Q$ is total market output in thousands). (a) Calculate the long-run equilibrium price, output per firm, and number of firms. (b) If demand increases to $P = 60 - 0.1Q$Calculate the new long-run equilibrium. (c) Calculate the short-run response (before new firms enter) and explain the adjustment process. (d) Explain why firms earn zero economic profit in long-run perfect competition.
+**Question:** The market for a homogeneous good is perfectly competitive. Each firm has cost
+function $TC = 100 + 2Q + 0.5Q^2$. Market demand is $P = 50 - 0.1Q$ (where $Q$ is total market
+output in thousands). (a) Calculate the long-run equilibrium price, output per firm, and number of
+firms. (b) If demand increases to $P = 60 - 0.1Q$Calculate the new long-run equilibrium. (c)
+Calculate the short-run response (before new firms enter) and explain the adjustment process. (d)
+Explain why firms earn zero economic profit in long-run perfect competition.
 
 **Solution:**
 
@@ -306,35 +332,57 @@ Market demand: $Q_{market} = (50 - 16.14)/0.1 = 338.6$ (thousand units).
 
 Number of firms $= 338.6 / 14.14 = 23.9 \approx 24$ firms.
 
-(b) New demand: $P = 60 - 0.1Q$. The long-run price remains at 16.14 (since costs are unchanged and firms enter/exit until profit $= 0$).
+(b) New demand: $P = 60 - 0.1Q$. The long-run price remains at 16.14 (since costs are unchanged and
+firms enter/exit until profit $= 0$).
 
 New market output $= (60 - 16.14)/0.1 = 438.6$ (thousand units).
 
 Number of firms $= 438.6 / 14.14 = 31.0 \approx 31$ firms.
 
-The increase in demand leads to 7 new firms entering the market, while the price and output per firm remain unchanged.
+The increase in demand leads to 7 new firms entering the market, while the price and output per firm
+remain unchanged.
 
-(c) **Short-run response:** In the short run, the number of firms is fixed at 24. Each firm's supply is its MC curve above minimum AVC (which is at $Q = 0$$AVC = 2$So minimum AVC $= 2$). Total market supply $= 24 \times (2 + Q_i) = 48 + 24Q_i$ where $Q_i$ is per-firm output.
+(c) **Short-run response:** In the short run, the number of firms is fixed at 24. Each firm's supply
+is its MC curve above minimum AVC (which is at $Q = 0$$AVC = 2$So minimum AVC $= 2$). Total market
+supply $= 24 \times (2 + Q_i) = 48 + 24Q_i$ where $Q_i$ is per-firm output.
 
 Setting $P = MC$ for each firm: $2 + Q_i = P$So $Q_i = P - 2$. Total supply $= 24(P - 2)$.
 
-Market equilibrium: $24(P - 2) = (60 - P)/0.1 = 600 - 10P$. $24P - 48 = 600 - 10P$. $34P = 648$. $P = 19.06$.
+Market equilibrium: $24(P - 2) = (60 - P)/0.1 = 600 - 10P$. $24P - 48 = 600 - 10P$. $34P = 648$.
+$P = 19.06$.
 
 Each firm produces $Q_i = 19.06 - 2 = 17.06$.
 
-Profit per firm $= 19.06(17.06) - [100 + 2(17.06) + 0.5(17.06)^2] = 325.3 - [100 + 34.12 + 145.5] = 325.3 - 279.6 = 45.7$ (positive economic profit).
+Profit per firm
+$= 19.06(17.06) - [100 + 2(17.06) + 0.5(17.06)^2] = 325.3 - [100 + 34.12 + 145.5] = 325.3 - 279.6 = 45.7$
+(positive economic profit).
 
-**Adjustment process:** The positive economic profit attracts new firms. As firms enter, market supply increases, pushing the price down. This continues until price returns to the minimum AC (16.14), at which point economic profit is zero and entry stops.
+**Adjustment process:** The positive economic profit attracts new firms. As firms enter, market
+supply increases, pushing the price down. This continues until price returns to the minimum AC
+(16.14), at which point economic profit is zero and entry stops.
 
-(d) Zero economic profit in long-run perfect competition occurs because of **free entry and exit**. If existing firms earn positive economic profit, new firms are attracted by the profit opportunity and enter the market. This increases supply, lowers the market price, and reduces each firm's profit until it reaches zero. If firms incur losses, some exit, reducing supply and raising the price until remaining firms break even. Note that "zero economic profit" means firms earn a **normal profit** (covering all opportunity costs including the owner's time and capital). Firms are willing to stay in the market because they are earning exactly what they could earn in their next best alternative.
+(d) Zero economic profit in long-run perfect competition occurs because of **free entry and exit**.
+If existing firms earn positive economic profit, new firms are attracted by the profit opportunity
+and enter the market. This increases supply, lowers the market price, and reduces each firm's profit
+until it reaches zero. If firms incur losses, some exit, reducing supply and raising the price until
+remaining firms break even. Note that "zero economic profit" means firms earn a **normal profit**
+(covering all opportunity costs including the owner's time and capital). Firms are willing to stay
+in the market because they are earning exactly what they could earn in their next best alternative.
 
 ### EQ-3: Oligopoly -- Kinked Demand Curve Model
 
-**Question:** An oligopolistic firm faces a kinked demand curve. At the current price of $\$50$, the firm sells 100 units. For price increases, demand is elastic with $PED = -3$. For price decreases, demand is inelastic with $PED = -0.5$. The firm's marginal cost is $\$30$ at current output. (a) Calculate the price and quantity ranges over which the demand curve is elastic and inelastic. (b) Calculate the marginal revenue for the elastic and inelastic segments at the current price. (c) Explain why the kinked demand curve model predicts price rigidity. (d) Calculate the range of marginal cost over which the firm would not change its price.
+**Question:** An oligopolistic firm faces a kinked demand curve. At the current price of $\$50$, the
+firm sells 100 units. For price increases, demand is elastic with $PED = -3$. For price decreases,
+demand is inelastic with $PED = -0.5$. The firm's marginal cost is $\$30$ at current output. (a)
+Calculate the price and quantity ranges over which the demand curve is elastic and inelastic. (b)
+Calculate the marginal revenue for the elastic and inelastic segments at the current price. (c)
+Explain why the kinked demand curve model predicts price rigidity. (d) Calculate the range of
+marginal cost over which the firm would not change its price.
 
 **Solution:**
 
-(a) **Elastic segment (price increase):** Demand is $Q = a - bP$ where $|PED| = 3$ at $(Q, P) = (100, 50)$.
+(a) **Elastic segment (price increase):** Demand is $Q = a - bP$ where $|PED| = 3$ at
+$(Q, P) = (100, 50)$.
 
 $|PED| = \frac{dQ}{dP} \times \frac{P}{Q} = b \times \frac{50}{100} = 3$. So $b = 6$.
 
@@ -342,35 +390,52 @@ $Q = a - 6P$. At $(100, 50)$: $100 = a - 300$$a = 400$. Elastic demand: $Q = 400
 
 **Inelastic segment (price decrease):** $|PED| = 0.5$ at $(100, 50)$.
 
-$|PED| = b' \times \frac{50}{100} = 0.5$. $b' = 1$. $Q = a' - P$. At $(100, 50)$: $100 = a' - 50$$a' = 150$. Inelastic demand: $Q = 150 - P$.
+$|PED| = b' \times \frac{50}{100} = 0.5$. $b' = 1$. $Q = a' - P$. At $(100, 50)$:
+$100 = a' - 50$$a' = 150$. Inelastic demand: $Q = 150 - P$.
 
-(b) **Elastic MR:** $MR_1 = \frac{400}{6} - \frac{2Q}{6} = 66.67 - 0.333Q$. At $Q = 100$: $MR_1 = 66.67 - 33.33 = 33.33$.
+(b) **Elastic MR:** $MR_1 = \frac{400}{6} - \frac{2Q}{6} = 66.67 - 0.333Q$. At $Q = 100$:
+$MR_1 = 66.67 - 33.33 = 33.33$.
 
-Alternatively, from $P = \frac{400 - Q}{6}$: $MR_1 = \frac{400}{6} - \frac{2Q}{6} = 66.67 - 0.333Q$. At $Q = 100$: $MR_1 = 33.33$.
+Alternatively, from $P = \frac{400 - Q}{6}$: $MR_1 = \frac{400}{6} - \frac{2Q}{6} = 66.67 - 0.333Q$.
+At $Q = 100$: $MR_1 = 33.33$.
 
 **Inelastic MR:** From $P = 150 - Q$: $MR_2 = 150 - 2Q$. At $Q = 100$: $MR_2 = 150 - 200 = -50$.
 
-(c) The kinked demand curve model predicts price rigidity because there is a **gap in the marginal revenue curve** at the kink point. The MR jumps discontinuously from $MR_1 = 33.33$ (just above the kink) to $MR_2 = -50$ (just below the kink). As long as marginal cost falls within this gap ($-50 < MC < 33.33$), the profit-maximising output and price remain unchanged. This explains why oligopolistic prices tend to be rigid even when costs change moderately.
+(c) The kinked demand curve model predicts price rigidity because there is a **gap in the marginal
+revenue curve** at the kink point. The MR jumps discontinuously from $MR_1 = 33.33$ (just above the
+kink) to $MR_2 = -50$ (just below the kink). As long as marginal cost falls within this gap
+($-50 < MC < 33.33$), the profit-maximising output and price remain unchanged. This explains why
+oligopolistic prices tend to be rigid even when costs change moderately.
 
-(d) The price will not change as long as MC is in the range $MR_2 < MC < MR_1$I.e., $-50 < MC < 33.33$.
+(d) The price will not change as long as MC is in the range $MR_2 < MC < MR_1$I.e.,
+$-50 < MC < 33.33$.
 
-Since MC cannot be negative, the practical range is $0 < MC < 33.33$. The firm's current MC is $\$30$, which falls within this range, confirming that the current price of $\$50$ is optimal and will not change unless MC rises above $\$33.33$ or falls below $\$0$.
+Since MC cannot be negative, the practical range is $0 < MC < 33.33$. The firm's current MC is
+$\$30$, which falls within this range, confirming that the current price of $\$50$ is optimal and
+will not change unless MC rises above $\$33.33$ or falls below $\$0$.
 
 ### EQ-4: Monopolistic Competition and Excess Capacity
 
-**Question:** A monopolistically competitive firm has demand $P = 120 - 2Q$ and total cost $TC = 200 + 20Q + Q^2$. (a) Calculate the short-run profit-maximising output, price, and profit. (b) In the long run, calculate the output, price, and the degree of excess capacity. (c) Calculate the welfare loss (excess capacity cost). (d) Explain why monopolistic competition is often criticised for inefficiency but also praised for product variety.
+**Question:** A monopolistically competitive firm has demand $P = 120 - 2Q$ and total cost
+$TC = 200 + 20Q + Q^2$. (a) Calculate the short-run profit-maximising output, price, and profit. (b)
+In the long run, calculate the output, price, and the degree of excess capacity. (c) Calculate the
+welfare loss (excess capacity cost). (d) Explain why monopolistic competition is often criticised
+for inefficiency but also praised for product variety.
 
 **Solution:**
 
-(a) $MR = 120 - 4Q$. $MC = 20 + 2Q$. Set $MR = MC$: $120 - 4Q = 20 + 2Q$. $6Q = 100$. $Q = 16.67$. $P = 120 - 2(16.67) = 86.67$.
+(a) $MR = 120 - 4Q$. $MC = 20 + 2Q$. Set $MR = MC$: $120 - 4Q = 20 + 2Q$. $6Q = 100$. $Q = 16.67$.
+$P = 120 - 2(16.67) = 86.67$.
 
-Profit $= 86.67(16.67) - [200 + 20(16.67) + (16.67)^2] = 1444.7 - [200 + 333.3 + 277.8] = 1444.7 - 811.1 = 633.6$.
+Profit
+$= 86.67(16.67) - [200 + 20(16.67) + (16.67)^2] = 1444.7 - [200 + 333.3 + 277.8] = 1444.7 - 811.1 = 633.6$.
 
 (b) Long-run: $P = ATC$ and $MR = MC$.
 
 $MR = MC$: $120 - 4Q = 20 + 2Q$. $6Q = 100$. $Q^* = 16.67$.
 
-Wait, this is the same as the short run because demand hasn't shifted yet. In the long run, demand shifts inward as new firms enter. Let me denote the long-run demand as $P = a - 2Q$.
+Wait, this is the same as the short run because demand hasn't shifted yet. In the long run, demand
+shifts inward as new firms enter. Let me denote the long-run demand as $P = a - 2Q$.
 
 $MR = a - 4Q = MC = 20 + 2Q$. $a - 4Q = 20 + 2Q$. $6Q = a - 20$. $Q = (a - 20)/6$.
 
@@ -394,65 +459,123 @@ $(a - 20)^2 = 2400$. $a - 20 = \sqrt{2400} = 48.99$. $a = 68.99$.
 
 Long-run: $Q_{LR} = (68.99 - 20)/6 = 8.17$. $P_{LR} = 68.99 - 2(8.17) = 52.65$.
 
-Efficient scale (minimum ATC): $\frac{dATC}{dQ} = -200/Q^2 + 1 = 0$. $Q = \sqrt{200} = 14.14$. $\min ATC = 200/14.14 + 20 + 14.14 = 48.28$.
+Efficient scale (minimum ATC): $\frac{dATC}{dQ} = -200/Q^2 + 1 = 0$. $Q = \sqrt{200} = 14.14$.
+$\min ATC = 200/14.14 + 20 + 14.14 = 48.28$.
 
-Excess capacity $= 14.14 - 8.17 = 5.97$ units (the firm produces 5.97 units less than the efficient scale).
+Excess capacity $= 14.14 - 8.17 = 5.97$ units (the firm produces 5.97 units less than the efficient
+scale).
 
-(c) Welfare loss from excess capacity: the difference between ATC at actual output and minimum ATC, multiplied by actual output.
+(c) Welfare loss from excess capacity: the difference between ATC at actual output and minimum ATC,
+multiplied by actual output.
 
-$ATC_{LR} = \frac{200 + 20(8.17) + 8.17^2}{8.17} = \frac{200 + 163.4 + 66.7}{8.17} = \frac{430.1}{8.17} = 52.65$ (which equals $P_{LR}$Confirming zero profit).
+$ATC_{LR} = \frac{200 + 20(8.17) + 8.17^2}{8.17} = \frac{200 + 163.4 + 66.7}{8.17} = \frac{430.1}{8.17} = 52.65$
+(which equals $P_{LR}$Confirming zero profit).
 
 Welfare loss per unit $= 52.65 - 48.28 = 4.37$. Total welfare loss $= 4.37 \times 8.17 = 35.7$.
 
-(d) **Inefficiency criticism:** Monopolistically competitive firms produce at a point where $P > MC$ (allocative inefficiency) and $Q < Q_{min ATC}$ (productive inefficiency due to excess capacity). The welfare loss of 35.7 represents resources wasted because each firm operates below efficient scale, and there are too many firms each producing too little.
+(d) **Inefficiency criticism:** Monopolistically competitive firms produce at a point where $P > MC$
+(allocative inefficiency) and $Q < Q_{min ATC}$ (productive inefficiency due to excess capacity).
+The welfare loss of 35.7 represents resources wasted because each firm operates below efficient
+scale, and there are too many firms each producing too little.
 
-**Product variety defence:** The inefficiency is the "price" society pays for product diversity. Consumers value variety -- the ability to choose between different brands, styles, and qualities. If the market were forced to the efficient point (fewer firms, each producing at minimum ATC), product variety would be drastically reduced. The welfare loss from excess capacity may be smaller than the welfare gain from increased consumer choice. This is particularly relevant in Hong Kong's restaurant and retail sectors, where a wide variety of options is a key feature of the consumer experience.
+**Product variety defence:** The inefficiency is the "price" society pays for product diversity.
+Consumers value variety -- the ability to choose between different brands, styles, and qualities. If
+the market were forced to the efficient point (fewer firms, each producing at minimum ATC), product
+variety would be drastically reduced. The welfare loss from excess capacity may be smaller than the
+welfare gain from increased consumer choice. This is particularly relevant in Hong Kong's restaurant
+and retail sectors, where a wide variety of options is a key feature of the consumer experience.
 
 ### EQ-5: Contestable Market Theory
 
-**Question:** An airline operates as the sole carrier on a route between Hong Kong and a secondary city. It has fixed costs of HK$10 million per flight and variable costs of HK$2 million per flight. It charges HK$8 million per flight and operates 10 flights per week. A potential entrant has the same cost structure. Entry and exit are costless (no sunk costs). (a) Calculate the incumbent's weekly profit. (b) If the incumbent charges the monopoly price, explain why it may be vulnerable to entry under contestable market theory. (c) What price should the incumbent charge to deter entry? (d) Evaluate whether the airline market in Hong Kong fits the contestable market model.
+**Question:** An airline operates as the sole carrier on a route between Hong Kong and a secondary
+city. It has fixed costs of HK$10 million per flight and variable costs of HK$2 million per flight.
+It charges HK$8 million per flight and operates 10 flights per week. A potential entrant has the
+same cost structure. Entry and exit are costless (no sunk costs). (a) Calculate the incumbent's
+weekly profit. (b) If the incumbent charges the monopoly price, explain why it may be vulnerable to
+entry under contestable market theory. (c) What price should the incumbent charge to deter entry?
+(d) Evaluate whether the airline market in Hong Kong fits the contestable market model.
 
 **Solution:**
 
-(a) Revenue per flight $= \text{HK}\$8$ million. Cost per flight $= 10 + 2 = \text{HK}\$12$ million. Profit per flight $= 8 - 12 = -\text{HK}\$4$ million.
+(a) Revenue per flight $= \text{HK}\$8$ million. Cost per flight $= 10 + 2 = \text{HK}\$12$ million.
+Profit per flight $= 8 - 12 = -\text{HK}\$4$ million.
 
-Wait, this gives a loss. Let me reinterpret: fixed costs of HK$10 million per *week* (not per flight) and variable costs of HK$2 million per flight.
+Wait, this gives a loss. Let me reinterpret: fixed costs of HK$10 million per _week_ (not per
+flight) and variable costs of HK$2 million per flight.
 
 Profit per week $= 8 \times 10 - (10 + 2 \times 10) = 80 - 30 = \text{HK}\$50$ million.
 
-(b) Under contestable market theory, even a monopoly may behave like a competitive firm if there is a threat of "hit-and-run" entry. If the incumbent charges a monopoly price (above average cost), a potential entrant can enter, undercut the incumbent's price slightly, earn a profit, and exit before the incumbent can respond. Because entry and exit are costless (no sunk costs), this threat is credible.
+(b) Under contestable market theory, even a monopoly may behave like a competitive firm if there is
+a threat of "hit-and-run" entry. If the incumbent charges a monopoly price (above average cost), a
+potential entrant can enter, undercut the incumbent's price slightly, earn a profit, and exit before
+the incumbent can respond. Because entry and exit are costless (no sunk costs), this threat is
+credible.
 
-The incumbent's average cost per flight $= (10 + 2 \times 10) / 10 = 3$ million. If the incumbent charges HK$8 million per flight, a potential entrant can profitably enter at any price above HK$3 million. The incumbent's price of HK$8 million is far above average cost, inviting entry.
+The incumbent's average cost per flight $= (10 + 2 \times 10) / 10 = 3$ million. If the incumbent
+charges HK$8 million per flight, a potential entrant can profitably enter at any price above HK$3
+million. The incumbent's price of HK$8 million is far above average cost, inviting entry.
 
-(c) To deter entry, the incumbent should charge a price equal to average cost (the "limit price" in contestable markets): $P = AC = 3$ million per flight.
+(c) To deter entry, the incumbent should charge a price equal to average cost (the "limit price" in
+contestable markets): $P = AC = 3$ million per flight.
 
-At this price, an entrant cannot earn any profit (price equals cost), so entry is deterred. The incumbent earns zero economic profit but maintains the market to itself.
+At this price, an entrant cannot earn any profit (price equals cost), so entry is deterred. The
+incumbent earns zero economic profit but maintains the market to itself.
 
-However, this assumes the entrant has the same cost structure. If the entrant has higher costs (less efficient), the incumbent can charge slightly above AC and still deter entry.
+However, this assumes the entrant has the same cost structure. If the entrant has higher costs (less
+efficient), the incumbent can charge slightly above AC and still deter entry.
 
 (d) **Evaluation for Hong Kong's airline market:**
 
-*Arguments for contestability:*
-- Hong Kong International Airport has spare capacity (three runways), so new entrants can obtain landing slots.
+_Arguments for contestability:_
+
+- Hong Kong International Airport has spare capacity (three runways), so new entrants can obtain
+  landing slots.
 - Aircraft can be leased rather than purchased, reducing sunk costs.
 - The Open Skies policy allows foreign airlines to operate routes to/from Hong Kong.
 
-*Arguments against contestability:*
-- Significant sunk costs: establishing a brand, reservation systems, ground handling, and marketing require substantial upfront investment.
-- Airport slot constraints at peak times limit the ability of new entrants to operate competitive schedules.
-- Incumbent airlines (Cathay Pacific) have loyalty programmes and corporate contracts that create switching costs for passengers.
+_Arguments against contestability:_
+
+- Significant sunk costs: establishing a brand, reservation systems, ground handling, and marketing
+  require substantial upfront investment.
+- Airport slot constraints at peak times limit the ability of new entrants to operate competitive
+  schedules.
+- Incumbent airlines (Cathay Pacific) have loyalty programmes and corporate contracts that create
+  switching costs for passengers.
 - Network effects: hub-and-spoke systems give incumbents advantages in connecting traffic.
 
-**Conclusion:** Hong Kong's airline market has some contestable features but does not fully satisfy the conditions of a perfectly contestable market. The presence of some sunk costs and incumbent advantages means that contestable market theory provides an incomplete explanation. Regulatory oversight (through the Air Transport Licensing Authority) is still needed to prevent abuse of market power.
+**Conclusion:** Hong Kong's airline market has some contestable features but does not fully satisfy
+the conditions of a perfectly contestable market. The presence of some sunk costs and incumbent
+advantages means that contestable market theory provides an incomplete explanation. Regulatory
+oversight (through the Air Transport Licensing Authority) is still needed to prevent abuse of market
+power.
 
 ## Common Pitfalls
 
-1. **Confusing the demand curve with the marginal revenue curve:** In monopoly, the MR curve is always below the demand curve (for a linear demand, MR has twice the slope). The profit-maximising output is where $MR = MC$Not where $D = MC$. Setting $P = MC$ gives the allocatively efficient output (used for regulation), not the profit-maximising output.
+1. **Confusing the demand curve with the marginal revenue curve:** In monopoly, the MR curve is
+   always below the demand curve (for a linear demand, MR has twice the slope). The
+   profit-maximising output is where $MR = MC$Not where $D = MC$. Setting $P = MC$ gives the
+   allocatively efficient output (used for regulation), not the profit-maximising output.
 
-2. **Forgetting that monopolistic competition leads to zero long-run profit but not allocative efficiency:** In long-run monopolistic competition, $P = ATC$ (zero economic profit) but $P > MC$ (allocative inefficiency). In long-run perfect competition, both $P = ATC$ and $P = MC$ hold. The key difference is the downward-sloping demand curve in monopolistic competition versus the horizontal demand curve in perfect competition.
+2. **Forgetting that monopolistic competition leads to zero long-run profit but not allocative
+   efficiency:** In long-run monopolistic competition, $P = ATC$ (zero economic profit) but $P > MC$
+   (allocative inefficiency). In long-run perfect competition, both $P = ATC$ and $P = MC$ hold. The
+   key difference is the downward-sloping demand curve in monopolistic competition versus the
+   horizontal demand curve in perfect competition.
 
-3. **Misidentifying the Nash equilibrium in game theory:** The Nash equilibrium is a strategy profile where no player can improve their payoff by unilaterally changing their strategy. To find it, check each cell: for each player, ask "given the other player's strategy, is this my best response?" A common error is to identify the cooperative outcome (which maximises joint payoff) rather than the Nash equilibrium (which may be non-cooperative).
+3. **Misidentifying the Nash equilibrium in game theory:** The Nash equilibrium is a strategy
+   profile where no player can improve their payoff by unilaterally changing their strategy. To find
+   it, check each cell: for each player, ask "given the other player's strategy, is this my best
+   response?" A common error is to identify the cooperative outcome (which maximises joint payoff)
+   rather than the Nash equilibrium (which may be non-cooperative).
 
-4. **Assuming that barriers to entry are the same across market structures:** Barriers to entry explain why monopoly exists but also vary in degree across oligopoly and monopolistic competition. In DSE questions, always identify the specific barriers (legal, natural, strategic) and explain how they sustain the market structure.
+4. **Assuming that barriers to entry are the same across market structures:** Barriers to entry
+   explain why monopoly exists but also vary in degree across oligopoly and monopolistic
+   competition. In DSE questions, always identify the specific barriers (legal, natural, strategic)
+   and explain how they sustain the market structure.
 
-5. **Confusing productive efficiency with allocative efficiency:** Productive efficiency means producing at minimum average cost ($P = \min AC$). Allocative efficiency means producing where price equals marginal cost ($P = MC$). Only perfect competition achieves both in the long run. Monopoly achieves neither. Monopolistic competition achieves neither (but is close to productive efficiency). Natural monopoly with average cost pricing achieves productive efficiency but not allocative efficiency.
+5. **Confusing productive efficiency with allocative efficiency:** Productive efficiency means
+   producing at minimum average cost ($P = \min AC$). Allocative efficiency means producing where
+   price equals marginal cost ($P = MC$). Only perfect competition achieves both in the long run.
+   Monopoly achieves neither. Monopolistic competition achieves neither (but is close to productive
+   efficiency). Natural monopoly with average cost pricing achieves productive efficiency but not
+   allocative efficiency.

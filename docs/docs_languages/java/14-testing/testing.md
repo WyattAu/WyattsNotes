@@ -1,9 +1,12 @@
 ---
 id: testing
 title: Testing in Java
-description: "Testing in Java — JUnit 5; Core Annotations; Assertions; Test Lifecycle including key definitions, derivations, and problem-solving techniques."
+description:
+  'Testing in Java — JUnit 5; Core Annotations; Assertions; Test Lifecycle including key
+  definitions, derivations, and problem-solving techniques.'
 slug: testing
 ---
+
 ## JUnit 5
 
 JUnit 5 (Jupiter) is the standard testing framework for Java. It consists of three sub-projects:
@@ -171,12 +174,10 @@ class LifecycleTest {
 }
 ```
 
-:::info
-By default, JUnit 5 creates a new test instance for each test method (PER_METHOD lifecycle).
+:::info By default, JUnit 5 creates a new test instance for each test method (PER_METHOD lifecycle).
 Use `@TestInstance(Lifecycle.PER_CLASS)` to create a single instance shared across all test methods.
 This allows non-static `@BeforeAll`/`@AfterAll` methods, but tests share instance state, which can
-Cause interference.
-:::
+Cause interference. :::
 
 ### Parameterized Tests
 
@@ -399,11 +400,9 @@ System.out.println(spyList.size()); // 100 (stubbed)
 System.out.println(spyList.get(0));   // "real" (real method called)
 ```
 
-:::warning
-When spying, use `doReturn().when(spy)` instead of `when(spy).thenReturn()`. The latter
+:::warning When spying, use `doReturn().when(spy)` instead of `when(spy).thenReturn()`. The latter
 Calls the real method to get the return value before stubbing, which can have side effects or throw
-Exceptions.
-:::
+Exceptions. :::
 
 ## Integration Testing
 
@@ -690,35 +689,33 @@ tasks.check {
 
 ### Coverage Metrics
 
-| Metric | Description |
+| Metric                   | Description                                           |
 | ------------------------ | ----------------------------------------------------- |
-| **Line coverage** | Percentage of source lines exercised by tests |
-| **Branch coverage** | Percentage of `if`/`else` branches taken |
-| **Method coverage** | Percentage of methods called |
-| **Class coverage** | Percentage of classes with at least one method called |
-| **Instruction coverage** | Percentage of bytecode instructions executed |
+| **Line coverage**        | Percentage of source lines exercised by tests         |
+| **Branch coverage**      | Percentage of `if`/`else` branches taken              |
+| **Method coverage**      | Percentage of methods called                          |
+| **Class coverage**       | Percentage of classes with at least one method called |
+| **Instruction coverage** | Percentage of bytecode instructions executed          |
 
-:::warning
-100% coverage does not mean bug-free code. Coverage measures execution paths, not
+:::warning 100% coverage does not mean bug-free code. Coverage measures execution paths, not
 Correctness. A test that calls a method with wrong inputs and asserts wrong values still contributes
 To coverage. Focus on meaningful tests, not the coverage number. Use coverage as a tool to find
-Untested code, not as a target to gamify.
-:::
+Untested code, not as a target to gamify. :::
 
 ## Flaky Tests
 
 ### Causes of Flakiness
 
 1. **Non-deterministic order** — tests that depend on execution order, hash map iteration order, or
- `HashSet` ordering.
+   `HashSet` ordering.
 2. **Time-dependent behavior** — tests that depend on wall-clock time, sleep durations, or timeout
- thresholds.
+   thresholds.
 3. **Concurrency** — tests that use threads, `CompletableFuture`Or async operations without proper
- synchronization.
+   synchronization.
 4. **External dependencies** — tests that depend on databases, network services, or file system
- state.
+   state.
 5. **Non-deterministic random** — tests that use `Math.random()` or `ThreadLocalRandom` without
- seeds.
+   seeds.
 
 ### Strategies for Reliable Tests
 

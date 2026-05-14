@@ -1,6 +1,8 @@
 ---
-title: "Sequences and Series"
-description: "IB Mathematics — arithmetic and geometric sequences, sigma notation, Maclaurin and Taylor series, convergence, and the binomial theorem."
+title: 'Sequences and Series'
+description:
+  'IB Mathematics — arithmetic and geometric sequences, sigma notation, Maclaurin and Taylor series,
+  convergence, and the binomial theorem.'
 slug: sequences-and-series
 ---
 
@@ -8,9 +10,9 @@ slug: sequences-and-series
 
 ### Definition
 
-A **sequence** is an ordered list of numbers $a_1, a_2, a_3, \ldots$ written $\{a_n\}_{n=1}^{\infty}$
-Or $\{a_n\}$. Each $a_n$ is called a **term** of the sequence. A **series** is the sum of
-The terms of a sequence: $\displaystyle\sum_{n=1}^{\infty} a_n$.
+A **sequence** is an ordered list of numbers $a_1, a_2, a_3, \ldots$ written
+$\{a_n\}_{n=1}^{\infty}$ Or $\{a_n\}$. Each $a_n$ is called a **term** of the sequence. A **series**
+is the sum of The terms of a sequence: $\displaystyle\sum_{n=1}^{\infty} a_n$.
 
 A sequence **converges** to a limit $L$ if $\displaystyle\lim_{n \to \infty} a_n = L$. Otherwise it
 **diverges**.
@@ -33,7 +35,7 @@ The sum of the first $n$ terms is:
 
 $$S_n = \frac{n}{2}(a_1 + a_n) = \frac{n}{2}\bigl[2a_1 + (n-1)d\bigr]$$
 
-*Proof.* Write the sum forward and backward:
+_Proof._ Write the sum forward and backward:
 
 $$S_n = a_1 + (a_1 + d) + (a_1 + 2d) + \cdots + a_n$$
 $$S_n = a_n + (a_n - d) + (a_n - 2d) + \cdots + a_1$$
@@ -69,7 +71,7 @@ For $r \ne 1$:
 
 $$S_n = \frac{a_1(1 - r^n)}{1 - r} = \frac{a_1(r^n - 1)}{r - 1}$$
 
-*Proof.* $S_n = a_1 + a_1 r + a_1 r^2 + \cdots + a_1 r^{n-1}$.
+_Proof._ $S_n = a_1 + a_1 r + a_1 r^2 + \cdots + a_1 r^{n-1}$.
 
 $$rS_n = a_1 r + a_1 r^2 + \cdots + a_1 r^{n-1} + a_1 r^n$$
 
@@ -120,11 +122,11 @@ $$\sum_{k=m}^{n}(a_k + b_k) = \sum_{k=m}^{n} a_k + \sum_{k=m}^{n} b_k$$
 
 ### Useful Summation Formulas
 
-| Sum | Closed Form |
-| :--- | :--- |
-| $\displaystyle\sum_{k=1}^{n} k$ | $\dfrac{n(n+1)}{2}$ |
-| $\displaystyle\sum_{k=1}^{n} k^2$ | $\dfrac{n(n+1)(2n+1)}{6}$ |
-| $\displaystyle\sum_{k=1}^{n} k^3$ | $\dfrac{n^2(n+1)^2}{4}$ |
+| Sum                               | Closed Form                                 |
+| :-------------------------------- | :------------------------------------------ |
+| $\displaystyle\sum_{k=1}^{n} k$   | $\dfrac{n(n+1)}{2}$                         |
+| $\displaystyle\sum_{k=1}^{n} k^2$ | $\dfrac{n(n+1)(2n+1)}{6}$                   |
+| $\displaystyle\sum_{k=1}^{n} k^3$ | $\dfrac{n^2(n+1)^2}{4}$                     |
 | $\displaystyle\sum_{k=0}^{n} r^k$ | $\dfrac{1 - r^{n+1}}{1 - r}, \quad r \ne 1$ |
 
 ---
@@ -135,8 +137,8 @@ $$\sum_{k=m}^{n}(a_k + b_k) = \sum_{k=m}^{n} a_k + \sum_{k=m}^{n} b_k$$
 
 If $\displaystyle\lim_{n \to \infty} a_n \ne 0$Then $\displaystyle\sum a_n$ diverges.
 
-**Caution.** If $\lim_{n \to \infty} a_n = 0$The series **may or may not** converge.
-The harmonic series $\sum \dfrac{1}{n}$ diverges despite its terms tending to zero.
+**Caution.** If $\lim_{n \to \infty} a_n = 0$The series **may or may not** converge. The harmonic
+series $\sum \dfrac{1}{n}$ diverges despite its terms tending to zero.
 
 ### Comparison Test
 
@@ -177,8 +179,8 @@ An alternating series $\sum (-1)^{n+1} a_n$ (or $\sum (-1)^n a_n$) converges if:
 1. $a_n$ is decreasing: $a_{n+1} \le a_n$ for all $n$.
 2. $\displaystyle\lim_{n \to \infty} a_n = 0$.
 
-**Example.** $\displaystyle\sum_{n=1}^{\infty} \frac{(-1)^{n+1}}{n}$ converges (the alternating harmonic
-Series) since $\dfrac{1}{n}$ decreases to $0$.
+**Example.** $\displaystyle\sum_{n=1}^{\infty} \frac{(-1)^{n+1}}{n}$ converges (the alternating
+harmonic Series) since $\dfrac{1}{n}$ decreases to $0$.
 
 ---
 
@@ -230,15 +232,15 @@ $$f(x) = \sum_{n=0}^{\infty} \frac{f^{(n)}(0)}{n!}\,x^n = f(0) + f'(0)x + \frac{
 
 ### Standard Maclaurin Series
 
-| Function | Maclaurin Series | Radius of Convergence |
-| :--- | :--- | :--- |
-| $e^x$ | $\displaystyle\sum_{n=0}^{\infty} \frac{x^n}{n!}$ | $\infty$ |
-| $\sin x$ | $\displaystyle\sum_{n=0}^{\infty} \frac{(-1)^n x^{2n+1}}{(2n+1)!}$ | $\infty$ |
-| $\cos x$ | $\displaystyle\sum_{n=0}^{\infty} \frac{(-1)^n x^{2n}}{(2n)!}$ | $\infty$ |
-| $\ln(1 + x)$ | $\displaystyle\sum_{n=1}^{\infty} \frac{(-1)^{n+1} x^n}{n}$ | $1$ |
-| $(1 + x)^n$ | $\displaystyle\sum_{k=0}^{\infty} \binom{n}{k}x^k$ | $1$ |
-| $\dfrac{1}{1 - x}$ | $\displaystyle\sum_{n=0}^{\infty} x^n$ | $1$ |
-| $\arctan x$ | $\displaystyle\sum_{n=0}^{\infty} \frac{(-1)^n x^{2n+1}}{2n+1}$ | $1$ |
+| Function           | Maclaurin Series                                                   | Radius of Convergence |
+| :----------------- | :----------------------------------------------------------------- | :-------------------- |
+| $e^x$              | $\displaystyle\sum_{n=0}^{\infty} \frac{x^n}{n!}$                  | $\infty$              |
+| $\sin x$           | $\displaystyle\sum_{n=0}^{\infty} \frac{(-1)^n x^{2n+1}}{(2n+1)!}$ | $\infty$              |
+| $\cos x$           | $\displaystyle\sum_{n=0}^{\infty} \frac{(-1)^n x^{2n}}{(2n)!}$     | $\infty$              |
+| $\ln(1 + x)$       | $\displaystyle\sum_{n=1}^{\infty} \frac{(-1)^{n+1} x^n}{n}$        | $1$                   |
+| $(1 + x)^n$        | $\displaystyle\sum_{k=0}^{\infty} \binom{n}{k}x^k$                 | $1$                   |
+| $\dfrac{1}{1 - x}$ | $\displaystyle\sum_{n=0}^{\infty} x^n$                             | $1$                   |
+| $\arctan x$        | $\displaystyle\sum_{n=0}^{\infty} \frac{(-1)^n x^{2n+1}}{2n+1}$    | $1$                   |
 
 ### Deriving Series
 
@@ -325,11 +327,13 @@ Actual error: $|1.64872 - 1.64583| \approx 0.0029$Which is within the bound.
 
 ### Summation Proofs
 
-**Example.** Prove that $\displaystyle\sum_{k=1}^{n} k^2 = \frac{n(n+1)(2n+1)}{6}$ for all $n \in \mathbb{'\{'}Z{'\}'}^+$.
+**Example.** Prove that $\displaystyle\sum_{k=1}^{n} k^2 = \frac{n(n+1)(2n+1)}{6}$ for all
+$n \in \mathbb{'\{'}Z{'\}'}^+$.
 
 **Base case** ($n = 1$): $\dfrac{1 \cdot 2 \cdot 3}{6} = 1$. True.
 
-**Inductive hypothesis:** Assume $\displaystyle\sum_{k=1}^{j} k^2 = \frac{j(j+1)(2j+1)}{6}$ for some $j \ge 1$.
+**Inductive hypothesis:** Assume $\displaystyle\sum_{k=1}^{j} k^2 = \frac{j(j+1)(2j+1)}{6}$ for some
+$j \ge 1$.
 
 **Inductive step:**
 
@@ -339,8 +343,8 @@ $$= \frac{(j+1)}{6}\bigl[j(2j+1) + 6(j+1)\bigr] = \frac{(j+1)}{6}\bigl[2j^2 + 7j
 
 $$= \frac{(j+1)(j+2)(2j+3)}{6}$$
 
-This is the formula with $n = j + 1$. Hence $P(j+1)$ is true. By induction, the result holds for
-All $n \in \mathbb{'\{'}Z{'\}'}^+$.
+This is the formula with $n = j + 1$. Hence $P(j+1)$ is true. By induction, the result holds for All
+$n \in \mathbb{'\{'}Z{'\}'}^+$.
 
 ### Divisibility Proofs
 
@@ -368,14 +372,13 @@ This is divisible by $2$. By induction, the result holds.
 
 $$2^{k+1} = 2 \cdot 2^k \gt 2k \ge k + 1$$
 
-(The last inequality holds since $k \ge 1$.) Therefore $2^{k+1} \gt k + 1$. By induction, $2^n \gt n$
-For all positive integers $n$.
+(The last inequality holds since $k \ge 1$.) Therefore $2^{k+1} \gt k + 1$. By induction,
+$2^n \gt n$ For all positive integers $n$.
 
-:::warning
-Common Pitfall
+:::warning Common Pitfall
 
-The inductive step must genuinely use the inductive hypothesis. Proving $P(k+1)$ independently
-Of $P(k)$ is not a valid induction argument. Always make it explicit where the hypothesis is used.
+The inductive step must genuinely use the inductive hypothesis. Proving $P(k+1)$ independently Of
+$P(k)$ is not a valid induction argument. Always make it explicit where the hypothesis is used.
 
 :::
 
@@ -448,16 +451,16 @@ So the coefficient of $x^4$ is $240$.
 
 **Worked Example: Induction Proof Involving Summation**
 
-Prove by induction that $\displaystyle\sum_{k=1}^{n} k \cdot 2^{k-1} = (n - 1) \cdot 2^n + 1$ for all
-$n \in \mathbb{'\{'}Z{'\}'}^+$.
+Prove by induction that $\displaystyle\sum_{k=1}^{n} k \cdot 2^{k-1} = (n - 1) \cdot 2^n + 1$ for
+all $n \in \mathbb{'\{'}Z{'\}'}^+$.
 
 <details>
 <summary>Solution</summary>
 
 **Base case** ($n = 1$): LHS $= 1 \cdot 2^0 = 1$. RHS $= (1 - 1) \cdot 2^1 + 1 = 1$. True.
 
-**Inductive hypothesis:** Assume $\displaystyle\sum_{k=1}^{j} k \cdot 2^{k-1} = (j - 1) \cdot 2^j + 1$ for some
-$j \ge 1$.
+**Inductive hypothesis:** Assume
+$\displaystyle\sum_{k=1}^{j} k \cdot 2^{k-1} = (j - 1) \cdot 2^j + 1$ for some $j \ge 1$.
 
 **Inductive step:**
 
@@ -469,7 +472,8 @@ $$= \bigl[(j-1) + (j+1)\bigr] 2^j + 1 = 2j \cdot 2^j + 1 = j \cdot 2^{j+1} + 1$$
 
 $$= (j + 1 - 1) \cdot 2^{j+1} + 1$$
 
-This is the formula with $n = j + 1$. By induction, the result holds for all $n \in \mathbb{'\{'}Z{'\}'}^+$.
+This is the formula with $n = j + 1$. By induction, the result holds for all
+$n \in \mathbb{'\{'}Z{'\}'}^+$.
 
 </details>
 
@@ -502,67 +506,72 @@ Actual error: $|0.1823 - 0.18| = 0.0023$Which is within the bound.
 ## Common Pitfalls
 
 1. **Misidentifying the first term in sigma notation.** $\sum_{k=0}^{n}$ has $n + 1$ terms, while
- $\sum_{k=1}^{n}$ has $n$ terms. Confusing the starting index leads to off-by-one errors in sums.
+   $\sum_{k=1}^{n}$ has $n$ terms. Confusing the starting index leads to off-by-one errors in sums.
 
-2. **Applying the infinite sum formula when $|r| \ge 1$.** The formula $S_{\infty} = \dfrac{a_1}{1 - r}$
- is valid **only** when $|r| \lt 1$. For $|r| \ge 1$ the series diverges and the formula is
- meaningless.
+2. **Applying the infinite sum formula when $|r| \ge 1$.** The formula
+   $S_{\infty} = \dfrac{a_1}{1 - r}$ is valid **only** when $|r| \lt 1$. For $|r| \ge 1$ the series
+   diverges and the formula is meaningless.
 
-3. **Computing the wrong term number.** The $n$-th term of a geometric sequence is
- $a_1 r^{n-1}$Not $a_1 r^n$. Similarly, the $n$-th term of an arithmetic sequence is
- $a_1 + (n-1)d$Not $a_1 + nd$.
+3. **Computing the wrong term number.** The $n$-th term of a geometric sequence is $a_1 r^{n-1}$Not
+   $a_1 r^n$. Similarly, the $n$-th term of an arithmetic sequence is $a_1 + (n-1)d$Not $a_1 + nd$.
 
 4. **Using the ratio test when $L = 1$.** The ratio test is inconclusive when $L = 1$. The series
- $\sum \dfrac{1}{n}$ diverges and $\sum \dfrac{1}{n^2}$ converges, yet both give $L = 1$.
+   $\sum \dfrac{1}{n}$ diverges and $\sum \dfrac{1}{n^2}$ converges, yet both give $L = 1$.
 
 5. **Weak base case in induction.** The base case must match the claim. If the statement starts at
- $n = 1$Proving it for $n = 0$ is not sufficient unless the domain is specified to include $0$.
+   $n = 1$Proving it for $n = 0$ is not sufficient unless the domain is specified to include $0$.
 
 6. **Neglecting the alternating sign in the general binomial expansion.** When $n$ is not a positive
- integer, the series is infinite and the sign of each coefficient depends on the value of $n$.
- Substituting $x \to ax$ also changes the sign of odd powers when $a \lt 0$.
+   integer, the series is infinite and the sign of each coefficient depends on the value of $n$.
+   Substituting $x \to ax$ also changes the sign of odd powers when $a \lt 0$.
 
-7. **Confusing the Lagrange remainder with the actual error.** The remainder bound $|R_n(x)| \le
- \dfrac{M|x-a|^{n+1}}{(n+1)!}$ gives an **upper bound**, not the exact error. The actual error may
- be much smaller.
+7. **Confusing the Lagrange remainder with the actual error.** The remainder bound
+   $|R_n(x)| \le
+ \dfrac{M|x-a|^{n+1}}{(n+1)!}$ gives an **upper bound**, not the exact error. The
+   actual error may be much smaller.
 
 8. **Forgetting convergence conditions for Maclaurin series.** Each standard Maclaurin series has a
- specific radius of convergence. The series for $\ln(1+x)$ only converges for $-1 \lt x \le 1$;
- using it outside this interval gives incorrect results.
+   specific radius of convergence. The series for $\ln(1+x)$ only converges for $-1 \lt x \le 1$;
+   using it outside this interval gives incorrect results.
 
 ---
 
 ## Exam-Style Problems
 
 1. Find the sum of the infinite geometric series $8 - 4 + 2 - 1 + \cdots$ and express the repeating
- decimal $0.\overline{27}$ as a fraction in lowest terms.
+   decimal $0.\overline{27}$ as a fraction in lowest terms.
 
-2. Use the ratio test to determine the convergence of $\displaystyle\sum_{n=1}^{\infty} \frac{3^n}{n!}$.
+2. Use the ratio test to determine the convergence of
+   $\displaystyle\sum_{n=1}^{\infty} \frac{3^n}{n!}$.
 
 3. Find the coefficient of $x^5$ in the expansion of $(1 + 3x)^{-2}$.
 
 4. Prove by induction that $\displaystyle\sum_{k=1}^{n} \frac{1}{k(k+1)} = \frac{n}{n+1}$ for all
- $n \in \mathbb{'\{'}Z{'\}'}^+$.
+   $n \in \mathbb{'\{'}Z{'\}'}^+$.
 
-5. Find the Maclaurin series of $\dfrac{x}{1 + x^2}$ up to $x^7$ and state the radius of convergence.
+5. Find the Maclaurin series of $\dfrac{x}{1 + x^2}$ up to $x^7$ and state the radius of
+   convergence.
 
 6. Use a third degree Maclaurin polynomial of $\cos x$ to approximate $\cos(0.3)$. Bound the error
- using the Lagrange remainder.
+   using the Lagrange remainder.
 
 7. An arithmetic sequence has first term $5$ and common difference $3$. A geometric sequence has
- first term $2$ and common ratio $2$. Find the smallest $n$ for which the $n$-th term of the
- geometric sequence exceeds the $n$-th term of the arithmetic sequence.
+   first term $2$ and common ratio $2$. Find the smallest $n$ for which the $n$-th term of the
+   geometric sequence exceeds the $n$-th term of the arithmetic sequence.
 
-8. Determine whether $\displaystyle\sum_{n=1}^{\infty} \frac{(-1)^n}{\sqrt{n}}$ converges absolutely,
- converges conditionally, or diverges.
+8. Determine whether $\displaystyle\sum_{n=1}^{\infty} \frac{(-1)^n}{\sqrt{n}}$ converges
+   absolutely, converges conditionally, or diverges.
 
 ---
 
 ## Cross-References
 
-- **Differentiation** is needed to derive Maclaurin and Taylor series: see [Differentiation](differentiation-depth)
-- **Integration** connects to term-by-term integration of power series: see [Integration](integration-techniques)
-- **Differential equations** use series expansions as solution methods: see [Differential Equations](differential-equations)
+- **Differentiation** is needed to derive Maclaurin and Taylor series: see
+  [Differentiation](differentiation-depth)
+- **Integration** connects to term-by-term integration of power series: see
+  [Integration](integration-techniques)
+- **Differential equations** use series expansions as solution methods: see
+  [Differential Equations](differential-equations)
 - **Proof and reasoning** techniques including induction: see [Proof](../proof)
 
 ## Summary

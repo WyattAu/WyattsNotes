@@ -1,6 +1,8 @@
 ---
 title: Sequence Containers (Vector, Deque, List)
-description: "C++: Sequence Containers (Vector, Deque, List) — Sequence Containers Memory Models; `std::vector`: Contiguous Memory, Capacity, and Reallocation."
+description:
+  'C++: Sequence Containers (Vector, Deque, List) — Sequence Containers Memory Models;
+  `std::vector`: Contiguous Memory, Capacity, and Reallocation.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -8,12 +10,13 @@ categories:
   - Cpp
 slug: sequence-containers
 ---
+
 ## Sequence Containers Memory Models
 
-The C++ standard library provides three primary sequence containers: `std::vector``std::deque`
-And `std::list`. Each uses a different memory model with distinct trade-offs in terms of random
-Access, insertion/deletion performance, cache locality, and iterator invalidation guarantees. This
-Section covers their internal structure, growth strategies, and practical usage patterns.
+The C++ standard library provides three primary sequence containers: `std::vector``std::deque` And
+`std::list`. Each uses a different memory model with distinct trade-offs in terms of random Access,
+insertion/deletion performance, cache locality, and iterator invalidation guarantees. This Section
+covers their internal structure, growth strategies, and practical usage patterns.
 
 ### `std::vector`: Contiguous Memory, Capacity, and Reallocation
 
@@ -78,7 +81,7 @@ A `std::vector` is implemented as three pointers [N4950 §22.3.11.1]:
 - `_M_start` points to the beginning of the allocated block.
 - `_M_finish` points one past the last constructed element (`size() = _M_finish - _M_start`).
 - `_M_end_of_storage` points one past the allocated capacity
- (`capacity() = _M_end_of_storage - _M_start`).
+  (`capacity() = _M_end_of_storage - _M_start`).
 
 This three-pointer structure means `sizeof(std::vector<int>) == 24` on 64-bit systems, regardless of
 The number of elements. The vector itself is always on the stack (or as part of another object);
@@ -97,9 +100,9 @@ int main() {
 
 ### Growth Factor and Amortized O(1) push_back
 
-When `push_back` is called and `size() == capacity()`The vector must **reallocate**: allocate a
-New, larger block, move or copy elements into it, and deallocate the old block. The standard does
-Not mandate a specific growth factor [N4950 §22.3.11.5], but most major implementations (libstdc++,
+When `push_back` is called and `size() == capacity()`The vector must **reallocate**: allocate a New,
+larger block, move or copy elements into it, and deallocate the old block. The standard does Not
+mandate a specific growth factor [N4950 §22.3.11.5], but most major implementations (libstdc++,
 Libc++, MSVC) use a factor of $\times 2$ (geometric growth).
 
 #### Formal Amortized Analysis Proof
@@ -120,8 +123,8 @@ $$
 For $\alpha = 2$This gives $C(n) \leq 2n$So total copies are at most $2n$ for $n$ insertions,
 Yielding amortized cost of 2 element copies per insertion.
 
-For $\alpha = 1.5$We get $C(n) \leq 3n$. Each insertion is still amortized $O(1)$But the
-Constant is slightly worse. QED.
+For $\alpha = 1.5$We get $C(n) \leq 3n$. Each insertion is still amortized $O(1)$But the Constant is
+slightly worse. QED.
 
 #### Why 1.5x Can Be Preferred Over 2x
 
@@ -137,8 +140,8 @@ More critically, a factor of exactly 2 can lead to the allocator being unable to
 When the vector grows from $c$ to $2c$The old block of size $c$ is freed. On the next reallocation
 From $2c$ to $4c$The old block of size $2c$ is freed. If the heap allocator places blocks
 Contiguously, the freed block of size $c$ or $2c$ may be too small to hold the next allocation of
-$4c$Forcing the allocator to find a completely new region. With $\alpha = 1.5$The old block of
-Size $c$ is freed when growing to $1.5c$And the next reallocation needs $2.25c$. Because
+$4c$Forcing the allocator to find a completely new region. With $\alpha = 1.5$The old block of Size
+$c$ is freed when growing to $1.5c$And the next reallocation needs $2.25c$. Because
 $c + 1.5c = 2.5c \gt 2.25c$The previously freed space can sometimes be reused.
 
 This is why some production allocators (e.g., Facebook's folly `fbvector`) use a factor of 1.5.
@@ -163,11 +166,9 @@ int main() {
 }
 ```
 
-:::info
-The C++ standard guarantees amortized $O(1)$ `push_back` [N4950 §22.3.11.5 Table 80], but
+:::info The C++ standard guarantees amortized $O(1)$ `push_back` [N4950 §22.3.11.5 Table 80], but
 The exact growth factor is implementation-defined. A factor of 2 is common, and some implementations
-(e.g., Facebook's folly) use 1.5 to reduce peak memory usage.
-:::
+(e.g., Facebook's folly) use 1.5 to reduce peak memory usage. :::
 
 ### Iterator, Pointer, and Reference Invalidation Rules
 
@@ -177,17 +178,17 @@ Reallocation-triggering operation becomes **undefined behavior** if dereferenced
 
 The invalidation rules for `std::vector` [N4950 §22.3.11.5 Table 80]:
 
-| Operation | Iterator | Pointer | Reference |
+| Operation                | Iterator                                | Pointer         | Reference       |
 | ------------------------ | --------------------------------------- | --------------- | --------------- |
-| `push_back` (no realloc) | valid | valid | valid |
-| `push_back` (realloc) | **invalidated** | **invalidated** | **invalidated** |
-| `insert` (no realloc) | valid if position &lt;= insertion point | same | same |
-| `insert` (realloc) | **invalidated** | **invalidated** | **invalidated** |
-| `erase` | valid if position &lt; erased element | same | same |
-| `pop_back` | valid if not pointing to last | same | same |
-| `reserve` (realloc) | **invalidated** | **invalidated** | **invalidated** |
-| `resize` (grow, realloc) | **invalidated** | **invalidated** | **invalidated** |
-| `swap` | valid (refers to exchanged elements) | valid | valid |
+| `push_back` (no realloc) | valid                                   | valid           | valid           |
+| `push_back` (realloc)    | **invalidated**                         | **invalidated** | **invalidated** |
+| `insert` (no realloc)    | valid if position &lt;= insertion point | same            | same            |
+| `insert` (realloc)       | **invalidated**                         | **invalidated** | **invalidated** |
+| `erase`                  | valid if position &lt; erased element   | same            | same            |
+| `pop_back`               | valid if not pointing to last           | same            | same            |
+| `reserve` (realloc)      | **invalidated**                         | **invalidated** | **invalidated** |
+| `resize` (grow, realloc) | **invalidated**                         | **invalidated** | **invalidated** |
+| `swap`                   | valid (refers to exchanged elements)    | valid           | valid           |
 
 ```cpp
 #include <vector>
@@ -231,28 +232,26 @@ int main() {
 }
 ```
 
-:::warning
-After any operation that may cause reallocation (e.g., `push_back` when
+:::warning After any operation that may cause reallocation (e.g., `push_back` when
 `size() == capacity()`), **all** iterators, pointers, and references into the vector are
 Invalidated. Dereferencing them is undefined behavior. Use `reserve()` proactively if you need
-Stable iterators.
-:::
+Stable iterators. :::
 
 ### `std::deque`: Segment-Based Memory, No Reallocation
 
 `std::deque` (double-ended queue) is a sequence container that supports $O(1)$ insertion and
-Deletion at both the beginning and the end [N4950 §22.3.8]. Unlike `std::vector``std::deque` is
-Not guaranteed to store elements contiguously. Typical implementations use a **map of fixed-size
+Deletion at both the beginning and the end [N4950 §22.3.8]. Unlike `std::vector``std::deque` is Not
+guaranteed to store elements contiguously. Typical implementations use a **map of fixed-size
 Blocks** (segments):
 
 $$
 \mathrm{deque{} = \underbrace{[\mathrm{block{}_0][\mathrm{block{}_1] \cdots [\mathrm{block{}_{n-1}]}_{\mathrm{fixed-size segments{}}
 $$
 
-A central **map array** stores pointers to each block. Insertion at the front or back adds to
-The first or last block (allocating a new block if the current one is full). This means `push_front`
-And `push_back` are both amortized $O(1)$And **no reallocation of existing elements ever occurs**
-[N4950 §22.3.8.4 Table 77].
+A central **map array** stores pointers to each block. Insertion at the front or back adds to The
+first or last block (allocating a new block if the current one is full). This means `push_front` And
+`push_back` are both amortized $O(1)$And **no reallocation of existing elements ever occurs** [N4950
+§22.3.8.4 Table 77].
 
 #### Deque Segment Layout
 
@@ -272,14 +271,14 @@ Map array (central control block):
   ◄───────
 ```
 
-Each block holds a power-of-two number of elements (e.g., 16 or 512 bytes worth). The map
-Array itself is a small heap-allocated array of pointers. When the map array fills up, it is
-Reallocated (but the element blocks are never moved). This means:
+Each block holds a power-of-two number of elements (e.g., 16 or 512 bytes worth). The map Array
+itself is a small heap-allocated array of pointers. When the map array fills up, it is Reallocated
+(but the element blocks are never moved). This means:
 
 - **Random access** requires two pointer dereferences (map lookup, then element access), giving
- $O(1)$ with a higher constant than `std::vector`.
+  $O(1)$ with a higher constant than `std::vector`.
 - **No contiguous guarantee** — you cannot pass `d.data()` to a C API expecting a flat array and
- expect all elements to be contiguous.
+  expect all elements to be contiguous.
 
 ```cpp
 #include <deque>
@@ -305,21 +304,19 @@ int main() {
 }
 ```
 
-:::tip
-Use `std::deque` when you need efficient insertion at both ends. Use `std::vector` when you
+:::tip Use `std::deque` when you need efficient insertion at both ends. Use `std::vector` when you
 Only need efficient insertion at the end, as `std::vector` has better cache locality and lower
-Memory overhead per element.
-:::
+Memory overhead per element. :::
 
 Invalidation rules for `std::deque` differ from `std::vector` [N4950 §22.3.8.4 Table 77]:
 
-| Operation | Iterator | Pointer | Reference |
+| Operation                  | Iterator                                     | Pointer | Reference |
 | -------------------------- | -------------------------------------------- | ------- | --------- |
-| `push_back` / `push_front` | valid | valid | valid |
-| `insert` at front/back | **invalidated** if only front/back iterators | valid | valid |
-| `insert` in middle | **all invalidated** | valid | valid |
-| `erase` at front/back | only erased element invalidated | valid | valid |
-| `erase` in middle | **all invalidated** | valid | valid |
+| `push_back` / `push_front` | valid                                        | valid   | valid     |
+| `insert` at front/back     | **invalidated** if only front/back iterators | valid   | valid     |
+| `insert` in middle         | **all invalidated**                          | valid   | valid     |
+| `erase` at front/back      | only erased element invalidated              | valid   | valid     |
+| `erase` in middle          | **all invalidated**                          | valid   | valid     |
 
 Note: pointers and references to elements are **never invalidated** by insertion or erasure in
 `std::deque` (unless the element itself is erased), unlike iterators.
@@ -334,7 +331,7 @@ Node, with forward and backward pointers to adjacent nodes. This means:
 - No random access ($O(n)$ to access the $k$-th element)
 - $O(1)$ insertion and erasure at any position (given an iterator)
 - Stable addresses: iterators, pointers, and references to non-erased elements are never invalidated
- [N4950 §22.3.9.5 Table 78]
+  [N4950 §22.3.9.5 Table 78]
 
 #### Node Overhead
 
@@ -348,9 +345,9 @@ Each `std::list` node allocates a separate heap block containing:
 ```
 
 On 64-bit systems, the per-node overhead is 16 bytes (two pointers) plus any alignment padding. For
-`std::list<int>` (4-byte `int`), the node is 24 bytes: 16 bytes of metadata + 4 bytes of
-Data + 4 bytes of padding to 8-byte alignment. This is a 6x overhead compared to storing `int`
-Values in a `std::vector`.
+`std::list<int>` (4-byte `int`), the node is 24 bytes: 16 bytes of metadata + 4 bytes of Data + 4
+bytes of padding to 8-byte alignment. This is a 6x overhead compared to storing `int` Values in a
+`std::vector`.
 
 The most distinctive operation is `splice`Which transfers elements between lists in $O(1)$ time
 **without copying or moving elements** [N4950 §22.3.9.5]. This is a pointer manipulation, not a
@@ -382,11 +379,9 @@ int main() {
 }
 ```
 
-:::info
-`std::list::splice` is the only standard container operation that transfers ownership of
+:::info `std::list::splice` is the only standard container operation that transfers ownership of
 Nodes between containers. The spliced elements' iterators, pointers, and references remain valid and
-Now refer to the same elements within the destination container [N4950 §22.3.9.5].
-:::
+Now refer to the same elements within the destination container [N4950 §22.3.9.5]. :::
 
 ### `std::array`: Fixed-Size, Zero Overhead
 
@@ -435,18 +430,18 @@ Key properties:
 
 ### Choosing Between Sequence Containers
 
-| Criterion | `vector` | `deque` | `list` | `array` |
+| Criterion             | `vector`                 | `deque`                   | `list`                       | `array`            |
 | --------------------- | ------------------------ | ------------------------- | ---------------------------- | ------------------ |
-| Random access | $O(1)$ | $O(1)$ (higher constant) | $O(n)$ | $O(1)$ |
-| `push_back` | Amortized $O(1)$ | Amortized $O(1)$ | $O(1)$ | N/A |
-| `push_front` | $O(n)$ | Amortized $O(1)$ | $O(1)$ | N/A |
-| Insert in middle | $O(n)$ | $O(n)$ | $O(1)$ with iterator | N/A |
-| Cache locality | Excellent | Good | Poor | Excellent |
-| Memory overhead | Low (capacity &gt; size) | Moderate (block pointers) | High (2-3 pointers per node) | None |
-| Iterator invalidation | High (on realloc) | Moderate | Low (only on erase) | None |
-| Stable addresses | No | No | Yes | Yes (stack/static) |
-| Heap allocation | Yes (for elements) | Yes (for blocks + map) | Yes (per node) | No |
-| Size | Dynamic | Dynamic | Dynamic | Fixed at compile |
+| Random access         | $O(1)$                   | $O(1)$ (higher constant)  | $O(n)$                       | $O(1)$             |
+| `push_back`           | Amortized $O(1)$         | Amortized $O(1)$          | $O(1)$                       | N/A                |
+| `push_front`          | $O(n)$                   | Amortized $O(1)$          | $O(1)$                       | N/A                |
+| Insert in middle      | $O(n)$                   | $O(n)$                    | $O(1)$ with iterator         | N/A                |
+| Cache locality        | Excellent                | Good                      | Poor                         | Excellent          |
+| Memory overhead       | Low (capacity &gt; size) | Moderate (block pointers) | High (2-3 pointers per node) | None               |
+| Iterator invalidation | High (on realloc)        | Moderate                  | Low (only on erase)          | None               |
+| Stable addresses      | No                       | No                        | Yes                          | Yes (stack/static) |
+| Heap allocation       | Yes (for elements)       | Yes (for blocks + map)    | Yes (per node)               | No                 |
+| Size                  | Dynamic                  | Dynamic                   | Dynamic                      | Fixed at compile   |
 
 ```cpp
 #include <vector>
@@ -511,16 +506,14 @@ int main() {
 ```
 
 The proxy reference (`std::vector&lt;bool>::reference`) is a library-defined class that overloads
-`operator bool``operator=`And `operator~`. This causes problems with generic code that assumes
-`T&` semantics from `operator[]` [N4950 §22.3.11.2]. Specifically, `std::vector&lt;bool>` does not
+`operator bool``operator=`And `operator~`. This causes problems with generic code that assumes `T&`
+semantics from `operator[]` [N4950 §22.3.11.2]. Specifically, `std::vector&lt;bool>` does not
 Satisfy the container requirements in [N4950 §22.2] because its elements are not addressable.
 
-:::warning
-`std::vector&lt;bool>` is widely regarded as a design mistake. Scott Meyers' "Effective
+:::warning `std::vector&lt;bool>` is widely regarded as a design mistake. Scott Meyers' "Effective
 STL" (Item 18) recommends using `std::deque&lt;bool>` or `boost::dynamic_bitset` instead. For new
 Code, consider `std::vector&lt;uint8_t>` if you need addressable elements, or a dedicated bitset
-Library if you need compact storage.
-:::
+Library if you need compact storage. :::
 
 ### `std::vector` Exception Safety: Strong Guarantee for `push_back`
 
@@ -586,9 +579,9 @@ Constructors are critical for performance-critical types stored in vectors.
 ### Small Buffer Optimization (SBO) and `std::string`
 
 While `std::vector` does not perform SBO (its elements are always on the heap once allocated),
-`std::string` implements **Small String Optimization**: short strings ( &lt; 15-23
-Bytes depending on implementation) are stored inline in the string object itself, avoiding heap
-Allocation [N4950 §23.4.5]. This is an implementation detail, not mandated by the Standard:
+`std::string` implements **Small String Optimization**: short strings ( &lt; 15-23 Bytes depending
+on implementation) are stored inline in the string object itself, avoiding heap Allocation [N4950
+§23.4.5]. This is an implementation detail, not mandated by the Standard:
 
 ```cpp
 #include <string>
@@ -642,8 +635,8 @@ Or use the C++20 erase-if idiom: `std::erase_if(v, [](int x) { return x == targe
 
 **3. Using `deque` for random-access-heavy workloads.** `std::deque` has $O(1)$ random access, but
 Each access requires a map lookup plus a block dereference. For workloads dominated by `operator[]`
-Or `at()``std::vector` is 2-5x faster due to single-pointer indirection and prefetcher
-Friendliness. Only use `deque` when `push_front` is a frequent operation.
+Or `at()``std::vector` is 2-5x faster due to single-pointer indirection and prefetcher Friendliness.
+Only use `deque` when `push_front` is a frequent operation.
 
 **4. Assuming `vector::data()` is null-terminated.** `data()` returns a pointer to contiguous
 Storage, but there is no null terminator after the last element unless you explicitly append one.
@@ -699,12 +692,12 @@ Arguments.
 
 These three operations serve different purposes and are frequently confused:
 
-| Operation | Effect | Changes size? | Changes capacity? |
+| Operation         | Effect                                             | Changes size? |    Changes capacity?     |
 | ----------------- | -------------------------------------------------- | :-----------: | :----------------------: |
-| `resize(n)` | Sets `size()` to `n`; default-constructs or erases | Yes | If `n` &gt; `capacity()` |
-| `reserve(n)` | Sets `capacity()` to at least `n` | No | Yes |
-| `assign(n, v)` | Replaces contents with `n` copies of `v` | Yes | As needed |
-| `shrink_to_fit()` | Non-binding request to set `capacity() == size()` | No | Maybe |
+| `resize(n)`       | Sets `size()` to `n`; default-constructs or erases |      Yes      | If `n` &gt; `capacity()` |
+| `reserve(n)`      | Sets `capacity()` to at least `n`                  |      No       |           Yes            |
+| `assign(n, v)`    | Replaces contents with `n` copies of `v`           |      Yes      |        As needed         |
+| `shrink_to_fit()` | Non-binding request to set `capacity() == size()`  |      No       |          Maybe           |
 
 ```cpp
 #include <vector>
@@ -748,11 +741,10 @@ $$
 \mathrm{element\_offset{} = (\mathrm{start\_offset{} + i) \mod B
 $$
 
-The map array is a small heap-allocated array (often 8-16 entries initially). When the map
-Fills up, it is reallocated to a larger size, but the element blocks are never moved. This means
-Deque random access involves two indirections: map lookup + element lookup. On modern CPUs with deep
-Caches, this extra indirection adds 2-5 cycles per access compared to vector's single
-Indirection.
+The map array is a small heap-allocated array (often 8-16 entries initially). When the map Fills up,
+it is reallocated to a larger size, but the element blocks are never moved. This means Deque random
+access involves two indirections: map lookup + element lookup. On modern CPUs with deep Caches, this
+extra indirection adds 2-5 cycles per access compared to vector's single Indirection.
 
 ## See Also
 

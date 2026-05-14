@@ -1,9 +1,12 @@
 ---
 id: lifetimes
 title: Lifetimes
-description: "Lifetimes — Lifetime Annotation Syntax; Multiple Lifetime Parameters; Input Lifetime Binding; Static Lifetime with worked examples and exam-style questions."
+description:
+  'Lifetimes — Lifetime Annotation Syntax; Multiple Lifetime Parameters; Input Lifetime Binding;
+  Static Lifetime with worked examples and exam-style questions.'
 slug: lifetimes
 ---
+
 ## Why Lifetimes Exist
 
 Rust's borrow checker must ensure that every reference is valid for its entire use. Without lifetime
@@ -19,9 +22,9 @@ fn dangle() -> &String {
 }
 ```
 
-The compiler rejects this because `s` is dropped at the end of `dangle`But the function promises
-To return a reference. The returned reference would point to freed memory. Lifetimes are the
-Mechanism by which the compiler tracks and enforces this constraint.
+The compiler rejects this because `s` is dropped at the end of `dangle`But the function promises To
+return a reference. The returned reference would point to freed memory. Lifetimes are the Mechanism
+by which the compiler tracks and enforces this constraint.
 
 Every reference in Rust has a lifetime — a region of code during which the reference is valid. In
 Most cases, the compiler infers lifetimes automatically. Explicit annotations are needed when the
@@ -40,8 +43,8 @@ fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
 ```
 
 This signature says: "there exists some lifetime `'a` such that both `x` and `y` live at least as
-Long as `'a`And the returned reference also lives at least as long as `'a`." The caller chooses
-The concrete lifetime, constrained by the actual lifetimes of the arguments.
+Long as `'a`And the returned reference also lives at least as long as `'a`." The caller chooses The
+concrete lifetime, constrained by the actual lifetimes of the arguments.
 
 ```rust
 let result;
@@ -170,8 +173,8 @@ struct Container<'a, T: 'a> {
 }
 ```
 
-The bound `T: 'a` says "T must outlive `'a`." This is automatically added by the
-Compiler, but you may need to write it explicitly for complex generic constraints.
+The bound `T: 'a` says "T must outlive `'a`." This is automatically added by the Compiler, but you
+may need to write it explicitly for complex generic constraints.
 
 ## Method Lifetimes
 
@@ -356,14 +359,14 @@ let r: &'static mut i32 = unsafe { &mut *Box::into_raw(Box::new(x)) };
 
 ### Variance Summary
 
-| Type | Variance in `'a` | Variance in `T` |
+| Type             | Variance in `'a` | Variance in `T` |
 | ---------------- | ---------------- | --------------- |
-| `&'a T` | Covariant | Covariant |
-| `&'a mut T` | Invariant | Invariant |
-| `Box&lt;T&gt;` | — | Covariant |
-| `Cell&lt;T&gt;` | — | Invariant |
-| `fn(&'a T) -> R` | Contravariant | Contravariant |
-| `fn(T) -> &'a R` | Covariant | Covariant |
+| `&'a T`          | Covariant        | Covariant       |
+| `&'a mut T`      | Invariant        | Invariant       |
+| `Box&lt;T&gt;`   | —                | Covariant       |
+| `Cell&lt;T&gt;`  | —                | Invariant       |
+| `fn(&'a T) -> R` | Contravariant    | Contravariant   |
+| `fn(T) -> &'a R` | Covariant        | Covariant       |
 
 ### Variance and Unsafe Code
 
@@ -619,44 +622,44 @@ fn get_parts<'a>(s: &'a str) -> impl Iterator<Item = &'a str> + 'a {
 ## Common Pitfalls
 
 1. **Over-annotating with `'static`.** The compiler suggests `'static` when it cannot infer a
- shorter lifetime. Adding `'static` often reduces API flexibility. Instead, redesign the function
- to take an explicit lifetime parameter or restructure ownership.
+   shorter lifetime. Adding `'static` often reduces API flexibility. Instead, redesign the function
+   to take an explicit lifetime parameter or restructure ownership.
 
 2. **Confusing lifetime names with actual lifetimes.** `'a` and `'b` are just labels. Two functions
- using `'a` in their signatures do not share a lifetime — the compiler resolves each independently
- at each call site.
+   using `'a` in their signatures do not share a lifetime — the compiler resolves each independently
+   at each call site.
 
 3. **Fighting the borrow checker with clones.** Cloning to satisfy lifetime constraints often
- indicates a design issue. Consider whether you can restructure ownership, use indices instead of
- references, or redesign the data flow.
+   indicates a design issue. Consider whether you can restructure ownership, use indices instead of
+   references, or redesign the data flow.
 
 4. **Not understanding variance.** Misunderstanding covariance and invariance leads to subtle
- soundness bugs in generic code. If you are writing unsafe code that involves lifetimes, verify
- variance carefully.
+   soundness bugs in generic code. If you are writing unsafe code that involves lifetimes, verify
+   variance carefully.
 
 5. **Self-referential structs without Pin.** Attempting to create a struct that references its own
- fields will not compile in safe Rust. Use indices, arena allocation, or `Pin` for
- self-referential patterns.
+   fields will not compile in safe Rust. Use indices, arena allocation, or `Pin` for
+   self-referential patterns.
 
 6. **Lifetime elision hiding complexity.** Elision rules make simple cases ergonomic, but can
- obscure lifetime relationships in complex functions. When debugging lifetime errors, write out
- the fully explicit lifetimes to understand what the compiler is doing.
+   obscure lifetime relationships in complex functions. When debugging lifetime errors, write out
+   the fully explicit lifetimes to understand what the compiler is doing.
 
 7. **Ignoring the `T: 'a` bound.** When a generic type `T` might contain references, the compiler
- may require `T: 'a` to ensure that `T` does not contain references shorter than `'a`. This is
- especially common with trait objects and `Box<dyn Trait>`.
+   may require `T: 'a` to ensure that `T` does not contain references shorter than `'a`. This is
+   especially common with trait objects and `Box<dyn Trait>`.
 
 8. **Assuming lifetimes affect runtime.** Lifetimes are erased at compile time. They have zero
- runtime cost. A reference with a `'static` lifetime is not "better" or "more efficient" than one
- with a shorter lifetime.
+   runtime cost. A reference with a `'static` lifetime is not "better" or "more efficient" than one
+   with a shorter lifetime.
 
 9. **Using `unsafe` to extend lifetimes.** Transmuting a shorter-lived reference to a longer-lived
- one is undefined behavior. No amount of `unsafe` can make a dangling reference valid. If the
- borrow checker rejects your code, the solution is restructuring, not bypassing.
+   one is undefined behavior. No amount of `unsafe` can make a dangling reference valid. If the
+   borrow checker rejects your code, the solution is restructuring, not bypassing.
 
 10. **Multiple lifetime parameters when one suffices.** If all references in a function can share a
- single lifetime, use one lifetime parameter. Multiple lifetime parameters are needed only when
- references have genuinely independent lifetimes.
+    single lifetime, use one lifetime parameter. Multiple lifetime parameters are needed only when
+    references have genuinely independent lifetimes.
 
 ## Lifetime Parameters in Closures
 

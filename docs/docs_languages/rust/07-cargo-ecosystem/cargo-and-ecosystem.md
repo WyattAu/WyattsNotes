@@ -1,9 +1,12 @@
 ---
 id: cargo-and-ecosystem
 title: Cargo and Ecosystem
-description: "Cargo and Ecosystem — Cargo.toml Structure; Package Metadata Fields; Workspace Management; Workspace Cargo.toml with worked examples and exam-style questions."
+description:
+  'Cargo and Ecosystem — Cargo.toml Structure; Package Metadata Fields; Workspace Management;
+  Workspace Cargo.toml with worked examples and exam-style questions.'
 slug: cargo-and-ecosystem
 ---
+
 ## Cargo.toml Structure
 
 `Cargo.toml` is the manifest file that defines everything about your Rust project. It uses TOML
@@ -48,16 +51,16 @@ debug = true
 
 ### Package Metadata Fields
 
-| Field | Purpose |
-| -------------- | -------------------------------------------------------- |
-| `name` | Crate name (must match `^[a-zA-Z0-9_-]+$`) |
-| `version` | SemVer version (e.g., `0.1.0``1.2.3-beta.1`) |
-| `edition` | Rust edition (`2015``2018``2021``2024`) |
-| `rust-version` | Minimum supported Rust version (MSRV) |
-| `license` | SPDX license identifier (`MIT``Apache-2.0``GPL-3.0`) |
-| `repository` | Source code URL |
-| `readme` | Path to README file |
-| `categories` | crates.io categories (max 5) |
+| Field          | Purpose                                              |
+| -------------- | ---------------------------------------------------- |
+| `name`         | Crate name (must match `^[a-zA-Z0-9_-]+$`)           |
+| `version`      | SemVer version (e.g., `0.1.0``1.2.3-beta.1`)         |
+| `edition`      | Rust edition (`2015``2018``2021``2024`)              |
+| `rust-version` | Minimum supported Rust version (MSRV)                |
+| `license`      | SPDX license identifier (`MIT``Apache-2.0``GPL-3.0`) |
+| `repository`   | Source code URL                                      |
+| `readme`       | Path to README file                                  |
+| `categories`   | crates.io categories (max 5)                         |
 
 ## Workspace Management
 
@@ -887,17 +890,17 @@ async fn main() {
 
 Before adding a dependency, evaluate it:
 
-| Criterion | How to Check |
+| Criterion                 | How to Check                                                |
 | ------------------------- | ----------------------------------------------------------- |
-| **Downloads** | crates.io page — monthly downloads |
-| **Last update** | crates.io — last publish date |
-| **Maintenance** | GitHub — open issues, PRs, commit frequency |
-| **Dependencies** | `cargo tree -p crate-name` — dependency count |
-| **Binary size impact** | `cargo bloat --release` — size contribution |
-| **Build time** | `cargo build --timings` — incremental and clean build times |
-| **License compatibility** | crates.io — license field |
-| **MSRV** | README or `Cargo.toml` `rust-version` field |
-| **Audit** | `cargo audit` — known CVEs |
+| **Downloads**             | crates.io page — monthly downloads                          |
+| **Last update**           | crates.io — last publish date                               |
+| **Maintenance**           | GitHub — open issues, PRs, commit frequency                 |
+| **Dependencies**          | `cargo tree -p crate-name` — dependency count               |
+| **Binary size impact**    | `cargo bloat --release` — size contribution                 |
+| **Build time**            | `cargo build --timings` — incremental and clean build times |
+| **License compatibility** | crates.io — license field                                   |
+| **MSRV**                  | README or `Cargo.toml` `rust-version` field                 |
+| **Audit**                 | `cargo audit` — known CVEs                                  |
 
 :::warning
 
@@ -910,43 +913,43 @@ Chain attacks, and licensing issues. Minimize your dependency tree. Audit regula
 ## Common Pitfalls
 
 1. **Not committing `Cargo.lock` for binaries.** Without `Cargo.lock`Different builds may resolve
- different dependency versions, leading to non-reproducible builds. Always commit `Cargo.lock` for
- applications and CLIs.
+   different dependency versions, leading to non-reproducible builds. Always commit `Cargo.lock` for
+   applications and CLIs.
 
 2. **Feature flags causing unexpected compilation.** A dependency might enable a feature that pulls
- in heavy transitive dependencies. Use `cargo tree --features feature-name` to inspect what
- features enable. Use `default-features = false` and select only the features you need.
+   in heavy transitive dependencies. Use `cargo tree --features feature-name` to inspect what
+   features enable. Use `default-features = false` and select only the features you need.
 
 3. **Ignoring clippy warnings.** Clippy catches real bugs (unused results, redundant clones,
- incorrect mutex usage). Set up CI to fail on clippy warnings: `cargo clippy -- -D warnings`.
+   incorrect mutex usage). Set up CI to fail on clippy warnings: `cargo clippy -- -D warnings`.
 
 4. **Not writing integration tests.** Unit tests verify internal logic but do not test the public
- API. Integration tests exercise the crate as a consumer would, catching issues with module
- visibility, feature gating, and API ergonomics.
+   API. Integration tests exercise the crate as a consumer would, catching issues with module
+   visibility, feature gating, and API ergonomics.
 
 5. **Unoptimized release builds.** The default `Cargo.toml` has minimal release profile settings.
- Add `lto = "thin"` and `codegen-units = 1` for significant performance improvements in
- production.
+   Add `lto = "thin"` and `codegen-units = 1` for significant performance improvements in
+   production.
 
 6. **Dependency bloat.** Adding `tokio` with `features = ["full"]` enables everything including the
- full I/O driver, process spawning, signal handling, and more. Only enable the features you
- actually use: `features = ["rt-multi-thread", "macros", "net"]`.
+   full I/O driver, process spawning, signal handling, and more. Only enable the features you
+   actually use: `features = ["rt-multi-thread", "macros", "net"]`.
 
 7. **Not using workspace inheritance.** Without workspace-level dependency management, different
- crates in the workspace may use different versions of the same dependency, increasing compile
- time and binary size.
+   crates in the workspace may use different versions of the same dependency, increasing compile
+   time and binary size.
 
 8. **Ignoring MSRV (Minimum Supported Rust Version).** If your crate is published, specify
- `rust-version` in `Cargo.toml`. Users on older Rust compilers will get a clear error instead of
- cryptic compilation failures.
+   `rust-version` in `Cargo.toml`. Users on older Rust compilers will get a clear error instead of
+   cryptic compilation failures.
 
 9. **Running benchmarks without `--release`.** Benchmarks compiled in debug mode are meaningless —
- the optimizer has not run, and timings reflect debug assertion overhead, not actual performance.
- Always run `cargo bench` (which uses the `bench` profile with `opt-level = 3`).
+   the optimizer has not run, and timings reflect debug assertion overhead, not actual performance.
+   Always run `cargo bench` (which uses the `bench` profile with `opt-level = 3`).
 
 10. **Not auditing dependencies.** Run `cargo audit` regularly to check for known security
- vulnerabilities. Use `cargo-deny` to enforce license and advisory policies in CI. Consider
- `cargo-vet` for supply chain integrity in critical projects.
+    vulnerabilities. Use `cargo-deny` to enforce license and advisory policies in CI. Consider
+    `cargo-vet` for supply chain integrity in critical projects.
 
 ## Summary
 

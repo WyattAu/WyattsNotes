@@ -1,6 +1,8 @@
 ---
 title: Network Fundamentals
-description: "A-Level Computer Science notes on Network Fundamentals: 1. Types of Networks; LAN (Local Area Network); WAN (Wide Area Network); WLAN (Wireless LAN)."
+description:
+  'A-Level Computer Science notes on Network Fundamentals: 1. Types of Networks; LAN (Local Area
+  Network); WAN (Wide Area Network); WLAN (Wireless LAN).'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - ComputerScience
@@ -9,6 +11,7 @@ categories:
   - ComputerScience
 slug: network-fundamentals
 ---
+
 ## 1. Types of Networks
 
 ### LAN (Local Area Network)
@@ -37,13 +40,13 @@ A LAN using wireless communication (Wi-Fi, IEEE 802.11 standards).
 
 ### Network Models
 
-| Model | Scope | Ownership | Example |
+| Model | Scope            | Ownership           | Example            |
 | ----- | ---------------- | ------------------- | ------------------ |
-| LAN | Building, campus | Single organisation | Office network |
-| WAN | Country, global | Multiple providers | The Internet |
-| WLAN | Building | Single organisation | Wi-Fi in a café |
-| PAN | Personal (room) | Individual | Bluetooth devices |
-| MAN | City | Single provider | City-wide cable TV |
+| LAN   | Building, campus | Single organisation | Office network     |
+| WAN   | Country, global  | Multiple providers  | The Internet       |
+| WLAN  | Building         | Single organisation | Wi-Fi in a café    |
+| PAN   | Personal (room)  | Individual          | Bluetooth devices  |
+| MAN   | City             | Single provider     | City-wide cable TV |
 
 <hr />
 
@@ -79,11 +82,11 @@ Devices form a circular loop. Data travels in one direction.
 
 ### Comparison
 
-| Property | Star | Mesh | Bus | Ring |
+| Property      | Star            | Mesh           | Bus            | Ring           |
 | ------------- | --------------- | -------------- | -------------- | -------------- |
-| Cost | Low | High | Low | Medium |
-| Reliability | Medium | High | Low | Medium |
-| Scalability | High | Low | Low | Low |
+| Cost          | Low             | High           | Low            | Medium         |
+| Reliability   | Medium          | High           | Low            | Medium         |
+| Scalability   | High            | Low            | Low            | Low            |
 | Cable failure | Isolates device | Multiple paths | Entire network | Entire network |
 
 <hr />
@@ -92,15 +95,15 @@ Devices form a circular loop. Data travels in one direction.
 
 ### Seven Layers
 
-| Layer | Name | Function | Protocol examples |
+| Layer | Name         | Function                             | Protocol examples    |
 | ----- | ------------ | ------------------------------------ | -------------------- |
-| 7 | Application | User interface, API | HTTP, FTP, SMTP, DNS |
-| 6 | Presentation | Data formatting, encryption | SSL/TLS, JPEG, ASCII |
-| 5 | Session | Manage sessions | NetBIOS, RPC |
-| 4 | Transport | End-to-end delivery, reliability | TCP, UDP |
-| 3 | Network | Routing, logical addressing | IP, ICMP, ARP |
-| 2 | Data Link | Frame transmission, MAC addressing | Ethernet, Wi-Fi |
-| 1 | Physical | Bit transmission over physical media | Cables, signals |
+| 7     | Application  | User interface, API                  | HTTP, FTP, SMTP, DNS |
+| 6     | Presentation | Data formatting, encryption          | SSL/TLS, JPEG, ASCII |
+| 5     | Session      | Manage sessions                      | NetBIOS, RPC         |
+| 4     | Transport    | End-to-end delivery, reliability     | TCP, UDP             |
+| 3     | Network      | Routing, logical addressing          | IP, ICMP, ARP        |
+| 2     | Data Link    | Frame transmission, MAC addressing   | Ethernet, Wi-Fi      |
+| 1     | Physical     | Bit transmission over physical media | Cables, signals      |
 
 ### Data Encapsulation
 
@@ -118,12 +121,12 @@ Physical:     [Bits on wire]
 
 ### TCP/IP Model (4 layers)
 
-| TCP/IP Layer | OSI Layers | Protocols |
+| TCP/IP Layer   | OSI Layers                         | Protocols            |
 | -------------- | ---------------------------------- | -------------------- |
-| Application | Application, Presentation, Session | HTTP, FTP, DNS, SMTP |
-| Transport | Transport | TCP, UDP |
-| Internet | Network | IP, ICMP |
-| Network Access | Data Link, Physical | Ethernet, Wi-Fi |
+| Application    | Application, Presentation, Session | HTTP, FTP, DNS, SMTP |
+| Transport      | Transport                          | TCP, UDP             |
+| Internet       | Network                            | IP, ICMP             |
+| Network Access | Data Link, Physical                | Ethernet, Wi-Fi      |
 
 <hr />
 
@@ -147,21 +150,19 @@ Physical:     [Bits on wire]
 
 ### Comparison
 
-| Property | TCP | UDP |
+| Property    | TCP                       | UDP                    |
 | ----------- | ------------------------- | ---------------------- |
-| Connection | Connection-oriented | Connectionless |
-| Reliability | Reliable | Unreliable |
-| Ordering | Guaranteed | Not guaranteed |
-| Speed | Slower (overhead) | Faster |
-| Header | 20+ bytes | 8 bytes |
-| Use cases | Web, email, file transfer | Streaming, gaming, DNS |
+| Connection  | Connection-oriented       | Connectionless         |
+| Reliability | Reliable                  | Unreliable             |
+| Ordering    | Guaranteed                | Not guaranteed         |
+| Speed       | Slower (overhead)         | Faster                 |
+| Header      | 20+ bytes                 | 8 bytes                |
+| Use cases   | Web, email, file transfer | Streaming, gaming, DNS |
 
-:::info
-Board-specific Know specific use cases for each protocol:
+:::info Board-specific Know specific use cases for each protocol:
 
 - TCP: HTTP, HTTPS, FTP, SMTP, SSH
-- UDP: DNS, DHCP, TFTP, online gaming, video streaming, VoIP
-:::
+- UDP: DNS, DHCP, TFTP, online gaming, video streaming, VoIP :::
 
 ### TCP Three-Way Handshake
 
@@ -181,12 +182,12 @@ A 32-bit address written as four octets: `192.168.1.1`
 
 **Address classes:**
 
-| Class | Range | First bits | Default subnet mask |
+| Class | Range                       | First bits | Default subnet mask |
 | ----- | --------------------------- | ---------- | ------------------- |
-| A | 1.0.0.0 – 126.255.255.255 | 0 | 255.0.0.0 |
-| B | 128.0.0.0 – 191.255.255.255 | 10 | 255.255.0.0 |
-| C | 192.0.0.0 – 223.255.255.255 | 110 | 255.255.255.0 |
-| D | 224.0.0.0 – 239.255.255.255 | 1110 | Multicast |
+| A     | 1.0.0.0 – 126.255.255.255   | 0          | 255.0.0.0           |
+| B     | 128.0.0.0 – 191.255.255.255 | 10         | 255.255.0.0         |
+| C     | 192.0.0.0 – 223.255.255.255 | 110        | 255.255.255.0       |
+| D     | 224.0.0.0 – 239.255.255.255 | 1110       | Multicast           |
 
 ### Subnetting
 
@@ -211,11 +212,11 @@ Subnet masks divide an IP address into **network** and **host** portions.
 
 ### Private vs Public IP Addresses
 
-| Range | Class | Use |
+| Range                         | Class | Use           |
 | ----------------------------- | ----- | ------------- |
-| 10.0.0.0 – 10.255.255.255 | A | Private (LAN) |
-| 172.16.0.0 – 172.31.255.255 | B | Private (LAN) |
-| 192.168.0.0 – 192.168.255.255 | C | Private (LAN) |
+| 10.0.0.0 – 10.255.255.255     | A     | Private (LAN) |
+| 172.16.0.0 – 172.31.255.255   | B     | Private (LAN) |
+| 192.168.0.0 – 192.168.255.255 | C     | Private (LAN) |
 
 Private addresses are not routable on the internet. **NAT** (Network Address Translation) translates
 Private addresses to a public address at the router.
@@ -259,18 +260,18 @@ Root DNS servers (.)
 
 ## 7. Common Protocols
 
-| Protocol | Layer | Port | Purpose |
+| Protocol | Layer       | Port  | Purpose                     |
 | -------- | ----------- | ----- | --------------------------- |
-| HTTP | Application | 80 | Web pages |
-| HTTPS | Application | 443 | Encrypted web pages |
-| FTP | Application | 20/21 | File transfer |
-| SMTP | Application | 25 | Send email |
-| POP3 | Application | 110 | Receive email |
-| IMAP | Application | 143 | Access email on server |
-| DNS | Application | 53 | Domain name resolution |
-| DHCP | Application | 67/68 | Auto-assign IP addresses |
-| SSH | Application | 22 | Secure remote access |
-| Telnet | Application | 23 | Remote access (unencrypted) |
+| HTTP     | Application | 80    | Web pages                   |
+| HTTPS    | Application | 443   | Encrypted web pages         |
+| FTP      | Application | 20/21 | File transfer               |
+| SMTP     | Application | 25    | Send email                  |
+| POP3     | Application | 110   | Receive email               |
+| IMAP     | Application | 143   | Access email on server      |
+| DNS      | Application | 53    | Domain name resolution      |
+| DHCP     | Application | 67/68 | Auto-assign IP addresses    |
+| SSH      | Application | 22    | Secure remote access        |
+| Telnet   | Application | 23    | Remote access (unencrypted) |
 
 <hr />
 
@@ -330,25 +331,28 @@ Occur before the web page is displayed, including DNS resolution and the TCP han
 <summary>Answer</summary>
 
 1. **DNS Resolution:**
- - Browser checks local cache → not found
- - Query OS DNS resolver → not found
- - Query ISP's recursive resolver → not found
- - Resolver queries root server → "Ask the .uk TLD server"
- - Resolver queries .uk server → "Ask the ac.uk server"
- - Resolver queries ac.uk server → "Ask the cam.ac.uk authoritative server"
- - Authoritative server returns: `www.cam.ac.uk → 128.232.0.31`
- - Result cached at each level
+
+- Browser checks local cache → not found
+- Query OS DNS resolver → not found
+- Query ISP's recursive resolver → not found
+- Resolver queries root server → "Ask the .uk TLD server"
+- Resolver queries .uk server → "Ask the ac.uk server"
+- Resolver queries ac.uk server → "Ask the cam.ac.uk authoritative server"
+- Authoritative server returns: `www.cam.ac.uk → 128.232.0.31`
+- Result cached at each level
 
 2. **TCP Handshake:**
- - Client sends SYN to `128.232.0.31:443`
- - Server responds with SYN-ACK
- - Client sends ACK
- - Connection established
+
+- Client sends SYN to `128.232.0.31:443`
+- Server responds with SYN-ACK
+- Client sends ACK
+- Connection established
 
 3. **TLS Handshake:** (for HTTPS)
- - Client and server negotiate encryption parameters
- - Server presents SSL certificate
- - Secure connection established
+
+- Client and server negotiate encryption parameters
+- Server presents SSL certificate
+- Secure connection established
 
 4. **HTTP Request:** Client sends `GET / HTTP/1.1` over the encrypted connection
 
@@ -394,7 +398,7 @@ Connections.
 - UDP's lack of retransmission means lost data is skipped (the game moves on)
 - TCP's retransmission and ordering cause delay and jitter
 - Games can implement their own reliability for critical data (e.g., player positions) while
- dropping non-critical data (e.g., cosmetic effects)
+  dropping non-critical data (e.g., cosmetic effects)
 
 **Video conferencing:**
 
@@ -432,10 +436,10 @@ For internet access. This:
 
 1. A device on the LAN (e.g., `192.168.1.10`) sends a packet to an external server
 2. The router replaces the source IP (`192.168.1.10`) with its public IP (`203.0.113.1`) and records
- the mapping in a NAT table
+   the mapping in a NAT table
 3. The router also changes the source port to a unique value (PAT — Port Address Translation)
 4. When the response arrives, the router looks up the destination port in the NAT table, replaces
- the destination IP with `192.168.1.10`And forwards it
+   the destination IP with `192.168.1.10`And forwards it
 
 **NAT table example:** | Internal IP | Internal Port | External Port | External IP | |
 --------------- | ------------- | ------------- | -------------- | | 192.168.1.10 | 50123 | 60001 |
@@ -486,14 +490,14 @@ Operate?
 <details>
 <summary>Answer</summary>
 
-| Property | Switch | Router |
+| Property   | Switch                             | Router                                  |
 | ---------- | ---------------------------------- | --------------------------------------- |
-| OSI layer | Layer 2 (Data Link) | Layer 3 (Network) |
-| Addressing | MAC addresses | IP addresses |
-| Function | Connects devices within a LAN | Connects different networks |
+| OSI layer  | Layer 2 (Data Link)                | Layer 3 (Network)                       |
+| Addressing | MAC addresses                      | IP addresses                            |
+| Function   | Connects devices within a LAN      | Connects different networks             |
 | Forwarding | Forwards frames based on MAC table | Forwards packets based on routing table |
-| Broadcast | Forwards broadcasts within LAN | Blocks broadcasts between networks |
-| Use case | Building/campus network | Internet connectivity |
+| Broadcast  | Forwards broadcasts within LAN     | Blocks broadcasts between networks      |
+| Use case   | Building/campus network            | Internet connectivity                   |
 
 A switch operates at Layer 2, forwarding frames within a single network segment. A router operates
 At Layer 3, making decisions about which network to forward packets to, enabling inter-network
@@ -522,8 +526,8 @@ Verification: `128 + 64 = 192` for the fourth octet.
 
 ### Worked Example: Finding the Network Address
 
-Given IP `10.150.75.210` with mask `/20`Find the network address, broadcast address, and usable
-Host range.
+Given IP `10.150.75.210` with mask `/20`Find the network address, broadcast address, and usable Host
+range.
 
 Step 1: Subnet mask in binary for the third and fourth octets:
 
@@ -575,13 +579,13 @@ Different network addresses — different subnets.
 
 ### SSH (Secure Shell)
 
-| Property | Value |
+| Property       | Value                                                             |
 | -------------- | ----------------------------------------------------------------- |
-| Port | 22 |
-| Transport | TCP |
-| Encryption | Symmetric (AES) for data, asymmetric (RSA/ECDSA) for key exchange |
-| Authentication | Password or public-key |
-| Purpose | Secure remote shell access, file transfer (SCP/SFTP) |
+| Port           | 22                                                                |
+| Transport      | TCP                                                               |
+| Encryption     | Symmetric (AES) for data, asymmetric (RSA/ECDSA) for key exchange |
+| Authentication | Password or public-key                                            |
+| Purpose        | Secure remote shell access, file transfer (SCP/SFTP)              |
 
 SSH establishes an encrypted tunnel before any data is transmitted. The key exchange uses
 Diffie-Hellman to establish a shared secret without transmitting it. All subsequent data is
@@ -589,12 +593,12 @@ Encrypted with this shared secret using AES.
 
 ### FTP (File Transfer Protocol)
 
-| Property | Value |
+| Property   | Value                                  |
 | ---------- | -------------------------------------- |
-| Ports | 21 (control), 20 (data in active mode) |
-| Transport | TCP |
-| Encryption | None (SFTP adds encryption over SSH) |
-| Purpose | Upload and download files |
+| Ports      | 21 (control), 20 (data in active mode) |
+| Transport  | TCP                                    |
+| Encryption | None (SFTP adds encryption over SSH)   |
+| Purpose    | Upload and download files              |
 
 FTP uses two separate connections: a control connection (commands) and a data connection (file
 Content). In **active mode**, the server initiates the data connection back to the client —
@@ -602,11 +606,11 @@ Problematic through firewalls. In **passive mode**, the client initiates both co
 
 ### HTTP vs HTTPS
 
-| Property | HTTP | HTTPS |
+| Property    | HTTP         | HTTPS              |
 | ----------- | ------------ | ------------------ |
-| Port | 80 | 443 |
-| Encryption | None | TLS (SSL) |
-| Security | Plaintext | Encrypted |
+| Port        | 80           | 443                |
+| Encryption  | None         | TLS (SSL)          |
+| Security    | Plaintext    | Encrypted          |
 | Certificate | Not required | Required (from CA) |
 
 HTTP sends all data (including passwords) in plaintext. HTTPS adds a TLS layer: the server presents
@@ -614,12 +618,12 @@ A certificate, and all traffic is encrypted. Modern browsers flag HTTP sites as 
 
 ### SMTP (Simple Mail Transfer Protocol)
 
-| Property | Value |
+| Property   | Value                              |
 | ---------- | ---------------------------------- |
-| Port | 25 (traditional), 587 (submission) |
-| Transport | TCP |
-| Encryption | Optional (STARTTLS) |
-| Purpose | Sending email between mail servers |
+| Port       | 25 (traditional), 587 (submission) |
+| Transport  | TCP                                |
+| Encryption | Optional (STARTTLS)                |
+| Purpose    | Sending email between mail servers |
 
 SMTP is a push protocol — the sender pushes the message to the receiver's mail server. For
 Receiving, POP3 or IMAP is used.
@@ -628,14 +632,14 @@ Receiving, POP3 or IMAP is used.
 
 ## 10. Common Pitfalls
 
-| Pitfall | Explanation | Correct approach |
+| Pitfall                                     | Explanation                                                 | Correct approach                                                |
 | ------------------------------------------- | ----------------------------------------------------------- | --------------------------------------------------------------- |
-| Confusing `/` notation with number of hosts | `/24` means 24 network bits, not 24 hosts | Hosts = $2^{32-n} - 2$ |
-| Forgetting to subtract 2 from host count | Network and broadcast addresses are not usable | Always subtract 2 |
-| Mixing up public and private ranges | `10.x.x.x` is always private | Memorise the three private ranges |
-| Assuming DNS uses TCP | DNS primarily uses UDP port 53 | TCP is only used for zone transfers or responses over 512 bytes |
-| Confusing SSH with Telnet | Both provide remote access, but only SSH encrypts | Never use Telnet on untrusted networks |
-| Off-by-one in subnet boundaries | Including the network or broadcast address as a usable host | First usable = network + 1, last usable = broadcast - 1 |
+| Confusing `/` notation with number of hosts | `/24` means 24 network bits, not 24 hosts                   | Hosts = $2^{32-n} - 2$                                          |
+| Forgetting to subtract 2 from host count    | Network and broadcast addresses are not usable              | Always subtract 2                                               |
+| Mixing up public and private ranges         | `10.x.x.x` is always private                                | Memorise the three private ranges                               |
+| Assuming DNS uses TCP                       | DNS primarily uses UDP port 53                              | TCP is only used for zone transfers or responses over 512 bytes |
+| Confusing SSH with Telnet                   | Both provide remote access, but only SSH encrypts           | Never use Telnet on untrusted networks                          |
+| Off-by-one in subnet boundaries             | Including the network or broadcast address as a usable host | First usable = network + 1, last usable = broadcast - 1         |
 
 <hr />
 

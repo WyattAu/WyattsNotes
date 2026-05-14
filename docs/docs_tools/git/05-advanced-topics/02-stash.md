@@ -1,6 +1,8 @@
 ---
 title: Stash
-description: "Stash — Basic Commands; Apply and remove from the stack (LIFO); Drop and Clear;. do other work. with worked examples and exam-style questions."
+description:
+  'Stash — Basic Commands; Apply and remove from the stack (LIFO); Drop and Clear;. do other work.
+  with worked examples and exam-style questions.'
 date: 2025-06-03T09:00:00.000Z
 tags:
   - git
@@ -10,9 +12,12 @@ categories:
   - CS
 slug: stash
 ---
+
 ## What is Stash
 
-`git stash` temporarily shelves changes in your working directory and index, restoring your repository to a clean state (matching HEAD). It is a stack-based mechanism — you can push multiple stashes and pop them in LIFO order.
+`git stash` temporarily shelves changes in your working directory and index, restoring your
+repository to a clean state (matching HEAD). It is a stack-based mechanism — you can push multiple
+stashes and pop them in LIFO order.
 
 ### When to Use Stash
 
@@ -23,13 +28,16 @@ slug: stash
 
 :::warning
 
-Stash is **not a substitute for branches**. Stashes are stored as commits in the object database, but they are not visible in `git log` and can be accidentally dropped. If your changes are substantial, commit them on a branch instead.
+Stash is **not a substitute for branches**. Stashes are stored as commits in the object database,
+but they are not visible in `git log` and can be accidentally dropped. If your changes are
+substantial, commit them on a branch instead.
 
 :::
 
 ## How Stash Works Internally
 
-A stash is stored as a special commit with a **tree of your working directory + index changes**. Each stash entry is actually a merge commit with two (or three) parents:
+A stash is stored as a special commit with a **tree of your working directory + index changes**.
+Each stash entry is actually a merge commit with two (or three) parents:
 
 ```mermaid
 gitGraph
@@ -143,7 +151,8 @@ $ git stash push -p
 
 ## Create a Branch from a Stash
 
-If a stash was created on a branch that has since diverged, applying it may cause conflicts. Creating a branch from the stash applies it in a clean context:
+If a stash was created on a branch that has since diverged, applying it may cause conflicts.
+Creating a branch from the stash applies it in a clean context:
 
 ```bash
 $ git stash branch stash-branch-name stash@{0}
@@ -154,7 +163,8 @@ $ git stash branch stash-branch-name stash@{0}
 
 ## Stash and Git Hooks
 
-The stash command does **not** run pre-commit hooks. This is by design — stashing is a temporary operation, not a commit. However, this means:
+The stash command does **not** run pre-commit hooks. This is by design — stashing is a temporary
+operation, not a commit. However, this means:
 
 - Linters and formatters configured as pre-commit hooks will not run on stashed changes.
 - Tests configured as pre-commit hooks will not validate stashed changes.
@@ -173,13 +183,13 @@ $ git switch temp-wip
 
 ## Stash Limitations
 
-| Limitation | Workaround |
+| Limitation                            | Workaround                                                     |
 | ------------------------------------- | -------------------------------------------------------------- |
-| Cannot stash merge conflicts | Resolve conflicts or abort merge first |
-| Stashes are not visible in `git log` | Use `git stash list` and `git stash show -p` |
-| Stashes can be accidentally dropped | Use descriptive messages; reflog retains dropped stashes |
-| Binary files in stashes take up space | Use `git stash --keep-index` to avoid re-staging binaries |
-| No automatic expiry | Periodically `git stash clear` or `git stash drop` old entries |
+| Cannot stash merge conflicts          | Resolve conflicts or abort merge first                         |
+| Stashes are not visible in `git log`  | Use `git stash list` and `git stash show -p`                   |
+| Stashes can be accidentally dropped   | Use descriptive messages; reflog retains dropped stashes       |
+| Binary files in stashes take up space | Use `git stash --keep-index` to avoid re-staging binaries      |
+| No automatic expiry                   | Periodically `git stash clear` or `git stash drop` old entries |
 
 ## Common Pitfalls
 

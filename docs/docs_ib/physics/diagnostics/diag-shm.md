@@ -1,6 +1,8 @@
 ---
-title: "Simple Harmonic Motion -- Diagnostic Tests"
-description: "Hardest IB Physics SHM diagnostic tests covering the necessary and sufficient condition for SHM, energy exchange between KE and PE, phase difference"
+title: 'Simple Harmonic Motion -- Diagnostic Tests'
+description:
+  'Hardest IB Physics SHM diagnostic tests covering the necessary and sufficient condition for SHM,
+  energy exchange between KE and PE, phase difference'
 slug: diag-shm
 hide_table_of_contents: true
 ---
@@ -13,13 +15,15 @@ hide_table_of_contents: true
 
 **Question:**
 
-A particle of mass $m$ moves in one dimension. In each of the following cases, determine whether the motion is simple harmonic and justify your answer using the condition $a = -\omega^2 x$.
+A particle of mass $m$ moves in one dimension. In each of the following cases, determine whether the
+motion is simple harmonic and justify your answer using the condition $a = -\omega^2 x$.
 
 (a) The restoring force is $F = -kx + bx^3$ where $k, b \gt 0$ and $b$ is small.
 
 (b) A simple pendulum of length $L$ oscillates with maximum angular displacement $\theta_{\max}$.
 
-(c) A U-tube manometer contains a liquid of total mass $m$ and density $\rho$. The liquid is displaced by $x$ from equilibrium in one arm. The cross-sectional area of each arm is $A$.
+(c) A U-tube manometer contains a liquid of total mass $m$ and density $\rho$. The liquid is
+displaced by $x$ from equilibrium in one arm. The cross-sectional area of each arm is $A$.
 
 **Solution:**
 
@@ -27,23 +31,30 @@ A particle of mass $m$ moves in one dimension. In each of the following cases, d
 
 Newton's second law: $ma = -kx + bx^3$So $a = -\frac{k}{m}x + \frac{b}{m}x^3$.
 
-This is **not** SHM because the acceleration is not proportional to displacement. The $bx^3$ term makes it anharmonic. The motion is approximately SHM only when $bx^3 \ll kx$I.e. $x \ll \sqrt{k/b}$ (small oscillations). But strictly, the motion is not SHM.
+This is **not** SHM because the acceleration is not proportional to displacement. The $bx^3$ term
+makes it anharmonic. The motion is approximately SHM only when $bx^3 \ll kx$I.e. $x \ll \sqrt{k/b}$
+(small oscillations). But strictly, the motion is not SHM.
 
 (b) The equation of motion for a simple pendulum is:
 
 $$\frac{d^2\theta}{dt^2} + \frac{g}{L}\sin\theta = 0$$
 
-For SHM, we need $a = -\omega^2 x$ (or $\ddot{\theta} = -\omega^2 \theta$), which requires $\sin\theta \approx \theta$ (small angle approximation).
+For SHM, we need $a = -\omega^2 x$ (or $\ddot{\theta} = -\omega^2 \theta$), which requires
+$\sin\theta \approx \theta$ (small angle approximation).
 
 Using $\sin\theta = \theta - \theta^3/6 + \ldots$The exact equation is:
 
 $$\ddot{\theta} = -\frac{g}{L}\theta + \frac{g}{6L}\theta^3 - \ldots$$
 
-This is SHM only when $\theta$ is small enough that $\theta^3/6 \ll \theta$I.e. $\theta \ll \sqrt{6} \approx 2.45\,\text{rad}$ (about $140^\circ$). For practical purposes, $\theta_{\max} \lt 15^\circ$ ensures the error is less than $0.5\%$.
+This is SHM only when $\theta$ is small enough that $\theta^3/6 \ll \theta$I.e.
+$\theta \ll \sqrt{6} \approx 2.45\,\text{rad}$ (about $140^\circ$). For practical purposes,
+$\theta_{\max} \lt 15^\circ$ ensures the error is less than $0.5\%$.
 
-The motion is **approximately** SHM for small angles, but not exactly SHM. The period is $T = 2\pi\sqrt{L/g}$ only in the small angle limit.
+The motion is **approximately** SHM for small angles, but not exactly SHM. The period is
+$T = 2\pi\sqrt{L/g}$ only in the small angle limit.
 
-(c) If the liquid is displaced by $x$ in one arm, the height difference between the two arms is $2x$. The restoring force is the weight of the excess liquid column:
+(c) If the liquid is displaced by $x$ in one arm, the height difference between the two arms is
+$2x$. The restoring force is the weight of the excess liquid column:
 
 $$F = -\rho A(2x)g = -2\rho Ag x$$
 
@@ -53,7 +64,8 @@ $$a = \frac{F}{m} = \frac{-2\rho Ag x}{2\rho AL} = -\frac{g}{L}x$$
 
 This is of the form $a = -\omega^2 x$ with $\omega^2 = g/L$.
 
-The motion **is** SHM with period $T = 2\pi\sqrt{L/g}$Where $L$ is the total length of the liquid column. This is exact -- no approximation is needed.
+The motion **is** SHM with period $T = 2\pi\sqrt{L/g}$Where $L$ is the total length of the liquid
+column. This is exact -- no approximation is needed.
 
 ---
 
@@ -61,13 +73,16 @@ The motion **is** SHM with period $T = 2\pi\sqrt{L/g}$Where $L$ is the total len
 
 **Question:**
 
-A mass-spring system consists of a block of mass $0.50\,\text{kg}$ attached to a spring of spring constant $200\,\text{N}\,\text{m}^{-1}$ on a frictionless surface. The block oscillates with amplitude $0.10\,\text{m}$.
+A mass-spring system consists of a block of mass $0.50\,\text{kg}$ attached to a spring of spring
+constant $200\,\text{N}\,\text{m}^{-1}$ on a frictionless surface. The block oscillates with
+amplitude $0.10\,\text{m}$.
 
 (a) Calculate the total energy, maximum KE, maximum PE, and the speed at the equilibrium position.
 
 (b) At what displacement is the kinetic energy equal to the potential energy?
 
-(c) A student claims that "the total energy is constant throughout the motion, so the forces must be conservative." Is this claim correct? Justify your answer.
+(c) A student claims that "the total energy is constant throughout the motion, so the forces must be
+conservative." Is this claim correct? Justify your answer.
 
 **Solution:**
 
@@ -97,9 +112,13 @@ $$x = \pm 0.0707\,\text{m} = \pm \frac{A}{\sqrt{2}} = \pm 0.10\sqrt{0.5} = \pm 0
 
 The KE equals PE at displacement $x = \pm A/\sqrt{2}$.
 
-(c) The claim is correct. The total mechanical energy is constant because the only force doing work is the spring force, which is conservative. A conservative force is defined as one for which the work done depends only on the initial and final positions, not the path. The spring force $F = -kx$ satisfies this criterion.
+(c) The claim is correct. The total mechanical energy is constant because the only force doing work
+is the spring force, which is conservative. A conservative force is defined as one for which the
+work done depends only on the initial and final positions, not the path. The spring force $F = -kx$
+satisfies this criterion.
 
-Constant total energy implies all forces are conservative. If friction were present, the total energy would decrease over time as energy is dissipated as thermal energy.
+Constant total energy implies all forces are conservative. If friction were present, the total
+energy would decrease over time as energy is dissipated as thermal energy.
 
 ---
 
@@ -107,7 +126,9 @@ Constant total energy implies all forces are conservative. If friction were pres
 
 **Question:**
 
-Two SHM systems oscillate at the same frequency $f = 2.0\,\text{Hz}$. System 1 has amplitude $A_1 = 0.08\,\text{m}$ and system 2 has amplitude $A_2 = 0.05\,\text{m}$. System 2 leads system 1 by a phase difference of $\phi = \pi/3\,\text{rad}$.
+Two SHM systems oscillate at the same frequency $f = 2.0\,\text{Hz}$. System 1 has amplitude
+$A_1 = 0.08\,\text{m}$ and system 2 has amplitude $A_2 = 0.05\,\text{m}$. System 2 leads system 1 by
+a phase difference of $\phi = \pi/3\,\text{rad}$.
 
 (a) Write the displacement equations for both systems, taking system 1's phase as zero.
 
@@ -151,9 +172,12 @@ The resultant oscillation: $x_R = 0.114\cos(4\pi t + 0.391)$
 
 **Question:**
 
-A mass of $2.0\,\text{kg}$ hangs from a spring of spring constant $k = 500\,\text{N}\,\text{m}^{-1}$ inside a lift. The lift accelerates upward at $3.0\,\text{m}\,\text{s}^{-2}$. The mass is pulled down $0.05\,\text{m}$ from its equilibrium position and released.
+A mass of $2.0\,\text{kg}$ hangs from a spring of spring constant $k = 500\,\text{N}\,\text{m}^{-1}$
+inside a lift. The lift accelerates upward at $3.0\,\text{m}\,\text{s}^{-2}$. The mass is pulled
+down $0.05\,\text{m}$ from its equilibrium position and released.
 
-(a) Calculate the new equilibrium position of the mass relative to its position when the lift is stationary.
+(a) Calculate the new equilibrium position of the mass relative to its position when the lift is
+stationary.
 
 (b) Calculate the period and frequency of the resulting oscillations.
 
@@ -163,7 +187,8 @@ Take $g = 9.81\,\text{m}\,\text{s}^{-2}$.
 
 **Solution:**
 
-(a) When the lift accelerates upward, the effective gravity is $g_{\text{eff}} = g + a = 9.81 + 3.0 = 12.81\,\text{m}\,\text{s}^{-2}$.
+(a) When the lift accelerates upward, the effective gravity is
+$g_{\text{eff}} = g + a = 9.81 + 3.0 = 12.81\,\text{m}\,\text{s}^{-2}$.
 
 Original equilibrium extension: $x_0 = mg/k = 2.0 \times 9.81/500 = 0.0392\,\text{m}$
 
@@ -171,7 +196,8 @@ New equilibrium extension: $x_0' = mg_{\text{eff}}/k = 2.0 \times 12.81/500 = 0.
 
 The equilibrium position shifts downward by $\Delta x = 0.0512 - 0.0392 = 0.012\,\text{m}$.
 
-(b) The angular frequency: $\omega = \sqrt{k/m} = \sqrt{500/2.0} = \sqrt{250} = 15.81\,\text{rad}\,\text{s}^{-1}$
+(b) The angular frequency:
+$\omega = \sqrt{k/m} = \sqrt{500/2.0} = \sqrt{250} = 15.81\,\text{rad}\,\text{s}^{-1}$
 
 Note: the period of SHM depends only on $k$ and $m$**not** on gravity or the lift's acceleration.
 
@@ -191,17 +217,22 @@ Maximum acceleration: $a_{\max} = A\omega^2 = 0.05 \times 250 = 12.5\,\text{m}\,
 
 **Question:**
 
-A mass-spring system has $m = 0.50\,\text{kg}$$k = 50\,\text{N}\,\text{m}^{-1}$And is subject to a damping force $F_d = -bv$ where $b = 0.50\,\text{N}\,\text{s}\,\text{m}^{-1}$. A driving force $F = F_0\cos(\omega_d t)$ is applied.
+A mass-spring system has $m = 0.50\,\text{kg}$$k = 50\,\text{N}\,\text{m}^{-1}$And is subject to a
+damping force $F_d = -bv$ where $b = 0.50\,\text{N}\,\text{s}\,\text{m}^{-1}$. A driving force
+$F = F_0\cos(\omega_d t)$ is applied.
 
-(a) Calculate the natural frequency, the damping ratio, and determine whether the system is underdamped, critically damped, or overdamped.
+(a) Calculate the natural frequency, the damping ratio, and determine whether the system is
+underdamped, critically damped, or overdamped.
 
 (b) Calculate the resonant frequency and the frequency at which maximum amplitude occurs.
 
-(c) Calculate the quality factor $Q$ of the system and estimate the number of oscillations for the amplitude to decay to $1/e$ of its initial value when the driving force is removed.
+(c) Calculate the quality factor $Q$ of the system and estimate the number of oscillations for the
+amplitude to decay to $1/e$ of its initial value when the driving force is removed.
 
 **Solution:**
 
-(a) Natural angular frequency: $\omega_0 = \sqrt{k/m} = \sqrt{50/0.50} = \sqrt{100} = 10.0\,\text{rad}\,\text{s}^{-1}$
+(a) Natural angular frequency:
+$\omega_0 = \sqrt{k/m} = \sqrt{50/0.50} = \sqrt{100} = 10.0\,\text{rad}\,\text{s}^{-1}$
 
 Natural frequency: $f_0 = \omega_0/(2\pi) = 1.59\,\text{Hz}$
 
@@ -217,7 +248,9 @@ $$\omega_r = \sqrt{\omega_0^2 - 2\gamma^2} = \sqrt{100 - 2 \times 0.25} = \sqrt{
 
 $$f_r = \frac{\omega_r}{2\pi} = \frac{9.975}{2\pi} = 1.588\,\text{Hz}$$
 
-Note: the resonant frequency is slightly less than the natural frequency ($1.588\,\text{Hz}$ vs $1.59\,\text{Hz}$). This difference is small because the damping is light ($\zeta = 0.05$). For heavier damping, the shift would be more pronounced.
+Note: the resonant frequency is slightly less than the natural frequency ($1.588\,\text{Hz}$ vs
+$1.59\,\text{Hz}$). This difference is small because the damping is light ($\zeta = 0.05$). For
+heavier damping, the shift would be more pronounced.
 
 (c) Quality factor: $Q = \frac{\omega_0}{2\gamma} = \frac{10.0}{1.0} = 10$
 
@@ -227,7 +260,9 @@ $$e^{-\gamma t} = e^{-1} \Rightarrow \gamma t = 1 \Rightarrow t = 1/\gamma = 2.0
 
 Number of oscillations in this time: $n = f_0 \times t = 1.59 \times 2.0 = 3.18$
 
-So approximately $Q = 10$ oscillations occur before the amplitude drops to $1/e \approx 37\%$ of its initial value. More precisely, the amplitude drops to $1/e$ after approximately $Q/(2\pi) \times 2\pi = Q$ radians of oscillation, or about $Q$ cycles for light damping.
+So approximately $Q = 10$ oscillations occur before the amplitude drops to $1/e \approx 37\%$ of its
+initial value. More precisely, the amplitude drops to $1/e$ after approximately
+$Q/(2\pi) \times 2\pi = Q$ radians of oscillation, or about $Q$ cycles for light damping.
 
 ---
 
@@ -235,13 +270,16 @@ So approximately $Q = 10$ oscillations occur before the amplitude drops to $1/e 
 
 **Question:**
 
-A spring of natural length $0.50\,\text{m}$ and spring constant $k = 100\,\text{N}\,\text{m}^{-1}$ hangs vertically. A mass $m = 2.0\,\text{kg}$ is attached to the free end and released from rest when the spring is at its natural length.
+A spring of natural length $0.50\,\text{m}$ and spring constant $k = 100\,\text{N}\,\text{m}^{-1}$
+hangs vertically. A mass $m = 2.0\,\text{kg}$ is attached to the free end and released from rest
+when the spring is at its natural length.
 
 (a) Calculate the equilibrium position and show that the mass undergoes SHM about this position.
 
 (b) Calculate the amplitude, maximum speed, and period of the oscillation.
 
-(c) Calculate the spring extension when the mass is at its lowest point, and verify using energy conservation that this equals the equilibrium extension plus the amplitude.
+(c) Calculate the spring extension when the mass is at its lowest point, and verify using energy
+conservation that this equals the equilibrium extension plus the amplitude.
 
 Take $g = 9.81\,\text{m}\,\text{s}^{-2}$.
 
@@ -253,7 +291,8 @@ $$x_0 = \frac{mg}{k} = \frac{2.0 \times 9.81}{100} = 0.1962\,\text{m}$$
 
 The equilibrium position is $0.1962\,\text{m}$ below the natural length.
 
-When the mass is at displacement $y$ below the equilibrium position, the net force (taking downward as positive):
+When the mass is at displacement $y$ below the equilibrium position, the net force (taking downward
+as positive):
 
 $$F = mg - k(x_0 + y) = mg - kx_0 - ky = -ky$$
 
@@ -263,11 +302,13 @@ $$a = -\frac{k}{m}y$$
 
 This is SHM with $\omega^2 = k/m$ and equilibrium at $x_0$.
 
-(b) The mass is released from the natural length, which is $x_0 = 0.1962\,\text{m}$ above the equilibrium position. So the amplitude is:
+(b) The mass is released from the natural length, which is $x_0 = 0.1962\,\text{m}$ above the
+equilibrium position. So the amplitude is:
 
 $$A = x_0 = 0.1962\,\text{m}$$
 
-Maximum speed: $v_{\max} = A\omega = A\sqrt{k/m} = 0.1962 \times \sqrt{50} = 0.1962 \times 7.07 = 1.387\,\text{m}\,\text{s}^{-1}$
+Maximum speed:
+$v_{\max} = A\omega = A\sqrt{k/m} = 0.1962 \times \sqrt{50} = 0.1962 \times 7.07 = 1.387\,\text{m}\,\text{s}^{-1}$
 
 Period: $T = 2\pi/\omega = 2\pi\sqrt{m/k} = 2\pi\sqrt{0.02} = 2\pi \times 0.1414 = 0.889\,\text{s}$
 
@@ -277,7 +318,8 @@ $$x_{\max} = x_0 + A = 0.1962 + 0.1962 = 0.3924\,\text{m}$$
 
 **Verification using energy conservation:**
 
-At the natural length (release point), all energy is gravitational PE (taking equilibrium as reference):
+At the natural length (release point), all energy is gravitational PE (taking equilibrium as
+reference):
 
 $$E = mgA = 2.0 \times 9.81 \times 0.1962 = 3.851\,\text{J}$$
 
@@ -285,9 +327,11 @@ At the lowest point (extension $x_{\max}$), all energy is elastic PE minus gravi
 
 $$\frac{1}{2}kx_{\max}^2 - mgx_{\max} = \frac{1}{2} \times 100 \times x_{\max}^2 - 19.62x_{\max}$$
 
-Setting equal to initial energy (at natural length, all energy is $mgx_{\max}$... But we need to be careful with reference).
+Setting equal to initial energy (at natural length, all energy is $mgx_{\max}$... But we need to be
+careful with reference).
 
-Using the total energy approach from the release point (natural length, zero spring PE, zero KE, height = $x_{\max}$ above lowest point):
+Using the total energy approach from the release point (natural length, zero spring PE, zero KE,
+height = $x_{\max}$ above lowest point):
 
 $$mgx_{\max} = \frac{1}{2}kx_{\max}^2$$
 

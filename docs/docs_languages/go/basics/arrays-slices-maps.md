@@ -1,6 +1,8 @@
 ---
 title: Arrays, Slices, and Maps
-description: "Arrays, Slices, and Maps — Arrays; Array Length; Slices; Creating Slices with worked examples and exam-style questions, ensuring thorough understanding."
+description:
+  'Arrays, Slices, and Maps — Arrays; Array Length; Slices; Creating Slices with worked examples and
+  exam-style questions, ensuring thorough understanding.'
 slug: arrays-slices-maps
 date: 2026-04-18
 tags:
@@ -8,6 +10,7 @@ tags:
 categories:
   - Go
 ---
+
 ## Arrays
 
 Arrays are fixed-length, homogeneous sequences. The length is part of the type -- `[3]int` and
@@ -148,9 +151,9 @@ fmt.Println(s) // [0, 0 0]
 
 ### Slice Growth Strategy
 
-When `append` triggers reallocation, Go doubles the capacity for slices smaller than 256
-Elements and grows by ~25% for larger slices. The exact strategy is an implementation detail of the
-Runtime and should not be relied upon.
+When `append` triggers reallocation, Go doubles the capacity for slices smaller than 256 Elements
+and grows by ~25% for larger slices. The exact strategy is an implementation detail of the Runtime
+and should not be relied upon.
 
 Pre-allocate capacity when the final size is known:
 
@@ -315,10 +318,10 @@ Structs containing slices or maps are not comparable.
 ## Common Pitfalls
 
 1. **Forgetting to capture `append` return value.** `append` may allocate a new underlying array.
- The original slice header is not updated. Always write `s = append(s, ...)`.
+   The original slice header is not updated. Always write `s = append(s, ...)`.
 
 2. **Slicing retains the underlying array.** A small slice of a large array prevents the large array
- from being garbage collected. Use `copy` to create an independent copy:
+   from being garbage collected. Use `copy` to create an independent copy:
 
    ```go
    small := make([]byte, len(large[1000:1100]))
@@ -326,16 +329,16 @@ Structs containing slices or maps are not comparable.
    ```
 
 3. **Writing to a `nil` map.** `var m map[string]int` creates a nil map. Writing to it panics.
- Always initialize with `make` or a literal before writing.
+   Always initialize with `make` or a literal before writing.
 
 4. **Map iteration order is random.** Go randomizes map iteration order. Do not rely on it. If you
- need ordered iteration, maintain a separate sorted key slice.
+   need ordered iteration, maintain a separate sorted key slice.
 
 5. **Concurrent map access.** Maps are not safe for concurrent use. Use `sync.RWMutex` or `sync.Map`
- for concurrent access.
+   for concurrent access.
 
 6. **Struct embedding is not inheritance.** There is no `super` call, no method overriding in the
- OOP sense. Embedding is composition with syntactic sugar for field/method promotion.
+   OOP sense. Embedding is composition with syntactic sugar for field/method promotion.
 
 ## Summary
 

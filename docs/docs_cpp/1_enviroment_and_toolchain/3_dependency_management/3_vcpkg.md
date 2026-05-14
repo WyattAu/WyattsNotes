@@ -1,6 +1,8 @@
 ---
 title: vcpkg
-description: "C++: vcpkg — Complete Manifest Example; Architectural Components; Baseline Mechanics; 2. Registry Federation with worked examples and exam-style questions."
+description:
+  'C++: vcpkg — Complete Manifest Example; Architectural Components; Baseline Mechanics; 2. Registry
+  Federation with worked examples and exam-style questions.'
 date: 2025-12-11T04:55:37.164Z
 tags:
   - cpp
@@ -8,6 +10,7 @@ categories:
   - cpp
 slug: vcpkg
 ---
+
 **vcpkg** is Microsoft's cross-platform package manager. While originally designed with an
 Imperative, global installation model ("Classic Mode"), modern C++ architecture relies on **Manifest
 Mode**.
@@ -79,22 +82,22 @@ ABI constraints.
 ### Architectural Components
 
 1. **Builtin-Baseline:** vcpkg does not resolve versions by checking the "latest" available on the
- server. Instead, it uses a **Baseline**, which is a specific Git commit SHA of the vcpkg
- repository. The baseline defines a snapshot of the entire C++ ecosystem that is known to compile
- together.
+   server. Instead, it uses a **Baseline**, which is a specific Git commit SHA of the vcpkg
+   repository. The baseline defines a snapshot of the entire C++ ecosystem that is known to compile
+   together.
 2. **Dependencies:** Simple strings denote the package name. The version is implicitly determined by
- the baseline.
+   the baseline.
 3. **Constraints (`version>=`):** These enforce a minimum version. If the baseline provides an older
- version, vcpkg upgrades.
+   version, vcpkg upgrades.
 4. **Host Dependencies:** The `"host": true` flag indicates a tool required for the build process
- itself (e.g., `protobuf` compiler) rather than a library to link against. This allows
- cross-compilation where the build host (x64) runs tools to generate code for the target (ARM64).
+   itself (e.g., `protobuf` compiler) rather than a library to link against. This allows
+   cross-compilation where the build host (x64) runs tools to generate code for the target (ARM64).
 5. **Overrides:** These force a specific version, bypassing the baseline logic. This is commonly
- used to pin exact versions or temporarily revert a broken update.
+   used to pin exact versions or temporarily revert a broken update.
 6. **Features:** Named groups of dependencies that can be optionally installed. Enable with
- `--x-feature=networking`.
+   `--x-feature=networking`.
 7. **Features on dependencies:** Control which features of a dependency are built. This reduces
- compile time by excluding unused functionality.
+   compile time by excluding unused functionality.
 
 ### Baseline Mechanics
 
@@ -102,9 +105,9 @@ The baseline is the foundational version pinning mechanism. When you specify a b
 
 1. Vcpkg checks out that exact commit of its own repository.
 2. For each dependency, vcpkg reads the `versions/<baseline>/<package>/baseline.json` file at that
- commit, which specifies the exact version of the package.
+   commit, which specifies the exact version of the package.
 3. All packages are built at the versions specified by the baseline, ensuring a known-good
- combination.
+   combination.
 
 If you need to update a dependency, you either change the baseline (updating all dependencies to the
 New baseline's versions) or use an override to pin a specific package to a different version.
@@ -150,7 +153,7 @@ A vcpkg Registry is a Git repository containing:
 
 1. Vcpkg parses the `packages` array of every defined registry.
 2. If a dependency matches a package listed in a custom registry (e.g., `internal-logger`), vcpkg
- resolves it against that specific Git repository.
+   resolves it against that specific Git repository.
 3. All other packages fall back to the `default-registry`.
 
 This federation allows seamless mixing of public open-source libraries and private proprietary
@@ -231,9 +234,9 @@ Graph. If `Lib A` needs `fmt 9.0` and `Lib B` needs `fmt 10.0`Vcpkg calculates a
 
 ### 4.2 Triplet-Based ABI Control
 
-Vcpkg uses **Triplets** (e.g., `x64-windows-static``arm64-linux`) to define the build
-Configuration for all dependencies. This allows an architect to switch the entire dependency tree
-From Dynamic Linking to Static Linking, or change the CRT linkage, by modifying a single variable
+Vcpkg uses **Triplets** (e.g., `x64-windows-static``arm64-linux`) to define the build Configuration
+for all dependencies. This allows an architect to switch the entire dependency tree From Dynamic
+Linking to Static Linking, or change the CRT linkage, by modifying a single variable
 (`VCPKG_TARGET_TRIPLET`).
 
 ### 4.3 Source-Based Provenance
@@ -258,7 +261,7 @@ vcpkg integrate install  # modifies system-wide CMake settings
 **Problems with Classic Mode:**
 
 - **Global state:** Multiple projects share the same vcpkg installation, leading to version
- conflicts.
+  conflicts.
 - **Non-reproducible:** `vcpkg install fmt` installs the latest version, which changes over time.
 - **No dependency graph isolation:** Each project's dependencies bleed into each other.
 
@@ -279,16 +282,16 @@ Uses triplets to control how every dependency is built.
 
 ### Common Triplets
 
-| Triplet | OS | Architecture | Linkage | CRT |
+| Triplet              | OS              | Architecture | Linkage       | CRT     |
 | -------------------- | --------------- | ------------ | ------------- | ------- |
-| `x64-windows` | Windows | x86_64 | Dynamic (DLL) | MD/MDd |
-| `x64-windows-static` | Windows | x86_64 | Static (LIB) | MT/MTd |
-| `x64-linux` | Linux | x86_64 | Dynamic (SO) | default |
-| `x64-linux-static` | Linux | x86_64 | Static (A) | default |
-| `arm64-windows` | Windows | ARM64 | Dynamic (DLL) | MD/MDd |
-| `arm64-linux` | Linux | ARM64 | Dynamic (SO) | default |
-| `x64-mingw-dynamic` | Windows (MinGW) | x86_64 | Dynamic | default |
-| `wasm32-emscripten` | WebAssembly | wasm32 | Static | N/A |
+| `x64-windows`        | Windows         | x86_64       | Dynamic (DLL) | MD/MDd  |
+| `x64-windows-static` | Windows         | x86_64       | Static (LIB)  | MT/MTd  |
+| `x64-linux`          | Linux           | x86_64       | Dynamic (SO)  | default |
+| `x64-linux-static`   | Linux           | x86_64       | Static (A)    | default |
+| `arm64-windows`      | Windows         | ARM64        | Dynamic (DLL) | MD/MDd  |
+| `arm64-linux`        | Linux           | ARM64        | Dynamic (SO)  | default |
+| `x64-mingw-dynamic`  | Windows (MinGW) | x86_64       | Dynamic       | default |
+| `wasm32-emscripten`  | WebAssembly     | wasm32       | Static        | N/A     |
 
 ### Setting the Target Triplet
 
@@ -533,17 +536,17 @@ vcpkg_install_copyright(FILE_LIST "${SOURCE_PATH}/LICENSE")
 
 ### Portfile Commands
 
-| Command | Purpose |
+| Command                    | Purpose                                         |
 | :------------------------- | :---------------------------------------------- |
-| `vcpkg_from_github` | Download source from GitHub |
-| `vcpkg_from_gitlab` | Download source from GitLab |
-| `vcpkg_from_sourceforge` | Download source from SourceForge |
-| `vcpkg_download_distfile` | Download an arbitrary file (by URL) |
-| `vcpkg_cmake_configure` | Run CMake configure step |
-| `vcpkg_cmake_build` | Run CMake build step |
-| `vcpkg_cmake_install` | Run CMake install step |
+| `vcpkg_from_github`        | Download source from GitHub                     |
+| `vcpkg_from_gitlab`        | Download source from GitLab                     |
+| `vcpkg_from_sourceforge`   | Download source from SourceForge                |
+| `vcpkg_download_distfile`  | Download an arbitrary file (by URL)             |
+| `vcpkg_cmake_configure`    | Run CMake configure step                        |
+| `vcpkg_cmake_build`        | Run CMake build step                            |
+| `vcpkg_cmake_install`      | Run CMake install step                          |
 | `vcpkg_cmake_config_fixup` | Fix CMake config files for correct installation |
-| `vcpkg_install_copyright` | Install license/copyright files |
+| `vcpkg_install_copyright`  | Install license/copyright files                 |
 
 ## 11. Private Registries
 
@@ -649,19 +652,19 @@ export VCPKG_ROOT=/opt/vcpkg
 
 ## 13. Vcpkg vs Conan Comparison
 
-| Feature | vcpkg | Conan |
+| Feature                  | vcpkg                                | Conan                                   |
 | :----------------------- | :----------------------------------- | :-------------------------------------- |
-| Maintainer | Microsoft | JFrog (open-source core) |
-| Manifest format | `vcpkg.json` (JSON) | `conanfile.txt` / `conanfile.py` |
-| Build system integration | CMake toolchain file | CMake generator, toolchain |
-| Dependency graph | Flat (ODR-safe) | Flat (C++11+) or nested (C++03) |
-| Binary caching | NuGet, S3, filesystem | Conan Server, Artifactory, S3 |
-| Private registries | Git-based | Git-based or Conan Server |
-| Cross-compilation | Via triplets | Via profiles and settings |
-| Language support | C/C++ only | C/C++, plus some cross-language support |
-| Lock file | `vcpkg.json` (implicit via baseline) | `conan.lock` (explicit) |
-| Python API | No (CMake-based portfiles) | Yes (full Python API for portfiles) |
-| Community packages | ~2000+ | ~1800+ |
+| Maintainer               | Microsoft                            | JFrog (open-source core)                |
+| Manifest format          | `vcpkg.json` (JSON)                  | `conanfile.txt` / `conanfile.py`        |
+| Build system integration | CMake toolchain file                 | CMake generator, toolchain              |
+| Dependency graph         | Flat (ODR-safe)                      | Flat (C++11+) or nested (C++03)         |
+| Binary caching           | NuGet, S3, filesystem                | Conan Server, Artifactory, S3           |
+| Private registries       | Git-based                            | Git-based or Conan Server               |
+| Cross-compilation        | Via triplets                         | Via profiles and settings               |
+| Language support         | C/C++ only                           | C/C++, plus some cross-language support |
+| Lock file                | `vcpkg.json` (implicit via baseline) | `conan.lock` (explicit)                 |
+| Python API               | No (CMake-based portfiles)           | Yes (full Python API for portfiles)     |
+| Community packages       | ~2000+                               | ~1800+                                  |
 
 ### When to Choose vcpkg
 
@@ -680,37 +683,37 @@ export VCPKG_ROOT=/opt/vcpkg
 ## Common Pitfalls
 
 1. **Mixing triplets in the same build tree:** If you change `VCPKG_TARGET_TRIPLET` without clearing
- the build directory, stale artifacts from the previous triplet may cause linker errors. Always
- delete `build/` and `vcpkg_installed/` when changing triplets.
+   the build directory, stale artifacts from the previous triplet may cause linker errors. Always
+   delete `build/` and `vcpkg_installed/` when changing triplets.
 2. **Forgetting `--triplet` for CLI commands:** `vcpkg install fmt` installs the default triplet,
- which may not match your project's triplet. Always specify: `vcpkg install fmt:x64-linux-static`.
+   which may not match your project's triplet. Always specify: `vcpkg install fmt:x64-linux-static`.
 3. **Overlay port SHA512 mismatch:** When using overlays, the `SHA512` in `portfile.cmake` must
- match the downloaded archive. If you update the archive without updating the hash, vcpkg will
- fail with a checksum error.
+   match the downloaded archive. If you update the archive without updating the hash, vcpkg will
+   fail with a checksum error.
 4. **NuGet mono dependency on Linux/macOS:** vcpkg's NuGet binary cache requires `mono` on
- non-Windows platforms. Install it via `brew install mono` or `apt install mono-complete`.
+   non-Windows platforms. Install it via `brew install mono` or `apt install mono-complete`.
 5. **Not pinning the vcpkg submodule commit:** If you use vcpkg as a submodule, the submodule commit
- determines which baseline is used. Different developers with different submodule commits will
- build different dependency versions. Pin the submodule to a specific commit.
+   determines which baseline is used. Different developers with different submodule commits will
+   build different dependency versions. Pin the submodule to a specific commit.
 6. **Stale `vcpkg_installed/` after `vcpkg.json` changes:** When you modify `vcpkg.json` (add or
- remove a dependency), the `vcpkg_installed/` directory may contain stale artifacts. Delete it and
- reconfigure: `rm -rf vcpkg_installed && cmake --fresh -S . -B build`.
+   remove a dependency), the `vcpkg_installed/` directory may contain stale artifacts. Delete it and
+   reconfigure: `rm -rf vcpkg_installed && cmake --fresh -S . -B build`.
 7. **`find_package` failing after vcpkg install:** Ensure the toolchain file is passed to every
- CMake invocation. If you configure without the toolchain file, `find_package` will not search the
- vcpkg installation directory.
+   CMake invocation. If you configure without the toolchain file, `find_package` will not search the
+   vcpkg installation directory.
 8. **Host vs target confusion with cross-compilation:** When cross-compiling (e.g., x64 host
- building for ARM64 target), build tools (protoc, flatbuffers compiler) must be built for the host
- architecture. Use `"host": true` on these dependencies to ensure correct resolution.
+   building for ARM64 target), build tools (protoc, flatbuffers compiler) must be built for the host
+   architecture. Use `"host": true` on these dependencies to ensure correct resolution.
 
 ## See Also
 
 - [Dependency Resolution](1_dependency_architectures_models.md) -- How vcpkg resolves the dependency
- graph
+  graph
 - [CPM.cmake](2_cpm.md) -- Lightweight alternative for smaller projects
 - [Conan](4_conan.md) -- Alternative package manager with Python-based portfiles
 - [Binary Caching](6_binary_caching.md) -- Detailed binary caching strategies
 - [Property Propagation](5_property_propagation.md) -- How vcpkg-integrated libraries propagate
- build properties
+  build properties
 
 ## Summary
 

@@ -1,6 +1,8 @@
 ---
 title: Devirtualization and Final Specifiers
-description: "C++: Devirtualization and Final Specifiers — 3.1 What is Devirtualization?; 3.2 Conditions for Devirtualization for thorough revision and examination pre."
+description:
+  'C++: Devirtualization and Final Specifiers — 3.1 What is Devirtualization?; 3.2 Conditions for
+  Devirtualization for thorough revision and examination pre.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -8,6 +10,7 @@ categories:
   - Cpp
 slug: devirtualization-final-specifiers
 ---
+
 # Devirtualization and Final Specifiers
 
 **Devirtualization** is a compiler optimization that replaces a virtual function call with a direct
@@ -28,40 +31,40 @@ Devirtualization is important because virtual dispatch prevents several critical
 
 - **Inlining.** The compiler cannot inline a call whose target is determined at runtime.
 - **Constant propagation.** The return value of a virtual call cannot be propagated as a constant if
- the target is unknown.
+  the target is unknown.
 - **Loop unrolling.** Virtual calls inside loops prevent the loop body from being unrolled.
 - **Dead code elimination.** If the virtual call has known side effects only in one target, the
- compiler cannot eliminate dead code without knowing the target.
+  compiler cannot eliminate dead code without knowing the target.
 
 ## 3.2 Conditions for Devirtualization
 
 A compiler may devirtualize when it can prove that the dynamic type equals the static type:
 
 1. **The object has a known final type.** If the class is marked `final` or the function is marked
- `final`The compiler knows there is no override.
+   `final`The compiler knows there is no override.
 2. **The static type is exact.** When calling a virtual function on a local variable (not through a
- pointer or reference), the compiler knows the exact type.
+   pointer or reference), the compiler knows the exact type.
 3. **Speculative devirtualization.** The compiler may emit a type check at runtime (using the vptr
- or type info) and branch to a direct call on the likely path, falling back to virtual dispatch on
- the unlikely path.
+   or type info) and branch to a direct call on the likely path, falling back to virtual dispatch on
+   the unlikely path.
 
 ### Proof: When the Compiler Can Prove the Dynamic Type
 
 By [N4950 S13.3.2], the dynamic type of an object is the most-derived type of the object. The
 Compiler can prove the dynamic type in the following cases:
 
-**Case 1: Local variable of exact type.** If `D d;` is a local variable of type `D`The dynamic
-Type of `d` is `D`. No pointer or reference to a base class is involved, so the static type equals
-The dynamic type. The compiler emits a direct call to `D::f`.
+**Case 1: Local variable of exact type.** If `D d;` is a local variable of type `D`The dynamic Type
+of `d` is `D`. No pointer or reference to a base class is involved, so the static type equals The
+dynamic type. The compiler emits a direct call to `D::f`.
 
 **Case 2: `final` class.** If `D` is marked `final` [N4950 S11.7.4], no class can derive from `D`.
 If the compiler sees a call `d.f()` where `d` has static type `D`The dynamic type must be `D` (it
 Cannot be a more-derived type). Therefore, `D::f` is the only possible target.
 
-**Case 3: `final` virtual function.** If `D::f` is marked `final`No derived class can override
-`f`. If the compiler can prove the dynamic type is `D` or a type derived from `D`The call resolves
-To `D::f` regardless of the actual derived type. This is less powerful than a `final` class but
-Still useful.
+**Case 3: `final` virtual function.** If `D::f` is marked `final`No derived class can override `f`.
+If the compiler can prove the dynamic type is `D` or a type derived from `D`The call resolves To
+`D::f` regardless of the actual derived type. This is less powerful than a `final` class but Still
+useful.
 
 **Case 4: Type propagation through assignments.** If `D d; B& ref = d; ref.f();`The compiler can
 Track that `ref` is an alias for `d` and prove that the dynamic type is `D`. This requires the
@@ -133,8 +136,8 @@ int main() {
 }
 ```
 
-Compiled with `-O2` on GCC or Clang, the call `r->draw()` inside `render_scene` is inlined
-Entirely -- no indirect call is emitted.
+Compiled with `-O2` on GCC or Clang, the call `r->draw()` inside `render_scene` is inlined Entirely
+-- no indirect call is emitted.
 
 ## 3.4 Profile-Guided Optimization (PGO)
 
@@ -216,14 +219,12 @@ int main() {
 }
 ```
 
-:::tip
-Practical Advice To enable maximum devirtualization:
+:::tip Practical Advice To enable maximum devirtualization:
 
 - Mark leaf classes and leaf overrides as `final`.
 - Prefer local objects over heap-allocated objects where possible.
 - Use PGO for hot code paths where the dynamic type distribution is predictable.
-- Compile with `-O2` or `-O3` (required for most devirtualization passes).
-:::
+- Compile with `-O2` or `-O3` (required for most devirtualization passes). :::
 
 ## 3.6 Devirtualization Barriers
 
@@ -269,8 +270,8 @@ int main() {
 
 ### Barrier 2: Indirect Calls Through Function Pointers
 
-When a virtual function call is hidden behind a function pointer, the compiler cannot see
-Through the indirection to determine the dynamic type.
+When a virtual function call is hidden behind a function pointer, the compiler cannot see Through
+the indirection to determine the dynamic type.
 
 ```cpp
 #include <iostream>
@@ -336,11 +337,11 @@ Separate compilation is a barrier.
 ### How LTO Works
 
 1. During compilation, the compiler emits an intermediate representation (IR) instead of machine
- code.
+   code.
 2. During linking, the linker collects all IR files and runs an optimization pass on the combined
- IR.
+   IR.
 3. The optimizer can now see the full type hierarchy and devirtualize calls that were impossible
- during individual compilation.
+   during individual compilation.
 
 ### Enabling LTO
 
@@ -373,20 +374,18 @@ cl /O2 /GL main.cpp factory.cpp /link /LTCG
 
 ### LTO Trade-offs
 
-| Aspect | Without LTO | With LTO |
+| Aspect           | Without LTO | With LTO                              |
 | :--------------- | :---------- | :------------------------------------ |
-| Compile time | Fast | Slow (full-program analysis) |
-| Link time | Fast | Slow (optimization at link time) |
-| Memory usage | Low | High (entire program IR in memory) |
-| Devirtualization | Limited | Cross-TU devirtualization enabled |
-| Binary size | Normal | Often smaller (dead code elimination) |
-| Debugging | Easy | Harder (optimized code at link time) |
+| Compile time     | Fast        | Slow (full-program analysis)          |
+| Link time        | Fast        | Slow (optimization at link time)      |
+| Memory usage     | Low         | High (entire program IR in memory)    |
+| Devirtualization | Limited     | Cross-TU devirtualization enabled     |
+| Binary size      | Normal      | Often smaller (dead code elimination) |
+| Debugging        | Easy        | Harder (optimized code at link time)  |
 
-:::warning
-LTO can increase link time significantly for large projects (minutes to tens of minutes).
+:::warning LTO can increase link time significantly for large projects (minutes to tens of minutes).
 For CI builds, consider using ThinLTO (`-flto=thin` on Clang), which performs parallel LTO with
-Lower memory usage at the cost of slightly less aggressive optimization.
-:::
+Lower memory usage at the cost of slightly less aggressive optimization. :::
 
 ## 3.8 `final` and Its Effect on vtable Layout
 
@@ -394,11 +393,10 @@ The `final` specifier does not change the vtable layout itself -- the vtable sti
 Vptr still points to it. However, `final` enables the compiler to:
 
 1. **Skip the vtable lookup entirely.** The compiler can emit a direct call to the known final
- function.
+   function.
 2. **Inline the function body.** Since the call target is known, the compiler can inline it.
-3. **Eliminate the vptr .** If a class is `final` and has no virtual base classes, some
- compilers can omit the vptr entirely when the object is not accessed through a base class
- pointer.
+3. **Eliminate the vptr .** If a class is `final` and has no virtual base classes, some compilers
+   can omit the vptr entirely when the object is not accessed through a base class pointer.
 
 ```cpp
 #include <iostream>
@@ -545,14 +543,14 @@ int main() {
 }
 ```
 
-Compile with `-O3` and compare. With `Derived` marked `final`The compiler may eliminate the
-Virtual dispatch in `bench_devirtualized`Yielding a measurable speedup ( 1.2x--2x).
+Compile with `-O3` and compare. With `Derived` marked `final`The compiler may eliminate the Virtual
+dispatch in `bench_devirtualized`Yielding a measurable speedup ( 1.2x--2x).
 
 ## 3.11 Devirtualization and `std::function`
 
 `std::function` is a type-erased wrapper. When a virtual call occurs inside a `std::function` that
-Holds a pointer to a polymorphic object, the compiler cannot see through the type erasure
-To devirtualize:
+Holds a pointer to a polymorphic object, the compiler cannot see through the type erasure To
+devirtualize:
 
 ```cpp
 #include <cstdio>
@@ -683,8 +681,8 @@ int main() {
 }
 ```
 
-At `-O2`Both GCC and Clang devirtualize this call because the template instantiation
-Provides the full type definition.
+At `-O2`Both GCC and Clang devirtualize this call because the template instantiation Provides the
+full type definition.
 
 ## 3.16 Checking Devirtualization with Compiler Reports
 
@@ -706,28 +704,28 @@ Intended effect.
 ## Common Pitfalls
 
 - **Adding `final` too early.** Marking a class `final` prevents extension, which can be problematic
- in library code where users may need to subclass. Use `final` on leaf classes that you control and
- that are not part of a public API.
+  in library code where users may need to subclass. Use `final` on leaf classes that you control and
+  that are not part of a public API.
 - **Assuming devirtualization always happens.** Even with `-O3`Compilers may fail to devirtualize
- due to ABI boundaries, separate compilation, or complex inheritance. Always measure with your
- specific compiler and optimization level.
+  due to ABI boundaries, separate compilation, or complex inheritance. Always measure with your
+  specific compiler and optimization level.
 - **Relying on devirtualization for correctness.** Devirtualization is an optimization, not a
- language guarantee. The program must be correct even without it.
+  language guarantee. The program must be correct even without it.
 - **Forgetting LTO for cross-TU calls.** Without LTO, the compiler cannot see the full class
- hierarchy across translation units. If devirtualization is critical for performance, enable LTO.
+  hierarchy across translation units. If devirtualization is critical for performance, enable LTO.
 - **PGO without representative workloads.** Profile-guided speculative devirtualization is only as
- good as the profiling data. If the production workload differs from the training workload, the
- speculative direct calls may hurt performance (branch misprediction on the fast path).
+  good as the profiling data. If the production workload differs from the training workload, the
+  speculative direct calls may hurt performance (branch misprediction on the fast path).
 - **Devirtualization and shared libraries.** Even with LTO, calls into shared libraries (.so, .dll)
- cannot be devirtualized because the library may be updated independently of the application. If
- you control both sides, consider static linking or LTO-aware shared library builds.
+  cannot be devirtualized because the library may be updated independently of the application. If
+  you control both sides, consider static linking or LTO-aware shared library builds.
 - **Devirtualization requires the full definition.** The compiler needs the complete definition of
- the derived class to perform devirtualization. If the derived class is defined in a header that is
- not included at the call site (forward-declared only), devirtualization is impossible.
+  the derived class to perform devirtualization. If the derived class is defined in a header that is
+  not included at the call site (forward-declared only), devirtualization is impossible.
 - **Virtual calls through `std::variant` visitation.** Even though `std::visit` dispatches to the
- correct alternative at compile time (via a jump table), if the visitor itself makes a virtual call
- on the visited object, that virtual call may or may not be devirtualized depending on whether the
- compiler can prove the type.
+  correct alternative at compile time (via a jump table), if the visitor itself makes a virtual call
+  on the visited object, that virtual call may or may not be devirtualized depending on whether the
+  compiler can prove the type.
 
 ## See Also
 

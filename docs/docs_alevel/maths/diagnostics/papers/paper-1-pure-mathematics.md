@@ -1,22 +1,23 @@
 ---
-title: "Paper 1 -- Pure Mathematics -- Full Diagnostic Exam"
-description: "Comprehensive pure mathematics diagnostic paper covering all 14 A-Level topics with worked solutions. Timed at 120 minutes."
+title: 'Paper 1 -- Pure Mathematics -- Full Diagnostic Exam'
+description:
+  'Comprehensive pure mathematics diagnostic paper covering all 14 A-Level topics with worked
+  solutions. Timed at 120 minutes.'
 slug: diag-paper-1-pure
 hide_table_of_contents: true
 ---
 
 # Paper 1 — Pure Mathematics
 
-**Time allowed:** 120 minutes
-**Total marks:** 100
-**Topics covered:** All 14 pure mathematics topics
+**Time allowed:** 120 minutes **Total marks:** 100 **Topics covered:** All 14 pure mathematics
+topics
 
 ---
 
 ## Instructions
 
-Answer all questions. Calculators are permitted unless otherwise stated.
-Show all working — marks are awarded for method as well as final answer.
+Answer all questions. Calculators are permitted unless otherwise stated. Show all working — marks
+are awarded for method as well as final answer.
 
 ---
 
@@ -46,7 +47,8 @@ State your answer using set notation, identifying all excluded values.
 
 ### Q4 [7 marks] — Coordinates and Geometry
 
-Find the value of $k$ such that the line $y = kx + 5$ is tangent to the circle $x^2 + y^2 - 4x - 6y + 9 = 0$.
+Find the value of $k$ such that the line $y = kx + 5$ is tangent to the circle
+$x^2 + y^2 - 4x - 6y + 9 = 0$.
 
 Hence find the coordinates of the point of tangency.
 
@@ -78,7 +80,8 @@ $$\frac{(1 + 2x)^5}{(1 - x)^3}$$
 
 **(a)** Solve $\cos(3x) = \frac{1}{2}$ for $x \in [0, 2\pi)$. Find all solutions.
 
-**(b)** The curve $y = \cos(3x)$ intersects the line $y = \frac{1}{2}$ at $N$ distinct points in the interval $[0, 2\pi)$. Find $N$ and the sum of all $x$-coordinates of the intersection points.
+**(b)** The curve $y = \cos(3x)$ intersects the line $y = \frac{1}{2}$ at $N$ distinct points in the
+interval $[0, 2\pi)$. Find $N$ and the sum of all $x$-coordinates of the intersection points.
 
 ### Q9 [8 marks] — Exponentials and Logarithms
 
@@ -86,7 +89,8 @@ $$\frac{(1 + 2x)^5}{(1 - x)^3}$$
 
 **(b)** Solve $e^{2x} - 5e^x + 6 = 1$ for $x \in \mathbb{R}$Giving exact answers.
 
-**(c)** Explain why, when using the substitution $u = e^x$ to solve an equation of the form $e^{2x} + pe^x + q = 0$You must check that $u \gt 0$ before taking natural logarithms.
+**(c)** Explain why, when using the substitution $u = e^x$ to solve an equation of the form
+$e^{2x} + pe^x + q = 0$You must check that $u \gt 0$ before taking natural logarithms.
 
 ### Q10 [9 marks] — Differentiation
 
@@ -96,7 +100,9 @@ A curve has equation $y = x^4 - 4x^3 + 6x^2 - 4x + 1$.
 
 **(b)** Find the coordinates of all stationary points.
 
-**(c)** Classify each stationary point. A student claims that since $\frac{d^2y}{dx^2} = 0$ at the stationary point, it is a point of inflection. Explain why this reasoning is incorrect, and determine the true nature of this point.
+**(c)** Classify each stationary point. A student claims that since $\frac{d^2y}{dx^2} = 0$ at the
+stationary point, it is a point of inflection. Explain why this reasoning is incorrect, and
+determine the true nature of this point.
 
 **(d)** Express $y$ in a form that makes the nature of the stationary point immediately obvious.
 
@@ -104,15 +110,18 @@ A curve has equation $y = x^4 - 4x^3 + 6x^2 - 4x + 1$.
 
 **(a)** Find $\int x^3 \ln x\, dx$.
 
-**(b)** A student chooses $u = x^3$ and $\frac{dv}{dx} = \ln x$ for integration by parts. Explain why this choice is problematic.
+**(b)** A student chooses $u = x^3$ and $\frac{dv}{dx} = \ln x$ for integration by parts. Explain
+why this choice is problematic.
 
 **(c)** Using your result from part (a), evaluate $\int_1^e x^3 \ln x\, dx$ exactly.
 
 ### Q12 [7 marks] — Vectors
 
-Line $l_1$ passes through $A(1, 2, 3)$ with direction vector $\mathbf{d}_1 = \begin{pmatrix} 2 \\ -1 \\ 1 \end{pmatrix}$.
+Line $l_1$ passes through $A(1, 2, 3)$ with direction vector
+$\mathbf{d}_1 = \begin{pmatrix} 2 \\ -1 \\ 1 \end{pmatrix}$.
 
-Line $l_2$ passes through $B(4, 1, 0)$ with direction vector $\mathbf{d}_2 = \begin{pmatrix} 1 \\ a \\ 2 \end{pmatrix}$.
+Line $l_2$ passes through $B(4, 1, 0)$ with direction vector
+$\mathbf{d}_2 = \begin{pmatrix} 1 \\ a \\ 2 \end{pmatrix}$.
 
 **(a)** Find the value of $a$ for which $l_1$ and $l_2$ intersect.
 
@@ -122,7 +131,8 @@ Line $l_2$ passes through $B(4, 1, 0)$ with direction vector $\mathbf{d}_2 = \be
 
 ### Q13 [5 marks] — Proof
 
-For each of the following, state whether the condition is necessary, sufficient, both, or neither. Justify each answer.
+For each of the following, state whether the condition is necessary, sufficient, both, or neither.
+Justify each answer.
 
 **(a)** "$x \gt 2$" as a condition for "$x^2 \gt 4$".
 
@@ -136,7 +146,8 @@ The function $f(x) = x^3 - 2x + 2$ has a root near $x = -1.77$.
 
 **(a)** Show that $f(x) = 0$ has exactly one real root.
 
-**(b)** Apply the Newton-Raphson formula with initial value $x_0 = 0$. Compute $x_1$$x_2$And $x_3$. Describe the behaviour of the iteration.
+**(b)** Apply the Newton-Raphson formula with initial value $x_0 = 0$. Compute $x_1$$x_2$And $x_3$.
+Describe the behaviour of the iteration.
 
 **(c)** Explain why the iteration fails to converge.
 
@@ -146,7 +157,8 @@ The function $f(x) = x^3 - 2x + 2$ has a root near $x = -1.77$.
 
 ### Q1 — Solution
 
-**Key observation:** The numerator $a^{3/2} - a^{-3/2}$ can be factorised using the difference of cubes identity $x^3 - y^3 = (x - y)(x^2 + xy + y^2)$ with $x = a^{1/2}$ and $y = a^{-1/2}$:
+**Key observation:** The numerator $a^{3/2} - a^{-3/2}$ can be factorised using the difference of
+cubes identity $x^3 - y^3 = (x - y)(x^2 + xy + y^2)$ with $x = a^{1/2}$ and $y = a^{-1/2}$:
 
 $$a^{\frac{3}{2}} - a^{-\frac{3}{2}} = \left(a^{\frac{1}{2}} - a^{-\frac{1}{2}}\right)\left(a + 1 + a^{-1}\right)$$
 
@@ -154,7 +166,8 @@ Therefore the expression simplifies to:
 
 $$\frac◆LB◆\left(a^{\frac{1}{2}} - a^{-\frac{1}{2}}\right)\left(a + 1 + a^{-1}\right)◆RB◆◆LB◆a^{\frac{1}{2}} - a^{-\frac{1}{2}}◆RB◆ = a + 1 + a^{-1}$$
 
-Provided $a^{1/2} - a^{-1/2} \neq 0$I.e. $a \neq 1$. (If $a = 1$The given condition would give $2 = 5$A contradiction, so $a \neq 1$ is guaranteed.)
+Provided $a^{1/2} - a^{-1/2} \neq 0$I.e. $a \neq 1$. (If $a = 1$The given condition would give
+$2 = 5$A contradiction, so $a \neq 1$ is guaranteed.)
 
 **Step 2: Find $a + a^{-1}$ from the given condition.**
 
@@ -210,12 +223,12 @@ Excluded values: $x = -3$ (denominator zero) and $x = 2$ (denominator zero).
 
 **Step 3: Sign analysis.**
 
-| $x$ | $(x+3)$ | $(x-1)$ | $(x-2)$ | Numerator | Denominator | Ratio |
-|-----|---------|---------|---------|-----------|-------------|-------|
-| $x \lt -3$ | $-$ | $-$ | $-$ | $+$ | $+$ | $+$ |
-| $-3 \lt x \lt 1$ | $+$ | $-$ | $-$ | $+$ | $-$ | $-$ |
-| $1 \lt x \lt 2$ | $+$ | $+$ | $-$ | $-$ | $-$ | $+$ |
-| $x \gt 2$ | $+$ | $+$ | $+$ | $+$ | $+$ | $+$ |
+| $x$              | $(x+3)$ | $(x-1)$ | $(x-2)$ | Numerator | Denominator | Ratio |
+| ---------------- | ------- | ------- | ------- | --------- | ----------- | ----- |
+| $x \lt -3$       | $-$     | $-$     | $-$     | $+$       | $+$         | $+$   |
+| $-3 \lt x \lt 1$ | $+$     | $-$     | $-$     | $+$       | $-$         | $-$   |
+| $1 \lt x \lt 2$  | $+$     | $+$     | $-$     | $-$       | $-$         | $+$   |
+| $x \gt 2$        | $+$     | $+$     | $+$     | $+$       | $+$         | $+$   |
 
 **Step 4: Include or exclude endpoints.**
 
@@ -235,36 +248,30 @@ $$x \in (-\infty, -3) \cup [1, 2) \cup (2, \infty)$$
 
 **Step 1: Substitute the line into the circle equation.**
 
-$$x^2 + (kx+5)^2 - 4x - 6(kx+5) + 9 = 0$$
-$$x^2 + k^2x^2 + 10kx + 25 - 4x - 6kx - 30 + 9 = 0$$
-$$(1+k^2)x^2 + (10k - 4 - 6k)x + 4 = 0$$
-$$(1+k^2)x^2 + (4k - 4)x + 4 = 0$$
+$$x^2 + (kx+5)^2 - 4x - 6(kx+5) + 9 = 0$$ $$x^2 + k^2x^2 + 10kx + 25 - 4x - 6kx - 30 + 9 = 0$$
+$$(1+k^2)x^2 + (10k - 4 - 6k)x + 4 = 0$$ $$(1+k^2)x^2 + (4k - 4)x + 4 = 0$$
 
 **Step 2: Set the discriminant to zero for tangency.**
 
-$$\Delta = (4k-4)^2 - 4(1+k^2)(4) = 0$$
-$$16k^2 - 32k + 16 - 16 - 16k^2 = 0$$
-$$-32k = 0$$
-$$k = 0$$
+$$\Delta = (4k-4)^2 - 4(1+k^2)(4) = 0$$ $$16k^2 - 32k + 16 - 16 - 16k^2 = 0$$ $$-32k = 0$$ $$k = 0$$
 
 **Step 3: Find the point of tangency.**
 
 With $k = 0$The line is $y = 5$. Substituting into the circle:
 
-$$x^2 + 25 - 4x - 30 + 9 = 0$$
-$$x^2 - 4x + 4 = 0$$
-$$(x-2)^2 = 0$$
-$$x = 2$$
+$$x^2 + 25 - 4x - 30 + 9 = 0$$ $$x^2 - 4x + 4 = 0$$ $$(x-2)^2 = 0$$ $$x = 2$$
 
 The point of tangency is $(2, 5)$.
 
-**Geometric check:** The circle $(x-2)^2 + (y-3)^2 = 4$ has centre $(2, 3)$ and radius $2$. The line $y = 5$ is at distance $|5-3| = 2$ from the centre, equal to the radius. Confirmed.
+**Geometric check:** The circle $(x-2)^2 + (y-3)^2 = 4$ has centre $(2, 3)$ and radius $2$. The line
+$y = 5$ is at distance $|5-3| = 2$ from the centre, equal to the radius. Confirmed.
 
 ---
 
 ### Q5 — Solution
 
-**(a)** $f(g(x)) = f\left(\frac{1}{x-3}\right) = \sqrt◆LB◆\frac{2}{x-3} - 1◆RB◆ = \sqrt◆LB◆\frac{2 - (x-3)}{x-3}◆RB◆ = \sqrt◆LB◆\frac{5-x}{x-3}◆RB◆$.
+**(a)**
+$f(g(x)) = f\left(\frac{1}{x-3}\right) = \sqrt◆LB◆\frac{2}{x-3} - 1◆RB◆ = \sqrt◆LB◆\frac{2 - (x-3)}{x-3}◆RB◆ = \sqrt◆LB◆\frac{5-x}{x-3}◆RB◆$.
 
 For this to be defined, we need:
 
@@ -275,11 +282,11 @@ Solving $\frac{5-x}{x-3} \geq 0$ by sign analysis:
 
 Critical values: $x = 3$ (excluded) and $x = 5$ (included).
 
-| Interval | $(5-x)$ | $(x-3)$ | Ratio |
-|----------|---------|---------|-------|
-| $x \lt 3$ | $+$ | $-$ | $-$ |
-| $3 \lt x \leq 5$ | $+$ | $+$ | $+$ |
-| $x \gt 5$ | $-$ | $+$ | $-$ |
+| Interval         | $(5-x)$ | $(x-3)$ | Ratio |
+| ---------------- | ------- | ------- | ----- |
+| $x \lt 3$        | $+$     | $-$     | $-$   |
+| $3 \lt x \leq 5$ | $+$     | $+$     | $+$   |
+| $x \gt 5$        | $-$     | $+$     | $-$   |
 
 Domain of $f \circ g$: $(3, 5]$.
 
@@ -294,10 +301,15 @@ Domain of $g \circ f$: $\left[\frac{1}{2}, 5\right) \cup (5, \infty)$.
 
 **(c)** The domains differ because:
 
-- For $f \circ g$: the input to $f$ is $g(x) = \frac{1}{x-3}$And we need $g(x) \geq \frac{1}{2}$ (since $f$ requires $2 \cdot g(x) - 1 \geq 0$). This constrains $x$ to a finite interval $(3, 5]$.
-- For $g \circ f$: the input to $g$ is $f(x) = \sqrt{2x-1}$And we need $f(x) \neq 3$. Since $f(x) \geq 0$ for all $x$ in its domain, we only exclude $x = 5$. The domain is almost the entire domain of $f$.
+- For $f \circ g$: the input to $f$ is $g(x) = \frac{1}{x-3}$And we need $g(x) \geq \frac{1}{2}$
+  (since $f$ requires $2 \cdot g(x) - 1 \geq 0$). This constrains $x$ to a finite interval $(3, 5]$.
+- For $g \circ f$: the input to $g$ is $f(x) = \sqrt{2x-1}$And we need $f(x) \neq 3$. Since
+  $f(x) \geq 0$ for all $x$ in its domain, we only exclude $x = 5$. The domain is almost the entire
+  domain of $f$.
 
-The key difference is that $f \circ g$ requires the output of $g$ to fall within the domain of $f$ (which is $[1/2, \infty)$), while $g \circ f$ requires the output of $f$ to avoid the single excluded value of $g$ (which is $3$). The former is much more restrictive.
+The key difference is that $f \circ g$ requires the output of $g$ to fall within the domain of $f$
+(which is $[1/2, \infty)$), while $g \circ f$ requires the output of $f$ to avoid the single
+excluded value of $g$ (which is $3$). The former is much more restrictive.
 
 ---
 
@@ -374,12 +386,12 @@ $$= 1 + 3x + 6x^2 + 10x^3 + 15x^4 + 21x^5 + \cdots$$
 We need all pairs $(r, s)$ with $r + s = 4$ where $0 \leq r \leq 5$ and $s \geq 0$:
 
 | $r$ | Coefficient from numerator | $s$ | Coefficient from denominator | Product |
-|-----|---------------------------|-----|---------------------------|---------|
-| 0 | 1 | 4 | 15 | 15 |
-| 1 | 10 | 3 | 10 | 100 |
-| 2 | 40 | 2 | 6 | 240 |
-| 3 | 80 | 1 | 3 | 240 |
-| 4 | 80 | 0 | 1 | 80 |
+| --- | -------------------------- | --- | ---------------------------- | ------- |
+| 0   | 1                          | 4   | 15                           | 15      |
+| 1   | 10                         | 3   | 10                           | 100     |
+| 2   | 40                         | 2   | 6                            | 240     |
+| 3   | 80                         | 1   | 3                            | 240     |
+| 4   | 80                         | 0   | 1                            | 80      |
 
 Coefficient of $x^4$: $15 + 100 + 240 + 240 + 80 = 675$.
 
@@ -391,15 +403,16 @@ Coefficient of $x^4$: $15 + 100 + 240 + 240 + 80 = 675$.
 
 Let $\theta = 3x$. Since $x \in [0, 2\pi)$We have $\theta \in [0, 6\pi)$.
 
-$\cos\theta = \frac{1}{2}$ gives $\theta = \frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆ + 2n\pi$ or $\theta = \frac◆LB◆5\pi◆RB◆◆LB◆3◆RB◆ + 2n\pi$ for $n \in \mathbb{Z}$.
+$\cos\theta = \frac{1}{2}$ gives $\theta = \frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆ + 2n\pi$ or
+$\theta = \frac◆LB◆5\pi◆RB◆◆LB◆3◆RB◆ + 2n\pi$ for $n \in \mathbb{Z}$.
 
 Systematically listing all $\theta \in [0, 6\pi)$:
 
 | $n$ | $\theta = \frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆ + 2n\pi$ | $\theta = \frac◆LB◆5\pi◆RB◆◆LB◆3◆RB◆ + 2n\pi$ |
-|-----|------|------|
-| 0 | $\frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆$ | $\frac◆LB◆5\pi◆RB◆◆LB◆3◆RB◆$ |
-| 1 | $\frac◆LB◆7\pi◆RB◆◆LB◆3◆RB◆$ | $\frac◆LB◆11\pi◆RB◆◆LB◆3◆RB◆$ |
-| 2 | $\frac◆LB◆13\pi◆RB◆◆LB◆3◆RB◆$ | $\frac◆LB◆17\pi◆RB◆◆LB◆3◆RB◆$ |
+| --- | -------------------------------------------- | --------------------------------------------- |
+| 0   | $\frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆$                  | $\frac◆LB◆5\pi◆RB◆◆LB◆3◆RB◆$                  |
+| 1   | $\frac◆LB◆7\pi◆RB◆◆LB◆3◆RB◆$                 | $\frac◆LB◆11\pi◆RB◆◆LB◆3◆RB◆$                 |
+| 2   | $\frac◆LB◆13\pi◆RB◆◆LB◆3◆RB◆$                | $\frac◆LB◆17\pi◆RB◆◆LB◆3◆RB◆$                 |
 
 All six values are in $[0, 6\pi)$ since $\frac◆LB◆17\pi◆RB◆◆LB◆3◆RB◆ = 5\frac{2}{3}\pi \lt 6\pi$.
 
@@ -435,11 +448,16 @@ Let $u = e^x$ ($u \gt 0$):
 
 $$u^2 - 5u + 5 = 0 \implies u = \frac◆LB◆5 \pm \sqrt{25 - 20}◆RB◆◆LB◆2◆RB◆ = \frac◆LB◆5 \pm \sqrt{5}◆RB◆◆LB◆2◆RB◆$$
 
-Both roots are positive: $\frac◆LB◆5 - \sqrt{5}◆RB◆◆LB◆2◆RB◆ \approx 1.382 \gt 0$ and $\frac◆LB◆5 + \sqrt{5}◆RB◆◆LB◆2◆RB◆ \approx 3.618 \gt 0$.
+Both roots are positive: $\frac◆LB◆5 - \sqrt{5}◆RB◆◆LB◆2◆RB◆ \approx 1.382 \gt 0$ and
+$\frac◆LB◆5 + \sqrt{5}◆RB◆◆LB◆2◆RB◆ \approx 3.618 \gt 0$.
 
 $$x = \ln\!\left(\frac◆LB◆5 + \sqrt{5}◆RB◆◆LB◆2◆RB◆\right) \quad \text{or} \quad x = \ln\!\left(\frac◆LB◆5 - \sqrt{5}◆RB◆◆LB◆2◆RB◆\right)$$
 
-**(c)** The check is necessary because if a root of the quadratic in $u$ were negative or zero, taking $\ln u$ would be undefined. For example, if the equation were $e^{2x} - 3e^x - 4 = 0$Then $u = -1$ or $u = 4$And $u = -1$ would give $e^x = -1$Which has no real solution. The substitution $u = e^x$ implicitly constrains $u \gt 0$And students who forget this constraint accept spurious solutions.
+**(c)** The check is necessary because if a root of the quadratic in $u$ were negative or zero,
+taking $\ln u$ would be undefined. For example, if the equation were $e^{2x} - 3e^x - 4 = 0$Then
+$u = -1$ or $u = 4$And $u = -1$ would give $e^x = -1$Which has no real solution. The substitution
+$u = e^x$ implicitly constrains $u \gt 0$And students who forget this constraint accept spurious
+solutions.
 
 ---
 
@@ -461,7 +479,9 @@ Stationary point: $(1, 0)$.
 
 **(c)** $\frac{d^2y}{dx^2}\big\rvert_{x=1} = 12(0)^2 = 0$.
 
-The student claims this is a point of inflection. This reasoning is incorrect because $\frac{d^2y}{dx^2} = 0$ is necessary but not sufficient for a point of inflection. We must examine the sign change of $\frac{dy}{dx}$ either side of $x = 1$.
+The student claims this is a point of inflection. This reasoning is incorrect because
+$\frac{d^2y}{dx^2} = 0$ is necessary but not sufficient for a point of inflection. We must examine
+the sign change of $\frac{dy}{dx}$ either side of $x = 1$.
 
 $\frac{dy}{dx} = 4(x-1)^3$.
 
@@ -469,19 +489,23 @@ For $x \lt 1$ (e.g. $x = 0$): $\frac{dy}{dx} = 4(-1)^3 = -4 \lt 0$.
 
 For $x \gt 1$ (e.g. $x = 2$): $\frac{dy}{dx} = 4(1)^3 = 4 \gt 0$.
 
-The gradient changes from negative to positive, so $x = 1$ is a **local minimum**, not a point of inflection.
+The gradient changes from negative to positive, so $x = 1$ is a **local minimum**, not a point of
+inflection.
 
-The second derivative test is inconclusive when $\frac{d^2y}{dx^2} = 0$; the first derivative test (sign change analysis) is the definitive method.
+The second derivative test is inconclusive when $\frac{d^2y}{dx^2} = 0$; the first derivative test
+(sign change analysis) is the definitive method.
 
 **(d)** $y = x^4 - 4x^3 + 6x^2 - 4x + 1 = (x-1)^4$.
 
-This is immediately obvious because $(x-1)^4 \geq 0$ for all $x$With equality only at $x = 1$. So $(1, 0)$ is a global (and local) minimum.
+This is immediately obvious because $(x-1)^4 \geq 0$ for all $x$With equality only at $x = 1$. So
+$(1, 0)$ is a global (and local) minimum.
 
 ---
 
 ### Q11 — Solution
 
-**(a)** By LIATE (Logarithmic, Inverse trig, Algebraic, Trigonometric, Exponential), $\ln x$ is prioritised for $u$.
+**(a)** By LIATE (Logarithmic, Inverse trig, Algebraic, Trigonometric, Exponential), $\ln x$ is
+prioritised for $u$.
 
 Set $u = \ln x$$\frac{dv}{dx} = x^3$.
 
@@ -497,9 +521,12 @@ $$= \frac{x^4}{16}(4\ln x - 1) + C$$
 
 **(b)** If the student chooses $u = x^3$ and $\frac{dv}{dx} = \ln x$:
 
-$du = 3x^2\, dx$But $v = \int \ln x\, dx = x\ln x - x$ (which itself requires integration by parts to find).
+$du = 3x^2\, dx$But $v = \int \ln x\, dx = x\ln x - x$ (which itself requires integration by parts
+to find).
 
-This produces an equation involving the original integral on both sides, which eventually works but requires more steps and an additional integration by parts just to find $v$. The LIATE choice is more efficient.
+This produces an equation involving the original integral on both sides, which eventually works but
+requires more steps and an additional integration by parts just to find $v$. The LIATE choice is
+more efficient.
 
 **(c)** $\int_1^e x^3\ln x\, dx = \left[\frac{x^4}{16}(4\ln x - 1)\right]_1^e$
 
@@ -513,7 +540,8 @@ $$= \frac{3e^4}{16} - \left(-\frac{1}{16}\right) = \frac{3e^4 + 1}{16}$$
 
 ### Q12 — Solution
 
-**(a)** $\mathbf{d}_1$ and $\mathbf{d}_2$ are not proportional for any value of $a$So the lines are never parallel.
+**(a)** $\mathbf{d}_1$ and $\mathbf{d}_2$ are not proportional for any value of $a$So the lines are
+never parallel.
 
 For intersection, there exist $s, t$ such that:
 
@@ -525,9 +553,11 @@ From the third equation: $3 + s = 2(2s - 3) = 4s - 6 \implies 3s = 9 \implies s 
 
 Then $t = 2(3) - 3 = 3$.
 
-Substituting into the second equation: $2 - 3 = 1 + 3a \implies -1 = 1 + 3a \implies a = -\frac{2}{3}$.
+Substituting into the second equation:
+$2 - 3 = 1 + 3a \implies -1 = 1 + 3a \implies a = -\frac{2}{3}$.
 
-The lines intersect when $a = -\frac{2}{3}$At the point $\begin{pmatrix} 7 \\ -1 \\ 6 \end{pmatrix}$.
+The lines intersect when $a = -\frac{2}{3}$At the point
+$\begin{pmatrix} 7 \\ -1 \\ 6 \end{pmatrix}$.
 
 **(b)** For $a = 3$: the lines are not parallel. Check for intersection:
 
@@ -557,15 +587,18 @@ $$d = \frac◆LB◆\lvert -3 \rvert◆RB◆◆LB◆\sqrt{19}◆RB◆ = \frac◆L
 
 ### Q13 — Solution
 
-**(a)** "$x \gt 2$" implies "$x^2 \gt 4$": if $x \gt 2$ then $x^2 \gt 4$. However, "$x \gt 2$" is not necessary: $x = -3$ gives $x^2 = 9 \gt 4$But $x \lt 2$.
+**(a)** "$x \gt 2$" implies "$x^2 \gt 4$": if $x \gt 2$ then $x^2 \gt 4$. However, "$x \gt 2$" is
+not necessary: $x = -3$ gives $x^2 = 9 \gt 4$But $x \lt 2$.
 
 Answer: **sufficient but not necessary**.
 
-**(b)** If $n$ is prime and $n \neq 2$Then $n$ is odd. But $n = 2$ is prime and even. Also, "odd" does not imply "prime" (counterexample: 9).
+**(b)** If $n$ is prime and $n \neq 2$Then $n$ is odd. But $n = 2$ is prime and even. Also, "odd"
+does not imply "prime" (counterexample: 9).
 
 Answer: **neither necessary nor sufficient**.
 
-**(c)** Since $a^2 \geq 0$ and $b^2 \geq 0$The sum $a^2 + b^2 = 0$ only when both are zero. So $a^2 + b^2 = 0 \iff a = 0 \text{ and } b = 0$.
+**(c)** Since $a^2 \geq 0$ and $b^2 \geq 0$The sum $a^2 + b^2 = 0$ only when both are zero. So
+$a^2 + b^2 = 0 \iff a = 0 \text{ and } b = 0$.
 
 Answer: **both necessary and sufficient**.
 
@@ -579,7 +612,8 @@ $f\!\left(-\sqrt{2/3}\right) \approx 3.09$ (local maximum).
 
 $f\!\left(\sqrt{2/3}\right) \approx 0.91$ (local minimum).
 
-Since the local minimum is positive ($\approx 0.91$), the graph crosses the $x$-axis only once (to the left of the local maximum). So there is exactly one real root.
+Since the local minimum is positive ($\approx 0.91$), the graph crosses the $x$-axis only once (to
+the left of the local maximum). So there is exactly one real root.
 
 **(b)** $f'(x) = 3x^2 - 2$. Newton-Raphson: $x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)}$.
 
@@ -597,26 +631,31 @@ $$x_3 = 0 - \frac{2}{-2} = 1$$
 
 The iteration cycles: $0, 1, 0, 1, 0, 1, \ldots$
 
-**(c)** The iteration fails because at $x_0 = 0$The tangent to the curve has gradient $f'(0) = -2$Which points towards $x = 1$ rather than towards the root at $x \approx -1.77$. The Newton-Raphson method overshoots because the tangent at $x = 0$ intersects the $x$-axis at $x = 1$Which is on the opposite side of the local minimum at $x \approx 0.816$ where $f \approx 0.91 \gt 0$Creating a barrier that the iteration cannot cross. The iteration gets trapped in a 2-cycle between $x = 0$ and $x = 1$.
+**(c)** The iteration fails because at $x_0 = 0$The tangent to the curve has gradient
+$f'(0) = -2$Which points towards $x = 1$ rather than towards the root at $x \approx -1.77$. The
+Newton-Raphson method overshoots because the tangent at $x = 0$ intersects the $x$-axis at
+$x = 1$Which is on the opposite side of the local minimum at $x \approx 0.816$ where
+$f \approx 0.91 \gt 0$Creating a barrier that the iteration cannot cross. The iteration gets trapped
+in a 2-cycle between $x = 0$ and $x = 1$.
 
 ---
 
 ## Marking Guide
 
-| Question | Topic | Marks | Key Skills Tested |
-|----------|-------|------:|-------------------|
-| Q1 | Algebraic Expressions | 7 | Fractional/negative indices, difference of cubes, algebraic manipulation |
-| Q2 | Quadratics | 7 | Vieta's formulas, algebraic fractions, symmetric expressions |
-| Q3 | Equations and Inequalities | 7 | Rational inequalities, sign analysis, critical values, excluded points |
-| Q4 | Coordinates and Geometry | 7 | Circle-line tangency, discriminant method, geometric verification |
-| Q5 | Functions | 7 | Composite function domains, range of inner function, domain restrictions |
-| Q6 | Sequences and Series | 7 | Partial fractions, telescoping series, index shifting, limits |
-| Q7 | Binomial Expansion | 7 | General binomial theorem, combining expansions, coefficient extraction |
-| Q8 | Trigonometry | 8 | Periodicity of $\cos(3x)$Systematic solution enumeration, sum of solutions |
-| Q9 | Exponentials and Logarithms | 8 | Hidden quadratic in $e^x$Positivity constraint on substitution |
-| Q10 | Differentiation | 9 | Stationary points, second derivative test inconclusiveness, first derivative test, $(x-1)^4$ recognition |
-| Q11 | Integration | 9 | LIATE rule for integration by parts, definite integration with $e$ |
-| Q12 | Vectors | 7 | Skew/parallel/intersecting lines, cross product, shortest distance formula |
-| Q13 | Proof | 5 | Necessary vs sufficient conditions, counterexamples, logical equivalence |
-| Q14 | Numerical Methods | 5 | Newton-Raphson divergence, 2-cycle behaviour, geometric interpretation of failure |
-| **Total** | | **100** | |
+| Question  | Topic                       |   Marks | Key Skills Tested                                                                                        |
+| --------- | --------------------------- | ------: | -------------------------------------------------------------------------------------------------------- |
+| Q1        | Algebraic Expressions       |       7 | Fractional/negative indices, difference of cubes, algebraic manipulation                                 |
+| Q2        | Quadratics                  |       7 | Vieta's formulas, algebraic fractions, symmetric expressions                                             |
+| Q3        | Equations and Inequalities  |       7 | Rational inequalities, sign analysis, critical values, excluded points                                   |
+| Q4        | Coordinates and Geometry    |       7 | Circle-line tangency, discriminant method, geometric verification                                        |
+| Q5        | Functions                   |       7 | Composite function domains, range of inner function, domain restrictions                                 |
+| Q6        | Sequences and Series        |       7 | Partial fractions, telescoping series, index shifting, limits                                            |
+| Q7        | Binomial Expansion          |       7 | General binomial theorem, combining expansions, coefficient extraction                                   |
+| Q8        | Trigonometry                |       8 | Periodicity of $\cos(3x)$Systematic solution enumeration, sum of solutions                               |
+| Q9        | Exponentials and Logarithms |       8 | Hidden quadratic in $e^x$Positivity constraint on substitution                                           |
+| Q10       | Differentiation             |       9 | Stationary points, second derivative test inconclusiveness, first derivative test, $(x-1)^4$ recognition |
+| Q11       | Integration                 |       9 | LIATE rule for integration by parts, definite integration with $e$                                       |
+| Q12       | Vectors                     |       7 | Skew/parallel/intersecting lines, cross product, shortest distance formula                               |
+| Q13       | Proof                       |       5 | Necessary vs sufficient conditions, counterexamples, logical equivalence                                 |
+| Q14       | Numerical Methods           |       5 | Newton-Raphson divergence, 2-cycle behaviour, geometric interpretation of failure                        |
+| **Total** |                             | **100** |                                                                                                          |

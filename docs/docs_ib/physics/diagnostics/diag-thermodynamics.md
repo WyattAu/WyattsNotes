@@ -1,6 +1,8 @@
 ---
-title: "Thermodynamics -- Diagnostic Tests"
-description: "Hardest IB Physics thermodynamics diagnostic tests covering ideal gas law limitations, first law sign conventions, isothermal vs adiabatic processes, and"
+title: 'Thermodynamics -- Diagnostic Tests'
+description:
+  'Hardest IB Physics thermodynamics diagnostic tests covering ideal gas law limitations, first law
+  sign conventions, isothermal vs adiabatic processes, and'
 slug: diag-thermodynamics
 hide_table_of_contents: true
 ---
@@ -13,11 +15,15 @@ hide_table_of_contents: true
 
 **Question:**
 
-(a) Calculate the volume occupied by $2.0\,\text{mol}$ of an ideal gas at $T = 300\,\text{K}$ and $P = 100\,\text{atm}$. Compare this with the actual volume using the van der Waals equation with $a = 0.137\,\text{Pa}\,\text{m}^6\,\text{mol}^{-2}$ and $b = 3.87 \times 10^{-5}\,\text{m}^3\,\text{mol}^{-1}$ (values for nitrogen).
+(a) Calculate the volume occupied by $2.0\,\text{mol}$ of an ideal gas at $T = 300\,\text{K}$ and
+$P = 100\,\text{atm}$. Compare this with the actual volume using the van der Waals equation with
+$a = 0.137\,\text{Pa}\,\text{m}^6\,\text{mol}^{-2}$ and
+$b = 3.87 \times 10^{-5}\,\text{m}^3\,\text{mol}^{-1}$ (values for nitrogen).
 
 (b) Explain under what conditions a real gas behaves most like an ideal gas and why.
 
-(c) A student claims that "at very low temperatures, the ideal gas law still applies because it is a fundamental law of nature." Refute this claim.
+(c) A student claims that "at very low temperatures, the ideal gas law still applies because it is a
+fundamental law of nature." Refute this claim.
 
 **Solution:**
 
@@ -29,26 +35,37 @@ $$V = \frac{4988.4}{1.013 \times 10^7} = 4.92 \times 10^{-4}\,\text{m}^3 = 0.492
 
 **Van der Waals equation:** $\left(P + \frac{an^2}{V^2}\right)(V - nb) = nRT$
 
-This must be solved numerically. Substituting $P = 1.013 \times 10^7\,\text{Pa}$$n = 2.0$$T = 300\,\text{K}$:
+This must be solved numerically. Substituting
+$P = 1.013 \times 10^7\,\text{Pa}$$n = 2.0$$T = 300\,\text{K}$:
 
 $$\left(1.013 \times 10^7 + \frac{0.137 \times 4.0}{V^2}\right)(V - 7.74 \times 10^{-5}) = 4988.4$$
 
 By iterative solution, $V \approx 4.60 \times 10^{-4}\,\text{m}^3 = 0.460\,\text{L}$.
 
-The ideal gas overestimates the volume by about $7\%$ at $100\,\text{atm}$. The discrepancy arises because at high pressure, the volume of the molecules themselves ($nb$ term) is not negligible compared to the total volume, and the intermolecular attractions ($an^2/V^2$ term) reduce the effective pressure.
+The ideal gas overestimates the volume by about $7\%$ at $100\,\text{atm}$. The discrepancy arises
+because at high pressure, the volume of the molecules themselves ($nb$ term) is not negligible
+compared to the total volume, and the intermolecular attractions ($an^2/V^2$ term) reduce the
+effective pressure.
 
 (b) A real gas behaves most like an ideal gas when:
-- **Low pressure**: molecules are far apart, so intermolecular forces are negligible and molecular volume is insignificant
-- **High temperature**: molecules have high kinetic energy, so intermolecular potential energy is negligible compared to kinetic energy
 
-The ideal gas model assumes: (1) molecules are point masses with zero volume, (2) no intermolecular forces except during elastic collisions.
+- **Low pressure**: molecules are far apart, so intermolecular forces are negligible and molecular
+  volume is insignificant
+- **High temperature**: molecules have high kinetic energy, so intermolecular potential energy is
+  negligible compared to kinetic energy
 
-(c) The ideal gas law is **not** a fundamental law of nature -- it is a model that works well under specific conditions (low pressure, high temperature). At very low temperatures:
+The ideal gas model assumes: (1) molecules are point masses with zero volume, (2) no intermolecular
+forces except during elastic collisions.
+
+(c) The ideal gas law is **not** a fundamental law of nature -- it is a model that works well under
+specific conditions (low pressure, high temperature). At very low temperatures:
+
 - Gases liquefy and solidify, which the ideal gas law cannot predict
 - Intermolecular forces become dominant
 - The gas may no longer exist as a gas phase
 
-The ideal gas law is an approximation valid when intermolecular forces and molecular volume are negligible.
+The ideal gas law is an approximation valid when intermolecular forces and molecular volume are
+negligible.
 
 ---
 
@@ -58,7 +75,9 @@ The ideal gas law is an approximation valid when intermolecular forces and molec
 
 A gas undergoes three processes:
 
-Process A: The gas expands from $V_1 = 2.0 \times 10^{-3}\,\text{m}^3$ to $V_2 = 5.0 \times 10^{-3}\,\text{m}^3$ at constant pressure $P = 2.0 \times 10^5\,\text{Pa}$. During this process, $400\,\text{J}$ of heat is supplied to the gas.
+Process A: The gas expands from $V_1 = 2.0 \times 10^{-3}\,\text{m}^3$ to
+$V_2 = 5.0 \times 10^{-3}\,\text{m}^3$ at constant pressure $P = 2.0 \times 10^5\,\text{Pa}$. During
+this process, $400\,\text{J}$ of heat is supplied to the gas.
 
 Process B: The gas is compressed isothermally from $V_2$ back to $V_1$.
 
@@ -74,13 +93,16 @@ Process C: The gas is heated at constant volume from $V_1$ back to its original 
 
 (a) **Process A (isobaric expansion):**
 
-Work done by the gas: $W = P\Delta V = 2.0 \times 10^5 \times (5.0 - 2.0) \times 10^{-3} = 2.0 \times 10^5 \times 3.0 \times 10^{-3} = 600\,\text{J}$
+Work done by the gas:
+$W = P\Delta V = 2.0 \times 10^5 \times (5.0 - 2.0) \times 10^{-3} = 2.0 \times 10^5 \times 3.0 \times 10^{-3} = 600\,\text{J}$
 
 First law: $\Delta U = Q - W$ (using the convention where $W$ is work done **by** the gas)
 
 $\Delta U = 400 - 600 = -200\,\text{J}$
 
-The internal energy decreases by $200\,\text{J}$ even though heat is added. This is counterintuitive: the gas does more work than the heat supplied, so it must draw on its internal energy.
+The internal energy decreases by $200\,\text{J}$ even though heat is added. This is
+counterintuitive: the gas does more work than the heat supplied, so it must draw on its internal
+energy.
 
 (b) **Process B (isothermal compression):**
 
@@ -92,15 +114,19 @@ Work done on the gas (compression):
 
 $$W_{\text{on}} = nRT\ln\frac{V_2}{V_1} = P_2V_2\ln\frac{V_2}{V_1}$$
 
-We need $P_2$ at the start of process B. From process A, the final state has $V_2 = 5.0 \times 10^{-3}\,\text{m}^3$ and $P = 2.0 \times 10^5\,\text{Pa}$. We need the temperature:
+We need $P_2$ at the start of process B. From process A, the final state has
+$V_2 = 5.0 \times 10^{-3}\,\text{m}^3$ and $P = 2.0 \times 10^5\,\text{Pa}$. We need the
+temperature:
 
-$T = PV/(nR)$. From the ideal gas law, $nR = P_1V_1/T_1$. But we need to know the initial temperature.
+$T = PV/(nR)$. From the ideal gas law, $nR = P_1V_1/T_1$. But we need to know the initial
+temperature.
 
 Alternatively, for an ideal gas with $\Delta U = -200\,\text{J}$ and $\Delta T$ corresponding:
 
 $\Delta U = nC_v\Delta T = -200\,\text{J}$
 
-We don't have enough information for a numerical answer without $n$ or $C_v$. Let's use $PV = nRT$ at the start of process B:
+We don't have enough information for a numerical answer without $n$ or $C_v$. Let's use $PV = nRT$
+at the start of process B:
 
 $T_B = P_B V_B/(nR) = 2.0 \times 10^5 \times 5.0 \times 10^{-3}/(nR)$
 
@@ -110,7 +136,8 @@ $$W_{\text{on}} = nRT_B\ln(V_2/V_1) = P_BV_B\ln(5.0/2.0) = 2.0 \times 10^5 \time
 
 $$= 1000 \times 0.916 = 916\,\text{J}$$
 
-Since $\Delta U = 0$: $Q = W = 916\,\text{J}$ of heat must be **removed** from the gas (negative $Q$ in the first law convention).
+Since $\Delta U = 0$: $Q = W = 916\,\text{J}$ of heat must be **removed** from the gas (negative $Q$
+in the first law convention).
 
 (c) **Process C (isochoric heating):**
 
@@ -136,13 +163,15 @@ Check: $Q_{\text{net}} = 400 - 916 + 200 = -316\,\text{J} = W_{\text{net}}$. Con
 
 **Question:**
 
-A Carnot engine operates between a hot reservoir at $T_H = 600\,\text{K}$ and a cold reservoir at $T_C = 300\,\text{K}$. In each cycle, it absorbs $Q_H = 1200\,\text{J}$ from the hot reservoir.
+A Carnot engine operates between a hot reservoir at $T_H = 600\,\text{K}$ and a cold reservoir at
+$T_C = 300\,\text{K}$. In each cycle, it absorbs $Q_H = 1200\,\text{J}$ from the hot reservoir.
 
 (a) Calculate the efficiency, work output per cycle, and heat rejected to the cold reservoir.
 
 (b) Calculate the entropy change of the universe per cycle.
 
-(c) A student claims that a heat engine can be $100\%$ efficient if the cold reservoir is at absolute zero. Discuss whether this is theoretically possible and practically achievable.
+(c) A student claims that a heat engine can be $100\%$ efficient if the cold reservoir is at
+absolute zero. Discuss whether this is theoretically possible and practically achievable.
 
 **Solution:**
 
@@ -152,17 +181,25 @@ Work per cycle: $W = \eta Q_H = 0.50 \times 1200 = 600\,\text{J}$
 
 Heat rejected: $Q_C = Q_H - W = 1200 - 600 = 600\,\text{J}$
 
-(b) Entropy change of the hot reservoir: $\Delta S_H = -Q_H/T_H = -1200/600 = -2.0\,\text{J}\,\text{K}^{-1}$
+(b) Entropy change of the hot reservoir:
+$\Delta S_H = -Q_H/T_H = -1200/600 = -2.0\,\text{J}\,\text{K}^{-1}$
 
-Entropy change of the cold reservoir: $\Delta S_C = Q_C/T_C = 600/300 = +2.0\,\text{J}\,\text{K}^{-1}$
+Entropy change of the cold reservoir:
+$\Delta S_C = Q_C/T_C = 600/300 = +2.0\,\text{J}\,\text{K}^{-1}$
 
 Total entropy change of the universe: $\Delta S_{\text{univ}} = -2.0 + 2.0 = 0$
 
-This is zero, as expected for a reversible (Carnot) cycle. A real engine would have $\Delta S_{\text{univ}} \gt 0$.
+This is zero, as expected for a reversible (Carnot) cycle. A real engine would have
+$\Delta S_{\text{univ}} \gt 0$.
 
-(c) Theoretically, as $T_C \to 0$: $\eta = 1 - T_C/T_H \to 1 = 100\%$. The third law of thermodynamics states that absolute zero cannot be reached by any finite number of processes, so $T_C = 0\,\text{K}$ is unattainable. Practically, even if it were approachable, no process can be perfectly reversible, so $100\%$ efficiency is impossible.
+(c) Theoretically, as $T_C \to 0$: $\eta = 1 - T_C/T_H \to 1 = 100\%$. The third law of
+thermodynamics states that absolute zero cannot be reached by any finite number of processes, so
+$T_C = 0\,\text{K}$ is unattainable. Practically, even if it were approachable, no process can be
+perfectly reversible, so $100\%$ efficiency is impossible.
 
-However, the **theoretical** limit of efficiency does approach $100\%$ as $T_C \to 0$Which is why reaching very low temperatures requires increasingly sophisticated and energy-intensive cooling methods.
+However, the **theoretical** limit of efficiency does approach $100\%$ as $T_C \to 0$Which is why
+reaching very low temperatures requires increasingly sophisticated and energy-intensive cooling
+methods.
 
 ## Integration Tests
 
@@ -170,17 +207,20 @@ However, the **theoretical** limit of efficiency does approach $100\%$ as $T_C \
 
 **Question:**
 
-$3.0\,\text{mol}$ of a monatomic ideal gas ($\gamma = 5/3$) initially at $T_1 = 400\,\text{K}$ and $P_1 = 4.0 \times 10^5\,\text{Pa}$ expands adiabatically until its volume doubles.
+$3.0\,\text{mol}$ of a monatomic ideal gas ($\gamma = 5/3$) initially at $T_1 = 400\,\text{K}$ and
+$P_1 = 4.0 \times 10^5\,\text{Pa}$ expands adiabatically until its volume doubles.
 
 (a) Calculate the final temperature and pressure.
 
 (b) Calculate the work done by the gas.
 
-(c) If the same gas were to expand isothermally from the same initial state to double its volume, calculate the work done and compare with part (b).
+(c) If the same gas were to expand isothermally from the same initial state to double its volume,
+calculate the work done and compare with part (b).
 
 **Solution:**
 
-(a) Initial volume: $V_1 = nRT_1/P_1 = 3.0 \times 8.314 \times 400/(4.0 \times 10^5) = 9976.8/4.0 \times 10^5 = 2.494 \times 10^{-2}\,\text{m}^3$
+(a) Initial volume:
+$V_1 = nRT_1/P_1 = 3.0 \times 8.314 \times 400/(4.0 \times 10^5) = 9976.8/4.0 \times 10^5 = 2.494 \times 10^{-2}\,\text{m}^3$
 
 Final volume: $V_2 = 2V_1 = 4.989 \times 10^{-2}\,\text{m}^3$
 
@@ -206,7 +246,10 @@ $$W = nRT_1\ln\frac{V_2}{V_1} = 3.0 \times 8.314 \times 400 \times \ln 2$$
 
 $$= 9976.8 \times 0.6931 = 6915\,\text{J}$$
 
-The isothermal work ($6915\,\text{J}$) is greater than the adiabatic work ($5537\,\text{J}$). This is because in the adiabatic case, the gas cools as it expands, reducing the pressure and therefore the work output. In the isothermal case, heat flows in to maintain the temperature, keeping the pressure higher and allowing more work.
+The isothermal work ($6915\,\text{J}$) is greater than the adiabatic work ($5537\,\text{J}$). This
+is because in the adiabatic case, the gas cools as it expands, reducing the pressure and therefore
+the work output. In the isothermal case, heat flows in to maintain the temperature, keeping the
+pressure higher and allowing more work.
 
 ---
 
@@ -215,7 +258,9 @@ The isothermal work ($6915\,\text{J}$) is greater than the adiabatic work ($5537
 **Question:**
 
 A gas undergoes a cycle consisting of three processes:
-- 1 to 2: Isobaric expansion at $P = 3.0 \times 10^5\,\text{Pa}$$V$ increases from $1.0 \times 10^{-3}\,\text{m}^3$ to $3.0 \times 10^{-3}\,\text{m}^3$
+
+- 1 to 2: Isobaric expansion at $P = 3.0 \times 10^5\,\text{Pa}$$V$ increases from
+  $1.0 \times 10^{-3}\,\text{m}^3$ to $3.0 \times 10^{-3}\,\text{m}^3$
 - 2 to 3: Isochoric cooling, $P$ decreases to $1.0 \times 10^5\,\text{Pa}$
 - 3 to 1: Isothermal compression back to state 1
 
@@ -223,7 +268,8 @@ A gas undergoes a cycle consisting of three processes:
 
 (b) Calculate the efficiency of the cycle.
 
-(c) Calculate the maximum possible efficiency for an engine operating between the maximum and minimum temperatures of this cycle.
+(c) Calculate the maximum possible efficiency for an engine operating between the maximum and
+minimum temperatures of this cycle.
 
 **Solution:**
 
@@ -231,13 +277,16 @@ A gas undergoes a cycle consisting of three processes:
 
 $W_{12} = P\Delta V = 3.0 \times 10^5 \times (3.0 - 1.0) \times 10^{-3} = 600\,\text{J}$
 
-Temperature at state 1: $T_1 = P_1V_1/(nR) = 3.0 \times 10^5 \times 1.0 \times 10^{-3}/(nR) = 300/(nR)$
+Temperature at state 1:
+$T_1 = P_1V_1/(nR) = 3.0 \times 10^5 \times 1.0 \times 10^{-3}/(nR) = 300/(nR)$
 
-Temperature at state 2: $T_2 = P_2V_2/(nR) = 3.0 \times 10^5 \times 3.0 \times 10^{-3}/(nR) = 900/(nR)$
+Temperature at state 2:
+$T_2 = P_2V_2/(nR) = 3.0 \times 10^5 \times 3.0 \times 10^{-3}/(nR) = 900/(nR)$
 
 Since $T_2 = 3T_1$And $\Delta U = nC_v(T_2 - T_1)$:
 
-Without knowing $n$ or the gas type, let $nR = 300/T_1$So $nR = 300/T_1$. Let $T_1$ be the reference. We can work in ratios.
+Without knowing $n$ or the gas type, let $nR = 300/T_1$So $nR = 300/T_1$. Let $T_1$ be the
+reference. We can work in ratios.
 
 $\Delta U_{12} = nC_v(T_2 - T_1) = nC_v \times 2T_1$
 
@@ -247,7 +296,8 @@ For a monatomic ideal gas: $C_v = 3R/2$$C_p = 5R/2$.
 
 $nR = P_1V_1/T_1 = 300/T_1$So $n = 300/(RT_1)$.
 
-Let us use specific values. Let $T_1 = 100\,\text{K}$ (choosing for convenience, the ratios will be the same).
+Let us use specific values. Let $T_1 = 100\,\text{K}$ (choosing for convenience, the ratios will be
+the same).
 
 Then $nR = 3.0$$n = 3.0/8.314 = 0.361\,\text{mol}$.
 
@@ -289,7 +339,8 @@ Minimum temperature: $T_{\min} = T_1 = T_3 = 100\,\text{K}$
 
 Carnot efficiency: $\eta_{\text{Carnot}} = 1 - T_{\min}/T_{\max} = 1 - 100/300 = 2/3 = 67\%$
 
-The actual cycle efficiency ($18\%$) is much lower than the Carnot limit ($67\%$), as expected for a real cycle with irreversible processes.
+The actual cycle efficiency ($18\%$) is much lower than the Carnot limit ($67\%$), as expected for a
+real cycle with irreversible processes.
 
 ---
 
@@ -297,32 +348,42 @@ The actual cycle efficiency ($18\%$) is much lower than the Carnot limit ($67\%$
 
 **Question:**
 
-A sealed container of volume $V = 0.010\,\text{m}^3$ contains $n = 0.40\,\text{mol}$ of an ideal monatomic gas at temperature $T = 350\,\text{K}$.
+A sealed container of volume $V = 0.010\,\text{m}^3$ contains $n = 0.40\,\text{mol}$ of an ideal
+monatomic gas at temperature $T = 350\,\text{K}$.
 
 (a) Calculate the pressure using the ideal gas law.
 
-(b) Using kinetic theory, calculate the root-mean-square speed of the gas molecules and the average translational kinetic energy per molecule.
+(b) Using kinetic theory, calculate the root-mean-square speed of the gas molecules and the average
+translational kinetic energy per molecule.
 
-(c) The container is heated to $T' = 700\,\text{K}$. Calculate the new pressure and the change in the total internal energy. The mass of one gas molecule (argon) is $m = 6.63 \times 10^{-26}\,\text{kg}$.
+(c) The container is heated to $T' = 700\,\text{K}$. Calculate the new pressure and the change in
+the total internal energy. The mass of one gas molecule (argon) is
+$m = 6.63 \times 10^{-26}\,\text{kg}$.
 
 **Solution:**
 
 (a) $P = nRT/V = 0.40 \times 8.314 \times 350/0.010 = 1164\,\text{Pa}$
 
-(b) RMS speed: $v_{\text{rms}} = \sqrt{\frac{3RT}{M}}$ where $M = m \times N_A = 6.63 \times 10^{-26} \times 6.022 \times 10^{23} = 0.0399\,\text{kg}\,\text{mol}^{-1}$
+(b) RMS speed: $v_{\text{rms}} = \sqrt{\frac{3RT}{M}}$ where
+$M = m \times N_A = 6.63 \times 10^{-26} \times 6.022 \times 10^{23} = 0.0399\,\text{kg}\,\text{mol}^{-1}$
 
 $$v_{\text{rms}} = \sqrt{\frac{3 \times 8.314 \times 350}{0.0399}} = \sqrt{\frac{8729.7}{0.0399}} = \sqrt{218793} = 468\,\text{m}\,\text{s}^{-1}$$
 
-Average KE per molecule: $\langle E_k \rangle = \frac{3}{2}k_BT = \frac{3}{2} \times 1.381 \times 10^{-23} \times 350 = 7.25 \times 10^{-21}\,\text{J}$
+Average KE per molecule:
+$\langle E_k \rangle = \frac{3}{2}k_BT = \frac{3}{2} \times 1.381 \times 10^{-23} \times 350 = 7.25 \times 10^{-21}\,\text{J}$
 
 (c) New pressure: $P' = nRT'/V = 0.40 \times 8.314 \times 700/0.010 = 2328\,\text{Pa}$
 
-This is double the original pressure (since $T$ doubled at constant $V$), confirming $P \propto T$ at constant $V$.
+This is double the original pressure (since $T$ doubled at constant $V$), confirming $P \propto T$
+at constant $V$.
 
-Change in internal energy: $\Delta U = nC_v\Delta T = 0.40 \times \frac{3}{2} \times 8.314 \times (700 - 350)$
+Change in internal energy:
+$\Delta U = nC_v\Delta T = 0.40 \times \frac{3}{2} \times 8.314 \times (700 - 350)$
 
 $$= 0.40 \times 12.471 \times 350 = 1746\,\text{J}$$
 
-New RMS speed: $v_{\text{rms}}' = \sqrt{\frac{3 \times 8.314 \times 700}{0.0399}} = \sqrt{437586} = 661\,\text{m}\,\text{s}^{-1}$
+New RMS speed:
+$v_{\text{rms}}' = \sqrt{\frac{3 \times 8.314 \times 700}{0.0399}} = \sqrt{437586} = 661\,\text{m}\,\text{s}^{-1}$
 
-Ratio: $v_{\text{rms}}'/v_{\text{rms}} = \sqrt{2} \approx 1.414$. Doubling the temperature increases the RMS speed by a factor of $\sqrt{2}$.
+Ratio: $v_{\text{rms}}'/v_{\text{rms}} = \sqrt{2} \approx 1.414$. Doubling the temperature increases
+the RMS speed by a factor of $\sqrt{2}$.

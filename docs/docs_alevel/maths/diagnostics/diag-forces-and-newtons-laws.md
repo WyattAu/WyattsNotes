@@ -1,6 +1,8 @@
 ---
 title: "Forces and Newton's Laws -- Diagnostic Tests"
-description: "Hard diagnostic tests for forces and Newton's laws covering friction inequalities, inclined plane resolution, connected particle systems, third-law pairs, and"
+description:
+  "Hard diagnostic tests for forces and Newton's laws covering friction inequalities, inclined plane
+  resolution, connected particle systems, third-law pairs, and"
 slug: diag-forces-and-newtons-laws
 hide_table_of_contents: true
 ---
@@ -15,21 +17,31 @@ hide_table_of_contents: true
 
 **Question:**
 
-A block of mass $8$ kg rests on a rough horizontal surface. The coefficient of friction between the block and the surface is $\mu = 0.4$. A horizontal force $P$ is applied to the block.
+A block of mass $8$ kg rests on a rough horizontal surface. The coefficient of friction between the
+block and the surface is $\mu = 0.4$. A horizontal force $P$ is applied to the block.
 
 **(a)** Find the range of values of $P$ for which the block remains in equilibrium.
 
-**(b)** When $P = 20$ N, find the magnitude and direction of the frictional force acting on the block.
+**(b)** When $P = 20$ N, find the magnitude and direction of the frictional force acting on the
+block.
 
-**(c)** A student, upon seeing the value $\mu = 0.4$Immediately writes $F = \mu R = 0.4 \times 78.4 = 31.36$ N for the frictional force, regardless of the applied force $P$. Explain why this is incorrect for $P = 20$ N, and calculate the percentage by which the student overestimates the friction.
+**(c)** A student, upon seeing the value $\mu = 0.4$Immediately writes
+$F = \mu R = 0.4 \times 78.4 = 31.36$ N for the frictional force, regardless of the applied force
+$P$. Explain why this is incorrect for $P = 20$ N, and calculate the percentage by which the student
+overestimates the friction.
 
-**(d)** The force $P$ is now applied at an angle of $30°$ above the horizontal. Find the maximum value of $P$ for which the block remains in equilibrium, and explain why this maximum is greater than the answer in part (a).
+**(d)** The force $P$ is now applied at an angle of $30°$ above the horizontal. Find the maximum
+value of $P$ for which the block remains in equilibrium, and explain why this maximum is greater
+than the answer in part (a).
 
-[Difficulty: hard. Tests the critical distinction between $F \leq \mu R$ and $F = \mu R$Requiring the student to recognise when friction is not at its limiting value, and how an angled force changes the normal reaction.]
+[Difficulty: hard. Tests the critical distinction between $F \leq \mu R$ and $F = \mu R$Requiring
+the student to recognise when friction is not at its limiting value, and how an angled force changes
+the normal reaction.]
 
 **Solution:**
 
-**(a)** The block remains in equilibrium as long as the applied force does not exceed the maximum static friction.
+**(a)** The block remains in equilibrium as long as the applied force does not exceed the maximum
+static friction.
 
 Normal reaction: $R = mg = 8 \times 9.8 = 78.4$ N.
 
@@ -41,13 +53,16 @@ Since $F \leq F_{\max} = 31.36$ N, we need $P \leq 31.36$ N.
 
 The block remains in equilibrium for $0 \leq P \leq 31.36$ N.
 
-**(b)** When $P = 20$ N (which is less than $31.36$ N), the block does not move. The frictional force adjusts to exactly balance the applied force:
+**(b)** When $P = 20$ N (which is less than $31.36$ N), the block does not move. The frictional
+force adjusts to exactly balance the applied force:
 
 $$F = P = 20 \text{ N}$$
 
 The frictional force acts in the direction opposite to $P$ (i.e., opposing the tendency to move).
 
-**(c)** The student writes $F = 31.36$ N, but the actual friction is only $20$ N. The student has assumed the block is on the point of sliding, but $P = 20 \text{ N} \lt 31.36 \text{ N}$So the block is not even close to sliding. The friction adjusts to match the applied force.
+**(c)** The student writes $F = 31.36$ N, but the actual friction is only $20$ N. The student has
+assumed the block is on the point of sliding, but $P = 20 \text{ N} \lt 31.36 \text{ N}$So the block
+is not even close to sliding. The friction adjusts to match the applied force.
 
 $$\text{Percentage overestimate} = \frac{31.36 - 20}{20} \times 100\% = 56.8\%$$
 
@@ -63,7 +78,10 @@ $$0.866P = 31.36 - 0.2P$$
 
 $$1.066P = 31.36 \implies P = \frac{31.36}{1.066} \approx 29.42 \text{ N}$$
 
-This is **less** than $31.36$ N, not greater. Applying the force at an angle above the horizontal reduces the normal reaction ($R = 78.4 - 0.5P \lt 78.4$), which in turn reduces the maximum friction. Although the horizontal component of $P$ is only $P\cos 30° \approx 0.866P$The reduction in $R$ means the maximum available horizontal force is reduced overall.
+This is **less** than $31.36$ N, not greater. Applying the force at an angle above the horizontal
+reduces the normal reaction ($R = 78.4 - 0.5P \lt 78.4$), which in turn reduces the maximum
+friction. Although the horizontal component of $P$ is only $P\cos 30° \approx 0.866P$The reduction
+in $R$ means the maximum available horizontal force is reduced overall.
 
 ---
 
@@ -71,19 +89,28 @@ This is **less** than $31.36$ N, not greater. Applying the force at an angle abo
 
 **Question:**
 
-Two particles $A$ (mass $5$ kg) and $B$ (mass $3$ kg) are connected by a light inextensible string passing over a smooth pulley at the top of a rough inclined plane. Particle $A$ is on the plane, which is inclined at $30°$ to the horizontal, with $\mu = 0.3$. Particle $B$ hangs freely. The string is parallel to the plane.
+Two particles $A$ (mass $5$ kg) and $B$ (mass $3$ kg) are connected by a light inextensible string
+passing over a smooth pulley at the top of a rough inclined plane. Particle $A$ is on the plane,
+which is inclined at $30°$ to the horizontal, with $\mu = 0.3$. Particle $B$ hangs freely. The
+string is parallel to the plane.
 
-**(a)** Determine whether the system moves when released from rest. If it does, find the acceleration and the tension in the string.
+**(a)** Determine whether the system moves when released from rest. If it does, find the
+acceleration and the tension in the string.
 
 **(b)** If the system does move, find the speed of $B$ when it has descended $1.5$ m.
 
-**(c)** A student assumes $A$ moves up the plane and writes the equation $T - 5g\sin 30° - \mu(5g\cos 30°) = 5a$. Show that this assumption leads to $a \lt 0$And explain what this means physically.
+**(c)** A student assumes $A$ moves up the plane and writes the equation
+$T - 5g\sin 30° - \mu(5g\cos 30°) = 5a$. Show that this assumption leads to $a \lt 0$And explain
+what this means physically.
 
-[Difficulty: hard. Tests the full connected-particle-on-inclined-plane problem including the initial check for whether the system moves, the correct assignment of friction direction, and interpretation of a negative acceleration.]
+[Difficulty: hard. Tests the full connected-particle-on-inclined-plane problem including the initial
+check for whether the system moves, the correct assignment of friction direction, and interpretation
+of a negative acceleration.]
 
 **Solution:**
 
-**(a)** First, check whether the system moves by comparing the driving force with the maximum friction plus gravitational resistance.
+**(a)** First, check whether the system moves by comparing the driving force with the maximum
+friction plus gravitational resistance.
 
 If $B$ descends, $A$ moves up the plane:
 
@@ -109,7 +136,8 @@ Since $11.77 \lt 29.4$$A$ does not slide down either.
 
 $$T = 3g = 29.4 \text{ N}$$
 
-The friction on $A$ balances the remaining forces along the plane. With $B$ hanging and $A$ on the plane, resolving along the plane for $A$ (taking up the plane as positive):
+The friction on $A$ balances the remaining forces along the plane. With $B$ hanging and $A$ on the
+plane, resolving along the plane for $A$ (taking up the plane as positive):
 
 $$T - 5g\sin 30° - F = 0 \implies 29.4 - 24.5 = F \implies F = 4.9 \text{ N}$$
 
@@ -117,11 +145,16 @@ Check: $F = 4.9 \text{ N} \lt \mu R = 12.73$ N. Confirmed: the block is not at l
 
 **(b)** The system does not move, so the speed of $B$ remains zero.
 
-**(c)** The student's equation assumes $A$ moves up the plane. With $T = 3g = 29.4$ (since the system is in equilibrium):
+**(c)** The student's equation assumes $A$ moves up the plane. With $T = 3g = 29.4$ (since the
+system is in equilibrium):
 
 $$29.4 - 24.5 - 12.73 = 5a \implies -7.83 = 5a \implies a = -1.566 \text{ m/s}^2$$
 
-The negative acceleration means the assumed direction of motion is wrong. The particle $A$ does not move up the plane; in fact, the forces are insufficient to overcome friction plus the component of gravity. The negative result signals that the system is in equilibrium (or would move in the opposite direction), and the student must reconsider the friction direction or check for equilibrium.
+The negative acceleration means the assumed direction of motion is wrong. The particle $A$ does not
+move up the plane; in fact, the forces are insufficient to overcome friction plus the component of
+gravity. The negative result signals that the system is in equilibrium (or would move in the
+opposite direction), and the student must reconsider the friction direction or check for
+equilibrium.
 
 ---
 
@@ -129,17 +162,23 @@ The negative acceleration means the assumed direction of motion is wrong. The pa
 
 **Question:**
 
-A car of mass $1200$ kg tows a trailer of mass $400$ kg along a horizontal road using a rigid tow bar. The engine provides a driving force of $2400$ N. There is a resistance of $200$ N on the car and $100$ N on the trailer.
+A car of mass $1200$ kg tows a trailer of mass $400$ kg along a horizontal road using a rigid tow
+bar. The engine provides a driving force of $2400$ N. There is a resistance of $200$ N on the car
+and $100$ N on the trailer.
 
 **(a)** Find the acceleration of the system and the tension in the tow bar.
 
-**(b)** Identify the Newton's Third Law pair for the tension in the tow bar, stating the body on which each force acts.
+**(b)** Identify the Newton's Third Law pair for the tension in the tow bar, stating the body on
+which each force acts.
 
-**(c)** A student states: "The tension in the tow bar is a Newton's Third Law pair with the pull of the trailer on the car." Explain why this statement is ambiguous and potentially incorrect.
+**(c)** A student states: "The tension in the tow bar is a Newton's Third Law pair with the pull of
+the trailer on the car." Explain why this statement is ambiguous and potentially incorrect.
 
-**(d)** The car now brakes with a braking force of $3000$ N (in addition to the resistances). Find the new tension in the tow bar and explain its sign.
+**(d)** The car now brakes with a braking force of $3000$ N (in addition to the resistances). Find
+the new tension in the tow bar and explain its sign.
 
-[Difficulty: hard. Tests precise identification of Third Law pairs, a common source of error, and the effect of braking on the tension direction in connected systems.]
+[Difficulty: hard. Tests precise identification of Third Law pairs, a common source of error, and
+the effect of braking on the tension direction in connected systems.]
 
 **Solution:**
 
@@ -153,21 +192,32 @@ For the trailer alone (tension $T$ pulls it forward, resistance opposes):
 
 $$T - 100 = 400 \times 1.3125 \implies T = 525 + 100 = 625 \text{ N}$$
 
-Verification using the car: $2400 - 200 - T = 1200 \times 1.3125 \implies 2200 - T = 1575 \implies T = 625$ N. Consistent.
+Verification using the car:
+$2400 - 200 - T = 1200 \times 1.3125 \implies 2200 - T = 1575 \implies T = 625$ N. Consistent.
 
-**(b)** The tension in the tow bar is a contact force exerted **by the car on the trailer** through the tow bar.
+**(b)** The tension in the tow bar is a contact force exerted **by the car on the trailer** through
+the tow bar.
 
 Newton's Third Law pair is:
-- **Force A:** The tow bar pulls the trailer forward with force $T = 625$ N. (Acts on the **trailer**.)
-- **Force B:** The trailer pulls the tow bar (and hence the car) backward with force $T = 625$ N. (Acts on the **car** via the tow bar.)
 
-Both forces are contact forces of equal magnitude, opposite direction, and act on **different bodies**.
+- **Force A:** The tow bar pulls the trailer forward with force $T = 625$ N. (Acts on the
+  **trailer**.)
+- **Force B:** The trailer pulls the tow bar (and hence the car) backward with force $T = 625$ N.
+  (Acts on the **car** via the tow bar.)
 
-**(c)** The student's statement is ambiguous because "the pull of the trailer on the car" could mean either:
-1. The tension in the tow bar as experienced by the car (which IS the Third Law pair) -- correct interpretation.
+Both forces are contact forces of equal magnitude, opposite direction, and act on **different
+bodies**.
+
+**(c)** The student's statement is ambiguous because "the pull of the trailer on the car" could mean
+either:
+
+1. The tension in the tow bar as experienced by the car (which IS the Third Law pair) -- correct
+   interpretation.
 2. Some other force such as air resistance from the trailer or a gravitational pull -- incorrect.
 
-More importantly, saying "the tension" refers to a single force, but the Third Law requires specifying **both** forces and the **bodies** on which they act. The correct formulation must identify two distinct forces on two distinct bodies.
+More importantly, saying "the tension" refers to a single force, but the Third Law requires
+specifying **both** forces and the **bodies** on which they act. The correct formulation must
+identify two distinct forces on two distinct bodies.
 
 **(d)** Now the braking force acts on the car (opposing motion):
 
@@ -179,19 +229,24 @@ The system decelerates. For the trailer:
 
 $$T - 100 = 400(-0.5625) \implies T = -225 + 100 = -125 \text{ N}$$
 
-The negative tension means the tow bar is now in **compression** rather than tension. The car is decelerating more than the trailer would on its own, so the tow bar pushes the trailer backward (or equivalently, the trailer pushes forward on the car through the bar).
+The negative tension means the tow bar is now in **compression** rather than tension. The car is
+decelerating more than the trailer would on its own, so the tow bar pushes the trailer backward (or
+equivalently, the trailer pushes forward on the car through the bar).
 
 ---
 
 ## Integration Tests
 
-> Tests synthesis of forces and Newton's laws with other topics. Requires combining concepts from multiple units.
+> Tests synthesis of forces and Newton's laws with other topics. Requires combining concepts from
+> multiple units.
 
 ### IT-1: Variable Force and Impulse (with Integration)
 
 **Question:**
 
-A particle of mass $2$ kg moves along the positive $x$-axis. At time $t$ seconds, the force acting on the particle is $F = (3t^2 - 12t + 9)$ N in the direction of motion. When $t = 0$The particle is at rest at the origin.
+A particle of mass $2$ kg moves along the positive $x$-axis. At time $t$ seconds, the force acting
+on the particle is $F = (3t^2 - 12t + 9)$ N in the direction of motion. When $t = 0$The particle is
+at rest at the origin.
 
 **(a)** Find the velocity of the particle at time $t$.
 
@@ -199,9 +254,11 @@ A particle of mass $2$ kg moves along the positive $x$-axis. At time $t$ seconds
 
 **(c)** Find the total distance travelled from $t = 0$ to $t = 4$.
 
-**(d)** Find the work done by the force from $t = 0$ to $t = 4$And verify that it equals the change in kinetic energy.
+**(d)** Find the work done by the force from $t = 0$ to $t = 4$And verify that it equals the change
+in kinetic energy.
 
-[Difficulty: hard. Combines variable force with integration for velocity, identification of turning points, distance calculation, and verification of the work-energy theorem.]
+[Difficulty: hard. Combines variable force with integration for velocity, identification of turning
+points, distance calculation, and verification of the work-energy theorem.]
 
 **Solution:**
 
@@ -215,9 +272,12 @@ $$v = \frac{t^3}{2} - 3t^2 + \frac{9t}{2} = \frac{t}{2}(t^2 - 6t + 9) = \frac{t}
 
 **(b)** $v = 0 \implies \frac{t}{2}(t-3)^2 = 0 \implies t = 0$ or $t = 3$.
 
-The particle is at rest at $t = 0$ and $t = 3$ s. For $0 \lt t \lt 3$: $v \gt 0$ (the particle moves in the positive direction). For $t \gt 3$: $(t-3)^2 \gt 0$ and $t \gt 0$So $v \gt 0$. The particle never reverses direction.
+The particle is at rest at $t = 0$ and $t = 3$ s. For $0 \lt t \lt 3$: $v \gt 0$ (the particle moves
+in the positive direction). For $t \gt 3$: $(t-3)^2 \gt 0$ and $t \gt 0$So $v \gt 0$. The particle
+never reverses direction.
 
-**(c)** Since the particle never reverses direction, the total distance equals the magnitude of the displacement.
+**(c)** Since the particle never reverses direction, the total distance equals the magnitude of the
+displacement.
 
 $$s = \int_0^4 v\,dt = \int_0^4 \left(\frac{t^3}{2} - 3t^2 + \frac{9t}{2}\right)dt = \left[\frac{t^4}{8} - t^3 + \frac{9t^2}{4}\right]_0^4$$
 
@@ -249,29 +309,38 @@ Therefore $W = 4$ J, consistent with the work-energy theorem.
 
 **Question:**
 
-A uniform beam $AB$ of length $4$ m and weight $120$ N is hinged at $A$ to a vertical wall. The beam is held in a horizontal position by a light inextensible string $BC$Where $C$ is a point on the wall vertically above $A$ with $AC = 3$ m. A particle of weight $80$ N is suspended from the beam at a point $D$Where $AD = 3$ m.
+A uniform beam $AB$ of length $4$ m and weight $120$ N is hinged at $A$ to a vertical wall. The beam
+is held in a horizontal position by a light inextensible string $BC$Where $C$ is a point on the wall
+vertically above $A$ with $AC = 3$ m. A particle of weight $80$ N is suspended from the beam at a
+point $D$Where $AD = 3$ m.
 
-**(a)** Find the tension in the string $BC$ and the magnitude and direction of the reaction at the hinge $A$.
+**(a)** Find the tension in the string $BC$ and the magnitude and direction of the reaction at the
+hinge $A$.
 
 **(b)** Prove that the system is in equilibrium by verifying all three equilibrium conditions.
 
-**(c)** A student claims that taking moments about $B$ instead of $A$ is invalid because $B$ is not a fixed point. Explain why the student is wrong.
+**(c)** A student claims that taking moments about $B$ instead of $A$ is invalid because $B$ is not
+a fixed point. Explain why the student is wrong.
 
-[Difficulty: hard. Combines force resolution with moment equilibrium on a non-trivial geometry, and requires a formal proof of equilibrium.]
+[Difficulty: hard. Combines force resolution with moment equilibrium on a non-trivial geometry, and
+requires a formal proof of equilibrium.]
 
 **Solution:**
 
-**(a)** First, find the geometry. $AB = 4$ m (horizontal), $AC = 3$ m (vertical), so $BC = \sqrt{3^2 + 4^2} = 5$ m (by Pythagoras).
+**(a)** First, find the geometry. $AB = 4$ m (horizontal), $AC = 3$ m (vertical), so
+$BC = \sqrt{3^2 + 4^2} = 5$ m (by Pythagoras).
 
 The string makes angle $\theta$ with the horizontal where $\sin\theta = 3/5$ and $\cos\theta = 4/5$.
 
 The perpendicular distance from $A$ to the line of action of the tension $T$ along $BC$ is:
 
-The tension acts along $CB$ (from $B$ towards $C$). The moment arm of $T$ about $A$ is the perpendicular distance from $A$ to the line $BC$.
+The tension acts along $CB$ (from $B$ towards $C$). The moment arm of $T$ about $A$ is the
+perpendicular distance from $A$ to the line $BC$.
 
 This equals $AB \times \sin\theta = 4 \times \frac{3}{5} = \frac{12}{5} = 2.4$ m.
 
 Alternatively, resolve the tension into components at $B$:
+
 - Horizontal component: $T\cos\theta = \frac{4T}{5}$ (acts to the left).
 - Vertical component: $T\sin\theta = \frac{3T}{5}$ (acts upward).
 
@@ -283,7 +352,8 @@ $$\frac{12T}{5} = 240 + 240 = 480$$
 
 $$T = \frac◆LB◆480 \times 5◆RB◆◆LB◆12◆RB◆ = 200 \text{ N}$$
 
-Resolving horizontally at $A$ (the hinge reaction has components $H_A$ horizontal and $V_A$ vertical):
+Resolving horizontally at $A$ (the hinge reaction has components $H_A$ horizontal and $V_A$
+vertical):
 
 $$H_A = T\cos\theta = 200 \times \frac{4}{5} = 160 \text{ N (to the right)}$$
 
@@ -291,9 +361,11 @@ Resolving vertically:
 
 $$V_A + T\sin\theta = 120 + 80 \implies V_A + 120 = 200 \implies V_A = 80 \text{ N (upward)}$$
 
-Magnitude of hinge reaction: $\sqrt{160^2 + 80^2} = \sqrt{25600 + 6400} = \sqrt{32000} = 80\sqrt{5} \approx 178.9$ N.
+Magnitude of hinge reaction:
+$\sqrt{160^2 + 80^2} = \sqrt{25600 + 6400} = \sqrt{32000} = 80\sqrt{5} \approx 178.9$ N.
 
-Direction: $\alpha = \arctan\!\left(\frac{80}{160}\right) = \arctan(0.5) \approx 26.6°$ above the horizontal.
+Direction: $\alpha = \arctan\!\left(\frac{80}{160}\right) = \arctan(0.5) \approx 26.6°$ above the
+horizontal.
 
 **(b)** Verification of all three equilibrium conditions:
 
@@ -301,11 +373,15 @@ Direction: $\alpha = \arctan\!\left(\frac{80}{160}\right) = \arctan(0.5) \approx
 
 2. **$\Sigma F_y = 0$:** $V_A + T\sin\theta - 120 - 80 = 80 + 120 - 200 = 0$. Satisfied.
 
-3. **$\Sigma M_A = 0$:** Already verified in part (a): the clockwise and anticlockwise moments about $A$ sum to zero.
+3. **$\Sigma M_A = 0$:** Already verified in part (a): the clockwise and anticlockwise moments about
+   $A$ sum to zero.
 
 Since all three conditions are satisfied, the system is in equilibrium.
 
-**(c)** The principle of moments states that if a body is in equilibrium, the sum of moments about **any** point is zero. The choice of pivot is arbitrary. Taking moments about $B$ is perfectly valid and will yield the same equilibrium conditions (though it may not eliminate the unknown tension as conveniently as taking moments about $A$ does).
+**(c)** The principle of moments states that if a body is in equilibrium, the sum of moments about
+**any** point is zero. The choice of pivot is arbitrary. Taking moments about $B$ is perfectly valid
+and will yield the same equilibrium conditions (though it may not eliminate the unknown tension as
+conveniently as taking moments about $A$ does).
 
 ---
 
@@ -313,15 +389,21 @@ Since all three conditions are satisfied, the system is in equilibrium.
 
 **Question:**
 
-Three forces act on a particle. Force $\mathbf{F}_1 = \begin{pmatrix} 3 \\ -1 \end{pmatrix}$ N, force $\mathbf{F}_2 = \begin{pmatrix} -2 \\ 4 \end{pmatrix}$ N, and force $\mathbf{F}_3 = \begin{pmatrix} a \\ b \end{pmatrix}$ N.
+Three forces act on a particle. Force $\mathbf{F}_1 = \begin{pmatrix} 3 \\ -1 \end{pmatrix}$ N,
+force $\mathbf{F}_2 = \begin{pmatrix} -2 \\ 4 \end{pmatrix}$ N, and force
+$\mathbf{F}_3 = \begin{pmatrix} a \\ b \end{pmatrix}$ N.
 
 **(a)** Find the values of $a$ and $b$ for which the particle is in equilibrium.
 
-**(b)** With the values of $a$ and $b$ from part (a), a fourth force $\mathbf{F}_4 = \begin{pmatrix} 5 \\ 2 \end{pmatrix}$ N is added. Find the magnitude and direction of the resultant force.
+**(b)** With the values of $a$ and $b$ from part (a), a fourth force
+$\mathbf{F}_4 = \begin{pmatrix} 5 \\ 2 \end{pmatrix}$ N is added. Find the magnitude and direction
+of the resultant force.
 
-**(c)** The particle has mass $3$ kg. Find the initial acceleration and the velocity after $4$ seconds, assuming the resultant force from part (b) acts constantly.
+**(c)** The particle has mass $3$ kg. Find the initial acceleration and the velocity after $4$
+seconds, assuming the resultant force from part (b) acts constantly.
 
-[Difficulty: hard. Combines vector addition of forces with Newton's Second Law and SUVAT kinematics, requiring the student to work entirely in vector form.]
+[Difficulty: hard. Combines vector addition of forces with Newton's Second Law and SUVAT kinematics,
+requiring the student to work entirely in vector form.]
 
 **Solution:**
 
@@ -347,10 +429,14 @@ Magnitude: $\lvert\mathbf{F}_{\text{resultant}}\rvert = \sqrt{25 + 4} = \sqrt{29
 
 Direction: $\theta = \arctan\!\left(\frac{2}{5}\right) \approx 21.8°$ above the positive $x$-axis.
 
-**(c)** By Newton's Second Law: $\mathbf{a} = \frac◆LB◆\mathbf{F}◆RB◆◆LB◆m◆RB◆ = \frac{1}{3}\begin{pmatrix} 5 \\ 2 \end{pmatrix} = \begin{pmatrix} 5/3 \\ 2/3 \end{pmatrix}$ m/s$^2$.
+**(c)** By Newton's Second Law:
+$\mathbf{a} = \frac◆LB◆\mathbf{F}◆RB◆◆LB◆m◆RB◆ = \frac{1}{3}\begin{pmatrix} 5 \\ 2 \end{pmatrix} = \begin{pmatrix} 5/3 \\ 2/3 \end{pmatrix}$
+m/s$^2$.
 
 The velocity after $4$ seconds (starting from rest):
 
 $$\mathbf{v} = \mathbf{u} + \mathbf{a}t = \begin{pmatrix} 0 \\ 0 \end{pmatrix} + \begin{pmatrix} 5/3 \\ 2/3 \end{pmatrix} \times 4 = \begin{pmatrix} 20/3 \\ 8/3 \end{pmatrix} \text{ m/s}$$
 
-Speed $= \sqrt{(20/3)^2 + (8/3)^2} = \sqrt◆LB◆\frac{400 + 64}{9}◆RB◆ = \sqrt◆LB◆\frac{464}{9}◆RB◆ = \frac◆LB◆2\sqrt{116}◆RB◆◆LB◆3◆RB◆ \approx 7.18$ m/s.
+Speed
+$= \sqrt{(20/3)^2 + (8/3)^2} = \sqrt◆LB◆\frac{400 + 64}{9}◆RB◆ = \sqrt◆LB◆\frac{464}{9}◆RB◆ = \frac◆LB◆2\sqrt{116}◆RB◆◆LB◆3◆RB◆ \approx 7.18$
+m/s.

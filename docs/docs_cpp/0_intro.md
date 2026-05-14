@@ -1,10 +1,13 @@
 ---
 id: intro
 title: C++ Systems Programming
-description: "C++: C++ Systems Programming — Interactive Examples; How to Use These Notes; Part 1 — Environment and Toolchain (Modules 1–4)."
+description:
+  'C++: C++ Systems Programming — Interactive Examples; How to Use These Notes; Part 1 — Environment
+  and Toolchain (Modules 1–4).'
 slug: /intro
 sidebar_position: 1
 ---
+
 These notes are a practical reference for working systems engineers who use C++ daily. They focus on
 The mechanics that matter when software has to run reliably, perform under constraint, and
 Interoperate across boundaries — between translation units, between processes, and between ABIs. The
@@ -60,8 +63,7 @@ Enumeration, union, and bit-field specifics.
 ### Part 4 — Resource Management (Modules 10–11)
 
 Ownership, lifetime, and determinism. Covers RAII in depth, smart pointers (`std::unique_ptr`
-`std::shared_ptr``std::weak_ptr`), allocators, memory-mapped regions, and custom deletion
-Semantics.
+`std::shared_ptr``std::weak_ptr`), allocators, memory-mapped regions, and custom deletion Semantics.
 
 ### Part 5 — Function Architecture (Modules 12–13)
 
@@ -81,14 +83,14 @@ Constraints (C++20 concepts), variadic templates, fold expressions, and `if cons
 ### Part 8 — Standard Library (Modules 19–22)
 
 The containers, algorithms, and utilities you should actually use. Covers iterator semantics,
-Container choice guidelines, string views, `std::optional``std::variant``std::expected`Ranges,
-And common pitfalls.
+Container choice guidelines, string views, `std::optional``std::variant``std::expected`Ranges, And
+common pitfalls.
 
 ### Part 9 — Concurrency (Modules 23–25)
 
-Threads, atomics, and the memory model. Covers `std::thread``std::jthread`Mutexes and lock
-Types, condition variables, atomic operations, memory ordering (`relaxed``acquire``release`
-`seq_cst`), and lock-free patterns.
+Threads, atomics, and the memory model. Covers `std::thread``std::jthread`Mutexes and lock Types,
+condition variables, atomic operations, memory ordering (`relaxed``acquire``release` `seq_cst`), and
+lock-free patterns.
 
 ## Conventions
 

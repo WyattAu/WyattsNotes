@@ -1,6 +1,8 @@
 ---
 title: Linker Configuration
-description: "C++: Linker Configuration — The Landscape of Linkers; 1. GNU ld.bfd; 2. GNU gold; 3. LLVM LLD with worked examples and exam-style questions."
+description:
+  'C++: Linker Configuration — The Landscape of Linkers; 1. GNU ld.bfd; 2. GNU gold; 3. LLVM LLD
+  with worked examples and exam-style questions.'
 date: 2025-12-10T05:29:40.734Z
 tags:
   - cpp
@@ -8,6 +10,7 @@ categories:
   - cpp
 slug: linker-configuration
 ---
+
 Import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 The linker is the final stage of the translation pipeline. It accepts object files (`.o` or `.obj`)
@@ -25,59 +28,59 @@ Incremental link times by an order of magnitude.
 - **Status:** Legacy Default.
 - **Platform:** Linux/GNU.
 - **Characteristics:** Extremely stable but single-threaded and slow. It uses low-memory algorithms
- designed for hardware from the 1990s.
+  designed for hardware from the 1990s.
 
 ### 2. GNU gold
 
 - **Status:** Maintenance Mode / Deprecated.
 - **Platform:** Linux (ELF only).
 - **Characteristics:** The first mainstream linker designed for C++. It introduced multithreading
- but has largely been superseded by LLD.
+  but has largely been superseded by LLD.
 
 ### 3. LLVM LLD
 
 - **Status:** Industry Standard Best Practice.
 - **Platform:** Cross-Platform (ELF, COFF, Mach-O, Wasm).
 - **Characteristics:**
- - Drop-in replacement for system linkers.
- - Highly parallelized.
- - 2x-10x faster than BFD.
- - Required for correct Cross-Compilation with Clang.
+- Drop-in replacement for system linkers.
+- Highly parallelized.
+- 2x-10x faster than BFD.
+- Required for correct Cross-Compilation with Clang.
 
 ### 4. Mold
 
 - **Status:** High-Performance / Bleeding Edge.
 - **Platform:** Linux (ELF), partial macOS/Windows support.
 - **Characteristics:** Designed to utilize all available CPU cores and IO bandwidth. It aims to make
- linking as fast as file copying (`cp`). It is significantly faster than LLD on large projects.
+  linking as fast as file copying (`cp`). It is significantly faster than LLD on large projects.
 
 ### 5. MSVC link.exe
 
 - **Status:** Windows Default.
 - **Platform:** Windows (COFF).
 - **Characteristics:** Tightly integrated with PDB generation and Incremental Linking. While LLD
- (`lld-link`) is faster, `link.exe` is required for certain "Edit and Continue" debugging features
- in Visual Studio.
+  (`lld-link`) is faster, `link.exe` is required for certain "Edit and Continue" debugging features
+  in Visual Studio.
 
 ---
 
 ## Linker Comparison Matrix
 
-| Feature | GNU ld.bfd | GNU gold | LLVM LLD | Mold | MSVC link.exe |
+| Feature                  | GNU ld.bfd     | GNU gold       | LLVM LLD              | Mold                 | MSVC link.exe  |
 | :----------------------- | :------------- | :------------- | :-------------------- | :------------------- | :------------- |
-| **ELF support** | Yes | Yes | Yes | Yes | No (COFF only) |
-| **COFF support** | No | No | Yes (`lld-link`) | Partial | Yes |
-| **Mach-O support** | No | No | Yes (`ld64.lld`) | Partial | No |
-| **Wasm support** | No | No | Yes (`wasm-ld`) | No | No |
-| **Multithreading** | No | Limited | Yes (highly parallel) | Yes (fully parallel) | Yes |
-| **Incremental linking** | No | No | No | No | Yes |
-| **LTO support** | Via GCC plugin | Via GCC plugin | Native | Via Clang/GCC plugin | Via MSVC LTCG |
-| **Linker scripts** | Full | Full | ELF: Full, COFF: No | Full | No |
-| **ThinLTO** | No | No | Yes | No | No |
-| **Typical speed vs BFD** | 1x | 2-5x | 5-10x | 10-50x | N/A |
-| **Memory usage** | Low | Medium | Medium | High | Medium |
-| **Symbol versioning** | Yes | Yes | Yes | Yes | N/A |
-| **Cross-platform** | No | No | Yes | No | No |
+| **ELF support**          | Yes            | Yes            | Yes                   | Yes                  | No (COFF only) |
+| **COFF support**         | No             | No             | Yes (`lld-link`)      | Partial              | Yes            |
+| **Mach-O support**       | No             | No             | Yes (`ld64.lld`)      | Partial              | No             |
+| **Wasm support**         | No             | No             | Yes (`wasm-ld`)       | No                   | No             |
+| **Multithreading**       | No             | Limited        | Yes (highly parallel) | Yes (fully parallel) | Yes            |
+| **Incremental linking**  | No             | No             | No                    | No                   | Yes            |
+| **LTO support**          | Via GCC plugin | Via GCC plugin | Native                | Via Clang/GCC plugin | Via MSVC LTCG  |
+| **Linker scripts**       | Full           | Full           | ELF: Full, COFF: No   | Full                 | No             |
+| **ThinLTO**              | No             | No             | Yes                   | No                   | No             |
+| **Typical speed vs BFD** | 1x             | 2-5x           | 5-10x                 | 10-50x               | N/A            |
+| **Memory usage**         | Low            | Medium         | Medium                | High                 | Medium         |
+| **Symbol versioning**    | Yes            | Yes            | Yes                   | Yes                  | N/A            |
+| **Cross-platform**       | No             | No             | Yes                   | No                   | No             |
 
 ## CMake Configuration Strategy
 
@@ -225,9 +228,10 @@ To verify which linker is being used, inspect the verbose output of the build sy
    ```
 
 3. **Analyze the Link Command:** Look for the final linking step in the log.
- - **LLD:** Will show `-fuse-ld=lld` or direct calls to `ld.lld`.
- - **Mold:** Will show `-fuse-ld=mold` or direct calls to `mold`.
- - **BFD:** invoked as just `ld` (check `ld --version` to confirm).
+
+- **LLD:** Will show `-fuse-ld=lld` or direct calls to `ld.lld`.
+- **Mold:** Will show `-fuse-ld=mold` or direct calls to `mold`.
+- **BFD:** invoked as just `ld` (check `ld --version` to confirm).
 
 ### ELF Verification (Linux)
 
@@ -258,11 +262,11 @@ Build failures and optimizing binary output.
 The linker maintains a global symbol table with three categories:
 
 1. **Defined symbols:** Functions and variables that are defined (have a body) in one or more object
- files.
+   files.
 2. **Undefined symbols:** Symbols that are referenced but not defined in the current object file.
- These must be resolved by finding a matching definition in another object file or library.
+   These must be resolved by finding a matching definition in another object file or library.
 3. **Common symbols:** Tentative definitions (e.g., `int x;` at file scope without `extern` or an
- initializer). The linker allocates space for the largest definition and merges them.
+   initializer). The linker allocates space for the largest definition and merges them.
 
 The resolution algorithm processes object files in the order they appear on the command line. When
 The linker encounters an object file, it adds all defined symbols to its table and records all
@@ -304,17 +308,17 @@ The compiler emits a call to `get_counter` that returns a placeholder address. T
 1. Determine the final virtual address of `counter` (defined in some other object file).
 2. Patch the `lea` or `mov` instruction in `get_counter` with the actual address.
 3. If the relocation target is in a shared library loaded at a dynamic base address, generate a
- **PLT/GOT** entry so the loader can resolve it at runtime.
+   **PLT/GOT** entry so the loader can resolve it at runtime.
 
 Relocation types on x86_64 ELF include:
 
-| Relocation Type | Description | Example Use |
+| Relocation Type          | Description                                | Example Use                           |
 | :----------------------- | :----------------------------------------- | :------------------------------------ |
-| `R_X86_64_64` | Absolute 64-bit address | Global variable access |
-| `R_X86_64_PC32` | 32-bit PC-relative | Near call/jump |
-| `R_X86_64_PLT32` | 32-bit PC-relative through PLT | External function call |
-| `R_X86_64_GOTPCRELX` | Optimized GOT access (lazy binding bypass) | Frequently called external function |
-| `R_X86_64_REX_GOTPCRELX` | REX-prefixed GOT access | RIP-relative GOT access in large code |
+| `R_X86_64_64`            | Absolute 64-bit address                    | Global variable access                |
+| `R_X86_64_PC32`          | 32-bit PC-relative                         | Near call/jump                        |
+| `R_X86_64_PLT32`         | 32-bit PC-relative through PLT             | External function call                |
+| `R_X86_64_GOTPCRELX`     | Optimized GOT access (lazy binding bypass) | Frequently called external function   |
+| `R_X86_64_REX_GOTPCRELX` | REX-prefixed GOT access                    | RIP-relative GOT access in large code |
 
 ### Static vs Dynamic Linking
 
@@ -332,7 +336,7 @@ Advantages:
 
 - No external dependencies at runtime (simplifies deployment).
 - The linker can perform whole-program optimization (dead code elimination across library
- boundaries).
+  boundaries).
 - Slightly faster startup (no dynamic loader work).
 
 Disadvantages:
@@ -371,7 +375,7 @@ target_link_options(app PRIVATE -Wl,-z,relro)
 
 - **Partial RELRO:** `.got.plt` remains writable. The PLT stubs can still be exploited.
 - **Full RELRO (`-z,now`):** All symbols are resolved at load time (no lazy binding), and the entire
- GOT is made read-only. This defeats GOT overwrite attacks at the cost of slightly slower startup.
+  GOT is made read-only. This defeats GOT overwrite attacks at the cost of slightly slower startup.
 
 **Best practice:** Always use `-Wl,-z,relro,-z,now` for production builds.
 
@@ -640,33 +644,33 @@ clang++ -mcmodel=large ...
 ## Common Pitfalls
 
 - **Forgetting `-Wl,-z,relro,-z,now` on production builds.** This leaves the GOT writable, exposing
- your binary to GOT overwrite attacks.
+  your binary to GOT overwrite attacks.
 - **Mixing static and dynamic C++ runtime libraries.** On Linux, if one library links `libstdc++`
- statically and another dynamically, you get two copies of the C++ runtime with separate global
- state. This causes crashes in `dynamic_cast``typeid`And exception handling. Use
- `-static-libgcc -static-libstdc++` consistently or not at all.
+  statically and another dynamically, you get two copies of the C++ runtime with separate global
+  state. This causes crashes in `dynamic_cast``typeid`And exception handling. Use
+  `-static-libgcc -static-libstdc++` consistently or not at all.
 - **Not specifying `CMAKE_EXE_LINKER_FLAGS` correctly for LLD.** On some systems, `lld` is installed
- as `ld.lld` but not in the PATH. Use `CMAKE_LINKER` to specify the absolute path.
+  as `ld.lld` but not in the PATH. Use `CMAKE_LINKER` to specify the absolute path.
 - **Enabling LTO without cleaning the build directory.** LTO generates `.o` files containing LLVM
- bitcode instead of machine code. Mixing LTO and non-LTO object files from a previous build causes
- cryptic linker errors. Always do a clean build when toggling LTO.
+  bitcode instead of machine code. Mixing LTO and non-LTO object files from a previous build causes
+  cryptic linker errors. Always do a clean build when toggling LTO.
 - **Using `-fuse-ld=mold` on CI where mold is not installed.** The build will silently fall back to
- the default linker. Use `check_cxx_compiler_flag` to verify availability, or install mold as a
- build dependency.
+  the default linker. Use `check_cxx_compiler_flag` to verify availability, or install mold as a
+  build dependency.
 - **Linker script errors with `-Wl,--gc-sections`.** If your linker script does not use `KEEP()` for
- sections that must not be garbage-collected (like interrupt vector tables), the linker may remove
- them. Always use `KEEP(*(.isr_vector))` or equivalent for critical sections.
+  sections that must not be garbage-collected (like interrupt vector tables), the linker may remove
+  them. Always use `KEEP(*(.isr_vector))` or equivalent for critical sections.
 - **Circular dependencies between static libraries.** If library `A` depends on `B` and `B` depends
- on `A`The linker cannot resolve symbols in a single pass. Solutions: (1) merge the libraries,
- (2) use `--start-group` / `--end-group` to enable multiple passes, or (3) refactor to eliminate
- the circular dependency.
+  on `A`The linker cannot resolve symbols in a single pass. Solutions: (1) merge the libraries, (2)
+  use `--start-group` / `--end-group` to enable multiple passes, or (3) refactor to eliminate the
+  circular dependency.
 
 ## See Also
 
 - [Installing a Compiler](1_installing_compiler.md) -- Compiler selection affects linker choice
 - [Cross-compilation Toolchains](4_crosscompilation_toolchains.md) -- Cross-linker considerations
 - [Language Standard and ABI Compatibility](2_language_standard_and_abi_compatibility.md) -- ABI
- constraints on linking
+  constraints on linking
 
 ## Appendix: Linker Script Reference
 
@@ -765,29 +769,29 @@ SECTIONS
 
 - `/DISCARD/`: Sections listed here are not included in the output binary.
 - `NOLOAD`: The section is allocated space but not loaded into memory at runtime. Useful for
- zero-initialized regions in embedded systems.
+  zero-initialized regions in embedded systems.
 
 ## Appendix: Linker Flag Quick Reference
 
 ### GNU/LLD Linker Flags
 
-| Flag | Purpose |
+| Flag                 | Purpose                                         |
 | :------------------- | :---------------------------------------------- |
-| `-z relro` | Partial RELRO (read-only relocations) |
-| `-z now` | Full RELRO (no lazy binding) |
-| `-z noexecstack` | Make the stack non-executable |
-| `-z defs` | Require all symbols to be resolved at link time |
-| `-z origin` | Allow `$ORIGIN` in RPATH |
-| `--gc-sections` | Remove unreferenced sections |
-| `--as-needed` | Only link libraries that are actually used |
-| `--no-as-needed` | Link all specified libraries (legacy behavior) |
-| `--whole-archive` | Force include all symbols from a static lib |
-| `--no-whole-archive` | Revert to default selective inclusion |
-| `-rpath /path` | Set runtime library search path |
-| `-rpath-link /path` | Set link-time only search path |
-| `--build-id=sha1` | Embed a build ID for crash reporting |
-| `-Map=output.map` | Generate a linker map file |
-| `--print-map` | Print the link map to stdout |
+| `-z relro`           | Partial RELRO (read-only relocations)           |
+| `-z now`             | Full RELRO (no lazy binding)                    |
+| `-z noexecstack`     | Make the stack non-executable                   |
+| `-z defs`            | Require all symbols to be resolved at link time |
+| `-z origin`          | Allow `$ORIGIN` in RPATH                        |
+| `--gc-sections`      | Remove unreferenced sections                    |
+| `--as-needed`        | Only link libraries that are actually used      |
+| `--no-as-needed`     | Link all specified libraries (legacy behavior)  |
+| `--whole-archive`    | Force include all symbols from a static lib     |
+| `--no-whole-archive` | Revert to default selective inclusion           |
+| `-rpath /path`       | Set runtime library search path                 |
+| `-rpath-link /path`  | Set link-time only search path                  |
+| `--build-id=sha1`    | Embed a build ID for crash reporting            |
+| `-Map=output.map`    | Generate a linker map file                      |
+| `--print-map`        | Print the link map to stdout                    |
 
 ### In CMake
 

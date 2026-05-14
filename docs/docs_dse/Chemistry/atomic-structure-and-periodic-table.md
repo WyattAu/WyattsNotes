@@ -1,6 +1,8 @@
 ---
 title: Chemistry - Atomic Structure and Periodic Table
-description: "DSE Chemistry notes on atomic structure and the periodic table covering subatomic particles, electron configuration, periodic trends, and group properties."
+description:
+  'DSE Chemistry notes on atomic structure and the periodic table covering subatomic particles,
+  electron configuration, periodic trends, and group properties.'
 date: 2026-04-23T00:00:00.000Z
 tags:
   - Chemistry
@@ -12,11 +14,11 @@ slug: dse-chemistry-atomic-structure-and-periodic-table
 
 ## Subatomic Particles
 
-| Particle | Symbol | Relative Mass | Relative Charge | Location |
+| Particle | Symbol | Relative Mass         | Relative Charge | Location        |
 | -------- | ------ | --------------------- | --------------- | --------------- |
-| Proton | $p$ | 1 | $+1$ | Nucleus |
-| Neutron | $n$ | 1 | $0$ | Nucleus |
-| Electron | $e^-$ | $1/1836$ (negligible) | $-1$ | Electron shells |
+| Proton   | $p$    | 1                     | $+1$            | Nucleus         |
+| Neutron  | $n$    | 1                     | $0$             | Nucleus         |
+| Electron | $e^-$  | $1/1836$ (negligible) | $-1$            | Electron shells |
 
 ### Atomic Number and Mass Number
 
@@ -33,7 +35,8 @@ In a neutral atom, the number of electrons equals the number of protons ($Z$).
 
 ## Isotopes
 
-Isotopes are atoms of the same element (same $Z$) with different numbers of neutrons (different $N$).
+Isotopes are atoms of the same element (same $Z$) with different numbers of neutrons (different
+$N$).
 
 ### Key Properties
 
@@ -68,12 +71,12 @@ $$A_r = 35 \times 0.758 + 37 \times 0.242 = 26.53 + 8.954 = 35.48$$
 
 Electrons occupy shells ($n = 1, 2, 3, \ldots$), each with a maximum capacity of $2n^2$ electrons.
 
-| Shell ($n$) | Max electrons | Subshells |
-| ------------ | ------------- | ----------------- |
-| 1 | 2 | $1s$ |
-| 2 | 8 | $2s$$2p$ |
-| 3 | 18 | $3s$$3p$$3d$ |
-| 4 | 32 | $4s$$4p$$4d$$4f$ |
+| Shell ($n$) | Max electrons | Subshells        |
+| ----------- | ------------- | ---------------- |
+| 1           | 2             | $1s$             |
+| 2           | 8             | $2s$$2p$         |
+| 3           | 18            | $3s$$3p$$3d$     |
+| 4           | 32            | $4s$$4p$$4d$$4f$ |
 
 ### Order of Filling (Aufbau Principle)
 
@@ -127,21 +130,21 @@ Electrons. Elements in the same **period** (row) have the same number of electro
 
 ### Trends Across a Period (Left to Right)
 
-| Property | Trend | Reason |
+| Property                | Trend               | Reason                                                |
 | ----------------------- | ------------------- | ----------------------------------------------------- |
-| Atomic radius | Decreases | Increasing nuclear charge pulls electrons closer |
+| Atomic radius           | Decreases           | Increasing nuclear charge pulls electrons closer      |
 | First ionisation energy | Generally increases | Electrons held more tightly by greater nuclear charge |
-| Electronegativity | Increases | Greater attraction for bonding electrons |
-| Metallic character | Decreases | Atoms are less willing to lose electrons |
+| Electronegativity       | Increases           | Greater attraction for bonding electrons              |
+| Metallic character      | Decreases           | Atoms are less willing to lose electrons              |
 
 ### Trends Down a Group
 
-| Property | Trend | Reason |
+| Property                | Trend     | Reason                                               |
 | ----------------------- | --------- | ---------------------------------------------------- |
-| Atomic radius | Increases | Additional electron shells |
+| Atomic radius           | Increases | Additional electron shells                           |
 | First ionisation energy | Decreases | Outer electrons further from nucleus, more shielding |
-| Electronegativity | Decreases | Less attraction for bonding electrons |
-| Metallic character | Increases | Easier to lose outer electrons |
+| Electronegativity       | Decreases | Less attraction for bonding electrons                |
+| Metallic character      | Increases | Easier to lose outer electrons                       |
 
 ---
 
@@ -160,10 +163,10 @@ From a new inner shell.
 
 ### Dips in Ionisation Energy Across a Period
 
-| Dip | Elements | Reason |
-| -------------- | ------------- | ----------------------------------------------------------------------- |
-| Group 2 to 13 | e.g. Mg to Al | $p$ electron is easier to remove than $s$ electron (higher energy subshell) |
-| Group 15 to 16 | e.g. P to S | Paired $p$ electron experiences electron-electron repulsion |
+| Dip            | Elements      | Reason                                                                      |
+| -------------- | ------------- | --------------------------------------------------------------------------- |
+| Group 2 to 13  | e.g. Mg to Al | $p$ electron is easier to remove than $s$ electron (higher energy subshell) |
+| Group 15 to 16 | e.g. P to S   | Paired $p$ electron experiences electron-electron repulsion                 |
 
 ### Worked Example 3
 
@@ -189,22 +192,22 @@ Bond.
 - Fluorine is the most electronegative element (Pauling scale: 4.0)
 - Electronegativity increases across a period and decreases down a group
 - The difference in electronegativity ($\Delta\mathrm{EN}$) between bonded atoms determines bond
- character:
- - $\Delta\mathrm{EN} \lt 0.5$: non-polar covalent
- - $0.5 \leqslant \Delta\mathrm{EN} \lt 1.7$: polar covalent
- - $\Delta\mathrm{EN} \geqslant 1.7$: ionic
+  character:
+- $\Delta\mathrm{EN} \lt 0.5$: non-polar covalent
+- $0.5 \leqslant \Delta\mathrm{EN} \lt 1.7$: polar covalent
+- $\Delta\mathrm{EN} \geqslant 1.7$: ionic
 
 ---
 
 ## Group 1: Alkali Metals
 
-| Property | Trend down group | Explanation |
-| ---------------------- | ------------------- | ---------------------------------------------- |
-| Melting/boiling point | Decreases | Weaker metallic bonding as atomic radius increases |
-| Density | Generally increases | Larger atoms, but structural effects dominate |
-| Reactivity | Increases | Easier to lose the outer electron |
-| Ionisation energy | Decreases | Outer electron further from nucleus |
-| Flame test colour | Li: crimson | Na: yellow, K: lilac, Rb: red, Cs: blue |
+| Property              | Trend down group    | Explanation                                        |
+| --------------------- | ------------------- | -------------------------------------------------- |
+| Melting/boiling point | Decreases           | Weaker metallic bonding as atomic radius increases |
+| Density               | Generally increases | Larger atoms, but structural effects dominate      |
+| Reactivity            | Increases           | Easier to lose the outer electron                  |
+| Ionisation energy     | Decreases           | Outer electron further from nucleus                |
+| Flame test colour     | Li: crimson         | Na: yellow, K: lilac, Rb: red, Cs: blue            |
 
 ### Common Reactions
 
@@ -222,12 +225,12 @@ $$2\mathrm{Na} + \mathrm{O_2} \to \mathrm{Na_2O_2}$$ (sodium peroxide)
 
 ## Group 2: Alkaline Earth Metals
 
-| Property | Trend down group | Explanation |
-| ---------------------- | ------------------- | ---------------------------------------------- |
-| Melting/boiling point | Generally decreases | Weaker metallic bonding |
-| Reactivity | Increases | Easier to lose two outer electrons |
-| Solubility of hydroxides | Increases | Lattice energy decreases faster than hydration energy |
-| Solubility of sulphates | Decreases | Lattice energy decreases slower than hydration energy |
+| Property                 | Trend down group    | Explanation                                           |
+| ------------------------ | ------------------- | ----------------------------------------------------- |
+| Melting/boiling point    | Generally decreases | Weaker metallic bonding                               |
+| Reactivity               | Increases           | Easier to lose two outer electrons                    |
+| Solubility of hydroxides | Increases           | Lattice energy decreases faster than hydration energy |
+| Solubility of sulphates  | Decreases           | Lattice energy decreases slower than hydration energy |
 
 ### Common Reactions
 
@@ -253,13 +256,13 @@ $$\mathrm{Mg(NO_3)_2} \xrightarrow{\Delta} \mathrm{MgO} + 2\mathrm{NO_2} + \tfra
 
 ## Group 17: Halogens
 
-| Property | Trend down group | Explanation |
-| ---------------------- | ------------------- | ------------------------------------------------ |
-| Physical state | Gas to solid | Increasing van der Waals forces |
-| Melting/boiling point | Increases | Stronger van der Waals forces |
-| Reactivity | Decreases | Harder to gain an electron (decreased electronegativity) |
-| Electronegativity | Decreases | Larger atomic radius, more shielding |
-| Displacement ability | Decreases | $\mathrm{Cl_2}$ displaces $\mathrm{Br_2}$Not vice versa |
+| Property              | Trend down group | Explanation                                              |
+| --------------------- | ---------------- | -------------------------------------------------------- |
+| Physical state        | Gas to solid     | Increasing van der Waals forces                          |
+| Melting/boiling point | Increases        | Stronger van der Waals forces                            |
+| Reactivity            | Decreases        | Harder to gain an electron (decreased electronegativity) |
+| Electronegativity     | Decreases        | Larger atomic radius, more shielding                     |
+| Displacement ability  | Decreases        | $\mathrm{Cl_2}$ displaces $\mathrm{Br_2}$Not vice versa  |
 
 ### Displacement Reactions
 
@@ -300,20 +303,20 @@ Point ($59^\circ\mathrm{C}$) compared to chlorine ($-34^\circ\mathrm{C}$).
 Noble gases are inert because they have a full outer shell of electrons ($ns^2\, np^6$Except helium
 Which has $1s^2$). They have very high ionisation energies and very low electronegativities.
 
-| Property | Trend down group | Explanation |
-| ---------------------- | ------------------- | ------------------------------------ |
-| Boiling point | Increases | Stronger van der Waals forces |
-| Density | Increases | Larger atomic mass |
-| First ionisation energy| Decreases | Outer electrons further from nucleus |
+| Property                | Trend down group | Explanation                          |
+| ----------------------- | ---------------- | ------------------------------------ |
+| Boiling point           | Increases        | Stronger van der Waals forces        |
+| Density                 | Increases        | Larger atomic mass                   |
+| First ionisation energy | Decreases        | Outer electrons further from nucleus |
 
 ### Uses
 
-| Noble Gas | Use | Reason |
-| --------- | ----------------------------- | ------------------------------------- |
-| Helium | Balloons, airships | Low density, non-flammable |
-| Neon | Advertising signs | Emits red-orange light when ionised |
-| Argon | Welding atmosphere, light bulbs | Unreactive, prevents oxidation |
-| Krypton | High-performance light bulbs | Higher density, reduces evaporation |
+| Noble Gas | Use                             | Reason                              |
+| --------- | ------------------------------- | ----------------------------------- |
+| Helium    | Balloons, airships              | Low density, non-flammable          |
+| Neon      | Advertising signs               | Emits red-orange light when ionised |
+| Argon     | Welding atmosphere, light bulbs | Unreactive, prevents oxidation      |
+| Krypton   | High-performance light bulbs    | Higher density, reduces evaporation |
 
 ---
 
@@ -331,34 +334,33 @@ Subshell. Key properties:
 
 ## Common Pitfalls
 
-- Writing $4s^2\, 3d^6$ instead of $3d^6\, 4s^2$ when writing the full configuration. The $4s$
- fills before $3d$So it is written first. However, $4s$ electrons are removed first when
- forming cations.
-- Confusing atomic number with mass number. Atomic number $Z$ counts protons; mass number $A$
- counts protons plus neutrons.
+- Writing $4s^2\, 3d^6$ instead of $3d^6\, 4s^2$ when writing the full configuration. The $4s$ fills
+  before $3d$So it is written first. However, $4s$ electrons are removed first when forming cations.
+- Confusing atomic number with mass number. Atomic number $Z$ counts protons; mass number $A$ counts
+  protons plus neutrons.
 - Assuming that electronegativity differences cleanly divide bonds into ionic and covalent. The
- boundary at $\Delta\mathrm{EN} = 1.7$ is approximate.
+  boundary at $\Delta\mathrm{EN} = 1.7$ is approximate.
 - Forgetting that the first ionisation energy of an element is the energy to remove the
- **outermost** electron, not any electron.
+  **outermost** electron, not any electron.
 - Confusing Group 2 hydroxide solubility trends (increases down group) with Group 2 sulphate
- solubility trends (decreases down group).
+  solubility trends (decreases down group).
 
 ---
 
 ## Summary Table
 
-| Topic | Key Point |
+| Topic                   | Key Point                                     |
 | ----------------------- | --------------------------------------------- |
-| Atomic number $Z$ | Number of protons |
-| Mass number $A$ | $Z + N$ |
-| Isotopes | Same $Z$Different $N$ |
-| Aufbau principle | Fill orbitals in order of increasing energy |
-| Pauli exclusion | Max 2 electrons per orbital |
-| Hund's rule | Fill degenerate orbitals singly first |
+| Atomic number $Z$       | Number of protons                             |
+| Mass number $A$         | $Z + N$                                       |
+| Isotopes                | Same $Z$Different $N$                         |
+| Aufbau principle        | Fill orbitals in order of increasing energy   |
+| Pauli exclusion         | Max 2 electrons per orbital                   |
+| Hund's rule             | Fill degenerate orbitals singly first         |
 | Ionisation energy trend | Increases across period, decreases down group |
 | Electronegativity trend | Increases across period, decreases down group |
-| Group 1 trend | Reactivity increases down group |
-| Group 17 trend | Reactivity decreases down group |
+| Group 1 trend           | Reactivity increases down group               |
+| Group 17 trend          | Reactivity decreases down group               |
 
 ---
 
@@ -367,7 +369,7 @@ Subshell. Key properties:
 **Problem 1:** The first four ionisation energies of an element are 738, 1451, 7733, and 10540
 KJ/mol. To which group does this element belong?
 
-*If you get this wrong, revise: Successive Ionisation Energies*
+_If you get this wrong, revise: Successive Ionisation Energies_
 
 <details>
 <summary>Solution</summary>
@@ -377,10 +379,10 @@ Valence electrons. The element has two valence electrons, placing it in **Group 
 
 </details>
 
-**Problem 2:** Write the electron configuration of $\mathrm{Fe}^{2+}$ and $\mathrm{Fe}^{3+}$.
-Which ion is relatively more stable and why?
+**Problem 2:** Write the electron configuration of $\mathrm{Fe}^{2+}$ and $\mathrm{Fe}^{3+}$. Which
+ion is relatively more stable and why?
 
-*If you get this wrong, revise: Electron Configuration — Removing Electrons*
+_If you get this wrong, revise: Electron Configuration — Removing Electrons_
 
 <details>
 <summary>Solution</summary>
@@ -395,10 +397,10 @@ $\mathrm{Fe}^{3+}$ is relatively stable due to its half-filled $3d^5$ configurat
 
 </details>
 
-**Problem 3:** Neon has three occurring isotopes: $\mathrm{^{20}Ne}$ (90.48%),
-$\mathrm{^{21}Ne}$ (0.27%), and $\mathrm{^{22}Ne}$ (9.25%). Calculate the relative atomic mass.
+**Problem 3:** Neon has three occurring isotopes: $\mathrm{^{20}Ne}$ (90.48%), $\mathrm{^{21}Ne}$
+(0.27%), and $\mathrm{^{22}Ne}$ (9.25%). Calculate the relative atomic mass.
 
-*If you get this wrong, revise: Isotopes and Relative Atomic Mass*
+_If you get this wrong, revise: Isotopes and Relative Atomic Mass_
 
 <details>
 <summary>Solution</summary>
@@ -409,14 +411,14 @@ $$A_r = 20 \times 0.9048 + 21 \times 0.0027 + 22 \times 0.0925 = 18.096 + 0.0567
 
 **Problem 4:** Explain why the first ionisation energy of sodium is much lower than that of neon.
 
-*If you get this wrong, revise: Ionisation Energy and Electron Configuration*
+_If you get this wrong, revise: Ionisation Energy and Electron Configuration_
 
 <details>
 <summary>Solution</summary>
 
-Sodium ($Z = 11$) has the configuration $[\mathrm{Ne}]\, 3s^1$. The single $3s$ electron is in a
-New shell, further from the nucleus and well shielded by the inner 10 electrons. It is relatively
-Easy to remove.
+Sodium ($Z = 11$) has the configuration $[\mathrm{Ne}]\, 3s^1$. The single $3s$ electron is in a New
+shell, further from the nucleus and well shielded by the inner 10 electrons. It is relatively Easy
+to remove.
 
 Neon ($Z = 10$) has a stable noble gas configuration ($1s^2\, 2s^2\, 2p^6$). Removing an electron
 Requires breaking this stable full outer shell, requiring much more energy.
@@ -426,7 +428,7 @@ Requires breaking this stable full outer shell, requiring much more energy.
 **Problem 5:** Predict the products when chlorine gas is bubbled into a solution of potassium
 Iodide.
 
-*If you get this wrong, revise: Group 17 — Displacement Reactions*
+_If you get this wrong, revise: Group 17 — Displacement Reactions_
 
 <details>
 <summary>Solution</summary>
@@ -442,21 +444,21 @@ Colour.
 
 **Problem 6:** State and explain the trend in reactivity of the Group 1 metals with water.
 
-*If you get this wrong, revise: Group 1 — Properties and Trends*
+_If you get this wrong, revise: Group 1 — Properties and Trends_
 
 <details>
 <summary>Solution</summary>
 
 Reactivity increases down Group 1. As you descend, the atomic radius increases and the outer
 Electron is further from the nucleus with more electron shielding. This means the outer electron is
-Less strongly attracted to the nucleus and is more lost, resulting in more vigorous
-Reactions with water.
+Less strongly attracted to the nucleus and is more lost, resulting in more vigorous Reactions with
+water.
 
 </details>
 
 **Problem 7:** Explain why the thermal stability of Group 2 carbonates increases down the group.
 
-*If you get this wrong, revise: Group 2 — Thermal Decomposition*
+_If you get this wrong, revise: Group 2 — Thermal Decomposition_
 
 <details>
 <summary>Solution</summary>
@@ -464,22 +466,22 @@ Reactions with water.
 As you descend Group 2, the ionic radius of the metal cation increases. The larger cation has a
 Lower charge density and polarises the carbonate anion less. The $\mathrm{CO_3^{2-}}$ ion is
 Therefore less distorted and more thermally stable, requiring more energy to decompose. So
-$\mathrm{MgCO_3}$ decomposes readily on heating while $\mathrm{BaCO_3}$ is much more resistant
-To thermal decomposition.
+$\mathrm{MgCO_3}$ decomposes readily on heating while $\mathrm{BaCO_3}$ is much more resistant To
+thermal decomposition.
 
 </details>
 
 **Problem 8:** Explain why the solubility of Group 2 hydroxides increases down the group while the
 Solubility of Group 2 sulphates decreases.
 
-*If you get this wrong, revise: Group 2 — Solubility Trends*
+_If you get this wrong, revise: Group 2 — Solubility Trends_
 
 <details>
 <summary>Solution</summary>
 
-For hydroxides, as you descend Group 2, the lattice energy decreases (larger ions) but the
-Hydration energy decreases more slowly. Since the hydration energy becomes more significant
-Relative to lattice energy, dissolution becomes more favourable, so solubility increases.
+For hydroxides, as you descend Group 2, the lattice energy decreases (larger ions) but the Hydration
+energy decreases more slowly. Since the hydration energy becomes more significant Relative to
+lattice energy, dissolution becomes more favourable, so solubility increases.
 
 For sulphates, the opposite occurs: the lattice energy (which is large due to the doubly-charged
 $\mathrm{SO_4^{2-}}$ ion) decreases more slowly than the hydration energy as ionic size increases.
@@ -490,13 +492,13 @@ This makes dissolution less favourable down the group, so solubility decreases.
 **Problem 9:** The first seven ionisation energies of an element are: 789, 1577, 3232, 4356, 16091,
 19784, and 23793 kJ/mol. Identify the group of this element.
 
-*If you get this wrong, revise: Successive Ionisation Energies*
+_If you get this wrong, revise: Successive Ionisation Energies_
 
 <details>
 <summary>Solution</summary>
 
-Looking at the jumps: 789 to 1577 (small), 1577 to 3232 (moderate), 3232 to 4356 (moderate),
-4356 to 16091 (**very large**).
+Looking at the jumps: 789 to 1577 (small), 1577 to 3232 (moderate), 3232 to 4356 (moderate), 4356 to
+16091 (**very large**).
 
 The large jump between the 4th and 5th ionisation energies means the first four electrons are
 Valence electrons. The element has four valence electrons, placing it in **Group 14**.
@@ -506,7 +508,7 @@ Valence electrons. The element has four valence electrons, placing it in **Group
 **Problem 10:** Use electronegativity values to classify the bond in hydrogen chloride
 ($\mathrm{HCl}$). (EN of H $= 2.1$EN of Cl $= 3.0$)
 
-*If you get this wrong, revise: Electronegativity*
+_If you get this wrong, revise: Electronegativity_
 
 <details>
 <summary>Solution</summary>

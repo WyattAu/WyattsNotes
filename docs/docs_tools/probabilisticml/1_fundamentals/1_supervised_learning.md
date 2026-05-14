@@ -1,6 +1,8 @@
 ---
 title: Supervised Learning
-description: "Supervised Learning — Classification; Design Matrix; Pair Plot; Decision Tree including key definitions, derivations, and problem-solving techniques."
+description:
+  'Supervised Learning — Classification; Design Matrix; Pair Plot; Decision Tree including key
+  definitions, derivations, and problem-solving techniques.'
 date: 2026-01-07T08:38:26.907Z
 tags:
   - ML
@@ -8,6 +10,7 @@ categories:
   - ML
 slug: supervised-learning
 ---
+
 Supervised learning is the field of training models to act as a mapping between a set of inputs to a
 Set of output. To conduct supervised learning, a training set $N$ is given in the form of pairs
 $D = {x_n, y_n}^N_{n=1}$Where a input $x_n$ is paire with the correct output $y_n$.
@@ -16,18 +19,18 @@ $D = {x_n, y_n}^N_{n=1}$Where a input $x_n$ is paire with the correct output $y_
 
 One type of problems supervised learning targets is classification, a labeling process through
 Pattern recognition. This maps a input set of data to be classfied to a output set known as classes,
- this will result in a discrete probability distribution that shows how probable each classes
-Are to be correct when predicting the labels on the input. When there are only $2$ classes they are
-Denoted as $y \in {0,1}, y \in{-1,+1}$And given the name binary classification. An example of
-Classification would be determining the car model from an image.
+this will result in a discrete probability distribution that shows how probable each classes Are to
+be correct when predicting the labels on the input. When there are only $2$ classes they are Denoted
+as $y \in {0,1}, y \in{-1,+1}$And given the name binary classification. An example of Classification
+would be determining the car model from an image.
 
 ### Design Matrix
 
 When considering a small dataset, a common practice is to store them in a design matrix, a
 $N \times D$ matrix that represent example in row and features in column. Many features however does
 Not share the same value type, an example being a sequence of words or characters rather than
-Fixed-length vectors. This problem is solved by featuriszation where a mapping first convert
-The data into a type of fixed size representation and processed afterwards, an example being the
+Fixed-length vectors. This problem is solved by featuriszation where a mapping first convert The
+data into a type of fixed size representation and processed afterwards, an example being the
 Infamous "bag of words" algorithm for sequential data.
 
 ### Pair Plot
@@ -70,10 +73,9 @@ B(k) =
 \end{dcases}
 $$
 
-However, it maybe beneficial how non binary determination of misclassification as
-Some classes maybe more similar to each other presented in having common features, therefore to
-Guide the training process of the model, it maybe benefitial to use a asymmetric loss function
-$\mathcal{'\{'}l{'\}'}$
+However, it maybe beneficial how non binary determination of misclassification as Some classes maybe
+more similar to each other presented in having common features, therefore to Guide the training
+process of the model, it maybe benefitial to use a asymmetric loss function $\mathcal{'\{'}l{'\}'}$
 
 ## Common Pitfalls
 

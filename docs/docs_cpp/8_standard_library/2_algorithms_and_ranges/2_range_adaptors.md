@@ -1,6 +1,8 @@
 ---
 title: Range Adaptors, Views, and Composition
-description: "C++: Range Adaptors, Views, and Composition — Range Adaptors Overview; Lazy Evaluation: Views Are Composable Without Materialization."
+description:
+  'C++: Range Adaptors, Views, and Composition — Range Adaptors Overview; Lazy Evaluation: Views Are
+  Composable Without Materialization.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -8,6 +10,7 @@ categories:
   - Cpp
 slug: range-adaptors-views-composition
 ---
+
 ## Range Adaptors, Views, and Composition Pipelines
 
 Range adaptors are lazy, composable transformations applied to ranges via the pipe operator `|`.
@@ -24,24 +27,24 @@ $O(1)$ construction and destruction.
 
 The standard library provides these range adaptors [N4950 §26.5.2 Table 96]:
 
-| Adaptor | Description |
+| Adaptor                                      | Description                                |
 | -------------------------------------------- | ------------------------------------------ |
-| `views::filter(pred)` | Elements satisfying predicate |
-| `views::transform(f)` | Apply function to each element |
-| `views::take(n)` | First `n` elements |
-| `views::drop(n)` | Skip first `n` elements |
-| `views::reverse` | Reverse order |
-| `views::zip(r1, r2, ...)` | Zip multiple ranges into tuples |
-| `views::split(delim)` | Split by delimiter |
-| `views::join` | Flatten a range of ranges |
-| `views::enumerate` | Pair each element with its index (C++23) |
-| `views::iota(start)` | Infinite sequence from `start` |
-| `views::keys` | Extract keys from associative containers |
-| `views::values` | Extract values from associative containers |
-| `views::take_while(pred)` | Take elements while predicate holds |
-| `views::drop_while(pred)` | Drop elements while predicate holds |
-| `views::elements&lt;N>` | Extract Nth element from tuple-like values |
-| `views::transform(f) \| views::filter(pred)` | Composition via pipe |
+| `views::filter(pred)`                        | Elements satisfying predicate              |
+| `views::transform(f)`                        | Apply function to each element             |
+| `views::take(n)`                             | First `n` elements                         |
+| `views::drop(n)`                             | Skip first `n` elements                    |
+| `views::reverse`                             | Reverse order                              |
+| `views::zip(r1, r2, ...)`                    | Zip multiple ranges into tuples            |
+| `views::split(delim)`                        | Split by delimiter                         |
+| `views::join`                                | Flatten a range of ranges                  |
+| `views::enumerate`                           | Pair each element with its index (C++23)   |
+| `views::iota(start)`                         | Infinite sequence from `start`             |
+| `views::keys`                                | Extract keys from associative containers   |
+| `views::values`                              | Extract values from associative containers |
+| `views::take_while(pred)`                    | Take elements while predicate holds        |
+| `views::drop_while(pred)`                    | Drop elements while predicate holds        |
+| `views::elements&lt;N>`                      | Extract Nth element from tuple-like values |
+| `views::transform(f) \| views::filter(pred)` | Composition via pipe                       |
 
 ### Lazy Evaluation: Views Are Composable Without Materialization
 
@@ -51,26 +54,26 @@ Arbitrarily many adaptors without paying any cost until you actually consume the
 #### Proof That Views Are Lazy
 
 **Theorem.** For a range adaptor pipeline
-`source | views::filter(pred) | views::transform(f) | views::take(n)`No element evaluation occurs
-At pipeline construction time; all computation is deferred to iteration.
+`source | views::filter(pred) | views::transform(f) | views::take(n)`No element evaluation occurs At
+pipeline construction time; all computation is deferred to iteration.
 
 **Proof.** We reason about the implementation model mandated by the standard [N4950 §26.5.2].
 
 1. Each adaptor is a class template whose constructor stores references (or copies) to the source
- range and the callable. No iteration of the source occurs in the constructor. By [N4950 §26.5.2],
- `std::ranges::view` requires $O(1)$ construction, which precludes iterating the source.
+   range and the callable. No iteration of the source occurs in the constructor. By [N4950 §26.5.2],
+   `std::ranges::view` requires $O(1)$ construction, which precludes iterating the source.
 
 2. `views::filter` stores the source range and the predicate. Its `begin()` returns an iterator
- that, on `operator++`Advances the source iterator past elements failing the predicate. The
- predicate is only invoked when the iterator is advanced, not at construction.
+   that, on `operator++`Advances the source iterator past elements failing the predicate. The
+   predicate is only invoked when the iterator is advanced, not at construction.
 
 3. `views::transform` stores the source and the function. Its iterator's `operator*` applies `f` to
- the current element of the source iterator. The function `f` is invoked only when the element is
- dereferenced, not when the view is constructed.
+   the current element of the source iterator. The function `f` is invoked only when the element is
+   dereferenced, not when the view is constructed.
 
 4. `views::take(n)` stores the source and a counter. Its `begin()` returns an iterator that
- increments the counter on each `operator++` and compares it against `n` in `operator!=` with the
- sentinel. No elements are consumed at construction.
+   increments the counter on each `operator++` and compares it against `n` in `operator!=` with the
+   sentinel. No elements are consumed at construction.
 
 Since each adaptor's constructor only captures its inputs (at $O(1)$ cost), and each adaptor's
 Iterator performs work only when advanced or dereferenced, the entire pipeline performs zero element
@@ -101,11 +104,9 @@ int main() {
 }
 ```
 
-:::tip
-Views are so lightweight that they consist of just a few pointers and sizes stored
-On the stack. The entire pipeline in the example above likely compiles to a tight loop with no heap
-Allocations.
-:::
+:::tip Views are so lightweight that they consist of just a few pointers and sizes stored On the
+stack. The entire pipeline in the example above likely compiles to a tight loop with no heap
+Allocations. :::
 
 ### View Composition with the Pipe Operator
 
@@ -276,9 +277,9 @@ Key observations:
 
 - The `filter_view` stores the source range and predicate by value. Construction is $O(1)$.
 - The `iterator::satisfy()` method is where the predicate is invoked. It runs only when the iterator
- is advanced, not at construction.
+  is advanced, not at construction.
 - Each `operator++` may advance the underlying iterator multiple times (for consecutive elements
- that fail the predicate), but this is $O(1)$ amortized per yielded element.
+  that fail the predicate), but this is $O(1)$ amortized per yielded element.
 
 ### Complete Data Processing Pipeline
 
@@ -443,18 +444,18 @@ A range `R` models `borrowed_range` if and only if:
 
 Standard borrowed ranges include:
 
-| Range type | Borrowed? | Reason |
-| -------------------------------------- | --------- | --------------------------------------- |
-| `std::string_view` | Yes | Non-owning, copyable |
-| `std::span<T>` | Yes | Non-owning, copyable |
-| `std::ranges::ref_view<T>` | Yes | Explicitly holds a reference |
-| `std::ranges::iota_view` | Yes | No underlying storage |
-| `std::ranges::empty_view<T>` | Yes | No underlying storage |
-| `std::ranges::single_view<T>` | Yes | Owns element inline, copyable |
-| `std::vector<int>&` (lvalue reference) | Yes | Lvalue reference is always borrowed |
-| `std::vector<int>` (prvalue) | No | Owning; destroyed at end of expr |
-| `std::ranges::filter_view` | No | Holds reference to source |
-| `std::ranges::transform_view` | No | Holds reference to source |
+| Range type                             | Borrowed? | Reason                              |
+| -------------------------------------- | --------- | ----------------------------------- |
+| `std::string_view`                     | Yes       | Non-owning, copyable                |
+| `std::span<T>`                         | Yes       | Non-owning, copyable                |
+| `std::ranges::ref_view<T>`             | Yes       | Explicitly holds a reference        |
+| `std::ranges::iota_view`               | Yes       | No underlying storage               |
+| `std::ranges::empty_view<T>`           | Yes       | No underlying storage               |
+| `std::ranges::single_view<T>`          | Yes       | Owns element inline, copyable       |
+| `std::vector<int>&` (lvalue reference) | Yes       | Lvalue reference is always borrowed |
+| `std::vector<int>` (prvalue)           | No        | Owning; destroyed at end of expr    |
+| `std::ranges::filter_view`             | No        | Holds reference to source           |
+| `std::ranges::transform_view`          | No        | Holds reference to source           |
 
 ```cpp
 #include <ranges>
@@ -670,9 +671,9 @@ Allows adaptors to be named, stored, composed, and reused independently of any s
 Form of partial application at the type level.
 
 The type-erased composition is achieved through `operator|` overloads. Given a range `r` and a
-Closure `c``r | c` is equivalent to `c(r)`. Given two closures `c1` and `c2``c1 | c2` produces a
-New closure that, when applied to a range `r`Evaluates as `c2(c1(r))` --- function composition in
-The standard mathematical sense [N4950 §26.5.2].
+Closure `c``r | c` is equivalent to `c(r)`. Given two closures `c1` and `c2``c1 | c2` produces a New
+closure that, when applied to a range `r`Evaluates as `c2(c1(r))` --- function composition in The
+standard mathematical sense [N4950 §26.5.2].
 
 ### `views::split` and Delimiter Handling
 

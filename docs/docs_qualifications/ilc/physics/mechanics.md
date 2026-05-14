@@ -1,6 +1,8 @@
 ---
 title: Mechanics
-description: "International LC Physics: Mechanics — Physical Quantities and Units; SI Base Units (OL/HL); Derived Units (OL/HL); Scalars and Vectors (OL/HL)."
+description:
+  'International LC Physics: Mechanics — Physical Quantities and Units; SI Base Units (OL/HL);
+  Derived Units (OL/HL); Scalars and Vectors (OL/HL).'
 date: 2026-04-14
 tags:
   - Physics
@@ -9,6 +11,7 @@ categories:
   - Physics
 slug: mechanics
 ---
+
 # Mechanics
 
 Mechanics is the study of motion and forces. It forms the largest single topic on the Leaving
@@ -18,23 +21,23 @@ Certificate Physics paper and covers kinematics, dynamics, energy, momentum, and
 
 ### SI Base Units (OL/HL)
 
-| Quantity | Unit | Symbol |
+| Quantity            | Unit     | Symbol |
 | ------------------- | -------- | ------ |
-| Mass | kilogram | kg |
-| Length | metre | m |
-| Time | second | s |
-| Temperature | kelvin | K |
-| Electric current | ampere | A |
-| Amount of substance | mole | mol |
-| Luminous intensity | candela | cd |
+| Mass                | kilogram | kg     |
+| Length              | metre    | m      |
+| Time                | second   | s      |
+| Temperature         | kelvin   | K      |
+| Electric current    | ampere   | A      |
+| Amount of substance | mole     | mol    |
+| Luminous intensity  | candela  | cd     |
 
 ### Derived Units (OL/HL)
 
-| Quantity | Unit | In base units |
-| -------- | ----------- | -------------------------------- |
-| Force | newton (N) | $\mathrm{kg m s{}^{-2}$ |
-| Energy | joule (J) | $\mathrm{kg m{}^2\mathrm{ s{}^{-2}$ |
-| Power | watt (W) | $\mathrm{kg m{}^2\mathrm{ s{}^{-3}$ |
+| Quantity | Unit        | In base units                          |
+| -------- | ----------- | -------------------------------------- |
+| Force    | newton (N)  | $\mathrm{kg m s{}^{-2}$                |
+| Energy   | joule (J)   | $\mathrm{kg m{}^2\mathrm{ s{}^{-2}$    |
+| Power    | watt (W)    | $\mathrm{kg m{}^2\mathrm{ s{}^{-3}$    |
 | Pressure | pascal (Pa) | $\mathrm{kg m{}^{-1}\mathrm{ s{}^{-2}$ |
 
 ### Scalars and Vectors (OL/HL)
@@ -80,8 +83,8 @@ The variable that does _not_ appear in each equation tells you when to use it. I
 The time, use $v^2 = u^2 + 2as$. If you do not know the acceleration, use $s = \frac{1}{2}(u+v)t$.
 If you do not know the displacement, use $v = u + at$.
 
-**Example (OL):** A car accelerates from rest at $2\mathrm{ m/s{}^2$ for 8 seconds. Find the distance
-Travelled.
+**Example (OL):** A car accelerates from rest at $2\mathrm{ m/s{}^2$ for 8 seconds. Find the
+distance Travelled.
 
 $$
 S = 0 + \frac{1}{2}(2)(64) = 64\mathrm{ m{}
@@ -112,11 +115,9 @@ Acceleration are negative. Be consistent throughout the calculation.
 A projectile moves under the influence of gravity alone (ignoring air resistance). Resolve the
 Motion into horizontal and vertical components.
 
-
 <PhetSimulation simulationId="forces-and-motion-basics" title="Forces and Motion: Basics" />
 
 Explore the simulation above to develop intuition for this topic.
-
 
 ### Key Principles
 
@@ -180,8 +181,8 @@ $$
 
 ### Projectile from a Height
 
-When launched from a height $h$The time of flight is found from $y(t) = 0$Which is a quadratic
-In $t$. There is no simple closed-form range formula in this case.
+When launched from a height $h$The time of flight is found from $y(t) = 0$Which is a quadratic In
+$t$. There is no simple closed-form range formula in this case.
 
 ## Newton's Laws of Motion (OL/HL)
 
@@ -314,7 +315,8 @@ $$
 W_{\mathrm{nc{}} = \Delta E_k + \Delta E_p
 $$
 
-Where $W_{\mathrm{nc{}} = -fd$ is the work done by friction (negative because friction opposes motion).
+Where $W_{\mathrm{nc{}} = -fd$ is the work done by friction (negative because friction opposes
+motion).
 
 ### Power (OL/HL)
 
@@ -355,8 +357,8 @@ $$
 M_1 u_1 + m_2 u_2 = m_1 v_1 + m_2 v_2
 $$
 
-**Example (OL):** A 3 kg object moving at $4\mathrm{ m/s{}$ collides with a 2 kg object at rest. They
-Stick together. Find the velocity after collision.
+**Example (OL):** A 3 kg object moving at $4\mathrm{ m/s{}$ collides with a 2 kg object at rest.
+They Stick together. Find the velocity after collision.
 
 $$
 3(4) + 2(0) = (3 + 2)v \implies 12 = 5v \implies v = 2.4\mathrm{ m/s{}
@@ -368,8 +370,8 @@ $$
 \mathrm{Impulse{} = F \Delta t = \Delta p = m\Delta v
 $$
 
-The impulse equals the change in momentum. For a given $\Delta p$Increasing $\Delta t$ decreases
-The average force. This is the principle behind crumple zones, air bags, and seat belts.
+The impulse equals the change in momentum. For a given $\Delta p$Increasing $\Delta t$ decreases The
+average force. This is the principle behind crumple zones, air bags, and seat belts.
 
 ### Elastic vs Inelastic Collisions (HL)
 
@@ -490,43 +492,46 @@ Mass and the spring constant.
 ### Ordinary Level
 
 1. A car accelerates uniformly from $10\mathrm{ m/s{}$ to $25\mathrm{ m/s{}$ in 5 seconds. Find the
- acceleration and distance travelled.
-2. A stone is thrown vertically upward at $15\mathrm{ m/s{}$. Find the maximum height and total time of
- flight.
-3. A 50 kg student stands in a lift accelerating upward at $2\mathrm{ m/s{}^2$. Find the normal force
- on the student.
+   acceleration and distance travelled.
+2. A stone is thrown vertically upward at $15\mathrm{ m/s{}$. Find the maximum height and total time
+   of flight.
+3. A 50 kg student stands in a lift accelerating upward at $2\mathrm{ m/s{}^2$. Find the normal
+   force on the student.
 4. A 2000 W motor lifts a 100 kg load through 8 m. How long does it take?
 
 ### Higher Level
 
-1. A projectile is launched at $30\mathrm{ m/s{}$ at $45^\circ$ to the horizontal from a cliff 20 m above
- sea level. Find the horizontal distance from the cliff where it hits the water.
+1. A projectile is launched at $30\mathrm{ m/s{}$ at $45^\circ$ to the horizontal from a cliff 20 m
+   above sea level. Find the horizontal distance from the cliff where it hits the water.
 2. A block of mass 5 kg is on a rough plane inclined at $30^\circ$ with $\mu = 0.3$. Find the
- acceleration of the block down the plane.
+   acceleration of the block down the plane.
 3. A satellite of mass 500 kg orbits Earth at a height of 300 km above the surface. Find the orbital
- speed and period. (Earth's radius $= 6.37 \times 10^6\mathrm{ m{}$
- $M_{\mathrm{Earth{}} = 5.97 \times 10^{24}\mathrm{ kg{}$.)
+   speed and period. (Earth's radius $= 6.37 \times 10^6\mathrm{ m{}$
+   $M_{\mathrm{Earth{}} = 5.97 \times 10^{24}\mathrm{ kg{}$.)
 4. A spring of spring constant $200\mathrm{ N/m{}$ has a mass of 2 kg attached. Find the period of
- oscillation.
+   oscillation.
 
-5. A $3\mathrm{ kg{}$ object moving at $5\mathrm{ m/s{}$ collides elastically with a $2\mathrm{ kg{}$ object
- at rest. Find the velocities after the collision.
+5. A $3\mathrm{ kg{}$ object moving at $5\mathrm{ m/s{}$ collides elastically with a
+   $2\mathrm{ kg{}$ object at rest. Find the velocities after the collision.
 
-6. A ball is swung in a vertical circle of radius $1.0\mathrm{ m{}$. Find the minimum speed at the top
- of the circle and the tension in the string at the bottom when the speed is $6\mathrm{ m/s{}$.
+6. A ball is swung in a vertical circle of radius $1.0\mathrm{ m{}$. Find the minimum speed at the
+   top of the circle and the tension in the string at the bottom when the speed is
+   $6\mathrm{ m/s{}$.
 
-7. A car of mass $1500\mathrm{ kg{}$ rounds a banked curve of radius $100\mathrm{ m{}$ at $18\mathrm{ m/s{}$.
- The banking angle is $20^\circ$. Find the minimum coefficient of static friction required.
+7. A car of mass $1500\mathrm{ kg{}$ rounds a banked curve of radius $100\mathrm{ m{}$ at
+   $18\mathrm{ m/s{}$. The banking angle is $20^\circ$. Find the minimum coefficient of static
+   friction required.
 
-8. A block of mass $4\mathrm{ kg{}$ slides $5\mathrm{ m{}$ down a $35^\circ$ incline with $\mu_k = 0.15$. Find
- the work done by friction, the work done by gravity, and the final speed if the block started
- from rest.
+8. A block of mass $4\mathrm{ kg{}$ slides $5\mathrm{ m{}$ down a $35^\circ$ incline with
+   $\mu_k = 0.15$. Find the work done by friction, the work done by gravity, and the final speed if
+   the block started from rest.
 
 9. A $0.2\mathrm{ kg{}$ mass oscillates on a spring with period $1.5\mathrm{ s{}$. Find the spring
- constant and the total energy if the amplitude is $0.08\mathrm{ m{}$.
+   constant and the total energy if the amplitude is $0.08\mathrm{ m{}$.
 
-10. A $60\mathrm{ kg{}$ person stands on a scale in a lift. The scale reads $650\mathrm{ N{}$. Is the lift
- accelerating, decelerating, or moving at constant velocity? If accelerating, in which direction?
+10. A $60\mathrm{ kg{}$ person stands on a scale in a lift. The scale reads $650\mathrm{ N{}$. Is
+    the lift accelerating, decelerating, or moving at constant velocity? If accelerating, in which
+    direction?
 
 ## 11. Derivation: Kinematic Equations from Calculus (HL)
 
@@ -548,8 +553,8 @@ $$v^2 = u^2 + 2as$$
 
 ## 12. Worked Example: Projectile from a Height (HL)
 
-A ball is thrown from the top of a $20 \mathrm{ m{}$ cliff at $25 \mathrm{ m/s{}$ at $40^{\circ}$ above
-The horizontal. Find the horizontal distance from the cliff where it hits the water.
+A ball is thrown from the top of a $20 \mathrm{ m{}$ cliff at $25 \mathrm{ m/s{}$ at $40^{\circ}$
+above The horizontal. Find the horizontal distance from the cliff where it hits the water.
 
 $$v_x = 25\cos 40^{\circ} = 19.15 \mathrm{ m/s{}, \qquad v_y = 25\sin 40^{\circ} = 16.07 \mathrm{ m/s{}$$
 
@@ -563,9 +568,9 @@ $$R = v_x t = 19.15 \times 4.24 = 81.2 \mathrm{ m{}$$
 
 ## 13. Worked Example: Inclined Plane with Friction (HL)
 
-A $5 \mathrm{ kg{}$ block is on a $30^{\circ}$ rough incline with $\mu_k = 0.3$. It is given an initial
-Velocity of $6 \mathrm{ m/s{}$ up the slope. How far does it travel up the slope before stopping, and
-Does it slide back down?
+A $5 \mathrm{ kg{}$ block is on a $30^{\circ}$ rough incline with $\mu_k = 0.3$. It is given an
+initial Velocity of $6 \mathrm{ m/s{}$ up the slope. How far does it travel up the slope before
+stopping, and Does it slide back down?
 
 **Going up (friction acts down the slope):**
 
@@ -587,8 +592,8 @@ $$a = g(\sin\theta - \mu_k\cos\theta) = 9.8(0.5 - 0.3 \times 0.866) = 9.8 \times
 
 ## 14. Worked Example: Elastic Collision (HL)
 
-A $3 \mathrm{ kg{}$ object moving at $5 \mathrm{ m/s{}$ collides elastically with a $2 \mathrm{ kg{}$ object
-At rest.
+A $3 \mathrm{ kg{}$ object moving at $5 \mathrm{ m/s{}$ collides elastically with a
+$2 \mathrm{ kg{}$ object At rest.
 
 $$v_1 = \frac{m_1 - m_2}{m_1 + m_2}u_1 = \frac{3 - 2}{3 + 2} \times 5 = \frac{1}{5} \times 5 = 1 \mathrm{ m/s{}$$
 
@@ -618,62 +623,64 @@ $v_{\max} = \omega A = \frac{2\pi}{T}A = \frac{2\pi}{1.5} \times 0.08 = 0.335 \m
 **Maximum acceleration:**
 $a_{\max} = \omega^2 A = \left(\frac{2\pi}{1.5}\right)^2 \times 0.08 = \left(\frac{6.283}{1.5}\right)^2 \times 0.08 = 17.55 \times 0.08 = 1.40 \mathrm{ m/s{}^2$
 
-**Total energy:** $E = \frac{1}{2}kA^2 = \frac{1}{2} \times 3.51 \times 0.0064 = 0.0112 \mathrm{ J{}$
+**Total energy:**
+$E = \frac{1}{2}kA^2 = \frac{1}{2} \times 3.51 \times 0.0064 = 0.0112 \mathrm{ J{}$
 
 ## 16. Summary Table: Key Mechanics Formulas
 
-| Topic | Formula | Level | Notes |
-| ----------------- | -------------------------- | ----- | --------------------------------- |
-| Kinematics | $v = u + at$Etc. | OL/HL | Constant acceleration only |
-| Newton's 2nd law | $F = ma$ | OL/HL | Vector equation |
-| Friction | $f \le \mu R$ | OL/HL | Static adjusts; kinetic = $\mu R$ |
-| Work | $W = Fs\cos\theta$ | OL/HL | Scalar |
-| Kinetic energy | $E_k = \frac{1}{2}mv^2$ | OL/HL | Always positive |
-| Potential energy | $E_p = mgh$ | OL/HL | Near surface only |
-| Conservation | $E_k + E_p = \mathrm{const{}$ | OL/HL | No non-conservative forces |
-| Power | $P = Fv$ | OL/HL | Instantaneous power |
-| Momentum | $p = mv$ | OL/HL | Vector |
-| Impulse | $J = F\Delta t = \Delta p$ | HL | Force times time |
-| Centripetal force | $F = mv^2/r$ | HL | Net inward force |
-| SHM | $T = 2\pi\sqrt{m/k}$ | HL | Independent of amplitude |
+| Topic             | Formula                       | Level | Notes                             |
+| ----------------- | ----------------------------- | ----- | --------------------------------- |
+| Kinematics        | $v = u + at$Etc.              | OL/HL | Constant acceleration only        |
+| Newton's 2nd law  | $F = ma$                      | OL/HL | Vector equation                   |
+| Friction          | $f \le \mu R$                 | OL/HL | Static adjusts; kinetic = $\mu R$ |
+| Work              | $W = Fs\cos\theta$            | OL/HL | Scalar                            |
+| Kinetic energy    | $E_k = \frac{1}{2}mv^2$       | OL/HL | Always positive                   |
+| Potential energy  | $E_p = mgh$                   | OL/HL | Near surface only                 |
+| Conservation      | $E_k + E_p = \mathrm{const{}$ | OL/HL | No non-conservative forces        |
+| Power             | $P = Fv$                      | OL/HL | Instantaneous power               |
+| Momentum          | $p = mv$                      | OL/HL | Vector                            |
+| Impulse           | $J = F\Delta t = \Delta p$    | HL    | Force times time                  |
+| Centripetal force | $F = mv^2/r$                  | HL    | Net inward force                  |
+| SHM               | $T = 2\pi\sqrt{m/k}$          | HL    | Independent of amplitude          |
 
 ## 17. Practice Questions (Additional)
 
 ### Higher Level (Additional)
 
 11. A $4 \mathrm{ kg{}$ object on a frictionless surface is connected by a string over a pulley to a
- $6 \mathrm{ kg{}$ object hanging vertically. Find the acceleration and the tension in the string.
+    $6 \mathrm{ kg{}$ object hanging vertically. Find the acceleration and the tension in the
+    string.
 
-12. A ball is thrown vertically upward with speed $18 \mathrm{ m/s{}$ from a height of $5 \mathrm{ m{}$
- above the ground. Find the speed just before it hits the ground.
+12. A ball is thrown vertically upward with speed $18 \mathrm{ m/s{}$ from a height of
+    $5 \mathrm{ m{}$ above the ground. Find the speed just before it hits the ground.
 
-13. A satellite of mass $800 \mathrm{ kg{}$ orbits at $400 \mathrm{ km{}$ altitude. Calculate the orbital
- speed, period, and gravitational potential energy.
+13. A satellite of mass $800 \mathrm{ kg{}$ orbits at $400 \mathrm{ km{}$ altitude. Calculate the
+    orbital speed, period, and gravitational potential energy.
 
 14. A $0.15 \mathrm{ kg{}$ mass on a spring of constant $200 \mathrm{ N/m{}$ has amplitude
- $0.05 \mathrm{ m{}$. Calculate the period, maximum speed, maximum KE, and total energy.
+    $0.05 \mathrm{ m{}$. Calculate the period, maximum speed, maximum KE, and total energy.
 
 15. A car of mass $1200 \mathrm{ kg{}$ travels around a banked curve of radius $80 \mathrm{ m{}$ at
- $18 \mathrm{ m/s{}$. The banking angle is $15^{\circ}$. Find the minimum coefficient of static
- friction required.
+    $18 \mathrm{ m/s{}$. The banking angle is $15^{\circ}$. Find the minimum coefficient of static
+    friction required.
 
-16. Two ice skaters, one of mass $60 \mathrm{ kg{}$ and one of mass $40 \mathrm{ kg{}$Push apart. The
- $60 \mathrm{ kg{}$ skater moves at $2 \mathrm{ m/s{}$. Calculate the velocity of the $40 \mathrm{ kg{}$
- skater and the total KE before and after.
+16. Two ice skaters, one of mass $60 \mathrm{ kg{}$ and one of mass $40 \mathrm{ kg{}$Push apart.
+    The $60 \mathrm{ kg{}$ skater moves at $2 \mathrm{ m/s{}$. Calculate the velocity of the
+    $40 \mathrm{ kg{}$ skater and the total KE before and after.
 
 17. A block of mass $5 \mathrm{ kg{}$ slides $6 \mathrm{ m{}$ down a $35^{\circ}$ incline with
- $\mu_k = 0.15$. Find the work done by friction, the work done by gravity, and the final speed if
- the block started from rest.
+    $\mu_k = 0.15$. Find the work done by friction, the work done by gravity, and the final speed if
+    the block started from rest.
 
-18. A spring of spring constant $150 \mathrm{ N/m{}$ is compressed by $0.12 \mathrm{ m{}$ and launches a
- $0.3 \mathrm{ kg{}$ block on a frictionless surface. Calculate the speed of the block as it leaves
- the spring.
+18. A spring of spring constant $150 \mathrm{ N/m{}$ is compressed by $0.12 \mathrm{ m{}$ and
+    launches a $0.3 \mathrm{ kg{}$ block on a frictionless surface. Calculate the speed of the block
+    as it leaves the spring.
 
 19. Explain why a satellite in a circular orbit around Earth is not truly weightless. Include
- reference to the gravitational field strength at orbital altitude.
+    reference to the gravitational field strength at orbital altitude.
 
-20. A $2 \mathrm{ kg{}$ object is projected up a $30^{\circ}$ rough incline at $10 \mathrm{ m/s{}$ with
- $\mu_k = 0.25$. Find the distance travelled up the incline and whether it returns.
+20. A $2 \mathrm{ kg{}$ object is projected up a $30^{\circ}$ rough incline at $10 \mathrm{ m/s{}$
+    with $\mu_k = 0.25$. Find the distance travelled up the incline and whether it returns.
 
 ## Extended Worked Examples
 
@@ -694,8 +701,8 @@ Significantly shorter. The horizontal component of velocity decreases continuous
 
 (c) **Time of flight:** The maximum height is lower (so less time to reach it), but on the way down,
 Air resistance acts upward (opposing the downward motion), so the projectile takes longer to fall.
-The net effect is a slightly _longer_ time of flight than the ascent time, but the total
-Time may be less than without air resistance due to the much lower apex.
+The net effect is a slightly _longer_ time of flight than the ascent time, but the total Time may be
+less than without air resistance due to the much lower apex.
 
 (d) **Optimal launch angle:** Without air resistance, $45^\circ$ gives maximum range. With air
 Resistance, the optimal angle is less than $45^\circ$ ( around $35°-40^\circ$ for a baseball,
@@ -703,17 +710,15 @@ Depending on the drag coefficient). This is because a lower angle gives a flatte
 Reducing the time the projectile spends in the air (and thus the total distance over which air
 Resistance acts).
 
-:::info
-The study of projectile motion with air resistance requires numerical methods or
+:::info The study of projectile motion with air resistance requires numerical methods or
 Differential equations. At Leaving Certificate level, you are expected to describe the effects
-Qualitatively.
-:::
+Qualitatively. :::
 
 ### Example 22: Conservation of Momentum with External Forces
 
-A $1200 \mathrm{ kg{}$ car travelling east at $15 \mathrm{ m/s{}$ collides with a $1500 \mathrm{ kg{}$ car
-Travelling north at $12 \mathrm{ m/s{}$. They stick together. Find the velocity of the combined wreck
-Immediately after the collision.
+A $1200 \mathrm{ kg{}$ car travelling east at $15 \mathrm{ m/s{}$ collides with a
+$1500 \mathrm{ kg{}$ car Travelling north at $12 \mathrm{ m/s{}$. They stick together. Find the
+velocity of the combined wreck Immediately after the collision.
 
 **Step 1: Momentum conservation (east direction)**
 
@@ -744,9 +749,9 @@ Energy lost $= 243000 - 240000 = 3000 \mathrm{ J{}$ (about $1.2\%$ of initial KE
 ### Example 23: Simple Harmonic Motion -- Mass on a Spring
 
 A $0.8 \mathrm{ kg{}$ mass hangs from a spring with spring constant $50 \mathrm{ N/m{}$. The mass is
-Pulled down $0.1 \mathrm{ m{}$ from equilibrium and released. Calculate (a) the period, (b) the maximum
-Speed, (c) the maximum acceleration, and (d) the speed when the mass is $0.05 \mathrm{ m{}$ from
-Equilibrium.
+Pulled down $0.1 \mathrm{ m{}$ from equilibrium and released. Calculate (a) the period, (b) the
+maximum Speed, (c) the maximum acceleration, and (d) the speed when the mass is $0.05 \mathrm{ m{}$
+from Equilibrium.
 
 **Step 1: Period**
 
@@ -797,22 +802,22 @@ Errors:
 ## Additional Practice Problems
 
 21. A $500 \mathrm{ g{}$ ball is attached to a string of length $1.2 \mathrm{ m{}$ and whirled in a
- vertical circle. Calculate the minimum speed at the top of the circle and the tension in the
- string at the bottom if the speed at the bottom is $8 \mathrm{ m/s{}$.
+    vertical circle. Calculate the minimum speed at the top of the circle and the tension in the
+    string at the bottom if the speed at the bottom is $8 \mathrm{ m/s{}$.
 
-22. Two objects of mass $4 \mathrm{ kg{}$ and $6 \mathrm{ kg{}$ collide. The $4 \mathrm{ kg{}$ object is
- moving at $5 \mathrm{ m/s{}$ and the $6 \mathrm{ kg{}$ object is at rest. After the collision, the
- $4 \mathrm{ kg{}$ object rebounds at $1 \mathrm{ m/s{}$. Calculate the velocity of the $6 \mathrm{ kg{}$
- object and determine the type of collision.
+22. Two objects of mass $4 \mathrm{ kg{}$ and $6 \mathrm{ kg{}$ collide. The $4 \mathrm{ kg{}$
+    object is moving at $5 \mathrm{ m/s{}$ and the $6 \mathrm{ kg{}$ object is at rest. After the
+    collision, the $4 \mathrm{ kg{}$ object rebounds at $1 \mathrm{ m/s{}$. Calculate the velocity
+    of the $6 \mathrm{ kg{}$ object and determine the type of collision.
 
-23. A lift of mass $800 \mathrm{ kg{}$ accelerates upward at $2.5 \mathrm{ m/s{}^2$ for 3 s, then travels
- at constant speed for 5 s, then decelerates at $3 \mathrm{ m/s{}^2$ for 2 s. Calculate the tension
- in the cable during each phase and the total distance travelled.
+23. A lift of mass $800 \mathrm{ kg{}$ accelerates upward at $2.5 \mathrm{ m/s{}^2$ for 3 s, then
+    travels at constant speed for 5 s, then decelerates at $3 \mathrm{ m/s{}^2$ for 2 s. Calculate
+    the tension in the cable during each phase and the total distance travelled.
 
-24. A spring of natural length $0.3 \mathrm{ m{}$ and spring constant $200 \mathrm{ N/m{}$ is compressed
- to $0.15 \mathrm{ m{}$ and used to launch a $0.4 \mathrm{ kg{}$ ball vertically. Calculate the maximum
- height reached and the speed of the ball as it leaves the spring.
+24. A spring of natural length $0.3 \mathrm{ m{}$ and spring constant $200 \mathrm{ N/m{}$ is
+    compressed to $0.15 \mathrm{ m{}$ and used to launch a $0.4 \mathrm{ kg{}$ ball vertically.
+    Calculate the maximum height reached and the speed of the ball as it leaves the spring.
 
 25. Derive an expression for the acceleration of an object sliding down a frictionless incline of
- angle $\theta$. A block takes $4 \mathrm{ s{}$ to slide $8 \mathrm{ m{}$ from rest down a frictionless
- incline. Calculate the angle of the incline.
+    angle $\theta$. A block takes $4 \mathrm{ s{}$ to slide $8 \mathrm{ m{}$ from rest down a
+    frictionless incline. Calculate the angle of the incline.

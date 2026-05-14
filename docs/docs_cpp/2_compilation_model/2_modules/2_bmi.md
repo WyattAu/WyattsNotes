@@ -1,6 +1,8 @@
 ---
 title: Binary Module Interfaces
-description: "C++: Binary Module Interfaces — What BMIs Are and Why They Matter; Formal Basis; Compiler-Specific Formats; BMI Generation with GCC and Clang."
+description:
+  'C++: Binary Module Interfaces — What BMIs Are and Why They Matter; Formal Basis;
+  Compiler-Specific Formats; BMI Generation with GCC and Clang.'
 date: 2025-12-12T03:59:23.474Z
 tags:
   - cpp
@@ -8,6 +10,7 @@ categories:
   - cpp
 slug: bmi
 ---
+
 Import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 The introduction of Modules alters the C++ compilation model. In the header-based model, source
@@ -26,10 +29,10 @@ When a compiler processes a module interface unit (`.cppm` / `.ixx`), it generat
 Outputs:
 
 1. **The Object File (`.o` / `.obj`):** Contains the compiled machine code for the module's
- functions and variables. This goes to the Linker.
+   functions and variables. This goes to the Linker.
 2. **The BMI (`.pcm` / `.ifc` / `.gcm`):** Contains a serialized representation of the Abstract
- Syntax Tree (AST), types, and templates exported by the module. This is consumed by the Compiler
- when compiling downstream importers.
+   Syntax Tree (AST), types, and templates exported by the module. This is consumed by the Compiler
+   when compiling downstream importers.
 
 ### What BMIs Are and Why They Matter
 
@@ -57,11 +60,11 @@ Textually included the module's declarations [N4950 S15.5].
 The BMI format is **not standard**. It is an implementation detail of the compiler, highly sensitive
 To version and configuration.
 
-| Compiler | Extension | Format | Flag |
+| Compiler  | Extension | Format                                 | Flag                            |
 | :-------- | :-------- | :------------------------------------- | :------------------------------ |
-| **Clang** | `.pcm` | Precompiled Module | `-fmodule-file=<name>=<path>` |
-| **MSVC** | `.ifc` | Interfaces Format (Structured Storage) | `/reference <path>` |
-| **GCC** | `.gcm` | GCC Module | `-fmodule-mapper=<socket/file>` |
+| **Clang** | `.pcm`    | Precompiled Module                     | `-fmodule-file=<name>=<path>`   |
+| **MSVC**  | `.ifc`    | Interfaces Format (Structured Storage) | `/reference <path>`             |
+| **GCC**   | `.gcm`    | GCC Module                             | `-fmodule-mapper=<socket/file>` |
 
 ### BMI Generation with GCC and Clang
 
@@ -151,11 +154,11 @@ void internal_render_detail() { /* ... */ }
 
 1. The primary module interface must import all partition interfaces it wishes to export.
 2. A partition implementation unit (`module M:P;` without `export`) contributes to the module but
- does not export any declarations.
+   does not export any declarations.
 3. Partitions cannot be imported by TUs outside the module. Only the primary module interface is
- externally visible.
+   externally visible.
 4. The partition implementation unit has the same module linkage as the module interface [N4950
- S10.2.4 p3], meaning entities defined there have module linkage and are not externally visible.
+   S10.2.4 p3], meaning entities defined there have module linkage and are not externally visible.
 
 ### Proof: Modules Enforce the One Definition Rule
 
@@ -167,13 +170,13 @@ Duplicate symbols, but often the violation is silent.
 Modules enforce the ODR structurally:
 
 1. **Single compilation point:** A module interface unit is compiled exactly once, producing exactly
- one BMI. All importers load the same BMI, guaranteeing they see the same definition.
+   one BMI. All importers load the same BMI, guaranteeing they see the same definition.
 2. **No textual duplication:** Unlike headers, which are textually included in every TU, module
- declarations are loaded from the BMI. There is no opportunity for a TU to see a different
- version.
+   declarations are loaded from the BMI. There is no opportunity for a TU to see a different
+   version.
 3. **Module linkage:** Entities with module linkage [N4950 S10.2.3] are visible only within the
- module's own TUs. Two modules cannot accidentally define the same module-linkage entity because
- name lookup is module-scoped.
+   module's own TUs. Two modules cannot accidentally define the same module-linkage entity because
+   name lookup is module-scoped.
 
 This structural enforcement is a fundamental advantage of modules over headers. The ODR violation
 That silently corrupts binaries in header-based code becomes impossible in module-based code.
@@ -207,7 +210,7 @@ The `export` keyword has precise semantics defined by the standard [N4950 S15.5]
 - `export` can be applied to declarations, namespaces, and using-directives.
 - `export import M;` re-exports all exported entities from module `M`.
 - A declaration without `export` in a module interface is **module-attached**: it has module
- linkage, is visible within the module's TUs, but is invisible to importers.
+  linkage, is visible within the module's TUs, but is invisible to importers.
 
 ```cpp
 export module Geometry;
@@ -228,7 +231,7 @@ By modules:
 
 - An entity with module linkage is unique within the module but not externally visible.
 - Two different modules can each define an entity with the same name at module linkage without
- conflict.
+  conflict.
 - Module linkage is distinct from internal linkage (`static`) and external linkage.
 
 This allows modules to define internal helper functions without polluting the global symbol table or
@@ -295,15 +298,16 @@ Recursion in the preprocessor (caught only by include guards) or subtle ODR viol
 ### Architectural Constraints
 
 1. **Ephemeral Nature:** BMIs are transient build artifacts (like `.o` files). They should never be
- distributed, version controlled, or installed to `/usr/include`.
+   distributed, version controlled, or installed to `/usr/include`.
 2. **Configuration Dependency:** A BMI is tied to the specific flags used to build it. Changing
- `-std=c++23``-DDEBUG`Or even `-O3` invalidates the BMI, requiring a rebuild of the
- entire module subgraph.
+   `-std=c++23``-DDEBUG`Or even `-O3` invalidates the BMI, requiring a rebuild of the entire module
+   subgraph.
 3. **Two-Phase Compilation:** To maximize parallelism, build systems often split module compilation
- into two steps:
- - **Step 1:** Generate the BMI (Fast, Semantic info only).
- - **Step 2:** Generate the Object File (Slow, Optimization and Codegen).
- - _Benefit:_ Downstream consumers only wait for Step 1.
+   into two steps:
+
+- **Step 1:** Generate the BMI (Fast, Semantic info only).
+- **Step 2:** Generate the Object File (Slow, Optimization and Codegen).
+- _Benefit:_ Downstream consumers only wait for Step 1.
 
 ## 2. The Dependency Scanning Problem
 
@@ -328,13 +332,15 @@ JSON.
 ### The Scanning Workflow
 
 1. **Pre-Scan:** The build system invokes the compiler on _every_ source file in a lightweight
- scanning mode (parsing imports/exports, ignoring function bodies).
+   scanning mode (parsing imports/exports, ignoring function bodies).
 2. **Graph Construction:** The compiler outputs a JSON file listing:
- - **Provides:** What module names this file exports.
- - **Requires:** What module names this file imports.
+
+- **Provides:** What module names this file exports.
+- **Requires:** What module names this file imports.
+
 3. **Collation:** The build system aggregates these snippets to construct the full DAG.
 4. **Scheduling:** The build system generates the concrete build steps (Ninja rules) dynamically,
- ensuring Module A is built before Module B.
+   ensuring Module A is built before Module B.
 
 ## 3. Build System Implementation (CMake & Ninja)
 
@@ -350,9 +356,9 @@ Build step can generate a file that _adds new edges_ to the graph at runtime.
 
 1. **Scan Rule:** Ninja runs the scanner on `src/engine.cppm`.
 2. **Dyndep Generation:** The scanner output (P1689 JSON) is converted into a Ninja dyndep file
- (`.dd`).
+   (`.dd`).
 3. **Graph Update:** Ninja reads the `.dd` file, learns that `engine.pcm` is a prerequisite for any
- file importing `Engine`.
+   file importing `Engine`.
 4. **Execution:** Ninja schedules the compilation of `Engine`.
 
 ### CMake Configuration
@@ -415,23 +421,23 @@ Compile). However, the scan is extremely fast (no template instantiation, no cod
 To mitigate the serialization bottleneck:
 
 1. **Minimize Interface Surface:** Keep code in the PMIU (`.cppm`) minimal. Move logic to
- Implementation Units (`.cpp`).
+   Implementation Units (`.cpp`).
 2. **Use Partitions:** Break large modules into partitions. Partitions can often be scanned and
- compiled in parallel, provided they don't depend on each other.
+   compiled in parallel, provided they don't depend on each other.
 3. **Avoid "God Modules":** A central module imported by everything acts as a synchronization
- barrier, stalling the entire build until it is finished.
+   barrier, stalling the entire build until it is finished.
 4. **Two-Phase Compilation:** Generate BMIs before object files so downstream consumers can start as
- soon as the BMI is ready.
+   soon as the BMI is ready.
 
 ## 5. Current Toolchain Support Status
 
 Module support varies significantly across compilers as of 2025:
 
-| Compiler | Version | `import std;` | BMI Format | Scanning (P1689) | Status |
+| Compiler  | Version        | `import std;` | BMI Format | Scanning (P1689) | Status           |
 | :-------- | :------------- | :------------ | :--------- | :--------------- | :--------------- |
-| **Clang** | 18+ | Yes | `.pcm` | Yes | Production-ready |
-| **GCC** | 14+ | Experimental | `.gcm` | Partial | Experimental |
-| **MSVC** | VS 2022 17.10+ | Yes | `.ifc` | Yes (CMake) | Production-ready |
+| **Clang** | 18+            | Yes           | `.pcm`     | Yes              | Production-ready |
+| **GCC**   | 14+            | Experimental  | `.gcm`     | Partial          | Experimental     |
+| **MSVC**  | VS 2022 17.10+ | Yes           | `.ifc`     | Yes (CMake)      | Production-ready |
 
 ### Clang
 
@@ -489,11 +495,14 @@ To verify that scanning and BMI generation are working correctly, inspect the bu
 Generator).
 
 1. **Look for BMIs:**
- - **Clang/GCC:** Look for `.pcm` or `.gcm` files in `CMakeFiles/Engine.dir/`.
- - **MSVC:** Look for `.ifc` files.
+
+- **Clang/GCC:** Look for `.pcm` or `.gcm` files in `CMakeFiles/Engine.dir/`.
+- **MSVC:** Look for `.ifc` files.
+
 2. **Inspect `dyndep` files:**
- - Look for `*.dd` files generated by Ninja. These text files describe the dynamic edges added to
- the graph.
+
+- Look for `*.dd` files generated by Ninja. These text files describe the dynamic edges added to the
+  graph.
 
 ```text
 # Example .dd content
@@ -505,22 +514,22 @@ build CMakeFiles/App.dir/main.cpp.o: dyndep | CMakeFiles/Engine.dir/engine.pcm
 ## Common Pitfalls
 
 - **BMI version mismatch:** Rebuilding a module with different compiler flags but not cleaning the
- old BMI causes downstream consumers to load an incompatible BMI, producing bizarre errors. Always
- clean the build directory when changing compiler flags or upgrading the compiler.
+  old BMI causes downstream consumers to load an incompatible BMI, producing bizarre errors. Always
+  clean the build directory when changing compiler flags or upgrading the compiler.
 - **Circular module dependencies:** Module A imports Module B and Module B imports Module A is
- illegal. Restructure using partitions or shared utility modules. The build system scanner should
- catch this, but some scanners may report it as a confusing "module not found" error.
+  illegal. Restructure using partitions or shared utility modules. The build system scanner should
+  catch this, but some scanners may report it as a confusing "module not found" error.
 - **Missing `export`:** Forgetting `export` on a declaration in a module interface means it is
- module-local and invisible to importers, causing "no member named" errors. This is the most common
- beginner mistake with modules.
+  module-local and invisible to importers, causing "no member named" errors. This is the most common
+  beginner mistake with modules.
 - **Macro use in module interface:** Macros from the global module fragment are visible inside the
- module but not to importers. If an importer needs a macro, use `export` or define it in the
- importer's own GMF.
+  module but not to importers. If an importer needs a macro, use `export` or define it in the
+  importer's own GMF.
 - **Partition interface not imported by primary interface:** A partition that is not imported by the
- primary module interface is invisible to importers, even if the partition is compiled
- successfully. This produces "no module named" errors at import time.
+  primary module interface is invisible to importers, even if the partition is compiled
+  successfully. This produces "no module named" errors at import time.
 - **Implementation unit accidentally exported:** Writing `export module M:P;` makes it a partition
- interface, not an implementation unit. An implementation unit uses `module M:P;` (no `export`).
+  interface, not an implementation unit. An implementation unit uses `module M:P;` (no `export`).
 
 ## 8. BMI File Size and Build Disk Pressure
 
@@ -533,12 +542,12 @@ Combined with the object files, the total build artifact size can exceed 1 GB. T
 Implications:
 
 1. **CI disk pressure:** CI runners with limited storage may fill up during module-heavy builds.
- Ensure CI cleanup jobs remove stale BMIs from previous builds.
+   Ensure CI cleanup jobs remove stale BMIs from previous builds.
 2. **NFS/shared filesystem builds:** BMI files are accessed frequently during compilation (read by
- downstream TUs). On NFS mounts, the latency of reading large BMIs can dominate build time. Prefer
- local builds or SSD-backed shared storage.
+   downstream TUs). On NFS mounts, the latency of reading large BMIs can dominate build time. Prefer
+   local builds or SSD-backed shared storage.
 3. **`.gitignore` hygiene:** BMI files (`.pcm``.ifc``.gcm`) must never be committed. Add them to
- `.gitignore` and verify they are not tracked with `git ls-files '*.pcm'`.
+   `.gitignore` and verify they are not tracked with `git ls-files '*.pcm'`.
 
 ## 9. BMI and Template Instantiation Boundaries
 
@@ -549,7 +558,7 @@ Information for Module B to instantiate `foo<int>` if needed. This means:
 - **The full template definition** must be present in the BMI, not just the declaration.
 - **All types referenced by the template** must also be in the BMI (transitive type information).
 - **Concept constraints** used by the template must be available for constraint checking in
- importers.
+  importers.
 
 This is why BMIs for headers like `<vector>` are so large — they must carry the full definitions of
 Dozens of internal templates (allocators, iterators, node types) so that downstream TUs can
@@ -564,14 +573,14 @@ Internals, exporting only the concrete type aliases.
 
 The exact rules for BMI invalidation are compiler-specific but follow a general pattern:
 
-| Change | BMI Invalidated? | Downstream Rebuild? |
+| Change                                | BMI Invalidated? | Downstream Rebuild? |
 | :------------------------------------ | :--------------- | :------------------ |
-| Module interface source modified | Yes | Yes |
-| Module implementation source modified | No | No |
-| Imported module's BMI changed | Yes | Yes |
-| Compiler flag `-D` changed | Yes | Yes |
-| Compiler version changed | Yes | Yes |
-| Optimization level `-O` changed | yes | Yes |
+| Module interface source modified      | Yes              | Yes                 |
+| Module implementation source modified | No               | No                  |
+| Imported module's BMI changed         | Yes              | Yes                 |
+| Compiler flag `-D` changed            | Yes              | Yes                 |
+| Compiler version changed              | Yes              | Yes                 |
+| Optimization level `-O` changed       | yes              | Yes                 |
 
 The transitive nature of invalidation is critical: if Module C imports Module B which imports Module
 A, a change to A's interface invalidates B's BMI, which invalidates C's BMI. This cascade is why
@@ -585,20 +594,20 @@ Files it consumed. If any of those BMIs are newer than the TU's object file, the
 BMI-related errors are among the most difficult to diagnose in C++ module builds. Common symptoms
 And their causes:
 
-| Symptom | Likely Cause |
+| Symptom                  | Likely Cause                                          |
 | :----------------------- | :---------------------------------------------------- |
-| "module file not found" | BMI path not passed to compiler (`-fmodule-file`) |
-| "incompatible module" | BMI compiled with different flags or compiler version |
-| "ambiguous symbol" | Same entity exported from two imported modules |
-| "entity not found" | Missing `export` on the declaration |
-| Infinite compilation | Circular dependency (should be caught by scanner) |
-| "module already defined" | Module compiled twice (check CMake source lists) |
+| "module file not found"  | BMI path not passed to compiler (`-fmodule-file`)     |
+| "incompatible module"    | BMI compiled with different flags or compiler version |
+| "ambiguous symbol"       | Same entity exported from two imported modules        |
+| "entity not found"       | Missing `export` on the declaration                   |
+| Infinite compilation     | Circular dependency (should be caught by scanner)     |
+| "module already defined" | Module compiled twice (check CMake source lists)      |
 
 **Diagnostic workflow:**
 
 1. Check that the BMI file exists at the expected path using `ls build/**/*.pcm`.
 2. Verify the compiler flags used to build the BMI match the consumer's flags (`-std=c++23`
- `-D...`).
+   `-D...`).
 3. Inspect the `dyndep` files (Ninja) to confirm the DAG is correct and acyclic.
 4. Use `clang++ --show-module-info` to dump BMI metadata and verify the exported symbol set.
 
@@ -643,11 +652,11 @@ Minimize the critical path through the build.
 When splitting a module into partitions, each partition interface (`.cppm`) produces a BMI, while
 Partition implementation units (`.cpp`) do not. This distinction has build-time implications:
 
-| Design Choice | BMI Count | Parallelism | Interface Visibility |
+| Design Choice                                       | BMI Count | Parallelism              | Interface Visibility           |
 | :-------------------------------------------------- | :-------- | :----------------------- | :----------------------------- |
-| Everything in primary interface | 1 | None (single bottleneck) | Full |
-| All partitions as interface units | N+1 | High (flat graph) | Full |
-| 1 interface partition + N implementation partitions | 2 | High | Limited to interface partition |
+| Everything in primary interface                     | 1         | None (single bottleneck) | Full                           |
+| All partitions as interface units                   | N+1       | High (flat graph)        | Full                           |
+| 1 interface partition + N implementation partitions | 2         | High                     | Limited to interface partition |
 
 The third option is often optimal for large modules: put the public API in a single partition
 Interface, and move all implementation details into implementation partitions. This produces only
@@ -694,9 +703,9 @@ System, not by `__declspec`. This means:
 
 - The `ENGINE_API` macro must be removed from module interface files.
 - Visibility is controlled via compiler flags (`-fvisibility=hidden`) and explicit
- `__attribute__((visibility("default")))` on specific declarations if needed.
+  `__attribute__((visibility("default")))` on specific declarations if needed.
 - For shared library distribution, the module interface source (`.cppm`) must be shipped alongside
- the library so consumers can rebuild the BMI with their own visibility settings.
+  the library so consumers can rebuild the BMI with their own visibility settings.
 
 This is an unresolved friction point in the module ecosystem. Libraries that rely heavily on export
 Macros require significant refactoring to adopt modules.

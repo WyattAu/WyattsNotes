@@ -1,6 +1,8 @@
 ---
 title: Stack
-description: "C++: Stack — 1. The Hardware Mechanism (x86_64); The Registers; Allocation and Deallocation; The Sequence of a Function Call."
+description:
+  'C++: Stack — 1. The Hardware Mechanism (x86_64); The Registers; Allocation and Deallocation; The
+  Sequence of a Function Call.'
 date: 2025-12-13T04:07:38.177Z
 tags:
   - cpp
@@ -8,6 +10,7 @@ categories:
   - cpp
 slug: stack-frame
 ---
+
 Import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 In C++, "Automatic Storage Duration" (variables declared locally) is implemented via the **Call
@@ -24,16 +27,16 @@ Memory addresses.
 
 - **`RSP` (Stack Pointer):** Points to the "top" (lowest address) of the stack.
 - **`RBP` (Base Pointer / Frame Pointer):** Points to the beginning of the current stack frame.
- (Note: Modern compilers often omit this via `-fomit-frame-pointer` to free up a register,
- addressing locals relative to `RSP` instead).
+  (Note: Modern compilers often omit this via `-fomit-frame-pointer` to free up a register,
+  addressing locals relative to `RSP` instead).
 - **`RIP` (Instruction Pointer):** Holds the address of the next instruction to execute.
 
 ### Allocation and Deallocation
 
 - **Allocation:** Subtracting from `RSP`.
- - `sub rsp, 0x20` (Allocates 32 bytes).
+- `sub rsp, 0x20` (Allocates 32 bytes).
 - **Deallocation:** Adding to `RSP`.
- - `add rsp, 0x20` (Frees 32 bytes).
+- `add rsp, 0x20` (Frees 32 bytes).
 
 This simple integer arithmetic is why stack allocation is deterministic and orders of magnitude
 Faster than heap allocation.
@@ -47,32 +50,35 @@ The platform's ABI (Application Binary Interface).
 
 When `Caller()` invokes `Callee()`:
 
-1. **Argument Passing:** Arguments are placed in registers (`RDI``RSI``RDX`...) or pushed onto
- the stack if registers are exhausted.
+1. **Argument Passing:** Arguments are placed in registers (`RDI``RSI``RDX`...) or pushed onto the
+   stack if registers are exhausted.
 2. **The Call Instruction:** The CPU pushes the **Return Address** (the current value of `RIP`) onto
- the stack and jumps to the `Callee`.
+   the stack and jumps to the `Callee`.
 3. **Prologue:** The `Callee` sets up its frame:
- - Pushes the old `RBP` (to restore the caller's frame later).
- - Sets `RBP = RSP`.
- - Subtracts from `RSP` to allocate space for local variables.
+
+- Pushes the old `RBP` (to restore the caller's frame later).
+- Sets `RBP = RSP`.
+- Subtracts from `RSP` to allocate space for local variables.
+
 4. **Body:** Execution of the function logic.
 5. **Epilogue:**
- - `mov rsp, rbp` (Deallocate locals).
- - `pop rbp` (Restore caller's base pointer).
- - `ret` (Pop the Return Address into `RIP`Jumping back to `Caller`).
+
+- `mov rsp, rbp` (Deallocate locals).
+- `pop rbp` (Restore caller's base pointer).
+- `ret` (Pop the Return Address into `RIP`Jumping back to `Caller`).
 
 ### Memory Visualization
 
 Consider the layout in memory (High addresses at top, Low at bottom):
 
-| Address | Content | Description |
+| Address     | Content            | Description                                         |
 | :---------- | :----------------- | :-------------------------------------------------- |
-| `0x7FFF08` | `Arg N` | Stack arguments (if any) |
-| `0x7FFF00` | **Return Address** | **CRITICAL:** Where execution resumes after return. |
-| `0x7FFFF8` | Saved RBP | Link to the previous stack frame. |
-| `0x7FFFF0` | `local_var_1` | Local variables of current function. |
-| `0x7FFF...` | ... | ... |
-| `0x7FFFE0` | `buffer[0]` | Start of a local array. |
+| `0x7FFF08`  | `Arg N`            | Stack arguments (if any)                            |
+| `0x7FFF00`  | **Return Address** | **CRITICAL:** Where execution resumes after return. |
+| `0x7FFFF8`  | Saved RBP          | Link to the previous stack frame.                   |
+| `0x7FFFF0`  | `local_var_1`      | Local variables of current function.                |
+| `0x7FFF...` | ...                | ...                                                 |
+| `0x7FFFE0`  | `buffer[0]`        | Start of a local array.                             |
 
 ## 3. Buffer Overflows (Stack Smashing)
 
@@ -121,7 +127,7 @@ Control Data (RBP/Return Address).
 1. Read the value from the stack.
 2. XOR it with the original secret.
 3. If they do not match (result non-zero), assume a buffer overflow occurred and call
- `__stack_chk_fail` (terminating the process immediately).
+   `__stack_chk_fail` (terminating the process immediately).
 
 **Compiler Flags:**
 
@@ -140,7 +146,7 @@ Newer CPUs (Intel Tiger Lake+, AMD Zen 3+) support **Control-flow Enforcement Te
 - The CPU maintains a second, hidden stack solely for Return Addresses.
 - On `call`The return address is pushed to _both_ the main stack and shadow stack.
 - On `ret`The CPU compares the two. If they differ (due to main stack corruption), a hardware
- exception is raised.
+  exception is raised.
 
 ## 5. C++23 Safety Strategies
 
@@ -193,9 +199,9 @@ Function). Using uninitialized values is Undefined Behavior.
 **Mitigation:** Clang and GCC support automatic initialization patterns.
 
 - `-ftrivial-auto-var-init=pattern`: Fills stack variables with a specific pattern (e.g., `0xAA`).
- Useful for debugging.
+  Useful for debugging.
 - `-ftrivial-auto-var-init=zero`: Fills stack variables with zero. Safer for production (reduces
- info leaks), though theoretically masks logic bugs.
+  info leaks), though theoretically masks logic bugs.
 
 ## Verification
 
@@ -234,11 +240,11 @@ Look for `Security Cookie` entries.
 
 Every thread receives a fixed-size stack at creation time. The default size varies by platform:
 
-| Platform | Default Stack Size | Configuration Mechanism |
+| Platform      | Default Stack Size                    | Configuration Mechanism                             |
 | :------------ | :------------------------------------ | :-------------------------------------------------- |
-| Linux (glibc) | 8 MB | `ulimit -s` (soft limit), `setrlimit(RLIMIT_STACK)` |
-| macOS | 8 MB (main thread), 512 KB (pthreads) | `ulimit -s``pthread_attr_setstacksize` |
-| Windows | 1 MB | `/STACK:reserve,commit` linker flag |
+| Linux (glibc) | 8 MB                                  | `ulimit -s` (soft limit), `setrlimit(RLIMIT_STACK)` |
+| macOS         | 8 MB (main thread), 512 KB (pthreads) | `ulimit -s``pthread_attr_setstacksize`              |
+| Windows       | 1 MB                                  | `/STACK:reserve,commit` linker flag                 |
 
 ### Detecting Stack Exhaustion
 
@@ -327,7 +333,7 @@ Locals.
 **Compiler flags:**
 
 - `-mno-red-zone`: Disables the Red Zone. Required for kernel code (where interrupts can fire at any
- point and clobber the Red Zone) and for signal handler code.
+  point and clobber the Red Zone) and for signal handler code.
 - `-mred-zone`: Default for user-space code on System V platforms.
 
 ```cpp
@@ -423,7 +429,7 @@ The compiler cannot apply TCO if:
 
 - The recursive call is not in tail position (there is work after the call).
 - The function takes the address of a local variable and passes it to the callee (the callee might
- reference the caller's stack frame, which would be overwritten).
+  reference the caller's stack frame, which would be overwritten).
 - Debug builds (`-O0`) disable TCO for easier debugging.
 - `-fno-optimize-sibling-calls` explicitly disables TCO.
 
@@ -549,10 +555,9 @@ Main Thread Stack:         Thread 2 Stack:           Thread 3 Stack:
 
 ### Stack Address Space Layout
 
-On Linux, thread stacks are allocated using `mmap` in the virtual address space. The stack
-Region is placed near the top of the address space (for the main thread) or in a random location
-(for other threads, due to ASLR). A guard page (unmapped page) at the bottom of the stack detects
-Overflow.
+On Linux, thread stacks are allocated using `mmap` in the virtual address space. The stack Region is
+placed near the top of the address space (for the main thread) or in a random location (for other
+threads, due to ASLR). A guard page (unmapped page) at the bottom of the stack detects Overflow.
 
 ### Per-Thread Stack Configuration
 

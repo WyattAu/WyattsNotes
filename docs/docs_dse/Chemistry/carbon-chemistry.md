@@ -1,6 +1,8 @@
 ---
 title: Chemistry - Carbon Chemistry
-description: "DSE Chemistry carbon chemistry notes covering hydrocarbons, alkanes, alkenes, alcohols, carboxylic acids, polymers, and macromolecules."
+description:
+  'DSE Chemistry carbon chemistry notes covering hydrocarbons, alkanes, alkenes, alcohols,
+  carboxylic acids, polymers, and macromolecules.'
 date: 2026-04-23T00:00:00.000Z
 tags:
   - Chemistry
@@ -27,16 +29,16 @@ Maximum possible number of hydrogen atoms per carbon atom.
 
 ### Naming (IUPAC)
 
-| Carbon Atoms | Name | Formula |
-| ------------ | --------- | -------------------- |
-| 1 | Methane | $\mathrm{CH_4}$ |
-| 2 | Ethane | $\mathrm{C_2H_6}$ |
-| 3 | Propane | $\mathrm{C_3H_8}$ |
-| 4 | Butane | $\mathrm{C_4H_{10}}$ |
-| 5 | Pentane | $\mathrm{C_5H_{12}}$ |
-| 6 | Hexane | $\mathrm{C_6H_{14}}$ |
-| 7 | Heptane | $\mathrm{C_7H_{16}}$ |
-| 8 | Octane | $\mathrm{C_8H_{18}}$ |
+| Carbon Atoms | Name    | Formula              |
+| ------------ | ------- | -------------------- |
+| 1            | Methane | $\mathrm{CH_4}$      |
+| 2            | Ethane  | $\mathrm{C_2H_6}$    |
+| 3            | Propane | $\mathrm{C_3H_8}$    |
+| 4            | Butane  | $\mathrm{C_4H_{10}}$ |
+| 5            | Pentane | $\mathrm{C_5H_{12}}$ |
+| 6            | Hexane  | $\mathrm{C_6H_{14}}$ |
+| 7            | Heptane | $\mathrm{C_7H_{16}}$ |
+| 8            | Octane  | $\mathrm{C_8H_{18}}$ |
 
 ### Properties of Alkanes
 
@@ -82,15 +84,16 @@ $$\mathrm{CHCl_3} + \mathrm{Cl_2} \to \mathrm{CCl_4} + \mathrm{HCl}$$
 
 $$\mathrm{C_nH_{2n}}$$
 
-Alkenes are **unsaturated hydrocarbons**: they contain at least one carbon-carbon double bond ($\mathrm{C = C}$).
+Alkenes are **unsaturated hydrocarbons**: they contain at least one carbon-carbon double bond
+($\mathrm{C = C}$).
 
 ### Naming
 
-| Carbon Atoms | Name | Formula |
-| ------------ | ----------- | -------------------- |
-| 2 | Ethene | $\mathrm{C_2H_4}$ |
-| 3 | Propene | $\mathrm{C_3H_6}$ |
-| 4 | Butene | $\mathrm{C_4H_8}$ |
+| Carbon Atoms | Name    | Formula           |
+| ------------ | ------- | ----------------- |
+| 2            | Ethene  | $\mathrm{C_2H_4}$ |
+| 3            | Propene | $\mathrm{C_3H_6}$ |
+| 4            | Butene  | $\mathrm{C_4H_8}$ |
 
 ### Properties of Alkenes
 
@@ -153,24 +156,25 @@ A homologous series is a family of organic compounds with:
 - The same general formula
 - The same functional group
 - Similar chemical properties
-- Gradually changing physical properties (e.g., increasing boiling point with increasing chain length)
+- Gradually changing physical properties (e.g., increasing boiling point with increasing chain
+  length)
 - Each successive member differs by $\mathrm{CH_2}$
 
 ---
 
 ## Functional Groups
 
-| Functional Group | Class | Suffix / Prefix | Example |
-| ----------------- | ---------------- | ---------------- | -------------------------- |
-| $\mathrm{C = C}$ | Alkene | -ene | $\mathrm{CH_2 = CH_2}$ |
-| $\mathrm{C \equiv C}$ | Alkyne | -yne | $\mathrm{CH \equiv CH}$ |
-| $-\mathrm{OH}$ | Alcohol | -ol | $\mathrm{C_2H_5OH}$ |
-| $-\mathrm{COOH}$ | Carboxylic acid | -oic acid | $\mathrm{CH_3COOH}$ |
-| $-\mathrm{CHO}$ | Aldehyde | -al | $\mathrm{CH_3CHO}$ |
-| $\mathrm{\gt C = O}$ | Ketone | -one | $\mathrm{CH_3COCH_3}$ |
-| $-\mathrm{COO}-$ | Ester | -oate | $\mathrm{CH_3COOCH_3}$ |
-| $-\mathrm{NH_2}$ | Amine | -amine | $\mathrm{CH_3NH_2}$ |
-| $-\mathrm{Cl}$$-\mathrm{Br}$ | Halide | chloro-, bromo- | $\mathrm{CH_3Cl}$ |
+| Functional Group             | Class           | Suffix / Prefix | Example                 |
+| ---------------------------- | --------------- | --------------- | ----------------------- |
+| $\mathrm{C = C}$             | Alkene          | -ene            | $\mathrm{CH_2 = CH_2}$  |
+| $\mathrm{C \equiv C}$        | Alkyne          | -yne            | $\mathrm{CH \equiv CH}$ |
+| $-\mathrm{OH}$               | Alcohol         | -ol             | $\mathrm{C_2H_5OH}$     |
+| $-\mathrm{COOH}$             | Carboxylic acid | -oic acid       | $\mathrm{CH_3COOH}$     |
+| $-\mathrm{CHO}$              | Aldehyde        | -al             | $\mathrm{CH_3CHO}$      |
+| $\mathrm{\gt C = O}$         | Ketone          | -one            | $\mathrm{CH_3COCH_3}$   |
+| $-\mathrm{COO}-$             | Ester           | -oate           | $\mathrm{CH_3COOCH_3}$  |
+| $-\mathrm{NH_2}$             | Amine           | -amine          | $\mathrm{CH_3NH_2}$     |
+| $-\mathrm{Cl}$$-\mathrm{Br}$ | Halide          | chloro-, bromo- | $\mathrm{CH_3Cl}$       |
 
 ---
 
@@ -276,7 +280,7 @@ $$\mathrm{C_nH_{2n+1}OH}$$
 - Hydrogen bonding between molecules gives higher boiling points than alkanes of similar mass
 - Miscible with water (for small alcohols) due to hydrogen bonding
 - Can be classified as primary, secondary, or tertiary based on the carbon the $-\mathrm{OH}$ is
- attached to
+  attached to
 
 ### Reactions of Alcohols
 
@@ -386,13 +390,13 @@ Formed from a diol and a dicarboxylic acid.
 
 ### Environmental Impact of Plastics
 
-| Issue | Description |
-| ---------------------- | ------------------------------------------------------------ |
-| Non-biodegradability | Most plastics persist in the environment for hundreds of years |
-| Landfill accumulation | Plastics occupy significant landfill space |
-| Microplastics | Small plastic fragments pollute waterways and oceans |
-| Recycling | Not all plastics are recyclable |
-| Biodegradable alternatives | Biopolymers (e.g., from starch, cellulose) offer solutions |
+| Issue                      | Description                                                    |
+| -------------------------- | -------------------------------------------------------------- |
+| Non-biodegradability       | Most plastics persist in the environment for hundreds of years |
+| Landfill accumulation      | Plastics occupy significant landfill space                     |
+| Microplastics              | Small plastic fragments pollute waterways and oceans           |
+| Recycling                  | Not all plastics are recyclable                                |
+| Biodegradable alternatives | Biopolymers (e.g., from starch, cellulose) offer solutions     |
 
 ---
 
@@ -405,10 +409,10 @@ Formed from a diol and a dicarboxylic acid.
 - **Linkage:** Peptide bonds (amide bonds) formed by condensation:
   $$-\mathrm{COOH} + \mathrm{H_2N}- \to -\mathrm{CONH}- + \mathrm{H_2O}$$
 - **Structure levels:**
- - Primary: sequence of amino acids
- - Secondary: alpha helices and beta sheets (hydrogen bonding)
- - Tertiary: 3D folding (disulfide bridges, hydrogen bonds, ionic interactions)
- - Quaternary: assembly of multiple polypeptide chains
+- Primary: sequence of amino acids
+- Secondary: alpha helices and beta sheets (hydrogen bonding)
+- Tertiary: 3D folding (disulfide bridges, hydrogen bonds, ionic interactions)
+- Quaternary: assembly of multiple polypeptide chains
 - **Functions:** Enzymes, structural support, transport, hormones, antibodies
 - **Hydrolysis:** Proteins break down into amino acids by acid or enzyme hydrolysis
 
@@ -432,7 +436,7 @@ Formed from a diol and a dicarboxylic acid.
 ### DNA (Deoxyribonucleic Acid)
 
 - **Monomers:** Nucleotides (each consisting of a phosphate group, a deoxyribose sugar, and a
- nitrogenous base)
+  nitrogenous base)
 - **Bases:** Adenine (A), Thymine (T), Guanine (G), Cytosine (C)
 - **Base pairing:** A pairs with T (2 hydrogen bonds); G pairs with C (3 hydrogen bonds)
 - **Structure:** Double helix held together by hydrogen bonds between complementary base pairs
@@ -458,34 +462,35 @@ Undigested and acts as dietary fibre.
 
 ## Common Pitfalls
 
-- Confusing alkanes (saturated, $\mathrm{C_nH_{2n+2}}$) with alkenes (unsaturated, $\mathrm{C_nH_{2n}}$).
+- Confusing alkanes (saturated, $\mathrm{C_nH_{2n+2}}$) with alkenes (unsaturated,
+  $\mathrm{C_nH_{2n}}$).
 - Writing incomplete combustion products. With limited oxygen, $\mathrm{CO}$ and $\mathrm{C}$ (soot)
- can form in addition to $\mathrm{CO_2}$.
-- Misnaming organic compounds. Always identify the longest chain and number it to give the functional
- group the lowest position number.
-- Forgetting that substitution occurs in alkanes (requires UV light) while addition occurs in alkenes
- (no special conditions needed).
+  can form in addition to $\mathrm{CO_2}$.
+- Misnaming organic compounds. Always identify the longest chain and number it to give the
+  functional group the lowest position number.
+- Forgetting that substitution occurs in alkanes (requires UV light) while addition occurs in
+  alkenes (no special conditions needed).
 - Confusing addition polymers (alkenes) with condensation polymers (require two different functional
- groups and produce a small molecule like water).
-- Forgetting that esters are named with the alkyl part (from alcohol) first and the -oate part
- (from acid) second.
+  groups and produce a small molecule like water).
+- Forgetting that esters are named with the alkyl part (from alcohol) first and the -oate part (from
+  acid) second.
 
 ---
 
 ## Summary Table
 
-| Concept | Key Point |
-| ------------------- | ------------------------------------------------------ |
-| Alkanes | $\mathrm{C_nH_{2n+2}}$Saturated, substitution |
-| Alkenes | $\mathrm{C_nH_{2n}}$Unsaturated, addition |
-| Alkynes | $\mathrm{C_nH_{2n-2}}$Triple bond |
-| Homologous series | Same general formula, functional group, $\mathrm{CH_2}$ difference |
-| Isomerism | Same formula, different structure |
-| Esterification | Acid + alcohol $\rightleftharpoons$ ester + water |
-| Addition polymer | Monomers with $\mathrm{C = C}$ join; no small molecule eliminated |
-| Condensation polymer | Monomers join; small molecule (e.g., water) eliminated |
-| Protein monomer | Amino acids, linked by peptide bonds |
-| DNA base pairing | A-T, G-C |
+| Concept              | Key Point                                                          |
+| -------------------- | ------------------------------------------------------------------ |
+| Alkanes              | $\mathrm{C_nH_{2n+2}}$Saturated, substitution                      |
+| Alkenes              | $\mathrm{C_nH_{2n}}$Unsaturated, addition                          |
+| Alkynes              | $\mathrm{C_nH_{2n-2}}$Triple bond                                  |
+| Homologous series    | Same general formula, functional group, $\mathrm{CH_2}$ difference |
+| Isomerism            | Same formula, different structure                                  |
+| Esterification       | Acid + alcohol $\rightleftharpoons$ ester + water                  |
+| Addition polymer     | Monomers with $\mathrm{C = C}$ join; no small molecule eliminated  |
+| Condensation polymer | Monomers join; small molecule (e.g., water) eliminated             |
+| Protein monomer      | Amino acids, linked by peptide bonds                               |
+| DNA base pairing     | A-T, G-C                                                           |
 
 ---
 
@@ -493,7 +498,7 @@ Undigested and acts as dietary fibre.
 
 **Problem 1:** Write the equation for the complete combustion of butane ($\mathrm{C_4H_{10}}$).
 
-*If you get this wrong, revise: Combustion of Alkanes*
+_If you get this wrong, revise: Combustion of Alkanes_
 
 <details>
 <summary>Solution</summary>
@@ -505,7 +510,7 @@ $$2\mathrm{C_4H_{10}} + 13\mathrm{O_2} \to 8\mathrm{CO_2} + 10\mathrm{H_2O}$$
 **Problem 2:** Draw and name all the structural isomers of $\mathrm{C_3H_6O}$ that are aldehydes or
 Ketones.
 
-*If you get this wrong, revise: Isomerism — Functional Group Isomerism*
+_If you get this wrong, revise: Isomerism — Functional Group Isomerism_
 
 <details>
 <summary>Solution</summary>
@@ -517,7 +522,7 @@ Ketones.
 
 **Problem 3:** Ethene reacts with bromine water. Write the equation and state the observation.
 
-*If you get this wrong, revise: Addition Reactions of Alkenes*
+_If you get this wrong, revise: Addition Reactions of Alkenes_
 
 <details>
 <summary>Solution</summary>
@@ -531,7 +536,7 @@ Observation: The reddish-brown colour of bromine water is decolourised.
 **Problem 4:** Write the equation for the esterification of ethanol with propanoic acid. Name the
 Ester product.
 
-*If you get this wrong, revise: Esters — Formation and Naming*
+_If you get this wrong, revise: Esters — Formation and Naming_
 
 <details>
 <summary>Solution</summary>
@@ -545,22 +550,22 @@ Product name: ethyl propanoate (alkyl part from alcohol, -oate part from acid).
 **Problem 5:** Describe the difference between addition polymerisation and condensation
 Polymerisation.
 
-*If you get this wrong, revise: Polymers and Plastics*
+_If you get this wrong, revise: Polymers and Plastics_
 
 <details>
 <summary>Solution</summary>
 
-In addition polymerisation, monomers with a $\mathrm{C = C}$ double bond open their double bonds
-And join together. No small molecule is eliminated. In condensation polymerisation, monomers with
-Two different functional groups react, joining together with the elimination of a small molecule
-(such as water).
+In addition polymerisation, monomers with a $\mathrm{C = C}$ double bond open their double bonds And
+join together. No small molecule is eliminated. In condensation polymerisation, monomers with Two
+different functional groups react, joining together with the elimination of a small molecule (such
+as water).
 
 </details>
 
 **Problem 6:** Name the compound $\mathrm{CH_3CH_2COCH_2CH_3}$ and classify the alcohol that would
 Need to be oxidised to produce it.
 
-*If you get this wrong, revise: IUPAC Nomenclature and Reactions of Alcohols*
+_If you get this wrong, revise: IUPAC Nomenclature and Reactions of Alcohols_
 
 <details>
 <summary>Solution</summary>
@@ -568,15 +573,15 @@ Need to be oxidised to produce it.
 Name: **pentan-3-one**
 
 A secondary alcohol (pentan-3-ol) would need to be oxidised to produce this ketone. Secondary
-Alcohols oxidise to ketones (unlike primary alcohols, which oxidise to aldehydes and then
-Carboxylic acids).
+Alcohols oxidise to ketones (unlike primary alcohols, which oxidise to aldehydes and then Carboxylic
+acids).
 
 </details>
 
 **Problem 7:** Write the equation for the reaction of ethanoic acid with sodium carbonate. State the
 Observation.
 
-*If you get this wrong, revise: Carboxylic Acids — Reactions*
+_If you get this wrong, revise: Carboxylic Acids — Reactions_
 
 <details>
 <summary>Solution</summary>
@@ -590,17 +595,17 @@ Observation: Effervescence (bubbling) as carbon dioxide gas is produced.
 **Problem 8:** Explain why poly(ethene) is not biodegradable, and suggest one environmental
 Advantage of using a biopolymer such as polylactic acid (PLA) instead.
 
-*If you get this wrong, revise: Environmental Impact of Plastics*
+_If you get this wrong, revise: Environmental Impact of Plastics_
 
 <details>
 <summary>Solution</summary>
 
-Poly(ethene) consists of very long hydrocarbon chains with strong C-C bonds. Microorganisms lack
-The enzymes to break these bonds, so the polymer persists in the environment for hundreds of years.
+Poly(ethene) consists of very long hydrocarbon chains with strong C-C bonds. Microorganisms lack The
+enzymes to break these bonds, so the polymer persists in the environment for hundreds of years.
 
-Biopolymers such as PLA are made from renewable resources (e.g., corn starch) and can be broken
-Down by microorganisms into harmless products ($\mathrm{CO_2}$ and water) under the right
-Conditions (composting). This reduces landfill accumulation and environmental pollution.
+Biopolymers such as PLA are made from renewable resources (e.g., corn starch) and can be broken Down
+by microorganisms into harmless products ($\mathrm{CO_2}$ and water) under the right Conditions
+(composting). This reduces landfill accumulation and environmental pollution.
 
 </details>
 
@@ -608,7 +613,7 @@ Conditions (composting). This reduces landfill accumulation and environmental po
 Give a solution of pH 3 and reacts with sodium to produce hydrogen gas. Identify the compound and
 Explain your reasoning.
 
-*If you get this wrong, revise: Functional Groups and Carboxylic Acid Properties*
+_If you get this wrong, revise: Functional Groups and Carboxylic Acid Properties_
 
 <details>
 <summary>Solution</summary>
@@ -625,7 +630,7 @@ Propanoate, would not be acidic and would not react with sodium to produce hydro
 **Problem 10:** Explain why the boiling point of propan-1-ol ($97^\circ\mathrm{C}$) is much higher
 Than that of propane ($-42^\circ\mathrm{C}$), even though propane has a similar molar mass.
 
-*If you get this wrong, revise: Alcohols — Properties and Intermolecular Forces*
+_If you get this wrong, revise: Alcohols — Properties and Intermolecular Forces_
 
 <details>
 <summary>Solution</summary>
@@ -634,9 +639,10 @@ Propan-1-ol molecules can form hydrogen bonds between the $-\mathrm{OH}$ group o
 The lone pairs on the oxygen of another. Hydrogen bonding is a strong intermolecular force that
 Requires significant energy to overcome.
 
-Propane molecules are non-polar and can only form weak van der Waals forces between molecules.
-These are much weaker than hydrogen bonds, so propane has a much lower boiling point despite
-Having a similar molar mass ($\mathrm{C_3H_8} = 44 \mathrm{ g/mol}$ vs $\mathrm{C_3H_8O} = 60
+Propane molecules are non-polar and can only form weak van der Waals forces between molecules. These
+are much weaker than hydrogen bonds, so propane has a much lower boiling point despite Having a
+similar molar mass ($\mathrm{C_3H_8} = 44 \mathrm{ g/mol}$ vs
+$\mathrm{C_3H_8O} = 60
 \mathrm{ g/mol}$).
 
 </details>

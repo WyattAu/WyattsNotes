@@ -1,6 +1,8 @@
 ---
 title: Error Handling
-description: "Error Handling — The Error Interface; Idiomatic Error Pattern; Sentinel Errors; Custom Error Types with worked examples and exam-style questions."
+description:
+  'Error Handling — The Error Interface; Idiomatic Error Pattern; Sentinel Errors; Custom Error
+  Types with worked examples and exam-style questions.'
 slug: error-handling
 date: 2026-04-18
 tags:
@@ -8,6 +10,7 @@ tags:
 categories:
   - Go
 ---
+
 ## The Error Interface
 
 Go's error handling is convention-based. The `error` interface has a single method:
@@ -267,25 +270,25 @@ func handler(w http.ResponseWriter, r *http.Request) {
 ## Common Pitfalls
 
 1. **Ignoring errors.** `result, _ := someFunc()` silently discards errors. At minimum, log the
- error. In tests, use `t.Fatal(err)`.
+   error. In tests, use `t.Fatal(err)`.
 
 2. **Using `panic` for expected errors.** Panics are for bugs. If a file might not exist, return an
- error. If a network request might time out, return an error.
+   error. If a network request might time out, return an error.
 
 3. **Comparing errors with `==`.** Use `errors.Is` instead. Direct comparison fails for wrapped
- errors and for custom error types that are not sentinel values.
+   errors and for custom error types that are not sentinel values.
 
 4. **Creating error types without `Unwrap`.** If your error type wraps another error, implement
- `Unwrap() error` so that `errors.Is` and `errors.As` can traverse the chain.
+   `Unwrap() error` so that `errors.Is` and `errors.As` can traverse the chain.
 
 5. **Using `%v` instead of `%w` when wrapping.** `%v` formats the error as a string, losing the
- ability to inspect the chain with `errors.Is`/`errors.As`.
+   ability to inspect the chain with `errors.Is`/`errors.As`.
 
 6. **Recover outside of defer.** `recover` only works inside deferred functions. Calling it anywhere
- else always returns `nil`.
+   else always returns `nil`.
 
 7. **String-based error matching.** Using `strings.Contains(err.Error(), "not found")` is fragile.
- Use sentinel errors or custom error types with `errors.Is`/`errors.As`.
+   Use sentinel errors or custom error types with `errors.Is`/`errors.As`.
 
 ## Summary
 

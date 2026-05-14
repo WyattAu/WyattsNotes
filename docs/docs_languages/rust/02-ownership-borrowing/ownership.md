@@ -1,9 +1,12 @@
 ---
 id: ownership
 title: Ownership and Borrowing
-description: "Ownership and Borrowing — The Ownership Rules; Move Semantics; What Moves and What Copies; The `Copy` Trait with worked examples and exam-style questions."
+description:
+  'Ownership and Borrowing — The Ownership Rules; Move Semantics; What Moves and What Copies; The
+  `Copy` Trait with worked examples and exam-style questions.'
 slug: ownership
 ---
+
 ## The Ownership Rules
 
 Rust's memory management rests on three rules enforced at compile time:
@@ -11,7 +14,7 @@ Rust's memory management rests on three rules enforced at compile time:
 1. Each value in Rust has a single **owner**.
 2. When the owner goes out of scope, the value is **dropped** (memory is freed).
 3. There can be **zero or more immutable references** (`&T`) OR **exactly one mutable reference**
- (`&mut T`) to a value at any point in its lifetime.
+   (`&mut T`) to a value at any point in its lifetime.
 
 These rules are checked by the borrow checker, which operates on MIR (Mid-level Intermediate
 Representation). The borrow checker does not exist at runtime — there is zero overhead for ownership
@@ -35,10 +38,10 @@ And capacity (24 bytes for `String` on 64-bit) are copied. The original binding 
 
 Types are divided into two categories based on whether assignment copies or moves:
 
-| Category | Examples | Behavior |
-| ------------ | -------------------------------------------------------------------------- | ------------------------------ |
-| `Copy` types | `i32``f64``bool``char``(i32, i32)``&T` | Assignment copies the value |
-| Move types | `String``Vec<T>``Box<T>``File`User-defined structs (unless `Copy`) | Assignment transfers ownership |
+| Category     | Examples                                                           | Behavior                       |
+| ------------ | ------------------------------------------------------------------ | ------------------------------ |
+| `Copy` types | `i32``f64``bool``char``(i32, i32)``&T`                             | Assignment copies the value    |
+| Move types   | `String``Vec<T>``Box<T>``File`User-defined structs (unless `Copy`) | Assignment transfers ownership |
 
 A type implements `Copy` if and only if every bit pattern of its memory representation is a valid
 Value. This is why types containing heap pointers (like `String`) cannot be `Copy` — a bitwise copy
@@ -340,8 +343,8 @@ String literals and values explicitly annotated with `'static`.
 Lifetimes are covariant in their position. Given `'a: 'b` (a outlives b), `&'a T` is a subtype of
 `&'b T`. This means a longer-lived reference can be used where a shorter-lived one is expected.
 
-For `&mut T`Lifetimes are **invariant** — you cannot substitute a `&'a mut T` where a `&'b mut T`
-Is expected, even if `'a: 'b`. This prevents soundness issues with mutable aliasing.
+For `&mut T`Lifetimes are **invariant** — you cannot substitute a `&'a mut T` where a `&'b mut T` Is
+expected, even if `'a: 'b`. This prevents soundness issues with mutable aliasing.
 
 ```rust
 fn mutate<'a>(r: &'a mut i32) {
@@ -404,7 +407,7 @@ Immutable borrow is active will panic. This trades compile-time safety for runti
 ### `RefCell` Use Cases
 
 1. **Graph data structures** where nodes need to reference each other (cycles prevent compile-time
- borrow checking).
+   borrow checking).
 2. **Mocking in tests** where you need to mutate internal state through a shared reference.
 3. **Builder patterns** where the builder is shared across multiple configuration steps.
 
@@ -727,49 +730,49 @@ fn filter_map(vec: &mut Vec<i32>) {
 ## Common Pitfalls
 
 1. **Fighting the borrow checker with `clone()`.** While `clone()` works, it often indicates a
- design problem. Before cloning, consider: can you restructure ownership? Can you use indices
- instead of references? Can you borrow for a shorter lifetime? Clone is correct when you genuinely
- need a second independent copy of the data.
+   design problem. Before cloning, consider: can you restructure ownership? Can you use indices
+   instead of references? Can you borrow for a shorter lifetime? Clone is correct when you genuinely
+   need a second independent copy of the data.
 
 2. **Self-referential structs.** Rust cannot express structs that hold references to their own
- fields because the lifetime of the reference and the lifetime of the struct are the same. Use
- indices instead, or crates like `pin-project` and `owning-ref` for self-referential patterns.
+   fields because the lifetime of the reference and the lifetime of the struct are the same. Use
+   indices instead, or crates like `pin-project` and `owning-ref` for self-referential patterns.
 
 3. **`RefCell` panics in production.** `RefCell::borrow_mut()` panics at runtime if there is an
- outstanding immutable borrow. In a long-running service, this can bring down the process. Use
- `try_borrow_mut()` and handle the error, or restructure your code to avoid the need for
- `RefCell`.
+   outstanding immutable borrow. In a long-running service, this can bring down the process. Use
+   `try_borrow_mut()` and handle the error, or restructure your code to avoid the need for
+   `RefCell`.
 
 4. **`Rc` reference cycles.** If two `Rc` values reference each other, neither will ever be dropped.
- Use `Weak<T>` to break cycles. Profile your application with tools like `valgrind` or `heaptrack`
- to detect reference cycle leaks.
+   Use `Weak<T>` to break cycles. Profile your application with tools like `valgrind` or `heaptrack`
+   to detect reference cycle leaks.
 
 5. **Borrowing across await points.** Holding a reference across an `.await` point is an error
- because the future may be dropped or moved between yields, invalidating the reference.
- Restructure the code to drop the borrow before awaiting.
+   because the future may be dropped or moved between yields, invalidating the reference.
+   Restructure the code to drop the borrow before awaiting.
 
 6. **Ignoring lifetime variance.** Lifetimes are covariant in output position and invariant in
- mutable reference position. Misunderstanding this leads to subtle soundness bugs when writing
- generic code over lifetimes. The compiler errors in these cases are often confusing.
+   mutable reference position. Misunderstanding this leads to subtle soundness bugs when writing
+   generic code over lifetimes. The compiler errors in these cases are often confusing.
 
 7. **Using `unsafe` to bypass the borrow checker.** `unsafe` lets you create raw pointers and
- convert them to references, but you are now responsible for maintaining all borrow checker
- invariants manually. A single violation (e.g., creating two mutable references to the same data)
- is undefined behavior, even if it appears to work.
+   convert them to references, but you are now responsible for maintaining all borrow checker
+   invariants manually. A single violation (e.g., creating two mutable references to the same data)
+   is undefined behavior, even if it appears to work.
 
 8. **Over-borrowing in closures.** Closures capture variables by the least-permissive mode needed.
- `&x` for immutable access, `&mut x` for mutable access, `x` for ownership. A closure that
- modifies a captured variable will capture it by `&mut`Preventing any other borrow of the same
- variable while the closure exists. Use `move` closures to transfer ownership into the closure and
- avoid borrow conflicts.
+   `&x` for immutable access, `&mut x` for mutable access, `x` for ownership. A closure that
+   modifies a captured variable will capture it by `&mut`Preventing any other borrow of the same
+   variable while the closure exists. Use `move` closures to transfer ownership into the closure and
+   avoid borrow conflicts.
 
 9. **Confusing `'a` lifetime names with actual lifetimes.** The name `'a` is just a placeholder. The
- compiler substitutes the actual lifetime at each call site. Two functions using `'a` in their
- signatures do not necessarily share the same lifetime — the compiler resolves each independently.
+   compiler substitutes the actual lifetime at each call site. Two functions using `'a` in their
+   signatures do not necessarily share the same lifetime — the compiler resolves each independently.
 
 10. **Not understanding NLL.** If the borrow checker rejects your code, check whether the borrow is
- actually needed past the point where the compiler thinks it ends. Often, adding an explicit
- block scope `{}` or dropping a reference early fixes the issue without restructuring.
+    actually needed past the point where the compiler thinks it ends. Often, adding an explicit
+    block scope `{}` or dropping a reference early fixes the issue without restructuring.
 
 ## Borrow Checker Decision Flow
 
@@ -805,8 +808,8 @@ fn process<'a, T: 'a>(value: &'a T) -> &'a T {
 // because the compiler cannot prove T is valid for 'a
 ```
 
-This bound is automatically added (lifetime elision), but you may need to write it
-Explicitly when working with trait objects or complex generic constraints:
+This bound is automatically added (lifetime elision), but you may need to write it Explicitly when
+working with trait objects or complex generic constraints:
 
 ```rust
 trait Processor {

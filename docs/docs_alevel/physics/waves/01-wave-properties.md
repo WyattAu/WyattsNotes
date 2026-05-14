@@ -1,6 +1,8 @@
 ---
 title: Wave Properties
-description: "A-Level Physics notes on Wave Properties: 1. Progressive Waves; Key Definitions; The Wave Equation; Real-World Application: Seismic Waves."
+description:
+  'A-Level Physics notes on Wave Properties: 1. Progressive Waves; Key Definitions; The Wave
+  Equation; Real-World Application: Seismic Waves.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Physics
@@ -9,11 +11,10 @@ categories:
   - Physics
 slug: wave-properties
 ---
+
 ## Wave Properties
 
-:::info
-Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2
-:::
+:::info Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2 :::
 
 <PhetSimulation simulationId="waves-on-a-string" title="Waves on a String" />
 
@@ -29,7 +30,7 @@ Transferring matter. Each particle in the medium oscillates about its equilibriu
 - **Displacement** $y$: the distance of a point on the wave from its equilibrium position (m)
 - **Amplitude** $A$: the maximum displacement from equilibrium (m)
 - **Wavelength** $\lambda$: the distance between two consecutive points in phase — e.g.,
- crest-to-crest (m)
+  crest-to-crest (m)
 - **Period** $T$: the time for one complete oscillation (s)
 - **Frequency** $f$: the number of complete oscillations per unit time (Hz)
 - **Phase** $\phi$: a measure of the position in the cycle of oscillation (rad)
@@ -112,32 +113,28 @@ Sound production in musical instruments relies on creating standing waves (cover
 Topic), but the initial wave type depends on the instrument:
 
 - **Stringed instruments** (guitar, violin): A plucked or bowed string vibrates transversely,
- creating a transverse wave on the string. The vibrating string then pushes air molecules back and
- forth, producing a **longitudinal** sound wave. This is a key exam point: the wave on the string
- is transverse, but the sound wave in air is longitudinal.
+  creating a transverse wave on the string. The vibrating string then pushes air molecules back and
+  forth, producing a **longitudinal** sound wave. This is a key exam point: the wave on the string
+  is transverse, but the sound wave in air is longitudinal.
 - **Wind instruments** (flute, clarinet, trumpet): A column of air vibrates longitudinally. The
- player's lips or a reed create compressions and rarefactions that travel along the air column.
+  player's lips or a reed create compressions and rarefactions that travel along the air column.
 - **Percussion** (drums): The drum membrane vibrates transversely, and the resulting pressure
- changes in the surrounding air produce longitudinal sound waves.
+  changes in the surrounding air produce longitudinal sound waves.
 
 The speed of sound in air at 20°C is approximately 343 m/s. For a concert A (440 Hz), the wavelength
 In air is $\lambda = 343/440 = 0.78$ m. Higher notes have shorter wavelengths; lower notes have
 Longer wavelengths.
 
-:::warning
-Common Pitfall Electromagnetic waves are transverse but do not require a medium — they
+:::warning Common Pitfall Electromagnetic waves are transverse but do not require a medium — they
 Propagate through vacuum via oscillating electric and magnetic fields. Sound waves are longitudinal
-And require a medium.
-:::
+And require a medium. :::
 
-:::tip
-Exam Technique When asked to sketch a longitudinal wave, draw a series of vertical lines
+:::tip Exam Technique When asked to sketch a longitudinal wave, draw a series of vertical lines
 Representing air molecules. Show compressions (closely spaced) and rarefactions (widely spaced).
 Label both.
 
 Alternatively, plot displacement vs position — the graph looks sinusoidal, but positive displacement
-Means particles moved to the right (in the direction of propagation), not upward.
-:::
+Means particles moved to the right (in the direction of propagation), not upward. :::
 
 ## 3. Polarisation
 
@@ -163,35 +160,33 @@ $$\boxed{I = I_0 \cos^2\theta}$$
 Where $I_0 = \frac{1}{2}\varepsilon_0 c E_0^2$ is the intensity of the polarised light incident on
 The analyser.
 
-**Intuition.** When $\theta = 0$All light passes through. When $\theta = 90^\circ$No light
-Passes. At $\theta = 45^\circ$The intensity is halved. This is a direct consequence of the vector
-Nature of the electric field.
+**Intuition.** When $\theta = 0$All light passes through. When $\theta = 90^\circ$No light Passes.
+At $\theta = 45^\circ$The intensity is halved. This is a direct consequence of the vector Nature of
+the electric field.
 
 ### Polarisation by Reflection (Brewster's Angle)
 
 When light reflects from a dielectric surface, the reflected ray is partially polarised. At
-**Brewster's angle** $\theta_B$The reflected light is fully polarised perpendicular to the plane
-Of incidence:
+**Brewster's angle** $\theta_B$The reflected light is fully polarised perpendicular to the plane Of
+incidence:
 
 $$\tan\theta_B = n_2/n_1$$
 
-:::info
-Board Note AQA and OCR (A) require Malus's law. CIE focuses on polarisation by filters.
-Edexcel covers qualitative polarisation.
-:::
+:::info Board Note AQA and OCR (A) require Malus's law. CIE focuses on polarisation by filters.
+Edexcel covers qualitative polarisation. :::
 
 ### Polarisation in Real Life
 
 Polarising filters have many practical applications:
 
 - **Polaroid sunglasses** reduce glare by blocking horizontally polarised light reflected from
- horizontal surfaces (water, roads). Reflected light is predominantly horizontally polarised, so
- vertically oriented filters absorb most of the glare.
+  horizontal surfaces (water, roads). Reflected light is predominantly horizontally polarised, so
+  vertically oriented filters absorb most of the glare.
 - **LCD screens** use two crossed polarisers with liquid crystals between them. The crystals rotate
- the polarisation of light passing through, allowing controlled transmission of each pixel.
+  the polarisation of light passing through, allowing controlled transmission of each pixel.
 - **Stress analysis** in engineering: transparent plastic models under stress become birefringent,
- rotating the polarisation of transmitted light. Viewed between crossed polarisers, stress
- concentrations appear as coloured fringes (photoelasticity).
+  rotating the polarisation of transmitted light. Viewed between crossed polarisers, stress
+  concentrations appear as coloured fringes (photoelasticity).
 
 ### Polarisation and Microwaves
 
@@ -204,25 +199,23 @@ While visible light (with a much shorter wavelength) passes through, allowing yo
 All EM waves travel at $c = 3.00 \times 10^8$ m s$^{-1}$ in vacuum and are transverse. They are
 Distinguished by wavelength (equivalently, frequency).
 
-| Region | Wavelength Range | Typical Use |
+| Region        | Wavelength Range | Typical Use                      |
 | ------------- | ---------------- | -------------------------------- |
-| Radio waves | $\gt{} 1$ m | Broadcasting, communication |
-| Microwaves | 1 mm – 1 m | Cooking, satellite signals |
-| Infrared | 700 nm – 1 mm | Thermal imaging, remote controls |
-| Visible light | 400 – 700 nm | Human vision |
-| Ultraviolet | 10 – 400 nm | Sterilisation, fluorescence |
-| X-rays | 0.01 – 10 nm | Medical imaging |
-| Gamma rays | $\lt{} 0.01$ nm | Cancer treatment, nuclear decay |
+| Radio waves   | $\gt{} 1$ m      | Broadcasting, communication      |
+| Microwaves    | 1 mm – 1 m       | Cooking, satellite signals       |
+| Infrared      | 700 nm – 1 mm    | Thermal imaging, remote controls |
+| Visible light | 400 – 700 nm     | Human vision                     |
+| Ultraviolet   | 10 – 400 nm      | Sterilisation, fluorescence      |
+| X-rays        | 0.01 – 10 nm     | Medical imaging                  |
+| Gamma rays    | $\lt{} 0.01$ nm  | Cancer treatment, nuclear decay  |
 
 All EM waves are produced by accelerating charges. In order of increasing frequency: radio
 (oscillating currents in aerials), microwave (klystrons/magnetrons), infrared/visible/UV (atomic
 Electron transitions), X-rays (electron deceleration), gamma rays (nuclear transitions).
 
-:::tip
-Exam Technique Memorise the order: **R**adio, **M**icrowave, **I**nfrared, **V**isible,
+:::tip Exam Technique Memorise the order: **R**adio, **M**icrowave, **I**nfrared, **V**isible,
 **U**ltraviolet, **X**-ray, **G**amma. Mnemonic: "**R**eal **M**en **I**n **V**ietnam **U**se
-**X**-ray **G**uns."
-:::
+**X**-ray **G**uns." :::
 
 ## 5. Intensity and Amplitude
 
@@ -255,8 +248,8 @@ The average power over one cycle (since $\langle\cos^2\rangle = 1/2$):
 
 $$\langle P \rangle = \frac{1}{2}TA^2 k\omega$$
 
-Since $v = \omega/k$We have $k\omega = \omega^2/v$. Also, for a string, $v = \sqrt◆LB◆T/\mu◆RB◆$ where
-$\mu$ is the mass per unit length, so $T = \mu v^2$:
+Since $v = \omega/k$We have $k\omega = \omega^2/v$. Also, for a string, $v = \sqrt◆LB◆T/\mu◆RB◆$
+where $\mu$ is the mass per unit length, so $T = \mu v^2$:
 
 $$\langle P \rangle = \frac{1}{2}\mu v^2 A^2 \cdot \frac◆LB◆\omega^2◆RB◆◆LB◆v◆RB◆ = \frac{1}{2}\mu v \omega^2 A^2$$
 
@@ -281,8 +274,8 @@ For a wave spreading uniformly from a point source in 3D:
 
 $$I = \frac◆LB◆P◆RB◆◆LB◆4\pi r^2◆RB◆$$
 
-At distance $r$The power is spread over a sphere of area $4\pi r^2$. Doubling the distance
-Quarters the intensity.
+At distance $r$The power is spread over a sphere of area $4\pi r^2$. Doubling the distance Quarters
+the intensity.
 
 $$I_1 r_1^2 = I_2 r_2^2$$
 
@@ -300,9 +293,7 @@ While a 10 dB increase sounds roughly "twice as loud" to human ears.
 Ratio is $10^{(60-30)/10} = 10^3 = 1000$Meaning conversation is 1000 times more intense than a
 Whisper.
 
-:::info
-Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2
-:::
+:::info Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2 :::
 
 All boards cover the inverse square law. The decibel scale is explicitly on CIE and sometimes
 Appears in AQA context questions. Edexcel and OCR (A) focus more on $I \propto A^2$ and
@@ -332,11 +323,9 @@ $$\Delta\phi = \frac◆LB◆2\pi◆RB◆◆LB◆\lambda◆RB◆\Delta x$$
 - In phase: $\Delta\phi = 0, 2\pi, 4\pi, \ldots$ (integer multiples of $2\pi$)
 - Antiphase: $\Delta\phi = \pi, 3\pi, 5\pi, \ldots$ (odd multiples of $\pi$)
 
-:::tip
-Exam Technique Phase difference questions often require you to identify two points on a wave
+:::tip Exam Technique Phase difference questions often require you to identify two points on a wave
 Graph and calculate $\Delta x$. Then use $\Delta\phi = 360° \times \Delta x / \lambda$ (using
-Degrees) or $\Delta\phi = 2\pi \Delta x / \lambda$ (using radians). Be consistent with units.
-:::
+Degrees) or $\Delta\phi = 2\pi \Delta x / \lambda$ (using radians). Be consistent with units. :::
 
 ### Phase Difference from Wave Equations
 
@@ -344,9 +333,9 @@ If two waves are described by:
 
 $$y_1 = A_1\sin(kx - \omega t + \phi_1), \qquad y_2 = A_2\sin(kx - \omega t + \phi_2)$$
 
-Then the phase difference is $\Delta\phi = \phi_2 - \phi_1$. This constant phase difference
-Is what determines whether two waves interfere constructively ($\Delta\phi = 2n\pi$) or
-Destructively ($\Delta\phi = (2n+1)\pi$).
+Then the phase difference is $\Delta\phi = \phi_2 - \phi_1$. This constant phase difference Is what
+determines whether two waves interfere constructively ($\Delta\phi = 2n\pi$) or Destructively
+($\Delta\phi = (2n+1)\pi$).
 
 ### Phase Difference from Graphs
 
@@ -362,9 +351,7 @@ $t_1$ and $t_2$ is:
 
 $$\Delta\phi = \frac◆LB◆\Delta t◆RB◆◆LB◆T◆RB◆ \times 360° = \frac◆LB◆\Delta t◆RB◆◆LB◆T◆RB◆ \times 2\pi \mathrm{ rad}$$
 
-:::info
-Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2
-:::
+:::info Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2 :::
 
 AQA and OCR (A) frequently test phase difference from displacement--position graphs. CIE often
 Combines phase difference with path difference in interference questions. Edexcel emphasises the
@@ -402,7 +389,8 @@ A sound wave has frequency 440 Hz and wavelength 0.78 m. Calculate the speed of 
 A radio station broadcasts at 97.4 MHz. The speed of light is $3.00 \times 10^8$ m s$^{-1}$.
 Calculate the wavelength.
 
-**Answer.** $\lambda = \frac{c}{f} = \frac◆LB◆3.00 \times 10^8◆RB◆◆LB◆97.4 \times 10^6◆RB◆ = 3.08$ m.
+**Answer.** $\lambda = \frac{c}{f} = \frac◆LB◆3.00 \times 10^8◆RB◆◆LB◆97.4 \times 10^6◆RB◆ = 3.08$
+m.
 
 <b>If you get this wrong, revise:</b> [The Wave Equation](#the-wave-equation)
 
@@ -429,7 +417,8 @@ $I = \frac{I_0}{2}\cos^2 30° = \frac{I_0}{2} \times \frac{3}{4} = \frac{3I_0}{8
 Two points on a wave are separated by 0.15 m. The wavelength is 0.60 m. Calculate the phase
 Difference in (a) radians and (b) degrees.
 
-**Answer.** (a) $\Delta\phi = \frac◆LB◆2\pi◆RB◆◆LB◆0.60◆RB◆ \times 0.15 = \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆$ rad.
+**Answer.** (a) $\Delta\phi = \frac◆LB◆2\pi◆RB◆◆LB◆0.60◆RB◆ \times 0.15 = \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆$
+rad.
 
 (b) $\Delta\phi = \frac{0.15}{0.60} \times 360° = 90^\circ$.
 
@@ -442,8 +431,7 @@ Difference in (a) radians and (b) degrees.
 A wave on a string has amplitude 5.0 mm and intensity 0.80 W. If the amplitude is increased to 15
 Mm, what is the new intensity?
 
-**Answer.** $I \propto A^2$So $I_2/I_1 = (A_2/A_1)^2 = (15/5)^2 = 9$. $I_2 = 9 \times 0.80 = 7.2$
-W.
+**Answer.** $I \propto A^2$So $I_2/I_1 = (A_2/A_1)^2 = (15/5)^2 = 9$. $I_2 = 9 \times 0.80 = 7.2$ W.
 
 <b>If you get this wrong, revise:</b> [Intensity and Amplitude](#5-intensity-and-amplitude)
 
@@ -454,7 +442,9 @@ W.
 A point source emits 50 W of sound power. Calculate the intensity at a distance of 8.0 m from the
 Source.
 
-**Answer.** $I = \frac◆LB◆P◆RB◆◆LB◆4\pi r^2◆RB◆ = \frac◆LB◆50◆RB◆◆LB◆4\pi(64)◆RB◆ = \frac{50}{804} = 0.0622$ W m$^{-2}$.
+**Answer.**
+$I = \frac◆LB◆P◆RB◆◆LB◆4\pi r^2◆RB◆ = \frac◆LB◆50◆RB◆◆LB◆4\pi(64)◆RB◆ = \frac{50}{804} = 0.0622$ W
+m$^{-2}$.
 
 <b>If you get this wrong, revise:</b>
 [Inverse Square Law for Point Sources](#inverse-square-law-for-point-sources)
@@ -542,9 +532,9 @@ Middle filter is removed.
 
 - After filter 1 (vertical): $I_1 = I_0/2$Polarised vertically.
 - After filter 2 ($45^\circ$): $I_2 = (I_0/2)\cos^2 45° = (I_0/2)(1/2) = I_0/4$Polarised at
- $45^\circ$.
+  $45^\circ$.
 - After filter 3 (horizontal, $45^\circ$ from filter 2's axis):
- $I_3 = (I_0/4)\cos^2 45° = (I_0/4)(1/2) = I_0/8$.
+  $I_3 = (I_0/4)\cos^2 45° = (I_0/4)(1/2) = I_0/8$.
 
 Without the middle filter (crossed polarisers): $I = (I_0/2)\cos^2 90° = 0$. No light passes.
 
@@ -557,8 +547,8 @@ Without the middle filter (crossed polarisers): $I = (I_0/2)\cos^2 90° = 0$. No
 A point source emits sound with power 0.10 W. At a distance of 5.0 m, the amplitude of the sound
 Wave is $A_1$. What is the amplitude at 20 m in terms of $A_1$?
 
-**Answer.** Since $I \propto A^2$ and $I \propto 1/r^2$It follows that $A \propto 1/r$. The ratio
-Of amplitudes is:
+**Answer.** Since $I \propto A^2$ and $I \propto 1/r^2$It follows that $A \propto 1/r$. The ratio Of
+amplitudes is:
 
 $$\frac{A_2}{A_1} = \frac{r_1}{r_2} = \frac{5.0}{20} = \frac{1}{4}$$
 
@@ -621,28 +611,38 @@ Be the fully constructive case at $\Delta\phi = 0$).
 
 :::
 
-
 ---
 
-:::tip
-Diagnostic Test
-Ready to test your understanding of **Wave Properties**? The [diagnostic test](/docs/alevel/physics/diagnostics/diag-wave-properties) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
+:::tip Diagnostic Test Ready to test your understanding of **Wave Properties**? The
+[diagnostic test](/docs/alevel/physics/diagnostics/diag-wave-properties) contains the hardest
+questions within the A-Level specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Wave Properties with other physics topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Wave
+Properties with other physics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on
+self-marking and building a personal test matrix. :::
 
-:::danger
-Common Pitfalls
+:::danger Common Pitfalls
 
-- **Confusing wave speed with particle speed:** In a transverse wave, the wave propagates horizontally but the particles oscillate vertically. The wave speed v = f * lambda is the speed of the wave pattern, not the speed of the individual particles. Particles in the medium do NOT travel with the wave.
+- **Confusing wave speed with particle speed:** In a transverse wave, the wave propagates
+  horizontally but the particles oscillate vertically. The wave speed v = f \* lambda is the speed
+  of the wave pattern, not the speed of the individual particles. Particles in the medium do NOT
+  travel with the wave.
 
-- **Confusing frequency with period:** Frequency f is the number of oscillations per second (Hz). Period T is the time for one complete oscillation (s). They are related by f = 1/T. A common error is to confuse which is the reciprocal of the other or to add them instead of converting.
+- **Confusing frequency with period:** Frequency f is the number of oscillations per second (Hz).
+  Period T is the time for one complete oscillation (s). They are related by f = 1/T. A common error
+  is to confuse which is the reciprocal of the other or to add them instead of converting.
 
-- **Not distinguishing between transverse and longitudinal waves:** In transverse waves, oscillations are PERPENDICULAR to the direction of energy transfer (light, water surface waves, S-waves). In longitudinal waves, oscillations are PARALLEL to the direction of energy transfer (sound, P-waves). Only longitudinal waves have compressions and rarefactions.
+- **Not distinguishing between transverse and longitudinal waves:** In transverse waves,
+  oscillations are PERPENDICULAR to the direction of energy transfer (light, water surface waves,
+  S-waves). In longitudinal waves, oscillations are PARALLEL to the direction of energy transfer
+  (sound, P-waves). Only longitudinal waves have compressions and rarefactions.
 
-- **Misidentifying points on a wave that are in phase:** Two points are in phase if the distance between them is a whole number of wavelengths (n * lambda). They are in antiphase if the distance is an odd multiple of half-wavelengths ((n + 0.5) * lambda). The phase difference between adjacent points is 2 * pi * (path difference) / lambda.
+- **Misidentifying points on a wave that are in phase:** Two points are in phase if the distance
+  between them is a whole number of wavelengths (n _ lambda). They are in antiphase if the distance
+  is an odd multiple of half-wavelengths ((n + 0.5) _ lambda). The phase difference between adjacent
+  points is 2 _ pi _ (path difference) / lambda.
 
 :::
 

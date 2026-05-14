@@ -1,6 +1,8 @@
 ---
 title: Markdown & MDX Constructs
-description: "Markdown & MDX Constructs — Standard Markdown; Headings; Level 2; Level 3 including key definitions, derivations, and problem-solving techniques."
+description:
+  'Markdown & MDX Constructs — Standard Markdown; Headings; Level 2; Level 3 including key
+  definitions, derivations, and problem-solving techniques.'
 date: 2025-05-15T22:45:51.828Z
 tags:
   - general
@@ -9,6 +11,7 @@ categories:
 slug: markdown-constructs
 sidebar_position: 2
 ---
+
 ## Standard Markdown
 
 ### Headings
@@ -211,35 +214,23 @@ Print("hello")
 Admonitions are the preferred way to call out important information:
 
 ```md
-:::note
-This is a note.
-:::
+:::note This is a note. :::
 
-:::tip
-This is a tip.
-:::
+:::tip This is a tip. :::
 
-:::info
-This is informational.
-:::
+:::info This is informational. :::
 
 :::caution This is a caution. :::
 
-:::danger
-This is dangerous.
-:::
+:::danger This is dangerous. :::
 
-:::warning
-This is a warning.
-:::
+:::warning This is a warning. :::
 ```
 
 Admonitions support optional titles:
 
 ```md
-:::tip
-Custom Title Content here.
-:::
+:::tip Custom Title Content here. :::
 ```
 
 They can also be collapsible (Docusaurus 3):
@@ -337,10 +328,8 @@ Hidden content here.
 &lt;/details&gt;
 ```
 
-:::warning
-Do not nest `<details>` inside another `<details>`. This causes rendering issues in
-Docusaurus.
-:::
+:::warning Do not nest `<details>` inside another `<details>`. This causes rendering issues in
+Docusaurus. :::
 
 ### MDX Import Statements
 
@@ -357,13 +346,13 @@ import BrowserOnly from '@docusaurus/BrowserOnly';
 
 Common `@theme` imports:
 
-| Component | Purpose |
+| Component          | Purpose                               |
 | ------------------ | ------------------------------------- |
-| `CodeBlock` | Render a code block from a file path |
-| `Tabs` / `TabItem` | Tabbed content switching |
-| `Details` | Collapsible sections with React state |
-| `Admonition` | Programmatic admonition rendering |
-| `Head` | Inject elements into `<head>` |
+| `CodeBlock`        | Render a code block from a file path  |
+| `Tabs` / `TabItem` | Tabbed content switching              |
+| `Details`          | Collapsible sections with React state |
+| `Admonition`       | Programmatic admonition rendering     |
+| `Head`             | Inject elements into `<head>`         |
 
 Custom components from `@site/src/components/` are also importable:
 
@@ -401,7 +390,7 @@ draft: true # Hide from production build
 ### Slug Behavior
 
 - Without `slug`: derived from file path, e.g., `docs/docs_general-notes/intro.md` becomes
- `/docs/general-notes/intro`.
+  `/docs/general-notes/intro`.
 - With `slug: custom-slug`: becomes `/docs/custom-slug`.
 - With `slug: /absolute/path`: becomes `/absolute/path` (bypasses the docs prefix).
 
@@ -442,8 +431,9 @@ No escaping needed inside fenced code blocks — the content is treated as raw t
 
 ### Raw HTML Restrictions
 
-Do not use `` tags or other raw HTML block elements. MDX does not allow them. Use markdown or
-Docusaurus components instead. Self-closing elements like `<br />` and `<img />` are generally fine.
+Do not use
+``tags or other raw HTML block elements. MDX does not allow them. Use markdown or Docusaurus components instead. Self-closing elements like`<br />`and`<img />`
+are generally fine.
 
 ## Common Pitfalls
 

@@ -1,6 +1,8 @@
 ---
 title: Goroutines and Synchronization
-description: "Goroutines and Synchronization — Goroutines; The Goroutine Scheduler; sync.WaitGroup; WaitGroup Gotcha with worked examples and exam-style questions."
+description:
+  'Goroutines and Synchronization — Goroutines; The Goroutine Scheduler; sync.WaitGroup; WaitGroup
+  Gotcha with worked examples and exam-style questions.'
 slug: goroutines
 date: 2026-04-18
 tags:
@@ -8,11 +10,12 @@ tags:
 categories:
   - Go
 ---
+
 ## Goroutines
 
 A goroutine is a lightweight thread managed by the Go runtime. Goroutines are multiplexed onto a
-Small number of OS threads (default: GOMAXPROCS, equal to the number of CPU cores). The
-Initial stack size is small (2-8 KB) and grows/shrinks as needed.
+Small number of OS threads (default: GOMAXPROCS, equal to the number of CPU cores). The Initial
+stack size is small (2-8 KB) and grows/shrinks as needed.
 
 Starting a goroutine:
 
@@ -167,9 +170,9 @@ Vice versa). Use `Lock`/`Unlock` for writes.
 
 ### When to Use RWMutex vs Mutex
 
-Use `RWMutex` when reads significantly outnumber writes and the read critical section is not
- short. The overhead of `RWMutex` is higher than `Mutex`So if reads are rare or the
-Critical section is a single field read, `Mutex` may be faster.
+Use `RWMutex` when reads significantly outnumber writes and the read critical section is not short.
+The overhead of `RWMutex` is higher than `Mutex`So if reads are rare or the Critical section is a
+single field read, `Mutex` may be faster.
 
 ## sync.Once
 
@@ -285,26 +288,26 @@ Use directional channels in function signatures to make the intended usage expli
 ## Common Pitfalls
 
 1. **Forgetting to close channels.** If the sender does not close the channel, receivers waiting
- with `range` will block forever. Use `defer close(ch)` or close explicitly when done.
+   with `range` will block forever. Use `defer close(ch)` or close explicitly when done.
 
 2. **Closing a channel twice.** Closing an already-closed channel panics. Track ownership: only the
- goroutine responsible for sending should close the channel.
+   goroutine responsible for sending should close the channel.
 
 3. **Sending on a closed channel.** Sending a value to a closed channel panics. This is a
- fundamental rule of Go channels.
+   fundamental rule of Go channels.
 
 4. **Blocking on unbuffered channel with no receiver.** An unbuffered send blocks until a receiver
- is ready. If no receiver exists, the goroutine blocks forever.
+   is ready. If no receiver exists, the goroutine blocks forever.
 
 5. **Copying a Mutex after use.** `sync.Mutex` must not be copied after first use. The same applies
- to `sync.RWMutex``sync.WaitGroup``sync.Cond`And `sync.Pool`. Use pointers.
+   to `sync.RWMutex``sync.WaitGroup``sync.Cond`And `sync.Pool`. Use pointers.
 
 6. **Using goroutines without synchronization.** Starting a goroutine and not waiting for it or
- communicating with it via a channel leads to data races. Use `sync.WaitGroup` or channels to
- coordinate.
+   communicating with it via a channel leads to data races. Use `sync.WaitGroup` or channels to
+   coordinate.
 
 7. **Deadlock with RWMutex.** A goroutine holding `RLock` cannot upgrade to `Lock` -- it must
- release `RLock` first. Attempting to call `Lock()` while holding `RLock()` deadlocks.
+   release `RLock` first. Attempting to call `Lock()` while holding `RLock()` deadlocks.
 
 ## Summary
 

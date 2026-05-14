@@ -1,6 +1,8 @@
 ---
-title: "Inequalities -- Diagnostic Tests"
-description: "Diagnostic tests for DSE Inequalities: linear, quadratic, absolute value inequalities, systems of inequalities, and common sign-flip errors."
+title: 'Inequalities -- Diagnostic Tests'
+description:
+  'Diagnostic tests for DSE Inequalities: linear, quadratic, absolute value inequalities, systems of
+  inequalities, and common sign-flip errors.'
 slug: diag-inequalities
 hide_table_of_contents: true
 ---
@@ -25,11 +27,11 @@ Do NOT cross-multiply, because the sign of $(2 - x)$ is unknown.
 
 Sign chart:
 
-| Interval | $3x - 1$ | $2 - x$ | Quotient |
-|---|---|---|---|
-| $x < \dfrac{1}{3}$ | $-$ | $+$ | $-$ |
-| $\dfrac{1}{3} < x < 2$ | $+$ | $+$ | $+$ |
-| $x > 2$ | $+$ | $-$ | $-$ |
+| Interval               | $3x - 1$ | $2 - x$ | Quotient |
+| ---------------------- | -------- | ------- | -------- |
+| $x < \dfrac{1}{3}$     | $-$      | $+$     | $-$      |
+| $\dfrac{1}{3} < x < 2$ | $+$      | $+$     | $+$      |
+| $x > 2$                | $+$      | $-$     | $-$      |
 
 At $x = \dfrac{1}{3}$: quotient is $0$ (included since $\geq 0$).
 
@@ -37,7 +39,8 @@ At $x = 2$: undefined (excluded).
 
 Solution: $x \in \left[\dfrac{1}{3},\; 2\right)$.
 
-A common mistake is cross-multiplying by $(2 - x)$ without considering the sign, which would give the wrong inequality direction for $x > 2$.
+A common mistake is cross-multiplying by $(2 - x)$ without considering the sign, which would give
+the wrong inequality direction for $x > 2$.
 
 ---
 
@@ -53,7 +56,10 @@ Since the RHS involves $x$We cannot split into two cases without considering the
 
 **Case 1:** $3x + 1 \leq 0$I.e. $x \leq -\dfrac{1}{3}$.
 
-$|2x - 5| \geq 0$ and $3x + 1 \leq 0$So $|2x - 5| \geq 0 > 3x + 1$ is possible only if $|2x - 5| < 3x + 1$. But $3x + 1 \leq 0$ while $|2x - 5| \geq 0$So $|2x - 5| < 3x + 1$ is impossible when $3x + 1 \leq 0$ (since LHS $\geq 0$ and RHS $\leq 0$Equality requires both zero, but $|2x-5|=0 \implies x=5/2 \not\leq -1/3$).
+$|2x - 5| \geq 0$ and $3x + 1 \leq 0$So $|2x - 5| \geq 0 > 3x + 1$ is possible only if
+$|2x - 5| < 3x + 1$. But $3x + 1 \leq 0$ while $|2x - 5| \geq 0$So $|2x - 5| < 3x + 1$ is impossible
+when $3x + 1 \leq 0$ (since LHS $\geq 0$ and RHS $\leq 0$Equality requires both zero, but
+$|2x-5|=0 \implies x=5/2 \not\leq -1/3$).
 
 No solution in this case.
 
@@ -63,7 +69,8 @@ $$-(3x + 1) < 2x - 5 < 3x + 1$$
 
 Left inequality: $-3x - 1 < 2x - 5 \implies -5x < -4 \implies x > \dfrac{4}{5}$.
 
-Right inequality: $2x - 5 < 3x + 1 \implies -x < 6 \implies x > -6$ (always true when $x > -\dfrac{1}{3}$).
+Right inequality: $2x - 5 < 3x + 1 \implies -x < 6 \implies x > -6$ (always true when
+$x > -\dfrac{1}{3}$).
 
 Combining with $x > -\dfrac{1}{3}$: $x > \dfrac{4}{5}$.
 
@@ -107,9 +114,12 @@ Find the maximum value of $P = 3x + 2y$ in this region.
 
 Corner points of the feasible region:
 
-1. Intersection of $x + y = 6$ and $2x - y = 1$: adding gives $3x = 7$So $x = \dfrac{7}{3}$$y = 6 - \dfrac{7}{3} = \dfrac{11}{3}$. Point: $\left(\dfrac{7}{3},\; \dfrac{11}{3}\right)$.
+1. Intersection of $x + y = 6$ and $2x - y = 1$: adding gives $3x = 7$So
+   $x = \dfrac{7}{3}$$y = 6 - \dfrac{7}{3} = \dfrac{11}{3}$. Point:
+   $\left(\dfrac{7}{3},\; \dfrac{11}{3}\right)$.
 
-2. Intersection of $2x - y = 1$ with $y = 0$: $2x = 1$$x = \dfrac{1}{2}$. Point: $\left(\dfrac{1}{2},\; 0\right)$.
+2. Intersection of $2x - y = 1$ with $y = 0$: $2x = 1$$x = \dfrac{1}{2}$. Point:
+   $\left(\dfrac{1}{2},\; 0\right)$.
 
 3. Intersection of $x + y = 6$ with $x = 0$: $y = 6$. Point: $(0,\; 6)$.
 
@@ -117,7 +127,8 @@ Corner points of the feasible region:
 
 Evaluate $P = 3x + 2y$:
 
-- $\left(\dfrac{7}{3},\; \dfrac{11}{3}\right)$: $P = 7 + \dfrac{22}{3} = \dfrac{43}{3} \approx 14.33$
+- $\left(\dfrac{7}{3},\; \dfrac{11}{3}\right)$:
+  $P = 7 + \dfrac{22}{3} = \dfrac{43}{3} \approx 14.33$
 - $\left(\dfrac{1}{2},\; 0\right)$: $P = \dfrac{3}{2} = 1.5$
 - $(0,\; 6)$: $P = 12$
 - $(0,\; 0)$: $P = 0$
@@ -150,12 +161,12 @@ Critical values: $x = -1$$x = 1$$x = 3$.
 
 Sign chart:
 
-| Interval | Test | Sign |
-|---|---|---|
-| $x < -1$ | $x = -2$ | $-$ |
-| $-1 < x < 1$ | $x = 0$ | $+$ |
-| $1 < x < 3$ | $x = 2$ | $-$ |
-| $x > 3$ | $x = 4$ | $+$ |
+| Interval     | Test     | Sign |
+| ------------ | -------- | ---- |
+| $x < -1$     | $x = -2$ | $-$  |
+| $-1 < x < 1$ | $x = 0$  | $+$  |
+| $1 < x < 3$  | $x = 2$  | $-$  |
+| $x > 3$      | $x = 4$  | $+$  |
 
 Including zeros ($x = 3$), excluding poles ($x = -1, 1$):
 
@@ -171,11 +182,13 @@ Solution: $(-1,\; 1) \cup [3,\; \infty)$.
 
 **Question:**
 
-Find the range of values of $k$ such that the quadratic expression $x^2 + 2kx + k^2 - 2k + 5$ is always positive for all real $x$.
+Find the range of values of $k$ such that the quadratic expression $x^2 + 2kx + k^2 - 2k + 5$ is
+always positive for all real $x$.
 
 **Solution:**
 
-The expression is always positive if the discriminant is negative (since the leading coefficient $1 > 0$).
+The expression is always positive if the discriminant is negative (since the leading coefficient
+$1 > 0$).
 
 $$\Delta = (2k)^2 - 4(k^2 - 2k + 5) = 4k^2 - 4k^2 + 8k - 20 = 8k - 20$$
 
@@ -229,7 +242,8 @@ Combining: $-3 < x < 1$.
 
 Solution: $x \in (-3,\; 1)$.
 
-A common mistake is forgetting the domain restriction. If the base were between 0 and 1, the inequality would reverse.
+A common mistake is forgetting the domain restriction. If the base were between 0 and 1, the
+inequality would reverse.
 
 ---
 
@@ -261,11 +275,13 @@ Find the range of values of $k$ for which $x^2 - 6x + k > 0$ for all real $x$.
 
 **Solution:**
 
-For the quadratic to be always positive (since the leading coefficient $1 > 0$), we need $\Delta < 0$.
+For the quadratic to be always positive (since the leading coefficient $1 > 0$), we need
+$\Delta < 0$.
 
 $$\Delta = 36 - 4k < 0 \implies k > 9$$
 
-When $k = 9$: $\Delta = 0$And $x^2 - 6x + 9 = (x-3)^2 \geq 0$. The inequality is strict ($>$), so $x = 3$ gives $0 \not> 0$.
+When $k = 9$: $\Delta = 0$And $x^2 - 6x + 9 = (x-3)^2 \geq 0$. The inequality is strict ($>$), so
+$x = 3$ gives $0 \not> 0$.
 
 Therefore $k > 9$ (strictly).
 
@@ -321,11 +337,11 @@ Critical values: $x = 1$ (double root) and $x = -1$.
 
 Sign chart:
 
-| Interval | Test | $(x-1)^2$ | $(x+1)$ | Product |
-|---|---|---|---|---|
-| $x < -1$ | $x = -2$ | $+$ | $-$ | $-$ |
-| $-1 < x < 1$ | $x = 0$ | $+$ | $+$ | $+$ |
-| $x > 1$ | $x = 2$ | $+$ | $+$ | $+$ |
+| Interval     | Test     | $(x-1)^2$ | $(x+1)$ | Product |
+| ------------ | -------- | --------- | ------- | ------- |
+| $x < -1$     | $x = -2$ | $+$       | $-$     | $-$     |
+| $-1 < x < 1$ | $x = 0$  | $+$       | $+$     | $+$     |
+| $x > 1$      | $x = 2$  | $+$       | $+$     | $+$     |
 
 The expression is non-positive when $x \leq -1$ or $x = 1$.
 
@@ -343,7 +359,8 @@ Show that $x^2 + 4x + 5 > 0$ for all real $x$.
 
 $$\Delta = 16 - 20 = -4 < 0$$
 
-Since the discriminant is negative and the leading coefficient is positive, the quadratic is always positive.
+Since the discriminant is negative and the leading coefficient is positive, the quadratic is always
+positive.
 
 Alternatively, completing the square:
 
@@ -369,7 +386,8 @@ Squaring both sides: $2x + 1 \leq x^2 + 2x + 1 \implies 0 \leq x^2$Which is true
 
 So the solution is the domain: $x \in \left[-\dfrac{1}{2},\; \infty\right)$.
 
-**DSE Exam Technique:** When squaring both sides of an inequality, always check the domain and the sign of both sides. Squaring is only valid when both sides are non-negative.
+**DSE Exam Technique:** When squaring both sides of an inequality, always check the domain and the
+sign of both sides. Squaring is only valid when both sides are non-negative.
 
 ---
 
@@ -387,21 +405,32 @@ Since the quadratic opens upward (leading coefficient $= 2 > 0$):
 
 The product is positive outside the roots.
 
-Solution: $x < -4$ or $x > \dfrac{3}{2}$I.e. $x \in (-\infty,\; -4) \cup \left(\dfrac{3}{2},\; \infty\right)$.
+Solution: $x < -4$ or $x > \dfrac{3}{2}$I.e.
+$x \in (-\infty,\; -4) \cup \left(\dfrac{3}{2},\; \infty\right)$.
 
 ---
 
 ## Common Pitfalls
 
-1. **Forgetting to flip the inequality when multiplying or dividing by a negative number.** If you multiply or divide both sides of an inequality by a negative quantity, you MUST reverse the inequality sign. This is the single most common error in inequality problems.
+1. **Forgetting to flip the inequality when multiplying or dividing by a negative number.** If you
+   multiply or divide both sides of an inequality by a negative quantity, you MUST reverse the
+   inequality sign. This is the single most common error in inequality problems.
 
-2. **Cross-multiplying without considering the sign of the denominator.** When solving $\dfrac{A}{B} > 0$You cannot write $A > 0$ because the sign depends on $B$. Use a sign chart or consider cases.
+2. **Cross-multiplying without considering the sign of the denominator.** When solving
+   $\dfrac{A}{B} > 0$You cannot write $A > 0$ because the sign depends on $B$. Use a sign chart or
+   consider cases.
 
-3. **Including values that make the denominator zero.** When solving rational inequalities, the values that make the denominator zero must be EXCLUDED from the solution set, even if the numerator is also zero at those points.
+3. **Including values that make the denominator zero.** When solving rational inequalities, the
+   values that make the denominator zero must be EXCLUDED from the solution set, even if the
+   numerator is also zero at those points.
 
-4. **Incorrectly handling double roots.** A double root does not change the sign of the expression (it "bounces off" the axis). So at a double root, the expression equals zero, and the inequality direction determines whether to include or exclude it.
+4. **Incorrectly handling double roots.** A double root does not change the sign of the expression
+   (it "bounces off" the axis). So at a double root, the expression equals zero, and the inequality
+   direction determines whether to include or exclude it.
 
-5. **Not checking the domain before squaring.** When solving $\sqrt{f(x)} > g(x)$You must first establish that $f(x) \geq 0$ and $g(x) \geq 0$ before squaring both sides. Squaring an inequality where one side is negative gives incorrect results.
+5. **Not checking the domain before squaring.** When solving $\sqrt{f(x)} > g(x)$You must first
+   establish that $f(x) \geq 0$ and $g(x) \geq 0$ before squaring both sides. Squaring an inequality
+   where one side is negative gives incorrect results.
 
 ---
 
@@ -411,9 +440,8 @@ Solution: $x < -4$ or $x > \dfrac{3}{2}$I.e. $x \in (-\infty,\; -4) \cup \left(\
 
 Find the range of values of $x$ for which:
 
-(a) $x^2 - 5x + 6 < 0$ (2 marks)
-(b) $2x^2 + 3x - 2 \geq 0$ (3 marks)
-(c) Both inequalities in (a) and (b) are satisfied simultaneously. (2 marks)
+(a) $x^2 - 5x + 6 < 0$ (2 marks) (b) $2x^2 + 3x - 2 \geq 0$ (3 marks) (c) Both inequalities in (a)
+and (b) are satisfied simultaneously. (2 marks)
 
 **Solution:**
 
@@ -423,7 +451,8 @@ Find the range of values of $x$ for which:
 
 Critical values: $x = \dfrac{1}{2}$ and $x = -2$.
 
-Opens upward: $x \leq -2$ or $x \geq \dfrac{1}{2}$I.e. $x \in (-\infty,\; -2] \cup \left[\dfrac{1}{2},\; \infty\right)$.
+Opens upward: $x \leq -2$ or $x \geq \dfrac{1}{2}$I.e.
+$x \in (-\infty,\; -2] \cup \left[\dfrac{1}{2},\; \infty\right)$.
 
 (c) Intersection of $(2,\; 3)$ and $(-\infty,\; -2] \cup \left[\dfrac{1}{2},\; \infty\right)$:
 
@@ -437,9 +466,8 @@ Solution: $x \in (2,\; 3)$.
 
 Find the range of values of $k$ for which the equation $x^2 + 2kx + k^2 + 3 = 0$ has:
 
-(a) Two distinct real roots. (2 marks)
-(b) No real roots. (1 mark)
-(c) Real roots that are both positive. (4 marks)
+(a) Two distinct real roots. (2 marks) (b) No real roots. (1 mark) (c) Real roots that are both
+positive. (4 marks)
 
 **Solution:**
 
@@ -449,7 +477,8 @@ There are NEVER two distinct real roots. The answer is: no such value of $k$ exi
 
 (b) $\Delta < 0$ for all $k$So there are no real roots for all values of $k$.
 
-(c) Since the equation never has real roots, there is no value of $k$ for which both roots are positive.
+(c) Since the equation never has real roots, there is no value of $k$ for which both roots are
+positive.
 
 ---
 
@@ -469,15 +498,16 @@ Critical values: $x = -3$ (excluded) and $x = 1$ (included).
 
 Sign chart:
 
-| Interval | Test | Sign |
-|---|---|---|
-| $x < -3$ | $x = -4$ | $+$ |
-| $-3 < x < 1$ | $x = 0$ | $-$ |
-| $x > 1$ | $x = 2$ | $+$ |
+| Interval     | Test     | Sign |
+| ------------ | -------- | ---- |
+| $x < -3$     | $x = -4$ | $+$  |
+| $-3 < x < 1$ | $x = 0$  | $-$  |
+| $x > 1$      | $x = 2$  | $+$  |
 
 Including $x = 1$Excluding $x = -3$ and $x = 3$.
 
-Solution: $x \in (-3,\; 1] \cup (3,\; \infty)$? No -- checking: for $x > 3$$\dfrac{x-1}{x+3} > 0$Which does not satisfy $\leq 0$.
+Solution: $x \in (-3,\; 1] \cup (3,\; \infty)$? No -- checking: for
+$x > 3$$\dfrac{x-1}{x+3} > 0$Which does not satisfy $\leq 0$.
 
 Correct solution: $x \in (-3,\; 1]$.
 
@@ -509,7 +539,8 @@ Solution: $x \in \left(-4,\; \dfrac{2}{3}\right)$.
 
 ### DSE-5
 
-Find the range of values of $x$ for which both $\dfrac{x}{x - 2} > 0$ and $x^2 - 4x + 3 < 0$ are satisfied. (5 marks)
+Find the range of values of $x$ for which both $\dfrac{x}{x - 2} > 0$ and $x^2 - 4x + 3 < 0$ are
+satisfied. (5 marks)
 
 **Solution:**
 

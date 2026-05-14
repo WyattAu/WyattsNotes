@@ -1,6 +1,8 @@
 ---
 title: Rotational Motion
-description: "Rotational Motion — Rotational Kinematics (CED Unit 7); Angular Quantities; Angular Velocity and Acceleration; Constant Angular Acceleration Equations."
+description:
+  'Rotational Motion — Rotational Kinematics (CED Unit 7); Angular Quantities; Angular Velocity and
+  Acceleration; Constant Angular Acceleration Equations.'
 date: 2026-04-14
 tags:
   - Physics
@@ -9,14 +11,15 @@ categories:
   - Physics
 slug: rotational-motion
 ---
+
 ## Rotational Kinematics (CED Unit 7)
 
 ### Angular Quantities
 
-| Linear Quantity | Angular Quantity | Relation |
+| Linear Quantity  | Angular Quantity              | Relation        |
 | ---------------- | ----------------------------- | --------------- |
-| Displacement $x$ | Angle $\theta$ | $x = r\theta$ |
-| Velocity $v$ | Angular velocity $\omega$ | $v = r\omega$ |
+| Displacement $x$ | Angle $\theta$                | $x = r\theta$   |
+| Velocity $v$     | Angular velocity $\omega$     | $v = r\omega$   |
 | Acceleration $a$ | Angular acceleration $\alpha$ | $a_t = r\alpha$ |
 
 ### Angular Velocity and Acceleration
@@ -57,14 +60,15 @@ $$
 
 ### The Analogy Between Linear and Rotational Kinematics
 
-Every linear kinematic equation has a direct rotational analogue. Replace $x$ with $\theta$$v$
-With $\omega$And $a$ with $\alpha$. This is not a coincidence: it reflects the fact that rotation
-Is a one-dimensional motion in the angular coordinate. The mathematics is identical.
+Every linear kinematic equation has a direct rotational analogue. Replace $x$ with $\theta$$v$ With
+$\omega$And $a$ with $\alpha$. This is not a coincidence: it reflects the fact that rotation Is a
+one-dimensional motion in the angular coordinate. The mathematics is identical.
 
 :::info[Example]
 
-A wheel starts from rest and accelerates at $2.0 \mathrm{ rad/s{}^2$ for $5.0 \mathrm{ s{}$. Find the
-Angular velocity, total angle rotated, and the tangential speed of a point 0.3 m from the center.
+A wheel starts from rest and accelerates at $2.0 \mathrm{ rad/s{}^2$ for $5.0 \mathrm{ s{}$. Find
+the Angular velocity, total angle rotated, and the tangential speed of a point 0.3 m from the
+center.
 
 $$
 \omega = 0 + (2.0)(5.0) = 10 \mathrm{ rad/s{}
@@ -105,20 +109,20 @@ Regardless of the direction of motion.
 
 ### Common Moments of Inertia
 
-| Object | Axis | Moment of Inertia |
+| Object                          | Axis                         | Moment of Inertia  |
 | ------------------------------- | ---------------------------- | ------------------ |
-| Thin rod, length $L$Mass $M$ | Center, perpendicular to rod | $\frac{1}{12}ML^2$ |
-| Thin rod, length $L$Mass $M$ | End, perpendicular to rod | $\frac{1}{3}ML^2$ |
-| Solid cylinder/disk, radius $R$ | Central axis | $\frac{1}{2}MR^2$ |
-| Hollow cylinder, radius $R$ | Central axis | $MR^2$ |
-| Solid sphere, radius $R$ | Diameter | $\frac{2}{5}MR^2$ |
-| Hollow sphere, radius $R$ | Diameter | $\frac{2}{3}MR^2$ |
-| Point mass $m$ at distance $r$ | -- | $mr^2$ |
+| Thin rod, length $L$Mass $M$    | Center, perpendicular to rod | $\frac{1}{12}ML^2$ |
+| Thin rod, length $L$Mass $M$    | End, perpendicular to rod    | $\frac{1}{3}ML^2$  |
+| Solid cylinder/disk, radius $R$ | Central axis                 | $\frac{1}{2}MR^2$  |
+| Hollow cylinder, radius $R$     | Central axis                 | $MR^2$             |
+| Solid sphere, radius $R$        | Diameter                     | $\frac{2}{5}MR^2$  |
+| Hollow sphere, radius $R$       | Diameter                     | $\frac{2}{3}MR^2$  |
+| Point mass $m$ at distance $r$  | --                           | $mr^2$             |
 
 ### Derivation: Moment of Inertia of a Solid Cylinder
 
-Consider a solid cylinder of mass $M$Radius $R$And length $L$Rotating about its central axis.
-Divide the cylinder into thin cylindrical shells of radius $r$ and thickness $dr$.
+Consider a solid cylinder of mass $M$Radius $R$And length $L$Rotating about its central axis. Divide
+the cylinder into thin cylindrical shells of radius $r$ and thickness $dr$.
 
 $$
 Dm = \frac{M}{\pi R^2 L} \cdot 2\pi r L\, dr = \frac{2M}{R^2} r\, dr
@@ -139,8 +143,8 @@ Where $d$ is the distance from the center of mass to the new axis.
 ### Proof of the Parallel Axis Theorem
 
 Consider a body rotating about an axis parallel to an axis through the center of mass, at distance
-$d$. Let $r_i$ be the distance from the CM axis to mass element $m_i$And $R_i$ be the distance
-From the new axis. Then $R_i^2 = r_i^2 + d^2 - 2r_i d\cos\phi_i$.
+$d$. Let $r_i$ be the distance from the CM axis to mass element $m_i$And $R_i$ be the distance From
+the new axis. Then $R_i^2 = r_i^2 + d^2 - 2r_i d\cos\phi_i$.
 
 $$
 I = \sum m_i R_i^2 = \sum m_i r_i^2 + \sum m_i d^2 - 2d \sum m_i r_i \cos\phi_i
@@ -364,9 +368,9 @@ Take torques about the hinge (eliminates the hinge force):
 **Torques:**
 
 - Weight of beam at center:
- $\tau_1 = -(20)(9.8)(2.0)\sin 90^\circ = -392 \mathrm{ N{} \cdot \mathrm{m{}$ (CW)
+  $\tau_1 = -(20)(9.8)(2.0)\sin 90^\circ = -392 \mathrm{ N{} \cdot \mathrm{m{}$ (CW)
 - Hanging mass at $3.0 \mathrm{ m{}$ from hinge:
- $\tau_2 = -(50)(9.8)(3.0) = -1470 \mathrm{ N{} \cdot \mathrm{m{}$ (CW)
+  $\tau_2 = -(50)(9.8)(3.0) = -1470 \mathrm{ N{} \cdot \mathrm{m{}$ (CW)
 - Tension $T$ at $4.0 \mathrm{ m{}$ from hinge: $\tau_3 = T(4.0)\sin 30^\circ = 2.0T$ (CCW)
 
 Set $\sum \tau = 0$:
@@ -380,58 +384,58 @@ $$
 ## Common Pitfalls
 
 1. **Using the wrong moment of inertia.** Always check which axis the object rotates about. Use the
- parallel axis theorem when the axis does not pass through the center of mass.
+   parallel axis theorem when the axis does not pass through the center of mass.
 2. **Confusing torque and force.** Torque depends on both the force and the moment arm (distance
- from the axis).
+   from the axis).
 3. **Forgetting that angular momentum is a vector.** Direction matters and is determined by the
- right-hand rule.
+   right-hand rule.
 4. **Incorrectly applying the rolling condition.** Rolling without slipping means $v = R\omega$Not
- $v = R\alpha$.
+   $v = R\alpha$.
 5. **Not accounting for rotational KE in energy problems.** Rolling objects have both translational
- and rotational kinetic energy.
+   and rotational kinetic energy.
 6. **Sign errors with torque.** Be consistent with the sign convention (CCW positive, CW negative).
 7. **Assuming angular momentum is conserved when external torques act.** Conservation requires zero
- net external torque.
+   net external torque.
 8. **Confusing moment of inertia with mass.** Mass is a scalar; moment of inertia depends on the
- axis.
+   axis.
 9. **Using the wrong radius in $v = R\omega$.** $R$ is the radius of the rolling object, not the
- radius of the incline or the path.
+   radius of the incline or the path.
 
 ## Practice Questions
 
-1. A disk of mass $8.0 \mathrm{ kg{}$ and radius $0.5 \mathrm{ m{}$ is mounted on a frictionless axle.
- A block of mass $2.0 \mathrm{ kg{}$ is attached to a string wrapped around the disk. Find the
- acceleration of the block.
+1. A disk of mass $8.0 \mathrm{ kg{}$ and radius $0.5 \mathrm{ m{}$ is mounted on a frictionless
+   axle. A block of mass $2.0 \mathrm{ kg{}$ is attached to a string wrapped around the disk. Find
+   the acceleration of the block.
 
 2. A solid cylinder and a hollow cylinder of the same mass and radius are released from rest at the
- top of an incline. Which reaches the bottom first? Prove your answer.
+   top of an incline. Which reaches the bottom first? Prove your answer.
 
 3. A uniform rod of length $L$ and mass $M$ is pivoted at one end and held horizontally, then
- released. Find its angular speed as it passes through the vertical position.
+   released. Find its angular speed as it passes through the vertical position.
 
 4. A merry-go-round of radius $3.0 \mathrm{ m{}$ and moment of inertia
- $600 \mathrm{ kg{} \cdot \mathrm{m{}^2$ is rotating at $0.50 \mathrm{ rad/s{}$. A child of mass
- $30 \mathrm{ kg{}$ jumps on at the edge. Find the new angular speed.
+   $600 \mathrm{ kg{} \cdot \mathrm{m{}^2$ is rotating at $0.50 \mathrm{ rad/s{}$. A child of mass
+   $30 \mathrm{ kg{}$ jumps on at the edge. Find the new angular speed.
 
 5. A $4.0 \mathrm{ m{}$ uniform beam of mass $50 \mathrm{ kg{}$ is supported by two vertical cables,
- one at each end. A $200 \mathrm{ kg{}$ mass hangs $1.0 \mathrm{ m{}$ from the left end. Find the
- tension in each cable.
+   one at each end. A $200 \mathrm{ kg{}$ mass hangs $1.0 \mathrm{ m{}$ from the left end. Find the
+   tension in each cable.
 
 6. Calculate the moment of inertia of a uniform solid sphere about its diameter by integration.
 
-7. A $0.50 \mathrm{ kg{}$ ball of radius $0.05 \mathrm{ m{}$ rolls without slipping down a $30^\circ$
- incline from a height of $2.0 \mathrm{ m{}$. Find the translational and rotational speeds at the
- bottom.
+7. A $0.50 \mathrm{ kg{}$ ball of radius $0.05 \mathrm{ m{}$ rolls without slipping down a
+   $30^\circ$ incline from a height of $2.0 \mathrm{ m{}$. Find the translational and rotational
+   speeds at the bottom.
 
 8. Derive the parallel axis theorem from the definition of moment of inertia.
 
 9. A solid sphere rolls without slipping up a $20^\circ$ incline. If its initial speed is
- $5.0 \mathrm{ m/s{}$How far up the incline does it travel before stopping and rolling back?
+   $5.0 \mathrm{ m/s{}$How far up the incline does it travel before stopping and rolling back?
 
 10. A flywheel of moment of inertia $50 \mathrm{ kg{} \cdot \mathrm{m{}^2$ rotating at
- $300 \mathrm{ rpm{}$ is brought to rest by a constant frictional torque of
- $10 \mathrm{ N{} \cdot \mathrm{m{}$ in $785 \mathrm{ s{}$. Verify this using the rotational impulse
- equation, and calculate the angle through which the flywheel rotates while stopping.
+    $300 \mathrm{ rpm{}$ is brought to rest by a constant frictional torque of
+    $10 \mathrm{ N{} \cdot \mathrm{m{}$ in $785 \mathrm{ s{}$. Verify this using the rotational
+    impulse equation, and calculate the angle through which the flywheel rotates while stopping.
 
 ## 11. Moment of Inertia: Extended Derivations
 
@@ -472,12 +476,12 @@ A solid sphere, a solid cylinder, a hollow sphere, and a hollow cylinder, all of
 $R$Are released from rest at the top of an incline of height $h$. Rank them by their speed at the
 Bottom.
 
-| Object | $I_{\mathrm{cm{}}$ | $v$ at bottom | Fraction as KE of translation |
-| --------------- | ----------------- | --------------- | ----------------------------- |
-| Solid sphere | $\frac{2}{5}MR^2$ | $\sqrt{10gh/7}$ | $5/7 = 71\%$ |
-| Solid cylinder | $\frac{1}{2}MR^2$ | $\sqrt{4gh/3}$ | $2/3 = 67\%$ |
-| Hollow sphere | $\frac{2}{3}MR^2$ | $\sqrt{6gh/5}$ | $3/5 = 60\%$ |
-| Hollow cylinder | $MR^2$ | $\sqrt{gh}$ | $1/2 = 50\%$ |
+| Object          | $I_{\mathrm{cm{}}$ | $v$ at bottom   | Fraction as KE of translation |
+| --------------- | ------------------ | --------------- | ----------------------------- |
+| Solid sphere    | $\frac{2}{5}MR^2$  | $\sqrt{10gh/7}$ | $5/7 = 71\%$                  |
+| Solid cylinder  | $\frac{1}{2}MR^2$  | $\sqrt{4gh/3}$  | $2/3 = 67\%$                  |
+| Hollow sphere   | $\frac{2}{3}MR^2$  | $\sqrt{6gh/5}$  | $3/5 = 60\%$                  |
+| Hollow cylinder | $MR^2$             | $\sqrt{gh}$     | $1/2 = 50\%$                  |
 
 Ranking (fastest to slowest): solid sphere, solid cylinder, hollow sphere, hollow cylinder. Objects
 With more mass concentrated near the rim (larger $I$) have more rotational KE and less translational
@@ -519,9 +523,9 @@ $$= \frac{0.4}{0.717} = 0.558 \mathrm{ rad/s{}$$
 
 ### Worked Example: Person on a Rotating Platform
 
-A merry-go-round of radius $3 \mathrm{ m{}$ and moment of inertia $600 \mathrm{ kg{}\cdot\mathrm{m{}^2$
-Rotates at $0.5 \mathrm{ rad/s{}$. A $60 \mathrm{ kg{}$ person standing at the edge walks to the
-Centre. Find the new angular speed.
+A merry-go-round of radius $3 \mathrm{ m{}$ and moment of inertia
+$600 \mathrm{ kg{}\cdot\mathrm{m{}^2$ Rotates at $0.5 \mathrm{ rad/s{}$. A $60 \mathrm{ kg{}$ person
+standing at the edge walks to the Centre. Find the new angular speed.
 
 **Initially:** $I_i = 600 + 60 \times 3^2 = 600 + 540 = 1140 \mathrm{ kg{}\cdot\mathrm{m{}^2$.
 
@@ -572,49 +576,50 @@ Since $f = 34.3 \mathrm{ N{} \lt 58.8 \mathrm{ N{} = f_{\max}$The ladder does no
 
 ## 15. Summary Table: Linear vs Rotational Quantities
 
-| Linear | Rotational | Relationship |
-| --------------------- | -------------------------- | ------------------------------------------------------------- |
-| $x$ | $\theta$ | $x = r\theta$ |
-| $v$ | $\omega$ | $v = r\omega$ |
-| $a$ | $\alpha$ | $a_t = r\alpha$ |
-| $m$ | $I$ | $I = \int r^2 dm$ |
-| $F$ | $\tau$ | $\tau = rF\sin\theta$ |
-| $p = mv$ | $L = I\omega$ | $L = r \times p$ |
+| Linear                | Rotational                 | Relationship                                                   |
+| --------------------- | -------------------------- | -------------------------------------------------------------- |
+| $x$                   | $\theta$                   | $x = r\theta$                                                  |
+| $v$                   | $\omega$                   | $v = r\omega$                                                  |
+| $a$                   | $\alpha$                   | $a_t = r\alpha$                                                |
+| $m$                   | $I$                        | $I = \int r^2 dm$                                              |
+| $F$                   | $\tau$                     | $\tau = rF\sin\theta$                                          |
+| $p = mv$              | $L = I\omega$              | $L = r \times p$                                               |
 | $K = \frac{1}{2}mv^2$ | $K = \frac{1}{2}I\omega^2$ | $K_{\mathrm{total{}} = \frac{1}{2}mv^2 + \frac{1}{2}I\omega^2$ |
-| $F = ma$ | $\tau = I\alpha$ | Newton's second law for rotation |
-| $W = Fd$ | $W = \tau\theta$ | Work-energy theorem for rotation |
+| $F = ma$              | $\tau = I\alpha$           | Newton's second law for rotation                               |
+| $W = Fd$              | $W = \tau\theta$           | Work-energy theorem for rotation                               |
 
 ## 16. Practice Questions (Additional)
 
-11. A uniform rod of mass $4 \mathrm{ kg{}$ and length $2 \mathrm{ m{}$ is pivoted at one end and held
- horizontally. It is released from rest. Find (a) the initial angular acceleration, (b) the
- angular speed as it passes through the vertical, and (c) the angular speed when it makes an
- angle of $45^{\circ}$ with the vertical.
+11. A uniform rod of mass $4 \mathrm{ kg{}$ and length $2 \mathrm{ m{}$ is pivoted at one end and
+    held horizontally. It is released from rest. Find (a) the initial angular acceleration, (b) the
+    angular speed as it passes through the vertical, and (c) the angular speed when it makes an
+    angle of $45^{\circ}$ with the vertical.
 
 12. A solid cylinder of mass $10 \mathrm{ kg{}$ and radius $0.2 \mathrm{ m{}$ rolls without slipping
- down an incline of $30^{\circ}$ from a height of $2 \mathrm{ m{}$. Find the linear speed at the
- bottom and the time taken.
+    down an incline of $30^{\circ}$ from a height of $2 \mathrm{ m{}$. Find the linear speed at the
+    bottom and the time taken.
 
-13. A disk of moment of inertia $0.5 \mathrm{ kg{}\cdot\mathrm{m{}^2$ rotating at $20 \mathrm{ rad/s{}$
- has a braking torque of $0.2 \mathrm{ N{}\cdot\mathrm{m{}$ applied. Find (a) the angular
- deceleration, (b) the time to stop, and (c) the number of revolutions made while stopping.
+13. A disk of moment of inertia $0.5 \mathrm{ kg{}\cdot\mathrm{m{}^2$ rotating at
+    $20 \mathrm{ rad/s{}$ has a braking torque of $0.2 \mathrm{ N{}\cdot\mathrm{m{}$ applied. Find
+    (a) the angular deceleration, (b) the time to stop, and (c) the number of revolutions made while
+    stopping.
 
-14. A $3 \mathrm{ m{}$ uniform beam of mass $40 \mathrm{ kg{}$ is hinged at a wall and supported by a
- cable at $30^{\circ}$ to the beam at the far end. A $100 \mathrm{ kg{}$ mass hangs
- $1 \mathrm{ m{}$ from the hinge. Find the tension in the cable and the force at the hinge.
+14. A $3 \mathrm{ m{}$ uniform beam of mass $40 \mathrm{ kg{}$ is hinged at a wall and supported by
+    a cable at $30^{\circ}$ to the beam at the far end. A $100 \mathrm{ kg{}$ mass hangs
+    $1 \mathrm{ m{}$ from the hinge. Find the tension in the cable and the force at the hinge.
 
 15. Calculate the moment of inertia of a hollow cylinder (thin-walled) of mass $M$ and radius $R$
- about its central axis by integration. Verify the result using the parallel axis theorem if
- necessary.
+    about its central axis by integration. Verify the result using the parallel axis theorem if
+    necessary.
 
 ## Extended Worked Examples
 
 ### Example 16: Gyroscopic Precession
 
-A spinning bicycle wheel of mass $2 \mathrm{ kg{}$ and radius $0.35 \mathrm{ m{}$ is supported on one
-End of its axle. The wheel spins at $50 \mathrm{ rad/s{}$ and the axle is horizontal. The distance
-From the support to the wheel centre is $0.15 \mathrm{ m{}$. Calculate the precession angular
-Velocity.
+A spinning bicycle wheel of mass $2 \mathrm{ kg{}$ and radius $0.35 \mathrm{ m{}$ is supported on
+one End of its axle. The wheel spins at $50 \mathrm{ rad/s{}$ and the axle is horizontal. The
+distance From the support to the wheel centre is $0.15 \mathrm{ m{}$. Calculate the precession
+angular Velocity.
 
 **Step 1: Moment of inertia of the wheel (thin ring approximation)**
 
@@ -635,11 +640,8 @@ $$\omega_p = \frac{\tau}{L} = \frac{2.94}{12.25} = 0.240 \mathrm{ rad/s{}$$
 The wheel precesses at $0.240 \mathrm{ rad/s{}$Completing one revolution in
 $T = 2\pi/\omega_p = 26.2 \mathrm{ s{}$.
 
-:::info
-Info
-Momentum vector. Instead of tipping over, the angular momentum vector rotates horizontally. This is
-The same principle behind gyrocompasses and spacecraft attitude control.
-:::
+:::info Info Momentum vector. Instead of tipping over, the angular momentum vector rotates
+horizontally. This is The same principle behind gyrocompasses and spacecraft attitude control. :::
 
 ### Example 17: Moment of Inertia of a Composite Object
 
@@ -652,7 +654,8 @@ Point mass, and (b) the centre of the rod.
 Rod about its end:
 $I_{\mathrm{rod{}} = \frac{1}{3}ML^2 = \frac{1}{3} \times 3 \times 4 = 4 \mathrm{ kg{}\cdot\mathrm{m{}^2$
 
-Point mass at the pivot: $I_{\mathrm{pm{}} = mr^2 = 2 \times 0^2 = 0 \mathrm{ kg{}\cdot\mathrm{m{}^2$
+Point mass at the pivot:
+$I_{\mathrm{pm{}} = mr^2 = 2 \times 0^2 = 0 \mathrm{ kg{}\cdot\mathrm{m{}^2$
 
 $$I_a = 4 + 0 = 4 \mathrm{ kg{}\cdot\mathrm{m{}^2$$
 
@@ -670,8 +673,8 @@ $$I_b = 1 + 2 = 3 \mathrm{ kg{}\cdot\mathrm{m{}^2$$
 
 $$I_a = I_b + M_{\mathrm{total{}}d^2 = 3 + 5 \times 1^2 = 8 \mathrm{ kg{}\cdot\mathrm{m{}^2$$
 
-Wait -- this gives $8$Not $4$. Let me recheck. The parallel axis theorem requires the total mass
-To be at the centre of mass of the _entire system_, not just the rod.
+Wait -- this gives $8$Not $4$. Let me recheck. The parallel axis theorem requires the total mass To
+be at the centre of mass of the _entire system_, not just the rod.
 
 **Centre of mass from the pivot (end with point mass):**
 
@@ -732,8 +735,7 @@ $$a = \frac{mg}{m + 1.8} = \frac{0.1 \times 9.8}{0.1 + 1.8} = \frac{0.98}{1.9} =
 
 $$T = 1.8 \times 0.516 = 0.929 \mathrm{ N{}$$
 
-:::info
-The yo-yo falls much more slowly than free fall ($0.516 \mathrm{ m/s{}^2$ vs
+:::info The yo-yo falls much more slowly than free fall ($0.516 \mathrm{ m/s{}^2$ vs
 $9.8 \mathrm{ m/s{}^2$) because gravitational PE is converted into both translational and rotational
 KE. The smaller the axle radius, the slower the fall, since more of the energy goes into rotation.
 :::
@@ -754,33 +756,33 @@ The contact point (instantaneously at rest).
 
 ### Pitfall 8: Forgetting Units in Moment of Inertia
 
-Moment of inertia has units of $\mathrm{kg{}\cdot\mathrm{m{}^2$. A common error is to use centimetres
-Instead of metres when calculating $I = mr^2$Giving answers that are off by a factor of $10^4$.
-Always convert to SI units before calculating.
+Moment of inertia has units of $\mathrm{kg{}\cdot\mathrm{m{}^2$. A common error is to use
+centimetres Instead of metres when calculating $I = mr^2$Giving answers that are off by a factor of
+$10^4$. Always convert to SI units before calculating.
 
 ## Additional Practice Problems
 
-16. A solid sphere of mass $4 \mathrm{ kg{}$ and radius $0.1 \mathrm{ m{}$ rolls without slipping up a
- $20^\circ$ incline at $5 \mathrm{ m/s{}$. Calculate how far up the incline it travels before
- stopping and rolling back.
+16. A solid sphere of mass $4 \mathrm{ kg{}$ and radius $0.1 \mathrm{ m{}$ rolls without slipping up
+    a $20^\circ$ incline at $5 \mathrm{ m/s{}$. Calculate how far up the incline it travels before
+    stopping and rolling back.
 
-17. A figure skater with arms extended has moment of inertia $4.5 \mathrm{ kg{}\cdot\mathrm{m{}^2$ and
- rotates at $2 \mathrm{ rad/s{}$. She pulls her arms in, reducing her moment of inertia to
- $1.5 \mathrm{ kg{}\cdot\mathrm{m{}^2$. Calculate her new angular velocity and the ratio of final
- to initial rotational KE.
+17. A figure skater with arms extended has moment of inertia $4.5 \mathrm{ kg{}\cdot\mathrm{m{}^2$
+    and rotates at $2 \mathrm{ rad/s{}$. She pulls her arms in, reducing her moment of inertia to
+    $1.5 \mathrm{ kg{}\cdot\mathrm{m{}^2$. Calculate her new angular velocity and the ratio of final
+    to initial rotational KE.
 
-18. A uniform rod of mass $8 \mathrm{ kg{}$ and length $3 \mathrm{ m{}$ is hinged at one end and held
- horizontally. It is released from rest. Calculate the angular acceleration just after release,
- the angular velocity as it passes through the vertical, and the force at the hinge at that
- instant.
+18. A uniform rod of mass $8 \mathrm{ kg{}$ and length $3 \mathrm{ m{}$ is hinged at one end and
+    held horizontally. It is released from rest. Calculate the angular acceleration just after
+    release, the angular velocity as it passes through the vertical, and the force at the hinge at
+    that instant.
 
 19. A $500 \mathrm{ g{}$ ball of radius $5 \mathrm{ cm{}$ rolls without slipping along a horizontal
- surface at $4 \mathrm{ m/s{}$. It encounters a ramp of height $0.5 \mathrm{ m{}$. Does it reach
- the top? If so, what is its speed at the top?
+    surface at $4 \mathrm{ m/s{}$. It encounters a ramp of height $0.5 \mathrm{ m{}$. Does it reach
+    the top? If so, what is its speed at the top?
 
 20. Two flywheels ($I_1 = 2 \mathrm{ kg{}\cdot\mathrm{m{}^2$ spinning at $300 \mathrm{ rpm{}$
- $I_2 = 5 \mathrm{ kg{}\cdot\mathrm{m{}^2$ at rest) are coupled together. Calculate the final
- angular velocity and the energy lost in the coupling process.
+    $I_2 = 5 \mathrm{ kg{}\cdot\mathrm{m{}^2$ at rest) are coupled together. Calculate the final
+    angular velocity and the energy lost in the coupling process.
 
 ## Practice Problems
 
@@ -835,10 +837,10 @@ Arms inward against the centrifugal tendency.
 <details>
 <summary>Question 3: Torque and equilibrium of a beam</summary>
 
-A uniform beam of length $4 \mathrm{ m{}$ and mass $20 \mathrm{ kg{}$ is supported at its left end by
-A hinge and at a point $1 \mathrm{ m{}$ from the right end by a cable making $30^\circ$ with the
-Horizontal. A $50 \mathrm{ kg{}$ mass hangs from the right end. Find the tension in the cable and the
-Force exerted by the hinge.
+A uniform beam of length $4 \mathrm{ m{}$ and mass $20 \mathrm{ kg{}$ is supported at its left end
+by A hinge and at a point $1 \mathrm{ m{}$ from the right end by a cable making $30^\circ$ with the
+Horizontal. A $50 \mathrm{ kg{}$ mass hangs from the right end. Find the tension in the cable and
+the Force exerted by the hinge.
 
 </details>
 
@@ -852,7 +854,7 @@ Forces and distances from hinge:
 - Weight of beam: $20g$ at $2 \mathrm{ m{}$.
 - Hanging mass: $50g$ at $4 \mathrm{ m{}$.
 - Cable tension $T$ at $3 \mathrm{ m{}$ from hinge, at $30^\circ$ above horizontal. Vertical
- component = $T\sin(30^\circ) = T/2$.
+  component = $T\sin(30^\circ) = T/2$.
 
 Clockwise torques: $20g \times 2 + 50g \times 4 = 40g + 200g = 240g = 2352 \mathrm{ N\cdot m{}$.
 
@@ -868,8 +870,8 @@ Vertical = $70g - T\sin(30^\circ) = 686 - 784 = -98 \mathrm{ N{}$ (downward).
 <details>
 <summary>Question 4: Physical pendulum</summary>
 
-A uniform rod of length $1.0 \mathrm{ m{}$ and mass $2 \mathrm{ kg{}$ is pivoted at one end and swings
-As a physical pendulum. Calculate the period of small oscillations.
+A uniform rod of length $1.0 \mathrm{ m{}$ and mass $2 \mathrm{ kg{}$ is pivoted at one end and
+swings As a physical pendulum. Calculate the period of small oscillations.
 
 </details>
 

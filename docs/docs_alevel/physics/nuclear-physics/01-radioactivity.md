@@ -1,6 +1,8 @@
 ---
 title: Radioactivity
-description: "A-Level Physics notes on Radioactivity: 1. Nuclear Structure; 2. Types of Radioactive Decay; Alpha Decay ($\alpha$); Beta Decay ($\beta^-$)."
+description:
+  "A-Level Physics notes on Radioactivity: 1. Nuclear Structure; 2. Types of Radioactive Decay;
+  Alpha Decay ($\alpha$); Beta Decay ($\beta^-$)."
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Physics
@@ -9,11 +11,10 @@ categories:
   - Physics
 slug: radioactivity
 ---
+
 ## Radioactivity
 
-:::info
-Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4
-:::
+:::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4 :::
 
 <PhetSimulation simulationId="alpha-decay" title="Alpha Decay" />
 
@@ -26,11 +27,11 @@ Explore the simulation above to develop intuition for this topic.
 The atom consists of a nucleus containing **protons** and **neutrons** (collectively called
 **nucleons**), surrounded by electrons.
 
-| Property | Proton | Neutron | Electron |
+| Property | Proton    | Neutron   | Electron        |
 | -------- | --------- | --------- | --------------- |
-| Charge | $+e$ | $0$ | $-e$ |
-| Mass (u) | $1.00728$ | $1.00867$ | $0.00055$ |
-| Location | Nucleus | Nucleus | Electron shells |
+| Charge   | $+e$      | $0$       | $-e$            |
+| Mass (u) | $1.00728$ | $1.00867$ | $0.00055$       |
+| Location | Nucleus   | Nucleus   | Electron shells |
 
 **Notation.** A nuclide is written as $\prescript{A}{}{Z}\mathrm{X}$ where $A$ is the mass number
 (nucleon number) and $Z$ is the atomic number (proton number). The neutron number is $N = A - Z$.
@@ -97,22 +98,18 @@ $$\prescript{A}{}{Z}\mathrm{X}^* \to \prescript{A}{}{Z}\mathrm{X} + \gamma$$
 No change in $A$ or $Z$. Gamma rays are weakly ionising but highly penetrating (stopped by thick
 Lead or concrete).
 
-:::warning
-Common Pitfall In $\beta^-$ decay, the mass number $A$ does not change — only the atomic
-Number changes. A neutron becomes a proton, so the total nucleon count is unchanged.
-:::
+:::warning Common Pitfall In $\beta^-$ decay, the mass number $A$ does not change — only the atomic
+Number changes. A neutron becomes a proton, so the total nucleon count is unchanged. :::
 
-:::info
-Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4
-:::
+:::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4 :::
 
-| Requirement | AQA | Edexcel | OCR (A) | CIE |
+| Requirement                  | AQA         | Edexcel     | OCR (A)     | CIE      |
 | ---------------------------- | ----------- | ----------- | ----------- | -------- |
-| Alpha decay equations | Yes | Yes | Yes | Yes |
-| $\beta^-$ decay equations | Yes | Yes | Yes | Yes |
-| $\beta^+$ decay equations | Required | Required | Not in core | Yes |
-| Neutrino / antineutrino | Qualitative | Qualitative | Qualitative | Detailed |
-| Spontaneous vs random nature | Required | Required | Required | Required |
+| Alpha decay equations        | Yes         | Yes         | Yes         | Yes      |
+| $\beta^-$ decay equations    | Yes         | Yes         | Yes         | Yes      |
+| $\beta^+$ decay equations    | Required    | Required    | Not in core | Yes      |
+| Neutrino / antineutrino      | Qualitative | Qualitative | Qualitative | Detailed |
+| Spontaneous vs random nature | Required    | Required    | Required    | Required |
 
 ## 3. Exponential Decay Law
 
@@ -178,32 +175,28 @@ $$\boxed{t_{1/2} = \frac◆LB◆\ln 2◆RB◆◆LB◆\lambda◆RB◆}$$
 $N = N_0/2^n$. The decay is exponential — the activity is always proportional to the number of
 Remaining nuclei, so it decreases exponentially.
 
-:::tip
-Tip
-Straight line with gradient $=-\lambda$. The half-life can be found by finding the time for the
-Activity to halve at any point on the curve.
-:::
+:::tip Tip Straight line with gradient $=-\lambda$. The half-life can be found by finding the time
+for the Activity to halve at any point on the curve. :::
 
 ### Radiation Detection
 
-:::info
-Info
+:::info Info
 
 #### Geiger-Muller Tube
 
 The Geiger-Muller (GM) tube is the most common radiation detector. It consists of a thin-walled
-Metal tube filled with an inert gas ( argon) at low pressure, with a central anode wire
-Held at high positive potential.
+Metal tube filled with an inert gas ( argon) at low pressure, with a central anode wire Held at high
+positive potential.
 
 When ionising radiation enters through the thin mica window, it ionises gas atoms. The freed
 Electrons are accelerated towards the anode, gaining enough energy to ionise further atoms in an
 **avalanche** process. Each avalanche produces a current pulse, which is counted electronically.
 
 - The GM tube has a **dead time** of approximately $100\,\mu\mathrm{s}$ after each count, during
- which it cannot detect further radiation. At very high activities this leads to count rates lower
- than the true activity.
+  which it cannot detect further radiation. At very high activities this leads to count rates lower
+  than the true activity.
 - **Background radiation** ( 20-40 counts per minute in the UK) must be subtracted from all
- measurements.
+  measurements.
 
 **Definition.** Background radiation is the ionising radiation present in the environment from
 Natural and artificial sources.
@@ -211,19 +204,16 @@ Natural and artificial sources.
 Sources of background radiation include:
 
 - **Radon gas** (from uranium decay in rocks) — the largest single source in the UK, contributing
- approximately 50% of background dose.
+  approximately 50% of background dose.
 - **Cosmic rays** — high-energy particles from space, increasing with altitude.
 - **Medical sources** — X-rays and nuclear medicine procedures.
-- **Ground and building materials** — occurring radioactive isotopes such as
- ${}^{40}\mathrm{K}$ and ${}^{238}\mathrm{U}$.
+- **Ground and building materials** — occurring radioactive isotopes such as ${}^{40}\mathrm{K}$ and
+  ${}^{238}\mathrm{U}$.
 - **Food and drink** — trace amounts of ${}^{40}\mathrm{K}$ and ${}^{14}\mathrm{C}$.
 
-:::warning
-Warning
-Because: (1) the detector only intercepts a fraction of emitted radiation (solid angle factor), and
-(2) not all radiation that enters the tube produces a count (detection efficiency is 1-2%
-For gamma rays). Never assume count rate equals activity.
-:::
+:::warning Warning Because: (1) the detector only intercepts a fraction of emitted radiation (solid
+angle factor), and (2) not all radiation that enters the tube produces a count (detection efficiency
+is 1-2% For gamma rays). Never assume count rate equals activity. :::
 
 #### Scintillation Detector
 
@@ -250,25 +240,21 @@ $$\ln A = \ln A_0 - \lambda t$$
 
 The gradient of the straight line gives $-\lambda$And then $t_{1/2} = \ln 2 / \lambda$.
 
-:::tip
-Exam Technique When describing an experimental method for determining half-life, always
+:::tip Exam Technique When describing an experimental method for determining half-life, always
 Mention: (1) measuring background count rate first, (2) subtracting it from all readings, (3) taking
-Readings at regular intervals, and (4) using a log-linear graph for greater accuracy.
-:::
+Readings at regular intervals, and (4) using a log-linear graph for greater accuracy. :::
 
 #### Practical Considerations
 
 - For short half-lives (seconds to minutes), readings can be taken in real time with a GM tube and
- data logger.
+  data logger.
 - For long half-lives (years to millennia), direct measurement is impractical. Instead, measure a
- known mass of the isotope and use $A = \lambda N$ where $N$ is calculated from the mass and
- Avogadro's number.
+  known mass of the isotope and use $A = \lambda N$ where $N$ is calculated from the mass and
+  Avogadro's number.
 
-:::info
-Board Coverage AQA requires the graphical method; Edexcel and OCR (A) additionally require
+:::info Board Coverage AQA requires the graphical method; Edexcel and OCR (A) additionally require
 Discussion of uncertainties and the effect of dead time on accuracy; CIE requires the logarithmic
-Method.
-:::
+Method. :::
 
 ## Problem Set
 
@@ -408,9 +394,7 @@ $1000 - 125 = 875$.
 
 ## 4. Decay Chains
 
-:::info
-Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4
-:::
+:::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4 :::
 
 **Definition.** A decay chain (or radioactive series) is a sequence of radioactive decays where each
 Daughter nuclide is itself radioactive, continuing until a stable nuclide is reached.
@@ -449,19 +433,15 @@ Each daughter has the same activity as the parent. This has practical importance
 Protection: the activity of radon-222 (a daughter of ${}^{238}\mathrm{U}$) in buildings is sustained
 By the essentially constant uranium in the ground beneath.
 
-:::warning
-Warning
-Only when the parent is much longer-lived than all daughters. If a short-lived daughter precedes a
-Long-lived daughter, the long-lived daughter accumulates and can become the dominant radiological
-Hazard.
-:::
+:::warning Warning Only when the parent is much longer-lived than all daughters. If a short-lived
+daughter precedes a Long-lived daughter, the long-lived daughter accumulates and can become the
+dominant radiological Hazard. :::
 
 ## 5. Applications of Radioactivity
 
 ### Carbon-14 Dating
 
-:::info
-Info
+:::info Info
 
 Living organisms continuously exchange carbon with the atmosphere, maintaining a constant ratio of
 ${}^{14}\mathrm{C}$ to ${}^{12}\mathrm{C}$. Cosmic rays produce neutrons in the upper atmosphere,
@@ -479,32 +459,30 @@ Where $N_0/N$ is the ratio of current ${}^{14}\mathrm{C}$ content to that of a l
 **Limitations:**
 
 - Effective range is approximately 50,000 years (beyond this, too few ${}^{14}\mathrm{C}$ atoms
- remain for accurate measurement).
+  remain for accurate measurement).
 - Assumes the atmospheric ${}^{14}\mathrm{C}$/${}^{12}\mathrm{C}$ ratio has been constant.
- Variations are corrected using calibration curves from tree-ring dating (dendrochronology).
+  Variations are corrected using calibration curves from tree-ring dating (dendrochronology).
 - Contamination by modern carbon makes samples appear younger; contamination by old carbon makes
- them appear older.
+  them appear older.
 
 ### Nuclear Medicine
 
 Radioactive isotopes are used both diagnostically and therapeutically:
 
-| Isotope | Half-life | Use | Reason |
+| Isotope               | Half-life   | Use                               | Reason                                                                         |
 | --------------------- | ----------- | --------------------------------- | ------------------------------------------------------------------------------ |
-| ${}^{99m}\mathrm{Tc}$ | 6.0 hours | Diagnostic imaging (gamma camera) | Emits gamma rays; short half-life limits patient dose |
-| ${}^{131}\mathrm{I}$ | 8.04 days | Treatment of thyroid cancer | Beta radiation destroys thyroid tissue; iodine selectively absorbed by thyroid |
-| ${}^{60}\mathrm{Co}$ | 5.27 years | Radiotherapy (external beam) | High-energy gamma rays for tumour destruction |
-| ${}^{18}\mathrm{F}$ | 110 minutes | PET scans | Positron emission enables precise 3D imaging |
+| ${}^{99m}\mathrm{Tc}$ | 6.0 hours   | Diagnostic imaging (gamma camera) | Emits gamma rays; short half-life limits patient dose                          |
+| ${}^{131}\mathrm{I}$  | 8.04 days   | Treatment of thyroid cancer       | Beta radiation destroys thyroid tissue; iodine selectively absorbed by thyroid |
+| ${}^{60}\mathrm{Co}$  | 5.27 years  | Radiotherapy (external beam)      | High-energy gamma rays for tumour destruction                                  |
+| ${}^{18}\mathrm{F}$   | 110 minutes | PET scans                         | Positron emission enables precise 3D imaging                                   |
 
 **Definition.** The effective half-life of a radioactive substance in the body is the time for its
 Activity to fall to half its initial value, combining both physical decay and biological clearance:
 
 $$\frac◆LB◆1◆RB◆◆LB◆t_{\mathrm{eff}}◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆t_{\mathrm{physical}}◆RB◆ + \frac◆LB◆1◆RB◆◆LB◆t_{\mathrm{biological}}◆RB◆$$
 
-:::info
-Board Coverage The effective half-life is required by Edexcel and OCR (A) but is not
-Explicitly tested by AQA or CIE at A Level.
-:::
+:::info Board Coverage The effective half-life is required by Edexcel and OCR (A) but is not
+Explicitly tested by AQA or CIE at A Level. :::
 
 ## 6. Case Studies
 
@@ -514,12 +492,12 @@ The Chernobyl disaster released approximately $5.2 \times 10^{18}$ Bq of radioac
 The atmosphere. The most significant isotopes released were:
 
 - **Iodine-131** ($t_{1/2} = 8.04$ days): Caused thyroid cancer, particularly in children who drank
- milk from cows that had grazed on contaminated grass. The short half-life meant the acute danger
- passed within months.
+  milk from cows that had grazed on contaminated grass. The short half-life meant the acute danger
+  passed within months.
 - **Caesium-137** ($t_{1/2} = 30.2$ years): More persistent contaminant. Caesium behaves chemically
- like potassium and was taken up by plants and animals, entering the food chain. The 30 km
- exclusion zone around the reactor remains in place partly because of ${}^{137}\mathrm{Cs}$
- contamination.
+  like potassium and was taken up by plants and animals, entering the food chain. The 30 km
+  exclusion zone around the reactor remains in place partly because of ${}^{137}\mathrm{Cs}$
+  contamination.
 
 The different half-lives illustrate a key principle: short-lived isotopes produce intense but brief
 Radiation hazards, while long-lived isotopes create lower but persistent contamination.
@@ -533,21 +511,19 @@ Quantities of radioactive isotopes including ${}^{131}\mathrm{I}$${}^{134}\mathr
 Key differences from Chernobyl:
 
 - Most radioactive material was released into the Pacific Ocean rather than the atmosphere, leading
- to rapid dilution of water-soluble isotopes.
+  to rapid dilution of water-soluble isotopes.
 - ${}^{134}\mathrm{Cs}$ has a short half-life (2.06 years) and decayed rapidly;
- ${}^{137}\mathrm{Cs}$ remains the primary long-term concern.
+  ${}^{137}\mathrm{Cs}$ remains the primary long-term concern.
 - The disaster highlighted the importance of cooling systems for spent fuel and the vulnerability of
- nuclear plants to extreme natural events.
+  nuclear plants to extreme natural events.
 
 Both disasters demonstrate that understanding half-lives is critical for predicting contamination
 Timelines and informing public health responses.
 
-:::tip
-Exam Application When asked to evaluate the risks from a nuclear incident, consider: (1)
+:::tip Exam Application When asked to evaluate the risks from a nuclear incident, consider: (1)
 Which isotopes were released, (2) their half-lives, (3) how they enter the body (inhalation,
 Ingestion, external exposure), and (4) the type of radiation emitted (alpha is most dangerous
-Internally, gamma externally).
-:::
+Internally, gamma externally). :::
 
 ## Additional Problems
 
@@ -642,28 +618,39 @@ Equilibrium value over several radon half-lives (approximately 20-40 days).
 
 :::
 
-
 ---
 
-:::tip
-Diagnostic Test
-Ready to test your understanding of **Radioactivity**? The [diagnostic test](/docs/alevel/physics/diagnostics/diag-radioactivity) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
+:::tip Diagnostic Test Ready to test your understanding of **Radioactivity**? The
+[diagnostic test](/docs/alevel/physics/diagnostics/diag-radioactivity) contains the hardest
+questions within the A-Level specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Radioactivity with other physics topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine
+Radioactivity with other physics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on
+self-marking and building a personal test matrix. :::
 
-:::danger
-Common Pitfalls
+:::danger Common Pitfalls
 
-- **Confusing alpha, beta, and gamma radiation properties:** Alpha particles are helium nuclei (2 protons, 2 neutrons) -- they are heavy, positively charged, and stopped by paper. Beta particles are fast electrons -- they are light, negatively charged, and stopped by aluminium. Gamma rays are electromagnetic waves -- they have no charge or mass and require thick lead or concrete to stop.
+- **Confusing alpha, beta, and gamma radiation properties:** Alpha particles are helium nuclei (2
+  protons, 2 neutrons) -- they are heavy, positively charged, and stopped by paper. Beta particles
+  are fast electrons -- they are light, negatively charged, and stopped by aluminium. Gamma rays are
+  electromagnetic waves -- they have no charge or mass and require thick lead or concrete to stop.
 
-- **Not balancing nuclear equations correctly:** In a nuclear equation, both atomic number (proton number) AND mass number must be conserved on both sides. When writing beta decay, remember: a neutron becomes a proton PLUS an electron (and an antineutrino). The mass number stays the same but the atomic number increases by 1.
+- **Not balancing nuclear equations correctly:** In a nuclear equation, both atomic number (proton
+  number) AND mass number must be conserved on both sides. When writing beta decay, remember: a
+  neutron becomes a proton PLUS an electron (and an antineutrino). The mass number stays the same
+  but the atomic number increases by 1.
 
-- **Assuming half-life means half the substance is gone:** After one half-life, half of the ORIGINAL atoms have decayed and half remain. After two half-lives, one QUARTER of the original remains (not zero). The substance never fully decays -- it approaches zero asymptotically. The activity also halves with each half-life.
+- **Assuming half-life means half the substance is gone:** After one half-life, half of the ORIGINAL
+  atoms have decayed and half remain. After two half-lives, one QUARTER of the original remains (not
+  zero). The substance never fully decays -- it approaches zero asymptotically. The activity also
+  halves with each half-life.
 
-- **Confusing activity with count rate:** Activity is the total number of decays per second in the sample (Bq). Count rate is what a detector actually measures, which is always LESS than activity because the detector only captures a fraction of the emissions and background radiation adds to the reading.
+- **Confusing activity with count rate:** Activity is the total number of decays per second in the
+  sample (Bq). Count rate is what a detector actually measures, which is always LESS than activity
+  because the detector only captures a fraction of the emissions and background radiation adds to
+  the reading.
 
 :::
 

@@ -1,6 +1,8 @@
 ---
 title: Common Pitfalls
-description: "C++: Common Pitfalls — 5.1 Raw `new`/`delete` vs Smart Pointers; 5.2 `std::make_unique` vs `new` in Expressions — Exception Safety."
+description:
+  'C++: Common Pitfalls — 5.1 Raw `new`/`delete` vs Smart Pointers; 5.2 `std::make_unique` vs `new`
+  in Expressions — Exception Safety.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -8,12 +10,13 @@ categories:
   - Cpp
 slug: common-pitfalls-smart-pointers
 ---
+
 # Common Pitfalls
 
 Smart pointers eliminate many classes of resource bugs, but misuse still leads to leaks, undefined
 Behavior, and performance regressions. This section covers the most common pitfalls encountered when
-Working with `std::unique_ptr``std::shared_ptr`And raw `new`/`delete`Then dives into custom
-Deleter patterns and their implications.
+Working with `std::unique_ptr``std::shared_ptr`And raw `new`/`delete`Then dives into custom Deleter
+patterns and their implications.
 
 ## 5.1 Raw `new`/`delete` vs Smart Pointers
 
@@ -48,12 +51,10 @@ process(std::unique_ptr<Widget>(new Widget), compute_risk());
 process(std::make_unique<Widget>(), compute_risk());
 ```
 
-:::info
-Relevance This is a real bug pattern. The C++ standard allows argument evaluation in any
+:::info Relevance This is a real bug pattern. The C++ standard allows argument evaluation in any
 Order [N4950 S7.6.1.9]. If `compute_risk()` is evaluated before the `unique_ptr` constructor, and it
 Throws, the `new Widget()` allocation is leaked. `make_unique` eliminates this class of bug
-Entirely.
-:::
+Entirely. :::
 
 ## 5.3 `shared_ptr` Overuse and Reference Cycles
 
@@ -93,12 +94,10 @@ void aliasing_demo() {
 }
 ```
 
-:::warning
-The aliasing constructor is useful but dangerous. The aliased pointer does not extend the
+:::warning The aliasing constructor is useful but dangerous. The aliased pointer does not extend the
 Lifetime of the member it points to — it only extends the lifetime of the **owning** object. If the
 Owning object is destroyed first, the aliased pointer dangles. Use cases include returning pointers
-To members from APIs that need to express shared ownership of the containing object.
-:::
+To members from APIs that need to express shared ownership of the containing object. :::
 
 ## 5.5 Custom Deleters
 
@@ -213,8 +212,7 @@ void use_dynamic_lib() {
 }
 ```
 
-:::info
-Each unique lambda type produces a different `std::unique_ptr` type. Two `unique_ptr`S with
+:::info Each unique lambda type produces a different `std::unique_ptr` type. Two `unique_ptr`S with
 Different lambda deleters (even lexically identical lambdas) are incompatible types [N4950
 S20.11.1.2.1]. Use `decltype` or a named functor if you need a shared type across translation units.
 :::
@@ -259,18 +257,16 @@ int main() {
 
 **Rules for lambda deleters:**
 
-| Capture Mode | Stateless? | `sizeof` Overhead | Safe? |
+| Capture Mode         | Stateless? | `sizeof` Overhead                    | Safe?                                                    |
 | :------------------- | :--------- | :----------------------------------- | :------------------------------------------------------- |
-| No captures | Yes | 0 bytes | Yes |
-| Capture by value | No | `sizeof(captured values)` | Yes (copies are owned) |
-| Capture by reference | No | 0 bytes (reference is pointer-sized) | **Dangerous:** dangling reference if referent dies first |
+| No captures          | Yes        | 0 bytes                              | Yes                                                      |
+| Capture by value     | No         | `sizeof(captured values)`            | Yes (copies are owned)                                   |
+| Capture by reference | No         | 0 bytes (reference is pointer-sized) | **Dangerous:** dangling reference if referent dies first |
 
-:::warning
-Never capture by reference in a lambda deleter unless the referent is guaranteed to
+:::warning Never capture by reference in a lambda deleter unless the referent is guaranteed to
 Outlive the `unique_ptr`. Since the deleter runs in the `unique_ptr` destructor, which runs when the
 `unique_ptr` goes out of scope, any captured reference must refer to an object with equal or greater
-Scope. This is easy to violate in practice — prefer capturing by value.
-:::
+Scope. This is easy to violate in practice — prefer capturing by value. :::
 
 ### 5.5.3 Functor Deleters with State
 
@@ -331,8 +327,8 @@ void aligned_allocation() {
 }
 ```
 
-For `std::shared_ptr`Array semantics are handled differently. The default deleter calls `delete`
-Not `delete[]`So you **must** provide an array-aware deleter when managing arrays:
+For `std::shared_ptr`Array semantics are handled differently. The default deleter calls `delete` Not
+`delete[]`So you **must** provide an array-aware deleter when managing arrays:
 
 ```cpp
 #include <memory>
@@ -370,20 +366,18 @@ int main() {
 }
 ```
 
-| Deleter Type | Overhead (x86_64) | Notes |
+| Deleter Type                    | Overhead (x86_64) | Notes                    |
 | ------------------------------- | ----------------- | ------------------------ |
-| Default (`std::default_delete`) | 0 bytes | EBO |
-| Stateless functor | 0 bytes | EBO [N4950 S20.11.1.2.1] |
-| Stateful functor | `sizeof(deleter)` | Stored inline |
-| Function pointer | 8 bytes | Stored inline |
-| Lambda (no capture) | 0 bytes | Stateless, EBO applies |
-| Lambda (captures) | Size of captures | Stored inline |
+| Default (`std::default_delete`) | 0 bytes           | EBO                      |
+| Stateless functor               | 0 bytes           | EBO [N4950 S20.11.1.2.1] |
+| Stateful functor                | `sizeof(deleter)` | Stored inline            |
+| Function pointer                | 8 bytes           | Stored inline            |
+| Lambda (no capture)             | 0 bytes           | Stateless, EBO applies   |
+| Lambda (captures)               | Size of captures  | Stored inline            |
 
-:::tip
-Prefer stateless functor deleters or captureless lambdas to avoid size overhead. If a deleter
+:::tip Prefer stateless functor deleters or captureless lambdas to avoid size overhead. If a deleter
 Must carry state, consider whether `std::shared_ptr` with a capturing lambda is more appropriate,
-Since `shared_ptr` type-erases the deleter into the control block.
-:::
+Since `shared_ptr` type-erases the deleter into the control block. :::
 
 ### Compile-Time Analysis of Deleter Storage
 
@@ -426,14 +420,14 @@ Despite having no members.
 
 ## 5.7 `shared_ptr` with Custom Deleters and Control Block Layout
 
-Unlike `std::unique_ptr``std::shared_ptr` **type-erases** its deleter. The deleter is stored in
-The control block, not in the `shared_ptr` object itself. This means:
+Unlike `std::unique_ptr``std::shared_ptr` **type-erases** its deleter. The deleter is stored in The
+control block, not in the `shared_ptr` object itself. This means:
 
 - `sizeof(std::shared_ptr<T>)` is always 16 bytes on x86_64 (two pointers), regardless of the
- deleter.
+  deleter.
 - The deleter is allocated alongside the control block, adding a small heap allocation overhead.
 - The deleter can be changed at runtime (via the aliasing constructor or `reset` with a new
- deleter).
+  deleter).
 
 ```cpp
 #include <memory>
@@ -454,9 +448,9 @@ void shared_with_custom_deleter() {
 }
 ```
 
-When using `std::make_shared`The control block and the managed object are allocated in a single
-Heap allocation (one `new` call). When providing a custom deleter, the compiler cannot use
-`make_shared` — it must perform a separate allocation for the control block and the managed object:
+When using `std::make_shared`The control block and the managed object are allocated in a single Heap
+allocation (one `new` call). When providing a custom deleter, the compiler cannot use `make_shared`
+— it must perform a separate allocation for the control block and the managed object:
 
 ```cpp
 // Single allocation: control block + object (no custom deleter)
@@ -556,18 +550,16 @@ void allocator_mismatch_example() {
 }
 ```
 
-:::warning
-Never extract a raw pointer from an allocator-aware container and manage it with a
+:::warning Never extract a raw pointer from an allocator-aware container and manage it with a
 Default-deleter smart pointer. The allocation and deallocation mechanisms must match. If you need to
 Transfer ownership out of a container, use `std::move`Extract via `release()` on allocator-aware
-Wrappers, or use `std::pmr` resources [N4950 S23.12].
-:::
+Wrappers, or use `std::pmr` resources [N4950 S23.12]. :::
 
 ## 5.10 Type Erasure: How `shared_ptr` Stores Deleters
 
 `std::shared_ptr` uses type erasure to store the deleter in the control block, decoupling the
-Deleter type from the `shared_ptr` type. This is fundamentally different from `unique_ptr`Where
-The deleter is a template parameter.
+Deleter type from the `shared_ptr` type. This is fundamentally different from `unique_ptr`Where The
+deleter is a template parameter.
 
 ### Implementation Sketch
 
@@ -611,40 +603,40 @@ struct ControlBlockImpl : ControlBlockBase {
 **Consequences of type erasure:**
 
 1. **Uniform `shared_ptr` type:** `shared_ptr&lt;int&gt;` is the same type regardless of whether it
- uses `delete``free`Or a custom lambda as its deleter. Two `shared_ptr` instances with
- different deleters can share ownership.
+   uses `delete``free`Or a custom lambda as its deleter. Two `shared_ptr` instances with different
+   deleters can share ownership.
 
 2. **Virtual dispatch overhead:** The deleter invocation goes through a virtual function call. This
- costs one indirect branch ( ~5 cycles, with potential branch misprediction).
+   costs one indirect branch ( ~5 cycles, with potential branch misprediction).
 
 3. **No compile-time deleter check:** If you pass the wrong deleter (e.g., one that calls `free` on
- a `new`-allocated object), the compiler cannot catch it. The error manifests at runtime as heap
- corruption.
+   a `new`-allocated object), the compiler cannot catch it. The error manifests at runtime as heap
+   corruption.
 
 4. **Heap allocation for the deleter:** The deleter (and its captured state) are allocated in the
- control block on the heap. This adds allocation overhead compared to `unique_ptr`Which stores
- the deleter inline.
+   control block on the heap. This adds allocation overhead compared to `unique_ptr`Which stores the
+   deleter inline.
 
 ## 5.11 Custom Deleters: `unique_ptr` vs `shared_ptr` Trade-offs
 
-| Aspect | `unique_ptr&lt;T, D&gt;` | `shared_ptr&lt;T&gt;` |
+| Aspect                     | `unique_ptr&lt;T, D&gt;`                               | `shared_ptr&lt;T&gt;`              |
 | :------------------------- | :----------------------------------------------------- | :--------------------------------- |
-| Deleter storage | Inline (part of the type) | Type-erased in control block |
-| Deleter type mismatch | Compile error | Runtime bug (heap corruption) |
-| Stateless deleter overhead | 0 bytes (EBO) | Virtual dispatch + heap storage |
-| Stateful deleter overhead | `sizeof(D)` inline | Heap allocation in control block |
-| Can share ownership | No | Yes |
-| Deleter swappable | No (type is fixed) | Yes (via `reset` with new deleter) |
-| Type identity | `unique_ptr&lt;T, D1&gt;` != `unique_ptr&lt;T, D2&gt;` | Same `shared_ptr&lt;T&gt;` type |
+| Deleter storage            | Inline (part of the type)                              | Type-erased in control block       |
+| Deleter type mismatch      | Compile error                                          | Runtime bug (heap corruption)      |
+| Stateless deleter overhead | 0 bytes (EBO)                                          | Virtual dispatch + heap storage    |
+| Stateful deleter overhead  | `sizeof(D)` inline                                     | Heap allocation in control block   |
+| Can share ownership        | No                                                     | Yes                                |
+| Deleter swappable          | No (type is fixed)                                     | Yes (via `reset` with new deleter) |
+| Type identity              | `unique_ptr&lt;T, D1&gt;` != `unique_ptr&lt;T, D2&gt;` | Same `shared_ptr&lt;T&gt;` type    |
 
 **Guidelines:**
 
 - Use `unique_ptr` with a custom deleter when the deleter type is known at compile time and
- ownership is exclusive. The compiler will verify deleter correctness at the type level.
+  ownership is exclusive. The compiler will verify deleter correctness at the type level.
 - Use `shared_ptr` with a custom deleter when ownership must be shared. Accept the type erasure
- overhead in exchange for the uniform type.
+  overhead in exchange for the uniform type.
 - Never use `shared_ptr` when `unique_ptr` suffices. The type erasure overhead (virtual dispatch,
- heap allocation for the control block, atomic reference counting) is substantial.
+  heap allocation for the control block, atomic reference counting) is substantial.
 
 ```cpp
 #include <memory>
@@ -682,9 +674,9 @@ int main() {
 `std::default_delete` is the default deleter for `unique_ptr`. It has two partial specializations
 [N4950 S20.11.1.2]:
 
-| Specialization | Behavior |
+| Specialization              | Behavior             |
 | :-------------------------- | :------------------- |
-| `default_delete&lt;T&gt;` | Calls `delete ptr` |
+| `default_delete&lt;T&gt;`   | Calls `delete ptr`   |
 | `default_delete&lt;T[]&gt;` | Calls `delete[] ptr` |
 
 The array specialization is automatically selected when `unique_ptr` is instantiated with an array
@@ -716,8 +708,8 @@ int main() {
 Provides `operator[]` and `get()`. This is a deliberate type-safety feature: it prevents accidental
 Use of array pointers as object pointers.
 
-For `shared_ptr`The default deleter always calls `delete`Never `delete[]`. You must explicitly
-Pass `std::default_delete&lt;T[]&gt;()` for arrays:
+For `shared_ptr`The default deleter always calls `delete`Never `delete[]`. You must explicitly Pass
+`std::default_delete&lt;T[]&gt;()` for arrays:
 
 ```cpp
 #include <memory>
@@ -729,20 +721,18 @@ auto arr = std::shared_ptr<int[]>(new int[10], std::default_delete<int[]>());
 auto arr2 = std::shared_ptr<int>(new int[10], [](int* p) { delete[] p; });
 ```
 
-:::warning
-`std::shared_ptr&lt;T[]&gt;` (the partial specialization for arrays) was added in C++17
+:::warning `std::shared_ptr&lt;T[]&gt;` (the partial specialization for arrays) was added in C++17
 [N4950 S20.11.3.7]. It provides `operator[]` but still requires an explicit array deleter. Before
 C++17, managing arrays with `shared_ptr` required manually passing `default_delete&lt;T[]&gt;` or a
-Lambda.
-:::
+Lambda. :::
 
 ## Summary
 
-| Ownership Model | Smart Pointer | Size (x86_64) | Semantics | Thread-Safe Refcount |
+| Ownership Model    | Smart Pointer        | Size (x86_64) | Semantics                   | Thread-Safe Refcount |
 | :----------------- | :------------------- | :------------ | :-------------------------- | :------------------- |
-| Exclusive | `std::unique_ptr<T>` | 8 bytes | Move-only | N/A (single owner) |
-| Shared | `std::shared_ptr<T>` | 16 bytes | Copyable | Yes (atomic) |
-| Non-owning observe | `std::weak_ptr<T>` | 16 bytes | Not directly dereferencable | N/A |
+| Exclusive          | `std::unique_ptr<T>` | 8 bytes       | Move-only                   | N/A (single owner)   |
+| Shared             | `std::shared_ptr<T>` | 16 bytes      | Copyable                    | Yes (atomic)         |
+| Non-owning observe | `std::weak_ptr<T>`   | 16 bytes      | Not directly dereferencable | N/A                  |
 
 The hierarchy of preference is clear: `unique_ptr` first, `shared_ptr` when genuinely needed, raw
 Pointers only for non-owning observation, and `weak_ptr` specifically to break `shared_ptr` cycles.
@@ -750,13 +740,13 @@ Pointers only for non-owning observation, and `weak_ptr` specifically to break `
 ## Common Pitfalls
 
 **Using `delete` instead of `delete[]` for arrays.** The default `std::shared_ptr` deleter calls
-`delete`Not `delete[]`. If you construct `std::shared_ptr<T>(new T[n])`The deleter invokes
-Undefined behavior. Always pass `std::default_delete<T[]>()` as the deleter, or use
-`std::unique_ptr<T[]>` which has the correct default.
+`delete`Not `delete[]`. If you construct `std::shared_ptr<T>(new T[n])`The deleter invokes Undefined
+behavior. Always pass `std::default_delete<T[]>()` as the deleter, or use `std::unique_ptr<T[]>`
+which has the correct default.
 
 **Custom deleter exceptions.** If a custom deleter throws, the behavior depends on the smart pointer
-Type. For `unique_ptr`Throwing in the deleter causes `std::terminate` during stack unwinding (if
-The destructor is called during exception handling) or direct propagation (if called normally). For
+Type. For `unique_ptr`Throwing in the deleter causes `std::terminate` during stack unwinding (if The
+destructor is called during exception handling) or direct propagation (if called normally). For
 `shared_ptr`The behavior is similarly dangerous. **Custom deleters must be `noexcept`.**
 
 **Function pointer deleter overhead.** A function pointer deleter adds 8 bytes to `unique_ptr` on

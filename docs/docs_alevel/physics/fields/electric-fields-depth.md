@@ -1,16 +1,17 @@
 ---
 title: Electric Fields
-description: "A-Level Physics notes on Electric Fields: 1. Coulomb's Law; Superposition Principle; Comparison with Gravitational Force; 2. Electric Field Strength."
+description:
+  "A-Level Physics notes on Electric Fields: 1. Coulomb's Law; Superposition Principle; Comparison
+  with Gravitational Force; 2. Electric Field Strength."
 date: 2026-04-23T00:00:00.000Z
 tags: [Physics, ALevel]
 categories: [Physics]
 slug: electric-fields-depth
 ---
+
 ## Electric Fields
 
-:::info
-Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4
-:::
+:::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4 :::
 
 ## 1. Coulomb's Law
 
@@ -22,8 +23,8 @@ $$\boxed{F = \frac◆LB◆q_1 q_2◆RB◆◆LB◆4\pi\varepsilon_0 r^2◆RB◆}$
 Where $\varepsilon_0 = 8.85 \times 10^{-12}$ F m$^{-1}$ is the permittivity of free space and
 $k = 1/(4\pi\varepsilon_0) = 8.99 \times 10^9$ N m$^2$ C$^{-2}$ is Coulomb's constant.
 
-The force is **repulsive** for like charges and **attractive** for opposite charges, directed along the
-Line joining them.
+The force is **repulsive** for like charges and **attractive** for opposite charges, directed along
+the Line joining them.
 
 ### Superposition Principle
 
@@ -36,17 +37,17 @@ This linearity is fundamental: each pair of charges interacts independently of a
 
 ### Comparison with Gravitational Force
 
-| Property | Gravitational | Electrostatic |
-|---|---|---|
-| Law | $F = Gm_1m_2/r^2$ | $F = kq_1q_2/r^2$ |
-| Constant | $G = 6.67 \times 10^{-11}$ | $k = 8.99 \times 10^9$ |
-| Nature | Always attractive | Attractive or repulsive |
-| Acts on | Mass | Charge |
-| Relative strength | Very weak | Very strong |
+| Property          | Gravitational              | Electrostatic           |
+| ----------------- | -------------------------- | ----------------------- |
+| Law               | $F = Gm_1m_2/r^2$          | $F = kq_1q_2/r^2$       |
+| Constant          | $G = 6.67 \times 10^{-11}$ | $k = 8.99 \times 10^9$  |
+| Nature            | Always attractive          | Attractive or repulsive |
+| Acts on           | Mass                       | Charge                  |
+| Relative strength | Very weak                  | Very strong             |
 
 The electrostatic force is approximately $10^{36}$ times stronger than gravity for proton--proton
-Interactions. This enormous ratio explains why atomic and molecular structure is governed entirely by
-Electromagnetic forces.
+Interactions. This enormous ratio explains why atomic and molecular structure is governed entirely
+by Electromagnetic forces.
 
 ## 2. Electric Field Strength
 
@@ -64,7 +65,8 @@ $$\boxed{E = \frac◆LB◆Q◆RB◆◆LB◆4\pi\varepsilon_0 r^2◆RB◆}$$
 **Proof.** Place test charge $q$ at distance $r$ from $Q$. By Coulomb's law:
 $F = Qq/(4\pi\varepsilon_0 r^2)$. Therefore $E = F/q = Q/(4\pi\varepsilon_0 r^2)$. $\square$
 
-The field points radially outward from a positive charge and radially inward toward a negative charge.
+The field points radially outward from a positive charge and radially inward toward a negative
+charge.
 
 ### Uniform Electric Field Between Parallel Plates
 
@@ -72,11 +74,12 @@ $$\boxed{E = \frac{V}{d}}$$
 
 Where $V$ is the potential difference and $d$ is the plate separation.
 
-**Proof.** A charge $q$ between the plates experiences force $F = qE$. Work done moving from one plate
-To the other: $W = Fd = qEd$. But also $W = qV$. Therefore $qEd = qV$Giving $E = V/d$. $\square$
+**Proof.** A charge $q$ between the plates experiences force $F = qE$. Work done moving from one
+plate To the other: $W = Fd = qEd$. But also $W = qV$. Therefore $qEd = qV$Giving $E = V/d$.
+$\square$
 
-The field is uniform (constant magnitude and direction) between the plates, with fringe effects at the
-Edges.
+The field is uniform (constant magnitude and direction) between the plates, with fringe effects at
+the Edges.
 
 ### Electric Field Lines
 
@@ -103,9 +106,9 @@ $$V = \frac{W}{q} = \frac{1}{q}\int_{\infty}^{r}\frac◆LB◆Qq◆RB◆◆LB◆4
 
 $\square$
 
-**Sign convention.** Potential is positive near a positive charge (work must be done against repulsion)
-And negative near a negative charge (the field does work). Potential decreases with distance,
-Approaching zero at infinity.
+**Sign convention.** Potential is positive near a positive charge (work must be done against
+repulsion) And negative near a negative charge (the field does work). Potential decreases with
+distance, Approaching zero at infinity.
 
 ### Field--Potential Relationship
 
@@ -136,7 +139,7 @@ Potential.
 
 1. **No work is done** moving a charge along an equipotential surface (since $\Delta V = 0$).
 2. The electric field is always **perpendicular** to equipotential surfaces (since $E = -dV/dr$ and
- $dV = 0$ along the surface).
+   $dV = 0$ along the surface).
 3. Equipotential surfaces **never cross** (each point has a unique potential).
 4. For a point charge, equipotentials are concentric spheres.
 5. For a uniform field, equipotentials are parallel planes perpendicular to the field.
@@ -151,11 +154,8 @@ A practical method uses conducting paper with electrodes painted on:
 3. Plot the equipotential lines by joining points of equal voltage.
 4. Draw field lines perpendicular to the equipotentials.
 
-:::warning
-Warning
-The field is zero on an equipotential. The field is non-zero and perpendicular; only the component
-Tangent to the surface is zero.
-:::
+:::warning Warning The field is zero on an equipotential. The field is non-zero and perpendicular;
+only the component Tangent to the surface is zero. :::
 
 ## 5. Motion of Charged Particles in Uniform Fields
 
@@ -182,8 +182,8 @@ Eliminating $t$: $y = \frac{qE}{2mv^2}\,x^2$. This is a parabola.
 
 ### Energy Method
 
-An alternative approach uses energy conservation. The kinetic energy gained by the particle equals the
-Work done by the field:
+An alternative approach uses energy conservation. The kinetic energy gained by the particle equals
+the Work done by the field:
 
 $$\Delta E_k = qV = qEd$$
 
@@ -194,11 +194,14 @@ Where $d$ is the vertical displacement. This is often quicker than the kinematic
 An electron enters a uniform field of $E = 5000$ V m$^{-1}$ between plates of length 5.0 cm with speed
 $3.0 \times 10^7$ m s$^{-1}$. Calculate the vertical deflection and deflection angle.
 
-**Answer.** $a = \frac{eE}{m_e} = \frac◆LB◆1.60 \times 10^{-19} \times 5000◆RB◆◆LB◆9.11 \times 10^{-31}◆RB◆ = 8.78 \times 10^{14}$ m s$^{-2}$.
+**Answer.**
+$a = \frac{eE}{m_e} = \frac◆LB◆1.60 \times 10^{-19} \times 5000◆RB◆◆LB◆9.11 \times 10^{-31}◆RB◆ = 8.78 \times 10^{14}$
+m s$^{-2}$.
 
 $t = L/v = 0.050 / (3.0 \times 10^7) = 1.67 \times 10^{-9}$ s.
 
-$y = \frac{1}{2}at^2 = \frac{1}{2} \times 8.78 \times 10^{14} \times (1.67 \times 10^{-9})^2 = 1.22 \times 10^{-3}$ m $= 1.22$ mm.
+$y = \frac{1}{2}at^2 = \frac{1}{2} \times 8.78 \times 10^{14} \times (1.67 \times 10^{-9})^2 = 1.22 \times 10^{-3}$
+m $= 1.22$ mm.
 
 $v_y = at = 8.78 \times 10^{14} \times 1.67 \times 10^{-9} = 1.47 \times 10^6$ m s$^{-1}$.
 
@@ -213,10 +216,10 @@ $\tan\theta = v_y/v = 1.47 \times 10^6 / (3.0 \times 10^7) = 0.0489$. $\theta = 
 A CRT uses electric fields to control and deflect a beam of electrons:
 
 1. **Electron gun:** A heated cathode emits electrons by thermionic emission. A high potential
- difference $V_{\mathrm{acc}}$ accelerates them through a potential difference, giving kinetic energy
- $\frac{1}{2}m_e v^2 = eV_{\mathrm{acc}}$.
+   difference $V_{\mathrm{acc}}$ accelerates them through a potential difference, giving kinetic
+   energy $\frac{1}{2}m_e v^2 = eV_{\mathrm{acc}}$.
 2. **Deflection system:** Two pairs of parallel plates (X and Y) apply transverse electric fields,
- deflecting the beam horizontally and vertically.
+   deflecting the beam horizontally and vertically.
 3. **Fluorescent screen:** Electrons strike a phosphor coating, producing visible light.
 
 ### Acceleration Voltage and Beam Speed
@@ -227,7 +230,9 @@ $$\frac{1}{2}m_e v^2 = eV_{\mathrm{acc}}$$
 
 $$\boxed{v = \sqrt◆LB◆\frac{2eV_{\mathrm{acc}}}{m_e}◆RB◆}$$
 
-For $V_{\mathrm{acc}} = 2000$ V: $v = \sqrt◆LB◆2 \times 1.60 \times 10^{-19} \times 2000 / 9.11 \times 10^{-31}◆RB◆ = 2.65 \times 10^7$ m s$^{-1}$.
+For $V_{\mathrm{acc}} = 2000$ V:
+$v = \sqrt◆LB◆2 \times 1.60 \times 10^{-19} \times 2000 / 9.11 \times 10^{-31}◆RB◆ = 2.65 \times 10^7$
+m s$^{-1}$.
 
 ### Sensitivity of a CRT
 
@@ -238,11 +243,9 @@ $$S = \frac{y}{V_d} = \frac{eL^2}{2m_e v^2 d} = \frac◆LB◆L^2◆RB◆◆LB◆
 Where $L$ is the plate length and $d$ is the plate separation. Higher sensitivity requires longer
 Plates, closer spacing, and lower acceleration voltage.
 
-:::warning
-Common Pitfall A common error is to confuse the acceleration voltage $V_{\mathrm{acc}}$
+:::warning Common Pitfall A common error is to confuse the acceleration voltage $V_{\mathrm{acc}}$
 (which determines beam speed) with the deflection voltage $V_d$ (which determines deflection). The
-Deflection is proportional to $V_d$ and inversely proportional to $V_{\mathrm{acc}}$.
-:::
+Deflection is proportional to $V_d$ and inversely proportional to $V_{\mathrm{acc}}$. :::
 
 ## 7. Electric Fields of Extended Charge Distributions
 
@@ -254,8 +257,8 @@ Axis:
 $$\boxed{E = \frac◆LB◆Qx◆RB◆◆LB◆4\pi\varepsilon_0(x^2 + a^2)^{3/2}◆RB◆}$$
 
 **Proof.** By symmetry, the transverse components cancel. Each element $dq$ contributes
-$dE = dq/(4\pi\varepsilon_0(x^2 + a^2))$. The axial component is $dE_x = dE \cdot x/\sqrt{x^2 + a^2}$.
-Integrating over the ring:
+$dE = dq/(4\pi\varepsilon_0(x^2 + a^2))$. The axial component is
+$dE_x = dE \cdot x/\sqrt{x^2 + a^2}$. Integrating over the ring:
 
 $$E_x = \frac◆LB◆Q◆RB◆◆LB◆4\pi\varepsilon_0◆RB◆\cdot\frac{x}{(x^2 + a^2)^{3/2}}$$
 
@@ -321,7 +324,9 @@ $$u = \frac{1}{2}\varepsilon_0 E^2$$
 Two point charges, $q_1 = +3.0\,\mu$C and $q_2 = -5.0\,\mu$C, are separated by 0.20 m. Calculate the
 Force between them.
 
-**Answer.** $F = \frac◆LB◆k|q_1||q_2|◆RB◆◆LB◆r^2◆RB◆ = \frac◆LB◆8.99 \times 10^9 \times 3.0 \times 10^{-6} \times 5.0 \times 10^{-6}◆RB◆◆LB◆0.040◆RB◆ = 3.37$ N (attractive).
+**Answer.**
+$F = \frac◆LB◆k|q_1||q_2|◆RB◆◆LB◆r^2◆RB◆ = \frac◆LB◆8.99 \times 10^9 \times 3.0 \times 10^{-6} \times 5.0 \times 10^{-6}◆RB◆◆LB◆0.040◆RB◆ = 3.37$
+N (attractive).
 
 </details>
 
@@ -329,7 +334,9 @@ Force between them.
 <summary>Problem 2</summary>
 Calculate the electric field strength at 0.10 m from a point charge of $+8.0\,\mu$C.
 
-**Answer.** $E = \frac{kQ}{r^2} = \frac◆LB◆8.99 \times 10^9 \times 8.0 \times 10^{-6}◆RB◆◆LB◆0.010◆RB◆ = 7.19 \times 10^6$ N C$^{-1}$.
+**Answer.**
+$E = \frac{kQ}{r^2} = \frac◆LB◆8.99 \times 10^9 \times 8.0 \times 10^{-6}◆RB◆◆LB◆0.010◆RB◆ = 7.19 \times 10^6$
+N C$^{-1}$.
 
 </details>
 
@@ -348,7 +355,9 @@ $F = qE = 1.60 \times 10^{-19} \times 2.5 \times 10^4 = 4.0 \times 10^{-15}$ N.
 Calculate the electric potential at 5.0 cm from a $+2.0\,\mu$C point charge. A second charge of
 $-1.0\,\mu$C is placed at this point. Calculate the potential energy of the system.
 
-**Answer.** $V = \frac{kQ}{r} = \frac◆LB◆8.99 \times 10^9 \times 2.0 \times 10^{-6}◆RB◆◆LB◆0.050◆RB◆ = 3.60 \times 10^5$ V.
+**Answer.**
+$V = \frac{kQ}{r} = \frac◆LB◆8.99 \times 10^9 \times 2.0 \times 10^{-6}◆RB◆◆LB◆0.050◆RB◆ = 3.60 \times 10^5$
+V.
 
 $U = q_2 V = (-1.0 \times 10^{-6})(3.60 \times 10^5) = -0.360$ J.
 
@@ -359,7 +368,8 @@ $U = q_2 V = (-1.0 \times 10^{-6})(3.60 \times 10^5) = -0.360$ J.
 Starting from $E = -dV/dr$Derive the field of a point charge from its potential.
 
 **Answer.** $V = Q/(4\pi\varepsilon_0 r)$.
-$E = -\frac{dV}{dr} = -\frac◆LB◆Q◆RB◆◆LB◆4\pi\varepsilon_0◆RB◆\cdot\frac{d}{dr}(r^{-1}) = -\frac◆LB◆Q◆RB◆◆LB◆4\pi\varepsilon_0◆RB◆(-r^{-2}) = \frac◆LB◆Q◆RB◆◆LB◆4\pi\varepsilon_0 r^2◆RB◆$. $\square$
+$E = -\frac{dV}{dr} = -\frac◆LB◆Q◆RB◆◆LB◆4\pi\varepsilon_0◆RB◆\cdot\frac{d}{dr}(r^{-1}) = -\frac◆LB◆Q◆RB◆◆LB◆4\pi\varepsilon_0◆RB◆(-r^{-2}) = \frac◆LB◆Q◆RB◆◆LB◆4\pi\varepsilon_0 r^2◆RB◆$.
+$\square$
 
 </details>
 
@@ -369,7 +379,8 @@ An electron is accelerated through 3000 V in a CRT. Calculate its final speed an
 
 **Answer.** $E_k = eV = 1.60 \times 10^{-19} \times 3000 = 4.80 \times 10^{-16}$ J.
 
-$v = \sqrt{2E_k/m_e} = \sqrt◆LB◆2 \times 4.80 \times 10^{-16}/9.11 \times 10^{-31}◆RB◆ = 3.25 \times 10^7$ m s$^{-1}$.
+$v = \sqrt{2E_k/m_e} = \sqrt◆LB◆2 \times 4.80 \times 10^{-16}/9.11 \times 10^{-31}◆RB◆ = 3.25 \times 10^7$
+m s$^{-1}$.
 
 </details>
 
@@ -379,7 +390,8 @@ In a Millikan-type experiment, an oil drop of mass $1.2 \times 10^{-14}$ kg is s
 Parallel plates with field $E = 4.8 \times 10^4$ V m$^{-1}$. Calculate the charge on the drop and
 Determine how many elementary charges it carries.
 
-**Answer.** $q = mg/E = 1.2 \times 10^{-14} \times 9.81 / (4.8 \times 10^4) = 2.45 \times 10^{-18}$ C.
+**Answer.** $q = mg/E = 1.2 \times 10^{-14} \times 9.81 / (4.8 \times 10^4) = 2.45 \times 10^{-18}$
+C.
 
 $n = q/e = 2.45 \times 10^{-18} / 1.60 \times 10^{-19} = 15.3$.
 
@@ -394,8 +406,8 @@ Sketch the equipotential lines and field lines for two equal positive charges se
 $d$. Explain why the field is zero at the midpoint.
 
 **Answer.** The equipotential lines form peanut-shaped closed curves around each charge, with a
-Zero-potential surface at infinity. The field lines radiate outward from each charge, curving away from
-Each other.
+Zero-potential surface at infinity. The field lines radiate outward from each charge, curving away
+from Each other.
 
 At the midpoint, the fields due to each charge are equal in magnitude ($kq/(d/2)^2$) and opposite in
 Direction (each points away from its own charge). By symmetry, $\mathbf{E}_1 + \mathbf{E}_2 = 0$.
@@ -408,7 +420,9 @@ This is an unstable equilibrium point.
 A proton is released from rest in a uniform electric field of $3.0 \times 10^4$ V m$^{-1}$. Calculate
 Its acceleration and the kinetic energy gained after moving 5.0 cm.
 
-**Answer.** $a = qE/m_p = 1.60 \times 10^{-19} \times 3.0 \times 10^4 / 1.67 \times 10^{-27} = 2.88 \times 10^{12}$ m s$^{-2}$.
+**Answer.**
+$a = qE/m_p = 1.60 \times 10^{-19} \times 3.0 \times 10^4 / 1.67 \times 10^{-27} = 2.88 \times 10^{12}$
+m s$^{-2}$.
 
 $E_k = qEd = 1.60 \times 10^{-19} \times 3.0 \times 10^4 \times 0.050 = 2.4 \times 10^{-16}$ J.
 
@@ -422,7 +436,8 @@ $5.0 \times 10^3$ V m$^{-1}$. The thread makes $15^\circ$ with the vertical. Cal
 **Answer.** Resolving: $qE = T\sin 15^\circ$$mg = T\cos 15^\circ$.
 
 $\tan 15^\circ = qE/(mg)$.
-$q = mg\tan 15^\circ / E = 0.50 \times 10^{-3} \times 9.81 \times 0.268 / 5000 = 2.63 \times 10^{-7}$ C $= 263$ nC.
+$q = mg\tan 15^\circ / E = 0.50 \times 10^{-3} \times 9.81 \times 0.268 / 5000 = 2.63 \times 10^{-7}$
+C $= 263$ nC.
 
 </details>
 

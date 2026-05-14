@@ -1,6 +1,8 @@
 ---
 title: Debugger
-description: "C++: Debugger — Debug Information Architecture; 1. DWARF (Linux / macOS / MinGW); 2. PDB (Windows MSVC); Debug Information Levels."
+description:
+  'C++: Debugger — Debug Information Architecture; 1. DWARF (Linux / macOS / MinGW); 2. PDB (Windows
+  MSVC); Debug Information Levels.'
 date: 2025-12-11T06:24:14.105Z
 tags:
   - cpp
@@ -8,6 +10,7 @@ categories:
   - cpp
 slug: debugger
 ---
+
 Import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 A compiled C++ binary consists of machine code instructions. To map an Instruction Pointer (IP)
@@ -25,20 +28,20 @@ The format of debug information depends on the platform and toolchain.
 
 - **Format:** A standardized debugging data format.
 - **Storage:**
- - **Embedded:** By default, GCC and Clang embed DWARF sections (`.debug_info``.debug_line`)
- directly into the final executable or shared library.
- - **Split (dwp/dSYM):** For release builds or to reduce binary size, symbols can be separated.
- - **Linux:** `.debug` files (via `objcopy --only-keep-debug`).
- - **macOS:** `.dSYM` bundles (via `dsymutil`).
+- **Embedded:** By default, GCC and Clang embed DWARF sections (`.debug_info``.debug_line`) directly
+  into the final executable or shared library.
+- **Split (dwp/dSYM):** For release builds or to reduce binary size, symbols can be separated.
+- **Linux:** `.debug` files (via `objcopy --only-keep-debug`).
+- **macOS:** `.dSYM` bundles (via `dsymutil`).
 - **Compiler Flag:** `-g` (default level) or `-g3` (includes macro information).
 
 ### 2. PDB (Windows MSVC)
 
 - **Format:** Program Database (Proprietary Microsoft format).
 - **Storage:** Always separate. The executable contains a GUID signature that matches a specific
- `.pdb` file.
+  `.pdb` file.
 - **Compiler Flag:** `/Zi` (separate PDB) or `/Z7` (embedded debug info, similar to DWARF, mostly
- for static libs).
+  for static libs).
 
 ## Debug Information Levels
 
@@ -47,12 +50,12 @@ Granularity of source-level mapping.
 
 ### GCC/Clang Debug Levels
 
-| Flag | Description | Binary Size Impact |
+| Flag  | Description                                                                                              | Binary Size Impact |
 | :---- | :------------------------------------------------------------------------------------------------------- | :----------------- |
-| `-g0` | No debug information (default for release). | None |
-| `-g1` | Minimal: line numbers and source file names only. No local variable information. | Small |
-| `-g2` | Standard (same as `-g`): Full debug info including local variables, function signatures, types. | Moderate |
-| `-g3` | Maximum: Includes macro definitions and expanded macro locations. Useful for debugging macro-heavy code. | Large |
+| `-g0` | No debug information (default for release).                                                              | None               |
+| `-g1` | Minimal: line numbers and source file names only. No local variable information.                         | Small              |
+| `-g2` | Standard (same as `-g`): Full debug info including local variables, function signatures, types.          | Moderate           |
+| `-g3` | Maximum: Includes macro definitions and expanded macro locations. Useful for debugging macro-heavy code. | Large              |
 
 ```bash
 # Compile with maximum debug info including macros
@@ -64,10 +67,10 @@ readelf -S app | grep debug
 
 ### MSVC Debug Levels
 
-| Flag | Description |
+| Flag  | Description                                                                      |
 | :---- | :------------------------------------------------------------------------------- |
-| `/Z7` | Old-style: Embeds debug info in each .obj file. |
-| `/Zi` | Program Database: Generates a separate .pdb file. |
+| `/Z7` | Old-style: Embeds debug info in each .obj file.                                  |
+| `/Zi` | Program Database: Generates a separate .pdb file.                                |
 | `/ZI` | Edit and Continue: PDB with additional metadata for hot-reload during debugging. |
 
 `/Zi` is the standard for production builds. `/ZI` is useful during development in Visual Studio but
@@ -118,8 +121,8 @@ Symbols if they were split.
 
 ### Source Mapping
 
-A common issue in CI/CD builds is that the binary was built in `/build/workspace/src`But the
-Source code on your local machine is in `/Users/dev/src`. The debugger cannot find the source files.
+A common issue in CI/CD builds is that the binary was built in `/build/workspace/src`But the Source
+code on your local machine is in `/Users/dev/src`. The debugger cannot find the source files.
 
 **Solution:** Map the build-time path to the run-time path.
 
@@ -279,14 +282,14 @@ srv*C:\Symbols*https://msdl.microsoft.com/download/symbols
 - `srv*`: Indicates a symbol server protocol.
 - `C:\Symbols`: Local cache directory.
 - `https://...`: Microsoft's public symbol server (downloads symbols for Windows DLLs like
- `kernel32.dll` or `ntdll.dll`).
+  `kernel32.dll` or `ntdll.dll`).
 
 ### Loading Symbols
 
 In WinDbg (Command window):
 
 1. **Set Path:**
- `.sympath srv*C:\Symbols*https://msdl.microsoft.com/download/symbols;C:\MyProject\Build\Debug`
+   `.sympath srv*C:\Symbols*https://msdl.microsoft.com/download/symbols;C:\MyProject\Build\Debug`
 2. **Reload:** `.reload /f` (Force reload).
 
 ### Time Travel Debugging (TTD)
@@ -436,8 +439,8 @@ lldb -c core.app.12345.1699999999 -- ./app
 
 ### Minidumps (Windows)
 
-On Windows, the equivalent of a core dump is a **minidump** (`.dmp` file). These are 
-Generated by Windows Error Reporting (WER) or explicitly via `MiniDumpWriteDump()`.
+On Windows, the equivalent of a core dump is a **minidump** (`.dmp` file). These are Generated by
+Windows Error Reporting (WER) or explicitly via `MiniDumpWriteDump()`.
 
 ```text
 # In WinDbg:
@@ -495,13 +498,13 @@ Source lines and machine instructions.
 ### What Breaks at `-O2`
 
 1. **Variable Elimination:** Variables that are proven dead are eliminated. The debugger shows
- "optimized out" for their values.
+   "optimized out" for their values.
 2. **Instruction Reordering:** Instructions are reordered for pipeline efficiency. Stepping through
- source lines jumps non-sequentially.
+   source lines jumps non-sequentially.
 3. **Inlining:** Inlined functions do not appear in the call stack. The debugger may show the
- caller's frame where you expect the callee.
+   caller's frame where you expect the callee.
 4. **Loop Unrolling:** Loops are unrolled, making it appear as if the loop body executes only once
- when stepping.
+   when stepping.
 
 ### Best Practice: Release with Debug Info
 
@@ -521,15 +524,18 @@ Binary via build ID.
 ## Architectural Considerations
 
 1. **Release with Debug Info:** It is best practice to compile Release builds with debug info
- enabled (`-g -O3` or `/Zi /O2`). You can then strip the symbols into a separate file (`.dSYM` or
- `.pdb`) for deployment. This allows you to debug production crashes by matching the production
- binary with the saved symbol file.
+   enabled (`-g -O3` or `/Zi /O2`). You can then strip the symbols into a separate file (`.dSYM` or
+   `.pdb`) for deployment. This allows you to debug production crashes by matching the production
+   binary with the saved symbol file.
 2. **Ptrace Hardening (Linux):** By default, many Linux kernels (via YAMA security module) prevent
- non-root processes from attaching to other processes.
- - _Fix:_ `sudo sysctl -w kernel.yama.ptrace_scope=0` (Development only).
+   non-root processes from attaching to other processes.
+
+- _Fix:_ `sudo sysctl -w kernel.yama.ptrace_scope=0` (Development only).
+
 3. **Core Dumps:** When a process crashes (Segfault), the OS can write the memory state to a file.
- - _Enable:_ `ulimit -c unlimited`
- - _Analyze:_ `gdb ./app core.dump` or `lldb -c core.dump`.
+
+- _Enable:_ `ulimit -c unlimited`
+- _Analyze:_ `gdb ./app core.dump` or `lldb -c core.dump`.
 
 ## Common Pitfalls
 

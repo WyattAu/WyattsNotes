@@ -1,6 +1,8 @@
 ---
 title: Testing
-description: "Testing — go test Basics; Test Helpers; Table-Driven Tests; Test Main including key definitions, derivations, and problem-solving techniques."
+description:
+  'Testing — go test Basics; Test Helpers; Table-Driven Tests; Test Main including key definitions,
+  derivations, and problem-solving techniques.'
 slug: testing
 date: 2026-04-18
 tags:
@@ -8,6 +10,7 @@ tags:
 categories:
   - Go
 ---
+
 ## go test Basics
 
 Go has a built-in testing framework. Test files are named `*_test.go` and the build system excludes
@@ -281,22 +284,22 @@ Popular mocking libraries: `gomock` (code generation), `testify/mock` (manual mo
 ## Common Pitfalls
 
 1. **Testing implementation details.** Test behavior, not internal mechanics. If you find yourself
- reaching for `reflect` in tests to inspect unexported fields, reconsider the design.
+   reaching for `reflect` in tests to inspect unexported fields, reconsider the design.
 
 2. **Not using table-driven tests.** Copy-pasting test functions with different inputs creates
- maintenance burden. Use table-driven tests for any function with multiple input/output cases.
+   maintenance burden. Use table-driven tests for any function with multiple input/output cases.
 
 3. **Flaky tests due to time or concurrency.** Use `testing.Short()` to skip slow tests, and use
- deterministic test doubles instead of real time/network in unit tests.
+   deterministic test doubles instead of real time/network in unit tests.
 
 4. **Ignoring benchmark results.** Always run benchmarks with `-benchmem` to catch unexpected
- allocations. A single allocation in a hot path can dominate performance.
+   allocations. A single allocation in a hot path can dominate performance.
 
 5. **Low coverage on error paths.** Test both the happy path and error paths. Use
- `go test -coverprofile` to identify uncovered code.
+   `go test -coverprofile` to identify uncovered code.
 
 6. **Modifying global state in tests.** Tests that modify package-level variables or global state
- can interfere with each other. Use `t.Parallel()` and isolate state per test.
+   can interfere with each other. Use `t.Parallel()` and isolate state per test.
 
 ## Summary
 

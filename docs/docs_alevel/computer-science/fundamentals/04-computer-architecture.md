@@ -1,6 +1,8 @@
 ---
 title: Computer Architecture
-description: "A-Level Computer Science notes on Computer Architecture: 1. Von Neumann Architecture; Definition; Components; Key Property: Stored Program Concept."
+description:
+  'A-Level Computer Science notes on Computer Architecture: 1. Von Neumann Architecture; Definition;
+  Components; Key Property: Stored Program Concept.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - ComputerScience
@@ -9,6 +11,7 @@ categories:
   - ComputerScience
 slug: computer-architecture
 ---
+
 ## 1. Von Neumann Architecture
 
 ### Definition
@@ -41,20 +44,18 @@ Its own bus.
 
 ### Comparison: Von Neumann vs Harvard
 
-| Property | Von Neumann | Harvard |
+| Property            | Von Neumann               | Harvard                               |
 | ------------------- | ------------------------- | ------------------------------------- |
-| Memory | Single unified memory | Separate instruction and data memory |
-| Buses | Single bus (bottleneck) | Separate buses (parallel access) |
-| Speed | Slower (bus contention) | Faster (simultaneous fetch) |
-| Complexity | Simpler hardware | More complex hardware |
-| Self-modifying code | Possible (in theory) | Not possible |
-| Modern usage | General-purpose computers | DSPs, microcontrollers, cache systems |
+| Memory              | Single unified memory     | Separate instruction and data memory  |
+| Buses               | Single bus (bottleneck)   | Separate buses (parallel access)      |
+| Speed               | Slower (bus contention)   | Faster (simultaneous fetch)           |
+| Complexity          | Simpler hardware          | More complex hardware                 |
+| Self-modifying code | Possible (in theory)      | Not possible                          |
+| Modern usage        | General-purpose computers | DSPs, microcontrollers, cache systems |
 
-:::info
-Board-specific Modern CPUs use a **modified Harvard architecture** at the cache level: L1
+:::info Board-specific Modern CPUs use a **modified Harvard architecture** at the cache level: L1
 Cache is split into instruction cache and data cache (Harvard), while main memory is unified (Von
-Neumann).
-:::
+Neumann). :::
 
 <hr />
 
@@ -83,22 +84,20 @@ The CU orchestrates the fetch-decode-execute cycle by generating control signals
 
 ### Registers
 
-| Register | Full Name | Purpose |
+| Register | Full Name                    | Purpose                                            |
 | -------- | ---------------------------- | -------------------------------------------------- |
-| **PC** | Program Counter | Holds the address of the next instruction to fetch |
-| **MAR** | Memory Address Register | Holds the address to be accessed in memory |
-| **MDR** | Memory Data Register | Holds data read from or to be written to memory |
-| **ACC** | Accumulator | Stores results of ALU operations |
-| **CIR** | Current Instruction Register | Holds the instruction currently being decoded |
-| **IR** | Instruction Register | Synonym for CIR (board-dependent naming) |
+| **PC**   | Program Counter              | Holds the address of the next instruction to fetch |
+| **MAR**  | Memory Address Register      | Holds the address to be accessed in memory         |
+| **MDR**  | Memory Data Register         | Holds data read from or to be written to memory    |
+| **ACC**  | Accumulator                  | Stores results of ALU operations                   |
+| **CIR**  | Current Instruction Register | Holds the instruction currently being decoded      |
+| **IR**   | Instruction Register         | Synonym for CIR (board-dependent naming)           |
 
-:::info
-Board-specific
+:::info Board-specific
 
 - **AQA** uses: PC, MAR, MDR, ACC, CIR
 - **CIE** uses: PC, MAR, MDR, ACC, IR, B (B register as temporary)
-- **OCR** uses: PC, MAR, MDR, ACC, CIR, and may reference index registers
-:::
+- **OCR** uses: PC, MAR, MDR, ACC, CIR, and may reference index registers :::
 
 **General Purpose Registers (GPRs):** Additional registers for temporary storage during computation.
 The number varies by architecture (e.g., ARM has 16, x86-64 has 16).
@@ -133,19 +132,21 @@ The CPU continuously cycles through three phases:
 #### Decode
 
 5. The CU examines the **opcode** portion of CIR to determine:
- - What operation to perform
- - What operands are needed
- - What addressing mode to use
+
+- What operation to perform
+- What operands are needed
+- What addressing mode to use
 
 The CU then generates the appropriate control signals.
 
 #### Execute
 
 6. The CU sends control signals to execute the instruction. For example:
- - **Add:** ACC ← ACC + operand
- - **Load:** ACC ← Memory[address]
- - **Store:** Memory[address] ← ACC
- - **Branch (conditional):** If condition met, PC ← address
+
+- **Add:** ACC ← ACC + operand
+- **Load:** ACC ← Memory[address]
+- **Store:** Memory[address] ← ACC
+- **Branch (conditional):** If condition met, PC ← address
 
 After execution, the cycle repeats from step 1.
 
@@ -161,18 +162,21 @@ Instruction.
 **Assume:** PC = 0x1000, instruction at 0x1000 is `ADD #5` (opcode: 0010, operand: 00000101)
 
 1. **Fetch:**
- - MAR ← PC: MAR = 0x1000
- - MDR ← Memory[0x1000]: MDR = 0010 00000101
- - CIR ← MDR: CIR = 0010 00000101
- - PC ← PC + 1: PC = 0x1001
+
+- MAR ← PC: MAR = 0x1000
+- MDR ← Memory[0x1000]: MDR = 0010 00000101
+- CIR ← MDR: CIR = 0010 00000101
+- PC ← PC + 1: PC = 0x1001
 
 2. **Decode:**
- - CU reads opcode 0010 → identifies ADD immediate
- - CU reads operand 00000101 → value 5
+
+- CU reads opcode 0010 → identifies ADD immediate
+- CU reads operand 00000101 → value 5
 
 3. **Execute:**
- - ACC ← ACC + 5
- - Set flags in status register (zero, negative, carry, overflow)
+
+- ACC ← ACC + 5
+- Set flags in status register (zero, negative, carry, overflow)
 
 </details>
 
@@ -187,11 +191,11 @@ Components.
 
 ### Types
 
-| Bus | Width (typical) | Purpose | Direction |
+| Bus         | Width (typical) | Purpose                                                 | Direction                   |
 | ----------- | --------------- | ------------------------------------------------------- | --------------------------- |
-| Data bus | 8, 16, 32, 64 | Carries data between CPU, memory, and I/O | Bidirectional |
-| Address bus | 16, 32, 64 | Carries memory addresses | Unidirectional (CPU→memory) |
-| Control bus | Variable | Carries control signals (read, write, clock, interrupt) | Mostly CPU→devices |
+| Data bus    | 8, 16, 32, 64   | Carries data between CPU, memory, and I/O               | Bidirectional               |
+| Address bus | 16, 32, 64      | Carries memory addresses                                | Unidirectional (CPU→memory) |
+| Control bus | Variable        | Carries control signals (read, write, clock, interrupt) | Mostly CPU→devices          |
 
 **Key relationships:**
 
@@ -218,11 +222,11 @@ Soon (e.g., sequential array access, instruction stream).
 
 ### Cache Levels
 
-| Level | Location | Size | Speed | Purpose |
+| Level | Location           | Size          | Speed     | Purpose                            |
 | ----- | ------------------ | ------------- | --------- | ---------------------------------- |
-| L1 | Inside CPU core | 32–64 KiB | ~1 ns | Hottest data, split I/D |
-| L2 | Inside CPU | 256 KiB–1 MiB | ~3–10 ns | Backup for L1 |
-| L3 | Shared among cores | 4–64 MiB | ~10–30 ns | Shared cache, reduces L1/L2 misses |
+| L1    | Inside CPU core    | 32–64 KiB     | ~1 ns     | Hottest data, split I/D            |
+| L2    | Inside CPU         | 256 KiB–1 MiB | ~3–10 ns  | Backup for L1                      |
+| L3    | Shared among cores | 4–64 MiB      | ~10–30 ns | Shared cache, reduces L1/L2 misses |
 
 ### Cache Mapping Techniques
 
@@ -234,7 +238,7 @@ $$\mathrm{Cache line} = \mathrm{Block address} \bmod (\mathrm{Number of cache li
 
 - **Advantage:** Simple, fast lookup
 - **Disadvantage:** Conflict misses — two frequently used blocks mapping to the same line evict each
- other
+  other
 
 #### Fully Associative Mapping
 
@@ -271,8 +275,8 @@ Space, while physical memory may be fragmented and shared among processes.
 
 ### Paging
 
-Memory is divided into fixed-size **pages** ( 4 KiB). Virtual addresses are translated to
-Physical addresses using a **page table**.
+Memory is divided into fixed-size **pages** ( 4 KiB). Virtual addresses are translated to Physical
+addresses using a **page table**.
 
 **Virtual address structure (32-bit, 4 KiB pages):**
 
@@ -360,24 +364,21 @@ Cycles. Emphasis on hardware complexity.
 
 ### Comparison
 
-| Property | RISC | CISC |
+| Property           | RISC                      | CISC                          |
 | ------------------ | ------------------------- | ----------------------------- |
-| Instruction count | Small (50–100) | Large (200–500+) |
-| Instruction format | Fixed length | Variable length |
-| Execution time | 1 cycle (mostly) | 1–20+ cycles |
-| Addressing modes | Few (2–5) | Many (10+) |
-| Registers | Many (32+) | Few (8–16) |
-| Microcode | No (hardwired control) | Yes (microprogrammed control) |
-| Pipeline | Easy to pipeline | Harder to pipeline |
-| Examples | ARM, MIPS, RISC-V | x86/x86-64 |
-| Code density | Lower (more instructions) | Higher (fewer instructions) |
-| Power consumption | Lower | Higher |
+| Instruction count  | Small (50–100)            | Large (200–500+)              |
+| Instruction format | Fixed length              | Variable length               |
+| Execution time     | 1 cycle (mostly)          | 1–20+ cycles                  |
+| Addressing modes   | Few (2–5)                 | Many (10+)                    |
+| Registers          | Many (32+)                | Few (8–16)                    |
+| Microcode          | No (hardwired control)    | Yes (microprogrammed control) |
+| Pipeline           | Easy to pipeline          | Harder to pipeline            |
+| Examples           | ARM, MIPS, RISC-V         | x86/x86-64                    |
+| Code density       | Lower (more instructions) | Higher (fewer instructions)   |
+| Power consumption  | Lower                     | Higher                        |
 
-:::info
-Info
-(used in smartphones, Raspberry Pi) is RISC. Intel/AMD processors are CISC (but use RISC-like
-Internal micro-operations).
-:::
+:::info Info (used in smartphones, Raspberry Pi) is RISC. Intel/AMD processors are CISC (but use
+RISC-like Internal micro-operations). :::
 
 <hr />
 
@@ -418,9 +419,9 @@ Four steps: MAR ← PC, read from memory, CIR ← MDR, PC ← PC + 1.
 <summary>Answer</summary>
 
 1. The contents of the Program Counter (PC) are copied to the Memory Address Register (MAR) via the
- address bus.
+   address bus.
 2. The data stored at the memory address held in the MAR is copied to the Memory Data Register (MDR)
- via the data bus.
+   via the data bus.
 3. The contents of the MDR are copied to the Current Instruction Register (CIR).
 4. The Program Counter is incremented by 1 (or by the instruction length, for variable-length ISAs)
 To point to the next instruction.
@@ -443,8 +444,8 @@ Repeatedly. After the first access loads it into cache, subsequent accesses hit 
 Similarly, the instruction bytes of the loop body are fetched from cache after the first iteration.
 
 **Spatial locality:** When accessing `array[i]`The cache loads a block (cache line) containing
-`array[i]` and several adjacent elements. Subsequent accesses to `array[i+1]``array[i+2]`Etc.,
-Are cache hits because they are in the same cache line.
+`array[i]` and several adjacent elements. Subsequent accesses to `array[i+1]``array[i+2]`Etc., Are
+cache hits because they are in the same cache line.
 
 </details>
 

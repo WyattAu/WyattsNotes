@@ -1,7 +1,9 @@
 ---
 id: indexing
 title: Indexing and Optimization
-description: "Indexing and Optimization — Why Indexes Matter; B-Tree Structure; Node Anatomy; B-Tree vs B+ Tree with worked examples and exam-style questions."
+description:
+  'Indexing and Optimization — Why Indexes Matter; B-Tree Structure; Node Anatomy; B-Tree vs B+ Tree
+  with worked examples and exam-style questions.'
 slug: indexing
 sidebar_position: 1
 tags:
@@ -9,6 +11,7 @@ tags:
 categories:
   - Databases
 ---
+
 ## Why Indexes Matter
 
 Without an index, finding a specific row in a table of $N$ rows requires a full sequential scan,
@@ -52,13 +55,13 @@ B+ Tree (all data in leaves, leaves linked):
   [leaf] -> [leaf] -> [leaf] -> [leaf]  (linked list for range scans)
 ```
 
-| Property | B-Tree | B+ Tree |
-| ------------ | ------------------------ | ------------------------------------- |
-| Data storage | In all nodes | Only in leaf nodes |
-| Leaf linkage | None | Doubly-linked list |
-| Range scans | Requires tree traversal | Sequential scan of linked leaves |
-| Node fill | Variable | 2/3 to 4/5 (higher fan-out) |
-| Height | Taller for the same data | Shorter (higher fan-out) |
+| Property     | B-Tree                   | B+ Tree                          |
+| ------------ | ------------------------ | -------------------------------- |
+| Data storage | In all nodes             | Only in leaf nodes               |
+| Leaf linkage | None                     | Doubly-linked list               |
+| Range scans  | Requires tree traversal  | Sequential scan of linked leaves |
+| Node fill    | Variable                 | 2/3 to 4/5 (higher fan-out)      |
+| Height       | Taller for the same data | Shorter (higher fan-out)         |
 
 ### Depth and Fan-Out
 
@@ -83,20 +86,22 @@ Likely with the buffer pool, 4 cache lookups.
 1. Find the correct leaf node by traversing from the root
 2. Insert the new key in sorted order in the leaf
 3. If the leaf overflows (exceeds page capacity):
- - Split the leaf into two halves
- - Promote the median key to the parent
- - If the parent overflows, split it recursively
- - If the root splits, create a new root (tree height increases by 1)
+
+- Split the leaf into two halves
+- Promote the median key to the parent
+- If the parent overflows, split it recursively
+- If the root splits, create a new root (tree height increases by 1)
 
 ### Deletion
 
 1. Find the key in the leaf
 2. Remove the key
 3. If the leaf underflows (below minimum fill factor):
- - Attempt to redistribute entries from a sibling (borrow)
- - If siblings are also at minimum, merge with a sibling
- - If the parent underflows, recurse upward
- - If the root has one child and is an internal node, the child becomes the new root
+
+- Attempt to redistribute entries from a sibling (borrow)
+- If siblings are also at minimum, merge with a sibling
+- If the parent underflows, recurse upward
+- If the root has one child and is an internal node, the child becomes the new root
 
 :::info
 
@@ -344,28 +349,28 @@ Execution Time: 0.221 ms
 
 Key fields to examine:
 
-| Field | Meaning |
+| Field         | Meaning                                                  |
 | ------------- | -------------------------------------------------------- |
-| `cost` | Planner's estimate of relative cost (lower is better) |
-| `rows` | Planner's estimate of rows processed at each node |
+| `cost`        | Planner's estimate of relative cost (lower is better)    |
+| `rows`        | Planner's estimate of rows processed at each node        |
 | `actual time` | Actual time in milliseconds for this node (from ANALYZE) |
-| `actual rows` | Actual rows processed (from ANALYZE) |
-| `loops` | Number of times this node was executed (from ANALYZE) |
+| `actual rows` | Actual rows processed (from ANALYZE)                     |
+| `loops`       | Number of times this node was executed (from ANALYZE)    |
 
 ### Common Plan Nodes
 
-| Node | Description |
+| Node              | Description                                                      |
 | ----------------- | ---------------------------------------------------------------- |
-| `Seq Scan` | Full table scan; reads every row |
-| `Index Scan` | Uses a B-tree index to find matching rows (reads heap for each) |
-| `Index Only Scan` | All data comes from the index; no heap access needed |
-| `Bitmap Scan` | Two-phase: bitmap of matching pages, then fetch in page order |
-| `Nested Loop` | For each outer row, look up matching inner rows (good for small) |
-| `Hash Join` | Build hash table on inner, probe with outer (good for large) |
-| `Merge Join` | Both inputs sorted, merge in one pass (good for pre-sorted data) |
-| `Sort` | In-memory sort (quicksort) or external sort (merge sort to disk) |
-| `Aggregate` | Hash aggregate or Group Aggregate (sorted) |
-| `Limit` | Stops processing after N rows |
+| `Seq Scan`        | Full table scan; reads every row                                 |
+| `Index Scan`      | Uses a B-tree index to find matching rows (reads heap for each)  |
+| `Index Only Scan` | All data comes from the index; no heap access needed             |
+| `Bitmap Scan`     | Two-phase: bitmap of matching pages, then fetch in page order    |
+| `Nested Loop`     | For each outer row, look up matching inner rows (good for small) |
+| `Hash Join`       | Build hash table on inner, probe with outer (good for large)     |
+| `Merge Join`      | Both inputs sorted, merge in one pass (good for pre-sorted data) |
+| `Sort`            | In-memory sort (quicksort) or external sort (merge sort to disk) |
+| `Aggregate`       | Hash aggregate or Group Aggregate (sorted)                       |
+| `Limit`           | Stops processing after N rows                                    |
 
 ### When the Planner Gets It Wrong
 
@@ -401,7 +406,7 @@ Faster than an index scan when:
 
 - The table is small (fits in a few pages)
 - A large percentage of rows match the query (e.g., `WHERE status = 'active'` when 80% of rows are
- active)
+  active)
 - The index and table are both on disk, causing random I/O for each index entry
 
 The planner's decision threshold is approximately when the query selects more than 5-15% of the
@@ -444,8 +449,9 @@ Bitmap Scan (sequential I/O):
 **Merge Join:**
 
 - Both inputs must be sorted on the join key; merge in a single pass
-- Cost: $O(N_{\mathrm{outer{}} \log N_{\mathrm{outer{}} + N_{\mathrm{inner{}} \log N_{\mathrm{inner{}})$
- for sorting, $O(N_{\mathrm{outer{}} + N_{\mathrm{inner{}})$ for merge
+- Cost:
+  $O(N_{\mathrm{outer{}} \log N_{\mathrm{outer{}} + N_{\mathrm{inner{}} \log N_{\mathrm{inner{}})$
+  for sorting, $O(N_{\mathrm{outer{}} + N_{\mathrm{inner{}})$ for merge
 - Best for: pre-sorted inputs, large result sets, range joins
 
 ### Understanding Cost Estimates
@@ -469,14 +475,14 @@ Statistics via `ANALYZE` (run automatically by autovacuum) and stores them in `p
 
 ### Key Statistics
 
-| Column | Meaning |
+| Column              | Meaning                                                                                                                 |
 | ------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| `n_distinct` | Estimated number of distinct values (-1 means "proportional to row count") |
-| `most_common_vals` | Most frequent values in the column |
-| `most_common_freqs` | Frequency of the most common values |
-| `histogram_bounds` | Bucket boundaries for value distribution |
-| `correlation` | Correlation between physical row order and column value order (1.0 = perfectly sorted, -1.0 = perfectly reverse sorted) |
-| `null_frac` | Fraction of rows where the column is NULL |
+| `n_distinct`        | Estimated number of distinct values (-1 means "proportional to row count")                                              |
+| `most_common_vals`  | Most frequent values in the column                                                                                      |
+| `most_common_freqs` | Frequency of the most common values                                                                                     |
+| `histogram_bounds`  | Bucket boundaries for value distribution                                                                                |
+| `correlation`       | Correlation between physical row order and column value order (1.0 = perfectly sorted, -1.0 = perfectly reverse sorted) |
+| `null_frac`         | Fraction of rows where the column is NULL                                                                               |
 
 ### Extended Statistics
 
@@ -559,7 +565,7 @@ Guidelines for when to skip indexing:
 - **Small tables** (a few thousand rows): a sequential scan is already fast
 - **Write-heavy tables** with few reads: the write cost outweighs the read benefit
 - **Columns with low cardinality**: a boolean column with 99% TRUE values is not worth indexing (use
- a partial index instead)
+  a partial index instead)
 - **Bulk load operations**: drop indexes before loading, recreate after
 - **Temporary/staging tables**: data is ephemeral, no point in indexing
 
@@ -588,18 +594,18 @@ reserve_pool_timeout = 3
 
 Pool modes:
 
-| Mode | Behaviour |
+| Mode          | Behaviour                                                                                     |
 | ------------- | --------------------------------------------------------------------------------------------- |
-| `session` | Server connection held for the entire client session |
-| `transaction` | Server connection held only for the duration of a transaction (recommended) |
-| `statement` | Server connection returned to pool after each statement (limited, breaks prepared statements) |
+| `session`     | Server connection held for the entire client session                                          |
+| `transaction` | Server connection held only for the duration of a transaction (recommended)                   |
+| `statement`   | Server connection returned to pool after each statement (limited, breaks prepared statements) |
 
 :::tip
 
 Transaction-mode pooling with PgBouncer is the standard for web applications. It allows thousands of
-Client connections to share a small pool of server connections ( 25-100). The caveat:
-Prepared statements that are scoped to a server connection may not work as expected, because a
-Subsequent transaction might use a different server connection.
+Client connections to share a small pool of server connections ( 25-100). The caveat: Prepared
+statements that are scoped to a server connection may not work as expected, because a Subsequent
+transaction might use a different server connection.
 
 :::
 
@@ -623,9 +629,9 @@ Less than once per minute, a covering index might not be worth the write cost.
 
 ### Not Running ANALYZE After Bulk Loads
 
-After a bulk `COPY` or large `INSERT`Run `ANALYZE` to update statistics. Without current
-Statistics, the query planner will make decisions based on stale data and may choose sequential
-Scans over index scans or vice versa.
+After a bulk `COPY` or large `INSERT`Run `ANALYZE` to update statistics. Without current Statistics,
+the query planner will make decisions based on stale data and may choose sequential Scans over index
+scans or vice versa.
 
 ### Using OFFSET for Deep Pagination
 

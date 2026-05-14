@@ -1,6 +1,8 @@
 ---
 title: Best Practices
-description: "Best Practices — Recommended Global Configuration; Identity; Default branch; Pull strategy: rebase instead of merge (cleaner history)."
+description:
+  'Best Practices — Recommended Global Configuration; Identity; Default branch; Pull strategy:
+  rebase instead of merge (cleaner history).'
 date: 2025-06-03T16:00:00.000Z
 tags:
   - git
@@ -10,6 +12,7 @@ categories:
   - CS
 slug: best-practices
 ---
+
 ## Recommended Global Configuration
 
 ```bash
@@ -84,13 +87,13 @@ git commit -m "docs: update installation instructions"
 
 ### Why Atomic Commits Matter
 
-| Reason | Explanation |
+| Reason                  | Explanation                                                             |
 | ----------------------- | ----------------------------------------------------------------------- |
-| **Bisectability** | `git bisect` can pinpoint the exact commit that introduced a bug |
-| **Revertibility** | `git revert <hash>` undoes one specific change without affecting others |
-| **Reviewability** | Reviewers can understand each change in isolation |
-| **Cherry-picking** | Individual fixes can be cherry-picked to release branches |
-| **History archaeology** | Future developers can understand _why_ each change was made |
+| **Bisectability**       | `git bisect` can pinpoint the exact commit that introduced a bug        |
+| **Revertibility**       | `git revert <hash>` undoes one specific change without affecting others |
+| **Reviewability**       | Reviewers can understand each change in isolation                       |
+| **Cherry-picking**      | Individual fixes can be cherry-picked to release branches               |
+| **History archaeology** | Future developers can understand _why_ each change was made             |
 
 ### Staging Partial Changes
 
@@ -170,7 +173,8 @@ Thumbs.db
 
 ### Never Commit Secrets
 
-Secrets (API keys, passwords, tokens) should **never** be committed to a Git repository, even in private repos:
+Secrets (API keys, passwords, tokens) should **never** be committed to a Git repository, even in
+private repos:
 
 ```bash
 # Use environment variables
@@ -240,7 +244,8 @@ $ git config core.fsmonitor true
 
 ## Working with Worktrees
 
-`git worktree` allows you to have multiple working directories from the same repository, each on a different branch:
+`git worktree` allows you to have multiple working directories from the same repository, each on a
+different branch:
 
 ```bash
 # Create a worktree for a feature branch

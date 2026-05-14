@@ -1,6 +1,8 @@
 ---
 title: Further Calculus
-description: "Further Calculus — Further Differentiation; Implicit Differentiation; Parametric Differentiation; Differentiation of Inverse Trigonometric Functions."
+description:
+  'Further Calculus — Further Differentiation; Implicit Differentiation; Parametric Differentiation;
+  Differentiation of Inverse Trigonometric Functions.'
 date: 2026-04-14
 tags:
   - Mathematics
@@ -9,6 +11,7 @@ categories:
   - Mathematics
 slug: further-calculus
 ---
+
 :::info
 
 This chapter covers **Advanced Higher** Mathematics content.
@@ -38,8 +41,8 @@ $$
 \frac{dy}{dx} = -\frac{x}{y}
 $$
 
-This makes geometric sense: on the upper semicircle ($y > 0$), increasing $x$ decreases $y$Giving
-A negative slope. On the lower semicircle ($y < 0$), the slope is positive.
+This makes geometric sense: on the upper semicircle ($y > 0$), increasing $x$ decreases $y$Giving A
+negative slope. On the lower semicircle ($y < 0$), the slope is positive.
 
 **Example:** Find $\dfrac{dy}{dx}$ for $x^3 + y^3 = 6xy$.
 
@@ -78,8 +81,8 @@ $$
 \frac{dy}{dx} = \frac{-2x - 2}{2y - 4} = \frac{-x - 1}{y - 2}
 $$
 
-**Second derivatives implicitly.** Differentiate $\frac{dy}{dx}$ again with respect to $x$Using
-The chain rule wherever $y$ appears.
+**Second derivatives implicitly.** Differentiate $\frac{dy}{dx}$ again with respect to $x$Using The
+chain rule wherever $y$ appears.
 
 ### Parametric Differentiation
 
@@ -540,11 +543,11 @@ $$
 
 **Method for finding $y_p$:** Guess the form of $y_p$ based on $f(x)$.
 
-| $f(x)$ | Guess for $y_p$ |
+| $f(x)$                 | Guess for $y_p$                  |
 | ---------------------- | -------------------------------- |
-| $e^{kx}$ | $Ce^{kx}$ (if $k$ is not a root) |
-| $kx + b$ | $Ax + B$ |
-| $\cos kx$ or $\sin kx$ | $A\cos kx + B\sin kx$ |
+| $e^{kx}$               | $Ce^{kx}$ (if $k$ is not a root) |
+| $kx + b$               | $Ax + B$                         |
+| $\cos kx$ or $\sin kx$ | $A\cos kx + B\sin kx$            |
 
 **Example:** Solve $\dfrac{d^2y}{dx^2} - 3\dfrac{dy}{dx} + 2y = 4e^{3x}$.
 
@@ -655,24 +658,24 @@ $$
 ## Common Pitfalls
 
 1. **Forgetting the chain rule in implicit differentiation:** When differentiating $y^3$The result
- is $3y^2 \dfrac{dy}{dx}$Not $3y^2$.
+   is $3y^2 \dfrac{dy}{dx}$Not $3y^2$.
 
 2. **Wrong choice of $u$ in integration by parts:** Follow the LIATE rule. Choosing algebraic
- functions as $dv$ instead of $u$ leads to more complicated integrals.
+   functions as $dv$ instead of $u$ leads to more complicated integrals.
 
 3. **Missing the constant of integration:** Always include $+C$ for indefinite integrals.
 
 4. **Incorrect auxiliary equation:** For $\dfrac{d^2y}{dx^2} + 4y = 0$The auxiliary equation is
- $m^2 + 4 = 0$Not $m^2 + 4m = 0$.
+   $m^2 + 4 = 0$Not $m^2 + 4m = 0$.
 
 5. **Domain restrictions in Maclaurin series:** The series for $\ln(1 + x)$ is valid for
- $-1 < x \le 1$Not all $x$.
+   $-1 < x \le 1$Not all $x$.
 
 6. **Forgetting to change limits in definite substitution:** When $u = g(x)$The new limits are
- $u(a)$ and $u(b)$Not $a$ and $b$.
+   $u(a)$ and $u(b)$Not $a$ and $b$.
 
 7. **Not checking that the particular integral guess works:** If your guess for $y_p$ contains a
- term already in $y_h$Multiply by $x$ and try again.
+   term already in $y_h$Multiply by $x$ and try again.
 
 ---
 
@@ -688,18 +691,18 @@ $$
 
 5. Solve $\dfrac{d^2y}{dx^2} + 2\dfrac{dy}{dx} + y = 0$.
 
-6. A curve has parametric equations $x = t^2$$y = t^3 - 3t$. Find the coordinates of the
- stationary points.
+6. A curve has parametric equations $x = t^2$$y = t^3 - 3t$. Find the coordinates of the stationary
+   points.
 
 7. Evaluate $\displaystyle\int_0^1 \frac{dx}{1 + x^3}$ by first finding the partial fraction
- decomposition.
+   decomposition.
 
 8. Solve $\dfrac{dy}{dx} + \dfrac{2y}{x} = x^3$ using an integrating factor.
 
 9. Solve $\dfrac{d^2y}{dx^2} - 4y = 2e^{3x}$.
 
 10. Find the volume of revolution when $y = \sin x$ is rotated about the $x$-axis from $x = 0$ to
- $x = \pi$.
+    $x = \pi$.
 
 11. Evaluate $\displaystyle\int e^x \sin x \, dx$ using cyclic integration by parts.
 

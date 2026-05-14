@@ -1,7 +1,9 @@
 ---
 id: network-tools
 title: Network Tools
-description: "Networking: Network Tools — Diagnostic Methodology; The OSI-Layer Approach; Check interface status; Check link speed and duplex."
+description:
+  'Networking: Network Tools — Diagnostic Methodology; The OSI-Layer Approach; Check interface
+  status; Check link speed and duplex.'
 slug: network-tools
 sidebar_position: 8
 tags:
@@ -9,6 +11,7 @@ tags:
 categories:
   - Networking
 ---
+
 ## Overview
 
 Network troubleshooting is a systematic process of isolating and identifying the root cause of
@@ -138,12 +141,12 @@ ping -c 4 -s 1400 example.com
 The TTL field in the IP header is decremented by each router. When TTL reaches 0, the router sends
 An ICMP Time Exceeded message back to the source. The initial TTL reveals the operating system:
 
-| Initial TTL | OS |
+| Initial TTL | OS                           |
 | ----------- | ---------------------------- |
-| 64 | Linux, macOS, Android, iOS |
-| 128 | Windows |
-| 255 | Cisco IOS, network equipment |
-| 254 | Some Solaris versions |
+| 64          | Linux, macOS, Android, iOS   |
+| 128         | Windows                      |
+| 255         | Cisco IOS, network equipment |
+| 254         | Some Solaris versions        |
 
 ```bash
 # See TTL in ping output
@@ -214,11 +217,11 @@ traceroute to example.com (93.184.216.34), 30 hops max, 60 byte packets
  6  93.184.216.34 (93.184.216.34)  15.678 ms  14.567 ms  15.789 ms
 ```
 
-- `* * *`: The probe timed out. This means the router is configured to not respond to ICMP
- Time Exceeded, or ICMP is filtered. It does **not** necessarily mean the packet is being dropped.
+- `* * *`: The probe timed out. This means the router is configured to not respond to ICMP Time
+  Exceeded, or ICMP is filtered. It does **not** necessarily mean the packet is being dropped.
 - High latency at a hop: The router may be slow to respond to ICMP Time Exceeded, but forwarding may
- still be fast. Look at the latency of subsequent hops -- if they are normal, the high-latency hop
- is just slow to respond to traceroute probes.
+  still be fast. Look at the latency of subsequent hops -- if they are normal, the high-latency hop
+  is just slow to respond to traceroute probes.
 - Increasing latency: May indicate congestion, a slow link, or a longer physical path.
 
 ## tcpdump
@@ -402,9 +405,9 @@ tcp.flags.syn == 1 && tcp.flags.ack == 0    # SYN only (not SYN-ACK)
 Wireshark can reassemble TCP streams into a readable format:
 
 - **Follow TCP Stream:** Right-click a TCP packet, select "Follow" -&gt; "TCP Stream." Shows the
- full conversation in order.
+  full conversation in order.
 - **Follow TLS Stream:** Reassembles decrypted TLS data (requires the TLS session key or key log
- file).
+  file).
 - **Follow HTTP Stream:** Reassembles HTTP request/response pairs.
 
 ### Statistics
@@ -825,9 +828,9 @@ ss -tanp
 ```
 
 - **Recv-Q:** For ESTABLISHED sockets, bytes in the receive buffer not yet read by the application.
- For LISTEN sockets, the backlog (pending connections in the SYN queue).
+  For LISTEN sockets, the backlog (pending connections in the SYN queue).
 - **Send-Q:** For ESTABLISHED sockets, bytes in the send buffer not yet acknowledged by the peer.
- For LISTEN sockets, the accept queue size (configured backlog).
+  For LISTEN sockets, the accept queue size (configured backlog).
 - **Process:** The process name, PID, and file descriptor that owns the socket.
 
 ### Debugging with ss
@@ -961,7 +964,7 @@ iperf3 -c 192.168.1.100 -J
 ```
 
 - **Bitrate &lt; expected:** Check for duplex mismatches, cable issues, NIC speed negotiation, or
- congestion on the path.
+  congestion on the path.
 - **Significant retransmissions:** Packet loss on the path. Check with `ping` and `mtr`.
 - **High jitter (UDP):** Variable latency. Common on wireless links and congested networks.
 
@@ -1006,7 +1009,7 @@ Start: 2024-01-01T00:00:00+0000  HOST: example.com                        Loss% 
 ```
 
 - **Loss%:** Packet loss at that hop. Loss at intermediate hops that does not propagate to
- subsequent hops is rate limiting of ICMP responses, not real packet loss.
+  subsequent hops is rate limiting of ICMP responses, not real packet loss.
 - **Last/Avg/Best/Worst:** Latency measurements. Look for sudden increases between hops.
 - **StDev:** Standard deviation of latency. High values indicate variable latency (jitter).
 - **???**: The hop is not responding. This is common and does not indicate a problem.
@@ -1014,31 +1017,31 @@ Start: 2024-01-01T00:00:00+0000  HOST: example.com                        Loss% 
 ## Common Pitfalls
 
 1. **Capturing on the wrong interface.** On systems with multiple interfaces, `tcpdump -i any`
- captures on all interfaces but may not show VLAN tags. Capture on the specific interface
- (`tcpdump -i eth0`) for accurate results.
+   captures on all interfaces but may not show VLAN tags. Capture on the specific interface
+   (`tcpdump -i eth0`) for accurate results.
 
 2. **tcpdump dropping packets.** `tcpdump` may drop packets on high-throughput links because the
- kernel buffer fills faster than userspace reads. Increase the buffer size with `-B` (buffer size
- in bytes): `tcpdump -i eth0 -B 32768`. Use `-c` to limit the number of captured packets.
+   kernel buffer fills faster than userspace reads. Increase the buffer size with `-B` (buffer size
+   in bytes): `tcpdump -i eth0 -B 32768`. Use `-c` to limit the number of captured packets.
 
 3. **Confusing `ss` Recv-Q for established vs listening sockets.** For ESTABLISHED sockets, Recv-Q
- is unread data. For LISTEN sockets, Recv-Q is the SYN backlog (pending connections). High Recv-Q
- on LISTEN means the server is not accepting connections fast enough.
+   is unread data. For LISTEN sockets, Recv-Q is the SYN backlog (pending connections). High Recv-Q
+   on LISTEN means the server is not accepting connections fast enough.
 
 4. **nmap timing and IDS.** Default nmap scans can be slow. Use `-T4` or `-T5` for faster scans in
- trusted environments. Aggressive scanning can trigger IDS/IPS alerts.
+   trusted environments. Aggressive scanning can trigger IDS/IPS alerts.
 
 5. **iperf3 single-stream vs multi-stream.** A single TCP stream is limited by congestion control.
- Multi-stream tests (`-P 8`) can saturate higher-bandwidth links but do not represent real
- application behavior. Use the appropriate number of streams for your workload.
+   Multi-stream tests (`-P 8`) can saturate higher-bandwidth links but do not represent real
+   application behavior. Use the appropriate number of streams for your workload.
 
 6. **Forgetting to check MTU.** MTU mismatches cause fragmented packets and "path MTU black holes"
- when ICMP Fragmentation Needed messages are filtered. Test with:
- `ping -c 3 -M do -s 1472 example.com` (1472 + 28 bytes IP+ICMP header = 1500 bytes). If this
- fails, reduce the size until it succeeds to find the actual path MTU.
+   when ICMP Fragmentation Needed messages are filtered. Test with:
+   `ping -c 3 -M do -s 1472 example.com` (1472 + 28 bytes IP+ICMP header = 1500 bytes). If this
+   fails, reduce the size until it succeeds to find the actual path MTU.
 
 7. **DNS caching interfering with diagnostics.** When troubleshooting DNS, flush the resolver cache
- to ensure you are testing against the authoritative server:
+   to ensure you are testing against the authoritative server:
 
 ```bash
 # Linux (systemd-resolved)
@@ -1056,8 +1059,8 @@ dig +trace example.com
 ```
 
 8. **Trusting tool output blindly.** Always verify with multiple tools. If `ping` fails but `curl`
- succeeds, ICMP is filtered. If `dig` returns an IP but `curl` fails, there may be a firewall
- blocking TCP. Cross-reference symptoms across tools and layers to isolate the root cause.
+   succeeds, ICMP is filtered. If `dig` returns an IP but `curl` fails, there may be a firewall
+   blocking TCP. Cross-reference symptoms across tools and layers to isolate the root cause.
 
 ## Summary
 

@@ -1,6 +1,8 @@
 ---
 title: Sequences and Series
-description: "A-Level Mathematics notes on Sequences and Series: Board Coverage; 2. Arithmetic Sequences; 2.1 The $n$th Term; 2.2 Sum of an Arithmetic Series."
+description:
+  'A-Level Mathematics notes on Sequences and Series: Board Coverage; 2. Arithmetic Sequences; 2.1
+  The $n$th Term; 2.2 Sum of an Arithmetic Series.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Maths
@@ -9,14 +11,15 @@ categories:
   - Maths
 slug: sequences-and-series
 ---
+
 ## Board Coverage
 
-| Board | Paper | Notes |
+| Board      | Paper      | Notes                                                                |
 | ---------- | ---------- | -------------------------------------------------------------------- |
-| AQA | Paper 1, 2 | Arithmetic and geometric sequences, sigma notation |
-| Edexcel | P1, P2 | Same; recurrence relations in P2 |
-| OCR (A) | Paper 1 | Arithmetic and geometric progressions |
-| CIE (9709) | P1, P3 | Sequences and series; P3 includes $\Sigma$ notation more extensively |
+| AQA        | Paper 1, 2 | Arithmetic and geometric sequences, sigma notation                   |
+| Edexcel    | P1, P2     | Same; recurrence relations in P2                                     |
+| OCR (A)    | Paper 1    | Arithmetic and geometric progressions                                |
+| CIE (9709) | P1, P3     | Sequences and series; P3 includes $\Sigma$ notation more extensively |
 
 <hr />
 
@@ -166,10 +169,8 @@ If $r = 1$: $S_n = na \to \pm\infty$ (unless $a = 0$).
 
 If $r = -1$: $S_n = a - a + a - a + \cdots$Which oscillates and does not converge. $\blacksquare$
 
-:::warning
-The condition $|r| < 1$ is essential. A common mistake is to apply the sum-to-infinity
-Formula when $|r| \geq 1$Which gives nonsense.
-:::
+:::warning The condition $|r| < 1$ is essential. A common mistake is to apply the sum-to-infinity
+Formula when $|r| \geq 1$Which gives nonsense. :::
 
 <details>
 <summary>Example</summary>
@@ -207,8 +208,7 @@ $$
 $$
 
 _Proof of $\sum_{k=1}^{n} k = \frac{n(n+1)}{2}$._ This is the arithmetic series with $a = 1$
-$d = 1$$n$ terms. By the formula: $S_n = \frac{n}{2}(2 + (n-1)) = \frac{n(n+1)}{2}$.
-$\blacksquare$
+$d = 1$$n$ terms. By the formula: $S_n = \frac{n}{2}(2 + (n-1)) = \frac{n(n+1)}{2}$. $\blacksquare$
 
 <hr />
 
@@ -291,8 +291,8 @@ Only a few terms at the beginning and end.
 
 $$\sum_{k=1}^{n} u_k = \sum_{k=1}^{n} [f(k) - f(k+1)] = f(1) - f(n+1)$$
 
-This is because the sum expands as $[f(1) - f(2)] + [f(2) - f(3)] + \cdots + [f(n) - f(n+1)]$And
-All intermediate terms cancel.
+This is because the sum expands as $[f(1) - f(2)] + [f(2) - f(3)] + \cdots + [f(n) - f(n+1)]$And All
+intermediate terms cancel.
 
 ### 7.1 Partial Fractions as the Decomposition Tool
 
@@ -353,8 +353,7 @@ $$= \frac{3}{4} - \frac{2n + 3}{2(n+1)(n+2)}$$
 
 </details>
 
-:::tip
-When using the method of differences, always write out the first few terms explicitly to
+:::tip When using the method of differences, always write out the first few terms explicitly to
 Identify the cancellation pattern before simplifying. Be especially careful when the "gap" in the
 Denominator is larger than 1 (e.g., $k(k+2)$), as not all terms cancel in a simple pairwise fashion.
 :::
@@ -456,8 +455,8 @@ $$
 \end{aligned}
 $$
 
-This equals $\frac◆LB◆(n+1)\bigl((n+1)+1\bigr)\bigl(2(n+1)+1\bigr)◆RB◆◆LB◆6◆RB◆$Which is the formula for
-$n+1$. ✓ $\blacksquare$
+This equals $\frac◆LB◆(n+1)\bigl((n+1)+1\bigr)\bigl(2(n+1)+1\bigr)◆RB◆◆LB◆6◆RB◆$Which is the formula
+for $n+1$. ✓ $\blacksquare$
 
 ### 9.2 Proof of $\sum_{k=1}^{n} k^3 = \left[\frac{n(n+1)}{2}\right]^2$
 
@@ -582,8 +581,8 @@ $$
 
 <hr />
 
-**Problem 6.** Given $u_1 = 3$ and $u_{n+1} = \frac{u_n + 1}{u_n - 1}$Find $u_2$$u_3$$u_4$
-And $u_5$. Comment on the sequence.
+**Problem 6.** Given $u_1 = 3$ and $u_{n+1} = \frac{u_n + 1}{u_n - 1}$Find $u_2$$u_3$$u_4$ And
+$u_5$. Comment on the sequence.
 
 <details>
 <summary>Solution</summary>
@@ -672,7 +671,8 @@ $S_{12} = 3(4096 - 1) = 12285 > 10000$. ✓
 <summary>Solution</summary>
 By induction.
 
-Base case ($n = 1$): LHS $= 1 \times 2 = 2$. RHS $= \frac◆LB◆1 \times 2 \times 3◆RB◆◆LB◆3◆RB◆ = 2$. ✓
+Base case ($n = 1$): LHS $= 1 \times 2 = 2$. RHS $= \frac◆LB◆1 \times 2 \times 3◆RB◆◆LB◆3◆RB◆ = 2$.
+✓
 
 Inductive step: Assume $\sum_{k=1}^{n} k(k+1) = \frac{n(n+1)(n+2)}{3}$.
 
@@ -694,8 +694,8 @@ This is the formula for $n + 1$. ✓ $\blacksquare$
 
 <hr />
 
-**Problem 11.** Given that $x \gt{} 0$Find the minimum value of $x^2 + \frac{9}{x^2}$ and state
-The value of $x$ at which it occurs.
+**Problem 11.** Given that $x \gt{} 0$Find the minimum value of $x^2 + \frac{9}{x^2}$ and state The
+value of $x$ at which it occurs.
 
 <details>
 <summary>Solution</summary>
@@ -705,8 +705,7 @@ $$\frac◆LB◆x^2 + \frac{9}{x^2}◆RB◆◆LB◆2◆RB◆ \geq \sqrt◆LB◆x^
 
 So $x^2 + \frac{9}{x^2} \geq 6$.
 
-Equality when $x^2 = \frac{9}{x^2}$I.e., $x^4 = 9$So $x^2 = 3$Giving $x = \sqrt{3}$ (positive
-Root).
+Equality when $x^2 = \frac{9}{x^2}$I.e., $x^4 = 9$So $x^2 = 3$Giving $x = \sqrt{3}$ (positive Root).
 
 Minimum value is 6, achieved at $x = \sqrt{3}$.
 
@@ -823,14 +822,15 @@ Verification:
 
 ---
 
-:::tip
-Tip
-Ready to test your understanding of **Sequences and Series**? The [diagnostic test](/docs/alevel/maths/diagnostics/diag-sequences-and-series) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
+:::tip Tip Ready to test your understanding of **Sequences and Series**? The
+[diagnostic test](/docs/alevel/maths/diagnostics/diag-sequences-and-series) contains the hardest
+questions within the A-Level specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Sequences and Series with other pure mathematics topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Sequences
+and Series with other pure mathematics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and
+building a personal test matrix. :::
 
 ## Common Pitfalls
 

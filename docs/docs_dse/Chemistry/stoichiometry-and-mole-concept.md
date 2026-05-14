@@ -1,6 +1,8 @@
 ---
 title: Chemistry - Stoichiometry and Mole Concept
-description: "DSE Chemistry stoichiometry and mole concept notes covering relative atomic mass, molar calculations, empirical formulae, concentration, and limiting reagents."
+description:
+  'DSE Chemistry stoichiometry and mole concept notes covering relative atomic mass, molar
+  calculations, empirical formulae, concentration, and limiting reagents.'
 date: 2026-04-23T00:00:00.000Z
 tags:
   - Chemistry
@@ -39,20 +41,21 @@ $$M_r(\mathrm{H_2SO_4}) = 2(1) + 32 + 4(16) = 2 + 32 + 64 = 98$$
 
 ## The Mole Concept
 
-A mole is the amount of substance that contains as many elementary entities (atoms, molecules,
-Ions, or other particles) as there are atoms in exactly $12 \mathrm{ g}$ of carbon-12.
+A mole is the amount of substance that contains as many elementary entities (atoms, molecules, Ions,
+or other particles) as there are atoms in exactly $12 \mathrm{ g}$ of carbon-12.
 
 $$n = \frac{N}{N_A}$$
 
 Where:
+
 - $n$ = number of moles
 - $N$ = number of particles
 - $N_A = 6.02 \times 10^{23} \mathrm{ mol^{-1}}$ (Avogadro's number)
 
 ### Molar Mass ($M$)
 
-The molar mass is the mass of one mole of a substance. It is numerically equal to $A_r$ or $M_r$
-But has units of $\mathrm{g/mol}$.
+The molar mass is the mass of one mole of a substance. It is numerically equal to $A_r$ or $M_r$ But
+has units of $\mathrm{g/mol}$.
 
 $$n = \frac{m}{M}$$
 
@@ -81,10 +84,10 @@ $$N = n \times N_A = 0.250 \times 6.02 \times 10^{23} = 1.51 \times 10^{23} \mat
 
 At a given temperature and pressure, one mole of any ideal gas occupies the same volume.
 
-| Condition | Temperature | Pressure | Molar Volume |
-| --------- | ----------- | -------- | ------------------ |
-| STP | $273 \mathrm{ K}$ ($0^\circ\mathrm{C}$) | $1.01 \times 10^5 \mathrm{ Pa}$ | $22.4 \mathrm{ dm^3/mol}$ |
-| RTP | $298 \mathrm{ K}$ ($25^\circ\mathrm{C}$) | $1.01 \times 10^5 \mathrm{ Pa}$ | $24.0 \mathrm{ dm^3/mol}$ |
+| Condition | Temperature                              | Pressure                        | Molar Volume              |
+| --------- | ---------------------------------------- | ------------------------------- | ------------------------- |
+| STP       | $273 \mathrm{ K}$ ($0^\circ\mathrm{C}$)  | $1.01 \times 10^5 \mathrm{ Pa}$ | $22.4 \mathrm{ dm^3/mol}$ |
+| RTP       | $298 \mathrm{ K}$ ($25^\circ\mathrm{C}$) | $1.01 \times 10^5 \mathrm{ Pa}$ | $24.0 \mathrm{ dm^3/mol}$ |
 
 $$n = \frac{V}{V_m}$$
 
@@ -134,11 +137,11 @@ Empirical formula.
 <details>
 <summary>Solution</summary>
 
-| Element | Mass (g) | Moles ($m/A_r$) | Ratio (divide by smallest) |
-| -------- | -------- | ---------------------- | -------------------------- |
-| C | 40.0 | $40.0/12 = 3.33$ | $3.33/3.33 = 1$ |
-| H | 6.7 | $6.7/1 = 6.7$ | $6.7/3.33 \approx 2$ |
-| O | 53.3 | $53.3/16 = 3.33$ | $3.33/3.33 = 1$ |
+| Element | Mass (g) | Moles ($m/A_r$)  | Ratio (divide by smallest) |
+| ------- | -------- | ---------------- | -------------------------- |
+| C       | 40.0     | $40.0/12 = 3.33$ | $3.33/3.33 = 1$            |
+| H       | 6.7      | $6.7/1 = 6.7$    | $6.7/3.33 \approx 2$       |
+| O       | 53.3     | $53.3/16 = 3.33$ | $3.33/3.33 = 1$            |
 
 Empirical formula: $\mathrm{CH_2O}$
 
@@ -187,8 +190,8 @@ And products.
 
 ### Worked Example 6
 
-What mass of magnesium oxide is produced when $12.0 \mathrm{ g}$ of magnesium reacts completely
-With oxygen?
+What mass of magnesium oxide is produced when $12.0 \mathrm{ g}$ of magnesium reacts completely With
+oxygen?
 
 <details>
 <summary>Solution</summary>
@@ -217,8 +220,8 @@ When one or more reactants/products are gases, use the molar volume at the relev
 
 ### Worked Example 7
 
-Calculate the volume of carbon dioxide produced (at RTP) when $25.0 \mathrm{ g}$ of calcium carbonate
-Decomposes on heating.
+Calculate the volume of carbon dioxide produced (at RTP) when $25.0 \mathrm{ g}$ of calcium
+carbonate Decomposes on heating.
 
 <details>
 <summary>Solution</summary>
@@ -242,14 +245,15 @@ $$V(\mathrm{CO_2}) = 0.250 \times 24.0 = 6.00 \mathrm{ dm^3}$$
 $$c = \frac{n}{V}$$
 
 Where:
+
 - $c$ = concentration ($\mathrm{mol/dm^3}$)
 - $n$ = number of moles (mol)
 - $V$ = volume ($\mathrm{dm^3}$)
 
 ### Worked Example 8
 
-What is the concentration of a solution prepared by dissolving $10.6 \mathrm{ g}$ of sodium carbonate
-($\mathrm{Na_2CO_3}$) in water and making up to $250 \mathrm{ cm^3}$?
+What is the concentration of a solution prepared by dissolving $10.6 \mathrm{ g}$ of sodium
+carbonate ($\mathrm{Na_2CO_3}$) in water and making up to $250 \mathrm{ cm^3}$?
 
 <details>
 <summary>Solution</summary>
@@ -357,6 +361,7 @@ Moles of Zn: $n = 5.0/65.4 = 0.0765 \mathrm{ mol}$
 Moles of HCl: $n = 2.0 \times 25.0/1000 = 0.0500 \mathrm{ mol}$
 
 Divide by coefficients:
+
 - Zn: $0.0765 / 1 = 0.0765$
 - HCl: $0.0500 / 2 = 0.0250$
 
@@ -434,37 +439,38 @@ The formula is $\mathrm{CuSO_4 \cdot 5H_2O}$.
 ## Common Pitfalls
 
 - Forgetting to convert $\mathrm{cm^3}$ to $\mathrm{dm^3}$ when calculating concentration or moles
- from volume ($1 \mathrm{ dm^3} = 1000 \mathrm{ cm^3}$).
+  from volume ($1 \mathrm{ dm^3} = 1000 \mathrm{ cm^3}$).
 - Using the wrong molar volume (22.4 for STP, 24.0 for RTP). Check the conditions carefully.
 - Failing to identify the limiting reactant correctly. Always compare the mole ratio, not just the
- mass.
+  mass.
 - Confusing empirical and molecular formulae. The empirical formula is the simplest ratio; the
- molecular formula is the actual formula.
+  molecular formula is the actual formula.
 - Forgetting to use the molar ratio from the balanced equation in stoichiometry calculations.
 - Dividing mass by molar mass but using the wrong molar mass (e.g., using atomic mass instead of
- molecular mass).
+  molecular mass).
 
 ---
 
 ## Summary Table
 
-| Concept | Key Equation |
-| ---------------------- | ----------------------------------- |
-| Moles from mass | $n = m/M$ |
-| Moles from particles | $n = N/N_A$ |
-| Moles from gas volume | $n = V/V_m$ |
-| Concentration | $c = n/V$ |
-| Ideal gas (STP) | $V_m = 22.4 \mathrm{ dm^3/mol}$ |
-| Ideal gas (RTP) | $V_m = 24.0 \mathrm{ dm^3/mol}$ |
-| Percentage yield | $(\mathrm{actual} / \mathrm{theoretical}) \times 100$ |
+| Concept               | Key Equation                                          |
+| --------------------- | ----------------------------------------------------- |
+| Moles from mass       | $n = m/M$                                             |
+| Moles from particles  | $n = N/N_A$                                           |
+| Moles from gas volume | $n = V/V_m$                                           |
+| Concentration         | $c = n/V$                                             |
+| Ideal gas (STP)       | $V_m = 22.4 \mathrm{ dm^3/mol}$                       |
+| Ideal gas (RTP)       | $V_m = 24.0 \mathrm{ dm^3/mol}$                       |
+| Percentage yield      | $(\mathrm{actual} / \mathrm{theoretical}) \times 100$ |
 
 ---
 
 ## Problem Set
 
-**Problem 1:** Calculate the number of molecules in $3.20 \mathrm{ g}$ of oxygen gas ($\mathrm{O_2}$).
+**Problem 1:** Calculate the number of molecules in $3.20 \mathrm{ g}$ of oxygen gas
+($\mathrm{O_2}$).
 
-*If you get this wrong, revise: The Mole Concept*
+_If you get this wrong, revise: The Mole Concept_
 
 <details>
 <summary>Solution</summary>
@@ -475,18 +481,19 @@ $$N = 0.100 \times 6.02 \times 10^{23} = 6.02 \times 10^{22} \mathrm{ molecules}
 
 </details>
 
-**Problem 2:** A compound contains $36.5\%$ Na, $25.4\%$ S, and $38.1\%$ O. Find its empirical formula.
+**Problem 2:** A compound contains $36.5\%$ Na, $25.4\%$ S, and $38.1\%$ O. Find its empirical
+formula.
 
-*If you get this wrong, revise: Empirical and Molecular Formulae*
+_If you get this wrong, revise: Empirical and Molecular Formulae_
 
 <details>
 <summary>Solution</summary>
 
-| Element | Mass (g) | Moles | Ratio |
-| ------- | -------- | ----------- | --------- |
-| Na | 36.5 | $36.5/23 = 1.587$ | $1.587/0.793 = 2$ |
-| S | 25.4 | $25.4/32 = 0.794$ | $0.794/0.793 = 1$ |
-| O | 38.1 | $38.1/16 = 2.381$ | $2.381/0.793 = 3$ |
+| Element | Mass (g) | Moles             | Ratio             |
+| ------- | -------- | ----------------- | ----------------- |
+| Na      | 36.5     | $36.5/23 = 1.587$ | $1.587/0.793 = 2$ |
+| S       | 25.4     | $25.4/32 = 0.794$ | $0.794/0.793 = 1$ |
+| O       | 38.1     | $38.1/16 = 2.381$ | $2.381/0.793 = 3$ |
 
 Empirical formula: $\mathrm{Na_2SO_3}$
 
@@ -495,7 +502,7 @@ Empirical formula: $\mathrm{Na_2SO_3}$
 **Problem 3:** $2.40 \mathrm{ dm^3}$ of ammonia gas at RTP is dissolved in water to make
 $500 \mathrm{ cm^3}$ of solution. Calculate the concentration of the ammonia solution.
 
-*If you get this wrong, revise: Concentration (Molarity) and Molar Volume of Gas*
+_If you get this wrong, revise: Concentration (Molarity) and Molar Volume of Gas_
 
 <details>
 <summary>Solution</summary>
@@ -509,7 +516,7 @@ $$c = 0.100/0.500 = 0.200 \mathrm{ mol/dm^3}$$
 **Problem 4:** $15.0 \mathrm{ g}$ of $\mathrm{NaOH}$ is reacted with excess $\mathrm{H_2SO_4}$.
 Calculate the mass of $\mathrm{Na_2SO_4}$ produced.
 
-*If you get this wrong, revise: Reacting Mass Calculations*
+_If you get this wrong, revise: Reacting Mass Calculations_
 
 <details>
 <summary>Solution</summary>
@@ -525,9 +532,10 @@ $$m(\mathrm{Na_2SO_4}) = 0.1875 \times 142 = 26.6 \mathrm{ g}$$
 </details>
 
 **Problem 5:** In a titration, $25.0 \mathrm{ cm^3}$ of $\mathrm{H_2SO_4}$ reacts with
-$20.0 \mathrm{ cm^3}$ of $0.200 \mathrm{ mol/dm^3}$ $\mathrm{KOH}$. Find the concentration of the acid.
+$20.0 \mathrm{ cm^3}$ of $0.200 \mathrm{ mol/dm^3}$ $\mathrm{KOH}$. Find the concentration of the
+acid.
 
-*If you get this wrong, revise: Titration Calculations*
+_If you get this wrong, revise: Titration Calculations_
 
 <details>
 <summary>Solution</summary>
@@ -543,9 +551,10 @@ $$c(\mathrm{H_2SO_4}) = 2.00 \times 10^{-3}/0.0250 = 0.0800 \mathrm{ mol/dm^3}$$
 </details>
 
 **Problem 6:** $6.50 \mathrm{ g}$ of $\mathrm{Zn}$ reacts with $50.0 \mathrm{ cm^3}$ of
-$2.00 \mathrm{ mol/dm^3}$ $\mathrm{HCl}$. Calculate the maximum volume of $\mathrm{H_2}$ produced at RTP.
+$2.00 \mathrm{ mol/dm^3}$ $\mathrm{HCl}$. Calculate the maximum volume of $\mathrm{H_2}$ produced at
+RTP.
 
-*If you get this wrong, revise: Limiting Reactants and Gas Volume Calculations*
+_If you get this wrong, revise: Limiting Reactants and Gas Volume Calculations_
 
 <details>
 <summary>Solution</summary>
@@ -566,7 +575,7 @@ $V(\mathrm{H_2}) = 0.0500 \times 24.0 = 1.20 \mathrm{ dm^3}$
 
 **Problem 7:** Calculate the percentage of oxygen by mass in $\mathrm{CaCO_3}$.
 
-*If you get this wrong, revise: Percentage Composition*
+_If you get this wrong, revise: Percentage Composition_
 
 <details>
 <summary>Solution</summary>
@@ -577,10 +586,11 @@ $$\%\mathrm{O} = \frac{3 \times 16}{100} \times 100 = \frac{48}{100} \times 100 
 
 </details>
 
-**Problem 8:** A compound has the empirical formula $\mathrm{CH_2O}$ and a molar mass of $150
+**Problem 8:** A compound has the empirical formula $\mathrm{CH_2O}$ and a molar mass of
+$150
 \mathrm{ g/mol}$. Determine the molecular formula.
 
-*If you get this wrong, revise: Empirical and Molecular Formulae*
+_If you get this wrong, revise: Empirical and Molecular Formulae_
 
 <details>
 <summary>Solution</summary>
@@ -598,7 +608,7 @@ Calculate the mass of iron produced and the volume of $\mathrm{CO_2}$ formed at 
 
 $$\mathrm{Fe_2O_3} + 3\mathrm{CO} \to 2\mathrm{Fe} + 3\mathrm{CO_2}$$
 
-*If you get this wrong, revise: Reacting Mass Calculations and Gas Volume Calculations*
+_If you get this wrong, revise: Reacting Mass Calculations and Gas Volume Calculations_
 
 <details>
 <summary>Solution</summary>
@@ -617,10 +627,10 @@ $$V(\mathrm{CO_2}) = 0.150 \times 24.0 = 3.60 \mathrm{ dm^3}$$
 
 </details>
 
-**Problem 10:** $16.2 \mathrm{ g}$ of hydrated magnesium sulphate ($\mathrm{MgSO_4 \cdot xH_2O}$)
-Is heated to constant mass, leaving $7.8 \mathrm{ g}$ of anhydrous $\mathrm{MgSO_4}$. Find $x$.
+**Problem 10:** $16.2 \mathrm{ g}$ of hydrated magnesium sulphate ($\mathrm{MgSO_4 \cdot xH_2O}$) Is
+heated to constant mass, leaving $7.8 \mathrm{ g}$ of anhydrous $\mathrm{MgSO_4}$. Find $x$.
 
-*If you get this wrong, revise: Water of Crystallisation*
+_If you get this wrong, revise: Water of Crystallisation_
 
 <details>
 <summary>Solution</summary>

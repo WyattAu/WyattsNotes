@@ -1,9 +1,12 @@
 ---
 id: strings
 title: Strings and Text Processing
-description: "Strings and Text Processing — The `String` Class; Immutability; String Pool (Intern Pool); `intern()` with worked examples and exam-style questions."
+description:
+  'Strings and Text Processing — The `String` Class; Immutability; String Pool (Intern Pool);
+  `intern()` with worked examples and exam-style questions.'
 slug: strings
 ---
+
 ## The `String` Class
 
 `String` is the most used class in the Java platform. It is `final`Implements `Serializable`
@@ -68,11 +71,9 @@ String s2 = "hello";
 System.out.println(s1 == s2); // true
 ```
 
-:::warning
-Do not intern user-controlled strings at scale. The pool is unbounded, and interning
+:::warning Do not intern user-controlled strings at scale. The pool is unbounded, and interning
 Billions of unique strings (e.g., every URL your crawler visits) will cause `OutOfMemoryError`.
-Intern only strings that appear frequently and have bounded cardinality.
-:::
+Intern only strings that appear frequently and have bounded cardinality. :::
 
 ### Compact Strings (JDK 9+)
 
@@ -96,12 +97,12 @@ Encoding is used; it is determined automatically at construction time.
 
 ### Performance Characteristics
 
-| Operation | `String` | `StringBuilder` | `StringBuffer` |
+| Operation          | `String`                       | `StringBuilder`                  | `StringBuffer`                |
 | ------------------ | ------------------------------ | -------------------------------- | ----------------------------- |
-| Mutability | Immutable | Mutable | Mutable |
-| Thread safety | N/A (immutable) | Not thread-safe | Synchronized (thread-safe) |
-| Append performance | O(n) per append (copies array) | Amortized O(1) | Amortized O(1) + sync cost |
-| Memory overhead | New object per operation | Single buffer, resizes as needed | Single buffer + sync overhead |
+| Mutability         | Immutable                      | Mutable                          | Mutable                       |
+| Thread safety      | N/A (immutable)                | Not thread-safe                  | Synchronized (thread-safe)    |
+| Append performance | O(n) per append (copies array) | Amortized O(1)                   | Amortized O(1) + sync cost    |
+| Memory overhead    | New object per operation       | Single buffer, resizes as needed | Single buffer + sync overhead |
 
 ### When to Use Each
 
@@ -152,8 +153,8 @@ for (String part : parts) {
 ```
 
 JDK 9+ uses `invokedynamic` with `StringConcatFactory` for string concatenation, which generates
-Optimized bytecode at runtime. This can outperform the `StringBuilder` approach ,
-Especially for concatenations involving non-string types.
+Optimized bytecode at runtime. This can outperform the `StringBuilder` approach , Especially for
+concatenations involving non-string types.
 
 ## Text Blocks (JDK 15+)
 
@@ -217,11 +218,9 @@ String s = "Hello, World!";
 String sub = s.substring(7, 12); // "World"
 ```
 
-:::info
-Prior to JDK 7u6, `substring` shared the backing `char[]` with the original string, which
+:::info Prior to JDK 7u6, `substring` shared the backing `char[]` with the original string, which
 Could cause memory leaks (the original large string could not be GC'd if a small substring was
-Retained). Since JDK 7u6, `substring` copies the relevant portion into a new `char[]`.
-:::
+Retained). Since JDK 7u6, `substring` copies the relevant portion into a new `char[]`. :::
 
 ### Split and Join
 
@@ -319,10 +318,8 @@ emoji.codePoints().forEach(cp -> {
 // U+0048 U+0065 U+006C U+006C U+006F U+0020 U+1F30D
 ```
 
-:::warning
-Never use `charAt` or iterate `char`-by-`char` on strings that may contain surrogate
-Pairs. Use `codePoints()``codePointAt()`Or iterate with `Character.isHighSurrogate` checks.
-:::
+:::warning Never use `charAt` or iterate `char`-by-`char` on strings that may contain surrogate
+Pairs. Use `codePoints()``codePointAt()`Or iterate with `Character.isHighSurrogate` checks. :::
 
 ## Regular Expressions
 
@@ -350,25 +347,25 @@ while (matcher.find()) {
 
 ### Predefined Character Classes
 
-| Expression | Meaning |
+| Expression | Meaning                                 |
 | ---------- | --------------------------------------- |
-| `.` | Any character (except line terminators) |
-| `\d` | Digit `[0-9]` |
-| `\D` | Non-digit |
-| `\s` | Whitespace |
-| `\S` | Non-whitespace |
-| `\w` | Word character `[a-zA-Z_0-9]` |
-| `\W` | Non-word character |
+| `.`        | Any character (except line terminators) |
+| `\d`       | Digit `[0-9]`                           |
+| `\D`       | Non-digit                               |
+| `\s`       | Whitespace                              |
+| `\S`       | Non-whitespace                          |
+| `\w`       | Word character `[a-zA-Z_0-9]`           |
+| `\W`       | Non-word character                      |
 
 ### Quantifiers
 
-| Quantifier | Greedy | Reluctant | Possessive | Meaning |
+| Quantifier   | Greedy   | Reluctant | Possessive | Meaning |
 | ------------ | -------- | --------- | ---------- | ------- |
-| Zero or one | `X?` | `X??` | `X?+` | |
-| Zero or more | `X*` | `X*?` | `X*+` | |
-| One or more | `X+` | `X+?` | `X++` | |
-| Exactly n | `X{n}` | `X{n}?` | `X{n}+` | |
-| n to m | `X{n,m}` | `X{n,m}?` | `X{n,m}+` | |
+| Zero or one  | `X?`     | `X??`     | `X?+`      |         |
+| Zero or more | `X*`     | `X*?`     | `X*+`      |         |
+| One or more  | `X+`     | `X+?`     | `X++`      |         |
+| Exactly n    | `X{n}`   | `X{n}?`   | `X{n}+`    |         |
+| n to m       | `X{n,m}` | `X{n,m}?` | `X{n,m}+`  |         |
 
 ### Common Patterns
 
@@ -419,13 +416,13 @@ public boolean isValidEmail(String input) {
 
 ### UTF-8, UTF-16, and ISO-8859-1
 
-| Encoding | Variable width | Bytes per char (typical) | Notes |
+| Encoding   | Variable width | Bytes per char (typical) | Notes                        |
 | ---------- | -------------- | ------------------------ | ---------------------------- |
-| UTF-8 | Yes | 1-4 | Dominant on the web, wire |
-| UTF-16 | Yes | 2-4 | Java internal representation |
-| UTF-32 | No | 4 | Fixed width, memory-heavy |
-| ISO-8859-1 | No | 1 | Latin-1, lossy for non-Latin |
-| ASCII | No | 1 | Subset of UTF-8 and Latin-1 |
+| UTF-8      | Yes            | 1-4                      | Dominant on the web, wire    |
+| UTF-16     | Yes            | 2-4                      | Java internal representation |
+| UTF-32     | No             | 4                        | Fixed width, memory-heavy    |
+| ISO-8859-1 | No             | 1                        | Latin-1, lossy for non-Latin |
+| ASCII      | No             | 1                        | Subset of UTF-8 and Latin-1  |
 
 Java's `String` stores text as UTF-16 code units internally. When converting to/from bytes (for I/O,
 Network, storage), you must specify the charset.
@@ -465,12 +462,10 @@ CharsetEncoder strict = StandardCharsets.UTF_8.newEncoder()
     .onUnmappableCharacter(CodingErrorAction.REPORT);
 ```
 
-:::warning
-Never rely on the platform default charset. It varies by operating system and locale
+:::warning Never rely on the platform default charset. It varies by operating system and locale
 Setting. A program that works on Linux (UTF-8 default) will mangle data on Windows (Windows-1252
 Default) if you use `getBytes()` or `new String(byte[])` without an explicit charset. Always use
-`StandardCharsets.UTF_8` or a specific `Charset` constant.
-:::
+`StandardCharsets.UTF_8` or a specific `Charset` constant. :::
 
 ## String Formatting
 
@@ -483,21 +478,21 @@ String s = String.format("Name: %s, Age: %d, Balance: $%,.2f", "Alice", 30, 1234
 // "Name: Alice, Age: 30, Balance: $12,345.68"
 ```
 
-| Specifier | Meaning | Example |
+| Specifier | Meaning                          | Example                 |
 | --------- | -------------------------------- | ----------------------- |
-| `%s` | String | `"hello"` |
-| `%d` | Decimal integer | `42` |
-| `%f` | Decimal floating point | `3.141593` |
-| `%,d` | Decimal with comma separator | `1,234,567` |
-| `%x` | Hexadecimal | `ff` |
-| `%o` | Octal | `377` |
-| `%b` | Boolean | `true` |
-| `%c` | Character | `A` |
-| `%n` | Platform-specific line separator | |
-| `%%` | Literal percent | `%` |
-| `%20s` | Right-pad string to width 20 | `"              hello"` |
-| `%-20s` | Left-pad string to width 20 | `"hello              "` |
-| `%05d` | Zero-pad integer to width 5 | `00042` |
+| `%s`      | String                           | `"hello"`               |
+| `%d`      | Decimal integer                  | `42`                    |
+| `%f`      | Decimal floating point           | `3.141593`              |
+| `%,d`     | Decimal with comma separator     | `1,234,567`             |
+| `%x`      | Hexadecimal                      | `ff`                    |
+| `%o`      | Octal                            | `377`                   |
+| `%b`      | Boolean                          | `true`                  |
+| `%c`      | Character                        | `A`                     |
+| `%n`      | Platform-specific line separator |                         |
+| `%%`      | Literal percent                  | `%`                     |
+| `%20s`    | Right-pad string to width 20     | `"              hello"` |
+| `%-20s`   | Left-pad string to width 20      | `"hello              "` |
+| `%05d`    | Zero-pad integer to width 5      | `00042`                 |
 
 ### `MessageFormat`
 
@@ -535,10 +530,8 @@ while (st.hasMoreTokens()) {
 String[] parts = "one,two,three".split(",");
 ```
 
-:::tip
-Always prefer `split` or compiled `Pattern` over `StringTokenizer`. The only advantage of
-`StringTokenizer` is that it does not compile a regex, but `Pattern.compile(",")` is negligible.
-:::
+:::tip Always prefer `split` or compiled `Pattern` over `StringTokenizer`. The only advantage of
+`StringTokenizer` is that it does not compile a regex, but `Pattern.compile(",")` is negligible. :::
 
 ## Common String Algorithms
 
@@ -676,12 +669,12 @@ String b = Normalizer.normalize(input2, Normalizer.Form.NFC);
 boolean equal = a.equals(b);
 ```
 
-| Form | Description | Use case |
+| Form | Description                 | Use case                         |
 | ---- | --------------------------- | -------------------------------- |
-| NFC | Canonical composition | Default for most text processing |
-| NFD | Canonical decomposition | Searching, sorting, comparison |
-| NFKC | Compatibility composition | Fuzzy matching |
-| NFKD | Compatibility decomposition | Stripping diacritics |
+| NFC  | Canonical composition       | Default for most text processing |
+| NFD  | Canonical decomposition     | Searching, sorting, comparison   |
+| NFKC | Compatibility composition   | Fuzzy matching                   |
+| NFKD | Compatibility decomposition | Stripping diacritics             |
 
 ### Stripping Diacritics
 

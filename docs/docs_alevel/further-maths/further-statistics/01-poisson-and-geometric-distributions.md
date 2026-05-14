@@ -1,6 +1,8 @@
 ---
 title: Poisson and Geometric Distributions
-description: "A-Level Further Maths notes on Poisson and Geometric Distributions: Board Coverage; 1. The Poisson Distribution; 1.1 Definition."
+description:
+  'A-Level Further Maths notes on Poisson and Geometric Distributions: Board Coverage; 1. The
+  Poisson Distribution; 1.1 Definition.'
 date: 2026-04-02T00:00:00.000Z
 tags:
   - FurtherMaths
@@ -10,6 +12,7 @@ categories:
 slug: poisson-geometric
 sidebar_position: 1
 ---
+
 ## Poisson and Geometric Distributions
 
 The Poisson and geometric distributions model discrete random variables arising from counting
@@ -18,12 +21,12 @@ Geometric distribution counts the number of trials until the first success.
 
 ### Board Coverage
 
-| Board | Paper | Notes |
+| Board      | Paper   | Notes                                   |
 | ---------- | ------- | --------------------------------------- |
-| AQA | Paper 2 | Both Poisson and geometric in depth |
-| Edexcel | S2, S3 | Poisson in S2; geometric in S3 |
-| OCR (A) | Paper 2 | Poisson and geometric |
-| CIE (9231) | S2 | Poisson covered; geometric not required |
+| AQA        | Paper 2 | Both Poisson and geometric in depth     |
+| Edexcel    | S2, S3  | Poisson in S2; geometric in S3          |
+| OCR (A)    | Paper 2 | Poisson and geometric                   |
+| CIE (9231) | S2      | Poisson covered; geometric not required |
 
 :::info The formula booklet provides the Poisson PMF. You must know when to apply each distribution
 And how to carry out hypothesis testing with discrete distributions. The geometric distribution has
@@ -249,8 +252,8 @@ $$P(X \leq r) = 1 - q^r = 1 - (1-p)^r$$
 **Example.** A bag contains red and blue balls. The probability of drawing a red ball is $p$. In an
 Experiment, the first red ball is drawn on the 10th draw. Test at the 5% level whether $p = 0.3$.
 
-$X \sim \mathrm{Geo}(0.3)$. $H_0: p = 0.3$$H_1: p < 0.3$ (the ball took longer than expected, so
-$p$ may be smaller).
+$X \sim \mathrm{Geo}(0.3)$. $H_0: p = 0.3$$H_1: p < 0.3$ (the ball took longer than expected, so $p$
+may be smaller).
 
 $p\mathrm{-value} = P(X \geq 10) = (1-0.3)^{10-1} = 0.7^9 \approx 0.0404 < 0.05$.
 
@@ -269,11 +272,11 @@ Critical region: $X \geq 10$.
 
 ### 3.1 When to use each
 
-| Situation | Distribution |
+| Situation                                         | Distribution                   |
 | ------------------------------------------------- | ------------------------------ |
 | Number of events in a fixed interval, rare events | Poisson $\mathrm{Po}(\lambda)$ |
-| Number of trials until first success | Geometric $\mathrm{Geo}(p)$ |
-| Fixed number of trials, counting successes | Binomial $B(n, p)$ |
+| Number of trials until first success              | Geometric $\mathrm{Geo}(p)$    |
+| Fixed number of trials, counting successes        | Binomial $B(n, p)$             |
 
 ### 3.2 Poisson as approximation to Binomial
 
@@ -544,15 +547,15 @@ Were observed.
 
 **Solution.** Under $H_0$: $P(X = k) = \dfrac◆LB◆e^{-3} \cdot 3^k◆RB◆◆LB◆k!◆RB◆$.
 
-| $k$ | $P(X = k)$ | Expected freq ($\times 200$) |
+| $k$      | $P(X = k)$             | Expected freq ($\times 200$) |
 | -------- | ---------------------- | ---------------------------- |
-| 0 | $e^{-3} = 0.0498$ | 9.96 |
-| 1 | $3e^{-3} = 0.1494$ | 29.87 |
-| 2 | $4.5e^{-3} = 0.2240$ | 44.81 |
-| 3 | $4.5e^{-3} = 0.2240$ | 44.81 |
-| 4 | $3.375e^{-3} = 0.1680$ | 33.60 |
-| 5 | $2.025e^{-3} = 0.1008$ | 20.17 |
-| $\geq 6$ | $1 - \sum_0^5$ | $\approx 16.78$ |
+| 0        | $e^{-3} = 0.0498$      | 9.96                         |
+| 1        | $3e^{-3} = 0.1494$     | 29.87                        |
+| 2        | $4.5e^{-3} = 0.2240$   | 44.81                        |
+| 3        | $4.5e^{-3} = 0.2240$   | 44.81                        |
+| 4        | $3.375e^{-3} = 0.1680$ | 33.60                        |
+| 5        | $2.025e^{-3} = 0.1008$ | 20.17                        |
+| $\geq 6$ | $1 - \sum_0^5$         | $\approx 16.78$              |
 
 ### Example 7.5: Fitting a Poisson distribution
 
@@ -567,15 +570,15 @@ $\hat{\lambda} = 2.68$.
 
 Expected frequency for $k$: $100 \times \dfrac{e^{-2.68}(2.68)^k}{k!}$.
 
-| $k$ | Expected |
+| $k$ | Expected                            |
 | --- | ----------------------------------- |
-| 0 | $100e^{-2.68} = 6.86$ |
-| 1 | $100 \times 2.68 e^{-2.68} = 18.38$ |
-| 2 | $100 \times 3.59 e^{-2.68} = 24.64$ |
-| 3 | $100 \times 3.21 e^{-2.68} = 22.02$ |
-| 4 | $100 \times 2.15 e^{-2.68} = 14.76$ |
-| 5 | $100 \times 1.15 e^{-2.68} = 7.91$ |
-| 6 | $100 \times 0.51 e^{-2.68} = 3.52$ |
+| 0   | $100e^{-2.68} = 6.86$               |
+| 1   | $100 \times 2.68 e^{-2.68} = 18.38$ |
+| 2   | $100 \times 3.59 e^{-2.68} = 24.64$ |
+| 3   | $100 \times 3.21 e^{-2.68} = 22.02$ |
+| 4   | $100 \times 2.15 e^{-2.68} = 14.76$ |
+| 5   | $100 \times 1.15 e^{-2.68} = 7.91$  |
+| 6   | $100 \times 0.51 e^{-2.68} = 3.52$  |
 
 ### Example 7.6: Conditional probability with geometric distribution
 
@@ -804,8 +807,8 @@ $$\frac◆LB◆e^{-\lambda}\lambda^m◆RB◆◆LB◆m!◆RB◆ \geq \frac◆LB�
 
 $$\frac◆LB◆e^{-\lambda}\lambda^m◆RB◆◆LB◆m!◆RB◆ \geq \frac◆LB◆e^{-\lambda}\lambda^{m+1}◆RB◆◆LB◆(m+1)!◆RB◆ \implies \frac◆LB◆m+1◆RB◆◆LB◆\lambda◆RB◆ \geq 1 \implies m \geq \lambda - 1$$
 
-So $\lambda - 1 \leq m \leq \lambda$Meaning the mode is $\lfloor\lambda\rfloor$ (and also
-$\lambda$ if $\lambda$ is an integer).
+So $\lambda - 1 \leq m \leq \lambda$Meaning the mode is $\lfloor\lambda\rfloor$ (and also $\lambda$
+if $\lambda$ is an integer).
 
 ### Example 8.6: Relationship between Poisson and exponential
 
@@ -837,12 +840,12 @@ $$\mathrm{Var}(X) = \frac{2-p}{p^2} - \frac{1}{p^2} = \boxed{\frac{1-p}{p^2}}$$
 
 ## 9. Common Pitfalls
 
-| Pitfall | Correct Approach |
+| Pitfall                                                                             | Correct Approach                                                                                                  |
 | ----------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| Confusing the two definitions of the geometric distribution | "Number of trials until first success": $E(X) = 1/p$; "Number of failures before first success": $E(X) = (1-p)/p$ |
-| Using the Poisson approximation when $np > 10$ or $n < 20$ | The Poisson approximation requires $n$ large and $p$ small, with $np$ moderate |
-| Forgetting that Poisson probabilities sum to 1 only over all $k$ from 0 to $\infty$ | Never truncate without adjusting |
-| Applying the Poisson to events that are not independent | The Poisson process requires independent events at a constant average rate |
+| Confusing the two definitions of the geometric distribution                         | "Number of trials until first success": $E(X) = 1/p$; "Number of failures before first success": $E(X) = (1-p)/p$ |
+| Using the Poisson approximation when $np > 10$ or $n < 20$                          | The Poisson approximation requires $n$ large and $p$ small, with $np$ moderate                                    |
+| Forgetting that Poisson probabilities sum to 1 only over all $k$ from 0 to $\infty$ | Never truncate without adjusting                                                                                  |
+| Applying the Poisson to events that are not independent                             | The Poisson process requires independent events at a constant average rate                                        |
 
 ---
 
@@ -917,17 +920,17 @@ Distribution. See
 
 ## 12. Key Results Summary
 
-| Distribution | PMF | $E(X)$ | $\mathrm{Var}(X)$ |
+| Distribution                 | PMF                                                      | $E(X)$           | $\mathrm{Var}(X)$  |
 | ---------------------------- | -------------------------------------------------------- | ---------------- | ------------------ |
-| $\mathrm{Po}(\lambda)$ | $P(X=x) = \dfrac◆LB◆e^{-\lambda}\lambda^x◆RB◆◆LB◆x!◆RB◆$ | $\lambda$ | $\lambda$ |
-| $\mathrm{Geo}(p)$ (trials) | $P(X=x) = p(1-p)^{x-1}$ | $\dfrac{1}{p}$ | $\dfrac{1-p}{p^2}$ |
-| $\mathrm{Geo}(p)$ (failures) | $P(X=x) = p(1-p)^x$ | $\dfrac{1-p}{p}$ | $\dfrac{1-p}{p^2}$ |
+| $\mathrm{Po}(\lambda)$       | $P(X=x) = \dfrac◆LB◆e^{-\lambda}\lambda^x◆RB◆◆LB◆x!◆RB◆$ | $\lambda$        | $\lambda$          |
+| $\mathrm{Geo}(p)$ (trials)   | $P(X=x) = p(1-p)^{x-1}$                                  | $\dfrac{1}{p}$   | $\dfrac{1-p}{p^2}$ |
+| $\mathrm{Geo}(p)$ (failures) | $P(X=x) = p(1-p)^x$                                      | $\dfrac{1-p}{p}$ | $\dfrac{1-p}{p^2}$ |
 
-| Property | Poisson | Geometric |
+| Property            | Poisson                                           | Geometric    |
 | ------------------- | ------------------------------------------------- | ------------ |
-| Memoryless | No | Yes |
-| Additive: $X_1+X_2$ | $\mathrm{Po}(\lambda_1+\lambda_2)$ if independent | Not simple |
-| PMF tail behaviour | Decays faster than geometric | Slower decay |
+| Memoryless          | No                                                | Yes          |
+| Additive: $X_1+X_2$ | $\mathrm{Po}(\lambda_1+\lambda_2)$ if independent | Not simple   |
+| PMF tail behaviour  | Decays faster than geometric                      | Slower decay |
 
 ---
 
@@ -973,8 +976,8 @@ $\mathrm{Var}(X) = E(X^2)-[E(X)]^2 = \lambda^2+\lambda-\lambda^2 = \boxed{\lambd
 
 ### 14.1 Compound Poisson process
 
-If events of type $A$ occur at rate $\lambda_A$ and type $B$ at rate $\lambda_B$Independently,
-Then the total event process is Poisson with rate $\lambda_A + \lambda_B$.
+If events of type $A$ occur at rate $\lambda_A$ and type $B$ at rate $\lambda_B$Independently, Then
+the total event process is Poisson with rate $\lambda_A + \lambda_B$.
 
 ### 14.2 Poisson distribution and the Poisson point process
 

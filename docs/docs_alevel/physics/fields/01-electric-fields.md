@@ -1,6 +1,8 @@
 ---
 title: Electric Fields
-description: "A-Level Physics notes on Electric Fields: 1. Coulomb's Law; Comparison with Gravity; Inverse Square Law Parallels; 2. Electric Field Strength."
+description:
+  "A-Level Physics notes on Electric Fields: 1. Coulomb's Law; Comparison with Gravity; Inverse
+  Square Law Parallels; 2. Electric Field Strength."
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Physics
@@ -9,11 +11,10 @@ categories:
   - Physics
 slug: electric-fields
 ---
+
 ## Electric Fields
 
-:::info
-Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4
-:::
+:::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4 :::
 
 <PhetSimulation simulationId="charges-and-fields" title="Charges and Fields" />
 
@@ -31,17 +32,18 @@ Where $\varepsilon_0 = 8.85 \times 10^{-12}$ F m$^{-1}$ is the **permittivity of
 The force is **attractive** for opposite charges and **repulsive** for like charges. It acts along
 The line joining the charges.
 
-**Coulomb's constant:** $k = \frac◆LB◆1◆RB◆◆LB◆4\pi\varepsilon_0◆RB◆ = 8.99 \times 10^9$ N m$^2$ C$^{-2}$.
+**Coulomb's constant:** $k = \frac◆LB◆1◆RB◆◆LB◆4\pi\varepsilon_0◆RB◆ = 8.99 \times 10^9$ N m$^2$
+C$^{-2}$.
 
 ### Comparison with Gravity
 
-| Property | Gravitational | Electrostatic |
+| Property          | Gravitational              | Electrostatic           |
 | ----------------- | -------------------------- | ----------------------- |
-| Force law | $F = Gm_1m_2/r^2$ | $F = kq_1q_2/r^2$ |
-| Constant | $G = 6.67 \times 10^{-11}$ | $k = 8.99 \times 10^9$ |
-| Nature | Always attractive | Attractive or repulsive |
-| Acts on | Mass | Charge |
-| Relative strength | Very weak | Very strong |
+| Force law         | $F = Gm_1m_2/r^2$          | $F = kq_1q_2/r^2$       |
+| Constant          | $G = 6.67 \times 10^{-11}$ | $k = 8.99 \times 10^9$  |
+| Nature            | Always attractive          | Attractive or repulsive |
+| Acts on           | Mass                       | Charge                  |
+| Relative strength | Very weak                  | Very strong             |
 
 The electrostatic force is $\sim 10^{36}$ times stronger than gravity. We don't notice this in
 Everyday life because most objects have nearly equal numbers of positive and negative charges.
@@ -58,15 +60,15 @@ More negative as $r$ decreases), whereas electric potential can be positive or n
 The source charge. This means gravitational bound systems always have negative total energy, while
 Electrostatic bound systems can be either bound ($U \lt 0$) or unbound ($U \gt 0$).
 
-| Concept | Gravitational Field | Electric Field |
-| ----------------- | ---------------------------------- | ------------------------------------------- |
-| Field strength | $g = GM/r^2$ (always towards mass) | $E = kQ/r^2$ (away from $+Q$Towards $-Q$) |
-| Potential | $V_g = -GM/r$ (always negative) | $V = kQ/r$ (sign depends on $Q$) |
-| Potential energy | $U = -GMm/r$ (always negative) | $U = kq_1q_2/r$ (sign depends on charges) |
-| Gradient relation | $g = -dV_g/dr$ | $E = -dV/dr$ |
-| Equipotentials | Concentric spheres | Concentric spheres |
-| Zero reference | At infinity | At infinity |
-| Screening | None (gravity unscreened) | Conductors shield electric fields |
+| Concept           | Gravitational Field                | Electric Field                            |
+| ----------------- | ---------------------------------- | ----------------------------------------- |
+| Field strength    | $g = GM/r^2$ (always towards mass) | $E = kQ/r^2$ (away from $+Q$Towards $-Q$) |
+| Potential         | $V_g = -GM/r$ (always negative)    | $V = kQ/r$ (sign depends on $Q$)          |
+| Potential energy  | $U = -GMm/r$ (always negative)     | $U = kq_1q_2/r$ (sign depends on charges) |
+| Gradient relation | $g = -dV_g/dr$                     | $E = -dV/dr$                              |
+| Equipotentials    | Concentric spheres                 | Concentric spheres                        |
+| Zero reference    | At infinity                        | At infinity                               |
+| Screening         | None (gravity unscreened)          | Conductors shield electric fields         |
 
 **Defining similarity.** Both fields have a central $1/r$ potential, and both satisfy a
 Gauss's-law-type conservation of flux. The field at radius $r$ from a point source depends only on
@@ -79,10 +81,8 @@ Screened by conductors (Faraday cages), whereas gravitational fields cannot. Thi
 Are two types of electric charge that can rearrange themselves to cancel external fields, but there
 Is only one type of mass.
 
-:::info
-Info
-(Paper 2). Edexcel: Explicit comparison required in CP3. OCR (A): Potential energy comparison is
-Commonly tested (Paper 2). CIE: Gravitational--electrostatic analogies appear in P4.
+:::info Info (Paper 2). Edexcel: Explicit comparison required in CP3. OCR (A): Potential energy
+comparison is Commonly tested (Paper 2). CIE: Gravitational--electrostatic analogies appear in P4.
 :::
 
 ## 2. Electric Field Strength
@@ -154,12 +154,10 @@ $E_{\mathrm{total}} = \sigma/\varepsilon_0$. Outside the plates, the fields canc
 $E_{\mathrm{total}} = 0$. This is the ideal parallel-plate capacitor field, and it justifies the
 Formula $E = V/d$ for the uniform field region.
 
-:::info
-Board Coverage AQA: Gauss's law is not formally required but the uniform field result for
+:::info Board Coverage AQA: Gauss's law is not formally required but the uniform field result for
 Parallel plates is given. Edexcel: Only the uniform field result $E = V/d$ is required. OCR (A):
 Gauss's law may appear as extension material in Module 6. CIE: The infinite plane result is not in
-The syllabus but is useful for understanding parallel plates.
-:::
+The syllabus but is useful for understanding parallel plates. :::
 
 ## 3. Electric Potential
 
@@ -228,12 +226,9 @@ As the area under the force--distance curve ($W = \int F\,dr$), the energy in a 
 Area under the voltage--charge curve. Both represent stored field energy, and both can be recovered
 As useful work when the system returns to its equilibrium state.
 
-:::info
-Info
-Topic 11 (capacitor energy and charging/discharging graphs). OCR (A): Required in 6.3.2, including
-Deriving energy from the area under a $V$--$Q$ graph. CIE: Required in P3 (Chapter 22), including
-The three equivalent forms.
-:::
+:::info Info Topic 11 (capacitor energy and charging/discharging graphs). OCR (A): Required in
+6.3.2, including Deriving energy from the area under a $V$--$Q$ graph. CIE: Required in P3 (Chapter
+22), including The three equivalent forms. :::
 
 ## 4. Relationship Between $E$ and $V$: $E = -dV/dr$
 
@@ -316,27 +311,25 @@ Achieved in laboratory demonstrations.
 **Key physics:**
 
 - Charge resides entirely on the **outer surface** of the dome. A conductor in electrostatic
- equilibrium has zero electric field inside, so no charge is needed on the inner surface to shield
- the interior.
+  equilibrium has zero electric field inside, so no charge is needed on the inner surface to shield
+  the interior.
 - The dome is approximately spherical, so the field just outside is $E = kQ/r^2$Directed radially
- outward for a positively charged dome.
+  outward for a positively charged dome.
 - When the field at the surface exceeds the breakdown strength of air ($E \approx 3 \times 10^6$ V
- m$^{-1}$ at STP), spark discharge occurs to any nearby grounded object.
+  m$^{-1}$ at STP), spark discharge occurs to any nearby grounded object.
 - The potential at breakdown is $V_{\mathrm{breakdown}} = E_{\mathrm{breakdown}} \times r$. Larger
- domes reach higher breakdown potentials because the same surface charge density produces a weaker
- field on a larger sphere ($E = \sigma/\varepsilon_0$ for a sphere).
+  domes reach higher breakdown potentials because the same surface charge density produces a weaker
+  field on a larger sphere ($E = \sigma/\varepsilon_0$ for a sphere).
 
 **Safety demonstration.** A person touching the dome while standing on an insulating platform also
 Acquires a high potential. Their hair stands on end because each strand acquires the same sign of
 Charge, and strands repel each other via Coulomb's law — a vivid demonstration of electrostatic
 Repulsion.
 
-:::info
-Board Coverage AQA: Van de Graaff generators are a specified practical context (required
+:::info Board Coverage AQA: Van de Graaff generators are a specified practical context (required
 Practical 10). Edexcel: Mentioned in CP3 and CP6 as an example of charge accumulation and high
 Potential. OCR (A): Can appear in Paper 2 as a context question. CIE: Not explicitly named but the
-Underlying physics (field of a sphere, potential, discharge) is examined in P4.
-:::
+Underlying physics (field of a sphere, potential, discharge) is examined in P4. :::
 
 ### Inkjet Printers
 
@@ -344,14 +337,14 @@ Inkjet printers use electric fields to precisely control the trajectory of charg
 There are two main types:
 
 1. **Continuous inkjet (CIJ):** A stream of ink is broken into uniform droplets by a vibrating
- piezoelectric crystal at a rate of roughly 100,000 droplets per second. Droplets pass through a
- charging electrode where each droplet is given a controlled charge. The charged droplets then
- pass between deflection plates creating a transverse electric field. The vertical deflection is
- $y = qEL^2/(2mv^2)$So different charges produce different deflections. Uncharged droplets are
- collected in a gutter and recycled; charged droplets strike the paper to form characters.
+   piezoelectric crystal at a rate of roughly 100,000 droplets per second. Droplets pass through a
+   charging electrode where each droplet is given a controlled charge. The charged droplets then
+   pass between deflection plates creating a transverse electric field. The vertical deflection is
+   $y = qEL^2/(2mv^2)$So different charges produce different deflections. Uncharged droplets are
+   collected in a gutter and recycled; charged droplets strike the paper to form characters.
 
 2. **Drop-on-demand (DOD):** Thermal or piezoelectric actuators fire individual droplets only where
- needed. Some designs still use electric fields for final trajectory correction.
+   needed. Some designs still use electric fields for final trajectory correction.
 
 **Physics involved.** The deflection of each droplet in the plates is exactly the parabolic
 Trajectory problem from Section 5. By varying the charge $q$ on each droplet (controlled by the
@@ -367,26 +360,24 @@ Plants, and can remove over 99% of particulate emissions.
 **How it works:**
 
 1. A thin high-voltage wire (at $\sim 50$ kV) runs along the centre of a duct or between large
- grounded collecting plates. The strong field near the wire ionises the surrounding air, creating
- a corona discharge.
+   grounded collecting plates. The strong field near the wire ionises the surrounding air, creating
+   a corona discharge.
 2. The electric field (directed radially inward from the outer collecting plates towards the central
- wire, since the wire is negative) drives negative ions towards the collecting plates.
+   wire, since the wire is negative) drives negative ions towards the collecting plates.
 3. Particulate matter in the gas stream collides with these ions, acquires a negative charge, and is
- then attracted to the grounded collecting plates by the electric field.
+   then attracted to the grounded collecting plates by the electric field.
 4. The plates are periodically rapped (mechanically vibrated) to dislodge the collected dust into
- hoppers below for disposal or recycling.
+   hoppers below for disposal or recycling.
 
 **Efficiency.** Modern electrostatic precipitators can capture particles as small as $0.01\,\mu$M.
 The collection efficiency depends on the drift velocity of charged particles, which increases with
 Both the charge acquired by the particle and the electric field strength. The Deutsch--Anderson
 Equation relates collection efficiency $\eta$ to plate area, gas flow rate, and drift velocity.
 
-:::info
-Board Coverage AQA: Electrostatic precipitators appear as an application of electric fields
+:::info Board Coverage AQA: Electrostatic precipitators appear as an application of electric fields
 In Paper 2. Edexcel: Listed as an application in CP3. OCR (A): May appear as an unseen context
 Question in Paper 2 requiring application of field and force principles. CIE: Industrial
-Applications of electric fields are examinable in P4.
-:::
+Applications of electric fields are examinable in P4. :::
 
 ## Problem Set
 
@@ -506,7 +497,8 @@ $\tan\theta = v_y/v = 5.62 \times 10^6 / 2.0 \times 10^7 = 0.281$. $\theta = 15.
 Three equal charges of $+2.0\,\mu$C are placed at the corners of an equilateral triangle of side
 0.10 m. Calculate the net electric field at the centre of the triangle.
 
-**Answer.** The centre is at distance $r = \frac◆LB◆0.10◆RB◆◆LB◆\sqrt{3}◆RB◆ = 0.0577$ m from each charge.
+**Answer.** The centre is at distance $r = \frac◆LB◆0.10◆RB◆◆LB◆\sqrt{3}◆RB◆ = 0.0577$ m from each
+charge.
 
 $E_{\mathrm{one}} = \frac{kQ}{r^2} = \frac◆LB◆8.99 \times 10^9 \times 2.0 \times 10^{-6}◆RB◆◆LB◆0.00333◆RB◆ = 5.40 \times 10^6$
 N C$^{-1}$.
@@ -542,11 +534,11 @@ Potential at the surface when the dome carries a charge of $1.0\,\mu$C. At what 
 Discharge occur if the breakdown field of air is $3.0 \times 10^6$ V m$^{-1}$?
 
 **Answer.**
-$E = \frac{kQ}{r^2} = \frac◆LB◆8.99 \times 10^9 \times 1.0 \times 10^{-6}◆RB◆◆LB◆0.090◆RB◆ = 9.99 \times 10^4$ V
-M$^{-1}$.
+$E = \frac{kQ}{r^2} = \frac◆LB◆8.99 \times 10^9 \times 1.0 \times 10^{-6}◆RB◆◆LB◆0.090◆RB◆ = 9.99 \times 10^4$
+V M$^{-1}$.
 
-$V = \frac{kQ}{r} = \frac◆LB◆8.99 \times 10^9 \times 1.0 \times 10^{-6}◆RB◆◆LB◆0.30◆RB◆ = 3.00 \times 10^4$ V
-$= 30.0$ kV.
+$V = \frac{kQ}{r} = \frac◆LB◆8.99 \times 10^9 \times 1.0 \times 10^{-6}◆RB◆◆LB◆0.30◆RB◆ = 3.00 \times 10^4$
+V $= 30.0$ kV.
 
 For breakdown:
 $V_{\mathrm{breakdown}} = E_{\mathrm{breakdown}} \times r = 3.0 \times 10^6 \times 0.30 = 9.0 \times 10^5$
@@ -594,8 +586,8 @@ Take? (Assume uniform field and negligible air resistance.)
 $a = F/m = 1.0 \times 10^{-8} / 1.0 \times 10^{-12} = 1.0 \times 10^4$ m s$^{-2}$.
 
 $s = \frac{1}{2}at^2$So
-$t = \sqrt{2s/a} = \sqrt◆LB◆2 \times 0.50 / 1.0 \times 10^4◆RB◆ = \sqrt◆LB◆1.0 \times 10^{-4}◆RB◆ = 0.010$ s
-$= 10$ ms.
+$t = \sqrt{2s/a} = \sqrt◆LB◆2 \times 0.50 / 1.0 \times 10^4◆RB◆ = \sqrt◆LB◆1.0 \times 10^{-4}◆RB◆ = 0.010$
+s $= 10$ ms.
 
 <b>If you get this wrong, revise:</b>
 [Charged Particle Motion in a Uniform Electric Field](#5-charged-particle-motion-in-a-uniform-electric-field),
@@ -648,7 +640,8 @@ N.
 $F_g = \frac{Gm_pm_e}{r^2} = \frac◆LB◆6.67 \times 10^{-11} \times 1.67 \times 10^{-27} \times 9.11 \times 10^{-31}◆RB◆◆LB◆(5.29 \times 10^{-11})^2◆RB◆ = \frac◆LB◆1.01 \times 10^{-67}◆RB◆◆LB◆2.80 \times 10^{-21}◆RB◆ = 3.61 \times 10^{-47}$
 N.
 
-Ratio: $\frac{F_e}{F_g} = \frac◆LB◆8.22 \times 10^{-8}◆RB◆◆LB◆3.61 \times 10^{-47}◆RB◆ = 2.28 \times 10^{39}$.
+Ratio:
+$\frac{F_e}{F_g} = \frac◆LB◆8.22 \times 10^{-8}◆RB◆◆LB◆3.61 \times 10^{-47}◆RB◆ = 2.28 \times 10^{39}$.
 
 The electrostatic force is $\sim 10^{39}$ times stronger than gravity. This enormous ratio explains
 Why atomic and molecular physics are governed entirely by electromagnetic forces, with gravity only
@@ -666,44 +659,44 @@ Becoming significant at macroscopic scales where charges cancel almost perfectly
 - Electric fields are assessed in Paper 2 (Sections 6.1--6.2).
 - Coulomb's law and the inverse square law formula are provided on the data sheet.
 - Required practical 10 investigates electric fields using conducting paper (mapping equipotentials
- and field lines).
+  and field lines).
 - The comparison with gravitational fields is a common synoptic link, particularly in multi-mark
- questions.
+  questions.
 - Graphical methods for determining energy stored (area under $V$--$Q$ curve) are frequently
- examined.
+  examined.
 
 ### Edexcel (9PH0)
 
 - Electric fields are covered in Core Practical 3 (CP3) and Topic 11.
 - Edexcel places emphasis on practical applications and numerical problem-solving using the formula
- booklet.
+  booklet.
 - The energy stored in capacitors is covered in Topic 11 alongside charging and discharging through
- resistors.
+  resistors.
 - Deflection of charged particles (the "electron gun" and CRT context) is a recurring exam theme.
 - Questions often require identifying the correct equation from the formula sheet for multi-step
- calculations.
+  calculations.
 
 ### OCR (A) (H556)
 
 - Electric fields appear in Module 6 (Sections 6.1 and 6.3).
 - OCR commonly tests full derivations from first principles (e.g., deriving $E = -dV/dr$ or the
- potential of a point charge from Coulomb's law).
+  potential of a point charge from Coulomb's law).
 - The $V$--$Q$ graph area-under-curve argument for energy is a staple of OCR marking schemes.
 - Gravitational--electrostatic comparison questions are a hallmark of OCR synoptic assessment.
 - Multi-part questions often begin with a recall/derivation and build to an application or
- calculation.
+  calculation.
 
 ### CIE (9702)
 
 - Electric fields are in Paper 4 (A2), Chapters 21--22 of the coursebook.
 - CIE requires the most mathematical rigour: full derivations from Coulomb's law to potential and
- field strength are expected.
+  field strength are expected.
 - CIE commonly combines electric fields with mechanics (projectile motion of charged particles in
- fields).
+  fields).
 - Permittivity calculations and relative permittivity ($\varepsilon_r$) of dielectric materials are
- explicitly examinable.
-- Numerical answers are given to 2 or 3 significant figures, matching the precision of the
- data provided.
+  explicitly examinable.
+- Numerical answers are given to 2 or 3 significant figures, matching the precision of the data
+  provided.
 
 :::
 
@@ -714,29 +707,40 @@ Becoming significant at macroscopic scales where charges cancel almost perfectly
 :::
 
 :::
-
 
 ---
 
-:::tip
-Diagnostic Test
-Ready to test your understanding of **Electric Fields**? The [diagnostic test](/docs/alevel/physics/diagnostics/diag-electric-fields) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
+:::tip Diagnostic Test Ready to test your understanding of **Electric Fields**? The
+[diagnostic test](/docs/alevel/physics/diagnostics/diag-electric-fields) contains the hardest
+questions within the A-Level specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Electric Fields with other physics topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Electric
+Fields with other physics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on
+self-marking and building a personal test matrix. :::
 
-:::danger
-Common Pitfalls
+:::danger Common Pitfalls
 
-- **Confusing electric field strength E with electric potential V:** Electric field strength E is the FORCE per unit charge (a vector, measured in V/m or N/C). Electric potential V is the ENERGY per unit charge (a scalar, measured in volts). They are related by E = -dV/dr, but they are fundamentally different quantities.
+- **Confusing electric field strength E with electric potential V:** Electric field strength E is
+  the FORCE per unit charge (a vector, measured in V/m or N/C). Electric potential V is the ENERGY
+  per unit charge (a scalar, measured in volts). They are related by E = -dV/dr, but they are
+  fundamentally different quantities.
 
-- **Forgetting that electric field lines point from positive to negative:** Field lines show the direction of force on a POSITIVE test charge. If you place a negative charge in the field, the force acts in the OPPOSITE direction to the field lines. Students often draw force arrows in the wrong direction for negative charges.
+- **Forgetting that electric field lines point from positive to negative:** Field lines show the
+  direction of force on a POSITIVE test charge. If you place a negative charge in the field, the
+  force acts in the OPPOSITE direction to the field lines. Students often draw force arrows in the
+  wrong direction for negative charges.
 
-- **Not distinguishing between uniform and radial fields:** For a parallel plate capacitor, E is uniform (constant everywhere between the plates) and V varies linearly with distance. For a point charge, E follows an inverse square law and V follows an inverse relationship (V proportional to 1/r). Using the wrong field model leads to incorrect answers.
+- **Not distinguishing between uniform and radial fields:** For a parallel plate capacitor, E is
+  uniform (constant everywhere between the plates) and V varies linearly with distance. For a point
+  charge, E follows an inverse square law and V follows an inverse relationship (V proportional to
+  1/r). Using the wrong field model leads to incorrect answers.
 
-- **Assuming work done is always positive when moving a charge:** Work done by the electric field is positive when a positive charge moves in the direction of the field (from high to low potential). Moving a charge AGAINST the field requires external work and the work done by the field is negative. Always consider the sign of the charge and the direction of movement.
+- **Assuming work done is always positive when moving a charge:** Work done by the electric field is
+  positive when a positive charge moves in the direction of the field (from high to low potential).
+  Moving a charge AGAINST the field requires external work and the work done by the field is
+  negative. Always consider the sign of the charge and the direction of movement.
 
 :::
 

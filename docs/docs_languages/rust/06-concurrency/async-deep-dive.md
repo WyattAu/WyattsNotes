@@ -1,9 +1,12 @@
 ---
 id: async-deep-dive
 title: Async Deep Dive
-description: "Async Deep Dive — The Future Trait; `Context` and `Waker`; Polling Model; How `async fn` Desugars with worked examples and exam-style questions."
+description:
+  'Async Deep Dive — The Future Trait; `Context` and `Waker`; Polling Model; How `async fn` Desugars
+  with worked examples and exam-style questions.'
 slug: async-deep-dive
 ---
+
 ## The Future Trait
 
 The `Future` trait is the foundation of async programming in Rust. It represents a value that may
@@ -28,8 +31,8 @@ Knows to poll it again when progress can be made.
 
 ### `Context` and `Waker`
 
-`Context` provides access to the `Waker`Which is used to notify the executor that a future should
-Be polled again:
+`Context` provides access to the `Waker`Which is used to notify the executor that a future should Be
+polled again:
 
 ```rust
 pub struct Context<'a> {
@@ -42,9 +45,9 @@ impl Waker {
 }
 ```
 
-When a future returns `Pending`The executor records that the future is waiting. When the
-Underlying I/O operation completes (e.g., a socket becomes readable), the reactor calls
-`waker.wake()`Which schedules the future for re-polling.
+When a future returns `Pending`The executor records that the future is waiting. When the Underlying
+I/O operation completes (e.g., a socket becomes readable), the reactor calls `waker.wake()`Which
+schedules the future for re-polling.
 
 ### Polling Model
 
@@ -173,13 +176,13 @@ impl SelfReferential {
 
 ### `Pin<P>` API
 
-| Method | Description |
+| Method         | Description                                            |
 | -------------- | ------------------------------------------------------ |
-| `new(pointer)` | Creates a `Pin` from a pointer (requires `Unpin`) |
-| `as_ref()` | Returns `Pin<&T>` |
-| `as_mut()` | Returns `Pin<&mut T>` (requires `Unpin`) |
-| `get_ref()` | Returns `&T` |
-| `get_mut()` | Returns `&mut T` (requires `Unpin`) |
+| `new(pointer)` | Creates a `Pin` from a pointer (requires `Unpin`)      |
+| `as_ref()`     | Returns `Pin<&T>`                                      |
+| `as_mut()`     | Returns `Pin<&mut T>` (requires `Unpin`)               |
+| `get_ref()`    | Returns `&T`                                           |
+| `get_mut()`    | Returns `&mut T` (requires `Unpin`)                    |
 | `into_inner()` | Unwraps and returns the inner value (requires `Unpin`) |
 
 ### `Unpin`
@@ -290,12 +293,12 @@ Control at `.await` points.
 
 Tokio's reactor maps to the OS's native async I/O mechanism:
 
-| Platform | Mechanism | Description |
+| Platform | Mechanism | Description                             |
 | -------- | --------- | --------------------------------------- |
-| Linux | `epoll` | Event notification for file descriptors |
-| macOS | `kqueue` | Event notification for file descriptors |
-| Windows | IOCP | I/O Completion Ports |
-| FreeBSD | `kqueue` | Event notification for file descriptors |
+| Linux    | `epoll`   | Event notification for file descriptors |
+| macOS    | `kqueue`  | Event notification for file descriptors |
+| Windows  | IOCP      | I/O Completion Ports                    |
+| FreeBSD  | `kqueue`  | Event notification for file descriptors |
 
 The reactor registers file descriptors with the OS and receives notifications when they become
 Readable, writable, or error. When a notification arrives, the reactor wakes the corresponding
@@ -390,7 +393,7 @@ Dropping it at any await point leaves the system in a consistent state:
 
 - **Cancellation-safe:** Reading from a channel, accepting a TCP connection
 - **Not cancellation-safe:** Writing to a channel (message may be partially sent), holding a lock
- across await points
+  across await points
 
 The tokio documentation marks each function with its cancellation safety category.
 
@@ -615,18 +618,18 @@ Common non-`Send` types:
 ## Common Pitfalls
 
 1. **Blocking the async executor.** Calling `std::thread::sleep``std::fs::read_to_string`Or any
- blocking operation inside an async task blocks the entire OS thread. Use `tokio::time::sleep`
- `tokio::fs`Or `tokio::task::spawn_blocking`.
+   blocking operation inside an async task blocks the entire OS thread. Use `tokio::time::sleep`
+   `tokio::fs`Or `tokio::task::spawn_blocking`.
 
 2. **Holding locks across `.await`.** Holding a `std::sync::Mutex` across an `.await` blocks the
- thread even while the future is suspended. Use `tokio::sync::Mutex` for async contexts, or drop
- the lock before awaiting.
+   thread even while the future is suspended. Use `tokio::sync::Mutex` for async contexts, or drop
+   the lock before awaiting.
 
 3. **`select!` dropping futures.** When `select!` completes, all non-selected branches are dropped.
- If you need to retry a branch, restructure your code to loop and recreate the future.
+   If you need to retry a branch, restructure your code to loop and recreate the future.
 
 4. **Async recursion without `Box::pin`.** Async functions that call themselves create
- infinitely-sized futures. Use `Box::pin` to break the cycle:
+   infinitely-sized futures. Use `Box::pin` to break the cycle:
 
    ```rust
    fn read_frames(stream: &mut TcpStream) -> Pin<Box<dyn Future<Output = Result<()>> + Send + '_>> {
@@ -637,26 +640,26 @@ Common non-`Send` types:
    ```
 
 5. **Not using `spawn_blocking` for CPU-intensive work.** CPU-bound work (encryption, compression,
- parsing) should run on a dedicated blocking thread pool, not on the async executor.
+   parsing) should run on a dedicated blocking thread pool, not on the async executor.
 
 6. **Ignoring `JoinHandle` errors.** If a spawned task panics, `handle.await` returns `Err`. Always
- handle the error or use a supervision mechanism.
+   handle the error or use a supervision mechanism.
 
 7. **`tokio::sync::Mutex` vs `std::sync::Mutex`.** `tokio::sync::Mutex` is designed for async
- contexts — its `lock()` method returns a future. `std::sync::Mutex` blocks the thread. Use
- `tokio::sync::Mutex` when the critical section contains `.await`And `std::sync::Mutex` when the
- critical section is short and synchronous.
+   contexts — its `lock()` method returns a future. `std::sync::Mutex` blocks the thread. Use
+   `tokio::sync::Mutex` when the critical section contains `.await`And `std::sync::Mutex` when the
+   critical section is short and synchronous.
 
 8. **Forgetting `move` in spawned tasks.** `tokio::spawn(async { ... })` captures variables by
- reference by default. If the captured variable's lifetime is shorter than the task, you get a
- compile error. Use `tokio::spawn(async move { ... })` to transfer ownership.
+   reference by default. If the captured variable's lifetime is shorter than the task, you get a
+   compile error. Use `tokio::spawn(async move { ... })` to transfer ownership.
 
 9. **Task starvation.** A task that never yields (no `.await` in a loop) prevents other tasks on the
- same worker thread from running. Insert `.await` points in long-running loops using
- `tokio::task::yield_now().await`.
+   same worker thread from running. Insert `.await` points in long-running loops using
+   `tokio::task::yield_now().await`.
 
 10. **Async testing.** Use `#[tokio::test]` instead of `#[test]` for async test functions. Use
- `#[tokio::test(flavor = "multi_thread")]` for tests that need multi-threaded runtime.
+    `#[tokio::test(flavor = "multi_thread")]` for tests that need multi-threaded runtime.
 
 ## Async Concept Map
 

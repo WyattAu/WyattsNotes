@@ -1,8 +1,11 @@
 ---
 title: Filter-Repo (History Rewriting)
-description: "Filter-Repo (History Rewriting) — What filter-repo Is; Why filter-branch Was Problematic. with additional techniques and methods."
+description:
+  'Filter-Repo (History Rewriting) — What filter-repo Is; Why filter-branch Was Problematic. with
+  additional techniques and methods.'
 slug: filter-repo
 ---
+
 ## What filter-repo Is
 
 `git-filter-repo` is a Python-based tool for rewriting Git repository history. It is the modern,
@@ -15,15 +18,15 @@ Fundamental design flaws of `filter-branch`.
 `git filter-branch` suffered from several architectural issues that made it dangerous in practice:
 
 - **Slow**: Rewrote every commit sequentially using shell commands, making it unusably slow on large
- repositories.
+  repositories.
 - **Did not clean up properly**: Left behind `.git/refs/original/` backup refs and failed to expire
- reflogs, meaning rewritten objects persisted and `git gc` would not reclaim disk space.
+  reflogs, meaning rewritten objects persisted and `git gc` would not reclaim disk space.
 - **No safety checks**: Could operate on a repository with a dirty working tree, leading to data
- loss.
+  loss.
 - **State leakage**: Used shell environment variables for inter-process communication, which was
- fragile and could be poisoned by the user's shell configuration.
+  fragile and could be poisoned by the user's shell configuration.
 - **No rename detection**: Could not track file renames, so rewriting a file's path would break
- history.
+  history.
 
 `git-filter-repo` fixes all of these. It operates directly on Git's fast-import/fast-export format
 (bypassing the object database entirely during rewriting), automatically cleans up refs and reflogs,
@@ -97,18 +100,18 @@ $ which git-filter-repo
 
 ### Operation Reference Table
 
-| Operation | Command | Effect |
+| Operation                        | Command                                                      | Effect                                                                 |
 | -------------------------------- | ------------------------------------------------------------ | ---------------------------------------------------------------------- |
-| Remove a file from all history | `git filter-repo --path path/to/file --invert-paths` | Deletes the file and all commits that only touched that file |
-| Keep only specific files | `git filter-repo --path path/to/keep --path another/file` | Removes everything except the specified paths |
-| Extract subdirectory as new repo | `git filter-repo --subdirectory-filter path/` | Rewrites history as if the repo had always been just that subdirectory |
-| Rewrite author name/email | `git filter-repo --mailmap .mailmap` | Replaces author/committer names and emails based on a mailmap file |
-| Replace text in all files | `git filter-repo --replace-text expressions.txt` | Performs string replacements across all blobs in history |
-| Remove large blobs | `git filter-repo --strip-blobs-bigger-than 10M` | Removes any blob larger than the specified size |
-| Remove blobs by name | `git filter-repo --strip-blobs-with-ids file.txt` | Removes specific blobs listed in a file (one SHA per line) |
-| Replace blob content | `git filter-repo --blob-callback 'return blob.replace(...)'` | Python callback for arbitrary blob modifications |
-| Rename files | `git filter-repo --path-rename old/path:new/path` | Renames files/directories across all history |
-| Add a prefix to all paths | `git filter-repo --prefix new-prefix/` | Prepends a directory prefix to all file paths |
+| Remove a file from all history   | `git filter-repo --path path/to/file --invert-paths`         | Deletes the file and all commits that only touched that file           |
+| Keep only specific files         | `git filter-repo --path path/to/keep --path another/file`    | Removes everything except the specified paths                          |
+| Extract subdirectory as new repo | `git filter-repo --subdirectory-filter path/`                | Rewrites history as if the repo had always been just that subdirectory |
+| Rewrite author name/email        | `git filter-repo --mailmap .mailmap`                         | Replaces author/committer names and emails based on a mailmap file     |
+| Replace text in all files        | `git filter-repo --replace-text expressions.txt`             | Performs string replacements across all blobs in history               |
+| Remove large blobs               | `git filter-repo --strip-blobs-bigger-than 10M`              | Removes any blob larger than the specified size                        |
+| Remove blobs by name             | `git filter-repo --strip-blobs-with-ids file.txt`            | Removes specific blobs listed in a file (one SHA per line)             |
+| Replace blob content             | `git filter-repo --blob-callback 'return blob.replace(...)'` | Python callback for arbitrary blob modifications                       |
+| Rename files                     | `git filter-repo --path-rename old/path:new/path`            | Renames files/directories across all history                           |
+| Add a prefix to all paths        | `git filter-repo --prefix new-prefix/`                       | Prepends a directory prefix to all file paths                          |
 
 ### Removing a File from All History
 
@@ -127,8 +130,8 @@ The `--invert-paths` flag inverts the selection: `--path X --invert-paths` means
 Except X." Without `--invert-paths``--path X` means "keep only X."
 
 After removing files, commits that become empty (they only touched the removed files) are also
-Removed. This is the desired behavior, but it can be surprising if you expected those
-Commits to remain.
+Removed. This is the desired behavior, but it can be surprising if you expected those Commits to
+remain.
 
 ### Extracting a Subdirectory as a New Repository
 
@@ -291,29 +294,29 @@ $ git filter-repo --replace-text expressions.txt
 
 ### Feature Comparison
 
-| Feature | `filter-branch` | `filter-repo` |
+| Feature                    | `filter-branch`                          | `filter-repo`                                 |
 | -------------------------- | ---------------------------------------- | --------------------------------------------- |
-| Speed | Slow (shell-based, sequential) | Fast (Python, streaming via fast-export) |
-| Safety | Runs on dirty working trees | Refuses to run unless working tree is clean |
-| Cleanup | Leaves `.git/refs/original/` backup refs | Automatically removes backup refs and reflogs |
-| Rename detection | None | Full rename detection support |
-| Blob callback | Limited (shell commands) | Full Python callback API |
-| Dry run | Not supported | `--dry-run` flag |
-| Progress reporting | Minimal | Detailed progress with `--force` |
-| Large repo support | Often runs out of memory or time | Handles repos with millions of commits |
-| Maintenance status | Deprecated since Git 2.24 | Actively maintained |
-| Repository state after run | Dirty (needs manual cleanup) | Clean (fully gc'd) |
+| Speed                      | Slow (shell-based, sequential)           | Fast (Python, streaming via fast-export)      |
+| Safety                     | Runs on dirty working trees              | Refuses to run unless working tree is clean   |
+| Cleanup                    | Leaves `.git/refs/original/` backup refs | Automatically removes backup refs and reflogs |
+| Rename detection           | None                                     | Full rename detection support                 |
+| Blob callback              | Limited (shell commands)                 | Full Python callback API                      |
+| Dry run                    | Not supported                            | `--dry-run` flag                              |
+| Progress reporting         | Minimal                                  | Detailed progress with `--force`              |
+| Large repo support         | Often runs out of memory or time         | Handles repos with millions of commits        |
+| Maintenance status         | Deprecated since Git 2.24                | Actively maintained                           |
+| Repository state after run | Dirty (needs manual cleanup)             | Clean (fully gc'd)                            |
 
 ### Performance Comparison
 
 On a repository with 50,000 commits and 10,000 files:
 
-| Operation | `filter-branch` | `filter-repo` |
+| Operation            | `filter-branch` | `filter-repo` |
 | -------------------- | --------------- | ------------- |
-| Remove a file | 45 minutes | 2 minutes |
-| Rewrite author info | 30 minutes | 90 seconds |
-| Remove large blobs | 60 minutes | 3 minutes |
-| Extract subdirectory | 50 minutes | 2.5 minutes |
+| Remove a file        | 45 minutes      | 2 minutes     |
+| Rewrite author info  | 30 minutes      | 90 seconds    |
+| Remove large blobs   | 60 minutes      | 3 minutes     |
+| Extract subdirectory | 50 minutes      | 2.5 minutes   |
 
 These numbers are approximate and depend on hardware, but the order-of-magnitude difference is
 Consistent. `filter-repo` is 15-30x faster because it avoids creating intermediate Git objects — it
@@ -547,8 +550,8 @@ $ git log --format='%an <%ae>' | sort -u
 ### All Commit SHAs Change
 
 This is the fundamental consequence of history rewriting. Every commit that was modified (which is
- all of them, since changing a file in any commit changes its tree hash, which changes its
-Commit hash, which cascades to all descendant commits) gets a new SHA.
+all of them, since changing a file in any commit changes its tree hash, which changes its Commit
+hash, which cascades to all descendant commits) gets a new SHA.
 
 ```
 Before:
@@ -617,8 +620,8 @@ $ git verify-commit HEAD
 error: no signature found
 ```
 
-If `commit.gpgsign = true`You can re-sign all commits during the rewrite using a callback, but
-This is complex and not recommended for most use cases.
+If `commit.gpgsign = true`You can re-sign all commits during the rewrite using a callback, but This
+is complex and not recommended for most use cases.
 
 ### CI/CD Build Caches
 

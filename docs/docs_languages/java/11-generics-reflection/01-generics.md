@@ -1,6 +1,8 @@
 ---
 title: Generics and Type Erasure
-description: "Generics and Type Erasure — Why Generics; Before Java 5: Raw Types and Casting; Generic Classes, Interfaces, and Methods; Generic Classes."
+description:
+  'Generics and Type Erasure — Why Generics; Before Java 5: Raw Types and Casting; Generic Classes,
+  Interfaces, and Methods; Generic Classes.'
 date: 2026-04-04T00:00:00.000Z
 tags:
   - Java
@@ -8,6 +10,7 @@ categories:
   - Java
 slug: generics-type-erasure
 ---
+
 ## Why Generics
 
 ### Before Java 5: Raw Types and Casting
@@ -76,14 +79,14 @@ Box<Integer> intBox = new Box<>(42);
 
 Type parameters are single uppercase letters by convention:
 
-| Parameter | Meaning |
+| Parameter | Meaning               |
 | --------- | --------------------- |
-| `T` | Type |
-| `E` | Element (collections) |
-| `K` | Key |
-| `V` | Value |
-| `S``U` | Second, third types |
-| `R` | Return type |
+| `T`       | Type                  |
+| `E`       | Element (collections) |
+| `K`       | Key                   |
+| `V`       | Value                 |
+| `S``U`    | Second, third types   |
+| `R`       | Return type           |
 
 Multiple type parameters are comma-separated. Convention uses `K` for key, `V` for value, `E` for
 Element, `S`/`U` for secondary types.
@@ -283,8 +286,8 @@ void sum(List<? extends Number> numbers) {
 }
 ```
 
-The key insight: `List<? extends Number>` could be `List<Integer>``List<Double>`Or
-`List<Number>`. The compiler cannot safely allow an `add` because the actual list type is unknown.
+The key insight: `List<? extends Number>` could be `List<Integer>``List<Double>`Or `List<Number>`.
+The compiler cannot safely allow an `add` because the actual list type is unknown.
 
 ### Lower-Bounded Wildcard (`? super T`)
 
@@ -328,12 +331,12 @@ Collections.copy(dest, src); // dest is ? super Integer, src is ? extends Intege
 
 ### PECS Decision Table
 
-| Scenario | Use | Can read as | Can write |
+| Scenario              | Use               | Can read as | Can write               |
 | --------------------- | ----------------- | ----------- | ----------------------- |
-| Read-only (producer) | `? extends T` | `T` | nothing (except `null`) |
-| Write-only (consumer) | `? super T` | `Object` | `T` and subtypes of `T` |
-| Read and write | `T` (no wildcard) | `T` | `T` |
-| Don't care | `?` | `Object` | nothing (except `null`) |
+| Read-only (producer)  | `? extends T`     | `T`         | nothing (except `null`) |
+| Write-only (consumer) | `? super T`       | `Object`    | `T` and subtypes of `T` |
+| Read and write        | `T` (no wildcard) | `T`         | `T`                     |
+| Don't care            | `?`               | `Object`    | nothing (except `null`) |
 
 ### Wildcard Capture
 
@@ -429,11 +432,11 @@ This is the only runtime mechanism that enforces generic type safety.
 Type erasure was a deliberate design decision to achieve **backwards compatibility**. The goals:
 
 1. **Migration compatibility**: Existing pre-generic code (raw types) must compile and run alongside
- generic code.
+   generic code.
 2. **Binary compatibility**: Libraries compiled without generics must work with generic code without
- recompilation. The JVM class file format did not change for generics.
+   recompilation. The JVM class file format did not change for generics.
 3. **No runtime performance cost**: No generic-specific bytecodes. The JIT compiler optimizes away
- the inserted casts.
+   the inserted casts.
 
 C# chose the opposite approach (reified generics), which provides richer runtime type information
 But broke backwards compatibility.
@@ -602,7 +605,7 @@ A **reified** type is one that retains its full type information at runtime. In 
 - Primitive types are reified: `int.class``double.class` exist at runtime.
 - Regular class types are reified: `String.class``List.class` exist at runtime.
 - **Generic type parameters are NOT reified**: `List<String>.class` does not exist. At runtime,
- `List<String>` and `List<Integer>` are both just `List`.
+  `List<String>` and `List<Integer>` are both just `List`.
 
 This is the direct consequence of type erasure. The JVM has no way to distinguish between
 `List<String>` and `List<Integer>` at runtime.

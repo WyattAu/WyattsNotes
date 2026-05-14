@@ -1,6 +1,8 @@
 ---
 title: Kinematics
-description: "A-Level Physics notes on Kinematics: 1. Fundamental Definitions; 2. Derivation of the SUVAT Equations; Equation 1: $v = u + at$."
+description:
+  'A-Level Physics notes on Kinematics: 1. Fundamental Definitions; 2. Derivation of the SUVAT
+  Equations; Equation 1: $v = u + at$.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Physics
@@ -9,11 +11,10 @@ categories:
   - Physics
 slug: kinematics
 ---
+
 ## Kinematics
 
-:::info
-Board Coverage AQA Paper 1 | Edexcel CP1, CP2 | OCR (A) Paper 1 | CIE P2
-:::
+:::info Board Coverage AQA Paper 1 | Edexcel CP1, CP2 | OCR (A) Paper 1 | CIE P2 :::
 
 ## 1. Fundamental Definitions
 
@@ -103,17 +104,16 @@ $$s = (v - at)t + \frac{1}{2}at^2 = vt - at^2 + \frac{1}{2}at^2$$
 
 $$\boxed{s = vt - \frac{1}{2}at^2}$$
 
-:::tip
-Exam Technique To decide which SUVAT equation to use, identify which variable is **not**
+:::tip Exam Technique To decide which SUVAT equation to use, identify which variable is **not**
 Given and **not** asked for, then use the equation that doesn't contain it.
 
-| Missing variable | Use |
+| Missing variable | Use                        |
 | ---------------- | -------------------------- |
-| $s$ | $v = u + at$ |
-| $v$ | $s = ut + \frac{1}{2}at^2$ |
-| $u$ | $s = vt - \frac{1}{2}at^2$ |
-| $a$ | $s = \frac{1}{2}(u + v)t$ |
-| $t$ | $v^2 = u^2 + 2as$ |
+| $s$              | $v = u + at$               |
+| $v$              | $s = ut + \frac{1}{2}at^2$ |
+| $u$              | $s = vt - \frac{1}{2}at^2$ |
+| $a$              | $s = \frac{1}{2}(u + v)t$  |
+| $t$              | $v^2 = u^2 + 2as$          |
 
 :::
 
@@ -134,30 +134,26 @@ At every instant:
 
 - The **gradient** of the $s$-$t$ curve at any point gives the instantaneous velocity at that time.
 - The **gradient** of the $v$-$t$ curve at any point gives the instantaneous acceleration at that
- time.
+  time.
 - The **area under** the $v$-$t$ curve between two times gives the displacement over that interval.
 
 When the $v$-$t$ graph is curved, the area cannot be found using the trapezium rule for a single
 Straight line. Two approaches are available:
 
 1. **Counting squares** -- estimate the area by counting grid squares on the graph paper, treating
- partial squares by eye.
+   partial squares by eye.
 2. **Integration** -- if $v(t)$ is given algebraically, compute $\int_{t_1}^{t_2} v(t)\,dt$ exactly.
 
-:::tip
-Exam Technique When asked to find the distance travelled from a curved $v$-$t$ graph, check
+:::tip Exam Technique When asked to find the distance travelled from a curved $v$-$t$ graph, check
 Whether the curve crosses the time axis. If it does, the velocity changes sign and you must split
 The calculation: the **area above** the axis is positive displacement, the **area below** is
 Negative displacement. The total distance is the sum of absolute areas; the net displacement is
-Their algebraic sum.
-:::
+Their algebraic sum. :::
 
-:::warning
-Common Pitfall Students often draw a tangent to a curve incorrectly by placing the ruler
+:::warning Common Pitfall Students often draw a tangent to a curve incorrectly by placing the ruler
 Away from the point of interest. Always place the ruler so it just touches the curve **at the
 Point** where you need the gradient, then extend it to read two clear coordinates for
-$\Delta y / \Delta x$.
-:::
+$\Delta y / \Delta x$. :::
 
 <details>
 <summary>Example: Finding displacement from a curved v-t graph</summary>
@@ -179,10 +175,7 @@ $$g \approx 9.81 \mathrm{ m s}^{-2}$$
 This was established by Galileo's experiments and is a consequence of the equivalence principle
 (mass cancels in $F = ma = mg$).
 
-:::info
-Info
-Problems. Always use the value specified in the question.
-:::
+:::info Info Problems. Always use the value specified in the question. :::
 
 ## 5. Projectile Motion
 
@@ -273,13 +266,13 @@ Force depends on the object's speed and shape, and increases with speed.
 **Effect on projectile trajectory.** When drag is included:
 
 - The **horizontal velocity** is no longer constant -- it decreases throughout the flight because
- drag has a horizontal component opposing the motion.
+  drag has a horizontal component opposing the motion.
 - On the way **up**, both gravity and the vertical component of drag act downward, so the vertical
- deceleration is **greater than** $g$.
+  deceleration is **greater than** $g$.
 - On the way **down**, gravity acts downward but drag acts upward (opposing the downward velocity),
- so the vertical acceleration is **less than** $g$.
+  so the vertical acceleration is **less than** $g$.
 - The trajectory is **no longer parabolic**. The descent is steeper than the ascent, the range is
- shorter, and the maximum height is lower compared to the idealised case.
+  shorter, and the maximum height is lower compared to the idealised case.
 
 **Terminal velocity.** For an object falling vertically under gravity with air resistance, the drag
 Force increases with speed. Eventually, the drag force equals the weight of the object:
@@ -294,24 +287,18 @@ $$\boxed{v_T \mathrm{ is reached when } F_{\mathrm{drag}} = mg \implies a = 0}$$
 The $v$-$t$ graph for a falling object reaching terminal velocity shows the velocity increasing with
 A decreasing gradient (decreasing acceleration) until it asymptotically approaches $v_T$.
 
-:::info
-Board Coverage AQA Paper 1 | Edexcel CP2 | OCR (A) Paper 1 | CIE P2
-:::
+:::info Board Coverage AQA Paper 1 | Edexcel CP2 | OCR (A) Paper 1 | CIE P2 :::
 
-:::warning
-Common Pitfall Terminal velocity does **not** mean the object has stopped accelerating
+:::warning Common Pitfall Terminal velocity does **not** mean the object has stopped accelerating
 Because it has run out of force. The forces are balanced: weight down equals drag up. The
-Acceleration is zero because the **net** force is zero, not because no forces act.
-:::
+Acceleration is zero because the **net** force is zero, not because no forces act. :::
 
 ## 6. Non-Uniform Acceleration
 
 When acceleration is not constant, the SUVAT equations do not apply. Instead, we use calculus to
 Relate displacement, velocity, and acceleration.
 
-:::info
-Board Coverage AQA Paper 1 | Edexcel CP2 | OCR (A) Paper 1 | CIE P1, P2
-:::
+:::info Board Coverage AQA Paper 1 | Edexcel CP2 | OCR (A) Paper 1 | CIE P1, P2 :::
 
 ### The Differential Relations
 
@@ -332,18 +319,16 @@ $t$.
 
 ### Selecting the Correct Form
 
-| Given | Use |
+| Given      | Use                                                              |
 | ---------- | ---------------------------------------------------------------- |
-| $a = f(t)$ | $a = dv/dt$Integrate with respect to $t$ |
+| $a = f(t)$ | $a = dv/dt$Integrate with respect to $t$                         |
 | $a = f(v)$ | Rewrite as $dt/dv = 1/f(v)$ and integrate, or use $a = v\,dv/ds$ |
-| $a = f(s)$ | $a = v\,dv/ds$Integrate with respect to $s$ |
+| $a = f(s)$ | $a = v\,dv/ds$Integrate with respect to $s$                      |
 
-:::tip
-Exam Technique Identify what the acceleration is given as a function of -- time, velocity, or
-Displacement -- to decide which calculus method to use. If $a$ is a function of $t$Integrate
-$dv/dt$ directly. If $a$ is a function of $s$Use $a = v\,dv/ds$ and integrate with respect to $s$.
-If $a$ is a function of $v$Rewrite as $dt/dv = 1/f(v)$ and integrate to find $t(v)$Then invert
-If possible.
+:::tip Exam Technique Identify what the acceleration is given as a function of -- time, velocity, or
+Displacement -- to decide which calculus method to use. If $a$ is a function of $t$Integrate $dv/dt$
+directly. If $a$ is a function of $s$Use $a = v\,dv/ds$ and integrate with respect to $s$. If $a$ is
+a function of $v$Rewrite as $dt/dv = 1/f(v)$ and integrate to find $t(v)$Then invert If possible.
 :::
 
 ### Derivation of $v^2 = u^2 + 2as$ by Integration
@@ -387,8 +372,7 @@ $$\boxed{\mathbf{v}_{AB} = \mathbf{v}_A - \mathbf{v}_B}$$
 
 This is the velocity A appears to have when observed from B's frame of reference.
 
-:::info
-Info
+:::info Info
 
 ### Resolving into Components
 
@@ -410,17 +394,15 @@ A classic relative-velocity problem: to cross a river of width $d$ with current 
 With speed $v_b$ (relative to water) can:
 
 - **Head directly across** (perpendicular to bank). The boat is carried downstream. Time to cross:
- $t = d/v_b$. Downstream displacement: $\Delta x = v_c \cdot d/v_b$.
+  $t = d/v_b$. Downstream displacement: $\Delta x = v_c \cdot d/v_b$.
 - **Head upstream at an angle** to compensate for the current. If the boat heads at angle $\theta$
- upstream from the perpendicular, the component across the river is $v_b\cos\theta$ and the
- component against the current is $v_b\sin\theta$. For zero downstream drift:
- $v_b\sin\theta = v_c$Giving $\theta = \arcsin(v_c/v_b)$. This is only possible if $v_b > v_c$.
+  upstream from the perpendicular, the component across the river is $v_b\cos\theta$ and the
+  component against the current is $v_b\sin\theta$. For zero downstream drift:
+  $v_b\sin\theta = v_c$Giving $\theta = \arcsin(v_c/v_b)$. This is only possible if $v_b > v_c$.
 
-:::warning
-Common Pitfall The boat's speed $v_b$ is always relative to the water, not relative to
+:::warning Common Pitfall The boat's speed $v_b$ is always relative to the water, not relative to
 The ground. The ground speed is the vector sum of the boat's water-relative velocity and the current
-Velocity. Never add the magnitudes directly unless the velocities are in the same direction.
-:::
+Velocity. Never add the magnitudes directly unless the velocities are in the same direction. :::
 
 ### Relative Velocity and Closest Approach
 
@@ -592,8 +574,10 @@ Give the same range — complementary angles always do (since $\sin 2\theta = \s
 On the Moon, $g = 1.62$ m s$^{-2}$. A astronaut throws a rock with speed $12$ m s$^{-1}$ at $60^\circ$ to the horizontal. Compare the maximum height and range to what they would be on Earth.
 
 **Answer.** On the Moon:
-$H = \frac◆LB◆144 \times \sin^2 60°◆RB◆◆LB◆2 \times 1.62◆RB◆ = \frac◆LB◆144 \times 0.75◆RB◆◆LB◆3.24◆RB◆ = 33.3$ m.
-$R = \frac◆LB◆144 \times \sin 120°◆RB◆◆LB◆1.62◆RB◆ = \frac◆LB◆144 \times 0.866◆RB◆◆LB◆1.62◆RB◆ = 77.0$ m.
+$H = \frac◆LB◆144 \times \sin^2 60°◆RB◆◆LB◆2 \times 1.62◆RB◆ = \frac◆LB◆144 \times 0.75◆RB◆◆LB◆3.24◆RB◆ = 33.3$
+m.
+$R = \frac◆LB◆144 \times \sin 120°◆RB◆◆LB◆1.62◆RB◆ = \frac◆LB◆144 \times 0.866◆RB◆◆LB◆1.62◆RB◆ = 77.0$
+m.
 
 On Earth: $H = \frac{108}{19.62} = 5.51$ m. $R = \frac{124.7}{9.81} = 12.7$ m.
 
@@ -664,8 +648,8 @@ The starting point?
 
 **Answer.** (a) Time = $80/5.0 = 16$ s. Downstream displacement = $2.5 \times 16 = 40$ m.
 
-(b) For zero downstream drift: $\sin\theta = 2.5/5.0 = 0.5$Giving $\theta = 30^\circ$ upstream
-From the perpendicular.
+(b) For zero downstream drift: $\sin\theta = 2.5/5.0 = 0.5$Giving $\theta = 30^\circ$ upstream From
+the perpendicular.
 
 <b>If you get this wrong, revise:</b> [Crossing a River](#crossing-a-river)
 
@@ -690,8 +674,8 @@ $\ln v = -0.5t + C$. At $t = 0$$v = 10$: $\ln 10 = C$. So $v = 10e^{-0.5t}$ m s$
 <details>
 <summary>Problem 16</summary>
 
-A particle moves with acceleration $a = 3s$ m s$^{-2}$Where $s$ is the displacement from the
-Origin. At $s = 0$The velocity is $4.0$ m s$^{-1}$. Find the velocity when $s = 2.0$ m.
+A particle moves with acceleration $a = 3s$ m s$^{-2}$Where $s$ is the displacement from the Origin.
+At $s = 0$The velocity is $4.0$ m s$^{-1}$. Find the velocity when $s = 2.0$ m.
 
 **Answer.** We are given $a = f(s)$So use $a = v\,dv/ds$:
 
@@ -725,31 +709,41 @@ $\sqrt{17.3^2 + 31.4^2} = 35.8$ m s$^{-1}$.
 
 </details>
 
-
 ---
 
-:::tip
-Tip
-Ready to test your understanding of **Kinematics**? The [diagnostic test](/docs/alevel/physics/diagnostics/diag-kinematics) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
+:::tip Tip Ready to test your understanding of **Kinematics**? The
+[diagnostic test](/docs/alevel/physics/diagnostics/diag-kinematics) contains the hardest questions
+within the A-Level specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Kinematics with other physics topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Kinematics
+with other physics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on
+self-marking and building a personal test matrix. :::
 
-:::danger
-Danger
+:::danger Danger
 
-- **Applying SUVAT equations to non-uniform acceleration:** The five SUVAT equations ONLY apply when acceleration is CONSTANT. If a question involves a changing force (e.g., a spring, air resistance), acceleration is not constant and SUVAT cannot be used. Use calculus (integration) or energy methods instead.
+- **Applying SUVAT equations to non-uniform acceleration:** The five SUVAT equations ONLY apply when
+  acceleration is CONSTANT. If a question involves a changing force (e.g., a spring, air
+  resistance), acceleration is not constant and SUVAT cannot be used. Use calculus (integration) or
+  energy methods instead.
 
-- **Confusing displacement with distance:** Displacement is a VECTOR (includes direction) and can be negative. Distance is a SCALAR and is always positive. In vertical motion, upward displacement is positive and downward is negative. A ball thrown up and caught at the same point has zero total displacement but non-zero distance travelled.
+- **Confusing displacement with distance:** Displacement is a VECTOR (includes direction) and can be
+  negative. Distance is a SCALAR and is always positive. In vertical motion, upward displacement is
+  positive and downward is negative. A ball thrown up and caught at the same point has zero total
+  displacement but non-zero distance travelled.
 
-- **Taking g as positive in both directions:** When using SUVAT with vertical motion, be consistent with sign convention. If upward is positive, then g = -9.81 m/s squared (acceleration is downward). Substituting g = +9.81 with upward-positive convention will give the wrong answer for velocity and time.
+- **Taking g as positive in both directions:** When using SUVAT with vertical motion, be consistent
+  with sign convention. If upward is positive, then g = -9.81 m/s squared (acceleration is
+  downward). Substituting g = +9.81 with upward-positive convention will give the wrong answer for
+  velocity and time.
 
-- **Forgetting that air resistance changes the motion:** In many projectile questions, air resistance is neglected. But if a question mentions air resistance, remember: the horizontal component of velocity DECREASES (it is no longer constant), the time of flight DECREASES (the object reaches a lower maximum height), and the trajectory is no longer a perfect parabola.
+- **Forgetting that air resistance changes the motion:** In many projectile questions, air
+  resistance is neglected. But if a question mentions air resistance, remember: the horizontal
+  component of velocity DECREASES (it is no longer constant), the time of flight DECREASES (the
+  object reaches a lower maximum height), and the trajectory is no longer a perfect parabola.
 
-:::
-:::
+::: :::
 
 ## Common Pitfalls
 

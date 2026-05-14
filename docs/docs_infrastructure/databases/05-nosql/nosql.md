@@ -1,7 +1,9 @@
 ---
 id: nosql
 title: NoSQL Databases
-description: "NoSQL Databases — The CAP Theorem; Why P Is Non-Negotiable; The PACELC Theorem; Consistency Models: A Spectrum with worked examples and exam-style questions."
+description:
+  'NoSQL Databases — The CAP Theorem; Why P Is Non-Negotiable; The PACELC Theorem; Consistency
+  Models: A Spectrum with worked examples and exam-style questions.'
 slug: nosql
 sidebar_position: 1
 tags:
@@ -9,6 +11,7 @@ tags:
 categories:
   - Databases
 ---
+
 ## The CAP Theorem
 
 The CAP theorem, formalised by Gilbert and Lynch in 2002 based on Brewer's 2000 conjecture, states
@@ -16,9 +19,9 @@ That a distributed data store can provide at most two of three guarantees:
 
 - **Consistency (C):** every read receives the most recent write or an error
 - **Availability (A):** every request receives a non-error response (without guarantee about which
- data version)
+  data version)
 - **Partition Tolerance (P):** the system continues to operate despite arbitrary message loss or
- delay between nodes
+  delay between nodes
 
 ### Why P Is Non-Negotiable
 
@@ -27,10 +30,10 @@ Update propagates slowly, a garbage collector pause causes a timeout, a cross-da
 Degrades. Any distributed system must tolerate partitions, which means the real choice is between
 **CP** and **AP**:
 
-| Category | Strategy | Example Systems |
+| Category | Strategy                                                       | Example Systems                                             |
 | -------- | -------------------------------------------------------------- | ----------------------------------------------------------- |
-| CP | Preserve consistency, sacrifice availability during partitions | PostgreSQL (sync replicas), HBase, Redis (with replication) |
-| AP | Preserve availability, sacrifice consistency during partitions | MongoDB (default, w:1), Cassandra, DynamoDB, CouchDB, Riak |
+| CP       | Preserve consistency, sacrifice availability during partitions | PostgreSQL (sync replicas), HBase, Redis (with replication) |
+| AP       | Preserve availability, sacrifice consistency during partitions | MongoDB (default, w:1), Cassandra, DynamoDB, CouchDB, Riak  |
 
 ### The PACELC Theorem
 
@@ -50,16 +53,16 @@ Supports tunable consistency per operation.
 
 Consistency is not binary. There is a spectrum of consistency models, from strongest to weakest:
 
-| Model | Guarantee | Examples |
+| Model              | Guarantee                                                         | Examples                               |
 | ------------------ | ----------------------------------------------------------------- | -------------------------------------- |
-| Linearizable | Operations appear to execute atomically and in real-time order | Single-node databases, ZooKeeper |
-| Sequential | Operations appear in some total order consistent with real time | Google Spanner (external consistency) |
-| Serializable | Equivalent to some serial execution of transactions | PostgreSQL SERIALIZABLE |
-| Snapshot Isolation | Each transaction reads from a consistent snapshot | PostgreSQL REPEATABLE READ |
-| Causal | Causally related operations are seen by all nodes in order | DynamoDB (with consistent reads) |
-| Read-your-writes | A reader always sees its own writes | Most systems with sticky sessions |
-| Session | Consistency within a single client session | MongoDB (read preference) |
-| Eventual | If no new writes, all reads eventually converge to the same value | Cassandra, CouchDB, DynamoDB (default) |
+| Linearizable       | Operations appear to execute atomically and in real-time order    | Single-node databases, ZooKeeper       |
+| Sequential         | Operations appear in some total order consistent with real time   | Google Spanner (external consistency)  |
+| Serializable       | Equivalent to some serial execution of transactions               | PostgreSQL SERIALIZABLE                |
+| Snapshot Isolation | Each transaction reads from a consistent snapshot                 | PostgreSQL REPEATABLE READ             |
+| Causal             | Causally related operations are seen by all nodes in order        | DynamoDB (with consistent reads)       |
+| Read-your-writes   | A reader always sees its own writes                               | Most systems with sticky sessions      |
+| Session            | Consistency within a single client session                        | MongoDB (read preference)              |
+| Eventual           | If no new writes, all reads eventually converge to the same value | Cassandra, CouchDB, DynamoDB (default) |
 
 :::warning
 
@@ -208,17 +211,17 @@ Store -- it supports a rich set of data structures and operations.
 
 #### Redis Data Structures
 
-| Structure | Commands | Use Cases |
-| ----------- | ------------------------------------------ | ------------------------------------------- |
-| Strings | `GET``SET``INCR``SETEX``GETSET` | Caching, counters, rate limiting |
-| Lists | `LPUSH``RPUSH``LPOP``RPOP``LRANGE` | Queues, stacks, recent items |
-| Sets | `SADD``SREM``SMEMBERS``SISMEMBER` | Unique collections, tagging, membership |
-| Sorted Sets | `ZADD``ZRANGE``ZRANK``ZSCORE` | Leaderboards, ranges, priority queues |
-| Hashes | `HSET``HGET``HMSET``HGETALL` | Object storage, session data |
-| Bitmaps | `SETBIT``GETBIT``BITCOUNT``BITOP` | Feature flags, analytics |
-| HyperLogLog | `PFADD``PFCOUNT``PFMERGE` | Cardinality estimation (unique visitors) |
-| Streams | `XADD``XREAD``XREADGROUP``XACK` | Event sourcing, message queues, time series |
-| Geospatial | `GEOADD``GEORADIUS``GEOSEARCH` | Location-based features |
+| Structure   | Commands                           | Use Cases                                   |
+| ----------- | ---------------------------------- | ------------------------------------------- |
+| Strings     | `GET``SET``INCR``SETEX``GETSET`    | Caching, counters, rate limiting            |
+| Lists       | `LPUSH``RPUSH``LPOP``RPOP``LRANGE` | Queues, stacks, recent items                |
+| Sets        | `SADD``SREM``SMEMBERS``SISMEMBER`  | Unique collections, tagging, membership     |
+| Sorted Sets | `ZADD``ZRANGE``ZRANK``ZSCORE`      | Leaderboards, ranges, priority queues       |
+| Hashes      | `HSET``HGET``HMSET``HGETALL`       | Object storage, session data                |
+| Bitmaps     | `SETBIT``GETBIT``BITCOUNT``BITOP`  | Feature flags, analytics                    |
+| HyperLogLog | `PFADD``PFCOUNT``PFMERGE`          | Cardinality estimation (unique visitors)    |
+| Streams     | `XADD``XREAD``XREADGROUP``XACK`    | Event sourcing, message queues, time series |
+| Geospatial  | `GEOADD``GEORADIUS``GEOSEARCH`     | Location-based features                     |
 
 #### Redis Persistence
 
@@ -235,11 +238,11 @@ appendfsync everysec   # fsync once per second (good balance)
 # appendfsync no        # let OS decide (fastest, least safe)
 ```
 
-| Mode | Pros | Cons |
+| Mode      | Pros                                                     | Cons                                  |
 | --------- | -------------------------------------------------------- | ------------------------------------- |
-| RDB | Compact files, fast restart, low overhead | Data loss between snapshots (minutes) |
-| AOF | Minimal data loss (1 second at most) | Larger files, slower restart |
-| RDB + AOF | Best of both (AOF for durability, RDB for restart speed) | More disk usage, more complexity |
+| RDB       | Compact files, fast restart, low overhead                | Data loss between snapshots (minutes) |
+| AOF       | Minimal data loss (1 second at most)                     | Larger files, slower restart          |
+| RDB + AOF | Best of both (AOF for durability, RDB for restart speed) | More disk usage, more complexity      |
 
 #### Redis Clustering
 
@@ -262,9 +265,9 @@ redis-cli --cluster create \
 :::warning
 
 Redis Cluster does **not** support multi-key operations across different hash slots. If you need to
-Atomically update `user:123:profile` and `user:123:settings`They must have the same hash tag
-Prefix (`{user:123}`). Operations like `MGET` on keys with different hash tags will fail with a
-`CROSSSLOT` error.
+Atomically update `user:123:profile` and `user:123:settings`They must have the same hash tag Prefix
+(`{user:123}`). Operations like `MGET` on keys with different hash tags will fail with a `CROSSSLOT`
+error.
 
 :::
 
@@ -326,14 +329,14 @@ Availability across multiple data centers.
 
 #### Consistency Levels
 
-| Level | Description |
+| Level          | Description                                                         |
 | -------------- | ------------------------------------------------------------------- |
-| `ONE` | Coordinator returns after one replica responds (fastest) |
-| `QUORUM` | Coordinator returns after a majority of replicas respond |
-| `ALL` | Coordinator returns after all replicas respond (slowest, strongest) |
-| `LOCAL_QUORUM` | Quorum within the local data center only |
-| `EACH_QUORUM` | Quorum in each data center (for multi-DC writes) |
-| `SERIAL` | Linearizable consistency for lightweight transactions |
+| `ONE`          | Coordinator returns after one replica responds (fastest)            |
+| `QUORUM`       | Coordinator returns after a majority of replicas respond            |
+| `ALL`          | Coordinator returns after all replicas respond (slowest, strongest) |
+| `LOCAL_QUORUM` | Quorum within the local data center only                            |
+| `EACH_QUORUM`  | Quorum in each data center (for multi-DC writes)                    |
+| `SERIAL`       | Linearizable consistency for lightweight transactions               |
 
 For reads and writes to be consistent (read-your-writes), the sum of read and write consistency
 Levels must exceed the replication factor:
@@ -653,13 +656,13 @@ stateDiagram-v2
 CRDTs are data structures designed to be replicated across multiple nodes with automatic conflict
 Resolution. They guarantee eventual consistency without requiring coordination.
 
-| CRDT Type | Example Operations | Conflict Resolution |
+| CRDT Type    | Example Operations          | Conflict Resolution                 |
 | ------------ | --------------------------- | ----------------------------------- |
-| G-Counter | Increment | Take maximum |
-| PN-Counter | Increment, Decrement | Separate positive/negative counters |
-| G-Set | Add | Union (set merge) |
-| OR-Set | Add, Remove | Observed-remove (tombstone-based) |
-| LWW-Register | Assign value with timestamp | Last-writer-wins |
+| G-Counter    | Increment                   | Take maximum                        |
+| PN-Counter   | Increment, Decrement        | Separate positive/negative counters |
+| G-Set        | Add                         | Union (set merge)                   |
+| OR-Set       | Add, Remove                 | Observed-remove (tombstone-based)   |
+| LWW-Register | Assign value with timestamp | Last-writer-wins                    |
 
 CRDTs are used in Riak, Redis CRDT module, and some edge computing frameworks. The trade-off: they
 Only support a limited set of operations (no arbitrary transactions), and some types accumulate
@@ -700,14 +703,14 @@ SSTable Level N (disk)  ← oldest, largest
 
 **LSM Tree vs B-Tree:**
 
-| Aspect | LSM Tree | B-Tree |
+| Aspect              | LSM Tree                             | B-Tree                               |
 | ------------------- | ------------------------------------ | ------------------------------------ |
-| Write throughput | Very high (sequential writes only) | Moderate (random writes for updates) |
-| Read throughput | Moderate (may check multiple levels) | High (single tree traversal) |
-| Write amplification | Low (sequential) | High (in-place update, page rewrite) |
-| Read amplification | High (multiple levels) | Low (single traversal) |
-| Space amplification | Moderate (compaction overhead) | Low to moderate (page fragmentation) |
-| Compaction | Required (background merge) | Not required (in-place updates) |
+| Write throughput    | Very high (sequential writes only)   | Moderate (random writes for updates) |
+| Read throughput     | Moderate (may check multiple levels) | High (single tree traversal)         |
+| Write amplification | Low (sequential)                     | High (in-place update, page rewrite) |
+| Read amplification  | High (multiple levels)               | Low (single traversal)               |
+| Space amplification | Moderate (compaction overhead)       | Low to moderate (page fragmentation) |
+| Compaction          | Required (background merge)          | Not required (in-place updates)      |
 
 :::info
 
@@ -741,10 +744,10 @@ Dynamo-style architecture.
 
 **Capacity modes:**
 
-| Mode | Characteristics |
+| Mode        | Characteristics                                                      |
 | ----------- | -------------------------------------------------------------------- |
 | Provisioned | Specify read/write capacity units; cheaper for predictable workloads |
-| On-Demand | Auto-scales; pay per request; more expensive for steady workloads |
+| On-Demand   | Auto-scales; pay per request; more expensive for steady workloads    |
 
 **Global Secondary Indexes (GSI):**
 
@@ -810,13 +813,13 @@ When evaluating NoSQL databases, benchmark with your actual workload, not synthe
 
 1. **Define your access patterns:** read/write ratio, query complexity, data size, concurrency
 2. **Test with realistic data:** use production data (anonymised) or generate data that matches your
- production distribution
+   production distribution
 3. **Measure what matters:** P50, P95, P99 latency; throughput at target concurrency; operational
- complexity
+   complexity
 4. **Test failure modes:** what happens when a node fails? When the network partitions? When you add
- a node?
+   a node?
 5. **Measure operational overhead:** backup/restore time, compaction impact, monitoring, upgrade
- complexity
+   complexity
 
 ```bash
 # Example: Cassandra benchmark with cassandra-stress

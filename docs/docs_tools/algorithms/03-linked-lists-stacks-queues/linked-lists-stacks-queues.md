@@ -1,9 +1,12 @@
 ---
 id: linked-lists-stacks-queues
 title: Linked Lists, Stacks, and Queues
-description: "Linked list, stack, and queue fundamentals: singly and doubly linked lists, array-based queues, insertion, deletion, reversal, and cycle detection algorithms."
+description:
+  'Linked list, stack, and queue fundamentals: singly and doubly linked lists, array-based queues,
+  insertion, deletion, reversal, and cycle detection algorithms.'
 slug: linked-lists-stacks-queues
 ---
+
 ## Singly Linked Lists
 
 A singly linked list is a sequence of nodes where each node contains a value and a reference to the
@@ -407,8 +410,8 @@ def is_valid_parentheses(s):
 **Call Stack:**
 
 Every recursive function call is pushed onto the call stack. Deep recursion can cause stack overflow
-(the call stack has limited size, 1-8 MB). Iterative solutions using an explicit stack
-Avoid this limit.
+(the call stack has limited size, 1-8 MB). Iterative solutions using an explicit stack Avoid this
+limit.
 
 ## Queues
 
@@ -559,12 +562,12 @@ class MinHeap:
             self._sift_down(i)
 ```
 
-| Operation | Binary Heap | Sorted Array | Unsorted Array |
+| Operation        | Binary Heap | Sorted Array  | Unsorted Array |
 | ---------------- | ----------- | ------------- | -------------- |
-| Insert | $O(\log n)$ | $O(n)$ | $O(1)$ |
-| Extract min | $O(\log n)$ | $O(1)$ | $O(n)$ |
-| Peek | $O(1)$ | $O(1)$ | $O(n)$ |
-| Build from array | $O(n)$ | $O(n \log n)$ | $O(1)$ |
+| Insert           | $O(\log n)$ | $O(n)$        | $O(1)$         |
+| Extract min      | $O(\log n)$ | $O(1)$        | $O(n)$         |
+| Peek             | $O(1)$      | $O(1)$        | $O(n)$         |
+| Build from array | $O(n)$      | $O(n \log n)$ | $O(1)$         |
 
 ## Monotonic Stack
 

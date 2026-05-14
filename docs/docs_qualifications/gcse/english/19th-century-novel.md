@@ -1,6 +1,8 @@
 ---
 title: The 19th-Century Novel
-description: "The 19th-Century Novel — 1.1 Realism and Its Discontents; 1.2 Romanticism vs Realism; 2. Social Context; 2.1 The Industrial Revolution."
+description:
+  'The 19th-Century Novel — 1.1 Realism and Its Discontents; 1.2 Romanticism vs Realism; 2. Social
+  Context; 2.1 The Industrial Revolution.'
 date: 2026-04-22
 tags:
   - English
@@ -9,12 +11,11 @@ categories:
   - English
 slug: 19th-century-novel
 ---
+
 ## The 19th-Century Novel
 
-:::info
-Board Coverage AQA Paper 1 Section B | Edexcel Paper 2 Component 1 | OCR Paper 2 Section A |
-WJEC/Eduqas Paper 2 Section A
-:::
+:::info Board Coverage AQA Paper 1 Section B | Edexcel Paper 2 Component 1 | OCR Paper 2 Section A |
+WJEC/Eduqas Paper 2 Section A :::
 
 ## 1. The 19th-Century Novel as a Genre
 
@@ -57,14 +58,14 @@ Social institutions -- marriage, the family, the class system, the law -- and on
 Of people within those institutions. The transition from Romanticism to realism is not a clean
 Break; most 19th-century novels contain elements of both.
 
-| Feature | Romanticism | Realism |
+| Feature       | Romanticism                                 | Realism                                   |
 | ------------- | ------------------------------------------- | ----------------------------------------- |
-| **Focus** | The individual, emotion, imagination | Society, institutions, ordinary life |
-| **Setting** | Wild nature, the sublime, the exotic | Specific places: cities, villages, houses |
-| **Character** | Exceptional, heroic, intense | Plausible, psychologically complex |
-| **Plot** | Adventure, supernatural events, coincidence | Causal logic, social consequences |
-| **Language** | Elevated, lyrical, metaphorical | Concrete, detailed, vernacular |
-| **Purpose** | To inspire, to move, to transcend | To represent, to critique, to understand |
+| **Focus**     | The individual, emotion, imagination        | Society, institutions, ordinary life      |
+| **Setting**   | Wild nature, the sublime, the exotic        | Specific places: cities, villages, houses |
+| **Character** | Exceptional, heroic, intense                | Plausible, psychologically complex        |
+| **Plot**      | Adventure, supernatural events, coincidence | Causal logic, social consequences         |
+| **Language**  | Elevated, lyrical, metaphorical             | Concrete, detailed, vernacular            |
+| **Purpose**   | To inspire, to move, to transcend           | To represent, to critique, to understand  |
 
 ## 2. Social Context
 
@@ -88,10 +89,10 @@ The Victorian class system was rigidly stratified and acutely felt. The major di
 
 - **The aristocracy and landed gentry.** Inherited wealth, political power, social prestige.
 - **The middle class.** Industrialists, merchants, professionals. The middle class defined itself
- through respectability, moral seriousness, and the ideology of self-improvement.
+  through respectability, moral seriousness, and the ideology of self-improvement.
 - **The working class.** Factory workers, agricultural labourers, domestic servants. The working
- class was politically disenfranchised (until the Reform Acts of 1832, 1867, and 1884) and
- economically vulnerable.
+  class was politically disenfranchised (until the Reform Acts of 1832, 1867, and 1884) and
+  economically vulnerable.
 
 Class mobility was possible but difficult. Education was the primary vehicle, and the expansion of
 State-funded schooling from the 1870 Education Act onward was a direct response to the demand for
@@ -268,42 +269,42 @@ The choice of narrator is one of the most important decisions a novelist makes, 
 Shapes the reader's relationship with the text.
 
 - **First-person narrator.** The story is told by a character within the narrative. This creates
- intimacy and immediacy but limits the reader's access to other characters' thoughts. Jane Eyre is
- a first-person narrator; her perspective is passionate and compelling, but the reader must
- consider what she does not tell us or cannot know. _Frankenstein_ uses multiple first-person
- narrators (Walton, Victor, the Creature), creating a polyphonic text in which no single
- perspective is authoritative.
+  intimacy and immediacy but limits the reader's access to other characters' thoughts. Jane Eyre is
+  a first-person narrator; her perspective is passionate and compelling, but the reader must
+  consider what she does not tell us or cannot know. _Frankenstein_ uses multiple first-person
+  narrators (Walton, Victor, the Creature), creating a polyphonic text in which no single
+  perspective is authoritative.
 - **Third-person omniscient narrator.** The narrator knows everything about all characters and
- events. This allows the novelist to move freely between perspectives and to provide commentary on
- the action. Dickens frequently uses an omniscient narrator who addresses the reader directly and
- offers moral judgement.
+  events. This allows the novelist to move freely between perspectives and to provide commentary on
+  the action. Dickens frequently uses an omniscient narrator who addresses the reader directly and
+  offers moral judgement.
 - **Third-person limited narrator.** The narrative is filtered through the consciousness of a single
- character. The reader has access to that character's thoughts and perceptions but not to those of
- others. This technique is more common in 20th-century fiction but is relevant to the study of
- narrative perspective.
+  character. The reader has access to that character's thoughts and perceptions but not to those of
+  others. This technique is more common in 20th-century fiction but is relevant to the study of
+  narrative perspective.
 - **Unreliable narrator.** A narrator whose account cannot be fully trusted. This may be because
- they are dishonest, mentally unstable, or limited in their understanding. The concept of
- the unreliable narrator, first articulated by Wayne C. Booth in _The Rhetoric of Fiction_ (1961),
- is relevant to _Jekyll and Hyde_, where the narrative is constructed from documents whose
- reliability the reader must evaluate.
+  they are dishonest, mentally unstable, or limited in their understanding. The concept of the
+  unreliable narrator, first articulated by Wayne C. Booth in _The Rhetoric of Fiction_ (1961), is
+  relevant to _Jekyll and Hyde_, where the narrative is constructed from documents whose reliability
+  the reader must evaluate.
 
 ### 4.2 Chapter Structure
 
-Victorian novels were published in serial form -- in monthly or weekly instalments in
-Periodicals -- and this mode of publication shaped their structure. Each instalment needed to
-Contain enough incident to sustain interest, to end with a hook or cliffhanger, and to reward
-Regular readers with the satisfaction of ongoing plot development.
+Victorian novels were published in serial form -- in monthly or weekly instalments in Periodicals --
+and this mode of publication shaped their structure. Each instalment needed to Contain enough
+incident to sustain interest, to end with a hook or cliffhanger, and to reward Regular readers with
+the satisfaction of ongoing plot development.
 
 Even in novellas and short novels not published serially, chapter structure matters. Consider:
 
 - How chapters begin and end. A chapter that opens with dialogue creates an immediate sense of
- scene; one that opens with description establishes setting. A chapter that ends with a revelation
- or a moment of crisis creates narrative momentum.
+  scene; one that opens with description establishes setting. A chapter that ends with a revelation
+  or a moment of crisis creates narrative momentum.
 - The balance between dialogue, description, and narration within chapters. A chapter dominated by
- dialogue creates pace and immediacy; one dominated by description slows the narrative and invites
- reflection.
+  dialogue creates pace and immediacy; one dominated by description slows the narrative and invites
+  reflection.
 - The juxtaposition of chapters. Stevenson's _Jekyll and Hyde_ creates dramatic tension by
- juxtaposing Utterson's methodical investigation with Hyde's acts of violence.
+  juxtaposing Utterson's methodical investigation with Hyde's acts of violence.
 
 ### 4.3 Foreshadowing
 
@@ -477,13 +478,13 @@ Society assigns to her.
 
 The PETAL structure is the most widely recommended paragraph framework for GCSE English Literature:
 
-| Element | Function |
+| Element            | Function                                                           |
 | ------------------ | ------------------------------------------------------------------ |
-| **P** -- Point | A clear topic sentence stating the argument of the paragraph |
-| **E** -- Evidence | A precisely chosen quotation or specific reference to the text |
-| **T** -- Technique | Identification of the literary or linguistic technique used |
-| **A** -- Analysis | Explanation of how the technique creates meaning or effect |
-| **L** -- Link | A sentence connecting the paragraph back to the question or thesis |
+| **P** -- Point     | A clear topic sentence stating the argument of the paragraph       |
+| **E** -- Evidence  | A precisely chosen quotation or specific reference to the text     |
+| **T** -- Technique | Identification of the literary or linguistic technique used        |
+| **A** -- Analysis  | Explanation of how the technique creates meaning or effect         |
+| **L** -- Link      | A sentence connecting the paragraph back to the question or thesis |
 
 <details>
 <summary>Example PETAL Paragraph: A Christmas Carol</summary>
@@ -505,26 +506,26 @@ Making his subsequent transformation all the more significant.
 ### 8.2 Alternative Paragraph Structures
 
 - **PEEL:** Point, Evidence, Explanation, Link. Simpler than PETAL; omits the explicit
- identification of technique but requires the explanation to address how meaning is created.
+  identification of technique but requires the explanation to address how meaning is created.
 - **PEA:** Point, Evidence, Analysis. The most minimal structure; suitable for lower-ability
- students but risks insufficient development.
+  students but risks insufficient development.
 - **TEEL:** Topic sentence, Evidence, Explanation, Link. Equivalent to PEEL with different
- terminology.
+  terminology.
 - **TEAC:** Topic sentence, Evidence, Analysis, Context. Useful for ensuring that contextual points
- are included in every paragraph.
+  are included in every paragraph.
 - **ABC Method:** Answer the question, Build on the answer with evidence, Comment on the effect and
- link back. Developed by the National Association for the Teaching of English (NATE).
+  link back. Developed by the National Association for the Teaching of English (NATE).
 
 ### 8.3 Comparative Frameworks
 
 When comparing two texts (or two aspects of the same text), use one of the following approaches:
 
 - **Integrated comparison.** Alternate between texts within each paragraph, making a point about one
- text and immediately comparing it to the other. This is the most sophisticated approach and
- earns the highest marks.
+  text and immediately comparing it to the other. This is the most sophisticated approach and earns
+  the highest marks.
 - **Block comparison.** Write about the first text, then about the second, drawing comparisons in
- the linking sentences and conclusion. This is easier to manage but risks becoming two separate
- essays rather than a genuine comparison.
+  the linking sentences and conclusion. This is easier to manage but risks becoming two separate
+  essays rather than a genuine comparison.
 
 ## 9. Approaching Unseen 19th-Century Prose Extracts
 
@@ -555,21 +556,21 @@ Doing and how it does it. Every paragraph should develop this argument.
 ## 10. Common Pitfalls
 
 - **Plot summary instead of analysis.** As with Shakespeare, the most common error in 19th-century
- novel essays is retelling the story rather than analysing how it is written.
+  novel essays is retelling the story rather than analysing how it is written.
 - **Treating context as separate from the text.** Contextual points must be woven into analysis. A
- paragraph about Victorian poverty should reference a specific passage in the text that illustrates
- that poverty.
+  paragraph about Victorian poverty should reference a specific passage in the text that illustrates
+  that poverty.
 - **Failing to address the extract in extract-based questions.** If the question provides an
- extract, the strongest responses begin with detailed analysis of the extract before broadening to
- the whole text.
+  extract, the strongest responses begin with detailed analysis of the extract before broadening to
+  the whole text.
 - **Ignoring narrative structure.** The order in which events are revealed, the pacing of the
- narrative, and the use of cliffhangers and revelations are all structural choices that deserve
- analysis.
+  narrative, and the use of cliffhangers and revelations are all structural choices that deserve
+  analysis.
 - **Vague references to "Victorian society."** Specific contextual references -- the Poor Law, the
- Industrial Revolution, the position of women, Darwin -- are always preferable to undifferentiated
- generalisations about the period.
+  Industrial Revolution, the position of women, Darwin -- are always preferable to undifferentiated
+  generalisations about the period.
 - **Not using enough quotations.** A response without quotations is a response without evidence. Aim
- for at least two precisely chosen quotations per paragraph.
+  for at least two precisely chosen quotations per paragraph.
 
 ## Summary
 

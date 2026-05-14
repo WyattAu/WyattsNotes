@@ -1,6 +1,8 @@
 ---
 title: Sanitizer
-description: "C++: Sanitizer — CMake Integration Strategy; Implementation Module; Usage in Root CMakeLists.txt; Platform Support Matrix."
+description:
+  'C++: Sanitizer — CMake Integration Strategy; Implementation Module; Usage in Root CMakeLists.txt;
+  Platform Support Matrix.'
 date: 2025-12-11T18:46:23.535Z
 tags:
   - cpp
@@ -8,6 +10,7 @@ categories:
   - cpp
 slug: sanitizer
 ---
+
 Import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 Static analysis predicts defects by parsing source code. **Runtime Sanitizers** detect defects by
@@ -23,15 +26,15 @@ State of memory and threads, reporting violations immediately (often halting exe
 
 - **Target:** Memory safety errors.
 - **Detects:** Out-of-bounds accesses (heap/stack/global), Use-after-free, Use-after-return,
- Use-after-scope, Double-free, Memory leaks.
+  Use-after-scope, Double-free, Memory leaks.
 - **Mechanism:** Replaces `malloc`/`free` and surrounds memory objects with "Redzones". Every memory
- access is instrumented to check the shadow memory state.
+  access is instrumented to check the shadow memory state.
 
 ### 2. Thread Sanitizer (TSan)
 
 - **Target:** Concurrency errors.
 - **Detects:** Data races (simultaneous read/write without synchronization), Deadlocks, Lock order
- inversions.
+  inversions.
 - **Mechanism:** Tracks "Happens-Before" relationships and lock acquisition history.
 - **Constraint:** Mutually exclusive with ASan.
 
@@ -39,7 +42,7 @@ State of memory and threads, reporting violations immediately (often halting exe
 
 - **Target:** C++ Standard violations.
 - **Detects:** Signed integer overflow, division by zero, null pointer dereference, alignment
- violations, invalid enum casts.
+  violations, invalid enum casts.
 - **Mechanism:** Injects branching logic before arithmetic and pointer operations.
 
 ### 4. Memory Sanitizer (MSan)
@@ -48,7 +51,7 @@ State of memory and threads, reporting violations immediately (often halting exe
 - **Detects:** Reading memory before it has been written.
 - **Mechanism:** Bit-precise shadow memory tracking initialization state.
 - **Constraint:** **Linux/Clang Only.** Requires all linked libraries (including C++ standard
- library) to be instrumented, or false positives occur.
+  library) to be instrumented, or false positives occur.
 
 ## CMake Integration Strategy
 
@@ -143,12 +146,12 @@ enable_sanitizers(App)
 
 Not all sanitizers are available on all platforms or compilers.
 
-| Sanitizer | Linux (GCC/Clang) | macOS (Apple Clang) | Windows (MSVC) | Windows (Clang-CL) |
+| Sanitizer | Linux (GCC/Clang) | macOS (Apple Clang) | Windows (MSVC)          | Windows (Clang-CL)       |
 | :-------- | :---------------- | :------------------ | :---------------------- | :----------------------- |
-| **ASan** | Fully Supported | Fully Supported | Supported (VS 2019+) | Supported |
-| **TSan** | Fully Supported | Fully Supported | Not Supported | Supported (Experimental) |
-| **UBSan** | Fully Supported | Fully Supported | Runtime Checks (`/RTC`) | Fully Supported |
-| **MSan** | Clang Only | Not Supported | Not Supported | Not Supported |
+| **ASan**  | Fully Supported   | Fully Supported     | Supported (VS 2019+)    | Supported                |
+| **TSan**  | Fully Supported   | Fully Supported     | Not Supported           | Supported (Experimental) |
+| **UBSan** | Fully Supported   | Fully Supported     | Runtime Checks (`/RTC`) | Fully Supported          |
+| **MSan**  | Clang Only        | Not Supported       | Not Supported           | Not Supported            |
 
 ### Windows MSVC Specifics
 
@@ -157,7 +160,7 @@ Microsoft recently added ASan support to the MSVC toolchain (`cl.exe`).
 1. **Requirement:** Visual Studio 2019 version 16.9 or later.
 2. **Component:** Ensure "C++ AddressSanitizer" is installed via the Visual Studio Installer.
 3. **Limitations:** It does not currently support `std::string` annotations or some advanced
- container overflow checks present in GCC/Clang versions.
+   container overflow checks present in GCC/Clang versions.
 
 ## Runtime Configuration
 
@@ -233,12 +236,12 @@ READ of size 4 at 0x...
 ## Best Practices
 
 1. **Build Types:** Do not use `Debug` builds for sanitizers if possible. The combined overhead of
- unoptimized code (`-O0`) plus sanitizer instrumentation makes the application unusably slow. Use
- `RelWithDebInfo` (`-O2 -g`) to get reasonable performance with readable stack traces.
+   unoptimized code (`-O0`) plus sanitizer instrumentation makes the application unusably slow. Use
+   `RelWithDebInfo` (`-O2 -g`) to get reasonable performance with readable stack traces.
 2. **Separate CI Jobs:** Run ASan/UBSan in one CI job and TSan in a separate job. TSan's overhead is
- significantly higher.
+   significantly higher.
 3. **False Positives:** Sanitizers generally do not produce false positives (except MSan without
- full instrumentation). If a sanitizer reports an error, it is a real bug.
+   full instrumentation). If a sanitizer reports an error, it is a real bug.
 
 ## Deep Dive: AddressSanitizer Internals
 
@@ -247,22 +250,22 @@ READ of size 4 at 0x...
 ASan maps every 8 bytes of application memory to 1 byte of **shadow memory**. The shadow byte
 Encodes the accessibility state of the corresponding 8-byte region:
 
-| Shadow Byte Value | Meaning |
+| Shadow Byte Value | Meaning                                         |
 | ----------------- | ----------------------------------------------- |
-| `0x00` | All 8 bytes are accessible |
-| `0x01`–`0x07` | First N bytes are accessible, rest are poisoned |
-| Negative values | Entire region is poisoned (different meanings) |
+| `0x00`            | All 8 bytes are accessible                      |
+| `0x01`–`0x07`     | First N bytes are accessible, rest are poisoned |
+| Negative values   | Entire region is poisoned (different meanings)  |
 
 **Poisoning types** are encoded in the negative shadow byte values:
 
-| Shadow Value | Meaning |
+| Shadow Value | Meaning                                   |
 | ------------ | ----------------------------------------- |
-| `0xfa` | Heap left redzone (allocated block start) |
-| `0xfb` | Heap right redzone (allocated block end) |
-| `0xfc` | Stack buffer underflow |
-| `0xfd` | Stack buffer overflow |
-| `0xfe` | Stack memory after return |
-| `0xff` | Stack redzone (padding between variables) |
+| `0xfa`       | Heap left redzone (allocated block start) |
+| `0xfb`       | Heap right redzone (allocated block end)  |
+| `0xfc`       | Stack buffer underflow                    |
+| `0xfd`       | Stack buffer overflow                     |
+| `0xfe`       | Stack memory after return                 |
+| `0xff`       | Stack redzone (padding between variables) |
 
 When an instrumented memory access occurs, the compiler generates code to check the shadow byte
 Before performing the actual load or store. If the shadow byte indicates the access is poisoned, the
@@ -413,18 +416,18 @@ int main() {
 
 UBSan can detect a wide range of undefined behavior. Key checks include:
 
-| Check | Undefined Behavior | Example |
+| Check                       | Undefined Behavior                      | Example                                  |
 | --------------------------- | --------------------------------------- | ---------------------------------------- |
-| `signed-integer-overflow` | Signed integer overflow | `INT_MAX + 1` |
-| `unsigned-integer-overflow` | Unsigned integer overflow (wrap) | `UINT_MAX + 1` (not UB, but often a bug) |
-| `shift` | Shift past bit-width | `1 &lt;&lt; 32` on 32-bit int |
-| `divide-by-zero` | Integer division by zero | `int x = 1 / 0` |
-| `null` | Null pointer dereference | `*nullptr` |
-| `alignment` | Misaligned pointer access | Cast `char*` to `int*` at unaligned addr |
-| `bool` | Loading invalid bool value | `bool b = 2;` |
-| `enum` | Loading value outside enum range | Cast 42 to enum with range 0-10 |
-| `float-cast-overflow` | Cast float to integer when out of range | `(int)1e30` |
-| `object-size` | Accessing past end of object | Array OOB via pointer arithmetic |
+| `signed-integer-overflow`   | Signed integer overflow                 | `INT_MAX + 1`                            |
+| `unsigned-integer-overflow` | Unsigned integer overflow (wrap)        | `UINT_MAX + 1` (not UB, but often a bug) |
+| `shift`                     | Shift past bit-width                    | `1 &lt;&lt; 32` on 32-bit int            |
+| `divide-by-zero`            | Integer division by zero                | `int x = 1 / 0`                          |
+| `null`                      | Null pointer dereference                | `*nullptr`                               |
+| `alignment`                 | Misaligned pointer access               | Cast `char*` to `int*` at unaligned addr |
+| `bool`                      | Loading invalid bool value              | `bool b = 2;`                            |
+| `enum`                      | Loading value outside enum range        | Cast 42 to enum with range 0-10          |
+| `float-cast-overflow`       | Cast float to integer when out of range | `(int)1e30`                              |
+| `object-size`               | Accessing past end of object            | Array OOB via pointer arithmetic         |
 
 ### Enabling Specific UBSan Checks
 
@@ -518,8 +521,8 @@ Error or crashes at startup. Run them in separate CI jobs.
 MSan tracks initialization state at the bit level. If any code in the process is not instrumented
 (including the C++ standard library), MSan may report false positives because it cannot see the
 Initialization performed by uninstrumented code. The solution is to compile **everything** with
-`-fsanitize=memory`Including dependencies. This is only practical with Clang on Linux and requires
-A fully static build or careful library management.
+`-fsanitize=memory`Including dependencies. This is only practical with Clang on Linux and requires A
+fully static build or careful library management.
 
 ### 3. ASan and Custom Allocators
 
@@ -528,7 +531,7 @@ Track the allocation boundaries. You must either:
 
 - Replace the custom allocator with `malloc`/`free` when ASan is enabled.
 - Use `__asan_poison_memory_region` and `__asan_unpoison_memory_region` to manually inform ASan
- about the allocator's state.
+  about the allocator's state.
 
 ```cpp
 #include <cstdlib>
@@ -564,9 +567,9 @@ public:
 
 ### 4. Sanitizer Overhead in Performance-Critical Code
 
-ASan adds 2x memory overhead (shadow memory) and 2x CPU overhead. TSan adds 5-15x CPU
-Overhead and 5-10x memory overhead. Never run sanitizers in production or in performance benchmarks.
-Use them exclusively in development and CI.
+ASan adds 2x memory overhead (shadow memory) and 2x CPU overhead. TSan adds 5-15x CPU Overhead and
+5-10x memory overhead. Never run sanitizers in production or in performance benchmarks. Use them
+exclusively in development and CI.
 
 ## Summary
 

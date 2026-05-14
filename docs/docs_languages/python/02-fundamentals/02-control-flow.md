@@ -1,6 +1,8 @@
 ---
 title: Control Flow
-description: "Control Flow — Conditional Branching; `if` / `elif` / `else`; All of these are valid conditional expressions; Why Indentation for Blocks."
+description:
+  'Control Flow — Conditional Branching; `if` / `elif` / `else`; All of these are valid conditional
+  expressions; Why Indentation for Blocks.'
 date: 2025-06-04T11:00:00.000Z
 tags:
   - Python
@@ -8,6 +10,7 @@ categories:
   - Python
 slug: control-flow
 ---
+
 ## Conditional Branching
 
 ### `if` / `elif` / `else`
@@ -52,21 +55,21 @@ Criticism from programmers coming from brace-delimited languages. The rationale 
 Philosophical and practical:
 
 1. **Eliminates a class of bugs.** In C-style languages, mismatched braces are a persistent source
- of errors. The compiler cannot detect whether the indentation reflects the programmer's intent
- because the braces define the actual structure. Python makes the indentation the structure --
- what you see is what the interpreter sees.
+   of errors. The compiler cannot detect whether the indentation reflects the programmer's intent
+   because the braces define the actual structure. Python makes the indentation the structure --
+   what you see is what the interpreter sees.
 
 2. **Enforces a single canonical style.** Every Python program has consistent block structure. There
- is no debate over K&R versus Allman versus GNU indentation style because there is no choice. This
- reduces cognitive overhead in code reviews and eliminates formatting arguments.
+   is no debate over K&R versus Allman versus GNU indentation style because there is no choice. This
+   reduces cognitive overhead in code reviews and eliminates formatting arguments.
 
 3. **Reduces visual noise.** Braces, semicolons, and explicit block terminators are syntactic
- overhead that provides no semantic information beyond what indentation already conveys. Removing
- them makes code more compact without sacrificing readability.
+   overhead that provides no semantic information beyond what indentation already conveys. Removing
+   them makes code more compact without sacrificing readability.
 
 4. **Historical precedent.** Guido van Rossum was influenced by ABC (a teaching language developed
- at CWI) and Haskell, both of which use indentation-based syntax. The choice was deliberate, not
- accidental.
+   at CWI) and Haskell, both of which use indentation-based syntax. The choice was deliberate, not
+   accidental.
 
 The trade-off is sensitivity to whitespace. Mixing tabs and spaces, or inconsistent indentation,
 Causes `IndentationError`. Python 3 disallows mixing tabs and spaces entirely within the same file.
@@ -132,16 +135,16 @@ Sub-components.
 The design was driven by several considerations:
 
 1. **Python already has dictionary dispatch.** The use case for simple value-based switching is
- already well-served by dictionary dispatch: `{"a": func_a, "b": func_b}[key]()`. Adding a C-style
- switch would be redundant.
+   already well-served by dictionary dispatch: `{"a": func_a, "b": func_b}[key]()`. Adding a C-style
+   switch would be redundant.
 
 2. **Algebraic data types are increasingly common.** Python codebases increasingly use
- `dataclasses``NamedTuple`And `TypedDict` to model structured data. Pattern matching provides
- a natural way to destructure these types.
+   `dataclasses``NamedTuple`And `TypedDict` to model structured data. Pattern matching provides a
+   natural way to destructure these types.
 
 3. **No fall-through.** Fall-through is the most error-prone feature of C's `switch`. Every `case`
- in Python's `match` is exclusive -- there is no way to accidentally fall through to the next
- case. This eliminates an entire class of bugs.
+   in Python's `match` is exclusive -- there is no way to accidentally fall through to the next
+   case. This eliminates an entire class of bugs.
 
 ### Literal Patterns
 
@@ -264,8 +267,8 @@ flowchart TD
 
 :::info
 
-Pattern matching is exhaustive only if you provide a wildcard `_` case. Without it, no match 
-Means the `match` block is skipped entirely -- it does not raise an error. This differs from Rust's
+Pattern matching is exhaustive only if you provide a wildcard `_` case. Without it, no match Means
+the `match` block is skipped entirely -- it does not raise an error. This differs from Rust's
 `match`Which requires exhaustiveness at compile time.
 
 :::
@@ -327,9 +330,9 @@ print(5 in range(1000000))    # True, instant check
 print(len(range(1000000)))    # 1000000
 ```
 
-`range` objects implement the sequence protocol (`__contains__``__len__``__getitem__`) with
-$O(1)$ membership testing. `x in range(n)` does not iterate through the range -- it computes the
-Answer directly.
+`range` objects implement the sequence protocol (`__contains__``__len__``__getitem__`) with $O(1)$
+membership testing. `x in range(n)` does not iterate through the range -- it computes the Answer
+directly.
 
 ### `enumerate`
 
@@ -698,11 +701,11 @@ def read_config(path: str) -> dict:
 
 The four clauses have distinct roles:
 
-| Clause | Executes when | Purpose |
+| Clause    | Executes when                             | Purpose                                   |
 | --------- | ----------------------------------------- | ----------------------------------------- |
-| `except` | The specified exception is raised | Handle the error, recover, or re-raise |
-| `else` | No exception is raised in the `try` block | Code that depends on the `try` succeeding |
-| `finally` | Always, even if an exception is unhandled | Cleanup that must happen regardless |
+| `except`  | The specified exception is raised         | Handle the error, recover, or re-raise    |
+| `else`    | No exception is raised in the `try` block | Code that depends on the `try` succeeding |
+| `finally` | Always, even if an exception is unhandled | Cleanup that must happen regardless       |
 
 The `else` clause exists to prevent a subtle bug: catching an exception that was raised by the
 Error-handling code itself, not by the code you intended to protect.
@@ -1007,17 +1010,17 @@ Languages like C++ use RAII (Resource Acquisition Is Initialization) -- destruct
 Automatically when objects go out of scope. Python does not use RAII because:
 
 1. **Garbage collection is non-deterministic.** Python uses reference counting with a
- cycle-detecting garbage collector. Objects are not destroyed at a predictable time. An object's
- `__del__` method (Python's equivalent of a destructor) may run long after the object becomes
- unreachable, or not at all if it is part of a reference cycle.
+   cycle-detecting garbage collector. Objects are not destroyed at a predictable time. An object's
+   `__del__` method (Python's equivalent of a destructor) may run long after the object becomes
+   unreachable, or not at all if it is part of a reference cycle.
 
 2. **Explicit is better than implicit.** The `with` statement makes resource acquisition and release
- visible in the code structure. A reader can see exactly where resources are managed without
- tracing object lifetimes.
+   visible in the code structure. A reader can see exactly where resources are managed without
+   tracing object lifetimes.
 
 3. **Exceptions require explicit handling.** RAII destructors cannot distinguish between normal
- scope exit and exception-propagated scope exit without additional machinery. The `__exit__`
- method receives exception information directly.
+   scope exit and exception-propagated scope exit without additional machinery. The `__exit__`
+   method receives exception information directly.
 
 ```python
 # This is unreliable -- __del__ may run much later, or not at all

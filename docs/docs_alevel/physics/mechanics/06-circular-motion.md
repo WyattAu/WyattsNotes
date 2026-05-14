@@ -1,6 +1,8 @@
 ---
 title: Circular Motion
-description: "A-Level Physics notes on Circular Motion: 1. Angular Quantities; 2. Centripetal Acceleration — Derivation; Method 1: Calculus; Method 2: Geometry."
+description:
+  'A-Level Physics notes on Circular Motion: 1. Angular Quantities; 2. Centripetal Acceleration —
+  Derivation; Method 1: Calculus; Method 2: Geometry.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Physics
@@ -9,11 +11,10 @@ categories:
   - Physics
 slug: circular-motion
 ---
+
 ## Circular Motion
 
-:::info
-Board Coverage AQA Paper 1 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2
-:::
+:::info Board Coverage AQA Paper 1 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2 :::
 
 <PhetSimulation simulationId="gravity-and-orbits" title="Gravity and Orbits" />
 
@@ -38,11 +39,8 @@ $$\omega = \frac◆LB◆2\pi◆RB◆◆LB◆T◆RB◆ = 2\pi f$$
 
 Where $T$ is the period (time for one revolution) and $f$ is the frequency.
 
-:::info
-Info
-Quantities. AQA and Edexcel may accept degrees in some contexts but radians are expected in
-Formulae. CIE explicitly states that angular velocity must be in rad s$^{-1}$.
-:::
+:::info Info Quantities. AQA and Edexcel may accept degrees in some contexts but radians are
+expected in Formulae. CIE explicitly states that angular velocity must be in rad s$^{-1}$. :::
 
 **Example.** A CD rotates at $480$ rpm. Converting:
 $\omega = 480 \times 2\pi/60 = 16\pi \approx 50.3$ rad s$^{-1}$. A point $0.06$ m from the centre
@@ -63,7 +61,8 @@ Differentiating to find velocity:
 
 $$\mathbf{v}(t) = \frac◆LB◆d\mathbf{r}◆RB◆◆LB◆dt◆RB◆ = -r\omega\sin(\omega t)\,\mathbf{i} + r\omega\cos(\omega t)\,\mathbf{j}$$
 
-Note: $|\mathbf{v}| = r\omega\sqrt◆LB◆\sin^2(\omega t) + \cos^2(\omega t)◆RB◆ = r\omega = v$. $\checkmark$
+Note: $|\mathbf{v}| = r\omega\sqrt◆LB◆\sin^2(\omega t) + \cos^2(\omega t)◆RB◆ = r\omega = v$.
+$\checkmark$
 
 Differentiating again to find acceleration:
 
@@ -79,12 +78,10 @@ $\mathbf{a}(t) = -\omega^2 \mathbf{r}(t)$ is always antiparallel to the position
 It always points towards the centre, regardless of where the particle is on the circle. Even though
 The speed is constant, the _direction_ of velocity changes continuously, requiring acceleration.
 
-:::info
-Info
-Derivation is the standard approach; calculus is optional extension work. OCR (A): Either method
-Accepted; the geometric proof appears more frequently in mark schemes. CIE: The geometric method is
-The primary derivation required; calculus is useful for STEP/matriculation preparation.
-:::
+:::info Info Derivation is the standard approach; calculus is optional extension work. OCR (A):
+Either method Accepted; the geometric proof appears more frequently in mark schemes. CIE: The
+geometric method is The primary derivation required; calculus is useful for STEP/matriculation
+preparation. :::
 
 ### Method 2: Geometry
 
@@ -103,12 +100,10 @@ By Newton's second law, the net force producing centripetal acceleration is:
 
 $$\boxed{F_c = \frac{mv^2}{r} = m\omega^2 r}$$
 
-:::warning
-Common Pitfall **Centripetal force is not a separate force.** It is the _net_ inward
+:::warning Common Pitfall **Centripetal force is not a separate force.** It is the _net_ inward
 Force resulting from whatever physical forces act on the body (tension, friction, gravity, normal
 Reaction, etc.). Never draw "centripetal force" on a free body diagram — identify the actual
-Force(s) providing the centripetal acceleration.
-:::
+Force(s) providing the centripetal acceleration. :::
 
 ### Intuition: Circular Motion is NOT Equilibrium
 
@@ -117,13 +112,11 @@ Constant. The velocity vector is changing _direction_. There is always a net inw
 Cut the string, the particle does **not** fly radially outward — it moves tangentially (Newton's
 First law).
 
-:::warning
-Common Pitfall **"Centrifugal force" is not a real force.** In a rotating reference
+:::warning Common Pitfall **"Centrifugal force" is not a real force.** In a rotating reference
 Frame, objects appear to be pushed outward, but this is a pseudo-force (fictitious force) arising
 Because the frame itself is accelerating. In an inertial (laboratory) frame, no outward force
 Exists. AQA and Edexcel may ask you to explain the difference; OCR (A) has featured this in
-Multiple-choice questions.
-:::
+Multiple-choice questions. :::
 
 ## 4. Applications
 
@@ -154,11 +147,9 @@ $$\boxed{T = 2\pi\sqrt◆LB◆\frac{L\cos\alpha}{g}◆RB◆}$$
 **Example.** A conical pendulum with $L = 1.0$ m and $\alpha = 30^\circ$ has period
 $T = 2\pi\sqrt◆LB◆1.0 \times \cos 30°/9.81◆RB◆ = 2\pi\sqrt{0.0883} = 1.86$ s.
 
-:::info
-Board Coverage AQA: Conical pendulum appears in Paper 1. Edexcel: Covered in CP2, 
-As a multi-step calculation. OCR (A): Appears in Paper 2 with derivations required. CIE: Appears in
-P2; may be combined with energy considerations.
-:::
+:::info Board Coverage AQA: Conical pendulum appears in Paper 1. Edexcel: Covered in CP2, As a
+multi-step calculation. OCR (A): Appears in Paper 2 with derivations required. CIE: Appears in P2;
+may be combined with energy considerations. :::
 
 ### Banked Curves
 
@@ -208,12 +199,9 @@ $$\boxed{v_{\min} = \sqrt◆LB◆\frac{rg(\tan\theta - \mu)}{1 + \mu\tan\theta}�
 Assistance. At higher angles, velodromes use banking up to $45^\circ$ so cyclists can maintain speed
 Through tight turns. The normal reaction alone provides the centripetal force at the design speed.
 
-:::info
-Info
-Is extension material. Edexcel: Both frictionless and friction cases may appear in CP2. OCR (A):
-Frictionless derivation is core; friction is stretch/challenge. CIE: Frictionless is required;
-Friction on banked curves occasionally appears in P2 as a harder question.
-:::
+:::info Info Is extension material. Edexcel: Both frictionless and friction cases may appear in CP2.
+OCR (A): Frictionless derivation is core; friction is stretch/challenge. CIE: Frictionless is
+required; Friction on banked curves occasionally appears in P2 as a harder question. :::
 
 ### Vertical Circles
 
@@ -376,8 +364,8 @@ Direction).
 $v_{\mathrm{opt}} = \sqrt◆LB◆25 \times 9.81 \times \tan 20°◆RB◆ = \sqrt◆LB◆25 \times 9.81 \times 0.364◆RB◆ = \sqrt{89.2} = 9.45$
 M s$^{-1}$.
 
-Since $8.0 < 9.45$The cyclist is going too slowly, so friction must act **up** the slope to
-Prevent sliding down.
+Since $8.0 < 9.45$The cyclist is going too slowly, so friction must act **up** the slope to Prevent
+sliding down.
 
 $N\cos 20° = mg + F\sin 20^\circ$ and $N\sin 20° - F\cos 20° = mv^2/r$.
 
@@ -461,12 +449,10 @@ $$\boxed{T_{\mathrm{bottom}} - T_{\mathrm{top}} = 6mg}$$
 
 This result is independent of the radius and speed -- only on the mass and $g$.
 
-:::tip
-Exam Technique When asked about the difference between tension at the top and bottom of a
+:::tip Exam Technique When asked about the difference between tension at the top and bottom of a
 Vertical circle, the answer is always $6mg$ (for a string). For a rod (which can push as well as
 Pull), the minimum speed at the top is zero, not $\sqrt{gr}$Because the rod can support the weight
-Even when the speed is zero.
-:::
+Even when the speed is zero. :::
 
 <details>
 <summary>Example: Bucket of Water in a Vertical Circle</summary>
@@ -494,9 +480,7 @@ $T = mv_b^2/r + mg = 1.5 \times 39.24/0.80 + 14.7 = 73.6 + 14.7 = 88.3$ N.
 
 </details>
 
-:::info
-Board Coverage AQA Paper 1 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2
-:::
+:::info Board Coverage AQA Paper 1 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2 :::
 
 ## 6. Conical Pendulum -- Extended Analysis
 
@@ -539,12 +523,9 @@ Regardless of the angle or string length. A larger angle $\alpha$ (wider circle)
 Period (faster motion). As $\alpha \to 0$The period approaches $T = 2\pi\sqrt{L/g}$Which is the
 Period of a simple pendulum for small oscillations.
 
-:::warning
-Warning
-Is **shorter** than the small-angle simple pendulum period $T = 2\pi\sqrt{L/g}$. Do not confuse
-These two results. The conical pendulum has an additional $\cos\alpha$ factor because only the
-Vertical component of tension balances gravity.
-:::
+:::warning Warning Is **shorter** than the small-angle simple pendulum period $T = 2\pi\sqrt{L/g}$.
+Do not confuse These two results. The conical pendulum has an additional $\cos\alpha$ factor because
+only the Vertical component of tension balances gravity. :::
 
 ## 7. Centrifugal Force -- Rotating Reference Frames
 
@@ -563,28 +544,24 @@ $$\boxed{F_{\mathrm{centrifugal}} = m\omega^2 r = \frac{mv^2}{r}}$$
 
 This has the same magnitude as the centripetal force but points in the opposite direction.
 
-:::warning
-Common Pitfall **Centrifugal force is not a real force.** It does not appear on free-body
+:::warning Common Pitfall **Centrifugal force is not a real force.** It does not appear on free-body
 Diagrams in inertial frames. It is a mathematical convenience for analysing motion in rotating
 Frames. In exams, always explain circular motion using centripetal force in an inertial frame unless
 Explicitly asked about rotating frames. AQA and OCR (A) have specifically tested the distinction
-Between centripetal and centrifugal descriptions.
-:::
+Between centripetal and centrifugal descriptions. :::
 
 **Summary of the two descriptions:**
 
-| Feature | Inertial frame (ground) | Rotating frame (car) |
+| Feature                | Inertial frame (ground)              | Rotating frame (car)                 |
 | ---------------------- | ------------------------------------ | ------------------------------------ |
-| Real forces | Friction / normal from door (inward) | Friction / normal from door (inward) |
-| Additional force | None | Centrifugal (fictitious, outward) |
-| Passenger acceleration | Centripetal (inward) | Zero (apparent equilibrium) |
+| Real forces            | Friction / normal from door (inward) | Friction / normal from door (inward) |
+| Additional force       | None                                 | Centrifugal (fictitious, outward)    |
+| Passenger acceleration | Centripetal (inward)                 | Zero (apparent equilibrium)          |
 
-:::tip
-Exam Technique When asked "why do passengers feel thrown outward in a cornering car?", the
+:::tip Exam Technique When asked "why do passengers feel thrown outward in a cornering car?", the
 Correct A-level answer is: "The passengers tend to continue in a straight line by Newton's first law
 While the car turns. No outward force acts on the passengers." Mentioning centrifugal force is
-Acceptable only if you state it is a fictitious force in a rotating frame.
-:::
+Acceptable only if you state it is a fictitious force in a rotating frame. :::
 
 ## Further Problems
 
@@ -648,8 +625,8 @@ Would the car lose contact with the road at the top of the bridge?
 
 $mg - N = mv^2/r$.
 
-Setting $N = 0$: $mg = mv^2/r$So $v = \sqrt{gr} = \sqrt◆LB◆9.81 \times 20◆RB◆ = \sqrt{196.2} = 14.0$ m
-S$^{-1}$.
+Setting $N = 0$: $mg = mv^2/r$So $v = \sqrt{gr} = \sqrt◆LB◆9.81 \times 20◆RB◆ = \sqrt{196.2} = 14.0$
+m S$^{-1}$.
 
 <b>If you get this wrong, revise:</b>
 [Vertical Circles -- Detailed Analysis](#5-vertical-circles----detailed-analysis)
@@ -729,28 +706,39 @@ $T - mg = mv_b^2/r = 4mg$So $T = 5mg$ (rod pulls inward with force $5mg$).
 
 </details>
 
-
 ---
 
-:::tip
-Diagnostic Test
-Ready to test your understanding of **Circular Motion**? The [diagnostic test](/docs/alevel/physics/diagnostics/diag-circular-motion) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
+:::tip Diagnostic Test Ready to test your understanding of **Circular Motion**? The
+[diagnostic test](/docs/alevel/physics/diagnostics/diag-circular-motion) contains the hardest
+questions within the A-Level specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Circular Motion with other physics topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Circular
+Motion with other physics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on
+self-marking and building a personal test matrix. :::
 
-:::danger
-Common Pitfalls
+:::danger Common Pitfalls
 
-- **Confusing centripetal force with centrifugal force:** Centripetal force is the REAL force acting towards the centre (gravity, tension, friction, normal reaction). Centrifugal force is a FICTITIOUS force that only appears in a rotating frame of reference. In an inertial frame (which exam questions use), there is no centrifugal force -- only centripetal force.
+- **Confusing centripetal force with centrifugal force:** Centripetal force is the REAL force acting
+  towards the centre (gravity, tension, friction, normal reaction). Centrifugal force is a
+  FICTITIOUS force that only appears in a rotating frame of reference. In an inertial frame (which
+  exam questions use), there is no centrifugal force -- only centripetal force.
 
-- **Adding centripetal force to the force diagram:** Centripetal force is not a separate force -- it is the RESULTANT of the existing forces. In a conical pendulum, the centripetal force is the horizontal component of tension, not tension plus a separate "centripetal force." Never draw centripetal force as an extra arrow on a free-body diagram.
+- **Adding centripetal force to the force diagram:** Centripetal force is not a separate force -- it
+  is the RESULTANT of the existing forces. In a conical pendulum, the centripetal force is the
+  horizontal component of tension, not tension plus a separate "centripetal force." Never draw
+  centripetal force as an extra arrow on a free-body diagram.
 
-- **Forgetting that speed is constant but velocity is not:** In uniform circular motion, the speed (magnitude of velocity) is constant, but the direction of velocity continuously changes. This means there IS acceleration (centripetal acceleration a = v squared / r), even though the speed does not change.
+- **Forgetting that speed is constant but velocity is not:** In uniform circular motion, the speed
+  (magnitude of velocity) is constant, but the direction of velocity continuously changes. This
+  means there IS acceleration (centripetal acceleration a = v squared / r), even though the speed
+  does not change.
 
-- **Using the wrong formula for centripetal acceleration:** Centripetal acceleration can be written as a = v squared / r OR a = omega squared * r OR a = 4 * pi squared * r / T squared. Use whichever form matches the variables given in the question. Converting between them incorrectly is a major source of errors.
+- **Using the wrong formula for centripetal acceleration:** Centripetal acceleration can be written
+  as a = v squared / r OR a = omega squared _ r OR a = 4 _ pi squared \* r / T squared. Use
+  whichever form matches the variables given in the question. Converting between them incorrectly is
+  a major source of errors.
 
 :::
 

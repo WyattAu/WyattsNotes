@@ -1,6 +1,8 @@
 ---
-title: "Sequences and Series -- Diagnostic Tests"
-description: "Diagnostic tests for DSE Sequences and Series: arithmetic and geometric progressions, sigma notation, convergence, and recurrence relations."
+title: 'Sequences and Series -- Diagnostic Tests'
+description:
+  'Diagnostic tests for DSE Sequences and Series: arithmetic and geometric progressions, sigma
+  notation, convergence, and recurrence relations.'
 slug: diag-sequences-series
 hide_table_of_contents: true
 ---
@@ -15,7 +17,8 @@ hide_table_of_contents: true
 
 **Question:**
 
-For what values of $x$ does the geometric series $\displaystyle\sum_{n=1}^{\infty} \frac{3x^n}{4^n}$ converge? Find its sum when it does.
+For what values of $x$ does the geometric series $\displaystyle\sum_{n=1}^{\infty} \frac{3x^n}{4^n}$
+converge? Find its sum when it does.
 
 **Solution:**
 
@@ -31,7 +34,8 @@ When it converges:
 
 $$S_\infty = \frac{a}{1 - r} = \frac{\dfrac{3x}{4}}{1 - \dfrac{x}{4}} = \frac{3x}{4 - x}$$
 
-A common mistake is writing $r = \dfrac{3x}{4}$ instead of $r = \dfrac{x}{4}$Confusing the first term with the ratio.
+A common mistake is writing $r = \dfrac{3x}{4}$ instead of $r = \dfrac{x}{4}$Confusing the first
+term with the ratio.
 
 ---
 
@@ -53,7 +57,8 @@ $$\sum_{k=3}^{n+2} (k - 2)^2 = \sum_{j=1}^{n} j^2 = \frac{n(n+1)(2n+1)}{6}$$
 
 **Question:**
 
-A sequence is defined by $u_1 = 3$ and $u_{n+1} = 2u_n - 1$ for $n \geq 1$. Find $u_n$ in closed form.
+A sequence is defined by $u_1 = 3$ and $u_{n+1} = 2u_n - 1$ for $n \geq 1$. Find $u_n$ in closed
+form.
 
 **Solution:**
 
@@ -87,12 +92,9 @@ The second differences are constant at $2$Confirming a quadratic sequence.
 
 Let $u_n = an^2 + bn + c$.
 
-$u_1 = a + b + c = 2$
-$u_2 = 4a + 2b + c = 4$
-$u_3 = 9a + 3b + c = 8$
+$u_1 = a + b + c = 2$ $u_2 = 4a + 2b + c = 4$ $u_3 = 9a + 3b + c = 8$
 
-(2) - (1): $3a + b = 2$
-(3) - (2): $5a + b = 4$
+(2) - (1): $3a + b = 2$ (3) - (2): $5a + b = 4$
 
 Subtracting: $2a = 2 \implies a = 1$. Then $b = -1$. Then $c = 2$.
 
@@ -112,7 +114,8 @@ $= \dfrac{n(2n^2 - 2 + 12)}{6} = \dfrac{n(2n^2 + 10)}{6} = \dfrac{n(n^2 + 5)}{3}
 
 **Question:**
 
-Find the sum of the geometric series $\sqrt{2} + 1 + \dfrac{1}{\sqrt{2}} + \dfrac{1}{2} + \cdots$ to infinity.
+Find the sum of the geometric series $\sqrt{2} + 1 + \dfrac{1}{\sqrt{2}} + \dfrac{1}{2} + \cdots$ to
+infinity.
 
 **Solution:**
 
@@ -138,7 +141,8 @@ $$= \frac{2\sqrt{2}(2 + \sqrt{2})}{(2 - \sqrt{2})(2 + \sqrt{2})} = \frac{4\sqrt{
 
 **Question:**
 
-The first three terms of a geometric sequence are $\log_2 3$$\log_2 9$$\log_2 27$. Find the common ratio and the sum of the first 10 terms.
+The first three terms of a geometric sequence are $\log_2 3$$\log_2 9$$\log_2 27$. Find the common
+ratio and the sum of the first 10 terms.
 
 **Solution:**
 
@@ -158,7 +162,8 @@ $S_{10} = \dfrac{10}{2}[2\log_2 3 + 9\log_2 3] = 5 \times 11\log_2 3 = 55\log_2 
 
 **Question:**
 
-Let $S_n = \dfrac{1}{2} + \dfrac{1}{4} + \dfrac{1}{8} + \cdots + \dfrac{1}{2^n}$. Find the smallest value of $n$ such that $S_\infty - S_n < 10^{-6}$.
+Let $S_n = \dfrac{1}{2} + \dfrac{1}{4} + \dfrac{1}{8} + \cdots + \dfrac{1}{2^n}$. Find the smallest
+value of $n$ such that $S_\infty - S_n < 10^{-6}$.
 
 **Solution:**
 
@@ -184,7 +189,8 @@ The smallest integer $n$ is $20$.
 
 **Question:**
 
-Consider the expansion of $(1 + x)^n$. The coefficient of $x^2$ equals the coefficient of $x^5$. Find the sum of the coefficients in the expansion.
+Consider the expansion of $(1 + x)^n$. The coefficient of $x^2$ equals the coefficient of $x^5$.
+Find the sum of the coefficients in the expansion.
 
 **Solution:**
 
@@ -278,7 +284,8 @@ $$\sum_{k=1}^{20} (3k + 1) = 3\sum_{k=1}^{20} k + \sum_{k=1}^{20} 1 = 3 \cdot \f
 
 **Question:**
 
-The sum of the first $n$ terms of an AP is $S_n = 3n^2 + 2n$. Find the first term and the common difference.
+The sum of the first $n$ terms of an AP is $S_n = 3n^2 + 2n$. Find the first term and the common
+difference.
 
 **Solution:**
 
@@ -292,7 +299,9 @@ Second term: $u_2 = S_2 - S_1 = 16 - 5 = 11$.
 
 Common difference: $d = u_2 - u_1 = 11 - 5 = 6$.
 
-Verification: $S_n = \dfrac{n}{2}[2a + (n-1)d] = \dfrac{n}{2}[10 + 6(n-1)] = \dfrac{n}{2}(6n + 4) = 3n^2 + 2n$. Correct.
+Verification:
+$S_n = \dfrac{n}{2}[2a + (n-1)d] = \dfrac{n}{2}[10 + 6(n-1)] = \dfrac{n}{2}(6n + 4) = 3n^2 + 2n$.
+Correct.
 
 ---
 
@@ -300,7 +309,8 @@ Verification: $S_n = \dfrac{n}{2}[2a + (n-1)d] = \dfrac{n}{2}[10 + 6(n-1)] = \df
 
 **Question:**
 
-$\$10\,000$ is invested at $6\%$ per annum, compounded annually. Find the value of the investment after 8 years.
+$\$10\,000$ is invested at $6\%$ per annum, compounded annually. Find the value of the investment
+after 8 years.
 
 **Solution:**
 
@@ -312,7 +322,8 @@ $(1.06)^8 \approx 1.5938$.
 
 $A_8 \approx \$15\,938$.
 
-In exact form: $A_8 = 10000 \times (1.06)^8 = 10000 \times \left(\dfrac{106}{100}\right)^8 = 10000 \times \dfrac{106^8}{100^8}$.
+In exact form:
+$A_8 = 10000 \times (1.06)^8 = 10000 \times \left(\dfrac{106}{100}\right)^8 = 10000 \times \dfrac{106^8}{100^8}$.
 
 ---
 
@@ -320,7 +331,8 @@ In exact form: $A_8 = 10000 \times (1.06)^8 = 10000 \times \left(\dfrac{106}{100
 
 **Question:**
 
-If three positive numbers $a$$b$$c$ form a geometric sequence and $a + b + c = 26$ and $a + 2b - c = 10$Find $a$$b$And $c$.
+If three positive numbers $a$$b$$c$ form a geometric sequence and $a + b + c = 26$ and
+$a + 2b - c = 10$Find $a$$b$And $c$.
 
 **Solution:**
 
@@ -360,7 +372,9 @@ $c = ar^2 = 6 \times \dfrac{16}{9} = \dfrac{32}{3}$.
 
 Check: $6 + 8 + \dfrac{32}{3} = 14 + \dfrac{32}{3} = \dfrac{42 + 32}{3} = \dfrac{74}{3} \neq 26$.
 
-There is an inconsistency. Let me re-check: $\dfrac{74}{3} \approx 24.67 \neq 26$. This means there may be a computational error, or the problem has no solution with positive integers. The approach is correct but the numbers may need adjustment.
+There is an inconsistency. Let me re-check: $\dfrac{74}{3} \approx 24.67 \neq 26$. This means there
+may be a computational error, or the problem has no solution with positive integers. The approach is
+correct but the numbers may need adjustment.
 
 ---
 
@@ -384,15 +398,26 @@ $$= 1 - \frac{1}{n+1} = \frac{n}{n+1}$$
 
 ## Common Pitfalls
 
-1. **Confusing arithmetic and geometric sequences.** An arithmetic sequence has a constant **difference** between consecutive terms ($u_{n+1} - u_n = d$). A geometric sequence has a constant **ratio** ($\dfrac{u_{n+1}}{u_n} = r$). Always check which one applies before using formulas.
+1. **Confusing arithmetic and geometric sequences.** An arithmetic sequence has a constant
+   **difference** between consecutive terms ($u_{n+1} - u_n = d$). A geometric sequence has a
+   constant **ratio** ($\dfrac{u_{n+1}}{u_n} = r$). Always check which one applies before using
+   formulas.
 
-2. **Using the wrong formula for the sum of a geometric series.** $S_n = \dfrac{a(r^n - 1)}{r - 1}$ when $r \neq 1$. When $r = 1$The sum is $S_n = na$. Forgetting the $r \neq 1$ condition and using the formula with $r = 1$ leads to division by zero.
+2. **Using the wrong formula for the sum of a geometric series.** $S_n = \dfrac{a(r^n - 1)}{r - 1}$
+   when $r \neq 1$. When $r = 1$The sum is $S_n = na$. Forgetting the $r \neq 1$ condition and using
+   the formula with $r = 1$ leads to division by zero.
 
-3. **Incorrect index in sigma notation.** When evaluating $\displaystyle\sum_{k=1}^{n} f(k)$The index $k$ starts at $1$ and ends at $n$. Confusing the starting index (e.g. Using $k = 0$ instead of $k = 1$) is a common source of error.
+3. **Incorrect index in sigma notation.** When evaluating $\displaystyle\sum_{k=1}^{n} f(k)$The
+   index $k$ starts at $1$ and ends at $n$. Confusing the starting index (e.g. Using $k = 0$ instead
+   of $k = 1$) is a common source of error.
 
-4. **Assuming convergence without checking $|r| < 1$.** The infinite sum formula $S_\infty = \dfrac{a}{1 - r}$ is only valid when $|r| < 1$. If $|r| \geq 1$The series diverges and the sum does not exist.
+4. **Assuming convergence without checking $|r| < 1$.** The infinite sum formula
+   $S_\infty = \dfrac{a}{1 - r}$ is only valid when $|r| < 1$. If $|r| \geq 1$The series diverges
+   and the sum does not exist.
 
-5. **Sign errors in the arithmetic series sum formula.** The formula is $S_n = \dfrac{n}{2}[2a + (n-1)d]$. A common error is writing $(n + 1)d$ instead of $(n - 1)d$Or using $a + nd$ instead of $2a + (n-1)d$.
+5. **Sign errors in the arithmetic series sum formula.** The formula is
+   $S_n = \dfrac{n}{2}[2a + (n-1)d]$. A common error is writing $(n + 1)d$ instead of $(n - 1)d$Or
+   using $a + nd$ instead of $2a + (n-1)d$.
 
 ---
 
@@ -402,10 +427,9 @@ $$= 1 - \frac{1}{n+1} = \frac{n}{n+1}$$
 
 The $n$-th term of a sequence is given by $u_n = 3n - 1$.
 
-(a) Find $u_1$ and $u_{10}$. (2 marks)
-(b) Show that the sequence is arithmetic and state the common difference. (2 marks)
-(c) Find the sum of the first 50 terms. (2 marks)
-(d) Find the smallest value of $n$ such that $S_n > 5000$. (3 marks)
+(a) Find $u_1$ and $u_{10}$. (2 marks) (b) Show that the sequence is arithmetic and state the common
+difference. (2 marks) (c) Find the sum of the first 50 terms. (2 marks) (d) Find the smallest value
+of $n$ such that $S_n > 5000$. (3 marks)
 
 **Solution:**
 
@@ -429,20 +453,21 @@ Smallest integer: $n = 58$.
 
 A geometric sequence has first term 3 and common ratio $\dfrac{1}{2}$.
 
-(a) Find the 5th term. (1 mark)
-(b) Find the sum of the first 10 terms, giving your answer as a fraction. (3 marks)
-(c) Find the sum to infinity. (2 marks)
-(d) Find the sum of the terms from the 5th to infinity. (2 marks)
+(a) Find the 5th term. (1 mark) (b) Find the sum of the first 10 terms, giving your answer as a
+fraction. (3 marks) (c) Find the sum to infinity. (2 marks) (d) Find the sum of the terms from the
+5th to infinity. (2 marks)
 
 **Solution:**
 
 (a) $u_5 = 3\left(\dfrac{1}{2}\right)^4 = 3 \times \dfrac{1}{16} = \dfrac{3}{16}$.
 
-(b) $S_{10} = \dfrac{3\left(1 - (1/2)^{10}\right)}{1 - 1/2} = \dfrac{3\left(1 - \dfrac{1}{1024}\right)}{1/2} = 6\left(1 - \dfrac{1}{1024}\right) = 6 \times \dfrac{1023}{1024} = \dfrac{6138}{1024} = \dfrac{3069}{512}$.
+(b)
+$S_{10} = \dfrac{3\left(1 - (1/2)^{10}\right)}{1 - 1/2} = \dfrac{3\left(1 - \dfrac{1}{1024}\right)}{1/2} = 6\left(1 - \dfrac{1}{1024}\right) = 6 \times \dfrac{1023}{1024} = \dfrac{6138}{1024} = \dfrac{3069}{512}$.
 
 (c) $S_\infty = \dfrac{3}{1 - 1/2} = 6$.
 
-(d) Sum from 5th to infinity $= S_\infty - S_4 = 6 - \dfrac{3(1 - 1/16)}{1/2} = 6 - 6 \times \dfrac{15}{16} = 6 - \dfrac{90}{16} = 6 - \dfrac{45}{8} = \dfrac{48 - 45}{8} = \dfrac{3}{8}$.
+(d) Sum from 5th to infinity
+$= S_\infty - S_4 = 6 - \dfrac{3(1 - 1/16)}{1/2} = 6 - 6 \times \dfrac{15}{16} = 6 - \dfrac{90}{16} = 6 - \dfrac{45}{8} = \dfrac{48 - 45}{8} = \dfrac{3}{8}$.
 
 ---
 
@@ -450,26 +475,29 @@ A geometric sequence has first term 3 and common ratio $\dfrac{1}{2}$.
 
 Evaluate:
 
-(a) $\displaystyle\sum_{k=1}^{100} k^2$ (2 marks)
-(b) $\displaystyle\sum_{k=1}^{100} (2k - 1)^2$ (3 marks)
-(c) $\displaystyle\sum_{k=1}^{n} k(k+1)$ in terms of $n$. (3 marks)
+(a) $\displaystyle\sum_{k=1}^{100} k^2$ (2 marks) (b) $\displaystyle\sum_{k=1}^{100} (2k - 1)^2$ (3
+marks) (c) $\displaystyle\sum_{k=1}^{n} k(k+1)$ in terms of $n$. (3 marks)
 
 **Solution:**
 
-(a) $\displaystyle\sum_{k=1}^{100} k^2 = \frac{100 \times 101 \times 201}{6} = \frac{2030100}{6} = 338350$.
+(a)
+$\displaystyle\sum_{k=1}^{100} k^2 = \frac{100 \times 101 \times 201}{6} = \frac{2030100}{6} = 338350$.
 
-(b) $\displaystyle\sum_{k=1}^{100} (2k-1)^2 = \sum_{k=1}^{100} (4k^2 - 4k + 1) = 4 \times 338350 - 4 \times 5050 + 100 = 1353400 - 20200 + 100 = 1333300$.
+(b)
+$\displaystyle\sum_{k=1}^{100} (2k-1)^2 = \sum_{k=1}^{100} (4k^2 - 4k + 1) = 4 \times 338350 - 4 \times 5050 + 100 = 1353400 - 20200 + 100 = 1333300$.
 
-(c) $\displaystyle\sum_{k=1}^{n} (k^2 + k) = \frac{n(n+1)(2n+1)}{6} + \frac{n(n+1)}{2} = \frac{n(n+1)}{6}[2n + 1 + 3] = \frac{n(n+1)(2n+4)}{6} = \frac{n(n+1)(n+2)}{3}$.
+(c)
+$\displaystyle\sum_{k=1}^{n} (k^2 + k) = \frac{n(n+1)(2n+1)}{6} + \frac{n(n+1)}{2} = \frac{n(n+1)}{6}[2n + 1 + 3] = \frac{n(n+1)(2n+4)}{6} = \frac{n(n+1)(n+2)}{3}$.
 
 ---
 
 ### DSE-4
 
-A ball is dropped from a height of 10 metres. Each time it bounces, it reaches a height that is $80\%$ of the previous height.
+A ball is dropped from a height of 10 metres. Each time it bounces, it reaches a height that is
+$80\%$ of the previous height.
 
-(a) Find the height reached after the 4th bounce. (2 marks)
-(b) Find the total vertical distance travelled when the ball comes to rest. (4 marks)
+(a) Find the height reached after the 4th bounce. (2 marks) (b) Find the total vertical distance
+travelled when the ball comes to rest. (4 marks)
 
 **Solution:**
 
@@ -487,11 +515,11 @@ $= 10 + 20 \times \dfrac{0.8}{1 - 0.8} = 10 + 20 \times 4 = 10 + 80 = 90$ m.
 
 ### DSE-5
 
-The sum of the first three terms of a geometric sequence is $38$. The sum of the first six terms is $351$.
+The sum of the first three terms of a geometric sequence is $38$. The sum of the first six terms is
+$351$.
 
-(a) Show that the common ratio $r$ satisfies $r^3 + r^2 + r - 8 = 0$. (4 marks)
-(b) Find the value of $r$. (2 marks)
-(c) Find the first term $a$. (1 mark)
+(a) Show that the common ratio $r$ satisfies $r^3 + r^2 + r - 8 = 0$. (4 marks) (b) Find the value
+of $r$. (2 marks) (c) Find the first term $a$. (1 mark)
 
 **Solution:**
 
@@ -519,4 +547,6 @@ $38(1 + r^3) = 351 \implies 38 + 38r^3 = 351 \implies 38r^3 = 313$.
 
 $r^3 = \dfrac{313}{38}$.
 
-This does not simplify to a nice equation. The problem likely expects integer answers, suggesting the numbers may differ. The method is correct; the specific numbers may need adjustment for a clean result.
+This does not simplify to a nice equation. The problem likely expects integer answers, suggesting
+the numbers may differ. The method is correct; the specific numbers may need adjustment for a clean
+result.

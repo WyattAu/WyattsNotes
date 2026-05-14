@@ -1,6 +1,8 @@
 ---
 title: Depression
-description: "Comprehensive coverage of biological, cognitive, and sociocultural explanations of depression, treatments including SSRIs and CBT, and key research for IB"
+description:
+  'Comprehensive coverage of biological, cognitive, and sociocultural explanations of depression,
+  treatments including SSRIs and CBT, and key research for IB'
 slug: depression
 ---
 
@@ -48,15 +50,15 @@ Inhibitors) in treating depression, which increase serotonin availability in the
 **Evaluation of neurotransmitter theories:**
 
 - The monoamine hypothesis is supported by the pharmacological evidence, but it is incomplete. SSRIs
- increase serotonin availability within hours, but their therapeutic effects take 2--4
- weeks to develop, suggesting that the antidepressant mechanism involves downstream changes (e.g.,
- neuroplasticity, BDNF expression) rather than correcting a neurotransmitter deficit.
+  increase serotonin availability within hours, but their therapeutic effects take 2--4 weeks to
+  develop, suggesting that the antidepressant mechanism involves downstream changes (e.g.,
+  neuroplasticity, BDNF expression) rather than correcting a neurotransmitter deficit.
 - The hypothesis cannot explain why some individuals with normal neurotransmitter function develop
- depression, nor why some individuals with low neurotransmitter function do not.
+  depression, nor why some individuals with low neurotransmitter function do not.
 - Kirsch et al. (2008) conducted a meta-analysis of clinical trials of antidepressants (including
- SSRIs) and found that the difference between drug and placebo was clinically significant only for
- patients with very severe depression. For mild to moderate depression, the drug-placebo difference
- was small and possibly not clinically meaningful.
+  SSRIs) and found that the difference between drug and placebo was clinically significant only for
+  patients with very severe depression. For mild to moderate depression, the drug-placebo difference
+  was small and possibly not clinically meaningful.
 
 ### The HPA Axis and Neuroendocrine Factors
 
@@ -87,39 +89,39 @@ Of Beck's theory is the **cognitive triad**: three types of negative beliefs abo
 World, and the future.
 
 1. **Negative views about the self:** "I am worthless," "I am a failure," "I am unlovable." The
- individual believes they are fundamentally deficient.
+   individual believes they are fundamentally deficient.
 2. **Negative views about the world:** "The world is unfair," "People are against me," "Nothing ever
- goes right." The individual interprets experiences through a negative filter.
+   goes right." The individual interprets experiences through a negative filter.
 3. **Negative views about the future:** "Things will never get better," "There is no hope," "Nothing
- I do will make a difference." The individual expects continued suffering and failure.
+   I do will make a difference." The individual expects continued suffering and failure.
 
 **Cognitive distortions:** Beck identified specific patterns of biased thinking that maintain the
 Cognitive triad:
 
 - **Arbitrary inference:** Drawing negative conclusions without evidence (e.g., "She didn't smile at
- me; she must dislike me").
+  me; she must dislike me").
 - **Selective abstraction:** Focusing exclusively on negative details while ignoring positive
- information.
+  information.
 - **Overgeneralisation:** Drawing a general conclusion from a single negative event (e.g., "I failed
- this exam; I will fail at everything").
+  this exam; I will fail at everything").
 - **Magnification and minimisation:** Exaggerating the significance of negative events and
- minimising the significance of positive events.
+  minimising the significance of positive events.
 - **Personalisation:** Attributing negative events to oneself when there is no basis for doing so.
 - **Dichotomous (all-or-nothing) thinking:** Seeing things in black-and-white categories (e.g., "If
- I am not perfect, I am a total failure").
+  I am not perfect, I am a total failure").
 
 **Evaluation of Beck's theory:**
 
 - The theory has strong empirical support. Depressed individuals do show more negative automatic
- thoughts and cognitive distortions than non-depressed individuals, as measured by the
- Dysfunctional Attitudes Scale and the Automatic Thoughts Questionnaire.
+  thoughts and cognitive distortions than non-depressed individuals, as measured by the
+  Dysfunctional Attitudes Scale and the Automatic Thoughts Questionnaire.
 - The theory forms the basis of cognitive-behavioural therapy (CBT), which is one of the most
- effective treatments for depression.
+  effective treatments for depression.
 - However, the direction of causality is debated. Do negative cognitions cause depression, or does
- depression cause negative cognitions? Longitudinal studies (e.g., Lewinsohn, Steinmetz, Larson,
- and Franklin, 1981) have provided evidence for both directions: negative cognitions predict the
- onset of depression, but depression also increases the frequency of negative cognitions,
- suggesting a reciprocal relationship.
+  depression cause negative cognitions? Longitudinal studies (e.g., Lewinsohn, Steinmetz, Larson,
+  and Franklin, 1981) have provided evidence for both directions: negative cognitions predict the
+  onset of depression, but depression also increases the frequency of negative cognitions,
+  suggesting a reciprocal relationship.
 
 ### Learned Helplessness and Attributional Style
 
@@ -136,7 +138,7 @@ Experience negative events, they make causal attributions along three dimensions
 1. **Internal versus external:** Is the cause due to me (internal) or to external circumstances?
 2. **Stable versus unstable:** Is the cause permanent (stable) or temporary (unstable)?
 3. **Global versus specific:** Does the cause affect all areas of my life (global) or just this
- particular situation (specific)?
+   particular situation (specific)?
 
 A **pessimistic attributional style** (attributing negative events to internal, stable, and global
 Causes: "I failed because I am incompetent, and I will always be incompetent at everything") is
@@ -146,13 +148,13 @@ Events to external, unstable, and specific causes) is protective.
 **Evaluation:**
 
 - The reformulated model is well-supported by research. Pessimistic attributional style predicts the
- onset of depression in prospective studies (Alloy et al., 2006).
+  onset of depression in prospective studies (Alloy et al., 2006).
 - The model explains individual differences in vulnerability to depression: two people may
- experience the same negative event, but only the person with a pessimistic attributional style is
- likely to become depressed.
+  experience the same negative event, but only the person with a pessimistic attributional style is
+  likely to become depressed.
 - However, not all individuals with pessimistic attributional styles develop depression, and not all
- individuals with depression have pessimistic attributional styles. Attributional style is one
- vulnerability factor among many.
+  individuals with depression have pessimistic attributional styles. Attributional style is one
+  vulnerability factor among many.
 
 ## Sociocultural Explanations
 
@@ -177,13 +179,13 @@ Women are approximately twice as likely as men to be diagnosed with depression. 
 Explanations include:
 
 - **Biological factors:** Hormonal fluctuations (menstrual cycle, postpartum period, menopause) may
- contribute.
+  contribute.
 - **Social role explanations:** Women are more likely to experience chronic stressors such as
- domestic violence, caregiving burdens, and workplace discrimination.
+  domestic violence, caregiving burdens, and workplace discrimination.
 - **Rumination:** Women are more likely than men to ruminate on their negative emotions, which
- prolongs and intensifies depressive episodes (Nolen-Hoeksema, 1991).
+  prolongs and intensifies depressive episodes (Nolen-Hoeksema, 1991).
 - **Diagnostic bias:** Women may be more likely to seek help and receive a diagnosis, while men's
- depression may go unrecognised or be expressed as anger or substance abuse.
+  depression may go unrecognised or be expressed as anger or substance abuse.
 
 ## Treatments
 
@@ -213,9 +215,9 @@ CBT for depression, developed by Beck, aims to identify and modify the negative 
 Cognitive distortions, and core beliefs that maintain the cognitive triad. CBT involves:
 
 1. **Cognitive restructuring:** Identifying negative automatic thoughts and challenging them with
- evidence.
+   evidence.
 2. **Behavioural activation:** Encouraging the individual to engage in pleasurable or meaningful
- activities that they have been avoiding due to depression.
+   activities that they have been avoiding due to depression.
 3. **Skills training:** Teaching coping skills, problem-solving skills, and social skills.
 
 **Effectiveness:** CBT is at least as effective as pharmacotherapy for mild to moderate depression
@@ -235,16 +237,16 @@ Combination approaches showed the greatest improvement.
 <summary>Common Pitfalls: Depression</summary>
 
 - **Do not assume depression is caused by a single factor.** Depression is a multifactorial disorder
- influenced by genetic, neurobiological, cognitive, and sociocultural factors interacting in
- complex ways.
-- **Do not present the serotonin hypothesis as established fact.** While serotonin is 
- involved in depression, the relationship is more complex than a simple "serotonin deficiency." The
- monoamine hypothesis is an oversimplification that has been refined by more recent research on
- neuroplasticity, inflammation, and the HPA axis.
+  influenced by genetic, neurobiological, cognitive, and sociocultural factors interacting in
+  complex ways.
+- **Do not present the serotonin hypothesis as established fact.** While serotonin is involved in
+  depression, the relationship is more complex than a simple "serotonin deficiency." The monoamine
+  hypothesis is an oversimplification that has been refined by more recent research on
+  neuroplasticity, inflammation, and the HPA axis.
 - **Do not assume that antidepressants work by "correcting a chemical imbalance."** This popular
- explanation is not supported by the evidence. The therapeutic mechanism of SSRIs is not fully
- understood but likely involves downstream changes in neuroplasticity and gene expression rather
- than increasing serotonin levels.
+  explanation is not supported by the evidence. The therapeutic mechanism of SSRIs is not fully
+  understood but likely involves downstream changes in neuroplasticity and gene expression rather
+  than increasing serotonin levels.
 
 </details>
 

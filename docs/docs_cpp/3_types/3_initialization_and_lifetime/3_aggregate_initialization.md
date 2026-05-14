@@ -1,6 +1,8 @@
 ---
 title: Aggregate Initialization
-description: "C++: Aggregate Initialization — What Qualifies as an Aggregate; C++11/14: The Original Definition [N4950 §11.6.1]; C++17: Relaxed Aggregates [N4950 §11.6.1]."
+description:
+  'C++: Aggregate Initialization — What Qualifies as an Aggregate; C++11/14: The Original Definition
+  [N4950 §11.6.1]; C++17: Relaxed Aggregates [N4950 §11.6.1].'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -8,6 +10,7 @@ categories:
   - Cpp
 slug: aggregate-initialization
 ---
+
 Import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 Aggregate initialization is the mechanism by which plain data structures (structs, arrays, unions)
@@ -55,7 +58,7 @@ Derived d{{1}, 2};  // base members initialized first, then derived
 C++20 allowed:
 
 - **Allowed**: Public base classes with non-trivial default constructors (if derived has no
- user-provided constructor)
+  user-provided constructor)
 - **Allowed**: Parenthesized initialization of base class aggregates in derived aggregates
 
 ```cpp
@@ -68,14 +71,14 @@ C c{1, 2, 3};  // C++20: initializes A::a, B::b, then C::c
 
 ### Aggregate Evolution Summary
 
-| Feature | C++11/14 | C++17 | C++20 |
+| Feature                                    | C++11/14 | C++17        | C++20        |
 | :----------------------------------------- | :------- | :----------- | :----------- |
-| No user-declared constructors | Required | Defaulted OK | Defaulted OK |
-| No private/protected members | Required | Required | Required |
-| No base classes | Required | Public only | Public only |
-| No virtual functions | Required | Required | Required |
-| Designated initializers | No | No | Yes |
-| Aggregate with default member initializers | Yes | Yes | Yes |
+| No user-declared constructors              | Required | Defaulted OK | Defaulted OK |
+| No private/protected members               | Required | Required     | Required     |
+| No base classes                            | Required | Public only  | Public only  |
+| No virtual functions                       | Required | Required     | Required     |
+| Designated initializers                    | No       | No           | Yes          |
+| Aggregate with default member initializers | Yes      | Yes          | Yes          |
 
 ## Aggregate Initialization Syntax
 
@@ -152,7 +155,7 @@ Employee e2{.id = 1002, .name = "Bob"};  // salary uses default member initializ
 1. **Designators must name direct non-static data members** -- no nested paths like `.a.b`.
 2. **Designators can appear in any order**, but members are initialized in declaration order.
 3. **All unnamed members before a designated member must have initializers** (either explicit or
- default).
+   default).
 
 ```cpp
 struct S {
@@ -234,7 +237,7 @@ When does value-initialization apply?
 
 - Empty brace initializer: `int x{};`
 - Empty parentheses for class types with constructors: `std::string s();` (but this is vexing
- parse!)
+  parse!)
 - `new T()` or `new T{}`
 
 ### Zero-Initialization

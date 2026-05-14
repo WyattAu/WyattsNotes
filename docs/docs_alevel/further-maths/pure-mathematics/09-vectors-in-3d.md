@@ -1,6 +1,8 @@
 ---
 title: Vectors in 3D
-description: "A-Level Further Maths notes on Vectors in 3D: Board Coverage; 1. Review of A Level Vectors; 2.1 Notation; 2.2 Position vectors and displacement."
+description:
+  'A-Level Further Maths notes on Vectors in 3D: Board Coverage; 1. Review of A Level Vectors; 2.1
+  Notation; 2.2 Position vectors and displacement.'
 date: 2026-04-02T00:00:00.000Z
 tags:
   - FurtherMaths
@@ -10,6 +12,7 @@ categories:
 slug: further-vectors
 sidebar_position: 9
 ---
+
 ## Vectors in 3D
 
 This chapter extends the study of vectors from A Level Mathematics into three dimensions,
@@ -18,12 +21,12 @@ Tools are essential for geometry, mechanics, and physics at university level.
 
 ### Board Coverage
 
-| Board | Paper | Notes |
+| Board   | Paper   | Notes                                                                     |
 | ------- | ------- | ------------------------------------------------------------------------- |
-| AQA | Paper 1 | 3D vectors, scalar product, vector product, planes, scalar triple product |
-| Edexcel | FP1 | 3D vectors, scalar product, vector product, lines and planes |
-| OCR (A) | Paper 1 | 3D vectors, scalar product, vector product, planes |
-| CIE | P1 | 3D vectors, scalar product, vector product, lines, planes, intersections |
+| AQA     | Paper 1 | 3D vectors, scalar product, vector product, planes, scalar triple product |
+| Edexcel | FP1     | 3D vectors, scalar product, vector product, lines and planes              |
+| OCR (A) | Paper 1 | 3D vectors, scalar product, vector product, planes                        |
+| CIE     | P1      | 3D vectors, scalar product, vector product, lines, planes, intersections  |
 
 :::info All boards cover 3D vectors, the scalar product, and the vector product. AQA includes the
 Scalar triple product for volumes. CIE places particular emphasis on intersections of lines and
@@ -99,7 +102,7 @@ Where $\theta$ is the angle between $\mathbf{a}$ and $\mathbf{b}$.
 - $\mathbf{a}\cdot\mathbf{a} = |\mathbf{a}|^2$
 - $\mathbf{a}\cdot\mathbf{b} = \mathbf{b}\cdot\mathbf{a}$ (commutative)
 - $\mathbf{a}\cdot(\mathbf{b} + \mathbf{c}) = \mathbf{a}\cdot\mathbf{b} + \mathbf{a}\cdot\mathbf{c}$
- (distributive)
+  (distributive)
 - $\mathbf{a}\cdot\mathbf{b} = 0 \iff \mathbf{a} \perp \mathbf{b}$ (when neither is zero)
 
 <hr />
@@ -144,8 +147,7 @@ $$|\mathbf{a}\times\mathbf{b}|^2 = |\mathbf{a}|^2|\mathbf{b}|^2(1 - \cos^2\theta
 $$|\mathbf{a}\times\mathbf{b}| = |\mathbf{a}||\mathbf{b}|\sin\theta$$
 
 The area of the parallelogram is base $\times$ height
-$= |\mathbf{a}| \times |\mathbf{b}|\sin\theta$Which equals $|\mathbf{a}\times\mathbf{b}|$.
-$\square$
+$= |\mathbf{a}| \times |\mathbf{b}|\sin\theta$Which equals $|\mathbf{a}\times\mathbf{b}|$. $\square$
 
 The cross product $\mathbf{a}\times\mathbf{b}$ is **perpendicular** to both $\mathbf{a}$ and
 $\mathbf{b}$And its direction is given by the right-hand rule.
@@ -155,11 +157,11 @@ $\mathbf{b}$And its direction is given by the right-hand rule.
 - $\mathbf{a}\times\mathbf{b} = -(\mathbf{b}\times\mathbf{a})$ (anti-commutative)
 - $\mathbf{a}\times\mathbf{a} = \mathbf{0}$
 - $\mathbf{a}\times\mathbf{b} = \mathbf{0} \iff \mathbf{a}$ and $\mathbf{b}$ are parallel (or one is
- zero)
+  zero)
 - $\mathbf{a}\times(\mathbf{b}+\mathbf{c}) = \mathbf{a}\times\mathbf{b} + \mathbf{a}\times\mathbf{c}$
- (distributive)
+  (distributive)
 - $\mathbf{i}\times\mathbf{j} = \mathbf{k}$$\mathbf{j}\times\mathbf{k} = \mathbf{i}$
- $\mathbf{k}\times\mathbf{i} = \mathbf{j}$
+  $\mathbf{k}\times\mathbf{i} = \mathbf{j}$
 
 :::warning warning $\mathbf{a}\times\mathbf{b} = -\mathbf{b}\times\mathbf{a}$. The cross product is
 Only defined in 3D. :::
@@ -194,8 +196,10 @@ $\mathbf{r}_2 = \mathbf{a}_2 + \mu\mathbf{d}_2$:
 1. Equate components to get three equations in $\lambda$ and $\mu$.
 2. Solve two equations for $\lambda$ and $\mu$.
 3. **Check** the third equation:
- - If consistent: the lines **intersect**.
- - If inconsistent: the lines are **skew** (not parallel, not intersecting).
+
+- If consistent: the lines **intersect**.
+- If inconsistent: the lines are **skew** (not parallel, not intersecting).
+
 4. If $\mathbf{d}_1 \times \mathbf{d}_2 = \mathbf{0}$: the lines are **parallel**.
 
 **Example.** Find the intersection of
@@ -205,8 +209,7 @@ And $\mathbf{r}_2 = \begin{pmatrix}3\\1\\4\end{pmatrix} + \mu\begin{pmatrix}2\\1
 Equating: $1+\lambda = 3+2\mu$$2-\lambda = 1+\mu$$2\lambda = 4-\mu$.
 
 From equation 2: $\lambda = 1 - \mu$. From equation 1:
-$1+(1-\mu) = 3+2\mu \implies 2-\mu = 3+2\mu \implies -3\mu = 1 \implies \mu = -1/3$
-$\lambda = 4/3$.
+$1+(1-\mu) = 3+2\mu \implies 2-\mu = 3+2\mu \implies -3\mu = 1 \implies \mu = -1/3$ $\lambda = 4/3$.
 
 Check equation 3: $2(4/3) = 4-(-1/3) \implies 8/3 = 13/3$. **Not consistent** — the lines are skew.
 
@@ -347,11 +350,11 @@ $\square$
 ### 8.3 Properties
 
 - $\mathbf{a}\cdot(\mathbf{b}\times\mathbf{c}) = \mathbf{b}\cdot(\mathbf{c}\times\mathbf{a}) = \mathbf{c}\cdot(\mathbf{a}\times\mathbf{b})$
- (cyclic permutation)
+  (cyclic permutation)
 - $\mathbf{a}\cdot(\mathbf{b}\times\mathbf{c}) = -\mathbf{a}\cdot(\mathbf{c}\times\mathbf{b})$
- (swapping two vectors changes sign)
-- $[\mathbf{a}\,\mathbf{b}\,\mathbf{c}] = 0$ if and only if $\mathbf{a}$$\mathbf{b}$$\mathbf{c}$
- are coplanar
+  (swapping two vectors changes sign)
+- $[\mathbf{a}\,\mathbf{b}\,\mathbf{c}] = 0$ if and only if $\mathbf{a}$$\mathbf{b}$$\mathbf{c}$ are
+  coplanar
 
 :::info info $C$$D$ are coplanar, then
 $\overrightarrow{AB}\cdot(\overrightarrow{AC}\times\overrightarrow{AD}) = 0$. :::
@@ -373,16 +376,16 @@ Between any point on each line onto this perpendicular direction.
 
 ## 10. Key Results Summary
 
-| Quantity | Formula |
+| Quantity              | Formula                                                                                                |
 | --------------------- | ------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------- | -------- | -------------------------------- | ----------- |
-| Dot product | $\mathbf{a}\cdot\mathbf{b} = a_1b_1 + a_2b_2 + a_3b_3 =                                                | \mathbf{a}                                                           |          | \mathbf{b}                       | \cos\theta$ |
-| Cross product | $\mathbf{a}\times\mathbf{b} = \begin{pmatrix}a_2b_3-a_3b_2\\a_3b_1-a_1b_3\\a_1b_2-a_2b_1\end{pmatrix}$ |
-| Line | $\mathbf{r} = \mathbf{a} + \lambda\mathbf{d}$ |
-| Plane (vector) | $\mathbf{r}\cdot\mathbf{n} = d$ |
-| Plane (Cartesian) | $ax + by + cz = d$ |
-| Point-plane distance | $D = \dfrac◆LB◆                                                                                        | \mathbf{p}\cdot\mathbf{n} - d                                        | ◆RB◆◆LB◆ | \mathbf{n}                       | ◆RB◆$ |
-| Parallelepiped volume | $V =                                                                                                   | \mathbf{a}\cdot(\mathbf{b}\times\mathbf{c})                          | $ |
-| Skew line distance | $D = \dfrac◆LB◆                                                                                        | (\mathbf{a}\_2-\mathbf{a}\_1)\cdot(\mathbf{d}\_1\times\mathbf{d}\_2) | ◆RB◆◆LB◆ | \mathbf{d}\_1\times\mathbf{d}\_2 | ◆RB◆$ |
+| Dot product           | $\mathbf{a}\cdot\mathbf{b} = a_1b_1 + a_2b_2 + a_3b_3 =                                                | \mathbf{a}                                                           |          | \mathbf{b}                       | \cos\theta$ |
+| Cross product         | $\mathbf{a}\times\mathbf{b} = \begin{pmatrix}a_2b_3-a_3b_2\\a_3b_1-a_1b_3\\a_1b_2-a_2b_1\end{pmatrix}$ |
+| Line                  | $\mathbf{r} = \mathbf{a} + \lambda\mathbf{d}$                                                          |
+| Plane (vector)        | $\mathbf{r}\cdot\mathbf{n} = d$                                                                        |
+| Plane (Cartesian)     | $ax + by + cz = d$                                                                                     |
+| Point-plane distance  | $D = \dfrac◆LB◆                                                                                        | \mathbf{p}\cdot\mathbf{n} - d                                        | ◆RB◆◆LB◆ | \mathbf{n}                       | ◆RB◆$       |
+| Parallelepiped volume | $V =                                                                                                   | \mathbf{a}\cdot(\mathbf{b}\times\mathbf{c})                          | $        |
+| Skew line distance    | $D = \dfrac◆LB◆                                                                                        | (\mathbf{a}\_2-\mathbf{a}\_1)\cdot(\mathbf{d}\_1\times\mathbf{d}\_2) | ◆RB◆◆LB◆ | \mathbf{d}\_1\times\mathbf{d}\_2 | ◆RB◆$       |
 
 <hr />
 
@@ -392,8 +395,8 @@ Between any point on each line onto this perpendicular direction.
 <summary>Problem 1</summary>
 
 Given $\mathbf{a} = \begin{pmatrix}2\\-1\\3\end{pmatrix}$ and
-$\mathbf{b} = \begin{pmatrix}1\\4\\-2\end{pmatrix}$Find $\mathbf{a}\times\mathbf{b}$ and verify
-That it is perpendicular to both $\mathbf{a}$ and $\mathbf{b}$.
+$\mathbf{b} = \begin{pmatrix}1\\4\\-2\end{pmatrix}$Find $\mathbf{a}\times\mathbf{b}$ and verify That
+it is perpendicular to both $\mathbf{a}$ and $\mathbf{b}$.
 
 </details>
 
@@ -719,8 +722,8 @@ Equation: $-x - 2y - z = -3$I.e., $\boxed{x + 2y + z = 3}$.
 
 ### Example 11.6: Verifying coplanarity
 
-**Problem.** Determine whether the points $A(1, 0, 1)$$B(2, 1, 3)$$C(3, 1, 4)$$D(0, -1, -1)$
-Are coplanar.
+**Problem.** Determine whether the points $A(1, 0, 1)$$B(2, 1, 3)$$C(3, 1, 4)$$D(0, -1, -1)$ Are
+coplanar.
 
 **Solution.** $\overrightarrow{AB} = (1, 1, 2)$$\overrightarrow{AC} = (2, 1, 3)$
 $\overrightarrow{AD} = (-1, -1, -2)$.
@@ -921,17 +924,17 @@ Representations of curves.
 
 ## 15. Key Results Summary
 
-| Result | Formula |
+| Result                   | Formula                                                                                                                       |
 | ------------------------ | ----------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- | -------- | -------------------------------- | ---------------------------------- | ------------- | ----- |
-| Scalar product | $\mathbf{a}\cdot\mathbf{b} =                                                                                                  | \mathbf{a}                                                           |          | \mathbf{b}                       | \cos\theta = a_1b_1+a_2b_2+a_3b_3$ |
-| Vector product | $\mathbf{a}\times\mathbf{b} = \begin{pmatrix}a_2b_3-a_3b_2\\a_3b_1-a_1b_3\\a_1b_2-a_2b_1\end{pmatrix}$ |
-| Scalar triple product | $[\mathbf{a},\mathbf{b},\mathbf{c}] = \mathbf{a}\cdot(\mathbf{b}\times\mathbf{c}) = \det(\mathbf{a}\;\mathbf{b}\;\mathbf{c})$ |
-| Distance: point to plane | $D = \dfrac◆LB◆                                                                                                               | \mathbf{a}\cdot\mathbf{n} - d                                        | ◆RB◆◆LB◆ | \mathbf{n}                       | ◆RB◆$ |
-| Distance: skew lines | $D = \dfrac◆LB◆                                                                                                               | (\mathbf{a}\_2-\mathbf{a}\_1)\cdot(\mathbf{d}\_1\times\mathbf{d}\_2) | ◆RB◆◆LB◆ | \mathbf{d}\_1\times\mathbf{d}\_2 | ◆RB◆$ |
-| Angle: line to plane | $\sin\phi = \dfrac◆LB◆                                                                                                        | \mathbf{d}\cdot\mathbf{n}                                            | ◆RB◆◆LB◆ | \mathbf{d}                       |                                    | \mathbf{n}    | ◆RB◆$ |
-| Angle: two planes | $\cos\theta = \dfrac◆LB◆                                                                                                      | \mathbf{n}\_1\cdot\mathbf{n}\_2                                      | ◆RB◆◆LB◆ | \mathbf{n}\_1                    |                                    | \mathbf{n}\_2 | ◆RB◆$ |
-| Volume of tetrahedron | $V = \dfrac{1}{6}                                                                                                             | [\mathbf{a},\mathbf{b},\mathbf{c}]                                   | $ |
-| Reflection in plane | $P' = P - 2D\hat{\mathbf{n}}$ where $D = \dfrac◆LB◆P\cdot\mathbf{n}-d◆RB◆◆LB◆                                                 | \mathbf{n}                                                           | ◆RB◆$ |
+| Scalar product           | $\mathbf{a}\cdot\mathbf{b} =                                                                                                  | \mathbf{a}                                                           |          | \mathbf{b}                       | \cos\theta = a_1b_1+a_2b_2+a_3b_3$ |
+| Vector product           | $\mathbf{a}\times\mathbf{b} = \begin{pmatrix}a_2b_3-a_3b_2\\a_3b_1-a_1b_3\\a_1b_2-a_2b_1\end{pmatrix}$                        |
+| Scalar triple product    | $[\mathbf{a},\mathbf{b},\mathbf{c}] = \mathbf{a}\cdot(\mathbf{b}\times\mathbf{c}) = \det(\mathbf{a}\;\mathbf{b}\;\mathbf{c})$ |
+| Distance: point to plane | $D = \dfrac◆LB◆                                                                                                               | \mathbf{a}\cdot\mathbf{n} - d                                        | ◆RB◆◆LB◆ | \mathbf{n}                       | ◆RB◆$                              |
+| Distance: skew lines     | $D = \dfrac◆LB◆                                                                                                               | (\mathbf{a}\_2-\mathbf{a}\_1)\cdot(\mathbf{d}\_1\times\mathbf{d}\_2) | ◆RB◆◆LB◆ | \mathbf{d}\_1\times\mathbf{d}\_2 | ◆RB◆$                              |
+| Angle: line to plane     | $\sin\phi = \dfrac◆LB◆                                                                                                        | \mathbf{d}\cdot\mathbf{n}                                            | ◆RB◆◆LB◆ | \mathbf{d}                       |                                    | \mathbf{n}    | ◆RB◆$ |
+| Angle: two planes        | $\cos\theta = \dfrac◆LB◆                                                                                                      | \mathbf{n}\_1\cdot\mathbf{n}\_2                                      | ◆RB◆◆LB◆ | \mathbf{n}\_1                    |                                    | \mathbf{n}\_2 | ◆RB◆$ |
+| Volume of tetrahedron    | $V = \dfrac{1}{6}                                                                                                             | [\mathbf{a},\mathbf{b},\mathbf{c}]                                   | $        |
+| Reflection in plane      | $P' = P - 2D\hat{\mathbf{n}}$ where $D = \dfrac◆LB◆P\cdot\mathbf{n}-d◆RB◆◆LB◆                                                 | \mathbf{n}                                                           | ◆RB◆$    |
 
 ---
 
@@ -1039,7 +1042,7 @@ This identity is extensively used in mechanics (e.g., angular momentum, moments)
 ### 17.4 Applications in geometry
 
 - **Coplanarity test:** $[\mathbf{a},\mathbf{b},\mathbf{c}] = 0 \iff$ the three vectors are
- coplanar.
+  coplanar.
 - **Volume of parallelepiped:** $V = |[\mathbf{a},\mathbf{b},\mathbf{c}]|$.
 - **Volume of tetrahedron:** $V = \dfrac{1}{6}|[\mathbf{a},\mathbf{b},\mathbf{c}]|$.
 

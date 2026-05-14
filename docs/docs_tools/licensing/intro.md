@@ -1,10 +1,13 @@
 ---
 id: intro
 title: Introduction to Licensing
-description: "Rigorous software tools notes covering Introduction to Licensing. Includes definitions, derivations, worked examples, and exam-style problems."
+description:
+  'Rigorous software tools notes covering Introduction to Licensing. Includes definitions,
+  derivations, worked examples, and exam-style problems.'
 slug: intro
 sidebar_position: 1
 ---
+
 ## What Software Licensing Is
 
 Every piece of software you write, compile, or deploy is subject to copyright law by default. Under
@@ -31,18 +34,18 @@ Patent provisions to address the intersection of copyright and patent rights in 
 Software licensing exists on a spectrum defined by how much freedom the license grants to downstream
 Users and what obligations it imposes in return:
 
-**Proprietary** — All rights reserved. The copyright holder grants limited, specific permissions
-( via an End User License Agreement, or EULA). No right to modify, redistribute, or in many
-Cases even reverse-engineer. The license can be revoked and is often restricted to a specific number
-Of users, machines, or use cases.
+**Proprietary** — All rights reserved. The copyright holder grants limited, specific permissions (
+via an End User License Agreement, or EULA). No right to modify, redistribute, or in many Cases even
+reverse-engineer. The license can be revoked and is often restricted to a specific number Of users,
+machines, or use cases.
 
 **Source-available** — Source code is published and readable, but modification and redistribution
 Rights are restricted. The code is visible but not "open source" in the OSI (Open Source Initiative)
 Sense. Examples: BSL (Business Source License), SSPL (Server Side Public License), Redis RSALv2.
 
-**Permissive open source** — Redistribution and modification are allowed with minimal obligations
-( attribution and license notice inclusion). Downstream works can be proprietary. Examples:
-MIT, Apache 2.0, BSD, ISC.
+**Permissive open source** — Redistribution and modification are allowed with minimal obligations (
+attribution and license notice inclusion). Downstream works can be proprietary. Examples: MIT,
+Apache 2.0, BSD, ISC.
 
 **Weak copyleft** — Modified files must remain under the same license, but the copyleft obligation
 Does not propagate to unrelated files that merely link to the licensed work. The boundary of the
@@ -84,9 +87,9 @@ Of the user's freedom.
 In practice, this translates to different risk profiles for downstream consumers:
 
 - Permissive licenses minimize downstream obligations, making them safer for corporate adoption but
- offering no protection against enclosure (someone taking your open-source work proprietary).
+  offering no protection against enclosure (someone taking your open-source work proprietary).
 - Copyleft licenses ensure that modifications remain free but create compliance obligations that
- some organizations find operationally burdensome, especially at scale.
+  some organizations find operationally burdensome, especially at scale.
 
 ## Why Systems Engineers Need to Understand Licensing
 
@@ -137,10 +140,10 @@ Adds additional restrictions (patent retaliation, anti-Tivoization) that GPLv2 d
 GPLv2 Section 4 explicitly prohibits adding additional restrictions. Similarly, Apache 2.0 includes
 A patent retaliation clause that adds restrictions that GPLv2 does not allow.
 
-Compatibility is directional . GPLv3 is compatible with Apache 2.0 (you can combine
-Apache 2.0 code into a GPLv3 project because GPLv3 permits the Apache 2.0 patent retaliation terms).
-But GPLv2 is not compatible with Apache 2.0 (you cannot combine Apache 2.0 code into a GPLv2 project
-Because the Apache 2.0 patent retaliation terms are "additional restrictions" that GPLv2 prohibits).
+Compatibility is directional . GPLv3 is compatible with Apache 2.0 (you can combine Apache 2.0 code
+into a GPLv3 project because GPLv3 permits the Apache 2.0 patent retaliation terms). But GPLv2 is
+not compatible with Apache 2.0 (you cannot combine Apache 2.0 code into a GPLv2 project Because the
+Apache 2.0 patent retaliation terms are "additional restrictions" that GPLv2 prohibits).
 
 When licenses are incompatible, you cannot legally distribute the combined work. This is a hard
 Constraint, not a soft guideline. Mixing incompatible licenses is one of the most dangerous things
@@ -162,9 +165,8 @@ Limits copyleft to the file level.
 Copyright law, distribution is one of the exclusive rights of the copyright holder (17 U.S.C. §
 106(3)). Under GPLv3, this concept is called "conveying" (Section 4), which is defined more
 Precisely than GPLv2's "distribution" to cover any form of propagation that would make you directly
-Or secondarily liable for infringement. Distribution involves transferring a copy, whether
-By physical media, electronic download, or (under AGPL) making the software available over a
-Network.
+Or secondarily liable for infringement. Distribution involves transferring a copy, whether By
+physical media, electronic download, or (under AGPL) making the software available over a Network.
 
 **Sublicense.** To grant rights to a third party that are a subset of (or equal to) the rights you
 Hold. Permissive licenses like MIT and Apache 2.0 allow sublicensing — you can take MIT-licensed
@@ -193,8 +195,8 @@ Requirement being met.
 Obligations propagate from the licensed work to derivative works. While commonly used in industry
 Discourse, the term is misleading. Copyleft is not a virus; it is a conditional grant of rights. If
 You do not want the conditions (i.e., you do not want to release your derivative work under the same
-License), you can decline the license — but then you have no right to copy, modify, or
-Distribute the software at all.
+License), you can decline the license — but then you have no right to copy, modify, or Distribute
+the software at all.
 
 **Contributor License Agreement (CLA).** A legal agreement in which a contributor grants the project
 (or its sponsoring organization) additional rights beyond what the project's open-source license
@@ -206,21 +208,21 @@ Because they enable the project to relicense the contribution under different te
 Proprietary terms).
 
 **Developer Certificate of Origin (DCO).** A lighter-weight alternative to CLAs. The contributor
-Certifies ( by adding a `Signed-off-by:` line to the commit message) that they have the
-Legal right to submit the contribution and that the contribution complies with the project's
-License. The Linux kernel uses DCO (enforced by the `checkpatch` tool) instead of CLAs. Unlike CLAs,
-DCOs do not transfer any additional rights — they verify that the contributor has the rights
-They are purporting to grant under the project's license.
+Certifies ( by adding a `Signed-off-by:` line to the commit message) that they have the Legal right
+to submit the contribution and that the contribution complies with the project's License. The Linux
+kernel uses DCO (enforced by the `checkpatch` tool) instead of CLAs. Unlike CLAs, DCOs do not
+transfer any additional rights — they verify that the contributor has the rights They are purporting
+to grant under the project's license.
 
 ## What This Section Covers
 
 This licensing section is divided into two parts:
 
 - **This page** — conceptual foundations: what licensing is, why it matters, the spectrum of license
- types, the philosophical and practical differences between copyleft and permissive approaches, and
- the terminology you need to understand license texts.
+  types, the philosophical and practical differences between copyleft and permissive approaches, and
+  the terminology you need to understand license texts.
 - **[Software Licensing](software-licensing.md)** — a detailed reference covering specific licenses
- (AGPLv3, GPLv3, LGPLv3, GPLv2, MPL 2.0, MIT, Apache 2.0, BSD 2/3-Clause, ISC, 0BSD, CC0,
- Unlicense, WTFPL, BSL, SSPL), compliance obligations for distribution, linking, containers, and
- SaaS, practical guidance for dependency auditing, a comparison table across all major dimensions,
- and common pitfalls.
+  (AGPLv3, GPLv3, LGPLv3, GPLv2, MPL 2.0, MIT, Apache 2.0, BSD 2/3-Clause, ISC, 0BSD, CC0,
+  Unlicense, WTFPL, BSL, SSPL), compliance obligations for distribution, linking, containers, and
+  SaaS, practical guidance for dependency auditing, a comparison table across all major dimensions,
+  and common pitfalls.

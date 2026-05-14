@@ -1,6 +1,8 @@
 ---
-title: "Sequences and Series -- Diagnostic Tests"
-description: Hardest IB Mathematics diagnostic tests for sequences and series covering Maclaurin convergence, telescoping, method of differences, and sigma notation.
+title: 'Sequences and Series -- Diagnostic Tests'
+description:
+  Hardest IB Mathematics diagnostic tests for sequences and series covering Maclaurin convergence,
+  telescoping, method of differences, and sigma notation.
 slug: diag-sequences-series
 hide_table_of_contents: true
 ---
@@ -19,9 +21,11 @@ hide_table_of_contents: true
 
 **(b)** Hence find the sum $\displaystyle\sum_{r=1}^{n} \frac{1}{r(r+1)}$.
 
-**(c)** A student claims that $\displaystyle\sum_{r=1}^{n} \frac{1}{r(r+2)}$ telescopes in the same way. Determine whether this is true, and if not, find the correct sum.
+**(c)** A student claims that $\displaystyle\sum_{r=1}^{n} \frac{1}{r(r+2)}$ telescopes in the same
+way. Determine whether this is true, and if not, find the correct sum.
 
-[Difficulty: hard. Tests telescoping series with non-adjacent denominators, a common stumbling block.]
+[Difficulty: hard. Tests telescoping series with non-adjacent denominators, a common stumbling
+block.]
 
 **Solution:**
 
@@ -37,7 +41,8 @@ $$\frac{1}{r(r+1)} = \frac{1}{r} - \frac{1}{r+1}$$
 
 $$\sum_{r=1}^{n} \left(\frac{1}{r} - \frac{1}{r+1}\right) = \left(1 - \frac{1}{2}\right) + \left(\frac{1}{2} - \frac{1}{3}\right) + \cdots + \left(\frac{1}{n} - \frac{1}{n+1}\right) = 1 - \frac{1}{n+1} = \frac{n}{n+1}$$
 
-**(c)** The student is incorrect. $\dfrac{1}{r(r+2)}$ does not telescope the same way because the gap between denominators is 2.
+**(c)** The student is incorrect. $\dfrac{1}{r(r+2)}$ does not telescope the same way because the
+gap between denominators is 2.
 
 $$\frac{1}{r(r+2)} = \frac{1}{2}\left(\frac{1}{r} - \frac{1}{r+2}\right)$$
 
@@ -57,13 +62,16 @@ $$\frac{1}{2}\left(1 + \frac{1}{2} - \frac{1}{n+1} - \frac{1}{n+2}\right) = \fra
 
 **(b)** State the range of values of $x$ for which the expansion is valid.
 
-**(c)** Use the expansion to find an approximation for $\dfrac{1}{\sqrt[3]{1.03}}$Giving your answer to 5 decimal places.
+**(c)** Use the expansion to find an approximation for $\dfrac{1}{\sqrt[3]{1.03}}$Giving your answer
+to 5 decimal places.
 
-[Difficulty: hard. Tests binomial expansion with fractional exponent, validity range, and numerical application.]
+[Difficulty: hard. Tests binomial expansion with fractional exponent, validity range, and numerical
+application.]
 
 **Solution:**
 
-**(a)** Using $(1 + x)^n = 1 + nx + \frac{n(n-1)}{2!}x^2 + \frac{n(n-1)(n-2)}{3!}x^3 + \cdots$ with $n = -\frac{1}{3}$ and replacing $x$ with $3x$:
+**(a)** Using $(1 + x)^n = 1 + nx + \frac{n(n-1)}{2!}x^2 + \frac{n(n-1)(n-2)}{3!}x^3 + \cdots$ with
+$n = -\frac{1}{3}$ and replacing $x$ with $3x$:
 
 $$(1 + 3x)^{-1/3} = 1 + \left(-\frac{1}{3}\right)(3x) + \frac{\left(-\frac{1}{3}\right)\left(-\frac{4}{3}\right)}{2}(3x)^2 + \frac{\left(-\frac{1}{3}\right)\left(-\frac{4}{3}\right)\left(-\frac{7}{3}\right)}{6}(3x)^3$$
 
@@ -73,7 +81,8 @@ $$= 1 - x + 2x^2 - \frac{28}{81} \cdot \frac{27}{6}x^3 = 1 - x + 2x^2 - \frac{14
 
 **(b)** The expansion is valid when $|3x| \lt 1$I.e., $|x| \lt \dfrac{1}{3}$.
 
-**(c)** $\dfrac{1}{\sqrt[3]{1.03}} = (1 + 0.03)^{-1/3}$. Here $x = 0.03$Which satisfies $|x| \lt \frac{1}{3}$.
+**(c)** $\dfrac{1}{\sqrt[3]{1.03}} = (1 + 0.03)^{-1/3}$. Here $x = 0.03$Which satisfies
+$|x| \lt \frac{1}{3}$.
 
 $$(1 + 0.03)^{-1/3} \approx 1 - 0.03 + 2(0.03)^2 - \frac{14}{9}(0.03)^3$$
 
@@ -93,7 +102,9 @@ To 5 decimal places: $0.97176$.
 
 **Question:**
 
-**(a)** Differentiate both sides of the identity $\displaystyle\frac{1}{1-x} = \sum_{n=0}^{\infty} x^n$ for $|x| \lt 1$ with respect to $x$And hence find $\displaystyle\sum_{n=1}^{\infty} nx^{n-1}$.
+**(a)** Differentiate both sides of the identity
+$\displaystyle\frac{1}{1-x} = \sum_{n=0}^{\infty} x^n$ for $|x| \lt 1$ with respect to $x$And hence
+find $\displaystyle\sum_{n=1}^{\infty} nx^{n-1}$.
 
 **(b)** Use your result to find the exact value of $\displaystyle\sum_{n=1}^{\infty} \frac{n}{2^n}$.
 
@@ -103,13 +114,15 @@ To 5 decimal places: $0.97176$.
 
 **(a)** Differentiating the LHS: $\dfrac{d}{dx}\!\left(\dfrac{1}{1-x}\right) = \dfrac{1}{(1-x)^2}$.
 
-Differentiating the RHS term-by-term: $\dfrac{d}{dx}\!\left(\sum_{n=0}^{\infty} x^n\right) = \sum_{n=1}^{\infty} nx^{n-1}$.
+Differentiating the RHS term-by-term:
+$\dfrac{d}{dx}\!\left(\sum_{n=0}^{\infty} x^n\right) = \sum_{n=1}^{\infty} nx^{n-1}$.
 
 Therefore:
 
 $$\sum_{n=1}^{\infty} nx^{n-1} = \frac{1}{(1-x)^2} \quad \text{for } |x| \lt 1$$
 
-**(b)** We need $\displaystyle\sum_{n=1}^{\infty} \frac{n}{2^n} = \sum_{n=1}^{\infty} n\left(\frac{1}{2}\right)^n$.
+**(b)** We need
+$\displaystyle\sum_{n=1}^{\infty} \frac{n}{2^n} = \sum_{n=1}^{\infty} n\left(\frac{1}{2}\right)^n$.
 
 Note that $\displaystyle\sum_{n=1}^{\infty} nx^{n-1} = \frac{1}{(1-x)^2}$ with $x = \frac{1}{2}$:
 

@@ -1,6 +1,8 @@
 ---
 title: Dynamics
-description: "A-Level Physics notes on Dynamics: 1. Newton's Laws of Motion; Newton's First Law (Law of Inertia); Newton's Second Law; Newton's Third Law."
+description:
+  "A-Level Physics notes on Dynamics: 1. Newton's Laws of Motion; Newton's First Law (Law of
+  Inertia); Newton's Second Law; Newton's Third Law."
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Physics
@@ -9,11 +11,10 @@ categories:
   - Physics
 slug: dynamics
 ---
+
 ## Dynamics
 
-:::info
-Board Coverage AQA Paper 1 | Edexcel CP1, CP2 | OCR (A) Paper 1 | CIE P2
-:::
+:::info Board Coverage AQA Paper 1 | Edexcel CP1, CP2 | OCR (A) Paper 1 | CIE P2 :::
 
 ## 1. Newton's Laws of Motion
 
@@ -56,12 +57,9 @@ $1 \mathrm{ N} = 1 \mathrm{ kg m s}^{-2}$.
 
 $$\mathbf{F}_{AB} = -\mathbf{F}_{BA}$$
 
-:::warning
-Warning
-They do **not** cancel. The normal reaction from a table on a book and the book's weight are **not**
-A third law pair (both act on the book). The third law pair of the book's weight is the
-Gravitational pull of the book on the Earth.
-:::
+:::warning Warning They do **not** cancel. The normal reaction from a table on a book and the book's
+weight are **not** A third law pair (both act on the book). The third law pair of the book's weight
+is the Gravitational pull of the book on the Earth. :::
 
 ## 2. Weight and Mass
 
@@ -100,8 +98,8 @@ Thrust.
 
 ## 4. Resolving Forces in Two Dimensions
 
-When forces are not collinear, we resolve them into perpendicular components ( horizontal
-And vertical).
+When forces are not collinear, we resolve them into perpendicular components ( horizontal And
+vertical).
 
 **Condition for equilibrium** (Newton's first law):
 
@@ -147,18 +145,14 @@ Centre of a circular path, responsible for changing the direction of the velocit
 **Definition.** The **centripetal force** $F_c$ is the component of the net force directed towards
 The centre of a circular path, responsible for maintaining circular motion.
 
-:::warning
-Common Pitfall Centripetal force is **not** a separate force. It is the **net radial
+:::warning Common Pitfall Centripetal force is **not** a separate force. It is the **net radial
 Component** of the real forces acting on the body (tension, friction, gravity, normal reaction,
-Etc.). Never draw "centripetal force" as an additional arrow on a free body diagram.
-:::
+Etc.). Never draw "centripetal force" as an additional arrow on a free body diagram. :::
 
-:::tip
-Exam Technique When solving circular motion problems, always start with a free body diagram
+:::tip Exam Technique When solving circular motion problems, always start with a free body diagram
 Showing only the real forces. Then resolve forces towards the centre of the circle and apply
 $F_c = mv^2/r$. The centripetal force is always provided by one or more of the forces already on
-Your diagram.
-:::
+Your diagram. :::
 
 <details>
 <summary>Example: Car on a Banked Curve</summary>
@@ -208,8 +202,8 @@ When sliding occurs, the friction force is:
 
 $$F_d = \mu_d R$$
 
-Where $\mu_d$ is the **coefficient of dynamic friction**. , $\mu_d < \mu_s$ — it is harder
-To start an object moving than to keep it moving.
+Where $\mu_d$ is the **coefficient of dynamic friction**. , $\mu_d < \mu_s$ — it is harder To start
+an object moving than to keep it moving.
 
 ### Microscopic Origin
 
@@ -355,8 +349,8 @@ A block of mass $4.0$ kg is on a rough horizontal table ($\mu = 0.3$) connected 
 **Answer.** Check condition: $m_2 = 2.0$ kg, $\mu m_1 = 0.3 \times 4.0 = 1.2$ kg. Since $2.0 > 1.2$
 The system accelerates.
 
-$a = \frac◆LB◆(2.0 - 0.3 \times 4.0) \times 9.81◆RB◆◆LB◆4.0 + 2.0◆RB◆ = \frac◆LB◆0.8 \times 9.81◆RB◆◆LB◆6.0◆RB◆ = 1.31$ m
-S$^{-2}$.
+$a = \frac◆LB◆(2.0 - 0.3 \times 4.0) \times 9.81◆RB◆◆LB◆4.0 + 2.0◆RB◆ = \frac◆LB◆0.8 \times 9.81◆RB◆◆LB◆6.0◆RB◆ = 1.31$
+m S$^{-2}$.
 
 $T = \frac◆LB◆4.0 \times 2.0 \times 9.81 \times 1.3◆RB◆◆LB◆6.0◆RB◆ = \frac{101.8}{6.0} = 17.0$ N.
 
@@ -407,10 +401,7 @@ $$mg - kv^2 = ma$$
 
 At terminal velocity: $v_T = \sqrt◆LB◆\frac{mg}{k}◆RB◆$.
 
-:::info
-Info
-Focuses on the qualitative description of terminal velocity.
-:::
+:::info Info Focuses on the qualitative description of terminal velocity. :::
 
 ## Problem Set
 
@@ -433,7 +424,8 @@ Net force: $25 - 14.7 = 10.3$ N. Acceleration: $a = 10.3/5.0 = 2.1$ m s$^{-2}$.
 <summary>Problem 2</summary>
 In an Atwood machine, $m_1 = 8.0$ kg and $m_2 = 5.0$ kg. Find the acceleration and the tension in the string.
 
-**Answer.** $a = \frac◆LB◆(8.0 - 5.0) \times 9.81◆RB◆◆LB◆8.0 + 5.0◆RB◆ = \frac{29.43}{13.0} = 2.26$ m s$^{-2}$.
+**Answer.** $a = \frac◆LB◆(8.0 - 5.0) \times 9.81◆RB◆◆LB◆8.0 + 5.0◆RB◆ = \frac{29.43}{13.0} = 2.26$
+m s$^{-2}$.
 
 $T = \frac◆LB◆2 \times 8.0 \times 5.0 \times 9.81◆RB◆◆LB◆13.0◆RB◆ = \frac{784.8}{13.0} = 60.4$ N.
 
@@ -472,8 +464,8 @@ $a = g\sin 30° = 9.81 \times 0.5 = 4.91$ m s$^{-2}$.
 A raindrop of mass $2.0 \times 10^{-5}$ kg falls through air with drag proportional to $v^2$. If the terminal velocity is $9.0$ m s$^{-1}$Find the drag constant $k$.
 
 **Answer.** At terminal velocity: $mg = kv_T^2$.
-$k = \frac{mg}{v_T^2} = \frac◆LB◆2.0 \times 10^{-5} \times 9.81◆RB◆◆LB◆81◆RB◆ = 2.4 \times 10^{-6}$ N s$^2$
-M$^{-2}$.
+$k = \frac{mg}{v_T^2} = \frac◆LB◆2.0 \times 10^{-5} \times 9.81◆RB◆◆LB◆81◆RB◆ = 2.4 \times 10^{-6}$
+N s$^2$ M$^{-2}$.
 
 <b>If you get this wrong, revise:</b> [Quadratic Drag Model](#quadratic-drag-model)
 
@@ -687,7 +679,8 @@ A car of mass $800$ kg travels around the inside of a vertical circular loop of 
 **Answer.** (a) At the top, taking downward as positive (towards the centre): $R + mg = mv^2/r$.
 Contact is lost when $R = 0$So the minimum speed is:
 
-$mg = \frac◆LB◆mv_{\min}^2◆RB◆◆LB◆r◆RB◆ \implies v_{\min} = \sqrt{gr} = \sqrt◆LB◆9.81 \times 10◆RB◆ = 9.90$ m s$^{-1}$
+$mg = \frac◆LB◆mv_{\min}^2◆RB◆◆LB◆r◆RB◆ \implies v_{\min} = \sqrt{gr} = \sqrt◆LB◆9.81 \times 10◆RB◆ = 9.90$
+m s$^{-1}$
 
 (b) By conservation of energy (bottom to top, height difference $2r$):
 
@@ -754,36 +747,46 @@ Adding: $m_B g - m_A g\sin 30° - \mu m_A g\cos 30° = (m_A + m_B)a$.
 
 (b) $T = m_B(g - a) = 8.0(9.81 - 3.50) = 8.0 \times 6.31 = 50.5$ N.
 
-(c) Using $v^2 = u^2 + 2as$ with $u = 0$: $v = \sqrt◆LB◆2 \times 3.50 \times 2.0◆RB◆ = \sqrt{14.0} = 3.74$
-M s$^{-1}$.
+(c) Using $v^2 = u^2 + 2as$ with $u = 0$:
+$v = \sqrt◆LB◆2 \times 3.50 \times 2.0◆RB◆ = \sqrt{14.0} = 3.74$ M s$^{-1}$.
 
 <b>If you get this wrong, revise:</b> [Friction](#6-friction) and
 [Connected Particles](#7-connected-particles)
 
 </details>
 
-
 ---
 
-:::tip
-Tip
-Ready to test your understanding of **Dynamics**? The [diagnostic test](/docs/alevel/physics/diagnostics/diag-dynamics) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
+:::tip Tip Ready to test your understanding of **Dynamics**? The
+[diagnostic test](/docs/alevel/physics/diagnostics/diag-dynamics) contains the hardest questions
+within the A-Level specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Dynamics with other physics topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Dynamics
+with other physics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on
+self-marking and building a personal test matrix. :::
 
-:::danger
-Danger
+:::danger Danger
 
-- **Confusing mass and weight:** Mass (kg) is a scalar that measures the amount of matter and is constant everywhere. Weight (N) is a VECTOR force equal to mg and varies with gravitational field strength. On the Moon, mass is the same but weight is about 1/6 of Earth weight. Never use "kg" as a unit of force or "N" as a unit of mass.
+- **Confusing mass and weight:** Mass (kg) is a scalar that measures the amount of matter and is
+  constant everywhere. Weight (N) is a VECTOR force equal to mg and varies with gravitational field
+  strength. On the Moon, mass is the same but weight is about 1/6 of Earth weight. Never use "kg" as
+  a unit of force or "N" as a unit of mass.
 
-- **Applying Newton's third law incorrectly:** The action-reaction pair acts on DIFFERENT bodies, not the same body. The normal reaction force from a table on a book is NOT the reaction pair to the book's weight. The reaction pair to weight (Earth pulling book down) is the book pulling Earth up (equal and opposite, on Earth).
+- **Applying Newton's third law incorrectly:** The action-reaction pair acts on DIFFERENT bodies,
+  not the same body. The normal reaction force from a table on a book is NOT the reaction pair to
+  the book's weight. The reaction pair to weight (Earth pulling book down) is the book pulling Earth
+  up (equal and opposite, on Earth).
 
-- **Including internal forces in free-body diagrams:** When applying F = ma to a system, only include EXTERNAL forces. Tension in a rope connecting two parts of the same system is an internal force and cancels out. Draw separate free-body diagrams for each object if internal forces matter.
+- **Including internal forces in free-body diagrams:** When applying F = ma to a system, only
+  include EXTERNAL forces. Tension in a rope connecting two parts of the same system is an internal
+  force and cancels out. Draw separate free-body diagrams for each object if internal forces matter.
 
-- **Forgetting that F = ma applies to the NET force:** F in Newton's second law is the resultant (net) force after combining all forces vectorially. If a block is pushed with 10N to the right and friction is 4N to the left, the net force is 6N, not 10N. Always resolve forces before substituting into F = ma.
+- **Forgetting that F = ma applies to the NET force:** F in Newton's second law is the resultant
+  (net) force after combining all forces vectorially. If a block is pushed with 10N to the right and
+  friction is 4N to the left, the net force is 6N, not 10N. Always resolve forces before
+  substituting into F = ma.
 
 :::
 

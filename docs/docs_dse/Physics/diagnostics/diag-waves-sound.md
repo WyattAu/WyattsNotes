@@ -1,6 +1,8 @@
 ---
-title: "Waves and Sound -- Diagnostic Tests"
-description: "Hardest DSE waves questions: standing wave formation, wave speed calculations, longitudinal wave properties, and harmonics identification."
+title: 'Waves and Sound -- Diagnostic Tests'
+description:
+  'Hardest DSE waves questions: standing wave formation, wave speed calculations, longitudinal wave
+  properties, and harmonics identification.'
 slug: diag-waves-sound
 hide_table_of_contents: true
 ---
@@ -13,7 +15,11 @@ hide_table_of_contents: true
 
 **Question:**
 
-A string of length $1.2$ m is fixed at both ends. A standing wave is set up on the string. Nodes are observed at $x = 0$$x = 0.3$ m, $x = 0.6$ m, $x = 0.9$ m, and $x = 1.2$ m. The maximum transverse displacement of the string at an antinode is $4$ mm and the wave speed on the string is $24 \text{ m s}^{-1}$. Find (a) the wavelength, (b) the frequency, (c) which harmonic this is, and (d) the equation of the standing wave.
+A string of length $1.2$ m is fixed at both ends. A standing wave is set up on the string. Nodes are
+observed at $x = 0$$x = 0.3$ m, $x = 0.6$ m, $x = 0.9$ m, and $x = 1.2$ m. The maximum transverse
+displacement of the string at an antinode is $4$ mm and the wave speed on the string is
+$24 \text{ m s}^{-1}$. Find (a) the wavelength, (b) the frequency, (c) which harmonic this is, and
+(d) the equation of the standing wave.
 
 **Solution:**
 
@@ -47,7 +53,8 @@ $$y(x,t) = 4 \times 10^{-3} \sin\left(\frac{2\pi}{0.6} x\right) \cos(2\pi \times
 
 $$y(x,t) = 4 \times 10^{-3} \sin\left(\frac{10\pi}{3} x\right) \cos(80\pi t) \text{ m}$$
 
-**Key check:** At $x = 0$$\sin(0) = 0$ (node). At $x = 0.15$ m, $\sin(\pi/2) = 1$ (antinode). At $x = 0.3$ m, $\sin(\pi) = 0$ (node). All consistent.
+**Key check:** At $x = 0$$\sin(0) = 0$ (node). At $x = 0.15$ m, $\sin(\pi/2) = 1$ (antinode). At
+$x = 0.3$ m, $\sin(\pi) = 0$ (node). All consistent.
 
 ---
 
@@ -55,7 +62,10 @@ $$y(x,t) = 4 \times 10^{-3} \sin\left(\frac{10\pi}{3} x\right) \cos(80\pi t) \te
 
 **Question:**
 
-A point source emits sound uniformly in all directions with a power output of $0.01$ W. A listener stands $5$ m from the source. The threshold of hearing is $1 \times 10^{-12} \text{ W m}^{-2}$. Find (a) the intensity at the listener's position, (b) the sound intensity level in decibels, and (c) the distance at which the sound intensity level drops to $40$ dB.
+A point source emits sound uniformly in all directions with a power output of $0.01$ W. A listener
+stands $5$ m from the source. The threshold of hearing is $1 \times 10^{-12} \text{ W m}^{-2}$. Find
+(a) the intensity at the listener's position, (b) the sound intensity level in decibels, and (c) the
+distance at which the sound intensity level drops to $40$ dB.
 
 **Solution:**
 
@@ -87,7 +97,8 @@ $$I = \frac{P}{4\pi r^2}$$
 
 $$r = \sqrt{\frac{P}{4\pi I}} = \sqrt{\frac{0.01}{4\pi \times 10^{-8}}} = \sqrt{\frac{0.01}{1.2566 \times 10^{-7}}} = \sqrt{79577} = 282 \text{ m}$$
 
-**Key misconception:** Intensity depends on $1/r^2$Not $1/r$. Doubling the distance reduces intensity by a factor of $4$ (decrease of $6$ dB), not $2$.
+**Key misconception:** Intensity depends on $1/r^2$Not $1/r$. Doubling the distance reduces
+intensity by a factor of $4$ (decrease of $6$ dB), not $2$.
 
 ---
 
@@ -95,7 +106,9 @@ $$r = \sqrt{\frac{P}{4\pi I}} = \sqrt{\frac{0.01}{4\pi \times 10^{-8}}} = \sqrt{
 
 **Question:**
 
-Two tuning forks, A and B, produce sound of frequencies $256$ Hz and $260$ Hz respectively. Fork A is stationary while fork B is moved toward a stationary observer at $5 \text{ m s}^{-1}$. The speed of sound is $340 \text{ m s}^{-1}$. Find the beat frequency heard by the observer.
+Two tuning forks, A and B, produce sound of frequencies $256$ Hz and $260$ Hz respectively. Fork A
+is stationary while fork B is moved toward a stationary observer at $5 \text{ m s}^{-1}$. The speed
+of sound is $340 \text{ m s}^{-1}$. Find the beat frequency heard by the observer.
 
 **Solution:**
 
@@ -109,7 +122,9 @@ $$f' = f \times \frac{v}{v - v_s} = 260 \times \frac{340}{340 - 5} = 260 \times 
 
 $$f_{\text{beat}} = |f' - f_A| = |263.9 - 256| = 7.9 \text{ Hz}$$
 
-**Key insight:** Without the Doppler shift, the beat frequency would be $|260 - 256| = 4$ Hz. The motion of fork B toward the observer increases its apparent frequency, raising the beat frequency. Students often forget to apply the Doppler effect before calculating beats when sources are moving.
+**Key insight:** Without the Doppler shift, the beat frequency would be $|260 - 256| = 4$ Hz. The
+motion of fork B toward the observer increases its apparent frequency, raising the beat frequency.
+Students often forget to apply the Doppler effect before calculating beats when sources are moving.
 
 ---
 
@@ -119,13 +134,17 @@ $$f_{\text{beat}} = |f' - f_A| = |263.9 - 256| = 7.9 \text{ Hz}$$
 
 **Question:**
 
-An open-closed pipe (open at one end, closed at the other) has a fundamental frequency of $220$ Hz when the speed of sound is $340 \text{ m s}^{-1}$. Find (a) the length of the pipe, (b) the frequency of the 3rd harmonic, and (c) the next pipe length (open-open) that would have the same fundamental frequency.
+An open-closed pipe (open at one end, closed at the other) has a fundamental frequency of $220$ Hz
+when the speed of sound is $340 \text{ m s}^{-1}$. Find (a) the length of the pipe, (b) the
+frequency of the 3rd harmonic, and (c) the next pipe length (open-open) that would have the same
+fundamental frequency.
 
 **Solution:**
 
 **(a) Length of open-closed pipe:**
 
-For an open-closed pipe, only odd harmonics exist. The fundamental has a node at the closed end and an antinode at the open end, so $L = \lambda/4$.
+For an open-closed pipe, only odd harmonics exist. The fundamental has a node at the closed end and
+an antinode at the open end, so $L = \lambda/4$.
 
 $$f_1 = \frac{v}{4L}$$
 
@@ -139,7 +158,8 @@ The harmonics of an open-closed pipe are $f_1, 3f_1, 5f_1, \ldots$ (odd multiple
 
 The 3rd harmonic: $f_3 = 3f_1 = 3 \times 220 = 660$ Hz.
 
-**Note:** The 2nd harmonic does NOT exist for an open-closed pipe. The next harmonic after the fundamental is the 3rd harmonic.
+**Note:** The 2nd harmonic does NOT exist for an open-closed pipe. The next harmonic after the
+fundamental is the 3rd harmonic.
 
 **(c) Open-open pipe with same fundamental:**
 
@@ -149,7 +169,9 @@ $$220 = \frac{340}{2L}$$
 
 $$L = \frac{340}{440} = 0.7727 \text{ m} = 77.3 \text{ cm}$$
 
-The open-open pipe must be twice as long as the open-closed pipe to produce the same fundamental frequency, because an open-open pipe supports all harmonics ($\lambda/2$ fits in $L$) while an open-closed pipe only supports odd harmonics ($\lambda/4$ fits in $L$).
+The open-open pipe must be twice as long as the open-closed pipe to produce the same fundamental
+frequency, because an open-open pipe supports all harmonics ($\lambda/2$ fits in $L$) while an
+open-closed pipe only supports odd harmonics ($\lambda/4$ fits in $L$).
 
 ---
 
@@ -157,7 +179,10 @@ The open-open pipe must be twice as long as the open-closed pipe to produce the 
 
 **Question:**
 
-Water waves of wavelength $2$ cm travel from deep water (speed $20 \text{ cm s}^{-1}$) into shallow water (speed $12 \text{ cm s}^{-1}$) at an angle of incidence of $30°$. The waves then pass through a gap of width $4$ cm in a barrier. Find (a) the angle of refraction, (b) the wavelength in the shallow water, and (c) whether significant diffraction occurs at the gap.
+Water waves of wavelength $2$ cm travel from deep water (speed $20 \text{ cm s}^{-1}$) into shallow
+water (speed $12 \text{ cm s}^{-1}$) at an angle of incidence of $30°$. The waves then pass through
+a gap of width $4$ cm in a barrier. Find (a) the angle of refraction, (b) the wavelength in the
+shallow water, and (c) whether significant diffraction occurs at the gap.
 
 **Solution:**
 
@@ -185,9 +210,13 @@ Significant diffraction occurs when the gap width is comparable to the wavelengt
 
 $$\text{Gap width} = 4 \text{ cm}, \quad \lambda = 1.2 \text{ cm}$$
 
-Since $4$ cm is about $3.3$ times the wavelength, there will be **moderate diffraction** but not maximum spreading. Maximum diffraction would occur if the gap width were approximately equal to $\lambda$ (about $1.2$ cm).
+Since $4$ cm is about $3.3$ times the wavelength, there will be **moderate diffraction** but not
+maximum spreading. Maximum diffraction would occur if the gap width were approximately equal to
+$\lambda$ (about $1.2$ cm).
 
-**Key insight:** When waves enter shallower water, they slow down, wavelength decreases, frequency stays constant, and the wavefronts bend toward the normal (just like light entering a denser medium).
+**Key insight:** When waves enter shallower water, they slow down, wavelength decreases, frequency
+stays constant, and the wavefronts bend toward the normal (just like light entering a denser
+medium).
 
 ---
 
@@ -195,7 +224,12 @@ Since $4$ cm is about $3.3$ times the wavelength, there will be **moderate diffr
 
 **Question:**
 
-An ultrasound probe emits pulses of frequency $2.0$ MHz into soft tissue. The speed of ultrasound in soft tissue is $1540 \text{ m s}^{-1}$. The pulse travels to a tissue boundary $3$ cm deep, is reflected, and returns to the probe. The probe emits a pulse every $0.1$ ms. Find (a) the wavelength of the ultrasound, (b) the time for the echo to return, (c) the maximum imaging depth before the next pulse is emitted (assuming no overlap is allowed), and (d) the minimum distance between two reflectors that can be resolved (axial resolution), given each pulse has a duration of $3$ cycles.
+An ultrasound probe emits pulses of frequency $2.0$ MHz into soft tissue. The speed of ultrasound in
+soft tissue is $1540 \text{ m s}^{-1}$. The pulse travels to a tissue boundary $3$ cm deep, is
+reflected, and returns to the probe. The probe emits a pulse every $0.1$ ms. Find (a) the wavelength
+of the ultrasound, (b) the time for the echo to return, (c) the maximum imaging depth before the
+next pulse is emitted (assuming no overlap is allowed), and (d) the minimum distance between two
+reflectors that can be resolved (axial resolution), given each pulse has a duration of $3$ cycles.
 
 **Solution:**
 
@@ -221,10 +255,14 @@ $$d_{\max} = \frac{1540 \times 1 \times 10^{-4}}{2} = 0.0770 \text{ m} = 7.70 \t
 
 Pulse duration $= 3$ cycles $= \frac{3}{f} = \frac{3}{2 \times 10^6} = 1.5 \times 10^{-6}$ s
 
-Spatial length of pulse $= v \times t_{\text{pulse}} = 1540 \times 1.5 \times 10^{-6} = 2.31 \times 10^{-3}$ m $= 2.31$ mm
+Spatial length of pulse
+$= v \times t_{\text{pulse}} = 1540 \times 1.5 \times 10^{-6} = 2.31 \times 10^{-3}$ m $= 2.31$ mm
 
-The axial resolution (minimum distinguishable distance between two reflectors) is half the spatial pulse length:
+The axial resolution (minimum distinguishable distance between two reflectors) is half the spatial
+pulse length:
 
 $$\Delta d_{\min} = \frac{2.31}{2} = 1.16 \text{ mm}$$
 
-**Key insight:** Higher frequency gives better resolution (shorter wavelength) but poorer penetration depth. There is a fundamental trade-off in ultrasound imaging determined by the pulse repetition frequency and the speed of sound in the medium.
+**Key insight:** Higher frequency gives better resolution (shorter wavelength) but poorer
+penetration depth. There is a fundamental trade-off in ultrasound imaging determined by the pulse
+repetition frequency and the speed of sound in the medium.

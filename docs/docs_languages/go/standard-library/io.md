@@ -1,6 +1,8 @@
 ---
 title: Standard Library I/O
-description: "Standard Library I/O — The io Package; io.Reader Contract; io.Copy; io.TeeReader with worked examples and exam-style questions."
+description:
+  'Standard Library I/O — The io Package; io.Reader Contract; io.Copy; io.TeeReader with worked
+  examples and exam-style questions.'
 slug: io
 date: 2026-04-18
 tags:
@@ -8,6 +10,7 @@ tags:
 categories:
   - Go
 ---
+
 ## The io Package
 
 The `io` package defines the fundamental I/O interfaces that permeate Go's standard library:
@@ -59,9 +62,9 @@ type WriteCloser interface {
 Encountered. Key semantics:
 
 - `Read` returns `io.EOF` when the stream ends. `io.EOF` is not an error in the conventional sense
- -- it indicates that no more bytes are available.
+  -- it indicates that no more bytes are available.
 - `n > 0` and `err != nil` can occur simultaneously. This means some bytes were read before the
- error. The caller should process the `n` bytes before handling the error.
+  error. The caller should process the `n` bytes before handling the error.
 - `n == 0` and `err == nil` is valid and means "try again later" (e.g., for non-blocking reads).
 - `n == 0` and `err == io.EOF` means the stream is exhausted.
 
@@ -188,15 +191,15 @@ defer f.Close()
 
 ### File Flags
 
-| Flag | Meaning |
+| Flag          | Meaning                            |
 | ------------- | ---------------------------------- |
-| `os.O_RDONLY` | Read-only |
-| `os.O_WRONLY` | Write-only |
-| `os.O_RDWR` | Read-write |
-| `os.O_APPEND` | Append to file |
-| `os.O_CREATE` | Create if not exists |
-| `os.O_TRUNC` | Truncate when opening |
-| `os.O_EXCL` | Used with O_CREATE, fail if exists |
+| `os.O_RDONLY` | Read-only                          |
+| `os.O_WRONLY` | Write-only                         |
+| `os.O_RDWR`   | Read-write                         |
+| `os.O_APPEND` | Append to file                     |
+| `os.O_CREATE` | Create if not exists               |
+| `os.O_TRUNC`  | Truncate when opening              |
+| `os.O_EXCL`   | Used with O_CREATE, fail if exists |
 
 ### File Permissions
 
@@ -242,23 +245,23 @@ fmt.Errorf("failed: %w", err)   // format to error
 
 ### Format Verbs
 
-| Verb | Meaning |
+| Verb  | Meaning                        |
 | ----- | ------------------------------ |
-| `%v` | Default format |
-| `%+v` | Struct with field names |
-| `%#v` | Go syntax representation |
-| `%T` | Type of the value |
-| `%d` | Decimal integer |
-| `%x` | Hexadecimal integer |
-| `%o` | Octal integer |
-| `%b` | Binary integer |
-| `%f` | Decimal float |
-| `%e` | Scientific notation |
-| `%s` | String |
-| `%q` | Quoted string |
-| `%p` | Pointer address |
-| `%t` | Boolean (true/false) |
-| `%w` | Error (wraps for errors.Is/As) |
+| `%v`  | Default format                 |
+| `%+v` | Struct with field names        |
+| `%#v` | Go syntax representation       |
+| `%T`  | Type of the value              |
+| `%d`  | Decimal integer                |
+| `%x`  | Hexadecimal integer            |
+| `%o`  | Octal integer                  |
+| `%b`  | Binary integer                 |
+| `%f`  | Decimal float                  |
+| `%e`  | Scientific notation            |
+| `%s`  | String                         |
+| `%q`  | Quoted string                  |
+| `%p`  | Pointer address                |
+| `%t`  | Boolean (true/false)           |
+| `%w`  | Error (wraps for errors.Is/As) |
 
 ### Width and Precision
 
@@ -359,30 +362,30 @@ func (t *Time) UnmarshalJSON(data []byte) error {
 ## Common Pitfalls
 
 1. **Not closing files.** Always use `defer f.Close()` after opening a file. Even when `Close`
- fails, the file descriptor is released.
+   fails, the file descriptor is released.
 
 2. **Ignoring io.EOF correctly.** `io.EOF` is not a fatal error. `io.ReadAll` returns `io.EOF` only
- if zero bytes were read (an empty stream). For normal reads, `io.EOF` accompanies the last batch
- of data.
+   if zero bytes were read (an empty stream). For normal reads, `io.EOF` accompanies the last batch
+   of data.
 
 3. **Forgetting to flush bufio.Writer.** Buffered data is not written until `Flush()` is called or
- the buffer is full. Use `defer writer.Flush()`.
+   the buffer is full. Use `defer writer.Flush()`.
 
 4. **Scanner token too long.** `bufio.Scanner` has a default 64 KB max token size. If you are
- reading long lines, increase the buffer with `scanner.Buffer()`.
+   reading long lines, increase the buffer with `scanner.Buffer()`.
 
 5. **JSON nil vs empty.** A `nil` slice marshals to `null`; an empty slice `[]T{}` marshals to `[]`.
- A `nil` map marshals to `null`; an empty map marshals to `{}`. This difference matters for API
- consumers.
+   A `nil` map marshals to `null`; an empty map marshals to `{}`. This difference matters for API
+   consumers.
 
 6. **JSON unmarshal target must be a pointer.** `json.Unmarshal(data, u)` (non-pointer) silently
- succeeds without populating `u`. Always pass a pointer: `json.Unmarshal(data, &u)`.
+   succeeds without populating `u`. Always pass a pointer: `json.Unmarshal(data, &u)`.
 
 7. **Using `%v` instead of `%w` for error formatting.** `%v` loses the error chain. Use `%w` to
- preserve it for `errors.Is` and `errors.As`.
+   preserve it for `errors.Is` and `errors.As`.
 
 8. **Not checking scanner errors.** After a `scanner.Scan()` loop, always check `scanner.Err()`. The
- loop may exit due to an I/O error, not just `io.EOF`.
+   loop may exit due to an I/O error, not just `io.EOF`.
 
 ## Summary
 

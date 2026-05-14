@@ -1,6 +1,8 @@
 ---
 title: Magnetism and Electromagnetism
-description: "Magnetism and Electromagnetism — 1. Magnets and Magnetic Fields; 1.1 Magnetic Materials; 1.2 Why Induced Magnetism Causes Attraction; 1.3 Magnetic Domains."
+description:
+  'Magnetism and Electromagnetism — 1. Magnets and Magnetic Fields; 1.1 Magnetic Materials; 1.2 Why
+  Induced Magnetism Causes Attraction; 1.3 Magnetic Domains.'
 date: 2026-04-14
 tags:
   - Physics
@@ -9,17 +11,14 @@ categories:
   - Physics
 slug: magnetism-and-electromagnetism
 ---
+
 ## Magnetism and Electromagnetism
 
-:::info
-Board Coverage AQA Paper 2 | Edexcel Paper 2 | OCR A Gateway P4 & P7 | WJEC P4
-:::
-
+:::info Board Coverage AQA Paper 2 | Edexcel Paper 2 | OCR A Gateway P4 & P7 | WJEC P4 :::
 
 <PhetSimulation simulationId="faraday-electromagnetic-lab" title="Faraday's Electromagnetic Lab" />
 
 Explore the simulation above to develop intuition for this topic.
-
 
 ## 1. Magnets and Magnetic Fields
 
@@ -144,7 +143,7 @@ A DC motor uses the motor effect to produce continuous rotation.
 1. Current flows through the coil in the magnetic field, producing a force
 2. The forces on opposite sides of the coil act in opposite directions, causing rotation
 3. The split-ring commutator reverses the current every half-turn, so the forces continue to produce
- rotation in the same direction
+   rotation in the same direction
 
 ### 2.6 Why the Commutator Is Necessary
 
@@ -268,12 +267,12 @@ $V = V_0 \sin(\omega t)$.
 
 ### 3.7 Difference Between a Motor and a Generator
 
-| Feature | Motor | Generator |
+| Feature       | Motor                                    | Generator                                         |
 | ------------- | ---------------------------------------- | ------------------------------------------------- |
-| Input energy | Electrical | Kinetic (mechanical) |
-| Output energy | Kinetic (rotation) | Electrical |
-| Contact | Split-ring commutator (reverses current) | Slip rings (maintains continuous contact) |
-| Principle | Motor effect (current in field = force) | Electromagnetic induction (motion in field = EMF) |
+| Input energy  | Electrical                               | Kinetic (mechanical)                              |
+| Output energy | Kinetic (rotation)                       | Electrical                                        |
+| Contact       | Split-ring commutator (reverses current) | Slip rings (maintains continuous contact)         |
+| Principle     | Motor effect (current in field = force)  | Electromagnetic induction (motion in field = EMF) |
 
 ## 4. Transformers
 
@@ -329,13 +328,13 @@ Where $\eta$ is the efficiency ( 95--99% for large transformers).
 Large transformers have efficiencies exceeding 99%. Losses occur due to:
 
 - **Eddy currents:** The changing magnetic field induces currents in the iron core, which heat it
- up. This is minimised by laminating the core (building it from thin, insulated sheets).
+  up. This is minimised by laminating the core (building it from thin, insulated sheets).
 - **Hysteresis:** The iron core is repeatedly magnetised and demagnetised, dissipating energy as
- heat. This is minimised by using soft iron, which magnetises and demagnetises .
+  heat. This is minimised by using soft iron, which magnetises and demagnetises .
 - **Resistance of the coils:** Current flowing through the copper coils produces heat ($I^2R$
- losses). This is minimised by using thick wire and keeping the coils short.
+  losses). This is minimised by using thick wire and keeping the coils short.
 - **Flux leakage:** Not all the magnetic flux from the primary coil links the secondary coil. This
- is minimised by using a closed core that provides a continuous magnetic path.
+  is minimised by using a closed core that provides a continuous magnetic path.
 
 ### 4.6 Transformers in the National Grid
 
@@ -408,76 +407,76 @@ The magnetic field changes, not on the absolute magnitude of the field.
 ## Common Pitfalls
 
 - **Using the wrong hand rule.** Fleming's LEFT-hand rule is for motors (force on a current-carrying
- wire). The RIGHT-hand grip rule is for the direction of the magnetic field around a wire.
+  wire). The RIGHT-hand grip rule is for the direction of the magnetic field around a wire.
 - **Confusing generators and motors.** Motors use current to produce motion; generators use motion
- to produce current.
+  to produce current.
 - **Forgetting that transformers only work with AC.** A changing magnetic field is required for
- induction; DC produces a constant field.
+  induction; DC produces a constant field.
 - **Reversing the transformer equation.** The ratio $N_s/N_p$ equals $V_s/V_p$Not $V_p/V_s$.
 - **Confusing magnetic and electric field lines.** Magnetic field lines go from N to S; electric
- field lines go from + to -.
+  field lines go from + to -.
 - **Forgetting that the motor effect requires the wire to NOT be parallel to the field.** If the
- wire is parallel, the force is zero.
+  wire is parallel, the force is zero.
 - **Confusing the north pole of a compass with geographic north.** The north pole of a compass
- points towards geographic north, which means geographic north is near a magnetic south pole.
+  points towards geographic north, which means geographic north is near a magnetic south pole.
 - **Stating that a magnet can be cut to isolate a single pole.** Cutting a magnet in half produces
- two smaller magnets, each with a north and south pole. Magnetic monopoles have never been
- observed.
+  two smaller magnets, each with a north and south pole. Magnetic monopoles have never been
+  observed.
 - **Forgetting that the force in $F = BIl$ is perpendicular to both the current and the field.** The
- force, current, and field are mutually perpendicular.
+  force, current, and field are mutually perpendicular.
 - **Confusing the split-ring commutator (motor) with slip rings (generator).** The commutator
- reverses the current every half-turn to maintain continuous rotation. Slip rings maintain
- continuous electrical contact without reversing.
+  reverses the current every half-turn to maintain continuous rotation. Slip rings maintain
+  continuous electrical contact without reversing.
 
 ## Practice Questions
 
 1. A wire of length 0.2 m carries a current of 5 A at right angles to a magnetic field of flux
- density 0.3 T. Calculate the force on the wire.
+   density 0.3 T. Calculate the force on the wire.
 
 2. Explain the difference between a permanent magnet and an electromagnet. Give two advantages of
- each.
+   each.
 
 3. A transformer has 800 turns on its primary coil and 200 turns on its secondary coil. If the input
- voltage is 230 V, calculate the output voltage.
+   voltage is 230 V, calculate the output voltage.
 
 4. Describe how an AC generator produces an alternating current, explaining the role of the slip
- rings.
+   rings.
 
 5. A student wants to increase the strength of an electromagnet. Describe three ways they could do
- this.
+   this.
 
 6. Calculate the current in the primary coil of a transformer that has a primary voltage of 240 V, a
- secondary voltage of 12 V, and a secondary current of 5 A. Assume 100% efficiency.
+   secondary voltage of 12 V, and a secondary current of 5 A. Assume 100% efficiency.
 
 7. Explain why transformers are used in the National Grid, with reference to energy losses in
- transmission cables.
+   transmission cables.
 
 8. Use Fleming's left-hand rule to determine the direction of the force on a wire carrying current
- into the page in a magnetic field pointing to the right.
+   into the page in a magnetic field pointing to the right.
 
 9. Describe the difference between a motor and a generator in terms of energy transfers.
 
 10. Explain why a transformer will not work with a DC supply.
 
 11. A coil of 200 turns and area $0.01$ m$^2$ rotates at 50 Hz in a magnetic field of flux density
- 0.5 T. Calculate the peak EMF.
+    0.5 T. Calculate the peak EMF.
 
 12. Explain the role of the iron core in a transformer. Why is the core laminated?
 
 13. A wire of length 0.3 m carries a current of 4 A at an angle of $30^{\circ}$ to a magnetic field
- of flux density 0.6 T. Calculate the force on the wire.
+    of flux density 0.6 T. Calculate the force on the wire.
 
 14. Describe how Lenz's law is a consequence of the principle of conservation of energy.
 
 15. A step-down transformer converts 230 V to 12 V. If the primary coil has 460 turns and the
- secondary coil has 24 turns, and the transformer is 96% efficient, calculate the secondary
- current when the primary current is 0.5 A.
+    secondary coil has 24 turns, and the transformer is 96% efficient, calculate the secondary
+    current when the primary current is 0.5 A.
 
 ## 7. Worked Example: Transformer Power and Efficiency
 
-A step-down transformer converts $230 \mathrm{ V{}$ to $12 \mathrm{ V{}$. The primary coil has 920 turns.
-A device connected to the secondary draws $5 \mathrm{ A{}$ at $12 \mathrm{ V{}$. The transformer is 95%
-Efficient.
+A step-down transformer converts $230 \mathrm{ V{}$ to $12 \mathrm{ V{}$. The primary coil has 920
+turns. A device connected to the secondary draws $5 \mathrm{ A{}$ at $12 \mathrm{ V{}$. The
+transformer is 95% Efficient.
 
 **Step 1:** Find the number of secondary turns.
 
@@ -511,8 +510,8 @@ Changes by $\Delta\Phi$ in time $\Delta t$The rate of change is $\Delta\Phi / \D
 Induced EMF is proportional to this rate. The negative sign (Lenz's law) indicates that the induced
 EMF opposes the change in flux.
 
-**Quantitative example:** A coil of 200 turns and area $0.02 \mathrm{ m{}^2$ is in a magnetic field of
-Flux density $0.5 \mathrm{ T{}$. The field is reduced to zero in $0.05 \mathrm{ s{}$.
+**Quantitative example:** A coil of 200 turns and area $0.02 \mathrm{ m{}^2$ is in a magnetic field
+of Flux density $0.5 \mathrm{ T{}$. The field is reduced to zero in $0.05 \mathrm{ s{}$.
 
 $$\Delta\Phi = BA = 0.5 \times 0.02 = 0.01 \mathrm{ Wb{}$$
 
@@ -529,8 +528,9 @@ Energy.
 
 ## 10. Worked Example: Force on a Wire at an Angle
 
-A wire of length $0.25 \mathrm{ m{}$ carries a current of $4 \mathrm{ A{}$ at an angle of $30^{\circ}$ to
-A magnetic field of flux density $0.6 \mathrm{ T{}$. Calculate the force on the wire.
+A wire of length $0.25 \mathrm{ m{}$ carries a current of $4 \mathrm{ A{}$ at an angle of
+$30^{\circ}$ to A magnetic field of flux density $0.6 \mathrm{ T{}$. Calculate the force on the
+wire.
 
 $$F = BIl\sin\theta = 0.6 \times 4 \times 0.25 \times \sin 30^{\circ}$$
 
@@ -543,11 +543,11 @@ $0.6 \mathrm{ N{}$ -- twice as large. At $\theta = 0^{\circ}$ (parallel), the fo
 
 Students often confuse these two rules. Here is a clear distinction:
 
-| Rule | Used For | What It Finds |
+| Rule                      | Used For                                                                              | What It Finds                                     |
 | ------------------------- | ------------------------------------------------------------------------------------- | ------------------------------------------------- |
-| Right-hand grip rule | Finding the direction of the **magnetic field** around a current-carrying wire | Field direction (fingers curl in field direction) |
-| Fleming's left-hand rule | Finding the direction of the **force** on a current-carrying wire in a magnetic field | Force direction (thumb) |
-| Right-hand rule (general) | Finding the direction of the magnetic field produced by a current loop or solenoid | North pole direction |
+| Right-hand grip rule      | Finding the direction of the **magnetic field** around a current-carrying wire        | Field direction (fingers curl in field direction) |
+| Fleming's left-hand rule  | Finding the direction of the **force** on a current-carrying wire in a magnetic field | Force direction (thumb)                           |
+| Right-hand rule (general) | Finding the direction of the magnetic field produced by a current loop or solenoid    | North pole direction                              |
 
 The right-hand grip rule has nothing to do with the motor effect. It tells you the shape of the
 Magnetic field around a wire. Fleming's left-hand rule tells you the direction of the force when you
@@ -581,13 +581,13 @@ Force.
 Both motors and generators involve a coil rotating in a magnetic field. The difference is the
 Direction of energy conversion:
 
-| Aspect | Motor | Generator |
+| Aspect            | Motor                    | Generator            |
 | ----------------- | ------------------------ | -------------------- |
-| Energy in | Electrical | Mechanical (kinetic) |
-| Energy out | Mechanical (kinetic) | Electrical |
-| Contact | Split-ring commutator | Slip rings |
-| Current direction | Reverses every half-turn | Alternates |
-| Output | Continuous rotation | Alternating EMF |
+| Energy in         | Electrical               | Mechanical (kinetic) |
+| Energy out        | Mechanical (kinetic)     | Electrical           |
+| Contact           | Split-ring commutator    | Slip rings           |
+| Current direction | Reverses every half-turn | Alternates           |
+| Output            | Continuous rotation      | Alternating EMF      |
 
 The split-ring commutator in a motor ensures that the current always flows in the correct direction
 To produce a torque that maintains rotation. In a generator, the slip rings maintain continuous
@@ -596,8 +596,8 @@ Directly to the external circuit.
 
 ## 14. Worked Example: AC Generator Peak EMF
 
-A coil of 100 turns and area $0.03 \mathrm{ m{}^2$ rotates at 50 Hz in a magnetic field of flux density
-$0.4 \mathrm{ T{}$. Calculate the peak EMF.
+A coil of 100 turns and area $0.03 \mathrm{ m{}^2$ rotates at 50 Hz in a magnetic field of flux
+density $0.4 \mathrm{ T{}$. Calculate the peak EMF.
 
 $$\mathrm{EMF{}_{\mathrm{peak{}} = NAB\omega = NAB \times 2\pi f$$
 
@@ -611,13 +611,13 @@ The RMS voltage would be $377 / \sqrt{2} \approx 267 \mathrm{ V{}$.
 
 ## 15. Magnetic Materials: Hard vs Soft
 
-| Property | Soft Magnetic Material | Hard Magnetic Material |
+| Property               | Soft Magnetic Material            | Hard Magnetic Material    |
 | ---------------------- | --------------------------------- | ------------------------- |
-| Examples | Iron, mild steel | Steel, alnico, neodymium |
-| Ease of magnetisation | Easy | Hard |
-| Retention of magnetism | Loses it | Retains it permanently |
-| Use | Electromagnet cores, transformers | Permanent magnets, motors |
-| Hysteresis loss | Low | High |
+| Examples               | Iron, mild steel                  | Steel, alnico, neodymium  |
+| Ease of magnetisation  | Easy                              | Hard                      |
+| Retention of magnetism | Loses it                          | Retains it permanently    |
+| Use                    | Electromagnet cores, transformers | Permanent magnets, motors |
+| Hysteresis loss        | Low                               | High                      |
 
 The distinction is critical for applications. A transformer core must be made of soft iron so that
 It can be magnetised and demagnetised rapidly by the alternating current without significant energy
@@ -626,47 +626,48 @@ Magnetism despite the changing fields produced by the motor's coils.
 
 ## 16. Practice Questions (Additional)
 
-16. An electromagnet has 300 turns and carries a current of $3 \mathrm{ A{}$. The magnetic flux density
- at its centre is $0.15 \mathrm{ T{}$. If the current is increased to $5 \mathrm{ A{}$ and the number
- of turns is increased to 600, calculate the new flux density.
+16. An electromagnet has 300 turns and carries a current of $3 \mathrm{ A{}$. The magnetic flux
+    density at its centre is $0.15 \mathrm{ T{}$. If the current is increased to $5 \mathrm{ A{}$
+    and the number of turns is increased to 600, calculate the new flux density.
 
 17. Explain, with reference to Lenz's law, why a magnet dropped through a copper tube falls more
- slowly than through a plastic tube.
+    slowly than through a plastic tube.
 
 18. A transformer has 1000 turns on its primary and 50 turns on its secondary. The primary is
- connected to $230 \mathrm{ V{}$ mains. If the secondary current is $8 \mathrm{ A{}$ and the
- transformer is 92% efficient, calculate the primary current.
+    connected to $230 \mathrm{ V{}$ mains. If the secondary current is $8 \mathrm{ A{}$ and the
+    transformer is 92% efficient, calculate the primary current.
 
 19. Describe how you would demonstrate the motor effect in a school laboratory. Include a diagram
- description and explain how to reverse the direction of the force.
+    description and explain how to reverse the direction of the force.
 
 20. A wire carrying a current of $6 \mathrm{ A{}$ is placed at right angles to a magnetic field. The
- force on the wire is $0.72 \mathrm{ N{}$ when the wire is $0.3 \mathrm{ m{}$ long. Calculate the
- magnetic flux density.
+    force on the wire is $0.72 \mathrm{ N{}$ when the wire is $0.3 \mathrm{ m{}$ long. Calculate the
+    magnetic flux density.
 
 21. Explain why transformers are essential for the efficient distribution of electrical energy from
- power stations to consumers. Include quantitative reasoning.
+    power stations to consumers. Include quantitative reasoning.
 
 22. A rectangular coil of 200 turns, dimensions $5 \mathrm{ cm{} \times 8 \mathrm{ cm{}$Rotates at
- $40 \mathrm{ Hz{}$ in a magnetic field of flux density $0.5 \mathrm{ T{}$. Calculate (a) the peak EMF
- and (b) the EMF when the coil makes an angle of $60^{\circ}$ with the field.
+    $40 \mathrm{ Hz{}$ in a magnetic field of flux density $0.5 \mathrm{ T{}$. Calculate (a) the
+    peak EMF and (b) the EMF when the coil makes an angle of $60^{\circ}$ with the field.
 
 23. Compare and contrast permanent magnets and electromagnets. Give two specific applications where
- each is preferred.
+    each is preferred.
 
 24. A student investigates how the number of turns on an electromagnet affects the strength of the
- magnetic field. Describe a suitable method, identify the independent, dependent, and control
- variables, and explain how the results should be analysed.
+    magnetic field. Describe a suitable method, identify the independent, dependent, and control
+    variables, and explain how the results should be analysed.
 
 25. Explain why the core of a transformer is laminated. What would happen if the core were made from
- a single solid piece of iron?
+    a single solid piece of iron?
 
 ## Extended Worked Examples
 
 ### Example 26: Electromagnetic Induction Quantitative
 
 A coil of 200 turns is placed in a magnetic field. The magnetic flux through the coil changes from
-$0.02 \mathrm{ Wb{}$ to $0.08 \mathrm{ Wb{}$ in $0.05 \mathrm{ s{}$. Calculate the average EMF induced.
+$0.02 \mathrm{ Wb{}$ to $0.08 \mathrm{ Wb{}$ in $0.05 \mathrm{ s{}$. Calculate the average EMF
+induced.
 
 **Step 1: Calculate the change in flux linkage**
 
@@ -681,8 +682,8 @@ The magnitude is $240 \mathrm{ V{}$ (the minus sign indicates direction via Lenz
 ### Example 27: National Grid Power Loss Comparison
 
 A power station generates $500 \mathrm{ MW{}$ of power. Compare the power loss in the transmission
-Cables if the power is transmitted at (a) $25 \mathrm{ kV{}$ and (b) $400 \mathrm{ kV{}$Given a cable
-Resistance of $2 \Omega$.
+Cables if the power is transmitted at (a) $25 \mathrm{ kV{}$ and (b) $400 \mathrm{ kV{}$Given a
+cable Resistance of $2 \Omega$.
 
 **Step 1: At $25 \mathrm{ kV{}$**
 
@@ -706,8 +707,7 @@ At $25 \mathrm{ kV{}$: $\eta = \frac{500 - 800}{500} \times 100 = \mathrm{negati
 
 At $400 \mathrm{ kV{}$: $\eta = \frac{500 - 3.125}{500} \times 100 = 99.375\%$
 
-:::info
-Step-up transformers increase the voltage (and decrease the current) for transmission,
+:::info Step-up transformers increase the voltage (and decrease the current) for transmission,
 Dramatically reducing $I^2R$ losses. Step-down transformers then reduce the voltage to safe levels
 For domestic use. This is the fundamental reason the National Grid uses high-voltage transmission.
 :::
@@ -715,8 +715,8 @@ For domestic use. This is the fundamental reason the National Grid uses high-vol
 ### Example 28: Designing an Electromagnet
 
 Design an electromagnet that can lift a $5 \mathrm{ kg{}$ steel block. The electromagnet has a soft
-Iron core, 500 turns of wire, and operates from a $12 \mathrm{ V{}$ DC supply. Determine the required
-Current.
+Iron core, 500 turns of wire, and operates from a $12 \mathrm{ V{}$ DC supply. Determine the
+required Current.
 
 **Step 1: Force needed**
 
@@ -772,52 +772,60 @@ Change, it would create energy from nothing, violating the first law of thermody
 ## Additional Practice Problems
 
 26. A transformer has 1000 turns on the primary and 50 turns on the secondary. The primary is
- connected to $230 \mathrm{ V{}$ AC. Calculate the secondary voltage and the primary current when
- the secondary delivers $10 \mathrm{ A{}$ to a load.
+    connected to $230 \mathrm{ V{}$ AC. Calculate the secondary voltage and the primary current when
+    the secondary delivers $10 \mathrm{ A{}$ to a load.
 
 27. A wire carrying $5 \mathrm{ A{}$ is placed at right angles to a magnetic field of flux density
- $0.3 \mathrm{ T{}$. The length of wire in the field is $0.15 \mathrm{ m{}$. Calculate the force on the
- wire and state the direction using Fleming's left-hand rule.
+    $0.3 \mathrm{ T{}$. The length of wire in the field is $0.15 \mathrm{ m{}$. Calculate the force
+    on the wire and state the direction using Fleming's left-hand rule.
 
 28. Explain how a loudspeaker works, including the role of the permanent magnet, the coil, and the
- alternating current. Why does the cone vibrate at the frequency of the AC signal?
+    alternating current. Why does the cone vibrate at the frequency of the AC signal?
 
 29. A student investigates how the strength of an electromagnet varies with current. Describe a
- suitable method, including how to measure the magnetic field strength and how to ensure a fair
- test.
+    suitable method, including how to measure the magnetic field strength and how to ensure a fair
+    test.
 
 30. Explain why transformers only work with AC and not DC. What would happen if you connected a
- transformer to a DC supply?
+    transformer to a DC supply?
 
 ## Practice Problems
 
 <details>
 <summary>Question 1: Electromagnetic induction</summary>
 
-A bar magnet is pushed into a coil of wire connected to a galvanometer. Describe what happens to the galvanometer needle and explain why. What happens if the magnet is held stationary inside the coil?
+A bar magnet is pushed into a coil of wire connected to a galvanometer. Describe what happens to the
+galvanometer needle and explain why. What happens if the magnet is held stationary inside the coil?
 
 </details>
 
 <details>
 <summary>Answer</summary>
 
-The galvanometer needle deflects. As the magnet moves into the coil, the magnetic flux through the coil changes. According to Faraday's law, a changing magnetic flux induces an electromotive force (EMF) in the coil, causing a current to flow. The needle returns to zero when the magnet is held stationary because there is no change in magnetic flux, so no EMF is induced.
+The galvanometer needle deflects. As the magnet moves into the coil, the magnetic flux through the
+coil changes. According to Faraday's law, a changing magnetic flux induces an electromotive force
+(EMF) in the coil, causing a current to flow. The needle returns to zero when the magnet is held
+stationary because there is no change in magnetic flux, so no EMF is induced.
 
 </details>
 
 <details>
 <summary>Question 2: Transformer calculation</summary>
 
-A step-down transformer has 2000 turns on the primary coil and 100 turns on the secondary coil. The primary voltage is $240 \mathrm{ V{}$. Calculate the secondary voltage and explain why the transformer is described as step-down.
+A step-down transformer has 2000 turns on the primary coil and 100 turns on the secondary coil. The
+primary voltage is $240 \mathrm{ V{}$. Calculate the secondary voltage and explain why the
+transformer is described as step-down.
 
 </details>
 
 <details>
 <summary>Answer</summary>
 
-$\frac{V_p}{V_s} = \frac{N_p}{N_s}$So $V_s = V_p \times \frac{N_s}{N_p} = 240 \times \frac{100}{2000} = 12 \mathrm{ V{}$.
+$\frac{V_p}{V_s} = \frac{N_p}{N_s}$So
+$V_s = V_p \times \frac{N_s}{N_p} = 240 \times \frac{100}{2000} = 12 \mathrm{ V{}$.
 
-It is a step-down transformer because the secondary voltage ($12 \mathrm{ V{}$) is lower than the primary voltage ($240 \mathrm{ V{}$). There are fewer turns on the secondary coil than the primary.
+It is a step-down transformer because the secondary voltage ($12 \mathrm{ V{}$) is lower than the
+primary voltage ($240 \mathrm{ V{}$). There are fewer turns on the secondary coil than the primary.
 
 </details>
 
@@ -831,23 +839,29 @@ Explain how a DC motor works. Describe the role of the split-ring commutator.
 <details>
 <summary>Answer</summary>
 
-A current-carrying coil in a magnetic field experiences a force (motor effect). The force on opposite sides of the coil acts in opposite directions, causing the coil to rotate. The split-ring commutator reverses the direction of current in the coil every half-turn, ensuring that the forces always act in the same rotational direction, so the coil continues to spin.
+A current-carrying coil in a magnetic field experiences a force (motor effect). The force on
+opposite sides of the coil acts in opposite directions, causing the coil to rotate. The split-ring
+commutator reverses the direction of current in the coil every half-turn, ensuring that the forces
+always act in the same rotational direction, so the coil continues to spin.
 
 </details>
 
 <details>
 <summary>Question 4: Magnetic field of a wire</summary>
 
-Describe the magnetic field pattern around a straight current-carrying wire. Explain how you would use the right-hand grip rule to determine the direction of the field.
+Describe the magnetic field pattern around a straight current-carrying wire. Explain how you would
+use the right-hand grip rule to determine the direction of the field.
 
 </details>
 
 <details>
 <summary>Answer</summary>
 
-The magnetic field consists of concentric circles centred on the wire. The field is strongest close to the wire and weakens with distance.
+The magnetic field consists of concentric circles centred on the wire. The field is strongest close
+to the wire and weakens with distance.
 
-Right-hand grip rule: grip the wire with your right hand, with your thumb pointing in the direction of conventional current. Your fingers curl in the direction of the magnetic field lines.
+Right-hand grip rule: grip the wire with your right hand, with your thumb pointing in the direction
+of conventional current. Your fingers curl in the direction of the magnetic field lines.
 
 </details>
 
@@ -861,9 +875,13 @@ Describe how an electromagnet works and give two examples of its use in everyday
 <details>
 <summary>Answer</summary>
 
-An electromagnet is a coil of wire (solenoid) wrapped around an iron core. When current flows through the coil, a magnetic field is produced. The iron core becomes magnetised by induction, greatly strengthening the magnetic field. When the current is switched off, the iron loses most of its magnetism.
+An electromagnet is a coil of wire (solenoid) wrapped around an iron core. When current flows
+through the coil, a magnetic field is produced. The iron core becomes magnetised by induction,
+greatly strengthening the magnetic field. When the current is switched off, the iron loses most of
+its magnetism.
 
-Examples: (1) Electric bells -- the electromagnet attracts a metal striker. (2) Scrap yard cranes -- the electromagnet picks up and releases metal objects. (3) Relays in circuits.
+Examples: (1) Electric bells -- the electromagnet attracts a metal striker. (2) Scrap yard cranes --
+the electromagnet picks up and releases metal objects. (3) Relays in circuits.
 
 </details>
 

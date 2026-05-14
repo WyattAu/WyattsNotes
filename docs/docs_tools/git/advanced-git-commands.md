@@ -1,6 +1,8 @@
 ---
 title: Advanced Git Commands
-description: "Git version control: Advanced Git Commands — git replace; Basic Syntax; Replace one object with another; Replace using an edited version of the original."
+description:
+  'Git version control: Advanced Git Commands — git replace; Basic Syntax; Replace one object with
+  another; Replace using an edited version of the original.'
 date: 2026-04-07T00:00:00.000Z
 tags:
   - Git
@@ -8,6 +10,7 @@ categories:
   - Git
 slug: advanced-git-commands
 ---
+
 This document covers Git commands and features that are powerful but less frequently used in
 Day-to-day workflows. These tools solve specific problems around metadata, history manipulation,
 Repository integrity, and multi-tree management.
@@ -184,13 +187,13 @@ Your team before pushing replacement refs.
 
 ### Comparison Table
 
-| Operation | Mechanism | Permanence | Pushes by default |
+| Operation             | Mechanism                 | Permanence        | Pushes by default |
 | --------------------- | ------------------------- | ----------------- | ----------------- |
-| `git replace` | Ref under `refs/replace/` | Transient (local) | No |
-| `git replace --graft` | Replacement commit ref | Transient (local) | No |
-| `~/.git/info/grafts` | Grafts file (legacy) | Local only | No |
-| `git rebase` | New commit objects | Permanent | Yes |
-| `git filter-branch` | Rewrites object store | Permanent | Yes |
+| `git replace`         | Ref under `refs/replace/` | Transient (local) | No                |
+| `git replace --graft` | Replacement commit ref    | Transient (local) | No                |
+| `~/.git/info/grafts`  | Grafts file (legacy)      | Local only        | No                |
+| `git rebase`          | New commit objects        | Permanent         | Yes               |
+| `git filter-branch`   | Rewrites object store     | Permanent         | Yes               |
 
 ---
 
@@ -198,9 +201,9 @@ Your team before pushing replacement refs.
 
 ### Overview
 
-`git notes` attaches arbitrary metadata to Git objects ( commits) without modifying the
-Objects themselves. Notes are stored as ordinary Git objects in a special ref, making them versioned
-And distributable.
+`git notes` attaches arbitrary metadata to Git objects ( commits) without modifying the Objects
+themselves. Notes are stored as ordinary Git objects in a special ref, making them versioned And
+distributable.
 
 **Definition.** A Git note is a blob object associated with a specific commit, stored in a tree
 Under `refs/notes/commits`. The mapping from commit to note is maintained through a tree structure
@@ -309,11 +312,11 @@ $ git notes merge -s cat-sort-uniq refs/notes/commits-from-other-branch
 
 Available merge strategies:
 
-| Strategy | Behavior |
+| Strategy        | Behavior                                   |
 | --------------- | ------------------------------------------ |
-| `ours` | Discard incoming notes, keep local |
-| `theirs` | Discard local notes, take incoming |
-| `manual` | Leave conflicts for manual resolution |
+| `ours`          | Discard incoming notes, keep local         |
+| `theirs`        | Discard local notes, take incoming         |
+| `manual`        | Leave conflicts for manual resolution      |
 | `cat-sort-uniq` | Concatenate, sort lines, remove duplicates |
 
 ### Note Namespaces
@@ -484,12 +487,12 @@ v2.3.1-14-ga3f2b1c
 
 Breakdown:
 
-| Component | Meaning |
+| Component | Meaning                                                     |
 | --------- | ----------------------------------------------------------- |
-| `v2.3.1` | The nearest annotated tag that is an ancestor of the commit |
-| `-14` | 14 commits after the tag |
-| `-g` | Literal "g" (for "git") |
-| `a3f2b1c` | Abbreviated commit hash |
+| `v2.3.1`  | The nearest annotated tag that is an ancestor of the commit |
+| `-14`     | 14 commits after the tag                                    |
+| `-g`      | Literal "g" (for "git")                                     |
+| `a3f2b1c` | Abbreviated commit hash                                     |
 
 If the commit itself is tagged, `git describe` outputs just the tag name:
 
@@ -499,20 +502,20 @@ v2.3.1
 
 ### Flags Reference
 
-| Flag | Effect |
+| Flag                  | Effect                                                      |
 | --------------------- | ----------------------------------------------------------- |
-| `--tags` | Use lightweight tags in addition to annotated tags |
-| `--all` | Use any ref, not just tags |
-| `--abbrev=<n>` | Use at least n hex digits (default: 7, or auto-detected) |
-| `--abbrev=0` | Show only the tag name, no commit count or hash |
-| `--long` | Always show the commit count and abbreviated hash |
-| `--always` | Fall back to abbreviated hash if no tag is found |
-| `--dirty` | Append `-dirty` if working tree has modifications |
-| `--dirty=<suffix>` | Append custom suffix instead of `-dirty` |
-| `--match=<pattern>` | Only consider tags matching the glob pattern |
-| `--exclude=<pattern>` | Exclude tags matching the glob pattern |
-| `--contains` | Find the tag that contains the commit (tag is a descendant) |
-| `--first-parent` | Follow only the first parent when traversing |
+| `--tags`              | Use lightweight tags in addition to annotated tags          |
+| `--all`               | Use any ref, not just tags                                  |
+| `--abbrev=<n>`        | Use at least n hex digits (default: 7, or auto-detected)    |
+| `--abbrev=0`          | Show only the tag name, no commit count or hash             |
+| `--long`              | Always show the commit count and abbreviated hash           |
+| `--always`            | Fall back to abbreviated hash if no tag is found            |
+| `--dirty`             | Append `-dirty` if working tree has modifications           |
+| `--dirty=<suffix>`    | Append custom suffix instead of `-dirty`                    |
+| `--match=<pattern>`   | Only consider tags matching the glob pattern                |
+| `--exclude=<pattern>` | Exclude tags matching the glob pattern                      |
+| `--contains`          | Find the tag that contains the commit (tag is a descendant) |
+| `--first-parent`      | Follow only the first parent when traversing                |
 
 ### Using in Build Versioning
 
@@ -619,13 +622,13 @@ repo/
 
 Git also reads from:
 
-| Location | Scope |
+| Location                           | Scope                     |
 | ---------------------------------- | ------------------------- |
-| `.gitattributes` in repo root | All files in the repo |
-| `.gitattributes` in subdirectories | Files in that subtree |
-| `$GIT_DIR/info/attributes` | Local repo, not committed |
-| `~/.gitattributes` | User-global, all repos |
-| `/etc/gitattributes` | System-wide |
+| `.gitattributes` in repo root      | All files in the repo     |
+| `.gitattributes` in subdirectories | Files in that subtree     |
+| `$GIT_DIR/info/attributes`         | Local repo, not committed |
+| `~/.gitattributes`                 | User-global, all repos    |
+| `/etc/gitattributes`               | System-wide               |
 
 ### Syntax
 
@@ -673,24 +676,24 @@ docs/_build/* linguist-generated
 
 Attributes can be set, unset, or set to a value:
 
-| Syntax | Meaning |
+| Syntax                 | Meaning                           |
 | ---------------------- | --------------------------------- |
-| `text` | Set the attribute |
-| `-text` | Unset the attribute |
-| `text` (after `!text`) | Unset the attribute (explicitly) |
-| `diff=markdown` | Set attribute to value `markdown` |
+| `text`                 | Set the attribute                 |
+| `-text`                | Unset the attribute               |
+| `text` (after `!text`) | Unset the attribute (explicitly)  |
+| `diff=markdown`        | Set attribute to value `markdown` |
 
 ### Line Ending Normalization
 
 The `text` attribute controls CRLF/LF conversion:
 
-| Setting | Behavior |
+| Setting         | Behavior                                                               |
 | --------------- | ---------------------------------------------------------------------- |
-| `text` | Convert CRLF to LF on commit; convert to OS-native on checkout |
-| `text eol=lf` | Convert CRLF to LF on commit; LF on checkout (force Unix line endings) |
-| `text eol=crlf` | Convert LF to CRLF on checkout (force Windows line endings) |
-| `-text` | No conversion at all (binary-like) |
-| `binary` | Equivalent to `-text -diff` |
+| `text`          | Convert CRLF to LF on commit; convert to OS-native on checkout         |
+| `text eol=lf`   | Convert CRLF to LF on commit; LF on checkout (force Unix line endings) |
+| `text eol=crlf` | Convert LF to CRLF on checkout (force Windows line endings)            |
+| `-text`         | No conversion at all (binary-like)                                     |
+| `binary`        | Equivalent to `-text -diff`                                            |
 
 ```gitattributes
 # Force LF for everything (recommended for cross-platform projects)
@@ -775,9 +778,9 @@ $ git config merge.json.recursive binary
 
 Available built-in merge strategies:
 
-| Driver | Behavior |
+| Driver         | Behavior                                 |
 | -------------- | ---------------------------------------- |
-| `merge=ours` | Keep our version, ignore theirs entirely |
+| `merge=ours`   | Keep our version, ignore theirs entirely |
 | `merge=binary` | No merging; conflict on any modification |
 
 ### Export-Subst
@@ -808,18 +811,18 @@ $ git archive --format=tar.gz HEAD > release.tar.gz
 
 Available format specifiers:
 
-| Specifier | Expands to |
+| Specifier | Expands to                             |
 | --------- | -------------------------------------- |
-| `%H` | Full commit hash |
-| `%h` | Abbreviated commit hash |
-| `%D` | Ref names (tags, branches) |
-| `%ci` | Commit date in ISO 8601 format |
-| `%an` | Author name |
-| `%ae` | Author email |
-| `%cn` | Committer name |
-| `%ce` | Committer email |
-| `%s` | Subject (first line of commit message) |
-| `%b` | Body (rest of commit message) |
+| `%H`      | Full commit hash                       |
+| `%h`      | Abbreviated commit hash                |
+| `%D`      | Ref names (tags, branches)             |
+| `%ci`     | Commit date in ISO 8601 format         |
+| `%an`     | Author name                            |
+| `%ae`     | Author email                           |
+| `%cn`     | Committer name                         |
+| `%ce`     | Committer email                        |
+| `%s`      | Subject (first line of commit message) |
+| `%b`      | Body (rest of commit message)          |
 
 ### Whitespace Rules
 
@@ -837,14 +840,14 @@ Available format specifiers:
 Makefile whitespace=indent-with-non-tab
 ```
 
-| Whitespace Attribute | Error Detected |
+| Whitespace Attribute  | Error Detected                                                |
 | --------------------- | ------------------------------------------------------------- |
-| `trailing-space` | Trailing whitespace, blank lines with whitespace |
-| `space-before-tab` | Spaces before tab characters |
-| `indent-with-non-tab` | Indentation using spaces when tab width is expected |
-| `cr-at-eol` | Carriage return at end of line (not an error, just detection) |
-| `blank-at-eol` | Trailing whitespace at end of line |
-| `blank-at-eof` | Blank lines at end of file |
+| `trailing-space`      | Trailing whitespace, blank lines with whitespace              |
+| `space-before-tab`    | Spaces before tab characters                                  |
+| `indent-with-non-tab` | Indentation using spaces when tab width is expected           |
+| `cr-at-eol`           | Carriage return at end of line (not an error, just detection) |
+| `blank-at-eol`        | Trailing whitespace at end of line                            |
+| `blank-at-eof`        | Blank lines at end of file                                    |
 
 ### Linguist-Generated (GitHub Specific)
 
@@ -957,8 +960,7 @@ git submodule update --remote libs/repo
 :::info
 
 Even with a tracking branch configured, the parent repository records a specific commit hash, not a
-Branch name. The tracking branch tells `git submodule update --remote` which branch to fetch
-From.
+Branch name. The tracking branch tells `git submodule update --remote` which branch to fetch From.
 
 :::
 
@@ -990,21 +992,21 @@ git commit -m "Remove libs/repo submodule"
 
 :::warning
 
- `rm -rf` the submodule directory without running `git submodule deinit` and `git rm` leaves
-Stale configuration in `.gitmodules` and `.git/modules/`. This causes errors for anyone cloning the
+`rm -rf` the submodule directory without running `git submodule deinit` and `git rm` leaves Stale
+configuration in `.gitmodules` and `.git/modules/`. This causes errors for anyone cloning the
 Repository. Always follow the full removal procedure.
 
 :::
 
 ### Common Pitfalls
 
-| Pitfall | Solution |
+| Pitfall                                          | Solution                                                                              |
 | ------------------------------------------------ | ------------------------------------------------------------------------------------- |
-| Submodule directory empty after clone | Run `git submodule update --init --recursive` |
-| Submodule shows "modified" after `git pull` | Submodules track commits, not branches; run `git submodule update --init --recursive` |
-| Forgot to commit `.gitmodules` changes | Stage `.gitmodules` and the submodule path before committing |
-| Stale submodule in `.git/modules/` after removal | Manually remove `.git/modules/<name>` |
-| Submodule at wrong commit | `cd libs/repo && git checkout <commit>` then `cd ../.. && git add libs/repo` |
+| Submodule directory empty after clone            | Run `git submodule update --init --recursive`                                         |
+| Submodule shows "modified" after `git pull`      | Submodules track commits, not branches; run `git submodule update --init --recursive` |
+| Forgot to commit `.gitmodules` changes           | Stage `.gitmodules` and the submodule path before committing                          |
+| Stale submodule in `.git/modules/` after removal | Manually remove `.git/modules/<name>`                                                 |
+| Submodule at wrong commit                        | `cd libs/repo && git checkout <commit>` then `cd ../.. && git add libs/repo`          |
 
 ---
 
@@ -1312,12 +1314,12 @@ $ make -C ../build-v2.4 release
 
 ### Limitations and Constraints
 
-| Constraint | Details |
+| Constraint                                          | Details                                                         |
 | --------------------------------------------------- | --------------------------------------------------------------- |
-| Branch can only be checked out in one worktree | Git prevents checking out the same branch in multiple worktrees |
-| No nested worktrees | You cannot create a worktree inside another worktree |
-| `core.bare` must be unset for main worktree | Bare repos can only have linked worktrees, not a main worktree |
-| `git init` and `git clone` create the main worktree | You cannot convert a standalone repo into a linked worktree |
+| Branch can only be checked out in one worktree      | Git prevents checking out the same branch in multiple worktrees |
+| No nested worktrees                                 | You cannot create a worktree inside another worktree            |
+| `core.bare` must be unset for main worktree         | Bare repos can only have linked worktrees, not a main worktree  |
+| `git init` and `git clone` create the main worktree | You cannot convert a standalone repo into a linked worktree     |
 
 :::warning
 
@@ -1334,8 +1336,7 @@ Up. The branch that was checked out in the deleted worktree may remain locked un
 ### Overview
 
 The reflog records every movement of branch tips and HEAD. It is Git's primary recovery mechanism
-For operations that seem destructive, such as `git reset --hard``git rebase`Or
-`git commit --amend`.
+For operations that seem destructive, such as `git reset --hard``git rebase`Or `git commit --amend`.
 
 ### Basic Syntax
 
@@ -1515,17 +1516,17 @@ git fsck --no-reflogs
 
 ### What It Checks
 
-| Check | Description |
+| Check                | Description                                     |
 | -------------------- | ----------------------------------------------- |
-| Missing objects | References point to objects that do not exist |
-| Corrupt objects | Object content does not match its hash |
-| Dangling blobs | Blobs not reachable from any tree |
-| Dangling trees | Trees not reachable from any commit |
-| Dangling commits | Commits not reachable from any ref |
-| Unreachable objects | Objects not reachable from any ref or reflog |
-| Invalid tree entries | Tree entries with invalid mode or filename |
+| Missing objects      | References point to objects that do not exist   |
+| Corrupt objects      | Object content does not match its hash          |
+| Dangling blobs       | Blobs not reachable from any tree               |
+| Dangling trees       | Trees not reachable from any commit             |
+| Dangling commits     | Commits not reachable from any ref              |
+| Unreachable objects  | Objects not reachable from any ref or reflog    |
+| Invalid tree entries | Tree entries with invalid mode or filename      |
 | Invalid parent links | Commits referencing non-existent parent commits |
-| Tag signature | Verification of signed tags (with `--tag`) |
+| Tag signature        | Verification of signed tags (with `--tag`)      |
 
 ### Common Output
 
@@ -1631,9 +1632,9 @@ $ git config rerere.autoupdate true
 
 1. A merge conflict occurs. You resolve it manually.
 2. `rerere` records the pre-conflict state (ours/theirs/base) and your resolution in
- `.git/rr-cache/`.
+   `.git/rr-cache/`.
 3. The next time the same files conflict with the same base content, `rerere` detects the match and
- applies the recorded resolution automatically.
+   applies the recorded resolution automatically.
 
 ### Inspecting rerere State
 
@@ -1711,11 +1712,11 @@ $ cp -r .git/rr-cache/ /path/to/other-clone/.git/rr-cache/
 
 ### Configuration Options
 
-| Option | Default | Description |
+| Option              | Default | Description                                 |
 | ------------------- | ------- | ------------------------------------------- |
-| `rerere.enabled` | `false` | Enable rerere |
+| `rerere.enabled`    | `false` | Enable rerere                               |
 | `rerere.autoupdate` | `false` | Automatically stage the recorded resolution |
-| `rerere.autogc` | `true` | Run `git gc` on rr-cache when it gets large |
+| `rerere.autogc`     | `true`  | Run `git gc` on rr-cache when it gets large |
 
 :::info
 
@@ -1979,15 +1980,15 @@ $ git send-email --suppress-cc=body,sob,misc-cmd 0001-*.patch
 
 ### Cc Suppression Options
 
-| Flag | Suppresses Cc from |
+| Flag                     | Suppresses Cc from                 |
 | ------------------------ | ---------------------------------- |
-| `--suppress-cc=author` | Patch author |
-| `--suppress-cc=sob` | Signed-off-by trailers |
-| `--suppress-cc=cc` | Cc lines in patch body |
-| `--suppress-cc=bodycc` | Cc, Acked-by, Reviewed-by trailers |
-| `--suppress-cc=body` | Entire patch body |
-| `--suppress-cc=misc-cmd` | Output of --cc-cmd |
-| `--suppress-cc=all` | All of the above |
+| `--suppress-cc=author`   | Patch author                       |
+| `--suppress-cc=sob`      | Signed-off-by trailers             |
+| `--suppress-cc=cc`       | Cc lines in patch body             |
+| `--suppress-cc=bodycc`   | Cc, Acked-by, Reviewed-by trailers |
+| `--suppress-cc=body`     | Entire patch body                  |
+| `--suppress-cc=misc-cmd` | Output of --cc-cmd                 |
+| `--suppress-cc=all`      | All of the above                   |
 
 ### Common Workflow
 
@@ -2020,18 +2021,18 @@ $ git send-email --to maintainer@project.org \
 
 ### Configuration Reference
 
-| Config Key | Description |
-| -------------------------- | ------------------------------------------ |
-| `sendemail.from` | Default From address |
-| `sendemail.to` | Default To address |
-| `sendemail.smtpServer` | SMTP server hostname |
-| `sendemail.smtpServerPort` | SMTP server port |
-| `sendemail.smtpEncryption` | `ssl``tls`Or `none` |
-| `sendemail.smtpUser` | SMTP username |
-| `sendemail.smtpPass` | SMTP password (or use credential helper) |
-| `sendemail.chainReplyTo` | Chain emails as replies to cover letter |
-| `sendemail.thread` | Enable threading |
-| `sendemail.confirm` | `auto``always``never``cc``compose` |
+| Config Key                 | Description                              |
+| -------------------------- | ---------------------------------------- |
+| `sendemail.from`           | Default From address                     |
+| `sendemail.to`             | Default To address                       |
+| `sendemail.smtpServer`     | SMTP server hostname                     |
+| `sendemail.smtpServerPort` | SMTP server port                         |
+| `sendemail.smtpEncryption` | `ssl``tls`Or `none`                      |
+| `sendemail.smtpUser`       | SMTP username                            |
+| `sendemail.smtpPass`       | SMTP password (or use credential helper) |
+| `sendemail.chainReplyTo`   | Chain emails as replies to cover letter  |
+| `sendemail.thread`         | Enable threading                         |
+| `sendemail.confirm`        | `auto``always``never``cc``compose`       |
 
 :::warning
 
@@ -2189,10 +2190,10 @@ $ git push --force origin feature
 $ git push --force-with-lease origin feature
 ```
 
-| Command | Behavior |
+| Command                        | Behavior                                                                              |
 | ------------------------------ | ------------------------------------------------------------------------------------- |
-| `git push --force` | Unconditionally overwrites the remote branch |
-| `git push --force-with-lease` | Only overwrites if the remote ref matches your tracking branch |
+| `git push --force`             | Unconditionally overwrites the remote branch                                          |
+| `git push --force-with-lease`  | Only overwrites if the remote ref matches your tracking branch                        |
 | `git push --force-if-includes` | Like force-with-lease, but also checks that your local branch includes the remote tip |
 
 :::warning
@@ -2258,8 +2259,8 @@ $ git commit
 *.png merge=binary
 ```
 
-The `binary` merge driver marks the file as unmergeable, and Git will keep whichever version
-Was last modified (based on the merge strategy). This avoids generating conflict markers in binary
+The `binary` merge driver marks the file as unmergeable, and Git will keep whichever version Was
+last modified (based on the merge strategy). This avoids generating conflict markers in binary
 Files.
 
 ## Summary

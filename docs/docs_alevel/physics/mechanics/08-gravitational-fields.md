@@ -1,6 +1,8 @@
 ---
 title: Gravitational Fields
-description: "A-Level Physics notes on Gravitational Fields: 1. Newton's Law of Gravitation; 2. Gravitational Field Strength; 3. Gravitational Potential."
+description:
+  "A-Level Physics notes on Gravitational Fields: 1. Newton's Law of Gravitation; 2. Gravitational
+  Field Strength; 3. Gravitational Potential."
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Physics
@@ -9,11 +11,10 @@ categories:
   - Physics
 slug: gravitational-fields
 ---
+
 ## Gravitational Fields
 
-:::info
-Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4
-:::
+:::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4 :::
 
 <PhetSimulation simulationId="gravity-and-orbits" title="Gravity and Orbits" />
 
@@ -76,10 +77,10 @@ The potential (work per unit mass) is:
 $$V = \frac{W}{m} = -\frac{GM}{r} \quad \square$$
 
 **Intuition: Why is gravitational potential negative?** We define $V = 0$ at infinity. To bring a
-Mass from infinity towards $M$Gravity does positive work (the mass accelerates), meaning the
-System _loses_ potential energy. Alternatively, an external agent would need to do _negative_ work
-(i.e., the system does work) to move the mass in. Hence $V < 0$ everywhere. The potential becomes
-More negative as you approach the mass.
+Mass from infinity towards $M$Gravity does positive work (the mass accelerates), meaning the System
+_loses_ potential energy. Alternatively, an external agent would need to do _negative_ work (i.e.,
+the system does work) to move the mass in. Hence $V < 0$ everywhere. The potential becomes More
+negative as you approach the mass.
 
 ### Proof that $g = -\frac{dV}{dr}$
 
@@ -136,7 +137,8 @@ $$\frac◆LB◆4\pi^2 r^2◆RB◆◆LB◆T^2◆RB◆ = \frac{GM}{r}$$
 
 $$\boxed{T^2 = \frac◆LB◆4\pi^2◆RB◆◆LB◆GM◆RB◆r^3}$$
 
-Since $\frac◆LB◆4\pi^2◆RB◆◆LB◆GM◆RB◆$ is constant for a given central body, $T^2 \propto r^3$. $\square$
+Since $\frac◆LB◆4\pi^2◆RB◆◆LB◆GM◆RB◆$ is constant for a given central body, $T^2 \propto r^3$.
+$\square$
 
 ## 6. Escape Velocity
 
@@ -181,13 +183,13 @@ Kinetic energy).
 
 ## 8. Comparison of Gravitational and Electric Fields
 
-| Property | Gravitational | Electric |
+| Property            | Gravitational     | Electric                             |
 | ------------------- | ----------------- | ------------------------------------ |
-| Force law | $F = Gm_1m_2/r^2$ | $F = Q_1Q_2/(4\pi\varepsilon_0 r^2)$ |
-| Field strength | $g = GM/r^2$ | $E = Q/(4\pi\varepsilon_0 r^2)$ |
-| Potential | $V = -GM/r$ | $V = Q/(4\pi\varepsilon_0 r)$ |
-| Always attractive? | Yes | No (depends on charge signs) |
-| Shielding possible? | No | Yes |
+| Force law           | $F = Gm_1m_2/r^2$ | $F = Q_1Q_2/(4\pi\varepsilon_0 r^2)$ |
+| Field strength      | $g = GM/r^2$      | $E = Q/(4\pi\varepsilon_0 r^2)$      |
+| Potential           | $V = -GM/r$       | $V = Q/(4\pi\varepsilon_0 r)$        |
+| Always attractive?  | Yes               | No (depends on charge signs)         |
+| Shielding possible? | No                | Yes                                  |
 
 ## Problem Set
 
@@ -211,8 +213,8 @@ A satellite orbits Earth at an altitude of $400$ km. Calculate: (a) its orbital 
 **Answer.** $r = 6370 + 400 = 6770$ km $= 6.77 \times 10^6$ m. $GM = 3.976 \times 10^{14}$.
 
 (a)
-$v = \sqrt{GM/r} = \sqrt◆LB◆3.976 \times 10^{14}/6.77 \times 10^6◆RB◆ = \sqrt◆LB◆5.87 \times 10^7◆RB◆ = 7660$ m
-S$^{-1}$.
+$v = \sqrt{GM/r} = \sqrt◆LB◆3.976 \times 10^{14}/6.77 \times 10^6◆RB◆ = \sqrt◆LB◆5.87 \times 10^7◆RB◆ = 7660$
+m S$^{-1}$.
 
 (b) $T = 2\pi r/v = 2\pi \times 6.77 \times 10^6/7660 = 5550$ s $= 92.5$ min.
 
@@ -380,11 +382,9 @@ Where $M_{\mathrm{enc}} = M(r/R)^3$ is the mass enclosed within radius $r$ (shel
 This shows $g$ increases linearly from $0$ at the centre to $g_0$ at the surface. Maximum $g$ occurs
 At the surface (for a uniform sphere).
 
-:::warning
-Common Pitfall Satellites in low Earth orbit are NOT in "zero gravity." The gravitational
+:::warning Common Pitfall Satellites in low Earth orbit are NOT in "zero gravity." The gravitational
 Field strength at 300 km altitude is still about 89% of its surface value. Astronauts experience
-Weightlessness because they are in free fall, not because gravity is absent.
-:::
+Weightlessness because they are in free fall, not because gravity is absent. :::
 
 ## 10. Geostationary Orbits
 
@@ -426,19 +426,17 @@ Three conditions must all be satisfied:
 
 1. **Correct radius:** $r \approx 42\,200$ km (derived above).
 2. **Equatorial plane:** The orbit must lie in Earth's equatorial plane; otherwise, the satellite
- would appear to drift north and south.
+   would appear to drift north and south.
 3. **Same direction as Earth's rotation:** The satellite must orbit from west to east.
 
 **Applications.** Communications satellites (constant line of sight to a ground station), weather
 Satellites (continuous monitoring of a hemisphere). GPS satellites are NOT geostationary — they use
 Medium Earth orbits for better geometric accuracy.
 
-:::warning
-Common Pitfall A geostationary orbit is NOT the same as a geosynchronous orbit. A
+:::warning Common Pitfall A geostationary orbit is NOT the same as a geosynchronous orbit. A
 Geosynchronous orbit has period 24 hours but can be inclined or elliptical, so the satellite appears
 To trace a figure-eight in the sky. Geostationary implies geosynchronous AND equatorial AND
-Circular.
-:::
+Circular. :::
 
 ## 11. Gravitational Potential Energy — Taylor Expansion
 
@@ -483,12 +481,10 @@ For a satellite in orbit, $E_{\mathrm{total}} = -GMm/(2r) \lt 0$. Negative total
 System is gravitationally **bound** — the satellite cannot escape without an input of energy. To
 Escape, enough energy must be added to raise $E_{\mathrm{total}}$ to zero.
 
-:::tip
-Exam Technique When asked why $E_p = -GMm/r$ is negative, explain: we define $V = 0$ at
+:::tip Exam Technique When asked why $E_p = -GMm/r$ is negative, explain: we define $V = 0$ at
 Infinity, so bringing masses together releases energy (the system loses potential energy). The
 Negative sign reflects this. The formula $E_p = mgh$ is only a special case for small heights near
-The surface.
-:::
+The surface. :::
 
 ## 12. Escape Velocity — Extended Discussion
 
@@ -507,12 +503,12 @@ $$\boxed{v_{\mathrm{esc}} = \sqrt◆LB◆\frac{2GM}{r}◆RB◆}$$
 
 ### Numerical Values
 
-| Body | $v_{\mathrm{esc}}$ (km s$^{-1}$) |
+| Body    | $v_{\mathrm{esc}}$ (km s$^{-1}$) |
 | ------- | -------------------------------- |
-| Earth | 11.2 |
-| Moon | 2.4 |
-| Mars | 5.0 |
-| Jupiter | 59.5 |
+| Earth   | 11.2                             |
+| Moon    | 2.4                              |
+| Mars    | 5.0                              |
+| Jupiter | 59.5                             |
 
 ### Relationship to Orbital Speed
 
@@ -530,8 +526,7 @@ An object in a circular orbit needs a speed increase of $(\sqrt{2} - 1) \times 1
 To escape. This is why spacecraft use gravitational slingshots or multi-stage rockets rather than a
 Single impulse to escape Earth's gravity efficiently.
 
-:::info
-Info
+:::info Info
 
 <details>
 <summary>Problem 11</summary>
@@ -625,31 +620,41 @@ M s$^{-1} = 10.7$ km s$^{-1}$.
 
 </details>
 
-
 ---
 
-:::tip
-Tip
-Ready to test your understanding of **Gravitational Fields**? The [diagnostic test](/docs/alevel/physics/diagnostics/diag-gravitational-fields) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
+:::tip Tip Ready to test your understanding of **Gravitational Fields**? The
+[diagnostic test](/docs/alevel/physics/diagnostics/diag-gravitational-fields) contains the hardest
+questions within the A-Level specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Gravitational Fields with other physics topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine
+Gravitational Fields with other physics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on
+self-marking and building a personal test matrix. :::
 
-:::danger
-Danger
+:::danger Danger
 
-- **Confusing gravitational field strength g with gravitational force:** g = GM/r squared is the field strength (force per unit mass, N/kg). The gravitational force on an object is F = mg = GMm/r squared. Field strength does not depend on the test mass; force does. This distinction matters in exam questions about orbits and satellites.
+- **Confusing gravitational field strength g with gravitational force:** g = GM/r squared is the
+  field strength (force per unit mass, N/kg). The gravitational force on an object is F = mg = GMm/r
+  squared. Field strength does not depend on the test mass; force does. This distinction matters in
+  exam questions about orbits and satellites.
 
-- **Forgetting that gravitational potential is always negative:** By convention, gravitational potential is defined as zero at infinity. Since work must be done to move a mass from infinity to any finite distance, potential is negative at all finite distances. The potential is most negative at the surface of a planet and approaches zero far away.
+- **Forgetting that gravitational potential is always negative:** By convention, gravitational
+  potential is defined as zero at infinity. Since work must be done to move a mass from infinity to
+  any finite distance, potential is negative at all finite distances. The potential is most negative
+  at the surface of a planet and approaches zero far away.
 
-- **Confusing geostationary orbit conditions:** A geostationary satellite must orbit in the equatorial plane (not any inclination), in the same direction as Earth's rotation, and with a period of exactly 24 hours. A polar orbit satellite with period 24 hours is NOT geostationary because it does not remain above the same point on the equator.
+- **Confusing geostationary orbit conditions:** A geostationary satellite must orbit in the
+  equatorial plane (not any inclination), in the same direction as Earth's rotation, and with a
+  period of exactly 24 hours. A polar orbit satellite with period 24 hours is NOT geostationary
+  because it does not remain above the same point on the equator.
 
-- **Assuming gravitational force shields or cancels inside a shell:** Inside a uniform spherical shell, the gravitational field strength is ZERO at every point (not just the centre). This is a consequence of the shell theorem. Between two concentric shells, only the mass of the inner shell contributes to the field at that point.
+- **Assuming gravitational force shields or cancels inside a shell:** Inside a uniform spherical
+  shell, the gravitational field strength is ZERO at every point (not just the centre). This is a
+  consequence of the shell theorem. Between two concentric shells, only the mass of the inner shell
+  contributes to the field at that point.
 
-:::
-:::
+::: :::
 
 ## Common Pitfalls
 

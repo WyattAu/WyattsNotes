@@ -1,9 +1,12 @@
 ---
 id: postgresql-advanced
 title: PostgreSQL Advanced
-description: "PostgreSQL Advanced — Extensions Ecosystem; Installing Extensions; PostGIS; pg_trgm with worked examples and exam-style questions."
+description:
+  'PostgreSQL Advanced — Extensions Ecosystem; Installing Extensions; PostGIS; pg_trgm with worked
+  examples and exam-style questions.'
 slug: postgresql-advanced
 ---
+
 ## Extensions Ecosystem
 
 Extensions add functionality to PostgreSQL through a well-defined API. They run in the same process
@@ -182,13 +185,13 @@ LIMIT 10;
 
 ### Physical vs Logical Replication
 
-| Aspect | Physical Replication | Logical Replication |
+| Aspect           | Physical Replication                   | Logical Replication                        |
 | ---------------- | -------------------------------------- | ------------------------------------------ |
-| What replicates | Entire WAL (all databases, all tables) | Selected tables (per-publication) |
-| Granularity | Database level (entire cluster) | Table level (per publication/subscription) |
-| Cross-version | Same major version only | Can replicate between major versions |
-| Write on replica | No (read-only) | Yes (subscription tables are writable) |
-| Use case | High availability, disaster recovery | Data sharing, partial replication, CDC |
+| What replicates  | Entire WAL (all databases, all tables) | Selected tables (per-publication)          |
+| Granularity      | Database level (entire cluster)        | Table level (per publication/subscription) |
+| Cross-version    | Same major version only                | Can replicate between major versions       |
+| Write on replica | No (read-only)                         | Yes (subscription tables are writable)     |
+| Use case         | High availability, disaster recovery   | Data sharing, partial replication, CDC     |
 
 ### Setting Up Logical Replication
 
@@ -636,14 +639,14 @@ SHOW maintenance_work_mem;  -- e.g., 1GB
 SHOW effective_cache_size;  -- e.g., 12GB
 ```
 
-| Parameter | Recommended Setting | Notes |
+| Parameter              | Recommended Setting                        | Notes                               |
 | ---------------------- | ------------------------------------------ | ----------------------------------- |
-| `shared_buffers` | 25% of RAM | Up to ~8GB on Linux with huge pages |
-| `effective_cache_size` | 75% of RAM | Planner hint, not allocated |
-| `work_mem` | 4-64MB (per-operation) | Higher = fewer disk spills |
-| `maintenance_work_mem` | 1-4GB | For VACUUM, index creation |
-| `wal_buffers` | 64MB (default -1 = 1/32 of shared_buffers) | WAL buffer size |
-| `huge_pages` | `try` | Reduces TLB misses |
+| `shared_buffers`       | 25% of RAM                                 | Up to ~8GB on Linux with huge pages |
+| `effective_cache_size` | 75% of RAM                                 | Planner hint, not allocated         |
+| `work_mem`             | 4-64MB (per-operation)                     | Higher = fewer disk spills          |
+| `maintenance_work_mem` | 1-4GB                                      | For VACUUM, index creation          |
+| `wal_buffers`          | 64MB (default -1 = 1/32 of shared_buffers) | WAL buffer size                     |
+| `huge_pages`           | `try`                                      | Reduces TLB misses                  |
 
 ### WAL Configuration
 

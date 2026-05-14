@@ -1,13 +1,16 @@
 ---
 id: subnetting-workshop
 title: Subnetting Workshop
-description: "Subnetting Workshop — Binary Method: Step by Step; The Subnet Mask in Binary; Step-by-Step Method; Verifying with a Shortcut."
+description:
+  'Subnetting Workshop — Binary Method: Step by Step; The Subnet Mask in Binary; Step-by-Step
+  Method; Verifying with a Shortcut.'
 slug: subnetting-workshop
 tags:
   - Networking
 categories:
   - Networking
 ---
+
 ## Overview
 
 Subnetting is the process of dividing a single IP network into smaller, more manageable
@@ -109,8 +112,8 @@ Also uses `/31` for network equipment links per RFC 6164.
 ### Verifying with a Shortcut
 
 For the octet where the boundary falls, the "magic number" is $256 - \mathrm{mask\_octet{}$. For
-`/26`The mask in the fourth octet is `192`So the magic number is $256 - 192 = 64$. Subnets start
-At multiples of 64: `.0``.64``.128``.192`. Our IP `.75` falls in the `.64` subnet.
+`/26`The mask in the fourth octet is `192`So the magic number is $256 - 192 = 64$. Subnets start At
+multiples of 64: `.0``.64``.128``.192`. Our IP `.75` falls in the `.64` subnet.
 
 This shortcut works because the boundary octet always has a value that is a power of 2 (or 256 minus
 A power of 2).
@@ -122,13 +125,13 @@ A power of 2).
 Classful addressing (fixed `/8``/16``/24`) wastes enormous amounts of address space. Consider an
 Organization with these requirements:
 
-| Segment | Hosts Needed |
+| Segment    | Hosts Needed |
 | ---------- | ------------ |
-| Datacenter | 200 |
-| Office A | 50 |
-| Office B | 25 |
-| WAN links | 2 each (x4) |
-| Management | 10 |
+| Datacenter | 200          |
+| Office A   | 50           |
+| Office B   | 25           |
+| WAN links  | 2 each (x4)  |
+| Management | 10           |
 
 With classful addressing, you need one `/24` (254 hosts) for the datacenter (wastes 54), three more
 `/24`S for the offices and management (wastes hundreds more), and four `/24`S for WAN links (wastes
@@ -141,16 +144,16 @@ Actual host requirement.
 
 **Step 1: List all segments with host requirements, sorted largest to smallest.**
 
-| Segment | Hosts | Minimum host bits |
-| ---------- | ----- | --------------------------------- |
-| Datacenter | 200 | 8 ($2^8 - 2 = 254$) |
-| Office A | 50 | 6 ($2^6 - 2 = 62$) |
-| Office B | 25 | 5 ($2^5 - 2 = 30$) |
-| Management | 10 | 4 ($2^4 - 2 = 14$) |
-| WAN 1 | 2 | 2 ($2^2 - 2 = 2$Or `/31` for 2) |
-| WAN 2 | 2 | 2 |
-| WAN 3 | 2 | 2 |
-| WAN 4 | 2 | 2 |
+| Segment    | Hosts | Minimum host bits               |
+| ---------- | ----- | ------------------------------- |
+| Datacenter | 200   | 8 ($2^8 - 2 = 254$)             |
+| Office A   | 50    | 6 ($2^6 - 2 = 62$)              |
+| Office B   | 25    | 5 ($2^5 - 2 = 30$)              |
+| Management | 10    | 4 ($2^4 - 2 = 14$)              |
+| WAN 1      | 2     | 2 ($2^2 - 2 = 2$Or `/31` for 2) |
+| WAN 2      | 2     | 2                               |
+| WAN 3      | 2     | 2                               |
+| WAN 4      | 2     | 2                               |
 
 **Step 2: Allocate from the largest block down.**
 
@@ -183,15 +186,15 @@ Always allocate from the next available address after the previous allocation en
 ### Address Planning Best Practices
 
 1. **Leave room for growth.** If you need 25 hosts, do not use `/27` (30 usable). Use `/26` (62
- usable) if address space permits. Growth always happens.
+   usable) if address space permits. Growth always happens.
 2. **Document every allocation.** Maintain an IPAM (IP Address Management) system. A spreadsheet is
- the minimum.
+   the minimum.
 3. **Reserve blocks for future use.** Set aside a `/22` or `/23` that is not allocated to anything.
- When you need a new subnet, you have it ready.
+   When you need a new subnet, you have it ready.
 4. **Use consistent patterns.** All point-to-point links get `/31`. All VLANs get at least `/24`.
- Consistency reduces errors.
+   Consistency reduces errors.
 5. **Consider summarization.** Allocating contiguous address blocks enables route summarization,
- which reduces routing table size.
+   which reduces routing table size.
 
 ## Worked Examples
 
@@ -281,12 +284,12 @@ Scheme.
 
 `192.168.0.0/22` = `192.168.0.0` through `192.168.3.255` (1024 addresses).
 
-| Requirement | Hosts | Host bits | Prefix | Subnet mask | Addresses | Usable |
+| Requirement | Hosts | Host bits | Prefix | Subnet mask     | Addresses | Usable |
 | ----------- | ----- | --------- | ------ | --------------- | --------- | ------ |
-| 500 hosts | 500 | 9 | /23 | 255.255.254.0 | 512 | 510 |
-| 100 hosts | 100 | 7 | /25 | 255.255.255.128 | 128 | 126 |
-| 30 hosts | 30 | 5 | /27 | 255.255.255.224 | 32 | 30 |
-| 5 hosts | 5 | 3 | /29 | 255.255.255.248 | 8 | 6 |
+| 500 hosts   | 500   | 9         | /23    | 255.255.254.0   | 512       | 510    |
+| 100 hosts   | 100   | 7         | /25    | 255.255.255.128 | 128       | 126    |
+| 30 hosts    | 30    | 5         | /27    | 255.255.255.224 | 32        | 30     |
+| 5 hosts     | 5     | 3         | /29    | 255.255.255.248 | 8         | 6      |
 
 Allocation (largest first):
 
@@ -309,8 +312,7 @@ Advertisement. This reduces routing table size and hides topology changes.
 
 ### Method
 
-**Problem:** Summarize `192.168.16.0/24``192.168.17.0/24``192.168.18.0/24`And
-`192.168.19.0/24`.
+**Problem:** Summarize `192.168.16.0/24``192.168.17.0/24``192.168.18.0/24`And `192.168.19.0/24`.
 
 **Step 1:** Convert the third octets to binary:
 
@@ -366,9 +368,8 @@ Rule. For example:
 192.168.17.0/24  via Router B
 ```
 
-Traffic to `192.168.17.5` matches both routes, but `/24` is longer (more specific) than `/22`So
-The router sends it via Router B. Traffic to `192.168.18.5` only matches `/22`So it goes via
-Router A.
+Traffic to `192.168.17.5` matches both routes, but `/24` is longer (more specific) than `/22`So The
+router sends it via Router B. Traffic to `192.168.18.5` only matches `/22`So it goes via Router A.
 
 :::info
 
@@ -519,15 +520,15 @@ Within the datacenter `/60`:
 
 ### SLAAC vs DHCPv6
 
-| Feature | SLAAC (RFC 4862) | DHCPv6 |
+| Feature            | SLAAC (RFC 4862)                                | DHCPv6                |
 | ------------------ | ----------------------------------------------- | --------------------- |
-| Address assignment | Host generates from prefix | Server assigns |
-| Privacy | EUI-64 exposes MAC; RFC 7217 adds randomization | Can assign random |
-| Control | Stateless | Stateful or stateless |
-| DNS | Requires RDNSS (RFC 8106) | DHCPv6 provides |
-| State tracking | Server does not know assignments | Server tracks leases |
-| Address stability | Stable based on prefix + MAC | Depends on lease time |
-| Complexity | Simple | Requires DHCPv6 infra |
+| Address assignment | Host generates from prefix                      | Server assigns        |
+| Privacy            | EUI-64 exposes MAC; RFC 7217 adds randomization | Can assign random     |
+| Control            | Stateless                                       | Stateful or stateless |
+| DNS                | Requires RDNSS (RFC 8106)                       | DHCPv6 provides       |
+| State tracking     | Server does not know assignments                | Server tracks leases  |
+| Address stability  | Stable based on prefix + MAC                    | Depends on lease time |
+| Complexity         | Simple                                          | Requires DHCPv6 infra |
 
 :::info
 
@@ -539,64 +540,64 @@ Integration) and SLAAC with privacy extensions (RFC 7217) for client devices (si
 ### IPv6 Subnetting Rules
 
 1. **All LAN segments must be `/64`.** This is not a suggestion. RFC 7421 explains why: many IPv6
- features (NDP, SLAAC, EUI-64) assume `/64`. Do not subnet a LAN to `/112` or `/120` just because
- you think you will not need 2^64 addresses. The address space is vast; use it as designed.
+   features (NDP, SLAAC, EUI-64) assume `/64`. Do not subnet a LAN to `/112` or `/120` just because
+   you think you will not need 2^64 addresses. The address space is vast; use it as designed.
 2. **Point-to-point links should also be `/64`.** Unlike IPv4 where you use `/31` or `/32`IPv6
- point-to-point links get a full `/64`. There is no address scarcity.
+   point-to-point links get a full `/64`. There is no address scarcity.
 3. **Loopback addresses are `/128`.** The loopback `::1/128` is a single address, not a subnet.
 
 ## Subnetting Quick Reference
 
 ### Powers of 2
 
-| $2^n$ | Value |
+| $2^n$    | Value  |
 | -------- | ------ |
-| $2^0$ | 1 |
-| $2^1$ | 2 |
-| $2^2$ | 4 |
-| $2^3$ | 8 |
-| $2^4$ | 16 |
-| $2^5$ | 32 |
-| $2^6$ | 64 |
-| $2^7$ | 128 |
-| $2^8$ | 256 |
-| $2^9$ | 512 |
-| $2^{10}$ | 1,024 |
-| $2^{11}$ | 2,048 |
-| $2^{12}$ | 4,096 |
-| $2^{13}$ | 8,192 |
+| $2^0$    | 1      |
+| $2^1$    | 2      |
+| $2^2$    | 4      |
+| $2^3$    | 8      |
+| $2^4$    | 16     |
+| $2^5$    | 32     |
+| $2^6$    | 64     |
+| $2^7$    | 128    |
+| $2^8$    | 256    |
+| $2^9$    | 512    |
+| $2^{10}$ | 1,024  |
+| $2^{11}$ | 2,048  |
+| $2^{12}$ | 4,096  |
+| $2^{13}$ | 8,192  |
 | $2^{14}$ | 16,384 |
 | $2^{15}$ | 32,768 |
 | $2^{16}$ | 65,536 |
 
 ### Subnet Masks: /24 Through /30
 
-| Prefix | Mask | Wildcard | Magic # | Addresses | Usable |
+| Prefix | Mask            | Wildcard  | Magic # | Addresses | Usable |
 | ------ | --------------- | --------- | ------- | --------- | ------ |
-| /24 | 255.255.255.0 | 0.0.0.255 | 256 | 256 | 254 |
-| /25 | 255.255.255.128 | 0.0.0.127 | 128 | 128 | 126 |
-| /26 | 255.255.255.192 | 0.0.0.63 | 64 | 64 | 62 |
-| /27 | 255.255.255.224 | 0.0.0.31 | 32 | 32 | 30 |
-| /28 | 255.255.255.240 | 0.0.0.15 | 16 | 16 | 14 |
-| /29 | 255.255.255.248 | 0.0.0.7 | 8 | 8 | 6 |
-| /30 | 255.255.255.252 | 0.0.0.3 | 4 | 4 | 2 |
-| /31 | 255.255.255.254 | 0.0.0.1 | 2 | 2 | 2\* |
-| /32 | 255.255.255.255 | 0.0.0.0 | 1 | 1 | 1 |
+| /24    | 255.255.255.0   | 0.0.0.255 | 256     | 256       | 254    |
+| /25    | 255.255.255.128 | 0.0.0.127 | 128     | 128       | 126    |
+| /26    | 255.255.255.192 | 0.0.0.63  | 64      | 64        | 62     |
+| /27    | 255.255.255.224 | 0.0.0.31  | 32      | 32        | 30     |
+| /28    | 255.255.255.240 | 0.0.0.15  | 16      | 16        | 14     |
+| /29    | 255.255.255.248 | 0.0.0.7   | 8       | 8         | 6      |
+| /30    | 255.255.255.252 | 0.0.0.3   | 4       | 4         | 2      |
+| /31    | 255.255.255.254 | 0.0.0.1   | 2       | 2         | 2\*    |
+| /32    | 255.255.255.255 | 0.0.0.0   | 1       | 1         | 1      |
 
 \*`/31` per RFC 3021: no network/broadcast, both addresses usable.
 
 ### Extended Reference: /16 Through /23
 
-| Prefix | Mask | Wildcard | Magic # | Addresses | Usable |
+| Prefix | Mask          | Wildcard    | Magic # | Addresses | Usable |
 | ------ | ------------- | ----------- | ------- | --------- | ------ |
-| /16 | 255.255.0.0 | 0.0.255.255 | 256 | 65,536 | 65,534 |
-| /17 | 255.255.128.0 | 0.0.127.255 | 128 | 32,768 | 32,766 |
-| /18 | 255.255.192.0 | 0.0.63.255 | 64 | 16,384 | 16,382 |
-| /19 | 255.255.224.0 | 0.0.31.255 | 32 | 8,192 | 8,190 |
-| /20 | 255.255.240.0 | 0.0.15.255 | 16 | 4,096 | 4,094 |
-| /21 | 255.255.248.0 | 0.0.7.255 | 8 | 2,048 | 2,046 |
-| /22 | 255.255.252.0 | 0.0.3.255 | 4 | 1,024 | 1,022 |
-| /23 | 255.255.254.0 | 0.0.1.255 | 2 | 512 | 510 |
+| /16    | 255.255.0.0   | 0.0.255.255 | 256     | 65,536    | 65,534 |
+| /17    | 255.255.128.0 | 0.0.127.255 | 128     | 32,768    | 32,766 |
+| /18    | 255.255.192.0 | 0.0.63.255  | 64      | 16,384    | 16,382 |
+| /19    | 255.255.224.0 | 0.0.31.255  | 32      | 8,192     | 8,190  |
+| /20    | 255.255.240.0 | 0.0.15.255  | 16      | 4,096     | 4,094  |
+| /21    | 255.255.248.0 | 0.0.7.255   | 8       | 2,048     | 2,046  |
+| /22    | 255.255.252.0 | 0.0.3.255   | 4       | 1,024     | 1,022  |
+| /23    | 255.255.254.0 | 0.0.1.255   | 2       | 512       | 510    |
 
 ## Common Exam-Style Problems
 
@@ -623,8 +624,8 @@ Hosts.
 
 ### Problem 3
 
-**Q:** You need to summarize `10.1.0.0/16``10.2.0.0/16``10.3.0.0/16`And `10.4.0.0/16`. What is
-The summary?
+**Q:** You need to summarize `10.1.0.0/16``10.2.0.0/16``10.3.0.0/16`And `10.4.0.0/16`. What is The
+summary?
 
 **A:** Convert second octets to binary:
 
@@ -656,8 +657,8 @@ Routes or accept the over-summarization.
 :::warning
 
 This is a common trap in exam questions. The four networks `10.1-4.0/16` do NOT cleanly summarize to
-A single prefix without including `10.0``10.5``10.6`And `10.7`. If the question requires an
-Exact summary, the answer is: it cannot be done with a single prefix.
+A single prefix without including `10.0``10.5``10.6`And `10.7`. If the question requires an Exact
+summary, the answer is: it cannot be done with a single prefix.
 
 :::
 
@@ -814,8 +815,8 @@ docker run --network my-network --ip 172.18.0.11 redis
 ```
 
 Default Docker networks use `172.17.0.0/16` (bridge), and each additional custom network gets the
-Next available `/16` from `172.18.0.0/16``172.19.0.0/16`Etc. Be aware of potential overlap with
-Your existing infrastructure when choosing Docker subnets.
+Next available `/16` from `172.18.0.0/16``172.19.0.0/16`Etc. Be aware of potential overlap with Your
+existing infrastructure when choosing Docker subnets.
 
 ### Kubernetes Networking
 

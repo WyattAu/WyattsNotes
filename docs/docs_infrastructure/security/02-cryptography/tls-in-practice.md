@@ -1,19 +1,22 @@
 ---
 id: tls-in-practice
 title: TLS in Practice
-description: "TLS in Practice — Getting a Certificate; Certificate Authority (CA) Options; Self-Signed Certificates; Generate a self-signed certificate (development only)."
+description:
+  'TLS in Practice — Getting a Certificate; Certificate Authority (CA) Options; Self-Signed
+  Certificates; Generate a self-signed certificate (development only).'
 slug: tls-in-practice
 ---
+
 ## Getting a Certificate
 
 ### Certificate Authority (CA) Options
 
-| Source | Cost | Validation | Trust | Best For |
+| Source         | Cost | Validation          | Trust     | Best For                         |
 | -------------- | ---- | ------------------- | --------- | -------------------------------- |
-| Let's Encrypt | Free | Automated (ACME) | Universal | Public-facing services |
-| DigiCert | Paid | Organization, EV | Universal | Enterprise, extended validation |
-| Self-signed | Free | None | Internal | Development, internal services |
-| Internal CA | Free | Internal | Internal | Corporate networks |
+| Let's Encrypt  | Free | Automated (ACME)    | Universal | Public-facing services           |
+| DigiCert       | Paid | Organization, EV    | Universal | Enterprise, extended validation  |
+| Self-signed    | Free | None                | Internal  | Development, internal services   |
+| Internal CA    | Free | Internal            | Internal  | Corporate networks               |
 | Cloud provider | Paid | DNS/HTTP validation | Universal | Services hosted on that provider |
 
 ### Self-Signed Certificates
@@ -90,11 +93,11 @@ Requirements:
 - DNS propagation time (can be minutes to hours without API access)
 - Works for internal services, wildcard certificates, and servers behind NAT
 
-| Challenge | Port Required | Wildcards | Behind NAT | Automation |
+| Challenge   | Port Required | Wildcards | Behind NAT             | Automation           |
 | ----------- | ------------- | --------- | ---------------------- | -------------------- |
-| HTTP-01 | 80 | No | No (needs public HTTP) | Easy with web server |
-| DNS-01 | None | Yes | Yes | Requires DNS API |
-| TLS-ALPN-01 | 443 | No | No | Less common |
+| HTTP-01     | 80            | No        | No (needs public HTTP) | Easy with web server |
+| DNS-01      | None          | Yes       | Yes                    | Requires DNS API     |
+| TLS-ALPN-01 | 443           | No        | No                     | Less common          |
 
 ### Certbot
 
@@ -167,14 +170,14 @@ flowchart LR
 
 ### Key Events
 
-| Event | Description |
+| Event      | Description                                           |
 | ---------- | ----------------------------------------------------- |
-| Creation | Private key generated, CSR created, submitted to CA |
-| Issuance | CA validates domain, signs certificate, returns chain |
-| Deployment | Certificate and chain installed on server |
-| Rotation | Old certificate replaced with new one before expiry |
-| Expiration | Certificate becomes invalid after validity period |
-| Revocation | CA marks certificate as compromised before expiry |
+| Creation   | Private key generated, CSR created, submitted to CA   |
+| Issuance   | CA validates domain, signs certificate, returns chain |
+| Deployment | Certificate and chain installed on server             |
+| Rotation   | Old certificate replaced with new one before expiry   |
+| Expiration | Certificate becomes invalid after validity period     |
+| Revocation | CA marks certificate as compromised before expiry     |
 
 ### Certificate Rotation
 
@@ -248,13 +251,13 @@ cat server.crt intermediate.crt > fullchain.pem
 
 ### Key Types
 
-| Algorithm | Key Size | Performance | Security Level | Recommendation |
+| Algorithm | Key Size | Performance | Security Level | Recommendation                    |
 | --------- | -------- | ----------- | -------------- | --------------------------------- |
-| RSA | 2048 | Fast | 112 bits | Minimum acceptable |
-| RSA | 4096 | Slower | 128 bits | High-security environments |
-| ECDSA | P-256 | Fast | 128 bits | Best balance of speed/security |
-| ECDSA | P-384 | Moderate | 192 bits | Higher security requirement |
-| Ed25519 | 256 bit | Fastest | 128 bits | Modern, recommended for new certs |
+| RSA       | 2048     | Fast        | 112 bits       | Minimum acceptable                |
+| RSA       | 4096     | Slower      | 128 bits       | High-security environments        |
+| ECDSA     | P-256    | Fast        | 128 bits       | Best balance of speed/security    |
+| ECDSA     | P-384    | Moderate    | 192 bits       | Higher security requirement       |
+| Ed25519   | 256 bit  | Fastest     | 128 bits       | Modern, recommended for new certs |
 
 ```bash
 # RSA 2048
@@ -402,11 +405,11 @@ add_header Strict-Transport-Security "max-age=31536000; includeSubDomains; prelo
 Forward secrecy ensures that compromising the server's private key does not allow decryption of past
 Sessions. Each session uses a unique ephemeral key exchange.
 
-| Key Exchange | Forward Secrecy | Notes |
+| Key Exchange | Forward Secrecy | Notes                                      |
 | ------------ | --------------- | ------------------------------------------ |
-| RSA | No | Key encrypted with server's static RSA key |
-| DHE | Yes | Slower, older |
-| ECDHE | Yes | Faster, recommended |
+| RSA          | No              | Key encrypted with server's static RSA key |
+| DHE          | Yes             | Slower, older                              |
+| ECDHE        | Yes             | Faster, recommended                        |
 
 ```nginx
 # ECDHE is used automatically with modern cipher suites
@@ -489,12 +492,12 @@ curl --cert client.crt --key client.key https://example.com/api
 
 ### Use Cases
 
-| Use Case | Why mTLS |
+| Use Case                         | Why mTLS                                  |
 | -------------------------------- | ----------------------------------------- |
 | Service-to-service communication | Stronger than API keys, no shared secrets |
-| Internal APIs | Replaces VPN for some architectures |
-| IoT devices | Device identity and authentication |
-| Zero-trust network access | Identity-based access control |
+| Internal APIs                    | Replaces VPN for some architectures       |
+| IoT devices                      | Device identity and authentication        |
+| Zero-trust network access        | Identity-based access control             |
 
 ## Certificate Transparency
 
@@ -578,12 +581,12 @@ curl "https://api.ssllabs.com/api/v3/analyze?host=example.com&amp;publish=off&am
 
 Let's Encrypt enforces strict rate limits:
 
-| Limit Type | Restriction |
+| Limit Type              | Restriction                          |
 | ----------------------- | ------------------------------------ |
-| Certificates per domain | 50 per week (per registered domain) |
-| Failed validations | 5 per account per hostname per hour |
-| Duplicate certificates | 5 per week (same exact set of names) |
-| Registered domains | 300 per account |
+| Certificates per domain | 50 per week (per registered domain)  |
+| Failed validations      | 5 per account per hostname per hour  |
+| Duplicate certificates  | 5 per week (same exact set of names) |
+| Registered domains      | 300 per account                      |
 
 Exceeding these limits blocks certificate issuance. Use the staging environment for testing:
 

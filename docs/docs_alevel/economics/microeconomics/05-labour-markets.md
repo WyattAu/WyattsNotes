@@ -1,6 +1,8 @@
 ---
 title: Labour Markets
-description: "A-Level Economics notes on Labour Markets: 1. Demand for Labour; 1.1 Derivation from Profit Maximisation; 1.2 Shifts in the Demand for Labour."
+description:
+  'A-Level Economics notes on Labour Markets: 1. Demand for Labour; 1.1 Derivation from Profit
+  Maximisation; 1.2 Shifts in the Demand for Labour.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Economics
@@ -10,6 +12,7 @@ categories:
 slug: labour-markets
 sidebar_position: 5
 ---
+
 ## 1. Demand for Labour
 
 ### 1.1 Derivation from Profit Maximisation
@@ -19,8 +22,8 @@ A profit-maximising firm hires labour up to the point where the **marginal reven
 
 $$MRP_L = MP_L \times MR$$
 
-Where $MP_L = \frac◆LB◆\partial Q◆RB◆◆LB◆\partial L◆RB◆$ is the marginal physical product of labour and
-$MR = \frac◆LB◆\partial TR◆RB◆◆LB◆\partial Q◆RB◆$ is marginal revenue.
+Where $MP_L = \frac◆LB◆\partial Q◆RB◆◆LB◆\partial L◆RB◆$ is the marginal physical product of labour
+and $MR = \frac◆LB◆\partial TR◆RB◆◆LB◆\partial Q◆RB◆$ is marginal revenue.
 
 **Proof.** The firm's profit as a function of labour input:
 
@@ -45,8 +48,8 @@ The labour demand curve shifts when:
 - **Output price changes** ($P \uparrow \Rightarrow MRP_L \uparrow \Rightarrow D_L$ shifts right)
 - **Productivity changes** ($MP_L \uparrow \Rightarrow MRP_L \uparrow \Rightarrow D_L$ shifts right)
 - **Price of other factors changes**: if capital becomes cheaper, firms substitute capital for
- labour $\Rightarrow$ $D_L$ shifts left (substitution effect), but cheaper capital may increase
- output, increasing labour demand (scale effect)
+  labour $\Rightarrow$ $D_L$ shifts left (substitution effect), but cheaper capital may increase
+  output, increasing labour demand (scale effect)
 - **Number of firms changes**: more firms $\Rightarrow$ market demand for labour shifts right
 
 ### 1.3 Elasticity of Demand for Labour
@@ -58,7 +61,7 @@ $$\mathrm{PED}_L = \frac◆LB◆\%\Delta L◆RB◆◆LB◆\%\Delta w◆RB◆$$
 1. **Substitutability**: more substitutes for labour $\Rightarrow$ more elastic
 2. **Proportion of labour costs**: higher share of labour in total costs $\Rightarrow$ more elastic
 3. **Price elasticity of demand for the product**: more elastic product demand $\Rightarrow$ more
- elastic labour demand (derived demand)
+   elastic labour demand (derived demand)
 4. **Time period**: longer time horizon $\Rightarrow$ more elastic (firms can reorganise production)
 
 ## 2. Supply of Labour
@@ -169,8 +172,8 @@ Market.**
 
 _Proof._ In competition, $w_c = MRP_L(L_c)$ (wage equals the value of the marginal product). In
 Monopsony, $w_m = S_L(L_m)$ where $MCL(L_m) = MRP_L(L_m)$. Since $MCL > S_L$ (supply curve), the
-Monopsony hires where $MRP_L = MCL$Which is at a lower $L$ than where $MRP_L = S_L$ (the
-Competitive point). At this lower $L$The supply curve gives a lower $w$. $\blacksquare$
+Monopsony hires where $MRP_L = MCL$Which is at a lower $L$ than where $MRP_L = S_L$ (the Competitive
+point). At this lower $L$The supply curve gives a lower $w$. $\blacksquare$
 
 ### 4.4 Deadweight Loss of Monopsony
 
@@ -184,14 +187,14 @@ Monopsony power exists on a spectrum — few markets have a literal single buyer
 **monopsonistic** characteristics where firms face upward-sloping labour supply curves:
 
 - **Company towns**: Historically, mining villages where one firm dominated employment. Modern
- equivalents include Amazon warehouses in small towns and large NHS trusts as the dominant employer
- of nurses in a region.
+  equivalents include Amazon warehouses in small towns and large NHS trusts as the dominant employer
+  of nurses in a region.
 - **Professional sports leagues**: The NFL, NBA, and Premier League act as monopsonists through
- draft systems, salary caps, and restricted free agency that limit player mobility.
+  draft systems, salary caps, and restricted free agency that limit player mobility.
 - **Fast-food franchising**: A small number of large franchisors (McDonald's, KFC) may be the
- dominant low-skilled employer in local labour markets, giving them wage-setting power.
+  dominant low-skilled employer in local labour markets, giving them wage-setting power.
 - **Academic labour markets**: PhD graduates seeking tenure-track positions face a small number of
- hiring universities, creating monopsony-like conditions for highly specialised labour.
+  hiring universities, creating monopsony-like conditions for highly specialised labour.
 
 Empirical evidence from the UK (e.g., the Low Pay Commission, 2023) suggests that monopsony power
 May affect 10-20% of UK workers, particularly in low-wage sectors and rural areas. The rise of
@@ -205,25 +208,22 @@ Platforms market themselves as offering "flexibility," several features create m
 Conditions:
 
 - **Algorithmic wage-setting**: Workers cannot negotiate pay rates; the platform sets prices
- unilaterally.
+  unilaterally.
 - **Information asymmetry**: Workers cannot observe real-time demand conditions and are guided by
- platform algorithms that optimise for the firm, not the worker.
+  platform algorithms that optimise for the firm, not the worker.
 - **Switching costs**: Multi-homing (working across multiple platforms simultaneously) is possible
- but involves time costs, and platform policies may penalise workers who accept rides from
- competitors.
+  but involves time costs, and platform policies may penalise workers who accept rides from
+  competitors.
 - **Individual contracting**: Classifying workers as independent contractors weakens collective
- bargaining power and removes minimum wage protections in many jurisdictions.
+  bargaining power and removes minimum wage protections in many jurisdictions.
 
 However, the gig economy also reduces monopsony power in some respects: lower barriers to entry
 Increase labour supply elasticity, and platforms enable workers to switch between employers more
- than in traditional company-town settings.
+than in traditional company-town settings.
 
-:::info
-Info
-Employees or self-employed, and the implications for labour market regulation. AQA has examined the
-Gig economy in the context of labour market flexibility. Edexcel often links the gig economy to
-Wider debates about competition and regulation.
-:::
+:::info Info Employees or self-employed, and the implications for labour market regulation. AQA has
+examined the Gig economy in the context of labour market flexibility. Edexcel often links the gig
+economy to Wider debates about competition and regulation. :::
 
 ### 4.7 Evaluation of Monopsony Theory
 
@@ -231,16 +231,16 @@ The monopsony model provides a powerful corrective to the competitive assumption
 Always paid their MRP. However, several limitations should be considered:
 
 - **Measuring monopsony power is difficult**: Labour market concentration can be measured (e.g.,
- Herfindahl-Hirschman Index for employers), but high concentration does not always imply monopsony
- power if workers are highly mobile.
+  Herfindahl-Hirschman Index for employers), but high concentration does not always imply monopsony
+  power if workers are highly mobile.
 - **Counterfactual uncertainty**: It is hard to estimate what wages and employment would be under
- perfect competition, making it difficult to quantify the welfare loss from monopsony.
+  perfect competition, making it difficult to quantify the welfare loss from monopsony.
 - **Dynamic effects**: Monopsony power may reduce incentives for workers to invest in skills (lower
- returns to training), creating long-run productivity losses beyond the static DWL.
+  returns to training), creating long-run productivity losses beyond the static DWL.
 - **Policy relevance is debated**: Some economists argue that monopsony power is widespread and
- justifies stronger minimum wage laws and pro-union policies. Others contend that labour market
- mobility (especially with the gig economy) limits monopsony power and that excessive regulation
- could reduce employment.
+  justifies stronger minimum wage laws and pro-union policies. Others contend that labour market
+  mobility (especially with the gig economy) limits monopsony power and that excessive regulation
+  could reduce employment.
 
 On balance, the monopsony model is most relevant in localised labour markets, for specialised skills
 With few employers, and in sectors with high employer concentration. Its policy implications —
@@ -253,7 +253,7 @@ Important insights from labour economics.
 
 - **Craft unions**: represent workers in a specific skilled occupation (e.g., electricians)
 - **Industrial unions**: represent all workers in an industry regardless of skill (e.g., National
- Union of Mineworkers)
+  Union of Mineworkers)
 - **General unions**: represent workers across many industries (e.g., Unite)
 
 ### 5.2 Union Objectives and Effects
@@ -288,21 +288,21 @@ Union density (the proportion of workers who are union members) has declined sha
 Developed economies:
 
 - **UK**: fell from over 50% in 1979 to approximately 23% in 2023, with private-sector density below
- 13%.
+  13%.
 - **US**: fell from approximately 35% in the 1950s to 10% in 2023.
 - **Causes**: deindustrialisation (manufacturing decline reduced union strongholds), anti-union
- legislation (Thatcher's reforms in the 1980s, right-to-work laws in the US), growth of the service
- sector and gig economy, and increased labour market flexibility.
+  legislation (Thatcher's reforms in the 1980s, right-to-work laws in the US), growth of the service
+  sector and gig economy, and increased labour market flexibility.
 
 Despite declining membership, unions retain influence through:
 
 - **Sectoral bargaining**: in some European countries (Germany, Sweden), unions negotiate wages for
- entire industries, not just their members.
+  entire industries, not just their members.
 - **Political lobbying**: unions influence labour market regulation (minimum wage laws, health and
- safety standards, equal pay legislation).
+  safety standards, equal pay legislation).
 - **Public sector strength**: union density remains much higher in the public sector (approximately
- 50% in the UK), giving unions significant leverage over government policy through strikes (e.g.,
- the 2022-2023 UK public sector strikes by nurses, railway workers, and teachers).
+  50% in the UK), giving unions significant leverage over government policy through strikes (e.g.,
+  the 2022-2023 UK public sector strikes by nurses, railway workers, and teachers).
 
 ### 5.5 Evaluation of Trade Union Impact
 
@@ -311,28 +311,25 @@ The net effect of trade unions on economic welfare is ambiguous and context-depe
 **Arguments that unions improve welfare:**
 
 - Counter monopsony power, raising wages towards the competitive level (Freeman and Medoff, 1984:
- unions as a "collective voice" that corrects market failures).
+  unions as a "collective voice" that corrects market failures).
 - Reduce wage inequality by compressing the wage distribution.
 - Improve working conditions, health, and safety — generating positive externalities (fewer
- workplace accidents reduce NHS costs).
+  workplace accidents reduce NHS costs).
 - Increase productivity through reduced turnover, better training, and improved worker morale (the
- "productive efficiency" argument).
+  "productive efficiency" argument).
 
 **Arguments that unions reduce welfare:**
 
 - Create insider-outsider dynamics: union members (insiders) gain at the expense of non-members
- (outsiders) who face unemployment or lower wages in the non-union sector.
+  (outsiders) who face unemployment or lower wages in the non-union sector.
 - May resist technological change and labour market flexibility, reducing long-run competitiveness.
 - Strike action imposes costs on firms, consumers, and the wider economy (e.g., transport strikes
- disrupt supply chains).
+  disrupt supply chains).
 - In competitive labour markets, wage increases above equilibrium unambiguously reduce employment.
 
-:::info
-Info
-Force for good or harm in the labour market — both sides must be discussed for full marks. Edexcel
-(Theme 3) links trade unions to broader debates about government intervention. OCR may ask about the
-Impact of declining union membership on wage inequality.
-:::
+:::info Info Force for good or harm in the labour market — both sides must be discussed for full
+marks. Edexcel (Theme 3) links trade unions to broader debates about government intervention. OCR
+may ask about the Impact of declining union membership on wage inequality. :::
 
 ## 6. Minimum Wage
 
@@ -352,38 +349,36 @@ Monopsony.**
 
 _Proof._ Without minimum wage, the monopsonist hires $L_m$ where $MRP_L = MCL$. With a binding
 Minimum wage $w_{min}$ ($w_m < w_{min} \leq w_c$), the MCL curve becomes horizontal at $w_{min}$ up
-To $L$ where $S_L(L) = w_{min}$Then jumps to the original MCL. The monopsonist now maximises
-Profit by hiring where $MRP_L = w_{min}$Which gives $L > L_m$ (since $MRP_L$ is downward-sloping
-And $w_{min} > w_m = MCL(L_m) = MRP_L(L_m)$). $\blacksquare$
+To $L$ where $S_L(L) = w_{min}$Then jumps to the original MCL. The monopsonist now maximises Profit
+by hiring where $MRP_L = w_{min}$Which gives $L > L_m$ (since $MRP_L$ is downward-sloping And
+$w_{min} > w_m = MCL(L_m) = MRP_L(L_m)$). $\blacksquare$
 
 The optimal minimum wage under monopsony is $w_c$ (the competitive wage), which achieves the
 Competitive outcome: $L = L_c$$w = w_c$.
 
-:::warning
-Common Pitfall The statement "minimum wages always cause unemployment" is only true in
+:::warning Common Pitfall The statement "minimum wages always cause unemployment" is only true in
 Perfectly competitive labour markets. Under monopsony (e.g., large employers in small towns, certain
 Professional sports leagues), a minimum wage can increase employment. Always state the market
-Structure.
-:::
+Structure. :::
 
 ### 6.3 Real-World Evidence on Minimum Wages
 
 The empirical debate over minimum wages has been one of the most contested in labour economics:
 
 - **Card and Krueger (1994)**: Compared fast-food employment in New Jersey (which raised its minimum
- wage) and Pennsylvania (which did not). Contrary to the competitive prediction, employment in New
- Jersey did not fall — and may have increased. This landmark study suggested monopsony power in
- low-wage labour markets.
+  wage) and Pennsylvania (which did not). Contrary to the competitive prediction, employment in New
+  Jersey did not fall — and may have increased. This landmark study suggested monopsony power in
+  low-wage labour markets.
 - **Neumark and Wascher (2007)**: Conducted a meta-analysis concluding that the preponderance of
- evidence suggests minimum wages reduce employment, particularly for teenagers and low-skilled
- workers.
+  evidence suggests minimum wages reduce employment, particularly for teenagers and low-skilled
+  workers.
 - **UK Low Pay Commission**: The independent body that advises the UK government on minimum wage
- rates has consistently found minimal employment effects from the National Minimum Wage
- (introduced 1999) and National Living Wage (introduced 2016). The UK approach of setting the rate
- cautiously, based on evidence, is often cited as a model.
+  rates has consistently found minimal employment effects from the National Minimum Wage
+  (introduced 1999) and National Living Wage (introduced 2016). The UK approach of setting the rate
+  cautiously, based on evidence, is often cited as a model.
 - **Dube (2019)**: Used border-county methods (comparing adjacent counties across state lines with
- different minimum wages) and found negligible employment effects, supporting the monopsony
- interpretation.
+  different minimum wages) and found negligible employment effects, supporting the monopsony
+  interpretation.
 
 The key insight from the empirical literature is that the employment effect depends crucially on the
 Degree of monopsony power in the relevant labour market. In highly competitive markets, minimum
@@ -399,24 +394,22 @@ Same pay).
 **Causes of the gender pay gap include:**
 
 1. **Occupational segregation**: Women are overrepresented in lower-paid sectors (care, education,
- retail) and underrepresented in higher-paid sectors (STEM, finance). This reflects a combination
- of societal norms, educational choices, and historical discrimination.
-2. **Part-time work penalty**: Women are more likely to work part-time, and part-time work 
- offers lower hourly wages and fewer progression opportunities.
+   retail) and underrepresented in higher-paid sectors (STEM, finance). This reflects a combination
+   of societal norms, educational choices, and historical discrimination.
+2. **Part-time work penalty**: Women are more likely to work part-time, and part-time work offers
+   lower hourly wages and fewer progression opportunities.
 3. **Career breaks and the "motherhood penalty"**: Women who take time out of the labour market for
- childcare lose experience and seniority. Even after returning, their career trajectories are
- permanently affected. By contrast, men often receive a "fatherhood premium."
+   childcare lose experience and seniority. Even after returning, their career trajectories are
+   permanently affected. By contrast, men often receive a "fatherhood premium."
 4. **Negotiation and bargaining**: Evidence suggests women are less likely to negotiate salaries and
- may face social penalties when they do.
+   may face social penalties when they do.
 5. **Discrimination**: Taste-based and statistical discrimination (see Section 8) continue to play a
- role, though their magnitude is debated.
+   role, though their magnitude is debated.
 
-:::info
-Board-Specific Note AQA and Edexcel both expect students to distinguish between the gender
+:::info Board-Specific Note AQA and Edexcel both expect students to distinguish between the gender
 Pay gap (an average difference across the economy) and equal pay (a legal requirement for identical
 Work). OCR (A) may link the gender pay gap to human capital theory and occupational segregation. CIE
-Has examined the effectiveness of government policies to reduce the gender pay gap.
-:::
+Has examined the effectiveness of government policies to reduce the gender pay gap. :::
 
 ### 6.5 Evaluation of Minimum Wage Policy
 
@@ -428,19 +421,19 @@ Minimum wage policy involves trade-offs that must be carefully evaluated:
 - May increase employment under monopsony conditions.
 - Reduces wage inequality by compressing the lower end of the wage distribution.
 - May increase worker productivity through efficiency wage effects (higher wages improve morale,
- reduce turnover, and attract better applicants).
+  reduce turnover, and attract better applicants).
 - Increases aggregate demand (low-paid workers have a high marginal propensity to consume).
 
 **Potential costs:**
 
 - Creates unemployment in competitive labour markets, particularly for young and low-skilled
- workers.
+  workers.
 - May increase costs for firms, leading to higher prices or reduced profits.
 - Could encourage automation and capital substitution, reducing long-run labour demand.
 - May not target the poorest households effectively (many minimum wage workers are secondary earners
- in non-poor households).
+  in non-poor households).
 - Regional impacts may be uneven: a national minimum wage binds more in low-wage regions than in
- high-wage regions like London.
+  high-wage regions like London.
 
 On balance, the evidence from the UK suggests that moderate minimum wages set with careful reference
 To labour market conditions can achieve redistribution with minimal employment costs. However, the
@@ -488,14 +481,14 @@ Productivity differences.
 **Limitations of the human capital explanation:**
 
 - It risks becoming circular: women invest less in human capital _because_ they expect lower returns
- (anticipatory discrimination), not because of innate preferences.
+  (anticipatory discrimination), not because of innate preferences.
 - It ignores the value of non-market human capital (childcare, household production) which is
- economically valuable but not rewarded in the labour market.
+  economically valuable but not rewarded in the labour market.
 - Even controlling for education, experience, and occupation, a gender pay gap persists (the
- "adjusted" or "unexplained" gap), suggesting discrimination or unobserved factors.
+  "adjusted" or "unexplained" gap), suggesting discrimination or unobserved factors.
 - The theory does not explain why female-dominated occupations (e.g., nursing, primary teaching) are
- paid less than male-dominated occupations requiring similar skill levels — a phenomenon known as
- **devaluation** or the **"pink-collar" penalty**.
+  paid less than male-dominated occupations requiring similar skill levels — a phenomenon known as
+  **devaluation** or the **"pink-collar" penalty**.
 
 ### 7.4 Criticisms of Human Capital Theory
 
@@ -503,25 +496,23 @@ While human capital theory is the dominant framework for understanding wage diff
 Significant limitations:
 
 - **Credit constraints**: Not all individuals can afford to invest in education, even when NPV is
- positive. This means talent may be wasted and inequality perpetuated across generations. The UK
- student loans system mitigates this but does not eliminate it (graduates from wealthy backgrounds
- still have advantages in unpaid internships, networking, and living costs).
+  positive. This means talent may be wasted and inequality perpetuated across generations. The UK
+  student loans system mitigates this but does not eliminate it (graduates from wealthy backgrounds
+  still have advantages in unpaid internships, networking, and living costs).
 - **Non-cognitive skills**: The theory focuses on measurable skills (education, experience) but
- ignores soft skills (communication, resilience, creativity) that are increasingly important.
+  ignores soft skills (communication, resilience, creativity) that are increasingly important.
 - **Credential inflation**: If more people obtain degrees, the signalling value of a degree falls,
- and employers may demand postgraduate qualifications for the same jobs — a form of arms race that
- wastes resources (the "sheepskin effect").
+  and employers may demand postgraduate qualifications for the same jobs — a form of arms race that
+  wastes resources (the "sheepskin effect").
 - **Oversupply of graduates**: In the UK, approximately 50% of school-leavers attend university, but
- not all graduate-level jobs require degree-level skills. This creates **underemployment** where
- graduates work in non-graduate roles, and their human capital is underutilised.
+  not all graduate-level jobs require degree-level skills. This creates **underemployment** where
+  graduates work in non-graduate roles, and their human capital is underutilised.
 
-:::info
-Board-Specific Note Edexcel (Theme 3) emphasises the role of education and training in
+:::info Board-Specific Note Edexcel (Theme 3) emphasises the role of education and training in
 Improving labour market outcomes. AQA may ask students to evaluate whether increasing university
 Participation is always economically beneficial. CIE (9708) links human capital to economic growth
 In macro contexts. OCR often examines the limitations of human capital theory in explaining
-Persistent wage inequalities.
-:::
+Persistent wage inequalities. :::
 
 ## 8. Labour Market Discrimination
 
@@ -562,15 +553,15 @@ Beyond taste-based and statistical discrimination, labour economists recognise b
 Forces that perpetuate unequal outcomes:
 
 - **Social norms and expectations**: Gendered expectations about career choices, caring
- responsibilities, and appropriate behaviour shape labour market outcomes from an early age. Girls
- are underrepresented in STEM subjects at school, limiting their access to high-paying technical
- careers.
+  responsibilities, and appropriate behaviour shape labour market outcomes from an early age. Girls
+  are underrepresented in STEM subjects at school, limiting their access to high-paying technical
+  careers.
 - **Network effects and sponsorship**: Career advancement often depends on informal networks and
- mentorship. If senior positions are disproportionately held by one group, they may unconsciously
- sponsor members of their own group, perpetuating inequality.
+  mentorship. If senior positions are disproportionately held by one group, they may unconsciously
+  sponsor members of their own group, perpetuating inequality.
 - **Institutional practices**: Flexible working requests, performance evaluation criteria, and
- promotion processes may inadvertently disadvantage certain groups. For example, mandatory long
- working hours penalise those with caring responsibilities (disproportionately women).
+  promotion processes may inadvertently disadvantage certain groups. For example, mandatory long
+  working hours penalise those with caring responsibilities (disproportionately women).
 
 ### 8.5 Measuring Discrimination: The Oaxaca-Blinder Decomposition
 
@@ -586,13 +577,11 @@ In the UK, the ONS estimates that approximately two-thirds of the gender pay gap
 Occupational segregation and working patterns, while roughly one-third remains "unexplained" and may
 Reflect discrimination.
 
-:::info
-Board-Specific Note CIE (9708) may ask students to distinguish between the explained and
+:::info Board-Specific Note CIE (9708) may ask students to distinguish between the explained and
 Unexplained portions of the gender pay gap. AQA expects evaluation of government policies such as
 The UK Gender Pay Gap Reporting Regulations (2017). Edexcel often links discrimination to government
 Intervention policies. OCR may examine whether legislation alone is sufficient to eliminate
-Discrimination.
-:::
+Discrimination. :::
 
 ## 9. Critical Evaluation
 
@@ -606,20 +595,18 @@ Discrimination.
 ### Limitations
 
 - Assumes perfect information — in reality, employers cannot perfectly observe worker productivity
- (principal-agent problem)
+  (principal-agent problem)
 - Assumes labour is homogeneous — ignores non-wage job characteristics (working conditions,
- location, prestige)
+  location, prestige)
 - The backward-bending supply curve is difficult to observe empirically
 - Discrimination models may underestimate the role of institutional factors and structural
- inequality
+  inequality
 - Non-wage factors (job satisfaction, work-life balance) are important but hard to quantify
 
-:::info
-Board-Specific Note AQA places significant emphasis on trade unions and the minimum wage
+:::info Board-Specific Note AQA places significant emphasis on trade unions and the minimum wage
 Debate. Edexcel covers human capital and migration effects on labour markets. CIE (9708) often asks
 About wage determination in different market structures. OCR (A) emphasises labour market
-Flexibility and government intervention.
-:::
+Flexibility and government intervention. :::
 
 ## 10. Problem Set
 
@@ -649,8 +636,8 @@ Eliminates the deadweight loss. What happens if the minimum wage is set above th
 At $w_{min} = w_c$The monopsonist faces $MCL = w_c$ for all $L \leq L_c$. They hire where $MRP_L = w_c$Which is exactly $L_c$ (the competitive employment level). DWL = 0. If $w_{min} > w_c$: the firm hires where $MRP_L = w_{min}$Giving $L < L_c$. Now there is unemployment ($S_L > D_L$) and a new DWL.
 </details>
 
-**Problem 4.** A worker's utility function is $U(C, h) = C^{0.5}h^{0.5}$Where $C$ is consumption
-And $h$ is leisure hours. Total time available is 24 hours, non-labour income $V = 0$. Derive the
+**Problem 4.** A worker's utility function is $U(C, h) = C^{0.5}h^{0.5}$Where $C$ is consumption And
+$h$ is leisure hours. Total time available is 24 hours, non-labour income $V = 0$. Derive the
 Individual labour supply function. Is it backward-bending?
 
 <details>
@@ -806,16 +793,27 @@ Approach.
 
 :::
 
-:::danger
-Common Pitfalls
+:::danger Common Pitfalls
 
-- **Assuming minimum wages always cause unemployment:** This is only true in perfectly competitive labour markets. Under monopsony (a single dominant employer), a minimum wage set between the monopsony wage and the competitive wage can INCREASE employment. Always state the market structure before analysing minimum wage effects.
+- **Assuming minimum wages always cause unemployment:** This is only true in perfectly competitive
+  labour markets. Under monopsony (a single dominant employer), a minimum wage set between the
+  monopsony wage and the competitive wage can INCREASE employment. Always state the market structure
+  before analysing minimum wage effects.
 
-- **Confusing MRP with VMP:** Marginal Revenue Product (MRP = MP x MR) applies to all firms. Value of the Marginal Product (VMP = MP x P) is a special case that only applies to perfectly competitive firms where MR = P. Using VMP for an imperfectly competitive firm overstates the firm's demand for labour.
+- **Confusing MRP with VMP:** Marginal Revenue Product (MRP = MP x MR) applies to all firms. Value
+  of the Marginal Product (VMP = MP x P) is a special case that only applies to perfectly
+  competitive firms where MR = P. Using VMP for an imperfectly competitive firm overstates the
+  firm's demand for labour.
 
-- **Forgetting that MCL exceeds the wage under monopsony:** The key insight of monopsony is that to hire an additional worker, the monopsonist must raise the wage for ALL workers, not just the new one. This makes the Marginal Cost of Labour (MCL) greater than the wage (ACL), leading to lower employment than under competition.
+- **Forgetting that MCL exceeds the wage under monopsony:** The key insight of monopsony is that to
+  hire an additional worker, the monopsonist must raise the wage for ALL workers, not just the new
+  one. This makes the Marginal Cost of Labour (MCL) greater than the wage (ACL), leading to lower
+  employment than under competition.
 
-- **Confusing transfer earnings with economic rent:** Transfer earnings are the minimum payment needed to keep a factor in its current use (the opportunity cost). Economic rent is any payment ABOVE transfer earnings. All workers earn at least their transfer earnings; the area above the supply curve and below the wage is economic rent.
+- **Confusing transfer earnings with economic rent:** Transfer earnings are the minimum payment
+  needed to keep a factor in its current use (the opportunity cost). Economic rent is any payment
+  ABOVE transfer earnings. All workers earn at least their transfer earnings; the area above the
+  supply curve and below the wage is economic rent.
 
 :::
 
@@ -825,82 +823,103 @@ Common Pitfalls
 
 **Worked example with full calculations.**
 
-A firm operates in a perfectly competitive product market with $P = \pounds 20$. The production function is $Q = 30L - L^2$. The labour market is monopsonistic with supply $w = 4 + 2L$.
+A firm operates in a perfectly competitive product market with $P = \pounds 20$. The production
+function is $Q = 30L - L^2$. The labour market is monopsonistic with supply $w = 4 + 2L$.
 
-**Step 1: Derive MRP.**
-$MP_L = \frac{dQ}{dL} = 30 - 2L$. Since the firm is a price taker, $MRP_L = VMP_L = MP_L \times P = (30 - 2L) \times 20 = 600 - 40L$.
+**Step 1: Derive MRP.** $MP_L = \frac{dQ}{dL} = 30 - 2L$. Since the firm is a price taker,
+$MRP_L = VMP_L = MP_L \times P = (30 - 2L) \times 20 = 600 - 40L$.
 
-**Step 2: Derive MCL.**
-$TLC = w \times L = (4 + 2L)L = 4L + 2L^2$. $MCL = \frac{dTLC}{dL} = 4 + 4L$.
+**Step 2: Derive MCL.** $TLC = w \times L = (4 + 2L)L = 4L + 2L^2$.
+$MCL = \frac{dTLC}{dL} = 4 + 4L$.
 
-**Step 3: Monopsony equilibrium.**
-$MRP_L = MCL$: $600 - 40L = 4 + 4L \Rightarrow 44L = 596 \Rightarrow L_m = 13.545$.
+**Step 3: Monopsony equilibrium.** $MRP_L = MCL$:
+$600 - 40L = 4 + 4L \Rightarrow 44L = 596 \Rightarrow L_m = 13.545$.
 $w_m = 4 + 2(13.545) = \pounds 31.09$.
 
-**Step 4: Competitive equilibrium.**
-$MRP_L = w$: $600 - 40L = 4 + 2L \Rightarrow 42L = 596 \Rightarrow L_c = 14.190$.
+**Step 4: Competitive equilibrium.** $MRP_L = w$:
+$600 - 40L = 4 + 2L \Rightarrow 42L = 596 \Rightarrow L_c = 14.190$.
 $w_c = 4 + 2(14.190) = \pounds 32.38$.
 
 **Step 5: Deadweight loss.**
 $\mathrm{DWL} = \int_{13.545}^{14.190} [(600 - 40L) - (4 + 2L)]\,dL = \int_{13.545}^{14.190} [596 - 42L]\,dL$
-$= [596L - 21L^2]_{13.545}^{14.190}$
-$= (8462.04 - 4228.84) - (8074.82 - 3854.01)$
+$= [596L - 21L^2]_{13.545}^{14.190}$ $= (8462.04 - 4228.84) - (8074.82 - 3854.01)$
 $= 4233.20 - 4220.81 = \pounds 12.39$
 
-**Step 6: Minimum wage analysis.**
-A minimum wage of $\pounds 32.38$ (= $w_c$) makes $MCL = w_{min}$ for $L \leq L_c$.
-The firm hires where $MRP_L = w_{min}$: $600 - 40L = 32.38 \Rightarrow L = 14.19 = L_c$.
-Employment increases from 13.545 to 14.190, and the wage rises from 31.09 to 32.38. The DWL is eliminated.
+**Step 6: Minimum wage analysis.** A minimum wage of $\pounds 32.38$ (= $w_c$) makes $MCL = w_{min}$
+for $L \leq L_c$. The firm hires where $MRP_L = w_{min}$:
+$600 - 40L = 32.38 \Rightarrow L = 14.19 = L_c$. Employment increases from 13.545 to 14.190, and the
+wage rises from 31.09 to 32.38. The DWL is eliminated.
 
 If the minimum wage is set at $\pounds 35$ (above $w_c$):
-$MRP_L = 35 \Rightarrow 600 - 40L = 35 \Rightarrow L = 14.125$.
-Supply at $w = 35$: $35 = 4 + 2L \Rightarrow L_s = 15.5$.
-Unemployment $= 15.5 - 14.125 = 1.375$ workers. The minimum wage is too high.
+$MRP_L = 35 \Rightarrow 600 - 40L = 35 \Rightarrow L = 14.125$. Supply at $w = 35$:
+$35 = 4 + 2L \Rightarrow L_s = 15.5$. Unemployment $= 15.5 - 14.125 = 1.375$ workers. The minimum
+wage is too high.
 
 ### 11.2 Efficiency Wages
 
-The **efficiency wage theory** (Akerlof and Yellen, 1986) argues that firms may voluntarily pay wages ABOVE the market-clearing level to increase worker productivity.
+The **efficiency wage theory** (Akerlof and Yellen, 1986) argues that firms may voluntarily pay
+wages ABOVE the market-clearing level to increase worker productivity.
 
 **Mechanisms:**
 
-1. **Nutrition (for developing countries):** Higher wages allow workers to afford better food, improving their health and physical productivity. The relationship is modelled as $MP_L = f(w)$ where $f'(w) > 0$ up to a point.
+1. **Nutrition (for developing countries):** Higher wages allow workers to afford better food,
+   improving their health and physical productivity. The relationship is modelled as $MP_L = f(w)$
+   where $f'(w) > 0$ up to a point.
 
-2. **Shirking model (Shapiro and Stiglitz, 1984):** In jobs where effort cannot be perfectly monitored, firms pay above-market wages to make the cost of job loss (the "efficiency rent") large enough to deter shirking. The no-shirking condition is:
+2. **Shirking model (Shapiro and Stiglitz, 1984):** In jobs where effort cannot be perfectly
+   monitored, firms pay above-market wages to make the cost of job loss (the "efficiency rent")
+   large enough to deter shirking. The no-shirking condition is:
 
 $$w - w_a \geq \frac{e}{q}$$
 
-Where $w$ is the wage, $w_a$ is the alternative wage, $e$ is the cost of effort, and $q$ is the probability of being caught shirking.
+Where $w$ is the wage, $w_a$ is the alternative wage, $e$ is the cost of effort, and $q$ is the
+probability of being caught shirking.
 
-3. **Turnover model:** Higher wages reduce worker turnover. The firm saves on recruitment and training costs, making the higher wage profitable even if it exceeds the market-clearing level.
+3. **Turnover model:** Higher wages reduce worker turnover. The firm saves on recruitment and
+   training costs, making the higher wage profitable even if it exceeds the market-clearing level.
 
-4. **Gift exchange / fairness (Akerlof, 1982):** Workers reciprocate higher wages with greater effort due to social norms of fairness. If workers feel they are being paid fairly, they work harder.
+4. **Gift exchange / fairness (Akerlof, 1982):** Workers reciprocate higher wages with greater
+   effort due to social norms of fairness. If workers feel they are being paid fairly, they work
+   harder.
 
-5. **Selection (adverse selection):** Higher wages attract higher-quality applicants, reducing the risk of hiring low-productivity workers (Weiss, 1980).
+5. **Selection (adverse selection):** Higher wages attract higher-quality applicants, reducing the
+   risk of hiring low-productivity workers (Weiss, 1980).
 
 **Implications:**
 
-- The labour market may exhibit involuntary unemployment even without monopsony. Firms choose not to cut wages because the resulting productivity loss would exceed the wage saving.
-- Multiple wages may exist for identical workers (efficiency wages, minimum wages, and market-clearing wages can all coexist in different sectors).
-- The efficiency wage provides a micro-foundation for Keynesian wage rigidity: wages do not fall to clear the labour market during a recession because firms fear the productivity consequences.
+- The labour market may exhibit involuntary unemployment even without monopsony. Firms choose not to
+  cut wages because the resulting productivity loss would exceed the wage saving.
+- Multiple wages may exist for identical workers (efficiency wages, minimum wages, and
+  market-clearing wages can all coexist in different sectors).
+- The efficiency wage provides a micro-foundation for Keynesian wage rigidity: wages do not fall to
+  clear the labour market during a recession because firms fear the productivity consequences.
 
 ### 11.3 Search and Matching Models
 
-The **Diamond-Mortensen-Pissarides (DMP) model** explains frictional unemployment through search frictions:
+The **Diamond-Mortensen-Pissarides (DMP) model** explains frictional unemployment through search
+frictions:
 
 - **Vacancy creation**: firms create vacancies at cost $c$ per vacancy.
 - **Job search**: unemployed workers search for jobs at cost $e$ per period.
-- **Matching function**: $M = m(U, V)$ where $U$ is unemployment and $V$ is vacancies. The matching function has constant returns to scale: $M = m\sqrt{UV}$.
+- **Matching function**: $M = m(U, V)$ where $U$ is unemployment and $V$ is vacancies. The matching
+  function has constant returns to scale: $M = m\sqrt{UV}$.
 
-The **Beveridge curve** traces out the relationship between vacancies and unemployment. During recessions, both unemployment and vacancies may be high (a shift in the Beveridge curve) due to mismatch between workers' skills and available jobs (structural unemployment).
+The **Beveridge curve** traces out the relationship between vacancies and unemployment. During
+recessions, both unemployment and vacancies may be high (a shift in the Beveridge curve) due to
+mismatch between workers' skills and available jobs (structural unemployment).
 
 **Policy implications:**
-- Reducing unemployment requires improving matching efficiency (job centres, online platforms, training programmes).
-- Reducing the costs of vacancy creation (lower payroll taxes, reduced employment protection legislation) increases vacancies and employment.
+
+- Reducing unemployment requires improving matching efficiency (job centres, online platforms,
+  training programmes).
+- Reducing the costs of vacancy creation (lower payroll taxes, reduced employment protection
+  legislation) increases vacancies and employment.
 - The DMP model provides a rigorous framework for evaluating active labour market policies.
 
 ## 12. Exam-Style Questions with Full Mark Schemes
 
-**Question 1 (25 marks).** "A national minimum wage always reduces employment." To what extent is this statement supported by economic theory and evidence?
+**Question 1 (25 marks).** "A national minimum wage always reduces employment." To what extent is
+this statement supported by economic theory and evidence?
 
 <details>
 <summary>Full Mark Scheme</summary>
@@ -912,25 +931,38 @@ The **Beveridge curve** traces out the relationship between vacancies and unempl
 - The magnitude of job losses depends on the elasticity of labour demand. If PED_L is high (many substitutes for labour), job losses are large. If PED_L is low (few substitutes), job losses are small.
 
 **Monopsony analysis (8 marks):**
+
 - Under monopsony, the firm hires where $MRP_L = MCL$Paying a wage below the competitive level.
-- A minimum wage set between $w_m$ and $w_c$ INCREASES employment by eliminating the gap between MCL and the wage.
-- The optimal minimum wage is $w_c$ (the competitive wage), which achieves the competitive outcome with zero DWL.
+- A minimum wage set between $w_m$ and $w_c$ INCREASES employment by eliminating the gap between MCL
+  and the wage.
+- The optimal minimum wage is $w_c$ (the competitive wage), which achieves the competitive outcome
+  with zero DWL.
 - If the minimum wage exceeds $w_c$Employment falls below the competitive level.
 
 **Empirical evidence (5 marks):**
-- Card and Krueger (1994): New Jersey restaurant employment did not fall relative to Pennsylvania after a minimum wage increase. Suggested monopsony in low-wage labour markets.
+
+- Card and Krueger (1994): New Jersey restaurant employment did not fall relative to Pennsylvania
+  after a minimum wage increase. Suggested monopsony in low-wage labour markets.
 - UK Low Pay Commission: minimal employment effects from NMW and NLW introductions.
-- Neumark and Wascher (2007): meta-analysis suggesting negative employment effects for teenagers and low-skilled workers.
+- Neumark and Wascher (2007): meta-analysis suggesting negative employment effects for teenagers and
+  low-skilled workers.
 - Dube (2019): border-county methods finding negligible employment effects.
 
 **Evaluation (4 marks):**
-- The statement is incorrect because it ignores the monopsony case, where a minimum wage can increase employment.
-- The evidence is mixed and context-dependent. In highly competitive markets, the statement may hold approximately. In monopsonistic markets (company towns, low-wage sectors with few employers), the statement is false.
-- The design of the minimum wage matters: moderate, evidence-based increases (as in the UK) have minimal employment effects, while large, arbitrary increases would cause job losses.
-- Distributional effects: even if some jobs are lost, the workers who retain their jobs are better off. The net effect on low-paid workers as a group may still be positive.
+
+- The statement is incorrect because it ignores the monopsony case, where a minimum wage can
+  increase employment.
+- The evidence is mixed and context-dependent. In highly competitive markets, the statement may hold
+  approximately. In monopsonistic markets (company towns, low-wage sectors with few employers), the
+  statement is false.
+- The design of the minimum wage matters: moderate, evidence-based increases (as in the UK) have
+  minimal employment effects, while large, arbitrary increases would cause job losses.
+- Distributional effects: even if some jobs are lost, the workers who retain their jobs are better
+off. The net effect on low-paid workers as a group may still be positive.
 </details>
 
-**Question 2 (12 marks).** Explain how a trade union can increase both wages and employment in a monopsonistic labour market. Use a diagram in your answer.
+**Question 2 (12 marks).** Explain how a trade union can increase both wages and employment in a
+monopsonistic labour market. Use a diagram in your answer.
 
 <details>
 <summary>Full Mark Scheme</summary>
@@ -941,16 +973,24 @@ The **Beveridge curve** traces out the relationship between vacancies and unempl
 - Diagram showing the monopsony labour supply, MCL, MRP, the monopsony equilibrium $(L_m, w_m)$The competitive equilibrium $(L_c, w_c)$And the union-negotiated outcome with higher $L$ and $w$.
 
 **Conditions for success (4 marks):**
-- The union must set the wage at or below the competitive level. If the union pushes wages above $w_c$Employment falls below $L_c$.
-- The union must have sufficient bargaining power to enforce the wage (no free-riding by non-members).
-- The union must not simultaneously restrict labour supply (e.g., through closed shops or excessive licensing) that would offset the employment gain.
+
+- The union must set the wage at or below the competitive level. If the union pushes wages above
+  $w_c$Employment falls below $L_c$.
+- The union must have sufficient bargaining power to enforce the wage (no free-riding by
+  non-members).
+- The union must not simultaneously restrict labour supply (e.g., through closed shops or excessive
+  licensing) that would offset the employment gain.
 
 **Real-world evidence (2 marks):**
-- Evidence from Scandinavian countries with strong unions and centralised wage bargaining shows high wages alongside low unemployment.
-- UK evidence: unionised workplaces in the public sector (NHS, education) have higher wages than comparable non-unionised private sector workers.
+
+- Evidence from Scandinavian countries with strong unions and centralised wage bargaining shows high
+  wages alongside low unemployment.
+- UK evidence: unionised workplaces in the public sector (NHS, education) have higher wages than
+comparable non-unionised private sector workers.
 </details>
 
-**Question 3 (25 marks).** "The gender pay gap in the UK is primarily caused by discrimination against women." Evaluate this statement.
+**Question 3 (25 marks).** "The gender pay gap in the UK is primarily caused by discrimination
+against women." Evaluate this statement.
 
 <details>
 <summary>Full Mark Scheme</summary>
@@ -961,18 +1001,35 @@ The **Beveridge curve** traces out the relationship between vacancies and unempl
 - Limitations: discrimination is difficult to measure directly, and the "unexplained" gap may reflect unobserved factors rather than discrimination.
 
 **Non-discrimination explanations (10 marks):**
-- Human capital differences: women are more likely to work part-time, take career breaks (childcare), and work in lower-paid sectors (care, education, retail). These choices reduce MRP and hence wages.
-- Occupational segregation: women are overrepresented in lower-paid sectors. The "pink-collar penalty" -- female-dominated occupations (nursing, primary teaching) pay less than male-dominated occupations requiring similar skills (IT, engineering).
-- Part-time work penalty: part-time workers earn less per hour and have fewer promotion opportunities.
-- Motherhood penalty vs fatherhood premium: women who have children see their earnings trajectory permanently affected; men who have children see their earnings increase.
-- Educational choices: women are underrepresented in STEM subjects, which lead to higher-paying careers.
+
+- Human capital differences: women are more likely to work part-time, take career breaks
+  (childcare), and work in lower-paid sectors (care, education, retail). These choices reduce MRP
+  and hence wages.
+- Occupational segregation: women are overrepresented in lower-paid sectors. The "pink-collar
+  penalty" -- female-dominated occupations (nursing, primary teaching) pay less than male-dominated
+  occupations requiring similar skills (IT, engineering).
+- Part-time work penalty: part-time workers earn less per hour and have fewer promotion
+  opportunities.
+- Motherhood penalty vs fatherhood premium: women who have children see their earnings trajectory
+  permanently affected; men who have children see their earnings increase.
+- Educational choices: women are underrepresented in STEM subjects, which lead to higher-paying
+  careers.
 
 **Evaluation (7 marks):**
-- The statement overstates the role of discrimination. Human capital and occupational segregation explain approximately two-thirds of the gap.
-- However, discrimination and human capital are interlinked: women may choose certain occupations because they anticipate discrimination in male-dominated fields (anticipatory discrimination). Occupational segregation itself may reflect historical discrimination in education and societal expectations.
-- Policy implications: if the gap is primarily human capital, policies should focus on education and childcare. If primarily discrimination, policies should focus on equal pay legislation, transparency requirements, and anti-discrimination enforcement.
-- The most effective approach addresses both: enforcement of existing equality legislation combined with investment in childcare, education, and measures to reduce occupational segregation.
-- Conclusion: discrimination explains a significant but minority share of the gender pay gap. The gap is multifaceted, requiring a comprehensive policy response.
+
+- The statement overstates the role of discrimination. Human capital and occupational segregation
+  explain approximately two-thirds of the gap.
+- However, discrimination and human capital are interlinked: women may choose certain occupations
+  because they anticipate discrimination in male-dominated fields (anticipatory discrimination).
+  Occupational segregation itself may reflect historical discrimination in education and societal
+  expectations.
+- Policy implications: if the gap is primarily human capital, policies should focus on education and
+  childcare. If primarily discrimination, policies should focus on equal pay legislation,
+  transparency requirements, and anti-discrimination enforcement.
+- The most effective approach addresses both: enforcement of existing equality legislation combined
+  with investment in childcare, education, and measures to reduce occupational segregation.
+- Conclusion: discrimination explains a significant but minority share of the gender pay gap. The
+gap is multifaceted, requiring a comprehensive policy response.
 </details>
 
 ## 10. Extended Worked Examples
@@ -981,120 +1038,159 @@ The **Beveridge curve** traces out the relationship between vacancies and unempl
 
 **Example.** A firm's labour demand (MRPL) is $MRPL = 200 - 2L$. Labour supply is $w = 40 + L$.
 
-**Competitive equilibrium:** $200 - 2L = 40 + L \Rightarrow 160 = 3L \Rightarrow L = 53.33$$w = 93.33$.
+**Competitive equilibrium:**
+$200 - 2L = 40 + L \Rightarrow 160 = 3L \Rightarrow L = 53.33$$w = 93.33$.
 
-**Trade union negotiates a wage of $\pounds 120$:** At $w = 120$The firm hires workers up to the point where $MRPL = 120$:
-$200 - 2L = 120 \Rightarrow L = 40$.
+**Trade union negotiates a wage of $\pounds 120$:** At $w = 120$The firm hires workers up to the
+point where $MRPL = 120$: $200 - 2L = 120 \Rightarrow L = 40$.
 
 The union wage has reduced employment from 53.33 to 40 (a loss of 13.33 jobs, or 25%).
 
 **Welfare analysis:**
+
 - Workers who keep their jobs gain: $(120 - 93.33) \times 40 = 1066.8$.
-- Workers who lose their jobs lose: $\frac{1}{2}(120 - 93.33) \times (53.33 - 40) = 177.8$ (the area of the jobs triangle, but this is a simplification).
-- Employer surplus (between MRPL and wage): Competitive $= \frac{1}{2}(200 - 93.33)(53.33) = 2844.4$. With union $= \frac{1}{2}(200 - 120)(40) = 1600$. Loss $= 1244.4$.
+- Workers who lose their jobs lose: $\frac{1}{2}(120 - 93.33) \times (53.33 - 40) = 177.8$ (the area
+  of the jobs triangle, but this is a simplification).
+- Employer surplus (between MRPL and wage): Competitive
+  $= \frac{1}{2}(200 - 93.33)(53.33) = 2844.4$. With union $= \frac{1}{2}(200 - 120)(40) = 1600$.
+  Loss $= 1244.4$.
 - DWL $= \frac{1}{2}(120 - 93.33)(53.33 - 40) = 177.8$.
 
-The union creates a DWL of 177.8 by preventing 13.33 mutually beneficial employment transactions (the MRPL exceeds the supply wage for these workers, but the union wage prevents hiring).
+The union creates a DWL of 177.8 by preventing 13.33 mutually beneficial employment transactions
+(the MRPL exceeds the supply wage for these workers, but the union wage prevents hiring).
 
 **Union's counter-argument:**
-- The competitive wage of 93.33 may be below a living wage. The union ensures workers earn a decent income.
-- The productivity of workers may increase with higher wages (efficiency wage effect), shifting the MRPL curve right.
-- The DWL calculation assumes the labour market is perfectly competitive. If the firm has monopsony power, the union wage may actually INCREASE employment.
+
+- The competitive wage of 93.33 may be below a living wage. The union ensures workers earn a decent
+  income.
+- The productivity of workers may increase with higher wages (efficiency wage effect), shifting the
+  MRPL curve right.
+- The DWL calculation assumes the labour market is perfectly competitive. If the firm has monopsony
+  power, the union wage may actually INCREASE employment.
 
 ### 10.2 Labour Market with Frictions: Search Model
 
-**Example.** The matching function in an economy is $M = mU^{\alpha}V^{1-\alpha}$ where $U$ is unemployment, $V$ is vacancies, $m = 0.5$And $\alpha = 0.5$.
+**Example.** The matching function in an economy is $M = mU^{\alpha}V^{1-\alpha}$ where $U$ is
+unemployment, $V$ is vacancies, $m = 0.5$And $\alpha = 0.5$.
 
 The labour force is 10 million. Currently $U = 1.5$ million, $V = 0.5$ million.
 
 **Number of matches per period:**
 $M = 0.5 \times (1.5)^{0.5} \times (0.5)^{0.5} = 0.5 \times 1.225 \times 0.707 = 0.433$ million.
 
-**Job finding rate:** $f = M/U = 0.433/1.5 = 28.9\%$ per period. Average unemployment duration $= 1/f = 3.46$ periods.
+**Job finding rate:** $f = M/U = 0.433/1.5 = 28.9\%$ per period. Average unemployment duration
+$= 1/f = 3.46$ periods.
 
-**Vacancy filling rate:** $q = M/V = 0.433/0.5 = 86.6\%$ per period. Average vacancy duration $= 1/q = 1.15$ periods.
+**Vacancy filling rate:** $q = M/V = 0.433/0.5 = 86.6\%$ per period. Average vacancy duration
+$= 1/q = 1.15$ periods.
 
 **Effect of doubling vacancies to 1 million:**
 $M = 0.5 \times (1.5)^{0.5} \times (1)^{0.5} = 0.5 \times 1.225 = 0.612$ million.
 
-New job finding rate: $f = 0.612/1.5 = 40.8\%$. Average unemployment duration $= 2.45$ periods.
-New vacancy filling rate: $q = 0.612/1 = 61.2\%$. Average vacancy duration $= 1.63$ periods.
+New job finding rate: $f = 0.612/1.5 = 40.8\%$. Average unemployment duration $= 2.45$ periods. New
+vacancy filling rate: $q = 0.612/1 = 61.2\%$. Average vacancy duration $= 1.63$ periods.
 
-**Diminishing returns to vacancies:** The number of matches increased by 41.3% ($0.612/0.433 - 1$) while vacancies doubled. This is because the matching function exhibits diminishing returns: each additional vacancy is matched less efficiently as the ratio of vacancies to unemployed workers rises. The labour market becomes less "tight" for firms but more efficient for workers.
+**Diminishing returns to vacancies:** The number of matches increased by 41.3% ($0.612/0.433 - 1$)
+while vacancies doubled. This is because the matching function exhibits diminishing returns: each
+additional vacancy is matched less efficiently as the ratio of vacancies to unemployed workers
+rises. The labour market becomes less "tight" for firms but more efficient for workers.
 
-**Beveridge curve interpretation:** The initial point $(U = 1.5, V = 0.5)$ lies on the Beveridge curve. Doubling vacancies to 1 million moves along the curve to a point with lower unemployment ($U$ will fall over time as the higher job finding rate reduces unemployment). The Beveridge curve is convex, reflecting the matching frictions.
+**Beveridge curve interpretation:** The initial point $(U = 1.5, V = 0.5)$ lies on the Beveridge
+curve. Doubling vacancies to 1 million moves along the curve to a point with lower unemployment ($U$
+will fall over time as the higher job finding rate reduces unemployment). The Beveridge curve is
+convex, reflecting the matching frictions.
 
 ### 10.3 Human Capital: Rate of Return to Education
 
 **Example.** A student is deciding whether to pursue a master's degree. Data:
 
-| | No master's | With master's |
-|---|:---:|:---:|
-| Age at start of work | 21 | 23 |
-| Starting salary | GBP 28,000 | GBP 35,000 |
-| Annual salary growth | 3% | 3.5% |
-| Working years | 44 (to age 65) | 42 (to age 65) |
-| Cost of master's | 0 | GBP 15,000/year for 2 years |
+|                      |  No master's   |        With master's        |
+| -------------------- | :------------: | :-------------------------: |
+| Age at start of work |       21       |             23              |
+| Starting salary      |   GBP 28,000   |         GBP 35,000          |
+| Annual salary growth |       3%       |            3.5%             |
+| Working years        | 44 (to age 65) |       42 (to age 65)        |
+| Cost of master's     |       0        | GBP 15,000/year for 2 years |
 
-**Earnings without master's (age 21 to 65):**
-Year 1 (age 21): 28,000. Year 10 (age 30): $28\,000 \times 1.03^9 = 36\,598$.
-Year 22 (age 42): $28\,000 \times 1.03^{21} = 50\,776$.
-Year 44 (age 64): $28\,000 \times 1.03^{43} = 102\,844$.
+**Earnings without master's (age 21 to 65):** Year 1 (age 21): 28,000. Year 10 (age 30):
+$28\,000 \times 1.03^9 = 36\,598$. Year 22 (age 42): $28\,000 \times 1.03^{21} = 50\,776$. Year 44
+(age 64): $28\,000 \times 1.03^{43} = 102\,844$.
 
-Total earnings (approximate, using average): average salary over 44 years $\approx 28\,000 \times \frac◆LB◆1.03^{44} - 1◆RB◆◆LB◆44 \times \ln(1.03)◆RB◆$.
+Total earnings (approximate, using average): average salary over 44 years
+$\approx 28\,000 \times \frac◆LB◆1.03^{44} - 1◆RB◆◆LB◆44 \times \ln(1.03)◆RB◆$.
 
-Using the sum of a geometric series: $\sum_{t=0}^{43} 28\,000 \times 1.03^t = 28\,000 \times \frac{1.03^{44} - 1}{0.03} = 28\,000 \times \frac{3.607 - 1}{0.03} = 28\,000 \times 86.9 = 2\,433\,200$.
+Using the sum of a geometric series:
+$\sum_{t=0}^{43} 28\,000 \times 1.03^t = 28\,000 \times \frac{1.03^{44} - 1}{0.03} = 28\,000 \times \frac{3.607 - 1}{0.03} = 28\,000 \times 86.9 = 2\,433\,200$.
 
 **Earnings with master's (age 23 to 65):**
 $\sum_{t=0}^{41} 35\,000 \times 1.035^t = 35\,000 \times \frac{1.035^{42} - 1}{0.035} = 35\,000 \times \frac{4.314 - 1}{0.035} = 35\,000 \times 94.7 = 3\,314\,500$.
 
-**Cost of master's:** $15\,000 \times 2 = 30\,000$ (direct) + opportunity cost $= 28\,000 \times 2 + 28\,000 \times 0.03 = 57\,680$ (forgone earnings for 2 years, including growth).
-Total cost $= 30\,000 + 57\,680 = 87\,680$.
+**Cost of master's:** $15\,000 \times 2 = 30\,000$ (direct) + opportunity cost
+$= 28\,000 \times 2 + 28\,000 \times 0.03 = 57\,680$ (forgone earnings for 2 years, including
+growth). Total cost $= 30\,000 + 57\,680 = 87\,680$.
 
 **Net benefit:** $3\,314\,500 - 2\,433\,200 - 87\,680 = 793\,620$.
 
 **Internal rate of return:** The IRR is the discount rate $r$ that makes NPV = 0:
 $$NPV = -30\,000 - \frac{28\,000}{1+r} - \frac{28\,840}{(1+r)^2} + \sum_{t=3}^{44} \frac◆LB◆35\,000 \times 1.035^{t-3}◆RB◆◆LB◆(1+r)^t◆RB◆ = 0$$
 
-At $r = 10\%$: the NPV is approximately positive. At $r = 15\%$: the NPV is approximately negative. The IRR is approximately 12-13%, which is well above the typical student loan interest rate (3-7%), suggesting the master's degree is a sound investment.
+At $r = 10\%$: the NPV is approximately positive. At $r = 15\%$: the NPV is approximately negative.
+The IRR is approximately 12-13%, which is well above the typical student loan interest rate (3-7%),
+suggesting the master's degree is a sound investment.
 
-**However:** this calculation ignores non-monetary returns (job satisfaction, intellectual fulfilment) and non-monetary costs (stress, workload). It also assumes constant salary growth, which may not hold (career plateaus, industry disruption).
+**However:** this calculation ignores non-monetary returns (job satisfaction, intellectual
+fulfilment) and non-monetary costs (stress, workload). It also assumes constant salary growth, which
+may not hold (career plateaus, industry disruption).
 
 ### 10.4 Immigration and the Labour Market
 
-**Example.** A country experiences an influx of 500,000 immigrant workers. The labour demand is $w = 200 - 0.5L$ (millions) and labour supply is $w = 20 + L$ (millions). The native labour force is 30 million.
+**Example.** A country experiences an influx of 500,000 immigrant workers. The labour demand is
+$w = 200 - 0.5L$ (millions) and labour supply is $w = 20 + L$ (millions). The native labour force is
+30 million.
 
-**Initial equilibrium:** $200 - 0.5L = 20 + L \Rightarrow 180 = 1.5L \Rightarrow L = 120$ (million), $w = 140$.
+**Initial equilibrium:** $200 - 0.5L = 20 + L \Rightarrow 180 = 1.5L \Rightarrow L = 120$ (million),
+$w = 140$.
 
-**With immigration (labour force = 30.5 million):** labour supply shifts to $w = 20 + (L - 0.5) = 19.5 + L$.
-Wait, this needs more careful treatment. If labour supply shifts right by 0.5 million:
-New labour supply: $w = 20 + (L - 0.5)$ for $L \geq 0.5$.
+**With immigration (labour force = 30.5 million):** labour supply shifts to
+$w = 20 + (L - 0.5) = 19.5 + L$. Wait, this needs more careful treatment. If labour supply shifts
+right by 0.5 million: New labour supply: $w = 20 + (L - 0.5)$ for $L \geq 0.5$.
 $200 - 0.5L = 20 + L - 0.5 \Rightarrow 180.5 = 1.5L \Rightarrow L = 120.33$$w = 139.83$.
 
-The wage falls from 140 to 139.83 (a fall of 0.17 or 0.12%). Employment rises from 120 to 120.33 million.
+The wage falls from 140 to 139.83 (a fall of 0.17 or 0.12%). Employment rises from 120 to 120.33
+million.
 
 **Distributional effects:**
+
 - Native workers who keep their jobs: lose $0.17 \times 120 = 20.4$ (in aggregate).
-- Native workers who lose their jobs: approximately $0.33 \times 0.5 = 0.165$ million native workers displaced (assuming proportional displacement).
-- Employers: gain from lower wages. Employer surplus increases by approximately $\frac{1}{2}(140 + 139.83)(120.33 - 120) + 139.83 \times 0.17 = 20.4$.
-- Immigrants: gain employment at wage 139.83 (vs their reservation wage in the home country, which is presumably much lower).
+- Native workers who lose their jobs: approximately $0.33 \times 0.5 = 0.165$ million native workers
+  displaced (assuming proportional displacement).
+- Employers: gain from lower wages. Employer surplus increases by approximately
+  $\frac{1}{2}(140 + 139.83)(120.33 - 120) + 139.83 \times 0.17 = 20.4$.
+- Immigrants: gain employment at wage 139.83 (vs their reservation wage in the home country, which
+  is presumably much lower).
 - Government: gains tax revenue from additional workers, incurs costs of public services.
 
-**The immigration surplus:** The net gain to the HOST country from immigration is the area between the labour demand curve and the labour supply curve for the additional workers, minus any displacement costs. This is small (a fraction of GDP) but positive.
+**The immigration surplus:** The net gain to the HOST country from immigration is the area between
+the labour demand curve and the labour supply curve for the additional workers, minus any
+displacement costs. This is small (a fraction of GDP) but positive.
 
-**Key insight:** immigration creates a small net economic gain for the host country, but the gains are concentrated among employers (and consumers who benefit from lower prices) while the losses are concentrated among competing native workers. This distributional conflict is the political economy basis for anti-immigration sentiment, even when immigration is economically beneficial in aggregate.
+**Key insight:** immigration creates a small net economic gain for the host country, but the gains
+are concentrated among employers (and consumers who benefit from lower prices) while the losses are
+concentrated among competing native workers. This distributional conflict is the political economy
+basis for anti-immigration sentiment, even when immigration is economically beneficial in aggregate.
 
 ## 11. Extended Worked Examples
 
 ### 11.1 Labour Market Equilibrium with Progressive Taxation
 
-**Example.** Labour supply: $w = 20 + L$ (pre-tax). Labour demand (MRPL): $w = 100 - L$. The government introduces a progressive income tax:
+**Example.** Labour supply: $w = 20 + L$ (pre-tax). Labour demand (MRPL): $w = 100 - L$. The
+government introduces a progressive income tax:
 
 | Tax band | Rate | Threshold |
-|---|:---:|:---:|
-| 0-30 | 20% | 0 |
-| 30-60 | 40% | 30 |
-| Above 60 | 50% | 60 |
+| -------- | :--: | :-------: |
+| 0-30     | 20%  |     0     |
+| 30-60    | 40%  |    30     |
+| Above 60 | 50%  |    60     |
 
 **Pre-tax equilibrium:** $20 + L = 100 - L \Rightarrow 2L = 80 \Rightarrow L = 40$$w = 60$.
 
@@ -1102,76 +1198,97 @@ The wage falls from 140 to 139.83 (a fall of 0.17 or 0.12%). Employment rises fr
 
 At $L = 40$$w = 60$. Tax $= 0.2(30) + 0.4(30) = 6 + 12 = 18$. Net wage $= 42$.
 
-The labour supply curve must be expressed in terms of the NET wage. At each gross wage $w$The net wage $w_n = w - T(w)$.
+The labour supply curve must be expressed in terms of the NET wage. At each gross wage $w$The net
+wage $w_n = w - T(w)$.
 
-For $w \leq 30$: $w_n = 0.8w$.
-For $30 < w \leq 60$: $w_n = 30 \times 0.8 + (w - 30) \times 0.6 = 24 + 0.6w - 18 = 6 + 0.6w$.
-For $w > 60$: $w_n = 24 + 12 + (w - 60) \times 0.5 = 36 + 0.5w - 30 = 6 + 0.5w$.
+For $w \leq 30$: $w_n = 0.8w$. For $30 < w \leq 60$:
+$w_n = 30 \times 0.8 + (w - 30) \times 0.6 = 24 + 0.6w - 18 = 6 + 0.6w$. For $w > 60$:
+$w_n = 24 + 12 + (w - 60) \times 0.5 = 36 + 0.5w - 30 = 6 + 0.5w$.
 
-**New labour supply in terms of gross wage:**
-Workers supply labour based on the net wage: $w_n = 20 + L$.
-$20 + L = w_n(w)$.
+**New labour supply in terms of gross wage:** Workers supply labour based on the net wage:
+$w_n = 20 + L$. $20 + L = w_n(w)$.
 
-For $w \leq 30$: $20 + L = 0.8w \Rightarrow w = 25 + 1.25L$.
-For $30 < w \leq 60$: $20 + L = 6 + 0.6w \Rightarrow 0.6w = 14 + L \Rightarrow w = 23.33 + 1.667L$.
-For $w > 60$: $20 + L = 6 + 0.5w \Rightarrow 0.5w = 14 + L \Rightarrow w = 28 + 2L$.
+For $w \leq 30$: $20 + L = 0.8w \Rightarrow w = 25 + 1.25L$. For $30 < w \leq 60$:
+$20 + L = 6 + 0.6w \Rightarrow 0.6w = 14 + L \Rightarrow w = 23.33 + 1.667L$. For $w > 60$:
+$20 + L = 6 + 0.5w \Rightarrow 0.5w = 14 + L \Rightarrow w = 28 + 2L$.
 
-**New equilibrium:** The labour supply is kinked (steeper in higher tax brackets). The new equilibrium depends on which segment intersects the demand curve.
+**New equilibrium:** The labour supply is kinked (steeper in higher tax brackets). The new
+equilibrium depends on which segment intersects the demand curve.
 
-At $L = 40$: labour supply gives $w = 23.33 + 1.667(40) = 90$. Demand gives $w = 100 - 40 = 60$. Labour supply price (90) > demand price (60). Employment falls.
+At $L = 40$: labour supply gives $w = 23.33 + 1.667(40) = 90$. Demand gives $w = 100 - 40 = 60$.
+Labour supply price (90) > demand price (60). Employment falls.
 
-Let me find the new equilibrium in the third segment ($w > 60$): $28 + 2L = 100 - L \Rightarrow 3L = 72 \Rightarrow L = 24$.
+Let me find the new equilibrium in the third segment ($w > 60$):
+$28 + 2L = 100 - L \Rightarrow 3L = 72 \Rightarrow L = 24$.
 
 At $L = 24$: $w = 76$. This is in the third tax bracket (above 60). Net wage $= 6 + 0.5(76) = 44$.
 Before tax: $L = 40$$w = 60$Net wage $= 42$.
 
 **Results:**
+
 - Employment falls from 40 to 24 (a 40% decline).
 - Gross wage rises from 60 to 76 (employers pay more per worker).
-- Net wage rises from 42 to 44 (workers are slightly better off, but 16 workers have lost their jobs entirely).
-- Tax revenue $= 0.2(30) + 0.4(30) + 0.5(76 - 60) = 6 + 12 + 8 = 26$ per worker $\times$ 24 workers $= 624$.
+- Net wage rises from 42 to 44 (workers are slightly better off, but 16 workers have lost their jobs
+  entirely).
+- Tax revenue $= 0.2(30) + 0.4(30) + 0.5(76 - 60) = 6 + 12 + 8 = 26$ per worker $\times$ 24 workers
+  $= 624$.
 - Pre-tax revenue $= 18 \times 40 = 720$.
 
-**The progressive tax has reduced employment, raised the gross wage (cost to employers), and slightly raised the net wage for those who remain employed. 16 workers are now unemployed.**
+**The progressive tax has reduced employment, raised the gross wage (cost to employers), and
+slightly raised the net wage for those who remain employed. 16 workers are now unemployed.**
 
-**Deadweight loss:** DWL $= \frac{1}{2}(76 - 60)(40 - 24) = 128$ (the area between the demand and pre-tax supply curves from $L = 24$ to $L = 40$).
+**Deadweight loss:** DWL $= \frac{1}{2}(76 - 60)(40 - 24) = 128$ (the area between the demand and
+pre-tax supply curves from $L = 24$ to $L = 40$).
 
 ### 11.2 Wage Determination: Bilateral Monopoly
 
-**Example.** A single coal mine (monopsony employer) faces a single mining union (monopoly seller of labour).
+**Example.** A single coal mine (monopsony employer) faces a single mining union (monopoly seller of
+labour).
 
-**Employer (monopsony):** $MFCL = 20 + 0.4L$. $MRPL = 100 - 0.5L$.
-Monopsony optimum: $MFCL = MRPL$: $20 + 0.4L = 100 - 0.5L \Rightarrow 0.9L = 80 \Rightarrow L = 88.9$$w = 20 + 0.2(88.9) = 37.8$.
+**Employer (monopsony):** $MFCL = 20 + 0.4L$. $MRPL = 100 - 0.5L$. Monopsony optimum: $MFCL = MRPL$:
+$20 + 0.4L = 100 - 0.5L \Rightarrow 0.9L = 80 \Rightarrow L = 88.9$$w = 20 + 0.2(88.9) = 37.8$.
 
-**Union (monopoly seller of labour):** The union maximises the total wage bill $w \times L = (20 + 0.2L) \times L = 20L + 0.2L^2$.
-$\frac{d(wL)}{dL} = 20 + 0.4L$. Setting this equal to the MRP (the value of the marginal worker to the employer):
+**Union (monopoly seller of labour):** The union maximises the total wage bill
+$w \times L = (20 + 0.2L) \times L = 20L + 0.2L^2$. $\frac{d(wL)}{dL} = 20 + 0.4L$. Setting this
+equal to the MRP (the value of the marginal worker to the employer):
 $20 + 0.4L = 100 - 0.5L \Rightarrow 0.9L = 80 \Rightarrow L = 88.9$.
 
-The union's preferred outcome is the SAME as the monopsony outcome (because maximising total wage revenue subject to the MRPL constraint gives the same first-order condition). This is a coincidence due to the functional forms.
+The union's preferred outcome is the SAME as the monopsony outcome (because maximising total wage
+revenue subject to the MRPL constraint gives the same first-order condition). This is a coincidence
+due to the functional forms.
 
-**Let me use a different union objective:** the union maximises the wage $w$ subject to employing all members (say $L = 100$).
-$w = 20 + 0.2(100) = 40$. The employer's MRPL at $L = 100$: $MRPL = 100 - 50 = 50$.
-The employer is willing to pay up to 50, but the union demands 40. The gap (10) is the employer's surplus per worker.
+**Let me use a different union objective:** the union maximises the wage $w$ subject to employing
+all members (say $L = 100$). $w = 20 + 0.2(100) = 40$. The employer's MRPL at $L = 100$:
+$MRPL = 100 - 50 = 50$. The employer is willing to pay up to 50, but the union demands 40. The gap
+(10) is the employer's surplus per worker.
 
-**Bargaining range:** The wage must be between the employer's minimum (monopsony wage of 37.8) and the union's maximum (MRPL of 50 at $L = 88.9$). The actual wage depends on bargaining power.
+**Bargaining range:** The wage must be between the employer's minimum (monopsony wage of 37.8) and
+the union's maximum (MRPL of 50 at $L = 88.9$). The actual wage depends on bargaining power.
 
-**Cooperative outcome (efficient bargaining):** Both parties negotiate to maximise the joint surplus.
-Joint surplus $= \int_0^L MRPL \, dL - \int_0^L w(L) \, dL = \int_0^L (100 - 0.5x) \, dx - \int_0^L (20 + 0.2x) \, dx$
+**Cooperative outcome (efficient bargaining):** Both parties negotiate to maximise the joint
+surplus. Joint surplus
+$= \int_0^L MRPL \, dL - \int_0^L w(L) \, dL = \int_0^L (100 - 0.5x) \, dx - \int_0^L (20 + 0.2x) \, dx$
 $= [100L - 0.25L^2] - [20L + 0.1L^2] = 80L - 0.35L^2$.
 
-Maximise: $80 - 0.7L = 0 \Rightarrow L = 114.3$. This is the EFFICIENT employment level (where MRPL = labour supply wage, not where MFCL = MRPL).
+Maximise: $80 - 0.7L = 0 \Rightarrow L = 114.3$. This is the EFFICIENT employment level (where MRPL
+= labour supply wage, not where MFCL = MRPL).
 
 At $L = 114.3$: MRPL $= 100 - 0.5(114.3) = 42.9$. Labour supply wage $= 20 + 0.2(114.3) = 42.9$.
 
-The efficient outcome has HIGHER employment (114.3 vs 88.9) than the monopsony outcome. This is the classic result: bilateral monopoly can lead to higher employment than monopsony because the union counteracts the employer's market power.
+The efficient outcome has HIGHER employment (114.3 vs 88.9) than the monopsony outcome. This is the
+classic result: bilateral monopoly can lead to higher employment than monopsony because the union
+counteracts the employer's market power.
 
-**The actual wage is determined by bargaining:** somewhere between 42.9 and the MRPL. The Nash bargaining solution would split the surplus equally.
+**The actual wage is determined by bargaining:** somewhere between 42.9 and the MRPL. The Nash
+bargaining solution would split the surplus equally.
 
 ### 11.3 The Gig Economy: Labour Market Analysis
 
-**Example.** Uber drivers are classified as self-employed contractors, not employees. Analyse the labour market implications.
+**Example.** Uber drivers are classified as self-employed contractors, not employees. Analyse the
+labour market implications.
 
 **Traditional taxi market (employees):**
+
 - Drivers are employees of taxi firms.
 - Minimum wage applies: GBP 10.42/hour.
 - Firms must provide holiday pay, pension contributions, sick pay.
@@ -1179,6 +1296,7 @@ The efficient outcome has HIGHER employment (114.3 vs 88.9) than the monopsony o
 - Employment determined by demand at the minimum wage.
 
 **Gig economy (self-employed):**
+
 - Drivers are independent contractors.
 - No minimum wage (the "piece rate" is set by the algorithm).
 - No employment protections (holiday pay, sick pay, pension).
@@ -1187,43 +1305,61 @@ The efficient outcome has HIGHER employment (114.3 vs 88.9) than the monopsony o
 
 **Numerical comparison:**
 
-Assume demand for ride services: $Q_D = 1000 - 10P$ where $P$ is the fare per ride. Each driver provides 20 rides per day at the competitive wage.
+Assume demand for ride services: $Q_D = 1000 - 10P$ where $P$ is the fare per ride. Each driver
+provides 20 rides per day at the competitive wage.
 
-**Traditional model:**
-Driver wage $= 10.42$/hour. 8-hour shift $= 83.36$/day. Cost per ride (20 rides) $= 4.17$.
-Firm must charge $P \geq 4.17 + overhead$. Assume overhead $= 1.00$ per ride.
+**Traditional model:** Driver wage $= 10.42$/hour. 8-hour shift $= 83.36$/day. Cost per ride (20
+rides) $= 4.17$. Firm must charge $P \geq 4.17 + overhead$. Assume overhead $= 1.00$ per ride.
 $P = 5.17$. $Q_D = 1000 - 51.7 = 948.3$ rides/day. Drivers needed $= 948.3 / 20 = 47.4$.
 
-**Gig model:**
-Driver wage $= 6$/hour (no minimum wage). 8-hour shift $= 48$/day. Cost per ride $= 2.40$.
-$P = 3.40$. $Q_D = 1000 - 34 = 966$ rides/day. Drivers needed $= 966 / 20 = 48.3$.
+**Gig model:** Driver wage $= 6$/hour (no minimum wage). 8-hour shift $= 48$/day. Cost per ride
+$= 2.40$. $P = 3.40$. $Q_D = 1000 - 34 = 966$ rides/day. Drivers needed $= 966 / 20 = 48.3$.
 
 Wait -- the gig model has LOWER prices and MORE rides, but drivers are paid LESS. Let me reconsider.
 
-Actually, in the gig model, drivers bear more costs (fuel, vehicle maintenance, insurance). The effective take-home pay may be:
-Gross: 6/hour. Vehicle costs: 2/hour. Net: 4/hour.
-Traditional: 10.42/hour (employer pays all costs).
+Actually, in the gig model, drivers bear more costs (fuel, vehicle maintenance, insurance). The
+effective take-home pay may be: Gross: 6/hour. Vehicle costs: 2/hour. Net: 4/hour. Traditional:
+10.42/hour (employer pays all costs).
 
 **The gig economy creates a race to the bottom on wages** because:
+
 1. No minimum wage protection.
 2. No collective bargaining (each driver negotiates individually with the algorithm).
 3. Lower barriers to entry increase labour supply, putting downward pressure on wages.
-4. Drivers bear fixed costs (vehicle, insurance), creating a sunk cost fallacy (they continue driving even at low wages to "make back" their investment).
+4. Drivers bear fixed costs (vehicle, insurance), creating a sunk cost fallacy (they continue
+   driving even at low wages to "make back" their investment).
 
 **But the gig economy also has benefits:**
+
 1. Flexible hours (attractive for students, carers, second-job holders).
 2. Lower barriers to entry (no taxi licence required in many jurisdictions).
 3. Lower prices for consumers.
 4. Algorithmic matching improves efficiency (reduces waiting times).
 
 **Policy options:**
-1. Reclassify gig workers as employees (giving them minimum wage and employment protections). This raises costs and may reduce employment.
-2. Create a third category of "dependent contractor" with some but not all protections (the UK Supreme Court's approach in the Uber BV v Aslam case).
-3. Set a minimum earnings floor (e.g., drivers must earn at least the minimum wage after costs). This protects workers without restricting flexibility.
 
-**Postscript:** In 2021, the UK Supreme Court ruled in Uber BV v Aslam that Uber drivers are "workers" (not employees or self-employed), entitling them to the national minimum wage, holiday pay, and pension contributions. This ruling effectively created the "dependent contractor" category for platform workers, balancing flexibility with protection. The government subsequently extended this principle through the Employment Rights Bill, which gives platform workers a right to request a contract reflecting their regular hours. This is a landmark case in labour market regulation that illustrates the difficulty of applying 20th-century employment categories to 21st-century business models.
+1. Reclassify gig workers as employees (giving them minimum wage and employment protections). This
+   raises costs and may reduce employment.
+2. Create a third category of "dependent contractor" with some but not all protections (the UK
+   Supreme Court's approach in the Uber BV v Aslam case).
+3. Set a minimum earnings floor (e.g., drivers must earn at least the minimum wage after costs).
+   This protects workers without restricting flexibility.
 
-**The broader trend:** Across developed economies, the growth of non-standard work (gig work, zero-hours contracts, agency work) has created a "precariat" -- workers with uncertain hours, income, and employment status. The ILO estimates that 2.4 billion workers globally are in informal or precarious employment. The challenge for policymakers is to protect these workers without destroying the flexibility that makes platform work attractive in the first place. Heavy regulation may drive platforms underground or offshore, leaving workers with no protection at all.
+**Postscript:** In 2021, the UK Supreme Court ruled in Uber BV v Aslam that Uber drivers are
+"workers" (not employees or self-employed), entitling them to the national minimum wage, holiday
+pay, and pension contributions. This ruling effectively created the "dependent contractor" category
+for platform workers, balancing flexibility with protection. The government subsequently extended
+this principle through the Employment Rights Bill, which gives platform workers a right to request a
+contract reflecting their regular hours. This is a landmark case in labour market regulation that
+illustrates the difficulty of applying 20th-century employment categories to 21st-century business
+models.
+
+**The broader trend:** Across developed economies, the growth of non-standard work (gig work,
+zero-hours contracts, agency work) has created a "precariat" -- workers with uncertain hours,
+income, and employment status. The ILO estimates that 2.4 billion workers globally are in informal
+or precarious employment. The challenge for policymakers is to protect these workers without
+destroying the flexibility that makes platform work attractive in the first place. Heavy regulation
+may drive platforms underground or offshore, leaving workers with no protection at all.
 
 ## Common Pitfalls
 

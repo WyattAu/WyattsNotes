@@ -1,6 +1,8 @@
 ---
 title: Ecology
-description: "IB Biology — species, communities, ecosystems, energy flow, nutrient cycles, climate change, evolution, natural selection, and classification."
+description:
+  'IB Biology — species, communities, ecosystems, energy flow, nutrient cycles, climate change,
+  evolution, natural selection, and classification.'
 slug: ecology
 ---
 
@@ -24,12 +26,12 @@ Availability).
 ### Autotrophs and Heterotrophs
 
 - **Autotrophs** (producers): organisms that synthesise organic compounds from inorganic sources.
- Photoautotrophs (plants, algae, cyanobacteria) use light energy; chemoautotrophs (some bacteria)
- use chemical energy.
+  Photoautotrophs (plants, algae, cyanobacteria) use light energy; chemoautotrophs (some bacteria)
+  use chemical energy.
 - **Heterotrophs** (consumers): organisms that obtain organic molecules by consuming other
- organisms. Includes herbivores, carnivores, omnivores, and decomposers.
+  organisms. Includes herbivores, carnivores, omnivores, and decomposers.
 - **Decomposers** (saprotrophs): bacteria and fungi that break down dead organic matter, releasing
- inorganic nutrients back into the environment (mineralisation).
+  inorganic nutrients back into the environment (mineralisation).
 
 ### Trophic Levels and Food Chains
 
@@ -62,9 +64,9 @@ Actual range occupied, limited by competition and other biotic factors.
 ### Laws of Thermodynamics Applied to Ecosystems
 
 1. **First law**: energy cannot be created or destroyed, only transformed. Solar energy is converted
- to chemical energy in photosynthesis.
+   to chemical energy in photosynthesis.
 2. **Second law**: in every energy transfer, some energy is lost as heat (unavailable for further
- work). This limits the number of trophic levels.
+   work). This limits the number of trophic levels.
 
 ### Gross and Net Primary Productivity
 
@@ -83,8 +85,7 @@ Available to herbivores (primary consumers).
 
 ### Ecological Efficiency
 
-Energy transfer between trophic levels is only **$10\%$--$20\%$**. The remaining energy is
-Lost as:
+Energy transfer between trophic levels is only **$10\%$--$20\%$**. The remaining energy is Lost as:
 
 - Heat from metabolic processes (respiration).
 - Undigested material in faeces.
@@ -111,20 +112,19 @@ Carbon circulates between the atmosphere, biosphere, hydrosphere, and lithospher
 
 **Key processes**:
 
-| Process | Description |
+| Process                  | Description                                                                                                             |
 | ------------------------ | ----------------------------------------------------------------------------------------------------------------------- |
-| **Photosynthesis** | Plants, algae, and cyanobacteria convert $\mathrm{CO}_2$ into organic compounds (carbohydrates). |
-| **Cellular respiration** | Organisms release $\mathrm{CO}_2$ by oxidising organic molecules. |
-| **Combustion** | Burning fossil fuels and biomass releases $\mathrm{CO}_2$. |
-| **Decomposition** | Decomposers break down organic matter, releasing $\mathrm{CO}_2$. |
-| **Fossilisation** | Organic matter is buried and slowly converted to fossil fuels (coal, oil, natural gas) over millions of years. |
-| **Ocean absorption** | $\mathrm{CO}_2$ dissolves in seawater; marine organisms incorporate carbon into shells ($\mathrm{CaCO}_3$) and tissues. |
+| **Photosynthesis**       | Plants, algae, and cyanobacteria convert $\mathrm{CO}_2$ into organic compounds (carbohydrates).                        |
+| **Cellular respiration** | Organisms release $\mathrm{CO}_2$ by oxidising organic molecules.                                                       |
+| **Combustion**           | Burning fossil fuels and biomass releases $\mathrm{CO}_2$.                                                              |
+| **Decomposition**        | Decomposers break down organic matter, releasing $\mathrm{CO}_2$.                                                       |
+| **Fossilisation**        | Organic matter is buried and slowly converted to fossil fuels (coal, oil, natural gas) over millions of years.          |
+| **Ocean absorption**     | $\mathrm{CO}_2$ dissolves in seawater; marine organisms incorporate carbon into shells ($\mathrm{CaCO}_3$) and tissues. |
 
 **Carbon reservoirs**:
 
 - Atmosphere: $\approx 800$ gigatonnes of carbon (Gt C), primarily as $\mathrm{CO}_2$.
-- Oceans: $\approx 38000$ Gt C (dissolved $\mathrm{CO}_2$Bicarbonate, carbonate, marine
- organisms).
+- Oceans: $\approx 38000$ Gt C (dissolved $\mathrm{CO}_2$Bicarbonate, carbonate, marine organisms).
 - Fossil fuels: $\approx 4000$--$10000$ Gt C.
 - Terrestrial biosphere: $\approx 2000$ Gt C (plant biomass, soil organic matter).
 
@@ -133,13 +133,13 @@ Carbon circulates between the atmosphere, biosphere, hydrosphere, and lithospher
 Nitrogen ($\mathrm{N}_2$) makes up $78\%$ of the atmosphere but is chemically inert and unavailable
 To most organisms. The nitrogen cycle converts $\mathrm{N}_2$ into biologically usable forms.
 
-| Process | Description |
+| Process               | Description                                                                                                                                                                                                    |
 | --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Nitrogen fixation** | Conversion of $\mathrm{N}_2$ to $\mathrm{NH}_3$ (ammonia). Performed by nitrogen-fixing bacteria (e.g., _Rhizobium_ in root nodules of legumes; _Azotobacter_ free-living in soil) and lightning. |
-| **Nitrification** | Conversion of $\mathrm{NH}_3$ / $\mathrm{NH}_4^+$ to $\mathrm{NO}_2^-$ (nitrite) by _Nitrosomonas_, then to $\mathrm{NO}_3^-$ (nitrate) by _Nitrobacter_. |
-| **Assimilation** | Plants absorb $\mathrm{NO}_3^-$ and $\mathrm{NH}_4^+$ through roots; animals obtain nitrogen by eating plants or other animals. |
-| **Ammonification** | Decomposers convert organic nitrogen (proteins, nucleic acids) in dead matter and waste into $\mathrm{NH}_3$. |
-| **Denitrification** | Conversion of $\mathrm{NO}_3^-$ back to $\mathrm{N}_2$ by denitrifying bacteria (e.g., _Pseudomonas denitrificans_), returning nitrogen to the atmosphere. Occurs in anaerobic conditions (waterlogged soils). |
+| **Nitrogen fixation** | Conversion of $\mathrm{N}_2$ to $\mathrm{NH}_3$ (ammonia). Performed by nitrogen-fixing bacteria (e.g., _Rhizobium_ in root nodules of legumes; _Azotobacter_ free-living in soil) and lightning.              |
+| **Nitrification**     | Conversion of $\mathrm{NH}_3$ / $\mathrm{NH}_4^+$ to $\mathrm{NO}_2^-$ (nitrite) by _Nitrosomonas_, then to $\mathrm{NO}_3^-$ (nitrate) by _Nitrobacter_.                                                      |
+| **Assimilation**      | Plants absorb $\mathrm{NO}_3^-$ and $\mathrm{NH}_4^+$ through roots; animals obtain nitrogen by eating plants or other animals.                                                                                |
+| **Ammonification**    | Decomposers convert organic nitrogen (proteins, nucleic acids) in dead matter and waste into $\mathrm{NH}_3$.                                                                                                  |
+| **Denitrification**   | Conversion of $\mathrm{NO}_3^-$ back to $\mathrm{N}_2$ by denitrifying bacteria (e.g., _Pseudomonas denitrificans_), returning nitrogen to the atmosphere. Occurs in anaerobic conditions (waterlogged soils). |
 
 ---
 
@@ -153,26 +153,26 @@ Radiation, warming the planet.
 
 **Key greenhouse gases**:
 
-| Gas | Sources | Relative contribution |
+| Gas                                      | Sources                                                             | Relative contribution |
 | ---------------------------------------- | ------------------------------------------------------------------- | --------------------- |
-| Carbon dioxide ($\mathrm{CO}_2$) | Fossil fuel combustion, deforestation, cement production | Largest |
-| Methane ($\mathrm{CH}_4$) | Agriculture (rice paddies, livestock), landfills, natural gas leaks | Second largest |
-| Nitrous oxide ($\mathrm{N}_2\mathrm{O}$) | Agricultural fertilisers, industrial processes | Third |
-| Chlorofluorocarbons (CFCs) | Refrigerants, aerosols (now largely banned by Montreal Protocol) | Potent but declining |
+| Carbon dioxide ($\mathrm{CO}_2$)         | Fossil fuel combustion, deforestation, cement production            | Largest               |
+| Methane ($\mathrm{CH}_4$)                | Agriculture (rice paddies, livestock), landfills, natural gas leaks | Second largest        |
+| Nitrous oxide ($\mathrm{N}_2\mathrm{O}$) | Agricultural fertilisers, industrial processes                      | Third                 |
+| Chlorofluorocarbons (CFCs)               | Refrigerants, aerosols (now largely banned by Montreal Protocol)    | Potent but declining  |
 
 ### Evidence for Climate Change
 
 - **Direct atmospheric measurements**: $\mathrm{CO}_2$ concentration at Mauna Loa Observatory has
- risen from $\approx 315\;\mathrm{ppm}$ (1958) to over $420\;\mathrm{ppm}$ (2024).
+  risen from $\approx 315\;\mathrm{ppm}$ (1958) to over $420\;\mathrm{ppm}$ (2024).
 - **Ice core data**: trapped air bubbles in Antarctic ice show $\mathrm{CO}_2$ and temperature over
- the past $800000$ years; current levels are unprecedented.
+  the past $800000$ years; current levels are unprecedented.
 - **Global temperature records**: average global temperature has risen by
- $\approx 1.1^\circ\mathrm{C}$ since pre-industrial times.
+  $\approx 1.1^\circ\mathrm{C}$ since pre-industrial times.
 - **Sea-level rise**: thermal expansion of seawater and melting of ice sheets contribute
- approximately $3.6\;\mathrm{mm/year}$.
+  approximately $3.6\;\mathrm{mm/year}$.
 - **Ocean acidification**: dissolved $\mathrm{CO}_2$ forms carbonic acid, decreasing ocean pH (from
- $\approx 8.2$ to $\approx 8.1$ since pre-industrial times), threatening calcifying organisms
- (corals, shellfish).
+  $\approx 8.2$ to $\approx 8.1$ since pre-industrial times), threatening calcifying organisms
+  (corals, shellfish).
 
 ### Consequences
 
@@ -188,35 +188,35 @@ Radiation, warming the planet.
 
 ### Evidence for Evolution
 
-| Evidence Type | Description |
+| Evidence Type              | Description                                                                                                                                                                                                   |
 | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Fossil record** | Fossils show gradual changes in organisms over geological time; transitional forms (e.g., _Archaeopteryx_ between dinosaurs and birds). |
-| **Comparative anatomy** | **Homologous structures**: similar anatomy due to common ancestry (e.g., pentadactyl limb in vertebrates). **Analogous structures**: similar function but different origin (e.g., wings of birds vs insects). |
-| **Comparative embryology** | Early embryonic stages of vertebrates are remarkably similar (e.g., pharyngeal pouches, post-anal tail). |
-| **Molecular evidence** | DNA and protein sequence comparisons; closely related species share more DNA sequences (e.g., humans and chimpanzees share $\approx 98.8\%$ of DNA). |
-| **Biogeography** | Species on islands resemble those on the nearest mainland (e.g., Darwin's finches on the Galapagos). |
+| **Fossil record**          | Fossils show gradual changes in organisms over geological time; transitional forms (e.g., _Archaeopteryx_ between dinosaurs and birds).                                                                       |
+| **Comparative anatomy**    | **Homologous structures**: similar anatomy due to common ancestry (e.g., pentadactyl limb in vertebrates). **Analogous structures**: similar function but different origin (e.g., wings of birds vs insects). |
+| **Comparative embryology** | Early embryonic stages of vertebrates are remarkably similar (e.g., pharyngeal pouches, post-anal tail).                                                                                                      |
+| **Molecular evidence**     | DNA and protein sequence comparisons; closely related species share more DNA sequences (e.g., humans and chimpanzees share $\approx 98.8\%$ of DNA).                                                          |
+| **Biogeography**           | Species on islands resemble those on the nearest mainland (e.g., Darwin's finches on the Galapagos).                                                                                                          |
 
 ### Natural Selection
 
 Darwin's theory of natural selection (1859):
 
 1. **Variation**: individuals within a population show phenotypic variation, much of which is
- heritable (genetic).
+   heritable (genetic).
 2. **Competition**: resources are limited; organisms compete for survival and reproduction.
 3. **Differential survival and reproduction**: individuals with advantageous traits (adaptations)
- are more likely to survive and reproduce, passing on their alleles to the next generation.
+   are more likely to survive and reproduce, passing on their alleles to the next generation.
 4. **Change in allele frequency**: over generations, the frequency of advantageous alleles increases
- in the population. This is **evolution**.
+   in the population. This is **evolution**.
 
 **Definition.** **Evolution** is the change in allele frequency in a population over time.
 
 ### Types of Selection
 
-| Type | Effect on distribution |
+| Type                      | Effect on distribution                                                                                                                       |
 | ------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Directional selection** | Favours one extreme phenotype; the distribution shifts in that direction (e.g., antibiotic resistance in bacteria). |
-| **Stabilising selection** | Favours the intermediate phenotype; reduces variation (e.g., human birth weight). |
-| **Disruptive selection** | Favours both extremes over the intermediate; can lead to speciation (e.g., beak size in finches on islands with only large and small seeds). |
+| **Directional selection** | Favours one extreme phenotype; the distribution shifts in that direction (e.g., antibiotic resistance in bacteria).                          |
+| **Stabilising selection** | Favours the intermediate phenotype; reduces variation (e.g., human birth weight).                                                            |
+| **Disruptive selection**  | Favours both extremes over the intermediate; can lead to speciation (e.g., beak size in finches on islands with only large and small seeds). |
 
 ### Speciation
 
@@ -224,17 +224,17 @@ Darwin's theory of natural selection (1859):
 Isolation.
 
 - **Allopatric speciation**: populations are geographically separated; different selection pressures
- and genetic drift lead to reproductive isolation (most common mechanism).
+  and genetic drift lead to reproductive isolation (most common mechanism).
 - **Sympatric speciation**: new species arise without geographic separation (e.g., polyploidy in
- plants, which creates instant reproductive isolation due to incompatible chromosome numbers).
+  plants, which creates instant reproductive isolation due to incompatible chromosome numbers).
 
 **Reproductive isolating mechanisms**:
 
 - **Pre-zygotic**: temporal isolation (different breeding seasons), behavioural isolation (different
- courtship rituals), mechanical isolation (incompatible reproductive structures), ecological
- isolation (different habitats).
+  courtship rituals), mechanical isolation (incompatible reproductive structures), ecological
+  isolation (different habitats).
 - **Post-zygotic**: hybrid inviability (offspring do not survive), hybrid sterility (offspring are
- sterile, e.g., mules), hybrid breakdown (second-generation hybrids have reduced fitness).
+  sterile, e.g., mules), hybrid breakdown (second-generation hybrids have reduced fitness).
 
 ### Hardy-Weinberg Equilibrium
 
@@ -276,11 +276,11 @@ Sapiens_).
 
 ### Three Domains
 
-| Domain | Cell type | Cell wall | Genetic material | Example |
+| Domain   | Cell type   | Cell wall                             | Genetic material              | Example                          |
 | -------- | ----------- | ------------------------------------- | ----------------------------- | -------------------------------- |
-| Bacteria | Prokaryotic | Peptidoglycan | Circular DNA | _E. Coli_ |
-| Archaea | Prokaryotic | Pseudopeptidoglycan | Circular DNA | _Halobacterium_ |
-| Eukarya | Eukaryotic | Varies (cellulose, chitin, or absent) | Linear chromosomes in nucleus | Animals, plants, fungi, protists |
+| Bacteria | Prokaryotic | Peptidoglycan                         | Circular DNA                  | _E. Coli_                        |
+| Archaea  | Prokaryotic | Pseudopeptidoglycan                   | Circular DNA                  | _Halobacterium_                  |
+| Eukarya  | Eukaryotic  | Varies (cellulose, chitin, or absent) | Linear chromosomes in nucleus | Animals, plants, fungi, protists |
 
 ### Dichotomous Keys
 
@@ -293,16 +293,16 @@ One of two alternatives based on observable characteristics.
 ## Common Pitfalls
 
 - Confusing **niche** and **habitat**: habitat is the physical place; niche is the organism's role
- within that place.
+  within that place.
 - Stating that energy is "recycled" in ecosystems: energy flows through and is ultimately lost as
- heat; only nutrients are recycled.
+  heat; only nutrients are recycled.
 - Assuming the greenhouse effect is entirely negative: the natural greenhouse effect keeps Earth
- habitable ($\approx 33^\circ\mathrm{C}$ warmer than it would otherwise be); the concern is the
- **enhanced** greenhouse effect due to anthropogenic emissions.
+  habitable ($\approx 33^\circ\mathrm{C}$ warmer than it would otherwise be); the concern is the
+  **enhanced** greenhouse effect due to anthropogenic emissions.
 - Equating **evolution** with "progress": evolution is a change in allele frequency; it has no
- direction or goal.
+  direction or goal.
 - Misapplying Hardy-Weinberg: the equilibrium only holds under ideal conditions never met in nature;
- it serves as a null model to detect evolutionary forces.
+  it serves as a null model to detect evolutionary forces.
 
 ---
 
@@ -423,11 +423,11 @@ Within Eukarya, the kingdoms are:
 
 - **Animalia**: multicellular, heterotrophic, no cell walls --- excluded.
 - **Plantae**: multicellular, autotrophic, cellulose cell walls --- excluded (the organism is
- unicellular).
+  unicellular).
 - **Fungi**: heterotrophic, chitin cell walls --- excluded (the organism is photosynthetic and has
- cellulose walls).
+  cellulose walls).
 - **Protista**: diverse kingdom containing unicellular eukaryotes. Photosynthetic protists with
- cellulose cell walls include algae (e.g., _Chlorella_, _Chlamydomonas_).
+  cellulose cell walls include algae (e.g., _Chlorella_, _Chlamydomonas_).
 
 The organism most likely belongs to **Kingdom Protista**, specifically a photosynthetic alga. Note
 That some classification systems place algae within Plantae, but under the traditional IB
@@ -444,14 +444,13 @@ Convention, unicellular photosynthetic eukaryotes are classified as protists.
 In a population of $5000$ peppered moths, the allele for dark colouration ($D$) is dominant over the
 Light allele ($d$). The current genotype frequencies are: $DD = 0.36$$Dd = 0.48$$dd = 0.16$.
 Industrial pollution darkens tree bark, giving dark moths a survival advantage. The relative fitness
-Values are: $w_{DD} = 1.0$$w_{Dd} = 1.0$$w_{dd} = 0.5$. Calculate the allele frequencies after
-One generation of selection.
+Values are: $w_{DD} = 1.0$$w_{Dd} = 1.0$$w_{dd} = 0.5$. Calculate the allele frequencies after One
+generation of selection.
 
 <details>
 <summary>Solution</summary>
 
-**Step 1: Initial allele frequencies**.
-$p = 0.36 + \frac{1}{2}(0.48) = 0.36 + 0.24 = 0.60$
+**Step 1: Initial allele frequencies**. $p = 0.36 + \frac{1}{2}(0.48) = 0.36 + 0.24 = 0.60$
 $q = 0.16 + \frac{1}{2}(0.48) = 0.16 + 0.24 = 0.40$
 
 **Step 2: Mean fitness of the population**.
@@ -462,8 +461,7 @@ $f(DD) = \frac{p^2 w_{DD}}{\bar{w}} = \frac{0.36}{0.92} \approx 0.391$
 $f(Dd) = \frac{2pq \cdot w_{Dd}}{\bar{w}} = \frac{0.48}{0.92} \approx 0.522$
 $f(dd) = \frac{q^2 w_{dd}}{\bar{w}} = \frac{0.08}{0.92} \approx 0.087$
 
-**Step 4: New allele frequencies**.
-$p' = 0.391 + \frac{1}{2}(0.522) = 0.391 + 0.261 = 0.652$
+**Step 4: New allele frequencies**. $p' = 0.391 + \frac{1}{2}(0.522) = 0.391 + 0.261 = 0.652$
 $q' = 0.087 + \frac{1}{2}(0.522) = 0.087 + 0.261 = 0.348$
 
 The frequency of the dark allele ($D$) increased from $0.60$ to $0.652$ in one generation due to
@@ -483,18 +481,17 @@ Hardy-Weinberg equilibrium.
 <details>
 <summary>Solution</summary>
 
-**Expected values** (total $= 1000$; ratio $1:2:1$):
-Red ($RR$): $250$Pink ($Rr$): $500$White ($rr$): $250$
+**Expected values** (total $= 1000$; ratio $1:2:1$): Red ($RR$): $250$Pink ($Rr$): $500$White
+($rr$): $250$
 
 **Chi-squared calculation**:
 $\chi^2 = \frac{(710 - 250)^2}{250} + \frac{(260 - 500)^2}{500} + \frac{(30 - 250)^2}{250}$
 $= \frac{460^2}{250} + \frac{(-240)^2}{500} + \frac{(-220)^2}{250}$
-$= \frac{211600}{250} + \frac{57600}{500} + \frac{48400}{250}$
-$= 846.4 + 115.2 + 193.6 = 1155.2$
+$= \frac{211600}{250} + \frac{57600}{500} + \frac{48400}{250}$ $= 846.4 + 115.2 + 193.6 = 1155.2$
 
 **Conclusion**: $\chi^2 = 1155.2$ far exceeds the critical value of $5.99$. We reject the null
-Hypothesis. The population is **not** in Hardy-Weinberg equilibrium. The large excess of red
-Flowers and deficiency of white flowers suggest strong selection against the white phenotype (e.g.,
+Hypothesis. The population is **not** in Hardy-Weinberg equilibrium. The large excess of red Flowers
+and deficiency of white flowers suggest strong selection against the white phenotype (e.g.,
 Herbivores preferentially consuming white flowers, or pollinator preference for red).
 
 </details>
@@ -502,16 +499,18 @@ Herbivores preferentially consuming white flowers, or pollinator preference for 
 **Worked Example: Calculating Ecological Footprint from NPP Data**
 
 A $10\;\mathrm{km}^2$ nature reserve has an average NPP of $1500\;\mathrm{g\;C/m^2/year}$. The
-Reserve supports a population of $200$ deer, each consuming an average of $3.5\;\mathrm{kg}$ of plant
-Biomass per day (dry weight, assume $50\%$ carbon by mass). Calculate the fraction of annual NPP
-Consumed by the deer population.
+Reserve supports a population of $200$ deer, each consuming an average of $3.5\;\mathrm{kg}$ of
+plant Biomass per day (dry weight, assume $50\%$ carbon by mass). Calculate the fraction of annual
+NPP Consumed by the deer population.
 
 <details>
 <summary>Solution</summary>
 
-**Total annual NPP**: $1500\;\mathrm{g\;C/m^2/year} \times 10^7\;\mathrm{m^2} = 1.5 \times 10^{10}\;\mathrm{g\;C/year} = 15000\;\mathrm{t\;C/year}$
+**Total annual NPP**:
+$1500\;\mathrm{g\;C/m^2/year} \times 10^7\;\mathrm{m^2} = 1.5 \times 10^{10}\;\mathrm{g\;C/year} = 15000\;\mathrm{t\;C/year}$
 
-**Total annual deer consumption** (in carbon): $200 \times 3.5\;\mathrm{kg/day} \times 365\;\mathrm{days/year} \times 0.50\;\mathrm{(C fraction)}$
+**Total annual deer consumption** (in carbon):
+$200 \times 3.5\;\mathrm{kg/day} \times 365\;\mathrm{days/year} \times 0.50\;\mathrm{(C fraction)}$
 $= 200 \times 3.5 \times 365 \times 0.5 = 127750\;\mathrm{kg\;C/year} = 127.75\;\mathrm{t\;C/year}$
 
 **Fraction of NPP consumed**: $\frac{127.75}{15000} \approx 0.0085$ or $0.85\%$
@@ -524,21 +523,21 @@ For other herbivores, decomposition losses, or the fact that only a portion of N
 
 **Worked Example: Interpreting a Predator-Prey Graph**
 
-The following data show the population sizes of a predator (lynx) and its prey (hare) over a $10$-year
-Period in a $500\;\mathrm{km}^2$ boreal forest:
+The following data show the population sizes of a predator (lynx) and its prey (hare) over a
+$10$-year Period in a $500\;\mathrm{km}^2$ boreal forest:
 
 | Year | Hare population (thousands) | Lynx population |
 | ---- | --------------------------- | --------------- |
-| 1 | 40 | 25 |
-| 2 | 62 | 35 |
-| 3 | 85 | 55 |
-| 4 | 60 | 65 |
-| 5 | 30 | 45 |
-| 6 | 18 | 20 |
-| 7 | 22 | 12 |
-| 8 | 45 | 15 |
-| 9 | 78 | 40 |
-| 10 | 90 | 60 |
+| 1    | 40                          | 25              |
+| 2    | 62                          | 35              |
+| 3    | 85                          | 55              |
+| 4    | 60                          | 65              |
+| 5    | 30                          | 45              |
+| 6    | 18                          | 20              |
+| 7    | 22                          | 12              |
+| 8    | 45                          | 15              |
+| 9    | 78                          | 40              |
+| 10   | 90                          | 60              |
 
 Describe the relationship between the two populations and explain the likely mechanism causing the
 Oscillations.
@@ -550,18 +549,19 @@ The populations show **cyclic oscillations** with the predator population peakin
 Prey population. This lag is the signature feature of a Lotka-Volterra predator-prey dynamic.
 
 **Mechanism**:
+
 1. When hare numbers are high (Year 1--3), food is abundant for lynx, which reproduce successfully.
- Lynx numbers increase.
+   Lynx numbers increase.
 2. Increased lynx predation drives the hare population down (Year 3--6).
 3. With fewer hares, lynx face food scarcity; starvation and reduced reproduction cause lynx numbers
- to decline (Year 4--7).
+   to decline (Year 4--7).
 4. Reduced predation pressure allows the hare population to recover (Year 6--8), and the cycle
- repeats.
+   repeats.
 
-The period of oscillation is approximately $8$--$9$ years, consistent with the classic
-Hudson's Bay Company fur trapping records for Canadian lynx and snowshoe hares. Additional factors
-Such as hare density-dependent food limitation (they eat themselves out of food) also contribute to
-The hare cycles independently of predation.
+The period of oscillation is approximately $8$--$9$ years, consistent with the classic Hudson's Bay
+Company fur trapping records for Canadian lynx and snowshoe hares. Additional factors Such as hare
+density-dependent food limitation (they eat themselves out of food) also contribute to The hare
+cycles independently of predation.
 
 </details>
 
@@ -570,24 +570,24 @@ The hare cycles independently of predation.
 ## Common Pitfalls (Expanded)
 
 - **Confusing niche and habitat**: habitat is the physical place where an organism lives; niche is
- the organism's role within that place (how it obtains resources, interacts with other species,
- and contributes to energy flow).
-- **Stating that energy is "recycled" in ecosystems**: energy flows through and is ultimately lost as
- heat at every trophic transfer; only nutrients (carbon, nitrogen, phosphorus) are recycled via
- biogeochemical cycles.
+  the organism's role within that place (how it obtains resources, interacts with other species, and
+  contributes to energy flow).
+- **Stating that energy is "recycled" in ecosystems**: energy flows through and is ultimately lost
+  as heat at every trophic transfer; only nutrients (carbon, nitrogen, phosphorus) are recycled via
+  biogeochemical cycles.
 - **Assuming the greenhouse effect is entirely negative**: the natural greenhouse effect keeps Earth
- approximately $33^\circ\mathrm{C}$ warmer than it would otherwise be, making it habitable. The
- concern is the enhanced greenhouse effect from anthropogenic emissions.
+  approximately $33^\circ\mathrm{C}$ warmer than it would otherwise be, making it habitable. The
+  concern is the enhanced greenhouse effect from anthropogenic emissions.
 - **Equating evolution with "progress"**: evolution is a change in allele frequency with no
- direction or goal. A trait is "better" only in the context of the current environment.
+  direction or goal. A trait is "better" only in the context of the current environment.
 - **Misapplying Hardy-Weinberg**: the equilibrium only holds under ideal conditions (no mutation, no
- migration, random mating, infinite population, no selection). It serves as a null model to detect
- evolutionary forces, not as a description of real populations.
+  migration, random mating, infinite population, no selection). It serves as a null model to detect
+  evolutionary forces, not as a description of real populations.
 - **Confusing GPP and NPP**: GPP is total photosynthetic output; NPP is what remains after plant
- respiration. NPP is the energy available to consumers.
+  respiration. NPP is the energy available to consumers.
 - **Assuming all nitrogen is available to plants**: atmospheric $\mathrm{N}_2$ is inert and
- unavailable. Plants can only use fixed forms: $\mathrm{NH}_4^+$$\mathrm{NO}_2^-$And
- $\mathrm{NO}_3^-$.
+  unavailable. Plants can only use fixed forms: $\mathrm{NH}_4^+$$\mathrm{NO}_2^-$And
+  $\mathrm{NO}_3^-$.
 
 ---
 
@@ -597,8 +597,8 @@ The hare cycles independently of predation.
 <summary>Problem 1: Data Analysis -- Carbon Cycle and Deforestation</summary>
 
 A tropical rainforest has an average above-ground biomass of $200\;\mathrm{t\;C/ha}$ and an NPP of
-$1800\;\mathrm{g\;C/m^2/year}$. A logging company clears $500\;\mathrm{ha}$ of forest. Assume
-$60\%$ of the above-ground carbon is released as $\mathrm{CO}_2$ immediately (through burning and
+$1800\;\mathrm{g\;C/m^2/year}$. A logging company clears $500\;\mathrm{ha}$ of forest. Assume $60\%$
+of the above-ground carbon is released as $\mathrm{CO}_2$ immediately (through burning and
 Decomposition), and the remaining $40\%$ is stored in timber products. (a) Calculate the immediate
 $\mathrm{CO}_2$ release in tonnes. (b) Calculate the annual loss of $\mathrm{CO}_2$ uptake capacity.
 (c) Discuss two long-term consequences for the local carbon cycle.
@@ -611,8 +611,8 @@ $\mathrm{CO}_2$ release in tonnes. (b) Calculate the annual loss of $\mathrm{CO}
 A river changes course over geological time, splitting a population of $50000$ beetles into two
 Isolated populations. The western population lives in a dry grassland; the eastern population
 Inhabits a moist forest. Over $50000$ generations, the populations diverge. Describe the likely
-Mechanisms (natural selection, genetic drift, mutation) driving divergence in each habitat.
-Explain what additional evidence would be needed to confirm that the two populations are now separate
+Mechanisms (natural selection, genetic drift, mutation) driving divergence in each habitat. Explain
+what additional evidence would be needed to confirm that the two populations are now separate
 Species.
 
 </details>
@@ -620,9 +620,9 @@ Species.
 <details>
 <summary>Problem 3: Quantitative -- Population Growth</summary>
 
-A population of bacteria follows exponential growth with a per capita growth rate of $r = 0.8$
-Per hour. Starting from an initial population of $500$ cells: (a) Calculate the population size
-After $6$ hours. (b) Calculate the doubling time. (c) Explain why exponential growth cannot continue
+A population of bacteria follows exponential growth with a per capita growth rate of $r = 0.8$ Per
+hour. Starting from an initial population of $500$ cells: (a) Calculate the population size After
+$6$ hours. (b) Calculate the doubling time. (c) Explain why exponential growth cannot continue
 Indefinitely and describe the shape of the resulting logistic growth curve.
 
 </details>
@@ -653,11 +653,11 @@ Evidence provide a more robust argument than any single type alone.
 <summary>Problem 6: Quantitative -- Hardy-Weinberg and Genetic Drift</summary>
 
 A small island population of $50$ lizards has allele frequencies for a colour gene: $p = 0.80$
-(allele $G$Green) and $q = 0.20$ (allele $g$Grey). A storm kills $40$ lizards randomly,
-Leaving $10$ survivors. If all survivors are green, what are the new allele frequencies? Explain why
-Genetic drift has a stronger effect in small populations, and calculate the probability that the $g$
-Allele is completely lost in this bottleneck event (assuming the $40$ deaths were truly random with
-Respect to genotype).
+(allele $G$Green) and $q = 0.20$ (allele $g$Grey). A storm kills $40$ lizards randomly, Leaving $10$
+survivors. If all survivors are green, what are the new allele frequencies? Explain why Genetic
+drift has a stronger effect in small populations, and calculate the probability that the $g$ Allele
+is completely lost in this bottleneck event (assuming the $40$ deaths were truly random with Respect
+to genotype).
 
 </details>
 
@@ -676,17 +676,17 @@ Cascading ecological consequence for the broader marine food web.
 
 A grassland ecosystem has the following biomass data at each trophic level:
 
-| Trophic level | Biomass ($\mathrm{kJ/m^2}$) |
-| ------------------------ | --------------------------- |
-| Producers (grass) | 24000 |
-| Primary consumers (insects) | 2400 |
-| Secondary consumers (frogs) | 240 |
-| Tertiary consumers (snakes) | 24 |
+| Trophic level               | Biomass ($\mathrm{kJ/m^2}$) |
+| --------------------------- | --------------------------- |
+| Producers (grass)           | 24000                       |
+| Primary consumers (insects) | 2400                        |
+| Secondary consumers (frogs) | 240                         |
+| Tertiary consumers (snakes) | 24                          |
 
 (a) Calculate the ecological efficiency between each pair of adjacent trophic levels. (b) Explain
-Why the biomass pyramid is upright in this ecosystem but can be inverted in aquatic systems. (c)
-If the producer biomass decreases by $50\%$ due to drought, predict the impact on the snake
-Population and explain your reasoning.
+Why the biomass pyramid is upright in this ecosystem but can be inverted in aquatic systems. (c) If
+the producer biomass decreases by $50\%$ due to drought, predict the impact on the snake Population
+and explain your reasoning.
 
 </details>
 
@@ -738,11 +738,11 @@ The logistic curve is sigmoidal (S-shaped).
 
 Survivorship curves plot the number or proportion of individuals surviving to each age:
 
-| Type | Shape | Description | Example |
-| ---- | ----- | --------------------------------------------------------------------------- | -------------------------------------------- |
-| **I** | Convex (drops steeply only at old age) | Low mortality during early and middle life; most individuals survive to old age. | Humans in developed countries; large mammals. |
-| **II** | Straight (constant mortality rate) | Constant mortality rate at all ages. | Many bird species; some reptiles. |
-| **III** | Concave (high early mortality) | High mortality in early life; those that survive to adulthood have lower mortality. | Fish; invertebrates; many plants (seedling mortality). |
+| Type    | Shape                                  | Description                                                                         | Example                                                |
+| ------- | -------------------------------------- | ----------------------------------------------------------------------------------- | ------------------------------------------------------ |
+| **I**   | Convex (drops steeply only at old age) | Low mortality during early and middle life; most individuals survive to old age.    | Humans in developed countries; large mammals.          |
+| **II**  | Straight (constant mortality rate)     | Constant mortality rate at all ages.                                                | Many bird species; some reptiles.                      |
+| **III** | Concave (high early mortality)         | High mortality in early life; those that survive to adulthood have lower mortality. | Fish; invertebrates; many plants (seedling mortality). |
 
 ### Succession
 
@@ -752,13 +752,13 @@ Glacial moraine).
 **Stages (sand dune example):**
 
 1. **Pioneer community**: lichens and algae colonise bare rock/sand. Lichens secrete acids that
- weather rock, beginning soil formation.
+   weather rock, beginning soil formation.
 2. **Grass and herb stage**: grasses and herbs colonise the thin soil. Their roots stabilise the
- substrate and add organic matter.
+   substrate and add organic matter.
 3. **Shrub stage**: shrubs replace grasses as soil deepens.
 4. **Tree stage**: fast-growing trees (e.g., birch, pine) establish.
-5. **Climax community**: slow-growing, shade-tolerant trees (e.g., oak, beech) outcompete
- pioneers. The ecosystem reaches a relatively stable equilibrium.
+5. **Climax community**: slow-growing, shade-tolerant trees (e.g., oak, beech) outcompete pioneers.
+   The ecosystem reaches a relatively stable equilibrium.
 
 **Secondary succession**: recolonisation of a disturbed habitat where soil remains (e.g., after
 Fire, deforestation, abandoned farmland). Proceeds faster than primary succession because soil and
@@ -772,24 +772,25 @@ Abundance. Its removal causes significant changes in community structure.
 **Examples:**
 
 - **Sea otters** (keystone predator): prey on sea urchins. Without otters, sea urchin populations
- explode, overgrazing kelp forests, destroying the habitat for many species.
+  explode, overgrazing kelp forests, destroying the habitat for many species.
 - **Beavers** (ecosystem engineer): dam-building creates wetland habitats, fundamentally altering
- hydrology and creating niches for many species.
+  hydrology and creating niches for many species.
 - **Fig wasps** (mutualist): pollinate fig trees; the fig-wasp mutualism is essential for the
- survival of both species and many tropical frugivores that depend on figs.
+  survival of both species and many tropical frugivores that depend on figs.
 
 ### Ecological Niches and Competitive Exclusion
 
-**Fundamental niche**: the full range of environmental conditions a species can theoretically occupy.
+**Fundamental niche**: the full range of environmental conditions a species can theoretically
+occupy.
 
 **Realised niche**: the actual range occupied, limited by biotic interactions (competition,
 Predation, parasitism) and abiotic factors.
 
-**Competitive exclusion principle (Gause's principle)**: two species cannot coexist indefinitely
-If they occupy exactly the same niche; one will outcompete the other.
+**Competitive exclusion principle (Gause's principle)**: two species cannot coexist indefinitely If
+they occupy exactly the same niche; one will outcompete the other.
 
-**Resource partitioning**: coexisting species divide the available resources (e.g., different feeding
-Times, different food sizes, different vertical stratification) to reduce competition.
+**Resource partitioning**: coexisting species divide the available resources (e.g., different
+feeding Times, different food sizes, different vertical stratification) to reduce competition.
 
 ---
 
@@ -801,14 +802,13 @@ Unlike carbon and nitrogen, phosphorus has **no significant gaseous phase**. The
 Sedimentary:
 
 1. **Weathering**: phosphate minerals in rocks are slowly released by weathering
- ($\mathrm{PO}_4^{3-}$).
+   ($\mathrm{PO}_4^{3-}$).
 2. **Uptake by plants**: plants absorb phosphate from soil through roots.
-3. **Transfer through food chains**: phosphorus passes from producers to consumers and
- decomposers.
+3. **Transfer through food chains**: phosphorus passes from producers to consumers and decomposers.
 4. **Return to soil**: decomposition and excretion return phosphorus to the soil.
 5. **Sedimentation**: eroded phosphorus is transported to oceans and incorporated into marine
- sediments. Over geological time, these sediments are uplifted, completing the cycle
- ($10^6$--$10^7$ year timescale).
+   sediments. Over geological time, these sediments are uplifted, completing the cycle
+   ($10^6$--$10^7$ year timescale).
 
 **Human impact**: phosphate mining for fertilisers has accelerated the release of phosphate from
 Geological deposits. Agricultural runoff causes **eutrophication** of freshwater and marine
@@ -824,7 +824,7 @@ Ecosystems.
 4. **Plant death**: submerged plants die due to insufficient light for photosynthesis.
 5. **Decomposition**: bacteria decompose dead algae and plants, consuming dissolved $\mathrm{O}_2$.
 6. **Hypoxia/anoxia**: dissolved $\mathrm{O}_2$ drops to levels that cannot support fish and
- invertebrates, causing a "dead zone."
+   invertebrates, causing a "dead zone."
 7. **Biodiversity loss**: fish kills and loss of aquatic species diversity.
 
 ---
@@ -835,37 +835,35 @@ Ecosystems.
 
 - **Species richness**: the number of species in a given area.
 - **Species evenness**: how evenly individuals are distributed among species.
-- **Shannon-Wiener diversity index**:
-  $$H' = -\sum_{i=1}^{s} p_i \ln p_i$$
- where $p_i$ is the proportion of individuals belonging to species $i$ and $s$ is the total number of species.
- $H'$ ranges from $0$ (single species) to higher values (more diverse communities).
+- **Shannon-Wiener diversity index**: $$H' = -\sum_{i=1}^{s} p_i \ln p_i$$ where $p_i$ is the
+  proportion of individuals belonging to species $i$ and $s$ is the total number of species. $H'$
+  ranges from $0$ (single species) to higher values (more diverse communities).
 
-- **Simpson's diversity index**:
-  $$D = 1 - \sum_{i=1}^{s} p_i^2$$
- Measures the probability that two randomly selected individuals belong to different species.
+- **Simpson's diversity index**: $$D = 1 - \sum_{i=1}^{s} p_i^2$$ Measures the probability that two
+  randomly selected individuals belong to different species.
 
 ### Threats to Biodiversity
 
-| Threat | Description | Example |
-| ---------------------------- | ------------------------------------------------------------------------------------------------- | ----------------------------------------------- |
-| **Habitat destruction** | Conversion of natural habitats to agriculture, urban areas, and infrastructure. | Deforestation of tropical rainforests; coral reef destruction. |
-| **Habitat fragmentation** | Division of continuous habitat into patches, reducing connectivity and increasing edge effects. | Road construction through forests; agricultural land division. |
-| **Overexploitation** | Harvesting species faster than they can recover. | Overfishing; bushmeat trade; illegal wildlife trade. |
-| **Pollution** | Contamination of air, water, and soil with harmful substances. | Pesticide accumulation (DDT); oil spills; plastic pollution. |
-| **Climate change** | Global warming, ocean acidification, changing precipitation patterns. | Coral bleaching; range shifts; phenological mismatches. |
-| **Invasive species** | Non-native species that outcompete, prey on, or introduce diseases to native species. | Cane toad in Australia; zebra mussel in North America; kudzu vine. |
+| Threat                    | Description                                                                                     | Example                                                            |
+| ------------------------- | ----------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| **Habitat destruction**   | Conversion of natural habitats to agriculture, urban areas, and infrastructure.                 | Deforestation of tropical rainforests; coral reef destruction.     |
+| **Habitat fragmentation** | Division of continuous habitat into patches, reducing connectivity and increasing edge effects. | Road construction through forests; agricultural land division.     |
+| **Overexploitation**      | Harvesting species faster than they can recover.                                                | Overfishing; bushmeat trade; illegal wildlife trade.               |
+| **Pollution**             | Contamination of air, water, and soil with harmful substances.                                  | Pesticide accumulation (DDT); oil spills; plastic pollution.       |
+| **Climate change**        | Global warming, ocean acidification, changing precipitation patterns.                           | Coral bleaching; range shifts; phenological mismatches.            |
+| **Invasive species**      | Non-native species that outcompete, prey on, or introduce diseases to native species.           | Cane toad in Australia; zebra mussel in North America; kudzu vine. |
 
 ### Conservation Strategies
 
 - **In situ conservation**: protecting species in their natural habitats (national parks, nature
- reserves, marine protected areas, wildlife corridors).
-- **Ex situ conservation**: protecting species outside their natural habitats (zoos, botanical gardens,
- seed banks, cryopreservation of gametes and embryos).
+  reserves, marine protected areas, wildlife corridors).
+- **Ex situ conservation**: protecting species outside their natural habitats (zoos, botanical
+  gardens, seed banks, cryopreservation of gametes and embryos).
 - **CITES**: Convention on International Trade in Endangered Species regulates international trade.
-- **Captive breeding programmes**: for critically endangered species with very small wild populations
- (e.g., California condor, black rhino).
+- **Captive breeding programmes**: for critically endangered species with very small wild
+  populations (e.g., California condor, black rhino).
 - **Sustainable management**: balancing resource use with conservation (e.g., sustainable forestry,
- fisheries quotas, ecotourism).
+  fisheries quotas, ecotourism).
 
 ---
 
@@ -874,10 +872,11 @@ Ecosystems.
 <details>
 <summary>Problem 9: Quantitative -- Population Growth Models</summary>
 
-A population of bacteria in a culture grows exponentially with $r = 0.6\;\mathrm{h}^{-1}$ and $N_0 = 200$
-Cells. (a) Calculate the population size after 10 hours. (b) Calculate the doubling time. (c) If the
-Carrying capacity of the culture is $10^9$ cells, at what time will the population reach $90\%$ of $K$
-Using the logistic equation? (d) Compare the logistic and exponential population sizes at $t = 20\;\mathrm{h}$.
+A population of bacteria in a culture grows exponentially with $r = 0.6\;\mathrm{h}^{-1}$ and
+$N_0 = 200$ Cells. (a) Calculate the population size after 10 hours. (b) Calculate the doubling
+time. (c) If the Carrying capacity of the culture is $10^9$ cells, at what time will the population
+reach $90\%$ of $K$ Using the logistic equation? (d) Compare the logistic and exponential population
+sizes at $t = 20\;\mathrm{h}$.
 
 </details>
 
@@ -885,10 +884,10 @@ Using the logistic equation? (d) Compare the logistic and exponential population
 <summary>Problem 10: Data Analysis -- Shannon-Wiener Diversity Index</summary>
 
 Two woodland communities are surveyed for butterfly species. Community A has 4 species with
-Abundances: 80, 15, 3, 2. Community B has 5 species with abundances: 30, 28, 22, 12, 8. (a) Calculate
-The Shannon-Wiener diversity index ($H'$) for each community. (b) Calculate Simpson's diversity
-Index ($D$) for each community. (c) Which community is more diverse? Justify your answer with
-Reference to both richness and evenness.
+Abundances: 80, 15, 3, 2. Community B has 5 species with abundances: 30, 28, 22, 12, 8. (a)
+Calculate The Shannon-Wiener diversity index ($H'$) for each community. (b) Calculate Simpson's
+diversity Index ($D$) for each community. (c) Which community is more diverse? Justify your answer
+with Reference to both richness and evenness.
 
 </details>
 
@@ -899,18 +898,19 @@ A volcanic island is formed by a submarine eruption. Over 500 years, the island 
 Living organisms. (a) Describe the expected sequence of primary succession on the island, naming
 Specific types of organisms at each stage and explaining how they modify the environment for the
 Next stage. (b) Explain why the climax community on this island may differ from the climax community
-On a nearby mainland island. (c) If the island is later colonised by an invasive rat species, predict
-The impact on the native fauna and describe a conservation strategy to protect native species.
+On a nearby mainland island. (c) If the island is later colonised by an invasive rat species,
+predict The impact on the native fauna and describe a conservation strategy to protect native
+species.
 
 </details>
 
 <details>
 <summary>Problem 12: Extended Response -- Phosphorus Cycle and Agriculture</summary>
 
-Explain why the phosphorus cycle is described as sedimentary rather than gaseous. Describe the role of
-Phosphorus in biological systems (DNA, ATP, phospholipids, bone). Explain how the use of phosphate
-Fertilisers in agriculture can lead to eutrophication in freshwater ecosystems. Discuss two
-Strategies for reducing phosphate pollution from agricultural runoff.
+Explain why the phosphorus cycle is described as sedimentary rather than gaseous. Describe the role
+of Phosphorus in biological systems (DNA, ATP, phospholipids, bone). Explain how the use of
+phosphate Fertilisers in agriculture can lead to eutrophication in freshwater ecosystems. Discuss
+two Strategies for reducing phosphate pollution from agricultural runoff.
 
 </details>
 
@@ -920,11 +920,12 @@ Strategies for reducing phosphate pollution from agricultural runoff.
 
 **Worked Example: Calculating Net Primary Productivity**
 
-A forest has a gross primary productivity (GPP) of $18\,000\;\mathrm{kJ/m^2/year}$. The plants in the
-Forest respire at a rate of $12\,000\;\mathrm{kJ/m^2/year}$. (a) Calculate the net primary productivity
-(NPP). (b) If the ecological efficiency (transfer efficiency between trophic levels) is $10\%$Calculate
-The net secondary productivity of herbivores. (c) If $60\%$ of NPP is used by decomposers, calculate the
-Energy available to herbivores. (d) Explain why ecological efficiency is low.
+A forest has a gross primary productivity (GPP) of $18\,000\;\mathrm{kJ/m^2/year}$. The plants in
+the Forest respire at a rate of $12\,000\;\mathrm{kJ/m^2/year}$. (a) Calculate the net primary
+productivity (NPP). (b) If the ecological efficiency (transfer efficiency between trophic levels) is
+$10\%$Calculate The net secondary productivity of herbivores. (c) If $60\%$ of NPP is used by
+decomposers, calculate the Energy available to herbivores. (d) Explain why ecological efficiency is
+low.
 
 <details>
 <summary>Solution</summary>
@@ -934,27 +935,30 @@ Energy available to herbivores. (d) Explain why ecological efficiency is low.
 (b) Assuming herbivores consume $100\%$ of NPP (which is unrealistic; much less):
 $\mathrm{NSP} = \mathrm{NPP} \times \text{ecological efficiency} = 6000 \times 0.10 = 600\;\mathrm{kJ/m^2/year}$
 
-(c) If $60\%$ goes to decomposers: energy available to herbivores $= 6000 \times 0.40 = 2400\;\mathrm{kJ/m^2/year}$.
-Secondary productivity of herbivores $= 2400 \times 0.10 = 240\;\mathrm{kJ/m^2/year}$.
+(c) If $60\%$ goes to decomposers: energy available to herbivores
+$= 6000 \times 0.40 = 2400\;\mathrm{kJ/m^2/year}$. Secondary productivity of herbivores
+$= 2400 \times 0.10 = 240\;\mathrm{kJ/m^2/year}$.
 
 (d) Ecological efficiency is low ($5$--$20\%$) because:
+
 - Not all biomass at one trophic level is consumed (some dies and goes to decomposers).
 - Not all consumed biomass is digested and absorbed (some is egested as faeces).
-- Of the absorbed energy, much is used for respiration (maintaining body temperature, movement, etc.)
- and is lost as heat.
+- Of the absorbed energy, much is used for respiration (maintaining body temperature, movement,
+  etc.) and is lost as heat.
 - Only the energy incorporated into new biomass (growth and reproduction) is available to the next
- trophic level. The "ten percent rule" is a useful approximation but actual efficiencies vary widely.
+  trophic level. The "ten percent rule" is a useful approximation but actual efficiencies vary
+  widely.
 
 </details>
 
 **Worked Example: Population Growth with Immigration and Emigration**
 
-A population of birds on an island has a birth rate of $0.15$ per individual per year and a death rate of
-$0.10$ per individual per year. Immigration brings in $50$ birds per year and emigration removes $20$ birds
-Per year. The current population is $2000$. (a) Calculate $r$ (per capita rate of increase) excluding
-Migration. (b) Calculate the net change in population per year including migration. (c) If the carrying
-Capacity is $5000$Calculate the population size after 5 years using the logistic equation
-($dN/dt = rN(1 - N/K)$). Assume migration continues at the same rate.
+A population of birds on an island has a birth rate of $0.15$ per individual per year and a death
+rate of $0.10$ per individual per year. Immigration brings in $50$ birds per year and emigration
+removes $20$ birds Per year. The current population is $2000$. (a) Calculate $r$ (per capita rate of
+increase) excluding Migration. (b) Calculate the net change in population per year including
+migration. (c) If the carrying Capacity is $5000$Calculate the population size after 5 years using
+the logistic equation ($dN/dt = rN(1 - N/K)$). Assume migration continues at the same rate.
 
 <details>
 <summary>Solution</summary>
@@ -963,39 +967,44 @@ Capacity is $5000$Calculate the population size after 5 years using the logistic
 
 (b) Net change $= rN + I - E = 0.05 \times 2000 + 50 - 20 = 100 + 30 = 130$ birds per year.
 
-(c) Using the logistic equation with migration:
-$N_0 = 2000$$r = 0.05$$K = 5000$Migration $= +30$ per year.
+(c) Using the logistic equation with migration: $N_0 = 2000$$r = 0.05$$K = 5000$Migration $= +30$
+per year.
 
 Year 1: $dN/dt = 0.05 \times 2000 \times (1 - 2000/5000) + 30 = 100 \times 0.6 + 30 = 60 + 30 = 90$.
 $N_1 = 2090$.
 
-Year 2: $dN/dt = 0.05 \times 2090 \times (1 - 2090/5000) + 30 = 104.5 \times 0.582 + 30 = 60.8 + 30 = 90.8$.
+Year 2:
+$dN/dt = 0.05 \times 2090 \times (1 - 2090/5000) + 30 = 104.5 \times 0.582 + 30 = 60.8 + 30 = 90.8$.
 $N_2 = 2180.8$.
 
-Year 3: $dN/dt = 0.05 \times 2180.8 \times (1 - 2180.8/5000) + 30 = 109.04 \times 0.564 + 30 = 61.5 + 30 = 91.5$.
+Year 3:
+$dN/dt = 0.05 \times 2180.8 \times (1 - 2180.8/5000) + 30 = 109.04 \times 0.564 + 30 = 61.5 + 30 = 91.5$.
 $N_3 = 2272.3$.
 
-Year 4: $dN/dt = 0.05 \times 2272.3 \times (1 - 2272.3/5000) + 30 = 113.6 \times 0.546 + 30 = 62.0 + 30 = 92.0$.
+Year 4:
+$dN/dt = 0.05 \times 2272.3 \times (1 - 2272.3/5000) + 30 = 113.6 \times 0.546 + 30 = 62.0 + 30 = 92.0$.
 $N_4 = 2364.3$.
 
-Year 5: $dN/dt = 0.05 \times 2364.3 \times (1 - 2364.3/5000) + 30 = 118.2 \times 0.527 + 30 = 62.3 + 30 = 92.3$.
+Year 5:
+$dN/dt = 0.05 \times 2364.3 \times (1 - 2364.3/5000) + 30 = 118.2 \times 0.527 + 30 = 62.3 + 30 = 92.3$.
 $N_5 = 2456.6$.
 
 After 5 years: approximately $2457$ birds.
 
-Note: with migration exceeding the net reproductive increase at small population sizes, the population
-Grows more quickly than predicted by the logistic equation alone.
+Note: with migration exceeding the net reproductive increase at small population sizes, the
+population Grows more quickly than predicted by the logistic equation alone.
 
 </details>
 
 **Worked Example: Carbon Cycle Calculations**
 
-A tropical rainforest covers $5 \times 10^6\;\mathrm{ha}$ and stores $200\;\mathrm{t\;C/ha}$ in biomass.
-It sequesters carbon at a rate of $6\;\mathrm{t\;C/ha/year}$. (a) Calculate the total carbon stored in
-The forest. (b) Calculate the total $\mathrm{CO}_2$ equivalent stored (molar mass: $\mathrm{C} = 12$
-$\mathrm{CO}_2 = 44$). (c) If the forest is cleared for agriculture and $60\%$ of the biomass carbon
-Is released as $\mathrm{CO}_2$ within 5 years, calculate the annual $\mathrm{CO}_2$ emission rate.
-(d) Explain how deforestation contributes to the enhanced greenhouse effect.
+A tropical rainforest covers $5 \times 10^6\;\mathrm{ha}$ and stores $200\;\mathrm{t\;C/ha}$ in
+biomass. It sequesters carbon at a rate of $6\;\mathrm{t\;C/ha/year}$. (a) Calculate the total
+carbon stored in The forest. (b) Calculate the total $\mathrm{CO}_2$ equivalent stored (molar mass:
+$\mathrm{C} = 12$ $\mathrm{CO}_2 = 44$). (c) If the forest is cleared for agriculture and $60\%$ of
+the biomass carbon Is released as $\mathrm{CO}_2$ within 5 years, calculate the annual
+$\mathrm{CO}_2$ emission rate. (d) Explain how deforestation contributes to the enhanced greenhouse
+effect.
 
 <details>
 <summary>Solution</summary>
@@ -1005,26 +1014,30 @@ Is released as $\mathrm{CO}_2$ within 5 years, calculate the annual $\mathrm{CO}
 (b) $\mathrm{CO}_2$ equivalent: $\frac{44}{12} \times 10^9 = 3.67 \times 10^9\;\mathrm{t\;CO}_2$
 $= 3.67$ billion tonnes of $\mathrm{CO}_2$ equivalent.
 
-(c) Carbon released: $0.60 \times 10^9 = 6 \times 10^8\;\mathrm{t\;C}$.
-$\mathrm{CO}_2$ released: $6 \times 10^8 \times \frac{44}{12} = 2.2 \times 10^9\;\mathrm{t\;CO}_2$.
-Annual rate: $2.2 \times 10^9 / 5 = 4.4 \times 10^8\;\mathrm{t\;CO}_2/year = 440$ million tonnes/year.
+(c) Carbon released: $0.60 \times 10^9 = 6 \times 10^8\;\mathrm{t\;C}$. $\mathrm{CO}_2$ released:
+$6 \times 10^8 \times \frac{44}{12} = 2.2 \times 10^9\;\mathrm{t\;CO}_2$. Annual rate:
+$2.2 \times 10^9 / 5 = 4.4 \times 10^8\;\mathrm{t\;CO}_2/year = 440$ million tonnes/year.
 
 (d) Deforestation contributes to the enhanced greenhouse effect by:
+
 - Releasing stored carbon as $\mathrm{CO}_2$ when biomass is burned or decomposed.
-- Reducing the forest's capacity to absorb $\mathrm{CO}_2$ through photosynthesis (loss of carbon sink).
-- $\mathrm{CO}_2$ is a greenhouse gas that absorbs and re-emits infrared radiation, trapping heat in the
- atmosphere. Increased atmospheric $\mathrm{CO}_2$ from deforestation amplifies the natural greenhouse
- effect, contributing to global warming and climate change.
-- Additionally, deforestation changes surface albedo (reflectivity), which can have regional climate effects.
+- Reducing the forest's capacity to absorb $\mathrm{CO}_2$ through photosynthesis (loss of carbon
+  sink).
+- $\mathrm{CO}_2$ is a greenhouse gas that absorbs and re-emits infrared radiation, trapping heat in
+  the atmosphere. Increased atmospheric $\mathrm{CO}_2$ from deforestation amplifies the natural
+  greenhouse effect, contributing to global warming and climate change.
+- Additionally, deforestation changes surface albedo (reflectivity), which can have regional climate
+  effects.
 
 </details>
 
 **Worked Example: Mark-Release-Recapture Population Estimation**
 
 A biologist captures, marks, and releases $80$ wood mice in a woodland. One week later, she captures
-$100$ mice, of which $16$ are marked. (a) Estimate the total population size using the Lincoln-Petersen
-Index. (b) Calculate the $95\%$ confidence interval. (c) State three assumptions of this method.
-(d) Explain how each assumption could be violated and the effect on the population estimate.
+$100$ mice, of which $16$ are marked. (a) Estimate the total population size using the
+Lincoln-Petersen Index. (b) Calculate the $95\%$ confidence interval. (c) State three assumptions of
+this method. (d) Explain how each assumption could be violated and the effect on the population
+estimate.
 
 <details>
 <summary>Solution</summary>
@@ -1039,6 +1052,7 @@ $95\%\;\mathrm{CI} = N \pm 1.96 \times \mathrm{SE} = 500 \pm 1.96 \times 102.5 =
 $95\%\;\mathrm{CI} = (299, 701)$
 
 (c) Assumptions:
+
 1. The marked individuals mix randomly with the unmarked population between sampling occasions.
 2. Marks are not lost and are always detectable.
 3. Births, deaths, immigration, and emigration are negligible between sampling occasions.
@@ -1046,17 +1060,19 @@ $95\%\;\mathrm{CI} = (299, 701)$
 5. The population is closed (no migration).
 
 (d) Violations and their effects:
-1. **Non-random mixing**: if marked individuals remain near the capture site, they may be overrepresented
- in the second sample, leading to an **underestimate** of $N$.
+
+1. **Non-random mixing**: if marked individuals remain near the capture site, they may be
+   overrepresented in the second sample, leading to an **underestimate** of $N$.
 2. **Mark loss**: if marks are lost (e.g., tags fall off), fewer marked individuals are recaptured,
- leading to an **overestimate** of $N$.
-3. **Population change**: if deaths occur between samples (especially of marked individuals), $R$ decreases,
- leading to an **overestimate**. If births occur, $N$ increases but the estimate is based on the original
- population size, leading to an **underestimate**.
+   leading to an **overestimate** of $N$.
+3. **Population change**: if deaths occur between samples (especially of marked individuals), $R$
+   decreases, leading to an **overestimate**. If births occur, $N$ increases but the estimate is
+   based on the original population size, leading to an **underestimate**.
 4. **Unequal capture probability**: trap-happy individuals (more likely to be recaptured) cause an
- **underestimate**; trap-shy individuals (avoid traps after first capture) cause an **overestimate**.
+   **underestimate**; trap-shy individuals (avoid traps after first capture) cause an
+   **overestimate**.
 5. **Open population**: immigration adds unmarked individuals, causing an **overestimate** of the
- original population.
+   original population.
 
 </details>
 
@@ -1072,35 +1088,36 @@ Nitrogen cycle.
 <details>
 <summary>Solution</summary>
 
-(a) $\mathrm{NH}_4\mathrm{NO}_3$ contains 2 nitrogen atoms per molecule.
-Molar mass of N $= 14\;\mathrm{g/mol}$.
-Mass fraction of N in $\mathrm{NH}_4\mathrm{NO}_3$: $\frac{28}{80} = 0.35 = 35\%$.
-Nitrogen applied: $150 \times 0.35 = 52.5\;\mathrm{kg\;N/ha}$.
+(a) $\mathrm{NH}_4\mathrm{NO}_3$ contains 2 nitrogen atoms per molecule. Molar mass of N
+$= 14\;\mathrm{g/mol}$. Mass fraction of N in $\mathrm{NH}_4\mathrm{NO}_3$:
+$\frac{28}{80} = 0.35 = 35\%$. Nitrogen applied: $150 \times 0.35 = 52.5\;\mathrm{kg\;N/ha}$.
 
 (b) Nitrogen lost: $52.5 \times 0.50 = 26.25\;\mathrm{kg\;N/ha}$.
 
 (c) Environmental consequences of nitrogen runoff:
-- **Eutrophication**: excess nitrogen stimulates rapid growth of algae (algal bloom), which blocks light
- and prevents photosynthesis by submerged plants. When algae die, decomposition by bacteria consumes
- dissolved oxygen, creating hypoxic or anoxic conditions that kill fish and other aquatic organisms.
-- **Nitrate pollution of groundwater**: nitrate ($\mathrm{NO}_3^-$) is highly soluble and can leach into
- groundwater. High nitrate levels in drinking water cause methemoglobinaemia ("blue baby syndrome") in
- infants, in which nitrate is reduced to nitrite in the gut, converting haemoglobin to methaemoglobin,
- which cannot carry oxygen.
-- **Nitrous oxide ($\mathrm{N}_2\mathrm{O}$) emissions**: a potent greenhouse gas ($298\times$ the global
- warming potential of $\mathrm{CO}_2$ over 100 years) produced by denitrifying bacteria in waterlogged
- soils.
-- **Acidification and biodiversity loss**: nitrogen deposition can acidify soils and freshwater,
- reducing plant and invertebrate diversity.
 
-(d) Denitrification is the process by which denitrifying bacteria (e.g., _Pseudomonas denitrificans_,
-_Paracoccus denitrificans_) convert nitrate ($\mathrm{NO}_3^-$) through nitrite ($\mathrm{NO}_2^-$),
-Nitric oxide ($\mathrm{NO}$), and nitrous oxide ($\mathrm{N}_2\mathrm{O}$) to nitrogen gas
-($\mathrm{N}_2$). It occurs under anaerobic conditions (e.g., waterlogged soils, sediments). Denitrification
-Is important because it returns nitrogen to the atmosphere, completing the nitrogen cycle and preventing
-Excessive accumulation of nitrate in soils and water. However, the intermediate $\mathrm{N}_2\mathrm{O}$
-Is a greenhouse gas and ozone-depleting substance, making the balance of complete vs incomplete
-Denitrification environmentally significant.
+- **Eutrophication**: excess nitrogen stimulates rapid growth of algae (algal bloom), which blocks
+  light and prevents photosynthesis by submerged plants. When algae die, decomposition by bacteria
+  consumes dissolved oxygen, creating hypoxic or anoxic conditions that kill fish and other aquatic
+  organisms.
+- **Nitrate pollution of groundwater**: nitrate ($\mathrm{NO}_3^-$) is highly soluble and can leach
+  into groundwater. High nitrate levels in drinking water cause methemoglobinaemia ("blue baby
+  syndrome") in infants, in which nitrate is reduced to nitrite in the gut, converting haemoglobin
+  to methaemoglobin, which cannot carry oxygen.
+- **Nitrous oxide ($\mathrm{N}_2\mathrm{O}$) emissions**: a potent greenhouse gas ($298\times$ the
+  global warming potential of $\mathrm{CO}_2$ over 100 years) produced by denitrifying bacteria in
+  waterlogged soils.
+- **Acidification and biodiversity loss**: nitrogen deposition can acidify soils and freshwater,
+  reducing plant and invertebrate diversity.
+
+(d) Denitrification is the process by which denitrifying bacteria (e.g., _Pseudomonas
+denitrificans_, _Paracoccus denitrificans_) convert nitrate ($\mathrm{NO}_3^-$) through nitrite
+($\mathrm{NO}_2^-$), Nitric oxide ($\mathrm{NO}$), and nitrous oxide ($\mathrm{N}_2\mathrm{O}$) to
+nitrogen gas ($\mathrm{N}_2$). It occurs under anaerobic conditions (e.g., waterlogged soils,
+sediments). Denitrification Is important because it returns nitrogen to the atmosphere, completing
+the nitrogen cycle and preventing Excessive accumulation of nitrate in soils and water. However, the
+intermediate $\mathrm{N}_2\mathrm{O}$ Is a greenhouse gas and ozone-depleting substance, making the
+balance of complete vs incomplete Denitrification environmentally significant.
 
 </details>
 
@@ -1108,19 +1125,21 @@ Denitrification environmentally significant.
 
 ## Additional Common Pitfalls
 
-- **Confusing gross primary productivity (GPP) and net primary productivity (NPP)**: GPP is the total
- energy fixed by photosynthesis; NPP = GPP - plant respiration. Only NPP is available to herbivores.
-- **Assuming the "10% rule" applies universally**: ecological efficiency varies from $<1\%$ (detritus
- food chains) to $>30\%$ (some aquatic systems with ectotherms). The "10% rule" is a rough guideline.
-- **Confusing the greenhouse effect with global warming**: the greenhouse effect is a natural process
- that keeps Earth habitable; the enhanced (anthropogenic) greenhouse effect is the additional warming
- caused by human activities increasing greenhouse gas concentrations.
+- **Confusing gross primary productivity (GPP) and net primary productivity (NPP)**: GPP is the
+  total energy fixed by photosynthesis; NPP = GPP - plant respiration. Only NPP is available to
+  herbivores.
+- **Assuming the "10% rule" applies universally**: ecological efficiency varies from $<1\%$
+  (detritus food chains) to $>30\%$ (some aquatic systems with ectotherms). The "10% rule" is a
+  rough guideline.
+- **Confusing the greenhouse effect with global warming**: the greenhouse effect is a natural
+  process that keeps Earth habitable; the enhanced (anthropogenic) greenhouse effect is the
+  additional warming caused by human activities increasing greenhouse gas concentrations.
 - **Misidentifying the limiting nutrient in different ecosystems**: phosphorus is limiting in
- freshwater; nitrogen in marine ecosystems; both can be limiting depending on the system.
-- **Confusing species richness and species evenness**: richness = number of species; evenness = relative
- abundance of each species. High diversity requires both high richness and high evenness.
+  freshwater; nitrogen in marine ecosystems; both can be limiting depending on the system.
+- **Confusing species richness and species evenness**: richness = number of species; evenness =
+  relative abundance of each species. High diversity requires both high richness and high evenness.
 - **Assuming all invasive species are harmful**: some invasive species have neutral or even positive
- effects; the term "invasive" refers to spread, not necessarily impact.
+  effects; the term "invasive" refers to spread, not necessarily impact.
 
 ---
 
@@ -1129,34 +1148,36 @@ Denitrification environmentally significant.
 <details>
 <summary>Problem 13: Extended Response -- Biome Comparison</summary>
 
-Compare and contrast tropical rainforest and tundra biomes with respect to: (a) climate (temperature,
-Precipitation, growing season), (b) net primary productivity, (c) soil characteristics, (d) plant
-Adaptations, (e) animal adaptations, and (f) vulnerability to climate change.
+Compare and contrast tropical rainforest and tundra biomes with respect to: (a) climate
+(temperature, Precipitation, growing season), (b) net primary productivity, (c) soil
+characteristics, (d) plant Adaptations, (e) animal adaptations, and (f) vulnerability to climate
+change.
 
 </details>
 
 <details>
 <summary>Answer 13</summary>
 
-| Feature | Tropical Rainforest | Tundra |
-|---------|-------------------|--------|
-| **Temperature** | $25$--$28^\circ\mathrm{C}$ year-round | $-30$ to $10^\circ\mathrm{C}$; mean $<10^\circ\mathrm{C}$ |
-| **Precipitation** | $2000$--$10000\;\mathrm{mm/year}$ | $150$--$250\;\mathrm{mm/year}$ |
-| **Growing season** | Year-round | $50$--$60$ days |
-| **NPP** | Very high ($\approx 2200\;\mathrm{g\;C/m^2/year}$) | Very low ($\approx 140\;\mathrm{g\;C/m^2/year}$) |
-| **Soil** | Nutrient-poor (rapid decomposition, leaching); laterite soils | Permafrost; thin active layer; waterlogged in summer; low nutrient availability |
-| **Plant adaptations** | Buttress roots, drip tips, thin leaves, epiphytes, climbing plants | Low-growing (cushion plants), hairy leaves, dark pigments, clonal reproduction, shallow roots |
-| **Animal adaptations** | Arboreal locomotion, camouflage, specialised diets (coevolution with specific plants) | Thick fur/feathers, fat deposits, migration, hibernation, seasonal colour change (e.g., arctic hare) |
-| **Climate vulnerability** | Drought stress, increased fire frequency, deforestation, loss of cloud forests | Permafrost thaw (releasing methane), shrubification (boreal shrubs replacing tundra vegetation), habitat loss for cold-adapted species |
+| Feature                   | Tropical Rainforest                                                                   | Tundra                                                                                                                                 |
+| ------------------------- | ------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| **Temperature**           | $25$--$28^\circ\mathrm{C}$ year-round                                                 | $-30$ to $10^\circ\mathrm{C}$; mean $<10^\circ\mathrm{C}$                                                                              |
+| **Precipitation**         | $2000$--$10000\;\mathrm{mm/year}$                                                     | $150$--$250\;\mathrm{mm/year}$                                                                                                         |
+| **Growing season**        | Year-round                                                                            | $50$--$60$ days                                                                                                                        |
+| **NPP**                   | Very high ($\approx 2200\;\mathrm{g\;C/m^2/year}$)                                    | Very low ($\approx 140\;\mathrm{g\;C/m^2/year}$)                                                                                       |
+| **Soil**                  | Nutrient-poor (rapid decomposition, leaching); laterite soils                         | Permafrost; thin active layer; waterlogged in summer; low nutrient availability                                                        |
+| **Plant adaptations**     | Buttress roots, drip tips, thin leaves, epiphytes, climbing plants                    | Low-growing (cushion plants), hairy leaves, dark pigments, clonal reproduction, shallow roots                                          |
+| **Animal adaptations**    | Arboreal locomotion, camouflage, specialised diets (coevolution with specific plants) | Thick fur/feathers, fat deposits, migration, hibernation, seasonal colour change (e.g., arctic hare)                                   |
+| **Climate vulnerability** | Drought stress, increased fire frequency, deforestation, loss of cloud forests        | Permafrost thaw (releasing methane), shrubification (boreal shrubs replacing tundra vegetation), habitat loss for cold-adapted species |
 
 (f) Climate change vulnerability:
-- **Tropical rainforest**: increased frequency and severity of droughts can cause dieback and increase
- fire susceptibility; rising temperatures may exceed thermal tolerances of some species; shifts in
- rainfall patterns disrupt phenology (timing of flowering and fruiting).
-- **Tundra**: warming is occurring $2$--$3\times$ faster than the global average (Arctic amplification);
- permafrost thaw releases $\mathrm{CO}_2$ and $\mathrm{CH}_4$ (positive feedback for warming); treeline
- advance (boreal forest encroaching on tundra) reduces habitat for tundra species; loss of sea ice
- affects ice-dependent species (polar bears, seals).
+
+- **Tropical rainforest**: increased frequency and severity of droughts can cause dieback and
+  increase fire susceptibility; rising temperatures may exceed thermal tolerances of some species;
+  shifts in rainfall patterns disrupt phenology (timing of flowering and fruiting).
+- **Tundra**: warming is occurring $2$--$3\times$ faster than the global average (Arctic
+  amplification); permafrost thaw releases $\mathrm{CO}_2$ and $\mathrm{CH}_4$ (positive feedback
+  for warming); treeline advance (boreal forest encroaching on tundra) reduces habitat for tundra
+  species; loss of sea ice affects ice-dependent species (polar bears, seals).
 
 </details>
 
@@ -1166,52 +1187,53 @@ Adaptations, (e) animal adaptations, and (f) vulnerability to climate change.
 A researcher investigates whether a species of snail shows a preference for different habitat types.
 The observed and expected frequencies (based on the relative area of each habitat) are:
 
-| Habitat | Area (ha) | Expected proportion | Observed snails | Expected snails |
-|---------|-----------|-------------------|----------------|----------------|
-| Woodland | 40 | 0.40 | 85 | 72 |
-| Grassland | 35 | 0.35 | 55 | 63 |
-| Marsh | 15 | 0.15 | 40 | 27 |
-| Rocky | 10 | 0.10 | 20 | 18 |
-| **Total** | **100** | **1.00** | **200** | **180** |
+| Habitat   | Area (ha) | Expected proportion | Observed snails | Expected snails |
+| --------- | --------- | ------------------- | --------------- | --------------- |
+| Woodland  | 40        | 0.40                | 85              | 72              |
+| Grassland | 35        | 0.35                | 55              | 63              |
+| Marsh     | 15        | 0.15                | 40              | 27              |
+| Rocky     | 10        | 0.10                | 20              | 18              |
+| **Total** | **100**   | **1.00**            | **200**         | **180**         |
 
-(a) Calculate the chi-squared statistic. (b) Determine the degrees of freedom and the critical value at
-$p = 0.05$. (c) State your conclusion. (d) Which habitat types are most preferred and avoided?
+(a) Calculate the chi-squared statistic. (b) Determine the degrees of freedom and the critical value
+at $p = 0.05$. (c) State your conclusion. (d) Which habitat types are most preferred and avoided?
 
 </details>
 
 <details>
 <summary>Answer 14</summary>
 
-(a) The expected values should be based on $200$ total snails and the habitat proportions:
-Expected: Woodland $= 80$Grassland $= 70$Marsh $= 30$Rocky $= 20$.
+(a) The expected values should be based on $200$ total snails and the habitat proportions: Expected:
+Woodland $= 80$Grassland $= 70$Marsh $= 30$Rocky $= 20$.
 
 $\chi^2 = \frac{(85 - 80)^2}{80} + \frac{(55 - 70)^2}{70} + \frac{(40 - 30)^2}{30} + \frac{(20 - 20)^2}{20}$
-$= \frac{25}{80} + \frac{225}{70} + \frac{100}{30} + 0$
-$= 0.313 + 3.214 + 3.333 + 0 = 6.860$
+$= \frac{25}{80} + \frac{225}{70} + \frac{100}{30} + 0$ $= 0.313 + 3.214 + 3.333 + 0 = 6.860$
 
 (b) $\mathrm{df} = 4 - 1 = 3$. Critical value at $p = 0.05$ for $3\;\mathrm{df} = 7.815$.
 
 (c) $\chi^2 = 6.860 < 7.815$. We fail to reject $H_0$ at $p = 0.05$. The difference between observed
 And expected habitat use is not statistically significant at the $5\%$ level. However, the result is
-Close to significant, suggesting a trend toward habitat preference that might be detected with a larger
-Sample size.
+Close to significant, suggesting a trend toward habitat preference that might be detected with a
+larger Sample size.
 
 (d) Despite failing to reach significance:
-- **Most preferred**: Marsh (observed $40$ vs expected $30$; deviation $= +10$) and Woodland (observed $85$
- vs expected $80$; deviation $= +5$).
+
+- **Most preferred**: Marsh (observed $40$ vs expected $30$; deviation $= +10$) and Woodland
+  (observed $85$ vs expected $80$; deviation $= +5$).
 - **Most avoided**: Grassland (observed $55$ vs expected $70$; deviation $= -15$).
 
-The largest contributor to $\chi^2$ is the grassland category ($3.214$) and marsh category ($3.333$).
+The largest contributor to $\chi^2$ is the grassland category ($3.214$) and marsh category
+($3.333$).
 
 </details>
 
 <details>
 <summary>Problem 15: Extended Response -- Human Impact on Ecosystems</summary>
 
-Discuss the impact of human activities on three different ecosystems: (a) coral reefs (ocean acidification
-And warming), (b) tropical rainforests (deforestation), and (c) temperate grasslands (agricultural
-Conversion). For each ecosystem: describe the impact, explain the ecological consequences, and evaluate
-One conservation strategy.
+Discuss the impact of human activities on three different ecosystems: (a) coral reefs (ocean
+acidification And warming), (b) tropical rainforests (deforestation), and (c) temperate grasslands
+(agricultural Conversion). For each ecosystem: describe the impact, explain the ecological
+consequences, and evaluate One conservation strategy.
 
 </details>
 
@@ -1219,42 +1241,47 @@ One conservation strategy.
 <summary>Answer 15</summary>
 
 (a) **Coral reefs -- ocean acidification and warming**:
+
 - Impact: increased atmospheric $\mathrm{CO}_2$ dissolves in seawater, lowering pH (acidification).
- Rising ocean temperatures cause coral bleaching (loss of symbiotic zooxanthellae).
+  Rising ocean temperatures cause coral bleaching (loss of symbiotic zooxanthellae).
 - Ecological consequences: acidification reduces the availability of carbonate ions needed for coral
- skeleton formation (calcification), weakening reef structure. Bleaching reduces coral growth and
- increases mortality. Coral reefs support approximately $25\%$ of all marine species; their decline
- leads to biodiversity loss, collapse of reef fisheries, loss of coastal protection (reefs attenuate
- wave energy), and economic losses for tourism-dependent communities.
+  skeleton formation (calcification), weakening reef structure. Bleaching reduces coral growth and
+  increases mortality. Coral reefs support approximately $25\%$ of all marine species; their decline
+  leads to biodiversity loss, collapse of reef fisheries, loss of coastal protection (reefs
+  attenuate wave energy), and economic losses for tourism-dependent communities.
 - Conservation strategy: **marine protected areas (MPAs)** restrict fishing and other extractive
- activities, allowing reef recovery. Evaluation: MPAs are effective where enforcement is strong and
- where they are large enough to protect entire reef ecosystems, but they do not address global
- threats (acidification, warming) and require ongoing political and financial commitment.
+  activities, allowing reef recovery. Evaluation: MPAs are effective where enforcement is strong and
+  where they are large enough to protect entire reef ecosystems, but they do not address global
+  threats (acidification, warming) and require ongoing political and financial commitment.
 
 (b) **Tropical rainforests -- deforestation**:
-- Impact: logging, agriculture (soy, palm oil, cattle ranching), mining, and infrastructure development
- remove large areas of forest. Approximately $10$ million hectares of forest are lost annually.
-- Ecological consequences: habitat destruction and fragmentation cause species extinction (especially
- endemic species with small ranges); loss of carbon storage contributes to climate change; disruption
- of the water cycle (reduced evapotranspiration leads to regional drying); soil erosion and nutrient
- loss; loss of indigenous peoples' livelihoods and cultural knowledge.
-- Conservation strategy: **sustainable forestry certification** (e.g., FSC) ensures timber is harvested
- at rates that allow forest regeneration. Evaluation: certification can reduce deforestation rates and
- maintain some ecological functions, but enforcement is difficult, certified products may not command
- premium prices, and certification does not prevent conversion to agriculture (the main driver of
- deforestation).
+
+- Impact: logging, agriculture (soy, palm oil, cattle ranching), mining, and infrastructure
+  development remove large areas of forest. Approximately $10$ million hectares of forest are lost
+  annually.
+- Ecological consequences: habitat destruction and fragmentation cause species extinction
+  (especially endemic species with small ranges); loss of carbon storage contributes to climate
+  change; disruption of the water cycle (reduced evapotranspiration leads to regional drying); soil
+  erosion and nutrient loss; loss of indigenous peoples' livelihoods and cultural knowledge.
+- Conservation strategy: **sustainable forestry certification** (e.g., FSC) ensures timber is
+  harvested at rates that allow forest regeneration. Evaluation: certification can reduce
+  deforestation rates and maintain some ecological functions, but enforcement is difficult,
+  certified products may not command premium prices, and certification does not prevent conversion
+  to agriculture (the main driver of deforestation).
 
 (c) **Temperate grasslands -- agricultural conversion**:
-- Impact: conversion to cropland (wheat, maize, soy) and pasture has destroyed approximately $70\%$ of
- original temperate grasslands worldwide (e.g., North American prairie, Eurasian steppe).
+
+- Impact: conversion to cropland (wheat, maize, soy) and pasture has destroyed approximately $70\%$
+  of original temperate grasslands worldwide (e.g., North American prairie, Eurasian steppe).
 - Ecological consequences: loss of native grassland plant and animal species (e.g., prairie dogs,
- bison, ground-nesting birds); soil degradation from intensive tillage and monoculture; reduced soil
- carbon storage; loss of pollinator habitat; nitrogen and pesticide pollution from agricultural runoff.
-- Conservation strategy: **restoration of native grassland** through reseeding with native species and
- reintroduction of keystone herbivores (e.g., bison in North American prairie reserves). Evaluation:
- restoration can recover some ecosystem functions and biodiversity over decades, but fully restoring
- the deep, carbon-rich soils (mollisols) developed over millennia is not possible. Long-term
- monitoring and management (prescribed burning, grazing management) are required.
+  bison, ground-nesting birds); soil degradation from intensive tillage and monoculture; reduced
+  soil carbon storage; loss of pollinator habitat; nitrogen and pesticide pollution from
+  agricultural runoff.
+- Conservation strategy: **restoration of native grassland** through reseeding with native species
+  and reintroduction of keystone herbivores (e.g., bison in North American prairie reserves).
+  Evaluation: restoration can recover some ecosystem functions and biodiversity over decades, but
+  fully restoring the deep, carbon-rich soils (mollisols) developed over millennia is not possible.
+  Long-term monitoring and management (prescribed burning, grazing management) are required.
 
 </details>
 
@@ -1262,11 +1289,16 @@ One conservation strategy.
 
 ## Cross-References to Related Topics
 
-- **Evolution and natural selection**: Review [./evolution-depth](./evolution-depth) for adaptation, speciation, and Hardy-Weinberg equilibrium.
-- **Plant biology and transport**: Review [./plant-biology](./plant-biology) for transpiration, mineral uptake, and plant responses to environment.
-- **Molecular biology and the carbon cycle**: Review [./molecular-biology](./molecular-biology) for photosynthesis and biochemical pathways.
-- **Human physiology and environmental health**: Review [./human-physiology](./human-physiology) for the effects of pollution on human health.
-- **Genetics and population genetics**: Review [./genetics](./genetics) for allele frequency calculations and genetic drift.
+- **Evolution and natural selection**: Review [./evolution-depth](./evolution-depth) for adaptation,
+  speciation, and Hardy-Weinberg equilibrium.
+- **Plant biology and transport**: Review [./plant-biology](./plant-biology) for transpiration,
+  mineral uptake, and plant responses to environment.
+- **Molecular biology and the carbon cycle**: Review [./molecular-biology](./molecular-biology) for
+  photosynthesis and biochemical pathways.
+- **Human physiology and environmental health**: Review [./human-physiology](./human-physiology) for
+  the effects of pollution on human health.
+- **Genetics and population genetics**: Review [./genetics](./genetics) for allele frequency
+  calculations and genetic drift.
 
 ---
 
@@ -1274,11 +1306,12 @@ One conservation strategy.
 
 ### Tropical Rainforest
 
-**Climate**: consistently warm ($25$--$28^\circ\mathrm{C}$) and wet ($2000$--$10000\;\mathrm{mm/year}$),
-No dry season.
+**Climate**: consistently warm ($25$--$28^\circ\mathrm{C}$) and wet
+($2000$--$10000\;\mathrm{mm/year}$), No dry season.
 
 **Structure**: extremely high biodiversity ($>50\%$ of all terrestrial species). Distinct vertical
 Stratification:
+
 - **Emergent layer** ($40$--$60\;\mathrm{m}$): tallest trees, exposed to high light and wind.
 - **Canopy** ($20$--$40\;\mathrm{m}$): continuous layer of foliage, intercepts most light ($>95\%$).
 - **Understorey** ($5$--$20\;\mathrm{m}$): shade-tolerant plants, limited light ($<2\%$).
@@ -1306,9 +1339,9 @@ In tropical forests (cold winters slow microbial activity). Nutrients accumulate
 (alfisol/mollisol: fertile, rich in organic matter).
 
 **Adaptations**: deciduous leaves (shed in autumn to reduce water loss and frost damage; costs of
-Producing new leaves each spring offset by reduced maintenance); deep root systems (access groundwater
-During dry periods); vernal understorey plants (spring ephemerals that flower and set seed before the
-Canopy closes); dormancy and cold hardiness (antifreeze proteins, supercooling).
+Producing new leaves each spring offset by reduced maintenance); deep root systems (access
+groundwater During dry periods); vernal understorey plants (spring ephemerals that flower and set
+seed before the Canopy closes); dormancy and cold hardiness (antifreeze proteins, supercooling).
 
 ### Desert
 
@@ -1318,27 +1351,29 @@ Precipitation ($<250\;\mathrm{mm/year}$), high evapotranspiration.
 **Productivity**: very low NPP ($<90\;\mathrm{g\;C/m^2/year}$). Sparse vegetation, large bare areas.
 
 **Adaptations**: succulence (water storage in fleshy tissues -- cacti store water in parenchyma);
-Reduced leaf surface area (spines instead of leaves in cacti; reduces transpiration); CAM photosynthesis
-(stomata open at night, reducing water loss); deep taproots (accessing groundwater) or shallow
-Widespread roots (capturing rainfall); ephemeral annuals (complete life cycle during brief rainy periods);
-Light-coloured surfaces (reflecting heat); nocturnal behaviour in animals (avoiding daytime heat).
+Reduced leaf surface area (spines instead of leaves in cacti; reduces transpiration); CAM
+photosynthesis (stomata open at night, reducing water loss); deep taproots (accessing groundwater)
+or shallow Widespread roots (capturing rainfall); ephemeral annuals (complete life cycle during
+brief rainy periods); Light-coloured surfaces (reflecting heat); nocturnal behaviour in animals
+(avoiding daytime heat).
 
 ### Tundra
 
-**Climate**: very cold ($-30$ to $10^\circ\mathrm{C}$), low precipitation ($150$--$250\;\mathrm{mm/year}$),
-Permafrost (permanently frozen subsoil), short growing season ($50$--$60$ days), strong winds.
+**Climate**: very cold ($-30$ to $10^\circ\mathrm{C}$), low precipitation
+($150$--$250\;\mathrm{mm/year}$), Permafrost (permanently frozen subsoil), short growing season
+($50$--$60$ days), strong winds.
 
-**Structure**: no trees (permafrost prevents deep root growth). Dominated by mosses, lichens, sedges,
-Grasses, dwarf shrubs (willow, birch). Low biodiversity but high endemism.
+**Structure**: no trees (permafrost prevents deep root growth). Dominated by mosses, lichens,
+sedges, Grasses, dwarf shrubs (willow, birch). Low biodiversity but high endemism.
 
-**Nutrient cycling**: extremely slow decomposition (cold temperatures, waterlogged active layer). Deep
-Layers of undecomposed organic matter (peat). Nutrient cycling is limited by low temperature and
-Slow microbial activity.
+**Nutrient cycling**: extremely slow decomposition (cold temperatures, waterlogged active layer).
+Deep Layers of undecomposed organic matter (peat). Nutrient cycling is limited by low temperature
+and Slow microbial activity.
 
 **Adaptations**: low-growing cushion plants (avoid wind damage, benefit from insulating snow layer);
 Hairy leaves (trap warm air); dark pigments (absorb more heat); shallow root systems (confined to
-Active layer above permafrost); clonal reproduction (asexual reproduction is more reliable than sexual
-Reproduction in harsh conditions); antifreeze compounds in cells.
+Active layer above permafrost); clonal reproduction (asexual reproduction is more reliable than
+sexual Reproduction in harsh conditions); antifreeze compounds in cells.
 
 ### Grassland/Savanna
 
@@ -1346,18 +1381,18 @@ Reproduction in harsh conditions); antifreeze compounds in cells.
 ($500$--$1500\;\mathrm{mm/year}$). Temperate grassland: cold winters, hot summers
 ($250$--$750\;\mathrm{mm/year}$).
 
-**Structure**: dominated by grasses (C4 grasses in tropical savanna, C3 in temperate). Scattered trees
-In savanna (baobab, acacia). Deep, fertile soils (mollisol, chernozem) with high organic content from
-Grass root systems.
+**Structure**: dominated by grasses (C4 grasses in tropical savanna, C3 in temperate). Scattered
+trees In savanna (baobab, acacia). Deep, fertile soils (mollisol, chernozem) with high organic
+content from Grass root systems.
 
-**Fire**: a major ecological factor. Grasses recover quickly after fire (meristems at or below ground
-Level). Fire prevents tree establishment, maintaining grassland. Fire also recycles nutrients
+**Fire**: a major ecological factor. Grasses recover quickly after fire (meristems at or below
+ground Level). Fire prevents tree establishment, maintaining grassland. Fire also recycles nutrients
 (ash returns minerals to the soil).
 
-**Adaptations**: deep root systems ($2$--$3\;\mathrm{m}$); growth from basal meristems (grazing-resistant);
-Silica deposits in leaves (deter herbivory); C4 photosynthesis (tropical grasses: efficient at high
-Temperatures and low $\mathrm{CO}_2$); tussock growth form (protects meristems from fire and grazing);
-Drought deciduousness (trees shed leaves during dry season).
+**Adaptations**: deep root systems ($2$--$3\;\mathrm{m}$); growth from basal meristems
+(grazing-resistant); Silica deposits in leaves (deter herbivory); C4 photosynthesis (tropical
+grasses: efficient at high Temperatures and low $\mathrm{CO}_2$); tussock growth form (protects
+meristems from fire and grazing); Drought deciduousness (trees shed leaves during dry season).
 
 ### Aquatic Biomes (Brief)
 
@@ -1394,10 +1429,10 @@ Only $2.5\%$ of the Earth's land surface. Conservation resources are concentrate
 Maximum impact.
 
 **Island biogeography and conservation design**: the theory of island biogeography (MacArthur and
-Wilson, 1967) predicts that larger habitat patches and patches closer to other patches support
-More species. This has direct implications for reserve design: larger, connected reserves preserve
-More species than small, isolated ones. Wildlife corridors between habitat patches reduce the
-Extinction risk of species with large territories.
+Wilson, 1967) predicts that larger habitat patches and patches closer to other patches support More
+species. This has direct implications for reserve design: larger, connected reserves preserve More
+species than small, isolated ones. Wildlife corridors between habitat patches reduce the Extinction
+risk of species with large territories.
 
 **Edge effects**: the boundary between a habitat patch and the surrounding matrix (e.g., forest edge
 Adjacent to agricultural land) has different environmental conditions (more light, wind, temperature
@@ -1413,8 +1448,8 @@ Supplemented by smaller patches.
 
 **IUCN Red List categories**: Extinct (EX), Extinct in the Wild (EW), Critically Endangered (CR),
 Endangered (EN), Vulnerable (VU), Near Threatened (NT), Least Concern (LC). Criteria include:
-Population size reduction, geographic range, population size (small), population decline, probability
-Of extinction.
+Population size reduction, geographic range, population size (small), population decline,
+probability Of extinction.
 
 **CITES** (Convention on International Trade in Endangered Species): regulates international trade
 In specimens of wild animals and plants. Appendix I (most endangered: trade banned), Appendix II
@@ -1426,14 +1461,15 @@ A **keystone species** is one whose impact on the community is disproportionatel
 Its abundance. Removing a keystone species causes dramatic changes in community structure.
 
 **Classic example -- starfish (Pisaster ochraceus)**: Paine (1966) experimentally removed starfish
-From intertidal rock pools. The starfish prey on mussels (Mytilus). Without starfish predation, mussels
-Outcompeted other sessile species (barnacles, algae, sponges), reducing species diversity from 15 to
-8 species. This was the first experimental demonstration of a keystone species.
+From intertidal rock pools. The starfish prey on mussels (Mytilus). Without starfish predation,
+mussels Outcompeted other sessile species (barnacles, algae, sponges), reducing species diversity
+from 15 to 8 species. This was the first experimental demonstration of a keystone species.
 
-**Trophic cascade in Yellowstone**: the reintroduction of wolves in 1995 triggered a trophic cascade:
-Wolves reduced elk populations, which allowed willow and aspen to recover, which provided habitat for
-Beavers, whose dams created wetlands benefiting fish, amphibians, and birds. This is an example of a
-**top-down trophic cascade** (predator $\to$ herbivore $\to$ plant $\to$ ecosystem engineer).
+**Trophic cascade in Yellowstone**: the reintroduction of wolves in 1995 triggered a trophic
+cascade: Wolves reduced elk populations, which allowed willow and aspen to recover, which provided
+habitat for Beavers, whose dams created wetlands benefiting fish, amphibians, and birds. This is an
+example of a **top-down trophic cascade** (predator $\to$ herbivore $\to$ plant $\to$ ecosystem
+engineer).
 
 **Other keystone species examples**: sea otters (prey on sea urchins, maintaining kelp forests);
 Beavers (ecosystem engineers that create wetland habitat); elephants (modify savanna vegetation,

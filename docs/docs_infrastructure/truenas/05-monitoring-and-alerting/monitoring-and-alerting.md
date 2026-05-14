@@ -1,24 +1,27 @@
 ---
 id: monitoring-and-alerting
 title: Monitoring and Alerting
-description: "Monitoring and Alerting — TrueNAS Built-in Monitoring; Dashboard; System Information; SMART Tests with worked examples and exam-style questions."
+description:
+  'Monitoring and Alerting — TrueNAS Built-in Monitoring; Dashboard; System Information; SMART Tests
+  with worked examples and exam-style questions.'
 slug: monitoring-and-alerting
 ---
+
 ## TrueNAS Built-in Monitoring
 
 ### Dashboard
 
 The TrueNAS dashboard provides a real-time overview of system health:
 
-| Widget | Information |
+| Widget             | Information                                  |
 | ------------------ | -------------------------------------------- |
-| CPU Usage | Per-core utilization percentage |
-| Memory Usage | Used, free, cached, and wired memory |
-| Pool Usage | Per-pool capacity, used, and available space |
-| Network | Interface throughput (Rx/Tx) |
-| Disk I/O | Read/write throughput per pool or disk |
-| System Temperature | CPU, disk, and enclosure temperatures |
-| System Load | 1, 5, and 15 minute load averages |
+| CPU Usage          | Per-core utilization percentage              |
+| Memory Usage       | Used, free, cached, and wired memory         |
+| Pool Usage         | Per-pool capacity, used, and available space |
+| Network            | Interface throughput (Rx/Tx)                 |
+| Disk I/O           | Read/write throughput per pool or disk       |
+| System Temperature | CPU, disk, and enclosure temperatures        |
+| System Load        | 1, 5, and 15 minute load averages            |
 
 ### System Information
 
@@ -35,11 +38,11 @@ Navigate to **System** → **Advanced** for detailed system information:
 
 ### SMART Test Types
 
-| Test Type | Duration | What It Tests | Recommended Frequency |
+| Test Type       | Duration    | What It Tests                               | Recommended Frequency |
 | --------------- | ----------- | ------------------------------------------- | --------------------- |
-| Short | 2–5 minutes | Basic electrical and mechanical tests | Daily |
-| Long (Extended) | 2–6 hours | Full surface scan, complete mechanical test | Weekly |
-| Conveyance | 5 minutes | Vendor-specific (transport damage check) | After shipping |
+| Short           | 2–5 minutes | Basic electrical and mechanical tests       | Daily                 |
+| Long (Extended) | 2–6 hours   | Full surface scan, complete mechanical test | Weekly                |
+| Conveyance      | 5 minutes   | Vendor-specific (transport damage check)    | After shipping        |
 
 ### Configuring SMART Tests on TrueNAS
 
@@ -64,17 +67,17 @@ smartctl -l selftest /dev/sda
 
 Critical attributes to monitor:
 
-| Attribute | HDD | SSD | Warning Threshold |
+| Attribute                | HDD | SSD | Warning Threshold                         |
 | ------------------------ | --- | --- | ----------------------------------------- |
-| Reallocated Sector Count | Yes | N/A | Any increase |
-| Current Pending Sector | Yes | N/A | Any non-zero value |
-| Offline Uncorrectable | Yes | N/A | Any non-zero value |
-| Media Wear Indicator | N/A | Yes | &lt; 10% remaining |
-| Available Spare | N/A | Yes | &lt; 10% |
-| Temperature | Yes | Yes | &gt; 55 °C (HDD), &gt; 70 °C (SSD) |
-| Power-On Hours | Yes | Yes | Compare against MTBF (HDD: ~50,000 hours) |
-| Command Timeout | Yes | Yes | Any non-zero value |
-| UDMA CRC Error Count | Yes | Yes | Any non-zero value (cable issue) |
+| Reallocated Sector Count | Yes | N/A | Any increase                              |
+| Current Pending Sector   | Yes | N/A | Any non-zero value                        |
+| Offline Uncorrectable    | Yes | N/A | Any non-zero value                        |
+| Media Wear Indicator     | N/A | Yes | &lt; 10% remaining                        |
+| Available Spare          | N/A | Yes | &lt; 10%                                  |
+| Temperature              | Yes | Yes | &gt; 55 °C (HDD), &gt; 70 °C (SSD)        |
+| Power-On Hours           | Yes | Yes | Compare against MTBF (HDD: ~50,000 hours) |
+| Command Timeout          | Yes | Yes | Any non-zero value                        |
+| UDMA CRC Error Count     | Yes | Yes | Any non-zero value (cable issue)          |
 
 ---
 
@@ -90,12 +93,12 @@ Critical attributes to monitor:
 
 ### Scrub Scheduling Best Practices
 
-| Pool Type | Scrub Frequency | Rationale |
+| Pool Type                  | Scrub Frequency | Rationale                                    |
 | -------------------------- | --------------- | -------------------------------------------- |
-| All-HDD | Monthly | HDD scrub is slow (1–3 days for large pools) |
-| All-SSD | Weekly | SSD scrub is fast (1–4 hours) |
-| Hybrid (SSD special + HDD) | Monthly | Scrub the entire pool monthly |
-| Critical data | Bi-weekly | Trade I/O impact for earlier detection |
+| All-HDD                    | Monthly         | HDD scrub is slow (1–3 days for large pools) |
+| All-SSD                    | Weekly          | SSD scrub is fast (1–4 hours)                |
+| Hybrid (SSD special + HDD) | Monthly         | Scrub the entire pool monthly                |
+| Critical data              | Bi-weekly       | Trade I/O impact for earlier detection       |
 
 ### Monitoring Scrub Progress
 
@@ -117,22 +120,24 @@ zpool status tank
 
 1. Navigate to **System** → **Alert Settings**.
 2. Configure the email settings:
- - SMTP server address and port
- - Encryption (TLS/SSL)
- - Authentication (username/password or app-specific password)
- - From address
- - To addresses (comma-separated)
+
+- SMTP server address and port
+- Encryption (TLS/SSL)
+- Authentication (username/password or app-specific password)
+- From address
+- To addresses (comma-separated)
+
 3. Send a test email to verify the configuration.
 
 ### Alert Levels
 
 TrueNAS classifies alerts into severity levels:
 
-| Level | Meaning | Example |
+| Level       | Meaning                   | Example                               |
 | ----------- | ------------------------- | ------------------------------------- |
-| Critical | Immediate action required | Pool degraded, disk failure |
-| Warning | Attention needed | SMART predictive failure, temperature |
-| Information | Informational | Scrub completed, snapshot created |
+| Critical    | Immediate action required | Pool degraded, disk failure           |
+| Warning     | Attention needed          | SMART predictive failure, temperature |
+| Information | Informational             | Scrub completed, snapshot created     |
 
 ### Common Alert Triggers
 
@@ -156,22 +161,25 @@ NUT provides UPS monitoring and automated shutdown for TrueNAS:
 1. Connect the UPS to the TrueNAS server via USB.
 2. Navigate to **System** → **UPS** → **Add**.
 3. Configure the UPS settings:
- - Identifier (e.g., `ups`)
- - Driver (e.g., `usbhid-ups` for USB-connected UPS)
- - Port (e.g., `auto`)
- - Shutdown mode (UPS goes to battery, or low battery)
+
+- Identifier (e.g., `ups`)
+- Driver (e.g., `usbhid-ups` for USB-connected UPS)
+- Port (e.g., `auto`)
+- Shutdown mode (UPS goes to battery, or low battery)
+
 4. Configure the shutdown behavior:
- - Minutes on battery before shutdown (e.g., 5 minutes)
- - Load percentage threshold (e.g., shut down at 50% battery)
+
+- Minutes on battery before shutdown (e.g., 5 minutes)
+- Load percentage threshold (e.g., shut down at 50% battery)
 
 ### UPS Configuration Parameters
 
-| Setting | Value | Rationale |
+| Setting                | Value        | Rationale                                    |
 | ---------------------- | ------------ | -------------------------------------------- |
-| Shutdown timer | 5–10 minutes | Enough time for clean shutdown, not too long |
-| Low battery threshold | 20–30% | Prevents battery exhaustion |
-| Extra delay | 30 seconds | Allows other systems to shut down first |
-| No communication grace | 60 seconds | Tolerates brief USB disconnects |
+| Shutdown timer         | 5–10 minutes | Enough time for clean shutdown, not too long |
+| Low battery threshold  | 20–30%       | Prevents battery exhaustion                  |
+| Extra delay            | 30 seconds   | Allows other systems to shut down first      |
+| No communication grace | 60 seconds   | Tolerates brief USB disconnects              |
 
 ### Multi-System UPS Monitoring
 
@@ -234,18 +242,18 @@ TrueNAS can export metrics to Prometheus for visualization in Grafana:
 
 ### Key Metrics to Monitor
 
-| Metric | Source | Alert Threshold |
+| Metric             | Source    | Alert Threshold                       |
 | ------------------ | --------- | ------------------------------------- |
-| Pool capacity | ZFS | &gt; 80% warning, &gt; 90% critical |
-| Pool health | ZFS | Any non-ONLINE state |
-| Disk temperature | SMART | &gt; 55 °C (HDD), &gt; 70 °C (SSD) |
-| CPU utilization | System | &gt; 90% for 5+ minutes |
-| Memory utilization | System | &gt; 90% sustained |
-| ARC hit ratio | ZFS | &lt; 80% (consider more RAM or L2ARC) |
-| Scrub errors | ZFS | Any errors |
-| Replication lag | ZFS | &gt; 24 hours behind |
-| UPS battery | NUT | On battery, low battery |
-| Network errors | Interface | Any CRC, frame, or drop errors |
+| Pool capacity      | ZFS       | &gt; 80% warning, &gt; 90% critical   |
+| Pool health        | ZFS       | Any non-ONLINE state                  |
+| Disk temperature   | SMART     | &gt; 55 °C (HDD), &gt; 70 °C (SSD)    |
+| CPU utilization    | System    | &gt; 90% for 5+ minutes               |
+| Memory utilization | System    | &gt; 90% sustained                    |
+| ARC hit ratio      | ZFS       | &lt; 80% (consider more RAM or L2ARC) |
+| Scrub errors       | ZFS       | Any errors                            |
+| Replication lag    | ZFS       | &gt; 24 hours behind                  |
+| UPS battery        | NUT       | On battery, low battery               |
+| Network errors     | Interface | Any CRC, frame, or drop errors        |
 
 ### Grafana Dashboard Examples
 
@@ -284,14 +292,14 @@ journalctl -b
 
 ### Common Log Patterns to Monitor
 
-| Pattern | Severity | Action |
+| Pattern                     | Severity    | Action                                      |
 | --------------------------- | ----------- | ------------------------------------------- |
-| `zfs: checksum error` | Critical | Check pool health, scrub, replace disk |
-| `ata1: hard resetting link` | Warning | Check SATA cable and connection |
-| `mpt2sas: device reset` | Warning | Check SAS controller and disk |
-| `smbd: connection denied` | Information | Check authentication configuration |
-| `kernel: out of memory` | Critical | Add RAM, check for memory leaks |
-| `UPS: on battery` | Warning | Monitor battery level, prepare for shutdown |
+| `zfs: checksum error`       | Critical    | Check pool health, scrub, replace disk      |
+| `ata1: hard resetting link` | Warning     | Check SATA cable and connection             |
+| `mpt2sas: device reset`     | Warning     | Check SAS controller and disk               |
+| `smbd: connection denied`   | Information | Check authentication configuration          |
+| `kernel: out of memory`     | Critical    | Add RAM, check for memory leaks             |
+| `UPS: on battery`           | Warning     | Monitor battery level, prepare for shutdown |
 
 ---
 
@@ -313,11 +321,11 @@ TB/month will fill a 20 TB pool in approximately 20 months (accounting for RAIDZ
 
 ### Planning Guidelines
 
-| Metric | Action Threshold |
+| Metric              | Action Threshold                                   |
 | ------------------- | -------------------------------------------------- |
-| Pool usage &gt; 70% | Plan expansion within 6 months |
-| Pool usage &gt; 80% | Order drives immediately |
-| Pool usage &gt; 90% | Critical — expand or delete data |
+| Pool usage &gt; 70% | Plan expansion within 6 months                     |
+| Pool usage &gt; 80% | Order drives immediately                           |
+| Pool usage &gt; 90% | Critical — expand or delete data                   |
 | Pool usage &gt; 95% | Emergency — ZFS performance degrades significantly |
 
 ---
@@ -331,13 +339,13 @@ Alert fatigue occurs when too many low-priority alerts desensitize administrator
 **Strategies:**
 
 1. **Set appropriate thresholds:** Do not alert on every minor event. Temperature warnings at 45 °C
- are noise; warnings at 55 °C are actionable.
+   are noise; warnings at 55 °C are actionable.
 2. **Aggregate alerts:** Group related alerts (e.g., "SMART errors on pool tank" rather than
- individual errors per disk).
+   individual errors per disk).
 3. **Use escalation:** Critical alerts go to immediate notification (email + SMS); warnings go to a
- daily digest.
+   daily digest.
 4. **Review and prune:** Regularly review alert rules and remove or adjust ones that trigger
- frequently without action.
+   frequently without action.
 5. **Acknowledge and track:** Use a ticketing system to track alert acknowledgment and resolution.
 
 ---
@@ -385,14 +393,14 @@ The team understands what each alert means and what action to take.
 
 The TrueNAS dashboard provides real-time metrics for:
 
-| Category | Metrics | Refresh Rate |
+| Category | Metrics                                       | Refresh Rate |
 | -------- | --------------------------------------------- | ------------ |
-| CPU | Per-core utilization, temperature, frequency | 2 seconds |
-| Memory | Used, free, cached, wired, swap | 2 seconds |
-| Network | Per-interface Rx/Tx throughput, errors | 2 seconds |
-| Disk | Per-disk I/O throughput, latency, queue depth | 2 seconds |
-| Pool | Per-pool I/O throughput, capacity, ARC stats | 5 seconds |
-| UPS | Battery level, load, estimated runtime | 5 seconds |
+| CPU      | Per-core utilization, temperature, frequency  | 2 seconds    |
+| Memory   | Used, free, cached, wired, swap               | 2 seconds    |
+| Network  | Per-interface Rx/Tx throughput, errors        | 2 seconds    |
+| Disk     | Per-disk I/O throughput, latency, queue depth | 2 seconds    |
+| Pool     | Per-pool I/O throughput, capacity, ARC stats  | 5 seconds    |
+| UPS      | Battery level, load, estimated runtime        | 5 seconds    |
 
 ### Historical Metrics
 
@@ -503,16 +511,16 @@ During a scrub, ZFS reads every block in the pool and verifies its checksum:
 3. Compare computed vs. Stored checksum.
 4. If they match: data is intact. Continue.
 5. If they do not match: a. Read the redundant copy (mirror) or recompute from parity (RAIDZ). B.
- Verify the corrected data. C. Write the corrected data back to the bad block. D. Log the error.
+   Verify the corrected data. C. Write the corrected data back to the bad block. D. Log the error.
 
 ### Scrub Performance Impact
 
-| Pool Type | Scrub Speed | I/O Impact |
+| Pool Type    | Scrub Speed       | I/O Impact                                       |
 | ------------ | ----------------- | ------------------------------------------------ |
-| All-SSD | 500 MB/s – 2 GB/s | Low (SSDs handle concurrent scrub + workload) |
-| All-HDD | 50–150 MB/s | High (scrub consumes significant read bandwidth) |
-| Mirror (SSD) | 1–2 GB/s | Low |
-| RAIDZ2 (HDD) | 50–100 MB/s | High |
+| All-SSD      | 500 MB/s – 2 GB/s | Low (SSDs handle concurrent scrub + workload)    |
+| All-HDD      | 50–150 MB/s       | High (scrub consumes significant read bandwidth) |
+| Mirror (SSD) | 1–2 GB/s          | Low                                              |
+| RAIDZ2 (HDD) | 50–100 MB/s       | High                                             |
 
 During a scrub of an HDD pool, normal I/O performance can degrade by 30–50%. Schedule scrubs during
 Off-peak hours.
@@ -582,11 +590,11 @@ To: admin@example.com
 
 For environments with multiple administrators, route alerts based on severity:
 
-| Severity | Notification Method | Response Time |
+| Severity    | Notification Method                  | Response Time     |
 | ----------- | ------------------------------------ | ----------------- |
-| Critical | Email + SMS (via PagerDuty/Opsgenie) | Immediate |
-| Warning | Email | Within 4 hours |
-| Information | Email (daily digest) | Next business day |
+| Critical    | Email + SMS (via PagerDuty/Opsgenie) | Immediate         |
+| Warning     | Email                                | Within 4 hours    |
+| Information | Email (daily digest)                 | Next business day |
 
 ## Prometheus Integration for TrueNAS
 
@@ -605,14 +613,14 @@ sudo cp node_exporter-1.7.0.linux-amd64/node_exporter /usr/local/bin/
 
 ### Key Metrics to Export
 
-| Metric | Source | Description |
+| Metric                           | Source                         | Description                   |
 | -------------------------------- | ------------------------------ | ----------------------------- |
-| `zfs_arc_stats` | `/proc/spl/kstat/zfs/arcstats` | ARC hit ratio, size, metadata |
-| `zfs_pool_stats` | `zpool list` | Pool capacity, health, I/O |
-| `smartmon_device` | `smartctl` | Disk temperatures, health |
-| `node_cpu_seconds_total` | `/proc/stat` | CPU utilization |
-| `node_memory_MemAvailable_bytes` | `/proc/meminfo` | Available memory |
-| `node_filesystem_avail_bytes` | `statvfs` | Filesystem free space |
+| `zfs_arc_stats`                  | `/proc/spl/kstat/zfs/arcstats` | ARC hit ratio, size, metadata |
+| `zfs_pool_stats`                 | `zpool list`                   | Pool capacity, health, I/O    |
+| `smartmon_device`                | `smartctl`                     | Disk temperatures, health     |
+| `node_cpu_seconds_total`         | `/proc/stat`                   | CPU utilization               |
+| `node_memory_MemAvailable_bytes` | `/proc/meminfo`                | Available memory              |
+| `node_filesystem_avail_bytes`    | `statvfs`                      | Filesystem free space         |
 
 ### Grafana Dashboard JSON
 
@@ -668,8 +676,8 @@ When the UPS detects a power failure:
 3. **Timer starts.** TrueNAS waits for the configured delay (e.g., 5 minutes).
 4. **If power is restored within the delay:** Normal operation resumes. No shutdown.
 5. **If timer expires:** TrueNAS initiates shutdown: a. Stop all services (SMB, NFS, apps). B. Sync
- all ZFS pools (`zpool sync`). C. Export all pools (`zpool export -a`). D. Shutdown the system
- (`shutdown -p now`).
+   all ZFS pools (`zpool sync`). C. Export all pools (`zpool export -a`). D. Shutdown the system
+   (`shutdown -p now`).
 6. **UPS signals low battery:** UPS sends the final "LB" signal and shuts itself down.
 
 ### Multi-System UPS Monitoring
@@ -706,13 +714,13 @@ For environments with multiple systems, centralize logs using:
 
 TrueNAS retains logs according to:
 
-| Log Type | Default Retention | Location |
+| Log Type        | Default Retention | Location           |
 | --------------- | ----------------- | ------------------ |
-| System logs | 1 week | `/var/log/` |
-| Audit logs | Configurable | `/var/log/audit/` |
-| SMB logs | Configurable | `/var/log/samba4/` |
-| App logs | Configurable | Per-app |
-| Middleware logs | Configurable | Per-app |
+| System logs     | 1 week            | `/var/log/`        |
+| Audit logs      | Configurable      | `/var/log/audit/`  |
+| SMB logs        | Configurable      | `/var/log/samba4/` |
+| App logs        | Configurable      | Per-app            |
+| Middleware logs | Configurable      | Per-app            |
 
 ### Log Analysis Scripts
 
@@ -768,11 +776,11 @@ Where:
 
 ### Alert Tiers
 
-| Tier | Severity | Response | Channel |
+| Tier | Severity                      | Response          | Channel        |
 | ---- | ----------------------------- | ----------------- | -------------- |
-| P0 | Critical, data at risk | Immediate | PagerDuty, SMS |
-| P1 | Warning, performance degraded | Within 1 hour | Email, Slack |
-| P2 | Informational, non-urgent | Next business day | Daily digest |
+| P0   | Critical, data at risk        | Immediate         | PagerDuty, SMS |
+| P1   | Warning, performance degraded | Within 1 hour     | Email, Slack   |
+| P2   | Informational, non-urgent     | Next business day | Daily digest   |
 
 ### Alert Suppression
 
@@ -893,27 +901,27 @@ tail -30 "$LOG" | awk -F',' '
 
 ### Capacity Planning Spreadsheet
 
-| Dataset | Current Usage | Monthly Growth | Months to 80% | Action Date |
+| Dataset      | Current Usage | Monthly Growth | Months to 80% | Action Date |
 | ------------ | ------------- | -------------- | ------------- | ----------- |
-| tank/data | 4.2 TB | 50 GB | 12 | 2026-04 |
-| tank/media | 8.7 TB | 100 GB | 3 | 2025-07 |
-| tank/backups | 2.1 TB | 30 GB | 18 | 2027-08 |
+| tank/data    | 4.2 TB        | 50 GB          | 12            | 2026-04     |
+| tank/media   | 8.7 TB        | 100 GB         | 3             | 2025-07     |
+| tank/backups | 2.1 TB        | 30 GB          | 18            | 2027-08     |
 
 ### When to Expand
 
-| Current Usage | Recommended Action |
+| Current Usage | Recommended Action                |
 | ------------- | --------------------------------- |
-| &lt; 50% | Monitor monthly, no action needed |
-| 50–70% | Plan expansion within 6 months |
-| 70–80% | Order drives, schedule expansion |
-| 80–90% | Urgent: expand within 2 weeks |
-| &gt; 90% | Critical: expand immediately |
+| &lt; 50%      | Monitor monthly, no action needed |
+| 50–70%        | Plan expansion within 6 months    |
+| 70–80%        | Order drives, schedule expansion  |
+| 80–90%        | Urgent: expand within 2 weeks     |
+| &gt; 90%      | Critical: expand immediately      |
 
 ### Expansion Methods
 
 1. **Add vdevs:** Add new vdevs to the pool (increases both capacity and performance).
 2. **Replace with larger drives:** Replace drives one at a time with larger drives (increases
- capacity only).
+   capacity only).
 3. **Cloud sync archival:** Move cold data to cloud storage.
 4. **Data pruning:** Delete unnecessary snapshots, old logs, and temporary files.
 

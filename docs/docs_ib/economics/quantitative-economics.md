@@ -1,6 +1,8 @@
 ---
 title: Quantitative Economics
-description: "IB Economics — index numbers, real vs nominal calculations, compound interest, present value, cost-benefit analysis, Lorenz curve, Gini coefficient, poverty"
+description:
+  'IB Economics — index numbers, real vs nominal calculations, compound interest, present value,
+  cost-benefit analysis, Lorenz curve, Gini coefficient, poverty'
 slug: quantitative-economics
 ---
 
@@ -12,8 +14,8 @@ An index number measures the change in a variable (or group of variables) relati
 
 $$\text{Index}_t = \frac{P_t}{P_0} \times 100$$
 
-Where $P_t$ is the value in period $t$ and $P_0$ is the value in the base period. The base period
-Is assigned an index value of 100.
+Where $P_t$ is the value in period $t$ and $P_0$ is the value in the base period. The base period Is
+assigned an index value of 100.
 
 **Weighted index numbers** are used when aggregating multiple items with different importance. For a
 Price index with $n$ goods:
@@ -47,8 +49,8 @@ $$\text{Index}_{2020} = 120 \times \frac{105}{100} = 126$$
 
 ### Distinguishing Real and Nominal Values
 
-**Nominal values** are measured in current prices and reflect both quantity changes and price changes.
-**Real values** are adjusted for price level changes and reflect only quantity changes.
+**Nominal values** are measured in current prices and reflect both quantity changes and price
+changes. **Real values** are adjusted for price level changes and reflect only quantity changes.
 
 ### GDP Deflator
 
@@ -75,16 +77,16 @@ Approximately $3\%$.
 **Implications:**
 
 - If $\pi^e > i$ (expected inflation exceeds the nominal rate), the real interest rate is negative,
- discouraging saving and encouraging borrowing
+  discouraging saving and encouraging borrowing
 - Central banks set nominal rates; real rates depend on inflation expectations, which are not
- directly controllable
+  directly controllable
 
 ### Real Wage Calculations
 
 $$\text{Real wage}_t = \frac{\text{Nominal wage}_t}{\text{CPI}_t} \times 100$$
 
-A worker whose nominal wage rises from `USD 40000` to `USD 42000` while the CPI rises from 200 to 220
-Has experienced a decrease in real wages:
+A worker whose nominal wage rises from `USD 40000` to `USD 42000` while the CPI rises from 200 to
+220 Has experienced a decrease in real wages:
 
 $$\text{Real wage}_{\text{old}} = \frac{40000}{200} \times 100 = 200$$
 $$\text{Real wage}_{\text{new}} = \frac{42000}{220} \times 100 = 190.91$$
@@ -169,7 +171,7 @@ The total social benefits with the total social costs.
 3. **Discount future costs and benefits** to present values using a social discount rate
 4. **Calculate NPV** or the benefit-cost ratio (BCR)
 5. **Sensitivity analysis**: test how results change with different assumptions (discount rate,
- project lifespan, cost estimates)
+   project lifespan, cost estimates)
 6. **Make a recommendation** based on the analysis
 
 ### The Social Discount Rate
@@ -180,9 +182,9 @@ Consumption. A higher discount rate gives less weight to future benefits and cos
 Choosing the discount rate is critical and controversial:
 
 - **High discount rate** ($5$--$10\%$): favours projects with short payback periods; long-term
- environmental benefits receive little weight
+  environmental benefits receive little weight
 - **Low discount rate** ($1$--$3\%$): gives more weight to future generations; favours projects with
- long-term benefits (e.g., climate change mitigation)
+  long-term benefits (e.g., climate change mitigation)
 
 The **Ramsey formula** for the social discount rate:
 
@@ -202,18 +204,17 @@ $$\text{BCR} = \frac{\text{Present Value of Benefits}}{\text{Present Value of Co
 ### Challenges in CBA
 
 - **Valuing non-market goods**: health, environmental quality, and time savings are difficult to
- value in monetary terms. Techniques include:
- - **Hedonic pricing**: inferring the value of environmental amenities from property prices
- - **Travel cost method**: estimating the value of recreational sites from the costs visitors
- incur
- - **Contingent valuation**: surveying people's willingness to pay (WTP) or willingness to accept
- (WTA) compensation
-- **Distributional effects**: CBA considers aggregate benefits and costs without
- addressing who gains and who loses. A project with positive NPV may harm a disadvantaged group
+  value in monetary terms. Techniques include:
+- **Hedonic pricing**: inferring the value of environmental amenities from property prices
+- **Travel cost method**: estimating the value of recreational sites from the costs visitors incur
+- **Contingent valuation**: surveying people's willingness to pay (WTP) or willingness to accept
+  (WTA) compensation
+- **Distributional effects**: CBA considers aggregate benefits and costs without addressing who
+  gains and who loses. A project with positive NPV may harm a disadvantaged group
 - **Uncertainty**: future costs and benefits are inherently uncertain; sensitivity analysis helps
- but cannot eliminate this
-- **Intergenerational equity**: projects with very long time horizons (e.g., nuclear waste
- disposal, climate change) raise ethical questions about discounting future welfare
+  but cannot eliminate this
+- **Intergenerational equity**: projects with very long time horizons (e.g., nuclear waste disposal,
+  climate change) raise ethical questions about discounting future welfare
 
 ## The Lorenz Curve and Gini Coefficient
 
@@ -225,7 +226,7 @@ Of the population, ordered from poorest to richest.
 - The horizontal axis measures the cumulative share of the population (0 to 100%)
 - The vertical axis measures the cumulative share of income (0 to 100%)
 - The **45-degree line of perfect equality** represents the scenario where each percentile of the
- population earns the same share of income
+  population earns the same share of income
 
 The further the Lorenz curve deviates from the 45-degree line, the greater the inequality.
 
@@ -239,7 +240,7 @@ Under the Lorenz curve.
 - $G = 0$: perfect equality (the Lorenz curve coincides with the 45-degree line)
 - $G = 1$: maximum inequality (one person has all the income)
 - In practice, Gini coefficients range from approximately 0.20 (highly egalitarian, e.g., Nordic
- countries) to 0.60 or above (highly unequal, e.g., South Africa, Brazil)
+  countries) to 0.60 or above (highly unequal, e.g., South Africa, Brazil)
 
 **Calculating G from grouped data:**
 
@@ -253,7 +254,7 @@ Where $p_0 = 0$ and $L_0 = 0$.
 
 | Cumulative population share ($p_i$) | 0.20 | 0.40 | 0.60 | 0.80 | 1.00 |
 | ----------------------------------- | ---- | ---- | ---- | ---- | ---- |
-| Cumulative income share ($L_i$) | 0.05 | 0.15 | 0.30 | 0.50 | 1.00 |
+| Cumulative income share ($L_i$)     | 0.05 | 0.15 | 0.30 | 0.50 | 1.00 |
 
 $$G = 1 - [(0.2 - 0)(0.05 + 0) + (0.4 - 0.2)(0.15 + 0.05) + (0.6 - 0.4)(0.30 + 0.15) + (0.8 - 0.6)(0.50 + 0.30) + (1.0 - 0.8)(1.00 + 0.50)]$$
 
@@ -264,7 +265,7 @@ $$G = 1 - [0.01 + 0.04 + 0.09 + 0.16 + 0.30] = 1 - 0.60 = 0.40$$
 - It is a summary measure that does not reveal where in the distribution inequality is concentrated
 - Two countries with the same Gini coefficient can have very different income distributions
 - It does not reflect absolute income levels -- a poor country and a rich country can have the same
- Gini coefficient
+  Gini coefficient
 - It is sensitive to the middle of the distribution and less sensitive to changes at the extremes
 
 ## Poverty Measures
@@ -327,7 +328,7 @@ The HDI combines three dimensions:
 
 1. **Long and healthy life**: measured by life expectancy at birth
 2. **Knowledge**: measured by mean years of schooling (for adults) and expected years of schooling
- (for children)
+   (for children)
 3. **Standard of living**: measured by GNI per capita (PPP, USD)
 
 ### Calculation Method
@@ -338,12 +339,12 @@ $$\text{Dimension index} = \frac{\text{Actual value} - \text{Minimum value}}{\te
 
 **Goalposts:**
 
-| Dimension | Indicator | Minimum | Maximum |
-| ------------------- | -------------------------- | ------- | ------- |
-| Long and healthy | Life expectancy at birth | 20 | 85 |
-| Knowledge | Mean years of schooling | 0 | 15 |
-| Knowledge | Expected years of schooling| 0 | 18 |
-| Standard of living | GNI per capita (PPP, USD) | 100 | 75000 |
+| Dimension          | Indicator                   | Minimum | Maximum |
+| ------------------ | --------------------------- | ------- | ------- |
+| Long and healthy   | Life expectancy at birth    | 20      | 85      |
+| Knowledge          | Mean years of schooling     | 0       | 15      |
+| Knowledge          | Expected years of schooling | 0       | 18      |
+| Standard of living | GNI per capita (PPP, USD)   | 100     | 75000   |
 
 The education index is the arithmetic mean of the two education indicators:
 
@@ -370,7 +371,8 @@ Expected years index $= \frac{14 - 0}{18 - 0} = 0.778$
 
 Education index $= \frac{0.667 + 0.778}{2} = 0.722$
 
-GNI index $= \frac{\ln(15000) - \ln(100)}{\ln(75000) - \ln(100)} = \frac{9.616 - 4.605}{11.225 - 4.605} = \frac{5.011}{6.620} = 0.757$
+GNI index
+$= \frac{\ln(15000) - \ln(100)}{\ln(75000) - \ln(100)} = \frac{9.616 - 4.605}{11.225 - 4.605} = \frac{5.011}{6.620} = 0.757$
 
 $$\text{HDI} = (0.846 \times 0.722 \times 0.757)^{1/3} = (0.462)^{1/3} = 0.773$$
 
@@ -392,8 +394,7 @@ Therefore: $I = S$ (investment equals saving).
 
 With government and the foreign sector:
 
-$$Y = C + I + G + (X - M)$$
-$$Y = C + S + T$$
+$$Y = C + I + G + (X - M)$$ $$Y = C + S + T$$
 
 Equilibrium: injections $=$ leakages:
 
@@ -402,8 +403,7 @@ $$I + G + X = S + T + M$$
 ### The Marginal Propensities
 
 - **Marginal propensity to consume (MPC)**: the fraction of additional income that is spent on
- consumption:
-  $$\mathrm{MPC} = \frac{\Delta C}{\Delta Y}$$
+  consumption: $$\mathrm{MPC} = \frac{\Delta C}{\Delta Y}$$
 - **Marginal propensity to save (MPS)**: the fraction of additional income that is saved:
   $$\mathrm{MPS} = \frac{\Delta S}{\Delta Y}$$
 - **Marginal propensity to tax (MPT)**: the fraction of additional income paid in tax:
@@ -420,7 +420,8 @@ In a closed economy with no government, the multiplier is:
 $$k = \frac{1}{\mathrm{MPS}} = \frac{1}{1 - \mathrm{MPC}}$$
 
 **Derivation:** an initial injection $\Delta I$ generates income $\Delta Y_1 = \Delta I$. Recipients
-Spend $\mathrm{MPC} \times \Delta Y_1$ of this, generating income $\Delta Y_2 = \mathrm`\`\{MPC}``^2 \times
+Spend $\mathrm{MPC} \times \Delta Y_1$ of this, generating income
+$\Delta Y_2 = \mathrm`\`\{MPC}``^2 \times
 \Delta I$, and so on:
 
 $$\Delta Y = \Delta I \times (1 + \mathrm{MPC} + \mathrm{MPC}^2 + \mathrm{MPC}^3 + \cdots)$$
@@ -449,9 +450,10 @@ If government spending and taxes increase by the same amount ($\Delta G = \Delta
 
 $$\Delta Y = \Delta G \times k_G + \Delta T \times k_T$$
 
-Where $k_G = \frac{1}{1 - \mathrm{MPC}}$ (government spending multiplier) and $k_T =
-\frac{-\mathrm`\`\{MPC}``}{1 - \mathrm`\`\{MPC}``}$ (tax multiplier, which is negative because higher taxes
-Reduce disposable income and consumption).
+Where $k_G = \frac{1}{1 - \mathrm{MPC}}$ (government spending multiplier) and
+$k_T =
+\frac{-\mathrm`\`\{MPC}``}{1 - \mathrm`\`\{MPC}``}$ (tax multiplier, which is negative because
+higher taxes Reduce disposable income and consumption).
 
 $$\Delta Y = \frac{\Delta G}{1 - \mathrm{MPC}} + \frac{-\mathrm{MPC} \times \Delta T}{1 - \mathrm{MPC}}$$
 
@@ -471,6 +473,7 @@ The Keynesian consumption function relates consumption to disposable income:
 $$C = a + bY_d$$
 
 Where:
+
 - $C$ = total consumption
 - $a$ = autonomous consumption (consumption when income is zero; financed by borrowing or dissaving)
 - $b$ = MPC (the slope of the consumption function)
@@ -492,18 +495,18 @@ Since $Y_d = C + S$:
 
 $$S = Y_d - C = Y_d - (a + bY_d) = -a + (1 - b)Y_d$$
 
-Where $-a$ is autonomous dissaving (when income is zero, households must consume $a$So they
-Dissave by $a$), and $(1 - b) = \mathrm{MPS}$.
+Where $-a$ is autonomous dissaving (when income is zero, households must consume $a$So they Dissave
+by $a$), and $(1 - b) = \mathrm{MPS}$.
 
 ### Factors Shifting the Consumption Function
 
 - **Wealth effects**: an increase in household wealth (rising house prices, stock market gains)
- shifts the consumption function upward at every income level
+  shifts the consumption function upward at every income level
 - **Interest rates**: higher interest rates encourage saving and discourage borrowing, shifting $C$
- downward
+  downward
 - **Consumer confidence**: optimistic expectations about future income increase current consumption
 - **Income distribution**: lower-income households have a higher MPC, so redistribution toward them
- increases aggregate consumption
+  increases aggregate consumption
 - **Demographics**: an aging population tends to have a lower aggregate MPC
 
 ### Permanent Income Hypothesis (Friedman)
@@ -516,9 +519,9 @@ $$C = k \times Y_p$$
 Where $k$ is the proportion of permanent income consumed and $Y_p$ is permanent income.
 
 - If current income exceeds permanent income (transitory positive income), households save most of
- the windfall rather than increasing consumption proportionally
+  the windfall rather than increasing consumption proportionally
 - If current income falls below permanent income (transitory negative income), households maintain
- consumption by drawing on savings
+  consumption by drawing on savings
 
 This implies that the MPC out of transitory income is much lower than the MPC out of permanent
 Income, which helps explain why temporary tax cuts tend to have limited stimulative effects.
@@ -566,11 +569,11 @@ $$Y^* = \frac{\text{Autonomous expenditure}}{1 - \mathrm{MPC}} = k \times \text{
 
 ### The Inflationary and Deflationary Gaps
 
-- **Deflationary (recessionary) gap**: equilibrium output $Y^*$ is below potential output $Y_f$. There
- is unused capacity and unemployment. The gap equals the horizontal distance between $Y^*$ and
- $Y_f$ on the Keynesian cross diagram
+- **Deflationary (recessionary) gap**: equilibrium output $Y^*$ is below potential output $Y_f$.
+  There is unused capacity and unemployment. The gap equals the horizontal distance between $Y^*$
+  and $Y_f$ on the Keynesian cross diagram
 - **Inflationary gap**: equilibrium output $Y^*$ exceeds potential output $Y_f$. The economy is
- overheating, and demand-pull inflation results
+  overheating, and demand-pull inflation results
 
 ### The Paradox of Thrift
 
@@ -579,9 +582,9 @@ The resulting decline in output and income may cause total saving to decrease ra
 
 $$S \uparrow \implies C \downarrow \implies Y \downarrow \implies S \downarrow$$
 
-This is because $S = -a + (1-b)Y$. If $Y$ falls by enough, the reduction in income can outweigh
-The increase in the saving rate. The paradox highlights the fallacy of composition: what is rational
-For an individual (saving more) may be harmful if everyone does it simultaneously.
+This is because $S = -a + (1-b)Y$. If $Y$ falls by enough, the reduction in income can outweigh The
+increase in the saving rate. The paradox highlights the fallacy of composition: what is rational For
+an individual (saving more) may be harmful if everyone does it simultaneously.
 
 ## IS-LM Analysis
 
@@ -598,9 +601,9 @@ Output. Therefore, the IS curve slopes downward.
 **Slope of the IS curve:** depends on the interest sensitivity of investment and the multiplier:
 
 - If investment is highly sensitive to interest rates (flat investment function), the IS curve is
- relatively flat
+  relatively flat
 - If the multiplier is large (high MPC), the IS curve is relatively flat (a given change in
- investment causes a large change in output)
+  investment causes a large change in output)
 
 **Shifts of the IS curve:**
 
@@ -611,35 +614,35 @@ Output. Therefore, the IS curve slopes downward.
 
 ### The LM Curve
 
-The LM (Liquidity-Money) curve shows all combinations of the interest rate ($r$) and output ($Y$)
-At which the money market is in equilibrium (money supply equals money demand).
+The LM (Liquidity-Money) curve shows all combinations of the interest rate ($r$) and output ($Y$) At
+which the money market is in equilibrium (money supply equals money demand).
 
 **Money demand (liquidity preference):**
 
 $$M^d = L_1(Y) + L_2(r)$$
 
 - $L_1(Y)$: transactions demand for money -- increases with income (more transactions require more
- money)
+  money)
 - $L_2(r)$: speculative demand for money -- decreases with interest rates (higher rates increase the
- opportunity cost of holding money)
+  opportunity cost of holding money)
 
 **Equilibrium:** $M^s = M^d = L_1(Y) + L_2(r)$Where $M^s$ is the (exogenously fixed) money supply.
 
-A higher level of output increases money demand, which (with a fixed money supply) requires a
-Higher interest rate to reduce speculative demand and restore equilibrium. Therefore, the LM curve
-Slopes upward.
+A higher level of output increases money demand, which (with a fixed money supply) requires a Higher
+interest rate to reduce speculative demand and restore equilibrium. Therefore, the LM curve Slopes
+upward.
 
 **Slope of the LM curve:**
 
 - If money demand is highly sensitive to interest rates (flat $L_2$ function), the LM curve is
- relatively flat
+  relatively flat
 - If money demand is highly sensitive to income (steep $L_1$ function), the LM curve is relatively
- steep
+  steep
 
 **Shifts of the LM curve:**
 
 - Expansionary monetary policy ($M^s \uparrow$) shifts LM rightward (more money available at every
- interest rate)
+  interest rate)
 - Contractionary monetary policy ($M^s \downarrow$) shifts LM leftward
 
 ### IS-LM Equilibrium
@@ -656,9 +659,9 @@ Output is smaller than the simple multiplier predicts.
 The extent of crowding out depends on the slope of the LM curve:
 
 - **Flat LM curve (liquidity trap)**: monetary policy is ineffective; fiscal policy is very
- effective. An increase in $G$ raises output with little crowding out because the central bank
- accommodates by increasing the money supply (or money demand is infinitely elastic at very low
- interest rates)
+  effective. An increase in $G$ raises output with little crowding out because the central bank
+  accommodates by increasing the money supply (or money demand is infinitely elastic at very low
+  interest rates)
 - **Steep LM curve**: fiscal policy is largely crowded out; monetary policy is more effective
 
 **Expansionary monetary policy** ($M^s \uparrow$): shifts LM rightward. The interest rate falls,
@@ -666,42 +669,42 @@ Stimulating investment and increasing output.
 
 ### The Liquidity Trap
 
-At very low interest rates, the speculative demand for money becomes infinitely elastic
-(Liquidity preference is absolute). The LM curve becomes horizontal. Monetary policy becomes
-Ineffective (increasing the money supply does not lower interest rates further because people are
-Willing to hold any amount of money at the near-zero rate). In this situation, fiscal policy is
-The only effective tool for stimulating output.
+At very low interest rates, the speculative demand for money becomes infinitely elastic (Liquidity
+preference is absolute). The LM curve becomes horizontal. Monetary policy becomes Ineffective
+(increasing the money supply does not lower interest rates further because people are Willing to
+hold any amount of money at the near-zero rate). In this situation, fiscal policy is The only
+effective tool for stimulating output.
 
-This situation was observed during the Global Financial Crisis (2008--09) and the COVID-19
-Pandemic, when central banks cut policy rates to near zero and turned to quantitative easing to
-Stimulate the economy.
+This situation was observed during the Global Financial Crisis (2008--09) and the COVID-19 Pandemic,
+when central banks cut policy rates to near zero and turned to quantitative easing to Stimulate the
+economy.
 
 ## Common Pitfalls
 
 - Confusing nominal and real values. Always check whether a value is in current prices (nominal) or
- constant prices (real) before making comparisons over time.
+  constant prices (real) before making comparisons over time.
 - Using the wrong discount rate in CBA. The social discount rate should reflect society's time
- preference, not the private sector's required rate of return. The choice of rate can dramatically
- alter the results of long-term projects.
+  preference, not the private sector's required rate of return. The choice of rate can dramatically
+  alter the results of long-term projects.
 - Confusing the Gini coefficient with absolute poverty measures. The Gini measures relative
- inequality; a country can have a low Gini but high absolute poverty, or a high Gini with low
- absolute poverty.
-- Calculating the HDI using arithmetic rather than geometric mean. Since 2010, the UNDP has used
- the geometric mean (which ensures that a very low score in one dimension cannot be fully
- compensated by high scores in others).
+  inequality; a country can have a low Gini but high absolute poverty, or a high Gini with low
+  absolute poverty.
+- Calculating the HDI using arithmetic rather than geometric mean. Since 2010, the UNDP has used the
+  geometric mean (which ensures that a very low score in one dimension cannot be fully compensated
+  by high scores in others).
 - Assuming the multiplier is always large. With high tax rates and high import propensities, the
- multiplier can be very small (close to 1 or even less than 1).
+  multiplier can be very small (close to 1 or even less than 1).
 - Confusing the consumption function with the saving function. The consumption function has a
- positive intercept (autonomous consumption); the saving function has a negative intercept
- (autonomous dissaving).
-- Forgetting that the IS-LM model assumes a fixed price level. It is a short-run model that does
- not capture the interaction between output and the price level (which is the domain of the AD-AS
- model).
+  positive intercept (autonomous consumption); the saving function has a negative intercept
+  (autonomous dissaving).
+- Forgetting that the IS-LM model assumes a fixed price level. It is a short-run model that does not
+  capture the interaction between output and the price level (which is the domain of the AD-AS
+  model).
 - Neglecting to distinguish between the money multiplier and the fiscal multiplier. The money
- multiplier relates to banking and the money supply; the fiscal multiplier relates to government
- spending and national income.
+  multiplier relates to banking and the money supply; the fiscal multiplier relates to government
+  spending and national income.
 - Confusing transitory income with permanent income. The permanent income hypothesis predicts that
- temporary tax changes have a much smaller effect on consumption than permanent ones.
+  temporary tax changes have a much smaller effect on consumption than permanent ones.
 
 ## Practice Problems
 
@@ -711,10 +714,10 @@ Stimulate the economy.
 A country's nominal GDP and GDP deflator are as follows:
 
 | Year | Nominal GDP (billion USD) | GDP Deflator (base year 2015 = 100) |
-| ---- | ------------------------- | ------------------------------------ |
-| 2018 | 1200 | 110 |
-| 2019 | 1350 | 118 |
-| 2020 | 1280 | 125 |
+| ---- | ------------------------- | ----------------------------------- |
+| 2018 | 1200                      | 110                                 |
+| 2019 | 1350                      | 118                                 |
+| 2020 | 1280                      | 125                                 |
 
 (a) Calculate real GDP for each year.
 
@@ -744,12 +747,12 @@ A government is evaluating a infrastructure project with the following expected 
 
 | Year | Costs | Benefits |
 | ---- | ----- | -------- |
-| 0 | 500 | 0 |
-| 1 | 50 | 100 |
-| 2 | 50 | 150 |
-| 3 | 50 | 200 |
-| 4 | 50 | 250 |
-| 5 | 50 | 300 |
+| 0    | 500   | 0        |
+| 1    | 50    | 100      |
+| 2    | 50    | 150      |
+| 3    | 50    | 200      |
+| 4    | 50    | 250      |
+| 5    | 50    | 300      |
 
 The social discount rate is $8\%$.
 
@@ -760,8 +763,8 @@ The social discount rate is $8\%$.
 (c) Recalculate the NPV using a discount rate of $12\%$. Is the decision sensitive to the discount
 Rate?
 
-(a) Net benefits each year: Year 0: $-500$Year 1: $+50$Year 2: $+100$Year 3: $+150$
-Year 4: $+200$Year 5: $+250$.
+(a) Net benefits each year: Year 0: $-500$Year 1: $+50$Year 2: $+100$Year 3: $+150$ Year 4:
+$+200$Year 5: $+250$.
 
 $$\text{NPV} = -500 + \frac{50}{1.08} + \frac{100}{1.08^2} + \frac{150}{1.08^3} + \frac{200}{1.08^4} + \frac{250}{1.08^5}$$
 
@@ -780,8 +783,8 @@ $$\text{NPV} = -500 + 44.64 + 79.72 + 106.77 + 127.10 + 141.86$$
 $$\text{NPV} = -500 + 500.09 = \$0.09 \text{ million}$$
 
 At $12\%$The NPV is approximately zero (borderline). The decision is sensitive to the discount rate:
-At $8\%$ the project is viable; at $12\%$ it barely breaks even. This highlights the
-Importance of sensitivity analysis in CBA.
+At $8\%$ the project is viable; at $12\%$ it barely breaks even. This highlights the Importance of
+sensitivity analysis in CBA.
 
 </details>
 
@@ -791,30 +794,30 @@ Importance of sensitivity analysis in CBA.
 A country's income distribution is as follows:
 
 | Income quintile (bottom to top) | Share of total income (%) |
-| ------------------------------- | ------------------------ |
-| Bottom 20% | 5 |
-| Second 20% | 10 |
-| Third 20% | 15 |
-| Fourth 20% | 20 |
-| Top 20% | 50 |
+| ------------------------------- | ------------------------- |
+| Bottom 20%                      | 5                         |
+| Second 20%                      | 10                        |
+| Third 20%                       | 15                        |
+| Fourth 20%                      | 20                        |
+| Top 20%                         | 50                        |
 
 (a) Plot the Lorenz curve data points.
 
 (b) Calculate the Gini coefficient.
 
-(c) A policy redistributes `USD 10` billion from the top quintile to the bottom quintile. Recalculate
-The Gini coefficient and comment.
+(c) A policy redistributes `USD 10` billion from the top quintile to the bottom quintile.
+Recalculate The Gini coefficient and comment.
 
 (a) Cumulative population and income shares:
 
 | Cumulative population (%) | Cumulative income (%) |
-| ------------------------ | --------------------- |
-| 0 | 0 |
-| 20 | 5 |
-| 40 | 15 |
-| 60 | 30 |
-| 80 | 50 |
-| 100 | 100 |
+| ------------------------- | --------------------- |
+| 0                         | 0                     |
+| 20                        | 5                     |
+| 40                        | 15                    |
+| 60                        | 30                    |
+| 80                        | 50                    |
+| 100                       | 100                   |
 
 (b) Using the trapezoidal method:
 
@@ -872,7 +875,8 @@ $0.3Y = 690$
 
 $Y^* = 2300$ billion USD
 
-(b) Multiplier $= \frac{1}{1 - \mathrm{MPC} + \mathrm{MPM}} = \frac{1}{1 - 0.8 + 0.1} = \frac{1}{0.3} = 3.33$
+(b) Multiplier
+$= \frac{1}{1 - \mathrm{MPC} + \mathrm{MPM}} = \frac{1}{1 - 0.8 + 0.1} = \frac{1}{0.3} = 3.33$
 
 $\Delta Y = 3.33 \times 50 = \$166.7$ billion
 
@@ -906,7 +910,8 @@ Expected years index $= \frac{13}{18} = 0.722$
 
 Education index $= \frac{0.567 + 0.722}{2} = 0.644$
 
-GNI index $= \frac{\ln(8000) - \ln(100)}{\ln(75000) - \ln(100)} = \frac{8.987 - 4.605}{11.225 - 4.605} = \frac{4.382}{6.620} = 0.662$
+GNI index
+$= \frac{\ln(8000) - \ln(100)}{\ln(75000) - \ln(100)} = \frac{8.987 - 4.605}{11.225 - 4.605} = \frac{4.382}{6.620} = 0.662$
 
 $\text{HDI}_P = (0.738 \times 0.644 \times 0.662)^{1/3} = (0.315)^{1/3} = 0.681$
 
@@ -920,7 +925,8 @@ Expected years index $= \frac{16}{18} = 0.889$
 
 Education index $= \frac{0.800 + 0.889}{2} = 0.844$
 
-GNI index $= \frac{\ln(40000) - \ln(100)}{\ln(75000) - \ln(100)} = \frac{10.596 - 4.605}{6.620} = \frac{5.991}{6.620} = 0.905$
+GNI index
+$= \frac{\ln(40000) - \ln(100)}{\ln(75000) - \ln(100)} = \frac{10.596 - 4.605}{6.620} = \frac{5.991}{6.620} = 0.905$
 
 $\text{HDI}_Q = (0.923 \times 0.844 \times 0.905)^{1/3} = (0.705)^{1/3} = 0.889$
 
@@ -938,8 +944,7 @@ At different income levels.
 
 An economy is described by the following equations:
 
-IS curve: $Y = 1200 - 50r$
-LM curve: $Y = 500 + 40r$
+IS curve: $Y = 1200 - 50r$ LM curve: $Y = 500 + 40r$
 
 (a) Find the equilibrium interest rate and output.
 
@@ -995,27 +1000,29 @@ $$P_P = \frac{\sum_{i=1}^{n} P_{i,t} \cdot Q_{i,t}}{\sum_{i=1}^{n} P_{i,0} \cdot
 
 $$P_F = \sqrt{P_L \times P_P}$$
 
-The Fisher index is considered "ideal" because it satisfies the time-reversal test ($P_{0 \to 1} \times P_{1 \to 0} = 1$) and the factor-reversal test, which neither Laspeyres nor Paasche satisfies individually.
+The Fisher index is considered "ideal" because it satisfies the time-reversal test
+($P_{0 \to 1} \times P_{1 \to 0} = 1$) and the factor-reversal test, which neither Laspeyres nor
+Paasche satisfies individually.
 
 ### CPI vs. RPI
 
-| Feature | CPI | RPI (Retail Price Index) |
-|---------|-----|-------------------------|
-| Coverage | Broader population coverage | Excludes top 4% of income earners and pensioner households |
-| Formula | Partially based on a geometric mean (accounts for substitution) | Uses arithmetic mean (Carli formula; upward bias) |
-| Housing costs | Includes owner-occupied housing costs (rental equivalence) | Includes mortgage interest payments (more volatile) |
-| Use | Target for inflation targeting (Bank of England) | Used for index-linked bonds, some pension calculations |
-| Bias | Lower substitution bias | Upward bias (overstates inflation) |
+| Feature       | CPI                                                             | RPI (Retail Price Index)                                   |
+| ------------- | --------------------------------------------------------------- | ---------------------------------------------------------- |
+| Coverage      | Broader population coverage                                     | Excludes top 4% of income earners and pensioner households |
+| Formula       | Partially based on a geometric mean (accounts for substitution) | Uses arithmetic mean (Carli formula; upward bias)          |
+| Housing costs | Includes owner-occupied housing costs (rental equivalence)      | Includes mortgage interest payments (more volatile)        |
+| Use           | Target for inflation targeting (Bank of England)                | Used for index-linked bonds, some pension calculations     |
+| Bias          | Lower substitution bias                                         | Upward bias (overstates inflation)                         |
 
 ### Worked Example: Constructing a Price Index
 
 A basket contains three goods with the following data:
 
 | Good | Base Year Price | Base Year Quantity | Year 2 Price | Year 2 Quantity |
-|------|----------------|-------------------|-------------|----------------|
-| A | 10 | 50 | 12 | 45 |
-| B | 5 | 100 | 6 | 90 |
-| C | 8 | 30 | 9 | 35 |
+| ---- | --------------- | ------------------ | ------------ | --------------- |
+| A    | 10              | 50                 | 12           | 45              |
+| B    | 5               | 100                | 6            | 90              |
+| C    | 8               | 30                 | 9            | 35              |
 
 **Laspeyres index:**
 
@@ -1037,29 +1044,27 @@ Does not account for consumer substitution toward goods whose relative prices ha
 ### Real GDP with Chain Weighting
 
 | Year | Nominal GDP (bn) | GDP Deflator |
-|------|-----------------|--------------|
-| 2018 | 500 | 100 |
-| 2019 | 550 | 105 |
-| 2020 | 540 | 112 |
+| ---- | ---------------- | ------------ |
+| 2018 | 500              | 100          |
+| 2019 | 550              | 105          |
+| 2020 | 540              | 112          |
 
 **Real GDP:**
 
-2018: $500/100 \times 100 = 500$
-2019: $550/105 \times 100 = 523.8$
-2020: $540/112 \times 100 = 482.1$
+2018: $500/100 \times 100 = 500$ 2019: $550/105 \times 100 = 523.8$ 2020:
+$540/112 \times 100 = 482.1$
 
 **Real GDP growth:**
 
-2018--2019: $(523.8 - 500)/500 \times 100 = 4.76\%$
-2019--2020: $(482.1 - 523.8)/523.8 \times 100 = -7.96\%$
+2018--2019: $(523.8 - 500)/500 \times 100 = 4.76\%$ 2019--2020:
+$(482.1 - 523.8)/523.8 \times 100 = -7.96\%$
 
 **Nominal GDP growth:**
 
-2018--2019: $(550 - 500)/500 \times 100 = 10.0\%$
-2019--2020: $(540 - 550)/550 \times 100 = -1.82\%$
+2018--2019: $(550 - 500)/500 \times 100 = 10.0\%$ 2019--2020: $(540 - 550)/550 \times 100 = -1.82\%$
 
-In 2020, nominal GDP fell by only 1.82% but real GDP fell by 7.96%. The difference is explained
-By inflation (GDP deflator rose from 105 to 112, a 6.67% increase).
+In 2020, nominal GDP fell by only 1.82% but real GDP fell by 7.96%. The difference is explained By
+inflation (GDP deflator rose from 105 to 112, a 6.67% increase).
 
 ### Real Interest Rate Applications
 
@@ -1071,23 +1076,23 @@ If actual inflation turns out to be $7\%$:
 
 Ex-post real rate $= 6\% - 7\% = -1\%$
 
-The depositor's purchasing power falls by 1% despite earning 6% nominal interest. This
-Redistributes wealth from lenders to borrowers.
+The depositor's purchasing power falls by 1% despite earning 6% nominal interest. This Redistributes
+wealth from lenders to borrowers.
 
 ### Real Wage Calculations Across Multiple Years
 
 A worker's nominal wage and CPI over four years:
 
 | Year | Nominal Wage | CPI (base 2018 = 100) | Real Wage |
-|------|-------------|----------------------|-----------|
-| 2018 | 40,000 | 100 | 40,000 |
-| 2019 | 42,000 | 106 | 39,623 |
-| 2020 | 44,000 | 112 | 39,286 |
-| 2021 | 48,000 | 120 | 40,000 |
+| ---- | ------------ | --------------------- | --------- |
+| 2018 | 40,000       | 100                   | 40,000    |
+| 2019 | 42,000       | 106                   | 39,623    |
+| 2020 | 44,000       | 112                   | 39,286    |
+| 2021 | 48,000       | 120                   | 40,000    |
 
-Despite nominal wage increases every year, the worker's purchasing power fell from 2018 to 2020
-And only returned to the 2018 level by 2021. The cumulative nominal increase was 20%, but the
-Real wage was unchanged over the four-year period.
+Despite nominal wage increases every year, the worker's purchasing power fell from 2018 to 2020 And
+only returned to the 2018 level by 2021. The cumulative nominal increase was 20%, but the Real wage
+was unchanged over the four-year period.
 
 ## Compound Interest and Present Value: Advanced (HL Extension)
 
@@ -1106,14 +1111,15 @@ $(1.00333)^{300} = e^{300 \times 0.00333} = e^{0.999} \approx 2.715$
 
 $$A = 300\,000 \times \frac{0.00333 \times 2.715}{2.715 - 1} = 300\,000 \times \frac{0.00904}{1.715} = 300\,000 \times 0.00527 = 1581$$
 
-Monthly payment $= \$1\,581$. Total repayment $= 1581 \times 300 = \$474\,300$. Total interest $= \$174\,300$.
+Monthly payment $= \$1\,581$. Total repayment $= 1581 \times 300 = \$474\,300$. Total interest
+$= \$174\,300$.
 
 ### Present Value with Uneven Cash Flows
 
 $$PV = \sum_{t=0}^{T} \frac{CF_t}{(1 + r)^t}$$
 
-**Worked example:** A project requires an initial investment of `USD 10,000` and generates the following
-Cash flows: Year 1: `USD 2,000`Year 2: `USD 4,000`Year 3: `USD 5,000`Year 4: `USD 3,000`.
+**Worked example:** A project requires an initial investment of `USD 10,000` and generates the
+following Cash flows: Year 1: `USD 2,000`Year 2: `USD 4,000`Year 3: `USD 5,000`Year 4: `USD 3,000`.
 Discount rate $= 8\%$.
 
 $$PV = -10\,000 + \frac{2\,000}{1.08} + \frac{4\,000}{1.08^2} + \frac{5\,000}{1.08^3} + \frac{3\,000}{1.08^4}$$
@@ -1132,6 +1138,7 @@ The IRR cannot be solved algebraically for $T > 2$; it requires numerical method
 Acceptable if IRR $>$ the required rate of return (cost of capital).
 
 **Limitations of IRR:**
+
 - May give multiple IRRs if cash flows change sign more than once (non-conventional projects)
 - Assumes reinvestment at the IRR, which may be unrealistic
 - Can lead to incorrect decisions when comparing mutually exclusive projects of different sizes
@@ -1143,23 +1150,23 @@ Acceptable if IRR $>$ the required rate of return (cost of capital).
 Given the following income distribution data:
 
 | Quintile (bottom to top) | Share of Income |
-|-------------------------|-----------------|
-| Bottom 20% | 3% |
-| Second 20% | 8% |
-| Third 20% | 14% |
-| Fourth 20% | 22% |
-| Top 20% | 53% |
+| ------------------------ | --------------- |
+| Bottom 20%               | 3%              |
+| Second 20%               | 8%              |
+| Third 20%                | 14%             |
+| Fourth 20%               | 22%             |
+| Top 20%                  | 53%             |
 
 **Step 1: Calculate cumulative shares**
 
 | Cumulative Population | Cumulative Income |
-|---------------------|-------------------|
-| 0% | 0% |
-| 20% | 3% |
-| 40% | 11% |
-| 60% | 25% |
-| 80% | 47% |
-| 100% | 100% |
+| --------------------- | ----------------- |
+| 0%                    | 0%                |
+| 20%                   | 3%                |
+| 40%                   | 11%               |
+| 60%                   | 25%               |
+| 80%                   | 47%               |
+| 100%                  | 100%              |
 
 **Step 2: Calculate the Gini coefficient using the trapezoidal method**
 
@@ -1175,12 +1182,12 @@ A Gini coefficient of 0.456 indicates moderate-to-high inequality.
 
 ### Interpreting Gini Coefficients
 
-| Gini Range | Inequality Level | Typical Countries |
-|------------|-----------------|-------------------|
-| Below 0.30 | Low | Nordic countries (Denmark ~0.25, Norway ~0.27) |
-| 0.30--0.40 | Moderate | Germany (~0.31), France (~0.32), Japan (~0.33) |
-| 0.40--0.50 | High | USA (~0.41), China (~0.47), Mexico (~0.46) |
-| Above 0.50 | Very high | Brazil (~0.53), South Africa (~0.63), Colombia (~0.54) |
+| Gini Range | Inequality Level | Typical Countries                                      |
+| ---------- | ---------------- | ------------------------------------------------------ |
+| Below 0.30 | Low              | Nordic countries (Denmark ~0.25, Norway ~0.27)         |
+| 0.30--0.40 | Moderate         | Germany (~0.31), France (~0.32), Japan (~0.33)         |
+| 0.40--0.50 | High             | USA (~0.41), China (~0.47), Mexico (~0.46)             |
+| Above 0.50 | Very high        | Brazil (~0.53), South Africa (~0.63), Colombia (~0.54) |
 
 ## Cost-Benefit Analysis: Methodology (HL Extension)
 
@@ -1189,28 +1196,29 @@ A Gini coefficient of 0.456 indicates moderate-to-high inequality.
 Sensitivity analysis tests how the NPV changes when key assumptions are varied:
 
 1. **One-at-a-time (OAT):** vary one parameter while holding others constant. Produces a tornado
- diagram showing which parameters have the largest impact on NPV
+   diagram showing which parameters have the largest impact on NPV
 2. **Scenario analysis:** define best-case, base-case, and worst-case scenarios with different
- combinations of parameter values
+   combinations of parameter values
 3. **Monte Carlo simulation:** assign probability distributions to uncertain parameters and simulate
- thousands of outcomes, producing a distribution of NPV values
+   thousands of outcomes, producing a distribution of NPV values
 
-**Worked example:** A project has base-case NPV of `USD 50` million. Sensitivity to the discount rate:
+**Worked example:** A project has base-case NPV of `USD 50` million. Sensitivity to the discount
+rate:
 
 | Discount Rate | NPV (USD million) |
-|---------------|-------------------|
-| 5% | 85 |
-| 8% (base) | 50 |
-| 10% | 28 |
-| 12% | 10 |
-| 15% | -15 |
+| ------------- | ----------------- |
+| 5%            | 85                |
+| 8% (base)     | 50                |
+| 10%           | 28                |
+| 12%           | 10                |
+| 15%           | -15               |
 
 The project is viable for discount rates up to approximately 14%. The IRR is approximately 14%.
 
 ### Distributional Weighting
 
-Standard CBA weights all costs and benefits equally regardless of who receives them. **Distributional
-Weighting** assigns higher weights to benefits accruing to disadvantaged groups:
+Standard CBA weights all costs and benefits equally regardless of who receives them.
+**Distributional Weighting** assigns higher weights to benefits accruing to disadvantaged groups:
 
 $$\text{Weighted NPV} = \sum_{t=0}^{T} \sum_{g=1}^{G} w_g \cdot \frac{B_{g,t} - C_{g,t}}{(1 + r)^t}$$
 
@@ -1224,10 +1232,10 @@ Potentially changing the investment decision.
 ### Common Pitfalls in CBA
 
 - Using a discount rate that is too high for long-term environmental projects, undervaluing future
- benefits
+  benefits
 - Ignoring non-market costs and benefits (air quality improvements, time savings, health impacts)
 - Double-counting benefits (e.g., counting both the increase in land values and the increase in
- economic activity that caused the land value increase)
+  economic activity that caused the land value increase)
 - Failing to account for opportunity costs (the value of resources in their next best use)
 - Ignoring distributional effects (a project with positive aggregate NPV may harm vulnerable groups)
 
@@ -1286,10 +1294,10 @@ Current income $Y$Making it path-dependent.
 
 ### Complete Worked Example
 
-Given: $a = 200$$b = 0.75$$t = 0.2$$T_0 = 50$$m = 0.1$$M_0 = 30$$I = 300$
-$G = 250$$X = 100$.
+Given: $a = 200$$b = 0.75$$t = 0.2$$T_0 = 50$$m = 0.1$$M_0 = 30$$I = 300$ $G = 250$$X = 100$.
 
-Autonomous expenditure: $A_0 = 200 - 0.75(50) + 300 + 250 + 100 - 30 = 200 - 37.5 + 300 + 250 + 100 - 30 = 782.5$
+Autonomous expenditure:
+$A_0 = 200 - 0.75(50) + 300 + 250 + 100 - 30 = 200 - 37.5 + 300 + 250 + 100 - 30 = 782.5$
 
 $k = \frac{1}{1 - 0.75(1 - 0.2) + 0.1} = \frac{1}{1 - 0.6 + 0.1} = \frac{1}{0.5} = 2.0$
 
@@ -1309,8 +1317,8 @@ $\Delta Y = 2.0 \times 40 = 80$. New $Y^* = 1645$.
 
 New tax revenue $= 0.2(1645) + 50 = 379$. Budget surplus $= 379 - 290 = 89$.
 
-The budget surplus falls from 113 to 89 even though tax revenue rises, because government
-Spending increases by more than the additional tax revenue (the multiplier effect).
+The budget surplus falls from 113 to 89 even though tax revenue rises, because government Spending
+increases by more than the additional tax revenue (the multiplier effect).
 
 ## Keynesian Cross Diagram and Algebra (HL Extension)
 
@@ -1326,8 +1334,8 @@ The Keynesian cross diagram plots:
 Equilibrium occurs at the intersection of the AE line and the 45-degree line.
 
 **Multiplier visualised:** the multiplier determines the slope of the AE line. A flatter AE line
-(lower $b$ or higher $t$ or $m$) implies a smaller multiplier. A steeper AE line implies a
-Larger multiplier.
+(lower $b$ or higher $t$ or $m$) implies a smaller multiplier. A steeper AE line implies a Larger
+multiplier.
 
 ### Inflationary and Deflationary Gaps
 
@@ -1362,9 +1370,8 @@ $\Delta S = \frac{-(1-b)(1-t)}{(1-b)(1-t) + m} \cdot \Delta a$
 
 $|\Delta S| < |\Delta a|$ because the denominator exceeds the numerator (since $m > 0$).
 
-The increase in the saving rate leads to a decrease in total saving. This is the paradox of
-Thrift: society ends up saving less because the contraction in income reduces the total amount
-Of saving.
+The increase in the saving rate leads to a decrease in total saving. This is the paradox of Thrift:
+society ends up saving less because the contraction in income reduces the total amount Of saving.
 
 ## IS-LM Model: Advanced (HL Extension)
 
@@ -1385,8 +1392,9 @@ $$r = \frac{a - bT_0 + e + G}{d} - \frac{1 - b}{d} Y$$
 This is the IS curve: $r$ as a function of $Y$.
 
 **Slope:** $-\frac{1-b}{d}$. The IS curve is flatter when:
+
 - $b$ is large (high MPC $\implies$ large multiplier $\implies$ a given change in $r$ causes a large
- change in $Y$ through the multiplier)
+  change in $Y$ through the multiplier)
 - $d$ is large (investment is highly sensitive to interest rates)
 
 ### Deriving the LM Curve
@@ -1398,6 +1406,7 @@ $$r = \frac{kY - M^s/P}{h}$$
 This is the LM curve: $r$ as a function of $Y$.
 
 **Slope:** $k/h$. The LM curve is steeper when:
+
 - $k$ is large (money demand is highly sensitive to income)
 - $h$ is small (money demand is insensitive to interest rates)
 
@@ -1422,6 +1431,7 @@ $$r^* = \frac{k(a - bT_0 + e + G) - (1-b) M^s/P}{dh + k(1-b)d}$$
 $$\frac{\partial Y}{\partial G} = \frac{h}{dh + k(1-b)d} = \frac{1}{(1-b) + \frac{dk}{h}}$$
 
 Fiscal policy is more effective when:
+
 - $h$ is large (LM is flat; money demand is sensitive to interest rates)
 - $d$ is small (investment is insensitive to interest rates; less crowding out)
 - $k$ is small (money demand is insensitive to income)
@@ -1431,10 +1441,11 @@ Fiscal policy is more effective when:
 $$\frac{\partial Y}{\partial M^s} = \frac{d/P}{dh + k(1-b)d} = \frac{1}{k + \frac{h(1-b)}{d}}$$
 
 Monetary policy is more effective when:
+
 - $d$ is large (investment is sensitive to interest rates)
 - $h$ is small (LM is steep; money demand is insensitive to interest rates)
-- $k$ is large (money demand is sensitive to income; a given change in $Y$ causes a large change
- in money demand, requiring a larger interest rate adjustment)
+- $k$ is large (money demand is sensitive to income; a given change in $Y$ causes a large change in
+  money demand, requiring a larger interest rate adjustment)
 
 ### The IS-LM-PC Framework
 
@@ -1443,22 +1454,22 @@ The IS-LM model can be extended to incorporate the Phillips curve:
 1. IS-LM determines the short-run equilibrium output $Y$ and interest rate $r$
 2. The output gap $(Y - Y^*)/Y^*$ determines the deviation of unemployment from the NAIRU
 3. The Phillips curve determines inflation: $\pi = \pi^e - \alpha(u - u_n)$
-4. If the central bank targets inflation, it adjusts the money supply (shifting LM) to achieve
- its target
+4. If the central bank targets inflation, it adjusts the money supply (shifting LM) to achieve its
+   target
 
-This framework provides a bridge between the short-run IS-LM analysis and the medium-run
-Phillips curve analysis.
+This framework provides a bridge between the short-run IS-LM analysis and the medium-run Phillips
+curve analysis.
 
 ### Common Pitfalls in IS-LM Analysis
 
 - Assuming that fiscal policy is always effective. In the extreme classical case (vertical LM),
- fiscal policy is completely crowded out and has no effect on output.
+  fiscal policy is completely crowded out and has no effect on output.
 - Confusing a shift of the IS curve with a movement along it. A change in $G$ or $T$ shifts IS; a
- change in $r$ causes a movement along IS.
-- Forgetting that the IS-LM model assumes a fixed price level. It is purely a real-side model.
- The AD-AS model is needed for price level analysis.
+  change in $r$ causes a movement along IS.
+- Forgetting that the IS-LM model assumes a fixed price level. It is purely a real-side model. The
+  AD-AS model is needed for price level analysis.
 - Drawing the LM curve as downward-sloping. The LM curve is always upward-sloping (except in the
- liquidity trap, where it is horizontal).
+  liquidity trap, where it is horizontal).
 
 ## Elasticity Calculations: Advanced (HL Extension)
 
@@ -1479,7 +1490,8 @@ $$\text{PED}_{\text{arc}} = \frac{Q_2 - Q_1}{(Q_1 + Q_2)/2} \times \frac{(P_1 + 
 
 **Worked example:** Demand: $Q = 100 - 2P$
 
-At $P = 20$: $Q = 60$. Point PED $= \frac{dQ}{dP} \times \frac{P}{Q} = -2 \times \frac{20}{60} = -0.667$
+At $P = 20$: $Q = 60$. Point PED
+$= \frac{dQ}{dP} \times \frac{P}{Q} = -2 \times \frac{20}{60} = -0.667$
 
 At $P = 30$: $Q = 40$. Point PED $= -2 \times \frac{30}{40} = -1.5$
 
@@ -1499,21 +1511,21 @@ TR is maximised where $\text{MR} = 0$I.e., at $Q = a/(2b)$ and $P = a/2$.
 
 At this point, PED $= -1$ (unit elastic).
 
-- For $P > a/2$ (upper half of demand curve): PED $> 1$ in absolute value (elastic). Price
- decrease increases TR
+- For $P > a/2$ (upper half of demand curve): PED $> 1$ in absolute value (elastic). Price decrease
+  increases TR
 - For $P < a/2$ (lower half of demand curve): PED $< 1$ in absolute value (inelastic). Price
- decrease decreases TR
+  decrease decreases TR
 
 ### Income Elasticity and Firm Strategy
 
 Firms use YED to forecast demand as the economy grows:
 
 - **Luxury goods** ($\text{YED} > 1$): demand grows faster than income. Firms in luxury markets
- benefit disproportionately from economic growth
+  benefit disproportionately from economic growth
 - **Necessities** ($0 < \text{YED} < 1$): demand grows slower than income. Market growth is limited
- but stable
+  but stable
 - **Inferior goods** ($\text{YED} < 0$): demand falls as income rises. Firms must reposition or
- diversify as the economy develops
+  diversify as the economy develops
 
 ## Break-Even Analysis (HL Extension)
 
@@ -1534,6 +1546,7 @@ Costs).
 ### Worked Example
 
 A firm produces gadgets with the following cost structure:
+
 - Fixed costs: `USD 50,000` per month
 - Variable cost per unit: `USD 30`
 - Selling price per unit: `USD 50`
@@ -1542,8 +1555,8 @@ $$Q_{\text{BE}} = \frac{50\,000}{50 - 30} = \frac{50\,000}{20} = 2500 \text{ uni
 
 Break-even revenue $= 50 \times 2500 = \$125\,000$
 
-**Contribution margin ratio:** $\frac{P - \text{AVC}}{P} = \frac{20}{50} = 0.4$ (40% of each dollar of
-Revenue contributes to covering fixed costs).
+**Contribution margin ratio:** $\frac{P - \text{AVC}}{P} = \frac{20}{50} = 0.4$ (40% of each dollar
+of Revenue contributes to covering fixed costs).
 
 **Target profit analysis:** to earn a profit of $\pi$:
 
@@ -1564,8 +1577,8 @@ If actual output is 3000 units: margin of safety $= (3000 - 2500)/3000 \times 10
 - Assumes all output is sold (no unsold inventory)
 - Only applies to a single product or a constant product mix
 - Ignores the time value of money
-- Does not account for demand constraints (the firm may not be able to sell the break-even
- quantity at the assumed price)
+- Does not account for demand constraints (the firm may not be able to sell the break-even quantity
+  at the assumed price)
 
 ## Additional Practice Problems
 
@@ -1574,11 +1587,11 @@ If actual output is 3000 units: margin of safety $= (3000 - 2500)/3000 \times 10
 
 A small island economy produces three goods. The following data are available:
 
-| Good | $P_0$ | $Q_0$ | $P_1$ | $Q_1$ |
-|------|-------|-------|-------|-------|
-| Fish | 5 | 200 | 7 | 180 |
-| Bread| 2 | 500 | 3 | 480 |
-| Cloth| 10 | 100 | 12 | 120 |
+| Good  | $P_0$ | $Q_0$ | $P_1$ | $Q_1$ |
+| ----- | ----- | ----- | ----- | ----- |
+| Fish  | 5     | 200   | 7     | 180   |
+| Bread | 2     | 500   | 3     | 480   |
+| Cloth | 10    | 100   | 12    | 120   |
 
 (a) Calculate the Laspeyres, Paasche, and Fisher price indices.
 
@@ -1615,12 +1628,13 @@ Denominator: $200 \times 5 + 500 \times 2 + 100 \times 10 = 1000 + 1000 + 1000 =
 $Q_L = 3060/3000 \times 100 = 102.0$
 
 (c) Laspeyres (136.7) > Paasche (135.3) because:
+
 - Laspeyres uses base-period quantities and does not account for consumers substituting away from
- goods that became relatively more expensive (fish and bread prices rose more than cloth)
+  goods that became relatively more expensive (fish and bread prices rose more than cloth)
 - Paasche uses current-period quantities, which reflect the substitution toward cloth (whose
- relative price rose least)
+  relative price rose least)
 - The substitution effect means consumers buy more of the relatively cheaper good, and Paasche
- captures this, giving a lower inflation measure
+  captures this, giving a lower inflation measure
 
 </details>
 
@@ -1632,23 +1646,23 @@ Policy:
 
 **Before policy:**
 
-| Quintile | Income Share |
-|----------|-------------|
-| Bottom 20% | 4% |
-| Second 20% | 9% |
-| Third 20% | 15% |
-| Fourth 20% | 22% |
-| Top 20% | 50% |
+| Quintile   | Income Share |
+| ---------- | ------------ |
+| Bottom 20% | 4%           |
+| Second 20% | 9%           |
+| Third 20%  | 15%          |
+| Fourth 20% | 22%          |
+| Top 20%    | 50%          |
 
 **After policy:**
 
-| Quintile | Income Share |
-|----------|-------------|
-| Bottom 20% | 8% |
-| Second 20% | 12% |
-| Third 20% | 17% |
-| Fourth 20% | 24% |
-| Top 20% | 39% |
+| Quintile   | Income Share |
+| ---------- | ------------ |
+| Bottom 20% | 8%           |
+| Second 20% | 12%          |
+| Third 20%  | 17%          |
+| Fourth 20% | 24%          |
+| Top 20%    | 39%          |
 
 (a) Calculate the Gini coefficient before and after the policy.
 
@@ -1666,19 +1680,20 @@ $= 1 - [0.8 + 3.4 + 8.2 + 15.6 + 30.0]/100 = 1 - 58.0/100 = 0.420$
 $G_{\text{after}} = 1 - [0.2(8) + 0.2(28) + 0.2(57) + 0.2(98) + 0.2(161)]/100$
 $= 1 - [1.6 + 5.6 + 11.4 + 19.6 + 32.2]/100 = 1 - 70.4/100 = 0.296$
 
-(b) The Gini coefficient fell from 0.420 to 0.296, a reduction of 0.124 (a 29.5% decrease in
-The Gini). This represents a significant reduction in income inequality. The policy doubled the
-Bottom quintile's share from 4% to 8% and reduced the top quintile's share from 50% to 39%.
+(b) The Gini coefficient fell from 0.420 to 0.296, a reduction of 0.124 (a 29.5% decrease in The
+Gini). This represents a significant reduction in income inequality. The policy doubled the Bottom
+quintile's share from 4% to 8% and reduced the top quintile's share from 50% to 39%.
 
 (c) Limitations:
-- The Gini coefficient does not show where in the distribution the change occurred (it could be
- a transfer from the fourth quintile to the second, rather than from the top to the bottom)
+
+- The Gini coefficient does not show where in the distribution the change occurred (it could be a
+  transfer from the fourth quintile to the second, rather than from the top to the bottom)
 - It does not reflect changes in absolute income levels (if the policy reduces everyone's income
- proportionally, the Gini is unchanged but welfare falls)
+  proportionally, the Gini is unchanged but welfare falls)
 - It is insensitive to changes at the very top of the distribution (the super-rich)
 - It does not capture non-income dimensions of inequality (wealth, education, health)
-- The policy may have incentive effects (reduced labour supply, tax avoidance) that the Gini
- does not reflect
+- The policy may have incentive effects (reduced labour supply, tax avoidance) that the Gini does
+  not reflect
 
 </details>
 
@@ -1714,8 +1729,8 @@ $\text{BCR} = \frac{120 \times 11.470}{800 + 30 \times 11.470} = \frac{1376.4}{8
 
 $\text{NPV} = -800 + 66 \times 11.470 = -800 + 757.0 = -\$43.0$ million
 
-The project is no longer viable with a 20% reduction in benefits. This highlights the importance
-Of accurate benefit estimation.
+The project is no longer viable with a 20% reduction in benefits. This highlights the importance Of
+accurate benefit estimation.
 
 (c) At $r = 8\%$: annuity factor $= \frac{1 - (1.08)^{-20}}{0.08} = \frac{1 - 0.2145}{0.08} = 9.818$
 
@@ -1736,20 +1751,16 @@ Project has limited tolerance for benefit overestimation.
 
 An economy is described by:
 
-Consumption function: $C = 100 + 0.8(Y - T)$
-Investment function: $I = 200 - 10r$
-Government spending: $G = 150$
-Taxes: $T = 50$
-Money supply: $M^s = 500$
-Price level: $P = 1$
-Money demand: $L = 0.5Y - 5r$
+Consumption function: $C = 100 + 0.8(Y - T)$ Investment function: $I = 200 - 10r$ Government
+spending: $G = 150$ Taxes: $T = 50$ Money supply: $M^s = 500$ Price level: $P = 1$ Money demand:
+$L = 0.5Y - 5r$
 
 (a) Derive the IS and LM curves algebraically.
 
 (b) Find the equilibrium output and interest rate.
 
-(c) The government increases spending to $G = 200$. Calculate the new equilibrium and the
-Degree of crowding out.
+(c) The government increases spending to $G = 200$. Calculate the new equilibrium and the Degree of
+crowding out.
 
 (a) **IS curve:** $Y = C + I + G = 100 + 0.8(Y - 50) + 200 - 10r + 150$
 
@@ -1785,8 +1796,8 @@ $r = 46 - 0.02(1216.7) = 46 - 24.33 = 21.67\%$
 
 **Simple multiplier:** $1/0.2 = 5$. Without crowding out: $\Delta Y = 5 \times 50 = 250$.
 
-**Actual change:** 41.7. Crowding out $= 250 - 41.7 = 208.3$ (83.3% of the simple multiplier
-Effect is crowded out).
+**Actual change:** 41.7. Crowding out $= 250 - 41.7 = 208.3$ (83.3% of the simple multiplier Effect
+is crowded out).
 
 The large crowding out occurs because the LM curve is relatively steep ($k/h = 0.5/5 = 0.1$),
 Meaning the interest rate rises significantly when output increases, substantially reducing
@@ -1808,8 +1819,8 @@ A manufacturing firm has the following cost and revenue data:
 
 (b) Calculate the profit or loss at 80% capacity.
 
-(c) The firm is considering a price cut to `USD 30` per unit, which is expected to increase
-Demand by 30%. Should the firm proceed?
+(c) The firm is considering a price cut to `USD 30` per unit, which is expected to increase Demand
+by 30%. Should the firm proceed?
 
 (d) Calculate the margin of safety at the current price and output of 10,000 units.
 
@@ -1829,8 +1840,8 @@ New break-even: $Q_{\text{BE}} = 120\,000/(30 - 15) = 8000$ units
 
 Profit falls from `USD 120,000` to `USD 75,000`. The firm should NOT proceed with the price cut.
 Although revenue increases ($30 \times 13\,000 = \$390\,000$ vs. $35 \times 10\,000 = \$350\,000$),
-The contribution margin per unit falls from $20$ to $15$And the profit decline outweighs the
-Volume gain.
+The contribution margin per unit falls from $20$ to $15$And the profit decline outweighs the Volume
+gain.
 
 (d) Margin of safety $= (10\,000 - 6000)/10\,000 \times 100 = 40\%$
 
@@ -1847,13 +1858,13 @@ Values for males and females:
 
 $$\text{GDI} = \left(\frac{\text{HDI}_f^{1-\epsilon} + \text{HDI}_m^{1-\epsilon}}{2}\right)^{\frac{1}{1-\epsilon}}$$
 
-Where $\epsilon$ is an aversion-to-inequality parameter. The UNDP uses $\epsilon = 2$Which
-Gives the GDI as the harmonic mean of the male and female HDI values:
+Where $\epsilon$ is an aversion-to-inequality parameter. The UNDP uses $\epsilon = 2$Which Gives the
+GDI as the harmonic mean of the male and female HDI values:
 
 $$\text{GDI} = \left(\frac{1}{\text{HDI}_f^{-1} + \text{HDI}_m^{-1}} \times 2\right)^{-1} = \frac{2 \times \text{HDI}_f \times \text{HDI}_m}{\text{HDI}_f + \text{HDI}_m}$$
 
-The GDI is bounded between 0 and the overall HDI. A GDI equal to the HDI indicates perfect
-Gender parity.
+The GDI is bounded between 0 and the overall HDI. A GDI equal to the HDI indicates perfect Gender
+parity.
 
 **Worked example:**
 
@@ -1861,8 +1872,8 @@ Country X has $\text{HDI}_f = 0.700$ and $\text{HDI}_m = 0.850$Overall $\text{HD
 
 $$\text{GDI} = \frac{2 \times 0.700 \times 0.850}{0.700 + 0.850} = \frac{1.190}{1.550} = 0.768$$
 
-The GDI (0.768) is below the HDI (0.780), indicating that gender inequality reduces overall
-Human development. The gender development gap is $(0.780 - 0.768)/0.780 = 1.5\%$.
+The GDI (0.768) is below the HDI (0.780), indicating that gender inequality reduces overall Human
+development. The gender development gap is $(0.780 - 0.768)/0.780 = 1.5\%$.
 
 ### Poverty Gap Calculations
 
@@ -1884,8 +1895,8 @@ The Foster-Greer-Thorbecke class $P_\alpha$ generalises these:
 
 $$P_\alpha = \frac{1}{N} \sum_{i=1}^{q} \left(\frac{z - y_i}{z}\right)^\alpha$$
 
-Where $\alpha \geq 0$ is the poverty aversion parameter. Higher $\alpha$ gives more weight to
-The poorest.
+Where $\alpha \geq 0$ is the poverty aversion parameter. Higher $\alpha$ gives more weight to The
+poorest.
 
 **Worked example:** Poverty line $z = \$1000$. Population $N = 5$. Incomes below the line:
 $y_1 = 800$$y_2 = 500$$y_3 = 200$.
@@ -1897,19 +1908,19 @@ $P_1 = \frac{1}{5}\left(\frac{1000-800}{1000} + \frac{1000-500}{1000} + \frac{10
 $P_2 = \frac{1}{5}(0.2^2 + 0.5^2 + 0.8^2) = \frac{1}{5}(0.04 + 0.25 + 0.64) = \frac{0.93}{5} = 0.186$
 
 The poverty gap of 0.30 means the average shortfall from the poverty line, as a fraction of the
-Poverty line, averaged over the entire population, is 30%. The squared gap of 0.186 indicates
-That poverty is concentrated among the deeply poor (the person earning $200 has a much larger
-Squared gap contribution than the person earning $800).
+Poverty line, averaged over the entire population, is 30%. The squared gap of 0.186 indicates That
+poverty is concentrated among the deeply poor (the person earning $200 has a much larger Squared gap
+contribution than the person earning $800).
 
 ### Real vs. Nominal: Comprehensive Worked Example
 
 A country's nominal data and CPI are:
 
 | Year | Nominal GDP ($bn) | CPI (2015 = 100) | Population (m) |
-|------|-------------------|-------------------|----------------|
-| 2015 | 800 | 100 | 40 |
-| 2018 | 1000 | 115 | 42 |
-| 2021 | 1200 | 130 | 45 |
+| ---- | ----------------- | ---------------- | -------------- |
+| 2015 | 800               | 100              | 40             |
+| 2018 | 1000              | 115              | 42             |
+| 2021 | 1200              | 130              | 45             |
 
 (a) Calculate real GDP, real GDP per capita, and GDP growth for each year.
 
@@ -1919,11 +1930,11 @@ A country's nominal data and CPI are:
 
 (a)
 
-| Year | Real GDP ($bn) | Real GDP per capita ($) |
-|------|---------------|------------------------|
-| 2015 | 800/1.00 = 800.0 | 800,000/40 = 20,000 |
-| 2018 | 1000/1.15 = 869.6 | 869,600/42 = 20,705 |
-| 2021 | 1200/1.30 = 923.1 | 923,100/45 = 20,513 |
+| Year | Real GDP ($bn)    | Real GDP per capita ($) |
+| ---- | ----------------- | ----------------------- |
+| 2015 | 800/1.00 = 800.0  | 800,000/40 = 20,000     |
+| 2018 | 1000/1.15 = 869.6 | 869,600/42 = 20,705     |
+| 2021 | 1200/1.30 = 923.1 | 923,100/45 = 20,513     |
 
 Real GDP growth 2015--2018: $(869.6 - 800)/800 \times 100 = 8.7\%$
 
@@ -1933,24 +1944,24 @@ Real GDP growth 2018--2021: $(923.1 - 869.6)/869.6 \times 100 = 6.2\%$
 
 Inflation 2018--2021: $(130 - 115)/115 \times 100 = 13.0\%$
 
-(c) Real GDP per capita rose from $20,000 to $20,705 (2015--2018) then fell to $20,513
-(2018--2021). The net change from 2015 to 2021 is an increase of $513, or 2.6%. Living
-Standards improved slightly, but the improvement was modest and partially reversed. The
-Population grew faster than real GDP in the later period, reducing per capita gains.
+(c) Real GDP per capita rose from $20,000 to $20,705 (2015--2018) then fell to $20,513 (2018--2021).
+The net change from 2015 to 2021 is an increase of $513, or 2.6%. Living Standards improved
+slightly, but the improvement was modest and partially reversed. The Population grew faster than
+real GDP in the later period, reducing per capita gains.
 
 ### Common Pitfalls in Quantitative Development Measurement
 
 - Using arithmetic mean instead of geometric mean for the HDI. Since 2010, the UNDP uses the
- geometric mean to prevent perfect scores in one dimension from compensating for very low
- scores in another
-- Comparing Gini coefficients across countries without standardising for household size and
- income measurement methodology
-- Confusing $P_0$ (headcount) with $P_1$ (poverty gap). Two countries can have the same
- headcount ratio but very different poverty depths
-- Using the poverty gap to make distributional judgements without considering the squared
- gap. The squared gap reveals whether poverty is concentrated among the very poorest
+  geometric mean to prevent perfect scores in one dimension from compensating for very low scores in
+  another
+- Comparing Gini coefficients across countries without standardising for household size and income
+  measurement methodology
+- Confusing $P_0$ (headcount) with $P_1$ (poverty gap). Two countries can have the same headcount
+  ratio but very different poverty depths
+- Using the poverty gap to make distributional judgements without considering the squared gap. The
+  squared gap reveals whether poverty is concentrated among the very poorest
 - Forgetting that the Gini coefficient is a relative measure. Two countries with very different
- average incomes can have the same Gini coefficient
+  average incomes can have the same Gini coefficient
 
 ## Additional Practice Problems
 
@@ -1960,10 +1971,10 @@ Population grew faster than real GDP in the later period, reducing per capita ga
 A consumer buys three goods. The data are:
 
 | Good | $P_0$ | $Q_0$ | $P_1$ | $Q_1$ |
-|------|-------|-------|-------|-------|
-| Rice | 2 | 100 | 3 | 80 |
-| Milk | 3 | 50 | 4 | 45 |
-| Eggs | 5 | 30 | 6 | 35 |
+| ---- | ----- | ----- | ----- | ----- |
+| Rice | 2     | 100   | 3     | 80    |
+| Milk | 3     | 50    | 4     | 45    |
+| Eggs | 5     | 30    | 6     | 35    |
 
 (a) Calculate the Laspeyres and Paasche price indices.
 
@@ -1990,13 +2001,13 @@ $= \frac{240 + 180 + 210}{160 + 135 + 175} \times 100 = \frac{630}{470} \times 1
 
 $P_F = \sqrt{136.0 \times 134.0} = \sqrt{18\,224} = 135.0$
 
-(c) The Laspeyres index (136.0) overstates inflation because it uses base-period quantities,
- which do not account for consumer substitution away from goods whose relative prices rose most
- (rice, whose price rose 50%). The Paasche index (134.0) uses current-period quantities, which
- reflect the substitution toward eggs (whose relative price rose least, 20%).
+(c) The Laspeyres index (136.0) overstates inflation because it uses base-period quantities, which
+do not account for consumer substitution away from goods whose relative prices rose most (rice,
+whose price rose 50%). The Paasche index (134.0) uses current-period quantities, which reflect the
+substitution toward eggs (whose relative price rose least, 20%).
 
 The Fisher index (135.0) provides the best single measure because it is the geometric mean of
- Laspeyres and Paasche, satisfying the time-reversal test.
+Laspeyres and Paasche, satisfying the time-reversal test.
 
 (d) **Using Laspeyres:** Real wage $= 500 \times 100/136.0 = \$367.65$
 
@@ -2005,7 +2016,7 @@ The Fisher index (135.0) provides the best single measure because it is the geom
 **Using Fisher:** Real wage $= 500 \times 100/135.0 = \$370.37$
 
 The choice of index affects the measured change in living standards. Using Laspeyres (which
- overstates inflation) understates the real wage by more than using Paasche.
+overstates inflation) understates the real wage by more than using Paasche.
 
 </details>
 
@@ -2015,14 +2026,16 @@ The choice of index affects the measured change in living standards. Using Laspe
 A government is evaluating two mutually exclusive projects:
 
 **Project A:** certain costs and benefits.
+
 - Cost: `USD 200` million (Year 0)
 - Annual benefit: `USD 40` million (Years 1--10)
 - Discount rate: 8%
 
 **Project B:** uncertain benefits.
+
 - Cost: `USD 200` million (Year 0)
 - Annual benefit: `USD 30` million with probability 0.4, `USD 60` million with probability 0.6
- (Years 1--10)
+  (Years 1--10)
 - Discount rate: 8%
 
 (a) Calculate the NPV of Project A.
@@ -2031,7 +2044,8 @@ A government is evaluating two mutually exclusive projects:
 
 (c) Which project should the government choose? Discuss the risk implications.
 
-(a) Annuity factor for 10 years at 8%: $\frac{1 - (1.08)^{-10}}{0.08} = \frac{1 - 0.4632}{0.08} = 6.710$
+(a) Annuity factor for 10 years at 8%:
+$\frac{1 - (1.08)^{-10}}{0.08} = \frac{1 - 0.4632}{0.08} = 6.710$
 
 $\text{NPV}_A = -200 + 40 \times 6.710 = -200 + 268.4 = \$68.4$ million
 
@@ -2039,19 +2053,22 @@ $\text{NPV}_A = -200 + 40 \times 6.710 = -200 + 268.4 = \$68.4$ million
 
 $\text{NPV}_B = -200 + 48 \times 6.710 = -200 + 322.1 = \$122.1$ million
 
-(c) Project B has a higher expected NPV ($122.1$ million vs. $68.4$ million) and should be
- preferred on expected value grounds.
+(c) Project B has a higher expected NPV ($122.1$ million vs. $68.4$ million) and should be preferred
+on expected value grounds.
 
 However, risk considerations matter:
 
 - Project A has no risk (certain benefits)
-- Project B has uncertainty: there is a 40% chance that annual benefits are only $30 million,
- giving $\text{NPV} = -200 + 30 \times 6.710 = -200 + 201.3 = \$1.3$ million (barely positive)
+- Project B has uncertainty: there is a 40% chance that annual benefits are only
+  $30 million,
+ giving $\text{NPV} = -200 + 30 \times 6.710 = -200 + 201.3 = \$1.3$ million (barely
+  positive)
 
 The government's risk tolerance determines the choice:
+
 - **Risk-neutral:** choose Project B (higher expected NPV)
-- **Risk-averse:** may prefer Project A despite lower expected NPV, because it avoids the 40%
- chance of near-zero returns
+- **Risk-averse:** may prefer Project A despite lower expected NPV, because it avoids the 40% chance
+  of near-zero returns
 
 The standard deviation of Project B's NPV:
 
@@ -2065,8 +2082,8 @@ $= 5\,810 + 3\,889 = 9\,699$
 
 $\text{SD}(\text{NPV}) = \sqrt{9\,699} = \$98.5$ million
 
-The coefficient of variation $= 98.5/122.1 = 0.81$Indicating substantial risk relative to
-Expected return.
+The coefficient of variation $= 98.5/122.1 = 0.81$Indicating substantial risk relative to Expected
+return.
 
 </details>
 
@@ -2074,14 +2091,14 @@ Expected return.
 
 ### What is Sensitivity Analysis?
 
-**Sensitivity analysis** examines how the results of an economic calculation ( NPV or CBA)
-Change when one or more input variables are varied. It identifies which variables have the greatest
-Impact on the outcome and therefore require the most accurate estimation.
+**Sensitivity analysis** examines how the results of an economic calculation ( NPV or CBA) Change
+when one or more input variables are varied. It identifies which variables have the greatest Impact
+on the outcome and therefore require the most accurate estimation.
 
 ### One-Way Sensitivity Analysis
 
-Each variable is changed individually while holding all others constant. The results are 
-Presented in a sensitivity table or tornado diagram.
+Each variable is changed individually while holding all others constant. The results are Presented
+in a sensitivity table or tornado diagram.
 
 **Example:** A project has NPV that depends on three variables:
 
@@ -2089,26 +2106,28 @@ Presented in a sensitivity table or tornado diagram.
 - Annual benefit (base case: USD 50 million)
 - Project life (base case: 10 years)
 
-| Variable | Pessimistic | Base | Optimistic |
-|---|---|---|---|
-| Discount rate = 5% | -- | USD 68.4m | -- |
-| Discount rate = 8% | -- | USD 68.4m | -- |
-| Discount rate = 12% | -- | USD 68.4m | -- |
-| Annual benefit = USD 40m | USD 8.4m | USD 68.4m | USD 128.4m |
-| Annual benefit = USD 60m | -- | -- | -- |
-| Project life = 5 years | USD 20.0m | USD 68.4m | USD 102.6m |
-| Project life = 15 years | -- | -- | -- |
+| Variable                 | Pessimistic | Base      | Optimistic |
+| ------------------------ | ----------- | --------- | ---------- |
+| Discount rate = 5%       | --          | USD 68.4m | --         |
+| Discount rate = 8%       | --          | USD 68.4m | --         |
+| Discount rate = 12%      | --          | USD 68.4m | --         |
+| Annual benefit = USD 40m | USD 8.4m    | USD 68.4m | USD 128.4m |
+| Annual benefit = USD 60m | --          | --        | --         |
+| Project life = 5 years   | USD 20.0m   | USD 68.4m | USD 102.6m |
+| Project life = 15 years  | --          | --        | --         |
 
 Recalculating with each variable changed to pessimistic and optimistic values:
 
-**Discount rate 5%:** annuity factor (10 years) $= 7.722$. NPV $= -200 + 50 \times 7.722 = 186.1$ million
-**Discount rate 12%:** annuity factor (10 years) $= 5.650$. NPV $= -200 + 50 \times 5.650 = 82.5$ million
+**Discount rate 5%:** annuity factor (10 years) $= 7.722$. NPV $= -200 + 50 \times 7.722 = 186.1$
+million **Discount rate 12%:** annuity factor (10 years) $= 5.650$. NPV
+$= -200 + 50 \times 5.650 = 82.5$ million
 
-**Annual benefit USD 40m:** NPV $= -200 + 40 \times 6.710 = 68.4$ million
-**Annual benefit USD 60m:** NPV $= -200 + 60 \times 6.710 = 202.6$ million
+**Annual benefit USD 40m:** NPV $= -200 + 40 \times 6.710 = 68.4$ million **Annual benefit USD
+60m:** NPV $= -200 + 60 \times 6.710 = 202.6$ million
 
-**Project life 5 years (8%):** annuity factor $= 3.993$. NPV $= -200 + 50 \times 3.993 = -0.4$ million
-**Project life 15 years (8%):** annuity factor $= 8.559$. NPV $= -200 + 50 \times 8.559 = 228.0$ million
+**Project life 5 years (8%):** annuity factor $= 3.993$. NPV $= -200 + 50 \times 3.993 = -0.4$
+million **Project life 15 years (8%):** annuity factor $= 8.559$. NPV
+$= -200 + 50 \times 8.559 = 228.0$ million
 
 **Sensitivity ranking (by NPV range):**
 
@@ -2123,11 +2142,11 @@ The project is most sensitive to the project life assumption.
 Scenario analysis changes multiple variables simultaneously to reflect coherent "stories" about the
 Future:
 
-| Scenario | Discount rate | Annual benefit | Project life | NPV |
-|---|---|---|---|---|
-| Pessimistic | 12% | USD 40m | 5 years | -48.0m |
-| Base | 8% | USD 50m | 10 years | 68.4m |
-| Optimistic | 5% | USD 60m | 15 years | 363.1m |
+| Scenario    | Discount rate | Annual benefit | Project life | NPV    |
+| ----------- | ------------- | -------------- | ------------ | ------ |
+| Pessimistic | 12%           | USD 40m        | 5 years      | -48.0m |
+| Base        | 8%            | USD 50m        | 10 years     | 68.4m  |
+| Optimistic  | 5%            | USD 60m        | 15 years     | 363.1m |
 
 The pessimistic scenario yields a negative NPV, suggesting the project is risky.
 
@@ -2169,11 +2188,12 @@ Consumption. It is lower than market interest rates because:
 $$r = \delta + \eta \times g$$
 
 Where:
+
 - $r$ = social discount rate
-- $\delta$ = pure rate of time preference (how much society discounts future utility 
- because it is in the future; Stern Review used $\delta = 0.1\%$)
+- $\delta$ = pure rate of time preference (how much society discounts future utility because it is
+  in the future; Stern Review used $\delta = 0.1\%$)
 - $\eta$ = elasticity of marginal utility of consumption (how quickly the marginal value of
- consumption declines as income rises; $\eta \in [1, 2]$)
+  consumption declines as income rises; $\eta \in [1, 2]$)
 - $g$ = growth rate of per capita consumption
 
 **Numerical comparison:**
@@ -2187,15 +2207,15 @@ Projects:
 
 Present value of USD 1 billion received in 100 years:
 
-At 1.4%: $1/(1.014)^{100} = 1/4.06 = 0.246$ billion (USD 246 million)
-At 5.6%: $1/(1.056)^{100} = 1/258.5 = 0.004$ billion (USD 4 million)
+At 1.4%: $1/(1.014)^{100} = 1/4.06 = 0.246$ billion (USD 246 million) At 5.6%:
+$1/(1.056)^{100} = 1/258.5 = 0.004$ billion (USD 4 million)
 
 The Stern discount rate values benefits 100 years hence at 60 times the Nordhaus rate.
 
 ### Hyperbolic Discounting
 
-**Hyperbolic discounting** describes the empirical observation that individuals discount the
-Near future at a much higher rate than the distant future:
+**Hyperbolic discounting** describes the empirical observation that individuals discount the Near
+future at a much higher rate than the distant future:
 
 $$\text{Hyperbolic: } d(t) = \frac{1}{(1 + \alpha t)^{\beta/\alpha}}$$
 
@@ -2205,31 +2225,30 @@ $$\text{Exponential: } d(t) = \frac{1}{(1 + r)^t}$$
 
 **Implications:**
 
-1. **Time inconsistency:** individuals plan to save more in the future than they actually do
- (the "planning fallacy"). In period 0, they prefer USD 110 in period 2 to USD 100 in period 1.
- But in period 1, they prefer USD 100 immediately to USD 110 in period 2
-2. **Commitment devices:** hyperbolic discounting explains demand for commitment mechanisms
- (pension plans with penalties for early withdrawal, Christmas savings clubs)
-3. **Environmental policy:** hyperbolic discounting implies even stronger arguments for
- immediate climate action, because near-term costs are overweighted relative to long-term
- benefits
+1. **Time inconsistency:** individuals plan to save more in the future than they actually do (the
+   "planning fallacy"). In period 0, they prefer USD 110 in period 2 to USD 100 in period 1. But in
+   period 1, they prefer USD 100 immediately to USD 110 in period 2
+2. **Commitment devices:** hyperbolic discounting explains demand for commitment mechanisms (pension
+   plans with penalties for early withdrawal, Christmas savings clubs)
+3. **Environmental policy:** hyperbolic discounting implies even stronger arguments for immediate
+   climate action, because near-term costs are overweighted relative to long-term benefits
 
 ### Shadow Pricing
 
 When market prices do not reflect true social costs and benefits (due to externalities, taxes,
-Subsidies, or market failures), **shadow prices** are used in CBA to estimate the true
-Economic value.
+Subsidies, or market failures), **shadow prices** are used in CBA to estimate the true Economic
+value.
 
 **Examples:**
 
-1. **Unemployed labour:** the opportunity cost of employing an unemployed worker is not the
- market wage but the value of their leisure time plus any unemployment benefits they
- forgo. Shadow wage $< $ market wage
-2. **Foreign exchange:** in developing countries with overvalued exchange rates, the shadow
- exchange rate exceeds the official rate
-3. **Environmental costs:** carbon emissions have a social cost (the social cost of carbon, or
- SCC) that exceeds the market price of carbon (if a carbon price exists at all). The US
- Interagency Working Group estimated SCC at USD 51/tonne (2020)
+1. **Unemployed labour:** the opportunity cost of employing an unemployed worker is not the market
+   wage but the value of their leisure time plus any unemployment benefits they forgo. Shadow wage
+   $< $ market wage
+2. **Foreign exchange:** in developing countries with overvalued exchange rates, the shadow exchange
+   rate exceeds the official rate
+3. **Environmental costs:** carbon emissions have a social cost (the social cost of carbon, or SCC)
+   that exceeds the market price of carbon (if a carbon price exists at all). The US Interagency
+   Working Group estimated SCC at USD 51/tonne (2020)
 
 ## Regression Analysis Basics (HL Extension)
 
@@ -2240,6 +2259,7 @@ Economic value.
 $$Y_i = \beta_0 + \beta_1 X_i + \epsilon_i$$
 
 Where:
+
 - $Y_i$ = dependent variable (the variable being explained)
 - $X_i$ = independent variable (the explanatory variable)
 - $\beta_0$ = intercept (the value of $Y$ when $X = 0$)
@@ -2260,13 +2280,13 @@ $$\hat{\beta}_0 = \bar{Y} - \hat{\beta}_1 \bar{X}$$
 
 ### Goodness of Fit: $R^2$
 
-The coefficient of determination ($R^2$) measures the proportion of the variation in $Y$
-Explained by the variation in $X$:
+The coefficient of determination ($R^2$) measures the proportion of the variation in $Y$ Explained
+by the variation in $X$:
 
 $$R^2 = 1 - \frac{\text{SSR}}{\text{SST}} = 1 - \frac{\sum(Y_i - \hat{Y}_i)^2}{\sum(Y_i - \bar{Y})^2}$$
 
-$R^2 \in [0, 1]$: $R^2 = 0$ means $X$ explains none of the variation in $Y$; $R^2 = 1$ means
-$X$ explains all of the variation.
+$R^2 \in [0, 1]$: $R^2 = 0$ means $X$ explains none of the variation in $Y$; $R^2 = 1$ means $X$
+explains all of the variation.
 
 **Adjusted $R^2$** accounts for the number of regressors:
 
@@ -2276,23 +2296,22 @@ Where $k$ is the number of independent variables and $n$ is the sample size.
 
 ### Numerical Example: Consumption Function
 
-An economist estimates the consumption function $C = \beta_0 + \beta_1 Y_d + \epsilon$ using
-The following data:
+An economist estimates the consumption function $C = \beta_0 + \beta_1 Y_d + \epsilon$ using The
+following data:
 
 | Observation | Disposable income ($Y_d$USD thousands) | Consumption ($C$USD thousands) |
-|---|---|---|
-| 1 | 10 | 8 |
-| 2 | 20 | 15 |
-| 3 | 30 | 22 |
-| 4 | 40 | 28 |
-| 5 | 50 | 35 |
+| ----------- | -------------------------------------- | ------------------------------ |
+| 1           | 10                                     | 8                              |
+| 2           | 20                                     | 15                             |
+| 3           | 30                                     | 22                             |
+| 4           | 40                                     | 28                             |
+| 5           | 50                                     | 35                             |
 
 $\bar{X} = 30$$\bar{Y} = 21.6$
 
 $\sum(X_i - \bar{X})(Y_i - \bar{Y})$:
 
-$= (-20)(-13.6) + (-10)(-6.6) + (0)(0.4) + (10)(6.4) + (20)(13.4)$
-$= 272 + 66 + 0 + 64 + 268 = 670$
+$= (-20)(-13.6) + (-10)(-6.6) + (0)(0.4) + (10)(6.4) + (20)(13.4)$ $= 272 + 66 + 0 + 64 + 268 = 670$
 
 $\sum(X_i - \bar{X})^2 = 400 + 100 + 0 + 100 + 400 = 1000$
 
@@ -2309,12 +2328,12 @@ $R^2$ calculation:
 Predicted values: $\hat{Y} = 1.5 + 0.67X$
 
 | $X$ | $Y$ | $\hat{Y}$ | $(Y - \hat{Y})^2$ | $(Y - \bar{Y})^2$ |
-|---|---|---|---|---|
-| 10 | 8 | 8.2 | 0.04 | 184.96 |
-| 20 | 15 | 14.9 | 0.01 | 43.56 |
-| 30 | 22 | 21.6 | 0.16 | 0.16 |
-| 40 | 28 | 28.3 | 0.09 | 40.96 |
-| 50 | 35 | 35.0 | 0.00 | 179.56 |
+| --- | --- | --------- | ----------------- | ----------------- |
+| 10  | 8   | 8.2       | 0.04              | 184.96            |
+| 20  | 15  | 14.9      | 0.01              | 43.56             |
+| 30  | 22  | 21.6      | 0.16              | 0.16              |
+| 40  | 28  | 28.3      | 0.09              | 40.96             |
+| 50  | 35  | 35.0      | 0.00              | 179.56            |
 
 $\text{SSR} = 0.30$$\text{SST} = 449.20$
 
@@ -2327,8 +2346,8 @@ Clean example with constructed data.)
 
 ### The Fundamental Distinction
 
-**Correlation** measures the strength and direction of the linear relationship between two variables.
-**Causation** means that a change in one variable directly causes a change in another.
+**Correlation** measures the strength and direction of the linear relationship between two
+variables. **Causation** means that a change in one variable directly causes a change in another.
 
 $$r_{XY} = \frac{\text{Cov}(X, Y)}{\sigma_X \sigma_Y}$$
 
@@ -2338,32 +2357,32 @@ Correlation), $r = 0$ (no linear correlation).
 ### Why Correlation Does Not Imply Causation
 
 1. **Reverse causality:** $Y$ causes $X$ rather than $X$ causing $Y$. Example: higher police
- presence is correlated with higher crime rates, but crime causes police deployment, not the
- reverse
-2. **Omitted variable bias (confounding):** a third variable $Z$ causes both $X$ and $Y$.
- Example: ice cream sales ($X$) and drowning deaths ($Y$) are positively correlated, but both
- are caused by hot weather ($Z$)
-3. **Spurious correlation:** two variables are correlated by coincidence, with no causal
- connection. Example: the number of people who drown by falling into a pool correlates with
- the number of films starring Nicolas Cage
-4. **Simultaneity:** $X$ and $Y$ cause each other simultaneously. Example: income and education
- are correlated because education increases income (human capital theory) and higher income
- enables more education (affordability)
+   presence is correlated with higher crime rates, but crime causes police deployment, not the
+   reverse
+2. **Omitted variable bias (confounding):** a third variable $Z$ causes both $X$ and $Y$. Example:
+   ice cream sales ($X$) and drowning deaths ($Y$) are positively correlated, but both are caused by
+   hot weather ($Z$)
+3. **Spurious correlation:** two variables are correlated by coincidence, with no causal connection.
+   Example: the number of people who drown by falling into a pool correlates with the number of
+   films starring Nicolas Cage
+4. **Simultaneity:** $X$ and $Y$ cause each other simultaneously. Example: income and education are
+   correlated because education increases income (human capital theory) and higher income enables
+   more education (affordability)
 
 ### Establishing Causation
 
 To establish causation, economists use:
 
-1. **Randomised controlled trials (RCTs):** randomly assign treatment and control groups to
- isolate the causal effect. Gold standard but expensive and not always feasible
-2. **Natural experiments:** events that randomly assign treatment (e.g., policy changes that
- affect only some regions)
-3. **Instrumental variables:** find a variable $Z$ that affects $Y$ only through $X$ (the
- exclusion restriction)
-4. **Difference-in-differences:** compare changes in outcomes between treatment and control
- groups before and after a policy change
-5. **Regression discontinuity design:** exploit sharp thresholds in policy rules to compare
- outcomes just above and below the threshold
+1. **Randomised controlled trials (RCTs):** randomly assign treatment and control groups to isolate
+   the causal effect. Gold standard but expensive and not always feasible
+2. **Natural experiments:** events that randomly assign treatment (e.g., policy changes that affect
+   only some regions)
+3. **Instrumental variables:** find a variable $Z$ that affects $Y$ only through $X$ (the exclusion
+   restriction)
+4. **Difference-in-differences:** compare changes in outcomes between treatment and control groups
+   before and after a policy change
+5. **Regression discontinuity design:** exploit sharp thresholds in policy rules to compare outcomes
+   just above and below the threshold
 
 ### Omitted Variable Bias: Formal Treatment
 
@@ -2373,11 +2392,12 @@ $\tilde{Y} = \tilde{\beta}_0 + \tilde{\beta}_1 X + u$Then:
 $$\tilde{\beta}_1 = \beta_1 + \beta_2 \frac{\text{Cov}(X, Z)}{\text{Var}(X)}$$
 
 The omitted variable bias depends on:
+
 - $\beta_2$: the effect of $Z$ on $Y$
 - $\text{Cov}(X, Z)/\text{Var}(X)$: the relationship between $X$ and $Z$
 
-The bias is zero if either $\beta_2 = 0$ ($Z$ does not affect $Y$) or $\text{Cov}(X, Z) = 0$
-($X$ and $Z$ are uncorrelated).
+The bias is zero if either $\beta_2 = 0$ ($Z$ does not affect $Y$) or $\text{Cov}(X, Z) = 0$ ($X$
+and $Z$ are uncorrelated).
 
 **Numerical example:**
 
@@ -2390,8 +2410,8 @@ OVB on study hours coefficient $= 0.3 \times 2/10 = 0.06$
 
 $\tilde{\beta}_1 = 0.5 + 0.06 = 0.56$
 
-The estimated effect of study hours is biased upward by 0.06 because study hours and sleep
-Hours are positively correlated, and we are attributing some of the effect of sleep to study.
+The estimated effect of study hours is biased upward by 0.06 because study hours and sleep Hours are
+positively correlated, and we are attributing some of the effect of sleep to study.
 
 ## Index Number Chaining (HL Extension)
 
@@ -2423,48 +2443,52 @@ Change) basket, which overweights the now-more-expensive good.
 **New goods bias:** fixed-base indices cannot incorporate new goods until the base is updated.
 Chain-linked indices incorporate new goods as soon as they appear in the basket.
 
-**Quality change:** improvements in quality mean that a price increase may reflect improved
-Quality rather than pure inflation. Chain-linked indices allow more frequent quality adjustments.
+**Quality change:** improvements in quality mean that a price increase may reflect improved Quality
+rather than pure inflation. Chain-linked indices allow more frequent quality adjustments.
 
 ### Numerical Example: Chain-Linked CPI
 
 An economy consumes two goods: food and housing.
 
 | Year | Price of food | Quantity of food | Price of housing | Quantity of housing |
-|---|---|---|---|---|
-| 2020 | 10 | 100 | 50 | 20 |
-| 2021 | 12 | 90 | 55 | 20 |
-| 2022 | 11 | 95 | 60 | 18 |
+| ---- | ------------- | ---------------- | ---------------- | ------------------- |
+| 2020 | 10            | 100              | 50               | 20                  |
+| 2021 | 12            | 90               | 55               | 20                  |
+| 2022 | 11            | 95               | 60               | 18                  |
 
 **Fixed-base (Laspeyres) index with 2020 base:**
 
-2021: $I_{2021} = \frac{12 \times 100 + 55 \times 20}{10 \times 100 + 50 \times 20} \times 100 = \frac{1200 + 1100}{1000 + 1000} \times 100 = \frac{2300}{2000} \times 100 = 115.0$
+2021:
+$I_{2021} = \frac{12 \times 100 + 55 \times 20}{10 \times 100 + 50 \times 20} \times 100 = \frac{1200 + 1100}{1000 + 1000} \times 100 = \frac{2300}{2000} \times 100 = 115.0$
 
-2022: $I_{2022} = \frac{11 \times 100 + 60 \times 20}{10 \times 100 + 50 \times 20} \times 100 = \frac{1100 + 1200}{2000} \times 100 = \frac{2300}{2000} \times 100 = 115.0$
+2022:
+$I_{2022} = \frac{11 \times 100 + 60 \times 20}{10 \times 100 + 50 \times 20} \times 100 = \frac{1100 + 1200}{2000} \times 100 = \frac{2300}{2000} \times 100 = 115.0$
 
 Inflation 2020--2021 = 15.0%. Inflation 2021--2022 = 0.0%.
 
 **Chain-linked index:**
 
-2021: $I_{2021} = 100 \times \frac{12 \times 100 + 55 \times 20}{10 \times 100 + 50 \times 20} = 100 \times \frac{2300}{2000} = 115.0$
+2021:
+$I_{2021} = 100 \times \frac{12 \times 100 + 55 \times 20}{10 \times 100 + 50 \times 20} = 100 \times \frac{2300}{2000} = 115.0$
 
-2022: $I_{2022} = 115.0 \times \frac{11 \times 90 + 60 \times 20}{12 \times 90 + 55 \times 20} = 115.0 \times \frac{990 + 1200}{1080 + 1100}$
+2022:
+$I_{2022} = 115.0 \times \frac{11 \times 90 + 60 \times 20}{12 \times 90 + 55 \times 20} = 115.0 \times \frac{990 + 1200}{1080 + 1100}$
 
 $= 115.0 \times \frac{2190}{2180} = 115.0 \times 1.0046 = 115.5$
 
 Chain-linked inflation 2021--2022 = 0.46%.
 
 The chain-linked index shows positive inflation (0.46%) while the fixed-base index shows zero
-Inflation. The difference arises because the chain-linked index uses the 2021 basket (which
-Reflects the substitution away from food toward housing), while the fixed-base index uses the
-2020 basket.
+Inflation. The difference arises because the chain-linked index uses the 2021 basket (which Reflects
+the substitution away from food toward housing), while the fixed-base index uses the 2020 basket.
 
 **Paasche index for comparison:**
 
-2022 Paasche: $\frac{11 \times 95 + 60 \times 18}{10 \times 95 + 50 \times 18} = \frac{1045 + 1080}{950 + 900} = \frac{2125}{1850} = 114.9$
+2022 Paasche:
+$\frac{11 \times 95 + 60 \times 18}{10 \times 95 + 50 \times 18} = \frac{1045 + 1080}{950 + 900} = \frac{2125}{1850} = 114.9$
 
-The Paasche index (using current weights) gives 114.9, slightly lower than both the Laspeyres
-And chain-linked results.
+The Paasche index (using current weights) gives 114.9, slightly lower than both the Laspeyres And
+chain-linked results.
 
 ### Fisher Ideal Index
 
@@ -2491,8 +2515,8 @@ A government is evaluating a high-speed rail project:
 
 (b) Perform one-way sensitivity analysis varying the discount rate to 3% and 7%.
 
-(c) Perform one-way sensitivity analysis varying the annual benefit to USD 2 billion and
- USD 4 billion.
+(c) Perform one-way sensitivity analysis varying the annual benefit to USD 2 billion and USD 4
+billion.
 
 (d) The project life is uncertain. Calculate the break-even project life.
 
@@ -2542,12 +2566,12 @@ An economist estimates the Phillips curve: $\pi = \beta_0 + \beta_1 u + \epsilon
 Data (5 observations):
 
 | Observation | Unemployment rate ($u$%) | Inflation rate ($\pi$%) |
-|---|---|---|
-| 1 | 3 | 6 |
-| 2 | 5 | 4 |
-| 3 | 7 | 3 |
-| 4 | 8 | 2 |
-| 5 | 10 | 1 |
+| ----------- | ------------------------ | ----------------------- |
+| 1           | 3                        | 6                       |
+| 2           | 5                        | 4                       |
+| 3           | 7                        | 3                       |
+| 4           | 8                        | 2                       |
+| 5           | 10                       | 1                       |
 
 (a) Estimate the regression coefficients.
 
@@ -2573,12 +2597,12 @@ Estimated Phillips curve: $\hat{\pi} = 7.86 - 0.706u$
 (b) Predicted values and residuals:
 
 | $u$ | $\pi$ | $\hat{\pi}$ | $(\pi - \hat{\pi})^2$ | $(\pi - \bar{\pi})^2$ |
-|---|---|---|---|---|
-| 3 | 6 | 5.74 | 0.068 | 7.84 |
-| 5 | 4 | 4.33 | 0.109 | 0.64 |
-| 7 | 3 | 2.92 | 0.006 | 0.04 |
-| 8 | 2 | 2.21 | 0.044 | 1.44 |
-| 10 | 1 | 0.80 | 0.040 | 4.84 |
+| --- | ----- | ----------- | --------------------- | --------------------- |
+| 3   | 6     | 5.74        | 0.068                 | 7.84                  |
+| 5   | 4     | 4.33        | 0.109                 | 0.64                  |
+| 7   | 3     | 2.92        | 0.006                 | 0.04                  |
+| 8   | 2     | 2.21        | 0.044                 | 1.44                  |
+| 10  | 1     | 0.80        | 0.040                 | 4.84                  |
 
 $\text{SSR} = 0.267$$\text{SST} = 14.80$
 
@@ -2611,10 +2635,10 @@ Laureates per capita. The correlation coefficient is $r = 0.79$.
 (a) Calculate $R^2$ and interpret it.
 
 (b) Identify the most likely source of the correlation (reverse causality, omitted variable, or
- spurious).
+spurious).
 
 (c) Explain how omitted variable bias could affect a regression of Nobel laureates on chocolate
- consumption.
+consumption.
 
 (a) $R^2 = r^2 = 0.79^2 = 0.624$
 
@@ -2626,10 +2650,10 @@ Include:
 
 - GDP per capita (richer countries can afford both more chocolate and more research funding)
 - Education spending (better-educated populations both consume more chocolate and produce more
- research)
+  research)
 - Institutional quality (strong institutions support both consumption diversity and research)
 - Climate (Northern European countries have higher chocolate consumption and strong research
- institutions)
+  institutions)
 
 The correlation is **not spurious** in the strict sense because there are genuine causal chains
 Connecting the omitted variables to both chocolate consumption and Nobel prizes.
@@ -2652,9 +2676,9 @@ If $\beta_2 > 0$ (GDP increases Nobel prizes) and $\text{Cov}(\text{Chocolate}, 
 The estimated effect of chocolate on Nobel prizes is biased upward. Some of the effect of GDP on
 Nobel prizes is mistakenly attributed to chocolate consumption.
 
-To establish causation, the researcher could use an instrumental variable (e.g., a measure of
-Cocoa production that affects chocolate consumption but not Nobel prizes directly) or a natural
-Experiment (e.g., a chocolate tax in one country).
+To establish causation, the researcher could use an instrumental variable (e.g., a measure of Cocoa
+production that affects chocolate consumption but not Nobel prizes directly) or a natural Experiment
+(e.g., a chocolate tax in one country).
 
 </details>
 
@@ -2674,15 +2698,21 @@ Avoided climate damages of USD 100 billion per year, starting in 20 years and co
 
 $\text{PV of benefits} = \frac{B}{r} \times \frac{1}{(1+r)^{20}}$
 
-At 1.4%: $\text{PV} = \frac{100}{0.014} \times \frac{1}{1.014^{20}} = 7\,143 \times \frac{1}{1.320} = 5\,411$ billion
+At 1.4%:
+$\text{PV} = \frac{100}{0.014} \times \frac{1}{1.014^{20}} = 7\,143 \times \frac{1}{1.320} = 5\,411$
+billion
 
 $\text{NPV} = -2\,000 + 5\,411 = +3\,411$ billion
 
-At 3.5%: $\text{PV} = \frac{100}{0.035} \times \frac{1}{1.035^{20}} = 2\,857 \times \frac{1}{1.990} = 1\,436$ billion
+At 3.5%:
+$\text{PV} = \frac{100}{0.035} \times \frac{1}{1.035^{20}} = 2\,857 \times \frac{1}{1.990} = 1\,436$
+billion
 
 $\text{NPV} = -2\,000 + 1\,436 = -564$ billion
 
-At 5%: $\text{PV} = \frac{100}{0.05} \times \frac{1}{1.05^{20}} = 2\,000 \times \frac{1}{2.653} = 754$ billion
+At 5%:
+$\text{PV} = \frac{100}{0.05} \times \frac{1}{1.05^{20}} = 2\,000 \times \frac{1}{2.653} = 754$
+billion
 
 $\text{NPV} = -2\,000 + 754 = -1\,246$ billion
 
@@ -2694,45 +2724,43 @@ $\frac{100}{r(1+r)^{20}} = 2\,000$
 
 $r(1+r)^{20} = 0.05$
 
-Solving by trial: at $r = 2.0\%$: $0.02 \times 1.486 = 0.0297$ (too low)
-At $r = 2.5\%$: $0.025 \times 1.639 = 0.0410$ (closer)
-At $r = 2.3\%$: $0.023 \times 1.588 = 0.0365$
-At $r = 2.2\%$: $0.022 \times 1.562 = 0.0344$
-At $r = 2.15\%$: $0.0215 \times 1.549 = 0.0333$
+Solving by trial: at $r = 2.0\%$: $0.02 \times 1.486 = 0.0297$ (too low) At $r = 2.5\%$:
+$0.025 \times 1.639 = 0.0410$ (closer) At $r = 2.3\%$: $0.023 \times 1.588 = 0.0365$ At $r = 2.2\%$:
+$0.022 \times 1.562 = 0.0344$ At $r = 2.15\%$: $0.0215 \times 1.549 = 0.0333$
 
 The break-even discount rate is approximately 2.1--2.2%.
 
 (c) The choice of discount rate for climate policy has profound ethical implications:
 
 1. **Intergenerational equity:** a high discount rate effectively places near-zero value on the
- welfare of future generations. At 5%, USD 1 of damage in 100 years is worth USD 0.008 today
-2. **Pure time preference:** Stern's low $\delta$ (0.1%) reflects the ethical view that future
- lives should be valued equally to current lives. Nordhaus's higher $\delta$ (3%) reflects the
- empirical observation that people do discount the future
+   welfare of future generations. At 5%, USD 1 of damage in 100 years is worth USD 0.008 today
+2. **Pure time preference:** Stern's low $\delta$ (0.1%) reflects the ethical view that future lives
+   should be valued equally to current lives. Nordhaus's higher $\delta$ (3%) reflects the empirical
+   observation that people do discount the future
 3. **Uncertainty:** climate damages are highly uncertain and potentially catastrophic (fat tails).
- Standard discounting may understate the expected cost of low-probability, high-impact events
-4. **Irreversibility:** climate change involves irreversible tipping points. Standard NPV
- analysis does not adequately account for the option value of preserving flexibility
+   Standard discounting may understate the expected cost of low-probability, high-impact events
+4. **Irreversibility:** climate change involves irreversible tipping points. Standard NPV analysis
+   does not adequately account for the option value of preserving flexibility
 
 </details>
 
 ## Common Pitfalls: Quantitative Economics (Comprehensive)
 
-- Confusing the discount rate with the interest rate. The social discount rate reflects social
- time preference, not the market interest rate
-- Using the wrong formula for a perpetuity vs. A finite annuity. A perpetuity has an infinite
- time horizon: $\text{PV} = C/r$. An annity is finite: $\text{PV} = C \times \text{AF}(n, r)$
-- Ignoring sensitivity analysis. Presenting a single NPV without sensitivity analysis gives a
- false sense of precision
-- Assuming that $R^2$ measures causation. A high $R^2$ does not mean the independent variable
- causes the dependent variable; it only measures the strength of the linear association
+- Confusing the discount rate with the interest rate. The social discount rate reflects social time
+  preference, not the market interest rate
+- Using the wrong formula for a perpetuity vs. A finite annuity. A perpetuity has an infinite time
+  horizon: $\text{PV} = C/r$. An annity is finite: $\text{PV} = C \times \text{AF}(n, r)$
+- Ignoring sensitivity analysis. Presenting a single NPV without sensitivity analysis gives a false
+  sense of precision
+- Assuming that $R^2$ measures causation. A high $R^2$ does not mean the independent variable causes
+  the dependent variable; it only measures the strength of the linear association
 - Confusing the Laspeyres and Paasche indices. Laspeyres uses base-year quantities (overstates
- inflation); Paasche uses current-year quantities (understates inflation)
+  inflation); Paasche uses current-year quantities (understates inflation)
 - Forgetting that chain-linking and Fisher indices reduce but do not eliminate substitution bias
-- Applying the simple Phillips curve to periods of stagflation. The expectations-augmented
- Phillips curve is needed when expected inflation is changing
-- Ignoring the base year when comparing index numbers. Index values are relative to the base;
- the choice of base year affects the level (though not the percentage change between periods)
+- Applying the simple Phillips curve to periods of stagflation. The expectations-augmented Phillips
+  curve is needed when expected inflation is changing
+- Ignoring the base year when comparing index numbers. Index values are relative to the base; the
+  choice of base year affects the level (though not the percentage change between periods)
 
 ## Multiple Regression Analysis (HL Extension)
 
@@ -2740,7 +2768,8 @@ The break-even discount rate is approximately 2.1--2.2%.
 
 $$Y_i = \beta_0 + \beta_1 X_{1i} + \beta_2 X_{2i} + \cdots + \beta_k X_{ki} + \epsilon_i$$
 
-The OLS estimators minimise $\sum_{i=1}^{n} (Y_i - \hat{\beta}_0 - \hat{\beta}_1 X_{1i} - \cdots - \hat{\beta}_k X_{ki})^2$.
+The OLS estimators minimise
+$\sum_{i=1}^{n} (Y_i - \hat{\beta}_0 - \hat{\beta}_1 X_{1i} - \cdots - \hat{\beta}_k X_{ki})^2$.
 
 ### Hypothesis Testing in Regression
 
@@ -2758,14 +2787,14 @@ If $F > F_{\text{critical}}(k, n-k-1)$Reject $H_0: \beta_1 = \beta_2 = \cdots = 
 
 ### Multicollinearity
 
-**Multicollinearity** occurs when two or more independent variables are highly correlated with
-Each other. This inflates the standard errors of the coefficients, making it difficult to
-Identify the individual effect of each variable.
+**Multicollinearity** occurs when two or more independent variables are highly correlated with Each
+other. This inflates the standard errors of the coefficients, making it difficult to Identify the
+individual effect of each variable.
 
 **Detection:**
 
-1. **Correlation matrix:** pairwise correlations between independent variables exceeding 0.8
- suggest multicollinearity
+1. **Correlation matrix:** pairwise correlations between independent variables exceeding 0.8 suggest
+   multicollinearity
 2. **Variance Inflation Factor (VIF):**
 
 $$\text{VIF}_j = \frac{1}{1 - R_j^2}$$
@@ -2797,12 +2826,12 @@ Where $Q$ = quantity of coffee demanded, $P$ = price, $I$ = income.
 Data:
 
 | Observation | $Q$ | $P$ | $I$ |
-|---|---|---|---|
-| 1 | 100 | 5 | 50 |
-| 2 | 80 | 8 | 50 |
-| 3 | 120 | 3 | 60 |
-| 4 | 90 | 7 | 55 |
-| 5 | 110 | 4 | 65 |
+| ----------- | --- | --- | --- |
+| 1           | 100 | 5   | 50  |
+| 2           | 80  | 8   | 50  |
+| 3           | 120 | 3   | 60  |
+| 4           | 90  | 7   | 55  |
+| 5           | 110 | 4   | 65  |
 
 Using OLS (via matrix algebra or software), the estimated regression is:
 
@@ -2814,15 +2843,17 @@ $R^2 = 0.96$$\bar{R}^2 = 0.92$$n = 5$$k = 2$
 
 **Interpretation:**
 
-- $\hat{\beta}_1 = -8.1$: a USD 1 increase in price reduces quantity demanded by 8.1 units,
- holding income constant. The price elasticity at the mean: $\epsilon_P = -8.1 \times \bar{P}/\bar{Q} = -8.1 \times 5.4/100 = -0.44$ (inelastic)
-- $\hat{\beta}_2 = 0.9$: a USD 1 increase in income increases quantity demanded by 0.9 units.
- Income elasticity: $\epsilon_I = 0.9 \times \bar{I}/\bar{Q} = 0.9 \times 56/100 = 0.50$ (normal good, income inelastic)
+- $\hat{\beta}_1 = -8.1$: a USD 1 increase in price reduces quantity demanded by 8.1 units, holding
+  income constant. The price elasticity at the mean:
+  $\epsilon_P = -8.1 \times \bar{P}/\bar{Q} = -8.1 \times 5.4/100 = -0.44$ (inelastic)
+- $\hat{\beta}_2 = 0.9$: a USD 1 increase in income increases quantity demanded by 0.9 units. Income
+  elasticity: $\epsilon_I = 0.9 \times \bar{I}/\bar{Q} = 0.9 \times 56/100 = 0.50$ (normal good,
+  income inelastic)
 
 **t-tests:**
 
-$t_1 = -8.1/1.5 = -5.4$. $|t| > t_{0.025,2} = 4.30$. Significant at 5%.
-$t_2 = 0.9/0.4 = 2.25$. $|t| < 4.30$. Not significant at 5% (but would be with more data).
+$t_1 = -8.1/1.5 = -5.4$. $|t| > t_{0.025,2} = 4.30$. Significant at 5%. $t_2 = 0.9/0.4 = 2.25$.
+$|t| < 4.30$. Not significant at 5% (but would be with more data).
 
 **F-test:**
 
@@ -2834,29 +2865,29 @@ $F > 19.0$: the model is jointly significant at the 5% level.
 
 ### The Real Options Approach
 
-Traditional NPV analysis assumes an irreversible investment decision made at a single point in
-Time. The **real options** approach recognises that managers have flexibility to adapt their
-Decisions as new information becomes available.
+Traditional NPV analysis assumes an irreversible investment decision made at a single point in Time.
+The **real options** approach recognises that managers have flexibility to adapt their Decisions as
+new information becomes available.
 
 **Types of real options:**
 
-1. **Option to delay:** wait for more information before investing. Valuable when uncertainty
- is high and the investment is irreversible
+1. **Option to delay:** wait for more information before investing. Valuable when uncertainty is
+   high and the investment is irreversible
 2. **Option to expand:** invest in a small-scale project with the option to expand if successful
 3. **Option to abandon:** the ability to abandon a project and recover some of the investment
 4. **Option to switch:** the flexibility to switch inputs or outputs as conditions change
 
 ### Option Value of Waiting
 
-The value of the option to delay is the difference between the NPV with flexibility and the
-NPV without flexibility:
+The value of the option to delay is the difference between the NPV with flexibility and the NPV
+without flexibility:
 
 $$\text{Option value} = \text{NPV}_{\text{with flexibility}} - \text{NPV}_{\text{without flexibility}}$$
 
 ### Numerical Example
 
-A government is considering building a new airport. The cost is USD 10 billion. The expected
-Annual revenue is USD 800 million. The discount rate is 8%.
+A government is considering building a new airport. The cost is USD 10 billion. The expected Annual
+revenue is USD 800 million. The discount rate is 8%.
 
 **Traditional NPV:**
 
@@ -2866,9 +2897,9 @@ $\text{NPV} = -10 + 0.8 \times 12.5 = -10 + 10 = 0$
 
 The NPV is exactly zero: the government is indifferent.
 
-**With uncertainty:** there is a 50% chance that demand is high (revenue = USD 1.2 billion/year)
-And a 50% chance that demand is low (revenue = USD 0.4 billion/year). The government can wait
-One year to observe demand before deciding.
+**With uncertainty:** there is a 50% chance that demand is high (revenue = USD 1.2 billion/year) And
+a 50% chance that demand is low (revenue = USD 0.4 billion/year). The government can wait One year
+to observe demand before deciding.
 
 **Option to delay:**
 
@@ -2881,22 +2912,22 @@ If low: do not invest (NPV $= 0$).
 
 Expected NPV (at year 0): $0.5 \times 5/(1.08) + 0.5 \times 0 = 2.31$ billion.
 
-The option to wait is worth USD 2.31 billion, compared to USD 0 for immediate investment.
-The government should wait.
+The option to wait is worth USD 2.31 billion, compared to USD 0 for immediate investment. The
+government should wait.
 
-**The value of flexibility:** even though the expected NPV of immediate investment is zero
-(the same as the expected NPV of the uncertain project), the option to wait has positive
-Value because it eliminates the downside risk (the USD 0.4 billion/year scenario).
+**The value of flexibility:** even though the expected NPV of immediate investment is zero (the same
+as the expected NPV of the uncertain project), the option to wait has positive Value because it
+eliminates the downside risk (the USD 0.4 billion/year scenario).
 
 ### Option Value and Irreversibility
 
 The option value of waiting is larger when:
 
 1. **Uncertainty is high:** more uncertainty means more information to be gained by waiting
-2. **The investment is irreversible:** if the investment can be reversed (recovered), there
- is no value in waiting
+2. **The investment is irreversible:** if the investment can be reversed (recovered), there is no
+   value in waiting
 3. **The discount rate is low:** a low discount rate increases the present value of future
- information
+   information
 
 $$\text{Option value} \propto \frac{\text{Uncertainty} \times \text{Irreversibility}}{\text{Discount rate}}$$
 
@@ -2915,12 +2946,12 @@ $\text{Growth} = \beta_0 + \beta_1 \text{Investment} + \beta_2 \text{Education} 
 
 Data (10 observations, standardised variables):
 
-| Variable | Coefficient | Std. Error | t-stat | VIF |
-|---|---|---|---|---|
-| Intercept | 2.5 | 0.8 | 3.13 | -- |
-| Investment | 0.35 | 0.12 | 2.92 | 1.8 |
-| Education | 0.20 | 0.15 | 1.33 | 3.2 |
-| Trade | 0.18 | 0.14 | 1.29 | 3.0 |
+| Variable   | Coefficient | Std. Error | t-stat | VIF |
+| ---------- | ----------- | ---------- | ------ | --- |
+| Intercept  | 2.5         | 0.8        | 3.13   | --  |
+| Investment | 0.35        | 0.12       | 2.92   | 1.8 |
+| Education  | 0.20        | 0.15       | 1.33   | 3.2 |
+| Trade      | 0.18        | 0.14       | 1.29   | 3.0 |
 
 $R^2 = 0.72$$n = 10$$k = 3$
 
@@ -2930,10 +2961,10 @@ $R^2 = 0.72$$n = 10$$k = 3$
 
 (c) The economist drops the Education variable and re-estimates:
 
-| Variable | Coefficient | Std. Error | t-stat |
-|---|---|---|---|
-| Investment | 0.42 | 0.10 | 4.20 |
-| Trade | 0.25 | 0.11 | 2.27 |
+| Variable   | Coefficient | Std. Error | t-stat |
+| ---------- | ----------- | ---------- | ------ |
+| Investment | 0.42        | 0.10       | 4.20   |
+| Trade      | 0.25        | 0.11       | 2.27   |
 
 $R^2 = 0.65$. Compare and interpret. [4 marks]
 
@@ -2941,40 +2972,41 @@ $R^2 = 0.65$. Compare and interpret. [4 marks]
 
 $F_{0.05}(3, 6) = 4.76$.
 
-$F = 5.14 > 4.76$: the regression is jointly significant at the 5% level. At least one
-Coefficient is significantly different from zero.
+$F = 5.14 > 4.76$: the regression is jointly significant at the 5% level. At least one Coefficient
+is significantly different from zero.
 
-(b) VIF values: Investment (1.8), Education (3.2), Trade (3.0). None exceeds 10, so there is
-No severe multicollinearity by the standard rule. However, the VIFs for Education and Trade
-(>3) suggest moderate correlation.
+(b) VIF values: Investment (1.8), Education (3.2), Trade (3.0). None exceeds 10, so there is No
+severe multicollinearity by the standard rule. However, the VIFs for Education and Trade (>3)
+suggest moderate correlation.
 
-The moderate multicollinearity explains why Education and Trade have large standard errors
-And are individually insignificant (t-stats of 1.33 and 1.29) despite the model being jointly
-Significant. The correlated variables are "stealing" significance from each other.
+The moderate multicollinearity explains why Education and Trade have large standard errors And are
+individually insignificant (t-stats of 1.33 and 1.29) despite the model being jointly Significant.
+The correlated variables are "stealing" significance from each other.
 
 (c) After dropping Education:
 
-- Investment coefficient increases from 0.35 to 0.42, and its standard error decreases
- (more precise estimate)
+- Investment coefficient increases from 0.35 to 0.42, and its standard error decreases (more precise
+  estimate)
 - Trade coefficient increases from 0.18 to 0.25, and becomes significant (t = 2.27)
 - $R^2$ falls from 0.72 to 0.65 (expected, since a variable was removed)
-- $\bar{R}^2$ original: $1 - (0.28/6)/(9/9) = 1 - 0.0467 = 0.953$. Wait, that cannot be
- right.
+- $\bar{R}^2$ original: $1 - (0.28/6)/(9/9) = 1 - 0.0467 = 0.953$. Wait, that cannot be right.
 
 $\bar{R}^2 = 1 - \frac{0.28 \times 9}{9 \times 0.72} = 1 - 0.389 = 0.611$.
 
-Actually: $\bar{R}^2 = 1 - \frac{(1-0.72)(10-1)}{10-3-1} = 1 - \frac{0.28 \times 9}{6} = 1 - 0.42 = 0.58$.
+Actually:
+$\bar{R}^2 = 1 - \frac{(1-0.72)(10-1)}{10-3-1} = 1 - \frac{0.28 \times 9}{6} = 1 - 0.42 = 0.58$.
 
-$\bar{R}^2$ new: $1 - \frac{(1-0.65)(10-1)}{10-2-1} = 1 - \frac{0.35 \times 9}{7} = 1 - 0.45 = 0.55$.
+$\bar{R}^2$ new:
+$1 - \frac{(1-0.65)(10-1)}{10-2-1} = 1 - \frac{0.35 \times 9}{7} = 1 - 0.45 = 0.55$.
 
-The adjusted $R^2$ falls slightly (0.58 to 0.55), suggesting that Education does add
-Incremental explanatory power. However, the simpler model provides clearer coefficient
-Estimates for Investment and Trade.
+The adjusted $R^2$ falls slightly (0.58 to 0.55), suggesting that Education does add Incremental
+explanatory power. However, the simpler model provides clearer coefficient Estimates for Investment
+and Trade.
 
 **Trade-off:** the full model has higher $\bar{R}^2$ but multicollinearity makes individual
-Coefficients imprecise. The simpler model has clearer coefficients but lower explanatory
-Power. The choice depends on whether the goal is prediction (full model) or causal
-Interpretation (simpler model).
+Coefficients imprecise. The simpler model has clearer coefficients but lower explanatory Power. The
+choice depends on whether the goal is prediction (full model) or causal Interpretation (simpler
+model).
 
 </details>
 
@@ -2996,7 +3028,8 @@ A government is considering a carbon capture project:
 
 (c) What is the value of the real option to delay? [3 marks]
 
-(a) Annual benefit (expected) $= 0.4 \times 50 \times 1 + 0.6 \times 100 \times 1 = 20 + 60 = 80$ million.
+(a) Annual benefit (expected) $= 0.4 \times 50 \times 1 + 0.6 \times 100 \times 1 = 20 + 60 = 80$
+million.
 
 Annuity factor (perpetuity, 6%): $1/0.06 = 16.67$.
 
@@ -3018,8 +3051,8 @@ $\text{NPV at year 2} = -5000 + 100/0.06 = -5000 + 1666.7 = -3333.3$ million.
 
 Still negative. Do not invest.
 
-Wait -- both scenarios yield negative NPV. The option to wait has zero value because the
-Project is never viable. Let me adjust the parameters.
+Wait -- both scenarios yield negative NPV. The option to wait has zero value because the Project is
+never viable. Let me adjust the parameters.
 
 Recalculating with a larger capture capacity: 5 million tonnes per year.
 
@@ -3043,21 +3076,20 @@ $= 0 + 0.6 \times 3333.3 \times 0.8890 = 0.6 \times 2962.8 = 1777.7$ million.
 
 The option to wait is worth USD 110 million. The government should wait 2 years because:
 
-1. The option value (USD 178 million) exceeds the immediate investment NPV (USD 1,668 million)
- only by a small margin, but waiting eliminates the 40% chance of investing in a
- money-losing project
+1. The option value (USD 178 million) exceeds the immediate investment NPV (USD 1,668 million) only
+   by a small margin, but waiting eliminates the 40% chance of investing in a money-losing project
 2. The expected NPV of waiting (1,778) is higher than the NPV of immediate investment (1,668)
 
 Wait, that contradicts. Let me recheck:
 
 Immediate NPV $= +1668$. Wait NPV $= 1778$. $1778 > 1668$So waiting is better.
 
-The option value is $1778 - 1668 = 110$ million. The government gains USD 110 million in
-Expected value by waiting, because it avoids investing in the unfavourable scenario.
+The option value is $1778 - 1668 = 110$ million. The government gains USD 110 million in Expected
+value by waiting, because it avoids investing in the unfavourable scenario.
 
-**Key insight:** even when the expected NPV of immediate investment is positive, waiting can
-Be optimal when the investment is irreversible and there is uncertainty. The option to
-Avoid the unfavourable scenario has positive value.
+**Key insight:** even when the expected NPV of immediate investment is positive, waiting can Be
+optimal when the investment is irreversible and there is uncertainty. The option to Avoid the
+unfavourable scenario has positive value.
 
 </details>
 

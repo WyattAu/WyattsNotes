@@ -1,12 +1,15 @@
 ---
 title: Types and Variables
-description: "Types and Variables — JVM Architecture and Memory Model; Stack vs Heap vs Metaspace; Where Variables Live; Primitive Types."
+description:
+  'Types and Variables — JVM Architecture and Memory Model; Stack vs Heap vs Metaspace; Where
+  Variables Live; Primitive Types.'
 date: 2025-06-05T10:00:00.000Z
 tags: ['java']
 categories: ['java']
 slug: types-and-variables
 sidebar_position: 1
 ---
+
 ## JVM Architecture and Memory Model
 
 Before understanding types and variables, you must understand where they live at runtime. The JVM
@@ -45,13 +48,11 @@ Method definitions, constant pool entries), static fields, and runtime constant 
 Unlike PermGen, Metaspace uses native memory and can grow dynamically (bounded by
 `-XX:MaxMetaspaceSize`).
 
-:::info
-JLS Reference
+:::info JLS Reference
 [JLS §2.5](https://docs.oracle.com/javase/specs/jls/se21/html/jls-2.html#jls-2.5) defines the
 Runtime data areas.
 [JLS §17.4](https://docs.oracle.com/javase/specs/jls/se21/html/jls-17.html#jls-17.4) specifies the
-Memory model, which governs how threads interact through shared memory.
-:::
+Memory model, which governs how threads interact through shared memory. :::
 
 ### Where Variables Live
 
@@ -75,30 +76,28 @@ Java defines eight primitive types. They are not objects — they hold raw bit p
 Directly on the stack or within object layouts on the heap. Primitives have no methods, no identity
 (only value equality), and cannot be `null`.
 
-| Type | Size (bits) | Size (bytes) | Default | Range |
+| Type      | Size (bits) | Size (bytes) | Default    | Range                          |
 | --------- | ----------: | -----------: | ---------- | ------------------------------ |
-| `byte` | 8 | 1 | `0` | -128 to 127 |
-| `short` | 16 | 2 | `0` | -32,768 to 32,767 |
-| `int` | 32 | 4 | `0` | -2^31 to 2^31 - 1 |
-| `long` | 64 | 8 | `0L` | -2^63 to 2^63 - 1 |
-| `float` | 32 | 4 | `0.0f` | IEEE 754 binary32 |
-| `double` | 64 | 8 | `0.0` | IEEE 754 binary64 |
-| `char` | 16 | 2 | `'\u0000'` | 0 to 65,535 (UTF-16 code unit) |
-| `boolean` | 1 | ~ | `false` | `true` or `false` |
+| `byte`    |           8 |            1 | `0`        | -128 to 127                    |
+| `short`   |          16 |            2 | `0`        | -32,768 to 32,767              |
+| `int`     |          32 |            4 | `0`        | -2^31 to 2^31 - 1              |
+| `long`    |          64 |            8 | `0L`       | -2^63 to 2^63 - 1              |
+| `float`   |          32 |            4 | `0.0f`     | IEEE 754 binary32              |
+| `double`  |          64 |            8 | `0.0`      | IEEE 754 binary64              |
+| `char`    |          16 |            2 | `'\u0000'` | 0 to 65,535 (UTF-16 code unit) |
+| `boolean` |           1 |            ~ | `false`    | `true` or `false`              |
 
-:::info
-JLS Reference
+:::info JLS Reference
 [JLS §4.2](https://docs.oracle.com/javase/specs/jls/se21/html/jls-4.html#jls-4.2) defines primitive
 Types and their values.
 [JLS §4.2.3](https://docs.oracle.com/javase/specs/jls/se21/html/jls-4.html#jls-4.2.3) specifies
-Floating-point types and IEEE 754 conformance.
-:::
+Floating-point types and IEEE 754 conformance. :::
 
 ### Integral Types
 
-Java's integral types are **two's complement** signed integers. The `byte``short``int`And
-`long` types use two's complement representation, meaning the most significant bit is the sign bit.
-The `char` type is the only unsigned integral type — it represents a UTF-16 code unit.
+Java's integral types are **two's complement** signed integers. The `byte``short``int`And `long`
+types use two's complement representation, meaning the most significant bit is the sign bit. The
+`char` type is the only unsigned integral type — it represents a UTF-16 code unit.
 
 ```java
 int maxInt = Integer.MAX_VALUE;          // 2147483647 (0x7FFFFFFF)
@@ -147,10 +146,8 @@ System.out.println(0.1 + 0.2);     // 0.30000000000000004
 System.out.println(0.1 + 0.2 == 0.3); // false
 ```
 
-:::warning
-Never use `==` or `!=` to compare floating-point values. Use `Math.abs(a - b) < epsilon`
-Or `Double.compare(a, b)` instead. For monetary calculations, always use `BigDecimal`.
-:::
+:::warning Never use `==` or `!=` to compare floating-point values. Use `Math.abs(a - b) < epsilon`
+Or `Double.compare(a, b)` instead. For monetary calculations, always use `BigDecimal`. :::
 
 ```java
 BigDecimal price = new BigDecimal("19.99");
@@ -169,13 +166,13 @@ Field + padding) plus a heap pointer.
 The wrappers exist for two reasons:
 
 1. **Generics require reference types**. `List<int>` is illegal; you must write `List<Integer>`.
- This is a consequence of Java's type system — generics are implemented via **type erasure**
- ([JLS §4.6](https://docs.oracle.com/javase/specs/jls/se21/html/jls-4.html#jls-4.6)), where type
- parameters are replaced by their bounds (or `Object`) at compile time. Primitives cannot be
- substituted for `Object`.
+   This is a consequence of Java's type system — generics are implemented via **type erasure**
+   ([JLS §4.6](https://docs.oracle.com/javase/specs/jls/se21/html/jls-4.html#jls-4.6)), where type
+   parameters are replaced by their bounds (or `Object`) at compile time. Primitives cannot be
+   substituted for `Object`.
 
 2. **Collections and APIs designed for objects**. The Java Collections Framework (pre-generics) was
- built around `Object`Requiring boxing to store primitive values.
+   built around `Object`Requiring boxing to store primitive values.
 
 ## Reference Types
 
@@ -196,8 +193,7 @@ Preview) records. All reference variables can be `null`Meaning they point to no 
 ## Autoboxing and Unboxing
 
 Autoboxing is the automatic conversion from a primitive type to its corresponding wrapper class.
-Unboxing is the reverse. The compiler inserts calls to `Integer.valueOf()``Integer.intValue()`
-Etc.
+Unboxing is the reverse. The compiler inserts calls to `Integer.valueOf()``Integer.intValue()` Etc.
 
 ```java
 // Explicit boxing (pre-Java 5)
@@ -233,11 +229,9 @@ System.out.println(c.equals(d)); // true  (same value)
 // The cache boundary can be adjusted with -XX:AutoBoxCacheMax=<size>
 ```
 
-:::warning
-**Always use `.equals()` to compare wrapper types.** Using `==` compares object identity,
+:::warning **Always use `.equals()` to compare wrapper types.** Using `==` compares object identity,
 Not value. The cache makes `==` work for small values by coincidence, creating subtle bugs that only
-Appear in production with larger values.
-:::
+Appear in production with larger values. :::
 
 ### Performance Implications of Autoboxing
 
@@ -261,7 +255,7 @@ Autoboxing was introduced to reduce verbosity, but it creates a false impression
 Wrappers are interchangeable. They are not. The key problems are:
 
 1. **`NullPointerException` from unboxing null**: Unboxing a `null` reference throws `NPE`With no
- explicit null check in your source code.
+   explicit null check in your source code.
 
 ```java
 Integer maybeNull = null;
@@ -269,13 +263,13 @@ int value = maybeNull;  // NullPointerException — no visible dereference
 ```
 
 2. **Identity confusion**: `==` compares identity for reference types but value for primitives.
- Autoboxing silently changes the semantics of `==`.
+   Autoboxing silently changes the semantics of `==`.
 
 3. **Hidden performance costs**: Every autobox operation allocates a heap object (outside the cache
- range). In tight loops or performance-critical code, this creates significant GC pressure.
+   range). In tight loops or performance-critical code, this creates significant GC pressure.
 
 4. **Ambiguous overloading**: Method resolution behaves differently than expected when both
- primitive and wrapper overloads exist.
+   primitive and wrapper overloads exist.
 
 ```java
 void overloaded(int i)    { System.out.println("int"); }
@@ -286,10 +280,8 @@ Integer boxed = 42;
 overloaded(boxed);  // prints "Integer" — reference matches reference
 ```
 
-:::danger
-Rule of thumb: use primitives everywhere unless you need `null` (to represent "no value")
-Or you are working with a generic API that requires reference types.
-:::
+:::danger Rule of thumb: use primitives everywhere unless you need `null` (to represent "no value")
+Or you are working with a generic API that requires reference types. :::
 
 ## Strings
 
@@ -311,26 +303,26 @@ The `String` class is declared `final` and its internal `value` array is stored 
 
 ### Design Decision: Why String Is Immutable
 
-1. **Security**: String arguments are passed to `ClassLoader``FileInputStream``Runtime.exec()`
- JDBC drivers, and many other sensitive APIs. Immutability prevents a caller from modifying the
- string after passing it, closing a class of security vulnerabilities.
+1. **Security**: String arguments are passed to `ClassLoader``FileInputStream``Runtime.exec()` JDBC
+   drivers, and many other sensitive APIs. Immutability prevents a caller from modifying the string
+   after passing it, closing a class of security vulnerabilities.
 
 2. **Thread safety**: Immutable objects are inherently thread-safe. No synchronization is needed
- when sharing strings across threads. This is critical because strings are the most shared data
- type in Java.
+   when sharing strings across threads. This is critical because strings are the most shared data
+   type in Java.
 
 3. **Hash code caching**: The hash code of a `String` is computed lazily on first call to
- `hashCode()` and cached in a private field (`hash`). Since the string content never changes, the
- cached hash is always valid. This makes `HashMap` and `HashSet` lookups for string keys very
- efficient.
+   `hashCode()` and cached in a private field (`hash`). Since the string content never changes, the
+   cached hash is always valid. This makes `HashMap` and `HashSet` lookups for string keys very
+   efficient.
 
 4. **String literal interning**: The JVM can safely share string literals across the entire
- application, knowing they will never be modified. This saves significant memory for applications
- that reuse common strings.
+   application, knowing they will never be modified. This saves significant memory for applications
+   that reuse common strings.
 
 5. **Substring safety**: Prior to Java 7u6, `substring()` shared the underlying `char[]` with the
- original string, which could cause memory leaks. Immutable strings ensure that even this
- optimization was safe (the new string could not modify the shared array).
+   original string, which could cause memory leaks. Immutable strings ensure that even this
+   optimization was safe (the new string could not modify the shared array).
 
 ### The String Pool
 
@@ -378,14 +370,12 @@ System.out.println(a == f);        // false
 System.out.println(a.equals(f));   // true
 ```
 
-:::info
-JLS Reference
+:::info JLS Reference
 [JLS §3.10.5](https://docs.oracle.com/javase/specs/jls/se21/html/jls-3.html#jls-3.10.5) defines
 String literals.
 [JLS §5.1.7](https://docs.oracle.com/javase/specs/jls/se21/html/jls-5.html#jls-5.1.7) specifies
 Boxing conversion, including the requirement that strings computed from constant expressions are
-Interned.
-:::
+Interned. :::
 
 ### Design Decision: Why the String Pool Exists
 
@@ -401,11 +391,11 @@ Interning.
 
 ### StringBuilder vs StringBuffer
 
-| Aspect | `StringBuilder` (Java 5+) | `StringBuffer` (Java 1.0+) |
+| Aspect      |  `StringBuilder` (Java 5+)  |     `StringBuffer` (Java 1.0+)     |
 | ----------- | :-------------------------: | :--------------------------------: |
-| Thread-safe | No | Yes (all methods `synchronized`) |
+| Thread-safe |             No              |  Yes (all methods `synchronized`)  |
 | Performance | Faster (no synchronization) | Slower (lock acquisition overhead) |
-| API | Same as `StringBuffer` | Same as `StringBuilder` |
+| API         |   Same as `StringBuffer`    |      Same as `StringBuilder`       |
 
 ```java
 // Prefer StringBuilder in single-threaded contexts
@@ -417,20 +407,18 @@ String result = sb.toString();
 // (which is rare — typically you'd use a local variable)
 ```
 
-:::warning
-**Never use `StringBuffer` in new code** unless you have a specific requirement for
+:::warning **Never use `StringBuffer` in new code** unless you have a specific requirement for
 Thread-safe mutable string building (which is almost never). The synchronization overhead is
 Unnecessary in the vast majority of use cases, and `StringBuffer` is essentially a legacy class
-Retained for backward compatibility.
-:::
+Retained for backward compatibility. :::
 
 ## Arrays
 
 ### Array Basics
 
-Arrays are objects in Java. They have a `length` field, can be `null`And are allocated on the
-Heap. However, unlike regular objects, their structure is defined by the JVM specification, not by a
-Class file.
+Arrays are objects in Java. They have a `length` field, can be `null`And are allocated on the Heap.
+However, unlike regular objects, their structure is defined by the JVM specification, not by a Class
+file.
 
 ```java
 int[] primitives = new int[10];       // zero-initialized: [0, 0, 0, ...]
@@ -459,24 +447,22 @@ numbers[0] = 3.14;                     // ArrayStoreException at runtime!
 // The compile-time type says "Number", but the runtime type says "Integer[]"
 ```
 
-:::danger
-Array covariance breaks type safety. The JVM inserts an **array store check** at runtime
+:::danger Array covariance breaks type safety. The JVM inserts an **array store check** at runtime
 On every assignment to an array element to prevent type corruption. This check has a small but real
 Performance cost. Generic collections (`List<Integer>`) are **invariant**, which is type-safe at
-Compile time and requires no runtime checks.
-:::
+Compile time and requires no runtime checks. :::
 
 ### Arrays vs ArrayList
 
-| Aspect | `int[]` | `ArrayList<Integer>` |
+| Aspect           | `int[]`                                     | `ArrayList<Integer>`                          |
 | ---------------- | ------------------------------------------- | --------------------------------------------- |
-| Element type | Primitives or references | References only (boxing required) |
-| Size | Fixed at creation | Dynamic (resizes internally) |
-| Type safety | Covariant (runtime checks) | Invariant (compile-time safe) |
-| Memory overhead | Minimal (object header + N \* element_size) | Object header + internal array + extra fields |
-| Null elements | For reference arrays only | Allowed |
-| Length query | `array.length` (field) | `list.size()` (method call) |
-| Generics support | Cannot use as generic type | Full generics support |
+| Element type     | Primitives or references                    | References only (boxing required)             |
+| Size             | Fixed at creation                           | Dynamic (resizes internally)                  |
+| Type safety      | Covariant (runtime checks)                  | Invariant (compile-time safe)                 |
+| Memory overhead  | Minimal (object header + N \* element_size) | Object header + internal array + extra fields |
+| Null elements    | For reference arrays only                   | Allowed                                       |
+| Length query     | `array.length` (field)                      | `list.size()` (method call)                   |
+| Generics support | Cannot use as generic type                  | Full generics support                         |
 
 ```java
 // Primitive array — no boxing, cache-friendly, minimal overhead
@@ -520,11 +506,9 @@ var boxed = (Integer) 42; // inferred: Integer
 // var is strictly for local variables with initializers
 ```
 
-:::warning
-Do not use `var` when the type is not obvious from the right-hand side. The goal is
+:::warning Do not use `var` when the type is not obvious from the right-hand side. The goal is
 Readability, not brevity. Prefer explicit types when the initializer is complex, when the type
-Carries important semantic information, or when the inferred type might be surprising.
-:::
+Carries important semantic information, or when the inferred type might be surprising. :::
 
 ## Type Promotion and Casting
 
@@ -561,17 +545,15 @@ char c = 'A';
 int code = c + 1;          // code = 66
 ```
 
-:::warning
-**Surprising widening**: `long` to `float` is a widening conversion per the JLS, but a
+:::warning **Surprising widening**: `long` to `float` is a widening conversion per the JLS, but a
 64-bit `long` has more precision than a 32-bit `float` (which has only 23 fraction bits). A large
 `long` value will lose low-order bits when converted to `float`. This is technically legal but often
-Surprising.
-:::
+Surprising. :::
 
 ### Explicit Casting (Narrowing)
 
-Narrowing conversions (e.g., `long` to `int``double` to `float`) may lose information and require
-An explicit cast. The compiler enforces this to prevent accidental data loss.
+Narrowing conversions (e.g., `long` to `int``double` to `float`) may lose information and require An
+explicit cast. The compiler enforces this to prevent accidental data loss.
 
 ```java
 double pi = 3.14159;
@@ -684,11 +666,9 @@ if (obj instanceof String s && !s.isEmpty()) {
 }
 ```
 
-:::info
-The scope rules for pattern variables are defined by the "conditional AND" short-circuit
-Semantics. If `obj instanceof String s` is `false`The right side of `&&` is never evaluated, so
-`s` cannot be used unsafely. The compiler verifies this using a concept called "flow analysis."
-:::
+:::info The scope rules for pattern variables are defined by the "conditional AND" short-circuit
+Semantics. If `obj instanceof String s` is `false`The right side of `&&` is never evaluated, so `s`
+cannot be used unsafely. The compiler verifies this using a concept called "flow analysis." :::
 
 ## Records (Java 14+)
 
@@ -739,8 +719,7 @@ record NamedPoint(int x, int y, String name) implements Comparable<NamedPoint> {
 }
 ```
 
-:::warning
-Records cannot extend other classes (they implicitly extend `java.lang.Record`). Their
+:::warning Records cannot extend other classes (they implicitly extend `java.lang.Record`). Their
 Fields are always `final`. Records are best suited for data carriers where immutability and
 Structural equality are desired. They are not a replacement for mutable domain objects or entities.
 :::
@@ -859,12 +838,10 @@ ComplexNumber[] points = new ComplexNumber[1000];
 // vs. reference array: [ptr0, ptr1, ...] + 1000 separate heap objects
 ```
 
-:::info
-Value types are still a preview feature and the syntax is evolving. As of Java 23, the
+:::info Value types are still a preview feature and the syntax is evolving. As of Java 23, the
 Feature is available behind `--enable-preview`. The exact syntax and semantics may change in future
 Releases. The core idea remains: providing user-defined types with inline layout and value-based
-Equality, eliminating the performance penalty of object identity.
-:::
+Equality, eliminating the performance penalty of object identity. :::
 
 ### Identity vs Value Semantics
 
@@ -891,27 +868,27 @@ System.out.println(x == y);      // true — value comparison, no identity
 The Java type system reflects a series of deliberate tradeoffs:
 
 1. **Primitives exist for performance**. They provide zero-overhead, stack-allocable, cache-friendly
- values. The cost is that they cannot participate in generics or be `null`.
+   values. The cost is that they cannot participate in generics or be `null`.
 
 2. **Wrappers bridge the gap**. They enable primitives to work with object-oriented APIs (generics,
- collections) at the cost of allocation and indirection. Autoboxing makes this syntactically
- convenient but hides the cost and creates subtle bugs.
+   collections) at the cost of allocation and indirection. Autoboxing makes this syntactically
+   convenient but hides the cost and creates subtle bugs.
 
 3. **String immutability trades mutability for safety**. The inability to modify strings eliminates
- entire categories of bugs (shared mutable state, security vulnerabilities) and enables critical
- optimizations (hash caching, interning, substring sharing).
+   entire categories of bugs (shared mutable state, security vulnerabilities) and enables critical
+   optimizations (hash caching, interning, substring sharing).
 
 4. **The string pool trades per-instance uniqueness for memory efficiency**. By deduplicating
- identical strings, the JVM reduces heap usage for one of the most common data types in Java
- applications.
+   identical strings, the JVM reduces heap usage for one of the most common data types in Java
+   applications.
 
 5. **Type safety is enforced at different levels**. Generics enforce compile-time type safety; array
- covariance enforces runtime type safety via store checks. The trend in Java's evolution (records,
- sealed classes, pattern matching) is toward **moving more safety guarantees to compile time**.
+   covariance enforces runtime type safety via store checks. The trend in Java's evolution (records,
+   sealed classes, pattern matching) is toward **moving more safety guarantees to compile time**.
 
 6. **Value types aim to unify** the performance of primitives with the abstraction of classes,
- closing a gap that has existed since Java 1.0. They represent the most significant change to
- Java's type system since generics.
+   closing a gap that has existed since Java 1.0. They represent the most significant change to
+   Java's type system since generics.
 
 ## Common Pitfalls
 

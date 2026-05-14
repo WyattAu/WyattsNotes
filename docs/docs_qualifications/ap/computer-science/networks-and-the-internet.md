@@ -1,6 +1,8 @@
 ---
 title: Networks and the Internet
-description: "AP Computer Science: Networks and the Internet — The Internet (CED Unit 4); History and Architecture; Internet Architecture; IP Addresses."
+description:
+  'AP Computer Science: Networks and the Internet — The Internet (CED Unit 4); History and
+  Architecture; Internet Architecture; IP Addresses.'
 date: 2026-04-14
 tags:
   - Computer Science
@@ -9,6 +11,7 @@ categories:
   - Computer Science
 slug: networks-and-the-internet
 ---
+
 ## The Internet (CED Unit 4)
 
 ### History and Architecture
@@ -16,9 +19,9 @@ slug: networks-and-the-internet
 The Internet is a global network of interconnected computer networks. Key concepts:
 
 - **Packet switching:** Data is broken into packets that are routed independently across the
- network.
+  network.
 - **Distributed routing:** No single central authority controls routing; routers use protocols to
- find paths.
+  find paths.
 - **Redundancy:** Multiple paths between nodes ensure reliability.
 
 **Brief history.** The Internet evolved from ARPANET (1969), a US Department of Defense project
@@ -28,12 +31,12 @@ The 1990s.
 
 ### Internet Architecture
 
-| Layer | Protocol | Function |
+| Layer       | Protocol                    | Function                                       |
 | ----------- | --------------------------- | ---------------------------------------------- |
-| Application | HTTP, HTTPS, SMTP, DNS, FTP | Application-level communication |
-| Transport | TCP, UDP | End-to-end delivery, error checking, ports |
-| Network | IP (IPv4, IPv6) | Routing packets between networks |
-| Link | Ethernet, Wi-Fi | Physical transmission between adjacent devices |
+| Application | HTTP, HTTPS, SMTP, DNS, FTP | Application-level communication                |
+| Transport   | TCP, UDP                    | End-to-end delivery, error checking, ports     |
+| Network     | IP (IPv4, IPv6)             | Routing packets between networks               |
+| Link        | Ethernet, Wi-Fi             | Physical transmission between adjacent devices |
 
 ### IP Addresses
 
@@ -81,9 +84,11 @@ DNS translates human-readable domain names (e.g., `example.com`) to IP addresses
 2. Operating system checks its DNS cache.
 3. Query sent to the **recursive DNS resolver** ( provided by the ISP).
 4. If not cached, the resolver queries:
- - **Root name server:** Returns the TLD name server (e.g., `.com`).
- - **TLD name server:** Returns the authoritative name server.
- - **Authoritative name server:** Returns the IP address for the domain.
+
+- **Root name server:** Returns the TLD name server (e.g., `.com`).
+- **TLD name server:** Returns the authoritative name server.
+- **Authoritative name server:** Returns the IP address for the domain.
+
 5. The result is cached at each level for future queries.
 
 **Why caching matters.** Without caching, every DNS lookup would require multiple queries across the
@@ -92,24 +97,24 @@ Milliseconds.
 
 **DNS records:**
 
-| Record Type | Purpose | Example |
+| Record Type | Purpose                                  | Example                            |
 | ----------- | ---------------------------------------- | ---------------------------------- |
-| A | Maps domain to IPv4 address | example.com -&gt; 93.184.216.34 |
-| AAAA | Maps domain to IPv6 address | example.com -&gt; 2606:2800:... |
-| CNAME | Alias of one domain to another | blog.example.com -&gt; example.com |
-| MX | Mail exchange server for the domain | example.com -&gt; mail.example.com |
-| NS | Authoritative name server for the domain | example.com -&gt; ns1.example.com |
+| A           | Maps domain to IPv4 address              | example.com -&gt; 93.184.216.34    |
+| AAAA        | Maps domain to IPv6 address              | example.com -&gt; 2606:2800:...    |
+| CNAME       | Alias of one domain to another           | blog.example.com -&gt; example.com |
+| MX          | Mail exchange server for the domain      | example.com -&gt; mail.example.com |
+| NS          | Authoritative name server for the domain | example.com -&gt; ns1.example.com  |
 
 ### TCP vs UDP (CED Unit 4)
 
-| Feature | TCP (Transmission Control Protocol) | UDP (User Datagram Protocol) |
+| Feature     | TCP (Transmission Control Protocol)   | UDP (User Datagram Protocol) |
 | ----------- | ------------------------------------- | ---------------------------- |
-| Connection | Connection-oriented (3-way handshake) | Connectionless |
-| Reliability | Guaranteed delivery, error checking | Best-effort, no guarantees |
-| Ordering | Data arrives in order | No ordering guarantee |
-| Speed | Slower (overhead) | Faster (less overhead) |
-| Use cases | Web browsing, email, file transfer | Streaming, gaming, VoIP |
-| Header size | 20+ bytes | 8 bytes |
+| Connection  | Connection-oriented (3-way handshake) | Connectionless               |
+| Reliability | Guaranteed delivery, error checking   | Best-effort, no guarantees   |
+| Ordering    | Data arrives in order                 | No ordering guarantee        |
+| Speed       | Slower (overhead)                     | Faster (less overhead)       |
+| Use cases   | Web browsing, email, file transfer    | Streaming, gaming, VoIP      |
+| Header size | 20+ bytes                             | 8 bytes                      |
 
 **TCP three-way handshake:**
 
@@ -128,16 +133,16 @@ Overwhelmed.
 
 **TCP vs UDP decision guide:**
 
-| Requirement | Use TCP | Use UDP |
+| Requirement                 | Use TCP | Use UDP |
 | --------------------------- | ------- | ------- |
-| Must receive all data | Yes | No |
-| Order of data matters | Yes | No |
-| Speed is critical | No | Yes |
-| Can tolerate some data loss | No | Yes |
-| Example: downloading a file | Yes | |
-| Example: live video stream | | Yes |
-| Example: online gaming | | Yes |
-| Example: sending an email | Yes | |
+| Must receive all data       | Yes     | No      |
+| Order of data matters       | Yes     | No      |
+| Speed is critical           | No      | Yes     |
+| Can tolerate some data loss | No      | Yes     |
+| Example: downloading a file | Yes     |         |
+| Example: live video stream  |         | Yes     |
+| Example: online gaming      |         | Yes     |
+| Example: sending an email   | Yes     |         |
 
 ### HTTP and HTTPS
 
@@ -149,23 +154,23 @@ Key, then symmetric encryption for data transfer.
 
 **HTTP Methods:**
 
-| Method | Purpose | Idempotent? |
+| Method | Purpose                         | Idempotent? |
 | ------ | ------------------------------- | ----------- |
-| GET | Retrieve a resource | Yes |
-| POST | Submit data / create a resource | No |
-| PUT | Replace a resource | Yes |
-| DELETE | Remove a resource | Yes |
-| PATCH | Partially modify a resource | No |
+| GET    | Retrieve a resource             | Yes         |
+| POST   | Submit data / create a resource | No          |
+| PUT    | Replace a resource              | Yes         |
+| DELETE | Remove a resource               | Yes         |
+| PATCH  | Partially modify a resource     | No          |
 
 **Status Codes:**
 
-| Code Range | Meaning | Examples |
+| Code Range | Meaning       | Examples                                |
 | ---------- | ------------- | --------------------------------------- |
-| 1xx | Informational | 100 Continue |
-| 2xx | Success | 200 OK, 201 Created |
-| 3xx | Redirection | 301 Moved Permanently, 304 Not Modified |
-| 4xx | Client error | 400 Bad Request, 404 Not Found |
-| 5xx | Server error | 500 Internal Server Error |
+| 1xx        | Informational | 100 Continue                            |
+| 2xx        | Success       | 200 OK, 201 Created                     |
+| 3xx        | Redirection   | 301 Moved Permanently, 304 Not Modified |
+| 4xx        | Client error  | 400 Bad Request, 404 Not Found          |
+| 5xx        | Server error  | 500 Internal Server Error               |
 
 **Cookies.** HTTP is stateless, so cookies were invented to maintain state across requests. A cookie
 Is a small piece of data stored by the browser and sent with each request to the same domain. Uses
@@ -175,26 +180,26 @@ Include session management (login state), personalisation (preferences), and tra
 
 ### OSI Model (7 Layers)
 
-| Layer | Name | Function |
+| Layer | Name         | Function                           |
 | ----- | ------------ | ---------------------------------- |
-| 7 | Application | User interface, HTTP, FTP |
-| 6 | Presentation | Data formatting, encryption |
-| 5 | Session | Session management |
-| 4 | Transport | End-to-end delivery (TCP/UDP) |
-| 3 | Network | Routing (IP) |
-| 2 | Data Link | Node-to-node delivery, MAC address |
-| 1 | Physical | Electrical signals, bits |
+| 7     | Application  | User interface, HTTP, FTP          |
+| 6     | Presentation | Data formatting, encryption        |
+| 5     | Session      | Session management                 |
+| 4     | Transport    | End-to-end delivery (TCP/UDP)      |
+| 3     | Network      | Routing (IP)                       |
+| 2     | Data Link    | Node-to-node delivery, MAC address |
+| 1     | Physical     | Electrical signals, bits           |
 
 **Mnemonic:** "All People Seem To Need Data Processing" (bottom to top).
 
 ### TCP/IP Model (4 Layers)
 
-| Layer | OSI Layers | Protocols |
+| Layer       | OSI Layers | Protocols            |
 | ----------- | ---------- | -------------------- |
-| Application | 5, 6, 7 | HTTP, DNS, SMTP, FTP |
-| Transport | 4 | TCP, UDP |
-| Internet | 3 | IP, ICMP, ARP |
-| Link | 1, 2 | Ethernet, Wi-Fi, MAC |
+| Application | 5, 6, 7    | HTTP, DNS, SMTP, FTP |
+| Transport   | 4          | TCP, UDP             |
+| Internet    | 3          | IP, ICMP, ARP        |
+| Link        | 1, 2       | Ethernet, Wi-Fi, MAC |
 
 **Encapsulation.** As data moves down the layers, each layer adds its own header. At the link layer,
 Data becomes a frame. At the network layer, it becomes a packet. At the transport layer, it is a
@@ -204,7 +209,7 @@ Segment (TCP) or datagram (UDP). The receiving end strips headers as data moves 
 
 1. Application creates data (e.g., HTTP request).
 2. Transport adds TCP header (source port, destination port, sequence number, checksum) creating a
- segment.
+   segment.
 3. Internet adds IP header (source IP, destination IP, TTL, protocol) creating a packet.
 4. Link adds Ethernet header (source MAC, destination MAC) and trailer (CRC) creating a frame.
 
@@ -212,14 +217,14 @@ At the receiver, each layer removes its header in reverse order.
 
 ## Network Devices
 
-| Device | Layer | Function |
+| Device   | Layer     | Function                                        |
 | -------- | --------- | ----------------------------------------------- |
-| Repeater | Physical | Regenerates signals |
-| Hub | Physical | Connects devices, broadcasts to all ports |
-| Switch | Data Link | Connects devices, forwards based on MAC address |
-| Router | Network | Connects networks, forwards based on IP address |
-| Firewall | Multiple | Filters traffic based on rules |
-| Modem | Physical | Converts digital/analog signals |
+| Repeater | Physical  | Regenerates signals                             |
+| Hub      | Physical  | Connects devices, broadcasts to all ports       |
+| Switch   | Data Link | Connects devices, forwards based on MAC address |
+| Router   | Network   | Connects networks, forwards based on IP address |
+| Firewall | Multiple  | Filters traffic based on rules                  |
+| Modem    | Physical  | Converts digital/analog signals                 |
 
 **Switch vs router.** A switch operates at layer 2 (Data Link) and forwards frames within a LAN
 Using MAC addresses. A router operates at layer 3 (Network) and forwards packets between networks
@@ -227,23 +232,23 @@ Using IP addresses. A home "router" is actually a router + switch + wireless acc
 
 **Device decision guide:**
 
-| Scenario | Device Needed |
+| Scenario                                    | Device Needed |
 | ------------------------------------------- | ------------- |
-| Connect 10 computers in one room | Switch |
-| Connect LAN to the Internet | Router |
-| Extend Wi-Fi range to another building | Repeater/WAP |
-| Block unauthorized incoming traffic | Firewall |
-| Connect a home to an ISP via telephone line | Modem |
+| Connect 10 computers in one room            | Switch        |
+| Connect LAN to the Internet                 | Router        |
+| Extend Wi-Fi range to another building      | Repeater/WAP  |
+| Block unauthorized incoming traffic         | Firewall      |
+| Connect a home to an ISP via telephone line | Modem         |
 
 ## Network Topologies
 
-| Topology | Description | Advantages | Disadvantages |
+| Topology          | Description                                 | Advantages                                              | Disadvantages                       |
 | ----------------- | ------------------------------------------- | ------------------------------------------------------- | ----------------------------------- |
-| Star | All devices connect to a central hub/switch | Easy to manage, one cable failure doesn't affect others | Hub failure brings down the network |
-| Bus | All devices share a single cable | Simple, cheap | Single point of failure |
-| Ring | Devices connected in a circle | Equal access | One failure breaks ring |
-| Mesh | Every device connected to every other | Highly redundant | Expensive, complex |
-| Tree/Hierarchical | Star topologies connected via bus | Scalable | Root is a single point of failure |
+| Star              | All devices connect to a central hub/switch | Easy to manage, one cable failure doesn't affect others | Hub failure brings down the network |
+| Bus               | All devices share a single cable            | Simple, cheap                                           | Single point of failure             |
+| Ring              | Devices connected in a circle               | Equal access                                            | One failure breaks ring             |
+| Mesh              | Every device connected to every other       | Highly redundant                                        | Expensive, complex                  |
+| Tree/Hierarchical | Star topologies connected via bus           | Scalable                                                | Root is a single point of failure   |
 
 ## Bandwidth, Latency, and Throughput
 
@@ -264,24 +269,24 @@ Time = File size / Throughput = $50 \times 8 / 65 \approx 6.15$ seconds.
 
 ### Threats
 
-| Threat | Description |
+| Threat                     | Description                                                 |
 | -------------------------- | ----------------------------------------------------------- |
-| Malware | Malicious software (viruses, worms, trojans, ransomware) |
-| Phishing | Deceptive emails/messages to steal credentials |
-| DDoS attack | Overwhelming a server with traffic from multiple sources |
-| SQL injection | Injecting malicious SQL into database queries |
-| Man-in-the-middle | Intercepting communication between two parties |
+| Malware                    | Malicious software (viruses, worms, trojans, ransomware)    |
+| Phishing                   | Deceptive emails/messages to steal credentials              |
+| DDoS attack                | Overwhelming a server with traffic from multiple sources    |
+| SQL injection              | Injecting malicious SQL into database queries               |
+| Man-in-the-middle          | Intercepting communication between two parties              |
 | Cross-site scripting (XSS) | Injecting malicious scripts into web pages viewed by others |
 
 **Malware comparison:**
 
-| Type | Self-replicates | Needs host | Purpose |
+| Type       | Self-replicates | Needs host | Purpose                        |
 | ---------- | --------------- | ---------- | ------------------------------ |
-| Virus | Yes | Yes | Damage, spread |
-| Worm | Yes | No | Spread, consume resources |
-| Trojan | No | Disguised | Steal data, backdoor access |
-| Ransomware | No | No | Encrypt files, demand ransom |
-| Spyware | No | No | Monitor activity, collect data |
+| Virus      | Yes             | Yes        | Damage, spread                 |
+| Worm       | Yes             | No         | Spread, consume resources      |
+| Trojan     | No              | Disguised  | Steal data, backdoor access    |
+| Ransomware | No              | No         | Encrypt files, demand ransom   |
+| Spyware    | No              | No         | Monitor activity, collect data |
 
 ### Defenses
 
@@ -332,11 +337,11 @@ Verifies it with the sender's public key. This proves the message was sent by th
 
 **IPv4 classes:**
 
-| Class | Address Range | Default Subnet Mask | Usable Hosts |
+| Class | Address Range                | Default Subnet Mask | Usable Hosts |
 | ----- | ---------------------------- | ------------------- | ------------ |
-| A | 0.0.0.0 -- 127.255.255.255 | 255.0.0.0 | 16,777,214 |
-| B | 128.0.0.0 -- 191.255.255.255 | 255.255.0.0 | 65,534 |
-| C | 192.0.0.0 -- 223.255.255.255 | 255.255.255.0 | 254 |
+| A     | 0.0.0.0 -- 127.255.255.255   | 255.0.0.0           | 16,777,214   |
+| B     | 128.0.0.0 -- 191.255.255.255 | 255.255.0.0         | 65,534       |
+| C     | 192.0.0.0 -- 223.255.255.255 | 255.255.255.0       | 254          |
 
 **CIDR notation:** 192.168.1.0/24 means the first 24 bits are the network portion, leaving 8 bits
 For hosts.
@@ -371,26 +376,26 @@ The CDN serves it from the nearest edge server, reducing latency.
 
 ## DNS Records in Detail
 
-| Record Type | Purpose | Example |
+| Record Type | Purpose                                  | Example                            |
 | ----------- | ---------------------------------------- | ---------------------------------- |
-| A | Maps domain to IPv4 address | example.com -&gt; 93.184.216.34 |
-| AAAA | Maps domain to IPv6 address | example.com -&gt; 2606:2800:... |
-| CNAME | Alias of one domain to another | blog.example.com -&gt; example.com |
-| MX | Mail exchange server for the domain | example.com -&gt; mail.example.com |
-| NS | Authoritative name server for the domain | example.com -&gt; ns1.example.com |
-| TXT | Text records (SPF, DKIM verification) | v=spf1 include:_spf.example.com |
+| A           | Maps domain to IPv4 address              | example.com -&gt; 93.184.216.34    |
+| AAAA        | Maps domain to IPv6 address              | example.com -&gt; 2606:2800:...    |
+| CNAME       | Alias of one domain to another           | blog.example.com -&gt; example.com |
+| MX          | Mail exchange server for the domain      | example.com -&gt; mail.example.com |
+| NS          | Authoritative name server for the domain | example.com -&gt; ns1.example.com  |
+| TXT         | Text records (SPF, DKIM verification)    | v=spf1 include:\_spf.example.com   |
 
 ## Wireless Networks
 
 ### Wi-Fi Standards
 
-| Standard | Speed | Frequency | Range |
-| -------- | ------------ | --------- | --------- |
-| 802.11b | 11 Mbps | 2.4 GHz | ~30 m |
-| 802.11g | 54 Mbps | 2.4 GHz | ~30 m |
-| 802.11n | 600 Mbps | 2.4/5 GHz | ~70 m |
-| 802.11ac | 6.9 Gbps | 5 GHz | ~35 m |
-| 802.11ax | 9.6 Gbps | 2.4/5/6 | ~70 m |
+| Standard | Speed    | Frequency | Range |
+| -------- | -------- | --------- | ----- |
+| 802.11b  | 11 Mbps  | 2.4 GHz   | ~30 m |
+| 802.11g  | 54 Mbps  | 2.4 GHz   | ~30 m |
+| 802.11n  | 600 Mbps | 2.4/5 GHz | ~70 m |
+| 802.11ac | 6.9 Gbps | 5 GHz     | ~35 m |
+| 802.11ax | 9.6 Gbps | 2.4/5/6   | ~70 m |
 
 ### Wireless Security
 
@@ -437,11 +442,11 @@ The CDN serves it from the nearest edge server, reducing latency.
 
 **IPv4 classes:**
 
-| Class | Address Range | Default Subnet Mask | Usable Hosts |
+| Class | Address Range                | Default Subnet Mask | Usable Hosts |
 | ----- | ---------------------------- | ------------------- | ------------ |
-| A | 0.0.0.0 -- 127.255.255.255 | 255.0.0.0 | 16,777,214 |
-| B | 128.0.0.0 -- 191.255.255.255 | 255.255.0.0 | 65,534 |
-| C | 192.0.0.0 -- 223.255.255.255 | 255.255.255.0 | 254 |
+| A     | 0.0.0.0 -- 127.255.255.255   | 255.0.0.0           | 16,777,214   |
+| B     | 128.0.0.0 -- 191.255.255.255 | 255.255.0.0         | 65,534       |
+| C     | 192.0.0.0 -- 223.255.255.255 | 255.255.255.0       | 254          |
 
 **CIDR notation:** 192.168.1.0/24 means the first 24 bits are the network portion, leaving 8 bits
 For hosts.
@@ -463,8 +468,8 @@ DHCP automatically assigns IP addresses to devices on a network. When a device c
 DHCP discover message, and the DHCP server responds with an IP address, subnet mask, default
 Gateway, and DNS server.
 
-**DHCP lease:** IP addresses are assigned for a limited time (lease). The device must renew the lease
-Before it expires.
+**DHCP lease:** IP addresses are assigned for a limited time (lease). The device must renew the
+lease Before it expires.
 
 ### NAT (Network Address Translation)
 
@@ -477,10 +482,10 @@ Public IP to serve many private devices, conserving the address space.
 ## Practice Questions
 
 19. Explain how a CDN works and why it improves web performance for users in different geographic
- locations.
+    locations.
 
 20. A company has the network 192.168.0.0/24. They need to create 4 subnets. What subnet mask should
- they use, and how many hosts can each subnet support?
+    they use, and how many hosts can each subnet support?
 
 21. Explain the difference between WPA2 and WPA3. Why should a home user upgrade to WPA3?
 
@@ -489,7 +494,7 @@ Public IP to serve many private devices, conserving the address space.
 23. Explain what QoS is and why it is important for real-time applications like VoIP.
 
 24. A user reports that they can access some websites but not others. Explain how you would use
- diagnostic tools to troubleshoot the problem.
+    diagnostic tools to troubleshoot the problem.
 
 25. Explain how NAT works. Why is it necessary for home networks?
 
@@ -497,37 +502,37 @@ Public IP to serve many private devices, conserving the address space.
 
 27. Explain the difference between a DNS A record and a CNAME record. When would you use each?
 
-28. A network administrator wants to block all traffic to a specific port. Where should this rule
- be configured, and what device would enforce it?
+28. A network administrator wants to block all traffic to a specific port. Where should this rule be
+    configured, and what device would enforce it?
 
 29. Compare IPv4 and IPv6 addressing in terms of address space, header complexity, and built-in
- security features.
+    security features.
 
-30. Explain the role of each layer in the TCP/IP model when sending an email using SMTP. Include
- the specific protocols used at each layer.
+30. Explain the role of each layer in the TCP/IP model when sending an email using SMTP. Include the
+    specific protocols used at each layer.
 
 ## HTTP in Detail
 
 ### HTTP Methods
 
-| Method | Purpose | Idempotent? | Body? |
+| Method | Purpose                         | Idempotent? | Body? |
 | ------ | ------------------------------- | ----------- | ----- |
-| GET | Retrieve a resource | Yes | No |
-| POST | Submit data / create a resource | No | Yes |
-| PUT | Replace a resource | Yes | Yes |
-| DELETE | Remove a resource | Yes | No |
-| PATCH | Partially modify a resource | No | Yes |
-| HEAD | Same as GET but no body | Yes | No |
+| GET    | Retrieve a resource             | Yes         | No    |
+| POST   | Submit data / create a resource | No          | Yes   |
+| PUT    | Replace a resource              | Yes         | Yes   |
+| DELETE | Remove a resource               | Yes         | No    |
+| PATCH  | Partially modify a resource     | No          | Yes   |
+| HEAD   | Same as GET but no body         | Yes         | No    |
 
 ### HTTP Status Codes
 
-| Code Range | Meaning | Examples |
-| ---------- | ------------- | --------------------------------------- |
-| 1xx | Informational | 100 Continue |
-| 2xx | Success | 200 OK, 201 Created |
-| 3xx | Redirection | 301 Moved Permanently, 304 Not Modified |
-| 4xx | Client error | 400 Bad Request, 403 Forbidden, 404 Not Found |
-| 5xx | Server error | 500 Internal Server Error, 503 Service Unavailable |
+| Code Range | Meaning       | Examples                                           |
+| ---------- | ------------- | -------------------------------------------------- |
+| 1xx        | Informational | 100 Continue                                       |
+| 2xx        | Success       | 200 OK, 201 Created                                |
+| 3xx        | Redirection   | 301 Moved Permanently, 304 Not Modified            |
+| 4xx        | Client error  | 400 Bad Request, 403 Forbidden, 404 Not Found      |
+| 5xx        | Server error  | 500 Internal Server Error, 503 Service Unavailable |
 
 ### HTTP Headers
 
@@ -535,23 +540,23 @@ HTTP headers provide additional information about the request or response.
 
 **Common request headers:**
 
-| Header | Purpose | Example |
-| ---------------- | -------------------------------- | ---------------------- |
-| Host | Target host | www.example.com |
-| User-Agent | Browser/client software | Mozilla/5.0 |
-| Accept | Expected response format | text/html |
-| Content-Type | Body format | application/json |
-| Authorization | Authentication credentials | Bearer token |
+| Header        | Purpose                    | Example          |
+| ------------- | -------------------------- | ---------------- |
+| Host          | Target host                | www.example.com  |
+| User-Agent    | Browser/client software    | Mozilla/5.0      |
+| Accept        | Expected response format   | text/html        |
+| Content-Type  | Body format                | application/json |
+| Authorization | Authentication credentials | Bearer token     |
 
 **Common response headers:**
 
-| Header | Purpose | Example |
-| -------------- | -------------------------------- | ------------------ |
-| Content-Type | Response body format | text/html; utf-8 |
-| Content-Length | Size of response body in bytes | 1234 |
-| Set-Cookie | Set a cookie in the browser | session=abc123 |
-| Cache-Control | Caching directives | max-age=3600 |
-| Location | URL for redirection | /new-page |
+| Header         | Purpose                        | Example          |
+| -------------- | ------------------------------ | ---------------- |
+| Content-Type   | Response body format           | text/html; utf-8 |
+| Content-Length | Size of response body in bytes | 1234             |
+| Set-Cookie     | Set a cookie in the browser    | session=abc123   |
+| Cache-Control  | Caching directives             | max-age=3600     |
+| Location       | URL for redirection            | /new-page        |
 
 ### Cookies and Sessions
 
@@ -564,9 +569,9 @@ HTTP is stateless, so cookies were invented to maintain state across requests.
 - **Secure cookies:** Only sent over HTTPS.
 - **HttpOnly cookies:** Cannot be accessed by JavaScript (prevents XSS theft).
 
-**Session management:** When a user logs in, the server creates a session and sends a session ID as a
-Cookie. The browser sends this cookie with each subsequent request, allowing the server to identify
-The user.
+**Session management:** When a user logs in, the server creates a session and sends a session ID as
+a Cookie. The browser sends this cookie with each subsequent request, allowing the server to
+identify The user.
 
 ## Network Address Translation (NAT) in Detail
 
@@ -577,34 +582,34 @@ NAT allows multiple devices on a private network to share a single public IP add
 1. Device sends a packet from private IP (192.168.1.5) to a public server (93.184.216.34).
 2. The router replaces the source IP with its public IP (203.0.113.5) and records the mapping.
 3. When the response arrives, the router uses the mapping to forward the packet to the correct
- private IP.
+   private IP.
 
 **Port Address Translation (PAT):** The router also maps source ports to distinguish between
 Multiple internal devices.
 
 | Internal IP | Internal Port | External IP | External Port |
-| -------------- | ------------- | -------------- | ------------- |
-| 192.168.1.5 | 50001 | 203.0.113.5 | 50001 |
-| 192.168.1.6 | 50002 | 203.0.113.5 | 50002 |
+| ----------- | ------------- | ----------- | ------------- |
+| 192.168.1.5 | 50001         | 203.0.113.5 | 50001         |
+| 192.168.1.6 | 50002         | 203.0.113.5 | 50002         |
 
 ## Wireless Security Protocols
 
-| Protocol | Encryption | Key Exchange | Vulnerability |
-| -------- | ---------- | ---------------- | ------------- |
-| WEP | RC4 | Weak | cracked |
-| WPA | TKIP | Better | Partially vulnerable |
-| WPA2 | AES | 4-way handshake | KRACK attack |
-| WPA3 | AES | SAE | Most secure |
+| Protocol | Encryption | Key Exchange    | Vulnerability        |
+| -------- | ---------- | --------------- | -------------------- |
+| WEP      | RC4        | Weak            | cracked              |
+| WPA      | TKIP       | Better          | Partially vulnerable |
+| WPA2     | AES        | 4-way handshake | KRACK attack         |
+| WPA3     | AES        | SAE             | Most secure          |
 
 ## IPv6 Address Types
 
-| Type | Prefix | Purpose |
-| ------------- | ----------- | -------------------------------- |
-| Unicast | ::1/128 | Single interface |
+| Type       | Prefix    | Purpose                     |
+| ---------- | --------- | --------------------------- |
+| Unicast    | ::1/128   | Single interface            |
 | Link-local | fe80::/10 | Local network communication |
-| Global | 2000::/3 | Internet routable addresses |
-| Multicast | ff00::/8 | Send to multiple interfaces |
-| Loopback | ::1/128 | Localhost |
+| Global     | 2000::/3  | Internet routable addresses |
+| Multicast  | ff00::/8  | Send to multiple interfaces |
+| Loopback   | ::1/128   | Localhost                   |
 
 ## Network Performance Monitoring
 
@@ -615,8 +620,8 @@ Multiple internal devices.
 - **Jitter:** Variation in packet arrival times (important for VoIP and video).
 - **Throughput:** Actual data transfer rate achieved.
 
-**Worked Example.** A VoIP application requires latency below 150 ms and jitter below 30 ms. A network
-Test shows latency of 80 ms and jitter of 50 ms. Is the network suitable?
+**Worked Example.** A VoIP application requires latency below 150 ms and jitter below 30 ms. A
+network Test shows latency of 80 ms and jitter of 50 ms. Is the network suitable?
 
 Latency is fine (80 ms < 150 ms) but jitter is too high (50 ms > 30 ms). The VoIP quality may be
 Poor due to inconsistent packet arrival times.
@@ -659,8 +664,8 @@ A VLAN logically segments a physical network into separate broadcast domains.
 - Reduced broadcast traffic.
 - Easier administration (devices can be in the same VLAN regardless of physical location).
 
-**Worked Example.** A school has a computer lab and a staff room on the same physical network. Explain
-How VLANs improve security.
+**Worked Example.** A school has a computer lab and a staff room on the same physical network.
+Explain How VLANs improve security.
 
 Creating separate VLANs for students and staff means broadcast traffic from student devices does not
 Reach staff computers. Access rules can restrict student VLAN access to sensitive resources like
@@ -670,19 +675,19 @@ Grade databases.
 
 ### Service Models
 
-| Model | Provider manages | User manages | Example |
-| ----------------- | ----------------------- | ------------------ | -------------------------- |
-| IaaS | Servers, storage, network| OS, apps, data | AWS EC2, Azure VMs |
-| PaaS | Runtime, middleware | Applications, data| Heroku, Google App Engine |
-| SaaS | Everything | Nothing (just use)| Gmail, Microsoft 365 |
+| Model | Provider manages          | User manages       | Example                   |
+| ----- | ------------------------- | ------------------ | ------------------------- |
+| IaaS  | Servers, storage, network | OS, apps, data     | AWS EC2, Azure VMs        |
+| PaaS  | Runtime, middleware       | Applications, data | Heroku, Google App Engine |
+| SaaS  | Everything                | Nothing (just use) | Gmail, Microsoft 365      |
 
 ### Deployment Models
 
-| Model | Description |
-| ------------ | ------------------------------------------------ |
-| Public | Shared resources over the Internet |
-| Private | Exclusive to one organisation |
-| Hybrid | Mix of public and private |
+| Model     | Description                                        |
+| --------- | -------------------------------------------------- |
+| Public    | Shared resources over the Internet                 |
+| Private   | Exclusive to one organisation                      |
+| Hybrid    | Mix of public and private                          |
 | Community | Shared between organisations with common interests |
 
 ## Practice Questions
@@ -690,34 +695,34 @@ Grade databases.
 31. Explain the difference between IaaS, PaaS, and SaaS with examples of each.
 
 32. A company has 200 employees across 4 departments. Explain how VLANs can be used to improve
- network security and performance.
+    network security and performance.
 
 33. Explain how the KRACK attack works against WPA2 and why upgrading to WPA3 prevents it.
 
 34. Describe the role of SNMP in network management. What are managed devices, agents, and the NMS?
 
 35. Explain the difference between public, private, and hybrid cloud deployment models. Give an
- example of when each would be appropriate.
+    example of when each would be appropriate.
 
 36. A network has a bandwidth of 1 Gbps. Due to protocol overhead, only 95% is available for data.
- Calculate the effective throughput in Mbps.
+    Calculate the effective throughput in Mbps.
 
 37. Explain the concept of network segmentation. Why is it important for security compliance?
 
 38. Compare three wireless security protocols (WEP, WPA2, WPA3) in terms of encryption strength and
- known vulnerabilities.
+    known vulnerabilities.
 
 ## Common Pitfalls
 
 1. **Confusing TCP and UDP.** TCP is reliable and ordered but slower; UDP is fast but unreliable.
 2. **Confusing the OSI model layers.** Remember: "All People Seem To Need Data Processing".
 3. **Confusing IP addresses and MAC addresses.** IP addresses are logical; MAC addresses are
- physical.
+   physical.
 4. **Thinking DNS is a single server.** DNS is a distributed, hierarchical system.
 5. **Confusing bandwidth and throughput.** Bandwidth is maximum; throughput is actual.
 6. **Forgetting that HTTPS provides encryption, not just authentication.**
 7. **Confusing symmetric and asymmetric encryption.** Asymmetric for key exchange; symmetric for
- data.
+   data.
 8. **Not understanding that HTTP is stateless.** State maintained through cookies and sessions.
 
 ## Practice Questions
@@ -731,15 +736,15 @@ Grade databases.
 4. Compare the star and mesh network topologies in terms of cost, reliability, and scalability.
 
 5. A user receives an email claiming to be from their bank, asking them to click a link and enter
- their password. What type of attack is this, and how should the user respond?
+   their password. What type of attack is this, and how should the user respond?
 
 6. Explain the role of a router in a network. At which OSI layer does it operate?
 
 7. Convert the IP address `192.168.10.5` to its 32-bit binary representation.
 
 8. Explain why asymmetric encryption is used to establish a secure connection in HTTPS, but
- symmetric encryption is used for the actual data transfer. Include the concept of computational
- efficiency in your explanation.
+   symmetric encryption is used for the actual data transfer. Include the concept of computational
+   efficiency in your explanation.
 
 9. Explain what happens when you type a URL into a browser, from DNS resolution to page rendering.
 
@@ -748,10 +753,10 @@ Grade databases.
 11. Explain the concept of encapsulation as data moves through the TCP/IP layers.
 
 12. Explain the principle of least privilege and give an example of how it is applied in network
- security.
+    security.
 
 13. A network has a bandwidth of 1 Gbps and a latency of 20 ms. A 100 MB file needs to be
- transferred. Calculate the minimum transfer time, ignoring overhead.
+    transferred. Calculate the minimum transfer time, ignoring overhead.
 
 14. Explain the difference between a virus and a worm. Which is more dangerous and why?
 
@@ -762,27 +767,31 @@ Grade databases.
 17. Explain the role of each DNS record type (A, AAAA, CNAME, MX, NS) with examples.
 
 18. A company has a web server that must be accessible from the Internet. Describe three security
- measures they should implement and explain how each protects the server.
+    measures they should implement and explain how each protects the server.
 
 ## Practice Problems
 
 <details>
 <summary>Question 1: Subnet mask calculation</summary>
 
-A company has the IP address `192.168.10.0/24`. They need to create 6 subnets. Calculate the new subnet mask, the number of usable hosts per subnet, and the network address of the first three subnets.
+A company has the IP address `192.168.10.0/24`. They need to create 6 subnets. Calculate the new
+subnet mask, the number of usable hosts per subnet, and the network address of the first three
+subnets.
 
 </details>
 
 <details>
 <summary>Answer</summary>
 
-Current: /24 means 8 bits for hosts (256 addresses). To create 6 subnets, need $2^n \ge 6$So $n = 3$ bits borrowed (8 subnets).
+Current: /24 means 8 bits for hosts (256 addresses). To create 6 subnets, need $2^n \ge 6$So $n = 3$
+bits borrowed (8 subnets).
 
 New subnet mask: /27 (24 + 3) = 255.255.255.224.
 
 Usable hosts per subnet: $2^{32-27} - 2 = 2^5 - 2 = 30$ hosts.
 
 Subnet addresses:
+
 - Subnet 1: 192.168.10.0/27 (hosts .1 to .30)
 - Subnet 2: 192.168.10.32/27 (hosts .33 to .62)
 - Subnet 3: 192.168.10.64/27 (hosts .65 to .94)
@@ -792,27 +801,34 @@ Subnet addresses:
 <details>
 <summary>Question 2: TCP vs UDP scenario analysis</summary>
 
-For each of the following applications, explain whether TCP or UDP is more appropriate and justify your choice: (a) online banking, (b) live video streaming, (c) DNS lookup, (d) email.
+For each of the following applications, explain whether TCP or UDP is more appropriate and justify
+your choice: (a) online banking, (b) live video streaming, (c) DNS lookup, (d) email.
 
 </details>
 
 <details>
 <summary>Answer</summary>
 
-(a) Online banking: TCP. Requires reliable, ordered delivery. A lost packet could mean a missing transaction.
+(a) Online banking: TCP. Requires reliable, ordered delivery. A lost packet could mean a missing
+transaction.
 
-(b) Live video streaming: UDP. Speed is more important than reliability. A dropped frame is acceptable; a delayed frame causes stuttering. TCP's retransmission would cause unacceptable lag.
+(b) Live video streaming: UDP. Speed is more important than reliability. A dropped frame is
+acceptable; a delayed frame causes stuttering. TCP's retransmission would cause unacceptable lag.
 
-(c) DNS lookup: UDP. DNS queries are small (fit in one packet) and need fast responses. The overhead of TCP's three-way handshake is unnecessary for simple queries.
+(c) DNS lookup: UDP. DNS queries are small (fit in one packet) and need fast responses. The overhead
+of TCP's three-way handshake is unnecessary for simple queries.
 
-(d) Email: TCP. Email must be delivered reliably and in order. Losing an email message is unacceptable.
+(d) Email: TCP. Email must be delivered reliably and in order. Losing an email message is
+unacceptable.
 
 </details>
 
 <details>
 <summary>Question 3: Bandwidth and latency calculation</summary>
 
-A file of size 50 MB must be transferred over a network with bandwidth of 100 Mbps and a round-trip latency of 40 ms. TCP requires a three-way handshake before data transfer. Calculate the total time for the transfer, assuming no packet loss and ignoring protocol overhead.
+A file of size 50 MB must be transferred over a network with bandwidth of 100 Mbps and a round-trip
+latency of 40 ms. TCP requires a three-way handshake before data transfer. Calculate the total time
+for the transfer, assuming no packet loss and ignoring protocol overhead.
 
 </details>
 
@@ -821,49 +837,64 @@ A file of size 50 MB must be transferred over a network with bandwidth of 100 Mb
 
 Three-way handshake time: 1.5 round trips = $1.5 \times 40 = 60 \mathrm{ ms{}$.
 
-Data transfer time: $50 \mathrm{ MB{} = 50 \times 8 = 400 \mathrm{ Mb{}$. Time = $400 / 100 = 4 \mathrm{ seconds{} = 4000 \mathrm{ ms{}$.
+Data transfer time: $50 \mathrm{ MB{} = 50 \times 8 = 400 \mathrm{ Mb{}$. Time =
+$400 / 100 = 4 \mathrm{ seconds{} = 4000 \mathrm{ ms{}$.
 
 Total time: $60 + 4000 = 4060 \mathrm{ ms{} \approx 4.06 \mathrm{ seconds{}$.
 
-Note: This is a simplified calculation. In practice, TCP slow start, window size limitations, and protocol overhead would increase the transfer time.
+Note: This is a simplified calculation. In practice, TCP slow start, window size limitations, and
+protocol overhead would increase the transfer time.
 
 </details>
 
 <details>
 <summary>Question 4: OSI model layer analysis</summary>
 
-For each of the following, identify which OSI layer is primarily responsible: (a) encrypting data for transmission, (b) determining the best route for a packet, (c) detecting and correcting bit errors, (d) formatting data into packets.
+For each of the following, identify which OSI layer is primarily responsible: (a) encrypting data
+for transmission, (b) determining the best route for a packet, (c) detecting and correcting bit
+errors, (d) formatting data into packets.
 
 </details>
 
 <details>
 <summary>Answer</summary>
 
-(a) Encrypting data: Layer 6 (Presentation). Handles data encryption, compression, and format translation.
+(a) Encrypting data: Layer 6 (Presentation). Handles data encryption, compression, and format
+translation.
 
-(b) Best route for a packet: Layer 3 (Network). Routers operate at this layer, using IP addresses and routing tables.
+(b) Best route for a packet: Layer 3 (Network). Routers operate at this layer, using IP addresses
+and routing tables.
 
-(c) Detecting and correcting bit errors: Layer 2 (Data Link). Uses checksums and CRC to detect errors in frames.
+(c) Detecting and correcting bit errors: Layer 2 (Data Link). Uses checksums and CRC to detect
+errors in frames.
 
-(d) Formatting data into packets: Layer 4 (Transport). TCP/UDP add headers to create segments/datagrams.
+(d) Formatting data into packets: Layer 4 (Transport). TCP/UDP add headers to create
+segments/datagrams.
 
 </details>
 
 <details>
 <summary>Question 5: Security attack identification</summary>
 
-A user clicks on a link in an email that appears to be from their bank. The link takes them to a website that looks identical to their bank's login page. When they enter their credentials, the information is sent to an attacker's server. Identify the type of attack and describe two defences.
+A user clicks on a link in an email that appears to be from their bank. The link takes them to a
+website that looks identical to their bank's login page. When they enter their credentials, the
+information is sent to an attacker's server. Identify the type of attack and describe two defences.
 
 </details>
 
 <details>
 <summary>Answer</summary>
 
-This is a **phishing attack** (specifically, spear phishing if targeted). The attacker creates a fraudulent website that mimics the legitimate one to steal credentials.
+This is a **phishing attack** (specifically, spear phishing if targeted). The attacker creates a
+fraudulent website that mimics the legitimate one to steal credentials.
 
 Two defences:
-1. **Two-factor authentication (2FA):** Even if the attacker obtains the password, they cannot log in without the second factor (e.g., SMS code, authenticator app).
-2. **Email filtering and user education:** Spam filters can detect and block phishing emails. Training users to verify URLs (check for HTTPS, look for misspellings in the domain) reduces the success rate of phishing attacks.
+
+1. **Two-factor authentication (2FA):** Even if the attacker obtains the password, they cannot log
+   in without the second factor (e.g., SMS code, authenticator app).
+2. **Email filtering and user education:** Spam filters can detect and block phishing emails.
+   Training users to verify URLs (check for HTTPS, look for misspellings in the domain) reduces the
+   success rate of phishing attacks.
 
 </details>
 

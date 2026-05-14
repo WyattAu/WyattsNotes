@@ -1,6 +1,8 @@
 ---
 title: Branching Strategies
-description: "Branching Strategies — Choosing a Branching Strategy; Trunk-Based Development; Concept; Rules with worked examples and exam-style questions."
+description:
+  'Branching Strategies — Choosing a Branching Strategy; Trunk-Based Development; Concept; Rules
+  with worked examples and exam-style questions.'
 date: 2025-06-03T07:00:00.000Z
 tags:
   - git
@@ -10,6 +12,7 @@ categories:
   - CS
 slug: workflows
 ---
+
 ## Choosing a Branching Strategy
 
 A branching strategy defines **when to create branches, how long they live, how they integrate, and
@@ -45,21 +48,21 @@ gitGraph
 
 ### Advantages
 
-| Advantage | Explanation |
+| Advantage               | Explanation                                                     |
 | ----------------------- | --------------------------------------------------------------- |
-| **No merge hell** | No large, complex merges — changes are integrated incrementally |
-| **Fast feedback** | CI runs on every commit, catching issues immediately |
-| **Easy rollback** | `git revert <hash>` undoes a single commit |
-| **Simplified workflow** | No branch management overhead |
+| **No merge hell**       | No large, complex merges — changes are integrated incrementally |
+| **Fast feedback**       | CI runs on every commit, catching issues immediately            |
+| **Easy rollback**       | `git revert <hash>` undoes a single commit                      |
+| **Simplified workflow** | No branch management overhead                                   |
 
 ### Disadvantages
 
-| Disadvantage | Mitigation |
+| Disadvantage                    | Mitigation                                  |
 | ------------------------------- | ------------------------------------------- |
-| Requires robust CI/CD | Invest in automated testing before adopting |
-| Feature flags add complexity | Use a feature flag management system |
-| Large teams may have contention | Use short-lived feature branches (< 1 day) |
-| Requires disciplined commits | Commit frequently, keep commits atomic |
+| Requires robust CI/CD           | Invest in automated testing before adopting |
+| Feature flags add complexity    | Use a feature flag management system        |
+| Large teams may have contention | Use short-lived feature branches (< 1 day)  |
+| Requires disciplined commits    | Commit frequently, keep commits atomic      |
 
 ### When to Use
 
@@ -162,13 +165,13 @@ flowchart TD
 
 ### Branch Types
 
-| Branch | Purpose | Lifetime | Created From | Merges Into |
+| Branch      | Purpose                 | Lifetime  | Created From | Merges Into        |
 | ----------- | ----------------------- | --------- | ------------ | ------------------ |
-| `main` | Production releases | Permanent | — | — |
-| `develop` | Integration branch | Permanent | `main` | — |
-| `feature/*` | Feature development | Short | `develop` | `develop` |
-| `release/*` | Release preparation | Short | `develop` | `main` + `develop` |
-| `hotfix/*` | Urgent production fixes | Short | `main` | `main` + `develop` |
+| `main`      | Production releases     | Permanent | —            | —                  |
+| `develop`   | Integration branch      | Permanent | `main`       | —                  |
+| `feature/*` | Feature development     | Short     | `develop`    | `develop`          |
+| `release/*` | Release preparation     | Short     | `develop`    | `main` + `develop` |
+| `hotfix/*`  | Urgent production fixes | Short     | `main`       | `main` + `develop` |
 
 ### Workflow
 
@@ -203,21 +206,21 @@ $ git branch -d hotfix/fix-crash
 
 ### Advantages
 
-| Advantage | Explanation |
+| Advantage                | Explanation                                                |
 | ------------------------ | ---------------------------------------------------------- |
-| **Clear separation** | Features, releases, and hotfixes have distinct branches |
-| **Parallel development** | Multiple features can be developed simultaneously |
-| **Release isolation** | Release branches allow bug fixes without blocking features |
-| **Well-documented** | Widely understood, many tools support it natively |
+| **Clear separation**     | Features, releases, and hotfixes have distinct branches    |
+| **Parallel development** | Multiple features can be developed simultaneously          |
+| **Release isolation**    | Release branches allow bug fixes without blocking features |
+| **Well-documented**      | Widely understood, many tools support it natively          |
 
 ### Disadvantages
 
-| Disadvantage | Explanation |
-| ----------------------- | ------------------------------------------------------------------------------ |
-| **Complex** | 5 branch types, strict merge rules — high cognitive overhead |
-| **Merge-heavy** | Every feature requires a merge commit into `develop`Then another into `main` |
-| **Slow feedback** | Features can live in isolation for weeks, accumulating conflicts |
-| **Not ideal for CI/CD** | The `develop` branch creates an unnecessary integration step |
+| Disadvantage            | Explanation                                                                  |
+| ----------------------- | ---------------------------------------------------------------------------- |
+| **Complex**             | 5 branch types, strict merge rules — high cognitive overhead                 |
+| **Merge-heavy**         | Every feature requires a merge commit into `develop`Then another into `main` |
+| **Slow feedback**       | Features can live in isolation for weeks, accumulating conflicts             |
+| **Not ideal for CI/CD** | The `develop` branch creates an unnecessary integration step                 |
 
 ### When to Use
 
@@ -269,17 +272,17 @@ flowchart LR
 
 ## Comparison Matrix
 
-| Criterion | Trunk-Based | GitHub Flow | Git Flow |
+| Criterion               | Trunk-Based   | GitHub Flow          | Git Flow                    |
 | ----------------------- | ------------- | -------------------- | --------------------------- |
-| **Complexity** | Low | Low | High |
-| **Branch count** | 1 + ephemeral | 1 + short-lived | 2 + multiple types |
-| **Merge frequency** | Continuous | Per PR | Per feature/release |
-| **CI/CD requirement** | Mandatory | Strongly recommended | Recommended |
-| **Release model** | Continuous | On-demand | Scheduled |
-| **Hotfix handling** | `git revert` | Branch from `main` | Dedicated `hotfix/*` branch |
-| **History cleanliness** | Linear | Mostly linear | Complex merge graph |
-| **Team size** | Small–medium | Any | Any |
-| **Learning curve** | Low | Low | Moderate |
+| **Complexity**          | Low           | Low                  | High                        |
+| **Branch count**        | 1 + ephemeral | 1 + short-lived      | 2 + multiple types          |
+| **Merge frequency**     | Continuous    | Per PR               | Per feature/release         |
+| **CI/CD requirement**   | Mandatory     | Strongly recommended | Recommended                 |
+| **Release model**       | Continuous    | On-demand            | Scheduled                   |
+| **Hotfix handling**     | `git revert`  | Branch from `main`   | Dedicated `hotfix/*` branch |
+| **History cleanliness** | Linear        | Mostly linear        | Complex merge graph         |
+| **Team size**           | Small–medium  | Any                  | Any                         |
+| **Learning curve**      | Low           | Low                  | Moderate                    |
 
 ## Commit Message Conventions
 
@@ -294,17 +297,17 @@ Convention is **Conventional Commits**:
 [optional footer(s)]
 ```
 
-| Type | Purpose |
+| Type       | Purpose                                    |
 | ---------- | ------------------------------------------ |
-| `feat` | New feature |
-| `fix` | Bug fix |
-| `docs` | Documentation changes |
-| `style` | Formatting, whitespace (no code change) |
+| `feat`     | New feature                                |
+| `fix`      | Bug fix                                    |
+| `docs`     | Documentation changes                      |
+| `style`    | Formatting, whitespace (no code change)    |
 | `refactor` | Code restructuring without behavior change |
-| `perf` | Performance improvement |
-| `test` | Adding or updating tests |
-| `chore` | Build process, dependencies, tooling |
-| `ci` | CI/CD configuration changes |
+| `perf`     | Performance improvement                    |
+| `test`     | Adding or updating tests                   |
+| `chore`    | Build process, dependencies, tooling       |
+| `ci`       | CI/CD configuration changes                |
 
 Examples:
 

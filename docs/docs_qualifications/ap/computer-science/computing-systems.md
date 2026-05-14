@@ -1,6 +1,8 @@
 ---
 title: Computing Systems
-description: "Computing Systems — Hardware Components; The Fetch-Decode-Execute Cycle; Binary and Data Representation; Two's Complement."
+description:
+  "Computing Systems — Hardware Components; The Fetch-Decode-Execute Cycle; Binary and Data
+  Representation; Two's Complement."
 date: 2026-04-14
 tags:
   - Computer Science
@@ -9,20 +11,21 @@ categories:
   - Computer Science
 slug: computing-systems
 ---
+
 ## The Internet and Computing Systems (CED Unit 4)
 
 ### Hardware Components
 
-| Component | Function |
+| Component        | Function                                       |
 | ---------------- | ---------------------------------------------- |
-| CPU | Executes instructions, performs calculations |
-| RAM | Volatile memory for currently running programs |
-| Hard drive / SSD | Non-volatile storage for persistent data |
-| GPU | Processes graphics and parallel computations |
-| Motherboard | Connects all components |
-| Power supply | Provides electrical power |
-| Input devices | Keyboard, mouse, microphone, camera |
-| Output devices | Monitor, speakers, printer |
+| CPU              | Executes instructions, performs calculations   |
+| RAM              | Volatile memory for currently running programs |
+| Hard drive / SSD | Non-volatile storage for persistent data       |
+| GPU              | Processes graphics and parallel computations   |
+| Motherboard      | Connects all components                        |
+| Power supply     | Provides electrical power                      |
+| Input devices    | Keyboard, mouse, microphone, camera            |
+| Output devices   | Monitor, speakers, printer                     |
 
 ### The Fetch-Decode-Execute Cycle
 
@@ -46,7 +49,7 @@ The CPU continuously:
 Register R2 to register R1).
 
 1. Fetch: MAR $\leftarrow$ 200, MDR $\leftarrow$ "ADD R1, R2", PC $\leftarrow$ 201, CIR $\leftarrow$
- "ADD R1, R2".
+   "ADD R1, R2".
 2. Decode: CU identifies this as an addition instruction. Source: R2, destination: R1.
 3. Execute: ALU computes R1 + R2, result stored in R1.
 
@@ -54,13 +57,13 @@ Register R2 to register R1).
 
 Computers represent all data in binary (0s and 1s).
 
-| Data Type | Representation |
+| Data Type | Representation                       |
 | --------- | ------------------------------------ |
-| Integer | Two's complement (signed integers) |
-| Character | ASCII (7-bit) or Unicode (16+ bit) |
-| Color | RGB values (24 bits, 8 per channel) |
-| Image | Grid of pixels, each with RGB values |
-| Audio | Sampled amplitude values |
+| Integer   | Two's complement (signed integers)   |
+| Character | ASCII (7-bit) or Unicode (16+ bit)   |
+| Color     | RGB values (24 bits, 8 per channel)  |
+| Image     | Grid of pixels, each with RGB values |
+| Audio     | Sampled amplitude values             |
 
 #### Two's Complement
 
@@ -98,11 +101,11 @@ Add 1: $10011100$.
 Verify: $-128 + 16 + 8 + 4 = -100$. Correct.
 
 **Why two's complement is preferred.** Two's complement has the useful property that addition and
-Subtraction use the same circuitry. To subtract $a - b$You add $a$ to the two's complement
-Of $b$. There is no separate subtraction circuit needed.
+Subtraction use the same circuitry. To subtract $a - b$You add $a$ to the two's complement Of $b$.
+There is no separate subtraction circuit needed.
 
-**Proof of two's complement negation.** For $n$-bit $x$ where $0 \lt x \le 2^{n-1}$Let $\bar{x}$
-Be the bitwise complement. Then $\bar{x} = (2^n - 1) - x$. Adding 1: $\bar{x} + 1 = 2^n - x$. In
+**Proof of two's complement negation.** For $n$-bit $x$ where $0 \lt x \le 2^{n-1}$Let $\bar{x}$ Be
+the bitwise complement. Then $\bar{x} = (2^n - 1) - x$. Adding 1: $\bar{x} + 1 = 2^n - x$. In
 $n$-bit arithmetic, $2^n \equiv 0$So $x + (\bar{x} + 1) = 0$Confirming $\bar{x} + 1 = -x$.
 $\blacksquare$
 
@@ -125,22 +128,22 @@ Base-16 representation, using digits 0--9 and A--F.
 
 | Binary | Hex | Decimal |
 | ------ | --- | ------- |
-| 0000 | 0 | 0 |
-| 0001 | 1 | 1 |
-| 0010 | 2 | 2 |
-| 0011 | 3 | 3 |
-| 0100 | 4 | 4 |
-| 0101 | 5 | 5 |
-| 0110 | 6 | 6 |
-| 0111 | 7 | 7 |
-| 1000 | 8 | 8 |
-| 1001 | 9 | 9 |
-| 1010 | A | 10 |
-| 1011 | B | 11 |
-| 1100 | C | 12 |
-| 1101 | D | 13 |
-| 1110 | E | 14 |
-| 1111 | F | 15 |
+| 0000   | 0   | 0       |
+| 0001   | 1   | 1       |
+| 0010   | 2   | 2       |
+| 0011   | 3   | 3       |
+| 0100   | 4   | 4       |
+| 0101   | 5   | 5       |
+| 0110   | 6   | 6       |
+| 0111   | 7   | 7       |
+| 1000   | 8   | 8       |
+| 1001   | 9   | 9       |
+| 1010   | A   | 10      |
+| 1011   | B   | 11      |
+| 1100   | C   | 12      |
+| 1101   | D   | 13      |
+| 1110   | E   | 14      |
+| 1111   | F   | 15      |
 
 Conversion: group binary digits in groups of 4 from right to left.
 
@@ -188,34 +191,34 @@ $48000 \times 16 \times 120 \times 2 = 184320000$ bits $\approx 22$ MB.
 
 ### Basic Gates
 
-| Gate | Symbol | Boolean Expression | Truth Table |
+| Gate | Symbol   | Boolean Expression     | Truth Table                 |
 | ---- | -------- | ---------------------- | --------------------------- |
-| AND | A AND B | A $\cdot$ B | 1 only if both inputs are 1 |
-| OR | A OR B | A + B | 0 only if both inputs are 0 |
-| NOT | NOT A | $\bar{A}$ | Inverts input |
-| NAND | A NAND B | $\overline{A \cdot B}$ | NOT AND |
-| NOR | A NOR B | $\overline{A + B}$ | NOT OR |
-| XOR | A XOR B | $A \oplus B$ | 1 if inputs differ |
+| AND  | A AND B  | A $\cdot$ B            | 1 only if both inputs are 1 |
+| OR   | A OR B   | A + B                  | 0 only if both inputs are 0 |
+| NOT  | NOT A    | $\bar{A}$              | Inverts input               |
+| NAND | A NAND B | $\overline{A \cdot B}$ | NOT AND                     |
+| NOR  | A NOR B  | $\overline{A + B}$     | NOT OR                      |
+| XOR  | A XOR B  | $A \oplus B$           | 1 if inputs differ          |
 
 ### Truth Tables
 
 **AND gate:**
 
-| A | B | A AND B |
+| A   | B   | A AND B |
 | --- | --- | ------- |
-| 0 | 0 | 0 |
-| 0 | 1 | 0 |
-| 1 | 0 | 0 |
-| 1 | 1 | 1 |
+| 0   | 0   | 0       |
+| 0   | 1   | 0       |
+| 1   | 0   | 0       |
+| 1   | 1   | 1       |
 
 **XOR gate:**
 
-| A | B | A XOR B |
+| A   | B   | A XOR B |
 | --- | --- | ------- |
-| 0 | 0 | 0 |
-| 0 | 1 | 1 |
-| 1 | 0 | 1 |
-| 1 | 1 | 0 |
+| 0   | 0   | 0       |
+| 0   | 1   | 1       |
+| 1   | 0   | 1       |
+| 1   | 1   | 0       |
 
 ### De Morgan's Laws
 
@@ -236,12 +239,12 @@ $\overline{A \cdot \bar{B}} = \bar{A} + \overline{\bar{B}} = \bar{A} + B$.
 
 **Proof of De Morgan's first law by truth table:**
 
-| A | B | $A \cdot B$ | $\overline{A \cdot B}$ | $\bar{A}$ | $\bar{B}$ | $\bar{A} + \bar{B}$ |
+| A   | B   | $A \cdot B$ | $\overline{A \cdot B}$ | $\bar{A}$ | $\bar{B}$ | $\bar{A} + \bar{B}$ |
 | --- | --- | ----------- | ---------------------- | --------- | --------- | ------------------- |
-| 0 | 0 | 0 | 1 | 1 | 1 | 1 |
-| 0 | 1 | 0 | 1 | 1 | 0 | 1 |
-| 1 | 0 | 0 | 1 | 0 | 1 | 1 |
-| 1 | 1 | 1 | 0 | 0 | 0 | 0 |
+| 0   | 0   | 0           | 1                      | 1         | 1         | 1                   |
+| 0   | 1   | 0           | 1                      | 1         | 0         | 1                   |
+| 1   | 0   | 0           | 1                      | 0         | 1         | 1                   |
+| 1   | 1   | 1           | 0                      | 0         | 0         | 0                   |
 
 Columns 4 and 7 are identical. $\blacksquare$
 
@@ -260,12 +263,12 @@ This requires: 2 NOT gates, 2 AND gates, 1 OR gate.
 
 **Truth table verification:**
 
-| A | B | $\bar{A}$ | $\bar{B}$ | $A \cdot \bar{B}$ | $\bar{A} \cdot B$ | $A \oplus B$ |
+| A   | B   | $\bar{A}$ | $\bar{B}$ | $A \cdot \bar{B}$ | $\bar{A} \cdot B$ | $A \oplus B$ |
 | --- | --- | --------- | --------- | ----------------- | ----------------- | ------------ |
-| 0 | 0 | 1 | 1 | 0 | 0 | 0 |
-| 0 | 1 | 1 | 0 | 0 | 1 | 1 |
-| 1 | 0 | 0 | 1 | 1 | 0 | 1 |
-| 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| 0   | 0   | 1         | 1         | 0                 | 0                 | 0            |
+| 0   | 1   | 1         | 0         | 0                 | 1                 | 1            |
+| 1   | 0   | 0         | 1         | 1                 | 0                 | 1            |
+| 1   | 1   | 0         | 0         | 0                 | 0                 | 0            |
 
 :::
 
@@ -289,13 +292,13 @@ Final carry-out is the 9th bit of the result.
 
 **Worked Example.** Add 0110 and 0011 using half adders and full adders.
 
-| Position | 3 (MSB) | 2 | 1 | 0 (LSB) |
+| Position  | 3 (MSB) | 2   | 1   | 0 (LSB) |
 | --------- | ------- | --- | --- | ------- |
-| A | 0 | 1 | 1 | 0 |
-| B | 0 | 0 | 1 | 1 |
-| Carry in | 0 | 0 | 1 | 0 |
-| Sum | 0 | 1 | 0 | 1 |
-| Carry out | 0 | 0 | 1 | 0 |
+| A         | 0       | 1   | 1   | 0       |
+| B         | 0       | 0   | 1   | 1       |
+| Carry in  | 0       | 0   | 1   | 0       |
+| Sum       | 0       | 1   | 0   | 1       |
+| Carry out | 0       | 0   | 1   | 0       |
 
 Result: $01001 = 9$. Check: $6 + 3 = 9$. Correct.
 
@@ -325,13 +328,13 @@ Milliseconds instead of nanoseconds, causing a noticeable delay.
 
 ### Types of Operating Systems
 
-| Type | Examples | Characteristics |
+| Type      | Examples              | Characteristics               |
 | --------- | --------------------- | ----------------------------- |
-| Desktop | Windows, macOS, Linux | Personal use, multitasking |
-| Mobile | iOS, Android | Touch-optimized, app-based |
-| Server | Windows Server, Linux | Network services, high uptime |
-| Embedded | RTOS, firmware | Limited resources, dedicated |
-| Real-time | VxWorks, FreeRTOS | Guaranteed response times |
+| Desktop   | Windows, macOS, Linux | Personal use, multitasking    |
+| Mobile    | iOS, Android          | Touch-optimized, app-based    |
+| Server    | Windows Server, Linux | Network services, high uptime |
+| Embedded  | RTOS, firmware        | Limited resources, dedicated  |
+| Real-time | VxWorks, FreeRTOS     | Guaranteed response times     |
 
 ### The Role of the Kernel
 
@@ -352,14 +355,14 @@ Request the kernel to perform privileged operations on their behalf.
 
 ### Software Testing
 
-| Type | Description |
+| Type                | Description                                      |
 | ------------------- | ------------------------------------------------ |
-| Unit testing | Testing individual components |
-| Integration testing | Testing interactions between components |
-| System testing | Testing the entire system |
-| Acceptance testing | Testing against user requirements |
-| Black-box testing | Testing based on inputs/outputs (no code access) |
-| White-box testing | Testing based on internal code structure |
+| Unit testing        | Testing individual components                    |
+| Integration testing | Testing interactions between components          |
+| System testing      | Testing the entire system                        |
+| Acceptance testing  | Testing against user requirements                |
+| Black-box testing   | Testing based on inputs/outputs (no code access) |
+| White-box testing   | Testing based on internal code structure         |
 
 **Black-box vs white-box.** Black-box testing verifies that the system produces correct outputs for
 Given inputs, without examining the code. White-box testing examines the code structure to ensure
@@ -396,13 +399,13 @@ Complement, the result wraps around to $4000000000 - 2^{32} = -294967296$.
 
 ### Bitwise Operators in Java
 
-| Operator | Name | Description |
+| Operator   | Name        | Description                            |
 | ---------- | ----------- | -------------------------------------- |
-| `&` | AND | Bitwise AND |
-| `\|` | OR | Bitwise OR |
-| `^` | XOR | Bitwise XOR |
-| `~` | NOT | Bitwise complement (inverts all bits) |
-| `&lt;&lt;` | Left shift | Shifts bits left, fills with zeros |
+| `&`        | AND         | Bitwise AND                            |
+| `\|`       | OR          | Bitwise OR                             |
+| `^`        | XOR         | Bitwise XOR                            |
+| `~`        | NOT         | Bitwise complement (inverts all bits)  |
+| `&lt;&lt;` | Left shift  | Shifts bits left, fills with zeros     |
 | `&gt;&gt;` | Right shift | Shifts bits right, fills with sign bit |
 
 ```java
@@ -426,15 +429,15 @@ char upper = (char) ('a' - 32);  // 'A'
 
 ### Comparing Storage Devices
 
-| Metric | HDD | SSD |
+| Metric      | HDD              | SSD             |
 | ----------- | ---------------- | --------------- |
-| Read speed | 50-200 MB/s | 200-550 MB/s |
-| Write speed | 50-150 MB/s | 200-500 MB/s |
-| Latency | 5-10 ms | 0.05-0.1 ms |
-| IOPS | 100-200 | 5000-100000 |
-| Cost per GB | Low | Higher |
-| Durability | Mechanical parts | No moving parts |
-| Power usage | Higher | Lower |
+| Read speed  | 50-200 MB/s      | 200-550 MB/s    |
+| Write speed | 50-150 MB/s      | 200-500 MB/s    |
+| Latency     | 5-10 ms          | 0.05-0.1 ms     |
+| IOPS        | 100-200          | 5000-100000     |
+| Cost per GB | Low              | Higher          |
+| Durability  | Mechanical parts | No moving parts |
+| Power usage | Higher           | Lower           |
 
 IOPS (Input/Output Operations Per Second) measures how many read/write operations a drive can
 Perform per second. SSDs excel here due to having no moving parts.
@@ -454,8 +457,8 @@ Repeatedly divide by 2 and record remainders.
 
 **Worked Example.** Convert $200_{10}$ to binary.
 
-$200 / 2 = 100$ r 0, $100 / 2 = 50$ r 0, $50 / 2 = 25$ r 0, $25 / 2 = 12$ r 1, $12 / 2 = 6$
-R 0, $6 / 2 = 3$ r 0, $3 / 2 = 1$ r 1, $1 / 2 = 0$ r 1.
+$200 / 2 = 100$ r 0, $100 / 2 = 50$ r 0, $50 / 2 = 25$ r 0, $25 / 2 = 12$ r 1, $12 / 2 = 6$ R 0,
+$6 / 2 = 3$ r 0, $3 / 2 = 1$ r 1, $1 / 2 = 0$ r 1.
 
 Reading bottom to top: $11001000_2$.
 
@@ -481,9 +484,9 @@ Binary: $11111111$. Decimal: $15 	imes 16 + 15 = 255$.
 
 **Addition rules:**
 
-| $0 + 0$ | $0 + 1$ | $1 + 0$ | $1 + 1$ |
+| $0 + 0$ | $0 + 1$ | $1 + 0$ | $1 + 1$        |
 | ------- | ------- | ------- | -------------- |
-| 0 | 1 | 1 | 10 (0 carry 1) |
+| 0       | 1       | 1       | 10 (0 carry 1) |
 
 **Worked Example.** Add 0110 and 0011.
 
@@ -531,14 +534,14 @@ $12 / 4 = 3$ pages.
 
 ### Utility Programs
 
-| Utility | Purpose |
+| Utility              | Purpose                                     |
 | -------------------- | ------------------------------------------- |
-| Disk defragmenter | Reorganises data on a HDD for faster access |
-| Disk cleaner | Removes unnecessary files to free up space |
-| Antivirus | Detects and removes malware |
-| Compression software | Compresses and decompresses files |
-| Backup software | Creates copies of data for recovery |
-| Firewall | Monitors and filters network traffic |
+| Disk defragmenter    | Reorganises data on a HDD for faster access |
+| Disk cleaner         | Removes unnecessary files to free up space  |
+| Antivirus            | Detects and removes malware                 |
+| Compression software | Compresses and decompresses files           |
+| Backup software      | Creates copies of data for recovery         |
+| Firewall             | Monitors and filters network traffic        |
 
 **Disk defragmentation.** On a HDD, files can become fragmented -- stored in non-contiguous clusters
 Across the disk. This slows down reading because the read head must move to multiple locations.
@@ -552,7 +555,7 @@ It can actually reduce their lifespan.
 20. Explain the difference between paging and segmentation in memory management.
 
 21. A computer has a 32-bit address bus and runs at 3.2 GHz. Calculate the maximum addressable
- memory and the maximum data transfer rate if the data bus is 64 bits wide.
+    memory and the maximum data transfer rate if the data bus is 64 bits wide.
 
 22. Explain three differences between BIOS and UEFI.
 
@@ -561,7 +564,7 @@ It can actually reduce their lifespan.
 24. Explain the difference between contiguous and linked file allocation methods.
 
 25. A program needs 20 KB of memory but the OS uses 4 KB pages. How many page table entries are
- needed?
+    needed?
 
 26. Explain what a device driver is and why it is necessary. Give an example.
 
@@ -570,10 +573,10 @@ It can actually reduce their lifespan.
 28. Explain the principle of least privilege in the context of operating system security.
 
 29. A system has three processes: P1 (8 MB), P2 (16 MB), P3 (4 MB). The system has 32 MB of RAM.
- Explain how virtual memory allows all three processes to run simultaneously.
+    Explain how virtual memory allows all three processes to run simultaneously.
 
 30. Explain the role of the kernel in an operating system. What is the difference between user mode
- and kernel mode?
+    and kernel mode?
 
 ## Additional Number System Practice
 
@@ -581,11 +584,11 @@ It can actually reduce their lifespan.
 
 Group into 4s: $1101\ 0110 = 	ext{D6}_{16}$.
 
-**Worked Example.** Convert $	ext{A3F}_{16}$ to binary.
+**Worked Example.** Convert $ ext{A3F}\_{16}$ to binary.
 
 A = 1010, 3 = 0011, F = 1111. Result: $101000111111_2$.
 
-**Worked Example.** Convert $	ext{2B}_{16}$ to decimal.
+**Worked Example.** Convert $ ext{2B}\_{16}$ to decimal.
 
 $2 	imes 16 + 11 = 43$.
 
@@ -595,8 +598,8 @@ $2 	imes 16 + 11 = 43$.
 
 A half adder adds two single bits:
 
-$$	ext{Sum} = A \oplus B$$
-$$	ext{Carry} = A \cdot B$$
+$$ ext{Sum} = A \oplus B$$
+$$ ext{Carry} = A \cdot B$$
 
 **Implementation using basic gates:** 1 XOR gate (sum), 1 AND gate (carry).
 
@@ -604,20 +607,24 @@ $$	ext{Carry} = A \cdot B$$
 
 A full adder adds two bits and a carry-in:
 
-$$	ext{Sum} = A \oplus B \oplus C_{	ext{in}}$$
-$$C_{	ext{out}} = (A \cdot B) + (C_{	ext{in}} \cdot (A \oplus B))$$
+$$ ext{Sum} = A \oplus B \oplus C\*{ ext{in}}$$
+
+$$
+C*{ ext{out}} = (A \cdot B) + (C\_{ ext{in}} \cdot
+(A \oplus B))
+$$
 
 **Implementation:** 2 XOR gates, 2 AND gates, 1 OR gate.
 
 **Worked Example.** Add $7$ and $5$ using full adders (4-bit).
 
-| Position | 3 (MSB) | 2 | 1 | 0 (LSB) |
-| -------- | ------- | --- | --- | ------- |
-| A | 0 | 1 | 1 | 1 |
-| B | 0 | 1 | 0 | 1 |
-| Carry in | 0 | 1 | 0 | 0 |
-| Sum | 1 | 1 | 0 | 0 |
-| Carry out| 0 | 0 | 1 | 0 |
+| Position  | 3 (MSB) | 2   | 1   | 0 (LSB) |
+| --------- | ------- | --- | --- | ------- |
+| A         | 0       | 1   | 1   | 1       |
+| B         | 0       | 1   | 0   | 1       |
+| Carry in  | 0       | 1   | 0   | 0       |
+| Sum       | 1       | 1   | 0   | 0       |
+| Carry out | 0       | 0   | 1   | 0       |
 
 Result: $1100 = 12$. Check: $7 + 5 = 12$. Correct.
 
@@ -635,17 +642,17 @@ Git tracks changes to source code over time. Key concepts:
 
 **Common Git commands:**
 
-| Command | Purpose |
-| ---------------------- | ------------------------------ |
-| `git init` | Create a new repository |
-| `git add .` | Stage all changes |
-| `git commit -m "msg"` | Commit staged changes |
-| `git push` | Upload commits to remote |
-| `git pull` | Download and merge changes |
-| `git branch name` | Create a new branch |
-| `git checkout branch` | Switch to a branch |
-| `git merge branch` | Merge a branch into current |
-| `git log` | View commit history |
+| Command               | Purpose                     |
+| --------------------- | --------------------------- |
+| `git init`            | Create a new repository     |
+| `git add .`           | Stage all changes           |
+| `git commit -m "msg"` | Commit staged changes       |
+| `git push`            | Upload commits to remote    |
+| `git pull`            | Download and merge changes  |
+| `git branch name`     | Create a new branch         |
+| `git checkout branch` | Switch to a branch          |
+| `git merge branch`    | Merge a branch into current |
+| `git log`             | View commit history         |
 
 ### Integrated Development Environments (IDEs)
 
@@ -659,40 +666,40 @@ Control integration.
 ## Additional Practice Questions
 
 31. Draw a truth table for the expression $\overline{A \cdot B} + A \cdot C$. Simplify using De
- Morgan's Laws.
+    Morgan's Laws.
 
 32. Explain the difference between a full adder and a half adder. Why is a full adder needed for
- multi-bit addition?
+    multi-bit addition?
 
 33. A computer uses 4 KB pages. A process requires 50 KB of memory. How many pages does it need?
- What happens if the system only has 10 free pages?
+    What happens if the system only has 10 free pages?
 
 34. Explain what a firewall does and give three examples of rules a firewall might enforce.
 
 35. Compare the three types of testing (unit, integration, system) with examples for each.
 
 36. Explain why an SSD has no moving parts and why this makes it more suitable for laptops than an
- HDD.
+    HDD.
 
 37. A binary number has 12 bits. What is the maximum unsigned value it can represent? What is the
- range if it uses two's complement?
+    range if it uses two's complement?
 
 38. Explain the purpose of each DNS record type (A, AAAA, CNAME, MX, NS) with examples.
 
 ## Common Pitfalls
 
 1. **Confusing bits and bytes.** 1 byte = 8 bits. Storage is measured in bytes; data rates in bits
- per second.
+   per second.
 2. **Incorrect two's complement conversion.** Always flip all bits AND add 1.
 3. **Confusing AND and OR in Boolean expressions.** AND requires both true; OR requires at least one
- true.
+   true.
 4. **Forgetting De Morgan's Laws.**
 5. **Confusing hexadecimal digits.** A = 10, B = 11, C = 12, D = 13, E = 14, F = 15.
 6. **Thinking the OS is the hardware.** The OS is software.
 7. **Confusing process and thread.** A process is an instance of a program; a thread is a
- lightweight unit of execution within a process.
+   lightweight unit of execution within a process.
 8. **Forgetting that NAND and NOR are universal gates.** Any Boolean function can be built using
- only NAND gates or only NOR gates.
+   only NAND gates or only NOR gates.
 9. **Not padding binary groups of 4 when converting to hex.**
 
 ## Practice Questions
@@ -702,7 +709,7 @@ Control integration.
 2. Convert `11011101` from binary to hexadecimal.
 
 3. Draw a truth table and logic circuit for the expression $\bar{A} \cdot B + A \cdot \bar{B}$. What
- Boolean operation does this represent?
+   Boolean operation does this represent?
 
 4. Using De Morgan's Laws, simplify $\overline{A + \bar{B} \cdot C}$.
 
@@ -717,58 +724,63 @@ Control integration.
 9. Calculate the file size of a $1280 \times 720$ image with 32-bit colour depth in megabytes.
 
 10. A 2-minute audio file is recorded at 48000 Hz with 16-bit resolution in stereo. Calculate the
- file size in megabytes.
+    file size in megabytes.
 
 11. Explain what the kernel is and why it is necessary. What is the difference between user mode and
- kernel mode?
+    kernel mode?
 
 12. Explain the concept of functional completeness in logic gates. Why are NAND gates called
- universal gates?
+    universal gates?
 
 13. Prove De Morgan's second law ($\overline{A + B} = \bar{A} \cdot \bar{B}$) using a truth table.
 
 14. A 4-bit two's complement adder adds $7$ and $5$. Show the calculation and determine whether
- overflow occurs.
+    overflow occurs.
 
 15. Draw the truth table for a full adder. Show all eight rows for inputs A, B, and carry-in.
 
 16. Explain the difference between process management and memory management in an operating system.
 
 17. A computer has a 64-bit data bus and runs at 3.2 GHz. Calculate the maximum theoretical data
- transfer rate in GB/s.
+    transfer rate in GB/s.
 
 18. Explain three ways in which an operating system provides security. Give a concrete example for
- each.
+    each.
 
 ## Practice Problems
 
 <details>
 <summary>Question 1: Two's complement arithmetic</summary>
 
-Perform the following 8-bit two's complement addition: $-50 + 30$. Show the binary representation of each number, the addition, and determine whether overflow occurs.
+Perform the following 8-bit two's complement addition: $-50 + 30$. Show the binary representation of
+each number, the addition, and determine whether overflow occurs.
 
 </details>
 
 <details>
 <summary>Answer</summary>
 
--50 in 8-bit two's complement: 50 = 00110010, invert = 11001101, add 1 = 11001110.
-30 in 8-bit two's complement: 00011110.
+-50 in 8-bit two's complement: 50 = 00110010, invert = 11001101, add 1 = 11001110. 30 in 8-bit two's
+complement: 00011110.
 
 Addition: 11001110 + 00011110 = 11101100.
 
-Convert result to decimal: 11101100 is negative (MSB = 1). Invert = 00010011, add 1 = 00010100 = 20. So the result is -20.
+Convert result to decimal: 11101100 is negative (MSB = 1). Invert = 00010011, add 1 = 00010100 = 20.
+So the result is -20.
 
 Check: -50 + 30 = -20. Correct.
 
-No overflow occurred because a negative and a positive number were added (overflow can only occur when adding two numbers of the same sign).
+No overflow occurred because a negative and a positive number were added (overflow can only occur
+when adding two numbers of the same sign).
 
 </details>
 
 <details>
 <summary>Question 2: Logic circuit simplification</summary>
 
-Simplify the Boolean expression $\bar{A}\cdot\bar{B}\cdot C + \bar{A}\cdot B\cdot C + A\cdot\bar{B}\cdot C$ using Boolean algebra identities.
+Simplify the Boolean expression
+$\bar{A}\cdot\bar{B}\cdot C + \bar{A}\cdot B\cdot C + A\cdot\bar{B}\cdot C$ using Boolean algebra
+identities.
 
 </details>
 
@@ -777,21 +789,27 @@ Simplify the Boolean expression $\bar{A}\cdot\bar{B}\cdot C + \bar{A}\cdot B\cdo
 
 $\bar{A}\cdot\bar{B}\cdot C + \bar{A}\cdot B\cdot C + A\cdot\bar{B}\cdot C$
 
-Factor out C from the first two terms: $C(\bar{A}\cdot\bar{B} + \bar{A}\cdot B) + A\cdot\bar{B}\cdot C$
+Factor out C from the first two terms:
+$C(\bar{A}\cdot\bar{B} + \bar{A}\cdot B) + A\cdot\bar{B}\cdot C$
 
-Factor out $\bar{A}$ from the parenthesised expression: $C \cdot \bar{A}(\bar{B} + B) + A\cdot\bar{B}\cdot C$
+Factor out $\bar{A}$ from the parenthesised expression:
+$C \cdot \bar{A}(\bar{B} + B) + A\cdot\bar{B}\cdot C$
 
-Since $\bar{B} + B = 1$: $C \cdot \bar{A} \cdot 1 + A\cdot\bar{B}\cdot C = \bar{A}\cdot C + A\cdot\bar{B}\cdot C$
+Since $\bar{B} + B = 1$:
+$C \cdot \bar{A} \cdot 1 + A\cdot\bar{B}\cdot C = \bar{A}\cdot C + A\cdot\bar{B}\cdot C$
 
 Factor out C: $C(\bar{A} + A\cdot\bar{B})$
 
 Using the distributive law: $C(\bar{A} + A)(\bar{A} + \bar{B})$
 
-Wait -- that's incorrect. Let me redo: $C(\bar{A} + A \cdot \bar{B})$. This doesn't simplify further using basic identities .
+Wait -- that's incorrect. Let me redo: $C(\bar{A} + A \cdot \bar{B})$. This doesn't simplify further
+using basic identities .
 
-Alternative approach -- try consensus: $\bar{A}C + A\bar{B}C$. The consensus of $\bar{A}$ and $\bar{B}$ with respect to $C$ is $\bar{A}\bar{B}$Which is not present, so no further simplification.
+Alternative approach -- try consensus: $\bar{A}C + A\bar{B}C$. The consensus of $\bar{A}$ and
+$\bar{B}$ with respect to $C$ is $\bar{A}\bar{B}$Which is not present, so no further simplification.
 
-The simplified expression is: $\bar{A} \cdot C + A \cdot \bar{B} \cdot C = C(\bar{A} + A \cdot \bar{B})$.
+The simplified expression is:
+$\bar{A} \cdot C + A \cdot \bar{B} \cdot C = C(\bar{A} + A \cdot \bar{B})$.
 
 </details>
 
@@ -808,6 +826,7 @@ Convert the decimal number 0.6875 to binary. Show the fractional conversion proc
 Integer part: 0 = 0 in binary.
 
 Fractional part: multiply by 2 repeatedly:
+
 - 0.6875 $\times$ 2 = 1.375, digit = 1, remainder = 0.375
 - 0.375 $\times$ 2 = 0.75, digit = 0, remainder = 0.75
 - 0.75 $\times$ 2 = 1.5, digit = 1, remainder = 0.5
@@ -817,14 +836,18 @@ Reading the digits top to bottom: 0.1011.
 
 So 0.6875 in decimal = 0.1011 in binary.
 
-Verification: $1 \times 2^{-1} + 0 \times 2^{-2} + 1 \times 2^{-3} + 1 \times 2^{-4} = 0.5 + 0 + 0.125 + 0.0625 = 0.6875$. Correct.
+Verification:
+$1 \times 2^{-1} + 0 \times 2^{-2} + 1 \times 2^{-3} + 1 \times 2^{-4} = 0.5 + 0 + 0.125 + 0.0625 = 0.6875$.
+Correct.
 
 </details>
 
 <details>
 <summary>Question 4: File size calculation</summary>
 
-A 5-minute video is recorded at 30 frames per second with a resolution of $1920 \times 1080$ pixels. Each pixel uses 24 bits for colour (RGB). Calculate the file size in gigabytes before compression. Express your answer to 2 significant figures.
+A 5-minute video is recorded at 30 frames per second with a resolution of $1920 \times 1080$ pixels.
+Each pixel uses 24 bits for colour (RGB). Calculate the file size in gigabytes before compression.
+Express your answer to 2 significant figures.
 
 </details>
 
@@ -841,7 +864,8 @@ Total bits: $49,766,400 \times 9,000 = 447,897,600,000$ bits.
 
 Convert to bytes: $447,897,600,000 / 8 = 55,987,200,000$ bytes.
 
-Convert to GB: $55,987,200,000 / (1024^3) = 55,987,200,000 / 1,073,741,824 \approx 52.15 \mathrm{ GB{}$.
+Convert to GB:
+$55,987,200,000 / (1024^3) = 55,987,200,000 / 1,073,741,824 \approx 52.15 \mathrm{ GB{}$.
 
 Rounded to 2 significant figures: 52 GB. This demonstrates why video compression is essential.
 
@@ -850,7 +874,8 @@ Rounded to 2 significant figures: 52 GB. This demonstrates why video compression
 <details>
 <summary>Question 5: De Morgan's Laws application</summary>
 
-Using De Morgan's Laws, convert the expression $\overline{A \cdot B + C \cdot D}$ into an expression that uses only AND and NOT operations.
+Using De Morgan's Laws, convert the expression $\overline{A \cdot B + C \cdot D}$ into an expression
+that uses only AND and NOT operations.
 
 </details>
 
@@ -862,20 +887,24 @@ $\overline{A \cdot B + C \cdot D}$
 Applying De Morgan's Law (distribute the NOT over the OR):
 $= \overline{A \cdot B} \cdot \overline{C \cdot D}$
 
-Applying De Morgan's Law to each term:
-$= (\bar{A} + \bar{B}) \cdot (\bar{C} + \bar{D})$
+Applying De Morgan's Law to each term: $= (\bar{A} + \bar{B}) \cdot (\bar{C} + \bar{D})$
 
 Wait -- the question asks for only AND and NOT. Let me apply the other form:
 
 $\overline{A \cdot B + C \cdot D} = \overline{A \cdot B} \cdot \overline{C \cdot D}$
 
-To express using only AND and NOT, note that $\overline{X + Y} = \bar{X} \cdot \bar{Y}$ (De Morgan's). But the question says only AND and NOT. Since $\overline{A \cdot B} = \overline{A} + \overline{B}$This introduces OR.
+To express using only AND and NOT, note that $\overline{X + Y} = \bar{X} \cdot \bar{Y}$ (De
+Morgan's). But the question says only AND and NOT. Since
+$\overline{A \cdot B} = \overline{A} + \overline{B}$This introduces OR.
 
-Using only NAND (AND + NOT): $\overline{A \cdot B} = \mathrm{NAND{}(A, B)$ and $\overline{C \cdot D} = \mathrm{NAND{}(C, D)$.
+Using only NAND (AND + NOT): $\overline{A \cdot B} = \mathrm{NAND{}(A, B)$ and
+$\overline{C \cdot D} = \mathrm{NAND{}(C, D)$.
 
 So: $\mathrm{NAND{}(A, B) \cdot \mathrm{NAND{}(C, D)$ -- but this uses AND.
 
-Actually, NAND(A, B) already uses AND and NOT: $\overline{A \cdot B}$. So the answer is: $\overline{A \cdot B} \cdot \overline{C \cdot D}$Which uses only AND (implicit in the NOT-AND) and NOT operations.
+Actually, NAND(A, B) already uses AND and NOT: $\overline{A \cdot B}$. So the answer is:
+$\overline{A \cdot B} \cdot \overline{C \cdot D}$Which uses only AND (implicit in the NOT-AND) and
+NOT operations.
 
 </details>
 

@@ -1,20 +1,26 @@
 ---
-title: "Carbon Chemistry -- Diagnostic Tests"
-description: "Challenging DSE chemistry diagnostic questions on Carbon Chemistry -- Diagnostic Tests. With full worked solutions and examiner commentary."
+title: 'Carbon Chemistry -- Diagnostic Tests'
+description:
+  'Challenging DSE chemistry diagnostic questions on Carbon Chemistry -- Diagnostic Tests. With full
+  worked solutions and examiner commentary.'
 slug: diag-carbon-chemistry
 hide_table_of_contents: true
 ---
+
 # DSE Chemistry Diagnostic: Carbon Chemistry
 
 ## Unit Test 1: Alkanes vs Alkenes Reactivity
 
 **Question**
 
-(a) State the type of reaction that occurs when bromine water reacts with (i) ethane and (ii) ethene. Write equations for both. [4 marks]
+(a) State the type of reaction that occurs when bromine water reacts with (i) ethane and (ii)
+ethene. Write equations for both. [4 marks]
 
-(b) Explain why ethene reacts with bromine water but ethane does not, under normal conditions. [2 marks]
+(b) Explain why ethene reacts with bromine water but ethane does not, under normal conditions. [2
+marks]
 
-(c) A hydrocarbon $C$ decolourises bromine water and has the molecular formula $C_{4}H_{8}$. Draw and name **all** possible structural isomers of $C$. [4 marks]
+(c) A hydrocarbon $C$ decolourises bromine water and has the molecular formula $C_{4}H_{8}$. Draw
+and name **all** possible structural isomers of $C$. [4 marks]
 
 ---
 
@@ -30,19 +36,25 @@ $$C_{2}H_{4} + Br_{2} \rightarrow C_{2}H_{4}Br_{2}$$
 
 (1,2-dibromoethane)
 
-(b) Ethane is an **alkane** containing only $C-C$ single bonds (sigma bonds). These are strong and do not break. Ethene is an **alkene** containing a $C=C$ double bond (one sigma + one pi bond). The pi bond is relatively weak and electron-rich, making it susceptible to attack by electrophiles like $Br_{2}$. The pi electrons are attracted to the electrophilic bromine molecule, initiating the addition reaction.
+(b) Ethane is an **alkane** containing only $C-C$ single bonds (sigma bonds). These are strong and
+do not break. Ethene is an **alkene** containing a $C=C$ double bond (one sigma + one pi bond). The
+pi bond is relatively weak and electron-rich, making it susceptible to attack by electrophiles like
+$Br_{2}$. The pi electrons are attracted to the electrophilic bromine molecule, initiating the
+addition reaction.
 
 (c) $C_{4}H_{8}$ with a $C=C$ double bond (alkene isomers):
 
 1. **But-1-ene**: $CH_{2}=CH-CH_{2}-CH_{3}$
 
 2. **But-2-ene** (cis/trans isomers possible):
- - $CH_{3}-CH=CH-CH_{3}$ (cis-but-2-ene)
- - $CH_{3}-CH=CH-CH_{3}$ (trans-but-2-ene)
+
+- $CH_{3}-CH=CH-CH_{3}$ (cis-but-2-ene)
+- $CH_{3}-CH=CH-CH_{3}$ (trans-but-2-ene)
 
 3. **2-Methylprop-1-ene**: $CH_{2}=C(CH_{3})_{2}$
 
-4. **Cyclobutane** (cyclic, not an alkene but satisfies $C_{4}H_{8}$ and does NOT decolourise bromine water -- exclude if bromine water test is specified)
+4. **Cyclobutane** (cyclic, not an alkene but satisfies $C_{4}H_{8}$ and does NOT decolourise
+   bromine water -- exclude if bromine water test is specified)
 
 5. **Methylcyclopropane** (cyclic, also does not decolourise bromine water -- exclude)
 
@@ -53,7 +65,9 @@ Since the question states $C$ decolourises bromine water, only the **alkene** is
 3. Trans-But-2-ene
 4. 2-Methylprop-1-ene
 
-That is **4 structural isomers** (3 positional + 1 branched chain; noting that cis/trans are stereoisomers of the same structural isomer, so structural isomers = 3: but-1-ene, but-2-ene, 2-methylprop-1-ene).
+That is **4 structural isomers** (3 positional + 1 branched chain; noting that cis/trans are
+stereoisomers of the same structural isomer, so structural isomers = 3: but-1-ene, but-2-ene,
+2-methylprop-1-ene).
 
 ---
 
@@ -61,11 +75,14 @@ That is **4 structural isomers** (3 positional + 1 branched chain; noting that c
 
 **Question**
 
-(a) Draw the repeating unit of the polymer formed from propene ($CH_{2}=CHCH_{3}$) and name the polymer. [2 marks]
+(a) Draw the repeating unit of the polymer formed from propene ($CH_{2}=CHCH_{3}$) and name the
+polymer. [2 marks]
 
-(b) Poly(chloroethene) (PVC) is made by polymerising chloroethene ($CH_{2}=CHCl$). Draw the repeating unit of PVC. [1 mark]
+(b) Poly(chloroethene) (PVC) is made by polymerising chloroethene ($CH_{2}=CHCl$). Draw the
+repeating unit of PVC. [1 mark]
 
-(c) A student claims that the polymerisation of propene produces a polymer with alternating single and double bonds. Explain why this is incorrect. [2 marks]
+(c) A student claims that the polymerisation of propene produces a polymer with alternating single
+and double bonds. Explain why this is incorrect. [2 marks]
 
 ---
 
@@ -85,7 +102,11 @@ $$n\ CH_{2}=CHCl \rightarrow \left(-CH_{2}-CHCl-\right)_{n}$$
 
 Repeating unit: $-CH_{2}-CHCl-$
 
-(c) The student's claim is **incorrect**. In addition polymerisation, the pi bond of the $C=C$ double bond **opens** and forms new sigma bonds with adjacent monomer units. The double bond is **consumed** in the process. The resulting polymer chain contains **only single bonds** between carbon atoms. There are no remaining double bonds in the main polymer chain (unlike condensation polymers which may retain certain functional groups).
+(c) The student's claim is **incorrect**. In addition polymerisation, the pi bond of the $C=C$
+double bond **opens** and forms new sigma bonds with adjacent monomer units. The double bond is
+**consumed** in the process. The resulting polymer chain contains **only single bonds** between
+carbon atoms. There are no remaining double bonds in the main polymer chain (unlike condensation
+polymers which may retain certain functional groups).
 
 ---
 
@@ -125,7 +146,9 @@ The longest carbon chain has 5 carbons (pentane), with two methyl groups on carb
 
 **Question**
 
-Starting from ethene ($CH_{2}=CH_{2}$), outline a reaction pathway to produce ethyl ethanoate ($CH_{3}COOC_{2}H_{5}$). For each step, give the reagent(s), conditions, and type of reaction. [6 marks]
+Starting from ethene ($CH_{2}=CH_{2}$), outline a reaction pathway to produce ethyl ethanoate
+($CH_{3}COOC_{2}H_{5}$). For each step, give the reagent(s), conditions, and type of reaction. [6
+marks]
 
 ---
 
@@ -135,27 +158,26 @@ Starting from ethene ($CH_{2}=CH_{2}$), outline a reaction pathway to produce et
 
 $$CH_{2}=CH_{2} + H_{2}O \xrightarrow{H_{3}PO_{4}, 300\degree C, 60 \text{ atm}} CH_{3}CH_{2}OH$$
 
-Reagent: Steam ($H_{2}O$)
-Conditions: Phosphoric acid catalyst, 300$^{\circ}$C, 60 atm
-Type: **Hydration (addition)**
+Reagent: Steam ($H_{2}O$) Conditions: Phosphoric acid catalyst, 300$^{\circ}$C, 60 atm Type:
+**Hydration (addition)**
 
 **Step 2**: Ethanol to ethanoic acid (oxidation)
 
 $$CH_{3}CH_{2}OH \xrightarrow{K_{2}Cr_{2}O_{7}/H^{+}} CH_{3}CHO \xrightarrow{K_{2}Cr_{2}O_{7}/H^{+}} CH_{3}COOH$$
 
-Reagent: Acidified potassium dichromate(VI) ($K_{2}Cr_{2}O_{7}/H_{2}SO_{4}$)
-Conditions: Reflux (for complete oxidation to carboxylic acid)
-Type: **Oxidation**
+Reagent: Acidified potassium dichromate(VI) ($K_{2}Cr_{2}O_{7}/H_{2}SO_{4}$) Conditions: Reflux (for
+complete oxidation to carboxylic acid) Type: **Oxidation**
 
 **Step 3**: Esterification
 
 $$CH_{3}COOH + CH_{3}CH_{2}OH \rightleftharpoons CH_{3}COOC_{2}H_{5} + H_{2}O$$
 
-Reagent: Ethanoic acid + ethanol
-Conditions: Concentrated sulphuric acid catalyst, gentle heating (reflux)
-Type: **Esterification (condensation)**
+Reagent: Ethanoic acid + ethanol Conditions: Concentrated sulphuric acid catalyst, gentle heating
+(reflux) Type: **Esterification (condensation)**
 
-Note: Steps 1 and 2 produce both ethanol (from step 1) and ethanoic acid (from step 2). These are then combined in step 3 to form the ester. Alternatively, step 1 ethanol can be used directly, and a separate batch is fully oxidised to ethanoic acid for the esterification.
+Note: Steps 1 and 2 produce both ethanol (from step 1) and ethanoic acid (from step 2). These are
+then combined in step 3 to form the ester. Alternatively, step 1 ethanol can be used directly, and a
+separate batch is fully oxidised to ethanoic acid for the esterification.
 
 ---
 
@@ -167,9 +189,11 @@ Polymer $P$ has the following repeating unit: $(-CH_{2}-CHCl-)_n$.
 
 (a) Identify the monomer of polymer $P$ and draw its structure. [2 marks]
 
-(b) Polymer $P$ is rigid and used for water pipes, while poly(ethene) is flexible and used for plastic bags. Explain the difference in properties in terms of intermolecular forces. [3 marks]
+(b) Polymer $P$ is rigid and used for water pipes, while poly(ethene) is flexible and used for
+plastic bags. Explain the difference in properties in terms of intermolecular forces. [3 marks]
 
-(c) Polymer $P$ releases toxic hydrogen chloride gas when burned in a limited supply of air. Write a balanced equation for this reaction and state why this is a concern for fire safety. [3 marks]
+(c) Polymer $P$ releases toxic hydrogen chloride gas when burned in a limited supply of air. Write a
+balanced equation for this reaction and state why this is a concern for fire safety. [3 marks]
 
 ---
 
@@ -177,9 +201,12 @@ Polymer $P$ has the following repeating unit: $(-CH_{2}-CHCl-)_n$.
 
 (a) Monomer: **chloroethene** (vinyl chloride), $CH_{2}=CHCl$.
 
-(b) PVC (polymer $P$) has chlorine atoms attached to the polymer chain. The $C-Cl$ bond is **polar**, creating permanent dipole-dipole interactions between polymer chains. These stronger intermolecular forces make PVC rigid and tough.
+(b) PVC (polymer $P$) has chlorine atoms attached to the polymer chain. The $C-Cl$ bond is
+**polar**, creating permanent dipole-dipole interactions between polymer chains. These stronger
+intermolecular forces make PVC rigid and tough.
 
-Poly(ethene) has only non-polar $C-H$ and $C-C$ bonds. The only intermolecular forces are London dispersion forces, which are relatively weak. This makes poly(ethene) flexible and soft.
+Poly(ethene) has only non-polar $C-H$ and $C-C$ bonds. The only intermolecular forces are London
+dispersion forces, which are relatively weak. This makes poly(ethene) flexible and soft.
 
 (c) When PVC burns in limited air:
 
@@ -192,11 +219,13 @@ $$(-CH_{2}-CHCl-)_n + \frac{5n}{2}O_{2} \rightarrow 2nCO_{2} + nH_{2}O + nHCl$$
 (in sufficient oxygen, but in limited oxygen, incomplete combustion produces $C$ and $CO$ as well).
 
 The release of **toxic, corrosive $HCl$ gas** is a serious fire safety concern because:
+
 1. $HCl$ is highly toxic if inhaled, causing respiratory damage.
 2. $HCl$ is corrosive and can damage equipment and structures.
 3. It poses a danger to firefighters and building occupants.
 
-This is why PVC is not recommended for use in environments where fire safety is critical without appropriate flame retardants.
+This is why PVC is not recommended for use in environments where fire safety is critical without
+appropriate flame retardants.
 
 ---
 
@@ -212,24 +241,36 @@ Consider the following alcohols:
 
 (a) Classify each alcohol as primary, secondary, or tertiary. [2 marks]
 
-(b) Arrange the three alcohols in order of **increasing** reactivity with acidified potassium dichromate(VI). Explain. [3 marks]
+(b) Arrange the three alcohols in order of **increasing** reactivity with acidified potassium
+dichromate(VI). Explain. [3 marks]
 
-(c) Predict the organic product when $C$ is heated with acidified $K_{2}Cr_{2}O_{7}$. Explain. [2 marks]
+(c) Predict the organic product when $C$ is heated with acidified $K_{2}Cr_{2}O_{7}$. Explain. [2
+marks]
 
 ---
 
 **Worked Solution**
 
-(a) **$A$ (butan-1-ol)**: The $-OH$ group is attached to a carbon bonded to **one** other carbon (and two hydrogens). **Primary alcohol**.
+(a) **$A$ (butan-1-ol)**: The $-OH$ group is attached to a carbon bonded to **one** other carbon
+(and two hydrogens). **Primary alcohol**.
 
-**$B$ (butan-2-ol)**: The $-OH$ group is attached to a carbon bonded to **two** other carbons (and one hydrogen). **Secondary alcohol**.
+**$B$ (butan-2-ol)**: The $-OH$ group is attached to a carbon bonded to **two** other carbons (and
+one hydrogen). **Secondary alcohol**.
 
-**$C$ (2-methylpropan-2-ol)**: The $-OH$ group is attached to a carbon bonded to **three** other carbons (no hydrogens). **Tertiary alcohol**.
+**$C$ (2-methylpropan-2-ol)**: The $-OH$ group is attached to a carbon bonded to **three** other
+carbons (no hydrogens). **Tertiary alcohol**.
 
 (b) Increasing reactivity with acidified $K_{2}Cr_{2}O_{7}$:
 
 $$C \lt B \lt A$$
 
-The oxidation of alcohols involves removing a hydrogen atom from the carbon bearing the $-OH$ group. Primary alcohols are most oxidised because the $C-H$ bond on the alpha carbon is accessible. Tertiary alcohols are **not oxidised** at all by $K_{2}Cr_{2}O_{7}$ because the carbon bearing the $-OH$ group has no hydrogen atoms to remove. Secondary alcohols are oxidised to ketones.
+The oxidation of alcohols involves removing a hydrogen atom from the carbon bearing the $-OH$ group.
+Primary alcohols are most oxidised because the $C-H$ bond on the alpha carbon is accessible.
+Tertiary alcohols are **not oxidised** at all by $K_{2}Cr_{2}O_{7}$ because the carbon bearing the
+$-OH$ group has no hydrogen atoms to remove. Secondary alcohols are oxidised to ketones.
 
-(c) **$C$ (tertiary alcohol)** is **not oxidised** by acidified $K_{2}Cr_{2}O_{7}$. No reaction occurs (or only the orange-to-green colour change does not happen). The carbon bearing the $-OH$ group in a tertiary alcohol has no alpha hydrogen, so oxidation cannot proceed. The only way to break down a tertiary alcohol is through more drastic conditions such as dehydration to form an alkene, or complete combustion.
+(c) **$C$ (tertiary alcohol)** is **not oxidised** by acidified $K_{2}Cr_{2}O_{7}$. No reaction
+occurs (or only the orange-to-green colour change does not happen). The carbon bearing the $-OH$
+group in a tertiary alcohol has no alpha hydrogen, so oxidation cannot proceed. The only way to
+break down a tertiary alcohol is through more drastic conditions such as dehydration to form an
+alkene, or complete combustion.

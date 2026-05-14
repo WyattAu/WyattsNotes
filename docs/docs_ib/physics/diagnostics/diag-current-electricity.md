@@ -1,6 +1,8 @@
 ---
-title: "Current Electricity -- Diagnostic Tests"
-description: "Hardest IB Physics current electricity diagnostic tests covering non-ohmic I-V characteristics, internal resistance effects, potential divider sensitivity, and"
+title: 'Current Electricity -- Diagnostic Tests'
+description:
+  'Hardest IB Physics current electricity diagnostic tests covering non-ohmic I-V characteristics,
+  internal resistance effects, potential divider sensitivity, and'
 slug: diag-current-electricity
 hide_table_of_contents: true
 ---
@@ -13,13 +15,18 @@ hide_table_of_contents: true
 
 **Question:**
 
-A filament lamp and a semiconductor diode are connected in parallel across a variable power supply. The I-V characteristic of the lamp follows $I_L = 0.50V^{0.5}\,\text{A}$ (for $V \gt 0$) and the diode follows $I_D = 10^{-6}(e^{V/0.026} - 1)\,\text{A}$ ( Shockley equation with $I_0 = 1.0\,\mu\text{A}$).
+A filament lamp and a semiconductor diode are connected in parallel across a variable power supply.
+The I-V characteristic of the lamp follows $I_L = 0.50V^{0.5}\,\text{A}$ (for $V \gt 0$) and the
+diode follows $I_D = 10^{-6}(e^{V/0.026} - 1)\,\text{A}$ ( Shockley equation with
+$I_0 = 1.0\,\mu\text{A}$).
 
 (a) Calculate the current through each component when the supply voltage is $6.0\,\text{V}$.
 
-(b) Calculate the total current from the supply and the effective resistance of the parallel combination at $V = 6.0\,\text{V}$.
+(b) Calculate the total current from the supply and the effective resistance of the parallel
+combination at $V = 6.0\,\text{V}$.
 
-(c) A student uses $R = V/I$ to calculate the "resistance" of the diode at $V = 6.0\,\text{V}$. Explain why this is misleading and calculate the correct dynamic resistance.
+(c) A student uses $R = V/I$ to calculate the "resistance" of the diode at $V = 6.0\,\text{V}$.
+Explain why this is misleading and calculate the correct dynamic resistance.
 
 **Solution:**
 
@@ -31,19 +38,28 @@ $$I_L = 0.50 \times 6.0^{0.5} = 0.50 \times 2.449 = 1.22\,\text{A}$$
 
 $$I_D = 10^{-6}(e^{6.0/0.026} - 1) = 10^{-6}(e^{230.8} - 1)$$
 
-This is an astronomically large number, indicating the diode would be destroyed at $6.0\,\text{V}$ in forward bias. A typical silicon diode has a forward voltage drop of about $0.7\,\text{V}$ and would carry very large currents above this.
+This is an astronomically large number, indicating the diode would be destroyed at $6.0\,\text{V}$
+in forward bias. A typical silicon diode has a forward voltage drop of about $0.7\,\text{V}$ and
+would carry very large currents above this.
 
 At a more realistic forward voltage of $V = 0.70\,\text{V}$:
 
 $$I_D = 10^{-6}(e^{0.70/0.026} - 1) = 10^{-6}(e^{26.9} - 1) \approx 10^{-6} \times 4.8 \times 10^{11} = 4.8 \times 10^5\,\text{A}$$
 
-This is still unrealistically large. The Shockley equation with these parameters gives impractical results at typical voltages. The point of this question is to show that the Shockley equation is an idealisation and real diodes have series resistance that limits current.
+This is still unrealistically large. The Shockley equation with these parameters gives impractical
+results at typical voltages. The point of this question is to show that the Shockley equation is an
+idealisation and real diodes have series resistance that limits current.
 
-For the purpose of this calculation, let us note that at $V = 6.0\,\text{V}$Both the lamp and diode would carry very large currents. The diode's exponential characteristic means it effectively acts as a short circuit at voltages well above its threshold.
+For the purpose of this calculation, let us note that at $V = 6.0\,\text{V}$Both the lamp and diode
+would carry very large currents. The diode's exponential characteristic means it effectively acts as
+a short circuit at voltages well above its threshold.
 
-(b) With the unrealistic values, the total current would be enormous. This illustrates that parallel connections of components with very different I-V characteristics can lead to one component dominating.
+(b) With the unrealistic values, the total current would be enormous. This illustrates that parallel
+connections of components with very different I-V characteristics can lead to one component
+dominating.
 
-(c) The ratio $R = V/I$ gives the **static** or **chordal** resistance at a single operating point. For non-ohmic components, this is misleading because it changes with the operating point.
+(c) The ratio $R = V/I$ gives the **static** or **chordal** resistance at a single operating point.
+For non-ohmic components, this is misleading because it changes with the operating point.
 
 The correct **dynamic** (or differential) resistance is:
 
@@ -51,11 +67,13 @@ $$r_d = \frac{dV}{dI}$$
 
 For the diode: $\frac{dI_D}{dV} = \frac{I_0}{0.026}e^{V/0.026}$
 
-At $V = 0.7\,\text{V}$: $\frac{dI_D}{dV} \approx \frac{4.8 \times 10^5}{0.026} = 1.85 \times 10^7\,\text{A}\,\text{V}^{-1}$
+At $V = 0.7\,\text{V}$:
+$\frac{dI_D}{dV} \approx \frac{4.8 \times 10^5}{0.026} = 1.85 \times 10^7\,\text{A}\,\text{V}^{-1}$
 
 $r_d = \frac{0.026}{I_D} \approx 5.4 \times 10^{-8}\,\Omega$
 
-This extremely small dynamic resistance means the diode effectively acts as a voltage source of $0.7\,\text{V}$ in series with a tiny resistance.
+This extremely small dynamic resistance means the diode effectively acts as a voltage source of
+$0.7\,\text{V}$ in series with a tiny resistance.
 
 ---
 
@@ -63,13 +81,18 @@ This extremely small dynamic resistance means the diode effectively acts as a vo
 
 **Question:**
 
-A battery of EMF $\varepsilon = 12.0\,\text{V}$ and internal resistance $r = 1.5\,\Omega$ is connected to an external circuit.
+A battery of EMF $\varepsilon = 12.0\,\text{V}$ and internal resistance $r = 1.5\,\Omega$ is
+connected to an external circuit.
 
-(a) Calculate the maximum possible current from the battery and the terminal PD under short-circuit conditions.
+(a) Calculate the maximum possible current from the battery and the terminal PD under short-circuit
+conditions.
 
-(b) Two identical batteries are connected (i) in series and (ii) in parallel to a load resistor $R_L = 4.0\,\Omega$. Calculate the current through $R_L$ and the power delivered to $R_L$ in each case.
+(b) Two identical batteries are connected (i) in series and (ii) in parallel to a load resistor
+$R_L = 4.0\,\Omega$. Calculate the current through $R_L$ and the power delivered to $R_L$ in each
+case.
 
-(c) Determine the value of $R_L$ that maximises the power delivered to the load, and calculate this maximum power for a single battery.
+(c) Determine the value of $R_L$ that maximises the power delivered to the load, and calculate this
+maximum power for a single battery.
 
 **Solution:**
 
@@ -79,21 +102,25 @@ Terminal PD: $V = \varepsilon - Ir = 12.0 - 8.0 \times 1.5 = 12.0 - 12.0 = 0\,\t
 
 All the EMF is dropped across the internal resistance.
 
-(b) **(i) Batteries in series:** Total EMF $= 24.0\,\text{V}$Total internal resistance $= 3.0\,\Omega$.
+(b) **(i) Batteries in series:** Total EMF $= 24.0\,\text{V}$Total internal resistance
+$= 3.0\,\Omega$.
 
 Current: $I = 24.0/(4.0 + 3.0) = 24.0/7.0 = 3.43\,\text{A}$
 
 Power to $R_L$: $P = I^2R_L = 3.43^2 \times 4.0 = 47.0\,\text{W}$
 
-**(ii) Batteries in parallel:** Total EMF $= 12.0\,\text{V}$Total internal resistance $= 0.75\,\Omega$ (two $1.5\,\Omega$ in parallel).
+**(ii) Batteries in parallel:** Total EMF $= 12.0\,\text{V}$Total internal resistance
+$= 0.75\,\Omega$ (two $1.5\,\Omega$ in parallel).
 
 Current: $I = 12.0/(4.0 + 0.75) = 12.0/4.75 = 2.53\,\text{A}$
 
 Power to $R_L$: $P = I^2R_L = 2.53^2 \times 4.0 = 25.6\,\text{W}$
 
-Series connection delivers more power ($47.0\,\text{W}$ vs $25.6\,\text{W}$) because the higher EMF outweighs the higher internal resistance for this particular load.
+Series connection delivers more power ($47.0\,\text{W}$ vs $25.6\,\text{W}$) because the higher EMF
+outweighs the higher internal resistance for this particular load.
 
-(c) Power to load: $P = I^2R_L = \left(\frac{\varepsilon}{R_L + r}\right)^2 R_L = \frac{\varepsilon^2 R_L}{(R_L + r)^2}$
+(c) Power to load:
+$P = I^2R_L = \left(\frac{\varepsilon}{R_L + r}\right)^2 R_L = \frac{\varepsilon^2 R_L}{(R_L + r)^2}$
 
 To maximise: $\frac{dP}{dR_L} = 0$
 
@@ -103,7 +130,8 @@ $$(R_L + r) - 2R_L = 0 \Rightarrow R_L = r = 1.5\,\Omega$$
 
 Maximum power: $P_{\max} = \frac{\varepsilon^2}{4r} = \frac{144}{6.0} = 24.0\,\text{W}$
 
-The maximum power transfer theorem states that maximum power is delivered when the load resistance equals the internal resistance.
+The maximum power transfer theorem states that maximum power is delivered when the load resistance
+equals the internal resistance.
 
 ---
 
@@ -111,17 +139,23 @@ The maximum power transfer theorem states that maximum power is delivered when t
 
 **Question:**
 
-A potential divider consists of two resistors $R_1$ and $R_2$ in series across a $12\,\text{V}$ supply. The output voltage is taken across $R_2$. A load resistor $R_L$ is connected across $R_2$.
+A potential divider consists of two resistors $R_1$ and $R_2$ in series across a $12\,\text{V}$
+supply. The output voltage is taken across $R_2$. A load resistor $R_L$ is connected across $R_2$.
 
-(a) Calculate the output voltage with $R_1 = 10\,\text{k}\Omega$$R_2 = 10\,\text{k}\Omega$And no load.
+(a) Calculate the output voltage with $R_1 = 10\,\text{k}\Omega$$R_2 = 10\,\text{k}\Omega$And no
+load.
 
-(b) Calculate the output voltage when $R_L = 10\,\text{k}\Omega$ is connected across $R_2$And calculate the percentage change.
+(b) Calculate the output voltage when $R_L = 10\,\text{k}\Omega$ is connected across $R_2$And
+calculate the percentage change.
 
-(c) Determine the condition on $R_1$$R_2$And $R_L$ for the potential divider to be "stiff" (output voltage unaffected by loading), and calculate the minimum value of $R_2$ for the output to change by less than $1\%$ when $R_L = 100\,\text{k}\Omega$ is connected.
+(c) Determine the condition on $R_1$$R_2$And $R_L$ for the potential divider to be "stiff" (output
+voltage unaffected by loading), and calculate the minimum value of $R_2$ for the output to change by
+less than $1\%$ when $R_L = 100\,\text{k}\Omega$ is connected.
 
 **Solution:**
 
-(a) No load: $V_{\text{out}} = \frac{R_2}{R_1 + R_2} \times V = \frac{10}{20} \times 12 = 6.0\,\text{V}$
+(a) No load:
+$V_{\text{out}} = \frac{R_2}{R_1 + R_2} \times V = \frac{10}{20} \times 12 = 6.0\,\text{V}$
 
 (b) With $R_L = 10\,\text{k}\Omega$ across $R_2$The parallel combination is:
 
@@ -131,9 +165,11 @@ $$V_{\text{out}} = \frac{R_2'}{R_1 + R_2'} \times V = \frac{5.0}{10 + 5.0} \time
 
 Percentage change: $\frac{4.0 - 6.0}{6.0} \times 100 = -33\%$
 
-The output drops by $33\%$ when a load equal to $R_2$ is connected. This is a significant "loading effect."
+The output drops by $33\%$ when a load equal to $R_2$ is connected. This is a significant "loading
+effect."
 
-(c) The potential divider is "stiff" when $R_L \gg R_2$ (the load resistance is much larger than $R_2$). In this limit, $R_2' \approx R_2$ and the output voltage is unaffected.
+(c) The potential divider is "stiff" when $R_L \gg R_2$ (the load resistance is much larger than
+$R_2$). In this limit, $R_2' \approx R_2$ and the output voltage is unaffected.
 
 For less than $1\%$ change:
 
@@ -167,7 +203,9 @@ With $R_L = 100\,\text{k}\Omega$: $R \le 100/49.5 = 2.02\,\text{k}\Omega$
 
 So $R_2 = R_1 \le 2.0\,\text{k}\Omega$ for the output to change by less than $1\%$.
 
-This shows that to make a stiff divider, $R_2$ must be small relative to $R_L$. But small $R_2$ means more current is drawn from the supply, wasting power. There is always a trade-off between sensitivity (small resistors) and efficiency (large resistors).
+This shows that to make a stiff divider, $R_2$ must be small relative to $R_L$. But small $R_2$
+means more current is drawn from the supply, wasting power. There is always a trade-off between
+sensitivity (small resistors) and efficiency (large resistors).
 
 ## Integration Tests
 
@@ -185,7 +223,8 @@ A circuit contains three batteries and four resistors:
 - Resistor $R_3 = 3.0\,\Omega$ in the right branch (with battery 3)
 - Resistor $R_4 = 2.0\,\Omega$ connecting the top junction to the bottom junction (common branch)
 
-Battery 1 and battery 2 have their positive terminals facing upward. Battery 3 has its positive terminal facing downward.
+Battery 1 and battery 2 have their positive terminals facing upward. Battery 3 has its positive
+terminal facing downward.
 
 (a) Set up Kirchhoff's equations and solve for the current in each branch.
 
@@ -195,7 +234,9 @@ Battery 1 and battery 2 have their positive terminals facing upward. Battery 3 h
 
 **Solution:**
 
-(a) Let $I_1$ flow upward in the left branch (through battery 1 and $R_1$), $I_2$ flow upward in the middle branch (through battery 2 and $R_2$), and $I_3$ flow downward in the right branch (through $R_3$ and battery 3).
+(a) Let $I_1$ flow upward in the left branch (through battery 1 and $R_1$), $I_2$ flow upward in the
+middle branch (through battery 2 and $R_2$), and $I_3$ flow downward in the right branch (through
+$R_3$ and battery 3).
 
 By KCL at the top junction: $I_1 + I_2 = I_3$
 
@@ -233,7 +274,8 @@ $$-95.75I_2 = 12$$
 
 $$I_2 = -0.125\,\text{A}$$
 
-The negative sign means $I_2$ flows downward (opposite to our assumed direction). Battery 2 is being charged.
+The negative sign means $I_2$ flows downward (opposite to our assumed direction). Battery 2 is being
+charged.
 
 From (3): $6 - 10.5I_1 - 5.5(-0.125) = 0 \Rightarrow 6 - 10.5I_1 + 0.6875 = 0$
 
@@ -243,7 +285,8 @@ $$I_3 = I_1 + I_2 = 0.637 - 0.125 = 0.512\,\text{A}$$
 
 (b) Power delivered by battery 1: $P_1 = \varepsilon_1 I_1 = 10 \times 0.637 = 6.37\,\text{W}$
 
-Power delivered by battery 2: $P_2 = \varepsilon_2 |I_2| = 6 \times 0.125 = 0.75\,\text{W}$ (battery 2 is being charged, so it absorbs power)
+Power delivered by battery 2: $P_2 = \varepsilon_2 |I_2| = 6 \times 0.125 = 0.75\,\text{W}$ (battery
+2 is being charged, so it absorbs power)
 
 Power delivered by battery 3: $P_3 = \varepsilon_3 I_3 = 4 \times 0.512 = 2.05\,\text{W}$
 
@@ -259,11 +302,16 @@ Power dissipated in internal resistances: $P_{\text{int}} = I_1^2 r_1 + I_2^2 r_
 
 $= 0.637^2 \times 1.0 + 0.125^2 \times 0.5 + 0.512^2 \times 0.5 = 0.406 + 0.0078 + 0.131 = 0.545\,\text{W}$
 
-(c) Total power delivered: $P_{\text{del}} = 6.37 + 2.05 = 8.42\,\text{W}$ (only batteries 1 and 3 deliver power)
+(c) Total power delivered: $P_{\text{del}} = 6.37 + 2.05 = 8.42\,\text{W}$ (only batteries 1 and 3
+deliver power)
 
-Total power absorbed: $P_{\text{abs}} = 0.75 + 1.62 + 0.094 + 0.786 + 0.524 + 0.545 = 4.32\,\text{W}$
+Total power absorbed:
+$P_{\text{abs}} = 0.75 + 1.62 + 0.094 + 0.786 + 0.524 + 0.545 = 4.32\,\text{W}$
 
-The values above use rounded figures. Using more precise values ($I_1 = 0.6369\,\text{A}$$I_2 = -0.1253\,\text{A}$$I_3 = 0.5116\,\text{A}$), the energy balance is verified by Kirchhoff's voltage law: the total EMF times current equals the total $I^2R$ power dissipation in any well-solved circuit.
+The values above use rounded figures. Using more precise values
+($I_1 = 0.6369\,\text{A}$$I_2 = -0.1253\,\text{A}$$I_3 = 0.5116\,\text{A}$), the energy balance is
+verified by Kirchhoff's voltage law: the total EMF times current equals the total $I^2R$ power
+dissipation in any well-solved circuit.
 
 ---
 
@@ -271,19 +319,25 @@ The values above use rounded figures. Using more precise values ($I_1 = 0.6369\,
 
 **Question:**
 
-A capacitor of capacitance $C = 100\,\mu\text{F}$ is initially uncharged. It is connected in series with a resistor $R = 50\,\text{k}\Omega$ and a battery of EMF $\varepsilon = 20\,\text{V}$ (negligible internal resistance) at $t = 0$.
+A capacitor of capacitance $C = 100\,\mu\text{F}$ is initially uncharged. It is connected in series
+with a resistor $R = 50\,\text{k}\Omega$ and a battery of EMF $\varepsilon = 20\,\text{V}$
+(negligible internal resistance) at $t = 0$.
 
-(a) Calculate the time constant, the current at $t = 0$And the charge on the capacitor at $t = 10\,\text{s}$.
+(a) Calculate the time constant, the current at $t = 0$And the charge on the capacitor at
+$t = 10\,\text{s}$.
 
-(b) Calculate the energy stored in the capacitor when it is fully charged and the total energy supplied by the battery during the full charging process.
+(b) Calculate the energy stored in the capacitor when it is fully charged and the total energy
+supplied by the battery during the full charging process.
 
-(c) Explain the discrepancy between the energy stored in the capacitor and the energy supplied by the battery. Where does the "missing" energy go?
+(c) Explain the discrepancy between the energy stored in the capacitor and the energy supplied by
+the battery. Where does the "missing" energy go?
 
 **Solution:**
 
 (a) Time constant: $\tau = RC = 50000 \times 100 \times 10^{-6} = 5.0\,\text{s}$
 
-Current at $t = 0$: $I_0 = \varepsilon/R = 20/50000 = 4.0 \times 10^{-4}\,\text{A} = 0.40\,\text{mA}$
+Current at $t = 0$:
+$I_0 = \varepsilon/R = 20/50000 = 4.0 \times 10^{-4}\,\text{A} = 0.40\,\text{mA}$
 
 Charge at $t = 10\,\text{s} = 2\tau$:
 
@@ -295,9 +349,11 @@ $$= 2.0 \times 10^{-3} \times (1 - 0.1353) = 2.0 \times 10^{-3} \times 0.8647 = 
 
 $$E_C = \frac{1}{2}CV^2 = \frac{1}{2} \times 100 \times 10^{-6} \times 400 = 0.020\,\text{J} = 20\,\text{mJ}$$
 
-Total energy supplied by battery: $E_B = Q_{\text{total}} \times \varepsilon = C\varepsilon^2 = 100 \times 10^{-6} \times 400 = 0.040\,\text{J} = 40\,\text{mJ}$
+Total energy supplied by battery:
+$E_B = Q_{\text{total}} \times \varepsilon = C\varepsilon^2 = 100 \times 10^{-6} \times 400 = 0.040\,\text{J} = 40\,\text{mJ}$
 
-(c) The battery supplies $40\,\text{mJ}$ but only $20\,\text{mJ}$ is stored in the capacitor. The "missing" $20\,\text{mJ}$ is dissipated as heat in the resistor.
+(c) The battery supplies $40\,\text{mJ}$ but only $20\,\text{mJ}$ is stored in the capacitor. The
+"missing" $20\,\text{mJ}$ is dissipated as heat in the resistor.
 
 This can be shown mathematically:
 
@@ -305,7 +361,9 @@ $$E_R = \int_0^\infty I^2 R\,dt = \int_0^\infty \left(\frac{\varepsilon}{R}e^{-t
 
 So $E_R = \frac{1}{2}C\varepsilon^2 = 20\,\text{mJ}$Exactly half the total energy supplied.
 
-This result is independent of $R$: no matter how large or small the resistance, exactly half the energy from the battery is dissipated in the resistor and half is stored in the capacitor. This is a fundamental result for RC charging circuits.
+This result is independent of $R$: no matter how large or small the resistance, exactly half the
+energy from the battery is dissipated in the resistor and half is stored in the capacitor. This is a
+fundamental result for RC charging circuits.
 
 ---
 
@@ -313,13 +371,16 @@ This result is independent of $R$: no matter how large or small the resistance, 
 
 **Question:**
 
-A Wheatstone bridge has arms $R_1 = 100\,\Omega$$R_2 = 200\,\Omega$$R_3 = 150\,\Omega$And $R_4 = 300\,\Omega$. A galvanometer of resistance $R_g = 50\,\Omega$ is connected between the junction of $R_1$--$R_2$ and the junction of $R_3$--$R_4$. The supply voltage is $V = 10\,\text{V}$.
+A Wheatstone bridge has arms $R_1 = 100\,\Omega$$R_2 = 200\,\Omega$$R_3 = 150\,\Omega$And
+$R_4 = 300\,\Omega$. A galvanometer of resistance $R_g = 50\,\Omega$ is connected between the
+junction of $R_1$--$R_2$ and the junction of $R_3$--$R_4$. The supply voltage is $V = 10\,\text{V}$.
 
 (a) Determine whether the bridge is balanced and calculate the galvanometer current.
 
 (b) $R_4$ is changed to $305\,\Omega$. Calculate the new galvanometer current.
 
-(c) Calculate the minimum detectable change in $R_4$ if the galvanometer can detect a current of $1.0\,\mu\text{A}$.
+(c) Calculate the minimum detectable change in $R_4$ if the galvanometer can detect a current of
+$1.0\,\mu\text{A}$.
 
 **Solution:**
 
@@ -357,4 +418,5 @@ $$\Delta R_4 = \frac{1.0}{168} \times 5 = 0.030\,\Omega$$
 
 The minimum detectable change in $R_4$ is approximately $0.03\,\Omega$.
 
-This shows that the Wheatstone bridge is a very sensitive instrument for measuring small resistance changes, which is why it is used in strain gauges and precision measurement applications.
+This shows that the Wheatstone bridge is a very sensitive instrument for measuring small resistance
+changes, which is why it is used in strain gauges and precision measurement applications.

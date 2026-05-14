@@ -1,9 +1,11 @@
 ---
 title: Networks
 tags:
-- CS
+  - CS
 slug: networks
-description: "Rigorous IB computer science notes covering Networks. Includes definitions, derivations, worked examples, and exam-style problems."
+description:
+  'Rigorous IB computer science notes covering Networks. Includes definitions, derivations, worked
+  examples, and exam-style problems.'
 ---
 
 ## Computer Network
@@ -44,8 +46,8 @@ Connections.
 
 ### Modem
 
-A modem is a connection to the ISP, where the modem is connected to a router to allow router
-To access the internet. The modem is consider a physical layer in the OSI model as it only transmit
+A modem is a connection to the ISP, where the modem is connected to a router to allow router To
+access the internet. The modem is consider a physical layer in the OSI model as it only transmit
 Data in analog signals.
 
 ### Wireless Access Points (WAP)
@@ -55,36 +57,35 @@ A WAP is a connection point that acts as a hub with wireless connection
 ### Types of Network
 
 - Local area network (LAN)
- - A single network connected by MAC address.
- - Normally involve clients and servers connected to a single hub or switch.
+- A single network connected by MAC address.
+- Normally involve clients and servers connected to a single hub or switch.
 - Wireless local area network (WLAN)
- - A single network connect by wireless protocols.
- - Normally involve clients and servers connected to a WAP.
+- A single network connect by wireless protocols.
+- Normally involve clients and servers connected to a WAP.
 - Virtual local area network (VLAN)
- - Partitioned LANs, where they are connected to a central switch but virtualize logically as
- different networks.
- - Normally involve clients and servers connected with a switch, but each set of clients and
- servers are separated to multiple VLANs.
+- Partitioned LANs, where they are connected to a central switch but virtualize logically as
+  different networks.
+- Normally involve clients and servers connected with a switch, but each set of clients and servers
+  are separated to multiple VLANs.
 - Wide area network (WAN)
- - A network connected multiple LANs spanning a large geographical area
+- A network connected multiple LANs spanning a large geographical area
 - Storage area network (SAN)
- - A network connected a cluster of storage devices, make accessible to a LAN
- - Normally involve servers and storage devices connected by a switch
+- A network connected a cluster of storage devices, make accessible to a LAN
+- Normally involve servers and storage devices connected by a switch
 - Intranet
- - A network connecting multiple networks through transport layer in OSI such as TCP/IP
+- A network connecting multiple networks through transport layer in OSI such as TCP/IP
 - Internet
- - A WAN connecting global devices normally accessed through an ISP
+- A WAN connecting global devices normally accessed through an ISP
 - Internet of things (IOT)
- - A network connecting physical devices embedded with sensors and exchange data though the
- internet
+- A network connecting physical devices embedded with sensors and exchange data though the internet
 - Extranet
- - A network that allowed controlled internet access from clients to specific LAN or WAN
+- A network that allowed controlled internet access from clients to specific LAN or WAN
 - VPN
- - A network that connects remote networks through a encrypted connection
+- A network that connects remote networks through a encrypted connection
 - Personal Area Network (PAN)
- - A network connecting a single client and multiple devices
+- A network connecting a single client and multiple devices
 - Peer-To-Peer (P2P)
- - A distributed network that connect every device with direct physical layer connection.
+- A distributed network that connect every device with direct physical layer connection.
 
 ### Open System Interconnection (OSI) model
 
@@ -93,40 +94,39 @@ Standardization (ISO) to formalize communication across multiple devices. OSI is
 Layers which specifies standards for physical communication and virtual communication, this include:
 
 - Physical communication
- - Physical layer
- - Binary transmission (bitstreams) between devices
- - Protocol data unit (PDU): Bits
- - Bluetooth, IEEE802.11 (Wi-Fi)
- - Hub, ethernet cable, fiber-optic links, WAP
- - Data link layer
- - Handles communication within a network with MAC address with error detection and flow control
- - PDU: Frames (One network packet)
- - Ethernet, HDLC
- - Switch
- - Network layer
- - Handles routing of packets across a interconnected networks using logical address such as IP
- address header
- - PDU: Packets
- - IP (IPv4, IPv6)
- - Router
- - Transport layer
- - Establish end-to-end connection, segmenting data in to packets with transmission protocol
- header.
- - PDU: Segments (TCP) / Datagrams (UDP)
- - TCP, UDP
- - Session layer
- - Managing and terminating sessions between application, including authentication, reconnection,
- and synchronization
- - PDU: Data
- - NetBIOS, RPC
- - Presentation layer
- - Translate data formats, encrypt, and compresses data
- - PDU: Data
- - SSL/TLS
- - Application Layer
- - Provide end-user application communication
- - PDU: Data
- - HTTPs, HTTP, FTP, SMTP, DNS, DHCP, IMAP
+- Physical layer
+- Binary transmission (bitstreams) between devices
+- Protocol data unit (PDU): Bits
+- Bluetooth, IEEE802.11 (Wi-Fi)
+- Hub, ethernet cable, fiber-optic links, WAP
+- Data link layer
+- Handles communication within a network with MAC address with error detection and flow control
+- PDU: Frames (One network packet)
+- Ethernet, HDLC
+- Switch
+- Network layer
+- Handles routing of packets across a interconnected networks using logical address such as IP
+  address header
+- PDU: Packets
+- IP (IPv4, IPv6)
+- Router
+- Transport layer
+- Establish end-to-end connection, segmenting data in to packets with transmission protocol header.
+- PDU: Segments (TCP) / Datagrams (UDP)
+- TCP, UDP
+- Session layer
+- Managing and terminating sessions between application, including authentication, reconnection, and
+  synchronization
+- PDU: Data
+- NetBIOS, RPC
+- Presentation layer
+- Translate data formats, encrypt, and compresses data
+- PDU: Data
+- SSL/TLS
+- Application Layer
+- Provide end-user application communication
+- PDU: Data
+- HTTPs, HTTP, FTP, SMTP, DNS, DHCP, IMAP
 
 ---
 
@@ -137,35 +137,35 @@ Layers which specifies standards for physical communication and virtual communic
 - All devices share a single communication line (the "bus").
 - **Advantages:** Simple and cheap to install, uses less cable than other topologies.
 - **Disadvantages:** If the main cable fails, the entire network goes down. Performance degrades as
- more devices are added due to data collisions.
+  more devices are added due to data collisions.
 
 ### Star Topology
 
 - All devices connect to a central hub or switch.
 - **Advantages:** Easy to add or remove devices without disrupting the network. If one cable fails,
- only that device is affected.
+  only that device is affected.
 - **Disadvantages:** If the central hub/switch fails, the entire network fails. Requires more cable
- than a bus topology.
+  than a bus topology.
 
 ### Ring Topology
 
 - Devices are connected in a closed loop, with each device connected to exactly two others.
 - **Advantages:** Data travels in one direction, reducing the chance of packet collisions.
 - **Disadvantages:** If one device or cable fails, the entire ring is broken. Adding or removing
- devices disrupts the network.
+  devices disrupts the network.
 
 ### Mesh Topology
 
 - Every device is connected to every other device (full mesh) or to multiple devices (partial mesh).
 - **Advantages:** High redundancy — if one connection fails, data can be rerouted. No single point
- of failure.
+  of failure.
 - **Disadvantages:** Expensive and complex to set up due to the large number of cables/connections
- required.
+  required.
 
 ### Tree (Hierarchical) Topology
 
 - A hybrid topology combining characteristics of bus and star topologies. Devices are arranged in a
- hierarchy, with a root node branching into sub-nodes.
+  hierarchy, with a root node branching into sub-nodes.
 - **Advantages:** Scalable and easy to manage hierarchically.
 - **Disadvantages:** If the root node fails, the entire network below it is affected.
 
@@ -189,7 +189,7 @@ Layers of the OSI model.
 
 - Responsible for addressing and routing packets across interconnected networks.
 - Each device on a network has a unique IP address (IPv4: 32-bit, e.g. `192.168.1.1`; IPv6:
- 128-bit).
+  128-bit).
 - IP is connectionless — each packet is treated independently (datagram switching).
 - TTL (Time to Live) prevents packets from circulating indefinitely.
 
@@ -206,7 +206,7 @@ Layers of the OSI model.
 - Application layer protocol used for transmitting web pages and other resources.
 - Stateless — each request is independent; no memory of previous interactions.
 - Request methods: `GET` (retrieve data), `POST` (submit data), `PUT` (update data), `DELETE`
- (remove data).
+  (remove data).
 - Status codes: `200` (OK), `301` (Moved Permanently), `404` (Not Found), `500` (Server Error).
 
 **HTTPS (HTTP Secure):**
@@ -223,13 +223,12 @@ DNS translates human-readable domain names (e.g. `www.example.com`) into IP addr
 **DNS resolution process:**
 
 1. The browser checks its local cache for the IP address.
-2. If not found, the request is sent to the **recursive DNS resolver** ( operated by the
- ISP).
+2. If not found, the request is sent to the **recursive DNS resolver** ( operated by the ISP).
 3. The resolver queries the **root DNS server**, which directs it to the appropriate **TLD
- (Top-Level Domain) server** (e.g. `.com`).
+   (Top-Level Domain) server** (e.g. `.com`).
 4. The TLD server directs the resolver to the **authoritative name server** for the domain.
 5. The authoritative server returns the IP address, which is cached by the resolver and returned to
- the browser.
+   the browser.
 
 **DNS records:**
 
@@ -250,14 +249,14 @@ DHCP automatically assigns IP addresses to devices on a network.
 
 ### Other Important Protocols
 
-| Protocol | Layer | Function |
+| Protocol  | Layer       | Function                                               |
 | :-------- | :---------- | :----------------------------------------------------- |
-| FTP | Application | File transfer between client and server |
-| SMTP | Application | Sending email |
-| IMAP/POP3 | Application | Receiving email |
-| UDP | Transport | Connectionless, fast data delivery (streaming, gaming) |
-| ARP | Network | Maps IP addresses to MAC addresses |
-| ICMP | Network | Error reporting and diagnostics (e.g. `ping`) |
+| FTP       | Application | File transfer between client and server                |
+| SMTP      | Application | Sending email                                          |
+| IMAP/POP3 | Application | Receiving email                                        |
+| UDP       | Transport   | Connectionless, fast data delivery (streaming, gaming) |
+| ARP       | Network     | Maps IP addresses to MAC addresses                     |
+| ICMP      | Network     | Error reporting and diagnostics (e.g. `ping`)          |
 
 ---
 
@@ -268,27 +267,27 @@ DHCP automatically assigns IP addresses to devices on a network.
 - A central server provides resources and services to client devices.
 - The server has higher processing power, storage, and bandwidth than clients.
 - **Advantages:** Centralised security and management; easy to back up data; efficient for many
- simultaneous clients.
+  simultaneous clients.
 - **Disadvantages:** Single point of failure; server bottleneck under heavy load; higher cost to
- maintain the server.
+  maintain the server.
 
 ### Peer-to-Peer (P2P) Model
 
 - All devices (peers) have equal status — each can act as both client and server.
 - No central server; resources are shared directly between peers.
 - **Advantages:** No single point of failure; scalable — more peers means more resources; lower
- infrastructure cost.
+  infrastructure cost.
 - **Disadvantages:** Harder to manage and secure; performance depends on the number and capability
- of peers; data consistency is harder to maintain.
+  of peers; data consistency is harder to maintain.
 
-| Feature | Client-Server | Peer-to-Peer |
+| Feature           | Client-Server                  | Peer-to-Peer                               |
 | :---------------- | :----------------------------- | :----------------------------------------- |
-| Central authority | Yes (server) | No |
-| Cost | Higher (server infrastructure) | Lower |
-| Scalability | Limited by server capacity | Increases with more peers |
-| Security | Centralised, easier to manage | Distributed, harder to manage |
-| Fault tolerance | Server failure affects all | Individual peer failure has minimal impact |
-| Examples | Web browsing, email, databases | BitTorrent, blockchain |
+| Central authority | Yes (server)                   | No                                         |
+| Cost              | Higher (server infrastructure) | Lower                                      |
+| Scalability       | Limited by server capacity     | Increases with more peers                  |
+| Security          | Centralised, easier to manage  | Distributed, harder to manage              |
+| Fault tolerance   | Server failure affects all     | Individual peer failure has minimal impact |
+| Examples          | Web browsing, email, databases | BitTorrent, blockchain                     |
 
 ---
 
@@ -297,23 +296,23 @@ DHCP automatically assigns IP addresses to devices on a network.
 ### Threats
 
 - **Malware:** Viruses (attach to files), worms (self-replicate), trojans (disguised as legitimate
- software), ransomware (encrypts data and demands payment).
+  software), ransomware (encrypts data and demands payment).
 - **Phishing:** Deceptive emails or websites designed to steal credentials or personal information.
 - **Man-in-the-Middle (MITM) attack:** An attacker intercepts communication between two parties
- without their knowledge.
+  without their knowledge.
 - **DDoS (Distributed Denial of Service):** Overwhelming a server with traffic from multiple
- compromised devices (botnet).
+  compromised devices (botnet).
 - **SQL Injection:** Inserting malicious SQL code into input fields to manipulate a database.
 
 ### Security Measures
 
 - **Firewall:** Monitors and controls incoming and outgoing network traffic based on security rules.
- Can be hardware- or software-based.
+  Can be hardware- or software-based.
 - **Antivirus/Anti-malware software:** Scans for, detects, and removes malicious software.
 - **Access control:** Authentication (verifying identity) and authorisation (determining
- permissions). Methods include passwords, biometrics, and multi-factor authentication (MFA).
+  permissions). Methods include passwords, biometrics, and multi-factor authentication (MFA).
 - **Intrusion Detection System (IDS):** Monitors network traffic for suspicious activity and alerts
- administrators.
+  administrators.
 - **Physical security:** Securing server rooms with locks, CCTV, and access badges.
 
 ---
@@ -329,7 +328,7 @@ Authorised parties with the correct key can decrypt the data.
 - **Advantages:** Fast; efficient for large amounts of data.
 - **Disadvantages:** Key distribution problem — how do you securely share the key?
 - **Examples:** AES (Advanced Encryption Standard), DES (Data Encryption Standard — now considered
- insecure).
+  insecure).
 
 ### Asymmetric Encryption
 
@@ -342,20 +341,20 @@ Authorised parties with the correct key can decrypt the data.
 ### Digital Signatures and Certificates
 
 - A **digital signature** is created by encrypting a hash of a message with the sender's private
- key. The recipient can verify it using the sender's public key.
+  key. The recipient can verify it using the sender's public key.
 - A **digital certificate** binds a public key to an identity, issued by a trusted **Certificate
- Authority (CA)** (e.g. VeriSign, Let's Encrypt). This prevents man-in-the-middle attacks.
+  Authority (CA)** (e.g. VeriSign, Let's Encrypt). This prevents man-in-the-middle attacks.
 - **SSL/TLS** uses a combination of asymmetric encryption (for the initial handshake and key
- exchange) and symmetric encryption (for the data session).
+  exchange) and symmetric encryption (for the data session).
 
 ### Hashing
 
 - A hash function converts data of arbitrary size into a fixed-size string (the hash or digest).
 - Properties: deterministic, one-way (cannot reverse a hash to find the original data),
- collision-resistant.
+  collision-resistant.
 - **Examples:** SHA-256, MD5 (now considered insecure due to collision vulnerabilities).
 - Uses: password storage (store hash, not plaintext), data integrity verification, digital
- signatures.
+  signatures.
 
 ---
 
@@ -375,11 +374,11 @@ At the destination using sequence numbers.
 ### Error Detection
 
 - **Checksum:** A value computed from the data that is sent alongside it. The receiver recomputes
- the checksum and compares.
+  the checksum and compares.
 - **Parity bit:** A single bit added to each byte to make the total number of 1s even (even parity)
- or odd (odd parity). Can detect single-bit errors but cannot correct them.
+  or odd (odd parity). Can detect single-bit errors but cannot correct them.
 - **CRC (Cyclic Redundancy Check):** A more robust error-detection method using polynomial division.
- Commonly used in network protocols.
+  Commonly used in network protocols.
 
 ### Transmission Errors
 
@@ -393,7 +392,7 @@ At the destination using sequence numbers.
 - **Frequency-Division Multiplexing (FDM):** Divides the bandwidth into separate frequency channels.
 - **Time-Division Multiplexing (TDM):** Each device is assigned a time slot in which to transmit.
 - **Statistical TDM:** Time slots are allocated dynamically based on demand, improving efficiency
- over fixed TDM.
+  over fixed TDM.
 
 ---
 
@@ -402,12 +401,12 @@ At the destination using sequence numbers.
 The TCP/IP model is a four-layer model that predates and influenced the OSI model. It is the
 Practical framework used on the internet today.
 
-| Layer | TCP/IP Name | OSI Equivalent | Key Protocols |
+| Layer | TCP/IP Name    | OSI Equivalent                     | Key Protocols                   |
 | :---- | :------------- | :--------------------------------- | :------------------------------ |
-| 4 | Application | Application, Session, Presentation | HTTP, FTP, SMTP, DNS, DHCP, SSH |
-| 3 | Transport | Transport | TCP, UDP |
-| 2 | Internet | Network | IP, ICMP, ARP, OSPF |
-| 1 | Network Access | Data Link, Physical | Ethernet, Wi-Fi, MAC, PPP |
+| 4     | Application    | Application, Session, Presentation | HTTP, FTP, SMTP, DNS, DHCP, SSH |
+| 3     | Transport      | Transport                          | TCP, UDP                        |
+| 2     | Internet       | Network                            | IP, ICMP, ARP, OSPF             |
+| 1     | Network Access | Data Link, Physical                | Ethernet, Wi-Fi, MAC, PPP       |
 
 ### TCP Segment Structure
 
@@ -418,19 +417,19 @@ A TCP segment contains:
 - **Acknowledgement number** (32 bits): confirms receipt of data.
 - **Flags**: SYN, ACK, FIN, RST control the connection state.
 - **Window size** (16 bits): used for flow control — tells the sender how much data the receiver can
- accept.
+  accept.
 - **Checksum**: error detection for the segment header and data.
 
 ### TCP vs UDP
 
-| Feature | TCP | UDP |
+| Feature      | TCP                                      | UDP                                  |
 | :----------- | :--------------------------------------- | :----------------------------------- |
-| Connection | Connection-oriented (handshake required) | Connectionless |
-| Reliability | Reliable (ACKs, retransmission) | Unreliable (best-effort delivery) |
-| Ordering | Preserves packet order | No ordering guarantee |
-| Flow control | Yes (window-based) | No |
-| Overhead | Higher (more header data) | Lower (minimal header) |
-| Use cases | Web browsing, email, file transfer | Streaming, gaming, VoIP, DNS queries |
+| Connection   | Connection-oriented (handshake required) | Connectionless                       |
+| Reliability  | Reliable (ACKs, retransmission)          | Unreliable (best-effort delivery)    |
+| Ordering     | Preserves packet order                   | No ordering guarantee                |
+| Flow control | Yes (window-based)                       | No                                   |
+| Overhead     | Higher (more header data)                | Lower (minimal header)               |
+| Use cases    | Web browsing, email, file transfer       | Streaming, gaming, VoIP, DNS queries |
 
 ### UDP Segment Structure
 
@@ -470,11 +469,11 @@ Subnets.
 4. Host bits remaining: $8 - 3 = 5$So $2^5 - 2 = 30$ usable hosts per subnet.
 5. Subnet ranges (block size = $256 - 224 = 32$):
 
-| Subnet | Network Address | Usable Host Range | Broadcast Address |
+| Subnet | Network Address | Usable Host Range               | Broadcast Address |
 | :----- | :-------------- | :------------------------------ | :---------------- |
-| 1 | `192.168.1.0` | `192.168.1.1` - `192.168.1.30` | `192.168.1.31` |
-| 2 | `192.168.1.32` | `192.168.1.33` - `192.168.1.62` | `192.168.1.63` |
-| 3 | `192.168.1.64` | `192.168.1.65` - `192.168.1.94` | `192.168.1.95` |
+| 1      | `192.168.1.0`   | `192.168.1.1` - `192.168.1.30`  | `192.168.1.31`    |
+| 2      | `192.168.1.32`  | `192.168.1.33` - `192.168.1.62` | `192.168.1.63`    |
+| 3      | `192.168.1.64`  | `192.168.1.65` - `192.168.1.94` | `192.168.1.95`    |
 
 ---
 
@@ -482,25 +481,25 @@ Subnets.
 
 ### Malware Types
 
-| Type | Description | Example |
+| Type       | Description                                                   | Example                             |
 | :--------- | :------------------------------------------------------------ | :---------------------------------- |
-| Virus | Attaches to legitimate files; requires user action to spread | Macro virus in Word documents |
-| Worm | Self-replicates across networks without user intervention | Conficker worm (2008) |
-| Trojan | Disguised as legitimate software; creates backdoors | Emotet |
-| Ransomware | Encrypts files and demands payment for decryption key | WannaCry (2017), NotPetya (2017) |
-| Spyware | Monitors user activity and collects data without consent | Keyloggers |
-| Rootkit | Hides deep in the OS to maintain persistent privileged access | Used in advanced persistent threats |
+| Virus      | Attaches to legitimate files; requires user action to spread  | Macro virus in Word documents       |
+| Worm       | Self-replicates across networks without user intervention     | Conficker worm (2008)               |
+| Trojan     | Disguised as legitimate software; creates backdoors           | Emotet                              |
+| Ransomware | Encrypts files and demands payment for decryption key         | WannaCry (2017), NotPetya (2017)    |
+| Spyware    | Monitors user activity and collects data without consent      | Keyloggers                          |
+| Rootkit    | Hides deep in the OS to maintain persistent privileged access | Used in advanced persistent threats |
 
 ### Common Attack Vectors
 
 - **Brute force attack:** Systematically trying every possible password combination. Countermeasure:
- rate limiting, account lockout, strong password policies.
+  rate limiting, account lockout, strong password policies.
 - **Social engineering:** Manipulating people into divulging confidential information. Includes
- pretexting, baiting, and tailgating (following an authorised person through a secure door).
+  pretexting, baiting, and tailgating (following an authorised person through a secure door).
 - **Session hijacking:** Stealing a valid session token after a user authenticates. Countermeasure:
- HTTPS, secure cookies, session timeout.
+  HTTPS, secure cookies, session timeout.
 - **Zero-day exploit:** Exploiting a vulnerability that the software vendor has not yet patched or
- publicly disclosed.
+  publicly disclosed.
 
 ---
 
@@ -521,8 +520,8 @@ Write the network address, first usable address, and broadcast address for the f
 <details>
 <summary>Answer 1</summary>
 
-A) We need $2^n \ge 10$. With $n = 4$$2^4 = 16 \ge 10$. Minimum subnet bits: 4. B) Original
-Prefix: `/24`. New prefix: `/24 + 4 = /28`. Subnet mask: `255.255.255.240`. C) Remaining host bits:
+A) We need $2^n \ge 10$. With $n = 4$$2^4 = 16 \ge 10$. Minimum subnet bits: 4. B) Original Prefix:
+`/24`. New prefix: `/24 + 4 = /28`. Subnet mask: `255.255.255.240`. C) Remaining host bits:
 $8 - 4 = 4$. Usable hosts: $2^4 - 2 = 14$ per subnet. D) Block size: $256 - 240 = 16$. First subnet:
 Network = `192.168.10.0`First usable = `192.168.10.1`Broadcast = `192.168.10.15`.
 
@@ -566,20 +565,20 @@ Resolution, TCP connections, TLS, and HTTP.
 <summary>Answer 3</summary>
 
 1. **DNS Resolution:** The browser checks its local cache for the IP address of `www.example.com`.
- If not found, it queries the recursive DNS resolver (ISP), which queries the root server, then
- the TLD server (`.com`), then the authoritative name server. The IP address is returned and
- cached.
+   If not found, it queries the recursive DNS resolver (ISP), which queries the root server, then
+   the TLD server (`.com`), then the authoritative name server. The IP address is returned and
+   cached.
 2. **TCP Connection:** The browser initiates a TCP three-way handshake with the server at the
- resolved IP address on port 443 (HTTPS). SYN is sent, SYN-ACK is received, ACK is sent.
+   resolved IP address on port 443 (HTTPS). SYN is sent, SYN-ACK is received, ACK is sent.
 3. **TLS Handshake:** The browser and server perform a TLS handshake. The server sends its digital
- certificate. The browser verifies the certificate with a Certificate Authority. They negotiate a
- symmetric encryption key using asymmetric encryption. All subsequent data is encrypted.
+   certificate. The browser verifies the certificate with a Certificate Authority. They negotiate a
+   symmetric encryption key using asymmetric encryption. All subsequent data is encrypted.
 4. **HTTP Request:** The browser sends an HTTP GET request over the encrypted connection, requesting
- the root path `/`.
+   the root path `/`.
 5. **HTTP Response:** The server processes the request and sends back the HTML content along with
- status code `200 OK`.
+   status code `200 OK`.
 6. **Rendering:** The browser begins parsing the HTML and making additional requests for embedded
- resources (CSS, JavaScript, images).
+   resources (CSS, JavaScript, images).
 
 </details>
 

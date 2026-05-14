@@ -1,6 +1,8 @@
 ---
 title: Testing
-description: "Testing — Dependencies; JUnit 5 Basics; Test Annotations; Assertion Libraries with worked examples and exam-style questions."
+description:
+  'Testing — Dependencies; JUnit 5 Basics; Test Annotations; Assertion Libraries with worked
+  examples and exam-style questions.'
 slug: testing
 date: 2026-04-18
 tags:
@@ -8,6 +10,7 @@ tags:
 categories:
   - Kotlin
 ---
+
 ## Dependencies
 
 ```kotlin
@@ -447,17 +450,17 @@ fun `timeout fires after delay`() = runTest {
 ## Common Pitfalls
 
 - \*\* Using Mockito with Kotlin classes. Mockito cannot mock final classes or `object` declarations
- without the `mockito-inline` extension. Use MockK instead.
+  without the `mockito-inline` extension. Use MockK instead.
 - \*\* Forgetting `runTest` for coroutine tests. Calling suspend functions from a regular `@Test`
- function requires a coroutine scope.
+  function requires a coroutine scope.
 - \*\* Not cleaning up mocks in `@AfterEach` or `@AfterAll`. Use `unmockkAll()` or `unmockkObject()`
- to prevent mock state from leaking between tests.
+  to prevent mock state from leaking between tests.
 - \*\* Using `assertEquals` for data classes without understanding structural equality. Data classes
- implement `equals()` structurally, so `assertEquals` compares all properties. This is correct but
- may mask changes to unrelated fields.
+  implement `equals()` structurally, so `assertEquals` compares all properties. This is correct but
+  may mask changes to unrelated fields.
 - \*\* Over-relying on relaxed mocks. Relaxed mocks return default values for all interactions,
- which means you may not notice when the code under test calls methods you did not expect. Use
- strict mocks by default and relax only when necessary.
+  which means you may not notice when the code under test calls methods you did not expect. Use
+  strict mocks by default and relax only when necessary.
 
 ## Summary
 

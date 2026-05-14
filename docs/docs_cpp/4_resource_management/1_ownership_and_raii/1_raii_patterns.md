@@ -1,6 +1,8 @@
 ---
 title: RAII Patterns
-description: "C++: RAII Patterns — 1.1 Formal Definition; 1.2 Stack Unwinding Guarantee; 1.3 MutexLock Example; 1.4 Standard Library RAII Wrappers."
+description:
+  'C++: RAII Patterns — 1.1 Formal Definition; 1.2 Stack Unwinding Guarantee; 1.3 MutexLock Example;
+  1.4 Standard Library RAII Wrappers.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -8,6 +10,7 @@ categories:
   - Cpp
 slug: raii-patterns
 ---
+
 # RAII Patterns
 
 RAII (Resource Acquisition Is Initialization) is the foundational C++ idiom that binds resource
@@ -21,9 +24,9 @@ A class follows the RAII pattern when:
 
 1. Its **constructor** acquires a resource (opens a file, locks a mutex, allocates memory).
 2. Its **destructor** releases that same resource (closes the file, unlocks the mutex, deallocates
- memory).
+   memory).
 3. The class maintains the **invariant**: if construction completes successfully, the resource is
- held; destruction always releases it.
+   held; destruction always releases it.
 
 This binding of resource lifetime to object lifetime is the single most important idiom in C++. It
 Is not a language feature — it is a convention that the language's destructor semantics make natural
@@ -83,10 +86,8 @@ void process_file(const char* path) {
 }
 ```
 
-:::info
-Relevance RAII is why C++ programs do not need `try`/`finally` blocks. The destructor **is**
-The `finally`. This is the mechanism that enables exception-safe code without manual cleanup.
-:::
+:::info Relevance RAII is why C++ programs do not need `try`/`finally` blocks. The destructor **is**
+The `finally`. This is the mechanism that enables exception-safe code without manual cleanup. :::
 
 ## 1.3 MutexLock Example
 
@@ -110,10 +111,8 @@ void thread_safe_operation(std::mutex& mtx) {
 }
 ```
 
-:::tip
-In production code, prefer `std::lock_guard` or `std::scoped_lock` (C++17) over a hand-rolled
-MutexLock. They are the standard library's RAII wrappers for mutexes.
-:::
+:::tip In production code, prefer `std::lock_guard` or `std::scoped_lock` (C++17) over a hand-rolled
+MutexLock. They are the standard library's RAII wrappers for mutexes. :::
 
 ## 1.4 Standard Library RAII Wrappers
 
@@ -257,11 +256,9 @@ private:
 };
 ```
 
-:::info
-The move constructor and move assignment operator transfer ownership of the file descriptor.
+:::info The move constructor and move assignment operator transfer ownership of the file descriptor.
 The moved-from `Socket` has `fd_ == -1`So its destructor is a no-op. This is the standard pattern
-For move-only RAII types that wrap non-copyable OS resources [N4950 §11.4.7].
-:::
+For move-only RAII types that wrap non-copyable OS resources [N4950 §11.4.7]. :::
 
 ## 1.6 Database Connection Wrapper
 
@@ -383,11 +380,11 @@ Generalized ScopeGuard) was not adopted into C++23. Use the implementation above
 
 RAII is the mechanism that makes C++'s three exception safety guarantees possible [N4950 §13.2]:
 
-| Guarantee | Description | RAII Role |
+| Guarantee    | Description                                                                    | RAII Role                                                                                                                                          |
 | ------------ | ------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **No-throw** | The operation never throws. | RAII destructors are implicitly `noexcept` (since C++11). If a destructor throws during stack unwinding, `std::terminate` is called [N4950 §14.4]. |
-| **Strong** | If the operation throws, the state is rolled back to before the operation. | RAII objects created during the operation are destroyed during unwinding, automatically releasing any resources they acquired. |
-| **Basic** | If the operation throws, no resources are leaked and invariants are preserved. | RAII ensures that all resources are released even if the operation fails partway through. |
+| **No-throw** | The operation never throws.                                                    | RAII destructors are implicitly `noexcept` (since C++11). If a destructor throws during stack unwinding, `std::terminate` is called [N4950 §14.4]. |
+| **Strong**   | If the operation throws, the state is rolled back to before the operation.     | RAII objects created during the operation are destroyed during unwinding, automatically releasing any resources they acquired.                     |
+| **Basic**    | If the operation throws, no resources are leaked and invariants are preserved. | RAII ensures that all resources are released even if the operation fails partway through.                                                          |
 
 RAII enables the strong guarantee by default: if an exception propagates out of a function, every
 RAII object in that function's scope is destroyed, releasing every resource that was acquired. No
@@ -409,43 +406,41 @@ void transfer(Account& from, Account& to, int amount) {
 
 RAII and garbage collection (GC) solve related but different problems:
 
-| Property | RAII | Garbage Collection |
+| Property                      | RAII                                | Garbage Collection                                                         |
 | ----------------------------- | ----------------------------------- | -------------------------------------------------------------------------- |
-| **Deterministic destruction** | Yes — destructor runs at scope exit | No — finalizer runs at GC's discretion |
-| **Resource types** | All (memory, files, sockets, locks) | Memory only (finalizers are unreliable for other resources) |
-| **Performance** | Zero overhead (compile-time) | Runtime overhead (pause times, GC threads) |
-| **Memory leaks** | Impossible with correct RAII | Possible (unreferenced but unreachable objects, reference counting cycles) |
-| **Latency** | Bounded (destructor cost) | Unbounded (GC pause times) |
+| **Deterministic destruction** | Yes — destructor runs at scope exit | No — finalizer runs at GC's discretion                                     |
+| **Resource types**            | All (memory, files, sockets, locks) | Memory only (finalizers are unreliable for other resources)                |
+| **Performance**               | Zero overhead (compile-time)        | Runtime overhead (pause times, GC threads)                                 |
+| **Memory leaks**              | Impossible with correct RAII        | Possible (unreferenced but unreachable objects, reference counting cycles) |
+| **Latency**                   | Bounded (destructor cost)           | Unbounded (GC pause times)                                                 |
 
 RAII is strictly more general than GC. GC only manages memory; RAII manages **any** resource with
 Deterministic cleanup. A GC language like Java still needs `try`-with-resources or `using` blocks
 For non-memory resources (files, sockets, locks). In C++, RAII handles all of these uniformly.
 
-:::info
-The C++ destructor model is what makes RAII possible. Objects with automatic storage
+:::info The C++ destructor model is what makes RAII possible. Objects with automatic storage
 Duration are destroyed in reverse order of construction when the scope exits, whether by normal flow
 Of control or by exception propagation [N4950 §6.7.2]. This is a language guarantee, not a
-Convention.
-:::
+Convention. :::
 
 ## 1.10 RAII Rule of Thumb
 
 **Every resource acquisition should be wrapped in an RAII type.** If you write a raw call to `new`
-`malloc``fopen``socket``pthread_mutex_lock``lock``mmap`Or any other resource acquisition
-Function, ask yourself: "What releases this resource, and when?" If the answer is "a manual call
-Later in the function," you have a potential leak.
+`malloc``fopen``socket``pthread_mutex_lock``lock``mmap`Or any other resource acquisition Function,
+ask yourself: "What releases this resource, and when?" If the answer is "a manual call Later in the
+function," you have a potential leak.
 
 The standard library provides RAII wrappers for most common resources:
 
-| Resource | Raw Acquisition | RAII Wrapper |
-| -------------------- | ------------------------------------ | ------------------------------------------------ |
-| Heap memory | `new``malloc` | `std::unique_ptr``std::shared_ptr`Containers |
-| File descriptors | `fopen``open` | `std::fstream``std::FILE` wrapper |
-| Mutexes | `pthread_mutex_lock``mtx.lock()` | `std::lock_guard``std::scoped_lock` |
-| Dynamic libraries | `dlopen` | `std::unique_ptr` with `dlclose` deleter |
-| Memory mapping | `mmap` | `std::unique_ptr` with `munmap` deleter |
-| Sockets | `socket` | Custom `Socket` class (see §1.5) |
-| Database connections | `sqlite3_open``mysql_real_connect` | Custom connection class (see §1.6) |
+| Resource             | Raw Acquisition                    | RAII Wrapper                                 |
+| -------------------- | ---------------------------------- | -------------------------------------------- |
+| Heap memory          | `new``malloc`                      | `std::unique_ptr``std::shared_ptr`Containers |
+| File descriptors     | `fopen``open`                      | `std::fstream``std::FILE` wrapper            |
+| Mutexes              | `pthread_mutex_lock``mtx.lock()`   | `std::lock_guard``std::scoped_lock`          |
+| Dynamic libraries    | `dlopen`                           | `std::unique_ptr` with `dlclose` deleter     |
+| Memory mapping       | `mmap`                             | `std::unique_ptr` with `munmap` deleter      |
+| Sockets              | `socket`                           | Custom `Socket` class (see §1.5)             |
+| Database connections | `sqlite3_open``mysql_real_connect` | Custom connection class (see §1.6)           |
 
 ## Common Pitfalls
 
@@ -466,8 +461,8 @@ public:
 ```
 
 **Forgetting virtual destructors in polymorphic hierarchies.** If you delete a derived object
-Through a base pointer and the base class destructor is not `virtual`Only the base destructor runs
-— the derived destructor is never called, and derived resources leak [N4950 §11.4.7]:
+Through a base pointer and the base class destructor is not `virtual`Only the base destructor runs —
+the derived destructor is never called, and derived resources leak [N4950 §11.4.7]:
 
 ```cpp
 class Base {

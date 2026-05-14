@@ -1,6 +1,8 @@
 ---
 title: Natural Selection
-description: "Natural Selection — Evidence for Evolution; Hardy-Weinberg Equilibrium (CED Unit 7); Equations; Conditions for Hardy-Weinberg Equilibrium."
+description:
+  'Natural Selection — Evidence for Evolution; Hardy-Weinberg Equilibrium (CED Unit 7); Equations;
+  Conditions for Hardy-Weinberg Equilibrium.'
 date: 2026-04-14
 tags:
   - Biology
@@ -9,6 +11,7 @@ categories:
   - Biology
 slug: natural-selection
 ---
+
 ## Evolution and Natural Selection (CED Units 6-8)
 
 ### Darwin's Theory of Natural Selection
@@ -17,25 +20,27 @@ slug: natural-selection
 2. **Overproduction:** Populations produce more offspring than the environment can support.
 3. **Competition:** Individuals compete for limited resources.
 4. **Differential survival and reproduction:** Individuals with advantageous traits are more likely
- to survive and reproduce (natural selection).
+   to survive and reproduce (natural selection).
 5. **Descent with modification:** Over generations, favorable traits accumulate in the population,
- leading to evolution.
+   leading to evolution.
 
 ### Evidence for Evolution
 
 1. **Fossil record:** Shows chronological sequence of organisms and transitional forms (e.g.,
- Archaeopteryx between dinosaurs and birds).
+   Archaeopteryx between dinosaurs and birds).
 2. **Comparative anatomy:**
- - **Homologous structures:** Same evolutionary origin, different function (e.g., mammalian
- forelimb).
- - **Analogous structures:** Different origin, similar function (e.g., bird wing and insect wing).
- - **Vestigial structures:** Remnants of structures that had a function in ancestors (e.g., human
- appendix, whale pelvis).
+
+- **Homologous structures:** Same evolutionary origin, different function (e.g., mammalian
+  forelimb).
+- **Analogous structures:** Different origin, similar function (e.g., bird wing and insect wing).
+- **Vestigial structures:** Remnants of structures that had a function in ancestors (e.g., human
+  appendix, whale pelvis).
+
 3. **Comparative embryology:** Early embryonic stages of vertebrates are remarkably similar.
 4. **Molecular biology:** DNA and protein sequences show relationships; more similar sequences
- indicate closer evolutionary relationships.
+   indicate closer evolutionary relationships.
 5. **Biogeography:** Geographic distribution of species reflects evolutionary history (e.g., island
- species resemble mainland species).
+   species resemble mainland species).
 
 ## Hardy-Weinberg Equilibrium (CED Unit 7)
 
@@ -151,21 +156,21 @@ Or assortative mating).
 Three types based on the effect on the phenotype distribution:
 
 1. **Directional selection:** Favors one extreme phenotype, shifting the distribution. Example:
- antibiotic resistance in bacteria; larger beak size during drought in Darwin's finches.
+   antibiotic resistance in bacteria; larger beak size during drought in Darwin's finches.
 
 2. **Stabilizing selection:** Favors intermediate phenotypes, reducing variation. Example: human
- birth weight (very low and very high have higher mortality).
+   birth weight (very low and very high have higher mortality).
 
 3. **Disruptive selection:** Favors both extreme phenotypes over intermediate. Example: beak size in
- African seedcracker finches (seeds available are either large or small).
+   African seedcracker finches (seeds available are either large or small).
 
 **Summary table of selection types.**
 
-| Type | Effect on distribution | Example |
+| Type        | Effect on distribution    | Example                     |
 | ----------- | ------------------------- | --------------------------- |
-| Directional | Shifts toward one extreme | Antibiotic resistance |
-| Stabilizing | Narrows around the mean | Human birth weight |
-| Disruptive | Two peaks at extremes | Seedcracker finch beak size |
+| Directional | Shifts toward one extreme | Antibiotic resistance       |
+| Stabilizing | Narrows around the mean   | Human birth weight          |
+| Disruptive  | Two peaks at extremes     | Seedcracker finch beak size |
 
 **Worked Example: Directional selection in Darwin's finches.**
 
@@ -181,22 +186,22 @@ Selection is responsive to environmental changes.
 Random changes in allele frequencies, more pronounced in small populations.
 
 - **Founder effect:** A small group establishes a new population; allele frequencies may differ from
- the source population. Example: Amish population and Ellis-van Creveld syndrome.
+  the source population. Example: Amish population and Ellis-van Creveld syndrome.
 - **Bottleneck effect:** A population is drastically reduced in size; genetic diversity is lost.
- Example: cheetahs have very low genetic diversity due to a past bottleneck.
+  Example: cheetahs have very low genetic diversity due to a past bottleneck.
 
 **Key point:** Genetic drift reduces genetic variation within a population but can increase
 Differences between populations.
 
 **Worked Example: The bottleneck effect.**
 
-A population of 1000 birds has allele frequencies: $p = 0.5$$q = 0.5$. A natural disaster kills
-950 birds, leaving 50 survivors. By chance, the surviving 50 birds have allele frequencies:
+A population of 1000 birds has allele frequencies: $p = 0.5$$q = 0.5$. A natural disaster kills 950
+birds, leaving 50 survivors. By chance, the surviving 50 birds have allele frequencies:
 $p = 0.8$$q = 0.2$.
 
-The population has bounced back to 1000 birds, but the allele frequencies remain $p = 0.8$
-$q = 0.2$ because the survivors passed on their alleles. Genetic diversity has been lost: the
-Frequency of allele $a$ has decreased from 0.5 to 0.2.
+The population has bounced back to 1000 birds, but the allele frequencies remain $p = 0.8$ $q = 0.2$
+because the survivors passed on their alleles. Genetic diversity has been lost: the Frequency of
+allele $a$ has decreased from 0.5 to 0.2.
 
 **Worked Example: The founder effect in the Amish population.**
 
@@ -217,10 +222,10 @@ Movement of alleles between populations through migration of individuals or game
 **Worked Example: Gene flow between two populations of mice.**
 
 Two populations of mice live on opposite sides of a river. Population A has allele frequencies
-$p = 0.9$$q = 0.1$. Population B has $p = 0.3$$q = 0.7$. If a flood allows mice from population
-B to cross to population A and interbreed, gene flow will occur. The allele frequencies in
-Population A will shift towards those of population B (the frequency of allele $a$ will increase).
-Over time, continued gene flow will make the two populations more genetically similar.
+$p = 0.9$$q = 0.1$. Population B has $p = 0.3$$q = 0.7$. If a flood allows mice from population B to
+cross to population A and interbreed, gene flow will occur. The allele frequencies in Population A
+will shift towards those of population B (the frequency of allele $a$ will increase). Over time,
+continued gene flow will make the two populations more genetically similar.
 
 ### Mutations
 
@@ -229,52 +234,51 @@ The ultimate source of new genetic variation.
 - **Point mutations:** Change a single nucleotide (substitution, insertion, deletion).
 - **Chromosomal mutations:** Duplications, inversions, translocations, deletions.
 - Most mutations are neutral or harmful; rare beneficial mutations provide raw material for natural
- selection.
-- The mutation rate is low (approximately $10^{-5}$ to $10^{-6}$ mutations per gene per
- generation), but in large populations with many individuals, mutations accumulate significantly
- over time.
+  selection.
+- The mutation rate is low (approximately $10^{-5}$ to $10^{-6}$ mutations per gene per generation),
+  but in large populations with many individuals, mutations accumulate significantly over time.
 
 ### Sexual Selection
 
 A form of natural selection based on mating success.
 
-- **Intrasexual selection:** Competition within one sex ( males) for access to mates.
- Example: male deer antlers for fighting.
-- **Intersexual selection:** One sex ( females) chooses mates based on preferred traits.
- Example: peacock tail feathers.
+- **Intrasexual selection:** Competition within one sex ( males) for access to mates. Example: male
+  deer antlers for fighting.
+- **Intersexual selection:** One sex ( females) chooses mates based on preferred traits. Example:
+  peacock tail feathers.
 - Sexual selection can lead to the evolution of traits that reduce survival (e.g., a large,
- conspicuous peacock tail attracts predators) because the mating advantage outweighs the survival
- cost.
+  conspicuous peacock tail attracts predators) because the mating advantage outweighs the survival
+  cost.
 
 ## Speciation (CED Unit 7)
 
 ### Species Concepts
 
 - **Biological species concept:** A species is a group of actually or potentially interbreeding
- populations that are reproductively isolated from other such groups (Ernst Mayr).
+  populations that are reproductively isolated from other such groups (Ernst Mayr).
 - **Morphological species concept:** Based on physical characteristics.
 - **Phylogenetic species concept:** Based on evolutionary history and shared derived
- characteristics.
+  characteristics.
 
 ### Reproductive Isolation
 
 **Prezygotic barriers** (prevent mating or fertilization):
 
-| Type | Description | Example |
+| Type                 | Description                          | Example                        |
 | -------------------- | ------------------------------------ | ------------------------------ |
-| Habitat isolation | Different habitats | Lion vs tiger |
-| Temporal isolation | Different breeding seasons/times | Skunks (spring vs fall mating) |
-| Behavioral isolation | Different courtship rituals | Bird songs |
-| Mechanical isolation | Incompatible reproductive structures | Insect genitalia |
-| Gametic isolation | Sperm cannot fertilize egg | Sea urchin species |
+| Habitat isolation    | Different habitats                   | Lion vs tiger                  |
+| Temporal isolation   | Different breeding seasons/times     | Skunks (spring vs fall mating) |
+| Behavioral isolation | Different courtship rituals          | Bird songs                     |
+| Mechanical isolation | Incompatible reproductive structures | Insect genitalia               |
+| Gametic isolation    | Sperm cannot fertilize egg           | Sea urchin species             |
 
 **Postzygotic barriers** (prevent viable, fertile offspring):
 
-| Type | Description | Example |
+| Type                     | Description                                       | Example                      |
 | ------------------------ | ------------------------------------------------- | ---------------------------- |
-| Reduced hybrid viability | Offspring do not survive well | Frog species hybrids |
-| Reduced hybrid fertility | Offspring are sterile | Mule (horse $\times$ donkey) |
-| Hybrid breakdown | First-generation hybrids are fine, but F2 are not | Rice hybrids |
+| Reduced hybrid viability | Offspring do not survive well                     | Frog species hybrids         |
+| Reduced hybrid fertility | Offspring are sterile                             | Mule (horse $\times$ donkey) |
+| Hybrid breakdown         | First-generation hybrids are fine, but F2 are not | Rice hybrids                 |
 
 ### Allopatric Speciation
 
@@ -304,13 +308,12 @@ Speciation without geographic separation. Common in plants through polyploidy.
 
 - **Autopolyploidy:** Duplication of the same genome (e.g., $4n$ from $2n$).
 - **Allopolyploidy:** Combination of genomes from different species (e.g., hybridization followed by
- chromosome doubling).
+  chromosome doubling).
 
 ### Adaptive Radiation
 
-Rapid evolution of many species from a single ancestral species, when new ecological
-Niches become available. Examples: Darwin's finches on the Galapagos Islands, Hawaiian
-Honeycreepers.
+Rapid evolution of many species from a single ancestral species, when new ecological Niches become
+available. Examples: Darwin's finches on the Galapagos Islands, Hawaiian Honeycreepers.
 
 ## Phylogeny and Systematics (CED Unit 8)
 
@@ -346,115 +349,115 @@ Time since divergence: $12 / 2 = 6$ million years.
 ## Origin of Life (CED Unit 8)
 
 1. **Abiotic synthesis of organic molecules:** Miller-Urey experiment (1953) demonstrated that
- organic molecules (amino acids) can form under conditions simulating early Earth.
+   organic molecules (amino acids) can form under conditions simulating early Earth.
 2. **Formation of protobionts:** Liposomes and coacervates show that abiotically produced molecules
- can self-assemble into membrane-bound structures.
+   can self-assemble into membrane-bound structures.
 3. **Origin of self-replicating molecules:** RNA may have been the first genetic material ("RNA
- world" hypothesis) because RNA can both store information and catalyze reactions (ribozymes).
+   world" hypothesis) because RNA can both store information and catalyze reactions (ribozymes).
 
 ## Common Pitfalls
 
 1. **Confusing homologous and analogous structures.** Homologous structures share evolutionary
- origin; analogous structures share function but not origin.
+   origin; analogous structures share function but not origin.
 2. **Misapplying Hardy-Weinberg.** The conditions are rarely met in nature. The value is as a null
- model -- deviations indicate evolution is occurring.
+   model -- deviations indicate evolution is occurring.
 3. **Confusing genetic drift with natural selection.** Drift is random; selection is non-random.
- Both change allele frequencies.
+   Both change allele frequencies.
 4. **Thinking evolution has a direction or goal.** Evolution is not progressive; it adapts
- populations to their current environment.
+   populations to their current environment.
 5. **Confusing prezygotic and postzygotic barriers.** Prezygotic prevents the zygote from forming;
- postzygotic reduces fitness after the zygote forms.
+   postzygotic reduces fitness after the zygote forms.
 6. **Misidentifying the most recent common ancestor** on a phylogenetic tree. Rotate nodes mentally
- -- the most recent common ancestor is the deepest node shared by the two taxa.
+   -- the most recent common ancestor is the deepest node shared by the two taxa.
 7. **Thinking individuals evolve.** Populations evolve, not individuals. Natural selection acts on
- phenotypic variation among individuals.
+   phenotypic variation among individuals.
 8. **Forgetting that Hardy-Weinberg requires the population to be large.** In small populations,
- genetic drift causes allele frequencies to change even without selection.
+   genetic drift causes allele frequencies to change even without selection.
 9. **Confusing the founder effect and the bottleneck effect.** The founder effect involves a small
- group leaving a larger population; the bottleneck effect involves a drastic reduction in an
- existing population.
+   group leaving a larger population; the bottleneck effect involves a drastic reduction in an
+   existing population.
 10. **Thinking vestigial structures have no function at all.** Some vestigial structures may have
- been co-opted for new functions (exaptation). For example, the penguin's flipper is a modified
- wing that is now used for swimming rather than flying.
+    been co-opted for new functions (exaptation). For example, the penguin's flipper is a modified
+    wing that is now used for swimming rather than flying.
 11. **Assuming all mutations are harmful.** While most mutations are neutral or harmful, beneficial
- mutations provide the raw material for evolution. A mutation that is harmful in one environment
- may be beneficial in another.
+    mutations provide the raw material for evolution. A mutation that is harmful in one environment
+    may be beneficial in another.
 
 ## Practice Questions
 
 1. In a population of 5000, the frequency of the dominant allele for a trait is 0.7. How many
- individuals would you expect to be heterozygous? How many would show the recessive phenotype?
+   individuals would you expect to be heterozygous? How many would show the recessive phenotype?
 
 2. A population of 200 deer is isolated on an island. A hurricane kills 150 deer randomly. Is this
- an example of the founder effect or the bottleneck effect? Explain.
+   an example of the founder effect or the bottleneck effect? Explain.
 
 3. Explain how directional, stabilizing, and disruptive selection differ, and give an example of
- each.
+   each.
 
 4. Describe three prezygotic and three postzygotic barriers to reproduction.
 
 5. In a Hardy-Weinberg population, $16\%$ of individuals show the recessive phenotype. What
- percentage of the population is heterozygous?
+   percentage of the population is heterozygous?
 
 6. Explain why the biological species concept cannot be applied to organisms that reproduce
- asexually.
+   asexually.
 
 7. Compare allopatric and sympatric speciation. How does polyploidy contribute to sympatric
- speciation in plants?
+   speciation in plants?
 
 8. Draw a phylogenetic tree showing the evolutionary relationships among amphibians, reptiles,
- birds, and mammals, and identify which groups form monophyletic clades.
+   birds, and mammals, and identify which groups form monophyletic clades.
 
 9. A population of beetles has the following genotype frequencies: AA = 0.49, Aa = 0.42, aa = 0.09.
- Is this population in Hardy-Weinberg equilibrium? Show your calculations.
+   Is this population in Hardy-Weinberg equilibrium? Show your calculations.
 
 10. Explain how the founder effect can lead to a high frequency of a genetic disorder in a small,
- isolated population.
+    isolated population.
 
 11. Describe the conditions under which allopatric speciation is most likely to occur and explain
- why each condition is important.
+    why each condition is important.
 
 12. Explain why vestigial structures provide evidence for evolution.
 
 13. A researcher compares the DNA sequences of a gene in four species. Species A and B differ by 4
- substitutions; species A and C differ by 10; species B and C differ by 6. Draw a phylogenetic
- tree showing the relationships among these species.
+    substitutions; species A and C differ by 10; species B and C differ by 6. Draw a phylogenetic
+    tree showing the relationships among these species.
 
 14. Explain how sexual selection can lead to the evolution of traits that reduce survival (e.g., the
- peacock's tail).
+    peacock's tail).
 
 15. Describe the Miller-Urey experiment and explain its significance for the origin of life.
 
 16. A population in Hardy-Weinberg equilibrium has $p = 0.8$ for a gene with two alleles. After one
- generation of selection against the homozygous recessive genotype (fitness = 0.5 for aa), what
- are the new allele frequencies?
+    generation of selection against the homozygous recessive genotype (fitness = 0.5 for aa), what
+    are the new allele frequencies?
 
 17. Explain why genetic drift has a greater effect in small populations than in large populations.
 
 18. Compare the biological species concept with the phylogenetic species concept, discussing the
- advantages and disadvantages of each.
+    advantages and disadvantages of each.
 
 19. Explain how antibiotic resistance in bacteria is an example of natural selection, including the
- role of mutation and selection pressure.
+    role of mutation and selection pressure.
 
 20. A new island is formed by a volcanic eruption. Over time, plants and animals colonize the
- island. Describe how adaptive radiation could lead to speciation on this island.
+    island. Describe how adaptive radiation could lead to speciation on this island.
 
 21. Explain the concept of the molecular clock and describe two limitations of using molecular data
- to estimate divergence times.
+    to estimate divergence times.
 
 22. Describe how hybrid zones form and explain the two possible outcomes for hybridizing populations
- (reinforcement and fusion).
+    (reinforcement and fusion).
 
 23. Explain why genetic variation is essential for natural selection and describe three mechanisms
- that generate genetic variation.
+    that generate genetic variation.
 
 24. A population of 10,000 individuals has the following genotype counts: AA = 6400, Aa = 3200, aa
- = 400. Calculate the allele frequencies and test whether the population is in Hardy-Weinberg
- equilibrium using a chi-squared test.
+    = 400. Calculate the allele frequencies and test whether the population is in Hardy-Weinberg
+    equilibrium using a chi-squared test.
 
 25. Explain how the RNA world hypothesis accounts for the origin of both genetic information storage
- and catalytic activity in early life.
+    and catalytic activity in early life.
 
 ## Review: Evidence for Evolution -- Molecular Biology
 
@@ -522,8 +525,8 @@ Overhunting). The surviving individuals may not represent the genetic diversity 
 Population. Alleles that were rare may become common or be lost entirely.
 
 **Founder effect:** A small group of individuals colonises a new area. The allele frequencies in the
-New population may differ significantly from the source population because the founders
-Carried only a subset of the total genetic variation.
+New population may differ significantly from the source population because the founders Carried only
+a subset of the total genetic variation.
 
 **Why drift matters more in small populations:** In a population of 10,000, the random loss of one
 Individual changes allele frequencies by only 0.01%. In a population of 10, the loss of one
@@ -544,15 +547,15 @@ A **hybrid zone** is a region where two previously isolated populations meet and
 Producing hybrid offspring. There are several possible outcomes:
 
 1. **Reinforcement:** Hybrid offspring have reduced fitness. Over time, natural selection favours
- prezygotic barriers that prevent interbreeding, strengthening reproductive isolation and
- completing speciation.
+   prezygotic barriers that prevent interbreeding, strengthening reproductive isolation and
+   completing speciation.
 
 2. **Fusion:** The two populations interbreed freely, and the differences between them are eroded.
- The populations merge into a single species.
+   The populations merge into a single species.
 
 3. **Stability:** Hybrid offspring continue to be produced in a narrow zone, but the two populations
- remain distinct outside the hybrid zone. This occurs when hybrids have lower fitness than pure
- individuals in either parent population.
+   remain distinct outside the hybrid zone. This occurs when hybrids have lower fitness than pure
+   individuals in either parent population.
 
 ## Review: Coevolution
 
@@ -617,8 +620,8 @@ Major morphological change.
 
 The universality of the genetic code is among the strongest evidence for common ancestry. In nearly
 All organisms, the same codons specify the same amino acids. For example, AUG codes for methionine
-In bacteria, plants, fungi, and humans. This shared genetic code is most explained by common
-Descent from a single ancestral organism.
+In bacteria, plants, fungi, and humans. This shared genetic code is most explained by common Descent
+from a single ancestral organism.
 
 **Shared endogenous retroviruses (ERVs):** ERVs are viral sequences that have been inserted into the
 Germ line DNA and are inherited by offspring. If two species share an ERV at the same chromosomal
@@ -650,13 +653,13 @@ Estimating divergence times that complements the fossil record.
 - The mutation rate is approximately constant over time and across lineages.
 - Most mutations are selectively neutral (neither beneficial nor harmful).
 - The rate of neutral mutation can be estimated from the fossil record or from known divergence
- events.
+  events.
 
 **Limitations of the molecular clock:**
 
 - Mutation rates can vary between lineages (e.g., rodents have faster mutation rates than primates).
 - Different genes evolve at different rates (e.g., non-coding regions evolve faster than coding
- regions).
+  regions).
 - Natural selection can accelerate or decelerate the rate of sequence change in specific genes.
 - Calibration relies on the fossil record, which is itself incomplete.
 
@@ -689,26 +692,26 @@ Origin but possibly different function).
 **Examples of convergent evolution:**
 
 - **Wings:** Insects, birds, and bats all have wings for flight, but the wings evolved
- independently. Insect wings are extensions of the exoskeleton, bird wings are modified forelimbs
- with feathers, and bat wings are modified forelimbs with a membrane of skin.
+  independently. Insect wings are extensions of the exoskeleton, bird wings are modified forelimbs
+  with feathers, and bat wings are modified forelimbs with a membrane of skin.
 - **Streamlined body shape:** Sharks (fish), dolphins (mammals), and ichthyosaurs (extinct reptiles)
- all evolved a similar torpedo-shaped body for efficient swimming in aquatic environments.
+  all evolved a similar torpedo-shaped body for efficient swimming in aquatic environments.
 - **Camera-type eyes:** Cephalopod molluscs (e.g., octopuses) and vertebrates both evolved complex
- image-forming eyes, but the structures developed independently -- vertebrate eyes have an inverted
- retina, while cephalopod eyes do not.
+  image-forming eyes, but the structures developed independently -- vertebrate eyes have an inverted
+  retina, while cephalopod eyes do not.
 - **Cactus and euphorbia:** Cacti (Americas) and euphorbias (Africa) both evolved succulent stems,
- spines, and CAM photosynthesis independently as adaptations to arid environments.
+  spines, and CAM photosynthesis independently as adaptations to arid environments.
 
 **Distinguishing homology from analogy:**
 
 To determine whether similar structures are homologous or analogous, biologists examine:
 
 - **Anatomical structure:** Homologous structures share the same underlying anatomy (e.g., the
- pentadactyl limb in human arms, whale flippers, and bat wings). Analogous structures may look
- superficially similar but have different internal structures.
+  pentadactyl limb in human arms, whale flippers, and bat wings). Analogous structures may look
+  superficially similar but have different internal structures.
 - **Embryological development:** Homologous structures develop from the same embryonic tissues.
-- **Genetic basis:** Homologous traits are controlled by the same or similar genes, while
- analogous traits arise from different genes.
+- **Genetic basis:** Homologous traits are controlled by the same or similar genes, while analogous
+  traits arise from different genes.
 
 **Speciation and reproductive isolation:**
 
@@ -716,11 +719,11 @@ Speciation occurs when populations of a single species become reproductively iso
 The point where they can no longer produce fertile offspring. Reproductive isolation can be:
 
 - **Pre-zygotic:** Geographic isolation, temporal isolation (different breeding seasons),
- behavioural isolation (different courtship rituals), mechanical isolation (incompatible
- reproductive structures), or gametic isolation (sperm and egg cannot fuse).
+  behavioural isolation (different courtship rituals), mechanical isolation (incompatible
+  reproductive structures), or gametic isolation (sperm and egg cannot fuse).
 - **Post-zygotic:** Hybrid inviability (hybrid offspring do not survive), hybrid sterility (hybrid
- offspring are sterile, e.g., mules), or hybrid breakdown (first-generation hybrids are fertile but
- subsequent generations are not).
+  offspring are sterile, e.g., mules), or hybrid breakdown (first-generation hybrids are fertile but
+  subsequent generations are not).
 
 **Allopatric speciation example:**
 
@@ -820,8 +823,8 @@ Divergence. The two species diverged approximately 1.33 million years ago.
 
 A mainland population of birds has allele frequencies $p(A) = 0.8$$q(a) = 0.2$ for a gene
 Controlling beak shape. Five birds colonise a new island. By chance, the founders have the
-Genotypes: $AA$$Aa$$Aa$$aa$$Aa$. Calculate the allele frequencies in the founder population.
-Has genetic drift increased or decreased the frequency of allele $a$?
+Genotypes: $AA$$Aa$$Aa$$aa$$Aa$. Calculate the allele frequencies in the founder population. Has
+genetic drift increased or decreased the frequency of allele $a$?
 
 </details>
 
@@ -867,9 +870,9 @@ Barrier. Even if fertilisation occurs (as in the artificial experiment), the hyb
 Offspring.
 
 These two species are likely to remain distinct because they have both prezygotic and postzygotic
-Barriers. The temporal isolation prevents interbreeding in nature , and even when
-Hybrids are produced (artificially), they cannot contribute genes back to either parent population.
-The combination of barriers makes gene flow between the species extremely unlikely.
+Barriers. The temporal isolation prevents interbreeding in nature , and even when Hybrids are
+produced (artificially), they cannot contribute genes back to either parent population. The
+combination of barriers makes gene flow between the species extremely unlikely.
 
 </details>
 

@@ -1,11 +1,14 @@
 ---
 title: Undervolting and Overclocking
-description: "Undervolting and Overclocking — Undervolting; Purpose; Implementation; Voltage Basics with worked examples and exam-style questions."
+description:
+  'Undervolting and Overclocking — Undervolting; Purpose; Implementation; Voltage Basics with worked
+  examples and exam-style questions.'
 date: 2025-06-12T16:37:43.317Z
 categories:
   - general
 slug: undervolting
 ---
+
 ## Undervolting
 
 Undervolting is the process of reducing the operating voltage (Vcore for CPUs and Vddc for GPUs)
@@ -23,23 +26,23 @@ Voltage supplied, and hence reducing cooling required.
 1. Update BIOS/UEFI to latest stable version
 2. Backup BIOS profile
 3. Install monitoring tool (HWiNFO64) and stress testers (Cinebench R23, y-cruncher, MemTest86 and
- Prime95)
+   Prime95)
 4. Press `Del` on boot when the logo can be seen to enter BIOS
 5. Enter advance mode, this can be different depending on the manufacture
 6. Find Core Voltage Offset and set to $-0.075V$
 7. Save BIOS changes (`F10`)
 8. If the system fail to boot
- 1. Wait for 3 auto recovery attempts
- 2. Clear CMOS by powering off, removing the battery for 60s or short JBAT1 pins
-9. If the system successfully boot, run the following test, any failure, change the voltage offset
- by $0.010 V$
-10. Smoke test with cinebench R23 multicore
-11. Run HWiNFO with option sensor only, and click logging start then follow the instructions.
-12. Run y-chruncher with VST for 15 minuites
-13. Run Prime95 for 60 minutes, setting `Test=FFT,MinFFT=4,MaxFFT=4096,RunFFT=1,Memory=90,Time=60`
-14. (Optional) Test the idel stability by `Start-Sleep -Seconds 7200` in powershell for 2 hours.
-15. Check HWiNFO logs for WHEA errors, if any increase voltage.
-16. If no problem arrises, increase the core voltage offset by $0.010V$ again for stability
+9. Wait for 3 auto recovery attempts
+10. Clear CMOS by powering off, removing the battery for 60s or short JBAT1 pins
+11. If the system successfully boot, run the following test, any failure, change the voltage offset
+    by $0.010 V$
+12. Smoke test with cinebench R23 multicore
+13. Run HWiNFO with option sensor only, and click logging start then follow the instructions.
+14. Run y-chruncher with VST for 15 minuites
+15. Run Prime95 for 60 minutes, setting `Test=FFT,MinFFT=4,MaxFFT=4096,RunFFT=1,Memory=90,Time=60`
+16. (Optional) Test the idel stability by `Start-Sleep -Seconds 7200` in powershell for 2 hours.
+17. Check HWiNFO logs for WHEA errors, if any increase voltage.
+18. If no problem arrises, increase the core voltage offset by $0.010V$ again for stability
 
 #### GPU
 
@@ -87,12 +90,12 @@ Changed.
 LLC counteracts Vdroop by making the VRM more aggressive in maintaining the target voltage under
 Load. LLC is configured on a scale (e.g., Level 1–7, or Auto/Medium/High/Extreme).
 
-| LLC Level | Behavior | Use Case |
+| LLC Level       | Behavior                                                | Use Case                                |
 | --------------- | ------------------------------------------------------- | --------------------------------------- |
-| Low (1–2) | Heavy Vdroop, large delta between idle and load voltage | Stock operation, maximum safety |
-| Medium (3–5) | Moderate Vdroop, reasonable compensation | Moderate overclocking, daily use |
-| High (6–7) | Minimal Vdroop, voltage nearly flat across loads | Aggressive overclocking |
-| Extreme / Ultra | Negative Vdroop (voltage increases under load) | **Not recommended** — risk of overshoot |
+| Low (1–2)       | Heavy Vdroop, large delta between idle and load voltage | Stock operation, maximum safety         |
+| Medium (3–5)    | Moderate Vdroop, reasonable compensation                | Moderate overclocking, daily use        |
+| High (6–7)      | Minimal Vdroop, voltage nearly flat across loads        | Aggressive overclocking                 |
+| Extreme / Ultra | Negative Vdroop (voltage increases under load)          | **Not recommended** — risk of overshoot |
 
 **Warning:** Setting LLC too high eliminates the safety margin that Vdroop provides. On load
 Transitions (load → idle), the voltage can overshoot the VID by a significant margin. This is
@@ -103,14 +106,14 @@ Level 4 or 5 provides a good balance.
 
 Exceeding these limits can cause electromigration and permanent silicon degradation:
 
-| Platform | Maximum Safe Vcore | Notes |
+| Platform                             | Maximum Safe Vcore | Notes                                                |
 | ------------------------------------ | ------------------ | ---------------------------------------------------- |
-| Intel 12th Gen (Alder Lake) | 1.40 V | Long-term degradation above 1.35 V |
-| Intel 13th Gen (Raptor Lake) | 1.40 V | Known Vmin Shift Instability issue; keep &lt; 1.35 V |
-| Intel 14th Gen (Raptor Lake Refresh) | 1.40 V | Same Vmin Shift concern |
-| AMD Zen 3 (Ryzen 5000) | 1.35 V | Curve Optimizer recommended over fixed offset |
-| AMD Zen 4 (Ryzen 7000) | 1.30 V | DDR5 memory controller is voltage-sensitive |
-| AMD Zen 5 (Ryzen 9000) | 1.30 V | Similar to Zen 4 |
+| Intel 12th Gen (Alder Lake)          | 1.40 V             | Long-term degradation above 1.35 V                   |
+| Intel 13th Gen (Raptor Lake)         | 1.40 V             | Known Vmin Shift Instability issue; keep &lt; 1.35 V |
+| Intel 14th Gen (Raptor Lake Refresh) | 1.40 V             | Same Vmin Shift concern                              |
+| AMD Zen 3 (Ryzen 5000)               | 1.35 V             | Curve Optimizer recommended over fixed offset        |
+| AMD Zen 4 (Ryzen 7000)               | 1.30 V             | DDR5 memory controller is voltage-sensitive          |
+| AMD Zen 5 (Ryzen 9000)               | 1.30 V             | Similar to Zen 4                                     |
 
 These are conservative long-term limits. Short bursts above these values (transient spikes) are
 Normal and handled by the CPU's internal protections. The concern is sustained voltage at or above
@@ -143,20 +146,20 @@ Communicating with the CPU's Integrated Voltage Regulator (IVR) to apply voltage
 On 12th Gen and later Intel CPUs, P-Cores (Performance) and E-Cores (Efficiency) have separate
 Voltage domains. ThrottleStop allows you to set independent offsets for each:
 
-- **P-Core Offset:** The P-Cores do the heavy lifting and need less aggressive undervolts.
- Start at -50 mV.
+- **P-Core Offset:** The P-Cores do the heavy lifting and need less aggressive undervolts. Start at
+  -50 mV.
 - **E-Core Offset:** The E-Cores are more tolerant of lower voltage. You may be able to push these
- to -80 mV or beyond.
+  to -80 mV or beyond.
 
 ### ThrottleStop Additional Settings
 
 - **Disable Speed Shift (SpeedStep Technology = Off):** Some users report more consistent
- undervolting behavior with Speed Shift disabled. This prevents the CPU from rapidly changing
- P-states, which can cause voltage transitions that trigger instability.
+  undervolting behavior with Speed Shift disabled. This prevents the CPU from rapidly changing
+  P-states, which can cause voltage transitions that trigger instability.
 - **Set Power Limits:** ThrottleStop can override the OEM's PL1 and PL2 power limits. This is useful
- when the laptop manufacturer has set overly conservative limits.
+  when the laptop manufacturer has set overly conservative limits.
 - **Enable "BD PROCHOT":** Controls the external PROCHOT signal. Disabling this can prevent the
- laptop from throttling when the charger gets warm, but it also removes a safety mechanism.
+  laptop from throttling when the charger gets warm, but it also removes a safety mechanism.
 
 ### Intel XTU Alternative
 
@@ -186,9 +189,9 @@ Frequencies at lower voltage.
 
 - **Negative values** (e.g., -20) = undervolting (lower voltage, same frequency)
 - **Positive values** (e.g., +20) = overvolting (higher voltage, same frequency) — used to support
- higher overclocks
+  higher overclocks
 - **Units:** The Curve Optimizer is measured in steps, where each step is approximately 5 mV. A
- value of -20 corresponds to roughly -100 mV.
+  value of -20 corresponds to roughly -100 mV.
 
 ### Applying Curve Optimizer
 
@@ -216,19 +219,19 @@ This is time-consuming but can yield better results than a uniform all-core offs
 
 AMD's power limits control how much power the CPU is allowed to draw:
 
-| Limit | Full Name | Description |
+| Limit | Full Name                 | Description                  |
 | ----- | ------------------------- | ---------------------------- |
-| PPT | Package Power Tracking | Total socket power in watts |
-| TDC | Thermal Design Current | Sustained current limit (A) |
-| EDC | Electrical Design Current | Peak/turbo current limit (A) |
+| PPT   | Package Power Tracking    | Total socket power in watts  |
+| TDC   | Thermal Design Current    | Sustained current limit (A)  |
+| EDC   | Electrical Design Current | Peak/turbo current limit (A) |
 
-For undervolting, you do not need to change these. However, if you are trying to reduce
-Thermals on a laptop or SFF build, lowering the PPT can force the CPU to boost less aggressively,
-Which reduces temperatures at the cost of peak performance.
+For undervolting, you do not need to change these. However, if you are trying to reduce Thermals on
+a laptop or SFF build, lowering the PPT can force the CPU to boost less aggressively, Which reduces
+temperatures at the cost of peak performance.
 
 - **Stock PPT values:** Varies by SKU. A Ryzen 9 7950X has a 170 W TDP with 230 W PPT.
 - **Reduced PPT example:** Setting PPT to 120 W on a 170 W CPU will reduce multi-core performance by
- 10–20% but significantly improve thermals.
+  10–20% but significantly improve thermals.
 
 ### AMD Overclocking: PBO (Precision Boost Overdrive)
 
@@ -256,10 +259,10 @@ Be done by adjusting the base clock (BCLK), multiplier, or both.
 Modern CPUs have two ways to increase frequency:
 
 - **Multiplier:** The CPU's internal clock multiplier. On unlocked CPUs (Intel K-series, AMD Black
- Edition / Ryzen), this is freely adjustable. Changing the multiplier only affects CPU frequency.
+  Edition / Ryzen), this is freely adjustable. Changing the multiplier only affects CPU frequency.
 - **BCLK (Base Clock):** The reference clock that drives the CPU, memory, PCIe, and DMI/UPI
- interconnects. Increasing BCLK overclocks everything simultaneously. This is more complex and
- risky because it can destabilize PCIe devices, storage controllers, and memory.
+  interconnects. Increasing BCLK overclocks everything simultaneously. This is more complex and
+  risky because it can destabilize PCIe devices, storage controllers, and memory.
 
 **Recommendation:** Always use multiplier overclocking when possible. BCLK overclocking should only
 Be attempted when you have exhausted multiplier headroom and understand the risks to other
@@ -268,12 +271,14 @@ Subsystems.
 ### Intel CPU Overclocking
 
 1. Enter BIOS and enable "Overclocking" or "XMP" mode (required to unlock multiplier settings on
- some boards).
+   some boards).
 2. Set all-core multiplier to a target value (e.g., 50x for 5.0 GHz).
 3. Set a fixed Vcore or adaptive voltage:
- - **Fixed Vcore:** Set manually (e.g., 1.28 V). Simple but wastes power at idle.
- - **Adaptive Voltage:** Set an offset or target voltage with a negative offset. More power
- efficient but harder to stabilize.
+
+- **Fixed Vcore:** Set manually (e.g., 1.28 V). Simple but wastes power at idle.
+- **Adaptive Voltage:** Set an offset or target voltage with a negative offset. More power efficient
+  but harder to stabilize.
+
 4. Set LLC to Level 4–5.
 5. Save, boot, and stress test with Prime95 Small FFTs.
 6. If stable for 30 minutes, try increasing the multiplier by 1.
@@ -293,7 +298,7 @@ Workloads.
 For Zen 2 / Zen 3 / Zen 4:
 
 1. The recommended approach is to **enable PBO with a negative Curve Optimizer offset** rather than
- setting a fixed frequency.
+   setting a fixed frequency.
 2. If you insist on manual overclocking, disable PBO and set a fixed frequency and voltage.
 3. Start with a conservative target (e.g., 100 MHz above stock all-core boost).
 4. Set a fixed Vcore and LLC level.
@@ -318,7 +323,7 @@ BCLK overclocking is an advanced technique that increases the reference clock fr
 
 - PCIe devices (GPU, NVMe SSD, network cards) can become unstable if the BCLK is too high.
 - NVMe SSDs can corrupt data if the PCIe link becomes unstable. **Back up your data before
- attempting BCLK overclocking.**
+  attempting BCLK overclocking.**
 - Some platforms (Intel 12th Gen+) have a fixed BCLK and do not support BCLK overclocking.
 
 ### When to Stop Overclocking
@@ -365,12 +370,12 @@ Try:
 Memory timings are specified as a series of numbers (e.g., 16-18-18-38). These represent delays
 Measured in clock cycles:
 
-| Timing | Name | Description |
+| Timing   | Name                | Description                                                 |
 | -------- | ------------------- | ----------------------------------------------------------- |
-| CL / tCL | CAS Latency | Delay between a read command and data availability |
-| tRCD | RAS to CAS Delay | Delay between activating a row and reading/writing a column |
-| tRP | RAS Precharge | Delay between precharging one row and activating another |
-| tRAS | Active to Precharge | Minimum time a row must remain active before precharging |
+| CL / tCL | CAS Latency         | Delay between a read command and data availability          |
+| tRCD     | RAS to CAS Delay    | Delay between activating a row and reading/writing a column |
+| tRP      | RAS Precharge       | Delay between precharging one row and activating another    |
+| tRAS     | Active to Precharge | Minimum time a row must remain active before precharging    |
 
 Lower numbers = better performance. Tightening timings is more difficult than increasing frequency
 But can yield similar or better performance gains in latency-sensitive workloads.
@@ -381,21 +386,21 @@ Beyond the primary timings (CL-tRCD-tRP-tRAS), there are secondary and tertiary 
 Performance:
 
 - **tRC** (Row Cycle Time): Related to tRAS + tRP. Often auto-calculated but worth tightening
- manually.
+  manually.
 - **tFAW** (Four Activate Window): Minimum time between four activate commands. Important for
- four-DIMM configurations.
+  four-DIMM configurations.
 - **tRFC** (Refresh Cycle Time): Time to complete a DRAM refresh cycle. Very long on DDR5; can often
- be tightened significantly.
+  be tightened significantly.
 - **tREFI** (Refresh Interval): Time between refresh cycles. Increasing this improves performance
- but may cause data errors if set too high.
+  but may cause data errors if set too high.
 
 ### DDR4 vs. DDR5 Considerations
 
 - **DDR4:** Mature platform, extensive tuning guides available. Sweet spot for Ryzen 3000/5000 is
- 3600 MT/s with tight timings (CL14–CL16).
+  3600 MT/s with tight timings (CL14–CL16).
 - **DDR5:** Higher default speeds but much looser timings. The memory controller on AMD Zen 4 and
- Intel 13th/14th Gen handles DDR5 well up to 6000–6400 MT/s. Beyond 6400 MT/s, the memory
- controller becomes the bottleneck, especially with two DIMMs populated.
+  Intel 13th/14th Gen handles DDR5 well up to 6000–6400 MT/s. Beyond 6400 MT/s, the memory
+  controller becomes the bottleneck, especially with two DIMMs populated.
 
 ### Memory Stress Testing
 
@@ -403,11 +408,11 @@ After any memory frequency or timing change, run these tests:
 
 1. **MemTest86** (bootable): Run at least 4 passes. This tests memory without OS interference.
 2. **TestMem5 / TM5** (Windows): Run the "Extreme by Anta777" or "1usmus" config for 30–60 minutes.
- Catches timing instability that MemTest86 may miss.
+   Catches timing instability that MemTest86 may miss.
 3. **Karhu RAM Test** (Windows, paid): The most thorough Windows-based memory tester. Run for at
- least 3–4 cycles. Expensive but worth it if you are serious about memory tuning.
+   least 3–4 cycles. Expensive but worth it if you are serious about memory tuning.
 4. **y-cruncher:** Run a memory-intensive test (e.g., Pi computation). Catches instability under
- real workloads.
+   real workloads.
 
 ---
 
@@ -422,13 +427,13 @@ Data corruption.
 Follow this order after any tuning change:
 
 1. **Quick smoke test:** Cinebench R23 multi-core, 1 run. Takes 10 minutes. Catches gross
- instability.
+   instability.
 2. **Short stress test:** y-cruncher VST, 15 minutes. Catches moderate instability.
 3. **Extended stress test:** Prime95 Small FFTs, 60 minutes. Catches thermal and voltage
- instability.
+   instability.
 4. **Memory test:** MemTest86, 4+ passes. Catches memory-specific instability.
 5. **Idle test:** Leave the system idle for 2 hours with HWiNFO64 logging. Catches C-state
- instability (system crashes or freezes when idle).
+   instability (system crashes or freezes when idle).
 
 ### Prime95 Configuration
 
@@ -439,9 +444,9 @@ Test=FFT, MinFFT=4, MaxFFT=4096, RunFFT=1, Memory=90, Time=60
 ```
 
 - **Small FFTs (FFT=4–4096):** Stresses the CPU with data that fits in L1/L2 cache. Generates
- maximum heat. Use this for thermal testing.
+  maximum heat. Use this for thermal testing.
 - **Blend (large FFTs, high memory):** Stresses both CPU and memory. Use this for overall system
- stability.
+  stability.
 - **Run time:** 60 minutes is the minimum. For production systems, run overnight (8+ hours).
 
 ### OCCT Configuration
@@ -449,21 +454,21 @@ Test=FFT, MinFFT=4, MaxFFT=4096, RunFFT=1, Memory=90, Time=60
 OCCT is particularly good at catching instability that Prime95 misses:
 
 - **OCCT CPU (Small Data Set, AUTO):** Similar to Prime95 Small FFTs but uses a different stress
- algorithm. Run for 30 minutes.
+  algorithm. Run for 30 minutes.
 - **OCCT CPU (Large Data Set):** Tests with data larger than L3 cache, stressing the memory
- controller. Run for 30 minutes.
+  controller. Run for 30 minutes.
 - **OCCT Memory:** Dedicated memory stress test. Run for 60 minutes after any timing or frequency
- change.
+  change.
 
 ### Interpreting Results
 
-| Symptom | Likely Cause | Fix |
+| Symptom                               | Likely Cause                             | Fix                                       |
 | ------------------------------------- | ---------------------------------------- | ----------------------------------------- |
-| Immediate crash or BSOD on test start | Voltage too low or settings incompatible | Increase voltage or revert changes |
-| Crash after 5–30 minutes | Marginal stability, near the edge | Increase voltage by 10–20 mV |
-| Crash after 1–4 hours | Thermal throttling or VRM issues | Check temperatures, improve cooling |
-| WHEA errors with no crash | Silent instability, data corruption risk | Increase voltage by 10 mV, retest |
-| Crash only when idle | C-state instability | Increase offset voltage, disable C-states |
+| Immediate crash or BSOD on test start | Voltage too low or settings incompatible | Increase voltage or revert changes        |
+| Crash after 5–30 minutes              | Marginal stability, near the edge        | Increase voltage by 10–20 mV              |
+| Crash after 1–4 hours                 | Thermal throttling or VRM issues         | Check temperatures, improve cooling       |
+| WHEA errors with no crash             | Silent instability, data corruption risk | Increase voltage by 10 mV, retest         |
+| Crash only when idle                  | C-state instability                      | Increase offset voltage, disable C-states |
 
 ---
 
@@ -488,7 +493,7 @@ For real-time monitoring during benchmarks and games:
 
 1. Install RivaTuner Statistics Server (included with MSI Afterburner).
 2. Configure the OSD to display CPU temperature, GPU temperature, CPU power, GPU power, frame rate,
- and 1% low frame times.
+   and 1% low frame times.
 3. Toggle OSD with the hotkey (default: Ctrl+Shift+O).
 
 ### Thermal Management
@@ -496,15 +501,15 @@ For real-time monitoring during benchmarks and games:
 If temperatures are too high, address these in order:
 
 1. **Repaste the CPU/GPU.** Thermal paste degrades over time. Replacing it with a quality paste
- (Thermal Grizzly Kryonaut, NT-H2, or SYY-157) can drop temperatures by 5–15 °C.
+   (Thermal Grizzly Kryonaut, NT-H2, or SYY-157) can drop temperatures by 5–15 °C.
 2. **Improve case airflow.** Ensure intake fans provide cool air and exhaust fans remove hot air. A
- single fan configuration is rarely adequate for tuned systems.
+   single fan configuration is rarely adequate for tuned systems.
 3. **Undervolt.** This is the most effective way to reduce temperatures without sacrificing
- performance.
+   performance.
 4. **Reduce power limits.** Lowering PPT/PL2 reduces the maximum power draw, which directly reduces
- temperatures.
+   temperatures.
 5. **Upgrade cooling.** A better cooler (larger tower heatsink, liquid cooling, or a laptop cooling
- pad) may be necessary if the above steps are insufficient.
+   pad) may be necessary if the above steps are insufficient.
 
 ---
 
@@ -586,7 +591,7 @@ Typical results:
 ### NVIDIA GPU Overclocking
 
 1. After undervolting (to establish a thermal baseline), increase the core clock offset in 10–15 MHz
- increments.
+   increments.
 2. Test with Superposition or 3DMark Time Spy after each increment.
 3. When artifacts or crashes appear, reduce the offset by 15–20 MHz.
 4. Optionally, increase the memory clock offset in 50–100 MHz increments.
@@ -597,9 +602,9 @@ Typical results:
 AMD GPUs can be tuned with MSI Afterburner or AMD's own Adrenalin software:
 
 - **Adrenalin Undervolting:** Use the "Tuning" tab → "Automatic Undervolting" or set a manual curve.
- The interface is less flexible than MSI Afterburner.
-- **Power Limit:** AMD GPUs have a power limit slider that can be increased by 10–15%.
- Combined with undervolting, this can yield higher sustained clocks at lower temperatures.
+  The interface is less flexible than MSI Afterburner.
+- **Power Limit:** AMD GPUs have a power limit slider that can be increased by 10–15%. Combined with
+  undervolting, this can yield higher sustained clocks at lower temperatures.
 
 ---
 
@@ -612,7 +617,7 @@ System when:
 - You have no WHEA errors after extended stress testing
 - The performance gains from further tuning are marginal (&lt; 2%)
 - You have reached a point where each additional step requires disproportionately more voltage or
- cooling
+  cooling
 - You are no longer enjoying the process — tuning should be fun, not frustrating
 
 The best tune is the one that gives you the performance you need with comfortable temperatures, low

@@ -1,10 +1,13 @@
 ---
 id: io-redirection
 title: I/O Redirection and Pipes
-description: "I/O Redirection and Pipes — File Descriptors; Standard File Descriptors; View file descriptors for a process; 0 -> /dev/pts/0."
+description:
+  'I/O Redirection and Pipes — File Descriptors; Standard File Descriptors; View file descriptors
+  for a process; 0 -> /dev/pts/0.'
 slug: io-redirection
 sidebar_position: 2
 ---
+
 ## File Descriptors
 
 Every Linux process starts with three standard file descriptors, and can open additional ones as
@@ -12,12 +15,12 @@ Needed. File descriptors are non-negative integers maintained by the kernel per-
 
 ### Standard File Descriptors
 
-| FD | Name | Default Destination | Description |
+| FD  | Name   | Default Destination | Description                          |
 | --- | ------ | ------------------- | ------------------------------------ |
-| 0 | stdin | Keyboard (terminal) | Input stream |
-| 1 | stdout | Terminal | Normal output |
-| 2 | stderr | Terminal | Error and diagnostic output |
-| 3+ | custom | (none) | Application-defined file descriptors |
+| 0   | stdin  | Keyboard (terminal) | Input stream                         |
+| 1   | stdout | Terminal            | Normal output                        |
+| 2   | stderr | Terminal            | Error and diagnostic output          |
+| 3+  | custom | (none)              | Application-defined file descriptors |
 
 ```bash
 # View file descriptors for a process

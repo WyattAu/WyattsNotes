@@ -1,9 +1,12 @@
 ---
 id: concurrency-deep-dive
 title: Concurrency Deep Dive
-description: "Concurrency Deep Dive — Lock Interfaces; `ReentrantLock`; `ReentrantReadWriteLock`; `StampedLock` with worked examples and exam-style questions."
+description:
+  'Concurrency Deep Dive — Lock Interfaces; `ReentrantLock`; `ReentrantReadWriteLock`; `StampedLock`
+  with worked examples and exam-style questions.'
 slug: concurrency-deep-dive
 ---
+
 ## Lock Interfaces
 
 ### `ReentrantLock`
@@ -42,10 +45,10 @@ public class Counter {
 **Fair vs Non-fair locking:**
 
 - **Non-fair (default):** Threads can barge — a newly arriving thread may acquire the lock before a
- waiting thread. Higher throughput because threads do not need to be woken up and immediately put
- back to sleep.
+  waiting thread. Higher throughput because threads do not need to be woken up and immediately put
+  back to sleep.
 - **Fair:** Threads acquire the lock in the order they requested it. Lower throughput due to
- context-switch overhead, but avoids starvation.
+  context-switch overhead, but avoids starvation.
 
 ```java
 ReentrantLock fairLock = new ReentrantLock(true);  // fair
@@ -190,15 +193,13 @@ public class Point {
 }
 ```
 
-`StampedLock` is not reentrant. Each call to `writeLock``readLock`Or `tryOptimisticRead` returns
-A `long` stamp that must be used to unlock. This is a deliberate design choice — the lack of
+`StampedLock` is not reentrant. Each call to `writeLock``readLock`Or `tryOptimisticRead` returns A
+`long` stamp that must be used to unlock. This is a deliberate design choice — the lack of
 Reentrancy prevents certain deadlock patterns and allows the optimistic read mechanism.
 
-:::warning
-`StampedLock` does not implement the `Lock` or `ReadWriteLock` interface. It cannot be
+:::warning `StampedLock` does not implement the `Lock` or `ReadWriteLock` interface. It cannot be
 Used with `Condition` or in `synchronized`-style patterns. Convert to a `ReadWriteLock` view via
-`asReadLock()` / `asWriteLock()` if needed.
-:::
+`asReadLock()` / `asWriteLock()` if needed. :::
 
 ## Condition
 
@@ -249,11 +250,9 @@ public class BoundedBuffer<T> {
 }
 ```
 
-:::info
-Always use `while` (not `if`) with `await`. Spurious wakeups are possible — the thread may
+:::info Always use `while` (not `if`) with `await`. Spurious wakeups are possible — the thread may
 Wake without a `signal`. The loop re-checks the condition. This is mandated by the Javadoc for
-`Object.wait` and `Condition.await`.
-:::
+`Object.wait` and `Condition.await`. :::
 
 ### Fair vs Non-fair Conditions
 
@@ -349,10 +348,10 @@ long result = max.get(); // 42
 A `volatile` field has two guarantees:
 
 1. **Visibility:** A write to a `volatile` field is immediately visible to all other threads. The
- JIT and CPU cannot cache the value in a register or reorder reads/writes past the volatile
- access.
+   JIT and CPU cannot cache the value in a register or reorder reads/writes past the volatile
+   access.
 2. **Ordering:** Reads and writes of `volatile` fields establish happens-before relationships. No
- reads or writes of volatile variables can be reordered with respect to each other.
+   reads or writes of volatile variables can be reordered with respect to each other.
 
 ```java
 public class VolatileFlag {
@@ -377,10 +376,10 @@ public class VolatileFlag {
 Use `volatile` for:
 
 - **Flags and status indicators** — one thread writes, others read (shutdown flags, initialization
- flags).
+  flags).
 - **One-shot publication** — writing a reference to a fully constructed object exactly once.
 - **Read-heavy counters** where approximate accuracy is acceptable (use `AtomicInteger` instead if
- exactness is required).
+  exactness is required).
 
 Do NOT use `volatile` for:
 
@@ -441,11 +440,9 @@ String firstKey = wordCounts.search(4, (key, value) -&gt;
 long total = wordCounts.reduceValuesToLong(4, Long::longValue, 0, Long::sum);
 ```
 
-:::info
-`ConcurrentHashMap` does not allow `null` keys or values. `HashMap` allows one `null` key
+:::info `ConcurrentHashMap` does not allow `null` keys or values. `HashMap` allows one `null` key
 And `null` values. This is a deliberate design decision — `null` is ambiguous in concurrent contexts
-(does `get(key)` returning `null` mean "key not found" or "value is null"?).
-:::
+(does `get(key)` returning `null` mean "key not found" or "value is null"?). :::
 
 ### `ConcurrentLinkedQueue`
 
@@ -480,23 +477,21 @@ for (EventListener listener : listeners) {
 listeners.add(newListener);
 ```
 
-:::warning
-`CopyOnWriteArrayList` does NOT support `Iterator.remove()` or `ListIterator.set()`. The
-Iterator operates on a snapshot and does not reflect modifications made during iteration.
-:::
+:::warning `CopyOnWriteArrayList` does NOT support `Iterator.remove()` or `ListIterator.set()`. The
+Iterator operates on a snapshot and does not reflect modifications made during iteration. :::
 
 ### Blocking Queues
 
 Blocking queues are designed for producer-consumer patterns. `put` blocks when full, `take` blocks
 When empty.
 
-| Implementation | Bounded | Ordering | Notes |
+| Implementation          | Bounded        | Ordering                         | Notes                        |
 | ----------------------- | -------------- | -------------------------------- | ---------------------------- |
-| `ArrayBlockingQueue` | Yes (fixed) | FIFO | Backed by array |
-| `LinkedBlockingQueue` | Optional | FIFO | Backed by linked nodes |
-| `PriorityBlockingQueue` | No (unbounded) | Priority (natural or Comparator) | Never blocks on put |
-| `SynchronousQueue` | Zero capacity | None | Handoff — put waits for take |
-| `DelayQueue` | Unbounded | By delay time | Elements implement `Delayed` |
+| `ArrayBlockingQueue`    | Yes (fixed)    | FIFO                             | Backed by array              |
+| `LinkedBlockingQueue`   | Optional       | FIFO                             | Backed by linked nodes       |
+| `PriorityBlockingQueue` | No (unbounded) | Priority (natural or Comparator) | Never blocks on put          |
+| `SynchronousQueue`      | Zero capacity  | None                             | Handoff — put waits for take |
+| `DelayQueue`            | Unbounded      | By delay time                    | Elements implement `Delayed` |
 
 ```java
 // Producer-consumer with LinkedBlockingQueue
@@ -645,8 +640,8 @@ public class UserIdContext {
 ### Memory Leak Pitfalls
 
 `ThreadLocal` values are stored in each thread's `ThreadLocalMap`. If a thread is long-lived (e.g.,
-A web server worker thread in a thread pool), and you do not call `remove()`The value will remain
-In memory for the lifetime of the thread. This is the most common `ThreadLocal` leak.
+A web server worker thread in a thread pool), and you do not call `remove()`The value will remain In
+memory for the lifetime of the thread. This is the most common `ThreadLocal` leak.
 
 ```java
 // DANGEROUS — in a servlet container with pooled threads
@@ -673,8 +668,7 @@ public void doGet(HttpServletRequest req, HttpServletResponse resp) {
 }
 ```
 
-:::warning
-In thread pools (web servers, `ExecutorService`), always call `ThreadLocal.remove()` in a
+:::warning In thread pools (web servers, `ExecutorService`), always call `ThreadLocal.remove()` in a
 `finally` block. Threads are reused; stale values from a previous task will leak into the next task.
 :::
 
@@ -869,11 +863,9 @@ pool.submit(() -&gt; {
 });
 ```
 
-:::warning
-Never submit a task to a pool that waits for the result of another task submitted to the
+:::warning Never submit a task to a pool that waits for the result of another task submitted to the
 Same pool. If the pool is fully utilized, all threads will be blocked waiting, and no thread will be
-Available to execute the inner tasks. This is called thread pool deadlock or starvation.
-:::
+Available to execute the inner tasks. This is called thread pool deadlock or starvation. :::
 
 ## Summary
 

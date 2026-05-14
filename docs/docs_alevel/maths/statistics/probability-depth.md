@@ -1,20 +1,21 @@
 ---
 title: Probability (Extended)
-description: "A-Level Mathematics notes on Probability (Extended): Probability (Extended Treatment); 1. Conditional Probability; 1.1 Definition; 1.2 Multiplication rule."
+description:
+  'A-Level Mathematics notes on Probability (Extended): Probability (Extended Treatment); 1.
+  Conditional Probability; 1.1 Definition; 1.2 Multiplication rule.'
 date: 2026-04-23T00:00:00.000Z
 tags: [Mathematics, ALevel]
 categories: [Mathematics]
 slug: probability-extended
 ---
+
 ## Probability (Extended Treatment)
 
 This document extends the core probability material with rigorous treatments of conditional
 Probability, independence, Venn diagrams, tree diagrams, and Bayes' theorem.
 
-:::info
-Probability problems reward careful notation and clear event definitions. Always define your events
-Explicitly before writing any equations.
-:::
+:::info Probability problems reward careful notation and clear event definitions. Always define your
+events Explicitly before writing any equations. :::
 
 <hr />
 
@@ -51,8 +52,8 @@ $$P(R_1 \cap R_2) = P(R_1) \cdot P(R_2 \mid R_1) = \frac{5}{8} \times \frac{4}{7
 
 ### 1.4 The Law of Total Probability
 
-If $\{B_1, B_2, \ldots, B_n\}$ is a partition of the sample space (mutually exclusive and exhaustive),
-Then for any event $A$:
+If $\{B_1, B_2, \ldots, B_n\}$ is a partition of the sample space (mutually exclusive and
+exhaustive), Then for any event $A$:
 
 $$\boxed{P(A) = \sum_{i=1}^{n} P(A \mid B_i)\,P(B_i)}$$
 
@@ -110,18 +111,15 @@ $$= \frac◆LB◆0.95 \times 0.01◆RB◆◆LB◆0.95 \times 0.01 + 0.10 \times 
 
 So even with a positive test, there is only about an 8.8% chance of having the disease.
 
-:::warning
-Warning
-This counterintuitive result arises because the disease is rare. The number of false positives far
-Exceeds the number of true positives. This is the **base rate fallacy** -- ignoring the prior
-Probability of the condition.
-:::
+:::warning Warning This counterintuitive result arises because the disease is rare. The number of
+false positives far Exceeds the number of true positives. This is the **base rate fallacy** --
+ignoring the prior Probability of the condition. :::
 
 ### 2.4 Worked example: factory with three machines
 
-**Problem.** A factory has three machines producing bolts. Machine 1 produces 50%, Machine 2 produces
-30%, and Machine 3 produces 20%. Defect rates are 1%, 2%, and 3% respectively. A bolt is found to
-Be defective. What is the probability it came from Machine 3?
+**Problem.** A factory has three machines producing bolts. Machine 1 produces 50%, Machine 2
+produces 30%, and Machine 3 produces 20%. Defect rates are 1%, 2%, and 3% respectively. A bolt is
+found to Be defective. What is the probability it came from Machine 3?
 
 $$P(M_3 \mid D) = \frac◆LB◆P(D \mid M_3)\,P(M_3)◆RB◆◆LB◆P(D \mid M_1)\,P(M_1) + P(D \mid M_2)\,P(M_2) + P(D \mid M_3)\,P(M_3)◆RB◆$$
 
@@ -137,12 +135,12 @@ $$= \frac{0.006}{0.005 + 0.006 + 0.006} = \frac{0.006}{0.017} \approx 0.353$$
 
 For two events $A$ and $B$The Venn diagram has four regions:
 
-| Region | Description | Probability |
-| --------------- | -------------------------------- | -------------------- |
-| $A \cap B$ | In both $A$ and $B$ | $P(A \cap B)$ |
-| $A \cap B'$ | In $A$ but not in $B$ | $P(A) - P(A \cap B)$ |
-| $A' \cap B$ | In $B$ but not in $A$ | $P(B) - P(A \cap B)$ |
-| $A' \cap B'$ | In neither $A$ nor $B$ | $1 - P(A \cup B)$ |
+| Region       | Description            | Probability          |
+| ------------ | ---------------------- | -------------------- |
+| $A \cap B$   | In both $A$ and $B$    | $P(A \cap B)$        |
+| $A \cap B'$  | In $A$ but not in $B$  | $P(A) - P(A \cap B)$ |
+| $A' \cap B$  | In $B$ but not in $A$  | $P(B) - P(A \cap B)$ |
+| $A' \cap B'$ | In neither $A$ nor $B$ | $1 - P(A \cup B)$    |
 
 ### 3.2 Worked example
 
@@ -164,9 +162,9 @@ $$P(A \cup B \cup C) = P(A) + P(B) + P(C) - P(A \cap B) - P(A \cap C) - P(B \cap
 
 ### 3.4 Worked example: three events
 
-**Problem.** In a survey, 60% of people like tea, 50% like coffee, 40% like chocolate, 30% like
-Tea and coffee, 25% like tea and chocolate, 20% like coffee and chocolate, and 10% like all three.
-What proportion likes none of these?
+**Problem.** In a survey, 60% of people like tea, 50% like coffee, 40% like chocolate, 30% like Tea
+and coffee, 25% like tea and chocolate, 20% like coffee and chocolate, and 10% like all three. What
+proportion likes none of these?
 
 $$P(T \cup C \cup H) = 0.6 + 0.5 + 0.4 - 0.3 - 0.25 - 0.2 + 0.1 = 0.85$$
 
@@ -187,7 +185,7 @@ That path.
 1. The probabilities on branches from any single node must sum to 1.
 2. The probability of an outcome is the product of probabilities along the path to that outcome.
 3. To find the probability of a compound event, add the probabilities of all paths leading to that
- event.
+   event.
 
 ### 4.3 Worked example: two-stage selection
 
@@ -200,7 +198,8 @@ $P(\mathrm{both\ green}) = \dfrac{5}{12} \times \dfrac{4}{11} = \dfrac{20}{132} 
 
 $P(\mathrm{same\ colour}) = \dfrac{7}{22} + \dfrac{5}{33} = \dfrac{21 + 10}{66} = \dfrac{31}{66}$
 
-(b) $P(\mathrm{one\ red}) = \dfrac{7}{12} \times \dfrac{5}{11} + \dfrac{5}{12} \times \dfrac{7}{11} = \dfrac{35}{132} + \dfrac{35}{132} = \dfrac{70}{132} = \dfrac{35}{66}$
+(b)
+$P(\mathrm{one\ red}) = \dfrac{7}{12} \times \dfrac{5}{11} + \dfrac{5}{12} \times \dfrac{7}{11} = \dfrac{35}{132} + \dfrac{35}{132} = \dfrac{70}{132} = \dfrac{35}{66}$
 
 ### 4.4 Worked example: with replacement
 
@@ -240,15 +239,16 @@ Equivalently: $P(A \mid B) = P(A)$Or $P(B \mid A) = P(B)$.
 For three events $A$$B$$C$:
 
 - **Pairwise independence** means each pair is independent.
-- **Mutual independence** means pairwise independence **and** $P(A \cap B \cap C) = P(A)\,P(B)\,P(C)$.
+- **Mutual independence** means pairwise independence **and**
+  $P(A \cap B \cap C) = P(A)\,P(B)\,P(C)$.
 
 Mutual independence is a stronger condition. Pairwise independence does not imply mutual
 Independence.
 
 ### 5.3 Worked example
 
-**Problem.** Events $A$ and $B$ are independent with $P(A) = 0.4$ and $P(B) = 0.7$. Find:
-(a) $P(A \cap B)$; (b) $P(A \cup B)$; (c) $P(A \mid B)$; (d) $P(A' \cap B')$.
+**Problem.** Events $A$ and $B$ are independent with $P(A) = 0.4$ and $P(B) = 0.7$. Find: (a)
+$P(A \cap B)$; (b) $P(A \cup B)$; (c) $P(A \mid B)$; (d) $P(A' \cap B')$.
 
 (a) $P(A \cap B) = 0.4 \times 0.7 = 0.28$
 
@@ -271,12 +271,9 @@ $$P(A' \cap B') = P((A \cup B)') = 1 - P(A \cup B) = 1 - P(A) - P(B) + P(A)P(B)$
 
 $$= (1 - P(A))(1 - P(B)) = P(A') \cdot P(B') \quad \blacksquare$$
 
-:::warning
-Warning
-"Independent" and "mutually exclusive" are different concepts. In fact, if $A$ and $B$ are both
-Non-trivial (positive probability) and mutually exclusive, they **cannot** be independent:
-$P(A \cap B) = 0 \neq P(A)P(B)$.
-:::
+:::warning Warning "Independent" and "mutually exclusive" are different concepts. In fact, if $A$
+and $B$ are both Non-trivial (positive probability) and mutually exclusive, they **cannot** be
+independent: $P(A \cap B) = 0 \neq P(A)P(B)$. :::
 
 <hr />
 
@@ -301,17 +298,19 @@ $P(C \mid F) = 0.20 / 0.625 = 0.32$.
 ### Problem 2
 
 A test for a condition has sensitivity 92% (true positive rate) and specificity 96% (true negative
-Rate). The condition prevalence is 3%. Find: (a) $P(\mathrm{condition} \mid \mathrm{positive})$;
-(b) $P(\mathrm{condition} \mid \mathrm{negative})$.
+Rate). The condition prevalence is 3%. Find: (a) $P(\mathrm{condition} \mid \mathrm{positive})$; (b)
+$P(\mathrm{condition} \mid \mathrm{negative})$.
 
 <details>
 <summary>Solution</summary>
 
 $P(T^+ \mid C) = 0.92$$P(T^- \mid C') = 0.96$$P(C) = 0.03$.
 
-(a) $P(C \mid T^+) = \dfrac◆LB◆0.92 \times 0.03◆RB◆◆LB◆0.92 \times 0.03 + 0.04 \times 0.97◆RB◆ = \dfrac{0.0276}{0.0276 + 0.0388} = \dfrac{0.0276}{0.0664} \approx 0.416$
+(a)
+$P(C \mid T^+) = \dfrac◆LB◆0.92 \times 0.03◆RB◆◆LB◆0.92 \times 0.03 + 0.04 \times 0.97◆RB◆ = \dfrac{0.0276}{0.0276 + 0.0388} = \dfrac{0.0276}{0.0664} \approx 0.416$
 
-(b) $P(C \mid T^-) = \dfrac◆LB◆0.08 \times 0.03◆RB◆◆LB◆0.08 \times 0.03 + 0.96 \times 0.97◆RB◆ = \dfrac{0.0024}{0.0024 + 0.9312} = \dfrac{0.0024}{0.9336} \approx 0.00257$
+(b)
+$P(C \mid T^-) = \dfrac◆LB◆0.08 \times 0.03◆RB◆◆LB◆0.08 \times 0.03 + 0.96 \times 0.97◆RB◆ = \dfrac{0.0024}{0.0024 + 0.9312} = \dfrac{0.0024}{0.9336} \approx 0.00257$
 
 </details>
 
@@ -335,8 +334,8 @@ $\dfrac{5}{12} = \dfrac{2}{3}P(B) \implies P(B) = \dfrac{5}{8}$.
 
 ### Problem 4
 
-A bag contains 4 red, 6 green, and 5 blue balls. Three balls are drawn without replacement. Find
-The probability that they are all different colours.
+A bag contains 4 red, 6 green, and 5 blue balls. Three balls are drawn without replacement. Find The
+probability that they are all different colours.
 
 <details>
 <summary>Solution</summary>

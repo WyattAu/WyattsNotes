@@ -1,12 +1,15 @@
 ---
 sidebar_position: 1
 title: A-Level English
-description: "Rigorous A-Level English notes covering A-Level English. Includes definitions, derivations, worked examples, and exam-style problems."
+description:
+  'Rigorous A-Level English notes covering A-Level English. Includes definitions, derivations,
+  worked examples, and exam-style problems.'
 date: 2026-05-12T00:00:00.000Z
 tags:
   - English
   - ALevel
 ---
+
 # A-Level English
 
 :::note Content Under Development

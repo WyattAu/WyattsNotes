@@ -1,39 +1,42 @@
 ---
 id: stress-testing
 title: Stress Testing and Validation
-description: "Stress Testing and Validation — Why Stress Test; The Cost of Insufficient Testing; CPU Stress Tests; Prime95 with worked examples and exam-style questions."
+description:
+  'Stress Testing and Validation — Why Stress Test; The Cost of Insufficient Testing; CPU Stress
+  Tests; Prime95 with worked examples and exam-style questions.'
 slug: stress-testing
 ---
+
 ## Why Stress Test
 
 Stress testing serves three purposes for a systems engineer:
 
 1. **Stability verification** — Confirming that hardware operates correctly under worst-case
- conditions. Tuning changes (undervolting, overclocking, memory timing adjustments) must be
- validated with systematic testing. A system that boots and runs a web browser is not proven
- stable.
+   conditions. Tuning changes (undervolting, overclocking, memory timing adjustments) must be
+   validated with systematic testing. A system that boots and runs a web browser is not proven
+   stable.
 
 2. **Thermal profiling** — Establishing the thermal ceiling of your system under sustained load.
- This information guides cooling decisions and identifies whether thermal throttling will occur in
- production workloads.
+   This information guides cooling decisions and identifies whether thermal throttling will occur in
+   production workloads.
 
 3. **Silicon quality assessment** — Stress testing reveals the headroom available in your specific
- silicon sample. Two identical CPUs may have very different thermal and stability profiles due to
- manufacturing variance (the silicon lottery).
+   silicon sample. Two identical CPUs may have very different thermal and stability profiles due to
+   manufacturing variance (the silicon lottery).
 
 ### The Cost of Insufficient Testing
 
 Untested instability can manifest as:
 
 - **Silent data corruption:** The most dangerous form. The system continues operating but produces
- incorrect results. Database corruption, file system errors, compilation failures with wrong
- output, and machine learning models trained on corrupted data are all possible outcomes.
+  incorrect results. Database corruption, file system errors, compilation failures with wrong
+  output, and machine learning models trained on corrupted data are all possible outcomes.
 - **WHEA errors:** CPU-detected hardware errors that are corrected internally but indicate the
- silicon is operating outside its reliable envelope.
+  silicon is operating outside its reliable envelope.
 - **Intermittent crashes:** BSODs, kernel panics, spontaneous reboots, and application crashes that
- are difficult to reproduce and diagnose.
+  are difficult to reproduce and diagnose.
 - **Reduced lifespan:** Sustained operation at excessive voltage and temperature causes
- electromigration, accelerating silicon degradation.
+  electromigration, accelerating silicon degradation.
 
 ---
 
@@ -44,12 +47,12 @@ Untested instability can manifest as:
 Prime95 is the gold standard for CPU stability testing. It uses GIMPS (Great Internet Mersenne Prime
 Search) algorithms to stress the CPU with varying FFT (Fast Fourier Transform) sizes.
 
-| Test Mode | FFT Size | What It Stresses | Primary Use |
+| Test Mode  | FFT Size       | What It Stresses            | Primary Use                              |
 | ---------- | -------------- | --------------------------- | ---------------------------------------- |
-| Small FFTs | 4–4096 K | L1/L2 cache, ALU, FPU | Maximum heat generation, thermal testing |
-| Large FFTs | 4096–4096 K | L3 cache, memory controller | Cache and memory stress |
-| Blend | Mixed | All levels | Overall system stability |
-| Custom | User-specified | User-specified | Targeted testing |
+| Small FFTs | 4–4096 K       | L1/L2 cache, ALU, FPU       | Maximum heat generation, thermal testing |
+| Large FFTs | 4096–4096 K    | L3 cache, memory controller | Cache and memory stress                  |
+| Blend      | Mixed          | All levels                  | Overall system stability                 |
+| Custom     | User-specified | User-specified              | Targeted testing                         |
 
 **Recommended configuration for stability testing:**
 
@@ -70,13 +73,13 @@ Minutes for production systems.
 OCCT (OverClock Checking Tool) is a comprehensive stability tester that catches errors Prime95 may
 Miss:
 
-| Test | Duration | What It Catches |
+| Test               | Duration | What It Catches                     |
 | ------------------ | -------- | ----------------------------------- |
-| OCCT CPU (Small) | 30 min | CPU thermal and voltage instability |
-| OCCT CPU (Large) | 30 min | Memory controller instability |
-| OCCT CPU (Extreme) | 30 min | Combined CPU and memory stress |
-| OCCT Memory | 60 min | Memory-specific errors |
-| OCCT Power | 30 min | PSU voltage stability under load |
+| OCCT CPU (Small)   | 30 min   | CPU thermal and voltage instability |
+| OCCT CPU (Large)   | 30 min   | Memory controller instability       |
+| OCCT CPU (Extreme) | 30 min   | Combined CPU and memory stress      |
+| OCCT Memory        | 60 min   | Memory-specific errors              |
+| OCCT Power         | 30 min   | PSU voltage stability under load    |
 
 OCCT is particularly effective at catching marginal instability that Prime95's large FFT sizes do
 Not exercise. Use OCCT as a secondary test after Prime95 passes.
@@ -87,7 +90,7 @@ AIDA64 provides a suite of stress tests with real-time monitoring:
 
 - **System Stability Test:** Stresses CPU, FPU, cache, and memory simultaneously.
 - **FPU Stress Test:** Heavy floating-point workload that generates maximum heat on AVX-capable
- CPUs.
+  CPUs.
 - **Cache Stress Test:** Exercises L1, L2, and L3 caches.
 
 AIDA64 is less effective at catching instability than Prime95 or OCCT but provides excellent
@@ -121,11 +124,9 @@ sudo apt install intel-mkl
 ./linpack_xeon64
 ```
 
-:::warning
-Linpack generates extreme power consumption — often exceeding the CPU's rated TDP by
+:::warning Linpack generates extreme power consumption — often exceeding the CPU's rated TDP by
 30–50%. This can push VRMs and PSU beyond their rated capacity. Only use Linpack for brief thermal
-Profiling (5–10 minutes), not for extended stability testing.
-:::
+Profiling (5–10 minutes), not for extended stability testing. :::
 
 ---
 
@@ -139,7 +140,7 @@ Donut using extremely heavy shaders.
 - **Use for:** Verifying thermal limits and power delivery stability.
 - **Duration:** 15–30 minutes is sufficient.
 - **Do not use for:** Extended stability testing. FurMark stresses the GPU in a way no real
- application does. A GPU stable under FurMark may crash in games, and vice versa.
+  application does. A GPU stable under FurMark may crash in games, and vice versa.
 
 ### 3DMark Time Spy / Speed Way
 
@@ -187,12 +188,12 @@ Management.
 
 **Pass requirements:**
 
-| Scenario | Minimum Passes | Recommended |
+| Scenario                            | Minimum Passes | Recommended |
 | ----------------------------------- | -------------- | ----------- |
-| Quick check after settings change | 4 | 4 |
-| New build validation | 4 | 8 |
-| Production system | 8 | 16+ |
-| Troubleshooting intermittent errors | 8 | 16+ |
+| Quick check after settings change   | 4              | 4           |
+| New build validation                | 4              | 8           |
+| Production system                   | 8              | 16+         |
+| Troubleshooting intermittent errors | 8              | 16+         |
 
 Any errors, even a single bit, indicate instability. There is no such thing as an "acceptable"
 Memory error rate.
@@ -279,17 +280,15 @@ sudo badblocks -wsv /dev/sdX
 sudo badblocks -sv /dev/sdX
 ```
 
-:::warning
-`badblocks -w` is destructive — it overwrites all data on the device. Only use on
-Unpartitioned drives or drives whose data you have backed up.
-:::
+:::warning `badblocks -w` is destructive — it overwrites all data on the device. Only use on
+Unpartitioned drives or drives whose data you have backed up. :::
 
 ### CrystalDiskMark
 
 CrystalDiskMark (Windows) provides an easy GUI for sequential and random I/O testing:
 
 - **Seq Q8T1:** Sequential read/write with queue depth 8, 1 thread. Tests peak sequential
- throughput.
+  throughput.
 - **4K Q32T1:** 4K random with queue depth 32, 1 thread. Tests SSD controller performance.
 - **4K Q1T1:** 4K random with queue depth 1, 1 thread. Tests worst-case random latency.
 
@@ -336,15 +335,16 @@ This tests:
 1. Run HWiNFO64 in "Sensors Only" mode.
 2. Click "Logging Start" to begin recording to CSV.
 3. Monitor these values:
- - CPU Package Temperature (target: &lt; 90 °C)
- - CPU Core Max (target: &lt; 95 °C)
- - CPU Package Power (compare against PL1/PL2 limits)
- - CPU Vcore (should be stable, not fluctuating wildly)
- - VRM Temperature (target: &lt; 80 °C)
- - GPU Temperature and Hotspot (target: &lt; 80 °C edge, &lt; 100 °C junction)
- - GPU Power Draw (compare against power limit)
- - WHEA Errors (target: 0)
- - +12V, +5V, +3.3V rails (should be within 5% of nominal)
+
+- CPU Package Temperature (target: &lt; 90 °C)
+- CPU Core Max (target: &lt; 95 °C)
+- CPU Package Power (compare against PL1/PL2 limits)
+- CPU Vcore (should be stable, not fluctuating wildly)
+- VRM Temperature (target: &lt; 80 °C)
+- GPU Temperature and Hotspot (target: &lt; 80 °C edge, &lt; 100 °C junction)
+- GPU Power Draw (compare against power limit)
+- WHEA Errors (target: 0)
+- +12V, +5V, +3.3V rails (should be within 5% of nominal)
 
 ### Linux Monitoring
 
@@ -394,16 +394,16 @@ chmod +x monitor_stress.sh
 
 ### Symptom Analysis
 
-| Symptom | Timing | Likely Cause | Action |
+| Symptom                 | Timing                          | Likely Cause                           | Action                                     |
 | ----------------------- | ------------------------------- | -------------------------------------- | ------------------------------------------ |
-| Immediate crash or BSOD | Within seconds of starting test | Voltage too low, settings incompatible | Increase voltage, revert settings |
-| Crash after 5–30 min | During early testing | Marginal stability | Increase voltage by 10–20 mV |
-| Crash after 1–4 hours | During extended testing | Thermal throttling, VRM overheating | Check temps, improve cooling |
-| WHEA errors, no crash | Throughout testing | Silent instability | Increase voltage by 10 mV, retest |
-| Crash only at idle | After stopping stress test | C-state instability | Disable deep C-states, adjust idle voltage |
-| Artifacts on screen | During GPU test | GPU core/memory clock too high | Reduce GPU overclock |
-| File corruption | After testing | Memory or storage instability | Run MemTest86, check SMART data |
-| System hangs (no BSOD) | Random | Severe hardware problem | Check PSU, motherboard, RAM individually |
+| Immediate crash or BSOD | Within seconds of starting test | Voltage too low, settings incompatible | Increase voltage, revert settings          |
+| Crash after 5–30 min    | During early testing            | Marginal stability                     | Increase voltage by 10–20 mV               |
+| Crash after 1–4 hours   | During extended testing         | Thermal throttling, VRM overheating    | Check temps, improve cooling               |
+| WHEA errors, no crash   | Throughout testing              | Silent instability                     | Increase voltage by 10 mV, retest          |
+| Crash only at idle      | After stopping stress test      | C-state instability                    | Disable deep C-states, adjust idle voltage |
+| Artifacts on screen     | During GPU test                 | GPU core/memory clock too high         | Reduce GPU overclock                       |
+| File corruption         | After testing                   | Memory or storage instability          | Run MemTest86, check SMART data            |
+| System hangs (no BSOD)  | Random                          | Severe hardware problem                | Check PSU, motherboard, RAM individually   |
 
 ### What WHEA Errors Mean
 
@@ -411,12 +411,12 @@ WHEA (Windows Hardware Error Architecture) errors indicate that the CPU detected
 And corrected it. The correction means the system continued running, but the error itself is a
 Reliability concern.
 
-| WHEA Error Type | Meaning | Severity |
+| WHEA Error Type         | Meaning                                    | Severity             |
 | ----------------------- | ------------------------------------------ | -------------------- |
 | Corrected Machine Check | Single-bit error corrected by ECC/hardware | Low (but cumulative) |
-| Cache Hierarchy Error | L1/L2/L3 cache error | Medium |
-| Bus Error | Front-side bus or interconnect error | High |
-| Internal Timer Error | CPU timer error | Medium |
+| Cache Hierarchy Error   | L1/L2/L3 cache error                       | Medium               |
+| Bus Error               | Front-side bus or interconnect error       | High                 |
+| Internal Timer Error    | CPU timer error                            | Medium               |
 
 **Zero WHEA errors is the only acceptable threshold.** Even one corrected error during stress
 Testing means your settings are not stable enough for production use.
@@ -466,29 +466,29 @@ For new builds or critical systems:
 
 ### CPU Temperature Limits
 
-| Platform | Maximum Sustained | Thermal Throttle | Absolute Maximum |
+| Platform               | Maximum Sustained | Thermal Throttle | Absolute Maximum  |
 | ---------------------- | ----------------- | ---------------- | ----------------- |
-| Intel 12th–14th Gen | 85 °C | 100 °C | 115 °C (junction) |
-| AMD Ryzen 5000 (Zen 3) | 80 °C | 90 °C | 95 °C |
-| AMD Ryzen 7000 (Zen 4) | 80 °C | 95 °C | 95 °C |
-| AMD Ryzen 9000 (Zen 5) | 80 °C | 95 °C | 95 °C |
-| AMD Threadripper | 80 °C | 95 °C | 110 °C |
+| Intel 12th–14th Gen    | 85 °C             | 100 °C           | 115 °C (junction) |
+| AMD Ryzen 5000 (Zen 3) | 80 °C             | 90 °C            | 95 °C             |
+| AMD Ryzen 7000 (Zen 4) | 80 °C             | 95 °C            | 95 °C             |
+| AMD Ryzen 9000 (Zen 5) | 80 °C             | 95 °C            | 95 °C             |
+| AMD Threadripper       | 80 °C             | 95 °C            | 110 °C            |
 
 ### GPU Temperature Limits
 
-| Platform | Maximum Sustained | Thermal Throttle | Hotspot Limit |
+| Platform             | Maximum Sustained | Thermal Throttle  | Hotspot Limit     |
 | -------------------- | ----------------- | ----------------- | ----------------- |
-| NVIDIA RTX 30-series | 75 °C | 83 °C (edge) | 105 °C (junction) |
-| NVIDIA RTX 40-series | 75 °C | 83 °C (edge) | 91 °C (junction) |
-| AMD RDNA 3 | 85 °C (junction) | 110 °C (junction) | 120 °C (junction) |
+| NVIDIA RTX 30-series | 75 °C             | 83 °C (edge)      | 105 °C (junction) |
+| NVIDIA RTX 40-series | 75 °C             | 83 °C (edge)      | 91 °C (junction)  |
+| AMD RDNA 3           | 85 °C (junction)  | 110 °C (junction) | 120 °C (junction) |
 
 ### Memory Temperature Limits
 
-| Type | Maximum | Notes |
+| Type               | Maximum | Notes                                           |
 | ------------------ | ------- | ----------------------------------------------- |
-| DDR4 | 50 °C | Beyond this, errors increase exponentially |
-| DDR5 | 60 °C | DDR5 runs hotter than DDR4 at equivalent speeds |
-| DDR5 with heatsink | 65 °C | Heatsinks provide a small margin |
+| DDR4               | 50 °C   | Beyond this, errors increase exponentially      |
+| DDR5               | 60 °C   | DDR5 runs hotter than DDR4 at equivalent speeds |
+| DDR5 with heatsink | 65 °C   | Heatsinks provide a small margin                |
 
 ---
 
@@ -503,7 +503,7 @@ A system is considered stable only when:
 5. **Temperatures remain within safe limits** under sustained full load.
 6. **Idle stability** — system remains stable for 2+ hours at idle after stress testing.
 7. **Real-world validation** — the system runs your actual workloads without errors for at least one
- week.
+   week.
 
 If any single criterion fails, the system is not stable. There are no partial passes.
 
@@ -617,13 +617,13 @@ Sample Intel Optimized LINPACK Benchmark input file
 
 Y-cruncher supports multiple computation modes:
 
-| Mode | Stress Type | Duration | Best For |
+| Mode        | Stress Type       | Duration  | Best For             |
 | ----------- | ----------------- | --------- | -------------------- |
-| Pi (all) | Mixed compute | 15–60 min | General stability |
-| Pi - 25M | Light compute | 5 min | Quick smoke test |
-| Pi - 2.5B | Heavy compute | 30–60 min | Extended stability |
-| Benchmark | All modes | 10 min | Performance baseline |
-| Stress Test | AVX/FMA intensive | 15 min | Maximum heat |
+| Pi (all)    | Mixed compute     | 15–60 min | General stability    |
+| Pi - 25M    | Light compute     | 5 min     | Quick smoke test     |
+| Pi - 2.5B   | Heavy compute     | 30–60 min | Extended stability   |
+| Benchmark   | All modes         | 10 min    | Performance baseline |
+| Stress Test | AVX/FMA intensive | 15 min    | Maximum heat         |
 
 ## GPU Stress Test Advanced Configurations
 
@@ -634,7 +634,7 @@ FurMark is a GPU power virus. Configure it for thermal verification:
 - **Resolution:** Use your native resolution for realistic thermal loads.
 - **Anti-aliasing:** 8x MSAA increases GPU load without changing the fundamental stress pattern.
 - **Time:** 15 minutes is sufficient for thermal verification. Running longer provides no additional
- benefit and risks premature wear on the GPU's VRMs.
+  benefit and risks premature wear on the GPU's VRMs.
 - **Post-processing:** Enable post-processing shaders to increase VRAM usage.
 
 ### 3DMark Stress Test Configuration
@@ -644,7 +644,7 @@ FurMark is a GPU power virus. Configure it for thermal verification:
 - **Pass threshold:** 97% score stability (the minimum score must be within 97% of the maximum).
 - **Duration:** 20 loops take approximately 20–30 minutes.
 - **Monitor:** Track GPU temperature, power draw, and clock speed throughout. If the score drops
- significantly in later loops, the GPU is thermal throttling.
+  significantly in later loops, the GPU is thermal throttling.
 
 ### GPU Memory Stress Testing
 
@@ -734,13 +734,14 @@ For extended stress tests, configure HWiNFO64 for comprehensive logging:
 2. Click "Logging start."
 3. Configure logging interval to 1 second.
 4. Select all relevant sensors:
- - CPU: Temperature (all cores), Vcore, VID, Package Power, Power Limits, Multiplier, Core
- Utilization
- - GPU: Temperature (edge, junction, memory), Power, Core Clock, Memory Clock, Fan Speed, Hotspot
- Temperature
- - Memory: Temperature, DRAM Voltage
- - Motherboard: VRM Temperature, System Temperature, +12V, +5V, +3.3V
- - Storage: Temperature, Available Spare, Media Wear Indicator
+
+- CPU: Temperature (all cores), Vcore, VID, Package Power, Power Limits, Multiplier, Core
+  Utilization
+- GPU: Temperature (edge, junction, memory), Power, Core Clock, Memory Clock, Fan Speed, Hotspot
+  Temperature
+- Memory: Temperature, DRAM Voltage
+- Motherboard: VRM Temperature, System Temperature, +12V, +5V, +3.3V
+- Storage: Temperature, Available Spare, Media Wear Indicator
 
 ### Linux Monitoring Dashboard
 
@@ -807,14 +808,14 @@ done
 
 ### Windows vs. Linux Stress Testing
 
-| Aspect | Windows | Linux |
+| Aspect         | Windows                        | Linux                                |
 | -------------- | ------------------------------ | ------------------------------------ |
-| CPU stress | Prime95, OCCT, AIDA64 | stress-ng, stress, mprime |
-| GPU stress | FurMark, 3DMark, Superposition | gpu_burn, glmark2 |
-| Memory stress | TestMem5, HCI MemTest, Karhu | MemTest86 (bootable), stress-ng --vm |
-| Storage stress | CrystalDiskMark, ATTO | fio, dd, badblocks |
-| Monitoring | HWiNFO64, MSI Afterburner OSD | turbostat, sensors, htop, iostat |
-| WHEA errors | HWiNFO64, Windows Event Viewer | mcelog (if available), dmesg |
+| CPU stress     | Prime95, OCCT, AIDA64          | stress-ng, stress, mprime            |
+| GPU stress     | FurMark, 3DMark, Superposition | gpu_burn, glmark2                    |
+| Memory stress  | TestMem5, HCI MemTest, Karhu   | MemTest86 (bootable), stress-ng --vm |
+| Storage stress | CrystalDiskMark, ATTO          | fio, dd, badblocks                   |
+| Monitoring     | HWiNFO64, MSI Afterburner OSD  | turbostat, sensors, htop, iostat     |
+| WHEA errors    | HWiNFO64, Windows Event Viewer | mcelog (if available), dmesg         |
 
 ### Bootable Stress Testing
 
@@ -823,7 +824,7 @@ For the most isolated testing, use a bootable environment:
 - **MemTest86:** The standard for memory testing. Boots from USB, no OS required.
 - **Prime95 (mprime):** Can be run from a Linux Live USB for OS-independent CPU testing.
 - **mhwd (Multiple Hardware Watchdog):** Comprehensive hardware stress testing from a bootable
- environment.
+  environment.
 
 ## Burn-In Testing for New Builds
 

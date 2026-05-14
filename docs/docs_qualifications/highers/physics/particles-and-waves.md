@@ -1,6 +1,8 @@
 ---
 title: Particles and Waves
-description: "Particles and Waves — Quantum Physics; Wave-Particle Duality; Why the Photoelectric Effect Disproves the Wave Theory of Light; De Broglie Wavelength."
+description:
+  'Particles and Waves — Quantum Physics; Wave-Particle Duality; Why the Photoelectric Effect
+  Disproves the Wave Theory of Light; De Broglie Wavelength.'
 date: 2026-04-14
 tags:
   - Physics
@@ -9,6 +11,7 @@ categories:
   - Physics
 slug: particles-and-waves
 ---
+
 # Particles and Waves
 
 :::info
@@ -28,7 +31,7 @@ Are emitted.
 
 - Electrons are emitted **instantaneously**, not after a delay
 - No electrons are emitted if the frequency is below the threshold frequency $f_0$Regardless of
- intensity
+  intensity
 - The maximum kinetic energy of emitted electrons depends on frequency, not intensity
 - More intense light produces more electrons, not more energetic ones
 
@@ -47,8 +50,8 @@ $$E_k = hf - \phi$$
 
 Where $\phi = hf_0$ is the work function of the metal.
 
-**Example:** The work function of sodium is $2.28 \mathrm{ eV{}$. Find the threshold frequency and the
-Maximum kinetic energy of photoelectrons when illuminated by light of frequency
+**Example:** The work function of sodium is $2.28 \mathrm{ eV{}$. Find the threshold frequency and
+the Maximum kinetic energy of photoelectrons when illuminated by light of frequency
 $8 \times 10^{14} \mathrm{ Hz{}$.
 
 Threshold frequency:
@@ -93,13 +96,13 @@ Electrons in atoms exist in discrete energy levels. Transitions between levels p
 $$\Delta E = hf = \frac{hc}{\lambda}$$
 
 - **Emission spectrum:** Bright lines on a dark background (photons emitted when electrons move to
- lower levels)
+  lower levels)
 - **Absorption spectrum:** Dark lines on a continuous spectrum (photons absorbed when electrons move
- to higher levels)
+  to higher levels)
 
 **Example:** An electron in a hydrogen atom transitions from $n = 3$ to $n = 1$. The energy levels
-Are $E_1 = -13.6 \mathrm{ eV{}$$E_2 = -3.4 \mathrm{ eV{}$$E_3 = -1.51 \mathrm{ eV{}$. Find the wavelength
-Of the emitted photon.
+Are $E_1 = -13.6 \mathrm{ eV{}$$E_2 = -3.4 \mathrm{ eV{}$$E_3 = -1.51 \mathrm{ eV{}$. Find the
+wavelength Of the emitted photon.
 
 $$\Delta E = E_3 - E_1 = -1.51 - (-13.6) = 12.09 \mathrm{ eV{} = 1.934 \times 10^{-18} \mathrm{ J{}$$
 
@@ -119,10 +122,10 @@ Where $\hbar = \dfrac{h}{2\pi}$.
 ### Why the Uncertainty Principle Is Not About Measurement Error
 
 The uncertainty principle is not a statement about the limitations of our instruments. It is a
-Fundamental property of nature: a particle does not have simultaneously well-defined position
-And momentum. This has profound consequences: it explains why electrons cannot spiral into the
-Nucleus (confinement to a small volume requires large momentum, preventing collapse), and it sets a
-Limit on the precision of any physical theory.
+Fundamental property of nature: a particle does not have simultaneously well-defined position And
+momentum. This has profound consequences: it explains why electrons cannot spiral into the Nucleus
+(confinement to a small volume requires large momentum, preventing collapse), and it sets a Limit on
+the precision of any physical theory.
 
 **Example:** An electron is confined to a region of width $1 \mathrm{ nm{}$. What is the minimum
 Uncertainty in its momentum?
@@ -139,28 +142,28 @@ The Standard Model classifies fundamental particles into:
 
 **Quarks** (six flavours, each with an antiquark):
 
-| Generation | Up-type | Charge | Down-type | Charge |
+| Generation | Up-type   | Charge | Down-type   | Charge |
 | ---------- | --------- | ------ | ----------- | ------ |
-| 1 | Up (u) | $+2/3$ | Down (d) | $-1/3$ |
-| 2 | Charm (c) | $+2/3$ | Strange (s) | $-1/3$ |
-| 3 | Top (t) | $+2/3$ | Bottom (b) | $-1/3$ |
+| 1          | Up (u)    | $+2/3$ | Down (d)    | $-1/3$ |
+| 2          | Charm (c) | $+2/3$ | Strange (s) | $-1/3$ |
+| 3          | Top (t)   | $+2/3$ | Bottom (b)  | $-1/3$ |
 
 **Leptons** (six flavours, each with an antilepton):
 
-| Generation | Charged | Charge | Neutrino | Charge |
+| Generation | Charged      | Charge | Neutrino          | Charge |
 | ---------- | ------------ | ------ | ----------------- | ------ |
-| 1 | Electron (e) | $-1$ | Electron neutrino | $0$ |
-| 2 | Muon ($\mu$) | $-1$ | Muon neutrino | $0$ |
-| 3 | Tau ($\tau$) | $-1$ | Tau neutrino | $0$ |
+| 1          | Electron (e) | $-1$   | Electron neutrino | $0$    |
+| 2          | Muon ($\mu$) | $-1$   | Muon neutrino     | $0$    |
+| 3          | Tau ($\tau$) | $-1$   | Tau neutrino      | $0$    |
 
 **Gauge Bosons** (force carriers):
 
-| Force | Boson | Mass | Acts on |
+| Force           | Boson                   | Mass  | Acts on           |
 | --------------- | ----------------------- | ----- | ----------------- |
-| Electromagnetic | Photon ($\gamma$) | 0 | Charged particles |
-| Strong | Gluon (g) | 0 | Quarks, gluons |
-| Weak | $W^+, W^-, Z^0$ | Heavy | All fermions |
-| Gravity | Graviton (hypothetical) | 0 | All particles |
+| Electromagnetic | Photon ($\gamma$)       | 0     | Charged particles |
+| Strong          | Gluon (g)               | 0     | Quarks, gluons    |
+| Weak            | $W^+, W^-, Z^0$         | Heavy | All fermions      |
+| Gravity         | Graviton (hypothetical) | 0     | All particles     |
 
 **Higgs Boson:** Gives particles mass via the Higgs mechanism.
 
@@ -276,63 +279,63 @@ $$f' = 800 \times \frac{343}{343 - 25} = 800 \times \frac{343}{318} = 800 \times
 ## Common Pitfalls
 
 1. **Units in the photoelectric effect:** Convert between eV and joules as needed.
- $1 \mathrm{ eV{} = 1.6 \times 10^{-19} \mathrm{ J{}$.
+   $1 \mathrm{ eV{} = 1.6 \times 10^{-19} \mathrm{ J{}$.
 
 2. **De Broglie wavelength of massive objects:** While all matter has a de Broglie wavelength, it is
- negligibly small for macroscopic objects.
+   negligibly small for macroscopic objects.
 
 3. **Conservation laws:** Always check charge, baryon number, and lepton number are conserved in
- particle reactions.
+   particle reactions.
 
 4. **Stationary wave harmonics:** A pipe closed at one end only supports odd harmonics
- ($n = 1, 3, 5, \ldots$).
+   ($n = 1, 3, 5, \ldots$).
 
 5. **Doppler effect sign convention:** Approaching sources increase observed frequency; receding
- sources decrease it.
+   sources decrease it.
 
 6. **Confusing baryon number and atomic mass number.** Baryon number counts the number of quarks
- minus antiquarks (each quark has $B = 1/3$Each antiquark has $B = -1/3$). A proton has $B = 1$
- a neutron has $B = 1$A meson has $B = 0$.
+   minus antiquarks (each quark has $B = 1/3$Each antiquark has $B = -1/3$). A proton has $B = 1$ a
+   neutron has $B = 1$A meson has $B = 0$.
 
 ---
 
 ## Practice Questions
 
 1. The work function of potassium is $2.30 \mathrm{ eV{}$. Find the threshold wavelength and the
- maximum kinetic energy of photoelectrons when illuminated by $400 \mathrm{ nm{}$ light.
+   maximum kinetic energy of photoelectrons when illuminated by $400 \mathrm{ nm{}$ light.
 
 2. Calculate the de Broglie wavelength of a proton moving at $2 \times 10^6 \mathrm{ m/s{}$.
 
 3. Verify that the following reaction conserves charge, baryon number, and lepton number:
- $\pi^- + p \to K^0 + \Lambda^0$.
+   $\pi^- + p \to K^0 + \Lambda^0$.
 
 4. A stationary wave on a string of length $0.8 \mathrm{ m{}$ has a third harmonic frequency of
- $600 \mathrm{ Hz{}$. Find the wave speed.
+   $600 \mathrm{ Hz{}$. Find the wave speed.
 
 5. Draw a Feynman diagram for electron-proton scattering via photon exchange.
 
 6. A source emitting $500 \mathrm{ Hz{}$ sound moves away from a stationary observer at
- $30 \mathrm{ m/s{}$. Speed of sound is $343 \mathrm{ m/s{}$. Find the observed frequency.
+   $30 \mathrm{ m/s{}$. Speed of sound is $343 \mathrm{ m/s{}$. Find the observed frequency.
 
 7. In a hydrogen atom, an electron transitions from $n = 4$ to $n = 2$. Calculate the wavelength of
- the emitted photon.
+   the emitted photon.
 
 8. Explain how the Heisenberg uncertainty principle limits the precision of simultaneous
- measurements of position and momentum.
+   measurements of position and momentum.
 
 9. A neutron decays into a proton, electron, and electron antineutrino. Write the full reaction and
- verify conservation of charge, baryon number, and lepton number.
+   verify conservation of charge, baryon number, and lepton number.
 
-10. A stationary wave is formed on a string of length $1.2 \mathrm{ m{}$ with a fundamental frequency
- of $200 \mathrm{ Hz{}$. Calculate the frequencies of the second, third, and fourth harmonics, and
- the positions of the nodes and antinodes for the second harmonic.
+10. A stationary wave is formed on a string of length $1.2 \mathrm{ m{}$ with a fundamental
+    frequency of $200 \mathrm{ Hz{}$. Calculate the frequencies of the second, third, and fourth
+    harmonics, and the positions of the nodes and antinodes for the second harmonic.
 
 ## 11. Photoelectric Effect: Extended Worked Examples
 
 ### Worked Example: Stopping Potential
 
-When light of wavelength $450 \mathrm{ nm{}$ is incident on a sodium surface, the stopping potential is
-Measured to be $0.65 \mathrm{ V{}$. Find the work function of sodium and the threshold frequency.
+When light of wavelength $450 \mathrm{ nm{}$ is incident on a sodium surface, the stopping potential
+is Measured to be $0.65 \mathrm{ V{}$. Find the work function of sodium and the threshold frequency.
 
 $$E_k = eV_s = 1.6 \times 10^{-19} \times 0.65 = 1.04 \times 10^{-19} \mathrm{ J{} = 0.65 \mathrm{ eV{}$$
 
@@ -430,21 +433,21 @@ $$n \to p + e^- + \bar{\nu}_e$$
 
 Writing with full quark content: $udd \to uud + e^- + \bar{\nu}_e$
 
-| Quantity | Before | After | Conserved? |
+| Quantity      | Before                                                      | After                                                        | Conserved? |
 | ------------- | ----------------------------------------------------------- | ------------------------------------------------------------ | ---------- |
-| Charge | $0 + (-\frac{1}{3}) + (-\frac{1}{3}) + (-\frac{1}{3}) = -1$ | $\frac{2}{3} + \frac{2}{3} + (-\frac{1}{3}) + (-1) + 0 = -1$ | Yes |
-| Baryon number | $3 \times \frac{1}{3} = 1$ | $3 \times \frac{1}{3} + 0 + 0 + 0 = 1$ | Yes |
-| Lepton number | $0$ | $1 + (-1) = 0$ | Yes |
+| Charge        | $0 + (-\frac{1}{3}) + (-\frac{1}{3}) + (-\frac{1}{3}) = -1$ | $\frac{2}{3} + \frac{2}{3} + (-\frac{1}{3}) + (-1) + 0 = -1$ | Yes        |
+| Baryon number | $3 \times \frac{1}{3} = 1$                                  | $3 \times \frac{1}{3} + 0 + 0 + 0 = 1$                       | Yes        |
+| Lepton number | $0$                                                         | $1 + (-1) = 0$                                               | Yes        |
 
 ### Worked Example: Pion Decay
 
 A $\pi^-$ meson (quark content $d\bar{u}$) decays: $\pi^- \to \mu^- + \bar{\nu}_\mu$
 
-| Quantity | Before | After | Conserved? |
+| Quantity      | Before                                 | After          | Conserved? |
 | ------------- | -------------------------------------- | -------------- | ---------- |
-| Charge | $(-\frac{1}{3}) + (-\frac{2}{3}) = -1$ | $-1 + 0 = -1$ | Yes |
-| Baryon number | $0 + 0 = 0$ | $0 + 0 = 0$ | Yes |
-| Lepton number | $0$ | $1 + (-1) = 0$ | Yes |
+| Charge        | $(-\frac{1}{3}) + (-\frac{2}{3}) = -1$ | $-1 + 0 = -1$  | Yes        |
+| Baryon number | $0 + 0 = 0$                            | $0 + 0 = 0$    | Yes        |
+| Lepton number | $0$                                    | $1 + (-1) = 0$ | Yes        |
 
 ## 15. Stationary Waves: Extended Analysis
 
@@ -454,60 +457,64 @@ A string of length $1.2 \mathrm{ m{}$ has fundamental frequency $200 \mathrm{ Hz
 
 Wave speed: $v = 2Lf_1 = 2 \times 1.2 \times 200 = 480 \mathrm{ m/s{}$
 
-**Second harmonic ($n = 2$):** $f_2 = 400 \mathrm{ Hz{}$$\lambda_2 = \frac{2L}{2} = 1.2 \mathrm{ m{}$.
+**Second harmonic ($n = 2$):**
+$f_2 = 400 \mathrm{ Hz{}$$\lambda_2 = \frac{2L}{2} = 1.2 \mathrm{ m{}$.
 
 Nodes at: $0, 0.6 \mathrm{ m{}, 1.2 \mathrm{ m{}$ (3 nodes, including the fixed ends)
 
 Antinodes at: $0.3 \mathrm{ m{}, 0.9 \mathrm{ m{}$ (2 antinodes)
 
-**Third harmonic ($n = 3$):** $f_3 = 600 \mathrm{ Hz{}$$\lambda_3 = \frac{2L}{3} = 0.8 \mathrm{ m{}$.
+**Third harmonic ($n = 3$):**
+$f_3 = 600 \mathrm{ Hz{}$$\lambda_3 = \frac{2L}{3} = 0.8 \mathrm{ m{}$.
 
-**Fourth harmonic ($n = 4$):** $f_4 = 800 \mathrm{ Hz{}$$\lambda_4 = \frac{2L}{4} = 0.6 \mathrm{ m{}$.
+**Fourth harmonic ($n = 4$):**
+$f_4 = 800 \mathrm{ Hz{}$$\lambda_4 = \frac{2L}{4} = 0.6 \mathrm{ m{}$.
 
 ## 16. Summary Table: Quantum and Wave Formulas
 
-| Topic | Formula | Variables | Notes |
-| --------------- | ------------------------------- | ---------------------- | -------------------- |
-| Photon energy | $E = hf = hc/\lambda$ | $h$$f$$\lambda$ | Planck's constant |
-| Photoelectric | $E_k = hf - \phi$ | $h$$f$$\phi$ | Einstein's equation |
-| De Broglie | $\lambda = h/p = h/(mv)$ | $h$$p$$m$$v$ | Matter waves |
-| Uncertainty | $\Delta x \Delta p \ge \hbar/2$ | $\Delta x$$\Delta p$ | Fundamental limit |
-| Energy levels | $\Delta E = hf = hc/\lambda$ | $h$$f$$\lambda$ | Spectral lines |
-| Standing wave | $f_n = nv/(2L)$ | $n$$v$$L$ | String fixed at ends |
-| Closed pipe | $f_n = nv/(4L)$ | $n$ odd | Only odd harmonics |
-| Doppler (sound) | $f' = fv/(v \pm v_s)$ | $f$$v$$v_s$ | Approaching/receding |
+| Topic           | Formula                         | Variables            | Notes                |
+| --------------- | ------------------------------- | -------------------- | -------------------- |
+| Photon energy   | $E = hf = hc/\lambda$           | $h$$f$$\lambda$      | Planck's constant    |
+| Photoelectric   | $E_k = hf - \phi$               | $h$$f$$\phi$         | Einstein's equation  |
+| De Broglie      | $\lambda = h/p = h/(mv)$        | $h$$p$$m$$v$         | Matter waves         |
+| Uncertainty     | $\Delta x \Delta p \ge \hbar/2$ | $\Delta x$$\Delta p$ | Fundamental limit    |
+| Energy levels   | $\Delta E = hf = hc/\lambda$    | $h$$f$$\lambda$      | Spectral lines       |
+| Standing wave   | $f_n = nv/(2L)$                 | $n$$v$$L$            | String fixed at ends |
+| Closed pipe     | $f_n = nv/(4L)$                 | $n$ odd              | Only odd harmonics   |
+| Doppler (sound) | $f' = fv/(v \pm v_s)$           | $f$$v$$v_s$          | Approaching/receding |
 
 ## 17. Practice Questions (Additional)
 
 11. The work function of caesium is $2.14 \mathrm{ eV{}$. Calculate the threshold wavelength and the
- maximum KE of photoelectrons when illuminated with $550 \mathrm{ nm{}$ light.
+    maximum KE of photoelectrons when illuminated with $550 \mathrm{ nm{}$ light.
 
-12. Calculate the de Broglie wavelength of a neutron moving at $2200 \mathrm{ m/s{}$ (thermal neutrons
- in a nuclear reactor). (Mass of neutron $= 1.675 \times 10^{-27} \mathrm{ kg{}$.)
+12. Calculate the de Broglie wavelength of a neutron moving at $2200 \mathrm{ m/s{}$ (thermal
+    neutrons in a nuclear reactor). (Mass of neutron $= 1.675 \times 10^{-27} \mathrm{ kg{}$.)
 
 13. A hydrogen atom is in the $n = 4$ state. Calculate the wavelengths of all possible photons
- emitted as it decays to the ground state.
+    emitted as it decays to the ground state.
 
 14. Verify conservation of charge, baryon number, and lepton number for the reaction:
- $\pi^+ + p \to K^+ + \Sigma^+$
+    $\pi^+ + p \to K^+ + \Sigma^+$
 
-15. A stationary wave is set up on a string of length $0.6 \mathrm{ m{}$ with a fundamental frequency
- of $250 \mathrm{ Hz{}$. Calculate the wave speed and the frequency of the fifth harmonic.
+15. A stationary wave is set up on a string of length $0.6 \mathrm{ m{}$ with a fundamental
+    frequency of $250 \mathrm{ Hz{}$. Calculate the wave speed and the frequency of the fifth
+    harmonic.
 
-16. A source emitting $600 \mathrm{ Hz{}$ moves towards a stationary observer at $40 \mathrm{ m/s{}$.
- Speed of sound $= 343 \mathrm{ m/s{}$. Calculate the observed frequency and the wavelength of the
- observed sound.
+16. A source emitting $600 \mathrm{ Hz{}$ moves towards a stationary observer at
+    $40 \mathrm{ m/s{}$. Speed of sound $= 343 \mathrm{ m/s{}$. Calculate the observed frequency and
+    the wavelength of the observed sound.
 
 17. Explain how electron diffraction experiments provide evidence for the wave nature of matter.
 
 18. Calculate the energy of a photon in the Lyman series corresponding to a transition from $n = 5$
- to $n = 1$ in hydrogen.
+    to $n = 1$ in hydrogen.
 
-19. An electron is confined to a region of width $0.5 \mathrm{ nm{}$. Estimate the minimum uncertainty
- in its velocity.
+19. An electron is confined to a region of width $0.5 \mathrm{ nm{}$. Estimate the minimum
+    uncertainty in its velocity.
 
 20. Explain why the strong nuclear force must be a short-range force. Reference colour confinement
- and the fact that quarks are never observed in isolation.
+    and the fact that quarks are never observed in isolation.
 
 ## Extended Worked Examples
 
@@ -532,20 +539,18 @@ $$\lambda = \frac{h}{mv} = \frac{6.626 \times 10^{-34}}{9.109 \times 10^{-31} \t
 
 $$\lambda = \frac{6.626 \times 10^{-34}}{7.639 \times 10^{-24}} = 8.67 \times 10^{-11} \mathrm{ m{} = 0.0867 \mathrm{ nm{}$$
 
-:::info
-For electrons accelerated through potential $V$The de Broglie wavelength can be calculated
+:::info For electrons accelerated through potential $V$The de Broglie wavelength can be calculated
 Directly:
 
 $$\lambda = \frac{h}{\sqrt{2m_e eV}} = \frac{1.226}{\sqrt{V}} \mathrm{ nm{}$$
 
 Where $V$ is in volts. This is a very useful shortcut: for $V = 200 \mathrm{ V{}$
-$\lambda = 1.226/\sqrt{200} = 0.0867 \mathrm{ nm{}$.
-:::
+$\lambda = 1.226/\sqrt{200} = 0.0867 \mathrm{ nm{}$. :::
 
 ### Example 22: Photon Energy and Wavelength Relationships
 
-A photon has energy $4.5 \mathrm{ eV{}$. Calculate (a) its wavelength, (b) its frequency, and (c) its
-Momentum.
+A photon has energy $4.5 \mathrm{ eV{}$. Calculate (a) its wavelength, (b) its frequency, and (c)
+its Momentum.
 
 **Step 1: Convert energy to joules**
 
@@ -594,11 +599,9 @@ $$f_5 = 5f_1 = 5 \times 100 = 500 \mathrm{ Hz{}$$
 For an open pipe: $f_1 = \frac{v}{2L} = \frac{340}{1.7} = 200 \mathrm{ Hz{}$And _all_ harmonics are
 Present ($f_n = nf_1$).
 
-:::info
-A closed pipe produces only odd harmonics (1st, 3rd, 5th, ...), giving a richer, more
+:::info A closed pipe produces only odd harmonics (1st, 3rd, 5th, ...), giving a richer, more
 "hollow" sound than an open pipe which produces all harmonics (1st, 2nd, 3rd, ...). This is why
-Clarinets (effectively closed pipes) sound different from flutes (open pipes).
-:::
+Clarinets (effectively closed pipes) sound different from flutes (open pipes). :::
 
 ## Common Pitfalls Extended
 
@@ -628,25 +631,26 @@ Tension changes, etc.
 
 ## Additional Practice Problems
 
-21. Calculate the wavelength of (a) a $100 \mathrm{ eV{}$ electron and (b) a $100 \mathrm{ eV{}$ proton.
- Comment on why electron microscopes have much better resolution than optical microscopes.
+21. Calculate the wavelength of (a) a $100 \mathrm{ eV{}$ electron and (b) a $100 \mathrm{ eV{}$
+    proton. Comment on why electron microscopes have much better resolution than optical
+    microscopes.
 
 22. A hydrogen atom is in the $n = 4$ state. Calculate the energies and wavelengths of all possible
- photons that could be emitted as the atom returns to the ground state. Identify which are in the
- visible spectrum.
+    photons that could be emitted as the atom returns to the ground state. Identify which are in the
+    visible spectrum.
 
 23. In a Young's double slit experiment using laser light of wavelength $633 \mathrm{ nm{}$The slits
- are $0.5 \mathrm{ mm{}$ apart and the screen is $2 \mathrm{ m{}$ away. Calculate (a) the fringe
- spacing, (b) the distance from the central maximum to the third bright fringe, and (c) what
- happens to the fringe spacing if the wavelength is changed to $450 \mathrm{ nm{}$.
+    are $0.5 \mathrm{ mm{}$ apart and the screen is $2 \mathrm{ m{}$ away. Calculate (a) the fringe
+    spacing, (b) the distance from the central maximum to the third bright fringe, and (c) what
+    happens to the fringe spacing if the wavelength is changed to $450 \mathrm{ nm{}$.
 
 24. An X-ray tube operates at $50 \mathrm{ kV{}$. Calculate (a) the minimum wavelength of X-rays
- produced, (b) the maximum energy of the X-ray photons in eV, and (c) the momentum of these
- photons.
+    produced, (b) the maximum energy of the X-ray photons in eV, and (c) the momentum of these
+    photons.
 
 25. Explain how the Heisenberg uncertainty principle implies that electrons cannot exist in
- stationary orbits (as in the Bohr model) and must be described by probability clouds. Reference
- the uncertainty in both position and momentum.
+    stationary orbits (as in the Bohr model) and must be described by probability clouds. Reference
+    the uncertainty in both position and momentum.
 
 ## Further Worked Examples
 
@@ -669,11 +673,9 @@ $$= \frac{1.988 \times 10^{-25}}{1.637 \times 10^{-13}} = 1.214 \times 10^{-12} 
 
 This is in the gamma ray region of the electromagnetic spectrum.
 
-:::info
-Pair production cannot occur in a vacuum -- it must happen near a nucleus to conserve
+:::info Pair production cannot occur in a vacuum -- it must happen near a nucleus to conserve
 Momentum. The recoil of the nucleus absorbs the excess momentum. This is why pair production is more
-Likely in high-atomic-number materials (lead, tungsten), which are used in radiation shielding.
-:::
+Likely in high-atomic-number materials (lead, tungsten), which are used in radiation shielding. :::
 
 ### Example 27: Energy Levels of Hydrogen -- Detailed Transitions
 
@@ -705,8 +707,8 @@ $$f = \frac{c}{\lambda} = \frac{3.0 \times 10^8}{4.863 \times 10^{-7}} = 6.17 \t
 ### Example 28: Standing Wave on a String -- All Harmonics
 
 A string of length $0.75 \mathrm{ m{}$ and mass $0.015 \mathrm{ kg{}$ is under a tension of
-$40 \mathrm{ N{}$. Calculate the fundamental frequency, the first three harmonic frequencies, and the
-Wave speed.
+$40 \mathrm{ N{}$. Calculate the fundamental frequency, the first three harmonic frequencies, and
+the Wave speed.
 
 **Step 1: Wave speed**
 
@@ -741,8 +743,8 @@ For electrons accelerated through $54 \mathrm{ V{}$:
 
 $$\lambda = \frac{1.226}{\sqrt{54}} = 0.167 \mathrm{ nm{}$$
 
-The observed peak angle gave $\lambda = 0.165 \mathrm{ nm{}$In excellent agreement. This confirmed de
-Broglie's hypothesis that $\lambda = h/p$.
+The observed peak angle gave $\lambda = 0.165 \mathrm{ nm{}$In excellent agreement. This confirmed
+de Broglie's hypothesis that $\lambda = h/p$.
 
 ### Standard Model Particles
 
@@ -765,18 +767,18 @@ In every particle interaction, the following must be conserved:
 
 ## Additional Practice Problems
 
-26. Calculate the energy of a photon with wavelength $0.02 \mathrm{ nm{}$ (hard X-ray region). Can this
- photon produce pair production? Justify your answer.
+26. Calculate the energy of a photon with wavelength $0.02 \mathrm{ nm{}$ (hard X-ray region). Can
+    this photon produce pair production? Justify your answer.
 
 27. An electron in a hydrogen atom is in the $n = 5$ state. List all possible transitions that emit
- photons in the visible spectrum and calculate their wavelengths.
+    photons in the visible spectrum and calculate their wavelengths.
 
 28. A string under tension $T$ has fundamental frequency $f_1$. By what factor must the tension
- change to double the fundamental frequency? By what factor must the length change?
+    change to double the fundamental frequency? By what factor must the length change?
 
-29. A positron with kinetic energy $2 \mathrm{ MeV{}$ collides with an electron at rest, producing two
- gamma ray photons. Calculate the wavelength of each photon (assume they have equal energy).
+29. A positron with kinetic energy $2 \mathrm{ MeV{}$ collides with an electron at rest, producing
+    two gamma ray photons. Calculate the wavelength of each photon (assume they have equal energy).
 
 30. Compare and contrast the properties of alpha, beta, and gamma radiation in a table. Include:
- nature, charge, mass, speed, penetrating power, ionising power, and deflection in magnetic
- fields.
+    nature, charge, mass, speed, penetrating power, ionising power, and deflection in magnetic
+    fields.

@@ -1,8 +1,11 @@
 ---
 title: Complex Numbers
-description: "Comprehensive IB mathematics notes on Complex Numbers. Covers key definitions, worked examples, and practice problems for revision."
+description:
+  'Comprehensive IB mathematics notes on Complex Numbers. Covers key definitions, worked examples,
+  and practice problems for revision.'
 slug: complex-numbers
 ---
+
 ## The Imaginary Unit
 
 ### Definition
@@ -16,8 +19,9 @@ The powers of $i$ are cyclic with period $4$: $i^n = i^{n \bmod 4}$.
 
 ### Motivation
 
-The equation $x^2 + 1 = 0$ has no real solutions. Extending $\mathbb{'\{'}R{'\}'}$ to include $i$ yields the
-Field of complex numbers, in which every polynomial has a root (the Fundamental Theorem of Algebra).
+The equation $x^2 + 1 = 0$ has no real solutions. Extending $\mathbb{'\{'}R{'\}'}$ to include $i$
+yields the Field of complex numbers, in which every polynomial has a root (the Fundamental Theorem
+of Algebra).
 
 ---
 
@@ -92,13 +96,13 @@ The **principal argument**, denoted $\mathrm{Arg}(z)$Is restricted to $(-\pi, \p
 
 **Quadrant-aware calculation:**
 
-| Condition | $\arg(z)$ |
+| Condition          | $\arg(z)$            |
 | :----------------- | :------------------- |
-| $a \gt 0$ | $\arctan(b/a)$ |
+| $a \gt 0$          | $\arctan(b/a)$       |
 | $a \lt 0, b \ge 0$ | $\arctan(b/a) + \pi$ |
 | $a \lt 0, b \lt 0$ | $\arctan(b/a) - \pi$ |
-| $a = 0, b \gt 0$ | $\pi/2$ |
-| $a = 0, b \lt 0$ | $-\pi/2$ |
+| $a = 0, b \gt 0$   | $\pi/2$              |
+| $a = 0, b \lt 0$   | $-\pi/2$             |
 
 ---
 
@@ -248,25 +252,25 @@ $$\cos\theta = \frac{e^{i\theta} + e^{-i\theta}}{2}, \qquad \sin\theta = \frac{e
 ## Common Pitfalls
 
 1. **Argument quadrant errors.** $\arctan(b/a)$ alone does not determine the correct quadrant.
- Always check the signs of $a$ and $b$ and adjust by $\pi$ when the point lies in the second or
- third quadrant.
+   Always check the signs of $a$ and $b$ and adjust by $\pi$ when the point lies in the second or
+   third quadrant.
 
 2. **Conjugate distribution.** $\overline{z_1 + z_2} = \bar{z}_1 + \bar{z}_2$ but
- $\overline{z_1 z_2} \ne \bar{z}_1 \cdot \bar{z}_2$ is wrong -- it IS $\bar{z}_1 \cdot \bar{z}_2$.
- The error is thinking conjugation distributes over _all_ operations differently; it distributes
- correctly over addition and multiplication.
+   $\overline{z_1 z_2} \ne \bar{z}_1 \cdot \bar{z}_2$ is wrong -- it IS $\bar{z}_1 \cdot \bar{z}_2$.
+   The error is thinking conjugation distributes over _all_ operations differently; it distributes
+   correctly over addition and multiplication.
 
 3. **Missing roots.** An $n$-th degree equation has exactly $n$ roots (counting multiplicity) in
- $\mathbb{'\{'}C{'\}'}$. When finding $n$-th roots, always generate all $n$ values by varying $k$.
+   $\mathbb{'\{'}C{'\}'}$. When finding $n$-th roots, always generate all $n$ values by varying $k$.
 
 4. **Modulus of a product.** $|z_1 z_2| = |z_1|\,|z_2|$But $|z_1 + z_2| \ne |z_1| + |z_2|$ in
- general (equality holds only when $z_1$ and $z_2$ have the same argument).
+   general (equality holds only when $z_1$ and $z_2$ have the same argument).
 
 5. **Polar form of zero.** $z = 0$ has no well-defined argument and cannot be expressed in polar
- form $r\,\mathrm{cis}\;\theta$ since $r = 0$.
+   form $r\,\mathrm{cis}\;\theta$ since $r = 0$.
 
 6. **De Moivre's theorem scope.** De Moivre's theorem as stated holds for integer exponents. For
- non-integer exponents, use $r^n e^{in\theta}$But note that the result is multi-valued.
+   non-integer exponents, use $r^n e^{in\theta}$But note that the result is multi-valued.
 
 ---
 
@@ -366,7 +370,8 @@ $|z_1 + z_2|^2 = 2(9 + 25) - 49 = 68 - 49 = 19$. So $|z_1 + z_2| = \sqrt{19}$.
 
 **Worked Example: Division in Polar Form**
 
-Express $\dfrac{z_1}{z_2}$ in Cartesian form where $z_1 = 4\,\mathrm{cis}\!\left(\dfrac{2\pi}{3}\right)$ and
+Express $\dfrac{z_1}{z_2}$ in Cartesian form where
+$z_1 = 4\,\mathrm{cis}\!\left(\dfrac{2\pi}{3}\right)$ and
 $z_2 = 2\,\mathrm{cis}\!\left(\dfrac{\pi}{6}\right)$.
 
 <details>
@@ -395,8 +400,8 @@ Find $\sqrt{-24 - 18i}$. Let $\sqrt{-24 - 18i} = a + bi$ where $a, b \in \mathbb
 $a^2 - b^2 = -24$ and $2ab = -18$So $b = -9/a$.
 
 Substituting: $a^2 - 81/a^2 = -24 \implies a^4 + 24a^2 - 81 = 0$. Let $u = a^2$:
-$u^2 + 24u - 81 = 0 \implies u = \dfrac{-24 \pm \sqrt{576 + 324}}{2} = \dfrac{-24 \pm 30}{2}$.
-Since $u = a^2 \ge 0$: $u = 3$So $a = \sqrt{3}$ (taking $a \gt 0$) and $b = -9/\sqrt{3} = -3\sqrt{3}$.
+$u^2 + 24u - 81 = 0 \implies u = \dfrac{-24 \pm \sqrt{576 + 324}}{2} = \dfrac{-24 \pm 30}{2}$. Since
+$u = a^2 \ge 0$: $u = 3$So $a = \sqrt{3}$ (taking $a \gt 0$) and $b = -9/\sqrt{3} = -3\sqrt{3}$.
 
 Thus $\sqrt{\Delta} = \sqrt{3} - 3\sqrt{3}\,i$.
 
@@ -467,23 +472,25 @@ These five roots lie on a circle of radius $2$Equally spaced by $\dfrac{2\pi}{5}
 ## Additional Common Pitfalls
 
 - **Forgetting to convert to polar before using De Moivre.** De Moivre's theorem requires the form
- $r\,\mathrm{cis}\;\theta$. Attempting to raise $a + bi$ to a power directly without conversion leads to
- algebraic errors.
+  $r\,\mathrm{cis}\;\theta$. Attempting to raise $a + bi$ to a power directly without conversion
+  leads to algebraic errors.
 
 - **Square root of a complex number gives two values.** Every nonzero complex number has exactly two
- square roots. When solving $\sqrt{\Delta}$ in the quadratic formula with complex coefficients, both
- signs must be considered.
+  square roots. When solving $\sqrt{\Delta}$ in the quadratic formula with complex coefficients,
+  both signs must be considered.
 
 - **Principal argument range.** $\mathrm{Arg}(z) \in (-\pi, \pi]$. If De Moivre produces an argument
- outside this range, add or subtract $2\pi$ to normalise. For example, $\mathrm{cis}\!\left(\dfrac{7\pi}{4}\right)$
- is preferred over $\mathrm{cis}\!\left(-\dfrac{\pi}{4}\right)$ in some contexts, but both are valid.
+  outside this range, add or subtract $2\pi$ to normalise. For example,
+  $\mathrm{cis}\!\left(\dfrac{7\pi}{4}\right)$ is preferred over
+  $\mathrm{cis}\!\left(-\dfrac{\pi}{4}\right)$ in some contexts, but both are valid.
 
-- **Conjugate pair errors in polynomials.** If $a + bi$ is a root of a polynomial with real coefficients,
- then $a - bi$ is also a root. Forgetting this symmetry loses information about the polynomial.
+- **Conjugate pair errors in polynomials.** If $a + bi$ is a root of a polynomial with real
+  coefficients, then $a - bi$ is also a root. Forgetting this symmetry loses information about the
+  polynomial.
 
-- **Modulus of a sum vs. Sum of moduli.** $|z_1 + z_2| \le |z_1| + |z_2|$ with equality only when $z_1$
- and $z_2$ point in the same direction. Computing $|z_1 + z_2|$ as $|z_1| + |z_2|$ is almost always
- wrong.
+- **Modulus of a sum vs. Sum of moduli.** $|z_1 + z_2| \le |z_1| + |z_2|$ with equality only when
+  $z_1$ and $z_2$ point in the same direction. Computing $|z_1 + z_2|$ as $|z_1| + |z_2|$ is almost
+  always wrong.
 
 ---
 
@@ -544,21 +551,19 @@ $z_1, z_2 \in \mathbb{'\{'}C{'\}'}$ (parallelogram law).
 <summary>Answers to Additional Problems</summary>
 
 **Problem 9:** $|z| = 5$$|w| = \sqrt{5}$. $|z^2 w| = |z|^2|w| = 25\sqrt{5}$.
-$\arg(z) = \arctan(4/3)$$\arg(w) = \arctan(-2)$. $\arg(z^2 w) = 2\arctan(4/3) + \arctan(-2)$.
-Since $z^2 = (3+4i)^2 = -7 + 24i$ and $z^2 w = (-7+24i)(1-2i) = -7 + 14i + 24i + 48 = 41 + 38i$.
+$\arg(z) = \arctan(4/3)$$\arg(w) = \arctan(-2)$. $\arg(z^2 w) = 2\arctan(4/3) + \arctan(-2)$. Since
+$z^2 = (3+4i)^2 = -7 + 24i$ and $z^2 w = (-7+24i)(1-2i) = -7 + 14i + 24i + 48 = 41 + 38i$.
 $|z^2 w| = \sqrt{41^2 + 38^2} = \sqrt{1681 + 1444} = \sqrt{3125} = 25\sqrt{5}$. Confirmed.
 $\arg(z^2 w) = \arctan(38/41) \approx 0.747\;\mathrm{rad}$.
 
 **Problem 10:** Let $z = x + yi$ with $x \gt 0$$y \gt 0$ (since $\arg(z) = \pi/4$), and $y = x$.
-$|z - 2i|^2 = x^2 + (x-2)^2 = 2x^2 - 4x + 4$.
-$|z + 4|^2 = (x+4)^2 + x^2 = 2x^2 + 8x + 16$.
-Setting equal: $2x^2 - 4x + 4 = 2x^2 + 8x + 16 \implies -12x = 12 \implies x = -1$.
-But $x \gt 0$ is required. This gives no solution in the principal argument range. Rechecking:
+$|z - 2i|^2 = x^2 + (x-2)^2 = 2x^2 - 4x + 4$. $|z + 4|^2 = (x+4)^2 + x^2 = 2x^2 + 8x + 16$. Setting
+equal: $2x^2 - 4x + 4 = 2x^2 + 8x + 16 \implies -12x = 12 \implies x = -1$. But $x \gt 0$ is
+required. This gives no solution in the principal argument range. Rechecking:
 $\arg(z) = \pi/4 \implies z = t(1 + i)$ for $t \gt 0$.
 $|t + ti - 2i|^2 = t^2 + (t-2)^2 = 2t^2 - 4t + 4$.
-$|t + ti + 4|^2 = (t+4)^2 + t^2 = 2t^2 + 8t + 16$.
-$2t^2 - 4t + 4 = 2t^2 + 8t + 16 \implies t = -1$. No positive solution exists. The locus circle and
-Ray do not intersect.
+$|t + ti + 4|^2 = (t+4)^2 + t^2 = 2t^2 + 8t + 16$. $2t^2 - 4t + 4 = 2t^2 + 8t + 16 \implies t = -1$.
+No positive solution exists. The locus circle and Ray do not intersect.
 
 **Problem 11:** From De Moivre, equating imaginary parts:
 $\sin 3\theta = 3\cos^2\theta\sin\theta - \sin^3\theta = 3(1 - \sin^2\theta)\sin\theta - \sin^3\theta = 3\sin\theta - 4\sin^3\theta$.
@@ -569,22 +574,25 @@ Note: the problem statement claims $-10$But the correct answer is $-92$. This de
 Importance of always verifying claims.
 
 **Problem 13:** Let $z = x + yi$. $|z - (3+4i)|^2 = (x-3)^2 + (y-4)^2$.
-$|z - (-1-2i)|^2 = (x+1)^2 + (y+2)^2$.
-Setting $(x-3)^2 + (y-4)^2 = 4[(x+1)^2 + (y+2)^2]$:
+$|z - (-1-2i)|^2 = (x+1)^2 + (y+2)^2$. Setting $(x-3)^2 + (y-4)^2 = 4[(x+1)^2 + (y+2)^2]$:
 $x^2 - 6x + 9 + y^2 - 8y + 16 = 4x^2 + 8x + 4 + 4y^2 + 16y + 16$.
-$-3x^2 - 14x - 3y^2 - 24y + 5 = 0$.
-$x^2 + y^2 + \dfrac{14}{3}x + 8y = \dfrac{5}{3}$.
-Completing squares: $\left(x + \dfrac{7}{3}\right)^2 + (y + 4)^2 = \dfrac{5}{3} + \dfrac{49}{9} + 16 = \dfrac{200}{9}$.
+$-3x^2 - 14x - 3y^2 - 24y + 5 = 0$. $x^2 + y^2 + \dfrac{14}{3}x + 8y = \dfrac{5}{3}$. Completing
+squares:
+$\left(x + \dfrac{7}{3}\right)^2 + (y + 4)^2 = \dfrac{5}{3} + \dfrac{49}{9} + 16 = \dfrac{200}{9}$.
 This is a circle with centre $\left(-\dfrac{7}{3}, -4\right)$ and radius $\dfrac{10\sqrt{2}}{3}$.
 
-**Problem 14:** $z^4 + z^2 + 1 = 0$. Let $u = z^2$: $u^2 + u + 1 = 0 \implies u = \dfrac{-1 \pm \sqrt{3}\,i}{2}$.
-So $z^2 = \mathrm{cis}\!\left(\dfrac{2\pi}{3}\right)$ or $z^2 = \mathrm{cis}\!\left(-\dfrac{2\pi}{3}\right)$.
-$z = \pm\,\mathrm{cis}\!\left(\dfrac{\pi}{3}\right)$ or $z = \pm\,\mathrm{cis}\!\left(-\dfrac{\pi}{3}\right)$.
-The four roots are $\pm\dfrac{1}{2} \pm \dfrac{\sqrt{3}}{2}i$Which are the primitive 6th roots of unity.
+**Problem 14:** $z^4 + z^2 + 1 = 0$. Let $u = z^2$:
+$u^2 + u + 1 = 0 \implies u = \dfrac{-1 \pm \sqrt{3}\,i}{2}$. So
+$z^2 = \mathrm{cis}\!\left(\dfrac{2\pi}{3}\right)$ or
+$z^2 = \mathrm{cis}\!\left(-\dfrac{2\pi}{3}\right)$.
+$z = \pm\,\mathrm{cis}\!\left(\dfrac{\pi}{3}\right)$ or
+$z = \pm\,\mathrm{cis}\!\left(-\dfrac{\pi}{3}\right)$. The four roots are
+$\pm\dfrac{1}{2} \pm \dfrac{\sqrt{3}}{2}i$Which are the primitive 6th roots of unity.
 
-**Problem 15:** $|z_1 + z_2|^2 = (z_1 + z_2)\overline{(z_1 + z_2)} = (z_1 + z_2)(\bar{z}_1 + \bar{z}_2) = |z_1|^2 + z_1\bar{z}_2 + \bar{z}_1 z_2 + |z_2|^2$.
-Similarly, $|z_1 - z_2|^2 = |z_1|^2 - z_1\bar{z}_2 - \bar{z}_1 z_2 + |z_2|^2$.
-Adding: $|z_1 + z_2|^2 + |z_1 - z_2|^2 = 2|z_1|^2 + 2|z_2|^2 = 2(|z_1|^2 + |z_2|^2)$.
+**Problem 15:**
+$|z_1 + z_2|^2 = (z_1 + z_2)\overline{(z_1 + z_2)} = (z_1 + z_2)(\bar{z}_1 + \bar{z}_2) = |z_1|^2 + z_1\bar{z}_2 + \bar{z}_1 z_2 + |z_2|^2$.
+Similarly, $|z_1 - z_2|^2 = |z_1|^2 - z_1\bar{z}_2 - \bar{z}_1 z_2 + |z_2|^2$. Adding:
+$|z_1 + z_2|^2 + |z_1 - z_2|^2 = 2|z_1|^2 + 2|z_2|^2 = 2(|z_1|^2 + |z_2|^2)$.
 
 </details>
 
@@ -592,12 +600,16 @@ Adding: $|z_1 + z_2|^2 + |z_1 - z_2|^2 = 2|z_1|^2 + 2|z_2|^2 = 2(|z_1|^2 + |z_2|
 
 ## If You Get These Wrong, Revise:
 
-- **Trigonometric identities** → Review the trigonometry section for angle addition and double-angle formulas
-- **Polar coordinates and argument calculation** → Review [./complex-numbers](complex-numbers) (section on Argument)
+- **Trigonometric identities** → Review the trigonometry section for angle addition and double-angle
+  formulas
+- **Polar coordinates and argument calculation** → Review [./complex-numbers](complex-numbers)
+  (section on Argument)
 - **Binomial theorem expansion** → Review algebra and series topics
-- **Polynomial roots and Vieta's formulas** → Review [./complex-numbers](complex-numbers) (section on Sum of Roots)
+- **Polynomial roots and Vieta's formulas** → Review [./complex-numbers](complex-numbers) (section
+  on Sum of Roots)
 
-For the A-Level Further Maths treatment of this topic, see [Complex Numbers](https://alevel.wyattau.com/docs/further-maths/pure-mathematics/further-complex-numbers).
+For the A-Level Further Maths treatment of this topic, see
+[Complex Numbers](https://alevel.wyattau.com/docs/further-maths/pure-mathematics/further-complex-numbers).
 
 ## Summary
 

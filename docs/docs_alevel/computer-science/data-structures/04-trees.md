@@ -1,6 +1,8 @@
 ---
 title: Trees
-description: "A-Level Computer Science notes on Trees: 1. Tree Fundamentals; Definition; Terminology; Properties with worked examples and exam-style questions."
+description:
+  'A-Level Computer Science notes on Trees: 1. Tree Fundamentals; Definition; Terminology;
+  Properties with worked examples and exam-style questions.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - ComputerScience
@@ -9,6 +11,7 @@ categories:
   - ComputerScience
 slug: trees
 ---
+
 ## 1. Tree Fundamentals
 
 ### Definition
@@ -22,17 +25,17 @@ More subtrees, each of which is itself a tree.
 
 ### Terminology
 
-| Term | Definition |
+| Term          | Definition                                          |
 | ------------- | --------------------------------------------------- |
-| Root | The topmost node; has no parent |
-| Leaf | A node with no children |
-| Internal node | A node with at least one child |
-| Edge | Connection between parent and child |
-| Path | Sequence of edges from one node to another |
-| Depth | Number of edges from root to a node (root: depth 0) |
-| Height | Maximum depth of any node in the tree |
-| Subtree | A node and all its descendants |
-| Degree | Number of children of a node |
+| Root          | The topmost node; has no parent                     |
+| Leaf          | A node with no children                             |
+| Internal node | A node with at least one child                      |
+| Edge          | Connection between parent and child                 |
+| Path          | Sequence of edges from one node to another          |
+| Depth         | Number of edges from root to a node (root: depth 0) |
+| Height        | Maximum depth of any node in the tree               |
+| Subtree       | A node and all its descendants                      |
+| Degree        | Number of children of a node                        |
 
 **Theorem.** A tree with $n$ nodes has exactly $n - 1$ edges.
 
@@ -66,11 +69,11 @@ $h \geq \lceil \log_2(n+1) \rceil - 1 = \lfloor \log_2 n \rfloor$. $\square$
 
 ### Full, Complete, and Perfect Binary Trees
 
-| Type | Definition |
+| Type     | Definition                                                                                 |
 | -------- | ------------------------------------------------------------------------------------------ |
-| Full | Every node has 0 or 2 children |
+| Full     | Every node has 0 or 2 children                                                             |
 | Complete | All levels except possibly the last are completely filled; last level filled left to right |
-| Perfect | All internal nodes have 2 children; all leaves at the same depth |
+| Perfect  | All internal nodes have 2 children; all leaves at the same depth                           |
 
 <hr />
 
@@ -116,14 +119,14 @@ def bst_insert(root, key):
 
 **Correctness proof.** We prove that `bst_insert` maintains the BST property.
 
-_Base case._ Inserting into an empty tree creates a single-node tree, which satisfies the
-BST property.
+_Base case._ Inserting into an empty tree creates a single-node tree, which satisfies the BST
+property.
 
 _Inductive step._ Assume `bst_insert(root.left, key)` (or `root.right`) returns a valid BST. If
-`key < root.key`The new node is inserted in the left subtree. By the inductive hypothesis, the
-Left subtree is a valid BST, and all its keys are less than `root.key` (by the original BST property
-And because `key < root.key`). Similarly for the right subtree. The root's key remains between all
-Left and right keys. Hence the full tree is a valid BST. $\square$
+`key < root.key`The new node is inserted in the left subtree. By the inductive hypothesis, the Left
+subtree is a valid BST, and all its keys are less than `root.key` (by the original BST property And
+because `key < root.key`). Similarly for the right subtree. The root's key remains between all Left
+and right keys. Hence the full tree is a valid BST. $\square$
 
 **Complexity:** $O(h)$.
 
@@ -134,7 +137,7 @@ Three cases:
 1. **Leaf node:** remove it.
 2. **Node with one child:** Replace the node with its child.
 3. **Node with two children:** Replace with its **in-order successor** (smallest node in right
- subtree), then delete the successor.
+   subtree), then delete the successor.
 
 ```python
 def bst_delete(root, key):
@@ -172,12 +175,12 @@ Or 2), the BST property holds. $\square$
 
 ## 4. Tree Traversals
 
-| Traversal | Order | Use case |
+| Traversal   | Order                | Use case             |
 | ----------- | -------------------- | -------------------- |
-| In-order | Left, Root, Right | Sorted output (BST) |
-| Pre-order | Root, Left, Right | Copy tree, prefix |
-| Post-order | Left, Right, Root | Delete tree, postfix |
-| Level-order | Level by level (BFS) | Breadth processing |
+| In-order    | Left, Root, Right    | Sorted output (BST)  |
+| Pre-order   | Root, Left, Right    | Copy tree, prefix    |
+| Post-order  | Left, Right, Root    | Delete tree, postfix |
+| Level-order | Level by level (BFS) | Breadth processing   |
 
 ```python
 def inorder(node):
@@ -332,16 +335,14 @@ Elements). $\square$
 
 To guarantee $O(\log n)$ operations, we need **balanced** BSTs:
 
-| Structure | Height bound | Notes |
+| Structure | Height bound            | Notes                          |
 | --------- | ----------------------- | ------------------------------ |
-| AVL tree | $\leq 1.44 \log_2(n+2)$ | Strict balance |
-| Red-black | $\leq 2 \log_2(n+1)$ | Weaker balance, faster inserts |
-| B-tree | $O(\log_b n)$ | Used in databases |
+| AVL tree  | $\leq 1.44 \log_2(n+2)$ | Strict balance                 |
+| Red-black | $\leq 2 \log_2(n+1)$    | Weaker balance, faster inserts |
+| B-tree    | $O(\log_b n)$           | Used in databases              |
 
-:::info
-Board-specific A Level exams only require understanding of basic BSTs and heaps.
-AVL trees and red-black trees are mentioned for context but not examined in detail.
-:::
+:::info Board-specific A Level exams only require understanding of basic BSTs and heaps. AVL trees
+and red-black trees are mentioned for context but not examined in detail. :::
 
 <hr />
 
@@ -459,10 +460,10 @@ Build heap: `[5, 3, 4, 1, 1]`
 
 | Step | Swap with end | Heap before heapify | After heapify | Sorted portion |
 | ---- | ------------- | ------------------- | ------------- | -------------- |
-| 1 | 5 ↔ 1 | [1, 3, 4, 1, 5] | [4, 3, 1, 1] | [5] |
-| 2 | 4 ↔ 1 | [1, 3, 1, 4, 5] | [3, 1, 1] | [4, 5] |
-| 3 | 3 ↔ 1 | [1, 1, 3, 4, 5] | [1, 1] | [3, 4, 5] |
-| 4 | 1 ↔ 1 | [1, 1, 3, 4, 5] | [1] | [1, 3, 4, 5] |
+| 1    | 5 ↔ 1        | [1, 3, 4, 1, 5]     | [4, 3, 1, 1]  | [5]            |
+| 2    | 4 ↔ 1        | [1, 3, 1, 4, 5]     | [3, 1, 1]     | [4, 5]         |
+| 3    | 3 ↔ 1        | [1, 1, 3, 4, 5]     | [1, 1]        | [3, 4, 5]      |
+| 4    | 1 ↔ 1        | [1, 1, 3, 4, 5]     | [1]           | [1, 3, 4, 5]   |
 
 Final: `[1, 1, 3, 4, 5]`
 
@@ -945,21 +946,21 @@ Verification of parent-child formulas:
 
 | Node | Index | Left child (2i+1) | Right child (2i+2) |
 | ---- | ----- | ----------------- | ------------------ |
-| 4 | 0 | 2(0)+1 = 1 → 2 | 2(0)+2 = 2 → 6 |
-| 2 | 1 | 2(1)+1 = 3 → 1 | 2(1)+2 = 4 → 3 |
-| 6 | 2 | 2(2)+1 = 5 → 5 | 2(2)+2 = 6 → 7 |
-| 1 | 3 | 2(3)+1 = 7 (none) | 2(3)+2 = 8 (none) |
+| 4    | 0     | 2(0)+1 = 1 → 2    | 2(0)+2 = 2 → 6     |
+| 2    | 1     | 2(1)+1 = 3 → 1    | 2(1)+2 = 4 → 3     |
+| 6    | 2     | 2(2)+1 = 5 → 5    | 2(2)+2 = 6 → 7     |
+| 1    | 3     | 2(3)+1 = 7 (none) | 2(3)+2 = 8 (none)  |
 
 Parent verification:
 
 | Node | Index | Parent ⌊(i-1)/2⌋ |
 | ---- | ----- | ---------------- |
-| 2 | 1 | ⌊0/2⌋ = 0 → 4 |
-| 6 | 2 | ⌊1/2⌋ = 0 → 4 |
-| 1 | 3 | ⌊2/2⌋ = 1 → 2 |
-| 3 | 4 | ⌊3/2⌋ = 1 → 2 |
-| 5 | 5 | ⌊4/2⌋ = 2 → 6 |
-| 7 | 6 | ⌊5/2⌋ = 2 → 6 |
+| 2    | 1     | ⌊0/2⌋ = 0 → 4    |
+| 6    | 2     | ⌊1/2⌋ = 0 → 4    |
+| 1    | 3     | ⌊2/2⌋ = 1 → 2    |
+| 3    | 4     | ⌊3/2⌋ = 1 → 2    |
+| 5    | 5     | ⌊4/2⌋ = 2 → 6    |
+| 7    | 6     | ⌊5/2⌋ = 2 → 6    |
 
 All relationships match. ✓
 
@@ -998,8 +999,8 @@ Approximately half the height.
 - BST A worst case: 1024 comparisons
 - BST B worst case: $\lfloor \log_2 1024 \rfloor + 1 = 10 + 1 = 11$ comparisons
 
-BST B is approximately $n / \log_2 n$ times faster. For large $n$This difference is enormous,
-Which is why balanced BSTs (AVL, red-black trees) are preferred in practice.
+BST B is approximately $n / \log_2 n$ times faster. For large $n$This difference is enormous, Which
+is why balanced BSTs (AVL, red-black trees) are preferred in practice.
 
 </details>
 

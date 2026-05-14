@@ -1,9 +1,12 @@
 ---
 id: sharing-and-permissions
 title: Sharing and Permissions
-description: "Sharing and Permissions — SMB/CIFS; SMB Protocol Overview; SMB Dialect Negotiation; SMB3 Features in Detail with worked examples and exam-style questions."
+description:
+  'Sharing and Permissions — SMB/CIFS; SMB Protocol Overview; SMB Dialect Negotiation; SMB3 Features
+  in Detail with worked examples and exam-style questions.'
 slug: sharing-and-permissions
 ---
+
 ## SMB/CIFS
 
 ### SMB Protocol Overview
@@ -12,14 +15,14 @@ Server Message Block (SMB) is the primary file sharing protocol for Windows envi
 Uses Samba to provide SMB sharing. Modern versions support SMB 3.1.1, which includes encryption,
 Compression, and continuous availability.
 
-| SMB Version | Features | Security | Recommendation |
+| SMB Version | Features                            | Security          | Recommendation       |
 | ----------- | ----------------------------------- | ----------------- | -------------------- |
-| SMB1 | Legacy, no encryption | Broken (WannaCry) | Disable always |
-| SMB2 | Large reads/writes, oplocking | Improved | Minimum acceptable |
-| SMB2.1 | Improved oplocking | Good | Supported for legacy |
-| SMB3 | Encryption, continuous availability | Strong | Recommended minimum |
-| SMB3.0.2 | Offload data transfer | Strong | Recommended |
-| SMB3.1.1 | Pre-authentication integrity | Strongest | Recommended |
+| SMB1        | Legacy, no encryption               | Broken (WannaCry) | Disable always       |
+| SMB2        | Large reads/writes, oplocking       | Improved          | Minimum acceptable   |
+| SMB2.1      | Improved oplocking                  | Good              | Supported for legacy |
+| SMB3        | Encryption, continuous availability | Strong            | Recommended minimum  |
+| SMB3.0.2    | Offload data transfer               | Strong            | Recommended          |
+| SMB3.1.1    | Pre-authentication integrity        | Strongest         | Recommended          |
 
 ### SMB Dialect Negotiation
 
@@ -60,29 +63,30 @@ Throughput without CPU involvement.
 TrueNAS offers two approaches to SMB permissions:
 
 1. **SMB Dataset Permissions (simplified):** Set via the SMB share configuration. Options include:
- - `DEFAULT` — Use the dataset's Unix permissions
- - `RESTRICTED` — Only the owner can access
- - `BUILTIN_ADMINISTRATORS` — Windows admin group gets full access
- - `BUILTIN_USERS` — Windows users group gets read access
+
+- `DEFAULT` — Use the dataset's Unix permissions
+- `RESTRICTED` — Only the owner can access
+- `BUILTIN_ADMINISTRATORS` — Windows admin group gets full access
+- `BUILTIN_USERS` — Windows users group gets read access
 
 2. **ACL Management (advanced):** Use Windows-style ACLs via the TrueNAS ACL editor. This provides
- fine-grained control over user and group permissions, including inheritance.
+   fine-grained control over user and group permissions, including inheritance.
 
 ### SMB Share Configuration Options
 
-| Option | Default | Description |
+| Option                         | Default             | Description                                   |
 | ------------------------------ | ------------------- | --------------------------------------------- |
-| Name | Dataset name | Share name visible to clients |
-| Path | Dataset mount point | Filesystem path to share |
-| Comment | Empty | Description visible in network browsing |
-| Purpose | No special purpose | Optimizes settings for specific use cases |
-| Hosts Allow | All | IP addresses/networks allowed to connect |
-| Hosts Deny | None | IP addresses/networks denied access |
-| Browsable | Yes | Whether the share appears in network browsing |
-| Recycle Bin | Disabled | Enables a recycle bin for deleted files |
-| Shadow Copy | Disabled | Enables previous versions (Windows) |
-| Access Based Share Enumeration | No | Only show shares the user has access to |
-| macOS Streaming | No | Optimize for macOS streaming workloads |
+| Name                           | Dataset name        | Share name visible to clients                 |
+| Path                           | Dataset mount point | Filesystem path to share                      |
+| Comment                        | Empty               | Description visible in network browsing       |
+| Purpose                        | No special purpose  | Optimizes settings for specific use cases     |
+| Hosts Allow                    | All                 | IP addresses/networks allowed to connect      |
+| Hosts Deny                     | None                | IP addresses/networks denied access           |
+| Browsable                      | Yes                 | Whether the share appears in network browsing |
+| Recycle Bin                    | Disabled            | Enables a recycle bin for deleted files       |
+| Shadow Copy                    | Disabled            | Enables previous versions (Windows)           |
+| Access Based Share Enumeration | No                  | Only show shares the user has access to       |
+| macOS Streaming                | No                  | Optimize for macOS streaming workloads        |
 
 ### macOS Compatibility
 
@@ -90,7 +94,7 @@ MacOS SMB clients have known issues with extended attributes, file locking, and 
 Improve macOS compatibility:
 
 1. Enable **VFS Modules:** `catia` (character translation), `fruit` (macOS resource fork support),
- and `streams_xattr` (extended attribute storage).
+   and `streams_xattr` (extended attribute storage).
 2. Set the appropriate SMB protocol version in the share configuration.
 3. Use `fruit:encoding = native` for better performance with Time Machine backups.
 
@@ -120,19 +124,19 @@ TrueNAS can act as a Time Machine backup target for macOS:
 - Time Machine creates sparse bundle disk images. These grow over time and cannot be shrunk.
 - Enable quotas on the Time Machine dataset to prevent it from consuming all available space.
 - Time Machine backups are not compatible with ZFS snapshots — the sparse bundle format does not
- support efficient snapshotting.
+  support efficient snapshotting.
 
 ### Opportunistic Locking (OpLocks)
 
 OpLocks allow a client to cache file data locally, improving performance. However, they can cause
 Issues with database files and applications that require strict file consistency:
 
-| OpLock Type | Description | Risk |
+| OpLock Type         | Description                       | Risk                                       |
 | ------------------- | --------------------------------- | ------------------------------------------ |
-| Level 1 (Exclusive) | Client caches reads and writes | Data corruption if multiple clients access |
-| Level 2 (Shared) | Client caches reads only | Lower risk |
-| Batch | Client can defer close operations | Database corruption risk |
-| Lease (SMB2+) | Extended oplock with durability | Same risks as Level 1 |
+| Level 1 (Exclusive) | Client caches reads and writes    | Data corruption if multiple clients access |
+| Level 2 (Shared)    | Client caches reads only          | Lower risk                                 |
+| Batch               | Client can defer close operations | Database corruption risk                   |
+| Lease (SMB2+)       | Extended oplock with durability   | Same risks as Level 1                      |
 
 For database files (SQLite, Microsoft Access), disable oplocks on the share:
 
@@ -148,11 +152,11 @@ vfs objects = no
 SMB signing adds a cryptographic signature to every SMB message, preventing man-in-the-middle
 Attacks. It is required for SMB3 encryption.
 
-| Setting | Performance Impact | Security |
+| Setting              | Performance Impact | Security |
 | -------------------- | ------------------ | -------- |
-| Disabled | None | Low |
-| Required (auto) | 5–10% | Medium |
-| Required (mandatory) | 10–15% | High |
+| Disabled             | None               | Low      |
+| Required (auto)      | 5–10%              | Medium   |
+| Required (mandatory) | 10–15%             | High     |
 
 ### SMB Logging and Debugging
 
@@ -176,16 +180,16 @@ smbstatus
 
 ### NFSv3 vs NFSv4
 
-| Feature | NFSv3 | NFSv4 |
+| Feature            | NFSv3                       | NFSv4                       |
 | ------------------ | --------------------------- | --------------------------- |
-| Stateful | No | Yes (leases, delegations) |
-| Locking | NLM (separate protocol) | Integrated |
-| Security | AUTH_SYS / AUTH_KRB5 | Mandatory security flavors |
-| Firewall | Uses random ports (rpcbind) | Single port (2049) |
-| ACLs | POSIX ACLs | NFSv4 ACLs (richer) |
-| Caching | Client-side caching limited | Delegations improve caching |
-| Character encoding | Not specified | UTF-8 required |
-| Pseudo-filesystem | Not supported | Referrals and pseudo-fs |
+| Stateful           | No                          | Yes (leases, delegations)   |
+| Locking            | NLM (separate protocol)     | Integrated                  |
+| Security           | AUTH_SYS / AUTH_KRB5        | Mandatory security flavors  |
+| Firewall           | Uses random ports (rpcbind) | Single port (2049)          |
+| ACLs               | POSIX ACLs                  | NFSv4 ACLs (richer)         |
+| Caching            | Client-side caching limited | Delegations improve caching |
+| Character encoding | Not specified               | UTF-8 required              |
+| Pseudo-filesystem  | Not supported               | Referrals and pseudo-fs     |
 
 NFSv4 is recommended for all new deployments. It simplifies firewall configuration (single port),
 Provides better security, and supports more robust locking.
@@ -195,14 +199,14 @@ Provides better security, and supports more robust locking.
 NFSv4.1 added:
 
 - **pNFS (Parallel NFS):** Allows clients to access storage devices directly for data transfer,
- bypassing the NFS server for data path. The metadata server still handles metadata operations.
+  bypassing the NFS server for data path. The metadata server still handles metadata operations.
 - **Session trunking:** Multiple connections between client and server for failover and load
- balancing.
+  balancing.
 
 NFSv4.2 added:
 
 - **Server-side copy:** COPY operation allows the server to copy data without sending it through the
- client.
+  client.
 - **Labeled NFS:** Security labels (SELinux, AppArmor) on files.
 - **Space reservation:** Clients can reserve space before writing.
 - **Application I/O hints:** Clients can provide I/O size and alignment hints.
@@ -217,25 +221,25 @@ NFSv4.2 added:
 
 ### NFS Export Configuration
 
-| Option | Description | Recommended Setting |
+| Option              | Description                | Recommended Setting               |
 | ------------------- | -------------------------- | --------------------------------- |
 | Authorized Networks | IP ranges allowed to mount | Restrict to known client networks |
-| Maproot User | UID to map root to | `root` or `0` |
-| Maproot Group | GID to map root to | `wheel` or `0` |
-| Security | Authentication flavor | `krb5p` for security-sensitive |
-| Enabled | Activate the export | Yes |
+| Maproot User        | UID to map root to         | `root` or `0`                     |
+| Maproot Group       | GID to map root to         | `wheel` or `0`                    |
+| Security            | Authentication flavor      | `krb5p` for security-sensitive    |
+| Enabled             | Activate the export        | Yes                               |
 
 ### Squashing
 
-Root squashing maps `root` (UID 0) to an unprivileged user ( `nobody`) to prevent a remote
-Root user from having root access to exported files. This is enabled by default and should be left
-On unless you have a specific need for no_root_squash.
+Root squashing maps `root` (UID 0) to an unprivileged user ( `nobody`) to prevent a remote Root user
+from having root access to exported files. This is enabled by default and should be left On unless
+you have a specific need for no_root_squash.
 
-| Squash Setting | Behavior |
+| Squash Setting    | Behavior                    |
 | ----------------- | --------------------------- |
-| Root Squashing | UID 0 mapped to `nobody` |
-| No Root Squashing | UID 0 retains root access |
-| All Squashing | All UIDs mapped to `nobody` |
+| Root Squashing    | UID 0 mapped to `nobody`    |
+| No Root Squashing | UID 0 retains root access   |
+| All Squashing     | All UIDs mapped to `nobody` |
 
 ### NFSv4 ID Mapping
 
@@ -257,8 +261,7 @@ For secure NFS, use Kerberos authentication:
 - **krb5i:** Authentication + integrity (signed packets). Detects tampering.
 - **krb5p:** Authentication + privacy (encrypted packets). Full security.
 
-Kerberos requires a properly configured KDC (Key Distribution Center), MIT Kerberos or
-FreeIPA.
+Kerberos requires a properly configured KDC (Key Distribution Center), MIT Kerberos or FreeIPA.
 
 **Kerberos setup overview:**
 
@@ -303,10 +306,10 @@ Configure under **Sharing** → **Unix (NFS) Shares** → **Settings**.
 
 ### async vs. Sync NFS
 
-| Mode | Behavior | Safety | Performance |
+| Mode  | Behavior                                             | Safety | Performance |
 | ----- | ---------------------------------------------------- | ------ | ----------- |
-| sync | Server acknowledges write only after data is on disk | High | Lower |
-| async | Server acknowledges write before data is on disk | Lower | Higher |
+| sync  | Server acknowledges write only after data is on disk | High   | Lower       |
+| async | Server acknowledges write before data is on disk     | Lower  | Higher      |
 
 For NFS, the default sync behavior depends on the client's mount options. ZFS's copy-on-write
 Ensures data integrity regardless of the NFS sync setting, but async mode can return "success" to
@@ -336,23 +339,23 @@ ISCSI (Internet Small Computer System Interface) encapsulates SCSI commands over
 Allowing remote access to block devices. This is used for VM storage, database storage, and any
 Workload that requires raw block access rather than file-level access.
 
-| Component | Role |
+| Component | Role                                                              |
 | --------- | ----------------------------------------------------------------- |
-| Target | The storage server (TrueNAS) that provides block devices |
-| LUN | Logical Unit Number — the block device exposed by the target |
-| Initiator | The client that connects to the target and accesses the LUN |
-| Portal | The IP address and port the target listens on |
-| IQN | iSCSI Qualified Name — unique identifier for target and initiator |
+| Target    | The storage server (TrueNAS) that provides block devices          |
+| LUN       | Logical Unit Number — the block device exposed by the target      |
+| Initiator | The client that connects to the target and accesses the LUN       |
+| Portal    | The IP address and port the target listens on                     |
+| IQN       | iSCSI Qualified Name — unique identifier for target and initiator |
 
 ### iSCSI Discovery and Login
 
 ISCSI uses two phases:
 
 1. **Discovery:** The initiator finds available targets on the network. This can be done via
- SendTargets (the initiator queries a portal for available targets) or via iSNS (Internet Storage
- Name Service, a directory service for iSCSI targets).
+   SendTargets (the initiator queries a portal for available targets) or via iSNS (Internet Storage
+   Name Service, a directory service for iSCSI targets).
 2. **Login:** The initiator establishes a session with the target. During login, authentication
- parameters and session parameters are negotiated.
+   parameters and session parameters are negotiated.
 
 ### Setting Up iSCSI on TrueNAS
 
@@ -371,7 +374,7 @@ LUNs they can see. This provides access control at the iSCSI level:
 - **Create an initiator group** with the IQNs or IP addresses of authorized initiators.
 - **Associate the initiator group** with a target to restrict access.
 - **Use separate initiator groups** for different classes of clients (e.g., VM hosts vs. Database
- servers).
+  servers).
 
 ### Zvols vs. Datasets for iSCSI
 
@@ -388,30 +391,30 @@ zfs create -V 100G -b 64K -o compression=lz4 tank/iscsi/lun0
 
 Key zvol properties:
 
-| Property | Recommended Value | Rationale |
+| Property     | Recommended Value | Rationale                                               |
 | ------------ | ----------------- | ------------------------------------------------------- |
-| volblocksize | 64K or 128K | Match the VM filesystem block size |
-| compression | lz4 | Reduces storage usage and improves performance |
-| sync | always | Required for data integrity on block devices |
-| primarycache | metadata | For VM workloads, caching metadata in ARC is sufficient |
+| volblocksize | 64K or 128K       | Match the VM filesystem block size                      |
+| compression  | lz4               | Reduces storage usage and improves performance          |
+| sync         | always            | Required for data integrity on block devices            |
+| primarycache | metadata          | For VM workloads, caching metadata in ARC is sufficient |
 
 ### Zvol Sizing Considerations
 
 - Zvols are pre-allocated at creation time (unlike datasets that grow dynamically). Choose the size
- carefully — resizing a zvol is possible but requires coordination with the client.
+  carefully — resizing a zvol is possible but requires coordination with the client.
 - Over-provisioning zvols is safe with ZFS — the zvol size is a logical limit, not a physical
- allocation. As long as the pool has free space, the zvol can be written to up to its logical size.
+  allocation. As long as the pool has free space, the zvol can be written to up to its logical size.
 - Thin provisioning is the default on TrueNAS. The zvol only consumes pool space as data is written.
- Monitor pool capacity to prevent the zvol from consuming all available space.
+  Monitor pool capacity to prevent the zvol from consuming all available space.
 
 ### iSCSI Authentication
 
 ISCSI supports two authentication methods:
 
 1. **CHAP (Challenge-Handshake Authentication Protocol):** One-way authentication where the target
- authenticates the initiator. The initiator provides a username and password.
+   authenticates the initiator. The initiator provides a username and password.
 2. **Mutual CHAP:** Two-way authentication where both the initiator and target authenticate each
- other. More secure but more complex to configure.
+   other. More secure but more complex to configure.
 
 ```bash
 # Configure CHAP authentication on the initiator (Linux)
@@ -452,10 +455,10 @@ blacklist {
 ### iSCSI Performance Tuning
 
 - **Use dedicated NICs** for iSCSI traffic. Sharing NICs with other traffic introduces latency and
- jitter.
+  jitter.
 - **Enable jumbo frames** (MTU 9000) on both the TrueNAS and the initiator for better throughput.
 - **Use `sync=standard`** on the zvol for data integrity. Do not use `sync=disabled` for database
- workloads.
+  workloads.
 - **Increase the iSCSI queue depth** on the initiator if the workload benefits from deeper queues.
 
 ---
@@ -487,14 +490,14 @@ chmod -R 750 /mnt/pool/dataset
 
 ### Permission Bits Explained
 
-| Bit | Octal | Meaning (File) | Meaning (Directory) |
+| Bit | Octal    | Meaning (File)        | Meaning (Directory)              |
 | --- | -------- | --------------------- | -------------------------------- |
-| r | 4 | Read file contents | List directory entries |
-| w | 2 | Modify file contents | Create/delete files in directory |
-| x | 1 | Execute file | Enter directory (cd into it) |
-| s | (setuid) | Execute as file owner | N/A |
-| s | (setgid) | Execute as file group | New files inherit group |
-| t | (sticky) | N/A | Only owner can delete files |
+| r   | 4        | Read file contents    | List directory entries           |
+| w   | 2        | Modify file contents  | Create/delete files in directory |
+| x   | 1        | Execute file          | Enter directory (cd into it)     |
+| s   | (setuid) | Execute as file owner | N/A                              |
+| s   | (setgid) | Execute as file group | New files inherit group          |
+| t   | (sticky) | N/A                   | Only owner can delete files      |
 
 ### NFS4 ACLs
 
@@ -522,14 +525,14 @@ A:fd:group@domain.com:RX:fd
 D::user@domain.com:W
 ```
 
-| Component | Meaning |
+| Component | Meaning                                            |
 | --------- | -------------------------------------------------- |
-| A or D | Allow or Deny |
-| f | File only |
-| d | Directory only |
-| fd | File and directory (default for new entries) |
-| RWX | Permissions (read, write, execute) |
-| /ad | Inheritance flags (apply to this, directory, file) |
+| A or D    | Allow or Deny                                      |
+| f         | File only                                          |
+| d         | Directory only                                     |
+| fd        | File and directory (default for new entries)       |
+| RWX       | Permissions (read, write, execute)                 |
+| /ad       | Inheritance flags (apply to this, directory, file) |
 
 ### Windows ACLs via SMB
 
@@ -575,13 +578,13 @@ For environments using LDAP (OpenLDAP, 389 Directory Server):
 
 ### User and Group ID Planning
 
-| ID Range | Purpose | Example |
+| ID Range    | Purpose         | Example                       |
 | ----------- | --------------- | ----------------------------- |
-| 0 | root | System |
-| 1–999 | System accounts | daemon, bin, sys |
-| 1000–59999 | Local users | Regular NAS users |
-| 60000–65533 | LDAP/AD users | Mapped from directory service |
-| 65534 | nobody | Unmapped/anonymous |
+| 0           | root            | System                        |
+| 1–999       | System accounts | daemon, bin, sys              |
+| 1000–59999  | Local users     | Regular NAS users             |
+| 60000–65533 | LDAP/AD users   | Mapped from directory service |
+| 65534       | nobody          | Unmapped/anonymous            |
 
 Ensure UIDs and GIDs are consistent across the NAS and all client systems. If the NAS assigns UID
 1001 to user "alice" but a client system assigns UID 1001 to user "bob", permissions will be wrong
@@ -640,16 +643,14 @@ For user home directories:
 
 ### Guest Access vs. Authenticated
 
-| Mode | Configuration | Security | Use Case |
+| Mode              | Configuration          | Security | Use Case                 |
 | ----------------- | ---------------------- | -------- | ------------------------ |
-| Authenticated | User accounts required | High | Production environments |
-| Guest (anonymous) | No credentials needed | Low | Public file sharing only |
+| Authenticated     | User accounts required | High     | Production environments  |
+| Guest (anonymous) | No credentials needed  | Low      | Public file sharing only |
 
-:::warning
-Never enable guest access on shares containing sensitive data. Guest access bypasses all
+:::warning Never enable guest access on shares containing sensitive data. Guest access bypasses all
 Authentication and authorization checks. Use it only for public read-only shares (e.g., a shared
-Software repository).
-:::
+Software repository). :::
 
 ---
 
@@ -703,9 +704,8 @@ Environment requires it.
 ## SMB3 Encryption Configuration
 
 SMB3 encryption protects data in transit between client and server. TrueNAS supports SMB3 encryption
-Which can be enabled globally or per-share. Encrypted SMB traffic adds CPU overhead (
-10-25% depending on the cipher used) but eliminates the need for separate VPN tunnels for data
-Protection.
+Which can be enabled globally or per-share. Encrypted SMB traffic adds CPU overhead ( 10-25%
+depending on the cipher used) but eliminates the need for separate VPN tunnels for data Protection.
 
 ### Enabling SMB3 Encryption Globally
 
@@ -737,24 +737,22 @@ midclt call smb.get_share sensitive-data | jq '.encrypt'
 
 ### Performance Impact
 
-| Cipher | AES-128-GCM | AES-256-GCM | ChaCha20-Poly1305 |
+| Cipher                    | AES-128-GCM | AES-256-GCM | ChaCha20-Poly1305       |
 | ------------------------- | ----------- | ----------- | ----------------------- |
-| CPU Overhead (AES-NI) | 5-10% | 8-15% | 10-20% |
-| CPU Overhead (no AES-NI) | 30-50% | 35-55% | 15-25% |
-| Throughput Impact (10GbE) | Minimal | Minimal | Noticeable on &lt;10GbE |
+| CPU Overhead (AES-NI)     | 5-10%       | 8-15%       | 10-20%                  |
+| CPU Overhead (no AES-NI)  | 30-50%      | 35-55%      | 15-25%                  |
+| Throughput Impact (10GbE) | Minimal     | Minimal     | Noticeable on &lt;10GbE |
 
 Modern Intel and AMD CPUs with AES-NI instructions handle AES-128-GCM with minimal overhead. If your
 CPU lacks AES-NI (rare on anything newer than 2013), the performance penalty is significant.
 
-:::tip
-Use `smbstatus` on TrueNAS to verify that connections are actually using encryption:
+:::tip Use `smbstatus` on TrueNAS to verify that connections are actually using encryption:
 
 ```bash
 smbstatus -b | head -30
 ```
 
-The `Dialect` column should show `SMB3_11` or higher for encrypted connections.
-:::
+The `Dialect` column should show `SMB3_11` or higher for encrypted connections. :::
 
 ## NFSv4.2 Features
 
@@ -812,11 +810,9 @@ nfsstat -m | grep -E "rsize|wsize"
 mount -t nfs4 -o minorversion=2,pnfs truenas.local:/mnt/tank/data /mnt/nfs
 ```
 
-:::warning
-Large `rsize` and `wsize` values improve throughput for large sequential reads/writes but
+:::warning Large `rsize` and `wsize` values improve throughput for large sequential reads/writes but
 Can increase latency for small random I/O. For mixed workloads, 1MB is a reasonable default. For
-Metadata-heavy workloads (mail servers, source code repositories), consider 128K or 256K.
-:::
+Metadata-heavy workloads (mail servers, source code repositories), consider 128K or 256K. :::
 
 ## iSCSI Target Configuration Deep Dive
 
@@ -828,10 +824,11 @@ Hyper-V, and other hypervisors that require raw block devices rather than file-l
 1. Navigate to **Sharing > Block Shares (iSCSI)**
 2. Click **Add Target**
 3. Configure the target:
- - **Target Name:** A unique identifier (e.g., `esxi-datastore`)
- - **Target Alias:** Human-readable description
- - **Target Portal Group:** Select the portal that defines which interfaces and ports to use
- - **Initiator Group:** Define which initiators (clients) are allowed to connect
+
+- **Target Name:** A unique identifier (e.g., `esxi-datastore`)
+- **Target Alias:** Human-readable description
+- **Target Portal Group:** Select the portal that defines which interfaces and ports to use
+- **Initiator Group:** Define which initiators (clients) are allowed to connect
 
 ### Portal and Portal Group Configuration
 
@@ -848,11 +845,9 @@ midclt call iscsi.portal.create '{
 }'
 ```
 
-:::info
-Always use a dedicated network interface for iSCSI traffic. Sharing a NIC between iSCSI and
+:::info Always use a dedicated network interface for iSCSI traffic. Sharing a NIC between iSCSI and
 Other services introduces latency and packet loss that directly impacts storage performance. If
-Possible, use a separate VLAN or physical network for iSCSI.
-:::
+Possible, use a separate VLAN or physical network for iSCSI. :::
 
 ### Extent Configuration
 
@@ -869,13 +864,13 @@ zfs list -o name,volsize,volblocksize,compression,logbias tank/iscsi/esxi-datast
 
 Key zvol properties for iSCSI:
 
-| Property | Recommended Value | Rationale |
+| Property       | Recommended Value                              | Rationale                           |
 | -------------- | ---------------------------------------------- | ----------------------------------- |
-| `volblocksize` | `64K` for VMs, `128K` for databases | Match guest I/O size |
-| `compression` | `lz4` or `zstd` | Reduces storage; minimal CPU impact |
-| `logbias` | `latency` for databases, `throughput` for bulk | Controls sync write behavior |
-| `sync` | `standard` (default) | Ensures data integrity |
-| `primarycache` | `metadata` if using host caching | Avoids double-caching |
+| `volblocksize` | `64K` for VMs, `128K` for databases            | Match guest I/O size                |
+| `compression`  | `lz4` or `zstd`                                | Reduces storage; minimal CPU impact |
+| `logbias`      | `latency` for databases, `throughput` for bulk | Controls sync write behavior        |
+| `sync`         | `standard` (default)                           | Ensures data integrity              |
+| `primarycache` | `metadata` if using host caching               | Avoids double-caching               |
 
 ### CHAP Authentication
 
@@ -896,11 +891,9 @@ midclt call iscsi.initiatorgroup.update 1 '{
 }'
 ```
 
-:::warning
-CHAP secrets are transmitted in plain text in the TrueNAS API. Use the web UI for CHAP
+:::warning CHAP secrets are transmitted in plain text in the TrueNAS API. Use the web UI for CHAP
 Configuration when possible, as it masks the secret. Never expose CHAP credentials in scripts
-Checked into version control.
-:::
+Checked into version control. :::
 
 ## Windows ACL Delegation Examples
 
@@ -986,11 +979,9 @@ Accessing the same ZFS dataset simultaneously via NFS and SMB causes locking and
 Inconsistencies. NFS uses advisory locks while SMB uses mandatory locks. Files created via NFS may
 Have permissions that SMB clients cannot interpret (POSIX vs Windows ACL mapping issues).
 
-:::warning
-If you must share data between NFS and SMB clients, use separate datasets with a
+:::warning If you must share data between NFS and SMB clients, use separate datasets with a
 Replication or rsync pipeline to synchronize content. Alternatively, use SMB exclusively with
-Windows ACL support enabled.
-:::
+Windows ACL support enabled. :::
 
 ### Not Setting Up DNS Properly
 

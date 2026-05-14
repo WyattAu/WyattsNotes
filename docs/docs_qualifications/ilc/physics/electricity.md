@@ -1,6 +1,8 @@
 ---
 title: Electricity
-description: "Electricity — Electric Charge and Current; Electric Charge (OL/HL); Electric Current (OL/HL); Current in Terms of Electron Flow (HL)."
+description:
+  'Electricity — Electric Charge and Current; Electric Charge (OL/HL); Electric Current (OL/HL);
+  Current in Terms of Electron Flow (HL).'
 date: 2026-04-14
 tags:
   - Physics
@@ -9,6 +11,7 @@ categories:
   - Physics
 slug: electricity
 ---
+
 # Electricity
 
 This topic covers electric charge, current, potential difference, resistance, circuits, and
@@ -16,8 +19,6 @@ Electromagnetic induction. Electricity is one of the core areas of the Leaving C
 Syllabus.
 
 ## Electric Charge and Current
-
-
 
 <PhetSimulation simulationId="circuit-construction-kit-dc" title="Circuit Construction Kit: DC" />
 
@@ -64,10 +65,10 @@ $$
 ### Why Drift Velocity Is So Slow
 
 Even a current of 1 A corresponds to about $6.25 \times 10^{18}$ electrons per second. The drift
-Velocity in a copper wire is less than 0.1 mm/s. The electric signal propagates at nearly
-The speed of light, but the individual electrons move extraordinarily slowly. This is analogous to
-People in a crowd: one person pushes, and the push propagates through the crowd quickly, but each
-Individual moves only a small step.
+Velocity in a copper wire is less than 0.1 mm/s. The electric signal propagates at nearly The speed
+of light, but the individual electrons move extraordinarily slowly. This is analogous to People in a
+crowd: one person pushes, and the push propagates through the crowd quickly, but each Individual
+moves only a small step.
 
 ## Potential Difference and EMF
 
@@ -250,8 +251,8 @@ $$
 The time constant $\tau = RC$ is the time for the charge to reach $1 - e^{-1} \approx 63.2\%$ of its
 Final value during charging (or fall to $36.8\%$ during discharging).
 
-**Example (HL):** A $100\mathrm{ \mu F{}$ capacitor is charged through a $50\mathrm{ k\Omega{}$ resistor.
-Find the time constant and the time for the capacitor to reach 95% of full charge.
+**Example (HL):** A $100\mathrm{ \mu F{}$ capacitor is charged through a $50\mathrm{ k\Omega{}$
+resistor. Find the time constant and the time for the capacitor to reach 95% of full charge.
 
 $$
 \tau = RC = 50000 \times 100 \times 10^{-6} = 5\mathrm{ s{}
@@ -362,7 +363,7 @@ $$
 4. **RMS vs peak** -- always use RMS values for power calculations with AC.
 5. **Lenz's law** -- the minus sign in Faraday's law represents this opposition.
 6. **Kirchhoff's laws** -- apply the junction rule at every junction and the loop rule to every
- loop.
+   loop.
 
 ## Practice Questions
 
@@ -376,33 +377,33 @@ $$
 ### Higher Level
 
 1. A cell of EMF 6 V and internal resistance 0.5 ohms is connected to an external circuit of 11.5
- ohms. Find the current and terminal voltage.
+   ohms. Find the current and terminal voltage.
 2. A $47\mathrm{ \mu F{}$ capacitor is charged to 12 V and then discharged through a
- $100\mathrm{ k\Omega{}$ resistor. Find the time constant and the charge after 10 s.
+   $100\mathrm{ k\Omega{}$ resistor. Find the time constant and the charge after 10 s.
 3. An AC circuit has $V = 230\mathrm{ V{}_{\mathrm{rms{}}$ at $50\mathrm{ Hz{}$ connected to a
- $100\mathrm{ ohm{}$ resistor in series with a $0.1\mathrm{ H{}$ inductor. Find the impedance and the
- current.
+   $100\mathrm{ ohm{}$ resistor in series with a $0.1\mathrm{ H{}$ inductor. Find the impedance and
+   the current.
 4. A transformer has 500 primary turns and 50 secondary turns. The primary voltage is
- $230\mathrm{ V{}_{\mathrm{rms{}}$. Find the secondary voltage. If the secondary current is 10 A, find
- the primary current.
+   $230\mathrm{ V{}_{\mathrm{rms{}}$. Find the secondary voltage. If the secondary current is 10 A,
+   find the primary current.
 
 5. Two capacitors of $22\mathrm{ \mu F{}$ and $47\mathrm{ \mu F{}$ are connected in series across a
- $12\mathrm{ V{}$ supply. Find the total capacitance and the charge on each capacitor.
+   $12\mathrm{ V{}$ supply. Find the total capacitance and the charge on each capacitor.
 
 6. An AC circuit has $R = 200\mathrm{ ohms{}$$L = 0.2\mathrm{ H{}$$C = 50\mathrm{ \mu F{}$ at
- $f = 100\mathrm{ Hz{}$. Calculate $X_L$$X_C$$Z$The phase angle, and the power dissipated.
+   $f = 100\mathrm{ Hz{}$. Calculate $X_L$$X_C$$Z$The phase angle, and the power dissipated.
 
-7. A battery of EMF $12\mathrm{ V{}$ and internal resistance $1.0\mathrm{ {}\Omega$ is connected to an
- external circuit of resistance $5\mathrm{ {}\Omega$. Calculate the power dissipated in the external
- circuit and the power dissipated in the internal resistance.
+7. A battery of EMF $12\mathrm{ V{}$ and internal resistance $1.0\mathrm{ {}\Omega$ is connected to
+   an external circuit of resistance $5\mathrm{ {}\Omega$. Calculate the power dissipated in the
+   external circuit and the power dissipated in the internal resistance.
 
-8. A step-up transformer converts $230\mathrm{ V{}$ to $11,500\mathrm{ V{}$ with 98% efficiency. Find the
- turns ratio and the primary current when the secondary current is $2\mathrm{ A{}$.
+8. A step-up transformer converts $230\mathrm{ V{}$ to $11,500\mathrm{ V{}$ with 98% efficiency.
+   Find the turns ratio and the primary current when the secondary current is $2\mathrm{ A{}$.
 
 ## 9. Worked Example: Complex RC Circuit Analysis (HL)
 
-A $100\mu\mathrm{F{}$ capacitor is charged through a $33\mathrm{ k{}\Omega$ resistor from a $9\mathrm{ V{}$
-Supply.
+A $100\mu\mathrm{F{}$ capacitor is charged through a $33\mathrm{ k{}\Omega$ resistor from a
+$9\mathrm{ V{}$ Supply.
 
 **(a) Time constant:** $\tau = RC = 33000 \times 100 \times 10^{-6} = 3.3\mathrm{ s{}$
 
@@ -412,15 +413,16 @@ $V = 9(1 - e^{-1/3.3}) = 9(1 - 0.741) = 9 \times 0.259 = 2.33\mathrm{ V{}$
 **(c) Current after $1\mathrm{ s{}$:**
 $I = I_0 e^{-t/\tau} = \frac{9}{33000} \times e^{-1/3.3} = 2.727 \times 10^{-4} \times 0.741 = 2.02 \times 10^{-4}\mathrm{ A{} = 0.202\mathrm{ mA{}$
 
-**(d) Time to reach $95\mathrm{ V{}$ across the capacitor:** Already $9\mathrm{ V{}$So $95\mathrm{ V{}$ is
-Impossible. Assuming $8.55\mathrm{ V{}$ (95% of $9\mathrm{ V{}$):
+**(d) Time to reach $95\mathrm{ V{}$ across the capacitor:** Already $9\mathrm{ V{}$So
+$95\mathrm{ V{}$ is Impossible. Assuming $8.55\mathrm{ V{}$ (95% of $9\mathrm{ V{}$):
 
 $$0.95 = 1 - e^{-t/3.3} \implies e^{-t/3.3} = 0.05 \implies t = -3.3 \times\ln(0.05) = -3.3 \times (-2.996) = 9.89\mathrm{ s{}$$
 
 ## 10. Worked Example: RLC Circuit Analysis (HL)
 
-An RLC series circuit has $R = 200\mathrm{ {}\Omega$$L = 0.5\mathrm{ H{}$$C = 20\mathrm{ {}\mu\mathrm{F{}$
-At $f = 100\mathrm{ Hz{}$.
+An RLC series circuit has
+$R = 200\mathrm{ {}\Omega$$L = 0.5\mathrm{ H{}$$C = 20\mathrm{ {}\mu\mathrm{F{}$ At
+$f = 100\mathrm{ Hz{}$.
 
 **Inductive reactance:** $X_L = 2\pi fL = 2\pi \times 100 \times 0.5 = 314.2\mathrm{ {}\Omega$
 
@@ -454,7 +456,8 @@ Original field.
 ## 12. Worked Example: Transformer Efficiency (HL)
 
 A step-up transformer has 500 primary turns and 5000 secondary turns. The primary voltage is
-$230\mathrm{ V{}_{\mathrm{rms{}}$ and the secondary current is $5\mathrm{ A{}$ at $95\mathrm{ {}\Omega$ load.
+$230\mathrm{ V{}_{\mathrm{rms{}}$ and the secondary current is $5\mathrm{ A{}$ at
+$95\mathrm{ {}\Omega$ load.
 
 **Secondary voltage:** $V_s = 230 \times \frac{5000}{500} = 2300\mathrm{ V{}$
 
@@ -502,9 +505,9 @@ $E = \frac{1}{2}C_{\mathrm{total{}}V^2 = \frac{1}{2} \times 5.996 \times 10^{-6}
 
 ## 14. Kirchhoff's Laws: Worked Example (HL)
 
-A circuit has a $12\mathrm{ V{}$ battery (internal resistance $1\mathrm{ {}\Omega$), a $6\mathrm{ {}\Omega$
-Resistor in series, and a parallel combination of $8\mathrm{ {}\Omega$ and $12\mathrm{ {}\Omega$
-Resistors.
+A circuit has a $12\mathrm{ V{}$ battery (internal resistance $1\mathrm{ {}\Omega$), a
+$6\mathrm{ {}\Omega$ Resistor in series, and a parallel combination of $8\mathrm{ {}\Omega$ and
+$12\mathrm{ {}\Omega$ Resistors.
 
 **Parallel resistance:** $\frac{1}{R_p} = \frac{1}{8} + \frac{1}{12} = \frac{5}{24}$So
 $R_p = 4.8\mathrm{ {}\Omega$
@@ -522,7 +525,8 @@ $R_p = 4.8\mathrm{ {}\Omega$
 **Current through $12\mathrm{ {}\Omega$:** $I_{12} = \frac{10.98}{12} = 0.915\mathrm{ A{}$
 
 Check: $1.37 + 0.915 = 2.285\mathrm{ A{}$. But the total current through the parallel combination
-Should equal the current through the $6\mathrm{ {}\Omega$ resistor, which is $I = 1.017\mathrm{ A{}$.
+Should equal the current through the $6\mathrm{ {}\Omega$ resistor, which is
+$I = 1.017\mathrm{ A{}$.
 
 Wait -- the current through the $6\mathrm{ {}\Omega$ resistor equals the total current from the
 Battery:
@@ -549,73 +553,77 @@ Check: $0.610 + 0.407 = 1.017\mathrm{ A{}$. Correct.
 
 ## 15. Summary Table: Key Electricity Formulas
 
-| Topic | Formula | Level | Notes |
+| Topic               | Formula                        | Level | Notes                      |
 | ------------------- | ------------------------------ | ----- | -------------------------- |
-| Current | $I = Q/t$ | OL/HL | Rate of charge flow |
-| Ohm's law | $V = IR$ | OL/HL | Ohmic conductors only |
-| Resistivity | $R = \rho L/A$ | OL/HL | Material property |
-| Internal resistance | $V = \varepsilon - Ir$ | HL | Terminal PD |
-| Power | $P = IV = I^2R$ | OL/HL | Three equivalent forms |
-| Capacitance | $C = Q/V$ | HL | Unit: farad |
-| Capacitor energy | $E = \frac{1}{2}CV^2$ | HL | Three equivalent forms |
-| RC time constant | $\tau = RC$ | HL | 63.2% charge in one $\tau$ |
-| Reactance | $X_C = 1/(2\pi fC)$ | HL | Decreases with frequency |
-| Reactance | $X_L = 2\pi fL$ | HL | Increases with frequency |
-| Impedance | $Z = \sqrt{R^2 + (X_L-X_C)^2}$ | HL | For RLC circuits |
-| Resonance | $f_0 = 1/(2\pi\sqrt{LC})$ | HL | $Z$ is minimum |
-| Faraday's law | $\varepsilon = -d\Phi/dt$ | HL | Lenz's law for direction |
-| Transformer | $V_s/V_p = N_s/N_p$ | HL | AC only |
+| Current             | $I = Q/t$                      | OL/HL | Rate of charge flow        |
+| Ohm's law           | $V = IR$                       | OL/HL | Ohmic conductors only      |
+| Resistivity         | $R = \rho L/A$                 | OL/HL | Material property          |
+| Internal resistance | $V = \varepsilon - Ir$         | HL    | Terminal PD                |
+| Power               | $P = IV = I^2R$                | OL/HL | Three equivalent forms     |
+| Capacitance         | $C = Q/V$                      | HL    | Unit: farad                |
+| Capacitor energy    | $E = \frac{1}{2}CV^2$          | HL    | Three equivalent forms     |
+| RC time constant    | $\tau = RC$                    | HL    | 63.2% charge in one $\tau$ |
+| Reactance           | $X_C = 1/(2\pi fC)$            | HL    | Decreases with frequency   |
+| Reactance           | $X_L = 2\pi fL$                | HL    | Increases with frequency   |
+| Impedance           | $Z = \sqrt{R^2 + (X_L-X_C)^2}$ | HL    | For RLC circuits           |
+| Resonance           | $f_0 = 1/(2\pi\sqrt{LC})$      | HL    | $Z$ is minimum             |
+| Faraday's law       | $\varepsilon = -d\Phi/dt$      | HL    | Lenz's law for direction   |
+| Transformer         | $V_s/V_p = N_s/N_p$            | HL    | AC only                    |
 
 ## 16. Practice Questions (Additional)
 
 ### Higher Level (Additional)
 
-11. A battery of EMF $9\mathrm{ V{}$ and internal resistance $1.5\mathrm{ {}\Omega$ is connected to a
- $4\mathrm{ {}\Omega$ resistor and a $12\mathrm{ {}\Omega$ resistor in parallel. Calculate the current
- through each resistor and the power dissipated in the $4\mathrm{ {}\Omega$ resistor.
+11. A battery of EMF $9\mathrm{ V{}$ and internal resistance $1.5\mathrm{ {}\Omega$ is connected to
+    a $4\mathrm{ {}\Omega$ resistor and a $12\mathrm{ {}\Omega$ resistor in parallel. Calculate the
+    current through each resistor and the power dissipated in the $4\mathrm{ {}\Omega$ resistor.
 
 12. A $47\mu\mathrm{F{}$ capacitor is charged to $20\mathrm{ V{}$ and then discharged through a
- $68\mathrm{ k{}\Omega$ resistor. Calculate (a) the time constant, (b) the voltage after
- $5\mathrm{ s{}$(c) the energy stored initially, and (d) the energy remaining after $5\mathrm{ s{}$.
+    $68\mathrm{ k{}\Omega$ resistor. Calculate (a) the time constant, (b) the voltage after
+    $5\mathrm{ s{}$(c) the energy stored initially, and (d) the energy remaining after
+    $5\mathrm{ s{}$.
 
-13. An AC circuit has $R = 150\mathrm{ {}\Omega$$L = 0.3\mathrm{ H{}$$C = 30\mathrm{ {}\mu\mathrm{F{}$ at
- $f = 200\mathrm{ Hz{}$. Calculate $X_L$$X_C$$Z$The phase angle, the current, and the power
- dissipated.
+13. An AC circuit has
+    $R = 150\mathrm{ {}\Omega$$L = 0.3\mathrm{ H{}$$C = 30\mathrm{ {}\mu\mathrm{F{}$ at
+    $f = 200\mathrm{ Hz{}$. Calculate $X_L$$X_C$$Z$The phase angle, the current, and the power
+    dissipated.
 
 14. A transformer with 1000 primary turns and 50 secondary turns is connected to a
- $230\mathrm{ V{}_{\mathrm{rms{}}$ mains supply. If the secondary delivers $10\mathrm{ A{}$ to a
- $100\mathrm{ {}\Omega$ load at $92\mathrm{ {}\%$ efficiency, calculate the primary current and the
- power wasted in the transformer.
+    $230\mathrm{ V{}_{\mathrm{rms{}}$ mains supply. If the secondary delivers $10\mathrm{ A{}$ to a
+    $100\mathrm{ {}\Omega$ load at $92\mathrm{ {}\%$ efficiency, calculate the primary current and
+    the power wasted in the transformer.
 
 15. Explain the difference between a capacitor and an inductor in an AC circuit. Include a
- description of how the impedance of each changes with frequency.
+    description of how the impedance of each changes with frequency.
 
-16. A potential divider circuit consists of a $20\mathrm{ k{}\Omega$ resistor and an NTC thermistor in
- series with a $12\mathrm{ V{}$ supply. The thermistor has resistance $15\mathrm{ k{}\Omega$ at
- $20^{\circ}\mathrm{C{}$ and $3\mathrm{ k{}\Omega$ at $80^{\circ}\mathrm{C{}$. Calculate the output
- voltage at each temperature and explain how this circuit could be used as a temperature sensor.
+16. A potential divider circuit consists of a $20\mathrm{ k{}\Omega$ resistor and an NTC thermistor
+    in series with a $12\mathrm{ V{}$ supply. The thermistor has resistance $15\mathrm{ k{}\Omega$
+    at $20^{\circ}\mathrm{C{}$ and $3\mathrm{ k{}\Omega$ at $80^{\circ}\mathrm{C{}$. Calculate the
+    output voltage at each temperature and explain how this circuit could be used as a temperature
+    sensor.
 
 17. Two capacitors of $33\mu\mathrm{F{}$ and $100\mu\mathrm{F{}$ are connected in series and then in
- parallel with a $6\mathrm{ V{}$ supply. For each configuration, find the total capacitance, the
- charge stored energy, and the PD across each capacitor.
+    parallel with a $6\mathrm{ V{}$ supply. For each configuration, find the total capacitance, the
+    charge stored energy, and the PD across each capacitor.
 
 18. Describe Faraday's law of electromagnetic induction. Explain Lenz's law and why it is a
- consequence of conservation of energy. Include a description of one experimental demonstration.
+    consequence of conservation of energy. Include a description of one experimental demonstration.
 
 19. A coil of 150 turns, area $0.05\mathrm{ m{}^2$Resistance $5\mathrm{ {}\Omega$Is in a magnetic
- field of flux density $0.6\mathrm{ T{}$. The field is reversed in $0.02\mathrm{ s{}$. Calculate the
- average EMF induced.
+    field of flux density $0.6\mathrm{ T{}$. The field is reversed in $0.02\mathrm{ s{}$. Calculate
+    the average EMF induced.
 
 20. Explain why the national grid uses step-up and step-down transformers. Include a quantitative
- comparison of power losses at $11\mathrm{ kV{}$ and $400\mathrm{ kV{}$ for a cable of resistance
- $5\mathrm{ {}\Omega$ transmitting $500\mathrm{ MW{}$.
+    comparison of power losses at $11\mathrm{ kV{}$ and $400\mathrm{ kV{}$ for a cable of resistance
+    $5\mathrm{ {}\Omega$ transmitting $500\mathrm{ MW{}$.
 
 ## Extended Worked Examples
 
 ### Example 21: AC Circuit with Purely Resistive, Inductive, and Capacitive Loads
 
-Compare the behaviour of a $100 \Omega$ resistor, a $0.5 \mathrm{ H{}$ inductor, and a $10 \mu\mathrm{F{}$
-Capacitor when connected individually to a $230 \mathrm{ V{}$$50 \mathrm{ Hz{}$ AC supply.
+Compare the behaviour of a $100 \Omega$ resistor, a $0.5 \mathrm{ H{}$ inductor, and a
+$10 \mu\mathrm{F{}$ Capacitor when connected individually to a $230 \mathrm{ V{}$$50 \mathrm{ Hz{}$
+AC supply.
 
 **Resistor:**
 
@@ -645,17 +653,15 @@ Phase angle: $-90^\circ$ (current leads voltage)
 
 $$P_C = 0 \mathrm{ W{}$$ (pure capacitor dissipates no power)
 
-:::info
-Only resistors dissipate power in AC circuits. Inductors and capacitors store and release
+:::info Only resistors dissipate power in AC circuits. Inductors and capacitors store and release
 Energy each cycle but have zero average power dissipation. The power factor $\cos\phi$ accounts for
-This: a purely resistive load has $\cos\phi = 1$While purely reactive loads have $\cos\phi = 0$.
-:::
+This: a purely resistive load has $\cos\phi = 1$While purely reactive loads have $\cos\phi = 0$. :::
 
 ### Example 22: Measuring Unknown Resistance with a Wheatstone Bridge
 
-A Wheatstone bridge has $P = 100 \Omega$$Q = 200 \Omega$$R = 150 \Omega$And $S$ is unknown.
-The galvanometer shows zero deflection. Calculate $S$. If the battery EMF is $6 \mathrm{ V{}$
-Calculate the current through each resistor.
+A Wheatstone bridge has $P = 100 \Omega$$Q = 200 \Omega$$R = 150 \Omega$And $S$ is unknown. The
+galvanometer shows zero deflection. Calculate $S$. If the battery EMF is $6 \mathrm{ V{}$ Calculate
+the current through each resistor.
 
 **Step 1: Balance condition**
 
@@ -667,7 +673,8 @@ Branch 1 ($P$ and $Q$ in series): $R_1 = 300 \Omega$$I_1 = 6/300 = 0.020 \mathrm
 
 Branch 2 ($R$ and $S$ in series): $R_2 = 450 \Omega$$I_2 = 6/450 = 0.0133 \mathrm{ A{}$
 
-Total current from battery: $I = I_1 + I_2 = 0.020 + 0.0133 = 0.0333 \mathrm{ A{} = 33.3 \mathrm{ mA{}$
+Total current from battery:
+$I = I_1 + I_2 = 0.020 + 0.0133 = 0.0333 \mathrm{ A{} = 33.3 \mathrm{ mA{}$
 
 **Step 3: Power in each resistor**
 
@@ -687,8 +694,8 @@ Check: $P = VI = 6 \times 0.0333 = 0.1998 \mathrm{ W{}$. Confirmed.
 ### Example 23: Capacitor Charging Through a Resistor
 
 A $47 \mu\mathrm{F{}$ capacitor is charged through a $100 \mathrm{ k{}\Omega$ resistor from a
-$12 \mathrm{ V{}$ supply. Calculate (a) the time constant, (b) the voltage after $5 \mathrm{ s{}$(c) the
-Current after $5 \mathrm{ s{}$And (d) the time to reach $95\%$ of the supply voltage.
+$12 \mathrm{ V{}$ supply. Calculate (a) the time constant, (b) the voltage after $5 \mathrm{ s{}$(c)
+the Current after $5 \mathrm{ s{}$And (d) the time to reach $95\%$ of the supply voltage.
 
 **Step 1: Time constant**
 
@@ -714,14 +721,12 @@ $$t = -\tau \ln(0.05) = -4.7 \times (-2.996) = 14.1 \mathrm{ s{}$$
 
 This is approximately $3\tau$ ($3 \times 4.7 = 14.1 \mathrm{ s{}$).
 
-:::info
-Useful rules of thumb for RC circuits:
+:::info Useful rules of thumb for RC circuits:
 
 - After $1\tau$: charged to $63.2\%$ of final value
 - After $2\tau$: charged to $86.5\%$
 - After $3\tau$: charged to $95.0\%$
-- After $5\tau$: charged to $99.3\%$ (effectively fully charged)
-:::
+- After $5\tau$: charged to $99.3\%$ (effectively fully charged) :::
 
 ## Common Pitfalls Extended
 
@@ -751,22 +756,22 @@ Block DC while passing AC signals.
 
 ## Additional Practice Problems
 
-21. A coil of inductance $0.2 \mathrm{ H{}$ and resistance $10 \Omega$ is connected to a $12 \mathrm{ V{}$
- DC supply. Calculate (a) the initial rate of change of current, (b) the final steady-state
- current, and (c) the time constant of the circuit.
+21. A coil of inductance $0.2 \mathrm{ H{}$ and resistance $10 \Omega$ is connected to a
+    $12 \mathrm{ V{}$ DC supply. Calculate (a) the initial rate of change of current, (b) the final
+    steady-state current, and (c) the time constant of the circuit.
 
 22. A $6 \mathrm{ V{}$ battery with internal resistance $0.5 \Omega$ is connected to two parallel
- resistors of $4 \Omega$ and $12 \Omega$. Calculate the current through each resistor, the
- terminal PD, and the power delivered to each resistor.
+    resistors of $4 \Omega$ and $12 \Omega$. Calculate the current through each resistor, the
+    terminal PD, and the power delivered to each resistor.
 
 23. An AC generator produces an EMF given by $\varepsilon = 170\sin(314t)$ V. Calculate (a) the peak
- voltage, (b) the RMS voltage, (c) the frequency, and (d) the peak voltage across a $50 \Omega$
- resistor connected to the generator.
+    voltage, (b) the RMS voltage, (c) the frequency, and (d) the peak voltage across a $50 \Omega$
+    resistor connected to the generator.
 
 24. A capacitor of $22 \mu\mathrm{F{}$ is charged to $50 \mathrm{ V{}$ and then connected across an
- uncharged $47 \mu\mathrm{F{}$ capacitor. Calculate (a) the common final voltage, (b) the charge on
- each capacitor, and (c) the energy lost in the process.
+    uncharged $47 \mu\mathrm{F{}$ capacitor. Calculate (a) the common final voltage, (b) the charge
+    on each capacitor, and (c) the energy lost in the process.
 
 25. Describe an experiment to determine the relationship between the current through a filament lamp
- and the potential difference across it. Include a circuit diagram description and explain how
- you would use the results to show that the lamp is a non-ohmic conductor.
+    and the potential difference across it. Include a circuit diagram description and explain how
+    you would use the results to show that the lamp is a non-ohmic conductor.

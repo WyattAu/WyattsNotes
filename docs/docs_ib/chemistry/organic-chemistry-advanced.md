@@ -1,6 +1,8 @@
 ---
 title: Organic Chemistry (Advanced)
-description: "IB Chemistry — reaction mechanisms, stereochemistry, addition and condensation polymers, and spectroscopic identification."
+description:
+  'IB Chemistry — reaction mechanisms, stereochemistry, addition and condensation polymers, and
+  spectroscopic identification.'
 slug: organic-chemistry-advanced
 ---
 
@@ -28,15 +30,15 @@ $$
 
 **Characteristics:**
 
-| Feature | SN1 |
+| Feature              | SN1                                      |
 | -------------------- | ---------------------------------------- |
-| Kinetics | First order |
-| Mechanism | Two steps, carbocation intermediate |
-| Stereochemistry | Racemisation (attack from both sides) |
+| Kinetics             | First order                              |
+| Mechanism            | Two steps, carbocation intermediate      |
+| Stereochemistry      | Racemisation (attack from both sides)    |
 | Substrate preference | Tertiary $\gt$ secondary (primary never) |
-| Nucleophile strength | Weak nucleophiles are sufficient |
-| Leaving group | Needs a good leaving group |
-| Rearrangements | Possible (hydride or alkyl shifts) |
+| Nucleophile strength | Weak nucleophiles are sufficient         |
+| Leaving group        | Needs a good leaving group               |
+| Rearrangements       | Possible (hydride or alkyl shifts)       |
 
 ### SN2 Mechanism (Bimolecular Nucleophilic Substitution)
 
@@ -51,15 +53,15 @@ $$
 
 **Characteristics:**
 
-| Feature | SN2 |
+| Feature              | SN2                                      |
 | -------------------- | ---------------------------------------- |
-| Kinetics | Second order |
-| Mechanism | One concerted step, transition state |
-| Stereochemistry | Walden inversion (back-side attack) |
+| Kinetics             | Second order                             |
+| Mechanism            | One concerted step, transition state     |
+| Stereochemistry      | Walden inversion (back-side attack)      |
 | Substrate preference | Primary $\gt$ secondary (tertiary never) |
-| Nucleophile strength | Strong nucleophiles required |
-| Leaving group | Needs a good leaving group |
-| Rearrangements | Not possible |
+| Nucleophile strength | Strong nucleophiles required             |
+| Leaving group        | Needs a good leaving group               |
+| Rearrangements       | Not possible                             |
 
 ### E1 Mechanism (Unimolecular Elimination)
 
@@ -84,14 +86,14 @@ $$
 
 ### Comparing SN1, SN2, E1, E2
 
-| Factor | Favours SN1/E1 | Favours SN2/E2 |
+| Factor             | Favours SN1/E1                        | Favours SN2/E2                                 |
 | ------------------ | ------------------------------------- | ---------------------------------------------- |
-| Substrate | Tertiary | Primary, methyl |
-| Nucleophile/Base | Weak | Strong |
-| Leaving group | Good (I$^-$Br$^-$) | Good (I$^-$Br$^-$) |
-| Temperature | Lower (substitution) | Higher (elimination) |
-| Solvent | Polar protic (stabilises carbocation) | Polar aprotic (does not stabilise carbocation) |
-| Base concentration | Low | High |
+| Substrate          | Tertiary                              | Primary, methyl                                |
+| Nucleophile/Base   | Weak                                  | Strong                                         |
+| Leaving group      | Good (I$^-$Br$^-$)                    | Good (I$^-$Br$^-$)                             |
+| Temperature        | Lower (substitution)                  | Higher (elimination)                           |
+| Solvent            | Polar protic (stabilises carbocation) | Polar aprotic (does not stabilise carbocation) |
+| Base concentration | Low                                   | High                                           |
 
 ### Zaitsev's Rule
 
@@ -154,28 +156,28 @@ Restricted rotation around a C=C double bond or a ring gives rise to geometric i
 For C=C: assign priorities using CIP rules. If the two higher-priority groups are on the same side:
 $Z$ (zusammen). Opposite sides: $E$ (entgegen).
 
-| Isomer | Description | Example |
+| Isomer  | Description                      | Example                       |
 | ------- | -------------------------------- | ----------------------------- |
-| $cis$ | Same side (similar groups) | $cis$-but-2-ene |
-| $trans$ | Opposite sides | $trans$-but-2-ene |
-| $Z$ | Higher priority groups same side | $(Z)$-1-bromo-1-chloropropene |
-| $E$ | Higher priority groups opposite | $(E)$-1-bromo-1-chloropropene |
+| $cis$   | Same side (similar groups)       | $cis$-but-2-ene               |
+| $trans$ | Opposite sides                   | $trans$-but-2-ene             |
+| $Z$     | Higher priority groups same side | $(Z)$-1-bromo-1-chloropropene |
+| $E$     | Higher priority groups opposite  | $(E)$-1-bromo-1-chloropropene |
 
 ### Optical vs Geometric Isomerism
 
-| Property | Optical Isomerism | Geometric Isomerism |
+| Property            | Optical Isomerism          | Geometric Isomerism             |
 | ------------------- | -------------------------- | ------------------------------- |
-| Cause | Chiral centre | Restricted rotation (C=C, ring) |
-| Mirror images | Non-superimposable | Not necessarily mirror images |
-| Physical properties | Identical (except optical) | Different |
+| Cause               | Chiral centre              | Restricted rotation (C=C, ring) |
+| Mirror images       | Non-superimposable         | Not necessarily mirror images   |
+| Physical properties | Identical (except optical) | Different                       |
 
 ### Common Pitfalls
 
 - A molecule with a plane of symmetry is never chiral, even if it has stereocentres (meso
- compounds).
+  compounds).
 - Not all stereocentres produce chirality — internal symmetry can make a molecule achiral.
 - $R$/$S$ refers to absolute configuration at a single stereocentre; it does not predict the
- direction of optical rotation.
+  direction of optical rotation.
 
 ---
 
@@ -202,13 +204,13 @@ $$
 
 ### Common Addition Polymers
 
-| Monomer | Polymer | Uses |
+| Monomer                       | Polymer          | Uses                                      |
 | ----------------------------- | ---------------- | ----------------------------------------- |
-| Ethene | Polyethene (PE) | Bags, bottles, film |
-| Propene | Polypropene (PP) | Containers, ropes, carpet fibre |
-| Chloroethene (vinyl chloride) | PVC | Pipes, window frames, insulation |
-| Phenylethene (styrene) | Polystyrene (PS) | Packaging, insulation, CD cases |
-| Tetrafluoroethene | PTFE (Teflon) | Non-stick coatings, electrical insulation |
+| Ethene                        | Polyethene (PE)  | Bags, bottles, film                       |
+| Propene                       | Polypropene (PP) | Containers, ropes, carpet fibre           |
+| Chloroethene (vinyl chloride) | PVC              | Pipes, window frames, insulation          |
+| Phenylethene (styrene)        | Polystyrene (PS) | Packaging, insulation, CD cases           |
+| Tetrafluoroethene             | PTFE (Teflon)    | Non-stick coatings, electrical insulation |
 
 ### Biodegradability
 
@@ -218,9 +220,9 @@ Biological breakdown. Disposal by landfill or incineration creates environmental
 ### Common Pitfalls
 
 - The repeating unit of an addition polymer is not the same as the monomer (the double bond is
- gone).
+  gone).
 - Condensation polymers and addition polymers are formed by different mechanisms — do not confuse
- them.
+  them.
 
 ---
 
@@ -284,13 +286,13 @@ Strength. Used in body armour, tyres, and aerospace.
 
 ### Comparison of Polymer Types
 
-| Property | Addition polymer | Condensation polymer |
+| Property         | Addition polymer            | Condensation polymer                       |
 | ---------------- | --------------------------- | ------------------------------------------ |
-| Monomers | Alkenes | Diols + diacids / diamines + diacids |
-| By-product | None | $\mathrm{H}_2\mathrm{O}$ or $\mathrm{HCl}$ |
-| Biodegradability | Generally non-biodegradable | Some are biodegradable |
-| Bond type | C--C backbone | Contains ester or amide bonds |
-| Examples | PE, PP, PVC, PTFE | PET, Nylon, Kevlar |
+| Monomers         | Alkenes                     | Diols + diacids / diamines + diacids       |
+| By-product       | None                        | $\mathrm{H}_2\mathrm{O}$ or $\mathrm{HCl}$ |
+| Biodegradability | Generally non-biodegradable | Some are biodegradable                     |
+| Bond type        | C--C backbone               | Contains ester or amide bonds              |
+| Examples         | PE, PP, PVC, PTFE           | PET, Nylon, Kevlar                         |
 
 ---
 
@@ -316,42 +318,42 @@ $$
 
 ### Degree of Unsaturation Examples
 
-| Molecular formula | DBE | Possible features |
+| Molecular formula             | DBE | Possible features                          |
 | ----------------------------- | --- | ------------------------------------------ |
-| $\mathrm{C}_4\mathrm{H}_{10}$ | $0$ | No double bonds, no rings (alkane) |
-| $\mathrm{C}_4\mathrm{H}_8$ | $1$ | One double bond or one ring |
-| $\mathrm{C}_4\mathrm{H}_6$ | $2$ | Two double bonds, one triple, or two rings |
-| $\mathrm{C}_6\mathrm{H}_6$ | $4$ | Benzene ring (three double bonds + ring) |
+| $\mathrm{C}_4\mathrm{H}_{10}$ | $0$ | No double bonds, no rings (alkane)         |
+| $\mathrm{C}_4\mathrm{H}_8$    | $1$ | One double bond or one ring                |
+| $\mathrm{C}_4\mathrm{H}_6$    | $2$ | Two double bonds, one triple, or two rings |
+| $\mathrm{C}_6\mathrm{H}_6$    | $4$ | Benzene ring (three double bonds + ring)   |
 
 ### Characteristic IR Absorptions (Recap)
 
-| Bond | Range ($\mathrm{cm}^{-1}$) |
+| Bond           | Range ($\mathrm{cm}^{-1}$)  |
 | -------------- | --------------------------- |
-| O--H (acid) | $2500$--$3300$ (very broad) |
-| O--H (alcohol) | $3200$--$3600$ (broad) |
-| N--H | $3300$--$3500$ |
-| C--H (alkane) | $2850$--$3000$ |
-| C--H (alkene) | $3000$--$3100$ |
-| C$\equiv$N | $2200$--$2250$ |
-| C=O | $1700$--$1750$ |
-| C=C | $1600$--$1680$ |
+| O--H (acid)    | $2500$--$3300$ (very broad) |
+| O--H (alcohol) | $3200$--$3600$ (broad)      |
+| N--H           | $3300$--$3500$              |
+| C--H (alkane)  | $2850$--$3000$              |
+| C--H (alkene)  | $3000$--$3100$              |
+| C$\equiv$N     | $2200$--$2250$              |
+| C=O            | $1700$--$1750$              |
+| C=C            | $1600$--$1680$              |
 
 ### Key NMR Chemical Shifts (Recap)
 
-| Proton type | $\delta$ (ppm) |
+| Proton type     | $\delta$ (ppm) |
 | --------------- | -------------- |
-| Alkane | $0.7$--$1.5$ |
-| Adjacent to C=O | $2.0$--$2.7$ |
-| Alkene | $4.5$--$6.5$ |
-| Aromatic | $6.5$--$8.0$ |
-| Aldehyde | $9.0$--$10.0$ |
+| Alkane          | $0.7$--$1.5$   |
+| Adjacent to C=O | $2.0$--$2.7$   |
+| Alkene          | $4.5$--$6.5$   |
+| Aromatic        | $6.5$--$8.0$   |
+| Aldehyde        | $9.0$--$10.0$  |
 | Carboxylic acid | $10.0$--$12.0$ |
 
 ### Common Pitfalls
 
 - DBE = 4 is a strong indicator of a benzene ring, but not proof by itself.
 - In $\mathrm{^1H}$ NMR, the integration ratio must be multiplied by the total number of protons
- (determined from the molecular formula).
+  (determined from the molecular formula).
 - $\mathrm{D}_2\mathrm{O}$ exchange removes OH and NH signals, confirming their presence.
 
 ---
@@ -386,8 +388,8 @@ The carbocation intermediate is stable.
 An unknown compound has molecular formula $\mathrm{C}_3\mathrm{H}_6\mathrm{O}_2$. Its IR spectrum
 Shows a broad peak at $3000\mathrm{ cm}^{-1}$ and a strong peak at $1710\mathrm{ cm}^{-1}$. Its
 $\mathrm{^1H}$ NMR spectrum shows: $\delta\ 1.2\ (d,\ 3\mathrm{H})$
-$\delta\ 4.1\ (q,\ 1\mathrm{H})$$\delta\ 11.0\ (s,\ 1\mathrm{H})$And a singlet at $\delta\ 2.0$
-That integrates to $1\mathrm{H}$.
+$\delta\ 4.1\ (q,\ 1\mathrm{H})$$\delta\ 11.0\ (s,\ 1\mathrm{H})$And a singlet at $\delta\ 2.0$ That
+integrates to $1\mathrm{H}$.
 
 Wait — the formula only has 6 H. Let me correct: $\delta\ 1.2\ (d,\ 3\mathrm{H})$
 $\delta\ 2.5\ (q,\ 2\mathrm{H})$$\delta\ 11.5\ (s,\ 1\mathrm{H})$. Identify the compound.
@@ -397,7 +399,7 @@ $\delta\ 2.5\ (q,\ 2\mathrm{H})$$\delta\ 11.5\ (s,\ 1\mathrm{H})$. Identify the 
 - $\mathrm{C}_3\mathrm{H}_6\mathrm{O}_2$: $\mathrm{DBE} = 3 + 1 - 6/2 = 1$ (one C=O).
 - IR: broad $3000\mathrm{ cm}^{-1}$ (O--H) + $1710\mathrm{ cm}^{-1}$ (C=O) = carboxylic acid.
 - NMR: $d, 3\mathrm{H}$ + $q, 2\mathrm{H}$ = ethyl group ($\mathrm{CH_3CH_2}$--). $s, 1\mathrm{H}$ =
- COOH proton.
+  COOH proton.
 - Structure: $\mathrm{CH_3CH_2COOH}$ (propanoic acid).
 
 Check: M = $3(12) + 6(1) + 2(16) = 74$. But $\mathrm{C}_3\mathrm{H}_6\mathrm{O}_2$ has M = 74.
@@ -426,16 +428,16 @@ Repeating unit: $-\mathrm{OCH_2CH_2CH_2OOCCH_2CH_2CO}-$
 
 A compound $\mathrm{C}_5\mathrm{H}_{10}\mathrm{O}$ shows the following spectra. IR: strong peak at
 $1700\mathrm{ cm}^{-1}$No broad O--H. $\mathrm{^1H}$ NMR: $\delta\ 1.0\ (t,\ 3\mathrm{H})$
-$\delta\ 1.6\ (m,\ 2\mathrm{H})$$\delta\ 2.1\ (s,\ 3\mathrm{H})$
-$\delta\ 2.3\ (t,\ 2\mathrm{H})$. Identify the compound.
+$\delta\ 1.6\ (m,\ 2\mathrm{H})$$\delta\ 2.1\ (s,\ 3\mathrm{H})$ $\delta\ 2.3\ (t,\ 2\mathrm{H})$.
+Identify the compound.
 
 **Solution:**
 
 - $\mathrm{C}_5\mathrm{H}_{10}\mathrm{O}$: $\mathrm{DBE} = 5 + 1 - 10/2 = 1$ (one C=O).
 - IR: $1700\mathrm{ cm}^{-1}$ (C=O), no O--H = ketone or aldehyde. No aldehyde peak around
- $\delta\ 9$--$10$So it is a ketone.
+  $\delta\ 9$--$10$So it is a ketone.
 - NMR: triplet + multiplet + triplet = propyl chain ($\mathrm{CH_3CH_2CH_2}$--). Singlet at
- $\delta\ 2.1$ ($3\mathrm{H}$) = $\mathrm{CH_3CO}$--.
+  $\delta\ 2.1$ ($3\mathrm{H}$) = $\mathrm{CH_3CO}$--.
 - Structure: $\mathrm{CH_3COCH_2CH_2CH_3$ (pentan-2-one).
 
 Total protons: $3 + 2 + 3 + 2 = 10 = \mathrm{C}_5\mathrm{H}_{10}\mathrm{O}$. Confirmed.
@@ -456,7 +458,8 @@ Mechanism, draw the transition state or intermediate, and explain the regiochemi
 
 **Substrate analysis:** $(CH_3)_3CBr$ is a tertiary alkyl halide.
 
-**Conditions:** $\mathrm{KOH}$ (strong base) in ethanol (polar protic solvent) at elevated temperature.
+**Conditions:** $\mathrm{KOH}$ (strong base) in ethanol (polar protic solvent) at elevated
+temperature.
 
 **Mechanism determination:** Tertiary substrate + strong base + heat $\to$ E2 is favoured over SN2.
 SN1 is also possible but elevated temperature shifts the product distribution toward elimination.
@@ -485,8 +488,8 @@ Water as the nucleophile.
 
 **Worked Example: CIP priority rules and R/S assignment**
 
-Assign the absolute configuration (R or S) to the stereocentre in
-$\mathrm{CH_3CHClCH_2CH_3}$ (2-chlorobutane).
+Assign the absolute configuration (R or S) to the stereocentre in $\mathrm{CH_3CHClCH_2CH_3}$
+(2-chlorobutane).
 
 <details>
 <summary>Solution</summary>
@@ -500,7 +503,7 @@ $-\mathrm{CH_2CH_3}$.
 
 1. $-\mathrm{Cl}$: atomic number 17 (highest priority)
 2. $-\mathrm{CH_2CH_3}$: the first atom is C, and the next atoms are C, H, H (by expansion: C is
- bonded to C, H, H)
+   bonded to C, H, H)
 3. $-\mathrm{CH_3}$: the first atom is C, and the next atoms are H, H, H
 4. $-\mathrm{H}$: atomic number 1 (lowest priority)
 
@@ -508,8 +511,8 @@ Priority order: $\mathrm{Cl} \gt \mathrm{CH_2CH_3} \gt \mathrm{CH_3} \gt \mathrm
 
 **Step 3: Orient the molecule.**
 
-Place the lowest priority group ($-\mathrm{H}$) pointing away (dashed wedge). If $-\mathrm{H}$ is
-On a wedge in the given structure, invert the assignment.
+Place the lowest priority group ($-\mathrm{H}$) pointing away (dashed wedge). If $-\mathrm{H}$ is On
+a wedge in the given structure, invert the assignment.
 
 **Step 4: Determine R or S.**
 
@@ -545,29 +548,31 @@ $$n\mathrm{HOCH_2CH_2CH_2OH} + n\mathrm{HOOCCH_2CH_2COOH} \to \left[-\mathrm{OCH
 
 **Step 3: Identify the repeating unit.**
 
-The repeating unit is:
-$-\mathrm{OCH_2CH_2CH_2OOCCH_2CH_2CO}-$
+The repeating unit is: $-\mathrm{OCH_2CH_2CH_2OOCCH_2CH_2CO}-$
 
 **Step 4: Verify atom conservation.**
 
 Left side per repeat: $\mathrm{C}_7\mathrm{H}_{12}\mathrm{O}_4$
 
-Right side per repeat: repeating unit $\mathrm{C}_7\mathrm{H}_{10}\mathrm{O}_4$ + $2\mathrm{H_2O}$
-= $\mathrm{C}_7\mathrm{H}_{10}\mathrm{O}_4 + \mathrm{H_4}\mathrm{O}_2$ =
+Right side per repeat: repeating unit $\mathrm{C}_7\mathrm{H}_{10}\mathrm{O}_4$ + $2\mathrm{H_2O}$ =
+$\mathrm{C}_7\mathrm{H}_{10}\mathrm{O}_4 + \mathrm{H_4}\mathrm{O}_2$ =
 $\mathrm{C}_7\mathrm{H}_{14}\mathrm{O}_6$
 
-Wait --- let me recount. Each repeat consumes one diol ($\mathrm{C}_3\mathrm{H}_8\mathrm{O}_2$)
-And one diacid ($\mathrm{C}_4\mathrm{H}_6\mathrm{O}_4$):
+Wait --- let me recount. Each repeat consumes one diol ($\mathrm{C}_3\mathrm{H}_8\mathrm{O}_2$) And
+one diacid ($\mathrm{C}_4\mathrm{H}_6\mathrm{O}_4$):
 
 $$\mathrm{C}_3\mathrm{H}_8\mathrm{O}_2 + \mathrm{C}_4\mathrm{H}_6\mathrm{O}_4 \to \mathrm{C}_7\mathrm{H}_{12}\mathrm{O}_4 \mathrm{(repeating unit)} + 2\mathrm{H_2O}$$
 
-Check atoms: LHS = $\mathrm{C}_7\mathrm{H}_{14}\mathrm{O}_6$. RHS = $\mathrm{C}_7\mathrm{H}_{12}\mathrm{O}_4 + \mathrm{H_4}\mathrm{O}_2 = \mathrm{C}_7\mathrm{H}_{16}\mathrm{O}_6$.
+Check atoms: LHS = $\mathrm{C}_7\mathrm{H}_{14}\mathrm{O}_6$. RHS =
+$\mathrm{C}_7\mathrm{H}_{12}\mathrm{O}_4 + \mathrm{H_4}\mathrm{O}_2 = \mathrm{C}_7\mathrm{H}_{16}\mathrm{O}_6$.
 
 That does not balance. The correct stoichiometry is:
 
 $$\mathrm{C}_3\mathrm{H}_8\mathrm{O}_2 + \mathrm{C}_4\mathrm{H}_6\mathrm{O}_4 \to \mathrm{C}_7\mathrm{H}_{10}\mathrm{O}_4 + 2\mathrm{H_2O}$$
 
-Check: LHS = $\mathrm{C}_7\mathrm{H}_{14}\mathrm{O}_6$. RHS = $\mathrm{C}_7\mathrm{H}_{10}\mathrm{O}_4 + \mathrm{H_4}\mathrm{O}_2 = \mathrm{C}_7\mathrm{H}_{14}\mathrm{O}_6$. Balanced.
+Check: LHS = $\mathrm{C}_7\mathrm{H}_{14}\mathrm{O}_6$. RHS =
+$\mathrm{C}_7\mathrm{H}_{10}\mathrm{O}_4 + \mathrm{H_4}\mathrm{O}_2 = \mathrm{C}_7\mathrm{H}_{14}\mathrm{O}_6$.
+Balanced.
 
 The repeating unit has lost 4 H and 2 O relative to the monomers (two ester linkages formed).
 
@@ -575,11 +580,11 @@ The repeating unit has lost 4 H and 2 O relative to the monomers (two ester link
 
 **Worked Example: Degree of unsaturation and structural elucidation**
 
-A compound $\mathrm{C}_8\mathrm{H}_8\mathrm{O}$ has the following spectra. IR: $3060\mathrm{ cm}^{-1}$
-(medium), $1690\mathrm{ cm}^{-1}$ (strong), $1600\mathrm{ cm}^{-1}$ (medium),
-$1580\mathrm{ cm}^{-1}$ (medium), $750\mathrm{ cm}^{-1}$ (strong). $^{1}\mathrm{H}$ NMR:
-$\delta\ 7.5$--$7.9\ (m,\ 5\mathrm{H})$$\delta\ 3.9\ (s,\ 2\mathrm{H})$. MS:
-$\mathrm{M}^+ = 120$. Identify the compound.
+A compound $\mathrm{C}_8\mathrm{H}_8\mathrm{O}$ has the following spectra. IR:
+$3060\mathrm{ cm}^{-1}$ (medium), $1690\mathrm{ cm}^{-1}$ (strong), $1600\mathrm{ cm}^{-1}$
+(medium), $1580\mathrm{ cm}^{-1}$ (medium), $750\mathrm{ cm}^{-1}$ (strong). $^{1}\mathrm{H}$ NMR:
+$\delta\ 7.5$--$7.9\ (m,\ 5\mathrm{H})$$\delta\ 3.9\ (s,\ 2\mathrm{H})$. MS: $\mathrm{M}^+ = 120$.
+Identify the compound.
 
 <details>
 <summary>Solution</summary>
@@ -594,26 +599,28 @@ DBE = 5 is consistent with a benzene ring (DBE = 4) plus one additional unsatura
 
 - $3060\mathrm{ cm}^{-1}$: aromatic C--H stretch (above $3000\mathrm{ cm}^{-1}$ confirms sp2 C--H).
 - $1690\mathrm{ cm}^{-1}$: C=O stretch (slightly below $1700$Suggesting conjugation with the
- aromatic ring).
+  aromatic ring).
 - $1600$$1580\mathrm{ cm}^{-1}$: aromatic C=C stretches.
 - $750\mathrm{ cm}^{-1}$: mono-substituted benzene (ortho-disubstituted shows near
- $750\mathrm{ cm}^{-1}$But combined with other evidence, this suggests a single substituent on the
- benzene ring).
+  $750\mathrm{ cm}^{-1}$But combined with other evidence, this suggests a single substituent on the
+  benzene ring).
 
 **Step 3: Analyse NMR data.**
 
 - $\delta\ 7.5$--$7.9\ (m,\ 5\mathrm{H})$: 5 aromatic protons, consistent with a mono-substituted
- benzene ring ($\mathrm{C}_6\mathrm{H}_5$--).
+  benzene ring ($\mathrm{C}_6\mathrm{H}_5$--).
 - $\delta\ 3.9\ (s,\ 2\mathrm{H})$: isolated $\mathrm{CH}_2$ group, singlet (no adjacent protons).
- The chemical shift ($\delta\ 3.9$) suggests the $\mathrm{CH}_2$ is adjacent to an electron-withdrawing
- group (C=O).
+  The chemical shift ($\delta\ 3.9$) suggests the $\mathrm{CH}_2$ is adjacent to an
+  electron-withdrawing group (C=O).
 
 **Step 4: Assemble the structure.**
 
-Mono-substituted benzene ring: $\mathrm{C}_6\mathrm{H}_5$--. Remaining atoms: $\mathrm{C}_2\mathrm{H}_3\mathrm{O}$.
-With C=O at $1690\mathrm{ cm}^{-1}$ and a $\mathrm{CH}_2$ singlet at $\delta\ 3.9$:
+Mono-substituted benzene ring: $\mathrm{C}_6\mathrm{H}_5$--. Remaining atoms:
+$\mathrm{C}_2\mathrm{H}_3\mathrm{O}$. With C=O at $1690\mathrm{ cm}^{-1}$ and a $\mathrm{CH}_2$
+singlet at $\delta\ 3.9$:
 
-Structure: $\mathrm{C}_6\mathrm{H}_5\mathrm{CH_2CHO}$ (phenylethanal, also called phenylacetaldehyde).
+Structure: $\mathrm{C}_6\mathrm{H}_5\mathrm{CH_2CHO}$ (phenylethanal, also called
+phenylacetaldehyde).
 
 **Step 5: Verify.**
 
@@ -647,9 +654,11 @@ $$\mathrm{CH_3CH_2Br + OH^- \to CH_3CH_2OH + Br^-}$$
 
 Product: ethanol ($\mathrm{CH_3CH_2OH}$). Stereochemistry: Walden inversion at carbon.
 
-**(b) $(\mathrm{CH_3})_3\mathrm{CBr}$ (tertiary substrate, strong nucleophile/base, low temperature):**
+**(b) $(\mathrm{CH_3})_3\mathrm{CBr}$ (tertiary substrate, strong nucleophile/base, low
+temperature):**
 
-Mechanism: **SN1** (tertiary substrates form stable carbocations; back-side attack is blocked for SN2).
+Mechanism: **SN1** (tertiary substrates form stable carbocations; back-side attack is blocked for
+SN2).
 
 Step 1 (slow): $(\mathrm{CH_3})_3\mathrm{CBr} \to (\mathrm{CH_3})_3\mathrm{C}^+ + \mathrm{Br}^-$
 
@@ -674,95 +683,97 @@ Product: propan-2-ol ($\mathrm{CH_3CH(OH)CH_3}$). Minor elimination product: pro
 ## Common Pitfalls
 
 - **Assuming primary substrates can undergo SN1**: Primary carbocations are too unstable to form. A
- primary alkyl halide with a weak nucleophile and polar protic solvent will still proceed via SN2
- (just slowly), not SN1.
+  primary alkyl halide with a weak nucleophile and polar protic solvent will still proceed via SN2
+  (just slowly), not SN1.
 
-- **Confusing stereocentres with chirality**: A molecule can have stereocentres but be achiral if
- it has an internal plane of symmetry (meso compounds). For example, meso-tartaric acid has two
- stereocentres but is not chiral overall.
+- **Confusing stereocentres with chirality**: A molecule can have stereocentres but be achiral if it
+  has an internal plane of symmetry (meso compounds). For example, meso-tartaric acid has two
+  stereocentres but is not chiral overall.
 
 - **Writing the monomer instead of the repeating unit**: The repeating unit of an addition polymer
- is not the same as the monomer --- the double bond has opened. For polyethene, the monomer is
- $\mathrm{CH_2=CH_2}$ but the repeating unit is $-\mathrm{CH_2CH_2}-$.
+  is not the same as the monomer --- the double bond has opened. For polyethene, the monomer is
+  $\mathrm{CH_2=CH_2}$ but the repeating unit is $-\mathrm{CH_2CH_2}-$.
 
-- **Using the wrong $\mathrm{p}K_a$ when working with bases**: In the Henderson-Hasselbalch equation,
- always use the $\mathrm{p}K_a$ of the conjugate acid, not the $\mathrm{p}K_b$ of the base.
- $\mathrm{p}K_a + \mathrm{p}K_b = 14.00$.
+- **Using the wrong $\mathrm{p}K_a$ when working with bases**: In the Henderson-Hasselbalch
+  equation, always use the $\mathrm{p}K_a$ of the conjugate acid, not the $\mathrm{p}K_b$ of the
+  base. $\mathrm{p}K_a + \mathrm{p}K_b = 14.00$.
 
 - **Ignoring conjugation effects on IR frequencies**: A C=O conjugated with a C=C bond absorbs at a
- lower wavenumber ($\sim 1680\mathrm{ cm}^{-1}$) than an unconjugated C=O
- ($\sim 1715\mathrm{ cm}^{-1}$). This shift is diagnostic in structure determination.
+  lower wavenumber ($\sim 1680\mathrm{ cm}^{-1}$) than an unconjugated C=O
+  ($\sim 1715\mathrm{ cm}^{-1}$). This shift is diagnostic in structure determination.
 
 - **Misassigning NMR splitting patterns**: The $n + 1$ rule only applies when the neighbouring
- protons are equivalent. Non-equivalent neighbouring protons produce complex multiplets, not simple
- doublets or triplets.
+  protons are equivalent. Non-equivalent neighbouring protons produce complex multiplets, not simple
+  doublets or triplets.
 
 - **Forgetting that E2 requires an anti-periplanar arrangement**: The proton being removed and the
- leaving group must be in the same plane on opposite sides. This geometric requirement can make
- certain E2 eliminations stereospecific and can explain why some theoretical elimination products
- are not observed.
+  leaving group must be in the same plane on opposite sides. This geometric requirement can make
+  certain E2 eliminations stereospecific and can explain why some theoretical elimination products
+  are not observed.
 
 - **Confusing addition and condensation polymerisation mechanisms**: Addition polymers form from
- alkene monomers with no by-product. Condensation polymers form from monomers with two functional
- groups and release a small molecule ( $\mathrm{H}_2\mathrm{O}$ or $\mathrm{HCl}$).
+  alkene monomers with no by-product. Condensation polymers form from monomers with two functional
+  groups and release a small molecule ( $\mathrm{H}_2\mathrm{O}$ or $\mathrm{HCl}$).
 
-- **Over-relying on DBE alone for structural identification**: DBE = 4 suggests an aromatic ring
- but does not prove it. A compound could have two C=C bonds and two rings. Always confirm with IR
- and NMR data.
+- **Over-relying on DBE alone for structural identification**: DBE = 4 suggests an aromatic ring but
+  does not prove it. A compound could have two C=C bonds and two rings. Always confirm with IR and
+  NMR data.
 
 ---
 
 ## Exam-Style Problems
 
-1. Predict the major organic product(s) and state the mechanism for each reaction:
- (a) $\mathrm{CH_3CH_2CH_2Br}$ with $\mathrm{NaOH}$ in $\mathrm{H}_2\mathrm{O}$ at $25\degree\mathrm{C}$
- (b) $\mathrm{(CH_3)_3CBr}$ with $\mathrm{NaOH}$ in ethanol at $80\degree\mathrm{C}$
- (c) $\mathrm{CH_3CHBrCH_3}$ with $\mathrm{NaOH}$ in ethanol at $25\degree\mathrm{C}$
- **[Medium]**
+1. Predict the major organic product(s) and state the mechanism for each reaction: (a)
+   $\mathrm{CH_3CH_2CH_2Br}$ with $\mathrm{NaOH}$ in $\mathrm{H}_2\mathrm{O}$ at
+   $25\degree\mathrm{C}$ (b) $\mathrm{(CH_3)_3CBr}$ with $\mathrm{NaOH}$ in ethanol at
+   $80\degree\mathrm{C}$ (c) $\mathrm{CH_3CHBrCH_3}$ with $\mathrm{NaOH}$ in ethanol at
+   $25\degree\mathrm{C}$ **[Medium]**
 
 2. A compound $\mathrm{C}_4\mathrm{H}_8\mathrm{O}$ shows IR absorptions at $1720\mathrm{ cm}^{-1}$
- (strong) and $2720\mathrm{ cm}^{-1}$ (weak). $^{1}\mathrm{H}$ NMR:
- $\delta\ 1.2\ (d,\ 3\mathrm{H})$$\delta\ 2.5\ (q,\ 1\mathrm{H})$
- $\delta\ 9.7\ (d,\ 1\mathrm{H})$. Identify the compound and explain the splitting pattern of
- the signal at $\delta\ 9.7$. **[Medium]**
+   (strong) and $2720\mathrm{ cm}^{-1}$ (weak). $^{1}\mathrm{H}$ NMR:
+   $\delta\ 1.2\ (d,\ 3\mathrm{H})$$\delta\ 2.5\ (q,\ 1\mathrm{H})$
+   $\delta\ 9.7\ (d,\ 1\mathrm{H})$. Identify the compound and explain the splitting pattern of the
+   signal at $\delta\ 9.7$. **[Medium]**
 
 3. Draw the repeating unit of the polyamide formed from hexane-1,6-diamine and pentanedioic acid.
- Write the balanced equation. Calculate the mass of polymer produced from $10.0\mathrm{ g}$ of
- each monomer, assuming 100% yield. **[Medium]**
+   Write the balanced equation. Calculate the mass of polymer produced from $10.0\mathrm{ g}$ of
+   each monomer, assuming 100% yield. **[Medium]**
 
 4. Explain why 2-bromobutane reacts with $\mathrm{NaOH}$ in ethanol to produce a mixture of
- butan-2-ol and but-2-ene, but 2-bromo-2-methylpropane reacts under the same conditions to
- produce predominantly 2-methylpropene. Reference the relevant mechanisms in your answer.
- **[Hard]**
+   butan-2-ol and but-2-ene, but 2-bromo-2-methylpropane reacts under the same conditions to produce
+   predominantly 2-methylpropene. Reference the relevant mechanisms in your answer. **[Hard]**
 
 5. A compound $\mathrm{C}_9\mathrm{H}_{10}\mathrm{O}$ has the following spectra. IR:
- $3050\mathrm{ cm}^{-1}$$1700\mathrm{ cm}^{-1}$$1600$$1580$$1470\mathrm{ cm}^{-1}$
- $690\mathrm{ cm}^{-1}$. $^{1}\mathrm{H}$ NMR: $\delta\ 2.6\ (s,\ 3\mathrm{H})$
- $\delta\ 7.5$--$8.0\ (m,\ 5\mathrm{H})$$\delta\ 9.9\ (s,\ 2\mathrm{H})$. MS:
- $\mathrm{M}^+ = 134$. Identify the compound. **[Hard]**
+   $3050\mathrm{ cm}^{-1}$$1700\mathrm{ cm}^{-1}$$1600$$1580$$1470\mathrm{ cm}^{-1}$
+   $690\mathrm{ cm}^{-1}$. $^{1}\mathrm{H}$ NMR: $\delta\ 2.6\ (s,\ 3\mathrm{H})$
+   $\delta\ 7.5$--$8.0\ (m,\ 5\mathrm{H})$$\delta\ 9.9\ (s,\ 2\mathrm{H})$. MS:
+   $\mathrm{M}^+ = 134$. Identify the compound. **[Hard]**
 
-6. (a) Assign the CIP priority to each group on the stereocentre of 3-bromopentan-2-ol. (b) Determine
- the absolute configuration. (c) Draw both enantiomers and label them R and S. (d) Would a racemic
- mixture of this compound be optically active? **[Medium]**
+6. (a) Assign the CIP priority to each group on the stereocentre of 3-bromopentan-2-ol. (b)
+   Determine the absolute configuration. (c) Draw both enantiomers and label them R and S. (d) Would
+   a racemic mixture of this compound be optically active? **[Medium]**
 
-7. Compare and contrast the structures and properties of low-density polyethene (LDPE) and high-density
- polyethene (HDPE). Reference the branching of polymer chains, intermolecular forces, density,
- melting point, and typical applications. **[Medium]**
+7. Compare and contrast the structures and properties of low-density polyethene (LDPE) and
+   high-density polyethene (HDPE). Reference the branching of polymer chains, intermolecular forces,
+   density, melting point, and typical applications. **[Medium]**
 
 8. Deduce the structure of a compound $\mathrm{C}_7\mathrm{H}_{14}\mathrm{O}$ given: IR:
- $3400\mathrm{ cm}^{-1}$ (broad), $2950\mathrm{ cm}^{-1}$ (sharp), no C=O absorption.
- $^{1}\mathrm{H}$ NMR: $\delta\ 0.9\ (t,\ 6\mathrm{H})$$\delta\ 1.4\ (m,\ 4\mathrm{H})$
- $\delta\ 1.6\ (s,\ 2\mathrm{H})$$\delta\ 2.4\ (t,\ 2\mathrm{H})$.
- The signal at $\delta\ 1.6$ disappears upon $\mathrm{D}_2\mathrm{O}$ addition. **[Hard]**
+   $3400\mathrm{ cm}^{-1}$ (broad), $2950\mathrm{ cm}^{-1}$ (sharp), no C=O absorption.
+   $^{1}\mathrm{H}$ NMR: $\delta\ 0.9\ (t,\ 6\mathrm{H})$$\delta\ 1.4\ (m,\ 4\mathrm{H})$
+   $\delta\ 1.6\ (s,\ 2\mathrm{H})$$\delta\ 2.4\ (t,\ 2\mathrm{H})$. The signal at $\delta\ 1.6$
+   disappears upon $\mathrm{D}_2\mathrm{O}$ addition. **[Hard]**
 
 ---
 
 ## If You Get These Wrong, Revise:
 
-- **VSEPR geometry and molecular shapes** → Review [./chemical-bonding-advanced](./chemical-bonding-advanced)
-- **IR, MS, and NMR spectroscopy** → Review [./measurement-and-data-processing](./measurement-and-data-processing)
+- **VSEPR geometry and molecular shapes** → Review
+  [./chemical-bonding-advanced](./chemical-bonding-advanced)
+- **IR, MS, and NMR spectroscopy** → Review
+  [./measurement-and-data-processing](./measurement-and-data-processing)
 - **Electron configurations and orbital theory** → Review [./atomic-theory](./atomic-theory)
-- **Stoichiometry of polymer reactions** → Review [./organic-chemistry/organic-chemistry](./organic-chemistry/organic-chemistry)
+- **Stoichiometry of polymer reactions** → Review
+  [./organic-chemistry/organic-chemistry](./organic-chemistry/organic-chemistry)
 
 ## Summary
 

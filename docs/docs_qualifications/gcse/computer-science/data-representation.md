@@ -1,6 +1,8 @@
 ---
 title: Data Representation
-description: "Data Representation — 1. Binary; 1.1 The Binary Number System; 1.2 Converting Between Binary and Denary; 1.3 Units of Data."
+description:
+  'Data Representation — 1. Binary; 1.1 The Binary Number System; 1.2 Converting Between Binary and
+  Denary; 1.3 Units of Data.'
 date: 2026-04-14
 tags:
   - Computer Science
@@ -9,11 +11,10 @@ categories:
   - Computer Science
 slug: data-representation
 ---
+
 ## Data Representation
 
-:::info
-Board Coverage AQA Paper 1 | Edexcel Paper 1 | OCR J277 Paper 1 | WJEC Unit 1
-:::
+:::info Board Coverage AQA Paper 1 | Edexcel Paper 1 | OCR J277 Paper 1 | WJEC Unit 1 :::
 
 ## 1. Binary
 
@@ -24,9 +25,9 @@ Computers use **binary** (base 2), which has only two digits: 0 and 1. Each bina
 
 A group of 8 bits is called a **byte**.
 
-| Bit position | 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1 |
+| Bit position | 128   | 64    | 32    | 16    | 8     | 4     | 2     | 1     |
 | ------------ | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
-| Power of 2 | $2^7$ | $2^6$ | $2^5$ | $2^4$ | $2^3$ | $2^2$ | $2^1$ | $2^0$ |
+| Power of 2   | $2^7$ | $2^6$ | $2^5$ | $2^4$ | $2^3$ | $2^2$ | $2^1$ | $2^0$ |
 
 **Why binary?** Digital circuits are built from transistors, which have two states: on (high
 Voltage) and off (low voltage). These two states map to 1 and 0. Binary arithmetic can be
@@ -66,27 +67,25 @@ Reading bottom to top: 11010110.
 
 ### 1.3 Units of Data
 
-| Unit | Number of bytes |
+| Unit            | Number of bytes          |
 | --------------- | ------------------------ |
-| 1 Kilobyte (KB) | $2^{10} = 1024$ bytes |
+| 1 Kilobyte (KB) | $2^{10} = 1024$ bytes    |
 | 1 Megabyte (MB) | $2^{20} = 1048576$ bytes |
-| 1 Gigabyte (GB) | $2^{30}$ bytes |
-| 1 Terabyte (TB) | $2^{40}$ bytes |
+| 1 Gigabyte (GB) | $2^{30}$ bytes           |
+| 1 Terabyte (TB) | $2^{40}$ bytes           |
 
-:::warning
-In computing, kilo means 1024 (not 1000) because computers use binary. However, storage
+:::warning In computing, kilo means 1024 (not 1000) because computers use binary. However, storage
 Manufacturers often use 1000 for marketing purposes. A "500 GB" hard drive advertised by the
 Manufacturer is actually about 465 GiB when measured in binary. The IEC prefixes KiB, MiB, GiB refer
-Specifically to powers of 1024.
-:::
+Specifically to powers of 1024. :::
 
 ### 1.4 Binary Addition
 
 Binary addition follows the same rules as denary addition, but with only two digits:
 
-| $0 + 0$ | $0 + 1$ | $1 + 0$ | $1 + 1$ |
+| $0 + 0$ | $0 + 1$ | $1 + 0$ | $1 + 1$        |
 | ------- | ------- | ------- | -------------- |
-| 0 | 1 | 1 | 10 (0 carry 1) |
+| 0       | 1       | 1       | 10 (0 carry 1) |
 
 **Worked Example.** $0110 + 0101$
 
@@ -196,22 +195,22 @@ Hex is used as a shorthand for binary because:
 
 | Binary | Hex | Denary |
 | ------ | --- | ------ |
-| 0000 | 0 | 0 |
-| 0001 | 1 | 1 |
-| 0010 | 2 | 2 |
-| 0011 | 3 | 3 |
-| 0100 | 4 | 4 |
-| 0101 | 5 | 5 |
-| 0110 | 6 | 6 |
-| 0111 | 7 | 7 |
-| 1000 | 8 | 8 |
-| 1001 | 9 | 9 |
-| 1010 | A | 10 |
-| 1011 | B | 11 |
-| 1100 | C | 12 |
-| 1101 | D | 13 |
-| 1110 | E | 14 |
-| 1111 | F | 15 |
+| 0000   | 0   | 0      |
+| 0001   | 1   | 1      |
+| 0010   | 2   | 2      |
+| 0011   | 3   | 3      |
+| 0100   | 4   | 4      |
+| 0101   | 5   | 5      |
+| 0110   | 6   | 6      |
+| 0111   | 7   | 7      |
+| 1000   | 8   | 8      |
+| 1001   | 9   | 9      |
+| 1010   | A   | 10     |
+| 1011   | B   | 11     |
+| 1100   | C   | 12     |
+| 1101   | D   | 13     |
+| 1110   | E   | 14     |
+| 1111   | F   | 15     |
 
 ### 2.2 Conversions
 
@@ -242,8 +241,7 @@ Result: 16
 
 Result: 001111110111
 
-**Hex to denary:** Multiply each hex digit by its positional value ($16^0, 16^1, 16^2$Etc.) and
-Sum.
+**Hex to denary:** Multiply each hex digit by its positional value ($16^0, 16^1, 16^2$Etc.) and Sum.
 
 **Worked Example.** Convert 2AF to denary.
 
@@ -261,7 +259,7 @@ Result: 12C
 ### 2.3 Uses of Hexadecimal
 
 - **Colour codes:** In HTML/CSS, colours are represented as #RRGGBB (e.g. #FF0000 = red, #00FF00 =
- green, #0000FF = blue). Each pair is a hex value from 00 to FF (0 to 255 in denary).
+  green, #0000FF = blue). Each pair is a hex value from 00 to FF (0 to 255 in denary).
 - **MAC addresses:** 48-bit addresses represented as 12 hex digits (e.g. 00:1A:2B:3C:4D:5E)
 - **Error codes:** Memory addresses and error messages often use hex
 - **Assembly language:** Machine code instructions are shown in hex
@@ -285,11 +283,11 @@ $3 \times 16 + 12 = 48 + 12 = 60$.
 A **character set** is a collection of characters that a computer can recognise. Each character is
 Assigned a unique binary code.
 
-| Character Set | Description | Characters |
+| Character Set  | Description                                        | Characters                              |
 | -------------- | -------------------------------------------------- | --------------------------------------- |
-| ASCII | American Standard Code for Information Interchange | 128 characters (7 bits) |
-| Extended ASCII | Extended version | 256 characters (8 bits) |
-| Unicode | Universal character set | Over 140,000 characters (up to 32 bits) |
+| ASCII          | American Standard Code for Information Interchange | 128 characters (7 bits)                 |
+| Extended ASCII | Extended version                                   | 256 characters (8 bits)                 |
+| Unicode        | Universal character set                            | Over 140,000 characters (up to 32 bits) |
 
 ### 3.2 ASCII
 
@@ -302,11 +300,11 @@ ASCII uses 7 bits, giving $2^7 = 128$ possible characters:
 
 | Character | ASCII Code | Character | ASCII Code |
 | --------- | ---------- | --------- | ---------- |
-| A | 65 | a | 97 |
-| B | 66 | b | 98 |
-| Z | 90 | z | 122 |
-| 0 | 48 | 9 | 57 |
-| Space | 32 | ! | 33 |
+| A         | 65         | a         | 97         |
+| B         | 66         | b         | 98         |
+| Z         | 90         | z         | 122        |
+| 0         | 48         | 9         | 57         |
+| Space     | 32         | !         | 33         |
 
 **Useful pattern:** The ASCII code for 'a' is 97, for 'b' is 98, ..., for 'z' is 122. The code for
 'A' is 65, for 'B' is 66, ..., for 'Z' is 90. The difference between uppercase and lowercase is 32.
@@ -355,13 +353,13 @@ Assigned a binary value that represents its colour.
 
 **Colour depth:** The number of bits used to represent each pixel.
 
-| Colour Depth | Number of Colours |
+| Colour Depth      | Number of Colours      |
 | ----------------- | ---------------------- |
-| 1 bit | 2 (black and white) |
-| 8 bits (1 byte) | 256 |
-| 16 bits | 65536 |
+| 1 bit             | 2 (black and white)    |
+| 8 bits (1 byte)   | 256                    |
+| 16 bits           | 65536                  |
 | 24 bits (3 bytes) | 16777216 (True Colour) |
-| 32 bits | Over 4 billion |
+| 32 bits           | Over 4 billion         |
 
 **Why $2^n$ colours?** With $n$ bits per pixel, there are $2^n$ possible combinations of 0s and 1s.
 Each combination maps to a unique colour. So 24 bits gives $2^{24} = 16,777,216$ possible colours.
@@ -433,13 +431,13 @@ Rather than as pixels.
 
 **Bitmap vs Vector comparison:**
 
-| Feature | Bitmap | Vector |
+| Feature        | Bitmap                      | Vector                      |
 | -------------- | --------------------------- | --------------------------- |
-| Representation | Grid of pixels | Mathematical descriptions |
-| Scaling | Loses quality when enlarged | No quality loss at any size |
-| File size | Depends on resolution | Depends on complexity |
-| Best for | Photographs | Logos, icons, diagrams |
-| Editing | Pixel-level manipulation | Edit individual shapes |
+| Representation | Grid of pixels              | Mathematical descriptions   |
+| Scaling        | Loses quality when enlarged | No quality loss at any size |
+| File size      | Depends on resolution       | Depends on complexity       |
+| Best for       | Photographs                 | Logos, icons, diagrams      |
+| Editing        | Pixel-level manipulation    | Edit individual shapes      |
 
 ## 5. Representing Sound
 
@@ -449,7 +447,7 @@ Sound is an analogue wave. To store it digitally:
 
 1. The sound wave is sampled at regular intervals (**sampling rate**)
 2. The amplitude at each sample is measured and stored as a binary value (**sample resolution** /
- **bit depth**)
+   **bit depth**)
 
 This process is called **analogue to digital conversion (ADC)**.
 
@@ -460,11 +458,11 @@ Original curve.
 
 ### 5.2 Key Terms
 
-| Term | Definition |
+| Term                          | Definition                                               |
 | ----------------------------- | -------------------------------------------------------- |
-| Sample rate | Number of samples taken per second (measured in Hz) |
-| Sample resolution (bit depth) | Number of bits per sample |
-| Bit rate | Sample rate $\times$ sample resolution (bits per second) |
+| Sample rate                   | Number of samples taken per second (measured in Hz)      |
+| Sample resolution (bit depth) | Number of bits per sample                                |
+| Bit rate                      | Sample rate $\times$ sample resolution (bits per second) |
 
 ### 5.3 Calculating Sound File Size
 
@@ -503,11 +501,11 @@ MB. The small difference is due to file header overhead.
 Highest frequency in the sound. Human hearing ranges up to about 20,000 Hz, so a sample rate of
 44,100 Hz (just above $2 \times 20000$) is sufficient for CD quality.
 
-**Proof sketch of the Nyquist theorem.** If a signal has maximum frequency $f_{\max}$Then the
-Signal completes at most $f_{\max}$ cycles per second. If we sample at rate $f_s \ge 2 f_{\max}$We
-Take at least 2 samples per cycle. Two samples per cycle are sufficient to uniquely determine the
-Amplitude and phase of a sinusoidal component. If $f_s \lt 2 f_{\max}$Different frequencies
-Produce the same sample values (aliasing), making reconstruction ambiguous. $\blacksquare$
+**Proof sketch of the Nyquist theorem.** If a signal has maximum frequency $f_{\max}$Then the Signal
+completes at most $f_{\max}$ cycles per second. If we sample at rate $f_s \ge 2 f_{\max}$We Take at
+least 2 samples per cycle. Two samples per cycle are sufficient to uniquely determine the Amplitude
+and phase of a sinusoidal component. If $f_s \lt 2 f_{\max}$Different frequencies Produce the same
+sample values (aliasing), making reconstruction ambiguous. $\blacksquare$
 
 **Aliasing in practice.** If a 30,000 Hz tone is sampled at 44,100 Hz, the reconstructed frequency
 Is $|44100 - 30000| = 14100$ Hz, which is completely wrong. Anti-aliasing filters remove frequencies
@@ -544,12 +542,12 @@ High-frequency components that are less perceptible. This is why heavily compres
 
 **Compression ratio comparison:**
 
-| Format | Type | Typical Compression Ratio | Quality |
+| Format | Type     | Typical Compression Ratio | Quality      |
 | ------ | -------- | ------------------------- | ------------ |
-| PNG | Lossless | 2:1 to 3:1 | Perfect |
-| JPEG | Lossy | 10:1 to 20:1 | Good to poor |
-| FLAC | Lossless | 2:1 | Perfect |
-| MP3 | Lossy | 10:1 to 12:1 | Good |
+| PNG    | Lossless | 2:1 to 3:1                | Perfect      |
+| JPEG   | Lossy    | 10:1 to 20:1              | Good to poor |
+| FLAC   | Lossless | 2:1                       | Perfect      |
+| MP3    | Lossy    | 10:1 to 12:1              | Good         |
 
 ### 6.3 Lossless Compression
 
@@ -561,9 +559,9 @@ Reconstructed.
 **Techniques:**
 
 - **Run-length encoding (RLE):** Replaces repeated sequences with a count and value. Example:
- AAAABBBCCD $\to$ 4A3B2C1D.
+  AAAABBBCCD $\to$ 4A3B2C1D.
 - **Huffman coding:** Uses shorter codes for more frequent characters and longer codes for less
- frequent ones.
+  frequent ones.
 
 **Advantages:**
 
@@ -607,11 +605,11 @@ Characters get shorter codes, and no code is a prefix of another (prefix-free pr
 
 | Character | Frequency | Huffman Code |
 | --------- | --------- | ------------ |
-| B | 5 | 00 |
-| C | 6 | 01 |
-| D | 4 | 10 |
-| A | 3 | 110 |
-| E | 2 | 111 |
+| B         | 5         | 00           |
+| C         | 6         | 01           |
+| D         | 4         | 10           |
+| A         | 3         | 110          |
+| E         | 2         | 111          |
 
 The most frequent character (C, 6 occurrences) gets the shortest code (01). The least frequent (E, 2
 Occurrences) gets the longest code (111).
@@ -650,12 +648,12 @@ For an $n$-bit two's complement number, the range is:
 
 $$-2^{n-1} \mathrm{ to {} 2^{n-1} - 1$$
 
-| Bits | Range |
+| Bits | Range                     |
 | ---- | ------------------------- |
-| 4 | -8 to 7 |
-| 8 | -128 to 127 |
-| 16 | -32768 to 32767 |
-| 32 | -2147483648 to 2147483647 |
+| 4    | -8 to 7                   |
+| 8    | -128 to 127               |
+| 16   | -32768 to 32767           |
+| 32   | -2147483648 to 2147483647 |
 
 **Why this asymmetry?** There is one more negative number than positive number because zero is
 Represented as all zeros (positive). The pattern $100\ldots0$ (MSB = 1, rest = 0) represents
@@ -684,21 +682,21 @@ $6 = 0110$$3 = 0011$.
 - **Confusing bits and bytes.** 1 byte = 8 bits. A 24-bit colour depth is 3 bytes per pixel.
 - **Forgetting that 1 KB = 1024 bytes, not 1000.** (Though in some contexts, kB = 1000 bytes.)
 - **Not counting leading zeros in binary conversions.** An 8-bit number must have exactly 8 digits.
- The number 5 in 8-bit binary is 00000101, not 101.
+  The number 5 in 8-bit binary is 00000101, not 101.
 - **Confusing lossy and lossless compression.** Lossy = data permanently lost (JPEG); lossless = no
- data lost (PNG).
+  data lost (PNG).
 - **Calculating image file size incorrectly.** Remember to multiply by the colour depth in bits,
- then convert to bytes (divide by 8), then to KB (divide by 1024).
+  then convert to bytes (divide by 8), then to KB (divide by 1024).
 - **Forgetting to convert units when calculating file sizes.** Divide by 8 for bits to bytes, then
- by 1024 for KB, then by 1024 for MB.
+  by 1024 for KB, then by 1024 for MB.
 - **Forgetting to multiply by the number of channels** when calculating audio file size. Stereo has
- 2 channels, so the file size is doubled compared to mono.
+  2 channels, so the file size is doubled compared to mono.
 - **Assuming RLE always reduces file size.** RLE increases file size when there are few or no
- repeated values.
+  repeated values.
 - **Forgetting to pad binary numbers** when converting to hexadecimal. Always group from the right;
- add leading zeros if necessary.
+  add leading zeros if necessary.
 - **Confusing the MSB in two's complement** with a simple sign bit. In two's complement, the MSB
- carries a negative weight of $-2^{n-1}$Not just a sign.
+  carries a negative weight of $-2^{n-1}$Not just a sign.
 
 ## Practice Questions
 
@@ -707,47 +705,47 @@ $6 = 0110$$3 = 0011$.
 2. Convert the hexadecimal number 2AF to binary and to denary.
 
 3. A bitmap image is 1024 $\times$ 768 pixels with a colour depth of 16 bits. Calculate the file
- size in megabytes.
+   size in megabytes.
 
 4. A sound file is recorded at 22050 Hz with 8-bit resolution for 2 minutes. Calculate the file size
- in megabytes.
+   in megabytes.
 
 5. Use run-length encoding to compress: AAAAABBCCCCCCCCCCDD.
 
 6. Explain the difference between lossy and lossless compression, giving an appropriate use for
- each.
+   each.
 
 7. Why is the character 'A' stored as 1000001 in ASCII? Explain what this binary value represents.
 
 8. An image file is 2.5 MB. If the colour depth is increased from 8 bits to 24 bits, what will the
- new file size be?
+   new file size be?
 
 9. Explain why hexadecimal is often used to represent binary values in computing.
 
 10. Calculate the file size of a 30-second stereo (2 channels) audio recording at 48000 Hz with
- 16-bit resolution.
+    16-bit resolution.
 
 11. **(Higher Tier)** Calculate 1101 + 0111 in binary. Show all working.
 
 12. **(Higher Tier)** Calculate $15 - 8$ using two's complement in 5-bit binary. Show all working.
 
 13. **(Higher Tier)** Explain the difference between a bitmap image and a vector image. Give an
- appropriate use case for each.
+    appropriate use case for each.
 
 14. **(Higher Tier)** A 4-minute stereo audio file is 25 MB. If the sample rate is 44100 Hz, what is
- the bit depth?
+    the bit depth?
 
 15. **(Higher Tier)** Calculate $9 \times 5$ in binary using long multiplication. Show all working.
 
 16. **(Higher Tier)** The string "MISSISSIPPI" is to be encoded using Huffman coding. Calculate the
- frequency of each character and determine which character would receive the shortest code.
+    frequency of each character and determine which character would receive the shortest code.
 
 17. **(Higher Tier)** Explain why the two's complement representation of $-128$ in 8 bits is
- 10000000, but there is no representation of $+128$ in 8-bit two's complement.
+    10000000, but there is no representation of $+128$ in 8-bit two's complement.
 
 18. **(Higher Tier)** An image has resolution 2048 $\times$ 1536. Compressed with RLE, each row
- averages 12 runs. If each run uses 1 byte for the count and 1 byte for the pixel value,
- calculate the compressed file size in KB and the compression ratio for a 24-bit image.
+    averages 12 runs. If each run uses 1 byte for the count and 1 byte for the pixel value,
+    calculate the compressed file size in KB and the compression ratio for a 24-bit image.
 
 ## Summary
 

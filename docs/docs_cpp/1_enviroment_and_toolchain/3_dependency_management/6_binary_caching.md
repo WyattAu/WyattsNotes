@@ -1,6 +1,8 @@
 ---
 title: Binary Caching
-description: "C++: Binary Caching — The Artifact Registry Architecture; Industry Standard Registries; Configuration (`VCPKG_BINARY_SOURCES`)."
+description:
+  'C++: Binary Caching — The Artifact Registry Architecture; Industry Standard Registries;
+  Configuration (`VCPKG_BINARY_SOURCES`).'
 date: 2025-12-11T05:47:27.269Z
 tags:
   - cpp
@@ -8,13 +10,14 @@ categories:
   - cpp
 slug: binary-caching
 ---
+
 The distinction between **Compiler Caching** (Module 2.4) and **Binary Package Caching** is
 Critical.
 
 - **Compiler Caching (ccache/sccache):** Accelerates the compilation of _your_ source code by
- hashing translation units. It operates at the object file (`.o`) level.
+  hashing translation units. It operates at the object file (`.o`) level.
 - **Binary Package Caching (vcpkg/Conan):** Accelerates the acquisition of _dependencies_ by storing
- pre-compiled libraries. It operates at the package level (`.lib``.dll`Headers).
+  pre-compiled libraries. It operates at the package level (`.lib``.dll`Headers).
 
 Without binary caching, a Clean Build of a project involving heavy dependencies (e.g., Qt, LLVM,
 Boost, Folly) entails compiling millions of lines of C++ code, often taking hours. With binary
@@ -29,16 +32,17 @@ Eliminating redundant compilation.
 ### Industry Standard Registries
 
 1. **JFrog Artifactory:** The dominant solution in C++. It supports generic storage, Conan
- repositories, and NuGet feeds (used by vcpkg). It offers distinct repository types:
- - **Local:** Artifacts built internally.
- - **Remote:** Proxies to public registries (ConanCenter) with caching.
- - **Virtual:** An aggregation of Local and Remote for a single access point.
+   repositories, and NuGet feeds (used by vcpkg). It offers distinct repository types:
+
+- **Local:** Artifacts built internally.
+- **Remote:** Proxies to public registries (ConanCenter) with caching.
+- **Virtual:** An aggregation of Local and Remote for a single access point.
 
 2. **Sonatype Nexus:** A strong alternative supporting similar repository formats (Conan, Raw,
- NuGet).
+   NuGet).
 
 3. **Cloud Storage (S3/GCS/Azure):** For source-based managers like vcpkg, a raw blob storage bucket
- is often sufficient and more cost-effective than a dedicated artifact server.
+   is often sufficient and more cost-effective than a dedicated artifact server.
 
 ## 1. Vcpkg Binary Caching
 
@@ -88,11 +92,11 @@ export VCPKG_BINARY_SOURCES="clear;http,http://cache.internal/vcpkg/,readwrite"
 ### The CI/CD Workflow
 
 1. **Restoration:** CI Agent checks if the hash of `vcpkg.json` + `vcpkg-configuration.json` matches
- a stored cache key.
+   a stored cache key.
 2. **Hit:** vcpkg downloads binaries. Build time: **0s**.
 3. **Miss:** vcpkg builds from source.
 4. **Ingestion:** Upon successful build, vcpkg zips the artifacts and uploads them to the defined
- `readwrite` source.
+   `readwrite` source.
 
 ## 2. Conan Remote Architecture
 
@@ -140,18 +144,20 @@ Jobs.
 - **Goal:** Pre-warm the cache.
 - **Frequency:** Runs nightly or when `vcpkg.json` / `conanfile.py` changes.
 - **Operation:**
- 1. Clean environment.
- 2. Build all dependencies from source with `readwrite` access to the Artifact Registry.
- 3. Uploads artifacts.
+
+1.  Clean environment.
+2.  Build all dependencies from source with `readwrite` access to the Artifact Registry.
+3.  Uploads artifacts.
 
 ### The Consumer (Pull Requests)
 
 - **Goal:** Rapid feedback for developers.
 - **Frequency:** Runs on every commit.
 - **Operation:**
- 1. Configured with `read-only` access to the Artifact Registry.
- 2. Downloads pre-compiled dependencies.
- 3. Compiles _only_ the project source code.
+
+1.  Configured with `read-only` access to the Artifact Registry.
+2.  Downloads pre-compiled dependencies.
+3.  Compiles _only_ the project source code.
 
 This topology ensures that a developer changing `main.cpp` never waits for `Qt6` to compile.
 
@@ -179,16 +185,16 @@ The compilation of your own source code by memoizing translation unit compilatio
 
 ### How Compiler Caches Work
 
-A compiler cache intercepts invocations of the compiler (`gcc``clang``cl.exe`) and computes a
-**hash key** from all inputs that affect the output object file. If a matching key exists in the
-Cache, the cached `.o` file is returned instead of invoking the compiler.
+A compiler cache intercepts invocations of the compiler (`gcc``clang``cl.exe`) and computes a **hash
+key** from all inputs that affect the output object file. If a matching key exists in the Cache, the
+cached `.o` file is returned instead of invoking the compiler.
 
 #### Cache Key Components
 
 The hash is computed from:
 
 1. **The compiler executable** itself (hash of the binary, ensuring compiler upgrades invalidate the
- cache).
+   cache).
 2. **Source file content** (the `.cpp` file).
 3. **Compiler flags** (e.g., `-std=c++23 -O2 -DNDEBUG`).
 4. **Include file contents** (all `#include`D headers, recursively).
@@ -301,18 +307,18 @@ cmake -S . -B build \
 
 - ccache works transparently with GCC.
 - GCC's `-fprofile-generate` / `-fprofile-use` (PGO) is **not** cacheable by ccache because the
- output depends on runtime profile data, not just source inputs.
+  output depends on runtime profile data, not just source inputs.
 
 #### Clang
 
 - ccache and sccache both work with Clang.
 - Clang's modules (`-fmodules`) can cause cache misses because the module cache is a side effect not
- captured in the hash key. Use `-fno-implicit-module-maps` if caching is critical.
+  captured in the hash key. Use `-fno-implicit-module-maps` if caching is critical.
 
 #### MSVC
 
 - ccache supports MSVC but with caveats. MSVC uses `#pragma once` extensively, which ccache handles
- by normalizing include paths.
+  by normalizing include paths.
 - sccache has native MSVC support and is generally preferred on Windows.
 
 ## Cache Invalidation and Corruption
@@ -325,12 +331,12 @@ The common case.
 ### Common Causes of Unnecessary Cache Misses
 
 1. **Timestamps in macros:** `#define BUILD_TIME __TIME__` causes every compilation to produce a
- unique hash. Use `__DATE__` and `__TIME__` only in non-cached builds.
+   unique hash. Use `__DATE__` and `__TIME__` only in non-cached builds.
 2. **Absolute include paths:** If `#include "/home/user/project/config.h"` is used instead of a
- relative path, moving the project invalidates the cache. Prefer relative or project-relative
- includes.
+   relative path, moving the project invalidates the cache. Prefer relative or project-relative
+   includes.
 3. **Random seeds:** Embedding `rand()` or UUID generation in headers at compile time breaks
- caching.
+   caching.
 
 ### Cache Corruption
 
@@ -339,9 +345,9 @@ Happen due to:
 
 - **Disk filesystem errors:** Check with `fsck` or use `ccache -c` to clear the cache.
 - **Concurrent writes:** Multiple build agents writing to the same cache backend. Use
- `SCCACHE_START_SERVER=1` to serialize access.
+  `SCCACHE_START_SERVER=1` to serialize access.
 - **Storage backend inconsistencies:** S3 eventual consistency can rarely return stale data. Sccache
- adds content verification hashes to mitigate this.
+  adds content verification hashes to mitigate this.
 
 ```bash
 # Clear ccache entirely
@@ -385,12 +391,12 @@ This action automatically caches `~/.cache/ccache` between workflow runs using G
 
 Typical cache hit rates in real-world C++ CI pipelines:
 
-| Scenario | First Build (cold) | Incremental Build | Cache Hit Rate |
+| Scenario                    | First Build (cold) | Incremental Build | Cache Hit Rate |
 | --------------------------- | ------------------ | ----------------- | -------------- |
-| Small project (10 files) | 30s | 2s | 95%+ |
-| Medium project (500 files) | 8min | 45s | 85-90% |
-| Large project (5000+ files) | 45min | 5min | 70-80% |
-| Header-heavy (Boost, Qt) | 90min | 15min | 60-75% |
+| Small project (10 files)    | 30s                | 2s                | 95%+           |
+| Medium project (500 files)  | 8min               | 45s               | 85-90%         |
+| Large project (5000+ files) | 45min              | 5min              | 70-80%         |
+| Header-heavy (Boost, Qt)    | 90min              | 15min             | 60-75%         |
 
 **Key observation:** Header-heavy codebases see lower hit rates because changing a widely-included
 Header invalidates all translation units that include it. This is a fundamental property of the C++
@@ -401,9 +407,9 @@ Compilation model, not a cache limitation.
 The optimal CI setup combines both layers:
 
 1. **Binary package cache** (vcpkg/Conan): Eliminates dependency compilation entirely. Dependencies
- are downloaded as pre-built artifacts.
+   are downloaded as pre-built artifacts.
 2. **Compiler cache** (ccache/sccache): Caches the project's own compilation. Only changed
- translation units are recompiled.
+   translation units are recompiled.
 
 ```yaml
 # Pseudocode CI pipeline
@@ -420,19 +426,19 @@ This combined approach can reduce a 45-minute CI build to under 2 minutes for in
 ## Common Pitfalls
 
 1. **Forgetting to set `CMAKE_CXX_COMPILER_LAUNCHER`:** Without this, CMake invokes the compiler
- directly, bypassing the cache entirely. Verify with `ccache -s` that the "called" counter
- increases.
+   directly, bypassing the cache entirely. Verify with `ccache -s` that the "called" counter
+   increases.
 2. **Cache poisoning with instrumented builds:** Running `sanitize``coverage`Or `debug` builds
- populates the cache with instrumented `.o` files. Subsequent release builds may accidentally use
- these. Use separate cache directories or clear the cache between build types.
+   populates the cache with instrumented `.o` files. Subsequent release builds may accidentally use
+   these. Use separate cache directories or clear the cache between build types.
 3. **Ignoring the cache size limit:** If the cache reaches its maximum size, ccache uses an LRU
- (Least Recently Used) eviction policy. Frequently-used cache entries may be evicted if the cache
- is too small. Monitor with `ccache -s` and adjust with `ccache -M`.
+   (Least Recently Used) eviction policy. Frequently-used cache entries may be evicted if the cache
+   is too small. Monitor with `ccache -s` and adjust with `ccache -M`.
 
 ## See Also
 
 - [Dependency Resolution](1_dependency_architectures_models.md) — How package managers resolve
- version graphs
+  version graphs
 - [vcpkg](3_vcpkg.md) — Binary caching configuration for vcpkg
 - [Build Caching](../2_build_system/4_build_caching.md) — CMake and build-system-level caching
 - [Code Coverage](../2_build_system/6_code_coverage.md) — Instrumented builds (should not be cached)

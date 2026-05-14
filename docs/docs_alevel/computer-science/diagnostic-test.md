@@ -1,6 +1,8 @@
 ---
 title: A Level Computer Science — Diagnostic Test
-description: "A-Level General diagnostic test: Instructions; Fundamentals; Data Structures; Algorithms for targeted revision. with worked examples and exam-style questions."
+description:
+  'A-Level General diagnostic test: Instructions; Fundamentals; Data Structures; Algorithms for
+  targeted revision. with worked examples and exam-style questions.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - ComputerScience
@@ -9,6 +11,7 @@ categories:
   - ComputerScience
 slug: diagnostic-test
 ---
+
 ## Instructions
 
 This diagnostic test covers the full A Level Computer Science syllabus. There are **45 questions**
@@ -328,8 +331,8 @@ The **Waterfall** model — its sequential phases suit stable requirements with 
 <details>
 <summary>Answer</summary>
 
-A sprint is a time-boxed iteration ( 2–4 weeks) in which the development team delivers a
-Potentially shippable product increment.
+A sprint is a time-boxed iteration ( 2–4 weeks) in which the development team delivers a Potentially
+shippable product increment.
 
 **Revision:**
 [SDLC](/docs/alevel/computer-science/software-engineering/software-development-lifecycle)
@@ -608,13 +611,13 @@ Theorem) because "effectively computable" is an informal concept.
 
 Count your correct answers and identify weak areas:
 
-| Score | Grade | Recommendation |
+| Score | Grade | Recommendation                                        |
 | ----- | ----- | ----------------------------------------------------- |
-| 40–45 | A\* | Excellent — focus on exam technique |
-| 35–39 | A | Strong — review missed topics briefly |
-| 25–34 | B/C | Good foundation — systematic revision needed |
-| 15–24 | D/E | Gaps exist — work through each topic's notes |
-| 0–14 | U | Significant revision needed — start with fundamentals |
+| 40–45 | A\*   | Excellent — focus on exam technique                   |
+| 35–39 | A     | Strong — review missed topics briefly                 |
+| 25–34 | B/C   | Good foundation — systematic revision needed          |
+| 15–24 | D/E   | Gaps exist — work through each topic's notes          |
+| 0–14  | U     | Significant revision needed — start with fundamentals |
 
 **Next steps:** For each incorrect answer, follow the revision link and work through the full
 Problem set on that page.

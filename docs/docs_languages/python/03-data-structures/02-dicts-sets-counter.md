@@ -1,9 +1,12 @@
 ---
 id: dicts-sets-counter
 title: Dicts, Sets, and Collections Deep Dive
-description: "Dicts, Sets, and Collections Deep Dive — Dict Internals; Hash Table Structure; Hash Computation; Collision Resolution: Open Addressing."
+description:
+  'Dicts, Sets, and Collections Deep Dive — Dict Internals; Hash Table Structure; Hash Computation;
+  Collision Resolution: Open Addressing.'
 slug: dicts-sets-counter
 ---
+
 ## Dict Internals
 
 Python dicts are hash tables. CPython implements them using a combination of a sparse array of
@@ -34,13 +37,13 @@ print(sys.getsizeof(d))  # Typically 232 bytes on 64-bit CPython 3.12
 Python calls `hash(key)` on every key. The hash must be an integer. Built-in types implement
 `__hash__` as follows:
 
-| Type | Hash Strategy |
+| Type        | Hash Strategy                                                                   |
 | ----------- | ------------------------------------------------------------------------------- |
-| `int` | `hash(n) = n` (with `-1` mapped to `-2` to avoid collision with error sentinel) |
-| `str` | SipHash-2-4 (a keyed hash function, randomized per interpreter) |
-| `tuple` | XOR of element hashes with per-position perturbation |
-| `frozenset` | XOR of element hashes with perturbation |
-| `bytes` | Truncated SipHash |
+| `int`       | `hash(n) = n` (with `-1` mapped to `-2` to avoid collision with error sentinel) |
+| `str`       | SipHash-2-4 (a keyed hash function, randomized per interpreter)                 |
+| `tuple`     | XOR of element hashes with per-position perturbation                            |
+| `frozenset` | XOR of element hashes with perturbation                                         |
+| `bytes`     | Truncated SipHash                                                               |
 
 ```python
 hash(42)           # 42
@@ -48,10 +51,8 @@ hash("hello")      # varies per interpreter session
 hash(("a", "b"))   # depends on hash("a") ^ hash("b") with rotation
 ```
 
-:::info
-CPython randomizes hash seeds for `str``bytes`And `datetime` objects at interpreter
-Startup. This is a security measure against hash DoS attacks. Set `PYTHONHASHSEED=0` to disable.
-:::
+:::info CPython randomizes hash seeds for `str``bytes`And `datetime` objects at interpreter Startup.
+This is a security measure against hash DoS attacks. Set `PYTHONHASHSEED=0` to disable. :::
 
 ### Collision Resolution: Open Addressing
 
@@ -96,8 +97,8 @@ for i in range(100):
 Before Python 3.6, dicts stored entries in a single sparse array. This wasted memory because most
 Slots were empty. The compact dict design splits the structure into:
 
-- An **indices array** — a sparse array of `int8``int16``int32`Or `int64` indices (sized based
- on table size).
+- An **indices array** — a sparse array of `int8``int16``int32`Or `int64` indices (sized based on
+  table size).
 - A **dense entries array** — a compact array of `(hash, key, value)` triples.
 
 This saves 20-25% memory for typical dicts and guarantees insertion-order preservation as a side
@@ -125,19 +126,17 @@ od.popitem(last=False)    # Remove and return first item: ('third', 3)
 
 Since Python 3.7, regular `dict` also preserves insertion order. The differences are:
 
-| Feature | `dict` | `OrderedDict` |
+| Feature                   | `dict`           | `OrderedDict` |
 | ------------------------- | ---------------- | ------------- |
-| Insertion order preserved | Yes (3.7+) | Yes |
-| `move_to_end()` | No | Yes |
-| `popitem(last=False)` | No | Yes |
-| Equality checks order | No (Python 3.7+) | Yes |
-| Reversible | Yes (3.8+) | Yes |
+| Insertion order preserved | Yes (3.7+)       | Yes           |
+| `move_to_end()`           | No               | Yes           |
+| `popitem(last=False)`     | No               | Yes           |
+| Equality checks order     | No (Python 3.7+) | Yes           |
+| Reversible                | Yes (3.8+)       | Yes           |
 
-:::warning
-`OrderedDict` equality is **order-sensitive**:
+:::warning `OrderedDict` equality is **order-sensitive**:
 `OrderedDict([(1,2),(3,4)]) != OrderedDict([(3,4),(1,2)])`. Regular `dict` equality does **not**
-Consider order — only `OrderedDict` equality is order-sensitive.
-:::
+Consider order — only `OrderedDict` equality is order-sensitive. :::
 
 ### LRU Cache with OrderedDict
 
@@ -213,8 +212,7 @@ tree["servers"]["db1"]["port"] = 5432
 print(tree["servers"]["web1"]["ip"])  # 10.0.0.1
 ```
 
-:::warning
-`nested_dict()` above creates an infinite recursion if you try to convert it to a regular
+:::warning `nested_dict()` above creates an infinite recursion if you try to convert it to a regular
 `dict` naively. Use a recursive conversion function:
 
 ```python
@@ -319,8 +317,7 @@ c.subtract(["a", "b"])  # Subtract counts (allows negatives)
 print(c)  # Counter({'a': 4, 'c': 3, 'b': 0})
 ```
 
-:::info
-`Counter` does not raise `KeyError` for missing keys — it returns 0. This is implemented via
+:::info `Counter` does not raise `KeyError` for missing keys — it returns 0. This is implemented via
 `__missing__`:
 
 ```python
@@ -370,10 +367,8 @@ print(config["timeout"])  # 30
 ChainMap is ideal for layered configuration systems: defaults, environment variables, CLI args, and
 Per-request overrides.
 
-:::warning
-Writes to a ChainMap affect **only the first mapping**. If you need to modify a specific
-Layer, access it via `config.maps[0]``config.maps[1]`Etc.
-:::
+:::warning Writes to a ChainMap affect **only the first mapping**. If you need to modify a specific
+Layer, access it via `config.maps[0]``config.maps[1]`Etc. :::
 
 ```python
 config = ChainMap({"timeout": 30}, {"timeout": 60})
@@ -398,15 +393,15 @@ print(s.remove(6))  # KeyError — raises if not present
 
 Set operations have the following average-case complexities:
 
-| Operation | Average Case | Worst Case |
+| Operation                      | Average Case           | Worst Case          |
 | ------------------------------ | ---------------------- | ------------------- |
-| `x in s` | O(1) | O(n) |
-| `s.add(x)` | O(1) | O(n) |
-| `s.discard(x)` | O(1) | O(n) |
-| `s \| t` (union) | O(len(s) + len(t)) | O(len(s) \* len(t)) |
-| `s & t` (intersection) | O(min(len(s), len(t))) | O(len(s) \* len(t)) |
-| `s - t` (difference) | O(len(s)) | O(len(s) \* len(t)) |
-| `s ^ t` (symmetric difference) | O(len(s) + len(t)) | O(len(s) \* len(t)) |
+| `x in s`                       | O(1)                   | O(n)                |
+| `s.add(x)`                     | O(1)                   | O(n)                |
+| `s.discard(x)`                 | O(1)                   | O(n)                |
+| `s \| t` (union)               | O(len(s) + len(t))     | O(len(s) \* len(t)) |
+| `s & t` (intersection)         | O(min(len(s), len(t))) | O(len(s) \* len(t)) |
+| `s - t` (difference)           | O(len(s))              | O(len(s) \* len(t)) |
+| `s ^ t` (symmetric difference) | O(len(s) + len(t))     | O(len(s) \* len(t)) |
 
 ### frozenset
 
@@ -521,11 +516,9 @@ d["port"] = 8080          # Setting 'port' = 8080
 del d["port"]             # Deleting 'port'
 ```
 
-:::warning
-Prefer `UserDict` over subclassing `dict` directly. When you subclass `dict`Some
-C-level methods bypass your Python-level overrides. `UserDict` stores data in an internal `dict`
-Attribute (`self.data`), so all access goes through your Python methods.
-:::
+:::warning Prefer `UserDict` over subclassing `dict` directly. When you subclass `dict`Some C-level
+methods bypass your Python-level overrides. `UserDict` stores data in an internal `dict` Attribute
+(`self.data`), so all access goes through your Python methods. :::
 
 ```python
 from collections import UserList
@@ -580,16 +573,16 @@ p.x = 10  # Mutable by default
 
 ### Comparison
 
-| Feature | `namedtuple` | `dataclass` | `TypedDict` |
-| -------------- | ------------------------------ | ---------------------- | ----------------- |
-| Immutable | Yes | Opt-in (`frozen=True`) | N/A |
-| Type hints | No | Yes | Yes |
-| Default values | Yes (via `defaults`) | Yes | Yes |
-| Methods | `_asdict``_replace``_make` | Custom methods | None |
-| Inheritance | No | Yes | Yes |
-| Memory | Tuple-sized | Class overhead | Dict |
-| Use case | Lightweight records | Rich objects | Typed dict shapes |
-| `__slots__` | Yes (built-in) | Opt-in | N/A |
+| Feature        | `namedtuple`               | `dataclass`            | `TypedDict`       |
+| -------------- | -------------------------- | ---------------------- | ----------------- |
+| Immutable      | Yes                        | Opt-in (`frozen=True`) | N/A               |
+| Type hints     | No                         | Yes                    | Yes               |
+| Default values | Yes (via `defaults`)       | Yes                    | Yes               |
+| Methods        | `_asdict``_replace``_make` | Custom methods         | None              |
+| Inheritance    | No                         | Yes                    | Yes               |
+| Memory         | Tuple-sized                | Class overhead         | Dict              |
+| Use case       | Lightweight records        | Rich objects           | Typed dict shapes |
+| `__slots__`    | Yes (built-in)             | Opt-in                 | N/A               |
 
 ```python
 from typing import TypedDict
@@ -649,10 +642,8 @@ print([e[1] for e in events])
 # ['deploy v1', 'hotfix', 'deploy v2', 'incident']
 ```
 
-:::tip
-`bisect` operations are O(log n) for search and O(n) for insertion (because the list must
-Shift elements). For frequent insertions, consider `heapq` or a balanced tree structure.
-:::
+:::tip `bisect` operations are O(log n) for search and O(n) for insertion (because the list must
+Shift elements). For frequent insertions, consider `heapq` or a balanced tree structure. :::
 
 ## heapq Module
 
@@ -739,8 +730,7 @@ print(pq.pop())  # normal task
 print(pq.pop())  # low priority task
 ```
 
-:::warning
-Never store mutable objects directly in a heap and then modify them externally — the heap
+:::warning Never store mutable objects directly in a heap and then modify them externally — the heap
 Invariant may be violated. Either use immutable data or call `heapq.heapify()` after modifications.
 :::
 

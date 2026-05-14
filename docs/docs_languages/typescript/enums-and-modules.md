@@ -1,11 +1,14 @@
 ---
 title: Enums and Modules
-description: "Enums and Modules — Numeric Enums; Explicit Values; Computed Values; String Enums with worked examples and exam-style questions."
+description:
+  'Enums and Modules — Numeric Enums; Explicit Values; Computed Values; String Enums with worked
+  examples and exam-style questions.'
 slug: typescript-enums-and-modules
 date: 2026-04-22T00:00:00.000Z
 tags: [TypeScript]
 categories: [TypeScript]
 ---
+
 ## Numeric Enums
 
 Numeric enums assign auto-incrementing integer values to their members. By default, the first member
@@ -216,13 +219,13 @@ Compatible with `isolatedModules`.
 
 ### Enum Comparison Table
 
-| Feature | Numeric Enum | String Enum | Const Enum | `as const` Object |
+| Feature                | Numeric Enum | String Enum | Const Enum    | `as const` Object |
 | ---------------------- | ------------ | ----------- | ------------- | ----------------- |
-| Reverse mapping | Yes | No | N/A (inlined) | No |
-| Runtime object emitted | Yes | Yes | No | Yes |
-| `isolatedModules` safe | Yes | Yes | No | Yes |
-| Computed values | Limited | No | No | N/A |
-| Tree-shakeable | No | No | Yes (inlined) | Yes |
+| Reverse mapping        | Yes          | No          | N/A (inlined) | No                |
+| Runtime object emitted | Yes          | Yes         | No            | Yes               |
+| `isolatedModules` safe | Yes          | Yes         | No            | Yes               |
+| Computed values        | Limited      | No          | No            | N/A               |
+| Tree-shakeable         | No           | No          | Yes (inlined) | Yes               |
 
 ## ES Modules: Import and Export
 
@@ -433,12 +436,12 @@ Resolves dependencies automatically through `tsconfig.json` and `node_modules`.
 
 ### Classic vs Node Resolution
 
-| Strategy | Description |
-| --------------------- | ---------------------------------------------------------------------------------------- |
-| `classic` | Original TypeScript resolution; relative to importing file |
-| `node` | Mimics Node.js resolution; checks `node_modules``package.json` `types`/`typings` field |
-| `node16` / `nodenext` | Node.js ESM-aware resolution (TypeScript 4.7+) |
-| `bundler` | Resolution for bundlers that handle module resolution themselves (TypeScript 5.0+) |
+| Strategy              | Description                                                                            |
+| --------------------- | -------------------------------------------------------------------------------------- |
+| `classic`             | Original TypeScript resolution; relative to importing file                             |
+| `node`                | Mimics Node.js resolution; checks `node_modules``package.json` `types`/`typings` field |
+| `node16` / `nodenext` | Node.js ESM-aware resolution (TypeScript 4.7+)                                         |
+| `bundler`             | Resolution for bundlers that handle module resolution themselves (TypeScript 5.0+)     |
 
 ### Path Aliases in tsconfig
 
@@ -567,10 +570,10 @@ Names.
 **Mitigation strategies:**
 
 1. Import directly from the source file rather than the barrel when only one or two names are
- needed.
+   needed.
 2. Use named exports (not `export *`).
 3. Ensure the bundler supports side-effect-free tree-shaking (mark the package as
- `"sideEffects": false` in `package.json`).
+   `"sideEffects": false` in `package.json`).
 
 ```json
 {

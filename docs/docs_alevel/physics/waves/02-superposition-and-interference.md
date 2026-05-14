@@ -1,6 +1,8 @@
 ---
 title: Superposition and Interference
-description: "A-Level Physics notes on Superposition and Interference: 1. The Principle of Superposition; Constructive and Destructive Interference."
+description:
+  'A-Level Physics notes on Superposition and Interference: 1. The Principle of Superposition;
+  Constructive and Destructive Interference.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Physics
@@ -9,11 +11,10 @@ categories:
   - Physics
 slug: superposition-and-interference
 ---
+
 ## Superposition and Interference
 
-:::info
-Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2
-:::
+:::info Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2 :::
 
 <PhetSimulation simulationId="wave-interference" title="Wave Interference" />
 
@@ -62,9 +63,9 @@ The resultant amplitude is:
 $$A_{\mathrm{resultant}} = 2A\left|\cos\frac◆LB◆\Delta\phi◆RB◆◆LB◆2◆RB◆\right|$$
 
 - **Constructive interference**:
- $\Delta\phi = 0, 2\pi, 4\pi, \ldots \implies A_{\mathrm{resultant}} = 2A$
+  $\Delta\phi = 0, 2\pi, 4\pi, \ldots \implies A_{\mathrm{resultant}} = 2A$
 - **Destructive interference**:
- $\Delta\phi = \pi, 3\pi, 5\pi, \ldots \implies A_{\mathrm{resultant}} = 0$
+  $\Delta\phi = \pi, 3\pi, 5\pi, \ldots \implies A_{\mathrm{resultant}} = 0$
 
 ## 2. Path Difference and Phase Difference
 
@@ -91,10 +92,10 @@ $\square$
 
 **Conditions for interference:**
 
-| Condition | Path Difference | Phase Difference |
+| Condition              | Path Difference            | Phase Difference |
 | ---------------------- | -------------------------- | ---------------- |
-| Constructive (maximum) | $n\lambda$ | $2n\pi$ |
-| Destructive (minimum) | $(n + \frac{1}{2})\lambda$ | $(2n+1)\pi$ |
+| Constructive (maximum) | $n\lambda$                 | $2n\pi$          |
+| Destructive (minimum)  | $(n + \frac{1}{2})\lambda$ | $(2n+1)\pi$      |
 
 Where $n = 0, 1, 2, \ldots$
 
@@ -108,11 +109,8 @@ Have a constant phase relationship. This requires:
 - Same frequency (and hence wavelength)
 - Constant phase difference
 
-:::warning
-Warning
-Not coherent because the phase difference fluctuates randomly. Interference requires coherent
-Sources, produced by splitting a single wave.
-:::
+:::warning Warning Not coherent because the phase difference fluctuates randomly. Interference
+requires coherent Sources, produced by splitting a single wave. :::
 
 ## 3. Young's Double Slit Experiment
 
@@ -167,11 +165,8 @@ Visible.
 
 The first minimum of the single-slit pattern occurs at $\sin\theta = \lambda/a$.
 
-:::tip
-Tip
-(single slit before the double slit), narrow slits, monochromatic light, and the small-angle
-Approximation. Quote the fringe spacing formula and explain each variable.
-:::
+:::tip Tip (single slit before the double slit), narrow slits, monochromatic light, and the
+small-angle Approximation. Quote the fringe spacing formula and explain each variable. :::
 
 <details>
 <summary>Example: Young's Double Slit</summary>
@@ -213,18 +208,16 @@ Or equal to $d/\lambda$).
 
 ### Grating vs Double Slit
 
-| Property | Double Slit | Diffraction Grating |
+| Property          | Double Slit    | Diffraction Grating                         |
 | ----------------- | -------------- | ------------------------------------------- |
-| Number of sources | 2 | Hundreds to thousands |
-| Maxima sharpness | Broad | Very sharp |
-| Maxima brightness | Low | High |
-| Missing orders | None (ideally) | Possible (if slit width effects considered) |
+| Number of sources | 2              | Hundreds to thousands                       |
+| Maxima sharpness  | Broad          | Very sharp                                  |
+| Maxima brightness | Low            | High                                        |
+| Missing orders    | None (ideally) | Possible (if slit width effects considered) |
 
-:::tip
-Exam Technique If asked to find the number of visible orders: calculate $d/\lambda$Take the
+:::tip Exam Technique If asked to find the number of visible orders: calculate $d/\lambda$Take the
 Integer part, then note that orders $+n$ and $-n$ are both visible (plus the zeroth order). Total
-Visible maxima $= 2n_{\max} + 1$.
-:::
+Visible maxima $= 2n_{\max} + 1$. :::
 
 ## 5. Stationary Waves
 
@@ -244,7 +237,8 @@ By superposition:
 
 $$y = y_1 + y_2 = A[\sin(kx - \omega t) + \sin(kx + \omega t)]$$
 
-Using $\sin\alpha + \sin\beta = 2\sin\frac◆LB◆\alpha+\beta◆RB◆◆LB◆2◆RB◆\cos\frac◆LB◆\alpha-\beta◆RB◆◆LB◆2◆RB◆$:
+Using
+$\sin\alpha + \sin\beta = 2\sin\frac◆LB◆\alpha+\beta◆RB◆◆LB◆2◆RB◆\cos\frac◆LB◆\alpha-\beta◆RB◆◆LB◆2◆RB◆$:
 
 $$y = 2A\sin(kx)\cos(\omega t)$$
 
@@ -287,7 +281,7 @@ Can form on a system, corresponding to the simplest mode of vibration.
 For a string of length $L$ fixed at both ends, nodes must exist at $x = 0$ and $x = L$.
 
 - **Fundamental mode** (1st harmonic): one antinode in the middle. $L = \lambda_1/2$So
- $\lambda_1 = 2L$ and $f_1 = v/(2L)$.
+  $\lambda_1 = 2L$ and $f_1 = v/(2L)$.
 - **2nd harmonic**: two antinodes. $L = \lambda_2$So $\lambda_2 = L$ and $f_2 = v/L = 2f_1$.
 - **$n$-th harmonic**: $L = n\lambda_n/2$So $\lambda_n = 2L/n$ and $f_n = nv/(2L) = nf_1$.
 
@@ -427,7 +421,8 @@ $y_2 = A\sin(kx + \omega t)$.
 
 **Answer.** $y = y_1 + y_2 = A[\sin(kx - \omega t) + \sin(kx + \omega t)]$.
 
-Using the identity $\sin\alpha + \sin\beta = 2\sin\frac◆LB◆\alpha+\beta◆RB◆◆LB◆2◆RB◆\cos\frac◆LB◆\alpha-\beta◆RB◆◆LB◆2◆RB◆$:
+Using the identity
+$\sin\alpha + \sin\beta = 2\sin\frac◆LB◆\alpha+\beta◆RB◆◆LB◆2◆RB◆\cos\frac◆LB◆\alpha-\beta◆RB◆◆LB◆2◆RB◆$:
 
 $\alpha = kx - \omega t$$\beta = kx + \omega t$.
 
@@ -494,10 +489,12 @@ The second order, calculate the angular range subtended by the visible spectrum.
 
 **Answer.** $d = 1/400$ mm $= 2.5 \times 10^{-6}$ m. For $n = 2$:
 
-For 400 nm: $\sin\theta = \frac◆LB◆2 \times 400 \times 10^{-9}◆RB◆◆LB◆2.5 \times 10^{-6}◆RB◆ = 0.320$
+For 400 nm:
+$\sin\theta = \frac◆LB◆2 \times 400 \times 10^{-9}◆RB◆◆LB◆2.5 \times 10^{-6}◆RB◆ = 0.320$
 $\theta = 18.7^\circ$.
 
-For 700 nm: $\sin\theta = \frac◆LB◆2 \times 700 \times 10^{-9}◆RB◆◆LB◆2.5 \times 10^{-6}◆RB◆ = 0.560$
+For 700 nm:
+$\sin\theta = \frac◆LB◆2 \times 700 \times 10^{-9}◆RB◆◆LB◆2.5 \times 10^{-6}◆RB◆ = 0.560$
 $\theta = 34.1^\circ$.
 
 Angular range $= 34.1° - 18.7° = 15.4^\circ$.
@@ -531,8 +528,8 @@ $0.60 = \Delta w/2$. Confirmed.
 
 ### 6.3 Non-Integer Wavelength Ratios
 
-**Example.** Two coherent sources emit waves of wavelength $2.5$ cm. At point $P$The path
-Difference is $9.0$ cm. Describe the interference at $P$.
+**Example.** Two coherent sources emit waves of wavelength $2.5$ cm. At point $P$The path Difference
+is $9.0$ cm. Describe the interference at $P$.
 
 **Answer.** $\Delta x / \lambda = 9.0 / 2.5 = 3.6 = 18/5$. This is neither an integer (constructive)
 Nor a half-integer (destructive). The interference is partial. The phase difference is
@@ -546,13 +543,12 @@ Maximum ($2A$) because the path difference is close to $4\lambda = 10.0$ cm.
 
 ### 7.1 General Conditions
 
-For two coherent sources separated by distance $s$At a point $P$ on a screen at distance
-$D \gg s$:
+For two coherent sources separated by distance $s$At a point $P$ on a screen at distance $D \gg s$:
 
-| Condition | Path Difference | Fringe Type | Order |
+| Condition | Path Difference    | Fringe Type  | Order                 |
 | --------- | ------------------ | ------------ | --------------------- |
-| Bright | $n\lambda$ | Constructive | $n = 0, 1, 2, \ldots$ |
-| Dark | $(n + 0.5)\lambda$ | Destructive | $n = 0, 1, 2, \ldots$ |
+| Bright    | $n\lambda$         | Constructive | $n = 0, 1, 2, \ldots$ |
+| Dark      | $(n + 0.5)\lambda$ | Destructive  | $n = 0, 1, 2, \ldots$ |
 
 The distance from the central maximum to the $n$-th bright fringe is $w_n = n\lambda D/s$. The
 Distance to the $n$-th dark fringe is $w_n = (n + 0.5)\lambda D/s$.
@@ -599,8 +595,8 @@ $$R = \frac◆LB◆\lambda◆RB◆◆LB◆\Delta\lambda◆RB◆ = nN$$
 Where $N$ is the total number of illuminated slits.
 
 **Example.** A grating has $500$ lines/mm and is $20$ mm wide. In second order at $\lambda = 600$
-Nm, the minimum resolvable wavelength difference is
-$\Delta\lambda = 600/(2 \times 10\,000) = 0.030$ nm.
+Nm, the minimum resolvable wavelength difference is $\Delta\lambda = 600/(2 \times 10\,000) = 0.030$
+nm.
 
 ### 9.2 Missing Orders
 
@@ -613,20 +609,20 @@ $n = 4, 8, 12, \ldots$ are missing.
 ## 10. Common Pitfalls
 
 1. **Forgetting the small-angle approximation.** $\Delta w = \lambda D/s$ assumes
- $\sin\theta \approx \tan\theta$Valid only when $D \gg s$. For large angles, use
- $\sin\theta = n\lambda/s$ directly.
+   $\sin\theta \approx \tan\theta$Valid only when $D \gg s$. For large angles, use
+   $\sin\theta = n\lambda/s$ directly.
 
 2. **Confusing slit separation $s$ with slit width $a$.** $s$ is the separation between slit
- centres; $a$ determines the diffraction envelope.
+   centres; $a$ determines the diffraction envelope.
 
 3. **Counting the zeroth order.** The central maximum ($n = 0$) counts as a maximum. Total visible
- maxima $= 2n_{\max} + 1$.
+   maxima $= 2n_{\max} + 1$.
 
 4. **Assuming all harmonics exist for closed pipes.** A pipe closed at one end only supports odd
- harmonics ($n = 1, 3, 5, \ldots$).
+   harmonics ($n = 1, 3, 5, \ldots$).
 
 5. **Confusing nodes and antinodes at boundaries.** A fixed end is a displacement node. An open end
- is a displacement antinode.
+   is a displacement antinode.
 
 ## 11. Extension Problem Set
 
@@ -704,17 +700,17 @@ Maxima become narrower and brighter.
 
 </details>
 
-
 ---
 
-:::tip
-Tip
-Ready to test your understanding of **Superposition and Interference**? The [diagnostic test](/docs/alevel/physics/diagnostics/diag-superposition-interference) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
+:::tip Tip Ready to test your understanding of **Superposition and Interference**? The
+[diagnostic test](/docs/alevel/physics/diagnostics/diag-superposition-interference) contains the
+hardest questions within the A-Level specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Superposition and Interference with other physics topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine
+Superposition and Interference with other physics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on
+self-marking and building a personal test matrix. :::
 
 ## Summary
 

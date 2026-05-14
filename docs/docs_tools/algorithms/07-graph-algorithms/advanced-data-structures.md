@@ -1,9 +1,12 @@
 ---
 id: advanced-data-structures
 title: Advanced Data Structures
-description: "Advanced Data Structures — Segment Tree; Range Sum Query; Range Min/Max Query; Lazy Propagation with worked examples and exam-style questions."
+description:
+  'Advanced Data Structures — Segment Tree; Range Sum Query; Range Min/Max Query; Lazy Propagation
+  with worked examples and exam-style questions.'
 slug: advanced-data-structures
 ---
+
 ## Segment Tree
 
 A segment tree is a binary tree data structure for storing information about intervals or segments.
@@ -945,18 +948,18 @@ A way that preserves locality better than block-based sorting.
 
 ## Comparison Table
 
-| Data Structure | Build | Query | Update | Notes |
+| Data Structure          | Build         | Query                   | Update         | Notes                                         |
 | ----------------------- | ------------- | ----------------------- | -------------- | --------------------------------------------- |
-| Segment tree | $O(n)$ | $O(\log n)$ | $O(\log n)$ | Flexible, lazy propagation |
-| Fenwick tree | $O(n)$ | $O(\log n)$ | $O(\log n)$ | Simpler, prefix sums only |
-| Sparse table | $O(n \log n)$ | $O(1)$ | N/A | Static, no updates |
-| DSU | $O(n)$ | $O(\alpha(n))$ | $O(\alpha(n))$ | Union-find only |
-| LCA (binary lifting) | $O(n \log n)$ | $O(\log n)$ | N/A | Static tree |
-| LCA (Euler + RMQ) | $O(n \log n)$ | $O(1)$ | N/A | Static tree |
-| HLD + segment tree | $O(n)$ | $O(\log^2 n)$ | $O(\log^2 n)$ | Path queries on tree |
-| Merge sort tree | $O(n \log n)$ | $O(\log^2 n)$ | N/A | Static, sorted subarrays |
-| Persistent segment tree | $O(n \log n)$ | $O(\log n)$ | $O(\log n)$ | Version history, $O(\log n)$ space per update |
-| Mo's algorithm | N/A | $O(\sqrt{n})$ amortised | N/A | Offline only |
+| Segment tree            | $O(n)$        | $O(\log n)$             | $O(\log n)$    | Flexible, lazy propagation                    |
+| Fenwick tree            | $O(n)$        | $O(\log n)$             | $O(\log n)$    | Simpler, prefix sums only                     |
+| Sparse table            | $O(n \log n)$ | $O(1)$                  | N/A            | Static, no updates                            |
+| DSU                     | $O(n)$        | $O(\alpha(n))$          | $O(\alpha(n))$ | Union-find only                               |
+| LCA (binary lifting)    | $O(n \log n)$ | $O(\log n)$             | N/A            | Static tree                                   |
+| LCA (Euler + RMQ)       | $O(n \log n)$ | $O(1)$                  | N/A            | Static tree                                   |
+| HLD + segment tree      | $O(n)$        | $O(\log^2 n)$           | $O(\log^2 n)$  | Path queries on tree                          |
+| Merge sort tree         | $O(n \log n)$ | $O(\log^2 n)$           | N/A            | Static, sorted subarrays                      |
+| Persistent segment tree | $O(n \log n)$ | $O(\log n)$             | $O(\log n)$    | Version history, $O(\log n)$ space per update |
+| Mo's algorithm          | N/A           | $O(\sqrt{n})$ amortised | N/A            | Offline only                                  |
 
 ## Common Pitfalls
 

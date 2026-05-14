@@ -1,7 +1,9 @@
 ---
 id: os-security
 title: OS Security
-description: "OS Security — Linux Security Hardening; SSH Hardening; Fail2ban; File Permissions with worked examples and exam-style questions."
+description:
+  'OS Security — Linux Security Hardening; SSH Hardening; Fail2ban; File Permissions with worked
+  examples and exam-style questions.'
 slug: os-security
 sidebar_position: 2
 date: 2026-04-08T00:00:00.000Z
@@ -10,6 +12,7 @@ tags:
 categories:
   - Security
 ---
+
 ## Linux Security Hardening
 
 ### SSH Hardening
@@ -49,15 +52,15 @@ LogLevel VERBOSE
 Key directives:
 
 - **PermitRootLogin no:** Prevent direct root login over SSH. Administrators should log in as an
- unprivileged user and escalate with `sudo`.
+  unprivileged user and escalate with `sudo`.
 - **PasswordAuthentication no:** Disable password-based authentication. Require key-based
- authentication. This eliminates brute-force attacks against passwords.
+  authentication. This eliminates brute-force attacks against passwords.
 - **MaxAuthTries 3:** Limit authentication attempts. Combined with fail2ban, this provides effective
- brute-force mitigation.
+  brute-force mitigation.
 - **AllowUsers:** Restrict login to specific users. All other users are denied, even if they have
- valid keys.
+  valid keys.
 - **ClientAliveInterval 300 / ClientAliveCountMax 2:** Terminate idle sessions after 600 seconds
- (300 x 2). This prevents abandoned sessions from being hijacked.
+  (300 x 2). This prevents abandoned sessions from being hijacked.
 
 ### Fail2ban
 
@@ -87,11 +90,11 @@ Linux file permissions control access to files and directories. Every file has t
 Classes: owner (u), group (g), and others (o). Each class has three permissions: read (r), write
 (w), and execute (x).
 
-| Permission | Octal | File | Directory |
+| Permission | Octal | File               | Directory                              |
 | ---------- | ----- | ------------------ | -------------------------------------- |
-| r | 4 | Read file contents | List directory entries |
-| w | 2 | Modify file | Create/delete/rename entries |
-| x | 1 | Execute file | Enter directory (access files by name) |
+| r          | 4     | Read file contents | List directory entries                 |
+| w          | 2     | Modify file        | Create/delete/rename entries           |
+| x          | 1     | Execute file       | Enter directory (access files by name) |
 
 Common permissions:
 
@@ -262,11 +265,11 @@ Common types:
 
 ### SELinux Modes
 
-| Mode | Behavior |
+| Mode       | Behavior                                                                         |
 | ---------- | -------------------------------------------------------------------------------- |
-| Enforcing | Policy is enforced. Violations are blocked and logged. |
+| Enforcing  | Policy is enforced. Violations are blocked and logged.                           |
 | Permissive | Policy is not enforced. Violations are logged but not blocked. Used for testing. |
-| Disabled | SELinux is completely disabled. No policy loaded, no logging. |
+| Disabled   | SELinux is completely disabled. No policy loaded, no logging.                    |
 
 Check and set mode:
 
@@ -496,11 +499,11 @@ ls -la /var/spool/cron/crontabs/
 Common issues:
 
 - **Writable cron scripts:** If `/opt/backup.sh` is owned by root but group-writable, any group
- member can modify it and execute code as root.
+  member can modify it and execute code as root.
 - **Wildcards in cron commands:** `tar czf /backup/archive.tar.gz *` can be exploited with filename
- trickery (e.g., a file named `--checkpoint=1` or `--use-compress-program=/bin/sh`).
+  trickery (e.g., a file named `--checkpoint=1` or `--use-compress-program=/bin/sh`).
 - **PATH hijacking:** If the cron job does not use absolute paths and the PATH includes a
- user-writable directory, an attacker can place a malicious binary in that directory.
+  user-writable directory, an attacker can place a malicious binary in that directory.
 
 **Defense:**
 
@@ -518,9 +521,9 @@ Level controls.
 Common kernel vulnerability classes:
 
 - **Use-after-free:** A memory page is freed but a pointer to it remains. An attacker can reallocate
- the page and control its contents.
+  the page and control its contents.
 - **Stack overflow:** Buffer overflow on the kernel stack. Modern kernels have stack canaries
- (`CONFIG_STACKPROTECTOR`), but some paths may be unprotected.
+  (`CONFIG_STACKPROTECTOR`), but some paths may be unprotected.
 - **Race conditions:** Exploiting TOCTOU (Time of Check, Time of Use) between two kernel operations.
 - **Null pointer dereference:** Mapping page 0 and exploiting a kernel null pointer dereference.
 - **Heap overflow:** Overflowing kernel heap allocations (slab/SLUB allocator).
@@ -544,8 +547,8 @@ Malicious binary runs instead.
 echo $PATH
 ```
 
-**Defense:** Ensure system PATH directories (`/usr/bin``/bin``/usr/sbin``/sbin`) are owned by
-Root and not writable by non-root users. Never put `.` (current directory) in PATH.
+**Defense:** Ensure system PATH directories (`/usr/bin``/bin``/usr/sbin``/sbin`) are owned by Root
+and not writable by non-root users. Never put `.` (current directory) in PATH.
 
 ### Shared Library Injection (LD_PRELOAD)
 
@@ -597,16 +600,16 @@ kern.*                   /var/log/kern.log
 
 Log severity levels (from lowest to highest):
 
-| Level | Keyword | Description |
+| Level | Keyword | Description               |
 | ----- | ------- | ------------------------- |
-| 0 | emerg | System is unusable |
-| 1 | alert | Immediate action required |
-| 2 | crit | Critical condition |
-| 3 | err | Error condition |
-| 4 | warning | Warning condition |
-| 5 | notice | Normal but significant |
-| 6 | info | Informational |
-| 7 | debug | Debug messages |
+| 0     | emerg   | System is unusable        |
+| 1     | alert   | Immediate action required |
+| 2     | crit    | Critical condition        |
+| 3     | err     | Error condition           |
+| 4     | warning | Warning condition         |
+| 5     | notice  | Normal but significant    |
+| 6     | info    | Informational             |
+| 7     | debug   | Debug messages            |
 
 ### journald
 
@@ -694,18 +697,18 @@ Centralized logging provides:
 2. Longer retention than local storage allows
 3. Real-time alerting on security events
 4. Protection against log tampering (an attacker who compromises a system cannot erase centralized
- logs)
+   logs)
 
 ## Patch Management
 
 ### Update Strategies
 
-| Strategy | Description | Risk | Best For |
+| Strategy        | Description                         | Risk    | Best For                        |
 | --------------- | ----------------------------------- | ------- | ------------------------------- |
-| Rolling updates | Update one node at a time | Lowest | Stateful services, databases |
-| Blue-green | Maintain two identical environments | Low | Stateless services |
-| Canary | Update a small subset first | Low | Large deployments |
-| Big bang | Update everything at once | Highest | Homogeneous, small environments |
+| Rolling updates | Update one node at a time           | Lowest  | Stateful services, databases    |
+| Blue-green      | Maintain two identical environments | Low     | Stateless services              |
+| Canary          | Update a small subset first         | Low     | Large deployments               |
+| Big bang        | Update everything at once           | Highest | Homogeneous, small environments |
 
 ### Automated Patching
 
@@ -739,7 +742,7 @@ Tools that scan systems for known vulnerabilities:
 - **OpenSCAP:** SCAP-based compliance and vulnerability scanning.
 - **Vuls:** Agentless vulnerability scanner for Linux.
 - **Lynis:** Security auditing tool (not a vulnerability scanner per se, but detects
- misconfigurations).
+  misconfigurations).
 - **Trivy:** Container image and filesystem scanner.
 
 ## File Integrity Monitoring
@@ -789,15 +792,15 @@ Management architecture.
 Linux namespaces provide isolation for system resources. Each namespace type isolates a different
 Aspect:
 
-| Namespace | Isolates |
+| Namespace | Isolates                              |
 | --------- | ------------------------------------- |
-| Mount | Filesystem mount points |
-| PID | Process IDs |
-| Network | Network interfaces, routing, iptables |
-| UTS | Hostname and domain name |
-| IPC | System V IPC, POSIX message queues |
-| User | User and group IDs |
-| Cgroup | Cgroup root directory |
+| Mount     | Filesystem mount points               |
+| PID       | Process IDs                           |
+| Network   | Network interfaces, routing, iptables |
+| UTS       | Hostname and domain name              |
+| IPC       | System V IPC, POSIX message queues    |
+| User      | User and group IDs                    |
+| Cgroup    | Cgroup root directory                 |
 
 Namespaces are the fundamental building block of containers. Docker and Kubernetes use namespaces to
 Provide process isolation.
@@ -821,7 +824,7 @@ echo 100000 > /sys/fs/cgroup/cpu/limited/cpu.max
 Seccomp (Secure Computing Mode) restricts the system calls a process can make. There are two modes:
 
 - **Strict mode:** Allows only `read``write``_exit`And `sigreturn`. Too restrictive for most
- applications.
+  applications.
 - **Filter mode (BPF):** Allows specifying a whitelist of permitted system calls using BPF programs.
 
 Docker uses a default seccomp profile that blocks about 44 system calls (out of ~330). Custom
@@ -835,13 +838,13 @@ Possible.
 
 Container isolation vs VM isolation:
 
-| Property | Containers | VMs |
+| Property          | Containers                   | VMs            |
 | ----------------- | ---------------------------- | -------------- |
-| Kernel | Shared | Separate |
-| Isolation | Process-level | Hardware-level |
+| Kernel            | Shared                       | Separate       |
+| Isolation         | Process-level                | Hardware-level |
 | Escape difficulty | Moderate (depends on config) | Very difficult |
-| Overhead | Low | High |
-| Startup time | Seconds | Minutes |
+| Overhead          | Low                          | High           |
+| Startup time      | Seconds                      | Minutes        |
 
 ## Secure Boot Chain
 
@@ -873,12 +876,12 @@ Service to verify that the boot process was clean.
 The TPM is a hardware chip on the motherboard that provides:
 
 - **Secure key storage:** Keys stored in the TPM never leave the chip. Operations are performed
- inside the TPM.
+  inside the TPM.
 - **Platform measurement:** PCR values record the state of the system at boot.
 - **Remote attestation:** A remote party can verify the PCR values to confirm the system is in a
- known-good state.
+  known-good state.
 - **Sealing:** Data can be encrypted to a specific PCR state. The data is only decryptable if the
- system boots with the expected components.
+  system boots with the expected components.
 
 ```bash
 # Check TPM status
@@ -900,10 +903,10 @@ Group Policy (GPO) is the primary mechanism for managing Windows security settin
 Key security policies:
 
 - **Password policy:** Minimum length (14+ characters), complexity requirements, maximum age,
- lockout threshold.
+  lockout threshold.
 - **Account lockout:** Lock accounts after 5 failed attempts for 15 minutes.
 - **User Rights Assignment:** Define who can log on locally, who can shut down the system, who can
- take ownership of files.
+  take ownership of files.
 - **Audit policy:** Enable audit for logon events, object access, policy change, privilege use.
 - **Windows Defender settings:** Configure real-time protection, scheduled scans, exclusions.
 
@@ -914,7 +917,7 @@ The TPM to protect the encryption key.
 
 - **TPM-only mode:** The key is released automatically if the boot measurements are correct.
 - **TPM + PIN:** Requires a PIN in addition to TPM. Protects against physical attacks on a powered-
- off system.
+  off system.
 - **TPM + USB key:** Requires a USB flash drive in addition to TPM.
 
 ### Windows Defender
@@ -923,7 +926,7 @@ Windows Defender is the built-in antivirus and anti-malware solution. Key featur
 
 - **Real-time protection:** Monitors files, processes, and network activity for malware.
 - **Attack Surface Reduction (ASR):** Blocks behaviors commonly used by malware (executing from
- email client, creating processes from Office documents, etc.).
+  email client, creating processes from Office documents, etc.).
 - **Exploit Protection:** Mitigations against memory corruption vulnerabilities (DEP, ASLR, CFG).
 - **Network protection:** Blocks outbound connections to known malicious domains.
 
@@ -937,7 +940,7 @@ UAC settings (from most to least secure):
 1. **Always notify:** Prompt for every elevation, including built-in admin accounts.
 2. **Notify only for app changes:** Suppress prompts for Windows operations.
 3. **Notify only for app changes (secure desktop disabled):** Same as above without dimming the
- screen.
+   screen.
 4. **Never notify:** Effectively disables UAC. Never use this setting.
 
 ## Common Pitfalls
@@ -1095,9 +1098,9 @@ sudo tar cf archive.tar --use-compress-program=shell.sh *
 When `tar` processes the filename `--use-compress-program=shell.sh`It treats it as an option and
 Executes `shell.sh` as the compression program, which runs `/bin/bash -p` as root.
 
-**Defense:** Never allow `sudo` access to `tar``cp``find``vim``less``awk`Or any
-Interactive/editor command. If archiving is needed, create a wrapper script that validates inputs
-And only allows operations on specific paths.
+**Defense:** Never allow `sudo` access to `tar``cp``find``vim``less``awk`Or any Interactive/editor
+command. If archiving is needed, create a wrapper script that validates inputs And only allows
+operations on specific paths.
 
 </details>
 
@@ -1142,20 +1145,20 @@ Identify the security issues and provide the corrected values.
 <summary>Answer</summary>
 
 1. **`net.ipv4.ip_forward = 1`:** IP forwarding is enabled. If this server is not a router, this
- allows it to forward packets between interfaces, potentially creating a routing path for
- attackers. **Fix:** `net.ipv4.ip_forward = 0` (unless the server is intentionally a router).
+   allows it to forward packets between interfaces, potentially creating a routing path for
+   attackers. **Fix:** `net.ipv4.ip_forward = 0` (unless the server is intentionally a router).
 
 2. **`net.ipv4.conf.all.accept_redirects = 1`:** The server accepts ICMP redirects, which can be
- spoofed to redirect traffic through an attacker's machine (MITM). **Fix:**
- `net.ipv4.conf.all.accept_redirects = 0`.
+   spoofed to redirect traffic through an attacker's machine (MITM). **Fix:**
+   `net.ipv4.conf.all.accept_redirects = 0`.
 
 3. **`net.ipv4.conf.all.rp_filter = 0`:** Reverse path filtering is disabled. This allows spoofed
- source IP addresses in incoming packets, facilitating DDoS reflection attacks. **Fix:**
- `net.ipv4.conf.all.rp_filter = 1`.
+   source IP addresses in incoming packets, facilitating DDoS reflection attacks. **Fix:**
+   `net.ipv4.conf.all.rp_filter = 1`.
 
 4. **`kernel.dmesg_restrict = 0`:** Any user can read the kernel ring buffer via `dmesg`Which may
- contain sensitive information (kernel addresses, module loading, error messages). **Fix:**
- `kernel.dmesg_restrict = 1`.
+   contain sensitive information (kernel addresses, module loading, error messages). **Fix:**
+   `kernel.dmesg_restrict = 1`.
 
 </details>
 

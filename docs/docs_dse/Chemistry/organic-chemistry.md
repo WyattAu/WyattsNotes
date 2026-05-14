@@ -1,6 +1,8 @@
 ---
 title: Organic Chemistry
-description: "DSE Chemistry organic chemistry notes covering hydrocarbons, functional groups, reaction mechanisms, polymers, and organic synthesis with worked examples."
+description:
+  'DSE Chemistry organic chemistry notes covering hydrocarbons, functional groups, reaction
+  mechanisms, polymers, and organic synthesis with worked examples.'
 date: 2026-04-07T00:00:00.000Z
 tags:
   - DSE
@@ -25,36 +27,36 @@ Organic compounds, far exceeding the number of known inorganic compounds.
 
 ### Why Carbon?
 
-Carbon ($Z = 6$Electron configuration $1s^2\, 2s^2\, 2p^2$) has four valence electrons and can
-Form four covalent bonds. Several properties make carbon exceptionally suited as the backbone of
-Organic molecules:
+Carbon ($Z = 6$Electron configuration $1s^2\, 2s^2\, 2p^2$) has four valence electrons and can Form
+four covalent bonds. Several properties make carbon exceptionally suited as the backbone of Organic
+molecules:
 
-| Property | Description |
+| Property             | Description                                                                                                |
 | -------------------- | ---------------------------------------------------------------------------------------------------------- |
-| **Tetravalency** | Carbon has four valence electrons and forms four covalent bonds, giving a wide variety of bonding patterns |
-| **Catenation** | Carbon atoms can bond to other carbon atoms to form chains and rings of varying lengths |
-| **Multiple bonding** | Carbon can form single ($\sigma$), double ($\sigma + \pi$), and triple ($\sigma + 2\pi$) bonds |
-| **Isomerism** | The same molecular formula can represent different compounds with different structures |
-| **Bond strength** | C-C and C-H bonds are relatively strong, making organic compounds generally stable |
+| **Tetravalency**     | Carbon has four valence electrons and forms four covalent bonds, giving a wide variety of bonding patterns |
+| **Catenation**       | Carbon atoms can bond to other carbon atoms to form chains and rings of varying lengths                    |
+| **Multiple bonding** | Carbon can form single ($\sigma$), double ($\sigma + \pi$), and triple ($\sigma + 2\pi$) bonds             |
+| **Isomerism**        | The same molecular formula can represent different compounds with different structures                     |
+| **Bond strength**    | C-C and C-H bonds are relatively strong, making organic compounds generally stable                         |
 
 ### Functional Groups
 
 A **functional group** is an atom or group of atoms that determines the characteristic chemical
 Reactions of a molecule. Organic compounds are classified primarily by their functional groups.
 
-| Functional Group | Structure | Suffix / Prefix | Example |
+| Functional Group | Structure              | Suffix / Prefix | Example                                            |
 | ---------------- | ---------------------- | --------------- | -------------------------------------------------- |
-| Alkane | C-C single bonds only | -ane | $\mathrm{CH}_4$ (methane) |
-| Alkene | C=C double bond | -ene | $\mathrm{C}_2\mathrm{H}_4$ (ethene) |
-| Alkyne | C$\equiv$C triple bond | -yne | $\mathrm{C}_2\mathrm{H}_2$ (ethyne) |
-| Haloalkane | C-X (X = F, Cl, Br, I) | -halo- | $\mathrm{CH}_3\mathrm{Cl}$ (chloromethane) |
-| Alcohol | -OH | -ol | $\mathrm{C}_2\mathrm{H}_5\mathrm{OH}$ (ethanol) |
-| Aldehyde | -CHO | -al | $\mathrm{CH}_3\mathrm{CHO}$ (ethanal) |
-| Ketone | &gt;C=O | -one | $\mathrm{CH}_3\mathrm{COCH}_3$ (propanone) |
-| Carboxylic acid | -COOH | -oic acid | $\mathrm{CH}_3\mathrm{COOH}$ (ethanoic acid) |
-| Ester | -COO- | -oate | $\mathrm{CH}_3\mathrm{COOCH}_3$ (methyl ethanoate) |
-| Amine | -NH$_2$ | -amine | $\mathrm{CH}_3\mathrm{NH}_2$ (methylamine) |
-| Amide | -CONH$_2$ | -amide | $\mathrm{CH}_3\mathrm{CONH}_2$ (ethanamide) |
+| Alkane           | C-C single bonds only  | -ane            | $\mathrm{CH}_4$ (methane)                          |
+| Alkene           | C=C double bond        | -ene            | $\mathrm{C}_2\mathrm{H}_4$ (ethene)                |
+| Alkyne           | C$\equiv$C triple bond | -yne            | $\mathrm{C}_2\mathrm{H}_2$ (ethyne)                |
+| Haloalkane       | C-X (X = F, Cl, Br, I) | -halo-          | $\mathrm{CH}_3\mathrm{Cl}$ (chloromethane)         |
+| Alcohol          | -OH                    | -ol             | $\mathrm{C}_2\mathrm{H}_5\mathrm{OH}$ (ethanol)    |
+| Aldehyde         | -CHO                   | -al             | $\mathrm{CH}_3\mathrm{CHO}$ (ethanal)              |
+| Ketone           | &gt;C=O                | -one            | $\mathrm{CH}_3\mathrm{COCH}_3$ (propanone)         |
+| Carboxylic acid  | -COOH                  | -oic acid       | $\mathrm{CH}_3\mathrm{COOH}$ (ethanoic acid)       |
+| Ester            | -COO-                  | -oate           | $\mathrm{CH}_3\mathrm{COOCH}_3$ (methyl ethanoate) |
+| Amine            | -NH$_2$                | -amine          | $\mathrm{CH}_3\mathrm{NH}_2$ (methylamine)         |
+| Amide            | -CONH$_2$              | -amide          | $\mathrm{CH}_3\mathrm{CONH}_2$ (ethanamide)        |
 
 ---
 
@@ -74,18 +76,18 @@ Maximum possible number of hydrogen atoms per carbon atom.
 
 The first ten alkanes must be memorised:
 
-| Prefix | Formula | Name |
+| Prefix | Formula                          | Name    |
 | ------ | -------------------------------- | ------- |
-| Meth- | $\mathrm{CH}_4$ | Methane |
-| Eth- | $\mathrm{C}_2\mathrm{H}_6$ | Ethane |
-| Prop- | $\mathrm{C}_3\mathrm{H}_8$ | Propane |
-| But- | $\mathrm{C}_4\mathrm{H}_{10}$ | Butane |
-| Pent- | $\mathrm{C}_5\mathrm{H}_{12}$ | Pentane |
-| Hex- | $\mathrm{C}_6\mathrm{H}_{14}$ | Hexane |
-| Hept- | $\mathrm{C}_7\mathrm{H}_{16}$ | Heptane |
-| Oct- | $\mathrm{C}_8\mathrm{H}_{18}$ | Octane |
-| Non- | $\mathrm{C}_9\mathrm{H}_{20}$ | Nonane |
-| Dec- | $\mathrm{C}_{10}\mathrm{H}_{22}$ | Decane |
+| Meth-  | $\mathrm{CH}_4$                  | Methane |
+| Eth-   | $\mathrm{C}_2\mathrm{H}_6$       | Ethane  |
+| Prop-  | $\mathrm{C}_3\mathrm{H}_8$       | Propane |
+| But-   | $\mathrm{C}_4\mathrm{H}_{10}$    | Butane  |
+| Pent-  | $\mathrm{C}_5\mathrm{H}_{12}$    | Pentane |
+| Hex-   | $\mathrm{C}_6\mathrm{H}_{14}$    | Hexane  |
+| Hept-  | $\mathrm{C}_7\mathrm{H}_{16}$    | Heptane |
+| Oct-   | $\mathrm{C}_8\mathrm{H}_{18}$    | Octane  |
+| Non-   | $\mathrm{C}_9\mathrm{H}_{20}$    | Nonane  |
+| Dec-   | $\mathrm{C}_{10}\mathrm{H}_{22}$ | Decane  |
 
 #### Structural Isomerism
 
@@ -117,12 +119,12 @@ For $\mathrm{C}_2\mathrm{H}_6\mathrm{O}$:
 
 #### Physical Properties
 
-| Property | Trend / Value |
-| --------------- | ------------------------------------------------------------------------------------------------------- |
-| Boiling point | Increases with chain length (more van der Waals forces) |
+| Property        | Trend / Value                                                                                               |
+| --------------- | ----------------------------------------------------------------------------------------------------------- |
+| Boiling point   | Increases with chain length (more van der Waals forces)                                                     |
 | State at r.t.p. | $\mathrm{C}_1$-$\mathrm{C}_4$: gas; $\mathrm{C}_5$-$\mathrm{C}_{17}$: liquid; $\gt{}\mathrm{C}_{17}$: solid |
-| Solubility | Insoluble in water, soluble in organic solvents |
-| Density | Less dense than water |
+| Solubility      | Insoluble in water, soluble in organic solvents                                                             |
+| Density         | Less dense than water                                                                                       |
 
 Branched isomers have lower boiling points than their straight-chain counterparts because branching
 Reduces the surface area of contact between molecules, weakening van der Waals forces.
@@ -179,12 +181,9 @@ $$\mathrm{CH}_3^\bullet + \mathrm{CH}_3^\bullet \to \mathrm{C}_2\mathrm{H}_6$$
 
 $$\mathrm{CH}_3^\bullet + \mathrm{Cl}^\bullet \to \mathrm{CH}_3\mathrm{Cl}$$
 
-:::warning
-Warning
-$\mathrm{CH}_3\mathrm{Cl}$$\mathrm{CH}_2\mathrm{Cl}_2$$\mathrm{CHCl}_3$And $\mathrm{CCl}_4$
-Because the substitution can continue on the same carbon atom. Controlling the ratio of methane to
-Chlorine influences the proportion of products.
-:::
+:::warning Warning $\mathrm{CH}_3\mathrm{Cl}$$\mathrm{CH}_2\mathrm{Cl}_2$$\mathrm{CHCl}_3$And
+$\mathrm{CCl}_4$ Because the substitution can continue on the same carbon atom. Controlling the
+ratio of methane to Chlorine influences the proportion of products. :::
 
 #### Cracking of Hydrocarbons
 
@@ -239,11 +238,9 @@ Together) based on the atomic number of substituents:
 2. If the two highest-priority groups are on the **same** side: **Z**
 3. If the two highest-priority groups are on **opposite** sides: **E**
 
-:::info
-E/Z isomerism is a type of **stereoisomerism**. Stereoisomers have the same structural
+:::info E/Z isomerism is a type of **stereoisomerism**. Stereoisomers have the same structural
 Formula but different spatial arrangements of atoms. For E/Z isomerism to occur, each carbon of the
-C=C must have two different substituents.
-:::
+C=C must have two different substituents. :::
 
 #### Physical Properties
 
@@ -251,7 +248,7 @@ Alkenes have physical properties similar to alkanes of comparable molecular mass
 
 - Boiling points increase with chain length
 - Lower boiling points than the corresponding alkanes (slightly less surface contact due to the
- double bond restricting rotation)
+  double bond restricting rotation)
 - Insoluble in water, soluble in organic solvents
 
 #### Chemical Properties
@@ -299,10 +296,8 @@ $$\mathrm{CH}_3\mathrm{CH}=\mathrm{CH}_2 + \mathrm{HBr} \to \mathrm{CH}_3\mathrm
 The minor product, 1-bromopropane ($\mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{Br}$), is formed
 In smaller amounts.
 
-:::tip
-Markovnikov's Rule can be remembered as "the rich get richer": the carbon with more H atoms
-Gets the additional H.
-:::
+:::tip Markovnikov's Rule can be remembered as "the rich get richer": the carbon with more H atoms
+Gets the additional H. :::
 
 #### Industrial Importance of Alkenes
 
@@ -358,7 +353,8 @@ Higher alkynes give ketones.
 
 ### Worked Example: Alkyne Addition
 
-Ethyne reacts with excess bromine water. Write the equation for the overall reaction and state the type of reaction.
+Ethyne reacts with excess bromine water. Write the equation for the overall reaction and state the
+type of reaction.
 
 <details>
 <summary>Solution</summary>
@@ -367,13 +363,15 @@ Since ethyne has two $\pi$ bonds, it can react with two moles of $\mathrm{Br_2}$
 
 $$\mathrm{HC}\equiv\mathrm{CH} + 2\mathrm{Br_2} \to \mathrm{Br_2HC}-\mathrm{CHBr_2}$$
 
-The product is 1,1,2,2-tetrabromoethane. This is an **addition reaction** (bromine adds across both $\pi$ bonds stepwise). The bromine water is decolourised.
+The product is 1,1,2,2-tetrabromoethane. This is an **addition reaction** (bromine adds across both
+$\pi$ bonds stepwise). The bromine water is decolourised.
 
 </details>
 
 ### Worked Example: Comparing Alkane, Alkene, and Alkyne Reactivity
 
-A student has three unlabelled gas jars containing ethane, ethene, and ethyne. Describe a simple chemical test to distinguish between them.
+A student has three unlabelled gas jars containing ethane, ethene, and ethyne. Describe a simple
+chemical test to distinguish between them.
 
 <details>
 <summary>Solution</summary>
@@ -386,7 +384,8 @@ Add bromine water to each gas jar:
 
 This distinguishes ethane from the other two, but ethene and ethyne both decolourise bromine water.
 
-To distinguish ethene from ethyne, use **ammoniacal $\mathrm{CuCl}$**: ethyne forms a red precipitate of copper(I) acetylide ($\mathrm{Cu_2C_2}$), while ethene does not react.
+To distinguish ethene from ethyne, use **ammoniacal $\mathrm{CuCl}$**: ethyne forms a red
+precipitate of copper(I) acetylide ($\mathrm{Cu_2C_2}$), while ethene does not react.
 
 </details>
 
@@ -401,18 +400,18 @@ Benzene has the molecular formula $\mathrm{C}_6\mathrm{H}_6$. Two models describ
 - Alternating single and double bonds in a hexagonal ring
 - Could not explain why benzene does not undergo addition reactions like alkenes
 - Could not explain why all C-C bonds have identical lengths ($0.140$ nm, intermediate between C-C
- single bond at $0.154$ nm and C=C double bond at $0.134$ nm)
+  single bond at $0.154$ nm and C=C double bond at $0.134$ nm)
 
 **Delocalised model (modern):**
 
 - Each carbon atom is $sp^2$ hybridised, forming three $\sigma$ bonds (two to adjacent carbons, one
- to hydrogen)
+  to hydrogen)
 - The remaining unhybridised $p$ orbital on each carbon overlaps with those on neighbouring carbons,
- forming a delocalised $\pi$ system above and below the ring
+  forming a delocalised $\pi$ system above and below the ring
 - All six $\pi$ electrons are delocalised over the entire ring
 - This delocalisation gives benzene extra stability (resonance energy of approximately $150$ kJ/mol)
 - Represented as a hexagon with a circle inside, or alternating double bonds with understanding that
- the $\pi$ electrons are delocalised
+  the $\pi$ electrons are delocalised
 
 $$\mathrm{Bond length in benzene} = 0.140 \mathrm{ nm}$$
 
@@ -475,15 +474,14 @@ $$\mathrm{C}_6\mathrm{H}_6 + \mathrm{CH}_3\mathrm{CO}^+ \to \mathrm{C}_6\mathrm{
 
 Product: phenylethanone (acetophenone).
 
-:::info
-Friedel-Crafts reactions cannot be used on benzene rings that already bear strongly
+:::info Friedel-Crafts reactions cannot be used on benzene rings that already bear strongly
 Electron-withdrawing groups (e.g., $-\mathrm{NO}_2$) because these deactivate the ring towards
-Electrophilic attack.
-:::
+Electrophilic attack. :::
 
 ### Worked Example: Predicting EAS Products
 
-Predict the products when benzene undergoes (a) chlorination with $\mathrm{Cl_2}/\mathrm{AlCl_3}$And (b) Friedel-Crafts alkylation with $\mathrm{CH_3CH_2Cl}/\mathrm{AlCl_3}$.
+Predict the products when benzene undergoes (a) chlorination with $\mathrm{Cl_2}/\mathrm{AlCl_3}$And
+(b) Friedel-Crafts alkylation with $\mathrm{CH_3CH_2Cl}/\mathrm{AlCl_3}$.
 
 <details>
 <summary>Solution</summary>
@@ -508,14 +506,21 @@ Product: **ethylbenzene** ($\mathrm{C_6H_5CH_2CH_3}$)
 
 ### Worked Example: Why Benzene Does Not Undergo Addition
 
-Explain why benzene does not decolourise bromine water under normal conditions, whereas cyclohexene does.
+Explain why benzene does not decolourise bromine water under normal conditions, whereas cyclohexene
+does.
 
 <details>
 <summary>Solution</summary>
 
-Cyclohexene has an isolated C=C double bond. The $\pi$ bond is relatively weak and readily undergoes electrophilic addition with $\mathrm{Br_2}$Decolourising bromine water.
+Cyclohexene has an isolated C=C double bond. The $\pi$ bond is relatively weak and readily undergoes
+electrophilic addition with $\mathrm{Br_2}$Decolourising bromine water.
 
-Benzene has a delocalised $\pi$ system of 6 electrons spread over the entire ring. This delocalisation provides approximately $150 \mathrm{ kJ/mol}$ of extra stability (resonance energy). An addition reaction would destroy this stable delocalised system, requiring a large input of energy. Instead, benzene undergoes electrophilic substitution, which preserves the delocalised $\pi$ system. Substitution does not require breaking the aromatic system, so the reaction is energetically favourable, but it does not decolourise bromine water because substitution (not addition) occurs.
+Benzene has a delocalised $\pi$ system of 6 electrons spread over the entire ring. This
+delocalisation provides approximately $150 \mathrm{ kJ/mol}$ of extra stability (resonance energy).
+An addition reaction would destroy this stable delocalised system, requiring a large input of
+energy. Instead, benzene undergoes electrophilic substitution, which preserves the delocalised $\pi$
+system. Substitution does not require breaking the aromatic system, so the reaction is energetically
+favourable, but it does not decolourise bromine water because substitution (not addition) occurs.
 
 </details>
 
@@ -529,11 +534,11 @@ Benzene has a delocalised $\pi$ system of 6 electrons spread over the entire rin
 
 Alcohols contain the hydroxyl group (-OH) attached to an $sp^3$ hybridised carbon atom.
 
-| Type | Structure | Example |
+| Type                  | Structure                                                   | Example                                               |
 | --------------------- | ----------------------------------------------------------- | ----------------------------------------------------- |
-| Primary (1$^\circ$) | -OH attached to a carbon bonded to at most one other carbon | $\mathrm{CH}_3\mathrm{CH}_2\mathrm{OH}$ (ethanol) |
-| Secondary (2$^\circ$) | -OH attached to a carbon bonded to two other carbons | $\mathrm{CH}_3\mathrm{CH(OH)CH}_3$ (propan-2-ol) |
-| Tertiary (3$^\circ$) | -OH attached to a carbon bonded to three other carbons | $(\mathrm{CH}_3)_3\mathrm{COH}$ (2-methylpropan-2-ol) |
+| Primary (1$^\circ$)   | -OH attached to a carbon bonded to at most one other carbon | $\mathrm{CH}_3\mathrm{CH}_2\mathrm{OH}$ (ethanol)     |
+| Secondary (2$^\circ$) | -OH attached to a carbon bonded to two other carbons        | $\mathrm{CH}_3\mathrm{CH(OH)CH}_3$ (propan-2-ol)      |
+| Tertiary (3$^\circ$)  | -OH attached to a carbon bonded to three other carbons      | $(\mathrm{CH}_3)_3\mathrm{COH}$ (2-methylpropan-2-ol) |
 
 #### Naming
 
@@ -545,11 +550,11 @@ $$\mathrm{CH}_3\mathrm{CH(OH)CH}_3 \quad \mathrm{propan-2-ol}$$
 
 #### Physical Properties
 
-| Property | Description |
+| Property      | Description                                                                                        |
 | ------------- | -------------------------------------------------------------------------------------------------- |
-| Boiling point | Higher than corresponding alkanes due to hydrogen bonding between -OH groups |
-| Solubility | Small alcohols (C1--C3) are miscible with water; solubility decreases with increasing chain length |
-| Volatility | Lower than corresponding alkanes (hydrogen bonding must be overcome) |
+| Boiling point | Higher than corresponding alkanes due to hydrogen bonding between -OH groups                       |
+| Solubility    | Small alcohols (C1--C3) are miscible with water; solubility decreases with increasing chain length |
+| Volatility    | Lower than corresponding alkanes (hydrogen bonding must be overcome)                               |
 
 #### Oxidation of Alcohols
 
@@ -581,12 +586,14 @@ Remove.
 
 ### Worked Example: Predicting Oxidation Products
 
-Predict the products when the following alcohols are heated with acidified potassium dichromate(VI) under reflux: (a) butan-1-ol, (b) butan-2-ol, (c) 2-methylpropan-2-ol.
+Predict the products when the following alcohols are heated with acidified potassium dichromate(VI)
+under reflux: (a) butan-1-ol, (b) butan-2-ol, (c) 2-methylpropan-2-ol.
 
 <details>
 <summary>Solution</summary>
 
-(a) **Butan-1-ol** ($\mathrm{CH_3CH_2CH_2CH_2OH}$) is primary. Under reflux (strong oxidation), it is fully oxidised to butanoic acid:
+(a) **Butan-1-ol** ($\mathrm{CH_3CH_2CH_2CH_2OH}$) is primary. Under reflux (strong oxidation), it
+is fully oxidised to butanoic acid:
 
 $$\mathrm{CH_3CH_2CH_2CH_2OH} \xrightarrow{[\mathrm{O}],\ \mathrm{reflux}} \mathrm{CH_3CH_2CH_2COOH}$$
 
@@ -596,7 +603,8 @@ The colour change is orange to green.
 
 $$\mathrm{CH_3CH_2CH(OH)CH_3} \xrightarrow{[\mathrm{O}]} \mathrm{CH_3CH_2COCH_3}$$
 
-(c) **2-Methylpropan-2-ol** ($\mathrm{(CH_3)_3COH}$) is tertiary. No oxidation occurs; the orange colour of dichromate persists.
+(c) **2-Methylpropan-2-ol** ($\mathrm{(CH_3)_3COH}$) is tertiary. No oxidation occurs; the orange
+colour of dichromate persists.
 
 </details>
 
@@ -631,11 +639,11 @@ Delocalisation of the negative charge over the two oxygen atoms.
 **Reactions:**
 
 - With metals:
- $2\mathrm{CH}_3\mathrm{COOH} + 2\mathrm{Na} \to 2\mathrm{CH}_3\mathrm{COONa} + \mathrm{H}_2$
+  $2\mathrm{CH}_3\mathrm{COOH} + 2\mathrm{Na} \to 2\mathrm{CH}_3\mathrm{COONa} + \mathrm{H}_2$
 - With bases:
- $\mathrm{CH}_3\mathrm{COOH} + \mathrm{NaOH} \to \mathrm{CH}_3\mathrm{COONa} + \mathrm{H}_2\mathrm{O}$
+  $\mathrm{CH}_3\mathrm{COOH} + \mathrm{NaOH} \to \mathrm{CH}_3\mathrm{COONa} + \mathrm{H}_2\mathrm{O}$
 - With carbonates:
- $2\mathrm{CH}_3\mathrm{COOH} + \mathrm{Na}_2\mathrm{CO}_3 \to 2\mathrm{CH}_3\mathrm{COONa} + \mathrm{H}_2\mathrm{O} + \mathrm{CO}_2$
+  $2\mathrm{CH}_3\mathrm{COOH} + \mathrm{Na}_2\mathrm{CO}_3 \to 2\mathrm{CH}_3\mathrm{COONa} + \mathrm{H}_2\mathrm{O} + \mathrm{CO}_2$
 
 #### Esterification
 
@@ -661,7 +669,7 @@ $$\mathrm{CH}_3\mathrm{COOCH}_2\mathrm{CH}_3 \quad \mathrm{ethyl ethanoate}$$
 
 - Pleasant, fruity odours (used in flavourings and perfumes)
 - Lower boiling points than carboxylic acids or alcohols of comparable mass (no hydrogen bonding
- between ester molecules)
+  between ester molecules)
 - Insoluble in water
 
 #### Hydrolysis of Esters
@@ -684,7 +692,8 @@ The carboxylate salt produced is the soap (if a long-chain ester is used). This 
 
 ### Worked Example: Comparing Ester Hydrolysis Methods
 
-Compare the products of acid hydrolysis and alkaline hydrolysis of methyl propanoate ($\mathrm{CH_3CH_2COOCH_3}$). Explain why alkaline hydrolysis is preferred for soap making.
+Compare the products of acid hydrolysis and alkaline hydrolysis of methyl propanoate
+($\mathrm{CH_3CH_2COOCH_3}$). Explain why alkaline hydrolysis is preferred for soap making.
 
 <details>
 <summary>Solution</summary>
@@ -701,7 +710,11 @@ $$\mathrm{CH_3CH_2COOCH_3} + \mathrm{NaOH} \to \mathrm{CH_3CH_2COONa} + \mathrm{
 
 Products: sodium propanoate and methanol. This is irreversible.
 
-**Why alkaline is preferred for soap:** The product is the sodium carboxylate salt, which is the soap molecule (surfactant). The carboxylate ion has a long hydrophobic tail and a hydrophilic head, allowing it to emulsify grease. In acid hydrolysis, the product is the carboxylic acid, which does not have the ionic character needed for soap action. Furthermore, alkaline hydrolysis goes to completion (irreversible), giving a higher yield.
+**Why alkaline is preferred for soap:** The product is the sodium carboxylate salt, which is the
+soap molecule (surfactant). The carboxylate ion has a long hydrophobic tail and a hydrophilic head,
+allowing it to emulsify grease. In acid hydrolysis, the product is the carboxylic acid, which does
+not have the ionic character needed for soap action. Furthermore, alkaline hydrolysis goes to
+completion (irreversible), giving a higher yield.
 
 </details>
 
@@ -727,11 +740,11 @@ $$\mathrm{CH}_3\mathrm{COCH}_3 \quad \mathrm{propanone}$$
 
 #### Properties
 
-| Property | Aldehydes | Ketones |
-| ------------- | ----------------------------------- | ------------------------------------------------ |
-| Boiling point | Lower than corresponding alcohols | Similar to aldehydes |
-| Odour | Pungent (e.g., ethanal) | Pleasant (e.g., propanone = nail polish remover) |
-| Oxidation | oxidised to carboxylic acids | Resistant to oxidation |
+| Property      | Aldehydes                         | Ketones                                          |
+| ------------- | --------------------------------- | ------------------------------------------------ |
+| Boiling point | Lower than corresponding alcohols | Similar to aldehydes                             |
+| Odour         | Pungent (e.g., ethanal)           | Pleasant (e.g., propanone = nail polish remover) |
+| Oxidation     | oxidised to carboxylic acids      | Resistant to oxidation                           |
 
 #### Nucleophilic Addition
 
@@ -755,11 +768,11 @@ The mechanism:
 Amines contain the amino group (-NH$_2$). They are classified by the number of alkyl groups attached
 To the nitrogen:
 
-| Type | Structure | Example |
+| Type      | Structure                 | Example                                        |
 | --------- | ------------------------- | ---------------------------------------------- |
-| Primary | $\mathrm{RNH}_2$ | $\mathrm{CH}_3\mathrm{NH}_2$ (methylamine) |
+| Primary   | $\mathrm{RNH}_2$          | $\mathrm{CH}_3\mathrm{NH}_2$ (methylamine)     |
 | Secondary | $\mathrm{R}_2\mathrm{NH}$ | $(\mathrm{CH}_3)_2\mathrm{NH}$ (dimethylamine) |
-| Tertiary | $\mathrm{R}_3\mathrm{N}$ | $(\mathrm{CH}_3)_3\mathrm{N}$ (trimethylamine) |
+| Tertiary  | $\mathrm{R}_3\mathrm{N}$  | $(\mathrm{CH}_3)_3\mathrm{N}$ (trimethylamine) |
 
 #### Basicity
 
@@ -792,24 +805,21 @@ Small molecule. The double bond opens to form single bonds linking monomers into
 
 $$n\mathrm{CH}_2=\mathrm{CHX} \to \left[\mathrm{--CH}_2\mathrm{--CHX--}\right]_n$$
 
-| Polymer | Monomer | Repeating Unit | Uses |
+| Polymer       | Monomer                | Repeating Unit                                             | Uses                       |
 | ------------- | ---------------------- | ---------------------------------------------------------- | -------------------------- |
-| Polyethylene | Ethene | $--\mathrm{CH}_2\mathrm{--CH}_2--$ | Bags, bottles, films |
-| Polypropene | Propene | $--\mathrm{CH}_2\mathrm{--CH}(\mathrm{CH}_3)--$ | Ropes, carpets, containers |
-| PVC | Chloroethene | $--\mathrm{CH}_2\mathrm{--CHCl}--$ | Pipes, cable insulation |
-| Polystyrene | Phenylethene (styrene) | $--\mathrm{CH}_2\mathrm{--CH}(\mathrm{C}_6\mathrm{H}_5)--$ | Packaging, insulation |
-| PTFE (Teflon) | Tetrafluoroethene | $--\mathrm{CF}_2\mathrm{--CF}_2--$ | Non-stick coatings |
+| Polyethylene  | Ethene                 | $--\mathrm{CH}_2\mathrm{--CH}_2--$                         | Bags, bottles, films       |
+| Polypropene   | Propene                | $--\mathrm{CH}_2\mathrm{--CH}(\mathrm{CH}_3)--$            | Ropes, carpets, containers |
+| PVC           | Chloroethene           | $--\mathrm{CH}_2\mathrm{--CHCl}--$                         | Pipes, cable insulation    |
+| Polystyrene   | Phenylethene (styrene) | $--\mathrm{CH}_2\mathrm{--CH}(\mathrm{C}_6\mathrm{H}_5)--$ | Packaging, insulation      |
+| PTFE (Teflon) | Tetrafluoroethene      | $--\mathrm{CF}_2\mathrm{--CF}_2--$                         | Non-stick coatings         |
 
-:::tip
-When drawing addition polymers, always show the repeating unit in square brackets with n
-Outside. Include enough of the structure to show the pattern ( at least two
-Repeating units).
-:::
+:::tip When drawing addition polymers, always show the repeating unit in square brackets with n
+Outside. Include enough of the structure to show the pattern ( at least two Repeating units). :::
 
 ### 4.2 Condensation Polymerisation
 
-In condensation polymerisation, monomers join together with the elimination of a small molecule
-( water or HCl). The monomers must have two functional groups each.
+In condensation polymerisation, monomers join together with the elimination of a small molecule (
+water or HCl). The monomers must have two functional groups each.
 
 **Polyesters:**
 
@@ -831,7 +841,9 @@ Example: Nylon-6,6 from hexanedioic acid and hexane-1,6-diamine.
 
 ### Worked Example: Condensation Polymer from Monomers
 
-Nylon-6,6 is formed from hexanedioic acid ($\mathrm{HOOC(CH_2)_4COOH}$) and hexane-1,6-diamine ($\mathrm{H_2N(CH_2)_6NH_2}$). (a) Write the equation for the formation of the repeating unit. (b) What small molecule is eliminated?
+Nylon-6,6 is formed from hexanedioic acid ($\mathrm{HOOC(CH_2)_4COOH}$) and hexane-1,6-diamine
+($\mathrm{H_2N(CH_2)_6NH_2}$). (a) Write the equation for the formation of the repeating unit. (b)
+What small molecule is eliminated?
 
 <details>
 <summary>Solution</summary>
@@ -840,7 +852,8 @@ Nylon-6,6 is formed from hexanedioic acid ($\mathrm{HOOC(CH_2)_4COOH}$) and hexa
 
 $$n\mathrm{HOOC(CH_2)_4COOH} + n\mathrm{H_2N(CH_2)_6NH_2} \to \left[\mathrm{--OC(CH_2)_4CONH(CH_2)_6NH--}\right]_n + 2n\mathrm{H_2O}$$
 
-(b) Water ($\mathrm{H_2O}$) is eliminated at each amide bond formed. For each repeating unit, one molecule of water is eliminated (from the -COOH of the acid and one -NH$_2$ of the diamine).
+(b) Water ($\mathrm{H_2O}$) is eliminated at each amide bond formed. For each repeating unit, one
+molecule of water is eliminated (from the -COOH of the acid and one -NH$_2$ of the diamine).
 
 </details>
 
@@ -851,9 +864,13 @@ Explain why poly(lactic acid) (PLA) is biodegradable but polyethylene is not.
 <details>
 <summary>Solution</summary>
 
-PLA contains ester bonds ($-\mathrm{COO-}$) in the polymer backbone. Ester bonds can be hydrolysed by water and by enzymes produced by microorganisms, breaking the polymer into small molecules that can be absorbed by the environment.
+PLA contains ester bonds ($-\mathrm{COO-}$) in the polymer backbone. Ester bonds can be hydrolysed
+by water and by enzymes produced by microorganisms, breaking the polymer into small molecules that
+can be absorbed by the environment.
 
-Polyethylene contains only C-C and C-H bonds in the polymer backbone. These are very strong and non-polar; microorganisms do not produce enzymes that can break them. Polyethylene persists in the environment for hundreds of years.
+Polyethylene contains only C-C and C-H bonds in the polymer backbone. These are very strong and
+non-polar; microorganisms do not produce enzymes that can break them. Polyethylene persists in the
+environment for hundreds of years.
 
 </details>
 
@@ -881,13 +898,13 @@ Backbone cannot be broken by microorganisms.
 
 ### 4.4 Problems with Plastic Waste
 
-| Problem | Description |
+| Problem               | Description                                                                    |
 | --------------------- | ------------------------------------------------------------------------------ |
-| Non-biodegradability | Most plastics persist in the environment for hundreds of years |
-| Landfill accumulation | Plastics take up significant landfill space |
-| Marine pollution | Microplastics in oceans harm marine life and enter the food chain |
-| Toxic additives | Plasticisers, flame retardants, and stabilisers can leach into the environment |
-| Incineration issues | Burning plastics releases toxic gases (e.g., HCl from PVC, dioxins) |
+| Non-biodegradability  | Most plastics persist in the environment for hundreds of years                 |
+| Landfill accumulation | Plastics take up significant landfill space                                    |
+| Marine pollution      | Microplastics in oceans harm marine life and enter the food chain              |
+| Toxic additives       | Plasticisers, flame retardants, and stabilisers can leach into the environment |
+| Incineration issues   | Burning plastics releases toxic gases (e.g., HCl from PVC, dioxins)            |
 
 Solutions include recycling, biodegradable alternatives, reduced usage, and improved waste
 Management.
@@ -909,26 +926,23 @@ $$\mathrm{Tertiary alcohol} \quad \mathrm{(no oxidation with common reagents)}$$
 **Oxidising agents used:**
 
 - Acidified potassium dichromate(VI):
- $\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7 / \mathrm{H}_2\mathrm{SO}_4$ (orange to green)
+  $\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7 / \mathrm{H}_2\mathrm{SO}_4$ (orange to green)
 - Acidified potassium manganate(VII): $\mathrm{KMnO}_4 / \mathrm{H}_2\mathrm{SO}_4$ (purple to
- colourless)
+  colourless)
 
 ### 5.2 Reduction Reactions
 
 Reduction is the addition of hydrogen or removal of oxygen.
 
 - Carboxylic acid to primary alcohol:
- $\mathrm{RCOOH} \xrightarrow{\mathrm{LiAlH}_4} \mathrm{RCH}_2\mathrm{OH}$
+  $\mathrm{RCOOH} \xrightarrow{\mathrm{LiAlH}_4} \mathrm{RCH}_2\mathrm{OH}$
 - Aldehyde to primary alcohol:
- $\mathrm{RCHO} \xrightarrow{\mathrm{NaBH}_4} \mathrm{RCH}_2\mathrm{OH}$
+  $\mathrm{RCHO} \xrightarrow{\mathrm{NaBH}_4} \mathrm{RCH}_2\mathrm{OH}$
 - Ketone to secondary alcohol:
- $\mathrm{R}_2\mathrm{C=O} \xrightarrow{\mathrm{NaBH}_4} \mathrm{R}_2\mathrm{CHOH}$
+  $\mathrm{R}_2\mathrm{C=O} \xrightarrow{\mathrm{NaBH}_4} \mathrm{R}_2\mathrm{CHOH}$
 
-:::info
-Info
-Reduce aldehydes and ketones but not carboxylic acids. $\mathrm{LiAlH}_4$ is more reactive and can
-Reduce carboxylic acids, esters, and amides.
-:::
+:::info Info Reduce aldehydes and ketones but not carboxylic acids. $\mathrm{LiAlH}_4$ is more
+reactive and can Reduce carboxylic acids, esters, and amides. :::
 
 ### 5.3 Hydrolysis of Esters
 
@@ -938,21 +952,21 @@ See Section 3.3 for detailed mechanisms.
 
 A systematic approach to identifying functional groups:
 
-| Test | Reagent | Positive Result | Functional Group Detected |
+| Test                  | Reagent                                                         | Positive Result                                   | Functional Group Detected                        |
 | --------------------- | --------------------------------------------------------------- | ------------------------------------------------- | ------------------------------------------------ |
-| Bromine water | $\mathrm{Br}_2$ (aq) | Decolourisation (orange to colourless) | Alkene, alkyne (C=C, C$\equiv$C) |
-| 2,4-DNPH test | 2,4-dinitrophenylhydrazine | Orange/yellow precipitate | Aldehyde or ketone (C=O) |
-| Fehling's test | Fehling's A + B (blue) | Brick-red precipitate | Aldehyde (but not ketone) |
-| Tollens' test | Tollens' reagent (colourless) | Silver mirror | Aldehyde (but not ketone) |
-| Acidified dichromate | $\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7 / \mathrm{H}^+$ (orange) | Orange to green | Primary or secondary alcohol, aldehyde |
-| $\mathrm{PCl}_5$ test | Phosphorus(V) chloride | White fumes of HCl; effervescence | Alcohol (-OH) or carboxylic acid (-COOH) |
-| $\mathrm{NaOH}$ (aq) | Sodium hydroxide solution | Acid reacts; CO$_2$ produced with carboxylic acid | Carboxylic acid |
-| Iodine test | $\mathrm{I}_2$ solution | Blue-black colour | Starch (not a standard organic functional group) |
+| Bromine water         | $\mathrm{Br}_2$ (aq)                                            | Decolourisation (orange to colourless)            | Alkene, alkyne (C=C, C$\equiv$C)                 |
+| 2,4-DNPH test         | 2,4-dinitrophenylhydrazine                                      | Orange/yellow precipitate                         | Aldehyde or ketone (C=O)                         |
+| Fehling's test        | Fehling's A + B (blue)                                          | Brick-red precipitate                             | Aldehyde (but not ketone)                        |
+| Tollens' test         | Tollens' reagent (colourless)                                   | Silver mirror                                     | Aldehyde (but not ketone)                        |
+| Acidified dichromate  | $\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7 / \mathrm{H}^+$ (orange) | Orange to green                                   | Primary or secondary alcohol, aldehyde           |
+| $\mathrm{PCl}_5$ test | Phosphorus(V) chloride                                          | White fumes of HCl; effervescence                 | Alcohol (-OH) or carboxylic acid (-COOH)         |
+| $\mathrm{NaOH}$ (aq)  | Sodium hydroxide solution                                       | Acid reacts; CO$_2$ produced with carboxylic acid | Carboxylic acid                                  |
+| Iodine test           | $\mathrm{I}_2$ solution                                         | Blue-black colour                                 | Starch (not a standard organic functional group) |
 
 **Distinguishing aldehydes from ketones:**
 
 - Fehling's solution: aldehydes give a brick-red precipitate ($\mathrm{Cu}_2\mathrm{O}$); ketones do
- not
+  not
 - Tollens' reagent: aldehydes give a silver mirror ($\mathrm{Ag}$); ketones do not
 - 2,4-DNPH: both give a precipitate (confirms C=O), so use Fehling's or Tollens' to distinguish
 
@@ -960,23 +974,23 @@ A systematic approach to identifying functional groups:
 
 Key interconversions between functional groups:
 
-| From | To | Reagent / Conditions |
-| ----------------- | -------------------------- | ----------------------------------------------------------------------------- |
-| Alkene | Alkane | $\mathrm{H}_2$ / Ni catalyst |
-| Alkene | Haloalkane | $\mathrm{HX}$ (e.g., HBr) |
-| Alkene | Alcohol | $\mathrm{H}_2\mathrm{O}$ / $\mathrm{H}_3\mathrm{PO}_4$$300^\circ\mathrm{C}$ |
-| Alkene | Diol | Cold, dilute, alkaline $\mathrm{KMnO}_4$ |
-| Alkene | Halogenoalkane (dihalide) | $\mathrm{Br}_2$ or $\mathrm{Cl}_2$ |
-| Haloalkane | Alcohol | NaOH (aq), heat |
-| Haloalkane | Amine | Excess concentrated $\mathrm{NH}_3$ (alcoholic), heat |
-| Alcohol | Aldehyde | Mild oxidation ($\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7$Distil) |
-| Alcohol | Carboxylic acid | Strong oxidation ($\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7$Reflux) |
-| Alcohol | Ester | Carboxylic acid + conc. $\mathrm{H}_2\mathrm{SO}_4$Heat |
-| Carboxylic acid | Ester | Alcohol + conc. $\mathrm{H}_2\mathrm{SO}_4$Heat |
-| Carboxylic acid | Salt | Base (e.g., NaOH, $\mathrm{Na}_2\mathrm{CO}_3$) |
-| Ester | Carboxylic acid + alcohol | Acid hydrolysis (dilute $\mathrm{H}_2\mathrm{SO}_4$Heat) |
-| Ester | Carboxylate salt + alcohol | Alkaline hydrolysis (NaOH, heat) |
-| Aldehyde / Ketone | Cyanohydrin | HCN (trace NaOH catalyst) |
+| From              | To                         | Reagent / Conditions                                                        |
+| ----------------- | -------------------------- | --------------------------------------------------------------------------- |
+| Alkene            | Alkane                     | $\mathrm{H}_2$ / Ni catalyst                                                |
+| Alkene            | Haloalkane                 | $\mathrm{HX}$ (e.g., HBr)                                                   |
+| Alkene            | Alcohol                    | $\mathrm{H}_2\mathrm{O}$ / $\mathrm{H}_3\mathrm{PO}_4$$300^\circ\mathrm{C}$ |
+| Alkene            | Diol                       | Cold, dilute, alkaline $\mathrm{KMnO}_4$                                    |
+| Alkene            | Halogenoalkane (dihalide)  | $\mathrm{Br}_2$ or $\mathrm{Cl}_2$                                          |
+| Haloalkane        | Alcohol                    | NaOH (aq), heat                                                             |
+| Haloalkane        | Amine                      | Excess concentrated $\mathrm{NH}_3$ (alcoholic), heat                       |
+| Alcohol           | Aldehyde                   | Mild oxidation ($\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7$Distil)              |
+| Alcohol           | Carboxylic acid            | Strong oxidation ($\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7$Reflux)            |
+| Alcohol           | Ester                      | Carboxylic acid + conc. $\mathrm{H}_2\mathrm{SO}_4$Heat                     |
+| Carboxylic acid   | Ester                      | Alcohol + conc. $\mathrm{H}_2\mathrm{SO}_4$Heat                             |
+| Carboxylic acid   | Salt                       | Base (e.g., NaOH, $\mathrm{Na}_2\mathrm{CO}_3$)                             |
+| Ester             | Carboxylic acid + alcohol  | Acid hydrolysis (dilute $\mathrm{H}_2\mathrm{SO}_4$Heat)                    |
+| Ester             | Carboxylate salt + alcohol | Alkaline hydrolysis (NaOH, heat)                                            |
+| Aldehyde / Ketone | Cyanohydrin                | HCN (trace NaOH catalyst)                                                   |
 
 ---
 
@@ -993,7 +1007,7 @@ There are four structural isomers:
 1. 1-chlorobutane: $\mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{CH}_2\mathrm{Cl}$ (primary)
 2. 2-chlorobutane: $\mathrm{CH}_3\mathrm{CH}_2\mathrm{CHClCH}_3$ (secondary)
 3. 1-chloro-2-methylpropane: $\mathrm{CH}_3\mathrm{CH}(\mathrm{CH}_3)\mathrm{CH}_2\mathrm{Cl}$
- (primary)
+   (primary)
 4. 2-chloro-2-methylpropane: $(\mathrm{CH}_3)_3\mathrm{CCl}$ (tertiary)
 
 ### Worked Example 2
@@ -1053,7 +1067,7 @@ Following results:
 
 - Reacts with $\mathrm{PCl}_5$ to produce white fumes
 - Reacts with acidified $\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7$ (orange to green) to give compound
- $\mathrm{E}$
+  $\mathrm{E}$
 - Compound $\mathrm{E}$ gives a silver mirror with Tollens' reagent
 
 Identify $\mathrm{D}$ and $\mathrm{E}$.
@@ -1163,7 +1177,8 @@ Mass of soap $= 0.0339 \times 306 = 10.37 \mathrm{ g}$
 
 ### Worked Example: Combustion Stoichiometry
 
-Calculate the volume of oxygen (at r.t.p.) needed for the complete combustion of $2.0 \mathrm{ dm^3}$ of butane gas ($\mathrm{C_4H_{10}}$).
+Calculate the volume of oxygen (at r.t.p.) needed for the complete combustion of
+$2.0 \mathrm{ dm^3}$ of butane gas ($\mathrm{C_4H_{10}}$).
 
 <details>
 <summary>Solution</summary>
@@ -1180,14 +1195,18 @@ $$V(\mathrm{O_2}) = \frac{13}{2} \times V(\mathrm{C_4H_{10}}) = \frac{13}{2} \ti
 
 ### Worked Example: Electrophilic Addition Mechanism
 
-Describe the mechanism for the reaction of propene with $\mathrm{HBr}$Explaining why 2-bromopropane is the major product.
+Describe the mechanism for the reaction of propene with $\mathrm{HBr}$Explaining why 2-bromopropane
+is the major product.
 
 <details>
 <summary>Solution</summary>
 
-**Step 1:** The $\mathrm{HBr}$ molecule approaches the $\pi$ electron cloud of the C=C double bond. The electron-rich double bond polarises $\mathrm{HBr}$.
+**Step 1:** The $\mathrm{HBr}$ molecule approaches the $\pi$ electron cloud of the C=C double bond.
+The electron-rich double bond polarises $\mathrm{HBr}$.
 
-**Step 2:** The $\pi$ bond breaks and forms a bond with the $\mathrm{H}$ atom from $\mathrm{HBr}$. The H adds to C-1 (the less substituted carbon, following Markovnikov's rule), and a secondary carbocation intermediate forms at C-2:
+**Step 2:** The $\pi$ bond breaks and forms a bond with the $\mathrm{H}$ atom from $\mathrm{HBr}$.
+The H adds to C-1 (the less substituted carbon, following Markovnikov's rule), and a secondary
+carbocation intermediate forms at C-2:
 
 $$\mathrm{CH_2}=\mathrm{CHCH_3} + \mathrm{HBr} \to \mathrm{CH_3}-\mathrm{C^+HCH_3} + \mathrm{Br^-}$$
 
@@ -1195,13 +1214,15 @@ $$\mathrm{CH_2}=\mathrm{CHCH_3} + \mathrm{HBr} \to \mathrm{CH_3}-\mathrm{C^+HCH_
 
 $$\mathrm{CH_3}-\mathrm{C^+HCH_3} + \mathrm{Br^-} \to \mathrm{CH_3CHBrCH_3}$$
 
-The major product is 2-bromopropane because the secondary carbocation intermediate is more stable than the primary carbocation that would form if H added to C-2.
+The major product is 2-bromopropane because the secondary carbocation intermediate is more stable
+than the primary carbocation that would form if H added to C-2.
 
 </details>
 
 ### Worked Example: Identifying a Polymer
 
-A polymer has the repeating unit $--\mathrm{CH_2--CHCl}--$. Name the monomer, the polymer, and state one use.
+A polymer has the repeating unit $--\mathrm{CH_2--CHCl}--$. Name the monomer, the polymer, and state
+one use.
 
 <details>
 <summary>Solution</summary>
@@ -1218,18 +1239,24 @@ Uses: pipes, window frames, cable insulation, flooring.
 
 ### Worked Example: Ester Formation and Hydrolysis
 
-Ethanol ($\mathrm{CH_3CH_2OH}$) reacts with propanoic acid ($\mathrm{CH_3CH_2COOH}$) in the presence of concentrated $\mathrm{H_2SO_4}$. (a) Name the ester formed. (b) Write the equation. (c) Explain why the ester is immiscible with water.
+Ethanol ($\mathrm{CH_3CH_2OH}$) reacts with propanoic acid ($\mathrm{CH_3CH_2COOH}$) in the presence
+of concentrated $\mathrm{H_2SO_4}$. (a) Name the ester formed. (b) Write the equation. (c) Explain
+why the ester is immiscible with water.
 
 <details>
 <summary>Solution</summary>
 
-(a) The ester is named using the alkyl group from the alcohol (ethyl) and the -oate from the acid (propanoate): **ethyl propanoate**.
+(a) The ester is named using the alkyl group from the alcohol (ethyl) and the -oate from the acid
+(propanoate): **ethyl propanoate**.
 
-(b) $$\mathrm{CH_3CH_2COOH} + \mathrm{CH_3CH_2OH} \rightleftharpoons \mathrm{CH_3CH_2COOCH_2CH_3} + \mathrm{H_2O}$$
+(b)
+$$\mathrm{CH_3CH_2COOH} + \mathrm{CH_3CH_2OH} \rightleftharpoons \mathrm{CH_3CH_2COOCH_2CH_3} + \mathrm{H_2O}$$
 
 Conditions: concentrated $\mathrm{H_2SO_4}$ catalyst, heat under reflux.
 
-(c) The ester molecule lacks any -OH or other strongly polar group that can form hydrogen bonds with water. Although the C=O bond is polar, the overall molecule is much less polar than the parent alcohol or acid. Without hydrogen bonding to water, the ester is immiscible.
+(c) The ester molecule lacks any -OH or other strongly polar group that can form hydrogen bonds with
+water. Although the C=O bond is polar, the overall molecule is much less polar than the parent
+alcohol or acid. Without hydrogen bonding to water, the ester is immiscible.
 
 </details>
 
@@ -1348,7 +1375,7 @@ So this test does not distinguish them.
 Use acidified potassium dichromate(VI) followed by a confirmatory test:
 
 1. Add acidified $\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7$ (orange) and warm gently. Both will turn
- green (both oxidise).
+   green (both oxidise).
 2. Distil the product from the reaction mixture.
 3. Test the distillate with Tollens' reagent.
 
@@ -1399,9 +1426,9 @@ Microplastics that accumulate in marine ecosystems.
 Alternatives include:
 
 1. **Biodegradable polymers** such as PLA (poly(lactic acid)) or PHB (poly(hydroxybutyrate)), which
- have ester or other bonds that can be hydrolysed by microorganisms
+   have ester or other bonds that can be hydrolysed by microorganisms
 2. **Recycling** poly(ethene) mechanically (melting and reforming) or chemically (breaking down into
- monomers for repolymerisation)
+   monomers for repolymerisation)
 3. **Reducing usage** through reusable bags and containers
 4. **Using biopolymers** derived from renewable resources (e.g., starch-based polymers, cellulose)
 </details>
@@ -1410,39 +1437,39 @@ Alternatives include:
 
 ## Summary Table
 
-| Topic | Key Concept | Example |
-| --------------------------- | -------------------------------------------------------------- | ---------------------------------------------- |
-| Alkanes | Saturated, $\mathrm{C}_n\mathrm{H}_{2n+2}$ | Free radical substitution with $\mathrm{Cl}_2$ |
-| Alkenes | Unsaturated, $\mathrm{C}_n\mathrm{H}_{2n}$Addition reactions | Bromine water decolourisation test |
-| Alkynes | Triple bond, $\mathrm{C}_n\mathrm{H}_{2n-2}$ | Hydration to carbonyl compounds |
-| Benzene | Delocalised $\pi$ system, EAS | Nitration, Friedel-Crafts |
-| Alcohols | -OH group, classified as 1$^\circ$2$^\circ$3$^\circ$ | Oxidation to aldehydes/ketones |
-| Carboxylic acids | -COOH, weak acids, $\mathrm{p}K_a \approx 4.7$ | Esterification |
-| Esters | -COO-, fruity odours | Saponification for soap |
-| Aldehydes / Ketones | C=O, distinguished by Fehling's and Tollens' | Nucleophilic addition with HCN |
-| Addition polymerisation | Alkene monomers, no small molecule lost | Polyethylene, PVC, PTFE |
-| Condensation polymerisation | Two functional groups, small molecule eliminated | Nylon-6,6, PET (Terylene) |
+| Topic                       | Key Concept                                                  | Example                                        |
+| --------------------------- | ------------------------------------------------------------ | ---------------------------------------------- |
+| Alkanes                     | Saturated, $\mathrm{C}_n\mathrm{H}_{2n+2}$                   | Free radical substitution with $\mathrm{Cl}_2$ |
+| Alkenes                     | Unsaturated, $\mathrm{C}_n\mathrm{H}_{2n}$Addition reactions | Bromine water decolourisation test             |
+| Alkynes                     | Triple bond, $\mathrm{C}_n\mathrm{H}_{2n-2}$                 | Hydration to carbonyl compounds                |
+| Benzene                     | Delocalised $\pi$ system, EAS                                | Nitration, Friedel-Crafts                      |
+| Alcohols                    | -OH group, classified as 1$^\circ$2$^\circ$3$^\circ$         | Oxidation to aldehydes/ketones                 |
+| Carboxylic acids            | -COOH, weak acids, $\mathrm{p}K_a \approx 4.7$               | Esterification                                 |
+| Esters                      | -COO-, fruity odours                                         | Saponification for soap                        |
+| Aldehydes / Ketones         | C=O, distinguished by Fehling's and Tollens'                 | Nucleophilic addition with HCN                 |
+| Addition polymerisation     | Alkene monomers, no small molecule lost                      | Polyethylene, PVC, PTFE                        |
+| Condensation polymerisation | Two functional groups, small molecule eliminated             | Nylon-6,6, PET (Terylene)                      |
 
 ---
 
 ## Exam Tips
 
 - When drawing organic mechanisms, always show curly arrows representing the movement of electron
- pairs (from nucleophile to electrophile, or from bond to atom).
+  pairs (from nucleophile to electrophile, or from bond to atom).
 - For isomerism questions, systematically consider chain, position, and functional group isomerism.
-- When asked to distinguish between two compounds, choose a test that gives a different
- observable result for each compound.
+- When asked to distinguish between two compounds, choose a test that gives a different observable
+  result for each compound.
 - In polymer questions, always show the repeating unit correctly and include the bracket notation
- with $n$.
+  with $n$.
 - For benzene questions, remember that benzene undergoes substitution (not addition) because the
- delocalised $\pi$ system must be preserved.
+  delocalised $\pi$ system must be preserved.
 - Markovnikov's Rule applies to addition of HX to unsymmetrical alkenes: the H adds to the carbon
- with more H atoms.
+  with more H atoms.
 - When writing equations for esterification, always include the acid catalyst and remember the
- reaction is reversible.
+  reaction is reversible.
 - For cracking, specify whether it is thermal or catalytic and state the conditions required.
 - Remember that primary alcohols give aldehydes then carboxylic acids on oxidation; secondary give
- ketones; tertiary give nothing.
+  ketones; tertiary give nothing.
 
 <details>
 <summary>Additional Exam-Style Problems</summary>
@@ -1487,8 +1514,8 @@ Efficient and concentrates electron density directly between the two nuclei. The
 Formed by the sideways overlap of unhybridised $p$ orbitals above and below the plane of the
 Molecule. This sideways overlap is less effective, and the $\pi$ electron density is further from
 The nuclei and more exposed. The $\pi$ bond therefore has a lower bond energy (approximately $270$
-KJ/mol for C=C $\pi$ component vs $350$ kJ/mol for C-C $\sigma$ component) and is more broken
-In addition reactions.
+KJ/mol for C=C $\pi$ component vs $350$ kJ/mol for C-C $\sigma$ component) and is more broken In
+addition reactions.
 
 </details>
 
@@ -1498,7 +1525,7 @@ In addition reactions.
 
 **Problem 1:** Name the following compound: $\mathrm{CH_3CH(CH_3)CH_2CH_2Cl}$
 
-*If you get this wrong, revise: Naming (Section 2.1)*
+_If you get this wrong, revise: Naming (Section 2.1)_
 
 <details>
 <summary>Solution</summary>
@@ -1513,7 +1540,7 @@ Name: **1-chloro-2-methylpentane**
 
 **Problem 2:** Draw and name all structural isomers of $\mathrm{C_4H_9Cl}$.
 
-*If you get this wrong, revise: Structural Isomerism (Section 2.1)*
+_If you get this wrong, revise: Structural Isomerism (Section 2.1)_
 
 <details>
 <summary>Solution</summary>
@@ -1525,9 +1552,10 @@ Name: **1-chloro-2-methylpentane**
 
 </details>
 
-**Problem 3:** Write the initiation, propagation (one step), and one termination step for the free radical chlorination of methane.
+**Problem 3:** Write the initiation, propagation (one step), and one termination step for the free
+radical chlorination of methane.
 
-*If you get this wrong, revise: Free Radical Substitution Mechanism (Section 2.1)*
+_If you get this wrong, revise: Free Radical Substitution Mechanism (Section 2.1)_
 
 <details>
 <summary>Solution</summary>
@@ -1540,31 +1568,36 @@ Termination: $\mathrm{Cl^\bullet} + \mathrm{Cl^\bullet} \to \mathrm{Cl_2}$
 
 </details>
 
-**Problem 4:** State the reagents and conditions for converting propene to propan-1-ol. Name the type of reaction and write the equation.
+**Problem 4:** State the reagents and conditions for converting propene to propan-1-ol. Name the
+type of reaction and write the equation.
 
-*If you get this wrong, revise: Chemical Properties of Alkenes (Section 2.2)*
+_If you get this wrong, revise: Chemical Properties of Alkenes (Section 2.2)_
 
 <details>
 <summary>Solution</summary>
 
-Reagents: $\mathrm{H_2O}$ with $\mathrm{H_3PO_4}$ catalyst at $300^\circ\mathrm{C}$ under high pressure.
+Reagents: $\mathrm{H_2O}$ with $\mathrm{H_3PO_4}$ catalyst at $300^\circ\mathrm{C}$ under high
+pressure.
 
 Type: **hydration** (addition reaction).
 
 $$\mathrm{CH_3CH=CH_2} + \mathrm{H_2O} \xrightarrow{\mathrm{H_3PO_4}} \mathrm{CH_3CH_2CH_2OH}$$
 
-Note: The major product follows Markovnikov's rule, giving propan-2-ol. To obtain propan-1-ol specifically, an indirect route via hydroboration-oxidation would be needed (beyond DSE scope).
+Note: The major product follows Markovnikov's rule, giving propan-2-ol. To obtain propan-1-ol
+specifically, an indirect route via hydroboration-oxidation would be needed (beyond DSE scope).
 
 </details>
 
-**Problem 5:** A compound has the molecular formula $\mathrm{C_4H_8}$. It does not decolourise bromine water. Draw and name two possible structures.
+**Problem 5:** A compound has the molecular formula $\mathrm{C_4H_8}$. It does not decolourise
+bromine water. Draw and name two possible structures.
 
-*If you get this wrong, revise: Structural Isomerism (Section 2.1)*
+_If you get this wrong, revise: Structural Isomerism (Section 2.1)_
 
 <details>
 <summary>Solution</summary>
 
-$\mathrm{C_4H_8}$ corresponds to one degree of unsaturation ($\mathrm{C}_n\mathrm{H}_{2n}$). If it does not decolourise bromine water, it is NOT an alkene. It must be a **cycloalkane**.
+$\mathrm{C_4H_8}$ corresponds to one degree of unsaturation ($\mathrm{C}_n\mathrm{H}_{2n}$). If it
+does not decolourise bromine water, it is NOT an alkene. It must be a **cycloalkane**.
 
 1. Cyclobutane: a four-membered ring ($\mathrm{C_4H_8}$)
 2. Methylcyclopropane: a three-membered ring with a methyl substituent ($\mathrm{C_4H_8}$)
@@ -1573,39 +1606,46 @@ Both have the formula $\mathrm{C_4H_8}$ but are cyclic, so the C=C test is negat
 
 </details>
 
-**Problem 6:** Write the equation for the nitration of methylbenzene (toluene) and state the conditions.
+**Problem 6:** Write the equation for the nitration of methylbenzene (toluene) and state the
+conditions.
 
-*If you get this wrong, revise: Electrophilic Aromatic Substitution (Section 2.4)*
+_If you get this wrong, revise: Electrophilic Aromatic Substitution (Section 2.4)_
 
 <details>
 <summary>Solution</summary>
 
-Conditions: concentrated $\mathrm{HNO_3}$ with concentrated $\mathrm{H_2SO_4}$ (catalyst) at $50$--$60^\circ\mathrm{C}$.
+Conditions: concentrated $\mathrm{HNO_3}$ with concentrated $\mathrm{H_2SO_4}$ (catalyst) at
+$50$--$60^\circ\mathrm{C}$.
 
 $$\mathrm{C_6H_5CH_3} + \mathrm{HNO_3} \xrightarrow{\mathrm{conc.\ H_2SO_4}} \mathrm{C_6H_4(CH_3)(NO_2)} + \mathrm{H_2O}$$
 
-The product is a mixture of 2-nitrotoluene (minor) and 4-nitrotoluene (major), because the $-\mathrm{CH_3}$ group directs substitution to the ortho and para positions.
+The product is a mixture of 2-nitrotoluene (minor) and 4-nitrotoluene (major), because the
+$-\mathrm{CH_3}$ group directs substitution to the ortho and para positions.
 
 </details>
 
-**Problem 7:** Classify the following alcohols as primary, secondary, or tertiary: (a) butan-2-ol, (b) 2-methylpropan-2-ol, (c) pentan-1-ol. State the oxidation product of each.
+**Problem 7:** Classify the following alcohols as primary, secondary, or tertiary: (a) butan-2-ol,
+(b) 2-methylpropan-2-ol, (c) pentan-1-ol. State the oxidation product of each.
 
-*If you get this wrong, revise: Classification and Oxidation of Alcohols (Section 3.1)*
+_If you get this wrong, revise: Classification and Oxidation of Alcohols (Section 3.1)_
 
 <details>
 <summary>Solution</summary>
 
-(a) $\mathrm{CH_3CH_2CH(OH)CH_3}$ -- **secondary** -- oxidises to butanone ($\mathrm{CH_3CH_2COCH_3}$)
+(a) $\mathrm{CH_3CH_2CH(OH)CH_3}$ -- **secondary** -- oxidises to butanone
+($\mathrm{CH_3CH_2COCH_3}$)
 
 (b) $\mathrm{(CH_3)_3COH}$ -- **tertiary** -- not oxidised by common reagents
 
-(c) $\mathrm{CH_3CH_2CH_2CH_2CH_2OH}$ -- **primary** -- oxidises to pentanal ($\mathrm{CH_3CH_2CH_2CH_2CHO}$), then to pentanoic acid ($\mathrm{CH_3CH_2CH_2CH_2COOH}$)
+(c) $\mathrm{CH_3CH_2CH_2CH_2CH_2OH}$ -- **primary** -- oxidises to pentanal
+($\mathrm{CH_3CH_2CH_2CH_2CHO}$), then to pentanoic acid ($\mathrm{CH_3CH_2CH_2CH_2COOH}$)
 
 </details>
 
-**Problem 8:** Ethanoic acid reacts with methanol to form an ester. (a) Name the ester. (b) Write the equation. (c) State the role of the concentrated sulphuric acid.
+**Problem 8:** Ethanoic acid reacts with methanol to form an ester. (a) Name the ester. (b) Write
+the equation. (c) State the role of the concentrated sulphuric acid.
 
-*If you get this wrong, revise: Esterification (Section 3.2)*
+_If you get this wrong, revise: Esterification (Section 3.2)_
 
 <details>
 <summary>Solution</summary>
@@ -1614,13 +1654,15 @@ The product is a mixture of 2-nitrotoluene (minor) and 4-nitrotoluene (major), b
 
 (b) $$\mathrm{CH_3COOH} + \mathrm{CH_3OH} \rightleftharpoons \mathrm{CH_3COOCH_3} + \mathrm{H_2O}$$
 
-(c) Concentrated $\mathrm{H_2SO_4}$ acts as a **catalyst** and as a **dehydrating agent**, removing water and shifting the equilibrium towards the ester product.
+(c) Concentrated $\mathrm{H_2SO_4}$ acts as a **catalyst** and as a **dehydrating agent**, removing
+water and shifting the equilibrium towards the ester product.
 
 </details>
 
-**Problem 9:** Draw the repeating unit of the addition polymer formed from chloroethene ($\mathrm{CH_2=CHCl}$) and name the polymer.
+**Problem 9:** Draw the repeating unit of the addition polymer formed from chloroethene
+($\mathrm{CH_2=CHCl}$) and name the polymer.
 
-*If you get this wrong, revise: Addition Polymerisation (Section 4.1)*
+_If you get this wrong, revise: Addition Polymerisation (Section 4.1)_
 
 <details>
 <summary>Solution</summary>
@@ -1633,9 +1675,11 @@ Polymer name: **polyvinyl chloride (PVC)**
 
 </details>
 
-**Problem 10:** Compound $\mathrm{A}$ ($\mathrm{C_3H_6O}$) gives the following results: (i) positive 2,4-DNPH test, (ii) no reaction with Tollens' reagent, (iii) no reaction with $\mathrm{PCl_5}$. Identify $\mathrm{A}$.
+**Problem 10:** Compound $\mathrm{A}$ ($\mathrm{C_3H_6O}$) gives the following results: (i) positive
+2,4-DNPH test, (ii) no reaction with Tollens' reagent, (iii) no reaction with $\mathrm{PCl_5}$.
+Identify $\mathrm{A}$.
 
-*If you get this wrong, revise: Test Tube Reactions (Section 5.4)*
+_If you get this wrong, revise: Test Tube Reactions (Section 5.4)_
 
 <details>
 <summary>Solution</summary>
@@ -1646,13 +1690,15 @@ No reaction with Tollens': not an aldehyde (it is a ketone).
 
 No reaction with $\mathrm{PCl_5}$: no -OH group (not an alcohol or carboxylic acid).
 
-$\mathrm{A}$ = **propanone** ($\mathrm{CH_3COCH_3}$), which is a ketone with a C=O group, consistent with all observations.
+$\mathrm{A}$ = **propanone** ($\mathrm{CH_3COCH_3}$), which is a ketone with a C=O group, consistent
+with all observations.
 
 </details>
 
-**Problem 11:** Describe how to convert ethanol to ethanoic acid in two steps, giving reagents and conditions for each step.
+**Problem 11:** Describe how to convert ethanol to ethanoic acid in two steps, giving reagents and
+conditions for each step.
 
-*If you get this wrong, revise: Reaction Pathway Tables (Section 5.5)*
+_If you get this wrong, revise: Reaction Pathway Tables (Section 5.5)_
 
 <details>
 <summary>Solution</summary>
@@ -1677,9 +1723,11 @@ Alternatively, a single step of oxidation under reflux converts ethanol directly
 
 </details>
 
-**Problem 12:** $6.0 \mathrm{ g}$ of impure calcium carbonate is reacted with excess hydrochloric acid, producing $1.15 \mathrm{ dm^3}$ of $\mathrm{CO_2}$ at r.t.p. Calculate the percentage purity of the calcium carbonate.
+**Problem 12:** $6.0 \mathrm{ g}$ of impure calcium carbonate is reacted with excess hydrochloric
+acid, producing $1.15 \mathrm{ dm^3}$ of $\mathrm{CO_2}$ at r.t.p. Calculate the percentage purity
+of the calcium carbonate.
 
-*If you get this wrong, revise: Combustion and Stoichiometry (Section 2.1)*
+_If you get this wrong, revise: Combustion and Stoichiometry (Section 2.1)_
 
 <details>
 <summary>Solution</summary>
@@ -1696,9 +1744,10 @@ $$\mathrm{Percentage\ purity} = \frac{4.79}{6.0} \times 100\% = 79.8\%$$
 
 </details>
 
-**Problem 13:** Write equations for the complete combustion of methane and for the incomplete combustion of methane producing carbon monoxide.
+**Problem 13:** Write equations for the complete combustion of methane and for the incomplete
+combustion of methane producing carbon monoxide.
 
-*If you get this wrong, revise: Chemical Properties of Alkanes (Section 2.1)*
+_If you get this wrong, revise: Chemical Properties of Alkanes (Section 2.1)_
 
 <details>
 <summary>Solution</summary>
@@ -1711,40 +1760,50 @@ Incomplete combustion (limited $\mathrm{O_2}$):
 
 $$2\mathrm{CH_4} + 3\mathrm{O_2} \to 2\mathrm{CO} + 4\mathrm{H_2O}$$
 
-With even less oxygen, carbon (soot) may also be produced: $\mathrm{CH_4} + \mathrm{O_2} \to \mathrm{C} + 2\mathrm{H_2O}$
+With even less oxygen, carbon (soot) may also be produced:
+$\mathrm{CH_4} + \mathrm{O_2} \to \mathrm{C} + 2\mathrm{H_2O}$
 
 </details>
 
-**Problem 14:** Explain what is meant by the term "electrophile" and explain why $\mathrm{Br_2}$ acts as an electrophile when it reacts with ethene.
+**Problem 14:** Explain what is meant by the term "electrophile" and explain why $\mathrm{Br_2}$
+acts as an electrophile when it reacts with ethene.
 
-*If you get this wrong, revise: Chemical Properties of Alkenes (Section 2.2)*
+_If you get this wrong, revise: Chemical Properties of Alkenes (Section 2.2)_
 
 <details>
 <summary>Solution</summary>
 
-An **electrophile** is an electron-deficient species that accepts a pair of electrons from a nucleophile (an electron-rich species).
+An **electrophile** is an electron-deficient species that accepts a pair of electrons from a
+nucleophile (an electron-rich species).
 
-When $\mathrm{Br_2}$ approaches the electron-rich $\pi$ bond of ethene, the $\pi$ electrons induce a dipole in the $\mathrm{Br_2}$ molecule, making one bromine atom partially positive ($\mathrm{Br}^{\delta+}$). This partially positive bromine acts as the electrophile and is attracted to the $\pi$ bond. The $\pi$ bond then donates electrons to form a new $\sigma$ bond with $\mathrm{Br}$.
+When $\mathrm{Br_2}$ approaches the electron-rich $\pi$ bond of ethene, the $\pi$ electrons induce a
+dipole in the $\mathrm{Br_2}$ molecule, making one bromine atom partially positive
+($\mathrm{Br}^{\delta+}$). This partially positive bromine acts as the electrophile and is attracted
+to the $\pi$ bond. The $\pi$ bond then donates electrons to form a new $\sigma$ bond with
+$\mathrm{Br}$.
 
 </details>
 
 **Problem 15:** Describe a chemical test to distinguish between cyclohexane and cyclohexene.
 
-*If you get this wrong, revise: Test for Unsaturation (Section 2.2)*
+_If you get this wrong, revise: Test for Unsaturation (Section 2.2)_
 
 <details>
 <summary>Solution</summary>
 
 Add bromine water (orange-brown) to each compound separately.
 
-- **Cyclohexane:** No reaction; bromine water remains orange-brown. Cyclohexane is a saturated cycloalkane with no C=C bond.
-- **Cyclohexene:** Bromine water is decolourised (orange-brown to colourless). Cyclohexene has a C=C bond that undergoes electrophilic addition with $\mathrm{Br_2}$.
+- **Cyclohexane:** No reaction; bromine water remains orange-brown. Cyclohexane is a saturated
+  cycloalkane with no C=C bond.
+- **Cyclohexene:** Bromine water is decolourised (orange-brown to colourless). Cyclohexene has a C=C
+  bond that undergoes electrophilic addition with $\mathrm{Br_2}$.
 
 </details>
 
-**Problem 16:** Draw the repeating unit of Terylene (PET), formed from benzene-1,4-dicarboxylic acid and ethane-1,2-diol. State the type of polymerisation.
+**Problem 16:** Draw the repeating unit of Terylene (PET), formed from benzene-1,4-dicarboxylic acid
+and ethane-1,2-diol. State the type of polymerisation.
 
-*If you get this wrong, revise: Condensation Polymerisation (Section 4.2)*
+_If you get this wrong, revise: Condensation Polymerisation (Section 4.2)_
 
 <details>
 <summary>Solution</summary>
@@ -1755,18 +1814,22 @@ Repeating unit:
 
 $$\left[\mathrm{--OC\mathrm{-}C_6H_4\mathrm{-}COOCH_2CH_2O--}\right]_n$$
 
-The benzene-1,4-dicarboxylic acid provides the $-\mathrm{COO-}$ linkage and the ethane-1,2-diol provides the $-\mathrm{OCH_2CH_2O-}$ linkage.
+The benzene-1,4-dicarboxylic acid provides the $-\mathrm{COO-}$ linkage and the ethane-1,2-diol
+provides the $-\mathrm{OCH_2CH_2O-}$ linkage.
 
 </details>
 
-**Problem 17:** Compound $\mathrm{P}$ ($\mathrm{C_4H_8O_2}$) is hydrolysed with aqueous NaOH to give ethanol and the sodium salt of propanoic acid. (a) Identify $\mathrm{P}$. (b) Write an equation for the formation of $\mathrm{P}$.
+**Problem 17:** Compound $\mathrm{P}$ ($\mathrm{C_4H_8O_2}$) is hydrolysed with aqueous NaOH to give
+ethanol and the sodium salt of propanoic acid. (a) Identify $\mathrm{P}$. (b) Write an equation for
+the formation of $\mathrm{P}$.
 
-*If you get this wrong, revise: Hydrolysis of Esters (Section 3.3)*
+_If you get this wrong, revise: Hydrolysis of Esters (Section 3.3)_
 
 <details>
 <summary>Solution</summary>
 
-(a) The hydrolysis products are ethanol ($\mathrm{CH_3CH_2OH}$) and sodium propanoate ($\mathrm{CH_3CH_2COONa}$). Therefore, $\mathrm{P}$ is the ester of propanoic acid and ethanol.
+(a) The hydrolysis products are ethanol ($\mathrm{CH_3CH_2OH}$) and sodium propanoate
+($\mathrm{CH_3CH_2COONa}$). Therefore, $\mathrm{P}$ is the ester of propanoic acid and ethanol.
 
 $\mathrm{P}$ = **ethyl propanoate**: $\mathrm{CH_3CH_2COOCH_2CH_3}$
 
@@ -1778,22 +1841,29 @@ Conditions: concentrated $\mathrm{H_2SO_4}$ catalyst, heat under reflux.
 
 </details>
 
-**Problem 18:** Explain the meaning of the term "saturated" as applied to hydrocarbons, and explain why alkenes are described as "unsaturated."
+**Problem 18:** Explain the meaning of the term "saturated" as applied to hydrocarbons, and explain
+why alkenes are described as "unsaturated."
 
-*If you get this wrong, revise: General Properties of Alkanes and Alkenes (Sections 2.1 and 2.2)*
+_If you get this wrong, revise: General Properties of Alkanes and Alkenes (Sections 2.1 and 2.2)_
 
 <details>
 <summary>Solution</summary>
 
-**Saturated** hydrocarbons contain only single C-C and C-H bonds. They have the maximum possible number of hydrogen atoms for their carbon skeleton (general formula $\mathrm{C_nH_{2n+2}}$ for alkanes). They cannot undergo addition reactions.
+**Saturated** hydrocarbons contain only single C-C and C-H bonds. They have the maximum possible
+number of hydrogen atoms for their carbon skeleton (general formula $\mathrm{C_nH_{2n+2}}$ for
+alkanes). They cannot undergo addition reactions.
 
-**Unsaturated** hydrocarbons contain at least one multiple bond (C=C or C$\equiv$C). They have fewer hydrogen atoms than the corresponding saturated compound (general formula $\mathrm{C_nH_{2n}}$ for alkenes). The multiple bond can be "saturated" by adding atoms across it in addition reactions, such as with $\mathrm{Br_2}$ or $\mathrm{H_2}$.
+**Unsaturated** hydrocarbons contain at least one multiple bond (C=C or C$\equiv$C). They have fewer
+hydrogen atoms than the corresponding saturated compound (general formula $\mathrm{C_nH_{2n}}$ for
+alkenes). The multiple bond can be "saturated" by adding atoms across it in addition reactions, such
+as with $\mathrm{Br_2}$ or $\mathrm{H_2}$.
 
 </details>
 
-**Problem 19:** Write an equation for the cracking of $\mathrm{C_{14}H_{30}}$ to produce ethene and another product. State the type of cracking and the conditions.
+**Problem 19:** Write an equation for the cracking of $\mathrm{C_{14}H_{30}}$ to produce ethene and
+another product. State the type of cracking and the conditions.
 
-*If you get this wrong, revise: Cracking of Hydrocarbons (Section 2.1)*
+_If you get this wrong, revise: Cracking of Hydrocarbons (Section 2.1)_
 
 <details>
 <summary>Solution</summary>
@@ -1804,13 +1874,16 @@ Type: **thermal cracking** (produces a mixture of alkanes and alkenes).
 
 Conditions: high temperature ($400$--$700^\circ\mathrm{C}$) and high pressure.
 
-Note: Catalytic cracking (using zeolite at $\sim 450^\circ\mathrm{C}$) could also produce ethene but gives more branched products.
+Note: Catalytic cracking (using zeolite at $\sim 450^\circ\mathrm{C}$) could also produce ethene but
+gives more branched products.
 
 </details>
 
-**Problem 20:** Compound $\mathrm{Q}$ has the molecular formula $\mathrm{C_4H_{10}O}$. It does not react with $\mathrm{PCl_5}$Does not decolourise bromine water, and does not react with acidified $\mathrm{K_2Cr_2O_7}$. Identify $\mathrm{Q}$ and explain the observations.
+**Problem 20:** Compound $\mathrm{Q}$ has the molecular formula $\mathrm{C_4H_{10}O}$. It does not
+react with $\mathrm{PCl_5}$Does not decolourise bromine water, and does not react with acidified
+$\mathrm{K_2Cr_2O_7}$. Identify $\mathrm{Q}$ and explain the observations.
 
-*If you get this wrong, revise: Functional Group Identification (Section 5.4)*
+_If you get this wrong, revise: Functional Group Identification (Section 5.4)_
 
 <details>
 <summary>Solution</summary>
@@ -1823,13 +1896,16 @@ Does not react with acidified $\mathrm{K_2Cr_2O_7}$: consistent with no -OH grou
 
 The only remaining possibility for $\mathrm{C_4H_{10}O}$ without -OH is an **ether**.
 
-$\mathrm{Q}$ = **diethyl ether** ($\mathrm{CH_3CH_2OCH_2CH_3}$) or **methyl propyl ether** ($\mathrm{CH_3OCH_2CH_2CH_3}$).
+$\mathrm{Q}$ = **diethyl ether** ($\mathrm{CH_3CH_2OCH_2CH_3}$) or **methyl propyl ether**
+($\mathrm{CH_3OCH_2CH_2CH_3}$).
 
 </details>
 
-**Problem 21:** Calculate the percentage yield when $5.0 \mathrm{ g}$ of propanoic acid ($M = 74.0 \mathrm{ g/mol}$) reacts with excess ethanol to produce $4.8 \mathrm{ g}$ of ethyl propanoate ($M = 102 \mathrm{ g/mol}$).
+**Problem 21:** Calculate the percentage yield when $5.0 \mathrm{ g}$ of propanoic acid
+($M = 74.0 \mathrm{ g/mol}$) reacts with excess ethanol to produce $4.8 \mathrm{ g}$ of ethyl
+propanoate ($M = 102 \mathrm{ g/mol}$).
 
-*If you get this wrong, revise: Esterification (Section 3.2)*
+_If you get this wrong, revise: Esterification (Section 3.2)_
 
 <details>
 <summary>Solution</summary>

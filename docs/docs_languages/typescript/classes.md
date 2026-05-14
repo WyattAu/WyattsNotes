@@ -1,11 +1,14 @@
 ---
 title: Classes
-description: "Classes — Class Declarations; Fields, Constructors, Methods; Access Modifiers; `readonly` Modifier with worked examples and exam-style questions."
+description:
+  'Classes — Class Declarations; Fields, Constructors, Methods; Access Modifiers; `readonly`
+  Modifier with worked examples and exam-style questions.'
 slug: typescript-classes
 date: 2026-04-22T00:00:00.000Z
 tags: [TypeScript]
 categories: [TypeScript]
 ---
+
 ## Class Declarations
 
 ### Fields, Constructors, Methods
@@ -64,10 +67,10 @@ Even though the constructor does not assign it.
 
 TypeScript supports three access modifiers: `public``private`And `protected`.
 
-| Modifier | Accessibility |
+| Modifier    | Accessibility                                            |
 | ----------- | -------------------------------------------------------- |
-| `public` | Accessible from anywhere (default) |
-| `private` | Accessible only within the declaring class |
+| `public`    | Accessible from anywhere (default)                       |
+| `private`   | Accessible only within the declaring class               |
 | `protected` | Accessible within the declaring class and its subclasses |
 
 ```ts
@@ -173,8 +176,7 @@ class Point {
 }
 ```
 
-Parameter properties can use any combination of modifiers: `public``private``protected`
-`readonly`.
+Parameter properties can use any combination of modifiers: `public``private``protected` `readonly`.
 
 ## Abstract Classes and Abstract Methods
 
@@ -286,13 +288,13 @@ class UserFactory implements Deserializable<User> {
 
 ### Interface vs Abstract Class
 
-| Feature | Interface | Abstract Class |
+| Feature                 | Interface                                       | Abstract Class                             |
 | ----------------------- | ----------------------------------------------- | ------------------------------------------ |
-| Multiple implementation | A class can implement many interfaces | A class can extend only one abstract class |
-| Instance fields | Cannot have instance fields (only declarations) | Can have instance fields |
-| Constructor | No constructor | Can have a constructor |
-| Method implementations | All methods are abstract (no body) | Can mix abstract and concrete methods |
-| Access modifiers | No access modifiers on members | Supports `public``private``protected` |
+| Multiple implementation | A class can implement many interfaces           | A class can extend only one abstract class |
+| Instance fields         | Cannot have instance fields (only declarations) | Can have instance fields                   |
+| Constructor             | No constructor                                  | Can have a constructor                     |
+| Method implementations  | All methods are abstract (no body)              | Can mix abstract and concrete methods      |
+| Access modifiers        | No access modifiers on members                  | Supports `public``private``protected`      |
 
 ## Static Members and Static Factory Patterns
 
@@ -668,8 +670,8 @@ getUser(userId);
 getUser(orderId);
 ```
 
-The last call is a compile error because `OrderId` is not assignable to `UserId`Even though both
-Are branded `string` types.
+The last call is a compile error because `OrderId` is not assignable to `UserId`Even though both Are
+branded `string` types.
 
 ### Private Fields and Structural Typing
 

@@ -1,9 +1,11 @@
 ---
 title: English
 tags:
-- english
+  - english
 slug: english
-description: "Rigorous IB English notes covering English. Includes definitions, derivations, worked examples, and exam-style problems."
+description:
+  'Rigorous IB English notes covering English. Includes definitions, derivations, worked examples,
+  and exam-style problems.'
 ---
 
 ## IB English A: Language and Literature -- Course Overview
@@ -49,23 +51,23 @@ In argumentation, and the ability to respond to questions about a text's broader
 
 ### Standard Level (SL)
 
-| Component | Weighting | Description |
+| Component                        | Weighting | Description                                                                                                |
 | -------------------------------- | --------- | ---------------------------------------------------------------------------------------------------------- |
-| Paper 1 | 25% | Guided textual analysis of one unseen non-literary or literary passage |
-| Paper 2 | 25% | Comparative essay on at least two works studied in Part 3 |
-| Written Task | 20% | A productive piece of writing (creative or analytical) based on a work studied, accompanied by a rationale |
-| Individual Oral Commentary (IOC) | 15% | Oral commentary on an extract from a Part 2 work |
-| Further Oral Activity (FOA) | 15% | Oral presentation on a Part 1 or Part 2 text |
+| Paper 1                          | 25%       | Guided textual analysis of one unseen non-literary or literary passage                                     |
+| Paper 2                          | 25%       | Comparative essay on at least two works studied in Part 3                                                  |
+| Written Task                     | 20%       | A productive piece of writing (creative or analytical) based on a work studied, accompanied by a rationale |
+| Individual Oral Commentary (IOC) | 15%       | Oral commentary on an extract from a Part 2 work                                                           |
+| Further Oral Activity (FOA)      | 15%       | Oral presentation on a Part 1 or Part 2 text                                                               |
 
 ### Higher Level (HL)
 
-| Component | Weighting | Description |
+| Component                                       | Weighting | Description                                                                                        |
 | ----------------------------------------------- | --------- | -------------------------------------------------------------------------------------------------- |
-| Paper 1 | 25% | Comparative guided textual analysis of two unseen passages |
-| Paper 2 | 25% | Comparative essay on at least two works studied in Part 3 |
-| Written Task | 20% | Two written tasks (one from Parts 1 or 2, one from Parts 3 or 4), each with a rationale |
-| Individual Oral Commentary and Discussion (IOC) | 15% | Oral commentary on an extract from a Part 2 work, followed by a discussion on a second Part 2 work |
-| Further Oral Activity (FOA) | 15% | Oral presentation on a Part 1 or Part 2 text |
+| Paper 1                                         | 25%       | Comparative guided textual analysis of two unseen passages                                         |
+| Paper 2                                         | 25%       | Comparative essay on at least two works studied in Part 3                                          |
+| Written Task                                    | 20%       | Two written tasks (one from Parts 1 or 2, one from Parts 3 or 4), each with a rationale            |
+| Individual Oral Commentary and Discussion (IOC) | 15%       | Oral commentary on an extract from a Part 2 work, followed by a discussion on a second Part 2 work |
+| Further Oral Activity (FOA)                     | 15%       | Oral presentation on a Part 1 or Part 2 text                                                       |
 
 ### Extended Essay
 
@@ -79,7 +81,7 @@ A successful Extended Essay in English demonstrates the following qualities:
 
 - A focused, arguable research question that can be addressed within the word limit
 - A clear methodology -- whether formalist, historicist, psychoanalytic, or comparative -- stated
- explicitly
+  explicitly
 - Sustained engagement with the primary text, including close analysis of specific passages
 - Integration of secondary critical sources that advance (rather than merely support) the argument
 - A conclusion that addresses the implications of the argument rather than restating it
@@ -94,12 +96,12 @@ Effective IOC preparation requires:
 
 - **Deep familiarity** with the full text, including its structural patterns and recurring images
 - **Practice with unseen extracts**: training the ability to identify significance in any passage,
- not just those pre-selected for revision
+  not just those pre-selected for revision
 - **A structured approach**: beginning with an overview of the passage's function within the larger
- text, then moving to detailed analysis of specific literary features, and concluding with an
- evaluative statement about the passage's effects
+  text, then moving to detailed analysis of specific literary features, and concluding with an
+  evaluative statement about the passage's effects
 - **Terminological precision**: using literary terms accurately and fluently (e.g., metonymy, free
- indirect discourse, chiasmus, dramatic irony)
+  indirect discourse, chiasmus, dramatic irony)
 
 ### The Written Task
 
@@ -276,13 +278,13 @@ Close reading is the foundational skill of the IB English course. A successful c
 To:
 
 - **Diction and register**: The specific word choices a writer makes and the level of formality or
- informality they produce
+  informality they produce
 - **Imagery and figurative language**: Metaphor, simile, personification, and the sensory details
- that construct meaning
+  that construct meaning
 - **Structure and form**: How a text is organised -- chapter breaks, paragraph structure, stanza
- form, dramatic acts
+  form, dramatic acts
 - **Narrative voice and point of view**: Who tells the story, from what position, and with what
- degree of reliability
+  degree of reliability
 - **Tone and mood**: The emotional register of the text and the atmosphere it creates
 - **Irony and ambiguity**: Moments where meaning is unstable, double-edged, or undercut by context
 
@@ -306,11 +308,11 @@ Effective Paper 1 preparation involves:
 
 - Regular practice with unseen texts across a range of genres and registers
 - Developing a systematic approach to annotation: identifying patterns, anomalies, and structural
- features before beginning to write
+  features before beginning to write
 - Balancing general observations with specific textual evidence, ensuring that every claim is
- anchored in a quotation or a precise reference
+  anchored in a quotation or a precise reference
 - Maintaining a clear argumentative thread throughout the response, rather than producing a series
- of disconnected observations
+  of disconnected observations
 
 ### The Role of Context in Analysis
 
@@ -329,20 +331,20 @@ The following terms are essential for precise literary analysis and should be us
 Throughout all assessed work:
 
 - **Tone**: the attitude of the speaker or narrator toward the subject matter (e.g., sardonic,
- elegiac, impassioned, detached)
+  elegiac, impassioned, detached)
 - **Diction**: word choice, including level of formality, connotation, and etymological resonance
 - **Imagery**: descriptive language that appeals to the senses, including visual, auditory, tactile,
- olfactory, and gustatory images
+  olfactory, and gustatory images
 - **Metonymy and synecdoche**: figures of speech in which an attribute or part stands for the whole
- (e.g., "the Crown" for the monarchy)
+  (e.g., "the Crown" for the monarchy)
 - **Juxtaposition**: the placing of two elements in proximity to highlight contrast or create irony
 - **Motif**: a recurring image, symbol, or structural element that accumulates significance across a
- text
+  text
 - **Pathos, ethos, logos**: the three modes of persuasion identified by Aristotle -- emotional
- appeal, ethical authority, and logical argument
+  appeal, ethical authority, and logical argument
 - **Subtext**: the implicit meaning beneath the surface of dialogue or narration
 - **Diegetic and non-diegetic**: terms borrowed from narrative theory to distinguish between
- elements within the story world and those external to it
+  elements within the story world and those external to it
 
 ## Common Pitfalls
 

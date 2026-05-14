@@ -1,6 +1,8 @@
 ---
 title: Wave Phenomena
-description: IB Physics — standing waves, resonance, harmonics, Doppler effect, diffraction, interference, and thin film interference.
+description:
+  IB Physics — standing waves, resonance, harmonics, Doppler effect, diffraction, interference, and
+  thin film interference.
 slug: wave-phenomena
 ---
 
@@ -16,15 +18,15 @@ Propagate energy; the energy is trapped between fixed points.
 
 - **Nodes** ($N$): Points of zero amplitude. Occur where the two travelling waves always cancel.
 - **Antinodes** ($A$): Points of maximum amplitude. Occur where the two travelling waves always
- reinforce.
+  reinforce.
 
 The distance between adjacent nodes (or adjacent antinodes) is $\dfrac{\lambda}{2}$. The distance
 Between a node and the adjacent antinode is $\dfrac{\lambda}{4}$.
 
 ### Mathematical Description
 
-If the two travelling waves are $y_1 = A\sin(kx - \omega t)$ and $y_2 = A\sin(kx + \omega t)$
-Their superposition gives:
+If the two travelling waves are $y_1 = A\sin(kx - \omega t)$ and $y_2 = A\sin(kx + \omega t)$ Their
+superposition gives:
 
 $$y = y_1 + y_2 = 2A\sin(kx)\cos(\omega t)$$
 
@@ -39,18 +41,18 @@ For a string of length $L$ fixed at both ends:
 - Both ends are **nodes**.
 - Only certain **resonant frequencies** are allowed.
 
-| Mode | Wavelength | Frequency |
-| :--- | :--- | :--- |
-| Fundamental (1st harmonic) | $\lambda_1 = 2L$ | $f_1 = \dfrac{v}{2L}$ |
-| 2nd harmonic | $\lambda_2 = L$ | $f_2 = \dfrac{v}{L} = 2f_1$ |
-| 3rd harmonic | $\lambda_3 = \dfrac{2L}{3}$ | $f_3 = \dfrac{3v}{2L} = 3f_1$ |
-| $n$-th harmonic | $\lambda_n = \dfrac{2L}{n}$ | $f_n = \dfrac{nv}{2L} = nf_1$ |
+| Mode                       | Wavelength                  | Frequency                     |
+| :------------------------- | :-------------------------- | :---------------------------- |
+| Fundamental (1st harmonic) | $\lambda_1 = 2L$            | $f_1 = \dfrac{v}{2L}$         |
+| 2nd harmonic               | $\lambda_2 = L$             | $f_2 = \dfrac{v}{L} = 2f_1$   |
+| 3rd harmonic               | $\lambda_3 = \dfrac{2L}{3}$ | $f_3 = \dfrac{3v}{2L} = 3f_1$ |
+| $n$-th harmonic            | $\lambda_n = \dfrac{2L}{n}$ | $f_n = \dfrac{nv}{2L} = nf_1$ |
 
 Where $v = \sqrt{\dfrac{T}{\mu}}$ is the wave speed on the string, $T$ is the tension, and $\mu$ is
 The mass per unit length.
 
-**Example.** A string of length $0.75\,\mathrm{m}$ has a fundamental frequency of $220\,\mathrm{Hz}$.
-Find the frequency of the 3rd harmonic and the wave speed.
+**Example.** A string of length $0.75\,\mathrm{m}$ has a fundamental frequency of
+$220\,\mathrm{Hz}$. Find the frequency of the 3rd harmonic and the wave speed.
 
 $$f_3 = 3 \times 220 = 660\,\mathrm{Hz}$$
 
@@ -220,12 +222,13 @@ The bright fringes (maxima) occur where:
 
 $$d\sin\theta = n\lambda, \qquad n = 0, \pm 1, \pm 2, \ldots$$
 
-For small angles ($\sin\theta \approx \tan\theta \approx \theta$), the fringe spacing on the screen is:
+For small angles ($\sin\theta \approx \tan\theta \approx \theta$), the fringe spacing on the screen
+is:
 
 $$\Delta y = \frac{\lambda L}{d}$$
 
-**Example.** Light of wavelength $600\,\mathrm{nm}$ passes through slits $0.5\,\mathrm{mm}$ apart onto a
-Screen $2.0\,\mathrm{m}$ away. Find the fringe spacing.
+**Example.** Light of wavelength $600\,\mathrm{nm}$ passes through slits $0.5\,\mathrm{mm}$ apart
+onto a Screen $2.0\,\mathrm{m}$ away. Find the fringe spacing.
 
 $$\Delta y = \frac{600 \times 10^{-9} \times 2.0}{0.5 \times 10^{-3}} = \frac{1.2 \times 10^{-6}}{5 \times 10^{-4}} = 2.4 \times 10^{-3}\,\mathrm{m} = 2.4\,\mathrm{mm}$$
 
@@ -314,20 +317,20 @@ Where $R$ is the radius of curvature of the lens surface.
 
 ### Wedge Films
 
-Two flat glass plates inclined at a small angle $\theta$ produce equally spaced interference fringes.
-The fringe spacing is:
+Two flat glass plates inclined at a small angle $\theta$ produce equally spaced interference
+fringes. The fringe spacing is:
 
 $$\Delta x = \frac{\lambda}{2\theta}$$
 
-**Example.** A soap film ($n = 1.33$) of thickness $200\,\mathrm{nm}$ is illuminated with white light.
-Which colour is most strongly reflected?
+**Example.** A soap film ($n = 1.33$) of thickness $200\,\mathrm{nm}$ is illuminated with white
+light. Which colour is most strongly reflected?
 
 For constructive reflection (one phase change at air-to-film boundary):
 
 $$\lambda = \frac{2n_f t}{m + 1/2} = \frac{2(1.33)(200)}{m + 1/2} = \frac{532}{m + 1/2}\,\mathrm{nm}$$
 
-For $m = 0$: $\lambda = 1064\,\mathrm{nm}$ (infrared, not visible).
-For $m = 1$: $\lambda \approx 355\,\mathrm{nm}$ (near UV).
+For $m = 0$: $\lambda = 1064\,\mathrm{nm}$ (infrared, not visible). For $m = 1$:
+$\lambda \approx 355\,\mathrm{nm}$ (near UV).
 
 The dominant visible reflection is at the violet end, giving the film a violet-blue appearance.
 
@@ -417,7 +420,8 @@ Second is at $30\,{}^{\circ}$ to the vertical. What fraction of the original int
 
 After the first filter: $I_1 = \dfrac{I_0}{2}$ (half transmitted for unpolarised light).
 
-After the second filter (Malus's law): $I_2 = I_1\cos^2 30\,{}^{\circ} = \dfrac{I_0}{2} \cdot \dfrac{3}{4}
+After the second filter (Malus's law):
+$I_2 = I_1\cos^2 30\,{}^{\circ} = \dfrac{I_0}{2} \cdot \dfrac{3}{4}
 = \dfrac{3}{8}I_0$.
 
 ### Brewster's Angle
@@ -437,13 +441,13 @@ $$\theta_B = \arctan(1.33) \approx 53.1\,{}^{\circ}$$
 
 ### Statement
 
-Every point on a wavefront acts as a source of secondary wavelets. The new wavefront at a later
-Time is the envelope (tangent surface) of these wavelets.
+Every point on a wavefront acts as a source of secondary wavelets. The new wavefront at a later Time
+is the envelope (tangent surface) of these wavelets.
 
 ### Applications
 
 - **Reflection:** Huygens' construction shows that the angle of incidence equals the angle of
- reflection.
+  reflection.
 - **Refraction:** Huygens' construction leads to Snell's law: $n_1\sin\theta_1 = n_2\sin\theta_2$.
 - **Diffraction:** The spreading of wavelets beyond the edge of an obstacle explains diffraction.
 
@@ -469,13 +473,12 @@ Path difference $\Delta x$ and phase difference $\Delta\phi$ are related by:
 
 $$\Delta\phi = \frac{2\pi}{\lambda}\,\Delta x$$
 
-| Path Difference | Phase Difference | Interference |
-| :--- | :--- | :--- |
-| $0, \lambda, 2\lambda, \ldots$ | $0, 2\pi, 4\pi, \ldots$ | Constructive |
-| $\lambda/2, 3\lambda/2, \ldots$ | $\pi, 3\pi, \ldots$ | Destructive |
+| Path Difference                 | Phase Difference        | Interference |
+| :------------------------------ | :---------------------- | :----------- |
+| $0, \lambda, 2\lambda, \ldots$  | $0, 2\pi, 4\pi, \ldots$ | Constructive |
+| $\lambda/2, 3\lambda/2, \ldots$ | $\pi, 3\pi, \ldots$     | Destructive  |
 
-:::warning
-Common Pitfall
+:::warning Common Pitfall
 
 In double-slit calculations, do not confuse the slit separation $d$ with the slit width $a$. The
 Fringe spacing is determined by $d$; the envelope of the diffraction pattern is determined by $a$.
@@ -489,8 +492,10 @@ Single-slit diffraction envelope.
 ## Related Content at Other Levels
 
 - **A-Level Waves:** [Physics](https://alevel.wyattau.com/docs/physics/physics)
-- **DSE Waves and Sound:** [Waves and Sound](https://academics.wyattau.com/docs/dse/Physics/waves-and-sound)
-- **University Wave Physics:** [Optics and Wave Physics](https://university.wyattau.com/docs/physics/optics-and-wave-physics)
+- **DSE Waves and Sound:**
+  [Waves and Sound](https://academics.wyattau.com/docs/dse/Physics/waves-and-sound)
+- **University Wave Physics:**
+  [Optics and Wave Physics](https://university.wyattau.com/docs/physics/optics-and-wave-physics)
 
 ## Common Pitfalls
 

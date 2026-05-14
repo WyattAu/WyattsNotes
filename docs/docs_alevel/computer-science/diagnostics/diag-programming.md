@@ -1,15 +1,23 @@
 ---
-title: "Programming and OOP -- Diagnostic Tests"
-description: "Challenging A-Level computer science diagnostic questions on Programming and OOP -- Diagnostic Tests. With full worked solutions and examiner commentary."
+title: 'Programming and OOP -- Diagnostic Tests'
+description:
+  'Challenging A-Level computer science diagnostic questions on Programming and OOP -- Diagnostic
+  Tests. With full worked solutions and examiner commentary.'
 slug: diag-programming
 hide_table_of_contents: true
 ---
+
 # Programming and OOP — Diagnostic Tests
 
 ## Unit Tests
 
 ### UT-1: OOP Principles and Encapsulation
-**Question:** Design a class hierarchy for a library system with a base class `Item` and derived classes `Book``DVD`And `Magazine`. The `Item` class should have private attributes `title``item_id`And `is_available`. Include: (a) a constructor, (b) getter and setter methods demonstrating encapsulation, (c) an abstract method `calculate_late_fee(days)` that each derived class implements differently. Show how polymorphism is used to process a list of mixed items.
+
+**Question:** Design a class hierarchy for a library system with a base class `Item` and derived
+classes `Book``DVD`And `Magazine`. The `Item` class should have private attributes
+`title``item_id`And `is_available`. Include: (a) a constructor, (b) getter and setter methods
+demonstrating encapsulation, (c) an abstract method `calculate_late_fee(days)` that each derived
+class implements differently. Show how polymorphism is used to process a list of mixed items.
 
 **Solution:**
 
@@ -86,12 +94,18 @@ for item in items:
     print(f"{item.get_title()}: late fee for 5 days = {item.calculate_late_fee(5)}")
 ```
 
-Encapsulation is demonstrated by: (1) private attributes (`__title``__item_id``__is_available`) accessible only through getter/setter methods, (2) the setter validates input before modifying state, (3) `borrow()` and `return_item()` methods control state transitions.
+Encapsulation is demonstrated by: (1) private attributes (`__title``__item_id``__is_available`)
+accessible only through getter/setter methods, (2) the setter validates input before modifying
+state, (3) `borrow()` and `return_item()` methods control state transitions.
 
-Polymorphism is demonstrated by: the loop iterates over a list of `Item` references but calls `calculate_late_fee()` on each -- Python dispatches the call to the correct derived class method at runtime (dynamic polymorphism).
+Polymorphism is demonstrated by: the loop iterates over a list of `Item` references but calls
+`calculate_late_fee()` on each -- Python dispatches the call to the correct derived class method at
+runtime (dynamic polymorphism).
 
 ---
+
 ### UT-2: SQL Queries
+
 **Question:** Given the following relational schema:
 
 ```
@@ -100,7 +114,9 @@ Course(course_id PK, course_name, department)
 Assessment(assessment_id PK, student_id FK, course_id FK, score, date)
 ```
 
-Write SQL for: (a) list all students taking Computer Science with their average score, (b) find the student with the highest score in any assessment, (c) list courses where no student has scored below 40.
+Write SQL for: (a) list all students taking Computer Science with their average score, (b) find the
+student with the highest score in any assessment, (c) list courses where no student has scored
+below 40.
 
 **Solution:**
 
@@ -138,6 +154,7 @@ WHERE c.course_id NOT IN (
 ```
 
 Alternative using NOT EXISTS:
+
 ```sql
 SELECT c.course_name
 FROM Course c
@@ -149,24 +166,32 @@ WHERE NOT EXISTS (
 ```
 
 ---
+
 ### UT-3: Relational Database Normalisation
+
 **Question:** The following table has update anomalies:
 
-| OrderID | CustomerName | CustomerCity | Product | Quantity | Price |
-|---------|-------------|-------------|---------|----------|-------|
-| 1 | Smith | London | Laptop | 2 | 500 |
-| 1 | Smith | London | Mouse | 5 | 20 |
-| 2 | Jones | Paris | Laptop | 1 | 500 |
-| 3 | Smith | London | Keyboard | 1 | 50 |
+| OrderID | CustomerName | CustomerCity | Product  | Quantity | Price |
+| ------- | ------------ | ------------ | -------- | -------- | ----- |
+| 1       | Smith        | London       | Laptop   | 2        | 500   |
+| 1       | Smith        | London       | Mouse    | 5        | 20    |
+| 2       | Jones        | Paris        | Laptop   | 1        | 500   |
+| 3       | Smith        | London       | Keyboard | 1        | 50    |
 
-(a) Identify the normal form violations. (b) Normalise to 3NF, showing all tables with primary and foreign keys. (c) Explain what anomalies are eliminated at each stage.
+(a) Identify the normal form violations. (b) Normalise to 3NF, showing all tables with primary and
+foreign keys. (c) Explain what anomalies are eliminated at each stage.
 
 **Solution:**
 
 (a) Violations in the unnormalised form (UNF):
+
 - **1NF violation:** The table is already in 1NF (all values are atomic).
-- **2NF violation:** Partial dependencies exist. `CustomerName` and `CustomerCity` depend only on part of a composite key. If we use `(OrderID, Product)` as the composite key, `CustomerName` and `CustomerCity` depend only on `OrderID` (partial dependency). Also, `Price` depends only on `Product`Not on the full composite key.
-- **3NF violation:** Transitive dependencies exist. `CustomerCity` depends on `CustomerName` (transitively through `CustomerName`).
+- **2NF violation:** Partial dependencies exist. `CustomerName` and `CustomerCity` depend only on
+  part of a composite key. If we use `(OrderID, Product)` as the composite key, `CustomerName` and
+  `CustomerCity` depend only on `OrderID` (partial dependency). Also, `Price` depends only on
+  `Product`Not on the full composite key.
+- **3NF violation:** Transitive dependencies exist. `CustomerCity` depends on `CustomerName`
+  (transitively through `CustomerName`).
 
 (b) **Normalisation to 3NF:**
 
@@ -174,24 +199,20 @@ WHERE NOT EXISTS (
 
 **2NF tables:**
 
-Customer(OrderID, CustomerName, CustomerCity)
-PK: OrderID
+Customer(OrderID, CustomerName, CustomerCity) PK: OrderID
 
-OrderLine(OrderID, Product, Quantity)
-PK: (OrderID, Product), FK: OrderID references Customer
+OrderLine(OrderID, Product, Quantity) PK: (OrderID, Product), FK: OrderID references Customer
 
-Product(Product, Price)
-PK: Product
+Product(Product, Price) PK: Product
 
 **3NF tables:** Check for transitive dependencies in each 2NF table.
 
-Customer(OrderID, CustomerName, CustomerCity): `CustomerCity` depends on `CustomerName`Not on `OrderID`. This is a transitive dependency. Split into:
+Customer(OrderID, CustomerName, CustomerCity): `CustomerCity` depends on `CustomerName`Not on
+`OrderID`. This is a transitive dependency. Split into:
 
-CustomerOrder(OrderID, CustomerID)
-PK: OrderID, FK: CustomerID references Customer
+CustomerOrder(OrderID, CustomerID) PK: OrderID, FK: CustomerID references Customer
 
-Customer(CustomerID, CustomerName, CustomerCity)
-PK: CustomerID
+Customer(CustomerID, CustomerName, CustomerCity) PK: CustomerID
 
 Final 3NF schema:
 
@@ -201,13 +222,23 @@ Final 3NF schema:
 - OrderLine(OrderID FK, Product FK, Quantity) -- PK: (OrderID, Product)
 
 (c) **Anomalies eliminated:**
-- **2NF eliminates:** Update anomaly (changing Smith's city requires updating multiple rows), insertion anomaly (cannot add a customer without an order), deletion anomaly (deleting an order may lose customer info).
-- **3NF eliminates:** Transitive update anomaly (if Smith moves, update only one row in Customer table, not multiple Order rows). Partial dependency anomaly: changing a product price only updates the Product table, not every order containing that product.
+
+- **2NF eliminates:** Update anomaly (changing Smith's city requires updating multiple rows),
+  insertion anomaly (cannot add a customer without an order), deletion anomaly (deleting an order
+  may lose customer info).
+- **3NF eliminates:** Transitive update anomaly (if Smith moves, update only one row in Customer
+  table, not multiple Order rows). Partial dependency anomaly: changing a product price only updates
+  the Product table, not every order containing that product.
 
 ## Integration Tests
 
 ### IT-1: OOP and File Handling (with Software Engineering)
-**Question:** Design a `StudentRecordManager` class that: (a) reads student data from a CSV file, (b) stores records in a suitable data structure, (c) supports adding, deleting, and searching by student ID, (d) writes modified records back to the CSV file. Write pseudocode and explain which testing strategy (black-box or white-box) is more appropriate for each method, with specific test cases.
+
+**Question:** Design a `StudentRecordManager` class that: (a) reads student data from a CSV file,
+(b) stores records in a suitable data structure, (c) supports adding, deleting, and searching by
+student ID, (d) writes modified records back to the CSV file. Write pseudocode and explain which
+testing strategy (black-box or white-box) is more appropriate for each method, with specific test
+cases.
 
 **Solution:**
 
@@ -258,33 +289,44 @@ class StudentRecordManager:
 **Testing strategies:**
 
 `load()` -- **Black-box testing** with equivalence partitioning:
+
 - Test with empty file (boundary case)
 - Test with valid file containing 0, 1, many records
 - Test with malformed CSV (missing fields, wrong data types)
 
 `add()` -- **Black-box testing:**
+
 - Add new student with valid data $\to$ expect True
 - Add student with existing ID $\to$ expect False
 - Add with empty name $\to$ expect False (validation)
 - Boundary: max length strings for each field
 
 `delete()` -- **White-box testing** (need to verify internal dictionary state):
+
 - Delete existing ID $\to$ verify removed from `__records`
 - Delete non-existent ID $\to$ verify no change to `__records`
 - Delete from empty collection
 
 `search()` -- **Black-box testing:**
+
 - Search for existing ID $\to$ return student data
 - Search for non-existent ID $\to$ return None
 - Case sensitivity of student ID
 
 `save()` -- **Black-box testing:**
+
 - Save after modifications, reload, verify data matches
 - Save to non-existent directory $\to$ expect error handling
 
 ---
+
 ### IT-2: SQL and Programming Integration (with Relational Databases)
-**Question:** A school database has tables: `Student(student_id, name, form_group)``Subject(subject_id, subject_name, teacher)``Enrolment(student_id, subject_id, grade)`. Write Python code using parameterised queries to: (a) enrol a student in a subject, (b) update a student's grade, (c) generate a report showing each student's average grade. Explain why parameterised queries are essential for security.
+
+**Question:** A school database has tables:
+`Student(student_id, name, form_group)``Subject(subject_id, subject_name, teacher)``Enrolment(student_id, subject_id, grade)`.
+Write Python code using parameterised queries to: (a) enrol a student in a subject, (b) update a
+student's grade, (c) generate a report showing each student's average grade. Explain why
+parameterised queries are essential for security.
 
 **Solution:**
 
@@ -329,13 +371,19 @@ name = "'; DROP TABLE Student; --"
 query = f"SELECT * FROM Student WHERE name = '{name}'"
 ```
 
-This would execute: `SELECT * FROM Student WHERE name = ''; DROP TABLE Student; --'`Destroying the table. This is a **SQL injection attack**.
+This would execute: `SELECT * FROM Student WHERE name = ''; DROP TABLE Student; --'`Destroying the
+table. This is a **SQL injection attack**.
 
-Parameterised queries separate the SQL code from the data. The database driver treats parameters strictly as data values, never as executable SQL code. Even if the input contains SQL syntax, it is treated as a literal string value and cannot alter the query structure.
+Parameterised queries separate the SQL code from the data. The database driver treats parameters
+strictly as data values, never as executable SQL code. Even if the input contains SQL syntax, it is
+treated as a literal string value and cannot alter the query structure.
 
 ---
+
 ### IT-3: Recursion and Data Structures (with Algorithms)
-**Question:** Implement a function that checks whether a binary tree is a valid binary search tree. Then, given the following tree, trace through the algorithm:
+
+**Question:** Implement a function that checks whether a binary tree is a valid binary search tree.
+Then, given the following tree, trace through the algorithm:
 
 ```
        10
@@ -370,36 +418,40 @@ def is_valid_bst(node, min_val=float('-inf'), max_val=float('inf')):
 **Trace through the given tree:**
 
 `is_valid_bst(10, -inf, +inf)`:
+
 - $10 \gt -\inf$ and $10 \lt +\inf$: OK
 - Check left: `is_valid_bst(5, -inf, 10)`
- - $5 \gt -\inf$ and $5 \lt 10$: OK
- - Check left: `is_valid_bst(3, -inf, 5)`
- - $3 \gt -\inf$ and $3 \lt 5$: OK
- - Both children None: True
- - Check right: `is_valid_bst(7, 5, 10)`
- - $7 \gt 5$ and $7 \lt 10$: OK
- - Left is None: True
- - Check right: `is_valid_bst(8, 7, 10)`
- - $8 \gt 7$ and $8 \lt 10$: OK
- - Both children None: True
- - True
- - True
+- $5 \gt -\inf$ and $5 \lt 10$: OK
+- Check left: `is_valid_bst(3, -inf, 5)`
+- $3 \gt -\inf$ and $3 \lt 5$: OK
+- Both children None: True
+- Check right: `is_valid_bst(7, 5, 10)`
+- $7 \gt 5$ and $7 \lt 10$: OK
+- Left is None: True
+- Check right: `is_valid_bst(8, 7, 10)`
+- $8 \gt 7$ and $8 \lt 10$: OK
+- Both children None: True
+- True
+- True
 - Check right: `is_valid_bst(15, 10, +inf)`
- - $15 \gt 10$ and $15 \lt +\inf$: OK
- - Check left: `is_valid_bst(12, 10, 15)`
- - $12 \gt 10$ and $12 \lt 15$: OK
- - Both children None: True
- - Check right: `is_valid_bst(20, 15, +inf)`
- - $20 \gt 15$ and $20 \lt +\inf$: OK
- - Both children None: True
- - True
+- $15 \gt 10$ and $15 \lt +\inf$: OK
+- Check left: `is_valid_bst(12, 10, 15)`
+- $12 \gt 10$ and $12 \lt 15$: OK
+- Both children None: True
+- Check right: `is_valid_bst(20, 15, +inf)`
+- $20 \gt 15$ and $20 \lt +\inf$: OK
+- Both children None: True
+- True
 - True
 
-**Result: This IS a valid BST.** Every node's value is within the valid range defined by its ancestors. Specifically:
+**Result: This IS a valid BST.** Every node's value is within the valid range defined by its
+ancestors. Specifically:
+
 - All nodes in the left subtree of 10 are $\lt 10$
 - All nodes in the right subtree of 10 are $\gt 10$
 - All nodes in the left subtree of 5 are $\lt 5$
 - All nodes in the right subtree of 5 are between 5 and 10
 - Node 8 (right child of 7) is between 7 and 10: valid
 
-Time complexity: $O(n)$ -- each node is visited exactly once. Space complexity: $O(h)$ where $h$ is the tree height (recursion stack depth).
+Time complexity: $O(n)$ -- each node is visited exactly once. Space complexity: $O(h)$ where $h$ is
+the tree height (recursion stack depth).

@@ -1,6 +1,8 @@
 ---
 title: Quadratics
-description: "A-Level Mathematics notes on Quadratics: Board Coverage; 1. The Quadratic Function; 2. Completing the Square; 3. The Quadratic Formula."
+description:
+  'A-Level Mathematics notes on Quadratics: Board Coverage; 1. The Quadratic Function; 2. Completing
+  the Square; 3. The Quadratic Formula.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Maths
@@ -9,14 +11,15 @@ categories:
   - Maths
 slug: quadratics
 ---
+
 ## Board Coverage
 
-| Board | Paper | Notes |
+| Board      | Paper   | Notes                                             |
 | ---------- | ------- | ------------------------------------------------- |
-| AQA | Paper 1 | Completing the square, discriminant, inequalities |
-| Edexcel | P1 | Same core content |
-| OCR (A) | Paper 1 | Includes set notation for solution sets |
-| CIE (9709) | P1 | Quadratic equations, discriminant, inequalities |
+| AQA        | Paper 1 | Completing the square, discriminant, inequalities |
+| Edexcel    | P1      | Same core content                                 |
+| OCR (A)    | Paper 1 | Includes set notation for solution sets           |
+| CIE (9709) | P1      | Quadratic equations, discriminant, inequalities   |
 
 <hr />
 
@@ -71,13 +74,13 @@ Ax^2 + bx + c &= a\left[\left(x + \frac{b}{2a}\right)^2 - \frac{b^2}{4a^2}\right
 \end{aligned}
 $$
 
-Setting $p = -\frac{b}{2a}$ and $q = \frac{4ac - b^2}{4a}$We have
-$ax^2 + bx + c = a(x - p)^2 + q$. $\blacksquare$
+Setting $p = -\frac{b}{2a}$ and $q = \frac{4ac - b^2}{4a}$We have $ax^2 + bx + c = a(x - p)^2 + q$.
+$\blacksquare$
 
 _Intuition (Geometric)._ Consider the expression $x^2 + bx$. This represents the area of a square of
 Side $x$ plus a rectangle of dimensions $x \times b$. We split the rectangle into two strips of
-$x \times \frac{b}{2}$And rearrange to form an L-shape. The "missing corner" to complete the
-Larger square is a small square of side $\frac{b}{2}$With area
+$x \times \frac{b}{2}$And rearrange to form an L-shape. The "missing corner" to complete the Larger
+square is a small square of side $\frac{b}{2}$With area
 $\left(\frac{b}{2}\right)^2 = \frac{b^2}{4}$. We add and subtract this to preserve equality:
 
 $$x^2 + bx = \left(x + \frac{b}{2}\right)^2 - \frac{b^2}{4}$$
@@ -95,8 +98,7 @@ $$
 \end{aligned}
 $$
 
-The vertex is $(3, 4)$And since the coefficient of $(x-3)^2$ is positive, the minimum value is
-$4$.
+The vertex is $(3, 4)$And since the coefficient of $(x-3)^2$ is positive, the minimum value is $4$.
 
 </details>
 
@@ -126,15 +128,11 @@ _Intuition._ The quadratic formula is nothing more than completing the square in
 Form. Every step is reversible, so the formula is necessary and sufficient: it gives _all_ solutions
 And no extraneous ones.
 
-:::info
-Edexcel provides the quadratic formula in the formula booklet. AQA and OCR (A) do not — you
-Must memorise it.
-:::
+:::info Edexcel provides the quadratic formula in the formula booklet. AQA and OCR (A) do not — you
+Must memorise it. :::
 
-:::tip
-Before applying the formula, check whether the equation can be solved more by
-Factorisation. Always check the discriminant first.
-:::
+:::tip Before applying the formula, check whether the equation can be solved more by Factorisation.
+Always check the discriminant first. :::
 
 <hr />
 
@@ -146,18 +144,19 @@ $$\Delta = b^2 - 4ac$$
 
 **Theorem.** The nature of the roots of $ax^2 + bx + c = 0$ is determined by the discriminant:
 
-| Condition | Number of Roots | Nature of Roots |
+| Condition    | Number of Roots | Nature of Roots                             |
 | ------------ | --------------- | ------------------------------------------- |
-| $\Delta > 0$ | 2 | Two distinct real roots |
-| $\Delta = 0$ | 1 | One repeated real root |
-| $\Delta < 0$ | 0 | No real roots (two complex conjugate roots) |
+| $\Delta > 0$ | 2               | Two distinct real roots                     |
+| $\Delta = 0$ | 1               | One repeated real root                      |
+| $\Delta < 0$ | 0               | No real roots (two complex conjugate roots) |
 
-_Proof._ From the quadratic formula, the roots are $x = \frac◆LB◆-b \pm \sqrt{\Delta}◆RB◆◆LB◆2a◆RB◆$.
+_Proof._ From the quadratic formula, the roots are
+$x = \frac◆LB◆-b \pm \sqrt{\Delta}◆RB◆◆LB◆2a◆RB◆$.
 
 - If $\Delta > 0$: $\sqrt◆LB◆\Delta◆RB◆$ is a positive real number, giving two distinct real values.
 - If $\Delta = 0$: both roots equal $\frac{-b}{2a}$A single repeated root.
-- If $\Delta < 0$: $\sqrt◆LB◆\Delta◆RB◆$ is not a real number, so no real roots exist. (Complex roots
- exist but are beyond this course.) $\blacksquare$
+- If $\Delta < 0$: $\sqrt◆LB◆\Delta◆RB◆$ is not a real number, so no real roots exist. (Complex
+  roots exist but are beyond this course.) $\blacksquare$
 
 <details>
 <summary>Example</summary>
@@ -178,33 +177,34 @@ $$
 The discriminant directly determines the position of the parabola relative to the $x$-axis.
 
 **Theorem (Discriminant and Graph Position).** Let $f(x) = ax^2 + bx + c$ with $a \neq 0$. In
-Completed-square form, the extremum value is $f\left(-\frac{b}{2a}\right) = -\frac◆LB◆\Delta◆RB◆◆LB◆4a◆RB◆$.
-Therefore:
+Completed-square form, the extremum value is
+$f\left(-\frac{b}{2a}\right) = -\frac◆LB◆\Delta◆RB◆◆LB◆4a◆RB◆$. Therefore:
 
 - $\Delta > 0$: the extremum lies on the opposite side of the $x$-axis from the direction the
- parabola opens, so the graph crosses the $x$-axis at two distinct points.
+  parabola opens, so the graph crosses the $x$-axis at two distinct points.
 - $\Delta = 0$: the vertex lies on the $x$-axis; the graph touches the axis at exactly one point.
 - $\Delta < 0$: the vertex lies on the same side of the $x$-axis as the direction the parabola
- opens, so the graph never meets the axis.
+  opens, so the graph never meets the axis.
 
 Furthermore, when $\Delta < 0$:
 
-| Condition | Conclusion |
+| Condition                | Conclusion                                                      |
 | ------------------------ | --------------------------------------------------------------- |
 | $a > 0$ and $\Delta < 0$ | $f(x) > 0$ for all $x \in \mathbb{R}$ (parabola entirely above) |
 | $a < 0$ and $\Delta < 0$ | $f(x) < 0$ for all $x \in \mathbb{R}$ (parabola entirely below) |
 
 _Proof._ From the completed-square form
-$f(x) = a\left(x + \frac{b}{2a}\right)^2 - \frac◆LB◆\Delta◆RB◆◆LB◆4a◆RB◆$The minimum value (when $a > 0$) or
-Maximum value (when $a < 0$) equals $-\frac◆LB◆\Delta◆RB◆◆LB◆4a◆RB◆$Attained at $x = -\frac{b}{2a}$.
+$f(x) = a\left(x + \frac{b}{2a}\right)^2 - \frac◆LB◆\Delta◆RB◆◆LB◆4a◆RB◆$The minimum value (when
+$a > 0$) or Maximum value (when $a < 0$) equals $-\frac◆LB◆\Delta◆RB◆◆LB◆4a◆RB◆$Attained at
+$x = -\frac{b}{2a}$.
 
-If $a > 0$ and $\Delta > 0$: the minimum is $-\frac◆LB◆\Delta◆RB◆◆LB◆4a◆RB◆ < 0$So the vertex is below the
-$x$-axis. Since the parabola opens upward, it must cross the axis twice.
+If $a > 0$ and $\Delta > 0$: the minimum is $-\frac◆LB◆\Delta◆RB◆◆LB◆4a◆RB◆ < 0$So the vertex is
+below the $x$-axis. Since the parabola opens upward, it must cross the axis twice.
 
 If $a > 0$ and $\Delta = 0$: the minimum is $0$So the vertex sits on the $x$-axis.
 
-If $a > 0$ and $\Delta < 0$: the minimum is $-\frac◆LB◆\Delta◆RB◆◆LB◆4a◆RB◆ > 0$So the vertex is above the
-$x$-axis, and $f(x) \geq -\frac◆LB◆\Delta◆RB◆◆LB◆4a◆RB◆ > 0$ for all $x$.
+If $a > 0$ and $\Delta < 0$: the minimum is $-\frac◆LB◆\Delta◆RB◆◆LB◆4a◆RB◆ > 0$So the vertex is
+above the $x$-axis, and $f(x) \geq -\frac◆LB◆\Delta◆RB◆◆LB◆4a◆RB◆ > 0$ for all $x$.
 
 The $a < 0$ cases follow by symmetry (or by applying the above to $-f(x)$). $\blacksquare$
 
@@ -217,16 +217,16 @@ Quadratic factors as $a(x - \alpha)^2 = 0$.
 **Theorem (Tangent at the Vertex).** If $f(x) = ax^2 + bx + c$ has a repeated root at $\alpha$Then
 The tangent to $y = f(x)$ at $x = \alpha$ is the line $y = 0$ (the $x$-axis itself).
 
-_Proof._ Since $\alpha$ is a repeated root, $f(\alpha) = 0$. The derivative is $f'(x) = 2ax + b$
-And at the repeated root:
+_Proof._ Since $\alpha$ is a repeated root, $f(\alpha) = 0$. The derivative is $f'(x) = 2ax + b$ And
+at the repeated root:
 
 $$f'(\alpha) = 2a\left(-\frac{b}{2a}\right) + b = -b + b = 0$$
 
 The tangent at $x = \alpha$ is $y - f(\alpha) = f'(\alpha)(x - \alpha)$Which gives $y = 0$.
 $\blacksquare$
 
-This means that when $\Delta = 0$The $x$-axis is tangent to the parabola at the vertex. The
-Parabola "kisses" the axis at one point and bounces back, rather than crossing it.
+This means that when $\Delta = 0$The $x$-axis is tangent to the parabola at the vertex. The Parabola
+"kisses" the axis at one point and bounces back, rather than crossing it.
 
 <details>
 <summary>Example</summary>
@@ -239,8 +239,8 @@ The repeated root is $x = \frac{12}{8} = \frac{3}{2}$.
 Verification:
 $f\left(\frac{3}{2}\right) = 4\left(\frac{9}{4}\right) - 12\left(\frac{3}{2}\right) + 9 = 9 - 18 + 9 = 0$.
 
-$f'(x) = 8x - 12$So $f'\left(\frac{3}{2}\right) = 12 - 12 = 0$. The tangent at $x = \frac{3}{2}$
-Is $y = 0$Confirming the $x$-axis is tangent to the curve.
+$f'(x) = 8x - 12$So $f'\left(\frac{3}{2}\right) = 12 - 12 = 0$. The tangent at $x = \frac{3}{2}$ Is
+$y = 0$Confirming the $x$-axis is tangent to the curve.
 
 </details>
 
@@ -274,16 +274,14 @@ Quadratic across the real line.
 2. Sketch the parabola (knowing whether $a > 0$ or $a < 0$).
 3. Read off the regions where the quadratic is positive or negative.
 
-:::warning
-A critical error in inequalities: when multiplying or dividing both sides by a negative
+:::warning A critical error in inequalities: when multiplying or dividing both sides by a negative
 Number, you must **reverse** the inequality sign. This is because multiplication by $-1$ is
-Order-reversing: if $a < b$Then $-a > -b$.
-:::
+Order-reversing: if $a < b$Then $-a > -b$. :::
 
 **Theorem.** If $m < 0$ and $a < b$Then $ma > mb$.
 
-_Proof._ From $a < b$We have $b - a > 0$. Since $m < 0$ and $b - a > 0$Their product
-$m(b - a) < 0$. So $mb - ma < 0$Giving $ma > mb$. $\blacksquare$
+_Proof._ From $a < b$We have $b - a > 0$. Since $m < 0$ and $b - a > 0$Their product $m(b - a) < 0$.
+So $mb - ma < 0$Giving $ma > mb$. $\blacksquare$
 
 <details>
 <summary>Example</summary>
@@ -315,11 +313,11 @@ Critical values: $x = \frac{7}{2}$ (numerator zero) and $x = 2$ (denominator zer
 
 Sign analysis:
 
-| Interval | $2x - 7$ | $x - 2$ | Quotient |
+| Interval      | $2x - 7$ | $x - 2$ | Quotient |
 | ------------- | -------- | ------- | -------- |
-| $x < 2$ | $-$ | $-$ | $+$ |
-| $2 < x < 7/2$ | $-$ | $+$ | $-$ |
-| $x > 7/2$ | $+$ | $+$ | $+$ |
+| $x < 2$       | $-$      | $-$     | $+$      |
+| $2 < x < 7/2$ | $-$      | $+$     | $-$      |
+| $x > 7/2$     | $+$      | $+$     | $+$      |
 
 The quotient is $\geq 0$ when $x \leq \frac{7}{2}$ (including equality) but $x \neq 2$.
 
@@ -333,11 +331,11 @@ $x \in (-\infty, 2) \cup \left[\frac{7}{2}, \infty\right)$.
 **Theorem (Sign of a Factored Quadratic).** Let $f(x) = a(x - \alpha)(x - \beta)$ with real roots
 $\alpha < \beta$ and $a \neq 0$. Then the sign of $f$ on each interval is determined by:
 
-| Interval | Sign of $f$ when $a > 0$ | Sign of $f$ when $a < 0$ |
+| Interval             | Sign of $f$ when $a > 0$ | Sign of $f$ when $a < 0$ |
 | -------------------- | ------------------------ | ------------------------ |
-| $x < \alpha$ | $+$ | $-$ |
-| $\alpha < x < \beta$ | $-$ | $+$ |
-| $x > \beta$ | $+$ | $-$ |
+| $x < \alpha$         | $+$                      | $-$                      |
+| $\alpha < x < \beta$ | $-$                      | $+$                      |
+| $x > \beta$          | $+$                      | $-$                      |
 
 _Proof._ Consider $a > 0$. For $x > \beta$: both $(x - \alpha) > 0$ and $(x - \beta) > 0$So
 $f(x) > 0$. For $\alpha < x < \beta$: we have $(x - \alpha) > 0$ but $(x - \beta) < 0$So their
@@ -352,15 +350,12 @@ Non-negative when $a > 0$ and always non-positive when $a < 0$With equality only
 1. Rearrange the inequality to the form $f(x) \gtreqqless 0$.
 2. Factorise $f(x)$ into linear factors if possible.
 3. Identify all critical values: roots of the numerator, zeros of the denominator (if rational), and
- any points where $f$ is undefined.
+   any points where $f$ is undefined.
 4. Draw a sign chart: test one point from each interval between consecutive critical values.
 5. Select the intervals that satisfy the original inequality, respecting strict ($>$$<$) vs
- non-strict ($\geq$$\leq$) conditions.
+   non-strict ($\geq$$\leq$) conditions.
 
-:::tip
-Tip
-**never** include points where the denominator is zero.
-:::
+:::tip Tip **never** include points where the denominator is zero. :::
 
 <details>
 <summary>Example</summary>
@@ -372,11 +367,11 @@ Critical values: $x = \frac{5}{2}$ and $x = -1$.
 
 Sign chart for $g(x) = (2x - 5)(x + 1)$ (then apply the leading minus sign):
 
-| Interval | $2x - 5$ | $x + 1$ | $g(x)$ | $-g(x)$ |
+| Interval       | $2x - 5$ | $x + 1$ | $g(x)$ | $-g(x)$ |
 | -------------- | -------- | ------- | ------ | ------- |
-| $x < -1$ | $-$ | $-$ | $+$ | $-$ |
-| $-1 < x < 5/2$ | $-$ | $+$ | $-$ | $+$ |
-| $x > 5/2$ | $+$ | $+$ | $+$ | $-$ |
+| $x < -1$       | $-$      | $-$     | $+$    | $-$     |
+| $-1 < x < 5/2$ | $-$      | $+$     | $-$    | $+$     |
+| $x > 5/2$      | $+$      | $+$     | $+$    | $-$     |
 
 We need $-g(x) \geq 0$Which occurs for $-1 \leq x \leq \frac{5}{2}$.
 
@@ -414,11 +409,9 @@ $$x = \frac◆LB◆1 \pm \sqrt{1 + 16}◆RB◆◆LB◆2◆RB◆ = \frac◆LB◆1
 The discriminant is positive, confirming two intersection points — which corresponds geometrically
 To the line cutting the parabola twice.
 
-:::tip
-The discriminant of the resulting quadratic tells you the number of intersection points
+:::tip The discriminant of the resulting quadratic tells you the number of intersection points
 Between a line and a parabola: $\Delta > 0$ means 2 intersections, $\Delta = 0$ means tangent,
-$\Delta < 0$ means no intersection.
-:::
+$\Delta < 0$ means no intersection. :::
 
 <hr />
 
@@ -429,24 +422,22 @@ Quadratic in its stated variable, but can be reduced to a quadratic equation by 
 Substitution.
 
 **Theorem.** If an equation can be rewritten as $a\left[g(x)\right]^2 + b\left[g(x)\right] + c = 0$
-For some expression $g(x)$ and constants $a \neq 0, b, c$Then the substitution $z = g(x)$ reduces
-It to the quadratic $az^2 + bz + c = 0$.
+For some expression $g(x)$ and constants $a \neq 0, b, c$Then the substitution $z = g(x)$ reduces It
+to the quadratic $az^2 + bz + c = 0$.
 
 **Common Patterns.**
 
-| Original Form | Substitution | Reduced Equation |
+| Original Form                                                             | Substitution          | Reduced Equation    |
 | ------------------------------------------------------------------------- | --------------------- | ------------------- |
-| $ax^4 + bx^2 + c = 0$ | $z = x^2$ | $az^2 + bz + c = 0$ |
-| $a \cdot p^{2x} + b \cdot p^x + c = 0$ | $z = p^x$ | $az^2 + bz + c = 0$ |
-| $a\cos^2\theta + b\cos\theta + c = 0$ | $z = \cos\theta$ | $az^2 + bz + c = 0$ |
-| $a\sin^2\theta + b\sin\theta + c = 0$ | $z = \sin\theta$ | $az^2 + bz + c = 0$ |
+| $ax^4 + bx^2 + c = 0$                                                     | $z = x^2$             | $az^2 + bz + c = 0$ |
+| $a \cdot p^{2x} + b \cdot p^x + c = 0$                                    | $z = p^x$             | $az^2 + bz + c = 0$ |
+| $a\cos^2\theta + b\cos\theta + c = 0$                                     | $z = \cos\theta$      | $az^2 + bz + c = 0$ |
+| $a\sin^2\theta + b\sin\theta + c = 0$                                     | $z = \sin\theta$      | $az^2 + bz + c = 0$ |
 | $a\left(x + \frac{1}{x}\right)^2 + b\left(x + \frac{1}{x}\right) + c = 0$ | $z = x + \frac{1}{x}$ | $az^2 + bz + c = 0$ |
 
-:::warning
-After solving the reduced quadratic for $z$You must substitute back to find $x$.
-Discard any values of $z$ that are incompatible with the substitution (e.g., $z = x^2$ requires
-$z \geq 0$$z = p^x$ requires $z > 0$). Always verify solutions in the original equation.
-:::
+:::warning After solving the reduced quadratic for $z$You must substitute back to find $x$. Discard
+any values of $z$ that are incompatible with the substitution (e.g., $z = x^2$ requires
+$z \geq 0$$z = p^x$ requires $z > 0$). Always verify solutions in the original equation. :::
 
 <details>
 <summary>Example</summary>
@@ -480,8 +471,8 @@ The equation becomes: $z^2 - 2 + 2z = 0$I.e., $z^2 + 2z - 2 = 0$.
 
 $$z = \frac◆LB◆-2 \pm \sqrt{4 + 8}◆RB◆◆LB◆2◆RB◆ = \frac◆LB◆-2 \pm 2\sqrt{3}◆RB◆◆LB◆2◆RB◆ = -1 \pm \sqrt{3}$$
 
-For each value of $z$Solve $x + \frac{1}{x} = z$I.e., $x^2 - zx + 1 = 0$ by the quadratic
-Formula. This yields four solutions in total (two for each value of $z$), provided each resulting
+For each value of $z$Solve $x + \frac{1}{x} = z$I.e., $x^2 - zx + 1 = 0$ by the quadratic Formula.
+This yields four solutions in total (two for each value of $z$), provided each resulting
 Discriminant is non-negative.
 
 </details>
@@ -525,12 +516,12 @@ Solving the equation.
 **Theorem (Sign of Roots).** Let $\alpha$ and $\beta$ be real roots of $ax^2 + bx + c = 0$ with
 $a > 0$ and $\Delta \geq 0$. Then:
 
-| Condition on Roots | Condition on Coefficients | Via Vieta |
+| Condition on Roots     | Condition on Coefficients | Via Vieta                                  |
 | ---------------------- | ------------------------- | ------------------------------------------ |
-| Both roots positive | $b < 0$ and $c > 0$ | $\alpha + \beta > 0$ and $\alpha\beta > 0$ |
-| Both roots negative | $b > 0$ and $c > 0$ | $\alpha + \beta < 0$ and $\alpha\beta > 0$ |
-| Roots of opposite sign | $c < 0$ | $\alpha\beta < 0$ |
-| One root is zero | $c = 0$ | $\alpha\beta = 0$ |
+| Both roots positive    | $b < 0$ and $c > 0$       | $\alpha + \beta > 0$ and $\alpha\beta > 0$ |
+| Both roots negative    | $b > 0$ and $c > 0$       | $\alpha + \beta < 0$ and $\alpha\beta > 0$ |
+| Roots of opposite sign | $c < 0$                   | $\alpha\beta < 0$                          |
+| One root is zero       | $c = 0$                   | $\alpha\beta = 0$                          |
 
 _Proof._ We prove the first case; the others follow similarly.
 
@@ -613,8 +604,8 @@ The required equation is $x^2 - Sx + P = 0$I.e., $x^2 - 21x + 4 = 0$.
 
 ## 10. Applying Quadratic Theory to Other Equations
 
-Many equations that are not quadratic can be solved by recognising quadratic structure or
-By algebraic manipulation that produces a quadratic.
+Many equations that are not quadratic can be solved by recognising quadratic structure or By
+algebraic manipulation that produces a quadratic.
 
 ### 10.1 Exponential Equations
 
@@ -658,7 +649,8 @@ $\cos\theta = -\frac{1}{2} \implies \theta = \frac◆LB◆2\pi◆RB◆◆LB◆3�
 
 $\cos\theta = 1 \implies \theta = 0, 2\pi$.
 
-Solution: $\theta \in \left\{0, \frac◆LB◆2\pi◆RB◆◆LB◆3◆RB◆, \frac◆LB◆4\pi◆RB◆◆LB◆3◆RB◆, 2\pi\right\}$.
+Solution:
+$\theta \in \left\{0, \frac◆LB◆2\pi◆RB◆◆LB◆3◆RB◆, \frac◆LB◆4\pi◆RB◆◆LB◆3◆RB◆, 2\pi\right\}$.
 
 </details>
 
@@ -667,11 +659,9 @@ Solution: $\theta \in \left\{0, \frac◆LB◆2\pi◆RB◆◆LB◆3◆RB◆, \fra
 Equations involving $\sqrt{f(x)}$ can sometimes be reduced to quadratics by isolating the radical
 And squaring both sides.
 
-:::warning
-Squaring both sides of an equation is **not reversible** — it can introduce extraneous
+:::warning Squaring both sides of an equation is **not reversible** — it can introduce extraneous
 Solutions. You must always substitute every candidate solution back into the **original** equation
-To verify it.
-:::
+To verify it. :::
 
 <details>
 <summary>Example</summary>
@@ -696,8 +686,8 @@ Solution: $x = 4$.
 
 ## 11. Problem Set
 
-**Problem 1.** Write $3x^2 - 12x + 7$ in the form $a(x - p)^2 + q$And hence state the minimum
-Value and the value of $x$ at which it occurs.
+**Problem 1.** Write $3x^2 - 12x + 7$ in the form $a(x - p)^2 + q$And hence state the minimum Value
+and the value of $x$ at which it occurs.
 
 <details>
 <summary>Solution</summary>
@@ -794,8 +784,8 @@ $x = -2$: $y = -3$. Point: $(-2, -3)$.
 
 <hr />
 
-**Problem 6.** The function $f(x) = px^2 + qx + r$ has a minimum value of $-5$ at $x = 2$And
-Passes through the point $(0, 7)$. Find $p$$q$And $r$.
+**Problem 6.** The function $f(x) = px^2 + qx + r$ has a minimum value of $-5$ at $x = 2$And Passes
+through the point $(0, 7)$. Find $p$$q$And $r$.
 
 <details>
 <summary>Solution</summary>
@@ -1006,7 +996,8 @@ $$4k^2 - 24k + 23 = 0$$
 $$k = \frac◆LB◆24 \pm \sqrt{576 - 368}◆RB◆◆LB◆8◆RB◆ = \frac◆LB◆24 \pm \sqrt{208}◆RB◆◆LB◆8◆RB◆ = \frac◆LB◆24 \pm 4\sqrt{13}◆RB◆◆LB◆8◆RB◆ = \frac◆LB◆6 \pm \sqrt{13}◆RB◆◆LB◆2◆RB◆$$
 
 We also require $k \neq 2$ (otherwise the equation is linear, not quadratic). Since
-$\frac◆LB◆6 \pm \sqrt{13}◆RB◆◆LB◆2◆RB◆ \neq 2$ (because $6 \pm \sqrt{13} \neq 4$), both values are valid.
+$\frac◆LB◆6 \pm \sqrt{13}◆RB◆◆LB◆2◆RB◆ \neq 2$ (because $6 \pm \sqrt{13} \neq 4$), both values are
+valid.
 
 </details>
 <b>If you get this wrong, revise:</b> [Discriminant and graph shape](#41-discriminant-and-graph-shape)
@@ -1024,11 +1015,11 @@ Critical values: $x = -4$ and $x = 2$.
 
 Sign chart:
 
-| Interval | $x + 4$ | $x - 2$ | Product |
+| Interval     | $x + 4$ | $x - 2$ | Product |
 | ------------ | ------- | ------- | ------- |
-| $x < -4$ | $-$ | $-$ | $+$ |
-| $-4 < x < 2$ | $+$ | $-$ | $-$ |
-| $x > 2$ | $+$ | $+$ | $+$ |
+| $x < -4$     | $-$     | $-$     | $+$     |
+| $-4 < x < 2$ | $+$     | $-$     | $-$     |
+| $x > 2$      | $+$     | $+$     | $+$     |
 
 The product is $\leq 0$ for $-4 \leq x \leq 2$.
 
@@ -1051,7 +1042,8 @@ $u = \frac{1}{2}$ or $u = -2$.
 
 Since $-1 \leq \sin\theta \leq 1$We reject $u = -2$.
 
-$\sin\theta = \frac{1}{2} \implies \theta = \frac◆LB◆\pi◆RB◆◆LB◆6◆RB◆$ or $\theta = \frac◆LB◆5\pi◆RB◆◆LB◆6◆RB◆$.
+$\sin\theta = \frac{1}{2} \implies \theta = \frac◆LB◆\pi◆RB◆◆LB◆6◆RB◆$ or
+$\theta = \frac◆LB◆5\pi◆RB◆◆LB◆6◆RB◆$.
 
 Solution: $\theta \in \left\{\frac◆LB◆\pi◆RB◆◆LB◆6◆RB◆, \frac◆LB◆5\pi◆RB◆◆LB◆6◆RB◆\right\}$.
 
@@ -1060,14 +1052,15 @@ Solution: $\theta \in \left\{\frac◆LB◆\pi◆RB◆◆LB◆6◆RB◆, \frac◆
 
 ---
 
-:::tip
-Diagnostic Test
-Ready to test your understanding of **Quadratics**? The [diagnostic test](/docs/alevel/maths/diagnostics/diag-quadratics) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
+:::tip Diagnostic Test Ready to test your understanding of **Quadratics**? The
+[diagnostic test](/docs/alevel/maths/diagnostics/diag-quadratics) contains the hardest questions
+within the A-Level specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Quadratics with other pure mathematics topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Quadratics
+with other pure mathematics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and
+building a personal test matrix. :::
 
 ## Common Pitfalls
 

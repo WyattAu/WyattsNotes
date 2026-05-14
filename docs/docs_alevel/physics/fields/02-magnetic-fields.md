@@ -1,6 +1,8 @@
 ---
 title: Magnetic Fields
-description: "A-Level Physics notes on Magnetic Fields: 1. Magnetic Force on a Current-Carrying Wire; Magnetic Force on a Moving Charge."
+description:
+  'A-Level Physics notes on Magnetic Fields: 1. Magnetic Force on a Current-Carrying Wire; Magnetic
+  Force on a Moving Charge.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Physics
@@ -9,11 +11,10 @@ categories:
   - Physics
 slug: magnetic-fields
 ---
+
 ## Magnetic Fields
 
-:::info
-Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4
-:::
+:::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4 :::
 
 <PhetSimulation simulationId="faraday-electromagnetic-lab" title="Faraday's Electromagnetic Lab" />
 
@@ -56,8 +57,8 @@ $$\boxed{1\,\mathrm{T} = 1\,\mathrm{N A}^{-1}\,\mathrm{m}^{-1}}$$
 
 ### Magnetic Force on a Moving Charge
 
-Since $I = dq/dt$And $n$ charges each of charge $q$ move through length $l$ in time $t$:
-$I = nq/t$ for one charge $I = q/t$ where $t = l/v$.
+Since $I = dq/dt$And $n$ charges each of charge $q$ move through length $l$ in time $t$: $I = nq/t$
+for one charge $I = q/t$ where $t = l/v$.
 
 $$F = B \cdot \frac{q}{t} \cdot l \cdot \sin\theta = B \cdot q \cdot \frac{l}{t} \cdot \sin\theta$$
 
@@ -193,11 +194,9 @@ $$\boxed{\mathcal{E} = \mathcal{E}_0\sin(\omega t)}$$
 
 Where the peak e.m.f. Is $\mathcal{E}_0 = NBA\omega$.
 
-:::tip
-Exam Technique When asked about Lenz's law, always describe what the induced current does
+:::tip Exam Technique When asked about Lenz's law, always describe what the induced current does
 (creates a field to oppose the change) and identify the direction of the induced current using the
-Right-hand grip rule.
-:::
+Right-hand grip rule. :::
 
 ## 6. Biot-Savart Law and Ampere's Law
 
@@ -210,18 +209,16 @@ $I\,d\mathbf{l}$:
 $$\boxed{d\mathbf{B} = \frac◆LB◆\mu_0◆RB◆◆LB◆4\pi◆RB◆\frac◆LB◆I\,d\mathbf{l} \times \hat{\mathbf{r}}◆RB◆◆LB◆r^2◆RB◆}$$
 
 Where $\mu_0 = 4\pi \times 10^{-7}$ T m A$^{-1}$ is the permeability of free space, $d\mathbf{l}$
-Points along the current, $\hat{\mathbf{r}}$ is the unit vector from the element to $\mathbf{P}$
-And $r$ is the distance. The total field is:
+Points along the current, $\hat{\mathbf{r}}$ is the unit vector from the element to $\mathbf{P}$ And
+$r$ is the distance. The total field is:
 
 $$\mathbf{B} = \frac◆LB◆\mu_0 I◆RB◆◆LB◆4\pi◆RB◆\int \frac◆LB◆d\mathbf{l} \times \hat{\mathbf{r}}◆RB◆◆LB◆r^2◆RB◆$$
 
 The direction of $d\mathbf{B}$ follows from the right-hand rule on
 $d\mathbf{l} \times \hat{\mathbf{r}}$.
 
-:::warning
-Common Pitfall: the cross-product order is $d\mathbf{l} \times \hat{\mathbf{r}}$Not
-$\hat{\mathbf{r}} \times d\mathbf{l}$. Reversing the order flips the field direction.
-:::
+:::warning Common Pitfall: the cross-product order is $d\mathbf{l} \times \hat{\mathbf{r}}$Not
+$\hat{\mathbf{r}} \times d\mathbf{l}$. Reversing the order flips the field direction. :::
 
 ### Field at the Centre of a Circular Loop
 
@@ -284,8 +281,8 @@ Where $n = N/L$ is the number of turns per unit length. The field is uniform ins
 Of the solenoid's radius (for a long solenoid).
 
 **Toroid.** A solenoid bent into a circle. Ampere's law with a circular path of radius $r$ inside
-The toroid gives $B = \mu_0 NI/(2\pi r)$Where $N$ is the total number of turns. Unlike the
-Solenoid, the field varies with $r$.
+The toroid gives $B = \mu_0 NI/(2\pi r)$Where $N$ is the total number of turns. Unlike the Solenoid,
+the field varies with $r$.
 
 ## 7. Force Between Two Parallel Wires
 
@@ -310,11 +307,8 @@ Left-hand rule to wire 2 for the force direction:
 - **Same-direction currents** $\to$ attractive force
 - **Opposite-direction currents** $\to$ repulsive force
 
-:::tip
-Tip
-Currents repel. Think of it as two parallel beams of particles moving together (attract) versus
-Head-on (repel).
-:::
+:::tip Tip Currents repel. Think of it as two parallel beams of particles moving together (attract)
+versus Head-on (repel). :::
 
 ### Definition of the Ampere
 
@@ -363,23 +357,20 @@ That drifts at $\mathbf{v}_d = \mathbf{E} \times \mathbf{B}/B^2$ perpendicular t
 - $v = E/B$: straight line (velocity selector).
 - $v \gt E/B$: **prolate cycloid** (loops with self-intersections).
 
-:::warning
-Warning
-Velocity and charge. Even a stationary particle will drift at this speed. The drift direction is
-Always $\mathbf{E} \times \mathbf{B}$Perpendicular to both fields.
-:::
+:::warning Warning Velocity and charge. Even a stationary particle will drift at this speed. The
+drift direction is Always $\mathbf{E} \times \mathbf{B}$Perpendicular to both fields. :::
 
 ### $\mathbf{E} \parallel \mathbf{B}$: Accelerating Helix
 
-When $\mathbf{E}$ is parallel to $\mathbf{B}$The perpendicular component of velocity still
-Produces circular motion, but the parallel component is accelerated by $E$:
+When $\mathbf{E}$ is parallel to $\mathbf{B}$The perpendicular component of velocity still Produces
+circular motion, but the parallel component is accelerated by $E$:
 
 $$v_{\parallel}(t) = v_{0\parallel} + \frac{qE}{m}t$$
 
 The result is a helix whose pitch increases linearly with time. The circular radius and period are
 Unchanged.
 
-### Helical Motion 
+### Helical Motion
 
 A particle entering a uniform $\mathbf{B}$ field at angle $\theta$ to the field lines has:
 
@@ -408,15 +399,15 @@ Material).
 **Applications:**
 
 - **Electromagnetic braking** — trains, roller coasters, industrial machinery. Braking force is
- proportional to speed (no friction, no wear, no fade).
+  proportional to speed (no friction, no wear, no fade).
 - **Induction heating** — cooktops, metal hardening, brazing. High-frequency AC induces eddy
- currents that heat the conductor directly.
+  currents that heat the conductor directly.
 
 **Problems:**
 
 - **Energy loss in transformers** — eddy currents in the iron core dissipate power.
 - **Mitigation:** laminated cores (thin insulated sheets break up current loops) or ferrite cores
- (high resistivity).
+  (high resistivity).
 
 ### Self-Induction
 
@@ -459,11 +450,9 @@ The time constant $\tau = L/R$ has the same physical meaning as $\tau = RC$ in c
 After one time constant, the current reaches $1 - e^{-1} \approx 63\%$ of its final value; after
 $5\tau$It is within 1%.
 
-:::tip
-Exam Technique The differential equation $L\,dI/dt + IR = V$ is identical in form to
+:::tip Exam Technique The differential equation $L\,dI/dt + IR = V$ is identical in form to
 $RC\,dV_C/dt + V_C = V$. Both are first-order linear ODEs with exponential solutions. Use the same
-Problem-solving framework for both.
-:::
+Problem-solving framework for both. :::
 
 ### Transformers
 
@@ -506,15 +495,15 @@ $I_p = I_s \times N_s/N_p = 5.0 \times 100/2000 = 0.25$ A.
 A mass spectrometer separates ions by their mass-to-charge ratio. The essential stages are:
 
 1. **Ionisation** — atoms are ionised (e.g. By electron bombardment), producing singly charged
- positive ions.
-2. **Acceleration** — ions are accelerated through a potential difference $V$Gaining kinetic
- energy $\frac{1}{2}mv^2 = qV$.
+   positive ions.
+2. **Acceleration** — ions are accelerated through a potential difference $V$Gaining kinetic energy
+   $\frac{1}{2}mv^2 = qV$.
 3. **Velocity selection** — crossed $\mathbf{E}$ and $\mathbf{B}$ fields select ions with $v = E/B$
- (Section 3).
+   (Section 3).
 4. **Deflection** — selected ions enter a region with a uniform $\mathbf{B}$ field only. They follow
- semicircular paths of radius $r = mv/(Bq)$.
+   semicircular paths of radius $r = mv/(Bq)$.
 5. **Detection** — ions strike a detector (photographic plate or electronic). The impact position
- depends on $r$Hence on $m$.
+   depends on $r$Hence on $m$.
 
 ### Mass Separation
 
@@ -611,8 +600,8 @@ A proton and an alpha particle enter a magnetic field with the same velocity. Th
 Twice the charge and four times the mass of the proton. Compare the radii of their circular paths.
 
 **Answer.** $r = mv/(Bq)$.
-$r_\alpha/r_p = \frac◆LB◆(4m_p)v/(B \cdot 2e)◆RB◆◆LB◆m_p v/(Be)◆RB◆ = \frac{4}{2} = 2$. The alpha particle has
-Twice the radius.
+$r_\alpha/r_p = \frac◆LB◆(4m_p)v/(B \cdot 2e)◆RB◆◆LB◆m_p v/(Be)◆RB◆ = \frac{4}{2} = 2$. The alpha
+particle has Twice the radius.
 
 <b>If you get this wrong, revise:</b>
 [Circular Motion in a Magnetic Field](#2-circular-motion-in-a-magnetic-field)
@@ -681,7 +670,9 @@ A magnet is pushed into a coil of 50 turns, and the magnetic flux through each t
 $4.0 \times 10^{-3}$ Wb in 0.10 s. Calculate the average induced e.m.f. And explain which end of the
 Coil acts as a north pole.
 
-**Answer.** $\mathcal{E} = N\frac◆LB◆d\Phi◆RB◆◆LB◆dt◆RB◆ = 50 \times \frac◆LB◆4.0 \times 10^{-3}◆RB◆◆LB◆0.10◆RB◆ = 2.0$ V.
+**Answer.**
+$\mathcal{E} = N\frac◆LB◆d\Phi◆RB◆◆LB◆dt◆RB◆ = 50 \times \frac◆LB◆4.0 \times 10^{-3}◆RB◆◆LB◆0.10◆RB◆ = 2.0$
+V.
 
 By Lenz's law, the induced current opposes the increasing flux. If the magnet's north pole is being
 Pushed in, the coil end facing the magnet becomes a north pole (to repel the magnet), so current
@@ -828,28 +819,39 @@ Cm.
 
 </details>
 
-
 ---
 
-:::tip
-Diagnostic Test
-Ready to test your understanding of **Magnetic Fields**? The [diagnostic test](/docs/alevel/physics/diagnostics/diag-magnetic-fields) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
+:::tip Diagnostic Test Ready to test your understanding of **Magnetic Fields**? The
+[diagnostic test](/docs/alevel/physics/diagnostics/diag-magnetic-fields) contains the hardest
+questions within the A-Level specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Magnetic Fields with other physics topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Magnetic
+Fields with other physics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on
+self-marking and building a personal test matrix. :::
 
-:::danger
-Common Pitfalls
+:::danger Common Pitfalls
 
-- **Using the wrong hand rule:** Fleming's LEFT-hand rule gives the direction of force on a CONVENTIONAL current (positive to negative). Fleming's RIGHT-hand rule gives the direction of induced current. Using the left hand for electromagnetic induction or the right hand for the motor effect will give the wrong answer.
+- **Using the wrong hand rule:** Fleming's LEFT-hand rule gives the direction of force on a
+  CONVENTIONAL current (positive to negative). Fleming's RIGHT-hand rule gives the direction of
+  induced current. Using the left hand for electromagnetic induction or the right hand for the motor
+  effect will give the wrong answer.
 
-- **Forgetting that magnetic force does no work:** The magnetic force on a charged particle (F = qvB sin(theta)) is always perpendicular to the velocity. Since force is perpendicular to displacement, the work done is zero and the kinetic energy of the particle does not change. The magnetic force changes direction but not speed.
+- **Forgetting that magnetic force does no work:** The magnetic force on a charged particle (F = qvB
+  sin(theta)) is always perpendicular to the velocity. Since force is perpendicular to displacement,
+  the work done is zero and the kinetic energy of the particle does not change. The magnetic force
+  changes direction but not speed.
 
-- **Confusing the angle in F = BIl sin(theta):** The angle theta is the angle between the CURRENT DIRECTION and the FIELD DIRECTION, not the angle between the wire and some other reference. If the wire is perpendicular to the field, theta = 90 degrees and sin(theta) = 1 (maximum force). If parallel, theta = 0 and the force is zero.
+- **Confusing the angle in F = BIl sin(theta):** The angle theta is the angle between the CURRENT
+  DIRECTION and the FIELD DIRECTION, not the angle between the wire and some other reference. If the
+  wire is perpendicular to the field, theta = 90 degrees and sin(theta) = 1 (maximum force). If
+  parallel, theta = 0 and the force is zero.
 
-- **Not understanding why charged particles move in circles:** A charged particle entering a uniform magnetic field perpendicular to its velocity experiences a force perpendicular to both v and B. This centripetal force causes circular motion with radius r = mv/(qB). The particle does NOT slow down -- the magnetic force only changes direction.
+- **Not understanding why charged particles move in circles:** A charged particle entering a uniform
+  magnetic field perpendicular to its velocity experiences a force perpendicular to both v and B.
+  This centripetal force causes circular motion with radius r = mv/(qB). The particle does NOT slow
+  down -- the magnetic force only changes direction.
 
 :::
 

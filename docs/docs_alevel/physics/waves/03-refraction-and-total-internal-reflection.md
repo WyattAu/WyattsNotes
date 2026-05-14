@@ -1,6 +1,8 @@
 ---
 title: Refraction and Total Internal Reflection
-description: "A-Level Physics notes on Refraction and Total Internal Reflection: 1. Refractive Index; Dispersion and the Refractive Index; 2. Snell's Law."
+description:
+  "A-Level Physics notes on Refraction and Total Internal Reflection: 1. Refractive Index;
+  Dispersion and the Refractive Index; 2. Snell's Law."
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Physics
@@ -9,11 +11,10 @@ categories:
   - Physics
 slug: refraction-and-total-internal-reflection
 ---
+
 ## Refraction and Total Internal Reflection
 
-:::info
-Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2
-:::
+:::info Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2 :::
 
 <PhetSimulation simulationId="bending-light" title="Bending Light" />
 
@@ -30,10 +31,10 @@ Since $v < c$ for all material media, $n > 1$. The refractive index is a dimensi
 
 | Material | Refractive Index |
 | -------- | ---------------- |
-| Air | 1.00 |
-| Water | 1.33 |
-| Glass | 1.50 |
-| Diamond | 2.42 |
+| Air      | 1.00             |
+| Water    | 1.33             |
+| Glass    | 1.50             |
+| Diamond  | 2.42             |
 
 **Intuition.** Light slows down in a denser medium because the electromagnetic wave interacts with
 The electrons in the material. The denser the material (more electrons per unit volume), the slower
@@ -41,9 +42,9 @@ The light, and the higher the refractive index.
 
 ### Dispersion and the Refractive Index
 
-The refractive index of a material is not constant — on the wavelength of light. Shorter
-Wavelengths (blue/violet) are refracted more than longer wavelengths (red). This is because shorter
-Wavelengths interact more strongly with the electrons in the material.
+The refractive index of a material is not constant — on the wavelength of light. Shorter Wavelengths
+(blue/violet) are refracted more than longer wavelengths (red). This is because shorter Wavelengths
+interact more strongly with the electrons in the material.
 
 For glass, a typical empirical relationship (Cauchy's equation) is:
 
@@ -53,9 +54,7 @@ Where $A$ and $B$ are constants specific to the material and $\lambda$ is the wa
 This wavelength dependence is what causes white light to separate into a spectrum when passing
 Through a prism.
 
-:::info
-Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2
-:::
+:::info Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2 :::
 
 **Application: Diamond Cutting.** Diamond has an exceptionally high refractive index ($n = 2.42$)
 And large dispersion. Jewellers cut diamonds with many angled facets so that light entering the top
@@ -63,8 +62,8 @@ Of the diamond strikes the internal facets at angles well above the critical ang
 ($\theta_c = 24.4^\circ$). The light is trapped inside by repeated TIR and eventually exits through
 The top, directing brightness back towards the viewer. The large dispersion also splits white light
 Into a rainbow of colours, creating the characteristic "fire" of a diamond. A well-cut diamond has a
-Specific facet geometry ( 57 facets in a round brilliant cut) optimised so that light
-Entering through the crown always hits pavilion facets at angles exceeding the critical angle.
+Specific facet geometry ( 57 facets in a round brilliant cut) optimised so that light Entering
+through the crown always hits pavilion facets at angles exceeding the critical angle.
 
 ## 2. Snell's Law
 
@@ -139,10 +138,8 @@ Displacement $d$ depends on the thickness $t$ of the slab:
 
 $$d = t \cdot \sin\theta_1 \left(1 - \frac◆LB◆\cos\theta_1◆RB◆◆LB◆\sqrt{n^2 - \sin^2\theta_1}◆RB◆\right)$$
 
-:::info
-Board Coverage AQA Paper 2 (required practical on refraction) | Edexcel CP2 | OCR (A) Paper
-2 (core practical) | CIE P2
-:::
+:::info Board Coverage AQA Paper 2 (required practical on refraction) | Edexcel CP2 | OCR (A) Paper
+2 (core practical) | CIE P2 :::
 
 ## 3. Total Internal Reflection
 
@@ -171,11 +168,8 @@ $\sin\theta_2$ can exceed 1 for sufficiently large $\theta_1$Which is impossible
 Entirely reflected. If $n_1 < n_2$Then $\frac{n_1}{n_2} < 1$ and
 $\sin\theta_2 < \sin\theta_1 \leq 1$ for all $\theta_1$So refraction always occurs.
 
-:::warning
-Warning
-Medium. Light going from air into glass can never undergo TIR, no matter how large the angle of
-Incidence.
-:::
+:::warning Warning Medium. Light going from air into glass can never undergo TIR, no matter how
+large the angle of Incidence. :::
 
 <details>
 <summary>Example: Critical Angle of Glass</summary>
@@ -214,13 +208,11 @@ Where $\delta$ is the penetration depth and $z$ is the distance into the second 
 Evanescent wave is exploited in technologies such as:
 
 - **Frustrated total internal reflection**: placing another surface close to the boundary allows the
- evanescent wave to "tunnel" across the gap, converting TIR back into transmission.
+  evanescent wave to "tunnel" across the gap, converting TIR back into transmission.
 - **Optical fibre sensors**: chemicals or biological molecules near the fibre surface can interact
- with the evanescent wave, changing the propagation and allowing detection.
+  with the evanescent wave, changing the propagation and allowing detection.
 
-:::info
-Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2
-:::
+:::info Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2 :::
 
 ## 4. Optical Fibres
 
@@ -259,16 +251,14 @@ Two main effects degrade the signal in optical fibres:
 
 1. **Absorption**: some light energy is absorbed by the fibre material, reducing signal intensity.
 2. **Dispersion**: different wavelengths travel at slightly different speeds, causing pulse
- broadening.
- - **Material dispersion**: the refractive index depends on wavelength.
- - **Modal dispersion**: rays entering at different angles travel different path lengths (in
- multimode fibres).
+   broadening.
 
-:::tip
-Tip
-Higher bandwidth, no electromagnetic interference, lighter weight, no electrical sparking risk,
-Lower signal loss over long distances.
-:::
+- **Material dispersion**: the refractive index depends on wavelength.
+- **Modal dispersion**: rays entering at different angles travel different path lengths (in
+  multimode fibres).
+
+:::tip Tip Higher bandwidth, no electromagnetic interference, lighter weight, no electrical sparking
+risk, Lower signal loss over long distances. :::
 
 ### Types of Optical Fibre
 
@@ -284,16 +274,15 @@ Rays that travel further from the axis pass through regions of lower refractive 
 Travel faster. This compensates for the longer path length, significantly reducing modal dispersion.
 Graded-index fibres are used for medium-distance links (e.g., LANs, cable television).
 
-**Single-mode fibre.** The core is extremely narrow ( 8 to 10 micrometres), so only one
-Mode (the axial ray) can propagate. This eliminates modal dispersion entirely. Single-mode fibres
-Are used for long-distance telecommunications (e.g., undersea cables spanning thousands of
-Kilometres).
+**Single-mode fibre.** The core is extremely narrow ( 8 to 10 micrometres), so only one Mode (the
+axial ray) can propagate. This eliminates modal dispersion entirely. Single-mode fibres Are used for
+long-distance telecommunications (e.g., undersea cables spanning thousands of Kilometres).
 
-| Fibre Type | Core Diameter | Dispersion | Typical Use |
+| Fibre Type             | Core Diameter       | Dispersion               | Typical Use            |
 | ---------------------- | ------------------- | ------------------------ | ---------------------- |
-| Step-index multimode | 50-200 micrometres | High (modal) | Short distance |
-| Graded-index multimode | 50-62.5 micrometres | Moderate | LANs, CCTV |
-| Single-mode | 8-10 micrometres | Very low (material only) | Long-distance telecoms |
+| Step-index multimode   | 50-200 micrometres  | High (modal)             | Short distance         |
+| Graded-index multimode | 50-62.5 micrometres | Moderate                 | LANs, CCTV             |
+| Single-mode            | 8-10 micrometres    | Very low (material only) | Long-distance telecoms |
 
 ### Applications of TIR and Optical Fibres
 
@@ -306,15 +295,12 @@ Neighbouring fibres, maintaining image quality.
 
 **Periscopes.** Submarine periscopes and some military periscopes use prisms rather than mirrors. A
 Right-angled triangular prism arranged so that light enters perpendicular to the hypotenuse face
-Hits the two shorter faces at 45°. Since glass has a critical angle of about 42°, the 45°
-Angle exceeds the critical angle, producing TIR. Prism periscopes are preferred over mirror
-Periscopes because TIR gives 100% reflection (no absorption by a metallic coating), and the
-Reflective surface is protected inside the glass, making it resistant to scratches and tarnishing.
+Hits the two shorter faces at 45°. Since glass has a critical angle of about 42°, the 45° Angle
+exceeds the critical angle, producing TIR. Prism periscopes are preferred over mirror Periscopes
+because TIR gives 100% reflection (no absorption by a metallic coating), and the Reflective surface
+is protected inside the glass, making it resistant to scratches and tarnishing.
 
-:::info
-Info
-Physics applications) | OCR (A) Paper 2 (quantum and waves) | CIE P2
-:::
+:::info Info Physics applications) | OCR (A) Paper 2 (quantum and waves) | CIE P2 :::
 
 ## Problem Set
 
@@ -469,8 +455,7 @@ That TIR occurs at the hypotenuse and determine the angle of the emergent ray.
 **Answer.** The ray enters perpendicular to the short face, so it passes through undeviated and
 Strikes the hypotenuse at $45^\circ$ to the normal of that face.
 
-Since $\theta_c = \arcsin(1/1.50) = 41.8^\circ$ and $45° > 41.8^\circ$TIR occurs at the
-Hypotenuse.
+Since $\theta_c = \arcsin(1/1.50) = 41.8^\circ$ and $45° > 41.8^\circ$TIR occurs at the Hypotenuse.
 
 The reflected ray exits through the other short face perpendicular to it (by symmetry of the 45°
 Reflection). The emergent ray is therefore perpendicular to the short face, i.e., the prism acts as
@@ -491,8 +476,8 @@ Angle for a water-glass boundary (if it exists). (b) A ray in the glass strikes 
 Boundary at $55^\circ$ to the normal. Determine what happens.
 
 **Answer.** (a) For TIR to be possible, light must travel from denser to less dense. Since
-$n_{\mathrm{glass}} = 1.50 > n_{\mathrm{water}} = 1.33$TIR is possible for light going from glass
-To water. $\theta_c = \arcsin(1.33/1.50) = \arcsin(0.887) = 62.5^\circ$.
+$n_{\mathrm{glass}} = 1.50 > n_{\mathrm{water}} = 1.33$TIR is possible for light going from glass To
+water. $\theta_c = \arcsin(1.33/1.50) = \arcsin(0.887) = 62.5^\circ$.
 
 (b) Since $55° < 62.5^\circ$The angle of incidence is below the critical angle. Refraction occurs.
 Using Snell's law: $1.50 \times \sin 55° = 1.33 \times \sin\theta_2$.
@@ -517,8 +502,8 @@ $n_{\mathrm{water}} = 1.33$.
 $d_{\mathrm{apparent}} = d_{\mathrm{real}} / n = 2.0 / 1.33 = 1.50$ m.
 
 (b) At an angle of $30^\circ$ to the vertical, a ray from the bottom of the pool refracts at the
-Surface. Using Snell's law: $1.33 \times \sin\theta_1 = 1.00 \times \sin\theta_2$Where $\theta_1$
-Is the angle in water from the normal. The apparent position is found by tracing the refracted ray
+Surface. Using Snell's law: $1.33 \times \sin\theta_1 = 1.00 \times \sin\theta_2$Where $\theta_1$ Is
+the angle in water from the normal. The apparent position is found by tracing the refracted ray
 Back. For a pool of depth $d$ and viewing angle $\theta_2$:
 
 $d_{\mathrm{apparent}} = d \cdot \frac◆LB◆\cos\theta_2◆RB◆◆LB◆\cos\theta_1◆RB◆$
@@ -565,28 +550,39 @@ Fibre length.
 
 :::
 
-
 ---
 
-:::tip
-Tip
-Ready to test your understanding of **Refraction and TIR**? The [diagnostic test](/docs/alevel/physics/diagnostics/diag-refraction-total-internal-reflection) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
+:::tip Tip Ready to test your understanding of **Refraction and TIR**? The
+[diagnostic test](/docs/alevel/physics/diagnostics/diag-refraction-total-internal-reflection)
+contains the hardest questions within the A-Level specification for this topic, each with a full
+worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Refraction and TIR with other physics topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Refraction
+and TIR with other physics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on
+self-marking and building a personal test matrix. :::
 
-:::danger
-Danger
+:::danger Danger
 
-- **Confusing the critical angle with the angle of incidence:** The critical angle c is the MINIMUM angle of incidence (measured from the normal) at which total internal reflection occurs. TIR happens when the angle of incidence EXCEEDS the critical angle, not when it equals it. Light going from glass to air at an angle less than c is refracted, not totally reflected.
+- **Confusing the critical angle with the angle of incidence:** The critical angle c is the MINIMUM
+  angle of incidence (measured from the normal) at which total internal reflection occurs. TIR
+  happens when the angle of incidence EXCEEDS the critical angle, not when it equals it. Light going
+  from glass to air at an angle less than c is refracted, not totally reflected.
 
-- **Forgetting that TIR only occurs when going from denser to less dense medium:** Total internal reflection can ONLY happen when light travels from a medium with HIGHER refractive index to one with LOWER refractive index (e.g., glass to air, not air to glass). The boundary must also exist -- TIR cannot occur if the second medium has the same or higher refractive index.
+- **Forgetting that TIR only occurs when going from denser to less dense medium:** Total internal
+  reflection can ONLY happen when light travels from a medium with HIGHER refractive index to one
+  with LOWER refractive index (e.g., glass to air, not air to glass). The boundary must also exist
+  -- TIR cannot occur if the second medium has the same or higher refractive index.
 
-- **Misapplying Snell's law at the critical angle:** At the critical angle, the angle of refraction is exactly 90 degrees. So sin(c) = n2/n1. Many students try to substitute 90 degrees into Snell's law incorrectly or forget that the refractive index ratio is n_rarer / n_denser.
+- **Misapplying Snell's law at the critical angle:** At the critical angle, the angle of refraction
+  is exactly 90 degrees. So sin(c) = n2/n1. Many students try to substitute 90 degrees into Snell's
+  law incorrectly or forget that the refractive index ratio is n_rarer / n_denser.
 
-- **Confusing refractive index with angle of refraction:** Refractive index n = sin(i) / sin(r) relates the angles, but n is a PROPERTY of the material, not the angle. The refractive index is defined as the ratio of the speed of light in vacuum to the speed in the medium (n = c/v), and it is always greater than or equal to 1 for real materials.
+- **Confusing refractive index with angle of refraction:** Refractive index n = sin(i) / sin(r)
+  relates the angles, but n is a PROPERTY of the material, not the angle. The refractive index is
+  defined as the ratio of the speed of light in vacuum to the speed in the medium (n = c/v), and it
+  is always greater than or equal to 1 for real materials.
 
 :::
 

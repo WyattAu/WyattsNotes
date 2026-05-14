@@ -1,6 +1,8 @@
 ---
 title: Centres of Mass and Elastic Collisions
-description: "A-Level Further Maths notes on Centres of Mass and Elastic Collisions: Board Coverage; 1. Centre of Mass of a Uniform Lamina; 1.1 Centre of mass by integration."
+description:
+  'A-Level Further Maths notes on Centres of Mass and Elastic Collisions: Board Coverage; 1. Centre
+  of Mass of a Uniform Lamina; 1.1 Centre of mass by integration.'
 date: 2026-04-02T00:00:00.000Z
 tags:
   - FurtherMaths
@@ -10,6 +12,7 @@ categories:
 slug: centres-of-mass-elastic-collisions
 sidebar_position: 3
 ---
+
 ## Centres of Mass and Elastic Collisions
 
 This topic covers two major areas of further mechanics: finding the centre of mass of laminas,
@@ -18,12 +21,12 @@ Including oblique impacts.
 
 ### Board Coverage
 
-| Board | Paper | Notes |
+| Board      | Paper   | Notes                                                |
 | ---------- | ------- | ---------------------------------------------------- |
-| AQA | Paper 2 | Centres of mass; elastic collisions in one dimension |
-| Edexcel | M2 | Full coverage including oblique impacts |
-| OCR (A) | Paper 2 | Centres of mass; direct and oblique collisions |
-| CIE (9231) | M2 | Centres of mass covered; collisions in M2 |
+| AQA        | Paper 2 | Centres of mass; elastic collisions in one dimension |
+| Edexcel    | M2      | Full coverage including oblique impacts              |
+| OCR (A)    | Paper 2 | Centres of mass; direct and oblique collisions       |
+| CIE (9231) | M2      | Centres of mass covered; collisions in M2            |
 
 <hr />
 
@@ -31,8 +34,8 @@ Including oblique impacts.
 
 ### 1.1 Centre of mass by integration
 
-**Definition.** The _centre of mass_ of a lamina bounded by $y = f(x)$$x = a$$x = b$And the
-$x$-axis is the point $(\bar{x}, \bar{y})$ where:
+**Definition.** The _centre of mass_ of a lamina bounded by $y = f(x)$$x = a$$x = b$And the $x$-axis
+is the point $(\bar{x}, \bar{y})$ where:
 
 $$\boxed{\bar{x} = \frac◆LB◆\displaystyle\int_a^b x \cdot f(x)\,dx◆RB◆◆LB◆\displaystyle\int_a^b f(x)\,dx◆RB◆}$$
 
@@ -408,8 +411,8 @@ Rectangle: area $= 24a^2$Centre of mass at $(3a, 2a)$.
 
 Hole: area $= \pi a^2$Centre of mass at $(3a, 2a)$.
 
-Since both centres of mass coincide at $(3a, 2a)$The composite lamina also has its centre of mass
-At $(3a, 2a)$ by symmetry.
+Since both centres of mass coincide at $(3a, 2a)$The composite lamina also has its centre of mass At
+$(3a, 2a)$ by symmetry.
 
 More formally:
 $\bar{x} = \dfrac◆LB◆24a^2 \times 3a - \pi a^2 \times 3a◆RB◆◆LB◆24a^2 - \pi a^2◆RB◆ = \dfrac◆LB◆3a(24 - \pi)◆RB◆◆LB◆24 - \pi◆RB◆ = 3a$.
@@ -509,8 +512,8 @@ A uniform lamina is made from a rectangle $ABCD$ where $AB = 8\,\mathrm{cm}$ and
 <summary>Solution 8</summary>
 Rectangle $ABCD$: area $= 48$Centre of mass at $(4, 3)$.
 
-Triangle $BCE$: vertices $B(8, 0)$$C(8, 6)$$E(4, 6)$. Area
-$= \dfrac{1}{2} \times 4 \times 6 = 12$. Centre of mass:
+Triangle $BCE$: vertices $B(8, 0)$$C(8, 6)$$E(4, 6)$. Area $= \dfrac{1}{2} \times 4 \times 6 = 12$.
+Centre of mass:
 $\bar{x} = \dfrac{8 + 8 + 4}{3} = \dfrac{20}{3}$$\bar{y} = \dfrac{0 + 6 + 6}{3} = 4$.
 
 Remaining area $= 48 - 12 = 36$.
@@ -628,8 +631,8 @@ Equilateral triangle with side $2a$: area $= \dfrac◆LB◆\sqrt{3}◆RB◆◆LB
 
 Height $= \sqrt{3}\,a$. The triangle's centroid is at distance $\sqrt{3}\,a/3$ from the base.
 
-Assuming the square has vertices at $(0, 0)$$(6a, 0)$$(6a, 6a)$$(0, 6a)$And the triangle has
-Its base on the top edge $y = 6a$ with centroid at $(3a, 6a - \sqrt{3}\,a/3)$:
+Assuming the square has vertices at $(0, 0)$$(6a, 0)$$(6a, 6a)$$(0, 6a)$And the triangle has Its
+base on the top edge $y = 6a$ with centroid at $(3a, 6a - \sqrt{3}\,a/3)$:
 
 Using negative mass:
 
@@ -676,8 +679,8 @@ The centre of mass is at distance $\dfrac{3h}{4}$ from the vertex (or $\dfrac{h}
 Smooth surface with equal spacing $d$. Particle $A$ is given velocity $u$ towards $B$. If all
 Collisions are perfectly elastic ($e = 1$), describe the subsequent motion.
 
-**Solution.** **Collision 1 ($A$ hits $B$):** By symmetry of equal masses with $e = 1$$A$ stops
-And $B$ moves with velocity $u$ towards $C$.
+**Solution.** **Collision 1 ($A$ hits $B$):** By symmetry of equal masses with $e = 1$$A$ stops And
+$B$ moves with velocity $u$ towards $C$.
 
 **Collision 2 ($B$ hits $C$):** Similarly, $B$ stops and $C$ moves with velocity $u$ away.
 
@@ -927,11 +930,11 @@ Directed along the normal away from the wall.
 
 ## 9. Common Pitfalls
 
-| Pitfall | Correct Approach |
+| Pitfall                                                                            | Correct Approach                                                                                  |
 | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
-| Forgetting to include the mass in centre of mass calculations for composite bodies | Always weight each centre of mass by its mass, not just its area |
-| Assuming elastic means KE of each particle is conserved individually | Elastic means total KE is conserved, not individual KE |
-| Using the wrong moment of inertia for a body | Rod about end: $\dfrac{ml^2}{3}$; about centre: $\dfrac{ml^2}{12}$; solid disc: $\dfrac{mr^2}{2}$ |
+| Forgetting to include the mass in centre of mass calculations for composite bodies | Always weight each centre of mass by its mass, not just its area                                  |
+| Assuming elastic means KE of each particle is conserved individually               | Elastic means total KE is conserved, not individual KE                                            |
+| Using the wrong moment of inertia for a body                                       | Rod about end: $\dfrac{ml^2}{3}$; about centre: $\dfrac{ml^2}{12}$; solid disc: $\dfrac{mr^2}{2}$ |
 
 ---
 
@@ -946,8 +949,7 @@ Of mass of the remaining lamina.
 <details>
 <summary>Solution</summary>
 
-Triangle: area $= \dfrac◆LB◆\sqrt{3}◆RB◆◆LB◆4◆RB◆(2a)^2 = \sqrt{3}a^2$Centroid at geometric
-Centre.
+Triangle: area $= \dfrac◆LB◆\sqrt{3}◆RB◆◆LB◆4◆RB◆(2a)^2 = \sqrt{3}a^2$Centroid at geometric Centre.
 
 Hole: area $= \dfrac◆LB◆\pi a^2◆RB◆◆LB◆4◆RB◆$Centroid at geometric centre.
 
@@ -1017,16 +1019,16 @@ $\mathbf{M} = \mathbf{r} \times \mathbf{F}$. See
 
 ## 12. Key Results Summary
 
-| Result | Formula |
+| Result                          | Formula                                                                                     |
 | ------------------------------- | ------------------------------------------------------------------------------------------- |
-| 1D elastic collision | $v_1 = \dfrac{(m_1-m_2)u}{m_1+m_2}$$v_2 = \dfrac{2m_1 u}{m_1+m_2}$ |
-| Conservation of momentum | $m_1u_1 + m_2u_2 = m_1v_1 + m_2v_2$ |
-| Conservation of KE (elastic) | $\dfrac{1}{2}m_1u_1^2 + \dfrac{1}{2}m_2u_2^2 = \dfrac{1}{2}m_1v_1^2 + \dfrac{1}{2}m_2v_2^2$ |
-| Centre of mass (discrete) | $\bar{x} = \dfrac◆LB◆\sum m_i x_i◆RB◆◆LB◆\sum m_i◆RB◆$ |
-| Centre of mass (continuous) | $\bar{x} = \dfrac◆LB◆\int x\,\rho(x)\,dA◆RB◆◆LB◆\int \rho(x)\,dA◆RB◆$ |
-| Moment of inertia (rod, centre) | $I = \dfrac{ml^2}{12}$ |
-| Moment of inertia (rod, end) | $I = \dfrac{ml^2}{3}$ |
-| Moment of inertia (disc) | $I = \dfrac{mr^2}{2}$ |
+| 1D elastic collision            | $v_1 = \dfrac{(m_1-m_2)u}{m_1+m_2}$$v_2 = \dfrac{2m_1 u}{m_1+m_2}$                          |
+| Conservation of momentum        | $m_1u_1 + m_2u_2 = m_1v_1 + m_2v_2$                                                         |
+| Conservation of KE (elastic)    | $\dfrac{1}{2}m_1u_1^2 + \dfrac{1}{2}m_2u_2^2 = \dfrac{1}{2}m_1v_1^2 + \dfrac{1}{2}m_2v_2^2$ |
+| Centre of mass (discrete)       | $\bar{x} = \dfrac◆LB◆\sum m_i x_i◆RB◆◆LB◆\sum m_i◆RB◆$                                      |
+| Centre of mass (continuous)     | $\bar{x} = \dfrac◆LB◆\int x\,\rho(x)\,dA◆RB◆◆LB◆\int \rho(x)\,dA◆RB◆$                       |
+| Moment of inertia (rod, centre) | $I = \dfrac{ml^2}{12}$                                                                      |
+| Moment of inertia (rod, end)    | $I = \dfrac{ml^2}{3}$                                                                       |
+| Moment of inertia (disc)        | $I = \dfrac{mr^2}{2}$                                                                       |
 
 ---
 

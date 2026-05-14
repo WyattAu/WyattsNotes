@@ -1,6 +1,8 @@
 ---
 title: Binomial Expansion
-description: "A-Level Mathematics notes on Binomial Expansion: Board Coverage; 1. Pascal's Triangle; 2. Binomial Coefficients; 2.1 Properties of Binomial Coefficients."
+description:
+  "A-Level Mathematics notes on Binomial Expansion: Board Coverage; 1. Pascal's Triangle; 2.
+  Binomial Coefficients; 2.1 Properties of Binomial Coefficients."
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Maths
@@ -9,19 +11,18 @@ categories:
   - Maths
 slug: binomial-expansion
 ---
+
 ## Board Coverage
 
-| Board | Paper | Notes |
+| Board      | Paper      | Notes                                                            |
 | ---------- | ---------- | ---------------------------------------------------------------- |
-| AQA | Paper 1, 2 | Binomial theorem for positive integer $n$; P2: general expansion |
-| Edexcel | P1, P2 | P1: positive integer; P2: negative/fractional |
-| OCR (A) | Paper 1, 2 | Similar split |
-| CIE (9709) | P1, P3 | P1: positive integer; P3: general |
+| AQA        | Paper 1, 2 | Binomial theorem for positive integer $n$; P2: general expansion |
+| Edexcel    | P1, P2     | P1: positive integer; P2: negative/fractional                    |
+| OCR (A)    | Paper 1, 2 | Similar split                                                    |
+| CIE (9709) | P1, P3     | P1: positive integer; P3: general                                |
 
-:::info
-AQA provides the binomial expansion formula in the formula booklet. Edexcel does not —
-Memorise it.
-:::
+:::info AQA provides the binomial expansion formula in the formula booklet. Edexcel does not —
+Memorise it. :::
 
 <hr />
 
@@ -206,8 +207,8 @@ In the expansion of $(a + bx)^n$The $(r+1)$Th term is:
 
 $$T_{r+1} = \binom{n}{r} a^{n-r}(bx)^r$$
 
-The index $r$ counts from $0$So the first term corresponds to $r = 0$ and the last term (when $n$
-Is a positive integer) corresponds to $r = n$.
+The index $r$ counts from $0$So the first term corresponds to $r = 0$ and the last term (when $n$ Is
+a positive integer) corresponds to $r = n$.
 
 ### 5.2 Strategy for Finding a Specific Term
 
@@ -228,8 +229,8 @@ The general term is:
 
 $$T_{r+1} = \binom{8}{r} (x^2)^{8-r}\left(\frac{2}{x}\right)^r = \binom{8}{r} 2^r x^{16-3r}$$
 
-For the constant term, set $16 - 3r = 0$Giving $r = \frac{16}{3}$. Since $r$ must be a
-Non-negative integer, there is no constant term.
+For the constant term, set $16 - 3r = 0$Giving $r = \frac{16}{3}$. Since $r$ must be a Non-negative
+integer, there is no constant term.
 
 (If the power had been $9$We would get $r = \frac{18}{3} = 6$And the constant term would be
 $\binom{9}{6} 2^6 = 84 \cdot 64 = 5376$.)
@@ -404,15 +405,13 @@ Summing over all valid $k$ gives the left-hand side. $\blacksquare$
 
 ### 8.1 Single Expansion Validity
 
-When expanding $(a + bx)^n$ with non-integer $n$We write it as
-$a^n\left(1 + \frac{bx}{a}\right)^n$. The expansion is valid when:
+When expanding $(a + bx)^n$ with non-integer $n$We write it as $a^n\left(1 + \frac{bx}{a}\right)^n$.
+The expansion is valid when:
 
 $$\left|\frac{bx}{a}\right| \lt 1 \quad \mathrm{i.e.,} \quad |x| \lt \left|\frac{a}{b}\right|$$
 
-:::warning
-Always state the range of validity when working with non-integer powers. Marks are
-Routinely deducted for omitting this.
-:::
+:::warning Always state the range of validity when working with non-integer powers. Marks are
+Routinely deducted for omitting this. :::
 
 ### 8.2 Product of Two Expansions
 
@@ -577,8 +576,8 @@ To 5 d.p.: $1.02470$.
 
 <hr />
 
-**Problem 6.** In the expansion of $(1 + ax)^n$The coefficients of $x$$x^2$And $x^3$ are in
-The ratio $1 : 4 : 12$. Find $a$ and $n$.
+**Problem 6.** In the expansion of $(1 + ax)^n$The coefficients of $x$$x^2$And $x^3$ are in The
+ratio $1 : 4 : 12$. Find $a$ and $n$.
 
 <details>
 <summary>Solution</summary>
@@ -631,8 +630,8 @@ $n$-element set, which is $2^n$ (each element can either be included or excluded
 
 <hr />
 
-**Problem 8.** Expand $\frac{1}{(1 + x)(1 - 2x)}$ in ascending powers of $x$ up to $x^3$Stating
-The range of validity.
+**Problem 8.** Expand $\frac{1}{(1 + x)(1 - 2x)}$ in ascending powers of $x$ up to $x^3$Stating The
+range of validity.
 
 <details>
 <summary>Solution</summary>
@@ -888,14 +887,15 @@ Validity: the most restrictive condition is $|x| \lt 1/2$ (from $(1-2x)^{-1}$).
 
 ---
 
-:::tip
-Tip
-Ready to test your understanding of **Binomial Expansion**? The [diagnostic test](/docs/alevel/maths/diagnostics/diag-binomial-expansion) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
+:::tip Tip Ready to test your understanding of **Binomial Expansion**? The
+[diagnostic test](/docs/alevel/maths/diagnostics/diag-binomial-expansion) contains the hardest
+questions within the A-Level specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Binomial Expansion with other pure mathematics topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Binomial
+Expansion with other pure mathematics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and
+building a personal test matrix. :::
 
 ## Common Pitfalls
 

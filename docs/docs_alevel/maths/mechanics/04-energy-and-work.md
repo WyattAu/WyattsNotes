@@ -1,6 +1,8 @@
 ---
 title: Energy and Work
-description: "A-Level Mathematics notes on Energy and Work: Board Coverage; 1. Work Done; 1.1 Definition and derivation; 2. Kinetic Energy."
+description:
+  'A-Level Mathematics notes on Energy and Work: Board Coverage; 1. Work Done; 1.1 Definition and
+  derivation; 2. Kinetic Energy.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Maths
@@ -9,19 +11,18 @@ categories:
   - Maths
 slug: energy-and-work
 ---
+
 ## Board Coverage
 
-| Board | Paper | Notes |
+| Board      | Paper   | Notes                              |
 | ---------- | ------- | ---------------------------------- |
-| AQA | Paper 1 | Work, energy, power |
-| Edexcel | P1 | Similar |
-| OCR (A) | Paper 1 | Includes energy on inclined planes |
-| CIE (9709) | P1, P4 | Work-energy in P1; further in P4 |
+| AQA        | Paper 1 | Work, energy, power                |
+| Edexcel    | P1      | Similar                            |
+| OCR (A)    | Paper 1 | Includes energy on inclined planes |
+| CIE (9709) | P1, P4  | Work-energy in P1; further in P4   |
 
-:::info
-Energy methods are often simpler than force methods for problems where only initial and
-Final states matter (no time information needed).
-:::
+:::info Energy methods are often simpler than force methods for problems where only initial and
+Final states matter (no time information needed). :::
 
 <hr />
 
@@ -94,7 +95,7 @@ This work is stored as gravitational potential energy. $\blacksquare$
 - GPE depends on the choice of reference level ( the ground or lowest point).
 - Only **changes** in GPE are physically meaningful.
 - When a body falls through height $h$: loss in GPE $= mgh = $ gain in KE (if no other forces do
- work).
+  work).
 
 ### 3.3 Real-world application: roller coasters
 
@@ -110,8 +111,8 @@ $$v_{\max} = \sqrt{2(9.8)(40)} \approx 28\,\mathrm{m/s}$$
 (approximately $100\,\mathrm{km/h}$). Real coasters never reach this due to friction and air
 Resistance.
 
-For a loop-the-loop of radius $r$The minimum speed at the top is $\sqrt{gr}$ (from circular
-Motion). The coaster must enter the loop with enough GPE to reach this speed at the top:
+For a loop-the-loop of radius $r$The minimum speed at the top is $\sqrt{gr}$ (from circular Motion).
+The coaster must enter the loop with enough GPE to reach this speed at the top:
 
 $$mgh = \frac{1}{2}m(\sqrt{gr})^2 + mg(2r) \implies h = \frac{5}{2}r$$
 
@@ -615,17 +616,17 @@ Section 5.4.
 
 :::
 
-
 ---
 
-:::tip
-Diagnostic Test
-Ready to test your understanding of **Energy and Work**? The [diagnostic test](/docs/alevel/maths/diagnostics/diag-energy-and-work) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
+:::tip Diagnostic Test Ready to test your understanding of **Energy and Work**? The
+[diagnostic test](/docs/alevel/maths/diagnostics/diag-energy-and-work) contains the hardest
+questions within the A-Level specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Energy and Work with other topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Energy and
+Work with other topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and
+building a personal test matrix. :::
 
 ## Common Pitfalls
 

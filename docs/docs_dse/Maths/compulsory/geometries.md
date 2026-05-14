@@ -1,6 +1,8 @@
 ---
 title: Geometries
-description: "DSE Mathematics geometry notes covering 2D and 3D geometry, circle theorems, trigonometric identities, vector geometry, and coordinate proofs."
+description:
+  'DSE Mathematics geometry notes covering 2D and 3D geometry, circle theorems, trigonometric
+  identities, vector geometry, and coordinate proofs.'
 date: 2025-06-03T16:20:00.000Z
 tags:
   - Maths
@@ -17,15 +19,15 @@ The use of algebraic methods to solve geometric problems and vice versa.
 
 ### The Rectangular Coordinate System
 
-In the Cartesian plane, every point $P$ is uniquely identified by an ordered pair $(x, y)$Where
-$x$ is the horizontal coordinate (abscissa) and $y$ is the vertical coordinate (ordinate). The axes
+In the Cartesian plane, every point $P$ is uniquely identified by an ordered pair $(x, y)$Where $x$
+is the horizontal coordinate (abscissa) and $y$ is the vertical coordinate (ordinate). The axes
 Divide the plane into four quadrants, numbered counterclockwise from the positive $x$-axis.
 
 ### Distance Formula
 
 The distance between two points $P_1(x_1, y_1)$ and $P_2(x_2, y_2)$ is derived from the
-[Pythagorean identity](trigonometry#pythagorean-identity) applied to the right triangle formed
-By the horizontal and vertical differences:
+[Pythagorean identity](trigonometry#pythagorean-identity) applied to the right triangle formed By
+the horizontal and vertical differences:
 
 $$
 \begin{aligned}
@@ -72,12 +74,12 @@ $$
 Where $\theta$ is the angle the line makes with the positive $x$-axis. A vertical line (where
 $x_1 = x_2$) has an undefined gradient. Key gradient values include:
 
-| Gradient | Interpretation |
+| Gradient  | Interpretation                          |
 | --------- | --------------------------------------- |
-| $m > 0$ | Line slopes upward from left to right |
-| $m < 0$ | Line slopes downward from left to right |
-| $m = 0$ | Horizontal line ($y = c$) |
-| Undefined | Vertical line ($x = c$) |
+| $m > 0$   | Line slopes upward from left to right   |
+| $m < 0$   | Line slopes downward from left to right |
+| $m = 0$   | Horizontal line ($y = c$)               |
+| Undefined | Vertical line ($x = c$)                 |
 
 <details>
 <summary>Examples</summary>
@@ -155,8 +157,8 @@ $$
 \end{aligned}
 $$
 
-Where $A$$B$$C$ are constants and $A$ and $B$ are not both zero. The gradient is
-$m = -\frac{A}{B}$ and the $y$-intercept is $c = -\frac{C}{B}$ (when $B \neq 0$).
+Where $A$$B$$C$ are constants and $A$ and $B$ are not both zero. The gradient is $m = -\frac{A}{B}$
+and the $y$-intercept is $c = -\frac{C}{B}$ (when $B \neq 0$).
 
 <details>
 <summary>Examples</summary>
@@ -284,15 +286,14 @@ The equation of a circle can be determined when given:
 ### Intersection of a Line and a Circle
 
 To find the points of intersection of the line $y = mx + c$ and the circle
-$(x-a)^2 + (y-b)^2 = r^2$Substitute the line equation into the circle equation to obtain a
-Quadratic in $x$ (or $y$). The discriminant $\Delta = b^2 - 4ac$ determines the nature of
-Intersection:
+$(x-a)^2 + (y-b)^2 = r^2$Substitute the line equation into the circle equation to obtain a Quadratic
+in $x$ (or $y$). The discriminant $\Delta = b^2 - 4ac$ determines the nature of Intersection:
 
-| Discriminant | Intersection |
+| Discriminant | Intersection                 |
 | ------------ | ---------------------------- |
 | $\Delta > 0$ | Two distinct points (secant) |
-| $\Delta = 0$ | One point (tangent) |
-| $\Delta < 0$ | No real intersection |
+| $\Delta = 0$ | One point (tangent)          |
+| $\Delta < 0$ | No real intersection         |
 
 ### Tangent to a Circle
 
@@ -367,13 +368,13 @@ $$
 
 ### Quadrilaterals
 
-| Figure | Area | Perimeter |
-| ----------------------------------------------- | -------------------- | ---------------- |
-| Rectangle ($l \times w$) | $lw$ | $2(l+w)$ |
-| Parallelogram ($b$$h$) | $bh$ | $2(a+b)$ |
-| Rhombus (diagonals $d_1$$d_2$) | $\frac{1}{2}d_1 d_2$ | $4s$ |
-| Trapezium (parallel sides $a$$b$; height $h$) | $\frac{1}{2}(a+b)h$ | Sum of all sides |
-| Square (side $s$) | $s^2$ | $4s$ |
+| Figure                                        | Area                 | Perimeter        |
+| --------------------------------------------- | -------------------- | ---------------- |
+| Rectangle ($l \times w$)                      | $lw$                 | $2(l+w)$         |
+| Parallelogram ($b$$h$)                        | $bh$                 | $2(a+b)$         |
+| Rhombus (diagonals $d_1$$d_2$)                | $\frac{1}{2}d_1 d_2$ | $4s$             |
+| Trapezium (parallel sides $a$$b$; height $h$) | $\frac{1}{2}(a+b)h$  | Sum of all sides |
+| Square (side $s$)                             | $s^2$                | $4s$             |
 
 ### Circles
 
@@ -457,11 +458,11 @@ $$
 \end{aligned}
 $$
 
-Where the vector $\mathbf{'\{'}n{'\}'} = (A, B, C)$ is a normal vector to the plane. The plane can also be
-Described in several forms:
+Where the vector $\mathbf{'\{'}n{'\}'} = (A, B, C)$ is a normal vector to the plane. The plane can
+also be Described in several forms:
 
 - **Point-normal form**: Given a point $P_0(x_0, y_0, z_0)$ on the plane and normal
- $\mathbf{'\{'}n{'\}'} = (A, B, C)$:
+  $\mathbf{'\{'}n{'\}'} = (A, B, C)$:
 
 $$
 \begin{aligned}
@@ -469,8 +470,8 @@ $$
 \end{aligned}
 $$
 
-- **Intercept form**: If the plane has $x$-intercept $a$$y$-intercept $b$And $z$-intercept $c$
- (all non-zero):
+- **Intercept form**: If the plane has $x$-intercept $a$$y$-intercept $b$And $z$-intercept $c$ (all
+  non-zero):
 
 $$
 \begin{aligned}
@@ -482,9 +483,9 @@ $$
 
 #### Angle Between a Line and a Plane
 
-The angle $\phi$ between a line with direction vector $\mathbf{'\{'}d{'\}'} = (l, m, n)$ and a plane with
-Normal $\mathbf{'\{'}n{'\}'} = (A, B, C)$ is defined as the complement of the angle between $\mathbf{'\{'}d{'\}'}$ and
-$\mathbf{'\{'}n{'\}'}$:
+The angle $\phi$ between a line with direction vector $\mathbf{'\{'}d{'\}'} = (l, m, n)$ and a plane
+with Normal $\mathbf{'\{'}n{'\}'} = (A, B, C)$ is defined as the complement of the angle between
+$\mathbf{'\{'}d{'\}'}$ and $\mathbf{'\{'}n{'\}'}$:
 
 $$
 \begin{aligned}
@@ -555,7 +556,7 @@ $B(4, 0)$And $C(0, 3)$.
 - Substituting $B(4,0)$: $16 + 4D = 0 \implies D = -4$.
 - Substituting $C(0,3)$: $9 + 3E = 0 \implies E = -3$.
 - Equation: $x^2 + y^2 - 4x - 3y = 0$I.e.,
- $(x-2)^2 + \left(y - \frac{3}{2}\right)^2 = \frac{25}{4}$.
+  $(x-2)^2 + \left(y - \frac{3}{2}\right)^2 = \frac{25}{4}$.
 - Centre $\left(2, \frac{3}{2}\right)$Radius $\frac{5}{2}$.
 </details>
 
@@ -582,12 +583,12 @@ Chord length is $20\mathrm{ cm}$.
 
 - Arc length $l = r\theta$: $16\pi = 12\theta \implies \theta = \frac{4\pi}{3}$ rad.
 - Area of sector:
- $A = \frac{1}{2}r^2\theta = \frac{1}{2}(144)\left(\frac{4\pi}{3}\right) = 96\pi \mathrm{ cm}^2$.
+  $A = \frac{1}{2}r^2\theta = \frac{1}{2}(144)\left(\frac{4\pi}{3}\right) = 96\pi \mathrm{ cm}^2$.
 - Area of triangle formed by the radii and chord: Using the chord length $c = 20$The triangle has
- sides $12$$12$$20$. Semi-perimeter $s = 22$. By Heron's formula: Area
- $= \sqrt{22 \times 10 \times 10 \times 2} = \sqrt{4400} = 20\sqrt{11} \mathrm{ cm}^2$.
+  sides $12$$12$$20$. Semi-perimeter $s = 22$. By Heron's formula: Area
+  $= \sqrt{22 \times 10 \times 10 \times 2} = \sqrt{4400} = 20\sqrt{11} \mathrm{ cm}^2$.
 - Alternatively, the perpendicular from centre to chord: $h = \sqrt{12^2 - 10^2} = 2\sqrt{11}$.
- Triangle area $= \frac{1}{2} \times 20 \times 2\sqrt{11} = 20\sqrt{11}$.
+  Triangle area $= \frac{1}{2} \times 20 \times 2\sqrt{11} = 20\sqrt{11}$.
 - Area of segment $= 96\pi - 20\sqrt{11} \approx 247.3 \mathrm{ cm}^2$.
 </details>
 
@@ -597,18 +598,18 @@ $x + y + z = 1$.
 <summary>Answer</summary>
 
 - Direction vector of the line: $\mathbf{'\{'}d{'\}'} = (4-1, 5-2, 6-3) = (3, 3, 3)$Simplified to
- $(1, 1, 1)$.
+  $(1, 1, 1)$.
 - Normal of the plane: $\mathbf{'\{'}n{'\}'} = (1, 1, 1)$.
 - The angle $\alpha$ between $\mathbf{'\{'}d{'\}'}$ and $\mathbf{'\{'}n{'\}'}$:
- $\cos\alpha = \frac{|1+1+1|}{\sqrt{3}\sqrt{3}} = \frac{3}{3} = 1$So $\alpha = 0^\circ$.
+  $\cos\alpha = \frac{|1+1+1|}{\sqrt{3}\sqrt{3}} = \frac{3}{3} = 1$So $\alpha = 0^\circ$.
 - The angle $\phi$ between the line and the plane is the complement:
- $\phi = 90^\circ - 0^\circ = 90^\circ$.
+  $\phi = 90^\circ - 0^\circ = 90^\circ$.
 - The line is parallel to the plane (perpendicular to the normal).
 </details>
 
 6. **Question:** Points $A(1, 2)$$B(4, 6)$And $C(7, 4)$ are vertices of a triangle. Find the
-Equation of the altitude from $A$ to $BC$The area of triangle $ABC$And the length of the
-Altitude from $A$.
+Equation of the altitude from $A$ to $BC$The area of triangle $ABC$And the length of the Altitude
+from $A$.
 <details>
 <summary>Answer</summary>
 
@@ -616,8 +617,8 @@ Altitude from $A$.
 - Gradient of altitude from $A$: $m = \frac{3}{2}$ (negative reciprocal).
 - Equation of altitude: $y - 2 = \frac{3}{2}(x - 1)$I.e., $3x - 2y + 1 = 0$.
 - Area of $\triangle ABC$:
- $\frac{1}{2}|1(6-4) + 4(4-2) + 7(2-6)| = \frac{1}{2}|2 + 8 - 28| = \frac{1}{2}(18) = 9$ square
- units.
+  $\frac{1}{2}|1(6-4) + 4(4-2) + 7(2-6)| = \frac{1}{2}|2 + 8 - 28| = \frac{1}{2}(18) = 9$ square
+  units.
 - Length of $BC$: $\sqrt{(7-4)^2 + (4-6)^2} = \sqrt{9 + 4} = \sqrt{13}$.
 - Altitude from $A$:
 $\frac{2 \times \mathrm{Area}}{BC} = \frac{18}{\sqrt{13}} = \frac{18\sqrt{13}}{13}$.
@@ -628,8 +629,8 @@ Through $(1, 4)$.
 <details>
 <summary>Answer</summary>
 
-- Since the circle touches the $x$-axis at $(3, 0)$The centre lies on the vertical line $x = 3$
- so the centre is $C(3, r)$ where $r$ is the radius.
+- Since the circle touches the $x$-axis at $(3, 0)$The centre lies on the vertical line $x = 3$ so
+  the centre is $C(3, r)$ where $r$ is the radius.
 - The circle equation is $(x-3)^2 + (y-r)^2 = r^2$.
 - Substituting $(1, 4)$: $(1-3)^2 + (4-r)^2 = r^2$.
 - $4 + 16 - 8r + r^2 = r^2 \implies 20 - 8r = 0 \implies r = \frac{5}{2}$.
@@ -638,21 +639,21 @@ Through $(1, 4)$.
 $x^2 + y^2 - 6x - 5y + 9 = 0$.
 </details>
 
-8. **Question:** The vertices of a triangle are $A(2, 1, -1)$$B(0, 3, -4)$And $C(5, 0, 2)$. Find
-(a) the length of each side, (b) the area of the triangle, and (c) the equation of the plane
-Containing the triangle.
+8. **Question:** The vertices of a triangle are $A(2, 1, -1)$$B(0, 3, -4)$And $C(5, 0, 2)$. Find (a)
+the length of each side, (b) the area of the triangle, and (c) the equation of the plane Containing
+the triangle.
 <details>
 <summary>Answer</summary>
 
 - (a) Side lengths:
- - $AB = \sqrt{(0-2)^2 + (3-1)^2 + (-4+1)^2} = \sqrt{4 + 4 + 9} = \sqrt{17}$
- - $BC = \sqrt{(5-0)^2 + (0-3)^2 + (2+4)^2} = \sqrt{25 + 9 + 36} = \sqrt{70}$
- - $CA = \sqrt{(2-5)^2 + (1-0)^2 + (-1-2)^2} = \sqrt{9 + 1 + 9} = \sqrt{19}$
+- $AB = \sqrt{(0-2)^2 + (3-1)^2 + (-4+1)^2} = \sqrt{4 + 4 + 9} = \sqrt{17}$
+- $BC = \sqrt{(5-0)^2 + (0-3)^2 + (2+4)^2} = \sqrt{25 + 9 + 36} = \sqrt{70}$
+- $CA = \sqrt{(2-5)^2 + (1-0)^2 + (-1-2)^2} = \sqrt{9 + 1 + 9} = \sqrt{19}$
 - (b) Using the cross product method: $\overrightarrow{AB} = (-2, 2, -3)$
- $\overrightarrow{AC} = (3, -1, 3)$.
- - $\overrightarrow{AB} \times \overrightarrow{AC} = (2 \cdot 3 - (-3)(-1),\; (-3) \cdot 3 - (-2) \cdot 3,\; (-2)(-1) - 2 \cdot 3) = (3, -3, -4)$.
- - Area
- $= \frac{1}{2}|\overrightarrow{AB} \times \overrightarrow{AC}| = \frac{1}{2}\sqrt{9 + 9 + 16} = \frac{\sqrt{34}}{2}$.
+  $\overrightarrow{AC} = (3, -1, 3)$.
+- $\overrightarrow{AB} \times \overrightarrow{AC} = (2 \cdot 3 - (-3)(-1),\; (-3) \cdot 3 - (-2) \cdot 3,\; (-2)(-1) - 2 \cdot 3) = (3, -3, -4)$.
+- Area
+  $= \frac{1}{2}|\overrightarrow{AB} \times \overrightarrow{AC}| = \frac{1}{2}\sqrt{9 + 9 + 16} = \frac{\sqrt{34}}{2}$.
 - (c) The normal vector is $(3, -3, -4)$. Using point $A(2, 1, -1)$: $3(x-2) - 3(y-1) - 4(z+1) = 0$
 I.e., $3x - 3y - 4z - 8 = 0$.
 </details>
@@ -686,7 +687,7 @@ Coordinates of $D$ and the area of the rectangle.
 - Verify: $AB^2 + BC^2 = 16 + 9 = 25 = AC^2$So $\angle ABC = 90^\circ$. ✓
 - The diagonal is $AC$ with midpoint $M = \left(\frac{1+5}{2}, \frac{1+4}{2}\right) = (3, 2.5)$.
 - $D$ is such that $M$ is also the midpoint of $CD$:
- $D = (2M_x - C_x, 2M_y - C_y) = (6 - 5, 5 - 4) = (1, 4)$.
+  $D = (2M_x - C_x, 2M_y - C_y) = (6 - 5, 5 - 4) = (1, 4)$.
 - Area $= AB \times BC = 4 \times 3 = 12$ square units.
 </details>
 
@@ -704,8 +705,8 @@ $10\mathrm{ cm}$. A sector is cut from a circular sheet of metal to form the cur
 $A = \frac{1}{2}r^2\theta = \frac{1}{2}(100)\left(\frac{6\pi}{5}\right) = 60\pi \mathrm{ cm}^2$.
 </details>
 
-12. **Question:** Prove that the points $A(-2, 0)$$B(0, 4)$$C(6, 2)$And $D(4, -2)$ are the
-Vertices of a rectangle. Find the equation of the circle passing through all four vertices.
+12. **Question:** Prove that the points $A(-2, 0)$$B(0, 4)$$C(6, 2)$And $D(4, -2)$ are the Vertices
+of a rectangle. Find the equation of the circle passing through all four vertices.
 <details>
 <summary>Answer</summary>
 
@@ -713,25 +714,26 @@ Vertices of a rectangle. Find the equation of the circle passing through all fou
 - Midpoint of $BD = \left(\frac{0+4}{2}, \frac{4+(-2)}{2}\right) = (2, 1)$.
 - Since the diagonals bisect each other, $ABCD$ is a parallelogram.
 - $AB = \sqrt{4 + 16} = 2\sqrt{5}$$BC = \sqrt{36 + 4} = 2\sqrt{10}$
- $AC = \sqrt{64 + 4} = 2\sqrt{17}$.
+  $AC = \sqrt{64 + 4} = 2\sqrt{17}$.
 - $AB^2 + BC^2 = 20 + 40 = 60 = AC^2$. The parallelogram has a right angle, so $ABCD$ is a
- rectangle.
+  rectangle.
 - The circle through all four vertices (circumcircle) has centre at the intersection of the
- diagonals $(2, 1)$ and radius $= \frac{1}{2}AC = \sqrt{17}$.
+  diagonals $(2, 1)$ and radius $= \frac{1}{2}AC = \sqrt{17}$.
 - Equation: $(x-2)^2 + (y-1)^2 = 17$I.e., $x^2 + y^2 - 4x - 2y - 12 = 0$.
 </details>
 </details>
 
 ---
 
-:::tip
-Diagnostic Test
-Ready to test your understanding of **Geometries**? The [diagnostic test](/docs/dse/Maths/diagnostics/diag-geometries) contains the hardest questions within the DSE specification for this topic, each with a full worked solution.
+:::tip Diagnostic Test Ready to test your understanding of **Geometries**? The
+[diagnostic test](/docs/dse/Maths/diagnostics/diag-geometries) contains the hardest questions within
+the DSE specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Geometries with other DSE mathematics topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Geometries
+with other DSE mathematics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/dse/Maths/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/dse/Maths/diagnostics/diagnostic-guide) for instructions on
+self-marking and building a personal test matrix. :::
 
 ---
 
@@ -742,14 +744,16 @@ See [Diagnostic Guide](/docs/dse/Maths/diagnostics/diagnostic-guide) for instruc
 For geometry problems in DSE Paper 1:
 
 1. When using the distance or midpoint formula, write the formula before substituting.
-2. When finding the equation of a line, state the gradient and a point, then apply the point-slope form.
+2. When finding the equation of a line, state the gradient and a point, then apply the point-slope
+   form.
 3. For circle problems, show the completing-the-square steps to find centre and radius.
 4. For 3D problems, identify the right-angled triangles used and label the diagram.
 5. For area problems, show which formula is being used and justify the values substituted.
 
 ### Significant Figures
 
-Length answers to 3 significant figures unless exact. Angle answers to nearest degree or 3 s.f. As appropriate.
+Length answers to 3 significant figures unless exact. Angle answers to nearest degree or 3 s.f. As
+appropriate.
 
 ### Common DSE Question Types
 
@@ -765,7 +769,8 @@ Length answers to 3 significant figures unless exact. Angle answers to nearest d
 
 **Worked Example 13: Two circles touching externally**
 
-Circle $C_1$ has centre $(1, 2)$ and radius $3$. Circle $C_2$ has centre $(7, 2)$ and radius $r$. If $C_1$ and $C_2$ touch externally, find $r$.
+Circle $C_1$ has centre $(1, 2)$ and radius $3$. Circle $C_2$ has centre $(7, 2)$ and radius $r$. If
+$C_1$ and $C_2$ touch externally, find $r$.
 
 <details>
 <summary>Solution</summary>
@@ -795,7 +800,8 @@ Total area: $6 \times \dfrac{\sqrt{3}}{4}a^2 = \dfrac{3\sqrt{3}}{2}a^2$.
 
 **Worked Example 15: Shortest distance between skew lines (3D)**
 
-In 3D, find the distance between the point $P(1, 2, 3)$ and the line through $A(4, 5, 6)$ and $B(7, 8, 9)$.
+In 3D, find the distance between the point $P(1, 2, 3)$ and the line through $A(4, 5, 6)$ and
+$B(7, 8, 9)$.
 
 <details>
 <summary>Solution</summary>
@@ -806,11 +812,13 @@ Vector $\overrightarrow{AP} = (1 - 4, 2 - 5, 3 - 6) = (-3, -3, -3)$.
 
 The cross product $\overrightarrow{AP} \times \mathbf{'\{'}d{'\}'} = (-3, -3, -3) \times (1, 1, 1)$.
 
-Since $\overrightarrow{AP}$ is parallel to $\mathbf{'\{'}d{'\}'}$ (one is $-3$ times the other), the point $P$ lies on the line.
+Since $\overrightarrow{AP}$ is parallel to $\mathbf{'\{'}d{'\}'}$ (one is $-3$ times the other), the
+point $P$ lies on the line.
 
 The distance is $0$.
 
-Verification: $P$ lies on the line through $A$ in direction $(1,1,1)$ since $(1, 2, 3) = (4, 5, 6) + (-1)(1, 1, 1)$. So $P$ is on the line and the distance is $0$.
+Verification: $P$ lies on the line through $A$ in direction $(1,1,1)$ since
+$(1, 2, 3) = (4, 5, 6) + (-1)(1, 1, 1)$. So $P$ is on the line and the distance is $0$.
 
 </details>
 
@@ -875,7 +883,8 @@ $$3x + 4y - 19 = 0$$
 
 ## DSE Exam-Style Questions
 
-**DSE Practice 1.** Find the equation of the circle which passes through $(0, 0)$ and $(0, 4)$ and has its centre on the line $x - y + 2 = 0$.
+**DSE Practice 1.** Find the equation of the circle which passes through $(0, 0)$ and $(0, 4)$ and
+has its centre on the line $x - y + 2 = 0$.
 
 <details>
 <summary>Solution</summary>
@@ -894,12 +903,14 @@ Equation: $x^2 + (y - 2)^2 = 4$Or $x^2 + y^2 - 4y = 0$.
 
 </details>
 
-**DSE Practice 2.** In $\triangle ABC$$A = (1, -2)$$B = (5, 4)$And $C = (8, 1)$. Find the equation of the median from $A$ and the equation of the altitude from $B$.
+**DSE Practice 2.** In $\triangle ABC$$A = (1, -2)$$B = (5, 4)$And $C = (8, 1)$. Find the equation
+of the median from $A$ and the equation of the altitude from $B$.
 
 <details>
 <summary>Solution</summary>
 
-**Median from $A$:** Midpoint of $BC$: $M = \left(\dfrac{5+8}{2}, \dfrac{4+1}{2}\right) = (6.5, 2.5)$.
+**Median from $A$:** Midpoint of $BC$:
+$M = \left(\dfrac{5+8}{2}, \dfrac{4+1}{2}\right) = (6.5, 2.5)$.
 
 Gradient of $AM$: $m = \dfrac{2.5 - (-2)}{6.5 - 1} = \dfrac{4.5}{5.5} = \dfrac{9}{11}$.
 
@@ -909,11 +920,13 @@ Equation: $y + 2 = \dfrac{9}{11}(x - 1) \implies 11y + 22 = 9x - 9 \implies 9x -
 
 Gradient of altitude: $m_\perp = -\dfrac{7}{3}$.
 
-Equation through $B(5, 4)$: $y - 4 = -\dfrac{7}{3}(x - 5) \implies 3y - 12 = -7x + 35 \implies 7x + 3y - 47 = 0$.
+Equation through $B(5, 4)$:
+$y - 4 = -\dfrac{7}{3}(x - 5) \implies 3y - 12 = -7x + 35 \implies 7x + 3y - 47 = 0$.
 
 </details>
 
-**DSE Practice 3.** A sector of a circle of radius $10\mathrm{ cm}$ has perimeter $30\mathrm{ cm}$. Find the area of the sector.
+**DSE Practice 3.** A sector of a circle of radius $10\mathrm{ cm}$ has perimeter $30\mathrm{ cm}$.
+Find the area of the sector.
 
 <details>
 <summary>Solution</summary>
@@ -926,7 +939,8 @@ $$\mathrm{Area} = \frac{1}{2}r^2\theta = \frac{1}{2}(100)(1) = 50\mathrm{ cm}^2$
 
 </details>
 
-**DSE Practice 4.** Two circles $C_1: (x - 1)^2 + y^2 = 9$ and $C_2: (x - 5)^2 + y^2 = 25$ intersect at $A$ and $B$. Find the length of the common chord $AB$.
+**DSE Practice 4.** Two circles $C_1: (x - 1)^2 + y^2 = 9$ and $C_2: (x - 5)^2 + y^2 = 25$ intersect
+at $A$ and $B$. Find the length of the common chord $AB$.
 
 <details>
 <summary>Solution</summary>
@@ -960,7 +974,8 @@ $AB = 6$.
 <details>
 <summary>Solution</summary>
 
-Normal to first plane: $\mathbf{'\{'}n_1{'\}'} = (2, -1, 2)$. Normal to second plane: $\mathbf{'\{'}n_2{'\}'} = (1, 2, -2)$.
+Normal to first plane: $\mathbf{'\{'}n_1{'\}'} = (2, -1, 2)$. Normal to second plane:
+$\mathbf{'\{'}n_2{'\}'} = (1, 2, -2)$.
 
 $$\cos\theta = \frac{|2(1) + (-1)(2) + 2(-2)|}{\sqrt{4 + 1 + 4} \cdot \sqrt{1 + 4 + 4}} = \frac{|2 - 2 - 4|}{3 \cdot 3} = \frac{4}{9}$$
 
@@ -968,7 +983,9 @@ $$\theta = \arccos\!\left(\frac{4}{9}\right) \approx 63.6^\circ$$
 
 </details>
 
-**DSE Practice 6.** A pyramid has a rectangular base $ABCD$ with $AB = 8$$BC = 6$. The vertex $V$ is directly above the centre of the base, and $VA = 10$. Find the angle between the face $VAB$ and the base $ABCD$.
+**DSE Practice 6.** A pyramid has a rectangular base $ABCD$ with $AB = 8$$BC = 6$. The vertex $V$ is
+directly above the centre of the base, and $VA = 10$. Find the angle between the face $VAB$ and the
+base $ABCD$.
 
 <details>
 <summary>Solution</summary>
@@ -993,7 +1010,8 @@ $$\phi = \arccos\!\left(\frac{\sqrt{21}}{14}\right) \approx 69.2^\circ$$
 
 </details>
 
-**DSE Practice 7.** The line $3x + 4y - 25 = 0$ intersects the circle $x^2 + y^2 = 25$ at $A$ and $B$. Find the area of the minor segment cut off by the chord $AB$.
+**DSE Practice 7.** The line $3x + 4y - 25 = 0$ intersects the circle $x^2 + y^2 = 25$ at $A$ and
+$B$. Find the area of the minor segment cut off by the chord $AB$.
 
 <details>
 <summary>Solution</summary>
@@ -1002,7 +1020,8 @@ Distance from the centre $(0, 0)$ to the line:
 
 $$d = \frac{|25|}{5} = 5$$
 
-Since $d = r = 5$The line is tangent to the circle (not a chord). There is no minor segment -- the line touches the circle at exactly one point.
+Since $d = r = 5$The line is tangent to the circle (not a chord). There is no minor segment -- the
+line touches the circle at exactly one point.
 
 The point of contact: the foot of the perpendicular from $(0,0)$ to $3x + 4y = 25$.
 

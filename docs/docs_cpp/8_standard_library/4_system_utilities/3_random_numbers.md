@@ -1,6 +1,8 @@
 ---
 title: Random Number Generation
-description: "C++ standard library: Random Number Generation — Random Number Engines; Distributions; Seeded Random Number Generation; Engines:."
+description:
+  'C++ standard library: Random Number Generation — Random Number Engines; Distributions; Seeded
+  Random Number Generation; Engines:.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -8,6 +10,7 @@ categories:
   - Cpp
 slug: random-number-generation
 ---
+
 ## Random Number Generation
 
 The `<random>` header provides a modular random number generation system consisting of engines
@@ -23,7 +26,7 @@ Of:
 
 1. **Engines:** Stateful objects that produce a sequence of random numbers.
 2. **Distributions:** Objects that transform the engine's output into a desired statistical
- distribution.
+   distribution.
 3. **Seed sequences:** Objects that produce seed values for engines from a small amount of entropy.
 
 The design separates the source of randomness (engine) from the statistical properties
@@ -41,13 +44,13 @@ The design separates the source of randomness (engine) from the statistical prop
 An engine satisfies the **UniformRandomBitGenerator** requirement [N4950 §29.6.3]: it provides
 `operator()` that returns a `UIntType` value uniformly distributed over `[min(), max()]`.
 
-| Engine | Period | State Size | Quality | Use Case |
+| Engine                                     | Period      | State Size | Quality      | Use Case                         |
 | :----------------------------------------- | :---------- | :--------- | :----------- | :------------------------------- |
-| `std::linear_congruential_engine` | ~2^32 | Small | Low | Legacy (`rand()` equivalent) |
-| `std::mersenne_twister_engine` (`mt19937`) | 2^19937 - 1 | 2500 bytes | High | General purpose |
-| `std::mt19937_64` | 2^19937 - 1 | 2500 bytes | High | 64-bit general purpose |
-| `std::subtract_with_carry_engine` | ~2^63 | Moderate | Moderate | Historical |
-| `std::random_device` | N/A | N/A | OS-dependent | True entropy (non-deterministic) |
+| `std::linear_congruential_engine`          | ~2^32       | Small      | Low          | Legacy (`rand()` equivalent)     |
+| `std::mersenne_twister_engine` (`mt19937`) | 2^19937 - 1 | 2500 bytes | High         | General purpose                  |
+| `std::mt19937_64`                          | 2^19937 - 1 | 2500 bytes | High         | 64-bit general purpose           |
+| `std::subtract_with_carry_engine`          | ~2^63       | Moderate   | Moderate     | Historical                       |
+| `std::random_device`                       | N/A         | N/A        | OS-dependent | True entropy (non-deterministic) |
 
 **`std::mt19937`** (Mersenne Twister) is the standard workhorse engine. It has a period of 2^19937 -
 1 (a Mersenne prime), which means the sequence does not repeat for all practical purposes. Its state
@@ -57,8 +60,7 @@ Cryptographically secure [N4950 §29.6.3.4].
 **`std::random_device`** is a non-deterministic uniform random bit generator that obtains entropy
 From the operating system (`/dev/urandom` on Linux, `BCryptGenRandom` on Windows) [N4950 §29.6.5.3].
 
-:::warning
-On some older MinGW implementations, `std::random_device` was implemented with a
+:::warning On some older MinGW implementations, `std::random_device` was implemented with a
 Fixed-seed PRNG, producing the same sequence on every run. This was a well-known bug. Modern
 MinGW-w64 (with GCC 9+) uses the proper OS entropy source. If you need guaranteed non-deterministic
 Seeds on all platforms, read from `/dev/urandom` (POSIX) or `BCryptGenRandom` (Windows) directly.
@@ -69,16 +71,16 @@ Seeds on all platforms, read from `/dev/urandom` (POSIX) or `BCryptGenRandom` (W
 Distributions transform the engine's raw output into values drawn from a specific statistical
 Distribution [N4950 §29.6.4]:
 
-| Distribution | Header | Output Type | Description |
+| Distribution                               | Header     | Output Type | Description                             |
 | :----------------------------------------- | :--------- | :---------- | :-------------------------------------- |
-| `std::uniform_int_distribution&lt;IntT>` | `<random>` | `IntT` | Uniform over [a, b] |
-| `std::uniform_real_distribution&lt;RealT>` | `<random>` | `RealT` | Uniform over [a, b) |
-| `std::normal_distribution&lt;RealT>` | `<random>` | `RealT` | Normal (Gaussian) with mean μ, stddev σ |
-| `std::bernoulli_distribution` | `<random>` | `bool` | Bernoulli trial with probability p |
-| `std::binomial_distribution&lt;IntT>` | `<random>` | `IntT` | Binomial(n, p) |
-| `std::poisson_distribution&lt;IntT>` | `<random>` | `IntT` | Poisson(λ) |
-| `std::exponential_distribution&lt;RealT>` | `<random>` | `RealT` | Exponential(λ) |
-| `std::discrete_distribution&lt;IntT>` | `<random>` | `IntT` | Arbitrary discrete distribution |
+| `std::uniform_int_distribution&lt;IntT>`   | `<random>` | `IntT`      | Uniform over [a, b]                     |
+| `std::uniform_real_distribution&lt;RealT>` | `<random>` | `RealT`     | Uniform over [a, b)                     |
+| `std::normal_distribution&lt;RealT>`       | `<random>` | `RealT`     | Normal (Gaussian) with mean μ, stddev σ |
+| `std::bernoulli_distribution`              | `<random>` | `bool`      | Bernoulli trial with probability p      |
+| `std::binomial_distribution&lt;IntT>`      | `<random>` | `IntT`      | Binomial(n, p)                          |
+| `std::poisson_distribution&lt;IntT>`       | `<random>` | `IntT`      | Poisson(λ)                              |
+| `std::exponential_distribution&lt;RealT>`  | `<random>` | `RealT`     | Exponential(λ)                          |
+| `std::discrete_distribution&lt;IntT>`      | `<random>` | `IntT`      | Arbitrary discrete distribution         |
 
 ### Seeded Random Number Generation
 
@@ -153,13 +155,11 @@ void seeded_rng_demo() {
 }
 ```
 
-:::tip
-`std::seed_seq` [N4950 §29.6.3.8] takes a sequence of seed values and produces a
+:::tip `std::seed_seq` [N4950 §29.6.3.8] takes a sequence of seed values and produces a
 Well-distributed initial state for the engine. This is important because the Mersenne Twister's
 Initialization algorithm has known weaknesses when given a single 32-bit seed — some bits of the
 Initial state may have low entropy. Using `seed_seq` with multiple entropy sources produces a better
-Initial state.
-:::
+Initial state. :::
 
 ### Sampling from Normal Distribution
 
@@ -274,11 +274,9 @@ Expected stdd: 1
   3.75 |                                      1
 ```
 
-:::info
-`std::normal_distribution` uses the Marsaglia polar method internally to transform pairs of
+:::info `std::normal_distribution` uses the Marsaglia polar method internally to transform pairs of
 Uniform random numbers into normally distributed values [N4950 §29.6.4.4]. This method produces
-Values in pairs, so the distribution object may cache one value internally for efficiency.
-:::
+Values in pairs, so the distribution object may cache one value internally for efficiency. :::
 
 ## See Also
 
@@ -289,8 +287,8 @@ Values in pairs, so the distribution object may cache one value internally for e
 ### Engine State, Serialization, and Reproducibility
 
 Every random number engine maintains internal state that determines the next value in the sequence.
-For `std::mt19937`The state is 624 × 32-bit words (2496 bytes). This state can be saved and
-Restored using the `<<` and `>>` operators, enabling deterministic replay:
+For `std::mt19937`The state is 624 × 32-bit words (2496 bytes). This state can be saved and Restored
+using the `<<` and `>>` operators, enabling deterministic replay:
 
 ```cpp
 #include <iostream>
@@ -324,22 +322,20 @@ This serialization is essential for:
 - **Networked games:** Synchronize the RNG state across clients for deterministic behavior.
 - **Fuzz testing:** Record the RNG state that triggered a crash and replay it.
 
-:::warning
-The `operator<<`/`operator>>` format is **not** portable across compilers or standard
+:::warning The `operator<<`/`operator>>` format is **not** portable across compilers or standard
 Library implementations. GCC libstdc++ and Clang libc++ may produce different binary formats. Use
-Only the same implementation for save/restore.
-:::
+Only the same implementation for save/restore. :::
 
 ### `std::random_device` Implementation Details
 
 `std::random_device` is the standard library's interface to OS-provided entropy [N4950 §29.6.5.3]:
 
-| Platform | Implementation (Typical) | Entropy Source |
+| Platform | Implementation (Typical)            | Entropy Source           |
 | :------- | :---------------------------------- | :----------------------- |
-| Linux | Reads from `/dev/urandom` | Kernel CSPRNG (ChaCha20) |
-| macOS | `arc4random_buf` or `/dev/urandom` | Kernel CSPRNG |
-| Windows | `BCryptGenRandom` or `RtlGenRandom` | OS cryptographic RNG |
-| MinGW | Historically broken (fixed GCC 9+) | Was PRNG, now OS entropy |
+| Linux    | Reads from `/dev/urandom`           | Kernel CSPRNG (ChaCha20) |
+| macOS    | `arc4random_buf` or `/dev/urandom`  | Kernel CSPRNG            |
+| Windows  | `BCryptGenRandom` or `RtlGenRandom` | OS cryptographic RNG     |
+| MinGW    | Historically broken (fixed GCC 9+)  | Was PRNG, now OS entropy |
 
 ```cpp
 #include <iostream>
@@ -358,11 +354,9 @@ void random_device_props() {
 }
 ```
 
-:::warning
-`std::random_device::entropy()` returns 0.0 on many implementations even when the device
+:::warning `std::random_device::entropy()` returns 0.0 on many implementations even when the device
 Is truly non-deterministic. A return of 0.0 means "entropy estimate not available," NOT "no
-Entropy." Do not use this value to decide whether the device is secure.
-:::
+Entropy." Do not use this value to decide whether the device is secure. :::
 
 ### `std::seed_seq` and Initialization Quality
 
@@ -462,11 +456,8 @@ void discrete_distribution_demo() {
 }
 ```
 
-:::info
-Info
-Sampling time after an $O(n)$ setup phase. This is optimal for distributions that are sampled many
-Times with the same weights [N4950 §29.6.4.5].
-:::
+:::info Info Sampling time after an $O(n)$ setup phase. This is optimal for distributions that are
+sampled many Times with the same weights [N4950 §29.6.4.5]. :::
 
 ### Poisson and Exponential Distributions
 
@@ -509,13 +500,13 @@ void arrival_process_demo() {
 
 ### Performance Considerations
 
-| Engine | State Size | `operator()` Speed | Memory Footprint |
+| Engine          | State Size | `operator()` Speed  | Memory Footprint |
 | :-------------- | :--------- | :------------------ | :--------------- |
-| `minstd_rand` | 4 bytes | Very fast (LCG) | Minimal |
-| `mt19937` | 2500 bytes | Fast (~5 ns/call) | Large |
-| `mt19937_64` | 2500 bytes | Fast (~5 ns/call) | Large |
-| `ranlux48` | 96 bytes | Slow (discarding) | Moderate |
-| `random_device` | N/A | Very slow (OS call) | None |
+| `minstd_rand`   | 4 bytes    | Very fast (LCG)     | Minimal          |
+| `mt19937`       | 2500 bytes | Fast (~5 ns/call)   | Large            |
+| `mt19937_64`    | 2500 bytes | Fast (~5 ns/call)   | Large            |
+| `ranlux48`      | 96 bytes   | Slow (discarding)   | Moderate         |
+| `random_device` | N/A        | Very slow (OS call) | None             |
 
 ```cpp
 #include <chrono>
@@ -554,37 +545,35 @@ void engine_benchmark() {
 }
 ```
 
-:::tip
-Tip
-`random_device` call, then use the engine for all subsequent random values. `random_device` may make
-An OS syscall for every call, which is orders of magnitude slower than a PRNG.
-:::
+:::tip Tip `random_device` call, then use the engine for all subsequent random values.
+`random_device` may make An OS syscall for every call, which is orders of magnitude slower than a
+PRNG. :::
 
 ### Common Pitfalls
 
 1. **Seeding `mt19937` with a single 32-bit value:** The engine has 2496 bytes of state. A single
- 32-bit seed can only produce 2^32 distinct initial states — a tiny fraction of the engine's
- 2^19937-1 period. Use `std::seed_seq` with multiple entropy sources.
+   32-bit seed can only produce 2^32 distinct initial states — a tiny fraction of the engine's
+   2^19937-1 period. Use `std::seed_seq` with multiple entropy sources.
 
 2. **Using `mt19937` for cryptography:** The Mersenne Twister is **not** cryptographically secure.
- Given 624 consecutive outputs, the full internal state can be recovered. Use a CSPRNG (e.g.,
- `std::random_device` backed by `/dev/urandom`Or a library like libsodium) for
- security-sensitive applications.
+   Given 624 consecutive outputs, the full internal state can be recovered. Use a CSPRNG (e.g.,
+   `std::random_device` backed by `/dev/urandom`Or a library like libsodium) for security-sensitive
+   applications.
 
 3. **Creating distributions inside the loop:** `std::uniform_int_distribution` is lightweight, but
- some distributions (like `std::discrete_distribution`) have expensive constructors. Create the
- distribution once and reuse it.
+   some distributions (like `std::discrete_distribution`) have expensive constructors. Create the
+   distribution once and reuse it.
 
 4. **Ignoring thread safety:** None of the standard engine or distribution types are thread-safe.
- Each thread should have its own engine, or access must be protected by a mutex.
+   Each thread should have its own engine, or access must be protected by a mutex.
 
 5. **Assuming `random_device` is always non-deterministic:** On some older MinGW implementations,
- `random_device` was implemented as a fixed-seed PRNG. Verify on your target platform, or read
- from `/dev/urandom` directly on POSIX systems.
+   `random_device` was implemented as a fixed-seed PRNG. Verify on your target platform, or read
+   from `/dev/urandom` directly on POSIX systems.
 
 6. **Floating-point distribution bounds:** `std::uniform_real_distribution&lt;double>(0.0, 1.0)`
- produces values in $[0.0, 1.0)$ — the upper bound is exclusive. If you need a closed interval
- $[0.0, 1.0]$Use `std::uniform_real_distribution&lt;double>(0.0, std::nextafter(1.0, 2.0))`.
+   produces values in $[0.0, 1.0)$ — the upper bound is exclusive. If you need a closed interval
+   $[0.0, 1.0]$Use `std::uniform_real_distribution&lt;double>(0.0, std::nextafter(1.0, 2.0))`.
 
 :::
 

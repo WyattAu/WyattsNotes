@@ -1,6 +1,8 @@
 ---
 title: Drainage Basins and Hydrology
-description: "Drainage basin systems, the hydrological cycle, storm hydrograph interpretation, and factors affecting discharge for IB Geography."
+description:
+  'Drainage basin systems, the hydrological cycle, storm hydrograph interpretation, and factors
+  affecting discharge for IB Geography.'
 slug: drainage-basins-and-hydrology
 ---
 
@@ -11,19 +13,18 @@ slug: drainage-basins-and-hydrology
 ### Definition and Boundaries
 
 A drainage basin (catchment or watershed) is the area of land from which all precipitation flows to
-A common outlet, where a river enters a lake, sea, or ocean. The boundary of a drainage
-Basin is the watershed (drainage divide), a line of high ground separating one basin from another.
-The drainage basin is an open system: energy and matter enter, are transformed within the system,
-And leave.
+A common outlet, where a river enters a lake, sea, or ocean. The boundary of a drainage Basin is the
+watershed (drainage divide), a line of high ground separating one basin from another. The drainage
+basin is an open system: energy and matter enter, are transformed within the system, And leave.
 
 ### System Components
 
-| Component | Description | Examples |
+| Component             | Description                      | Examples                                                                                                                                                                        |
 | --------------------- | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Inputs** | Water entering the system | Precipitation (rainfall, snow, hail, sleet), intercepted water, groundwater inflow from adjacent basins |
-| **Outputs** | Water leaving the system | Evaporation, transpiration, river discharge to the sea, groundwater outflow |
-| **Stores** | Water held within the system | Vegetation canopy interception, surface storage (puddles, lakes, ponds), soil moisture, groundwater (aquifers, unconfined and confined), channel storage, snowpack and glaciers |
-| **Transfers (flows)** | Movement of water between stores | Throughfall, stemflow, overland flow (Hortonian flow), infiltration, percolation, throughflow (interflow), pipeflow, groundwater flow (baseflow), channel flow |
+| **Inputs**            | Water entering the system        | Precipitation (rainfall, snow, hail, sleet), intercepted water, groundwater inflow from adjacent basins                                                                         |
+| **Outputs**           | Water leaving the system         | Evaporation, transpiration, river discharge to the sea, groundwater outflow                                                                                                     |
+| **Stores**            | Water held within the system     | Vegetation canopy interception, surface storage (puddles, lakes, ponds), soil moisture, groundwater (aquifers, unconfined and confined), channel storage, snowpack and glaciers |
+| **Transfers (flows)** | Movement of water between stores | Throughfall, stemflow, overland flow (Hortonian flow), infiltration, percolation, throughflow (interflow), pipeflow, groundwater flow (baseflow), channel flow                  |
 
 ### The Hydrological Cycle at Basin Scale
 
@@ -60,22 +61,22 @@ Returns to the atmosphere). In humid regions with impermeable geology, $Q/P$ may
 
 ### Components of a Storm Hydrograph
 
-A storm hydrograph (flood hydrograph) plots river discharge ( in m$^3$/s on the y-axis)
-Against time ( hours on the x-axis) for a specific rainfall event. The key features are:
+A storm hydrograph (flood hydrograph) plots river discharge ( in m$^3$/s on the y-axis) Against time
+( hours on the x-axis) for a specific rainfall event. The key features are:
 
 - **Baseflow:** the sustained, relatively constant flow maintained by groundwater discharge into the
- channel between storm events.
+  channel between storm events.
 - **Rising limb:** the period during which discharge increases following the onset of rainfall, as
- water from various sources reaches the channel.
+  water from various sources reaches the channel.
 - **Peak discharge:** the maximum instantaneous discharge during the storm event.
 - **Lag time:** the interval between the centroid of rainfall (or the peak rainfall intensity) and
- the peak discharge. Short lag times indicate rapid runoff generation; long lag times indicate
- slow, delayed response.
+  the peak discharge. Short lag times indicate rapid runoff generation; long lag times indicate
+  slow, delayed response.
 - **Falling limb (recession curve):** the period during which discharge declines as the river drains
- water stored in the channel, on the floodplain, and in the subsurface. The recession curve is
- often approximately exponential.
+  water stored in the channel, on the floodplain, and in the subsurface. The recession curve is
+  often approximately exponential.
 - **Bankfull discharge:** the discharge at which water overtops the channel banks and begins to flow
- across the floodplain.
+  across the floodplain.
 
 ### Hydrograph Shape and Runoff Generation
 
@@ -96,17 +97,17 @@ Scaled and combined to predict the hydrograph for any storm.
 
 ### Physical Factors
 
-| Factor | Effect on Hydrograph | Mechanism |
+| Factor                       | Effect on Hydrograph                                                                                      | Mechanism                                                                                                                |
 | ---------------------------- | --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| **Rainfall intensity** | Shorter lag time, steeper rising limb, higher peak discharge | Intense rainfall exceeds infiltration capacity rapidly, generating overland flow (Hortonian overland flow) |
-| **Rainfall duration** | Longer lag time possible, broader peak, higher total runoff volume | Prolonged rainfall saturates the soil progressively, reducing infiltration capacity over time |
-| **Antecedent soil moisture** | Wet antecedent conditions: short lag time, high peak; dry conditions: long lag time, lower peak | Saturated or near-saturated soil has limited capacity to absorb additional water, so a greater proportion becomes runoff |
-| **Geology** | Impermeable rock (clay, granite): flashy hydrograph; permeable rock (chalk, sandstone): damped hydrograph | Permeable rock promotes deep infiltration and groundwater storage, delaying runoff |
-| **Soil type** | Clay soils: flashy; sandy/loam soils: damped | Clay soils have low infiltration rates; sandy soils drain rapidly, promoting infiltration |
-| **Slope angle** | Steep slopes: short lag time, high peak discharge | Gravity accelerates overland flow on steep slopes, reducing the time for infiltration |
-| **Drainage density** | High density: short lag time, flashy response | A dense network of channels collects water rapidly and delivers it to the main channel |
-| **Basin size and shape** | Large basin: longer lag time; elongated basin: longer lag time; circular basin: shorter lag time | Water from distant parts of large or elongated basins takes longer to reach the outlet |
-| **Vegetation cover** | Dense vegetation: long lag time, lower peak discharge | Interception reduces effective rainfall; root systems increase infiltration; transpiration reduces soil moisture |
+| **Rainfall intensity**       | Shorter lag time, steeper rising limb, higher peak discharge                                              | Intense rainfall exceeds infiltration capacity rapidly, generating overland flow (Hortonian overland flow)               |
+| **Rainfall duration**        | Longer lag time possible, broader peak, higher total runoff volume                                        | Prolonged rainfall saturates the soil progressively, reducing infiltration capacity over time                            |
+| **Antecedent soil moisture** | Wet antecedent conditions: short lag time, high peak; dry conditions: long lag time, lower peak           | Saturated or near-saturated soil has limited capacity to absorb additional water, so a greater proportion becomes runoff |
+| **Geology**                  | Impermeable rock (clay, granite): flashy hydrograph; permeable rock (chalk, sandstone): damped hydrograph | Permeable rock promotes deep infiltration and groundwater storage, delaying runoff                                       |
+| **Soil type**                | Clay soils: flashy; sandy/loam soils: damped                                                              | Clay soils have low infiltration rates; sandy soils drain rapidly, promoting infiltration                                |
+| **Slope angle**              | Steep slopes: short lag time, high peak discharge                                                         | Gravity accelerates overland flow on steep slopes, reducing the time for infiltration                                    |
+| **Drainage density**         | High density: short lag time, flashy response                                                             | A dense network of channels collects water rapidly and delivers it to the main channel                                   |
+| **Basin size and shape**     | Large basin: longer lag time; elongated basin: longer lag time; circular basin: shorter lag time          | Water from distant parts of large or elongated basins takes longer to reach the outlet                                   |
+| **Vegetation cover**         | Dense vegetation: long lag time, lower peak discharge                                                     | Interception reduces effective rainfall; root systems increase infiltration; transpiration reduces soil moisture         |
 
 ### Human Factors
 
@@ -204,24 +205,24 @@ River discharge ($Q$) is calculated as:
 $$Q = w \times \bar{d} \times \bar{v}$$
 
 Where $w$ is channel width, $\bar{d}$ is mean depth, and $\bar{v}$ is mean velocity. Velocity is
-Measured using a flow meter (impeller or electromagnetic) at multiple points across the channel
-( at 0.6 of the depth from the surface, or as the average of measurements at 0.2 and 0.8 of
-The depth for deeper channels). The velocity-area method integrates velocity measurements across the
-Channel cross-section.
+Measured using a flow meter (impeller or electromagnetic) at multiple points across the channel ( at
+0.6 of the depth from the surface, or as the average of measurements at 0.2 and 0.8 of The depth for
+deeper channels). The velocity-area method integrates velocity measurements across the Channel
+cross-section.
 
 ### Hydrograph Analysis
 
 Key analytical skills for IB Geography include:
 
 - **Calculating lag time** from a hydrograph by measuring the time interval between peak rainfall
- and peak discharge.
+  and peak discharge.
 - **Identifying the proportion of baseflow vs stormflow** by separating the hydrograph into its
- components (a straight line drawn from the point where the rising limb begins to the point where
- the recession curve returns to baseflow level).
+  components (a straight line drawn from the point where the rising limb begins to the point where
+  the recession curve returns to baseflow level).
 - **Comparing hydrographs** for different storm events or different drainage basins and explaining
- the differences in terms of physical and human factors.
+  the differences in terms of physical and human factors.
 - **Relating hydrograph characteristics to flood risk**, recognising that flashy hydrographs with
- short lag times and high peak discharges pose a greater flood risk than damped hydrographs.
+  short lag times and high peak discharges pose a greater flood risk than damped hydrographs.
 
 <details>
 <summary>Common Pitfalls: Assuming a Single Factor Controls Hydrograph Shape</summary>

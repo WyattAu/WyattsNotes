@@ -1,8 +1,11 @@
 ---
 title: Measurement and Data Processing
-description: "Rigorous IB chemistry notes covering Measurement and Data Processing. Includes definitions, derivations, worked examples, and exam-style problems."
+description:
+  'Rigorous IB chemistry notes covering Measurement and Data Processing. Includes definitions,
+  derivations, worked examples, and exam-style problems.'
 slug: measurement-and-data-processing
 ---
+
 ## 1. Uncertainty and Error
 
 ### Random and Systematic Errors
@@ -15,12 +18,12 @@ Random errors affect precision but not accuracy.
 From the true value. It arises from instrument calibration faults or methodological biases.
 Systematic errors affect accuracy but not precision.
 
-| Property | Random Error | Systematic Error |
+| Property       | Random Error                     | Systematic Error                  |
 | -------------- | -------------------------------- | --------------------------------- |
-| Direction | Scatters above and below | Consistently in one direction |
-| Affects | Precision | Accuracy |
-| Reduction | Repeated measurements, averaging | Calibration, improved methodology |
-| Identification | Spread of repeated readings | Comparison with accepted value |
+| Direction      | Scatters above and below         | Consistently in one direction     |
+| Affects        | Precision                        | Accuracy                          |
+| Reduction      | Repeated measurements, averaging | Calibration, improved methodology |
+| Identification | Spread of repeated readings      | Comparison with accepted value    |
 
 ### Absolute and Percentage Uncertainty
 
@@ -94,7 +97,7 @@ $$
 - Using the smallest division itself (not half of it) as the uncertainty for analogue instruments.
 - Confusing percentage uncertainty with absolute uncertainty during propagation.
 - Forgetting that the power rule applies only to the measured quantity being raised, not to
- constants like $\pi$.
+  constants like $\pi$.
 
 ---
 
@@ -107,24 +110,24 @@ $$
 3. Leading zeros are **not** significant.
 4. Trailing zeros after a decimal point are significant.
 5. Trailing zeros without a decimal point are **not** significant (ambiguous — use scientific
- notation).
+   notation).
 
-| Value | Sig Figs | Notes |
+| Value               | Sig Figs | Notes                               |
 | ------------------- | -------- | ----------------------------------- |
-| $0.00420$ | $3$ | Leading zeros not significant |
-| $1.050$ | $4$ | Trailing zero after decimal |
-| $3200$ | $2$ | Ambiguous; write as $3.2\times10^3$ |
-| $3.200 \times 10^3$ | $4$ | Scientific notation is clear |
-| $0.001005$ | $4$ | Only leading zeros are ignored |
+| $0.00420$           | $3$      | Leading zeros not significant       |
+| $1.050$             | $4$      | Trailing zero after decimal         |
+| $3200$              | $2$      | Ambiguous; write as $3.2\times10^3$ |
+| $3.200 \times 10^3$ | $4$      | Scientific notation is clear        |
+| $0.001005$          | $4$      | Only leading zeros are ignored      |
 
 ### Arithmetic with Significant Figures
 
-| Operation | Rule |
+| Operation               | Rule                                                                     |
 | ----------------------- | ------------------------------------------------------------------------ |
-| Addition/subtraction | Result has the same number of decimal places as the term with the fewest |
-| Multiplication/division | Result has the same number of sig figs as the term with the fewest |
-| Logarithms | Number of decimal places in result = sig figs in argument |
-| Antilogarithms | Number of sig figs in result = decimal places in argument |
+| Addition/subtraction    | Result has the same number of decimal places as the term with the fewest |
+| Multiplication/division | Result has the same number of sig figs as the term with the fewest       |
+| Logarithms              | Number of decimal places in result = sig figs in argument                |
+| Antilogarithms          | Number of sig figs in result = decimal places in argument                |
 
 :::info[Example]
 
@@ -149,7 +152,7 @@ $$
 ### Drawing Best-Fit Lines
 
 - A **line of best fit** should pass through the centre of the data points, with approximately equal
- numbers of points above and below.
+  numbers of points above and below.
 - Do not force the line through the origin unless the data physically require it.
 - Anomalous points (clear outliers) should be excluded from the best-fit line.
 
@@ -210,20 +213,20 @@ The useful range for organic analysis is approximately $400$--$4000\mathrm{ cm}^
 
 ### Characteristic Absorptions
 
-| Bond | Wavenumber ($\mathrm{cm}^{-1}$) | Notes |
+| Bond                   | Wavenumber ($\mathrm{cm}^{-1}$) | Notes                         |
 | ---------------------- | ------------------------------- | ----------------------------- |
-| O--H (alcohol, free) | $3550$--$3200$ | Broad, rounded |
-| O--H (carboxylic acid) | $3000$--$2500$ | Very broad |
-| N--H | $3500$--$3300$ | Medium, often two peaks |
-| C--H (alkane) | $3000$--$2850$ | Sharp |
-| C--H (alkene/arene) | $3100$--$3000$ | Above $3000\mathrm{ cm}^{-1}$ |
-| C$\equiv$C | $2250$--$2100$ | Weak or absent if symmetric |
-| C$\equiv$N | $2250$--$2200$ | Sharp |
-| C=O | $1700$--$1750$ | Strong, characteristic |
-| C=C | $1680$--$1600$ | Medium |
-| C--O | $1300$--$1000$ | Strong |
-| O--H bend (alcohol) | $1200$--$1000$ | |
-| N--H bend | $1640$--$1550$ | |
+| O--H (alcohol, free)   | $3550$--$3200$                  | Broad, rounded                |
+| O--H (carboxylic acid) | $3000$--$2500$                  | Very broad                    |
+| N--H                   | $3500$--$3300$                  | Medium, often two peaks       |
+| C--H (alkane)          | $3000$--$2850$                  | Sharp                         |
+| C--H (alkene/arene)    | $3100$--$3000$                  | Above $3000\mathrm{ cm}^{-1}$ |
+| C$\equiv$C             | $2250$--$2100$                  | Weak or absent if symmetric   |
+| C$\equiv$N             | $2250$--$2200$                  | Sharp                         |
+| C=O                    | $1700$--$1750$                  | Strong, characteristic        |
+| C=C                    | $1680$--$1600$                  | Medium                        |
+| C--O                   | $1300$--$1000$                  | Strong                        |
+| O--H bend (alcohol)    | $1200$--$1000$                  |                               |
+| N--H bend              | $1640$--$1550$                  |                               |
 
 ### Fingerprint Region
 
@@ -256,12 +259,12 @@ Spectrum plots relative abundance against $m/z$.
 
 ### Key Information from MS
 
-| Feature | Information |
+| Feature       | Information                                                |
 | ------------- | ---------------------------------------------------------- |
-| Molecular ion | Molar mass of the compound |
-| M + 1 peak | Presence of $\mathrm{C}$-13 (about $1.1\%$ per C atom) |
-| M + 2 peak | Presence of $\mathrm{Cl}$ ($3:1$) or $\mathrm{Br}$ ($1:1$) |
-| Fragmentation | Structural information about the molecule |
+| Molecular ion | Molar mass of the compound                                 |
+| M + 1 peak    | Presence of $\mathrm{C}$-13 (about $1.1\%$ per C atom)     |
+| M + 2 peak    | Presence of $\mathrm{Cl}$ ($3:1$) or $\mathrm{Br}$ ($1:1$) |
+| Fragmentation | Structural information about the molecule                  |
 
 ### Nitrogen Rule
 
@@ -271,16 +274,16 @@ Atoms.
 
 ### Fragmentation Patterns
 
-| Fragment ($m/z$) | Likely species |
+| Fragment ($m/z$) | Likely species                                               |
 | ---------------- | ------------------------------------------------------------ |
-| $15$ | $\mathrm{CH}_3^+$ |
-| $17$ | $\mathrm{OH}^+$ |
-| $29$ | $\mathrm{C}_2\mathrm{H}_5^+$ or $\mathrm{CHO}^+$ |
-| $31$ | $\mathrm{CH}_2\mathrm{OH}^+$ (primary alcohol) |
-| $43$ | $\mathrm{C}_3\mathrm{H}_7^+$ or $\mathrm{CH}_3\mathrm{CO}^+$ |
-| $45$ | $\mathrm{COOH}^+$ or $\mathrm{C}_2\mathrm{H}_5\mathrm{O}^+$ |
-| $77$ | $\mathrm{C}_6\mathrm{H}_5^+$ (benzene ring) |
-| $91$ | $\mathrm{C}_7\mathrm{H}_7^+$ (tropylium ion, alkylbenzene) |
+| $15$             | $\mathrm{CH}_3^+$                                            |
+| $17$             | $\mathrm{OH}^+$                                              |
+| $29$             | $\mathrm{C}_2\mathrm{H}_5^+$ or $\mathrm{CHO}^+$             |
+| $31$             | $\mathrm{CH}_2\mathrm{OH}^+$ (primary alcohol)               |
+| $43$             | $\mathrm{C}_3\mathrm{H}_7^+$ or $\mathrm{CH}_3\mathrm{CO}^+$ |
+| $45$             | $\mathrm{COOH}^+$ or $\mathrm{C}_2\mathrm{H}_5\mathrm{O}^+$  |
+| $77$             | $\mathrm{C}_6\mathrm{H}_5^+$ (benzene ring)                  |
+| $91$             | $\mathrm{C}_7\mathrm{H}_7^+$ (tropylium ion, alkylbenzene)   |
 
 ### Common Pitfalls
 
@@ -309,38 +312,38 @@ TMS is assigned $\delta = 0\mathrm{ ppm}$.
 
 ### $\mathrm{^1H}$ NMR Features
 
-| Feature | What it tells you |
+| Feature            | What it tells you                                  |
 | ------------------ | -------------------------------------------------- |
-| Number of signals | Number of chemically distinct proton environments |
-| Integration (area) | Relative number of protons in each environment |
-| Splitting pattern | Number of protons on adjacent carbons (n + 1 rule) |
-| Chemical shift | Electronic environment of each proton |
+| Number of signals  | Number of chemically distinct proton environments  |
+| Integration (area) | Relative number of protons in each environment     |
+| Splitting pattern  | Number of protons on adjacent carbons (n + 1 rule) |
+| Chemical shift     | Electronic environment of each proton              |
 
 ### The n + 1 Rule
 
 A signal is split into $n + 1$ peaks, where $n$ is the number of equivalent protons on adjacent
 Carbons.
 
-| Neighbouring H count | Splitting | Name |
+| Neighbouring H count | Splitting | Name   |
 | -------------------- | --------- | ------ |
-| $0$ | Singlet | $s$ |
-| $1$ | Doublet | $d$ |
-| $2$ | Triplet | $t$ |
-| $3$ | Quartet | $q$ |
-| $4$ | Quintet | $quin$ |
+| $0$                  | Singlet   | $s$    |
+| $1$                  | Doublet   | $d$    |
+| $2$                  | Triplet   | $t$    |
+| $3$                  | Quartet   | $q$    |
+| $4$                  | Quintet   | $quin$ |
 
 ### Characteristic $\mathrm{^1H}$ NMR Chemical Shifts
 
-| Proton type | $\delta$ (ppm) |
+| Proton type           | $\delta$ (ppm)       |
 | --------------------- | -------------------- |
-| Alkane (R--CH$_3$) | $0.7$--$1.3$ |
-| Alkane (R--CH$_2$--R) | $1.2$--$1.5$ |
-| Adjacent to C=O/C=C | $2.0$--$2.7$ |
-| Alkene | $4.5$--$6.5$ |
-| Aromatic | $6.5$--$8.0$ |
-| Aldehyde | $9.0$--$10.0$ |
-| Carboxylic acid | $10.0$--$12.0$ |
-| Alcohol (R--OH) | $0.5$--$5.0$ (broad) |
+| Alkane (R--CH$_3$)    | $0.7$--$1.3$         |
+| Alkane (R--CH$_2$--R) | $1.2$--$1.5$         |
+| Adjacent to C=O/C=C   | $2.0$--$2.7$         |
+| Alkene                | $4.5$--$6.5$         |
+| Aromatic              | $6.5$--$8.0$         |
+| Aldehyde              | $9.0$--$10.0$        |
+| Carboxylic acid       | $10.0$--$12.0$       |
+| Alcohol (R--OH)       | $0.5$--$5.0$ (broad) |
 
 ### $\mathrm{^{13}C}$ NMR
 
@@ -348,33 +351,33 @@ Carbons.
 - Peak areas are **not** proportional to the number of carbons (no quantitative integration).
 - Splitting is normally removed by proton decoupling, so all signals are singlets.
 
-| Carbon type | $\delta$ (ppm) |
+| Carbon type         | $\delta$ (ppm) |
 | ------------------- | -------------- |
-| Alkane | $0$--$50$ |
-| Adjacent to C=O/C=C | $50$--$90$ |
-| Alkene | $100$--$150$ |
-| Aromatic | $120$--$150$ |
-| Carboxylic acid | $160$--$185$ |
-| Ester/amide C=O | $155$--$185$ |
-| Aldehyde | $190$--$220$ |
+| Alkane              | $0$--$50$      |
+| Adjacent to C=O/C=C | $50$--$90$     |
+| Alkene              | $100$--$150$   |
+| Aromatic            | $120$--$150$   |
+| Carboxylic acid     | $160$--$185$   |
+| Ester/amide C=O     | $155$--$185$   |
+| Aldehyde            | $190$--$220$   |
 
 ### Solvent Peaks
 
 Deuterated solvents are used (e.g., $\mathrm{CDCl}_3$$\mathrm{D}_2\mathrm{O}$). Residual proton
 Peaks appear at known positions:
 
-| Solvent | Residual $\mathrm{^1H}$ $\delta$ (ppm) |
+| Solvent                      | Residual $\mathrm{^1H}$ $\delta$ (ppm) |
 | ---------------------------- | -------------------------------------- |
-| $\mathrm{CDCl}_3$ | $7.26$ |
-| $\mathrm{D}_2\mathrm{O}$ | $4.79$ |
-| $\mathrm{DMSO}\mathrm{-}d_6$ | $2.50$ |
+| $\mathrm{CDCl}_3$            | $7.26$                                 |
+| $\mathrm{D}_2\mathrm{O}$     | $4.79$                                 |
+| $\mathrm{DMSO}\mathrm{-}d_6$ | $2.50$                                 |
 
 ### Common Pitfalls
 
 - Counting equivalent protons incorrectly (e.g., the three methyl protons of a $\mathrm{CH}_3$ group
- count as one environment).
+  count as one environment).
 - Forgetting that protons on heteroatoms (OH, NH) may exchange with $\mathrm{D}_2\mathrm{O}$ and
- disappear from the spectrum.
+  disappear from the spectrum.
 - Misassigning splitting patterns when non-equivalent neighbouring protons exist.
 
 ---
@@ -384,10 +387,10 @@ Peaks appear at known positions:
 ### Strategy
 
 1. **MS**: Determine the molecular mass and molecular formula from the molecular ion peak and
- isotope pattern.
+   isotope pattern.
 2. **IR**: Identify functional groups from characteristic absorptions.
 3. **$\mathrm{^1H}$ NMR**: Determine the number of proton environments, their relative numbers, and
- splitting patterns.
+   splitting patterns.
 4. **$\mathrm{^{13}C}$ NMR**: Determine the number of carbon environments.
 5. Assemble the structural fragments and propose a structure consistent with all data.
 
@@ -395,25 +398,24 @@ Peaks appear at known positions:
 
 A compound has molecular ion $\mathrm{M}^+ = 88$. IR shows a strong broad peak at
 $3000$--$2500\mathrm{ cm}^{-1}$ and a strong peak at $1710\mathrm{ cm}^{-1}$. $\mathrm{^1H}$ NMR:
-$\delta\ 1.2\ (t,\ 3\mathrm{H})$$\delta\ 2.6\ (q,\ 2\mathrm{H})$
-$\delta\ 11.0\ (s,\ 1\mathrm{H})$.
+$\delta\ 1.2\ (t,\ 3\mathrm{H})$$\delta\ 2.6\ (q,\ 2\mathrm{H})$ $\delta\ 11.0\ (s,\ 1\mathrm{H})$.
 
 - M = 88; IR suggests carboxylic acid (broad O--H and C=O).
 - $\mathrm{^1H}$ NMR: 3 environments. Quartet + triplet suggests an ethyl group
- ($\mathrm{CH}_3\mathrm{CH}_2$--).
+  ($\mathrm{CH}_3\mathrm{CH}_2$--).
 - Singlet at $\delta\ 11.0$ confirms COOH.
 - Structure: $\mathrm{CH}_3\mathrm{CH}_2\mathrm{COOH}$ (propanoic acid, $M = 74$). Mismatch — need
- to re-evaluate.
+  to re-evaluate.
 - With $\mathrm{M} = 88$: try $\mathrm{C}_4\mathrm{H}_8\mathrm{O}_2$.
- $\mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{COOH}$ (butanoic acid) has M = 88. NMR:
- $\delta\ 0.9\ (t,\ 3\mathrm{H})$$\delta\ 1.6\ (sextet,\ 2\mathrm{H})$
- $\delta\ 2.3\ (t,\ 2\mathrm{H})$$\delta\ 11.0\ (s,\ 1\mathrm{H})$.
+  $\mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{COOH}$ (butanoic acid) has M = 88. NMR:
+  $\delta\ 0.9\ (t,\ 3\mathrm{H})$$\delta\ 1.6\ (sextet,\ 2\mathrm{H})$
+  $\delta\ 2.3\ (t,\ 2\mathrm{H})$$\delta\ 11.0\ (s,\ 1\mathrm{H})$.
 
 The original triplet/quartet pattern is consistent with an ethyl ester, not a carboxylic acid.
-Consider ethyl methanoate ($\mathrm{HCOOCH}_2\mathrm{CH}_3$$M = 74$) — still a mismatch. The
-Correct answer is $\mathrm{CH}_3\mathrm{CH}_2\mathrm{COOCH}_3$ (methyl propanoate, $M = 74$) — but M
-= 88 is $\mathrm{CH}_3\mathrm{CH}_2\mathrm{COOCH}_2\mathrm{CH}_3$ (ethyl propanoate, $M = 102$).
-This illustrates the iterative nature of spectral analysis.
+Consider ethyl methanoate ($\mathrm{HCOOCH}_2\mathrm{CH}_3$$M = 74$) — still a mismatch. The Correct
+answer is $\mathrm{CH}_3\mathrm{CH}_2\mathrm{COOCH}_3$ (methyl propanoate, $M = 74$) — but M = 88 is
+$\mathrm{CH}_3\mathrm{CH}_2\mathrm{COOCH}_2\mathrm{CH}_3$ (ethyl propanoate, $M = 102$). This
+illustrates the iterative nature of spectral analysis.
 
 :::
 
@@ -471,7 +473,7 @@ Shows $\mathrm{M}^+ = 74$ as the base peak. Deduce the structure.
 - $1705\mathrm{ cm}^{-1}$: C=O (carbonyl).
 - Combined O--H + C=O at these positions: carboxylic acid.
 - $\mathrm{C}_3\mathrm{H}_6\mathrm{O}_2$ with a COOH group:
- $\mathrm{CH}_3\mathrm{CH}_2\mathrm{COOH}$ (propanoic acid).
+  $\mathrm{CH}_3\mathrm{CH}_2\mathrm{COOH}$ (propanoic acid).
 - $1050\mathrm{ cm}^{-1}$: C--O stretch consistent with the acid.
 - $\mathrm{M} = 74$: $12(3) + 1(6) + 16(2) = 74$. Confirmed.
 
@@ -498,8 +500,8 @@ $\delta\ 3.6\ (septet,\ 1\mathrm{H})$. Identify the compound.
 Check: $\mathrm{C}_5\mathrm{H}_{10}\mathrm{O}$ — this does not match
 $\mathrm{C}_4\mathrm{H}_8\mathrm{O}$. Reconsider: $\mathrm{CH}_3\mathrm{COCH}_2\mathrm{CH}_3$
 (butan-2-one) has $\mathrm{C}_4\mathrm{H}_8\mathrm{O}$. But its NMR would show
-$\delta\ 1.0\ (t,\ 3\mathrm{H})$$\delta\ 2.1\ (s,\ 3\mathrm{H})$
-$\delta\ 2.4\ (q,\ 2\mathrm{H})$. The septet pattern does not match.
+$\delta\ 1.0\ (t,\ 3\mathrm{H})$$\delta\ 2.1\ (s,\ 3\mathrm{H})$ $\delta\ 2.4\ (q,\ 2\mathrm{H})$.
+The septet pattern does not match.
 
 The correct answer is: the formula must be $\mathrm{C}_5\mathrm{H}_{12}\mathrm{O}$ for an isopropyl
 Group with a $\mathrm{CH}_3$. If restricted to $\mathrm{C}_4\mathrm{H}_8\mathrm{O}$Re-examine:
@@ -537,9 +539,9 @@ $$
 
 **Worked Example: Error propagation in a titration**
 
-A student titrates $25.00 \pm 0.03\mathrm{ mL}$ of $\mathrm{HCl}$ with $0.1050 \pm 0.0005\mathrm{ M}$
-$\mathrm{NaOH}$. The average titre is $23.45 \pm 0.08\mathrm{ mL}$. Calculate the concentration of
-$\mathrm{HCl}$ and its absolute uncertainty.
+A student titrates $25.00 \pm 0.03\mathrm{ mL}$ of $\mathrm{HCl}$ with
+$0.1050 \pm 0.0005\mathrm{ M}$ $\mathrm{NaOH}$. The average titre is $23.45 \pm 0.08\mathrm{ mL}$.
+Calculate the concentration of $\mathrm{HCl}$ and its absolute uncertainty.
 
 <details>
 <summary>Solution</summary>
@@ -548,7 +550,8 @@ $\mathrm{HCl}$ and its absolute uncertainty.
 
 $$n(\mathrm{NaOH}) = 0.1050 \times 0.02345 = 2.4623 \times 10^{-3}\mathrm{ mol}$$
 
-By stoichiometry (1:1 reaction): $n(\mathrm{HCl}) = n(\mathrm{NaOH}) = 2.4623 \times 10^{-3}\mathrm{ mol}$
+By stoichiometry (1:1 reaction):
+$n(\mathrm{HCl}) = n(\mathrm{NaOH}) = 2.4623 \times 10^{-3}\mathrm{ mol}$
 
 $$[\mathrm{HCl}] = \frac{n}{V} = \frac{2.4623 \times 10^{-3}}{0.02500} = 0.09849\mathrm{ M}$$
 
@@ -562,8 +565,9 @@ $$\%\mathrm{u}(V_{\mathrm{HCl}}) = \frac{0.03}{25.00} \times 100\% = 0.120\%$$
 
 **Step 3: Propagate uncertainties.**
 
-The calculation is $[\mathrm{HCl}] = \dfrac{[\mathrm{NaOH}] \times V_{\mathrm{NaOH}}}{V_{\mathrm{HCl}}}$
-So we add percentage uncertainties (multiplication and division):
+The calculation is
+$[\mathrm{HCl}] = \dfrac{[\mathrm{NaOH}] \times V_{\mathrm{NaOH}}}{V_{\mathrm{HCl}}}$ So we add
+percentage uncertainties (multiplication and division):
 
 $$\%\mathrm{u}([\mathrm{HCl}]) = 0.476\% + 0.341\% + 0.120\% = 0.937\% \approx 0.9\%$$
 
@@ -590,8 +594,8 @@ Determine the molecular formula.
 
 **Step 1: Estimate the number of carbon atoms.**
 
-The M+1 peak arises primarily from $^{13}\mathrm{C}$Which has a natural abundance of 1.1% per
-Carbon atom.
+The M+1 peak arises primarily from $^{13}\mathrm{C}$Which has a natural abundance of 1.1% per Carbon
+atom.
 
 $$\mathrm{Number\ of\ C\ atoms} \approx \frac{\%\mathrm{abundance\ of\ M+1}}{1.1\%} = \frac{6.6\%}{1.1\%} = 6$$
 
@@ -647,13 +651,12 @@ $$\mathrm{DBE} = 4 + 1 - \frac{8}{2} = 1$$
 
 - $\delta\ 0.9\ (t,\ 3\mathrm{H})$: terminal $\mathrm{CH}_3$ group neighbouring a $\mathrm{CH}_2$.
 - $\delta\ 1.6\ (sextet,\ 2\mathrm{H})$: $\mathrm{CH}_2$ group between a $\mathrm{CH}_3$ and a
- $\mathrm{CH}_2$.
-- $\delta\ 2.3\ (t,\ 2\mathrm{H})$: $\mathrm{CH}_2$ group adjacent to an electron-withdrawing
- group (the carboxylic acid).
+  $\mathrm{CH}_2$.
+- $\delta\ 2.3\ (t,\ 2\mathrm{H})$: $\mathrm{CH}_2$ group adjacent to an electron-withdrawing group
+  (the carboxylic acid).
 - $\delta\ 11.0\ (s,\ 1\mathrm{H})$: carboxylic acid proton (COOH).
 
-The triplet--sextet--triplet pattern indicates a propyl chain:
-$\mathrm{CH_3CH_2CH_2COOH}$.
+The triplet--sextet--triplet pattern indicates a propyl chain: $\mathrm{CH_3CH_2CH_2COOH}$.
 
 **Step 4: Verify.**
 
@@ -687,7 +690,8 @@ For a monoprotic weak acid $\mathrm{HA}$ with $c_0 = 0.10\mathrm{ M}$:
 
 $$K_a = \frac{[\mathrm{H}^+]^2}{c_0 - [\mathrm{H}^+]} = \frac{(4.5 \times 10^{-5})^2}{0.10 - 4.5 \times 10^{-5}}$$
 
-Since $[\mathrm{H}^+] \ll c_0$: $K_a \approx \dfrac{(4.5 \times 10^{-5})^2}{0.10} = \dfrac{2.025 \times 10^{-9}}{0.10}$
+Since $[\mathrm{H}^+] \ll c_0$:
+$K_a \approx \dfrac{(4.5 \times 10^{-5})^2}{0.10} = \dfrac{2.025 \times 10^{-9}}{0.10}$
 
 $$K_a = 2.0 \times 10^{-8}$$
 
@@ -696,17 +700,17 @@ Two significant figures, matching the two significant figures in $[\mathrm{H}^+]
 **Step 3: Common error to avoid.**
 
 Writing $K_a = 2.025 \times 10^{-8}$ would be incorrect --- the result cannot be more precise than
-The input data. The $\mathrm{pH}$ was given to two decimal places, limiting all derived quantities to
-Two significant figures.
+The input data. The $\mathrm{pH}$ was given to two decimal places, limiting all derived quantities
+to Two significant figures.
 
 </details>
 
 **Worked Example: Graphical analysis and uncertainty from a calibration curve**
 
-A student measures the rate constant $k$ of a reaction at different temperatures and plots
-$\ln(k)$ versus $1/T$ (Arrhenius plot). The gradient of the best-fit line is
-$-5400\mathrm{ K}$. The maximum gradient line has gradient $-5800\mathrm{ K}$ and the minimum
-Gradient line has gradient $-5000\mathrm{ K}$. Calculate $E_a$ and its absolute uncertainty.
+A student measures the rate constant $k$ of a reaction at different temperatures and plots $\ln(k)$
+versus $1/T$ (Arrhenius plot). The gradient of the best-fit line is $-5400\mathrm{ K}$. The maximum
+gradient line has gradient $-5800\mathrm{ K}$ and the minimum Gradient line has gradient
+$-5000\mathrm{ K}$. Calculate $E_a$ and its absolute uncertainty.
 
 <details>
 <summary>Solution</summary>
@@ -738,100 +742,101 @@ $$E_a = 44.9 \pm 3.3\mathrm{ kJ/mol}$$
 ## Common Pitfalls
 
 - **Using the smallest division (not half) for analogue instrument uncertainty**: A ruler with 1 mm
- divisions has an absolute uncertainty of $\pm 0.5\mathrm{ mm}$Not $\pm 1\mathrm{ mm}$. A
- thermometer with $1\degree\mathrm{C}$ divisions has $\pm 0.5\degree\mathrm{C}$.
+  divisions has an absolute uncertainty of $\pm 0.5\mathrm{ mm}$Not $\pm 1\mathrm{ mm}$. A
+  thermometer with $1\degree\mathrm{C}$ divisions has $\pm 0.5\degree\mathrm{C}$.
 
 - **Confusing absolute and percentage uncertainty during propagation**: For addition/subtraction,
- add absolute uncertainties. For multiplication/division, add percentage uncertainties. Applying
- the wrong rule gives a quantitatively incorrect result.
+  add absolute uncertainties. For multiplication/division, add percentage uncertainties. Applying
+  the wrong rule gives a quantitatively incorrect result.
 
-- **Including constants in uncertainty calculations**: $\pi$$R$$N_A$And other defined constants
- have no uncertainty. Do not include them in percentage uncertainty propagation. Only measured
- quantities contribute.
+- **Including constants in uncertainty calculations**: $\pi$$R$$N_A$And other defined constants have
+  no uncertainty. Do not include them in percentage uncertainty propagation. Only measured
+  quantities contribute.
 
 - **Reporting too many significant figures in a final answer**: The result cannot be more precise
- than the least precise input. After propagation, round the uncertainty to one or two significant
- figures, then round the result to match the decimal place of the uncertainty.
+  than the least precise input. After propagation, round the uncertainty to one or two significant
+  figures, then round the result to match the decimal place of the uncertainty.
 
 - **Misidentifying the molecular ion peak in mass spectrometry**: The molecular ion is not always
- the tallest peak (base peak). The molecular ion is the peak at the highest $m/z$ corresponding
- to the intact molecule, before fragmentation.
+  the tallest peak (base peak). The molecular ion is the peak at the highest $m/z$ corresponding to
+  the intact molecule, before fragmentation.
 
 - **Overlooking the $\mathrm{D}_2\mathrm{O}$ exchange test in NMR**: Protons on OH and NH groups
- exchange with deuterium when $\mathrm{D}_2\mathrm{O}$ is added, causing those signals to
- disappear from the $^{1}\mathrm{H}$ NMR spectrum. This is a definitive test for labile protons.
+  exchange with deuterium when $\mathrm{D}_2\mathrm{O}$ is added, causing those signals to disappear
+  from the $^{1}\mathrm{H}$ NMR spectrum. This is a definitive test for labile protons.
 
 - **Forcing a line of best fit through the origin**: Only force through $(0, 0)$ if the data
- physically require it (e.g., Charles's law at absolute zero). For most experimental data, the
- intercept has physical meaning and should be determined from the fit.
+  physically require it (e.g., Charles's law at absolute zero). For most experimental data, the
+  intercept has physical meaning and should be determined from the fit.
 
 - **Ignoring anomalous points instead of justifying their exclusion**: Outliers must be identified
- and justified (e.g., measurement error, equipment malfunction) before exclusion. Removing
- inconvenient data points without justification is scientifically invalid.
+  and justified (e.g., measurement error, equipment malfunction) before exclusion. Removing
+  inconvenient data points without justification is scientifically invalid.
 
 - **Misinterpreting the M+2 peak in mass spectrometry**: A 3:1 ratio of M to M+2 indicates one
- chlorine atom. A 1:1 ratio indicates one bromine atom. The absence of a significant M+2 peak
- rules out halogens but does not rule out other elements.
+  chlorine atom. A 1:1 ratio indicates one bromine atom. The absence of a significant M+2 peak rules
+  out halogens but does not rule out other elements.
 
 - **Counting proton environments incorrectly in NMR**: Symmetry-equivalent protons produce a single
- signal. In $\mathrm{CH_3CH_2CH_3}$ (propane), there are two proton environments (the two terminal
- $\mathrm{CH}_3$ groups are equivalent), not three.
+  signal. In $\mathrm{CH_3CH_2CH_3}$ (propane), there are two proton environments (the two terminal
+  $\mathrm{CH}_3$ groups are equivalent), not three.
 
 ---
 
 ## Exam-Style Problems
 
 1. A student measures the density of a metal cylinder using a vernier caliper (absolute uncertainty
- $\pm 0.02\mathrm{ mm}$) and a balance (absolute uncertainty $\pm 0.01\mathrm{ g}$). The diameter
- is $12.50\mathrm{ mm}$The height is $25.00\mathrm{ mm}$And the mass is $20.00\mathrm{ g}$.
- Calculate the density and its percentage uncertainty. The density formula is
- $\rho = \dfrac{m}{\pi(d/2)^2 h}$. **[Medium]**
+   $\pm 0.02\mathrm{ mm}$) and a balance (absolute uncertainty $\pm 0.01\mathrm{ g}$). The diameter
+   is $12.50\mathrm{ mm}$The height is $25.00\mathrm{ mm}$And the mass is $20.00\mathrm{ g}$.
+   Calculate the density and its percentage uncertainty. The density formula is
+   $\rho = \dfrac{m}{\pi(d/2)^2 h}$. **[Medium]**
 
 2. An IR spectrum shows absorptions at $3350\mathrm{ cm}^{-1}$ (broad, medium),
- $2950\mathrm{ cm}^{-1}$ (sharp), $1680\mathrm{ cm}^{-1}$ (strong), $1600\mathrm{ cm}^{-1}$
- (medium), and $1500\mathrm{ cm}^{-1}$ (medium). The mass spectrum shows $\mathrm{M}^+ = 122$
- with a small M+2 peak. Deduce the structure and explain each piece of spectral evidence.
- **[Hard]**
+   $2950\mathrm{ cm}^{-1}$ (sharp), $1680\mathrm{ cm}^{-1}$ (strong), $1600\mathrm{ cm}^{-1}$
+   (medium), and $1500\mathrm{ cm}^{-1}$ (medium). The mass spectrum shows $\mathrm{M}^+ = 122$ with
+   a small M+2 peak. Deduce the structure and explain each piece of spectral evidence. **[Hard]**
 
 3. A compound $\mathrm{C}_5\mathrm{H}_{10}\mathrm{O}_2$ has the following $^{1}\mathrm{H}$ NMR
- spectrum: $\delta\ 1.2\ (d,\ 6\mathrm{H})$$\delta\ 2.0\ (s,\ 3\mathrm{H})$
- $\delta\ 4.1\ (septet,\ 1\mathrm{H})$$\delta\ 11.5\ (s,\ 1\mathrm{H})$. IR shows a broad
- peak at $3000\mathrm{ cm}^{-1}$ and a strong peak at $1710\mathrm{ cm}^{-1}$. Identify the
- compound and explain the splitting pattern. **[Hard]**
+   spectrum: $\delta\ 1.2\ (d,\ 6\mathrm{H})$$\delta\ 2.0\ (s,\ 3\mathrm{H})$
+   $\delta\ 4.1\ (septet,\ 1\mathrm{H})$$\delta\ 11.5\ (s,\ 1\mathrm{H})$. IR shows a broad peak at
+   $3000\mathrm{ cm}^{-1}$ and a strong peak at $1710\mathrm{ cm}^{-1}$. Identify the compound and
+   explain the splitting pattern. **[Hard]**
 
 4. A student performs an experiment to determine $K_c$ for a reaction and obtains the following
- values in three trials: $4.2 \times 10^{-2}$$3.8 \times 10^{-2}$$4.5 \times 10^{-2}$. (a)
- Calculate the mean and standard deviation. (b) Express the result as mean $\pm$ uncertainty.
- (c) Is the spread of results consistent with random error only? **[Medium]**
+   values in three trials: $4.2 \times 10^{-2}$$3.8 \times 10^{-2}$$4.5 \times 10^{-2}$. (a)
+   Calculate the mean and standard deviation. (b) Express the result as mean $\pm$ uncertainty. (c)
+   Is the spread of results consistent with random error only? **[Medium]**
 
 5. The mass spectrum of a compound shows the molecular ion at $m/z\ 94$ (base peak) and a prominent
- fragment at $m/z\ 77$. The IR spectrum shows absorptions at $3050\mathrm{ cm}^{-1}$
- $1600\mathrm{ cm}^{-1}$$1500\mathrm{ cm}^{-1}$And $750\mathrm{ cm}^{-1}$. Deduce the
- structure of the compound and explain the fragmentation. **[Medium]**
+   fragment at $m/z\ 77$. The IR spectrum shows absorptions at $3050\mathrm{ cm}^{-1}$
+   $1600\mathrm{ cm}^{-1}$$1500\mathrm{ cm}^{-1}$And $750\mathrm{ cm}^{-1}$. Deduce the structure of
+   the compound and explain the fragmentation. **[Medium]**
 
 6. In a colorimetry experiment, a student measures the absorbance of five standard solutions and
- constructs a calibration curve of absorbance versus concentration. The gradient is
- $245\mathrm{ L/mol}$ with an uncertainty of $\pm 12\mathrm{ L/mol}$. An unknown solution has
- absorbance $0.350 \pm 0.005$. Calculate the concentration of the unknown and its uncertainty.
- **[Hard]**
+   constructs a calibration curve of absorbance versus concentration. The gradient is
+   $245\mathrm{ L/mol}$ with an uncertainty of $\pm 12\mathrm{ L/mol}$. An unknown solution has
+   absorbance $0.350 \pm 0.005$. Calculate the concentration of the unknown and its uncertainty.
+   **[Hard]**
 
-7. Calculate $\log(3.20 \times 10^{-4})$ and $10^{-7.45}$Each to the correct number of
- significant figures. State the rule that governs significant figures in logarithmic and
- antilogarithmic operations. **[Easy]**
+7. Calculate $\log(3.20 \times 10^{-4})$ and $10^{-7.45}$Each to the correct number of significant
+   figures. State the rule that governs significant figures in logarithmic and antilogarithmic
+   operations. **[Easy]**
 
-8. A $^{13}\mathrm{C}$ NMR spectrum of a compound $\mathrm{C}_8\mathrm{H}_{10}$ shows 5 signals.
- The $^{1}\mathrm{H}$ NMR shows: $\delta\ 2.3\ (s,\ 3\mathrm{H})$$\delta\ 7.1$--$7.4$
- $(m,\ 7\mathrm{H})$. Identify the compound. Explain why the aromatic region shows a multiplet
- rather than distinct signals. **[Hard]**
+8. A $^{13}\mathrm{C}$ NMR spectrum of a compound $\mathrm{C}_8\mathrm{H}_{10}$ shows 5 signals. The
+   $^{1}\mathrm{H}$ NMR shows: $\delta\ 2.3\ (s,\ 3\mathrm{H})$$\delta\ 7.1$--$7.4$
+   $(m,\ 7\mathrm{H})$. Identify the compound. Explain why the aromatic region shows a multiplet
+   rather than distinct signals. **[Hard]**
 
 ---
 
 ## If You Get These Wrong, Revise:
 
 - **Atomic theory and electron configurations** → Review [./atomic-theory](./atomic-theory)
-- **Organic chemistry spectroscopic identification** → Review [./organic-chemistry-advanced](./organic-chemistry-advanced)
+- **Organic chemistry spectroscopic identification** → Review
+  [./organic-chemistry-advanced](./organic-chemistry-advanced)
 - **Acid-base calculations and pH** → Review [./acids-bases-advanced](./acids-bases-advanced)
-- **Equilibrium constant expressions** → Review [./equilibrium/equilibrium](./equilibrium/equilibrium)
+- **Equilibrium constant expressions** → Review
+  [./equilibrium/equilibrium](./equilibrium/equilibrium)
 
 ## Summary
 

@@ -1,9 +1,12 @@
 ---
 id: nio-deep-dive
 title: NIO Deep Dive
-description: "NIO Deep Dive — NIO Overview; Buffer vs Stream; Buffers; `ByteBuffer` including key definitions, derivations, and problem-solving techniques."
+description:
+  'NIO Deep Dive — NIO Overview; Buffer vs Stream; Buffers; `ByteBuffer` including key definitions,
+  derivations, and problem-solving techniques.'
 slug: nio-deep-dive
 ---
+
 ## NIO Overview
 
 `java.nio` (New I/O, introduced in JDK 1.4) provides a buffer-oriented, non-blocking alternative to
@@ -12,13 +15,13 @@ Handling thousands of connections, file operations on large files, and memory-ma
 
 ### Buffer vs Stream
 
-| Aspect | Stream I/O (`java.io`) | NIO (`java.nio`) |
+| Aspect          | Stream I/O (`java.io`)                    | NIO (`java.nio`)                            |
 | --------------- | ----------------------------------------- | ------------------------------------------- |
-| Data model | Byte-by-byte or char-by-char | Blocks of data (buffers) |
-| Direction | Unidirectional (InputStream/OutputStream) | Bidirectional (channels) |
-| Blocking | Always blocking | Blocking or non-blocking |
-| File operations | Sequential | Random access, memory-mapped |
-| Threading model | One thread per connection | One thread for many connections (selectors) |
+| Data model      | Byte-by-byte or char-by-char              | Blocks of data (buffers)                    |
+| Direction       | Unidirectional (InputStream/OutputStream) | Bidirectional (channels)                    |
+| Blocking        | Always blocking                           | Blocking or non-blocking                    |
+| File operations | Sequential                                | Random access, memory-mapped                |
+| Threading model | One thread per connection                 | One thread for many connections (selectors) |
 
 ## Buffers
 
@@ -44,12 +47,12 @@ ByteBuffer wrapBuf = ByteBuffer.wrap(data);
 
 Every buffer has four core properties:
 
-| Property | Description |
+| Property   | Description                                                                                                                            |
 | ---------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| `capacity` | Maximum number of elements the buffer can hold. Set at creation, never changes. |
-| `position` | Index of the next element to read or write. Starts at 0, increments on read/write. |
-| `limit` | First index that should not be read or written. For write mode, equals capacity. For read mode, equals the number of elements written. |
-| `mark` | An optional bookmark (set via `mark()`Reset via `reset()`). |
+| `capacity` | Maximum number of elements the buffer can hold. Set at creation, never changes.                                                        |
+| `position` | Index of the next element to read or write. Starts at 0, increments on read/write.                                                     |
+| `limit`    | First index that should not be read or written. For write mode, equals capacity. For read mode, equals the number of elements written. |
+| `mark`     | An optional bookmark (set via `mark()`Reset via `reset()`).                                                                            |
 
 **Invariants:** `0 <= mark <= position <= limit <= capacity`
 
@@ -101,12 +104,10 @@ ByteBuffer direct = ByteBuffer.allocateDirect(1024);
 // The OS can perform DMA (direct memory access) directly to/from the buffer
 ```
 
-:::info
-Use direct buffers when the buffer is long-lived and used for repeated I/O operations. The
+:::info Use direct buffers when the buffer is long-lived and used for repeated I/O operations. The
 Allocation cost is amortized over many I/O calls, and the avoidance of heap-to-native copies
 Improves throughput. Use heap buffers for short-lived buffers where allocation speed matters more
-Than I/O throughput.
-:::
+Than I/O throughput. :::
 
 ### `get` and `put` Operations
 
@@ -212,11 +213,9 @@ try (FileChannel src = FileChannel.open(Path.of("source.bin"), StandardOpenOptio
 }
 ```
 
-:::info
-`transferTo` may not transfer all requested bytes in a single call (it returns the actual
+:::info `transferTo` may not transfer all requested bytes in a single call (it returns the actual
 Number transferred). Loop until the return value is zero or an exception is thrown. On Linux with
-Ext4/xfs, the entire transfer completes in a single system call.
-:::
+Ext4/xfs, the entire transfer completes in a single system call. :::
 
 ### File Locking
 
@@ -248,12 +247,10 @@ FileLock sharedLock = channel.tryLock(0L, Long.MAX_VALUE, true); // true = share
 FileLock exclusiveLock = channel.tryLock(0L, Long.MAX_VALUE, false); // false = exclusive
 ```
 
-:::warning
-File locks are JVM-scoped, not thread-scoped. If two threads in the same JVM try to
+:::warning File locks are JVM-scoped, not thread-scoped. If two threads in the same JVM try to
 Acquire overlapping exclusive locks on the same file, the second `lock()` call throws
 `OverlappingFileLockException`. Use `tryLock()` for non-blocking acquisition. Locks are
-Automatically released when the channel is closed or the JVM exits.
-:::
+Automatically released when the channel is closed or the JVM exits. :::
 
 ### Socket Channels
 
@@ -429,11 +426,9 @@ while (buf.hasRemaining()) {
 }
 ```
 
-:::warning
-When using non-blocking I/O, you must handle partial reads and writes. A single `read()`
+:::warning When using non-blocking I/O, you must handle partial reads and writes. A single `read()`
 May return fewer bytes than requested, and a single `write()` may accept fewer bytes than provided.
-Always check the return value and manage the buffer position accordingly.
-:::
+Always check the return value and manage the buffer position accordingly. :::
 
 ## `AsynchronousFileChannel`
 
@@ -491,11 +486,9 @@ try (AsynchronousFileChannel channel = AsynchronousFileChannel.open(
 }
 ```
 
-:::info
-The completion handler's callback methods are executed by the `AsynchronousFileChannel`'s
+:::info The completion handler's callback methods are executed by the `AsynchronousFileChannel`'s
 Thread pool. By default, this is the JVM-wide default `ForkJoinPool`. You can provide a custom
-`ExecutorService` via `AsynchronousFileChannel.open(path, options, executor)`.
-:::
+`ExecutorService` via `AsynchronousFileChannel.open(path, options, executor)`. :::
 
 ## `Path` and `Files` Utility Classes
 
@@ -604,26 +597,24 @@ try (FileChannel channel = FileChannel.open(Path.of("data.bin"),
 
 ### Map Modes
 
-| Mode | Description |
+| Mode         | Description                                                                          |
 | ------------ | ------------------------------------------------------------------------------------ |
-| `READ_ONLY` | Read-only mapping. Attempts to modify the buffer throw `ReadOnlyBufferException`. |
-| `READ_WRITE` | Read-write mapping. Changes are written back to the file. |
-| `PRIVATE` | Copy-on-write. Changes are not written to the file; they are private to this buffer. |
+| `READ_ONLY`  | Read-only mapping. Attempts to modify the buffer throw `ReadOnlyBufferException`.    |
+| `READ_WRITE` | Read-write mapping. Changes are written back to the file.                            |
+| `PRIVATE`    | Copy-on-write. Changes are not written to the file; they are private to this buffer. |
 
 ### Use Cases
 
 - **Structured binary file access** — reading/writing fixed-format records at known offsets.
 - **Shared memory between processes** — two JVM processes can map the same file and communicate
- through the mapped buffer.
+  through the mapped buffer.
 - **Large file processing** — process terabyte-scale files without loading them into JVM heap.
 
-:::warning
-`MappedByteBuffer` uses native memory, not the Java heap. It is not subject to GC heap
+:::warning `MappedByteBuffer` uses native memory, not the Java heap. It is not subject to GC heap
 Limits, but it does consume address space. On 32-bit JVMs, you are limited to ~2 GB of mapped
 Memory. On 64-bit JVMs, the limit is the available virtual address space. Closing the `FileChannel`
 Does not immediately unmap the buffer — the mapped memory is released when the `MappedByteBuffer`
-Object is GC'd, which may be delayed.
-:::
+Object is GC'd, which may be delayed. :::
 
 ## Common Pitfalls
 
@@ -816,11 +807,11 @@ try (FileChannel fc = FileChannel.open(Path.of("request.bin"), READ)) {
 The classic Reactor pattern with selectors is effective but has limitations:
 
 - **Single selector thread** — all I/O events are processed on one thread. CPU-bound processing
- blocks the selector.
+  blocks the selector.
 - **Multiple selector threads** — can process I/O events in parallel, but requires careful
- coordination (e.g., `wakeup()` calls).
+  coordination (e.g., `wakeup()` calls).
 - **Selector + worker pool** — the selector thread dispatches I/O events; worker threads handle
- business logic. This is the most common production pattern.
+  business logic. This is the most common production pattern.
 
 ```java
 ExecutorService workerPool = Executors.newFixedThreadPool(

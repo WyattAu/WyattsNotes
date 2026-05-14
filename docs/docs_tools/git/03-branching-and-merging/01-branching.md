@@ -1,6 +1,8 @@
 ---
 title: Branching
-description: "Branching — Branch Internals; Equivalent to: echo $(git rev-parse HEAD) >.git/refs/heads/feature-auth; Creating and Managing Branches; Creating Branches."
+description:
+  'Branching — Branch Internals; Equivalent to: echo $(git rev-parse HEAD)
+  >.git/refs/heads/feature-auth; Creating and Managing Branches; Creating Branches.'
 date: 2025-06-03T02:00:00.000Z
 tags:
   - git
@@ -9,15 +11,21 @@ categories:
   - CS
 slug: branching
 ---
+
 ## Why Branching Matters
 
-Branching is the mechanism that enables **parallel development** — multiple developers (or a single developer working on multiple features) can modify the codebase independently, then integrate their changes. Git's branching model is one of its defining strengths: branches are cheap ($O(1)$ creation), fast to switch, and designed to be created and deleted frequently.
+Branching is the mechanism that enables **parallel development** — multiple developers (or a single
+developer working on multiple features) can modify the codebase independently, then integrate their
+changes. Git's branching model is one of its defining strengths: branches are cheap ($O(1)$
+creation), fast to switch, and designed to be created and deleted frequently.
 
-This contrasts sharply with older VCS where branching was an expensive operation that involved copying the entire directory tree (CVS) or was mediated by a central server (early SVN).
+This contrasts sharply with older VCS where branching was an expensive operation that involved
+copying the entire directory tree (CVS) or was mediated by a central server (early SVN).
 
 ## Branch Internals
 
-A branch in Git is nothing more than a **40-byte text file** containing a SHA-1 hash. Creating a branch does not copy any files or objects — it writes a single reference:
+A branch in Git is nothing more than a **40-byte text file** containing a SHA-1 hash. Creating a
+branch does not copy any files or objects — it writes a single reference:
 
 ```bash
 $ git branch feature-auth
@@ -93,7 +101,8 @@ $ git branch --no-merged
 
 ### Switching Branches
 
-Git provides two commands for switching branches. `git switch` is the modern command (Git 2.23+); `git checkout` is the legacy command that serves double duty (switch branches and restore files).
+Git provides two commands for switching branches. `git switch` is the modern command (Git 2.23+);
+`git checkout` is the legacy command that serves double duty (switch branches and restore files).
 
 ```bash
 # Modern (recommended)
@@ -110,7 +119,8 @@ When you run `git switch main`Git performs the following:
 1. **Validate**: Check that the working directory is clean (or that changes can be carried over).
 2. **Update HEAD**: Write `ref: refs/heads/main` to `.git/HEAD`.
 3. **Update the index**: Load the tree object pointed to by `main` into the index.
-4. **Update the working directory**: Compare the new index with the current working directory, and add, modify, or delete files as needed.
+4. **Update the working directory**: Compare the new index with the current working directory, and
+   add, modify, or delete files as needed.
 
 ```mermaid
 flowchart LR
@@ -125,7 +135,8 @@ flowchart LR
     H --> I["Commit, stash,\nor discard changes first"]
 ```
 
-If you have uncommitted changes that **do not conflict** with the target branch, Git carries them over. If they **do conflict**, Git refuses to switch:
+If you have uncommitted changes that **do not conflict** with the target branch, Git carries them
+over. If they **do conflict**, Git refuses to switch:
 
 ```
 error: Your local changes to the following files would be overwritten by checkout:
@@ -145,7 +156,8 @@ $ git switch -f main
 
 :::warning
 
-`git switch -f` is **destructive** — it discards all uncommitted changes. Use `git stash` first if you want to preserve them.
+`git switch -f` is **destructive** — it discards all uncommitted changes. Use `git stash` first if
+you want to preserve them.
 
 :::
 
@@ -165,34 +177,38 @@ $ git push origin --delete feature-auth
 
 ### Safe Deletion Rules
 
-- `git branch -d` refuses to delete a branch if it contains commits not reachable from any other branch. This prevents accidental loss of work.
+- `git branch -d` refuses to delete a branch if it contains commits not reachable from any other
+  branch. This prevents accidental loss of work.
 - `git branch -D` bypasses this check.
-- Even after deletion, commits are still in the object store and recoverable via the reflog for 90 days (default).
+- Even after deletion, commits are still in the object store and recoverable via the reflog for 90
+  days (default).
 
 ## Branch Naming Conventions
 
 Consistent branch naming is essential for project hygiene. Common conventions:
 
-| Pattern | Purpose |
+| Pattern                          | Purpose                                            |
 | -------------------------------- | -------------------------------------------------- |
-| `main``master` | Production-ready code |
-| `staging` | Pre-production integration branch |
-| `develop` | Active development (Git Flow) |
+| `main``master`                   | Production-ready code                              |
+| `staging`                        | Pre-production integration branch                  |
+| `develop`                        | Active development (Git Flow)                      |
 | `feature/<ticket>-<description>` | Feature development (e.g., `feature/PROJ-42-auth`) |
-| `bugfix/<ticket>-<description>` | Bug fixes |
-| `hotfix/<description>` | Urgent production fixes |
-| `release/<version>` | Release preparation |
-| `experiment/<description>` | Experimental work |
+| `bugfix/<ticket>-<description>`  | Bug fixes                                          |
+| `hotfix/<description>`           | Urgent production fixes                            |
+| `release/<version>`              | Release preparation                                |
+| `experiment/<description>`       | Experimental work                                  |
 
 :::tip
 
-Configure `git config --global push.default current` to ensure `git push` always pushes the current branch to a remote branch with the same name. This prevents accidental pushes to the wrong branch.
+Configure `git config --global push.default current` to ensure `git push` always pushes the current
+branch to a remote branch with the same name. This prevents accidental pushes to the wrong branch.
 
 :::
 
 ## Tracking Branches
 
-A **tracking branch** is a local branch that has a direct relationship with a remote branch. When you clone a repository, Git automatically creates a tracking branch for the default remote branch:
+A **tracking branch** is a local branch that has a direct relationship with a remote branch. When
+you clone a repository, Git automatically creates a tracking branch for the default remote branch:
 
 ```bash
 # Set up tracking (automatically done by git clone)
@@ -236,7 +252,8 @@ $ git push origin --delete old-name
 
 ## Detached HEAD (Revisited)
 
-Detached HEAD occurs when `HEAD` points directly to a commit rather than a branch reference. This happens when you:
+Detached HEAD occurs when `HEAD` points directly to a commit rather than a branch reference. This
+happens when you:
 
 - Check out a specific commit hash: `git checkout a3f2b1c`
 - Check out a tag: `git checkout v1.0`

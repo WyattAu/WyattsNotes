@@ -1,6 +1,8 @@
 ---
 title: Algorithms and Programming
-description: "Algorithms and Programming — What is an Algorithm? (OL/HL); Representing Algorithms; Programming Constructs (OL/HL); Sequence."
+description:
+  'Algorithms and Programming — What is an Algorithm? (OL/HL); Representing Algorithms; Programming
+  Constructs (OL/HL); Sequence.'
 date: 2026-04-14
 tags:
   - Computer Science
@@ -9,6 +11,7 @@ categories:
   - Computer Science
 slug: algorithms-and-programming
 ---
+
 # Algorithms and Programming
 
 This topic covers algorithm design, programming constructs, searching and sorting algorithms, and
@@ -27,16 +30,16 @@ An algorithm is a step-by-step procedure for solving a problem. It must:
 
 - **Pseudocode:** structured English-like description.
 - **Flowcharts:** visual diagram using standard symbols (oval for start/end, rectangle for process,
- diamond for decision, parallelogram for I/O).
+  diamond for decision, parallelogram for I/O).
 
 **Choosing a representation:**
 
-| Representation | Precision | Readability | Executable |
+| Representation   | Precision | Readability | Executable |
 | ---------------- | --------- | ----------- | ---------- |
-| Natural language | Low | High | No |
-| Pseudocode | Medium | Medium | No |
-| Flowchart | Medium | High | No |
-| Programming code | High | Low | Yes |
+| Natural language | Low       | High        | No         |
+| Pseudocode       | Medium    | Medium      | No         |
+| Flowchart        | Medium    | High        | No         |
+| Programming code | High      | Low         | Yes        |
 
 ## Programming Constructs (OL/HL)
 
@@ -166,10 +169,10 @@ print(f"Stack: {stack}")  # [10, 20]
 
 | Operation | Time Complexity |
 | --------- | --------------- |
-| push | $O(1)$ |
-| pop | $O(1)$ |
-| peek | $O(1)$ |
-| search | $O(n)$ |
+| push      | $O(1)$          |
+| pop       | $O(1)$          |
+| peek      | $O(1)$          |
+| search    | $O(n)$          |
 
 ### Queues (HL)
 
@@ -313,25 +316,25 @@ print(quick_sort(numbers))
 
 ### Sorting Algorithm Comparison (HL)
 
-| Algorithm | Best | Average | Worst | Stable | Space |
+| Algorithm      | Best          | Average       | Worst         | Stable | Space       |
 | -------------- | ------------- | ------------- | ------------- | ------ | ----------- |
-| Bubble Sort | $O(n)$ | $O(n^2)$ | $O(n^2)$ | Yes | $O(1)$ |
-| Insertion Sort | $O(n)$ | $O(n^2)$ | $O(n^2)$ | Yes | $O(1)$ |
-| Quick Sort | $O(n \log n)$ | $O(n \log n)$ | $O(n^2)$ | No | $O(\log n)$ |
-| Merge Sort | $O(n \log n)$ | $O(n \log n)$ | $O(n \log n)$ | Yes | $O(n)$ |
+| Bubble Sort    | $O(n)$        | $O(n^2)$      | $O(n^2)$      | Yes    | $O(1)$      |
+| Insertion Sort | $O(n)$        | $O(n^2)$      | $O(n^2)$      | Yes    | $O(1)$      |
+| Quick Sort     | $O(n \log n)$ | $O(n \log n)$ | $O(n^2)$      | No     | $O(\log n)$ |
+| Merge Sort     | $O(n \log n)$ | $O(n \log n)$ | $O(n \log n)$ | Yes    | $O(n)$      |
 
 ## Big O Notation (HL)
 
 Big O notation describes the worst-case time complexity of an algorithm.
 
-| Complexity | Name | Example |
+| Complexity    | Name         | Example                             |
 | ------------- | ------------ | ----------------------------------- |
-| $O(1)$ | Constant | Accessing an array element by index |
-| $O(\log n)$ | Logarithmic | Binary search |
-| $O(n)$ | Linear | Linear search |
-| $O(n \log n)$ | Linearithmic | Merge sort, quick sort (average) |
-| $O(n^2)$ | Quadratic | Bubble sort, insertion sort |
-| $O(2^n)$ | Exponential | Recursive Fibonacci |
+| $O(1)$        | Constant     | Accessing an array element by index |
+| $O(\log n)$   | Logarithmic  | Binary search                       |
+| $O(n)$        | Linear       | Linear search                       |
+| $O(n \log n)$ | Linearithmic | Merge sort, quick sort (average)    |
+| $O(n^2)$      | Quadratic    | Bubble sort, insertion sort         |
+| $O(2^n)$      | Exponential  | Recursive Fibonacci                 |
 
 **Rules for analysing code:**
 
@@ -443,9 +446,7 @@ def merge(left, right):
 
 **Trace of merge sort on [38, 27, 43, 3]:**
 
-Split: [38, 27] and [43, 3].
-Sort [38, 27]: [27, 38]. Sort [43, 3]: [3, 43].
-Merge: [3, 27, 38, 43].
+Split: [38, 27] and [43, 3]. Sort [38, 27]: [27, 38]. Sort [43, 3]: [3, 43]. Merge: [3, 27, 38, 43].
 
 ### Quick Sort in Detail (HL)
 
@@ -464,12 +465,12 @@ def quick_sort(arr):
 
 ### Sorting Algorithm Comparison Table (HL)
 
-| Algorithm | Best | Average | Worst | Stable | Space |
+| Algorithm      | Best          | Average       | Worst         | Stable | Space       |
 | -------------- | ------------- | ------------- | ------------- | ------ | ----------- |
-| Bubble Sort | $O(n)$ | $O(n^2)$ | $O(n^2)$ | Yes | $O(1)$ |
-| Insertion Sort | $O(n)$ | $O(n^2)$ | $O(n^2)$ | Yes | $O(1)$ |
-| Quick Sort | $O(n \log n)$ | $O(n \log n)$ | $O(n^2)$ | No | $O(\log n)$ |
-| Merge Sort | $O(n \log n)$ | $O(n \log n)$ | $O(n \log n)$ | Yes | $O(n)$ |
+| Bubble Sort    | $O(n)$        | $O(n^2)$      | $O(n^2)$      | Yes    | $O(1)$      |
+| Insertion Sort | $O(n)$        | $O(n^2)$      | $O(n^2)$      | Yes    | $O(1)$      |
+| Quick Sort     | $O(n \log n)$ | $O(n \log n)$ | $O(n^2)$      | No     | $O(\log n)$ |
+| Merge Sort     | $O(n \log n)$ | $O(n \log n)$ | $O(n \log n)$ | Yes    | $O(n)$      |
 
 ### Recursion in Detail (HL)
 
@@ -555,30 +556,30 @@ class LinkedList:
 
 **Linked list complexity:**
 
-| Operation | Time Complexity |
-| ---------- | --------------- |
-| Append | $O(n)$ |
-| Delete | $O(n)$ |
-| Search | $O(n)$ |
-| Insert head| $O(1)$ |
+| Operation   | Time Complexity |
+| ----------- | --------------- |
+| Append      | $O(n)$          |
+| Delete      | $O(n)$          |
+| Search      | $O(n)$          |
+| Insert head | $O(1)$          |
 
 ## Additional Practice Questions
 
 5. Write a Python function that checks whether a string is a palindrome. What is the time
- complexity?
+   complexity?
 
 6. Explain why merge sort has $O(n \log n)$ time complexity in all cases.
 
 7. Write pseudocode for a procedure that removes duplicates from a sorted array in-place.
 
 8. Prove that bubble sort correctly sorts an array by showing that after $k$ passes, the $k$ largest
- elements are in their final positions.
+   elements are in their final positions.
 
 9. Write a Python function that implements a linked list with append, delete, and search methods.
- What is the time complexity of each?
+   What is the time complexity of each?
 
 10. Explain the difference between recursion and iteration. Give an example where recursion is more
- natural.
+    natural.
 
 11. Write a Python function that finds all pairs in an array that sum to a given target.
 
@@ -649,13 +650,13 @@ print(binary_search_string(words, "date"))  # 3
 
 **Trace on [5, 2, 4, 6, 1, 3]:**
 
-| Step | Array State | Key | Shifts | Comparisons |
-| ---- | --------------- | --- | ------ | ----------- |
-| 1 | [5, 2, 4, 6, 1, 3] | 2 | 1 | 1 |
-| 2 | [2, 5, 4, 6, 1, 3] | 4 | 1 | 2 |
-| 3 | [2, 4, 5, 6, 1, 3] | 6 | 0 | 1 |
-| 4 | [2, 4, 5, 6, 1, 3] | 1 | 4 | 4 |
-| 5 | [1, 2, 4, 5, 6, 3] | 3 | 2 | 3 |
+| Step | Array State        | Key | Shifts | Comparisons |
+| ---- | ------------------ | --- | ------ | ----------- |
+| 1    | [5, 2, 4, 6, 1, 3] | 2   | 1      | 1           |
+| 2    | [2, 5, 4, 6, 1, 3] | 4   | 1      | 2           |
+| 3    | [2, 4, 5, 6, 1, 3] | 6   | 0      | 1           |
+| 4    | [2, 4, 5, 6, 1, 3] | 1   | 4      | 4           |
+| 5    | [1, 2, 4, 5, 6, 3] | 3   | 2      | 3           |
 
 Final: [1, 2, 3, 4, 5, 6]. Total comparisons: $1 + 2 + 1 + 4 + 3 = 11$.
 
@@ -716,10 +717,10 @@ for i in range(n):
 2. **Binary search** requires a sorted array.
 3. **Bubble sort** can be optimised by stopping early if no swaps occur.
 4. **Recursion** -- always include a base case; recursive Fibonacci is $O(2^n)$ (use iteration for
- efficiency).
+   efficiency).
 5. **Big O** -- describe the worst case, not the best case.
 6. **Confusing validation and verification.** Validation checks if data is reasonable; verification
- checks if data was entered correctly.
+   checks if data was entered correctly.
 7. **Integer division in Python** -- use `//` for integer division, `/` for float division.
 
 ## Practice Questions
@@ -734,17 +735,17 @@ for i in range(n):
 ### Higher Level
 
 1. Implement binary search in Python and trace its execution on the array [2, 5, 8, 12, 16, 23, 38,
- 56, 72, 91] searching for 23.
+   56, 72, 91] searching for 23.
 2. Write a recursive function in Python to calculate the nth triangular number.
 3. Compare the time complexities of bubble sort, insertion sort, and quick sort.
 4. Implement a queue using two stacks in Python.
 
 5. Write a Python function that checks whether a string is a palindrome. What is the time
- complexity?
+   complexity?
 6. Explain why merge sort has $O(n \log n)$ time complexity in all cases.
 7. Write pseudocode for a procedure that removes duplicates from a sorted array in-place.
 8. Prove that bubble sort correctly sorts an array by showing that after $k$ passes, the $k$ largest
- elements are in their final positions.
+   elements are in their final positions.
 
 ## Summary
 

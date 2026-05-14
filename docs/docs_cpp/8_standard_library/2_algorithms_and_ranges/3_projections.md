@@ -1,6 +1,8 @@
 ---
 title: Projections and Callable Objects
-description: "C++: Projections and Callable Objects — Projections: Transforming Elements During Algorithm Execution; `std::ranges::sort` with Projection."
+description:
+  'C++: Projections and Callable Objects — Projections: Transforming Elements During Algorithm
+  Execution; `std::ranges::sort` with Projection.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -8,6 +10,7 @@ categories:
   - Cpp
 slug: projections-and-callable-objects
 ---
+
 ## Projections and Callable Objects
 
 A **projection** is a callable that transforms an element before it is passed to an algorithm's
@@ -208,11 +211,9 @@ int main() {
 }
 ```
 
-:::info
-The projection parameter appears **after** the predicate in the argument list for most
+:::info The projection parameter appears **after** the predicate in the argument list for most
 Algorithms. The pattern is: `algorithm(range, predicate, projection)`. The predicate receives the
-**projected** value, not the original element.
-:::
+**projected** value, not the original element. :::
 
 ### Projection Mechanics: What Happens Under the Hood
 
@@ -221,7 +222,7 @@ Rewritten as `comp(proj(elem1), proj(elem2))` for every pair of elements compare
 Applied lazily — it is not stored or cached. This means:
 
 1. The projection is called **every time** an element is accessed by the algorithm, not once per
- element.
+   element.
 2. The projection must be a pure function (no side effects) for predictable behavior.
 3. The projection's return type must be comparable with the given comparator.
 

@@ -1,9 +1,12 @@
 ---
 id: error-handling
 title: Error Handling
-description: "Error Handling — Panic vs Result; Panics; Stack Unwinding vs Abort; `std::panic::catch_unwind` with worked examples and exam-style questions."
+description:
+  'Error Handling — Panic vs Result; Panics; Stack Unwinding vs Abort; `std::panic::catch_unwind`
+  with worked examples and exam-style questions.'
 slug: error-handling
 ---
+
 ## Panic vs Result
 
 Rust divides errors into two categories: **unrecoverable** (bugs) and **recoverable** (expected
@@ -43,9 +46,9 @@ panic = "abort"
 Trade-offs:
 
 - **Unwinding**: Safe cleanup (destructors run, `Drop::drop` is called), larger binary size (unwind
- tables), slightly slower.
+  tables), slightly slower.
 - **Abort**: Smaller binary, faster, but no cleanup. File handles, network connections, and locks
- may not be released properly.
+  may not be released properly.
 
 For embedded and `no_std` targets, `panic = "abort"` is often the only option.
 
@@ -68,8 +71,7 @@ assert!(result.is_err());
 
 `catch_unwind` only works if the panicked code was compiled with unwinding support. It does not work
 Across FFI boundaries (panics through C callbacks are undefined behavior). It is also not a
-Substitute for proper error handling — use it sparingly, for plugin systems or process
-Isolation.
+Substitute for proper error handling — use it sparingly, for plugin systems or process Isolation.
 
 :::
 
@@ -121,9 +123,9 @@ x.and_then(|n| {
 });  // Some(4)
 ```
 
-`map` transforms the inner value if `Some`Passes through `None`. `and_then` (also known as
-`flatMap` or `bind`) chains operations that may fail — if the first operation returns `None`The
-Entire chain short-circuits.
+`map` transforms the inner value if `Some`Passes through `None`. `and_then` (also known as `flatMap`
+or `bind`) chains operations that may fail — if the first operation returns `None`The Entire chain
+short-circuits.
 
 ### `unwrap_or` and `unwrap_or_else`
 
@@ -301,8 +303,7 @@ fn read_config(path: &str) -> Result<Config, Box<dyn std::error::Error>> {
 
 ### `?` with `Option`
 
-The `?` operator also works with `Option`. In a function returning `Option<T>``?` propagates
-`None`:
+The `?` operator also works with `Option`. In a function returning `Option<T>``?` propagates `None`:
 
 ```rust
 fn first_even(nums: &[i32]) -> Option<i32> {
@@ -314,8 +315,8 @@ fn first_even(nums: &[i32]) -> Option<i32> {
 ### `?` and `From` Trait Conversion
 
 The `?` operator automatically converts errors using the `From` trait. If the function returns
-`Result<T, E>`Then `?` on a `Result<T2, E2>` will call `E2::from(e)` to convert the error,
-Provided `impl From<E2> for E` exists:
+`Result<T, E>`Then `?` on a `Result<T2, E2>` will call `E2::from(e)` to convert the error, Provided
+`impl From<E2> for E` exists:
 
 ```rust
 use std::fs;
@@ -510,12 +511,12 @@ fn read_config(path: &str) -> Result<Config> {
 
 ### `anyhow` vs `thiserror`
 
-| Use `anyhow` for | Use `thiserror` for |
+| Use `anyhow` for                  | Use `thiserror` for                              |
 | --------------------------------- | ------------------------------------------------ |
-| Application binaries | Library crates |
-| Quick prototyping | Public APIs with typed errors |
-| Functions with many error sources | Error types that callers need to match on |
-| Scripts and CLIs | When the caller needs to distinguish error kinds |
+| Application binaries              | Library crates                                   |
+| Quick prototyping                 | Public APIs with typed errors                    |
+| Functions with many error sources | Error types that callers need to match on        |
+| Scripts and CLIs                  | When the caller needs to distinguish error kinds |
 
 A common pattern: use `thiserror` in your library crate to define precise error types, and use
 `anyhow` in the application crate that consumes the library.
@@ -808,45 +809,45 @@ fn handle_error(err: &dyn Error) {
 ## Common Pitfalls
 
 1. **Using `unwrap()` on external input.** Parsing user input, reading files, making network
- requests — all of these can fail in expected ways. Always use `?` or explicit error handling for
- these operations.
+   requests — all of these can fail in expected ways. Always use `?` or explicit error handling for
+   these operations.
 
 2. **Swallowing errors with `let _ =`.** Writing `let _ = result` silently discards the error. At
- minimum, log the error: `if let Err(e) = result { log::warn!("operation failed: {}", e); }`.
+   minimum, log the error: `if let Err(e) = result { log::warn!("operation failed: {}", e); }`.
 
 3. **`Box<dyn Error>` loses type information.** When you use `Box<dyn Error>` as the error type, the
- caller cannot `match` on specific error variants. This is fine for applications (use `anyhow`)
- but inappropriate for libraries where callers need to distinguish error types.
+   caller cannot `match` on specific error variants. This is fine for applications (use `anyhow`)
+   but inappropriate for libraries where callers need to distinguish error types.
 
 4. **Not implementing `Error` for library error types.** If your library defines a custom error
- type, implement `std::error::Error` (or derive it with `thiserror`). This enables `?`
- propagation, error chain walking, and `anyhow` compatibility.
+   type, implement `std::error::Error` (or derive it with `thiserror`). This enables `?`
+   propagation, error chain walking, and `anyhow` compatibility.
 
 5. **Over-engineering error types in applications.** In a binary, you rarely need to match on
- specific error variants — you just need to report them to the user or log them. Use `anyhow` with
- `.context()` and avoid defining large error enums unless you have a specific need.
+   specific error variants — you just need to report them to the user or log them. Use `anyhow` with
+   `.context()` and avoid defining large error enums unless you have a specific need.
 
 6. **Mixing `Result` and `Option` without conversion.** Calling `?` on a `Result` inside an `Option`
- function is a compile error. Use `.ok()` to convert `Result` to `Option` or `.ok_or()` to convert
- `Option` to `Result`.
+   function is a compile error. Use `.ok()` to convert `Result` to `Option` or `.ok_or()` to convert
+   `Option` to `Result`.
 
 7. **Error types that are not `Send + Sync`.** By default, `Box<dyn Error>` requires `Send + Sync`.
- If your error type contains `Rc` or other non-thread-safe types, it cannot be used with `?` in
- async contexts or across threads. Use `Arc` instead of `Rc`Or ensure all error fields are
- `Send + Sync`.
+   If your error type contains `Rc` or other non-thread-safe types, it cannot be used with `?` in
+   async contexts or across threads. Use `Arc` instead of `Rc`Or ensure all error fields are
+   `Send + Sync`.
 
 8. **Not adding context to errors.** A bare `io::Error` tells you what went wrong but not where or
- why. Use `.context()` (anyhow) or `.map_err(|e| AppError::Context { ... })` to add contextual
- information as the error propagates up the call stack.
+   why. Use `.context()` (anyhow) or `.map_err(|e| AppError::Context { ... })` to add contextual
+   information as the error propagates up the call stack.
 
 9. **Panicking in library code.** Libraries should never panic on expected failure modes. Panics are
- for bugs (internal invariant violations). If a library function receives invalid input, it should
- return `Err`Not panic. The one exception is `debug_assert!` which is compiled out in release
- mode.
+   for bugs (internal invariant violations). If a library function receives invalid input, it should
+   return `Err`Not panic. The one exception is `debug_assert!` which is compiled out in release
+   mode.
 
 10. **Using `match` instead of `?` for error propagation.** Writing explicit `match` blocks for
- every `Result` is verbose and error-prone. The `?` operator is the idiomatic way to propagate
- errors. Use `match` only when you need to handle specific error variants differently.
+    every `Result` is verbose and error-prone. The `?` operator is the idiomatic way to propagate
+    errors. Use `match` only when you need to handle specific error variants differently.
 
 ## Summary
 

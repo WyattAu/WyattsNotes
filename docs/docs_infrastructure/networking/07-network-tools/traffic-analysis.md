@@ -1,13 +1,16 @@
 ---
 id: traffic-analysis
 title: Traffic Analysis
-description: "Traffic Analysis — Packet Capture Methodology; Where to Capture; Cisco IOS SPAN configuration; Capture Point Selection Guide."
+description:
+  'Traffic Analysis — Packet Capture Methodology; Where to Capture; Cisco IOS SPAN configuration;
+  Capture Point Selection Guide.'
 slug: traffic-analysis
 tags:
   - Networking
 categories:
   - Networking
 ---
+
 ## Overview
 
 Network traffic analysis is the process of capturing, examining, and interpreting network traffic to
@@ -66,14 +69,14 @@ Before libpcap sees it.
 
 ### Capture Point Selection Guide
 
-| Scenario | Best Capture Point |
+| Scenario                         | Best Capture Point                                     |
 | -------------------------------- | ------------------------------------------------------ |
-| Troubleshoot server connectivity | On the server (tcpdump) |
-| Full link visibility | TAP (if available) or SPAN |
-| Packet loss investigation | TAP (captures errors) |
-| Multi-point analysis | SPAN + server capture, correlated |
-| Encrypted traffic analysis | On the endpoint (before encryption / after decryption) |
-| Container networking | On the host's veth interface or inside the container |
+| Troubleshoot server connectivity | On the server (tcpdump)                                |
+| Full link visibility             | TAP (if available) or SPAN                             |
+| Packet loss investigation        | TAP (captures errors)                                  |
+| Multi-point analysis             | SPAN + server capture, correlated                      |
+| Encrypted traffic analysis       | On the endpoint (before encryption / after decryption) |
+| Container networking             | On the host's veth interface or inside the container   |
 
 :::warning
 
@@ -409,32 +412,32 @@ Destination IP, source port, destination port, protocol).
 
 **What NetFlow records:**
 
-| Field | Description |
+| Field            | Description                          |
 | ---------------- | ------------------------------------ |
-| src_addr | Source IP address |
-| dst_addr | Destination IP address |
-| src_port | Source port |
-| dst_port | Destination port |
-| protocol | IP protocol (TCP, UDP, ICMP, etc.) |
-| packets | Number of packets in the flow |
-| bytes | Total bytes in the flow |
-| start_time | Time of first packet |
-| end_time | Time of last packet |
-| tcp_flags | OR of TCP flags seen in all packets |
-| tos | Type of Service / DSCP value |
-| as_src | Source AS number (if BGP is enabled) |
-| as_dst | Destination AS number |
-| input_interface | SNMP index of ingress interface |
-| output_interface | SNMP index of egress interface |
-| nexthop | Next-hop IP address |
+| src_addr         | Source IP address                    |
+| dst_addr         | Destination IP address               |
+| src_port         | Source port                          |
+| dst_port         | Destination port                     |
+| protocol         | IP protocol (TCP, UDP, ICMP, etc.)   |
+| packets          | Number of packets in the flow        |
+| bytes            | Total bytes in the flow              |
+| start_time       | Time of first packet                 |
+| end_time         | Time of last packet                  |
+| tcp_flags        | OR of TCP flags seen in all packets  |
+| tos              | Type of Service / DSCP value         |
+| as_src           | Source AS number (if BGP is enabled) |
+| as_dst           | Destination AS number                |
+| input_interface  | SNMP index of ingress interface      |
+| output_interface | SNMP index of egress interface       |
+| nexthop          | Next-hop IP address                  |
 
 **NetFlow versions:**
 
-| Version | Description |
+| Version | Description                                  |
 | ------- | -------------------------------------------- |
-| v5 | Original format, fixed fields |
-| v9 | Template-based, extensible (RFC 3954) |
-| IPFIX | IETF standard based on NetFlow v9 (RFC 7011) |
+| v5      | Original format, fixed fields                |
+| v9      | Template-based, extensible (RFC 3954)        |
+| IPFIX   | IETF standard based on NetFlow v9 (RFC 7011) |
 
 ### sFlow
 
@@ -651,16 +654,16 @@ Operation.
 
 ### What to Measure
 
-| Metric | Tool | Frequency |
+| Metric               | Tool            | Frequency |
 | -------------------- | --------------- | --------- |
-| Interface throughput | SNMP / iftop | 5 minutes |
-| Top talkers (by IP) | NetFlow / sFlow | 5 minutes |
-| Top protocols | NetFlow / sFlow | 5 minutes |
-| TCP connections | conntrack / ss | 1 minute |
-| DNS query volume | dns query logs | 1 minute |
-| HTTP request rate | access logs | 1 minute |
-| Packet loss | ping / SLA | 1 minute |
-| Latency (RTT) | ping / SLA | 1 minute |
+| Interface throughput | SNMP / iftop    | 5 minutes |
+| Top talkers (by IP)  | NetFlow / sFlow | 5 minutes |
+| Top protocols        | NetFlow / sFlow | 5 minutes |
+| TCP connections      | conntrack / ss  | 1 minute  |
+| DNS query volume     | dns query logs  | 1 minute  |
+| HTTP request rate    | access logs     | 1 minute  |
+| Packet loss          | ping / SLA      | 1 minute  |
+| Latency (RTT)        | ping / SLA      | 1 minute  |
 
 ### Baseline Duration
 
@@ -678,9 +681,9 @@ Indicators of network anomalies:
 - **Unexpected protocols:** SSH on non-standard ports, DNS tunneling, ICMP tunneling
 - **Traffic to unusual ports:** Scanning, exploitation attempts
 - **Traffic to unusual destinations:** Connections to known-bad IPs or countries you do not do
- business with
+  business with
 - **Unusual DNS patterns:** High volume of NXDOMAIN (DNS tunneling or DGA malware), high volume to a
- specific domain
+  specific domain
 
 ### Port Scan Detection
 
@@ -800,9 +803,9 @@ Verify with `ip link show` first.
 
 ### 2. Not Using -nn
 
-Without `-nn`Tcpdump performs reverse DNS lookups for every IP address and service name lookups
-For every port. This is extremely slow for high-traffic captures and may cause tcpdump to drop
-Packets. Always use `-nn`.
+Without `-nn`Tcpdump performs reverse DNS lookups for every IP address and service name lookups For
+every port. This is extremely slow for high-traffic captures and may cause tcpdump to drop Packets.
+Always use `-nn`.
 
 ### 3. Capture Buffer Too Small
 

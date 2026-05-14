@@ -1,6 +1,8 @@
 ---
 title: Quadratics
-description: "DSE Mathematics quadratic equations notes covering factorisation, completing the square, quadratic formula, discriminant, and graphs of quadratic functions."
+description:
+  'DSE Mathematics quadratic equations notes covering factorisation, completing the square,
+  quadratic formula, discriminant, and graphs of quadratic functions.'
 date: 2026-04-18T00:00:00.000Z
 tags:
   - DSE
@@ -44,10 +46,10 @@ The **discriminant** $\Delta$ determines the nature of the roots:
 
 $$\Delta = b^2 - 4ac$$
 
-| Condition | Roots |
+| Condition      | Roots                                       |
 | -------------- | ------------------------------------------- |
-| $\Delta \gt 0$ | Two distinct real roots |
-| $\Delta = 0$ | One repeated real root (double root) |
+| $\Delta \gt 0$ | Two distinct real roots                     |
+| $\Delta = 0$   | One repeated real root (double root)        |
 | $\Delta \lt 0$ | No real roots (two complex conjugate roots) |
 
 ### Worked Example 1
@@ -75,7 +77,7 @@ To complete the square for $ax^2 + bx + c$:
 
 1. Factor out $a$: $a\!\left(x^2 + \dfrac{b}{a}x\right) + c$
 2. Add and subtract $\left(\dfrac{b}{2a}\right)^2$:
- $a\!\left[\left(x + \dfrac{b}{2a}\right)^2 - \left(\dfrac{b}{2a}\right)^2\right] + c$
+   $a\!\left[\left(x + \dfrac{b}{2a}\right)^2 - \left(\dfrac{b}{2a}\right)^2\right] + c$
 
 The result is the **vertex form**:
 
@@ -109,9 +111,9 @@ Adjust the sliders to see how $a$$b$And $c$ affect the shape, vertex, and roots 
 
 ### Shape
 
-| Condition | Shape | Extremum |
+| Condition | Shape          | Extremum          |
 | --------- | -------------- | ----------------- |
-| $a \gt 0$ | Opens upward | Minimum at vertex |
+| $a \gt 0$ | Opens upward   | Minimum at vertex |
 | $a \lt 0$ | Opens downward | Maximum at vertex |
 
 ### Worked Example 4
@@ -140,11 +142,11 @@ To solve $ax^2 + bx + c \gt 0$ (or $\lt$$\geqslant$$\leqslant$):
 
 ### For $a \gt 0$ (opens upward):
 
-| Discriminant | $f(x) \gt 0$ | $f(x) \lt 0$ |
-| ---------------------------------------- | ------------------------------- | ------------------------ |
+| Discriminant                           | $f(x) \gt 0$                    | $f(x) \lt 0$             |
+| -------------------------------------- | ------------------------------- | ------------------------ |
 | $\Delta \gt 0$Roots $\alpha \lt \beta$ | $x \lt \alpha$ or $x \gt \beta$ | $\alpha \lt x \lt \beta$ |
-| $\Delta = 0$Root $\alpha$ | All $x \neq \alpha$ | No solution |
-| $\Delta \lt 0$ | All real $x$ | No solution |
+| $\Delta = 0$Root $\alpha$              | All $x \neq \alpha$             | No solution              |
+| $\Delta \lt 0$                         | All real $x$                    | No solution              |
 
 ### Worked Example 5
 
@@ -197,26 +199,26 @@ $$\frac{1}{\alpha} + \frac{1}{\beta} = \frac{\alpha + \beta}{\alpha\beta} = \fra
 ## Common Pitfalls
 
 - Forgetting that $a \neq 0$ in $ax^2 + bx + c = 0$. If $a = 0$The equation is linear, not
- quadratic.
+  quadratic.
 - Multiplying an inequality by a negative number without reversing the sign. Always sketch the
- parabola or use a sign chart.
+  parabola or use a sign chart.
 - When completing the square, forgetting to multiply the constant term by $a$ after adding and
- subtracting inside the brackets.
+  subtracting inside the brackets.
 - Confusing the discriminant sign: $\Delta \gt 0$ gives real roots, $\Delta \lt 0$ gives no real
- roots. The opposite is a common error.
+  roots. The opposite is a common error.
 - Using $\alpha + \beta = b/a$ instead of $\alpha + \beta = -b/a$. Note the negative sign.
 
 ---
 
 ## Summary Table
 
-| Topic | Key Result |
+| Topic             | Key Result                                             |
 | ----------------- | ------------------------------------------------------ |
-| Quadratic formula | $x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a}$ |
-| Discriminant | $\Delta = b^2 - 4ac$ |
-| Vertex | $\left(-\dfrac{b}{2a},\; \dfrac{4ac - b^2}{4a}\right)$ |
-| Sum of roots | $\alpha + \beta = -b/a$ |
-| Product of roots | $\alpha\beta = c/a$ |
+| Quadratic formula | $x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a}$              |
+| Discriminant      | $\Delta = b^2 - 4ac$                                   |
+| Vertex            | $\left(-\dfrac{b}{2a},\; \dfrac{4ac - b^2}{4a}\right)$ |
+| Sum of roots      | $\alpha + \beta = -b/a$                                |
+| Product of roots  | $\alpha\beta = c/a$                                    |
 
 ---
 
@@ -233,7 +235,7 @@ $\Delta = 4 - 4k^2 \gt 0 \implies k^2 \lt 1 \implies -1 \lt k \lt 1$ (and $k \ne
 Be quadratic).
 
 3. **Question:** Express $f(x) = -x^2 + 6x - 5$ in completed square form and state its maximum
- value.
+   value.
 
 $f(x) = -(x^2 - 6x) - 5 = -[(x - 3)^2 - 9] - 5 = -(x - 3)^2 + 4$. Maximum value: $4$ at $x = 3$.
 
@@ -243,7 +245,7 @@ $2x^2 + 3x - 5 = (2x + 5)(x - 1)$. Roots: $x = -5/2$ and $x = 1$. Parabola opens
 $-5/2 \lt x \lt 1$.
 
 5. **Question:** If $\alpha$ and $\beta$ are roots of $x^2 - 3x + 5 = 0$Form a quadratic equation
- with roots $\alpha + 2$ and $\beta + 2$.
+   with roots $\alpha + 2$ and $\beta + 2$.
 
 New sum: $(\alpha + 2) + (\beta + 2) = (\alpha + \beta) + 4 = 3 + 4 = 7$.
 
@@ -252,7 +254,7 @@ New product: $(\alpha + 2)(\beta + 2) = \alpha\beta + 2(\alpha + \beta) + 4 = 5 
 Equation: $x^2 - 7x + 15 = 0$.
 
 6. **Question:** A ball is thrown upward. Its height $h$ metres at time $t$ seconds is
- $h = -5t^2 + 20t + 1$. Find the maximum height and the time at which it occurs.
+   $h = -5t^2 + 20t + 1$. Find the maximum height and the time at which it occurs.
 
 $h = -5(t^2 - 4t) + 1 = -5[(t - 2)^2 - 4] + 1 = -5(t - 2)^2 + 21$. Maximum height: $21 \mathrm{ m}$
 At $t = 2 \mathrm{ s}$.
@@ -272,7 +274,7 @@ Since $a = 1 \gt 0$: $p \leqslant \dfrac{1 - \sqrt{33}}{2}$ or
 $p \geqslant \dfrac{1 + \sqrt{33}}{2}$.
 
 9. **Question:** Prove that the quadratic equation $(a^2 + b^2)x^2 + 2(ac + bd)x + (c^2 + d^2) = 0$
- has no real roots unless $ad = bc$.
+   has no real roots unless $ad = bc$.
 
 $\Delta = 4(ac + bd)^2 - 4(a^2 + b^2)(c^2 + d^2) = 4[a^2c^2 + 2abcd + b^2d^2 - a^2c^2 - a^2d^2 - b^2c^2 - b^2d^2]$
 $= 4[2abcd - a^2d^2 - b^2c^2] = -4(ad - bc)^2$.
@@ -281,7 +283,7 @@ Since $-(ad - bc)^2 \leqslant 0$We have $\Delta \leqslant 0$. Real roots exist o
 $\Delta = 0$I.e., $ad = bc$.
 
 10. **Question:** For what integer values of $k$ does the equation $x^2 - kx + k + 3 = 0$ have
- integer roots?
+    integer roots?
 
 By Vieta: $\alpha + \beta = k$ and $\alpha\beta = k + 3$. So $\alpha\beta = \alpha + \beta + 3$
 Giving $\alpha\beta - \alpha - \beta = 3$Or $(\alpha - 1)(\beta - 1) = 4$.
@@ -305,7 +307,8 @@ Find the range of $k$ for which $(k-1)x^2 + 2kx + k + 3 = 0$ has real roots.
 <details>
 <summary>Solution</summary>
 
-**Case 1: $k = 1$.** The equation becomes $2x + 4 = 0 \implies x = -2$. One real root, so $k = 1$ is included.
+**Case 1: $k = 1$.** The equation becomes $2x + 4 = 0 \implies x = -2$. One real root, so $k = 1$ is
+included.
 
 **Case 2: $k \neq 1$.** This is a genuine quadratic. Require $\Delta \geq 0$:
 
@@ -319,14 +322,16 @@ Combined with Case 1: the answer is $k \leq \dfrac{3}{2}$.
 
 **Worked Example 9: Forming a quadratic with transformed roots**
 
-If $\alpha$ and $\beta$ are roots of $2x^2 - 7x + 3 = 0$Form a quadratic equation with roots $\alpha^2$ and $\beta^2$.
+If $\alpha$ and $\beta$ are roots of $2x^2 - 7x + 3 = 0$Form a quadratic equation with roots
+$\alpha^2$ and $\beta^2$.
 
 <details>
 <summary>Solution</summary>
 
 $$\alpha + \beta = \frac{7}{2}, \quad \alpha\beta = \frac{3}{2}$$
 
-New sum: $\alpha^2 + \beta^2 = (\alpha + \beta)^2 - 2\alpha\beta = \dfrac{49}{4} - 3 = \dfrac{37}{4}$.
+New sum:
+$\alpha^2 + \beta^2 = (\alpha + \beta)^2 - 2\alpha\beta = \dfrac{49}{4} - 3 = \dfrac{37}{4}$.
 
 New product: $\alpha^2 \beta^2 = (\alpha\beta)^2 = \dfrac{9}{4}$.
 
@@ -393,21 +398,34 @@ Minimum value: $6$Attained at $x = 3$.
 
 ## Additional Common Pitfalls
 
-1. **Forgetting the $a \neq 0$ condition.** When a parameter makes $a = 0$The equation becomes linear, not quadratic. Always check the degenerate case separately, as in Worked Example 8.
+1. **Forgetting the $a \neq 0$ condition.** When a parameter makes $a = 0$The equation becomes
+   linear, not quadratic. Always check the degenerate case separately, as in Worked Example 8.
 
-2. **Wrong sign in Vieta's formulas.** The sum of roots is $\alpha + \beta = -b/a$Not $b/a$. The negative sign is the single most common error in root-coefficient problems.
+2. **Wrong sign in Vieta's formulas.** The sum of roots is $\alpha + \beta = -b/a$Not $b/a$. The
+   negative sign is the single most common error in root-coefficient problems.
 
-3. **Reversing inequality when multiplying by a negative.** When solving $ax^2 + bx + c \lt 0$ with $a \lt 0$Multiplying through by $-1$ reverses the sign. A safer approach is to sketch the parabola and read off the solution intervals.
+3. **Reversing inequality when multiplying by a negative.** When solving $ax^2 + bx + c \lt 0$ with
+   $a \lt 0$Multiplying through by $-1$ reverses the sign. A safer approach is to sketch the
+   parabola and read off the solution intervals.
 
-4. **Completing the square incorrectly.** After factoring out $a$ from $ax^2 + bx + c$The term to add and subtract inside the brackets is $\left(\dfrac{b}{2a}\right)^2$Not $\left(\dfrac{b}{2}\right)^2$. Forgetting to divide by $a$ inside is a frequent mistake.
+4. **Completing the square incorrectly.** After factoring out $a$ from $ax^2 + bx + c$The term to
+   add and subtract inside the brackets is $\left(\dfrac{b}{2a}\right)^2$Not
+   $\left(\dfrac{b}{2}\right)^2$. Forgetting to divide by $a$ inside is a frequent mistake.
 
-5. **Assuming discriminant alone determines root rationality.** For $\Delta \gt 0$The roots are rational if and only if $\Delta$ is a perfect square (and $2a$ divides $-b \pm \sqrt{\Delta}$). A positive, non-square discriminant gives irrational roots.
+5. **Assuming discriminant alone determines root rationality.** For $\Delta \gt 0$The roots are
+   rational if and only if $\Delta$ is a perfect square (and $2a$ divides $-b \pm \sqrt{\Delta}$). A
+   positive, non-square discriminant gives irrational roots.
 
-6. **Confusing vertex $x$-coordinate sign.** The vertex $x$-coordinate is $-b/(2a)$Not $b/(2a)$. The negative sign is essential.
+6. **Confusing vertex $x$-coordinate sign.** The vertex $x$-coordinate is $-b/(2a)$Not $b/(2a)$. The
+   negative sign is essential.
 
-7. **Dropping the leading coefficient in root-coefficient problems.** For $ax^2 + bx + c = 0$The sum is $-b/a$ and the product is $c/a$. Omitting the denominator $a$ (e.g., writing $\alpha + \beta = -b$) is only valid when $a = 1$.
+7. **Dropping the leading coefficient in root-coefficient problems.** For $ax^2 + bx + c = 0$The sum
+   is $-b/a$ and the product is $c/a$. Omitting the denominator $a$ (e.g., writing
+   $\alpha + \beta = -b$) is only valid when $a = 1$.
 
-8. **Incorrect transformation of roots.** When forming a new equation with roots $2\alpha$ and $2\beta$The new sum is $2(\alpha + \beta)$ and the new product is $4\alpha\beta$. A common mistake is to only double the sum but forget to square the factor for the product.
+8. **Incorrect transformation of roots.** When forming a new equation with roots $2\alpha$ and
+   $2\beta$The new sum is $2(\alpha + \beta)$ and the new product is $4\alpha\beta$. A common
+   mistake is to only double the sum but forget to square the factor for the product.
 
 ---
 
@@ -463,11 +481,13 @@ $$p = \frac{-4 \pm \sqrt{16 + 144}}{2} = -2 \pm 2\sqrt{10}$$
 
 $$q = 9 - p = 9 + 2 \mp 2\sqrt{10} = 11 \mp 2\sqrt{10}$$
 
-Answer: $\left(p,\; q\right) = \left(-2 + 2\sqrt{10},\; 11 - 2\sqrt{10}\right)$ or $\left(-2 - 2\sqrt{10},\; 11 + 2\sqrt{10}\right)$.
+Answer: $\left(p,\; q\right) = \left(-2 + 2\sqrt{10},\; 11 - 2\sqrt{10}\right)$ or
+$\left(-2 - 2\sqrt{10},\; 11 + 2\sqrt{10}\right)$.
 
 </details>
 
-**Problem 5.** A rectangular field has perimeter $120\mathrm{ m}$ and area $A\mathrm{ m}^2$. Show that $A \leq 900$ and find the dimensions when $A = 900$.
+**Problem 5.** A rectangular field has perimeter $120\mathrm{ m}$ and area $A\mathrm{ m}^2$. Show
+that $A \leq 900$ and find the dimensions when $A = 900$.
 
 <details>
 <summary>Solution</summary>
@@ -484,7 +504,8 @@ The field is a $30\mathrm{ m} \times 30\mathrm{ m}$ square.
 
 </details>
 
-**Problem 6.** Given that $x^2 + 2ax + 4 = 0$ has two real roots $\alpha$ and $\beta$ ($\alpha \lt \beta$), find the range of $a$ for which $\beta - \alpha \gt 3$.
+**Problem 6.** Given that $x^2 + 2ax + 4 = 0$ has two real roots $\alpha$ and $\beta$
+($\alpha \lt \beta$), find the range of $a$ for which $\beta - \alpha \gt 3$.
 
 <details>
 <summary>Solution</summary>
@@ -510,7 +531,9 @@ Combined with $|a| \geq 2$: $a \lt -\dfrac{5}{2}$ or $a \gt \dfrac{5}{2}$.
 <details>
 <summary>Solution</summary>
 
-Let $y = \dfrac{x^2 - x + 1}{x^2 + x + 1}$. Since $x^2 + x + 1 = \left(x + \dfrac{1}{2}\right)^2 + \dfrac{3}{4} \gt 0$ for all real $x$The denominator never vanishes.
+Let $y = \dfrac{x^2 - x + 1}{x^2 + x + 1}$. Since
+$x^2 + x + 1 = \left(x + \dfrac{1}{2}\right)^2 + \dfrac{3}{4} \gt 0$ for all real $x$The denominator
+never vanishes.
 
 $$y(x^2 + x + 1) = x^2 - x + 1 \implies yx^2 + yx + y = x^2 - x + 1$$
 
@@ -530,7 +553,8 @@ Range: $\left[\dfrac{1}{3},\; 3\right]$.
 
 </details>
 
-**Problem 8.** The roots of $x^2 + px + q = 0$ are $\alpha$ and $\beta$. If $\alpha^2 + \beta^2 = 10$ and $\alpha^4 + \beta^4 = 82$Find $p$ and $q$.
+**Problem 8.** The roots of $x^2 + px + q = 0$ are $\alpha$ and $\beta$. If
+$\alpha^2 + \beta^2 = 10$ and $\alpha^4 + \beta^4 = 82$Find $p$ and $q$.
 
 <details>
 <summary>Solution</summary>
@@ -539,11 +563,14 @@ Note that $\alpha^4 + \beta^4 = (\alpha^2 + \beta^2)^2 - 2(\alpha\beta)^2 = 100 
 
 $$100 - 2(\alpha\beta)^2 = 82 \implies 2(\alpha\beta)^2 = 18 \implies (\alpha\beta)^2 = 9 \implies \alpha\beta = 3 \;\mathrm{or}\; \alpha\beta = -3$$
 
-**Case $\alpha\beta = 3$:** $\alpha^2 + \beta^2 = (\alpha + \beta)^2 - 2\alpha\beta = 10 \implies (\alpha + \beta)^2 - 6 = 10 \implies (\alpha + \beta)^2 = 16 \implies \alpha + \beta = \pm 4$.
+**Case $\alpha\beta = 3$:**
+$\alpha^2 + \beta^2 = (\alpha + \beta)^2 - 2\alpha\beta = 10 \implies (\alpha + \beta)^2 - 6 = 10 \implies (\alpha + \beta)^2 = 16 \implies \alpha + \beta = \pm 4$.
 
-So $p = -(\alpha + \beta) = \pm 4$$q = \alpha\beta = 3$. Two quadratics: $x^2 + 4x + 3 = 0$ and $x^2 - 4x + 3 = 0$.
+So $p = -(\alpha + \beta) = \pm 4$$q = \alpha\beta = 3$. Two quadratics: $x^2 + 4x + 3 = 0$ and
+$x^2 - 4x + 3 = 0$.
 
-**Case $\alpha\beta = -3$:** $(\alpha + \beta)^2 - 2(-3) = 10 \implies (\alpha + \beta)^2 = 4 \implies \alpha + \beta = \pm 2$.
+**Case $\alpha\beta = -3$:**
+$(\alpha + \beta)^2 - 2(-3) = 10 \implies (\alpha + \beta)^2 = 4 \implies \alpha + \beta = \pm 2$.
 
 So $p = \mp 2$$q = -3$. Two quadratics: $x^2 + 2x - 3 = 0$ and $x^2 - 2x - 3 = 0$.
 
@@ -555,12 +582,17 @@ All four pairs are valid solutions.
 
 ## Cross-References
 
-- **Functions:** Quadratic functions are a special case of polynomial functions. See [functions.md](functions)) and [functions-advanced.md](functions-advanced)).
-- **Coordinate Geometry:** Parabolas as conic sections. See [coordinate-geometry.md](coordinate-geometry)).
-- **Inequalities:** Quadratic inequalities are solved using discriminant and graph analysis. See the inequalities notes.
-- **Permutations and Combinations:** Factorials appear in the quadratic formula derivation via completing the square. See [permutations-and-combinations.md](permutations-and-combinations)).
+- **Functions:** Quadratic functions are a special case of polynomial functions. See
+  [functions.md](functions)) and [functions-advanced.md](functions-advanced)).
+- **Coordinate Geometry:** Parabolas as conic sections. See
+  [coordinate-geometry.md](coordinate-geometry)).
+- **Inequalities:** Quadratic inequalities are solved using discriminant and graph analysis. See the
+  inequalities notes.
+- **Permutations and Combinations:** Factorials appear in the quadratic formula derivation via
+  completing the square. See [permutations-and-combinations.md](permutations-and-combinations)).
 
-For the A-Level treatment of this topic, see [Quadratics](https://alevel.wyattau.com/docs/maths/pure-mathematics/quadratics).
+For the A-Level treatment of this topic, see
+[Quadratics](https://alevel.wyattau.com/docs/maths/pure-mathematics/quadratics).
 
 ---
 
@@ -578,7 +610,8 @@ For quadratic problems in DSE Paper 1, examiners expect:
 
 ### Significant Figures
 
-Unless the question states otherwise, give final answers to 3 significant figures. Exact forms (e.g., $\sqrt{3}$$\dfrac{5}{2}$) are preferred and should not be converted to decimals unless asked.
+Unless the question states otherwise, give final answers to 3 significant figures. Exact forms
+(e.g., $\sqrt{3}$$\dfrac{5}{2}$) are preferred and should not be converted to decimals unless asked.
 
 ### Common DSE Question Types
 
@@ -653,11 +686,14 @@ Case 1: $\dfrac{x + 1}{x} = \dfrac{1}{2} \implies 2x + 2 = x \implies x = -2$.
 
 Case 2: $\dfrac{x + 1}{x} = 2 \implies x + 1 = 2x \implies x = 1$.
 
-Check: $x = -2$: $\dfrac{-1}{-2} + \dfrac{-2}{-1} = \dfrac{1}{2} + 2 = \dfrac{5}{2} \neq \dfrac{25}{6}$.
+Check: $x = -2$:
+$\dfrac{-1}{-2} + \dfrac{-2}{-1} = \dfrac{1}{2} + 2 = \dfrac{5}{2} \neq \dfrac{25}{6}$.
 
-Let me redo: $x = -2$: $\dfrac{-2+1}{-2} + \dfrac{-2}{-2+1} = \dfrac{-1}{-2} + \dfrac{-2}{-1} = \dfrac{1}{2} + 2 = \dfrac{5}{2} \neq \dfrac{25}{6}$.
+Let me redo: $x = -2$:
+$\dfrac{-2+1}{-2} + \dfrac{-2}{-2+1} = \dfrac{-1}{-2} + \dfrac{-2}{-1} = \dfrac{1}{2} + 2 = \dfrac{5}{2} \neq \dfrac{25}{6}$.
 
-This is incorrect. Let me recheck: $u = 2$ gives $\dfrac{x+1}{x} = 2 \implies x + 1 = 2x \implies x = 1$.
+This is incorrect. Let me recheck: $u = 2$ gives
+$\dfrac{x+1}{x} = 2 \implies x + 1 = 2x \implies x = 1$.
 
 $x = 1$: $\dfrac{2}{1} + \dfrac{1}{2} = \dfrac{5}{2} \neq \dfrac{25}{6}$.
 
@@ -667,9 +703,11 @@ Correct factorisation: $6u^2 - 25u + 6 = (2u - 3)(3u - 2)$.
 
 $u = \dfrac{3}{2}$ or $u = \dfrac{2}{3}$.
 
-$u = \dfrac{3}{2}$: $\dfrac{x+1}{x} = \dfrac{3}{2} \implies 2x + 2 = 3x \implies x = 2$. Check: $\dfrac{3}{2} + \dfrac{2}{3} = \dfrac{13}{6} \neq \dfrac{25}{6}$.
+$u = \dfrac{3}{2}$: $\dfrac{x+1}{x} = \dfrac{3}{2} \implies 2x + 2 = 3x \implies x = 2$. Check:
+$\dfrac{3}{2} + \dfrac{2}{3} = \dfrac{13}{6} \neq \dfrac{25}{6}$.
 
-The original equation $\dfrac{x+1}{x} + \dfrac{x}{x+1} = \dfrac{25}{6}$ with $u + \dfrac{1}{u} = \dfrac{25}{6}$:
+The original equation $\dfrac{x+1}{x} + \dfrac{x}{x+1} = \dfrac{25}{6}$ with
+$u + \dfrac{1}{u} = \dfrac{25}{6}$:
 
 $u^2 + 1 = \dfrac{25}{6}u \implies 6u^2 - 25u + 6 = 0$.
 
@@ -692,7 +730,8 @@ Find the value of $a$ such that the range of $f(x) = ax^2 + 4x + 3$ is $(-\infty
 
 The range has a maximum of $5$So $a < 0$ (parabola opens downward).
 
-Completing the square: $f(x) = a\!\left(x^2 + \dfrac{4}{a}x\right) + 3 = a\!\left[\left(x + \dfrac{2}{a}\right)^2 - \dfrac{4}{a^2}\right] + 3 = a\!\left(x + \dfrac{2}{a}\right)^2 - \dfrac{4}{a} + 3$.
+Completing the square:
+$f(x) = a\!\left(x^2 + \dfrac{4}{a}x\right) + 3 = a\!\left[\left(x + \dfrac{2}{a}\right)^2 - \dfrac{4}{a^2}\right] + 3 = a\!\left(x + \dfrac{2}{a}\right)^2 - \dfrac{4}{a} + 3$.
 
 Maximum value: $3 - \dfrac{4}{a} = 5 \implies -\dfrac{4}{a} = 2 \implies a = -2$.
 
@@ -702,7 +741,8 @@ Verification: $f(x) = -2x^2 + 4x + 3 = -2(x-1)^2 + 5$. Range: $(-\infty, 5]$. Co
 
 **Worked Example 17: Roots with given product and difference**
 
-If $\alpha$ and $\beta$ are roots of $x^2 + px + q = 0$ with $\alpha\beta = 3$ and $\alpha - \beta = 4$Find $p$ and $q$.
+If $\alpha$ and $\beta$ are roots of $x^2 + px + q = 0$ with $\alpha\beta = 3$ and
+$\alpha - \beta = 4$Find $p$ and $q$.
 
 <details>
 <summary>Solution</summary>
@@ -719,22 +759,26 @@ Answer: $q = 3$$p = 2\sqrt{7}$ or $p = -2\sqrt{7}$.
 
 ## DSE Exam-Style Questions
 
-**DSE Practice 1.** If $\alpha$ and $\beta$ are roots of $2x^2 - 3x - 4 = 0$Find the equation whose roots are $\dfrac{1}{\alpha + 1}$ and $\dfrac{1}{\beta + 1}$.
+**DSE Practice 1.** If $\alpha$ and $\beta$ are roots of $2x^2 - 3x - 4 = 0$Find the equation whose
+roots are $\dfrac{1}{\alpha + 1}$ and $\dfrac{1}{\beta + 1}$.
 
 <details>
 <summary>Solution</summary>
 
 $\alpha + \beta = \dfrac{3}{2}$$\alpha\beta = -2$.
 
-New sum: $\dfrac{1}{\alpha + 1} + \dfrac{1}{\beta + 1} = \dfrac{\alpha + \beta + 2}{\alpha\beta + \alpha + \beta + 1} = \dfrac{3/2 + 2}{-2 + 3/2 + 1} = \dfrac{7/2}{1/2} = 7$.
+New sum:
+$\dfrac{1}{\alpha + 1} + \dfrac{1}{\beta + 1} = \dfrac{\alpha + \beta + 2}{\alpha\beta + \alpha + \beta + 1} = \dfrac{3/2 + 2}{-2 + 3/2 + 1} = \dfrac{7/2}{1/2} = 7$.
 
-New product: $\dfrac{1}{(\alpha + 1)(\beta + 1)} = \dfrac{1}{\alpha\beta + \alpha + \beta + 1} = \dfrac{1}{-2 + 3/2 + 1} = \dfrac{1}{1/2} = 2$.
+New product:
+$\dfrac{1}{(\alpha + 1)(\beta + 1)} = \dfrac{1}{\alpha\beta + \alpha + \beta + 1} = \dfrac{1}{-2 + 3/2 + 1} = \dfrac{1}{1/2} = 2$.
 
 Equation: $x^2 - 7x + 2 = 0$.
 
 </details>
 
-**DSE Practice 2.** Find the range of values of $k$ for which the equation $x^2 + 2(k - 1)x + k + 5 = 0$ has two distinct positive roots.
+**DSE Practice 2.** Find the range of values of $k$ for which the equation
+$x^2 + 2(k - 1)x + k + 5 = 0$ has two distinct positive roots.
 
 <details>
 <summary>Solution</summary>
@@ -745,7 +789,8 @@ $$\Delta = 4(k-1)^2 - 4(k+5) = 4(k^2 - 2k + 1 - k - 5) = 4(k^2 - 3k - 4) > 0$$
 
 $$(k - 4)(k + 1) > 0 \implies k < -1 \;\text{or}\; k > 4$$
 
-For both roots positive: by Vieta, $\alpha + \beta = -2(k - 1) > 0 \implies k < 1$And $\alpha\beta = k + 5 > 0 \implies k > -5$.
+For both roots positive: by Vieta, $\alpha + \beta = -2(k - 1) > 0 \implies k < 1$And
+$\alpha\beta = k + 5 > 0 \implies k > -5$.
 
 Combining all three conditions: $-5 < k < -1$.
 
@@ -764,7 +809,8 @@ Therefore $x^2 - 2x + 3 > 0$ for all real $x$. $\qed$
 
 </details>
 
-**DSE Practice 4.** The function $f(x) = x^2 + px + q$ satisfies $f(1) = 3$ and $f(2) = 5$. Find $p$ and $q$And determine whether $f(x) = 0$ has real roots.
+**DSE Practice 4.** The function $f(x) = x^2 + px + q$ satisfies $f(1) = 3$ and $f(2) = 5$. Find $p$
+and $q$And determine whether $f(x) = 0$ has real roots.
 
 <details>
 <summary>Solution</summary>
@@ -779,7 +825,8 @@ $f(x) = x^2 - x + 3$. $\Delta = 1 - 12 = -11 < 0$. No real roots.
 
 </details>
 
-**DSE Practice 5.** Given that $\alpha$ and $\beta$ are roots of $x^2 - 4x + 1 = 0$Find $\alpha^4 + \beta^4$ without solving the equation.
+**DSE Practice 5.** Given that $\alpha$ and $\beta$ are roots of $x^2 - 4x + 1 = 0$Find
+$\alpha^4 + \beta^4$ without solving the equation.
 
 <details>
 <summary>Solution</summary>
@@ -792,12 +839,14 @@ $\alpha^4 + \beta^4 = (\alpha^2 + \beta^2)^2 - 2(\alpha\beta)^2 = 196 - 2 = 194$
 
 </details>
 
-**DSE Practice 6.** A rectangular enclosure is to be built with one side against a wall. $60$ m of fencing is available for the other three sides. Find the dimensions that maximise the area.
+**DSE Practice 6.** A rectangular enclosure is to be built with one side against a wall. $60$ m of
+fencing is available for the other three sides. Find the dimensions that maximise the area.
 
 <details>
 <summary>Solution</summary>
 
-Let the side parallel to the wall have length $x$ m, and the two perpendicular sides each have length $y$ m.
+Let the side parallel to the wall have length $x$ m, and the two perpendicular sides each have
+length $y$ m.
 
 $x + 2y = 60 \implies x = 60 - 2y$.
 
@@ -811,11 +860,12 @@ Dimensions: $30\mathrm{ m}$ parallel to wall, $15\mathrm{ m}$ perpendicular.
 
 ---
 
-:::tip
-Diagnostic Test
-Ready to test your understanding of **Quadratics**? The [diagnostic test](/docs/dse/Maths/diagnostics/diag-quadratics) contains the hardest questions within the DSE specification for this topic, each with a full worked solution.
+:::tip Diagnostic Test Ready to test your understanding of **Quadratics**? The
+[diagnostic test](/docs/dse/Maths/diagnostics/diag-quadratics) contains the hardest questions within
+the DSE specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Quadratics with other DSE mathematics topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Quadratics
+with other DSE mathematics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/dse/Maths/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/dse/Maths/diagnostics/diagnostic-guide) for instructions on
+self-marking and building a personal test matrix. :::

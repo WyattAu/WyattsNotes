@@ -1,7 +1,9 @@
 ---
 id: intro
 title: Introduction to Git
-description: "Introduction to Git — What is Git; Design Philosophy; 1. Distributed by Default; 2. Snapshots, Not Diffs with worked examples and exam-style questions."
+description:
+  'Introduction to Git — What is Git; Design Philosophy; 1. Distributed by Default; 2. Snapshots,
+  Not Diffs with worked examples and exam-style questions.'
 date: 2025-06-02T21:50:00.000Z
 tags:
   - git
@@ -10,6 +12,7 @@ categories:
   - CS
 slug: intro
 ---
+
 ## What is Git
 
 Git is a **distributed version control system** (DVCS) designed to track changes in source code
@@ -40,12 +43,12 @@ Workflow:
 Every repository clone contains the **complete object database** — every commit, every tree, every
 Blob. This means:
 
-- **Offline operation**: `git log``git diff``git blame``git show` all work without network
- access. You can commit, branch, and merge entirely offline.
+- **Offline operation**: `git log``git diff``git blame``git show` all work without network access.
+  You can commit, branch, and merge entirely offline.
 - **Speed**: Local operations read from the filesystem, not the network. `git log` on a cold
- repository scans the local object store.
+  repository scans the local object store.
 - **Resilience**: No single point of failure. If the remote server burns down, any clone can
- recreate it entirely with `git push --mirror`.
+  recreate it entirely with `git push --mirror`.
 
 The cost is **disk space** — a full clone of the Linux kernel is $\sim$5 GB. Mitigations exist
 (shallow clones, sparse checkout, partial clone), but the default is to replicate everything.
@@ -60,12 +63,12 @@ A pointer to the identical blob object.
 This design choice has deep implications:
 
 - **Content-addressable storage**: Every object is identified by the SHA-1 hash (or SHA-256, as of
- Git 2.29) of its content. Two identical files at different paths or in different commits produce
- the same blob object. This deduplication is automatic and transparent.
+  Git 2.29) of its content. Two identical files at different paths or in different commits produce
+  the same blob object. This deduplication is automatic and transparent.
 - **Fast branching**: Creating a branch is a $O(1)$ operation — it writes a 41-byte reference file.
- There is no copying of file data.
+  There is no copying of file data.
 - **Merge correctness**: Three-way merge compares full tree snapshots, not a chain of deltas, which
- makes it robust against complex history topologies.
+  makes it robust against complex history topologies.
 
 The cost is that Git's object store can appear larger than a delta-based store for repositories with
 Very large files that change frequently. This is why Git added the packfile format (see
@@ -78,29 +81,29 @@ Every Git object (blob, tree, commit, tag) is identified by a cryptographic hash
 Plus header**. This means:
 
 - **Tamper detection**: If a single byte in any object is modified, its hash changes, and all
- objects referencing it become invalid. `git fsck` can detect this.
+  objects referencing it become invalid. `git fsck` can detect this.
 - **Deterministic builds**: Given the same source tree and the same commit hash, you are guaranteed
- the same content. This is foundational for reproducible builds and supply-chain security.
+  the same content. This is foundational for reproducible builds and supply-chain security.
 - **No ambiguity**: A commit hash uniquely identifies a snapshot of the entire project. Two
- developers referring to `a3f2b1c` are guaranteed to be referring to the same state.
+  developers referring to `a3f2b1c` are guaranteed to be referring to the same state.
 
 ### 4. Nearly Every Operation is Local
 
-With the exception of `git fetch``git pull``git push``git clone`And `git ls-remote`Every
-Git operation works on local data. This was a hard requirement for the Linux kernel workflow, where
+With the exception of `git fetch``git pull``git push``git clone`And `git ls-remote`Every Git
+operation works on local data. This was a hard requirement for the Linux kernel workflow, where
 Contributors on dial-up connections needed to work efficiently.
 
 ## How Git Compares to Other VCS
 
-| Feature | Git | Mercurial (Hg) | Subversion (SVN) | Perforce (P4) |
+| Feature              | Git                                | Mercurial (Hg)                | Subversion (SVN)          | Perforce (P4)             |
 | -------------------- | ---------------------------------- | ----------------------------- | ------------------------- | ------------------------- |
-| Architecture | Distributed | Distributed | Centralized | Centralized |
-| Storage model | Content-addressable snapshots | Content-addressable snapshots | Delta-based | Delta-based (server-side) |
-| Branching model | Pointer-based ($O(1)$) | Bookmark-based ($O(1)$) | Directory copy ($O(n)$) | Streams (server-side) |
-| Offline commits | Full | Full | No | Limited (shelving) |
-| Performance at scale | Excellent (Linux kernel, Chromium) | Good (Facebook used it) | Degrades with large trees | Excellent with Helix Core |
-| Learning curve | Steep | Moderate | Shallow | Steep |
-| Binary file handling | Poor (use Git LFS) | Poor (use Largefiles) | Good | Good |
+| Architecture         | Distributed                        | Distributed                   | Centralized               | Centralized               |
+| Storage model        | Content-addressable snapshots      | Content-addressable snapshots | Delta-based               | Delta-based (server-side) |
+| Branching model      | Pointer-based ($O(1)$)             | Bookmark-based ($O(1)$)       | Directory copy ($O(n)$)   | Streams (server-side)     |
+| Offline commits      | Full                               | Full                          | No                        | Limited (shelving)        |
+| Performance at scale | Excellent (Linux kernel, Chromium) | Good (Facebook used it)       | Degrades with large trees | Excellent with Helix Core |
+| Learning curve       | Steep                              | Moderate                      | Shallow                   | Steep                     |
+| Binary file handling | Poor (use Git LFS)                 | Poor (use Largefiles)         | Good                      | Good                      |
 
 :::tip
 
@@ -114,12 +117,12 @@ Git is optimized for text files.
 
 ### Installation
 
-| Platform | Method |
+| Platform              | Method                                                          |
 | --------------------- | --------------------------------------------------------------- |
-| Linux (Debian/Ubuntu) | `sudo apt install git` |
-| Linux (Fedora) | `sudo dnf install git` |
-| macOS | `brew install git` (preferred over Xcode's bundled Git) |
-| Windows | [git-scm.com](https://git-scm.com/) or `winget install Git.Git` |
+| Linux (Debian/Ubuntu) | `sudo apt install git`                                          |
+| Linux (Fedora)        | `sudo dnf install git`                                          |
+| macOS                 | `brew install git` (preferred over Xcode's bundled Git)         |
+| Windows               | [git-scm.com](https://git-scm.com/) or `winget install Git.Git` |
 
 ### Essential Configuration
 
@@ -200,14 +203,14 @@ Every Git operation. Understanding the transitions between them is essential. Se
 
 This guide is organized into the following sections:
 
-| Section | Content |
+| Section                                                                     | Content                                                   |
 | --------------------------------------------------------------------------- | --------------------------------------------------------- |
-| [Fundamentals](./02-fundamentals/01-the-three-trees.md) | Three-tree architecture, Git objects, references |
-| [Branching and Merging](./03-branching-and-merging/01-branching.md) | Branches, merge strategies, rebasing, conflict resolution |
-| [Remotes and Workflows](./04-remotes-and-workflows/01-remote-operations.md) | Remote operations, branching strategies, pull requests |
-| [Advanced Topics](./05-advanced-topics/01-reflog.md) | Reflog, stash, bisect, submodules, worktrees |
-| [Internals](./06-internals/01-git-directory-structure.md) | `.git` directory layout, pack files, hashing algorithm |
-| [Others](./Others/gitea-on-truenas.md) | Self-hosting, commit history removal |
+| [Fundamentals](./02-fundamentals/01-the-three-trees.md)                     | Three-tree architecture, Git objects, references          |
+| [Branching and Merging](./03-branching-and-merging/01-branching.md)         | Branches, merge strategies, rebasing, conflict resolution |
+| [Remotes and Workflows](./04-remotes-and-workflows/01-remote-operations.md) | Remote operations, branching strategies, pull requests    |
+| [Advanced Topics](./05-advanced-topics/01-reflog.md)                        | Reflog, stash, bisect, submodules, worktrees              |
+| [Internals](./06-internals/01-git-directory-structure.md)                   | `.git` directory layout, pack files, hashing algorithm    |
+| [Others](./Others/gitea-on-truenas.md)                                      | Self-hosting, commit history removal                      |
 
 ## Common Pitfalls
 

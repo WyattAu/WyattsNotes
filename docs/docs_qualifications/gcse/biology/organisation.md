@@ -1,6 +1,8 @@
 ---
 title: Organisation
-description: "Organisation — 1. The Digestive System; 1.1 Overview; 1.2 Enzymes; 1.3 Digestive Enzymes with worked examples and exam-style questions."
+description:
+  'Organisation — 1. The Digestive System; 1.1 Overview; 1.2 Enzymes; 1.3 Digestive Enzymes with
+  worked examples and exam-style questions.'
 date: 2026-04-14
 tags:
   - Biology
@@ -9,11 +11,10 @@ categories:
   - Biology
 slug: organisation
 ---
+
 ## Organisation
 
-:::info
-Board Coverage AQA Paper 1 & 2 | Edexcel Paper 1 & 2 | OCR A Gateway B2 | WJEC B2
-:::
+:::info Board Coverage AQA Paper 1 & 2 | Edexcel Paper 1 & 2 | OCR A Gateway B2 | WJEC B2 :::
 
 ## 1. The Digestive System
 
@@ -58,50 +59,50 @@ Of millions, allowing digestion to occur within hours.
 
 **Factors affecting enzyme activity:**
 
-| Factor | Effect |
+| Factor                  | Effect                                                                                                                   |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| Temperature | Rate increases up to the optimum (about 37$^{\circ}$C for human enzymes), then decreases sharply as the enzyme denatures |
-| pH | Each enzyme has an optimum pH; deviations reduce activity |
-| Substrate concentration | Rate increases with concentration, then plateaus (all active sites occupied) |
+| Temperature             | Rate increases up to the optimum (about 37$^{\circ}$C for human enzymes), then decreases sharply as the enzyme denatures |
+| pH                      | Each enzyme has an optimum pH; deviations reduce activity                                                                |
+| Substrate concentration | Rate increases with concentration, then plateaus (all active sites occupied)                                             |
 
 **Denaturation:** At high temperatures or extreme pH, the active site changes shape and the
 Substrate can no longer fit. This is because the weak bonds (hydrogen bonds, ionic bonds) that
-Maintain the enzyme's tertiary structure are broken. Denaturation is irreversible: once an
-Enzyme has been denatured, it cannot recover its function.
+Maintain the enzyme's tertiary structure are broken. Denaturation is irreversible: once an Enzyme
+has been denatured, it cannot recover its function.
 
 **Worked Example: Interpreting an enzyme rate graph.**
 
 A student investigates the effect of temperature on amylase activity. The results are:
 
 | Temperature ($^{\circ}$C) | Time for starch to disappear (s) | Rate ($1/\mathrm{time{}$) ($\times 10^{-3}$ s$^{-1}$) |
-| ------------------------- | -------------------------------- | -------------------------------------------------- |
-| 10 | 300 | 3.3 |
-| 20 | 120 | 8.3 |
-| 30 | 60 | 16.7 |
-| 37 | 40 | 25.0 |
-| 45 | 55 | 18.2 |
-| 55 | 120 | 8.3 |
-| 60 | No reaction | 0 |
+| ------------------------- | -------------------------------- | ----------------------------------------------------- |
+| 10                        | 300                              | 3.3                                                   |
+| 20                        | 120                              | 8.3                                                   |
+| 30                        | 60                               | 16.7                                                  |
+| 37                        | 40                               | 25.0                                                  |
+| 45                        | 55                               | 18.2                                                  |
+| 55                        | 120                              | 8.3                                                   |
+| 60                        | No reaction                      | 0                                                     |
 
 **Step-by-step analysis:**
 
 1. From 10$^{\circ}$C to 37$^{\circ}$C, the rate increases. This is because increasing temperature
- increases the kinetic energy of the enzyme and substrate molecules, so they collide more
- frequently with the active site.
+   increases the kinetic energy of the enzyme and substrate molecules, so they collide more
+   frequently with the active site.
 2. The maximum rate occurs at 37$^{\circ}$C (the optimum temperature). At this temperature, the
- enzyme is working at its maximum rate.
+   enzyme is working at its maximum rate.
 3. Above 37$^{\circ}$C, the rate decreases. At 60$^{\circ}$C, there is no reaction at all. This is
- because the enzyme has denatured: the high temperature has broken the bonds maintaining the
- active site shape, so the substrate can no longer bind.
+   because the enzyme has denatured: the high temperature has broken the bonds maintaining the
+   active site shape, so the substrate can no longer bind.
 
 ### 1.3 Digestive Enzymes
 
-| Enzyme | Produced in | Substrate | Product | Optimum pH |
+| Enzyme   | Produced in                                | Substrate | Product                  | Optimum pH                             |
 | -------- | ------------------------------------------ | --------- | ------------------------ | -------------------------------------- |
-| Amylase | Salivary glands, pancreas, small intestine | Starch | Maltose | Neutral/alkaline |
-| Protease | Stomach, pancreas, small intestine | Proteins | Amino acids | Acidic (stomach), alkaline (intestine) |
-| Lipase | Pancreas, small intestine | Lipids | Glycerol and fatty acids | Alkaline |
-| Maltase | Small intestine | Maltose | Glucose | Alkaline |
+| Amylase  | Salivary glands, pancreas, small intestine | Starch    | Maltose                  | Neutral/alkaline                       |
+| Protease | Stomach, pancreas, small intestine         | Proteins  | Amino acids              | Acidic (stomach), alkaline (intestine) |
+| Lipase   | Pancreas, small intestine                  | Lipids    | Glycerol and fatty acids | Alkaline                               |
+| Maltase  | Small intestine                            | Maltose   | Glucose                  | Alkaline                               |
 
 **Why different enzymes work at different pH.** The stomach produces hydrochloric acid, creating a
 PH of approximately 2. This is optimal for pepsin (a protease), which begins protein digestion. The
@@ -112,12 +113,12 @@ Maximising the overall efficiency of digestion.
 
 **Summary table: enzyme sites and conditions.**
 
-| Region | pH | Enzymes present |
+| Region          | pH  | Enzymes present                     |
 | --------------- | --- | ----------------------------------- |
-| Mouth | ~7 | Salivary amylase |
-| Stomach | ~2 | Pepsin (protease) |
-| Small intestine | ~8 | Pancreatic amylase, trypsin, lipase |
-| Small intestine | ~8 | Maltase, other brush-border enzymes |
+| Mouth           | ~7  | Salivary amylase                    |
+| Stomach         | ~2  | Pepsin (protease)                   |
+| Small intestine | ~8  | Pancreatic amylase, trypsin, lipase |
+| Small intestine | ~8  | Maltase, other brush-border enzymes |
 
 ### 1.4 Bile
 
@@ -127,11 +128,11 @@ Intestine through the bile duct.
 **Functions of bile:**
 
 - **Emulsifies fats:** Breaks large fat droplets into smaller droplets, increasing surface area for
- lipase action. Bile does not chemically digest fats; it is a physical process. Think of it like
- washing-up liquid: it does not dissolve grease, but it breaks it into smaller droplets that are
- easier to clean.
+  lipase action. Bile does not chemically digest fats; it is a physical process. Think of it like
+  washing-up liquid: it does not dissolve grease, but it breaks it into smaller droplets that are
+  easier to clean.
 - **Neutralises stomach acid:** Provides alkaline conditions in the small intestine (optimum pH for
- pancreatic enzymes). Without bile, the acid from the stomach would denature pancreatic enzymes.
+  pancreatic enzymes). Without bile, the acid from the stomach would denature pancreatic enzymes.
 
 **Bile vs. Lipase -- a common confusion.** Bile is not an enzyme. It does not break chemical bonds.
 It only physically breaks large fat droplets into smaller ones (emulsification). Lipase is the
@@ -143,12 +144,12 @@ For lipase by increasing the surface area available for the enzyme to act upon.
 The **small intestine** is adapted for absorption:
 
 - **Villi:** Finger-like projections that increase surface area. Each villus is covered in even
- smaller projections called **microvilli**, further increasing surface area.
+  smaller projections called **microvilli**, further increasing surface area.
 - **Thin walls:** One cell thick, short diffusion distance.
 - **Dense capillary network:** Maintains steep concentration gradient by carrying absorbed nutrients
- away from the intestine.
+  away from the intestine.
 - **Lacteal:** A small lymph vessel in the centre of each villus that absorbs fatty acids and
- glycerol (products of fat digestion).
+  glycerol (products of fat digestion).
 
 **Large intestine:** Absorbs water from remaining undigested material. The remaining waste forms
 Faeces. If the large intestine does not absorb enough water, the result is diarrhoea. If it absorbs
@@ -188,20 +189,20 @@ Colour change is due to enzyme activity, not spontaneous breakdown.
 **Ensuring reliability and validity:**
 
 - **Reliability:** Repeat the experiment at least three times at each temperature/pH and calculate a
- mean rate. If the repeats are consistent, the results are reliable.
+  mean rate. If the repeats are consistent, the results are reliable.
 - **Validity:** Ensure that only the independent variable changes. Use the same volume and
- concentration of amylase and starch each time. Use a water bath to control temperature accurately.
- Use a buffer solution to control pH.
+  concentration of amylase and starch each time. Use a water bath to control temperature accurately.
+  Use a buffer solution to control pH.
 
 ## 2. The Circulatory System
 
 ### 2.1 Blood Vessels
 
-| Vessel | Structure | Function |
+| Vessel    | Structure                          | Function                                         |
 | --------- | ---------------------------------- | ------------------------------------------------ |
-| Artery | Thick, elastic walls; narrow lumen | Carry blood away from the heart at high pressure |
-| Vein | Thin walls; wide lumen; valves | Carry blood back to the heart at low pressure |
-| Capillary | One cell thick walls; very narrow | Exchange of materials between blood and cells |
+| Artery    | Thick, elastic walls; narrow lumen | Carry blood away from the heart at high pressure |
+| Vein      | Thin walls; wide lumen; valves     | Carry blood back to the heart at low pressure    |
+| Capillary | One cell thick walls; very narrow  | Exchange of materials between blood and cells    |
 
 **Understanding the structural differences.** Arteries need thick, elastic walls because they carry
 Blood at high pressure generated by the heart's contraction. The elasticity allows them to expand
@@ -212,15 +213,15 @@ Blood and tissues.
 
 **Detailed comparison of artery and vein structure.**
 
-| Feature | Artery | Vein |
-| ----------------- | ------------------------------------- | --------------------------------------- |
-| Wall thickness | Thick (muscle and elastic tissue) | Thin |
-| Lumen | Narrow (maintains high pressure) | Wide (reduces resistance to flow) |
-| Valves | Absent (pressure keeps blood flowing) | Present (prevent backflow) |
-| Blood pressure | High (generated by heart contraction) | Low |
-| Blood flow speed | Fast | Slow |
-| Direction of flow | Away from the heart | Towards the heart |
-| Oxygenation | oxygenated (except pulmonary) | deoxygenated (except pulmonary) |
+| Feature           | Artery                                | Vein                              |
+| ----------------- | ------------------------------------- | --------------------------------- |
+| Wall thickness    | Thick (muscle and elastic tissue)     | Thin                              |
+| Lumen             | Narrow (maintains high pressure)      | Wide (reduces resistance to flow) |
+| Valves            | Absent (pressure keeps blood flowing) | Present (prevent backflow)        |
+| Blood pressure    | High (generated by heart contraction) | Low                               |
+| Blood flow speed  | Fast                                  | Slow                              |
+| Direction of flow | Away from the heart                   | Towards the heart                 |
+| Oxygenation       | oxygenated (except pulmonary)         | deoxygenated (except pulmonary)   |
 
 ### 2.2 The Heart
 
@@ -241,13 +242,13 @@ Ventricle $\to$ Semilunar valve $\to$ Aorta $\to$ Body
 **Key points:**
 
 - Valves prevent backflow of blood. The bicuspid (mitral) and tricuspid valves are between the atria
- and ventricles; semilunar valves are in the aorta and pulmonary artery.
+  and ventricles; semilunar valves are in the aorta and pulmonary artery.
 - The left ventricle wall is thicker than the right (pumps blood further and against higher
- resistance in the systemic circulation).
+  resistance in the systemic circulation).
 - Coronary arteries supply the heart muscle with oxygen and glucose. Blockage of these arteries
- causes coronary heart disease.
+  causes coronary heart disease.
 - The cardiac cycle is controlled by electrical impulses from the SAN (sinoatrial node, the
- pacemaker), which is located in the wall of the right atrium.
+  pacemaker), which is located in the wall of the right atrium.
 
 **Worked Example: Understanding blood flow through the heart.**
 
@@ -256,24 +257,24 @@ A student is asked to trace the path of a red blood cell from the vena cava to t
 Step-by-step:
 
 1. The red blood cell enters the right atrium via the vena cava. At this point, the blood is
- deoxygenated (has given up its oxygen to body tissues).
+   deoxygenated (has given up its oxygen to body tissues).
 2. The tricuspid valve opens, and the cell passes into the right ventricle.
 3. The right ventricle contracts, the tricuspid valve closes (preventing backflow), and the
- semilunar valve in the pulmonary artery opens. The cell is pumped to the lungs.
+   semilunar valve in the pulmonary artery opens. The cell is pumped to the lungs.
 4. In the lungs, the cell picks up oxygen and releases carbon dioxide. It is now oxygenated.
 5. The oxygenated blood returns to the heart via the pulmonary vein, entering the left atrium.
 6. The bicuspid valve opens, and the cell passes into the left ventricle.
 7. The left ventricle contracts (its thick muscular wall generates high pressure), the bicuspid
- valve closes, and the semilunar valve in the aorta opens. The cell is pumped to the body.
+   valve closes, and the semilunar valve in the aorta opens. The cell is pumped to the body.
 
 ### 2.3 Blood Components
 
-| Component | Function |
+| Component         | Function                                                                                    |
 | ----------------- | ------------------------------------------------------------------------------------------- |
-| Red blood cells | Transport oxygen (contain haemoglobin, which binds to O$_2$) |
-| White blood cells | Defend against disease (phagocytes engulf pathogens; lymphocytes produce antibodies) |
-| Platelets | Cell fragments that help blood clot at wounds |
-| Plasma | Liquid that carries dissolved substances (glucose, amino acids, urea, hormones, antibodies) |
+| Red blood cells   | Transport oxygen (contain haemoglobin, which binds to O$_2$)                                |
+| White blood cells | Defend against disease (phagocytes engulf pathogens; lymphocytes produce antibodies)        |
+| Platelets         | Cell fragments that help blood clot at wounds                                               |
+| Plasma            | Liquid that carries dissolved substances (glucose, amino acids, urea, hormones, antibodies) |
 
 **Haemoglobin and oxygen transport.** Haemoglobin is a protein in red blood cells that binds
 Reversibly to oxygen. In the lungs (high oxygen concentration), haemoglobin binds oxygen to form
@@ -292,14 +293,14 @@ Is the basis of the immune response.
 Red blood cells are highly specialised for oxygen transport. Their adaptations include:
 
 1. **Biconcave disc shape:** Increases the surface area to volume ratio, allowing more oxygen to
- diffuse across the cell membrane in a given time. It also makes the cell flexible, allowing it to
- squeeze through narrow capillaries.
+   diffuse across the cell membrane in a given time. It also makes the cell flexible, allowing it to
+   squeeze through narrow capillaries.
 2. **No nucleus:** This creates more space inside the cell for haemoglobin molecules, increasing the
- cell's oxygen-carrying capacity.
+   cell's oxygen-carrying capacity.
 3. **Contains haemoglobin:** A red pigment that binds reversibly to oxygen, forming oxyhaemoglobin
- in the lungs and releasing oxygen in the tissues.
+   in the lungs and releasing oxygen in the tissues.
 4. **Flexible membrane:** Allows the cell to deform as it passes through capillaries that are
- narrower than the cell itself.
+   narrower than the cell itself.
 
 ### 2.4 Coronary Heart Disease
 
@@ -309,22 +310,22 @@ Fatty deposits (atheroma/plaque) in a process called **atherosclerosis**.
 **Treatments:**
 
 - **Stents:** Wire mesh tubes inserted into arteries to keep them open. Mechanical solution; does
- not address the underlying cause.
+  not address the underlying cause.
 - **Statins:** Drugs that reduce blood cholesterol levels, slowing the build-up of plaque. Must be
- taken long-term.
+  taken long-term.
 - **Bypass surgery:** Using a blood vessel from elsewhere (e.g., leg vein) to create a new route
- around the blocked artery. Major surgery with significant recovery time.
+  around the blocked artery. Major surgery with significant recovery time.
 
 **Risk factors:** High saturated fat diet, smoking, high blood pressure, obesity, lack of exercise,
 Genetic factors, stress.
 
 **Comparison of CHD treatments.**
 
-| Treatment | How it works | Advantages | Disadvantages |
+| Treatment      | How it works                                       | Advantages                        | Disadvantages                        |
 | -------------- | -------------------------------------------------- | --------------------------------- | ------------------------------------ |
-| Stents | Physically widens the narrowed artery | Relatively quick procedure | Does not address underlying cause |
-| Statins | Reduces blood cholesterol, slowing plaque build-up | Reduces risk of further blockages | Must be taken for life; side effects |
-| Bypass surgery | Creates a new route around the blockage | Effective for severe blockages | Major surgery; long recovery time |
+| Stents         | Physically widens the narrowed artery              | Relatively quick procedure        | Does not address underlying cause    |
+| Statins        | Reduces blood cholesterol, slowing plaque build-up | Reduces risk of further blockages | Must be taken for life; side effects |
+| Bypass surgery | Creates a new route around the blockage            | Effective for severe blockages    | Major surgery; long recovery time    |
 
 ## 3. The Respiratory System
 
@@ -342,7 +343,7 @@ Into the blood; carbon dioxide diffuses from the blood into the alveoli.
 **Adaptations of alveoli for gas exchange:**
 
 - **Large surface area:** Millions of tiny alveoli provide an enormous total surface area
- (approximately 70 m$^2$).
+  (approximately 70 m$^2$).
 - **Thin walls:** One cell thick, short diffusion distance.
 - **Moist surface:** Gases dissolve in the thin layer of moisture before diffusing.
 - **Dense capillary network:** Maintains steep concentration gradient.
@@ -357,14 +358,14 @@ $$\mathrm{Rate of diffusion{} \propto \frac{\mathrm{Surface area{} \times \mathr
 The alveoli are adapted to maximise the rate of diffusion by:
 
 1. **Large surface area:** Millions of alveoli provide approximately 70 m$^2$ of surface area.
- Increasing surface area directly increases the rate of diffusion.
+   Increasing surface area directly increases the rate of diffusion.
 2. **Steep concentration gradient:** Blood flow and ventilation constantly refresh the air in the
- alveoli and carry blood away. Oxygen in the alveoli is maintained at a high concentration (about
- 21% in inhaled air, lower in exhaled air), while oxygen in the blood arriving at the lungs is low
- (depleted after passing through body tissues). This steep gradient maximises the rate of
- diffusion.
+   alveoli and carry blood away. Oxygen in the alveoli is maintained at a high concentration (about
+   21% in inhaled air, lower in exhaled air), while oxygen in the blood arriving at the lungs is low
+   (depleted after passing through body tissues). This steep gradient maximises the rate of
+   diffusion.
 3. **Short diffusion distance:** The alveolar wall and capillary wall are each only one cell thick
- (combined thickness of about 1 micrometre). This short distance maximises the rate of diffusion.
+   (combined thickness of about 1 micrometre). This short distance maximises the rate of diffusion.
 
 ### 3.3 Ventilation
 
@@ -410,18 +411,18 @@ Main parts:
 
 ### 4.2 Neurones
 
-| Type | Function |
+| Type            | Function                                       |
 | --------------- | ---------------------------------------------- |
-| Sensory neurone | Carries impulses from receptors to the CNS |
-| Relay neurone | Connects sensory and motor neurones in the CNS |
-| Motor neurone | Carries impulses from the CNS to effectors |
+| Sensory neurone | Carries impulses from receptors to the CNS     |
+| Relay neurone   | Connects sensory and motor neurones in the CNS |
+| Motor neurone   | Carries impulses from the CNS to effectors     |
 
 **Structure of a motor neurone:**
 
 - The cell body contains the nucleus and is located in the CNS or in a ganglion.
 - A long axon carries the electrical impulse from the cell body to the effector.
 - The axon is insulated by a myelin sheath, which speeds up transmission by allowing the impulse to
- jump between gaps (nodes of Ranvier) in a process called saltatory conduction.
+  jump between gaps (nodes of Ranvier) in a process called saltatory conduction.
 - Dendrites at the cell body receive signals from other neurones.
 - Synaptic terminals at the end of the axon release neurotransmitters.
 
@@ -434,7 +435,7 @@ Diffuse across the gap and bind to receptors on the next neurone, triggering a n
 **Why synapses are important:**
 
 - They ensure impulses travel in one direction only (receptors are only on the postsynaptic
- membrane).
+  membrane).
 - They allow one neurone to connect to many others, creating complex neural networks.
 - They can amplify or dampen signals, providing a mechanism for modulating responses.
 
@@ -447,8 +448,8 @@ Diffuse across the gap and bind to receptors on the next neurone, triggering a n
 5. The neurotransmitter binds to specific receptor proteins on the postsynaptic membrane.
 6. This binding triggers a new electrical impulse in the postsynaptic neurone.
 7. The neurotransmitter is broken down by enzymes in the synaptic cleft (e.g., acetylcholinesterase
- breaks down acetylcholine) or taken back up by the presynaptic neurone (reuptake), preventing
- continuous stimulation.
+   breaks down acetylcholine) or taken back up by the presynaptic neurone (reuptake), preventing
+   continuous stimulation.
 
 ### 4.4 Reflex Arc
 
@@ -463,7 +464,7 @@ Reflexes are fast, automatic, and protective. They do not involve conscious thou
 
 1. **Stimulus:** Heat from the hot object.
 2. **Receptor:** Temperature receptors in the skin detect the heat and generate an electrical
- impulse.
+   impulse.
 3. **Sensory neurone:** Carries the impulse to the spinal cord.
 4. **Relay neurone:** Connects the sensory neurone to the motor neurone in the CNS.
 5. **Motor neurone:** Carries the impulse from the CNS to the effector (muscle in the arm).
@@ -475,36 +476,36 @@ Important because it minimises tissue damage.
 
 ### 4.5 The Brain
 
-| Part | Function |
+| Part            | Function                                      |
 | --------------- | --------------------------------------------- |
 | Cerebral cortex | Intelligence, memory, language, consciousness |
-| Cerebellum | Coordination and balance |
-| Medulla | Unconscious processes (breathing, heart rate) |
-| Hypothalamus | Temperature regulation and hormone production |
+| Cerebellum      | Coordination and balance                      |
+| Medulla         | Unconscious processes (breathing, heart rate) |
+| Hypothalamus    | Temperature regulation and hormone production |
 
 **Studying the brain.** The brain is difficult to study because it is protected by the skull, it is
 Extremely complex, and it is unethical to carry out experiments on living human brains. Methods of
 Studying the brain include:
 
 - **MRI scans:** Produce detailed images of brain structure. Can identify tumours, damage, and
- structural abnormalities.
+  structural abnormalities.
 - **fMRI scans:** Show which parts of the brain are active by detecting changes in blood flow.
 - **Studying patients with brain damage:** If a specific area of the brain is damaged and the
- patient loses a specific function, this provides evidence for the function of that area.
+  patient loses a specific function, this provides evidence for the function of that area.
 - **Electrical stimulation:** Stimulating specific areas of the brain with electrodes and observing
- the effects.
+  the effects.
 
 ### 4.6 The Eye
 
-| Structure | Function |
+| Structure       | Function                                         |
 | --------------- | ------------------------------------------------ |
-| Cornea | Refracts light; protective outer layer |
-| Iris | Controls the size of the pupil (amount of light) |
-| Pupil | Hole that allows light to enter |
-| Lens | Focuses light onto the retina |
-| Retina | Contains light-sensitive cells (rods and cones) |
-| Optic nerve | Carries impulses to the brain |
-| Ciliary muscles | Change the shape of the lens (accommodation) |
+| Cornea          | Refracts light; protective outer layer           |
+| Iris            | Controls the size of the pupil (amount of light) |
+| Pupil           | Hole that allows light to enter                  |
+| Lens            | Focuses light onto the retina                    |
+| Retina          | Contains light-sensitive cells (rods and cones)  |
+| Optic nerve     | Carries impulses to the brain                    |
+| Ciliary muscles | Change the shape of the lens (accommodation)     |
 
 **Accommodation:** The process by which the eye focuses on near and distant objects:
 
@@ -514,7 +515,7 @@ Studying the brain include:
 **Eye defects:**
 
 - **Short-sightedness (myopia):** Image focuses in front of the retina; corrected with a concave
- lens.
+  lens.
 - **Long-sightedness (hyperopia):** Image focuses behind the retina; corrected with a convex lens.
 
 ## 5. Non-Communicable Diseases
@@ -530,19 +531,19 @@ Studying the brain include:
 
 ### 5.2 Risk Factors
 
-| Risk Factor | Associated Diseases |
+| Risk Factor        | Associated Diseases                |
 | ------------------ | ---------------------------------- |
-| Smoking | Lung cancer, CHD, COPD |
-| Obesity | Type 2 diabetes, CHD, some cancers |
-| Alcohol | Liver disease, some cancers |
-| UV exposure | Skin cancer |
-| Ionising radiation | Various cancers |
-| Poor diet | CHD, type 2 diabetes |
+| Smoking            | Lung cancer, CHD, COPD             |
+| Obesity            | Type 2 diabetes, CHD, some cancers |
+| Alcohol            | Liver disease, some cancers        |
+| UV exposure        | Skin cancer                        |
+| Ionising radiation | Various cancers                    |
+| Poor diet          | CHD, type 2 diabetes               |
 
 ### 5.3 Diabetes
 
-**Type 1 diabetes:** The pancreas produces little or no insulin. Diagnosed in childhood.
-Autoimmune condition. Treated with insulin injections.
+**Type 1 diabetes:** The pancreas produces little or no insulin. Diagnosed in childhood. Autoimmune
+condition. Treated with insulin injections.
 
 **Type 2 diabetes:** Body cells become resistant to insulin. Linked to obesity and lifestyle.
 Treated with diet, exercise, and medication.
@@ -556,14 +557,14 @@ So that it reaches the target cells intact and can bind to its receptors.
 
 **Detailed comparison of type 1 and type 2 diabetes.**
 
-| Feature | Type 1 Diabetes | Type 2 Diabetes |
-| ------------------ | ------------------------------------ | -------------------------------------------- |
-| Cause | Autoimmune destruction of beta cells | Insulin resistance; reduced sensitivity |
-| Age of onset | childhood | adulthood (but increasingly younger) |
-| Insulin production | None (beta cells destroyed) | Reduced or cells become resistant |
-| Treatment | Insulin injections | Diet, exercise, medication |
-| Risk factors | Genetic predisposition | Obesity, lack of exercise, poor diet |
-| Prevalence | About 10% of diabetes cases | About 90% of diabetes cases |
+| Feature            | Type 1 Diabetes                      | Type 2 Diabetes                         |
+| ------------------ | ------------------------------------ | --------------------------------------- |
+| Cause              | Autoimmune destruction of beta cells | Insulin resistance; reduced sensitivity |
+| Age of onset       | childhood                            | adulthood (but increasingly younger)    |
+| Insulin production | None (beta cells destroyed)          | Reduced or cells become resistant       |
+| Treatment          | Insulin injections                   | Diet, exercise, medication              |
+| Risk factors       | Genetic predisposition               | Obesity, lack of exercise, poor diet    |
+| Prevalence         | About 10% of diabetes cases          | About 90% of diabetes cases             |
 
 ## 6. Higher Tier: Homeostasis and Negative Feedback
 
@@ -591,90 +592,94 @@ Vasodilation). When the temperature returns to normal, the response stops.
 
 1. Thermoreceptors in the skin and hypothalamus detect the increase.
 2. The hypothalamus sends nerve impulses to:
- - **Sweat glands:** Increased sweat production. Water in sweat evaporates from the skin surface,
- removing heat energy (latent heat of vaporisation).
- - **Blood vessels in the skin:** Vasodilation occurs. The blood vessels dilate (widen),
- increasing blood flow near the skin surface so more heat can be radiated away.
+
+- **Sweat glands:** Increased sweat production. Water in sweat evaporates from the skin surface,
+  removing heat energy (latent heat of vaporisation).
+- **Blood vessels in the skin:** Vasodilation occurs. The blood vessels dilate (widen), increasing
+  blood flow near the skin surface so more heat can be radiated away.
+
 3. Body temperature decreases back to 37$^{\circ}$C.
 
 **When body temperature falls (too cold):**
 
 1. Thermoreceptors detect the decrease.
 2. The hypothalamus sends nerve impulses to:
- - **Blood vessels in the skin:** Vasoconstriction occurs. Blood vessels narrow, reducing blood
- flow near the skin surface to reduce heat loss.
- - **Muscles:** Shivering occurs. Rapid, involuntary muscle contractions generate heat as a
- by-product of respiration.
- - **Body hairs:** Erector pili muscles contract, causing body hairs to stand up. This traps a
- layer of insulating air next to the skin (more effective in furry animals than in humans).
+
+- **Blood vessels in the skin:** Vasoconstriction occurs. Blood vessels narrow, reducing blood flow
+  near the skin surface to reduce heat loss.
+- **Muscles:** Shivering occurs. Rapid, involuntary muscle contractions generate heat as a
+  by-product of respiration.
+- **Body hairs:** Erector pili muscles contract, causing body hairs to stand up. This traps a layer
+  of insulating air next to the skin (more effective in furry animals than in humans).
+
 3. Body temperature increases back to 37$^{\circ}$C.
 
 ### 6.2 The Endocrine System
 
-| Feature | Nervous system | Endocrine system |
+| Feature  | Nervous system      | Endocrine system                  |
 | -------- | ------------------- | --------------------------------- |
-| Signal | Electrical impulses | Chemical (hormones) |
-| Speed | Very fast | Slower |
-| Duration | Short-lived | Longer-lasting |
-| Target | Very specific | Widespread (cells with receptors) |
+| Signal   | Electrical impulses | Chemical (hormones)               |
+| Speed    | Very fast           | Slower                            |
+| Duration | Short-lived         | Longer-lasting                    |
+| Target   | Very specific       | Widespread (cells with receptors) |
 
 **Worked Example: Comparing nervous and endocrine responses.**
 
 Consider two situations:
 
 1. You touch a hot object. This triggers a **nervous response** (reflex arc). The impulse travels
- along neurones at high speed, reaching the effector in milliseconds. The response (pulling your
- hand away) is fast and short-lived.
+   along neurones at high speed, reaching the effector in milliseconds. The response (pulling your
+   hand away) is fast and short-lived.
 2. You eat a large meal. This triggers an **endocrine response**. The pancreas detects high blood
- glucose and releases insulin into the bloodstream. Insulin travels more slowly than a nerve
- impulse (seconds to minutes), but its effects are longer-lasting (hours), as it causes cells
- throughout the body to take up glucose.
+   glucose and releases insulin into the bloodstream. Insulin travels more slowly than a nerve
+   impulse (seconds to minutes), but its effects are longer-lasting (hours), as it causes cells
+   throughout the body to take up glucose.
 
 **Key point:** The nervous system is for fast, short-lived, targeted responses. The endocrine system
 Is for slower, longer-lasting, widespread responses.
 
 ## Common Pitfalls
 
-- **Confusing arteries and veins.** Arteries carry blood away from the heart ( oxygenated);
- veins carry blood towards the heart ( deoxygenated). Exception: pulmonary arteries carry
- deoxygenated blood.
+- **Confusing arteries and veins.** Arteries carry blood away from the heart ( oxygenated); veins
+  carry blood towards the heart ( deoxygenated). Exception: pulmonary arteries carry deoxygenated
+  blood.
 - **Misunderstanding the lock and key model.** High temperatures denature the enzyme by changing the
- active site shape, not by "melting" the enzyme.
+  active site shape, not by "melting" the enzyme.
 - **Confusing the left and right sides of the heart.** The right side pumps to the lungs; the left
- side pumps to the body.
+  side pumps to the body.
 - **Forgetting the adaptations of the alveoli.** A complete answer must mention surface area, thin
- walls, moisture, and good blood supply.
+  walls, moisture, and good blood supply.
 - **Writing the reflex arc in the wrong order.** Receptor $\to$ sensory $\to$ relay $\to$ motor
- $\to$ effector.
+  $\to$ effector.
 - **Confusing type 1 and type 2 diabetes.** Type 1 = no insulin (autoimmune, injection); type 2 =
- insulin resistance (lifestyle-related).
+  insulin resistance (lifestyle-related).
 - **Stating that bile digests fat.** Bile emulsifies fat (physical breakdown); lipase digests fat.
 - **Forgetting that the pulmonary artery carries deoxygenated blood.** A common exam trap.
 - **Writing "energy" in the word equation for respiration.** Energy is not a substance. Only list
- chemical substances (glucose, oxygen, carbon dioxide, water).
+  chemical substances (glucose, oxygen, carbon dioxide, water).
 - **Confusing osmosis and diffusion.** Osmosis is the specific movement of water across a
- selectively permeable membrane. Diffusion is the movement of any substance from high to low
- concentration.
+  selectively permeable membrane. Diffusion is the movement of any substance from high to low
+  concentration.
 - **Forgetting the control variables in the enzyme practical.** The volume and concentration of
- amylase and starch, the volume of iodine, and the pH (when testing temperature) must all be kept
- constant.
+  amylase and starch, the volume of iodine, and the pH (when testing temperature) must all be kept
+  constant.
 
 ## Practice Questions
 
 1. Explain how the small intestine is adapted for absorption of digested food molecules.
 
 2. Describe the pathway of blood through the heart, naming the chambers, valves, and major blood
- vessels.
+   vessels.
 
 3. Explain the lock and key model of enzyme action and why high temperatures cause enzymes to
- denature.
+   denature.
 
 4. Describe the mechanism of ventilation (breathing in and breathing out).
 
 5. Draw and label a reflex arc for the response to touching a hot object.
 
 6. Explain how the structure of an artery differs from that of a vein and relate this to their
- functions.
+   functions.
 
 7. Describe the role of bile in digestion and explain why it is important.
 
@@ -683,92 +688,104 @@ Is for slower, longer-lasting, widespread responses.
 9. Compare type 1 and type 2 diabetes, including causes and treatments.
 
 10. Explain the effect of increasing temperature on enzyme activity, using a graph to illustrate
- your answer.
+    your answer.
 
 11. **(Higher Tier)** Explain the mechanism of negative feedback in thermoregulation.
 
 12. **(Higher Tier)** Compare the nervous system and the endocrine system.
 
 13. Explain why capillaries are adapted for efficient exchange of materials between the blood and
- body cells.
+    body cells.
 
 14. A person has a resting heart rate of 72 beats per minute and a stroke volume of 70 mL. Calculate
- their cardiac output in litres per minute.
+    their cardiac output in litres per minute.
 
 15. Explain how the structure of a red blood cell is adapted for its function of transporting
- oxygen.
+    oxygen.
 
 16. Describe the structure of a synapse and explain how nerve impulses are transmitted across it.
 
 17. Explain why enzymes in the stomach have a different optimum pH from enzymes in the small
- intestine.
+    intestine.
 
 18. A patient is diagnosed with coronary heart disease. Describe two treatments for this condition
- and explain how each works.
+    and explain how each works.
 
 19. Explain the difference between a receptor and an effector, giving one example of each.
 
 20. Describe the role of the liver in the digestive system and explain why bile is important even
- though it does not contain any digestive enzymes.
+    though it does not contain any digestive enzymes.
 
 21. Explain why a person with type 1 diabetes must inject insulin rather than take it orally.
 
 22. A student investigates the effect of pH on the activity of pepsin. Describe the method they
- would use, the results they would expect, and explain the shape of the graph.
+    would use, the results they would expect, and explain the shape of the graph.
 
 23. Describe and explain what happens during an asthma attack, including the effects on the airways
- and gas exchange.
+    and gas exchange.
 
 24. Explain how vaccination provides protection against disease, referring to the role of
- lymphocytes and memory cells.
+    lymphocytes and memory cells.
 
 25. Evaluate the claim that "most cases of type 2 diabetes could be prevented through lifestyle
- changes." Support your argument with scientific evidence.
+    changes." Support your argument with scientific evidence.
 
 26. Explain why the left ventricle has a thicker muscular wall than the right ventricle.
 
 27. Describe the process of blood clotting, naming the key substances involved.
 
 28. A student sets up an experiment to investigate the effect of temperature on amylase activity.
- The student forgets to include a control. Explain why this is a problem and describe what the
- control should be.
+    The student forgets to include a control. Explain why this is a problem and describe what the
+    control should be.
 
 29. Explain how the structure of the trachea is related to its function, including the role of the
- C-shaped cartilage rings and the ciliated epithelium.
+    C-shaped cartilage rings and the ciliated epithelium.
 
 30. **(Higher Tier)** A person has been drinking alcohol. Explain the sequence of events that occurs
- in their liver to detoxify the alcohol, and explain why excessive alcohol consumption can lead
- to liver disease.
+    in their liver to detoxify the alcohol, and explain why excessive alcohol consumption can lead
+    to liver disease.
 
 ## Practice Problems
 
 <details>
 <summary>Question 1: Enzyme experiment analysis</summary>
 
-A student tests the effect of temperature on the rate of catalase activity using hydrogen peroxide and potato tissue. The results show that the rate increases from $10^\circ\mathrm{C{}$ to $40^\circ\mathrm{C{}$ and then decreases rapidly. Explain the shape of the graph.
+A student tests the effect of temperature on the rate of catalase activity using hydrogen peroxide
+and potato tissue. The results show that the rate increases from $10^\circ\mathrm{C{}$ to
+$40^\circ\mathrm{C{}$ and then decreases rapidly. Explain the shape of the graph.
 
 </details>
 
 <details>
 <summary>Answer</summary>
 
-From $10^\circ\mathrm{C{}$ to $40^\circ\mathrm{C{}$: increasing temperature increases the kinetic energy of enzyme and substrate molecules, leading to more frequent successful collisions and a higher rate of reaction.
+From $10^\circ\mathrm{C{}$ to $40^\circ\mathrm{C{}$: increasing temperature increases the kinetic
+energy of enzyme and substrate molecules, leading to more frequent successful collisions and a
+higher rate of reaction.
 
-Above $40^\circ\mathrm{C{}$: the enzyme denatures because the high temperature breaks the bonds maintaining its tertiary structure. The active site changes shape and can no longer bind the substrate, so the rate drops rapidly. The optimum temperature is approximately $40^\circ\mathrm{C{}$.
+Above $40^\circ\mathrm{C{}$: the enzyme denatures because the high temperature breaks the bonds
+maintaining its tertiary structure. The active site changes shape and can no longer bind the
+substrate, so the rate drops rapidly. The optimum temperature is approximately
+$40^\circ\mathrm{C{}$.
 
 </details>
 
 <details>
 <summary>Question 2: Digestive system</summary>
 
-Explain why the small intestine is well adapted for absorbing digested food molecules into the blood.
+Explain why the small intestine is well adapted for absorbing digested food molecules into the
+blood.
 
 </details>
 
 <details>
 <summary>Answer</summary>
 
-The small intestine has a large surface area due to: (1) its length (several metres), (2) villi (finger-like projections), and (3) microvilli on the villi surface cells. It has a single layer of epithelial cells, providing a short diffusion distance. It has a dense network of blood capillaries to carry away absorbed molecules and maintain a steep concentration gradient. It also has lacteals for absorbing fatty acids and glycerol into the lymphatic system.
+The small intestine has a large surface area due to: (1) its length (several metres), (2) villi
+(finger-like projections), and (3) microvilli on the villi surface cells. It has a single layer of
+epithelial cells, providing a short diffusion distance. It has a dense network of blood capillaries
+to carry away absorbed molecules and maintain a steep concentration gradient. It also has lacteals
+for absorbing fatty acids and glycerol into the lymphatic system.
 
 </details>
 
@@ -782,43 +799,58 @@ Describe the functions of red blood cells, white blood cells, and platelets in t
 <details>
 <summary>Answer</summary>
 
-Red blood cells: transport oxygen (bound to haemoglobin) from the lungs to body tissues. Their biconcave disc shape increases surface area for gas exchange. They have no nucleus, maximising space for haemoglobin.
+Red blood cells: transport oxygen (bound to haemoglobin) from the lungs to body tissues. Their
+biconcave disc shape increases surface area for gas exchange. They have no nucleus, maximising space
+for haemoglobin.
 
-White blood cells (phagocytes): defend against pathogens by phagocytosis (engulfing and digesting pathogens). Lymphocytes produce antibodies for specific immune defence.
+White blood cells (phagocytes): defend against pathogens by phagocytosis (engulfing and digesting
+pathogens). Lymphocytes produce antibodies for specific immune defence.
 
-Platelets: cell fragments involved in blood clotting. They accumulate at wound sites and trigger the cascade of reactions that produces fibrin, forming a mesh that traps red blood cells and seals the wound.
+Platelets: cell fragments involved in blood clotting. They accumulate at wound sites and trigger the
+cascade of reactions that produces fibrin, forming a mesh that traps red blood cells and seals the
+wound.
 
 </details>
 
 <details>
 <summary>Question 4: Coronary heart disease</summary>
 
-Explain how a blockage in a coronary artery can lead to a heart attack, and describe two lifestyle factors that increase the risk.
+Explain how a blockage in a coronary artery can lead to a heart attack, and describe two lifestyle
+factors that increase the risk.
 
 </details>
 
 <details>
 <summary>Answer</summary>
 
-A blockage (caused by a thrombus/blood clot or atherosclerosis -- fatty deposits) in a coronary artery reduces or stops blood flow to part of the heart muscle. The cardiac muscle is deprived of oxygen and glucose (ischaemia), so it cannot respire aerobically. The muscle cells may be damaged or die (myocardial infarction), causing a heart attack.
+A blockage (caused by a thrombus/blood clot or atherosclerosis -- fatty deposits) in a coronary
+artery reduces or stops blood flow to part of the heart muscle. The cardiac muscle is deprived of
+oxygen and glucose (ischaemia), so it cannot respire aerobically. The muscle cells may be damaged or
+die (myocardial infarction), causing a heart attack.
 
-Risk factors: high-fat diet (leading to cholesterol deposits in arteries), smoking (damages artery walls and increases blood pressure), lack of exercise, obesity, high blood pressure, stress.
+Risk factors: high-fat diet (leading to cholesterol deposits in arteries), smoking (damages artery
+walls and increases blood pressure), lack of exercise, obesity, high blood pressure, stress.
 
 </details>
 
 <details>
 <summary>Question 5: Nervous system reflex arc</summary>
 
-Describe the pathway of a reflex arc when a person touches a hot object. Explain why reflex actions are important for survival.
+Describe the pathway of a reflex arc when a person touches a hot object. Explain why reflex actions
+are important for survival.
 
 </details>
 
 <details>
 <summary>Answer</summary>
 
-Pathway: stimulus (heat) $\to$ receptor (temperature receptor in skin) $\to$ sensory neuron $\to$ relay neuron (in spinal cord) $\to$ motor neuron $\to$ effector (muscle in arm) $\to$ response (hand is pulled away).
+Pathway: stimulus (heat) $\to$ receptor (temperature receptor in skin) $\to$ sensory neuron $\to$
+relay neuron (in spinal cord) $\to$ motor neuron $\to$ effector (muscle in arm) $\to$ response (hand
+is pulled away).
 
-Reflexes are important because they are fast (the pathway is short, bypassing the brain) and automatic, providing immediate protection from harmful stimuli before the brain has time to process the information. This prevents tissue damage.
+Reflexes are important because they are fast (the pathway is short, bypassing the brain) and
+automatic, providing immediate protection from harmful stimuli before the brain has time to process
+the information. This prevents tissue damage.
 
 </details>
 

@@ -1,6 +1,8 @@
 ---
 title: Dependency Injection
-description: "Dependency Injection — Core Principles; Why DI Matters; Two Main Approaches; Constructor Injection Pattern with worked examples and exam-style questions."
+description:
+  'Dependency Injection — Core Principles; Why DI Matters; Two Main Approaches; Constructor
+  Injection Pattern with worked examples and exam-style questions.'
 date: 2026-04-05T00:00:00.000Z
 tags:
   - Dart
@@ -8,6 +10,7 @@ categories:
   - Dart
 slug: dependency-injection
 ---
+
 # Dependency Injection
 
 ## What is Dependency Injection
@@ -50,10 +53,10 @@ class UserService {
 
 1. **Testability**: inject mocks instead of real HTTP clients, databases, or platform channels
 2. **Decoupling**: swap implementations without changing consumers (e.g., swap `SqliteDatabase` for
- `PostgresDatabase`)
+   `PostgresDatabase`)
 3. **Single Responsibility**: classes focus on their logic, not on wiring dependencies
 4. **Reusability**: the same service configured with different dependencies serves different
- contexts
+   contexts
 
 ### Two Main Approaches
 
@@ -247,11 +250,11 @@ void someFunction() {
 
 - **Hidden dependencies**: reading `getIt<T>()` in a class body hides what that class depends on
 - **Harder to test**: tests must configure the service locator globally or per-test, which can cause
- flaky test isolation
+  flaky test isolation
 - **Runtime errors**: if a dependency is not registered, the error occurs at runtime (`StateError`)
- instead of at compile time
+  instead of at compile time
 - **Global state**: the service locator is essentially global mutable state, making reasoning about
- code harder
+  code harder
 
 ### When Service Locator Is Acceptable
 
@@ -1016,19 +1019,19 @@ class OrderFactory {
 
 ## Comparison Table
 
-| Aspect | Constructor Injection | Service Locator (get_it) | Riverpod |
+| Aspect                | Constructor Injection                       | Service Locator (get_it)               | Riverpod                                          |
 | --------------------- | ------------------------------------------- | -------------------------------------- | ------------------------------------------------- |
-| Compile-time safety | Full — missing deps are compile errors | None — errors at runtime | Full — missing providers are compile errors |
-| Testability | Excellent — pass mocks directly | Good — must configure locator per test | Excellent — override providers in ProviderScope |
-| Boilerplate | Moderate — thread deps through constructors | Low — register once, get anywhere | Moderate — declare providers, use ref |
-| Lazy initialization | Manual | Built-in (lazy singleton) | Built-in (provider evaluated on first watch/read) |
-| Scoping | Manual | Manual | Built-in (ProviderScope, nested scopes) |
-| Dependency visibility | Explicit in constructor signature | Hidden — read source to discover | Visible in provider declaration |
-| Lifecycle management | Manual | Singleton/factory/lazy singleton | Auto-disposed, keepAlive |
-| State management | Not provided | Not provided | Built-in |
-| Learning curve | Low | Low | Moderate to high |
-| Flutter integration | Manual wiring | Manual wiring | Native (ConsumerWidget, HookConsumerWidget) |
-| Hot reload | Works | Works | Works |
+| Compile-time safety   | Full — missing deps are compile errors      | None — errors at runtime               | Full — missing providers are compile errors       |
+| Testability           | Excellent — pass mocks directly             | Good — must configure locator per test | Excellent — override providers in ProviderScope   |
+| Boilerplate           | Moderate — thread deps through constructors | Low — register once, get anywhere      | Moderate — declare providers, use ref             |
+| Lazy initialization   | Manual                                      | Built-in (lazy singleton)              | Built-in (provider evaluated on first watch/read) |
+| Scoping               | Manual                                      | Manual                                 | Built-in (ProviderScope, nested scopes)           |
+| Dependency visibility | Explicit in constructor signature           | Hidden — read source to discover       | Visible in provider declaration                   |
+| Lifecycle management  | Manual                                      | Singleton/factory/lazy singleton       | Auto-disposed, keepAlive                          |
+| State management      | Not provided                                | Not provided                           | Built-in                                          |
+| Learning curve        | Low                                         | Low                                    | Moderate to high                                  |
+| Flutter integration   | Manual wiring                               | Manual wiring                          | Native (ConsumerWidget, HookConsumerWidget)       |
+| Hot reload            | Works                                       | Works                                  | Works                                             |
 
 ---
 

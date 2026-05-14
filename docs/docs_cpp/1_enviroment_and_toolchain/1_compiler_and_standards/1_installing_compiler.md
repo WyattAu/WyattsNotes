@@ -1,6 +1,8 @@
 ---
 title: Installing Compiler
-description: "C++: Installing Compiler — Technical Glossary; Installation Guide; Windows: MSYS2 UCRT64 Environment; Step 1: Install MSYS2."
+description:
+  'C++: Installing Compiler — Technical Glossary; Installation Guide; Windows: MSYS2 UCRT64
+  Environment; Step 1: Install MSYS2.'
 date: 2025-12-10T03:49:29.438Z
 tags:
   - cpp
@@ -8,6 +10,7 @@ categories:
   - cpp
 slug: installing-compiler
 ---
+
 Import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 To develop in C++, a strictly compliant toolchain is required. The following details the
@@ -18,16 +21,16 @@ The reference environment for this course is **Clang 16+** and **CMake 3.25+**.
 ## Technical Glossary
 
 - **Clang/LLVM:** A compiler front-end built on the LLVM infrastructure. It is preferred for this
- course due to its modular architecture, superior static analysis, and meaningful error messages.
+  course due to its modular architecture, superior static analysis, and meaningful error messages.
 - **MSYS2:** A software distribution and building platform for Windows. It provides a Unix-like
- environment to manage native Windows software.
+  environment to manage native Windows software.
 - **UCRT64 (Universal C Runtime):** The modern Windows C runtime library. Unlike legacy MinGW (which
- linked against `msvcrt.dll`), UCRT links `ucrtbase.dll` and ensures strict standard compliance,
- proper UTF-8 locale support, and binary compatibility with modern Windows system libraries.
+  linked against `msvcrt.dll`), UCRT links `ucrtbase.dll` and ensures strict standard compliance,
+  proper UTF-8 locale support, and binary compatibility with modern Windows system libraries.
 - **Ninja:** A small build system with a focus on speed, designed to replace Make.
 - **Target Triple:** A string of the form `<arch>-<vendor>-<os>-<env>` that uniquely identifies a
- compilation target (e.g., `x86_64-pc-linux-gnu``aarch64-apple-darwin22`). The compiler driver
- uses this to select the correct code generator and default library paths [N4950 §6.7.1].
+  compilation target (e.g., `x86_64-pc-linux-gnu``aarch64-apple-darwin22`). The compiler driver uses
+  this to select the correct code generator and default library paths [N4950 §6.7.1].
 
 ## Installation Guide
 
@@ -45,11 +48,12 @@ Experience consistent with Linux and macOS.
 #### Step 1: Install MSYS2
 
 1. Download the installer (`msys2-x86_64-*.exe`) from the
- [official MSYS2 website](https://www.msys2.org/).
+   [official MSYS2 website](https://www.msys2.org/).
 2. Run the installer. Use the default installation folder (`C:\msys64`).
 3. When complete, ensure the box **"Run MSYS2 UCRT64 now"** is checked.
- - _Crucial:_ Do not use the "MSYS" or "MINGW64" terminals. You must specifically use the
- **UCRT64** environment to ensure the correct runtime linking.
+
+- _Crucial:_ Do not use the "MSYS" or "MINGW64" terminals. You must specifically use the **UCRT64**
+  environment to ensure the correct runtime linking.
 
 #### Step 2: Update the Package Database
 
@@ -127,15 +131,15 @@ To support C++23 features.
    ```
 
 3. **Install LLVM/Clang:** For the latest stable version, use the automatic installation script
- provided by LLVM. This ensures access to the latest standard library implementations.
+   provided by LLVM. This ensures access to the latest standard library implementations.
 
    ```bash
    bash -c "$(wget -O - https://apt.llvm.org/llvm.sh)"
    ```
 
 4. **Configuration:** The script may install binaries with version suffixes (e.g., `clang++-17`).
- You may need to create symbolic links or use `update-alternatives` if you wish to use the command
- `clang++` directly, though CMake handles versioned compilers automatically.
+   You may need to create symbolic links or use `update-alternatives` if you wish to use the command
+   `clang++` directly, though CMake handles versioned compilers automatically.
 
  </TabItem>
  <TabItem value="rhel" label="RHEL/Fedora">
@@ -157,7 +161,7 @@ Fedora generally provides very recent toolchains in its default repositories.
    ```
 
 3. **RHEL Specific:** If using RHEL 8/9, the default repositories may be dated. Enable the GCC
- Toolset or LLVM Toolset streams to access C++23 capable compilers.
+   Toolset or LLVM Toolset streams to access C++23 capable compilers.
 
    ```bash
    # RHEL 9 example: enable the LLVM toolset
@@ -198,21 +202,21 @@ Feature support. We recommend **Homebrew** to install upstream LLVM.
    ```
 
 3. **Path Configuration:** Homebrew installs LLVM as "keg-only" to prevent conflicts with system
- tools. You must explicitly add it to your path to use it over Apple Clang.
+   tools. You must explicitly add it to your path to use it over Apple Clang.
 
- Add the following to your `~/.zshrc`:
+Add the following to your `~/.zshrc`:
 
-   ```bash
-   export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
-   export LDFLAGS="-L/opt/homebrew/opt/llvm/lib"
-   export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
-   ```
+```bash
+export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
+export LDFLAGS="-L/opt/homebrew/opt/llvm/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
+```
 
- Reload the shell:
+Reload the shell:
 
-   ```bash
-   source ~/.zshrc
-   ```
+```bash
+source ~/.zshrc
+```
 
  </TabItem>
 </Tabs>
@@ -253,10 +257,8 @@ clang++ -std=c++23 -O3 test.cpp -o infra_test
 ./infra_test
 ```
 
-:::warning
-If you are using MSVC, replace `clang++` with `cl.exe` and ensure you have the latest
-Visual Studio 2022 installed.
-:::
+:::warning If you are using MSVC, replace `clang++` with `cl.exe` and ensure you have the latest
+Visual Studio 2022 installed. :::
 
 **Success Criteria:**
 
@@ -272,24 +274,24 @@ Both GCC and Clang follow a `major.minor.patch` versioning scheme. ABI compatibi
 Within the same major version for GCC, and across Clang versions when using the same `libc++` ABI
 Version.
 
-| Compiler | Version | C++23 Support | Notes |
+| Compiler | Version | C++23 Support | Notes                                  |
 | -------- | ------- | ------------- | -------------------------------------- |
-| GCC | 13.x | Most features | Some C++23 features still experimental |
-| GCC | 14.x | Full support | Recommended for production |
-| Clang | 17.x | Most features | Requires `-std=c++23` flag |
-| Clang | 18.x | Full support | Recommended for production |
-| MSVC | 19.38+ | Most features | C++23 support varies by feature |
+| GCC      | 13.x    | Most features | Some C++23 features still experimental |
+| GCC      | 14.x    | Full support  | Recommended for production             |
+| Clang    | 17.x    | Most features | Requires `-std=c++23` flag             |
+| Clang    | 18.x    | Full support  | Recommended for production             |
+| MSVC     | 19.38+  | Most features | C++23 support varies by feature        |
 
 ### `__cplusplus` Macro
 
 The `__cplusplus` predefined macro indicates which C++ standard the compiler is targeting [N4950
 §6.10.9]:
 
-| Flag | `__cplusplus` Value |
+| Flag         | `__cplusplus` Value |
 | ------------ | ------------------- |
-| `-std=c++17` | `201703L` |
-| `-std=c++20` | `202002L` |
-| `-std=c++23` | `202302L` |
+| `-std=c++17` | `201703L`           |
+| `-std=c++20` | `202002L`           |
+| `-std=c++23` | `202302L`           |
 
 **Important:** MSVC does not correctly set `__cplusplus` by default. It always reports `199711L`
 Unless you pass `/Zc:__cplusplus`. This is a long-standing bug acknowledged by Microsoft.
@@ -330,20 +332,20 @@ Production systems engineering.
 
 ### Compiler Feature Matrix
 
-| Feature | Clang/LLVM | GCC | MSVC |
+| Feature                     | Clang/LLVM                                  | GCC                                        | MSVC                                    |
 | :-------------------------- | :------------------------------------------ | :----------------------------------------- | :-------------------------------------- |
-| **License** | Apache 2.0 / UIUC | GPL v3 | Proprietary (VS license) |
-| **Platforms** | Linux, macOS, Windows, FreeBSD, WebAssembly | Linux, Windows (MinGW), FreeBSD, embedded | Windows only |
-| **Default stdlib** | libc++ (macOS), libstdc++ (Linux) | libstdc++ | MSVC STL |
-| **Diagnostics quality** | Excellent (columnar, fix-its, notes) | Good (improving) | Good (improving, C++20+) |
-| **Static analysis** | Clang-Tidy, Clang Static Analyzer | `-fanalyzer` (GCC 10+) | `/analyze` (Code Analysis) |
-| **Sanitizer support** | ASan, UBSan, MSan, TSan, libFuzzer | ASan, UBSan, TSan | ASan (partial) |
-| **LTO** | Full LTO + ThinLTO | Full LTO + LTO (improving) | LTCG (Link-Time Code Generation) |
-| **Modules** | C++20 modules (Clang 16+) | C++20 modules (GCC 12+) | Partial C++20 modules |
-| **AST dump / tooling** | `-Xclang -ast-dump`Libclang, libTooling | No equivalent AST dump | No equivalent |
-| **Cross-compilation** | `-target` flag, flexible | Requires separate cross-toolchain packages | Requires Windows SDK + cross-comp setup |
-| **Debug info** | DWARF 5, CodeView (Windows) | DWARF 5 | PDB (Program Database) |
-| **Incremental compilation** | No (requires full recompile) | No | Edit and Continue (with `link.exe`) |
+| **License**                 | Apache 2.0 / UIUC                           | GPL v3                                     | Proprietary (VS license)                |
+| **Platforms**               | Linux, macOS, Windows, FreeBSD, WebAssembly | Linux, Windows (MinGW), FreeBSD, embedded  | Windows only                            |
+| **Default stdlib**          | libc++ (macOS), libstdc++ (Linux)           | libstdc++                                  | MSVC STL                                |
+| **Diagnostics quality**     | Excellent (columnar, fix-its, notes)        | Good (improving)                           | Good (improving, C++20+)                |
+| **Static analysis**         | Clang-Tidy, Clang Static Analyzer           | `-fanalyzer` (GCC 10+)                     | `/analyze` (Code Analysis)              |
+| **Sanitizer support**       | ASan, UBSan, MSan, TSan, libFuzzer          | ASan, UBSan, TSan                          | ASan (partial)                          |
+| **LTO**                     | Full LTO + ThinLTO                          | Full LTO + LTO (improving)                 | LTCG (Link-Time Code Generation)        |
+| **Modules**                 | C++20 modules (Clang 16+)                   | C++20 modules (GCC 12+)                    | Partial C++20 modules                   |
+| **AST dump / tooling**      | `-Xclang -ast-dump`Libclang, libTooling     | No equivalent AST dump                     | No equivalent                           |
+| **Cross-compilation**       | `-target` flag, flexible                    | Requires separate cross-toolchain packages | Requires Windows SDK + cross-comp setup |
+| **Debug info**              | DWARF 5, CodeView (Windows)                 | DWARF 5                                    | PDB (Program Database)                  |
+| **Incremental compilation** | No (requires full recompile)                | No                                         | Edit and Continue (with `link.exe`)     |
 
 ### Optimization Comparison
 
@@ -358,7 +360,7 @@ For production C++23 code, the recommendation is:
 - **Linux:** Clang 18+ with libc++ for best diagnostics, or GCC 14+ for maximum binary performance.
 - **macOS:** Upstream Clang via Homebrew (Apple Clang lags behind on C++23).
 - **Windows:** MSVC for native integration, or Clang with MSVC ABI (`clang-cl`) for cross-platform
- parity.
+  parity.
 
 ## Compiler Flag Equivalents Across Compilers
 
@@ -367,53 +369,53 @@ Controlled by different flags. The following table maps common flags across the 
 
 ### Standard Selection
 
-| Purpose | Clang / GCC | MSVC |
+| Purpose          | Clang / GCC             | MSVC                       |
 | :--------------- | :---------------------- | :------------------------- |
-| C++17 strict ISO | `-std=c++17` | `/std:c++17` |
-| C++20 strict ISO | `-std=c++20` | `/std:c++20` |
-| C++23 strict ISO | `-std=c++23` | `/std:c++latest` |
-| GNU extensions | `-std=gnu++23` | N/A (MSVC has no GNU mode) |
-| No extensions | `-std=c++23` (implicit) | `/permissive-` |
+| C++17 strict ISO | `-std=c++17`            | `/std:c++17`               |
+| C++20 strict ISO | `-std=c++20`            | `/std:c++20`               |
+| C++23 strict ISO | `-std=c++23`            | `/std:c++latest`           |
+| GNU extensions   | `-std=gnu++23`          | N/A (MSVC has no GNU mode) |
+| No extensions    | `-std=c++23` (implicit) | `/permissive-`             |
 
 ### Warning and Error Control
 
-| Purpose | Clang / GCC | MSVC |
+| Purpose                   | Clang / GCC                      | MSVC                     |
 | :------------------------ | :------------------------------- | :----------------------- |
-| All common warnings | `-Wall` | `/W4` |
-| Extra warnings | `-Wextra` | `/w14640` (enables more) |
-| Pedantic (ISO strictness) | `-Wpedantic` | `/permissive-` |
-| Warnings as errors | `-Werror` | `/WX` |
-| Disable specific warning | `-Wno-<warning-name>` | `/wd<warning-number>` |
-| Treat unknown warning err | `-Werror=unknown-warning-option` | N/A |
+| All common warnings       | `-Wall`                          | `/W4`                    |
+| Extra warnings            | `-Wextra`                        | `/w14640` (enables more) |
+| Pedantic (ISO strictness) | `-Wpedantic`                     | `/permissive-`           |
+| Warnings as errors        | `-Werror`                        | `/WX`                    |
+| Disable specific warning  | `-Wno-<warning-name>`            | `/wd<warning-number>`    |
+| Treat unknown warning err | `-Werror=unknown-warning-option` | N/A                      |
 
 ### Optimization and Code Generation
 
-| Purpose | Clang / GCC | MSVC |
+| Purpose                 | Clang / GCC   | MSVC        |
 | :---------------------- | :------------ | :---------- |
-| No optimization | `-O0` | `/Od` |
-| Balanced optimization | `-O2` | `/O2` |
-| Aggressive optimization | `-O3` | `/Ox` |
-| Size optimization | `-Os` | `/O1` |
-| Fast math | `-ffast-math` | `/fp:fast` |
-| Debug info | `-g` | `/Zi` |
-| Define macro | `-DFOO=bar` | `/DFOO=bar` |
-| Include path | `-I/path` | `/I/path` |
+| No optimization         | `-O0`         | `/Od`       |
+| Balanced optimization   | `-O2`         | `/O2`       |
+| Aggressive optimization | `-O3`         | `/Ox`       |
+| Size optimization       | `-Os`         | `/O1`       |
+| Fast math               | `-ffast-math` | `/fp:fast`  |
+| Debug info              | `-g`          | `/Zi`       |
+| Define macro            | `-DFOO=bar`   | `/DFOO=bar` |
+| Include path            | `-I/path`     | `/I/path`   |
 
 ### Standard Library Selection (Clang only)
 
-| Purpose | Clang |
+| Purpose                 | Clang               |
 | :---------------------- | :------------------ |
 | Use libstdc++ (default) | `-stdlib=libstdc++` |
-| Use libc++ | `-stdlib=libc++` |
+| Use libc++              | `-stdlib=libc++`    |
 
 ### Sanitizers
 
-| Purpose | Clang / GCC | MSVC |
+| Purpose            | Clang / GCC                      | MSVC                           |
 | :----------------- | :------------------------------- | :----------------------------- |
-| Address sanitizer | `-fsanitize=address` | `/fsanitize=address` (partial) |
-| Undefined behavior | `-fsanitize=undefined` | N/A |
-| Thread sanitizer | `-fsanitize=thread` | N/A |
-| Memory sanitizer | `-fsanitize=memory` (Clang only) | N/A |
+| Address sanitizer  | `-fsanitize=address`             | `/fsanitize=address` (partial) |
+| Undefined behavior | `-fsanitize=undefined`           | N/A                            |
+| Thread sanitizer   | `-fsanitize=thread`              | N/A                            |
+| Memory sanitizer   | `-fsanitize=memory` (Clang only) | N/A                            |
 
 ## Multiple Compiler Setup
 
@@ -506,8 +508,8 @@ The choice of compiler has direct implications for binary compatibility. Key con
 
 GCC and Clang on Linux share the **Itanium C++ ABI** [Itanium ABI], which defines name mangling,
 Vtable layout, exception handling, and class layout. This means an object file compiled with GCC can
- be linked with one compiled by Clang, provided both use the same standard library
-Implementation and version.
+be linked with one compiled by Clang, provided both use the same standard library Implementation and
+version.
 
 MSVC uses a completely different ABI (the **Microsoft ABI**), which is incompatible at the binary
 Level with the Itanium ABI. You cannot link a `.obj` produced by MSVC with a `.o` produced by GCC.
@@ -536,13 +538,13 @@ Behavior because the two libraries disagree on the layout of every standard type
 
 ### ABI Stability Guarantees
 
-| Compiler Pair | Same OS? | ABI Compatible? | Condition |
-| :--------------------------------------------------------- | :------- | :-------------- | :---------------------------------------------- |
-| GCC 13 $\leftrightarrow$ GCC 14 | Yes | Yes | Same `-stdlib`Same `-D_GLIBCXX_USE_CXX11_ABI` |
-| Clang 17 $\leftrightarrow$ Clang 18 | Yes | Yes | Same `-stdlib`Same ABI version |
-| Clang 18 $\leftrightarrow$ GCC 14 | Linux | Yes | Both use `libstdc++`Same ABI flags |
-| Clang 18 (`libc++`) $\leftrightarrow$ GCC 14 (`libstdc++`) | Linux | **No** | Different standard library ABIs |
-| MSVC 2022 $\leftrightarrow$ MinGW Clang | Windows | **No** | Different C++ ABI (MSVC vs Itanium) |
+| Compiler Pair                                              | Same OS? | ABI Compatible? | Condition                                     |
+| :--------------------------------------------------------- | :------- | :-------------- | :-------------------------------------------- |
+| GCC 13 $\leftrightarrow$ GCC 14                            | Yes      | Yes             | Same `-stdlib`Same `-D_GLIBCXX_USE_CXX11_ABI` |
+| Clang 17 $\leftrightarrow$ Clang 18                        | Yes      | Yes             | Same `-stdlib`Same ABI version                |
+| Clang 18 $\leftrightarrow$ GCC 14                          | Linux    | Yes             | Both use `libstdc++`Same ABI flags            |
+| Clang 18 (`libc++`) $\leftrightarrow$ GCC 14 (`libstdc++`) | Linux    | **No**          | Different standard library ABIs               |
+| MSVC 2022 $\leftrightarrow$ MinGW Clang                    | Windows  | **No**          | Different C++ ABI (MSVC vs Itanium)           |
 
 See [Language Standard and ABI Compatibility](2_language_standard_and_abi_compatibility.md) for a
 Deeper treatment of ABI breakage scenarios.
@@ -572,8 +574,8 @@ clang++ --version
 ### Pitfall 3: Inconsistent C++ Standard Between Build and Runtime
 
 If you compile with `-std=c++23` but link against a C++ runtime library built for C++17, you may get
-Linker errors for missing symbols (e.g., `std::format``std::print`). Ensure the C++ standard
-Library version matches the compiler's standard mode.
+Linker errors for missing symbols (e.g., `std::format``std::print`). Ensure the C++ standard Library
+version matches the compiler's standard mode.
 
 ### Pitfall 4: Missing `libstdc++` or `libc++` on Linux
 
@@ -631,30 +633,30 @@ Always pass `/Zc:__cplusplus`:
 
 ### Essential Flags
 
-| Flag | Purpose |
+| Flag                  | Purpose                                           |
 | --------------------- | ------------------------------------------------- |
-| `-std=c++23` | Target C++23 standard |
+| `-std=c++23`          | Target C++23 standard                             |
 | `-O0` / `-O2` / `-O3` | Optimization level (none / balanced / aggressive) |
-| `-g` | Generate debug information |
-| `-Wall -Wextra` | Enable common and extra warnings |
-| `-Werror` | Treat warnings as errors |
-| `-fsanitize=address` | Enable AddressSanitizer |
-| `-fno-exceptions` | Disable exception support |
+| `-g`                  | Generate debug information                        |
+| `-Wall -Wextra`       | Enable common and extra warnings                  |
+| `-Werror`             | Treat warnings as errors                          |
+| `-fsanitize=address`  | Enable AddressSanitizer                           |
+| `-fno-exceptions`     | Disable exception support                         |
 
 ### Clang-Specific Flags
 
-| Flag | Purpose |
+| Flag                  | Purpose                                        |
 | --------------------- | ---------------------------------------------- |
-| `-stdlib=libc++` | Use LLVM's standard library instead of GCC's |
+| `-stdlib=libc++`      | Use LLVM's standard library instead of GCC's   |
 | `-fcolor-diagnostics` | Colored diagnostic output (enabled by default) |
-| `-fmodules` | Enable C++20 modules (experimental) |
+| `-fmodules`           | Enable C++20 modules (experimental)            |
 
 ### GCC-Specific Flags
 
-| Flag | Purpose |
+| Flag                         | Purpose                     |
 | ---------------------------- | --------------------------- |
-| `-fdiagnostics-color=always` | Colored diagnostic output |
-| `-fanalyzer` | Enable static analysis pass |
+| `-fdiagnostics-color=always` | Colored diagnostic output   |
+| `-fanalyzer`                 | Enable static analysis pass |
 
 ## Verification Checklist
 

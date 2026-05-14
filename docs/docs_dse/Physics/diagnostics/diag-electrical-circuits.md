@@ -1,6 +1,8 @@
 ---
-title: "Electrical Circuits -- Diagnostic Tests"
-description: "Hardest DSE circuit questions: Kirchhoff's laws with multiple loops, internal resistance analysis, potentiometer circuits, and RC transients."
+title: 'Electrical Circuits -- Diagnostic Tests'
+description:
+  "Hardest DSE circuit questions: Kirchhoff's laws with multiple loops, internal resistance
+  analysis, potentiometer circuits, and RC transients."
 slug: diag-electrical-circuits
 hide_table_of_contents: true
 ---
@@ -13,11 +15,18 @@ hide_table_of_contents: true
 
 **Question:**
 
-In the circuit shown, three cells with EMFs $E_1 = 12$ V, $E_2 = 6$ V, and $E_3 = 4$ V are connected with resistors $R_1 = 4$ $\Omega$$R_2 = 6$ $\Omega$And $R_3 = 2$ $\Omega$. Cell $E_1$ is in series with $R_1$Cell $E_2$ is in series with $R_2$And $R_3$ is the shared branch connecting the junctions. $E_1$ and $E_2$ have their positive terminals facing the same junction (opposing each other). $E_3$ is in the shared branch with its positive terminal facing the $E_1$ side. All cells have negligible internal resistance. Find the current in each branch.
+In the circuit shown, three cells with EMFs $E_1 = 12$ V, $E_2 = 6$ V, and $E_3 = 4$ V are connected
+with resistors $R_1 = 4$ $\Omega$$R_2 = 6$ $\Omega$And $R_3 = 2$ $\Omega$. Cell $E_1$ is in series
+with $R_1$Cell $E_2$ is in series with $R_2$And $R_3$ is the shared branch connecting the junctions.
+$E_1$ and $E_2$ have their positive terminals facing the same junction (opposing each other). $E_3$
+is in the shared branch with its positive terminal facing the $E_1$ side. All cells have negligible
+internal resistance. Find the current in each branch.
 
 **Solution:**
 
-Define currents: $I_1$ flows from $E_1$ through $R_1$ to the junction, $I_2$ flows from $E_2$ through $R_2$ to the junction, and $I_3$ flows through $R_3$ and $E_3$ from the $E_1$ side to the $E_2$ side.
+Define currents: $I_1$ flows from $E_1$ through $R_1$ to the junction, $I_2$ flows from $E_2$
+through $R_2$ to the junction, and $I_3$ flows through $R_3$ and $E_3$ from the $E_1$ side to the
+$E_2$ side.
 
 **KCL at the junction:**
 
@@ -59,7 +68,8 @@ $$I_2 = \frac{1 - 1.273}{3} = \frac{-0.273}{3} = -0.0909 \text{ A}$$
 
 $I_2$ is negative, meaning current actually flows into $E_2$ (the $6$ V cell is being charged).
 
-**Key misconception:** Negative current in a branch does not indicate an error -- it means the assumed current direction was wrong. The magnitude is correct but the direction is reversed.
+**Key misconception:** Negative current in a branch does not indicate an error -- it means the
+assumed current direction was wrong. The magnitude is correct but the direction is reversed.
 
 ---
 
@@ -67,7 +77,10 @@ $I_2$ is negative, meaning current actually flows into $E_2$ (the $6$ V cell is 
 
 **Question:**
 
-A battery has an EMF of $24$ V and internal resistance $r = 2$ $\Omega$. It is connected to a variable external resistance $R$. (a) Find the value of $R$ for maximum power transfer. (b) Calculate the maximum power delivered to $R$. (c) Find the terminal PD and efficiency at maximum power transfer. (d) Sketch how the power delivered to $R$ varies with $R$.
+A battery has an EMF of $24$ V and internal resistance $r = 2$ $\Omega$. It is connected to a
+variable external resistance $R$. (a) Find the value of $R$ for maximum power transfer. (b)
+Calculate the maximum power delivered to $R$. (c) Find the terminal PD and efficiency at maximum
+power transfer. (d) Sketch how the power delivered to $R$ varies with $R$.
 
 **Solution:**
 
@@ -94,6 +107,7 @@ $$\eta = \frac{P_R}{P_{\text{total}}} = \frac{I^2 R}{IE} = \frac{IR}{E} = \frac{
 $$P = I^2 R = \left(\frac{E}{R + r}\right)^2 R = \frac{E^2 R}{(R + r)^2} = \frac{576R}{(R + 2)^2}$$
 
 Key points on the graph:
+
 - $R = 0$: $P = 0$
 - $R = 1$: $P = \frac{576}{9} = 64$ W
 - $R = 2$: $P = 72$ W (maximum)
@@ -102,7 +116,9 @@ Key points on the graph:
 
 The curve is symmetric about $R = r$ on a logarithmic scale, but asymmetric on a linear scale.
 
-**Key misconception:** Maximum power transfer occurs at 50% efficiency. For a battery, this means half the energy is wasted as heat in the internal resistance. In practice, batteries are designed so that $R \gg r$ for better efficiency, sacrificing some power.
+**Key misconception:** Maximum power transfer occurs at 50% efficiency. For a battery, this means
+half the energy is wasted as heat in the internal resistance. In practice, batteries are designed so
+that $R \gg r$ for better efficiency, sacrificing some power.
 
 ---
 
@@ -110,7 +126,11 @@ The curve is symmetric about $R = r$ on a logarithmic scale, but asymmetric on a
 
 **Question:**
 
-A potentiometer wire AB of length $100$ cm and resistance $10$ $\Omega$ is connected to a driver cell of EMF $6$ V and negligible internal resistance. A standard cell of EMF $1.018$ V gives a null point at $34.0$ cm. An unknown cell is then connected and the null point is found at $51.2$ cm. Find (a) the EMF of the unknown cell, (b) the potential gradient along the wire, and (c) the current through the potentiometer wire.
+A potentiometer wire AB of length $100$ cm and resistance $10$ $\Omega$ is connected to a driver
+cell of EMF $6$ V and negligible internal resistance. A standard cell of EMF $1.018$ V gives a null
+point at $34.0$ cm. An unknown cell is then connected and the null point is found at $51.2$ cm. Find
+(a) the EMF of the unknown cell, (b) the potential gradient along the wire, and (c) the current
+through the potentiometer wire.
 
 **Solution:**
 
@@ -124,7 +144,8 @@ $$E_{\text{unknown}} = 1.018 \times \frac{51.2}{34.0} = 1.018 \times 1.506 = 1.5
 
 **(b) Potential gradient:**
 
-The potential drop across the full wire length equals the driver cell EMF (since no current is drawn at null point):
+The potential drop across the full wire length equals the driver cell EMF (since no current is drawn
+at null point):
 
 $$\text{Potential gradient} = \frac{6}{100} = 0.06 \text{ V cm}^{-1}$$
 
@@ -152,7 +173,8 @@ The answer in (a) remains $1.533$ V since the ratio method is independent of the
 
 $$I = \frac{6}{20.04} = 0.2994 \text{ A}$$
 
-**Key insight:** A potentiometer draws NO current at the null point. This is why it gives more accurate EMF measurements than a voltmeter, which always draws some current.
+**Key insight:** A potentiometer draws NO current at the null point. This is why it gives more
+accurate EMF measurements than a voltmeter, which always draws some current.
 
 ---
 
@@ -162,7 +184,10 @@ $$I = \frac{6}{20.04} = 0.2994 \text{ A}$$
 
 **Question:**
 
-Two cells are connected in parallel across an external resistor $R = 5$ $\Omega$. Cell 1 has EMF $E_1 = 12$ V and internal resistance $r_1 = 1$ $\Omega$. Cell 2 has EMF $E_2 = 10$ V and internal resistance $r_2 = 2$ $\Omega$. Find (a) the current through $R$(b) the current from each cell, (c) the terminal PD of each cell, and (d) the power dissipated in $R$.
+Two cells are connected in parallel across an external resistor $R = 5$ $\Omega$. Cell 1 has EMF
+$E_1 = 12$ V and internal resistance $r_1 = 1$ $\Omega$. Cell 2 has EMF $E_2 = 10$ V and internal
+resistance $r_2 = 2$ $\Omega$. Find (a) the current through $R$(b) the current from each cell, (c)
+the terminal PD of each cell, and (d) the power dissipated in $R$.
 
 **Solution:**
 
@@ -206,7 +231,9 @@ Both cells have terminal PD $= 10.0$ V (they are in parallel across $R$).
 
 $$P = I^2 R = 4 \times 5 = 20 \text{ W}$$
 
-**Key insight:** When cells of different EMFs are connected in parallel, the cell with the higher EMF may supply all the current while the lower-EMF cell delivers none (or even absorbs current if its EMF is much lower).
+**Key insight:** When cells of different EMFs are connected in parallel, the cell with the higher
+EMF may supply all the current while the lower-EMF cell delivers none (or even absorbs current if
+its EMF is much lower).
 
 ---
 
@@ -214,7 +241,11 @@ $$P = I^2 R = 4 \times 5 = 20 \text{ W}$$
 
 **Question:**
 
-A Wheatstone bridge has the following resistances: $P = 100$ $\Omega$$Q = 200$ $\Omega$$R = 150$ $\Omega$And the unknown resistance $S$. A galvanometer of resistance $50$ $\Omega$ is connected between the junction of $P$ and $Q$ and the junction of $R$ and $S$. A battery of EMF $6$ V (negligible internal resistance) is connected across the bridge. The galvanometer shows zero deflection. Find the value of $S$ and the current through each resistor.
+A Wheatstone bridge has the following resistances: $P = 100$ $\Omega$$Q = 200$ $\Omega$$R = 150$
+$\Omega$And the unknown resistance $S$. A galvanometer of resistance $50$ $\Omega$ is connected
+between the junction of $P$ and $Q$ and the junction of $R$ and $S$. A battery of EMF $6$ V
+(negligible internal resistance) is connected across the bridge. The galvanometer shows zero
+deflection. Find the value of $S$ and the current through each resistor.
 
 **Solution:**
 
@@ -230,13 +261,13 @@ $$S = \frac{150 \times 200}{100} = 300 \text{ }\Omega$$
 
 The galvanometer carries no current, so the circuit is effectively two parallel branches:
 
-*Branch 1 (P and Q in series):* Total $= 100 + 200 = 300$ $\Omega$
+_Branch 1 (P and Q in series):_ Total $= 100 + 200 = 300$ $\Omega$
 
 $$I_1 = \frac{6}{300} = 0.02 \text{ A}$$
 
 Current through $P = 0.02$ A, current through $Q = 0.02$ A.
 
-*Branch 2 (R and S in series):* Total $= 150 + 300 = 450$ $\Omega$
+_Branch 2 (R and S in series):_ Total $= 150 + 300 = 450$ $\Omega$
 
 $$I_2 = \frac{6}{450} = 0.01333 \text{ A}$$
 
@@ -246,7 +277,8 @@ Current through $R = 0.01333$ A, current through $S = 0.01333$ A.
 
 $$I_{\text{total}} = I_1 + I_2 = 0.02 + 0.01333 = 0.03333 \text{ A}$$
 
-**Key insight:** At balance, the galvanometer resistance is irrelevant -- no current flows through it regardless of its resistance. This is the fundamental principle of the Wheatstone bridge.
+**Key insight:** At balance, the galvanometer resistance is irrelevant -- no current flows through
+it regardless of its resistance. This is the fundamental principle of the Wheatstone bridge.
 
 ---
 
@@ -254,7 +286,10 @@ $$I_{\text{total}} = I_1 + I_2 = 0.02 + 0.01333 = 0.03333 \text{ A}$$
 
 **Question:**
 
-A $100$ $\mu$F capacitor is charged through a $50$ k$\Omega$ resistor by a $12$ V battery. (a) Find the time constant. (b) Calculate the charge on the capacitor after $5$ s. (c) Calculate the energy stored in the capacitor when fully charged. (d) How much energy is dissipated in the resistor during the full charging process?
+A $100$ $\mu$F capacitor is charged through a $50$ k$\Omega$ resistor by a $12$ V battery. (a) Find
+the time constant. (b) Calculate the charge on the capacitor after $5$ s. (c) Calculate the energy
+stored in the capacitor when fully charged. (d) How much energy is dissipated in the resistor during
+the full charging process?
 
 **Solution:**
 
@@ -284,4 +319,6 @@ Energy dissipated in resistor:
 
 $$E_R = E_{\text{battery}} - E_C = 14.4 - 7.2 = 7.2 \text{ mJ}$$
 
-**Key insight:** Exactly half the energy supplied by the battery is stored in the capacitor, and the other half is dissipated as heat in the resistor. This is always true for RC charging from a constant voltage source, regardless of $R$ and $C$ values.
+**Key insight:** Exactly half the energy supplied by the battery is stored in the capacitor, and the
+other half is dissipated as heat in the resistor. This is always true for RC charging from a
+constant voltage source, regardless of $R$ and $C$ values.

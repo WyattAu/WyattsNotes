@@ -1,6 +1,8 @@
 ---
 title: Graphs
-description: "A-Level Computer Science notes on Graphs: 1. Graph Fundamentals; Definition; Terminology; 2. Graph Representations with worked examples and exam-style questi."
+description:
+  'A-Level Computer Science notes on Graphs: 1. Graph Fundamentals; Definition; Terminology; 2.
+  Graph Representations with worked examples and exam-style questi.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - ComputerScience
@@ -9,6 +11,7 @@ categories:
   - ComputerScience
 slug: graphs
 ---
+
 ## 1. Graph Fundamentals
 
 ### Definition
@@ -22,16 +25,16 @@ $E \subseteq V \times V$.
 
 ### Terminology
 
-| Term | Definition |
+| Term       | Definition                                                   |
 | ---------- | ------------------------------------------------------------ |
-| Adjacent | Two vertices connected by an edge |
-| Degree | Number of edges incident to a vertex (undirected) |
-| In-degree | Number of incoming edges (directed) |
-| Out-degree | Number of outgoing edges (directed) |
-| Path | Sequence of vertices where consecutive vertices are adjacent |
-| Cycle | Path that starts and ends at the same vertex |
-| Connected | There is a path between every pair of vertices |
-| DAG | Directed Acyclic Graph — a directed graph with no cycles |
+| Adjacent   | Two vertices connected by an edge                            |
+| Degree     | Number of edges incident to a vertex (undirected)            |
+| In-degree  | Number of incoming edges (directed)                          |
+| Out-degree | Number of outgoing edges (directed)                          |
+| Path       | Sequence of vertices where consecutive vertices are adjacent |
+| Cycle      | Path that starts and ends at the same vertex                 |
+| Connected  | There is a path between every pair of vertices               |
+| DAG        | Directed Acyclic Graph — a directed graph with no cycles     |
 
 **Theorem (Handshaking Lemma).** The sum of all vertex degrees equals $2|E|$.
 
@@ -47,13 +50,13 @@ Counts each edge exactly twice. $\square$
 An $n \times n$ matrix $A$ where $A[i][j] = 1$ if edge $(i, j)$ exists (0 otherwise). For weighted
 Graphs, $A[i][j] = w(i,j)$.
 
-| Property | Value |
+| Property          | Value    |
 | ----------------- | -------- |
-| Space | $O(n^2)$ |
-| Add edge | $O(1)$ |
-| Remove edge | $O(1)$ |
-| Check adjacency | $O(1)$ |
-| List neighbours | $O(n)$ |
+| Space             | $O(n^2)$ |
+| Add edge          | $O(1)$   |
+| Remove edge       | $O(1)$   |
+| Check adjacency   | $O(1)$   |
+| List neighbours   | $O(n)$   |
 | Iterate all edges | $O(n^2)$ |
 
 **Best for:** Dense graphs ($|E| \approx n^2$).
@@ -75,37 +78,35 @@ class Graph:
             self.adj[v].append((u, weight))
 ```
 
-| Property | Value |
+| Property          | Value                    |
 | ----------------- | ------------------------ |
-| Space | $O(n + \lvert E \rvert)$ |
-| Add edge | $O(1)$ |
-| Remove edge | $O(\mathrm{degree})$ |
-| Check adjacency | $O(\mathrm{degree})$ |
-| List neighbours | $O(\mathrm{degree})$ |
+| Space             | $O(n + \lvert E \rvert)$ |
+| Add edge          | $O(1)$                   |
+| Remove edge       | $O(\mathrm{degree})$     |
+| Check adjacency   | $O(\mathrm{degree})$     |
+| List neighbours   | $O(\mathrm{degree})$     |
 | Iterate all edges | $O(n + \lvert E \rvert)$ |
 
 **Best for:** Sparse graphs ($|E| \ll n^2$).
 
 ### Comparison
 
-| Property | Adjacency Matrix | Adjacency List |
+| Property      | Adjacency Matrix | Adjacency List    |
 | ------------- | ---------------- | ----------------- |
-| Space | $O(V^2)$ | $O(V + E)$ |
-| Edge lookup | $O(1)$ | $O(\mathrm{deg})$ |
-| Add edge | $O(1)$ | $O(1)$ |
-| Sparse graphs | Wasteful | Efficient |
-| Dense graphs | Efficient | Slightly slower |
+| Space         | $O(V^2)$         | $O(V + E)$        |
+| Edge lookup   | $O(1)$           | $O(\mathrm{deg})$ |
+| Add edge      | $O(1)$           | $O(1)$            |
+| Sparse graphs | Wasteful         | Efficient         |
+| Dense graphs  | Efficient        | Slightly slower   |
 
-:::info
-Board-specific
+:::info Board-specific
 
 - **AQA** requires adjacency matrix and adjacency list representations; Dijkstra's algorithm for
- shortest path
+  shortest path
 - **CIE (9618)** requires graph representations and traversal; may include minimum spanning tree
- algorithms (Kruskal's, Prim's)
+  algorithms (Kruskal's, Prim's)
 - **OCR (A)** requires adjacency matrix/list; Dijkstra's, Kruskal's, and Prim's algorithms
-- **Edexcel** covers basic graph representations and traversals
-:::
+- **Edexcel** covers basic graph representations and traversals :::
 
 <hr />
 
@@ -140,17 +141,17 @@ def bfs(graph, start):
 Shortest-path distance $d(s, v)$ for every vertex $v$.
 
 **Proof.** We prove by induction on the distance $d$ that all vertices at distance $d$ from $s$ are
-Discovered (enqueued) at distance $d$And no vertex is discovered at a distance greater than its
-True shortest distance.
+Discovered (enqueued) at distance $d$And no vertex is discovered at a distance greater than its True
+shortest distance.
 
 _Base case ($d = 0$)._ $s$ is at distance 0 and is discovered at distance 0.
 
 _Inductive step._ Assume all vertices at distance $d$ are discovered at distance $d$. When a vertex
 $u$ at distance $d$ is dequeued, all unvisited neighbours $v$ are at distance at most $d + 1$ (by
-Edge relaxation). If $v$ were at distance $\lt{} d + 1$It would have been discovered earlier (by
-The inductive hypothesis or a previous BFS level). So $v$ is at distance exactly $d + 1$ and is
-Discovered at that distance. No vertex can be discovered at distance $\gt{} d + 1$ through $u$
-Since each edge adds exactly 1 to the path length. $\square$
+Edge relaxation). If $v$ were at distance $\lt{} d + 1$It would have been discovered earlier (by The
+inductive hypothesis or a previous BFS level). So $v$ is at distance exactly $d + 1$ and is
+Discovered at that distance. No vertex can be discovered at distance $\gt{} d + 1$ through $u$ Since
+each edge adds exactly 1 to the path length. $\square$
 
 **Complexity:** $O(V + E)$ — each vertex is visited once, each edge is examined at most twice (once
 From each endpoint in undirected graphs).
@@ -176,13 +177,13 @@ def dfs(graph, start):
 
 ### BFS vs DFS
 
-| Property | BFS | DFS |
+| Property       | BFS                        | DFS                                                     |
 | -------------- | -------------------------- | ------------------------------------------------------- |
-| Data structure | Queue | Stack (recursion) |
-| Exploration | Level by level | Branch by branch |
-| Shortest path | Yes (unweighted) | No |
-| Memory | $O(V)$ (queue) | $O(V)$ (recursion stack) |
-| Use cases | Shortest path, level order | Cycle detection, topological sort, connected components |
+| Data structure | Queue                      | Stack (recursion)                                       |
+| Exploration    | Level by level             | Branch by branch                                        |
+| Shortest path  | Yes (unweighted)           | No                                                      |
+| Memory         | $O(V)$ (queue)             | $O(V)$ (recursion stack)                                |
+| Use cases      | Shortest path, level order | Cycle detection, topological sort, connected components |
 
 <hr />
 
@@ -236,16 +237,13 @@ The first vertex on $P$ not in $S$And let $y$ be the predecessor of $x$ on $P$ (
 
 $$\mathrm{dist}[x] \leq \mathrm{dist}[y] + w(y, x) = d(s, y) + w(y, x) = d(s, x) \leq d(s, u) < \mathrm{dist}[u]$$
 
-Since $\mathrm{dist}[x] \lt{} \mathrm{dist}[u]$$x$ would have been extracted from the priority
-Queue before $u$ — contradiction. Therefore $\mathrm{dist}[u] = d(s, u)$. $\square$
+Since $\mathrm{dist}[x] \lt{} \mathrm{dist}[u]$$x$ would have been extracted from the priority Queue
+before $u$ — contradiction. Therefore $\mathrm{dist}[u] = d(s, u)$. $\square$
 
 **Complexity:** With a binary heap: $O((V + E) \log V)$. Each vertex is extracted once ($O(\log V)$
 Each), and each edge causes at most one decrease-key ($O(\log V)$ each).
 
-:::warning
-Warning
-Bellman-Ford algorithm instead for graphs that may contain negative weights.
-:::
+:::warning Warning Bellman-Ford algorithm instead for graphs that may contain negative weights. :::
 
 <hr />
 
@@ -314,8 +312,8 @@ Vertices it connects are in different components — this defines a cut where $e
 Crossing edge (since edges are processed in sorted order). By the cut property, $e$ belongs to some
 MST.
 
-**Complexity:** Sorting: $O(E \log E)$. Union-Find operations: $O(E \cdot \alpha(V))$Where
-$\alpha$ is the inverse Ackermann function (effectively $O(1)$). Total: $O(E \log E) = O(E \log V)$.
+**Complexity:** Sorting: $O(E \log E)$. Union-Find operations: $O(E \cdot \alpha(V))$Where $\alpha$
+is the inverse Ackermann function (effectively $O(1)$). Total: $O(E \log E) = O(E \log V)$.
 
 ### Prim's Algorithm
 
@@ -405,13 +403,13 @@ Vertices are visited and their distances.
 <details>
 <summary>Answer</summary>
 
-| Step | Dequeue | Visit | Neighbours | Queue (front→rear) | Distances |
+| Step | Dequeue | Visit   | Neighbours                  | Queue (front→rear) | Distances     |
 | ---- | ------- | ------- | --------------------------- | ------------------ | ------------- |
-| 0 | — | — | — | [A] | A:0 |
-| 1 | A | B, C, D | B, C, D | [B, C, D] | B:1, C:1, D:1 |
-| 2 | B | A, C | A (visited) | [C, D] | — |
-| 3 | C | A, B, D | A, B (visited), D (visited) | [D] | — |
-| 4 | D | C, A | C, A (visited) | [] | — |
+| 0    | —       | —       | —                           | [A]                | A:0           |
+| 1    | A       | B, C, D | B, C, D                     | [B, C, D]          | B:1, C:1, D:1 |
+| 2    | B       | A, C    | A (visited)                 | [C, D]             | —             |
+| 3    | C       | A, B, D | A, B (visited), D (visited) | [D]                | —             |
+| 4    | D       | C, A    | C, A (visited)              | []                 | —             |
 
 Visit order: A, B, C, D. Distances: A:0, B:1, C:1, D:1.
 
@@ -425,12 +423,12 @@ Weighted graph. Edges: A→B (4), A→C (2), B→C (1), B→D (5), C→B (1), C�
 
 | Step | Extract | dist[A] | dist[B] | dist[C] | dist[D] | dist[E] |
 | ---- | ------- | ------- | ------- | ------- | ------- | ------- |
-| 0 | — | 0 | ∞ | ∞ | ∞ | ∞ |
-| 1 | A (0) | 0 | 4 | 2 | ∞ | ∞ |
-| 2 | C (2) | 0 | 3 | 2 | 10 | 12 |
-| 3 | B (3) | 0 | 3 | 2 | 8 | 12 |
-| 4 | D (8) | 0 | 3 | 2 | 8 | 10 |
-| 5 | E (10) | 0 | 3 | 2 | 8 | 10 |
+| 0    | —       | 0       | ∞       | ∞       | ∞       | ∞       |
+| 1    | A (0)   | 0       | 4       | 2       | ∞       | ∞       |
+| 2    | C (2)   | 0       | 3       | 2       | 10      | 12      |
+| 3    | B (3)   | 0       | 3       | 2       | 8       | 12      |
+| 4    | D (8)   | 0       | 3       | 2       | 8       | 10      |
+| 5    | E (10)  | 0       | 3       | 2       | 8       | 10      |
 
 Shortest paths: A→A: 0, A→B: 3 (A→C→B), A→C: 2, A→D: 8 (A→C→B→D), A→E: 10 (A→C→B→D→E).
 
@@ -444,13 +442,13 @@ A-B (4), A-C (2), B-C (1), B-D (5), C-D (8), D-E (3).
 
 Sorted edges: B-C (1), A-C (2), D-E (3), A-B (4), B-D (5), C-D (8)
 
-| Edge | Weight | Union? | MST edges |
+| Edge | Weight | Union?             | MST edges              |
 | ---- | ------ | ------------------ | ---------------------- |
-| B-C | 1 | Yes | `{B-C}` |
-| A-C | 2 | Yes | `{B-C, A-C}` |
-| D-E | 3 | Yes | `{B-C, A-C, D-E}` |
-| A-B | 4 | No (cycle A-B-C-A) | — |
-| B-D | 5 | Yes | `{B-C, A-C, D-E, B-D}` |
+| B-C  | 1      | Yes                | `{B-C}`                |
+| A-C  | 2      | Yes                | `{B-C, A-C}`           |
+| D-E  | 3      | Yes                | `{B-C, A-C, D-E}`      |
+| A-B  | 4      | No (cycle A-B-C-A) | —                      |
+| B-D  | 5      | Yes                | `{B-C, A-C, D-E, B-D}` |
 
 MST weight: $1 + 2 + 3 + 5 = 11$. 4 edges for 5 vertices. ✓
 
@@ -535,13 +533,13 @@ $$S \xrightarrow{1} A \xrightarrow{2} B \xrightarrow{1} C, \quad S \xrightarrow{
 
 **Dijkstra execution:**
 
-| Step | Extract | dist[S] | dist[A] | dist[B] | dist[C] |
+| Step | Extract | dist[S] | dist[A]  | dist[B]  | dist[C]  |
 | ---- | ------- | ------- | -------- | -------- | -------- |
-| 0 | — | 0 | $\infty$ | $\infty$ | $\infty$ |
-| 1 | S (0) | 0 | 1 | $\infty$ | 4 |
-| 2 | A (1) | 0 | 1 | 3 | 4 |
-| 3 | B (3) | 0 | 1 | **3** | 4 |
-| 4 | C (4) | 0 | 1 | 3 | **4** |
+| 0    | —       | 0       | $\infty$ | $\infty$ | $\infty$ |
+| 1    | S (0)   | 0       | 1        | $\infty$ | 4        |
+| 2    | A (1)   | 0       | 1        | 3        | 4        |
+| 3    | B (3)   | 0       | 1        | **3**    | 4        |
+| 4    | C (4)   | 0       | 1        | 3        | **4**    |
 
 Dijkstra outputs $\mathrm{dist}[B] = 3$. But the true shortest path is
 $S \to C \to B = 4 + (-3) = 1$. The algorithm fails because when $C$ is extracted at distance 4, it
@@ -578,10 +576,10 @@ And sparse graphs.
 <details>
 <summary>Answer</summary>
 
-| Graph type | Kruskal | Prim (binary heap) |
+| Graph type              | Kruskal         | Prim (binary heap) |
 | ----------------------- | --------------- | ------------------ |
-| Sparse ($E \approx V$) | $O(V \log V)$ | $O(V \log V)$ |
-| Dense ($E \approx V^2$) | $O(V^2 \log V)$ | $O(V^2 \log V)$ |
+| Sparse ($E \approx V$)  | $O(V \log V)$   | $O(V \log V)$      |
+| Dense ($E \approx V^2$) | $O(V^2 \log V)$ | $O(V^2 \log V)$    |
 
 Kruskal: $O(E \log E) = O(E \log V)$. Prim (binary heap): $O((V+E) \log V)$.
 

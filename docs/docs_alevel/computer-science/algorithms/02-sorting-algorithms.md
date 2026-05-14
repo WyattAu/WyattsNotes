@@ -1,6 +1,8 @@
 ---
 title: Sorting Algorithms
-description: "A-Level Computer Science notes on Sorting Algorithms: 1. Introduction; 2. Bubble Sort; Algorithm; Correctness Proof with worked examples and exam-style quest."
+description:
+  'A-Level Computer Science notes on Sorting Algorithms: 1. Introduction; 2. Bubble Sort; Algorithm;
+  Correctness Proof with worked examples and exam-style quest.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - ComputerScience
@@ -9,10 +11,11 @@ categories:
   - ComputerScience
 slug: sorting-algorithms
 ---
+
 ## 1. Introduction
 
-**The Sorting Problem:** Given an array $A[0..n-1]$Rearrange the elements into non-decreasing
-Order: $A[0] \leq A[1] \leq \cdots \leq A[n-1]$.
+**The Sorting Problem:** Given an array $A[0..n-1]$Rearrange the elements into non-decreasing Order:
+$A[0] \leq A[1] \leq \cdots \leq A[n-1]$.
 
 **Stability:** A sort is **stable** if elements with equal keys maintain their relative order from
 The input. Stability matters when sorting by multiple keys (e.g., sort by surname, then by first
@@ -51,13 +54,12 @@ Positions at the end of the array.
 **Proof.** By induction on $i$.
 
 _Base case ($i = 0$)._ The inner loop compares each adjacent pair from index 0 to $n-2$. Whenever
-$A[j] \gt{} A[j+1]$They are swapped. This ensures the maximum element moves rightward through
-Every comparison until it reaches index $n-1$. ✓
+$A[j] \gt{} A[j+1]$They are swapped. This ensures the maximum element moves rightward through Every
+comparison until it reaches index $n-1$. ✓
 
-_Inductive step._ Assume after pass $i-1$The $i$ largest elements are at indices
-$n-i, \ldots, n-1$. Pass $i$ operates on indices $0$ to $n-i-1$. By the same argument, the maximum
-Element in this range moves to index $n-i-1$. The $i+1$ largest elements are now at indices
-$n-i-1, \ldots, n-1$. ✓
+_Inductive step._ Assume after pass $i-1$The $i$ largest elements are at indices $n-i, \ldots, n-1$.
+Pass $i$ operates on indices $0$ to $n-i-1$. By the same argument, the maximum Element in this range
+moves to index $n-i-1$. The $i+1$ largest elements are now at indices $n-i-1, \ldots, n-1$. ✓
 
 After $n-1$ passes, all elements are sorted. $\square$
 
@@ -104,8 +106,8 @@ $A[0..i]$ is sorted.
 
 **Proof.** By induction on $i$.
 
-_Base case ($i = 1$)._ $A[0..1]$ contains at most 2 elements. If $A[0] \gt{} A[1]$They are
-Swapped; otherwise, no change. Either way, $A[0..1]$ is sorted. ✓
+_Base case ($i = 1$)._ $A[0..1]$ contains at most 2 elements. If $A[0] \gt{} A[1]$They are Swapped;
+otherwise, no change. Either way, $A[0..1]$ is sorted. ✓
 
 _Inductive step._ Assume $A[0..i-1]$ is sorted. We insert $A[i]$ (stored as `key`) by shifting
 Elements greater than `key` one position right. Since $A[0..i-1]$ is sorted, all elements greater
@@ -173,9 +175,9 @@ _Inductive step._ Assume `merge_sort` correctly sorts arrays of size $\lt{} n$. 
 $n$:
 
 1. Split into $L$ (size $\lfloor n/2 \rfloor$) and $R$ (size $\lceil n/2 \rceil$). By the inductive
- hypothesis, `merge_sort(L)` and `merge_sort(R)` return sorted arrays.
+   hypothesis, `merge_sort(L)` and `merge_sort(R)` return sorted arrays.
 2. `merge` combines them: at each step, it appends the smaller of the two front elements. This
- produces a sorted array (standard merge of two sorted sequences).
+   produces a sorted array (standard merge of two sorted sequences).
 3. `merge` appends all remaining elements, so no elements are lost.
 
 The result is a sorted permutation of the input. ✓ $\square$
@@ -229,8 +231,8 @@ def partition(A, low, high):
 
 ### Correctness Proof
 
-**Theorem.** After `partition(A, low, high)`The pivot is at its final sorted position, all
-Elements to its left are $\lt{} $ pivot, and all elements to its right are $\geq$ pivot.
+**Theorem.** After `partition(A, low, high)`The pivot is at its final sorted position, all Elements
+to its left are $\lt{} $ pivot, and all elements to its right are $\geq$ pivot.
 
 **Proof.** The variable `i` tracks the boundary between elements
 $\lt{} $ pivot (indices `low..i`) and elements $\geq$ pivot (indices `i+1..j-1`). The loop
@@ -242,9 +244,9 @@ _At the start of each iteration with index `j`:_
 - $A[i+1..j-1]$ contains only elements $\geq$ pivot
 - $A[\mathrm{high}] = \mathrm{pivot}$ (unchanged)
 
-_Maintenance._ If $A[j] \lt{} \mathrm{pivot}$Increment $i$ and swap $A[i]$ with $A[j]$Extending
-The "$\lt{} $ pivot" region. If $A[j] \geq \mathrm{pivot}$Increment $j$ only, extending the
-"$\geq$ pivot" region.
+_Maintenance._ If $A[j] \lt{} \mathrm{pivot}$Increment $i$ and swap $A[i]$ with $A[j]$Extending The
+"$\lt{} $ pivot" region. If $A[j] \geq \mathrm{pivot}$Increment $j$ only, extending the "$\geq$
+pivot" region.
 
 _Termination._ After the loop, swap $A[i+1]$ with $A[\mathrm{high}]$ (the pivot). Now:
 
@@ -256,11 +258,11 @@ $\square$
 
 ### Complexity
 
-| Case | Time | Pivot choice |
+| Case    | Time          | Pivot choice     |
 | ------- | ------------- | ---------------- |
-| Best | $O(n \log n)$ | Median |
-| Average | $O(n \log n)$ | Random |
-| Worst | $O(n^2)$ | Min/max (sorted) |
+| Best    | $O(n \log n)$ | Median           |
+| Average | $O(n \log n)$ | Random           |
+| Worst   | $O(n^2)$      | Min/max (sorted) |
 
 **Space:** $O(\log n)$ average (recursion stack), $O(n)$ worst. **Stable:** No (partitioning swaps
 Can change relative order).
@@ -278,13 +280,13 @@ Master Theorem.
 
 ## 6. Comparison Table
 
-| Algorithm | Best | Average | Worst | Space | Stable |
+| Algorithm      | Best          | Average       | Worst         | Space       | Stable |
 | -------------- | ------------- | ------------- | ------------- | ----------- | ------ |
-| Bubble Sort | $O(n)$ | $O(n^2)$ | $O(n^2)$ | $O(1)$ | Yes |
-| Insertion Sort | $O(n)$ | $O(n^2)$ | $O(n^2)$ | $O(1)$ | Yes |
-| Merge Sort | $O(n \log n)$ | $O(n \log n)$ | $O(n \log n)$ | $O(n)$ | Yes |
-| Quick Sort | $O(n \log n)$ | $O(n \log n)$ | $O(n^2)$ | $O(\log n)$ | No |
-| Heap Sort | $O(n \log n)$ | $O(n \log n)$ | $O(n \log n)$ | $O(1)$ | No |
+| Bubble Sort    | $O(n)$        | $O(n^2)$      | $O(n^2)$      | $O(1)$      | Yes    |
+| Insertion Sort | $O(n)$        | $O(n^2)$      | $O(n^2)$      | $O(1)$      | Yes    |
+| Merge Sort     | $O(n \log n)$ | $O(n \log n)$ | $O(n \log n)$ | $O(n)$      | Yes    |
+| Quick Sort     | $O(n \log n)$ | $O(n \log n)$ | $O(n^2)$      | $O(\log n)$ | No     |
+| Heap Sort      | $O(n \log n)$ | $O(n \log n)$ | $O(n \log n)$ | $O(1)$      | No     |
 
 <hr />
 
@@ -310,11 +312,8 @@ $$\log_2(n!) = n\log_2 n - n\log_2 e + O(\log n) = \Omega(n \log n)$$
 Therefore, any comparison-based sorting algorithm requires at least $\Omega(n \log n)$ comparisons
 In the worst case. $\square$
 
-:::info
-Info
-Are asymptotically optimal among comparison-based sorts. Non-comparison sorts (radix sort, counting
-Sort) can beat $O(n \log n)$ but have restrictions on key types.
-:::
+:::info Info Are asymptotically optimal among comparison-based sorts. Non-comparison sorts (radix
+sort, counting Sort) can beat $O(n \log n)$ but have restrictions on key types. :::
 
 <hr />
 
@@ -341,12 +340,12 @@ Insertion.
 <details>
 <summary>Answer</summary>
 
-| i | key | Array state |
+| i   | key | Array state                |
 | --- | --- | -------------------------- |
-| 1 | 1 | [1, 5, 4, 2, 8] |
-| 2 | 4 | [1, 4, 5, 2, 8] |
-| 3 | 2 | [1, 2, 4, 5, 8] |
-| 4 | 8 | [1, 2, 4, 5, 8] (no shift) |
+| 1   | 1   | [1, 5, 4, 2, 8]            |
+| 2   | 4   | [1, 4, 5, 2, 8]            |
+| 3   | 2   | [1, 2, 4, 5, 8]            |
+| 4   | 8   | [1, 2, 4, 5, 8] (no shift) |
 
 Sorted: `[1, 2, 4, 5, 8]`
 
@@ -357,14 +356,14 @@ Sorted: `[1, 2, 4, 5, 8]`
 <details>
 <summary>Answer</summary>
 
-| Step | L remaining | R remaining | Output |
+| Step | L remaining | R remaining  | Output           |
 | ---- | ----------- | ------------ | ---------------- |
-| 1 | [1, 3, 5] | [2, 4, 6, 8] | 1 < 2 → output 1 |
-| 2 | [3, 5] | [2, 4, 6, 8] | 3 > 2 → output 2 |
-| 3 | [3, 5] | [4, 6, 8] | 3 < 4 → output 3 |
-| 4 | [5] | [4, 6, 8] | 5 > 4 → output 4 |
-| 5 | [5] | [6, 8] | 5 < 6 → output 5 |
-| 6 | [] | [6, 8] | append [6, 8] |
+| 1    | [1, 3, 5]   | [2, 4, 6, 8] | 1 < 2 → output 1 |
+| 2    | [3, 5]      | [2, 4, 6, 8] | 3 > 2 → output 2 |
+| 3    | [3, 5]      | [4, 6, 8]    | 3 < 4 → output 3 |
+| 4    | [5]         | [4, 6, 8]    | 5 > 4 → output 4 |
+| 5    | [5]         | [6, 8]       | 5 < 6 → output 5 |
+| 6    | []          | [6, 8]       | append [6, 8]    |
 
 Result: `[1, 2, 3, 4, 5, 6, 8]`
 
@@ -428,10 +427,9 @@ Complexity?
 
 Insertion sort is preferred when:
 
-1. **The array is small** ( $n \lt{} 20$): the constant factors of insertion sort are
- smaller
+1. **The array is small** ( $n \lt{} 20$): the constant factors of insertion sort are smaller
 2. **The array is nearly sorted**: insertion sort runs in $O(n + d)$ where $d$ is the number of
- inversions
+   inversions
 3. **Memory is constrained**: insertion sort is in-place ($O(1)$ extra space) vs merge sort's $O(n)$
 4. **Stability is required** and quick sort's instability is a concern
 
@@ -535,7 +533,7 @@ Counting sort runs in $O(n + k)$ time.
 
 1. Only works when keys are integers (or can be mapped to integers)
 2. Inefficient when $k$ is very large compared to $n$ (e.g., sorting 100 elements with keys up to
- $10^9$)
+   $10^9$)
 3. Not comparison-based, so the $\Omega(n \log n)$ lower bound does not apply
 4. Not in-place (requires $O(n + k)$ extra space)
 5. Not stable in its basic form (but can be made stable)

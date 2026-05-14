@@ -1,22 +1,25 @@
 ---
 id: types-and-variables
 title: Types and Variables
-description: "Types and Variables — Integer Types; Integer Literals; Integer Overflow; Sizing and Alignment with worked examples and exam-style questions."
+description:
+  'Types and Variables — Integer Types; Integer Literals; Integer Overflow; Sizing and Alignment
+  with worked examples and exam-style questions.'
 slug: types-and-variables
 ---
+
 ## Integer Types
 
 Rust provides signed and unsigned integers at every power-of-two width from 8 to 128 bits, plus
 Platform-dependent `isize` and `usize`:
 
-| Type | Size (bytes) | Range (signed) | Range (unsigned) |
+| Type              | Size (bytes) | Range (signed)                                                                                              | Range (unsigned)                                         |
 | ----------------- | ------------ | ----------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- |
-| `i8` / `u8` | 1 | -128 to 127 | 0 to 255 |
-| `i16` / `u16` | 2 | -32,768 to 32,767 | 0 to 65,535 |
-| `i32` / `u32` | 4 | -2,147,483,648 to 2,147,483,647 | 0 to 4,294,967,295 |
-| `i64` / `u64` | 8 | -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 | 0 to 18,446,744,073,709,551,615 |
-| `i128` / `u128` | 16 | -170,141,183,460,469,231,731,687,303,715,884,105,728 to 170,141,183,460,469,231,731,687,303,715,884,105,727 | 0 to 340,282,366,920,938,463,463,374,607,431,768,211,455 |
-| `isize` / `usize` | 4 or 8 | Pointer-sized | Pointer-sized |
+| `i8` / `u8`       | 1            | -128 to 127                                                                                                 | 0 to 255                                                 |
+| `i16` / `u16`     | 2            | -32,768 to 32,767                                                                                           | 0 to 65,535                                              |
+| `i32` / `u32`     | 4            | -2,147,483,648 to 2,147,483,647                                                                             | 0 to 4,294,967,295                                       |
+| `i64` / `u64`     | 8            | -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807                                                     | 0 to 18,446,744,073,709,551,615                          |
+| `i128` / `u128`   | 16           | -170,141,183,460,469,231,731,687,303,715,884,105,728 to 170,141,183,460,469,231,731,687,303,715,884,105,727 | 0 to 340,282,366,920,938,463,463,374,607,431,768,211,455 |
+| `isize` / `usize` | 4 or 8       | Pointer-sized                                                                                               | Pointer-sized                                            |
 
 The default integer type is `i32`. This is not an arbitrary choice — on x86-64, `i32` operations are
 As fast as any smaller integer width, and using `i32` avoids the implicit sign-extension or
@@ -74,10 +77,10 @@ ARM without unaligned access support, it traps.
 
 Rust has two floating-point types conforming to IEEE 754-2008:
 
-| Type | Size | Precision | Range (approximate) |
+| Type  | Size    | Precision             | Range (approximate) |
 | ----- | ------- | --------------------- | ------------------- |
-| `f32` | 4 bytes | ~6-7 decimal digits | plus/minus 3.4e38 |
-| `f64` | 8 bytes | ~15-16 decimal digits | plus/minus 1.8e308 |
+| `f32` | 4 bytes | ~6-7 decimal digits   | plus/minus 3.4e38   |
+| `f64` | 8 bytes | ~15-16 decimal digits | plus/minus 1.8e308  |
 
 The default is `f64`. On modern x86-64 hardware, `f64` operations are as fast as `f32` — there is no
 Performance penalty for using the larger type. Use `f32` only when you need to reduce memory
@@ -128,8 +131,8 @@ let x: bool = true;
 assert_eq!(std::mem::size_of::<bool>(), 1);
 ```
 
-`bool` implements `Copy``Clone``Debug``Display`And the bitwise operators (`!``&``|`
-`^`) via the `BitAnd``BitOr``BitXor``Not` traits.
+`bool` implements `Copy``Clone``Debug``Display`And the bitwise operators (`!``&``|` `^`) via the
+`BitAnd``BitOr``BitXor``Not` traits.
 
 ## Character Type
 
@@ -341,10 +344,10 @@ Removes elements that do not satisfy the predicate in-place.
 This is one of the most common sources of confusion for new Rust programmers. Rust has two string
 Types:
 
-| Type | Ownership | Location | Size | Growable |
+| Type     | Ownership | Location                       | Size                                 | Growable |
 | -------- | --------- | ------------------------------ | ------------------------------------ | -------- |
-| `String` | Owned | Heap | 24 bytes (ptr + len + cap on 64-bit) | Yes |
-| `&str` | Borrowed | Anywhere (stack, heap, static) | 16 bytes (ptr + len) | No |
+| `String` | Owned     | Heap                           | 24 bytes (ptr + len + cap on 64-bit) | Yes      |
+| `&str`   | Borrowed  | Anywhere (stack, heap, static) | 16 bytes (ptr + len)                 | No       |
 
 `String` is a `Vec<u8>` guaranteed to hold valid UTF-8. `&str` is a slice of UTF-8 bytes. Every
 `String` can be dereferenced to `&str`But not vice versa.
@@ -583,8 +586,7 @@ fn increment() {
 :::warning
 
 Do not use `static mut`. It is the source of undefined behavior in multi-threaded contexts and
-Requires `unsafe` blocks to access. Prefer `static` with `Mutex``AtomicUsize`Or `OnceLock`
-Instead.
+Requires `unsafe` blocks to access. Prefer `static` with `Mutex``AtomicUsize`Or `OnceLock` Instead.
 
 :::
 
@@ -788,43 +790,43 @@ List): `Option``Result``Vec``String``Box``Drop``Clone``Copy``Deref``DerefMut`
 ## Common Pitfalls
 
 1. **Assuming `char` is a byte.** `char` is always 4 bytes and represents a Unicode scalar value.
- For byte-level text processing, use `u8` or `&[u8]`. For ASCII-only text, `char` works but wastes
- 3 bytes per character.
+   For byte-level text processing, use `u8` or `&[u8]`. For ASCII-only text, `char` works but wastes
+   3 bytes per character.
 
 2. **Using `String` when `&str` suffices.** If a function only needs to read a string, take `&str`
- as the parameter type. This allows the caller to pass both `&String` (auto-deref) and string
- literals without allocation.
+   as the parameter type. This allows the caller to pass both `&String` (auto-deref) and string
+   literals without allocation.
 
 3. **Integer overflow in release mode.** The compiler does not check for overflow in release builds.
- Use `wrapping_*``saturating_*``checked_*`Or `overflowing_*` methods explicitly when
- overflow is possible and wrapping is not desired.
+   Use `wrapping_*``saturating_*``checked_*`Or `overflowing_*` methods explicitly when overflow is
+   possible and wrapping is not desired.
 
 4. **Floating-point equality.** Never use `==` to compare floats for equality. Use an epsilon
- comparison or the `approx` crate. `f32` and `f64` do not implement `Eq` precisely because of
- this.
+   comparison or the `approx` crate. `f32` and `f64` do not implement `Eq` precisely because of
+   this.
 
 5. **Indexing strings with byte offsets.** `s[i]` where `i` is a byte offset will panic if the index
- falls on a non-ASCII character boundary. Use `s.chars().nth(i)` for character indexing (O(n)) or
- `s.char_indices()` for byte-safe iteration.
+   falls on a non-ASCII character boundary. Use `s.chars().nth(i)` for character indexing (O(n)) or
+   `s.char_indices()` for byte-safe iteration.
 
 6. **Confusing `const` and `static`.** `const` values are inlined — they have no memory address. Use
- `static` when you need a single address (e.g., for a global counter, FFI callback, or
- `LazyLock`).
+   `static` when you need a single address (e.g., for a global counter, FFI callback, or
+   `LazyLock`).
 
 7. **Shadowing vs mutation.** Shadowing creates a new binding; it does not modify the old one. If
- you need to observe the change through a reference or a closure, use `let mut` instead.
+   you need to observe the change through a reference or a closure, use `let mut` instead.
 
 8. **`as` casts silently truncating.** `300i32 as u8` becomes 44 without any warning. Use
- `TryInto::try_into()` for fallible conversions that propagate errors.
+   `TryInto::try_into()` for fallible conversions that propagate errors.
 
 9. **`Vec` vs array misuse.** Arrays are stack-allocated with a compile-time known size. `Vec` is
- heap-allocated with a runtime-determined size. If the size is known at compile time and small,
- prefer arrays — they avoid heap allocation and have better cache locality.
+   heap-allocated with a runtime-determined size. If the size is known at compile time and small,
+   prefer arrays — they avoid heap allocation and have better cache locality.
 
 10. **Ignoring alignment.** On some platforms (notably ARM), misaligned access to multi-byte
- integers causes a hardware trap (SIGBUS). Even on x86-64, misaligned access can be significantly
- slower. Use `#[repr(C)]` or `#[repr(align(N))]` when interfacing with C or when alignment
- matters.
+    integers causes a hardware trap (SIGBUS). Even on x86-64, misaligned access can be significantly
+    slower. Use `#[repr(C)]` or `#[repr(align(N))]` when interfacing with C or when alignment
+    matters.
 
 ## Summary
 

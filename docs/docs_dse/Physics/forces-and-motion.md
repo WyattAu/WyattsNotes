@@ -1,6 +1,8 @@
 ---
 title: Forces and Motion
-description: "DSE Physics forces and motion notes covering Newton's laws, friction, projectile motion, circular motion, momentum, and impulse with worked examples."
+description:
+  "DSE Physics forces and motion notes covering Newton's laws, friction, projectile motion, circular
+  motion, momentum, and impulse with worked examples."
 date: 2026-04-18T00:00:00.000Z
 tags:
   - DSE
@@ -37,8 +39,7 @@ The SI unit of force is the newton (N), where $1 \mathrm{ N} = 1 \mathrm{ kg}\cd
 
 ### Third Law
 
-If body `A` exerts a force on body `B`Then body `B` exerts an equal and opposite force on body
-`A`:
+If body `A` exerts a force on body `B`Then body `B` exerts an equal and opposite force on body `A`:
 
 $$\vec{F}_{AB} = -\vec{F}_{BA}$$
 
@@ -63,9 +64,9 @@ $$a = \frac{F_{\mathrm{net}}}{m} = \frac{50 - 23.54}{8} = \frac{26.46}{8} = 3.31
 
 ### Worked Example 2
 
-Two blocks, $m_1 = 3 \mathrm{ kg}$ and $m_2 = 5 \mathrm{ kg}$Are placed on a smooth horizontal
-Table and connected by a light inextensible string. A horizontal force of $24 \mathrm{ N}$ is applied
-To $m_2$Pulling the system to the right. Find the acceleration and the tension in the string.
+Two blocks, $m_1 = 3 \mathrm{ kg}$ and $m_2 = 5 \mathrm{ kg}$Are placed on a smooth horizontal Table
+and connected by a light inextensible string. A horizontal force of $24 \mathrm{ N}$ is applied To
+$m_2$Pulling the system to the right. Find the acceleration and the tension in the string.
 
 <details>
 <summary>Solution</summary>
@@ -105,10 +106,10 @@ Distance: $s = ut + \frac{1}{2}at^2 = 0 + \frac{1}{2}(1.5)(9) = 6.75 \mathrm{ m}
 
 ### Static and Kinetic Friction
 
-| Type | Symbol | Condition | Magnitude |
+| Type    | Symbol | Condition          | Magnitude                           |
 | ------- | ------ | ------------------ | ----------------------------------- |
-| Static | $f_s$ | No relative motion | $0 \leqslant f_s \leqslant \mu_s N$ |
-| Kinetic | $f_k$ | Surfaces sliding | $f_k = \mu_k N$ |
+| Static  | $f_s$  | No relative motion | $0 \leqslant f_s \leqslant \mu_s N$ |
+| Kinetic | $f_k$  | Surfaces sliding   | $f_k = \mu_k N$                     |
 
 The coefficient of static friction $\mu_s$ is always greater than or equal to the coefficient of
 Kinetic friction $\mu_k$:
@@ -147,9 +148,9 @@ $$\mu_s = \tan 35^\circ = 0.700$$
 
 ### Worked Example 4
 
-A $10 \mathrm{ kg}$ block sits on a rough horizontal surface with $\mu_s = 0.4$ and
-$\mu_k = 0.3$. A force of $30 \mathrm{ N}$ is applied at $30^\circ$ above the horizontal. Does the
-Block move? If so, find its acceleration.
+A $10 \mathrm{ kg}$ block sits on a rough horizontal surface with $\mu_s = 0.4$ and $\mu_k = 0.3$. A
+force of $30 \mathrm{ N}$ is applied at $30^\circ$ above the horizontal. Does the Block move? If so,
+find its acceleration.
 
 <details>
 <summary>Solution</summary>
@@ -193,10 +194,10 @@ $\mathrm{ N\, s}$.
 
 ### Collisions
 
-| Type | Momentum | Kinetic Energy |
+| Type                | Momentum  | Kinetic Energy               |
 | ------------------- | --------- | ---------------------------- |
-| Elastic | Conserved | Conserved |
-| Inelastic | Conserved | Not conserved |
+| Elastic             | Conserved | Conserved                    |
+| Inelastic           | Conserved | Not conserved                |
 | Perfectly inelastic | Conserved | Maximum loss (objects stick) |
 
 ### Worked Example 5
@@ -241,9 +242,8 @@ Energy lost: $\Delta E_k = 24.0 - 9.0 = 15.0 \mathrm{ J}$
 
 ### Worked Example 7
 
-A $0.05 \mathrm{ kg}$ bullet travelling at $400 \mathrm{ m/s}$ embeds itself in a
-$2 \mathrm{ kg}$ wooden block at rest on a smooth surface. Find the velocity of the block
-Immediately after impact.
+A $0.05 \mathrm{ kg}$ bullet travelling at $400 \mathrm{ m/s}$ embeds itself in a $2 \mathrm{ kg}$
+wooden block at rest on a smooth surface. Find the velocity of the block Immediately after impact.
 
 <details>
 <summary>Solution</summary>
@@ -266,11 +266,11 @@ $$20 = 2.05v \implies v = 9.76 \mathrm{ m/s}$$
 
 For a projectile launched with speed $u$ at angle $\theta$ above the horizontal:
 
-| Quantity | Horizontal | Vertical |
+| Quantity     | Horizontal                     | Vertical                                   |
 | ------------ | ------------------------------ | ------------------------------------------ |
-| Acceleration | $0$ | $-g$ |
-| Velocity | $u_x = u\cos\theta$ (constant) | $u_y = u\sin\theta - gt$ |
-| Displacement | $x = u\cos\theta\cdot t$ | $y = u\sin\theta\cdot t - \frac{1}{2}gt^2$ |
+| Acceleration | $0$                            | $-g$                                       |
+| Velocity     | $u_x = u\cos\theta$ (constant) | $u_y = u\sin\theta - gt$                   |
+| Displacement | $x = u\cos\theta\cdot t$       | $y = u\sin\theta\cdot t - \frac{1}{2}gt^2$ |
 
 ### Key Results
 
@@ -314,12 +314,12 @@ $$H = \frac{20^2 \sin^2 50^\circ}{2 \times 9.81} = \frac{400 \times 0.5868}{19.6
 
 ### Angular Quantities
 
-| Quantity | Symbol | SI Unit | Relation |
+| Quantity             | Symbol   | SI Unit | Relation                  |
 | -------------------- | -------- | ------- | ------------------------- |
-| Angular displacement | $\theta$ | rad | $\theta = s/r$ |
-| Angular velocity | $\omega$ | rad/s | $\omega = d\theta/dt$ |
-| Period | $T$ | s | $T = 2\pi/\omega$ |
-| Frequency | $f$ | Hz | $f = 1/T = \omega/(2\pi)$ |
+| Angular displacement | $\theta$ | rad     | $\theta = s/r$            |
+| Angular velocity     | $\omega$ | rad/s   | $\omega = d\theta/dt$     |
+| Period               | $T$      | s       | $T = 2\pi/\omega$         |
+| Frequency            | $f$      | Hz      | $f = 1/T = \omega/(2\pi)$ |
 
 Linear-angular relation: $v = r\omega$$a = r\alpha$
 
@@ -368,12 +368,14 @@ $$\mu_s = \frac{F_c}{mg} = \frac{4500}{1200 \times 9.81} = \frac{4500}{11772} = 
 ### Worked Example 9
 
 A $0.5 \mathrm{ kg}$ ball is attached to a string of length $0.8 \mathrm{ m}$ and whirled in a
-Vertical circle. Find the minimum speed at the lowest point for the ball to complete the full circle.
+Vertical circle. Find the minimum speed at the lowest point for the ball to complete the full
+circle.
 
 <details>
 <summary>Solution</summary>
 
-For the ball to complete the full circle, the speed at the top must satisfy $v_{\mathrm{top}} \geqslant \sqrt{gr}$.
+For the ball to complete the full circle, the speed at the top must satisfy
+$v_{\mathrm{top}} \geqslant \sqrt{gr}$.
 
 Using energy conservation between the bottom and top:
 
@@ -445,30 +447,30 @@ $$v = \sqrt{\frac{GM_E}{r}} = \sqrt{\frac{6.67 \times 10^{-11} \times 5.97 \time
 ## Common Pitfalls
 
 - Confusing action-reaction pairs with balanced forces. Newton's third law pairs act on
- **different** objects; balanced forces act on the **same** object.
+  **different** objects; balanced forces act on the **same** object.
 - Forgetting that friction opposes **relative** motion, not necessarily the direction of the applied
- force.
+  force.
 - Using $\mu_s N$ for kinetic friction or $\mu_k N$ for static friction. They are different.
 - In projectile motion, treating horizontal and vertical components as coupled. They share only the
- common variable $t$.
+  common variable $t$.
 - Adding centripetal force as an extra force on a free body diagram. Centripetal force is the
- **name** given to the net inward force, not an additional force.
+  **name** given to the net inward force, not an additional force.
 
 ---
 
 ## Summary Table
 
-| Topic | Key Formula | Key Concept |
+| Topic               | Key Formula                | Key Concept                    |
 | ------------------- | -------------------------- | ------------------------------ |
-| Newton's Second Law | $F = ma$ | Net force causes acceleration |
-| Static friction | $f_s \leqslant \mu_s N$ | Adjusts to match applied force |
-| Kinetic friction | $f_k = \mu_k N$ | Constant during sliding |
-| Momentum | $p = mv$ | Vector quantity |
-| Impulse | $J = F\Delta t = \Delta p$ | Area under F-t graph |
-| Projectile range | $R = u^2\sin 2\theta/g$ | Maximum at $45^\circ$ |
-| Centripetal force | $F_c = mv^2/r$ | Net force towards centre |
-| Gravitation | $F = Gm_1 m_2/r^2$ | Inverse square law |
-| Orbital speed | $v = \sqrt{GM/r}$ | Balances gravity |
+| Newton's Second Law | $F = ma$                   | Net force causes acceleration  |
+| Static friction     | $f_s \leqslant \mu_s N$    | Adjusts to match applied force |
+| Kinetic friction    | $f_k = \mu_k N$            | Constant during sliding        |
+| Momentum            | $p = mv$                   | Vector quantity                |
+| Impulse             | $J = F\Delta t = \Delta p$ | Area under F-t graph           |
+| Projectile range    | $R = u^2\sin 2\theta/g$    | Maximum at $45^\circ$          |
+| Centripetal force   | $F_c = mv^2/r$             | Net force towards centre       |
+| Gravitation         | $F = Gm_1 m_2/r^2$         | Inverse square law             |
+| Orbital speed       | $v = \sqrt{GM/r}$          | Balances gravity               |
 
 ---
 
@@ -493,9 +495,9 @@ $$T = 6 \times 3.92 = 23.5 \mathrm{ N}$$
 
 If you get this wrong, revise: Newton's Laws of Motion / Second Law
 
-**Problem 2.** A $3 \mathrm{ kg}$ block is placed on a rough inclined plane at $30^\circ$.
-The coefficient of static friction is $0.35$. Does the block slide? If it does, find the
-Acceleration ($\mu_k = 0.25$).
+**Problem 2.** A $3 \mathrm{ kg}$ block is placed on a rough inclined plane at $30^\circ$. The
+coefficient of static friction is $0.35$. Does the block slide? If it does, find the Acceleration
+($\mu_k = 0.25$).
 
 <details>
 <summary>Solution</summary>
@@ -534,9 +536,9 @@ At $4 \mathrm{ m/s}$.
 
 If you get this wrong, revise: Momentum and Impulse / Collisions
 
-**Problem 4.** A $150 \mathrm{ g}$ cricket ball is hit by a bat. The force-time graph is a
-Triangle with peak force $600 \mathrm{ N}$ and contact time $0.005 \mathrm{ s}$. Find the
-Impulse and the speed of the ball after impact (initially at rest).
+**Problem 4.** A $150 \mathrm{ g}$ cricket ball is hit by a bat. The force-time graph is a Triangle
+with peak force $600 \mathrm{ N}$ and contact time $0.005 \mathrm{ s}$. Find the Impulse and the
+speed of the ball after impact (initially at rest).
 
 <details>
 <summary>Solution</summary>
@@ -620,8 +622,8 @@ $$v = \sqrt{2as} = \sqrt{2 \times 2.78 \times 6} = \sqrt{33.36} = 5.78 \mathrm{ 
 If you get this wrong, revise: Friction / Inclined Planes and Newton's Second Law
 
 **Problem 9.** A $1.5 \mathrm{ kg}$ ball on a string of length $0.5 \mathrm{ m}$ is swung in a
-Vertical circle. At the lowest point, the tension is $45 \mathrm{ N}$. Find the speed at the
-Lowest point and the speed at the highest point.
+Vertical circle. At the lowest point, the tension is $45 \mathrm{ N}$. Find the speed at the Lowest
+point and the speed at the highest point.
 
 <details>
 <summary>Solution</summary>
@@ -669,18 +671,20 @@ $$\mathrm{Distance\ after\ 5\ s} = 1.167 \times 5 = 5.83 \mathrm{ m}$$
 
 If you get this wrong, revise: Momentum and Impulse / Conservation of Momentum
 
-For the A-Level treatment of this topic, see [Dynamics](https://alevel.wyattau.com/docs/physics/mechanics/dynamics).
+For the A-Level treatment of this topic, see
+[Dynamics](https://alevel.wyattau.com/docs/physics/mechanics/dynamics).
 
 ---
 
-:::tip
-Diagnostic Test
-Ready to test your understanding of **Forces and Motion**? The [diagnostic test](/docs/dse/Physics/diagnostics/diag-forces-motion) contains the hardest questions within the DSE specification for this topic, each with a full worked solution.
+:::tip Diagnostic Test Ready to test your understanding of **Forces and Motion**? The
+[diagnostic test](/docs/dse/Physics/diagnostics/diag-forces-motion) contains the hardest questions
+within the DSE specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Forces and Motion with other physics topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Forces and
+Motion with other physics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/dse/Physics/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/dse/Physics/diagnostics/diagnostic-guide) for instructions on
+self-marking and building a personal test matrix. :::
 
 ---
 
@@ -689,8 +693,7 @@ See [Diagnostic Guide](/docs/dse/Physics/diagnostics/diagnostic-guide) for instr
 ### Derivation: Centripetal Acceleration
 
 Consider an object moving at constant speed $v$ in a circle of radius $r$. In a small time
-$\Delta t$It moves from point A to point B, subtending a small angle $\Delta\theta$ at the
-Centre.
+$\Delta t$It moves from point A to point B, subtending a small angle $\Delta\theta$ at the Centre.
 
 The change in velocity is directed towards the centre (radially inward). For small angles:
 
@@ -705,8 +708,8 @@ In terms of angular velocity ($v = r\omega$):
 $$a_c = \frac{(r\omega)^2}{r} = r\omega^2 = \frac{4\pi^2 r}{T^2}$$
 
 This acceleration is always directed towards the centre of the circle and is perpendicular to the
-Velocity (which is tangential). Since the force is perpendicular to the velocity, the magnetic
-Force does no work and the speed remains constant.
+Velocity (which is tangential). Since the force is perpendicular to the velocity, the magnetic Force
+does no work and the speed remains constant.
 
 ### Derivation: Escape Velocity
 
@@ -723,8 +726,8 @@ $$v_e = \sqrt{\frac{2GM}{R}}$$
 
 ### Derivation: Orbital Speed and Period
 
-For a satellite in circular orbit at radius $r$ around a central body of mass $M$The
-Gravitational force provides the centripetal force:
+For a satellite in circular orbit at radius $r$ around a central body of mass $M$The Gravitational
+force provides the centripetal force:
 
 $$\frac{GMm}{r^2} = \frac{mv^2}{r}$$
 
@@ -742,9 +745,11 @@ For a projectile launched from ground level with speed $u$ at angle $\theta$:
 
 Horizontal: $x = u\cos\theta \cdot t$
 
-Vertical at landing ($y = 0$): $0 = u\sin\theta \cdot t - \frac{1}{2}gt^2 \implies t = \frac{2u\sin\theta}{g}$
+Vertical at landing ($y = 0$):
+$0 = u\sin\theta \cdot t - \frac{1}{2}gt^2 \implies t = \frac{2u\sin\theta}{g}$
 
-Substituting: $R = u\cos\theta \cdot \frac{2u\sin\theta}{g} = \frac{u^2 \cdot 2\sin\theta\cos\theta}{g} = \frac{u^2\sin 2\theta}{g}$
+Substituting:
+$R = u\cos\theta \cdot \frac{2u\sin\theta}{g} = \frac{u^2 \cdot 2\sin\theta\cos\theta}{g} = \frac{u^2\sin 2\theta}{g}$
 
 Maximum range when $\sin 2\theta = 1$I.e., $\theta = 45^\circ$: $R_{\max} = u^2/g$.
 
@@ -754,10 +759,11 @@ Maximum range when $\sin 2\theta = 1$I.e., $\theta = 45^\circ$: $R_{\max} = u^2/
 
 ### Determining Acceleration Due to Gravity Using a Free-Fall Apparatus
 
-**Apparatus:** An electromagnetic release mechanism, a metal ball, a trapdoor, an electronic
-Timer, and a metre rule.
+**Apparatus:** An electromagnetic release mechanism, a metal ball, a trapdoor, an electronic Timer,
+and a metre rule.
 
 **Procedure:**
+
 1. Measure the height $h$ from the bottom of the ball to the trapdoor.
 2. Release the ball electromagnetically; the timer starts.
 3. The ball hits the trapdoor, stopping the timer. Record the time $t$.
@@ -766,6 +772,7 @@ Timer, and a metre rule.
 6. From $h = \frac{1}{2}gt^2$: gradient $= g/2$So $g = 2 \times \mathrm{gradient}$.
 
 **Sources of error:**
+
 - Reaction time of the timer mechanism (minimised by using electronic timing).
 - Air resistance on the ball (use a dense, small ball to minimise).
 - Measurement of height $h$ (measure from the bottom of the ball, not the centre).
@@ -775,23 +782,25 @@ Air resistance effects.
 
 ### Verifying Newton's Second Law Using a Trolley on a Ramp
 
-**Apparatus:** A trolley on a horizontal track, light gates, a set of slotted masses, a string
-Over a pulley, and a data logger.
+**Apparatus:** A trolley on a horizontal track, light gates, a set of slotted masses, a string Over
+a pulley, and a data logger.
 
 **Procedure:**
-1. Attach a string to the trolley, passing over a pulley at the edge of the track, with a
- hanging mass $m$ providing the accelerating force.
+
+1. Attach a string to the trolley, passing over a pulley at the edge of the track, with a hanging
+   mass $m$ providing the accelerating force.
 2. Measure the acceleration $a$ of the trolley using the light gates for different values of the
- total mass ($m + M$Where $M$ is the trolley mass) while keeping the accelerating force
- $mg$ constant.
+   total mass ($m + M$Where $M$ is the trolley mass) while keeping the accelerating force $mg$
+   constant.
 3. Plot $a$ (y-axis) versus $1/(m + M)$ (x-axis). A straight line through the origin confirms
- $a \propto 1/(\mathrm{total\ mass})$.
+   $a \propto 1/(\mathrm{total\ mass})$.
 4. Alternatively, keep the total mass constant and vary the hanging mass. Plot $a$ versus $F = mg$.
- A straight line through the origin confirms $a \propto F$.
+   A straight line through the origin confirms $a \propto F$.
 
 **Precautions:**
-- Compensate for friction by tilting the track slightly so the trolley moves at constant speed
- with no hanging mass.
+
+- Compensate for friction by tilting the track slightly so the trolley moves at constant speed with
+  no hanging mass.
 - Ensure the string is parallel to the track.
 - Use a light string and low-friction pulley.
 
@@ -800,12 +809,13 @@ Over a pulley, and a data logger.
 **Apparatus:** An inclined plane, a block, a protractor, and a set of masses.
 
 **Procedure:**
+
 1. Place the block on the inclined plane and gradually increase the angle.
 2. Record the angle $\theta_c$ at which the block just begins to slide.
 3. At this critical angle: $\tan\theta_c = \mu_s$.
 4. Repeat several times and average.
-5. For the coefficient of kinetic friction, measure the acceleration $a$ of the block sliding
- down the plane: $a = g(\sin\theta - \mu_k\cos\theta)$So $\mu_k = \tan\theta - a/(g\cos\theta)$.
+5. For the coefficient of kinetic friction, measure the acceleration $a$ of the block sliding down
+   the plane: $a = g(\sin\theta - \mu_k\cos\theta)$So $\mu_k = \tan\theta - a/(g\cos\theta)$.
 
 ---
 
@@ -834,6 +844,7 @@ $$g = (9.9 \pm 0.2) \mathrm{ m/s}^2$$
 ### Linearising Projectile Motion Data
 
 To verify $R = u^2\sin 2\theta / g$ at constant launch speed:
+
 - Plot $R$ (y-axis) versus $\sin 2\theta$ (x-axis).
 - A straight line through the origin confirms the relationship.
 - The gradient equals $u^2/g$.
@@ -864,10 +875,9 @@ $$d = \frac{1.5}{5.886} = 0.255 \mathrm{ m}$$
 ### Worked Example 12
 
 A ball is thrown from the top of a building $45 \mathrm{ m}$ high with initial velocity
-$20 \mathrm{ m/s}$ at $30^\circ$ above the horizontal. Find:
-(a) the time taken to reach the ground,
-(b) the horizontal distance from the base of the building where it lands,
-(c) the speed and direction of the ball just before impact.
+$20 \mathrm{ m/s}$ at $30^\circ$ above the horizontal. Find: (a) the time taken to reach the ground,
+(b) the horizontal distance from the base of the building where it lands, (c) the speed and
+direction of the ball just before impact.
 
 <details>
 <summary>Solution</summary>
@@ -882,25 +892,23 @@ $$t = \frac{10.0 \pm \sqrt{100 + 882.9}}{9.81} = \frac{10.0 \pm \sqrt{982.9}}{9.
 
 (b) Horizontal distance: $d = u_x t = 17.32 \times 4.21 = 72.9 \mathrm{ m}$
 
-(c) Vertical velocity at impact: $v_y = u_y - gt = 10.0 - 9.81 \times 4.21 = 10.0 - 41.3 = -31.3 \mathrm{ m/s}$
+(c) Vertical velocity at impact:
+$v_y = u_y - gt = 10.0 - 9.81 \times 4.21 = 10.0 - 41.3 = -31.3 \mathrm{ m/s}$
 
 Horizontal velocity at impact: $v_x = 17.32 \mathrm{ m/s}$ (constant)
 
 $$v = \sqrt{v_x^2 + v_y^2} = \sqrt{17.32^2 + 31.3^2} = \sqrt{300 + 980} = \sqrt{1280} = 35.8 \mathrm{ m/s}$$
 
-Angle below horizontal: $\alpha = \tan^{-1}\left(\frac{31.3}{17.32}\right) = \tan^{-1}(1.807) = 61.0^\circ$ below horizontal
+Angle below horizontal:
+$\alpha = \tan^{-1}\left(\frac{31.3}{17.32}\right) = \tan^{-1}(1.807) = 61.0^\circ$ below horizontal
 
 </details>
 
 ### Worked Example 13
 
-A satellite of mass $500 \mathrm{ kg}$ is in a circular orbit $300 \mathrm{ km}$ above the
-Earth's surface. Calculate:
-(a) the orbital speed,
-(b) the orbital period,
-(c) the gravitational potential energy,
-(d) the kinetic energy,
-(e) the total energy.
+A satellite of mass $500 \mathrm{ kg}$ is in a circular orbit $300 \mathrm{ km}$ above the Earth's
+surface. Calculate: (a) the orbital speed, (b) the orbital period, (c) the gravitational potential
+energy, (d) the kinetic energy, (e) the total energy.
 
 (Earth mass $= 5.97 \times 10^{24} \mathrm{ kg}$Earth radius $= 6.37 \times 10^6 \mathrm{ m}$)
 
@@ -909,15 +917,20 @@ Earth's surface. Calculate:
 
 $$r = 6.37 \times 10^6 + 300 \times 10^3 = 6.67 \times 10^6 \mathrm{ m}$$
 
-(a) $v = \sqrt{\frac{GM}{r}} = \sqrt{\frac{6.67 \times 10^{-11} \times 5.97 \times 10^{24}}{6.67 \times 10^6}} = \sqrt{5.97 \times 10^7} = 7727 \mathrm{ m/s}$
+(a)
+$v = \sqrt{\frac{GM}{r}} = \sqrt{\frac{6.67 \times 10^{-11} \times 5.97 \times 10^{24}}{6.67 \times 10^6}} = \sqrt{5.97 \times 10^7} = 7727 \mathrm{ m/s}$
 
-(b) $T = \frac{2\pi r}{v} = \frac{2\pi \times 6.67 \times 10^6}{7727} = \frac{4.19 \times 10^7}{7727} = 5421 \mathrm{ s} = 90.4 \mathrm{ minutes}$
+(b)
+$T = \frac{2\pi r}{v} = \frac{2\pi \times 6.67 \times 10^6}{7727} = \frac{4.19 \times 10^7}{7727} = 5421 \mathrm{ s} = 90.4 \mathrm{ minutes}$
 
-(c) $E_p = -\frac{GMm}{r} = -\frac{6.67 \times 10^{-11} \times 5.97 \times 10^{24} \times 500}{6.67 \times 10^6} = -\frac{1.99 \times 10^{17}}{6.67 \times 10^6} = -2.98 \times 10^{10} \mathrm{ J}$
+(c)
+$E_p = -\frac{GMm}{r} = -\frac{6.67 \times 10^{-11} \times 5.97 \times 10^{24} \times 500}{6.67 \times 10^6} = -\frac{1.99 \times 10^{17}}{6.67 \times 10^6} = -2.98 \times 10^{10} \mathrm{ J}$
 
-(d) $E_k = \frac{1}{2}mv^2 = \frac{1}{2}(500)(7727)^2 = 250 \times 5.97 \times 10^7 = 1.49 \times 10^{10} \mathrm{ J}$
+(d)
+$E_k = \frac{1}{2}mv^2 = \frac{1}{2}(500)(7727)^2 = 250 \times 5.97 \times 10^7 = 1.49 \times 10^{10} \mathrm{ J}$
 
-(e) $E_{\mathrm{total}} = E_k + E_p = 1.49 \times 10^{10} + (-2.98 \times 10^{10}) = -1.49 \times 10^{10} \mathrm{ J}$
+(e)
+$E_{\mathrm{total}} = E_k + E_p = 1.49 \times 10^{10} + (-2.98 \times 10^{10}) = -1.49 \times 10^{10} \mathrm{ J}$
 
 Note: For a circular orbit, $E_{\mathrm{total}} = -E_k = \frac{1}{2}E_p$.
 
@@ -935,14 +948,14 @@ Using light gates at different distances from the starting point.
 
 | Distance from start (m) | Speed (m/s) |
 | ----------------------- | ----------- |
-| 0.20 | 1.10 |
-| 0.40 | 1.58 |
-| 0.60 | 1.95 |
-| 0.80 | 2.25 |
-| 1.00 | 2.52 |
+| 0.20                    | 1.10        |
+| 0.40                    | 1.58        |
+| 0.60                    | 1.95        |
+| 0.80                    | 2.25        |
+| 1.00                    | 2.52        |
 
-(a) Plot a graph of $v^2$ (y-axis) against distance $s$ (x-axis). Determine the acceleration
-From the gradient.
+(a) Plot a graph of $v^2$ (y-axis) against distance $s$ (x-axis). Determine the acceleration From
+the gradient.
 
 (b) Calculate the theoretical acceleration for a frictionless incline and compare it with the
 Experimental value. Hence determine the coefficient of kinetic friction.
@@ -957,16 +970,17 @@ Experimental value. Hence determine the coefficient of kinetic friction.
 (a)
 
 | $s$ (m) | $v^2$ (m$^2$/s$^2$) |
-| ------- | -------------------- |
-| 0.20 | $1.10^2 = 1.21$ |
-| 0.40 | $1.58^2 = 2.50$ |
-| 0.60 | $1.95^2 = 3.80$ |
-| 0.80 | $2.25^2 = 5.06$ |
-| 1.00 | $2.52^2 = 6.35$ |
+| ------- | ------------------- |
+| 0.20    | $1.10^2 = 1.21$     |
+| 0.40    | $1.58^2 = 2.50$     |
+| 0.60    | $1.95^2 = 3.80$     |
+| 0.80    | $2.25^2 = 5.06$     |
+| 1.00    | $2.52^2 = 6.35$     |
 
 From $v^2 = u^2 + 2as$ with $u = 0$: $v^2 = 2as$.
 
-Gradient $= \Delta v^2 / \Delta s \approx (6.35 - 1.21)/(1.00 - 0.20) = 5.14/0.80 = 6.42 \mathrm{ m/s}^2$
+Gradient
+$= \Delta v^2 / \Delta s \approx (6.35 - 1.21)/(1.00 - 0.20) = 5.14/0.80 = 6.42 \mathrm{ m/s}^2$
 
 Since gradient $= 2a$: $a = 6.42/2 = 3.21 \mathrm{ m/s}^2$
 
@@ -980,11 +994,12 @@ $$3.21 = 3.36 - \mu_k \times 9.81 \times \cos 20^\circ = 3.36 - 9.22\mu_k$$
 
 $$\mu_k = \frac{3.36 - 3.21}{9.22} = \frac{0.15}{9.22} = 0.016$$
 
-(c) From the kinematic equation $v^2 = u^2 + 2as$Plotting $v^2$ against $s$ (with $u = 0$)
-Gives a straight line through the origin with gradient $2a$. A plot of $v$ against $s$ would be
-A curve ($v = \sqrt{2as}$), which is harder to analyse.
+(c) From the kinematic equation $v^2 = u^2 + 2as$Plotting $v^2$ against $s$ (with $u = 0$) Gives a
+straight line through the origin with gradient $2a$. A plot of $v$ against $s$ would be A curve
+($v = \sqrt{2as}$), which is harder to analyse.
 
 (d) Two improvements:
+
 1. Repeat each measurement several times and use the average to reduce random errors.
 2. Use a data logger with higher time resolution (smaller uncertainty in timing).
 
@@ -993,8 +1008,8 @@ A curve ($v = \sqrt{2as}$), which is harder to analyse.
 ### Question 2 (DSE Structured)
 
 Two objects, A ($2.0 \mathrm{ kg}$) and B ($3.0 \mathrm{ kg}$), are connected by a light
-Inextensible string over a smooth pulley. Object A rests on a rough horizontal table
-($\mu_k = 0.3$) and object B hangs freely.
+Inextensible string over a smooth pulley. Object A rests on a rough horizontal table ($\mu_k = 0.3$)
+and object B hangs freely.
 
 (a) Draw free body diagrams for both objects.
 
@@ -1002,18 +1017,19 @@ Inextensible string over a smooth pulley. Object A rests on a rough horizontal t
 
 (c) Object B starts from rest. Find the speed of the system after B has fallen $0.80 \mathrm{ m}$.
 
-(d) If the string is cut just as B reaches the floor (having fallen $0.80 \mathrm{ m}$), how
-Far does A slide before stopping?
+(d) If the string is cut just as B reaches the floor (having fallen $0.80 \mathrm{ m}$), how Far
+does A slide before stopping?
 
 <details>
 <summary>Solution</summary>
 
-(a) Object A: Weight $2g$ down, normal reaction $N$ up, tension $T$ right, friction $f$ left.
-Object B: Weight $3g$ down, tension $T$ up.
+(a) Object A: Weight $2g$ down, normal reaction $N$ up, tension $T$ right, friction $f$ left. Object
+B: Weight $3g$ down, tension $T$ up.
 
 (b) For B (taking down as positive): $3g - T = 3a \quad (1)$
 
-For A (taking right as positive): $T - f = 2a$Where $f = \mu_k N = \mu_k \times 2g = 0.3 \times 2g = 0.6g$
+For A (taking right as positive): $T - f = 2a$Where
+$f = \mu_k N = \mu_k \times 2g = 0.3 \times 2g = 0.6g$
 
 $$T - 0.6g = 2a \quad (2)$$
 
@@ -1027,8 +1043,8 @@ From (2): $T = 2a + 0.6g = 2(4.71) + 0.6(9.81) = 9.42 + 5.89 = 15.3 \mathrm{ N}$
 
 $$v = \sqrt{7.54} = 2.75 \mathrm{ m/s}$$
 
-(d) After the string is cut, A slides with initial speed $2.75 \mathrm{ m/s}$ and decelerates due
-To friction only:
+(d) After the string is cut, A slides with initial speed $2.75 \mathrm{ m/s}$ and decelerates due To
+friction only:
 
 $$a = -\frac{f}{m} = -\frac{\mu_k mg}{m} = -\mu_k g = -0.3 \times 9.81 = -2.94 \mathrm{ m/s}^2$$
 
@@ -1044,18 +1060,18 @@ A slides $1.28 \mathrm{ m}$ before stopping.
 
 (a) State the conditions for an object to be in equilibrium.
 
-(b) A uniform beam of weight $80 \mathrm{ N}$ and length $4.0 \mathrm{ m}$ is hinged at one
-End (point P) and supported by a cable attached to the other end (point Q). The cable makes an
-Angle of $30^\circ$ with the beam. A $150 \mathrm{ N}$ weight hangs from a point $1.5 \mathrm{ m}$
-From P.
+(b) A uniform beam of weight $80 \mathrm{ N}$ and length $4.0 \mathrm{ m}$ is hinged at one End
+(point P) and supported by a cable attached to the other end (point Q). The cable makes an Angle of
+$30^\circ$ with the beam. A $150 \mathrm{ N}$ weight hangs from a point $1.5 \mathrm{ m}$ From P.
 
-(i) Calculate the tension in the cable.
-(ii) Calculate the magnitude and direction of the force exerted by the hinge on the beam.
+(i) Calculate the tension in the cable. (ii) Calculate the magnitude and direction of the force
+exerted by the hinge on the beam.
 
 <details>
 <summary>Solution</summary>
 
 (a) For an object to be in equilibrium:
+
 1. The net force on the object must be zero ($\sum \vec{F} = 0$).
 2. The net moment (torque) about any point must be zero ($\sum \tau = 0$).
 
@@ -1073,7 +1089,8 @@ $$2.0T = 385 \implies T = 192.5 \mathrm{ N}$$
 
 Vertical: $H_y + T\sin 30^\circ = 80 + 150$
 
-$$H_y + 192.5 \times 0.5 = 230 \implies H_y + 96.25 = 230 \implies H_y = 133.75 \mathrm{ N}$$ (upward)
+$$H_y + 192.5 \times 0.5 = 230 \implies H_y + 96.25 = 230 \implies H_y = 133.75 \mathrm{ N}$$
+(upward)
 
 Horizontal: $H_x = T\cos 30^\circ = 192.5 \times 0.866 = 166.7 \mathrm{ N}$ (away from the wall)
 
@@ -1088,8 +1105,8 @@ Angle above horizontal: $\alpha = \tan^{-1}(133.75/166.7) = \tan^{-1}(0.803) = 3
 A $500 \mathrm{ g}$ ball is attached to a string of length $0.80 \mathrm{ m}$ and swung in a
 Vertical circle.
 
-(a) The ball has speed $6.0 \mathrm{ m/s}$ at the lowest point. Calculate the tension in the
-String at this point.
+(a) The ball has speed $6.0 \mathrm{ m/s}$ at the lowest point. Calculate the tension in the String
+at this point.
 
 (b) Calculate the speed of the ball at the highest point.
 
@@ -1097,8 +1114,8 @@ String at this point.
 
 (d) Calculate the minimum speed at the lowest point for the ball to complete the full circle.
 
-(e) Explain why the ball cannot complete the full circle if the string is replaced by a light
-Rod (consider what happens at the top).
+(e) Explain why the ball cannot complete the full circle if the string is replaced by a light Rod
+(consider what happens at the top).
 
 <details>
 <summary>Solution</summary>
@@ -1107,7 +1124,8 @@ Rod (consider what happens at the top).
 
 $$T_{\mathrm{bottom}} = mg + \frac{mv_{\mathrm{bottom}}^2}{r} = 0.5 \times 9.81 + \frac{0.5 \times 36}{0.80} = 4.905 + 22.5 = 27.4 \mathrm{ N}$$
 
-(b) Energy conservation between lowest and highest points (height difference $= 2r = 1.6 \mathrm{ m}$):
+(b) Energy conservation between lowest and highest points (height difference
+$= 2r = 1.6 \mathrm{ m}$):
 
 $$\frac{1}{2}mv_{\mathrm{bottom}}^2 = \frac{1}{2}mv_{\mathrm{top}}^2 + mg(2r)$$
 
@@ -1123,8 +1141,8 @@ $$v_{\mathrm{top}} = \sqrt{4.6} = 2.14 \mathrm{ m/s}$$
 
 $$T_{\mathrm{top}} = \frac{mv_{\mathrm{top}}^2}{r} - mg = \frac{0.5 \times 4.6}{0.80} - 4.905 = 2.875 - 4.905 = -2.03 \mathrm{ N}$$
 
-Since the tension is negative, the string goes slack before the ball reaches the top. The ball
-Does **not** complete the full circle.
+Since the tension is negative, the string goes slack before the ball reaches the top. The ball Does
+**not** complete the full circle.
 
 (d) For the ball to just complete the circle: $T_{\mathrm{top}} = 0$ at the top, so
 $v_{\mathrm{top}} = \sqrt{gr} = \sqrt{9.81 \times 0.80} = \sqrt{7.848} = 2.80 \mathrm{ m/s}$
@@ -1133,12 +1151,13 @@ $$\frac{1}{2}mv_{\mathrm{bottom}}^2 = \frac{1}{2}m(gr) + mg(2r) = \frac{1}{2}mgr
 
 $$v_{\mathrm{bottom}} = \sqrt{5gr} = \sqrt{5 \times 9.81 \times 0.80} = \sqrt{39.24} = 6.26 \mathrm{ m/s}$$
 
-(e) With a light rod, the rod can push as well as pull. At the top, even if $v_{\mathrm{top}} < \sqrt{gr}$
-The rod can exert a push (compression) to provide the additional centripetal force. The ball will
-Still complete the circle as long as it reaches the top with any speed (the rod supports it).
+(e) With a light rod, the rod can push as well as pull. At the top, even if
+$v_{\mathrm{top}} < \sqrt{gr}$ The rod can exert a push (compression) to provide the additional
+centripetal force. The ball will Still complete the circle as long as it reaches the top with any
+speed (the rod supports it).
 
-With a string, the string can only pull (tension $\geq 0$). If the speed at the top is too low,
-The string goes slack and the ball falls.
+With a string, the string can only pull (tension $\geq 0$). If the speed at the top is too low, The
+string goes slack and the ball falls.
 
 </details>
 
@@ -1159,7 +1178,8 @@ Gravitational force on the spacecraft.
 <details>
 <summary>Solution</summary>
 
-(a) $g_{\mathrm{Moon}} = \frac{GM}{R^2} = \frac{6.67 \times 10^{-11} \times 7.35 \times 10^{22}}{(1.74 \times 10^6)^2}$
+(a)
+$g_{\mathrm{Moon}} = \frac{GM}{R^2} = \frac{6.67 \times 10^{-11} \times 7.35 \times 10^{22}}{(1.74 \times 10^6)^2}$
 
 $$g_{\mathrm{Moon}} = \frac{4.90 \times 10^{12}}{3.03 \times 10^{12}} = 1.62 \mathrm{ N/kg}$$
 
@@ -1167,14 +1187,15 @@ $$g_{\mathrm{Moon}} = \frac{4.90 \times 10^{12}}{3.03 \times 10^{12}} = 1.62 \ma
 
 $$F = \frac{GMm}{r^2} = \frac{6.67 \times 10^{-11} \times 7.35 \times 10^{22} \times 1000}{(2.24 \times 10^6)^2} = \frac{4.90 \times 10^{15}}{5.02 \times 10^{12}} = 976 \mathrm{ N}$$
 
-(c) $v_e = \sqrt{\frac{2GM}{R}} = \sqrt{\frac{2 \times 6.67 \times 10^{-11} \times 7.35 \times 10^{22}}{1.74 \times 10^6}} = \sqrt{\frac{9.80 \times 10^{12}}{1.74 \times 10^6}} = \sqrt{5.63 \times 10^6} = 2370 \mathrm{ m/s}$
+(c)
+$v_e = \sqrt{\frac{2GM}{R}} = \sqrt{\frac{2 \times 6.67 \times 10^{-11} \times 7.35 \times 10^{22}}{1.74 \times 10^6}} = \sqrt{\frac{9.80 \times 10^{12}}{1.74 \times 10^6}} = \sqrt{5.63 \times 10^6} = 2370 \mathrm{ m/s}$
 
-(d) The Moon's escape velocity ($2370 \mathrm{ m/s}$) is relatively low. Gas molecules in the
-Upper atmosphere have a range of speeds described by the Maxwell-Boltzmann distribution. A
-Significant fraction of molecules (especially lighter ones like hydrogen and helium) have speeds
-Exceeding the escape velocity. Over geological time, these molecules escape into space, and the
-Moon cannot retain an atmosphere. The Earth's much higher escape velocity ($11200 \mathrm{ m/s}$)
-Means very few molecules have sufficient speed to escape.
+(d) The Moon's escape velocity ($2370 \mathrm{ m/s}$) is relatively low. Gas molecules in the Upper
+atmosphere have a range of speeds described by the Maxwell-Boltzmann distribution. A Significant
+fraction of molecules (especially lighter ones like hydrogen and helium) have speeds Exceeding the
+escape velocity. Over geological time, these molecules escape into space, and the Moon cannot retain
+an atmosphere. The Earth's much higher escape velocity ($11200 \mathrm{ m/s}$) Means very few
+molecules have sufficient speed to escape.
 
 </details>
 
@@ -1184,14 +1205,13 @@ Means very few molecules have sufficient speed to escape.
 
 ### Extended Problem 1: Banked Curve with Friction
 
-A road curve of radius $80 \mathrm{ m}$ is banked at $15^\circ$. The coefficient of static
-Friction between tyres and road is $0.40$.
+A road curve of radius $80 \mathrm{ m}$ is banked at $15^\circ$. The coefficient of static Friction
+between tyres and road is $0.40$.
 
-(a) Calculate the maximum speed at which a car can negotiate the curve without sliding up the
-Bank.
+(a) Calculate the maximum speed at which a car can negotiate the curve without sliding up the Bank.
 
-(b) Calculate the minimum speed at which the car can negotiate the curve without sliding down
-The bank.
+(b) Calculate the minimum speed at which the car can negotiate the curve without sliding down The
+bank.
 
 <details>
 <summary>Solution</summary>
@@ -1214,17 +1234,17 @@ $$v_{\max} = \sqrt{587} = 24.2 \mathrm{ m/s}$$
 
 $$v_{\min}^2 = rg\frac{\sin\theta - \mu_s\cos\theta}{\cos\theta + \mu_s\sin\theta} = 80 \times 9.81 \times \frac{0.259 - 0.386}{0.966 + 0.104} = 784.8 \times \frac{-0.127}{1.070}$$
 
-Since the numerator is negative, $v_{\min}^2 < 0$Meaning the car will not slide down the bank
-At any speed (the banking alone provides enough centripetal force for stationary or very slow
-Speeds). The minimum speed is effectively $0$.
+Since the numerator is negative, $v_{\min}^2 < 0$Meaning the car will not slide down the bank At any
+speed (the banking alone provides enough centripetal force for stationary or very slow Speeds). The
+minimum speed is effectively $0$.
 
 </details>
 
 ### Extended Problem 2: Satellite Orbit Transfer
 
-A satellite of mass $500 \mathrm{ kg}$ is in a circular orbit of radius $7.0 \times 10^6 \mathrm{ m}$
-Around the Earth. The satellite needs to transfer to a higher circular orbit of radius
-$7.5 \times 10^6 \mathrm{ m}$.
+A satellite of mass $500 \mathrm{ kg}$ is in a circular orbit of radius
+$7.0 \times 10^6 \mathrm{ m}$ Around the Earth. The satellite needs to transfer to a higher circular
+orbit of radius $7.5 \times 10^6 \mathrm{ m}$.
 
 (a) Calculate the orbital speed in the lower orbit.
 
@@ -1237,9 +1257,11 @@ $7.5 \times 10^6 \mathrm{ m}$.
 <details>
 <summary>Solution</summary>
 
-(a) $v_1 = \sqrt{\frac{GM}{r_1}} = \sqrt{\frac{6.67 \times 10^{-11} \times 5.97 \times 10^{24}}{7.0 \times 10^6}} = \sqrt{5.69 \times 10^7} = 7544 \mathrm{ m/s}$
+(a)
+$v_1 = \sqrt{\frac{GM}{r_1}} = \sqrt{\frac{6.67 \times 10^{-11} \times 5.97 \times 10^{24}}{7.0 \times 10^6}} = \sqrt{5.69 \times 10^7} = 7544 \mathrm{ m/s}$
 
-(b) $v_2 = \sqrt{\frac{GM}{r_2}} = \sqrt{\frac{6.67 \times 10^{-11} \times 5.97 \times 10^{24}}{7.5 \times 10^6}} = \sqrt{5.31 \times 10^7} = 7287 \mathrm{ m/s}$
+(b)
+$v_2 = \sqrt{\frac{GM}{r_2}} = \sqrt{\frac{6.67 \times 10^{-11} \times 5.97 \times 10^{24}}{7.5 \times 10^6}} = \sqrt{5.31 \times 10^7} = 7287 \mathrm{ m/s}$
 
 (c) The energy in a circular orbit: $E = -\frac{GMm}{2r}$
 
@@ -1247,8 +1269,7 @@ $$E_1 = -\frac{6.67 \times 10^{-11} \times 5.97 \times 10^{24} \times 500}{2 \ti
 
 $$E_2 = -\frac{1.99 \times 10^{17}}{1.5 \times 10^7} = -1.33 \times 10^{10} \mathrm{ J}$$
 
-Energy required: $\Delta E = E_2 - E_1 = -1.33 \times 10^{10} - (-1.42 \times 10^{10}) = 9.0 \times 10^8 \mathrm{ J}$
+Energy required:
+$\Delta E = E_2 - E_1 = -1.33 \times 10^{10} - (-1.42 \times 10^{10}) = 9.0 \times 10^8 \mathrm{ J}$
 
 </details>
-
-

@@ -1,12 +1,15 @@
 ---
 title: Reference And Lifetime
-description: "C++: Reference And Lifetime — 1. Architectural Implementation; Assembly Inspection; Memory Layout (Class Members); 2. Nullability and Invariants."
+description:
+  'C++: Reference And Lifetime — 1. Architectural Implementation; Assembly Inspection; Memory Layout
+  (Class Members); 2. Nullability and Invariants.'
 date: 2026-01-03T04:13:20.675Z
 tags:
   - cpp
 categories:
   - cpp
 ---
+
 Import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 A C++ Reference (`T&`) is an alias for an existing object. Unlike pointers, references are not
@@ -65,7 +68,7 @@ struct PtrWrapper {
 
 - `sizeof(RefWrapper)` == `sizeof(int*)` (8 bytes on 64-bit systems).
 - **Implication:** A reference member prevents the compiler from generating a default assignment
- operator because references cannot be "reseated" (rebound to a new address) after initialization.
+  operator because references cannot be "reseated" (rebound to a new address) after initialization.
 
 ## 2. Nullability and Invariants
 
@@ -115,7 +118,7 @@ Pointers. Since the compiler can assume a reference is always valid, it can:
 1. **Eliminate null checks:** The compiler knows `ref` is never null.
 2. **Speculate on dereference:** It can hoist loads past branches.
 3. **Prove aliasing:** Two references of different types cannot alias (strict aliasing rule [N4950
- §6.9.2.1]).
+   §6.9.2.1]).
 
 ```cpp
 #include <iostream>
@@ -248,8 +251,8 @@ void scope_trap() {
 }
 ```
 
-In `scope_trap`The C++ Standard dictates that the temporary `Wrapper` is destroyed at the end of
-The full expression. The lifetime extension applies to the result of `.val` (which is an `int`), but
+In `scope_trap`The C++ Standard dictates that the temporary `Wrapper` is destroyed at the end of The
+full expression. The lifetime extension applies to the result of `.val` (which is an `int`), but
 That `int` resides inside the `Wrapper`. When `Wrapper` dies, the `int` dies.
 
 ### Lifetime Extension via Function Return
@@ -295,8 +298,8 @@ To store references in containers, the architecture requires `std::reference_wra
 
 ### Implementation
 
-`std::reference_wrapper` is a copyable class that holds a pointer `T*` but exposes an
-Interface that mimics `T&`.
+`std::reference_wrapper` is a copyable class that holds a pointer `T*` but exposes an Interface that
+mimics `T&`.
 
 ```cpp
 #include <vector>
@@ -356,12 +359,12 @@ int main() {
 
 When designing APIs, choose the parameter type based on ownership and nullability contracts.
 
-| Semantic Requirement | Type | Implementation Cost |
+| Semantic Requirement           | Type       | Implementation Cost                |
 | :----------------------------- | :--------- | :--------------------------------- |
-| **Input Only (Read-Only)** | `const T&` | Pointer pass (8 bytes). Zero copy. |
-| **Input/Output (Mutation)** | `T&` | Pointer pass (8 bytes). |
-| **Optional Input (Nullable)** | `const T*` | Pointer pass. Requires null check. |
-| **Optional Output (Nullable)** | `T*` | Pointer pass. Requires null check. |
+| **Input Only (Read-Only)**     | `const T&` | Pointer pass (8 bytes). Zero copy. |
+| **Input/Output (Mutation)**    | `T&`       | Pointer pass (8 bytes).            |
+| **Optional Input (Nullable)**  | `const T*` | Pointer pass. Requires null check. |
+| **Optional Output (Nullable)** | `T*`       | Pointer pass. Requires null check. |
 
 | **Store Reference in Container** | `std::reference_wrapper<T>` | Pointer size storage. | |
 **Reset/Reseat Capability** | `T*` | Mutable pointer. |
@@ -402,10 +405,10 @@ Argument deduction [N4950 §12.2.2.1]:
 
 | Template Argument | Substituted Type | Collapsed Type |
 | ----------------- | ---------------- | -------------- |
-| `T = int&` | `int& &&` | `int&` |
-| `T = int` | `int&&` | `int&&` |
-| `T = const int&` | `const int& &&` | `const int&` |
-| `T = const int` | `const int&&` | `const int&&` |
+| `T = int&`        | `int& &&`        | `int&`         |
+| `T = int`         | `int&&`          | `int&&`        |
+| `T = const int&`  | `const int& &&`  | `const int&`   |
+| `T = const int`   | `const int&&`    | `const int&&`  |
 
 The rule: a reference to a reference collapses to the lvalue reference. Only an rvalue reference to
 An rvalue reference remains an rvalue reference.

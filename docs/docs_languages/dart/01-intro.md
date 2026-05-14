@@ -1,10 +1,13 @@
 ---
 id: intro
 title: Introduction to Dart & Flutter
-description: "Introduction to Dart & Flutter — Abstract; Dart Introduction; Flutter Introduction; Where Dart Runs with worked examples and exam-style questions."
+description:
+  'Introduction to Dart & Flutter — Abstract; Dart Introduction; Flutter Introduction; Where Dart
+  Runs with worked examples and exam-style questions.'
 slug: intro
 sidebar_position: 1
 ---
+
 ## Abstract
 
 This resource is created as a aggregation of best practices in Dart and Flutter listed as a
@@ -47,12 +50,12 @@ Developing Flutter relies heavily on widget compositions and core primitives.
 
 Dart is a general-purpose language with four primary compilation targets:
 
-| Target | Compilation | Use Case |
+| Target               | Compilation                           | Use Case                                            |
 | -------------------- | ------------------------------------- | --------------------------------------------------- |
-| **Native (AOT)** | Ahead-of-Time to ARM/x64 machine code | Mobile (iOS/Android), desktop (macOS/Windows/Linux) |
-| **Web (WASM/js)** | dart2wasm or dart2js | Browser applications |
-| **Server (AOT/JIT)** | Native AOT or VM JIT | Backend services, CLI tools |
-| **Flutter runtime** | AOT (release) or JIT (debug) | Cross-platform GUI applications |
+| **Native (AOT)**     | Ahead-of-Time to ARM/x64 machine code | Mobile (iOS/Android), desktop (macOS/Windows/Linux) |
+| **Web (WASM/js)**    | dart2wasm or dart2js                  | Browser applications                                |
+| **Server (AOT/JIT)** | Native AOT or VM JIT                  | Backend services, CLI tools                         |
+| **Flutter runtime**  | AOT (release) or JIT (debug)          | Cross-platform GUI applications                     |
 
 The dual JIT/AOT strategy is the defining architectural decision in Dart. During development, the VM
 Uses JIT compilation with **hot reload** — the VM injects updated source into the running process
@@ -101,38 +104,38 @@ Via user-defined operators. It does not support multiple inheritance or raw poin
 
 ## Dart vs Kotlin vs Swift
 
-| Feature | Dart | Kotlin | Swift |
+| Feature          | Dart                                | Kotlin                         | Swift                           |
 | ---------------- | ----------------------------------- | ------------------------------ | ------------------------------- |
-| Null safety | Sound, default | Sound, default | Sound, optional |
-| Async model | `Future`/`Stream` + `async`/`await` | Coroutines + `suspend` | `async`/`await` + `Sendable` |
-| Concurrency | Isolates (no shared memory) | Coroutines + threads | Structured concurrency (actors) |
-| Compilation | JIT (dev) + AOT (release) | JVM + Kotlin/Native (AOT) | AOT (native) + JIT (REPL) |
-| Pattern matching | 3.0+ (patterns, guards) | 1.7+ (exhaustive `when`) | Swift 5.7+ |
-| Memory | GC | GC (JVM) / ARC (Native) | ARC (manual optional) |
-| Primary use | Flutter, server | Android, server, multiplatform | Apple platforms, server |
-| Package manager | `pub` | `gradle` / `maven` | `swift-package-manager` |
+| Null safety      | Sound, default                      | Sound, default                 | Sound, optional                 |
+| Async model      | `Future`/`Stream` + `async`/`await` | Coroutines + `suspend`         | `async`/`await` + `Sendable`    |
+| Concurrency      | Isolates (no shared memory)         | Coroutines + threads           | Structured concurrency (actors) |
+| Compilation      | JIT (dev) + AOT (release)           | JVM + Kotlin/Native (AOT)      | AOT (native) + JIT (REPL)       |
+| Pattern matching | 3.0+ (patterns, guards)             | 1.7+ (exhaustive `when`)       | Swift 5.7+                      |
+| Memory           | GC                                  | GC (JVM) / ARC (Native)        | ARC (manual optional)           |
+| Primary use      | Flutter, server                     | Android, server, multiplatform | Apple platforms, server         |
+| Package manager  | `pub`                               | `gradle` / `maven`             | `swift-package-manager`         |
 
 Key differences for systems engineers:
 
 - **Isolates vs threads**: Dart's isolates have separate heaps. No mutexes, no data races, no shared
- mutable state. Communication is via message passing (`SendPort`/`ReceivePort`). This is
- conceptually similar to Erlang processes or Rust's message-passing concurrency, but simpler (no
- ownership system).
+  mutable state. Communication is via message passing (`SendPort`/`ReceivePort`). This is
+  conceptually similar to Erlang processes or Rust's message-passing concurrency, but simpler (no
+  ownership system).
 - **AOT by default**: Unlike Kotlin (JVM), Dart produces standalone native binaries without a
- runtime VM dependency.
+  runtime VM dependency.
 - **Single vendor**: Dart is primarily maintained by Google. Kotlin has JetBrains + Google, Swift
- has Apple + community.
+  has Apple + community.
 
 ## Why Learn Dart
 
 If you are a systems engineer, Dart is worth learning for practical reasons:
 
 1. **Flutter is dominant in cross-platform mobile**. If your org ships to iOS and Android, Flutter
- is the most productive single-codebase option.
+   is the most productive single-codebase option.
 2. **The language is small**. Dart's spec fits in a few hundred pages. You can be productive in a
- weekend.
+   weekend.
 3. **Native performance**. AOT-compiled Dart does not have a GC pause problem in practice
- (generational, short-pause collector). Startup time is competitive with Go.
+   (generational, short-pause collector). Startup time is competitive with Go.
 4. **Server-side is viable**. If you want one language for mobile + backend, Dart works.
 
 ## Hello World Deep Dive
@@ -146,13 +149,13 @@ void main() {
 This is a complete Dart program. Let's dissect it:
 
 - **`void`** — The return type. `main()` returns nothing. Dart supports `void``int``double`
- `bool``String``Null`And user-defined types. `void` is a special type indicating no value.
+  `bool``String``Null`And user-defined types. `void` is a special type indicating no value.
 - **`main()`** — The entry point. The Dart VM looks for a top-level function named `main`. It can
- optionally accept `List<String> args` for command-line arguments.
+  optionally accept `List<String> args` for command-line arguments.
 - **`print()`** — A top-level function from `dart:core` (implicitly imported). Writes to stdout with
- a newline.
+  a newline.
 - **No semicolon omission** — Semicolons are required. Unlike JavaScript's ASI, Dart has no
- automatic semicolon insertion.
+  automatic semicolon insertion.
 
 ### A More Complete Example
 
@@ -183,22 +186,22 @@ Execution — all within a single file.
 ## Typical Toolchain Required
 
 - Dart SDK
- - Includes VM, core libraries, analyzer, and Dart CLI
+- Includes VM, core libraries, analyzer, and Dart CLI
 - Flutter SDK
- - Provides Impeller support and Flutter CLI
+- Provides Impeller support and Flutter CLI
 - Pub
- - Package manager similar to `conan` for C++
+- Package manager similar to `conan` for C++
 
 ## Common Pitfalls
 
 - **Confusing `dynamic` with `Object`**: `dynamic` disables static type checking entirely. `Object`
- is the top type but still enforces type checks at runtime. Prefer `Object?` over `dynamic` unless
- you genuinely need no static checking.
+  is the top type but still enforces type checks at runtime. Prefer `Object?` over `dynamic` unless
+  you genuinely need no static checking.
 - **Assuming Dart has threads**: It does not. Isolates are not threads. You cannot share memory
- between isolates. If you need shared-memory parallelism, Dart is the wrong tool — use Rust, C++,
- or Go.
+  between isolates. If you need shared-memory parallelism, Dart is the wrong tool — use Rust, C++,
+  or Go.
 - **Ignoring tree-shaking**: The AOT compiler only includes code reachable from `main()`. If you use
- reflection or `dynamic` dispatch extensively, tree-shaking cannot work and binary size balloons.
+  reflection or `dynamic` dispatch extensively, tree-shaking cannot work and binary size balloons.
 
 ## Concurrency Model: Isolates
 
@@ -266,16 +269,16 @@ Approaches. For coarse-grained parallelism (e.g., parsing a large JSON blob), is
 Dart uses a generational garbage collector with two generations: new space and old space.
 
 - **New space**: Short-lived objects. Allocated in a semi-space collector. Collection is fast
- (sub-millisecond).
+  (sub-millisecond).
 - **Old space**: Objects that survive several new-space collections are promoted. Uses a mark-sweep
- algorithm.
+  algorithm.
 
 The GC runs concurrently with the mutator (application code) for old-space collections, meaning
 Pause times are under 1ms even for large heaps. This is a practical advantage over JVM's
 Stop-the-world GC pauses.
 
-You have no direct control over GC. There is no `System.gc()`No `free()`No `autoreleasepool`.
-The GC is tuned for low-latency UI applications, which means it favors pause time over throughput.
+You have no direct control over GC. There is no `System.gc()`No `free()`No `autoreleasepool`. The GC
+is tuned for low-latency UI applications, which means it favors pause time over throughput.
 
 ## Asynchronous Programming
 
@@ -298,7 +301,7 @@ Key points:
 - `Future` represents a value that will be available later (similar to a JavaScript `Promise`).
 - `Stream` represents a sequence of asynchronous events (similar to an `Observable` in RxJS).
 - The event loop is single-threaded within each isolate. `await` yields to the event loop; it does
- not create a thread.
+  not create a thread.
 - `async` functions return a `Future` synchronously. The function body executes asynchronously.
 
 ```dart
@@ -324,17 +327,17 @@ void main() {
 
 The central package repository is [pub.dev](https://pub.dev). Notable packages:
 
-| Package | Purpose |
+| Package                 | Purpose                                |
 | ----------------------- | -------------------------------------- |
-| `http` | HTTP client |
-| `shelf` | Server-side HTTP middleware framework |
-| `freezed` | Immutable data classes with codegen |
-| `json_serializable` | JSON serialization codegen |
-| `drift` | Type-safe SQL database (ORM) |
-| `riverpod` | State management (Flutter) |
-| `dio` | Advanced HTTP client with interceptors |
-| `get_it` / `injectable` | Dependency injection |
-| `args` | Command-line argument parsing |
+| `http`                  | HTTP client                            |
+| `shelf`                 | Server-side HTTP middleware framework  |
+| `freezed`               | Immutable data classes with codegen    |
+| `json_serializable`     | JSON serialization codegen             |
+| `drift`                 | Type-safe SQL database (ORM)           |
+| `riverpod`              | State management (Flutter)             |
+| `dio`                   | Advanced HTTP client with interceptors |
+| `get_it` / `injectable` | Dependency injection                   |
+| `args`                  | Command-line argument parsing          |
 
 ### Build System: build_runner
 
@@ -357,13 +360,13 @@ Sublime Text all have Dart LSP support.
 
 ## Version History
 
-| Version | Year | Key Feature |
+| Version | Year | Key Feature                              |
 | ------- | ---- | ---------------------------------------- |
-| 1.0 | 2013 | Initial release |
-| 2.0 | 2018 | Dart Platform (native AOT), Flutter beta |
-| 2.12 | 2021 | Sound null safety |
-| 3.0 | 2023 | Records, patterns, sealed classes, Wasm |
-| 3.5 | 2024 | Improved interop, macros (experimental) |
+| 1.0     | 2013 | Initial release                          |
+| 2.0     | 2018 | Dart Platform (native AOT), Flutter beta |
+| 2.12    | 2021 | Sound null safety                        |
+| 3.0     | 2023 | Records, patterns, sealed classes, Wasm  |
+| 3.5     | 2024 | Improved interop, macros (experimental)  |
 
 Dart follows a 6-week release cycle for stable channel releases. Each release is
 Backward-compatible.

@@ -1,11 +1,14 @@
 ---
 title: TypeScript with React
-description: "TypeScript with React — Typing React Components; Function Components; `FC` Type; Component Typing Comparison with worked examples and exam-style questions."
+description:
+  'TypeScript with React — Typing React Components; Function Components; `FC` Type; Component Typing
+  Comparison with worked examples and exam-style questions.'
 slug: typescript-with-react
 date: 2026-04-22T00:00:00.000Z
 tags: [TypeScript]
 categories: [TypeScript]
 ---
+
 ## Typing React Components
 
 ### Function Components
@@ -73,12 +76,12 @@ function Card({ title, children }: CardProps) {
 
 ### Component Typing Comparison
 
-| Approach | `children` | Pros | Cons |
+| Approach                               | `children`           | Pros                            | Cons                                            |
 | -------------------------------------- | -------------------- | ------------------------------- | ----------------------------------------------- |
-| `FC<Props>` | Implicit | Concise, includes ref typing | Implicit children, deprecated in React 18 types |
-| `(props: Props) => JSX.Element` | Explicit if declared | Full control, modern convention | Must type return explicitly |
-| `(props: Props) => React.ReactElement` | Explicit if declared | Precise return type | Does not allow `null` or `string` returns |
-| `function Component(props: Props)` | Explicit if declared | Readable, supports overloads | Verbose |
+| `FC<Props>`                            | Implicit             | Concise, includes ref typing    | Implicit children, deprecated in React 18 types |
+| `(props: Props) => JSX.Element`        | Explicit if declared | Full control, modern convention | Must type return explicitly                     |
+| `(props: Props) => React.ReactElement` | Explicit if declared | Precise return type             | Does not allow `null` or `string` returns       |
+| `function Component(props: Props)`     | Explicit if declared | Readable, supports overloads    | Verbose                                         |
 
 ### `ComponentPropsWithRef` and `ComponentPropsWithoutRef`
 
@@ -97,11 +100,11 @@ Including all HTML attributes but excluding `ref`. Use `ComponentPropsWithRef` t
 
 ### `ReactNode` vs `JSX.Element` vs `ReactElement`
 
-| Type | Description |
-| -------------------- | ----------------------------------------------------------------------------------------------------- |
-| `React.ReactNode` | Anything React can render: elements, strings, numbers, `null``undefined`Booleans, arrays, portals |
-| `React.ReactElement` | A React element (result of `createElement` or JSX) |
-| `JSX.Element` | Alias for `React.ReactElement` in the current JSX namespace |
+| Type                 | Description                                                                                       |
+| -------------------- | ------------------------------------------------------------------------------------------------- |
+| `React.ReactNode`    | Anything React can render: elements, strings, numbers, `null``undefined`Booleans, arrays, portals |
+| `React.ReactElement` | A React element (result of `createElement` or JSX)                                                |
+| `JSX.Element`        | Alias for `React.ReactElement` in the current JSX namespace                                       |
 
 For component return types and `children` props, `React.ReactNode` is the most permissive and
 Generally correct choice.
@@ -146,16 +149,16 @@ function Input() {
 
 ### Event Type Reference
 
-| Event Type | Target Element |
-| ------------------- | ----------------------------------- |
-| `MouseEvent<T>` | `<div>``<button>``<a>`Etc. |
-| `ChangeEvent<T>` | `<input>``<select>``<textarea>` |
-| `FormEvent<T>` | `<form>` |
-| `KeyboardEvent<T>` | `<input>``<textarea>` |
-| `FocusEvent<T>` | `<input>``<textarea>``<button>` |
-| `DragEvent<T>` | Any draggable element |
-| `WheelEvent<T>` | Any element |
-| `ClipboardEvent<T>` | Any element |
+| Event Type          | Target Element                  |
+| ------------------- | ------------------------------- |
+| `MouseEvent<T>`     | `<div>``<button>``<a>`Etc.      |
+| `ChangeEvent<T>`    | `<input>``<select>``<textarea>` |
+| `FormEvent<T>`      | `<form>`                        |
+| `KeyboardEvent<T>`  | `<input>``<textarea>`           |
+| `FocusEvent<T>`     | `<input>``<textarea>``<button>` |
+| `DragEvent<T>`      | Any draggable element           |
+| `WheelEvent<T>`     | Any element                     |
+| `ClipboardEvent<T>` | Any element                     |
 
 ### Inline Event Handlers
 
@@ -493,8 +496,8 @@ function useConfig() {
 }
 ```
 
-When a default value is provided, `useContext` never returns `null`So the null-check in the hook
-Is unnecessary. However, this approach is less type-safe because the default value may not match the
+When a default value is provided, `useContext` never returns `null`So the null-check in the hook Is
+unnecessary. However, this approach is less type-safe because the default value may not match the
 Actual provider value.
 
 ### Factory Context Pattern
@@ -593,11 +596,11 @@ Produces `unknown` for the ref type.
 
 ### `RefObject` vs `MutableRefObject` vs `Ref<T>`
 
-| Type | Description |
+| Type                  | Description                                       |
 | --------------------- | ------------------------------------------------- |
-| `RefObject<T>` | Immutable ref object (`current` is readonly) |
-| `MutableRefObject<T>` | Mutable ref object (`current` is writable) |
-| `Ref<T>` | `RefObject<T> \| ((instance: T) => void) \| null` |
+| `RefObject<T>`        | Immutable ref object (`current` is readonly)      |
+| `MutableRefObject<T>` | Mutable ref object (`current` is writable)        |
+| `Ref<T>`              | `RefObject<T> \| ((instance: T) => void) \| null` |
 
 ```tsx
 const immutableRef = useRef<HTMLDivElement>(null);

@@ -1,6 +1,8 @@
 ---
 title: Language and Thought
-description: "Detailed coverage of the Sapir-Whorf hypothesis, linguistic relativity, bilingualism, language acquisition theories, and key research for IB Psychology."
+description:
+  'Detailed coverage of the Sapir-Whorf hypothesis, linguistic relativity, bilingualism, language
+  acquisition theories, and key research for IB Psychology.'
 slug: language-and-thought
 ---
 
@@ -47,13 +49,13 @@ Spatial extension.
 **Evaluation:**
 
 - Whorf's analysis of Hopi has been challenged by subsequent linguists. Malotki (1983) demonstrated
- that Hopi does, in fact, have spatial metaphors for time, countable time units, and temporal
- tenses, contradicting Whorf's claims.
+  that Hopi does, in fact, have spatial metaphors for time, countable time units, and temporal
+  tenses, contradicting Whorf's claims.
 - Despite the inaccuracies in Whorf's specific linguistic analysis, the general principle that
- language can influence habitual patterns of thought has received empirical support from more
- rigorous studies.
+  language can influence habitual patterns of thought has received empirical support from more
+  rigorous studies.
 - Whorf's work was based on informal observation rather than controlled experimentation, which
- limits its scientific validity.
+  limits its scientific validity.
 
 ## Contemporary Research on Linguistic Relativity
 
@@ -66,13 +68,13 @@ Speakers (an Australian Aboriginal language).
 **Key findings:**
 
 - Kuuk Thaayorre uses absolute cardinal directions (north, south, east, west) rather than egocentric
- terms (left, right) for spatial reference. Even for small-scale spatial arrangements, Kuuk
- Thaayorre speakers use cardinal directions (e.g., "the cup is north of the plate").
+  terms (left, right) for spatial reference. Even for small-scale spatial arrangements, Kuuk
+  Thaayorre speakers use cardinal directions (e.g., "the cup is north of the plate").
 - In a spatial arrangement task, Kuuk Thaayorre speakers arranged cards in a temporal sequence (from
- older to younger) from east to west, regardless of the direction they were facing. English
- speakers arranged the same cards from left to right.
+  older to younger) from east to west, regardless of the direction they were facing. English
+  speakers arranged the same cards from left to right.
 - This demonstrates that habitual use of absolute spatial language shapes spatial cognition and even
- influences how temporal sequences are mentally represented.
+  influences how temporal sequences are mentally represented.
 
 ### Colour Categorisation
 
@@ -89,15 +91,15 @@ Siniy). English speakers showed no such category effect.
 **Evaluation:**
 
 - The colour categorisation effect is one of the most robust findings in the linguistic relativity
- literature. It has been replicated across multiple languages and colour boundaries.
+  literature. It has been replicated across multiple languages and colour boundaries.
 - However, the effect is limited to the left visual field (right hemisphere), suggesting that it
- involves linguistic processing rather than perceptual processing per se. When the stimuli are
- presented in the right visual field (left hemisphere, dominant for language), the effect
- disappears.
+  involves linguistic processing rather than perceptual processing per se. When the stimuli are
+  presented in the right visual field (left hemisphere, dominant for language), the effect
+  disappears.
 - The effect is an online, task-dependent influence of language on perception, not a permanent
- alteration of perceptual ability. When participants are given a verbal interference task
- (repeating a word during the discrimination task), the category effect disappears, confirming that
- language is causally involved.
+  alteration of perceptual ability. When participants are given a verbal interference task
+  (repeating a word during the discrimination task), the category effect disappears, confirming that
+  language is causally involved.
 
 ### Number and Counting
 
@@ -113,11 +115,11 @@ The language impairs the ability to represent exact quantities.
 **Evaluation:**
 
 - This finding has been controversial. Some researchers have argued that the Piraha's difficulty
- with number tasks reflects cultural rather than linguistic factors (e.g., lack of formal education
- in mathematics).
+  with number tasks reflects cultural rather than linguistic factors (e.g., lack of formal education
+  in mathematics).
 - Subsequent research has shown that speakers of languages with exact number systems perform better
- on numerical tasks, but the direction of causation (language shaping cognition versus culture
- shaping both language and cognition) remains debated.
+  on numerical tasks, but the direction of causation (language shaping cognition versus culture
+  shaping both language and cognition) remains debated.
 
 ## Bilingualism and Cognitive Function
 
@@ -141,25 +143,25 @@ Stimulus while ignoring its spatial position).
 **Key findings:**
 
 - Bilingual participants showed smaller Simon effects (the difference in reaction time between
- congruent and incongruent trials) than monolingual participants, suggesting more efficient
- inhibitory control.
+  congruent and incongruent trials) than monolingual participants, suggesting more efficient
+  inhibitory control.
 - The bilingual advantage was observed in both children and older adults.
 - In older adults, bilingualism was associated with a delay of approximately 4--5 years in the onset
- of symptoms of dementia, compared to monolinguals.
+  of symptoms of dementia, compared to monolinguals.
 
 **Evaluation:**
 
 - The bilingual advantage hypothesis has been highly influential but has also been the subject of
- considerable controversy.
+  considerable controversy.
 - Several recent meta-analyses have produced mixed results. Paap and Greenberg (2013) failed to find
- a bilingual advantage in a large sample, and they argued that publication bias may have inflated
- the apparent effect in earlier studies.
+  a bilingual advantage in a large sample, and they argued that publication bias may have inflated
+  the apparent effect in earlier studies.
 - The heterogeneity of bilingual experiences (age of acquisition, proficiency, frequency of use,
- language pair) makes it difficult to draw general conclusions. The bilingual advantage may depend
- on specific characteristics of the bilingual experience.
+  language pair) makes it difficult to draw general conclusions. The bilingual advantage may depend
+  on specific characteristics of the bilingual experience.
 - The protective effect of bilingualism against dementia is supported by several large-scale
- epidemiological studies, but the mechanism is not fully understood and may not be purely
- cognitive.
+  epidemiological studies, but the mechanism is not fully understood and may not be purely
+  cognitive.
 
 ## Language Acquisition Theories
 
@@ -174,20 +176,20 @@ Reinforcement).
 **Strengths:**
 
 - Explains how children learn the specific language of their community (through exposure and
- reinforcement).
+  reinforcement).
 - Explains the acquisition of vocabulary and the development of articulation.
 
 **Limitations:**
 
 - Cannot explain the creative and generative nature of language use. Children regularly produce
- sentences they have never heard before (e.g., "I goed to the park" instead of "I went to the
- park"), which cannot be explained by imitation and reinforcement.
+  sentences they have never heard before (e.g., "I goed to the park" instead of "I went to the
+  park"), which cannot be explained by imitation and reinforcement.
 - Overgeneralisation errors (like "goed") are not systematically corrected by parents; in fact,
- parents focus on the truthfulness of a child's utterance rather than its grammatical
- correctness (Brown and Hanlon, 1970).
+  parents focus on the truthfulness of a child's utterance rather than its grammatical correctness
+  (Brown and Hanlon, 1970).
 - Chomsky (1959) delivered a devastating critique of Skinner's theory in his review of "Verbal
- Behavior," arguing that the speed and uniformity of language acquisition across children, despite
- vast differences in input and reinforcement, could not be explained by operant conditioning alone.
+  Behavior," arguing that the speed and uniformity of language acquisition across children, despite
+  vast differences in input and reinforcement, could not be explained by operant conditioning alone.
 
 ### Chomsky's Nativist Theory (1957, 1965)
 
@@ -201,28 +203,28 @@ Learning grammar from scratch.
 **Evidence for the nativist position:**
 
 1. **The poverty of the stimulus:** Children acquire complex grammatical knowledge that is not
- explicitly taught and cannot be inferred from the input alone. For example, children understand
- the structure-dependent nature of grammatical rules (they know that the question corresponding to
- "The man who is tall is in the room" is "Is the man who is tall in the room?" not "Is the man who
- tall is in the room?") without ever being taught this principle.
+   explicitly taught and cannot be inferred from the input alone. For example, children understand
+   the structure-dependent nature of grammatical rules (they know that the question corresponding to
+   "The man who is tall is in the room" is "Is the man who is tall in the room?" not "Is the man who
+   tall is in the room?") without ever being taught this principle.
 2. **The critical period:** There is a critical period for language acquisition (approximately
- ending at puberty), after which language acquisition becomes significantly more difficult and is
- rarely fully successful. Cases of extreme deprivation (e.g., Genie, who was isolated from
- language until age 13) support the existence of a critical period.
+   ending at puberty), after which language acquisition becomes significantly more difficult and is
+   rarely fully successful. Cases of extreme deprivation (e.g., Genie, who was isolated from
+   language until age 13) support the existence of a critical period.
 3. **Universality:** All human languages share certain structural features (e.g., nouns and verbs,
- hierarchical phrase structure, recursion), suggesting a common innate basis.
+   hierarchical phrase structure, recursion), suggesting a common innate basis.
 4. **Stages of development:** Children across cultures pass through similar stages of language
- development (babbling, one-word stage, two-word stage, telegraphic speech), suggesting a
- maturational program.
+   development (babbling, one-word stage, two-word stage, telegraphic speech), suggesting a
+   maturational program.
 
 **Limitations:**
 
 - The LAD is a theoretical construct that has not been identified at the neural level.
 - The theory underestimates the role of social interaction and environmental input in language
- acquisition.
+  acquisition.
 - Alternative theories (connectionist models, usage-based theories) have shown that some aspects of
- grammar can be learned from statistical patterns in the input, without requiring innate
- grammatical knowledge.
+  grammar can be learned from statistical patterns in the input, without requiring innate
+  grammatical knowledge.
 
 ### Social Interactionist Theory
 
@@ -234,28 +236,28 @@ Structured context for communication.
 **Key concepts:**
 
 - **Child-directed speech (CDS):** Adults modify their speech when talking to young children, using
- higher pitch, exaggerated intonation, simplified vocabulary, shorter sentences, and repetition.
- CDS is not consciously "taught" but emerges in caregiver-child interactions and serves
- to maintain the child's attention and highlight linguistic structure.
+  higher pitch, exaggerated intonation, simplified vocabulary, shorter sentences, and repetition.
+  CDS is not consciously "taught" but emerges in caregiver-child interactions and serves to maintain
+  the child's attention and highlight linguistic structure.
 - **Scaffolding:** Caregivers provide structured support for the child's emerging language skills,
- adjusting the level of support as the child's competence increases. This is consistent with
- Vygotsky's concept of the zone of proximal development (ZPD).
+  adjusting the level of support as the child's competence increases. This is consistent with
+  Vygotsky's concept of the zone of proximal development (ZPD).
 
 <details>
 <summary>Common Pitfalls: Language and Thought</summary>
 
 - **Do not present the Sapir-Whorf hypothesis as if the strong version (linguistic determinism) is
- widely accepted.** The strong version has been largely discredited. Contemporary research supports
- the weak version (linguistic relativity), which holds that language influences but does not
- determine thought.
+  widely accepted.** The strong version has been largely discredited. Contemporary research supports
+  the weak version (linguistic relativity), which holds that language influences but does not
+  determine thought.
 - **Do not assume that bilingualism always produces a cognitive advantage.** The evidence is mixed,
- and the bilingual advantage may depend on specific characteristics of the bilingual experience
- (age of acquisition, proficiency, frequency of use).
+  and the bilingual advantage may depend on specific characteristics of the bilingual experience
+  (age of acquisition, proficiency, frequency of use).
 - **Do not present Skinner's and Chomsky's theories as if they are equally supported by evidence.**
- Chomsky's critique of Skinner is widely regarded as having been decisive, and nativist principles
- are well-supported by evidence for universal grammar and critical periods. However, Chomsky's
- theory has also been criticised for underestimating the role of environmental input and social
- interaction.
+  Chomsky's critique of Skinner is widely regarded as having been decisive, and nativist principles
+  are well-supported by evidence for universal grammar and critical periods. However, Chomsky's
+  theory has also been criticised for underestimating the role of environmental input and social
+  interaction.
 
 </details>
 

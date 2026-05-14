@@ -1,6 +1,8 @@
 ---
 title: Move Constructors, Assignment, Swap Idiom
-description: "C++: Move Constructors, Assignment, Swap Idiom — 6.1 Move Constructor: `T(T&& other)`; Proof That Moved-From Objects Are in a Valid-But-Unspecified State."
+description:
+  'C++: Move Constructors, Assignment, Swap Idiom — 6.1 Move Constructor: `T(T&& other)`; Proof That
+  Moved-From Objects Are in a Valid-But-Unspecified State.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -8,6 +10,7 @@ categories:
   - Cpp
 slug: move-constructors-assignment-swap-idiom
 ---
+
 # Move Constructors, Assignment, Swap Idiom
 
 Move semantics allow resources to be transferred between objects without copying. The move
@@ -87,15 +90,15 @@ We can prove this requirement from first principles by examining what the Standa
 **Proof:**
 
 1. [N4950 S11.4.5.3]/4 states that after a move, the object is in a "valid but unspecified state."
- "Valid" means the object satisfies all class invariants and can be used in any operation that
- does not require a _specific_ value.
+   "Valid" means the object satisfies all class invariants and can be used in any operation that
+   does not require a _specific_ value.
 2. [N4950 S11.4.7]/4 requires that every object with automatic storage duration is destroyed at the
- end of its scope. Since the Standard mandates destruction of all objects regardless of their
- value state, the destructor must handle the moved-from state without error.
+   end of its scope. Since the Standard mandates destruction of all objects regardless of their
+   value state, the destructor must handle the moved-from state without error.
 3. Assignment to a moved-from object must work because the Standard requires that the object is
- "valid" — meaning it can participate in any operation defined for its type, including assignment.
+   "valid" — meaning it can participate in any operation defined for its type, including assignment.
 4. "Unspecified" means the implementation (or the type's author) chooses the state, but the program
- must not assume any particular value. The only guarantees are destructibility and assignability.
+   must not assume any particular value. The only guarantees are destructibility and assignability.
 
 QED.
 
@@ -154,15 +157,15 @@ Accessible.
 
 The following table summarizes when the compiler generates a default move constructor:
 
-| Condition | Implicit Move Ctor Generated? | Notes |
+| Condition                                  | Implicit Move Ctor Generated?            | Notes                                    |
 | :----------------------------------------- | :--------------------------------------- | :--------------------------------------- |
-| No user-declared special members | Yes, if all members/base are movable | Most common case for simple structs |
-| User-declared copy ctor (and no others) | No (move ctor not declared) | Fall back to copy ctor for moves |
-| User-declared destructor (and no others) | No (move ctor not declared) | Rule-of-five applies |
-| `= default` on move ctor | Yes, defined as defaulted | Delegates to member-wise move |
-| `= delete` on move ctor | No | Explicitly deleted |
-| Any member/base has deleted move ctor | Implicit move ctor is defined as deleted | Must provide explicit move or fix member |
-| Any member/base has inaccessible move ctor | Implicit move ctor is defined as deleted | Access violation |
+| No user-declared special members           | Yes, if all members/base are movable     | Most common case for simple structs      |
+| User-declared copy ctor (and no others)    | No (move ctor not declared)              | Fall back to copy ctor for moves         |
+| User-declared destructor (and no others)   | No (move ctor not declared)              | Rule-of-five applies                     |
+| `= default` on move ctor                   | Yes, defined as defaulted                | Delegates to member-wise move            |
+| `= delete` on move ctor                    | No                                       | Explicitly deleted                       |
+| Any member/base has deleted move ctor      | Implicit move ctor is defined as deleted | Must provide explicit move or fix member |
+| Any member/base has inaccessible move ctor | Implicit move ctor is defined as deleted | Access violation                         |
 
 ```cpp
 #include <iostream>
@@ -327,18 +330,18 @@ The object is left in an inconsistent state. The solution is either:
 
 1. Make the move assignment `noexcept` (preferred — move operations should not throw).
 2. Use the copy-and-swap idiom for move assignment as well (less common, but exception-safe by
- construction).
+   construction).
 
-For resource-owning types, move assignment should always be `noexcept` because moving 
-Involves only pointer swaps and integer assignments — none of which can throw.
+For resource-owning types, move assignment should always be `noexcept` because moving Involves only
+pointer swaps and integer assignments — none of which can throw.
 
 ## 6.3 `noexcept` on Move Operations
 
 Marking move constructors and move assignment operators `noexcept` is **critical** for performance.
-Standard library containers (e.g., `std::vector``std::unordered_map`) use `noexcept` move
-Operations to provide the **strong exception guarantee** during reallocation. If the move
-Constructor is not `noexcept`Containers fall back to copying — negating the benefit of move
-Semantics [N4950 S16.4.5.2.6].
+Standard library containers (e.g., `std::vector``std::unordered_map`) use `noexcept` move Operations
+to provide the **strong exception guarantee** during reallocation. If the move Constructor is not
+`noexcept`Containers fall back to copying — negating the benefit of move Semantics [N4950
+S16.4.5.2.6].
 
 ```cpp
 #include <vector>
@@ -375,20 +378,18 @@ void container_demo() {
 }
 ```
 
-:::warning
-Always mark move constructors and move assignment operators `noexcept` unless they
+:::warning Always mark move constructors and move assignment operators `noexcept` unless they
 Genuinely can throw (which is rare — moving should only perform pointer swaps and assignments). The
 `std::is_nothrow_move_constructible_v<T>` type trait is used by standard containers to select
-Between move and copy during reallocation. If your move is not `noexcept`Your types will be
-Silently copied in containers, which can be a severe performance regression.
-:::
+Between move and copy during reallocation. If your move is not `noexcept`Your types will be Silently
+copied in containers, which can be a severe performance regression. :::
 
 ### How `std::vector` Uses `noexcept` Move
 
 The `std::vector` reallocation strategy is defined in [N4950 S16.4.5.2.6]. If the move constructor
-Of `T` is `noexcept`Or if `T` is copyable, `vector` uses move operations during reallocation. If
-The move constructor is potentially throwing and a copy constructor is available, `vector` falls
-Back to copying.
+Of `T` is `noexcept`Or if `T` is copyable, `vector` uses move operations during reallocation. If The
+move constructor is potentially throwing and a copy constructor is available, `vector` falls Back to
+copying.
 
 ## 6.4 The Rule of Five in Detail
 
@@ -399,26 +400,26 @@ Special member functions will be wrong.
 [N4950 S11.4.5.3] defines the conditions under which the compiler implicitly declares each special
 Member function. The interaction between these rules produces the "Rule of Five" behavior:
 
-| You Declare | Implicit Copy Ctor | Implicit Move Ctor | Implicit Copy Assign | Implicit Move Assign |
+| You Declare      | Implicit Copy Ctor | Implicit Move Ctor | Implicit Copy Assign | Implicit Move Assign |
 | :--------------- | :----------------- | :----------------- | :------------------- | :------------------- |
-| Nothing | Yes | Yes | Yes | Yes |
-| Destructor only | Yes | **No** | Yes | **No** |
-| Copy ctor only | — | **No** | **No** | **No** |
-| Move ctor only | Deleted | — | Deleted | Deleted |
-| Move assign only | Deleted | Deleted | Deleted | — |
+| Nothing          | Yes                | Yes                | Yes                  | Yes                  |
+| Destructor only  | Yes                | **No**             | Yes                  | **No**               |
+| Copy ctor only   | —                  | **No**             | **No**               | **No**               |
+| Move ctor only   | Deleted            | —                  | Deleted              | Deleted              |
+| Move assign only | Deleted            | Deleted            | Deleted              | —                    |
 
 Key observations from this table:
 
 1. **Declaring a destructor suppresses implicit move operations.** This is the most common surprise.
- If you write `~T() { ... }`The compiler will not generate a move constructor or move assignment
- operator, even if all members are movable. Move requests will silently fall back to copy.
+   If you write `~T() { ... }`The compiler will not generate a move constructor or move assignment
+   operator, even if all members are movable. Move requests will silently fall back to copy.
 
 2. **Declaring a copy constructor suppresses everything else.** If you write `T(const T&)`The
- compiler generates no move operations and no copy assignment operator.
+   compiler generates no move operations and no copy assignment operator.
 
 3. **Declaring a move constructor deletes the copy operations.** The rationale is that if you
- explicitly opted into move semantics, copying might not make sense for your type (e.g.,
- `std::unique_ptr`).
+   explicitly opted into move semantics, copying might not make sense for your type (e.g.,
+   `std::unique_ptr`).
 
 ```cpp
 #include <iostream>
@@ -569,18 +570,18 @@ public:
 
 ### Move-Only Types in the Standard Library
 
-| Type | Move-Only? | Reason |
+| Type                              | Move-Only? | Reason                        |
 | :-------------------------------- | :--------- | :---------------------------- |
-| `std::unique_ptr<T>` | Yes | Exclusive ownership model |
-| `std::thread` | Yes | OS thread handle is unique |
-| `std::jthread` | Yes | Same as `std::thread` |
-| `std::mutex` | Yes | OS synchronization primitive |
-| `std::atomic<T>` | Yes | Cannot be atomically moved |
-| `std::unique_lock<Mutex>` | Yes | Owns lock state |
-| `std::shared_ptr<T>` | No | Reference-counted, copyable |
-| `std::vector<T>` | No | Deep-copyable |
-| `std::function<R(Args...)>` | No | Type-erased, copyable |
-| `std::move_only_function` (C++23) | Yes | Non-copyable callable wrapper |
+| `std::unique_ptr<T>`              | Yes        | Exclusive ownership model     |
+| `std::thread`                     | Yes        | OS thread handle is unique    |
+| `std::jthread`                    | Yes        | Same as `std::thread`         |
+| `std::mutex`                      | Yes        | OS synchronization primitive  |
+| `std::atomic<T>`                  | Yes        | Cannot be atomically moved    |
+| `std::unique_lock<Mutex>`         | Yes        | Owns lock state               |
+| `std::shared_ptr<T>`              | No         | Reference-counted, copyable   |
+| `std::vector<T>`                  | No         | Deep-copyable                 |
+| `std::function<R(Args...)>`       | No         | Type-erased, copyable         |
+| `std::move_only_function` (C++23) | Yes        | Non-copyable callable wrapper |
 
 ### Move-Only Types and Containers
 
@@ -780,22 +781,20 @@ Before swap: a.size=1000, b.size=2000
 After swap:  a.size=2000, b.size=1000
 ```
 
-:::tip
-When writing a custom `swap`Always include `using std::swap;` before calling `swap` on
-Individual members. This ensures that if a member type has a custom `swap`It is found via ADL,
-While falling back to `std::swap` for types that do not.
-:::
+:::tip When writing a custom `swap`Always include `using std::swap;` before calling `swap` on
+Individual members. This ensures that if a member type has a custom `swap`It is found via ADL, While
+falling back to `std::swap` for types that do not. :::
 
 ## 7.3 Swap as a Building Block
 
 `swap` is used extensively as a building block for other operations:
 
 - **Move assignment:** `a = std::move(b)` can be implemented as `swap(a, b)` followed by `b`'s
- destruction at scope end (the copy-and-swap idiom).
+  destruction at scope end (the copy-and-swap idiom).
 - **Exception-safe assignment:** The copy-and-swap idiom provides the strong exception guarantee by
- constructing a copy first, then swapping.
+  constructing a copy first, then swapping.
 - **Sorting algorithms:** `std::sort` uses `swap` internally. Efficient `swap` makes sorting of
- large objects cheap.
+  large objects cheap.
 
 ```cpp
 #include <utility>
@@ -861,37 +860,35 @@ The `this != &other` guard is essential. Without it, `a = std::move(a)` would:
 1. `delete[] data_` — freeing the object's own buffer.
 2. `data_ = other.data_` — assigning the now-dangling pointer to itself.
 3. `other.data_ = nullptr` — setting both `this->data_` and `other.data_` to `nullptr` (same
- object).
+   object).
 
 After self-move, the object holds a dangling pointer and a zero size. Any subsequent access or
 Destruction triggers use-after-free.
 
-:::warning
-Self-move assignment (`a = std::move(a)`) is **not undefined behavior** in the general
+:::warning Self-move assignment (`a = std::move(a)`) is **not undefined behavior** in the general
 Case [N4950 S11.4.5.3], but the Standard requires the object to be in a "valid but unspecified
-State" afterward. For resource-owning types that do not guard against self-assignment, this
- means a use-after-free. Always include the self-assignment check in move assignment
-Operators, or restructure to avoid the issue entirely (e.g., using the copy-and-swap idiom which
-Handles self-assignment ).
-:::
+State" afterward. For resource-owning types that do not guard against self-assignment, this means a
+use-after-free. Always include the self-assignment check in move assignment Operators, or
+restructure to avoid the issue entirely (e.g., using the copy-and-swap idiom which Handles
+self-assignment ). :::
 
 ## 7.5 Move-Only Types and the Standard Library
 
 The Standard Library makes extensive use of move-only types. Understanding which types are move-only
 And why is critical for writing correct generic code:
 
-| Type | Move-Only? | Reason |
+| Type                              | Move-Only? | Reason                        |
 | :-------------------------------- | :--------- | :---------------------------- |
-| `std::unique_ptr<T>` | Yes | Exclusive ownership model |
-| `std::thread` | Yes | OS thread handle is unique |
-| `std::jthread` | Yes | Same as `std::thread` |
-| `std::mutex` | Yes | OS synchronization primitive |
-| `std::atomic<T>` | Yes | Cannot be atomically moved |
-| `std::unique_lock<Mutex>` | Yes | Owns lock state |
-| `std::shared_ptr<T>` | No | Reference-counted, copyable |
-| `std::vector<T>` | No | Deep-copyable |
-| `std::function<R(Args...)>` | No | Type-erased, copyable |
-| `std::move_only_function` (C++23) | Yes | Non-copyable callable wrapper |
+| `std::unique_ptr<T>`              | Yes        | Exclusive ownership model     |
+| `std::thread`                     | Yes        | OS thread handle is unique    |
+| `std::jthread`                    | Yes        | Same as `std::thread`         |
+| `std::mutex`                      | Yes        | OS synchronization primitive  |
+| `std::atomic<T>`                  | Yes        | Cannot be atomically moved    |
+| `std::unique_lock<Mutex>`         | Yes        | Owns lock state               |
+| `std::shared_ptr<T>`              | No         | Reference-counted, copyable   |
+| `std::vector<T>`                  | No         | Deep-copyable                 |
+| `std::function<R(Args...)>`       | No         | Type-erased, copyable         |
+| `std::move_only_function` (C++23) | Yes        | Non-copyable callable wrapper |
 
 When writing generic code that must accept any callable, prefer `std::move_only_function` (C++23)
 Over `std::function` if copyability is not required. This avoids the internal heap allocation that
@@ -900,26 +897,26 @@ Over `std::function` if copyability is not required. This avoids the internal he
 ## Common Pitfalls
 
 - **Moving from const objects:** `std::move(const T&)` returns `const T&&`Which binds to a copy
- constructor (not move constructor). The move is silently downgraded to a copy. If you see this in
- a code review, the object should not be `const` in the first place.
+  constructor (not move constructor). The move is silently downgraded to a copy. If you see this in
+  a code review, the object should not be `const` in the first place.
 - **Using moved-from objects:** After a move, the source object is in a valid but unspecified state.
- You may only assign to it or destroy it. Reading from it (other than to inspect trivial types like
- `int`) is technically legal but yields unspecified values.
+  You may only assign to it or destroy it. Reading from it (other than to inspect trivial types like
+  `int`) is technically legal but yields unspecified values.
 - **Forgetting `noexcept` on moves:** This is the most performance-critical mistake with move
- operations. Standard containers check `std::is_nothrow_move_constructible_v<T>` at compile time
- and fall back to copying if it is `false`. Always mark move constructors and move assignment
- operators `noexcept`.
+  operations. Standard containers check `std::is_nothrow_move_constructible_v<T>` at compile time
+  and fall back to copying if it is `false`. Always mark move constructors and move assignment
+  operators `noexcept`.
 - **Declaring a destructor without move operations:** When you declare a destructor, the compiler
- suppresses implicit generation of the move constructor and move assignment operator. If your type
- has movable members, you must explicitly `= default` the move operations.
+  suppresses implicit generation of the move constructor and move assignment operator. If your type
+  has movable members, you must explicitly `= default` the move operations.
 - **Forgetting to move the base class in a derived move constructor:** When defining a derived class
- move constructor, you must explicitly call `Base(std::move(other))`. Writing `Base(other)`
- silently copies the base subobject.
+  move constructor, you must explicitly call `Base(std::move(other))`. Writing `Base(other)`
+  silently copies the base subobject.
 - **Self-move assignment without a guard:** `a = std::move(a)` with a naive move assignment operator
- that does not check `this != &other` leads to use-after-free. Always include the guard or use the
- copy-and-swap idiom.
+  that does not check `this != &other` leads to use-after-free. Always include the guard or use the
+  copy-and-swap idiom.
 - **Using `std::move` in a return statement for a local variable:** `return std::move(local);`
- prevents NRVO from applying and forces a move. Just write `return local;`.
+  prevents NRVO from applying and forces a move. Just write `return local;`.
 
 ## See Also
 

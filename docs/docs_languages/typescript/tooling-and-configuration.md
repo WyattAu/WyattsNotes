@@ -1,11 +1,14 @@
 ---
 title: Tooling and Configuration
-description: "Tooling and Configuration — tsconfig.json: Core Configuration; Compiler Options Reference; Language and Environment; Module Resolution."
+description:
+  'Tooling and Configuration — tsconfig.json: Core Configuration; Compiler Options Reference;
+  Language and Environment; Module Resolution.'
 slug: typescript-tooling-and-configuration
 date: 2026-04-22T00:00:00.000Z
 tags: [TypeScript]
 categories: [TypeScript]
 ---
+
 ## tsconfig.json: Core Configuration
 
 Every TypeScript project is governed by a `tsconfig.json` file at the project root. This file
@@ -32,52 +35,52 @@ Configuration:
 
 #### Language and Environment
 
-| Option | Description | Recommended |
+| Option               | Description                               | Recommended                      |
 | -------------------- | ----------------------------------------- | -------------------------------- |
-| `target` | ECMAScript version for emitted JavaScript | `"ES2022"` or `"ESNext"` |
-| `lib` | Library files to include in compilation | Auto-inferred from `target` |
-| `jsx` | JSX compilation mode | `"react-jsx"` (React 17+) |
-| `jsxFactory` | JSX factory function | `"React.createElement"` (legacy) |
-| `jsxFragmentFactory` | JSX fragment factory | `"React.Fragment"` (legacy) |
+| `target`             | ECMAScript version for emitted JavaScript | `"ES2022"` or `"ESNext"`         |
+| `lib`                | Library files to include in compilation   | Auto-inferred from `target`      |
+| `jsx`                | JSX compilation mode                      | `"react-jsx"` (React 17+)        |
+| `jsxFactory`         | JSX factory function                      | `"React.createElement"` (legacy) |
+| `jsxFragmentFactory` | JSX fragment factory                      | `"React.Fragment"` (legacy)      |
 
 #### Module Resolution
 
-| Option | Description | Recommended |
+| Option              | Description                                       | Recommended               |
 | ------------------- | ------------------------------------------------- | ------------------------- |
-| `module` | Module system for emitted code | `"ESNext"` |
-| `moduleResolution` | Module resolution strategy | `"bundler"` or `"node16"` |
-| `baseUrl` | Base directory for non-relative module resolution | `"."` |
-| `paths` | Path aliases for module resolution | `{"@/*": ["src/*"]}` |
-| `rootDirs` | Multiple root directories treated as one | `["src", "generated"]` |
-| `resolveJsonModule` | Allow importing `.json` files | `true` |
-| `isolatedModules` | Ensure each file can be transpiled independently | `true` |
+| `module`            | Module system for emitted code                    | `"ESNext"`                |
+| `moduleResolution`  | Module resolution strategy                        | `"bundler"` or `"node16"` |
+| `baseUrl`           | Base directory for non-relative module resolution | `"."`                     |
+| `paths`             | Path aliases for module resolution                | `{"@/*": ["src/*"]}`      |
+| `rootDirs`          | Multiple root directories treated as one          | `["src", "generated"]`    |
+| `resolveJsonModule` | Allow importing `.json` files                     | `true`                    |
+| `isolatedModules`   | Ensure each file can be transpiled independently  | `true`                    |
 
 #### Type Checking
 
-| Option | Description | Recommended |
+| Option                         | Description                                                     | Recommended                  |
 | ------------------------------ | --------------------------------------------------------------- | ---------------------------- |
-| `strict` | Enable all strict type-checking options | `true` |
-| `noImplicitAny` | Error on implicit `any` type | `true` (implied by `strict`) |
-| `strictNullChecks` | Strict `null` and `undefined` checking | `true` (implied by `strict`) |
-| `strictFunctionTypes` | Contravariant function parameter checking | `true` (implied by `strict`) |
-| `strictBindCallApply` | Strict checking for `bind``call``apply` | `true` (implied by `strict`) |
-| `strictPropertyInitialization` | Check class property initialisation | `true` (implied by `strict`) |
-| `noImplicitThis` | Error when `this` gets `any` type | `true` (implied by `strict`) |
-| `noImplicitReturns` | Error on code paths that do not return a value | `true` |
-| `noUnusedLocals` | Error on unused local variables | `true` |
-| `noUnusedParameters` | Error on unused function parameters | `true` |
-| `noFallthroughCasesInSwitch` | Error on switch case fallthrough | `true` |
-| `exactOptionalPropertyTypes` | Distinguish between optional and `undefined`-present properties | `true` |
+| `strict`                       | Enable all strict type-checking options                         | `true`                       |
+| `noImplicitAny`                | Error on implicit `any` type                                    | `true` (implied by `strict`) |
+| `strictNullChecks`             | Strict `null` and `undefined` checking                          | `true` (implied by `strict`) |
+| `strictFunctionTypes`          | Contravariant function parameter checking                       | `true` (implied by `strict`) |
+| `strictBindCallApply`          | Strict checking for `bind``call``apply`                         | `true` (implied by `strict`) |
+| `strictPropertyInitialization` | Check class property initialisation                             | `true` (implied by `strict`) |
+| `noImplicitThis`               | Error when `this` gets `any` type                               | `true` (implied by `strict`) |
+| `noImplicitReturns`            | Error on code paths that do not return a value                  | `true`                       |
+| `noUnusedLocals`               | Error on unused local variables                                 | `true`                       |
+| `noUnusedParameters`           | Error on unused function parameters                             | `true`                       |
+| `noFallthroughCasesInSwitch`   | Error on switch case fallthrough                                | `true`                       |
+| `exactOptionalPropertyTypes`   | Distinguish between optional and `undefined`-present properties | `true`                       |
 
 #### Output
 
-| Option | Description | Recommended |
+| Option           | Description                           | Recommended                   |
 | ---------------- | ------------------------------------- | ----------------------------- |
-| `outDir` | Directory for emitted JavaScript | `"./dist"` |
-| `declaration` | Generate `.d.ts` files | `true` for libraries |
-| `declarationMap` | Generate sourcemaps for `.d.ts` files | `true` for libraries |
-| `sourceMap` | Generate sourcemaps | `true` |
-| `noEmit` | Type-check without emitting files | `true` for type-checking only |
+| `outDir`         | Directory for emitted JavaScript      | `"./dist"`                    |
+| `declaration`    | Generate `.d.ts` files                | `true` for libraries          |
+| `declarationMap` | Generate sourcemaps for `.d.ts` files | `true` for libraries          |
+| `sourceMap`      | Generate sourcemaps                   | `true`                        |
+| `noEmit`         | Type-check without emitting files     | `true` for type-checking only |
 
 ### The `strict` Flag
 
@@ -136,12 +139,12 @@ Themselves (TypeScript 5.0+). Does not enforce Node.js-specific resolution rules
 
 ### Resolution Comparison
 
-| Feature | `node` | `node16` | `bundler` |
+| Feature                            | `node`          | `node16`           | `bundler`        |
 | ---------------------------------- | --------------- | ------------------ | ---------------- |
-| ESM-aware | No | Yes | No |
-| Requires file extensions in ESM | No | Yes | No |
-| Checks `exports` in `package.json` | No | Yes | Yes |
-| Best for | Legacy projects | Node.js native ESM | Bundled web apps |
+| ESM-aware                          | No              | Yes                | No               |
+| Requires file extensions in ESM    | No              | Yes                | No               |
+| Checks `exports` in `package.json` | No              | Yes                | Yes              |
+| Best for                           | Legacy projects | Node.js native ESM | Bundled web apps |
 
 ## @types Packages and DefinitelyTyped
 
@@ -295,16 +298,16 @@ npm install --save-dev eslint @typescript-eslint/parser @typescript-eslint/eslin
 
 ### Key Rules
 
-| Rule | Description |
+| Rule                                               | Description                      |
 | -------------------------------------------------- | -------------------------------- | --- | --- |
-| `@typescript-eslint/no-explicit-any` | Disallow `any` type |
-| `@typescript-eslint/no-unused-vars` | Disallow unused variables |
-| `@typescript-eslint/explicit-function-return-type` | Require explicit return types |
-| `@typescript-eslint/no-floating-promises` | Require promises to be handled |
-| `@typescript-eslint/strict-boolean-expressions` | Restrict boolean expressions |
-| `@typescript-eslint/prefer-nullish-coalescing` | Prefer `??` over `               |     | ` |
-| `@typescript-eslint/prefer-optional-chain` | Prefer `?.` over manual checks |
-| `@typescript-eslint/no-non-null-assertion` | Disallow `!` non-null assertions |
+| `@typescript-eslint/no-explicit-any`               | Disallow `any` type              |
+| `@typescript-eslint/no-unused-vars`                | Disallow unused variables        |
+| `@typescript-eslint/explicit-function-return-type` | Require explicit return types    |
+| `@typescript-eslint/no-floating-promises`          | Require promises to be handled   |
+| `@typescript-eslint/strict-boolean-expressions`    | Restrict boolean expressions     |
+| `@typescript-eslint/prefer-nullish-coalescing`     | Prefer `??` over `               |     | `   |
+| `@typescript-eslint/prefer-optional-chain`         | Prefer `?.` over manual checks   |
+| `@typescript-eslint/no-non-null-assertion`         | Disallow `!` non-null assertions |
 
 **Common Pitfall:** The `@typescript-eslint/recommended-requiring-type-checking` config requires
 `parserOptions.project` to point to a valid `tsconfig.json`. This makes linting slower because it
@@ -359,7 +362,7 @@ Sub-project `tsconfig.json`:
 - `composite: true` must be set in each referenced project.
 - `declaration: true` must be enabled so other projects can reference the types.
 - Referenced projects must list all their input files explicitly or via `include` (no `files`
- globbing with `**`).
+  globbing with `**`).
 - References form a directed acyclic graph (no circular references).
 
 ### Building with Project References
@@ -451,13 +454,13 @@ declare module 'another-untyped' {
 
 ### `jsx` Option Values
 
-| Value | Output |
+| Value            | Output                                                           |
 | ---------------- | ---------------------------------------------------------------- |
-| `"preserve"` | Emit `.jsx` files (for further processing by Babel) |
-| `"react"` | `React.createElement` |
+| `"preserve"`     | Emit `.jsx` files (for further processing by Babel)              |
+| `"react"`        | `React.createElement`                                            |
 | `"react-native"` | `React.createElement` (preserves JSX as `React.NativeComponent`) |
-| `"react-jsx"` | `_jsx` from `react/jsx-runtime` (React 17+) |
-| `"react-jsxdev"` | `_jsxDev` from `react/jsx-dev-runtime` (React 17+ dev) |
+| `"react-jsx"`    | `_jsx` from `react/jsx-runtime` (React 17+)                      |
+| `"react-jsxdev"` | `_jsxDev` from `react/jsx-dev-runtime` (React 17+ dev)           |
 
 ### Custom JSX Factory
 
@@ -492,9 +495,9 @@ const port: number = config.port;
 const debug: boolean = config.debug;
 ```
 
-Without `satisfies`Assigning to `Record<string, string | number | boolean>` would widen the
-Property types. With `satisfies`The literal types are preserved while still validating against the
-Broader type.
+Without `satisfies`Assigning to `Record<string, string | number | boolean>` would widen the Property
+types. With `satisfies`The literal types are preserved while still validating against the Broader
+type.
 
 ### `satisfies` vs Type Annotation
 

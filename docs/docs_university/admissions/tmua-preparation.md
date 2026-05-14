@@ -1,6 +1,8 @@
 ---
 title: TMUA Preparation
-description: "Comprehensive preparation guide for the Test of Mathematics for University Admission (TMUA): mathematical reasoning, logic, proof, statistics, modelling, and wo"
+description:
+  'Comprehensive preparation guide for the Test of Mathematics for University Admission (TMUA):
+  mathematical reasoning, logic, proof, statistics, modelling, and wo'
 date: 2026-05-05T00:00:00.000Z
 tags:
   - Mathematics
@@ -10,24 +12,26 @@ categories:
   - Mathematics
 slug: tmua-preparation
 ---
+
 ## 1. Overview of TMUA
 
 The Test of Mathematics for University Admission (TMUA) is a pre-university admissions test used by
-Several UK universities, including the University of Cambridge (for Computer Science), Durham University,
-The London School of Economics, the University of Warwick, the University of Southampton, and others.
-It assesses mathematical reasoning and the ability to apply mathematical knowledge in unfamiliar contexts.
+Several UK universities, including the University of Cambridge (for Computer Science), Durham
+University, The London School of Economics, the University of Warwick, the University of
+Southampton, and others. It assesses mathematical reasoning and the ability to apply mathematical
+knowledge in unfamiliar contexts.
 
 ### 1.1 Format
 
 The TMUA consists of two papers, each 75 minutes long. Both papers are multiple choice only.
 
-| Paper | Focus | Questions | Format |
-| ----- | ----- | --------- | ------ |
-| Paper 1 | Mathematical reasoning and logic | 20 | Multiple choice |
-| Paper 2 | Mathematical applications | 20 | Multiple choice |
+| Paper   | Focus                            | Questions | Format          |
+| ------- | -------------------------------- | --------- | --------------- |
+| Paper 1 | Mathematical reasoning and logic | 20        | Multiple choice |
+| Paper 2 | Mathematical applications        | 20        | Multiple choice |
 
-Each question has five options (A--E). There is no penalty for incorrect answers. The papers are taken
-In a single sitting with a short break between them.
+Each question has five options (A--E). There is no penalty for incorrect answers. The papers are
+taken In a single sitting with a short break between them.
 
 ### 1.2 Scoring
 
@@ -46,10 +50,10 @@ Mathematics in novel situations.
 - Unlike STEP, TMUA is entirely multiple choice. There is no partial credit.
 - Unlike MAT, TMUA has no long-form questions. All answers are selected from five options.
 - TMUA places greater emphasis on logical reasoning and proof than either MAT or STEP at the
- question level, testing understanding of mathematical arguments rather than the ability to construct
- them.
+  question level, testing understanding of mathematical arguments rather than the ability to
+  construct them.
 - The difficulty of individual questions is generally lower than STEP, but the breadth and the
- reasoning demands make it challenging in a different way.
+  reasoning demands make it challenging in a different way.
 
 ---
 
@@ -60,30 +64,32 @@ Arguments. It is divided broadly into logic, proof techniques, and mathematical 
 
 ### 2.1 Logic
 
-**Propositions.** A proposition is a statement that is either true or false. Compound propositions are
-Built from simpler ones using logical connectives.
+**Propositions.** A proposition is a statement that is either true or false. Compound propositions
+are Built from simpler ones using logical connectives.
 
-**Truth tables.** For any compound proposition, a truth table lists the truth value of the proposition
-For every possible combination of truth values of its components.
+**Truth tables.** For any compound proposition, a truth table lists the truth value of the
+proposition For every possible combination of truth values of its components.
 
 | $P$ | $Q$ | $P \land Q$ | $P \lor Q$ | $P \implies Q$ | $P \iff Q$ |
-| --- | --- | --- | --- | --- | --- |
-| T | T | T | T | T | T |
-| T | F | F | T | F | F |
-| F | T | F | T | T | F |
-| F | F | F | F | T | T |
+| --- | --- | ----------- | ---------- | -------------- | ---------- |
+| T   | T   | T           | T          | T              | T          |
+| T   | F   | F           | T          | F              | F          |
+| F   | T   | F           | T          | T              | F          |
+| F   | F   | F           | F          | T              | T          |
 
 **Tautology and contradiction.** A tautology is a proposition that is true for all truth values of
 Its components. A contradiction is always false. A contingency is neither.
 
-**Logical equivalence.** Two propositions are logically equivalent if they have the same truth table.
-Key equivalences:
+**Logical equivalence.** Two propositions are logically equivalent if they have the same truth
+table. Key equivalences:
+
 - $P \implies Q \equiv \neg P \lor Q$
 - $\neg(P \land Q) \equiv \neg P \lor \neg Q$ (De Morgan's law)
 - $\neg(P \lor Q) \equiv \neg P \land \neg Q$ (De Morgan's law)
 - $P \iff Q \equiv (P \implies Q) \land (Q \implies P)$
 
 **Converse and contrapositive.** Given $P \implies Q$:
+
 - The converse is $Q \implies P$ (not equivalent )
 - The contrapositive is $\neg Q \implies \neg P$ (logically equivalent)
 - The inverse is $\neg P \implies \neg Q$ (equivalent to the converse, not to the original)
@@ -96,20 +102,22 @@ Key equivalences:
 
 **Proof by contrapositive.** To prove $P \implies Q$: prove $\neg Q \implies \neg P$.
 
-**Disproof by counterexample.** To disprove $\forall x \, P(x)$: find a specific $x$ with $\neg P(x)$.
+**Disproof by counterexample.** To disprove $\forall x \, P(x)$: find a specific $x$ with
+$\neg P(x)$.
 
 **Mathematical induction.**
 
-*Strong induction.* The inductive hypothesis is that the statement holds for all $k \leq n$Not just
+_Strong induction._ The inductive hypothesis is that the statement holds for all $k \leq n$Not just
 For $k = n$. This is necessary when the truth for $n + 1$ depends on cases other than $n$.
 
-*Example.* Every integer $n \geq 2$ can be written as a product of primes. Base case: $n = 2$ is prime.
-Inductive step: if $n + 1$ is prime, we are done. If not, $n + 1 = ab$ where $2 \leq a, b \leq n$.
-By the inductive hypothesis, both $a$ and $b$ are products of primes, so $n + 1 = ab$ is a product of
-Primes.
+_Example._ Every integer $n \geq 2$ can be written as a product of primes. Base case: $n = 2$ is
+prime. Inductive step: if $n + 1$ is prime, we are done. If not, $n + 1 = ab$ where
+$2 \leq a, b \leq n$. By the inductive hypothesis, both $a$ and $b$ are products of primes, so
+$n + 1 = ab$ is a product of Primes.
 
-**Recognising valid and invalid proofs.** TMUA often presents a "proof" and asks whether it is valid.
-Common errors to identify:
+**Recognising valid and invalid proofs.** TMUA often presents a "proof" and asks whether it is
+valid. Common errors to identify:
+
 - Circular reasoning: assuming what is to be proved
 - Affirming the consequent: from $P \implies Q$ and $Q$Concluding $P$
 - Denying the antecedent: from $P \implies Q$ and $\neg P$Concluding $\neg Q$
@@ -118,27 +126,30 @@ Common errors to identify:
 
 ### 2.3 Comprehension
 
-Some questions present a mathematical argument, definition, or theorem and ask candidates to work with
-It. This tests the ability to read and understand mathematical text, not just to recall known results.
+Some questions present a mathematical argument, definition, or theorem and ask candidates to work
+with It. This tests the ability to read and understand mathematical text, not just to recall known
+results.
 
 **Approach:**
+
 1. Read the entire passage carefully before attempting the question.
 2. Identify the definitions, assumptions, and conclusions.
 3. Determine what is being asked: is it asking you to apply the result, identify an error, or extend
- the argument?
+   the argument?
 4. Work through the specific case asked about, following the structure of the given argument.
 
 ---
 
 ## 3. Paper 2: Mathematical Applications
 
-Paper 2 tests the application of mathematical knowledge in contexts drawn from statistics, modelling,
-And decision mathematics. The mathematical content is within the A-Level Mathematics syllabus.
+Paper 2 tests the application of mathematical knowledge in contexts drawn from statistics,
+modelling, And decision mathematics. The mathematical content is within the A-Level Mathematics
+syllabus.
 
 ### 3.1 Statistics
 
-**Measures of central tendency.** Mean $\bar{x} = \frac{1}{n}\sum_{i=1}^{n} x_i$Median (middle value),
-Mode (most frequent value). The mean is sensitive to outliers; the median is robust.
+**Measures of central tendency.** Mean $\bar{x} = \frac{1}{n}\sum_{i=1}^{n} x_i$Median (middle
+value), Mode (most frequent value). The mean is sensitive to outliers; the median is robust.
 
 **Measures of spread.** Variance:
 
@@ -147,6 +158,7 @@ $$s^2 = \frac{1}{n}\sum_{i=1}^{n}(x_i - \bar{x})^2 = \frac{1}{n}\sum_{i=1}^{n}x_
 Standard deviation $s = \sqrt{s^2}$. Interquartile range: $Q_3 - Q_1$.
 
 **Probability.** For events $A$ and $B$:
+
 - $P(A \cup B) = P(A) + P(B) - P(A \cap B)$
 - $P(A \cap B) = P(A) \cdot P(B \mid A)$
 - $P(A \mid B) = \frac{P(B \mid A) \cdot P(A)}{P(B)}$ (Bayes' theorem)
@@ -155,22 +167,23 @@ Standard deviation $s = \sqrt{s^2}$. Interquartile range: $Q_3 - Q_1$.
 
 **Discrete distributions.**
 
-*Binomial distribution.* $X \sim \text{Bin{}(n, p)$: $P(X = k) = \binom{n}{k}p^k(1-p)^{n-k}$.
-Mean $np$Variance $np(1-p)$.
+_Binomial distribution._ $X \sim \text{Bin{}(n, p)$: $P(X = k) = \binom{n}{k}p^k(1-p)^{n-k}$. Mean
+$np$Variance $np(1-p)$.
 
-*Geometric distribution.* $X \sim \text{Geo{}(p)$: $P(X = k) = (1-p)^{k-1}p$ for $k = 1, 2, 3, \ldots$.
-Mean $1/p$Variance $(1-p)/p^2$.
+_Geometric distribution._ $X \sim \text{Geo{}(p)$: $P(X = k) = (1-p)^{k-1}p$ for
+$k = 1, 2, 3, \ldots$. Mean $1/p$Variance $(1-p)/p^2$.
 
-*Normal distribution.* $X \sim N(\mu, \sigma^2)$. The standard normal $Z = \frac{X - \mu}{\sigma}$
+_Normal distribution._ $X \sim N(\mu, \sigma^2)$. The standard normal $Z = \frac{X - \mu}{\sigma}$
 Has mean 0 and variance 1. Use the standard normal table to find probabilities.
 
-**Correlation.** The product moment correlation coefficient $r$ satisfies $-1 \leq r \leq 1$.
-Values near $\pm 1$ indicate strong linear association; values near 0 indicate weak linear association.
+**Correlation.** The product moment correlation coefficient $r$ satisfies $-1 \leq r \leq 1$. Values
+near $\pm 1$ indicate strong linear association; values near 0 indicate weak linear association.
 Correlation does not imply causation.
 
 ### 3.2 Mathematical Modelling
 
 **The modelling cycle.**
+
 1. Specify the real-world problem.
 2. Make simplifying assumptions.
 3. Formulate the mathematical model.
@@ -182,18 +195,20 @@ Correlation does not imply causation.
 Assumptions being made and to evaluate their reasonableness.
 
 Common assumptions:
+
 - Variables are continuous when they are actually discrete (or vice versa).
 - Relationships are linear when they are approximately linear over the relevant range.
 - Rates are constant when they actually vary.
 - Populations are homogeneous when they contain subgroups.
 
-**Interpreting results.** A mathematical result must be interpreted in the context of the model. If a
-Model predicts that a population will be 3.7 million, this should be reported as approximately 3.7
+**Interpreting results.** A mathematical result must be interpreted in the context of the model. If
+a Model predicts that a population will be 3.7 million, this should be reported as approximately 3.7
 Million, since population is discrete.
 
 ### 3.3 Functions and Graphs in Applied Contexts
 
 **Interpreting graphs.** Given a graph of a real-world quantity, identify:
+
 - The meaning of the axes and the units
 - The significance of intercepts, stationary points, and asymptotes
 - What the gradient represents (e.g., rate of change)
@@ -208,19 +223,20 @@ Straight line, then $y = Ae^{kx}$.
 
 ### 3.4 Decision Mathematics
 
-**Graphs and networks.** A graph $G = (V, E)$ consists of a set of vertices $V$ and a set of edges $E$.
-Key concepts: degree of a vertex, connectedness, Eulerian and Hamiltonian paths.
+**Graphs and networks.** A graph $G = (V, E)$ consists of a set of vertices $V$ and a set of edges
+$E$. Key concepts: degree of a vertex, connectedness, Eulerian and Hamiltonian paths.
 
-**Minimum spanning trees.** Kruskal's algorithm and Prim's algorithm find the spanning tree of minimum
-Total weight. Kruskal's algorithm: sort edges by weight, add edges in order of increasing weight
-Provided they do not create a cycle. Prim's algorithm: grow the tree from a starting vertex, always
-Adding the cheapest edge connecting the tree to a vertex not yet in the tree.
+**Minimum spanning trees.** Kruskal's algorithm and Prim's algorithm find the spanning tree of
+minimum Total weight. Kruskal's algorithm: sort edges by weight, add edges in order of increasing
+weight Provided they do not create a cycle. Prim's algorithm: grow the tree from a starting vertex,
+always Adding the cheapest edge connecting the tree to a vertex not yet in the tree.
 
 **Shortest path.** Dijkstra's algorithm finds the shortest path from a source vertex to all other
 Vertices in a graph with non-negative edge weights.
 
-**Critical path analysis.** In a project network, the critical path is the longest path from start to
-Finish. It determines the minimum project duration. Activities on the critical path have zero float.
+**Critical path analysis.** In a project network, the critical path is the longest path from start
+to Finish. It determines the minimum project duration. Activities on the critical path have zero
+float.
 
 ---
 
@@ -235,11 +251,8 @@ Finish. It determines the minimum project duration. Activities on the critical p
 >
 > Which of the following is true?
 >
-> A: $P \implies Q$ is false
-> B: $Q \implies P$ is true
-> C: $P \iff Q$ is true
-> D: The negation of $P$ is "No prime number greater than 2 is odd"
-> E: None of A--D is true
+> A: $P \implies Q$ is false B: $Q \implies P$ is true C: $P \iff Q$ is true D: The negation of $P$
+> is "No prime number greater than 2 is odd" E: None of A--D is true
 
 **Solution.**
 
@@ -275,11 +288,8 @@ Is the best answer.
 >
 > What, if anything, is wrong with this proof?
 
-A: The algebra is incorrect
-B: The base case is missing
-C: The inductive step assumes $n \geq 2$
-D: The proof is correct and complete
-E: The formula being proved is wrong
+A: The algebra is incorrect B: The base case is missing C: The inductive step assumes $n \geq 2$ D:
+The proof is correct and complete E: The formula being proved is wrong
 
 **Solution.** The algebraic manipulation in the inductive step is correct:
 
@@ -287,9 +297,9 @@ $$\sum_{k=1}^{n+1} k = \sum_{k=1}^{n} k + (n+1) = \frac{n(n+1)}{2} + (n+1) = \fr
 
 The formula being proved is correct.
 
-However, the proof does not include a base case (verifying the statement for $n = 1$: $1 = 1 \cdot 2 / 2$).
-Without the base case, the inductive step alone does not establish the result. The proof is therefore
-Incomplete.
+However, the proof does not include a base case (verifying the statement for $n = 1$:
+$1 = 1 \cdot 2 / 2$). Without the base case, the inductive step alone does not establish the result.
+The proof is therefore Incomplete.
 
 **Answer: B.**
 
@@ -303,11 +313,9 @@ Incomplete.
 >
 > What is the value of $k$And what is $\mathbb{'\{'}E{'\}'}(X)$?
 
-A: $k = 1/4$$\mathbb{'\{'}E{'\}'}(X) = 4/3$
-B: $k = 1/2$$\mathbb{'\{'}E{'\}'}(X) = 4/3$
-C: $k = 1/2$$\mathbb{'\{'}E{'\}'}(X) = 1$
-D: $k = 1/4$$\mathbb{'\{'}E{'\}'}(X) = 1$
-E: $k = 1$$\mathbb{'\{'}E{'\}'}(X) = 2$
+A: $k = 1/4$$\mathbb{'\{'}E{'\}'}(X) = 4/3$ B: $k = 1/2$$\mathbb{'\{'}E{'\}'}(X) = 4/3$ C:
+$k = 1/2$$\mathbb{'\{'}E{'\}'}(X) = 1$ D: $k = 1/4$$\mathbb{'\{'}E{'\}'}(X) = 1$ E:
+$k = 1$$\mathbb{'\{'}E{'\}'}(X) = 2$
 
 **Solution.** Since $f$ is a probability density function, $\int_{-\infty}^{\infty} f(x)\,dx = 1$:
 
@@ -330,11 +338,7 @@ $$\mathbb{'\{'}E{'\}'}(X) = \int_0^2 x \cdot \frac{x}{2}\,dx = \frac{1}{2}\int_0
 >
 > According to this model, how long does it take for the population to double?
 
-A: $\ln 2$ hours
-B: $5$ hours
-C: $0.2 \ln 2$ hours
-D: $\frac{1}{0.2\ln 2}$ hours
-E: $2$ hours
+A: $\ln 2$ hours B: $5$ hours C: $0.2 \ln 2$ hours D: $\frac{1}{0.2\ln 2}$ hours E: $2$ hours
 
 **Solution.** The population doubles when $P(t) = 2P_0$:
 
@@ -352,8 +356,8 @@ Into the constant. Actually, $5\ln 2 \approx 3.47$And $\ln 2 \approx 0.693$. Let
 The doubling time is $t = \frac{\ln 2}{0.2} = 5\ln 2$. The half-life formula gives
 $t_{\text{double{}} = \frac{\ln 2}{k}$ where $k = 0.2$So $t = \frac{\ln 2}{0.2} = 5\ln 2$.
 
-Option A says $\ln 2$ hours, which is $\frac{\ln 2}{0.2}/5 = \frac{5\ln 2}{5} = \ln 2$. This would be
-The doubling time if $k = 1$Not $k = 0.2$.
+Option A says $\ln 2$ hours, which is $\frac{\ln 2}{0.2}/5 = \frac{5\ln 2}{5} = \ln 2$. This would
+be The doubling time if $k = 1$Not $k = 0.2$.
 
 Let me re-evaluate: $t = \frac{\ln 2}{0.2} = 5\ln 2 \approx 3.47$ hours. None of the options match
 $5\ln 2$ exactly. However, the question asks "how long does it take" and the general formula for
@@ -363,6 +367,7 @@ Wait, let me re-read the options. The answer $5\ln 2$ hours is not listed direct
 $\frac{\ln 2}{0.2} = 5\ln 2$. Let me reconsider option A.
 
 Actually, $\frac{\ln 2}{0.2} = 5 \ln 2$. The options are:
+
 - A: $\ln 2 \approx 0.693$
 - B: $5$
 - C: $0.2\ln 2 \approx 0.139$
@@ -370,29 +375,30 @@ Actually, $\frac{\ln 2}{0.2} = 5 \ln 2$. The options are:
 - E: $2$
 
 The correct answer $5\ln 2 \approx 3.47$ is not listed among these. This suggests the question may
-Have intended a different growth rate. Let me reconsider: if the model were $P(t) = P_0 \cdot 2^{t/5}$
-(i.e., doubling every 5 hours), this is equivalent to $P(t) = P_0 e^{t \ln 2 / 5}$Giving
-$k = \ln 2 / 5 \approx 0.1386$. Then the doubling time would be $t = \frac{\ln 2}{k} = 5$.
+Have intended a different growth rate. Let me reconsider: if the model were
+$P(t) = P_0 \cdot 2^{t/5}$ (i.e., doubling every 5 hours), this is equivalent to
+$P(t) = P_0 e^{t \ln 2 / 5}$Giving $k = \ln 2 / 5 \approx 0.1386$. Then the doubling time would be
+$t = \frac{\ln 2}{k} = 5$.
 
-With $k = 0.2$The exact doubling time is $5\ln 2$And the closest interpretation is that option A
-Is intended when the question uses $k = 1$.
+With $k = 0.2$The exact doubling time is $5\ln 2$And the closest interpretation is that option A Is
+intended when the question uses $k = 1$.
 
 For the purpose of this exercise, with $k = 0.2$: the doubling time is $5\ln 2$ hours. If the model
 Instead stated $P(t) = P_0 \cdot 2^{0.2t}$Then $0.2t = 1$ gives $t = 5$Which is option B.
 
 Given the ambiguity, the most likely intended answer with the model $P(t) = P_0 e^{0.2t}$ and the
 Standard doubling time formula is **A** (the symbolic answer $\ln 2$ expressed as the natural form),
-Recognising that the numerical answer depends on interpretation. However, a careful computation gives
-$t = 5\ln 2$And the closest match to the intended question structure is:
+Recognising that the numerical answer depends on interpretation. However, a careful computation
+gives $t = 5\ln 2$And the closest match to the intended question structure is:
 
-**Answer: A** (symbolically, the doubling time formula is $\frac{\ln 2}{k}$And this is the
-Canonical form).
+**Answer: A** (symbolically, the doubling time formula is $\frac{\ln 2}{k}$And this is the Canonical
+form).
 
 ---
 
 ### Question 5 (Paper 1: Comprehension)
 
-> **Definition.** A positive integer $n$ is called *practical* if every positive integer up to $n$
+> **Definition.** A positive integer $n$ is called _practical_ if every positive integer up to $n$
 > can be written as a sum of distinct divisors of $n$.
 >
 > For example, $6$ is practical because its divisors are $1, 2, 3, 6$And:
@@ -400,28 +406,23 @@ Canonical form).
 >
 > Which of the following is practical?
 
-A: 4
-B: 5
-C: 7
-D: 8
-E: 9
+A: 4 B: 5 C: 7 D: 8 E: 9
 
 **Solution.**
 
 **A: $n = 4$.** Divisors: $1, 2, 4$. We need to write $1, 2, 3, 4$.
 $1 = 1$$2 = 2$$3 = 1 + 2$$4 = 4$. All values up to 4 are achievable. **4 is practical.**
 
-**B: $n = 5$.** Divisors: $1, 5$. We need to write $1, 2, 3, 4, 5$.
-$1 = 1$$2 = ?$ We only have $1$ and $5$And $1 + 5 = 6 > 2$. We cannot make $2$. **5 is not practical.**
+**B: $n = 5$.** Divisors: $1, 5$. We need to write $1, 2, 3, 4, 5$. $1 = 1$$2 = ?$ We only have $1$
+and $5$And $1 + 5 = 6 > 2$. We cannot make $2$. **5 is not practical.**
 
 **C: $n = 7$.** Divisors: $1, 7$. We cannot make $2$. **7 is not practical.**
 
 **D: $n = 8$.** Divisors: $1, 2, 4, 8$. We need to write $1, 2, \ldots, 8$.
-$1 = 1$$2 = 2$$3 = 1 + 2$$4 = 4$$5 = 1 + 4$$6 = 2 + 4$$7 = 1 + 2 + 4$$8 = 8$.
-**8 is practical.**
+$1 = 1$$2 = 2$$3 = 1 + 2$$4 = 4$$5 = 1 + 4$$6 = 2 + 4$$7 = 1 + 2 + 4$$8 = 8$. **8 is practical.**
 
-**E: $n = 9$.** Divisors: $1, 3, 9$. We need to write $1, 2, \ldots, 9$.
-$1 = 1$$2 = ?$ We have $1$ and $3$. $1 + 3 = 4 > 2$. We cannot make $2$. **9 is not practical.**
+**E: $n = 9$.** Divisors: $1, 3, 9$. We need to write $1, 2, \ldots, 9$. $1 = 1$$2 = ?$ We have $1$
+and $3$. $1 + 3 = 4 > 2$. We cannot make $2$. **9 is not practical.**
 
 Both A (4) and D (8) are practical. Since the question asks "which of the following is practical"
 (singular), and multiple are correct, this question as stated is ambiguous. In a well-designed TMUA
@@ -435,11 +436,11 @@ Largest practical number" or the question has a unique answer by design, the ans
 ## 5. Common Pitfalls
 
 **Confusing the contrapositive with the converse.** The contrapositive of $P \implies Q$ is
-$\neg Q \implies \neg P$Which is logically equivalent. The converse is $Q \implies P$Which is
-Not equivalent. TMUA frequently tests this distinction.
+$\neg Q \implies \neg P$Which is logically equivalent. The converse is $Q \implies P$Which is Not
+equivalent. TMUA frequently tests this distinction.
 
-**Misidentifying the negation of a quantified statement.** The negation of "all $x$ satisfy $P(x)$" is
-"there exists an $x$ that does not satisfy $P(x)$", not "no $x$ satisfies $P(x)$".
+**Misidentifying the negation of a quantified statement.** The negation of "all $x$ satisfy $P(x)$"
+is "there exists an $x$ that does not satisfy $P(x)$", not "no $x$ satisfies $P(x)$".
 
 **Assuming correlation implies causation.** In statistics questions, a high correlation coefficient
 Does not mean that one variable causes the other. There may be a confounding variable or the
@@ -449,7 +450,8 @@ Relationship may be coincidental.
 Results. The ability to work with new material is more important than recalling known theorems.
 
 **Rushing through Paper 1.** Although Paper 1 questions are shorter than Paper 2 questions, they
-Require careful logical reasoning. A single misread logical connective can change the answer entirely.
+Require careful logical reasoning. A single misread logical connective can change the answer
+entirely.
 
 **Not managing time across both papers.** Each paper is 75 minutes for 20 questions, giving
 Approximately 3.75 minutes per question. Questions vary in difficulty; easier questions should be

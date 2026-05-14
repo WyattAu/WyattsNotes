@@ -1,6 +1,8 @@
 ---
 title: Exponential Distribution and Continuous Random Variables
-description: "A-Level Further Maths notes on Exponential Distribution and Continuous Random Variables: Board Coverage; 1. Continuous Random Variables."
+description:
+  'A-Level Further Maths notes on Exponential Distribution and Continuous Random Variables: Board
+  Coverage; 1. Continuous Random Variables.'
 date: 2026-04-02T00:00:00.000Z
 tags:
   - FurtherMaths
@@ -10,6 +12,7 @@ categories:
 slug: exponential-continuous-rv
 sidebar_position: 2
 ---
+
 ## Exponential Distribution and Continuous Random Variables
 
 The exponential distribution models the time between events in a Poisson process, while the theory
@@ -18,12 +21,12 @@ Interval.
 
 ### Board Coverage
 
-| Board | Paper | Notes |
+| Board      | Paper   | Notes                                                |
 | ---------- | ------- | ---------------------------------------------------- |
-| AQA | Paper 2 | Continuous RVs; limited exponential coverage |
-| Edexcel | S3, S4 | Exponential distribution in S4; continuous RVs in S3 |
-| OCR (A) | Paper 2 | Continuous RVs and exponential |
-| CIE (9231) | S2 | Both continuous RVs and exponential covered |
+| AQA        | Paper 2 | Continuous RVs; limited exponential coverage         |
+| Edexcel    | S3, S4  | Exponential distribution in S4; continuous RVs in S3 |
+| OCR (A)    | Paper 2 | Continuous RVs and exponential                       |
+| CIE (9231) | S2      | Both continuous RVs and exponential covered          |
 
 :::info The exponential distribution is the continuous counterpart to the geometric distribution.
 Both are memoryless. The Poisson process links all three distributions: Poisson counts events,
@@ -493,11 +496,11 @@ Which is the CDF of $\mathrm{Exp}(\lambda)$. $\blacksquare$
 The memoryless property means:
 
 - If a light bulb has been on for 100 hours, the probability it lasts another 50 hours is the same
- as a new bulb lasting 50 hours.
+  as a new bulb lasting 50 hours.
 - If you have waited 20 minutes for a bus, your expected additional wait time is the same as if you
- had just arrived.
+  had just arrived.
 - This property makes exponential models appropriate for random failure mechanisms (electronic
- components) but inappropriate for wear-out mechanisms (mechanical parts).
+  components) but inappropriate for wear-out mechanisms (mechanical parts).
 
 <hr />
 
@@ -884,12 +887,12 @@ $E(X) = \int_0^1 x^2\,dx + \int_1^2 x(2-x)\,dx = \frac{1}{3}+\frac{2}{3} = 1$. �
 
 ## 9. Common Pitfalls
 
-| Pitfall | Correct Approach |
+| Pitfall                                                                                                   | Correct Approach                                                         |
 | --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
 | Confusing the rate $\lambda$ with the mean $\dfrac◆LB◆1◆RB◆◆LB◆\lambda◆RB◆$ for exponential distributions | $E(X) = \dfrac◆LB◆1◆RB◆◆LB◆\lambda◆RB◆$; the rate parameter is $\lambda$ |
-| Forgetting that the total area under a PDF must equal 1 | Always verify: $\displaystyle\int_{-\infty}^{\infty} f(x)\,dx = 1$ |
-| Applying the exponential memoryless property to other distributions | Only the exponential distribution has this property |
-| Using $P(a < X < b) = f(b) - f(a)$ | This is for CDFs, not PDFs. Use $\displaystyle\int_a^b f(x)\,dx$ |
+| Forgetting that the total area under a PDF must equal 1                                                   | Always verify: $\displaystyle\int_{-\infty}^{\infty} f(x)\,dx = 1$       |
+| Applying the exponential memoryless property to other distributions                                       | Only the exponential distribution has this property                      |
+| Using $P(a < X < b) = f(b) - f(a)$                                                                        | This is for CDFs, not PDFs. Use $\displaystyle\int_a^b f(x)\,dx$         |
 
 ---
 
@@ -966,16 +969,16 @@ Distribution. See
 
 ## 12. Key Results Summary
 
-| Distribution | PDF | $E(X)$ | $\mathrm{Var}(X)$ |
-| ----------------------- | ------------------------------------ | -------------------------------- | ---------------------------------- |
+| Distribution            | PDF                                | $E(X)$                           | $\mathrm{Var}(X)$                  |
+| ----------------------- | ---------------------------------- | -------------------------------- | ---------------------------------- |
 | $\mathrm{Exp}(\lambda)$ | $\lambda e^{-\lambda x}$$x \geq 0$ | $\dfrac◆LB◆1◆RB◆◆LB◆\lambda◆RB◆$ | $\dfrac◆LB◆1◆RB◆◆LB◆\lambda^2◆RB◆$ |
-| $\mathrm{U}(a,b)$ | $\dfrac{1}{b-a}$$a \leq x \leq b$ | $\dfrac{a+b}{2}$ | $\dfrac{(b-a)^2}{12}$ |
+| $\mathrm{U}(a,b)$       | $\dfrac{1}{b-a}$$a \leq x \leq b$  | $\dfrac{a+b}{2}$                 | $\dfrac{(b-a)^2}{12}$              |
 
-| Property | Exponential | Uniform |
+| Property   | Exponential                          | Uniform            |
 | ---------- | ------------------------------------ | ------------------ |
-| Memoryless | Yes | No |
-| CDF | $1 - e^{-\lambda x}$ | $\dfrac{x-a}{b-a}$ |
-| Median | $\dfrac◆LB◆\ln 2◆RB◆◆LB◆\lambda◆RB◆$ | $\dfrac{a+b}{2}$ |
+| Memoryless | Yes                                  | No                 |
+| CDF        | $1 - e^{-\lambda x}$                 | $\dfrac{x-a}{b-a}$ |
+| Median     | $\dfrac◆LB◆\ln 2◆RB◆◆LB◆\lambda◆RB◆$ | $\dfrac{a+b}{2}$   |
 
 ---
 

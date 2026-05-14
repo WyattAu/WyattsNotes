@@ -1,6 +1,8 @@
 ---
 title: Bit Manipulation
-description: "C++: Bit Manipulation — 1. Safe Type Punning (`std::bit_cast`); The Strict Aliasing Rule (TBAA); Legacy Approaches (Broken)."
+description:
+  'C++: Bit Manipulation — 1. Safe Type Punning (`std::bit_cast`); The Strict Aliasing Rule (TBAA);
+  Legacy Approaches (Broken).'
 date: 2025-12-12T22:12:51.318Z
 tags:
   - cpp
@@ -8,6 +10,7 @@ categories:
   - cpp
 slug: bit-manipulation
 ---
+
 Import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 Systems programming frequently requires bypassing the C++ type system to manipulate the raw binary
@@ -90,9 +93,9 @@ Conversion (like `static_cast<int>(3.14f)` would). It preserves the exact bit pa
 
 ### `std::bit_cast` Constraints
 
-`std::bit_cast` requires that both the source and destination types are ** Copyable**
-[N4950 §20.15.4.6]. This excludes types with virtual functions, non-trivial
-Constructors/destructors, or reference members. The sizes must also be equal.
+`std::bit_cast` requires that both the source and destination types are ** Copyable** [N4950
+§20.15.4.6]. This excludes types with virtual functions, non-trivial Constructors/destructors, or
+reference members. The sizes must also be equal.
 
 ```cpp
 struct NonTrivial {
@@ -145,13 +148,13 @@ The `<bit>` header standardizes these operations.
 
 ### Key Primitives
 
-| Function | Description | x86_64 Instruction | ARM64 Instruction |
+| Function                  | Description                                | x86_64 Instruction | ARM64 Instruction |
 | :------------------------ | :----------------------------------------- | :----------------- | :---------------- |
-| **`std::popcount`** | Counts number of set bits (1s). | `POPCNT` | `CNT` |
-| **`std::countl_zero`** | Counts consecutive zeros from MSB (Left). | `LZCNT` / `BSR` | `CLZ` |
-| **`std::countr_zero`** | Counts consecutive zeros from LSB (Right). | `TZCNT` / `BSF` | `RBIT` + `CLZ` |
-| **`std::has_single_bit`** | Checks if value is power of two. | `POPCNT` / Logic | Logic |
-| **`std::bit_width`** | Minimum bits required to represent value. | `LZCNT` | `CLZ` |
+| **`std::popcount`**       | Counts number of set bits (1s).            | `POPCNT`           | `CNT`             |
+| **`std::countl_zero`**    | Counts consecutive zeros from MSB (Left).  | `LZCNT` / `BSR`    | `CLZ`             |
+| **`std::countr_zero`**    | Counts consecutive zeros from LSB (Right). | `TZCNT` / `BSF`    | `RBIT` + `CLZ`    |
+| **`std::has_single_bit`** | Checks if value is power of two.           | `POPCNT` / Logic   | Logic             |
+| **`std::bit_width`**      | Minimum bits required to represent value.  | `LZCNT`            | `CLZ`             |
 
 ### Architectural Usage: Bitmasks and Pools
 
@@ -342,21 +345,21 @@ Enum masks.
 - **Storage:** Fixed size at compile time.
 - **Interface:** Provides `test()``set()``flip()`. Bounds checked.
 - **Pros:** Safe, readable (`b[5] = true`), prints to streams.
-- **Cons:** Not copyable in all implementations (though is). Cannot be 
- iterated by hardware instructions (`popcount` on bitset is slower than on `uint64_t`).
+- **Cons:** Not copyable in all implementations (though is). Cannot be iterated by hardware
+  instructions (`popcount` on bitset is slower than on `uint64_t`).
 
 ### Raw Integer Masks (`enum class`)
 
 - **Storage:** `uint8_t` to `uint64_t`.
 - **Interface:** Bitwise operators `|``&``^``~`.
 - **Pros:** Fits directly in registers. Compatible with C APIs. Fastest possible performance using
- `<bit>` intrinsics.
+  `<bit>` intrinsics.
 - **Cons:** Manual management of bit positions.
 
 ### Recommendation
 
 - Use **Raw Integers** for low-level systems logic, serialization, and high-performance algorithms
- (using `<bit>`).
+  (using `<bit>`).
 - Use **`std::bitset`** for application-level logic requiring &gt;64 flags or formatted output.
 
 ### C++23: `std::bitset::reference`

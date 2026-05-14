@@ -1,9 +1,12 @@
 ---
 id: dev-environment
 title: Development Environment Setup
-description: "Development environment setup: terminal emulators, shell configuration, font selection, GPU acceleration, and productivity tools for an efficient workflow."
+description:
+  'Development environment setup: terminal emulators, shell configuration, font selection, GPU
+  acceleration, and productivity tools for an efficient workflow.'
 slug: dev-environment
 ---
+
 ## Terminal Emulators
 
 ### GPU-Accelerated Terminals
@@ -11,13 +14,13 @@ slug: dev-environment
 Modern terminal emulators use the GPU for rendering, enabling smooth scrolling, proper Unicode
 Support, and fast image rendering:
 
-| Terminal | Renderer | Platform | Key Features |
+| Terminal  | Renderer     | Platform              | Key Features                                             |
 | --------- | ------------ | --------------------- | -------------------------------------------------------- |
-| Alacritty | Vulkan/Metal | Linux, macOS, Windows | Fastest, minimal config (YAML), GPU-first |
-| Kitty | OpenGL | Linux, macOS | Image support, tabs, ligatures, layout management |
-| WezTerm | WebGL/Metal | Linux, macOS, Windows | Built-in multiplexer, Lua config, image protocol |
-| Ghostty | Vulkan/Metal | Linux, macOS | New, fast, system-native font rendering |
-| iTerm2 | Metal | macOS | macOS-only, extensive features, splits, tmux integration |
+| Alacritty | Vulkan/Metal | Linux, macOS, Windows | Fastest, minimal config (YAML), GPU-first                |
+| Kitty     | OpenGL       | Linux, macOS          | Image support, tabs, ligatures, layout management        |
+| WezTerm   | WebGL/Metal  | Linux, macOS, Windows | Built-in multiplexer, Lua config, image protocol         |
+| Ghostty   | Vulkan/Metal | Linux, macOS          | New, fast, system-native font rendering                  |
+| iTerm2    | Metal        | macOS                 | macOS-only, extensive features, splits, tmux integration |
 
 ### Terminal Configuration
 
@@ -51,13 +54,13 @@ bindings = [
 
 A good programming font is critical for long coding sessions:
 
-| Font | Ligatures | Nerd Font | Notes |
+| Font           | Ligatures    | Nerd Font | Notes                                        |
 | -------------- | ------------ | --------- | -------------------------------------------- |
-| JetBrains Mono | Yes | Yes | Excellent readability, designed for code |
-| Fira Code | Yes | Yes | Popular, good for presentations |
-| Cascadia Code | Yes | Yes | Microsoft's coding font, great for terminals |
-| Iosevka | Customizable | Yes | Highly customizable, many variants |
-| Monaco | No | No | Classic macOS font, no ligatures |
+| JetBrains Mono | Yes          | Yes       | Excellent readability, designed for code     |
+| Fira Code      | Yes          | Yes       | Popular, good for presentations              |
+| Cascadia Code  | Yes          | Yes       | Microsoft's coding font, great for terminals |
+| Iosevka        | Customizable | Yes       | Highly customizable, many variants           |
+| Monaco         | No           | No        | Classic macOS font, no ligatures             |
 
 Install a Nerd Font variant for proper icon rendering in terminal prompts and file managers.
 
@@ -67,26 +70,26 @@ Install a Nerd Font variant for proper icon rendering in terminal prompts and fi
 
 ### Shell Comparison
 
-| Feature | Bash | Zsh | Fish |
+| Feature              | Bash                                            | Zsh                           | Fish                    |
 | -------------------- | ----------------------------------------------- | ----------------------------- | ----------------------- |
-| POSIX compliance | Full | Partial | No |
-| Script compatibility | Best | Good (mostly compatible) | Poor (different syntax) |
-| Completion | Basic (compgen) | Excellent (zsh-completions) | Excellent (built-in) |
-| Prompt customization | PS1/PS2/PROMPT_COMMAND | PROMPT expansion | fish_prompt function |
-| Plugin ecosystem | Limited | Oh-My-Zsh, zinit, etc. | Fisher, oh-my-fish |
-| Syntax highlighting | No (external: fast-syntax-highlighting for zsh) | Yes (zsh-syntax-highlighting) | Yes (built-in) |
-| Autosuggestions | No (external) | Yes (zsh-autosuggestions) | Yes (built-in) |
-| Performance | Fast | Moderate (depends on plugins) | Fast |
-| Learning curve | Low | Moderate | Low |
+| POSIX compliance     | Full                                            | Partial                       | No                      |
+| Script compatibility | Best                                            | Good (mostly compatible)      | Poor (different syntax) |
+| Completion           | Basic (compgen)                                 | Excellent (zsh-completions)   | Excellent (built-in)    |
+| Prompt customization | PS1/PS2/PROMPT_COMMAND                          | PROMPT expansion              | fish_prompt function    |
+| Plugin ecosystem     | Limited                                         | Oh-My-Zsh, zinit, etc.        | Fisher, oh-my-fish      |
+| Syntax highlighting  | No (external: fast-syntax-highlighting for zsh) | Yes (zsh-syntax-highlighting) | Yes (built-in)          |
+| Autosuggestions      | No (external)                                   | Yes (zsh-autosuggestions)     | Yes (built-in)          |
+| Performance          | Fast                                            | Moderate (depends on plugins) | Fast                    |
+| Learning curve       | Low                                             | Moderate                      | Low                     |
 
 ### Recommendation
 
 - **Zsh** for power users who want maximum customization and compatibility. Pair with a minimal
- plugin set (zinit or znap) rather than oh-my-zsh for better performance.
+  plugin set (zinit or znap) rather than oh-my-zsh for better performance.
 - **Fish** for developers who want a great out-of-the-box experience without configuration. Fish's
- built-in autosuggestions and syntax highlighting are excellent.
+  built-in autosuggestions and syntax highlighting are excellent.
 - **Bash** for scripting and environments where POSIX compatibility is required. Keep Bash as
- `/bin/bash` for scripts regardless of your interactive shell choice.
+  `/bin/bash` for scripts regardless of your interactive shell choice.
 
 ---
 
@@ -148,13 +151,13 @@ disabled = false
 
 ### Essential Zsh Plugins
 
-| Plugin | Function | Startup Cost |
+| Plugin                  | Function                            | Startup Cost |
 | ----------------------- | ----------------------------------- | ------------ |
-| zsh-autosuggestions | Gray suggestions from history | ~5 ms |
-| zsh-syntax-highlighting | Real-time command syntax coloring | ~10 ms |
-| zsh-completions | Additional completion definitions | ~5 ms |
-| fzf-tab | Fuzzy completion menus | ~2 ms |
-| z | Directory jumping based on frecency | ~1 ms |
+| zsh-autosuggestions     | Gray suggestions from history       | ~5 ms        |
+| zsh-syntax-highlighting | Real-time command syntax coloring   | ~10 ms       |
+| zsh-completions         | Additional completion definitions   | ~5 ms        |
+| fzf-tab                 | Fuzzy completion menus              | ~2 ms        |
+| z                       | Directory jumping based on frecency | ~1 ms        |
 
 ---
 
@@ -231,7 +234,7 @@ Neovim is the modern successor to Vim, with built-in LSP, Lua scripting, and a t
 Ecosystem:
 
 - **LazyVim** — Opinionated Neovim distribution with pre-configured LSP, completion, and
- keybindings. Good starting point.
+  keybindings. Good starting point.
 - **AstroNvim** — Another opinionated distribution with a GUI-like experience.
 - **Kickstart.nvim** — Minimal Neovim configuration that teaches Neovim configuration from scratch.
 
@@ -242,30 +245,30 @@ Terminal, debugger, and Git integration.
 
 Essential extensions:
 
-| Extension | Function |
+| Extension     | Function                                |
 | ------------- | --------------------------------------- |
-| GitLens | Git blame, history, and comparison |
-| Error Lens | Inline error/warning display |
-| Copilot | AI-assisted code completion |
-| Rust Analyzer | Rust language server |
-| Python | Python IntelliSense, debugging, linting |
-| Go | Go language support |
-| C/C++ | C/C++ IntelliSense, debugging |
-| Prettier | Code formatting |
-| ESLint | JavaScript/TypeScript linting |
+| GitLens       | Git blame, history, and comparison      |
+| Error Lens    | Inline error/warning display            |
+| Copilot       | AI-assisted code completion             |
+| Rust Analyzer | Rust language server                    |
+| Python        | Python IntelliSense, debugging, linting |
+| Go            | Go language support                     |
+| C/C++         | C/C++ IntelliSense, debugging           |
+| Prettier      | Code formatting                         |
+| ESLint        | JavaScript/TypeScript linting           |
 
 ### Key Bindings Worth Learning
 
 Regardless of editor, these keybindings improve productivity:
 
-| Action | Vim | VS Code | General Benefit |
+| Action           | Vim            | VS Code        | General Benefit        |
 | ---------------- | -------------- | -------------- | ---------------------- |
-| Split pane | `:vsp` / `:sp` | `Ctrl+\` | Multiple files visible |
-| Fuzzy file find | `Ctrl-P` (fzf) | `Ctrl-P` | Fast navigation |
-| Go to definition | `gd` | F12 | Code navigation |
-| Find references | `gr` | Shift+F12 | Refactoring |
-| Quick fix | `:cw` | `Ctrl+Shift+M` | Error navigation |
-| Search in files | `:Ag` / `:Rg` | `Ctrl+Shift+F` | Code search |
+| Split pane       | `:vsp` / `:sp` | `Ctrl+\`       | Multiple files visible |
+| Fuzzy file find  | `Ctrl-P` (fzf) | `Ctrl-P`       | Fast navigation        |
+| Go to definition | `gd`           | F12            | Code navigation        |
+| Find references  | `gr`           | Shift+F12      | Refactoring            |
+| Quick fix        | `:cw`          | `Ctrl+Shift+M` | Error navigation       |
+| Search in files  | `:Ag` / `:Rg`  | `Ctrl+Shift+F` | Code search            |
 
 ---
 
@@ -380,20 +383,20 @@ ssh-copy-id user@remote-host
 
 ### Modern Coreutils Replacements
 
-| Tool | Replaces | Key Feature |
-| -------------- | -------------------------------- | ------------------------------------------- |
-| `fzf` | `Ctrl+R``Ctrl+T`File finding | Fuzzy finder with preview |
-| `ripgrep (rg)` | `grep` | Fast regex search, respects .gitignore |
-| `fd` | `find` | Fast file finding, intuitive syntax |
-| `bat` | `cat` | Syntax highlighting, line numbers, git diff |
-| `eza` (exa) | `ls` | Colorized, icons, git status, tree view |
-| `zoxide` | `cd` | Smart directory jumping based on frecency |
-| `delta` | `diff` | Syntax-highlighted diffs with side-by-side |
-| `tldr` | `man` | Simplified, practical man pages |
-| `jq` | `python -m json.tool` | Command-line JSON processor |
-| `httpie` | `curl` | Human-friendly HTTP client |
-| `tokei` | `cloc` | Fast code line counter |
-| `bottom (btm)` | `htop` | Modern system monitor with GPU support |
+| Tool           | Replaces                     | Key Feature                                 |
+| -------------- | ---------------------------- | ------------------------------------------- |
+| `fzf`          | `Ctrl+R``Ctrl+T`File finding | Fuzzy finder with preview                   |
+| `ripgrep (rg)` | `grep`                       | Fast regex search, respects .gitignore      |
+| `fd`           | `find`                       | Fast file finding, intuitive syntax         |
+| `bat`          | `cat`                        | Syntax highlighting, line numbers, git diff |
+| `eza` (exa)    | `ls`                         | Colorized, icons, git status, tree view     |
+| `zoxide`       | `cd`                         | Smart directory jumping based on frecency   |
+| `delta`        | `diff`                       | Syntax-highlighted diffs with side-by-side  |
+| `tldr`         | `man`                        | Simplified, practical man pages             |
+| `jq`           | `python -m json.tool`        | Command-line JSON processor                 |
+| `httpie`       | `curl`                       | Human-friendly HTTP client                  |
+| `tokei`        | `cloc`                       | Fast code line counter                      |
+| `bottom (btm)` | `htop`                       | Modern system monitor with GPU support      |
 
 ### fzf Integration
 
@@ -462,7 +465,7 @@ nix develop  # Enter the development shell
 - **Xcode Command Line Tools** required for many builds: `xcode-select --install`
 - **Path differences:** Homebrew installs to `/opt/homebrew` (Apple Silicon) or `/usr/local` (Intel)
 - **BSD utilities:** macOS ships BSD versions of `sed``grep``awk`Etc. Install GNU versions via
- Homebrew (`gsed``ggrep`) for compatibility with Linux.
+  Homebrew (`gsed``ggrep`) for compatibility with Linux.
 
 ### Linux Specifics
 
@@ -474,9 +477,9 @@ nix develop  # Enter the development shell
 ### WSL2
 
 - **Filesystem performance:** Linux files in WSL2 are fast; Windows files accessed from WSL2 are
- slow. Store your code in the WSL2 filesystem (`/home/`), not on `/mnt/c/`.
+  slow. Store your code in the WSL2 filesystem (`/home/`), not on `/mnt/c/`.
 - **Docker:** Docker Desktop for Windows integrates with WSL2. Alternatively, run Docker directly
- inside WSL2 for better performance.
+  inside WSL2 for better performance.
 - **GPU passthrough:** WSL2 supports CUDA GPU passthrough for ML workloads.
 - **Systemd:** Modern WSL2 supports systemd. Enable in `/etc/wsl.conf`:
   ```ini

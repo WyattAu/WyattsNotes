@@ -1,6 +1,8 @@
 ---
 title: Matrices
-description: "A-Level Further Maths notes on Matrices: Board Coverage; 1. Matrix Notation and Operations; 1.1 Matrix Addition and Scalar Multiplication; 1.2 Matrix Multipl."
+description:
+  'A-Level Further Maths notes on Matrices: Board Coverage; 1. Matrix Notation and Operations; 1.1
+  Matrix Addition and Scalar Multiplication; 1.2 Matrix Multipl.'
 date: 2026-04-02T00:00:00.000Z
 tags:
   - FurtherMaths
@@ -10,6 +12,7 @@ categories:
 slug: further-matrices
 sidebar_position: 2
 ---
+
 ## Matrices
 
 Matrices provide a compact algebraic framework for representing and manipulating systems of linear
@@ -19,20 +22,20 @@ Transformations of the plane and space.
 
 ### Board Coverage
 
-| Board | Paper | Notes |
+| Board   | Paper   | Notes                                                   |
 | ------- | ------- | ------------------------------------------------------- |
-| AQA | Paper 1 | 3D transformations, eigenvalues and eigenvectors |
-| Edexcel | FP1 | 2D transformations, $3\times3$ matrices, determinants |
-| OCR (A) | Paper 1 | 2D transformations, $3\times3$ matrices |
-| CIE | P1 | 2D and basic 3D transformations, inverses, determinants |
+| AQA     | Paper 1 | 3D transformations, eigenvalues and eigenvectors        |
+| Edexcel | FP1     | 2D transformations, $3\times3$ matrices, determinants   |
+| OCR (A) | Paper 1 | 2D transformations, $3\times3$ matrices                 |
+| CIE     | P1      | 2D and basic 3D transformations, inverses, determinants |
 
 <hr />
 
 ## 1. Matrix Notation and Operations
 
 **Definition.** An $m \times n$ _matrix_ is a rectangular array of numbers arranged in $m$ rows and
-$n$ columns. We write $\mathbf{A} = (a_{ij})$ where $a_{ij}$ is the entry in row $i$Column $j$.
-The set of all $m \times n$ matrices with real entries is denoted $M_{m\times n}(\mathbb{R})$.
+$n$ columns. We write $\mathbf{A} = (a_{ij})$ where $a_{ij}$ is the entry in row $i$Column $j$. The
+set of all $m \times n$ matrices with real entries is denoted $M_{m\times n}(\mathbb{R})$.
 
 A matrix with a single row is a _row vector_, and a matrix with a single column is a _column
 Vector_.
@@ -54,13 +57,12 @@ Associative.
 ### 1.2 Matrix Multiplication
 
 **Definition.** If $\mathbf{A} \in M_{m \times p}(\mathbb{R})$ and
-$\mathbf{B} \in M_{p \times n}(\mathbb{R})$The product
-$\mathbf{AB} \in M_{m \times n}(\mathbb{R})$ is defined by:
+$\mathbf{B} \in M_{p \times n}(\mathbb{R})$The product $\mathbf{AB} \in M_{m \times n}(\mathbb{R})$
+is defined by:
 
 $$\boxed{(\mathbf{AB})_{ij} = \sum_{k=1}^{p} a_{ik}\, b_{kj}}$$
 
-Matrix multiplication is associative but **not commutative** :
-$\mathbf{AB} \neq \mathbf{BA}$.
+Matrix multiplication is associative but **not commutative** : $\mathbf{AB} \neq \mathbf{BA}$.
 
 The $n \times n$ identity matrix $\mathbf{I}_n$ satisfies
 $\mathbf{A}\mathbf{I}_n = \mathbf{I}_n\mathbf{A} = \mathbf{A}$ for any
@@ -126,8 +128,8 @@ Determinants multiply.
 
 ## 3. Inverse Matrices
 
-**Definition.** The _inverse_ of a square matrix $\mathbf{A}$Written $\mathbf{A}^{-1}$Is the
-Unique matrix satisfying:
+**Definition.** The _inverse_ of a square matrix $\mathbf{A}$Written $\mathbf{A}^{-1}$Is the Unique
+matrix satisfying:
 
 $$\mathbf{A}\mathbf{A}^{-1} = \mathbf{A}^{-1}\mathbf{A} = \mathbf{I}$$
 
@@ -204,7 +206,7 @@ For a $2 \times 2$ system:
 
 - $\det(\mathbf{A}) \neq 0$: the two lines intersect at a unique point.
 - $\det(\mathbf{A}) = 0$ and the equations are consistent: the lines are coincident (infinitely many
- solutions).
+  solutions).
 - $\det(\mathbf{A}) = 0$ and the equations are inconsistent: the lines are parallel (no solutions).
 
 ### 4.2 Cramer's Rule
@@ -285,8 +287,8 @@ Note: $\det = 1$ for shears, so area is preserved.
 
 ### 5.5 Combining Transformations
 
-If transformation $\mathbf{A}$ is followed by transformation $\mathbf{B}$The combined
-Transformation is represented by $\mathbf{BA}$ (rightmost applied first).
+If transformation $\mathbf{A}$ is followed by transformation $\mathbf{B}$The combined Transformation
+is represented by $\mathbf{BA}$ (rightmost applied first).
 
 :::warning Order matters. A rotation followed by a reflection generally produces a different result
 From a reflection followed by a rotation. The combined matrix is $\mathbf{BA}$ (not $\mathbf{AB}$)
@@ -376,8 +378,8 @@ This is the _characteristic equation_ of $\mathbf{A}$. Its roots are the eigenva
 
 ### 7.2 Finding Eigenvectors
 
-For each eigenvalue $\lambda$Solve $(\mathbf{A} - \lambda\mathbf{I})\mathbf{v} = \mathbf{0}$ by
-Row reduction.
+For each eigenvalue $\lambda$Solve $(\mathbf{A} - \lambda\mathbf{I})\mathbf{v} = \mathbf{0}$ by Row
+reduction.
 
 ### 7.3 Diagonalisation
 
@@ -628,8 +630,8 @@ Irrelevant because scalar multiples of the identity commute with all matrices.
 <hr />
 
 **Problem 7.** AQA only. Find the eigenvalues and corresponding eigenvectors of
-$\mathbf{A} = \begin{pmatrix} 5 & 4 \\ 1 & 2 \end{pmatrix}$And write down a matrix $\mathbf{P}$
-And diagonal matrix $\mathbf{D}$ such that $\mathbf{A} = \mathbf{P}\mathbf{D}\mathbf{P}^{-1}$.
+$\mathbf{A} = \begin{pmatrix} 5 & 4 \\ 1 & 2 \end{pmatrix}$And write down a matrix $\mathbf{P}$ And
+diagonal matrix $\mathbf{D}$ such that $\mathbf{A} = \mathbf{P}\mathbf{D}\mathbf{P}^{-1}$.
 
 <details>
 <summary>Hint</summary>
@@ -864,12 +866,12 @@ $\mathbf{A}^{-1} = \dfrac{1}{-1}\begin{pmatrix}1&2&-2\\-1&-2&1\\-1&-1&1\end{pmat
 
 ## 9. Common Pitfalls
 
-| Pitfall | Correct Approach |
-| --------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
-| Assuming all matrices are diagonalisable | Check geometric multiplicity equals algebraic multiplicity for each eigenvalue |
-| Forgetting that $(\mathbf{AB})^{-1} = \mathbf{B}^{-1}\mathbf{A}^{-1}$ | The order reverses |
-| Computing $\det(\mathbf{A}+\mathbf{B}) = \det(\mathbf{A})+\det(\mathbf{B})$ | , $\det(\mathbf{A}+\mathbf{B}) \neq \det(\mathbf{A})+\det(\mathbf{B})$ |
-| Mixing up row and column operations | Column operations change the determinant differently from row operations |
+| Pitfall                                                                     | Correct Approach                                                               |
+| --------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
+| Assuming all matrices are diagonalisable                                    | Check geometric multiplicity equals algebraic multiplicity for each eigenvalue |
+| Forgetting that $(\mathbf{AB})^{-1} = \mathbf{B}^{-1}\mathbf{A}^{-1}$       | The order reverses                                                             |
+| Computing $\det(\mathbf{A}+\mathbf{B}) = \det(\mathbf{A})+\det(\mathbf{B})$ | , $\det(\mathbf{A}+\mathbf{B}) \neq \det(\mathbf{A})+\det(\mathbf{B})$         |
+| Mixing up row and column operations                                         | Column operations change the determinant differently from row operations       |
 
 ---
 
@@ -958,16 +960,16 @@ Cayley--Hamilton connects matrices to polynomial algebra. See
 
 ## 12. Key Results Summary
 
-| Result | Formula/Condition |
+| Result               | Formula/Condition                                                           |
 | -------------------- | --------------------------------------------------------------------------- | ---------------- | ------------------------------------ |
-| Invertibility | $\mathbf{A}$ is invertible $\iff$ $\det(\mathbf{A}) \neq 0$ |
-| $(\mathbf{AB})^{-1}$ | $\mathbf{B}^{-1}\mathbf{A}^{-1}$ |
-| $(\mathbf{AB})^T$ | $\mathbf{B}^T\mathbf{A}^T$ |
-| $\det(\mathbf{AB})$ | $\det(\mathbf{A})\det(\mathbf{B})$ |
-| Trace of product | $\text{tr}(\mathbf{AB}) = \text{tr}(\mathbf{BA})$ |
-| Cayley--Hamilton | $\mathbf{A}$ satisfies its own characteristic equation |
-| Diagonalisability | All eigenvalues must have geometric multiplicity $=$ algebraic multiplicity |
-| Area scaling | $                                                                           | \det(\mathbf{T}) | \times$ original area $=$ image area |
+| Invertibility        | $\mathbf{A}$ is invertible $\iff$ $\det(\mathbf{A}) \neq 0$                 |
+| $(\mathbf{AB})^{-1}$ | $\mathbf{B}^{-1}\mathbf{A}^{-1}$                                            |
+| $(\mathbf{AB})^T$    | $\mathbf{B}^T\mathbf{A}^T$                                                  |
+| $\det(\mathbf{AB})$  | $\det(\mathbf{A})\det(\mathbf{B})$                                          |
+| Trace of product     | $\text{tr}(\mathbf{AB}) = \text{tr}(\mathbf{BA})$                           |
+| Cayley--Hamilton     | $\mathbf{A}$ satisfies its own characteristic equation                      |
+| Diagonalisability    | All eigenvalues must have geometric multiplicity $=$ algebraic multiplicity |
+| Area scaling         | $                                                                           | \det(\mathbf{T}) | \times$ original area $=$ image area |
 
 ---
 

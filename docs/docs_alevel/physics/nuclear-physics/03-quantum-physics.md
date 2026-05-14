@@ -1,6 +1,8 @@
 ---
 title: Quantum Physics
-description: "A-Level Physics notes on Quantum Physics: 1. The Photoelectric Effect; Observations; Einstein's Explanation (1905); Derivation of the Photoelectric Equation."
+description:
+  "A-Level Physics notes on Quantum Physics: 1. The Photoelectric Effect; Observations; Einstein's
+  Explanation (1905); Derivation of the Photoelectric Equation."
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Physics
@@ -9,11 +11,10 @@ categories:
   - Physics
 slug: quantum-physics
 ---
+
 ## Quantum Physics
 
-:::info
-Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4
-:::
+:::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4 :::
 
 ## 1. The Photoelectric Effect
 
@@ -31,8 +32,7 @@ When light of sufficiently high frequency is incident on a metal surface, electr
 Observations:
 
 1. Electrons are emitted **instantaneously** (no time delay, even for very low intensity).
-2. **No electrons are emitted** if the frequency is below a threshold $f_0$Regardless of
- intensity.
+2. **No electrons are emitted** if the frequency is below a threshold $f_0$Regardless of intensity.
 3. The **maximum kinetic energy** of emitted electrons depends on frequency, not intensity.
 4. Increasing intensity increases the **number** of electrons, not their energy.
 
@@ -170,7 +170,7 @@ $$\boxed{\lambda = \frac{h}{p} = \frac{h}{mv}}$$
 3. Equating: $pc = hc/\lambda$.
 4. Therefore: $\lambda = h/p$ for a photon.
 5. De Broglie postulated that this relation applies universally to **all** particles, not just
- photons:
+   photons:
 
 $$\boxed{\lambda = \frac{h}{p}}$$
 
@@ -226,11 +226,9 @@ Continuous spectrum). The dark lines are at the same frequencies as the emission
 A hot solid or dense gas emits a continuous spectrum (all frequencies), because the close proximity
 Of atoms broadens the energy levels into bands.
 
-:::tip
-Exam Technique When calculating photon wavelengths from energy level transitions, first find
+:::tip Exam Technique When calculating photon wavelengths from energy level transitions, first find
 $\Delta E$ in joules, then use $\lambda = hc/\Delta E$. Remember to convert eV to joules:
-$1\,\mathrm{eV} = 1.60 \times 10^{-19}$ J.
-:::
+$1\,\mathrm{eV} = 1.60 \times 10^{-19}$ J. :::
 
 ## 5. Wave-Particle Duality — Deeper Analysis
 
@@ -290,12 +288,12 @@ Superposition of many plane waves with different wavelengths (and hence differen
 $p = h/\lambda$).
 
 1. Consider a particle whose wavefunction is a superposition of plane waves with wave numbers
- centred at $k_0 = p_0/\hbar$ and spread over a range $\Delta k$:
+   centred at $k_0 = p_0/\hbar$ and spread over a range $\Delta k$:
 
 $$\psi(x) = \int_{k_0 - \Delta k}^{k_0 + \Delta k} A(k) e^{ikx}\, dk$$
 
 2. The localisation of this wave packet is determined by the spread in $k$. For a Gaussian amplitude
- $A(k)$The resulting $\psi(x)$ is also Gaussian, and the widths satisfy:
+   $A(k)$The resulting $\psi(x)$ is also Gaussian, and the widths satisfy:
 
 $$\Delta x \cdot \Delta k = \frac{1}{2}$$
 
@@ -310,13 +308,10 @@ The general inequality $\Delta x \cdot \Delta p \geq \hbar/2$.
 
 $\square$
 
-:::warning
-Warning
-System." While this is a consequence, it is not the fundamental origin. The principle follows from
-The mathematics of wave superposition — it is intrinsic to the wave nature of matter, not an
-Artifact of clumsy measurement. A particle **does not simultaneously possess** a well-defined
-Position and a well-defined momentum.
-:::
+:::warning Warning System." While this is a consequence, it is not the fundamental origin. The
+principle follows from The mathematics of wave superposition — it is intrinsic to the wave nature of
+matter, not an Artifact of clumsy measurement. A particle **does not simultaneously possess** a
+well-defined Position and a well-defined momentum. :::
 
 ### Consequences of the Uncertainty Principle
 
@@ -371,12 +366,12 @@ Two postulates.
 **Bohr's Postulates:**
 
 1. **Quantised angular momentum.** The electron can only occupy orbits where its angular momentum is
- an integer multiple of $\hbar$:
+   an integer multiple of $\hbar$:
 
 $$L = m_e v r = n\hbar, \qquad n = 1, 2, 3, \ldots$$
 
 2. **Radiation condition.** An electron in a stationary orbit does not radiate. It emits or absorbs
- a photon only when transitioning between orbits:
+   a photon only when transitioning between orbits:
 
 $$hf = E_{n_i} - E_{n_f}$$
 
@@ -490,11 +485,11 @@ Rises again, drops at $V \approx 9.8$ V, again at $V \approx 14.7$ V, and so on.
 **Explanation.**
 
 1. At $V = 4.9$ V, electrons have just enough kinetic energy ($4.9$ eV) to excite a Hg atom from its
- ground state to its first excited state via an inelastic collision.
+   ground state to its first excited state via an inelastic collision.
 2. The electron loses $4.9$ eV and no longer has enough energy to overcome the small retarding
- potential between grid and anode — the current drops.
+   potential between grid and anode — the current drops.
 3. At higher voltages, the electron can undergo one excitation and still reach the anode (current
- rises), then at $V = 9.8$ V it can excite two atoms, and so on.
+   rises), then at $V = 9.8$ V it can excite two atoms, and so on.
 
 The spacing of $4.9$ V between successive dips directly measures the energy gap to the first excited
 State of Hg. The emitted photon has wavelength:
@@ -503,12 +498,9 @@ $$\lambda = \frac◆LB◆hc◆RB◆◆LB◆\Delta E◆RB◆ = \frac◆LB◆1240\
 
 Which is in the UV — consistent with the observed UV emission from the Hg vapour.
 
-:::tip
-Tip
-Confirms quantised energy levels." The key points are: (1) the periodic current drops occur at
-Multiples of $4.9$ V, (2) this corresponds to a fixed energy loss per collision, (3) the fixed
-Energy loss can only be explained by discrete (quantised) energy levels in the Hg atom.
-:::
+:::tip Tip Confirms quantised energy levels." The key points are: (1) the periodic current drops
+occur at Multiples of $4.9$ V, (2) this corresponds to a fixed energy loss per collision, (3) the
+fixed Energy loss can only be explained by discrete (quantised) energy levels in the Hg atom. :::
 
 ## 7. Wave Functions and Probability
 
@@ -531,11 +523,8 @@ $$\boxed{\int_{-\infty}^{\infty} |\psi(x)|^2\,dx = 1}$$
 This is the **normalisation condition**. A wave function that satisfies this condition is said to be
 **normalised**.
 
-:::warning
-Warning
-Only $|\psi(x)|^2 = \psi^*(x)\psi(x)$ has physical meaning as a probability density. Also, $\psi(x)$
-Is not directly measurable; only $|\psi(x)|^2$ is observable.
-:::
+:::warning Warning Only $|\psi(x)|^2 = \psi^*(x)\psi(x)$ has physical meaning as a probability
+density. Also, $\psi(x)$ Is not directly measurable; only $|\psi(x)|^2$ is observable. :::
 
 ### Electron in a Box: 1D Infinite Potential Well
 
@@ -549,7 +538,7 @@ $$\psi(0) = 0 \quad \mathrm{and} \quad \psi(L) = 0$$
 **Proof: Derivation of the wave functions and energy levels.**
 
 1. Inside the box ($0 \lt x \lt L$), the time-independent Schrodinger equation for a free particle
- is:
+   is:
 
 $$-\frac◆LB◆\hbar^2◆RB◆◆LB◆2m◆RB◆\frac◆LB◆d^2\psi◆RB◆◆LB◆dx^2◆RB◆ = E\psi$$
 
@@ -558,7 +547,7 @@ $$-\frac◆LB◆\hbar^2◆RB◆◆LB◆2m◆RB◆\frac◆LB◆d^2\psi◆RB◆◆
 $$\frac◆LB◆d^2\psi◆RB◆◆LB◆dx^2◆RB◆ + \frac◆LB◆2mE◆RB◆◆LB◆\hbar^2◆RB◆\psi = 0$$
 
 3. This is the simple harmonic oscillator equation with $k^2 = 2mE/\hbar^2$. The general solution
- is:
+   is:
 
 $$\psi(x) = A\sin(kx) + B\cos(kx)$$
 
@@ -598,45 +587,43 @@ $\square$
 **Key features of the solutions:**
 
 - **Quantised energy.** Only discrete energies $E_n = n^2 h^2/(8mL^2)$ are allowed — quantisation
- emerges from boundary conditions, not from ad hoc postulates.
+  emerges from boundary conditions, not from ad hoc postulates.
 - **Zero-point energy.** $E_1 = h^2/(8mL^2) \gt 0$. The ground state energy is non-zero, a direct
- consequence of the uncertainty principle: confining the particle to the box requires momentum
- uncertainty, hence kinetic energy.
+  consequence of the uncertainty principle: confining the particle to the box requires momentum
+  uncertainty, hence kinetic energy.
 - **Nodes.** The wave function $\psi_n$ has $n - 1$ nodes (zero crossings) within the box. Higher
- energy states have more nodes.
+  energy states have more nodes.
 
 ### Comparison with the Bohr Model
 
-| Feature | Bohr Model | Infinite Square Well |
+| Feature                | Bohr Model               | Infinite Square Well          |
 | ---------------------- | ------------------------ | ----------------------------- |
 | Origin of quantisation | Postulate ($L = n\hbar$) | Boundary conditions on $\psi$ |
-| Energy scaling | $E_n \propto -1/n^2$ | $E_n \propto n^2$ |
-| Ground state | $E_1 = -13.6$ eV | $E_1 = h^2/(8mL^2)$ |
-| Angular momentum | $L = n\hbar$ | Not defined (1D) |
-| Validity | Hydrogen-like atoms only | General confinement |
+| Energy scaling         | $E_n \propto -1/n^2$     | $E_n \propto n^2$             |
+| Ground state           | $E_1 = -13.6$ eV         | $E_1 = h^2/(8mL^2)$           |
+| Angular momentum       | $L = n\hbar$             | Not defined (1D)              |
+| Validity               | Hydrogen-like atoms only | General confinement           |
 
 The Bohr model and the infinite square well both give quantised energy levels, but the **mechanism**
 Is fundamentally different. The Bohr model imposes quantisation as an axiom; in wave mechanics,
-Quantisation **emerges ** from the requirement that the wave function satisfy boundary
-Conditions. This is the deeper insight of quantum mechanics.
+Quantisation **emerges ** from the requirement that the wave function satisfy boundary Conditions.
+This is the deeper insight of quantum mechanics.
 
 ### Probability Density Plots
 
 For the first three states:
 
 - **$n = 1$:** $|\psi_1(x)|^2 = (2/L)\sin^2(\pi x/L)$. Maximum probability at the centre
- ($x = L/2$). No nodes inside the box.
+  ($x = L/2$). No nodes inside the box.
 - **$n = 2$:** $|\psi_2(x)|^2 = (2/L)\sin^2(2\pi x/L)$. A node at $x = L/2$. Maxima at $x = L/4$ and
- $x = 3L/4$. The particle is **never** found at the centre — this has no classical analogue.
+  $x = 3L/4$. The particle is **never** found at the centre — this has no classical analogue.
 - **$n = 3$:** $|\psi_3(x)|^2 = (2/L)\sin^2(3\pi x/L)$. Two nodes at $x = L/3$ and $x = 2L/3$. Three
- maxima.
+  maxima.
 
-:::warning
-Warning
-(nodes), but the probability of finding the particle in an **interval** of finite width containing a
-Node is not zero. When asked "what is the probability at position $x$" the correct answer is zero
-For any single point (probability densities are per unit length). Always integrate over an interval.
-:::
+:::warning Warning (nodes), but the probability of finding the particle in an **interval** of finite
+width containing a Node is not zero. When asked "what is the probability at position $x$" the
+correct answer is zero For any single point (probability densities are per unit length). Always
+integrate over an interval. :::
 
 ## 8. Electron Microscopy
 
@@ -664,13 +651,13 @@ Smaller, so the theoretical resolution is $\sim 10^5$ times better.
 
 ### TEM vs SEM
 
-| Feature | TEM (Transmission) | SEM (Scanning) |
+| Feature              | TEM (Transmission)                        | SEM (Scanning)                            |
 | -------------------- | ----------------------------------------- | ----------------------------------------- |
-| Principle | Electrons transmitted through thin sample | Electrons scattered from surface |
-| Image | 2D projection of internal structure | 3D surface topography |
-| Sample | Must be very thin ($\lt 100$ nm) | Can be bulk, coated with conductive layer |
-| Resolution | $\sim 0.1$ nm | $\sim 1$ nm |
-| Accelerating voltage | 100--300 kV | 1--30 kV |
+| Principle            | Electrons transmitted through thin sample | Electrons scattered from surface          |
+| Image                | 2D projection of internal structure       | 3D surface topography                     |
+| Sample               | Must be very thin ($\lt 100$ nm)          | Can be bulk, coated with conductive layer |
+| Resolution           | $\sim 0.1$ nm                             | $\sim 1$ nm                               |
+| Accelerating voltage | 100--300 kV                               | 1--30 kV                                  |
 
 ### Accelerating Voltage for a Given Resolution
 
@@ -788,9 +775,9 @@ Explain why the photoelectric effect cannot be explained by classical wave theor
 Intensity at any frequency should eventually eject electrons — but there is a frequency threshold
 Below which no electrons are emitted regardless of intensity. (2) Energy accumulates over time, so
 There should be a time delay at low intensities — but emission is instantaneous. (3) Maximum kinetic
-Energy should depend on intensity — but on frequency. These observations are explained by
-The photon model: each photon has energy $hf$; one photon interacts with one electron; the photon
-Must have enough energy ($hf \gt \phi$) to liberate the electron.
+Energy should depend on intensity — but on frequency. These observations are explained by The photon
+model: each photon has energy $hf$; one photon interacts with one electron; the photon Must have
+enough energy ($hf \gt \phi$) to liberate the electron.
 
 <b>If you get this wrong, revise:</b> [Why wave theory fails](#threshold-frequency)
 
@@ -902,7 +889,7 @@ De-excites.
 **Answer.**
 
 1. The spacing between consecutive dips is $9.8 - 4.9 = 4.9$ V, which corresponds to an energy of
- $4.9$ eV. This is the energy of the first excited state above the ground state.
+   $4.9$ eV. This is the energy of the first excited state above the ground state.
 
 2. Wavelength of the emitted photon:
 

@@ -1,6 +1,8 @@
 ---
 title: Setup Traefik
-description: "Setup Traefik — Why Traefik; Prerequisites; Traefik Concepts; Docker Compose Deployment with worked examples and exam-style questions."
+description:
+  'Setup Traefik — Why Traefik; Prerequisites; Traefik Concepts; Docker Compose Deployment with
+  worked examples and exam-style questions.'
 date: 2025-07-21T18:30:46.381Z
 tags:
   - truenas
@@ -8,20 +10,21 @@ categories:
   - truenas
 slug: setup-traefik
 ---
+
 ## Why Traefik
 
 Traefik is a modern HTTP reverse proxy and load balancer designed for microservices and
 Containerized environments. Key advantages over alternatives:
 
-| Feature | Traefik | Nginx Proxy Manager | Caddy |
+| Feature                           | Traefik                            | Nginx Proxy Manager   | Caddy            |
 | --------------------------------- | ---------------------------------- | --------------------- | ---------------- |
-| Auto-discovery from Docker labels | Yes (native) | No (manual UI) | Yes (via plugin) |
-| TLS certificate management | Built-in ACME | Built-in (UI) | Built-in |
-| Configuration method | Labels, file, CLI | Web UI | Caddyfile |
-| Dynamic routing | Automatic on container start | Manual per proxy host | Automatic |
-| Learning curve | Medium | Low | Low |
-| Dashboard | Built-in | Built-in | No |
-| Docker Compose integration | Excellent (labels on each service) | Separate container | Good |
+| Auto-discovery from Docker labels | Yes (native)                       | No (manual UI)        | Yes (via plugin) |
+| TLS certificate management        | Built-in ACME                      | Built-in (UI)         | Built-in         |
+| Configuration method              | Labels, file, CLI                  | Web UI                | Caddyfile        |
+| Dynamic routing                   | Automatic on container start       | Manual per proxy host | Automatic        |
+| Learning curve                    | Medium                             | Low                   | Low              |
+| Dashboard                         | Built-in                           | Built-in              | No               |
+| Docker Compose integration        | Excellent (labels on each service) | Separate container    | Good             |
 
 Traefik shines in a homelab because it eliminates manual proxy configuration. When you start a new
 Container with the right labels, Traefik picks it up and routes traffic immediately — no restart, no
@@ -40,7 +43,7 @@ Before deploying, understand the core routing model:
 
 - **Routers**: Define how requests reach your services (host-based, path-based, etc.)
 - **Middlewares**: Modify requests before they reach services (authentication, headers, rate
- limiting, compression)
+  limiting, compression)
 - **Services**: Define the backend (container IP + port)
 - **EntryPoints**: Listening ports (80 for HTTP, 443 for HTTPS, 8080 for dashboard)
 - **Providers**: Sources of configuration (Docker labels, file provider, etc.)
@@ -459,15 +462,16 @@ docker inspect jellyfin | jq '.[0].Config.Labels'
 ```
 
 3. **Check the dashboard** — all routers should show a green status. Red or yellow means a
- configuration error.
+   configuration error.
 
 4. **Common issues**:
- - Container not on the `proxy-network` → Traefik cannot reach it
- - `traefik.enable=true` label missing or misspelled
- - Port mismatch: `loadbalancer.server.port` does not match the container's internal port
- - DNS not resolving: the subdomain must point to your public IP
- - Certificate pending: Let's Encrypt has rate limits. Check `acme.json` for error messages
- - `exposedbydefault=false` means you must explicitly enable each service with labels
+
+- Container not on the `proxy-network` → Traefik cannot reach it
+- `traefik.enable=true` label missing or misspelled
+- Port mismatch: `loadbalancer.server.port` does not match the container's internal port
+- DNS not resolving: the subdomain must point to your public IP
+- Certificate pending: Let's Encrypt has rate limits. Check `acme.json` for error messages
+- `exposedbydefault=false` means you must explicitly enable each service with labels
 
 5. **Increase log level** temporarily:
 

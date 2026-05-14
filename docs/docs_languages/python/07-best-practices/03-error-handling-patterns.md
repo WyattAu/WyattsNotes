@@ -1,9 +1,12 @@
 ---
 id: error-handling-patterns
 title: Error Handling Patterns
-description: "Python: Error Handling Patterns — Exception Hierarchy; Catching by Hierarchy; Defining Custom Exceptions; Base Exception Class."
+description:
+  'Python: Error Handling Patterns — Exception Hierarchy; Catching by Hierarchy; Defining Custom
+  Exceptions; Base Exception Class.'
 slug: error-handling-patterns
 ---
+
 ## Exception Hierarchy
 
 Python exceptions form a class hierarchy rooted at `BaseException`. Understanding this hierarchy is
@@ -50,11 +53,9 @@ BaseException
     └── AssertionError
 ```
 
-:::info
-`SystemExit``KeyboardInterrupt`And `GeneratorExit` inherit directly from
-`BaseException`Not `Exception`. This means `except Exception:` does not catch them — which is
-Correct, since you generally do not want to catch system-level signals.
-:::
+:::info `SystemExit``KeyboardInterrupt`And `GeneratorExit` inherit directly from `BaseException`Not
+`Exception`. This means `except Exception:` does not catch them — which is Correct, since you
+generally do not want to catch system-level signals. :::
 
 ### Catching by Hierarchy
 
@@ -146,11 +147,9 @@ print(str(e))   # db.example.com:5432 — connection refused
 print(repr(e))  # ServerError('db.example.com', 5432, 'connection refused')
 ```
 
-:::tip
-Always call `super().__init__(message)` in custom exceptions. The message is stored in
+:::tip Always call `super().__init__(message)` in custom exceptions. The message is stored in
 `self.args` and used by the default `__str__` implementation. Omitting this breaks exception
-Chaining and logging.
-:::
+Chaining and logging. :::
 
 ## EAFP vs LBYL
 
@@ -191,16 +190,15 @@ print(get_value_lbyl({"a": 1}, "b"))   # None
 
 ### When to Use Each
 
-| Scenario | Prefer | Reason |
+| Scenario                 | Prefer                       | Reason                            |
 | ------------------------ | ---------------------------- | --------------------------------- |
-| File existence | EAFP (`open` + `except`) | TOCTOU race condition with LBYL |
-| Dict key access | EAFP (`try/except KeyError`) | Cleaner, idiomatic |
-| Type checking | LBYL (`isinstance`) | Wrong types are programmer errors |
-| External API calls | EAFP + retry | Network conditions change |
-| Configuration validation | LBYL at boundary | Fail fast, clear error messages |
+| File existence           | EAFP (`open` + `except`)     | TOCTOU race condition with LBYL   |
+| Dict key access          | EAFP (`try/except KeyError`) | Cleaner, idiomatic                |
+| Type checking            | LBYL (`isinstance`)          | Wrong types are programmer errors |
+| External API calls       | EAFP + retry                 | Network conditions change         |
+| Configuration validation | LBYL at boundary             | Fail fast, clear error messages   |
 
-:::warning
-LBYL with file operations has a TOCTOU (Time of Check to Time of Use) race condition:
+:::warning LBYL with file operations has a TOCTOU (Time of Check to Time of Use) race condition:
 
 ```python
 import os
@@ -300,11 +298,9 @@ def process_file(path):
             f.close()
 ```
 
-:::tip
-Use `else` for code that should run only when no exception occurs. Use `finally` for cleanup
+:::tip Use `else` for code that should run only when no exception occurs. Use `finally` for cleanup
 That must happen regardless. Avoid putting logic in `finally` that might raise exceptions, as it
-Masks the original exception.
-:::
+Masks the original exception. :::
 
 ## Exception Handling in Generators
 
@@ -486,10 +482,8 @@ asyncio.run(main())
 # Logging request: req-002
 ```
 
-:::info
-Unlike `threading.local()``contextvars.ContextVar` is designed for `asyncio` and correctly
-Propagates state through `asyncio.TaskGroup` and `Task` creation.
-:::
+:::info Unlike `threading.local()``contextvars.ContextVar` is designed for `asyncio` and correctly
+Propagates state through `asyncio.TaskGroup` and `Task` creation. :::
 
 ## Assertions
 
@@ -510,8 +504,7 @@ def binary_search(arr, target):
     return -1
 ```
 
-:::warning
-Assertions are disabled with `python -O` (optimized mode) because they are controlled by
+:::warning Assertions are disabled with `python -O` (optimized mode) because they are controlled by
 The `__debug__` constant. **Never use assertions for data validation or runtime checks** — they are
 For debugging and documenting invariants:
 
@@ -574,11 +567,11 @@ class ServerConfig:
 
 ## Error Codes vs Exceptions
 
-| Approach | Use When |
+| Approach     | Use When                                                                             |
 | ------------ | ------------------------------------------------------------------------------------ |
-| Exceptions | Internal logic errors, programming mistakes, unexpected states |
-| Error codes | Expected failure modes (e.g., file not found), C interop, performance-critical paths |
-| Result types | Functional style, explicit error handling, no exceptions |
+| Exceptions   | Internal logic errors, programming mistakes, unexpected states                       |
+| Error codes  | Expected failure modes (e.g., file not found), C interop, performance-critical paths |
+| Result types | Functional style, explicit error handling, no exceptions                             |
 
 ```python
 from dataclasses import dataclass
@@ -650,11 +643,9 @@ class UserService:
             # Do NOT raise — this is a non-critical background sync
 ```
 
-:::tip
-**Log and raise** for unexpected errors the caller must handle. **Log and continue** for
+:::tip **Log and raise** for unexpected errors the caller must handle. **Log and continue** for
 Non-critical background operations. **Raise without logging** when the caller is responsible for
-Handling (e.g., validation at API boundary). Never swallow exceptions silently.
-:::
+Handling (e.g., validation at API boundary). Never swallow exceptions silently. :::
 
 ## Failure Domains
 

@@ -1,11 +1,14 @@
 ---
 title: Advanced Patterns
-description: "Advanced Patterns — Conditional Types: Deep Dive; Distributive Conditional Types; Preventing Distribution; Distribution Rules Summary."
+description:
+  'Advanced Patterns — Conditional Types: Deep Dive; Distributive Conditional Types; Preventing
+  Distribution; Distribution Rules Summary.'
 slug: typescript-advanced-patterns
 date: 2026-04-22T00:00:00.000Z
 tags: [TypeScript]
 categories: [TypeScript]
 ---
+
 ## Conditional Types: Deep Dive
 
 ### Distributive Conditional Types
@@ -39,12 +42,12 @@ type Result = (string | number)[];
 
 ### Distribution Rules Summary
 
-| Form | Distributes? |
+| Form                                                    | Distributes?    |
 | ------------------------------------------------------- | --------------- |
-| `T extends U ? X : Y` | Yes (naked `T`) |
-| `[T] extends [U] ? X : Y` | No |
-| `T extends U ? X : Y` where `T` is not a type parameter | No |
-| `(T & {}) extends U ? X : Y` | No |
+| `T extends U ? X : Y`                                   | Yes (naked `T`) |
+| `[T] extends [U] ? X : Y`                               | No              |
+| `T extends U ? X : Y` where `T` is not a type parameter | No              |
+| `(T & {}) extends U ? X : Y`                            | No              |
 
 ## Recursive Types
 
@@ -688,9 +691,9 @@ type A = GreaterThan<5, 3>;
 type B = GreaterThan<3, 5>;
 ```
 
-**Common Pitfall:** Type-level arithmetic is limited to small numbers ( up to around 9999)
-Because TypeScript has a recursion depth limit. It is also slow for large numbers. Use these
-Techniques for type-level constraints, not for runtime computation.
+**Common Pitfall:** Type-level arithmetic is limited to small numbers ( up to around 9999) Because
+TypeScript has a recursion depth limit. It is also slow for large numbers. Use these Techniques for
+type-level constraints, not for runtime computation.
 
 ## Utility Type Composition
 
@@ -770,8 +773,8 @@ type Methods = {
 
 ### Pitfall 1: Excessive Recursion Depth
 
-Recursive types hit TypeScript's recursion limit ( around 50-100 levels). For deeply nested
-Types, consider iterative approaches or accept shallower recursion:
+Recursive types hit TypeScript's recursion limit ( around 50-100 levels). For deeply nested Types,
+consider iterative approaches or accept shallower recursion:
 
 ```ts
 type DepthLimit<T, D extends number, Current extends any[] = []> = Current['length'] extends D
@@ -811,8 +814,8 @@ function isUSD(value: number): value is USD {
 }
 ```
 
-This assertion is true because the brand is erased. For meaningful runtime validation, add
-Actual checks.
+This assertion is true because the brand is erased. For meaningful runtime validation, add Actual
+checks.
 
 ## Summary
 

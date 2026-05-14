@@ -1,6 +1,8 @@
 ---
 title: Prejudice and Discrimination
-description: "Comprehensive coverage of the origins of prejudice, stereotype formation, stereotype threat, interventions to reduce prejudice, and key research for IB"
+description:
+  'Comprehensive coverage of the origins of prejudice, stereotype formation, stereotype threat,
+  interventions to reduce prejudice, and key research for IB'
 slug: prejudice-and-discrimination
 ---
 
@@ -15,13 +17,13 @@ The sociocultural level of analysis.
 ### Distinguishing Prejudice, Stereotyping, and Discrimination
 
 - **Stereotyping:** Cognitive component -- the belief that all members of a social group share
- certain characteristics. Stereotypes are cognitive schemas that simplify social information
- processing but can lead to inaccurate and unfair generalisations.
+  certain characteristics. Stereotypes are cognitive schemas that simplify social information
+  processing but can lead to inaccurate and unfair generalisations.
 - **Prejudice:** Affective component -- a negative emotional attitude toward a social group or its
- members. Prejudice may be conscious (explicit) or unconscious (implicit).
+  members. Prejudice may be conscious (explicit) or unconscious (implicit).
 - **Discrimination:** Behavioural component -- unequal treatment of individuals based on their group
- membership. Discrimination can range from subtle (microaggressions) to overt (violence, exclusion
- from employment or housing).
+  membership. Discrimination can range from subtle (microaggressions) to overt (violence, exclusion
+  from employment or housing).
 
 These three components are related but distinct. A person may hold stereotypes without feeling
 Prejudice (believing a stereotype but not endorsing it emotionally), feel prejudice without acting
@@ -56,8 +58,8 @@ Downturns, when competition for employment intensifies.
 
 Scapegoat theory, rooted in frustration-aggression theory (Dollard et al., 1939), proposes that
 Prejudice arises when individuals experience frustration (from any source) and displace their
-Aggressive impulses onto a convenient target group. The scapegoat is a group that is
-Powerless, visible, and culturally distinct -- making it a safe target for displaced aggression.
+Aggressive impulses onto a convenient target group. The scapegoat is a group that is Powerless,
+visible, and culturally distinct -- making it a safe target for displaced aggression.
 
 **Historical examples:** The persecution of Jewish communities in medieval Europe (blamed for plague
 And economic hardship), the internment of Japanese Americans during World War II, and the
@@ -66,9 +68,9 @@ Scapegoating of minority groups during economic crises.
 **Evaluation:**
 
 - Scapegoat theory explains why prejudice often increases during times of economic hardship and
- social upheaval.
+  social upheaval.
 - However, it does not explain why specific groups are targeted as scapegoats rather than others,
- nor does it account for the persistence of prejudice in the absence of frustration.
+  nor does it account for the persistence of prejudice in the absence of frustration.
 
 ### Social Learning Theory
 
@@ -83,8 +85,8 @@ Media representations of stereotyped groups influence children's attitudes towar
 
 - Social learning theory explains the transmission of prejudice across generations.
 - However, it does not fully explain why children sometimes develop different attitudes from their
- parents, nor does it account for the origins of prejudice (why certain groups become targets in
- the first place).
+  parents, nor does it account for the origins of prejudice (why certain groups become targets in
+  the first place).
 
 ## Stereotype Formation
 
@@ -98,17 +100,17 @@ At the cost of accuracy and fairness.
 **Key cognitive mechanisms:**
 
 1. **Categorisation:** Dividing people into groups based on salient characteristics (e.g., race,
- gender, age).
+   gender, age).
 2. **Illusory correlation:** The tendency to perceive a relationship between two variables (e.g.,
- group membership and behaviour) when no such relationship exists, or to overestimate the strength
- of an existing relationship. Illusory correlations are more likely to form when the two
- categories are distinctive (e.g., a minority group in a majority population).
+   group membership and behaviour) when no such relationship exists, or to overestimate the strength
+   of an existing relationship. Illusory correlations are more likely to form when the two
+   categories are distinctive (e.g., a minority group in a majority population).
 3. **Confirmation bias:** Once a stereotype is formed, people selectively attend to, remember, and
- interpret information that confirms the stereotype, while ignoring or discounting disconfirming
- evidence (see [Thinking and Decision Making](../cognitive/thinking-and-decision-making)).
+   interpret information that confirms the stereotype, while ignoring or discounting disconfirming
+   evidence (see [Thinking and Decision Making](../cognitive/thinking-and-decision-making)).
 4. **In-group homogeneity effect:** The tendency to perceive members of out-groups as more similar
- to each other than members of the in-group. This effect makes stereotypes about out-groups seem
- more valid, because out-group members are perceived as "all the same."
+   to each other than members of the in-group. This effect makes stereotypes about out-groups seem
+   more valid, because out-group members are perceived as "all the same."
 
 ## Stereotype Threat
 
@@ -122,35 +124,35 @@ Triggering self-monitoring processes that divert cognitive resources from the ta
 **Original study:**
 
 - African American and White Stanford University students took a difficult verbal test described as
- either diagnostic of intellectual ability or as a laboratory problem-solving task not diagnostic
- of ability.
+  either diagnostic of intellectual ability or as a laboratory problem-solving task not diagnostic
+  of ability.
 - When the test was described as diagnostic of ability, African American students performed
- significantly worse than White students.
+  significantly worse than White students.
 - When the test was described as non-diagnostic, the performance gap disappeared.
 - Steele and Aronson concluded that African American students experienced stereotype threat in the
- diagnostic condition, which impaired their performance. The anxiety of potentially confirming the
- negative stereotype about African Americans' intellectual ability consumed cognitive resources
- that would otherwise have been devoted to the test.
+  diagnostic condition, which impaired their performance. The anxiety of potentially confirming the
+  negative stereotype about African Americans' intellectual ability consumed cognitive resources
+  that would otherwise have been devoted to the test.
 
 **Subsequent research has demonstrated stereotype threat effects across many domains:**
 
 - Women underperform on mathematics tests when the test is described as showing gender differences
- (Spencer, Steele, and Quinn, 1999).
+  (Spencer, Steele, and Quinn, 1999).
 - Older adults underperform on memory tests when reminded of age-related cognitive decline.
 - White athletes underperform on sports tasks when told the task measures "natural athletic ability"
- (a domain in which stereotypes favour Black athletes; Stone et al., 1999).
+  (a domain in which stereotypes favour Black athletes; Stone et al., 1999).
 
 **Evaluation:**
 
 - Stereotype threat has been extensively replicated across populations, domains, and methodologies.
 - The effect has practical implications for educational testing, workplace evaluations, and any
- situation where performance differences between groups could be influenced by stereotype threat.
+  situation where performance differences between groups could be influenced by stereotype threat.
 - The magnitude of the effect varies depending on the individual's identification with the domain,
- their awareness of the stereotype, and the salience of the stereotyped identity.
+  their awareness of the stereotype, and the salience of the stereotyped identity.
 - Some researchers have questioned the robustness of the effect and have suggested that publication
- bias may have inflated estimates of its magnitude. However, large-scale meta-analyses (Flore and
- Wicherts, 2015) confirm that the effect is real, though smaller than some early estimates
- suggested.
+  bias may have inflated estimates of its magnitude. However, large-scale meta-analyses (Flore and
+  Wicherts, 2015) confirm that the effect is real, though smaller than some early estimates
+  suggested.
 
 ## Interventions to Reduce Prejudice
 
@@ -163,25 +165,25 @@ Discrimination.
 **Methodology:**
 
 - On the first day, Elliott told the class that brown-eyed children were superior: they were given
- extra privileges (longer recess, seconds at lunch), were allowed to sit at the front of the class,
- and were praised for their intelligence. Blue-eyed children were forced to wear collars, were
- seated at the back, and were criticised for their inferiority.
+  extra privileges (longer recess, seconds at lunch), were allowed to sit at the front of the class,
+  and were praised for their intelligence. Blue-eyed children were forced to wear collars, were
+  seated at the back, and were criticised for their inferiority.
 - On the second day, the roles were reversed: blue-eyed children were declared superior and given
- privileges, while brown-eyed children were subordinated.
+  privileges, while brown-eyed children were subordinated.
 - Elliott observed that children in the "superior" group quickly adopted arrogant and discriminatory
- behaviour toward the "inferior" group, while children in the "inferior" group became submissive,
- anxious, and performed worse on academic tasks.
+  behaviour toward the "inferior" group, while children in the "inferior" group became submissive,
+  anxious, and performed worse on academic tasks.
 
 **Evaluation:**
 
 - The exercise dramatically demonstrates how discriminatory behaviour can be created and
- internalised.
+  internalised.
 - However, the exercise has been criticised on ethical grounds: subjecting children to an experience
- of discrimination without their consent caused psychological distress. Several parents complained,
- and the exercise was controversial within the community.
+  of discrimination without their consent caused psychological distress. Several parents complained,
+  and the exercise was controversial within the community.
 - The exercise was not a controlled experiment, and its effects cannot be separated from demand
- characteristics (children may have been responding to the teacher's expectations rather than
- genuinely internalising the roles).
+  characteristics (children may have been responding to the teacher's expectations rather than
+  genuinely internalising the roles).
 
 ### Clark and Clark (1939, 1947): Doll Studies
 
@@ -191,35 +193,35 @@ Identification and self-esteem in African American children.
 **Methodology:**
 
 - African American children (aged 3--7) were shown four identical dolls that differed only in skin
- colour and hair texture: two with white skin and blonde hair, and two with brown skin and black
- hair.
+  colour and hair texture: two with white skin and blonde hair, and two with brown skin and black
+  hair.
 - Children were asked a series of questions: "Which doll is the nice doll?", "Which doll looks
- bad?", "Which doll is the nice colour?", "Give me the doll that looks like you."
+  bad?", "Which doll is the nice colour?", "Give me the doll that looks like you."
 
 **Key findings:**
 
 - A majority of African American children attributed positive characteristics to the white doll and
- negative characteristics to the brown doll.
+  negative characteristics to the brown doll.
 - Many children assigned the brown doll to the "looks bad" and "nice colour" questions
- inconsistently, indicating awareness of racial stigma.
+  inconsistently, indicating awareness of racial stigma.
 - Some children who identified with the brown doll expressed a desire to be white.
 
 **Significance:**
 
 - The Clark doll studies provided evidence that racial segregation and discrimination produced
- negative self-concept in African American children.
+  negative self-concept in African American children.
 - The findings were cited in the landmark Brown v. Board of Education (1954) Supreme Court decision,
- which declared racial segregation in public schools unconstitutional.
+  which declared racial segregation in public schools unconstitutional.
 
 **Evaluation:**
 
 - The studies were methodologically limited by small sample sizes and lack of standardised
- procedures across experiments.
+  procedures across experiments.
 - The interpretation of children's doll preferences as evidence of low self-esteem has been debated.
- Some researchers argue that doll preference reflects awareness of social norms and power
- structures rather than personal self-concept.
+  Some researchers argue that doll preference reflects awareness of social norms and power
+  structures rather than personal self-concept.
 - More recent replications have produced more complex results, with many African American children
- showing positive identification with dolls of their own race.
+  showing positive identification with dolls of their own race.
 
 ### Other Interventions
 
@@ -242,20 +244,20 @@ Intergroup bias is reduced.
 <summary>Common Pitfalls: Prejudice and Discrimination</summary>
 
 - **Do not assume that prejudice is always conscious and intentional.** Modern forms of prejudice
- (implicit bias, aversive racism, symbolic racism) can operate unconsciously, even in individuals
- who sincerely believe they are not prejudiced.
+  (implicit bias, aversive racism, symbolic racism) can operate unconsciously, even in individuals
+  who sincerely believe they are not prejudiced.
 - **Do not assume that contact between groups automatically reduces prejudice.** Contact reduces
- prejudice only under specific conditions: equal status, common goals, intergroup cooperation, and
- institutional support (Allport's contact hypothesis, 1954). Contact without these conditions
- (e.g., unequal status contact) can actually increase prejudice.
+  prejudice only under specific conditions: equal status, common goals, intergroup cooperation, and
+  institutional support (Allport's contact hypothesis, 1954). Contact without these conditions
+  (e.g., unequal status contact) can actually increase prejudice.
 - **Do not conflate stereotypes with accurate generalisations.** While some stereotypes may contain
- a kernel of statistical truth (e.g., group differences in average income or educational
- attainment), applying group-level statistics to individual members is a logical fallacy (the
- ecological fallacy) and is the essence of stereotyping.
+  a kernel of statistical truth (e.g., group differences in average income or educational
+  attainment), applying group-level statistics to individual members is a logical fallacy (the
+  ecological fallacy) and is the essence of stereotyping.
 - **Do not assume that prejudice can be eliminated entirely.** The cognitive mechanisms that give
- rise to stereotyping (categorisation, illusory correlation, confirmation bias) are fundamental to
- human cognition and cannot be eliminated. The goal is to manage and mitigate the effects of these
- mechanisms, not to eradicate them.
+  rise to stereotyping (categorisation, illusory correlation, confirmation bias) are fundamental to
+  human cognition and cannot be eliminated. The goal is to manage and mitigate the effects of these
+  mechanisms, not to eradicate them.
 
 </details>
 

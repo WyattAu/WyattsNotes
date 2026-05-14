@@ -1,6 +1,8 @@
 ---
 title: Email and Application Protocols
-description: "Email and Application Protocols — Email Architecture; Core Components; Email Message Format; MIME — Multipurpose Internet Mail Extensions."
+description:
+  'Email and Application Protocols — Email Architecture; Core Components; Email Message Format; MIME
+  — Multipurpose Internet Mail Extensions.'
 date: 2026-04-09T00:00:00.000Z
 tags:
   - Networking
@@ -8,6 +10,7 @@ categories:
   - Networking
 slug: email-and-application-protocols
 ---
+
 # Email and Application Protocols
 
 Electronic mail and application-layer protocols form the backbone of human communication over the
@@ -25,11 +28,11 @@ The message lifecycle.
 **MUA — Mail User Agent**
 
 The MUA is the software interface that end users interact with to compose, read, and manage email
-Messages. Examples include command-line tools like `mutt` and `mailx`Desktop clients such as
-Mozilla Thunderbird and Microsoft Outlook, and web-based interfaces like Gmail and Roundcube. The
-MUA handles message composition, MIME encoding, submission to an MTA via SMTP on port 587, and
-Retrieval from a message store via IMAP on port 993 or POP3 on port 995. The MUA is also responsible
-For local message rendering, attachment handling, and the application of local filtering rules.
+Messages. Examples include command-line tools like `mutt` and `mailx`Desktop clients such as Mozilla
+Thunderbird and Microsoft Outlook, and web-based interfaces like Gmail and Roundcube. The MUA
+handles message composition, MIME encoding, submission to an MTA via SMTP on port 587, and Retrieval
+from a message store via IMAP on port 993 or POP3 on port 995. The MUA is also responsible For local
+message rendering, attachment handling, and the application of local filtering rules.
 
 **MTA — Mail Transfer Agent**
 
@@ -62,22 +65,22 @@ CRLF followed by at least one whitespace character (folding whitespace).
 
 Key headers include:
 
-| Header | Purpose |
+| Header                      | Purpose                                                          |
 | --------------------------- | ---------------------------------------------------------------- |
-| `From` | The author's mailbox. Must be a single address per RFC 5322. |
-| `To` | Primary recipients. One or more addresses. |
-| `Cc` | Carbon copy recipients. |
-| `Bcc` | Blind carbon copy. Stripped from the message during transit. |
-| `Subject` | The topic or summary of the message. |
-| `Date` | Origination timestamp in RFC 2822 format. |
-| `Message-ID` | Globally unique identifier, `uuid@domain`. |
-| `In-Reply-To` | References the `Message-ID` of the message being replied to. |
-| `References` | Thread history as a list of `Message-ID` values. |
-| `Reply-To` | Overrides the `From` address for reply purposes. |
-| `Content-Type` | MIME type of the body (RFC 2045). |
-| `Content-Transfer-Encoding` | Encoding method: `7bit``8bit``quoted-printable``base64`. |
-| `Content-Disposition` | Inline or attachment with optional filename parameter. |
-| `Received` | Trace header added by each MTA hop with timestamp and host info. |
+| `From`                      | The author's mailbox. Must be a single address per RFC 5322.     |
+| `To`                        | Primary recipients. One or more addresses.                       |
+| `Cc`                        | Carbon copy recipients.                                          |
+| `Bcc`                       | Blind carbon copy. Stripped from the message during transit.     |
+| `Subject`                   | The topic or summary of the message.                             |
+| `Date`                      | Origination timestamp in RFC 2822 format.                        |
+| `Message-ID`                | Globally unique identifier, `uuid@domain`.                       |
+| `In-Reply-To`               | References the `Message-ID` of the message being replied to.     |
+| `References`                | Thread history as a list of `Message-ID` values.                 |
+| `Reply-To`                  | Overrides the `From` address for reply purposes.                 |
+| `Content-Type`              | MIME type of the body (RFC 2045).                                |
+| `Content-Transfer-Encoding` | Encoding method: `7bit``8bit``quoted-printable``base64`.         |
+| `Content-Disposition`       | Inline or attachment with optional filename parameter.           |
+| `Received`                  | Trace header added by each MTA hop with timestamp and host info. |
 
 **Body**
 
@@ -114,13 +117,13 @@ JVBERi0xLjUK...
 
 Common multipart subtypes:
 
-| Subtype | Purpose |
+| Subtype                 | Purpose                                                                           |
 | ----------------------- | --------------------------------------------------------------------------------- |
-| `multipart/mixed` | Independent parts of different types (e.g., text + attachment). |
-| `multipart/alternative` | Same content in different formats; last part is preferred. |
-| `multipart/related` | Parts that reference each other (e.g., HTML with inline images via `Content-ID`). |
-| `multipart/signed` | A two-part body for S/MIME or PGP signatures. |
-| `multipart/report` | Delivery status notifications (DSN, MDN). |
+| `multipart/mixed`       | Independent parts of different types (e.g., text + attachment).                   |
+| `multipart/alternative` | Same content in different formats; last part is preferred.                        |
+| `multipart/related`     | Parts that reference each other (e.g., HTML with inline images via `Content-ID`). |
+| `multipart/signed`      | A two-part body for S/MIME or PGP signatures.                                     |
+| `multipart/report`      | Delivery status notifications (DSN, MDN).                                         |
 
 **Base64 Encoding**
 
@@ -142,25 +145,25 @@ Indicates the MIME type of the attachment data.
 The complete lifecycle of an email message involves five stages:
 
 1. **Compose**: The user creates a message in the MUA, specifying recipients, subject, and body. The
- MUA assigns a `Message-ID`Sets the `Date` header, and performs MIME encoding as needed.
+   MUA assigns a `Message-ID`Sets the `Date` header, and performs MIME encoding as needed.
 
-2. **Submit**: The MUA connects to the submission MTA ( on port 587) and sends the message
- using SMTP with authentication (RFC 4954) and TLS (STARTTLS, RFC 3207). The submission MTA
- validates the sender's credentials and accepts or rejects the message.
+2. **Submit**: The MUA connects to the submission MTA ( on port 587) and sends the message using
+   SMTP with authentication (RFC 4954) and TLS (STARTTLS, RFC 3207). The submission MTA validates
+   the sender's credentials and accepts or rejects the message.
 
 3. **Relay**: The submission MTA resolves the destination domain's MX records via DNS, establishes
- an SMTP connection to the destination MTA on port 25, and transmits the message. Intermediate
- relay MTAs may be involved. Each MTA adds a `Received` trace header. If delivery fails with a 4xx
- response, the MTA queues the message for retry according to an exponential backoff schedule
- ( retrying at 5 min, 15 min, 1 h, 4 h, then every 4 h for up to 5 days per RFC 5321).
+   an SMTP connection to the destination MTA on port 25, and transmits the message. Intermediate
+   relay MTAs may be involved. Each MTA adds a `Received` trace header. If delivery fails with a 4xx
+   response, the MTA queues the message for retry according to an exponential backoff schedule (
+   retrying at 5 min, 15 min, 1 h, 4 h, then every 4 h for up to 5 days per RFC 5321).
 
 4. **Deliver**: The destination MTA accepts the message and passes it to the MDA, which writes it to
- the recipient's mailbox store. If the recipient is local, the MDA may apply Sieve scripts for
- filtering and sorting into subfolders.
+   the recipient's mailbox store. If the recipient is local, the MDA may apply Sieve scripts for
+   filtering and sorting into subfolders.
 
 5. **Retrieve**: The recipient's MUA connects to the mail store using IMAP or POP3 to read and
- manage messages. IMAP allows server-side mailbox manipulation, while POP3 is limited to
- downloading messages to the client.
+   manage messages. IMAP allows server-side mailbox manipulation, while POP3 is limited to
+   downloading messages to the client.
 
 ## SMTP — Simple Mail Transfer Protocol
 
@@ -237,29 +240,29 @@ S: 221 2.0.0 Bye
 **Session Commands**
 
 - `EHLO` (Extended HELO): Identifies the client and requests the server's supported extensions.
- Replaced the original `HELO` command. The server responds with a multi-line 250 reply listing all
- advertised extensions.
+  Replaced the original `HELO` command. The server responds with a multi-line 250 reply listing all
+  advertised extensions.
 
 - `MAIL FROM:`: Specifies the envelope sender address (reverse-path). This address is used for
- bounce messages (NDRs) and is separate from the `From` header in the message body. The `BODY=`
- parameter specifies the message body encoding (`7BIT` or `8BITMIME`). The `SIZE=` parameter
- declares the message size in bytes.
+  bounce messages (NDRs) and is separate from the `From` header in the message body. The `BODY=`
+  parameter specifies the message body encoding (`7BIT` or `8BITMIME`). The `SIZE=` parameter
+  declares the message size in bytes.
 
 - `RCPT TO:`: Specifies a single envelope recipient (forward-path). Multiple recipients require
- multiple `RCPT TO` commands.
+  multiple `RCPT TO` commands.
 
 - `DATA`: Initiates the message data transfer. The server responds with `354` and expects the
- message content terminated by a line containing only a period (`.`). Lines in the message body
- that begin with a period are dot-stuffed (an extra period is prepended) to prevent premature
- termination. The receiving MTA removes the extra period during processing.
+  message content terminated by a line containing only a period (`.`). Lines in the message body
+  that begin with a period are dot-stuffed (an extra period is prepended) to prevent premature
+  termination. The receiving MTA removes the extra period during processing.
 
 - `QUIT`: Terminates the session.
 
-- `RSET`: Resets the current mail transaction, discarding any `MAIL FROM``RCPT TO`And `DATA`
- state without closing the connection.
+- `RSET`: Resets the current mail transaction, discarding any `MAIL FROM``RCPT TO`And `DATA` state
+  without closing the connection.
 
 - `VRFY`: Verifies that a mailbox name is valid (often disabled on production servers to prevent
- directory harvesting).
+  directory harvesting).
 
 - `NOOP`: No operation; used to keep the connection alive or test server responsiveness.
 
@@ -269,8 +272,8 @@ SMTP extensions are advertised in the `EHLO` response and are defined in various
 
 **STARTTLS (RFC 3207)**
 
-The `STARTTLS` command upgrades the plaintext TCP connection to TLS. The client sends `STARTTLS`
-The server responds with `220`And a standard TLS handshake follows. All subsequent commands are
+The `STARTTLS` command upgrades the plaintext TCP connection to TLS. The client sends `STARTTLS` The
+server responds with `220`And a standard TLS handshake follows. All subsequent commands are
 Transmitted over the encrypted channel. STARTTLS provides opportunistic encryption on port 25 and
 Should be mandatory on port 587 (submission). After the TLS handshake, the client must re-issue
 `EHLO` to discover extensions available under encryption.
@@ -294,10 +297,10 @@ Message after receiving the entire body due to size limits.
 
 `PIPELINING` allows the client to send multiple commands without waiting for each response. This
 Reduces round-trip latency, especially over high-latency links. A pipelining client might send
-`MAIL FROM``RCPT TO` (for all recipients), and `DATA` in rapid succession, then read all
-Responses. The client must be prepared to handle errors from any command and roll back accordingly.
-For example, if the first `RCPT TO` is rejected but the second is accepted, the client should not
-Send the `DATA` body since at least one recipient was rejected.
+`MAIL FROM``RCPT TO` (for all recipients), and `DATA` in rapid succession, then read all Responses.
+The client must be prepared to handle errors from any command and roll back accordingly. For
+example, if the first `RCPT TO` is rejected but the second is accepted, the client should not Send
+the `DATA` body since at least one recipient was rejected.
 
 **8BITMIME (RFC 6152)**
 
@@ -324,42 +327,42 @@ Messages early, after receiving only the first chunk.
 
 SMTP uses three-digit reply codes grouped by the first digit:
 
-| First Digit | Meaning |
+| First Digit | Meaning                                                                                |
 | ----------- | -------------------------------------------------------------------------------------- |
-| `2xx` | Success. The requested action was completed. |
-| `3xx` | Intermediate success. Further information is required (e.g., `354` for `DATA`). |
-| `4xx` | Temporary failure. The command failed but may succeed if retried later. |
-| `5xx` | Permanent failure. The command should not be retried without correcting the condition. |
+| `2xx`       | Success. The requested action was completed.                                           |
+| `3xx`       | Intermediate success. Further information is required (e.g., `354` for `DATA`).        |
+| `4xx`       | Temporary failure. The command failed but may succeed if retried later.                |
+| `5xx`       | Permanent failure. The command should not be retried without correcting the condition. |
 
 Common response codes:
 
-| Code | Meaning |
+| Code  | Meaning                                                           |
 | ----- | ----------------------------------------------------------------- |
-| `211` | System status or system help reply. |
-| `214` | Help message (informational). |
-| `220` | Service ready. |
-| `221` | Service closing transmission channel. |
-| `235` | Authentication successful. |
-| `250` | Requested mail action okay, completed. |
-| `252` | Cannot VRFY user, but will accept message for delivery. |
-| `334` | AUTH challenge (base64-encoded). |
-| `354` | Start mail input; end with `.`. |
-| `421` | Service not available, closing connection. |
+| `211` | System status or system help reply.                               |
+| `214` | Help message (informational).                                     |
+| `220` | Service ready.                                                    |
+| `221` | Service closing transmission channel.                             |
+| `235` | Authentication successful.                                        |
+| `250` | Requested mail action okay, completed.                            |
+| `252` | Cannot VRFY user, but will accept message for delivery.           |
+| `334` | AUTH challenge (base64-encoded).                                  |
+| `354` | Start mail input; end with `.`.                                   |
+| `421` | Service not available, closing connection.                        |
 | `450` | Requested mail action not taken: mailbox unavailable (temporary). |
-| `451` | Requested action aborted: local error in processing. |
-| `452` | Requested action not taken: insufficient system storage. |
-| `455` | Server unable to accommodate parameters. |
-| `500` | Syntax error, command unrecognized. |
-| `501` | Syntax error in parameters or arguments. |
-| `502` | Command not implemented. |
-| `503` | Bad sequence of commands. |
-| `530` | Authentication required. |
-| `535` | Authentication credentials invalid. |
-| `550` | Requested action not taken: mailbox unavailable (permanent). |
-| `551` | User not local; try a different forwarding path. |
-| `552` | Requested action aborted: exceeded storage allocation. |
-| `553` | Requested action not taken: mailbox name not allowed. |
-| `554` | Transaction failed (general permanent failure). |
+| `451` | Requested action aborted: local error in processing.              |
+| `452` | Requested action not taken: insufficient system storage.          |
+| `455` | Server unable to accommodate parameters.                          |
+| `500` | Syntax error, command unrecognized.                               |
+| `501` | Syntax error in parameters or arguments.                          |
+| `502` | Command not implemented.                                          |
+| `503` | Bad sequence of commands.                                         |
+| `530` | Authentication required.                                          |
+| `535` | Authentication credentials invalid.                               |
+| `550` | Requested action not taken: mailbox unavailable (permanent).      |
+| `551` | User not local; try a different forwarding path.                  |
+| `552` | Requested action aborted: exceeded storage allocation.            |
+| `553` | Requested action not taken: mailbox name not allowed.             |
+| `554` | Transaction failed (general permanent failure).                   |
 
 The enhanced mail status codes (RFC 3463) extend the three-digit code with an `x.y.z` structure
 Providing granular information about the subject (x), detail (y), and action (z). For example,
@@ -394,20 +397,20 @@ Each device sees the same server-side state.
 
 ### IMAP vs POP3
 
-| Feature | IMAP | POP3 |
+| Feature              | IMAP                              | POP3                           |
 | -------------------- | --------------------------------- | ------------------------------ |
-| Port (TLS) | 993 | 995 |
-| Port (plain) | 143 | 110 |
-| Mailbox model | Hierarchical, multiple folders | Single flat inbox |
-| Message state | Server-side flags, persistent | Client-side only |
-| Partial fetch | Yes (byte ranges, MIME sections) | No (entire message only) |
-| Search | Server-side, flexible criteria | No server-side search |
-| Folder operations | Create, rename, delete, subscribe | Not supported |
-| Concurrent access | Yes, multiple clients | No, locks mailbox on access |
-| Offline mode | Limited, designed for online use | Full, designed for offline use |
-| Bandwidth efficiency | High (fetch what is needed) | Low (downloads everything) |
-| Quota support | Yes (RFC 2087) | No |
-| Push notifications | Yes (IDLE, RFC 2177) | No |
+| Port (TLS)           | 993                               | 995                            |
+| Port (plain)         | 143                               | 110                            |
+| Mailbox model        | Hierarchical, multiple folders    | Single flat inbox              |
+| Message state        | Server-side flags, persistent     | Client-side only               |
+| Partial fetch        | Yes (byte ranges, MIME sections)  | No (entire message only)       |
+| Search               | Server-side, flexible criteria    | No server-side search          |
+| Folder operations    | Create, rename, delete, subscribe | Not supported                  |
+| Concurrent access    | Yes, multiple clients             | No, locks mailbox on access    |
+| Offline mode         | Limited, designed for online use  | Full, designed for offline use |
+| Bandwidth efficiency | High (fetch what is needed)       | Low (downloads everything)     |
+| Quota support        | Yes (RFC 2087)                    | No                             |
+| Push notifications   | Yes (IDLE, RFC 2177)              | No                             |
 
 IMAP is the preferred protocol for users who access email from multiple devices or need server-side
 Organization. POP3 remains suitable for simple, single-device use cases where messages are
@@ -419,9 +422,9 @@ Downloaded and stored locally.
 
 IMAP mailboxes are hierarchical containers for messages, analogous to directories in a filesystem.
 The hierarchy separator is configurable per server (commonly `/` or `.`). Special mailboxes include
-`INBOX` (the required primary mailbox), and implementations provide `Drafts``Sent`
-`Trash`And `Junk`. The `LIST` command enumerates mailboxes, and `LSUB` lists subscribed mailboxes.
-Mailboxes can be shared between users with ACL-based permissions.
+`INBOX` (the required primary mailbox), and implementations provide `Drafts``Sent` `Trash`And
+`Junk`. The `LIST` command enumerates mailboxes, and `LSUB` lists subscribed mailboxes. Mailboxes
+can be shared between users with ACL-based permissions.
 
 **Messages**
 
@@ -437,23 +440,23 @@ Operations within a single session.
 
 IMAP defines system flags that convey message state:
 
-| Flag | Meaning |
+| Flag        | Meaning                                                     |
 | ----------- | ----------------------------------------------------------- |
-| `\Seen` | Message has been read. |
-| `\Answered` | Message has been replied to. |
-| `\Flagged` | Message is marked as important (starred). |
-| `\Deleted` | Message is marked for deletion (removed on EXPUNGE). |
-| `\Draft` | Message is a draft. |
-| `\Recent` | Message arrived since the last session (session-only flag). |
+| `\Seen`     | Message has been read.                                      |
+| `\Answered` | Message has been replied to.                                |
+| `\Flagged`  | Message is marked as important (starred).                   |
+| `\Deleted`  | Message is marked for deletion (removed on EXPUNGE).        |
+| `\Draft`    | Message is a draft.                                         |
+| `\Recent`   | Message arrived since the last session (session-only flag). |
 
 Servers may also support custom keywords (user-defined flags) for additional categorization. These
 Keywords are prefixed with `$` by convention (e.g., `$Junk``$NonJunk``$Phishing`).
 
 ### IMAP Commands
 
-IMAP uses tagged commands: each client command is prefixed with an arbitrary tag ( an
-Incrementing string like `A001``A002`), and the server's response includes the same tag. Untagged
-Responses (`*`) convey unsolicited data or status updates.
+IMAP uses tagged commands: each client command is prefixed with an arbitrary tag ( an Incrementing
+string like `A001``A002`), and the server's response includes the same tag. Untagged Responses (`*`)
+convey unsolicited data or status updates.
 
 ```
 C: A001 LOGIN user@example.com password
@@ -494,95 +497,94 @@ S: A006 OK IDLE terminated
 **Command Reference**
 
 - `LOGIN username password`: Authenticates the user. Prefer `AUTHENTICATE` with SASL mechanisms over
- plaintext `LOGIN`. On TLS-protected connections, PLAIN and LOGIN are acceptable. The
- `AUTHENTICATE` command supports CRAM-MD5, SCRAM-SHA-1/256, XOAUTH2, and other SASL mechanisms.
+  plaintext `LOGIN`. On TLS-protected connections, PLAIN and LOGIN are acceptable. The
+  `AUTHENTICATE` command supports CRAM-MD5, SCRAM-SHA-1/256, XOAUTH2, and other SASL mechanisms.
 
 - `SELECT mailbox`: Opens a mailbox for read-write access. The server returns message count
- (`EXISTS`), recent count (`RECENT`), flags, UID validity, and other mailbox metadata. `EXAMINE`
- opens the mailbox read-only.
+  (`EXISTS`), recent count (`RECENT`), flags, UID validity, and other mailbox metadata. `EXAMINE`
+  opens the mailbox read-only.
 
 - `FETCH message-set data-items`: Retrieves message content or metadata. The message set can be a
- single number, a range (`1:100`), a comma-separated list, or UID references (e.g., `UID 100:200`).
- Data items include `FLAGS``ENVELOPE``BODYSTRUCTURE``BODY[section]``BODY[section]` with
- partial offsets (e.g., `BODY[1]` for the first MIME part), `BODY.PEEK[section]` (fetches without
- setting `\Seen`), `RFC822.SIZE`And `INTERNALDATE`.
+  single number, a range (`1:100`), a comma-separated list, or UID references (e.g., `UID 100:200`).
+  Data items include `FLAGS``ENVELOPE``BODYSTRUCTURE``BODY[section]``BODY[section]` with partial
+  offsets (e.g., `BODY[1]` for the first MIME part), `BODY.PEEK[section]` (fetches without setting
+  `\Seen`), `RFC822.SIZE`And `INTERNALDATE`.
 
 - `STORE message-set data-items`: Modifies message flags or other metadata. Uses `+FLAGS` (add),
- `-FLAGS` (remove), or `FLAGS` (replace) followed by a parenthesized list. `+FLAGS.SILENT`
- suppresses the untagged `FETCH` response for performance.
+  `-FLAGS` (remove), or `FLAGS` (replace) followed by a parenthesized list. `+FLAGS.SILENT`
+  suppresses the untagged `FETCH` response for performance.
 
 - `EXPUNGE`: Permanently removes all messages marked with `\Deleted` from the mailbox. Sequence
- numbers are renumbered after expunge. This command is irreversible.
+  numbers are renumbered after expunge. This command is irreversible.
 
 - `IDLE`: Enters an idle state where the server pushes unsolicited updates (new messages, flag
- changes, expunges) to the client. The client sends `DONE` to exit idle mode. IDLE (RFC 2177)
- enables real-time notification without polling. The server may terminate IDLE after a timeout
- ( 29 minutes, to stay below the 30-minute TCP keepalive threshold).
+  changes, expunges) to the client. The client sends `DONE` to exit idle mode. IDLE (RFC 2177)
+  enables real-time notification without polling. The server may terminate IDLE after a timeout ( 29
+  minutes, to stay below the 30-minute TCP keepalive threshold).
 
 - `SEARCH criteria`: Searches messages in the selected mailbox based on criteria such as `FROM`
- `SUBJECT``SINCE``BEFORE``LARGER``SMALLER``UNSEEN``DELETED``FLAGGED``ALL`And
- logical operators (`AND``OR``NOT`). The server returns matching sequence numbers or UIDs if
- the `UID` variant is used.
+  `SUBJECT``SINCE``BEFORE``LARGER``SMALLER``UNSEEN``DELETED``FLAGGED``ALL`And logical operators
+  (`AND``OR``NOT`). The server returns matching sequence numbers or UIDs if the `UID` variant is
+  used.
 
 - `COPY message-set mailbox`: Copies messages to another mailbox. Not atomic with respect to flag
- changes.
+  changes.
 
 - `APPEND mailbox [flags] [date] literal`: Appends a message to a mailbox, optionally with flags and
- a date. Used for uploading draft messages or moving messages between accounts.
+  a date. Used for uploading draft messages or moving messages between accounts.
 
 - `LIST reference mailbox-pattern`: Lists mailboxes matching a pattern using `*` and `%` wildcards
- (`*` matches across hierarchy separators, `%` matches within a single level). `RLIST` returns
- listing extensions (RFC 5258).
+  (`*` matches across hierarchy separators, `%` matches within a single level). `RLIST` returns
+  listing extensions (RFC 5258).
 
-- `CREATE mailbox``DELETE mailbox``RENAME old new`: Manage mailbox creation, deletion, and
- renaming.
+- `CREATE mailbox``DELETE mailbox``RENAME old new`: Manage mailbox creation, deletion, and renaming.
 
 ### IMAP Extensions
 
 **IMAP4rev1 (RFC 3501)** is the base specification. Several extensions enhance functionality:
 
 - **IDLE (RFC 2177)**: Push notifications for new mail and flag changes, eliminating the need for
- polling.
+  polling.
 
 - **UIDPLUS (RFC 4315)**: Provides `UID EXPUNGE` to expunge specific messages by UID without
- affecting other messages' sequence numbers. Also extends `COPY` and `APPEND` to return the
- assigned UID via the `COPYUID` and `APPENDUID` response codes.
+  affecting other messages' sequence numbers. Also extends `COPY` and `APPEND` to return the
+  assigned UID via the `COPYUID` and `APPENDUID` response codes.
 
 - **ACL (RFC 4314)**: Access Control Lists allow granular permission management on shared mailboxes.
- Permissions include `l` (lookup), `r` (read), `s` (set seen/unseen flag), `w` (write flags other
- than `\Seen` and `\Deleted`), `i` (insert), `p` (post), `c` (create sub-mailboxes), `d` (delete
- messages), `a` (administer ACLs).
+  Permissions include `l` (lookup), `r` (read), `s` (set seen/unseen flag), `w` (write flags other
+  than `\Seen` and `\Deleted`), `i` (insert), `p` (post), `c` (create sub-mailboxes), `d` (delete
+  messages), `a` (administer ACLs).
 
 - **LITERAL+ (RFC 7888)**: Allows non-synchronizing literals, where the client sends the literal
- data immediately without waiting for a continuation request from the server, reducing round trips.
+  data immediately without waiting for a continuation request from the server, reducing round trips.
 
 - **ENABLE (RFC 5161)**: Allows clients to enable specific extensions selectively (e.g.,
- `ENABLE CONDSTORE QRESYNC`).
+  `ENABLE CONDSTORE QRESYNC`).
 
 - **MOVE (RFC 6851)**: Adds the `MOVE` command to atomically move messages between mailboxes,
- equivalent to `COPY` + `STORE +FLAGS (\Deleted)` + `EXPUNGE` but atomic and more efficient.
+  equivalent to `COPY` + `STORE +FLAGS (\Deleted)` + `EXPUNGE` but atomic and more efficient.
 
 - **SORT (RFC 5256)**: Server-side sorting of search results by date, subject, from, size, arrival,
- and other criteria using the `SORT` command.
+  and other criteria using the `SORT` command.
 
 - **THREAD (RFC 5256)**: Server-side threading of messages into conversation threads using
- `REFERENCES` (matches `In-Reply-To` and `References` headers) or `ORDEREDSUBJECT` (groups by
- normalized subject) algorithms.
+  `REFERENCES` (matches `In-Reply-To` and `References` headers) or `ORDEREDSUBJECT` (groups by
+  normalized subject) algorithms.
 
 - **URLAUTH (RFC 4467)**: Generates authenticated URLs that grant time-limited, scoped access to
- specific message parts (e.g., `IMAP URLAUTH ... EXPIRE 20260409T120000`). Used for embedded
- content in webmail without requiring the viewer to be authenticated to the IMAP server.
+  specific message parts (e.g., `IMAP URLAUTH ... EXPIRE 20260409T120000`). Used for embedded
+  content in webmail without requiring the viewer to be authenticated to the IMAP server.
 
 - **QRESYNC (RFC 5162)**: Efficient resynchronization of a client's mailbox state after a
- disconnection. The client sends its last known `MODSEQ` and `UIDVALIDITY`And the server responds
- with only the changes that occurred since that point.
+  disconnection. The client sends its last known `MODSEQ` and `UIDVALIDITY`And the server responds
+  with only the changes that occurred since that point.
 
 - **CONDSTORE (RFC 7162)**: Stores a modification sequence number (mod-sequence) for each flag
- change, enabling clients to detect changes since their last checkpoint efficiently. Combined with
- `FETCH (CHANGEDSINCE modseq)`The client receives only messages that have been modified.
+  change, enabling clients to detect changes since their last checkpoint efficiently. Combined with
+  `FETCH (CHANGEDSINCE modseq)`The client receives only messages that have been modified.
 
 - **OBJECTID (RFC 8474)**: Assigns server-generated, globally unique object identifiers to mailboxes
- and messages, independent of UIDs and UIDVALIDITY, for robust synchronization.
+  and messages, independent of UIDs and UIDVALIDITY, for robust synchronization.
 
 ## POP3 — Post Office Protocol version 3
 
@@ -603,18 +605,18 @@ POP3 supports two primary usage modes:
 
 **Download-and-Delete (default)**
 
-After the client retrieves messages with `RETR`It issues `DELE` to mark messages for deletion.
-When the client sends `QUIT`The server permanently removes all marked messages. This is the
-Traditional POP3 model where the server acts as a temporary holding area. Once the client downloads
-The messages and the server deletes them, the server has no record of the messages.
+After the client retrieves messages with `RETR`It issues `DELE` to mark messages for deletion. When
+the client sends `QUIT`The server permanently removes all marked messages. This is the Traditional
+POP3 model where the server acts as a temporary holding area. Once the client downloads The messages
+and the server deletes them, the server has no record of the messages.
 
 **Download-and-Keep**
 
 The client retrieves messages but does not issue `DELE` commands. Messages remain on the server
 After `QUIT`. This allows the client to re-download messages in a future session, but the POP3
 Protocol itself provides no mechanism to track which messages have already been downloaded. Clients
-Must implement their own tracking, by examining `Message-ID` headers or using the `UIDL`
-Command to correlate messages across sessions.
+Must implement their own tracking, by examining `Message-ID` headers or using the `UIDL` Command to
+correlate messages across sessions.
 
 ### POP3 Commands
 
@@ -646,50 +648,50 @@ S: +OK POP3 server signing off (maildrop empty)
 - `USER username`: Initiates authentication with the plaintext username.
 
 - `PASS password`: Sends the plaintext password. Combined with `USER`This forms the `USER/PASS`
- authentication mechanism. The `APOP` command provides an alternative using MD5 digest
- authentication: the server provides a timestamp in its greeting, and the client computes
- `MD5(timestamp + shared-secret)`. Note that MD5 is now considered cryptographically weak.
+  authentication mechanism. The `APOP` command provides an alternative using MD5 digest
+  authentication: the server provides a timestamp in its greeting, and the client computes
+  `MD5(timestamp + shared-secret)`. Note that MD5 is now considered cryptographically weak.
 
 - `STAT`: Returns the count of messages and total size in octets (e.g., `+OK 3 12540` means 3
- messages totaling 12,540 bytes).
+  messages totaling 12,540 bytes).
 
 - `LIST [message-number]`: Without an argument, returns a scan listing of all messages (number and
- size), terminated by a line containing only a period. With an argument, returns the size of the
- specified message.
+  size), terminated by a line containing only a period. With an argument, returns the size of the
+  specified message.
 
 - `RETR message-number`: Retrieves the full content of the specified message, including headers and
- body, terminated by a line containing only a period. Lines beginning with a period in the message
- are byte-stuffed (an extra period is prepended).
+  body, terminated by a line containing only a period. Lines beginning with a period in the message
+  are byte-stuffed (an extra period is prepended).
 
 - `DELE message-number`: Marks the specified message for deletion. The deletion is not permanent
- until the `QUIT` command is issued. `RSET` clears all deletion marks.
+  until the `QUIT` command is issued. `RSET` clears all deletion marks.
 
 - `NOOP`: No operation. The server responds with `+OK`.
 
 - `RSET`: Unmarks all messages marked for deletion by `DELE` and resets the session state.
 
 - `TOP message-number n`: Retrieves the headers plus the first `n` lines of the body. Useful for
- previewing messages without downloading the entire body. Not universally supported (advertised via
- `CAPA`).
+  previewing messages without downloading the entire body. Not universally supported (advertised via
+  `CAPA`).
 
 - `QUIT`: Ends the session. If in the transaction phase, the server permanently deletes all messages
- marked with `DELE`Releases any locks, and closes the connection.
+  marked with `DELE`Releases any locks, and closes the connection.
 
 ### POP3 Extensions
 
 - **CAPA (RFC 2449)**: Returns a list of server capabilities, similar to SMTP's `EHLO` response.
- Capabilities include `TOP``USER``SASL``RESP-CODES``LOGIN-DELAY``PIPELINE``EXPIRE`
- `UIDL`And `STLS`.
+  Capabilities include `TOP``USER``SASL``RESP-CODES``LOGIN-DELAY``PIPELINE``EXPIRE` `UIDL`And
+  `STLS`.
 
-- **UIDL (RFC 1939)**: Returns a unique identifier listing for each message. The unique-id is
- a hash or server-assigned token. This allows clients to track which messages they have
- already downloaded across sessions.
+- **UIDL (RFC 1939)**: Returns a unique identifier listing for each message. The unique-id is a hash
+  or server-assigned token. This allows clients to track which messages they have already downloaded
+  across sessions.
 
 - **STLS (RFC 2595)**: Upgrades the connection to TLS, analogous to SMTP's `STARTTLS`. Must be
- issued before authentication.
+  issued before authentication.
 
 - **SASL (RFC 5034)**: Supports SASL authentication mechanisms beyond `USER/PASS` and `APOP`
- including `PLAIN``CRAM-MD5`And `SCRAM-SHA-1`.
+  including `PLAIN``CRAM-MD5`And `SCRAM-SHA-1`.
 
 ### POP3 Limitations Compared to IMAP
 
@@ -718,8 +720,8 @@ FTP operates in two data transfer modes:
 
 _Active mode_: The client opens a random port and communicates it to the server via the `PORT`
 Command. The server initiates the data connection from port 20 to the client's specified port. This
-Mode fails when the client is behind a NAT or firewall because the server-initiated
-Connection is blocked.
+Mode fails when the client is behind a NAT or firewall because the server-initiated Connection is
+blocked.
 
 _Passive mode_: The client sends the `PASV` command. The server opens a random port and returns its
 IP and port number. The client initiates the data connection to the server. Extended Passive Mode
@@ -801,15 +803,15 @@ Source.
 
 **NTP Algorithm**
 
-The NTP daemon (`ntpd` or `chronyd`) continuously samples time from multiple upstream servers
-( 3 to 5). For each sample, it computes three key values: the offset (difference between
-Local and remote clock), the round-trip delay (total transit time for the NTP packet pair), and the
-Dispersion (estimated error bound that increases with time since the last sample). The Marzullo
-Algorithm selects the most consistent subset of samples (the intersection of all intervals), and a
-Weighted average computes the final clock correction. The clock discipline algorithm adjusts the
-System clock using a phase-locked loop (PLL) for small offsets (less than 128 ms) or a step
-Correction for large offsets. The slew rate is limited to 500 ppm to avoid disrupting applications
-That depend on monotonic time progression.
+The NTP daemon (`ntpd` or `chronyd`) continuously samples time from multiple upstream servers ( 3 to
+5). For each sample, it computes three key values: the offset (difference between Local and remote
+clock), the round-trip delay (total transit time for the NTP packet pair), and the Dispersion
+(estimated error bound that increases with time since the last sample). The Marzullo Algorithm
+selects the most consistent subset of samples (the intersection of all intervals), and a Weighted
+average computes the final clock correction. The clock discipline algorithm adjusts the System clock
+using a phase-locked loop (PLL) for small offsets (less than 128 ms) or a step Correction for large
+offsets. The slew rate is limited to 500 ppm to avoid disrupting applications That depend on
+monotonic time progression.
 
 **Security Considerations**
 
@@ -849,21 +851,21 @@ Specifies which attributes are required and which are optional.
 **Common Operations**
 
 - `BIND`: Authenticates the client to the directory server. Supports simple authentication
- (plaintext password, must only be used over TLS), SASL authentication (e.g., GSSAPI for Kerberos),
- and anonymous binding.
+  (plaintext password, must only be used over TLS), SASL authentication (e.g., GSSAPI for Kerberos),
+  and anonymous binding.
 
 - `SEARCH`: Queries the directory for entries matching a filter. The search scope can be `base`
- (single entry), `one` (one level of children), or `sub` (entire subtree). Search filters use
- prefix notation with parentheses. For example, `(&(objectClass=person)(uid=jdoe))` is an AND of
- two equality tests. `(|(uid=jdoe)(uid=asmith))` is an OR. `(!(uid=admin))` is a NOT. Substring
- filters use `cn=John*` and presence filters use `objectClass=*`.
+  (single entry), `one` (one level of children), or `sub` (entire subtree). Search filters use
+  prefix notation with parentheses. For example, `(&(objectClass=person)(uid=jdoe))` is an AND of
+  two equality tests. `(|(uid=jdoe)(uid=asmith))` is an OR. `(!(uid=admin))` is a NOT. Substring
+  filters use `cn=John*` and presence filters use `objectClass=*`.
 
 - `ADD``MODIFY``DELETE`: Insert, update, or remove directory entries. `MODIFY` supports add,
- replace, and delete operations on individual attributes within an entry.
+  replace, and delete operations on individual attributes within an entry.
 
 - `COMPARE`: Tests whether an entry contains a specific attribute value without returning the entry
- itself. Useful for password verification (the server hashes the comparison value and checks
- against the stored hash).
+  itself. Useful for password verification (the server hashes the comparison value and checks
+  against the stored hash).
 
 - `MODIFY DN`: Moves or renames an entry in the DIT (changes the entry's RDN or parent).
 
@@ -934,12 +936,12 @@ And historically used UDP or TCP on port 2049. NFSv4 uses TCP exclusively.
 **NFSv4 Features**
 
 NFSv4 represents a major redesign of the protocol. Key features include stateful operation (file
-Locking via `LOCK``LOCKU` operations, open delegation where the server grants a client exclusive
-Or shared access rights), a single port (2049) and single protocol (no separate `mountd``statd`
-`lockd` daemons required), strong security with mandatory `RPCSEC_GSS` using Kerberos v5,
-Firewall-friendly operation (all traffic on one TCP port), compound procedures (batch multiple RPC
-Operations into a single request via `COMPOUND`), internationalization (UTF-8 filenames via `UTF8`
-Attribute), and Access Control Lists (both POSIX.1e ACLs and NFSv4-style ACLs).
+Locking via `LOCK``LOCKU` operations, open delegation where the server grants a client exclusive Or
+shared access rights), a single port (2049) and single protocol (no separate `mountd``statd` `lockd`
+daemons required), strong security with mandatory `RPCSEC_GSS` using Kerberos v5, Firewall-friendly
+operation (all traffic on one TCP port), compound procedures (batch multiple RPC Operations into a
+single request via `COMPOUND`), internationalization (UTF-8 filenames via `UTF8` Attribute), and
+Access Control Lists (both POSIX.1e ACLs and NFSv4-style ACLs).
 
 **NFSv4.2 Additions**
 
@@ -976,16 +978,16 @@ example.com. IN TXT "v=spf1 ip4:192.0.2.0/24 include:_spf.google.com ~all"
 
 **Mechanisms**
 
-| Mechanism | Meaning |
+| Mechanism        | Meaning                                                                       |
 | ---------------- | ----------------------------------------------------------------------------- |
-| `all` | Matches all senders. Always placed at the end as the default policy. |
-| `include:domain` | Includes the SPF policy of the specified domain recursively. |
-| `a` | Matches if the sender's IP matches an A record of the domain. |
-| `mx` | Matches if the sender's IP matches an MX record of the domain. |
-| `ip4:cidr` | Matches if the sender's IP is within the specified IPv4 CIDR range. |
-| `ip6:cidr` | Matches if the sender's IP is within the specified IPv6 CIDR range. |
-| `ptr` | Matches if the reverse DNS of the sender resolves to the domain (deprecated). |
-| `exists:domain` | Matches if the specified domain resolves to any address. |
+| `all`            | Matches all senders. Always placed at the end as the default policy.          |
+| `include:domain` | Includes the SPF policy of the specified domain recursively.                  |
+| `a`              | Matches if the sender's IP matches an A record of the domain.                 |
+| `mx`             | Matches if the sender's IP matches an MX record of the domain.                |
+| `ip4:cidr`       | Matches if the sender's IP is within the specified IPv4 CIDR range.           |
+| `ip6:cidr`       | Matches if the sender's IP is within the specified IPv6 CIDR range.           |
+| `ptr`            | Matches if the reverse DNS of the sender resolves to the domain (deprecated). |
+| `exists:domain`  | Matches if the specified domain resolves to any address.                      |
 
 **Qualifiers**
 
@@ -1010,8 +1012,8 @@ Representative of the signing domain and that the message content has not been m
 
 The sending MTA selects the appropriate signing key for the domain in the `From` header. The MTA
 Computes a hash of selected headers and the message body, creates a signature over those hashes
-Using the domain's private key ( RSA-2048 or Ed25519), and inserts a `DKIM-Signature`
-Header into the message.
+Using the domain's private key ( RSA-2048 or Ed25519), and inserts a `DKIM-Signature` Header into
+the message.
 
 ```
 DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
@@ -1084,19 +1086,19 @@ _dmarc.example.com. IN TXT "v=DMARC1; p=reject; rua=mailto:dmarc@example.com; pc
 
 **Policy Tags**
 
-| Tag | Purpose |
+| Tag              | Purpose                                                             |
 | ---------------- | ------------------------------------------------------------------- |
-| `v=DMARC1` | Protocol version. |
-| `p=none` | Monitor mode. No action on failures; reports generated. |
-| `p=quarantine` | Failing messages treated as suspicious (spam folder). |
-| `p=reject` | Failing messages rejected at SMTP (550 response). |
-| `sp=` | Policy for subdomains (defaults to `p` value). |
-| `pct=100` | Percentage of messages the policy applies to (for gradual rollout). |
-| `rua=mailto:...` | Aggregate report destination (XML, daily). |
-| `ruf=mailto:...` | Forensic report destination for individual failures (ARF format). |
-| `ri=86400` | Reporting interval in seconds (default 86400). |
-| `adkim=s` | DKIM alignment mode: `s` (strict) or `r` (relaxed). |
-| `aspf=s` | SPF alignment mode: `s` (strict) or `r` (relaxed). |
+| `v=DMARC1`       | Protocol version.                                                   |
+| `p=none`         | Monitor mode. No action on failures; reports generated.             |
+| `p=quarantine`   | Failing messages treated as suspicious (spam folder).               |
+| `p=reject`       | Failing messages rejected at SMTP (550 response).                   |
+| `sp=`            | Policy for subdomains (defaults to `p` value).                      |
+| `pct=100`        | Percentage of messages the policy applies to (for gradual rollout). |
+| `rua=mailto:...` | Aggregate report destination (XML, daily).                          |
+| `ruf=mailto:...` | Forensic report destination for individual failures (ARF format).   |
+| `ri=86400`       | Reporting interval in seconds (default 86400).                      |
+| `adkim=s`        | DKIM alignment mode: `s` (strict) or `r` (relaxed).                 |
+| `aspf=s`         | SPF alignment mode: `s` (strict) or `r` (relaxed).                  |
 
 **Reporting**
 
@@ -1131,10 +1133,10 @@ Round trip (0-RTT with session resumption).
 MTA-STS allows a receiving domain to signal that sending MTAs must use TLS when delivering mail to
 It. The policy is published at `https://mta-sts.example.com/.well-known/mta-sts.txt`. The DNS TXT
 Record `_mta-sts.example.com` enables the mechanism. The policy specifies the TLS mode (`enforce`
-`testing`Or `none`), the minimum TLS version (`TLSv1.1` or `TLSv1.2`), and the list of MX
-Hostnames. If MTA-STS is in `enforce` mode and a sending MTA cannot establish a TLS connection with
-The required version to any of the listed MX hosts, the message should not be delivered and should
-Be queued for retry.
+`testing`Or `none`), the minimum TLS version (`TLSv1.1` or `TLSv1.2`), and the list of MX Hostnames.
+If MTA-STS is in `enforce` mode and a sending MTA cannot establish a TLS connection with The
+required version to any of the listed MX hosts, the message should not be delivered and should Be
+queued for retry.
 
 **DANE for SMTP (RFC 7672)**
 
@@ -1186,16 +1188,16 @@ Such as IdenTrust, DigiCert, and GlobalSign.
 
 **Comparison of PGP and S/MIME**
 
-| Aspect | PGP/OpenPGP | S/MIME |
+| Aspect              | PGP/OpenPGP                         | S/MIME                             |
 | ------------------- | ----------------------------------- | ---------------------------------- |
-| Trust model | Web of trust | PKI (X.509 CAs) |
-| Certificate format | OpenPGP transferable public key | X.509 certificate |
-| Key distribution | Keyservers, direct exchange, WKD | CA-issued certificates |
-| Enterprise adoption | Lower | Higher (Outlook, Active Directory) |
-| Interoperability | GPG, Thunderbird, K-9 Mail | Native in Outlook, iOS, macOS |
-| Flexibility | Higher (user-controlled trust) | Lower (CA-dependent) |
-| Revocation | Revocation certificates, keyservers | CRL, OCSP |
-| Key discovery | WKD (Web Key Directory, RFC 7929) | LDAP, S/MIME certificate attribute |
+| Trust model         | Web of trust                        | PKI (X.509 CAs)                    |
+| Certificate format  | OpenPGP transferable public key     | X.509 certificate                  |
+| Key distribution    | Keyservers, direct exchange, WKD    | CA-issued certificates             |
+| Enterprise adoption | Lower                               | Higher (Outlook, Active Directory) |
+| Interoperability    | GPG, Thunderbird, K-9 Mail          | Native in Outlook, iOS, macOS      |
+| Flexibility         | Higher (user-controlled trust)      | Lower (CA-dependent)               |
+| Revocation          | Revocation certificates, keyservers | CRL, OCSP                          |
+| Key discovery       | WKD (Web Key Directory, RFC 7929)   | LDAP, S/MIME certificate attribute |
 
 Both PGP and S/MIME require the sender and recipient to have compatible software and key material.
 Neither is widely deployed for general internet email due to key management complexity and lack of
@@ -1231,21 +1233,21 @@ _mta-sts.example.com. IN TXT "v=STSv1; id=2026040901"
 
 ### Protocol Port Reference
 
-| Protocol | Port (Plain) | Port (TLS) | Transport |
+| Protocol          | Port (Plain) | Port (TLS)     | Transport |
 | ----------------- | ------------ | -------------- | --------- |
-| SMTP (relay) | 25 | — | TCP |
-| SMTP (submission) | 587 | 465 (implicit) | TCP |
-| IMAP | 143 | 993 | TCP |
-| POP3 | 110 | 995 | TCP |
-| FTP (control) | 21 | 990 (implicit) | TCP |
-| FTPS (data) | dynamic | dynamic | TCP |
-| SFTP | — | 22 (SSH) | TCP |
-| SSH | 22 | — | TCP |
-| NTP | 123 | — | UDP |
-| LDAP | 389 | 636 | TCP |
-| SMB | 445 | — | TCP |
-| NFS | 2049 | — | TCP |
-| DNS | 53 | 853 (DoT) | UDP/TCP |
+| SMTP (relay)      | 25           | —              | TCP       |
+| SMTP (submission) | 587          | 465 (implicit) | TCP       |
+| IMAP              | 143          | 993            | TCP       |
+| POP3              | 110          | 995            | TCP       |
+| FTP (control)     | 21           | 990 (implicit) | TCP       |
+| FTPS (data)       | dynamic      | dynamic        | TCP       |
+| SFTP              | —            | 22 (SSH)       | TCP       |
+| SSH               | 22           | —              | TCP       |
+| NTP               | 123          | —              | UDP       |
+| LDAP              | 389          | 636            | TCP       |
+| SMB               | 445          | —              | TCP       |
+| NFS               | 2049         | —              | TCP       |
+| DNS               | 53           | 853 (DoT)      | UDP/TCP   |
 
 ## Common Pitfalls
 

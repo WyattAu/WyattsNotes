@@ -1,6 +1,8 @@
 ---
 title: International Trade and Finance
-description: "DSE Economics notes on international trade and finance covering comparative advantage, trade policies, balance of payments, exchange rates, and trading blocs."
+description:
+  'DSE Economics notes on international trade and finance covering comparative advantage, trade
+  policies, balance of payments, exchange rates, and trading blocs.'
 date: 2026-04-08T00:00:00.000Z
 tags: [DSE, Economics]
 categories: [DSE, Economics]
@@ -17,10 +19,10 @@ Country.
 
 ### Example
 
-| Country | Rice (units/labour hour) | Cloth (units/labour hour) |
+| Country   | Rice (units/labour hour) | Cloth (units/labour hour) |
 | --------- | ------------------------ | ------------------------- |
-| Country A | 10 | 5 |
-| Country B | 4 | 8 |
+| Country A | 10                       | 5                         |
+| Country B | 4                        | 8                         |
 
 Country A has an absolute advantage in producing rice (10 > 4). Country B has an absolute advantage
 In producing cloth (8 > 5).
@@ -48,10 +50,10 @@ Higher opportunity cost.
 
 ### Example
 
-| Country | Rice (units/labour hour) | Cloth (units/labour hour) |
+| Country   | Rice (units/labour hour) | Cloth (units/labour hour) |
 | --------- | ------------------------ | ------------------------- |
-| Country A | 10 | 5 |
-| Country B | 4 | 8 |
+| Country A | 10                       | 5                         |
+| Country B | 4                        | 8                         |
 
 **Opportunity costs:**
 
@@ -68,9 +70,9 @@ Higher opportunity cost.
 **Comparative advantage:**
 
 - Country A has a lower opportunity cost in producing rice (0.5 < 2). A has a comparative advantage
- in rice.
+  in rice.
 - Country B has a lower opportunity cost in producing cloth (0.5 < 2). B has a comparative advantage
- in cloth.
+  in cloth.
 
 **Result:** Country A should specialise in rice and export it. Country B should specialise in cloth
 And export it. Both countries benefit from trade.
@@ -104,8 +106,8 @@ Countries can trade and be better off than before.
 <details>
 <summary>Worked Example: Calculating Gains from Trade</summary>
 
-Country X can produce either 80 tonnes of wheat or 40 tonnes of silk. Country Y can produce either 40
-Tonnes of wheat or 80 tonnes of silk.
+Country X can produce either 80 tonnes of wheat or 40 tonnes of silk. Country Y can produce either
+40 Tonnes of wheat or 80 tonnes of silk.
 
 **Opportunity costs:**
 
@@ -115,13 +117,13 @@ Country Y: 1 wheat = 80/40 = 2 silk; 1 silk = 40/80 = 0.5 wheat.
 
 X has comparative advantage in wheat (0.5 silk vs 2 silk). Y has comparative advantage in silk.
 
-If each specialises fully: X produces 80 wheat, 0 silk. Y produces 0 wheat, 80 silk. Total: 80 wheat,
-80 silk.
+If each specialises fully: X produces 80 wheat, 0 silk. Y produces 0 wheat, 80 silk. Total: 80
+wheat, 80 silk.
 
 If they trade at 1 wheat = 1 silk (between 0.5 and 2), and X exports 30 wheat for 30 silk:
 
-X ends up with: 50 wheat, 30 silk. Before (half resources each): 40 wheat, 20 silk. Gains: +10 wheat,
-+10 silk.
+X ends up with: 50 wheat, 30 silk. Before (half resources each): 40 wheat, 20 silk. Gains: +10
+wheat, +10 silk.
 
 Y ends up with: 30 wheat, 50 silk. Before: 20 wheat, 40 silk. Gains: +10 wheat, +10 silk.
 
@@ -134,7 +136,7 @@ Both countries gain from trade.
 Comparative advantage arises from differences between countries in:
 
 1. **Factor endowments:** Different countries have different quantities and qualities of factors of
- production (land, labour, capital)
+   production (land, labour, capital)
 2. **Technology:** Different production technologies and productivity levels
 3. **Climate and natural resources:** Agricultural and mineral-based comparative advantages
 4. **Human capital:** Education, skills, and training levels
@@ -153,10 +155,10 @@ $$\mathrm{Terms of Trade} = \frac{\mathrm{Index of Export Prices}}{\mathrm{Index
 
 ### Interpretation
 
-| Terms of Trade | Interpretation |
+| Terms of Trade          | Interpretation                                                                                                              |
 | ----------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| Improving (rising) | A country can buy more imports for the same quantity of exports. Its purchasing power in international trade has increased. |
-| Deteriorating (falling) | A country must export more to buy the same quantity of imports. Its purchasing power has decreased. |
+| Improving (rising)      | A country can buy more imports for the same quantity of exports. Its purchasing power in international trade has increased. |
+| Deteriorating (falling) | A country must export more to buy the same quantity of imports. Its purchasing power has decreased.                         |
 
 ### Example
 
@@ -170,14 +172,14 @@ Year.
 ### Factors Affecting Terms of Trade
 
 - **Improving TOT:** Rising export prices, falling import prices, currency appreciation, higher
- demand for exports, technological improvements in export industries
+  demand for exports, technological improvements in export industries
 - **Deteriorating TOT:** Falling export prices, rising import prices, currency depreciation, lower
- demand for exports, rising costs of imported raw materials
+  demand for exports, rising costs of imported raw materials
 
 ### Limitations of Terms of Trade
 
 - A deteriorating TOT does not necessarily mean a country is worse off -- it could reflect increased
- export volumes (the country is exporting more, even at lower prices)
+  export volumes (the country is exporting more, even at lower prices)
 - TOT only measures price changes, not volume changes
 - Does not account for changes in the quality of goods traded
 
@@ -206,12 +208,11 @@ $$\mathrm{DWL} = \mathrm{Loss in consumer surplus} - \mathrm{Gain in producer su
 <details>
 <summary>Worked Example: Tariff Deadweight Loss</summary>
 
-A small country imports Good T at a world price of USD 20. At `P = 20`Domestic demand is 500 units and
-Domestic supply is 200 units. A tariff of USD 5 per unit is imposed. At `P = 25`Domestic demand falls
-To 450 and domestic supply rises to 250.
+A small country imports Good T at a world price of USD 20. At `P = 20`Domestic demand is 500 units
+and Domestic supply is 200 units. A tariff of USD 5 per unit is imposed. At `P = 25`Domestic demand
+falls To 450 and domestic supply rises to 250.
 
-Imports before tariff: `500 - 200 = 300`.
-Imports after tariff: `450 - 250 = 200`.
+Imports before tariff: `500 - 200 = 300`. Imports after tariff: `450 - 250 = 200`.
 
 Tariff revenue: `5 \times 200 = 1000`.
 
@@ -233,7 +234,7 @@ On the quantity of a good that can be imported during a given period.
 3. Domestic producers benefit (less competition, higher prices)
 4. Domestic consumers lose (higher prices, less choice)
 5. Unlike tariffs, the government does NOT necessarily gain revenue (the quota rent may go to
- foreign producers or importers who hold the quota licences)
+   foreign producers or importers who hold the quota licences)
 
 ### Subsidies
 
@@ -251,15 +252,15 @@ Production and allowing them to sell at a lower price.
 
 ### Comparison of Trade Barriers
 
-| Feature | Tariff | Quota | Subsidy |
+| Feature                   | Tariff                             | Quota                              | Subsidy                       |
 | ------------------------- | ---------------------------------- | ---------------------------------- | ----------------------------- |
-| Form | Tax on imports | Limit on import quantity | Payment to domestic producers |
-| Effect on price | Raises domestic price | Raises domestic price | Lowers domestic price |
-| Government revenue | Yes (tax revenue) | No (unless quota licences sold) | No (government pays) |
-| Effect on imports | Reduces imports | Fixes maximum imports | Reduces imports |
-| Effect on domestic output | Increases | Increases | Increases |
-| Consumer effect | Higher prices, less choice | Higher prices, less choice | Lower prices |
-| Producer effect | Protected from foreign competition | Protected from foreign competition | Supported financially |
+| Form                      | Tax on imports                     | Limit on import quantity           | Payment to domestic producers |
+| Effect on price           | Raises domestic price              | Raises domestic price              | Lowers domestic price         |
+| Government revenue        | Yes (tax revenue)                  | No (unless quota licences sold)    | No (government pays)          |
+| Effect on imports         | Reduces imports                    | Fixes maximum imports              | Reduces imports               |
+| Effect on domestic output | Increases                          | Increases                          | Increases                     |
+| Consumer effect           | Higher prices, less choice         | Higher prices, less choice         | Lower prices                  |
+| Producer effect           | Protected from foreign competition | Protected from foreign competition | Supported financially         |
 
 ---
 
@@ -268,50 +269,50 @@ Production and allowing them to sell at a lower price.
 ### Arguments For Free Trade
 
 1. **Comparative advantage:** Trade allows countries to specialise according to comparative
- advantage, increasing total world output and welfare
+   advantage, increasing total world output and welfare
 2. **Lower prices for consumers:** Increased competition from imports leads to lower prices and
- greater variety
+   greater variety
 3. **Economies of scale:** Access to larger international markets allows firms to produce on a
- larger scale, reducing average costs
+   larger scale, reducing average costs
 4. **Increased competition:** Domestic firms must become more efficient to compete with foreign
- firms
+   firms
 5. **Transfer of technology:** Trade facilitates the spread of technology and knowledge between
- countries
+   countries
 6. **Economic growth:** Export-oriented growth has been a key driver of economic development (e.g.,
- East Asian economies)
+   East Asian economies)
 7. **Consumer choice:** Consumers have access to a wider range of goods and services
 8. **Peace and cooperation:** Economic interdependence reduces the likelihood of conflict between
- nations
+   nations
 
 ### Arguments Against Free Trade (Protectionism)
 
 1. **Infant industry argument:** New industries in developing countries need temporary protection
- from established foreign competitors until they become efficient enough to compete
- internationally
+   from established foreign competitors until they become efficient enough to compete
+   internationally
 2. **Strategic industries:** Some industries (defence, energy) are strategically important and
- should be protected for national security reasons
+   should be protected for national security reasons
 3. **Anti-dumping:** Protection is needed to prevent foreign firms from "dumping" goods below cost
- to drive domestic producers out of business
+   to drive domestic producers out of business
 4. **Employment protection:** Free trade can lead to job losses in industries that cannot compete
- with cheaper imports
+   with cheaper imports
 5. **Balance of payments:** Restricting imports can help correct a persistent current account
- deficit
+   deficit
 6. **Protecting domestic culture and identity:** Some argue that trade can erode cultural identity
- (e.g., local food, media)
+   (e.g., local food, media)
 7. **Revenue:** Tariffs can be a source of government revenue (important for developing countries
- with limited tax systems)
+   with limited tax systems)
 
 ### Criticisms of Protectionism
 
 - **Retaliation:** Protectionist measures often trigger retaliatory tariffs from trading partners,
- leading to trade wars (e.g., US-China trade tensions)
+  leading to trade wars (e.g., US-China trade tensions)
 - **Higher prices:** Consumers pay more for protected goods
 - **Inefficiency:** Protection shields domestic firms from competition, reducing their incentive to
- improve efficiency
+  improve efficiency
 - **Misallocation of resources:** Resources are diverted to protected (inefficient) industries away
- from efficient industries
+  from efficient industries
 - **Higher cost of inputs:** Tariffs on imported raw materials raise production costs for domestic
- industries that use those inputs
+  industries that use those inputs
 
 ---
 
@@ -330,12 +331,12 @@ The BOP consists of three main accounts:
 
 The current account records trade in goods and services, income flows, and current transfers.
 
-| Component | Description |
+| Component                            | Description                                                                                       |
 | ------------------------------------ | ------------------------------------------------------------------------------------------------- |
-| Trade in goods (visible trade) | Exports minus imports of physical goods |
-| Trade in services (invisible trade) | Exports minus imports of services (e.g., banking, tourism, transport) |
-| Primary income | Income from investments abroad minus income paid to foreign investors (e.g., dividends, interest) |
-| Secondary income (current transfers) | One-way transfers with nothing received in return (e.g., remittances, foreign aid) |
+| Trade in goods (visible trade)       | Exports minus imports of physical goods                                                           |
+| Trade in services (invisible trade)  | Exports minus imports of services (e.g., banking, tourism, transport)                             |
+| Primary income                       | Income from investments abroad minus income paid to foreign investors (e.g., dividends, interest) |
+| Secondary income (current transfers) | One-way transfers with nothing received in return (e.g., remittances, foreign aid)                |
 
 $$\mathrm{Current Account Balance} = \mathrm{(X - M)}_{\mathrm{goods}} + \mathrm{(X - M)}_{\mathrm{services}} + \mathrm{Primary Income} + \mathrm{Secondary Income}$$
 
@@ -354,12 +355,12 @@ Non-financial assets (e.g., patents, copyrights, land). This account is small.
 
 The financial account records cross-border investments in financial assets.
 
-| Component | Description |
+| Component            | Description                                                                          |
 | -------------------- | ------------------------------------------------------------------------------------ |
-| Direct investment | Long-term investment in enterprises (e.g., FDI -- setting up factories abroad) |
-| Portfolio investment | Investment in shares, bonds, and other securities |
-| Other investment | Trade credits, loans, currency and deposits |
-| Reserve assets | Changes in the country's official foreign exchange reserves held by the central bank |
+| Direct investment    | Long-term investment in enterprises (e.g., FDI -- setting up factories abroad)       |
+| Portfolio investment | Investment in shares, bonds, and other securities                                    |
+| Other investment     | Trade credits, loans, currency and deposits                                          |
+| Reserve assets       | Changes in the country's official foreign exchange reserves held by the central bank |
 
 ### BOP Identity
 
@@ -377,7 +378,7 @@ Hong Kong runs a **current account surplus** because:
 - Strong export of services (financial services, trade logistics, tourism, professional services)
 - Large net investment income from abroad (Hong Kong is a major international investor)
 - The current account surplus is offset by financial account outflows (Hong Kong residents investing
- abroad)
+  abroad)
 
 ---
 
@@ -429,14 +430,14 @@ The fixed rate) and **revaluation** (upward adjustment of the fixed rate).
 
 **Factors causing DEPRECIATION of a currency:**
 
-| Factor | Mechanism |
+| Factor                  | Mechanism                                                                                                                               |
 | ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| Higher inflation | Domestic goods become relatively more expensive; demand for exports falls; demand for imports rises; demand for domestic currency falls |
-| Lower interest rates | Capital flows out to countries with higher returns; demand for domestic currency falls |
-| Current account deficit | More imports than exports; net selling of domestic currency to buy foreign currency |
-| Increased money supply | More currency in circulation reduces its value |
-| Lower economic growth | Less attractive for foreign investment; lower demand for currency |
-| Speculation | If traders expect depreciation, they sell the currency, causing it to depreciate (self-fulfilling) |
+| Higher inflation        | Domestic goods become relatively more expensive; demand for exports falls; demand for imports rises; demand for domestic currency falls |
+| Lower interest rates    | Capital flows out to countries with higher returns; demand for domestic currency falls                                                  |
+| Current account deficit | More imports than exports; net selling of domestic currency to buy foreign currency                                                     |
+| Increased money supply  | More currency in circulation reduces its value                                                                                          |
+| Lower economic growth   | Less attractive for foreign investment; lower demand for currency                                                                       |
+| Speculation             | If traders expect depreciation, they sell the currency, causing it to depreciate (self-fulfilling)                                      |
 
 **Factors causing APPRECIATION of a currency:**
 
@@ -446,13 +447,13 @@ The reverse of the above factors.
 
 **Effects of DEPRECIATION:**
 
-| Effect | Explanation |
+| Effect                              | Explanation                                                                                  |
 | ----------------------------------- | -------------------------------------------------------------------------------------------- |
-| Exports become cheaper | Foreign buyers need less of their currency to buy domestic goods; export demand increases |
-| Imports become more expensive | Domestic consumers need more domestic currency to buy foreign goods; import demand decreases |
-| Current account may improve | Higher export revenue and lower import spending (if the Marshall-Lerner condition holds) |
-| Imported inflation | More expensive imports raise the cost of imported raw materials and consumer goods |
-| Foreign debt becomes more expensive | If debt is denominated in foreign currency, more domestic currency is needed to repay |
+| Exports become cheaper              | Foreign buyers need less of their currency to buy domestic goods; export demand increases    |
+| Imports become more expensive       | Domestic consumers need more domestic currency to buy foreign goods; import demand decreases |
+| Current account may improve         | Higher export revenue and lower import spending (if the Marshall-Lerner condition holds)     |
+| Imported inflation                  | More expensive imports raise the cost of imported raw materials and consumer goods           |
+| Foreign debt becomes more expensive | If debt is denominated in foreign currency, more domestic currency is needed to repay        |
 
 **Effects of APPRECIATION:**
 
@@ -465,9 +466,9 @@ Because:
 
 1. In the short run, import and export quantities are relatively fixed (inelastic demand)
 2. The price effect dominates: imports cost more (worsening the trade balance) while export volumes
- have not yet increased enough to offset this
+   have not yet increased enough to offset this
 3. Over time, quantities adjust (demand becomes more elastic): export volumes rise and import
- volumes fall, improving the trade balance
+   volumes fall, improving the trade balance
 
 The path of the current account balance looks like the letter "J" -- hence the name.
 
@@ -497,14 +498,14 @@ Appreciates or depreciates together with the USD.
 
 ### When the USD/HKD Appreciates
 
-| Effect | Impact on Hong Kong Economy |
+| Effect                        | Impact on Hong Kong Economy                                                                                                           |
 | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
 | Exports become more expensive | Hong Kong's exports (goods and services) become more expensive for foreign buyers; export demand falls; tourism from abroad decreases |
-| Imports become cheaper | Imports become cheaper; cost of imported raw materials and consumer goods decreases |
-| Inflation | Lower imported inflation; overall inflation rate tends to decrease |
-| Tourism | Fewer tourists (Hong Kong becomes more expensive for visitors); tourism revenue falls |
-| Investment | Foreign investment may decrease (higher costs); outward investment may increase (cheaper to invest abroad) |
-| Current account | May deteriorate (lower export revenue, though import costs also fall) |
+| Imports become cheaper        | Imports become cheaper; cost of imported raw materials and consumer goods decreases                                                   |
+| Inflation                     | Lower imported inflation; overall inflation rate tends to decrease                                                                    |
+| Tourism                       | Fewer tourists (Hong Kong becomes more expensive for visitors); tourism revenue falls                                                 |
+| Investment                    | Foreign investment may decrease (higher costs); outward investment may increase (cheaper to invest abroad)                            |
+| Current account               | May deteriorate (lower export revenue, though import costs also fall)                                                                 |
 
 ### When the USD/HKD Depreciates
 
@@ -528,7 +529,7 @@ Hong Kong is one of the most trade-dependent economies in the world, with a trad
 Exceeding 300%. This reflects:
 
 - Re-export trade: Hong Kong imports goods, adds value (logistics, packaging, marketing), and
- re-exports them, mainly to and from mainland China
+  re-exports them, mainly to and from mainland China
 - Small domestic market: Limited domestic demand means firms must look to international markets
 - Strategic location: Natural deep-water harbour and proximity to mainland China
 - Free port: No tariffs on imports or exports
@@ -554,43 +555,43 @@ Exceeding 300%. This reflects:
 ## Common Pitfalls
 
 1. **Confusing absolute and comparative advantage:** Absolute advantage is about who can produce
- MORE (absolute productivity). Comparative advantage is about who has a LOWER OPPORTUNITY COST.
- Trade is based on comparative advantage, not absolute advantage.
+   MORE (absolute productivity). Comparative advantage is about who has a LOWER OPPORTUNITY COST.
+   Trade is based on comparative advantage, not absolute advantage.
 
 2. **Forgetting that comparative advantage requires different opportunity costs:** If two countries
- have the same opportunity costs for both goods, neither has a comparative advantage, and there
- are no gains from specialisation and trade.
+   have the same opportunity costs for both goods, neither has a comparative advantage, and there
+   are no gains from specialisation and trade.
 
 3. **Confusing the balance of payments with the current account:** The balance of payments includes
- the current account, capital account, AND financial account. The BOP always balances (sums to
- zero). A current account deficit is offset by a capital/financial account surplus.
+   the current account, capital account, AND financial account. The BOP always balances (sums to
+   zero). A current account deficit is offset by a capital/financial account surplus.
 
 4. **Saying a BOP deficit is always bad:** A current account deficit is not inherently bad. It may
- reflect strong domestic investment (importing capital goods for future growth) or strong consumer
- demand. The composition of the deficit matters.
+   reflect strong domestic investment (importing capital goods for future growth) or strong consumer
+   demand. The composition of the deficit matters.
 
 5. **Confusing depreciation and devaluation:** Depreciation occurs under a FLOATING exchange rate
- (market-driven). Devaluation occurs under a FIXED exchange rate (government/central bank
- decision).
+   (market-driven). Devaluation occurs under a FIXED exchange rate (government/central bank
+   decision).
 
 6. **Stating that depreciation always improves the current account:** This is only true if the
- Marshall-Lerner condition is satisfied (sum of elasticities > 1). In the short run, depreciation
- may worsen the current account (J-curve effect).
+   Marshall-Lerner condition is satisfied (sum of elasticities > 1). In the short run, depreciation
+   may worsen the current account (J-curve effect).
 
 7. **Confusing terms of trade with balance of trade:** Terms of trade measures the RATIO of export
- prices to import prices (a price index). Balance of trade measures the DIFFERENCE between export
- revenue and import spending (a monetary value).
+   prices to import prices (a price index). Balance of trade measures the DIFFERENCE between export
+   revenue and import spending (a monetary value).
 
 8. **Assuming Hong Kong has a flexible exchange rate:** Hong Kong has a FIXED linked exchange rate
- to the USD. The HKD does not float freely. The HKMA intervenes to maintain the peg.
+   to the USD. The HKD does not float freely. The HKMA intervenes to maintain the peg.
 
 9. **Ignoring the J-curve effect:** When analysing the effect of a depreciation on the current
- account, remember the short-run vs long-run distinction. The current account may worsen before it
- improves.
+   account, remember the short-run vs long-run distinction. The current account may worsen before it
+   improves.
 
 10. **Confusing quotas and tariffs:** A tariff raises revenue for the government. A quota does NOT
- necessarily raise government revenue (the quota rent may go to foreign producers). Both restrict
- imports, but they work differently.
+    necessarily raise government revenue (the quota rent may go to foreign producers). Both restrict
+    imports, but they work differently.
 
 ---
 
@@ -628,9 +629,9 @@ Country Y:
 (c) **Comparative advantage:**
 
 - Wheat: Country X has lower opportunity cost (0.5 cloth < 1 cloth). X has a comparative advantage
- in wheat.
+  in wheat.
 - Cloth: Country Y has lower opportunity cost (1 wheat < 2 wheat). Y has a comparative advantage in
- cloth.
+  cloth.
 
 (d) **Gains from trade:**
 
@@ -651,10 +652,10 @@ If X exports 20 wheat to Y at the rate 1 wheat = 1.2 cloth:
 
 **Comparison:**
 
-| Country | Before Trade (Wheat, Cloth) | After Trade (Wheat, Cloth) | Gains |
+| Country | Before Trade (Wheat, Cloth) | After Trade (Wheat, Cloth) | Gains               |
 | ------- | --------------------------- | -------------------------- | ------------------- |
-| X | 30, 15 | 40, 24 | +10 wheat, +9 cloth |
-| Y | 20, 20 | 20, 16 | 0 wheat, -4 cloth |
+| X       | 30, 15                      | 40, 24                     | +10 wheat, +9 cloth |
+| Y       | 20, 20                      | 20, 16                     | 0 wheat, -4 cloth   |
 
 Wait -- Country Y is worse off. Let me recalculate with a different exchange rate.
 
@@ -802,15 +803,15 @@ More imports for the same quantity of exports compared to the base period.
 Prices relative to import prices), this improvement could be caused by:
 
 1. **Reduced export volumes:** If export prices rose because the country is supplying less (due to
- supply constraints), the total export revenue could fall despite higher prices. The country earns
- more per unit but sells fewer units.
+   supply constraints), the total export revenue could fall despite higher prices. The country earns
+   more per unit but sells fewer units.
 
 2. **Higher import costs:** Although import prices rose less than export prices, the country still
- faces higher import costs. If the country imports essential goods (e.g., oil), the higher costs
- could harm domestic industries and consumers.
+   faces higher import costs. If the country imports essential goods (e.g., oil), the higher costs
+   could harm domestic industries and consumers.
 
 3. **Elasticities of demand:** If foreign demand for the country's exports is elastic, higher export
- prices lead to a proportionally larger drop in export volumes, reducing total export revenue.
+   prices lead to a proportionally larger drop in export volumes, reducing total export revenue.
 
 The terms of trade only measures the price ratio. To determine if the country is truly better off,
 We need to look at the VOLUME of trade as well (trade volumes and the trade balance).
@@ -829,32 +830,32 @@ Depreciates against the HKD.
 **Effects on Hong Kong:**
 
 1. **Exports to mainland China become more expensive:** Chinese consumers need more CNY to buy HKD
- goods and services. Hong Kong's export volumes to China are likely to decrease, reducing export
- revenue from Hong Kong's largest trading partner.
+   goods and services. Hong Kong's export volumes to China are likely to decrease, reducing export
+   revenue from Hong Kong's largest trading partner.
 
 2. **Imports from mainland China become cheaper:** Hong Kong consumers and firms can buy Chinese
- goods and services at lower HKD prices. This reduces the cost of imported goods (including food,
- consumer products, and raw materials), benefiting consumers and firms that use Chinese inputs.
+   goods and services at lower HKD prices. This reduces the cost of imported goods (including food,
+   consumer products, and raw materials), benefiting consumers and firms that use Chinese inputs.
 
 3. **Tourism:** Hong Kong becomes more expensive for mainland Chinese tourists. Fewer mainland
- tourists visit Hong Kong, reducing tourism revenue (a significant component of Hong Kong's
- service exports). Conversely, Hong Kong residents may travel more to mainland China (it is
- cheaper for them).
+   tourists visit Hong Kong, reducing tourism revenue (a significant component of Hong Kong's
+   service exports). Conversely, Hong Kong residents may travel more to mainland China (it is
+   cheaper for them).
 
 4. **Inflation:** Cheaper imports from China put downward pressure on prices in Hong Kong,
- contributing to lower inflation. This benefits consumers but may reduce profit margins for Hong
- Kong retailers.
+   contributing to lower inflation. This benefits consumers but may reduce profit margins for Hong
+   Kong retailers.
 
 5. **Re-exports:** Since much of Hong Kong's trade involves re-exports to and from China, a weaker
- CNY could reduce re-export volumes (as Chinese demand for goods via Hong Kong decreases).
+   CNY could reduce re-export volumes (as Chinese demand for goods via Hong Kong decreases).
 
 6. **Current account:** The net effect on the current account is ambiguous. The current account
- could deteriorate due to lower export and tourism revenue, but the import side also changes. The
- overall effect depends on the elasticities of demand for Hong Kong's exports and imports.
+   could deteriorate due to lower export and tourism revenue, but the import side also changes. The
+   overall effect depends on the elasticities of demand for Hong Kong's exports and imports.
 
 7. **Employment:** Sectors reliant on exports to China and mainland tourism (retail, hospitality)
- may face job losses. Sectors that import from China or serve mainland tourists visiting less
- (manufacturing) may benefit from lower costs.
+   may face job losses. Sectors that import from China or serve mainland tourists visiting less
+   (manufacturing) may benefit from lower costs.
 
 </details>
 
@@ -867,47 +868,47 @@ Its domestic steel industry. Discuss the economic arguments for and against this
 **Arguments for the tariff:**
 
 1. **Infant industry protection:** The domestic steel industry may be in its early stages and unable
- to compete with established foreign producers who benefit from economies of scale. Temporary
- protection could allow the domestic industry to grow and achieve competitiveness.
+   to compete with established foreign producers who benefit from economies of scale. Temporary
+   protection could allow the domestic industry to grow and achieve competitiveness.
 
 2. **Employment:** The steel industry may be a major employer. Without protection, cheap imports
- could force domestic steel firms out of business, causing significant job losses and associated
- social problems.
+   could force domestic steel firms out of business, causing significant job losses and associated
+   social problems.
 
 3. **National security:** Steel is a critical input for defence, infrastructure, and construction. A
- country that relies entirely on imported steel may be vulnerable during international conflicts
- or supply disruptions.
+   country that relies entirely on imported steel may be vulnerable during international conflicts
+   or supply disruptions.
 
 4. **Balance of payments:** Reducing steel imports would reduce the country's import bill, helping
- to correct a current account deficit.
+   to correct a current account deficit.
 
 5. **Anti-dumping:** If foreign steel producers are selling below cost (dumping), a tariff can
- prevent them from driving domestic producers out of business.
+   prevent them from driving domestic producers out of business.
 
 **Arguments against the tariff:**
 
 1. **Higher prices for consumers and downstream industries:** The tariff raises the domestic price
- of steel. Industries that use steel as an input (construction, automotive, manufacturing) face
- higher production costs, making their products less competitive. Consumers ultimately pay higher
- prices.
+   of steel. Industries that use steel as an input (construction, automotive, manufacturing) face
+   higher production costs, making their products less competitive. Consumers ultimately pay higher
+   prices.
 
 2. **Deadweight loss:** The tariff creates a deadweight loss -- the loss in consumer surplus exceeds
- the gain in producer surplus and government revenue. Resources are misallocated towards less
- efficient domestic steel production.
+   the gain in producer surplus and government revenue. Resources are misallocated towards less
+   efficient domestic steel production.
 
 3. **Retaliation:** Trading partners may retaliate with tariffs on the country's exports,
- potentially triggering a trade war that harms other export-oriented industries.
+   potentially triggering a trade war that harms other export-oriented industries.
 
 4. **Reduced efficiency:** Protection shields domestic steel producers from international
- competition, reducing their incentive to improve efficiency, innovate, or reduce costs. In the
- long run, the industry may remain uncompetitive.
+   competition, reducing their incentive to improve efficiency, innovate, or reduce costs. In the
+   long run, the industry may remain uncompetitive.
 
 5. **Higher cost of infrastructure:** If the government is building infrastructure (roads, bridges,
- buildings), higher steel prices increase the cost of public projects, burdening taxpayers.
+   buildings), higher steel prices increase the cost of public projects, burdening taxpayers.
 
 6. **Income distribution effects:** The tariff benefits a relatively small number of steel producers
- and workers, while the costs are spread across the entire population (higher consumer prices).
- This may worsen income inequality.
+   and workers, while the costs are spread across the entire population (higher consumer prices).
+   This may worsen income inequality.
 
 </details>
 
@@ -1033,8 +1034,8 @@ Country M can produce either 200 tonnes of coffee or 100 tonnes of tea. Country 
 100 tonnes of coffee or 200 tonnes of tea.
 
 (a) Which country has an absolute advantage in coffee? In tea? (b) Calculate the opportunity cost of
-Each good in each country. (c) Which country has a comparative advantage in coffee? In tea? (d) If they
-Specialise and trade at an exchange rate of 1 coffee = 1.5 tea, show that both gain.
+Each good in each country. (c) Which country has a comparative advantage in coffee? In tea? (d) If
+they Specialise and trade at an exchange rate of 1 coffee = 1.5 tea, show that both gain.
 
 <details>
 <summary>Solution</summary>
@@ -1051,8 +1052,8 @@ After specialisation: M: 200 coffee, 0 tea. N: 0 coffee, 200 tea.
 
 M exports 60 coffee for `60 \times 1.5 = 90` tea.
 
-M: 140 coffee, 90 tea (gains: +40 coffee, +40 tea).
-N: 60 coffee, 110 tea (gains: +10 coffee, +10 tea).
+M: 140 coffee, 90 tea (gains: +40 coffee, +40 tea). N: 60 coffee, 110 tea (gains: +10 coffee, +10
+tea).
 
 Both gain.
 
@@ -1070,8 +1071,8 @@ Country P has the following transactions (USD billion):
 - Transfers received: 30, Transfers paid: 50
 - Net financial account (excl. Reserves): +40
 
-(a) Calculate the current account balance. (b) Calculate the change in reserves. (c) Is the central bank
-Buying or selling foreign currency?
+(a) Calculate the current account balance. (b) Calculate the change in reserves. (c) Is the central
+bank Buying or selling foreign currency?
 
 <details>
 <summary>Solution</summary>
@@ -1085,8 +1086,8 @@ Current account = `-200 + 100 + 40 - 20 = -80` (deficit of USD 80 billion).
 
 Reserves **decrease** by USD 40 billion (negative means reserves fall).
 
-(c) The central bank is **selling** foreign currency to support the domestic currency (or to finance the
-Current account deficit).
+(c) The central bank is **selling** foreign currency to support the domestic currency (or to finance
+the Current account deficit).
 
 </details>
 
@@ -1096,21 +1097,22 @@ If you get this wrong, revise: [Balance of Payments](#balance-of-payments)
 
 The exchange rate changes from 1 GBP = 10 HKD to 1 GBP = 11 HKD.
 
-(a) Has the GBP appreciated or depreciated against the HKD? By what percentage? (b) What is the effect on
-UK exports to Hong Kong? (c) What is the effect on the UK current account, assuming the Marshall-Lerner
-Condition holds?
+(a) Has the GBP appreciated or depreciated against the HKD? By what percentage? (b) What is the
+effect on UK exports to Hong Kong? (c) What is the effect on the UK current account, assuming the
+Marshall-Lerner Condition holds?
 
 <details>
 <summary>Solution</summary>
 
-(a) APPRECIATED. Previously 1 GBP bought 10 HKD, now 11 HKD. `% change = (11-10)/10 \times 100\% = 10\%`.
+(a) APPRECIATED. Previously 1 GBP bought 10 HKD, now 11 HKD.
+`% change = (11-10)/10 \times 100\% = 10\%`.
 
-(b) UK exports to HK become more expensive. A good costing GBP 100 previously cost HKD 1000, now costs
-HKD 1100. HK consumers buy less, so UK export volumes fall.
+(b) UK exports to HK become more expensive. A good costing GBP 100 previously cost HKD 1000, now
+costs HKD 1100. HK consumers buy less, so UK export volumes fall.
 
-(c) The UK current account is likely to **deteriorate**. More expensive exports reduce export revenue;
-Cheaper imports (from HK perspective) increase import spending. Both effects reduce the trade surplus
-(or increase the deficit), assuming the Marshall-Lerner condition is satisfied.
+(c) The UK current account is likely to **deteriorate**. More expensive exports reduce export
+revenue; Cheaper imports (from HK perspective) increase import spending. Both effects reduce the
+trade surplus (or increase the deficit), assuming the Marshall-Lerner condition is satisfied.
 
 </details>
 
@@ -1120,9 +1122,9 @@ If you get this wrong, revise: [Depreciation and Appreciation](#depreciation-and
 
 A country's price elasticity of demand for exports is 0.4 and for imports is 0.9.
 
-(a) Does the Marshall-Lerner condition hold? (b) If the country's currency depreciates, will the trade
-Balance improve or worsen in the short run? (c) What is the minimum value of import elasticity needed
-For depreciation to improve the trade balance?
+(a) Does the Marshall-Lerner condition hold? (b) If the country's currency depreciates, will the
+trade Balance improve or worsen in the short run? (c) What is the minimum value of import elasticity
+needed For depreciation to improve the trade balance?
 
 <details>
 <summary>Solution</summary>
@@ -1130,8 +1132,8 @@ For depreciation to improve the trade balance?
 (a) Sum = `|0.4| + |0.9| = 1.3`. Since `1.3 \gt 1`The Marshall-Lerner condition **holds**.
 
 (b) Even though the ML condition holds, the trade balance may **worsen in the short run** due to the
-J-curve effect (quantities adjust slowly, price effect dominates initially). In the long run, quantities
-Adjust and the trade balance improves.
+J-curve effect (quantities adjust slowly, price effect dominates initially). In the long run,
+quantities Adjust and the trade balance improves.
 
 (c) We need `|0.4| + |e_M| \gt 1`So `|e_M| \gt 0.6`. The import elasticity must exceed 0.6.
 
@@ -1141,10 +1143,10 @@ If you get this wrong, revise: [Marshall-Lerner Condition](#marshall-lerner-cond
 
 ### Problem 5: Trade Policy Evaluation
 
-Country Z is considering joining a free trade area with Country W and Country V. Currently, Country Z
-Imports Good G from Country W (the world's most efficient producer) at USD 15 per unit, paying a tariff
-Of USD 5 (domestic price = USD 20). After the FTA, Country Z can import from Country V at USD 17 per
-Unit, tariff-free (domestic price = USD 17).
+Country Z is considering joining a free trade area with Country W and Country V. Currently, Country
+Z Imports Good G from Country W (the world's most efficient producer) at USD 15 per unit, paying a
+tariff Of USD 5 (domestic price = USD 20). After the FTA, Country Z can import from Country V at USD
+17 per Unit, tariff-free (domestic price = USD 17).
 
 (a) Is this trade creation or trade diversion? (b) What is the effect on world efficiency?
 
@@ -1152,12 +1154,13 @@ Unit, tariff-free (domestic price = USD 17).
 <summary>Solution</summary>
 
 (a) This is **trade diversion**. Before the FTA, Z imported from W at a total cost of USD 20 (USD 15
-Price + USD 5 tariff). After the FTA, Z imports from V at USD 17 (no tariff). The lower domestic price
-Benefits Z consumers, but production has shifted from W (efficient, cost = 15) to V (less efficient,
-Cost = 17).
+Price + USD 5 tariff). After the FTA, Z imports from V at USD 17 (no tariff). The lower domestic
+price Benefits Z consumers, but production has shifted from W (efficient, cost = 15) to V (less
+efficient, Cost = 17).
 
-(b) World efficiency **decreases**. Resources that could produce Good G at USD 15 (in W) are now being
-Used to produce it at USD 17 (in V). The world wastes USD 2 per unit of misallocated production.
+(b) World efficiency **decreases**. Resources that could produce Good G at USD 15 (in W) are now
+being Used to produce it at USD 17 (in V). The world wastes USD 2 per unit of misallocated
+production.
 
 </details>
 
@@ -1165,8 +1168,8 @@ If you get this wrong, revise: [Trade Barriers](#trade-barriers)
 
 ### Problem 6: Hong Kong Exchange Rate
 
-The US Federal Reserve raises interest rates significantly. Explain the effects on Hong Kong's economy
-Given the Linked Exchange Rate System.
+The US Federal Reserve raises interest rates significantly. Explain the effects on Hong Kong's
+economy Given the Linked Exchange Rate System.
 
 <details>
 <summary>Solution</summary>
@@ -1177,22 +1180,23 @@ Maintain the peg (to prevent capital outflows from HKD to USD assets).
 Effects on Hong Kong:
 
 1. **Borrowing costs rise:** Mortgage rates, business loan rates, and HIBOR increase, reducing
- consumption and investment.
-2. **Property market pressure:** Higher mortgage costs reduce housing affordability, putting downward
- pressure on property prices.
+   consumption and investment.
+2. **Property market pressure:** Higher mortgage costs reduce housing affordability, putting
+   downward pressure on property prices.
 3. **Economic slowdown:** Higher borrowing costs dampen aggregate demand, potentially slowing GDP
- growth and increasing unemployment.
+   growth and increasing unemployment.
 4. **Capital inflows:** Higher HKD rates attract foreign capital, strengthening demand for HKD (but
- capped at 7.75 by the convertibility undertaking).
-5. **Exports:** The stronger USD/HKD makes HK exports more expensive for foreign buyers, reducing export
- demand. Tourism from mainland China becomes more expensive.
+   capped at 7.75 by the convertibility undertaking).
+5. **Exports:** The stronger USD/HKD makes HK exports more expensive for foreign buyers, reducing
+   export demand. Tourism from mainland China becomes more expensive.
 6. **Inflation:** Lower import prices (stronger currency) reduce imported inflation.
-7. **No monetary autonomy:** The HKMA cannot lower rates to stimulate the economy even if HK enters a
- recession -- it must follow the Fed.
+7. **No monetary autonomy:** The HKMA cannot lower rates to stimulate the economy even if HK enters
+   a recession -- it must follow the Fed.
 
 </details>
 
-If you get this wrong, revise: [Effects of Exchange Rate Changes on the Hong Kong Economy](#effects-of-exchange-rate-changes-on-the-hong-kong-economy)
+If you get this wrong, revise:
+[Effects of Exchange Rate Changes on the Hong Kong Economy](#effects-of-exchange-rate-changes-on-the-hong-kong-economy)
 
 ### Problem 7: Terms of Trade and Welfare
 
@@ -1209,17 +1213,18 @@ Circumstances could the country be better off despite a deteriorating TOT?
 
 TOT has **deteriorated** from 100 to 92.86.
 
-(b) Not necessarily. The TOT only measures price ratios, not volumes. If export volumes have increased
-Substantially, total export revenue could still rise despite lower per-unit terms.
+(b) Not necessarily. The TOT only measures price ratios, not volumes. If export volumes have
+increased Substantially, total export revenue could still rise despite lower per-unit terms.
 
 (c) The country could be better off if:
+
 - Export volumes increased enough to offset the lower price ratio
 - Import prices fell in real terms (e.g., due to technological progress among trading partners)
 - The composition of trade shifted towards higher-value exports
 
-For example, if export volumes doubled while prices rose 30%, total export revenue rose significantly.
-Even though each unit of exports buys fewer imports than before, the country has many more units to
-Trade.
+For example, if export volumes doubled while prices rose 30%, total export revenue rose
+significantly. Even though each unit of exports buys fewer imports than before, the country has many
+more units to Trade.
 
 </details>
 
@@ -1227,27 +1232,28 @@ If you get this wrong, revise: [Terms of Trade](#terms-of-trade)
 
 ### Problem 8: Tariff vs Quota
 
-A country imports 1000 units of Good K at a world price of USD 50. The government wants to reduce imports
-To 600 units.
+A country imports 1000 units of Good K at a world price of USD 50. The government wants to reduce
+imports To 600 units.
 
-(a) If a tariff is used, what is the minimum tariff per unit? What happens to government revenue? (b)
-If a quota of 600 units is used, who receives the quota rent? (c) Which policy is more efficient? Why?
+(a) If a tariff is used, what is the minimum tariff per unit? What happens to government revenue?
+(b) If a quota of 600 units is used, who receives the quota rent? (c) Which policy is more
+efficient? Why?
 
 <details>
 <summary>Solution</summary>
 
-(a) The tariff must raise the domestic price enough to reduce imports from 1000 to 600. The exact tariff
-Depends on the elasticities of demand and supply. Government collects tariff revenue on the 600 units
-Imported.
+(a) The tariff must raise the domestic price enough to reduce imports from 1000 to 600. The exact
+tariff Depends on the elasticities of demand and supply. Government collects tariff revenue on the
+600 units Imported.
 
-(b) Under a quota, the quota rent = `(domestic price with quota - world price) \times 600`. This rent
-May go to: foreign producers (if they hold the licences), domestic importers (if they hold the
+(b) Under a quota, the quota rent = `(domestic price with quota - world price) \times 600`. This
+rent May go to: foreign producers (if they hold the licences), domestic importers (if they hold the
 Licences), or the government (if licences are auctioned).
 
-(c) A tariff is generally more efficient because: (1) it generates government revenue that can be used
-To reduce other distortionary taxes; (2) the quota rent may go to foreign producers, worsening the
-Country's terms of trade; (3) tariffs allow the market to determine who imports, allocating import
-Rights to the most efficient importers.
+(c) A tariff is generally more efficient because: (1) it generates government revenue that can be
+used To reduce other distortionary taxes; (2) the quota rent may go to foreign producers, worsening
+the Country's terms of trade; (3) tariffs allow the market to determine who imports, allocating
+import Rights to the most efficient importers.
 
 </details>
 
@@ -1259,42 +1265,55 @@ If you get this wrong, revise: [Trade Barriers](#trade-barriers)
 
 ### Problem 9: Comparative Advantage with Three Countries
 
-Three countries can produce computers and textiles with the following labour requirements (hours per unit):
+Three countries can produce computers and textiles with the following labour requirements (hours per
+unit):
 
-| | Computers | Textiles |
-|---|---|---|
-| Hong Kong | 10 | 5 |
-| Mainland China | 30 | 3 |
-| Vietnam | 50 | 2 |
+|                | Computers | Textiles |
+| -------------- | --------- | -------- |
+| Hong Kong      | 10        | 5        |
+| Mainland China | 30        | 3        |
+| Vietnam        | 50        | 2        |
 
-(a) Which country has an absolute advantage in each good?
-(b) Calculate the opportunity cost of 1 computer in each country.
-(c) If each country has 1000 labour hours, calculate the production possibility for each country under autarky (assuming equal split).
-(d) Which country should specialise in which good? Calculate the gains from trade if they specialise completely and trade at an exchange rate of 1 computer $= 4$ textiles.
+(a) Which country has an absolute advantage in each good? (b) Calculate the opportunity cost of 1
+computer in each country. (c) If each country has 1000 labour hours, calculate the production
+possibility for each country under autarky (assuming equal split). (d) Which country should
+specialise in which good? Calculate the gains from trade if they specialise completely and trade at
+an exchange rate of 1 computer $= 4$ textiles.
 
 <details>
 <summary>Solution</summary>
 
-(a) **Absolute advantage in computers:** Hong Kong (10 hours vs 30 and 50). **Absolute advantage in textiles:** Vietnam (2 hours vs 3 and 5). Mainland China has no absolute advantage in either good.
+(a) **Absolute advantage in computers:** Hong Kong (10 hours vs 30 and 50). **Absolute advantage in
+textiles:** Vietnam (2 hours vs 3 and 5). Mainland China has no absolute advantage in either good.
 
 (b) Opportunity cost of 1 computer:
+
 - Hong Kong: $5/10 = 0.5$ textiles.
 - Mainland China: $3/30 = 0.1$ textiles.
 - Vietnam: $2/50 = 0.04$ textiles.
 
 (c) **Autarky** (500 hours on each):
+
 - Hong Kong: 50 computers, 100 textiles.
 - Mainland China: 16.67 computers, 166.67 textiles.
 - Vietnam: 10 computers, 250 textiles.
 - World total: 76.67 computers, 516.67 textiles.
 
-(d) Vietnam has the lowest opportunity cost for computers (0.04 textiles per computer) -- comparative advantage in computers. Hong Kong has the lowest opportunity cost for textiles (2 computers per textile) -- comparative advantage in textiles. Mainland China has an intermediate position and should specialise in textiles (opportunity cost of 1 textile = 0.1 computers, lower than Hong Kong's 2).
+(d) Vietnam has the lowest opportunity cost for computers (0.04 textiles per computer) --
+comparative advantage in computers. Hong Kong has the lowest opportunity cost for textiles (2
+computers per textile) -- comparative advantage in textiles. Mainland China has an intermediate
+position and should specialise in textiles (opportunity cost of 1 textile = 0.1 computers, lower
+than Hong Kong's 2).
 
-With specialisation: Vietnam: 20 computers. Hong Kong: 200 textiles. China: 333.33 textiles. World: 20 computers, 533.33 textiles.
+With specialisation: Vietnam: 20 computers. Hong Kong: 200 textiles. China: 333.33 textiles. World:
+20 computers, 533.33 textiles.
 
-If Vietnam exports 10 computers at 1:4, it receives 40 textiles. Vietnam consumes 10 computers and 40 textiles. Hong Kong receives 20 computers for 80 textiles. Hong Kong consumes 20 computers and 120 textiles. China consumes 0 computers and 253.33 textiles.
+If Vietnam exports 10 computers at 1:4, it receives 40 textiles. Vietnam consumes 10 computers and
+40 textiles. Hong Kong receives 20 computers for 80 textiles. Hong Kong consumes 20 computers and
+120 textiles. China consumes 0 computers and 253.33 textiles.
 
-Compared to autarky, Vietnam gains ($10 - 10 = 0$ computers, $40 - 250 = $ actually needs to import textiles). This shows that three-country trade requires careful allocation to ensure all gain.
+Compared to autarky, Vietnam gains ($10 - 10 = 0$ computers, $40 - 250 = $ actually needs to import
+textiles). This shows that three-country trade requires careful allocation to ensure all gain.
 
 </details>
 
@@ -1302,33 +1321,45 @@ If you get this wrong, revise: [Comparative Advantage](#comparative-advantage)
 
 ### Problem 10: Exchange Rate Pass-Through and Inflation
 
-A country imports 40% of its consumption basket. The domestic currency depreciates by 15%. The import price elasticity of demand is 0.6, and domestic producers' mark-up over costs is 20%.
+A country imports 40% of its consumption basket. The domestic currency depreciates by 15%. The
+import price elasticity of demand is 0.6, and domestic producers' mark-up over costs is 20%.
 
-(a) Calculate the immediate impact on import prices in domestic currency terms.
-(b) If importers pass through 80% of the exchange rate change to consumers, calculate the effect on the CPI.
-(c) Explain why exchange rate pass-through is incomplete.
-(d) Apply this analysis to Hong Kong, where imports are approximately 180% of GDP.
+(a) Calculate the immediate impact on import prices in domestic currency terms. (b) If importers
+pass through 80% of the exchange rate change to consumers, calculate the effect on the CPI. (c)
+Explain why exchange rate pass-through is incomplete. (d) Apply this analysis to Hong Kong, where
+imports are approximately 180% of GDP.
 
 <details>
 <summary>Solution</summary>
 
-(a) A 15% depreciation increases the domestic currency price of imports by 15% (assuming foreign exporters do not change their prices in foreign currency). The immediate impact on import prices is $+15\%$.
+(a) A 15% depreciation increases the domestic currency price of imports by 15% (assuming foreign
+exporters do not change their prices in foreign currency). The immediate impact on import prices is
+$+15\%$.
 
 (b) If 80% pass-through: import prices rise by $0.80 \times 15\% = 12\%$.
 
 CPI weight of imports is 40%. Direct effect on CPI $= 0.40 \times 12\% = 4.8\%$.
 
-If domestic producers raise prices by 3% (matching part of the import price increase), the domestic component (60% weight) contributes $0.60 \times 3\% = 1.8\%$.
+If domestic producers raise prices by 3% (matching part of the import price increase), the domestic
+component (60% weight) contributes $0.60 \times 3\% = 1.8\%$.
 
 Total CPI impact $= 4.8\% + 1.8\% = 6.6\%$.
 
 (c) Exchange rate pass-through is incomplete because:
-1. **Foreign exporter pricing-to-market:** Foreign firms may absorb some of the exchange rate change by reducing profit margins to maintain market share.
-2. **Domestic distribution costs:** A significant portion of the final price consists of domestic costs (transport, retail margin, local taxes) that do not change with the exchange rate.
-3. **Long-term contracts:** Many import prices are set by contracts denominated in domestic currency, delaying the pass-through.
-4. **Substitution:** Consumers may switch to domestically produced substitutes when import prices rise.
 
-(d) **Hong Kong context:** Hong Kong's import-to-GDP ratio exceeds 180% due to the re-export trade. For the CPI basket, the direct import content is approximately 40--50%. The Linked Exchange Rate means the HKD moves with the USD. When the USD appreciates, the HKD appreciates against other currencies, making non-USD imports cheaper and HKD exports more expensive.
+1. **Foreign exporter pricing-to-market:** Foreign firms may absorb some of the exchange rate change
+   by reducing profit margins to maintain market share.
+2. **Domestic distribution costs:** A significant portion of the final price consists of domestic
+   costs (transport, retail margin, local taxes) that do not change with the exchange rate.
+3. **Long-term contracts:** Many import prices are set by contracts denominated in domestic
+   currency, delaying the pass-through.
+4. **Substitution:** Consumers may switch to domestically produced substitutes when import prices
+   rise.
+
+(d) **Hong Kong context:** Hong Kong's import-to-GDP ratio exceeds 180% due to the re-export trade.
+For the CPI basket, the direct import content is approximately 40--50%. The Linked Exchange Rate
+means the HKD moves with the USD. When the USD appreciates, the HKD appreciates against other
+currencies, making non-USD imports cheaper and HKD exports more expensive.
 
 </details>
 
@@ -1336,16 +1367,14 @@ If you get this wrong, revise: [Exchange Rates and Inflation](#exchange-rates-an
 
 ### Problem 11: Balance of Payments and the Mundell-Fleming Model
 
-A small open economy with a floating exchange rate has:
-IS: $Y = 1000 - 50r + 2e$
-LM: $Y = 200 + 50r$
-BP: $Y = 500 + 100r - 10e$
-(where $e$ is the exchange rate, domestic currency per foreign currency).
+A small open economy with a floating exchange rate has: IS: $Y = 1000 - 50r + 2e$ LM:
+$Y = 200 + 50r$ BP: $Y = 500 + 100r - 10e$ (where $e$ is the exchange rate, domestic currency per
+foreign currency).
 
-(a) Calculate the equilibrium output, interest rate, and exchange rate.
-(b) The government increases spending by 100. Calculate the new equilibrium and explain the crowding-out mechanism.
-(c) Under a fixed exchange rate, would fiscal policy be more or less effective?
-(d) How does this relate to Hong Kong's Currency Board?
+(a) Calculate the equilibrium output, interest rate, and exchange rate. (b) The government increases
+spending by 100. Calculate the new equilibrium and explain the crowding-out mechanism. (c) Under a
+fixed exchange rate, would fiscal policy be more or less effective? (d) How does this relate to Hong
+Kong's Currency Board?
 
 <details>
 <summary>Solution</summary>
@@ -1368,11 +1397,18 @@ Setting equal to BP: $650 + e = 10e - 100$. $750 = 9e$. $e = 83.33$.
 
 $Y = 733.33$. $r = 10.67\%$.
 
-The fiscal expansion increases output by 8.2% but raises interest rates, causing currency appreciation. The appreciation reduces net exports, partially offsetting the fiscal stimulus.
+The fiscal expansion increases output by 8.2% but raises interest rates, causing currency
+appreciation. The appreciation reduces net exports, partially offsetting the fiscal stimulus.
 
-(c) Under a fixed exchange rate, fiscal policy is **more effective**. The government spending increase raises interest rates, attracting capital inflows. The central bank must intervene to prevent appreciation (buying foreign currency, selling domestic currency), which increases the money supply and reinforces the fiscal expansion.
+(c) Under a fixed exchange rate, fiscal policy is **more effective**. The government spending
+increase raises interest rates, attracting capital inflows. The central bank must intervene to
+prevent appreciation (buying foreign currency, selling domestic currency), which increases the money
+supply and reinforces the fiscal expansion.
 
-(d) **Hong Kong's Currency Board:** With a fixed exchange rate and free capital mobility, monetary policy is not independent (follows the Fed). Fiscal policy is the primary tool for domestic stabilisation. Any fiscal expansion that raises HK interest rates attracts capital inflows, forcing the HKMA to expand the money supply, amplifying the stimulus.
+(d) **Hong Kong's Currency Board:** With a fixed exchange rate and free capital mobility, monetary
+policy is not independent (follows the Fed). Fiscal policy is the primary tool for domestic
+stabilisation. Any fiscal expansion that raises HK interest rates attracts capital inflows, forcing
+the HKMA to expand the money supply, amplifying the stimulus.
 
 </details>
 
@@ -1380,27 +1416,34 @@ If you get this wrong, revise: [Mundell-Fleming Model](#mundell-fleming-model)
 
 ### Problem 12: Foreign Direct Investment and Development
 
-An MNC invests USD 500 million in a manufacturing plant. Expected annual profit: USD 80 million for 20 years. Required return: 10%. The host country offers a tax holiday (0% tax for 5 years, then 20%).
+An MNC invests USD 500 million in a manufacturing plant. Expected annual profit: USD 80 million for
+20 years. Required return: 10%. The host country offers a tax holiday (0% tax for 5 years, then
+20%).
 
-(a) Calculate the NPV without the tax holiday (20% tax throughout).
-(b) Calculate the NPV with the tax holiday.
-(c) Calculate the value of the tax holiday.
-(d) Explain benefits and costs of FDI for the host country.
+(a) Calculate the NPV without the tax holiday (20% tax throughout). (b) Calculate the NPV with the
+tax holiday. (c) Calculate the value of the tax holiday. (d) Explain benefits and costs of FDI for
+the host country.
 
 <details>
 <summary>Solution</summary>
 
 (a) After-tax profit $= 80 \times 0.80 = 64$ million.
 
-NPV $= -500 + 64 \times \frac{1 - 1.10^{-20}}{0.10} = -500 + 64 \times 8.514 = -500 + 544.9 = 44.9$ million.
+NPV $= -500 + 64 \times \frac{1 - 1.10^{-20}}{0.10} = -500 + 64 \times 8.514 = -500 + 544.9 = 44.9$
+million.
 
 (b) Years 1--5: profit $= 80$. Years 6--20: profit $= 64$.
 
-NPV $= -500 + 80 \times 3.791 + 64 \times 7.606 \times 0.621 = -500 + 303.3 + 302.1 = 105.4$ million.
+NPV $= -500 + 80 \times 3.791 + 64 \times 7.606 \times 0.621 = -500 + 303.3 + 302.1 = 105.4$
+million.
 
 (c) Value of tax holiday $= 105.4 - 44.9 = 60.5$ million.
 
-(d) **Benefits:** capital inflows, technology transfer, employment creation, export development, productivity spillovers. **Costs:** profit repatriation, crowding out of domestic firms, environmental degradation, labour exploitation, dependence on foreign capital. China's experience demonstrates both: FDI was crucial for industrialisation and export growth, but profit repatriation now creates a growing primary income deficit in the BOP.
+(d) **Benefits:** capital inflows, technology transfer, employment creation, export development,
+productivity spillovers. **Costs:** profit repatriation, crowding out of domestic firms,
+environmental degradation, labour exploitation, dependence on foreign capital. China's experience
+demonstrates both: FDI was crucial for industrialisation and export growth, but profit repatriation
+now creates a growing primary income deficit in the BOP.
 
 </details>
 
@@ -1412,23 +1455,32 @@ If you get this wrong, revise: [Foreign Direct Investment](#foreign-direct-inves
 
 ### Problem 13: Currency Crises and Speculative Attacks
 
-Country X has a fixed exchange rate of 1 USD = 5 LC. Foreign reserves = USD 20 billion. Monetary base = LC 150 billion. Net domestic credit = LC 50 billion.
+Country X has a fixed exchange rate of 1 USD = 5 LC. Foreign reserves = USD 20 billion. Monetary
+base = LC 150 billion. Net domestic credit = LC 50 billion.
 
-(a) Verify the monetary base identity: NFA + NDA = Monetary Base.
-(b) If the government finances a fiscal deficit of LC 10 billion by borrowing from the central bank, calculate the effect on reserves (assuming the peg is maintained).
-(c) If speculative attacks cause the central bank to lose USD 5 billion, what happens to the monetary base?
-(d) Using the Krugman (1979) first-generation model, explain why persistent fiscal deficits lead to inevitable currency crises.
+(a) Verify the monetary base identity: NFA + NDA = Monetary Base. (b) If the government finances a
+fiscal deficit of LC 10 billion by borrowing from the central bank, calculate the effect on reserves
+(assuming the peg is maintained). (c) If speculative attacks cause the central bank to lose USD 5
+billion, what happens to the monetary base? (d) Using the Krugman (1979) first-generation model,
+explain why persistent fiscal deficits lead to inevitable currency crises.
 
 <details>
 <summary>Solution</summary>
 
-(a) NFA = $5 \times 20 = $ LC 100 billion. NDA = 50 billion. NFA + NDA = 150 billion = Monetary base. Verified.
+(a) NFA = $5 \times 20 = $ LC 100 billion. NDA = 50 billion. NFA + NDA = 150 billion = Monetary
+base. Verified.
 
-(b) Domestic credit increases to 60 billion. Monetary base rises to 160 billion. To maintain the peg, the central bank sells USD reserves and buys LC, reducing NFA. New NFA = $150 - 60 = 90$ billion = USD 18 billion. Reserves fall by USD 2 billion.
+(b) Domestic credit increases to 60 billion. Monetary base rises to 160 billion. To maintain the
+peg, the central bank sells USD reserves and buys LC, reducing NFA. New NFA = $150 - 60 = 90$
+billion = USD 18 billion. Reserves fall by USD 2 billion.
 
-(c) NFA falls to $100 - 25 = 75$ billion = USD 15 billion. New monetary base = 75 + 60 = 135 billion. The monetary base contracts by LC 15 billion (10%), which is contractionary.
+(c) NFA falls to $100 - 25 = 75$ billion = USD 15 billion. New monetary base = 75 + 60 = 135
+billion. The monetary base contracts by LC 15 billion (10%), which is contractionary.
 
-(d) The Krugman model shows that fiscal deficits financed by central bank credit creation cause continuous reserve loss. The process is self-reinforcing: fiscal deficit $\to$ money creation $\to$ excess supply of money $\to$ capital outflow $\to$ reserve loss $\to$ speculation $\to$ more reserve loss $\to$ crisis. Reserves are finite; when exhausted, devaluation is forced.
+(d) The Krugman model shows that fiscal deficits financed by central bank credit creation cause
+continuous reserve loss. The process is self-reinforcing: fiscal deficit $\to$ money creation $\to$
+excess supply of money $\to$ capital outflow $\to$ reserve loss $\to$ speculation $\to$ more reserve
+loss $\to$ crisis. Reserves are finite; when exhausted, devaluation is forced.
 
 </details>
 
@@ -1436,25 +1488,35 @@ If you get this wrong, revise: [Currency Crises](#currency-crises)
 
 ### Problem 14: Global Value Chains and Trade in Value Added
 
-A smartphone is designed in the US (USD 200 value added), uses chips from Taiwan (USD 100), a display from South Korea (USD 80), assembled in China (USD 30 value added), and sold in Europe for USD 500.
+A smartphone is designed in the US (USD 200 value added), uses chips from Taiwan (USD 100), a
+display from South Korea (USD 80), assembled in China (USD 30 value added), and sold in Europe for
+USD 500.
 
-(a) Calculate gross exports for each economy.
-(b) Calculate China's domestic value added share.
-(c) If the US imposes a 25% tariff on Chinese exports, calculate the effective tariff rate on China's value added.
-(d) Explain why gross trade statistics overstate the US-China trade imbalance.
+(a) Calculate gross exports for each economy. (b) Calculate China's domestic value added share. (c)
+If the US imposes a 25% tariff on Chinese exports, calculate the effective tariff rate on China's
+value added. (d) Explain why gross trade statistics overstate the US-China trade imbalance.
 
 <details>
 <summary>Solution</summary>
 
-(a) Gross exports: US = USD 200 (design services to China), Taiwan = USD 100 (chips to China), South Korea = USD 80 (display to China), China = USD 500 (finished phone to Europe).
+(a) Gross exports: US = USD 200 (design services to China), Taiwan = USD 100 (chips to China), South
+Korea = USD 80 (display to China), China = USD 500 (finished phone to Europe).
 
-(b) China's domestic value added = USD 30. Share = $30/500 = 6\%$. China's gross export is 94% foreign value added.
+(b) China's domestic value added = USD 30. Share = $30/500 = 6\%$. China's gross export is 94%
+foreign value added.
 
-(c) Tariff on gross value = $0.25 \times 500 = $ USD 125. Effective tariff on Chinese value added = $125/30 = 417\%$. The 25% nominal tariff translates to a 417% effective rate on China's actual contribution.
+(c) Tariff on gross value =
+$0.25 \times 500 = $ USD 125. Effective tariff on Chinese value added = $125/30 = 417\%$. The 25%
+nominal tariff translates to a 417% effective rate on China's actual contribution.
 
-(d) Traditional statistics record the full USD 500 as Chinese exports to the EU, but USD 470 of this represents value added by the US, Taiwan, and South Korea. The bilateral US-China trade imbalance is much smaller in value-added terms than in gross terms. The OECD-WTO TiVA database addresses this by decomposing trade into domestic and foreign value added.
+(d) Traditional statistics record the full USD 500 as Chinese exports to the EU, but USD 470 of this
+represents value added by the US, Taiwan, and South Korea. The bilateral US-China trade imbalance is
+much smaller in value-added terms than in gross terms. The OECD-WTO TiVA database addresses this by
+decomposing trade into domestic and foreign value added.
 
-Hong Kong is a re-export hub: its gross trade figures massively overstate domestic value added. Most Hong Kong "exports" are goods produced elsewhere, with Hong Kong adding value through logistics and finance.
+Hong Kong is a re-export hub: its gross trade figures massively overstate domestic value added. Most
+Hong Kong "exports" are goods produced elsewhere, with Hong Kong adding value through logistics and
+finance.
 
 </details>
 
@@ -1463,30 +1525,41 @@ If you get this wrong, revise: [Global Value Chains](#global-value-chains)
 ### Problem 15: Development Strategies -- ISI vs Export Promotion
 
 Country D considers two strategies:
+
 - ISI: 50% tariff on imports.
 - EP: 5% tariff with production subsidy of 20 per unit.
 
 Domestic demand: $Q_d = 1000 - 5P$. Supply: $Q_s = -200 + 10P$. World price $P_w = 50$.
 
-(a) Calculate welfare under free trade, ISI, and EP.
-(b) Which strategy has smaller DWL? Why?
-(c) Using South Korea and Latin America as examples, evaluate which strategy is more effective for development.
+(a) Calculate welfare under free trade, ISI, and EP. (b) Which strategy has smaller DWL? Why? (c)
+Using South Korea and Latin America as examples, evaluate which strategy is more effective for
+development.
 
 <details>
 <summary>Solution</summary>
 
-(a) **Free trade:** $P = 50$. $Q_d = 750$$Q_s = 300$. Imports = 450. CS = 56,250. PS = 4,500. Total welfare = 60,750.
+(a) **Free trade:** $P = 50$. $Q_d = 750$$Q_s = 300$. Imports = 450. CS = 56,250. PS = 4,500. Total
+welfare = 60,750.
 
-**ISI (50% tariff):** $P = 75$. $Q_d = 625$$Q_s = 550$. Imports = 75. CS = 39,062.5. PS = 15,125. Tariff revenue = 1,875. Welfare = 56,062.5. DWL = 4,687.5.
+**ISI (50% tariff):** $P = 75$. $Q_d = 625$$Q_s = 550$. Imports = 75. CS = 39,062.5. PS = 15,125.
+Tariff revenue = 1,875. Welfare = 56,062.5. DWL = 4,687.5.
 
-**EP (5% tariff + subsidy 20):** Consumer price = 52.5. Producer receives 72.5. $Q_d = 737.5$$Q_s = 525$. Imports = 212.5. CS = 54,391. PS = 13,781. Subsidy cost = 10,500. Tariff revenue = 531. Net welfare = 58,203. DWL = 2,547.
+**EP (5% tariff + subsidy 20):** Consumer price = 52.5. Producer receives 72.5.
+$Q_d = 737.5$$Q_s = 525$. Imports = 212.5. CS = 54,391. PS = 13,781. Subsidy cost = 10,500. Tariff
+revenue = 531. Net welfare = 58,203. DWL = 2,547.
 
-(b) EP has smaller DWL (2,547 vs 4,687.5). The subsidy distorts production (overproduction) but keeps prices low for consumers. The tariff distorts both production and consumption, creating larger DWL.
+(b) EP has smaller DWL (2,547 vs 4,687.5). The subsidy distorts production (overproduction) but
+keeps prices low for consumers. The tariff distorts both production and consumption, creating larger
+DWL.
 
-(c) **South Korea (EP):** Pursued export-oriented industrialisation from the 1960s. Faced international competition, forcing efficiency. GDP per capita rose from USD 158 (1960) to over USD 30,000 (2020). **Latin America (ISI):** Protected industries became inefficient. Fiscal deficits ballooned. The 1980s "lost decade" of debt crises and stagnation followed.
+(c) **South Korea (EP):** Pursued export-oriented industrialisation from the 1960s. Faced
+international competition, forcing efficiency. GDP per capita rose from USD 158 (1960) to over USD
+30,000 (2020). **Latin America (ISI):** Protected industries became inefficient. Fiscal deficits
+ballooned. The 1980s "lost decade" of debt crises and stagnation followed.
 
-EP outperforms ISI because: (1) international competition forces efficiency; (2) access to world markets enables scale economies; (3) export earnings provide foreign exchange; (4) EP is self-correcting (uncompetitive firms fail), while ISI rewards inefficiency.
-
+EP outperforms ISI because: (1) international competition forces efficiency; (2) access to world
+markets enables scale economies; (3) export earnings provide foreign exchange; (4) EP is
+self-correcting (uncompetitive firms fail), while ISI rewards inefficiency.
 
 If you get this wrong, revise: [Development Strategies](#development-strategies)
 

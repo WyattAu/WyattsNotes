@@ -1,21 +1,22 @@
 ---
 title: Gravitational Fields
-description: "A-Level Physics notes on Gravitational Fields: 1. Newton's Law of Universal Gravitation; Geometric Origin of the Inverse Square Law."
+description:
+  "A-Level Physics notes on Gravitational Fields: 1. Newton's Law of Universal Gravitation;
+  Geometric Origin of the Inverse Square Law."
 date: 2026-04-23T00:00:00.000Z
 tags: [Physics, ALevel]
 categories: [Physics]
 slug: gravitational-fields-depth
 ---
+
 ## Gravitational Fields
 
-:::info
-Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4
-:::
+:::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4 :::
 
 ## 1. Newton's Law of Universal Gravitation
 
-**Newton's Law.** Every point mass attracts every other point mass with a force directed along the line
-Joining them, whose magnitude is:
+**Newton's Law.** Every point mass attracts every other point mass with a force directed along the
+line Joining them, whose magnitude is:
 
 $$\boxed{F = \frac{Gm_1 m_2}{r^2}}$$
 
@@ -44,8 +45,8 @@ Cancellation of positive and negative electric charges renders electromagnetic f
 
 ## 2. Gravitational Field Strength
 
-**Definition.** The gravitational field strength $\mathbf{g}$ at a point is the force per unit mass on a
-Small test mass placed at that point:
+**Definition.** The gravitational field strength $\mathbf{g}$ at a point is the force per unit mass
+on a Small test mass placed at that point:
 
 $$\boxed{\mathbf{g} = \frac◆LB◆\mathbf{F}◆RB◆◆LB◆m◆RB◆}$$
 
@@ -65,15 +66,15 @@ Directed radially inward towards $M$.
 Point mass $M$ at its centre for all external points ($r \gt R$), and (b) zero field at all internal
 Points ($r \lt R$).
 
-**Proof (external, $r \gt R$).** Consider a test mass $m$ at distance $r$ from the centre. Divide the
-Shell into thin annular rings perpendicular to the line from the centre to $m$. A ring at polar angle
-$\theta$ has radius $R\sin\theta$Width $R\,d\theta$And mass:
+**Proof (external, $r \gt R$).** Consider a test mass $m$ at distance $r$ from the centre. Divide
+the Shell into thin annular rings perpendicular to the line from the centre to $m$. A ring at polar
+angle $\theta$ has radius $R\sin\theta$Width $R\,d\theta$And mass:
 
 $$dM = \frac◆LB◆M◆RB◆◆LB◆4\pi R^2◆RB◆ \cdot 2\pi R^2 \sin\theta\,d\theta = \frac{M}{2}\sin\theta\,d\theta$$
 
-Every element of the ring is at distance $s = \sqrt◆LB◆r^2 + R^2 - 2rR\cos\theta◆RB◆$ from $m$. By the
-Axial symmetry of the ring, the transverse components of force cancel, leaving only the component
-Along the axis. The angle $\alpha$ between the force direction and the axis satisfies:
+Every element of the ring is at distance $s = \sqrt◆LB◆r^2 + R^2 - 2rR\cos\theta◆RB◆$ from $m$. By
+the Axial symmetry of the ring, the transverse components of force cancel, leaving only the
+component Along the axis. The angle $\alpha$ between the force direction and the axis satisfies:
 
 $$\cos\alpha = \frac◆LB◆r - R\cos\theta◆RB◆◆LB◆s◆RB◆$$
 
@@ -86,8 +87,9 @@ $\theta = \pi$$u = -1$:
 
 $$F = \frac{GmM}{2}\int_{1}^{-1}\frac{(r - Ru)(-du)}{(r^2 + R^2 - 2rRu)^{3/2}}$$
 
-The integral evaluates to $\frac{2r}{r^2 - R^2} \cdot \frac{1}{r^2} \cdot (r^2 - R^2) \cdot \frac{1}{r}$
-After careful algebra, giving:
+The integral evaluates to
+$\frac{2r}{r^2 - R^2} \cdot \frac{1}{r^2} \cdot (r^2 - R^2) \cdot \frac{1}{r}$ After careful
+algebra, giving:
 
 $$F = \frac{GMm}{r^2}$$
 
@@ -95,14 +97,11 @@ This is identical to the field of a point mass $M$ at the centre. $\square$
 
 **Proof (internal, $r \lt R$).** The same integral with $r \lt R$ evaluates to zero. Physically, for
 Every mass element pulling the test mass in one direction, there is a compensating element on the
-Opposite side. The nearer element pulls more strongly (shorter distance) but is subtended by a smaller
-Solid angle, and these two effects cancel exactly. $\square$
+Opposite side. The nearer element pulls more strongly (shorter distance) but is subtended by a
+smaller Solid angle, and these two effects cancel exactly. $\square$
 
-:::warning
-Warning
-Earth is approximately but not perfectly spherical (equatorial bulge), so $g$ varies slightly with
-Latitude even at sea level.
-:::
+:::warning Warning Earth is approximately but not perfectly spherical (equatorial bulge), so $g$
+varies slightly with Latitude even at sea level. :::
 
 ### Field Strength at Altitude
 
@@ -114,8 +113,8 @@ For $h \ll R$The binomial approximation gives $g \approx g_0(1 - 2h/R)$.
 
 ## 3. Gravitational Potential
 
-**Definition.** The gravitational potential $V$ at a point is the work done per unit mass in bringing a
-Small test mass from infinity to that point:
+**Definition.** The gravitational potential $V$ at a point is the work done per unit mass in
+bringing a Small test mass from infinity to that point:
 
 $$\boxed{V = -\frac{GM}{r}}$$
 
@@ -127,10 +126,10 @@ $$V = \frac{W}{m} = \frac{1}{m}\int_{\infty}^{r} \frac{GMm}{r'^2}\,dr' = GM\int_
 
 $\square$
 
-**Why negative?** We define $V = 0$ at infinity. As the test mass moves inward, gravity does positive
-Work, so the potential decreases. The potential at any finite $r$ is therefore negative, becoming more
-Negative as $r$ decreases. An external agent must supply energy $GMm/r$ to move the mass from $r$ back
-To infinity.
+**Why negative?** We define $V = 0$ at infinity. As the test mass moves inward, gravity does
+positive Work, so the potential decreases. The potential at any finite $r$ is therefore negative,
+becoming more Negative as $r$ decreases. An external agent must supply energy $GMm/r$ to move the
+mass from $r$ back To infinity.
 
 ### Field--Potential Relationship
 
@@ -163,8 +162,8 @@ Gravitational potential energy.
 
 ## 4. Escape Velocity
 
-**Definition.** The escape velocity $v_e$ is the minimum launch speed for an object to reach infinity
-With zero residual speed from the surface of a body of mass $M$ and radius $R$.
+**Definition.** The escape velocity $v_e$ is the minimum launch speed for an object to reach
+infinity With zero residual speed from the surface of a body of mass $M$ and radius $R$.
 
 ### Derivation from Energy Conservation
 
@@ -183,23 +182,24 @@ The circular orbital speed at radius $r$ is $v_{\mathrm{orb}} = \sqrt{GM/r}$. Th
 
 $$v_e = \sqrt{2}\,v_{\mathrm{orb}}$$
 
-Escape requires exactly twice the kinetic energy of a circular orbit: $\frac{1}{2}mv_e^2 = 2 \times
-\frac{1}{2}mv_{\mathrm{orb}}^2$. A spacecraft in circular orbit needs a speed increase of
-$(\sqrt{2} - 1) \times 100\% \approx 41.4\%$ to escape.
+Escape requires exactly twice the kinetic energy of a circular orbit:
+$\frac{1}{2}mv_e^2 = 2 \times
+\frac{1}{2}mv_{\mathrm{orb}}^2$. A spacecraft in circular orbit needs a
+speed increase of $(\sqrt{2} - 1) \times 100\% \approx 41.4\%$ to escape.
 
 <details>
 <summary>Worked Example: Escape from Mars</summary>
 Calculate the escape velocity from Mars ($M = 6.42 \times 10^{23}$ kg, $R = 3.39 \times 10^6$ m).
 
-**Answer.** $v_e = \sqrt◆LB◆\frac{2 \times 6.67 \times 10^{-11} \times 6.42 \times 10^{23}}{3.39 \times 10^6}◆RB◆ = \sqrt◆LB◆\frac{8.56 \times 10^{13}}{3.39 \times 10^6}◆RB◆ = \sqrt◆LB◆2.53 \times 10^7◆RB◆ = 5020$ m s$^{-1}$ $= 5.02$ km s$^{-1}$.
+**Answer.**
+$v_e = \sqrt◆LB◆\frac{2 \times 6.67 \times 10^{-11} \times 6.42 \times 10^{23}}{3.39 \times 10^6}◆RB◆ = \sqrt◆LB◆\frac{8.56 \times 10^{13}}{3.39 \times 10^6}◆RB◆ = \sqrt◆LB◆2.53 \times 10^7◆RB◆ = 5020$
+m s$^{-1}$ $= 5.02$ km s$^{-1}$.
 
 </details>
 
-:::warning
-Common Pitfall Escape velocity is independent of the mass and direction of launch of the
-Projectile. A 1 kg ball and a $10^6$ kg rocket both need the same speed. However, the required kinetic
-Energy $E_k = \frac{1}{2}mv_e^2$ scales with mass.
-:::
+:::warning Common Pitfall Escape velocity is independent of the mass and direction of launch of the
+Projectile. A 1 kg ball and a $10^6$ kg rocket both need the same speed. However, the required
+kinetic Energy $E_k = \frac{1}{2}mv_e^2$ scales with mass. :::
 
 ## 5. Orbital Mechanics
 
@@ -207,14 +207,14 @@ Energy $E_k = \frac{1}{2}mv_e^2$ scales with mass.
 
 For a satellite of mass $m$ in a circular orbit of radius $r$ around mass $M$:
 
-| Quantity | Expression |
-|---|---|
-| Orbital speed | $v = \sqrt{GM/r}$ |
-| Orbital period | $T = 2\pi\sqrt{r^3/(GM)}$ |
-| Centripetal acceleration | $a = GM/r^2 = g$ |
-| Kinetic energy | $E_k = GMm/(2r)$ |
-| Potential energy | $E_p = -GMm/r$ |
-| Total energy | $E_{\mathrm{total}} = -GMm/(2r)$ |
+| Quantity                 | Expression                       |
+| ------------------------ | -------------------------------- |
+| Orbital speed            | $v = \sqrt{GM/r}$                |
+| Orbital period           | $T = 2\pi\sqrt{r^3/(GM)}$        |
+| Centripetal acceleration | $a = GM/r^2 = g$                 |
+| Kinetic energy           | $E_k = GMm/(2r)$                 |
+| Potential energy         | $E_p = -GMm/r$                   |
+| Total energy             | $E_{\mathrm{total}} = -GMm/(2r)$ |
 
 **Proof of energy relations.** From $\frac{GMm}{r^2} = \frac{mv^2}{r}$: $v^2 = GM/r$.
 
@@ -224,8 +224,8 @@ Note: $E_k = \frac{1}{2}|E_p|$ and $E_{\mathrm{total}} = E_k$. This is the viria
 Gravitational systems: $2E_k + E_p = 0$. $\square$
 
 **Key insight.** The total energy is negative — the satellite is gravitationally bound. To move to a
-Higher orbit, energy must be added (the orbit becomes less negative). The kinetic energy *decreases*
-With increasing $r$But the total energy *increases* (potential energy increase dominates).
+Higher orbit, energy must be added (the orbit becomes less negative). The kinetic energy _decreases_
+With increasing $r$But the total energy _increases_ (potential energy increase dominates).
 
 ### The Vis-Viva Equation
 
@@ -233,15 +233,15 @@ For any Keplerian orbit (circular or elliptical) with semi-major axis $a$:
 
 $$\boxed{v^2 = GM\left(\frac{2}{r} - \frac{1}{a}\right)}$$
 
-Setting $a = r$ recovers the circular orbit result. For a parabolic escape trajectory ($a \to \infty$):
-$v^2 = 2GM/r$Giving the escape speed.
+Setting $a = r$ recovers the circular orbit result. For a parabolic escape trajectory
+($a \to \infty$): $v^2 = 2GM/r$Giving the escape speed.
 
 ### Orbital Speed is Mass-Independent
 
 $$v = \sqrt◆LB◆\frac{GM}{r}◆RB◆$$
 
-The satellite's mass $m$ cancels. This is the same reason that all objects fall at the same rate in a
-Gravitational field (equivalence principle).
+The satellite's mass $m$ cancels. This is the same reason that all objects fall at the same rate in
+a Gravitational field (equivalence principle).
 
 <details>
 <summary>Worked Example: Satellite Orbit Change</summary>
@@ -250,9 +250,11 @@ Required to move it to a circular orbit of radius $1.4 \times 10^7$ m.
 
 **Answer.** $GM = 3.98 \times 10^{14}$ N m$^2$ kg$^{-1}$.
 
-$E_1 = -\frac{GMm}{2r_1} = -\frac◆LB◆3.98 \times 10^{14} \times 500◆RB◆◆LB◆2 \times 7.0 \times 10^6◆RB◆ = -1.42 \times 10^{10}$ J.
+$E_1 = -\frac{GMm}{2r_1} = -\frac◆LB◆3.98 \times 10^{14} \times 500◆RB◆◆LB◆2 \times 7.0 \times 10^6◆RB◆ = -1.42 \times 10^{10}$
+J.
 
-$E_2 = -\frac◆LB◆3.98 \times 10^{14} \times 500◆RB◆◆LB◆2 \times 1.4 \times 10^7◆RB◆ = -7.11 \times 10^9$ J.
+$E_2 = -\frac◆LB◆3.98 \times 10^{14} \times 500◆RB◆◆LB◆2 \times 1.4 \times 10^7◆RB◆ = -7.11 \times 10^9$
+J.
 
 $\Delta E = E_2 - E_1 = -7.11 \times 10^9 - (-1.42 \times 10^{10}) = 7.1 \times 10^9$ J $= 7.1$ GJ.
 
@@ -264,8 +266,8 @@ $\Delta E = E_2 - E_1 = -7.11 \times 10^9 - (-1.42 \times 10^{10}) = 7.1 \times 
 
 Every planet moves in an elliptical orbit with the Sun at one focus.
 
-**Proof sketch.** Starting from $\mathbf{F} = -\frac{GMm}{r^2}\hat{\mathbf{r}}$ (central force), the orbit
-Equation in polar coordinates is:
+**Proof sketch.** Starting from $\mathbf{F} = -\frac{GMm}{r^2}\hat{\mathbf{r}}$ (central force), the
+orbit Equation in polar coordinates is:
 
 $$r = \frac◆LB◆a(1 - e^2)◆RB◆◆LB◆1 + e\cos\theta◆RB◆$$
 
@@ -277,7 +279,8 @@ And the orbit is an ellipse with the central mass at one focus. $\square$
 A line joining a planet to the Sun sweeps out equal areas in equal times.
 
 **Proof.** The gravitational force is central ($\mathbf{F} \parallel \mathbf{r}$), so torque
-$\boldsymbol{\tau} = \mathbf{r} \times \mathbf{F} = 0$. Angular momentum $L = mrv_\perp$ is constant.
+$\boldsymbol{\tau} = \mathbf{r} \times \mathbf{F} = 0$. Angular momentum $L = mrv_\perp$ is
+constant.
 
 Area swept in time $dt$: $dA = \frac{1}{2}r \cdot v_\perp\,dt = \frac{L}{2m}\,dt$.
 
@@ -311,7 +314,8 @@ Their observed periods.
 ## 7. Geostationary Orbits
 
 **Definition.** A geostationary orbit is a circular, prograde, equatorial orbit with period equal to
-One sidereal day ($T = 86164$ s), causing the satellite to remain fixed above a point on the equator.
+One sidereal day ($T = 86164$ s), causing the satellite to remain fixed above a point on the
+equator.
 
 ### Derivation of Orbital Radius
 
@@ -329,14 +333,12 @@ $$v = \sqrt◆LB◆\frac{GM}{r}◆RB◆ = \frac◆LB◆2\pi r◆RB◆◆LB◆T�
 
 1. **Correct radius:** $r \approx 42\,200$ km (from Kepler's third law with $T = 86164$ s).
 2. **Equatorial plane:** Any inclination causes the satellite to trace a figure-eight (anisotropic
- pattern) as seen from the ground.
+   pattern) as seen from the ground.
 3. **Prograde rotation:** The satellite must orbit west to east, matching Earth's rotation.
 
-:::warning
-Warning
-Geostationary is a stricter condition: geosynchronous AND equatorial AND circular. GPS satellites are
-Neither — they use medium Earth orbits at 20,200 km altitude with 12-hour periods.
-:::
+:::warning Warning Geostationary is a stricter condition: geosynchronous AND equatorial AND
+circular. GPS satellites are Neither — they use medium Earth orbits at 20,200 km altitude with
+12-hour periods. :::
 
 ### Applications
 
@@ -346,15 +348,15 @@ Neither — they use medium Earth orbits at 20,200 km altitude with 12-hour peri
 
 ## 8. Comparison with Electric Fields
 
-| Property | Gravitational | Electric |
-|---|---|---|
-| Source property | Mass $M$ | Charge $Q$ |
-| Force law | $F = Gm_1m_2/r^2$ | $F = q_1q_2/(4\pi\varepsilon_0 r^2)$ |
-| Field strength | $g = GM/r^2$ | $E = Q/(4\pi\varepsilon_0 r^2)$ |
-| Potential | $V = -GM/r$ (always $\lt 0$) | $V = Q/(4\pi\varepsilon_0 r)$ (sign of $Q$) |
-| Attractive/repulsive | Always attractive | Both possible |
-| Screening | Impossible | Possible (Faraday cage) |
-| Relative strength | $\sim 10^{-36}$ | $\sim 1$ |
+| Property             | Gravitational                | Electric                                    |
+| -------------------- | ---------------------------- | ------------------------------------------- |
+| Source property      | Mass $M$                     | Charge $Q$                                  |
+| Force law            | $F = Gm_1m_2/r^2$            | $F = q_1q_2/(4\pi\varepsilon_0 r^2)$        |
+| Field strength       | $g = GM/r^2$                 | $E = Q/(4\pi\varepsilon_0 r^2)$             |
+| Potential            | $V = -GM/r$ (always $\lt 0$) | $V = Q/(4\pi\varepsilon_0 r)$ (sign of $Q$) |
+| Attractive/repulsive | Always attractive            | Both possible                               |
+| Screening            | Impossible                   | Possible (Faraday cage)                     |
+| Relative strength    | $\sim 10^{-36}$              | $\sim 1$                                    |
 
 Both fields obey inverse square force laws, possess $1/r$ potentials, and satisfy a Gauss's law. The
 Structural parallel is exact, differing only in the source property (mass vs. Charge) and the
@@ -367,7 +369,9 @@ Existence of negative charge enabling screening and repulsion.
 Calculate the gravitational field strength at the surface of Jupiter ($M = 1.90 \times 10^{27}$ kg,
 $R = 6.99 \times 10^7$ m).
 
-**Answer.** $g = \frac{GM}{R^2} = \frac◆LB◆6.67 \times 10^{-11} \times 1.90 \times 10^{27}◆RB◆◆LB◆(6.99 \times 10^7)^2◆RB◆ = \frac◆LB◆1.267 \times 10^{17}◆RB◆◆LB◆4.886 \times 10^{15}◆RB◆ = 25.9$ N kg$^{-1}$.
+**Answer.**
+$g = \frac{GM}{R^2} = \frac◆LB◆6.67 \times 10^{-11} \times 1.90 \times 10^{27}◆RB◆◆LB◆(6.99 \times 10^7)^2◆RB◆ = \frac◆LB◆1.267 \times 10^{17}◆RB◆◆LB◆4.886 \times 10^{15}◆RB◆ = 25.9$
+N kg$^{-1}$.
 
 </details>
 
@@ -416,7 +420,8 @@ Distance $r_p = 1.0 \times 10^{10}$ m. Find its speed at perihelion.
 
 **Answer.** Energy conservation: $\frac{1}{2}mv_p^2 - \frac{GMm}{r_p} = \frac{1}{2}mv_0^2$.
 
-$v_p = \sqrt{v_0^2 + 2GM/r_p} = \sqrt◆LB◆2.5 \times 10^7 + 2.65 \times 10^{10}◆RB◆ = \sqrt◆LB◆2.653 \times 10^{10}◆RB◆ = 1.63 \times 10^5$ m s$^{-1}$ $= 163$ km s$^{-1}$.
+$v_p = \sqrt{v_0^2 + 2GM/r_p} = \sqrt◆LB◆2.5 \times 10^7 + 2.65 \times 10^{10}◆RB◆ = \sqrt◆LB◆2.653 \times 10^{10}◆RB◆ = 1.63 \times 10^5$
+m s$^{-1}$ $= 163$ km s$^{-1}$.
 
 </details>
 
@@ -425,7 +430,9 @@ $v_p = \sqrt{v_0^2 + 2GM/r_p} = \sqrt◆LB◆2.5 \times 10^7 + 2.65 \times 10^{1
 Calculate the gravitational potential energy of the Earth--Moon system. ($M_E = 5.97 \times 10^{24}$
 Kg, $M_M = 7.35 \times 10^{22}$ kg, $r = 3.84 \times 10^8$ m.)
 
-**Answer.** $E_p = -\frac{GM_E M_M}{r} = -\frac◆LB◆6.67 \times 10^{-11} \times 5.97 \times 10^{24} \times 7.35 \times 10^{22}◆RB◆◆LB◆3.84 \times 10^8◆RB◆ = -7.63 \times 10^{28}$ J.
+**Answer.**
+$E_p = -\frac{GM_E M_M}{r} = -\frac◆LB◆6.67 \times 10^{-11} \times 5.97 \times 10^{24} \times 7.35 \times 10^{22}◆RB◆◆LB◆3.84 \times 10^8◆RB◆ = -7.63 \times 10^{28}$
+J.
 
 </details>
 
@@ -434,8 +441,8 @@ Kg, $M_M = 7.35 \times 10^{22}$ kg, $r = 3.84 \times 10^8$ m.)
 Show that the work required to move a satellite from a circular orbit of radius $r$ to a circular
 Orbit of radius $2r$ is $GMm/(4r)$.
 
-**Answer.** $E_1 = -GMm/(2r)$$E_2 = -GMm/(4r)$. Work $= E_2 - E_1 = -GMm/(4r) + GMm/(2r) = GMm/(4r)$.
-$\square$
+**Answer.** $E_1 = -GMm/(2r)$$E_2 = -GMm/(4r)$. Work
+$= E_2 - E_1 = -GMm/(4r) + GMm/(2r) = GMm/(4r)$. $\square$
 
 </details>
 
@@ -443,7 +450,8 @@ $\square$
 <summary>Problem 8</summary>
 Derive $v_e = \sqrt{2gR}$ for a planet of radius $R$ and surface field strength $g$.
 
-**Answer.** $g = GM/R^2$So $GM = gR^2$. $v_e = \sqrt{2GM/R} = \sqrt{2gR^2/R} = \sqrt{2gR}$. $\square$
+**Answer.** $g = GM/R^2$So $GM = gR^2$. $v_e = \sqrt{2GM/R} = \sqrt{2gR^2/R} = \sqrt{2gR}$.
+$\square$
 
 </details>
 
@@ -454,7 +462,9 @@ Needed to escape Earth's gravity from its orbit.
 
 **Answer.** $r = 4.22 \times 10^7$ m. $GM = 3.98 \times 10^{14}$.
 
-(a) $E = -GMm/(2r) = -3.98 \times 10^{14} \times 1200 / (2 \times 4.22 \times 10^7) = -5.66 \times 10^9$ J.
+(a)
+$E = -GMm/(2r) = -3.98 \times 10^{14} \times 1200 / (2 \times 4.22 \times 10^7) = -5.66 \times 10^9$
+J.
 
 (b) To escape: $E_{\mathrm{final}} = 0$. Energy needed $= 0 - E = 5.66 \times 10^9$ J $= 5.66$ GJ.
 
@@ -465,9 +475,11 @@ Needed to escape Earth's gravity from its orbit.
 Use the vis-viva equation to find the speed of a satellite at perigee ($r_p = 7.0 \times 10^6$ m) of an
 Elliptical orbit with apogee $r_a = 4.2 \times 10^7$ m.
 
-**Answer.** Semi-major axis: $a = (r_p + r_a)/2 = (7.0 + 42.0) \times 10^6 / 2 = 2.45 \times 10^7$ m.
+**Answer.** Semi-major axis: $a = (r_p + r_a)/2 = (7.0 + 42.0) \times 10^6 / 2 = 2.45 \times 10^7$
+m.
 
-$v_p = \sqrt{GM(2/r_p - 1/a)} = \sqrt◆LB◆3.98 \times 10^{14}(2.857 \times 10^{-7} - 4.082 \times 10^{-8})◆RB◆ = \sqrt◆LB◆3.98 \times 10^{14} \times 2.449 \times 10^{-7}◆RB◆ = \sqrt◆LB◆9.75 \times 10^7◆RB◆ = 9870$ m s$^{-1}$.
+$v_p = \sqrt{GM(2/r_p - 1/a)} = \sqrt◆LB◆3.98 \times 10^{14}(2.857 \times 10^{-7} - 4.082 \times 10^{-8})◆RB◆ = \sqrt◆LB◆3.98 \times 10^{14} \times 2.449 \times 10^{-7}◆RB◆ = \sqrt◆LB◆9.75 \times 10^7◆RB◆ = 9870$
+m s$^{-1}$.
 
 </details>
 

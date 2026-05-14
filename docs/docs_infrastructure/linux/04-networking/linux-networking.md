@@ -1,10 +1,13 @@
 ---
 id: linux-networking
 title: Linux Networking
-description: "Linux Networking — Network Interface Management (iproute2); Interface Configuration; List all network interfaces; Bring interface up/down."
+description:
+  'Linux Networking — Network Interface Management (iproute2); Interface Configuration; List all
+  network interfaces; Bring interface up/down.'
 slug: linux-networking
 sidebar_position: 1
 ---
+
 ## Network Interface Management (iproute2)
 
 The `iproute2` suite has replaced the legacy `net-tools` (`ifconfig``route``netstat`) as the
@@ -60,13 +63,13 @@ ip addr show eth0
 
 Modern Linux uses **predictable network interface names** instead of `eth0`:
 
-| Naming Scheme | Format | Example |
+| Naming Scheme | Format                             | Example           |
 | ------------- | ---------------------------------- | ----------------- |
-| `biosdevname` | BIOS-provided names | `em1``p1p1` |
-| `systemd` | Based on bus/slot/location | `enp3s0``ens3` |
-| `slot` | Physical slot number | `enp3s0` |
-| `path` | Physical topology path | `enx78e7d1ea46da` |
-| `mac` | MAC address (for USB/dock devices) | `enx78e7d1ea46da` |
+| `biosdevname` | BIOS-provided names                | `em1``p1p1`       |
+| `systemd`     | Based on bus/slot/location         | `enp3s0``ens3`    |
+| `slot`        | Physical slot number               | `enp3s0`          |
+| `path`        | Physical topology path             | `enx78e7d1ea46da` |
+| `mac`         | MAC address (for USB/dock devices) | `enx78e7d1ea46da` |
 
 To revert to classic names, add `net.ifnames=0 biosdevname=0` to the kernel command line.
 
@@ -264,26 +267,26 @@ graph LR
     H --> I[Outgoing Packet]
 ```
 
-| Hook | Chains (iptables) | Description |
+| Hook                     | Chains (iptables) | Description                                 |
 | ------------------------ | ----------------- | ------------------------------------------- |
-| **NF_INET_PRE_ROUTING** | `PREROUTING` | Before routing decision — DNAT, mangling |
-| **NF_INET_LOCAL_IN** | `INPUT` | Packets destined for local processes |
-| **NF_INET_FORWARD** | `FORWARD` | Packets being forwarded (router) |
-| **NF_INET_LOCAL_OUT** | `OUTPUT` | Packets originating from local processes |
-| **NF_INET_POST_ROUTING** | `POSTROUTING` | After routing decision — SNAT, masquerading |
+| **NF_INET_PRE_ROUTING**  | `PREROUTING`      | Before routing decision — DNAT, mangling    |
+| **NF_INET_LOCAL_IN**     | `INPUT`           | Packets destined for local processes        |
+| **NF_INET_FORWARD**      | `FORWARD`         | Packets being forwarded (router)            |
+| **NF_INET_LOCAL_OUT**    | `OUTPUT`          | Packets originating from local processes    |
+| **NF_INET_POST_ROUTING** | `POSTROUTING`     | After routing decision — SNAT, masquerading |
 
 ### Connection Tracking (conntrack)
 
 The `nf_conntrack` module tracks the state of network connections. It classifies packets into
 Connection states:
 
-| State | Description |
+| State         | Description                                                           |
 | ------------- | --------------------------------------------------------------------- |
-| `NEW` | First packet of a connection (no matching entry yet) |
-| `ESTABLISHED` | Connection is established (both directions seen) |
-| `RELATED` | Packet related to an existing connection (e.g., FTP data, ICMP error) |
-| `UNREPLIED` | Connection entry exists but no response packet seen |
-| `INVALID` | Packet does not match any known connection |
+| `NEW`         | First packet of a connection (no matching entry yet)                  |
+| `ESTABLISHED` | Connection is established (both directions seen)                      |
+| `RELATED`     | Packet related to an existing connection (e.g., FTP data, ICMP error) |
+| `UNREPLIED`   | Connection entry exists but no response packet seen                   |
+| `INVALID`     | Packet does not match any known connection                            |
 
 ```bash
 # View connection tracking table
@@ -322,13 +325,13 @@ And rules with matches and targets.
 
 ### Tables and Chains
 
-| Table | Chains Available | Purpose |
+| Table      | Chains Available                                | Purpose                                          |
 | ---------- | ----------------------------------------------- | ------------------------------------------------ |
-| `filter` | INPUT, FORWARD, OUTPUT | Packet filtering (accept/drop/reject) |
-| `nat` | PREROUTING, POSTROUTING, OUTPUT | Network address translation |
-| `mangle` | PREROUTING, INPUT, FORWARD, OUTPUT, POSTROUTING | Packet modification (TOS, TTL, marks) |
-| `raw` | PREROUTING, OUTPUT | Disable connection tracking for specific packets |
-| `security` | INPUT, FORWARD, OUTPUT | SELinux security context filtering |
+| `filter`   | INPUT, FORWARD, OUTPUT                          | Packet filtering (accept/drop/reject)            |
+| `nat`      | PREROUTING, POSTROUTING, OUTPUT                 | Network address translation                      |
+| `mangle`   | PREROUTING, INPUT, FORWARD, OUTPUT, POSTROUTING | Packet modification (TOS, TTL, marks)            |
+| `raw`      | PREROUTING, OUTPUT                              | Disable connection tracking for specific packets |
+| `security` | INPUT, FORWARD, OUTPUT                          | SELinux security context filtering               |
 
 ### Common iptables Operations
 
@@ -391,17 +394,17 @@ iptables-restore < /etc/iptables/rules.v4
 iptables -t table -A chain [matches] -j target
 ```
 
-| Component | Examples |
-| ----------- | ----------------------------------------------------------- |
-| `-p proto` | `tcp``udp``icmp``all` |
-| `-s src` | IP address or CIDR |
-| `-d dst` | IP address or CIDR |
-| `-i in-if` | Input interface |
-| `-o out-if` | Output interface |
-| `--dport` | Destination port (requires `-p tcp/udp`) |
-| `--sport` | Source port |
-| `-m match` | Module: `conntrack``limit``multiport``state``mac` |
-| `-j target` | `ACCEPT``DROP``REJECT``LOG``RETURN``DNAT``SNAT` |
+| Component   | Examples                                          |
+| ----------- | ------------------------------------------------- |
+| `-p proto`  | `tcp``udp``icmp``all`                             |
+| `-s src`    | IP address or CIDR                                |
+| `-d dst`    | IP address or CIDR                                |
+| `-i in-if`  | Input interface                                   |
+| `-o out-if` | Output interface                                  |
+| `--dport`   | Destination port (requires `-p tcp/udp`)          |
+| `--sport`   | Source port                                       |
+| `-m match`  | Module: `conntrack``limit``multiport``state``mac` |
+| `-j target` | `ACCEPT``DROP``REJECT``LOG``RETURN``DNAT``SNAT`   |
 
 ## nftables
 
@@ -410,14 +413,14 @@ Consistent syntax, and atomic rule replacement.
 
 ### Key Differences from iptables
 
-| Aspect | iptables | nftables |
+| Aspect             | iptables                              | nftables                          |
 | ------------------ | ------------------------------------- | --------------------------------- |
-| **Rule storage** | Linear list per chain | Sets and maps (lookup tables) |
-| **Atomic replace** | No (requires iptables-restore) | Yes (atomic rule set replacement) |
-| **Performance** | O(n) rule matching per chain | O(1) lookups with sets and maps |
-| **Syntax** | Multiple commands, inconsistent flags | Single consistent syntax |
-| **Kernel module** | Multiple (xt\_) | Single `nf_tables` |
-| **IPv4/IPv6** | Separate (`iptables`/`ip6tables`) | Unified (`nft`) |
+| **Rule storage**   | Linear list per chain                 | Sets and maps (lookup tables)     |
+| **Atomic replace** | No (requires iptables-restore)        | Yes (atomic rule set replacement) |
+| **Performance**    | O(n) rule matching per chain          | O(1) lookups with sets and maps   |
+| **Syntax**         | Multiple commands, inconsistent flags | Single consistent syntax          |
+| **Kernel module**  | Multiple (xt\_)                       | Single `nf_tables`                |
+| **IPv4/IPv6**      | Separate (`iptables`/`ip6tables`)     | Unified (`nft`)                   |
 
 ### nftables Configuration
 

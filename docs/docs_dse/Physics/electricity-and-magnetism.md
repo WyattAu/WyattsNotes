@@ -1,6 +1,8 @@
 ---
 title: Electricity and Magnetism
-description: "DSE Physics electricity and magnetism notes covering electric fields, potential, capacitance, magnetic fields, electromagnetic induction, and AC circuits."
+description:
+  'DSE Physics electricity and magnetism notes covering electric fields, potential, capacitance,
+  magnetic fields, electromagnetic induction, and AC circuits.'
 date: 2026-04-07T00:00:00.000Z
 tags:
   - DSE
@@ -32,11 +34,11 @@ Where $n$ is an integer.
 
 ### Conductors, Insulators, and Semiconductors
 
-| Material Type | Description | Examples |
+| Material Type | Description                                             | Examples                        |
 | ------------- | ------------------------------------------------------- | ------------------------------- |
-| Conductor | Charges move freely; low resistivity | Copper, aluminium, gold, silver |
-| Insulator | Charges are tightly bound; very high resistivity | Rubber, glass, plastic, wood |
-| Semiconductor | Intermediate properties; conductivity can be controlled | Silicon, germanium |
+| Conductor     | Charges move freely; low resistivity                    | Copper, aluminium, gold, silver |
+| Insulator     | Charges are tightly bound; very high resistivity        | Rubber, glass, plastic, wood    |
+| Semiconductor | Intermediate properties; conductivity can be controlled | Silicon, germanium              |
 
 ### Methods of Charging
 
@@ -51,11 +53,9 @@ Both objects end up with the same sign of charge.
 Conductor. The conductor is earthed while the charged object is nearby, then the earth connection is
 Removed. The conductor is left with a charge opposite to that of the inducing object.
 
-:::info
-In induction, the total charge of the isolated conductor remains zero during the process.
+:::info In induction, the total charge of the isolated conductor remains zero during the process.
 The earth connection allows charge to flow, so when the earth is disconnected, the conductor retains
-A net charge.
-:::
+A net charge. :::
 
 ### Coulomb's Law
 
@@ -70,7 +70,7 @@ Where:
 - $Q_1$$Q_2$ = magnitudes of the charges (C)
 - $r$ = distance between the charges (m)
 - $k = \frac{1}{4\pi\varepsilon_0} = 8.99 \times 10^9 \mathrm{ N m}^2\mathrm{/C}^2$ (Coulomb's
- constant)
+  constant)
 - $\varepsilon_0 = 8.85 \times 10^{-12} \mathrm{ F/m}$ (permittivity of free space)
 
 In vector form (for the force on $Q_2$ due to $Q_1$):
@@ -111,12 +111,12 @@ Electric field lines are a visual representation of the electric field:
 
 **Field line patterns:**
 
-| Configuration | Field Line Pattern |
+| Configuration              | Field Line Pattern                               |
 | -------------------------- | ------------------------------------------------ |
-| Single positive charge | Radial lines pointing outward |
-| Single negative charge | Radial lines pointing inward |
-| Two equal positive charges | Lines repel, zero field point between them |
-| Parallel plates | Uniform field between plates (fringing at edges) |
+| Single positive charge     | Radial lines pointing outward                    |
+| Single negative charge     | Radial lines pointing inward                     |
+| Two equal positive charges | Lines repel, zero field point between them       |
+| Parallel plates            | Uniform field between plates (fringing at edges) |
 
 ### Uniform Electric Field Between Parallel Plates
 
@@ -219,10 +219,10 @@ The charge carried by $n$ electrons: $Q = ne$
 
 ### Ammeter and Voltmeter
 
-| Instrument | Connection | Ideal Resistance | Purpose |
+| Instrument | Connection  | Ideal Resistance | Purpose                       |
 | ---------- | ----------- | ---------------- | ----------------------------- |
-| Ammeter | In series | Zero | Measures current |
-| Voltmeter | In parallel | Infinite | Measures potential difference |
+| Ammeter    | In series   | Zero             | Measures current              |
+| Voltmeter  | In parallel | Infinite         | Measures potential difference |
 
 A real ammeter has very low resistance so it does not significantly affect the current in the
 Circuit. A real voltmeter has very high resistance so it draws negligible current from the circuit.
@@ -267,23 +267,23 @@ Where:
 
 **Common resistivities at $20^\circ\mathrm{C}$:**
 
-| Material | Resistivity ($\Omega \mathrm{ m}$) |
+| Material  | Resistivity ($\Omega \mathrm{ m}$) |
 | --------- | ---------------------------------- |
-| Silver | $1.59 \times 10^{-8}$ |
-| Copper | $1.68 \times 10^{-8}$ |
-| Gold | $2.44 \times 10^{-8}$ |
-| Aluminium | $2.65 \times 10^{-8}$ |
-| Iron | $9.71 \times 10^{-8}$ |
-| Nichrome | $1.10 \times 10^{-6}$ |
-| Glass | $\sim 10^{10} - 10^{14}$ |
-| Rubber | $\sim 10^{13} - 10^{16}$ |
+| Silver    | $1.59 \times 10^{-8}$              |
+| Copper    | $1.68 \times 10^{-8}$              |
+| Gold      | $2.44 \times 10^{-8}$              |
+| Aluminium | $2.65 \times 10^{-8}$              |
+| Iron      | $9.71 \times 10^{-8}$              |
+| Nichrome  | $1.10 \times 10^{-6}$              |
+| Glass     | $\sim 10^{10} - 10^{14}$           |
+| Rubber    | $\sim 10^{13} - 10^{16}$           |
 
 ### Factors Affecting Resistance
 
 - **Length:** Resistance is directly proportional to length ($R \propto L$)
 - **Cross-sectional area:** Resistance is inversely proportional to area ($R \propto 1/A$)
 - **Temperature:** For metals, resistance increases with temperature. For semiconductors, resistance
- decreases with temperature
+  decreases with temperature
 - **Material:** Determined by the resistivity $\rho$
 
 ### Thermistor
@@ -297,11 +297,9 @@ Thermistor), the resistance drops.
 **PTC (Positive Temperature Coefficient) thermistor:** Resistance increases as temperature
 Increases.
 
-:::info
-NTC thermistors are commonly used in temperature sensing circuits. As the temperature rises,
+:::info NTC thermistors are commonly used in temperature sensing circuits. As the temperature rises,
 The resistance falls, causing more current to flow, which can be measured or used to trigger a
-Circuit.
-:::
+Circuit. :::
 
 ### Light-Dependent Resistor (LDR)
 
@@ -328,15 +326,15 @@ LDRs are used in light-sensitive switches, automatic street lights, and camera e
 **Semiconductor diode:**
 
 - Allows current to flow in one direction (forward bias) but blocks current in the opposite
- direction (reverse bias)
+  direction (reverse bias)
 - In forward bias: current increases rapidly above a threshold voltage ($\sim 0.7 \mathrm{ V}$ for
- silicon)
+  silicon)
 - In reverse bias: almost no current flows until breakdown voltage is reached
 
 ### Worked Example 3
 
-A copper wire has a length of $10 \mathrm{ m}$A diameter of $0.5 \mathrm{ mm}$And a resistivity
-Of $1.68 \times 10^{-8} \Omega \mathrm{ m}$. Find its resistance.
+A copper wire has a length of $10 \mathrm{ m}$A diameter of $0.5 \mathrm{ mm}$And a resistivity Of
+$1.68 \times 10^{-8} \Omega \mathrm{ m}$. Find its resistance.
 
 <details>
 <summary>Solution</summary>
@@ -349,8 +347,8 @@ $$R = \frac{\rho L}{A} = \frac{(1.68 \times 10^{-8})(10)}{1.963 \times 10^{-7}} 
 
 ### Worked Example 3b
 
-A nichrome wire of length $2.0 \mathrm{ m}$ has resistance $10 \Omega$. If the wire is stretched
-To $3.0 \mathrm{ m}$ (keeping the volume constant), what is its new resistance?
+A nichrome wire of length $2.0 \mathrm{ m}$ has resistance $10 \Omega$. If the wire is stretched To
+$3.0 \mathrm{ m}$ (keeping the volume constant), what is its new resistance?
 
 <details>
 <summary>Solution</summary>
@@ -361,8 +359,8 @@ $$\frac{A_2}{A_1} = \frac{L_1}{L_2} = \frac{2.0}{3.0} = \frac{2}{3}$$
 
 $$R_2 = \frac{\rho L_2}{A_2} = \frac{\rho L_2}{A_1 \times (L_1/L_2)} = R_1 \times \left(\frac{L_2}{L_1}\right)^2 = 10 \times \left(\frac{3.0}{2.0}\right)^2 = 10 \times 2.25 = 22.5 \Omega$$
 
-*If you get this wrong, revise: Resistivity formula and the relationship between resistance, length,
-And cross-sectional area.*
+_If you get this wrong, revise: Resistivity formula and the relationship between resistance, length,
+And cross-sectional area._
 
 </details>
 
@@ -376,9 +374,9 @@ In a series circuit, components are connected end to end along a single path.
 
 - **Current:** The same current flows through all components: $I = I_1 = I_2 = I_3 = \cdots$
 - **Voltage:** The total voltage equals the sum of the individual voltages:
- $V = V_1 + V_2 + V_3 + \cdots$
+  $V = V_1 + V_2 + V_3 + \cdots$
 - **Resistance:** The total resistance equals the sum of the individual resistances:
- $R_{\mathrm{total}} = R_1 + R_2 + R_3 + \cdots$
+  $R_{\mathrm{total}} = R_1 + R_2 + R_3 + \cdots$
 
 ### Parallel Circuits
 
@@ -387,9 +385,9 @@ For current.
 
 - **Voltage:** The same voltage is across all branches: $V = V_1 = V_2 = V_3 = \cdots$
 - **Current:** The total current equals the sum of the branch currents:
- $I = I_1 + I_2 + I_3 + \cdots$
+  $I = I_1 + I_2 + I_3 + \cdots$
 - **Resistance:** The reciprocal of the total resistance equals the sum of the reciprocals of
- individual resistances:
+  individual resistances:
 
 $$\frac{1}{R_{\mathrm{total}}} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3} + \cdots$$
 
@@ -397,10 +395,8 @@ For two resistors in parallel:
 
 $$R_{\mathrm{total}} = \frac{R_1 R_2}{R_1 + R_2}$$
 
-:::info
-In a parallel circuit, the total resistance is always less than the smallest individual
-Resistance. Adding more parallel branches always decreases the total resistance.
-:::
+:::info In a parallel circuit, the total resistance is always less than the smallest individual
+Resistance. Adding more parallel branches always decreases the total resistance. :::
 
 ### Combined Series and Parallel Circuits
 
@@ -464,7 +460,7 @@ The terminal PD decreases as the current increases.
 1. Measure the terminal PD with no load (open circuit): $V_{\mathrm{open}} = \varepsilon$
 2. Measure the terminal PD with a known load resistance $R$: $V = \varepsilon - Ir$
 3. Since $I = V/R$Solve for $r$:
- $r = \frac{\varepsilon - V}{V} \times R = R\left(\frac{\varepsilon}{V} - 1\right)$
+   $r = \frac{\varepsilon - V}{V} \times R = R\left(\frac{\varepsilon}{V} - 1\right)$
 
 **Method 2: Graphical method**
 
@@ -532,9 +528,9 @@ $$P = I^2 R = \frac{V^2}{R}$$
 
 Where $P$ is measured in watts (W).
 
-| Formula | Use When |
+| Formula     | Use When                         |
 | ----------- | -------------------------------- |
-| $P = IV$ | Current and voltage are known |
+| $P = IV$    | Current and voltage are known    |
 | $P = I^2 R$ | Current and resistance are known |
 | $P = V^2/R$ | Voltage and resistance are known |
 
@@ -725,15 +721,13 @@ The direction of the induced EMF is such that it opposes the change producing it
 This is a consequence of conservation of energy. The induced current creates a magnetic field that
 Opposes the change in flux that produced it.
 
-:::info
-To determine the direction of the induced current using Lenz's Law:
+:::info To determine the direction of the induced current using Lenz's Law:
 
 1. Identify whether the flux through the coil is increasing or decreasing
 2. If flux is increasing, the induced current creates a field to oppose the increase (opposing the
- external field)
+   external field)
 3. If flux is decreasing, the induced current creates a field to oppose the decrease (reinforcing
- the external field)
-:::
+   the external field) :::
 
 ### AC Generator
 
@@ -794,8 +788,7 @@ Real transformers have losses due to:
 
 :::tip Transformers only work with AC. A changing current in the primary is needed to produce a
 Changing magnetic flux, which induces an EMF in the secondary. DC produces a steady field and no
-Induced EMF.
-:::
+Induced EMF. :::
 
 ### Worked Example 9
 
@@ -818,9 +811,8 @@ $$P = V_p I_p = 220 \times 5 = 1100 \mathrm{ W}$$
 
 ### Worked Example 9b
 
-A rectangular coil of 100 turns, each of area $0.02 \mathrm{ m}^2$Is rotated at
-$50 \mathrm{ rev/s}$ in a uniform magnetic field of flux density $0.5 \mathrm{ T}$. Find the peak
-EMF.
+A rectangular coil of 100 turns, each of area $0.02 \mathrm{ m}^2$Is rotated at $50 \mathrm{ rev/s}$
+in a uniform magnetic field of flux density $0.5 \mathrm{ T}$. Find the peak EMF.
 
 <details>
 <summary>Solution</summary>
@@ -829,7 +821,7 @@ $$\omega = 2\pi f = 2\pi \times 50 = 100\pi \mathrm{ rad/s}$$
 
 $$\varepsilon_0 = NAB\omega = 100 \times 0.02 \times 0.5 \times 100\pi = 100\pi = 314 \mathrm{ V}$$
 
-*If you get this wrong, revise: Faraday's law and the AC generator EMF formula.*
+_If you get this wrong, revise: Faraday's law and the AC generator EMF formula._
 
 </details>
 
@@ -886,44 +878,44 @@ $$T = \frac{1}{f} = \frac{1}{50} = 0.02 \mathrm{ s} = 20 \mathrm{ ms}$$
 
 ## Summary Table
 
-| Topic | Key Formula | Key Concept |
+| Topic                     | Key Formula                                          | Key Concept                            |
 | ------------------------- | ---------------------------------------------------- | -------------------------------------- |
-| Coulomb's Law | $F = kQ_1 Q_2/r^2$ | Inverse square law for electric forces |
-| Electric field | $E = F/q = kQ/r^2$ | Force per unit charge |
-| Uniform field | $E = V/d$ | Parallel plates |
-| Ohm's Law | $V = IR$ | Linear I-V for ohmic conductors |
-| Resistivity | $R = \rho L/A$ | Material and geometry dependence |
-| Series resistance | $R = R_1 + R_2 + \cdots$ | Same current |
-| Parallel resistance | $1/R = 1/R_1 + 1/R_2 + \cdots$ | Same voltage |
-| Potential divider | $V_{\mathrm{out}} = V_{\mathrm{in}} R_2/(R_1 + R_2)$ | Voltage fraction |
-| Internal resistance | $V = \varepsilon - Ir$ | Lost volts |
-| Power | $P = IV = I^2 R = V^2/R$ | Rate of energy transfer |
-| Magnetic field (wire) | $B = \mu_0 I/(2\pi r)$ | Right-hand grip rule |
-| Magnetic field (solenoid) | $B = \mu_0 n I$ | Uniform field inside |
-| Force on wire | $F = BIL \sin\theta$ | Fleming's Left-Hand Rule |
-| Faraday's Law | $\varepsilon = -N d\Phi/dt$ | Changing flux induces EMF |
-| Transformer | $V_s/V_p = N_s/N_p$ | AC only, energy conservation |
-| AC RMS | $V_{\mathrm{rms}} = V_0/\sqrt{2}$ | Equivalent DC heating effect |
+| Coulomb's Law             | $F = kQ_1 Q_2/r^2$                                   | Inverse square law for electric forces |
+| Electric field            | $E = F/q = kQ/r^2$                                   | Force per unit charge                  |
+| Uniform field             | $E = V/d$                                            | Parallel plates                        |
+| Ohm's Law                 | $V = IR$                                             | Linear I-V for ohmic conductors        |
+| Resistivity               | $R = \rho L/A$                                       | Material and geometry dependence       |
+| Series resistance         | $R = R_1 + R_2 + \cdots$                             | Same current                           |
+| Parallel resistance       | $1/R = 1/R_1 + 1/R_2 + \cdots$                       | Same voltage                           |
+| Potential divider         | $V_{\mathrm{out}} = V_{\mathrm{in}} R_2/(R_1 + R_2)$ | Voltage fraction                       |
+| Internal resistance       | $V = \varepsilon - Ir$                               | Lost volts                             |
+| Power                     | $P = IV = I^2 R = V^2/R$                             | Rate of energy transfer                |
+| Magnetic field (wire)     | $B = \mu_0 I/(2\pi r)$                               | Right-hand grip rule                   |
+| Magnetic field (solenoid) | $B = \mu_0 n I$                                      | Uniform field inside                   |
+| Force on wire             | $F = BIL \sin\theta$                                 | Fleming's Left-Hand Rule               |
+| Faraday's Law             | $\varepsilon = -N d\Phi/dt$                          | Changing flux induces EMF              |
+| Transformer               | $V_s/V_p = N_s/N_p$                                  | AC only, energy conservation           |
+| AC RMS                    | $V_{\mathrm{rms}} = V_0/\sqrt{2}$                    | Equivalent DC heating effect           |
 
 ---
 
 ## Exam Tips
 
 - Always distinguish between EMF (total energy per unit charge) and terminal PD (energy per unit
- charge delivered to the external circuit).
+  charge delivered to the external circuit).
 - In circuit problems, start by finding the total resistance, then the total current, then work out
- individual voltages and currents.
+  individual voltages and currents.
 - When using Coulomb's Law, use the magnitudes of the charges and determine the direction of the
- force separately.
-- For electromagnetic induction problems, identify what is changing (flux, area, angle) and
- apply Faraday's Law accordingly.
+  force separately.
+- For electromagnetic induction problems, identify what is changing (flux, area, angle) and apply
+  Faraday's Law accordingly.
 - Remember that transformers only work with AC; always check whether the source is AC or DC.
 - In potential divider problems with a load, first find the parallel combination before applying the
- divider formula.
+  divider formula.
 - When drawing magnetic field lines, remember: lines go from N to S outside a magnet, and from S to
- N inside.
+  N inside.
 - For Lenz's Law, always state that the induced current opposes the **change** in flux, not the flux
- itself.
+  itself.
 
 <details>
 <summary>Exam-Style Practice Questions</summary>
@@ -1137,8 +1129,8 @@ The force per unit length on the wire is zero.
 <summary>Problem 1: Electric Field of a Point Charge</summary>
 
 A point charge of $+6 \times 10^{-9} \mathrm{ C}$ creates an electric field. Find the field strength
-At a distance of $0.05 \mathrm{ m}$ from the charge and the force on a $-2 \times 10^{-9} \mathrm{ C}$
-Charge placed at that point.
+At a distance of $0.05 \mathrm{ m}$ from the charge and the force on a
+$-2 \times 10^{-9} \mathrm{ C}$ Charge placed at that point.
 
 <details>
 <summary>Solution</summary>
@@ -1149,8 +1141,8 @@ $$F = qE = (2 \times 10^{-9})(21576) = 4.32 \times 10^{-5} \mathrm{ N}$$
 
 The force is attractive (towards the positive charge).
 
-*If you get this wrong, revise: Coulomb's law, electric field of a point charge, and the relationship
-$E = F/q$.*
+_If you get this wrong, revise: Coulomb's law, electric field of a point charge, and the
+relationship $E = F/q$._
 
 </details>
 </details>
@@ -1179,7 +1171,8 @@ Current through $6 \Omega$: $I_6 = \frac{6.4}{6} = 1.067 \mathrm{ A}$
 
 $$P_6 = I_6^2 R = (1.067)^2 \times 6 = 1.139 \times 6 = 6.83 \mathrm{ W}$$
 
-*If you get this wrong, revise: Series and parallel resistance combinations and internal resistance.*
+_If you get this wrong, revise: Series and parallel resistance combinations and internal
+resistance._
 
 </details>
 </details>
@@ -1197,8 +1190,8 @@ $$Q = It = 3 \times 10 = 30 \mathrm{ C}$$
 
 $$n = \frac{Q}{e} = \frac{30}{1.6 \times 10^{-19}} = 1.875 \times 10^{20} \mathrm{ electrons}$$
 
-*If you get this wrong, revise: The relationship between current, charge, and the elementary charge
-$Q = ne = It$.*
+_If you get this wrong, revise: The relationship between current, charge, and the elementary charge
+$Q = ne = It$._
 
 </details>
 </details>
@@ -1206,8 +1199,8 @@ $Q = ne = It$.*
 <details>
 <summary>Problem 4: Resistivity — Finding Length</summary>
 
-A tungsten wire has a resistance of $5 \Omega$ and a diameter of $0.2 \mathrm{ mm}$. The resistivity of
-Tungsten is $5.6 \times 10^{-8} \Omega \mathrm{ m}$. Find the length of the wire.
+A tungsten wire has a resistance of $5 \Omega$ and a diameter of $0.2 \mathrm{ mm}$. The resistivity
+of Tungsten is $5.6 \times 10^{-8} \Omega \mathrm{ m}$. Find the length of the wire.
 
 <details>
 <summary>Solution</summary>
@@ -1216,7 +1209,8 @@ $$A = \pi r^2 = \pi(1.0 \times 10^{-4})^2 = \pi \times 10^{-8} = 3.14 \times 10^
 
 $$R = \frac{\rho L}{A} \implies L = \frac{RA}{\rho} = \frac{5 \times 3.14 \times 10^{-8}}{5.6 \times 10^{-8}} = \frac{15.7}{5.6} = 2.80 \mathrm{ m}$$
 
-*If you get this wrong, revise: Resistivity formula $R = \rho L / A$ and rearranging to find length.*
+_If you get this wrong, revise: Resistivity formula $R = \rho L / A$ and rearranging to find
+length._
 
 </details>
 </details>
@@ -1224,10 +1218,10 @@ $$R = \frac{\rho L}{A} \implies L = \frac{RA}{\rho} = \frac{5 \times 3.14 \times
 <details>
 <summary>Problem 5: Potential Divider with Thermistor</summary>
 
-A potential divider consists of a $10 \mathrm{ k}\Omega$ fixed resistor and an NTC thermistor in series
-Across a $9 \mathrm{ V}$ supply. At $20^\circ\mathrm{C}$The thermistor resistance is
-$10 \mathrm{ k}\Omega$. At $80^\circ\mathrm{C}$The thermistor resistance drops to $2 \mathrm{ k}\Omega$.
-Find the output voltage across the thermistor at each temperature.
+A potential divider consists of a $10 \mathrm{ k}\Omega$ fixed resistor and an NTC thermistor in
+series Across a $9 \mathrm{ V}$ supply. At $20^\circ\mathrm{C}$The thermistor resistance is
+$10 \mathrm{ k}\Omega$. At $80^\circ\mathrm{C}$The thermistor resistance drops to
+$2 \mathrm{ k}\Omega$. Find the output voltage across the thermistor at each temperature.
 
 <details>
 <summary>Solution</summary>
@@ -1243,8 +1237,8 @@ $$V_{\mathrm{out}} = 9 \times \frac{2}{10 + 2} = 9 \times \frac{2}{12} = 1.5 \ma
 The output voltage decreases as temperature increases, which is the principle behind temperature
 Sensing circuits.
 
-*If you get this wrong, revise: Potential divider formula and how NTC thermistor resistance varies
-With temperature.*
+_If you get this wrong, revise: Potential divider formula and how NTC thermistor resistance varies
+With temperature._
 
 </details>
 </details>
@@ -1252,8 +1246,8 @@ With temperature.*
 <details>
 <summary>Problem 6: Kirchhoff's Laws — Two-Loop Circuit</summary>
 
-A $12 \mathrm{ V}$ battery is connected to a $4 \Omega$ and $6 \Omega$ resistor in parallel. Find the
-Current through each resistor and the total current from the battery.
+A $12 \mathrm{ V}$ battery is connected to a $4 \Omega$ and $6 \Omega$ resistor in parallel. Find
+the Current through each resistor and the total current from the battery.
 
 <details>
 <summary>Solution</summary>
@@ -1266,7 +1260,7 @@ $$I_6 = \frac{12}{6} = 2.0 \mathrm{ A}$$
 
 $$I_{\mathrm{total}} = 3.0 + 2.0 = 5.0 \mathrm{ A}$$
 
-*If you get this wrong, revise: Kirchhoff's current law and parallel circuit analysis.*
+_If you get this wrong, revise: Kirchhoff's current law and parallel circuit analysis._
 
 </details>
 </details>
@@ -1287,8 +1281,8 @@ For circular motion: $F = \frac{mv^2}{r}$
 
 $$r = \frac{mv}{qB} = \frac{(9.11 \times 10^{-31})(2.0 \times 10^6)}{(1.6 \times 10^{-19})(0.5)} = \frac{1.822 \times 10^{-24}}{8.0 \times 10^{-20}} = 2.28 \times 10^{-5} \mathrm{ m}$$
 
-*If you get this wrong, revise: Force on a moving charge in a magnetic field ($F = qvB$) and circular
-Motion of charged particles.*
+_If you get this wrong, revise: Force on a moving charge in a magnetic field ($F = qvB$) and
+circular Motion of charged particles._
 
 </details>
 </details>
@@ -1304,8 +1298,8 @@ $0.8 \mathrm{ T}$ at a speed of $5 \mathrm{ m/s}$. Find the induced EMF.
 
 $$\varepsilon = BLv = (0.8)(0.3)(5) = 1.2 \mathrm{ V}$$
 
-*If you get this wrong, revise: Faraday's law for a straight conductor moving through a magnetic field
-($\varepsilon = BLv$).*
+_If you get this wrong, revise: Faraday's law for a straight conductor moving through a magnetic
+field ($\varepsilon = BLv$)._
 
 </details>
 </details>
@@ -1331,7 +1325,7 @@ $$P_{\mathrm{average}} = V_{\mathrm{rms}} I_{\mathrm{rms}} = 220 \times 2.2 = 48
 
 Note: $P_{\mathrm{average}} = \frac{P_{\mathrm{peak}}}{2}$ as expected.
 
-*If you get this wrong, revise: RMS values, peak values, and power in AC circuits.*
+_If you get this wrong, revise: RMS values, peak values, and power in AC circuits._
 
 </details>
 </details>
@@ -1354,7 +1348,7 @@ $$P_{\mathrm{out}} = 0.95 \times 1100 = 1045 \mathrm{ W}$$
 
 $$I_s = \frac{P_{\mathrm{out}}}{V_s} = \frac{1045}{550} = 1.90 \mathrm{ A}$$
 
-*If you get this wrong, revise: Transformer equation and efficiency calculations.*
+_If you get this wrong, revise: Transformer equation and efficiency calculations._
 
 </details>
 </details>
@@ -1385,7 +1379,7 @@ Substituting into (1):
 
 $$\varepsilon = 11.5 + 0.5(1.0) = 12.0 \mathrm{ V}$$
 
-*If you get this wrong, revise: Internal resistance and the equation $V = \varepsilon - Ir$.*
+_If you get this wrong, revise: Internal resistance and the equation $V = \varepsilon - Ir$._
 
 </details>
 </details>
@@ -1401,8 +1395,8 @@ Magnetic flux density at the centre of the loop.
 
 $$B = \frac{\mu_0 I}{2r} = \frac{(4\pi \times 10^{-7})(5)}{2 \times 0.1} = \frac{6.283 \times 10^{-6}}{0.2} = 3.14 \times 10^{-5} \mathrm{ T}$$
 
-*If you get this wrong, revise: Magnetic field at the centre of a circular current loop
-($B = \mu_0 I / 2r$).*
+_If you get this wrong, revise: Magnetic field at the centre of a circular current loop
+($B = \mu_0 I / 2r$)._
 
 </details>
 </details>
@@ -1423,7 +1417,7 @@ Energy that must be supplied: $E = \frac{403200}{0.85} = 474353 \mathrm{ J}$
 
 $$t = \frac{E}{P} = \frac{474353}{1500} = 316.2 \mathrm{ s} = 5.27 \mathrm{ minutes}$$
 
-*If you get this wrong, revise: Electrical energy, specific heat capacity, and efficiency.*
+_If you get this wrong, revise: Electrical energy, specific heat capacity, and efficiency._
 
 </details>
 </details>
@@ -1432,8 +1426,8 @@ $$t = \frac{E}{P} = \frac{474353}{1500} = 316.2 \mathrm{ s} = 5.27 \mathrm{ minu
 <summary>Problem 14: Superposition of Electric Fields</summary>
 
 Two point charges, $Q_1 = +4 \times 10^{-9} \mathrm{ C}$ at the origin and
-$Q_2 = +9 \times 10^{-9} \mathrm{ C}$ at $x = 0.1 \mathrm{ m}$Lie along the x-axis. Find the
-Point on the x-axis between the charges where the electric field is zero.
+$Q_2 = +9 \times 10^{-9} \mathrm{ C}$ at $x = 0.1 \mathrm{ m}$Lie along the x-axis. Find the Point
+on the x-axis between the charges where the electric field is zero.
 
 <details>
 <summary>Solution</summary>
@@ -1458,7 +1452,7 @@ $$x = 0.04 \mathrm{ m}$$
 
 The electric field is zero at $x = 0.04 \mathrm{ m}$ from $Q_1$ (or $0.06 \mathrm{ m}$ from $Q_2$).
 
-*If you get this wrong, revise: Superposition of electric fields and solving for the null point.*
+_If you get this wrong, revise: Superposition of electric fields and solving for the null point._
 
 </details>
 </details>
@@ -1476,41 +1470,54 @@ As the magnet falls through the copper tube, the changing magnetic flux through 
 Eddy currents in the copper walls (by Faraday's law).
 
 By Lenz's law, these eddy currents create magnetic fields that oppose the change in flux:
+
 - Above the magnet (where flux is increasing): the induced field opposes the magnet's field,
- producing an upward force
-- Below the magnet (where flux is decreasing): the induced field reinforces the magnet's field,
- also producing an upward force
+  producing an upward force
+- Below the magnet (where flux is decreasing): the induced field reinforces the magnet's field, also
+  producing an upward force
 
 Both effects create a retarding force on the magnet, slowing its fall. A plastic tube is an
 Insulator, so no eddy currents are induced, and the magnet falls freely under gravity.
 
-*If you get this wrong, revise: Lenz's law, eddy currents, and electromagnetic braking.*
+_If you get this wrong, revise: Lenz's law, eddy currents, and electromagnetic braking._
 
 </details>
 </details>
 
 ---
 
-:::tip
-Diagnostic Test
-Ready to test your understanding of **Electricity and Magnetism**? The [diagnostic test](/docs/dse/Physics/diagnostics/diag-electricity-magnetism) contains the hardest questions within the DSE specification for this topic, each with a full worked solution.
+:::tip Diagnostic Test Ready to test your understanding of **Electricity and Magnetism**? The
+[diagnostic test](/docs/dse/Physics/diagnostics/diag-electricity-magnetism) contains the hardest
+questions within the DSE specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Electricity and Magnetism with other physics topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Electricity
+and Magnetism with other physics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/dse/Physics/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/dse/Physics/diagnostics/diagnostic-guide) for instructions on
+self-marking and building a personal test matrix. :::
 
+:::danger Common Pitfalls
 
-:::danger
-Common Pitfalls
+- **Confusing series and parallel circuit rules:** In series, current is the SAME through all
+  components but voltage is shared. In parallel, voltage is the SAME across all branches but current
+  is shared. Students frequently apply the wrong rule -- remember: series = shared voltage, parallel
+  = shared current.
 
-- **Confusing series and parallel circuit rules:** In series, current is the SAME through all components but voltage is shared. In parallel, voltage is the SAME across all branches but current is shared. Students frequently apply the wrong rule -- remember: series = shared voltage, parallel = shared current.
+- **Using the wrong formula for transformer efficiency:** The ideal transformer equation (Vp/Vs =
+  Np/Ns) assumes 100% efficiency. Real transformers have energy losses, so the power output is less
+  than the power input. If efficiency is given, use: efficiency = (Vs _ Is) / (Vp _ Ip), and account
+  for the losses.
 
-- **Using the wrong formula for transformer efficiency:** The ideal transformer equation (Vp/Vs = Np/Ns) assumes 100% efficiency. Real transformers have energy losses, so the power output is less than the power input. If efficiency is given, use: efficiency = (Vs * Is) / (Vp * Ip), and account for the losses.
+- **Forgetting that magnetic field lines form closed loops:** Electric field lines start on positive
+  charges and end on negative charges, but magnetic field lines always form CLOSED LOOPS with no
+  beginning or end. There are no magnetic monopoles. This is why cutting a bar magnet in half
+  produces two smaller magnets, not isolated north and south poles.
 
-- **Forgetting that magnetic field lines form closed loops:** Electric field lines start on positive charges and end on negative charges, but magnetic field lines always form CLOSED LOOPS with no beginning or end. There are no magnetic monopoles. This is why cutting a bar magnet in half produces two smaller magnets, not isolated north and south poles.
-
-- **Misidentifying the direction of induced current:** When applying Lenz's law, first determine whether the flux through the coil is increasing or decreasing. If increasing, the induced current creates a magnetic field that OPPOSES the increase. If decreasing, the induced current creates a field that TRIES TO MAINTAIN the flux. Then use the right-hand grip rule to find the current direction.
+- **Misidentifying the direction of induced current:** When applying Lenz's law, first determine
+  whether the flux through the coil is increasing or decreasing. If increasing, the induced current
+  creates a magnetic field that OPPOSES the increase. If decreasing, the induced current creates a
+  field that TRIES TO MAINTAIN the flux. Then use the right-hand grip rule to find the current
+  direction.
 
 ---
 
@@ -1554,8 +1561,8 @@ $$Q = Q_0(1 - e^{-t/RC})$$
 
 Where $Q_0 = CV_0$ is the maximum charge.
 
-The time constant $\tau = RC$ is the time for the charge to reach $(1 - 1/e) \approx 63.2\%$ of
-Its maximum value. At $t = \tau$: $Q = Q_0(1 - e^{-1}) = 0.632Q_0$.
+The time constant $\tau = RC$ is the time for the charge to reach $(1 - 1/e) \approx 63.2\%$ of Its
+maximum value. At $t = \tau$: $Q = Q_0(1 - e^{-1}) = 0.632Q_0$.
 
 At $t = 5\tau$: $Q = Q_0(1 - e^{-5}) = 0.993Q_0$ (effectively fully charged).
 
@@ -1568,8 +1575,8 @@ $B$ experiences:
 
 $$\vec{F} = q\vec{E} + q\vec{v} \times \vec{B}$$
 
-For the velocity selector (used in mass spectrometers), $\vec{E}$ and $\vec{B}$ are perpendicular
-To each other and to the velocity. The forces balance when:
+For the velocity selector (used in mass spectrometers), $\vec{E}$ and $\vec{B}$ are perpendicular To
+each other and to the velocity. The forces balance when:
 
 $$qE = qvB \implies v = \frac{E}{B}$$
 
@@ -1581,40 +1588,44 @@ Only charges with this specific velocity pass through undeflected.
 
 ### Investigating Ohm's Law
 
-**Apparatus:** A variable resistor (rheostat), an ammeter, a voltmeter, a test resistor, a
-Battery, and connecting wires.
+**Apparatus:** A variable resistor (rheostat), an ammeter, a voltmeter, a test resistor, a Battery,
+and connecting wires.
 
 **Procedure:**
+
 1. Connect the test resistor in series with the ammeter and rheostat. Connect the voltmeter in
- parallel across the test resistor.
+   parallel across the test resistor.
 2. Adjust the rheostat to obtain different values of current.
 3. Record pairs of voltage $V$ and current $I$.
 4. Plot $I$ (y-axis) versus $V$ (x-axis).
 5. A straight line through the origin confirms Ohm's law. The gradient equals $1/R$.
 
 **Precautions:**
+
 - Use a low voltage to avoid heating the resistor.
 - Wait for readings to stabilise before recording.
 - Ensure good electrical connections to minimise contact resistance.
 
 ### Measuring Capacitance Using a Reed Switch
 
-**Apparatus:** A capacitor, a reed switch driven by an AC signal of known frequency $f$A
-Resistor, a DC power supply, and a voltmeter.
+**Apparatus:** A capacitor, a reed switch driven by an AC signal of known frequency $f$A Resistor, a
+DC power supply, and a voltmeter.
 
 **Procedure:**
-1. The reed switch alternately charges the capacitor (from the supply voltage $V$) and
- discharges it (through a microammeter) at frequency $f$.
+
+1. The reed switch alternately charges the capacitor (from the supply voltage $V$) and discharges it
+   (through a microammeter) at frequency $f$.
 2. The charge per cycle: $Q = CV$.
 3. The average current through the microammeter: $I = Qf = CVf$.
 4. Calculate: $C = I/(Vf)$.
 
 ### Determining the Charge-to-Mass Ratio of an Electron
 
-**Apparatus:** An electron deflection tube, a power supply for the electron gun, Helmholtz coils
-To produce a uniform magnetic field, and measuring equipment.
+**Apparatus:** An electron deflection tube, a power supply for the electron gun, Helmholtz coils To
+produce a uniform magnetic field, and measuring equipment.
 
 **Procedure:**
+
 1. Accelerate electrons through a known potential difference $V_a$.
 2. The electrons enter a region of uniform magnetic field $B$ and travel in a circular arc.
 3. Measure the radius $r$ of the circular path.
@@ -1645,6 +1656,7 @@ $$\tau = (1.00 \pm 0.07) \mathrm{ s}$$
 ### Analysing Exponential Decay Data
 
 When verifying the discharge equation $Q = Q_0 e^{-t/RC}$:
+
 - Plot $\ln Q$ (y-axis) versus $t$ (x-axis).
 - A straight line with negative gradient confirms exponential decay.
 - The gradient equals $-1/(RC)$.
@@ -1666,15 +1678,18 @@ Supply. It is then connected across an uncharged $300 \mathrm{ \mu F}$ capacitor
 <details>
 <summary>Solution</summary>
 
-(a) Charge on the charged capacitor: $Q = C_1 V_1 = 200 \times 10^{-6} \times 50 = 0.010 \mathrm{ C}$
+(a) Charge on the charged capacitor:
+$Q = C_1 V_1 = 200 \times 10^{-6} \times 50 = 0.010 \mathrm{ C}$
 
 When connected in parallel, charge is conserved: $Q = (C_1 + C_2)V_f$
 
 $$V_f = \frac{Q}{C_1 + C_2} = \frac{0.010}{200 \times 10^{-6} + 300 \times 10^{-6}} = \frac{0.010}{500 \times 10^{-6}} = 20 \mathrm{ V}$$
 
-(b) Energy before: $E_i = \frac{1}{2}C_1 V_1^2 = \frac{1}{2}(200 \times 10^{-6})(2500) = 0.250 \mathrm{ J}$
+(b) Energy before:
+$E_i = \frac{1}{2}C_1 V_1^2 = \frac{1}{2}(200 \times 10^{-6})(2500) = 0.250 \mathrm{ J}$
 
-Energy after: $E_f = \frac{1}{2}(C_1 + C_2)V_f^2 = \frac{1}{2}(500 \times 10^{-6})(400) = 0.100 \mathrm{ J}$
+Energy after:
+$E_f = \frac{1}{2}(C_1 + C_2)V_f^2 = \frac{1}{2}(500 \times 10^{-6})(400) = 0.100 \mathrm{ J}$
 
 Energy lost: $\Delta E = 0.250 - 0.100 = 0.150 \mathrm{ J}$
 
@@ -1713,7 +1728,8 @@ $$e^{-t/\tau} = 0.05 \implies -t/\tau = \ln(0.05) = -3.00$$
 
 $$t = 3.00\tau = 3.00 \times 47.0 = 141 \mathrm{ s}$$
 
-(d) At $t = 0$: $I_0 = V_0/R = 12/(100 \times 10^3) = 1.20 \times 10^{-4} \mathrm{ A} = 120 \mathrm{ \mu A}$
+(d) At $t = 0$:
+$I_0 = V_0/R = 12/(100 \times 10^3) = 1.20 \times 10^{-4} \mathrm{ A} = 120 \mathrm{ \mu A}$
 
 At $t = \tau$: $I = I_0 e^{-1} = 120 \times 0.368 = 44.1 \mathrm{ \mu A}$
 
@@ -1721,11 +1737,12 @@ At $t = \tau$: $I = I_0 e^{-1} = 120 \times 0.368 = 44.1 \mathrm{ \mu A}$
 
 ### Worked Example 13
 
-An electron is accelerated from rest through a potential difference of $2000 \mathrm{ V}$ and
-Then enters a uniform magnetic field of $5.0 \times 10^{-3} \mathrm{ T}$ perpendicular to its
-Velocity. Calculate the radius of the circular path.
+An electron is accelerated from rest through a potential difference of $2000 \mathrm{ V}$ and Then
+enters a uniform magnetic field of $5.0 \times 10^{-3} \mathrm{ T}$ perpendicular to its Velocity.
+Calculate the radius of the circular path.
 
-(Electron charge $= 1.6 \times 10^{-19} \mathrm{ C}$Electron mass $= 9.11 \times 10^{-31} \mathrm{ kg}$)
+(Electron charge $= 1.6 \times 10^{-19} \mathrm{ C}$Electron mass
+$= 9.11 \times 10^{-31} \mathrm{ kg}$)
 
 <details>
 <summary>Solution</summary>
@@ -1746,8 +1763,8 @@ $$r = \frac{mv}{eB} = \frac{9.11 \times 10^{-31} \times 2.65 \times 10^7}{1.6 \t
 
 (a) Define capacitance.
 
-(b) A $100 \mathrm{ \mu F}$ capacitor is connected in series with a $1.0 \mathrm{ M}\Omega$
-Resistor and a $6.0 \mathrm{ V}$ battery.
+(b) A $100 \mathrm{ \mu F}$ capacitor is connected in series with a $1.0 \mathrm{ M}\Omega$ Resistor
+and a $6.0 \mathrm{ V}$ battery.
 
 (i) Calculate the time constant.
 
@@ -1760,19 +1777,21 @@ Resistor and a $6.0 \mathrm{ V}$ battery.
 <details>
 <summary>Solution</summary>
 
-(a) Capacitance is the ratio of the charge stored on a capacitor to the potential difference
-Across it: $C = Q/V$. The SI unit is the farad (F), where $1 \mathrm{ F} = 1 \mathrm{ C/V}$.
+(a) Capacitance is the ratio of the charge stored on a capacitor to the potential difference Across
+it: $C = Q/V$. The SI unit is the farad (F), where $1 \mathrm{ F} = 1 \mathrm{ C/V}$.
 
 (b) (i) $\tau = RC = 1.0 \times 10^6 \times 100 \times 10^{-6} = 100 \mathrm{ s}$
 
-(ii) $E_{\max} = \frac{1}{2}CV^2 = \frac{1}{2}(100 \times 10^{-6})(36) = 1.8 \times 10^{-3} \mathrm{ J} = 1.8 \mathrm{ mJ}$
+(ii)
+$E_{\max} = \frac{1}{2}CV^2 = \frac{1}{2}(100 \times 10^{-6})(36) = 1.8 \times 10^{-3} \mathrm{ J} = 1.8 \mathrm{ mJ}$
 
-(iii) $V_C = V_0(1 - e^{-t/\tau}) = 6.0(1 - e^{-30/100}) = 6.0(1 - e^{-0.30}) = 6.0(1 - 0.741) = 6.0 \times 0.259 = 1.55 \mathrm{ V}$
+(iii)
+$V_C = V_0(1 - e^{-t/\tau}) = 6.0(1 - e^{-30/100}) = 6.0(1 - e^{-0.30}) = 6.0(1 - 0.741) = 6.0 \times 0.259 = 1.55 \mathrm{ V}$
 
-(iv) The current starts at $I_0 = V_0/R = 6.0/10^6 = 6.0 \mathrm{ \mu A}$ and decays
-Exponentially: $I = I_0 e^{-t/\tau}$. The graph is an exponential decay curve starting at
-$6.0 \mathrm{ \mu A}$ and approaching zero. At $t = \tau = 100 \mathrm{ s}$The current has
-Fallen to $6.0 \times 0.368 = 2.21 \mathrm{ \mu A}$.
+(iv) The current starts at $I_0 = V_0/R = 6.0/10^6 = 6.0 \mathrm{ \mu A}$ and decays Exponentially:
+$I = I_0 e^{-t/\tau}$. The graph is an exponential decay curve starting at $6.0 \mathrm{ \mu A}$ and
+approaching zero. At $t = \tau = 100 \mathrm{ s}$The current has Fallen to
+$6.0 \times 0.368 = 2.21 \mathrm{ \mu A}$.
 
 </details>
 
@@ -1780,8 +1799,8 @@ Fallen to $6.0 \times 0.368 = 2.21 \mathrm{ \mu A}$.
 
 (a) State Coulomb's law.
 
-(b) Two point charges, $q_1 = +3.0 \mathrm{ \mu C}$ and $q_2 = -5.0 \mathrm{ \mu C}$Are
-Separated by $0.20 \mathrm{ m}$ in a vacuum.
+(b) Two point charges, $q_1 = +3.0 \mathrm{ \mu C}$ and $q_2 = -5.0 \mathrm{ \mu C}$Are Separated by
+$0.20 \mathrm{ m}$ in a vacuum.
 
 (i) Calculate the force between them. Is it attractive or repulsive?
 
@@ -1792,20 +1811,23 @@ Separated by $0.20 \mathrm{ m}$ in a vacuum.
 <details>
 <summary>Solution</summary>
 
-(a) Coulomb's law states that the force between two point charges is directly proportional to
-The product of the charges and inversely proportional to the square of the distance between
-Them: $F = \frac{q_1 q_2}{4\pi\varepsilon_0 r^2}$. The force is attractive for opposite
-Charges and repulsive for like charges.
+(a) Coulomb's law states that the force between two point charges is directly proportional to The
+product of the charges and inversely proportional to the square of the distance between Them:
+$F = \frac{q_1 q_2}{4\pi\varepsilon_0 r^2}$. The force is attractive for opposite Charges and
+repulsive for like charges.
 
-(b) (i) $F = \frac{|q_1 q_2|}{4\pi\varepsilon_0 r^2} = \frac{8.99 \times 10^9 \times 3.0 \times 10^{-6} \times 5.0 \times 10^{-6}}{(0.20)^2} = \frac{8.99 \times 10^9 \times 1.5 \times 10^{-11}}{0.04} = \frac{0.1349}{0.04} = 3.37 \mathrm{ N}$
+(b) (i)
+$F = \frac{|q_1 q_2|}{4\pi\varepsilon_0 r^2} = \frac{8.99 \times 10^9 \times 3.0 \times 10^{-6} \times 5.0 \times 10^{-6}}{(0.20)^2} = \frac{8.99 \times 10^9 \times 1.5 \times 10^{-11}}{0.04} = \frac{0.1349}{0.04} = 3.37 \mathrm{ N}$
 
 The force is **attractive** (opposite charges).
 
 (ii) At the midpoint ($r = 0.10 \mathrm{ m}$ from each charge):
 
-$E_1$ (from $+3.0 \mathrm{ \mu C}$Pointing away): $E_1 = \frac{8.99 \times 10^9 \times 3.0 \times 10^{-6}}{(0.10)^2} = \frac{2.697 \times 10^4}{0.01} = 2.70 \times 10^6 \mathrm{ V/m}$
+$E_1$ (from $+3.0 \mathrm{ \mu C}$Pointing away):
+$E_1 = \frac{8.99 \times 10^9 \times 3.0 \times 10^{-6}}{(0.10)^2} = \frac{2.697 \times 10^4}{0.01} = 2.70 \times 10^6 \mathrm{ V/m}$
 
-$E_2$ (from $-5.0 \mathrm{ \mu C}$Pointing towards it): $E_2 = \frac{8.99 \times 10^9 \times 5.0 \times 10^{-6}}{(0.10)^2} = \frac{4.495 \times 10^4}{0.01} = 4.50 \times 10^6 \mathrm{ V/m}$
+$E_2$ (from $-5.0 \mathrm{ \mu C}$Pointing towards it):
+$E_2 = \frac{8.99 \times 10^9 \times 5.0 \times 10^{-6}}{(0.10)^2} = \frac{4.495 \times 10^4}{0.01} = 4.50 \times 10^6 \mathrm{ V/m}$
 
 Since both fields point in the same direction (from $+q_1$ towards $-q_2$):
 
@@ -1843,9 +1865,9 @@ $500 \mathrm{ V}$ across them.
 
 (i) Calculate the electric field strength between the plates.
 
-(ii) An electron enters the field midway between the plates, moving perpendicular to the field
-With speed $3.0 \times 10^7 \mathrm{ m/s}$. Calculate the vertical deflection of the electron
-As it exits the plates (plate length $= 10 \mathrm{ cm}$).
+(ii) An electron enters the field midway between the plates, moving perpendicular to the field With
+speed $3.0 \times 10^7 \mathrm{ m/s}$. Calculate the vertical deflection of the electron As it exits
+the plates (plate length $= 10 \mathrm{ cm}$).
 
 (iii) Calculate the angle at which the electron leaves the field.
 
@@ -1855,9 +1877,9 @@ As it exits the plates (plate length $= 10 \mathrm{ cm}$).
 (a) **Electric potential** ($V$) is the electric potential energy per unit charge at a point:
 $V = E_p/q$. It is a scalar quantity with unit volt (V).
 
-**Electric field strength** ($E$) is the force per unit positive charge at a point: $E = F/q$.
-It is a vector quantity with unit $\mathrm{ V/m}$ or $\mathrm{ N/C}$. The field points from
-High potential to low potential.
+**Electric field strength** ($E$) is the force per unit positive charge at a point: $E = F/q$. It is
+a vector quantity with unit $\mathrm{ V/m}$ or $\mathrm{ N/C}$. The field points from High potential
+to low potential.
 
 (b) (i) $E = V/d = 500/0.05 = 10000 \mathrm{ V/m} = 10.0 \mathrm{ kV/m}$
 
@@ -1865,11 +1887,14 @@ High potential to low potential.
 
 $$t = \frac{L}{v_x} = \frac{0.10}{3.0 \times 10^7} = 3.33 \times 10^{-9} \mathrm{ s}$$
 
-Vertical acceleration: $a = \frac{eE}{m} = \frac{1.6 \times 10^{-19} \times 10000}{9.11 \times 10^{-31}} = \frac{1.6 \times 10^{-15}}{9.11 \times 10^{-31}} = 1.76 \times 10^{15} \mathrm{ m/s}^2$
+Vertical acceleration:
+$a = \frac{eE}{m} = \frac{1.6 \times 10^{-19} \times 10000}{9.11 \times 10^{-31}} = \frac{1.6 \times 10^{-15}}{9.11 \times 10^{-31}} = 1.76 \times 10^{15} \mathrm{ m/s}^2$
 
-Vertical deflection: $y = \frac{1}{2}at^2 = \frac{1}{2}(1.76 \times 10^{15})(3.33 \times 10^{-9})^2 = 0.5 \times 1.76 \times 10^{15} \times 1.11 \times 10^{-17} = 9.76 \times 10^{-3} \mathrm{ m} = 9.76 \mathrm{ mm}$
+Vertical deflection:
+$y = \frac{1}{2}at^2 = \frac{1}{2}(1.76 \times 10^{15})(3.33 \times 10^{-9})^2 = 0.5 \times 1.76 \times 10^{15} \times 1.11 \times 10^{-17} = 9.76 \times 10^{-3} \mathrm{ m} = 9.76 \mathrm{ mm}$
 
-(iii) Vertical velocity at exit: $v_y = at = 1.76 \times 10^{15} \times 3.33 \times 10^{-9} = 5.86 \times 10^6 \mathrm{ m/s}$
+(iii) Vertical velocity at exit:
+$v_y = at = 1.76 \times 10^{15} \times 3.33 \times 10^{-9} = 5.86 \times 10^6 \mathrm{ m/s}$
 
 $$\theta = \tan^{-1}\left(\frac{v_y}{v_x}\right) = \tan^{-1}\left(\frac{5.86 \times 10^6}{3.0 \times 10^7}\right) = \tan^{-1}(0.195) = 11.0^\circ$$
 
@@ -1879,8 +1904,8 @@ $$\theta = \tan^{-1}\left(\frac{v_y}{v_x}\right) = \tan^{-1}\left(\frac{5.86 \ti
 
 (a) Describe the structure and operation of a simple AC generator.
 
-(b) A rectangular coil of 100 turns, dimensions $0.05 \mathrm{ m} \times 0.08 \mathrm{ m}$Rotates
-At $50 \mathrm{ rev/s}$ in a magnetic field of $0.3 \mathrm{ T}$.
+(b) A rectangular coil of 100 turns, dimensions $0.05 \mathrm{ m} \times 0.08 \mathrm{ m}$Rotates At
+$50 \mathrm{ rev/s}$ in a magnetic field of $0.3 \mathrm{ T}$.
 
 (i) Calculate the peak EMF.
 
@@ -1893,10 +1918,10 @@ At $50 \mathrm{ rev/s}$ in a magnetic field of $0.3 \mathrm{ T}$.
 <details>
 <summary>Solution</summary>
 
-(a) An AC generator consists of a rectangular coil rotating in a uniform magnetic field. As the
-Coil rotates, the magnetic flux through the coil changes sinusoidally, inducing an EMF by
-Faraday's law. Slip rings and brushes provide continuous electrical contact with the external
-Circuit. The EMF varies sinusoidally, producing alternating current.
+(a) An AC generator consists of a rectangular coil rotating in a uniform magnetic field. As the Coil
+rotates, the magnetic flux through the coil changes sinusoidally, inducing an EMF by Faraday's law.
+Slip rings and brushes provide continuous electrical contact with the external Circuit. The EMF
+varies sinusoidally, producing alternating current.
 
 (b) (i) $\omega = 2\pi \times 50 = 314.2 \mathrm{ rad/s}$
 
@@ -1908,12 +1933,13 @@ $$\varepsilon_0 = NBA\omega = 100 \times 0.3 \times 0.004 \times 314.2 = 37.7 \m
 
 (assuming the EMF is zero at $t = 0$)
 
-(iii) $\varepsilon_{\mathrm{RMS}} = \frac{\varepsilon_0}{\sqrt{2}} = \frac{37.7}{1.414} = 26.7 \mathrm{ V}$
+(iii)
+$\varepsilon_{\mathrm{RMS}} = \frac{\varepsilon_0}{\sqrt{2}} = \frac{37.7}{1.414} = 26.7 \mathrm{ V}$
 
-(iv) Average power: $P = \frac{\varepsilon_{\mathrm{RMS}}^2}{R} = \frac{(26.7)^2}{50} = \frac{712.9}{50} = 14.3 \mathrm{ W}$
+(iv) Average power:
+$P = \frac{\varepsilon_{\mathrm{RMS}}^2}{R} = \frac{(26.7)^2}{50} = \frac{712.9}{50} = 14.3 \mathrm{ W}$
 
 </details>
-
 
 :::
 

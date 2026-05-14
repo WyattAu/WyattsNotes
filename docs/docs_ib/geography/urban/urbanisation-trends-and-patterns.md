@@ -1,6 +1,8 @@
 ---
 title: Urbanisation Trends and Patterns
-description: "Global urbanisation trends, megacities, world cities, primate cities, urban-rural migration, and push-pull factors for IB Geography."
+description:
+  'Global urbanisation trends, megacities, world cities, primate cities, urban-rural migration, and
+  push-pull factors for IB Geography.'
 slug: urbanisation-trends-and-patterns
 ---
 
@@ -17,14 +19,14 @@ Will reach 68% by 2050.
 
 The rate of urbanisation varies dramatically by region:
 
-| Region | Urban Population (%) | Annual Urbanisation Rate (%) | Projected 2050 (%) |
+| Region                      | Urban Population (%) | Annual Urbanisation Rate (%) | Projected 2050 (%) |
 | --------------------------- | -------------------- | ---------------------------- | ------------------ |
-| North America | 83 | 0.3 | 87 |
-| Latin America and Caribbean | 82 | 0.4 | 87 |
-| Europe | 75 | 0.2 | 80 |
-| Oceania | 68 | 0.5 | 73 |
-| Asia | 52 | 1.5 | 64 |
-| Africa | 44 | 3.4 | 56 |
+| North America               | 83                   | 0.3                          | 87                 |
+| Latin America and Caribbean | 82                   | 0.4                          | 87                 |
+| Europe                      | 75                   | 0.2                          | 80                 |
+| Oceania                     | 68                   | 0.5                          | 73                 |
+| Asia                        | 52                   | 1.5                          | 64                 |
+| Africa                      | 44                   | 3.4                          | 56                 |
 
 The most rapid urbanisation is occurring in Sub-Saharan Africa and South Asia. Africa's urban
 Population is projected to triple between 2023 and 2050, adding approximately 900 million urban
@@ -37,24 +39,24 @@ And sanitation, and environmental degradation.
 Urban population growth results from three components:
 
 1. **Natural increase:** births minus deaths within urban areas. In many developing-country cities,
- high fertility rates among recent migrants (who tend to be young adults of reproductive age)
- contribute significantly to urban growth. Natural increase accounts for approximately 60% of
- urban population growth in Sub-Saharan Africa.
+   high fertility rates among recent migrants (who tend to be young adults of reproductive age)
+   contribute significantly to urban growth. Natural increase accounts for approximately 60% of
+   urban population growth in Sub-Saharan Africa.
 2. **Rural-urban migration:** the movement of people from rural to urban areas, driven by push and
- pull factors. This is the dominant component in many rapidly urbanising countries in Asia and
- Latin America.
+   pull factors. This is the dominant component in many rapidly urbanising countries in Asia and
+   Latin America.
 3. **Reclassification:** as rural settlements grow and cross the threshold defined as "urban" (which
- varies by country), their populations are reclassified. In China, the relaxation of the hukou
- (household registration) system has accelerated the reclassification of rural migrants as urban
- residents. Reclassification can account for a significant proportion of apparent urbanisation,
- particularly in countries with low urban thresholds.
+   varies by country), their populations are reclassified. In China, the relaxation of the hukou
+   (household registration) system has accelerated the reclassification of rural migrants as urban
+   residents. Reclassification can account for a significant proportion of apparent urbanisation,
+   particularly in countries with low urban thresholds.
 
 ### Urbanisation in Developed vs Developing Countries
 
 **Developed countries.** Most developed countries have already completed their urban transition
-(urban population exceeds 75%). Current urbanisation rates are low ( below 0.5% per year).
-Some cities in developed countries are experiencing population decline (urban shrinkage),
-Particularly in deindustrialising regions (Detroit, USA; Liverpool, UK; the Ruhr region, Germany).
+(urban population exceeds 75%). Current urbanisation rates are low ( below 0.5% per year). Some
+cities in developed countries are experiencing population decline (urban shrinkage), Particularly in
+deindustrialising regions (Detroit, USA; Liverpool, UK; the Ruhr region, Germany).
 Counter-urbanisation (the movement of people from large cities to smaller towns and rural areas,
 Driven by lower housing costs, telecommuting, and environmental preferences) has been observed in
 Many Western European countries since the 1970s.
@@ -69,40 +71,39 @@ Growing by several hundred thousand residents per year.
 
 ### Definition and Distribution
 
-A megacity is defined as an urban agglomeration with a population exceeding 10 million. As
-Of 2023, there are 33 megacities worldwide. By 2050, the number is projected to reach
-Approximately 43.
+A megacity is defined as an urban agglomeration with a population exceeding 10 million. As Of 2023,
+there are 33 megacities worldwide. By 2050, the number is projected to reach Approximately 43.
 
 The distribution of megacities has shifted markedly. In 1950, only New York and Tokyo qualified as
 Megacities, both in developed countries. By 2023, the majority of megacities are in developing
 Countries, predominantly in Asia and increasingly in Africa.
 
-| Megacity | Country | Population (2023, millions) |
+| Megacity    | Country    | Population (2023, millions) |
 | ----------- | ---------- | --------------------------- |
-| Tokyo | Japan | 37 |
-| Delhi | India | 33 |
-| Shanghai | China | 29 |
-| Dhaka | Bangladesh | 23 |
-| Sao Paulo | Brazil | 22 |
-| Mexico City | Mexico | 22 |
-| Cairo | Egypt | 22 |
-| Mumbai | India | 22 |
-| Beijing | China | 21 |
-| Osaka-Kobe | Japan | 19 |
+| Tokyo       | Japan      | 37                          |
+| Delhi       | India      | 33                          |
+| Shanghai    | China      | 29                          |
+| Dhaka       | Bangladesh | 23                          |
+| Sao Paulo   | Brazil     | 22                          |
+| Mexico City | Mexico     | 22                          |
+| Cairo       | Egypt      | 22                          |
+| Mumbai      | India      | 22                          |
+| Beijing     | China      | 21                          |
+| Osaka-Kobe  | Japan      | 19                          |
 
 ### Characteristics and Challenges
 
 Megacities share certain characteristics:
 
 - **Functional complexity:** they are national or regional economic hubs, concentrating finance,
- commerce, government, and cultural functions.
+  commerce, government, and cultural functions.
 - **Spatial extent:** megacity boundaries often extend across multiple administrative jurisdictions,
- complicating governance. The Tokyo metropolitan area encompasses approximately 13 500 km$^2$ and
- includes parts of three prefectures.
+  complicating governance. The Tokyo metropolitan area encompasses approximately 13 500 km$^2$ and
+  includes parts of three prefectures.
 - **Infrastructure challenges:** transport congestion, inadequate housing, water supply deficits,
- air pollution, and waste management are endemic.
+  air pollution, and waste management are endemic.
 - **Social diversity:** megacities attract migrants from diverse origins, creating complex social
- mosaics and sometimes ethnic or religious spatial segregation.
+  mosaics and sometimes ethnic or religious spatial segregation.
 
 **Advantages of megacities:** agglomeration economies (the productivity gains from firms and workers
 Being located in close proximity, including shared infrastructure, labour market pooling, and
@@ -141,12 +142,12 @@ A primate city is a city that is disproportionately large relative to other citi
 Country. The primacy ratio is the population of the largest city divided by the population of the
 Second-largest city. A ratio exceeding 2:1 is generally considered to indicate primacy.
 
-| Country | Primate City | Second City | Primacy Ratio |
+| Country  | Primate City           | Second City               | Primacy Ratio |
 | -------- | ---------------------- | ------------------------- | ------------- |
-| Thailand | Bangkok (10.5 million) | Chiang Mai (0.13 million) | 81:1 |
-| Peru | Lima (10.9 million) | Arequipa (1.0 million) | 11:1 |
-| France | Paris (11.0 million) | Lyon (1.7 million) | 6.5:1 |
-| UK | London (9.5 million) | Birmingham (2.6 million) | 3.7:1 |
+| Thailand | Bangkok (10.5 million) | Chiang Mai (0.13 million) | 81:1          |
+| Peru     | Lima (10.9 million)    | Arequipa (1.0 million)    | 11:1          |
+| France   | Paris (11.0 million)   | Lyon (1.7 million)        | 6.5:1         |
+| UK       | London (9.5 million)   | Birmingham (2.6 million)  | 3.7:1         |
 
 **Causes of primacy.** Primate cities often result from colonial history (colonial powers
 Concentrated administration, trade, and infrastructure in a single port city), economic geography
@@ -170,20 +171,20 @@ Remaining in rural areas) and pull factors (conditions that attract migrants to 
 **Push factors:**
 
 - **Economic:** low agricultural incomes, mechanisation reducing labour demand, land fragmentation
- through inheritance, seasonal unemployment, lack of non-farm employment opportunities
+  through inheritance, seasonal unemployment, lack of non-farm employment opportunities
 - **Social:** limited access to education and healthcare, social constraints (caste, gender),
- limited marriage prospects
+  limited marriage prospects
 - **Environmental:** soil degradation, desertification, drought, flooding, desert locust outbreaks
 - **Political:** conflict, displacement, forced relocation
 
 **Pull factors:**
 
 - **Economic:** higher wages (urban-rural wage differentials can be 2--10x in developing countries),
- greater variety of employment opportunities, informal sector livelihoods
+  greater variety of employment opportunities, informal sector livelihoods
 - **Social:** access to education (schools, universities), healthcare facilities, cultural
- amenities, entertainment
+  amenities, entertainment
 - **Perceptual:** the "bright lights" effect, media portrayals of urban life, aspirations for
- modernity
+  modernity
 
 ### The Harris-Todaro Model
 

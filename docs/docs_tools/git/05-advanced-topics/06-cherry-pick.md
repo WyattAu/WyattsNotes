@@ -1,8 +1,11 @@
 ---
 title: Cherry-Pick
-description: "Git cherry-pick: applying specific commits from one branch to another, including usage, conflict resolution, and best practices for maintaining clean history."
+description:
+  'Git cherry-pick: applying specific commits from one branch to another, including usage, conflict
+  resolution, and best practices for maintaining clean history.'
 slug: cherry-pick
 ---
+
 ## What Cherry-Pick Does
 
 `git cherry-pick` applies the **diff** introduced by a specific commit onto the current branch as a
@@ -16,11 +19,11 @@ Commits and () different committer timestamps. They are distinct objects in the 
 
 ### How It Differs from Merge and Rebase
 
-| Operation | What it does | Commit topology change |
+| Operation     | What it does                                                 | Commit topology change                      |
 | ------------- | ------------------------------------------------------------ | ------------------------------------------- |
-| `merge` | Creates a merge commit joining two branch histories | New merge commit, preserves both histories |
-| `rebase` | Replays a sequence of commits onto a new base | Rewrites all replayed commits with new SHAs |
-| `cherry-pick` | Applies one or more specific commits onto the current branch | New commits with new SHAs, no merge commit |
+| `merge`       | Creates a merge commit joining two branch histories          | New merge commit, preserves both histories  |
+| `rebase`      | Replays a sequence of commits onto a new base                | Rewrites all replayed commits with new SHAs |
+| `cherry-pick` | Applies one or more specific commits onto the current branch | New commits with new SHAs, no merge commit  |
 
 Merge preserves the full topological relationship between branches. Rebase rewrites an entire
 Sequence linearly. Cherry-pick is surgical — it extracts individual commits without regard to branch
@@ -69,10 +72,10 @@ $ git cherry-pick A^..B
 
 The difference between `A..B` and `A^..B` is a common source of confusion:
 
-| Syntax | Meaning | Includes A? |
+| Syntax  | Meaning                                        | Includes A? |
 | ------- | ---------------------------------------------- | ----------- |
-| `A..B` | Commits reachable from B, not reachable from A | No |
-| `A^..B` | Commits from A's parent through B | Yes |
+| `A..B`  | Commits reachable from B, not reachable from A | No          |
+| `A^..B` | Commits from A's parent through B              | Yes         |
 
 ```bash
 # Practical example: cherry-pick everything from commit X through Y, inclusive
@@ -107,8 +110,8 @@ $ git cherry-pick -S a3f2b1c
 $ git cherry-pick --no-commit a3f2b1c
 ```
 
-The `-x` flag is worth understanding in depth. When you use `-x`Git appends a trailer to the
-Commit message:
+The `-x` flag is worth understanding in depth. When you use `-x`Git appends a trailer to the Commit
+message:
 
 ```
 Fix authentication timeout
@@ -194,7 +197,7 @@ Are cherry-picking A, B, C and the conflict occurs at B:
 
 - `--abort`: rolls back everything, including the successful cherry-pick of A.
 - `--quit`: keeps A's cherry-pick on the branch, drops the operation entirely (B and C are not
- applied).
+  applied).
 
 ### Skipping a Conflicting Commit
 
@@ -233,26 +236,26 @@ The `--mainline` flag tells Git which parent to use as the base when computing t
 Determines what changes the merge commit "introduces":
 
 - `--mainline 1` (default): The diff is computed as the changes between the merge commit and its
- first parent. This captures everything that was different in the merged branch.
+  first parent. This captures everything that was different in the merged branch.
 - `--mainline 2`: The diff is computed against the second parent, which captures the changes from
- the first parent's branch that the merge did not include.
+  the first parent's branch that the merge did not include.
 
 ### Why Cherry-Picking Merges Is Dangerous
 
 Cherry-picking a merge commit almost never does what you want because:
 
 1. **Merge commits are semantic, not functional**. The value of a merge commit is in the topology it
- creates — it joins two histories. The actual diff of a merge commit relative to either parent is
- often the empty set (if the merge was a clean fast-forward equivalent) or a large combined diff
- that includes conflict resolutions.
+   creates — it joins two histories. The actual diff of a merge commit relative to either parent is
+   often the empty set (if the merge was a clean fast-forward equivalent) or a large combined diff
+   that includes conflict resolutions.
 
 2. **Conflict resolutions are not portable**. If the merge commit required manual conflict
- resolution, those resolutions are specific to the state of both branches at the time of the
- merge. Applying them to a different branch context will produce incorrect results.
+   resolution, those resolutions are specific to the state of both branches at the time of the
+   merge. Applying them to a different branch context will produce incorrect results.
 
 3. **The diff may be empty or enormous**. If the merge was a trivial merge (no conflicts,
- fast-forward equivalent), the diff against the first parent is empty. If the merge was complex,
- the diff may include unintended changes.
+   fast-forward equivalent), the diff against the first parent is empty. If the merge was complex,
+   the diff may include unintended changes.
 
 The correct approach is to cherry-pick the individual commits from the merged branch, not the merge
 Commit itself.
@@ -271,14 +274,14 @@ $ git cherry-pick b1c2d3e c4d5e6f
 
 ### Decision Framework
 
-| Factor | Use Cherry-Pick | Use Rebase |
+| Factor              | Use Cherry-Pick                               | Use Rebase                             |
 | ------------------- | --------------------------------------------- | -------------------------------------- |
-| Scope | One or a few specific commits | Entire branch or large sequence |
-| Intent | Selectively bring changes across branches | Move a branch to a new base |
-| Commit order | You control which commits and in what order | Preserves original order of the branch |
-| History cleanliness | Can create a messy DAG with scattered commits | Produces a clean linear history |
-| Merge conflicts | Resolve per commit | Resolve once per conflicting commit |
-| Traceability | Needs `-x` for provenance tracking | Branch topology provides context |
+| Scope               | One or a few specific commits                 | Entire branch or large sequence        |
+| Intent              | Selectively bring changes across branches     | Move a branch to a new base            |
+| Commit order        | You control which commits and in what order   | Preserves original order of the branch |
+| History cleanliness | Can create a messy DAG with scattered commits | Produces a clean linear history        |
+| Merge conflicts     | Resolve per commit                            | Resolve once per conflicting commit    |
+| Traceability        | Needs `-x` for provenance tracking            | Branch topology provides context       |
 
 ### When to Cherry-Pick
 
@@ -375,7 +378,7 @@ Across different branches:
 1. Bisect may identify the cherry-picked commit as the culprit instead of the original.
 2. The original commit may be in a range that bisect never examines.
 3. If the cherry-picked commit has a slightly different context (due to conflict resolution during
- the pick), bisect may land on a commit that does not actually compile.
+   the pick), bisect may land on a commit that does not actually compile.
 
 ### Breaking git blame
 

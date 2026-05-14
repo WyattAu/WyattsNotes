@@ -1,6 +1,8 @@
 ---
 title: Computational Thinking
-description: "Computational Thinking — Decomposition (OL/HL); Pattern Recognition (OL/HL); Abstraction (OL/HL); Algorithm Design (OL/HL)."
+description:
+  'Computational Thinking — Decomposition (OL/HL); Pattern Recognition (OL/HL); Abstraction (OL/HL);
+  Algorithm Design (OL/HL).'
 date: 2026-04-14
 tags:
   - Computer Science
@@ -9,6 +11,7 @@ categories:
   - Computer Science
 slug: computational-thinking
 ---
+
 # Computational Thinking
 
 Computational thinking is a problem-solving approach that involves breaking down complex problems,
@@ -71,7 +74,7 @@ Developing a step-by-step solution to the problem.
 
 1. Initialise `highest` to 0.
 2. For each student in the class: a. Read the student's score. B. If score &gt; highest, set highest
- = score.
+   = score.
 3. Output highest.
 
 ## Abstraction in Practice
@@ -139,14 +142,14 @@ A vending machine accepts 50c and 1 euro coins and dispenses a drink costing 1.5
 
 **Inputs:** 50c, 1 euro.
 
-| Current state | Input | Next state | Output |
+| Current state | Input  | Next state | Output                     |
 | ------------- | ------ | ---------- | -------------------------- |
-| $S_0$ | 50c | $S_1$ | -- |
-| $S_0$ | 1 euro | $S_2$ | -- |
-| $S_1$ | 50c | $S_2$ | -- |
-| $S_1$ | 1 euro | $S_3$ | Dispense drink |
-| $S_2$ | 50c | $S_3$ | Dispense drink |
-| $S_2$ | 1 euro | $S_3$ | Dispense drink, return 50c |
+| $S_0$         | 50c    | $S_1$      | --                         |
+| $S_0$         | 1 euro | $S_2$      | --                         |
+| $S_1$         | 50c    | $S_2$      | --                         |
+| $S_1$         | 1 euro | $S_3$      | Dispense drink             |
+| $S_2$         | 50c    | $S_3$      | Dispense drink             |
+| $S_2$         | 1 euro | $S_3$      | Dispense drink, return 50c |
 
 ### State Transition Diagram
 
@@ -197,12 +200,12 @@ Unlocks it. Pushing it when unlocked lets one person through and locks it again.
 
 States: Locked, Unlocked. Inputs: coin, push.
 
-| State | Input | Next State | Output |
+| State    | Input | Next State | Output         |
 | -------- | ----- | ---------- | -------------- |
-| Locked | coin | Unlocked | -- |
-| Locked | push | Locked | -- |
-| Unlocked | coin | Unlocked | -- |
-| Unlocked | push | Locked | Person through |
+| Locked   | coin  | Unlocked   | --             |
+| Locked   | push  | Locked     | --             |
+| Unlocked | coin  | Unlocked   | --             |
+| Unlocked | push  | Locked     | Person through |
 
 ## Regular Expressions (HL)
 
@@ -210,20 +213,20 @@ A regular expression (regex) is a pattern used to match strings.
 
 ### Common Syntax
 
-| Symbol | Meaning |
+| Symbol   | Meaning                                        |
 | -------- | ---------------------------------------------- |
-| `.` | Any single character |
-| `*` | Zero or more of the preceding element |
-| `+` | One or more of the preceding element |
-| `?` | Zero or one of the preceding element |
-| `^` | Start of string |
-| `$` | End of string |
-| `[abc]` | Any one character in the set |
-| `[^abc]` | Any character NOT in the set |
-| `\d` | Any digit (0-9) |
-| `\w` | Any word character (alphanumeric + underscore) |
-| `{n}` | Exactly n occurrences |
-| `{n,m}` | Between n and m occurrences |
+| `.`      | Any single character                           |
+| `*`      | Zero or more of the preceding element          |
+| `+`      | One or more of the preceding element           |
+| `?`      | Zero or one of the preceding element           |
+| `^`      | Start of string                                |
+| `$`      | End of string                                  |
+| `[abc]`  | Any one character in the set                   |
+| `[^abc]` | Any character NOT in the set                   |
+| `\d`     | Any digit (0-9)                                |
+| `\w`     | Any word character (alphanumeric + underscore) |
+| `{n}`    | Exactly n occurrences                          |
+| `{n,m}`  | Between n and m occurrences                    |
 
 ### Examples in Python
 
@@ -309,13 +312,13 @@ def mystery(n):
     return result
 ```
 
-| i | result |
+| i   | result |
 | --- | ------ |
-| 1 | 1 |
-| 2 | 2 |
-| 3 | 6 |
-| 4 | 24 |
-| 5 | 120 |
+| 1   | 1      |
+| 2   | 2      |
+| 3   | 6      |
+| 4   | 24     |
+| 5   | 120    |
 
 The function computes $n!$ (factorial). For $n = 5$: $5! = 120$.
 
@@ -330,13 +333,13 @@ def mystery2(n):
     return total
 ```
 
-| i | n % i | n % i == 0 | total |
+| i   | n % i | n % i == 0 | total |
 | --- | ----- | ---------- | ----- |
-| 1 | 0 | True | 1 |
-| 2 | 0 | True | 3 |
-| 3 | 0 | True | 6 |
-| 4 | 2 | False | 6 |
-| 5 | 1 | False | 6 |
+| 1   | 0     | True       | 1     |
+| 2   | 0     | True       | 3     |
+| 3   | 0     | True       | 6     |
+| 4   | 2     | False      | 6     |
+| 5   | 1     | False      | 6     |
 
 The function computes the sum of proper divisors of $n$. For $n = 6$: $1 + 2 + 3 = 6$. A number
 Equal to the sum of its proper divisors is called a **perfect number**.
@@ -404,11 +407,9 @@ print(f"Change: {change}")
 # Output: Change: {50: 1, 20: 1, 10: 1, 5: 1, 2: 1}
 ```
 
-:::warning
-Greedy algorithms do not always produce the optimal solution. For example, with coin
+:::warning Greedy algorithms do not always produce the optimal solution. For example, with coin
 Denominations {1, 3, 4} and amount 6, the greedy approach gives 4 + 1 + 1 (3 coins), but the optimal
-Is 3 + 3 (2 coins).
-:::
+Is 3 + 3 (2 coins). :::
 
 **Proof that greedy fails for {1, 3, 4} with amount 6.** Greedy: pick 4 (amount=2), pick 1
 (amount=1), pick 1 (amount=0). Total: 3 coins. Optimal: pick 3 (amount=3), pick 3 (amount=0). Total:
@@ -483,17 +484,16 @@ print(merge_sort(numbers))
 
 **Trace on [5, 2, 8, 1, 9, 3]:**
 
-Split: [5, 2, 8] and [1, 9, 3].
-Split [5, 2, 8]: [5] and [2, 8]. Split [2, 8]: [2] and [8]. Merge: [2, 8]. Merge [5] and [2, 8]: [2, 5, 8].
-Split [1, 9, 3]: [1] and [9, 3]. Split [9, 3]: [9] and [3]. Merge: [3, 9]. Merge [1] and [3, 9]: [1, 3, 9].
-Merge [2, 5, 8] and [1, 3, 9]: [1, 2, 3, 5, 8, 9].
+Split: [5, 2, 8] and [1, 9, 3]. Split [5, 2, 8]: [5] and [2, 8]. Split [2, 8]: [2] and [8]. Merge:
+[2, 8]. Merge [5] and [2, 8]: [2, 5, 8]. Split [1, 9, 3]: [1] and [9, 3]. Split [9, 3]: [9] and [3].
+Merge: [3, 9]. Merge [1] and [3, 9]: [1, 3, 9]. Merge [2, 5, 8] and [1, 3, 9]: [1, 2, 3, 5, 8, 9].
 
 ## Greedy Algorithms in Detail (HL)
 
 ### Activity Selection Problem
 
-Given a set of activities with start and finish times, select the maximum number of
-Non-overlapping activities.
+Given a set of activities with start and finish times, select the maximum number of Non-overlapping
+activities.
 
 ```python
 def activity_selection(activities):
@@ -512,8 +512,8 @@ print(activity_selection(activities))
 ```
 
 **Proof that the greedy choice is optimal.** By always choosing the activity with the earliest
-Finish time, we maximise the remaining time for other activities. Any optimal solution that does
-Not include this activity can be modified to include it without reducing the total count. $lacksquare$
+Finish time, we maximise the remaining time for other activities. Any optimal solution that does Not
+include this activity can be modified to include it without reducing the total count. $lacksquare$
 
 ## Backtracking in Detail (HL)
 
@@ -578,47 +578,47 @@ def mystery(n):
     return total
 ```
 
-| i | n % i | n % i == 0 | total |
+| i   | n % i | n % i == 0 | total |
 | --- | ----- | ---------- | ----- |
-| 1 | 0 | True | 1 |
-| 2 | 0 | True | 3 |
-| 3 | 0 | True | 6 |
-| 4 | 2 | False | 6 |
-| 5 | 1 | False | 6 |
+| 1   | 0     | True       | 1     |
+| 2   | 0     | True       | 3     |
+| 3   | 0     | True       | 6     |
+| 4   | 2     | False      | 6     |
+| 5   | 1     | False      | 6     |
 
-The function computes the sum of proper divisors. $1 + 2 + 3 = 6$. Since $6 = 6$The number 6 is
-A **perfect number**.
+The function computes the sum of proper divisors. $1 + 2 + 3 = 6$. Since $6 = 6$The number 6 is A
+**perfect number**.
 
 ## Additional Practice Questions
 
 5. Write a Python function that implements a queue using only a list (no `collections.deque`). What
- is the time complexity of enqueue and dequeue?
+   is the time complexity of enqueue and dequeue?
 
 6. Design an FSM for a digital lock that accepts a 3-digit PIN. The lock unlocks only when the
- correct sequence is entered.
+   correct sequence is entered.
 
 7. Write a regex that validates Irish car registration plates in the format XX-CC-XXXXXX (2 letters,
- 2 digits, 1-6 digits).
+   2 digits, 1-6 digits).
 
 8. Explain the difference between backtracking and divide and conquer. Give an example of each.
 
 9. Write a Python function that implements the activity selection greedy algorithm. Trace it on the
- activities [(1,3), (2,5), (4,7), (6,9), (8,10)].
+   activities [(1,3), (2,5), (4,7), (6,9), (8,10)].
 
 10. Explain why the greedy coin change algorithm fails for coin denominations {1, 3, 4} with amount
- 6. Show the greedy result and the optimal result.
+11. Show the greedy result and the optimal result.
 
-11. Design a finite state machine for a microwave oven. States: Idle, Cooking, Paused, DoorOpen.
+12. Design a finite state machine for a microwave oven. States: Idle, Cooking, Paused, DoorOpen.
 
-12. Write a regex that matches UK phone numbers in the format 0XXXX XXXXXX or +44 XXXX XXXXXX.
+13. Write a regex that matches UK phone numbers in the format 0XXXX XXXXXX or +44 XXXX XXXXXX.
 
-13. Explain the concept of an invariant in the context of algorithm correctness. Give an example from
- bubble sort.
+14. Explain the concept of an invariant in the context of algorithm correctness. Give an example
+    from bubble sort.
 
-14. Write a Python function that solves the N-Queens problem for N=8. How many solutions are there?
+15. Write a Python function that solves the N-Queens problem for N=8. How many solutions are there?
 
-15. Compare the time complexity of bubble sort, insertion sort, merge sort, and quick sort. When
- would you use each?
+16. Compare the time complexity of bubble sort, insertion sort, merge sort, and quick sort. When
+    would you use each?
 
 ## Abstract Data Types in Practice (HL)
 
@@ -680,29 +680,30 @@ class QueueTwoStacks:
 
 ### Proof: Linear Search Correctness
 
-**Claim:** `linear_search(arr, target)` returns the index of `target` if it exists, and -1 otherwise.
+**Claim:** `linear_search(arr, target)` returns the index of `target` if it exists, and -1
+otherwise.
 
 **Proof.** The loop examines every index from 0 to len(arr)-1.
 
 - If `target` is at index $k$: the loop reaches index $k$Finds `arr[k] == target`And returns $k$.
 - If `target` is not in the array: no index satisfies `arr[i] == target`So the loop completes
- without returning, and the function returns -1.
+  without returning, and the function returns -1.
 
 Both cases are correct. $lacksquare$
 
 ### Proof: Bubble Sort Correctness
 
-**Invariant:** After $k$ passes, the $k$ largest elements are in their correct final positions at the
-End of the array.
+**Invariant:** After $k$ passes, the $k$ largest elements are in their correct final positions at
+the End of the array.
 
 **Proof by induction.**
 
 Base case ($k=0$): Before any passes, 0 elements are sorted. True.
 
 Inductive step: Assume after $k$ passes, the $k$ largest elements are sorted. In pass $k+1$Adjacent
-Pairs are compared and swapped if out of order. The largest unsorted element "bubbles up" to position
-$n - k - 1$ (one position left of the previously sorted elements). After this pass, $k+1$ elements
-Are sorted.
+Pairs are compared and swapped if out of order. The largest unsorted element "bubbles up" to
+position $n - k - 1$ (one position left of the previously sorted elements). After this pass, $k+1$
+elements Are sorted.
 
 Termination: After $n-1$ passes, $n-1$ elements are sorted, so all $n$ elements are sorted.
 $lacksquare$
@@ -742,7 +743,7 @@ def coin_change_dp(amount, coins):
 ## Additional Practice Questions
 
 9. Write a Python function that implements a priority queue. Items should be dequeued in order of
- priority (highest first).
+   priority (highest first).
 
 10. Prove that the following procedure correctly finds the minimum value in an array:
 
@@ -756,19 +757,19 @@ PROCEDURE findMin(list)
 ```
 
 11. Design an FSM for a combination lock that requires the sequence 3-5-1 to open. The lock should
- reset if an incorrect digit is entered.
+    reset if an incorrect digit is entered.
 
 12. Write a regex that matches valid email addresses. Requirements: one or more characters before @,
- one or more characters after @, a dot, and a domain of 2-4 characters.
+    one or more characters after @, a dot, and a domain of 2-4 characters.
 
 13. Explain the difference between the greedy and dynamic programming approaches to the coin change
- problem. Give a specific example where the greedy approach fails.
+    problem. Give a specific example where the greedy approach fails.
 
 14. Write a Python function that checks whether two strings are anagrams. What is the time
- complexity of your solution?
+    complexity of your solution?
 
 15. Design an FSM for a vending machine that accepts 10p, 20p, and 50p coins and dispenses items
- costing 60p. Include change-returning functionality.
+    costing 60p. Include change-returning functionality.
 
 ## Common Pitfalls
 
@@ -799,18 +800,18 @@ while x > 0:
 ### Higher Level
 
 1. Design a finite state machine for a turnstile that accepts coins (opens gate) and allows one
- person through before locking again.
+   person through before locking again.
 2. Write a regular expression that matches Irish phone numbers in the format (0XX) XXXXXXX.
 3. Implement the merge sort algorithm and trace its execution on the array [5, 2, 8, 1, 9, 3].
 4. Explain why the greedy approach to the coin change problem may not always produce the optimal
- solution. Give a specific example.
+   solution. Give a specific example.
 
 5. Write a Python function that implements a queue using only a list (no `collections.deque`). What
- is the time complexity of enqueue and dequeue?
+   is the time complexity of enqueue and dequeue?
 6. Design an FSM for a digital lock that accepts a 3-digit PIN. The lock unlocks only when the
- correct sequence is entered.
+   correct sequence is entered.
 7. Write a regex that validates Irish car registration plates in the format XX-CC-XXXXXX (2 letters,
- 2 digits, 1-6 digits).
+   2 digits, 1-6 digits).
 8. Explain the difference between backtracking and divide and conquer. Give an example of each.
 
 ## Summary

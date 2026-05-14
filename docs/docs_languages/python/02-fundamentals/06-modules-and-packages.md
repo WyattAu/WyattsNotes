@@ -1,6 +1,8 @@
 ---
 title: Modules and Packages
-description: "Modules and Packages — The Import System; The `import` Statement; What Happens When Python Imports; sys.modules is a dict of all loaded modules."
+description:
+  'Modules and Packages — The Import System; The `import` Statement; What Happens When Python
+  Imports; sys.modules is a dict of all loaded modules.'
 date: 2026-04-05T00:00:00.000Z
 tags:
   - Python
@@ -9,6 +11,7 @@ categories:
 slug: modules-and-packages
 sidebar_position: 6
 ---
+
 ## The Import System
 
 The import system is the mechanism by which Python locates, loads, and binds module objects into the
@@ -32,44 +35,44 @@ import json as json_module
 Each form does something subtly different at the namespace level:
 
 1. `import os` binds the module object to the name `os` in the current namespace. The module's
- attributes are accessed as `os.path``os.environ`Etc. No names from inside `os` are injected
- into the current scope.
+   attributes are accessed as `os.path``os.environ`Etc. No names from inside `os` are injected into
+   the current scope.
 
 2. `from os.path import join` first imports `os.path` (which necessarily imports `os` as a
- dependency), then binds the attribute `join` from `os.path` directly into the current namespace.
- The intermediate names `os` and `os.path` are **not** bound unless they already were.
+   dependency), then binds the attribute `join` from `os.path` directly into the current namespace.
+   The intermediate names `os` and `os.path` are **not** bound unless they already were.
 
 3. `import json as json_module` imports the module and binds it to the alias `json_module`. The
- original name `json` is not added to the namespace.
+   original name `json` is not added to the namespace.
 
 ### What Happens When Python Imports
 
 When the interpreter encounters an `import` statement, it performs the following steps in order:
 
 1. **Check `sys.modules`.** This is a dictionary mapping fully qualified module names to
- already-loaded module objects. If the module is present, the import returns immediately -- the
- existing object is bound to the target name. This means a module's top-level code executes **at
- most once** per interpreter session, regardless of how many times it is imported or from how many
- locations.
+   already-loaded module objects. If the module is present, the import returns immediately -- the
+   existing object is bound to the target name. This means a module's top-level code executes **at
+   most once** per interpreter session, regardless of how many times it is imported or from how many
+   locations.
 
 2. **Find the module.** Python searches `sys.meta_path` finders in order. The default finder
- (`importlib._bootstrap_external._frozen_importlib_external.PathFinder`) searches the directories
- and zip files listed in `sys.path`. If no finder can locate the module, `ModuleNotFoundError` is
- raised.
+   (`importlib._bootstrap_external._frozen_importlib_external.PathFinder`) searches the directories
+   and zip files listed in `sys.path`. If no finder can locate the module, `ModuleNotFoundError` is
+   raised.
 
 3. **Load the module.** The finder returns a loader (or in modern terms, a module spec), which is
- responsible for creating the module object, executing the module's code, and setting the module's
- attributes.
+   responsible for creating the module object, executing the module's code, and setting the module's
+   attributes.
 
 4. **Execute the module code.** The module's `.py` file is compiled to bytecode and executed in a
- new namespace. The resulting namespace becomes the module's `__dict__`. All top-level
- assignments, function definitions, and class definitions in the module execute during this step.
+   new namespace. The resulting namespace becomes the module's `__dict__`. All top-level
+   assignments, function definitions, and class definitions in the module execute during this step.
 
 5. **Cache the result.** The module object is stored in `sys.modules` under its fully qualified
- name.
+   name.
 
 6. **Bind the name.** The module object (or specific attribute) is bound to the requested name in
- the importing scope.
+   the importing scope.
 
 ```python
 import sys
@@ -100,16 +103,16 @@ The import.
 The following order (first match wins):
 
 1. The directory containing the script being run (or the current directory if running interactively
- or with `-c`). This is **not** `os.getcwd()` in all cases -- it is the directory of the
- entry-point script as resolved by the OS. This is why running `python subdir/myscript.py` adds
- `subdir/` to `sys.path`Not the project root.
+   or with `-c`). This is **not** `os.getcwd()` in all cases -- it is the directory of the
+   entry-point script as resolved by the OS. This is why running `python subdir/myscript.py` adds
+   `subdir/` to `sys.path`Not the project root.
 
 2. `PYTHONPATH` environment variable. If set, its value is split on `os.pathsep` (colon on Unix,
- semicolon on Windows) and each path is appended.
+   semicolon on Windows) and each path is appended.
 
 3. Installation-dependent default paths. These are the site-packages directories where `pip install`
- puts packages. The exact paths depend on the Python installation and can be queried with
- `python -m site`.
+   puts packages. The exact paths depend on the Python installation and can be queried with
+   `python -m site`.
 
 4. Site-specific additions from `.pth` files in the site-packages directory.
 
@@ -261,14 +264,14 @@ For this to work -- the import machinery does it automatically.
 The `__init__.py` file serves several purposes:
 
 1. **Marks the directory as a package.** Without it (prior to PEP 420), the directory is not
- recognized as a package.
+   recognized as a package.
 
 2. **Executes package-level initialization code.** Any top-level code in `__init__.py` runs when the
- package is imported. This includes setting up package-level state, configuring logging, or
- importing submodules.
+   package is imported. This includes setting up package-level state, configuring logging, or
+   importing submodules.
 
 3. **Defines the package's public API.** By importing specific names in `__init__.py`You control
- what users see when they `from mypackage import something`.
+   what users see when they `from mypackage import something`.
 
 4. **Sets `__all__`** to control `from mypackage import *` behavior.
 
@@ -299,19 +302,19 @@ Consider this scenario:
     module_b.py
 ```
 
-If both `/opt/app` and `/usr/local/lib` are on `sys.path`Then `import namespace_pkg.module_a`
-Loads from the first directory, and `import namespace_pkg.module_b` loads from the second. Both are
+If both `/opt/app` and `/usr/local/lib` are on `sys.path`Then `import namespace_pkg.module_a` Loads
+from the first directory, and `import namespace_pkg.module_b` loads from the second. Both are
 Recognized as part of the same package `namespace_pkg`.
 
 The difference from regular packages:
 
-| Property | Regular Package | Namespace Package |
+| Property      | Regular Package         | Namespace Package             |
 | ------------- | ----------------------- | ----------------------------- |
-| `__init__.py` | Required | Absent |
-| `__path__` | Single directory | Multiple directories |
-| `__file__` | Points to `__init__.py` | `None` |
-| When created | First import | First import of any submodule |
-| Use case | Most applications | Plugin systems, vendor splits |
+| `__init__.py` | Required                | Absent                        |
+| `__path__`    | Single directory        | Multiple directories          |
+| `__file__`    | Points to `__init__.py` | `None`                        |
+| When created  | First import            | First import of any submodule |
+| Use case      | Most applications       | Plugin systems, vendor splits |
 
 Namespace packages are the mechanism behind the `vendor` directory pattern used by pip and
 Setuptools to bundle dependencies without conflict. They are also used by large projects that split
@@ -336,8 +339,8 @@ class PublicClass:
     pass
 ```
 
-When another module does `from mymodule import *`Only `public_func` and `PublicClass` are bound.
-The `_internal_helper` function is excluded despite being a module-level name.
+When another module does `from mymodule import *`Only `public_func` and `PublicClass` are bound. The
+`_internal_helper` function is excluded despite being a module-level name.
 
 `__all__` also serves as documentation: it tells readers (and tools like linters and IDEs) which
 Names are part of the stable public API. Names not in `__all__` are considered internal.
@@ -387,8 +390,8 @@ The number of dots indicates how many levels up to go:
 - `...` means the grandparent package (two directories up).
 
 Relative imports are resolved using the `__package__` attribute of the importing module. When Python
-Encounters `from . import sibling` in `mypackage/subpkg/module.py`It looks at `__package__`Which
-Is `'mypackage.subpkg'`And resolves the import as `mypackage.subpkg.sibling`.
+Encounters `from . import sibling` in `mypackage/subpkg/module.py`It looks at `__package__`Which Is
+`'mypackage.subpkg'`And resolves the import as `mypackage.subpkg.sibling`.
 
 ### Implicit Relative Imports (Removed in Python 3)
 
@@ -404,26 +407,26 @@ Module. To import a sibling within the same package, you must use an explicit re
 ### Why Absolute Imports Are Preferred
 
 1. **Readability.** `from mypackage.auth.oauth2 import TokenValidator` tells you exactly where the
- symbol comes from. `from .oauth2 import TokenValidator` requires you to know which file you are
- reading and what the package structure looks like.
+   symbol comes from. `from .oauth2 import TokenValidator` requires you to know which file you are
+   reading and what the package structure looks like.
 
 2. **Refactoring safety.** Moving a file from one subpackage to another does not break absolute
- imports (as long as the module's full path is updated). Relative imports break when files move
- because the dot-count changes.
+   imports (as long as the module's full path is updated). Relative imports break when files move
+   because the dot-count changes.
 
 3. **Tool support.** IDEs, linters, and static analysis tools can resolve absolute imports
- unambiguously. Relative imports require the tool to know the file's location in the package.
+   unambiguously. Relative imports require the tool to know the file's location in the package.
 
 4. **No `__main__` breakage.** Relative imports fail when a module is run directly as a script
- (`python mypackage/subpkg/module.py`) because `__package__` is not set. Absolute imports do not
- have this limitation.
+   (`python mypackage/subpkg/module.py`) because `__package__` is not set. Absolute imports do not
+   have this limitation.
 
 ### Relative Imports in `__main__`
 
 When you run a file directly with `python path/to/file.py`The `__package__` attribute is set to
-`None`And `__name__` is set to `'__main__'`. This means any relative import in that file will
-Raise `ImportError: attempted relative import with no known parent package`. This is by design --
-The file is being run as a standalone script, not as part of a package.
+`None`And `__name__` is set to `'__main__'`. This means any relative import in that file will Raise
+`ImportError: attempted relative import with no known parent package`. This is by design -- The file
+is being run as a standalone script, not as part of a package.
 
 The workaround is to use the `-m` flag:
 
@@ -459,16 +462,16 @@ Telling you that the module object exists in `sys.modules` but its namespace is 
 ### Common Patterns That Cause Circular Imports
 
 1. **Mutual type dependencies.** Module A defines a function that takes an argument of type B, and
- module B defines a function that takes an argument of type A.
+   module B defines a function that takes an argument of type A.
 
 2. **Model-repo coupling.** A model module imports a repository module for database access, and the
- repository module imports the model module to use the ORM classes.
+   repository module imports the model module to use the ORM classes.
 
 3. **Configuration coupling.** A config module imports a constants module, which imports the config
- module for defaults.
+   module for defaults.
 
 4. **Base class coupling.** A base class module imports a mixin module, which imports the base class
- module to inherit from it.
+   module to inherit from it.
 
 ### Strategy 1: Restructure Code
 
@@ -562,12 +565,12 @@ Circular imports because the actual loading happens after all module-level impor
 
 ### Choosing a Strategy
 
-| Strategy | When to Use | Trade-off |
+| Strategy              | When to Use                    | Trade-off                                     |
 | --------------------- | ------------------------------ | --------------------------------------------- |
-| Restructure | Clean separation is possible | Requires architectural changes |
-| Function-level import | Runtime dependency, simple fix | Hidden dependency, less discoverable |
-| `TYPE_CHECKING` guard | Only needed for annotations | Requires `from __future__ import annotations` |
-| Lazy imports | Large codebase, many cycles | Added complexity, debugging difficulty |
+| Restructure           | Clean separation is possible   | Requires architectural changes                |
+| Function-level import | Runtime dependency, simple fix | Hidden dependency, less discoverable          |
+| `TYPE_CHECKING` guard | Only needed for annotations    | Requires `from __future__ import annotations` |
+| Lazy imports          | Large codebase, many cycles    | Added complexity, debugging difficulty        |
 
 ## Re-exports and Aliases
 
@@ -599,7 +602,7 @@ This is defensive programming that protects against future renames in submodules
 
 1. It controls `from package import *` (though wildcard imports are generally discouraged).
 2. It documents the public API. Tools like `pylint``pyright`And IDEs use `__all__` to determine
- which names are public vs. Internal.
+   which names are public vs. Internal.
 
 Without `__all__`The public API is implicitly "everything that does not start with `_`." With
 `__all__`It is explicitly "only these names." The explicit version is strictly better because it
@@ -702,14 +705,14 @@ Directory is added to `sys.path`. This means `import mypackage` resolves to the 
 `./mypackage/`Not to the installed copy in site-packages. This has two consequences:
 
 1. **Missing installed dependencies.** If `mypackage` depends on other packages that are installed
- in site-packages, those are still on `sys.path` and will be found. But if `mypackage` has C
- extensions or entry points that need to be installed, those will not be available from the local
- copy.
+   in site-packages, those are still on `sys.path` and will be found. But if `mypackage` has C
+   extensions or entry points that need to be installed, those will not be available from the local
+   copy.
 
 2. **Shadowing installed packages.** If you have a package installed system-wide named `mypackage`
- and a local directory also named `mypackage`The local one wins because the project root is
- earlier in `sys.path`. This means you are testing the local (uninstalled) code, which may not
- match what users actually get when they install your package.
+   and a local directory also named `mypackage`The local one wins because the project root is
+   earlier in `sys.path`. This means you are testing the local (uninstalled) code, which may not
+   match what users actually get when they install your package.
 
 The src layout prevents this by moving the package out of the project root. When `python -m pytest`
 Runs from the project root, `./src/` is on `sys.path`But `import mypackage` will fail unless you
@@ -761,8 +764,8 @@ include = ["mypackage*"]
 
 PEP 621 (standardized in Python 3.10+ and supported by setuptools, hatch, flit, poetry) defines the
 `[project]` table as the standard way to declare metadata. The build-backend-specific configuration
-(`[tool.setuptools.packages.find]``[tool.hatch.build.targets.wheel]`Etc.) is still needed to
-Control which files are included in the distribution.
+(`[tool.setuptools.packages.find]``[tool.hatch.build.targets.wheel]`Etc.) is still needed to Control
+which files are included in the distribution.
 
 ## Dynamic Imports
 
@@ -806,15 +809,15 @@ mymodule = importlib.reload(mymodule)
 Key behaviors:
 
 1. The module's `__dict__` is updated in place. Existing references to the module (including those
- held by other modules that imported it) will see the updated attributes because they all point to
- the same module object.
+   held by other modules that imported it) will see the updated attributes because they all point to
+   the same module object.
 
 2. However, `from module import name` bindings are **not** updated. If module A did
- `from mymodule import func`Reloading `mymodule` does not update A's `func` binding. A still
- holds a reference to the original function object. This is a common source of confusion.
+   `from mymodule import func`Reloading `mymodule` does not update A's `func` binding. A still holds
+   a reference to the original function object. This is a common source of confusion.
 
 3. New top-level names added during reload appear in the module's namespace. Deleted top-level names
- are removed. Modified names reflect the new values.
+   are removed. Modified names reflect the new values.
 
 4. `reload()` is not recursive. It does not reload submodules.
 
@@ -885,8 +888,8 @@ myapp = "mypackage.cli:main"
 myapp-admin = "mypackage.admin:main"
 ```
 
-When a user runs `pip install mypackage`Pip creates a script named `myapp` (on Unix: a Python
-Script with a shebang line; on Windows: a `.exe` wrapper) that effectively does:
+When a user runs `pip install mypackage`Pip creates a script named `myapp` (on Unix: a Python Script
+with a shebang line; on Windows: a `.exe` wrapper) that effectively does:
 
 ```python
 from mypackage.cli import main
@@ -944,12 +947,12 @@ Way `pkg_resources` does). Prefer `importlib.metadata` in all new code.
 
 Key differences:
 
-| Feature | `pkg_resources` | `importlib.metadata` |
+| Feature      | `pkg_resources`       | `importlib.metadata` |
 | ------------ | --------------------- | -------------------- |
-| Stdlib | No (setuptools) | Yes (3.8+) |
-| Startup cost | High (scans sys.path) | Low (lazy) |
-| Maintenance | Legacy | Active |
-| API style | OOP-heavy | Functional |
+| Stdlib       | No (setuptools)       | Yes (3.8+)           |
+| Startup cost | High (scans sys.path) | Low (lazy)           |
+| Maintenance  | Legacy                | Active               |
+| API style    | OOP-heavy             | Functional           |
 
 ### How Entry Points Work Under the Hood
 
@@ -1062,8 +1065,8 @@ Path is searched first, but be aware that this can shadow installed packages.
 
 ### Namespace Package `__init__.py` Conflicts
 
-If a directory contains `__init__.py`It is a regular package, not a namespace package. If you
-Later add another directory with the same package name to `sys.path` expecting namespace package
+If a directory contains `__init__.py`It is a regular package, not a namespace package. If you Later
+add another directory with the same package name to `sys.path` expecting namespace package
 Semantics, it will not work -- the first directory's `__init__.py` takes precedence. To convert a
 Regular package to a namespace package, you must remove the `__init__.py` from all directories that
 Should participate in the namespace.

@@ -1,9 +1,12 @@
 ---
 id: traits-and-generics
 title: Traits and Generics
-description: "Traits and Generics — Trait Definition and Implementation; Defining a Trait; Implementing a Trait; Orphan Rule with worked examples and exam-style questions."
+description:
+  'Traits and Generics — Trait Definition and Implementation; Defining a Trait; Implementing a
+  Trait; Orphan Rule with worked examples and exam-style questions.'
 slug: traits-and-generics
 ---
+
 ## Trait Definition and Implementation
 
 Traits are Rust's answer to interfaces, type classes, and concepts. They define shared behavior that
@@ -306,13 +309,13 @@ fn process_dyn(item: &dyn Display) {
 }
 ```
 
-| Property | Static Dispatch | Dynamic Dispatch |
+| Property       | Static Dispatch        | Dynamic Dispatch       |
 | -------------- | ---------------------- | ---------------------- |
-| Overhead | None (after inlining) | Vtable lookup per call |
-| Binary size | Larger (per type copy) | Smaller (single copy) |
-| Inlining | Yes | No (indirect call) |
-| Flexibility | Compile-time only | Runtime polymorphism |
-| Cache behavior | Better (direct call) | Worse (indirect call) |
+| Overhead       | None (after inlining)  | Vtable lookup per call |
+| Binary size    | Larger (per type copy) | Smaller (single copy)  |
+| Inlining       | Yes                    | No (indirect call)     |
+| Flexibility    | Compile-time only      | Runtime polymorphism   |
+| Cache behavior | Better (direct call)   | Worse (indirect call)  |
 
 ## Trait Objects
 
@@ -372,7 +375,7 @@ for animal in &animals {
 Not all traits can be used as trait objects. A trait is **object safe** if:
 
 1. It does not have any associated `const` or `fn` items with type parameters, generic methods, or
- methods that return `Self` (except `&Self`/`&mut Self`).
+   methods that return `Self` (except `&Self`/`&mut Self`).
 2. It does not have any associated `type` that uses `Self` in non-trivial ways.
 3. All methods have a receiver (`&self``&mut self`Or `self`) — no associated functions.
 
@@ -886,45 +889,45 @@ Wizard::fly(&person);              // Wizard::fly
 ## Common Pitfalls
 
 1. **Implementing `Clone` without considering `Copy`.** If all fields are `Copy`You should also
- derive `Copy`. Forgetting `Copy` on a type that could be `Copy` forces callers to clone
- explicitly, which is unnecessary overhead and a code smell.
+   derive `Copy`. Forgetting `Copy` on a type that could be `Copy` forces callers to clone
+   explicitly, which is unnecessary overhead and a code smell.
 
 2. **Generic bounds that are too loose.** `fn foo<T>(x: T)` where `T` has no bounds means the
- function cannot do anything with `x` except move it. Always add the minimal set of bounds needed
- for the function's operations.
+   function cannot do anything with `x` except move it. Always add the minimal set of bounds needed
+   for the function's operations.
 
 3. **Using `dyn Trait` when generics suffice.** Trait objects have runtime overhead (vtable lookup,
- inability to inline, indirect calls). Use generics by default and only reach for `dyn Trait` when
- you genuinely need runtime polymorphism (heterogeneous collections, plugin systems).
+   inability to inline, indirect calls). Use generics by default and only reach for `dyn Trait` when
+   you genuinely need runtime polymorphism (heterogeneous collections, plugin systems).
 
 4. **Not understanding object safety.** Trying to create `Vec<dyn Iterator>` will fail because
- `Iterator` has a generic `Item` associated type. Use `Vec<Box<dyn Iterator<Item = i32>>>` or
- define a wrapper trait that is object-safe.
+   `Iterator` has a generic `Item` associated type. Use `Vec<Box<dyn Iterator<Item = i32>>>` or
+   define a wrapper trait that is object-safe.
 
 5. **Blanket impl conflicts.** You cannot implement a trait for all `T` if there is already a
- blanket impl that covers some `T`. For example, you cannot `impl Display for T` because there is
- already a blanket impl `impl<T: Display> ToString for T`. This is a coherence restriction.
+   blanket impl that covers some `T`. For example, you cannot `impl Display for T` because there is
+   already a blanket impl `impl<T: Display> ToString for T`. This is a coherence restriction.
 
 6. **Associated type ambiguity.** If a trait has an associated type, you cannot call methods that
- depend on the associated type without the compiler being able to infer it. Use turbofish syntax
- or type annotations to resolve the ambiguity.
+   depend on the associated type without the compiler being able to infer it. Use turbofish syntax
+   or type annotations to resolve the ambiguity.
 
 7. **Trait bound proliferation.** Adding trait bounds to generic functions makes them less flexible.
- Only add bounds that are actually needed by the function body. If a helper function needs a bound
- but the public API does not, split the function into a public wrapper and a private helper.
+   Only add bounds that are actually needed by the function body. If a helper function needs a bound
+   but the public API does not, split the function into a public wrapper and a private helper.
 
 8. **Forgetting that `Sized` is the default.** `fn foo<T>(x: T)` implicitly requires `T: Sized`. If
- you want to accept dynamically sized types (like `str` or `[u8]`), use
- `fn foo<T: ?Sized>(x: &T)`.
+   you want to accept dynamically sized types (like `str` or `[u8]`), use
+   `fn foo<T: ?Sized>(x: &T)`.
 
 9. **Overusing `impl Trait` in return position.** `fn foo() -> impl Display` is convenient but
- prevents the caller from knowing the concrete type. This makes it impossible to name the return
- type in generic contexts. Use `impl Trait` for simple cases; use a named type or a trait object
- when the caller needs type information.
+   prevents the caller from knowing the concrete type. This makes it impossible to name the return
+   type in generic contexts. Use `impl Trait` for simple cases; use a named type or a trait object
+   when the caller needs type information.
 
 10. **Confusing trait objects with generics in error handling.** `Box<dyn Error>` erases the error
- type, making it impossible for callers to match on specific error variants. In libraries, prefer
- concrete error types with `thiserror`. In applications, use `anyhow`.
+    type, making it impossible for callers to match on specific error variants. In libraries, prefer
+    concrete error types with `thiserror`. In applications, use `anyhow`.
 
 ## Summary
 

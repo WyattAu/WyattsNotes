@@ -1,6 +1,8 @@
 ---
-title: "Logarithms -- Diagnostic Tests"
-description: "Diagnostic tests for DSE Logarithms: log laws, equations, change of base, domain restrictions, and common fallacies like log distribution."
+title: 'Logarithms -- Diagnostic Tests'
+description:
+  'Diagnostic tests for DSE Logarithms: log laws, equations, change of base, domain restrictions,
+  and common fallacies like log distribution.'
 slug: diag-logarithms
 hide_table_of_contents: true
 ---
@@ -245,8 +247,7 @@ Solution: $x = -1 + \sqrt{17}$.
 
 A population of bacteria doubles every 3 hours. If the initial population is 500, find:
 
-(a) The population after 12 hours.
-(b) The time for the population to reach 32000.
+(a) The population after 12 hours. (b) The time for the population to reach 32000.
 
 **Solution:**
 
@@ -266,11 +267,13 @@ $\dfrac{t}{3} = 6 \implies t = 18$ hours.
 
 **Question:**
 
-An earthquake has a magnitude of 7.2 on the Richter scale. How many times more powerful is it than an earthquake of magnitude 5.2?
+An earthquake has a magnitude of 7.2 on the Richter scale. How many times more powerful is it than
+an earthquake of magnitude 5.2?
 
 **Solution:**
 
-The Richter scale is logarithmic: each increase of 1 unit represents a 10-fold increase in amplitude.
+The Richter scale is logarithmic: each increase of 1 unit represents a 10-fold increase in
+amplitude.
 
 Difference in magnitude: $7.2 - 5.2 = 2$.
 
@@ -306,7 +309,8 @@ Solve $\log_{0.5}(2x - 1) > \log_{0.5}(x + 2)$.
 
 Domain: $2x - 1 > 0$ and $x + 2 > 0$Giving $x > \dfrac{1}{2}$ and $x > -2$So $x > \dfrac{1}{2}$.
 
-Since the base $0.5$ is between 0 and 1, the logarithmic function is **decreasing**. Therefore the inequality **reverses**:
+Since the base $0.5$ is between 0 and 1, the logarithmic function is **decreasing**. Therefore the
+inequality **reverses**:
 
 $$2x - 1 < x + 2$$
 
@@ -316,7 +320,9 @@ Combining with the domain: $\dfrac{1}{2} < x < 3$.
 
 Solution: $x \in \left(\dfrac{1}{2},\; 3\right)$.
 
-**DSE Exam Technique:** Always check whether the logarithmic base is greater than or less than 1. This determines whether the function is increasing or decreasing, which affects the inequality direction. This is a frequent trap in DSE Paper 2.
+**DSE Exam Technique:** Always check whether the logarithmic base is greater than or less than 1.
+This determines whether the function is increasing or decreasing, which affects the inequality
+direction. This is a frequent trap in DSE Paper 2.
 
 ---
 
@@ -344,8 +350,7 @@ $$\log_8 10 = \frac{\frac{1}{2} + a}{\frac{3}{2}} = \frac{1 + 2a}{3}$$
 
 Solve the simultaneous equations:
 
-$$\log_2 x + \log_2 y = 5$$
-$$\log_2(x - y) = 1$$
+$$\log_2 x + \log_2 y = 5$$ $$\log_2(x - y) = 1$$
 
 **Solution:**
 
@@ -393,15 +398,24 @@ $$x = \frac{\ln 10}{\ln(4/5)} \approx \frac{2.303}{-0.223} \approx -10.33$$
 
 ## Common Pitfalls
 
-1. **Forgetting domain restrictions in logarithmic equations.** The argument of a logarithm must be strictly positive. After solving a logarithmic equation, always check that each solution satisfies the domain conditions. Solutions that make any log argument zero or negative must be rejected.
+1. **Forgetting domain restrictions in logarithmic equations.** The argument of a logarithm must be
+   strictly positive. After solving a logarithmic equation, always check that each solution
+   satisfies the domain conditions. Solutions that make any log argument zero or negative must be
+   rejected.
 
-2. **Not reversing the inequality for bases between 0 and 1.** If $\log_b A > \log_b B$ and $0 < b < 1$Then $A < B$ (not $A > B$). This is because the log function is decreasing when the base is between 0 and 1.
+2. **Not reversing the inequality for bases between 0 and 1.** If $\log_b A > \log_b B$ and
+   $0 < b < 1$Then $A < B$ (not $A > B$). This is because the log function is decreasing when the
+   base is between 0 and 1.
 
-3. **Incorrectly applying the power law.** $\log(a^b) = b \log a$But $(\log a)^b \neq b \log a$. The power law applies to the argument, not to the logarithm itself.
+3. **Incorrectly applying the power law.** $\log(a^b) = b \log a$But $(\log a)^b \neq b \log a$. The
+   power law applies to the argument, not to the logarithm itself.
 
-4. **Assuming $\log a + \log b = \log(a + b)$.** This is false. The correct law is $\log a + \log b = \log(ab)$. This is one of the most common algebraic errors in logarithms.
+4. **Assuming $\log a + \log b = \log(a + b)$.** This is false. The correct law is
+   $\log a + \log b = \log(ab)$. This is one of the most common algebraic errors in logarithms.
 
-5. **Using the wrong base in change of base formula.** The change of base formula is $\log_a b = \dfrac{\log_c b}{\log_c a}$ for any valid base $c$. Swapping the numerator and denominator is a frequent error.
+5. **Using the wrong base in change of base formula.** The change of base formula is
+   $\log_a b = \dfrac{\log_c b}{\log_c a}$ for any valid base $c$. Swapping the numerator and
+   denominator is a frequent error.
 
 ---
 
@@ -409,9 +423,8 @@ $$x = \frac{\ln 10}{\ln(4/5)} \approx \frac{2.303}{-0.223} \approx -10.33$$
 
 ### DSE-1
 
-(a) Solve $\log_3(x^2 - 3x + 2) = 1$. (3 marks)
-(b) Solve $\log_3(x^2 - 3x + 2) = 0$. (2 marks)
-(c) Hence solve $\log_3(x^2 - 3x + 2) \leq 1$. (3 marks)
+(a) Solve $\log_3(x^2 - 3x + 2) = 1$. (3 marks) (b) Solve $\log_3(x^2 - 3x + 2) = 0$. (2 marks) (c)
+Hence solve $\log_3(x^2 - 3x + 2) \leq 1$. (3 marks)
 
 **Solution:**
 
@@ -423,7 +436,8 @@ $x = \dfrac{3 \pm \sqrt{9 + 4}}{2} = \dfrac{3 \pm \sqrt{13}}{2}$.
 
 Domain check: $x^2 - 3x + 2 > 0 \implies (x-1)(x-2) > 0 \implies x < 1$ or $x > 2$.
 
-$\dfrac{3 + \sqrt{13}}{2} \approx 3.30 > 2$ (valid). $\dfrac{3 - \sqrt{13}}{2} \approx -0.30 < 1$ (valid).
+$\dfrac{3 + \sqrt{13}}{2} \approx 3.30 > 2$ (valid). $\dfrac{3 - \sqrt{13}}{2} \approx -0.30 < 1$
+(valid).
 
 (b) $x^2 - 3x + 2 = 3^0 = 1$.
 
@@ -431,13 +445,15 @@ $x^2 - 3x + 1 = 0$.
 
 $x = \dfrac{3 \pm \sqrt{5}}{2}$.
 
-Domain check: both values satisfy the domain. $\dfrac{3+\sqrt{5}}{2} \approx 2.62 > 2$ and $\dfrac{3-\sqrt{5}}{2} \approx 0.38 < 1$.
+Domain check: both values satisfy the domain. $\dfrac{3+\sqrt{5}}{2} \approx 2.62 > 2$ and
+$\dfrac{3-\sqrt{5}}{2} \approx 0.38 < 1$.
 
 (c) $\log_3(x^2 - 3x + 2) \leq 1 \implies 0 < x^2 - 3x + 2 \leq 3$.
 
 $x^2 - 3x + 2 > 0$: $x < 1$ or $x > 2$.
 
-$x^2 - 3x + 2 \leq 3 \implies x^2 - 3x - 1 \leq 0$: $\dfrac{3-\sqrt{13}}{2} \leq x \leq \dfrac{3+\sqrt{13}}{2}$.
+$x^2 - 3x + 2 \leq 3 \implies x^2 - 3x - 1 \leq 0$:
+$\dfrac{3-\sqrt{13}}{2} \leq x \leq \dfrac{3+\sqrt{13}}{2}$.
 
 Combining: $\dfrac{3-\sqrt{13}}{2} \leq x < 1$ or $2 < x \leq \dfrac{3+\sqrt{13}}{2}$.
 
@@ -447,17 +463,18 @@ Combining: $\dfrac{3-\sqrt{13}}{2} \leq x < 1$ or $2 < x \leq \dfrac{3+\sqrt{13}
 
 Let $f(x) = 2\log_3(x - 1) - \log_3(x^2 - 1)$.
 
-(a) Find the domain of $f$. (2 marks)
-(b) Simplify $f(x)$. (3 marks)
-(c) Solve $f(x) = 1$. (3 marks)
+(a) Find the domain of $f$. (2 marks) (b) Simplify $f(x)$. (3 marks) (c) Solve $f(x) = 1$. (3 marks)
 
 **Solution:**
 
 (a) $x - 1 > 0$ and $x^2 - 1 > 0$: $x > 1$.
 
-(b) $f(x) = \log_3(x - 1)^2 - \log_3(x^2 - 1) = \log_3 \dfrac{(x-1)^2}{(x-1)(x+1)} = \log_3 \dfrac{x - 1}{x + 1}$ (for $x > 1$).
+(b)
+$f(x) = \log_3(x - 1)^2 - \log_3(x^2 - 1) = \log_3 \dfrac{(x-1)^2}{(x-1)(x+1)} = \log_3 \dfrac{x - 1}{x + 1}$
+(for $x > 1$).
 
-(c) $\log_3 \dfrac{x - 1}{x + 1} = 1 \implies \dfrac{x - 1}{x + 1} = 3 \implies x - 1 = 3x + 3 \implies -2x = 4 \implies x = -2$.
+(c)
+$\log_3 \dfrac{x - 1}{x + 1} = 1 \implies \dfrac{x - 1}{x + 1} = 3 \implies x - 1 = 3x + 3 \implies -2x = 4 \implies x = -2$.
 
 But $x > 1$So $x = -2$ is rejected. No solution.
 
@@ -465,11 +482,12 @@ But $x > 1$So $x = -2$ is rejected. No solution.
 
 ### DSE-3
 
-The number of bacteria in a culture is given by $N = 1000 \times 2^{0.1t}$Where $t$ is the time in hours.
+The number of bacteria in a culture is given by $N = 1000 \times 2^{0.1t}$Where $t$ is the time in
+hours.
 
-(a) Find the initial number of bacteria. (1 mark)
-(b) Find the number of bacteria after 10 hours, giving your answer in exact form. (2 marks)
-(c) Find the time when the number of bacteria first exceeds 50000. (3 marks)
+(a) Find the initial number of bacteria. (1 mark) (b) Find the number of bacteria after 10 hours,
+giving your answer in exact form. (2 marks) (c) Find the time when the number of bacteria first
+exceeds 50000. (3 marks)
 
 **Solution:**
 
@@ -483,7 +501,8 @@ $2^{0.1t} > 50$.
 
 $0.1t \log 2 > \log 50$.
 
-$t > \dfrac{\log 50}{0.1 \log 2} = \dfrac{10 \log 50}{\log 2} = \dfrac{10(\log 100 - \log 2)}{\log 2} = \dfrac{10(2 - \log 2)}{\log 2} \approx \dfrac{10 \times 1.699}{0.301} \approx 56.4$ hours.
+$t > \dfrac{\log 50}{0.1 \log 2} = \dfrac{10 \log 50}{\log 2} = \dfrac{10(\log 100 - \log 2)}{\log 2} = \dfrac{10(2 - \log 2)}{\log 2} \approx \dfrac{10 \times 1.699}{0.301} \approx 56.4$
+hours.
 
 ---
 
@@ -491,16 +510,15 @@ $t > \dfrac{\log 50}{0.1 \log 2} = \dfrac{10 \log 50}{\log 2} = \dfrac{10(\log 1
 
 If $\log_a 2 = p$ and $\log_a 5 = q$Express the following in terms of $p$ and $q$:
 
-(a) $\log_a 10$ (1 mark)
-(b) $\log_a 0.04$ (2 marks)
-(c) $\log_a 250$ (2 marks)
-(d) $\log_2 a$ (2 marks)
+(a) $\log_a 10$ (1 mark) (b) $\log_a 0.04$ (2 marks) (c) $\log_a 250$ (2 marks) (d) $\log_2 a$ (2
+marks)
 
 **Solution:**
 
 (a) $\log_a 10 = \log_a(2 \times 5) = \log_a 2 + \log_a 5 = p + q$.
 
-(b) $\log_a 0.04 = \log_a\left(\dfrac{4}{100}\right) = \log_a 4 - \log_a 100 = 2\log_a 2 - 2\log_a 10 = 2p - 2(p + q) = -2q$.
+(b)
+$\log_a 0.04 = \log_a\left(\dfrac{4}{100}\right) = \log_a 4 - \log_a 100 = 2\log_a 2 - 2\log_a 10 = 2p - 2(p + q) = -2q$.
 
 (c) $\log_a 250 = \log_a(125 \times 2) = \log_a 125 + \log_a 2 = 3\log_a 5 + p = 3q + p$.
 

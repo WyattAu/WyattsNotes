@@ -1,7 +1,9 @@
 ---
 id: dse-chemistry-chemical-kinetics
 title: Chemistry - Chemical Kinetics
-description: "DSE Chemistry notes covering rate of reaction, measuring rates, factors affecting rate, collision theory, activation energy, Maxwell-Boltzmann distribution,"
+description:
+  'DSE Chemistry notes covering rate of reaction, measuring rates, factors affecting rate, collision
+  theory, activation energy, Maxwell-Boltzmann distribution,'
 slug: chemical-kinetics
 tags: [DSE, Chemistry]
 categories: [DSE, Chemistry]
@@ -25,9 +27,9 @@ The negative sign indicates that reactant concentrations decrease over time.
 ### Average Rate vs Instantaneous Rate
 
 - **Average rate:** total change divided by total time (gradient of secant on concentration-time
- graph).
+  graph).
 - **Instantaneous rate:** rate at a specific moment (gradient of tangent on concentration-time
- graph).
+  graph).
 
 ### Units
 
@@ -39,14 +41,14 @@ Rate is expressed in mol dm$^{-3}$ s$^{-1}$ (change in concentration per unit ti
 
 ### Methods
 
-| Method | Measured Quantity | Suitable Reactions |
-| ----------------- | ------------------------------- | --------------------------------------------------------- |
-| Collection of gas | Volume of gas over time | Reactions producing gas ($\mathrm{CO}_2$$\mathrm{H}_2$) |
-| Mass loss | Mass of flask over time | Reactions producing gas |
-| Titration | Concentration at time intervals | Reactions where aliquots can be quenched |
-| Colorimetry | Absorbance over time | Reactions involving colour change |
-| Conductivity | Conductance over time | Reactions producing/ consuming ions |
-| Clock reaction | Time for observable change | Initial rate determination |
+| Method            | Measured Quantity               | Suitable Reactions                                      |
+| ----------------- | ------------------------------- | ------------------------------------------------------- |
+| Collection of gas | Volume of gas over time         | Reactions producing gas ($\mathrm{CO}_2$$\mathrm{H}_2$) |
+| Mass loss         | Mass of flask over time         | Reactions producing gas                                 |
+| Titration         | Concentration at time intervals | Reactions where aliquots can be quenched                |
+| Colorimetry       | Absorbance over time            | Reactions involving colour change                       |
+| Conductivity      | Conductance over time           | Reactions producing/ consuming ions                     |
+| Clock reaction    | Time for observable change      | Initial rate determination                              |
 
 ### Gas Collection Methods
 
@@ -54,11 +56,9 @@ Rate is expressed in mol dm$^{-3}$ s$^{-1}$ (change in concentration per unit ti
 2. **Inverted burette over water:** Useful for insoluble gases. Volume read from burette.
 3. **Mass loss method:** The flask is placed on a balance; the mass decreases as gas escapes.
 
-:::warning
-The mass loss method only works if the gas escapes the flask. If the flask is sealed, no
+:::warning The mass loss method only works if the gas escapes the flask. If the flask is sealed, no
 Mass change occurs. Also, ensure the reaction does not produce heat that would affect the balance
-Reading.
-:::
+Reading. :::
 
 ### Concentration-Time Graphs
 
@@ -71,8 +71,8 @@ Reactants are consumed and rate slows down.
 
 ### Initial Rate
 
-The initial rate is the rate at $t = 0$Determined from the gradient of the tangent at the origin
-Of a concentration-time graph. It is the fastest rate in the reaction.
+The initial rate is the rate at $t = 0$Determined from the gradient of the tangent at the origin Of
+a concentration-time graph. It is the fastest rate in the reaction.
 
 ---
 
@@ -104,12 +104,12 @@ A catalyst provides an alternative reaction pathway with a lower activation ener
 Rate without being consumed. It does not affect the position of equilibrium or the equilibrium
 Yield.
 
-| Factor | Effect on Rate | Effect on $E_a$ | Effect on Equilibrium |
+| Factor        | Effect on Rate | Effect on $E_a$ | Effect on Equilibrium |
 | ------------- | -------------- | --------------- | --------------------- |
-| Concentration | Increases | No change | Position may shift |
-| Temperature | Increases | No change | Position may shift |
-| Surface area | Increases | No change | No effect |
-| Catalyst | Increases | Decreases | No effect on position |
+| Concentration | Increases      | No change       | Position may shift    |
+| Temperature   | Increases      | No change       | Position may shift    |
+| Surface area  | Increases      | No change       | No effect             |
+| Catalyst      | Increases      | Decreases       | No effect on position |
 
 ---
 
@@ -173,17 +173,15 @@ $$\frac{\mathrm{Fraction with } E \geq E_a \mathrm{ at } T_2}{\mathrm{Fraction w
 The $E_a$ line shifts to the left on the Maxwell-Boltzmann distribution. More particles now have
 Energy $\geq E_a$ (the new, lower activation energy), so the rate increases.
 
-:::info
-A catalyst does NOT change the distribution itself. It only lowers the threshold. The curve
-Shape remains the same at the same temperature.
-:::
+:::info A catalyst does NOT change the distribution itself. It only lowers the threshold. The curve
+Shape remains the same at the same temperature. :::
 
 ### Key DSE Exam Points
 
 - The Maxwell-Boltzmann curve **never** touches the x-axis.
 - The total area is always constant for the same number of particles.
 - The most probable energy increases with temperature but the average energy increase is small
- compared to the dramatic increase in the fraction exceeding $E_a$.
+  compared to the dramatic increase in the fraction exceeding $E_a$.
 
 ---
 
@@ -260,9 +258,9 @@ $$2\mathrm{NO}_2 \xrightarrow{\mathrm{Rh}} \mathrm{N}_2 + 2\mathrm{O}_2$$
 ### Limitations
 
 - **Lead poisoning:** Lead compounds in "leaded" petrol coat and deactivate the catalyst. This is
- why unleaded petrol is required for cars with catalytic converters.
+  why unleaded petrol is required for cars with catalytic converters.
 - **Temperature dependence:** The converter only works efficiently at high temperatures (above about
- $300^\circ\mathrm{C}$). It is ineffective during cold starts.
+  $300^\circ\mathrm{C}$). It is ineffective during cold starts.
 - **Sulfur poisoning:** Sulfur compounds in fuel can also poison the catalyst.
 
 ---
@@ -278,13 +276,13 @@ Enzymes are protein molecules that catalyse specific biochemical reactions.
 1. **Specificity:** Each enzyme catalyses only one reaction (or a small group of reactions).
 2. **Efficiency:** Enzymes can increase reaction rates by factors of $10^6$ to $10^{12}$.
 3. **Optimum temperature:** Most enzymes work best around $37^\circ\mathrm{C}$ (body temperature).
- Above about $45^\circ\mathrm{C}$The enzyme denatures (loses its 3D structure) and activity
- drops sharply.
+   Above about $45^\circ\mathrm{C}$The enzyme denatures (loses its 3D structure) and activity drops
+   sharply.
 4. **Optimum pH:** Each enzyme has an optimal pH. Pepsin (stomach) works at pH ~2; trypsin
- (intestine) works at pH ~8.
+   (intestine) works at pH ~8.
 5. **Concentration dependence:** Rate increases with enzyme concentration (at fixed substrate
- concentration) and with substrate concentration (at fixed enzyme concentration), until a maximum
- is reached.
+   concentration) and with substrate concentration (at fixed enzyme concentration), until a maximum
+   is reached.
 
 ### Lock and Key Model
 
@@ -322,10 +320,7 @@ Where:
 - $n$ = order of reaction with respect to B
 - Overall order = $m + n$
 
-:::warning
-Warning
-The stoichiometric coefficients $a$ and $b$.
-:::
+:::warning Warning The stoichiometric coefficients $a$ and $b$. :::
 
 ### Order of Reaction
 
@@ -355,9 +350,9 @@ Respect to A.
 
 | Experiment | $[\mathrm{A}]$ (mol/dm$^3$) | $[\mathrm{B}]$ (mol/dm$^3$) | Initial Rate (mol dm$^{-3}$ s$^{-1}$) |
 | ---------- | --------------------------- | --------------------------- | ------------------------------------- |
-| 1 | 0.10 | 0.10 | $2.0 \times 10^{-4}$ |
-| 2 | 0.20 | 0.10 | $4.0 \times 10^{-4}$ |
-| 3 | 0.10 | 0.20 | $8.0 \times 10^{-4}$ |
+| 1          | 0.10                        | 0.10                        | $2.0 \times 10^{-4}$                  |
+| 2          | 0.20                        | 0.10                        | $4.0 \times 10^{-4}$                  |
+| 3          | 0.10                        | 0.20                        | $8.0 \times 10^{-4}$                  |
 
 Determine the rate equation and the rate constant.
 
@@ -388,9 +383,9 @@ Correct.
 
 | Experiment | $[\mathrm{X}]$ (mol/dm$^3$) | $[\mathrm{Y}]$ (mol/dm$^3$) | Initial Rate (mol dm$^{-3}$ s$^{-1}$) |
 | ---------- | --------------------------- | --------------------------- | ------------------------------------- |
-| 1 | 0.20 | 0.10 | $6.0 \times 10^{-3}$ |
-| 2 | 0.40 | 0.10 | $1.2 \times 10^{-2}$ |
-| 3 | 0.20 | 0.20 | $6.0 \times 10^{-3}$ |
+| 1          | 0.20                        | 0.10                        | $6.0 \times 10^{-3}$                  |
+| 2          | 0.40                        | 0.10                        | $1.2 \times 10^{-2}$                  |
+| 3          | 0.20                        | 0.20                        | $6.0 \times 10^{-3}$                  |
 
 <details>
 <summary>Answer</summary>
@@ -409,13 +404,13 @@ $k = \dfrac{6.0 \times 10^{-3}}{0.20} = 0.030 \mathrm{ s}^{-1}$
 
 The units of $k$ depend on the overall order of reaction.
 
-| Overall Order | Rate Equation | Units of $k$ |
+| Overall Order | Rate Equation                        | Units of $k$               |
 | ------------- | ------------------------------------ | -------------------------- |
-| 0 | Rate = $k$ | mol dm$^{-3}$ s$^{-1}$ |
-| 1 | Rate = $k[\mathrm{A}]$ | s$^{-1}$ |
-| 2 | Rate = $k[\mathrm{A}]^2$ | dm$^3$ mol$^{-1}$ s$^{-1}$ |
-| 3 | Rate = $k[\mathrm{A}]^3$ | dm$^6$ mol$^{-2}$ s$^{-1}$ |
-| 1 + 2 = 3 | Rate = $k[\mathrm{A}][\mathrm{B}]^2$ | dm$^6$ mol$^{-2}$ s$^{-1}$ |
+| 0             | Rate = $k$                           | mol dm$^{-3}$ s$^{-1}$     |
+| 1             | Rate = $k[\mathrm{A}]$               | s$^{-1}$                   |
+| 2             | Rate = $k[\mathrm{A}]^2$             | dm$^3$ mol$^{-1}$ s$^{-1}$ |
+| 3             | Rate = $k[\mathrm{A}]^3$             | dm$^6$ mol$^{-2}$ s$^{-1}$ |
+| 1 + 2 = 3     | Rate = $k[\mathrm{A}][\mathrm{B}]^2$ | dm$^6$ mol$^{-2}$ s$^{-1}$ |
 
 ---
 
@@ -523,9 +518,9 @@ To each reactant can be determined.
 
 | Experiment | $[\mathrm{S}_2\mathrm{O}_8^{2-}]$ (mol/dm$^3$) | $[\mathrm{I}^-]$ (mol/dm$^3$) | Time (s) |
 | ---------- | ---------------------------------------------- | ----------------------------- | -------- |
-| 1 | 0.040 | 0.040 | 48 |
-| 2 | 0.080 | 0.040 | 24 |
-| 3 | 0.040 | 0.080 | 24 |
+| 1          | 0.040                                          | 0.040                         | 48       |
+| 2          | 0.080                                          | 0.040                         | 24       |
+| 3          | 0.040                                          | 0.080                         | 24       |
 
 <details>
 <summary>Answer</summary>
@@ -546,25 +541,25 @@ Overall order = 2.
 ## Common Pitfalls
 
 1. **Assuming order equals stoichiometry:** The orders in the rate equation must be determined
- experimentally. They are not necessarily the same as the coefficients in the balanced equation.
+   experimentally. They are not necessarily the same as the coefficients in the balanced equation.
 
 2. **Confusing rate and rate constant:** The rate depends on concentrations; the rate constant ($k$)
- does not ( only on temperature and the presence of a catalyst).
+   does not ( only on temperature and the presence of a catalyst).
 
 3. **Wrong units for the rate constant:** Always derive the units of $k$ from the rate equation. A
- first-order rate constant has units s$^{-1}$Not mol dm$^{-3}$ s$^{-1}$.
+   first-order rate constant has units s$^{-1}$Not mol dm$^{-3}$ s$^{-1}$.
 
 4. **Forgetting to convert temperature to Kelvin:** The Arrhenius equation requires absolute
- temperature in Kelvin, not degrees Celsius.
+   temperature in Kelvin, not degrees Celsius.
 
 5. **Misinterpreting Maxwell-Boltzmann diagrams:** Increasing temperature shifts the peak right AND
- lowers it, but the total area stays the same. The curve never touches the x-axis.
+   lowers it, but the total area stays the same. The curve never touches the x-axis.
 
 6. **Catalyst misconceptions:** A catalyst does NOT start a reaction, does NOT increase the amount
- of product, and does NOT change the enthalpy change of the reaction.
+   of product, and does NOT change the enthalpy change of the reaction.
 
 7. **Using the wrong $R$ value:** In the Arrhenius equation, use $R = 8.314$ J/(mol K) when $E_a$ is
- in joules. Convert kJ to J before substituting.
+   in joules. Convert kJ to J before substituting.
 
 ---
 
@@ -578,9 +573,9 @@ Following data were obtained:
 
 | Experiment | $[\mathrm{NO}]$ (mol/dm$^3$) | $[\mathrm{H}_2]$ (mol/dm$^3$) | Initial Rate (mol dm$^{-3}$ s$^{-1}$) |
 | ---------- | ---------------------------- | ----------------------------- | ------------------------------------- |
-| 1 | 0.010 | 0.010 | $1.2 \times 10^{-5}$ |
-| 2 | 0.020 | 0.010 | $4.8 \times 10^{-5}$ |
-| 3 | 0.010 | 0.020 | $2.4 \times 10^{-5}$ |
+| 1          | 0.010                        | 0.010                         | $1.2 \times 10^{-5}$                  |
+| 2          | 0.020                        | 0.010                         | $4.8 \times 10^{-5}$                  |
+| 3          | 0.010                        | 0.020                         | $2.4 \times 10^{-5}$                  |
 
 Determine the rate equation, the rate constant, and the overall order.
 
@@ -625,9 +620,9 @@ In an iodine clock experiment, the following data were collected:
 
 | Experiment | $[\mathrm{S}_2\mathrm{O}_8^{2-}]$ (mol/dm$^3$) | $[\mathrm{I}^-]$ (mol/dm$^3$) | Time (s) |
 | ---------- | ---------------------------------------------- | ----------------------------- | -------- |
-| 1 | 0.020 | 0.020 | 60 |
-| 2 | 0.040 | 0.020 | 30 |
-| 3 | 0.020 | 0.040 | 15 |
+| 1          | 0.020                                          | 0.020                         | 60       |
+| 2          | 0.040                                          | 0.020                         | 30       |
+| 3          | 0.020                                          | 0.040                         | 15       |
 
 Determine the order with respect to each reactant and the overall order.
 
@@ -771,14 +766,14 @@ A chemical that reacts with a catalyst or reactant.
 
 ### Choosing the Right Method
 
-| Scenario | Best Method |
+| Scenario                    | Best Method                         |
 | --------------------------- | ----------------------------------- |
-| Gas-producing reaction | Gas syringe or mass loss |
-| Colour change | Colorimetry |
-| Change in ion concentration | Conductivity |
-| Acid-base reaction | Titration of aliquots |
-| Slow reaction | Titration of aliquots |
-| Fast reaction | Continuous monitoring (colorimetry) |
+| Gas-producing reaction      | Gas syringe or mass loss            |
+| Colour change               | Colorimetry                         |
+| Change in ion concentration | Conductivity                        |
+| Acid-base reaction          | Titration of aliquots               |
+| Slow reaction               | Titration of aliquots               |
+| Fast reaction               | Continuous monitoring (colorimetry) |
 
 ---
 
@@ -812,11 +807,11 @@ The half-life depends on the initial concentration. It increases as concentratio
 
 ### Using Half-Life to Determine Order
 
-| Order | Effect of doubling initial concentration on $t_{1/2}$ |
+| Order  | Effect of doubling initial concentration on $t_{1/2}$ |
 | ------ | ----------------------------------------------------- |
-| Zero | Doubles |
-| First | No change |
-| Second | Halves |
+| Zero   | Doubles                                               |
+| First  | No change                                             |
+| Second | Halves                                                |
 
 **Worked example 8:** In a first-order decomposition, the concentration falls from 0.800 mol/dm$^3$
 To 0.200 mol/dm$^3$ in 120 s. Calculate the half-life and the rate constant.
@@ -859,21 +854,21 @@ $$\frac{1}{[\mathrm{A}]} = \frac{1}{[\mathrm{A}]_0} + kt$$
 
 ### Summary
 
-| Order | Linear Plot | Gradient |
+| Order  | Linear Plot              | Gradient |
 | ------ | ------------------------ | -------- |
-| Zero | $[\mathrm{A}]$ vs $t$ | $-k$ |
-| First | $\ln[\mathrm{A}]$ vs $t$ | $-k$ |
-| Second | $1/[\mathrm{A}]$ vs $t$ | $+k$ |
+| Zero   | $[\mathrm{A}]$ vs $t$    | $-k$     |
+| First  | $\ln[\mathrm{A}]$ vs $t$ | $-k$     |
+| Second | $1/[\mathrm{A}]$ vs $t$  | $+k$     |
 
 **Worked example 9:** The following data were collected for the decomposition of a substance X:
 
 | Time (s) | $[\mathrm{X}]$ (mol/dm$^3$) | $\ln[\mathrm{X}]$ | $1/[\mathrm{X}]$ |
 | -------- | --------------------------- | ----------------- | ---------------- |
-| 0 | 0.100 | $-2.303$ | 10.0 |
-| 30 | 0.0707 | $-2.649$ | 14.1 |
-| 60 | 0.0500 | $-2.996$ | 20.0 |
-| 90 | 0.0354 | $-3.340$ | 28.3 |
-| 120 | 0.0250 | $-3.689$ | 40.0 |
+| 0        | 0.100                       | $-2.303$          | 10.0             |
+| 30       | 0.0707                      | $-2.649$          | 14.1             |
+| 60       | 0.0500                      | $-2.996$          | 20.0             |
+| 90       | 0.0354                      | $-3.340$          | 28.3             |
+| 120      | 0.0250                      | $-3.689$          | 40.0             |
 
 Determine the order of reaction.
 
@@ -927,14 +922,14 @@ Powdering the solid increases surface area, further increasing the rate.
 
 ## Summary of Key Equations
 
-| Equation | Use |
+| Equation                                        | Use                              |
 | ----------------------------------------------- | -------------------------------- |
-| $\mathrm{Rate} = k[\mathrm{A}]^m[\mathrm{B}]^n$ | Rate equation |
-| $\ln k = \ln A - E_a/(RT)$ | Arrhenius equation (linear form) |
-| $\ln(k_2/k_1) = (E_a/R)(1/T_1 - 1/T_2)$ | Two-temperature Arrhenius |
-| $t_{1/2} = 0.693/k$ | First-order half-life |
-| $\ln[\mathrm{A}] = \ln[\mathrm{A}]_0 - kt$ | First-order integrated rate law |
-| $\mathrm{Rate} \propto 1/t$ | Clock reaction initial rate |
+| $\mathrm{Rate} = k[\mathrm{A}]^m[\mathrm{B}]^n$ | Rate equation                    |
+| $\ln k = \ln A - E_a/(RT)$                      | Arrhenius equation (linear form) |
+| $\ln(k_2/k_1) = (E_a/R)(1/T_1 - 1/T_2)$         | Two-temperature Arrhenius        |
+| $t_{1/2} = 0.693/k$                             | First-order half-life            |
+| $\ln[\mathrm{A}] = \ln[\mathrm{A}]_0 - kt$      | First-order integrated rate law  |
+| $\mathrm{Rate} \propto 1/t$                     | Clock reaction initial rate      |
 
 ## Worked Examples
 

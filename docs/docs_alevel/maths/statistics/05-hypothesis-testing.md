@@ -1,6 +1,8 @@
 ---
 title: Hypothesis Testing
-description: "A-Level Mathematics notes on Hypothesis Testing: Board Coverage; 1. Hypotheses; 1.1 Null and alternative hypotheses; 1.2 One-tailed and two-tailed tests."
+description:
+  'A-Level Mathematics notes on Hypothesis Testing: Board Coverage; 1. Hypotheses; 1.1 Null and
+  alternative hypotheses; 1.2 One-tailed and two-tailed tests.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Maths
@@ -9,19 +11,18 @@ categories:
   - Maths
 slug: hypothesis-testing
 ---
+
 ## Board Coverage
 
-| Board | Paper | Notes |
+| Board      | Paper      | Notes                                    |
 | ---------- | ---------- | ---------------------------------------- |
-| AQA | Paper 1, 2 | Binomial tests in P1; normal tests in P2 |
-| Edexcel | P1, P2 | Similar |
-| OCR (A) | Paper 1, 2 | Includes critical regions |
-| CIE (9709) | P1, P6 | Basic hypothesis testing in P6 |
+| AQA        | Paper 1, 2 | Binomial tests in P1; normal tests in P2 |
+| Edexcel    | P1, P2     | Similar                                  |
+| OCR (A)    | Paper 1, 2 | Includes critical regions                |
+| CIE (9709) | P1, P6     | Basic hypothesis testing in P6           |
 
-:::info
-Hypothesis testing requires clear, structured answers. Always state your hypotheses, test
-Statistic, critical value/region, comparison, and conclusion in context.
-:::
+:::info Hypothesis testing requires clear, structured answers. Always state your hypotheses, test
+Statistic, critical value/region, comparison, and conclusion in context. :::
 
 <hr />
 
@@ -42,11 +43,9 @@ Statistic, critical value/region, comparison, and conclusion in context.
 The choice depends on the research question. Use a one-tailed test only when you have a specific
 Directional prediction **before** seeing the data.
 
-:::warning
-Choosing a one-tailed test after seeing the data (because the results happen to go in one
+:::warning Choosing a one-tailed test after seeing the data (because the results happen to go in one
 Direction) is a form of $p$-hacking and is statistically invalid. The tail direction must be decided
-Before the experiment.
-:::
+Before the experiment. :::
 
 <hr />
 
@@ -179,11 +178,9 @@ Test statistic: $z = \dfrac◆LB◆\hat{p} - p_0◆RB◆◆LB◆\sqrt{p_0(1-p_0)
 
 ## 7. Interpreting Results
 
-:::warning
-"Failing to reject $H_0$" is **not** the same as "proving $H_0$ is true." It means the
+:::warning "Failing to reject $H_0$" is **not** the same as "proving $H_0$ is true." It means the
 Data does not provide sufficient evidence against $H_0$. The test may lack power (sample too small,
-Effect too weak).
-:::
+Effect too weak). :::
 
 <hr />
 
@@ -194,7 +191,7 @@ Effect too weak).
 **Use a one-tailed test when:**
 
 - The research question has a specific directional prediction established **before** data
- collection.
+  collection.
 - Only one direction of deviation is practically meaningful.
 - The consequence of missing an effect in the unexpected direction is negligible.
 
@@ -207,18 +204,18 @@ Effect too weak).
 **Example.** Testing whether a new teaching method changes exam scores:
 
 - One-tailed ($H_1: \mu \gt{} \mu_0$): justified only if prior research strongly suggests the method
- improves scores, and you would not act on a decrease.
+  improves scores, and you would not act on a decrease.
 - Two-tailed ($H_1: \mu \neq \mu_0$): appropriate if the method is new and could either help or
- harm, and either outcome matters.
+  harm, and either outcome matters.
 
 ### 8.2 Critical region comparison
 
 For a test at significance level $\alpha$The allocation of the significance level differs:
 
 - **One-tailed:** The entire $\alpha$ goes into one tail. The critical value is at the $1 - \alpha$
- quantile (right-tailed) or $\alpha$ quantile (left-tailed).
+  quantile (right-tailed) or $\alpha$ quantile (left-tailed).
 - **Two-tailed:** $\alpha/2$ goes into each tail. The critical values are at the $\alpha/2$ and
- $1 - \alpha/2$ quantiles.
+  $1 - \alpha/2$ quantiles.
 
 This means the two-tailed test has a **higher bar** for each individual tail.
 
@@ -230,12 +227,9 @@ This means the two-tailed test has a **higher bar** for each individual tail.
 An observed $z = 1.80$ is significant for the one-tailed test ($1.80 \gt{} 1.645$) but not for the
 Two-tailed test ($|1.80| \lt{} 1.960$).
 
-:::info
-A two-tailed test at level $\alpha$ requires a more extreme test statistic than a one-tailed
-Test at the same $\alpha$Because the significance "budget" is split between two tails. A
-Two-tailed test at $\alpha = 0.05$ corresponds roughly to two one-tailed tests each at
-$\alpha = 0.025$.
-:::
+:::info A two-tailed test at level $\alpha$ requires a more extreme test statistic than a one-tailed
+Test at the same $\alpha$Because the significance "budget" is split between two tails. A Two-tailed
+test at $\alpha = 0.05$ corresponds roughly to two one-tailed tests each at $\alpha = 0.025$. :::
 
 ### 8.3 Effect on power
 
@@ -262,10 +256,7 @@ Equivalently, for the sample proportion $\hat{p} = X/n$:
 
 $$\hat{p} \approx N\!\left(p, \dfrac{p(1-p)}{n}\right)$$
 
-:::warning
-Warning
-$H_0$), not the observed sample proportion $\hat{p}$.
-:::
+:::warning Warning $H_0$), not the observed sample proportion $\hat{p}$. :::
 
 ### 9.2 Continuity correction
 
@@ -309,8 +300,7 @@ With a specified level of confidence.
 $(L, U)$ constructed from sample data such that, in repeated sampling, $100(1 - \alpha)\%$ of such
 Intervals would contain the true value of $\theta$.
 
-:::warning
-A 95% confidence interval does **not** mean there is a 95% probability that $\theta$ lies
+:::warning A 95% confidence interval does **not** mean there is a 95% probability that $\theta$ lies
 In the interval. The parameter $\theta$ is fixed; it either is or is not in the interval. The 95%
 Refers to the long-run proportion of intervals (across many repeated samples) that capture $\theta$.
 :::
@@ -333,7 +323,7 @@ The **margin of error** is $1.96\sqrt◆LB◆\hat{p}(1-\hat{p})/n◆RB◆$Which 
 There is a direct and important link between confidence intervals and two-tailed hypothesis tests:
 
 - A $100(1-\alpha)\%$ confidence interval contains exactly those values of $p_0$ that would **not be
- rejected** by a two-tailed test of $H_0: p = p_0$ at level $\alpha$.
+  rejected** by a two-tailed test of $H_0: p = p_0$ at level $\alpha$.
 - If $p_0$ falls **outside** the confidence interval, then $H_0$ is rejected at level $\alpha$.
 - If $p_0$ falls **inside** the confidence interval, then $H_0$ is not rejected at level $\alpha$.
 
@@ -343,8 +333,8 @@ $$95\%\mathrm{ CI} = 0.483 \pm 1.96\sqrt◆LB◆\dfrac{0.483 \times 0.517}{120}�
 
 $$95\%\mathrm{ CI} = 0.483 \pm 0.0894 = (0.394, 0.573)$$
 
-Since $p_0 = 0.4$ lies inside $(0.394, 0.573)$We do not reject $H_0: p = 0.4$ at the 5% level.
-This is consistent with the hypothesis test result in Section 9.3.
+Since $p_0 = 0.4$ lies inside $(0.394, 0.573)$We do not reject $H_0: p = 0.4$ at the 5% level. This
+is consistent with the hypothesis test result in Section 9.3.
 
 <hr />
 
@@ -364,19 +354,19 @@ Direction, so the $p$-value is doubled.
 
 - If $p\mathrm{-value} \lt{} \alpha$: reject $H_0$. The result is **statistically significant**.
 - If $p\mathrm{-value} \geq \alpha$: do not reject $H_0$. The result is **not statistically
- significant**.
+  significant**.
 
 ### 11.3 Strength of evidence
 
 The smaller the $p$-value, the stronger the evidence against $H_0$:
 
-| $p$-value range | Strength of evidence against $H_0$ |
+| $p$-value range           | Strength of evidence against $H_0$ |
 | ------------------------- | ---------------------------------- |
-| $p \geq 0.10$ | Little to no evidence |
-| $0.05 \leq p \lt{} 0.10$ | Weak evidence |
-| $0.01 \leq p \lt{} 0.05$ | Moderate evidence |
-| $0.001 \leq p \lt{} 0.01$ | Strong evidence |
-| $p \lt{} 0.001$ | Very strong evidence |
+| $p \geq 0.10$             | Little to no evidence              |
+| $0.05 \leq p \lt{} 0.10$  | Weak evidence                      |
+| $0.01 \leq p \lt{} 0.05$  | Moderate evidence                  |
+| $0.001 \leq p \lt{} 0.01$ | Strong evidence                    |
+| $p \lt{} 0.001$           | Very strong evidence               |
 
 ### 11.4 Common misinterpretations
 
@@ -385,11 +375,10 @@ The smaller the $p$-value, the stronger the evidence against $H_0$:
 - The $p$-value is **not** the probability that $H_0$ is true.
 - The $p$-value is **not** the probability that the observed result occurred by chance.
 - A large $p$-value does **not** prove $H_0$ is true; it only means the data is consistent with
- $H_0$.
+  $H_0$.
 - Statistical significance does **not** imply practical or scientific importance.
-- The $p$-value depends on sample size: with a very large sample, even small effects can
- produce tiny $p$-values.
-:::
+- The $p$-value depends on sample size: with a very large sample, even small effects can produce
+  tiny $p$-values. :::
 
 ### 11.5 Worked example
 
@@ -528,9 +517,9 @@ Under $H_0$: $X \sim B(20, 0.5)$.
 
 For each tail, we need $P(X \leq c_L) \leq 0.05$ and $P(X \geq c_U) \leq 0.05$.
 
-Lower: $P(X \leq 5) \approx 0.0207 \leq 0.05$$P(X \leq 6) \approx 0.0577 \gt{} 0.05$. So
-$c_L = 5$. Upper: $P(X \geq 15) \approx 0.0207 \leq 0.05$$P(X \geq 14) \approx 0.0577 \gt{} 0.05$.
-So $c_U = 15$.
+Lower: $P(X \leq 5) \approx 0.0207 \leq 0.05$$P(X \leq 6) \approx 0.0577 \gt{} 0.05$. So $c_L = 5$.
+Upper: $P(X \geq 15) \approx 0.0207 \leq 0.05$$P(X \geq 14) \approx 0.0577 \gt{} 0.05$. So
+$c_U = 15$.
 
 Critical region: $X \leq 5$ or $X \geq 15$. Actual significance level: $2 \times 0.0207 = 0.0414$.
 
@@ -706,8 +695,8 @@ A 95% confidence interval contains exactly those values of $\mu_0$ that would **
 By a two-tailed test at the 5% level.
 
 (a) $\mu_0 = 50$: $50 \in (48.2, 53.8)$So **do not reject** $H_0$. (b) $\mu_0 = 47$:
-$47 \notin (48.2, 53.8)$So **reject** $H_0$. (c) $\mu_0 = 54$: $54 \notin (48.2, 53.8)$So
-**reject** $H_0$.
+$47 \notin (48.2, 53.8)$So **reject** $H_0$. (c) $\mu_0 = 54$: $54 \notin (48.2, 53.8)$So **reject**
+$H_0$.
 
 **If you get this wrong, revise:** [Confidence Intervals](#10-confidence-intervals) — Section 10.
 
@@ -726,9 +715,9 @@ $$z = \dfrac◆LB◆62.4 - 60◆RB◆◆LB◆\sqrt{1.829}◆RB◆ = \dfrac{2.4}{
 
 $$p\mathrm{-value} = P(Z \gt{} 1.775) = 1 - 0.9620 = 0.0380$$
 
-(b) Since $0.038 \lt{} 0.05$**reject** $H_0$ at the 5% level. There is sufficient evidence that
-The true mean score exceeds 60. The $p$-value of 0.038 means that if the true mean were 60, there
-Would be a 3.8% chance of observing a sample mean of 62.4 or higher. This provides moderate evidence
+(b) Since $0.038 \lt{} 0.05$**reject** $H_0$ at the 5% level. There is sufficient evidence that The
+true mean score exceeds 60. The $p$-value of 0.038 means that if the true mean were 60, there Would
+be a 3.8% chance of observing a sample mean of 62.4 or higher. This provides moderate evidence
 Against $H_0$.
 
 **If you get this wrong, revise:** [Interpreting p-Values](#11-interpreting-p-values) — Section 11.
@@ -773,17 +762,17 @@ Section 3.
 
 :::
 
-
 ---
 
-:::tip
-Diagnostic Test
-Ready to test your understanding of **Hypothesis Testing**? The [diagnostic test](/docs/alevel/maths/diagnostics/diag-hypothesis-testing) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
+:::tip Diagnostic Test Ready to test your understanding of **Hypothesis Testing**? The
+[diagnostic test](/docs/alevel/maths/diagnostics/diag-hypothesis-testing) contains the hardest
+questions within the A-Level specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Hypothesis Testing with other topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Hypothesis
+Testing with other topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and
+building a personal test matrix. :::
 
 ## Common Pitfalls
 

@@ -1,6 +1,8 @@
 ---
 title: Bisect
-description: "Bisect — Binary Search for Bugs; Why Manual Debugging Fails; Basic Usage; Mark the current commit as bad (bug is present)."
+description:
+  'Bisect — Binary Search for Bugs; Why Manual Debugging Fails; Basic Usage; Mark the current commit
+  as bad (bug is present).'
 date: 2025-06-03T10:00:00.000Z
 tags:
   - git
@@ -11,20 +13,25 @@ categories:
   - CS
 slug: bisect
 ---
+
 ## Binary Search for Bugs
 
-`git bisect` uses **binary search** to find the specific commit that introduced a bug. Given a known-good commit and a known-bad commit, it checks out commits between them, narrowing the range by half each iteration until it identifies the exact culprit.
+`git bisect` uses **binary search** to find the specific commit that introduced a bug. Given a
+known-good commit and a known-bad commit, it checks out commits between them, narrowing the range by
+half each iteration until it identifies the exact culprit.
 
 ### Why Manual Debugging Fails
 
-When a bug is discovered in production, you may need to search through hundreds or thousands of commits to find when it was introduced. Linear search (checking each commit one by one) has $O(n)$ time complexity. Binary search reduces this to $O(\log_2 n)$:
+When a bug is discovered in production, you may need to search through hundreds or thousands of
+commits to find when it was introduced. Linear search (checking each commit one by one) has $O(n)$
+time complexity. Binary search reduces this to $O(\log_2 n)$:
 
 | Commits to search | Linear steps | Binary steps |
 | ----------------- | ------------ | ------------ |
-| 100 | 100 | 7 |
-| 1,000 | 1,000 | 10 |
-| 10,000 | 10,000 | 14 |
-| 100,000 | 100,000 | 17 |
+| 100               | 100          | 7            |
+| 1,000             | 1,000        | 10           |
+| 10,000            | 10,000       | 14           |
+| 100,000           | 100,000      | 17           |
 
 ## Basic Usage
 
@@ -79,7 +86,8 @@ $ git bisect start HEAD v2.5.0
 
 ## Automated Bisect
 
-For bugs that can be detected by a script (exit code 0 = good, non-zero = bad), you can automate the entire process:
+For bugs that can be detected by a script (exit code 0 = good, non-zero = bad), you can automate the
+entire process:
 
 ```bash
 # Define a test script
@@ -107,13 +115,16 @@ The `run` command will:
 
 :::tip
 
-Write your bisect script to be **idempotent** — it should produce the same result regardless of the system state. Clean build artifacts, use a fresh database, etc. Otherwise, you may get false positives from stale state.
+Write your bisect script to be **idempotent** — it should produce the same result regardless of the
+system state. Clean build artifacts, use a fresh database, etc. Otherwise, you may get false
+positives from stale state.
 
 :::
 
 ## Bisect with Skipped Commits
 
-Some commits may not build (e.g., due to a missing dependency or a known compilation error). You can skip them:
+Some commits may not build (e.g., due to a missing dependency or a known compilation error). You can
+skip them:
 
 ```bash
 $ git bisect skip
@@ -146,7 +157,8 @@ $ git bisect reset main
 ### 1. Use Good/Bad Markers Strategically
 
 - **Bad**: The commit where the bug is confirmed present ( `HEAD` or a specific release tag).
-- **Good**: The most recent commit where the bug is confirmed absent. The closer this is to the bad commit, the fewer iterations needed.
+- **Good**: The most recent commit where the bug is confirmed absent. The closer this is to the bad
+  commit, the fewer iterations needed.
 
 ### 2. Write Reproducible Test Scripts
 

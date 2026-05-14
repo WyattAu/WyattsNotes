@@ -1,6 +1,8 @@
 ---
 title: Functions (Advanced)
-description: "DSE Mathematics advanced functions notes covering composite functions, inverse functions, exponential functions, logarithmic functions, and function"
+description:
+  'DSE Mathematics advanced functions notes covering composite functions, inverse functions,
+  exponential functions, logarithmic functions, and function'
 date: 2026-04-18T00:00:00.000Z
 tags:
   - DSE
@@ -19,14 +21,14 @@ Transformations.
 
 ### Natural Domain
 
-The **natural domain** of a function is the largest subset of $\mathbb{'\{'}R{'\}'}$ for which the function
-Expression is defined. Restrictions arise from:
+The **natural domain** of a function is the largest subset of $\mathbb{'\{'}R{'\}'}$ for which the
+function Expression is defined. Restrictions arise from:
 
-| Restriction | Condition | Example |
-| ---------------- | ---------------------- | ------------------------------------------------------------------------- |
-| Division by zero | Denominator $\neq 0$ | $f(x) = \dfrac{1}{x - 2}$: $\mathrm{dom}(f) = \mathbb{'\{'}R{'\}'} \setminus \{2\}$ |
-| Even root | Radicand $\geqslant 0$ | $f(x) = \sqrt{x - 3}$: $\mathrm{dom}(f) = [3, \infty)$ |
-| Logarithm | Argument $\gt 0$ | $f(x) = \ln(x + 1)$: $\mathrm{dom}(f) = (-1, \infty)$ |
+| Restriction      | Condition              | Example                                                                             |
+| ---------------- | ---------------------- | ----------------------------------------------------------------------------------- |
+| Division by zero | Denominator $\neq 0$   | $f(x) = \dfrac{1}{x - 2}$: $\mathrm{dom}(f) = \mathbb{'\{'}R{'\}'} \setminus \{2\}$ |
+| Even root        | Radicand $\geqslant 0$ | $f(x) = \sqrt{x - 3}$: $\mathrm{dom}(f) = [3, \infty)$                              |
+| Logarithm        | Argument $\gt 0$       | $f(x) = \ln(x + 1)$: $\mathrm{dom}(f) = (-1, \infty)$                               |
 
 ### Finding the Range
 
@@ -121,12 +123,12 @@ Therefore $f^{-1}(x) = \dfrac{x + 3}{2 - x}$With domain $\mathbb{'\{'}R{'\}'} \s
 
 Given $y = f(x)$:
 
-| Transformation | Effect on Graph |
+| Transformation | Effect on Graph                                               |
 | -------------- | ------------------------------------------------------------- | --- | ----------------------------------- |
-| $y = f(x) + c$ | Vertical shift up by $c$ ($c \gt 0$) or down ($c \lt 0$) | | |
-| $y = f(x - h)$ | Horizontal shift right by $h$ ($h \gt 0$) or left ($h \lt 0$) | | |
-| $y = af(x)$ | Vertical stretch by factor $                                  | a   | $; reflect in $x$-axis if $a \lt 0$ |
-| $y = f(kx)$ | Horizontal stretch by factor $1/                              | k   | $; reflect in $y$-axis if $k \lt 0$ |
+| $y = f(x) + c$ | Vertical shift up by $c$ ($c \gt 0$) or down ($c \lt 0$)      |     |                                     |
+| $y = f(x - h)$ | Horizontal shift right by $h$ ($h \gt 0$) or left ($h \lt 0$) |     |                                     |
+| $y = af(x)$    | Vertical stretch by factor $                                  | a   | $; reflect in $x$-axis if $a \lt 0$ |
+| $y = f(kx)$    | Horizontal stretch by factor $1/                              | k   | $; reflect in $y$-axis if $k \lt 0$ |
 
 ### Combined Transformation: $y = af(x + b) + c$
 
@@ -175,8 +177,8 @@ $f(-2) = (-2)^2 = 4$$f(0) = 2(0) + 1 = 1$$f(3) = 2(3) + 1 = 7$$f(5) = 10 - 5 = 5
 
 ## Common Pitfalls
 
-- When finding the domain of $f \circ g$Applying the domain restrictions of $f$ to $x$ instead of
- to $g(x)$. The argument of $f$ must be valid, so it is $g(x)$ that must fall in $\mathrm{dom}(f)$.
+- When finding the domain of $f \circ g$Applying the domain restrictions of $f$ to $x$ instead of to
+  $g(x)$. The argument of $f$ must be valid, so it is $g(x)$ that must fall in $\mathrm{dom}(f)$.
 - Forgetting that $f \circ g \neq g \circ f$ . Always check the order.
 - When finding an inverse, forgetting to verify that the function is one-to-one on the given domain.
 - Confusing $y = f(-x)$ (reflection in $y$-axis) with $y = -f(x)$ (reflection in $x$-axis).
@@ -186,14 +188,14 @@ $f(-2) = (-2)^2 = 4$$f(0) = 2(0) + 1 = 1$$f(3) = 2(3) + 1 = 7$$f(5) = 10 - 5 = 5
 
 ## Summary Table
 
-| Topic | Key Result |
+| Topic                 | Key Result                                             |
 | --------------------- | ------------------------------------------------------ |
 | Domain of $f \circ g$ | $\{x \in \mathrm{dom}(g) : g(x) \in \mathrm{dom}(f)\}$ |
-| Inverse existence | $f$ must be bijective |
-| $f^{-1}(f(x)) = x$ | For all $x \in \mathrm{dom}(f)$ |
-| $f(f^{-1}(x)) = x$ | For all $x \in \mathrm{dom}(f^{-1})$ |
-| Graph of inverse | Reflection in $y = x$ |
-| $y = f(x - h)$ | Shift right by $h$ |
+| Inverse existence     | $f$ must be bijective                                  |
+| $f^{-1}(f(x)) = x$    | For all $x \in \mathrm{dom}(f)$                        |
+| $f(f^{-1}(x)) = x$    | For all $x \in \mathrm{dom}(f^{-1})$                   |
+| Graph of inverse      | Reflection in $y = x$                                  |
+| $y = f(x - h)$        | Shift right by $h$                                     |
 
 ---
 
@@ -201,12 +203,12 @@ $f(-2) = (-2)^2 = 4$$f(0) = 2(0) + 1 = 1$$f(3) = 2(3) + 1 = 7$$f(5) = 10 - 5 = 5
 <summary>Wrap-up Questions</summary>
 
 1. **Question:** Let $f(x) = \dfrac{x + 2}{x - 1}$ and $g(x) = 2x - 3$. Find $(f \circ g)(x)$ and
- its domain.
+   its domain.
 
 $(f \circ g)(x) = f(2x - 3) = \dfrac{2x - 3 + 2}{2x - 3 - 1} = \dfrac{2x - 1}{2x - 4}$.
 
-$\mathrm{dom}(g) = \mathbb{'\{'}R{'\}'}$. $\mathrm{dom}(f) = \mathbb{'\{'}R{'\}'} \setminus \{1\}$So $g(x) \neq 1$:
-$2x - 3 \neq 1 \implies x \neq 2$. Also $2x - 4 \neq 0 \implies x \neq 2$.
+$\mathrm{dom}(g) = \mathbb{'\{'}R{'\}'}$. $\mathrm{dom}(f) = \mathbb{'\{'}R{'\}'} \setminus \{1\}$So
+$g(x) \neq 1$: $2x - 3 \neq 1 \implies x \neq 2$. Also $2x - 4 \neq 0 \implies x \neq 2$.
 $\mathrm{dom}(f \circ g) = \mathbb{'\{'}R{'\}'} \setminus \{2\}$.
 
 2. **Question:** Find $f^{-1}$ for $f(x) = \dfrac{3x + 1}{x - 2}$ ($x \neq 2$).
@@ -218,8 +220,7 @@ $f^{-1}(x) = \dfrac{2x + 1}{x - 3}$$\mathrm{dom}(f^{-1}) = \mathbb{'\{'}R{'\}'} 
 
 3. **Question:** Let $f(x) = x^2 - 4x + 3$ with domain $[1, \infty)$. Find $f^{-1}(0)$.
 
-First find $f^{-1}$. Set $y = (x - 2)^2 - 1$. Since domain is $[1, \infty)$Range is
-$[-1, \infty)$.
+First find $f^{-1}$. Set $y = (x - 2)^2 - 1$. Since domain is $[1, \infty)$Range is $[-1, \infty)$.
 
 $(x - 2)^2 = y + 1 \implies x - 2 = \sqrt{y + 1}$ (positive root since $x \geqslant 1$).
 
@@ -230,14 +231,14 @@ $f^{-1}(0) = 2 + \sqrt{0 + 1} = 2 + 1 = 3$.
 Verification: $f(3) = 9 - 12 + 3 = 0$. Confirmed.
 
 4. **Question:** The graph of $y = f(x)$ has a minimum at $(1, -2)$ and passes through $(0, 3)$.
- Find the corresponding points on $y = 3f(2x) + 1$.
+   Find the corresponding points on $y = 3f(2x) + 1$.
 
 $(1, -2) \to$ set $2x = 1 \implies x = 0.5$$y = 3(-2) + 1 = -5$. Point: $(0.5, -5)$.
 
 $(0, 3) \to$ set $2x = 0 \implies x = 0$$y = 3(3) + 1 = 10$. Point: $(0, 10)$.
 
 5. **Question:** A function $f$ is defined by $f(x) = 2 - x^2$ for $x \leqslant 0$. State the range
- of $f$ and find $f^{-1}$.
+   of $f$ and find $f^{-1}$.
 
 Since $x \leqslant 0$: $x^2 \geqslant 0$So $f(x) = 2 - x^2 \leqslant 2$. As $x \to -\infty$
 $f(x) \to -\infty$. Range: $(-\infty, 2]$.
@@ -247,8 +248,7 @@ $x \leqslant 0$).
 
 $f^{-1}(x) = -\sqrt{2 - x}$$\mathrm{dom}(f^{-1}) = (-\infty, 2]$.
 
-6. **Question:** Given $f(x) = \sqrt{x - 1}$ and $g(x) = x^2 + x + 1$Find
- $\mathrm{dom}(g \circ f)$.
+6. **Question:** Given $f(x) = \sqrt{x - 1}$ and $g(x) = x^2 + x + 1$Find $\mathrm{dom}(g \circ f)$.
 
 $\mathrm{dom}(f) = [1, \infty)$$\mathrm{dom}(g) = \mathbb{'\{'}R{'\}'}$.
 
@@ -258,13 +258,13 @@ Since $g$ has no domain restriction, $\mathrm{dom}(g \circ f) = \mathrm{dom}(f) 
 
 7. **Question:** Find the domain and range of $f(x) = \dfrac{1}{x^2 + 1}$.
 
-Domain: $x^2 + 1 \neq 0$ for all real $x$ (since $x^2 \geqslant 0$). $\mathrm{dom}(f) = \mathbb{'\{'}R{'\}'}$.
+Domain: $x^2 + 1 \neq 0$ for all real $x$ (since $x^2 \geqslant 0$).
+$\mathrm{dom}(f) = \mathbb{'\{'}R{'\}'}$.
 
-Range: $x^2 + 1 \geqslant 1$So $0 \lt \dfrac{1}{x^2 + 1} \leqslant 1$.
-$\mathrm{range}(f) = (0, 1]$.
+Range: $x^2 + 1 \geqslant 1$So $0 \lt \dfrac{1}{x^2 + 1} \leqslant 1$. $\mathrm{range}(f) = (0, 1]$.
 
 8. **Question:** Let $f(x) = |x - 3| + |x + 1|$. Express $f$ as a piecewise function and find its
- minimum value.
+   minimum value.
 
 Critical points at $x = 3$ and $x = -1$:
 
@@ -287,7 +287,8 @@ Minimum value: $4$Attained for all $x \in [-1, 3]$.
 
 **Worked Example 8: Domain of a composite with square root and rational function**
 
-Let $f(x) = \dfrac{x + 1}{x - 2}$ and $g(x) = \sqrt{x - 3}$. Find $\mathrm{dom}(f \circ g)$ and $\mathrm{dom}(g \circ f)$.
+Let $f(x) = \dfrac{x + 1}{x - 2}$ and $g(x) = \sqrt{x - 3}$. Find $\mathrm{dom}(f \circ g)$ and
+$\mathrm{dom}(g \circ f)$.
 
 <details>
 <summary>Solution</summary>
@@ -306,11 +307,11 @@ $$\frac{x+1}{x-2} \geq 3 \implies \frac{x+1-3(x-2)}{x-2} \geq 0 \implies \frac{-
 
 Critical points: $x = \dfrac{7}{2}$ and $x = 2$.
 
-| Interval | Sign of $\dfrac{-2x+7}{x-2}$ |
-|---|---|
-| $x \lt 2$ | negative / negative $=$ positive |
+| Interval                   | Sign of $\dfrac{-2x+7}{x-2}$     |
+| -------------------------- | -------------------------------- |
+| $x \lt 2$                  | negative / negative $=$ positive |
 | $2 \lt x \lt \dfrac{7}{2}$ | positive / positive $=$ positive |
-| $x \gt \dfrac{7}{2}$ | negative / positive $=$ negative |
+| $x \gt \dfrac{7}{2}$       | negative / positive $=$ negative |
 
 At $x = \dfrac{7}{2}$: expression equals $0$Which satisfies $\geq 0$.
 
@@ -327,7 +328,8 @@ Let $f(x) = 2x^2 - 8x + 5$ with domain $[2, \infty)$. Find $f^{-1}$ and state it
 
 Complete the square: $f(x) = 2(x^2 - 4x) + 5 = 2\!\left[(x-2)^2 - 4\right] + 5 = 2(x-2)^2 - 3$.
 
-Since the domain is $[2, \infty)$ and the vertex is at $x = 2$The function is strictly increasing and hence one-to-one.
+Since the domain is $[2, \infty)$ and the vertex is at $x = 2$The function is strictly increasing
+and hence one-to-one.
 
 Range: $[-3, \infty)$.
 
@@ -349,7 +351,8 @@ Verification: $f^{-1}(f(3)) = f^{-1}(-1) = 2 + \sqrt{1} = 3$. Correct.
 
 **Worked Example 10: Transformation of multiple points**
 
-The graph of $y = f(x)$ passes through $(1, 4)$ and has a local minimum at $(2, -1)$. Find the corresponding points on $y = 2f(3x - 6) + 5$.
+The graph of $y = f(x)$ passes through $(1, 4)$ and has a local minimum at $(2, -1)$. Find the
+corresponding points on $y = 2f(3x - 6) + 5$.
 
 <details>
 <summary>Solution</summary>
@@ -362,7 +365,8 @@ $$y = 2(4) + 5 = 13$$
 
 Corresponding point: $\left(\dfrac{7}{3},\; 13\right)$.
 
-**For the minimum at $(2, -1)$:** Set $3(x-2) = 2$So $x - 2 = \dfrac{2}{3}$Giving $x = \dfrac{8}{3}$.
+**For the minimum at $(2, -1)$:** Set $3(x-2) = 2$So $x - 2 = \dfrac{2}{3}$Giving
+$x = \dfrac{8}{3}$.
 
 $$y = 2(-1) + 5 = 3$$
 
@@ -372,7 +376,8 @@ Corresponding point: $\left(\dfrac{8}{3},\; 3\right)$. This is the minimum of th
 
 **Worked Example 11: Composite with logarithm**
 
-Let $f(x) = \ln(x - 1)$ and $g(x) = x^2 + 1$. Find $(f \circ g)(x)$$(g \circ f)(x)$And their domains.
+Let $f(x) = \ln(x - 1)$ and $g(x) = x^2 + 1$. Find $(f \circ g)(x)$$(g \circ f)(x)$And their
+domains.
 
 <details>
 <summary>Solution</summary>
@@ -416,27 +421,42 @@ Since $f^{-1} = f$The function is self-inverse.
 
 ## Additional Common Pitfalls
 
-1. **Applying domain restrictions to $x$ instead of $g(x)$.** When finding $\mathrm{dom}(f \circ g)$The condition $g(x) \in \mathrm{dom}(f)$ must be applied to the expression $g(x)$Not to $x$ directly. Always substitute first, then impose domain conditions.
+1. **Applying domain restrictions to $x$ instead of $g(x)$.** When finding
+   $\mathrm{dom}(f \circ g)$The condition $g(x) \in \mathrm{dom}(f)$ must be applied to the
+   expression $g(x)$Not to $x$ directly. Always substitute first, then impose domain conditions.
 
-2. **Assuming injectivity on the natural domain.** A quadratic $ax^2 + bx + c$ is only one-to-one on a half-domain $(-\infty,\; -b/(2a)]$ or $[-b/(2a),\; \infty)$. Before finding an inverse, verify or restrict the domain.
+2. **Assuming injectivity on the natural domain.** A quadratic $ax^2 + bx + c$ is only one-to-one on
+   a half-domain $(-\infty,\; -b/(2a)]$ or $[-b/(2a),\; \infty)$. Before finding an inverse, verify
+   or restrict the domain.
 
-3. **Choosing the wrong branch of the inverse.** When $f(x) = x^2$ is restricted to $(-\infty, 0]$The inverse is $f^{-1}(x) = -\sqrt{x}$Not $+\sqrt{x}$. Always match the sign to the restricted domain.
+3. **Choosing the wrong branch of the inverse.** When $f(x) = x^2$ is restricted to
+   $(-\infty, 0]$The inverse is $f^{-1}(x) = -\sqrt{x}$Not $+\sqrt{x}$. Always match the sign to the
+   restricted domain.
 
-4. **Composition order confusion.** $(f \circ g)(x) = f(g(x))$ means $g$ is applied first, then $f$. The notation reads right-to-left: $(f \circ g)(x)$ is "$f$ of $g$ of $x$".
+4. **Composition order confusion.** $(f \circ g)(x) = f(g(x))$ means $g$ is applied first, then $f$.
+   The notation reads right-to-left: $(f \circ g)(x)$ is "$f$ of $g$ of $x$".
 
-5. **Transformation order errors.** For $y = af(kx + b) + c$Apply from inside out: horizontal shift by $-b$Horizontal stretch by $1/k$Vertical stretch by $a$Vertical shift by $c$. Mixing up this order is a very common mistake.
+5. **Transformation order errors.** For $y = af(kx + b) + c$Apply from inside out: horizontal shift
+   by $-b$Horizontal stretch by $1/k$Vertical stretch by $a$Vertical shift by $c$. Mixing up this
+   order is a very common mistake.
 
-6. **Ignoring the range when checking invertibility.** Even if $f$ is one-to-one on its domain, the codomain must equal the range for $f$ to be bijective. In DSE problems, the codomain is assumed to be the range unless stated otherwise.
+6. **Ignoring the range when checking invertibility.** Even if $f$ is one-to-one on its domain, the
+   codomain must equal the range for $f$ to be bijective. In DSE problems, the codomain is assumed
+   to be the range unless stated otherwise.
 
-7. **Forgetting that $f \circ g$ and $g \circ f$ differ.** , $f \circ g \neq g \circ f$. Always compute each separately and check domains independently.
+7. **Forgetting that $f \circ g$ and $g \circ f$ differ.** , $f \circ g \neq g \circ f$. Always
+   compute each separately and check domains independently.
 
-8. **Piecewise function boundary values.** At the boundary between two pieces, always check which expression applies. If the definition uses $\leq$ for one piece and $\lt$ for the next, the boundary point belongs to the $\leq$ piece.
+8. **Piecewise function boundary values.** At the boundary between two pieces, always check which
+   expression applies. If the definition uses $\leq$ for one piece and $\lt$ for the next, the
+   boundary point belongs to the $\leq$ piece.
 
 ---
 
 ## Exam-Style Problems
 
-**Problem 1.** Let $f(x) = \dfrac{2x + 3}{x - 1}$ ($x \neq 1$) and $g(x) = \sqrt{x + 2}$. Find $(f \circ g)(x)$ and its domain.
+**Problem 1.** Let $f(x) = \dfrac{2x + 3}{x - 1}$ ($x \neq 1$) and $g(x) = \sqrt{x + 2}$. Find
+$(f \circ g)(x)$ and its domain.
 
 <details>
 <summary>Solution</summary>
@@ -451,7 +471,8 @@ $\mathrm{dom}(f \circ g) = [-2, -1) \cup (-1, \infty)$.
 
 </details>
 
-**Problem 2.** Find the inverse of $f(x) = \dfrac{2x - 1}{x + 3}$ ($x \neq -3$). Hence determine whether $f(x) = f^{-1}(x)$ has any real solutions.
+**Problem 2.** Find the inverse of $f(x) = \dfrac{2x - 1}{x + 3}$ ($x \neq -3$). Hence determine
+whether $f(x) = f^{-1}(x)$ has any real solutions.
 
 <details>
 <summary>Solution</summary>
@@ -493,7 +514,8 @@ $f^{-1}(5) = 1$. Verification: $f(1) = 1 + 4 = 5$. Correct.
 
 </details>
 
-**Problem 4.** Describe fully the sequence of transformations mapping $y = x^2$ to $y = 2(3-x)^2 + 1$.
+**Problem 4.** Describe fully the sequence of transformations mapping $y = x^2$ to
+$y = 2(3-x)^2 + 1$.
 
 <details>
 <summary>Solution</summary>
@@ -508,7 +530,8 @@ The vertex moves from $(0, 0)$ to $(3, 1)$. The parabola opens upward in both ca
 
 </details>
 
-**Problem 5.** Let $f(x) = \dfrac{1}{x+1}$ ($x \neq -1$) and $g(x) = x^2$. Find $(f \circ g \circ f)(x)$ and its domain.
+**Problem 5.** Let $f(x) = \dfrac{1}{x+1}$ ($x \neq -1$) and $g(x) = x^2$. Find
+$(f \circ g \circ f)(x)$ and its domain.
 
 <details>
 <summary>Solution</summary>
@@ -521,7 +544,8 @@ $$(f \circ g \circ f)(x) = f\!\left(\frac{1}{(x+1)^2}\right) = \frac{1}{\dfrac{1
 
 Domain: need $x + 1 \neq 0 \implies x \neq -1$And $\dfrac{1}{(x+1)^2} + 1 \neq 0$.
 
-Since $\dfrac{1}{(x+1)^2} \geq 0$ for all $x \neq -1$The second expression is always at least $1 > 0$.
+Since $\dfrac{1}{(x+1)^2} \geq 0$ for all $x \neq -1$The second expression is always at least
+$1 > 0$.
 
 $\mathrm{dom}(f \circ g \circ f) = \mathbb{'\{'}R{'\}'} \setminus \{-1\}$.
 
@@ -559,15 +583,18 @@ For real $x$This quadratic in $x$ must have $\Delta \geq 0$:
 
 $$\Delta = 1 - 4y^2 \geq 0 \implies y^2 \leq \frac{1}{4} \implies -\frac{1}{2} \leq y \leq \frac{1}{2}$$
 
-When $y = \dfrac{1}{2}$: $\dfrac{1}{2}x^2 - x + \dfrac{1}{2} = 0 \implies (x-1)^2 = 0 \implies x = 1$. Attainable.
+When $y = \dfrac{1}{2}$:
+$\dfrac{1}{2}x^2 - x + \dfrac{1}{2} = 0 \implies (x-1)^2 = 0 \implies x = 1$. Attainable.
 
-When $y = -\dfrac{1}{2}$: $\dfrac{1}{2}x^2 + x + \dfrac{1}{2} = 0 \implies (x+1)^2 = 0 \implies x = -1$. Attainable.
+When $y = -\dfrac{1}{2}$:
+$\dfrac{1}{2}x^2 + x + \dfrac{1}{2} = 0 \implies (x+1)^2 = 0 \implies x = -1$. Attainable.
 
 Range: $\left[-\dfrac{1}{2},\; \dfrac{1}{2}\right]$.
 
 </details>
 
-**Problem 8.** If $f(x) = 2x - 1$ and $g(x) = x + 3$Find the linear function $h(x)$ such that $(f \circ h)(x) = (g \circ f)(x)$ for all $x$.
+**Problem 8.** If $f(x) = 2x - 1$ and $g(x) = x + 3$Find the linear function $h(x)$ such that
+$(f \circ h)(x) = (g \circ f)(x)$ for all $x$.
 
 <details>
 <summary>Solution</summary>
@@ -587,20 +614,24 @@ Verification: $(f \circ h)(x) = 2\!\left(x + \dfrac{3}{2}\right) - 1 = 2x + 2$. 
 ## Cross-References
 
 - **Basic Functions:** Foundational definitions and notation are in [functions.md](functions)).
-- **Quadratics:** Quadratic functions feature heavily in inverse function problems. See [quadratics.md](quadratics)).
-- **Inequalities:** Domain restrictions often involve solving inequalities. See the inequalities notes.
-- **Coordinate Geometry:** Graphical interpretations of functions and transformations. See [coordinate-geometry.md](coordinate-geometry)).
+- **Quadratics:** Quadratic functions feature heavily in inverse function problems. See
+  [quadratics.md](quadratics)).
+- **Inequalities:** Domain restrictions often involve solving inequalities. See the inequalities
+  notes.
+- **Coordinate Geometry:** Graphical interpretations of functions and transformations. See
+  [coordinate-geometry.md](coordinate-geometry)).
 
 ---
 
-:::tip
-Diagnostic Test
-Ready to test your understanding of **Functions (Advanced)**? The [diagnostic test](/docs/dse/Maths/diagnostics/diag-functions) contains the hardest questions within the DSE specification for this topic, each with a full worked solution.
+:::tip Diagnostic Test Ready to test your understanding of **Functions (Advanced)**? The
+[diagnostic test](/docs/dse/Maths/diagnostics/diag-functions) contains the hardest questions within
+the DSE specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Functions (Advanced) with other DSE mathematics topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Functions
+(Advanced) with other DSE mathematics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/dse/Maths/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/dse/Maths/diagnostics/diagnostic-guide) for instructions on
+self-marking and building a personal test matrix. :::
 
 ---
 
@@ -610,9 +641,11 @@ See [Diagnostic Guide](/docs/dse/Maths/diagnostics/diagnostic-guide) for instruc
 
 For function problems in DSE Paper 1:
 
-1. When finding the domain of a composite function, explicitly state $\mathrm{dom}(g)$ and the condition $g(x) \in \mathrm{dom}(f)$.
+1. When finding the domain of a composite function, explicitly state $\mathrm{dom}(g)$ and the
+   condition $g(x) \in \mathrm{dom}(f)$.
 2. When finding an inverse, write $y = f(x)$Solve for $x$And then interchange.
-3. When checking invertibility, verify that the function is one-to-one (strictly increasing or decreasing on the domain).
+3. When checking invertibility, verify that the function is one-to-one (strictly increasing or
+   decreasing on the domain).
 4. For transformation problems, identify the sequence of transformations from inside out.
 
 ### Significant Figures
@@ -633,14 +666,16 @@ Coordinate answers should be exact where possible. Decimal answers to 3 signific
 
 **Worked Example 13: Domain with nested functions**
 
-Let $f(x) = \dfrac{1}{\sqrt{x - 2}}$ and $g(x) = x^2 + 1$. Find $\mathrm{dom}(f \circ g)$ and $\mathrm{dom}(g \circ f)$.
+Let $f(x) = \dfrac{1}{\sqrt{x - 2}}$ and $g(x) = x^2 + 1$. Find $\mathrm{dom}(f \circ g)$ and
+$\mathrm{dom}(g \circ f)$.
 
 <details>
 <summary>Solution</summary>
 
 $\mathrm{dom}(f) = (2, \infty)$ (need $x - 2 > 0$). $\mathrm{dom}(g) = \mathbb{'\{'}R{'\}'}$.
 
-**$f \circ g$:** Need $g(x) \in \mathrm{dom}(f)$I.e., $x^2 + 1 > 2 \implies x^2 > 1 \implies x < -1$ or $x > 1$.
+**$f \circ g$:** Need $g(x) \in \mathrm{dom}(f)$I.e., $x^2 + 1 > 2 \implies x^2 > 1 \implies x < -1$
+or $x > 1$.
 
 $\mathrm{dom}(f \circ g) = (-\infty, -1) \cup (1, \infty)$.
 
@@ -657,7 +692,9 @@ Let $f(x) = \dfrac{2x}{x - 3}$ for $x > 3$. Find $f^{-1}$.
 <details>
 <summary>Solution</summary>
 
-First, check one-to-one: $f(x) = 2 + \dfrac{6}{x - 3}$. For $x > 3$$x - 3 > 0$So $\dfrac{6}{x-3} > 0$ and is strictly decreasing. Therefore $f$ is strictly decreasing and hence one-to-one on $(3, \infty)$.
+First, check one-to-one: $f(x) = 2 + \dfrac{6}{x - 3}$. For $x > 3$$x - 3 > 0$So
+$\dfrac{6}{x-3} > 0$ and is strictly decreasing. Therefore $f$ is strictly decreasing and hence
+one-to-one on $(3, \infty)$.
 
 Set $y = \dfrac{2x}{x - 3}$:
 
@@ -695,7 +732,8 @@ Find the range of $f(x) = \dfrac{x^2 - x + 1}{x^2 + x + 1}$.
 <details>
 <summary>Solution</summary>
 
-Let $y = \dfrac{x^2 - x + 1}{x^2 + x + 1}$. Since $x^2 + x + 1 = \left(x + \dfrac{1}{2}\right)^2 + \dfrac{3}{4} > 0$ for all $x$:
+Let $y = \dfrac{x^2 - x + 1}{x^2 + x + 1}$. Since
+$x^2 + x + 1 = \left(x + \dfrac{1}{2}\right)^2 + \dfrac{3}{4} > 0$ for all $x$:
 
 $$y(x^2 + x + 1) = x^2 - x + 1 \implies (y - 1)x^2 + (y + 1)x + (y - 1) = 0$$
 
@@ -713,7 +751,8 @@ Range: $\left[\dfrac{1}{3},\; 3\right]$.
 
 ## DSE Exam-Style Questions
 
-**DSE Practice 1.** Let $f(x) = \dfrac{3x - 1}{x + 2}$ and $g(x) = \dfrac{x + 1}{x - 1}$. Find $(g \circ f)(2)$.
+**DSE Practice 1.** Let $f(x) = \dfrac{3x - 1}{x + 2}$ and $g(x) = \dfrac{x + 1}{x - 1}$. Find
+$(g \circ f)(2)$.
 
 <details>
 <summary>Solution</summary>
@@ -724,42 +763,52 @@ $(g \circ f)(2) = g\!\left(\dfrac{5}{4}\right) = \dfrac{5/4 + 1}{5/4 - 1} = \dfr
 
 </details>
 
-**DSE Practice 2.** The function $f$ is defined by $f(x) = 2x^2 - 8x + 5$ for $x \geq 2$. Find the range of $f$ and the value of $x$ for which $f(x) = 1$.
+**DSE Practice 2.** The function $f$ is defined by $f(x) = 2x^2 - 8x + 5$ for $x \geq 2$. Find the
+range of $f$ and the value of $x$ for which $f(x) = 1$.
 
 <details>
 <summary>Solution</summary>
 
 $f(x) = 2(x - 2)^2 - 3$. Since $x \geq 2$ and the vertex is at $x = 2$: range is $[-3, \infty)$.
 
-$2(x - 2)^2 - 3 = 1 \implies (x - 2)^2 = 2 \implies x = 2 + \sqrt{2}$ (positive root since $x \geq 2$).
+$2(x - 2)^2 - 3 = 1 \implies (x - 2)^2 = 2 \implies x = 2 + \sqrt{2}$ (positive root since
+$x \geq 2$).
 
 </details>
 
-**DSE Practice 3.** The graph of $y = f(x)$ passes through $(0, -1)$ and has a local maximum at $(3, 4)$. Find the coordinates of the corresponding points on $y = -f(2x + 1) + 3$.
+**DSE Practice 3.** The graph of $y = f(x)$ passes through $(0, -1)$ and has a local maximum at
+$(3, 4)$. Find the coordinates of the corresponding points on $y = -f(2x + 1) + 3$.
 
 <details>
 <summary>Solution</summary>
 
-For $(0, -1)$: $2x + 1 = 0 \implies x = -\dfrac{1}{2}$. $y = -(-1) + 3 = 4$. Point: $\left(-\dfrac{1}{2},\; 4\right)$.
+For $(0, -1)$: $2x + 1 = 0 \implies x = -\dfrac{1}{2}$. $y = -(-1) + 3 = 4$. Point:
+$\left(-\dfrac{1}{2},\; 4\right)$.
 
-For the maximum at $(3, 4)$: $2x + 1 = 3 \implies x = 1$. $y = -(4) + 3 = -1$. The maximum becomes a minimum at $\left(1,\; -1\right)$.
+For the maximum at $(3, 4)$: $2x + 1 = 3 \implies x = 1$. $y = -(4) + 3 = -1$. The maximum becomes a
+minimum at $\left(1,\; -1\right)$.
 
 </details>
 
-**DSE Practice 4.** Let $f(x) = x^3 - 3x$. Show that $f$ is not one-to-one on $\mathbb{'\{'}R{'\}'}$But is one-to-one on $[1, \infty)$. Find $f^{-1}(0)$.
+**DSE Practice 4.** Let $f(x) = x^3 - 3x$. Show that $f$ is not one-to-one on
+$\mathbb{'\{'}R{'\}'}$But is one-to-one on $[1, \infty)$. Find $f^{-1}(0)$.
 
 <details>
 <summary>Solution</summary>
 
-$f(0) = 0$$f(\sqrt{3}) = 3\sqrt{3} - 3\sqrt{3} = 0$$f(-\sqrt{3}) = 0$. Since $f$ takes the same value at three different points, it is not one-to-one on $\mathbb{'\{'}R{'\}'}$.
+$f(0) = 0$$f(\sqrt{3}) = 3\sqrt{3} - 3\sqrt{3} = 0$$f(-\sqrt{3}) = 0$. Since $f$ takes the same
+value at three different points, it is not one-to-one on $\mathbb{'\{'}R{'\}'}$.
 
-For $x \geq 1$: $f'(x) = 3x^2 - 3 = 3(x^2 - 1) \geq 0$ (with equality only at $x = 1$). So $f$ is strictly increasing on $[1, \infty)$ and hence one-to-one.
+For $x \geq 1$: $f'(x) = 3x^2 - 3 = 3(x^2 - 1) \geq 0$ (with equality only at $x = 1$). So $f$ is
+strictly increasing on $[1, \infty)$ and hence one-to-one.
 
-$f^{-1}(0)$: solve $x^3 - 3x = 0 \implies x(x^2 - 3) = 0$. On $[1, \infty)$: $x = \sqrt{3}$. So $f^{-1}(0) = \sqrt{3}$.
+$f^{-1}(0)$: solve $x^3 - 3x = 0 \implies x(x^2 - 3) = 0$. On $[1, \infty)$: $x = \sqrt{3}$. So
+$f^{-1}(0) = \sqrt{3}$.
 
 </details>
 
-**DSE Practice 5.** Let $h(x) = f(x) + g(x)$ where $f(x) = x^2$ and $g(x) = \dfrac{1}{x - 1}$. Find the domain of $h$.
+**DSE Practice 5.** Let $h(x) = f(x) + g(x)$ where $f(x) = x^2$ and $g(x) = \dfrac{1}{x - 1}$. Find
+the domain of $h$.
 
 <details>
 <summary>Solution</summary>
@@ -770,7 +819,8 @@ $\mathrm{dom}(h) = \mathrm{dom}(f) \cap \mathrm{dom}(g) = \mathbb{'\{'}R{'\}'} \
 
 </details>
 
-**DSE Practice 6.** Given $f(x) = \dfrac{x}{x + 1}$ for $x \neq -1$Find $f^{-1}$ and solve $f(x) = f^{-1}(x)$.
+**DSE Practice 6.** Given $f(x) = \dfrac{x}{x + 1}$ for $x \neq -1$Find $f^{-1}$ and solve
+$f(x) = f^{-1}(x)$.
 
 <details>
 <summary>Solution</summary>
@@ -783,7 +833,8 @@ $f(x) = f^{-1}(x)$: $\dfrac{x}{x + 1} = \dfrac{x}{x - 1}$.
 
 If $x = 0$: both sides equal $0$. So $x = 0$ is a solution.
 
-If $x \neq 0$: $\dfrac{1}{x + 1} = \dfrac{1}{x - 1} \implies x - 1 = x + 1 \implies -1 = 1$Contradiction.
+If $x \neq 0$:
+$\dfrac{1}{x + 1} = \dfrac{1}{x - 1} \implies x - 1 = x + 1 \implies -1 = 1$Contradiction.
 
 Solution: $x = 0$.
 

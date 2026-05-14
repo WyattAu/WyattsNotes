@@ -1,6 +1,8 @@
 ---
 title: Task Scheduling and Executors
-description: "C++: Task Scheduling and Executors — Task Concept; Cooperative Scheduling with Coroutines; Proof: Cooperative Scheduling Avoids Data Races."
+description:
+  'C++: Task Scheduling and Executors — Task Concept; Cooperative Scheduling with Coroutines; Proof:
+  Cooperative Scheduling Avoids Data Races.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -8,22 +10,23 @@ categories:
   - Cpp
 slug: task-scheduling-executors
 ---
+
 # Task Scheduling and Executors
 
 This section covers the task concept, coroutine-based pipeline processing, async/await patterns
-Across languages, structured concurrency with `when_all`/`when_any`A complete Task class wrapping
-A coroutine, and a thread pool executor for scheduling coroutines across threads.
+Across languages, structured concurrency with `when_all`/`when_any`A complete Task class wrapping A
+coroutine, and a thread pool executor for scheduling coroutines across threads.
 
 ## Task Concept
 
 A **task** is a coroutine that produces a result asynchronously. Unlike a generator (which produces
-Many values), a task produces exactly one result upon completion. The task coroutine is 
-Lazy — it does not begin executing until someone calls `resume()` or an executor schedules it.
+Many values), a task produces exactly one result upon completion. The task coroutine is Lazy — it
+does not begin executing until someone calls `resume()` or an executor schedules it.
 
 The minimal interface for a task is:
 
 - **Awaitable**: the task can be `co_await`Ed, suspending the awaiting coroutine until the task
- completes.
+  completes.
 - **Result access**: once the task completes, its result is available.
 - **Exception propagation**: if the task throws, the exception is rethrown at the `co_await` point.
 
@@ -38,18 +41,18 @@ Races on non-atomic variables.
 **Proof:**
 
 1. A data race requires two conflicting accesses from different threads that are not ordered by
- happens-before [N4950 §6.9.4.1].
+   happens-before [N4950 §6.9.4.1].
 2. In a cooperative scheduler, each thread runs at most one coroutine at a time. There is no
- preemption — a coroutine runs until it explicitly suspends.
+   preemption — a coroutine runs until it explicitly suspends.
 3. Within a single coroutine, all accesses are sequenced (the coroutine is a single thread of
- execution).
+   execution).
 4. Two coroutines running on different threads access shared data only through explicit
- synchronization (mutexes, atomics) because the scheduler provides no implicit sharing mechanism.
+   synchronization (mutexes, atomics) because the scheduler provides no implicit sharing mechanism.
 5. If shared data is accessed without synchronization, the accesses are from different threads and
- are not ordered by happens-before — this is a data race. But this is a _programmer error_, not a
- scheduler error.
+   are not ordered by happens-before — this is a data race. But this is a _programmer error_, not a
+   scheduler error.
 6. The scheduler itself does not introduce concurrency between coroutines on the same thread, so it
- does not introduce data races.
+   does not introduce data races.
 
 $\square$
 
@@ -59,16 +62,16 @@ Threads, which cooperative scheduling does not create.
 
 ### Comparison with Thread-Based Concurrency
 
-| Property | Thread-Based | Cooperative Coroutines |
+| Property            | Thread-Based                | Cooperative Coroutines        |
 | :------------------ | :-------------------------- | :---------------------------- |
-| Context switch cost | ~1-10 $\mu$S (kernel) | ~10-100 ns (user-space) |
-| Stack size per task | ~1-8 MB | ~100-1000 bytes (frame) |
-| Data race risk | High (preemptive) | Low (cooperative) |
-| Deadlock risk | Possible | Possible (less likely) |
-| Memory usage | High (stack per thread) | Low (frame per coroutine) |
-| Debugging | Harder (timing-dependent) | Easier (deterministic order) |
-| CPU-bound work | Good (parallel) | Poor (single thread) |
-| I/O-bound work | Good (blocked thread freed) | Excellent (zero-cost suspend) |
+| Context switch cost | ~1-10 $\mu$S (kernel)       | ~10-100 ns (user-space)       |
+| Stack size per task | ~1-8 MB                     | ~100-1000 bytes (frame)       |
+| Data race risk      | High (preemptive)           | Low (cooperative)             |
+| Deadlock risk       | Possible                    | Possible (less likely)        |
+| Memory usage        | High (stack per thread)     | Low (frame per coroutine)     |
+| Debugging           | Harder (timing-dependent)   | Easier (deterministic order)  |
+| CPU-bound work      | Good (parallel)             | Poor (single thread)          |
+| I/O-bound work      | Good (blocked thread freed) | Excellent (zero-cost suspend) |
 
 ## Coroutine-Based Pipeline Processing
 
@@ -220,13 +223,13 @@ int main() {
 
 ## Async/Await Patterns Across Languages
 
-| Language | Keyword(s) | Execution model | Cancellation | Error handling |
-| :--------- | :---------------------------------- | :------------------------------- | :---------------------- | :-------------------- |
-| C++20 | `co_await``co_return``co_yield` | Stackless, manual scheduling | `std::stop_token` | Exception propagation |
-| JavaScript | `async``await` | Event loop (single-threaded) | `AbortController` | `try/catch` |
-| Python | `async def``await` | Event loop (`asyncio`) | `asyncio.Task.cancel()` | `try/except` |
-| Rust | `.await` | Async runtime (tokio, async-std) | `CancellationToken` | `?` operator |
-| C# | `async``await` | ThreadPool / IOCP | `CancellationToken` | `try/catch` |
+| Language   | Keyword(s)                      | Execution model                  | Cancellation            | Error handling        |
+| :--------- | :------------------------------ | :------------------------------- | :---------------------- | :-------------------- |
+| C++20      | `co_await``co_return``co_yield` | Stackless, manual scheduling     | `std::stop_token`       | Exception propagation |
+| JavaScript | `async``await`                  | Event loop (single-threaded)     | `AbortController`       | `try/catch`           |
+| Python     | `async def``await`              | Event loop (`asyncio`)           | `asyncio.Task.cancel()` | `try/except`          |
+| Rust       | `.await`                        | Async runtime (tokio, async-std) | `CancellationToken`     | `?` operator          |
+| C#         | `async``await`                  | ThreadPool / IOCP                | `CancellationToken`     | `try/catch`           |
 
 C++ is unique in providing **no built-in executor or event loop**. The coroutine machinery is
 Deliberately low-level — the standard provides only the suspension/resumption primitives, and
@@ -240,12 +243,12 @@ Exits. C++ does not yet have a standard `when_all` or `when_any` primitive, but 
 Library patterns.
 
 - **`when_all(tasks...)`**: returns when **all** tasks have completed. The result is a tuple of
- results.
+  results.
 - **`when_any(tasks...)`**: returns when **any** task completes, cancelling the rest. The result
- identifies which task finished first.
+  identifies which task finished first.
 
-The complexity of `when_all` for $n$ tasks is $\mathcal{'\{'}O{'\}'}(n)$ in terms of coroutine handles that
-Must be tracked and resumed.
+The complexity of `when_all` for $n$ tasks is $\mathcal{'\{'}O{'\}'}(n)$ in terms of coroutine
+handles that Must be tracked and resumed.
 
 ### `when_all` Implementation
 
@@ -630,13 +633,11 @@ int main() {
 }
 ```
 
-:::warning
-This thread pool executor is a simplified educational example. A production executor must
+:::warning This thread pool executor is a simplified educational example. A production executor must
 Handle: work stealing, priority queues, thread affinity, shutdown semantics, exception aggregation
 Across `when_all`And proper cancellation propagation. Libraries like
 [libunifex](https://github.com/facebookexperimental/libunifex) (now `std::execution` proposal,
-P2300) provide production-grade executors.
-:::
+P2300) provide production-grade executors. :::
 
 ## Work-Stealing Concepts
 
@@ -645,15 +646,15 @@ Threads. It provides automatic load balancing without centralized coordination:
 
 1. Each thread has a **local deque** of tasks (double-ended queue).
 2. A thread pops tasks from the **bottom** of its own deque (LIFO — good for cache locality and
- depth-first traversal of task trees).
+   depth-first traversal of task trees).
 3. An idle thread steals tasks from the **top** of another thread's deque (FIFO — good for breadth
- and reducing contention with the owner).
+   and reducing contention with the owner).
 
 The work-stealing algorithm has provably optimal time bounds: the expected execution time of a fully
 Strict (fork-join) computation with $P$ processors and work $T_1$ is
 $\mathcal{'\{'}O{'\}'}(T_1 / P +
-T_{\infty})$, where $T_{\infty}$ is the span (critical path length) [Blumofe
-And Leiserson, 1999].
+T_{\infty})$, where $T_{\infty}$ is the span (critical path length)
+[Blumofe And Leiserson, 1999].
 
 ```cpp
 #include <deque>
@@ -796,25 +797,25 @@ Computation cannot be cancelled until it reaches the next `co_await`.
 ## Common Pitfalls
 
 - **Forgetting to `resume()` after `suspend_always`.** If a coroutine suspends with `suspend_always`
- and no scheduler ever calls `resume()`The coroutine leaks — its frame is never destroyed. Always
- pair lazy coroutines with a scheduler or manual resume loop.
+  and no scheduler ever calls `resume()`The coroutine leaks — its frame is never destroyed. Always
+  pair lazy coroutines with a scheduler or manual resume loop.
 - **Symmetric transfer vs direct resume.** Using `handle.resume()` inside `await_suspend` can cause
- stack overflow on deep coroutine chains. Use symmetric transfer (`return handle;`) when the
- awaiting coroutine is on a different thread or when chain depth is unbounded.
+  stack overflow on deep coroutine chains. Use symmetric transfer (`return handle;`) when the
+  awaiting coroutine is on a different thread or when chain depth is unbounded.
 - **Dangling continuation handles.** If a coroutine is destroyed while another coroutine holds its
- handle as a continuation, resuming that continuation will access freed memory. Use `suspend_never`
- for `final_suspend` when the coroutine is always at the tail of a chain, or reference counting if
- the handle may outlive the coroutine.
+  handle as a continuation, resuming that continuation will access freed memory. Use `suspend_never`
+  for `final_suspend` when the coroutine is always at the tail of a chain, or reference counting if
+  the handle may outlive the coroutine.
 - **Thread affinity with TLS.** A coroutine suspended on one thread and resumed on another must not
- rely on thread-local storage without careful synchronization. The coroutine frame itself is
- heap-allocated and thread-safe, but any TLS access in the coroutine body is thread-affine.
+  rely on thread-local storage without careful synchronization. The coroutine frame itself is
+  heap-allocated and thread-safe, but any TLS access in the coroutine body is thread-affine.
 - **Blocking in coroutines.** Calling blocking operations (e.g., `std::this_thread::sleep_for`
- synchronous I/O) inside a coroutine defeats the purpose of cooperative scheduling. The entire
- thread is blocked, not just the coroutine. Use asynchronous I/O or suspension-based timers
- instead.
+  synchronous I/O) inside a coroutine defeats the purpose of cooperative scheduling. The entire
+  thread is blocked, not just the coroutine. Use asynchronous I/O or suspension-based timers
+  instead.
 - **Unbounded task queues.** If tasks are submitted faster than they are consumed, the queue grows
- without bound. Implement backpressure (e.g., bounded channels, semaphores) to prevent
- out-of-memory conditions.
+  without bound. Implement backpressure (e.g., bounded channels, semaphores) to prevent
+  out-of-memory conditions.
 
 ## See Also
 

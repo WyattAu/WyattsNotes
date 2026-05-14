@@ -1,6 +1,8 @@
 ---
-title: "Properties of Materials -- Diagnostic Tests"
-description: Diagnostic tests for stress-strain analysis, Young's modulus, elastic potential energy, and material behaviour at maximum A-Level Physics difficulty.
+title: 'Properties of Materials -- Diagnostic Tests'
+description:
+  Diagnostic tests for stress-strain analysis, Young's modulus, elastic potential energy, and
+  material behaviour at maximum A-Level Physics difficulty.
 slug: diag-properties-of-materials
 hide_table_of_contents: true
 ---
@@ -13,17 +15,19 @@ hide_table_of_contents: true
 
 **Question:**
 
-A metal wire of length $2.00\,\text{m}$ and cross-sectional area $1.5 \times 10^{-6}\,\text{m}^2$ is tested under tension. The following data are obtained:
+A metal wire of length $2.00\,\text{m}$ and cross-sectional area $1.5 \times 10^{-6}\,\text{m}^2$ is
+tested under tension. The following data are obtained:
 
-| Stress / MPa | 0 | 100 | 200 | 300 | 350 | 400 | 420 | 430 |
-|---|---|---|---|---|---|---|---|---|
-| Strain / $10^{-3}$ | 0 | 0.50 | 1.00 | 1.50 | 1.80 | 2.30 | 3.00 | 4.50 |
+| Stress / MPa       | 0   | 100  | 200  | 300  | 350  | 400  | 420  | 430  |
+| ------------------ | --- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+| Strain / $10^{-3}$ | 0   | 0.50 | 1.00 | 1.50 | 1.80 | 2.30 | 3.00 | 4.50 |
 
 The wire breaks at a stress of $430\,\text{MPa}$.
 
 (a) Calculate Young's modulus from the linear region of the graph.
 
-(b) Calculate the elastic potential energy stored in the wire at a stress of $300\,\text{MPa}$ using the stress-strain graph.
+(b) Calculate the elastic potential energy stored in the wire at a stress of $300\,\text{MPa}$ using
+the stress-strain graph.
 
 (c) Calculate the total energy per unit volume absorbed by the wire up to the point of fracture.
 
@@ -35,7 +39,8 @@ $$E = \frac◆LB◆\Delta\sigma◆RB◆◆LB◆\Delta\varepsilon◆RB◆ = \frac
 
 This is consistent with steel.
 
-(b) In the linear region (up to $300\,\text{MPa}$), the energy per unit volume is the area under the stress-strain curve:
+(b) In the linear region (up to $300\,\text{MPa}$), the energy per unit volume is the area under the
+stress-strain curve:
 
 $$u = \frac{1}{2}\sigma\varepsilon = \frac{1}{2} \times 300 \times 10^6 \times 1.50 \times 10^{-3} = 2.25 \times 10^5\,\text{J}\,\text{m}^{-3}$$
 
@@ -52,16 +57,23 @@ $$u_{\text{total}} = \frac{1}{2}\left[(0 + 100) \times 0.50 + (100 + 200) \times
 $$= \frac{1}{2}\left[50 + 150 + 250 + 195 + 375 + 574 + 1275\right] \times 10^3$$
 $$= \frac{1}{2} \times 2869 \times 10^3 = 1.435 \times 10^6\,\text{J}\,\text{m}^{-3}$$
 
-The elastic energy recoverable (if unloaded from $300\,\text{MPa}$) is only $2.25 \times 10^5\,\text{J}\,\text{m}^{-3}$So the majority of the energy is dissipated as heat during plastic deformation.
+The elastic energy recoverable (if unloaded from $300\,\text{MPa}$) is only
+$2.25 \times 10^5\,\text{J}\,\text{m}^{-3}$So the majority of the energy is dissipated as heat
+during plastic deformation.
 
 ---
+
 ### UT-2: Composite Wire Under Load
 
 **Question:**
 
-A composite wire consists of a steel section of length $1.5\,\text{m}$ and cross-sectional area $2.0 \times 10^{-6}\,\text{m}^2$ joined to a copper section of length $1.0\,\text{m}$ and cross-sectional area $2.0 \times 10^{-6}\,\text{m}^2$. A tensile force of $400\,\text{N}$ is applied to the composite wire.
+A composite wire consists of a steel section of length $1.5\,\text{m}$ and cross-sectional area
+$2.0 \times 10^{-6}\,\text{m}^2$ joined to a copper section of length $1.0\,\text{m}$ and
+cross-sectional area $2.0 \times 10^{-6}\,\text{m}^2$. A tensile force of $400\,\text{N}$ is applied
+to the composite wire.
 
-Young's modulus of steel $= 2.0 \times 10^{11}\,\text{Pa}$; Young's modulus of copper $= 1.2 \times 10^{11}\,\text{Pa}$.
+Young's modulus of steel $= 2.0 \times 10^{11}\,\text{Pa}$; Young's modulus of copper
+$= 1.2 \times 10^{11}\,\text{Pa}$.
 
 (a) Calculate the stress in each section.
 
@@ -77,13 +89,17 @@ $$\sigma = \frac{F}{A} = \frac◆LB◆400◆RB◆◆LB◆2.0 \times 10^{-6}◆RB
 
 Both sections experience the same stress of $200\,\text{MPa}$.
 
-(b) Strain in steel: $\varepsilon_s = \frac◆LB◆\sigma◆RB◆◆LB◆E_s◆RB◆ = \frac◆LB◆2.0 \times 10^8◆RB◆◆LB◆2.0 \times 10^{11}◆RB◆ = 1.0 \times 10^{-3}$
+(b) Strain in steel:
+$\varepsilon_s = \frac◆LB◆\sigma◆RB◆◆LB◆E_s◆RB◆ = \frac◆LB◆2.0 \times 10^8◆RB◆◆LB◆2.0 \times 10^{11}◆RB◆ = 1.0 \times 10^{-3}$
 
-Strain in copper: $\varepsilon_c = \frac◆LB◆\sigma◆RB◆◆LB◆E_c◆RB◆ = \frac◆LB◆2.0 \times 10^8◆RB◆◆LB◆1.2 \times 10^{11}◆RB◆ = 1.667 \times 10^{-3}$
+Strain in copper:
+$\varepsilon_c = \frac◆LB◆\sigma◆RB◆◆LB◆E_c◆RB◆ = \frac◆LB◆2.0 \times 10^8◆RB◆◆LB◆1.2 \times 10^{11}◆RB◆ = 1.667 \times 10^{-3}$
 
-(c) Extension of steel: $\Delta l_s = \varepsilon_s \times l_s = 1.0 \times 10^{-3} \times 1.5 = 1.50 \times 10^{-3}\,\text{m} = 1.50\,\text{mm}$
+(c) Extension of steel:
+$\Delta l_s = \varepsilon_s \times l_s = 1.0 \times 10^{-3} \times 1.5 = 1.50 \times 10^{-3}\,\text{m} = 1.50\,\text{mm}$
 
-Extension of copper: $\Delta l_c = \varepsilon_c \times l_c = 1.667 \times 10^{-3} \times 1.0 = 1.667 \times 10^{-3}\,\text{m} = 1.67\,\text{mm}$
+Extension of copper:
+$\Delta l_c = \varepsilon_c \times l_c = 1.667 \times 10^{-3} \times 1.0 = 1.667 \times 10^{-3}\,\text{m} = 1.67\,\text{mm}$
 
 Total extension $= 1.50 + 1.67 = 3.17\,\text{mm}$
 
@@ -92,23 +108,26 @@ The effective Young's modulus of the composite wire:
 $$E_{\text{eff}} = \frac◆LB◆F(l_s + l_c)◆RB◆◆LB◆A(\Delta l_s + \Delta l_c)◆RB◆ = \frac◆LB◆400 \times 2.5◆RB◆◆LB◆2.0 \times 10^{-6} \times 3.17 \times 10^{-3}◆RB◆ = \frac◆LB◆1000◆RB◆◆LB◆6.34 \times 10^{-9}◆RB◆ = 1.58 \times 10^{11}\,\text{Pa}$$
 
 ---
+
 ### UT-3: Elastic Limit and Proportional Limit
 
 **Question:**
 
 A rubber band has the following force-extension data:
 
-| Force / N | 0 | 1.0 | 2.0 | 3.0 | 4.0 | 5.0 | 6.0 | 7.0 | 6.0 | 5.0 | 4.0 | 3.0 | 2.0 | 1.0 | 0 |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Extension / mm | 0 | 15 | 35 | 60 | 90 | 130 | 180 | 250 | 200 | 170 | 150 | 130 | 110 | 80 | 20 |
+| Force / N      | 0   | 1.0 | 2.0 | 3.0 | 4.0 | 5.0 | 6.0 | 7.0 | 6.0 | 5.0 | 4.0 | 3.0 | 2.0 | 1.0 | 0   |
+| -------------- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Extension / mm | 0   | 15  | 35  | 60  | 90  | 130 | 180 | 250 | 200 | 170 | 150 | 130 | 110 | 80  | 20  |
 
 The loading data are the first 8 readings and the unloading data are the last 8 readings.
 
 (a) Determine whether the rubber band obeys Hooke's law at any point in its loading curve.
 
-(b) Calculate the work done on the rubber band during loading and the work done by the rubber band during unloading.
+(b) Calculate the work done on the rubber band during loading and the work done by the rubber band
+during unloading.
 
-(c) Calculate the energy dissipated as heat per loading-unloading cycle and explain its significance.
+(c) Calculate the energy dissipated as heat per loading-unloading cycle and explain its
+significance.
 
 **Solution:**
 
@@ -116,7 +135,9 @@ The loading data are the first 8 readings and the unloading data are the last 8 
 
 Checking ratios: $F/x = 1.0/15 = 0.067$$2.0/35 = 0.057$$3.0/60 = 0.050$$4.0/90 = 0.044$
 
-The ratio decreases, so the rubber band **does not obey Hooke's law** at any point during loading. The spring constant (gradient) continuously decreases, meaning the rubber becomes easier to stretch as it extends. This is characteristic of non-Hookean materials like rubber and polymers.
+The ratio decreases, so the rubber band **does not obey Hooke's law** at any point during loading.
+The spring constant (gradient) continuously decreases, meaning the rubber becomes easier to stretch
+as it extends. This is characteristic of non-Hookean materials like rubber and polymers.
 
 (b) **Work done during loading** (area under loading curve, using trapezium rule):
 
@@ -133,9 +154,14 @@ $$= \frac{6+5}{2}(250-200) + \frac{5+4}{2}(200-170) + \frac{4+3}{2}(170-150) + \
 
 $$= 275 + 135 + 70 + 50 + 30 + 15 + 0 = 575\,\text{mJ} = 0.575\,\text{J}$$
 
-(c) Energy dissipated per cycle $= W_{\text{load}} - W_{\text{unload}} = 1.115 - 0.575 = 0.540\,\text{J}$
+(c) Energy dissipated per cycle
+$= W_{\text{load}} - W_{\text{unload}} = 1.115 - 0.575 = 0.540\,\text{J}$
 
-This energy is dissipated as heat due to internal friction within the rubber (hysteresis). The loading-unloading curve forms a hysteresis loop, and the area enclosed represents the energy lost per cycle. This is why rubber gets warm when repeatedly stretched and released. The fraction of energy dissipated is $0.540/1.115 = 48\%$Meaning the rubber band returns only about $52\%$ of the energy stored in it.
+This energy is dissipated as heat due to internal friction within the rubber (hysteresis). The
+loading-unloading curve forms a hysteresis loop, and the area enclosed represents the energy lost
+per cycle. This is why rubber gets warm when repeatedly stretched and released. The fraction of
+energy dissipated is $0.540/1.115 = 48\%$Meaning the rubber band returns only about $52\%$ of the
+energy stored in it.
 
 ## Integration Tests
 
@@ -143,11 +169,15 @@ This energy is dissipated as heat due to internal friction within the rubber (hy
 
 **Question:**
 
-A steel wire of length $3.0\,\text{m}$Cross-sectional area $2.0 \times 10^{-6}\,\text{m}^2$And Young's modulus $2.0 \times 10^{11}\,\text{Pa}$ is fixed between two rigid supports. The linear expansivity of steel is $1.2 \times 10^{-5}\,\text{K}^{-1}$.
+A steel wire of length $3.0\,\text{m}$Cross-sectional area $2.0 \times 10^{-6}\,\text{m}^2$And
+Young's modulus $2.0 \times 10^{11}\,\text{Pa}$ is fixed between two rigid supports. The linear
+expansivity of steel is $1.2 \times 10^{-5}\,\text{K}^{-1}$.
 
-(a) The temperature increases by $40\,\text{K}$. Calculate the stress that develops in the wire if it is not allowed to expand.
+(a) The temperature increases by $40\,\text{K}$. Calculate the stress that develops in the wire if
+it is not allowed to expand.
 
-(b) The wire is now allowed to expand freely by $\Delta T = 40\,\text{K}$And then a mass of $50\,\text{kg}$ is hung from it. Calculate the total extension.
+(b) The wire is now allowed to expand freely by $\Delta T = 40\,\text{K}$And then a mass of
+$50\,\text{kg}$ is hung from it. Calculate the total extension.
 
 (c) Calculate the elastic potential energy stored in the wire in part (b).
 
@@ -163,7 +193,8 @@ The wire must be compressed back by this amount, so the strain is:
 
 $$\varepsilon = \frac◆LB◆\Delta l◆RB◆◆LB◆l◆RB◆ = \frac◆LB◆1.44 \times 10^{-3}◆RB◆◆LB◆3.0◆RB◆ = 4.8 \times 10^{-4}$$
 
-Stress: $\sigma = E\varepsilon = 2.0 \times 10^{11} \times 4.8 \times 10^{-4} = 9.6 \times 10^7\,\text{Pa} = 96\,\text{MPa}$
+Stress:
+$\sigma = E\varepsilon = 2.0 \times 10^{11} \times 4.8 \times 10^{-4} = 9.6 \times 10^7\,\text{Pa} = 96\,\text{MPa}$
 
 This is a compressive stress. The wire would buckle if not properly supported.
 
@@ -171,20 +202,26 @@ This is a compressive stress. The wire would buckle if not properly supported.
 
 $$\Delta l_{\text{mechanical}} = \frac{Fl}{AE} = \frac◆LB◆50 \times 9.81 \times 3.0◆RB◆◆LB◆2.0 \times 10^{-6} \times 2.0 \times 10^{11}◆RB◆ = \frac◆LB◆1471.5◆RB◆◆LB◆4.0 \times 10^5◆RB◆ = 3.68 \times 10^{-3}\,\text{m}$$
 
-Total extension $= \Delta l_{\text{thermal}} + \Delta l_{\text{mechanical}} = 1.44 + 3.68 = 5.12 \times 10^{-3}\,\text{m} = 5.12\,\text{mm}$
+Total extension
+$= \Delta l_{\text{thermal}} + \Delta l_{\text{mechanical}} = 1.44 + 3.68 = 5.12 \times 10^{-3}\,\text{m} = 5.12\,\text{mm}$
 
-(c) Only the mechanical extension stores elastic energy (thermal expansion without constraint does not store elastic energy):
+(c) Only the mechanical extension stores elastic energy (thermal expansion without constraint does
+not store elastic energy):
 
 $$U = \frac{1}{2} \times \text{stress} \times \text{strain} \times \text{volume}$$
 $$= \frac{1}{2} \times \frac{F}{A} \times \frac◆LB◆\Delta l_{\text{mech}}◆RB◆◆LB◆l◆RB◆ \times Al = \frac{1}{2}F\Delta l_{\text{mech}}$$
 $$= \frac{1}{2} \times 50 \times 9.81 \times 3.68 \times 10^{-3} = 0.903\,\text{J}$$
 
 ---
+
 ### IT-2: Stress in a Rotating Ring (with Circular Motion)
 
 **Question:**
 
-A thin ring of radius $R = 0.50\,\text{m}$ is made of steel with density $7800\,\text{kg}\,\text{m}^{-3}$ and Young's modulus $2.0 \times 10^{11}\,\text{Pa}$. The ring has a square cross-section of side $5.0\,\text{mm}$ and rotates about its centre with angular velocity $\omega$.
+A thin ring of radius $R = 0.50\,\text{m}$ is made of steel with density
+$7800\,\text{kg}\,\text{m}^{-3}$ and Young's modulus $2.0 \times 10^{11}\,\text{Pa}$. The ring has a
+square cross-section of side $5.0\,\text{mm}$ and rotates about its centre with angular velocity
+$\omega$.
 
 (a) Derive an expression for the tensile stress in the ring due to rotation.
 
@@ -194,7 +231,8 @@ A thin ring of radius $R = 0.50\,\text{m}$ is made of steel with density $7800\,
 
 **Solution:**
 
-(a) Consider a small element of the ring of mass $\delta m$ subtending angle $\delta\theta$ at the centre. The element is in circular motion with radius $R$.
+(a) Consider a small element of the ring of mass $\delta m$ subtending angle $\delta\theta$ at the
+centre. The element is in circular motion with radius $R$.
 
 Forces on the element: tension $T$ on each side, at angle $\delta\theta/2$ to the tangent.
 
@@ -202,8 +240,7 @@ Net inward force $= 2T\sin(\delta\theta/2) \approx T\delta\theta$ for small $\de
 
 Centripetal force: $\delta m \times \omega^2 R = (\rho A R\delta\theta)\omega^2 R$
 
-$$T\delta\theta = \rho A R^2\omega^2\delta\theta$$
-$$T = \rho A R^2\omega^2$$
+$$T\delta\theta = \rho A R^2\omega^2\delta\theta$$ $$T = \rho A R^2\omega^2$$
 
 Stress: $\sigma = T/A = \rho R^2\omega^2$
 
@@ -220,21 +257,26 @@ Percentage increase in radius $= \varepsilon \times 100 = 0.10\%$
 The circumference also increases by $0.10\%$.
 
 ---
+
 ### IT-3: Energy Stored in a Stretched Wire Hanging Under Its Own Weight (with Work-Energy)
 
 **Question:**
 
-A steel wire of length $10\,\text{m}$Cross-sectional area $1.0 \times 10^{-6}\,\text{m}^2$Young's modulus $2.0 \times 10^{11}\,\text{Pa}$And density $7800\,\text{kg}\,\text{m}^{-3}$ hangs vertically from a fixed support.
+A steel wire of length $10\,\text{m}$Cross-sectional area $1.0 \times 10^{-6}\,\text{m}^2$Young's
+modulus $2.0 \times 10^{11}\,\text{Pa}$And density $7800\,\text{kg}\,\text{m}^{-3}$ hangs vertically
+from a fixed support.
 
 (a) Calculate the total extension of the wire under its own weight.
 
-(b) Calculate the elastic potential energy stored in the wire. Compare this with the naive calculation $U = \frac{1}{2} \times (\text{total weight}) \times (\text{total extension})$.
+(b) Calculate the elastic potential energy stored in the wire. Compare this with the naive
+calculation $U = \frac{1}{2} \times (\text{total weight}) \times (\text{total extension})$.
 
 (c) Explain why the two values differ.
 
 **Solution:**
 
-(a) The stress varies linearly along the wire. At a distance $y$ from the bottom, the stress is due to the weight of wire below:
+(a) The stress varies linearly along the wire. At a distance $y$ from the bottom, the stress is due
+to the weight of wire below:
 
 $$\sigma(y) = \frac◆LB◆\rho A g y◆RB◆◆LB◆A◆RB◆ = \rho g y$$
 
@@ -277,4 +319,7 @@ $U = \frac◆LB◆\rho^2 A g^2 L^3◆RB◆◆LB◆6E◆RB◆$
 
 Ratio $U_{\text{naive}}/U = 6/4 = 3/2 = 1.5$
 
-The naive calculation overestimates by a factor of 1.5 because the stress is not uniform along the wire -- it varies linearly from zero at the bottom to a maximum at the top. The naive formula assumes the entire wire experiences the maximum stress (full weight divided by area), whereas the correct integral accounts for the linear variation.
+The naive calculation overestimates by a factor of 1.5 because the stress is not uniform along the
+wire -- it varies linearly from zero at the bottom to a maximum at the top. The naive formula
+assumes the entire wire experiences the maximum stress (full weight divided by area), whereas the
+correct integral accounts for the linear variation.

@@ -1,9 +1,12 @@
 ---
 id: advanced-sql
 title: Advanced SQL
-description: "Advanced SQL — Window Functions Deep Dive; Window Function Anatomy; Framing Clauses; ROWS vs RANGE vs GROUPS with worked examples and exam-style questions."
+description:
+  'Advanced SQL — Window Functions Deep Dive; Window Function Anatomy; Framing Clauses; ROWS vs
+  RANGE vs GROUPS with worked examples and exam-style questions.'
 slug: advanced-sql
 ---
+
 ## Window Functions Deep Dive
 
 Window functions compute values across a set of rows related to the current row without collapsing
@@ -27,8 +30,7 @@ Set of rows visible to the function.
 ### Framing Clauses
 
 The frame clause defines the subset of rows within the partition that the function sees. It is only
-Meaningful when `ORDER BY` is present (without `ORDER BY`The default frame is the entire
-Partition).
+Meaningful when `ORDER BY` is present (without `ORDER BY`The default frame is the entire Partition).
 
 ```sql
 -- Frame boundaries
@@ -117,12 +119,12 @@ SUM(amount) OVER (
 ) AS sum_excluding_ties_and_current
 ```
 
-| EXCLUDE Option | What It Removes |
+| EXCLUDE Option | What It Removes                                 |
 | -------------- | ----------------------------------------------- |
-| `CURRENT ROW` | Only the current row |
-| `GROUP` | Current row and all peers (same ORDER BY value) |
-| `TIES` | Only the peers, keeps the current row |
-| `NO OTHERS` | Nothing (default) |
+| `CURRENT ROW`  | Only the current row                            |
+| `GROUP`        | Current row and all peers (same ORDER BY value) |
+| `TIES`         | Only the peers, keeps the current row           |
+| `NO OTHERS`    | Nothing (default)                               |
 
 ### WINDOW Clause (Window Chains)
 
@@ -177,14 +179,14 @@ SELECT emp_id, salary,
 FROM employees;
 ```
 
-| Function | Ties at 150k, 150k, 140k, 130k | Range |
+| Function       | Ties at 150k, 150k, 140k, 130k | Range      |
 | -------------- | ------------------------------ | ---------- |
-| `ROW_NUMBER` | 1, 2, 3, 4 | N/A |
-| `RANK` | 1, 1, 3, 4 | 1 to N |
-| `DENSE_RANK` | 1, 1, 2, 3 | 1 to N |
-| `NTILE(2)` | 1, 1, 2, 2 | 1 to n |
-| `PERCENT_RANK` | 0.0, 0.0, 0.667, 1.0 | 0.0 to 1.0 |
-| `CUME_DIST` | 0.5, 0.5, 0.75, 1.0 | 0.0 to 1.0 |
+| `ROW_NUMBER`   | 1, 2, 3, 4                     | N/A        |
+| `RANK`         | 1, 1, 3, 4                     | 1 to N     |
+| `DENSE_RANK`   | 1, 1, 2, 3                     | 1 to N     |
+| `NTILE(2)`     | 1, 1, 2, 2                     | 1 to n     |
+| `PERCENT_RANK` | 0.0, 0.0, 0.667, 1.0           | 0.0 to 1.0 |
+| `CUME_DIST`    | 0.5, 0.5, 0.75, 1.0            | 0.0 to 1.0 |
 
 ## Advanced Common Table Expressions
 
@@ -247,11 +249,11 @@ SELECT
     (SELECT COUNT(*) FROM active_users WHERE email LIKE '%@company.com') AS company_users;
 ```
 
-| Strategy | When to Use | Trade-off |
+| Strategy               | When to Use                        | Trade-off                                  |
 | ---------------------- | ---------------------------------- | ------------------------------------------ |
-| Inlined | CTE referenced once, simple filter | Planner can push predicates, use indexes |
-| Materialized | CTE referenced multiple times | Computed once but cannot use outer indexes |
-| `MATERIALIZED` keyword | Explicit control over inlining | Overrides the planner's decision |
+| Inlined                | CTE referenced once, simple filter | Planner can push predicates, use indexes   |
+| Materialized           | CTE referenced multiple times      | Computed once but cannot use outer indexes |
+| `MATERIALIZED` keyword | Explicit control over inlining     | Overrides the planner's decision           |
 
 ### Recursive CTEs for Tree Traversal
 
@@ -458,14 +460,14 @@ ORDER BY normalized_rank DESC;
 
 The normalization flags for `ts_rank` and `ts_rank_cd`:
 
-| Flag | Meaning |
+| Flag | Meaning                                     |
 | ---- | ------------------------------------------- |
-| 0 | No normalization |
-| 1 | Normalize by document length |
-| 2 | Normalize by unique terms |
-| 4 | Normalize by both length and unique terms |
-| 8 | Normalize by document length + unique terms |
-| 16 | Normalize by log of document length |
+| 0    | No normalization                            |
+| 1    | Normalize by document length                |
+| 2    | Normalize by unique terms                   |
+| 4    | Normalize by both length and unique terms   |
+| 8    | Normalize by document length + unique terms |
+| 16   | Normalize by log of document length         |
 
 ### Highlighting Results
 
@@ -497,10 +499,10 @@ WHERE body % 'database performance tuning'
 ORDER BY sim DESC;
 ```
 
-| Method | Best For | Index Type |
+| Method           | Best For                  | Index Type  |
 | ---------------- | ------------------------- | ----------- |
-| tsvector/tsquery | Full-word search, ranking | GIN |
-| pg_trgm | Substring, fuzzy, ILIKE | GIN or GiST |
+| tsvector/tsquery | Full-word search, ranking | GIN         |
+| pg_trgm          | Substring, fuzzy, ILIKE   | GIN or GiST |
 
 ## Materialized Views
 
@@ -560,12 +562,12 @@ ON CONFLICT (order_date) DO UPDATE SET
 
 ### When to Use Materialized Views
 
-| Scenario | Recommendation |
+| Scenario                              | Recommendation                         |
 | ------------------------------------- | -------------------------------------- |
-| Dashboard aggregates (updated hourly) | Materialized view, scheduled refresh |
-| Real-time analytics | Regular view or live aggregate |
-| Pre-join denormalized read model | Materialized view, concurrent refresh |
-| ETL staging | Temporary table, not materialized view |
+| Dashboard aggregates (updated hourly) | Materialized view, scheduled refresh   |
+| Real-time analytics                   | Regular view or live aggregate         |
+| Pre-join denormalized read model      | Materialized view, concurrent refresh  |
+| ETL staging                           | Temporary table, not materialized view |
 
 ## UPSERT Patterns
 
@@ -623,13 +625,13 @@ flowchart TD
 
 ### ON CONFLICT vs MERGE
 
-| Feature | ON CONFLICT | MERGE |
+| Feature                    | ON CONFLICT             | MERGE                           |
 | -------------------------- | ----------------------- | ------------------------------- |
-| Unique constraint required | Yes | No |
-| Match condition | Only on unique columns | Arbitrary join condition |
-| Multiple actions | One (UPDATE or NOTHING) | Multiple (INSERT/UPDATE/DELETE) |
-| Source | VALUES or subquery | Table, subquery, or CTE |
-| Standard | PostgreSQL extension | SQL:2003 standard |
+| Unique constraint required | Yes                     | No                              |
+| Match condition            | Only on unique columns  | Arbitrary join condition        |
+| Multiple actions           | One (UPDATE or NOTHING) | Multiple (INSERT/UPDATE/DELETE) |
+| Source                     | VALUES or subquery      | Table, subquery, or CTE         |
+| Standard                   | PostgreSQL extension    | SQL:2003 standard               |
 
 ## Advanced Aggregation
 
@@ -874,12 +876,12 @@ WHERE a.descendant_id = 10  -- new parent
   AND d.ancestor_id = 5;    -- moved node
 ```
 
-| Approach | Read Performance | Write Performance | Storage | Best For |
+| Approach          | Read Performance | Write Performance | Storage  | Best For                   |
 | ----------------- | ---------------- | ----------------- | -------- | -------------------------- |
-| Adjacency List | O(depth) | O(1) | Minimal | Write-heavy, shallow trees |
-| Nested Sets | O(1) | O(n) | Minimal | Read-heavy, no updates |
-| Materialized Path | O(1) for prefix | O(1) | Path col | Deep trees, sortable |
-| Closure Table | O(depth) | O(n\*depth) | O(n^2) | Frequent subtree queries |
+| Adjacency List    | O(depth)         | O(1)              | Minimal  | Write-heavy, shallow trees |
+| Nested Sets       | O(1)             | O(n)              | Minimal  | Read-heavy, no updates     |
+| Materialized Path | O(1) for prefix  | O(1)              | Path col | Deep trees, sortable       |
+| Closure Table     | O(depth)         | O(n\*depth)       | O(n^2)   | Frequent subtree queries   |
 
 ## Query Optimization
 
@@ -919,19 +921,19 @@ LIMIT 50;
 
 Key fields in `EXPLAIN ANALYZE` output:
 
-| Field | Meaning |
+| Field              | Meaning                                          |
 | ------------------ | ------------------------------------------------ |
-| `Seq Scan` | Full table scan |
-| `Index Scan` | B-tree index scan, fetches heap tuples |
-| `Index Only Scan` | B-tree index scan, does NOT fetch heap tuples |
-| `Bitmap Heap Scan` | Two-phase: bitmap from index, then heap fetch |
-| `Hash Join` | Build hash table on inner, probe with outer |
-| `Merge Join` | Both sides sorted, merge (good for large sorted) |
-| `Nested Loop` | For each outer row, scan inner (good for small) |
-| `actual time` | Actual execution time in ms |
-| `rows` | Actual number of rows produced |
-| `loops` | Number of times the node was executed |
-| `Shared Hit/Read` | Buffer cache hits vs disk reads (BUFFERS option) |
+| `Seq Scan`         | Full table scan                                  |
+| `Index Scan`       | B-tree index scan, fetches heap tuples           |
+| `Index Only Scan`  | B-tree index scan, does NOT fetch heap tuples    |
+| `Bitmap Heap Scan` | Two-phase: bitmap from index, then heap fetch    |
+| `Hash Join`        | Build hash table on inner, probe with outer      |
+| `Merge Join`       | Both sides sorted, merge (good for large sorted) |
+| `Nested Loop`      | For each outer row, scan inner (good for small)  |
+| `actual time`      | Actual execution time in ms                      |
+| `rows`             | Actual number of rows produced                   |
+| `loops`            | Number of times the node was executed            |
+| `Shared Hit/Read`  | Buffer cache hits vs disk reads (BUFFERS option) |
 
 ### Planner Hints (pg_hint_plan)
 
@@ -1049,11 +1051,11 @@ ALTER TABLE measurements DETACH PARTITION measurements_2024_q1;
 CREATE INDEX idx_measurements_sensor ON measurements (sensor_id, recorded_at);
 ```
 
-| Partition Type | Best For | Data Distribution |
+| Partition Type | Best For                   | Data Distribution |
 | -------------- | -------------------------- | ----------------- |
-| Range | Time-series, date ranges | Uneven (natural) |
-| List | Categorical (region, type) | Defined by you |
-| Hash | Even distribution needed | Uniform |
+| Range          | Time-series, date ranges   | Uneven (natural)  |
+| List           | Categorical (region, type) | Defined by you    |
+| Hash           | Even distribution needed   | Uniform           |
 
 ## Generated Columns
 
@@ -1081,10 +1083,10 @@ VALUES ('Widget', 29.99, 0.20, 'A high-quality widget for industrial use');
 -- INSERT INTO products (name, price, price_with_tax) VALUES (...)  -- ERROR
 ```
 
-| Type | Storage | Read Cost | Write Cost | Indexable |
+| Type    | Storage  | Read Cost | Write Cost | Indexable |
 | ------- | -------- | --------- | ---------- | --------- |
-| Stored | On disk | Low | Higher | Yes |
-| Virtual | Computed | Higher | Low | No |
+| Stored  | On disk  | Low       | Higher     | Yes       |
+| Virtual | Computed | Higher    | Low        | No        |
 
 :::info
 

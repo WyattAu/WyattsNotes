@@ -1,6 +1,8 @@
 ---
 title: Stoichiometry
-description: "Stoichiometry — The Mole Concept (CED Unit 1); Avogadro's Number; Molar Mass; Conversions with worked examples and exam-style questions."
+description:
+  "Stoichiometry — The Mole Concept (CED Unit 1); Avogadro's Number; Molar Mass; Conversions with
+  worked examples and exam-style questions."
 date: 2026-04-14
 tags:
   - Chemistry
@@ -9,6 +11,7 @@ categories:
   - Chemistry
 slug: stoichiometry
 ---
+
 ## The Mole Concept (CED Unit 1)
 
 ### Avogadro's Number
@@ -25,12 +28,12 @@ The mole is defined such that the molar mass of carbon-12 is exactly 12 g/mol.
 The molar mass of a substance is the mass of one mole, expressed in g/mol. It is numerically equal
 To the atomic/molecular formula mass in amu.
 
-| Substance | Molar Mass (g/mol) |
-| ----------------------------------------- | ------------------ |
-| H$_2$O | 18.02 |
-| NaCl | 58.44 |
-| $\mathrm{CaCO{}_3$ | 100.09 |
-| $\mathrm{C{}_6\mathrm{H{}_{12}\mathrm{O{}_6$ | 180.16 |
+| Substance                                    | Molar Mass (g/mol) |
+| -------------------------------------------- | ------------------ |
+| H$_2$O                                       | 18.02              |
+| NaCl                                         | 58.44              |
+| $\mathrm{CaCO{}_3$                           | 100.09             |
+| $\mathrm{C{}_6\mathrm{H{}_{12}\mathrm{O{}_6$ | 180.16             |
 
 ### Conversions
 
@@ -163,8 +166,8 @@ Empirical formula: $\mathrm{CH{}_2\mathrm{O{}$.
 
 ### Worked Example: Molecular Formula from Empirical Formula
 
-A compound has the empirical formula $\mathrm{C{}_3\mathrm{H{}_4\mathrm{O{}_3$ and a molecular mass of
-Approximately $176 \mathrm{ g/mol{}$. Find the molecular formula.
+A compound has the empirical formula $\mathrm{C{}_3\mathrm{H{}_4\mathrm{O{}_3$ and a molecular mass
+of Approximately $176 \mathrm{ g/mol{}$. Find the molecular formula.
 
 Empirical formula mass:
 $3(12.01) + 4(1.008) + 3(16.00) = 36.03 + 4.032 + 48.00 = 88.06 \mathrm{ g/mol{}$.
@@ -175,8 +178,10 @@ Molecular formula: $\mathrm{C{}_6\mathrm{H{}_8\mathrm{O{}_6$.
 
 ### Worked Example: Combustion Analysis with Nitrogen
 
-A 0.200 g sample of a compound containing C, H, and N produces 0.441 g CO$_2$0.180 g H$_2$O, and
-0.069 g of N$_2$ on combustion with excess oxygen. Find the empirical formula.
+A 0.200 g sample of a compound containing C, H, and N produces 0.441 g
+CO$_2$0.180 g H$\_2$O, and
+0.069 g of N$\_2$ on combustion with excess oxygen. Find the empirical
+formula.
 
 $$\mathrm{mol C{} = \frac{0.441}{44.01} = 0.01002 \mathrm{ mol{}$$
 
@@ -497,9 +502,9 @@ This is a useful shortcut: one mole of any ideal gas occupies $22.4 \mathrm{ L{}
 ### Worked Example: Gas Collection Over Water
 
 $0.200 \mathrm{ g{}$ of $\mathrm{KClO{}_3$ decomposes:
-$2\mathrm{KClO{}_3(s) \to 2\mathrm{KCl{}(s) + 3\mathrm{O{}_2(g)$. The oxygen is collected over water at
-$25^{\circ}\mathrm{C{}$ and $0.980 \mathrm{ atm{}$. Vapour pressure of water at $25^{\circ}\mathrm{C{}$
-Is $23.8 \mathrm{ mmHg{}$. Calculate the volume of dry oxygen.
+$2\mathrm{KClO{}_3(s) \to 2\mathrm{KCl{}(s) + 3\mathrm{O{}_2(g)$. The oxygen is collected over water
+at $25^{\circ}\mathrm{C{}$ and $0.980 \mathrm{ atm{}$. Vapour pressure of water at
+$25^{\circ}\mathrm{C{}$ Is $23.8 \mathrm{ mmHg{}$. Calculate the volume of dry oxygen.
 
 $$\mathrm{mol KClO{}_3 = \frac{0.200}{122.55} = 0.00163 \mathrm{ mol{}$$
 
@@ -520,20 +525,20 @@ $$V = \frac{nRT}{P} = \frac{(0.00245)(0.08206)(298)}{0.949} = 0.0630 \mathrm{ L{
 
 ### Solubility Rules
 
-| Soluble | Exceptions |
-| -------------------------------------------------- | --------------------------------------------------------------------------- |
-| $\mathrm{Na{}^+$$\mathrm{K{}^+$$\mathrm{NH{}_4^+$ | None |
-| Nitrates ($\mathrm{NO{}_3^-$) | None |
-| Acetates ($\mathrm{CH{}_3\mathrm{COO{}^-$) | None |
-| Chlorides ($\mathrm{Cl{}^-$) | $\mathrm{Ag{}^+$$\mathrm{Pb{}^{2+}$$\mathrm{Hg{}_2^{2+}$ |
-| Sulfates ($\mathrm{SO{}_4^{2-}$) | $\mathrm{Ba{}^{2+}$$\mathrm{Pb{}^{2+}$$\mathrm{Ca{}^{2+}$$\mathrm{Ag{}^+$ |
+| Soluble                                           | Exceptions                                                                |
+| ------------------------------------------------- | ------------------------------------------------------------------------- |
+| $\mathrm{Na{}^+$$\mathrm{K{}^+$$\mathrm{NH{}_4^+$ | None                                                                      |
+| Nitrates ($\mathrm{NO{}_3^-$)                     | None                                                                      |
+| Acetates ($\mathrm{CH{}_3\mathrm{COO{}^-$)        | None                                                                      |
+| Chlorides ($\mathrm{Cl{}^-$)                      | $\mathrm{Ag{}^+$$\mathrm{Pb{}^{2+}$$\mathrm{Hg{}_2^{2+}$                  |
+| Sulfates ($\mathrm{SO{}_4^{2-}$)                  | $\mathrm{Ba{}^{2+}$$\mathrm{Pb{}^{2+}$$\mathrm{Ca{}^{2+}$$\mathrm{Ag{}^+$ |
 
-| Insoluble | Exceptions |
-| --------------------------------- | ------------------------------------------------------------------------------------------ |
-| Hydroxides ($\mathrm{OH{}^-$) | $\mathrm{Na{}^+$$\mathrm{K{}^+$$\mathrm{Ba{}^{2+}$$\mathrm{Ca{}^{2+}$ (slightly) |
-| Carbonates ($\mathrm{CO{}_3^{2-}$) | $\mathrm{Na{}^+$$\mathrm{K{}^+$$\mathrm{NH{}_4^+$ |
-| Phosphates ($\mathrm{PO{}_4^{3-}$) | $\mathrm{Na{}^+$$\mathrm{K{}^+$$\mathrm{NH{}_4^+$ |
-| Sulfides ($\mathrm{S{}^{2-}$) | $\mathrm{Na{}^+$$\mathrm{K{}^+$$\mathrm{NH{}_4^+$$\mathrm{Ca{}^{2+}$$\mathrm{Ba{}^{2+}$ |
+| Insoluble                          | Exceptions                                                                              |
+| ---------------------------------- | --------------------------------------------------------------------------------------- |
+| Hydroxides ($\mathrm{OH{}^-$)      | $\mathrm{Na{}^+$$\mathrm{K{}^+$$\mathrm{Ba{}^{2+}$$\mathrm{Ca{}^{2+}$ (slightly)        |
+| Carbonates ($\mathrm{CO{}_3^{2-}$) | $\mathrm{Na{}^+$$\mathrm{K{}^+$$\mathrm{NH{}_4^+$                                       |
+| Phosphates ($\mathrm{PO{}_4^{3-}$) | $\mathrm{Na{}^+$$\mathrm{K{}^+$$\mathrm{NH{}_4^+$                                       |
+| Sulfides ($\mathrm{S{}^{2-}$)      | $\mathrm{Na{}^+$$\mathrm{K{}^+$$\mathrm{NH{}_4^+$$\mathrm{Ca{}^{2+}$$\mathrm{Ba{}^{2+}$ |
 
 ### Strong Acids and Bases
 
@@ -549,7 +554,8 @@ Are written as intact molecules.
 
 Write the net ionic equation for mixing $\mathrm{Pb(NO{}_3)_2$ and $\mathrm{KI{}$.
 
-Molecular: $\mathrm{Pb(NO{}_3)_2(aq) + 2\mathrm{KI{}(aq) \to \mathrm{PbI{}_2(s) + 2\mathrm{KNO{}_3(aq)$
+Molecular:
+$\mathrm{Pb(NO{}_3)_2(aq) + 2\mathrm{KI{}(aq) \to \mathrm{PbI{}_2(s) + 2\mathrm{KNO{}_3(aq)$
 
 Complete ionic:
 $\mathrm{Pb{}^{2+}(aq) + 2\mathrm{NO{}_3^-(aq) + 2\mathrm{K{}^+(aq) + 2\mathrm{I{}^-(aq) \to \mathrm{PbI{}_2(s) + 2\mathrm{K{}^+(aq) + 2\mathrm{NO{}_3^-(aq)$
@@ -560,146 +566,146 @@ Net ionic: $\mathrm{Pb{}^{2+}(aq) + 2\mathrm{I{}^-(aq) \to \mathrm{PbI{}_2(s)$
 
 ## Summary Table: Solubility Rules Quick Reference
 
-| Ion Type | Generally Soluble With These Exceptions: |
-| ----------------- | -------------------------------------------------------------- |
-| Group 1, NH$_4^+$ | No exceptions (always soluble) |
-| Nitrates | No exceptions (always soluble) |
-| Acetates | No exceptions (always soluble) |
-| Chlorides | Ag$^+$Pb$^{2+}$Hg$_2^{2+}$ (insoluble) |
-| Sulfates | Ba$^{2+}$Pb$^{2+}$Ca$^{2+}$ (slightly), Ag$^+$ (insoluble) |
-| Hydroxides | Group 1, Ba$^{2+}$Ca$^{2+}$ (slightly soluble) |
-| Carbonates | Group 1, NH$_4^+$ (soluble); rest insoluble |
-| Phosphates | Group 1, NH$_4^+$ (soluble); rest insoluble |
-| Sulfides | Group 1, NH$_4^+$Ca$^{2+}$Ba$^{2+}$ (soluble) |
+| Ion Type          | Generally Soluble With These Exceptions:                   |
+| ----------------- | ---------------------------------------------------------- |
+| Group 1, NH$_4^+$ | No exceptions (always soluble)                             |
+| Nitrates          | No exceptions (always soluble)                             |
+| Acetates          | No exceptions (always soluble)                             |
+| Chlorides         | Ag$^+$Pb$^{2+}$Hg$_2^{2+}$ (insoluble)                     |
+| Sulfates          | Ba$^{2+}$Pb$^{2+}$Ca$^{2+}$ (slightly), Ag$^+$ (insoluble) |
+| Hydroxides        | Group 1, Ba$^{2+}$Ca$^{2+}$ (slightly soluble)             |
+| Carbonates        | Group 1, NH$_4^+$ (soluble); rest insoluble                |
+| Phosphates        | Group 1, NH$_4^+$ (soluble); rest insoluble                |
+| Sulfides          | Group 1, NH$_4^+$Ca$^{2+}$Ba$^{2+}$ (soluble)              |
 
 ## Summary Table: Common Gas Law Relationships
 
-| Law | Variables | Constant | Relationship |
-| ------------ | ---------- | -------- | ------------------------------- |
-| Boyle's | P, V | n, T | $P_1 V_1 = P_2 V_2$ |
-| Charles's | V, T | n, P | $V_1/T_1 = V_2/T_2$ |
-| Gay-Lussac's | P, T | n, V | $P_1/T_1 = P_2/T_2$ |
-| Avogadro's | V, n | P, T | $V_1/n_1 = V_2/n_2$ |
-| Ideal Gas | P, V, n, T | none | $PV = nRT$ |
-| Combined | P, V, T | n | $P_1 V_1/T_1 = P_2 V_2/T_2$ |
-| Dalton's | P$_i$ | V, T | $P_{\mathrm{total{}} = \sum P_i$ |
+| Law          | Variables  | Constant | Relationship                     |
+| ------------ | ---------- | -------- | -------------------------------- |
+| Boyle's      | P, V       | n, T     | $P_1 V_1 = P_2 V_2$              |
+| Charles's    | V, T       | n, P     | $V_1/T_1 = V_2/T_2$              |
+| Gay-Lussac's | P, T       | n, V     | $P_1/T_1 = P_2/T_2$              |
+| Avogadro's   | V, n       | P, T     | $V_1/n_1 = V_2/n_2$              |
+| Ideal Gas    | P, V, n, T | none     | $PV = nRT$                       |
+| Combined     | P, V, T    | n        | $P_1 V_1/T_1 = P_2 V_2/T_2$      |
+| Dalton's     | P$_i$      | V, T     | $P_{\mathrm{total{}} = \sum P_i$ |
 
 ## Common Pitfalls
 
 1. **Using molar mass instead of molecular mass** or vice versa. Molar mass has units of g/mol.
 2. **Incorrectly identifying the limiting reactant.** Always divide moles by the stoichiometric
- coefficient; the smallest result is the limiting reactant.
+   coefficient; the smallest result is the limiting reactant.
 3. **Forgetting to convert temperature to Kelvin** in gas law calculations.
- $T(\mathrm{K{}) = T(^{\circ}\mathrm{C{}) + 273.15$.
+   $T(\mathrm{K{}) = T(^{\circ}\mathrm{C{}) + 273.15$.
 4. **Using the wrong value of $R$.** Match $R$ to the units of pressure and volume. If $P$ is in atm
- and $V$ in L, use $R = 0.08206$. If $P$ is in Pa and $V$ in m$^3$Use $R = 8.314$.
+   and $V$ in L, use $R = 0.08206$. If $P$ is in Pa and $V$ in m$^3$Use $R = 8.314$.
 5. **Not balancing equations before stoichiometric calculations.** The mole ratio comes from the
- balanced equation.
+   balanced equation.
 6. **Confusing molarity with moles.** $M = n/V$; you must multiply by volume to get moles.
 7. **Including spectator ions in net ionic equations.** Cancel ions that appear unchanged on both
- sides.
+   sides.
 8. **Writing weak acids and bases as ions.** Only strong electrolytes are split in ionic equations.
 9. **Forgetting that gas volumes at STP are 22.4 L/mol** only at exactly 0$^{\circ}$C and 1 atm.
 10. **Incorrect significant figures in stoichiometric calculations.** Use the fewest significant
- figures from the given data.
+    figures from the given data.
 
 ## Practice Questions
 
 1. A compound is 36.5% Na, 25.4% S, and 38.1% O by mass. Find its empirical formula.
 
 2. If $10.0 \mathrm{ g{}$ of $\mathrm{Al{}$ reacts with $15.0 \mathrm{ g{}$ of $\mathrm{Cl{}_2$:
- $2\mathrm{Al{} + 3\mathrm{Cl{}_2 \to 2\mathrm{AlCl{}_3$. Find the limiting reactant and the
- theoretical yield of $\mathrm{AlCl{}_3$.
+   $2\mathrm{Al{} + 3\mathrm{Cl{}_2 \to 2\mathrm{AlCl{}_3$. Find the limiting reactant and the
+   theoretical yield of $\mathrm{AlCl{}_3$.
 
 3. What is the molarity of a solution prepared by dissolving $5.85 \mathrm{ g{}$ of $\mathrm{NaCl{}$
- in enough water to make $250.0 \mathrm{ mL{}$ of solution?
+   in enough water to make $250.0 \mathrm{ mL{}$ of solution?
 
-4. A gas occupies $3.50 \mathrm{ L{}$ at $300 \mathrm{ K{}$ and $1.20 \mathrm{ atm{}$. What volume does
- it occupy at STP?
+4. A gas occupies $3.50 \mathrm{ L{}$ at $300 \mathrm{ K{}$ and $1.20 \mathrm{ atm{}$. What volume
+   does it occupy at STP?
 
 5. Write the net ionic equation for the reaction between $\mathrm{BaCl{}_2(aq)$ and
- $\mathrm{Na{}_2\mathrm{SO{}_4(aq)$.
+   $\mathrm{Na{}_2\mathrm{SO{}_4(aq)$.
 
 6. A $0.150 \mathrm{ M {} \mathrm{H{}_2\mathrm{SO{}_4$ solution is titrated with
- $0.200 \mathrm{ M {} \mathrm{NaOH{}$. If $25.0 \mathrm{ mL{}$ of acid is used, what volume of base
- is required?
+   $0.200 \mathrm{ M {} \mathrm{NaOH{}$. If $25.0 \mathrm{ mL{}$ of acid is used, what volume of
+   base is required?
 
 7. A compound with molar mass $92.0 \mathrm{ g/mol{}$ is 69.6% Mn and 30.4% O. Find the molecular
- formula.
+   formula.
 
-8. Calculate the volume of $\mathrm{CO{}_2$ produced at $25^\circ\mathrm{C{}$ and $1.05 \mathrm{ atm{}$
- when $10.0 \mathrm{ g{}$ of $\mathrm{CaCO{}_3$ decomposes:
- $\mathrm{CaCO{}_3(s) \to \mathrm{CaO{}(s) + \mathrm{CO{}_2(g)$.
+8. Calculate the volume of $\mathrm{CO{}_2$ produced at $25^\circ\mathrm{C{}$ and
+   $1.05 \mathrm{ atm{}$ when $10.0 \mathrm{ g{}$ of $\mathrm{CaCO{}_3$ decomposes:
+   $\mathrm{CaCO{}_3(s) \to \mathrm{CaO{}(s) + \mathrm{CO{}_2(g)$.
 
 9. A $0.100 \mathrm{ M{}$ solution of $\mathrm{AgNO{}_3$ is added to $50.0 \mathrm{ mL{}$ of
- $0.0500 \mathrm{ M{}$ $\mathrm{Na{}_2\mathrm{CrO{}_4$. Calculate the mass of
- $\mathrm{Ag{}_2\mathrm{CrO{}_4$ precipitate formed.
+   $0.0500 \mathrm{ M{}$ $\mathrm{Na{}_2\mathrm{CrO{}_4$. Calculate the mass of
+   $\mathrm{Ag{}_2\mathrm{CrO{}_4$ precipitate formed.
 
 10. In a combustion analysis, $0.250 \mathrm{ g{}$ of an unknown compound produces
- $0.366 \mathrm{ g{}$ of $\mathrm{CO{}_2$ and $0.150 \mathrm{ g{}$ of $\mathrm{H{}_2\mathrm{O{}$. Find
- the empirical formula.
+    $0.366 \mathrm{ g{}$ of $\mathrm{CO{}_2$ and $0.150 \mathrm{ g{}$ of $\mathrm{H{}_2\mathrm{O{}$.
+    Find the empirical formula.
 
 11. $2.00 \mathrm{ g{}$ of $\mathrm{KClO{}_3$ is heated until it decomposes. The oxygen gas produced
- is collected over water at $22^\circ\mathrm{C{}$ and $0.980 \mathrm{ atm{}$. The vapour pressure
- of water at $22^\circ\mathrm{C{}$ is $19.8 \mathrm{ mmHg{}$. Calculate the volume of dry oxygen
- collected.
+    is collected over water at $22^\circ\mathrm{C{}$ and $0.980 \mathrm{ atm{}$. The vapour pressure
+    of water at $22^\circ\mathrm{C{}$ is $19.8 \mathrm{ mmHg{}$. Calculate the volume of dry oxygen
+    collected.
 
 12. Explain the difference between the theoretical yield and the actual yield, and describe three
- factors that can cause the actual yield to be less than the theoretical yield.
+    factors that can cause the actual yield to be less than the theoretical yield.
 
 13. Calculate the molarity of a solution prepared by diluting $15.0 \mathrm{ mL{}$ of
- $6.00 \mathrm{ M {}$ $\mathrm{HCl{}$ to a total volume of $500.0 \mathrm{ mL{}$.
+    $6.00 \mathrm{ M {}$ $\mathrm{HCl{}$ to a total volume of $500.0 \mathrm{ mL{}$.
 
 14. Write balanced molecular, complete ionic, and net ionic equations for the reaction between
- $\mathrm{NiCl{}_2(aq)$ and $\mathrm{NaOH{}(aq)$.
+    $\mathrm{NiCl{}_2(aq)$ and $\mathrm{NaOH{}(aq)$.
 
 15. A mixture of $\mathrm{NaHCO{}_3$ and $\mathrm{NaCl{}$ has a mass of $5.00 \mathrm{ g{}$. When
- heated, the $\mathrm{NaHCO{}_3$ decomposes completely to $\mathrm{Na{}_2\mathrm{CO{}_3$
- $\mathrm{H{}_2\mathrm{O{}$And $\mathrm{CO{}_2$. The mass of the residue is $3.95 \mathrm{ g{}$.
- Calculate the mass of $\mathrm{NaCl{}$ in the original mixture.
+    heated, the $\mathrm{NaHCO{}_3$ decomposes completely to $\mathrm{Na{}_2\mathrm{CO{}_3$
+    $\mathrm{H{}_2\mathrm{O{}$And $\mathrm{CO{}_2$. The mass of the residue is $3.95 \mathrm{ g{}$.
+    Calculate the mass of $\mathrm{NaCl{}$ in the original mixture.
 
-16. What volume of $0.250 \mathrm{ M {} \mathrm{H{}_2\mathrm{SO{}_4$ is needed to completely neutralise
- $30.0 \mathrm{ mL{}$ of $0.400 \mathrm{ M {} \mathrm{KOH{}$?
+16. What volume of $0.250 \mathrm{ M {} \mathrm{H{}_2\mathrm{SO{}_4$ is needed to completely
+    neutralise $30.0 \mathrm{ mL{}$ of $0.400 \mathrm{ M {} \mathrm{KOH{}$?
 
-17. A sample of a hydrate of $\mathrm{MgSO{}_4$ weighing $5.00 \mathrm{ g{}$ is heated until constant
- mass, leaving $2.45 \mathrm{ g{}$ of anhydrous $\mathrm{MgSO{}_4$. Determine the formula of the
- hydrate.
+17. A sample of a hydrate of $\mathrm{MgSO{}_4$ weighing $5.00 \mathrm{ g{}$ is heated until
+    constant mass, leaving $2.45 \mathrm{ g{}$ of anhydrous $\mathrm{MgSO{}_4$. Determine the
+    formula of the hydrate.
 
 18. At $25^\circ\mathrm{C{}$ and $1.00 \mathrm{ atm{}$What is the density of $\mathrm{O{}_2$ gas in
- g/L?
+    g/L?
 
 19. Balance the following redox equation in acidic solution:
- $\mathrm{MnO{}_4^- + \mathrm{Fe{}^{2+} \to \mathrm{Mn{}^{2+} + \mathrm{Fe{}^{3+}$.
+    $\mathrm{MnO{}_4^- + \mathrm{Fe{}^{2+} \to \mathrm{Mn{}^{2+} + \mathrm{Fe{}^{3+}$.
 
 20. A $0.500 \mathrm{ g{}$ sample of a compound containing only C, H, and O is burned in excess
- oxygen, producing $1.10 \mathrm{ g{}$ of $\mathrm{CO{}_2$ and $0.450 \mathrm{ g{}$ of
- $\mathrm{H{}_2\mathrm{O{}$. Find the empirical formula. If the molecular mass is approximately
- $180 \mathrm{ g/mol{}$Determine the molecular formula.
+    oxygen, producing $1.10 \mathrm{ g{}$ of $\mathrm{CO{}_2$ and $0.450 \mathrm{ g{}$ of
+    $\mathrm{H{}_2\mathrm{O{}$. Find the empirical formula. If the molecular mass is approximately
+    $180 \mathrm{ g/mol{}$Determine the molecular formula.
 
 21. Calculate the mass of $\mathrm{AgCl{}$ precipitate formed when $25.0 \mathrm{ mL{}$ of
- $0.150 \mathrm{ M {}$ $\mathrm{AgNO{}_3$ is mixed with $15.0 \mathrm{ mL{}$ of
- $0.200 \mathrm{ M {} \mathrm{MgCl{}_2$.
+    $0.150 \mathrm{ M {}$ $\mathrm{AgNO{}_3$ is mixed with $15.0 \mathrm{ mL{}$ of
+    $0.200 \mathrm{ M {} \mathrm{MgCl{}_2$.
 
 22. A gas mixture contains $0.50 \mathrm{ g{}$ of $\mathrm{N{}_2$ and $0.50 \mathrm{ g{}$ of
- $\mathrm{O{}_2$ in a $2.00 \mathrm{ L{}$ container at $300 \mathrm{ K{}$. Calculate the partial
- pressure of each gas and the total pressure.
+    $\mathrm{O{}_2$ in a $2.00 \mathrm{ L{}$ container at $300 \mathrm{ K{}$. Calculate the partial
+    pressure of each gas and the total pressure.
 
 23. Write the net ionic equation for the reaction between $\mathrm{H{}_2\mathrm{SO{}_4(aq)$ and
- $\mathrm{Ba(OH){}_2(aq)$.
+    $\mathrm{Ba(OH){}_2(aq)$.
 
 24. A student prepares a solution by dissolving $12.5 \mathrm{ g{}$ of
- $\mathrm{CuSO{}_4 \cdot 5\mathrm{H{}_2\mathrm{O{}$ in water to make $250.0 \mathrm{ mL{}$ of
- solution. Calculate the molarity of the solution.
+    $\mathrm{CuSO{}_4 \cdot 5\mathrm{H{}_2\mathrm{O{}$ in water to make $250.0 \mathrm{ mL{}$ of
+    solution. Calculate the molarity of the solution.
 
-25. $4.00 \mathrm{ g{}$ of methane ($\mathrm{CH{}_4$) is burned in excess oxygen. Calculate the volume
- of $\mathrm{CO{}_2$ produced at $125^{\circ}\mathrm{C{}$ and $1.50 \mathrm{ atm{}$.
+25. $4.00 \mathrm{ g{}$ of methane ($\mathrm{CH{}_4$) is burned in excess oxygen. Calculate the
+    volume of $\mathrm{CO{}_2$ produced at $125^{\circ}\mathrm{C{}$ and $1.50 \mathrm{ atm{}$.
 
 26. Balance the following equation and identify the type of reaction:
- $\mathrm{Al{} + \mathrm{HCl{} \to \mathrm{AlCl{}_3 + \mathrm{H{}_2$.
+    $\mathrm{Al{} + \mathrm{HCl{} \to \mathrm{AlCl{}_3 + \mathrm{H{}_2$.
 
 27. A $0.300 \mathrm{ M {} \mathrm{HCl{}$ solution is used to titrate $20.0 \mathrm{ mL{}$ of a
- $\mathrm{Ca(OH){}_2$ solution of unknown concentration. If the titration requires
- $35.0 \mathrm{ mL{}$ of HCl, calculate the molarity of the $\mathrm{Ca(OH){}_2$ solution.
+    $\mathrm{Ca(OH){}_2$ solution of unknown concentration. If the titration requires
+    $35.0 \mathrm{ mL{}$ of HCl, calculate the molarity of the $\mathrm{Ca(OH){}_2$ solution.
 
 ## Practice Problems
 
@@ -724,8 +730,8 @@ Moles of $\mathrm{Cl{}_2$: $30.0 / 70.90 = 0.423 \mathrm{ mol{}$.
 Stoichiometric ratio needed: $2 \mathrm{ Al{} : 3 \mathrm{ Cl{}_2$.
 
 Moles of $\mathrm{Cl{}_2$ needed for $0.371 \mathrm{ mol{}$ $\mathrm{Al{}$:
-$0.371 \times 3/2 = 0.556 \mathrm{ mol{}$. Only $0.423 \mathrm{ mol{}$ available, so $\mathrm{Cl{}_2$
-Is limiting.
+$0.371 \times 3/2 = 0.556 \mathrm{ mol{}$. Only $0.423 \mathrm{ mol{}$ available, so
+$\mathrm{Cl{}_2$ Is limiting.
 
 Theoretical yield of $\mathrm{AlCl{}_3$ from $\mathrm{Cl{}_2$: $0.423 \mathrm{ mol{}$
 $\mathrm{Cl{}_2 \times (2 \mathrm{ mol{} \mathrm{ AlCl{}_3 / 3 \mathrm{ mol{} \mathrm{ Cl{}_2) = 0.282 \mathrm{ mol{}$.
@@ -793,9 +799,9 @@ Molecular formula: $\mathrm{C{}_6\mathrm{H{}_{12}\mathrm{O{}_6$ (glucose).
 <summary>Question 4: Acid-base titration</summary>
 
 $25.0 \mathrm{ mL{}$ of $0.100 \mathrm{ M{}$ $\mathrm{H{}_2\mathrm{SO{}_4$ is titrated with
-$0.200 \mathrm{ M{}$ $\mathrm{NaOH{}$. Calculate the pH of the solution (a) before any $\mathrm{NaOH{}$
-Is added, (b) at the equivalence point, and (c) after $30.0 \mathrm{ mL{}$ of $\mathrm{NaOH{}$ has
-Been added.
+$0.200 \mathrm{ M{}$ $\mathrm{NaOH{}$. Calculate the pH of the solution (a) before any
+$\mathrm{NaOH{}$ Is added, (b) at the equivalence point, and (c) after $30.0 \mathrm{ mL{}$ of
+$\mathrm{NaOH{}$ has Been added.
 
 </details>
 
@@ -803,8 +809,8 @@ Been added.
 <summary>Answer</summary>
 
 (a) Before titration: $\mathrm{H{}_2\mathrm{SO{}_4$ is a strong diprotic acid.
-$[\mathrm{H{}^+] = 2 \times 0.100 = 0.200 \mathrm{ M{}$ (ignoring the second dissociation constant for
-A rough calculation). $\mathrm{pH{} = -\log(0.200) = 0.70$.
+$[\mathrm{H{}^+] = 2 \times 0.100 = 0.200 \mathrm{ M{}$ (ignoring the second dissociation constant
+for A rough calculation). $\mathrm{pH{} = -\log(0.200) = 0.70$.
 
 More precisely, $[\mathrm{H{}^+]$ from complete first dissociation is $0.100 \mathrm{ M{}$And the
 Second dissociation contributes some additional $\mathrm{H{}^+$. But since
@@ -832,17 +838,16 @@ $\mathrm{pH{} = 14 - 1.74 = 12.26$.
 <details>
 <summary>Question 5: Solution dilution and concentration</summary>
 
-How many millilitres of $12.0 \mathrm{ M{}$ $\mathrm{HCl{}$ must be diluted to $500.0 \mathrm{ mL{}$ to
-Prepare a $0.500 \mathrm{ M{}$ solution? Calculate the mass of $\mathrm{NaOH{}$ required to completely
-Neutralise $25.0 \mathrm{ mL{}$ of the diluted solution.
+How many millilitres of $12.0 \mathrm{ M{}$ $\mathrm{HCl{}$ must be diluted to $500.0 \mathrm{ mL{}$
+to Prepare a $0.500 \mathrm{ M{}$ solution? Calculate the mass of $\mathrm{NaOH{}$ required to
+completely Neutralise $25.0 \mathrm{ mL{}$ of the diluted solution.
 
 </details>
 
 <details>
 <summary>Answer</summary>
 
-Using $M_1V_1 = M_2V_2$: $(12.0)(V_1) = (0.500)(500.0)$So
-$V_1 = 250.0 / 12.0 = 20.8 \mathrm{ mL{}$.
+Using $M_1V_1 = M_2V_2$: $(12.0)(V_1) = (0.500)(500.0)$So $V_1 = 250.0 / 12.0 = 20.8 \mathrm{ mL{}$.
 
 Moles of $\mathrm{HCl{}$ in $25.0 \mathrm{ mL{}$ of $0.500 \mathrm{ M{}$:
 $0.0250 \times 0.500 = 0.0125 \mathrm{ mol{}$.

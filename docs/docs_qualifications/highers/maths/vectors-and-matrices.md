@@ -1,6 +1,8 @@
 ---
 title: Vectors and Matrices
-description: "SQA Higher Mathematics: Vectors and Matrices — Higher Vectors; Vector Fundamentals; Vector Arithmetic; magnitude; direction; Magnitude (Modulus):."
+description:
+  'SQA Higher Mathematics: Vectors and Matrices — Higher Vectors; Vector Fundamentals; Vector
+  Arithmetic; magnitude; direction; Magnitude (Modulus):.'
 date: 2026-04-14
 tags:
   - Mathematics
@@ -9,6 +11,7 @@ categories:
   - Mathematics
 slug: vectors-and-matrices
 ---
+
 # Vectors and Matrices
 
 ## Higher Vectors
@@ -17,8 +20,9 @@ slug: vectors-and-matrices
 
 A vector has both **magnitude** and **direction**. A scalar has only magnitude.
 
-A vector in 2D can be written as $\mathbf{'\{'}a{'\}'} = \begin{pmatrix} a_1 \\ a_2 \end{pmatrix}$ or as the
-Column vector $(a_1, a_2)$. In 3D: $\mathbf{'\{'}a{'\}'} = \begin{pmatrix} a_1 \\ a_2 \\ a_3 \end{pmatrix}$.
+A vector in 2D can be written as $\mathbf{'\{'}a{'\}'} = \begin{pmatrix} a_1 \\ a_2 \end{pmatrix}$
+or as the Column vector $(a_1, a_2)$. In 3D:
+$\mathbf{'\{'}a{'\}'} = \begin{pmatrix} a_1 \\ a_2 \\ a_3 \end{pmatrix}$.
 
 **Magnitude (Modulus):**
 
@@ -39,7 +43,8 @@ $\mathbf{'\{'}i{'\}'} = \begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix}$
 $\mathbf{'\{'}j{'\}'} = \begin{pmatrix} 0 \\ 1 \\ 0 \end{pmatrix}$
 $\mathbf{'\{'}k{'\}'} = \begin{pmatrix} 0 \\ 0 \\ 1 \end{pmatrix}$.
 
-Any vector in 3D can be written as $\mathbf{'\{'}a{'\}'} = a_1\mathbf{'\{'}i{'\}'} + a_2\mathbf{'\{'}j{'\}'} + a_3\mathbf{'\{'}k{'\}'}$.
+Any vector in 3D can be written as
+$\mathbf{'\{'}a{'\}'} = a_1\mathbf{'\{'}i{'\}'} + a_2\mathbf{'\{'}j{'\}'} + a_3\mathbf{'\{'}k{'\}'}$.
 
 **Example:** Find the unit vector in the direction of $\mathbf{'\{'}a{'\}'} = (3, -4)$.
 
@@ -57,7 +62,9 @@ $$
 \begin{pmatrix} a_1 \\ a_2 \end{pmatrix} + \begin{pmatrix} b_1 \\ b_2 \end{pmatrix} = \begin{pmatrix} a_1 + b_1 \\ a_2 + b_2 \end{pmatrix}
 $$
 
-Vector addition is commutative ($\mathbf{'\{'}a{'\}'} + \mathbf{'\{'}b{'\}'} = \mathbf{'\{'}b{'\}'} + \mathbf{'\{'}a{'\}'}$) and associative
+Vector addition is commutative
+($\mathbf{'\{'}a{'\}'} + \mathbf{'\{'}b{'\}'} = \mathbf{'\{'}b{'\}'} + \mathbf{'\{'}a{'\}'}$) and
+associative
 ($( \mathbf{'\{'}a{'\}'} + \mathbf{'\{'}b{'\}'}) + \mathbf{'\{'}c{'\}'} = \mathbf{'\{'}a{'\}'} + (\mathbf{'\{'}b{'\}'} + \mathbf{'\{'}c{'\}'})$).
 
 **Scalar Multiplication:**
@@ -77,8 +84,8 @@ $$
 
 Where $\theta$ is the angle between $\mathbf{'\{'}a{'\}'}$ and $\mathbf{'\{'}b{'\}'}$.
 
-**Proof of the dot product formula.** By the cosine rule in the triangle formed by $\mathbf{'\{'}a{'\}'}$
-$\mathbf{'\{'}b{'\}'}$And $\mathbf{'\{'}a{'\}'} - \mathbf{'\{'}b{'\}'}$:
+**Proof of the dot product formula.** By the cosine rule in the triangle formed by
+$\mathbf{'\{'}a{'\}'}$ $\mathbf{'\{'}b{'\}'}$And $\mathbf{'\{'}a{'\}'} - \mathbf{'\{'}b{'\}'}$:
 
 $$
 |\mathbf{'\{'}a{'\}'} - \mathbf{'\{'}b{'\}'}|^2 = |\mathbf{'\{'}a{'\}'}|^2 + |\mathbf{'\{'}b{'\}'}|^2 - 2|\mathbf{'\{'}a{'\}'}||\mathbf{'\{'}b{'\}'}|\cos\theta
@@ -87,10 +94,12 @@ $$
 Expanding the left side:
 $(\mathbf{'\{'}a{'\}'} - \mathbf{'\{'}b{'\}'}) \cdot (\mathbf{'\{'}a{'\}'} - \mathbf{'\{'}b{'\}'}) = |\mathbf{'\{'}a{'\}'}|^2 - 2\mathbf{'\{'}a{'\}'} \cdot \mathbf{'\{'}b{'\}'} + |\mathbf{'\{'}b{'\}'}|^2$.
 
-Comparing: $-2\mathbf{'\{'}a{'\}'} \cdot \mathbf{'\{'}b{'\}'} = -2|\mathbf{'\{'}a{'\}'}||\mathbf{'\{'}b{'\}'}|\cos\theta$Hence
+Comparing:
+$-2\mathbf{'\{'}a{'\}'} \cdot \mathbf{'\{'}b{'\}'} = -2|\mathbf{'\{'}a{'\}'}||\mathbf{'\{'}b{'\}'}|\cos\theta$Hence
 $\mathbf{'\{'}a{'\}'} \cdot \mathbf{'\{'}b{'\}'} = |\mathbf{'\{'}a{'\}'}||\mathbf{'\{'}b{'\}'}|\cos\theta$.
 
-**Example:** Find the angle between $\mathbf{'\{'}a{'\}'} = (2, 1, -1)$ and $\mathbf{'\{'}b{'\}'} = (1, -3, 2)$.
+**Example:** Find the angle between $\mathbf{'\{'}a{'\}'} = (2, 1, -1)$ and
+$\mathbf{'\{'}b{'\}'} = (1, -3, 2)$.
 
 $$
 \mathbf{'\{'}a{'\}'} \cdot \mathbf{'\{'}b{'\}'} = 2(1) + 1(-3) + (-1)(2) = 2 - 3 - 2 = -3
@@ -117,7 +126,8 @@ $$
 The **position vector** of point $A$ relative to an origin $O$ is
 $\overrightarrow{OA} = \mathbf{'\{'}a{'\}'}$.
 
-The **displacement** from $A$ to $B$ is $\overrightarrow{AB} = \mathbf{'\{'}b{'\}'} - \mathbf{'\{'}a{'\}'}$.
+The **displacement** from $A$ to $B$ is
+$\overrightarrow{AB} = \mathbf{'\{'}b{'\}'} - \mathbf{'\{'}a{'\}'}$.
 
 **Triangle law of vector addition:**
 $\overrightarrow{AB} + \overrightarrow{BC} = \overrightarrow{AC}$.
@@ -136,15 +146,16 @@ $$
 ### Properties of the Scalar Product
 
 - $\mathbf{'\{'}a{'\}'} \cdot \mathbf{'\{'}a{'\}'} = |\mathbf{'\{'}a{'\}'}|^2$
-- $\mathbf{'\{'}a{'\}'} \cdot \mathbf{'\{'}b{'\}'} = 0$ if and only if $\mathbf{'\{'}a{'\}'}$ is perpendicular to $\mathbf{'\{'}b{'\}'}$
- (for non-zero vectors)
-- $\mathbf{'\{'}a{'\}'} \cdot \mathbf{'\{'}b{'\}'} = \mathbf{'\{'}b{'\}'} \cdot \mathbf{'\{'}a{'\}'}$ (commutative)
+- $\mathbf{'\{'}a{'\}'} \cdot \mathbf{'\{'}b{'\}'} = 0$ if and only if $\mathbf{'\{'}a{'\}'}$ is
+  perpendicular to $\mathbf{'\{'}b{'\}'}$ (for non-zero vectors)
+- $\mathbf{'\{'}a{'\}'} \cdot \mathbf{'\{'}b{'\}'} = \mathbf{'\{'}b{'\}'} \cdot \mathbf{'\{'}a{'\}'}$
+  (commutative)
 - $\mathbf{'\{'}a{'\}'} \cdot (\mathbf{'\{'}b{'\}'} + \mathbf{'\{'}c{'\}'}) = \mathbf{'\{'}a{'\}'} \cdot \mathbf{'\{'}b{'\}'} + \mathbf{'\{'}a{'\}'} \cdot \mathbf{'\{'}c{'\}'}$
- (distributive)
+  (distributive)
 - $\mathbf{'\{'}a{'\}'} \cdot (k\mathbf{'\{'}b{'\}'}) = k(\mathbf{'\{'}a{'\}'} \cdot \mathbf{'\{'}b{'\}'})$
 
-**Example:** Determine the value of $k$ for which the vectors $\mathbf{'\{'}a{'\}'} = (k, 2, -1)$ and
-$\mathbf{'\{'}b{'\}'} = (3, k, 4)$ are perpendicular.
+**Example:** Determine the value of $k$ for which the vectors $\mathbf{'\{'}a{'\}'} = (k, 2, -1)$
+and $\mathbf{'\{'}b{'\}'} = (3, k, 4)$ are perpendicular.
 
 $$\mathbf{'\{'}a{'\}'} \cdot \mathbf{'\{'}b{'\}'} = 0$$
 
@@ -267,8 +278,9 @@ $$
 
 ### Solving Systems of Linear Equations
 
-A system $A\mathbf{'\{'}x{'\}'} = \mathbf{'\{'}b{'\}'}$ has solution $\mathbf{'\{'}x{'\}'} = A^{-1}\mathbf{'\{'}b{'\}'}$ (provided $A$ is
-Invertible). If $\det A = 0$The system has either no solutions or infinitely many solutions.
+A system $A\mathbf{'\{'}x{'\}'} = \mathbf{'\{'}b{'\}'}$ has solution
+$\mathbf{'\{'}x{'\}'} = A^{-1}\mathbf{'\{'}b{'\}'}$ (provided $A$ is Invertible). If $\det A = 0$The
+system has either no solutions or infinitely many solutions.
 
 **Example:** Solve the system:
 
@@ -284,12 +296,12 @@ Solution: $x = -3$$y = 4$.
 
 **2D Transformations:**
 
-| Transformation | Matrix |
+| Transformation                    | Matrix                                                                              |
 | --------------------------------- | ----------------------------------------------------------------------------------- |
-| Reflection in $x$-axis | $\begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}$ |
-| Reflection in $y$-axis | $\begin{pmatrix} -1 & 0 \\ 0 & 1 \end{pmatrix}$ |
+| Reflection in $x$-axis            | $\begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}$                                     |
+| Reflection in $y$-axis            | $\begin{pmatrix} -1 & 0 \\ 0 & 1 \end{pmatrix}$                                     |
 | Rotation by $\theta$ about origin | $\begin{pmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{pmatrix}$ |
-| Enlargement by scale factor $k$ | $\begin{pmatrix} k & 0 \\ 0 & k \end{pmatrix}$ |
+| Enlargement by scale factor $k$   | $\begin{pmatrix} k & 0 \\ 0 & k \end{pmatrix}$                                      |
 
 The determinant of a transformation matrix gives the area scale factor. A negative determinant
 Indicates the transformation involves a reflection.
@@ -325,7 +337,8 @@ This matrix represents an enlargement by scale factor 1 (i.e., the identity/no t
 
 ### Vector Product (Cross Product)
 
-The vector product of $\mathbf{'\{'}a{'\}'} = (a_1, a_2, a_3)$ and $\mathbf{'\{'}b{'\}'} = (b_1, b_2, b_3)$ is:
+The vector product of $\mathbf{'\{'}a{'\}'} = (a_1, a_2, a_3)$ and
+$\mathbf{'\{'}b{'\}'} = (b_1, b_2, b_3)$ is:
 
 $$
 \mathbf{'\{'}a{'\}'} \times \mathbf{'\{'}b{'\}'} = \begin{vmatrix} \mathbf{'\{'}i{'\}'} & \mathbf{'\{'}j{'\}'} & \mathbf{'\{'}k{'\}'} \\ a_1 & a_2 & a_3 \\ b_1 & b_2 & b_3 \end{vmatrix} = \begin{pmatrix} a_2 b_3 - a_3 b_2 \\ a_3 b_1 - a_1 b_3 \\ a_1 b_2 - a_2 b_1 \end{pmatrix}
@@ -333,17 +346,20 @@ $$
 
 **Properties:**
 
-- $\mathbf{'\{'}a{'\}'} \times \mathbf{'\{'}b{'\}'} = -(\mathbf{'\{'}b{'\}'} \times \mathbf{'\{'}a{'\}'})$ (anti-commutative)
+- $\mathbf{'\{'}a{'\}'} \times \mathbf{'\{'}b{'\}'} = -(\mathbf{'\{'}b{'\}'} \times \mathbf{'\{'}a{'\}'})$
+  (anti-commutative)
 - $|\mathbf{'\{'}a{'\}'} \times \mathbf{'\{'}b{'\}'}| = |\mathbf{'\{'}a{'\}'}||\mathbf{'\{'}b{'\}'}|\sin\theta$
-- $\mathbf{'\{'}a{'\}'} \times \mathbf{'\{'}b{'\}'}$ is perpendicular to both $\mathbf{'\{'}a{'\}'}$ and $\mathbf{'\{'}b{'\}'}$
-- $\mathbf{'\{'}a{'\}'} \times \mathbf{'\{'}b{'\}'} = \mathbf{'\{'}0{'\}'}$ if $\mathbf{'\{'}a{'\}'}$ and $\mathbf{'\{'}b{'\}'}$ are parallel
+- $\mathbf{'\{'}a{'\}'} \times \mathbf{'\{'}b{'\}'}$ is perpendicular to both $\mathbf{'\{'}a{'\}'}$
+  and $\mathbf{'\{'}b{'\}'}$
+- $\mathbf{'\{'}a{'\}'} \times \mathbf{'\{'}b{'\}'} = \mathbf{'\{'}0{'\}'}$ if
+  $\mathbf{'\{'}a{'\}'}$ and $\mathbf{'\{'}b{'\}'}$ are parallel
 
-**Geometric interpretation:** $|\mathbf{'\{'}a{'\}'} \times \mathbf{'\{'}b{'\}'}|$ is the area of the parallelogram with
-Sides $\mathbf{'\{'}a{'\}'}$ and $\mathbf{'\{'}b{'\}'}$. The area of the triangle is
-$\frac{1}{2}|\mathbf{'\{'}a{'\}'} \times \mathbf{'\{'}b{'\}'}|$.
+**Geometric interpretation:** $|\mathbf{'\{'}a{'\}'} \times \mathbf{'\{'}b{'\}'}|$ is the area of
+the parallelogram with Sides $\mathbf{'\{'}a{'\}'}$ and $\mathbf{'\{'}b{'\}'}$. The area of the
+triangle is $\frac{1}{2}|\mathbf{'\{'}a{'\}'} \times \mathbf{'\{'}b{'\}'}|$.
 
-**Example:** Find $\mathbf{'\{'}a{'\}'} \times \mathbf{'\{'}b{'\}'}$ where $\mathbf{'\{'}a{'\}'} = (1, 2, 3)$ and
-$\mathbf{'\{'}b{'\}'} = (4, -1, 2)$.
+**Example:** Find $\mathbf{'\{'}a{'\}'} \times \mathbf{'\{'}b{'\}'}$ where
+$\mathbf{'\{'}a{'\}'} = (1, 2, 3)$ and $\mathbf{'\{'}b{'\}'} = (4, -1, 2)$.
 
 $$
 \mathbf{'\{'}a{'\}'} \times \mathbf{'\{'}b{'\}'} = \begin{pmatrix} (2)(2) - (3)(-1) \\ (3)(4) - (1)(2) \\ (1)(-1) - (2)(4) \end{pmatrix} = \begin{pmatrix} 4 + 3 \\ 12 - 2 \\ -1 - 8 \end{pmatrix} = \begin{pmatrix} 7 \\ 10 \\ -9 \end{pmatrix}
@@ -359,17 +375,18 @@ $$
 [\mathbf{'\{'}a{'\}'}, \mathbf{'\{'}b{'\}'}, \mathbf{'\{'}c{'\}'}] = \mathbf{'\{'}a{'\}'} \cdot (\mathbf{'\{'}b{'\}'} \times \mathbf{'\{'}c{'\}'})
 $$
 
-This equals the volume of the parallelepiped formed by vectors $\mathbf{'\{'}a{'\}'}$$\mathbf{'\{'}b{'\}'}$And
-$\mathbf{'\{'}c{'\}'}$.
+This equals the volume of the parallelepiped formed by vectors
+$\mathbf{'\{'}a{'\}'}$$\mathbf{'\{'}b{'\}'}$And $\mathbf{'\{'}c{'\}'}$.
 
-The three vectors are coplanar if and only if $[\mathbf{'\{'}a{'\}'}, \mathbf{'\{'}b{'\}'}, \mathbf{'\{'}c{'\}'}] = 0$.
+The three vectors are coplanar if and only if
+$[\mathbf{'\{'}a{'\}'}, \mathbf{'\{'}b{'\}'}, \mathbf{'\{'}c{'\}'}] = 0$.
 
 **Properties:**
 
 - $[\mathbf{'\{'}a{'\}'}, \mathbf{'\{'}b{'\}'}, \mathbf{'\{'}c{'\}'}] = [\mathbf{'\{'}b{'\}'}, \mathbf{'\{'}c{'\}'}, \mathbf{'\{'}a{'\}'}] = [\mathbf{'\{'}c{'\}'}, \mathbf{'\{'}a{'\}'}, \mathbf{'\{'}b{'\}'}]$
- (cyclic permutation)
-- $[\mathbf{'\{'}a{'\}'}, \mathbf{'\{'}b{'\}'}, \mathbf{'\{'}c{'\}'}] = -[\mathbf{'\{'}b{'\}'}, \mathbf{'\{'}a{'\}'}, \mathbf{'\{'}c{'\}'}]$ (swapping two
- vectors negates)
+  (cyclic permutation)
+- $[\mathbf{'\{'}a{'\}'}, \mathbf{'\{'}b{'\}'}, \mathbf{'\{'}c{'\}'}] = -[\mathbf{'\{'}b{'\}'}, \mathbf{'\{'}a{'\}'}, \mathbf{'\{'}c{'\}'}]$
+  (swapping two vectors negates)
 
 **Example:** Show that the vectors $(1, 2, -1)$$(3, 1, 2)$And $(0, 5, -5)$ are coplanar.
 
@@ -381,7 +398,8 @@ $$
 \mathbf{'\{'}a{'\}'} \cdot (\mathbf{'\{'}b{'\}'} \times \mathbf{'\{'}c{'\}'}) = 1(-15) + 2(-5) + (-1)(15) = -15 - 10 - 15 = -40
 $$
 
-Wait, that is not zero. Let me recompute. $\mathbf{'\{'}b{'\}'} = (3, 1, 2)$$\mathbf{'\{'}c{'\}'} = (0, 5, -5)$.
+Wait, that is not zero. Let me recompute.
+$\mathbf{'\{'}b{'\}'} = (3, 1, 2)$$\mathbf{'\{'}c{'\}'} = (0, 5, -5)$.
 
 $$
 \mathbf{'\{'}b{'\}'} \times \mathbf{'\{'}c{'\}'} = \begin{pmatrix} 1(-5) - 2(5) \\ 2(0) - 3(-5) \\ 3(5) - 1(0) \end{pmatrix} = \begin{pmatrix} -15 \\ 15 \\ 15 \end{pmatrix}
@@ -398,8 +416,8 @@ Confirmed coplanar. $\blacksquare$
 
 ### Lines and Planes in 3D
 
-**Equation of a plane:** $\mathbf{'\{'}r{'\}'} \cdot \mathbf{'\{'}n{'\}'} = d$Where $\mathbf{'\{'}n{'\}'}$ is the normal vector
-And $d$ is a constant.
+**Equation of a plane:** $\mathbf{'\{'}r{'\}'} \cdot \mathbf{'\{'}n{'\}'} = d$Where
+$\mathbf{'\{'}n{'\}'}$ is the normal vector And $d$ is a constant.
 
 In Cartesian form: $ax + by + cz = d$.
 
@@ -411,8 +429,8 @@ $$
 \cos\theta = \frac{|\mathbf{'\{'}n{'\}'}_1 \cdot \mathbf{'\{'}n{'\}'}_2|}{|\mathbf{'\{'}n{'\}'}_1||\mathbf{'\{'}n{'\}'}_2|}
 $$
 
-**Angle between a line and a plane:** If the line has direction $\mathbf{'\{'}d{'\}'}$ and the plane has
-Normal $\mathbf{'\{'}n{'\}'}$The angle $\phi$ between the line and the plane satisfies:
+**Angle between a line and a plane:** If the line has direction $\mathbf{'\{'}d{'\}'}$ and the plane
+has Normal $\mathbf{'\{'}n{'\}'}$The angle $\phi$ between the line and the plane satisfies:
 
 $$
 \sin\phi = \frac{|\mathbf{'\{'}d{'\}'} \cdot \mathbf{'\{'}n{'\}'}|}{|\mathbf{'\{'}d{'\}'}||\mathbf{'\{'}n{'\}'}|}
@@ -424,8 +442,8 @@ $$
 D = \frac{|\mathbf{'\{'}n{'\}'} \cdot \mathbf{'\{'}r{'\}'}_0 - d_0|}{|\mathbf{'\{'}n{'\}'}|}
 $$
 
-Where $\mathbf{'\{'}r{'\}'}_0$ is the position vector of the point and $d_0$ is the constant in the plane
-Equation.
+Where $\mathbf{'\{'}r{'\}'}_0$ is the position vector of the point and $d_0$ is the constant in the
+plane Equation.
 
 **Example:** Find the equation of the plane through $(1, 2, -1)$$(3, 0, 2)$And $(0, 1, 4)$.
 
@@ -447,9 +465,10 @@ $$
 
 Two non-parallel planes intersect in a line. To find the line of intersection:
 
-1. The direction vector is $\mathbf{'\{'}d{'\}'} = \mathbf{'\{'}n{'\}'}_1 \times \mathbf{'\{'}n{'\}'}_2$
+1. The direction vector is
+   $\mathbf{'\{'}d{'\}'} = \mathbf{'\{'}n{'\}'}_1 \times \mathbf{'\{'}n{'\}'}_2$
 2. Find a point on both planes by setting one variable (e.g., $z = 0$) and solving the resulting
- $2 \times 2$ system
+   $2 \times 2$ system
 
 **Example:** Find the line of intersection of $x + y + z = 6$ and $2x - y + z = 3$.
 
@@ -535,8 +554,8 @@ $$
 
 ### Eigenvalues and Eigenvectors (Advanced Higher)
 
-A scalar $\lambda$ is an **eigenvalue** of $A$ if there exists a non-zero vector $\mathbf{'\{'}v{'\}'}$ such
-That:
+A scalar $\lambda$ is an **eigenvalue** of $A$ if there exists a non-zero vector
+$\mathbf{'\{'}v{'\}'}$ such That:
 
 $$
 A\mathbf{'\{'}v{'\}'} = \lambda\mathbf{'\{'}v{'\}'}
@@ -603,22 +622,24 @@ $$
 
 $\lambda = 6$ or $\lambda = 3$.
 
-For $\lambda = 6$: $\begin{pmatrix} -1 & 2 \\ 1 & -2 \end{pmatrix}\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'}$Giving
+For $\lambda = 6$:
+$\begin{pmatrix} -1 & 2 \\ 1 & -2 \end{pmatrix}\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'}$Giving
 $v_1 = 2v_2$. Eigenvector: $\begin{pmatrix} 2 \\ 1 \end{pmatrix}$.
 
-For $\lambda = 3$: $\begin{pmatrix} 2 & 2 \\ 1 & 1 \end{pmatrix}\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'}$Giving
+For $\lambda = 3$:
+$\begin{pmatrix} 2 & 2 \\ 1 & 1 \end{pmatrix}\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'}$Giving
 $v_1 = -v_2$. Eigenvector: $\begin{pmatrix} 1 \\ -1 \end{pmatrix}$.
 
 ### Diagonalisation (Advanced Higher)
 
 If an $n \times n$ matrix $A$ has $n$ linearly independent eigenvectors, it can be diagonalised:
-$A = PDP^{-1}$Where $D$ is a diagonal matrix containing the eigenvalues and $P$ has the
-Eigenvectors as columns.
+$A = PDP^{-1}$Where $D$ is a diagonal matrix containing the eigenvalues and $P$ has the Eigenvectors
+as columns.
 
 **Applications:**
 
 - Computing $A^k = PD^kP^{-1}$ is efficient because $D^k$ is trivial (just raise diagonal entries to
- power $k$).
+  power $k$).
 - Solving systems of differential equations.
 
 ---
@@ -626,52 +647,54 @@ Eigenvectors as columns.
 ## Common Pitfalls
 
 1. **Confusing scalar and vector products:** The scalar product gives a scalar (number); the vector
- product gives a vector perpendicular to both inputs.
+   product gives a vector perpendicular to both inputs.
 
-2. **Matrix multiplication is not commutative:** , $AB \neq BA$. Always multiply in the
- specified order.
+2. **Matrix multiplication is not commutative:** , $AB \neq BA$. Always multiply in the specified
+   order.
 
 3. **Dimension mismatch:** You can only multiply an $m \times n$ matrix by an $n \times p$ matrix.
- The "inner dimensions" must match.
+   The "inner dimensions" must match.
 
-4. **Forgetting the determinant in the inverse:** The inverse is $\dfrac{1}{\det A} \mathrm{adj{}(A)$
- not just $\mathrm{adj{}(A)$. Forgetting the $1/\det A$ factor gives a wrong answer unless
- $\det A = 1$.
+4. **Forgetting the determinant in the inverse:** The inverse is
+   $\dfrac{1}{\det A} \mathrm{adj{}(A)$ not just $\mathrm{adj{}(A)$. Forgetting the $1/\det A$
+   factor gives a wrong answer unless $\det A = 1$.
 
 5. **Normal vector direction:** The normal to a plane can point in either direction; check
- consistency when computing angles. The angle between planes should be between $0$ and $\pi/2$.
+   consistency when computing angles. The angle between planes should be between $0$ and $\pi/2$.
 
 6. **Eigenvector scaling:** Eigenvectors are not unique -- any non-zero scalar multiple is also an
- eigenvector. Always state the direction, not a specific magnitude.
+   eigenvector. Always state the direction, not a specific magnitude.
 
 7. **Sign errors in the cross product:** The cross product is anti-commutative:
- $\mathbf{'\{'}a{'\}'} \times \mathbf{'\{'}b{'\}'} = -(\mathbf{'\{'}b{'\}'} \times \mathbf{'\{'}a{'\}'})$. Getting the order wrong negates
- the result.
+   $\mathbf{'\{'}a{'\}'} \times \mathbf{'\{'}b{'\}'} = -(\mathbf{'\{'}b{'\}'} \times \mathbf{'\{'}a{'\}'})$.
+   Getting the order wrong negates the result.
 
 8. **Cofactor sign errors:** The cofactor $C_{ij}$ includes a factor of $(-1)^{i+j}$. For position
- $(2, 3)$This is $(-1)^5 = -1$. Getting the sign wrong invalidates the entire inverse.
+   $(2, 3)$This is $(-1)^5 = -1$. Getting the sign wrong invalidates the entire inverse.
 
 9. **Confusing rotation direction:** A positive angle in the rotation matrix represents
- anticlockwise rotation. For clockwise rotation by $\theta$Use $-\theta$ or swap the signs of
- the off-diagonal entries.
+   anticlockwise rotation. For clockwise rotation by $\theta$Use $-\theta$ or swap the signs of the
+   off-diagonal entries.
 
 ---
 
 ## Practice Questions
 
 1. Given $\mathbf{'\{'}a{'\}'} = (2, -1, 3)$ and $\mathbf{'\{'}b{'\}'} = (4, 2, -1)$Find
- $\mathbf{'\{'}a{'\}'} \cdot \mathbf{'\{'}b{'\}'}$$|\mathbf{'\{'}a{'\}'}|$$|\mathbf{'\{'}b{'\}'}|$And the angle between them.
+   $\mathbf{'\{'}a{'\}'} \cdot \mathbf{'\{'}b{'\}'}$$|\mathbf{'\{'}a{'\}'}|$$|\mathbf{'\{'}b{'\}'}|$And
+   the angle between them.
 
 2. Find the equation of the plane containing the points $(1, 0, 2)$$(3, 1, -1)$And $(0, 2, 4)$.
 
-3. Calculate $\mathbf{'\{'}a{'\}'} \times \mathbf{'\{'}b{'\}'}$ for $\mathbf{'\{'}a{'\}'} = (1, 3, -2)$ and
- $\mathbf{'\{'}b{'\}'} = (4, -1, 5)$. Verify that $\mathbf{'\{'}a{'\}'} \times \mathbf{'\{'}b{'\}'}$ is perpendicular to both
- $\mathbf{'\{'}a{'\}'}$ and $\mathbf{'\{'}b{'\}'}$.
+3. Calculate $\mathbf{'\{'}a{'\}'} \times \mathbf{'\{'}b{'\}'}$ for
+   $\mathbf{'\{'}a{'\}'} = (1, 3, -2)$ and $\mathbf{'\{'}b{'\}'} = (4, -1, 5)$. Verify that
+   $\mathbf{'\{'}a{'\}'} \times \mathbf{'\{'}b{'\}'}$ is perpendicular to both
+   $\mathbf{'\{'}a{'\}'}$ and $\mathbf{'\{'}b{'\}'}$.
 
 4. Find the eigenvalues and eigenvectors of $\begin{pmatrix} 5 & 2 \\ 1 & 4 \end{pmatrix}$.
 
 5. Compute the determinant and inverse of
- $\begin{pmatrix} 2 & 0 & 1 \\ -1 & 3 & 2 \\ 1 & 1 & -1 \end{pmatrix}$.
+   $\begin{pmatrix} 2 & 0 & 1 \\ -1 & 3 & 2 \\ 1 & 1 & -1 \end{pmatrix}$.
 
 6. Show that the vectors $(1, 2, -1)$$(3, 1, 2)$And $(0, 5, -5)$ are coplanar.
 
@@ -686,22 +709,22 @@ $$2x + y - z = 8$$ $$x - y + 3z = 1$$ $$3x + 2y + z = 11$$
 10. Find the angle between the planes $2x - y + 2z = 5$ and $x + 3y - z = 2$.
 
 11. Use the matrix $\begin{pmatrix} 3 & 0 \\ 0 & 3 \end{pmatrix}$ to describe the transformation.
- What is the relationship between this matrix and $\begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}$?
+    What is the relationship between this matrix and $\begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}$?
 
 12. Find the area of the triangle with vertices $A(1, 0, 2)$$B(3, -1, 4)$And $C(0, 2, -1)$.
 
-13. Given $\overrightarrow{OA} = (1, -1, 3)$ and $\overrightarrow{OB} = (4, 2, -1)$Find the
- position vector of the point $P$ on $AB$ such that $AP : PB = 3 : 1$.
+13. Given $\overrightarrow{OA} = (1, -1, 3)$ and $\overrightarrow{OB} = (4, 2, -1)$Find the position
+    vector of the point $P$ on $AB$ such that $AP : PB = 3 : 1$.
 
 14. Find the angle between the lines $\mathbf{'\{'}r{'\}'} = (0, 0, 0) + s(1, 2, -1)$ and
- $\mathbf{'\{'}r{'\}'} = (1, 1, 0) + t(2, -1, 3)$.
+    $\mathbf{'\{'}r{'\}'} = (1, 1, 0) + t(2, -1, 3)$.
 
 15. A $2 \times 2$ matrix $A$ has eigenvalues $\lambda_1 = 2$ and $\lambda_2 = 5$ with corresponding
- eigenvectors $\begin{pmatrix} 1 \\ 1 \end{pmatrix}$ and $\begin{pmatrix} 1 \\ -2 \end{pmatrix}$.
- Find $A$ and use it to compute $A^3$.
+    eigenvectors $\begin{pmatrix} 1 \\ 1 \end{pmatrix}$ and $\begin{pmatrix} 1 \\ -2 \end{pmatrix}$.
+    Find $A$ and use it to compute $A^3$.
 
 16. Reflect the point $(2, 5)$ in the line $y = x$ using a matrix method. Verify your answer
- geometrically.
+    geometrically.
 
 ## Summary
 

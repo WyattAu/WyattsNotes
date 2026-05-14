@@ -1,7 +1,9 @@
 ---
 id: dns
 title: DNS
-description: "DNS — Domain Levels; FQDN (Fully Qualified Domain Name); Root Name Servers; TLD Name Servers with worked examples and exam-style questions."
+description:
+  'DNS — Domain Levels; FQDN (Fully Qualified Domain Name); Root Name Servers; TLD Name Servers with
+  worked examples and exam-style questions.'
 slug: dns
 sidebar_position: 5
 tags:
@@ -9,6 +11,7 @@ tags:
 categories:
   - Networking
 ---
+
 ## Overview
 
 The Domain Name System (DNS) is the Internet's hierarchical, distributed database that maps
@@ -53,14 +56,14 @@ graph TD
 ### Domain Levels
 
 - **Root zone (`.`):** The top of the hierarchy. Managed by ICANN. Operated by 13 logical root
- server networks (A through M), implemented as anycast clusters with over 1,700 server instances
- worldwide.
+  server networks (A through M), implemented as anycast clusters with over 1,700 server instances
+  worldwide.
 - **Top-Level Domains (TLDs):** Directly below the root. Includes generic TLDs (`.com``.org`
- `.net``.dev`) and country-code TLDs (`.uk``.de``.jp``.au`).
+  `.net``.dev`) and country-code TLDs (`.uk``.de``.jp``.au`).
 - **Second-Level Domains (SLDs):** Registered by organizations and individuals (e.g., `example.com`
- `google.com`).
+  `google.com`).
 - **Subdomains:** Delegated by the SLD owner (e.g., `www.example.com``api.example.com`
- `us-east-1.api.example.com`).
+  `us-east-1.api.example.com`).
 
 ### FQDN (Fully Qualified Domain Name)
 
@@ -81,17 +84,17 @@ Case-insensitive (`EXAMPLE.COM` = `example.com`).
 Operate the root zone, which contains delegations to all TLD name servers. There are 13 logical root
 Server networks (A-M), each identified by a letter and an IP address:
 
-| Letter | Operator | IPv4 | IPv6 |
+| Letter | Operator | IPv4          | IPv6                |
 | ------ | -------- | ------------- | ------------------- |
-| A | Verisign | 198.41.0.4 | 2001:503:ba3e::2:30 |
-| B | USC/ISI | 199.9.14.201 | 2001:478:65::53 |
-| C | Cogent | 192.33.4.12 | 2001:500:2::c |
-| D | Maryland | 199.7.91.13 | 2001:500:9d::d |
-| F | IANA | 192.5.6.30 | 2001:500:2f::f |
-| J | Verisign | 192.58.128.30 | 2001:503:c27::2:30 |
-| K | RIPE NCC | 193.0.14.129 | 2001:7fd::1 |
-| L | ICANN | 199.7.83.42 | 2001:500:9f::42 |
-| M | WIDE | 202.12.27.33 | 2001:dc3::35 |
+| A      | Verisign | 198.41.0.4    | 2001:503:ba3e::2:30 |
+| B      | USC/ISI  | 199.9.14.201  | 2001:478:65::53     |
+| C      | Cogent   | 192.33.4.12   | 2001:500:2::c       |
+| D      | Maryland | 199.7.91.13   | 2001:500:9d::d      |
+| F      | IANA     | 192.5.6.30    | 2001:500:2f::f      |
+| J      | Verisign | 192.58.128.30 | 2001:503:c27::2:30  |
+| K      | RIPE NCC | 193.0.14.129  | 2001:7fd::1         |
+| L      | ICANN    | 199.7.83.42   | 2001:500:9f::42     |
+| M      | WIDE     | 202.12.27.33  | 2001:dc3::35        |
 
 Each root server network operates anycast instances worldwide, so a query to "root server A" from
 Tokyo likely reaches a different physical server than from New York.
@@ -99,8 +102,8 @@ Tokyo likely reaches a different physical server than from New York.
 ### TLD Name Servers
 
 Authoritative for their TLD. The `.com` TLD servers know which name servers are authoritative for
-`example.com``google.com`Etc. They do not know the IP addresses -- they only know which servers
-To ask next.
+`example.com``google.com`Etc. They do not know the IP addresses -- they only know which servers To
+ask next.
 
 ### Authoritative Name Servers
 
@@ -112,7 +115,7 @@ Authoritative name servers are further divided:
 
 - **Primary (master):** The authoritative source. Zone files are edited here.
 - **Secondary (slave):** Pull zone data from the primary via zone transfers (AXFR/IXFR). Provide
- redundancy and load distribution.
+  redundancy and load distribution.
 
 ### Recursive (Caching) Name Servers
 
@@ -242,8 +245,8 @@ Geographic coordinates.
 
 ## DNS Resolution Process
 
-When an application needs to resolve `www.example.com`The recursive resolver performs the
-Following steps:
+When an application needs to resolve `www.example.com`The recursive resolver performs the Following
+steps:
 
 ```mermaid
 sequenceDiagram
@@ -268,10 +271,10 @@ sequenceDiagram
 ### Recursive vs Iterative Queries
 
 - **Recursive query:** The client asks the resolver to get the final answer. The resolver does all
- the work. This is what your laptop sends to its configured DNS server.
+  the work. This is what your laptop sends to its configured DNS server.
 - **Iterative query:** The server returns the best answer it has, which may be a referral to another
- server. Recursive resolvers use iterative queries when talking to root, TLD, and authoritative
- servers.
+  server. Recursive resolvers use iterative queries when talking to root, TLD, and authoritative
+  servers.
 
 ### CNAME Chasing
 
@@ -285,12 +288,12 @@ Depth to prevent infinite loops.
 Caching is critical to DNS performance. Without it, every DNS query would traverse the full
 Hierarchy from root to authoritative server. Caching happens at three levels:
 
-1. **Browser cache:** Chrome, Firefox, and Safari cache DNS responses. Chrome caches for
- 60 seconds regardless of TTL.
+1. **Browser cache:** Chrome, Firefox, and Safari cache DNS responses. Chrome caches for 60 seconds
+   regardless of TTL.
 2. **Operating system cache:** The OS resolver (`systemd-resolved``nscd``mDNSResponder`) caches
- responses for the TTL specified in the DNS response.
+   responses for the TTL specified in the DNS response.
 3. **Recursive resolver cache:** The recursive resolver (8.8.8.8, your ISP's resolver) caches
- responses for the TTL specified in the DNS response.
+   responses for the TTL specified in the DNS response.
 
 ### TTL (Time to Live)
 
@@ -306,11 +309,11 @@ Querying the authoritative server again.
 **TTL trade-offs:**
 
 - **Short TTLs (60-300 seconds):** Changes propagate quickly. Higher query volume to authoritative
- servers. Good for records that change frequently (e.g., failover IPs, API endpoints).
+  servers. Good for records that change frequently (e.g., failover IPs, API endpoints).
 - **Long TTLs (3600-86400 seconds):** Lower query volume. Better cache hit rates. Slower propagation
- of changes. Good for stable records (e.g., MX, NS).
+  of changes. Good for stable records (e.g., MX, NS).
 - **SOA Minimum TTL:** Defines the negative caching TTL (how long to cache "name does not exist"
- responses).
+  responses).
 
 ### Negative Caching (RFC 2308)
 
@@ -333,8 +336,8 @@ Observer. DoH and DoT encrypt DNS queries to protect privacy.
 
 ### DNS over HTTPS (DoH, RFC 8484)
 
-DNS queries are sent as HTTPS requests ( to port 443). The DNS message is encoded in the
-HTTPS request body (using the `application/dns-message` content type).
+DNS queries are sent as HTTPS requests ( to port 443). The DNS message is encoded in the HTTPS
+request body (using the `application/dns-message` content type).
 
 ```
 POST https://dns.google/dns-query
@@ -363,15 +366,15 @@ Traffic separately from HTTPS.
 
 ### DoH vs DoT
 
-| Criterion | DoH | DoT |
+| Criterion           | DoH                            | DoT                          |
 | ------------------- | ------------------------------ | ---------------------------- |
-| Port | 443 | 853 |
-| Protocol | HTTPS (HTTP/2) | TLS over TCP |
-| Identifiability | Blends with HTTPS traffic | Dedicated port, identifiable |
-| Privacy | High (blends with web traffic) | High (encrypted) |
-| Corporate filtering | Harder to filter | Easier to filter |
-| Implementation | Browser-native | OS-native |
-| Adoption | Chrome, Firefox, Edge | Android, iOS 14+ |
+| Port                | 443                            | 853                          |
+| Protocol            | HTTPS (HTTP/2)                 | TLS over TCP                 |
+| Identifiability     | Blends with HTTPS traffic      | Dedicated port, identifiable |
+| Privacy             | High (blends with web traffic) | High (encrypted)             |
+| Corporate filtering | Harder to filter               | Easier to filter             |
+| Implementation      | Browser-native                 | OS-native                    |
+| Adoption            | Chrome, Firefox, Edge          | Android, iOS 14+             |
 
 ## DNSSEC (DNS Security Extensions)
 
@@ -382,28 +385,28 @@ Confidentiality. Use DoH/DoT for confidentiality.
 ### How DNSSEC Works
 
 1. **Zone signing:** The zone owner generates a key pair (KSK and ZSK) and signs all records in the
- zone using digital signatures (RRSIG records).
+   zone using digital signatures (RRSIG records).
 2. **Chain of trust:** Each zone's public key is signed by its parent zone. The root zone's key is
- the trust anchor, distributed out-of-band (published in root zone files and configured in
- resolvers).
+   the trust anchor, distributed out-of-band (published in root zone files and configured in
+   resolvers).
 3. **Validation:** The resolver verifies the signature chain from the root down to the record being
- queried.
+   queried.
 
 ### Key Types
 
 - **KSK (Key Signing Key):** A longer key (RSA-2048 or larger) that only signs the ZSK. Used
- infrequently, easier to rotate.
+  infrequently, easier to rotate.
 - **ZSK (Zone Signing Key):** A shorter key that signs all records in the zone. Used frequently,
- rotated more often.
+  rotated more often.
 
 ### DNSSEC Record Types
 
 - **DNSKEY:** Contains the public key for the zone.
 - **RRSIG:** Contains the digital signature for a record set.
 - **DS:** Contains a hash of a child zone's KSK, published in the parent zone. This creates the
- chain of trust.
+  chain of trust.
 - **NSEC / NSEC3:** Proves that a name does not exist (authenticated denial of existence). NSEC3
- uses hashed names to prevent zone enumeration.
+  uses hashed names to prevent zone enumeration.
 
 ### DNSSEC Deployment Considerations
 
@@ -466,9 +469,9 @@ dig -x 2606:2800:220:1:248:1893:25c8:1946
 Reverse DNS is important for:
 
 - **Email deliverability:** Many mail servers reject email from IPs without matching reverse DNS
- (PTR = forward hostname).
+  (PTR = forward hostname).
 - **Logging and forensics:** Logs showing IP addresses are more useful with reverse DNS to identify
- the source.
+  the source.
 - **Trust verification:** SSH, TLS, and some authentication systems use reverse DNS verification.
 
 ## DNS Servers
@@ -536,38 +539,38 @@ Servers, configure them via `systemd-resolved` or NetworkManager.
 ## Common Pitfalls
 
 1. **DNS propagation is not a thing.** DNS changes propagate based on TTL. A record with a
- 300-second TTL takes at most 300 seconds to propagate to all resolvers. There is no magical
- "propagation delay." The perceived delay is caused by caches that have not expired. If you need
- fast changes, lower the TTL before making the change, then raise it after.
+   300-second TTL takes at most 300 seconds to propagate to all resolvers. There is no magical
+   "propagation delay." The perceived delay is caused by caches that have not expired. If you need
+   fast changes, lower the TTL before making the change, then raise it after.
 
 2. **CNAME at the zone apex.** You cannot have a CNAME at the root of a zone (e.g., `example.com`
- CNAME to `www.example.com`) because the apex requires SOA and NS records. Use ALIAS/ANAME records
- (DNS provider-specific) or CNAME flattening (Cloudflare) instead.
+   CNAME to `www.example.com`) because the apex requires SOA and NS records. Use ALIAS/ANAME records
+   (DNS provider-specific) or CNAME flattening (Cloudflare) instead.
 
 3. **DNS and load balancing.** Round-robin DNS (multiple A records for the same name) is the
- simplest form of load balancing but provides no health checking, session persistence, or weighted
- distribution. DNS-based global load balancing (GSLB/Anycast) is more sophisticated but still has
- limitations -- resolvers cache results, so traffic distribution depends on resolver behavior, not
- client behavior.
+   simplest form of load balancing but provides no health checking, session persistence, or weighted
+   distribution. DNS-based global load balancing (GSLB/Anycast) is more sophisticated but still has
+   limitations -- resolvers cache results, so traffic distribution depends on resolver behavior, not
+   client behavior.
 
 4. **Ignoring negative caching.** If you delete a record but the SOA minimum TTL is high (e.g.,
- 86400), resolvers cache the NXDOMAIN response for 24 hours. Always reduce the SOA minimum TTL
- before removing records.
+   86400), resolvers cache the NXDOMAIN response for 24 hours. Always reduce the SOA minimum TTL
+   before removing records.
 
 5. **UDP truncation and TCP fallback.** DNS responses over UDP are limited to 512 bytes (without
- EDNS0). If a response exceeds this size, the server sets the TC (truncation) flag, and the client
- retries over TCP. Many firewalls block TCP port 53, which causes resolution failures for
- responses that require TCP. This is especially common with DNSSEC responses, which are larger due
- to signatures.
+   EDNS0). If a response exceeds this size, the server sets the TC (truncation) flag, and the client
+   retries over TCP. Many firewalls block TCP port 53, which causes resolution failures for
+   responses that require TCP. This is especially common with DNSSEC responses, which are larger due
+   to signatures.
 
-6. **EDNS0 and DNSSEC response size.** EDNS0 advertises a larger UDP buffer size ( 4096
- bytes). If a middlebox (firewall, NAT) drops UDP packets larger than 512 bytes, DNSSEC validation
- fails silently. Test with `dig +dnssec example.com` and verify the response size.
+6. **EDNS0 and DNSSEC response size.** EDNS0 advertises a larger UDP buffer size ( 4096 bytes). If a
+   middlebox (firewall, NAT) drops UDP packets larger than 512 bytes, DNSSEC validation fails
+   silently. Test with `dig +dnssec example.com` and verify the response size.
 
 7. **Split-horizon DNS complexity.** Split-horizon (split-view) DNS returns different answers
- depending on the client's source IP. This is common in enterprise environments (internal vs
- external IPs). The complexity increases with every additional view and can lead to subtle
- misconfigurations where internal clients get external IPs or vice versa.
+   depending on the client's source IP. This is common in enterprise environments (internal vs
+   external IPs). The complexity increases with every additional view and can lead to subtle
+   misconfigurations where internal clients get external IPs or vice versa.
 
 ## DNS Internals
 
@@ -591,21 +594,21 @@ Every DNS message (query or response) follows a fixed format defined in RFC 1035
 
 **Header fields (12 bytes):**
 
-| Field | Size | Purpose |
+| Field   | Size    | Purpose                                                               |
 | ------- | ------- | --------------------------------------------------------------------- |
-| ID | 16 bits | Query identifier (matches response to request) |
-| QR | 1 bit | 0 = query, 1 = response |
-| OPCODE | 4 bits | Query type (0 = standard query, 1 = inverse query, 2 = server status) |
-| AA | 1 bit | Authoritative Answer (response only) |
-| TC | 1 bit | Truncation (response was truncated, retry over TCP) |
-| RD | 1 bit | Recursion Desired (client wants recursive resolution) |
-| RA | 1 bit | Recursion Available (server supports recursion) |
-| Z | 3 bits | Reserved (must be zero) |
-| RCODE | 4 bits | Response code (0 = no error, 3 = NXDOMAIN, 5 = refused) |
-| QDCOUNT | 16 bits | Number of questions |
-| ANCOUNT | 16 bits | Number of answer RRs |
-| NSCOUNT | 16 bits | Number of authority RRs |
-| ARCOUNT | 16 bits | Number of additional RRs |
+| ID      | 16 bits | Query identifier (matches response to request)                        |
+| QR      | 1 bit   | 0 = query, 1 = response                                               |
+| OPCODE  | 4 bits  | Query type (0 = standard query, 1 = inverse query, 2 = server status) |
+| AA      | 1 bit   | Authoritative Answer (response only)                                  |
+| TC      | 1 bit   | Truncation (response was truncated, retry over TCP)                   |
+| RD      | 1 bit   | Recursion Desired (client wants recursive resolution)                 |
+| RA      | 1 bit   | Recursion Available (server supports recursion)                       |
+| Z       | 3 bits  | Reserved (must be zero)                                               |
+| RCODE   | 4 bits  | Response code (0 = no error, 3 = NXDOMAIN, 5 = refused)               |
+| QDCOUNT | 16 bits | Number of questions                                                   |
+| ANCOUNT | 16 bits | Number of answer RRs                                                  |
+| NSCOUNT | 16 bits | Number of authority RRs                                               |
+| ARCOUNT | 16 bits | Number of additional RRs                                              |
 
 ### DNS Wire Format for Resource Records
 
@@ -634,9 +637,9 @@ The full domain name, a pointer (2 bytes, starting with 0b11) references a previ
 The name in the message. For example, if the question asks for `www.example.com` and the answer is a
 CNAME pointing to `example.com`The CNAME target can reference the suffix from the question.
 
-This compression is why DNS responses are much smaller than they would be without it. It
-Is also why parsing DNS messages requires following pointer references, which adds complexity to DNS
-Client implementations.
+This compression is why DNS responses are much smaller than they would be without it. It Is also why
+parsing DNS messages requires following pointer references, which adds complexity to DNS Client
+implementations.
 
 ## DNS and Load Balancing
 
@@ -655,12 +658,12 @@ Limitations:
 
 - **No health checking.** If one server is down, clients still receive its IP address and will fail.
 - **No session persistence.** Clients may be directed to different servers on each resolution,
- breaking stateful sessions.
+  breaking stateful sessions.
 - **No weighted distribution.** All servers receive equal traffic (unless you use multiple records
- with different weights, which is non-standard).
+  with different weights, which is non-standard).
 - **Cache amplification.** Resolvers cache the entire set, so traffic distribution depends on
- resolver behavior, not client behavior. A large ISP resolver may direct all its clients to the
- first IP in the cached set.
+  resolver behavior, not client behavior. A large ISP resolver may direct all its clients to the
+  first IP in the cached set.
 
 ### DNS-Based Global Load Balancing (GSLB)
 
@@ -679,12 +682,12 @@ Providers include AWS Route 53, Cloudflare, Google Cloud DNS, and Akamai.
 Limitations:
 
 - **Resolver location != client location.** The DNS query comes from the recursive resolver, not the
- client. If a client in Tokyo uses Google DNS (8.8.8.8, located in various places), the geolocation
- may be wrong.
+  client. If a client in Tokyo uses Google DNS (8.8.8.8, located in various places), the geolocation
+  may be wrong.
 - **Caching.** Once a resolver caches the answer, it will not re-query until the TTL expires.
- Failover cannot be faster than the TTL.
+  Failover cannot be faster than the TTL.
 - **Limited granularity.** DNS returns an IP address, not a URL. If a service runs on multiple ports
- or protocols, DNS cannot differentiate.
+  or protocols, DNS cannot differentiate.
 
 ### Health Checking with DNS
 
@@ -781,8 +784,8 @@ Local DNS resolver that forwards queries to the cluster's DNS service.
 - Service names in Docker Swarm
 - External names via configured upstream DNS servers
 
-**Kubernetes:** Each pod has a DNS resolver ( at the IP of the kube-dns or CoreDNS service).
-It resolves:
+**Kubernetes:** Each pod has a DNS resolver ( at the IP of the kube-dns or CoreDNS service). It
+resolves:
 
 - Services: `my-service.my-namespace.svc.cluster.local`
 - Pods: `pod-ip-default.my-namespace.pod.cluster.local`
@@ -813,14 +816,14 @@ CoreDNS is the default DNS server in Kubernetes (since v1.11). It is configured 
 Common CoreDNS issues:
 
 - **DNS resolution delays (5 seconds).** This is caused by the fallback DNS search path. When a pod
- looks up `my-service`CoreDNS first tries `my-service.default.svc.cluster.local`Then
- `my-service.svc.cluster.local`Then `my-service.cluster.local`Then `my-service`. If none exist,
- the 5-second delay is the timeout for the last search domain. Fix by using FQDNs or reducing
- `ndots` in the resolv.conf.
+  looks up `my-service`CoreDNS first tries `my-service.default.svc.cluster.local`Then
+  `my-service.svc.cluster.local`Then `my-service.cluster.local`Then `my-service`. If none exist, the
+  5-second delay is the timeout for the last search domain. Fix by using FQDNs or reducing `ndots`
+  in the resolv.conf.
 - **CoreDNS CPU/memory exhaustion.** In large clusters with many DNS queries, CoreDNS can become a
- bottleneck. Scale CoreDNS replicas or enable NodeLocal DNSCache to reduce external DNS queries.
+  bottleneck. Scale CoreDNS replicas or enable NodeLocal DNSCache to reduce external DNS queries.
 - **DNS caching.** CoreDNS caches responses for the TTL. The default minimum cache TTL is 5 seconds.
- Adjust with the `cache` plugin.
+  Adjust with the `cache` plugin.
 
 ## Summary
 

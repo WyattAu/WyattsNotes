@@ -1,9 +1,12 @@
 ---
 id: advanced-graph-algorithms
 title: Advanced Graph Algorithms
-description: "Advanced Graph Algorithms — Strongly Connected Components; Kosaraju's Algorithm. with additional techniques and methods."
+description:
+  "Advanced Graph Algorithms — Strongly Connected Components; Kosaraju's Algorithm. with additional
+  techniques and methods."
 slug: advanced-graph-algorithms
 ---
+
 ## Strongly Connected Components
 
 A strongly connected component (SCC) of a directed graph is a maximal set of vertices such that
@@ -473,13 +476,13 @@ class Dinic:
 
 ### Max-Flow Algorithms Comparison
 
-| Algorithm | Time Complexity | Best For |
+| Algorithm        | Time Complexity  | Best For                             |
 | ---------------- | ---------------- | ------------------------------------ |
-| Ford-Fulkerson | $O(E \cdot f^*)$ | Small flow values |
-| Edmonds-Karp | $O(VE^2)$ | General purpose, simple to implement |
-| Dinic's | $O(V^2 E)$ | General purpose, fast in practice |
-| Capacity scaling | $O(E^2 \log U)$ | Large capacities |
-| Push-relabel | $O(V^3)$ | Dense graphs |
+| Ford-Fulkerson   | $O(E \cdot f^*)$ | Small flow values                    |
+| Edmonds-Karp     | $O(VE^2)$        | General purpose, simple to implement |
+| Dinic's          | $O(V^2 E)$       | General purpose, fast in practice    |
+| Capacity scaling | $O(E^2 \log U)$  | Large capacities                     |
+| Push-relabel     | $O(V^3)$         | Dense graphs                         |
 
 Where $f^*$ is the max flow value and $U$ is the maximum edge capacity.
 
@@ -681,11 +684,11 @@ An **Eulerian circuit** visits every edge exactly once and returns to the starti
 
 ### Conditions
 
-| Property | Eulerian Circuit | Eulerian Path |
+| Property    | Eulerian Circuit | Eulerian Path           |
 | ----------- | ---------------- | ----------------------- |
-| Connected | Yes | Yes (ignoring isolated) |
-| Even degree | All vertices | All except exactly 2 |
-| Odd degree | None | Exactly 2 |
+| Connected   | Yes              | Yes (ignoring isolated) |
+| Even degree | All vertices     | All except exactly 2    |
+| Odd degree  | None             | Exactly 2               |
 
 ### Hierholzer's Algorithm
 
@@ -838,9 +841,9 @@ NOT a bridge.
 
 ### 2. 2-SAT Variable Indexing
 
-In 2-SAT, variable $x$ is represented as vertex $2x$ and $\lnot x$ as vertex $2x+1$ (or
-Vice versa). Getting the indexing wrong produces incorrect results. Always verify:
-`neg(neg(x)) == x`I.e., `(x ^ 1) ^ 1 == x`.
+In 2-SAT, variable $x$ is represented as vertex $2x$ and $\lnot x$ as vertex $2x+1$ (or Vice versa).
+Getting the indexing wrong produces incorrect results. Always verify: `neg(neg(x)) == x`I.e.,
+`(x ^ 1) ^ 1 == x`.
 
 ### 3. Ford-Fulkerson with DFS Can Be Exponential
 

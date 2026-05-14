@@ -1,6 +1,8 @@
 ---
 title: Error Handling
-description: "Type-safe error handling in TypeScript: the never type, unknown vs any, custom error classes, try/catch typing, assert functions, and the Result pattern."
+description:
+  'Type-safe error handling in TypeScript: the never type, unknown vs any, custom error classes,
+  try/catch typing, assert functions, and the Result pattern.'
 slug: typescript-error-handling
 date: 2026-04-22T00:00:00.000Z
 tags: [TypeScript]
@@ -73,17 +75,17 @@ function area(shape: Shape): number {
 ```
 
 If a new variant is added to `Shape` (e.g., `{ kind: "pentagon"; ... }`) without updating the
-`switch`The assignment `_exhaustive: never` produces a compile error because the new variant is
-Not assignable to `never`.
+`switch`The assignment `_exhaustive: never` produces a compile error because the new variant is Not
+assignable to `never`.
 
 ## `unknown` vs `any`
 
 ### Precise Semantics
 
-| Type | Assignable to everything? | Everything assignable to it? | Type narrowing required? |
+| Type      | Assignable to everything? | Everything assignable to it?  | Type narrowing required? |
 | --------- | ------------------------- | ----------------------------- | ------------------------ |
-| `any` | Yes | Yes | No |
-| `unknown` | Yes | No (only `any` and `unknown`) | Yes |
+| `any`     | Yes                       | Yes                           | No                       |
+| `unknown` | Yes                       | No (only `any` and `unknown`) | Yes                      |
 
 `any` disables the type system entirely. A value typed as `any` can be used as any type, and any
 Value can be assigned to it. `unknown` is the type-safe alternative: it can hold any value, but it
@@ -144,15 +146,15 @@ Runtime, and the `any` type prevents the compiler from catching this.
 
 JavaScript provides several built-in error classes, all of which TypeScript types natively:
 
-| Error Class | Purpose |
+| Error Class      | Purpose                    |
 | ---------------- | -------------------------- |
-| `Error` | Generic error |
-| `TypeError` | Incorrect type operation |
-| `RangeError` | Value outside valid range |
-| `SyntaxError` | Invalid syntax (parser) |
-| `ReferenceError` | Undefined variable access |
-| `URIError` | Invalid URI operation |
-| `EvalError` | Error in `eval()` (legacy) |
+| `Error`          | Generic error              |
+| `TypeError`      | Incorrect type operation   |
+| `RangeError`     | Value outside valid range  |
+| `SyntaxError`    | Invalid syntax (parser)    |
+| `ReferenceError` | Undefined variable access  |
+| `URIError`       | Invalid URI operation      |
+| `EvalError`      | Error in `eval()` (legacy) |
 
 All built-in error classes inherit from `Error`Which provides the `message``name`And `stack`
 Properties.
@@ -497,8 +499,8 @@ function processAction(action: Action): void {
 }
 ```
 
-If a new variant is added to `Action`The `assertNever` call produces a compile error because the
-New variant is not assignable to `never`.
+If a new variant is added to `Action`The `assertNever` call produces a compile error because the New
+variant is not assignable to `never`.
 
 ## Result Type Pattern
 
@@ -629,11 +631,11 @@ async function safeFetch(url: string): AsyncResult<Response, NetworkError> {
 
 These three concepts are often conflated but have distinct meanings in TypeScript:
 
-| Concept | Type | Meaning |
+| Concept           | Type       | Meaning                                |
 | ----------------- | ---------- | -------------------------------------- | ------------------------------ |
 | Optional property | `prop?: T` | Property may be absent from the object |
-| Nullable | `T         | null` | Value may be explicitly `null` |
-| Undefined | `T         | undefined` | Value may be `undefined` |
+| Nullable          | `T         | null`                                  | Value may be explicitly `null` |
+| Undefined         | `T         | undefined`                             | Value may be `undefined`       |
 
 ### Optional Properties
 

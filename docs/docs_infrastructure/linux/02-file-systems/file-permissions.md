@@ -1,10 +1,13 @@
 ---
 id: file-permissions
 title: File Permissions and ACLs
-description: "File Permissions and ACLs — Unix Permission Model; Permission Bits; Octal Notation; Viewing Permissions with worked examples and exam-style questions."
+description:
+  'File Permissions and ACLs — Unix Permission Model; Permission Bits; Octal Notation; Viewing
+  Permissions with worked examples and exam-style questions.'
 slug: file-permissions
 sidebar_position: 2
 ---
+
 ## Unix Permission Model
 
 Every file and directory on a Linux system carries a set of permission bits that control which users
@@ -15,35 +18,35 @@ Operation.
 
 Each file has three categories of permissions, each with three bits:
 
-| Category | Read (r) | Write (w) | Execute (x) |
+| Category      | Read (r)                                    | Write (w)                                     | Execute (x)                |
 | ------------- | ------------------------------------------- | --------------------------------------------- | -------------------------- |
 | **Owner (u)** | Read file contents / List directory entries | Modify file / Create/delete directory entries | Run file / Enter directory |
-| **Group (g)** | Same as owner for group members | Same | Same |
-| **Other (o)** | Same for everyone else | Same | Same |
+| **Group (g)** | Same as owner for group members             | Same                                          | Same                       |
+| **Other (o)** | Same for everyone else                      | Same                                          | Same                       |
 
 ### Octal Notation
 
 | Octal | Binary | Permission |
 | ----- | ------ | ---------- |
-| 0 | 000 | --- |
-| 1 | 001 | --x |
-| 2 | 010 | -w- |
-| 3 | 011 | -wx |
-| 4 | 100 | r-- |
-| 5 | 101 | r-x |
-| 6 | 110 | rw- |
-| 7 | 111 | rwx |
+| 0     | 000    | ---        |
+| 1     | 001    | --x        |
+| 2     | 010    | -w-        |
+| 3     | 011    | -wx        |
+| 4     | 100    | r--        |
+| 5     | 101    | r-x        |
+| 6     | 110    | rw-        |
+| 7     | 111    | rwx        |
 
 Common permission sets:
 
-| Octal | Meaning | Use Case |
+| Octal | Meaning   | Use Case                                    |
 | ----- | --------- | ------------------------------------------- |
-| 755 | rwxr-xr-x | Executables, directories |
-| 644 | rw-r--r-- | Regular files |
-| 700 | rwx------ | Private scripts |
-| 600 | rw------- | SSH keys, config files |
-| 400 | r-------- | Read-only secrets |
-| 711 | rwx--x--x | Public directories (listable only by owner) |
+| 755   | rwxr-xr-x | Executables, directories                    |
+| 644   | rw-r--r-- | Regular files                               |
+| 700   | rwx------ | Private scripts                             |
+| 600   | rw------- | SSH keys, config files                      |
+| 400   | r-------- | Read-only secrets                           |
+| 711   | rwx--x--x | Public directories (listable only by owner) |
 
 ### Viewing Permissions
 
@@ -67,11 +70,11 @@ stat /etc/passwd
 
 Directory permissions have different semantics than file permissions:
 
-| Permission | File | Directory |
+| Permission | File                 | Directory                                      |
 | ---------- | -------------------- | ---------------------------------------------- |
-| r | Read file contents | List filenames (requires x) |
-| w | Modify file contents | Create/delete/rename files (requires x) |
-| x | Execute as a program | Enter directory (cd), access inode information |
+| r          | Read file contents   | List filenames (requires x)                    |
+| w          | Modify file contents | Create/delete/rename files (requires x)        |
+| x          | Execute as a program | Enter directory (cd), access inode information |
 
 ```text
 To list directory contents:    r + x
@@ -176,10 +179,10 @@ Member of. This is enforced by the kernel: the `chown(2)` system call checks `ca
 The umask (user file creation mask) determines the default permissions for newly created files and
 Directories. It is a mask that is subtracted from the maximum permissions:
 
-| Creation | Maximum | Applied as | umask 0022 result |
+| Creation     | Maximum | Applied as         | umask 0022 result |
 | ------------ | ------- | ------------------ | ----------------- |
-| Regular file | 0666 | 0666 & ~022 = 0644 | rw-r--r-- |
-| Directory | 0777 | 0777 & ~022 = 0755 | rwxr-xr-x |
+| Regular file | 0666    | 0666 & ~022 = 0644 | rw-r--r--         |
+| Directory    | 0777    | 0777 & ~022 = 0755 | rwxr-xr-x         |
 
 ```bash
 # View current umask
@@ -441,19 +444,19 @@ Assignment without full root access.
 
 ### Common Capabilities
 
-| Capability | Description |
+| Capability             | Description                                      |
 | ---------------------- | ------------------------------------------------ |
-| `CAP_NET_BIND_SERVICE` | Bind to privileged ports (&lt;1024) |
-| `CAP_NET_RAW` | Use raw and packet sockets |
-| `CAP_SYS_ADMIN` | Mount, swapon, various admin operations |
-| `CAP_SYS_PTRACE` | Trace processes with ptrace |
-| `CAP_DAC_OVERRIDE` | Bypass file read/write/execute permission checks |
-| `CAP_DAC_READ_SEARCH` | Bypass file read permission and directory search |
-| `CAP_CHOWN` | Change file ownership |
-| `CAP_SETUID` | Set user ID |
-| `CAP_SETGID` | Set group ID |
-| `CAP_KILL` | Send signals to any process |
-| `CAP_SYSLOG` | Use privileged syslog |
+| `CAP_NET_BIND_SERVICE` | Bind to privileged ports (&lt;1024)              |
+| `CAP_NET_RAW`          | Use raw and packet sockets                       |
+| `CAP_SYS_ADMIN`        | Mount, swapon, various admin operations          |
+| `CAP_SYS_PTRACE`       | Trace processes with ptrace                      |
+| `CAP_DAC_OVERRIDE`     | Bypass file read/write/execute permission checks |
+| `CAP_DAC_READ_SEARCH`  | Bypass file read permission and directory search |
+| `CAP_CHOWN`            | Change file ownership                            |
+| `CAP_SETUID`           | Set user ID                                      |
+| `CAP_SETGID`           | Set group ID                                     |
+| `CAP_KILL`             | Send signals to any process                      |
+| `CAP_SYSLOG`           | Use privileged syslog                            |
 
 ### setcap and getcap
 
@@ -517,16 +520,16 @@ The ext4 filesystem (and others that support them) and cannot be overridden by r
 
 ### Common Attributes
 
-| Attribute | Description |
+| Attribute | Description                                             |
 | --------- | ------------------------------------------------------- |
-| `a` | Append only — file can only be opened for append |
-| `A` | No atime updates — do not update access time |
-| `i` | Immutable — cannot be modified, deleted, or renamed |
-| `j` | Data journalling — write data to journal first |
-| `s` | Secure deletion — zero blocks on deletion |
-| `S` | Synchronous updates — write changes to disk immediately |
-| `e` | Extents format — uses extents (ext4 default) |
-| `d` | No dump — exclude from dump backups |
+| `a`       | Append only — file can only be opened for append        |
+| `A`       | No atime updates — do not update access time            |
+| `i`       | Immutable — cannot be modified, deleted, or renamed     |
+| `j`       | Data journalling — write data to journal first          |
+| `s`       | Secure deletion — zero blocks on deletion               |
+| `S`       | Synchronous updates — write changes to disk immediately |
+| `e`       | Extents format — uses extents (ext4 default)            |
+| `d`       | No dump — exclude from dump backups                     |
 
 ### chattr and lsattr
 
@@ -603,12 +606,12 @@ rsync -aX /src/ /dest/
 
 Common extended attribute namespaces:
 
-| Namespace | Description |
+| Namespace   | Description                                    |
 | ----------- | ---------------------------------------------- |
-| `user.` | User-defined (any user can set on owned files) |
-| `system.` | System-managed (POSIX ACLs stored here) |
-| `security.` | SELinux labels stored here |
-| `trusted.` | Kernel-managed, root only |
+| `user.`     | User-defined (any user can set on owned files) |
+| `system.`   | System-managed (POSIX ACLs stored here)        |
+| `security.` | SELinux labels stored here                     |
+| `trusted.`  | Kernel-managed, root only                      |
 
 ## Permission Checking Algorithm
 

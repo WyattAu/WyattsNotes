@@ -1,6 +1,8 @@
 ---
 title: Operating Systems
-description: "A-Level Computer Science notes on Operating Systems: 1. What is an Operating System?; Definition; Kernel Mode vs User Mode; System Calls."
+description:
+  'A-Level Computer Science notes on Operating Systems: 1. What is an Operating System?; Definition;
+  Kernel Mode vs User Mode; System Calls.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - ComputerScience
@@ -9,11 +11,10 @@ categories:
   - ComputerScience
 slug: operating-systems
 ---
+
 ## 1. What is an Operating System?
 
-:::info
-Board-specific AQA Paper 1 | Edexcel P1 | OCR (A) Paper 1 | CIE Paper 1
-:::
+:::info Board-specific AQA Paper 1 | Edexcel P1 | OCR (A) Paper 1 | CIE Paper 1 :::
 
 ### Definition
 
@@ -35,9 +36,9 @@ Know the details of specific devices. It provides:
 Modern processors support at least two privilege levels:
 
 - **Kernel mode:** The CPU can execute all instructions and access all hardware. The OS kernel runs
- in this mode.
+  in this mode.
 - **User mode:** The CPU is restricted. Applications cannot directly access hardware or memory
- belonging to other processes. Attempting a privileged operation triggers a trap to the kernel.
+  belonging to other processes. Attempting a privileged operation triggers a trap to the kernel.
 
 This separation prevents buggy or malicious application code from corrupting the system.
 
@@ -46,13 +47,13 @@ This separation prevents buggy or malicious application code from corrupting the
 A **system call** is the mechanism by which a user-mode program requests a service from the kernel.
 Examples include:
 
-| Category | System Calls (examples) |
-| --------------- | ---------------------------------------- |
-| Process control | `fork()``exec()``wait()``exit()` |
+| Category        | System Calls (examples)            |
+| --------------- | ---------------------------------- |
+| Process control | `fork()``exec()``wait()``exit()`   |
 | File management | `open()``read()``write()``close()` |
-| Device I/O | `ioctl()``read()``write()` |
-| Communication | `pipe()``shmget()``mmap()` |
-| Information | `getpid()``stat()``time()` |
+| Device I/O      | `ioctl()``read()``write()`         |
+| Communication   | `pipe()``shmget()``mmap()`         |
+| Information     | `getpid()``stat()``time()`         |
 
 When an application makes a system call, execution transitions from user mode to kernel mode via a
 Software interrupt (trap). The kernel performs the requested operation and returns control to the
@@ -60,21 +61,19 @@ Application.
 
 ### Types of Operating Systems
 
-| Type | Description | Example |
+| Type            | Description                                                        | Example                 |
 | --------------- | ------------------------------------------------------------------ | ----------------------- |
-| **Batch** | Jobs collected and processed sequentially without user interaction | Early mainframe systems |
-| **Real-time** | Guarantees response within a strict time deadline | Flight control, ABS |
-| **Distributed** | Multiple machines appear as a single system to the user | Cluster computing |
-| **Embedded** | Designed for a specific device with limited resources | Microwave, smartwatch |
-| **Network** | Provides services to other computers over a network | File servers, NAS |
-| **Desktop** | General-purpose, multi-user with GUI | Windows, macOS, Linux |
-| **Mobile** | Optimised for touch, power efficiency, and connectivity | Android, iOS |
+| **Batch**       | Jobs collected and processed sequentially without user interaction | Early mainframe systems |
+| **Real-time**   | Guarantees response within a strict time deadline                  | Flight control, ABS     |
+| **Distributed** | Multiple machines appear as a single system to the user            | Cluster computing       |
+| **Embedded**    | Designed for a specific device with limited resources              | Microwave, smartwatch   |
+| **Network**     | Provides services to other computers over a network                | File servers, NAS       |
+| **Desktop**     | General-purpose, multi-user with GUI                               | Windows, macOS, Linux   |
+| **Mobile**      | Optimised for touch, power efficiency, and connectivity            | Android, iOS            |
 
-:::info
-Board-specific **AQA** emphasises batch, real-time, and distributed systems. **Edexcel** and
+:::info Board-specific **AQA** emphasises batch, real-time, and distributed systems. **Edexcel** and
 **OCR (A)** focus on batch, real-time, and desktop/mobile. **CIE** covers real-time and distributed
-Systems in particular depth.
-:::
+Systems in particular depth. :::
 
 <hr />
 
@@ -120,13 +119,13 @@ Processes move through five states during their lifetime:
                     [Terminated] <──────────────
 ```
 
-| State | Description |
+| State          | Description                                              |
 | -------------- | -------------------------------------------------------- |
-| **New** | Process is being created |
-| **Ready** | Process is in memory, waiting to be assigned a CPU core |
-| **Running** | Process instructions are being executed on a CPU core |
-| **Waiting** | Process is blocked, waiting for an I/O event or resource |
-| **Terminated** | Process has finished execution or been killed |
+| **New**        | Process is being created                                 |
+| **Ready**      | Process is in memory, waiting to be assigned a CPU core  |
+| **Running**    | Process instructions are being executed on a CPU core    |
+| **Waiting**    | Process is blocked, waiting for an I/O event or resource |
+| **Terminated** | Process has finished execution or been killed            |
 
 ### Process Scheduling Algorithms
 
@@ -155,7 +154,7 @@ Quantum, it is preempted and moved to the back of the ready queue.
 Each process has a priority; the highest-priority ready process runs next.
 
 - **Problem:** Low-priority processes may starve. Solution: **aging** — gradually increase the
- priority of waiting processes.
+  priority of waiting processes.
 
 ### Context Switching
 
@@ -182,11 +181,11 @@ Regain control and decide whether to switch processes.
 
 ### Multitasking, Multiprocessing, Multithreading
 
-| Term | Meaning |
+| Term                | Meaning                                                              |
 | ------------------- | -------------------------------------------------------------------- |
-| **Multitasking** | Multiple processes share a single CPU (time-sliced) |
-| **Multiprocessing** | Multiple CPUs or cores execute processes simultaneously |
-| **Multithreading** | A single process has multiple threads sharing the same address space |
+| **Multitasking**    | Multiple processes share a single CPU (time-sliced)                  |
+| **Multiprocessing** | Multiple CPUs or cores execute processes simultaneously              |
+| **Multithreading**  | A single process has multiple threads sharing the same address space |
 
 <hr />
 
@@ -196,14 +195,14 @@ Regain control and decide whether to switch processes.
 
 - **Physical memory** is the actual RAM installed in the machine.
 - **Virtual memory** gives each process the illusion of a large, contiguous, private address space.
- Physical memory is used as a cache for virtual memory; data not in RAM is stored on disk (swap
- space).
+  Physical memory is used as a cache for virtual memory; data not in RAM is stored on disk (swap
+  space).
 
 ### Paging
 
-Memory is divided into fixed-size **pages** ( 4 KiB). Physical memory is divided into
-**frames** of the same size. A **page table** maps each virtual page to a physical frame (or marks
-It as not present in memory).
+Memory is divided into fixed-size **pages** ( 4 KiB). Physical memory is divided into **frames** of
+the same size. A **page table** maps each virtual page to a physical frame (or marks It as not
+present in memory).
 
 **Virtual address structure (32-bit, 4 KiB pages):**
 
@@ -228,10 +227,10 @@ When the CPU accesses a virtual page not currently in physical memory:
 
 ### Page Replacement Algorithms
 
-| Algorithm | Policy | Advantage | Disadvantage |
+| Algorithm | Policy                         | Advantage               | Disadvantage                      |
 | --------- | ------------------------------ | ----------------------- | --------------------------------- |
-| **FIFO** | Evict the page loaded earliest | Simple to implement | May evict useful pages (Belady's) |
-| **LRU** | Evict least recently used page | Good approx. Of optimal | Expensive to implement exactly |
+| **FIFO**  | Evict the page loaded earliest | Simple to implement     | May evict useful pages (Belady's) |
+| **LRU**   | Evict least recently used page | Good approx. Of optimal | Expensive to implement exactly    |
 
 **Belady's anomaly:** With FIFO, increasing the number of frames can sometimes _increase_ the number
 Of page faults. LRU does not suffer from this anomaly.
@@ -247,11 +246,9 @@ $$\mathrm{Physical address} = \mathrm{SegmentTable}[\mathrm{segment}].\mathrm{ba
 
 If offset $\ge$ limit, a segmentation fault is raised.
 
-:::info
-Board-specific **AQA** and **OCR (A)** require understanding of both paging and
+:::info Board-specific **AQA** and **OCR (A)** require understanding of both paging and
 Segmentation. **Edexcel** focuses primarily on paging. **CIE** covers paging with address
-Translation in detail.
-:::
+Translation in detail. :::
 
 ### TLB (Translation Lookaside Buffer)
 
@@ -260,8 +257,8 @@ The TLB is a small, fast hardware cache that stores recent virtual-to-physical a
 - **TLB hit:** Translation found in TLB — completes in 1–2 cycles
 - **TLB miss:** The page table must be consulted — much slower (~10–100 cycles)
 
-The TLB is **fully associative** or **set-associative** because it must support fast
-Lookup regardless of the page number.
+The TLB is **fully associative** or **set-associative** because it must support fast Lookup
+regardless of the page number.
 
 <hr />
 
@@ -274,10 +271,10 @@ A **file system** organises data on storage into files and directories. Key comp
 - **Files:** Named collections of data stored on secondary storage
 - **Directories (folders):** Containers that group files and other directories
 - **Metadata:** Information about each file stored separately from the file contents:
- - File name, size, type
- - Creation, modification, and access timestamps
- - Owner and permissions
- - Physical location on disk (block pointers)
+- File name, size, type
+- Creation, modification, and access timestamps
+- Owner and permissions
+- Physical location on disk (block pointers)
 
 ### File Allocation Methods
 
@@ -286,7 +283,7 @@ A **file system** organises data on storage into files and directories. Key comp
 Each file occupies a set of consecutive disk blocks.
 
 - **Advantage:** Fast sequential access; simple
-- **Disadvantage:** External fragmentation; files cannot grow 
+- **Disadvantage:** External fragmentation; files cannot grow
 
 #### Linked Allocation
 
@@ -306,21 +303,21 @@ An **index block** contains pointers to all data blocks of the file.
 
 Most file systems associate three permission categories with each file:
 
-| Category | Read (r) | Write (w) | Execute (x) |
+| Category   | Read (r)          | Write (w)           | Execute (x)        |
 | ---------- | ----------------- | ------------------- | ------------------ |
-| **Owner** | Can read contents | Can modify contents | Can run as program |
-| **Group** | Members can read | Members can modify | Members can run |
-| **Others** | Everyone can read | Everyone can modify | Everyone can run |
+| **Owner**  | Can read contents | Can modify contents | Can run as program |
+| **Group**  | Members can read  | Members can modify  | Members can run    |
+| **Others** | Everyone can read | Everyone can modify | Everyone can run   |
 
 Permissions are represented as a 9-bit string (e.g., `rwxr-xr--` = 755 in octal).
 
 ### Directory Structures
 
-| Structure | Description |
+| Structure        | Description                                             |
 | ---------------- | ------------------------------------------------------- |
-| **Flat** | All files in a single directory; no subdirectories |
+| **Flat**         | All files in a single directory; no subdirectories      |
 | **Hierarchical** | Directories can contain subdirectories (tree structure) |
-| **Tree** | Each directory has exactly one parent; acyclic |
+| **Tree**         | Each directory has exactly one parent; acyclic          |
 
 Modern OSes use a hierarchical tree structure with a root directory (`/` on Linux/macOS, drive
 Letters on Windows).
@@ -362,7 +359,7 @@ Device finishes, it sends a hardware interrupt. The CPU then handles the result.
 Controller handles the transfer:
 
 1. The OS programs the DMA controller with the source address, destination address, and transfer
- length
+   length
 2. The DMA controller transfers data directly between the device and memory
 3. When complete, the DMA controller sends an interrupt to the CPU
 
@@ -418,22 +415,20 @@ The OS must manage updates to itself and installed software. Key concerns:
 - **Version compatibility** ensures updates do not break existing software
 - **Rollback** mechanisms allow reverting to a previous version if an update causes problems
 
-:::info
-Board-specific **AQA** and **Edexcel** specifically mention software updates and patch
-Management. **OCR (A)** and **CIE** may cover this under broader system security topics.
-:::
+:::info Board-specific **AQA** and **Edexcel** specifically mention software updates and patch
+Management. **OCR (A)** and **CIE** may cover this under broader system security topics. :::
 
 ### Malware Protection
 
 The OS provides mechanisms to defend against malicious software:
 
-| Mechanism | Description |
+| Mechanism           | Description                                                       |
 | ------------------- | ----------------------------------------------------------------- |
-| **Antivirus** | Scans files for known malware signatures and suspicious behaviour |
-| **Firewall** | Monitors and filters network traffic based on rules |
-| **User privileges** | Limits the damage malware can cause by restricting permissions |
-| **Sandboxing** | Runs untrusted code in an isolated environment |
-| **Code signing** | Verifies that software has not been tampered with |
+| **Antivirus**       | Scans files for known malware signatures and suspicious behaviour |
+| **Firewall**        | Monitors and filters network traffic based on rules               |
+| **User privileges** | Limits the damage malware can cause by restricting permissions    |
+| **Sandboxing**      | Runs untrusted code in an isolated environment                    |
+| **Code signing**    | Verifies that software has not been tampered with                 |
 
 <hr />
 
@@ -504,7 +499,7 @@ The OS must save A's state, select B, and restore B's state. Consider what state
 
 1. A timer interrupt (or system call) triggers the OS scheduler
 2. The OS saves process A's CPU state to its PCB: general-purpose registers, program counter, stack
- pointer, status flags, and memory management information (page table base register)
+   pointer, status flags, and memory management information (page table base register)
 3. The OS updates A's PCB with its new state (e.g., ready or waiting)
 4. The scheduler selects process B from the ready queue
 5. The OS loads B's state from its PCB into the CPU registers
@@ -564,8 +559,8 @@ Device is ready, it sends a hardware interrupt, and the CPU handles the result. 
 Efficient for slow devices (keyboards, disks, network cards) because the CPU is not idle while
 Waiting.
 
-Interrupt-driven I/O is preferred for most systems because it maximises CPU utilisation.
-Polling is used only in specialised cases such as low-latency embedded systems.
+Interrupt-driven I/O is preferred for most systems because it maximises CPU utilisation. Polling is
+used only in specialised cases such as low-latency embedded systems.
 
 </details>
 
@@ -616,9 +611,9 @@ Steps taken by the OS:
 
 1. The MMU detects the not-present bit in the PTE and raises a page fault exception
 2. The OS checks that the access is valid (the page belongs to the process and the permission is
- correct); if not, a segmentation fault is raised
+   correct); if not, a segmentation fault is raised
 3. The OS selects a victim frame in physical memory (using FIFO, LRU, or another replacement
- algorithm)
+   algorithm)
 4. If the victim frame is dirty (has been modified), it is written back to disk
 5. The OS reads the desired page from disk into the freed frame
 6. The OS updates the page table entry for the new page (sets the frame number and present bit)
@@ -708,10 +703,12 @@ When a user process calls `open("report.pdf", WRITE)`:
 1. The OS identifies the user associated with the process (from the process's user ID)
 2. The OS locates the file's inode/metadata on disk, which contains the ACL
 3. The OS searches the ACL for an entry matching the user:
- - If an entry grants WRITE permission to this specific user, access is allowed
- - If no user entry matches, the OS checks for a group entry matching the user's group
- - If no group entry matches, the OS checks the "others" entry
- - If no entry grants the requested permission, access is denied and an error is returned
+
+- If an entry grants WRITE permission to this specific user, access is allowed
+- If no user entry matches, the OS checks for a group entry matching the user's group
+- If no group entry matches, the OS checks the "others" entry
+- If no entry grants the requested permission, access is denied and an error is returned
+
 4. If access is granted, the OS creates an open file descriptor for the process and returns it
 
 This mechanism allows fine-grained control: different users can have different levels of access to

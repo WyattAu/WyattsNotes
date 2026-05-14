@@ -1,9 +1,12 @@
 ---
 id: truenas-performance
 title: TrueNAS Performance Tuning
-description: "TrueNAS Performance Tuning — ARC Sizing and Tuning; How the ARC Works; Default ARC Sizing; Tuning ARC Size with worked examples and exam-style questions."
+description:
+  'TrueNAS Performance Tuning — ARC Sizing and Tuning; How the ARC Works; Default ARC Sizing; Tuning
+  ARC Size with worked examples and exam-style questions.'
 slug: truenas-performance
 ---
+
 ## ARC Sizing and Tuning
 
 ### How the ARC Works
@@ -46,20 +49,20 @@ echo 51539607552 | sudo tee /sys/module/zfs/parameters/zfs_arc_max
 
 ### ARC Hit Ratio Targets
 
-| Hit Ratio | Interpretation |
+| Hit Ratio | Interpretation                            |
 | --------- | ----------------------------------------- |
-| &gt; 95% | Excellent — working set fits in ARC |
-| 85–95% | Good — most reads are served from cache |
-| 70–85% | Acceptable — consider adding RAM or L2ARC |
-| &lt; 70% | Poor — working set exceeds ARC, add RAM |
+| &gt; 95%  | Excellent — working set fits in ARC       |
+| 85–95%    | Good — most reads are served from cache   |
+| 70–85%    | Acceptable — consider adding RAM or L2ARC |
+| &lt; 70%  | Poor — working set exceeds ARC, add RAM   |
 
 ### primarycache and secondarycache
 
 These dataset properties control what data is cached:
 
-| Property | Values | Effect |
+| Property         | Values              | Effect                       |
 | ---------------- | ------------------- | ---------------------------- |
-| `primarycache` | all, metadata, none | What to store in ARC (RAM) |
+| `primarycache`   | all, metadata, none | What to store in ARC (RAM)   |
 | `secondarycache` | all, metadata, none | What to store in L2ARC (SSD) |
 
 For most workloads, `primarycache=all` is correct. For workloads where the working set is much
@@ -79,31 +82,29 @@ Write time and cannot be changed afterward.
 
 ### Choosing the Right recordsize
 
-| Workload | recordsize | Rationale |
+| Workload                            | recordsize     | Rationale                                            |
 | ----------------------------------- | -------------- | ---------------------------------------------------- |
-| General file storage | 128K (default) | Good balance for mixed workloads |
-| Media files (video, audio, ISO) | 128K or 1M | Large sequential reads benefit from large blocks |
-| Virtual machine images (VDI, QCOW2) | 64K or 16K | VMs do mixed I/O; 64K is a good compromise |
-| Databases (MySQL, PostgreSQL) | 16K or 8K | Match database page size to avoid read amplification |
-| iSCSI LUNs (VM storage) | 64K or 16K | Match the expected VM I/O pattern |
-| NFS home directories | 128K | Mixed workload, default is fine |
-| Photo libraries (many small files) | 128K | Large enough for most image files |
-| Source code repositories | 128K | Many small reads, metadata caching is more important |
+| General file storage                | 128K (default) | Good balance for mixed workloads                     |
+| Media files (video, audio, ISO)     | 128K or 1M     | Large sequential reads benefit from large blocks     |
+| Virtual machine images (VDI, QCOW2) | 64K or 16K     | VMs do mixed I/O; 64K is a good compromise           |
+| Databases (MySQL, PostgreSQL)       | 16K or 8K      | Match database page size to avoid read amplification |
+| iSCSI LUNs (VM storage)             | 64K or 16K     | Match the expected VM I/O pattern                    |
+| NFS home directories                | 128K           | Mixed workload, default is fine                      |
+| Photo libraries (many small files)  | 128K           | Large enough for most image files                    |
+| Source code repositories            | 128K           | Many small reads, metadata caching is more important |
 
-:::warning
-Changing `recordsize` on an existing dataset only affects new writes. Existing files keep
+:::warning Changing `recordsize` on an existing dataset only affects new writes. Existing files keep
 Their original block size. To benefit from a recordsize change, rewrite the data by copying files to
-A new dataset.
-:::
+A new dataset. :::
 
 ### Impact of recordsize on Performance
 
 Incorrect recordsize causes read amplification:
 
 - **recordsize too large for small random reads:** ZFS must read the entire block (e.g., 128 KB) to
- serve a 4 KB read request, wasting bandwidth. This is devastating for database workloads.
+  serve a 4 KB read request, wasting bandwidth. This is devastating for database workloads.
 - **recordsize too small for large sequential reads:** ZFS issues many small reads instead of fewer
- large reads, increasing per-I/O overhead and reducing throughput.
+  large reads, increasing per-I/O overhead and reducing throughput.
 
 ---
 
@@ -111,26 +112,26 @@ Incorrect recordsize causes read amplification:
 
 ### Compression Algorithms
 
-| Algorithm | Ratio | CPU Cost | Speed | Recommendation |
+| Algorithm            | Ratio                | CPU Cost | Speed     | Recommendation                         |
 | -------------------- | -------------------- | -------- | --------- | -------------------------------------- |
-| lz4 | Good (1.3–1.5x) | Very Low | Very Fast | Default for all workloads |
-| zstd (default level) | Very Good (1.5–2.0x) | Moderate | Fast | Best ratio/speed trade-off |
-| zstd-fast | Good | Low | Very Fast | For CPU-constrained systems |
-| gzip-1 to gzip-9 | Variable | Moderate | Moderate | Legacy; zstd is better |
-| lzjb | Poor | Low | Fast | Legacy; avoid |
-| zle | None | None | Fast | Incompressible data (encrypted, media) |
+| lz4                  | Good (1.3–1.5x)      | Very Low | Very Fast | Default for all workloads              |
+| zstd (default level) | Very Good (1.5–2.0x) | Moderate | Fast      | Best ratio/speed trade-off             |
+| zstd-fast            | Good                 | Low      | Very Fast | For CPU-constrained systems            |
+| gzip-1 to gzip-9     | Variable             | Moderate | Moderate  | Legacy; zstd is better                 |
+| lzjb                 | Poor                 | Low      | Fast      | Legacy; avoid                          |
+| zle                  | None                 | None     | Fast      | Incompressible data (encrypted, media) |
 
 ### When to Use Compression
 
 Always enable compression unless you have a specific reason not to:
 
 1. **LZ4** is the default on TrueNAS and adds virtually no CPU overhead (it has a fast path that
- skips incompressible data in hardware).
+   skips incompressible data in hardware).
 2. Compression reduces the amount of data written to disk, which extends SSD lifespan and improves
- pool performance.
+   pool performance.
 3. Compressed data takes less space in the ARC, effectively increasing cache capacity.
 4. The only scenario where compression should be disabled is for data that is already compressed
- (encrypted files, compressed video/audio archives, ZIP files).
+   (encrypted files, compressed video/audio archives, ZIP files).
 
 ```bash
 # Enable compression on a dataset
@@ -149,9 +150,9 @@ zfs set compression=off tank/media/encrypted
 
 ### How Dedup Works
 
-When `dedup=on`ZFS maintains a hash table of every unique block written to the pool. Before
-Writing a new block, ZFS checks if an identical block already exists. If it does, ZFS stores a
-Reference instead of a new copy.
+When `dedup=on`ZFS maintains a hash table of every unique block written to the pool. Before Writing
+a new block, ZFS checks if an identical block already exists. If it does, ZFS stores a Reference
+instead of a new copy.
 
 ### Memory Cost
 
@@ -163,25 +164,23 @@ $$
 
 | Pool Size | Unique Data | DDT RAM Required |
 | --------- | ----------- | ---------------- |
-| 1 TB | 500 GB | ~160 GB |
-| 5 TB | 2.5 TB | ~800 GB |
-| 10 TB | 5 TB | ~1.6 TB |
+| 1 TB      | 500 GB      | ~160 GB          |
+| 5 TB      | 2.5 TB      | ~800 GB          |
+| 10 TB     | 5 TB        | ~1.6 TB          |
 
 ### When to Use Dedup
 
-| Scenario | Use Dedup? | Rationale |
+| Scenario                           | Use Dedup? | Rationale                             |
 | ---------------------------------- | ---------- | ------------------------------------- |
-| VM templates (many identical VMs) | Yes | High dedup ratio, manageable DDT size |
-| ISO images (many identical copies) | Yes | High dedup ratio |
-| General file storage | No | Low dedup ratio, high memory cost |
-| Backup storage | No | Most data is unique |
-| Database storage | No | Low dedup ratio, performance impact |
+| VM templates (many identical VMs)  | Yes        | High dedup ratio, manageable DDT size |
+| ISO images (many identical copies) | Yes        | High dedup ratio                      |
+| General file storage               | No         | Low dedup ratio, high memory cost     |
+| Backup storage                     | No         | Most data is unique                   |
+| Database storage                   | No         | Low dedup ratio, performance impact   |
 
-:::warning
-In most NAS deployments, deduplication is a net negative. The memory cost of the DDT far
+:::warning In most NAS deployments, deduplication is a net negative. The memory cost of the DDT far
 Exceeds the space savings from deduplication. Use compression (lz4/zstd) instead — it provides
-Meaningful space savings with no memory cost.
-:::
+Meaningful space savings with no memory cost. :::
 
 ---
 
@@ -191,14 +190,14 @@ Meaningful space savings with no memory cost.
 
 TrueNAS uses Samba's `smbd` daemon for SMB file sharing. Tuning options include:
 
-| Setting | Default | Recommended | Effect |
+| Setting          | Default | Recommended         | Effect                            |
 | ---------------- | ------- | ------------------- | --------------------------------- |
-| `min protocol` | SMB1 | SMB3 | Security |
-| `aio read size` | 0 | 1 | Asynchronous I/O for reads |
-| `aio write size` | 0 | 1 | Asynchronous I/O for writes |
-| `strict locking` | Auto | No | Reduce lock contention |
-| `strict sync` | Auto | No | Skip fsync on close (performance) |
-| `cache size` | Auto | Adjust based on RAM | Directory metadata cache |
+| `min protocol`   | SMB1    | SMB3                | Security                          |
+| `aio read size`  | 0       | 1                   | Asynchronous I/O for reads        |
+| `aio write size` | 0       | 1                   | Asynchronous I/O for writes       |
+| `strict locking` | Auto    | No                  | Reduce lock contention            |
+| `strict sync`    | Auto    | No                  | Skip fsync on close (performance) |
+| `cache size`     | Auto    | Adjust based on RAM | Directory metadata cache          |
 
 ### SMB Auxiliary Parameters
 
@@ -228,7 +227,7 @@ Throughput and providing failover:
 1. Ensure the TrueNAS server has multiple network interfaces (or a bonded interface).
 2. Enable multichannel in the TrueNAS SMB service settings.
 3. The Windows client will automatically detect and use multichannel if it has multiple paths to the
- server.
+   server.
 
 ---
 
@@ -260,10 +259,10 @@ Configure under **Sharing** → **Unix (NFS) Shares** → **Settings**.
 
 ### async vs. Sync NFS
 
-| Mode | Behavior | Safety | Performance |
+| Mode  | Behavior                                             | Safety | Performance |
 | ----- | ---------------------------------------------------- | ------ | ----------- |
-| sync | Server acknowledges write only after data is on disk | High | Lower |
-| async | Server acknowledges write before data is on disk | Lower | Higher |
+| sync  | Server acknowledges write only after data is on disk | High   | Lower       |
+| async | Server acknowledges write before data is on disk     | Lower  | Higher      |
 
 For NFS, the default sync behavior depends on the client's mount options. ZFS's copy-on-write
 Ensures data integrity regardless of the NFS sync setting, but async mode can return "success" to
@@ -286,23 +285,21 @@ ifconfig igb0 mtu 9000
 ifconfig igb0 | grep mtu
 ```
 
-:::warning
-Jumbo frames must be configured on every device in the network path — NAS, switch, and
+:::warning Jumbo frames must be configured on every device in the network path — NAS, switch, and
 Clients. A single device with MTU 1500 in the path will cause fragmentation, which is worse than
-Standard frames. Only enable jumbo frames if you control the entire network path.
-:::
+Standard frames. Only enable jumbo frames if you control the entire network path. :::
 
 ### Link Aggregation (LACP)
 
 Link aggregation (LACP, IEEE 802.3ad) bonds multiple network interfaces into a single logical
 Interface for increased throughput and redundancy:
 
-| Mode | Throughput | Failover | Requirements |
+| Mode           | Throughput           | Failover | Requirements            |
 | -------------- | -------------------- | -------- | ----------------------- |
-| LACP (802.3ad) | Aggregate (per-flow) | Yes | Switch support required |
-| Balance-XOR | Aggregate (per-flow) | Yes | No switch configuration |
-| Active-Backup | Single link | Yes | No switch configuration |
-| Balance-ALB | Aggregate (per-flow) | Yes | No switch configuration |
+| LACP (802.3ad) | Aggregate (per-flow) | Yes      | Switch support required |
+| Balance-XOR    | Aggregate (per-flow) | Yes      | No switch configuration |
+| Active-Backup  | Single link          | Yes      | No switch configuration |
+| Balance-ALB    | Aggregate (per-flow) | Yes      | No switch configuration |
 
 **Important:** LACP aggregates bandwidth per-flow, not per-connection. A single SMB or NFS transfer
 Will use only one link. Aggregation benefits multi-client or multi-stream workloads.
@@ -335,21 +332,21 @@ ECC (Error-Correcting Code) RAM detects and corrects single-bit errors and detec
 For ZFS:
 
 - ZFS stores data and checksums in RAM during operations. A bit flip in RAM can cause ZFS to write
- corrupted data to disk, which the checksum will not catch (the checksum matches the corrupted
- data).
+  corrupted data to disk, which the checksum will not catch (the checksum matches the corrupted
+  data).
 - ECC RAM is strongly recommended for any ZFS deployment, particularly for large pools where the
- probability of RAM errors is non-trivial.
+  probability of RAM errors is non-trivial.
 
 ### SSD SLOG (ZIL) Devices
 
 A dedicated SLOG device accelerates synchronous writes:
 
-| Device Type | Write Latency | Endurance | Cost |
+| Device Type            | Write Latency | Endurance | Cost                         |
 | ---------------------- | ------------- | --------- | ---------------------------- |
-| Intel Optane P5800X | ~10 $\mu$S | Very High | Very High |
-| Enterprise NVMe (PLP) | ~50 $\mu$S | High | High |
-| Consumer NVMe (no PLP) | ~30 $\mu$S | Moderate | Low (unsafe for sync writes) |
-| SATA SSD | ~100 $\mu$S | Moderate | Low |
+| Intel Optane P5800X    | ~10 $\mu$S    | Very High | Very High                    |
+| Enterprise NVMe (PLP)  | ~50 $\mu$S    | High      | High                         |
+| Consumer NVMe (no PLP) | ~30 $\mu$S    | Moderate  | Low (unsafe for sync writes) |
+| SATA SSD               | ~100 $\mu$S   | Moderate  | Low                          |
 
 ### L2ARC Devices
 
@@ -357,22 +354,21 @@ L2ARC extends the ARC to SSD storage:
 
 - L2ARC is most effective when the working set exceeds RAM but fits in RAM + L2ARC.
 - The optimal L2ARC size is 5–10x the ARC size. An L2ARC smaller than the ARC provides minimal
- benefit because the ARC metadata to track L2ARC entries consumes significant RAM.
+  benefit because the ARC metadata to track L2ARC entries consumes significant RAM.
 - Use a dedicated SSD for L2ARC, not a partition of the pool's SSD vdev.
 
 ### HBA vs. RAID Controller
 
-| Feature | HBA (IT Mode) | RAID Controller |
+| Feature             | HBA (IT Mode)             | RAID Controller              |
 | ------------------- | ------------------------- | ---------------------------- |
-| ZFS compatibility | Full (direct disk access) | Limited (virtual disks only) |
-| SMART pass-through | Yes | Often not |
-| Disk identification | Direct (serial, WWN) | Mapped (may differ) |
-| Performance | Native | May add overhead |
-| Cost | Low | High |
-| Boot support | Sometimes | |
+| ZFS compatibility   | Full (direct disk access) | Limited (virtual disks only) |
+| SMART pass-through  | Yes                       | Often not                    |
+| Disk identification | Direct (serial, WWN)      | Mapped (may differ)          |
+| Performance         | Native                    | May add overhead             |
+| Cost                | Low                       | High                         |
+| Boot support        | Sometimes                 |                              |
 
-:::warning
-Always use an HBA in IT (Initiator Target) mode for ZFS. RAID controllers hide disk
+:::warning Always use an HBA in IT (Initiator Target) mode for ZFS. RAID controllers hide disk
 Identity and prevent ZFS from performing its error detection, self-healing, and direct disk
 Management. Flash RAID controllers to IT mode (LSI 9211-8i, LSI 9300-8i) or buy pre-flashed HBAs.
 :::
@@ -418,15 +414,15 @@ kstat -p zfs:0:arcstats:l2_misses
 
 ### Common Performance Bottlenecks
 
-| Symptom | Likely Cause | Diagnostic |
+| Symptom               | Likely Cause                      | Diagnostic                                             |
 | --------------------- | --------------------------------- | ------------------------------------------------------ |
-| Slow random reads | HDD pool, insufficient ARC | Check ARC hit ratio, consider SSD L2ARC |
-| Slow random writes | HDD pool, ZIL on slow storage | Add SSD SLOG device |
-| Slow sequential reads | Network bottleneck, fragmentation | Check network throughput, pool fragmentation |
-| Slow SMB access | SMB configuration, DNS | Check SMB logs, verify DNS resolution |
-| Slow NFS access | NFS mount options, network | Check rsize/wsize, network MTU |
-| High CPU usage | Compression, dedup, encryption | Check compression algorithm, disable dedup |
-| Low write throughput | Insufficient vdevs, slow disks | Add vdevs (striping across vdevs increases throughput) |
+| Slow random reads     | HDD pool, insufficient ARC        | Check ARC hit ratio, consider SSD L2ARC                |
+| Slow random writes    | HDD pool, ZIL on slow storage     | Add SSD SLOG device                                    |
+| Slow sequential reads | Network bottleneck, fragmentation | Check network throughput, pool fragmentation           |
+| Slow SMB access       | SMB configuration, DNS            | Check SMB logs, verify DNS resolution                  |
+| Slow NFS access       | NFS mount options, network        | Check rsize/wsize, network MTU                         |
+| High CPU usage        | Compression, dedup, encryption    | Check compression algorithm, disable dedup             |
+| Low write throughput  | Insufficient vdevs, slow disks    | Add vdevs (striping across vdevs increases throughput) |
 
 ---
 
@@ -471,13 +467,13 @@ Recordsize. Create separate datasets with appropriate recordsize for different w
 
 The ARC is a slab allocator that manages memory in several categories:
 
-| Category | Description | Typical Size |
+| Category   | Description                                    | Typical Size  |
 | ---------- | ---------------------------------------------- | ------------- |
 | `arc_meta` | Metadata (dnode structures, directory entries) | 25–50% of ARC |
-| `arc_data` | Data blocks (file content) | 50–75% of ARC |
-| `arc_mfu` | Most Frequently Used data | 40–60% of ARC |
-| `arc_mru` | Most Recently Used data | 20–30% of ARC |
-| `arc_l2c` | Pointers to L2ARC entries | 1–5% of ARC |
+| `arc_data` | Data blocks (file content)                     | 50–75% of ARC |
+| `arc_mfu`  | Most Frequently Used data                      | 40–60% of ARC |
+| `arc_mru`  | Most Recently Used data                        | 20–30% of ARC |
+| `arc_l2c`  | Pointers to L2ARC entries                      | 1–5% of ARC   |
 
 ### ARC Hit Ratio Analysis
 
@@ -520,18 +516,18 @@ zfs set prefetch_disable=0 tank/media
 When the ARC is full, it evicts data to make room for new data. The eviction policy considers:
 
 1. **Ghost lists:** Data is moved to a ghost list (metadata only, no data). If the data is accessed
- again, it is re-read from disk and placed at the head of the active list.
+   again, it is re-read from disk and placed at the head of the active list.
 2. **MFU vs MRU:** Data in the MRU list (accessed once) is evicted before data in the MFU list
- (accessed multiple times).
+   (accessed multiple times).
 3. **Metadata vs data:** By default, metadata is not evicted to make room for data. This can cause
- metadata to consume excessive ARC space on metadata-heavy workloads.
+   metadata to consume excessive ARC space on metadata-heavy workloads.
 
 ## recordsize Deep Dive
 
 ### recordsize and Database Workloads
 
-Databases issue I/O in page-sized chunks ( 8 KB for PostgreSQL, 16 KB for MySQL InnoDB).
-Setting `recordsize` to match the database page size is critical:
+Databases issue I/O in page-sized chunks ( 8 KB for PostgreSQL, 16 KB for MySQL InnoDB). Setting
+`recordsize` to match the database page size is critical:
 
 ```bash
 # PostgreSQL (8 KB pages)
@@ -576,23 +572,23 @@ zfs create -o recordsize=1M -o compression=off tank/media/4k-video
 
 ### Real-World Compression Ratios
 
-| Data Type | lz4 | zstd-1 | zstd-3 | zstd-10 | zstd-19 |
+| Data Type      | lz4  | zstd-1 | zstd-3 | zstd-10 | zstd-19 |
 | -------------- | ---- | ------ | ------ | ------- | ------- |
-| Source code | 2.1x | 2.4x | 2.8x | 3.5x | 3.8x |
-| Server logs | 5.2x | 6.1x | 7.8x | 9.2x | 9.5x |
-| JSON data | 3.8x | 4.5x | 5.2x | 6.0x | 6.3x |
-| VM images | 1.3x | 1.4x | 1.5x | 1.6x | 1.6x |
-| Encrypted data | 1.0x | 1.0x | 1.0x | 1.0x | 1.0x |
-| JPEG images | 1.0x | 1.0x | 1.0x | 1.0x | 1.0x |
+| Source code    | 2.1x | 2.4x   | 2.8x   | 3.5x    | 3.8x    |
+| Server logs    | 5.2x | 6.1x   | 7.8x   | 9.2x    | 9.5x    |
+| JSON data      | 3.8x | 4.5x   | 5.2x   | 6.0x    | 6.3x    |
+| VM images      | 1.3x | 1.4x   | 1.5x   | 1.6x    | 1.6x    |
+| Encrypted data | 1.0x | 1.0x   | 1.0x   | 1.0x    | 1.0x    |
+| JPEG images    | 1.0x | 1.0x   | 1.0x   | 1.0x    | 1.0x    |
 
 ### zstd Compression Levels
 
-| Level | Speed (comp/decomp MB/s) | Ratio | Recommendation |
+| Level | Speed (comp/decomp MB/s) | Ratio | Recommendation                             |
 | ----- | ------------------------ | ----- | ------------------------------------------ |
-| 1 | 400/1000 | 1.3x | Default for TrueNAS, good balance |
-| 3 | 200/800 | 1.5x | Good for compressible data |
-| 10 | 50/500 | 1.7x | Archive/compressible data, low CPU systems |
-| 19 | 10/300 | 1.8x | Maximum compression, very slow |
+| 1     | 400/1000                 | 1.3x  | Default for TrueNAS, good balance          |
+| 3     | 200/800                  | 1.5x  | Good for compressible data                 |
+| 10    | 50/500                   | 1.7x  | Archive/compressible data, low CPU systems |
+| 19    | 10/300                   | 1.8x  | Maximum compression, very slow             |
 
 ## SMB Tuning Deep Dive
 
@@ -706,33 +702,33 @@ sysctl -w net.ipv4.tcp_congestion_control=bbr
 ZFS stores data and checksums in RAM during read and write operations. If a bit flip occurs in RAM:
 
 1. **On write:** The corrupted data and its checksum are written to disk. The checksum matches the
- corrupted data, so ZFS cannot detect the corruption on a subsequent read. The data is permanently
- corrupted.
+   corrupted data, so ZFS cannot detect the corruption on a subsequent read. The data is permanently
+   corrupted.
 2. **On read:** The corrupted data is returned to the application. The checksum verification may or
- may not catch it depending on which bits flipped.
+   may not catch it depending on which bits flipped.
 
 ECC RAM detects and corrects single-bit errors in real time, preventing this scenario.
 
 ### SSD SLOG Selection Guide
 
-| Use Case | Minimum SLOG | Recommended SLOG | Budget SLOG |
+| Use Case              | Minimum SLOG      | Recommended SLOG      | Budget SLOG     |
 | --------------------- | ----------------- | --------------------- | --------------- |
-| NFS home directories | Any SSD | Enterprise NVMe (PLP) | Consumer NVMe |
-| Database (PostgreSQL) | Enterprise NVMe | Intel Optane | Enterprise NVMe |
-| VM storage (iSCSI) | Enterprise NVMe | Intel Optane | Enterprise NVMe |
-| Backup server | Any SSD | Consumer NVMe | SATA SSD |
-| File server | None (ZIL in RAM) | None | None |
+| NFS home directories  | Any SSD           | Enterprise NVMe (PLP) | Consumer NVMe   |
+| Database (PostgreSQL) | Enterprise NVMe   | Intel Optane          | Enterprise NVMe |
+| VM storage (iSCSI)    | Enterprise NVMe   | Intel Optane          | Enterprise NVMe |
+| Backup server         | Any SSD           | Consumer NVMe         | SATA SSD        |
+| File server           | None (ZIL in RAM) | None                  | None            |
 
 ### HBA Configuration
 
 Popular HBAs for ZFS:
 
-| HBA Model | Ports | Speed | Firmware | Notes |
+| HBA Model         | Ports | Speed             | Firmware      | Notes                         |
 | ----------------- | ----- | ----------------- | ------------- | ----------------------------- |
-| LSI 9211-8i | 8 | 6 Gbps (SATA/SAS) | IT mode (P20) | Most common, widely available |
-| LSI 9300-8i | 8 | 12 Gbps (SAS3) | IT mode (P16) | Modern, supports SAS3 drives |
-| Broadcom 9500-16i | 16 | 12 Gbps (SAS3) | IT mode | High port count |
-| LSI 9207-8i | 8 | 6 Gbps | IT mode | Low-profile, rackmount |
+| LSI 9211-8i       | 8     | 6 Gbps (SATA/SAS) | IT mode (P20) | Most common, widely available |
+| LSI 9300-8i       | 8     | 12 Gbps (SAS3)    | IT mode (P16) | Modern, supports SAS3 drives  |
+| Broadcom 9500-16i | 16    | 12 Gbps (SAS3)    | IT mode       | High port count               |
+| LSI 9207-8i       | 8     | 6 Gbps            | IT mode       | Low-profile, rackmount        |
 
 Flashing LSI cards to IT mode:
 
@@ -824,25 +820,23 @@ zpool list -v tank
 zdb -bb tank 2>/dev/null | head -30
 ```
 
-:::warning
-Special vdevs cannot be removed after creation. If a special vdev fails, the entire pool
+:::warning Special vdevs cannot be removed after creation. If a special vdev fails, the entire pool
 Is at risk. Always mirror special vdevs and use high-endurance NVMe drives rated for sustained write
 Workloads. Check the DWPD (Drive Writes Per Day) rating and ensure it meets your projected metadata
-Write volume.
-:::
+Write volume. :::
 
 ### Optimizing Recordsize Per Dataset
 
 The `recordsize` property controls the maximum block size ZFS uses for files. Matching recordsize to
 Your workload's typical I/O size is critical:
 
-| Workload | Recommended recordsize | Rationale |
+| Workload                 | Recommended recordsize | Rationale                                               |
 | ------------------------ | ---------------------- | ------------------------------------------------------- |
-| Database (8K pages) | 8K or 16K | Matches database page size, reduces write amplification |
-| Virtual machine images | 16K or 32K | Balances random I/O and sequential streaming |
-| Media files (video) | 1M (default) | Large sequential reads benefit from large blocks |
-| Source code repositories | 128K | Many small files with varied access patterns |
-| Photo libraries | 128K or 256K | Mixed file sizes, moderate random access |
+| Database (8K pages)      | 8K or 16K              | Matches database page size, reduces write amplification |
+| Virtual machine images   | 16K or 32K             | Balances random I/O and sequential streaming            |
+| Media files (video)      | 1M (default)           | Large sequential reads benefit from large blocks        |
+| Source code repositories | 128K                   | Many small files with varied access patterns            |
+| Photo libraries          | 128K or 256K           | Mixed file sizes, moderate random access                |
 
 ```bash
 # Set recordsize for a PostgreSQL dataset
@@ -856,11 +850,9 @@ zfs create -o recordsize=1M -o compression=zstd tank/media/videos
 zfs get all tank/postgres/data | grep -E "recordsize|primarycache|logbias|compression"
 ```
 
-:::tip
-The `recordsize` only affects new writes. Existing files retain their original block size
+:::tip The `recordsize` only affects new writes. Existing files retain their original block size
 Until they are rewritten. To reblock existing data, copy files to a new dataset with the desired
-Recordsize.
-:::
+Recordsize. :::
 
 ## Monitoring ARC Statistics
 
@@ -878,15 +870,15 @@ cat /proc/spl/kstat/zfs/arcstats | grep -E \
   "^hits|^misses|^size|^c_max|^deleted|^evict|^mfu|^mru|^prefetch|^demand"
 ```
 
-| Metric | Meaning | Target |
-| --------------- | --------------------------------------- | -------------------------------------------------------------------- |
-| `hits` | ARC hit count | Should be &gt; 90% of total accesses |
-| `misses` | ARC miss count | Should be &lt; 10% of total accesses |
-| `size` | Current ARC size in bytes | Should be close to `c_max` under load |
-| `c_max` | Maximum ARC size ( 5/8 of RAM) | Tune via `vfs.zfs.arc_max` |
-| `mfu_hits` | Most Frequently Used hits | High values indicate working set fits in ARC |
-| `mru_hits` | Most Recently Used hits | High values indicate streaming access pattern |
-| `prefetch_hits` | Prefetch hits | Should be low to moderate; high means ZFS is prefetching effectively |
+| Metric          | Meaning                        | Target                                                               |
+| --------------- | ------------------------------ | -------------------------------------------------------------------- |
+| `hits`          | ARC hit count                  | Should be &gt; 90% of total accesses                                 |
+| `misses`        | ARC miss count                 | Should be &lt; 10% of total accesses                                 |
+| `size`          | Current ARC size in bytes      | Should be close to `c_max` under load                                |
+| `c_max`         | Maximum ARC size ( 5/8 of RAM) | Tune via `vfs.zfs.arc_max`                                           |
+| `mfu_hits`      | Most Frequently Used hits      | High values indicate working set fits in ARC                         |
+| `mru_hits`      | Most Recently Used hits        | High values indicate streaming access pattern                        |
+| `prefetch_hits` | Prefetch hits                  | Should be low to moderate; high means ZFS is prefetching effectively |
 
 ### Calculating Hit Rate
 
@@ -916,11 +908,9 @@ echo $(echo '128 * 1024 * 1024 * 1024 * 90 / 100' | bc) > /sys/module/zfs/parame
 echo "options zfs zfs_arc_max=123480309760" > /etc/modprobe.d/zfs.conf
 ```
 
-:::warning
-Setting `zfs_arc_max` too high leaves insufficient memory for the kernel, applications,
+:::warning Setting `zfs_arc_max` too high leaves insufficient memory for the kernel, applications,
 And the ZFS prefetch cache. Never set it above 90% of physical RAM, and monitor swap usage after
-Changes. If the system begins swapping, reduce `zfs_arc_max` immediately.
-:::
+Changes. If the system begins swapping, reduce `zfs_arc_max` immediately. :::
 
 ### L2ARC Configuration
 

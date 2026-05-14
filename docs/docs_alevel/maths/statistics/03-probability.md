@@ -1,6 +1,8 @@
 ---
 title: Probability
-description: "A-Level Mathematics notes on Probability: Board Coverage for comprehensive revision and examination preparation. and examination prepar."
+description:
+  'A-Level Mathematics notes on Probability: Board Coverage for comprehensive revision and
+  examination preparation. and examination prepar.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Maths
@@ -9,19 +11,18 @@ categories:
   - Maths
 slug: probability
 ---
+
 ## Board Coverage
 
-| Board | Paper | Notes |
+| Board      | Paper      | Notes                                             |
 | ---------- | ---------- | ------------------------------------------------- |
-| AQA | Paper 1, 2 | Basic probability in P1; conditional, Bayes in P2 |
-| Edexcel | P1, P2 | Similar |
-| OCR (A) | Paper 1, 2 | Includes Venn diagrams and tree diagrams |
-| CIE (9709) | P1, P6 | Probability in P1; conditional in P6 |
+| AQA        | Paper 1, 2 | Basic probability in P1; conditional, Bayes in P2 |
+| Edexcel    | P1, P2     | Similar                                           |
+| OCR (A)    | Paper 1, 2 | Includes Venn diagrams and tree diagrams          |
+| CIE (9709) | P1, P6     | Probability in P1; conditional in P6              |
 
-:::info
-Probability questions test logical reasoning as much as formula recall. Always define events
- and draw a diagram before calculating.
-:::
+:::info Probability questions test logical reasoning as much as formula recall. Always define events
+and draw a diagram before calculating. :::
 
 <hr />
 
@@ -32,7 +33,7 @@ Probability questions test logical reasoning as much as formula recall. Always d
 1. **Non-negativity:** $P(A) \geq 0$ for all events $A \subseteq \Omega$.
 2. **Normalisation:** $P(\Omega) = 1$.
 3. **Countable additivity:** If $A_1, A_2, \ldots$ are mutually exclusive, then
- $P\!\left(\bigcup_{i}A_i\right) = \sum_i P(A_i)$.
+   $P\!\left(\bigcup_{i}A_i\right) = \sum_i P(A_i)$.
 
 These three axioms are the foundation of all probability theory. Every theorem in probability can be
 Derived from them.
@@ -147,11 +148,9 @@ $$P(A) = \sum_{i=1}^{n}P(A|B_i)P(B_i)$$
 
 $$P(B_k|A) = \frac◆LB◆P(A|B_k)P(B_k)◆RB◆◆LB◆\sum_{i=1}^{n}P(A|B_i)P(B_i)◆RB◆$$
 
-:::tip
-Bayes' theorem is essential for "reverse" probability questions: "Given that a test is
-Positive, what is the probability the patient actually has the disease?" Always define events
- and identify what is given ($P(A|B)$) versus what is sought ($P(B|A)$).
-:::
+:::tip Bayes' theorem is essential for "reverse" probability questions: "Given that a test is
+Positive, what is the probability the patient actually has the disease?" Always define events and
+identify what is given ($P(A|B)$) versus what is sought ($P(B|A)$). :::
 
 <hr />
 
@@ -178,11 +177,8 @@ $P(A \cap B) = P(A)P(B)$. $\blacksquare$
 **Intuition.** Independence means knowing $B$ occurred gives you **no information** about $A$. The
 Probability of $A$ is the same whether or not $B$ has happened.
 
-:::warning
-Warning
-Mutually exclusive and both have positive probability, they are **not** independent (since
-$P(A \cap B) = 0 \neq P(A)P(B)$).
-:::
+:::warning Warning Mutually exclusive and both have positive probability, they are **not**
+independent (since $P(A \cap B) = 0 \neq P(A)P(B)$). :::
 
 ### 5.3 Pairwise and mutual independence
 
@@ -194,13 +190,11 @@ $$P(A_{i_1} \cap A_{i_2} \cap \cdots \cap A_{i_k}) = P(A_{i_1}) \cdot P(A_{i_2})
 **Definition.** Events $A_1, A_2, \ldots, A_n$ are **pairwise independent** if every pair
 $(A_i, A_j)$ with $i \neq j$ is independent.
 
-:::warning
-Mutual independence is a **stronger** condition than pairwise independence. Pairwise
+:::warning Mutual independence is a **stronger** condition than pairwise independence. Pairwise
 Independence does not imply mutual independence. For example, with two independent coin tosses, let
 $A$ = "first toss is heads", $B$ = "second toss is heads", $C$ = "both tosses are the same". Then
 $A$$B$$C$ are pairwise independent but not mutually independent since
-$P(A \cap B \cap C) = 0 \neq P(A)P(B)P(C) = 1/8$.
-:::
+$P(A \cap B \cap C) = 0 \neq P(A)P(B)P(C) = 1/8$. :::
 
 <hr />
 
@@ -296,16 +290,16 @@ Chemistry.
 The region for "Maths only" is: $18 - 8 - 6 + 5 = 9$ (subtract overlaps, add back the triple
 Overlap).
 
-| Region | Description | Calculation | Count |
+| Region               | Description                | Calculation      | Count |
 | -------------------- | -------------------------- | ---------------- | ----- |
-| $A \cap B \cap C$ | All three | Given | 5 |
-| $A \cap B \cap C'$ | Maths and Physics only | $8 - 5$ | 3 |
-| $A \cap C \cap B'$ | Maths and Chemistry only | $6 - 5$ | 1 |
-| $B \cap C \cap A'$ | Physics and Chemistry only | $7 - 5$ | 2 |
-| $A \cap B' \cap C'$ | Maths only | $18 - 3 - 1 - 5$ | 9 |
-| $B \cap A' \cap C'$ | Physics only | $15 - 3 - 2 - 5$ | 5 |
-| $C \cap A' \cap B'$ | Chemistry only | $12 - 1 - 2 - 5$ | 4 |
-| $A' \cap B' \cap C'$ | None | $40 - 29$ | 11 |
+| $A \cap B \cap C$    | All three                  | Given            | 5     |
+| $A \cap B \cap C'$   | Maths and Physics only     | $8 - 5$          | 3     |
+| $A \cap C \cap B'$   | Maths and Chemistry only   | $6 - 5$          | 1     |
+| $B \cap C \cap A'$   | Physics and Chemistry only | $7 - 5$          | 2     |
+| $A \cap B' \cap C'$  | Maths only                 | $18 - 3 - 1 - 5$ | 9     |
+| $B \cap A' \cap C'$  | Physics only               | $15 - 3 - 2 - 5$ | 5     |
+| $C \cap A' \cap B'$  | Chemistry only             | $12 - 1 - 2 - 5$ | 4     |
+| $A' \cap B' \cap C'$ | None                       | $40 - 29$        | 11    |
 
 **Check:** $5 + 3 + 1 + 2 + 9 + 5 + 4 + 11 = 40$. $\checkmark$
 
@@ -431,7 +425,7 @@ $$\mathrm{Var}(X) = E\!\left[(X - \mu)^2\right] = E(X^2 - 2\mu X + \mu^2) = E(X^
 
 A biased die has PMF:
 
-| $x$ | 1 | 2 | 3 | 4 | 5 | 6 |
+| $x$    | 1      | 2     | 3     | 4     | 5     | 6      |
 | ------ | ------ | ----- | ----- | ----- | ----- | ------ |
 | $p(x)$ | $1/12$ | $1/6$ | $1/4$ | $1/4$ | $1/6$ | $1/12$ |
 
@@ -449,11 +443,8 @@ $$= \tfrac{1 + 8 + 27 + 48 + 50 + 36}{12} = \tfrac{170}{12} = \tfrac{85}{6}$$
 
 $$\mathrm{Var}(X) = E(X^2) - [E(X)]^2 = \tfrac{85}{6} - \tfrac{49}{4} = \tfrac{170 - 147}{12} = \tfrac{23}{12} \approx 1.917$$
 
-:::info
-Info
-Above has the same mean but smaller variance, meaning its outcomes are more concentrated around the
-Centre.
-:::
+:::info Info Above has the same mean but smaller variance, meaning its outcomes are more
+concentrated around the Centre. :::
 
 <hr />
 
@@ -488,7 +479,8 @@ $P(D) = 0.01$$P(T^+|D) = 0.99$$P(T^+|D') = 0.01$.
 By the law of total probability:
 $P(T^+) = P(T^+|D)P(D) + P(T^+|D')P(D') = 0.99(0.01) + 0.01(0.99) = 0.0099 + 0.0099 = 0.0198$.
 
-By Bayes' theorem: $P(D|T^+) = \dfrac◆LB◆P(T^+|D)P(D)◆RB◆◆LB◆P(T^+)◆RB◆ = \dfrac{0.0099}{0.0198} = 0.5$.
+By Bayes' theorem:
+$P(D|T^+) = \dfrac◆LB◆P(T^+|D)P(D)◆RB◆◆LB◆P(T^+)◆RB◆ = \dfrac{0.0099}{0.0198} = 0.5$.
 
 Even with a 99% accurate test, a positive result means only a 50% chance of actually having the
 Disease, because the disease is so rare.
@@ -788,8 +780,8 @@ A discrete random variable $X$ has CDF $F(x) = 0$ for $x \lt{} 0$$F(x) = x/4$ fo
 The PMF is obtained from the jumps in the CDF:
 
 - $p(0) = F(0) - F(0^-) = 0 - 0 = 0$. But from the formula $F(x) = x/4$ at $x = 0$: $p(0) = 0$.
- Actually, the jump occurs at the boundary. Since $F$ is continuous at $x = 0$There is no point
- mass at 0. The value $X = 0$ has probability 0; we look at where jumps occur.
+  Actually, the jump occurs at the boundary. Since $F$ is continuous at $x = 0$There is no point
+  mass at 0. The value $X = 0$ has probability 0; we look at where jumps occur.
 
 More carefully, the jumps occur at:
 
@@ -836,17 +828,17 @@ $$P(M_3|D) = \frac◆LB◆P(D|M_3)P(M_3)◆RB◆◆LB◆P(D)◆RB◆ = \frac◆L
 
 </details>
 
-
 ---
 
-:::tip
-Diagnostic Test
-Ready to test your understanding of **Probability**? The [diagnostic test](/docs/alevel/maths/diagnostics/diag-probability) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
+:::tip Diagnostic Test Ready to test your understanding of **Probability**? The
+[diagnostic test](/docs/alevel/maths/diagnostics/diag-probability) contains the hardest questions
+within the A-Level specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Probability with other topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Probability
+with other topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and
+building a personal test matrix. :::
 
 ## Common Pitfalls
 

@@ -1,6 +1,8 @@
 ---
 title: Programming
-description: "Programming — 1.1 Variables and Constants; Variables; Constants (convention: UPPER_CASE); 1.2 Input and Output with worked examples and exam-style questions."
+description:
+  'Programming — 1.1 Variables and Constants; Variables; Constants (convention: UPPER_CASE); 1.2
+  Input and Output with worked examples and exam-style questions.'
 date: 2026-04-14
 tags:
   - Computer Science
@@ -9,12 +11,11 @@ categories:
   - Computer Science
 slug: programming
 ---
+
 ## Programming
 
-:::info
-Board Coverage AQA Paper 1 & 2 | Edexcel Paper 1 & 2 | OCR J277 Paper 1 & 2 | WJEC Unit 1 &
-2
-:::
+:::info Board Coverage AQA Paper 1 & 2 | Edexcel Paper 1 & 2 | OCR J277 Paper 1 & 2 | WJEC Unit 1 &
+2 :::
 
 ## 1. Programming Concepts
 
@@ -41,13 +42,13 @@ Reduces errors and makes the code easier to maintain.
 
 **Data types:**
 
-| Type | Description | Example |
+| Type       | Description                 | Example          |
 | ---------- | --------------------------- | ---------------- |
-| Integer | Whole numbers | 42, -7, 0 |
-| Real/Float | Numbers with decimal places | 3.14, -0.5 |
-| String | Text enclosed in quotes | "Hello", 'World' |
-| Character | A single character | 'A', '7' |
-| Boolean | True or False | True, False |
+| Integer    | Whole numbers               | 42, -7, 0        |
+| Real/Float | Numbers with decimal places | 3.14, -0.5       |
+| String     | Text enclosed in quotes     | "Hello", 'World' |
+| Character  | A single character          | 'A', '7'         |
+| Boolean    | True or False               | True, False      |
 
 **Type casting** converts a value from one type to another:
 
@@ -106,8 +107,8 @@ else:
 ```
 
 **Nested IF pitfall.** In the example above, the inner `if score >= 70` only executes when
-`score >= 50`. If `score = 80`The output is "Grade A". If `score = 60`The output is "Grade C".
-If `score = 40`The output is "Fail". Think carefully about the nesting order to avoid unreachable
+`score >= 50`. If `score = 80`The output is "Grade A". If `score = 60`The output is "Grade C". If
+`score = 40`The output is "Fail". Think carefully about the nesting order to avoid unreachable
 Branches.
 
 **CASE / SELECT statements (pseudocode):**
@@ -341,9 +342,9 @@ result = add_numbers(5, 3)  # a=5, b=3
 **Parameters by value vs. By reference:**
 
 - **By value:** A copy of the argument is passed; changes inside the function do not affect the
- original
+  original
 - **By reference:** A reference to the original is passed; changes inside the function affect the
- original
+  original
 
 In Python, immutable types (int, float, string, tuple) are passed by value. Mutable types (list,
 Dict) are passed by reference.
@@ -558,13 +559,13 @@ with open("output.csv", "w", newline="") as file:
 
 **Validation** checks that data is sensible and reasonable (but not necessarily correct).
 
-| Type | Check | Example |
+| Type           | Check                               | Example                     |
 | -------------- | ----------------------------------- | --------------------------- |
-| Range check | Value is within an acceptable range | Age between 0 and 120 |
-| Type check | Correct data type | Input is an integer |
-| Length check | Correct number of characters | Password is 8-20 characters |
-| Presence check | Data has been entered | Name field is not empty |
-| Format check | Correct pattern (e.g. Email format) | Contains @ symbol |
+| Range check    | Value is within an acceptable range | Age between 0 and 120       |
+| Type check     | Correct data type                   | Input is an integer         |
+| Length check   | Correct number of characters        | Password is 8-20 characters |
+| Presence check | Data has been entered               | Name field is not empty     |
+| Format check   | Correct pattern (e.g. Email format) | Contains @ symbol           |
 
 ```python
 def validate_age(age):
@@ -665,55 +666,55 @@ random.shuffle(deck)
 ## Common Pitfalls
 
 - **Off-by-one errors with arrays.** Most languages use 0-based indexing; the last element is at
- index $n-1$. Accessing `array[n]` causes an `IndexError`.
+  index $n-1$. Accessing `array[n]` causes an `IndexError`.
 - **Confusing = and ==.** A single `=` is assignment; `==` is comparison. Writing `if x = 5` in
- Python is a syntax error, but in some pseudocode contexts it can cause subtle bugs.
+  Python is a syntax error, but in some pseudocode contexts it can cause subtle bugs.
 - **Forgetting to close files.** Always close files after use, or use a `with` statement. Leaving
- files open can cause data corruption or resource leaks.
+  files open can cause data corruption or resource leaks.
 - **Infinite loops.** Ensure the condition in a WHILE loop will eventually become false. If the loop
- variable never changes inside the loop body, the loop runs forever.
+  variable never changes inside the loop body, the loop runs forever.
 - **Not handling invalid input.** Always validate and handle potential errors in user input. A user
- might type "abc" when asked for their age.
+  might type "abc" when asked for their age.
 - **Confusing local and global scope.** Use the `global` keyword only when necessary. Overusing
- global variables makes code hard to debug and test.
+  global variables makes code hard to debug and test.
 - **Integer division in Python 2 vs Python 3.** In Python 3, `5 / 2` gives `2.5`. In Python 2, it
- gives `2`. Use `//` for integer division in Python 3: `5 // 2` gives `2`.
+  gives `2`. Use `//` for integer division in Python 3: `5 // 2` gives `2`.
 - **String immutability.** Strings cannot be modified in place. Operations like `upper()` and
- `replace()` return new strings; they do not modify the original.
+  `replace()` return new strings; they do not modify the original.
 
 ## Practice Questions
 
 1. Write a function that takes an array of integers and returns the average.
 
 2. Write a program that reads 20 numbers from a file, sorts them using bubble sort, and writes the
- sorted list to another file.
+   sorted list to another file.
 
 3. Write a recursive function to calculate the $n$-th Fibonacci number.
 
 4. Write a program that validates a password: at least 8 characters, contains at least one digit and
- one uppercase letter.
+   one uppercase letter.
 
 5. Write a function that takes a 2D array (3x3) and returns the sum of all elements in the main
- diagonal.
+   diagonal.
 
 6. Write a program that uses a trace table to count the frequency of each character in a string.
 
 7. Explain the difference between validation and verification, giving an example of each.
 
 8. Write a program that reads student records from a CSV file and displays the names of students who
- scored above 80.
+   scored above 80.
 
 9. Write a function that takes a string and returns True if it is a palindrome (reads the same
- forwards and backwards).
+   forwards and backwards).
 
 10. Write a program that repeatedly asks the user for a number until they enter a valid positive
- integer, then displays the square root.
+    integer, then displays the square root.
 
 11. **(Higher Tier)** Write a function that takes two arrays and returns a new array containing
- elements that appear in both arrays (intersection).
+    elements that appear in both arrays (intersection).
 
 12. **(Higher Tier)** Write a program that simulates a simple quiz. It should read questions and
- answers from a file, display each question, accept the user's answer, and keep score.
+    answers from a file, display each question, accept the user's answer, and keep score.
 
 ## Summary
 

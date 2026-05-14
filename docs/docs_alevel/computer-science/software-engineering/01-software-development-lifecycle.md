@@ -1,6 +1,8 @@
 ---
 title: Software Development Lifecycle
-description: "A-Level Computer Science notes on Software Development Lifecycle: Definition for comprehensive revision and examination preparation."
+description:
+  'A-Level Computer Science notes on Software Development Lifecycle: Definition for comprehensive
+  revision and examination preparation.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - ComputerScience
@@ -9,6 +11,7 @@ categories:
   - ComputerScience
 slug: software-development-lifecycle
 ---
+
 ## 1. The Software Development Lifecycle (SDLC)
 
 ### Definition
@@ -40,14 +43,14 @@ Analysis → Design → Implementation → Testing → Deployment → Maintenanc
 
 ### Characteristics
 
-| Property | Value |
+| Property             | Value                                |
 | -------------------- | ------------------------------------ |
-| Type | Plan-driven |
-| Flexibility | Low — changes are expensive |
-| Customer involvement | Minimal (mostly at start/end) |
-| Documentation | Extensive |
-| Risk | High — issues found late are costly |
-| Best for | Well-understood, stable requirements |
+| Type                 | Plan-driven                          |
+| Flexibility          | Low — changes are expensive          |
+| Customer involvement | Minimal (mostly at start/end)        |
+| Documentation        | Extensive                            |
+| Risk                 | High — issues found late are costly  |
+| Best for             | Well-understood, stable requirements |
 
 ### Advantages
 
@@ -102,14 +105,14 @@ A specific Agile methodology with defined roles, events, and artefacts.
 
 ### Characteristics
 
-| Property | Value |
+| Property             | Value                                      |
 | -------------------- | ------------------------------------------ |
-| Type | Change-driven |
-| Flexibility | High — embrace changing requirements |
-| Customer involvement | Continuous throughout |
-| Documentation | Minimal — working software is priority |
-| Risk | Low — issues found early |
-| Best for | Evolving requirements, innovative projects |
+| Type                 | Change-driven                              |
+| Flexibility          | High — embrace changing requirements       |
+| Customer involvement | Continuous throughout                      |
+| Documentation        | Minimal — working software is priority     |
+| Risk                 | Low — issues found early                   |
+| Best for             | Evolving requirements, innovative projects |
 
 <hr />
 
@@ -135,11 +138,11 @@ Objectives          Development
 
 ### Characteristics
 
-| Property | Value |
+| Property    | Value                                           |
 | ----------- | ----------------------------------------------- |
-| Risk focus | High — explicit risk analysis at each iteration |
-| Flexibility | Medium |
-| Best for | Large, complex, high-risk projects |
+| Risk focus  | High — explicit risk analysis at each iteration |
+| Flexibility | Medium                                          |
+| Best for    | Large, complex, high-risk projects              |
 
 ### Advantages
 
@@ -179,26 +182,24 @@ Speed. Uses workshops, focus groups, and iterative user testing.
 
 ## 6. Comparison of Methodologies
 
-| Feature | Waterfall | Agile | Spiral | RAD |
+| Feature          | Waterfall  | Agile     | Spiral    | RAD       |
 | ---------------- | ---------- | --------- | --------- | --------- |
-| Approach | Linear | Iterative | Iterative | Iterative |
-| Flexibility | Low | High | Medium | High |
-| Customer involv. | Low | High | Medium | High |
-| Risk management | Low | Medium | High | Low |
-| Documentation | High | Low | High | Low |
-| Cost of change | High | Low | Medium | Low |
-| Best for | Stable req | Evolving | High-risk | Fast dev |
+| Approach         | Linear     | Iterative | Iterative | Iterative |
+| Flexibility      | Low        | High      | Medium    | High      |
+| Customer involv. | Low        | High      | Medium    | High      |
+| Risk management  | Low        | Medium    | High      | Low       |
+| Documentation    | High       | Low       | High      | Low       |
+| Cost of change   | High       | Low       | Medium    | Low       |
+| Best for         | Stable req | Evolving  | High-risk | Fast dev  |
 
-:::info
-Board-specific
+:::info Board-specific
 
 - **AQA** requires understanding of waterfall, agile, spiral, and rapid application development
- (RAD) methodologies; requires comparison of approaches
+  (RAD) methodologies; requires comparison of approaches
 - **CIE (9618)** covers waterfall and agile methodologies; may include iterative development
 - **OCR (A)** requires waterfall and agile methodologies with understanding of when each is
- appropriate
-- **Edexcel** covers SDLC phases and development methodologies
-:::
+  appropriate
+- **Edexcel** covers SDLC phases and development methodologies :::
 
 <hr />
 
@@ -240,12 +241,12 @@ Show interactions between actors (users) and the system.
 
 ### Other UML Diagrams
 
-| Diagram Type | Purpose |
+| Diagram Type      | Purpose                                     |
 | ----------------- | ------------------------------------------- |
-| Sequence diagram | Show message flow between objects over time |
-| Activity diagram | Model workflow / business processes |
-| State diagram | Show states and transitions of an object |
-| Component diagram | Show system components and dependencies |
+| Sequence diagram  | Show message flow between objects over time |
+| Activity diagram  | Model workflow / business processes         |
+| State diagram     | Show states and transitions of an object    |
+| Component diagram | Show system components and dependencies     |
 
 <hr />
 
@@ -369,8 +370,8 @@ Each model most efficient?
 <details>
 <summary>Answer</summary>
 
-**Waterfall:** Bugs are found during the testing phase, which occurs after all development
-Is complete. The cost of fixing a bug increases exponentially the later it is found:
+**Waterfall:** Bugs are found during the testing phase, which occurs after all development Is
+complete. The cost of fixing a bug increases exponentially the later it is found:
 
 - During design: relatively cheap (redesign)
 - During implementation: moderate (rewrite code)
@@ -517,14 +518,14 @@ Feedback.
 
 ### Comparison
 
-| Factor | Waterfall | Agile |
+| Factor                     | Waterfall                               | Agile                                        |
 | -------------------------- | --------------------------------------- | -------------------------------------------- |
-| Timeline to first delivery | 16 months | 5 weeks (MVP) |
-| Cost predictability | High | Medium |
-| Adaptability to API issues | Low (expensive redesign) | High (discovered in sprint) |
-| Regulatory compliance | Designed upfront, audited once | Continuous compliance, tested each sprint |
-| Staff feedback | Only at deployment | Every 2 weeks |
-| Best fit if... | Requirements are fully known and stable | Requirements are partially known or evolving |
+| Timeline to first delivery | 16 months                               | 5 weeks (MVP)                                |
+| Cost predictability        | High                                    | Medium                                       |
+| Adaptability to API issues | Low (expensive redesign)                | High (discovered in sprint)                  |
+| Regulatory compliance      | Designed upfront, audited once          | Continuous compliance, tested each sprint    |
+| Staff feedback             | Only at deployment                      | Every 2 weeks                                |
+| Best fit if...             | Requirements are fully known and stable | Requirements are partially known or evolving |
 
 <hr />
 
@@ -540,44 +541,44 @@ Feedback.
 
 ### Risk Analysis Matrix
 
-| | Low Impact | Medium Impact | High Impact |
+|                       | Low Impact      | Medium Impact   | High Impact     |
 | --------------------- | --------------- | --------------- | --------------- |
-| **High Likelihood** | Medium priority | High priority | Critical |
-| **Medium Likelihood** | Low priority | Medium priority | High priority |
-| **Low Likelihood** | Accept | Low priority | Medium priority |
+| **High Likelihood**   | Medium priority | High priority   | Critical        |
+| **Medium Likelihood** | Low priority    | Medium priority | High priority   |
+| **Low Likelihood**    | Accept          | Low priority    | Medium priority |
 
 ### Risk Mitigation Strategies
 
-| Strategy | Description | Example |
+| Strategy | Description                             | Example                                       |
 | -------- | --------------------------------------- | --------------------------------------------- |
-| Avoid | Eliminate the risk by changing the plan | Use proven technology instead of experimental |
-| Transfer | Shift the risk to a third party | Use a cloud provider for infrastructure |
-| Mitigate | Reduce likelihood or impact | Write automated tests to catch bugs early |
-| Accept | Acknowledge the risk and plan for it | Budget contingency for unexpected issues |
+| Avoid    | Eliminate the risk by changing the plan | Use proven technology instead of experimental |
+| Transfer | Shift the risk to a third party         | Use a cloud provider for infrastructure       |
+| Mitigate | Reduce likelihood or impact             | Write automated tests to catch bugs early     |
+| Accept   | Acknowledge the risk and plan for it    | Budget contingency for unexpected issues      |
 
 ### Example: Risks in a School Management System
 
-| Risk | Likelihood | Impact | Mitigation |
+| Risk                            | Likelihood | Impact | Mitigation                                      |
 | ------------------------------- | ---------- | ------ | ----------------------------------------------- |
-| Requirements change mid-project | High | Medium | Use Agile with short sprints |
-| Key developer leaves | Medium | High | Document code, pair programming, cross-training |
-| Data migration errors | Medium | High | Write migration scripts early, test with copies |
-| Performance issues at scale | Low | High | Load testing in each sprint |
-| Third-party API downtime | Medium | Medium | Implement caching and fallback mechanisms |
+| Requirements change mid-project | High       | Medium | Use Agile with short sprints                    |
+| Key developer leaves            | Medium     | High   | Document code, pair programming, cross-training |
+| Data migration errors           | Medium     | High   | Write migration scripts early, test with copies |
+| Performance issues at scale     | Low        | High   | Load testing in each sprint                     |
+| Third-party API downtime        | Medium     | Medium | Implement caching and fallback mechanisms       |
 
 <hr />
 
 ## 10. Common Pitfalls
 
-| Pitfall | Explanation | Avoidance |
+| Pitfall                                      | Explanation                                       | Avoidance                                                             |
 | -------------------------------------------- | ------------------------------------------------- | --------------------------------------------------------------------- |
-| Choosing waterfall for evolving requirements | Late changes are extremely expensive | Assess requirement stability before choosing methodology |
-| Skipping the analysis phase | Building the wrong product | Invest time in understanding the problem before building |
-| No user involvement during development | Product does not meet user needs | Regular demos and feedback sessions |
-| Insufficient testing | Bugs reach production | Allocate at least 30% of project time to testing |
-| Ignoring technical debt | Accumulated shortcuts make future changes harder | Schedule refactoring time in each sprint |
-| Scope creep | Uncontrolled addition of features delays delivery | Use a prioritised backlog, freeze scope for each sprint |
-| Poor documentation | Knowledge lost when team members leave | Maintain essential docs (architecture, API, deployment) even in Agile |
+| Choosing waterfall for evolving requirements | Late changes are extremely expensive              | Assess requirement stability before choosing methodology              |
+| Skipping the analysis phase                  | Building the wrong product                        | Invest time in understanding the problem before building              |
+| No user involvement during development       | Product does not meet user needs                  | Regular demos and feedback sessions                                   |
+| Insufficient testing                         | Bugs reach production                             | Allocate at least 30% of project time to testing                      |
+| Ignoring technical debt                      | Accumulated shortcuts make future changes harder  | Schedule refactoring time in each sprint                              |
+| Scope creep                                  | Uncontrolled addition of features delays delivery | Use a prioritised backlog, freeze scope for each sprint               |
+| Poor documentation                           | Knowledge lost when team members leave            | Maintain essential docs (architecture, API, deployment) even in Agile |
 
 <hr />
 
@@ -593,7 +594,7 @@ Recommend an SDLC methodology and justify your choice.
 **Waterfall model.** Justification:
 
 - Requirements are fixed by law and cannot change — waterfall's rigidity is an advantage, not a
- limitation
+  limitation
 - Accuracy is critical — extensive documentation and formal testing phases ensure correctness
 - Large scale (millions of records) — thorough upfront design prevents architectural issues
 - Regulatory audit — waterfall's comprehensive documentation supports compliance requirements
@@ -641,13 +642,13 @@ This situation is expected in RAD — the whole point is to gather user feedback
 Resolution steps:
 
 1. **Evaluate the changes:** Determine which changes are essential (affect usability) vs cosmetic
- (nice to have)
+   (nice to have)
 2. **Prioritise:** Add essential changes to the next iteration; defer cosmetic changes to a later
- cycle
+   cycle
 3. **Re-estimate:** Update the project timeline and budget based on the revised scope
 4. **Communicate:** Present the trade-offs to stakeholders — more features vs earlier delivery
 5. **Decide:** The product owner (or client) decides whether to accept the revised timeline or
- reduce scope
+   reduce scope
 
 RAD expects requirements to evolve through user feedback. Rejecting all changes defeats the purpose.
 However, uncontrolled changes lead to scope creep, so a structured change management process is
@@ -661,14 +662,14 @@ Identify at least four risks and classify them.
 <details>
 <summary>Answer</summary>
 
-| Risk | Likelihood | Impact | Priority | Mitigation |
+| Risk                                     | Likelihood | Impact   | Priority | Mitigation                                                |
 | ---------------------------------------- | ---------- | -------- | -------- | --------------------------------------------------------- |
-| Payment gateway integration fails | Medium | High | High | Early prototyping of payment flow, have a backup provider |
-| Database cannot handle peak traffic | Medium | High | High | Load testing early, design for horizontal scaling |
-| Security breach (customer data) | Low | Critical | High | Security audit, encryption, penetration testing |
-| Project team lacks e-commerce experience | High | Medium | High | Hire experienced developer, use proven framework |
-| Third-party shipping API changes | Medium | Low | Low | Abstract API behind an interface, monitor for deprecation |
-| Customer requirements change | High | Medium | High | Use Agile, prioritise backlog, freeze scope per sprint |
+| Payment gateway integration fails        | Medium     | High     | High     | Early prototyping of payment flow, have a backup provider |
+| Database cannot handle peak traffic      | Medium     | High     | High     | Load testing early, design for horizontal scaling         |
+| Security breach (customer data)          | Low        | Critical | High     | Security audit, encryption, penetration testing           |
+| Project team lacks e-commerce experience | High       | Medium   | High     | Hire experienced developer, use proven framework          |
+| Third-party shipping API changes         | Medium     | Low      | Low      | Abstract API behind an interface, monitor for deprecation |
+| Customer requirements change             | High       | Medium   | High     | Use Agile, prioritise backlog, freeze scope per sprint    |
 
 </details>
 

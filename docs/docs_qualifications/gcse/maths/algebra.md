@@ -1,6 +1,8 @@
 ---
 title: Algebra
-description: "Algebra — 1.1 Simplifying Expressions; 1.2 Expanding Brackets; 1.3 Factorisation; 2. Solving Equations with worked examples and exam-style questions."
+description:
+  'Algebra — 1.1 Simplifying Expressions; 1.2 Expanding Brackets; 1.3 Factorisation; 2. Solving
+  Equations with worked examples and exam-style questions.'
 date: 2026-04-14
 tags:
   - Maths
@@ -9,10 +11,10 @@ categories:
   - Maths
 slug: algebra
 ---
+
 ## Algebra
 
-:::info
-Board Coverage AQA Paper 1 & 2 | Edexcel Paper 1 & 2 | OCR Paper 1, 2, 3 | WJEC Unit 1 & 2
+:::info Board Coverage AQA Paper 1 & 2 | Edexcel Paper 1 & 2 | OCR Paper 1, 2, 3 | WJEC Unit 1 & 2
 :::
 
 ## 1. Algebraic Expressions
@@ -125,8 +127,7 @@ $$\frac{(x - 2)^2}{(x - 2)(x + 2)} = \frac{x - 2}{x + 2}$$
 $$\frac{2(x^2 - 4)}{(x + 2)^2} = \frac{2(x - 2)(x + 2)}{(x + 2)^2} = \frac{2(x - 2)}{x + 2}$$
 
 ::warning When cancelling factors in algebraic fractions, always factorise first. Never cancel
-Individual terms across addition or subtraction.
-:::
+Individual terms across addition or subtraction. :::
 
 ## 2. Solving Equations
 
@@ -168,11 +169,11 @@ $$x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$
 
 **Theorem.** The **discriminant** $\Delta = b^2 - 4ac$ determines the nature of the roots:
 
-| Condition | Roots |
+| Condition      | Roots                   |
 | -------------- | ----------------------- |
 | $\Delta \gt 0$ | Two distinct real roots |
-| $\Delta = 0$ | One repeated real root |
-| $\Delta \lt 0$ | No real roots |
+| $\Delta = 0$   | One repeated real root  |
+| $\Delta \lt 0$ | No real roots           |
 
 **Proof sketch.** The formula gives $x = \frac{-b \pm \sqrt{\Delta}}{2a}$. If $\Delta \gt 0$The
 Square root is a positive real, giving two distinct values. If $\Delta = 0$Both roots equal
@@ -284,10 +285,8 @@ $$x = \frac{32 \pm 4\sqrt{7}}{6} = \frac{16 \pm 2\sqrt{7}}{3}$$
 
 Solving linear inequalities follows the same rules as equations, with one critical difference.
 
-:::warning
-When multiplying or dividing both sides of an inequality by a negative number, you must
-Reverse the inequality sign.
-:::
+:::warning When multiplying or dividing both sides of an inequality by a negative number, you must
+Reverse the inequality sign. :::
 
 **Worked Example.** Solve $3 - 2x \gt 7$.
 
@@ -345,8 +344,8 @@ Divide by 2: $-2 \lt x \leq 3$.
 
 ### 3.5 Set Notation for Inequalities (Higher Tier)
 
-The solution $x \gt 3$ can be written as $\{x \in \mathbb{'\{'}R{'\}'} : x \gt 3\}$ or using interval notation
-$(3, \infty)$.
+The solution $x \gt 3$ can be written as $\{x \in \mathbb{'\{'}R{'\}'} : x \gt 3\}$ or using
+interval notation $(3, \infty)$.
 
 ## 4. Sequences
 
@@ -466,14 +465,8 @@ Why consecutive Fibonacci numbers are coprime: $\gcd(F_n, F_{n+1}) = F_1 = 1$.
 
 ## 5. Graphs of Functions
 
-
-
-<DesmosGraph
- title="Graphs of Common Functions"
- expressions={["x^2", "x^3", "2^x", "\frac{1}{x}"]}
- width={800}
- height={500}
-/>
+<DesmosGraph title="Graphs of Common Functions" expressions={["x^2", "x^3", "2^x", "\frac{1}{x}"]}
+width={800} height={500} />
 
 Adjust the parameters in the graph above to explore the relationships between variables.
 
@@ -543,24 +536,24 @@ The parabola opens downward with maximum at $(2, 2)$.
 
 ### 5.3 Other Key Graphs
 
-| Function | Shape | Key features |
-| ----------------- | ----------------- | --------------------------------------- |
-| $y = x^3$ | Cubic | Point of inflection at origin |
-| $y = \frac{1}{x}$ | Reciprocal | Asymptotes at both axes |
-| $y = \sqrt{x}$ | Square root | Starts at origin, curves to the right |
-| $y = 2^x$ | Exponential | Passes through $(0, 1)$Never negative |
-| $x^2 + y^2 = a^2$ | Circle radius $a$ | Centre at origin |
+| Function          | Shape             | Key features                          |
+| ----------------- | ----------------- | ------------------------------------- |
+| $y = x^3$         | Cubic             | Point of inflection at origin         |
+| $y = \frac{1}{x}$ | Reciprocal        | Asymptotes at both axes               |
+| $y = \sqrt{x}$    | Square root       | Starts at origin, curves to the right |
+| $y = 2^x$         | Exponential       | Passes through $(0, 1)$Never negative |
+| $x^2 + y^2 = a^2$ | Circle radius $a$ | Centre at origin                      |
 
 ### 5.4 Transformations of Graphs
 
-| Transformation | Effect on graph |
+| Transformation | Effect on graph                                |
 | -------------- | ---------------------------------------------- |
-| $y = f(x) + c$ | Translate up by $c$ |
-| $y = f(x - c)$ | Translate right by $c$ |
-| $y = -f(x)$ | Reflect in the $x$-axis |
-| $y = f(-x)$ | Reflect in the $y$-axis |
-| $y = af(x)$ | Vertical stretch, scale factor $a$ |
-| $y = f(ax)$ | Horizontal stretch, scale factor $\frac{1}{a}$ |
+| $y = f(x) + c$ | Translate up by $c$                            |
+| $y = f(x - c)$ | Translate right by $c$                         |
+| $y = -f(x)$    | Reflect in the $x$-axis                        |
+| $y = f(-x)$    | Reflect in the $y$-axis                        |
+| $y = af(x)$    | Vertical stretch, scale factor $a$             |
+| $y = f(ax)$    | Horizontal stretch, scale factor $\frac{1}{a}$ |
 
 **Worked Example (Higher Tier).** The graph of $y = f(x)$ passes through $(2, 5)$. State the
 Coordinates of the corresponding point on the graph of $y = f(x - 3) + 1$.
@@ -660,8 +653,7 @@ This is always divisible by 8 is **false**. For example, when $n = 1$: $1 + 4 - 
 Divisible by 8.
 
 ::warning Not every claim about numbers is true. When asked to prove something, first check whether
-The statement is actually correct with a small example.
-:::
+The statement is actually correct with a small example. :::
 
 ### 7.3 Disproof by Counterexample
 
@@ -685,8 +677,7 @@ $f(1) = 1$$g(1) = 1 + 3 = 4$.
 
 $fg(-2) = g(f(-2)) = 28 \neq 4 = gf(1)$.
 
-So $fg(-2) \neq gf(1)$ -- the statement is false. This illustrates that 
-$f \circ g \ne
+So $fg(-2) \neq gf(1)$ -- the statement is false. This illustrates that $f \circ g \ne
 G \circ f$.
 
 ## Common Pitfalls
@@ -694,19 +685,18 @@ G \circ f$.
 - **Forgetting to reverse the inequality sign** when multiplying or dividing by a negative.
 - **Incorrectly expanding $(a + b)^2$.** It is $a^2 + 2ab + b^2$Not $a^2 + b^2$.
 - **Squaring brackets incorrectly in completing the square.** $(x + 3)^2 = x^2 + 6x + 9$Not
- $x^2 + 9$.
-- **Confusing the turning point formula.** The $x$-coordinate is $-\frac{b}{2a}$Not
- $\frac{b}{2a}$.
+  $x^2 + 9$.
+- **Confusing the turning point formula.** The $x$-coordinate is $-\frac{b}{2a}$Not $\frac{b}{2a}$.
 - **Dropping solutions when solving quadratics.** Always check both values from $\pm$ in the
- formula.
+  formula.
 - **Assuming all sequences are arithmetic.** Always check the first differences.
 - **Cancelling terms instead of factors** in algebraic fractions. Factorise first.
 - **Mistaking graph transformations.** $y = f(x + 2)$ shifts LEFT by 2, not right.
 - **Forgetting domain restrictions** when simplifying algebraic fractions (e.g., $x \neq 1$).
 - **Losing a negative sign** when expanding a bracket preceded by a minus sign. Expand $-(x - 3)$ as
- $-x + 3$Not $-x - 3$.
+  $-x + 3$Not $-x - 3$.
 - **Incorrectly identifying the common difference** of a geometric sequence as addition rather than
- multiplication. Arithmetic sequences add $d$; geometric sequences multiply by $r$.
+  multiplication. Arithmetic sequences add $d$; geometric sequences multiply by $r$.
 
 ## Practice Questions
 
@@ -717,7 +707,7 @@ G \circ f$.
 3. Solve $x^2 - 7x + 10 = 0$ by factorisation, and verify using the quadratic formula.
 
 4. Write $2x^2 - 12x + 5$ in completed square form. Hence state the minimum value and where it
- occurs.
+   occurs.
 
 5. Solve the inequality $x^2 - 4x - 5 \gt 0$.
 
@@ -734,14 +724,14 @@ G \circ f$.
 11. Find the equation of the line through $(3, -1)$ perpendicular to $2x + 5y = 10$.
 
 12. Express $\frac{x^3 - x}{x^2 - 1}$ as a simplified algebraic fraction, stating any restriction on
- $x$.
+    $x$.
 
 13. Prove that the difference between the squares of any two consecutive integers is always odd.
 
 14. Solve $x^2 - 6x + 2 \leq 0$Giving your answer in exact form.
 
 15. The first three terms of a geometric sequence are $k, k + 3, k + 12$. Find the value of $k$ and
- the common ratio.
+    the common ratio.
 
 16. Find the $n$-th term of the sequence $5, 10, 17, 26, 37, \ldots$.
 

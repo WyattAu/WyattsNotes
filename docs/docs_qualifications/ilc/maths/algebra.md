@@ -1,6 +1,8 @@
 ---
 title: Algebra
-description: "Algebra — Expanding and Factorising; Difference of Two Squares (HL); Perfect Square Trinomials (HL); Solving Equations. and examination."
+description:
+  'Algebra — Expanding and Factorising; Difference of Two Squares (HL); Perfect Square Trinomials
+  (HL); Solving Equations. and examination.'
 date: 2026-04-14
 tags:
   - Mathematics
@@ -9,6 +11,7 @@ categories:
   - Mathematics
 slug: algebra
 ---
+
 # Algebra
 
 Algebra is a fundamental area of the Leaving Certificate Mathematics syllabus, appearing in both
@@ -178,10 +181,10 @@ $$
 
 The discriminant $\Delta = b^2 - 4ac$ determines the nature of the roots:
 
-| Condition | Roots |
+| Condition    | Roots                             |
 | ------------ | --------------------------------- |
-| $\Delta > 0$ | Two distinct real roots |
-| $\Delta = 0$ | One repeated real root |
+| $\Delta > 0$ | Two distinct real roots           |
+| $\Delta = 0$ | One repeated real root            |
 | $\Delta < 0$ | No real roots (two complex roots) |
 
 **Example (HL):** Find the range of $k$ for which $x^2 + 4x + k = 0$ has real roots.
@@ -269,10 +272,8 @@ $$
 -1 < x < 4
 $$
 
-:::warning
-Always check the inequality sign carefully. For $x^2 - 3x - 4 \gt 0$The solution would
-Be $x \lt -1$ or $x \gt 4$ (outside the roots).
-:::
+:::warning Always check the inequality sign carefully. For $x^2 - 3x - 4 \gt 0$The solution would Be
+$x \lt -1$ or $x \gt 4$ (outside the roots). :::
 
 **Example (HL):** Solve $\frac{x - 1}{x + 2} \le 0$.
 
@@ -280,11 +281,11 @@ Critical values: $x = 1$ (numerator zero) and $x = -2$ (denominator zero).
 
 Sign chart:
 
-| Interval | $x < -2$ | $-2 < x < 1$ | $x > 1$ |
+| Interval | $x < -2$ | $-2 < x < 1$ | $x > 1$      |
 | -------- | -------- | ------------ | ------------ |
-| $x - 1$ | Negative | Negative | Positive |
-| $x + 2$ | Negative | Positive | Positive |
-| Quotient | Positive | Negative | Non-negative |
+| $x - 1$  | Negative | Negative     | Positive     |
+| $x + 2$  | Negative | Positive     | Positive     |
+| Quotient | Positive | Negative     | Non-negative |
 
 Solution: $x \in (-2, 1]$.
 
@@ -344,12 +345,12 @@ For $a < 0$Add $\pi$ to get the correct quadrant.
 
 **Quadrant check for the argument:**
 
-| Quadrant | $a$ | $b$ | $\arg(z)$ |
+| Quadrant | $a$   | $b$   | $\arg(z)$             |
 | -------- | ----- | ----- | --------------------- | --- | --- |
-| I | $> 0$ | $> 0$ | $\arctan(b/a)$ |
-| II | $< 0$ | $> 0$ | $\pi - \arctan(b/     | a   | )$ |
-| III | $< 0$ | $< 0$ | $-\pi + \arctan(b/a)$ |
-| IV | $> 0$ | $< 0$ | $-\arctan(b/a)$ |
+| I        | $> 0$ | $> 0$ | $\arctan(b/a)$        |
+| II       | $< 0$ | $> 0$ | $\pi - \arctan(b/     | a   | )$  |
+| III      | $< 0$ | $< 0$ | $-\pi + \arctan(b/a)$ |
+| IV       | $> 0$ | $< 0$ | $-\arctan(b/a)$       |
 
 ### Polar Form (HL)
 
@@ -421,7 +422,7 @@ These lie on the unit circle in the complex plane, equally spaced at angles of $
 - The sum of all $n$Th roots of unity is $0$.
 - The product of all $n$Th roots of unity is $(-1)^{n-1}$.
 - The $n$Th roots of any complex number $w = re^{i\theta}$ are
- $\sqrt[n]{r}\, e^{i(\theta + 2k\pi)/n}$ for $k = 0, 1, \ldots, n-1$.
+  $\sqrt[n]{r}\, e^{i(\theta + 2k\pi)/n}$ for $k = 0, 1, \ldots, n-1$.
 
 **Example:** Find the cube roots of unity.
 
@@ -457,8 +458,7 @@ A matrix $A$ of order $m \times n$ has $m$ rows and $n$ columns.
 
 **Scalar multiplication:** Multiply every element by the scalar.
 
-**Matrix multiplication:** If $A$ is $m \times p$ and $B$ is $p \times n$Then $AB$ is
-$m \times n$.
+**Matrix multiplication:** If $A$ is $m \times p$ and $B$ is $p \times n$Then $AB$ is $m \times n$.
 
 The $(i, j)$ entry of $AB$ is:
 
@@ -529,7 +529,7 @@ $$
 2. **Inductive hypothesis:** Assume the statement holds for $n = k$.
 3. **Inductive step:** Show that if it holds for $n = k$It also holds for $n = k + 1$.
 4. **Conclusion:** By the principle of mathematical induction, the statement holds for all
- $n \geq 1$.
+   $n \geq 1$.
 
 **Why induction works.** The base case anchors the chain at $n = 1$. The inductive step shows that
 If any link in the chain holds, the next one does too. Together, they prove that every link holds.
@@ -631,11 +631,11 @@ The critical values are $x = -2$ and $x = 1$ (double root).
 
 Sign chart:
 
-| Interval | $x < -2$ | $-2 < x < 1$ | $x > 1$ |
+| Interval  | $x < -2$ | $-2 < x < 1$ | $x > 1$  |
 | --------- | -------- | ------------ | -------- |
-| $(x+2)$ | Negative | Positive | Positive |
-| $(x-1)^2$ | Positive | Positive | Positive |
-| Product | Negative | Positive | Positive |
+| $(x+2)$   | Negative | Positive     | Positive |
+| $(x-1)^2$ | Positive | Positive     | Positive |
+| Product   | Negative | Positive     | Positive |
 
 Solution: $x < -2$ or $x > 1$I.e., $x \in (-\infty, -2) \cup (1, \infty)$.
 
@@ -647,16 +647,16 @@ Solution despite being a root, because the factor is squared.
 1. **Sign errors** in factorisation and expansion -- always double-check by expanding back.
 2. **Forgetting to reverse the inequality** when multiplying/dividing by a negative number.
 3. **Confusing the discriminant conditions** for real vs. Complex roots. $\Delta < 0$ means two
- complex conjugate roots, not "no roots."
+   complex conjugate roots, not "no roots."
 4. **De Moivre's theorem** requires the argument to be in radians.
 5. **Matrix multiplication is not commutative:** $AB \neq BA$ .
 6. **Induction base case** -- always state and verify it explicitly. A proof without a base case is
- like a chain with no anchor.
+   like a chain with no anchor.
 7. **Domain restrictions on logarithms** -- $\log_a(x)$ is only defined for $x > 0$.
 8. **Forgetting absolute values** in the quadratic formula when $\Delta < 0$:
- $x = \frac{-b \pm i\sqrt{|\Delta|}}{2a}$.
+   $x = \frac{-b \pm i\sqrt{|\Delta|}}{2a}$.
 9. **Confusing the argument quadrant.** For $z = -1 + i$ (second quadrant),
- $\arg(z) = \frac{3\pi}{4}$Not $\arctan(-1)$.
+   $\arg(z) = \frac{3\pi}{4}$Not $\arctan(-1)$.
 
 ## Practice Questions
 
@@ -675,7 +675,7 @@ Solution despite being a root, because the factor is squared.
 3. Find the modulus and argument of $\frac{1 + i}{1 - i}$.
 4. Find the values of $k$ for which $kx^2 + 4x + k = 0$ has equal roots.
 5. Given $A = \begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix}$ and
- $B = \begin{pmatrix} 0 & -1 \\ 2 & 3 \end{pmatrix}$Find $AB - BA$.
+   $B = \begin{pmatrix} 0 & -1 \\ 2 & 3 \end{pmatrix}$Find $AB - BA$.
 6. Find all complex numbers $z$ such that $z^4 = 16$.
 7. Solve the inequality $x^2 - 2x - 15 \gt 0$.
 8. Factorise $x^4 - 1$ completely.
@@ -691,16 +691,16 @@ Solution despite being a root, because the factor is squared.
 
 16. Given $z = 2 + 3i$ and $w = 1 - 4i$Find $z\bar{w}$ and $|z/w|$.
 17. Solve the simultaneous equations $x + iy + iz = 0$ and $x - 2y + iz = 1 + i$ for real $x$ and
- $y$.
+    $y$.
 18. Prove by induction that
- $\frac{1}{1 \times 2} + \frac{1}{2 \times 3} + \cdots + \frac{1}{n(n+1)} = \frac{n}{n+1}$.
+    $\frac{1}{1 \times 2} + \frac{1}{2 \times 3} + \cdots + \frac{1}{n(n+1)} = \frac{n}{n+1}$.
 19. Find the matrix $A$ such that
- $A\begin{pmatrix} 1 \\ 2 \end{pmatrix} = \begin{pmatrix} 5 \\ 3 \end{pmatrix}$ and
- $A\begin{pmatrix} 3 \\ 1 \end{pmatrix} = \begin{pmatrix} 7 \\ 7 \end{pmatrix}$.
+    $A\begin{pmatrix} 1 \\ 2 \end{pmatrix} = \begin{pmatrix} 5 \\ 3 \end{pmatrix}$ and
+    $A\begin{pmatrix} 3 \\ 1 \end{pmatrix} = \begin{pmatrix} 7 \\ 7 \end{pmatrix}$.
 20. Express $\frac{3x^2 - x + 2}{(x-1)(x^2 + 1)}$ in partial fractions.
 21. Find all complex numbers $z$ satisfying $|z - 2i| = |z + 2|$ and interpret geometrically.
 22. Prove that if a quadratic equation with rational coefficients has one irrational root
- $a + b\sqrt{c}$ (where $b \neq 0$), then $a - b\sqrt{c}$ is also a root.
+    $a + b\sqrt{c}$ (where $b \neq 0$), then $a - b\sqrt{c}$ is also a root.
 
 ## Summary
 

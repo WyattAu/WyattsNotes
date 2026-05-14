@@ -1,11 +1,14 @@
 ---
 title: Virtual Threads and Structured Concurrency
-description: "Virtual Threads and Structured Concurrency — Project Loom and Virtual Threads (JEP 444, Java 21); The Problem with Platform Threads; What Is a Virtual Thread."
+description:
+  'Virtual Threads and Structured Concurrency — Project Loom and Virtual Threads (JEP 444, Java 21);
+  The Problem with Platform Threads; What Is a Virtual Thread.'
 date: 2026-04-03T00:00:00.000Z
 tags: ['java']
 categories: ['java']
 slug: virtual-threads-structured-concurrency
 ---
+
 ## Project Loom and Virtual Threads (JEP 444, Java 21)
 
 ### The Problem with Platform Threads
@@ -32,9 +35,9 @@ Block of memory. When a virtual thread blocks on I/O, the JVM unmounts it from i
 Thread) and mounts a different virtual thread. When the I/O completes, the JVM remounts the original
 Virtual thread, potentially on a different carrier.
 
-This means you can have millions of virtual threads running on a small number of carrier threads
-( matching the number of CPU cores). The memory footprint of a virtual thread that is
-Blocked on I/O is a few hundred bytes, not 1 MB.
+This means you can have millions of virtual threads running on a small number of carrier threads (
+matching the number of CPU cores). The memory footprint of a virtual thread that is Blocked on I/O
+is a few hundred bytes, not 1 MB.
 
 ### Creating Virtual Threads
 
@@ -74,14 +77,14 @@ The JVM maintains a pool of carrier threads ( ForkJoinPool worker threads, by de
 Number of available processors). When a virtual thread performs a blocking operation:
 
 1. **Mounting**: The virtual thread is mounted onto a carrier thread. Its stack frames are copied
- onto the carrier's stack.
-2. **Blocking**: When the virtual thread calls a blocking operation (`Thread.sleep`Socket read,
- file I/O), the JVM does not park the carrier thread. Instead, it saves the virtual thread's state
- as a heap-allocated continuation and unmounts the virtual thread.
+   onto the carrier's stack.
+2. **Blocking**: When the virtual thread calls a blocking operation (`Thread.sleep`Socket read, file
+   I/O), the JVM does not park the carrier thread. Instead, it saves the virtual thread's state as a
+   heap-allocated continuation and unmounts the virtual thread.
 3. **Unmounting**: The carrier thread is now free to execute another virtual thread.
 4. **Remounting**: When the blocking operation completes (I/O is ready, sleep expires), the JVM
- schedules the virtual thread to be mounted on any available carrier thread. It may not be the
- same carrier that originally ran it.
+   schedules the virtual thread to be mounted on any available carrier thread. It may not be the
+   same carrier that originally ran it.
 
 This mounting/unmounting is transparent to the application code. From the virtual thread's
 Perspective, it called a blocking method and the method returned. The thread identity
@@ -219,9 +222,9 @@ public UserData fetchUserData(String userId) throws Exception {
 `StructuredTaskScope` provides two built-in shutdown policies:
 
 - **`ShutdownOnFailure`**: If any child task fails, cancel all remaining children. Useful when all
- results are needed.
+  results are needed.
 - **`ShutdownOnSuccess`**: When the first child task succeeds, cancel all remaining children. Useful
- for "first to respond" patterns like querying multiple caches or endpoints.
+  for "first to respond" patterns like querying multiple caches or endpoints.
 
 ```java
 // First successful result wins
@@ -317,11 +320,11 @@ public class OrderService {
 `ThreadLocal` provides per-thread state, but it has several problems in a virtual thread world:
 
 1. **Memory consumption**: Each virtual thread gets its own copy. With millions of virtual threads,
- this is unsustainable.
+   this is unsustainable.
 2. **Inheritance**: `ThreadLocal` values are inherited by child threads, which is often undesirable.
 3. **Mutation**: `ThreadLocal` values are mutable, making it easy to introduce subtle bugs.
 4. **Lifetime**: `ThreadLocal` values live as long as the thread. Virtual threads in a per-task
- executor are short-lived, so cleanup is frequent but not automatic.
+   executor are short-lived, so cleanup is frequent but not automatic.
 
 ### `ScopedValue` Basics
 
@@ -350,14 +353,14 @@ private void processRequest(Request request) {
 
 ### Scoped Values vs ThreadLocal
 
-| Feature | `ThreadLocal` | `ScopedValue` |
+| Feature          | `ThreadLocal`                  | `ScopedValue`                       |
 | ---------------- | ------------------------------ | ----------------------------------- |
-| Mutability | Mutable | Immutable (bound once per scope) |
-| Lifetime | Thread lifetime | Scope lifetime |
-| Memory footprint | Per-thread copy | Shared reference |
-| Inheritance | Inherited by child threads | Inherited by child threads |
-| Rebinding | Can rebind per call | Cannot rebind within active scope |
-| Virtual thread | Expensive (millions of copies) | Efficient (single shared reference) |
+| Mutability       | Mutable                        | Immutable (bound once per scope)    |
+| Lifetime         | Thread lifetime                | Scope lifetime                      |
+| Memory footprint | Per-thread copy                | Shared reference                    |
+| Inheritance      | Inherited by child threads     | Inherited by child threads          |
+| Rebinding        | Can rebind per call            | Cannot rebind within active scope   |
+| Virtual thread   | Expensive (millions of copies) | Efficient (single shared reference) |
 
 ### Binding and Rebinding
 
@@ -403,14 +406,14 @@ try (var executor = Executors.newVirtualThreadPerTaskExecutor()) {
 
 ### Virtual Threads vs Go Goroutines
 
-| Feature | Java Virtual Threads | Go Goroutines |
+| Feature             | Java Virtual Threads         | Go Goroutines                  |
 | ------------------- | ---------------------------- | ------------------------------ |
-| Stack model | Heap-allocated continuations | Heap-allocated growable stacks |
-| Scheduling | FIFO (JDK 21+) | Work-stealing |
-| Pinning risk | Yes (`synchronized` blocks) | No (no equivalent construct) |
-| M:N scheduling | Yes | Yes |
-| Typical concurrency | Millions | Hundreds of thousands |
-| Blocking I/O | Transparent unmount | Transparent unmount |
+| Stack model         | Heap-allocated continuations | Heap-allocated growable stacks |
+| Scheduling          | FIFO (JDK 21+)               | Work-stealing                  |
+| Pinning risk        | Yes (`synchronized` blocks)  | No (no equivalent construct)   |
+| M:N scheduling      | Yes                          | Yes                            |
+| Typical concurrency | Millions                     | Hundreds of thousands          |
+| Blocking I/O        | Transparent unmount          | Transparent unmount            |
 
 Go goroutines are more mature (available since Go 1.0 in 2012) and have no pinning issue because Go
 Does not have monitor-based locking. Java virtual threads are catching up, and the pinning issue is
@@ -519,16 +522,16 @@ A blocked virtual thread consumes roughly 200-500 bytes of heap. A blocked platf
 
 ### Throughput
 
-For I/O-bound workloads, virtual threads match or exceed the throughput of reactive
-Frameworks (Netty, WebFlux) while using dramatically simpler code. The throughput improvement comes
-From eliminating context-switch overhead: the JVM does not need to make an expensive
-`pthread_create` or kernel context switch for each new concurrent operation.
+For I/O-bound workloads, virtual threads match or exceed the throughput of reactive Frameworks
+(Netty, WebFlux) while using dramatically simpler code. The throughput improvement comes From
+eliminating context-switch overhead: the JVM does not need to make an expensive `pthread_create` or
+kernel context switch for each new concurrent operation.
 
 ### CPU-Bound Work
 
 Virtual threads add scheduling overhead (mounting, unmounting, continuation management). For pure
 CPU-bound work, platform threads on a bounded thread pool are marginally faster. The difference is
- small (single-digit percentage) but measurable.
+small (single-digit percentage) but measurable.
 
 ## StructuredTaskScope: Advanced Patterns
 
@@ -645,8 +648,8 @@ public class RaceScope&lt;T&gt; extends StructuredTaskScope&lt;T&gt; {
 
 ### Traditional Thread Dumps
 
-A traditional thread dump (`jstack``kill -3`Or `Thread.getAllStackTraces()`) shows platform
-Threads. With virtual threads, a thread dump also shows virtual threads but in a different format:
+A traditional thread dump (`jstack``kill -3`Or `Thread.getAllStackTraces()`) shows platform Threads.
+With virtual threads, a thread dump also shows virtual threads but in a different format:
 
 ```bash
 # Dump all threads including virtual threads
@@ -825,13 +828,13 @@ public UserData fetchUserData(String userId) throws Exception {
 ## See Also
 
 - [Concurrency](../06-concurrency/01-concurrency.md) -- traditional concurrency primitives,
- `ReentrantLock``CompletableFuture`
+  `ReentrantLock``CompletableFuture`
 - [Collections Framework](../04-collections/01-collections-framework.md) -- thread-safe collections
- for concurrent access
+  for concurrent access
 - [Records, Sealed Classes, and Pattern Matching](../08-modern-java/01-records-sealed-patterns.md)
- -- pattern matching used in structured concurrency
+  -- pattern matching used in structured concurrency
 - [Class Loading and Memory Model](../09-jvm-internals/01-class-loading-memory.md) -- how the JVM
- manages threads and memory
+  manages threads and memory
 
 ## Summary
 

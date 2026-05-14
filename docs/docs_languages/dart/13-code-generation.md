@@ -1,6 +1,8 @@
 ---
 title: Code Generation
-description: "Code Generation — The build_runner Ecosystem; build_runner; Core Commands; One-time build — generates all files with worked examples and exam-style questions."
+description:
+  'Code Generation — The build_runner Ecosystem; build_runner; Core Commands; One-time build —
+  generates all files with worked examples and exam-style questions.'
 date: 2026-04-05T00:00:00.000Z
 tags:
   - Dart
@@ -8,6 +10,7 @@ categories:
   - Dart
 slug: code-generation
 ---
+
 # Code Generation
 
 ## What is Code Generation
@@ -18,17 +21,17 @@ Repetitive code (serialization, equality, copyWith), and ensures consistency bet
 Their derived code.
 
 The Dart ecosystem relies on the `build_runner` package as the foundation for all code generation
-Workflows. Packages like `freezed``json_serializable``injectable``retrofit`And `auto_route`
-All use `build_runner` under the hood.
+Workflows. Packages like `freezed``json_serializable``injectable``retrofit`And `auto_route` All use
+`build_runner` under the hood.
 
 ### Why Code Generation
 
-1. **Boilerplate reduction**: `copyWith``==``hashCode``toString``fromJson`/`toJson` are
- generated, not hand-written
+1. **Boilerplate reduction**: `copyWith``==``hashCode``toString``fromJson`/`toJson` are generated,
+   not hand-written
 2. **Consistency**: generated code is always in sync with the model — change a field, regenerate,
- and serialization updates
+   and serialization updates
 3. **Performance**: generated code avoids runtime reflection (which Dart does not have), using
- direct field access instead
+   direct field access instead
 4. **Safety**: compile-time errors surface immediately after regeneration, not at runtime
 
 ### The build_runner Ecosystem
@@ -169,8 +172,8 @@ global_options:
 
 ## freezed
 
-`freezed` generates immutable data classes with `copyWith``==``hashCode``toString`And union
-Type support using Dart sealed classes.
+`freezed` generates immutable data classes with `copyWith``==``hashCode``toString`And union Type
+support using Dart sealed classes.
 
 ### Basic Usage
 
@@ -640,13 +643,13 @@ class Task {
 Different code generation packages produce files with specific suffixes. Understanding these
 Conventions helps with `.gitignore` configuration and debugging.
 
-| Suffix | Package | Purpose |
-| --------------- | --------------------------------------------- | ---------------------------------------------------------------------- |
-| `.g.dart` | `json_serializable``injectable``retrofit` | General generated code (fromJson/toJson, DI registration, API clients) |
-| `.freezed.dart` | `freezed` | Immutable class implementations, union types, copyWith |
-| `.gr.dart` | `retrofit``auto_route` | Retrofit API client, AutoRoute router generated files |
-| `.config.dart` | `injectable` | Generated dependency configuration |
-| `.chopper.dart` | `chopper` | Chopper API client generated code |
+| Suffix          | Package                                   | Purpose                                                                |
+| --------------- | ----------------------------------------- | ---------------------------------------------------------------------- |
+| `.g.dart`       | `json_serializable``injectable``retrofit` | General generated code (fromJson/toJson, DI registration, API clients) |
+| `.freezed.dart` | `freezed`                                 | Immutable class implementations, union types, copyWith                 |
+| `.gr.dart`      | `retrofit``auto_route`                    | Retrofit API client, AutoRoute router generated files                  |
+| `.config.dart`  | `injectable`                              | Generated dependency configuration                                     |
+| `.chopper.dart` | `chopper`                                 | Chopper API client generated code                                      |
 
 ### .gitignore Configuration
 

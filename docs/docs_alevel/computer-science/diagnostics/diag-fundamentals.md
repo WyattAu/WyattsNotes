@@ -1,6 +1,8 @@
 ---
-title: "Fundamentals -- Diagnostic Tests"
-description: "Diagnostic tests for A-Level CS fundamentals: binary/hex conversion, two's complement, floating point, and Boolean algebra."
+title: 'Fundamentals -- Diagnostic Tests'
+description:
+  "Diagnostic tests for A-Level CS fundamentals: binary/hex conversion, two's complement, floating
+  point, and Boolean algebra."
 slug: diag-fundamentals
 hide_table_of_contents: true
 ---
@@ -10,7 +12,10 @@ hide_table_of_contents: true
 ## Unit Tests
 
 ### UT-1: Two's Complement and Arithmetic
-**Question:** (a) Convert $-97$ to 8-bit two's complement. (b) Perform the addition $(-97) + 45$ using 8-bit two's complement binary. State whether overflow occurs. (c) What is the range of integers representable in 8-bit two's complement?
+
+**Question:** (a) Convert $-97$ to 8-bit two's complement. (b) Perform the addition $(-97) + 45$
+using 8-bit two's complement binary. State whether overflow occurs. (c) What is the range of
+integers representable in 8-bit two's complement?
 
 **Solution:**
 
@@ -29,17 +34,24 @@ $$
 \end{array}
 $$
 
-$11001100_2$ is a negative number (MSB $= 1$). Convert to decimal: flip bits $= 00110011$Add 1 $= 00110100_2 = 52$. So the result is $-52$.
+$11001100_2$ is a negative number (MSB $= 1$). Convert to decimal: flip bits $= 00110011$Add 1
+$= 00110100_2 = 52$. So the result is $-52$.
 
 Check: $-97 + 45 = -52$. Correct.
 
-Overflow: No overflow occurs because a positive and negative number are being added, which can never produce overflow in two's complement. Overflow can only occur when adding two numbers of the same sign.
+Overflow: No overflow occurs because a positive and negative number are being added, which can never
+produce overflow in two's complement. Overflow can only occur when adding two numbers of the same
+sign.
 
 (c) Range: $-2^{n-1}$ to $2^{n-1} - 1$. For $n = 8$: $-128$ to $+127$.
 
 ---
+
 ### UT-2: Floating Point Representation
-**Question:** A floating-point system uses 8 bits: 1 sign bit, 3 exponent bits (excess-4), and 4 mantissa bits. Represent $-5.75$ in this format. Calculate the absolute error and the relative error as a percentage.
+
+**Question:** A floating-point system uses 8 bits: 1 sign bit, 3 exponent bits (excess-4), and 4
+mantissa bits. Represent $-5.75$ in this format. Calculate the absolute error and the relative error
+as a percentage.
 
 **Solution:**
 
@@ -55,7 +67,8 @@ Mantissa (4 bits after the implicit leading 1): $0111$.
 
 Representation: $1\ 110\ 0111 = 11100111_2$.
 
-Stored value: $(-1)^1 \times 1.0111_2 \times 2^{110_2 - 100_2} = -1.0111_2 \times 2^2 = -101.11_2 = -(4 + 0 + 1 + 0.5 + 0.25) = -5.75$.
+Stored value:
+$(-1)^1 \times 1.0111_2 \times 2^{110_2 - 100_2} = -1.0111_2 \times 2^2 = -101.11_2 = -(4 + 0 + 1 + 0.5 + 0.25) = -5.75$.
 
 Absolute error: $|{-5.75} - ({-5.75})| = 0$. The representation is exact in this case.
 
@@ -67,11 +80,16 @@ Mantissa would be $011$Stored value $= -1.011_2 \times 2^2 = -101.1_2 = -(4 + 1 
 
 Absolute error $= |-5.5 - (-5.75)| = 0.25$. Relative error $= 0.25 / 5.75 = 4.35\%$.
 
-With 4 mantissa bits, $5.75$ is represented exactly because $5.75 = 101.11_2$ which fits in the available bits.
+With 4 mantissa bits, $5.75$ is represented exactly because $5.75 = 101.11_2$ which fits in the
+available bits.
 
 ---
+
 ### UT-3: Boolean Algebra Simplification
-**Question:** Simplify the Boolean expression $F = A\bar{B}C + AB\bar{C} + ABC + \bar{A}BC$. Use Boolean algebra laws and verify with a Karnaugh map. Draw the logic circuit for the simplified expression using only NAND gates.
+
+**Question:** Simplify the Boolean expression $F = A\bar{B}C + AB\bar{C} + ABC + \bar{A}BC$. Use
+Boolean algebra laws and verify with a Karnaugh map. Draw the logic circuit for the simplified
+expression using only NAND gates.
 
 **Solution:**
 
@@ -87,16 +105,18 @@ Simplify $AB + A\bar{B}C = A(B + \bar{B}C) = A(B + C) = AB + AC$.
 
 Therefore: $F = AB + AC + BC$.
 
-**Karnaugh map verification** (minterms: $A\bar{B}C = m_5$$AB\bar{C} = m_6$$ABC = m_7$$\bar{A}BC = m_3$):
+**Karnaugh map verification** (minterms:
+$A\bar{B}C = m_5$$AB\bar{C} = m_6$$ABC = m_7$$\bar{A}BC = m_3$):
 
-| AB\C | 0 | 1 |
-|------|---|---|
-| 00 | 0 | 0 |
-| 01 | 0 | 1 |
-| 11 | 1 | 1 |
-| 10 | 1 | 1 |
+| AB\C | 0   | 1   |
+| ---- | --- | --- |
+| 00   | 0   | 0   |
+| 01   | 0   | 1   |
+| 11   | 1   | 1   |
+| 10   | 1   | 1   |
 
 Groups:
+
 - $m_3 + m_7$ (column C=1, B=1): $BC$
 - $m_6 + m_7$ (row AB=11, A=1, B=1): $AB$
 - $m_5 + m_7$ (column C=1, A=1): $AC$
@@ -109,12 +129,19 @@ Each AND becomes NAND followed by NAND (as inverter). Each OR becomes NAND.
 
 Using De Morgan's: $F = \overline{\overline{AB} \cdot \overline{BC} \cdot \overline{AC}}$.
 
-This uses three NAND gates for the AND operations (actually, we can use NAND directly since $\text{NAND}(A,B) = \overline{AB}$), and one NAND gate for the final OR (since $\overline{\overline{AB} \cdot \overline{CD}} = AB + CD$). Total: 4 NAND gates.
+This uses three NAND gates for the AND operations (actually, we can use NAND directly since
+$\text{NAND}(A,B) = \overline{AB}$), and one NAND gate for the final OR (since
+$\overline{\overline{AB} \cdot \overline{CD}} = AB + CD$). Total: 4 NAND gates.
 
 ## Integration Tests
 
 ### IT-1: Number Systems and Data Representation (with Data Representation in Programming)
-**Question:** The 16-bit two's complement number $1111111111101001_2$ is stored in memory at address $\text{0x1A00}$. (a) What decimal value does it represent? (b) If this represents the count of characters in a UTF-8 encoded string, how many bytes of memory does the string occupy? (c) If the string contains only ASCII characters, what is the maximum possible length of the string in characters?
+
+**Question:** The 16-bit two's complement number $1111111111101001_2$ is stored in memory at address
+$\text{0x1A00}$. (a) What decimal value does it represent? (b) If this represents the count of
+characters in a UTF-8 encoded string, how many bytes of memory does the string occupy? (c) If the
+string contains only ASCII characters, what is the maximum possible length of the string in
+characters?
 
 **Solution:**
 
@@ -124,29 +151,41 @@ Flip: $0000000000010110_2$. Add 1: $0000000000010111_2 = 23$.
 
 So the value is $-23$.
 
-A negative value is not a valid character count. The interpretation depends on whether the stored value is treated as signed or unsigned.
+A negative value is not a valid character count. The interpretation depends on whether the stored
+value is treated as signed or unsigned.
 
-As unsigned: $1111111111101001_2 = 1 + 8 + 16 + 32 + 64 + 128 + 256 + 512 + 1024 + 2048 + 4096 + 8192 + 16384 + 32768 = 65513$.
+As unsigned:
+$1111111111101001_2 = 1 + 8 + 16 + 32 + 64 + 128 + 256 + 512 + 1024 + 2048 + 4096 + 8192 + 16384 + 32768 = 65513$.
 
 As signed 16-bit two's complement: $65513 - 65536 = -23$.
 
 If treated as signed, $-23$ is not a valid count. If interpreted as unsigned: $65513$.
 
 (b) If interpreted as unsigned ($65513$ characters) in UTF-8:
+
 - ASCII characters: 1 byte each
 - Extended Latin: 2 bytes
 - Other scripts: 3 bytes
 - Emoji: 4 bytes
 
-Without knowing the character mix, we cannot determine the exact byte count. If all ASCII: $65513$ bytes. If all 4-byte: $262052$ bytes.
+Without knowing the character mix, we cannot determine the exact byte count. If all ASCII: $65513$
+bytes. If all 4-byte: $262052$ bytes.
 
-(c) Maximum ASCII characters in a string that occupies this many bytes: $65513$ characters (if unsigned). If the value is $-23$There is no valid interpretation as a character count.
+(c) Maximum ASCII characters in a string that occupies this many bytes: $65513$ characters (if
+unsigned). If the value is $-23$There is no valid interpretation as a character count.
 
-This question illustrates the importance of choosing the correct representation: using an unsigned integer for counts avoids the confusion of negative values, while two's complement is essential for values that can be negative.
+This question illustrates the importance of choosing the correct representation: using an unsigned
+integer for counts avoids the confusion of negative values, while two's complement is essential for
+values that can be negative.
 
 ---
+
 ### IT-2: Floating Point and Error Propagation (with Measurement/Scientific)
-**Question:** A 12-bit floating-point system (1 sign, 5 exponent excess-15, 6 mantissa) stores the value $0.1$. Calculate: (a) the stored binary representation, (b) the decimal value actually stored, (c) the absolute and relative error. (d) If 0.1 is added to itself 10 times using this representation, what is the accumulated error?
+
+**Question:** A 12-bit floating-point system (1 sign, 5 exponent excess-15, 6 mantissa) stores the
+value $0.1$. Calculate: (a) the stored binary representation, (b) the decimal value actually stored,
+(c) the absolute and relative error. (d) If 0.1 is added to itself 10 times using this
+representation, what is the accumulated error?
 
 **Solution:**
 
@@ -180,39 +219,51 @@ Expected: $10 \times 0.1 = 1.0$.
 
 Accumulated error: $|1.0 - 0.99609375| = 0.00390625$.
 
-Note: the error does NOT grow by a factor of 10 -- it stays at $0.00390625$ because we are adding the same truncated value repeatedly. In practice, floating-point addition at each step introduces additional rounding errors, so the actual accumulated error would be slightly different.
+Note: the error does NOT grow by a factor of 10 -- it stays at $0.00390625$ because we are adding
+the same truncated value repeatedly. In practice, floating-point addition at each step introduces
+additional rounding errors, so the actual accumulated error would be slightly different.
 
 ---
+
 ### IT-3: Boolean Algebra and Logic Gates (with Computer Architecture)
-**Question:** A half-adder adds two 1-bit numbers and produces a sum and carry. (a) Derive the Boolean expressions for sum ($S$) and carry ($C$). (b) Show how two half-adders and an OR gate can be combined to create a full-adder. (c) For a 4-bit ripple-carry adder, calculate the maximum propagation delay if each half-adder has a delay of $5\ \text{ns}$ and each OR gate has a delay of $3\ \text{ns}$.
+
+**Question:** A half-adder adds two 1-bit numbers and produces a sum and carry. (a) Derive the
+Boolean expressions for sum ($S$) and carry ($C$). (b) Show how two half-adders and an OR gate can
+be combined to create a full-adder. (c) For a 4-bit ripple-carry adder, calculate the maximum
+propagation delay if each half-adder has a delay of $5\ \text{ns}$ and each OR gate has a delay of
+$3\ \text{ns}$.
 
 **Solution:**
 
 (a) Half-adder truth table:
 
-| A | B | S | C |
-|---|---|---|---|
-| 0 | 0 | 0 | 0 |
-| 0 | 1 | 1 | 0 |
-| 1 | 0 | 1 | 0 |
-| 1 | 1 | 0 | 1 |
+| A   | B   | S   | C   |
+| --- | --- | --- | --- |
+| 0   | 0   | 0   | 0   |
+| 0   | 1   | 1   | 0   |
+| 1   | 0   | 1   | 0   |
+| 1   | 1   | 0   | 1   |
 
-$S = A \oplus B = A\bar{B} + \bar{A}B$ (XOR).
-$C = AB$ (AND).
+$S = A \oplus B = A\bar{B} + \bar{A}B$ (XOR). $C = AB$ (AND).
 
 (b) Full adder from two half-adders:
 
-First half-adder: inputs $A$$B$. Produces $S_1 = A \oplus B$ and $C_1 = AB$.
-Second half-adder: inputs $S_1$$C_{\text{in}}$. Produces $S = S_1 \oplus C_{\text{in}} = A \oplus B \oplus C_{\text{in}}$ and $C_2 = S_1 \cdot C_{\text{in}}$.
-OR gate: $C_{\text{out}} = C_1 + C_2 = AB + (A \oplus B)C_{\text{in}}$.
+First half-adder: inputs $A$$B$. Produces $S_1 = A \oplus B$ and $C_1 = AB$. Second half-adder:
+inputs $S_1$$C_{\text{in}}$. Produces
+$S = S_1 \oplus C_{\text{in}} = A \oplus B \oplus C_{\text{in}}$ and
+$C_2 = S_1 \cdot C_{\text{in}}$. OR gate:
+$C_{\text{out}} = C_1 + C_2 = AB + (A \oplus B)C_{\text{in}}$.
 
 (c) For a 4-bit ripple-carry adder: each full-adder must wait for the carry from the previous stage.
 
-Each full-adder uses 2 half-adders (5 ns each) and 1 OR gate (3 ns). But the critical path is the carry propagation.
+Each full-adder uses 2 half-adders (5 ns each) and 1 OR gate (3 ns). But the critical path is the
+carry propagation.
 
-Stage 1: $C_{\text{in}} = 0$So $C_2 = S_1 \cdot C_{\text{in}} = 0$ and $C_{\text{out}} = C_1 = AB$. Carry out is ready after the first half-adder produces $C_1$I.e., 5 ns.
+Stage 1: $C_{\text{in}} = 0$So $C_2 = S_1 \cdot C_{\text{in}} = 0$ and $C_{\text{out}} = C_1 = AB$.
+Carry out is ready after the first half-adder produces $C_1$I.e., 5 ns.
 
 For subsequent stages: the carry-in must propagate through. The longest path for carry:
+
 - HA1 in stage $i$: 5 ns to produce $S_1$ (needed for $C_2$).
 - HA2 in stage $i$: 5 ns to produce $C_2 = S_1 \cdot C_{\text{in}}$.
 - OR gate: 3 ns for $C_{\text{out}}$.

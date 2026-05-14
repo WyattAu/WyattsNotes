@@ -1,6 +1,8 @@
 ---
-title: "Vectors -- Diagnostic Tests"
-description: "Hard diagnostic tests for vectors covering scalar products, shortest distance to a line, skew and intersecting lines, angle between planes, and 3D geometry at"
+title: 'Vectors -- Diagnostic Tests'
+description:
+  'Hard diagnostic tests for vectors covering scalar products, shortest distance to a line, skew and
+  intersecting lines, angle between planes, and 3D geometry at'
 slug: diag-vectors
 hide_table_of_contents: true
 ---
@@ -15,19 +17,26 @@ hide_table_of_contents: true
 
 **Question:**
 
-The line $l$ has vector equation $\mathbf{r} = \begin{pmatrix} 1 \\ 2 \\ -1 \end{pmatrix} + t\begin{pmatrix} 2 \\ -1 \\ 3 \end{pmatrix}$And the point $A$ has position vector $\begin{pmatrix} 4 \\ 0 \\ 5 \end{pmatrix}$.
+The line $l$ has vector equation
+$\mathbf{r} = \begin{pmatrix} 1 \\ 2 \\ -1 \end{pmatrix} + t\begin{pmatrix} 2 \\ -1 \\ 3 \end{pmatrix}$And
+the point $A$ has position vector $\begin{pmatrix} 4 \\ 0 \\ 5 \end{pmatrix}$.
 
 **(a)** Find the shortest distance from $A$ to $l$.
 
 **(b)** Find the coordinates of the point $B$ on $l$ that is closest to $A$.
 
-**(c)** A student attempts to find the distance by computing $\lvert\overrightarrow{OA} - \overrightarrow{OP}\rvert$ where $P$ is the point on $l$ with $t = 1$. Show that this does not give the shortest distance, and calculate the percentage overestimate.
+**(c)** A student attempts to find the distance by computing
+$\lvert\overrightarrow{OA} - \overrightarrow{OP}\rvert$ where $P$ is the point on $l$ with $t = 1$.
+Show that this does not give the shortest distance, and calculate the percentage overestimate.
 
-[Difficulty: hard. Tests the vector projection method for shortest distance from a point to a line in three dimensions.]
+[Difficulty: hard. Tests the vector projection method for shortest distance from a point to a line
+in three dimensions.]
 
 **Solution:**
 
-**(a)** The line passes through $P$ with position vector $\mathbf{p} = \begin{pmatrix} 1 \\ 2 \\ -1 \end{pmatrix}$ and has direction vector $\mathbf{d} = \begin{pmatrix} 2 \\ -1 \\ 3 \end{pmatrix}$.
+**(a)** The line passes through $P$ with position vector
+$\mathbf{p} = \begin{pmatrix} 1 \\ 2 \\ -1 \end{pmatrix}$ and has direction vector
+$\mathbf{d} = \begin{pmatrix} 2 \\ -1 \\ 3 \end{pmatrix}$.
 
 $\overrightarrow{PA} = \mathbf{a} - \mathbf{p} = \begin{pmatrix} 3 \\ -2 \\ 6 \end{pmatrix}$.
 
@@ -45,7 +54,8 @@ $$\lvert\mathbf{d}\rvert = \sqrt{4 + 1 + 9} = \sqrt{14}$$
 
 $$d = \frac◆LB◆\sqrt{10}◆RB◆◆LB◆\sqrt{14}◆RB◆ = \sqrt◆LB◆\frac{5}{7}◆RB◆$$
 
-**(b)** The point $B$ on $l$ closest to $A$ satisfies $\overrightarrow{PB} = \frac◆LB◆\overrightarrow{PA} \cdot \mathbf{d}◆RB◆◆LB◆\lvert\mathbf{d}\rvert^2◆RB◆\mathbf{d}$.
+**(b)** The point $B$ on $l$ closest to $A$ satisfies
+$\overrightarrow{PB} = \frac◆LB◆\overrightarrow{PA} \cdot \mathbf{d}◆RB◆◆LB◆\lvert\mathbf{d}\rvert^2◆RB◆\mathbf{d}$.
 
 $$\overrightarrow{PA} \cdot \mathbf{d} = 6 + 2 + 18 = 26$$
 
@@ -53,11 +63,14 @@ $$\overrightarrow{PB} = \frac{26}{14}\begin{pmatrix} 2 \\ -1 \\ 3 \end{pmatrix} 
 
 $$\mathbf{b} = \mathbf{p} + \overrightarrow{PB} = \begin{pmatrix} 1 \\ 2 \\ -1 \end{pmatrix} + \begin{pmatrix} 26/7 \\ -13/7 \\ 39/7 \end{pmatrix} = \begin{pmatrix} 33/7 \\ 1/7 \\ 32/7 \end{pmatrix}$$
 
-Verification: $\overrightarrow{BA} = \begin{pmatrix} 4-33/7 \\ 0-1/7 \\ 5-32/7 \end{pmatrix} = \begin{pmatrix} -5/7 \\ -1/7 \\ 3/7 \end{pmatrix}$.
+Verification:
+$\overrightarrow{BA} = \begin{pmatrix} 4-33/7 \\ 0-1/7 \\ 5-32/7 \end{pmatrix} = \begin{pmatrix} -5/7 \\ -1/7 \\ 3/7 \end{pmatrix}$.
 
-$\overrightarrow{BA} \cdot \mathbf{d} = \frac{-10}{7} + \frac{1}{7} + \frac{9}{7} = 0$. Confirmed perpendicular.
+$\overrightarrow{BA} \cdot \mathbf{d} = \frac{-10}{7} + \frac{1}{7} + \frac{9}{7} = 0$. Confirmed
+perpendicular.
 
-**(c)** At $t = 1$: $P_1 = \begin{pmatrix} 3 \\ 1 \\ 2 \end{pmatrix}$. $\overrightarrow{P_1A} = \begin{pmatrix} 1 \\ -1 \\ 3 \end{pmatrix}$.
+**(c)** At $t = 1$: $P_1 = \begin{pmatrix} 3 \\ 1 \\ 2 \end{pmatrix}$.
+$\overrightarrow{P_1A} = \begin{pmatrix} 1 \\ -1 \\ 3 \end{pmatrix}$.
 
 $\lvert\overrightarrow{P_1A}\rvert = \sqrt{1 + 1 + 9} = \sqrt{11}$.
 
@@ -73,9 +86,11 @@ $$\text{Percentage overestimate} = \frac◆LB◆\sqrt{11} - \sqrt{5/7}◆RB◆�
 
 **Question:**
 
-Line $l_1$ passes through $A(1, 2, 3)$ with direction vector $\mathbf{d}_1 = \begin{pmatrix} 2 \\ -1 \\ 1 \end{pmatrix}$.
+Line $l_1$ passes through $A(1, 2, 3)$ with direction vector
+$\mathbf{d}_1 = \begin{pmatrix} 2 \\ -1 \\ 1 \end{pmatrix}$.
 
-Line $l_2$ passes through $B(4, 1, 0)$ with direction vector $\mathbf{d}_2 = \begin{pmatrix} 1 \\ a \\ 2 \end{pmatrix}$.
+Line $l_2$ passes through $B(4, 1, 0)$ with direction vector
+$\mathbf{d}_2 = \begin{pmatrix} 1 \\ a \\ 2 \end{pmatrix}$.
 
 **(a)** Find the value of $a$ for which $l_1$ and $l_2$ intersect.
 
@@ -83,11 +98,16 @@ Line $l_2$ passes through $B(4, 1, 0)$ with direction vector $\mathbf{d}_2 = \be
 
 **(c)** For $a = -1$Find the shortest distance between $l_1$ and $l_2$.
 
-[Difficulty: hard. Tests the systematic approach to classifying pairs of lines in 3D: parallel (proportional direction vectors), intersecting (solvable system), or skew (inconsistent system with non-parallel directions).]
+[Difficulty: hard. Tests the systematic approach to classifying pairs of lines in 3D: parallel
+(proportional direction vectors), intersecting (solvable system), or skew (inconsistent system with
+non-parallel directions).]
 
 **Solution:**
 
-**(a)** $\mathbf{d}_1$ and $\mathbf{d}_2$ are not proportional for any value of $a$ (since $\frac{2}{1} \neq \frac{-1}{a}$ for $a = -\frac{1}{2}$And checking: at $a = -\frac{1}{2}$$\frac{2}{1} = 2$ but $\frac{1}{2} = \frac{1}{2} \neq 2$). So the lines are never parallel.
+**(a)** $\mathbf{d}_1$ and $\mathbf{d}_2$ are not proportional for any value of $a$ (since
+$\frac{2}{1} \neq \frac{-1}{a}$ for $a = -\frac{1}{2}$And checking: at
+$a = -\frac{1}{2}$$\frac{2}{1} = 2$ but $\frac{1}{2} = \frac{1}{2} \neq 2$). So the lines are never
+parallel.
 
 For intersection, there exist $s, t$ such that:
 
@@ -99,11 +119,14 @@ From the third equation: $3 + s = 2(2s - 3) = 4s - 6 \implies 3s = 9 \implies s 
 
 Then $t = 2(3) - 3 = 3$.
 
-Substituting into the second equation: $2 - 3 = 1 + 3a \implies -1 = 1 + 3a \implies a = -\frac{2}{3}$.
+Substituting into the second equation:
+$2 - 3 = 1 + 3a \implies -1 = 1 + 3a \implies a = -\frac{2}{3}$.
 
-The lines intersect when $a = -\frac{2}{3}$At the point $\begin{pmatrix} 1+6 \\ 2-3 \\ 3+3 \end{pmatrix} = \begin{pmatrix} 7 \\ -1 \\ 6 \end{pmatrix}$.
+The lines intersect when $a = -\frac{2}{3}$At the point
+$\begin{pmatrix} 1+6 \\ 2-3 \\ 3+3 \end{pmatrix} = \begin{pmatrix} 7 \\ -1 \\ 6 \end{pmatrix}$.
 
-**(b)** For $a = 3$: the lines are not parallel ($\mathbf{d}_1$ and $\mathbf{d}_2$ not proportional). Check for intersection:
+**(b)** For $a = 3$: the lines are not parallel ($\mathbf{d}_1$ and $\mathbf{d}_2$ not
+proportional). Check for intersection:
 
 $t = 2s - 3$$s = 3$$t = 3$ (from first and third equations).
 
@@ -139,13 +162,16 @@ Plane $\Pi_1$ has equation $2x - y + 2z = 5$ and plane $\Pi_2$ has equation $x +
 
 **(b)** Find the equation of the line of intersection of $\Pi_1$ and $\Pi_2$ in vector form.
 
-**(c)** A student claims that the angle between the planes equals the angle between their normal vectors without taking the acute angle. Explain why this is not always correct.
+**(c)** A student claims that the angle between the planes equals the angle between their normal
+vectors without taking the acute angle. Explain why this is not always correct.
 
-[Difficulty: hard. Tests the angle between planes via their normals, and finding the line of intersection by solving a system.]
+[Difficulty: hard. Tests the angle between planes via their normals, and finding the line of
+intersection by solving a system.]
 
 **Solution:**
 
-**(a)** Normal to $\Pi_1$: $\mathbf{n}_1 = \begin{pmatrix} 2 \\ -1 \\ 2 \end{pmatrix}$. Normal to $\Pi_2$: $\mathbf{n}_2 = \begin{pmatrix} 1 \\ 2 \\ -2 \end{pmatrix}$.
+**(a)** Normal to $\Pi_1$: $\mathbf{n}_1 = \begin{pmatrix} 2 \\ -1 \\ 2 \end{pmatrix}$. Normal to
+$\Pi_2$: $\mathbf{n}_2 = \begin{pmatrix} 1 \\ 2 \\ -2 \end{pmatrix}$.
 
 $$\mathbf{n}_1 \cdot \mathbf{n}_2 = 2 - 2 - 4 = -4$$
 
@@ -155,9 +181,11 @@ $$\cos\theta = \frac◆LB◆\lvert\mathbf{n}_1 \cdot \mathbf{n}_2\rvert◆RB◆�
 
 $$\theta = \arccos\!\left(\frac{4}{9}\right)$$
 
-Note the absolute value in the numerator: the angle between planes is defined as the acute angle, so we take $\lvert -4 \rvert = 4$.
+Note the absolute value in the numerator: the angle between planes is defined as the acute angle, so
+we take $\lvert -4 \rvert = 4$.
 
-**(b)** The line of intersection has direction vector $\mathbf{d} = \mathbf{n}_1 \times \mathbf{n}_2$:
+**(b)** The line of intersection has direction vector
+$\mathbf{d} = \mathbf{n}_1 \times \mathbf{n}_2$:
 
 $$\mathbf{d} = \begin{vmatrix} \mathbf{i} & \mathbf{j} & \mathbf{k} \\ 2 & -1 & 2 \\ 1 & 2 & -2 \end{vmatrix} = \begin{pmatrix} 2-4 \\ -(−4−2) \\ 4+1 \end{pmatrix} = \begin{pmatrix} -2 \\ 6 \\ 5 \end{pmatrix}$$
 
@@ -169,11 +197,17 @@ $x + 2(2x - 5) = 3 \implies 5x = 13 \implies x = \frac{13}{5}$$y = \frac{1}{5}$.
 
 Point: $\left(\frac{13}{5}, \frac{1}{5}, 0\right)$.
 
-Line of intersection: $\mathbf{r} = \begin{pmatrix} 13/5 \\ 1/5 \\ 0 \end{pmatrix} + t\begin{pmatrix} -2 \\ 6 \\ 5 \end{pmatrix}$.
+Line of intersection:
+$\mathbf{r} = \begin{pmatrix} 13/5 \\ 1/5 \\ 0 \end{pmatrix} + t\begin{pmatrix} -2 \\ 6 \\ 5 \end{pmatrix}$.
 
-**(c)** The angle between two planes is always taken as the acute angle (between $0$ and $\frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆$). The angle between the normal vectors can be obtuse (between $\frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆$ and $\pi$). In this problem, the dot product is negative ($-4$), so the angle between the normals is obtuse: $\arccos(-4/9) \approx 116.4°$. The acute angle between the planes is $180° - 116.4° = 63.6° = \arccos(4/9)$.
+**(c)** The angle between two planes is always taken as the acute angle (between $0$ and
+$\frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆$). The angle between the normal vectors can be obtuse (between
+$\frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆$ and $\pi$). In this problem, the dot product is negative ($-4$), so the
+angle between the normals is obtuse: $\arccos(-4/9) \approx 116.4°$. The acute angle between the
+planes is $180° - 116.4° = 63.6° = \arccos(4/9)$.
 
-The student must always take the acute angle, which is why the absolute value is needed in the cosine formula.
+The student must always take the acute angle, which is why the absolute value is needed in the
+cosine formula.
 
 ---
 
@@ -189,27 +223,35 @@ Points $A$$B$$C$ lie on a circle. In a coordinate system, $A = (1, 2)$$B = (5, 4
 
 **(a)** Using vectors, find the centre and radius of the circle passing through $A$$B$And $C$.
 
-**(b)** A point $D$ has position vector $\mathbf{d} = \begin{pmatrix} 7 \\ 6 \end{pmatrix}$. Use the scalar product to determine whether $D$ lies inside, on, or outside the circle.
+**(b)** A point $D$ has position vector $\mathbf{d} = \begin{pmatrix} 7 \\ 6 \end{pmatrix}$. Use the
+scalar product to determine whether $D$ lies inside, on, or outside the circle.
 
-**(c)** Find the equation of the tangent to the circle at point $A$Giving your answer in the form $ax + by + c = 0$.
+**(c)** Find the equation of the tangent to the circle at point $A$Giving your answer in the form
+$ax + by + c = 0$.
 
-[Difficulty: hard. Uses the perpendicular bisector method with vectors to find a circumcircle, then applies vector dot products for point location.]
+[Difficulty: hard. Uses the perpendicular bisector method with vectors to find a circumcircle, then
+applies vector dot products for point location.]
 
 **Solution:**
 
-**(a)** The centre $O$ of the circle is equidistant from $A$$B$And $C$. It lies on the perpendicular bisectors of $AB$ and $AC$.
+**(a)** The centre $O$ of the circle is equidistant from $A$$B$And $C$. It lies on the perpendicular
+bisectors of $AB$ and $AC$.
 
 Midpoint of $AB$: $M_{AB} = \left(\frac{1+5}{2}, \frac{2+4}{2}\right) = (3, 3)$.
 
-Direction of $AB$: $\overrightarrow{AB} = \begin{pmatrix} 4 \\ 2 \end{pmatrix}$. A perpendicular direction is $\begin{pmatrix} -2 \\ 4 \end{pmatrix}$ (or $\begin{pmatrix} 1 \\ -2 \end{pmatrix}$).
+Direction of $AB$: $\overrightarrow{AB} = \begin{pmatrix} 4 \\ 2 \end{pmatrix}$. A perpendicular
+direction is $\begin{pmatrix} -2 \\ 4 \end{pmatrix}$ (or $\begin{pmatrix} 1 \\ -2 \end{pmatrix}$).
 
-Perpendicular bisector of $AB$: $\mathbf{r} = \begin{pmatrix} 3 \\ 3 \end{pmatrix} + s\begin{pmatrix} 1 \\ -2 \end{pmatrix}$.
+Perpendicular bisector of $AB$:
+$\mathbf{r} = \begin{pmatrix} 3 \\ 3 \end{pmatrix} + s\begin{pmatrix} 1 \\ -2 \end{pmatrix}$.
 
 Midpoint of $AC$: $M_{AC} = \left(\frac{1+3}{2}, \frac{2+8}{2}\right) = (2, 5)$.
 
-Direction of $AC$: $\overrightarrow{AC} = \begin{pmatrix} 2 \\ 6 \end{pmatrix}$. A perpendicular direction is $\begin{pmatrix} -6 \\ 2 \end{pmatrix}$ (or $\begin{pmatrix} 3 \\ -1 \end{pmatrix}$).
+Direction of $AC$: $\overrightarrow{AC} = \begin{pmatrix} 2 \\ 6 \end{pmatrix}$. A perpendicular
+direction is $\begin{pmatrix} -6 \\ 2 \end{pmatrix}$ (or $\begin{pmatrix} 3 \\ -1 \end{pmatrix}$).
 
-Perpendicular bisector of $AC$: $\mathbf{r} = \begin{pmatrix} 2 \\ 5 \end{pmatrix} + t\begin{pmatrix} 3 \\ -1 \end{pmatrix}$.
+Perpendicular bisector of $AC$:
+$\mathbf{r} = \begin{pmatrix} 2 \\ 5 \end{pmatrix} + t\begin{pmatrix} 3 \\ -1 \end{pmatrix}$.
 
 Setting equal: $3 + s = 2 + 3t$ and $3 - 2s = 5 - t$.
 
@@ -217,7 +259,8 @@ From the second: $t = 2 + 2s$. Substituting into the first: $3 + s = 2 + 3(2+2s)
 
 $-5s = 5 \implies s = -1$$t = 0$.
 
-Centre: $O = \begin{pmatrix} 3 + (-1) \\ 3 - 2(-1) \end{pmatrix} = \begin{pmatrix} 2 \\ 5 \end{pmatrix}$.
+Centre:
+$O = \begin{pmatrix} 3 + (-1) \\ 3 - 2(-1) \end{pmatrix} = \begin{pmatrix} 2 \\ 5 \end{pmatrix}$.
 
 Radius: $\lvert\overrightarrow{OA}\rvert = \sqrt{(1-2)^2 + (2-5)^2} = \sqrt{1+9} = \sqrt{10}$.
 
@@ -227,9 +270,12 @@ Since $\sqrt{26} \gt \sqrt{10}$$D$ lies outside the circle.
 
 **(c)** The tangent at $A$ is perpendicular to the radius $OA$.
 
-$\overrightarrow{OA} = \begin{pmatrix} -1 \\ -3 \end{pmatrix}$. The tangent has direction $\begin{pmatrix} 3 \\ -1 \end{pmatrix}$ (perpendicular to $OA$Since their dot product is $-3 + 3 = 0$).
+$\overrightarrow{OA} = \begin{pmatrix} -1 \\ -3 \end{pmatrix}$. The tangent has direction
+$\begin{pmatrix} 3 \\ -1 \end{pmatrix}$ (perpendicular to $OA$Since their dot product is
+$-3 + 3 = 0$).
 
-Tangent at $A(1, 2)$ with normal direction $\overrightarrow{OA} = \begin{pmatrix} -1 \\ -3 \end{pmatrix}$:
+Tangent at $A(1, 2)$ with normal direction
+$\overrightarrow{OA} = \begin{pmatrix} -1 \\ -3 \end{pmatrix}$:
 
 $$-1(x-1) - 3(y-2) = 0 \implies -x + 1 - 3y + 6 = 0 \implies x + 3y - 7 = 0$$
 
@@ -239,9 +285,11 @@ $$-1(x-1) - 3(y-2) = 0 \implies -x + 1 - 3y + 6 = 0 \implies x + 3y - 7 = 0$$
 
 **Question:**
 
-Ship $A$ is at position $(3, 0, 1)$ km and moves with constant velocity $\mathbf{v}_A = \begin{pmatrix} 4 \\ 3 \\ 0 \end{pmatrix}$ km/h.
+Ship $A$ is at position $(3, 0, 1)$ km and moves with constant velocity
+$\mathbf{v}_A = \begin{pmatrix} 4 \\ 3 \\ 0 \end{pmatrix}$ km/h.
 
-Ship $B$ is at position $(10, 7, 4)$ km and moves with constant velocity $\mathbf{v}_B = \begin{pmatrix} 2 \\ 1 \\ 2 \end{pmatrix}$ km/h.
+Ship $B$ is at position $(10, 7, 4)$ km and moves with constant velocity
+$\mathbf{v}_B = \begin{pmatrix} 2 \\ 1 \\ 2 \end{pmatrix}$ km/h.
 
 **(a)** Find the vector $\overrightarrow{AB}$ at time $t$ hours.
 
@@ -249,13 +297,16 @@ Ship $B$ is at position $(10, 7, 4)$ km and moves with constant velocity $\mathb
 
 **(c)** At what time are the ships exactly 5 km apart?
 
-[Difficulty: hard. Combines relative motion vectors with minimisation of distance via differentiation or completing the square.]
+[Difficulty: hard. Combines relative motion vectors with minimisation of distance via
+differentiation or completing the square.]
 
 **Solution:**
 
-**(a)** Position of $A$ at time $t$: $\mathbf{r}_A = \begin{pmatrix} 3 \\ 0 \\ 1 \end{pmatrix} + t\begin{pmatrix} 4 \\ 3 \\ 0 \end{pmatrix} = \begin{pmatrix} 3+4t \\ 3t \\ 1 \end{pmatrix}$.
+**(a)** Position of $A$ at time $t$:
+$\mathbf{r}_A = \begin{pmatrix} 3 \\ 0 \\ 1 \end{pmatrix} + t\begin{pmatrix} 4 \\ 3 \\ 0 \end{pmatrix} = \begin{pmatrix} 3+4t \\ 3t \\ 1 \end{pmatrix}$.
 
-Position of $B$ at time $t$: $\mathbf{r}_B = \begin{pmatrix} 10 \\ 7 \\ 4 \end{pmatrix} + t\begin{pmatrix} 2 \\ 1 \\ 2 \end{pmatrix} = \begin{pmatrix} 10+2t \\ 7+t \\ 4+2t \end{pmatrix}$.
+Position of $B$ at time $t$:
+$\mathbf{r}_B = \begin{pmatrix} 10 \\ 7 \\ 4 \end{pmatrix} + t\begin{pmatrix} 2 \\ 1 \\ 2 \end{pmatrix} = \begin{pmatrix} 10+2t \\ 7+t \\ 4+2t \end{pmatrix}$.
 
 $$\overrightarrow{AB} = \mathbf{r}_B - \mathbf{r}_A = \begin{pmatrix} 7 - 2t \\ 7 - 2t \\ 3 + 2t \end{pmatrix}$$
 
@@ -267,7 +318,8 @@ $$\frac{d(D^2)}{dt} = 24t - 44 = 0 \implies t = \frac{44}{24} = \frac{11}{6}$$
 
 Wait, this gives $t = 11/6$Not $t = 1$. Let me re-check the claim.
 
-At $t = 11/6$: $D^2 = 12(121/36) - 44(11/6) + 107 = \frac{1452 - 2904 + 3852}{36} = \frac{2400}{36} = \frac{200}{3}$.
+At $t = 11/6$:
+$D^2 = 12(121/36) - 44(11/6) + 107 = \frac{1452 - 2904 + 3852}{36} = \frac{2400}{36} = \frac{200}{3}$.
 
 At $t = 1$: $D^2 = 12 - 44 + 107 = 75$. $D = 5\sqrt{3}$.
 
@@ -275,19 +327,24 @@ At $t = 11/6$: $D = \sqrt{200/3} = \frac◆LB◆10\sqrt{6}◆RB◆◆LB◆3◆RB
 
 At $t = 1$: $D = \sqrt{75} = 5\sqrt{3} \approx 8.66$.
 
-So the minimum is at $t = 11/6$Not $t = 1$. The question's claim is incorrect. The ships are closest at $t = 11/6$ hours.
+So the minimum is at $t = 11/6$Not $t = 1$. The question's claim is incorrect. The ships are closest
+at $t = 11/6$ hours.
 
 Let me verify: $\frac{d^2(D^2)}{dt^2} = 24 \gt 0$Confirming a minimum.
 
 Minimum distance: $D = \sqrt{200/3} = \frac◆LB◆10\sqrt{6}◆RB◆◆LB◆3◆RB◆$ km.
 
-**Note:** The question asks to "show that the ships are closest at $t = 1$ hour," but this is false. The actual closest approach occurs at $t = \frac{11}{6}$ hours. Recognising incorrect claims is itself a diagnostic skill.
+**Note:** The question asks to "show that the ships are closest at $t = 1$ hour," but this is false.
+The actual closest approach occurs at $t = \frac{11}{6}$ hours. Recognising incorrect claims is
+itself a diagnostic skill.
 
-**(c)** $D^2 = 25$: $12t^2 - 44t + 107 = 25 \implies 12t^2 - 44t + 82 = 0 \implies 6t^2 - 22t + 41 = 0$.
+**(c)** $D^2 = 25$:
+$12t^2 - 44t + 107 = 25 \implies 12t^2 - 44t + 82 = 0 \implies 6t^2 - 22t + 41 = 0$.
 
 Discriminant: $484 - 984 = -500 \lt 0$.
 
-The ships are never exactly 5 km apart. The minimum distance is $\frac◆LB◆10\sqrt{6}◆RB◆◆LB◆3◆RB◆ \approx 8.16$ km, which exceeds 5 km.
+The ships are never exactly 5 km apart. The minimum distance is
+$\frac◆LB◆10\sqrt{6}◆RB◆◆LB◆3◆RB◆ \approx 8.16$ km, which exceeds 5 km.
 
 ---
 
@@ -297,15 +354,23 @@ The ships are never exactly 5 km apart. The minimum distance is $\frac◆LB◆10
 
 **(a)** Using vectors, prove that the diagonals of a parallelogram bisect each other.
 
-**(b)** The medians of a triangle $ABC$ are the line segments from each vertex to the midpoint of the opposite side. Using position vectors with origin $O$Prove that the three medians of triangle $ABC$ are concurrent at a point $G$ (the centroid), and that $G$ divides each median in the ratio $2:1$.
+**(b)** The medians of a triangle $ABC$ are the line segments from each vertex to the midpoint of
+the opposite side. Using position vectors with origin $O$Prove that the three medians of triangle
+$ABC$ are concurrent at a point $G$ (the centroid), and that $G$ divides each median in the ratio
+$2:1$.
 
-**(c)** Points $P$ and $Q$ have position vectors $\mathbf{p}$ and $\mathbf{q}$ respectively. Show that the midpoint of $PQ$ has position vector $\frac◆LB◆\mathbf{p}+\mathbf{q}◆RB◆◆LB◆2◆RB◆$And use this result to prove that the line segment joining the midpoints of two sides of a triangle is parallel to the third side and half its length.
+**(c)** Points $P$ and $Q$ have position vectors $\mathbf{p}$ and $\mathbf{q}$ respectively. Show
+that the midpoint of $PQ$ has position vector $\frac◆LB◆\mathbf{p}+\mathbf{q}◆RB◆◆LB◆2◆RB◆$And use
+this result to prove that the line segment joining the midpoints of two sides of a triangle is
+parallel to the third side and half its length.
 
-[Difficulty: hard. Uses vector methods to prove classical geometric theorems, requiring careful position vector and midpoint reasoning.]
+[Difficulty: hard. Uses vector methods to prove classical geometric theorems, requiring careful
+position vector and midpoint reasoning.]
 
 **Solution:**
 
-**(a)** Let the parallelogram have vertices $A$$B$$C$$D$ with position vectors $\mathbf{a}$$\mathbf{b}$$\mathbf{c}$$\mathbf{d}$.
+**(a)** Let the parallelogram have vertices $A$$B$$C$$D$ with position vectors
+$\mathbf{a}$$\mathbf{b}$$\mathbf{c}$$\mathbf{d}$.
 
 Since $ABCD$ is a parallelogram, $\overrightarrow{AB} = \overrightarrow{DC}$:
 
@@ -315,9 +380,11 @@ The midpoint of diagonal $AC$: $\frac◆LB◆\mathbf{a} + \mathbf{c}◆RB◆◆L
 
 The midpoint of diagonal $BD$: $\frac◆LB◆\mathbf{b} + \mathbf{d}◆RB◆◆LB◆2◆RB◆$.
 
-Since $\mathbf{a} + \mathbf{c} = \mathbf{b} + \mathbf{d}$These midpoints coincide. Therefore the diagonals bisect each other.
+Since $\mathbf{a} + \mathbf{c} = \mathbf{b} + \mathbf{d}$These midpoints coincide. Therefore the
+diagonals bisect each other.
 
-**(b)** Let the vertices of triangle $ABC$ have position vectors $\mathbf{a}$$\mathbf{b}$$\mathbf{c}$.
+**(b)** Let the vertices of triangle $ABC$ have position vectors
+$\mathbf{a}$$\mathbf{b}$$\mathbf{c}$.
 
 The midpoint of $BC$ has position vector $\frac◆LB◆\mathbf{b}+\mathbf{c}◆RB◆◆LB◆2◆RB◆$.
 
@@ -329,20 +396,26 @@ Similarly, the median from $B$ to the midpoint of $AC$ has equation:
 
 $$\mathbf{r} = \mathbf{b} + s\left(\frac◆LB◆\mathbf{a}+\mathbf{c}-2\mathbf{b}◆RB◆◆LB◆2◆RB◆\right)$$
 
-For concurrency, set these equal and solve. By symmetry, the intersection occurs at $t = \frac{2}{3}$ (and $s = \frac{2}{3}$):
+For concurrency, set these equal and solve. By symmetry, the intersection occurs at
+$t = \frac{2}{3}$ (and $s = \frac{2}{3}$):
 
 $$G = \mathbf{a} + \frac{2}{3}\left(\frac◆LB◆\mathbf{b}+\mathbf{c}-2\mathbf{a}◆RB◆◆LB◆2◆RB◆\right) = \mathbf{a} + \frac◆LB◆\mathbf{b}+\mathbf{c}-2\mathbf{a}◆RB◆◆LB◆3◆RB◆ = \frac◆LB◆3\mathbf{a} + \mathbf{b} + \mathbf{c} - 2\mathbf{a}◆RB◆◆LB◆3◆RB◆ = \frac◆LB◆\mathbf{a}+\mathbf{b}+\mathbf{c}◆RB◆◆LB◆3◆RB◆$$
 
-By the cyclic symmetry of $\frac◆LB◆\mathbf{a}+\mathbf{b}+\mathbf{c}◆RB◆◆LB◆3◆RB◆$The same point lies on all three medians.
+By the cyclic symmetry of $\frac◆LB◆\mathbf{a}+\mathbf{b}+\mathbf{c}◆RB◆◆LB◆3◆RB◆$The same point
+lies on all three medians.
 
-The point $G$ is at parameter $t = \frac{2}{3}$ along the median from $A$Meaning $\overrightarrow{AG} = \frac{2}{3}\overrightarrow{AM_{BC}}$. Therefore $G$ divides each median in the ratio $AG:GM_{BC} = 2:1$.
+The point $G$ is at parameter $t = \frac{2}{3}$ along the median from $A$Meaning
+$\overrightarrow{AG} = \frac{2}{3}\overrightarrow{AM_{BC}}$. Therefore $G$ divides each median in
+the ratio $AG:GM_{BC} = 2:1$.
 
 **(c)** The midpoint of $PQ$: position vector $\frac◆LB◆\mathbf{p}+\mathbf{q}◆RB◆◆LB◆2◆RB◆$.
 
 For triangle $ABC$ with vertices at position vectors $\mathbf{a}$$\mathbf{b}$$\mathbf{c}$:
 
-Midpoint of $AB$: $M = \frac◆LB◆\mathbf{a}+\mathbf{b}◆RB◆◆LB◆2◆RB◆$. Midpoint of $AC$: $N = \frac◆LB◆\mathbf{a}+\mathbf{c}◆RB◆◆LB◆2◆RB◆$.
+Midpoint of $AB$: $M = \frac◆LB◆\mathbf{a}+\mathbf{b}◆RB◆◆LB◆2◆RB◆$. Midpoint of $AC$:
+$N = \frac◆LB◆\mathbf{a}+\mathbf{c}◆RB◆◆LB◆2◆RB◆$.
 
 $$\overrightarrow{MN} = \frac◆LB◆\mathbf{a}+\mathbf{c}◆RB◆◆LB◆2◆RB◆ - \frac◆LB◆\mathbf{a}+\mathbf{b}◆RB◆◆LB◆2◆RB◆ = \frac◆LB◆\mathbf{c}-\mathbf{b}◆RB◆◆LB◆2◆RB◆ = \frac{1}{2}\overrightarrow{BC}$$
 
-Since $\overrightarrow{MN} = \frac{1}{2}\overrightarrow{BC}$The segment $MN$ is parallel to $BC$ and half its length. This is the midpoint theorem.
+Since $\overrightarrow{MN} = \frac{1}{2}\overrightarrow{BC}$The segment $MN$ is parallel to $BC$ and
+half its length. This is the midpoint theorem.

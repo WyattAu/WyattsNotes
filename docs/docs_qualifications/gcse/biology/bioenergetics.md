@@ -1,6 +1,8 @@
 ---
 title: Bioenergetics
-description: "Bioenergetics — 1. Photosynthesis; 1.1 The Equation; 1.2 Where Photosynthesis Occurs; 1.3 Factors Affecting the Rate of Photosynthesis."
+description:
+  'Bioenergetics — 1. Photosynthesis; 1.1 The Equation; 1.2 Where Photosynthesis Occurs; 1.3 Factors
+  Affecting the Rate of Photosynthesis.'
 date: 2026-04-14
 tags:
   - Biology
@@ -9,11 +11,10 @@ categories:
   - Biology
 slug: bioenergetics
 ---
+
 ## Bioenergetics
 
-:::info
-Board Coverage AQA Paper 1 | Edexcel Paper 1 | OCR A Gateway B2 & B3 | WJEC B2
-:::
+:::info Board Coverage AQA Paper 1 | Edexcel Paper 1 | OCR A Gateway B2 & B3 | WJEC B2 :::
 
 ## 1. Photosynthesis
 
@@ -35,11 +36,11 @@ Photosynthesis, there would be no food, no oxygen, and no complex life.
 
 **Balancing the equation.** To check that the equation is balanced, count the atoms on each side:
 
-| Atom | Left side | Right side |
+| Atom         | Left side  | Right side |
 | ------------ | ---------- | ---------- |
-| Carbon (C) | 6 | 6 |
-| Hydrogen (H) | 12 | 12 |
-| Oxygen (O) | 6 + 6 = 12 | 6 + 6 = 12 |
+| Carbon (C)   | 6          | 6          |
+| Hydrogen (H) | 12         | 12         |
+| Oxygen (O)   | 6 + 6 = 12 | 6 + 6 = 12 |
 
 Both sides have the same number of each type of atom, so the equation is balanced.
 
@@ -51,16 +52,16 @@ Plants appear green).
 
 **Adaptations of the leaf for photosynthesis:**
 
-| Adaptation | Function |
-| ----------------------------------- | ------------------------------------------------------ |
-| Large surface area | Maximises light absorption |
-| Thin | Short diffusion distance for gases |
-| Chlorophyll in chloroplasts | Absorbs light energy |
-| Stomata (pores on the underside) | Allow $\mathrm{CO{}_2$ to enter and $\mathrm{O{}_2$ to leave |
-| Palisade mesophyll (near the top) | Packed with chloroplasts for maximum light absorption |
-| Spongy mesophyll (near the bottom) | Air spaces allow gas circulation |
-| Waxy cuticle | Reduces water loss by evaporation |
-| Network of veins (xylem and phloem) | Xylem brings water; phloem removes products |
+| Adaptation                          | Function                                                     |
+| ----------------------------------- | ------------------------------------------------------------ |
+| Large surface area                  | Maximises light absorption                                   |
+| Thin                                | Short diffusion distance for gases                           |
+| Chlorophyll in chloroplasts         | Absorbs light energy                                         |
+| Stomata (pores on the underside)    | Allow $\mathrm{CO{}_2$ to enter and $\mathrm{O{}_2$ to leave |
+| Palisade mesophyll (near the top)   | Packed with chloroplasts for maximum light absorption        |
+| Spongy mesophyll (near the bottom)  | Air spaces allow gas circulation                             |
+| Waxy cuticle                        | Reduces water loss by evaporation                            |
+| Network of veins (xylem and phloem) | Xylem brings water; phloem removes products                  |
 
 **Stomata and gas exchange.** Stomata are pores on the underside of the leaf, surrounded by guard
 Cells that can open and close them. When guard cells are turgid (full of water), the stomata are
@@ -70,11 +71,11 @@ Photosynthesis but also allow water to evaporate (transpiration).
 
 ### 1.3 Factors Affecting the Rate of Photosynthesis
 
-| Factor | Effect | Reason |
-| --------------------------- | -------------------------------------------- | --------------------------------------------------------------- |
-| Light intensity | Rate increases, then plateaus | More light = more energy, but other factors become limiting |
-| $\mathrm{CO{}_2$ concentration | Rate increases, then plateaus | $\mathrm{CO{}_2$ is a raw material; limited supply limits the rate |
-| Temperature | Rate increases up to optimum, then decreases | Enzymes work faster; too hot and they denature |
+| Factor                         | Effect                                       | Reason                                                             |
+| ------------------------------ | -------------------------------------------- | ------------------------------------------------------------------ |
+| Light intensity                | Rate increases, then plateaus                | More light = more energy, but other factors become limiting        |
+| $\mathrm{CO{}_2$ concentration | Rate increases, then plateaus                | $\mathrm{CO{}_2$ is a raw material; limited supply limits the rate |
+| Temperature                    | Rate increases up to optimum, then decreases | Enzymes work faster; too hot and they denature                     |
 
 **Limiting factors:** The factor that is in shortest supply limits the rate of photosynthesis. At
 Any given time, only ONE factor is limiting. This is known as the **law of limiting factors**
@@ -90,21 +91,22 @@ Limiting factor is also increased.
 
 A graph shows the effect of light intensity on the rate of photosynthesis at two different
 $\mathrm{CO{}_2$ concentrations (low and high). Both curves show the rate increasing with light
-Intensity and then levelling off. However, the high $\mathrm{CO{}_2$ curve levels off at a higher rate.
+Intensity and then levelling off. However, the high $\mathrm{CO{}_2$ curve levels off at a higher
+rate.
 
 Step-by-step interpretation:
 
 1. At low light intensity, both curves rise steeply. Light is the limiting factor. Increasing light
- increases the rate.
+   increases the rate.
 2. At moderate light intensity, the low $\mathrm{CO{}_2$ curve begins to level off while the high
- $\mathrm{CO{}_2$ curve is still rising. This means that at this point, $\mathrm{CO{}_2$ is limiting for
- the low $\mathrm{CO{}_2$ treatment, but light is still limiting for the high $\mathrm{CO{}_2$
- treatment.
+   $\mathrm{CO{}_2$ curve is still rising. This means that at this point, $\mathrm{CO{}_2$ is
+   limiting for the low $\mathrm{CO{}_2$ treatment, but light is still limiting for the high
+   $\mathrm{CO{}_2$ treatment.
 3. At high light intensity, both curves have levelled off. Neither is limited by light anymore. The
- low $\mathrm{CO{}_2$ curve is limited by $\mathrm{CO{}_2$ concentration; the high $\mathrm{CO{}_2$ curve
- may be limited by temperature.
-4. The high $\mathrm{CO{}_2$ curve reaches a higher maximum rate, showing that increasing $\mathrm{CO{}_2$
- concentration raises the maximum possible rate of photosynthesis.
+   low $\mathrm{CO{}_2$ curve is limited by $\mathrm{CO{}_2$ concentration; the high
+   $\mathrm{CO{}_2$ curve may be limited by temperature.
+4. The high $\mathrm{CO{}_2$ curve reaches a higher maximum rate, showing that increasing
+   $\mathrm{CO{}_2$ concentration raises the maximum possible rate of photosynthesis.
 
 ### 1.4 Required Practical: Investigating Photosynthesis
 
@@ -112,10 +114,10 @@ Step-by-step interpretation:
 
 1. Set up a lamp at a specific distance from a beaker containing pondweed in water.
 2. Ensure the pondweed is submerged and the cut end is facing upwards (so oxygen bubbles rise
- straight up and can be counted).
+   straight up and can be counted).
 3. Leave the apparatus for 5 minutes to acclimatise.
 4. Count the number of oxygen bubbles produced per minute (or measure the volume of oxygen collected
- using a gas syringe or inverted measuring cylinder).
+   using a gas syringe or inverted measuring cylinder).
 5. Repeat at different distances from the lamp (different light intensities).
 6. Plot a graph of rate of photosynthesis against light intensity.
 
@@ -123,22 +125,22 @@ Step-by-step interpretation:
 
 - At low light intensity: rate increases linearly (light is the limiting factor).
 - At higher light intensity: rate levels off ($\mathrm{CO{}_2$ or temperature is now the limiting
- factor).
+  factor).
 
 **Controls:**
 
 - Use sodium hydrogencarbonate solution to ensure a constant $\mathrm{CO{}_2$ concentration (it
- provides dissolved $\mathrm{CO{}_2$).
+  provides dissolved $\mathrm{CO{}_2$).
 - Keep temperature constant (use a water bath if necessary).
 - Use the same piece of pondweed and the same volume of water throughout.
 
 **Variables:**
 
 - **Independent variable:** light intensity (distance from lamp, or use a light meter to measure
- lux).
+  lux).
 - **Dependent variable:** rate of oxygen production (bubbles per minute or volume per minute).
 - **Control variables:** temperature, $\mathrm{CO{}_2$ concentration, volume of water, piece of
- pondweed.
+  pondweed.
 
 **Worked Example: Calculating light intensity.**
 
@@ -156,13 +158,13 @@ The limiting factor).
 
 Plants use the glucose produced by photosynthesis for:
 
-| Use | Description |
+| Use                | Description                                                     |
 | ------------------ | --------------------------------------------------------------- |
-| Respiration | Releases energy for cellular processes |
-| Making cellulose | For cell walls (strengthens plant structure) |
+| Respiration        | Releases energy for cellular processes                          |
+| Making cellulose   | For cell walls (strengthens plant structure)                    |
 | Making amino acids | Combined with nitrate ions from the soil; used to make proteins |
-| Stored as starch | Insoluble storage carbohydrate; does not affect water potential |
-| Stored as lipids | In seeds; for energy storage (oils in seeds are energy-dense) |
+| Stored as starch   | Insoluble storage carbohydrate; does not affect water potential |
+| Stored as lipids   | In seeds; for energy storage (oils in seeds are energy-dense)   |
 
 **Why plants store starch rather than glucose.** Starch is insoluble, so it does not dissolve in the
 Cell sap and does not affect the water potential of the cell. If plants stored glucose (which is
@@ -186,9 +188,9 @@ Its structure), reducing the rate of photosynthesis.
 Commercial greenhouse operators manipulate limiting factors to maximise crop yield:
 
 - **Light:** Artificial lighting extends the hours of photosynthesis during winter months.
-- **$\mathrm{CO{}_2$:** Burning propane heaters or adding $\mathrm{CO{}_2$ gas directly increases the
- $\mathrm{CO{}_2$ concentration beyond atmospheric levels ( 0.04%). Greenhouse $\mathrm{CO{}_2$
- levels can be raised to 0.1% or higher.
+- **$\mathrm{CO{}_2$:** Burning propane heaters or adding $\mathrm{CO{}_2$ gas directly increases
+  the $\mathrm{CO{}_2$ concentration beyond atmospheric levels ( 0.04%). Greenhouse $\mathrm{CO{}_2$
+  levels can be raised to 0.1% or higher.
 - **Temperature:** Heating systems maintain the optimum temperature year-round.
 
 **The economic argument.** The cost of providing additional light, $\mathrm{CO{}_2$And heat must be
@@ -198,9 +200,9 @@ The cost of increasing a factor exceeds the value of the additional growth.
 **Worked Example: Evaluating greenhouse management decisions.**
 
 A tomato grower is considering adding $\mathrm{CO{}_2$ enrichment to their greenhouse. The current
-Yield is 10 kg per plant per year. Adding $\mathrm{CO{}_2$ enrichment is expected to increase the yield
-To 15 kg per plant per year (a 50% increase). The cost of the $\mathrm{CO{}_2$ enrichment system is
-2000 pounds per year. The tomatoes sell for 2 pounds per kg.
+Yield is 10 kg per plant per year. Adding $\mathrm{CO{}_2$ enrichment is expected to increase the
+yield To 15 kg per plant per year (a 50% increase). The cost of the $\mathrm{CO{}_2$ enrichment
+system is 2000 pounds per year. The tomatoes sell for 2 pounds per kg.
 
 Current revenue per plant: $10 \times 2 = 20$ pounds.
 
@@ -219,14 +221,15 @@ Photosynthesis occurs in two stages:
 **Light-dependent reactions (in the thylakoid membranes):**
 
 - Chlorophyll absorbs light energy.
-- Water is split by photolysis: $2\mathrm{H{}_2\mathrm{O{} \to 4\mathrm{H{}^+ + 4e^- + \mathrm{O{}_2$.
+- Water is split by photolysis:
+  $2\mathrm{H{}_2\mathrm{O{} \to 4\mathrm{H{}^+ + 4e^- + \mathrm{O{}_2$.
 - Light energy is used to produce ATP and reduced NADP (NADPH).
 
 **Light-independent reactions (Calvin cycle, in the stroma):**
 
 - $\mathrm{CO{}_2$ is fixed by combining with a 5-carbon compound called RuBP.
 - ATP and NADPH from the light-dependent reactions provide energy to convert the products into
- glucose.
+  glucose.
 - RuBP is regenerated so the cycle can continue.
 
 The two stages are linked: the light-dependent reactions produce the ATP and NADPH that the Calvin
@@ -235,13 +238,13 @@ Out of ATP and NADPH.
 
 **Summary table: comparing the two stages of photosynthesis.**
 
-| Feature | Light-Dependent Reactions | Light-Independent Reactions |
+| Feature             | Light-Dependent Reactions | Light-Independent Reactions    |
 | ------------------- | ------------------------- | ------------------------------ |
-| Location | Thylakoid membranes | Stroma |
-| Does it need light? | Yes, directly | No (but needs products of LDR) |
-| Inputs | Water, light, ADP, NADP+ | $\mathrm{CO{}_2$ATP, NADPH |
-| Outputs | Oxygen, ATP, NADPH | Glucose, ADP, NADP+ |
-| Key process | Photolysis of water | Carbon fixation by RuBisCO |
+| Location            | Thylakoid membranes       | Stroma                         |
+| Does it need light? | Yes, directly             | No (but needs products of LDR) |
+| Inputs              | Water, light, ADP, NADP+  | $\mathrm{CO{}_2$ATP, NADPH     |
+| Outputs             | Oxygen, ATP, NADPH        | Glucose, ADP, NADP+            |
+| Key process         | Photolysis of water       | Carbon fixation by RuBisCO     |
 
 ## 2. Respiration
 
@@ -296,8 +299,8 @@ $$\mathrm{C{}_6\mathrm{H{}_{12}\mathrm{O{}_6 \to 2\mathrm{C{}_2\mathrm{H{}_5\mat
 Yeast converts glucose into **ethanol** (alcohol) and carbon dioxide. This process is used in:
 
 - **Brewing:** Ethanol makes alcoholic drinks (beer, wine, spirits). The ethanol concentration
- eventually becomes toxic to the yeast, which is why fermented drinks have a limited
- alcohol content ( up to about 15%).
+  eventually becomes toxic to the yeast, which is why fermented drinks have a limited alcohol
+  content ( up to about 15%).
 - **Baking:** $\mathrm{CO{}_2$ causes bread to rise. The ethanol evaporates during baking.
 
 ### 2.3 Response to Exercise
@@ -341,30 +344,30 @@ To take in this extra oxygen to fully oxidise the accumulated lactic acid.
 **Metabolism** is the sum of all the chemical reactions in the body. It includes:
 
 - Building larger molecules from smaller ones (anabolism): e.g. Proteins from amino acids, cellulose
- from glucose, lipids from fatty acids and glycerol.
+  from glucose, lipids from fatty acids and glycerol.
 - Breaking down larger molecules into smaller ones (catabolism): e.g. Glucose in respiration,
- proteins into amino acids, glycogen into glucose.
+  proteins into amino acids, glycogen into glucose.
 
 **The liver plays a central role in metabolism:**
 
 - **Detoxification:** Breaks down harmful substances (alcohol is broken down into ethanal, then into
- ethanoate, which can be used in respiration).
+  ethanoate, which can be used in respiration).
 - **Glycogen storage:** Converts excess glucose to glycogen for storage (glycogenesis) and converts
- glycogen back to glucose when needed (glycogenolysis).
+  glycogen back to glucose when needed (glycogenolysis).
 - **Deamination:** Converts excess amino acids (which cannot be stored) into ammonia (a toxic
- by-product), which is then converted to urea in the ornithine cycle. Urea is excreted by the
- kidneys.
+  by-product), which is then converted to urea in the ornithine cycle. Urea is excreted by the
+  kidneys.
 - **Bile production:** Produces bile, which emulsifies fats and neutralises stomach acid.
 
 **Summary of liver functions.**
 
-| Function | Process | Description |
+| Function        | Process                | Description                                   |
 | --------------- | ---------------------- | --------------------------------------------- |
-| Detoxification | Oxidation | Alcohol $\to$ ethanal $\to$ ethanoic acid |
-| Glycogenesis | Glucose $\to$ glycogen | Stores excess glucose |
-| Glycogenolysis | Glycogen $\to$ glucose | Releases glucose when blood sugar is low |
-| Deamination | Amino acid $\to$ urea | Removes amino group; urea excreted by kidneys |
-| Bile production | -- | Emulsifies fats; neutralises stomach acid |
+| Detoxification  | Oxidation              | Alcohol $\to$ ethanal $\to$ ethanoic acid     |
+| Glycogenesis    | Glucose $\to$ glycogen | Stores excess glucose                         |
+| Glycogenolysis  | Glycogen $\to$ glucose | Releases glucose when blood sugar is low      |
+| Deamination     | Amino acid $\to$ urea  | Removes amino group; urea excreted by kidneys |
+| Bile production | --                     | Emulsifies fats; neutralises stomach acid     |
 
 ## 3. Required Practical: Respiration
 
@@ -373,23 +376,23 @@ To take in this extra oxygen to fully oxidise the accumulated lactic acid.
 **Method (using respirometer):**
 
 1. Place germinating peas (actively respiring) in a test tube connected to a capillary tube
- containing coloured liquid.
+   containing coloured liquid.
 2. Use a control tube with dead (boiled) peas.
 3. Measure the distance the coloured liquid moves along the capillary tube in a set time.
 4. The movement indicates oxygen consumption.
-5. Place soda lime in the apparatus to absorb $\mathrm{CO{}_2$ (so that the change in volume is due to
- $\mathrm{O{}_2$ consumption only).
+5. Place soda lime in the apparatus to absorb $\mathrm{CO{}_2$ (so that the change in volume is due
+   to $\mathrm{O{}_2$ consumption only).
 
 **Why soda lime is essential.** Respiration produces $\mathrm{CO{}_2$ as well as consuming
-$\mathrm{O{}_2$. If the $\mathrm{CO{}_2$ were not absorbed, the volume change would be the difference
-Between $\mathrm{O{}_2$ consumed and $\mathrm{CO{}_2$ produced, not the true rate of oxygen consumption.
-Since soda lime absorbs $\mathrm{CO{}_2$The measured volume change reflects only $\mathrm{O{}_2$
-Consumption.
+$\mathrm{O{}_2$. If the $\mathrm{CO{}_2$ were not absorbed, the volume change would be the
+difference Between $\mathrm{O{}_2$ consumed and $\mathrm{CO{}_2$ produced, not the true rate of
+oxygen consumption. Since soda lime absorbs $\mathrm{CO{}_2$The measured volume change reflects only
+$\mathrm{O{}_2$ Consumption.
 
 ### 3.2 Interpreting Results
 
 - Living peas: liquid moves towards the peas ($\mathrm{O{}_2$ consumed, reducing gas volume in the
- tube).
+  tube).
 - Dead peas: no movement (no respiration).
 - The rate of respiration = distance moved / time.
 
@@ -412,14 +415,14 @@ $$\mathrm{Rate{} = 0.00942 / 5 = 0.00188 \mathrm{ mL/min{}$$
 
 ## 4. Higher Tier: Aerobic and Anaerobic Respiration Compared
 
-| Feature | Aerobic Respiration | Anaerobic Respiration |
-| -------------------- | ---------------------------------------- | -------------------------------------------------------- |
-| Oxygen required? | Yes | No |
-| Location | Mitochondria | Cytoplasm |
-| Products | $\mathrm{CO{}_2$ and $\mathrm{H{}_2\mathrm{O{}$ | Lactic acid (animals) or ethanol + $\mathrm{CO{}_2$ (yeast) |
-| Energy released | Large (approximately 38 ATP per glucose) | Small (2 ATP per glucose) |
-| Speed | Slower | Faster (but less efficient) |
-| Toxicity of products | Non-toxic | Lactic acid / ethanol can be toxic |
+| Feature              | Aerobic Respiration                             | Anaerobic Respiration                                       |
+| -------------------- | ----------------------------------------------- | ----------------------------------------------------------- |
+| Oxygen required?     | Yes                                             | No                                                          |
+| Location             | Mitochondria                                    | Cytoplasm                                                   |
+| Products             | $\mathrm{CO{}_2$ and $\mathrm{H{}_2\mathrm{O{}$ | Lactic acid (animals) or ethanol + $\mathrm{CO{}_2$ (yeast) |
+| Energy released      | Large (approximately 38 ATP per glucose)        | Small (2 ATP per glucose)                                   |
+| Speed                | Slower                                          | Faster (but less efficient)                                 |
+| Toxicity of products | Non-toxic                                       | Lactic acid / ethanol can be toxic                          |
 
 **Why anaerobic respiration is faster but less efficient.** Aerobic respiration involves the
 Complete oxidation of glucose through glycolysis, the Krebs cycle, and the electron transport chain.
@@ -433,14 +436,14 @@ Acid or ethanol.
 **Method:**
 
 1. Set up respirometers with germinating peas at different temperatures (e.g., 10$^{\circ}$C,
- 20$^{\circ}$C, 30$^{\circ}$C, 40$^{\circ}$C, 50$^{\circ}$C).
+   20$^{\circ}$C, 30$^{\circ}$C, 40$^{\circ}$C, 50$^{\circ}$C).
 2. Measure the rate of oxygen consumption at each temperature.
 3. Plot a graph of respiration rate against temperature.
 
 **Expected graph:**
 
 - Rate increases from 10$^{\circ}$C to approximately 40$^{\circ}$C (increased kinetic energy, more
- enzyme-substrate collisions).
+  enzyme-substrate collisions).
 - Rate peaks at approximately 40$^{\circ}$C (the optimum temperature for the enzymes involved).
 - Rate decreases sharply above 40$^{\circ}$C (enzymes denature).
 
@@ -449,62 +452,63 @@ Controlled by enzymes.
 
 ## 6. Higher Tier: Photosynthesis vs. Respiration -- A Detailed Comparison
 
-| Feature | Photosynthesis | Respiration |
-| ------------------ | -------------------------------------- | -------------------------------------- |
-| Organisms | Plants, algae, some bacteria | All living organisms |
-| Location in plant | Chloroplasts | Cytoplasm and mitochondria |
-| Raw materials | $\mathrm{CO{}_2$ and $\mathrm{H{}_2\mathrm{O{}$ | Glucose and $\mathrm{O{}_2$ |
-| Products | Glucose and $\mathrm{O{}_2$ | $\mathrm{CO{}_2$ and $\mathrm{H{}_2\mathrm{O{}$ |
-| Energy change | Endothermic (stores energy) | Exothermic (releases energy) |
-| When it occurs | Only in light | 24 hours a day |
-| Reactants/Products | They are essentially reverse reactions | -- |
+| Feature            | Photosynthesis                                  | Respiration                                     |
+| ------------------ | ----------------------------------------------- | ----------------------------------------------- |
+| Organisms          | Plants, algae, some bacteria                    | All living organisms                            |
+| Location in plant  | Chloroplasts                                    | Cytoplasm and mitochondria                      |
+| Raw materials      | $\mathrm{CO{}_2$ and $\mathrm{H{}_2\mathrm{O{}$ | Glucose and $\mathrm{O{}_2$                     |
+| Products           | Glucose and $\mathrm{O{}_2$                     | $\mathrm{CO{}_2$ and $\mathrm{H{}_2\mathrm{O{}$ |
+| Energy change      | Endothermic (stores energy)                     | Exothermic (releases energy)                    |
+| When it occurs     | Only in light                                   | 24 hours a day                                  |
+| Reactants/Products | They are essentially reverse reactions          | --                                              |
 
 **Key point about the relationship.** In the dark, plants only respire. In bright light, the rate of
-Photosynthesis exceeds the rate of respiration, so the plant has a net uptake of $\mathrm{CO{}_2$ and
-Net release of $\mathrm{O{}_2$. At a certain light intensity (the compensation point), the rate of
-Photosynthesis exactly equals the rate of respiration, so there is no net gas exchange.
+Photosynthesis exceeds the rate of respiration, so the plant has a net uptake of $\mathrm{CO{}_2$
+and Net release of $\mathrm{O{}_2$. At a certain light intensity (the compensation point), the rate
+of Photosynthesis exactly equals the rate of respiration, so there is no net gas exchange.
 
 ## Common Pitfalls
 
-- **Confusing photosynthesis and respiration.** Photosynthesis: $\mathrm{CO{}_2$ + $\mathrm{H{}_2\mathrm{O{}$
- $\to$ glucose + $\mathrm{O{}_2$ (requires light, endothermic). Respiration: glucose + $\mathrm{O{}_2$
- $\to$ $\mathrm{CO{}_2$ + $\mathrm{H{}_2\mathrm{O{}$ (releases energy, exothermic).
+- **Confusing photosynthesis and respiration.** Photosynthesis: $\mathrm{CO{}_2$ +
+  $\mathrm{H{}_2\mathrm{O{}$ $\to$ glucose + $\mathrm{O{}_2$ (requires light, endothermic).
+  Respiration: glucose + $\mathrm{O{}_2$ $\to$ $\mathrm{CO{}_2$ + $\mathrm{H{}_2\mathrm{O{}$
+  (releases energy, exothermic).
 - **Writing the word "energy" in the respiration equation.** Energy is not a substance -- it is
- released. The word equation should only list chemical substances.
+  released. The word equation should only list chemical substances.
 - **Thinking plants only photosynthesise.** Plants respire 24 hours a day; photosynthesis only
- occurs in light. In the dark, plants only respire. In bright light, the rate of photosynthesis
- exceeds the rate of respiration, so the plant has a net uptake of $\mathrm{CO{}_2$ and net release of
- $\mathrm{O{}_2$.
+  occurs in light. In the dark, plants only respire. In bright light, the rate of photosynthesis
+  exceeds the rate of respiration, so the plant has a net uptake of $\mathrm{CO{}_2$ and net release
+  of $\mathrm{O{}_2$.
 - **Confusing the products of anaerobic respiration in animals and yeast.** Animals produce lactic
- acid; yeast produces ethanol and $\mathrm{CO{}_2$. If you mix these up in an exam, you will lose
- marks.
+  acid; yeast produces ethanol and $\mathrm{CO{}_2$. If you mix these up in an exam, you will lose
+  marks.
 - **Stating that anaerobic respiration releases more energy than aerobic.** It releases much LESS
- energy (2 ATP vs. Approximately 38 ATP per glucose) because glucose is only partially broken down.
+  energy (2 ATP vs. Approximately 38 ATP per glucose) because glucose is only partially broken down.
 - **Forgetting that the oxygen debt must be repaid.** Lactic acid must be broken down using extra
- oxygen after exercise. This is why breathing rate remains elevated after exercise stops.
+  oxygen after exercise. This is why breathing rate remains elevated after exercise stops.
 - **Confusing the roles of the light-dependent and light-independent reactions.** The
- light-dependent reactions need light directly and produce ATP and NADPH. The Calvin cycle
- (light-independent) does not need light directly but needs the products of the light-dependent
- reactions.
+  light-dependent reactions need light directly and produce ATP and NADPH. The Calvin cycle
+  (light-independent) does not need light directly but needs the products of the light-dependent
+  reactions.
 - **Thinking that respiration only happens in animals.** All living organisms respire, including
- plants. Respiration is not the same as breathing.
+  plants. Respiration is not the same as breathing.
 - **Confusing chlorophyll and chloroplast.** Chlorophyll is the green pigment that absorbs light;
- the chloroplast is the organelle that contains chlorophyll.
+  the chloroplast is the organelle that contains chlorophyll.
 - **Forgetting that the inverse square law applies to light intensity.** Doubling the distance from
- a light source reduces the light intensity to one quarter, not one half.
+  a light source reduces the light intensity to one quarter, not one half.
 
 ## Practice Questions
 
 1. Explain how the structure of a leaf is adapted for efficient photosynthesis.
 
 2. A student investigates the effect of light intensity on the rate of photosynthesis using
- pondweed. Describe how they would carry out this investigation and sketch the expected graph.
+   pondweed. Describe how they would carry out this investigation and sketch the expected graph.
 
 3. Explain the difference between aerobic and anaerobic respiration in terms of the products formed
- and the amount of energy released.
+   and the amount of energy released.
 
 4. Describe the changes that occur in the body during exercise and explain why these changes are
- necessary.
+   necessary.
 
 5. Explain why plants store glucose as starch rather than as a liquid sugar.
 
@@ -513,56 +517,56 @@ Photosynthesis exactly equals the rate of respiration, so there is no net gas ex
 7. Explain what is meant by oxygen debt and how it is repaid after vigorous exercise.
 
 8. A gardener wants to increase the rate of photosynthesis in a greenhouse. Describe two methods
- they could use and explain the science behind each.
+   they could use and explain the science behind each.
 
 9. Describe the role of the liver in metabolism.
 
 10. Explain why a sprinter breathes heavily for several minutes after completing a 100 m race.
 
 11. **(Higher Tier)** Explain the concept of a limiting factor in photosynthesis and describe how a
- farmer could use this knowledge to increase crop yield in a greenhouse.
+    farmer could use this knowledge to increase crop yield in a greenhouse.
 
 12. **(Higher Tier)** Explain why the rate of respiration increases with temperature up to an
- optimum and then decreases, with reference to enzyme activity.
+    optimum and then decreases, with reference to enzyme activity.
 
 13. A student sets up a respirometer to investigate the effect of temperature on the rate of
- respiration in germinating peas. Describe how the student would ensure the results are valid and
- reliable.
+    respiration in germinating peas. Describe how the student would ensure the results are valid and
+    reliable.
 
 14. Explain why photosynthesis and respiration are described as opposite processes in terms of their
- chemical equations, but both are essential for the survival of a plant.
+    chemical equations, but both are essential for the survival of a plant.
 
 15. Describe and explain the effect of increasing $\mathrm{CO{}_2$ concentration on the rate of
- photosynthesis at (a) low light intensity and (b) high light intensity.
+    photosynthesis at (a) low light intensity and (b) high light intensity.
 
 16. Explain why a plant with yellow leaves (lacking chlorophyll) would struggle to survive, with
- reference to both photosynthesis and respiration.
+    reference to both photosynthesis and respiration.
 
 17. A student measures the rate of oxygen production by pondweed at different temperatures. The
- results show that the rate peaks at 35$^{\circ}$C and drops to zero at 50$^{\circ}$C. Explain
- these results.
+    results show that the rate peaks at 35$^{\circ}$C and drops to zero at 50$^{\circ}$C. Explain
+    these results.
 
 18. Explain the process of deamination in the liver and describe what happens to the products.
 
 19. Compare and contrast aerobic respiration and fermentation in yeast, including the products,
- energy yield, and conditions required.
+    energy yield, and conditions required.
 
 20. A farmer adds nitrate fertiliser to a field of wheat. Explain why this increases the growth rate
- of the wheat, with reference to the uses of glucose in plants.
+    of the wheat, with reference to the uses of glucose in plants.
 
 21. Explain why soda lime is used in respirometers and what would happen if it were omitted.
 
 22. **(Higher Tier)** Explain what is meant by the compensation point and describe how the net gas
- exchange of a plant changes as light intensity increases from zero to bright sunlight.
+    exchange of a plant changes as light intensity increases from zero to bright sunlight.
 
 23. Describe the process of glycogenesis and glycogenolysis in the liver, and explain why these
- processes are important for maintaining blood glucose levels.
+    processes are important for maintaining blood glucose levels.
 
 24. A student claims that "plants release oxygen during the day and carbon dioxide at night."
- Evaluate this claim, explaining when it is correct and when it is not.
+    Evaluate this claim, explaining when it is correct and when it is not.
 
 25. Explain why athletes who train at high altitudes may have an advantage when competing at sea
- level, with reference to respiration and oxygen transport.
+    level, with reference to respiration and oxygen transport.
 
 ## 7. Higher Tier: Investigating the Rate of Photosynthesis with Algal Balls
 
@@ -572,14 +576,14 @@ Suspended in a hydrogen carbonate indicator solution.
 **Method:**
 
 1. Mix algae with sodium alginate solution and drop the mixture into calcium chloride solution to
- form small, spherical algal balls (each ball contains many algal cells).
+   form small, spherical algal balls (each ball contains many algal cells).
 2. Place a known number of algal balls into a test tube containing hydrogen carbonate indicator
- (which changes colour depending on the pH, which changes with $\mathrm{CO{}_2$ concentration).
+   (which changes colour depending on the pH, which changes with $\mathrm{CO{}_2$ concentration).
 3. Expose the test tube to light of a specific intensity for a set time.
 4. As photosynthesis occurs, the algae absorb $\mathrm{CO{}_2$Raising the pH. The indicator changes
- from red/orange (high $\mathrm{CO{}_2$) to purple (low $\mathrm{CO{}_2$).
+   from red/orange (high $\mathrm{CO{}_2$) to purple (low $\mathrm{CO{}_2$).
 5. Use a colorimeter to measure the exact colour change, which corresponds to the amount of
- $\mathrm{CO{}_2$ absorbed.
+   $\mathrm{CO{}_2$ absorbed.
 6. Repeat at different light intensities, $\mathrm{CO{}_2$ concentrations, or temperatures.
 
 **Advantages of using algal balls:**
@@ -604,13 +608,13 @@ Sufficient to absorb enough $\mathrm{CO{}_2$ to cause the colour change within 8
 Plants require a range of mineral ions, absorbed from the soil by active transport in the root
 Hairs, for healthy growth:
 
-| Mineral Ion | Function | Deficiency Symptom |
-| ------------------------------ | ---------------------------------------------------------- | ----------------------------------------- |
-| Nitrate ($\mathrm{NO{}_3^-$) | Making amino acids and proteins, chlorophyll | Stunted growth, yellowing of older leaves |
-| Magnesium ($\mathrm{Mg{}^{2+}$) | Component of chlorophyll molecule | Yellowing between leaf veins (chlorosis) |
-| Phosphate ($\mathrm{PO{}_4^{3-}$) | Making DNA, cell membranes, ATP | Poor root growth, purple leaves |
-| Potassium ($\mathrm{K{}^+$) | Regulating stomatal opening and closing, enzyme activation | Wilting, yellow leaves with dead spots |
-| Calcium ($\mathrm{Ca{}^{2+}$) | Making cell walls (calcium pectate) | Stunted growth, leaves curl |
+| Mineral Ion                       | Function                                                   | Deficiency Symptom                        |
+| --------------------------------- | ---------------------------------------------------------- | ----------------------------------------- |
+| Nitrate ($\mathrm{NO{}_3^-$)      | Making amino acids and proteins, chlorophyll               | Stunted growth, yellowing of older leaves |
+| Magnesium ($\mathrm{Mg{}^{2+}$)   | Component of chlorophyll molecule                          | Yellowing between leaf veins (chlorosis)  |
+| Phosphate ($\mathrm{PO{}_4^{3-}$) | Making DNA, cell membranes, ATP                            | Poor root growth, purple leaves           |
+| Potassium ($\mathrm{K{}^+$)       | Regulating stomatal opening and closing, enzyme activation | Wilting, yellow leaves with dead spots    |
+| Calcium ($\mathrm{Ca{}^{2+}$)     | Making cell walls (calcium pectate)                        | Stunted growth, leaves curl               |
 
 **Why mineral deficiencies affect photosynthesis.** Both nitrates and magnesium are needed for
 Chlorophyll production. Without chlorophyll, leaves cannot absorb light energy, and photosynthesis
@@ -668,28 +672,28 @@ Rate per gram per minute $= 0.402 / 5 = 0.080$ $mm^3$/g/min.
 
 **Baking:** Yeast is added to bread dough, where it ferments sugars to produce $\mathrm{CO{}_2$ and
 Ethanol. The $\mathrm{CO{}_2$ gets trapped in the dough, causing it to rise (leavening). The ethanol
-Evaporates during baking (temperatures in an oven reach 180--220$\degree$C, well above
-Ethanol's boiling point of 78$\degree$C). Bread makers control the temperature and humidity during
-Proving (the initial fermentation stage) to optimise yeast activity.
+Evaporates during baking (temperatures in an oven reach 180--220$\degree$C, well above Ethanol's
+boiling point of 78$\degree$C). Bread makers control the temperature and humidity during Proving
+(the initial fermentation stage) to optimise yeast activity.
 
 **Brewing:** Yeast ferments sugars in malted barley (or other grains) to produce ethanol. The
 Process involves:
 
 1. **Malting:** Barley grains are soaked in water and allowed to germinate. Amylase enzymes break
- down starch into maltose sugar.
+   down starch into maltose sugar.
 2. **Mashing:** The malted barley is mixed with hot water to extract the sugars.
 3. **Fermentation:** Yeast is added to the sugary liquid (wort). Anaerobic conditions are maintained
- so the yeast produces ethanol.
+   so the yeast produces ethanol.
 4. **Conditioning:** The beer is stored to allow flavours to develop.
 
-The ethanol concentration in fermented drinks is limited to about 15% because ethanol is
-Toxic to yeast at higher concentrations. Stronger alcoholic drinks require distillation.
+The ethanol concentration in fermented drinks is limited to about 15% because ethanol is Toxic to
+yeast at higher concentrations. Stronger alcoholic drinks require distillation.
 
 **Biofuel production:** Yeast can ferment sugars from plant material (e.g., corn, sugarcane) to
 Produce bioethanol, which can be used as a renewable fuel. The advantage of bioethanol is that it is
-Carbon-neutral in principle: the $\mathrm{CO{}_2$ released when it is burned was originally absorbed by
-The plants during photosynthesis. However, growing biofuel crops requires land that could otherwise
-Be used for food production, creating a conflict between energy and food security.
+Carbon-neutral in principle: the $\mathrm{CO{}_2$ released when it is burned was originally absorbed
+by The plants during photosynthesis. However, growing biofuel crops requires land that could
+otherwise Be used for food production, creating a conflict between energy and food security.
 
 ## 11. Higher Tier: Investigating the Effect of Carbon Dioxide Concentration on Photosynthesis
 
@@ -699,7 +703,7 @@ Pondweed.
 **Method:**
 
 1. Set up five boiling tubes, each containing pondweed in water with sodium hydrogencarbonate at
- different concentrations (0%, 1%, 2%, 3%, 4%).
+   different concentrations (0%, 1%, 2%, 3%, 4%).
 2. Place all tubes at the same distance from a lamp (same light intensity).
 3. Maintain all tubes at the same temperature using a water bath.
 4. Count the number of oxygen bubbles produced per minute in each tube.
@@ -710,7 +714,7 @@ Pondweed.
 - At 0% $\mathrm{CO{}_2$: no photosynthesis (no carbon dioxide available for carbon fixation).
 - From 0% to approximately 3%: the rate increases as $\mathrm{CO{}_2$ concentration increases.
 - Above approximately 3%: the rate plateaus because another factor (light or temperature) has become
- limiting.
+  limiting.
 
 **Controlled variables:** light intensity, temperature, volume of water, piece of pondweed, time
 Allowed for acclimatisation.
@@ -722,9 +726,9 @@ At 1% $\mathrm{CO{}_2$The rate is 5 bubbles/min. At 2% $\mathrm{CO{}_2$The rate 
 
 Between 1% and 2%, the rate increases from 5 to 9 bubbles/min (an increase of 4). Between 2% and 3%,
 The rate increases from 9 to 10 (an increase of only 1). Between 3% and 4%, there is no increase at
-All. This shows that above 3% $\mathrm{CO{}_2$$\mathrm{CO{}_2$ is no longer the limiting factor. Another
-Factor (light intensity or temperature) is now limiting, and increasing $\mathrm{CO{}_2$ further has no
-Effect.
+All. This shows that above 3% $\mathrm{CO{}_2$$\mathrm{CO{}_2$ is no longer the limiting factor.
+Another Factor (light intensity or temperature) is now limiting, and increasing $\mathrm{CO{}_2$
+further has no Effect.
 
 ## 12. Higher Tier: Anaerobic Respiration in Sport
 
@@ -752,21 +756,27 @@ Exercise stops.
 <details>
 <summary>Question 1: Photosynthesis rate factors</summary>
 
-A student investigates the effect of light intensity on the rate of photosynthesis in pond weed. Describe the shape of the graph produced and explain why the rate plateaus.
+A student investigates the effect of light intensity on the rate of photosynthesis in pond weed.
+Describe the shape of the graph produced and explain why the rate plateaus.
 
 </details>
 
 <details>
 <summary>Answer</summary>
 
-The graph shows the rate of photosynthesis increasing linearly at low light intensity, then curving and eventually plateauing. At low light, light is the limiting factor and more light means more energy for the light-dependent reactions. The rate plateaus when another factor (such as $\mathrm{CO{}_2$ concentration or temperature) becomes limiting -- increasing light intensity further has no effect because the Calvin cycle cannot work any faster.
+The graph shows the rate of photosynthesis increasing linearly at low light intensity, then curving
+and eventually plateauing. At low light, light is the limiting factor and more light means more
+energy for the light-dependent reactions. The rate plateaus when another factor (such as
+$\mathrm{CO{}_2$ concentration or temperature) becomes limiting -- increasing light intensity
+further has no effect because the Calvin cycle cannot work any faster.
 
 </details>
 
 <details>
 <summary>Question 2: Respiration equations</summary>
 
-Write the word equation for aerobic respiration. A student claims that plants do not carry out respiration. Evaluate this claim.
+Write the word equation for aerobic respiration. A student claims that plants do not carry out
+respiration. Evaluate this claim.
 
 </details>
 
@@ -775,30 +785,41 @@ Write the word equation for aerobic respiration. A student claims that plants do
 
 Glucose + oxygen $\to$ carbon dioxide + water (+ energy released).
 
-The claim is incorrect. Plants carry out both photosynthesis (during the day) and respiration (continuously, day and night). During the day, the rate of photosynthesis exceeds respiration, so there is a net release of oxygen. At night, only respiration occurs, so plants take in oxygen and release carbon dioxide.
+The claim is incorrect. Plants carry out both photosynthesis (during the day) and respiration
+(continuously, day and night). During the day, the rate of photosynthesis exceeds respiration, so
+there is a net release of oxygen. At night, only respiration occurs, so plants take in oxygen and
+release carbon dioxide.
 
 </details>
 
 <details>
 <summary>Question 3: Investigating respiration rate</summary>
 
-Describe an experiment using respirometers to measure the rate of aerobic respiration in germinating seeds. Explain the purpose of the soda lime and the control.
+Describe an experiment using respirometers to measure the rate of aerobic respiration in germinating
+seeds. Explain the purpose of the soda lime and the control.
 
 </details>
 
 <details>
 <summary>Answer</summary>
 
-Germinating seeds are placed in a respirometer with soda lime (to absorb $\mathrm{CO{}_2$). As seeds respire, they consume $\mathrm{O{}_2$ and release $\mathrm{CO{}_2$. The soda lime absorbs the $\mathrm{CO{}_2$So the only gas change is a reduction in $\mathrm{O{}_2$. The coloured liquid in the capillary tube moves towards the seeds as oxygen is consumed. The rate of movement gives the respiration rate.
+Germinating seeds are placed in a respirometer with soda lime (to absorb $\mathrm{CO{}_2$). As seeds
+respire, they consume $\mathrm{O{}_2$ and release $\mathrm{CO{}_2$. The soda lime absorbs the
+$\mathrm{CO{}_2$So the only gas change is a reduction in $\mathrm{O{}_2$. The coloured liquid in the
+capillary tube moves towards the seeds as oxygen is consumed. The rate of movement gives the
+respiration rate.
 
-A control respirometer contains dead seeds (boiled). Any movement in the control accounts for non-biological changes in gas volume (e.g., temperature or pressure changes). The experimental result is corrected by subtracting the control movement.
+A control respirometer contains dead seeds (boiled). Any movement in the control accounts for
+non-biological changes in gas volume (e.g., temperature or pressure changes). The experimental
+result is corrected by subtracting the control movement.
 
 </details>
 
 <details>
 <summary>Question 4: Uses of glucose in plants</summary>
 
-List three ways that plants use the glucose produced by photosynthesis, and for each use, explain why it is important for the plant.
+List three ways that plants use the glucose produced by photosynthesis, and for each use, explain
+why it is important for the plant.
 
 </details>
 
@@ -806,9 +827,12 @@ List three ways that plants use the glucose produced by photosynthesis, and for 
 <summary>Answer</summary>
 
 1. Respiration: glucose is broken down to release energy (ATP) for cellular processes.
-2. Storage: glucose is converted to starch for storage in leaves (temporarily) and in storage organs like potatoes.
-3. Cell walls: glucose is converted to cellulose, which makes up the cell wall for structural support.
-4. Making other substances: glucose can be converted to lipids for seed oils, amino acids for proteins, and chlorophyll.
+2. Storage: glucose is converted to starch for storage in leaves (temporarily) and in storage organs
+   like potatoes.
+3. Cell walls: glucose is converted to cellulose, which makes up the cell wall for structural
+   support.
+4. Making other substances: glucose can be converted to lipids for seed oils, amino acids for
+   proteins, and chlorophyll.
 
 (Any three with explanations.)
 
@@ -817,16 +841,22 @@ List three ways that plants use the glucose produced by photosynthesis, and for 
 <details>
 <summary>Question 5: Fermentation in yeast</summary>
 
-Describe how yeast is used in the production of bread and beer, explaining the role of fermentation in each process.
+Describe how yeast is used in the production of bread and beer, explaining the role of fermentation
+in each process.
 
 </details>
 
 <details>
 <summary>Answer</summary>
 
-In bread-making, yeast carries out anaerobic respiration (fermentation), converting glucose to ethanol and carbon dioxide. The $\mathrm{CO{}_2$ gets trapped in the dough, causing it to rise, giving bread its light, airy texture. The ethanol evaporates during baking.
+In bread-making, yeast carries out anaerobic respiration (fermentation), converting glucose to
+ethanol and carbon dioxide. The $\mathrm{CO{}_2$ gets trapped in the dough, causing it to rise,
+giving bread its light, airy texture. The ethanol evaporates during baking.
 
-In beer production, yeast ferments sugars in the wort (malted barley extract), producing ethanol and $\mathrm{CO{}_2$. The ethanol is the desired product (alcohol in the beer), and the $\mathrm{CO{}_2$ provides carbonation. The process is carried out in anaerobic conditions to ensure fermentation rather than aerobic respiration.
+In beer production, yeast ferments sugars in the wort (malted barley extract), producing ethanol and
+$\mathrm{CO{}_2$. The ethanol is the desired product (alcohol in the beer), and the $\mathrm{CO{}_2$
+provides carbonation. The process is carried out in anaerobic conditions to ensure fermentation
+rather than aerobic respiration.
 
 </details>
 

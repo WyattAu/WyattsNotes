@@ -1,6 +1,8 @@
 ---
 title: CLI Tools
-description: "CLI Tools — sys.argv Basics; argparse; ArgumentParser; Positional Arguments with worked examples and exam-style questions."
+description:
+  'CLI Tools — sys.argv Basics; argparse; ArgumentParser; Positional Arguments with worked examples
+  and exam-style questions.'
 date: 2026-04-05T00:00:00.000Z
 tags:
   - Python
@@ -8,6 +10,7 @@ categories:
   - Python
 slug: cli-tools
 ---
+
 # CLI Tools
 
 Building command-line interfaces in Python is not a "pick one and go" decision. The standard library
@@ -90,16 +93,16 @@ Key constructor parameters:
 - `prog`: overrides the program name in help output. Defaults to `sys.argv[0]`.
 - `description`: text shown before the argument list in `--help`.
 - `epilog`: text shown after the argument list. Use `RawDescriptionHelpFormatter` to preserve
- newlines (the default `HelpFormatter` reflows text).
+  newlines (the default `HelpFormatter` reflows text).
 - `formatter_class`: controls how help text is wrapped. `RawDescriptionHelpFormatter` prevents
- reflow; `ArgumentDefaultsHelpFormatter` appends default values to help strings.
+  reflow; `ArgumentDefaultsHelpFormatter` appends default values to help strings.
 - `parents`: accepts a list of `ArgumentParser` instances whose arguments are copied in—useful for
- shared argument sets across subcommands.
+  shared argument sets across subcommands.
 - `argument_default`: sets a global default for all arguments that don't specify their own.
 - `exit_on_error`: (3.9+) if `False``parse_args()` raises `ArgumentError` instead of calling
- `sys.exit()`. Essential for library code that parses args without terminating the process.
+  `sys.exit()`. Essential for library code that parses args without terminating the process.
 - `fromfile_prefix_chars`: e.g. `@` allows `@args.txt` to read arguments from a file. Useful for
- circumventing shell argument length limits.
+  circumventing shell argument length limits.
 
 ### Positional Arguments
 
@@ -126,12 +129,12 @@ parser.add_argument("--format", choices=["json", "text", "csv"], default="text")
 
 - `store_true` / `store_false`: sets a boolean. No value consumed from the command line.
 - `store_const`: stores a constant value specified by `const=`. Used for `--flag` that should set a
- non-boolean value.
+  non-boolean value.
 - `append`: each occurrence appends to a list. `--tag foo --tag bar` yields `["foo", "bar"]`.
 - `append_const`: appends a constant to a list.
 - `count`: `--verbose` → 1, `-vv` → 2, `-vvv` → 3 (use `action="count"`).
 - `extend`: (3.10+) like `append` but accepts comma-separated values. `--tag foo,bar` yields
- `["foo", "bar"]`.
+  `["foo", "bar"]`.
 - `version`: prints version info and exits (requires `version=` string).
 
 ### type, default, choices
@@ -163,13 +166,13 @@ Type error fires first.
 
 `nargs` controls how many command-line tokens an argument consumes:
 
-| Value | Meaning | Example | Result |
+| Value     | Meaning   | Example                    | Result                    |
 | --------- | --------- | -------------------------- | ------------------------- |
-| (default) | 1 | `--count 5` | `5` |
-| `N` (int) | exactly N | `--rgb 255 0 128` | `[255, 0, 128]` |
-| `?` | 0 or 1 | `--format json` or omitted | `json` or `default` |
-| `*` | 0 or more | `--tag a b c` or omitted | `["a", "b", "c"]` or `[]` |
-| `+` | 1 or more | `--file a.txt b.txt` | `["a.txt", "b.txt"]` |
+| (default) | 1         | `--count 5`                | `5`                       |
+| `N` (int) | exactly N | `--rgb 255 0 128`          | `[255, 0, 128]`           |
+| `?`       | 0 or 1    | `--format json` or omitted | `json` or `default`       |
+| `*`       | 0 or more | `--tag a b c` or omitted   | `["a", "b", "c"]` or `[]` |
+| `+`       | 1 or more | `--file a.txt b.txt`       | `["a.txt", "b.txt"]`      |
 
 `nargs="?"` has special behavior: when the flag is present without a value, `const` is stored
 Instead of `default`. When the flag is absent entirely, `default` is stored.
@@ -362,18 +365,18 @@ Critical for CI pipelines where ANSI escape codes corrupt log files.
 ### Why click is more ergonomic than argparse
 
 1. **No boilerplate.** The function signature IS the CLI spec. In argparse, you define the parser,
- add arguments, parse, then manually unpack `args.x``args.y``args.z` into local variables or
- pass the namespace object around.
+   add arguments, parse, then manually unpack `args.x``args.y``args.z` into local variables or pass
+   the namespace object around.
 2. **Composable.** Groups and commands are separate functions that can be defined in different
- modules and registered at import time. Argparse subparsers require all definitions in one place
- (or manual registration).
+   modules and registered at import time. Argparse subparsers require all definitions in one place
+   (or manual registration).
 3. **Built-in prompts.** `prompt=True` in `@click.option()` gives you an interactive prompt with no
- extra code. Argparse has no prompt support.
+   extra code. Argparse has no prompt support.
 4. **Context management.** Click's `Context` object carries state, configuration, and resource
- cleanup across subcommands. Argparse has no equivalent—you manage state yourself.
+   cleanup across subcommands. Argparse has no equivalent—you manage state yourself.
 5. **Testing.** `click.testing.CliRunner` invokes your command in-process and captures output, exit
- codes, and exceptions. Testing argparse requires mocking `sys.argv` and capturing
- `sys.stdout`/`sys.stderr`.
+   codes, and exceptions. Testing argparse requires mocking `sys.argv` and capturing
+   `sys.stdout`/`sys.stderr`.
 
 The tradeoff: click is a dependency. Argparse ships with Python. For applications where adding a
 Dependency is acceptable (which is most applications), click is the better choice.
@@ -443,11 +446,11 @@ Rules:
 - A parameter **without a default** is a required positional argument.
 - A parameter **with a default** is an optional argument (an `--option`).
 - `Annotated[type, typer.Argument(...)]` forces a parameter to be a positional argument even if it
- has a default.
+  has a default.
 - `Annotated[type, typer.Option(...)]` forces a parameter to be an option even if it has no default
- (making it required but named).
+  (making it required but named).
 - `bool` parameters with `False` default become `--flag` (store_true). `True` default becomes
- `--no-flag` (store_false).
+  `--no-flag` (store_false).
 
 ### Automatic Type Conversion
 
@@ -518,15 +521,15 @@ def status():
 ### Why typer over click
 
 1. **Type safety.** Mypy and other static analyzers understand your CLI function's signature. With
- click, the decorator-based API obscures types—mypy sees `def hello(count, name)` and has no idea
- what types `count` and `name` are.
+   click, the decorator-based API obscures types—mypy sees `def hello(count, name)` and has no idea
+   what types `count` and `name` are.
 2. **Less code.** Typer infers option names, types, and defaults from annotations. Click requires
- explicit `@click.option("--name", type=str, default="...")` for each parameter.
+   explicit `@click.option("--name", type=str, default="...")` for each parameter.
 3. **Editor support.** IDEs provide autocomplete and type checking on the annotated function. The
- click equivalent requires reading decorator documentation.
+   click equivalent requires reading decorator documentation.
 4. **Same runtime.** Typer compiles to click commands. The runtime behavior, error handling, and
- testing story are identical to click. You are not giving up click's maturity—you are getting a
- better interface to it.
+   testing story are identical to click. You are not giving up click's maturity—you are getting a
+   better interface to it.
 
 The tradeoff: typer requires Python 3.7+ (practically 3.9+ for comfortable `Annotated` usage). For
 Codebases on older Python versions, use click directly.
@@ -943,11 +946,11 @@ def setup_logging(verbose: int, quiet: bool):
 Key points:
 
 - Log to **stderr**, not stdout. Stdout is for data output. Mixing logs and data on stdout makes
- programmatic consumption impossible.
+  programmatic consumption impossible.
 - Use `stream=sys.stderr` explicitly. `basicConfig` defaults to stderr, but being explicit prevents
- surprises if the default ever changes.
+  surprises if the default ever changes.
 - Suppress the library name and level prefix for clean output. Use `format="%(message)s"` for
- user-facing tools. Include `%(levelname)s` and `%(name)s` only for developer-facing tools.
+  user-facing tools. Include `%(levelname)s` and `%(name)s` only for developer-facing tools.
 
 ### Exit Codes
 
@@ -1124,9 +1127,9 @@ Type annotations in typer earn their value—they reject bad input before your f
 
 ### Assuming stdout Is a Terminal
 
-In CI pipelines, `docker run``cron` jobs, and IDE terminals, stdout may not be a TTY. Progress
-Bars that write ANSI escape codes to a non-TTY produce garbled output in log files. Both click and
-Rich detect `isatty()` and degrade gracefully, but custom escape code output must check explicitly:
+In CI pipelines, `docker run``cron` jobs, and IDE terminals, stdout may not be a TTY. Progress Bars
+that write ANSI escape codes to a non-TTY produce garbled output in log files. Both click and Rich
+detect `isatty()` and degrade gracefully, but custom escape code output must check explicitly:
 
 ```python
 import sys

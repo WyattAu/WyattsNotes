@@ -1,6 +1,8 @@
 ---
 title: Object Layout, vptr, and the this Pointer
-description: "C++: Object Layout, vptr, and the this Pointer — Object Layout, vptr, and the `this` Pointer; 1.1 Memory Layout of a Simple Class."
+description:
+  'C++: Object Layout, vptr, and the this Pointer — Object Layout, vptr, and the `this` Pointer; 1.1
+  Memory Layout of a Simple Class.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -8,6 +10,7 @@ categories:
   - Cpp
 slug: object-layout-vptr-this-pointer
 ---
+
 # Object Layout, vptr, and the `this` Pointer
 
 Understanding how the compiler lays out objects in memory is fundamental to writing correct and
@@ -56,12 +59,10 @@ $$
 \mathrm{sizeof{}(\texttt{Simple}) = 1 + 3\mathrm{(pad){} + 4 + 1 + 3\mathrm{(pad){} + 8 = 24
 $$
 
-:::tip
-Standard Layout A class with no virtual functions, no non-static data members of reference
+:::tip Standard Layout A class with no virtual functions, no non-static data members of reference
 Type, and all non-static data members with the same access control is a **standard-layout class**
 [N4950 §11.4.1]. Such classes have a well-defined, portable memory layout and are compatible with C
-Structs.
-:::
+Structs. :::
 
 ## 1.2 The `this` Pointer [N4950 §11.4.3.2]
 
@@ -104,9 +105,9 @@ The C++ Standard does not specify the mechanism for passing `this` — that is d
 On the dominant 64-bit platforms:
 
 - **System V AMD64 ABI** (Linux, macOS): `this` is passed as the first implicit argument in register
- **rdi** (the same register used for the first explicit parameter of a non-member function). If the
- member function is called on a `const` object, the pointer is passed in the same register; the
- type difference is purely a compile-time distinction.
+  **rdi** (the same register used for the first explicit parameter of a non-member function). If the
+  member function is called on a `const` object, the pointer is passed in the same register; the
+  type difference is purely a compile-time distinction.
 - **Windows x64 ABI**: `this` is passed in register **rcx**.
 
 The key insight: a member function call `obj.method(arg)` is ABI-equivalent to a non-member call
@@ -171,12 +172,9 @@ struct Derived : Empty {
 static_assert(sizeof(Derived) == sizeof(int));
 ```
 
-:::info
-Practical Importance EBO is exploited heavily by standard library implementations.
-`std::allocator&lt;T&gt;` is an empty class, and
-`std::vector&lt;T, std::allocator&lt;T&gt;&gt;` inherits from it privately so that the allocator
-Storage costs nothing.
-:::
+:::info Practical Importance EBO is exploited heavily by standard library implementations.
+`std::allocator&lt;T&gt;` is an empty class, and `std::vector&lt;T, std::allocator&lt;T&gt;&gt;`
+inherits from it privately so that the allocator Storage costs nothing. :::
 
 ### EBO Limitations
 
@@ -185,7 +183,7 @@ EBO cannot be applied when:
 - The empty class is a **member**, not a base class.
 - Multiple base classes of the **same type** exist (they must have distinct addresses).
 - The empty base is also a base of another base in a diamond hierarchy (the compiler must still
- ensure unique addresses in some configurations).
+  ensure unique addresses in some configurations).
 
 ```cpp
 struct Empty {};
@@ -430,8 +428,8 @@ Disables `dynamic_cast` (except for upcasts, which are compile-time resolved).
 ### Pure Virtual Functions and Abstract Classes
 
 A class with at least one **pure virtual function** is abstract — it cannot be instantiated. In the
-Vtable, a pure virtual function's slot points to `__cxa_pure_virtual` (Itanium ABI) or
-`_purecall` (MSVC), which triggers a runtime error if called:
+Vtable, a pure virtual function's slot points to `__cxa_pure_virtual` (Itanium ABI) or `_purecall`
+(MSVC), which triggers a runtime error if called:
 
 ```cpp
 #include <cstdio>
@@ -489,8 +487,8 @@ int main() {
 ## 1.9 Virtual Destructors and Object Destruction
 
 When deleting an object through a base class pointer, the destructor must be virtual to ensure the
-Derived destructor runs. Without `virtual`Only the base destructor runs, causing resource leaks
-And Undefined Behavior.
+Derived destructor runs. Without `virtual`Only the base destructor runs, causing resource leaks And
+Undefined Behavior.
 
 ```cpp
 #include <cstdio>
@@ -569,13 +567,13 @@ int main() {
 ### When Devirtualization Occurs
 
 1. **Static type analysis:** If the object is allocated locally and never escapes (no pointers to it
- are stored), the compiler can track its exact type.
+   are stored), the compiler can track its exact type.
 2. **`final` on the class:** If the class is `final`No further derivation is possible, so the
- dynamic type is always the static type.
-3. **`final` on the method:** If the virtual function is `final`No override exists, so the
- compiler can use the static type's vtable entry.
+   dynamic type is always the static type.
+3. **`final` on the method:** If the virtual function is `final`No override exists, so the compiler
+   can use the static type's vtable entry.
 4. **Speculative devirtualization:** At `-O2`/`-O3`Compilers may emit speculative direct calls
- guarded by a type check (comparing the vptr against the expected vtable).
+   guarded by a type check (comparing the vptr against the expected vtable).
 
 ## Common Pitfalls
 
@@ -600,8 +598,8 @@ int main() {
 ### 2. `offsetof` with Non-Standard-Layout Types
 
 `offsetof` is undefined behavior for non-standard-layout classes [N4950 §18.2.4]. A class with
-Virtual functions is not standard-layout. Compilers still produce correct results, but the
-Behavior is not portable:
+Virtual functions is not standard-layout. Compilers still produce correct results, but the Behavior
+is not portable:
 
 ```cpp
 struct Polymorphic {

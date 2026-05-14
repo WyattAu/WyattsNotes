@@ -1,6 +1,8 @@
 ---
 title: Access Control and Friendship
-description: "C++: Access Control and Friendship — 2.1 Access Specifiers [N4950 S14.2]; Proof: Access Control is Compile-Time Only; 2.2 Class vs Struct."
+description:
+  'C++: Access Control and Friendship — 2.1 Access Specifiers [N4950 S14.2]; Proof: Access Control
+  is Compile-Time Only; 2.2 Class vs Struct.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -8,21 +10,22 @@ categories:
   - Cpp
 slug: access-control-friendship
 ---
+
 # Access Control and Friendship
 
-C++ provides fine-grained access control through `public``protected`And `private` specifiers,
-Plus the `friend` mechanism for granting selective access to non-members. Access control is enforced
+C++ provides fine-grained access control through `public``protected`And `private` specifiers, Plus
+the `friend` mechanism for granting selective access to non-members. Access control is enforced
 Entirely at compile time with zero runtime cost.
 
 ## 2.1 Access Specifiers [N4950 S14.2]
 
 A class member can be declared with one of three access specifiers [N4950 S14.3.1]:
 
-| Specifier | Class members | Derived class members | External code |
+| Specifier   | Class members | Derived class members | External code |
 | ----------- | :-----------: | :-------------------: | :-----------: |
-| `public` | Yes | Yes | Yes |
-| `protected` | Yes | Yes | No |
-| `private` | Yes | No | No |
+| `public`    |      Yes      |          Yes          |      Yes      |
+| `protected` |      Yes      |          Yes          |      No       |
+| `private`   |      Yes      |          No           |      No       |
 
 Access control is enforced at compile time only; it has zero runtime cost. The access specifier
 Applies to all members declared after it until another access specifier is encountered.
@@ -32,11 +35,11 @@ And only if the access rules in [N4950 S14.3] permit it. The three access specif
 Following accessibility sets:
 
 - `public`: the member is a member of the _access interface_ of the class and is accessible from
- anywhere the class itself is accessible [N4950 S14.3.1.1].
+  anywhere the class itself is accessible [N4950 S14.3.1.1].
 - `protected`: the member is accessible from member functions and friends of the class, and from
- member functions and friends of derived classes [N4950 S14.3.1.2].
+  member functions and friends of derived classes [N4950 S14.3.1.2].
 - `private`: the member is accessible only from member functions and friends of the class that
- declares it [N4950 S14.3.1.3].
+  declares it [N4950 S14.3.1.3].
 
 ```cpp
 #include <cstdio>
@@ -91,8 +94,8 @@ Model.
 
 ## 2.2 Class vs Struct
 
-In C++, `class` and `struct` are identical except for one default: in a `class`Members are
-`private` by default; in a `struct`Members are `public` by default [N4950 S13.3].
+In C++, `class` and `struct` are identical except for one default: in a `class`Members are `private`
+by default; in a `struct`Members are `public` by default [N4950 S13.3].
 
 ```cpp
 struct S { int x; };    // x is public
@@ -101,10 +104,8 @@ class  C { int x; };    // x is private
 static_assert(sizeof(S) == sizeof(C));
 ```
 
-:::tip
-Convention Use `struct` for passive data aggregates with no invariant enforcement. Use
-`class` for types that maintain invariants and require encapsulation.
-:::
+:::tip Convention Use `struct` for passive data aggregates with no invariant enforcement. Use
+`class` for types that maintain invariants and require encapsulation. :::
 
 ## 2.3 Friend Declarations [N4950 S14.3]
 
@@ -119,14 +120,14 @@ A friend declaration is a declaration that nominates a function or class to be g
 Non-public members. The key properties are:
 
 1. **Granting is unilateral.** The class that contains the `friend` declaration is the _granting_
- class. The nominated entity receives access; no reciprocal access is implied.
+   class. The nominated entity receives access; no reciprocal access is implied.
 2. **Not transitive.** If `A` declares `B` as a friend, and `B` declares `C` as a friend, `C` does
- **not** have access to `A`'s private members.
+   **not** have access to `A`'s private members.
 3. **Not inherited.** If `A` declares `B` as a friend, and `C` inherits from `B``C` does **not**
- have access to `A`'s private members.
+   have access to `A`'s private members.
 4. **Friendship is not a membership declaration.** A friend function is not a member of the class.
- It does not have a `this` pointer and is not found by name lookup within the class scope (unless
- it is also declared as a member).
+   It does not have a `this` pointer and is not found by name lookup within the class scope (unless
+   it is also declared as a member).
 
 ```cpp
 #include <cstdio>
@@ -190,8 +191,8 @@ Not declared as a friend of `A`Access is denied.
 
 Similarly, inheritance is irrelevant to friendship: [N4950 S14.3] specifies that "a member of a
 Derived class... Has no special access to members of a base class" except through the normal access
-Specifiers. Since `C` inherits from `B`And `B` is a friend of `A``C` is not a friend of `A` by
-The same argument.
+Specifiers. Since `C` inherits from `B`And `B` is a friend of `A``C` is not a friend of `A` by The
+same argument.
 
 ## 2.4 Friend Classes and Member Functions
 
@@ -282,17 +283,17 @@ Hidden friends are the preferred idiom for defining operators in modern C++ beca
 
 1. They do not pollute the enclosing namespace.
 2. They are only found when the associated class is in scope, preventing unintended overload
- resolution.
+   resolution.
 3. They have access to private members without needing a separate friend declaration outside the
- class.
+   class.
 
 ## 2.6 When to Use Friendship
 
 Friendship should be used sparingly. The two most common legitimate use cases are:
 
 1. **Symmetric binary operators**: When the left operand does not belong to the class (e.g.,
- `ostream& operator&lt;&lt;(ostream&, const T&)` or
- `Vector operator*(const Matrix&, const Vector&)`).
+   `ostream& operator&lt;&lt;(ostream&, const T&)` or
+   `Vector operator*(const Matrix&, const Vector&)`).
 2. **Factory patterns**: When a factory function needs access to a private constructor.
 3. **Internal helpers**: When a utility function needs deep access but should not be a member.
 
@@ -346,9 +347,9 @@ int main() {
 
 | Base Member Access | Public Inheritance | Protected Inheritance | Private Inheritance |
 | :----------------- | :----------------: | :-------------------: | :-----------------: |
-| `public` | `public` | `protected` | `private` |
-| `protected` | `protected` | `protected` | `private` |
-| `private` | inaccessible | inaccessible | inaccessible |
+| `public`           |      `public`      |      `protected`      |      `private`      |
+| `protected`        |    `protected`     |      `protected`      |      `private`      |
+| `private`          |    inaccessible    |     inaccessible      |    inaccessible     |
 
 **Private inheritance** is not an "is-a" relationship -- it is an "implemented-in-terms-of"
 Relationship. It is used when you want to reuse a base class's implementation without exposing the
@@ -449,7 +450,7 @@ Zero runtime cost. `final` can appear in two contexts:
 
 1. **Class `final`:** A class marked `final` shall not be used as a base class.
 2. **Member function `final`:** A virtual function marked `final` shall not be overridden in any
- derived class.
+   derived class.
 
 ```cpp
 #include <iostream>
@@ -500,10 +501,10 @@ A nested class is a member of its enclosing class [N4950 S13.4.2]. The access ru
 Classes follow from this membership relationship:
 
 - A nested class **has access to all members** of its enclosing class (including `private` and
- `protected` members). This follows from [N4950 S14.3]: a member function of the nested class is
- considered a member of the enclosing class for access checking purposes.
+  `protected` members). This follows from [N4950 S14.3]: a member function of the nested class is
+  considered a member of the enclosing class for access checking purposes.
 - The enclosing class does **not** have special access to the nested class's private members. The
- nested class's private members are accessible only to the nested class's own members and friends.
+  nested class's private members are accessible only to the nested class's own members and friends.
 
 ```cpp
 #include <iostream>
@@ -613,35 +614,35 @@ Linkage (multiple definitions are allowed across translation units) but has no e
 ## Common Pitfalls
 
 - **Assuming friendship is transitive or inherited.** If `A` declares `B` as a friend, and `C`
- inherits from `B``C` does **not** have access to `A`'s private members. Each class controls its
- own friendship independently.
+  inherits from `B``C` does **not** have access to `A`'s private members. Each class controls its
+  own friendship independently.
 - **Using `protected` data members.** While syntactically legal, `protected` data members break
- encapsulation because any derived class can modify them directly without the base class's
- knowledge. Prefer `protected` member functions (getters/setters) or `private` data with
- `protected` accessors.
+  encapsulation because any derived class can modify them directly without the base class's
+  knowledge. Prefer `protected` member functions (getters/setters) or `private` data with
+  `protected` accessors.
 - **Forgetting that `class` defaults to `private` and `struct` defaults to `public`.** A `struct`
- with no access specifier has public members by default, which can accidentally expose
- implementation details. Always be explicit about access specifiers.
+  with no access specifier has public members by default, which can accidentally expose
+  implementation details. Always be explicit about access specifiers.
 - **Overusing friendship.** Every `friend` declaration creates a tight coupling between two classes.
- Prefer public interfaces, member functions, or the hidden friend idiom for operators. Reserve
- friendship for cases where no alternative exists (symmetric operators, factories).
+  Prefer public interfaces, member functions, or the hidden friend idiom for operators. Reserve
+  friendship for cases where no alternative exists (symmetric operators, factories).
 - **Private inheritance confusion.** Private inheritance is not a substitute for composition. It
- inherits the base class's layout (vtable, sizeof), which increases coupling. Use composition
- (member variable) unless you specifically need `protected` member access or virtual function
- overriding.
+  inherits the base class's layout (vtable, sizeof), which increases coupling. Use composition
+  (member variable) unless you specifically need `protected` member access or virtual function
+  overriding.
 - **Friend function name hiding.** A friend function defined inside a class body (hidden friend) is
- not found by unqualified lookup outside of ADL. If you need the function to be callable without
- ADL, declare it outside the class.
+  not found by unqualified lookup outside of ADL. If you need the function to be callable without
+  ADL, declare it outside the class.
 - **Using-declarations and overloads.** A `using` declaration in a derived class makes accessible
- _all_ overloads of the named member from the base class. If only one overload needs to be exposed,
- you must use a forwarding function instead, since a `using` declaration cannot target a single
- overload.
+  _all_ overloads of the named member from the base class. If only one overload needs to be exposed,
+  you must use a forwarding function instead, since a `using` declaration cannot target a single
+  overload.
 
 ## 2.14 Access Control and In-Class Member Functions
 
 Access control applies uniformly to all member functions, including those defined inside the class
-Body. A member function defined inside the class body is implicitly `inline`But this does not
-Affect its access to private members of the same class:
+Body. A member function defined inside the class body is implicitly `inline`But this does not Affect
+its access to private members of the same class:
 
 ```cpp
 #include <iostream>

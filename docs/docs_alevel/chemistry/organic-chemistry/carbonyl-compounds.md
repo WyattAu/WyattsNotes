@@ -1,6 +1,8 @@
 ---
 title: Carbonyl Compounds
-description: "A-Level Chemistry notes on Carbonyl Compounds: Aldehydes vs Ketones; Nucleophilic Addition; Reaction with HCN (Cyanohydrin Formation); Reduction with NaBH$_4$."
+description:
+  'A-Level Chemistry notes on Carbonyl Compounds: Aldehydes vs Ketones; Nucleophilic Addition;
+  Reaction with HCN (Cyanohydrin Formation); Reduction with NaBH$_4$.'
 date: 2026-04-22T00:00:00.000Z
 tags:
   - Chemistry
@@ -9,6 +11,7 @@ categories:
   - Chemistry
 slug: carbonyl-compounds
 ---
+
 # Carbonyl Compounds
 
 Carbonyl compounds contain the C=O functional group. The carbonyl carbon is $sp^2$ hybridised with
@@ -19,22 +22,22 @@ Nucleophile.
 
 ## Aldehydes vs Ketones
 
-| Property | Aldehyde | Ketone |
+| Property              | Aldehyde                                                            | Ketone                                                          |
 | --------------------- | ------------------------------------------------------------------- | --------------------------------------------------------------- |
-| General formula | $\mathrm{RCHO}$ | $\mathrm{RCOR}'$ |
-| Terminal C=O | Yes | No |
-| Oxidation | Yes (to carboxylic acid) | No |
-| Tollens' test | Silver mirror | No reaction |
-| Fehling's/Benedict's | Brick-red precipitate | No reaction |
-| Boiling point | Lower (no intermolecular H-bonding between aldehydes) | Higher than comparable aldehyde |
+| General formula       | $\mathrm{RCHO}$                                                     | $\mathrm{RCOR}'$                                                |
+| Terminal C=O          | Yes                                                                 | No                                                              |
+| Oxidation             | Yes (to carboxylic acid)                                            | No                                                              |
+| Tollens' test         | Silver mirror                                                       | No reaction                                                     |
+| Fehling's/Benedict's  | Brick-red precipitate                                               | No reaction                                                     |
+| Boiling point         | Lower (no intermolecular H-bonding between aldehydes)               | Higher than comparable aldehyde                                 |
 | Nucleophilic addition | More reactive (less steric hindrance, +I from only one alkyl group) | Less reactive (more steric hindrance, +I from two alkyl groups) |
 
 The greater reactivity of aldehydes toward nucleophilic addition is explained by two factors:
 
 1. **Steric:** Aldehydes have one small hydrogen atom attached to the carbonyl carbon, providing
- less steric hindrance to nucleophilic attack than the two alkyl groups of ketones.
+   less steric hindrance to nucleophilic attack than the two alkyl groups of ketones.
 2. **Electronic:** The alkyl groups of ketones are electron-donating through the inductive effect,
- reducing the $\delta^+$ charge on the carbonyl carbon and making it less electrophilic.
+   reducing the $\delta^+$ charge on the carbonyl carbon and making it less electrophilic.
 
 ## Nucleophilic Addition
 
@@ -53,7 +56,7 @@ $$
 **Mechanism:**
 
 1. The nucleophile $\mathrm{CN}^-$ (generated in situ from $\mathrm{HCN}$Often with a catalytic
- base) attacks the $\delta^+$ carbonyl carbon.
+   base) attacks the $\delta^+$ carbonyl carbon.
 2. The $\pi$ electrons move onto the oxygen, forming a tetrahedral alkoxide intermediate.
 3. The alkoxide is protonated by $\mathrm{HCN}$Yielding the cyanohydrin.
 
@@ -63,7 +66,7 @@ Above.
 **Synthetic utility:** The $-\mathrm{CN}$ group in the cyanohydrin can be:
 
 - Hydrolysed to $-\mathrm{COOH}$ (extending the carbon chain by one carbon to form a
- hydroxycarboxylic acid).
+  hydroxycarboxylic acid).
 - Reduced to $-\mathrm{CH}_2\mathrm{NH}_2$ (forming an amino alcohol).
 
 Cyanohydrin formation also creates a new chiral centre (if $\mathrm{R} \neq \mathrm{H}$ and
@@ -94,7 +97,7 @@ $\mathrm{LiAlH}_4$ is required (not covered in detail at A-Level).
 ### Mechanism of NaBH$_4$ Reduction
 
 1. The hydride ion ($\mathrm{H}^-$) from $\mathrm{BH}_4^-$ acts as a nucleophile, attacking the
- $\delta^+$ carbonyl carbon.
+   $\delta^+$ carbonyl carbon.
 2. The $\pi$ electrons move onto the oxygen, forming an alkoxide intermediate.
 3. The alkoxide is protonated during the aqueous work-up, giving the alcohol.
 
@@ -278,13 +281,16 @@ $$
 
 ### Two-Step Aldehyde to Carboxylic Acid via Cyanohydrin
 
-The cyanohydrin reaction provides a route to extend the carbon chain and access hydroxycarboxylic acids:
+The cyanohydrin reaction provides a route to extend the carbon chain and access hydroxycarboxylic
+acids:
 
 $$
 \mathrm{RCHO} \xrightarrow{\mathrm{HCN}} \mathrm{RCH}(\mathrm{OH})\mathrm{CN} \xrightarrow{\mathrm{H}_3\mathrm{O}^+} \mathrm{RCH}(\mathrm{OH})\mathrm{COOH}
 $$
 
-The nitrile group is hydrolysed under acidic conditions to a carboxylic acid. This produces an alpha-hydroxycarboxylic acid, which is valuable in both synthesis and biochemistry (e.g. Lactic acid from ethanal).
+The nitrile group is hydrolysed under acidic conditions to a carboxylic acid. This produces an
+alpha-hydroxycarboxylic acid, which is valuable in both synthesis and biochemistry (e.g. Lactic acid
+from ethanal).
 
 ### Aldehyde to Amine via Oxime
 
@@ -300,7 +306,8 @@ $$
 \mathrm{RCH}=\mathrm{NOH} + 4[\mathrm{H}] \xrightarrow{\mathrm{LiAlH}_4} \mathrm{RCH}_2\mathrm{NH}_2 + \mathrm{H}_2\mathrm{O}
 $$
 
-This provides an alternative to nitrile reduction for the synthesis of primary amines from carbonyl compounds.
+This provides an alternative to nitrile reduction for the synthesis of primary amines from carbonyl
+compounds.
 
 ### Protecting Groups with Aldehydes and Ketones
 
@@ -310,63 +317,77 @@ $$
 \mathrm{RCHO} + 2\mathrm{R}'\mathrm{OH} \rightleftharpoons \mathrm{RCH}(\mathrm{OR}')_2 + \mathrm{H}_2\mathrm{O}
 $$
 
-The acetal is stable under basic conditions but reverts to the aldehyde under acidic conditions. This is useful when a molecule contains both an aldehyde and a reactive group that would interfere with subsequent steps.
+The acetal is stable under basic conditions but reverts to the aldehyde under acidic conditions.
+This is useful when a molecule contains both an aldehyde and a reactive group that would interfere
+with subsequent steps.
 
 ### Iodoform Test for Methyl Ketones
 
-The iodoform test detects methyl ketones ($\mathrm{RCOCH}_3$) and ethanol ($\mathrm{CH}_3\mathrm{CH}_2\mathrm{OH}$Which is oxidised to ethanal under the reaction conditions).
+The iodoform test detects methyl ketones ($\mathrm{RCOCH}_3$) and ethanol
+($\mathrm{CH}_3\mathrm{CH}_2\mathrm{OH}$Which is oxidised to ethanal under the reaction conditions).
 
 **Reagents:** Iodine solution and sodium hydroxide.
 
-**Positive result:** Formation of a pale yellow precipitate of iodoform ($\mathrm{CHI}_3$) and a characteristic antiseptic smell.
+**Positive result:** Formation of a pale yellow precipitate of iodoform ($\mathrm{CHI}_3$) and a
+characteristic antiseptic smell.
 
 $$
 \mathrm{RCOCH}_3 + 3\mathrm{I}_2 + 4\mathrm{NaOH} \to \mathrm{RCOONa} + \mathrm{CHI}_3(s) + 3\mathrm{NaI} + 3\mathrm{H}_2\mathrm{O}
 $$
 
-The mechanism involves successive halogenation of the methyl group (the methyl protons are acidic because they are alpha to the carbonyl), followed by nucleophilic attack of $\mathrm{OH}^-$ on the triiodinated carbonyl, cleaving the $\mathrm{C}-\mathrm{C}$ bond.
+The mechanism involves successive halogenation of the methyl group (the methyl protons are acidic
+because they are alpha to the carbonyl), followed by nucleophilic attack of $\mathrm{OH}^-$ on the
+triiodinated carbonyl, cleaving the $\mathrm{C}-\mathrm{C}$ bond.
 
-Ethanol gives a positive result because it is oxidised to ethanal by the $\mathrm{I}_2/\mathrm{NaOH}$ reagent, and ethanal contains the $\mathrm{CH}_3\mathrm{CO}-$ group. Ethanal, propanone, and any methyl ketone give a positive iodoform test.
+Ethanol gives a positive result because it is oxidised to ethanal by the
+$\mathrm{I}_2/\mathrm{NaOH}$ reagent, and ethanal contains the $\mathrm{CH}_3\mathrm{CO}-$ group.
+Ethanal, propanone, and any methyl ketone give a positive iodoform test.
 
 ## Common Pitfalls
 
 1. **Confusing the tests for aldehydes vs ketones.** Tollens', Fehling's, and Benedict's tests
- distinguish aldehydes from ketones (aldehydes are positive; ketones are negative). The 2,4-DNPH
- test is positive for both and confirms the presence of a carbonyl group.
+   distinguish aldehydes from ketones (aldehydes are positive; ketones are negative). The 2,4-DNPH
+   test is positive for both and confirms the presence of a carbonyl group.
 
 2. **Forgetting that $\mathrm{NaBH}_4$ does not reduce carboxylic acids.** $\mathrm{NaBH}_4$ reduces
- aldehydes and ketones to alcohols. It does not reduce carboxylic acids, esters, or amides. The
- stronger reagent $\mathrm{LiAlH}_4$ is needed.
+   aldehydes and ketones to alcohols. It does not reduce carboxylic acids, esters, or amides. The
+   stronger reagent $\mathrm{LiAlH}_4$ is needed.
 
 3. **Omitting the acid work-up after $\mathrm{NaBH}_4$ reduction.** The initial product is an
- alkoxide ($\mathrm{RO}^-$). Acidification is required to protonate it to the alcohol
- ($\mathrm{ROH}$).
+   alkoxide ($\mathrm{RO}^-$). Acidification is required to protonate it to the alcohol
+   ($\mathrm{ROH}$).
 
 4. **Assuming esterification is irreversible.** The reaction of a carboxylic acid with an alcohol
- (acid-catalysed) is an equilibrium. The reaction of an acyl chloride with an alcohol is
- irreversible.
+   (acid-catalysed) is an equilibrium. The reaction of an acyl chloride with an alcohol is
+   irreversible.
 
 5. **Drawing the carboxylate ion with unequal C--O bonds.** Both C--O bonds are equal in length due
- to resonance delocalisation. The correct representation shows the negative charge on both oxygens
- with dashed lines indicating delocalisation.
+   to resonance delocalisation. The correct representation shows the negative charge on both oxygens
+   with dashed lines indicating delocalisation.
 
 6. **Confusing amide formation conditions with ester formation.** Acyl chlorides react with amines
- (no catalyst needed, $\mathrm{HCl}$ produced) and with alcohols (no catalyst needed, $\mathrm{HCl}$
- produced). Carboxylic acids react with amines only with a coupling agent (e.g. DCC); carboxylic
- acids react with alcohols only with an acid catalyst ($\mathrm{H}_2\mathrm{SO}_4$).
+   (no catalyst needed, $\mathrm{HCl}$ produced) and with alcohols (no catalyst needed,
+   $\mathrm{HCl}$ produced). Carboxylic acids react with amines only with a coupling agent (e.g.
+   DCC); carboxylic acids react with alcohols only with an acid catalyst
+   ($\mathrm{H}_2\mathrm{SO}_4$).
 
 ## Nucleophilic Addition Mechanism in Detail
 
 The mechanism of nucleophilic addition to aldehydes and ketones is a two-step process:
 
-**Step 1: Nucleophilic attack.** The nucleophile (e.g. $\mathrm{CN}^-$$\mathrm{H}^-$ from $\mathrm{NaBH}_4$) attacks the electrophilic carbonyl carbon. The $\pi$ electrons of the C=O move onto the oxygen, forming a tetrahedral intermediate with a negative charge on the oxygen.
+**Step 1: Nucleophilic attack.** The nucleophile (e.g. $\mathrm{CN}^-$$\mathrm{H}^-$ from
+$\mathrm{NaBH}_4$) attacks the electrophilic carbonyl carbon. The $\pi$ electrons of the C=O move
+onto the oxygen, forming a tetrahedral intermediate with a negative charge on the oxygen.
 
-**Step 2: Protonation.** The alkoxide is protonated (by water or dilute acid during work-up) to give the final alcohol.
+**Step 2: Protonation.** The alkoxide is protonated (by water or dilute acid during work-up) to give
+the final alcohol.
 
 ### Why Aldehydes Are More Reactive Than Ketones
 
-1. **Steric:** Aldehydes have one small hydrogen atom attached to the carbonyl carbon; ketones have two larger alkyl groups that hinder nucleophilic approach.
-2. **Electronic:** Alkyl groups are electron-donating, reducing the partial positive charge on the carbonyl carbon of ketones and making them less electrophilic.
+1. **Steric:** Aldehydes have one small hydrogen atom attached to the carbonyl carbon; ketones have
+   two larger alkyl groups that hinder nucleophilic approach.
+2. **Electronic:** Alkyl groups are electron-donating, reducing the partial positive charge on the
+   carbonyl carbon of ketones and making them less electrophilic.
 
 The reactivity order is: $\mathrm{HCHO} \gt \mathrm{RCHO} \gt \mathrm{R}_2\mathrm{CO}$.
 
@@ -378,14 +399,17 @@ $$
 \mathrm{CH}_3\mathrm{COCH}_3 \rightleftharpoons \mathrm{CH}_2=\mathrm{C}(\mathrm{OH})\mathrm{CH}_3
 $$
 
-The keto form is almost always overwhelmingly favoured (for simple aldehydes and ketones, the keto:enol ratio is approximately $10^6$--$10^8:1$). However, the enol form is essential for certain reactions:
+The keto form is almost always overwhelmingly favoured (for simple aldehydes and ketones, the
+keto:enol ratio is approximately $10^6$--$10^8:1$). However, the enol form is essential for certain
+reactions:
 
 - **Halogenation at the $\alpha$-position** (as in the iodoform test).
 - **Aldol condensation** (see below).
 
 ### Aldol Condensation
 
-When an aldehyde or ketone with $\alpha$-hydrogens is treated with a base (e.g. Dilute $\mathrm{NaOH}$), two molecules combine in an aldol reaction:
+When an aldehyde or ketone with $\alpha$-hydrogens is treated with a base (e.g. Dilute
+$\mathrm{NaOH}$), two molecules combine in an aldol reaction:
 
 $$
 2\mathrm{CH}_3\mathrm{CHO} \xrightarrow{\mathrm{NaOH}} \mathrm{CH}_3\mathrm{CH}(\mathrm{OH})\mathrm{CH}_2\mathrm{CHO}
@@ -397,43 +421,51 @@ The mechanism:
 2. The enolate attacks the carbonyl carbon of a second molecule (nucleophilic addition).
 3. Protonation gives the $\beta$-hydroxyaldehyde (aldol).
 
-**Dehydration:** The aldol product can lose water on heating to form an $\alpha,\beta$-unsaturated carbonyl compound:
+**Dehydration:** The aldol product can lose water on heating to form an $\alpha,\beta$-unsaturated
+carbonyl compound:
 
 $$
 \mathrm{CH}_3\mathrm{CH}(\mathrm{OH})\mathrm{CH}_2\mathrm{CHO} \xrightarrow{\Delta} \mathrm{CH}_3\mathrm{CH}=\mathrm{CHCHO} + \mathrm{H}_2\mathrm{O}
 $$
 
-This is the **aldol condensation**. Crossed aldol reactions between different aldehydes generally give a mixture of products, limiting their synthetic utility unless one component has no $\alpha$-hydrogens (e.g. Benzaldehyde).
+This is the **aldol condensation**. Crossed aldol reactions between different aldehydes generally
+give a mixture of products, limiting their synthetic utility unless one component has no
+$\alpha$-hydrogens (e.g. Benzaldehyde).
 
 ## 2,4-Dinitrophenylhydrazine (2,4-DNPH) Test in Detail
 
-2,4-DNPH reacts with both aldehydes and ketones to form orange-yellow precipitates (2,4-dinitrophenylhydrazones):
+2,4-DNPH reacts with both aldehydes and ketones to form orange-yellow precipitates
+(2,4-dinitrophenylhydrazones):
 
 $$
 \mathrm{R}_2\mathrm{C}=\mathrm{O} + \mathrm{H}_2\mathrm{NNHC}_6\mathrm{H}_3(\mathrm{NO}_2)_2 \to \mathrm{R}_2\mathrm{C}=\mathrm{NNHC}_6\mathrm{H}_3(\mathrm{NO}_2)_2 + \mathrm{H}_2\mathrm{O}
 $$
 
-The precipitate can be filtered, purified by recrystallisation, and its melting point determined. Comparison with known melting points in a database allows identification of the original carbonyl compound. This is a standard qualitative organic analysis technique.
+The precipitate can be filtered, purified by recrystallisation, and its melting point determined.
+Comparison with known melting points in a database allows identification of the original carbonyl
+compound. This is a standard qualitative organic analysis technique.
 
 ## Spectroscopic Identification of Carbonyl Compounds
 
 ### IR Spectroscopy
 
-| Bond | Absorption range |
-|---|---|
-| C=O (aldehyde) | $1720$--$1740\,\mathrm{cm}^{-1}$ |
-| C=O (ketone) | $1705$--$1725\,\mathrm{cm}^{-1}$ |
+| Bond                  | Absorption range                                                     |
+| --------------------- | -------------------------------------------------------------------- |
+| C=O (aldehyde)        | $1720$--$1740\,\mathrm{cm}^{-1}$                                     |
+| C=O (ketone)          | $1705$--$1725\,\mathrm{cm}^{-1}$                                     |
 | C=O (carboxylic acid) | $1710$--$1720\,\mathrm{cm}^{-1}$ (very broad O--H at $2500$--$3300$) |
-| C=O (ester) | $1735$--$1750\,\mathrm{cm}^{-1}$ |
-| C=O (amide) | $1680$--$1700\,\mathrm{cm}^{-1}$ |
-| C=O (acyl chloride) | $1770$--$1810\,\mathrm{cm}^{-1}$ |
-| Aldehyde C--H stretch | $2820$--$2720\,\mathrm{cm}^{-1}$ (two weak bands, diagnostic) |
+| C=O (ester)           | $1735$--$1750\,\mathrm{cm}^{-1}$                                     |
+| C=O (amide)           | $1680$--$1700\,\mathrm{cm}^{-1}$                                     |
+| C=O (acyl chloride)   | $1770$--$1810\,\mathrm{cm}^{-1}$                                     |
+| Aldehyde C--H stretch | $2820$--$2720\,\mathrm{cm}^{-1}$ (two weak bands, diagnostic)        |
 
 ### NMR Spectroscopy
 
-- The $\alpha$-protons (adjacent to C=O) are deshielded and appear at approximately $2.0$--$2.5\,\mathrm{ppm}$.
+- The $\alpha$-protons (adjacent to C=O) are deshielded and appear at approximately
+  $2.0$--$2.5\,\mathrm{ppm}$.
 - Aldehyde protons appear at $9.0$--$10.0\,\mathrm{ppm}$ (highly deshielded).
-- Carboxylic acid protons appear at $10.0$--$13.0\,\mathrm{ppm}$ (very broad, concentration-dependent).
+- Carboxylic acid protons appear at $10.0$--$13.0\,\mathrm{ppm}$ (very broad,
+  concentration-dependent).
 - The carbonyl carbon in $^{13}\mathrm{C}$ NMR appears at $160$--$220\,\mathrm{ppm}$.
 
 ## Practice Problems
@@ -492,52 +524,67 @@ Observation: vigorous reaction, white solid forms.
 <details>
 <summary>Problem 3</summary>
 
-A compound $\mathrm{D}$ ($\mathrm{C}_5\mathrm{H}_{10}\mathrm{O}$) gives a positive 2,4-DNPH test and a positive iodoform test. $\mathrm{D}$ does not give a silver mirror with Tollens' reagent. Identify $\mathrm{D}$ and explain the observations.
+A compound $\mathrm{D}$ ($\mathrm{C}_5\mathrm{H}_{10}\mathrm{O}$) gives a positive 2,4-DNPH test and
+a positive iodoform test. $\mathrm{D}$ does not give a silver mirror with Tollens' reagent. Identify
+$\mathrm{D}$ and explain the observations.
 
 **Solution:**
 
 The molecular formula $\mathrm{C}_5\mathrm{H}_{10}\mathrm{O}$ has one degree of unsaturation.
 
 - Positive 2,4-DNPH: contains a carbonyl group (C=O).
-- Positive iodoform test: contains a $\mathrm{CH}_3\mathrm{CO}-$ group (methyl ketone or ethanol/ethanal).
+- Positive iodoform test: contains a $\mathrm{CH}_3\mathrm{CO}-$ group (methyl ketone or
+  ethanol/ethanal).
 - Negative Tollens': not an aldehyde.
 
-The compound is a methyl ketone: **pentan-2-one** ($\mathrm{CH}_3\mathrm{COCH}_2\mathrm{CH}_2\mathrm{CH}_3$).
+The compound is a methyl ketone: **pentan-2-one**
+($\mathrm{CH}_3\mathrm{COCH}_2\mathrm{CH}_2\mathrm{CH}_3$).
 
-Verify: $\mathrm{C}_5\mathrm{H}_{10}\mathrm{O}$$\text{DoU} = 1$ (one C=O). Contains $\mathrm{CH}_3\mathrm{CO}-$ group. Not an aldehyde. Correct.
+Verify: $\mathrm{C}_5\mathrm{H}_{10}\mathrm{O}$$\text{DoU} = 1$ (one C=O). Contains
+$\mathrm{CH}_3\mathrm{CO}-$ group. Not an aldehyde. Correct.
 
-Iodoform test: $\mathrm{CH}_3\mathrm{COCH}_2\mathrm{CH}_2\mathrm{CH}_3 + 3\mathrm{I}_2 + 4\mathrm{NaOH} \to \mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{COONa} + \mathrm{CHI}_3(s) + 3\mathrm{NaI} + 3\mathrm{H}_2\mathrm{O}$
+Iodoform test:
+$\mathrm{CH}_3\mathrm{COCH}_2\mathrm{CH}_2\mathrm{CH}_3 + 3\mathrm{I}_2 + 4\mathrm{NaOH} \to \mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{COONa} + \mathrm{CHI}_3(s) + 3\mathrm{NaI} + 3\mathrm{H}_2\mathrm{O}$
 
 </details>
 
 <details>
 <summary>Problem 4</summary>
 
-Write a mechanism for the nucleophilic addition of $\mathrm{HCN}$ to propanone ($\mathrm{CH}_3\mathrm{COCH}_3$). State the stereochemistry of the product.
+Write a mechanism for the nucleophilic addition of $\mathrm{HCN}$ to propanone
+($\mathrm{CH}_3\mathrm{COCH}_3$). State the stereochemistry of the product.
 
 **Solution:**
 
-Step 1: The cyanide ion ($\mathrm{CN}^-$Nucleophile) attacks the electrophilic carbonyl carbon of propanone. The $\pi$ electrons of C=O move onto the oxygen, forming a tetrahedral intermediate with a negative charge on oxygen:
+Step 1: The cyanide ion ($\mathrm{CN}^-$Nucleophile) attacks the electrophilic carbonyl carbon of
+propanone. The $\pi$ electrons of C=O move onto the oxygen, forming a tetrahedral intermediate with
+a negative charge on oxygen:
 
 $$
 \mathrm{CN}^- + \mathrm{CH}_3\mathrm{COCH}_3 \to \mathrm{CH}_3\mathrm{C}(\mathrm{O}^-)(\mathrm{CN})\mathrm{CH}_3
 $$
 
-Step 2: The alkoxide is protonated by $\mathrm{HCN}$ (or water during work-up) to give the cyanohydrin:
+Step 2: The alkoxide is protonated by $\mathrm{HCN}$ (or water during work-up) to give the
+cyanohydrin:
 
 $$
 \mathrm{CH}_3\mathrm{C}(\mathrm{O}^-)(\mathrm{CN})\mathrm{CH}_3 + \mathrm{HCN} \to \mathrm{CH}_3\mathrm{C}(\mathrm{OH})(\mathrm{CN})\mathrm{CH}_3 + \mathrm{CN}^-
 $$
 
-**Stereochemistry:** The product (2-hydroxy-2-methylpropanenitrile) has a chiral centre at the carbon bearing the $-\mathrm{OH}$$-\mathrm{CN}$$-\mathrm{CH}_3$And $-\mathrm{CH}_3$ groups. The nucleophile attacks from either face of the planar carbonyl, giving a racemic mixture (50:50 mixture of enantiomers).
+**Stereochemistry:** The product (2-hydroxy-2-methylpropanenitrile) has a chiral centre at the
+carbon bearing the $-\mathrm{OH}$$-\mathrm{CN}$$-\mathrm{CH}_3$And $-\mathrm{CH}_3$ groups. The
+nucleophile attacks from either face of the planar carbonyl, giving a racemic mixture (50:50 mixture
+of enantiomers).
 
 ## Worked Examples: Carbonyl Chemistry in Depth
 
 ### Example 1: Distinguishing Aldehydes and Ketones Using Chemical Tests
 
-**Four unlabelled bottles contain ethanal, propanone, ethanol, and ethanoic acid. How can they be distinguished?**
+**Four unlabelled bottles contain ethanal, propanone, ethanol, and ethanoic acid. How can they be
+distinguished?**
 
 **Step 1: Tollens' reagent.**
+
 - Ethanal: silver mirror (positive).
 - Propanone: no reaction (negative).
 - Ethanol: no reaction (negative).
@@ -546,6 +593,7 @@ $$
 Tollens' test identifies ethanal. The remaining three are: propanone, ethanol, ethanoic acid.
 
 **Step 2: 2,4-DNPH test.**
+
 - Propanone: orange-yellow precipitate (positive -- contains C=O).
 - Ethanol: no precipitate (negative -- no C=O).
 - Ethanoic acid: orange-yellow precipitate (positive -- contains C=O).
@@ -553,8 +601,10 @@ Tollens' test identifies ethanal. The remaining three are: propanone, ethanol, e
 2,4-DNPH identifies ethanol (negative). Remaining: propanone and ethanoic acid.
 
 **Step 3: Sodium carbonate test.**
+
 - Propanone: no effervescence (ketone, not acidic).
-- Ethanoic acid: effervescence ($\mathrm{CO}_2$ produced from reaction with $\mathrm{Na}_2\mathrm{CO}_3$).
+- Ethanoic acid: effervescence ($\mathrm{CO}_2$ produced from reaction with
+  $\mathrm{Na}_2\mathrm{CO}_3$).
 
 ### Example 2: Nucleophilic Addition Mechanism with NaBH4
 
@@ -564,7 +614,9 @@ $$\mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{CHO} \xrightarrow{\mathrm{NaBH}
 
 **Mechanism:**
 
-Step 1: The hydride ion ($\mathrm{H}^-$) from $\mathrm{BH}_4^-$ attacks the electrophilic carbonyl carbon of butanal. The $\pi$ electrons of C=O move onto the oxygen, forming a tetrahedral alkoxide intermediate:
+Step 1: The hydride ion ($\mathrm{H}^-$) from $\mathrm{BH}_4^-$ attacks the electrophilic carbonyl
+carbon of butanal. The $\pi$ electrons of C=O move onto the oxygen, forming a tetrahedral alkoxide
+intermediate:
 
 $$\mathrm{H}^- + \mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{CHO} \to \mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{CH}(\mathrm{O}^-)\mathrm{H}$$
 
@@ -572,11 +624,14 @@ Step 2: Acid work-up protonates the alkoxide:
 
 $$\mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{CH}(\mathrm{O}^-)\mathrm{H} + \mathrm{H}_3\mathrm{O}^+ \to \mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{CH}_2\mathrm{OH} + \mathrm{H}_2\mathrm{O}$$
 
-**Stereochemistry:** The hydride attacks from either face of the planar carbonyl, giving a racemic mixture if the carbonyl carbon is prochiral (attached to four different groups after addition).
+**Stereochemistry:** The hydride attacks from either face of the planar carbonyl, giving a racemic
+mixture if the carbonyl carbon is prochiral (attached to four different groups after addition).
 
 ### Example 3: Aldol Condensation Calculation
 
-**Ethanal ($\mathrm{CH}_3\mathrm{CHO}$$M = 44.05\,\mathrm{g/mol}$) undergoes an aldol condensation followed by dehydration. Calculate the maximum mass of product that can be obtained from $5.00\,\mathrm{g}$ of ethanal.**
+**Ethanal ($\mathrm{CH}_3\mathrm{CHO}$$M = 44.05\,\mathrm{g/mol}$) undergoes an aldol condensation
+followed by dehydration. Calculate the maximum mass of product that can be obtained from
+$5.00\,\mathrm{g}$ of ethanal.**
 
 $$2\mathrm{CH}_3\mathrm{CHO} \xrightarrow{\mathrm{NaOH}} \mathrm{CH}_3\mathrm{CH}=\mathrm{CHCHO} + \mathrm{H}_2\mathrm{O}$$
 
@@ -586,7 +641,8 @@ From the equation, 2 moles of ethanal give 1 mole of product.
 
 Theoretical moles of product: $\frac{0.1135}{2} = 0.0568\,\mathrm{mol}$
 
-Molar mass of crotonaldehyde ($\mathrm{CH}_3\mathrm{CH}=\mathrm{CHCHO}$): $M = 4(12) + 6(1) + 16 = 70.09\,\mathrm{g/mol}$
+Molar mass of crotonaldehyde ($\mathrm{CH}_3\mathrm{CH}=\mathrm{CHCHO}$):
+$M = 4(12) + 6(1) + 16 = 70.09\,\mathrm{g/mol}$
 
 Maximum mass: $m = 0.0568 \times 70.09 = 3.98\,\mathrm{g}$
 
@@ -602,11 +658,13 @@ Step 2: Acid hydrolysis of the nitrile:
 
 $$\mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}(\mathrm{OH})\mathrm{CN} + 2\mathrm{H}_2\mathrm{O} + \mathrm{H}^+ \xrightarrow{\text{reflux}} \mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}(\mathrm{OH})\mathrm{COOH} + \mathrm{NH}_4^+$$
 
-The product is 2-hydroxybutanoic acid. The cyanohydrin reaction extends the carbon chain by one carbon and introduces both $-\mathrm{OH}$ and $-\mathrm{COOH}$ groups in a single sequence.
+The product is 2-hydroxybutanoic acid. The cyanohydrin reaction extends the carbon chain by one
+carbon and introduces both $-\mathrm{OH}$ and $-\mathrm{COOH}$ groups in a single sequence.
 
 ### Example 5: Acyl Chloride Reactivity
 
-**Write equations for the reactions of benzoyl chloride ($\mathrm{C}_6\mathrm{H}_5\mathrm{COCl}$) with water, ethanol, ammonia, and methylamine.**
+**Write equations for the reactions of benzoyl chloride ($\mathrm{C}_6\mathrm{H}_5\mathrm{COCl}$)
+with water, ethanol, ammonia, and methylamine.**
 
 (a) Hydrolysis:
 
@@ -634,12 +692,18 @@ Observation: White solid of N-methylbenzamide forms.
 
 ### Example 6: Carbonyl IR Interpretation
 
-**An IR spectrum shows a strong absorption at $1735\,\mathrm{cm}^{-1}$ and a broad absorption at $2500$--$3300\,\mathrm{cm}^{-1}$. Identify the functional groups present.**
+**An IR spectrum shows a strong absorption at $1735\,\mathrm{cm}^{-1}$ and a broad absorption at
+$2500$--$3300\,\mathrm{cm}^{-1}$. Identify the functional groups present.**
 
-- $1735\,\mathrm{cm}^{-1}$: C=O stretch in the ester region ($1735$--$1750\,\mathrm{cm}^{-1}$). This could be an ester, aldehyde, or acid chloride. The absence of aldehyde C--H stretches ($2820$--$2720\,\mathrm{cm}^{-1}$) rules out aldehyde.
-- Broad $2500$--$3300\,\mathrm{cm}^{-1}$: This broad, flat absorption is characteristic of the O--H stretch of a carboxylic acid (hydrogen-bonded dimer).
+- $1735\,\mathrm{cm}^{-1}$: C=O stretch in the ester region ($1735$--$1750\,\mathrm{cm}^{-1}$). This
+  could be an ester, aldehyde, or acid chloride. The absence of aldehyde C--H stretches
+  ($2820$--$2720\,\mathrm{cm}^{-1}$) rules out aldehyde.
+- Broad $2500$--$3300\,\mathrm{cm}^{-1}$: This broad, flat absorption is characteristic of the O--H
+  stretch of a carboxylic acid (hydrogen-bonded dimer).
 
-**Conclusion:** The compound contains a carboxylic acid group ($-\mathrm{COOH}$). The C=O absorption at $1735\,\mathrm{cm}^{-1}$ is consistent with a carboxylic acid ($1710$--$1720\,\mathrm{cm}^{-1}$ is more typical, but the exact position depends on the specific compound and solvent).
+**Conclusion:** The compound contains a carboxylic acid group ($-\mathrm{COOH}$). The C=O absorption
+at $1735\,\mathrm{cm}^{-1}$ is consistent with a carboxylic acid ($1710$--$1720\,\mathrm{cm}^{-1}$
+is more typical, but the exact position depends on the specific compound and solvent).
 
 ### Example 7: Multi-Step Synthesis with Carbonyl Compounds
 
@@ -657,20 +721,26 @@ Step 3: Acidification:
 
 $$\mathrm{C}_6\mathrm{H}_5\mathrm{COONa} + \mathrm{HCl} \to \mathrm{C}_6\mathrm{H}_5\mathrm{COOH} + \mathrm{NaCl}$$
 
-The iodoform reaction cleaves a methyl ketone to a carboxylic acid with one fewer carbon, providing a useful route to aromatic carboxylic acids.
+The iodoform reaction cleaves a methyl ketone to a carboxylic acid with one fewer carbon, providing
+a useful route to aromatic carboxylic acids.
 
 ## Practical Techniques for Carbonyl Chemistry
 
 ### Required Practical: Preparation of an Organic Solid (Aspirin) (AQA RP 11)
 
-**Objective:** To prepare aspirin (2-ethanoyloxybenzoic acid) from salicylic acid and ethanoic anhydride.
+**Objective:** To prepare aspirin (2-ethanoyloxybenzoic acid) from salicylic acid and ethanoic
+anhydride.
 
-**Safety:** Ethanoic anhydride is corrosive and a lachrymator. Concentrated phosphoric acid is corrosive. Wear eye protection and gloves. Work in a fume cupboard.
+**Safety:** Ethanoic anhydride is corrosive and a lachrymator. Concentrated phosphoric acid is
+corrosive. Wear eye protection and gloves. Work in a fume cupboard.
 
 **Procedure:**
+
 1. Weigh $5.00\,\mathrm{g}$ of 2-hydroxybenzoic acid (salicylic acid) into a conical flask.
-2. Add $7\,\mathrm{cm}^3$ of ethanoic anhydride and 5 drops of concentrated $\mathrm{H}_3\mathrm{PO}_4$ (catalyst).
-3. Heat the mixture in a water bath at $50$--$60^\circ\mathrm{C}$ for 15 minutes with occasional swirling.
+2. Add $7\,\mathrm{cm}^3$ of ethanoic anhydride and 5 drops of concentrated
+   $\mathrm{H}_3\mathrm{PO}_4$ (catalyst).
+3. Heat the mixture in a water bath at $50$--$60^\circ\mathrm{C}$ for 15 minutes with occasional
+   swirling.
 4. Allow to cool, then add $20\,\mathrm{cm}^3$ of cold water to hydrolyse excess anhydride.
 5. Cool in an ice bath. The crude aspirin precipitates as a white solid.
 6. Filter under reduced pressure using a Buchner funnel.
@@ -678,9 +748,13 @@ The iodoform reaction cleaves a methyl ketone to a carboxylic acid with one fewe
 8. Dry the purified product in an oven at $50^\circ\mathrm{C}$.
 
 **Purification assessment:**
+
 - Determine the melting point of the purified product (pure aspirin melts at $135^\circ\mathrm{C}$).
-- Carry out a 2,4-DNPH test: aspirin contains no free carbonyl group (the $-\mathrm{OH}$ of salicylic acid has been esterified), so 2,4-DNPH should be negative. However, trace salicylic acid impurity would give a positive test.
-- Carry out iron(III) chloride test: salicylic acid gives a violet colour with $\mathrm{FeCl}_3$ (phenol group); pure aspirin does not (the phenol is esterified).
+- Carry out a 2,4-DNPH test: aspirin contains no free carbonyl group (the $-\mathrm{OH}$ of
+  salicylic acid has been esterified), so 2,4-DNPH should be negative. However, trace salicylic acid
+  impurity would give a positive test.
+- Carry out iron(III) chloride test: salicylic acid gives a violet colour with $\mathrm{FeCl}_3$
+  (phenol group); pure aspirin does not (the phenol is esterified).
 
 **Yield calculation:**
 
@@ -693,7 +767,8 @@ $$\text{Percentage yield} = \frac◆LB◆\text{actual mass}◆RB◆◆LB◆6.52�
 <details>
 <summary>Q1 (5 marks)</summary>
 
-Describe a chemical test to distinguish between propanal and propanone. State the reagent, the observation with each compound, and the type of reaction occurring.
+Describe a chemical test to distinguish between propanal and propanone. State the reagent, the
+observation with each compound, and the type of reaction occurring.
 
 **Mark Scheme:**
 
@@ -701,44 +776,58 @@ Describe a chemical test to distinguish between propanal and propanone. State th
 
 **Test:** Tollens' reagent (ammoniacal silver nitrate) (1 mark).
 
-**Procedure:** Add a few drops of Tollens' reagent to each compound in a clean test tube and warm gently in a water bath.
+**Procedure:** Add a few drops of Tollens' reagent to each compound in a clean test tube and warm
+gently in a water bath.
 
-**Propanal:** Silver mirror forms on the test tube (1 mark). The aldehyde is oxidised to the carboxylate ion, and $\mathrm{Ag}^+$ is reduced to metallic silver (1 mark).
+**Propanal:** Silver mirror forms on the test tube (1 mark). The aldehyde is oxidised to the
+carboxylate ion, and $\mathrm{Ag}^+$ is reduced to metallic silver (1 mark).
 
-**Propanone:** No silver mirror forms (no reaction) (1 mark). Ketones are not oxidised by Tollens' reagent (1 mark).
+**Propanone:** No silver mirror forms (no reaction) (1 mark). Ketones are not oxidised by Tollens'
+reagent (1 mark).
 
 </details>
 
 <details>
 <summary>Q2 (6 marks)</summary>
 
-A compound $\mathrm{X}$ has the molecular formula $\mathrm{C}_4\mathrm{H}_8\mathrm{O}$. Compound $\mathrm{X}$ gives a positive 2,4-DNPH test and a positive iodoform test. Compound $\mathrm{X}$ does not give a silver mirror with Tollens' reagent. Deduce the structure of $\mathrm{X}$.
+A compound $\mathrm{X}$ has the molecular formula $\mathrm{C}_4\mathrm{H}_8\mathrm{O}$. Compound
+$\mathrm{X}$ gives a positive 2,4-DNPH test and a positive iodoform test. Compound $\mathrm{X}$ does
+not give a silver mirror with Tollens' reagent. Deduce the structure of $\mathrm{X}$.
 
 **Mark Scheme:**
 
 6 marks:
+
 - Positive 2,4-DNPH: compound $\mathrm{X}$ contains a carbonyl group (C=O) (1 mark).
 - Does not give a silver mirror: compound $\mathrm{X}$ is not an aldehyde; it is a ketone (1 mark).
-- Positive iodoform test: compound $\mathrm{X}$ contains a $\mathrm{CH}_3\mathrm{CO}-$ group (methyl ketone) (1 mark).
-- $\mathrm{C}_4\mathrm{H}_8\mathrm{O}$ has one degree of unsaturation (consistent with one C=O) (1 mark).
+- Positive iodoform test: compound $\mathrm{X}$ contains a $\mathrm{CH}_3\mathrm{CO}-$ group (methyl
+  ketone) (1 mark).
+- $\mathrm{C}_4\mathrm{H}_8\mathrm{O}$ has one degree of unsaturation (consistent with one C=O) (1
+  mark).
 - The compound is butan-2-one: $\mathrm{CH}_3\mathrm{COCH}_2\mathrm{CH}_3$ (1 mark).
-- Verification: $M = 4(12) + 8(1) + 16 = 72\,\mathrm{g/mol}$. Contains $\mathrm{CH}_3\mathrm{CO}-$ group. Not an aldehyde. Correct (1 mark).
+- Verification: $M = 4(12) + 8(1) + 16 = 72\,\mathrm{g/mol}$. Contains $\mathrm{CH}_3\mathrm{CO}-$
+  group. Not an aldehyde. Correct (1 mark).
 
 </details>
 
 <details>
 <summary>Q3 (5 marks)</summary>
 
-Write the mechanism for the reaction of propanal with hydrogen cyanide. Explain why the product is formed as a racemic mixture.
+Write the mechanism for the reaction of propanal with hydrogen cyanide. Explain why the product is
+formed as a racemic mixture.
 
 **Mark Scheme:**
 
 5 marks:
+
 - The cyanide ion ($\mathrm{CN}^-$) attacks the electrophilic carbonyl carbon of propanal (1 mark).
 - The $\pi$ electrons move onto the oxygen, forming a tetrahedral alkoxide intermediate (1 mark).
-- The alkoxide is protonated by $\mathrm{HCN}$ (or water during work-up) to give the cyanohydrin (1 mark).
-- The carbonyl carbon is prochiral (after addition, it bears four different groups: $-\mathrm{OH}$$-\mathrm{CN}$$-\mathrm{CH}_3$And $-\mathrm{CH}_2\mathrm{CH}_3$) (1 mark).
-- The $\mathrm{CN}^-$ can attack from either face of the planar carbonyl with equal probability, producing a 50:50 mixture of enantiomers (racemate) (1 mark).
+- The alkoxide is protonated by $\mathrm{HCN}$ (or water during work-up) to give the cyanohydrin (1
+  mark).
+- The carbonyl carbon is prochiral (after addition, it bears four different groups:
+  $-\mathrm{OH}$$-\mathrm{CN}$$-\mathrm{CH}_3$And $-\mathrm{CH}_2\mathrm{CH}_3$) (1 mark).
+- The $\mathrm{CN}^-$ can attack from either face of the planar carbonyl with equal probability,
+  producing a 50:50 mixture of enantiomers (racemate) (1 mark).
 
 </details>
 
@@ -750,9 +839,14 @@ Explain why $\mathrm{NaBH}_4$ reduces aldehydes and ketones but does not reduce 
 **Mark Scheme:**
 
 4 marks:
-- $\mathrm{NaBH}_4$ is a source of hydride ions ($\mathrm{H}^-$), which act as nucleophiles attacking the electrophilic carbonyl carbon (1 mark).
-- In aldehydes and ketones, the carbonyl carbon is sufficiently electrophilic (partially positive due to the polar C=O bond) for nucleophilic attack (1 mark).
-- In carboxylic acids, the carbonyl carbon is less electrophilic because the $-\mathrm{OH}$ group donates electron density through resonance, and the acid protonates the $\mathrm{BH}_4^-$Destroying the reducing agent before it can attack (1 mark).
+
+- $\mathrm{NaBH}_4$ is a source of hydride ions ($\mathrm{H}^-$), which act as nucleophiles
+  attacking the electrophilic carbonyl carbon (1 mark).
+- In aldehydes and ketones, the carbonyl carbon is sufficiently electrophilic (partially positive
+  due to the polar C=O bond) for nucleophilic attack (1 mark).
+- In carboxylic acids, the carbonyl carbon is less electrophilic because the $-\mathrm{OH}$ group
+  donates electron density through resonance, and the acid protonates the
+  $\mathrm{BH}_4^-$Destroying the reducing agent before it can attack (1 mark).
 - A stronger reducing agent such as $\mathrm{LiAlH}_4$ is needed for carboxylic acids (1 mark).
 
 </details>
@@ -760,17 +854,23 @@ Explain why $\mathrm{NaBH}_4$ reduces aldehydes and ketones but does not reduce 
 <details>
 <summary>Q5 (5 marks)</summary>
 
-Ethyl ethanoate can be prepared by two different methods: (a) from ethanoic acid and ethanol using an acid catalyst, and (b) from ethanoyl chloride and ethanol. Compare these two methods.
+Ethyl ethanoate can be prepared by two different methods: (a) from ethanoic acid and ethanol using
+an acid catalyst, and (b) from ethanoyl chloride and ethanol. Compare these two methods.
 
 **Mark Scheme:**
 
 5 marks:
 
-Method (a): Reversible equilibrium; acid catalyst ($\mathrm{H}_2\mathrm{SO}_4$) required; heat under reflux; excess of one reactant needed to drive equilibrium; slower reaction (1 mark for description, 1 mark for equilibrium/reversibility).
+Method (a): Reversible equilibrium; acid catalyst ($\mathrm{H}_2\mathrm{SO}_4$) required; heat under
+reflux; excess of one reactant needed to drive equilibrium; slower reaction (1 mark for description,
+1 mark for equilibrium/reversibility).
 
-Method (b): Irreversible; no catalyst required; rapid at room temperature; HCl gas evolved; higher yield (1 mark for description, 1 mark for irreversibility).
+Method (b): Irreversible; no catalyst required; rapid at room temperature; HCl gas evolved; higher
+yield (1 mark for description, 1 mark for irreversibility).
 
-Comparison: Method (b) gives a higher yield and does not require heating, but uses the more expensive and hazardous ethanoyl chloride. Method (a) uses cheaper reagents but gives a lower yield unless excess reagent is used or water is removed (1 mark).
+Comparison: Method (b) gives a higher yield and does not require heating, but uses the more
+expensive and hazardous ethanoyl chloride. Method (a) uses cheaper reagents but gives a lower yield
+unless excess reagent is used or water is removed (1 mark).
 
 </details>
 
@@ -778,27 +878,31 @@ Comparison: Method (b) gives a higher yield and does not require heating, but us
 
 ### Key Disconnections
 
-| Target | Disconnection | Forward reagents |
-|---|---|---|
-| Primary alcohol | $\mathrm{C-OH}$ from aldehyde | Aldehyde + $\mathrm{NaBH}_4$ |
-| Secondary alcohol | $\mathrm{C-OH}$ from ketone | Ketone + $\mathrm{NaBH}_4$ |
-| Carboxylic acid | $\mathrm{C-COOH}$ from ester | Ester + $\mathrm{NaOH}$Reflux |
-| Ester | $\mathrm{C-O-CO}$ | $\mathrm{RCOCl} + \mathrm{R'OH}$ |
-| Amide | $\mathrm{C-NH}$ | $\mathrm{RCOCl} + \mathrm{NH}_3$ |
-| Cyanohydrin | $\mathrm{C(CN)(OH)}$ | Aldehyde/ketone + $\mathrm{HCN}$ |
-| $\alpha,\beta$-unsaturated carbonyl | Aldol dehydration | 2 aldehydes + $\mathrm{NaOH}$$\Delta$ |
+| Target                              | Disconnection                 | Forward reagents                      |
+| ----------------------------------- | ----------------------------- | ------------------------------------- |
+| Primary alcohol                     | $\mathrm{C-OH}$ from aldehyde | Aldehyde + $\mathrm{NaBH}_4$          |
+| Secondary alcohol                   | $\mathrm{C-OH}$ from ketone   | Ketone + $\mathrm{NaBH}_4$            |
+| Carboxylic acid                     | $\mathrm{C-COOH}$ from ester  | Ester + $\mathrm{NaOH}$Reflux         |
+| Ester                               | $\mathrm{C-O-CO}$             | $\mathrm{RCOCl} + \mathrm{R'OH}$      |
+| Amide                               | $\mathrm{C-NH}$               | $\mathrm{RCOCl} + \mathrm{NH}_3$      |
+| Cyanohydrin                         | $\mathrm{C(CN)(OH)}$          | Aldehyde/ketone + $\mathrm{HCN}$      |
+| $\alpha,\beta$-unsaturated carbonyl | Aldol dehydration             | 2 aldehydes + $\mathrm{NaOH}$$\Delta$ |
 
 ### Worked Retrosynthesis
 
-**Target:** $\mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}(\mathrm{OH})\mathrm{COOH}$ (2-hydroxybutanoic acid)
+**Target:** $\mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}(\mathrm{OH})\mathrm{COOH}$ (2-hydroxybutanoic
+acid)
 
 Retrosynthetic analysis:
 
-1. The $-\mathrm{COOH}$ could come from hydrolysis of a nitrile. Disconnect: $\mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}(\mathrm{OH})\mathrm{COOH} \Leftarrow \mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}(\mathrm{OH})\mathrm{CN}$
+1. The $-\mathrm{COOH}$ could come from hydrolysis of a nitrile. Disconnect:
+   $\mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}(\mathrm{OH})\mathrm{COOH} \Leftarrow \mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}(\mathrm{OH})\mathrm{CN}$
 
-2. The cyanohydrin comes from nucleophilic addition of $\mathrm{HCN}$ to an aldehyde: $\mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}(\mathrm{OH})\mathrm{CN} \Leftarrow \mathrm{CH}_3\mathrm{CH}_2\mathrm{CHO} + \mathrm{HCN}$
+2. The cyanohydrin comes from nucleophilic addition of $\mathrm{HCN}$ to an aldehyde:
+   $\mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}(\mathrm{OH})\mathrm{CN} \Leftarrow \mathrm{CH}_3\mathrm{CH}_2\mathrm{CHO} + \mathrm{HCN}$
 
-3. Propanal comes from oxidation of propan-1-ol: $\mathrm{CH}_3\mathrm{CH}_2\mathrm{CHO} \Leftarrow \mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{OH} + [\mathrm{O}]$
+3. Propanal comes from oxidation of propan-1-ol:
+   $\mathrm{CH}_3\mathrm{CH}_2\mathrm{CHO} \Leftarrow \mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{OH} + [\mathrm{O}]$
 
 **Forward synthesis:**
 
@@ -806,14 +910,15 @@ $$\mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{OH} \xrightarrow{[\mathrm{O}],\
 
 ---
 
-:::tip
-Diagnostic Test
-Ready to test your understanding of **Carbonyl Compounds**? The [diagnostic test](/docs/alevel/chemistry/diagnostics/diag-carbonyl-arenes-amines) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
+:::tip Diagnostic Test Ready to test your understanding of **Carbonyl Compounds**? The
+[diagnostic test](/docs/alevel/chemistry/diagnostics/diag-carbonyl-arenes-amines) contains the
+hardest questions within the A-Level specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Carbonyl Compounds with other chemistry topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Carbonyl
+Compounds with other chemistry topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/alevel/chemistry/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/alevel/chemistry/diagnostics/diagnostic-guide) for instructions on
+self-marking and building a personal test matrix. :::
 
 </details>
 

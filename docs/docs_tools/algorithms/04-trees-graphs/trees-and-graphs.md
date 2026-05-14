@@ -1,24 +1,27 @@
 ---
 id: trees-and-graphs
 title: Trees and Graphs
-description: "Trees and Graphs — Tree Terminology; Binary Trees; Classifications; Node Definition with worked examples and exam-style questions."
+description:
+  'Trees and Graphs — Tree Terminology; Binary Trees; Classifications; Node Definition with worked
+  examples and exam-style questions.'
 slug: trees-and-graphs
 ---
+
 ## Tree Terminology
 
-A tree is a connected, acyclic, undirected graph. In computer science, trees are rooted and
-Directed (parent to child).
+A tree is a connected, acyclic, undirected graph. In computer science, trees are rooted and Directed
+(parent to child).
 
-| Term | Definition |
+| Term        | Definition                                                         |
 | ----------- | ------------------------------------------------------------------ |
-| **Root** | The topmost node, with no parent |
-| **Leaf** | A node with no children |
-| **Depth** | Distance from the root to a node (root has depth 0) |
-| **Height** | Distance from a node to its deepest descendant (leaf has height 0) |
-| **Level** | All nodes at the same depth |
-| **Subtree** | A node and all its descendants |
-| **Degree** | Number of children of a node |
-| **Path** | Sequence of nodes from one node to another |
+| **Root**    | The topmost node, with no parent                                   |
+| **Leaf**    | A node with no children                                            |
+| **Depth**   | Distance from the root to a node (root has depth 0)                |
+| **Height**  | Distance from a node to its deepest descendant (leaf has height 0) |
+| **Level**   | All nodes at the same depth                                        |
+| **Subtree** | A node and all its descendants                                     |
+| **Degree**  | Number of children of a node                                       |
+| **Path**    | Sequence of nodes from one node to another                         |
 
 ## Binary Trees
 
@@ -26,12 +29,12 @@ A binary tree is a tree where each node has at most two children: left and right
 
 ### Classifications
 
-| Type | Property | Nodes in tree of height $h$ |
+| Type         | Property                                                                  | Nodes in tree of height $h$ |
 | ------------ | ------------------------------------------------------------------------- | --------------------------- |
-| **Full** | Every node has 0 or 2 children | $2h + 1$ (odd) |
-| **Complete** | All levels filled except possibly the last, which is filled left to right | $2^h$ to $2^{h+1} - 1$ |
-| **Perfect** | All internal nodes have 2 children, all leaves at same depth | $2^{h+1} - 1$ |
-| **Balanced** | Height is $O(\log n)$ | Varies |
+| **Full**     | Every node has 0 or 2 children                                            | $2h + 1$ (odd)              |
+| **Complete** | All levels filled except possibly the last, which is filled left to right | $2^h$ to $2^{h+1} - 1$      |
+| **Perfect**  | All internal nodes have 2 children, all leaves at same depth              | $2^{h+1} - 1$               |
+| **Balanced** | Height is $O(\log n)$                                                     | Varies                      |
 
 ### Node Definition
 
@@ -258,13 +261,13 @@ def bst_delete(root, val):
 
 ### BST Complexity
 
-| Operation | Average (balanced) | Worst (degenerate) |
+| Operation          | Average (balanced) | Worst (degenerate) |
 | ------------------ | ------------------ | ------------------ |
-| Search | $O(\log n)$ | $O(n)$ |
-| Insert | $O(\log n)$ | $O(n)$ |
-| Delete | $O(\log n)$ | $O(n)$ |
-| Min/Max | $O(\log n)$ | $O(n)$ |
-| In-order traversal | $O(n)$ | $O(n)$ |
+| Search             | $O(\log n)$        | $O(n)$             |
+| Insert             | $O(\log n)$        | $O(n)$             |
+| Delete             | $O(\log n)$        | $O(n)$             |
+| Min/Max            | $O(\log n)$        | $O(n)$             |
+| In-order traversal | $O(n)$             | $O(n)$             |
 
 ### Validate BST
 
@@ -342,21 +345,21 @@ def rotate_left(x):
     return y
 ```
 
-| Imbalance Case | Condition | Fix |
+| Imbalance Case | Condition                     | Fix                                             |
 | -------------- | ----------------------------- | ----------------------------------------------- |
-| Left-Left | bf(node) = 2, bf(left) = 1 | Right rotate at node |
-| Right-Right | bf(node) = -2, bf(right) = -1 | Left rotate at node |
-| Left-Right | bf(node) = 2, bf(left) = -1 | Left rotate at left, then right rotate at node |
-| Right-Left | bf(node) = -2, bf(right) = 1 | Right rotate at right, then left rotate at node |
+| Left-Left      | bf(node) = 2, bf(left) = 1    | Right rotate at node                            |
+| Right-Right    | bf(node) = -2, bf(right) = -1 | Left rotate at node                             |
+| Left-Right     | bf(node) = 2, bf(left) = -1   | Left rotate at left, then right rotate at node  |
+| Right-Left     | bf(node) = -2, bf(right) = 1  | Right rotate at right, then left rotate at node |
 
 ### Complexity
 
-| Operation | Time |
+| Operation               | Time        |
 | ----------------------- | ----------- |
-| Search | $O(\log n)$ |
-| Insert | $O(\log n)$ |
-| Delete | $O(\log n)$ |
-| Rotations per operation | At most 2 |
+| Search                  | $O(\log n)$ |
+| Insert                  | $O(\log n)$ |
+| Delete                  | $O(\log n)$ |
+| Rotations per operation | At most 2   |
 
 AVL trees guarantee $O(\log n)$ height, which is at most $1.44 \log_2(n+2) - 0.328$. In practice,
 AVL trees are taller and require more rotations than red-black trees, but provide faster lookups
@@ -373,8 +376,8 @@ A red-black tree is a self-balancing BST with the following properties:
 5. Every path from a node to its descendant NIL nodes contains the same number of black nodes
 
 Red-black trees guarantee $O(\log n)$ height — specifically, the height is at most $2 \log_2(n+1)$.
-This is less strict than AVL trees, meaning red-black trees are shorter but may have
-Slower individual lookups.
+This is less strict than AVL trees, meaning red-black trees are shorter but may have Slower
+individual lookups.
 
 Red-black trees are used in the Linux kernel (for `CFS` scheduler, `mm` memory management), Java's
 `TreeMap`/`TreeSet`C++ `std::map`/`std::set`And many other standard library implementations.
@@ -403,15 +406,15 @@ A B-tree of order $m$ (minimum degree) satisfies:
 
 A database index stored as a binary tree with 10 million rows has height $\approx 24$. Each node
 Access is a disk seek (~10ms), so a lookup costs ~240ms. A B-tree with order $m = 100$ (fitting in a
-4KB disk page) has height $\approx 3$So a lookup costs ~30ms. This 8x improvement is why every
-Major database uses B-tree variants (B+ trees) for indexing.
+4KB disk page) has height $\approx 3$So a lookup costs ~30ms. This 8x improvement is why every Major
+database uses B-tree variants (B+ trees) for indexing.
 
-| Structure | Height for $n = 10^7$ | Disk seeks |
+| Structure          | Height for $n = 10^7$ | Disk seeks |
 | ------------------ | --------------------- | ---------- |
-| Binary tree | ~24 | ~24 |
-| AVL tree | ~24 | ~24 |
-| B-tree (order 100) | ~3 | ~3 |
-| B-tree (order 400) | ~2 | ~2 |
+| Binary tree        | ~24                   | ~24        |
+| AVL tree           | ~24                   | ~24        |
+| B-tree (order 100) | ~3                    | ~3         |
+| B-tree (order 400) | ~2                    | ~2         |
 
 ## Heaps
 
@@ -452,14 +455,14 @@ def _sift_down(arr, n, i):
 
 ### Applications of Heaps
 
-| Application | Heap Type | Key Idea |
+| Application          | Heap Type             | Key Idea                      |
 | -------------------- | --------------------- | ----------------------------- |
-| Priority queue | Min-heap or max-heap | Extract min/max efficiently |
-| Heapsort | Max-heap (ascending) | Repeatedly extract max |
-| Median maintenance | Two heaps (min + max) | Balance heaps for median |
-| K largest elements | Min-heap of size $k$ | Keep smallest of the top $k$ |
-| Dijkstra's algorithm | Min-heap | Always process closest vertex |
-| Huffman coding | Min-heap | Build optimal prefix code |
+| Priority queue       | Min-heap or max-heap  | Extract min/max efficiently   |
+| Heapsort             | Max-heap (ascending)  | Repeatedly extract max        |
+| Median maintenance   | Two heaps (min + max) | Balance heaps for median      |
+| K largest elements   | Min-heap of size $k$  | Keep smallest of the top $k$  |
+| Dijkstra's algorithm | Min-heap              | Always process closest vertex |
+| Huffman coding       | Min-heap              | Build optimal prefix code     |
 
 ## Tries (Prefix Trees)
 
@@ -528,14 +531,14 @@ class Trie:
 
 ### Trie vs Hash Set for Strings
 
-| Operation | Trie | Hash Set |
-| --------------------- | ----------------------- | ---------------------- |
-| Insert | $O(k)$ | $O(k)$ |
-| Exact search | $O(k)$ | $O(k)$ average |
-| Prefix search | $O(k)$ | $O(n \cdot k)$ |
-| Space | $O(\mathrm{total chars{})$ | $O(n \cdot k)$ |
-| Min string prefix | $O(k)$ | Not supported |
-| Longest common prefix | $O(k)$ | Not directly supported |
+| Operation             | Trie                       | Hash Set               |
+| --------------------- | -------------------------- | ---------------------- |
+| Insert                | $O(k)$                     | $O(k)$                 |
+| Exact search          | $O(k)$                     | $O(k)$ average         |
+| Prefix search         | $O(k)$                     | $O(n \cdot k)$         |
+| Space                 | $O(\mathrm{total chars{})$ | $O(n \cdot k)$         |
+| Min string prefix     | $O(k)$                     | Not supported          |
+| Longest common prefix | $O(k)$                     | Not directly supported |
 
 Tries are the right choice when you need prefix-based operations: autocomplete, spell checking, IP
 Routing (longest prefix match), and word games.
@@ -593,10 +596,10 @@ class GraphMatrix:
             self.matrix[v][u] = weight
 ```
 
-| Representation | Space | Check edge $u$-$v$ | Iterate neighbours | Sparse graph |
-| ---------------- | ---------- | --------------------- | --------------------- | ------------ |
-| Adjacency list | $O(V + E)$ | $O(\mathrm{degree{}(u))$ | $O(\mathrm{degree{}(u))$ | Efficient |
-| Adjacency matrix | $O(V^2)$ | $O(1)$ | $O(V)$ | Wasteful |
+| Representation   | Space      | Check edge $u$-$v$       | Iterate neighbours       | Sparse graph |
+| ---------------- | ---------- | ------------------------ | ------------------------ | ------------ |
+| Adjacency list   | $O(V + E)$ | $O(\mathrm{degree{}(u))$ | $O(\mathrm{degree{}(u))$ | Efficient    |
+| Adjacency matrix | $O(V^2)$   | $O(1)$                   | $O(V)$                   | Wasteful     |
 
 :::info
 
@@ -720,15 +723,15 @@ def dfs_iterative(graph, start):
 
 ### BFS vs DFS
 
-| Property | BFS | DFS |
+| Property               | BFS                       | DFS                  |
 | ---------------------- | ------------------------- | -------------------- |
-| Data structure | Queue | Stack / recursion |
-| Space | $O(V)$ (queue) | $O(V)$ (stack) |
-| Shortest path | Yes (unweighted) | No |
+| Data structure         | Queue                     | Stack / recursion    |
+| Space                  | $O(V)$ (queue)            | $O(V)$ (stack)       |
+| Shortest path          | Yes (unweighted)          | No                   |
 | Memory for deep graphs | Uses more (wide frontier) | Uses less (one path) |
-| Topological sort | With Kahn's algorithm | With post-order |
-| Cycle detection | Yes | Yes |
-| Connected components | Yes | Yes |
+| Topological sort       | With Kahn's algorithm     | With post-order      |
+| Cycle detection        | Yes                       | Yes                  |
+| Connected components   | Yes                       | Yes                  |
 
 ## Topological Sort
 
@@ -924,8 +927,8 @@ Which compress chains of single-child nodes.
 
 A DAG can have multiple disconnected components. Both Kahn's algorithm and DFS-based topological
 Sort must process all vertices, not just those reachable from a single start vertex. Kahn's
-Algorithm handles this (all vertices with in-degree 0 are enqueued initially). DFS-based
-Sort must loop over all vertices.
+Algorithm handles this (all vertices with in-degree 0 are enqueued initially). DFS-based Sort must
+loop over all vertices.
 
 ## Summary
 

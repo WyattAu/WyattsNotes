@@ -1,6 +1,8 @@
 ---
 title: Electromagnetism Unification
-description: "A-Level Physics notes on Electromagnetism Unification: 1. Maxwell's Equations (Integral Form); Gauss's Law for Electricity; Gauss's Law for Magnetism."
+description:
+  "A-Level Physics notes on Electromagnetism Unification: 1. Maxwell's Equations (Integral Form);
+  Gauss's Law for Electricity; Gauss's Law for Magnetism."
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Physics
@@ -9,11 +11,10 @@ categories:
   - Physics
 slug: electromagnetism-unification
 ---
+
 ## Electromagnetism Unification
 
-:::info
-Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4
-:::
+:::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4 :::
 
 <PhetSimulation simulationId="faraday-electromagnetic-lab" title="Faraday's Electromagnetic Lab" />
 
@@ -67,9 +68,7 @@ Restore this symmetry — and in doing so, predicted electromagnetic waves.
 Oscillating electric and magnetic fields perpendicular to each other and to the direction of
 Propagation, travelling at speed $c = 1/\sqrt◆LB◆\mu_0\varepsilon_0◆RB◆$ in vacuum.
 
-:::info
-Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 Mod 6 | CIE P4
-:::
+:::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 Mod 6 | CIE P4 :::
 
 AQA expects qualitative understanding of all four Maxwell's equations and their physical
 Significance. Edexcel and CIE require the full derivation of $c$ from first principles. OCR (A)
@@ -78,8 +77,7 @@ Formalism. CIE may also ask about the displacement current explicitly.
 
 ## 2. Derivation of the Speed of Electromagnetic Waves
 
-Consider electromagnetic waves propagating in free space (no charges, no currents: $Q = 0$
-$I = 0$).
+Consider electromagnetic waves propagating in free space (no charges, no currents: $Q = 0$ $I = 0$).
 
 In free space, Maxwell's equations become:
 
@@ -97,14 +95,15 @@ $$E_y \cdot l = -\frac{d}{dt}(B_z \cdot l \cdot \Delta x)$$
 
 $$E_y = -\frac◆LB◆\partial B_z◆RB◆◆LB◆\partial t◆RB◆\Delta x$$
 
-In the limit $\Delta x \to 0$: $\frac◆LB◆\partial E_y◆RB◆◆LB◆\partial x◆RB◆ = -\frac◆LB◆\partial B_z◆RB◆◆LB◆\partial t◆RB◆$
-... (i)
+In the limit $\Delta x \to 0$:
+$\frac◆LB◆\partial E_y◆RB◆◆LB◆\partial x◆RB◆ = -\frac◆LB◆\partial B_z◆RB◆◆LB◆\partial t◆RB◆$ ... (i)
 
 Applying the Ampere-Maxwell law to a rectangular loop in the $xz$-plane:
 
 $$B_z \cdot l = \mu_0\varepsilon_0\frac{d}{dt}(E_y \cdot l \cdot \Delta x)$$
 
-$$\frac◆LB◆\partial B_z◆RB◆◆LB◆\partial x◆RB◆ = \mu_0\varepsilon_0\frac◆LB◆\partial E_y◆RB◆◆LB◆\partial t◆RB◆$$ ... (ii)
+$$\frac◆LB◆\partial B_z◆RB◆◆LB◆\partial x◆RB◆ = \mu_0\varepsilon_0\frac◆LB◆\partial E_y◆RB◆◆LB◆\partial t◆RB◆$$
+... (ii)
 
 Differentiating (i) with respect to $x$ and (ii) with respect to $t$:
 
@@ -156,9 +155,9 @@ For a plane wave $E_y = E_0\sin(kx - \omega t)$Equation (i) gives:
 
 $$kE_0\cos(kx - \omega t) = \omega B_0\cos(kx - \omega t)$$
 
-So $\frac{E_0}{B_0} = \frac◆LB◆\omega◆RB◆◆LB◆k◆RB◆ = c$. This confirms that the electric and magnetic field
-Amplitudes are related by a fixed ratio — a direct consequence of Maxwell's equations, not an
-Independent assumption.
+So $\frac{E_0}{B_0} = \frac◆LB◆\omega◆RB◆◆LB◆k◆RB◆ = c$. This confirms that the electric and
+magnetic field Amplitudes are related by a fixed ratio — a direct consequence of Maxwell's
+equations, not an Independent assumption.
 
 ### Energy in Electromagnetic Waves
 
@@ -181,8 +180,8 @@ $$\langle S \rangle = \frac◆LB◆E_0 B_0◆RB◆◆LB◆2\mu_0◆RB◆ = \frac
 
 **Real-world example.** A typical laser pointer emits about 5 mW of power through a beam of diameter
 2 mm. The intensity is $I = P/A = 5 \times 10^{-3} / (\pi \times 10^{-6}) \approx 1600$ W m$^{-2}$.
-From this, $E_0 = \sqrt◆LB◆2I/(\mu_0 c)◆RB◆ \approx 1100$ V m$^{-1}$ — a surprisingly large electric field
-From a small device.
+From this, $E_0 = \sqrt◆LB◆2I/(\mu_0 c)◆RB◆ \approx 1100$ V m$^{-1}$ — a surprisingly large electric
+field From a small device.
 
 ### Radiation Pressure
 
@@ -204,18 +203,16 @@ In 2019.
 From Maxwell's equations, EM waves have these properties:
 
 1. **Transverse**: $\mathbf{E}$ and $\mathbf{B}$ are perpendicular to each other and to the
- direction of propagation
+   direction of propagation
 2. **Speed**: $c = 1/\sqrt◆LB◆\mu_0\varepsilon_0◆RB◆$ in vacuum (independent of frequency)
 3. **Relation between fields**: $E = cB$ (the ratio $E/B = c$ is constant)
 4. **Self-propagating**: no medium required
-5. **Carry energy**: the Poynting vector $\mathbf{S} = \frac◆LB◆1◆RB◆◆LB◆\mu_0◆RB◆\mathbf{E} \times \mathbf{B}$
- gives the energy flux
+5. **Carry energy**: the Poynting vector
+   $\mathbf{S} = \frac◆LB◆1◆RB◆◆LB◆\mu_0◆RB◆\mathbf{E} \times \mathbf{B}$ gives the energy flux
 6. **Carry momentum**: radiation pressure $P = I/c$ for total absorption, $P = 2I/c$ for perfect
- reflection
+   reflection
 
-:::info
-Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 Mod 6 | CIE P4
-:::
+:::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 Mod 6 | CIE P4 :::
 
 AQA and OCR (A) focus on the qualitative properties listed above. Edexcel and CIE may ask for the
 $E = cB$ relationship quantitatively. The Poynting vector is beyond most A Level syllabi but
@@ -230,25 +227,22 @@ Fields propagating at speed $c$. The only difference is the frequency (and hence
 
 $$c = f\lambda$$
 
-| Band | $f$ (Hz) | Origin |
+| Band      | $f$ (Hz)                                | Origin                                   |
 | --------- | --------------------------------------- | ---------------------------------------- |
-| Radio | $< 3 \times 10^9$ | Oscillating charges in aerials |
-| Microwave | $10^9$–$10^{12}$ | Klystrons, molecular rotation |
-| IR | $10^{12}$–$10^{14}$ | Molecular vibration |
-| Visible | $4 \times 10^{14}$–$7.5 \times 10^{14}$ | Atomic electron transitions |
-| UV | $10^{15}$–$10^{17}$ | Electron transitions (outer) |
-| X-ray | $10^{16}$–$10^{19}$ | Electron deceleration, inner transitions |
-| Gamma | $> 10^{19}$ | Nuclear transitions |
+| Radio     | $< 3 \times 10^9$                       | Oscillating charges in aerials           |
+| Microwave | $10^9$–$10^{12}$                        | Klystrons, molecular rotation            |
+| IR        | $10^{12}$–$10^{14}$                     | Molecular vibration                      |
+| Visible   | $4 \times 10^{14}$–$7.5 \times 10^{14}$ | Atomic electron transitions              |
+| UV        | $10^{15}$–$10^{17}$                     | Electron transitions (outer)             |
+| X-ray     | $10^{16}$–$10^{19}$                     | Electron deceleration, inner transitions |
+| Gamma     | $> 10^{19}$                             | Nuclear transitions                      |
 
 Maxwell's unification showed that all these phenomena are described by the same four equations. The
 Quantum nature of EM radiation (photons) would later be explained by Planck and Einstein, but the
 Classical wave description remains valid and powerful.
 
-:::info
-Info
-CIE. AQA and OCR (A) expect you to know the result and its significance but may not require the full
-Derivation.
-:::
+:::info Info CIE. AQA and OCR (A) expect you to know the result and its significance but may not
+require the full Derivation. :::
 
 ## 5. Faraday's Law — Applications and Lenz's Law Intuition
 
@@ -318,9 +312,7 @@ It provides smooth deceleration without mechanical contact.
 Object, resistively heating it. Used in induction cooktops (where the pan itself becomes the heat
 Source) and in industrial furnaces for melting metals.
 
-:::info
-Board Coverage AQA Paper 2 | Edexcel CP6 | OCR (A) Paper 2 Mod 6 | CIE P4
-:::
+:::info Board Coverage AQA Paper 2 | Edexcel CP6 | OCR (A) Paper 2 Mod 6 | CIE P4 :::
 
 AQA requires quantitative treatment of transformers (efficiency, turns ratio) and generators.
 Edexcel covers motional `EMF` in detail and includes the rotating coil derivation. CIE P4 requires
@@ -378,8 +370,7 @@ V.
 This tiny voltage in metals explains why Hall probes use **semiconductors** (with much lower $n$) to
 Get measurable voltages.
 
-:::info
-Info
+:::info Info
 
 CIE P4 covers the Hall effect explicitly, including the derivation of $V_H = BI/(ntq)$. AQA mentions
 Hall probes as a method of measuring magnetic fields but does not require the full theory. Edexcel
@@ -394,33 +385,32 @@ Isotopic masses and abundances.
 ### Stages of Operation
 
 1. **Ionisation.** Atoms are ionised (by electron bombardment or laser), producing positive ions of
- charge $q = +e$ (or $+2e$Etc.).
-2. **Acceleration.** Ions are accelerated through a potential difference $V$Gaining kinetic
- energy:
+   charge $q = +e$ (or $+2e$Etc.).
+2. **Acceleration.** Ions are accelerated through a potential difference $V$Gaining kinetic energy:
 
    $$\frac{1}{2}mv^2 = qV \quad \Rightarrow \quad v = \sqrt◆LB◆\frac{2qV}{m}◆RB◆$$
 
 3. **Deflection.** Ions enter a region of uniform magnetic field $B$ and follow a semicircular path.
- The magnetic force provides centripetal acceleration:
+   The magnetic force provides centripetal acceleration:
 
    $$qvB = \frac{mv^2}{r} \quad \Rightarrow \quad r = \frac{mv}{qB}$$
 
 4. **Detection.** Ions strike a detector at different positions depending on their radius of
- curvature. Substituting the velocity from stage 2:
+   curvature. Substituting the velocity from stage 2:
 
    $$r = \frac{1}{B}\sqrt◆LB◆\frac{2mV}{q}◆RB◆$$
 
- Rearranging for the mass-to-charge ratio:
+Rearranging for the mass-to-charge ratio:
 
-   $$\boxed{\frac{m}{q} = \frac{B^2 r^2}{2V}}$$
+$$\boxed{\frac{m}{q} = \frac{B^2 r^2}{2V}}$$
 
 ### Key Insights
 
 - Ions with **larger mass** follow a **larger radius** path.
 - Doubly-charged ions ($q = 2e$) follow a **smaller** radius than singly-charged ions of the same
- mass.
+  mass.
 - The instrument can distinguish between different **isotopes** of the same element, since
- $r \propto \sqrt{m}$.
+  $r \propto \sqrt{m}$.
 
 **Real-world example.** In a mass spectrometer with $B = 0.50$ T and $V = 10,000$ V, singly-charged
 Carbon-12 ions ($m = 12 \times 1.66 \times 10^{-27}$ kg) follow a semicircular path of radius:
@@ -430,9 +420,7 @@ $$r = \frac{1}{0.50}\sqrt◆LB◆\frac{2 \times 1.99 \times 10^{-26} \times 1000
 Carbon-13 ions ($m = 13 \times 1.66 \times 10^{-27}$ kg) would be deflected to a radius
 $\sqrt{13/12} \times 10.0 \approx 10.4$ cm — the two isotopes are separated on the detector.
 
-:::info
-Board Coverage AQA Paper 2 | Edexcel CP6 | OCR (A) Paper 2 Mod 6 | CIE P4
-:::
+:::info Board Coverage AQA Paper 2 | Edexcel CP6 | OCR (A) Paper 2 Mod 6 | CIE P4 :::
 
 AQA covers the mass spectrometer quantitatively, including the derivation of $r = mv/(qB)$. Edexcel
 Includes it as an application of circular motion in a magnetic field. CIE P4 covers it in detail,
@@ -453,9 +441,9 @@ Between the dees.
 1. A charged particle is injected near the centre.
 2. The electric field in the gap accelerates the particle.
 3. Inside a dee, the magnetic field causes the particle to follow a semicircular path (no work done
- by $B$ since $\mathbf{F} \perp \mathbf{v}$).
+   by $B$ since $\mathbf{F} \perp \mathbf{v}$).
 4. When the particle reaches the gap again, the alternating `EMF` has reversed, accelerating the
- particle once more.
+   particle once more.
 5. The particle spirals outward with increasing radius but **constant frequency**.
 
 ### The Cyclotron Frequency
@@ -465,9 +453,9 @@ Velocity cancel out:
 
 $$\boxed{f = \frac{1}{T} = \frac◆LB◆qB◆RB◆◆LB◆2\pi m◆RB◆}$$
 
-This is the **cyclotron frequency** — only on $q$$B$And $m$**not on the particle's
-Speed or radius**. This is why the alternating `EMF` can operate at a fixed frequency, regardless of
-The particle's energy.
+This is the **cyclotron frequency** — only on $q$$B$And $m$**not on the particle's Speed or
+radius**. This is why the alternating `EMF` can operate at a fixed frequency, regardless of The
+particle's energy.
 
 ### Proof of Frequency Independence
 
@@ -507,13 +495,12 @@ Decreasing cyclotron frequency.
 Just 11 cm and accelerated protons to 80 keV. Modern cyclotrons in hospitals produce radioactive
 Isotopes for PET scans by accelerating protons to energies of 10--20 MeV.
 
-:::info
-Info
+:::info Info
 
 AQA mentions the cyclotron briefly as an application of circular motion in magnetic fields. Edexcel
-Does not require detailed knowledge. CIE P4 covers the cyclotron in moderate detail,
-Including the derivation of the cyclotron frequency. OCR (A) does not examine this topic —
-Students should check their specification.
+Does not require detailed knowledge. CIE P4 covers the cyclotron in moderate detail, Including the
+derivation of the cyclotron frequency. OCR (A) does not examine this topic — Students should check
+their specification.
 
 ## Problem Set
 
@@ -620,11 +607,11 @@ Calculate: (a) the frequency, (b) the wavelength, (c) the magnetic field amplitu
 What was the significance of Maxwell's prediction of the speed of EM waves? How was it
 Experimentally confirmed?
 
-**Answer.** Maxwell showed that EM waves travel at $c = 1/\sqrt◆LB◆\mu_0\varepsilon_0◆RB◆$Which matched
-The measured speed of light. This proved that light is an electromagnetic wave — unifying optics
-With electromagnetism. It was experimentally confirmed by Hertz (1887), who generated and detected
-Radio waves using oscillating circuits, showing they had the predicted properties (reflection,
-Refraction, polarisation, speed matching $c$).
+**Answer.** Maxwell showed that EM waves travel at $c = 1/\sqrt◆LB◆\mu_0\varepsilon_0◆RB◆$Which
+matched The measured speed of light. This proved that light is an electromagnetic wave — unifying
+optics With electromagnetism. It was experimentally confirmed by Hertz (1887), who generated and
+detected Radio waves using oscillating circuits, showing they had the predicted properties
+(reflection, Refraction, polarisation, speed matching $c$).
 
 <b>If you get this wrong, revise:</b>
 [The EM Spectrum as a Unified Phenomenon](#4-the-em-spectrum-as-a-unified-phenomenon)
@@ -657,7 +644,7 @@ T. Calculate the Hall voltage. Why is a semiconductor used rather than a metal?
 $V_H = \frac{BI}{ntq} = \frac◆LB◆0.30 \times 5.0 \times 10^{-3}◆RB◆◆LB◆1.0 \times 10^{21} \times 1.5 \times 10^{-3} \times 1.60 \times 10^{-19}◆RB◆ = \frac◆LB◆1.5 \times 10^{-3}◆RB◆◆LB◆0.240◆RB◆ = 6.25 \times 10^{-3}$
 V $= 6.3$ mV.
 
-A semiconductor is used because its much lower carrier density ($n$) produces a larger, more 
+A semiconductor is used because its much lower carrier density ($n$) produces a larger, more
 Measurable Hall voltage compared to a metal where $n \sim 10^{29}$ m$^{-3}$ would give
 $V_H \sim 10^{-10}$ V.
 
@@ -712,31 +699,40 @@ Increase proportionally ($r = mv/(qB)$), keeping the period $T = 2\pi r/v = 2\pi
 
 :::
 
-
 ---
 
-:::tip
-Tip
-Ready to test your understanding of **Electromagnetism**? The [diagnostic test](/docs/alevel/physics/diagnostics/diag-electromagnetism-unification) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
+:::tip Tip Ready to test your understanding of **Electromagnetism**? The
+[diagnostic test](/docs/alevel/physics/diagnostics/diag-electromagnetism-unification) contains the
+hardest questions within the A-Level specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Electromagnetism with other physics topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine
+Electromagnetism with other physics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on
+self-marking and building a personal test matrix. :::
 
-:::danger
-Danger
+:::danger Danger
 
-- **Forgetting Lenz's law when determining induced current direction:** Lenz's law states that the induced e.m.f. Opposes the CHANGE in flux, not the flux itself. If flux is increasing, the induced current creates a field opposing the increase. If flux is decreasing, the induced current tries to maintain it. Students often oppose the flux itself rather than the change.
+- **Forgetting Lenz's law when determining induced current direction:** Lenz's law states that the
+  induced e.m.f. Opposes the CHANGE in flux, not the flux itself. If flux is increasing, the induced
+  current creates a field opposing the increase. If flux is decreasing, the induced current tries to
+  maintain it. Students often oppose the flux itself rather than the change.
 
-- **Confusing Faraday's and Lenz's laws:** Faraday's law gives the MAGNITUDE of the induced e.m.f. (epsilon = -d(Phi)/dt). Lenz's law gives the DIRECTION (the minus sign). Together they tell you both how large the e.m.f. Is and which way the current flows. You need both for a complete answer.
+- **Confusing Faraday's and Lenz's laws:** Faraday's law gives the MAGNITUDE of the induced e.m.f.
+  (epsilon = -d(Phi)/dt). Lenz's law gives the DIRECTION (the minus sign). Together they tell you
+  both how large the e.m.f. Is and which way the current flows. You need both for a complete answer.
 
-- **Misapplying the transformer equation:** V_s/V_p = N_s/N_p only holds for an IDEAL transformer with 100% efficiency. In reality, there are energy losses due to resistance in the coils, eddy currents in the core, and magnetic flux leakage. If a question gives efficiency, account for it: P_out = efficiency * P_in.
+- **Misapplying the transformer equation:** V_s/V_p = N_s/N_p only holds for an IDEAL transformer
+  with 100% efficiency. In reality, there are energy losses due to resistance in the coils, eddy
+  currents in the core, and magnetic flux leakage. If a question gives efficiency, account for it:
+  P_out = efficiency \* P_in.
 
-- **Not recognising when flux linkage is changing:** An e.m.f. Is only induced when there is a RATE OF CHANGE of flux or flux linkage. A coil in a constant magnetic field produces no e.m.f. Even if the flux through it is large. The change can come from moving the coil, changing the field, changing the area, or rotating the coil.
+- **Not recognising when flux linkage is changing:** An e.m.f. Is only induced when there is a RATE
+  OF CHANGE of flux or flux linkage. A coil in a constant magnetic field produces no e.m.f. Even if
+  the flux through it is large. The change can come from moving the coil, changing the field,
+  changing the area, or rotating the coil.
 
-:::
-:::
+::: :::
 
 ## Common Pitfalls
 

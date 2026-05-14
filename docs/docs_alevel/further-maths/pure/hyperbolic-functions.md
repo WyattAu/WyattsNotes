@@ -1,19 +1,22 @@
 ---
 title: Hyperbolic Functions (Extended)
-description: "A-Level Further Maths notes on Hyperbolic Functions (Extended): Hyperbolic Functions (Extended Treatment); 1. Definitions for thorough revision and examinati."
+description:
+  'A-Level Further Maths notes on Hyperbolic Functions (Extended): Hyperbolic Functions (Extended
+  Treatment); 1. Definitions for thorough revision and examinati.'
 date: 2026-04-23T00:00:00.000Z
 tags: [Mathematics, ALevel]
 categories: [Mathematics]
 slug: hyperbolic-functions-extended
 ---
+
 ## Hyperbolic Functions (Extended Treatment)
 
 This document provides a rigorous treatment of hyperbolic functions, their identities, inverses, and
 Calculus.
 
 :::info Hyperbolic functions are analogues of trigonometric functions defined using exponentials
-Rather than circles. They arise in many areas including differential equations, special
-Relativity, and catenary curves. :::
+Rather than circles. They arise in many areas including differential equations, special Relativity,
+and catenary curves. :::
 
 <hr />
 
@@ -56,11 +59,11 @@ $\blacksquare$
 ### 1.5 Graphs
 
 - **$\sinh x$**: passes through the origin, increasing, resembles $y = x/2$ near the origin and
- $y = e^x/2$ for large positive $x$.
-- **$\cosh x$**: minimum at $(0, 1)$Symmetric about the $y$-axis, resembles $y = 1 + x^2/2$ near
- the origin and $y = e^x/2$ for large positive $x$.
-- **$\tanh x$**: S-shaped curve with horizontal asymptotes at $y = \pm 1$Passing through the
- origin with gradient 1.
+  $y = e^x/2$ for large positive $x$.
+- **$\cosh x$**: minimum at $(0, 1)$Symmetric about the $y$-axis, resembles $y = 1 + x^2/2$ near the
+  origin and $y = e^x/2$ for large positive $x$.
+- **$\tanh x$**: S-shaped curve with horizontal asymptotes at $y = \pm 1$Passing through the origin
+  with gradient 1.
 
 <hr />
 
@@ -169,8 +172,8 @@ $$2x = e^y + e^{-y} \implies e^{2y} - 2xe^y + 1 = 0$$
 
 $$e^y = \frac◆LB◆2x \pm \sqrt{4x^2 - 4}◆RB◆◆LB◆2◆RB◆ = x \pm \sqrt{x^2 - 1}$$
 
-Since $e^y \geq 1$ and $x \geq 1$We need $e^y \geq 1$. Both roots are positive when $x \geq 1$.
-The convention is to take $e^y = x + \sqrt{x^2 - 1}$ (which gives $y \geq 0$):
+Since $e^y \geq 1$ and $x \geq 1$We need $e^y \geq 1$. Both roots are positive when $x \geq 1$. The
+convention is to take $e^y = x + \sqrt{x^2 - 1}$ (which gives $y \geq 0$):
 
 $$y = \ln\!\left(x + \sqrt{x^2 - 1}\right) \quad \blacksquare$$
 
@@ -197,10 +200,10 @@ $$\operatorname{artanh}\,\frac{1}{3} = \frac{1}{2}\ln\!\left(\frac{4/3}{2/3}\rig
 
 ### 3.6 Domains and ranges
 
-| Function | Domain | Range |
+| Function                   | Domain           | Range        |
 | -------------------------- | ---------------- | ------------ |
-| $\operatorname{arsinh}\,x$ | $\mathbb{R}$ | $\mathbb{R}$ |
-| $\operatorname{arcosh}\,x$ | $x \geq 1$ | $y \geq 0$ |
+| $\operatorname{arsinh}\,x$ | $\mathbb{R}$     | $\mathbb{R}$ |
+| $\operatorname{arcosh}\,x$ | $x \geq 1$       | $y \geq 0$   |
 | $\operatorname{artanh}\,x$ | $-1 \lt x \lt 1$ | $\mathbb{R}$ |
 
 <hr />
@@ -411,15 +414,15 @@ Integrating again: $y = a\cosh\!\left(\dfrac{x}{a}\right) + C$. $\blacksquare$
 
 :::warning Common Pitfall
 
-1. **Sign in the fundamental identity:** Unlike $\cos^2 x + \sin^2 x = 1$The hyperbolic identity
- is $\cosh^2 x - \sinh^2 x = 1$. The minus sign is crucial and is the source of many errors.
+1. **Sign in the fundamental identity:** Unlike $\cos^2 x + \sin^2 x = 1$The hyperbolic identity is
+   $\cosh^2 x - \sinh^2 x = 1$. The minus sign is crucial and is the source of many errors.
 2. **Domain of $\operatorname{arcosh}$:** The domain is $x \geq 1$ (not $x > 0$). Attempting to
- evaluate $\operatorname{arcosh}(0.5)$ is undefined.
+   evaluate $\operatorname{arcosh}(0.5)$ is undefined.
 3. **$\cosh x \geq 1$ always:** When solving $\cosh^2 x = k$ and taking the square root, always take
- the positive root $\cosh x = +\sqrt{k}$ since $\cosh x \geq 1 > 0$ for all real $x$.
+   the positive root $\cosh x = +\sqrt{k}$ since $\cosh x \geq 1 > 0$ for all real $x$.
 4. **Integration: artanh vs ln:** When $|x| > a$ in $\displaystyle\int \frac{dx}{a^2 - x^2}$The
- result involves $\operatorname{arcoth}$ (or an alternative logarithmic form), not
- $\operatorname{artanh}$. Check the domain of the integrand carefully. :::
+   result involves $\operatorname{arcoth}$ (or an alternative logarithmic form), not
+   $\operatorname{artanh}$. Check the domain of the integrand carefully. :::
 
 ---
 
@@ -448,8 +451,8 @@ Since $\cosh$ is even, both $\pm$ give valid solutions (one positive, one negati
 
 $x = \dfrac{1}{2}\ln\!\left(\dfrac◆LB◆5 \pm \sqrt{21}◆RB◆◆LB◆2◆RB◆\right)$
 
-Alternatively, using $\cosh 2x = 2\cosh^2 x - 1 = 2.5 \implies \cosh^2 x = 1.75$Which gives the
-Same result.
+Alternatively, using $\cosh 2x = 2\cosh^2 x - 1 = 2.5 \implies \cosh^2 x = 1.75$Which gives the Same
+result.
 
 </details>
 
@@ -559,8 +562,7 @@ $$= \frac◆LB◆x\sqrt{x^2 - 9}◆RB◆◆LB◆2◆RB◆ - \frac{9}{2}\operator
 **Problem.** Prove that $\cosh 3x = 4\cosh^3 x - 3\cosh x$.
 
 **Solution.** From the trigonometric identity $\cos 3\theta = 4\cos^3\theta - 3\cos\theta$Applying
-Osborne's rule: since $\cos^3\theta$ contains no products of $\sin$It remains unchanged.
-Therefore:
+Osborne's rule: since $\cos^3\theta$ contains no products of $\sin$It remains unchanged. Therefore:
 
 $$\cosh 3x = 4\cosh^3 x - 3\cosh x$$
 
@@ -661,8 +663,7 @@ The identities $\cosh x = \cos(ix)$ and $\sinh x = -i\sin(ix)$ connect the two t
 ### 10.3 Hyperbolic functions and integration techniques
 
 Hyperbolic substitutions ($x = a\sinh u$$x = a\cosh u$) are powerful alternatives to trigonometric
-Substitutions. See
-[Further Calculus](/docs/alevel/further-maths/pure-mathematics/further-calculus).
+Substitutions. See [Further Calculus](/docs/alevel/further-maths/pure-mathematics/further-calculus).
 
 ### 10.4 The catenary and mechanics
 
@@ -793,16 +794,16 @@ So $\ln 3 - \ln 2 = \operatorname{artanh}(1/5)$.
 
 ## 12. Summary of Extended Results
 
-| Identity | Formula |
+| Identity               | Formula                                                                                |
 | ---------------------- | -------------------------------------------------------------------------------------- |
-| Triple angle | $\sinh 3x = 3\sinh x + 4\sinh^3 x$ |
-| Triple angle | $\cosh 3x = 4\cosh^3 x - 3\cosh x$ |
-| Half angle | $\cosh^2\!\left(\dfrac{x}{2}\right) = \dfrac◆LB◆1 + \cosh x◆RB◆◆LB◆2◆RB◆$ |
-| Half angle | $\sinh^2\!\left(\dfrac{x}{2}\right) = \dfrac◆LB◆\cosh x - 1◆RB◆◆LB◆2◆RB◆$ |
-| Integral of $\tanh$ | $\displaystyle\int\tanh x\,dx = \ln(\cosh x) + C$ |
-| Integral of $\coth$ | $\displaystyle\int\coth x\,dx = \ln(\sinh x) + C$ |
-| Integral of $\tanh^3$ | $\displaystyle\int\tanh^3 x\,dx = \ln(\cosh x) - \dfrac◆LB◆\tanh^2 x◆RB◆◆LB◆2◆RB◆ + C$ |
-| Arc length of catenary | $s = a\sinh(b/a)$ for $y = a\cosh(x/a)$ |
+| Triple angle           | $\sinh 3x = 3\sinh x + 4\sinh^3 x$                                                     |
+| Triple angle           | $\cosh 3x = 4\cosh^3 x - 3\cosh x$                                                     |
+| Half angle             | $\cosh^2\!\left(\dfrac{x}{2}\right) = \dfrac◆LB◆1 + \cosh x◆RB◆◆LB◆2◆RB◆$              |
+| Half angle             | $\sinh^2\!\left(\dfrac{x}{2}\right) = \dfrac◆LB◆\cosh x - 1◆RB◆◆LB◆2◆RB◆$              |
+| Integral of $\tanh$    | $\displaystyle\int\tanh x\,dx = \ln(\cosh x) + C$                                      |
+| Integral of $\coth$    | $\displaystyle\int\coth x\,dx = \ln(\sinh x) + C$                                      |
+| Integral of $\tanh^3$  | $\displaystyle\int\tanh^3 x\,dx = \ln(\cosh x) - \dfrac◆LB◆\tanh^2 x◆RB◆◆LB◆2◆RB◆ + C$ |
+| Arc length of catenary | $s = a\sinh(b/a)$ for $y = a\cosh(x/a)$                                                |
 
 ---
 
@@ -811,17 +812,17 @@ So $\ln 3 - \ln 2 = \operatorname{artanh}(1/5)$.
 :::warning Common Pitfall
 
 1. **Substitution domain errors:** When using $x = a\cosh u$The substitution requires $x \geq a$
- (since $\cosh u \geq 1$). Attempting to use $x = a\cosh u$ for $x < a$ leads to an error. Use
- $x = a\sinh u$ for $\sqrt{x^2 + a^2}$ and $x = a\cosh u$ for $\sqrt{x^2 - a^2}$.
+   (since $\cosh u \geq 1$). Attempting to use $x = a\cosh u$ for $x < a$ leads to an error. Use
+   $x = a\sinh u$ for $\sqrt{x^2 + a^2}$ and $x = a\cosh u$ for $\sqrt{x^2 - a^2}$.
 2. **Confusing $\operatorname{artanh}$ and $\ln$ forms:** The formula
- $\displaystyle\int\frac{dx}{a^2 - x^2} = \frac{1}{2a}\ln\!\left|\frac{a+x}{a-x}\right|$ is valid
- for all $|x| \neq a$But $\dfrac{1}{a}\operatorname{artanh}(x/a)$ is only valid for $|x| < a$.
- For $|x| > a$Use the logarithmic form or $\operatorname{arcoth}$.
-3. **No absolute value needed for $\cosh$:** Unlike $|\cos x|$$\sqrt◆LB◆\cosh^2 x◆RB◆ = \cosh x$
- (no absolute value needed) since $\cosh x \geq 1 > 0$ for all real $x$.
+   $\displaystyle\int\frac{dx}{a^2 - x^2} = \frac{1}{2a}\ln\!\left|\frac{a+x}{a-x}\right|$ is valid
+   for all $|x| \neq a$But $\dfrac{1}{a}\operatorname{artanh}(x/a)$ is only valid for $|x| < a$. For
+   $|x| > a$Use the logarithmic form or $\operatorname{arcoth}$.
+3. **No absolute value needed for $\cosh$:** Unlike $|\cos x|$$\sqrt◆LB◆\cosh^2 x◆RB◆ = \cosh x$ (no
+   absolute value needed) since $\cosh x \geq 1 > 0$ for all real $x$.
 4. **Differential equation solutions:** The equation $y'' - y = 0$ has solutions in both exponential
- and hyperbolic forms. When boundary conditions involve $y(0)$ and $y'(0)$The hyperbolic form
- $y = A\cosh x + B\sinh x$ is often more convenient since $\cosh 0 = 1$ and $\sinh 0 = 0$. :::
+   and hyperbolic forms. When boundary conditions involve $y(0)$ and $y'(0)$The hyperbolic form
+   $y = A\cosh x + B\sinh x$ is often more convenient since $\cosh 0 = 1$ and $\sinh 0 = 0$. :::
 
 ---
 
@@ -959,14 +960,14 @@ $t' = t\cosh\phi - x\sinh\phi/c$$x' = x\cosh\phi - ct\sinh\phi$.
 
 ### 16.3 Inverse hyperbolic functions in logarithmic form
 
-| Function | Logarithmic Form | Domain |
+| Function                   | Logarithmic Form                                               | Domain         |
 | -------------------------- | -------------------------------------------------------------- | -------------- | --- | ---- |
-| $\operatorname{arsinh}\,x$ | $\ln(x+\sqrt{x^2+1})$ | all real $x$ |
-| $\operatorname{arcosh}\,x$ | $\ln(x+\sqrt{x^2-1})$ | $x \geq 1$ |
-| $\operatorname{artanh}\,x$ | $\dfrac{1}{2}\ln\!\left(\dfrac{1+x}{1-x}\right)$ | $              | x   | < 1$ |
-| $\operatorname{arcoth}\,x$ | $\dfrac{1}{2}\ln\!\left(\dfrac{x+1}{x-1}\right)$ | $              | x   | > 1$ |
-| $\operatorname{arsech}\,x$ | $\ln\!\left(\dfrac◆LB◆1+\sqrt{1-x^2}◆RB◆◆LB◆x◆RB◆\right)$ | $0 < x \leq 1$ |
-| $\operatorname{arcsch}\,x$ | $\ln\!\left(\dfrac{1}{x}+\sqrt◆LB◆\dfrac{1}{x^2}+1◆RB◆\right)$ | $x \neq 0$ |
+| $\operatorname{arsinh}\,x$ | $\ln(x+\sqrt{x^2+1})$                                          | all real $x$   |
+| $\operatorname{arcosh}\,x$ | $\ln(x+\sqrt{x^2-1})$                                          | $x \geq 1$     |
+| $\operatorname{artanh}\,x$ | $\dfrac{1}{2}\ln\!\left(\dfrac{1+x}{1-x}\right)$               | $              | x   | < 1$ |
+| $\operatorname{arcoth}\,x$ | $\dfrac{1}{2}\ln\!\left(\dfrac{x+1}{x-1}\right)$               | $              | x   | > 1$ |
+| $\operatorname{arsech}\,x$ | $\ln\!\left(\dfrac◆LB◆1+\sqrt{1-x^2}◆RB◆◆LB◆x◆RB◆\right)$      | $0 < x \leq 1$ |
+| $\operatorname{arcsch}\,x$ | $\ln\!\left(\dfrac{1}{x}+\sqrt◆LB◆\dfrac{1}{x^2}+1◆RB◆\right)$ | $x \neq 0$     |
 
 ### 16.4 Hyperbolic functions and catenary applications
 

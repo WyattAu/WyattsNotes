@@ -1,15 +1,18 @@
 ---
 title: Calculus
-description: "Rigorous IB mathematics notes covering Calculus. Includes definitions, derivations, worked examples, and exam-style problems."
+description:
+  'Rigorous IB mathematics notes covering Calculus. Includes definitions, derivations, worked
+  examples, and exam-style problems.'
 slug: calculus
 ---
+
 ## Limits
 
 ### Formal Definition
 
 Let $f$ be defined on an open interval containing $a$Except possibly at $a$ itself. We write
-$\displaystyle\lim_{x \to a} f(x) = L$ if for every $\varepsilon \gt 0$There exists a
-$\delta \gt 0$ such that:
+$\displaystyle\lim_{x \to a} f(x) = L$ if for every $\varepsilon \gt 0$There exists a $\delta \gt 0$
+such that:
 
 $$0 \lt |x - a| \lt \delta \implies |f(x) - L| \lt \varepsilon$$
 
@@ -34,18 +37,18 @@ $$\lim_{x \to a} f(x) = L \iff \lim_{x \to a^-} f(x) = \lim_{x \to a^+} f(x) = L
 ### Indeterminate Forms
 
 Expressions of the form $\dfrac{0}{0}$$\dfrac{\infty}{\infty}$$0 \cdot \infty$
-$\infty - \infty$$1^\infty$$0^0$And $\infty^0$ are **indeterminate** — the limit may or may
-Not exist, and algebraic manipulation or l'H\^opital's rule is required.
+$\infty - \infty$$1^\infty$$0^0$And $\infty^0$ are **indeterminate** — the limit may or may Not
+exist, and algebraic manipulation or l'H\^opital's rule is required.
 
 ### Common Limits
 
-| Limit | Value |
+| Limit                                                             | Value |
 | :---------------------------------------------------------------- | :---- |
-| $\displaystyle\lim_{x \to 0} \frac{\sin x}{x}$ | $1$ |
-| $\displaystyle\lim_{x \to 0} \frac{1 - \cos x}{x}$ | $0$ |
-| $\displaystyle\lim_{x \to \infty} \left(1 + \frac{1}{x}\right)^x$ | $e$ |
-| $\displaystyle\lim_{x \to 0} \frac{e^x - 1}{x}$ | $1$ |
-| $\displaystyle\lim_{x \to 0} \frac{\ln(1 + x)}{x}$ | $1$ |
+| $\displaystyle\lim_{x \to 0} \frac{\sin x}{x}$                    | $1$   |
+| $\displaystyle\lim_{x \to 0} \frac{1 - \cos x}{x}$                | $0$   |
+| $\displaystyle\lim_{x \to \infty} \left(1 + \frac{1}{x}\right)^x$ | $e$   |
+| $\displaystyle\lim_{x \to 0} \frac{e^x - 1}{x}$                   | $1$   |
+| $\displaystyle\lim_{x \to 0} \frac{\ln(1 + x)}{x}$                | $1$   |
 
 ---
 
@@ -61,20 +64,20 @@ A function $f$ is **continuous at** $a$ if and only if all three conditions hold
 
 ### Intermediate Value Theorem
 
-If $f$ is continuous on $[a, b]$ and $k$ is any value between $f(a)$ and $f(b)$Then there exists
-At least one $c \in (a, b)$ such that $f(c) = k$.
+If $f$ is continuous on $[a, b]$ and $k$ is any value between $f(a)$ and $f(b)$Then there exists At
+least one $c \in (a, b)$ such that $f(c) = k$.
 
 This theorem underpins the **bisection method** for root-finding and guarantees that a continuous
 Function on a closed interval attains every intermediate value.
 
 ### Types of Discontinuity
 
-| Type | Description | Example |
+| Type        | Description                                                    | Example                                             |
 | :---------- | :------------------------------------------------------------- | :-------------------------------------------------- |
-| Removable | Limit exists but $f(a)$ is undefined or differs from the limit | $f(x) = \dfrac{x^2 - 1}{x - 1}$ at $x = 1$ |
-| Jump | One-sided limits exist but are unequal | $f(x) = \lfloor x \rfloor$ at integer points |
-| Infinite | Function tends to $\pm\infty$ near $a$ | $f(x) = \dfrac{1}{x}$ at $x = 0$ |
-| Oscillatory | Function oscillates without settling | $f(x) = \sin\!\left(\dfrac{1}{x}\right)$ at $x = 0$ |
+| Removable   | Limit exists but $f(a)$ is undefined or differs from the limit | $f(x) = \dfrac{x^2 - 1}{x - 1}$ at $x = 1$          |
+| Jump        | One-sided limits exist but are unequal                         | $f(x) = \lfloor x \rfloor$ at integer points        |
+| Infinite    | Function tends to $\pm\infty$ near $a$                         | $f(x) = \dfrac{1}{x}$ at $x = 0$                    |
+| Oscillatory | Function oscillates without settling                           | $f(x) = \sin\!\left(\dfrac{1}{x}\right)$ at $x = 0$ |
 
 ---
 
@@ -115,23 +118,23 @@ $$\frac{dy}{dx} = f'(g(x)) \cdot g'(x)$$
 
 ### Derivatives of Standard Functions
 
-| $f(x)$ | $f'(x)$ |
+| $f(x)$      | $f'(x)$                      |
 | :---------- | :--------------------------- |
-| $e^x$ | $e^x$ |
-| $a^x$ | $a^x \ln a$ |
-| $\ln x$ | $\dfrac{1}{x}$ |
-| $\sin x$ | $\cos x$ |
-| $\cos x$ | $-\sin x$ |
-| $\tan x$ | $\sec^2 x$ |
-| $\arcsin x$ | $\dfrac{1}{\sqrt{1 - x^2}}$ |
+| $e^x$       | $e^x$                        |
+| $a^x$       | $a^x \ln a$                  |
+| $\ln x$     | $\dfrac{1}{x}$               |
+| $\sin x$    | $\cos x$                     |
+| $\cos x$    | $-\sin x$                    |
+| $\tan x$    | $\sec^2 x$                   |
+| $\arcsin x$ | $\dfrac{1}{\sqrt{1 - x^2}}$  |
 | $\arccos x$ | $\dfrac{-1}{\sqrt{1 - x^2}}$ |
-| $\arctan x$ | $\dfrac{1}{1 + x^2}$ |
+| $\arctan x$ | $\dfrac{1}{1 + x^2}$         |
 
 ### Implicit Differentiation
 
-When a relation between $x$ and $y$ cannot be solved for $y$Differentiate both sides with
-Respect to $x$Treating $y$ as a function of $x$. Every occurrence of $y$ produces a factor of
-$\dfrac{dy}{dx}$ via the chain rule.
+When a relation between $x$ and $y$ cannot be solved for $y$Differentiate both sides with Respect to
+$x$Treating $y$ as a function of $x$. Every occurrence of $y$ produces a factor of $\dfrac{dy}{dx}$
+via the chain rule.
 
 **Example.** Find $\dfrac{dy}{dx}$ for $x^2 + y^2 = 25$.
 
@@ -246,16 +249,16 @@ $$A = \int_a^b \bigl[f(x) - g(x)\bigr]\,dx$$
 
 ### Standard Integrals
 
-| $f(x)$ | $\displaystyle\int f(x)\,dx$ |
+| $f(x)$                      | $\displaystyle\int f(x)\,dx$            |
 | :-------------------------- | :-------------------------------------- | --- | ---- |
-| $x^n$ | $\dfrac{x^{n+1}}{n+1} + C, \; n \ne -1$ | | |
-| $\dfrac{1}{x}$ | $\ln                                    | x   | + C$ |
-| $e^x$ | $e^x + C$ | | |
-| $\sin x$ | $-\cos x + C$ | | |
-| $\cos x$ | $\sin x + C$ | | |
-| $\sec^2 x$ | $\tan x + C$ | | |
-| $\dfrac{1}{\sqrt{1 - x^2}}$ | $\arcsin x + C$ | | |
-| $\dfrac{1}{1 + x^2}$ | $\arctan x + C$ | | |
+| $x^n$                       | $\dfrac{x^{n+1}}{n+1} + C, \; n \ne -1$ |     |      |
+| $\dfrac{1}{x}$              | $\ln                                    | x   | + C$ |
+| $e^x$                       | $e^x + C$                               |     |      |
+| $\sin x$                    | $-\cos x + C$                           |     |      |
+| $\cos x$                    | $\sin x + C$                            |     |      |
+| $\sec^2 x$                  | $\tan x + C$                            |     |      |
+| $\dfrac{1}{\sqrt{1 - x^2}}$ | $\arcsin x + C$                         |     |      |
+| $\dfrac{1}{1 + x^2}$        | $\arctan x + C$                         |     |      |
 
 ---
 
@@ -326,25 +329,25 @@ The integral **converges** if this limit exists (is finite); otherwise it **dive
 ## Common Pitfalls
 
 1. **Forgetting the chain rule.** When differentiating composite functions, always identify the
- inner function and multiply by its derivative.
+   inner function and multiply by its derivative.
 
 2. **Sign errors in the quotient rule.** Remember: $u'v - uv'$Not $uv' - u'v$. A mnemonic: "low
- d-high minus high d-low, over the square of what's below."
+   d-high minus high d-low, over the square of what's below."
 
 3. **Dropping the $+C$.** Every indefinite integral requires an arbitrary constant.
 
 4. **Integration by parts choice.** Choosing the wrong factor for $u$ can lead to a more complicated
- integral. Follow the LIATE rule.
+   integral. Follow the LIATE rule.
 
 5. **Incorrect limits after substitution.** When using substitution in a definite integral, either
- transform the limits to the new variable or back-substitute before evaluating.
+   transform the limits to the new variable or back-substitute before evaluating.
 
 6. **Volume formula confusion.** Ensure the correct axis of rotation is used. The variable in the
- integrand corresponds to the axis perpendicular to the one of rotation.
+   integrand corresponds to the axis perpendicular to the one of rotation.
 
 7. **Treating $\dfrac{dy}{dx}$ as a fraction in implicit differentiation.** While the notation
- suggests a ratio, it is a limit. Manipulations such as cross-multiplying are justified by the
- chain rule, not by treating derivatives as fractions.
+   suggests a ratio, it is a limit. Manipulations such as cross-multiplying are justified by the
+   chain rule, not by treating derivatives as fractions.
 
 ---
 
@@ -476,21 +479,23 @@ Intervals of increase and decrease.
 
 **Domain.** All $x \in \mathbb{'\{'}R{'\}'}$ except $x = \pm 1$.
 
-**Intercepts.** $y$-intercept: $x = 0 \implies y = 4$. $x$-intercepts: $x^2 - 4 = 0 \implies x = \pm 2$.
+**Intercepts.** $y$-intercept: $x = 0 \implies y = 4$. $x$-intercepts:
+$x^2 - 4 = 0 \implies x = \pm 2$.
 
-**Asymptotes.** Vertical: $x = 1$ and $x = -1$ (denominator zero, numerator nonzero). Horizontal: since
-Degree of numerator equals degree of denominator, $y = \dfrac{1}{1} = 1$.
+**Asymptotes.** Vertical: $x = 1$ and $x = -1$ (denominator zero, numerator nonzero). Horizontal:
+since Degree of numerator equals degree of denominator, $y = \dfrac{1}{1} = 1$.
 
 **Derivative.** By the quotient rule:
 
 $$\frac{dy}{dx} = \frac{2x(x^2 - 1) - (x^2 - 4)(2x)}{(x^2 - 1)^2} = \frac{6x}{(x^2 - 1)^2}$$
 
-**Stationary points.** $\dfrac{dy}{dx} = 0 \implies x = 0$. Substituting: $y = 4$. The second derivative
-At $x = 0$ is negative (since $y'' = \dfrac{6(x^2-1)^2 - 6x \cdot 2(x^2-1) \cdot 2x}{(x^2-1)^4}$
-Evaluated at $x = 0$ gives $y'' = \dfrac{6}{1} = 6 \gt 0$), confirming a local minimum at $(0, 4)$.
+**Stationary points.** $\dfrac{dy}{dx} = 0 \implies x = 0$. Substituting: $y = 4$. The second
+derivative At $x = 0$ is negative (since
+$y'' = \dfrac{6(x^2-1)^2 - 6x \cdot 2(x^2-1) \cdot 2x}{(x^2-1)^4}$ Evaluated at $x = 0$ gives
+$y'' = \dfrac{6}{1} = 6 \gt 0$), confirming a local minimum at $(0, 4)$.
 
-**Intervals.** $\dfrac{dy}{dx} \lt 0$ for $x \lt 0$ (decreasing), $\dfrac{dy}{dx} \gt 0$ for $x \gt 0$
-(increasing), within each branch.
+**Intervals.** $\dfrac{dy}{dx} \lt 0$ for $x \lt 0$ (decreasing), $\dfrac{dy}{dx} \gt 0$ for
+$x \gt 0$ (increasing), within each branch.
 
 </details>
 
@@ -511,8 +516,8 @@ $$= \frac{\pi}{2} \cdot 1 - 0 - \bigl[-\cos x\bigr]_0^{\pi/2} = \frac{\pi}{2} - 
 
 **Worked Example: Volume of Revolution with Shells**
 
-Find the volume generated when the region bounded by $y = x^2$$y = 0$And $x = 2$ is rotated $360^\circ$
-About the $y$-axis.
+Find the volume generated when the region bounded by $y = x^2$$y = 0$And $x = 2$ is rotated
+$360^\circ$ About the $y$-axis.
 
 <details>
 <summary>Solution</summary>
@@ -563,25 +568,26 @@ $$3\frac{d^2y}{dx^2} = -36 \implies \frac{d^2y}{dx^2} = -12$$
 
 ## Additional Common Pitfalls
 
-- **L'H\^opital's rule overuse.** Only apply when the limit is genuinely indeterminate ($\dfrac{0}{0}$ or
- $\dfrac{\infty}{\infty}$). Applying it to determinate forms produces incorrect results.
+- **L'H\^opital's rule overuse.** Only apply when the limit is genuinely indeterminate
+  ($\dfrac{0}{0}$ or $\dfrac{\infty}{\infty}$). Applying it to determinate forms produces incorrect
+  results.
 
 - **Second derivative test inconclusiveness.** When $f''(a) = 0$The test fails. Use a sign chart of
- $f'$ around $a$ (the first derivative test) to classify the stationary point.
+  $f'$ around $a$ (the first derivative test) to classify the stationary point.
 
-- **Area vs. Signed integral.** $\displaystyle\int_a^b f(x)\,dx$ gives the signed area. When the curve
- crosses the $x$-axis, split the integral at each root and take absolute values to find total enclosed
- area.
+- **Area vs. Signed integral.** $\displaystyle\int_a^b f(x)\,dx$ gives the signed area. When the
+  curve crosses the $x$-axis, split the integral at each root and take absolute values to find total
+  enclosed area.
 
 - **Forgetting substitution limits.** In $\displaystyle\int_a^b f(g(x))g'(x)\,dx$If you substitute
- $u = g(x)$Change the limits to $g(a)$ and $g(b)$. Failing to do so and using the original limits
- gives the wrong answer.
+  $u = g(x)$Change the limits to $g(a)$ and $g(b)$. Failing to do so and using the original limits
+  gives the wrong answer.
 
 - **Chain rule on trigonometric functions.** $\dfrac{d}{dx}[\sin(f(x))] = f'(x)\cos(f(x))$Not
- $\cos(f(x))$. Students frequently omit the inner derivative factor.
+  $\cos(f(x))$. Students frequently omit the inner derivative factor.
 
 - **Power rule for negative exponents.** $\dfrac{d}{dx}\bigl[x^{-3}\bigr] = -3x^{-4}$Not $-3x^{-2}$.
- Subtract one from the exponent, then multiply by the original exponent.
+  Subtract one from the exponent, then multiply by the original exponent.
 
 ---
 
@@ -597,8 +603,8 @@ Evaluate $\displaystyle\lim_{x \to \infty} \left(\frac{3x + 1}{2x - 5}\right)^x$
 <details>
 <summary>Problem 10</summary>
 
-Find the coordinates of the point on the curve $y = \dfrac{1}{x^2 + 1}$ where the tangent is parallel to
-The line $x + 8y = 1$.
+Find the coordinates of the point on the curve $y = \dfrac{1}{x^2 + 1}$ where the tangent is
+parallel to The line $x + 8y = 1$.
 
 </details>
 
@@ -612,15 +618,16 @@ Evaluate $\displaystyle\int_0^{\pi/4} \sec^2 x\,e^{\tan x}\,dx$.
 <details>
 <summary>Problem 12</summary>
 
-A cylindrical can with radius $r$ and height $h$ has volume $V = \pi r^2 h = 500\;\mathrm{cm^3}$. Find the
-Values of $r$ and $h$ that minimise the surface area $A = 2\pi r^2 + 2\pi r h$.
+A cylindrical can with radius $r$ and height $h$ has volume $V = \pi r^2 h = 500\;\mathrm{cm^3}$.
+Find the Values of $r$ and $h$ that minimise the surface area $A = 2\pi r^2 + 2\pi r h$.
 
 </details>
 
 <details>
 <summary>Problem 13</summary>
 
-Use the substitution $x = 3\sin\theta$ to evaluate $\displaystyle\int_0^{3} \frac{dx}{\sqrt{9 - x^2}}$.
+Use the substitution $x = 3\sin\theta$ to evaluate
+$\displaystyle\int_0^{3} \frac{dx}{\sqrt{9 - x^2}}$.
 
 </details>
 
@@ -634,44 +641,45 @@ Find the equation of the normal to the curve $y = x^2 e^{-x}$ at the point where
 <details>
 <summary>Problem 15</summary>
 
-Show that $\displaystyle\int_0^1 \frac{x}{x^2 + 4}\,dx = \dfrac{1}{2}\ln\!\left(\dfrac{5}{4}\right)$.
+Show that
+$\displaystyle\int_0^1 \frac{x}{x^2 + 4}\,dx = \dfrac{1}{2}\ln\!\left(\dfrac{5}{4}\right)$.
 
 </details>
 
 <details>
 <summary>Answers to Additional Problems</summary>
 
-**Problem 9:** Write $\left(\dfrac{3x+1}{2x-5}\right)^x = \exp\!\left(x \ln\dfrac{3x+1}{2x-5}\right)$. As
+**Problem 9:** Write
+$\left(\dfrac{3x+1}{2x-5}\right)^x = \exp\!\left(x \ln\dfrac{3x+1}{2x-5}\right)$. As
 $x \to \infty$$\dfrac{3x+1}{2x-5} \to \dfrac{3}{2}$And
 $x\ln\!\left(\dfrac{3}{2} + \dfrac{13}{2(2x-5)}\right) \approx x \cdot \dfrac{13}{3(2x)} = \dfrac{13}{6}$.
 The limit is $e^{13/6}$.
 
 **Problem 10:** The line $x + 8y = 1$ has gradient $-\dfrac{1}{8}$. Differentiating:
 $\dfrac{dy}{dx} = \dfrac{-2x}{(x^2+1)^2}$. Setting $= -\dfrac{1}{8}$:
-$\dfrac{16x}{(x^2+1)^2} = 1 \implies (x^2+1)^2 = 16x$. Solving: $x^4 + 2x^2 - 16x + 1 = 0$. By inspection
-$x = 1$ is a root: $1 + 2 - 16 + 1 = -12 \ne 0$. Trying $x = \dfrac{1}{2}$:
-$\dfrac{1}{16} + \dfrac{1}{2} - 8 + 1 \ne 0$. Since $\dfrac{dy}{dx} = -\dfrac{1}{8}$ at
-$x = 2$: $\dfrac{16}{25} \ne 1$. At $x = 1$: $\dfrac{2}{4} = \dfrac{1}{2} \ne \dfrac{1}{8}$. At
+$\dfrac{16x}{(x^2+1)^2} = 1 \implies (x^2+1)^2 = 16x$. Solving: $x^4 + 2x^2 - 16x + 1 = 0$. By
+inspection $x = 1$ is a root: $1 + 2 - 16 + 1 = -12 \ne 0$. Trying $x = \dfrac{1}{2}$:
+$\dfrac{1}{16} + \dfrac{1}{2} - 8 + 1 \ne 0$. Since $\dfrac{dy}{dx} = -\dfrac{1}{8}$ at $x = 2$:
+$\dfrac{16}{25} \ne 1$. At $x = 1$: $\dfrac{2}{4} = \dfrac{1}{2} \ne \dfrac{1}{8}$. At
 $x = \sqrt[3]{2} - 1$ check numerically: $x \approx 0.26$$\dfrac{dy}{dx} \approx -0.48$. Solving
-Numerically gives $x \approx 0.065$ and $x \approx 1.48$. At $x = 1.48$: $\dfrac{dy}{dx} \approx -0.124$
-Close to $-\dfrac{1}{8} = -0.125$.
+Numerically gives $x \approx 0.065$ and $x \approx 1.48$. At $x = 1.48$:
+$\dfrac{dy}{dx} \approx -0.124$ Close to $-\dfrac{1}{8} = -0.125$.
 
-**Problem 11:** Let $u = \tan x$So $du = \sec^2 x\,dx$. Limits: $x = 0 \implies u = 0$; $x = \pi/4 \implies u = 1$.
-$\displaystyle\int_0^1 e^u\,du = \bigl[e^u\bigr]_0^1 = e - 1$.
+**Problem 11:** Let $u = \tan x$So $du = \sec^2 x\,dx$. Limits: $x = 0 \implies u = 0$;
+$x = \pi/4 \implies u = 1$. $\displaystyle\int_0^1 e^u\,du = \bigl[e^u\bigr]_0^1 = e - 1$.
 
-**Problem 12:** From $V = 500$: $h = \dfrac{500}{\pi r^2}$. Then
-$A = 2\pi r^2 + \dfrac{1000}{r}$.
+**Problem 12:** From $V = 500$: $h = \dfrac{500}{\pi r^2}$. Then $A = 2\pi r^2 + \dfrac{1000}{r}$.
 $\dfrac{dA}{dr} = 4\pi r - \dfrac{1000}{r^2} = 0 \implies r^3 = \dfrac{250}{\pi} \implies r = \left(\dfrac{250}{\pi}\right)^{1/3} \approx 4.30\;\mathrm{cm}$.
-Then $h = \dfrac{500}{\pi r^2} = 2r \approx 8.60\;\mathrm{cm}$. Checking $A'' = 4\pi + \dfrac{2000}{r^3} \gt 0$
-Confirming a minimum.
+Then $h = \dfrac{500}{\pi r^2} = 2r \approx 8.60\;\mathrm{cm}$. Checking
+$A'' = 4\pi + \dfrac{2000}{r^3} \gt 0$ Confirming a minimum.
 
-**Problem 13:** Let $x = 3\sin\theta$$dx = 3\cos\theta\,d\theta$. When $x = 0$$\theta = 0$; when $x = 3$
-$\theta = \pi/2$.
+**Problem 13:** Let $x = 3\sin\theta$$dx = 3\cos\theta\,d\theta$. When $x = 0$$\theta = 0$; when
+$x = 3$ $\theta = \pi/2$.
 $\displaystyle\int_0^{\pi/2} \frac{3\cos\theta}{3\cos\theta}\,d\theta = \int_0^{\pi/2} d\theta = \frac{\pi}{2}$.
 
-**Problem 14:** $y = x^2 e^{-x}$$\dfrac{dy}{dx} = 2xe^{-x} - x^2 e^{-x} = e^{-x}(2x - x^2)$.
-At $x = 1$: $y = e^{-1} = \dfrac{1}{e}$$\dfrac{dy}{dx} = e^{-1}(2 - 1) = \dfrac{1}{e}$.
-Normal gradient $= -e$. Normal equation: $y - \dfrac{1}{e} = -e(x - 1)$I.e. $y = -ex + e + \dfrac{1}{e}$.
+**Problem 14:** $y = x^2 e^{-x}$$\dfrac{dy}{dx} = 2xe^{-x} - x^2 e^{-x} = e^{-x}(2x - x^2)$. At
+$x = 1$: $y = e^{-1} = \dfrac{1}{e}$$\dfrac{dy}{dx} = e^{-1}(2 - 1) = \dfrac{1}{e}$. Normal gradient
+$= -e$. Normal equation: $y - \dfrac{1}{e} = -e(x - 1)$I.e. $y = -ex + e + \dfrac{1}{e}$.
 
 **Problem 15:** Let $u = x^2 + 4$$du = 2x\,dx$.
 $\displaystyle\int_0^1 \frac{x\,dx}{x^2 + 4} = \frac{1}{2}\int_4^5 \frac{du}{u} = \frac{1}{2}\bigl[\ln u\bigr]_4^5 = \frac{1}{2}\ln\!\left(\frac{5}{4}\right)$.
@@ -682,8 +690,10 @@ $\displaystyle\int_0^1 \frac{x\,dx}{x^2 + 4} = \frac{1}{2}\int_4^5 \frac{du}{u} 
 
 ## If You Get These Wrong, Revise:
 
-- **Differentiation rules and chain rule** → Review [./calculus](calculus) (sections on Differentiation Rules and Implicit Differentiation)
-- **Integration techniques** → Review [./calculus](calculus) (sections on Substitution and Integration by Parts)
+- **Differentiation rules and chain rule** → Review [./calculus](calculus) (sections on
+  Differentiation Rules and Implicit Differentiation)
+- **Integration techniques** → Review [./calculus](calculus) (sections on Substitution and
+  Integration by Parts)
 - **Trigonometric identities** → Review the geometry and trigonometry topics in this subject
 - **Exponential and logarithmic functions** → Review algebra and functions material
 - **Curve sketching fundamentals** → Review [./calculus](calculus) (section on Curve Sketching)
@@ -692,8 +702,10 @@ $\displaystyle\int_0^1 \frac{x\,dx}{x^2 + 4} = \frac{1}{2}\int_4^5 \frac{du}{u} 
 
 ## Related Content at Other Levels
 
-- **A-Level Differentiation and Integration:** [Mathematics](https://alevel.wyattau.com/docs/maths/maths)
-- **University Calculus:** [Multivariable Calculus](https://university.wyattau.com/docs/mathematics/multivariable-calculus)
+- **A-Level Differentiation and Integration:**
+  [Mathematics](https://alevel.wyattau.com/docs/maths/maths)
+- **University Calculus:**
+  [Multivariable Calculus](https://university.wyattau.com/docs/mathematics/multivariable-calculus)
 
 ## Summary
 

@@ -1,6 +1,8 @@
 ---
 title: Heap
-description: "C++ type system: Heap — 1. Virtual Memory Architecture; Pages; State of a Page; 2. The Linux/Unix Mechanisms (`brk` & `mmap`)."
+description:
+  'C++ type system: Heap — 1. Virtual Memory Architecture; Pages; State of a Page; 2. The Linux/Unix
+  Mechanisms (`brk` & `mmap`).'
 date: 2025-12-13T05:06:47.303Z
 tags:
   - cpp
@@ -8,6 +10,7 @@ categories:
   - cpp
 slug: heap
 ---
+
 Import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 When a C++ program executes `new int` or `std::vector::push_back`It requests "Dynamic Storage
@@ -22,13 +25,12 @@ Tables.
 
 ### Pages
 
-Memory is managed in fixed-size blocks called **Pages** ( 4KB, though 2MB Huge Pages
-Exist).
+Memory is managed in fixed-size blocks called **Pages** ( 4KB, though 2MB Huge Pages Exist).
 
 - **Implication:** You cannot ask the OS for 10 bytes. You must ask for a multiple of the Page Size
- (e.g., 4096 bytes).
+  (e.g., 4096 bytes).
 - **The User-Space Allocator's Job:** The allocator (malloc/new) requests raw Pages from the OS and
- subdivides them into small chunks (10 bytes, 32 bytes) for the application.
+  subdivides them into small chunks (10 bytes, 32 bytes) for the application.
 
 ### State of a Page
 
@@ -36,7 +38,7 @@ In modern OS architectures (Linux/Windows), a page in the heap can be in one of 
 
 1. **Free:** Not accessible. Accessing triggers a Segfault/Access Violation.
 2. **Reserved:** Address space is allocated, but no physical RAM is backed. Useful for large buffers
- (sparse arrays).
+   (sparse arrays).
 3. **Committed:** Backed by physical RAM (or swap).
 
 ## 2. The Linux/Unix Mechanisms (`brk` & `mmap`)
@@ -49,13 +51,13 @@ The "Data Segment" follows the code and static data in memory. The **Program Bre
 Of this segment.
 
 - **Action:** To allocate memory, `malloc` calls `sbrk(size)` to increment the pointer, effectively
- growing the heap upwards.
+  growing the heap upwards.
 - **Pros:** Extremely fast (simple pointer arithmetic in the kernel).
 - **Cons:**
- - **Contiguous constraint:** You can only grow or shrink the _end_. You cannot return a hole in
- the middle to the OS.
- - **Serialization:** Modifying the break is a global operation, requiring locking in
- multi-threaded apps.
+- **Contiguous constraint:** You can only grow or shrink the _end_. You cannot return a hole in the
+  middle to the OS.
+- **Serialization:** Modifying the break is a global operation, requiring locking in multi-threaded
+  apps.
 - **Usage:** used for small allocations (Small Bins).
 
 ### Mechanism B: Anonymous Mapping (`mmap`)
@@ -65,12 +67,12 @@ Kernel for a new, independent region of memory.
 
 - **Action:** `mmap(NULL, size, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, ...)`
 - **Pros:**
- - **Independent Lifetime:** This block can be returned to the OS (`munmap`) individually, reducing
- fragmentation.
- - **Security:** Mappings are randomized (ASLR).
+- **Independent Lifetime:** This block can be returned to the OS (`munmap`) individually, reducing
+  fragmentation.
+- **Security:** Mappings are randomized (ASLR).
 - **Cons:**
- - **Syscall Overhead:** Slower than `sbrk`.
- - **Page Faults:** Requires OS to zero-out pages for security.
+- **Syscall Overhead:** Slower than `sbrk`.
+- **Page Faults:** Requires OS to zero-out pages for security.
 
 ## 3. The Windows Mechanism (`VirtualAlloc`)
 
@@ -78,7 +80,7 @@ Windows does not use `brk`. Its heap manager relies entirely on the `VirtualAllo
 Granular control over the Reserve/Commit states.
 
 1. **`VirtualAlloc(MEM_RESERVE)`**: Reserves a range of addresses (e.g., 1GB) without consuming
- physical RAM.
+   physical RAM.
 2. **`VirtualAlloc(MEM_COMMIT)`**: Backs specific pages within that range with RAM.
 
 This mechanism is essentially equivalent to `mmap`But the explicit separation of Reserve/Commit
@@ -96,9 +98,9 @@ The C++ runtime includes a **User-Space Allocator** (implementations include gli
 
 1. **Arenas:** To prevent thread contention, memory is divided into Arenas (one per core/thread).
 2. **Bins / Free Lists:** Memory chunks are categorized by size (e.g., a list of available 32-byte
- chunks, 64-byte chunks).
+   chunks, 64-byte chunks).
 3. **Metadata:** Each chunk has a header (hidden bytes before the pointer returned to you) storing
- the size and flags.
+   the size and flags.
 
 ### The Cost of `new`
 
@@ -107,7 +109,7 @@ When you write `auto* p = new Widget();`:
 1. **Search:** The allocator looks in the "Widget-sized" free list.
 2. **Split:** If a block is found but is too big, it splits it.
 3. **Syscall (Rare):** If the free list is empty, it calls `sbrk` or `mmap` to get a new 4KB page
- from the OS.
+   from the OS.
 4. **Bookkeeping:** It updates the chunk header.
 
 This logic makes `new` non-deterministic and significantly slower than stack allocation.
@@ -146,9 +148,9 @@ Requirements. This means `malloc(1)` actually consumes 32 bytes.
 ### Fragmentation
 
 - **External Fragmentation:** Total free memory is sufficient, but no single contiguous block is
- large enough for the request. Common with `brk` heaps.
+  large enough for the request. Common with `brk` heaps.
 - **Internal Fragmentation:** Asking for 20 bytes but getting a 32-byte block (due to alignment and
- bin sizes).
+  bin sizes).
 
 ### Overcommit
 
@@ -157,20 +159,20 @@ Modern OS kernels (especially Linux) are often configured to **Overcommit**.
 - `malloc(1GB)` may succeed even if the system has only 512MB RAM.
 - The physical RAM is not consumed until you _write_ to the pages.
 - **Risk:** If you write to it and RAM is exhausted, the OOM (Out of Memory) Killer terminates the
- process.
+  process.
 
 ## 6. Stack vs Heap Allocation Tradeoffs
 
 Understanding when to use stack vs heap allocation is critical for performance and correctness:
 
-| Aspect | Stack Allocation | Heap Allocation |
+| Aspect         | Stack Allocation              | Heap Allocation                          |
 | -------------- | ----------------------------- | ---------------------------------------- |
-| Speed | ~1 cycle (pointer bump) | ~100-1000 cycles (search, bookkeeping) |
-| Size limit | Small ( 1-8 MB) | Large (limited by virtual address space) |
-| Lifetime | Automatic (scope-based) | Manual (delete/free or smart pointers) |
-| Thread safety | Each thread has its own stack | Shared heap --- requires synchronization |
-| Fragmentation | None (LIFO deallocation) | Both internal and external |
-| Cache locality | Excellent (contiguous) | Variable (depends on allocation pattern) |
+| Speed          | ~1 cycle (pointer bump)       | ~100-1000 cycles (search, bookkeeping)   |
+| Size limit     | Small ( 1-8 MB)               | Large (limited by virtual address space) |
+| Lifetime       | Automatic (scope-based)       | Manual (delete/free or smart pointers)   |
+| Thread safety  | Each thread has its own stack | Shared heap --- requires synchronization |
+| Fragmentation  | None (LIFO deallocation)      | Both internal and external               |
+| Cache locality | Excellent (contiguous)        | Variable (depends on allocation pattern) |
 
 **Rule of thumb:** Allocate on the stack by default. Use the heap only when:
 
@@ -341,31 +343,31 @@ The following member types and functions, with the specified semantics [N4950 §
 **Proof (by enumeration of requirements).** We verify each requirement from [N4950 §9.4.2.1]:
 
 1. **`value_type`**: Must be an alias for `T`. This allows containers to obtain the element type
- from the allocator.
+   from the allocator.
 
 2. **`A::allocate(n)`**: Must return a pointer to storage for `n` objects of type `T`. The storage
- must be aligned for `T` (at least `alignof(T)`). The storage is uninitialized --- no constructors
- are called.
+   must be aligned for `T` (at least `alignof(T)`). The storage is uninitialized --- no constructors
+   are called.
 
 3. **`A::deallocate(p, n)`**: Must deallocate storage previously returned by `allocate`. The pointer
- `p` must have been returned from `allocate` with the same `n`. After deallocation, `p` is
- invalid.
+   `p` must have been returned from `allocate` with the same `n`. After deallocation, `p` is
+   invalid.
 
 4. **`A::construct(ptr, args...)`** (deprecated in C++20): Constructs a `T` at `ptr` using placement
- new. In C++20, containers use `std::allocator_traits<A>::construct(a, p, args...)` which defaults
- to `::new(static_cast<void*>(p)) T(std::forward<Args>(args)...)`.
+   new. In C++20, containers use `std::allocator_traits<A>::construct(a, p, args...)` which defaults
+   to `::new(static_cast<void*>(p)) T(std::forward<Args>(args)...)`.
 
 5. **`A::destroy(ptr)`** (deprecated in C++20): Calls `ptr->~T()`. In C++20, containers use
- `std::allocator_traits<A>::destroy(a, p)`.
+   `std::allocator_traits<A>::destroy(a, p)`.
 
 6. **Equality**: `a1 == a2` returns `true` if memory allocated by `a1` can be deallocated by `a2`.
- For stateless allocators (like `std::allocator`), this is always `true`. For stateful allocators
- (like PMR allocators), this is `true` only if they share the same resource.
+   For stateless allocators (like `std::allocator`), this is always `true`. For stateful allocators
+   (like PMR allocators), this is `true` only if they share the same resource.
 
 7. **Propagation traits**: `propagate_on_container_copy_assignment`
- `propagate_on_container_move_assignment``propagate_on_container_swap`And `is_always_equal`
- control how allocators are transferred when containers are copied, moved, or swapped. These are
- critical for correctness with stateful allocators. QED.
+   `propagate_on_container_move_assignment``propagate_on_container_swap`And `is_always_equal`
+   control how allocators are transferred when containers are copied, moved, or swapped. These are
+   critical for correctness with stateful allocators. QED.
 
 ### Custom Allocator for Standard Containers
 
@@ -419,26 +421,26 @@ void tracking_demo() {
 
 ### Comparison of Allocation Strategies
 
-| Strategy | Allocation Cost | Deallocation Cost | Fragmentation | Use Case |
+| Strategy      | Allocation Cost | Deallocation Cost | Fragmentation       | Use Case                           |
 | ------------- | --------------- | ----------------- | ------------------- | ---------------------------------- |
-| `malloc` | ~50-500 ns | ~30-200 ns | External + Internal | General purpose |
-| Arena | ~1-5 ns | 0 (bulk free) | None | Parsing, compilation, game frames |
-| Pool | ~5-20 ns | ~5-20 ns | None (per size) | Fixed-size objects (nodes, events) |
-| Stack | ~1 ns | ~1 ns | None | Small, scope-bound objects |
-| Slab | ~5-10 ns | ~5-10 ns | Minimal | Kernel objects, cache-line sized |
-| PMR monotonic | ~1-5 ns | 0 (bulk free) | None | C++17 standard arena |
-| PMR pool | ~5-20 ns | ~5-20 ns | None (per size) | C++17 standard pool |
+| `malloc`      | ~50-500 ns      | ~30-200 ns        | External + Internal | General purpose                    |
+| Arena         | ~1-5 ns         | 0 (bulk free)     | None                | Parsing, compilation, game frames  |
+| Pool          | ~5-20 ns        | ~5-20 ns          | None (per size)     | Fixed-size objects (nodes, events) |
+| Stack         | ~1 ns           | ~1 ns             | None                | Small, scope-bound objects         |
+| Slab          | ~5-10 ns        | ~5-10 ns          | Minimal             | Kernel objects, cache-line sized   |
+| PMR monotonic | ~1-5 ns         | 0 (bulk free)     | None                | C++17 standard arena               |
+| PMR pool      | ~5-20 ns        | ~5-20 ns          | None (per size)     | C++17 standard pool                |
 
 ## 10. `malloc`/`free` Overhead Comparison
 
-| Operation | Approximate Cost (x86_64) | Notes |
+| Operation            | Approximate Cost (x86_64) | Notes                            |
 | -------------------- | ------------------------- | -------------------------------- |
-| Stack allocation | ~1 ns | Single pointer bump instruction |
-| `malloc` (cached) | ~50-100 ns | Fast bin hit, no syscall |
-| `malloc` (new) | ~200-500 ns | Syscall + page fault + zero-fill |
-| `free` | ~30-50 ns | Fast bin push, possible coalesce |
-| `new` (with ctor) | ~100-300 ns | `malloc` + constructor call |
-| `delete` (with dtor) | ~50-200 ns | Destructor call + `free` |
+| Stack allocation     | ~1 ns                     | Single pointer bump instruction  |
+| `malloc` (cached)    | ~50-100 ns                | Fast bin hit, no syscall         |
+| `malloc` (new)       | ~200-500 ns               | Syscall + page fault + zero-fill |
+| `free`               | ~30-50 ns                 | Fast bin push, possible coalesce |
+| `new` (with ctor)    | ~100-300 ns               | `malloc` + constructor call      |
+| `delete` (with dtor) | ~50-200 ns                | Destructor call + `free`         |
 
 These numbers are approximate and vary by platform, allocator implementation, allocation size, and
 Fragmentation state.
@@ -592,52 +594,52 @@ The complexity of the general-purpose allocator is why C++17/20/23 emphasizes **
 Resources (`std::pmr`)**.
 
 - **Monotonic Buffer:** Allocates a huge chunk via `new` (or `mmap`) once. Subsequent allocations
- are just `ptr++`.
+  are just `ptr++`.
 - **Pool Resource:** Pre-allocates specific block sizes to eliminate fragmentation for specific
- objects.
+  objects.
 - **Synchronized Pool:** Thread-safe version of pool resource.
 - See the dedicated `std::pmr` module for implementation details.
 
 ## Common Pitfalls
 
 1. **Assuming `malloc` always succeeds.** On Linux with overcommit, `malloc` can return non-null for
- allocations larger than physical RAM. The OOM killer will terminate your process later when you
- write to the memory.
+   allocations larger than physical RAM. The OOM killer will terminate your process later when you
+   write to the memory.
 
 2. **Mixing `new`/`delete` with `malloc`/`free`.** The C++ `new` expression calls `operator new`
- which may use a different allocator than `malloc`. Always pair `new` with `delete` and `malloc`
- with `free`.
+   which may use a different allocator than `malloc`. Always pair `new` with `delete` and `malloc`
+   with `free`.
 
 3. **Ignoring fragmentation in long-running processes.** External fragmentation causes allocation
- failures even when total free memory is sufficient. Use arena allocation or `std::pmr` for
- long-running workloads with many small allocations.
+   failures even when total free memory is sufficient. Use arena allocation or `std::pmr` for
+   long-running workloads with many small allocations.
 
 4. **Not checking `new` failure.** By default, `new` throws `std::bad_alloc` on failure. Use
- `new(std::nothrow)` to get `nullptr` instead, or catch the exception.
+   `new(std::nothrow)` to get `nullptr` instead, or catch the exception.
 
 5. **Premature optimization with custom allocators.** The default allocator is highly optimized for
- general use. Only switch to a custom allocator after profiling shows it is a bottleneck.
+   general use. Only switch to a custom allocator after profiling shows it is a bottleneck.
 
 6. **Forgetting alignment with custom allocators.** A custom `allocate()` must return memory aligned
- to at least `alignof(T)`. Returning misaligned memory causes undefined behavior on architectures
- that require aligned access (most ARM processors) and degrades performance on x86 due to
- unaligned load penalties.
+   to at least `alignof(T)`. Returning misaligned memory causes undefined behavior on architectures
+   that require aligned access (most ARM processors) and degrades performance on x86 due to
+   unaligned load penalties.
 
 7. **Allocator propagation bugs with stateful allocators.** When a container uses a stateful
- allocator (e.g., PMR), copy assignment, move assignment, and swap must handle the allocator
- correctly. The propagation traits (`propagate_on_container_copy_assignment`Etc.) determine
- whether the allocator is copied, moved, or swapped with the container. Getting these wrong causes
- containers to deallocate memory with the wrong allocator.
+   allocator (e.g., PMR), copy assignment, move assignment, and swap must handle the allocator
+   correctly. The propagation traits (`propagate_on_container_copy_assignment`Etc.) determine
+   whether the allocator is copied, moved, or swapped with the container. Getting these wrong causes
+   containers to deallocate memory with the wrong allocator.
 
 8. **Small buffer optimization in allocators.** Many standard library implementations of
- `std::string` and `std::function` use small buffer optimization (SBO) to avoid heap allocation
- for small objects. Custom allocators that track allocations may not see these SBO allocations,
- leading to confusing accounting. The SBO buffer is part of the object itself, not heap-allocated.
+   `std::string` and `std::function` use small buffer optimization (SBO) to avoid heap allocation
+   for small objects. Custom allocators that track allocations may not see these SBO allocations,
+   leading to confusing accounting. The SBO buffer is part of the object itself, not heap-allocated.
 
 9. **Thread safety of `malloc`/`free`.** The C standard guarantees that `malloc` and `free` are
- thread-safe [C11 §7.22.1]. However, the global heap lock is a significant contention point in
- multi-threaded applications. Arena and pool allocators reduce contention by giving each thread
- its own allocation context.
+   thread-safe [C11 §7.22.1]. However, the global heap lock is a significant contention point in
+   multi-threaded applications. Arena and pool allocators reduce contention by giving each thread
+   its own allocation context.
 
 ### Memory-Mapped Files and `mmap` for Large Data
 
@@ -693,27 +695,27 @@ Brokers) use NUMA-aware allocation:
 Heap corruption is insidious because the crash often occurs far from the root cause. Common causes:
 
 1. **Buffer overflow:** Writing past the end of a `malloc`'d block overwrites the next chunk's
- metadata (size, flags), causing the allocator to behave erratically on the next allocation or
- free.
+   metadata (size, flags), causing the allocator to behave erratically on the next allocation or
+   free.
 
 2. **Double free:** Freeing a block twice corrupts the free list. The second `free` may merge the
- already-freed block with adjacent free blocks, creating overlapping allocations.
+   already-freed block with adjacent free blocks, creating overlapping allocations.
 
 3. **Use-after-free:** Accessing freed memory. If the block has been recycled for a new allocation,
- the data is silently corrupted. If not recycled, the data may appear valid but will eventually be
- reclaimed.
+   the data is silently corrupted. If not recycled, the data may appear valid but will eventually be
+   reclaimed.
 
-4. **Mismatched allocator:** Calling `free()` on a pointer returned by `new`Or `delete` on a
- pointer returned by `malloc`.
+4. **Mismatched allocator:** Calling `free()` on a pointer returned by `new`Or `delete` on a pointer
+   returned by `malloc`.
 
 Detection tools:
 
-| Tool | What It Detects | Overhead | Platform |
+| Tool                  | What It Detects                       | Overhead | Platform              |
 | --------------------- | ------------------------------------- | -------- | --------------------- |
-| AddressSanitizer | Overflow, use-after-free, double-free | ~2x | Linux, macOS, Windows |
-| Valgrind Memcheck | All memory errors | 10-50x | Linux |
-| Valgrind Massif | Memory leaks, peak usage | 10-20x | Linux |
-| glibc `MALLOC_CHECK_` | Heap corruption (basic) | Minimal | Linux |
+| AddressSanitizer      | Overflow, use-after-free, double-free | ~2x      | Linux, macOS, Windows |
+| Valgrind Memcheck     | All memory errors                     | 10-50x   | Linux                 |
+| Valgrind Massif       | Memory leaks, peak usage              | 10-20x   | Linux                 |
+| glibc `MALLOC_CHECK_` | Heap corruption (basic)               | Minimal  | Linux                 |
 
 ## See Also
 

@@ -1,6 +1,8 @@
 ---
-title: "Optics -- Diagnostic Tests"
-description: "Hardest DSE optics questions: thin lens sign conventions, real vs virtual images, total internal reflection, compound lens systems, and optical instruments."
+title: 'Optics -- Diagnostic Tests'
+description:
+  'Hardest DSE optics questions: thin lens sign conventions, real vs virtual images, total internal
+  reflection, compound lens systems, and optical instruments.'
 slug: diag-optics
 hide_table_of_contents: true
 ---
@@ -13,11 +15,14 @@ hide_table_of_contents: true
 
 **Question:**
 
-A converging lens of focal length $10$ cm and a diverging lens of focal length $15$ cm are placed $30$ cm apart on the same principal axis. An object is placed $20$ cm to the left of the converging lens. Find the position, nature, and magnification of the final image.
+A converging lens of focal length $10$ cm and a diverging lens of focal length $15$ cm are placed
+$30$ cm apart on the same principal axis. An object is placed $20$ cm to the left of the converging
+lens. Find the position, nature, and magnification of the final image.
 
 **Solution:**
 
-**Sign convention:** Distances are measured from the lens. Real is positive for images (right of lens), and real objects are positive (left of lens).
+**Sign convention:** Distances are measured from the lens. Real is positive for images (right of
+lens), and real objects are positive (left of lens).
 
 **Lens 1 (converging, $f_1 = +10$ cm):**
 
@@ -35,7 +40,8 @@ $$\frac{1}{v_2} = \frac{1}{f_2} - \frac{1}{u_2} = \frac{1}{-15} - \frac{1}{10} =
 
 $$v_2 = -6 \text{ cm} \text{ (virtual image, 6 cm to the left of lens 2)}$$
 
-**Position:** $6$ cm to the left of the diverging lens (i.e., $24$ cm to the right of the converging lens).
+**Position:** $6$ cm to the left of the diverging lens (i.e., $24$ cm to the right of the converging
+lens).
 
 **Magnification:**
 
@@ -48,7 +54,8 @@ $$m_{\text{total}} = m_1 \times m_2 = -1 \times 0.6 = -0.6$$
 In the "real is positive" convention, $m = -0.6$ means the image is **inverted** and **diminished**
 To $0.6$ times the object size.
 
-**Key misconception:** Students often forget that the image from the first lens becomes the object for the second lens, and must correctly calculate $u_2$ accounting for the lens separation.
+**Key misconception:** Students often forget that the image from the first lens becomes the object
+for the second lens, and must correctly calculate $u_2$ accounting for the lens separation.
 
 ---
 
@@ -56,7 +63,10 @@ To $0.6$ times the object size.
 
 **Question:**
 
-A ray of light enters a $45°$-$90°$-$45°$ glass prism ($n = 1.5$) through the longest face (hypotenuse) at an angle of incidence of $30°$. Trace the path of the ray through the prism and determine whether total internal reflection occurs at any surface. If not, find the angle of emergence.
+A ray of light enters a $45°$-$90°$-$45°$ glass prism ($n = 1.5$) through the longest face
+(hypotenuse) at an angle of incidence of $30°$. Trace the path of the ray through the prism and
+determine whether total internal reflection occurs at any surface. If not, find the angle of
+emergence.
 
 **Solution:**
 
@@ -74,9 +84,11 @@ $$r_1 = 19.47°$$
 
 **Step 2: Ray travels to the first short face:**
 
-The ray makes an angle of $r_1 = 19.47°$ with the normal to the hypotenuse. We need the angle of incidence on the short face.
+The ray makes an angle of $r_1 = 19.47°$ with the normal to the hypotenuse. We need the angle of
+incidence on the short face.
 
-In the $45°$-$90°$-$45°$ prism, the normal to the hypotenuse is at $45°$ to each short face. The angle between the refracted ray and the normal to the short face:
+In the $45°$-$90°$-$45°$ prism, the normal to the hypotenuse is at $45°$ to each short face. The
+angle between the refracted ray and the normal to the short face:
 
 $$\theta_i = 90° - 45° - r_1 = 45° - 19.47° = 25.53°$$
 
@@ -100,7 +112,9 @@ $$\theta_e = 40.34°$$
 
 The ray emerges from the first short face at an angle of $40.34°$ to the normal.
 
-**Key insight:** Total internal reflection requires the angle of incidence to exceed the critical angle. Many students assume TIR occurs automatically in prisms without checking the actual angle of incidence at each surface.
+**Key insight:** Total internal reflection requires the angle of incidence to exceed the critical
+angle. Many students assume TIR occurs automatically in prisms without checking the actual angle of
+incidence at each surface.
 
 ---
 
@@ -108,7 +122,11 @@ The ray emerges from the first short face at an angle of $40.34°$ to the normal
 
 **Question:**
 
-A compound microscope has an objective lens of focal length $0.5$ cm and an eyepiece lens of focal length $2.5$ cm. The distance between the two lenses is $16$ cm. An object is placed $0.6$ cm from the objective. Find (a) the position of the intermediate image, (b) the position of the final image, (c) the total angular magnification, and (d) whether the final image is upright or inverted relative to the object.
+A compound microscope has an objective lens of focal length $0.5$ cm and an eyepiece lens of focal
+length $2.5$ cm. The distance between the two lenses is $16$ cm. An object is placed $0.6$ cm from
+the objective. Find (a) the position of the intermediate image, (b) the position of the final image,
+(c) the total angular magnification, and (d) whether the final image is upright or inverted relative
+to the object.
 
 **Solution:**
 
@@ -148,7 +166,11 @@ $$M_{\text{angular}} = 5 \times 11 = 55$$
 
 **(d) Image orientation:**
 
-$m_{\text{total}} = +1.19$ means the image is **upright** relative to the object. However, in a standard compound microscope, the image is inverted. The positive sign here arises because both individual magnifications are negative (both produce inverted images), and two inversions give an upright result. This is unusual for a microscope and occurs because the final image happens to be real rather than virtual at infinity.
+$m_{\text{total}} = +1.19$ means the image is **upright** relative to the object. However, in a
+standard compound microscope, the image is inverted. The positive sign here arises because both
+individual magnifications are negative (both produce inverted images), and two inversions give an
+upright result. This is unusual for a microscope and occurs because the final image happens to be
+real rather than virtual at infinity.
 
 ---
 
@@ -158,7 +180,8 @@ $m_{\text{total}} = +1.19$ means the image is **upright** relative to the object
 
 **Question:**
 
-A converging lens of focal length $15$ cm has a plane mirror placed $20$ cm behind it. An object is placed $10$ cm in front of the lens. Find the position and nature of the final image.
+A converging lens of focal length $15$ cm has a plane mirror placed $20$ cm behind it. An object is
+placed $10$ cm in front of the lens. Find the position and nature of the final image.
 
 **Solution:**
 
@@ -171,9 +194,9 @@ $$v_1 = -30 \text{ cm} \text{ (virtual image, 30 cm to the left of the lens)}$$
 **Step 2: Reflection from the mirror:**
 
 The light first passes through the lens, then reflects off the mirror, then passes through the lens
-Again. The diverging rays from the lens continue to the right and hit the mirror. For the mirror, the
-"object" is the virtual image of the lens at 30 cm to the left of the lens, which is $30 + 20 = 50$
-Cm to the left of the mirror. This is a virtual object for the mirror.
+Again. The diverging rays from the lens continue to the right and hit the mirror. For the mirror,
+the "object" is the virtual image of the lens at 30 cm to the left of the lens, which is
+$30 + 20 = 50$ Cm to the left of the mirror. This is a virtual object for the mirror.
 
 For a plane mirror, image distance $=$ object distance (on the other side):
 
@@ -181,17 +204,21 @@ $$v_{\text{mirror}} = -50 \text{ cm} \text{ (50 cm to the left of the mirror, i.
 
 **Step 3: Light passes through the lens again:**
 
-The image from the mirror (30 cm to the left of the lens) acts as a virtual object for the lens on the second pass. So $u_2 = -30$ cm (virtual object on the left).
+The image from the mirror (30 cm to the left of the lens) acts as a virtual object for the lens on
+the second pass. So $u_2 = -30$ cm (virtual object on the left).
 
 $$\frac{1}{v_2} = \frac{1}{f} - \frac{1}{u_2} = \frac{1}{15} - \frac{1}{-30} = \frac{1}{15} + \frac{1}{30} = \frac{3}{30} = \frac{1}{10}$$
 
 $$v_2 = 10 \text{ cm} \text{ (real image, 10 cm to the right of the lens)}$$
 
-But the mirror is 20 cm to the right of the lens, so the image would be formed between the lens and the mirror.
+But the mirror is 20 cm to the right of the lens, so the image would be formed between the lens and
+the mirror.
 
-**Final image:** Real, 10 cm to the right of the lens (between the lens and the mirror), and 10 cm to the left of the mirror.
+**Final image:** Real, 10 cm to the right of the lens (between the lens and the mirror), and 10 cm
+to the left of the mirror.
 
-**Key insight:** In lens-mirror combinations, light may pass through the lens twice. Each pass must be treated separately, and the image from one optical element becomes the object for the next.
+**Key insight:** In lens-mirror combinations, light may pass through the lens twice. Each pass must
+be treated separately, and the image from one optical element becomes the object for the next.
 
 ---
 
@@ -199,7 +226,10 @@ But the mirror is 20 cm to the right of the lens, so the image would be formed b
 
 **Question:**
 
-An optical fibre has a core of refractive index $1.50$ and a cladding of refractive index $1.45$. Find (a) the critical angle for the core-cladding boundary, (b) the maximum acceptance angle (numerical aperture), and (c) the minimum radius of curvature the fibre can bend without light escaping, given the light enters along the axis.
+An optical fibre has a core of refractive index $1.50$ and a cladding of refractive index $1.45$.
+Find (a) the critical angle for the core-cladding boundary, (b) the maximum acceptance angle
+(numerical aperture), and (c) the minimum radius of curvature the fibre can bend without light
+escaping, given the light enters along the axis.
 
 **Solution:**
 
@@ -219,17 +249,20 @@ $$\text{NA} = \sqrt{n_{\text{core}}^2 - n_{\text{cladding}}^2} = 0.384$$
 
 **(c) Minimum radius of curvature:**
 
-For light travelling along the axis of a bent fibre, the condition for TIR at the outer edge of the core requires that the angle of incidence at the core-cladding boundary exceeds $\theta_c$.
+For light travelling along the axis of a bent fibre, the condition for TIR at the outer edge of the
+core requires that the angle of incidence at the core-cladding boundary exceeds $\theta_c$.
 
 For a fibre bent with radius $R$The critical condition for axial light is:
 
 $$\cos\left(\frac{d}{R}\right) \geq \cos\theta_c$$
 
-Where $d$ is the core diameter. For light at the axis, the most demanding condition is at the outer edge. Approximating for small $d/R$:
+Where $d$ is the core diameter. For light at the axis, the most demanding condition is at the outer
+edge. Approximating for small $d/R$:
 
 $$\frac{d}{R} \leq \frac{\pi}{2} - \theta_c = 90° - 75.16° = 14.84° = 0.2591 \text{ rad}$$
 
-Without a specified core diameter, if we assume the light ray travels at the critical angle in the straight section:
+Without a specified core diameter, if we assume the light ray travels at the critical angle in the
+straight section:
 
 $$R_{\min} = \frac{d}{0.2591}$$
 
@@ -237,7 +270,8 @@ For a typical core diameter of $d = 50 \text{ }\mu\text{m}$:
 
 $$R_{\min} = \frac{50 \times 10^{-6}}{0.2591} = 1.93 \times 10^{-4} \text{ m} = 0.193 \text{ mm}$$
 
-**Key insight:** The numerical aperture determines the light-gathering ability of the fibre. A larger NA means more light can be accepted but at the cost of increased modal dispersion.
+**Key insight:** The numerical aperture determines the light-gathering ability of the fibre. A
+larger NA means more light can be accepted but at the cost of increased modal dispersion.
 
 ---
 
@@ -245,7 +279,11 @@ $$R_{\min} = \frac{50 \times 10^{-6}}{0.2591} = 1.93 \times 10^{-4} \text{ m} = 
 
 **Question:**
 
-A glass block of refractive index $1.52$ has a small air bubble trapped $3$ cm below the top surface. When viewed from directly above in air, the bubble appears to be at a depth of $1.97$ cm. Monochromatic light of wavelength $600$ nm (in vacuum) enters the glass block. Find (a) the verification of the apparent depth formula, (b) the wavelength of light inside the glass, and (c) the speed of light in the glass.
+A glass block of refractive index $1.52$ has a small air bubble trapped $3$ cm below the top
+surface. When viewed from directly above in air, the bubble appears to be at a depth of $1.97$ cm.
+Monochromatic light of wavelength $600$ nm (in vacuum) enters the glass block. Find (a) the
+verification of the apparent depth formula, (b) the wavelength of light inside the glass, and (c)
+the speed of light in the glass.
 
 **Solution:**
 
@@ -253,7 +291,8 @@ A glass block of refractive index $1.52$ has a small air bubble trapped $3$ cm b
 
 $$\text{Apparent depth} = \frac{\text{Real depth}}{n} = \frac{3}{1.52} = 1.974 \text{ cm} \approx 1.97 \text{ cm}$$
 
-This confirms the observed apparent depth. The formula works because rays refract away from the normal when exiting the glass, making the bubble appear closer to the surface.
+This confirms the observed apparent depth. The formula works because rays refract away from the
+normal when exiting the glass, making the bubble appear closer to the surface.
 
 **(b) Wavelength inside the glass:**
 
@@ -267,4 +306,7 @@ $$\lambda_{\text{glass}} = \frac{v}{f} = \frac{c/n}{f} = \frac{\lambda_0}{n} = \
 
 $$v = \frac{c}{n} = \frac{3 \times 10^8}{1.52} = 1.974 \times 10^8 \text{ m s}^{-1}$$
 
-**Key misconception:** Many students confuse the change in wavelength with a change in frequency. Frequency NEVER changes when light enters a different medium -- only the wavelength and speed change. The colour we perceive is determined by frequency (or equivalently, vacuum wavelength), not the wavelength inside the medium.
+**Key misconception:** Many students confuse the change in wavelength with a change in frequency.
+Frequency NEVER changes when light enters a different medium -- only the wavelength and speed
+change. The colour we perceive is determined by frequency (or equivalently, vacuum wavelength), not
+the wavelength inside the medium.

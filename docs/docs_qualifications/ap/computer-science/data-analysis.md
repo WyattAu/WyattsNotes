@@ -1,6 +1,8 @@
 ---
 title: Data Analysis
-description: "Data Analysis — Data Structures (CED Unit 3, AP CS A); Arrays; ArrayList (AP CS A); 2D Arrays with worked examples and exam-style questions."
+description:
+  'Data Analysis — Data Structures (CED Unit 3, AP CS A); Arrays; ArrayList (AP CS A); 2D Arrays
+  with worked examples and exam-style questions.'
 date: 2026-04-14
 tags:
   - Computer Science
@@ -9,6 +11,7 @@ categories:
   - Computer Science
 slug: data-analysis
 ---
+
 ## Data Structures (CED Unit 3, AP CS A)
 
 ### Arrays
@@ -67,14 +70,14 @@ int index = names.indexOf("Alice");
 
 **Array vs ArrayList:**
 
-| Feature | Array | ArrayList |
+| Feature         | Array          | ArrayList                |
 | --------------- | -------------- | ------------------------ |
-| Size | Fixed | Dynamic (resizable) |
-| Primitives | Yes | No (use wrapper classes) |
-| `length`/`size` | `arr.length` | `list.size()` |
-| Access | `arr[i]` | `list.get(i)` |
-| Modify | `arr[i] = val` | `list.set(i, val)` |
-| Add element | Not possible | `list.add(val)` |
+| Size            | Fixed          | Dynamic (resizable)      |
+| Primitives      | Yes            | No (use wrapper classes) |
+| `length`/`size` | `arr.length`   | `list.size()`            |
+| Access          | `arr[i]`       | `list.get(i)`            |
+| Modify          | `arr[i] = val` | `list.set(i, val)`       |
+| Add element     | Not possible   | `list.add(val)`          |
 
 ### 2D Arrays
 
@@ -140,14 +143,14 @@ Time complexity: $O(r \times c)$ where $r$ is rows and $c$ is columns.
 
 AP CSP uses generic list operations:
 
-| Operation | Description |
-| -------------------- | ------------------------------------------ |
-| `list[i]` | Access element at index `i` (1-indexed) |
-| `list[i] <- v` | Set element at index `i` to value `v` |
-| `INSERT(list, i, v)` | Insert `v` at index `i`Shifting right |
-| `APPEND(list, v)` | Add `v` to the end of `list` |
-| `REMOVE(list, i)` | Remove element at index `i`Shifting left |
-| `LENGTH(list)` | Number of elements in `list` |
+| Operation            | Description                              |
+| -------------------- | ---------------------------------------- |
+| `list[i]`            | Access element at index `i` (1-indexed)  |
+| `list[i] <- v`       | Set element at index `i` to value `v`    |
+| `INSERT(list, i, v)` | Insert `v` at index `i`Shifting right    |
+| `APPEND(list, v)`    | Add `v` to the end of `list`             |
+| `REMOVE(list, i)`    | Remove element at index `i`Shifting left |
+| `LENGTH(list)`       | Number of elements in `list`             |
 
 ## Strings (AP CS A)
 
@@ -155,17 +158,17 @@ Strings are immutable sequences of characters.
 
 ### Common Methods
 
-| Method | Description | Returns |
+| Method                      | Description                 | Returns   |
 | --------------------------- | --------------------------- | --------- |
-| `str.length()` | Number of characters | `int` |
-| `str.substring(start)` | From `start` to end | `String` |
-| `str.substring(start, end)` | From `start` to `end - 1` | `String` |
-| `str.indexOf(s)` | First occurrence of `s` | `int` |
-| `str.charAt(i)` | Character at index `i` | `char` |
-| `str.equals(other)` | Content equality (not `==`) | `boolean` |
-| `str.compareTo(other)` | Lexicographic comparison | `int` |
-| `str.toUpperCase()` | All uppercase | `String` |
-| `str.toLowerCase()` | All lowercase | `String` |
+| `str.length()`              | Number of characters        | `int`     |
+| `str.substring(start)`      | From `start` to end         | `String`  |
+| `str.substring(start, end)` | From `start` to `end - 1`   | `String`  |
+| `str.indexOf(s)`            | First occurrence of `s`     | `int`     |
+| `str.charAt(i)`             | Character at index `i`      | `char`    |
+| `str.equals(other)`         | Content equality (not `==`) | `boolean` |
+| `str.compareTo(other)`      | Lexicographic comparison    | `int`     |
+| `str.toUpperCase()`         | All uppercase               | `String`  |
+| `str.toLowerCase()`         | All lowercase               | `String`  |
 
 ### String Immutability
 
@@ -232,9 +235,8 @@ PROCEDURE findMin(list)
 ```
 
 **Proof of correctness.** The algorithm maintains the invariant: "min is the smallest element among
-All elements seen so far." Initially, min = list[1], true. At each step, if the new
-Element is smaller, we update min. By induction, after all elements, min is the smallest.
-$\blacksquare$
+All elements seen so far." Initially, min = list[1], true. At each step, if the new Element is
+smaller, we update min. By induction, after all elements, min is the smallest. $\blacksquare$
 
 ### Computing the Average
 
@@ -294,7 +296,7 @@ Time complexity: $O(n^2)$. A more efficient $O(n \log n)$ approach sorts the lis
 
 - **Symmetric encryption:** Same key for encryption and decryption (e.g., AES). Fast.
 - **Asymmetric encryption:** Public key for encryption, private key for decryption (e.g., RSA).
- Slower, but no need to share a secret key.
+  Slower, but no need to share a secret key.
 - **Hashing:** One-way function that produces a fixed-size output. Not encryption.
 
 **Salting passwords.** A salt is a random string added to the password before hashing. This prevents
@@ -339,10 +341,8 @@ for (String name : names) {
 
 ### Modifying ArrayList During Iteration
 
-:::warning
-Using `for-each` or an enhanced for loop, you cannot modify the ArrayList (add/remove)
-During iteration. Use an Iterator or iterate backwards with an index.
-:::
+:::warning Using `for-each` or an enhanced for loop, you cannot modify the ArrayList (add/remove)
+During iteration. Use an Iterator or iterate backwards with an index. :::
 
 ```java
 for (int i = names.size() - 1; i >= 0; i--) {
@@ -367,16 +367,16 @@ public class Student implements Comparable<Student> {
 
 ### Big-O Analysis of ArrayList Operations
 
-| Operation | Average | Worst |
+| Operation          | Average | Worst  |
 | ------------------ | ------- | ------ |
-| `get(i)` | $O(1)$ | $O(1)$ |
-| `add(item)` | $O(1)$ | $O(n)$ |
-| `add(i, item)` | $O(n)$ | $O(n)$ |
-| `remove(i)` | $O(n)$ | $O(n)$ |
-| `remove(Object)` | $O(n)$ | $O(n)$ |
-| `set(i, item)` | $O(1)$ | $O(1)$ |
-| `contains(Object)` | $O(n)$ | $O(n)$ |
-| `indexOf(Object)` | $O(n)$ | $O(n)$ |
+| `get(i)`           | $O(1)$  | $O(1)$ |
+| `add(item)`        | $O(1)$  | $O(n)$ |
+| `add(i, item)`     | $O(n)$  | $O(n)$ |
+| `remove(i)`        | $O(n)$  | $O(n)$ |
+| `remove(Object)`   | $O(n)$  | $O(n)$ |
+| `set(i, item)`     | $O(1)$  | $O(1)$ |
+| `contains(Object)` | $O(n)$  | $O(n)$ |
+| `indexOf(Object)`  | $O(n)$  | $O(n)$ |
 
 ### String Algorithms
 
@@ -444,12 +444,12 @@ int pow = (int)Math.pow(2, 10);    // 1024
 
 ### Wrapper Classes and Autoboxing (AP CS A)
 
-| Primitive | Wrapper |
+| Primitive | Wrapper   |
 | --------- | --------- |
-| int | Integer |
-| double | Double |
-| boolean | Boolean |
-| char | Character |
+| int       | Integer   |
+| double    | Double    |
+| boolean   | Boolean   |
+| char      | Character |
 
 ```java
 ArrayList<Integer> list = new ArrayList<>();
@@ -466,20 +466,18 @@ int c = (int) 2.9;    // 2 (truncation)
 double d = (double) 5 / 2;  // 2.5
 ```
 
-:::warning
-Always cast to `double` before division when you need a decimal result.
-:::
+:::warning Always cast to `double` before division when you need a decimal result. :::
 
 ## Practice Questions
 
 1. Write a Java method that finds and returns the mode (most frequent element) in an array of
- integers.
+   integers.
 
 2. Write a Java method `isSorted(int[] arr)` that returns `true` if the array is sorted in ascending
- order.
+   order.
 
 3. Given a 2D array representing a seating chart (0 = empty, 1 = occupied), write a method that
- counts the number of occupied seats.
+   counts the number of occupied seats.
 
 4. Write pseudocode for a procedure that removes all occurrences of a given value from a list.
 
@@ -502,24 +500,24 @@ Always cast to `double` before division when you need a decimal result.
 13. Write a Java method `isPalindrome(String s)` that ignores case and non-alphanumeric characters.
 
 14. Explain the difference between `ArrayIndexOutOfBoundsException` and `NullPointerException`. Give
- an example of code that causes each.
+    an example of code that causes each.
 
 15. Write a Java method that finds the two largest values in an array in a single pass.
 
 16. Write pseudocode for a procedure `mergeSorted(list1, list2)` that merges two sorted lists into
- one sorted list.
+    one sorted list.
 
 17. Explain what metadata is and give two examples where metadata could reveal sensitive
- information.
+    information.
 
 18. Write a Java method that counts the frequency of each character in a string and returns the
- results in a Map.
+    results in a Map.
 
 19. Explain the difference between an array and an ArrayList. Give three scenarios where you would
- use each.
+    use each.
 
 20. Write a Java method that takes a 2D array and returns the transpose of the matrix. What is the
- time complexity?
+    time complexity?
 
 ### Iterating Over 2D Arrays
 
@@ -659,12 +657,12 @@ Real-world data is often messy and requires cleaning before analysis:
 2. **Off-by-one errors with `substring`.** `substring(a, b)` includes index `a` but excludes `b`.
 3. **Confusing `ArrayList` size with array length.** `list.size()` vs `arr.length`.
 4. **Forgetting that strings are immutable.** Methods return new strings; they do not modify the
- original.
+   original.
 5. **Not handling empty arrays or null inputs.**
 6. **Confusing row and column indices in 2D arrays.** `grid[row][col]`.
 7. **Integer division in Java.** `5 / 2` equals `2`Not `2.5`. Cast to `double`.
 8. **Confusing `substring` parameters across languages.** Java `substring(1, 4)` returns chars at
- indices 1, 2, 3.
+   indices 1, 2, 3.
 
 ## Additional Topics
 
@@ -700,10 +698,8 @@ for (String name : names) {
 
 ### Modifying ArrayList During Iteration
 
-:::warning
-Using `for-each` or an enhanced for loop, you cannot modify the ArrayList (add/remove)
-During iteration. Use an Iterator or iterate backwards with an index.
-:::
+:::warning Using `for-each` or an enhanced for loop, you cannot modify the ArrayList (add/remove)
+During iteration. Use an Iterator or iterate backwards with an index. :::
 
 ```java
 for (int i = names.size() - 1; i >= 0; i--) {
@@ -728,16 +724,16 @@ public class Student implements Comparable<Student> {
 
 ### Big-O Analysis of ArrayList Operations
 
-| Operation | Average | Worst |
+| Operation          | Average | Worst  |
 | ------------------ | ------- | ------ |
-| `get(i)` | $O(1)$ | $O(1)$ |
-| `add(item)` | $O(1)$ | $O(n)$ |
-| `add(i, item)` | $O(n)$ | $O(n)$ |
-| `remove(i)` | $O(n)$ | $O(n)$ |
-| `remove(Object)` | $O(n)$ | $O(n)$ |
-| `set(i, item)` | $O(1)$ | $O(1)$ |
-| `contains(Object)` | $O(n)$ | $O(n)$ |
-| `indexOf(Object)` | $O(n)$ | $O(n)$ |
+| `get(i)`           | $O(1)$  | $O(1)$ |
+| `add(item)`        | $O(1)$  | $O(n)$ |
+| `add(i, item)`     | $O(n)$  | $O(n)$ |
+| `remove(i)`        | $O(n)$  | $O(n)$ |
+| `remove(Object)`   | $O(n)$  | $O(n)$ |
+| `set(i, item)`     | $O(1)$  | $O(1)$ |
+| `contains(Object)` | $O(n)$  | $O(n)$ |
+| `indexOf(Object)`  | $O(n)$  | $O(n)$ |
 
 ### Privacy Laws and Regulations
 
@@ -761,13 +757,13 @@ Include identity theft, financial loss, and reputational damage.
 ## Practice Questions
 
 1. Write a Java method that finds and returns the mode (most frequent element) in an array of
- integers.
+   integers.
 
 2. Write a Java method `isSorted(int[] arr)` that returns `true` if the array is sorted in ascending
- order.
+   order.
 
 3. Given a 2D array representing a seating chart (0 = empty, 1 = occupied), write a method that
- counts the number of occupied seats.
+   counts the number of occupied seats.
 
 4. Write pseudocode for a procedure that removes all occurrences of a given value from a list.
 
@@ -790,25 +786,27 @@ Include identity theft, financial loss, and reputational damage.
 13. Write a Java method `isPalindrome(String s)` that ignores case and non-alphanumeric characters.
 
 14. Explain the difference between `ArrayIndexOutOfBoundsException` and `NullPointerException`. Give
- an example of code that causes each.
+    an example of code that causes each.
 
 15. Write a Java method that finds the two largest values in an array in a single pass.
 
 16. Write pseudocode for a procedure `mergeSorted(list1, list2)` that merges two sorted lists into
- one sorted list.
+    one sorted list.
 
 17. Explain what metadata is and give two examples where metadata could reveal sensitive
- information.
+    information.
 
 18. Write a Java method that counts the frequency of each character in a string and returns the
- results in a Map.
+    results in a Map.
 
 ## Practice Problems
 
 <details>
 <summary>Question 1: 2D array traversal</summary>
 
-Write a Java method that finds the sum of all elements on the perimeter (border) of a 2D rectangular array. For example, in a 3x3 array, sum elements at positions (0,0), (0,1), (0,2), (1,0), (1,2), (2,0), (2,1), (2,2).
+Write a Java method that finds the sum of all elements on the perimeter (border) of a 2D rectangular
+array. For example, in a 3x3 array, sum elements at positions (0,0), (0,1), (0,2), (1,0), (1,2),
+(2,0), (2,1), (2,2).
 
 </details>
 
@@ -820,17 +818,17 @@ public static int perimeterSum(int[][] arr) {
     int sum = 0;
     int rows = arr.length;
     int cols = arr[0].length;
-    
+
     for (int j = 0; j < cols; j++) {
         sum += arr[0][j];         // top row
         sum += arr[rows-1][j];    // bottom row
     }
-    
+
     for (int i = 1; i < rows - 1; i++) {
         sum += arr[i][0];          // left column
         sum += arr[i][cols-1];     // right column
     }
-    
+
     return sum;
 }
 ```
@@ -842,7 +840,9 @@ Time complexity: $O(r + c)$ where $r$ is rows and $c$ is columns.
 <details>
 <summary>Question 2: ArrayList manipulation</summary>
 
-Given an `ArrayList<Integer>` containing the values `[3, 7, 2, 7, 5, 7, 1]`Write Java code that removes all occurrences of the value 7. Explain why iterating forward with a for-each loop would cause an error.
+Given an `ArrayList<Integer>` containing the values `[3, 7, 2, 7, 5, 7, 1]`Write Java code that
+removes all occurrences of the value 7. Explain why iterating forward with a for-each loop would
+cause an error.
 
 </details>
 
@@ -858,30 +858,39 @@ for (int i = list.size() - 1; i >= 0; i--) {
 // Result: [3, 2, 5, 1]
 ```
 
-Iterating forward causes a `ConcurrentModificationException` with a for-each loop because removing an element shifts subsequent elements left, causing the iterator to skip elements. Iterating backwards avoids this because removing an element only affects indices greater than the current one.
+Iterating forward causes a `ConcurrentModificationException` with a for-each loop because removing
+an element shifts subsequent elements left, causing the iterator to skip elements. Iterating
+backwards avoids this because removing an element only affects indices greater than the current one.
 
 </details>
 
 <details>
 <summary>Question 3: Data encryption</summary>
 
-Explain the difference between hashing and encryption. Why is hashing preferred over encryption for storing passwords?
+Explain the difference between hashing and encryption. Why is hashing preferred over encryption for
+storing passwords?
 
 </details>
 
 <details>
 <summary>Answer</summary>
 
-Hashing is a one-way function that produces a fixed-length output (hash) from input data. It cannot be reversed. Encryption is a two-way function: data is encrypted with a key and can be decrypted with the correct key.
+Hashing is a one-way function that produces a fixed-length output (hash) from input data. It cannot
+be reversed. Encryption is a two-way function: data is encrypted with a key and can be decrypted
+with the correct key.
 
-Hashing is preferred for passwords because: (1) Even if the database is compromised, attackers cannot reverse the hash to obtain the original password. (2) Passwords never need to be recovered in their original form -- only verification is needed (hash the input and compare). (3) Hashing with salt (adding random data before hashing) prevents rainbow table attacks.
+Hashing is preferred for passwords because: (1) Even if the database is compromised, attackers
+cannot reverse the hash to obtain the original password. (2) Passwords never need to be recovered in
+their original form -- only verification is needed (hash the input and compare). (3) Hashing with
+salt (adding random data before hashing) prevents rainbow table attacks.
 
 </details>
 
 <details>
 <summary>Question 4: Big-O analysis of combined operations</summary>
 
-An algorithm performs the following steps on an array of size $n$: (1) sorts the array using merge sort, (2) performs binary search on the sorted array $n$ times. What is the overall time complexity?
+An algorithm performs the following steps on an array of size $n$: (1) sorts the array using merge
+sort, (2) performs binary search on the sorted array $n$ times. What is the overall time complexity?
 
 </details>
 
@@ -890,7 +899,8 @@ An algorithm performs the following steps on an array of size $n$: (1) sorts the
 
 Step 1: Merge sort takes $O(n \log n)$.
 
-Step 2: Each binary search takes $O(\log n)$And it is performed $n$ times: $n \times O(\log n) = O(n \log n)$.
+Step 2: Each binary search takes $O(\log n)$And it is performed $n$ times:
+$n \times O(\log n) = O(n \log n)$.
 
 Overall: $O(n \log n) + O(n \log n) = O(n \log n)$.
 
@@ -899,18 +909,23 @@ Overall: $O(n \log n) + O(n \log n) = O(n \log n)$.
 <details>
 <summary>Question 5: Metadata and privacy</summary>
 
-A photographer uploads photos to a social media platform. Describe two types of metadata that might be embedded in the photos and explain the privacy risk each poses.
+A photographer uploads photos to a social media platform. Describe two types of metadata that might
+be embedded in the photos and explain the privacy risk each poses.
 
 </details>
 
 <details>
 <summary>Answer</summary>
 
-1. **GPS location data (EXIF):** Many cameras and smartphones embed the latitude and longitude where the photo was taken. Privacy risk: this reveals the photographer's home address, daily routine, or location of sensitive places (schools, workplaces).
+1. **GPS location data (EXIF):** Many cameras and smartphones embed the latitude and longitude where
+   the photo was taken. Privacy risk: this reveals the photographer's home address, daily routine,
+   or location of sensitive places (schools, workplaces).
 
-2. **Timestamp:** The date and time the photo was taken. Privacy risk: combined with location data, it can reveal detailed patterns of the photographer's movements and schedule.
+2. **Timestamp:** The date and time the photo was taken. Privacy risk: combined with location data,
+   it can reveal detailed patterns of the photographer's movements and schedule.
 
-Other examples include camera model, software version, and thumbnail previews. Users should strip metadata before sharing photos online.
+Other examples include camera model, software version, and thumbnail previews. Users should strip
+metadata before sharing photos online.
 
 </details>
 

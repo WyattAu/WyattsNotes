@@ -1,9 +1,11 @@
 ---
 title: Induction
 tags:
-- physics
+  - physics
 slug: Induction
-description: "Rigorous IB physics notes covering Induction. Includes definitions, derivations, worked examples, and exam-style problems."
+description:
+  'Rigorous IB physics notes covering Induction. Includes definitions, derivations, worked examples,
+  and exam-style problems.'
 ---
 
 ## Magnetic Flux
@@ -19,9 +21,9 @@ $$
 
 ### Magnetic Flux in Uniform Magnetic Field
 
-In a [uniform](./motion-in-electromagnetic-fields#uniform-fields) magnetic field, the magnetic
-Field ($\bm{B}$) is a space invariant, where if the surface also have no curvature (such as a
-Plane), then the magnetic flux can be expressed with the area ($\bm{A}$) of the plane:
+In a [uniform](./motion-in-electromagnetic-fields#uniform-fields) magnetic field, the magnetic Field
+($\bm{B}$) is a space invariant, where if the surface also have no curvature (such as a Plane), then
+the magnetic flux can be expressed with the area ($\bm{A}$) of the plane:
 
 $$
 \begin`\{aligned}`
@@ -63,10 +65,8 @@ $$
  \epsilon = -N\frac{\Delta \Phi_B}{\Delta t}
 $$
 
-:::info
-One situation that generates EMF is a magnet passing through a solenoid, where an EMF is
-Generated to oppose the change in flux through the coil.
-:::
+:::info One situation that generates EMF is a magnet passing through a solenoid, where an EMF is
+Generated to oppose the change in flux through the coil. :::
 
 ## Lenz's Law
 
@@ -81,15 +81,13 @@ Change in flux, it would create a runaway effect producing infinite energy.
 
 1. Identify whether magnetic flux is increasing or decreasing.
 2. If flux is **increasing**, the induced current creates a magnetic field to **oppose** the
- increase (opposite direction to the original field).
+   increase (opposite direction to the original field).
 3. If flux is **decreasing**, the induced current creates a magnetic field to **reinforce** the
- original field (same direction as the original field).
+   original field (same direction as the original field).
 4. Use the right-hand grip rule to find the current direction from the magnetic field direction.
 
-:::tip
-Exam Tip When answering Lenz's law questions, always state both: (a) the direction of the
-Induced current, and (b) **why** it flows in that direction (to oppose the change in flux).
-:::
+:::tip Exam Tip When answering Lenz's law questions, always state both: (a) the direction of the
+Induced current, and (b) **why** it flows in that direction (to oppose the change in flux). :::
 
 ## Motional EMF
 
@@ -183,11 +181,9 @@ $$
 - **Frequency** ($f$): number of complete cycles per second, $f = \frac{\omega}{2\pi}$
 - **Period** ($T$): time for one complete cycle, $T = \frac{1}{f}$
 
-:::tip
-Exam Tip RMS values are what multimeters display. Always use RMS values when calculating
+:::tip Exam Tip RMS values are what multimeters display. Always use RMS values when calculating
 Average power in AC circuits:
-$P_{\mathrm{avg}} = \frac{\epsilon_0^2}{2R} = \frac{\epsilon_{\mathrm{rms}}^2}{R}$
-:::
+$P_{\mathrm{avg}} = \frac{\epsilon_0^2}{2R} = \frac{\epsilon_{\mathrm{rms}}^2}{R}$ :::
 
 ## Transformers
 
@@ -291,20 +287,18 @@ Solenoid.
 
 ## Summary Table
 
-| Quantity | Formula | Units |
+| Quantity           | Formula                                      | Units       |
 | ------------------ | -------------------------------------------- | ----------- |
-| Magnetic flux | $\Phi_B = BA\cos\theta$ | Wb (Tm$^2$) |
-| Faraday's law | $\epsilon = -N\frac{\Delta\Phi_B}{\Delta t}$ | V |
-| Motional EMF | $\epsilon = Blv\sin\theta$ | V |
-| Peak AC EMF | $\epsilon_0 = NBA\omega$ | V |
-| Transformer ratio | $\frac{V_s}{V_p} = \frac{N_s}{N_p}$ | — |
-| Energy in inductor | $E = \frac{1}{2}LI^2$ | J |
+| Magnetic flux      | $\Phi_B = BA\cos\theta$                      | Wb (Tm$^2$) |
+| Faraday's law      | $\epsilon = -N\frac{\Delta\Phi_B}{\Delta t}$ | V           |
+| Motional EMF       | $\epsilon = Blv\sin\theta$                   | V           |
+| Peak AC EMF        | $\epsilon_0 = NBA\omega$                     | V           |
+| Transformer ratio  | $\frac{V_s}{V_p} = \frac{N_s}{N_p}$          | —           |
+| Energy in inductor | $E = \frac{1}{2}LI^2$                        | J           |
 
-:::tip
-Exam Tip In Paper 2, induction questions often combine Faraday's law with energy
+:::tip Exam Tip In Paper 2, induction questions often combine Faraday's law with energy
 Conservation. Make sure you can explain why Lenz's law is necessary (conservation of energy) and
-Derive the motional EMF expression from Faraday's law.
-:::
+Derive the motional EMF expression from Faraday's law. :::
 
 ---
 
@@ -318,12 +312,12 @@ Determine the direction of the induced current in the coil.
 **Solution:**
 
 1. The north pole approaches the left end of the solenoid, so the flux through the coil (directed to
- the right, towards the south pole of the magnet inside the coil) is **increasing**.
+   the right, towards the south pole of the magnet inside the coil) is **increasing**.
 2. By Lenz's law, the induced current creates a magnetic field that **opposes** this increase. The
- induced field inside the coil points to the **left** — making the left end of the coil a **north
- pole** to repel the approaching magnet.
+   induced field inside the coil points to the **left** — making the left end of the coil a **north
+   pole** to repel the approaching magnet.
 3. Using the right-hand grip rule (fingers curl in the direction of current, thumb points to the
- induced north pole), when viewed from the left end the current flows **counter-clockwise**.
+   induced north pole), when viewed from the left end the current flows **counter-clockwise**.
 
 ### Worked Example 5: Faraday's Law with Changing Area
 
@@ -462,8 +456,8 @@ $\rho = 1.7 \times 10^{-8}\,\Omega\mathrm{m}$.
 **Solution:**
 
 Model a thin annular ring at radius $r$ of width $dr$. The EMF induced in the ring is
-$d\epsilon = 2\pi B\omega r^2$And its resistance is $dR = \rho \cdot 2\pi r / (t\,dr)$. The power
-In the ring is:
+$d\epsilon = 2\pi B\omega r^2$And its resistance is $dR = \rho \cdot 2\pi r / (t\,dr)$. The power In
+the ring is:
 
 $$
 DP = \frac{(d\epsilon)^2}`\{dR}` = \frac{2\pi B^2\omega^2 r^3\,t\,dr}{\rho}
@@ -481,11 +475,9 @@ $$
 P = \frac{\pi(0.80)^2(300)^2(5.0 \times 10^{-3})(0.15)^4}{2(1.7 \times 10^{-8})} \approx 1.4 \times 10^{7}\mathrm{ W}
 $$
 
-:::warning
-This model assumes the entire disc is immersed in the field. In practice only a localized
+:::warning This model assumes the entire disc is immersed in the field. In practice only a localized
 Region passes through the field gap, so actual dissipation is far lower. The key result is the
-Scaling: $P \propto \omega^2$ and $P \propto R^4$.
-:::
+Scaling: $P \propto \omega^2$ and $P \propto R^4$. :::
 
 ---
 
@@ -513,13 +505,13 @@ Where $R$ is the total resistance of the motor windings.
 
 ### Startup vs Operating Speed
 
-- **At startup** ($\omega = 0$): $\epsilon_{\mathrm{back}} = 0$So $I = V_{\mathrm{supply}}/R$.
- This is the **maximum current** — it can be very large if $R$ is small, which is why motors often
- use a **starter resistor** or electronic speed controller to limit initial current.
+- **At startup** ($\omega = 0$): $\epsilon_{\mathrm{back}} = 0$So $I = V_{\mathrm{supply}}/R$. This
+  is the **maximum current** — it can be very large if $R$ is small, which is why motors often use a
+  **starter resistor** or electronic speed controller to limit initial current.
 - **At operating speed**: the back EMF increases with $\omega$ (since $\epsilon_{\mathrm{back}}$ is
- proportional to the rate of change of flux), reducing the net voltage and hence the current. The
- motor reaches a steady speed when the back EMF is large enough that the current produces just
- enough torque to balance the load torque.
+  proportional to the rate of change of flux), reducing the net voltage and hence the current. The
+  motor reaches a steady speed when the back EMF is large enough that the current produces just
+  enough torque to balance the load torque.
 
 ### Power Delivered to the Mechanical Load
 
@@ -543,8 +535,8 @@ Calculate: (a) the back EMF, (b) the mechanical power output, (c) the current at
 
 (b) $P_{\mathrm{mech}} = \epsilon_{\mathrm{back}} \cdot I = (100)(5.0) = 500\mathrm{ W}$
 
-(c) At startup, $\epsilon_{\mathrm{back}} = 0$So $I_{\mathrm{startup}} = 120/4.0 = 30\mathrm{ A}$
-— six times the operating current, confirming the need for startup protection.
+(c) At startup, $\epsilon_{\mathrm{back}} = 0$So $I_{\mathrm{startup}} = 120/4.0 = 30\mathrm{ A}$ —
+six times the operating current, confirming the need for startup protection.
 
 ---
 
@@ -823,11 +815,12 @@ $$
 
 ---
 
-:::tip
-Diagnostic Test
-Ready to test your understanding of **Induction**? The [diagnostic test](/docs/ib/physics/diagnostics/diag-induction) contains the hardest questions within the IB specification for this topic, each with a full worked solution.
+:::tip Diagnostic Test Ready to test your understanding of **Induction**? The
+[diagnostic test](/docs/ib/physics/diagnostics/diag-induction) contains the hardest questions within
+the IB specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Induction with other physics topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Induction
+with other physics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/ib/physics/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/ib/physics/diagnostics/diagnostic-guide) for instructions on
+self-marking and building a personal test matrix. :::

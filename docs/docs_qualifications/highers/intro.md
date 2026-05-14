@@ -1,7 +1,9 @@
 ---
 title: Scottish Highers
 date: 2026-04-14
-description: "Rigorous qualification exam notes covering Scottish Highers. Includes definitions, derivations, worked examples, and exam-style problems."
+description:
+  'Rigorous qualification exam notes covering Scottish Highers. Includes definitions, derivations,
+  worked examples, and exam-style problems.'
 tags:
   - Highers
   - Advanced Highers
@@ -10,25 +12,26 @@ categories:
   - Scottish Qualifications
 slug: intro
 ---
+
 # Scottish Highers and Advanced Highers
 
 Scottish Highers and Advanced Highers are the main qualifications taken by students in Scotland,
- between the ages of 16 and 18. They are administered by the **Scottish Qualifications
-Authority (SQA)** and are the standard entry requirements for Scottish universities, as well as
-Being widely recognised across the UK and internationally.
+between the ages of 16 and 18. They are administered by the **Scottish Qualifications Authority
+(SQA)** and are the standard entry requirements for Scottish universities, as well as Being widely
+recognised across the UK and internationally.
 
 ## Qualification Structure
 
 ### National 5
 
-The foundation level, taken in S4 (age 15-16). National 5s prepare students for the demands
-Of Higher study.
+The foundation level, taken in S4 (age 15-16). National 5s prepare students for the demands Of
+Higher study.
 
 ### Higher
 
- studied in S5 (age 16-17). Most students take 4-5 Highers. These are broadly equivalent to
-English A-Levels in terms of difficulty and university entrance requirements, though the structure
-And assessment differ.
+studied in S5 (age 16-17). Most students take 4-5 Highers. These are broadly equivalent to English
+A-Levels in terms of difficulty and university entrance requirements, though the structure And
+assessment differ.
 
 - Graded A, B, C, D (A being the highest)
 - Assessed by a combination of coursework (assignment) and a final SQA examination
@@ -36,26 +39,26 @@ And assessment differ.
 
 ### Advanced Higher
 
- studied in S6 (age 17-18). These are more specialised and go deeper into subject content
-Than Highers. They are broadly comparable to first-year university level work.
+studied in S6 (age 17-18). These are more specialised and go deeper into subject content Than
+Highers. They are broadly comparable to first-year university level work.
 
 - Graded A, B, C, D
 - Significant coursework component (often a project or dissertation)
 - Excellent preparation for university study
 - Some universities offer direct entry into second year for students with strong Advanced Higher
- results
+  results
 
 ## Subjects Covered
 
 These notes cover five key subjects at both Higher and Advanced Higher levels:
 
-| Subject | Higher Focus | Advanced Higher Focus |
+| Subject          | Higher Focus                                         | Advanced Higher Focus                                      |
 | ---------------- | ---------------------------------------------------- | ---------------------------------------------------------- |
-| Mathematics | Algebra, calculus, trigonometry, vectors | Further calculus, differential equations, Maclaurin series |
-| Physics | Mechanics, electricity, waves | Particles, quantum physics, fields |
-| Chemistry | Bonding, organic chemistry, acids/bases | Analytical methods, equilibrium, kinetics |
-| Biology | Cell biology, multicellular organisms, life on Earth | Genetics, metabolism, biotechnology |
-| Computer Science | Software design, databases, web design | Algorithms, data structures, functional programming |
+| Mathematics      | Algebra, calculus, trigonometry, vectors             | Further calculus, differential equations, Maclaurin series |
+| Physics          | Mechanics, electricity, waves                        | Particles, quantum physics, fields                         |
+| Chemistry        | Bonding, organic chemistry, acids/bases              | Analytical methods, equilibrium, kinetics                  |
+| Biology          | Cell biology, multicellular organisms, life on Earth | Genetics, metabolism, biotechnology                        |
+| Computer Science | Software design, databases, web design               | Algorithms, data structures, functional programming        |
 
 ## Assessment
 
@@ -67,7 +70,7 @@ Each Higher subject is assessed through:
 Advanced Higher subjects generally have:
 
 - A more substantial **project or dissertation** (often worth a significant proportion of the final
- mark)
+  mark)
 - An **external examination** with a greater emphasis on problem-solving and extended response
 
 ## Using These Notes

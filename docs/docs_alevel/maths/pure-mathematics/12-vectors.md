@@ -1,6 +1,8 @@
 ---
 title: Vectors
-description: "A-Level Mathematics notes on Vectors: Board Coverage; 1.1 Definition; 2.1 Magnitude; 2.3 Direction cosines with worked examples and exam-style questions."
+description:
+  'A-Level Mathematics notes on Vectors: Board Coverage; 1.1 Definition; 2.1 Magnitude; 2.3
+  Direction cosines with worked examples and exam-style questions.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Maths
@@ -9,19 +11,18 @@ categories:
   - Maths
 slug: vectors
 ---
+
 ## Board Coverage
 
-| Board | Paper | Notes |
+| Board      | Paper      | Notes                                              |
 | ---------- | ---------- | -------------------------------------------------- |
-| AQA | Paper 1, 2 | 2D vectors in P1; 3D vectors, scalar product in P2 |
-| Edexcel | P1, P2 | Similar split |
-| OCR (A) | Paper 1, 2 | Includes vector equations of lines |
-| CIE (9709) | P1, P2, P3 | 2D in P1; 3D and lines in P2/P3 |
+| AQA        | Paper 1, 2 | 2D vectors in P1; 3D vectors, scalar product in P2 |
+| Edexcel    | P1, P2     | Similar split                                      |
+| OCR (A)    | Paper 1, 2 | Includes vector equations of lines                 |
+| CIE (9709) | P1, P2, P3 | 2D in P1; 3D and lines in P2/P3                    |
 
-:::info
-The formula booklet gives the scalar product formula. You must be comfortable working in 3D
-And converting between column and $\mathbf{i},\mathbf{j},\mathbf{k}$ notation.
-:::
+:::info The formula booklet gives the scalar product formula. You must be comfortable working in 3D
+And converting between column and $\mathbf{i},\mathbf{j},\mathbf{k}$ notation. :::
 
 <hr />
 
@@ -112,9 +113,9 @@ The same triangle and parallelogram laws apply. The key properties are:
 
 - **Commutativity:** $\mathbf{a} + \mathbf{b} = \mathbf{b} + \mathbf{a}$
 - **Associativity:**
- $(\mathbf{a} + \mathbf{b}) + \mathbf{c} = \mathbf{a} + (\mathbf{b} + \mathbf{c})$
+  $(\mathbf{a} + \mathbf{b}) + \mathbf{c} = \mathbf{a} + (\mathbf{b} + \mathbf{c})$
 - **Zero vector:** $\mathbf{a} + \mathbf{0} = \mathbf{a}$ where
- $\mathbf{0} = \begin{pmatrix}0\\0\\0\end{pmatrix}$
+  $\mathbf{0} = \begin{pmatrix}0\\0\\0\end{pmatrix}$
 - **Additive inverse:** $\mathbf{a} + (-\mathbf{a}) = \mathbf{0}$
 
 Scalar multiplication also satisfies the distributive laws:
@@ -205,11 +206,9 @@ $$x = a_1 + tb_1, \quad y = a_2 + tb_2, \quad z = a_3 + tb_3$$
 
 In 2D, eliminating $t$: $\dfrac{x - a_1}{b_1} = \dfrac{y - a_2}{b_2}$.
 
-:::warning
-Warning
-$\mathbf{a}$And the direction vector $\mathbf{b}$ can be any non-zero scalar multiple of the
-Direction. Always check your answer gives a point and direction consistent with the question.
-:::
+:::warning Warning $\mathbf{a}$And the direction vector $\mathbf{b}$ can be any non-zero scalar
+multiple of the Direction. Always check your answer gives a point and direction consistent with the
+question. :::
 
 ### 5.4 Vector equation of a line in 3D
 
@@ -223,11 +222,8 @@ The parametric form is:
 
 $$x = x_0 + td_1, \quad y = y_0 + td_2, \quad z = z_0 + td_3$$
 
-:::tip
-Tip
-And $\overrightarrow{AB}$ as the direction vector. Alternatively, use $B$ and $\overrightarrow{BA}$
---- both give the same line.
-:::
+:::tip Tip And $\overrightarrow{AB}$ as the direction vector. Alternatively, use $B$ and
+$\overrightarrow{BA}$ --- both give the same line. :::
 
 **Example.** Find the vector equation of the line through $P(2, -1, 3)$ and $Q(5, 1, -2)$.
 
@@ -255,7 +251,7 @@ $\mathbf{r}_2 = \mathbf{a}_2 + s\mathbf{b}_2$:
 - If consistent: the lines **intersect** at the point found.
 - If inconsistent: the lines are **skew** (non-parallel and non-intersecting).
 - If $\mathbf{b}_1 = k\mathbf{b}_2$ for some scalar $k$: the lines are **parallel** (coincident if
- also $\mathbf{a}_2 - \mathbf{a}_1$ is parallel to $\mathbf{b}_1$).
+  also $\mathbf{a}_2 - \mathbf{a}_1$ is parallel to $\mathbf{b}_1$).
 
 ### 6.2 Skew lines
 
@@ -281,9 +277,9 @@ To find the shortest distance from point $P$ to line $\mathbf{r} = \mathbf{a} + 
 
 1. Let $Q$ be the closest point on the line to $P$.
 2. $\overrightarrow{PQ}$ is perpendicular to $\mathbf{b}$So
- $\overrightarrow{PQ}\cdot\mathbf{b} = 0$.
+   $\overrightarrow{PQ}\cdot\mathbf{b} = 0$.
 3. If $P$ has position vector $\mathbf{p}$Then
- $\overrightarrow{PQ} = \mathbf{a} + t\mathbf{b} - \mathbf{p}$.
+   $\overrightarrow{PQ} = \mathbf{a} + t\mathbf{b} - \mathbf{p}$.
 4. $(\mathbf{a} + t\mathbf{b} - \mathbf{p})\cdot\mathbf{b} = 0$ gives $t$.
 5. Substitute back to find $Q$ and compute $|\overrightarrow{PQ}|$.
 
@@ -299,11 +295,9 @@ $\overrightarrow{AP}$ and $\mathbf{d}$ whose magnitude equals the area of the pa
 Span. Dividing by $|\mathbf{d}|$ (the base) gives the perpendicular height, i.e. The shortest
 Distance.
 
-:::info
-When the cross product is not on your syllabus, use the dot-product method from Section 8.
+:::info When the cross product is not on your syllabus, use the dot-product method from Section 8.
 The cross-product formula is listed here for reference and is examined on CIE P3 and some OCR
-Papers.
-:::
+Papers. :::
 
 **Example using the dot-product method.** Find the distance from $P(4, 1, -1)$ to the line
 $\mathbf{r} = \begin{pmatrix}1\\0\\2\end{pmatrix} + t\begin{pmatrix}2\\1\\-1\end{pmatrix}$.
@@ -325,8 +319,8 @@ $d = \left|\begin{pmatrix}1/3\\2/3\\-2/3\end{pmatrix}\right| = \sqrt◆LB◆\dfr
 
 ### 9.1 Definition
 
-**Definition.** The **scalar triple product** of three vectors $\mathbf{a}$$\mathbf{b}$
-$\mathbf{c}$ is
+**Definition.** The **scalar triple product** of three vectors $\mathbf{a}$$\mathbf{b}$ $\mathbf{c}$
+is
 
 $$[\mathbf{a},\, \mathbf{b},\, \mathbf{c}] = \mathbf{a}\cdot(\mathbf{b}\times\mathbf{c})$$
 
@@ -352,14 +346,14 @@ $$V = \mathrm{base area} \times \mathrm{height} = |\mathbf{b}\times\mathbf{c}| \
 ### 9.3 Properties of the scalar triple product
 
 - **Cyclic permutation:**
- $[\mathbf{a},\, \mathbf{b},\, \mathbf{c}] = [\mathbf{b},\, \mathbf{c},\, \mathbf{a}] = [\mathbf{c},\, \mathbf{a},\, \mathbf{b}]$
+  $[\mathbf{a},\, \mathbf{b},\, \mathbf{c}] = [\mathbf{b},\, \mathbf{c},\, \mathbf{a}] = [\mathbf{c},\, \mathbf{a},\, \mathbf{b}]$
 - **Anti-symmetry:** Swapping any two vectors changes the sign:
- $[\mathbf{a},\, \mathbf{c},\, \mathbf{b}] = -[\mathbf{a},\, \mathbf{b},\, \mathbf{c}]$
+  $[\mathbf{a},\, \mathbf{c},\, \mathbf{b}] = -[\mathbf{a},\, \mathbf{b},\, \mathbf{c}]$
 - **Coplanarity test:** $\mathbf{a}$$\mathbf{b}$$\mathbf{c}$ are coplanar if and only if
- $[\mathbf{a},\, \mathbf{b},\, \mathbf{c}] = 0$ (the parallelepiped has zero volume).
+  $[\mathbf{a},\, \mathbf{b},\, \mathbf{c}] = 0$ (the parallelepiped has zero volume).
 - **Volume of a tetrahedron:**
- $V_{\mathrm{tet}} = \dfrac{1}{6}|\mathbf{a}\cdot(\mathbf{b}\times\mathbf{c})|$Since a
- tetrahedron is $\dfrac{1}{6}$ of a parallelepiped.
+  $V_{\mathrm{tet}} = \dfrac{1}{6}|\mathbf{a}\cdot(\mathbf{b}\times\mathbf{c})|$Since a tetrahedron
+  is $\dfrac{1}{6}$ of a parallelepiped.
 
 **Example.** Find the volume of the parallelepiped with edges
 $\mathbf{a} = \begin{pmatrix}2\\0\\1\end{pmatrix}$
@@ -388,7 +382,7 @@ Equivalently, $\overrightarrow{AB} \times \overrightarrow{BC} = \mathbf{0}$ (zer
 **Method:**
 
 1. Compute $\overrightarrow{AB} = \mathbf{b} - \mathbf{a}$ and
- $\overrightarrow{BC} = \mathbf{c} - \mathbf{b}$.
+   $\overrightarrow{BC} = \mathbf{c} - \mathbf{b}$.
 2. Check if one is a scalar multiple of the other.
 3. Alternatively, check if $\overrightarrow{AC}$ is parallel to $\overrightarrow{AB}$.
 
@@ -430,11 +424,9 @@ $\overrightarrow{AD} = \overrightarrow{BC}$).
 1. Compute the relevant displacement vectors.
 2. Show opposite sides are equal as vectors (same components).
 
-:::tip
-To show a quadrilateral is a **rhombus**, additionally show that adjacent sides have equal
+:::tip To show a quadrilateral is a **rhombus**, additionally show that adjacent sides have equal
 Magnitude. To show a **rectangle**, show that adjacent sides are perpendicular. A **square**
-Requires both conditions.
-:::
+Requires both conditions. :::
 
 ### 10.4 Using vectors in geometric proofs
 
@@ -442,7 +434,7 @@ Many geometry problems can be solved elegantly using vectors. The general strate
 
 1. Assign position vectors to key points.
 2. Express the relevant geometric conditions in vector form (parallelism via scalar multiples,
- perpendicularity via dot products, midpoints via averages).
+   perpendicularity via dot products, midpoints via averages).
 3. Compute and simplify algebraically.
 
 **Example.** In triangle $ABC$Let $M$ be the midpoint of $AB$. Prove that
@@ -841,14 +833,15 @@ The adjacent sides are not perpendicular, so $ABCD$ is **not** a rectangle.
 
 ---
 
-:::tip
-Tip
-Ready to test your understanding of **Vectors**? The [diagnostic test](/docs/alevel/maths/diagnostics/diag-vectors) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
+:::tip Tip Ready to test your understanding of **Vectors**? The
+[diagnostic test](/docs/alevel/maths/diagnostics/diag-vectors) contains the hardest questions within
+the A-Level specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Vectors with other pure mathematics topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Vectors
+with other pure mathematics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and
+building a personal test matrix. :::
 
 ## Common Pitfalls
 

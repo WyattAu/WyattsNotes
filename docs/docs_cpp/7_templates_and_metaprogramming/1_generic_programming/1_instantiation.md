@@ -1,6 +1,8 @@
 ---
 title: Template Instantiation, Monomorphization, and Code Bloat
-description: "C++: Template Instantiation, Monomorphization, and Code Bloat — Function Templates and Class Templates; Two-Phase Name Lookup."
+description:
+  'C++: Template Instantiation, Monomorphization, and Code Bloat — Function Templates and Class
+  Templates; Two-Phase Name Lookup.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -8,6 +10,7 @@ categories:
   - Cpp
 slug: template-instantiation-monomorphization-code-bloat
 ---
+
 # Template Instantiation, Monomorphization, and Code Bloat
 
 Templates are blueprints the compiler uses to generate type-specific code on demand. This process —
@@ -60,19 +63,19 @@ int main() {
 
 The compiler performs **monomorphization**: for each unique set of template arguments used, it
 Generates a separate copy of the template code. If you call `max_of<int>``max_of<double>`And
-`max_of<std::string>`The compiler produces three distinct functions. This is a form of
-Compile-time polymorphism --- there is no virtual dispatch, no vtable, and (when inlined) no call
-Overhead at all.
+`max_of<std::string>`The compiler produces three distinct functions. This is a form of Compile-time
+polymorphism --- there is no virtual dispatch, no vtable, and (when inlined) no call Overhead at
+all.
 
 ## Two-Phase Name Lookup
 
 The C++ standard specifies **two-phase name lookup** for templates [N4950 S13.8.3]:
 
 1. **Phase 1 (definition time):** Non-dependent names are looked up when the template is _defined_.
- A name is **non-dependent** if its meaning does not depend on a template parameter.
+   A name is **non-dependent** if its meaning does not depend on a template parameter.
 2. **Phase 2 (instantiation time):** Dependent names (those that _do_ depend on a template
- parameter) are looked up when the template is _instantiated_, using both the declaration context
- and the instantiation context.
+   parameter) are looked up when the template is _instantiated_, using both the declaration context
+   and the instantiation context.
 
 ```cpp
 #include <iostream>
@@ -100,12 +103,10 @@ int main() {
 }
 ```
 
-:::warning
-A non-dependent call like `g(42)` inside a template is bound at definition time [N4950
+:::warning A non-dependent call like `g(42)` inside a template is bound at definition time [N4950
 S13.8.3]. If a better overload of `g` is declared _after_ the template definition, it will **not**
 Be found. This is the single most surprising aspect of two-phase lookup and a frequent source of
-Bugs.
-:::
+Bugs. :::
 
 ### Formal Justification for Two-Phase Lookup
 
@@ -114,17 +115,17 @@ The template definition context and the instantiation context. The formal reason
 Two requirements:
 
 1. **Early error detection.** Non-dependent names contain no template parameters, so the compiler
- can and must verify their validity at the point of definition. Deferring these checks would allow
- semantic errors to propagate silently until instantiation, making templates unreliable as
- interfaces. Per [N4950 S13.8.3/2]: "If a name does not depend on a template-parameter, the name
- is looked up, the lookup is bound, and the semantic constraints are checked at the point at which
- the name is used."
+   can and must verify their validity at the point of definition. Deferring these checks would allow
+   semantic errors to propagate silently until instantiation, making templates unreliable as
+   interfaces. Per [N4950 S13.8.3/2]: "If a name does not depend on a template-parameter, the name
+   is looked up, the lookup is bound, and the semantic constraints are checked at the point at which
+   the name is used."
 
 2. **Late binding for type-dependent behavior.** Dependent names genuinely cannot be resolved at
- definition time. The expression `T::value` has no meaning until `T` is known, and `h(x)` where
- `x` has dependent type `T` may resolve to different overloads depending on what `T` is. Per
- [N4950 S13.8.3/6]: "If a name is dependent, the lookup is postponed until the template-parameter
- list is known."
+   definition time. The expression `T::value` has no meaning until `T` is known, and `h(x)` where
+   `x` has dependent type `T` may resolve to different overloads depending on what `T` is. Per
+   [N4950 S13.8.3/6]: "If a name is dependent, the lookup is postponed until the template-parameter
+   list is known."
 
 **Proof that non-dependent names are locked at phase 1.** Consider the following reasoning by
 Contradiction. Suppose a non-dependent call `g(42)` inside a template `f&lt;T&gt;` were not bound
@@ -163,17 +164,17 @@ A name is **dependent** if and only if it falls into one of the following catego
 S13.8.3]. This classification determines when the compiler performs name lookup and what
 Declarations are visible.
 
-| Category | Example | Dependent? | Lookup Phase |
+| Category                                                   | Example                       | Dependent?    | Lookup Phase |
 | ---------------------------------------------------------- | ----------------------------- | ------------- | ------------ |
-| Simple unqualified name, no template param involvement | `x``std::cout` | No | Phase 1 |
-| Qualified name where qualifier is non-dependent | `std::vector&lt;int&gt;` | No | Phase 1 |
-| Qualified name where qualifier depends on a template param | `T::value``T::iterator` | Yes | Phase 2 |
-| Unqualified function call with a dependent argument | `h(x)` where `x` has type `T` | Yes (via ADL) | Phase 2 |
-| Unqualified function call with all non-dependent args | `g(42)` | No | Phase 1 |
-| Member access through a dependent object or type | `this->foo()``t.bar()` | Yes | Phase 2 |
-| Type-dependent expression in `sizeof` / `decltype` | `sizeof(T)``decltype(x)` | Yes | Phase 2 |
-| `throw` expression with dependent type | `throw T{}` | Yes | Phase 2 |
-| `new` expression with dependent type | `new T()` | Yes | Phase 2 |
+| Simple unqualified name, no template param involvement     | `x``std::cout`                | No            | Phase 1      |
+| Qualified name where qualifier is non-dependent            | `std::vector&lt;int&gt;`      | No            | Phase 1      |
+| Qualified name where qualifier depends on a template param | `T::value``T::iterator`       | Yes           | Phase 2      |
+| Unqualified function call with a dependent argument        | `h(x)` where `x` has type `T` | Yes (via ADL) | Phase 2      |
+| Unqualified function call with all non-dependent args      | `g(42)`                       | No            | Phase 1      |
+| Member access through a dependent object or type           | `this->foo()``t.bar()`        | Yes           | Phase 2      |
+| Type-dependent expression in `sizeof` / `decltype`         | `sizeof(T)``decltype(x)`      | Yes           | Phase 2      |
+| `throw` expression with dependent type                     | `throw T{}`                   | Yes           | Phase 2      |
+| `new` expression with dependent type                       | `new T()`                     | Yes           | Phase 2      |
 
 The critical distinction is between the first two rows (non-dependent, phase 1) and everything else.
 Names in the first two rows are resolved once and permanently at definition time. Names in the
@@ -190,9 +191,9 @@ Called, which specialization gets selected, and which type aliases are resolved.
 For a **function template specialization**, the POI is defined recursively [N4950 S13.8.2/2]:
 
 1. The POI of a function template specialization is the **nearest enclosing namespace scope**
- **after** the declaration that triggers the instantiation.
+   **after** the declaration that triggers the instantiation.
 2. If the instantiation is triggered from within another template, the POI is nested within the POI
- of the enclosing template.
+   of the enclosing template.
 
 For a **class template specialization**, the POI is the first point at which the class is referenced
 In a way that requires a complete type [N4950 S13.8.2/4].
@@ -233,12 +234,10 @@ int main() {
 }
 ```
 
-:::warning
-Defining a specialization after its POI is **ill-formed, no diagnostic required** [N4950
+:::warning Defining a specialization after its POI is **ill-formed, no diagnostic required** [N4950
 S13.8.2/6]. The compiler may silently use the primary template instead. This is one of the most
 Insidious bugs in template code: the program compiles, links, and runs, but produces wrong results.
-Always define specializations before any potential point of use.
-:::
+Always define specializations before any potential point of use. :::
 
 ### Instantiation Point Bugs
 
@@ -435,9 +434,9 @@ There are three ways templates get instantiated [N4950 S13.9.2]:
 
 1. **Implicit instantiation** -- occurs when the code uses a template specialization (the default).
 2. **Explicit instantiation** -- `template class Stack<int>;` forces the compiler to generate the
- specialization in that translation unit.
+   specialization in that translation unit.
 3. **Explicit instantiation declaration** (`extern template`) -- `extern template class Stack<int>;`
- suppresses implicit instantiation; the specialization must be provided elsewhere.
+   suppresses implicit instantiation; the specialization must be provided elsewhere.
 
 ```cpp
 #include <iostream>
@@ -479,26 +478,26 @@ Of this technique.
 
 ### Implicit vs Explicit Instantiation Trade-offs
 
-| Aspect | Implicit | Explicit (`template class`) | `extern template` |
-| ----------------------- | ------------------------------------ | -------------------------------- | ---------------------------------------- |
-| When it occurs | At first use in each TU | At the declaration site | Suppressed; provided externally |
-| Compilation cost per TU | Full cost in each TU | Full cost in one TU only | Zero cost in this TU |
-| Symbol linkage | Weak (COMDAT) | Strong (global) | External reference |
-| ODR safety | Risk: different macro/include states | Safe: one canonical definition | Safe: one canonical definition |
-| Flexibility | Any type, anywhere | Must enumerate types upfront | Must enumerate types upfront |
-| Build time impact | High (scales with TU count) | Low (one TU does the work) | Low (one TU does the work) |
-| Typical use case | Most application code | Library headers with known types | Heavy templates in shared libs |
-| Header vs source | Header only | One TU, header declares `extern` | Header declares `extern`One TU defines |
+| Aspect                  | Implicit                             | Explicit (`template class`)      | `extern template`                      |
+| ----------------------- | ------------------------------------ | -------------------------------- | -------------------------------------- |
+| When it occurs          | At first use in each TU              | At the declaration site          | Suppressed; provided externally        |
+| Compilation cost per TU | Full cost in each TU                 | Full cost in one TU only         | Zero cost in this TU                   |
+| Symbol linkage          | Weak (COMDAT)                        | Strong (global)                  | External reference                     |
+| ODR safety              | Risk: different macro/include states | Safe: one canonical definition   | Safe: one canonical definition         |
+| Flexibility             | Any type, anywhere                   | Must enumerate types upfront     | Must enumerate types upfront           |
+| Build time impact       | High (scales with TU count)          | Low (one TU does the work)       | Low (one TU does the work)             |
+| Typical use case        | Most application code                | Library headers with known types | Heavy templates in shared libs         |
+| Header vs source        | Header only                          | One TU, header declares `extern` | Header declares `extern`One TU defines |
 
 ## How Compilers Implement Template Instantiation
 
 Compilers use one of two strategies for template instantiation [N4950 S13.9]:
 
 - **Greedy (at compile time):** Instantiate every specialization encountered during compilation. GCC
- and Clang use this approach. Each TU emits a weak symbol for each specialization; the linker
- deduplicates.
+  and Clang use this approach. Each TU emits a weak symbol for each specialization; the linker
+  deduplicates.
 - **Demand-driven (at link time):** Only instantiate what is actually needed. MSVC uses a variant of
- this approach with incremental compilation.
+  this approach with incremental compilation.
 
 The greedy approach means that if 50 translation units all include `#include <vector>` and use
 `std::vector<int>`All 50 TUs compile the full `std::vector<int>` implementation. The linker picks
@@ -556,23 +555,23 @@ Rules in the [Itanium C++ ABI](https://itanium-cxx-abi.github.io/cxx-abi/abi.htm
 Key implementation details:
 
 1. **Weak linkage (COMDAT).** On ELF platforms (Linux), each TU emits template instantiations as
- weak symbols in COMDAT groups. The linker selects one copy and discards the rest. This is the
- mechanism that makes implicit instantiation work correctly across TUs without ODR violations,
- provided all TUs see the same template definition.
+   weak symbols in COMDAT groups. The linker selects one copy and discards the rest. This is the
+   mechanism that makes implicit instantiation work correctly across TUs without ODR violations,
+   provided all TUs see the same template definition.
 
 2. **Strong linkage for explicit instantiations.** An explicit instantiation definition emits a
- strong (global) symbol. If two TUs both contain `template class Foo&lt;int&gt;;`The linker
- reports a duplicate symbol error. This is by design: explicit instantiation is a promise that
- this TU provides the canonical definition.
+   strong (global) symbol. If two TUs both contain `template class Foo&lt;int&gt;;`The linker
+   reports a duplicate symbol error. This is by design: explicit instantiation is a promise that
+   this TU provides the canonical definition.
 
 3. **Incremental compilation (MSVC).** MSVC can defer template instantiation to link time. This
- allows MSVC to avoid re-instantiating templates that have not changed, but can lead to different
- ODR behavior compared to the eager model. A specialization added between compilation and linking
- may be picked up by MSVC but not by GCC/Clang.
+   allows MSVC to avoid re-instantiating templates that have not changed, but can lead to different
+   ODR behavior compared to the eager model. A specialization added between compilation and linking
+   may be picked up by MSVC but not by GCC/Clang.
 
 4. **Per-TU instantiation caching.** Within a single TU, the compiler instantiates each unique
- `Template&lt;Args...&gt;` combination exactly once. If `std::vector&lt;int&gt;` is used in ten
- different functions within the same TU, the compiler instantiates it once and reuses the result.
+   `Template&lt;Args...&gt;` combination exactly once. If `std::vector&lt;int&gt;` is used in ten
+   different functions within the same TU, the compiler instantiates it once and reuses the result.
 
 ```cpp
 // Demonstrate weak vs strong linkage behavior
@@ -614,12 +613,12 @@ void use_tu2() {
 
 Template code has a significant asymmetry between debug and release builds:
 
-| Aspect | Debug (`-O0`) | Release (`-O2` / `-O3`) |
+| Aspect        | Debug (`-O0`)                                      | Release (`-O2` / `-O3`)                   |
 | ------------- | -------------------------------------------------- | ----------------------------------------- |
-| Inline depth | None (all calls are real function calls) | Aggressive (most calls inlined) |
-| Code size | Large (every specialization emits a separate copy) | Small after inlining + dedup |
-| Compile time | Slow (every specialization fully compiled) | Slow compilation, but linker deduplicates |
-| Debuggability | Easy: each specialization has a symbol | Hard: inlined code has no frame |
+| Inline depth  | None (all calls are real function calls)           | Aggressive (most calls inlined)           |
+| Code size     | Large (every specialization emits a separate copy) | Small after inlining + dedup              |
+| Compile time  | Slow (every specialization fully compiled)         | Slow compilation, but linker deduplicates |
+| Debuggability | Easy: each specialization has a symbol             | Hard: inlined code has no frame           |
 
 In debug builds, every template specialization produces a full function with a mangled symbol name.
 A single `std::vector<int>::push_back` call is a real call instruction. In release builds with
@@ -780,11 +779,9 @@ int main() {
 }
 ```
 
-:::warning
-`__attribute__((always_inline))` overrides the compiler's inlining heuristics. Use it
-Only when profiling confirms the overhead, for tiny leaf functions in hot loops. Overusing
-It increases code size and can degrade instruction cache performance.
-:::
+:::warning `__attribute__((always_inline))` overrides the compiler's inlining heuristics. Use it
+Only when profiling confirms the overhead, for tiny leaf functions in hot loops. Overusing It
+increases code size and can degrade instruction cache performance. :::
 
 ## Common Pitfalls
 
@@ -807,8 +804,8 @@ void use_in_tu2() { MyTemplate<int> obj; }
 // ODR violation: MyTemplate<int> has two different definitions
 ```
 
-The fix is to ensure template definitions are identical across all TUs, by keeping them in
-Headers with no conditional compilation affecting the template body.
+The fix is to ensure template definitions are identical across all TUs, by keeping them in Headers
+with no conditional compilation affecting the template body.
 
 ### Implicit Instantiation of Unused Members
 

@@ -1,9 +1,12 @@
 ---
 id: arrays-and-strings
 title: Arrays and Strings
-description: "Arrays and Strings — Array Fundamentals; Memory Layout and Cache Behaviour; Dynamic Arrays; String Representation with worked examples and exam-style questions."
+description:
+  'Arrays and Strings — Array Fundamentals; Memory Layout and Cache Behaviour; Dynamic Arrays;
+  String Representation with worked examples and exam-style questions.'
 slug: arrays-and-strings
 ---
+
 ## Array Fundamentals
 
 An array is a contiguous block of memory where each element occupies a fixed number of bytes and is
@@ -13,29 +16,29 @@ Single instruction: load from `base + i * element_size`.
 
 ### Memory Layout and Cache Behaviour
 
-Arrays have excellent spatial locality: accessing `arr[i]` loads the entire cache line ( 64
-Bytes) into L1 cache, so accessing `arr[i+1]``arr[i+2]`Etc. Hits cache. This is why a linear
-Scan through an array is 10-100x faster than following pointers through a linked list,
-Even though both are $O(n)$ in theory.
+Arrays have excellent spatial locality: accessing `arr[i]` loads the entire cache line ( 64 Bytes)
+into L1 cache, so accessing `arr[i+1]``arr[i+2]`Etc. Hits cache. This is why a linear Scan through
+an array is 10-100x faster than following pointers through a linked list, Even though both are
+$O(n)$ in theory.
 
-| Property | Array | Linked List |
+| Property         | Array                       | Linked List              |
 | ---------------- | --------------------------- | ------------------------ |
-| Access by index | $O(1)$ | $O(n)$ |
-| Insert at front | $O(n)$ | $O(1)$ |
-| Insert at back | $O(1)$ amortised | $O(1)$ with tail pointer |
-| Insert in middle | $O(n)$ | $O(1)$ with pointer |
-| Cache behaviour | Excellent (contiguous) | Poor (pointer chasing) |
-| Memory overhead | None (or small for dynamic) | One pointer per element |
+| Access by index  | $O(1)$                      | $O(n)$                   |
+| Insert at front  | $O(n)$                      | $O(1)$                   |
+| Insert at back   | $O(1)$ amortised            | $O(1)$ with tail pointer |
+| Insert in middle | $O(n)$                      | $O(1)$ with pointer      |
+| Cache behaviour  | Excellent (contiguous)      | Poor (pointer chasing)   |
+| Memory overhead  | None (or small for dynamic) | One pointer per element  |
 
 ### Dynamic Arrays
 
-Dynamic arrays (Python `list`C++ `std::vector`Java `ArrayList`) automatically resize when full.
-The standard strategy is geometric growth: when capacity is exhausted, allocate a new array of
-Capacity $c \cdot m$ (where $c$ is the growth factor, 2) and copy all elements.
+Dynamic arrays (Python `list`C++ `std::vector`Java `ArrayList`) automatically resize when full. The
+standard strategy is geometric growth: when capacity is exhausted, allocate a new array of Capacity
+$c \cdot m$ (where $c$ is the growth factor, 2) and copy all elements.
 
 - **Growth factor of 2**: amortised $O(1)$ per append, but memory usage can be up to $2n$
 - **Growth factor of 1.5**: amortised $O(1)$ per append, and the old array can sometimes be reused
- (for memory allocators that support in-place resizing)
+  (for memory allocators that support in-place resizing)
 
 ```python
 class DynamicArray:
@@ -89,18 +92,18 @@ Numbering over 149,000 characters across code points 0x0000 to 0x10FFFF.
 
 UTF-8 is a variable-width encoding of Unicode:
 
-| Code Point Range | Byte Pattern | Binary Representation |
+| Code Point Range    | Byte Pattern | Binary Representation                 |
 | ------------------- | ------------ | ------------------------------------- |
-| U+0000 to U+007F | 1 byte | `0xxxxxxx` |
-| U+0080 to U+07FF | 2 bytes | `110xxxxx 10xxxxxx` |
-| U+0800 to U+FFFF | 3 bytes | `1110xxxx 10xxxxxx 10xxxxxx` |
-| U+10000 to U+10FFFF | 4 bytes | `11110xxx 10xxxxxx 10xxxxxx 10xxxxxx` |
+| U+0000 to U+007F    | 1 byte       | `0xxxxxxx`                            |
+| U+0080 to U+07FF    | 2 bytes      | `110xxxxx 10xxxxxx`                   |
+| U+0800 to U+FFFF    | 3 bytes      | `1110xxxx 10xxxxxx 10xxxxxx`          |
+| U+10000 to U+10FFFF | 4 bytes      | `11110xxx 10xxxxxx 10xxxxxx 10xxxxxx` |
 
 Key properties of UTF-8:
 
 - **ASCII compatible**: the first 128 characters are identical to ASCII
 - **Self-synchronising**: you can start decoding from any byte boundary (if you land on a
- continuation byte, skip backwards until you find a leading byte)
+  continuation byte, skip backwards until you find a leading byte)
 - **Prefix-free**: no valid UTF-8 sequence is a prefix of another valid sequence
 
 This matters for algorithms: iterating over a UTF-8 string by code point is $O(n)$ in bytes, but
@@ -110,14 +113,14 @@ UTF-8 (in CPython 3.3+, PEP 393).
 
 ### String Complexity
 
-| Operation | Python `str` | C `char[]` | Notes |
+| Operation        | Python `str`        | C `char[]`             | Notes                     |
 | ---------------- | ------------------- | ---------------------- | ------------------------- |
-| Length | $O(1)$ | $O(n)$ (with `strlen`) | Python stores length |
-| Access by index | $O(1)$ | $O(1)$ | Code point, not byte |
-| Concatenation | $O(n+m)$ | $O(n+m)$ | Python creates new object |
-| Substring | $O(k)$ | $O(k)$ | $k$ = length of substring |
-| Split | $O(n)$ | $O(n)$ | Scans entire string |
-| Find (substring) | $O(nm)$ to $O(n+m)$ | $O(nm)$ to $O(n+m)$ | Depends on algorithm |
+| Length           | $O(1)$              | $O(n)$ (with `strlen`) | Python stores length      |
+| Access by index  | $O(1)$              | $O(1)$                 | Code point, not byte      |
+| Concatenation    | $O(n+m)$            | $O(n+m)$               | Python creates new object |
+| Substring        | $O(k)$              | $O(k)$                 | $k$ = length of substring |
+| Split            | $O(n)$              | $O(n)$                 | Scans entire string       |
+| Find (substring) | $O(nm)$ to $O(n+m)$ | $O(nm)$ to $O(n+m)$    | Depends on algorithm      |
 
 ## Two-Pointer Technique
 
@@ -413,11 +416,11 @@ class HashMapChaining:
 **Open addressing:** All elements are stored in the array itself. When a collision occurs, probe for
 The next empty slot using a deterministic sequence.
 
-| Strategy | Probe Sequence | Clustering |
+| Strategy          | Probe Sequence                          | Clustering           |
 | ----------------- | --------------------------------------- | -------------------- |
-| Linear probing | $h(k), h(k)+1, h(k)+2, \ldots$ | Primary clustering |
-| Quadratic probing | $h(k), h(k)+1^2, h(k)+2^2, \ldots$ | Secondary clustering |
-| Double hashing | $h(k), h(k)+h'(k), h(k)+2h'(k), \ldots$ | No clustering |
+| Linear probing    | $h(k), h(k)+1, h(k)+2, \ldots$          | Primary clustering   |
+| Quadratic probing | $h(k), h(k)+1^2, h(k)+2^2, \ldots$      | Secondary clustering |
+| Double hashing    | $h(k), h(k)+h'(k), h(k)+2h'(k), \ldots$ | No clustering        |
 
 **Robin Hood hashing:** A variant of open addressing where elements with shorter probe distances are
 Favoured. When inserting, if the new element has a longer probe distance than the existing element,

@@ -1,6 +1,8 @@
 ---
 title: Reference Collapsing and Forwarding References
-description: "C++: Reference Collapsing and Forwarding References — 3.1 The Rules; 3.2 Where Collapsing Occurs; 3.3 Code Example for thorough revision and examination."
+description:
+  'C++: Reference Collapsing and Forwarding References — 3.1 The Rules; 3.2 Where Collapsing Occurs;
+  3.3 Code Example for thorough revision and examination.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -8,6 +10,7 @@ categories:
   - Cpp
 slug: reference-collapsing-and-forwarding-references
 ---
+
 # Reference Collapsing and Forwarding References
 
 Reference collapsing is the template mechanism that enables a single function template to accept
@@ -21,12 +24,12 @@ Reference collapsing occurs when a reference to a reference is formed during **t
 Deduction** or **typedef/alias template substitution** [N4950 §13.3.2.3]. The language defines four
 Rules:
 
-| Form | Collapses To |
+| Form     | Collapses To |
 | :------- | :----------: |
-| `T& &` | `T&` |
-| `T& &&` | `T&` |
-| `T&& &` | `T&` |
-| `T&& &&` | `T&&` |
+| `T& &`   |     `T&`     |
+| `T& &&`  |     `T&`     |
+| `T&& &`  |     `T&`     |
+| `T&& &&` |    `T&&`     |
 
 The rule is simple: **if any component is an lvalue reference (`&`), the result is an lvalue
 Reference.** Only when both components are rvalue references (`&&`) does the result remain an rvalue
@@ -79,21 +82,19 @@ void collapsing_demo() {
 }
 ```
 
-:::info
-Relevance Reference collapsing is the mechanism that enables **forwarding references**
+:::info Relevance Reference collapsing is the mechanism that enables **forwarding references**
 (Section 4). Without collapsing, a `T&&` parameter could not bind to lvalues — the deduction would
 Always produce `T&&`Which cannot accept lvalues. Collapsing allows `T&&` to become `T&` when an
-Lvalue is passed, making perfect forwarding possible.
-:::
+Lvalue is passed, making perfect forwarding possible. :::
 
 ## 4.1 Distinguishing Forwarding References from Rvalue References
 
 The syntax `T&&` has two distinct meanings depending on context:
 
 1. **Rvalue reference:** `void f(int&& x)` — `T` is a concrete type, not deduced. This function
- accepts **only rvalues**.
+   accepts **only rvalues**.
 2. **Forwarding reference (universal reference):** `template<typename T> void f(T&& x)` — `T` is a
- deduced template parameter. This function accepts **both lvalues and rvalues**.
+   deduced template parameter. This function accepts **both lvalues and rvalues**.
 
 The critical distinction is whether `T` is being **deduced** [N4950 §13.3.2.3]. If `T` appears in a
 `template<typename T>` parameter list and is used as `T&&`It is a forwarding reference. Otherwise,
@@ -153,11 +154,9 @@ void not_forwarding() {
 }
 ```
 
-:::warning
-If you add a constraint like `requires` that depends on `T`The parameter `T&&` is
-**not** a forwarding reference — it becomes a plain rvalue reference. The forwarding reference
-Deduction requires that `T` be a freshly deduced, unconstrained type parameter.
-:::
+:::warning If you add a constraint like `requires` that depends on `T`The parameter `T&&` is **not**
+a forwarding reference — it becomes a plain rvalue reference. The forwarding reference Deduction
+requires that `T` be a freshly deduced, unconstrained type parameter. :::
 
 ## 4.3 `std::forward<T>(x)` — Perfect Forwarding
 
@@ -165,9 +164,9 @@ Deduction requires that `T` be a freshly deduced, unconstrained type parameter.
 Original value category of the argument:
 
 - If the caller passed an **lvalue**, `T` was deduced as `U&`So `T&&` collapses to `U&` —
- `std::forward` returns an lvalue reference.
+  `std::forward` returns an lvalue reference.
 - If the caller passed an **rvalue**, `T` was deduced as `U`So `T&&` is `U&&` — `std::forward`
- returns an rvalue reference.
+  returns an rvalue reference.
 
 ```cpp
 #include <utility>
@@ -271,13 +270,11 @@ int main() {
 }
 ```
 
-:::info
-Relevance Perfect forwarding is the mechanism behind `std::make_unique``std::make_shared`
+:::info Relevance Perfect forwarding is the mechanism behind `std::make_unique``std::make_shared`
 `std::vector::emplace_back`And virtually every factory or emplacement function in the standard
 Library. Without forwarding references and `std::forward`These functions would be forced to copy
 Their arguments or require separate overloads for every combination of lvalue/rvalue parameters — a
-Combinatorial explosion.
-:::
+Combinatorial explosion. :::
 
 ## See Also
 
@@ -306,7 +303,7 @@ The deduction process for forwarding references [N4950 §13.3.2.3]:
 
 1. The argument `y` is an lvalue of type `int`.
 2. Under forwarding reference rules, when the argument is an lvalue, `T` is deduced as `int&` (not
- `int`).
+   `int`).
 3. The parameter type `T&&` becomes `int& &&`.
 4. Reference collapsing applies: `int& &&` → `int&`.
 5. The parameter `x` has type `int&` — an lvalue reference.
@@ -379,11 +376,9 @@ void range_for_forwarding() {
 }
 ```
 
-:::tip
-In `for (auto&& x : expr)`The `auto&&` is a forwarding reference. This is the idiomatic way
+:::tip In `for (auto&& x : expr)`The `auto&&` is a forwarding reference. This is the idiomatic way
 To write generic range-based for loops that work with both lvalue and rvalue ranges, and with proxy
-Iterators that return prvalues (like `std::vector<bool>`).
-:::
+Iterators that return prvalues (like `std::vector<bool>`). :::
 
 ## 5.3 `std::forward` Implementation Detail
 
@@ -538,14 +533,12 @@ void variadic_demo() {
 }
 ```
 
-:::warning
-The `capture` function above is **unsafe** — it stores references to temporaries (the
+:::warning The `capture` function above is **unsafe** — it stores references to temporaries (the
 Literal `42` produces a `const int&` in the tuple, which dangles if the tuple outlives the full
 Expression). `std::make_tuple` decays its arguments, so rvalues are copied/moved, but lvalues are
 Stored as references. For safe capture, use `std::make_tuple(std::decay_t&lt;Args>(args)...)` to
 Always store by value, or `std::forward_as_tuple(args...)` which explicitly stores references with
-The same lifetime concerns documented.
-:::
+The same lifetime concerns documented. :::
 
 ## 5.6 Forwarding in Class Templates
 
@@ -609,12 +602,12 @@ struct SafeWidget {
 
 ## 5.7 `std::forward` vs `std::move` — When to Use Which
 
-| Situation | Use | Reason |
+| Situation                         | Use                  | Reason                                     |
 | :-------------------------------- | :------------------- | :----------------------------------------- |
-| Forwarding a function parameter | `std::forward<T>` | Preserves original value category |
-| Unconditionally casting to rvalue | `std::move(x)` | Intentionally discarding the source object |
-| Moving a local variable | `std::move(x)` | Local is about to be destroyed anyway |
-| In a factory/emplacement function | `std::forward<Args>` | Each arg may be lvalue or rvalue |
+| Forwarding a function parameter   | `std::forward<T>`    | Preserves original value category          |
+| Unconditionally casting to rvalue | `std::move(x)`       | Intentionally discarding the source object |
+| Moving a local variable           | `std::move(x)`       | Local is about to be destroyed anyway      |
+| In a factory/emplacement function | `std::forward<Args>` | Each arg may be lvalue or rvalue           |
 
 `std::move` is equivalent to `std::forward<T>` where `T` is deduced as a non-reference type. It is
 Syntactic sugar for `static_cast<T&&>(x)`. Use `std::forward` only when you have a forwarding
@@ -651,15 +644,15 @@ void move_vs_forward() {
 ## Common Pitfalls
 
 1. **Calling `std::forward` outside of a forwarding reference context:** `std::move(x)` is
- equivalent to `std::forward<remove_reference_t<decltype(x)>>(x)`. But `std::forward<T>(x)`
- requires `T` to be the **deduced** template parameter from a forwarding reference. If you call
- `std::forward<int>(x)` where `x` is an lvalue, you get an rvalue reference — this is effectively
- `std::move`Not forwarding. The distinction matters only for correctness of intent.
+   equivalent to `std::forward<remove_reference_t<decltype(x)>>(x)`. But `std::forward<T>(x)`
+   requires `T` to be the **deduced** template parameter from a forwarding reference. If you call
+   `std::forward<int>(x)` where `x` is an lvalue, you get an rvalue reference — this is effectively
+   `std::move`Not forwarding. The distinction matters only for correctness of intent.
 
 2. **Using `std::forward` more than once on the same object:** `std::forward` does not move the
- object — it casts it. But the _recipient_ of the cast may move from it. If you forward the same
- object to two different functions, the first recipient may move from it, leaving the second
- recipient with a moved-from object:
+   object — it casts it. But the _recipient_ of the cast may move from it. If you forward the same
+   object to two different functions, the first recipient may move from it, leaving the second
+   recipient with a moved-from object:
 
    ```cpp
    template<typename T>
@@ -670,14 +663,14 @@ void move_vs_forward() {
    ```
 
 3. **Adding constraints that break forwarding reference deduction:** A `requires` clause that
- references `T` can cause the parameter to be treated as a plain rvalue reference rather than a
- forwarding reference. Use the `!std::same_as<std::decay_t<T>, ...>` pattern or C++20 concepts
- carefully.
+   references `T` can cause the parameter to be treated as a plain rvalue reference rather than a
+   forwarding reference. Use the `!std::same_as<std::decay_t<T>, ...>` pattern or C++20 concepts
+   carefully.
 
 4. **Returning `std::forward<T>(x)` from a function:** This is almost always wrong. If `T` is a
- reference type, you return a reference to a parameter — which may dangle if the caller passed a
- temporary. If `T` is a non-reference type, you return an rvalue reference to a local — which
- always dangles. Return by value instead and let NRVO or move semantics handle it.
+   reference type, you return a reference to a parameter — which may dangle if the caller passed a
+   temporary. If `T` is a non-reference type, you return an rvalue reference to a local — which
+   always dangles. Return by value instead and let NRVO or move semantics handle it.
 
 :::
 

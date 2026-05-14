@@ -1,6 +1,8 @@
 ---
 title: Data Representation
-description: "DSE ICT notes on data representation covering binary, hexadecimal, character encoding, image and audio representation, compression, and error detection."
+description:
+  'DSE ICT notes on data representation covering binary, hexadecimal, character encoding, image and
+  audio representation, compression, and error detection.'
 date: 2026-04-08T00:00:00.000Z
 tags:
   - DSE
@@ -30,13 +32,13 @@ And binary trivial.
 
 | Octal | Binary | Decimal |
 | ----- | ------ | ------- |
-| 0 | 000 | 0 |
-| 1 | 001 | 1 |
-| 2 | 010 | 2 |
-| 7 | 111 | 7 |
-| 10 | 001000 | 8 |
-| 17 | 001111 | 15 |
-| 20 | 010000 | 16 |
+| 0     | 000    | 0       |
+| 1     | 001    | 1       |
+| 2     | 010    | 2       |
+| 7     | 111    | 7       |
+| 10    | 001000 | 8       |
+| 17    | 001111 | 15      |
+| 20    | 010000 | 16      |
 
 **Binary to octal:** Group bits in groups of 3 from the right, convert each group.
 
@@ -74,11 +76,11 @@ Sum of a column exceeds 1.
 
 | Operation | Result | Carry |
 | --------- | ------ | ----- |
-| 0 + 0 | 0 | 0 |
-| 0 + 1 | 1 | 0 |
-| 1 + 0 | 1 | 0 |
-| 1 + 1 | 0 | 1 |
-| 1 + 1 + 1 | 1 | 1 |
+| 0 + 0     | 0      | 0     |
+| 0 + 1     | 1      | 0     |
+| 1 + 0     | 1      | 0     |
+| 1 + 1     | 0      | 1     |
+| 1 + 1 + 1 | 1      | 1     |
 
 <details>
 <summary>Worked Example: Add 0110 1011 and 0101 1101</summary>
@@ -187,9 +189,9 @@ Standard defines single precision (32-bit) and double precision (64-bit).
 
 | Bit range | Component | Bits |
 | --------- | --------- | ---- |
-| 31 | Sign | 1 |
-| 30--23 | Exponent | 8 |
-| 22--0 | Mantissa | 23 |
+| 31        | Sign      | 1    |
+| 30--23    | Exponent  | 8    |
+| 22--0     | Mantissa  | 23   |
 
 **Value calculation:**
 
@@ -207,8 +209,7 @@ Step 1: Convert 6.625 to binary.
 
 Integer part: $6 = 110$
 
-Fractional part: $0.625 \times 2 = 1.25 \to 1$$0.25 \times 2 = 0.5 \to 0$
-$0.5 \times 2 = 1.0 \to 1$
+Fractional part: $0.625 \times 2 = 1.25 \to 1$$0.25 \times 2 = 0.5 \to 0$ $0.5 \times 2 = 1.0 \to 1$
 
 So $6.625_{10} = 110.101_2$
 
@@ -230,14 +231,14 @@ In hex: $1\ 1000\ 0001\ 1010\ 1000\ 0000\ 0000\ 0000\ 0000 = \mathrm{C0D40000}_{
 
 </details>
 
-| Feature | Single Precision (32-bit) | Double Precision (64-bit) |
+| Feature           | Single Precision (32-bit)                             | Double Precision (64-bit)                               |
 | ----------------- | ----------------------------------------------------- | ------------------------------------------------------- |
-| Sign bit | 1 | 1 |
-| Exponent bits | 8 | 11 |
-| Mantissa bits | 23 | 52 |
-| Exponent bias | 127 | 1023 |
-| Approx. Precision | 7 decimal digits | 15--16 decimal digits |
-| Range (approx.) | $\pm 1.2 \times 10^{-38}$ to $\pm 3.4 \times 10^{38}$ | $\pm 2.2 \times 10^{-308}$ to $\pm 1.8 \times 10^{308}$ |
+| Sign bit          | 1                                                     | 1                                                       |
+| Exponent bits     | 8                                                     | 11                                                      |
+| Mantissa bits     | 23                                                    | 52                                                      |
+| Exponent bias     | 127                                                   | 1023                                                    |
+| Approx. Precision | 7 decimal digits                                      | 15--16 decimal digits                                   |
+| Range (approx.)   | $\pm 1.2 \times 10^{-38}$ to $\pm 3.4 \times 10^{38}$ | $\pm 2.2 \times 10^{-308}$ to $\pm 1.8 \times 10^{308}$ |
 
 ---
 
@@ -253,13 +254,13 @@ Characters or parity checking.
 
 Key structural properties of the ASCII table:
 
-| Range (decimal) | Content |
+| Range (decimal) | Content                                     |
 | --------------- | ------------------------------------------- |
-| 0--31 | Control characters (NUL, CR, LF, TAB, etc.) |
-| 32 | Space |
-| 48--57 | Digits '0'--'9' |
-| 65--90 | Uppercase 'A'--'Z' |
-| 97--122 | Lowercase 'a'--'z' |
+| 0--31           | Control characters (NUL, CR, LF, TAB, etc.) |
+| 32              | Space                                       |
+| 48--57          | Digits '0'--'9'                             |
+| 65--90          | Uppercase 'A'--'Z'                          |
+| 97--122         | Lowercase 'a'--'z'                          |
 
 **Conversion between uppercase and lowercase:** XOR with $32$ (bit 5). This works because the only
 Difference between uppercase and lowercase letters in ASCII is bit 5: uppercase has it clear (0),
@@ -270,23 +271,23 @@ Lowercase has it set (1).
 Unicode assigns a unique code point to every character. Code points are written as `U+XXXX` where
 `XXXX` is a hexadecimal value. The Unicode space is divided into planes:
 
-| Plane | Range | Name |
+| Plane | Range              | Name                          |
 | ----- | ------------------ | ----------------------------- |
-| 0 | U+0000 -- U+FFFF | Basic Multilingual Plane |
-| 1 | U+10000 -- U+1FFFF | Supplementary Multilingual |
-| 2 | U+20000 -- U+2FFFF | Supplementary Ideographic |
-| 14 | U+E0000 -- U+EFFFF | Supplementary Special-purpose |
+| 0     | U+0000 -- U+FFFF   | Basic Multilingual Plane      |
+| 1     | U+10000 -- U+1FFFF | Supplementary Multilingual    |
+| 2     | U+20000 -- U+2FFFF | Supplementary Ideographic     |
+| 14    | U+E0000 -- U+EFFFF | Supplementary Special-purpose |
 
 ### UTF-8 Encoding Mechanism
 
 UTF-8 is a variable-width encoding that uses 1 to 4 bytes. The encoding rules are deterministic:
 
-| Code Point Range | Binary Pattern | Bytes | Hex Range |
+| Code Point Range    | Binary Pattern                        | Bytes | Hex Range          |
 | ------------------- | ------------------------------------- | ----- | ------------------ |
-| U+0000 -- U+007F | `0xxxxxxx` | 1 | 00 -- 7F |
-| U+0080 -- U+07FF | `110xxxxx 10xxxxxx` | 2 | C0 -- DF, 80 -- BF |
-| U+0800 -- U+FFFF | `1110xxxx 10xxxxxx 10xxxxxx` | 3 | E0 -- EF, 80 -- BF |
-| U+10000 -- U+10FFFF | `11110xxx 10xxxxxx 10xxxxxx 10xxxxxx` | 4 | F0 -- F7, 80 -- BF |
+| U+0000 -- U+007F    | `0xxxxxxx`                            | 1     | 00 -- 7F           |
+| U+0080 -- U+07FF    | `110xxxxx 10xxxxxx`                   | 2     | C0 -- DF, 80 -- BF |
+| U+0800 -- U+FFFF    | `1110xxxx 10xxxxxx 10xxxxxx`          | 3     | E0 -- EF, 80 -- BF |
+| U+10000 -- U+10FFFF | `11110xxx 10xxxxxx 10xxxxxx 10xxxxxx` | 4     | F0 -- F7, 80 -- BF |
 
 The leading bits of the first byte indicate the total number of bytes in the character. All
 Continuation bytes start with `10`.
@@ -340,15 +341,15 @@ UTF-8: `E4 B8 AD`
 
 ### Encoding Comparison
 
-| Feature | ASCII | UTF-8 | UTF-16 | UTF-32 |
+| Feature            | ASCII       | UTF-8        | UTF-16        | UTF-32              |
 | ------------------ | ----------- | ------------ | ------------- | ------------------- |
-| Code unit size | 7 bits | 1--4 bytes | 2 or 4 bytes | 4 bytes |
-| ASCII compat. | Yes (self) | Yes (1-byte) | No | No |
-| Max code point | U+007F | U+10FFFF | U+10FFFF | U+10FFFF |
-| Storage (English) | 1 byte/char | 1 byte/char | 2 bytes/char | 4 bytes/char |
-| Storage (CJK) | N/A | 3 bytes/char | 2 bytes/char | 4 bytes/char |
-| Self-synchronising | No | Yes | Partially | Yes |
-| Most common use | Legacy | Web, Linux | Windows, Java | Internal processing |
+| Code unit size     | 7 bits      | 1--4 bytes   | 2 or 4 bytes  | 4 bytes             |
+| ASCII compat.      | Yes (self)  | Yes (1-byte) | No            | No                  |
+| Max code point     | U+007F      | U+10FFFF     | U+10FFFF      | U+10FFFF            |
+| Storage (English)  | 1 byte/char | 1 byte/char  | 2 bytes/char  | 4 bytes/char        |
+| Storage (CJK)      | N/A         | 3 bytes/char | 2 bytes/char  | 4 bytes/char        |
+| Self-synchronising | No          | Yes          | Partially     | Yes                 |
+| Most common use    | Legacy      | Web, Linux   | Windows, Java | Internal processing |
 
 ---
 
@@ -362,14 +363,14 @@ Internals.
 
 #### RGB (Red, Green, Blue)
 
-Additive colour model used for screens and digital displays. Each colour channel is 8 bits
-(0--255), giving 24-bit true colour.
+Additive colour model used for screens and digital displays. Each colour channel is 8 bits (0--255),
+giving 24-bit true colour.
 
-| Channel | Bits | Values |
+| Channel | Bits | Values          |
 | ------- | ---- | --------------- |
-| Red | 8 | 0 (none) -- 255 |
-| Green | 8 | 0 (none) -- 255 |
-| Blue | 8 | 0 (none) -- 255 |
+| Red     | 8    | 0 (none) -- 255 |
+| Green   | 8    | 0 (none) -- 255 |
+| Blue    | 8    | 0 (none) -- 255 |
 
 Black = (0, 0, 0). White = (255, 255, 255). Pure red = (255, 0, 0).
 
@@ -379,12 +380,12 @@ In hex notation: #RRGGBB. For example, #FF0000 is red, #00FF00 is green, #0000FF
 
 Subtractive colour model used in printing. Each component represents the amount of ink.
 
-| Channel | Description |
+| Channel | Description                      |
 | ------- | -------------------------------- |
-| C | Cyan (0% = none, 100% = full) |
-| M | Magenta |
-| Y | Yellow |
-| K | Key (Black) -- reduces ink usage |
+| C       | Cyan (0% = none, 100% = full)    |
+| M       | Magenta                          |
+| Y       | Yellow                           |
+| K       | Key (Black) -- reduces ink usage |
 
 CMYK is necessary because printing inks are subtractive (absorb light), unlike screen pixels which
 Are additive (emit light). Pure CMY black is imperfect (appears muddy), so a separate black ink
@@ -406,61 +407,61 @@ Where $R' = R / 255$Etc.
 
 #### JPEG (Joint Photographic Experts Group)
 
-| Property | Value |
+| Property         | Value                                    |
 | ---------------- | ---------------------------------------- |
-| Compression | Lossy |
-| Colour model | YCbCr (luminance + chrominance) |
-| Max colour depth | 24-bit (8 bits per channel) |
-| Transparency | No (JPEG does not support alpha channel) |
-| Animation | No |
-| Best for | Photographs, complex colour images |
+| Compression      | Lossy                                    |
+| Colour model     | YCbCr (luminance + chrominance)          |
+| Max colour depth | 24-bit (8 bits per channel)              |
+| Transparency     | No (JPEG does not support alpha channel) |
+| Animation        | No                                       |
+| Best for         | Photographs, complex colour images       |
 
 JPEG compression pipeline:
 
 1. **Colour space conversion:** RGB is converted to YCbCr. The chrominance channels (Cb, Cr) can be
- subsampled (e.g., 4:2:0) because the human eye is less sensitive to colour detail than to
- brightness.
+   subsampled (e.g., 4:2:0) because the human eye is less sensitive to colour detail than to
+   brightness.
 2. **Block splitting:** The image is divided into $8 \times 8$ pixel blocks.
 3. **Discrete Cosine Transform (DCT):** Each block is transformed from spatial domain to frequency
- domain. Low frequencies (top-left of the DCT matrix) represent gradual changes; high frequencies
- (bottom-right) represent fine detail.
+   domain. Low frequencies (top-left of the DCT matrix) represent gradual changes; high frequencies
+   (bottom-right) represent fine detail.
 4. **Quantisation:** Each DCT coefficient is divided by a quantisation value from a quantisation
- table. Higher values discard more information. This is the primary lossy step.
+   table. Higher values discard more information. This is the primary lossy step.
 5. **Entropy coding:** The quantised coefficients are encoded using run-length encoding and Huffman
- coding (lossless steps).
+   coding (lossless steps).
 
 **Quality factor:** Most JPEG encoders expose a quality parameter (1--100 or 1--100%). Higher
 Quality = larger file. At quality 75, most artefacts are imperceptible.
 
 #### PNG (Portable Network Graphics)
 
-| Property | Value |
+| Property         | Value                                         |
 | ---------------- | --------------------------------------------- |
-| Compression | Lossless |
-| Colour model | RGB, RGBA, palette-based (up to 256 colours) |
-| Max colour depth | 48-bit (RGB) or 64-bit (RGBA) |
-| Transparency | Yes (full alpha channel support) |
-| Animation | Limited (APNG extension) |
-| Best for | Graphics with text, sharp edges, transparency |
+| Compression      | Lossless                                      |
+| Colour model     | RGB, RGBA, palette-based (up to 256 colours)  |
+| Max colour depth | 48-bit (RGB) or 64-bit (RGBA)                 |
+| Transparency     | Yes (full alpha channel support)              |
+| Animation        | Limited (APNG extension)                      |
+| Best for         | Graphics with text, sharp edges, transparency |
 
 PNG compression pipeline:
 
 1. **Filtering:** A prediction filter is applied to each row (None, Sub, Up, Average, Paeth). The
- filter that produces the smallest result is selected. This step transforms the data to have many
- small values and zeros.
+   filter that produces the smallest result is selected. This step transforms the data to have many
+   small values and zeros.
 2. **DEFLATE compression:** The filtered data is compressed using a combination of LZ77 (sliding
- window dictionary compression) and Huffman coding.
+   window dictionary compression) and Huffman coding.
 
 #### GIF (Graphics Interchange Format)
 
-| Property | Value |
+| Property         | Value                                 |
 | ---------------- | ------------------------------------- |
-| Compression | Lossless (LZW) |
-| Colour model | Palette-based, max 256 colours |
-| Max colour depth | 8-bit (indexed colour) |
-| Transparency | Yes (1-bit, binary transparency) |
-| Animation | Yes (multiple frames, timing control) |
-| Best for | Simple graphics, logos, animations |
+| Compression      | Lossless (LZW)                        |
+| Colour model     | Palette-based, max 256 colours        |
+| Max colour depth | 8-bit (indexed colour)                |
+| Transparency     | Yes (1-bit, binary transparency)      |
+| Animation        | Yes (multiple frames, timing control) |
+| Best for         | Simple graphics, logos, animations    |
 
 GIF uses LZW (Lempel-Ziv-Welch) compression, a dictionary-based lossless algorithm. The colour
 Limitation (256 colours) makes GIF unsuitable for photographs but ideal for simple graphics and
@@ -468,40 +469,40 @@ Animations.
 
 #### SVG (Scalable Vector Graphics)
 
-| Property | Value |
+| Property      | Value                                    |
 | ------------- | ---------------------------------------- |
-| Type | Vector |
-| Compression | Text-based (XML), can be gzip-compressed |
-| Scalability | Infinite (mathematical description) |
-| Interactivity | Yes (supports CSS and JavaScript) |
-| Best for | Logos, icons, diagrams, charts |
+| Type          | Vector                                   |
+| Compression   | Text-based (XML), can be gzip-compressed |
+| Scalability   | Infinite (mathematical description)      |
+| Interactivity | Yes (supports CSS and JavaScript)        |
+| Best for      | Logos, icons, diagrams, charts           |
 
-SVG describes images using XML elements: `<circle>``<rect>``<path>``<polygon>`Etc. Each
-Element has attributes for position, size, colour, and style.
+SVG describes images using XML elements: `<circle>``<rect>``<path>``<polygon>`Etc. Each Element has
+attributes for position, size, colour, and style.
 
 #### BMP (Bitmap)
 
-| Property | Value |
+| Property     | Value                  |
 | ------------ | ---------------------- |
-| Compression | None (uncompressed) |
-| Colour depth | 1, 4, 8, 16, 24, 32 |
+| Compression  | None (uncompressed)    |
+| Colour depth | 1, 4, 8, 16, 24, 32    |
 | Transparency | Limited (32-bit alpha) |
-| Best for | Raw image storage |
+| Best for     | Raw image storage      |
 
 BMP stores raw pixel data with a minimal header. Files are large but lossless and universally
 Supported.
 
 ### File Format Comparison
 
-| Feature | JPEG | PNG | GIF | BMP | SVG |
+| Feature      | JPEG   | PNG          | GIF        | BMP      | SVG         |
 | ------------ | ------ | ------------ | ---------- | -------- | ----------- |
-| Type | Bitmap | Bitmap | Bitmap | Bitmap | Vector |
-| Compression | Lossy | Lossless | Lossless | None | Lossless |
-| Max colours | 16.7M | 16.7M / 281T | 256 | 16.7M | Unlimited |
-| Transparency | No | Full alpha | Binary | Limited | Full alpha |
-| Animation | No | APNG | Yes | No | SMIL/CSS/JS |
-| File size | Small | Medium | Small | Large | Small--Med |
-| Best for | Photos | Graphics | Animations | Raw data | Logos/diags |
+| Type         | Bitmap | Bitmap       | Bitmap     | Bitmap   | Vector      |
+| Compression  | Lossy  | Lossless     | Lossless   | None     | Lossless    |
+| Max colours  | 16.7M  | 16.7M / 281T | 256        | 16.7M    | Unlimited   |
+| Transparency | No     | Full alpha   | Binary     | Limited  | Full alpha  |
+| Animation    | No     | APNG         | Yes        | No       | SMIL/CSS/JS |
+| File size    | Small  | Medium       | Small      | Large    | Small--Med  |
+| Best for     | Photos | Graphics     | Animations | Raw data | Logos/diags |
 
 ---
 
@@ -512,14 +513,14 @@ Covers audio file formats and compression.
 
 ### Audio File Formats
 
-| Format | Compression | Bit depth | Sampling rate | Channels | Typical use |
+| Format | Compression  | Bit depth  | Sampling rate | Channels | Typical use           |
 | ------ | ------------ | ---------- | ------------- | -------- | --------------------- |
-| WAV | Uncompressed | 8/16/24/32 | Up to 192 kHz | 1--8 | Studio, archival |
-| MP3 | Lossy | N/A | Up to 48 kHz | 1--2 | Music distribution |
-| AAC | Lossy | N/A | Up to 96 kHz | 1--48 | Streaming, Apple |
-| FLAC | Lossless | 16/24 | Up to 655 kHz | 1--8 | Archival, audiophile |
-| OGG | Lossy | N/A | Up to 192 kHz | 1--255 | Open-source streaming |
-| MIDI | N/A | N/A | N/A | 16 | Music production |
+| WAV    | Uncompressed | 8/16/24/32 | Up to 192 kHz | 1--8     | Studio, archival      |
+| MP3    | Lossy        | N/A        | Up to 48 kHz  | 1--2     | Music distribution    |
+| AAC    | Lossy        | N/A        | Up to 96 kHz  | 1--48    | Streaming, Apple      |
+| FLAC   | Lossless     | 16/24      | Up to 655 kHz | 1--8     | Archival, audiophile  |
+| OGG    | Lossy        | N/A        | Up to 192 kHz | 1--255   | Open-source streaming |
+| MIDI   | N/A          | N/A        | N/A           | 16       | Music production      |
 
 ### MP3 Compression (Perceptual Coding)
 
@@ -529,44 +530,44 @@ On psychoacoustic models.
 Key psychoacoustic principles exploited:
 
 1. **Absolute threshold of hearing:** Sounds below a certain volume at a given frequency are
- inaudible. These are discarded.
+   inaudible. These are discarded.
 2. **Auditory masking:** A loud sound at one frequency can mask (hide) a quieter sound at a nearby
- frequency. Masked sounds are discarded.
+   frequency. Masked sounds are discarded.
 3. **Frequency resolution:** The ear is more sensitive to mid-range frequencies (1--4 kHz) than to
- very low or very high frequencies. Less data is allocated to less sensitive ranges.
+   very low or very high frequencies. Less data is allocated to less sensitive ranges.
 
 **MP3 encoding process:**
 
 1. **FFT analysis:** The audio signal is analysed using the Modified Discrete Cosine Transform
- (MDCT) to decompose it into frequency components.
+   (MDCT) to decompose it into frequency components.
 2. **Psychoacoustic model:** A model determines which frequency components are audible and which are
- masked.
+   masked.
 3. **Quantisation:** Audible components are quantised with sufficient precision; masked components
- are quantised coarsely or discarded entirely.
+   are quantised coarsely or discarded entirely.
 4. **Huffman coding:** The quantised data is further compressed using lossless Huffman coding.
 
 **Bitrate and quality:**
 
-| Bitrate (kbps) | Quality | Approx. Compression ratio vs CD |
+| Bitrate (kbps) | Quality     | Approx. Compression ratio vs CD |
 | -------------- | ----------- | ------------------------------- |
-| 320 | Transparent | ~4.4 : 1 |
-| 256 | High | ~5.5 : 1 |
-| 192 | Good | ~7.4 : 1 |
-| 128 | Acceptable | ~11 : 1 |
-| 64 | Low | ~22 : 1 |
+| 320            | Transparent | ~4.4 : 1                        |
+| 256            | High        | ~5.5 : 1                        |
+| 192            | Good        | ~7.4 : 1                        |
+| 128            | Acceptable  | ~11 : 1                         |
+| 64             | Low         | ~22 : 1                         |
 
 ### MIDI (Musical Instrument Digital Interface)
 
 MIDI does not store actual audio. Instead, it stores **instructions** that describe how to produce
 Sound: which note to play, when to play it, how loud, for how long, and which instrument to use.
 
-| Aspect | Audio (WAV/MP3) | MIDI |
+| Aspect        | Audio (WAV/MP3)       | MIDI                       |
 | ------------- | --------------------- | -------------------------- |
-| Stores | Actual sound waveform | Performance instructions |
-| File size | Large | Very small |
-| Sound quality | Fixed at creation | Depends on playback device |
-| Editability | Limited | Fully editable (notes) |
-| Instrument | Fixed | Changeable |
+| Stores        | Actual sound waveform | Performance instructions   |
+| File size     | Large                 | Very small                 |
+| Sound quality | Fixed at creation     | Depends on playback device |
+| Editability   | Limited               | Fully editable (notes)     |
+| Instrument    | Fixed                 | Changeable                 |
 
 A MIDI file might contain instructions like: "Play middle C on piano at velocity 80 for 500
 Milliseconds." The actual sound depends entirely on the synthesiser or sound module that plays back
@@ -578,14 +579,14 @@ The MIDI data.
 
 ### Lossy vs Lossless -- Detailed Comparison
 
-| Aspect | Lossless Compression | Lossy Compression |
+| Aspect             | Lossless Compression                    | Lossy Compression                    |
 | ------------------ | --------------------------------------- | ------------------------------------ |
-| Data integrity | Fully preserved | Some data permanently lost |
-| Decompression | Produces exact original | Produces approximation |
-| Compression ratio | 2:1 -- 3:1 | Can exceed 10:1 |
-| Re-compressibility | Can be recompressed losslessly | Further compression degrades quality |
-| Suitability | Text, code, executables, medical images | Audio, video, photos |
-| Algorithms | RLE, Huffman, LZW, DEFLATE, FLAC | JPEG, MP3, AAC, H.264 |
+| Data integrity     | Fully preserved                         | Some data permanently lost           |
+| Decompression      | Produces exact original                 | Produces approximation               |
+| Compression ratio  | 2:1 -- 3:1                              | Can exceed 10:1                      |
+| Re-compressibility | Can be recompressed losslessly          | Further compression degrades quality |
+| Suitability        | Text, code, executables, medical images | Audio, video, photos                 |
+| Algorithms         | RLE, Huffman, LZW, DEFLATE, FLAC        | JPEG, MP3, AAC, H.264                |
 
 A critical constraint: lossy compression is **never** acceptable for text, source code, or
 Executable files because even a single bit error changes meaning. Lossy compression is only
@@ -638,7 +639,7 @@ Characters.
 1. Count the frequency of each symbol in the input.
 2. Create a leaf node for each symbol, weighted by its frequency.
 3. Repeatedly combine the two nodes with the lowest frequencies into a new internal node (whose
- frequency is the sum of its children).
+   frequency is the sum of its children).
 4. Assign 0 to the left branch and 1 to the right branch of each internal node.
 5. The code for each symbol is the path from the root to its leaf.
 
@@ -654,12 +655,12 @@ Given the message `BCCABBDDAECCBBAEDDCC` (19 characters).
 
 | Symbol | Count |
 | ------ | ----- |
-| A | 4 |
-| B | 5 |
-| C | 6 |
-| D | 4 |
-| E | 2 |
-| Total | 21 |
+| A      | 4     |
+| B      | 5     |
+| C      | 6     |
+| D      | 4     |
+| E      | 2     |
+| Total  | 21    |
 
 Wait, let me recount. `B C C A B B D D A E C C B B A E D D C C`
 
@@ -761,11 +762,11 @@ Lempel-Ziv-Welch (LZW) compression builds a dictionary of recurring sequences du
 2. Read input character by character, building a string `P`.
 3. If `P + next_char` is in the dictionary, extend `P`.
 4. If not, output the dictionary index for `P`Add `P + next_char` to the dictionary, and reset `P`
- to `next_char`.
+   to `next_char`.
 5. After all input is consumed, output the code for the remaining `P`.
 
-LZW is used in GIF compression and Unix `compress`. It achieves 2:1 compression on English
-Text and better on data with repeated patterns.
+LZW is used in GIF compression and Unix `compress`. It achieves 2:1 compression on English Text and
+better on data with repeated patterns.
 
 ### Compression Ratio Calculations
 
@@ -798,29 +799,29 @@ Space savings: $(1 - 300/3072) \times 100\% \approx 90.2\%$
 
 ## File Formats -- Comprehensive Reference
 
-| Format | Type | Compression | Description | Typical Use Case |
+| Format | Type     | Compression | Description                                  | Typical Use Case              |
 | ------ | -------- | ----------- | -------------------------------------------- | ----------------------------- |
-| JPEG | Image | Lossy | Lossy image compression using DCT | Photographs |
-| PNG | Image | Lossless | Lossless with filtering + DEFLATE | Graphics, screenshots, web |
-| GIF | Image | Lossless | Palette-based (max 256 colours), LZW | Simple animations, logos |
-| BMP | Image | None | Uncompressed bitmap | Raw image storage, Windows |
-| SVG | Image | Lossless | XML-based vector format | Icons, logos, diagrams |
-| TIFF | Image | Lossless | High-quality, supports layers | Print, publishing, scanning |
-| WAV | Audio | None | Uncompressed PCM audio | Studio recording, editing |
-| MP3 | Audio | Lossy | Perceptual audio coding | Music distribution, streaming |
-| AAC | Audio | Lossy | Advanced perceptual coding (better than MP3) | Apple, YouTube, streaming |
-| FLAC | Audio | Lossless | Free Lossless Audio Codec | Archival, audiophile |
-| MIDI | Audio | N/A | Musical instructions, not actual sound | Music production, notation |
-| MP4 | Video | Lossy | Container (H.264 video + AAC audio) | Video streaming, distribution |
-| AVI | Video | Varies | Microsoft container format | Legacy video |
-| MKV | Video | Varies | Open-source container, supports many codecs | High-quality video |
-| PDF | Document | Lossless | Portable Document Format (text + graphics) | Forms, reports, printing |
-| DOCX | Document | Lossless | Microsoft Word (XML-based) | Word processing |
-| XLSX | Document | Lossless | Microsoft Excel (XML-based) | Spreadsheets |
-| CSV | Data | None | Comma-separated values, plain text | Data exchange |
-| HTML | Markup | None | HyperText Markup Language | Web pages |
-| CSS | Markup | None | Cascading Style Sheets | Web styling |
-| JS | Code | None | JavaScript source code | Web interactivity |
+| JPEG   | Image    | Lossy       | Lossy image compression using DCT            | Photographs                   |
+| PNG    | Image    | Lossless    | Lossless with filtering + DEFLATE            | Graphics, screenshots, web    |
+| GIF    | Image    | Lossless    | Palette-based (max 256 colours), LZW         | Simple animations, logos      |
+| BMP    | Image    | None        | Uncompressed bitmap                          | Raw image storage, Windows    |
+| SVG    | Image    | Lossless    | XML-based vector format                      | Icons, logos, diagrams        |
+| TIFF   | Image    | Lossless    | High-quality, supports layers                | Print, publishing, scanning   |
+| WAV    | Audio    | None        | Uncompressed PCM audio                       | Studio recording, editing     |
+| MP3    | Audio    | Lossy       | Perceptual audio coding                      | Music distribution, streaming |
+| AAC    | Audio    | Lossy       | Advanced perceptual coding (better than MP3) | Apple, YouTube, streaming     |
+| FLAC   | Audio    | Lossless    | Free Lossless Audio Codec                    | Archival, audiophile          |
+| MIDI   | Audio    | N/A         | Musical instructions, not actual sound       | Music production, notation    |
+| MP4    | Video    | Lossy       | Container (H.264 video + AAC audio)          | Video streaming, distribution |
+| AVI    | Video    | Varies      | Microsoft container format                   | Legacy video                  |
+| MKV    | Video    | Varies      | Open-source container, supports many codecs  | High-quality video            |
+| PDF    | Document | Lossless    | Portable Document Format (text + graphics)   | Forms, reports, printing      |
+| DOCX   | Document | Lossless    | Microsoft Word (XML-based)                   | Word processing               |
+| XLSX   | Document | Lossless    | Microsoft Excel (XML-based)                  | Spreadsheets                  |
+| CSV    | Data     | None        | Comma-separated values, plain text           | Data exchange                 |
+| HTML   | Markup   | None        | HyperText Markup Language                    | Web pages                     |
+| CSS    | Markup   | None        | Cascading Style Sheets                       | Web styling                   |
+| JS     | Code     | None        | JavaScript source code                       | Web interactivity             |
 
 ---
 
@@ -834,8 +835,8 @@ Reconstructs the original data.
 
 ### Parity Bits
 
-A parity bit is a single extra bit appended to a unit of data ( a byte) to make the total
-Number of 1s either even (even parity) or odd (odd parity).
+A parity bit is a single extra bit appended to a unit of data ( a byte) to make the total Number of
+1s either even (even parity) or odd (odd parity).
 
 **Even parity:** The parity bit is set so that the total number of 1s (including the parity bit) is
 Even.
@@ -847,15 +848,15 @@ Even.
 
 **Encoding with even parity:**
 
-| Data | Number of 1s | Parity bit | Transmitted |
+| Data    | Number of 1s | Parity bit | Transmitted |
 | ------- | ------------ | ---------- | ----------- |
-| 1011001 | 4 | 0 | 10110010 |
-| 1011011 | 5 | 1 | 10110111 |
-| 0000000 | 0 | 0 | 00000000 |
-| 1111111 | 7 | 1 | 11111111 |
+| 1011001 | 4            | 0          | 10110010    |
+| 1011011 | 5            | 1          | 10110111    |
+| 0000000 | 0            | 0          | 00000000    |
+| 1111111 | 7            | 1          | 11111111    |
 
-**Error detection:** If the received byte `10110010` is received as `10110110`The number of 1s is
-5 (odd), which violates even parity. An error is detected.
+**Error detection:** If the received byte `10110010` is received as `10110110`The number of 1s is 5
+(odd), which violates even parity. An error is detected.
 
 **Limitation:** Parity can detect an odd number of bit errors but cannot detect an even number of
 Bit errors (e.g., two flipped bits preserve parity). Parity cannot correct errors -- it only signals
@@ -960,10 +961,10 @@ $$
 
 | Data bits (m) | Parity bits (r) | Total bits (m + r) |
 | ------------- | --------------- | ------------------ |
-| 4 | 3 | 7 |
-| 8 | 4 | 12 |
-| 11 | 4 | 15 |
-| 16 | 5 | 21 |
+| 4             | 3               | 7                  |
+| 8             | 4               | 12                 |
+| 11            | 4               | 15                 |
+| 16            | 5               | 21                 |
 
 Parity bits are placed at positions 1, 2, 4, 8, 16, ... (powers of 2). Each parity bit covers
 Specific data bit positions based on the binary representation of the position number.
@@ -1018,13 +1019,13 @@ Appended to the data.
 3. The remainder is the CRC value.
 4. Transmit data + CRC.
 5. The receiver divides the received data (including CRC) by the same generator polynomial. If the
- remainder is zero, no errors are detected.
+   remainder is zero, no errors are detected.
 
-| CRC Variant | Generator Polynomial | Bit Length | Common Use |
+| CRC Variant | Generator Polynomial           | Bit Length | Common Use         |
 | ----------- | ------------------------------ | ---------- | ------------------ |
-| CRC-8 | Various | 8 | Simple protocols |
-| CRC-16 | $x^{16} + x^{15} + x^2 + 1$ | 16 | Modbus, USB |
-| CRC-32 | $x^{32} + \ldots$ (IEEE 802.3) | 32 | Ethernet, ZIP, PNG |
+| CRC-8       | Various                        | 8          | Simple protocols   |
+| CRC-16      | $x^{16} + x^{15} + x^2 + 1$    | 16         | Modbus, USB        |
+| CRC-32      | $x^{32} + \ldots$ (IEEE 802.3) | 32         | Ethernet, ZIP, PNG |
 
 CRC can detect all single-bit errors, all double-bit errors, any odd number of errors, and any burst
 Error of length $\le r$ bits (where `r` is the CRC bit length). CRC-32 can detect 99.997% of all
@@ -1032,48 +1033,48 @@ Possible error patterns.
 
 ### Error Detection vs Correction Comparison
 
-| Method | Detection Capability | Correction | Overhead |
+| Method       | Detection Capability      | Correction | Overhead                   |
 | ------------ | ------------------------- | ---------- | -------------------------- |
-| Parity bit | Single-bit errors | None | 1 bit per byte |
-| 2D parity | 3-bit errors | Single-bit | Row + column bits |
-| Checksum | Limited (collision-prone) | None | 8/16/32 bits |
-| CRC | Very high (burst errors) | None | 8/16/32 bits |
-| Hamming code | 2-bit errors | Single-bit | $r$ bits for $m$ data bits |
+| Parity bit   | Single-bit errors         | None       | 1 bit per byte             |
+| 2D parity    | 3-bit errors              | Single-bit | Row + column bits          |
+| Checksum     | Limited (collision-prone) | None       | 8/16/32 bits               |
+| CRC          | Very high (burst errors)  | None       | 8/16/32 bits               |
+| Hamming code | 2-bit errors              | Single-bit | $r$ bits for $m$ data bits |
 
 ---
 
 ## Common Pitfalls
 
-1. **Two's complement range:** For n bits, the range is $-2^{n-1}$ to $2^{n-1} - 1$NOT $-2^{n-1}$
- to $2^{n-1}$. The asymmetry exists because zero uses one of the positive representations.
+1. **Two's complement range:** For n bits, the range is $-2^{n-1}$ to $2^{n-1} - 1$NOT $-2^{n-1}$ to
+   $2^{n-1}$. The asymmetry exists because zero uses one of the positive representations.
 
 2. **UTF-8 byte patterns:** Continuation bytes always start with `10`. The first byte's leading bits
- tell you how many total bytes the character uses. Do not confuse continuation bytes with the
- first byte of a multi-byte character.
+   tell you how many total bytes the character uses. Do not confuse continuation bytes with the
+   first byte of a multi-byte character.
 
 3. **JPEG cannot support transparency:** If you need transparency (alpha channel), use PNG or GIF.
- JPEG is designed purely for lossy photographic compression.
+   JPEG is designed purely for lossy photographic compression.
 
 4. **GIF colour limit:** GIF supports a maximum of 256 colours per frame. It is unsuitable for
- photographs but ideal for simple graphics with few colours.
+   photographs but ideal for simple graphics with few colours.
 
 5. **Huffman code assignment:** Shorter codes must go to more frequent symbols. The tree structure
- ensures prefix-free property, but you must verify that no code is a prefix of another.
+   ensures prefix-free property, but you must verify that no code is a prefix of another.
 
 6. **RLE expansion:** RLE doubles the size of data with no repeated values (e.g., alternating
- patterns like `ABABAB`). Always consider the data characteristics before choosing RLE.
+   patterns like `ABABAB`). Always consider the data characteristics before choosing RLE.
 
 7. **Hamming code positions:** Parity bits go at positions that are powers of 2 (1, 2, 4, 8, ...).
- Data bits fill the remaining positions in order.
+   Data bits fill the remaining positions in order.
 
 8. **Parity only detects odd errors:** If two bits flip simultaneously, even parity is preserved and
- the error goes undetected. For more robust detection, use CRC or Hamming codes.
+   the error goes undetected. For more robust detection, use CRC or Hamming codes.
 
 9. **MP3 is lossy:** MP3 compression permanently discards audio data. Converting MP3 back to WAV
- does not restore the lost quality -- it stores the lossy data in an uncompressed format.
+   does not restore the lost quality -- it stores the lossy data in an uncompressed format.
 
 10. **Colour depth vs palette size:** 8-bit colour depth in a palette-based format (GIF) means 256
- possible colours (not 256 bits). 8-bit true colour would be 256 colours total, not per channel.
+    possible colours (not 256 bits). 8-bit true colour would be 256 colours total, not per channel.
 
 ---
 
@@ -1139,10 +1140,10 @@ Code point: $00011\ 101001 = 000011101001_2 = 0x0E9 = 233_{10} = U+00E9$
 
 U+00E9 is the character 'e' with acute accent: e-acute.
 
-(c) UTF-8 is self-synchronising because: (1) the leading byte's pattern (`0``110``1110`
-`11110`) determines the character length; (2) continuation bytes always start with `10`So a reader
-Can identify the start of any character by scanning forward. This means if a byte is corrupted or
-Lost, the decoder can resynchronise at the next valid character boundary, rather than corrupting all
+(c) UTF-8 is self-synchronising because: (1) the leading byte's pattern (`0``110``1110` `11110`)
+determines the character length; (2) continuation bytes always start with `10`So a reader Can
+identify the start of any character by scanning forward. This means if a byte is corrupted or Lost,
+the decoder can resynchronise at the next valid character boundary, rather than corrupting all
 Subsequent text.
 
 </details>
@@ -1189,10 +1190,10 @@ Symbol:
 
 | Symbol | Frequency |
 | ------ | --------- |
-| X | 7 |
-| Y | 3 |
-| Z | 5 |
-| W | 1 |
+| X      | 7         |
+| Y      | 3         |
+| Z      | 5         |
+| W      | 1         |
 
 (c) Calculate the average bits per symbol for the Huffman codes in (b).
 

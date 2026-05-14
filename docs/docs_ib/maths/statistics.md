@@ -1,8 +1,11 @@
 ---
 title: Statistics
-description: "Comprehensive IB mathematics notes on Statistics. Covers key definitions, worked examples, and practice problems for revision."
+description:
+  'Comprehensive IB mathematics notes on Statistics. Covers key definitions, worked examples, and
+  practice problems for revision.'
 slug: statistics
 ---
+
 ## Descriptive Statistics
 
 ### Measures of Central Tendency
@@ -45,8 +48,8 @@ $$s^2 = \frac{\sum x_i^2 - n\bar{x}^2}{n - 1} = \frac{n\sum x_i^2 - (\sum x_i)^2
 
 ### Box-and-Whisker Plots
 
-A box plot displays five key statistics: minimum, $Q_1$Median, $Q_3$Maximum. **Outliers** are
-Points more than $1.5 \times \mathrm{IQR}$ below $Q_1$ or above $Q_3$.
+A box plot displays five key statistics: minimum, $Q_1$Median, $Q_3$Maximum. **Outliers** are Points
+more than $1.5 \times \mathrm{IQR}$ below $Q_1$ or above $Q_3$.
 
 ---
 
@@ -129,7 +132,7 @@ The line always passes through $(\bar{x}, \bar{y})$.
 
 - **Interpolation:** predicting within the range of observed data (generally reliable)
 - **Extrapolation:** predicting outside the observed range (unreliable; the linear model may not
- hold)
+  hold)
 
 ### Coefficient of Determination
 
@@ -225,27 +228,27 @@ $$P(\mathrm{event}) = \frac{\mathrm{number of favourable outcomes}}{\mathrm{tota
 ## Common Pitfalls
 
 1. **Confusing $n$ and $n - 1$ in variance.** Use $n$ for population variance and $n - 1$ for sample
- variance (Bessel's correction). The IB generally uses $n$ for frequency tables and $n - 1$ for
- sample standard deviation.
+   variance (Bessel's correction). The IB generally uses $n$ for frequency tables and $n - 1$ for
+   sample standard deviation.
 
 2. **Correlation versus causation.** A high correlation between two variables does not mean one
- causes the other. Confounding variables may explain the association.
+   causes the other. Confounding variables may explain the association.
 
 3. **Extrapolation.** Do not use a regression line to make predictions far outside the range of the
- data. The linear model may not hold.
+   data. The linear model may not hold.
 
 4. **Base rate fallacy.** When applying Bayes' theorem, always account for the prior probability. A
- test with 99% accuracy can still yield mostly false positives when the condition is rare.
+   test with 99% accuracy can still yield mostly false positives when the condition is rare.
 
 5. **Ordering in permutations vs. Combinations.** Permutations count arrangements (order matters);
- combinations count selections (order does not matter). Identify which is needed before computing.
+   combinations count selections (order does not matter). Identify which is needed before computing.
 
 6. **Histograms with unequal class widths.** The bar height is frequency density, not frequency.
- Failing to divide by class width produces a misleading graph.
+   Failing to divide by class width produces a misleading graph.
 
 7. **Regression of $x$ on $y$ vs. $y$ on $x$.** The regression line of $y$ on $x$ minimises vertical
- residuals. The regression line of $x$ on $y$ minimises horizontal residuals. They are different
- unless $r = \pm 1$.
+   residuals. The regression line of $x$ on $y$ minimises horizontal residuals. They are different
+   unless $r = \pm 1$.
 
 ---
 
@@ -261,8 +264,8 @@ Find the mean, median, mode, variance, and standard deviation of: $4, 7, 2, 9, 4
 <details>
 <summary>Problem 2</summary>
 
-Given the bivariate data $(x, y)$: $(1, 3), (2, 5), (3, 4), (4, 7), (5, 6), (6, 9)$Find the
-Equation of the regression line of $y$ on $x$ and Pearson's correlation coefficient $r$.
+Given the bivariate data $(x, y)$: $(1, 3), (2, 5), (3, 4), (4, 7), (5, 6), (6, 9)$Find the Equation
+of the regression line of $y$ on $x$ and Pearson's correlation coefficient $r$.
 
 </details>
 
@@ -308,8 +311,8 @@ Find the number of distinct arrangements of the letters in "MISSISSIPPI".
 <details>
 <summary>Problem 8</summary>
 
-A grouped frequency distribution has classes $0$--$10$$10$--$20$$20$--$30$$30$--$40$
-$40$--$50$ with frequencies $5, 12, 18, 10, 5$. Estimate the mean and median.
+A grouped frequency distribution has classes $0$--$10$$10$--$20$$20$--$30$$30$--$40$ $40$--$50$ with
+frequencies $5, 12, 18, 10, 5$. Estimate the mean and median.
 
 </details>
 
@@ -321,8 +324,8 @@ $(4 + 5)/2 = 4.5$. Mode: $4$.
 $s^2 = (16 + 9 + 16 + 16 + 16 + 25 + 36 + 49 + 64 + 81 - 10 \times 27.04)/9 = (328 - 270.4)/9 = 57.6/9 = 6.4$.
 $s = \sqrt{6.4} \approx 2.53$.
 
-**Problem 2:** $n = 6$$\sum x = 21$$\sum y = 34$$\sum x^2 = 91$$\sum y^2 = 216$
-$\sum xy = 135$. $\bar{x} = 3.5$$\bar{y} = 5.667$.
+**Problem 2:** $n = 6$$\sum x = 21$$\sum y = 34$$\sum x^2 = 91$$\sum y^2 = 216$ $\sum xy = 135$.
+$\bar{x} = 3.5$$\bar{y} = 5.667$.
 $b = (135 - 6 \times 3.5 \times 5.667)/(91 - 6 \times 12.25) = (135 - 119)/91 - 73.5) = 16/17.5 = 0.914$.
 $a = 5.667 - 0.914 \times 3.5 = 2.467$. Line: $y = 2.47 + 0.91x$.
 $r = 16/\sqrt{17.5 \times 23.33} = 16/\sqrt{408.3} = 16/20.21 = 0.792$.
@@ -358,9 +361,10 @@ $\approx 20 + \dfrac{25 - 17}{18} \times 10 = 20 + \dfrac{80}{18} \approx 24.4$.
 
 **Worked Example: Full Regression Analysis with Prediction**
 
-A study records the temperature ($x$In $\mathrm{}^\circ C}$) and ice cream sales ($y$In USD) for
-7 days: $(18, 220)$$(22, 310)$$(25, 380)$$(28, 440)$$(31, 510)$$(34, 580)$$(20, 270)$.
-Find the regression line of $y$ on $x$The correlation coefficient, and predict sales at $30\mathrm{}^\circ C}$.
+A study records the temperature ($x$In $\mathrm{}^\circ C}$) and ice cream sales ($y$In USD) for 7
+days: $(18, 220)$$(22, 310)$$(25, 380)$$(28, 440)$$(31, 510)$$(34, 580)$$(20, 270)$. Find the
+regression line of $y$ on $x$The correlation coefficient, and predict sales at
+$30\mathrm{}^\circ C}$.
 
 <details>
 <summary>Solution</summary>
@@ -424,8 +428,8 @@ Higher defect rate.
 
 **Worked Example: Combinatorial Counting with Restrictions**
 
-A panel of 4 people is to be selected from 6 men and 5 women. How many panels contain at least one man
-And at least one woman?
+A panel of 4 people is to be selected from 6 men and 5 women. How many panels contain at least one
+man And at least one woman?
 
 <details>
 <summary>Solution</summary>
@@ -438,7 +442,8 @@ Subtract the all-women panels: ${5 \choose 4} = 5$.
 
 Panels with at least one of each: $330 - 15 - 5 = 310$.
 
-Alternatively, count directly: ${6 \choose 1}{5 \choose 3} + {6 \choose 2}{5 \choose 2} + {6 \choose 3}{5 \choose 1} = 60 + 150 + 100 = 310$.
+Alternatively, count directly:
+${6 \choose 1}{5 \choose 3} + {6 \choose 2}{5 \choose 2} + {6 \choose 3}{5 \choose 1} = 60 + 150 + 100 = 310$.
 
 </details>
 
@@ -466,24 +471,26 @@ There is a strong positive monotonic relationship between the two judges' rankin
 
 ## Additional Common Pitfalls
 
-- **Sample vs. Population variance.** On the GDC, the sample standard deviation function (
- denoted $s_x$ or $\sigma_{n-1}$) divides by $n - 1$. The population standard deviation ($\sigma_x$
- or $\sigma_n$) divides by $n$. Using the wrong one changes the answer significantly for small samples.
+- **Sample vs. Population variance.** On the GDC, the sample standard deviation function ( denoted
+  $s_x$ or $\sigma_{n-1}$) divides by $n - 1$. The population standard deviation ($\sigma_x$ or
+  $\sigma_n$) divides by $n$. Using the wrong one changes the answer significantly for small
+  samples.
 
-- **Spearman's formula requires distinct ranks.** The formula $r_s = 1 - \dfrac{6\sum d_i^2}{n(n^2-1)}$
- assumes no tied ranks. When ties exist, use the full Pearson formula on the ranks instead.
+- **Spearman's formula requires distinct ranks.** The formula
+  $r_s = 1 - \dfrac{6\sum d_i^2}{n(n^2-1)}$ assumes no tied ranks. When ties exist, use the full
+  Pearson formula on the ranks instead.
 
 - **Confusing independent with mutually exclusive.** Independent events can occur simultaneously
- ($P(A \cap B) = P(A)P(B) \ne 0$ ). Mutually exclusive events cannot
- ($P(A \cap B) = 0$). Independent events with nonzero probability are never mutually exclusive.
+  ($P(A \cap B) = P(A)P(B) \ne 0$ ). Mutually exclusive events cannot ($P(A \cap B) = 0$).
+  Independent events with nonzero probability are never mutually exclusive.
 
 - **Misidentifying favourable outcomes.** When computing probabilities, carefully define what
- constitutes a "favourable outcome" and ensure the counting is complete. Overcounting or
- undercounting is a frequent source of error.
+  constitutes a "favourable outcome" and ensure the counting is complete. Overcounting or
+  undercounting is a frequent source of error.
 
 - **Regression interpretation beyond the data.** The regression line of $y$ on $x$ gives $\hat{y}$
- for a given $x$But not $\hat{x}$ for a given $y$. Using $y = a + bx$ to predict $x$ from $y$
- requires solving for $x$Which gives a different line than the regression of $x$ on $y$.
+  for a given $x$But not $\hat{x}$ for a given $y$. Using $y = a + bx$ to predict $x$ from $y$
+  requires solving for $x$Which gives a different line than the regression of $x$ on $y$.
 
 ---
 
@@ -509,8 +516,8 @@ Find the probability that: (a) all three are the same colour; (b) exactly two ar
 <details>
 <summary>Problem 11</summary>
 
-Two events $A$ and $B$ satisfy $P(A) = 0.4$$P(B) = 0.7$And $P(A \cap B) = 0.25$. Find:
-(a) $P(A \mid B)$; (b) $P(A \cup B)$; (c) whether $A$ and $B$ are independent.
+Two events $A$ and $B$ satisfy $P(A) = 0.4$$P(B) = 0.7$And $P(A \cap B) = 0.25$. Find: (a)
+$P(A \mid B)$; (b) $P(A \cup B)$; (c) whether $A$ and $B$ are independent.
 
 </details>
 
@@ -524,9 +531,9 @@ A fair coin is tossed 5 times. Find the probability of getting exactly 3 heads.
 <details>
 <summary>Problem 13</summary>
 
-The bivariate data has $\sum x = 60$$\sum y = 84$$\sum x^2 = 440$$\sum y^2 = 860$
-$\sum xy = 580$And $n = 10$. Find the equation of the regression line of $y$ on $x$ and the
-Coefficient of determination.
+The bivariate data has $\sum x = 60$$\sum y = 84$$\sum x^2 = 440$$\sum y^2 = 860$ $\sum xy = 580$And
+$n = 10$. Find the equation of the regression line of $y$ on $x$ and the Coefficient of
+determination.
 
 </details>
 
@@ -542,46 +549,47 @@ Repeated?
 <summary>Problem 15</summary>
 
 A doctor gives a patient a test for a condition. The test has sensitivity 0.92 and specificity 0.95.
-If the condition prevalence in the patient's demographic is 0.08, find the probability that the patient
-Actually has the condition given a positive test result.
+If the condition prevalence in the patient's demographic is 0.08, find the probability that the
+patient Actually has the condition given a positive test result.
 
 </details>
 
 <details>
 <summary>Answers to Additional Problems</summary>
 
-**Problem 9:** Ordered data: $11.8, 11.9, 12.0, 12.3, 12.4, 12.5, 12.6, 12.7, 12.8, 13.1$.
-Mean: $\bar{x} = 124.1/10 = 12.41$.
-$s^2 = \dfrac{\sum x_i^2 - 10(12.41)^2}{9}$.
+**Problem 9:** Ordered data: $11.8, 11.9, 12.0, 12.3, 12.4, 12.5, 12.6, 12.7, 12.8, 13.1$. Mean:
+$\bar{x} = 124.1/10 = 12.41$. $s^2 = \dfrac{\sum x_i^2 - 10(12.41)^2}{9}$.
 $\sum x_i^2 = 139.09 + 141.61 + 144.00 + 151.29 + 153.76 + 156.25 + 158.76 + 161.29 + 163.84 + 171.61 = 1541.50$.
-$s^2 = (1541.50 - 1540.08)/9 = 1.42/9 = 0.158$. $s = \sqrt{0.158} \approx 0.397$.
-Range within one standard deviation: $12.41 \pm 0.40 = (12.01, 12.81)$.
-Values in range: $12.0, 12.3, 12.4, 12.5, 12.6, 12.7, 12.8$ = 7 out of 10 = 70%.
+$s^2 = (1541.50 - 1540.08)/9 = 1.42/9 = 0.158$. $s = \sqrt{0.158} \approx 0.397$. Range within one
+standard deviation: $12.41 \pm 0.40 = (12.01, 12.81)$. Values in range:
+$12.0, 12.3, 12.4, 12.5, 12.6, 12.7, 12.8$ = 7 out of 10 = 70%.
 
-**Problem 10:** Total marbles: 15. Total ways to draw 3: ${15 \choose 3} = 455$.
-(a) Same colour: ${4 \choose 3} + {5 \choose 3} + {6 \choose 3} = 4 + 10 + 20 = 34$. $P = 34/455 \approx 0.0747$.
-(b) Exactly two blue: ${5 \choose 2}{10 \choose 1} = 10 \times 10 = 100$. $P = 100/455 \approx 0.2198$.
+**Problem 10:** Total marbles: 15. Total ways to draw 3: ${15 \choose 3} = 455$. (a) Same colour:
+${4 \choose 3} + {5 \choose 3} + {6 \choose 3} = 4 + 10 + 20 = 34$. $P = 34/455 \approx 0.0747$. (b)
+Exactly two blue: ${5 \choose 2}{10 \choose 1} = 10 \times 10 = 100$. $P = 100/455 \approx 0.2198$.
 
-**Problem 11:** (a) $P(A \mid B) = P(A \cap B)/P(B) = 0.25/0.70 = 5/14 \approx 0.357$.
-(b) $P(A \cup B) = P(A) + P(B) - P(A \cap B) = 0.4 + 0.7 - 0.25 = 0.85$.
-(c) Independent iff $P(A \cap B) = P(A)P(B)$. $P(A)P(B) = 0.28 \ne 0.25 = P(A \cap B)$. Not independent.
+**Problem 11:** (a) $P(A \mid B) = P(A \cap B)/P(B) = 0.25/0.70 = 5/14 \approx 0.357$. (b)
+$P(A \cup B) = P(A) + P(B) - P(A \cap B) = 0.4 + 0.7 - 0.25 = 0.85$. (c) Independent iff
+$P(A \cap B) = P(A)P(B)$. $P(A)P(B) = 0.28 \ne 0.25 = P(A \cap B)$. Not independent.
 
 **Problem 12:** ${5 \choose 3}(0.5)^3(0.5)^2 = 10 \times \dfrac{1}{32} = \dfrac{5}{16}$.
 
 **Problem 13:** $S_{xx} = 440 - 10(6)^2 = 440 - 360 = 80$.
-$S_{xy} = 580 - 10(6)(8.4) = 580 - 504 = 76$.
-$b = 76/80 = 0.95$. $a = 8.4 - 0.95(6) = 8.4 - 5.7 = 2.7$.
-Line: $y = 2.7 + 0.95x$.
+$S_{xy} = 580 - 10(6)(8.4) = 580 - 504 = 76$. $b = 76/80 = 0.95$.
+$a = 8.4 - 0.95(6) = 8.4 - 5.7 = 2.7$. Line: $y = 2.7 + 0.95x$.
 $S_{yy} = 860 - 10(8.4)^2 = 860 - 705.6 = 154.4$.
 $r = 76/\sqrt{80 \times 154.4} = 76/\sqrt{12352} = 76/111.1 \approx 0.684$.
-$R^2 = r^2 \approx 0.468$Meaning about 46.8% of the variation in $y$ is explained by the linear model.
+$R^2 = r^2 \approx 0.468$Meaning about 46.8% of the variation in $y$ is explained by the linear
+model.
 
-**Problem 14:** For a 4-digit number, the first digit cannot be 0. The last digit must be even (0, 2, 4).
-Case 1: Last digit is 0. First digit: 5 choices (1--5), middle two: ${}^4P_2 = 12$. Total: $5 \times 12 = 60$.
-Case 2: Last digit is 2 or 4 (2 choices). First digit: 4 choices (1--5, excluding the one used for the last digit). Middle two: ${}^4P_2 = 12$. Total: $2 \times 4 \times 12 = 96$.
-Total: $60 + 96 = 156$.
+**Problem 14:** For a 4-digit number, the first digit cannot be 0. The last digit must be even (0,
+2, 4). Case 1: Last digit is 0. First digit: 5 choices (1--5), middle two: ${}^4P_2 = 12$. Total:
+$5 \times 12 = 60$. Case 2: Last digit is 2 or 4 (2 choices). First digit: 4 choices (1--5,
+excluding the one used for the last digit). Middle two: ${}^4P_2 = 12$. Total:
+$2 \times 4 \times 12 = 96$. Total: $60 + 96 = 156$.
 
-**Problem 15:** $P(D \mid +) = \dfrac{0.92 \times 0.08}{0.92 \times 0.08 + 0.05 \times 0.92} = \dfrac{0.0736}{0.0736 + 0.046} = \dfrac{0.0736}{0.1196} \approx 0.615$.
+**Problem 15:**
+$P(D \mid +) = \dfrac{0.92 \times 0.08}{0.92 \times 0.08 + 0.05 \times 0.92} = \dfrac{0.0736}{0.0736 + 0.046} = \dfrac{0.0736}{0.1196} \approx 0.615$.
 Despite a positive test, there is only about a 61.5% chance the patient has the condition.
 
 </details>
@@ -591,7 +599,8 @@ Despite a positive test, there is only about a 61.5% chance the patient has the 
 ## If You Get These Wrong, Revise:
 
 - **Probability fundamentals** → Review conditional probability and the laws of probability
-- **Algebraic manipulation for summation formulas** → Review [./calculus](calculus) (sections on summation and sigma notation)
+- **Algebraic manipulation for summation formulas** → Review [./calculus](calculus) (sections on
+  summation and sigma notation)
 - **Quadratic equations and simultaneous equations** → Review algebra fundamentals
 - **Logarithms for regression transformation** → Review exponential and logarithmic functions
 - **Set theory and Venn diagrams** → Review logic and set theory fundamentals
@@ -601,8 +610,10 @@ Despite a positive test, there is only about a 61.5% chance the patient has the 
 ## Related Content at Other Levels
 
 - **A-Level Statistics:** [Mathematics](https://alevel.wyattau.com/docs/maths/maths)
-- **DSE Dispersion:** [Dispersion](https://academics.wyattau.com/docs/dse/Maths/compulsory/dispersion)
-- **University Statistics:** [Probability and Statistics](https://university.wyattau.com/docs/mathematics/probability-and-statistics)
+- **DSE Dispersion:**
+  [Dispersion](https://academics.wyattau.com/docs/dse/Maths/compulsory/dispersion)
+- **University Statistics:**
+  [Probability and Statistics](https://university.wyattau.com/docs/mathematics/probability-and-statistics)
 
 ## Summary
 

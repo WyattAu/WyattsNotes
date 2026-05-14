@@ -1,6 +1,8 @@
 ---
 title: Bonding
-description: "DSE Chemistry bonding notes covering ionic bonding, covalent bonding, metallic bonding, intermolecular forces, and physical property predictions."
+description:
+  'DSE Chemistry bonding notes covering ionic bonding, covalent bonding, metallic bonding,
+  intermolecular forces, and physical property predictions.'
 date: 2026-04-18T00:00:00.000Z
 tags:
   - DSE
@@ -37,13 +39,13 @@ There are no discrete molecules.
 
 ### Properties of Ionic Compounds
 
-| Property | Explanation |
+| Property                         | Explanation                                        |
 | -------------------------------- | -------------------------------------------------- |
-| High melting/boiling points | Strong electrostatic forces throughout the lattice |
-| Conduct when molten or dissolved | Ions are free to move and carry charge |
-| Do not conduct when solid | Ions are fixed in position |
-| Soluble in polar solvents | Polar solvent molecules attract and separate ions |
-| Brittle | Shifting layers brings like charges together |
+| High melting/boiling points      | Strong electrostatic forces throughout the lattice |
+| Conduct when molten or dissolved | Ions are free to move and carry charge             |
+| Do not conduct when solid        | Ions are fixed in position                         |
+| Soluble in polar solvents        | Polar solvent molecules attract and separate ions  |
+| Brittle                          | Shifting layers brings like charges together       |
 
 ### Worked Example 1
 
@@ -71,12 +73,12 @@ Atoms.
 
 ### Types of Covalent Bonds
 
-| Bond Type | Description | Example |
+| Bond Type           | Description                  | Example                      |
 | ------------------- | ---------------------------- | ---------------------------- |
-| Single | One shared pair | H-H |
-| Double | Two shared pairs | O=O |
-| Triple | Three shared pairs | $\mathrm{N}\equiv\mathrm{N}$ |
-| Dative (coordinate) | Both electrons from one atom | $\mathrm{NH}_4^+$ |
+| Single              | One shared pair              | H-H                          |
+| Double              | Two shared pairs             | O=O                          |
+| Triple              | Three shared pairs           | $\mathrm{N}\equiv\mathrm{N}$ |
+| Dative (coordinate) | Both electrons from one atom | $\mathrm{NH}_4^+$            |
 
 ### Bond Polarity
 
@@ -87,14 +89,14 @@ Displaced towards the more electronegative atom, creating a polar bond with a di
 
 The Valence Shell Electron Pair Repulsion theory predicts molecular shapes:
 
-| Electron Pairs | Shape | Bond Angle | Example |
-| ----------------- | ------------------ | ----------------- | ---------------------------------- |
-| 2 bonding | Linear | $180^\circ$ | $\mathrm{BeCl}_2$$\mathrm{CO}_2$ |
-| 3 bonding | Trigonal planar | $120^\circ$ | $\mathrm{BF}_3$ |
-| 2 bonding, 1 lone | Bent | $\lt 120^\circ$ | $\mathrm{SO}_2$ |
-| 4 bonding | Tetrahedral | $109.5^\circ$ | $\mathrm{CH}_4$ |
-| 3 bonding, 1 lone | Trigonal pyramidal | $\lt 109.5^\circ$ | $\mathrm{NH}_3$ |
-| 2 bonding, 2 lone | Bent | $\lt 109.5^\circ$ | $\mathrm{H}_2\mathrm{O}$ |
+| Electron Pairs    | Shape              | Bond Angle        | Example                          |
+| ----------------- | ------------------ | ----------------- | -------------------------------- |
+| 2 bonding         | Linear             | $180^\circ$       | $\mathrm{BeCl}_2$$\mathrm{CO}_2$ |
+| 3 bonding         | Trigonal planar    | $120^\circ$       | $\mathrm{BF}_3$                  |
+| 2 bonding, 1 lone | Bent               | $\lt 120^\circ$   | $\mathrm{SO}_2$                  |
+| 4 bonding         | Tetrahedral        | $109.5^\circ$     | $\mathrm{CH}_4$                  |
+| 3 bonding, 1 lone | Trigonal pyramidal | $\lt 109.5^\circ$ | $\mathrm{NH}_3$                  |
+| 2 bonding, 2 lone | Bent               | $\lt 109.5^\circ$ | $\mathrm{H}_2\mathrm{O}$         |
 
 Lone pairs exert greater repulsion than bonding pairs, reducing bond angles below the ideal values.
 
@@ -126,19 +128,19 @@ Together through electrostatic attraction.
 
 ### Properties of Metals
 
-| Property | Explanation |
+| Property                     | Explanation                                        |
 | ---------------------------- | -------------------------------------------------- |
-| High melting/boiling points | Strong metallic bonding throughout the lattice |
-| Good electrical conductivity | Delocalised electrons carry charge |
-| Good thermal conductivity | Delocalised electrons transfer kinetic energy |
-| Malleable and ductile | Layers of cations can slide without breaking bonds |
-| Lustrous | Delocalised electrons absorb and re-emit light |
+| High melting/boiling points  | Strong metallic bonding throughout the lattice     |
+| Good electrical conductivity | Delocalised electrons carry charge                 |
+| Good thermal conductivity    | Delocalised electrons transfer kinetic energy      |
+| Malleable and ductile        | Layers of cations can slide without breaking bonds |
+| Lustrous                     | Delocalised electrons absorb and re-emit light     |
 
 ### Alloys
 
 An alloy is a mixture of two or more elements, at least one of which is a metal. Different-sized
-Atoms disrupt the regular lattice, preventing layers from sliding . This makes alloys **harder
-And stronger** than pure metals.
+Atoms disrupt the regular lattice, preventing layers from sliding . This makes alloys **harder And
+stronger** than pure metals.
 
 Examples: steel (Fe + C), brass (Cu + Zn), bronze (Cu + Sn).
 
@@ -203,11 +205,11 @@ Examples: $\mathrm{H}_2\mathrm{O}$$\mathrm{CO}_2$$\mathrm{I}_2$$\mathrm{CH}_4$
 
 ### Giant Covalent (Network)
 
-| Substance | Structure | Bonding | Properties |
+| Substance        | Structure      | Bonding                               | Properties                                         |
 | ---------------- | -------------- | ------------------------------------- | -------------------------------------------------- |
-| Diamond | Tetrahedral 3D | Each C bonded to 4 others ($sp^3$) | Hardest natural substance, insulator, very high MP |
-| Graphite | Layered sheets | Each C bonded to 3 others ($sp^2$) | Soft, conductor (delocalised electrons), lubricant |
-| $\mathrm{SiO}_2$ | 3D network | Each Si bonded to 4 O, each O to 2 Si | Very high MP, insulator |
+| Diamond          | Tetrahedral 3D | Each C bonded to 4 others ($sp^3$)    | Hardest natural substance, insulator, very high MP |
+| Graphite         | Layered sheets | Each C bonded to 3 others ($sp^2$)    | Soft, conductor (delocalised electrons), lubricant |
+| $\mathrm{SiO}_2$ | 3D network     | Each Si bonded to 4 O, each O to 2 Si | Very high MP, insulator                            |
 
 ### Giant Ionic
 
@@ -237,27 +239,27 @@ Allowing them to slide over each other.
 ## Common Pitfalls
 
 - Confusing intramolecular forces (covalent bonds) with intermolecular forces. Covalent bonds hold
- atoms together within a molecule; intermolecular forces act between molecules.
+  atoms together within a molecule; intermolecular forces act between molecules.
 - Stating that ionic compounds have weak bonds. The ionic bond is strong; it is the individual ion
- interactions that can be broken during melting/boiling.
+  interactions that can be broken during melting/boiling.
 - Forgetting that graphite conducts electricity because of delocalised electrons, not because it is
- a metal.
+  a metal.
 - Assuming all molecules with H bonded to N/O/F exhibit strong hydrogen bonding in bulk. The effect
- also depends on molecular geometry and the number of H-bonding sites.
+  also depends on molecular geometry and the number of H-bonding sites.
 - Confusing the terms "molecular" and "macromolecular" when describing giant covalent structures.
 
 ---
 
 ## Summary Table
 
-| Bond Type | Particles Involved | Strength | Typical MP/BP |
+| Bond Type        | Particles Involved                | Strength  | Typical MP/BP |
 | ---------------- | --------------------------------- | --------- | ------------- |
-| Ionic | Cations and anions | Strong | High |
-| Covalent | Shared electrons | Strong | Varies |
-| Metallic | Cations and delocalised electrons | Strong | High |
-| Hydrogen bonding | H bonded to N/O/F | Moderate | Moderate-High |
-| Dipole-dipole | Polar molecules | Weak | Low-Moderate |
-| van der Waals | All molecules | Very weak | Low |
+| Ionic            | Cations and anions                | Strong    | High          |
+| Covalent         | Shared electrons                  | Strong    | Varies        |
+| Metallic         | Cations and delocalised electrons | Strong    | High          |
+| Hydrogen bonding | H bonded to N/O/F                 | Moderate  | Moderate-High |
+| Dipole-dipole    | Polar molecules                   | Weak      | Low-Moderate  |
+| van der Waals    | All molecules                     | Very weak | Low           |
 
 ---
 
@@ -265,7 +267,7 @@ Allowing them to slide over each other.
 
 **Problem 1:** Predict the shape and bond angle of $\mathrm{SF}_4$.
 
-*If you get this wrong, revise: VSEPR Theory*
+_If you get this wrong, revise: VSEPR Theory_
 
 <details>
 <summary>Solution</summary>
@@ -282,7 +284,7 @@ Lone pair repulsion.
 **Problem 2:** Explain why the boiling point of $\mathrm{HF}$ is higher than that of
 $\mathrm{HCl}$Even though $\mathrm{HCl}$ has a larger molecular mass.
 
-*If you get this wrong, revise: Hydrogen Bonding*
+_If you get this wrong, revise: Hydrogen Bonding_
 
 <details>
 <summary>Solution</summary>
@@ -294,10 +296,10 @@ Intermolecular forces in $\mathrm{HF}$.
 
 </details>
 
-**Problem 3:** Why is $\mathrm{SiO}_2$ a solid with a very high melting point, while
-$\mathrm{CO}_2$ is a gas at room temperature?
+**Problem 3:** Why is $\mathrm{SiO}_2$ a solid with a very high melting point, while $\mathrm{CO}_2$
+is a gas at room temperature?
 
-*If you get this wrong, revise: Structures and Properties — Giant Covalent vs Simple Molecular*
+_If you get this wrong, revise: Structures and Properties — Giant Covalent vs Simple Molecular_
 
 <details>
 <summary>Solution</summary>
@@ -307,14 +309,14 @@ In a continuous 3D network. Breaking this requires breaking many strong covalent
 
 $\mathrm{CO}_2$ consists of simple discrete molecules with strong covalent bonds within each
 Molecule but only weak van der Waals forces between molecules. These weak intermolecular forces are
- overcome, so $\mathrm{CO}_2$ is a gas at room temperature.
+overcome, so $\mathrm{CO}_2$ is a gas at room temperature.
 
 </details>
 
 **Problem 4:** Draw the dot-and-cross diagram for the ammonium ion $\mathrm{NH}_4^+$ and identify
 The dative bond.
 
-*If you get this wrong, revise: Covalent Bonding — Dative Bonds*
+_If you get this wrong, revise: Covalent Bonding — Dative Bonds_
 
 <details>
 <summary>Solution</summary>
@@ -328,7 +330,7 @@ Charge. The dative bond is the $\mathrm{N\to H}$ bond where both electrons come 
 
 **Problem 5:** Explain why steel is harder than pure iron.
 
-*If you get this wrong, revise: Metallic Bonding — Alloys*
+_If you get this wrong, revise: Metallic Bonding — Alloys_
 
 <details>
 <summary>Solution</summary>
@@ -342,7 +344,7 @@ Prevent the iron atom layers from sliding, making steel harder and stronger than
 
 **Problem 6:** Predict the shape and bond angle of the $\mathrm{ClF}_3$ molecule.
 
-*If you get this wrong, revise: VSEPR Theory*
+_If you get this wrong, revise: VSEPR Theory_
 
 <details>
 <summary>Solution</summary>
@@ -350,16 +352,16 @@ Prevent the iron atom layers from sliding, making steel harder and stronger than
 Chlorine has 7 valence electrons. Three are used in bonding with fluorine, leaving 2 lone pairs.
 Total electron pairs = 5. Electron pair geometry: trigonal bipyramidal.
 
-The two lone pairs occupy equatorial positions to minimise repulsion. Molecular shape:
-**T-shaped**. Bond angles: approximately $87.5^\circ$ (axial-equatorial), reduced from $90^\circ$
-By lone pair repulsion.
+The two lone pairs occupy equatorial positions to minimise repulsion. Molecular shape: **T-shaped**.
+Bond angles: approximately $87.5^\circ$ (axial-equatorial), reduced from $90^\circ$ By lone pair
+repulsion.
 
 </details>
 
 **Problem 7:** Explain why the melting point of sodium chloride ($801^\circ\mathrm{C}$) is much
 Higher than that of iodine ($114^\circ\mathrm{C}$).
 
-*If you get this wrong, revise: Ionic Bonding vs Simple Molecular Structures*
+_If you get this wrong, revise: Ionic Bonding vs Simple Molecular Structures_
 
 <details>
 <summary>Solution</summary>
@@ -369,60 +371,60 @@ And $\mathrm{Cl^-}$ ions throughout the entire structure. A large amount of ener
 Overcome these forces.
 
 Iodine ($\mathrm{I_2}$) has a simple molecular structure. Although the covalent bonds within each
-$\mathrm{I_2}$ molecule are strong, only weak van der Waals forces act between molecules. These
-Are overcome, giving iodine a much lower melting point.
+$\mathrm{I_2}$ molecule are strong, only weak van der Waals forces act between molecules. These Are
+overcome, giving iodine a much lower melting point.
 
 </details>
 
 **Problem 8:** State and explain whether $\mathrm{BF}_3$ is a polar or non-polar molecule.
 
-*If you get this wrong, revise: Bond Polarity and Molecular Polarity*
+_If you get this wrong, revise: Bond Polarity and Molecular Polarity_
 
 <details>
 <summary>Solution</summary>
 
 $\mathrm{BF}_3$ is a **non-polar** molecule. Each $\mathrm{B - F}$ bond is polar (F is more
 Electronegative than B). However, the molecule has a trigonal planar geometry with bond angles of
-$120^\circ$. The three bond dipoles are arranged symmetrically and cancel each other out
-Completely, resulting in a net dipole moment of zero.
+$120^\circ$. The three bond dipoles are arranged symmetrically and cancel each other out Completely,
+resulting in a net dipole moment of zero.
 
 </details>
 
-**Problem 9:** Explain why graphite conducts electricity but diamond does not, even though both
-Are forms of carbon.
+**Problem 9:** Explain why graphite conducts electricity but diamond does not, even though both Are
+forms of carbon.
 
-*If you get this wrong, revise: Giant Covalent Structures*
+_If you get this wrong, revise: Giant Covalent Structures_
 
 <details>
 <summary>Solution</summary>
 
 In graphite, each carbon atom is bonded to only three others using three of its four valence
-Electrons. The fourth electron from each carbon is delocalised and free to move between the
-Layers. These mobile delocalised electrons carry charge, allowing graphite to conduct electricity.
+Electrons. The fourth electron from each carbon is delocalised and free to move between the Layers.
+These mobile delocalised electrons carry charge, allowing graphite to conduct electricity.
 
-In diamond, each carbon atom uses all four valence electrons to form four strong covalent bonds
-In a rigid 3D tetrahedral network. There are no delocalised electrons, so diamond cannot conduct
+In diamond, each carbon atom uses all four valence electrons to form four strong covalent bonds In a
+rigid 3D tetrahedral network. There are no delocalised electrons, so diamond cannot conduct
 Electricity and is an insulator.
 
 </details>
 
-**Problem 10:** Explain why ethanol ($\mathrm{C_2H_5OH}$B.p. $78^\circ\mathrm{C}$) has a
-Higher boiling point than dimethyl ether ($\mathrm{CH_3OCH_3}$B.p. $-24^\circ\mathrm{C}$),
-Even though both have the same molecular formula $\mathrm{C_2H_6O}$.
+**Problem 10:** Explain why ethanol ($\mathrm{C_2H_5OH}$B.p. $78^\circ\mathrm{C}$) has a Higher
+boiling point than dimethyl ether ($\mathrm{CH_3OCH_3}$B.p. $-24^\circ\mathrm{C}$), Even though both
+have the same molecular formula $\mathrm{C_2H_6O}$.
 
-*If you get this wrong, revise: Intermolecular Forces — Hydrogen Bonding*
+_If you get this wrong, revise: Intermolecular Forces — Hydrogen Bonding_
 
 <details>
 <summary>Solution</summary>
 
 Both molecules have the same molar mass ($46 \mathrm{ g/mol}$) and similar van der Waals forces.
-However, ethanol can form hydrogen bonds because it has an $-\mathrm{OH}$ group: the hydrogen of
-The $-\mathrm{OH}$ interacts with lone pairs on the oxygen of neighbouring ethanol molecules.
+However, ethanol can form hydrogen bonds because it has an $-\mathrm{OH}$ group: the hydrogen of The
+$-\mathrm{OH}$ interacts with lone pairs on the oxygen of neighbouring ethanol molecules.
 
-Dimethyl ether has no $-\mathrm{OH}$ group (the oxygen is bonded to two carbons), so it cannot
-Form hydrogen bonds. It only has weaker dipole-dipole interactions and van der Waals forces. The
-Hydrogen bonding in ethanol requires significantly more energy to overcome, resulting in a much
-Higher boiling point.
+Dimethyl ether has no $-\mathrm{OH}$ group (the oxygen is bonded to two carbons), so it cannot Form
+hydrogen bonds. It only has weaker dipole-dipole interactions and van der Waals forces. The Hydrogen
+bonding in ethanol requires significantly more energy to overcome, resulting in a much Higher
+boiling point.
 
 </details>
 

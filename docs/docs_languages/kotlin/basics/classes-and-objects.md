@@ -1,6 +1,8 @@
 ---
 title: Classes and Objects
-description: "Classes and Objects — Classes; Primary Constructor; Secondary Constructors; Visibility Modifiers with worked examples and exam-style questions."
+description:
+  'Classes and Objects — Classes; Primary Constructor; Secondary Constructors; Visibility Modifiers
+  with worked examples and exam-style questions.'
 slug: classes-and-objects
 date: 2026-04-18
 tags:
@@ -8,6 +10,7 @@ tags:
 categories:
   - Kotlin
 ---
+
 ## Classes
 
 Classes in Kotlin are declared with the `class` keyword. They are final by default -- use `open` to
@@ -61,12 +64,12 @@ Exactly once.
 
 ### Visibility Modifiers
 
-| Modifier | Class Member | Top-Level Declaration |
+| Modifier    | Class Member                 | Top-Level Declaration        |
 | ----------- | ---------------------------- | ---------------------------- |
-| `public` | Visible everywhere (default) | Visible everywhere (default) |
-| `private` | Inside class only | Inside file only |
-| `protected` | Inside class + subclasses | N/A |
-| `internal` | Inside module | Inside module |
+| `public`    | Visible everywhere (default) | Visible everywhere (default) |
+| `private`   | Inside class only            | Inside file only             |
+| `protected` | Inside class + subclasses    | N/A                          |
+| `internal`  | Inside module                | Inside module                |
 
 A module is a set of Kotlin files compiled together -- a Gradle project, a Maven project, or an
 IntelliJ module.
@@ -366,16 +369,16 @@ val user = spawn(User)  // User(name=default)
 ## Common Pitfalls
 
 - \*\* Forgetting that classes are final by default. Mark classes and methods as `open` when
- designing for inheritance.
+  designing for inheritance.
 - \*\* Using `data class` for mutable entities. `equals()` and `hashCode()` include mutable
- properties, which breaks the contract if the object is mutated after being placed in a `HashSet`
- or `HashMap`.
+  properties, which breaks the contract if the object is mutated after being placed in a `HashSet`
+  or `HashMap`.
 - \*\* Storing references to mutable collections in data classes. The `copy()` method performs a
- shallow copy, so mutations to the copy's collections affect the original.
+  shallow copy, so mutations to the copy's collections affect the original.
 - \*\* Using `object` declarations for dependency injection. Singletons make testing harder because
- they cannot be replaced or mocked. Prefer constructor injection with regular classes.
+  they cannot be replaced or mocked. Prefer constructor injection with regular classes.
 - \*\* Confusing `object` declarations with anonymous objects. `object` creates a named singleton;
- `object : SomeInterface { ... }` creates an anonymous instance.
+  `object : SomeInterface { ... }` creates an anonymous instance.
 
 ## Summary
 

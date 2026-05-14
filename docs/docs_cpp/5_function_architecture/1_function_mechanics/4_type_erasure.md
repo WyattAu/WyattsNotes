@@ -1,6 +1,8 @@
 ---
 title: Type Erasure — Function Pointers, std::function, std::move_only_function
-description: "C++: Type Erasure — Function Pointers, std::function, std::move_only_function — Type Erasure: Function Pointers, std::function, std::move_only_function."
+description:
+  'C++: Type Erasure — Function Pointers, std::function, std::move_only_function — Type Erasure:
+  Function Pointers, std::function, std::move_only_function.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -8,6 +10,7 @@ categories:
   - Cpp
 slug: type-erasure-function-pointers-std-function-move-only-function
 ---
+
 # Type Erasure: Function Pointers, std::function, std::move_only_function
 
 Type erasure allows heterogeneous callables to be stored and invoked through a uniform interface.
@@ -142,9 +145,9 @@ Default callable.
 
 ## 4.3 Small Buffer Optimization (SBO)
 
-`std::function` allocates a small internal buffer (implementation-defined, commonly 16–24
-Bytes on x86-64). If the stored callable fits within this buffer, no heap allocation occurs. This is
-The **Small Buffer Optimization**.
+`std::function` allocates a small internal buffer (implementation-defined, commonly 16–24 Bytes on
+x86-64). If the stored callable fits within this buffer, no heap allocation occurs. This is The
+**Small Buffer Optimization**.
 
 ```cpp
 #include <functional>
@@ -173,19 +176,17 @@ int main() {
 }
 ```
 
-:::warning
-The SBO threshold varies between standard library implementations. Libstdc++ (GCC) uses
+:::warning The SBO threshold varies between standard library implementations. Libstdc++ (GCC) uses
 16 bytes. Libc++ (Clang) uses 24 bytes (on 64-bit). If avoiding heap allocation is critical, prefer
-Passing lambdas as template parameters or using auto.
-:::
+Passing lambdas as template parameters or using auto. :::
 
 ### SBO Threshold Across Implementations
 
-| Implementation | SBO Size | Notes |
+| Implementation  | SBO Size | Notes                               |
 | :-------------- | :------- | :---------------------------------- |
-| libstdc++ (GCC) | 16 bytes | Fits two pointers + small captures |
-| libc++ (Clang) | 24 bytes | Three pointers + larger captures |
-| MSVC STL | 16 bytes | Consistent with libstdc++ on x86-64 |
+| libstdc++ (GCC) | 16 bytes | Fits two pointers + small captures  |
+| libc++ (Clang)  | 24 bytes | Three pointers + larger captures    |
+| MSVC STL        | 16 bytes | Consistent with libstdc++ on x86-64 |
 
 ### Detecting SBO at Compile Time
 
@@ -267,11 +268,9 @@ int main() {
 }
 ```
 
-:::info
-Relevance `std::move_only_function` is critical for callback-based APIs where the callback
+:::info Relevance `std::move_only_function` is critical for callback-based APIs where the callback
 Owns exclusive resources (file handles, network connections, GPU buffers). It enables zero-overhead
-Move semantics where `std::function` would force a costly shared_ptr wrapping.
-:::
+Move semantics where `std::function` would force a costly shared_ptr wrapping. :::
 
 ### `std::move_only_function` with `noexcept` Qualification
 
@@ -387,11 +386,11 @@ int main() {
 The size of a member function pointer is **not standardized**. The Itanium C++ ABI (Linux, macOS)
 Uses the following representation:
 
-| Scenario | Size | Contents |
+| Scenario                        | Size        | Contents                                           |
 | :------------------------------ | :---------- | :------------------------------------------------- |
-| Single inheritance, non-virtual | 8 bytes | Function pointer only |
-| Multiple inheritance | 16 bytes | Function pointer + this-adjustment offset |
-| Virtual inheritance | 16-24 bytes | Function pointer + vtable offset + this-adjustment |
+| Single inheritance, non-virtual | 8 bytes     | Function pointer only                              |
+| Multiple inheritance            | 16 bytes    | Function pointer + this-adjustment offset          |
+| Virtual inheritance             | 16-24 bytes | Function pointer + vtable offset + this-adjustment |
 
 On the MSVC ABI (Windows), member function pointers use a uniform representation that is always 16
 Bytes (or larger for virtual inheritance), regardless of the inheritance model.

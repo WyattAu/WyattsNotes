@@ -1,6 +1,8 @@
 ---
 title: Acids, Bases and Salt Preparation
-description: "Acids, Bases and Salt Preparation — Definitions of Acids and Bases (OL/HL); Arrhenius Definition; Bronsted-Lowry Definition (HL)."
+description:
+  'Acids, Bases and Salt Preparation — Definitions of Acids and Bases (OL/HL); Arrhenius Definition;
+  Bronsted-Lowry Definition (HL).'
 date: 2026-04-14
 tags:
   - Chemistry
@@ -9,6 +11,7 @@ categories:
   - Chemistry
 slug: acids-bases-and-salt-preparation
 ---
+
 # Acids, Bases and Salt Preparation
 
 This topic covers the properties of acids and bases, pH, strong and weak acids, buffers, and methods
@@ -64,7 +67,8 @@ $$
 
 ### Weak Acids
 
-Partially dissociate in water: $\mathrm{CH{}_3\mathrm{COOH{}$$\mathrm{HF{}$$\mathrm{H{}_2\mathrm{CO{}_3$.
+Partially dissociate in water:
+$\mathrm{CH{}_3\mathrm{COOH{}$$\mathrm{HF{}$$\mathrm{H{}_2\mathrm{CO{}_3$.
 
 $$
 \mathrm{CH{}_3\mathrm{COOH{} + \mathrm{H{}_2\mathrm{O{} \rightleftharpoons \mathrm{H{}_3\mathrm{O{}^+ + \mathrm{CH{}_3\mathrm{COO{}^-
@@ -90,11 +94,11 @@ $$
 
 At $25^\circ\mathrm{C{}$: $[\mathrm{H{}_3\mathrm{O{}^+][\mathrm{OH{}^-] = 10^{-14}$.
 
-| pH | [H3O+] | Description |
-| --- | ------------------- | --------------- |
-| 0 | $1\mathrm{ M{}$ | Strongly acidic |
-| 7 | $10^{-7}\mathrm{ M{}$ | Neutral |
-| 14 | $10^{-14}\mathrm{ M{}$ | Strongly basic |
+| pH  | [H3O+]                 | Description     |
+| --- | ---------------------- | --------------- |
+| 0   | $1\mathrm{ M{}$        | Strongly acidic |
+| 7   | $10^{-7}\mathrm{ M{}$  | Neutral         |
+| 14  | $10^{-14}\mathrm{ M{}$ | Strongly basic  |
 
 **Example (OL):** Find the pH of a $0.01\mathrm{ M{}$ solution of $\mathrm{HCl{}$.
 
@@ -174,8 +178,8 @@ $$
 \mathrm{pH{} = \mathrm{p{}K_a + \log\frac{[\mathrm{A{}^-]}{[\mathrm{HA{}]}
 $$
 
-**Example (HL):** A buffer contains $0.10\mathrm{ M{}$ $\mathrm{CH{}_3\mathrm{COOH{}$ and $0.15\mathrm{ M{}$
-$\mathrm{CH{}_3\mathrm{COONa{}$. Find the pH. ($\mathrm{p{}K_a = 4.76$)
+**Example (HL):** A buffer contains $0.10\mathrm{ M{}$ $\mathrm{CH{}_3\mathrm{COOH{}$ and
+$0.15\mathrm{ M{}$ $\mathrm{CH{}_3\mathrm{COONa{}$. Find the pH. ($\mathrm{p{}K_a = 4.76$)
 
 $$
 \mathrm{pH{} = 4.76 + \log\frac{0.15}{0.10} = 4.76 + \log 1.5 = 4.76 + 0.18 = 4.94
@@ -244,20 +248,20 @@ $$
 
 ### Choosing the Method
 
-| Desired salt | Method |
+| Desired salt                      | Method                      |
 | --------------------------------- | --------------------------- |
-| Sodium, potassium, ammonium salts | Titration or evaporation |
-| Soluble salts of other metals | Metal + acid or base + acid |
-| Insoluble salts | Precipitation |
+| Sodium, potassium, ammonium salts | Titration or evaporation    |
+| Soluble salts of other metals     | Metal + acid or base + acid |
+| Insoluble salts                   | Precipitation               |
 
 ## Indicators (OL/HL)
 
-| Indicator | Colour in acid | Colour in base | pH range |
+| Indicator           | Colour in acid | Colour in base | pH range    |
 | ------------------- | -------------- | -------------- | ----------- |
-| Litmus | Red | Blue | 4.5 -- 8.3 |
-| Methyl orange | Red | Yellow | 3.1 -- 4.4 |
-| Phenolphthalein | Colourless | Pink | 8.3 -- 10.0 |
-| Universal indicator | Various | Various | 1 -- 14 |
+| Litmus              | Red            | Blue           | 4.5 -- 8.3  |
+| Methyl orange       | Red            | Yellow         | 3.1 -- 4.4  |
+| Phenolphthalein     | Colourless     | Pink           | 8.3 -- 10.0 |
+| Universal indicator | Various        | Various        | 1 -- 14     |
 
 ### Choosing an Indicator for Titrations (HL)
 
@@ -283,17 +287,18 @@ The indicator must change colour within the pH range of the equivalence point.
 1. Define acid and base using the Arrhenius definition.
 2. Find the pH of a $0.001\mathrm{ M{}$ solution of $\mathrm{NaOH{}$.
 3. Write the balanced equation for the reaction between $\mathrm{HNO{}_3$ and $\mathrm{KOH{}$.
-4. Describe how to prepare a sample of $\mathrm{ZnSO{}_4$ crystals from zinc and dilute sulfuric acid.
+4. Describe how to prepare a sample of $\mathrm{ZnSO{}_4$ crystals from zinc and dilute sulfuric
+   acid.
 
 ### Higher Level
 
 1. Calculate the pH of a $0.15\mathrm{ M{}$ solution of $\mathrm{HF{}$ ($K_a = 6.8 \times 10^{-4}$).
-2. Calculate the pH of a buffer containing $0.20\mathrm{ M{}$ $\mathrm{NH{}_3$ and $0.25\mathrm{ M{}$
- $\mathrm{NH{}_4\mathrm{Cl{}$ ($K_b = 1.8 \times 10^{-5}$).
+2. Calculate the pH of a buffer containing $0.20\mathrm{ M{}$ $\mathrm{NH{}_3$ and
+   $0.25\mathrm{ M{}$ $\mathrm{NH{}_4\mathrm{Cl{}$ ($K_b = 1.8 \times 10^{-5}$).
 3. Explain why the pH of a $0.01\mathrm{ M{}$ solution of $\mathrm{HCl{}$ is 2 but the pH of a
- $0.01\mathrm{ M{}$ solution of $\mathrm{CH{}_3\mathrm{COOH{}$ is greater than 2.
+   $0.01\mathrm{ M{}$ solution of $\mathrm{CH{}_3\mathrm{COOH{}$ is greater than 2.
 4. 50 mL of $0.10\mathrm{ M{}$ $\mathrm{NaOH{}$ is added to 50 mL of $0.10\mathrm{ M{}$
- $\mathrm{CH{}_3\mathrm{COOH{}$. Calculate the pH of the resulting solution.
+   $\mathrm{CH{}_3\mathrm{COOH{}$. Calculate the pH of the resulting solution.
 
 ---
 
@@ -314,8 +319,8 @@ $$\mathrm{pH{} = -\log(0.0025) = 2.60$$
 For $\mathrm{H{}_2\mathrm{SO{}_4$The first proton dissociates completely. The second proton has
 $K_{a2} = 1.2 \times 10^{-2}$.
 
-**Worked Example 6 (HL):** Find the pH of $0.010 \mathrm{ M{}$ $\mathrm{H{}_2\mathrm{SO{}_4$Accounting for
-Both protons.
+**Worked Example 6 (HL):** Find the pH of $0.010 \mathrm{ M{}$
+$\mathrm{H{}_2\mathrm{SO{}_4$Accounting for Both protons.
 
 First proton: $[\mathrm{H{}^+] = 0.010 \mathrm{ M{}$ (complete dissociation).
 
@@ -335,8 +340,8 @@ $$\mathrm{pH{} = -\log(0.0146) = 1.84$$
 
 ### Dilution Calculations
 
-**Worked Example 7 (HL):** 25 mL of $0.10 \mathrm{ M{}$ $\mathrm{HCl{}$ is diluted to 250 mL. Find the new
-PH.
+**Worked Example 7 (HL):** 25 mL of $0.10 \mathrm{ M{}$ $\mathrm{HCl{}$ is diluted to 250 mL. Find
+the new PH.
 
 $$c_2 = \frac{0.10 \times 25}{250} = 0.010 \mathrm{ M{}$$
 
@@ -378,8 +383,8 @@ $[\mathrm{H{}^+] \approx \sqrt{K_a \times c}$ gives essentially the same result.
 
 ### How Buffers Work: Quantitative Treatment
 
-**Worked Example 10 (HL):** Calculate the pH of a buffer containing $0.20 \mathrm{ M{}$ $\mathrm{NH{}_3$
-And $0.25 \mathrm{ M{}$ $\mathrm{NH{}_4\mathrm{Cl{}$ ($K_b = 1.8 \times 10^{-5}$).
+**Worked Example 10 (HL):** Calculate the pH of a buffer containing $0.20 \mathrm{ M{}$
+$\mathrm{NH{}_3$ And $0.25 \mathrm{ M{}$ $\mathrm{NH{}_4\mathrm{Cl{}$ ($K_b = 1.8 \times 10^{-5}$).
 
 First find $pK_a$ for $\mathrm{NH{}_4^+$:
 
@@ -397,7 +402,7 @@ A buffer is most effective when:
 
 1. The concentrations of acid and conjugate base are high ( greater than 0.10 M)
 2. The ratio $[\mathrm{A{}^-]/[\mathrm{HA{}]$ is between 0.1 and 10, giving an effective range of
- $\mathrm{pH{} = pK_a \pm 1$
+   $\mathrm{pH{} = pK_a \pm 1$
 
 ---
 
@@ -405,12 +410,12 @@ A buffer is most effective when:
 
 ### pH of Salt Solutions
 
-| Salt formed from | Resulting pH | Reason |
+| Salt formed from          | Resulting pH   | Reason                  |
 | ------------------------- | -------------- | ----------------------- |
-| Strong acid + strong base | 7 | Neither ion hydrolyses |
-| Strong acid + weak base | Less than 7 | Cation hydrolyses |
-| Weak acid + strong base | Greater than 7 | Anion hydrolyses |
-| Weak acid + weak base | Depends | Compare $K_a$ and $K_b$ |
+| Strong acid + strong base | 7              | Neither ion hydrolyses  |
+| Strong acid + weak base   | Less than 7    | Cation hydrolyses       |
+| Weak acid + strong base   | Greater than 7 | Anion hydrolyses        |
+| Weak acid + weak base     | Depends        | Compare $K_a$ and $K_b$ |
 
 **Worked Example 11 (HL):** Explain why $\mathrm{Na{}_2\mathrm{CO{}_3$ solution is alkaline.
 
@@ -444,7 +449,8 @@ The production of $\mathrm{OH{}^-$ makes the solution alkaline.
 **Worked Example 12 (HL):** 50 mL of $0.10 \mathrm{ M{}$ $\mathrm{NaOH{}$ is added to 50 mL of
 $0.10 \mathrm{ M{}$ $\mathrm{CH{}_3\mathrm{COOH{}$. Calculate the pH of the resulting solution.
 
-At the equivalence point, all $\mathrm{CH{}_3\mathrm{COOH{}$ is converted to $\mathrm{CH{}_3\mathrm{COO{}^-$.
+At the equivalence point, all $\mathrm{CH{}_3\mathrm{COOH{}$ is converted to
+$\mathrm{CH{}_3\mathrm{COO{}^-$.
 
 $$n(\mathrm{CH{}_3\mathrm{COO{}^-) = 0.10 \times 0.050 = 0.0050 \mathrm{ mol{}$$
 
@@ -473,22 +479,23 @@ $$\mathrm{pOH{} = 5.28, \quad \mathrm{pH{} = 8.72$$
 ## Practice Questions (Extended)
 
 5. Write the balanced equation for the reaction between $\mathrm{HNO{}_3$ and $\mathrm{KOH{}$.
-6. Describe how to prepare a sample of $\mathrm{ZnSO{}_4$ crystals from zinc and dilute sulfuric acid.
+6. Describe how to prepare a sample of $\mathrm{ZnSO{}_4$ crystals from zinc and dilute sulfuric
+   acid.
 7. Calculate the pH of a $0.25 \mathrm{ M{}$ solution of $\mathrm{CH{}_3\mathrm{COOH{}$
- ($K_a = 1.8 \times 10^{-5}$) and the percentage dissociation.
+   ($K_a = 1.8 \times 10^{-5}$) and the percentage dissociation.
 8. A buffer contains $0.15 \mathrm{ M{}$ $\mathrm{HCOOH{}$ ($pK_a = 3.75$) and $0.20 \mathrm{ M{}$
- $\mathrm{HCOONa{}$. Calculate the pH and the pH after adding $0.01 \mathrm{ mol{}$ of $\mathrm{NaOH{}$ to
- $1 \mathrm{ L{}$ of the buffer.
+   $\mathrm{HCOONa{}$. Calculate the pH and the pH after adding $0.01 \mathrm{ mol{}$ of
+   $\mathrm{NaOH{}$ to $1 \mathrm{ L{}$ of the buffer.
 9. Explain why $\mathrm{Na{}_2\mathrm{CO{}_3$ solution is alkaline.
-10. Sketch the pH titration curve for $25 \mathrm{ mL{}$ of $0.10 \mathrm{ M{}$ $\mathrm{NH{}_3$ titrated
- with $0.10 \mathrm{ M{}$ $\mathrm{HCl{}$. Label the equivalence point, buffer region, and the
- half-equivalence point.
+10. Sketch the pH titration curve for $25 \mathrm{ mL{}$ of $0.10 \mathrm{ M{}$ $\mathrm{NH{}_3$
+    titrated with $0.10 \mathrm{ M{}$ $\mathrm{HCl{}$. Label the equivalence point, buffer region,
+    and the half-equivalence point.
 11. Calculate $K_a$ for a $0.050 \mathrm{ M{}$ weak acid solution with pH 2.80.
 12. Explain the difference between the Arrhenius, Bronsted-Lowry, and Lewis definitions of acids and
- bases, giving an example of a reaction that illustrates each definition.
+    bases, giving an example of a reaction that illustrates each definition.
 13. A student prepares a buffer by mixing $100 \mathrm{ mL{}$ of $0.20 \mathrm{ M{}$
- $\mathrm{CH{}_3\mathrm{COOH{}$ with $50 \mathrm{ mL{}$ of $0.20 \mathrm{ M{}$ $\mathrm{NaOH{}$. Calculate the
- pH of the resulting buffer.
+    $\mathrm{CH{}_3\mathrm{COOH{}$ with $50 \mathrm{ mL{}$ of $0.20 \mathrm{ M{}$ $\mathrm{NaOH{}$.
+    Calculate the pH of the resulting buffer.
 14. Describe the method of salt preparation by precipitation, giving an example.
 
 ---
@@ -502,27 +509,28 @@ $$\mathrm{pOH{} = 5.28, \quad \mathrm{pH{} = 8.72$$
 
 ### Examples
 
-**Lewis acid:** $\mathrm{BF{}_3$ (boron has an empty $p$ orbital), $\mathrm{AlCl{}_3$$\mathrm{H{}^+$ (has
-No electrons), $\mathrm{Cu{}^{2+}$ (can accept electron pairs).
+**Lewis acid:** $\mathrm{BF{}_3$ (boron has an empty $p$ orbital), $\mathrm{AlCl{}_3$$\mathrm{H{}^+$
+(has No electrons), $\mathrm{Cu{}^{2+}$ (can accept electron pairs).
 
-**Lewis base:** $\mathrm{NH{}_3$ (lone pair on nitrogen), $\mathrm{H{}_2\mathrm{O{}$ (lone pairs on oxygen),
-$\mathrm{OH{}^-$ (lone pair and negative charge), $\mathrm{Cl{}^-$ (lone pairs and negative charge).
+**Lewis base:** $\mathrm{NH{}_3$ (lone pair on nitrogen), $\mathrm{H{}_2\mathrm{O{}$ (lone pairs on
+oxygen), $\mathrm{OH{}^-$ (lone pair and negative charge), $\mathrm{Cl{}^-$ (lone pairs and negative
+charge).
 
 ### Comparison of Acid-Base Theories
 
-| Theory | Acid definition | Base definition | Scope |
-| -------------- | ------------------------------ | ------------------------------- | -------------------------------------------- |
-| Arrhenius | Produces $\mathrm{H{}^+$ in water | Produces $\mathrm{OH{}^-$ in water | Aqueous solutions only |
-| Bronsted-Lowry | Proton donor | Proton acceptor | Includes non-aqueous systems |
-| Lewis | Electron pair acceptor | Electron pair donor | Widest scope, includes proton-free reactions |
+| Theory         | Acid definition                   | Base definition                    | Scope                                        |
+| -------------- | --------------------------------- | ---------------------------------- | -------------------------------------------- |
+| Arrhenius      | Produces $\mathrm{H{}^+$ in water | Produces $\mathrm{OH{}^-$ in water | Aqueous solutions only                       |
+| Bronsted-Lowry | Proton donor                      | Proton acceptor                    | Includes non-aqueous systems                 |
+| Lewis          | Electron pair acceptor            | Electron pair donor                | Widest scope, includes proton-free reactions |
 
-**Example:** The reaction between $\mathrm{BF{}_3$ and $\mathrm{NH{}_3$ is a Lewis acid-base reaction but
-NOT a Bronsted-Lowry reaction (no proton transfer):
+**Example:** The reaction between $\mathrm{BF{}_3$ and $\mathrm{NH{}_3$ is a Lewis acid-base
+reaction but NOT a Bronsted-Lowry reaction (no proton transfer):
 
 $$\mathrm{BF{}_3 + \mathrm{NH{}_3 \to \mathrm{F{}_3\mathrm{B{}:\mathrm{NH{}_3$$
 
-$\mathrm{BF{}_3$ accepts the lone pair from nitrogen (Lewis acid), $\mathrm{NH{}_3$ donates the lone pair
-(Lewis base). A dative covalent bond is formed.
+$\mathrm{BF{}_3$ accepts the lone pair from nitrogen (Lewis acid), $\mathrm{NH{}_3$ donates the lone
+pair (Lewis base). A dative covalent bond is formed.
 
 ---
 
@@ -551,7 +559,8 @@ With dilute acids.
 
 **Example:** Preparation of $\mathrm{NaCl{}$:
 
-1. Titrate $\mathrm{NaOH{}$ with $\mathrm{HCl{}$ using phenolphthalein to find the exact volume needed.
+1. Titrate $\mathrm{NaOH{}$ with $\mathrm{HCl{}$ using phenolphthalein to find the exact volume
+   needed.
 2. Repeat without indicator, adding exactly the right volume of acid.
 3. Evaporate and crystallise.
 
@@ -587,13 +596,13 @@ Mix solutions, filter the precipitate, wash with distilled water, dry.
 
 ### Choosing the Correct Method
 
-| Desired salt | Solubility of salt | Recommended method |
-| --------------- | ------------------ | ------------------------------------- |
-| $\mathrm{NaCl{}$ | Soluble | Neutralisation (titration) |
-| $\mathrm{CuSO{}_4$ | Soluble | Acid + insoluble base |
-| $\mathrm{ZnSO{}_4$ | Soluble | Acid + metal or acid + base |
-| $\mathrm{PbI{}_2$ | Insoluble | Precipitation |
-| $\mathrm{CaCO{}_3$ | Insoluble | Cannot be prepared by aqueous methods |
+| Desired salt       | Solubility of salt | Recommended method                    |
+| ------------------ | ------------------ | ------------------------------------- |
+| $\mathrm{NaCl{}$   | Soluble            | Neutralisation (titration)            |
+| $\mathrm{CuSO{}_4$ | Soluble            | Acid + insoluble base                 |
+| $\mathrm{ZnSO{}_4$ | Soluble            | Acid + metal or acid + base           |
+| $\mathrm{PbI{}_2$  | Insoluble          | Precipitation                         |
+| $\mathrm{CaCO{}_3$ | Insoluble          | Cannot be prepared by aqueous methods |
 
 ---
 
@@ -616,20 +625,20 @@ Partially dissociated.
 
 - Diluting a strong acid by a factor of 10 increases pH by 1.
 - Diluting a weak acid by a factor of 10 increases pH by 0.5 (approximately, because the degree of
- dissociation increases upon dilution).
+  dissociation increases upon dilution).
 
 ---
 
 ## Summary Table: Acid-Base Concepts
 
-| Concept | Formula | Key Point |
-| --------------------- | --------------------------------------------------------- | --------------------------- |
-| pH | $\mathrm{pH{} = -\log[\mathrm{H{}^+]$ | Lower = more acidic |
-| $K_w$ | $[\mathrm{H{}^+][\mathrm{OH{}^-] = 10^{-14}$ | At $25°C$ |
-| $K_a$ | $\frac{[\mathrm{H{}^+][\mathrm{A{}^-]}{[\mathrm{HA{}]}$ | Higher = stronger acid |
-| $pK_a$ | $-\log K_a$ | Lower = stronger acid |
-| Henderson-Hasselbalch | $\mathrm{pH{} = pK_a + \log\frac{[\mathrm{A{}^-]}{[\mathrm{HA{}]}$ | Buffer pH |
-| $K_a \times K_b$ | $= K_w$ | Conjugate pair relationship |
+| Concept               | Formula                                                            | Key Point                   |
+| --------------------- | ------------------------------------------------------------------ | --------------------------- |
+| pH                    | $\mathrm{pH{} = -\log[\mathrm{H{}^+]$                              | Lower = more acidic         |
+| $K_w$                 | $[\mathrm{H{}^+][\mathrm{OH{}^-] = 10^{-14}$                       | At $25°C$                   |
+| $K_a$                 | $\frac{[\mathrm{H{}^+][\mathrm{A{}^-]}{[\mathrm{HA{}]}$            | Higher = stronger acid      |
+| $pK_a$                | $-\log K_a$                                                        | Lower = stronger acid       |
+| Henderson-Hasselbalch | $\mathrm{pH{} = pK_a + \log\frac{[\mathrm{A{}^-]}{[\mathrm{HA{}]}$ | Buffer pH                   |
+| $K_a \times K_b$      | $= K_w$                                                            | Conjugate pair relationship |
 
 ---
 
@@ -638,18 +647,18 @@ Partially dissociated.
 15. Define acid and base using the Arrhenius definition.
 16. Find the pH of a $0.001 \mathrm{ M{}$ solution of $\mathrm{NaOH{}$.
 17. Explain why $\mathrm{NH{}_4\mathrm{Cl{}$ solution has a pH less than 7.
-18. Calculate the mass of $\mathrm{AgNO{}_3$ required to prepare $250 \mathrm{ mL{}$ of $0.10 \mathrm{ M{}$
- solution.
+18. Calculate the mass of $\mathrm{AgNO{}_3$ required to prepare $250 \mathrm{ mL{}$ of
+    $0.10 \mathrm{ M{}$ solution.
 19. Describe how you would prepare a pure, dry sample of lead(II) sulfate.
-20. Explain why $\mathrm{HCl{}$ is a strong acid but $\mathrm{HF{}$ is a weak acid, despite fluorine being
- more electronegative than chlorine.
+20. Explain why $\mathrm{HCl{}$ is a strong acid but $\mathrm{HF{}$ is a weak acid, despite fluorine
+    being more electronegative than chlorine.
 21. Calculate the pH at the half-equivalence point when $25 \mathrm{ mL{}$ of $0.10 \mathrm{ M{}$
- $\mathrm{CH{}_3\mathrm{COOH{}$ is titrated with $\mathrm{NaOH{}$.
-22. A solution of $\mathrm{H{}_2\mathrm{SO{}_4$ has pH 1.30. Calculate the concentration of the acid,
- assuming the first proton dissociates completely and the second is negligible.
+    $\mathrm{CH{}_3\mathrm{COOH{}$ is titrated with $\mathrm{NaOH{}$.
+22. A solution of $\mathrm{H{}_2\mathrm{SO{}_4$ has pH 1.30. Calculate the concentration of the
+    acid, assuming the first proton dissociates completely and the second is negligible.
 23. Explain, with equations, how a buffer containing $\mathrm{CH{}_3\mathrm{COOH{}$ and
- $\mathrm{CH{}_3\mathrm{COONa{}$ resists pH change when (a) a small amount of $\mathrm{HCl{}$ is added,
- and (b) a small amount of $\mathrm{NaOH{}$ is added.
+    $\mathrm{CH{}_3\mathrm{COONa{}$ resists pH change when (a) a small amount of $\mathrm{HCl{}$ is
+    added, and (b) a small amount of $\mathrm{NaOH{}$ is added.
 
 ---
 
@@ -664,8 +673,8 @@ $$\mathrm{H{}_2\mathrm{CO{}_3 \rightleftharpoons \mathrm{H{}^+ + \mathrm{HCO{}_3
 $$\mathrm{HCO{}_3^- \rightleftharpoons \mathrm{H{}^+ + \mathrm{CO{}_3^{2-} \quad K_{a2} = 4.8 \times 10^{-11}$$
 
 Note: $K_{a1} \gg K_{a2}$. The first dissociation is much stronger than the second because removing
-$\mathrm{H{}^+$ from a negatively charged ion ($\mathrm{HCO{}_3^-$) is harder than from a neutral molecule
-($\mathrm{H{}_2\mathrm{CO{}_3$).
+$\mathrm{H{}^+$ from a negatively charged ion ($\mathrm{HCO{}_3^-$) is harder than from a neutral
+molecule ($\mathrm{H{}_2\mathrm{CO{}_3$).
 
 ### Phosphoric Acid ($\mathrm{H{}_3\mathrm{PO{}_4$)
 
@@ -692,8 +701,8 @@ System works because:
 2. The kidneys regulate $\mathrm{HCO{}_3^-$ levels
 3. Haemoglobin acts as an additional buffer
 
-The phosphate buffer system ($\mathrm{H{}_2\mathrm{PO{}_4^-/\mathrm{HPO{}_4^{2-}$$pK_{a2} = 7.21$) is
-Important intracellularly.
+The phosphate buffer system ($\mathrm{H{}_2\mathrm{PO{}_4^-/\mathrm{HPO{}_4^{2-}$$pK_{a2} = 7.21$)
+is Important intracellularly.
 
 ---
 

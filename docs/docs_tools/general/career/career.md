@@ -1,9 +1,12 @@
 ---
 id: career
 title: Systems Engineering Career
-description: "Systems Engineering Career — Systems Engineering Career Paths; SRE (Site Reliability Engineering); Platform Engineering; Infrastructure Engineering."
+description:
+  'Systems Engineering Career — Systems Engineering Career Paths; SRE (Site Reliability
+  Engineering); Platform Engineering; Infrastructure Engineering.'
 slug: career
 ---
+
 ## Systems Engineering Career Paths
 
 ### SRE (Site Reliability Engineering)
@@ -35,7 +38,7 @@ Platform engineering builds internal developer platforms that abstract infrastru
 - **Platform as a Product:** The platform team treats developers as customers.
 - **Self-service infrastructure:** Developers provision resources without filing tickets.
 - **Golden paths:** Opinionated, pre-configured stacks that are secure, compliant, and
- production-ready.
+  production-ready.
 
 **Key skills:**
 
@@ -89,7 +92,7 @@ The design from requirements to implementation.
 **Framework:**
 
 1. **Clarify requirements.** Functional (what must it do?) and non-functional (scale, latency,
- availability, consistency).
+   availability, consistency).
 2. **Estimate scale.** How many users? How many requests per second? How much data?
 3. **Define the API.** Key endpoints, data models, and contracts.
 4. **Design the high-level architecture.** Components, data flow, and communication patterns.
@@ -128,12 +131,12 @@ For systems engineering roles, coding interviews focus on practical programming 
 
 The STAR method structures your answers:
 
-| Component | Description | Example |
+| Component     | Description           | Example                                                                                                     |
 | ------------- | --------------------- | ----------------------------------------------------------------------------------------------------------- |
-| **S**ituation | Set the context | "We were running a database with 500 GB of data on a single node." |
-| **T**ask | What you needed to do | "I was tasked with migrating to a sharded setup to handle 10x growth." |
-| **A**ction | What you did | "I designed a consistent hashing scheme, implemented the sharding layer in Go, and ran a canary migration." |
-| **R**esult | What happened | "The migration completed in 2 weeks with zero downtime. Query latency improved by 60%." |
+| **S**ituation | Set the context       | "We were running a database with 500 GB of data on a single node."                                          |
+| **T**ask      | What you needed to do | "I was tasked with migrating to a sharded setup to handle 10x growth."                                      |
+| **A**ction    | What you did          | "I designed a consistent hashing scheme, implemented the sharding layer in Go, and ran a canary migration." |
+| **R**esult    | What happened         | "The migration completed in 2 weeks with zero downtime. Query latency improved by 60%."                     |
 
 **Common behavioral questions:**
 
@@ -186,13 +189,13 @@ B.S. Computer Science — University (2019)
 ### Key Principles
 
 1. **Quantify everything.** "Managed servers" is weak. "Managed 200+ production servers across 3
- data centers with 99.99% uptime" is strong.
+   data centers with 99.99% uptime" is strong.
 2. **Lead with impact.** What did you achieve, not what you were responsible for.
 3. **Tailor to the role.** Emphasize the skills and experience most relevant to the position.
 4. **One page for early career, two pages maximum for experienced.** Recruiters spend an average of
- 7.4 seconds on an initial resume scan.
+   7.4 seconds on an initial resume scan.
 5. **Use action verbs.** Designed, built, deployed, optimized, automated, reduced, increased,
- migrated.
+   migrated.
 
 ---
 
@@ -200,14 +203,14 @@ B.S. Computer Science — University (2019)
 
 ### Conferences and Meetups
 
-| Conference | Focus | Location |
+| Conference  | Focus                        | Location            |
 | ----------- | ---------------------------- | ------------------- |
-| KubeCon | Cloud native, Kubernetes | Rotating global |
-| SREcon | Site reliability engineering | Rotating global |
-| LISA | Systems administration | Rotating (USENIX) |
+| KubeCon     | Cloud native, Kubernetes     | Rotating global     |
+| SREcon      | Site reliability engineering | Rotating global     |
+| LISA        | Systems administration       | Rotating (USENIX)   |
 | DevOps Days | DevOps culture and practices | Global, many cities |
-| Ceph Day | Distributed storage | Various |
-| LinuxCon | Linux kernel and ecosystem | Rotating |
+| Ceph Day    | Distributed storage          | Various             |
+| LinuxCon    | Linux kernel and ecosystem   | Rotating            |
 
 ### Online Communities
 
@@ -231,41 +234,41 @@ B.S. Computer Science — University (2019)
 ### Principles
 
 1. **Know your market value.** Use Levels.fyi, Glassdoor, Blind, and industry salary surveys to
- research compensation for your role, location, and experience level.
+   research compensation for your role, location, and experience level.
 2. **Never give a number first.** If asked for your salary expectations, defer: "I am open to a
- competitive offer based on the responsibilities of the role. What is the budget for this
- position?"
+   competitive offer based on the responsibilities of the role. What is the budget for this
+   position?"
 3. **Negotiate the total package.** Salary is one component. Consider equity, signing bonus, annual
- bonus, relocation, remote work allowance, and vacation.
+   bonus, relocation, remote work allowance, and vacation.
 4. **Be willing to walk away.** The best negotiation leverage is having alternatives. Continue
- interviewing until you have multiple offers.
+   interviewing until you have multiple offers.
 5. **Get everything in writing.** Verbal promises are not enforceable. Ensure the offer letter
- includes all negotiated terms.
+   includes all negotiated terms.
 
 ### Compensation Structure
 
-| Component | Negotiable | Typical Range |
+| Component             | Negotiable | Typical Range                 |
 | --------------------- | ---------- | ----------------------------- |
-| Base salary | Yes | 70–80% of total compensation |
-| Equity (RSUs/options) | Sometimes | 10–25% of total |
-| Signing bonus | Yes | 5–15% of base, often one-time |
-| Annual bonus | Sometimes | 5–20% of base |
-| Relocation | Yes | If applicable |
-| Title | Yes | May affect future comp |
+| Base salary           | Yes        | 70–80% of total compensation  |
+| Equity (RSUs/options) | Sometimes  | 10–25% of total               |
+| Signing bonus         | Yes        | 5–15% of base, often one-time |
+| Annual bonus          | Sometimes  | 5–20% of base                 |
+| Relocation            | Yes        | If applicable                 |
+| Title                 | Yes        | May affect future comp        |
 
 ---
 
 ## Startups vs. Big Tech
 
-| Factor | Startup | Big Tech |
+| Factor            | Startup                            | Big Tech                           |
 | ----------------- | ---------------------------------- | ---------------------------------- |
-| Scope | Broad (wear many hats) | Narrow (deep specialization) |
-| Impact | Direct, visible | Indirect, distributed |
-| Learning | Fast, breadth-heavy | Structured, depth-focused |
-| Stability | Lower | Higher |
-| Compensation | Lower base, higher equity upside | Higher base, predictable equity |
-| Career growth | Title inflation, but fewer mentors | Clear ladder, extensive mentorship |
-| Work-life balance | Often poor | Varies (some teams are good) |
+| Scope             | Broad (wear many hats)             | Narrow (deep specialization)       |
+| Impact            | Direct, visible                    | Indirect, distributed              |
+| Learning          | Fast, breadth-heavy                | Structured, depth-focused          |
+| Stability         | Lower                              | Higher                             |
+| Compensation      | Lower base, higher equity upside   | Higher base, predictable equity    |
+| Career growth     | Title inflation, but fewer mentors | Clear ladder, extensive mentorship |
+| Work-life balance | Often poor                         | Varies (some teams are good)       |
 
 **Recommendation:** Start in big tech if possible to learn best practices, then move to a startup
 For broader experience — or vice versa. The ideal path depends on your risk tolerance, career goals,
@@ -278,15 +281,15 @@ And life stage.
 ### Making Remote Work Effective
 
 1. **Create a dedicated workspace.** A separate room is ideal. A dedicated desk with a door you can
- close is the minimum.
+   close is the minimum.
 2. **Maintain a routine.** Start work at the same time, take breaks at the same time, end work at
- the same time. The lack of commute makes boundaries blurry — enforce them.
+   the same time. The lack of commute makes boundaries blurry — enforce them.
 3. **Over-communicate.** In a remote setting, nobody can see what you are working on. Write detailed
- status updates, document your decisions, and communicate proactively.
+   status updates, document your decisions, and communicate proactively.
 4. **Invest in equipment.** A good monitor, keyboard, webcam, microphone, and chair pay for
- themselves in productivity and comfort.
+   themselves in productivity and comfort.
 5. **Socialize intentionally.** Remote work can be isolating. Schedule virtual coffee chats,
- participate in team social events, and maintain non-work relationships.
+   participate in team social events, and maintain non-work relationships.
 
 ---
 
@@ -294,16 +297,16 @@ And life stage.
 
 ### Certifications
 
-| Certification | Provider | Focus | Difficulty | Industry Recognition |
+| Certification                                     | Provider                     | Focus                 | Difficulty | Industry Recognition |
 | ------------------------------------------------- | ---------------------------- | --------------------- | ---------- | -------------------- |
-| AWS Solutions Architect (Professional) | Amazon | Cloud architecture | High | Very High |
-| GCP Professional Cloud Architect | Google | Cloud architecture | High | High |
-| CKAD (Certified Kubernetes Application Developer) | CNCF | Kubernetes apps | Moderate | High |
-| CKA (Certified Kubernetes Administrator) | CNCF | Kubernetes admin | Moderate | High |
-| RHCE (Red Hat Certified Engineer) | Red Hat | Linux administration | Moderate | High |
-| LPIC-2 | Linux Professional Institute | Linux engineering | Moderate | Moderate |
-| CompTIA Security+ | CompTIA | Security fundamentals | Low | Moderate |
-| OCP (Oracle Certified Professional) | Oracle | Oracle database | High | High |
+| AWS Solutions Architect (Professional)            | Amazon                       | Cloud architecture    | High       | Very High            |
+| GCP Professional Cloud Architect                  | Google                       | Cloud architecture    | High       | High                 |
+| CKAD (Certified Kubernetes Application Developer) | CNCF                         | Kubernetes apps       | Moderate   | High                 |
+| CKA (Certified Kubernetes Administrator)          | CNCF                         | Kubernetes admin      | Moderate   | High                 |
+| RHCE (Red Hat Certified Engineer)                 | Red Hat                      | Linux administration  | Moderate   | High                 |
+| LPIC-2                                            | Linux Professional Institute | Linux engineering     | Moderate   | Moderate             |
+| CompTIA Security+                                 | CompTIA                      | Security fundamentals | Low        | Moderate             |
+| OCP (Oracle Certified Professional)               | Oracle                       | Oracle database       | High       | High                 |
 
 Certifications are most valuable early in your career (they signal baseline knowledge to recruiters)
 Or when transitioning to a new domain. They are less valuable than demonstrated experience.
@@ -314,19 +317,19 @@ Blogging forces you to clarify your understanding and builds your professional b
 
 - **Platform:** Personal blog (Hugo, Astro), Dev.to, Hashnode, Medium
 - **Topics:** Deep dives into problems you solved, tutorials for tools you use, opinion pieces on
- industry trends
+  industry trends
 - **Frequency:** 1–2 posts per month is sustainable
 - **Quality over quantity.** One well-researched, technically accurate post is worth more than four
- shallow listicles.
+  shallow listicles.
 
 ### Mentorship
 
 - **Find a mentor.** A senior engineer who has the career you want. Ask for 30-minute conversations
- monthly. Come with specific questions.
+  monthly. Come with specific questions.
 - **Be a mentor.** Teaching is the best way to learn. Mentoring junior engineers reinforces your own
- knowledge and develops leadership skills.
+  knowledge and develops leadership skills.
 - **Seek feedback.** Regularly ask your manager and peers: "What is one thing I could do differently
- to be more effective?"
+  to be more effective?"
 
 ---
 
@@ -345,7 +348,7 @@ IC progression is measured by:
 - **Autonomy:** Less direction needed from management.
 - **Mentorship:** Teaching and guiding more junior engineers.
 - **Influence:** Shaping technical direction through design reviews, RFCs, and architectural
- decisions.
+  decisions.
 
 ### Management Track
 
@@ -373,7 +376,7 @@ Many areas (the horizontal bar). Systems engineers should aim for:
 
 - **Deep:** One specialization (e.g., distributed storage, networking, Kubernetes, security)
 - **Broad:** Working knowledge of Linux, networking, databases, containers, CI/CD, monitoring,
- programming (at least one language), and cloud platforms
+  programming (at least one language), and cloud platforms
 
 ---
 
@@ -410,12 +413,12 @@ Rates, and shortens your career. Set boundaries, take vacations, and invest in y
 
 ### SRE Daily Responsibilities
 
-| Activity | Time Allocation | Description |
+| Activity    | Time Allocation | Description                                |
 | ----------- | --------------- | ------------------------------------------ |
-| On-call | 20–30% | Incident response, paging, post-mortems |
-| Engineering | 40–50% | Writing automation, improving reliability |
-| Design | 10–15% | System architecture, capacity planning |
-| Reviews | 10–15% | Code review, design review, runbook review |
+| On-call     | 20–30%          | Incident response, paging, post-mortems    |
+| Engineering | 40–50%          | Writing automation, improving reliability  |
+| Design      | 10–15%          | System architecture, capacity planning     |
+| Reviews     | 10–15%          | Code review, design review, runbook review |
 
 ### SRE Skills Progression
 
@@ -473,18 +476,18 @@ Rates, and shortens your career. Set boundaries, take vacations, and invest in y
 
 ### Platform Engineering vs. DevOps vs. SRE
 
-| Aspect | DevOps | SRE | Platform Engineering |
+| Aspect   | DevOps                | SRE                | Platform Engineering                    |
 | -------- | --------------------- | ------------------ | --------------------------------------- |
-| Focus | CI/CD pipelines | Reliability | Developer experience |
-| Customer | Operations team | Product team | Development team |
-| Output | Deployment automation | SLOs, monitoring | Internal developer platform |
-| Metric | Deployment frequency | Error budget, MTTR | Developer satisfaction, deployment time |
-| Scope | Single application | All services | All developers |
+| Focus    | CI/CD pipelines       | Reliability        | Developer experience                    |
+| Customer | Operations team       | Product team       | Development team                        |
+| Output   | Deployment automation | SLOs, monitoring   | Internal developer platform             |
+| Metric   | Deployment frequency  | Error budget, MTTR | Developer satisfaction, deployment time |
+| Scope    | Single application    | All services       | All developers                          |
 
 ### Platform Engineering Skills
 
 1. **Kubernetes expertise:** Deep knowledge of Kubernetes architecture, operators, and custom
- controllers.
+   controllers.
 2. **Infrastructure as Code:** Terraform, Pulumi, Crossplane for provisioning.
 3. **Developer experience design:** CLI tools, documentation, templates, onboarding flows.
 4. **Security integration:** RBAC, secrets management, network policies, compliance.
@@ -534,32 +537,32 @@ The maintenance window."
 
 ### Researching Market Rates
 
-| Source | URL | Accuracy |
+| Source           | URL           | Accuracy                           |
 | ---------------- | ------------- | ---------------------------------- |
-| Levels.fyi | levels.fyi | High (self-reported, verified) |
-| Glassdoor | glassdoor.com | Medium (self-reported, unverified) |
-| Blind | teamblind.com | High (verified employees) |
-| BuiltIn | builtin.com | Medium |
-| Industry surveys | Various | Medium |
+| Levels.fyi       | levels.fyi    | High (self-reported, verified)     |
+| Glassdoor        | glassdoor.com | Medium (self-reported, unverified) |
+| Blind            | teamblind.com | High (verified employees)          |
+| BuiltIn          | builtin.com   | Medium                             |
+| Industry surveys | Various       | Medium                             |
 
 ### Negotiation Tactics
 
 1. **Defer to the recruiter.** Let them name the number first.
 2. **Anchor high.** Based on your research, state a range that starts above your target.
 3. **Justify with data.** "Based on my research and the scope of the role, I'm targeting a base
- salary of $X. Here are the data points I used..."
+   salary of $X. Here are the data points I used..."
 4. **Negotiate the total package.** Salary + equity + signing bonus + annual bonus + benefits.
 5. **Use competing offers.** If you have multiple offers, use them as leverage.
 6. **Be willing to walk away.** The best leverage is the ability to say no.
 
 ### Equity Evaluation
 
-| Component | How to Evaluate | Risk |
+| Component                     | How to Evaluate                  | Risk                            |
 | ----------------------------- | -------------------------------- | ------------------------------- |
-| RSUs (Restricted Stock Units) | Number of shares x current price | Price can go down |
-| Stock options | Strike price vs. Exercise price | May never be in the money |
-| Vesting schedule | 4-year cliff vs. Graded vesting | Company may not survive 4 years |
-| Liquidity | Public vs. Private company | Private equity is illiquid |
+| RSUs (Restricted Stock Units) | Number of shares x current price | Price can go down               |
+| Stock options                 | Strike price vs. Exercise price  | May never be in the money       |
+| Vesting schedule              | 4-year cliff vs. Graded vesting  | Company may not survive 4 years |
+| Liquidity                     | Public vs. Private company       | Private equity is illiquid      |
 
 ## Continuous Learning Paths
 
@@ -634,20 +637,20 @@ Before making the transition:
 
 ### Startup to Big Tech
 
-| Factor | Startup | Big Tech |
+| Factor               | Startup                | Big Tech            |
 | -------------------- | ---------------------- | ------------------- |
-| Role breadth | Very broad | Narrow |
-| Impact visibility | High | Low |
+| Role breadth         | Very broad             | Narrow              |
+| Impact visibility    | High                   | Low                 |
 | Compensation ceiling | Higher (equity upside) | Lower (predictable) |
-| Stability | Lower | Higher |
-| Learning | Fast, breadth-heavy | Slow, depth-focused |
-| Brand recognition | Low | High |
-| Resume value | Project-based | Company-based |
+| Stability            | Lower                  | Higher              |
+| Learning             | Fast, breadth-heavy    | Slow, depth-focused |
+| Brand recognition    | Low                    | High                |
+| Resume value         | Project-based          | Company-based       |
 
 ### Remote Work Best Practices
 
 1. **Over-communicate in writing.** In remote settings, if it is not written down, it did not
- happen.
+   happen.
 2. **Maintain visible availability.** Update your calendar, status, and Slack presence.
 3. **Async by default.** Default to written communication; use meetings only when necessary.
 4. **Document everything.** Runbooks, ADRs, and READMEs are more important in remote teams.
@@ -680,24 +683,24 @@ It is the right career path and prepare accordingly.
 
 ### A Typical SRE Day
 
-| Time Block | Activity | Percentage of Day |
+| Time Block            | Activity                                                   | Percentage of Day |
 | --------------------- | ---------------------------------------------------------- | ----------------- |
-| Morning (1-2h) | Incident review, triage overnight alerts, check dashboards | 15% |
-| Mid-morning (2-3h) | Project work (infrastructure code, automation) | 30% |
-| Afternoon (1-2h) | Code reviews, design reviews, meetings | 20% |
-| Late afternoon (1-2h) | On-call preparation, runbook updates, documentation | 15% |
-| Ad-hoc (variable) | Incident response, debugging production issues | 20% |
+| Morning (1-2h)        | Incident review, triage overnight alerts, check dashboards | 15%               |
+| Mid-morning (2-3h)    | Project work (infrastructure code, automation)             | 30%               |
+| Afternoon (1-2h)      | Code reviews, design reviews, meetings                     | 20%               |
+| Late afternoon (1-2h) | On-call preparation, runbook updates, documentation        | 15%               |
+| Ad-hoc (variable)     | Incident response, debugging production issues             | 20%               |
 
 ### SRE vs DevOps vs Platform Engineering
 
-| Dimension | SRE | DevOps | Platform Engineering |
+| Dimension    | SRE                               | DevOps                           | Platform Engineering               |
 | ------------ | --------------------------------- | -------------------------------- | ---------------------------------- |
-| Origin | Google (2003) | Cultural movement (2009) | Evolution of DevOps (2020+) |
-| Focus | Reliability, SLAs, toil reduction | Collaboration, automation, CI/CD | Developer experience, self-service |
-| Error budget | Explicit (SLI/SLO/SLA) | Implicit | Team-specific |
-| On-call | Yes, primary responsibility | Shared with dev teams | Rarely (focus on building) |
-| Key skills | Capacity planning, postmortems | Automation, monitoring | API design, developer portals |
-| Career path | Senior SRE, Staff SRE, Principal | DevOps Engineer, Lead | Platform Engineer, Architect |
+| Origin       | Google (2003)                     | Cultural movement (2009)         | Evolution of DevOps (2020+)        |
+| Focus        | Reliability, SLAs, toil reduction | Collaboration, automation, CI/CD | Developer experience, self-service |
+| Error budget | Explicit (SLI/SLO/SLA)            | Implicit                         | Team-specific                      |
+| On-call      | Yes, primary responsibility       | Shared with dev teams            | Rarely (focus on building)         |
+| Key skills   | Capacity planning, postmortems    | Automation, monitoring           | API design, developer portals      |
+| Career path  | Senior SRE, Staff SRE, Principal  | DevOps Engineer, Lead            | Platform Engineer, Architect       |
 
 ### Key SRE Skills to Develop
 
@@ -726,13 +729,13 @@ graph LR
 
 ### Competency Matrix
 
-| Competency | Junior | Mid | Senior | Staff |
+| Competency      | Junior                       | Mid                                  | Senior                                | Staff                                   |
 | --------------- | ---------------------------- | ------------------------------------ | ------------------------------------- | --------------------------------------- |
-| Technical scope | Single component | Multiple components | System-wide | Organization-wide |
-| Problem solving | Given a bug, fix it | Given an error, diagnose root cause | Given a symptom, identify the problem | Given a trend, prevent the problem |
-| Communication | Updates status when asked | Proactively communicates blockers | Drives cross-team alignment | Influences org-wide technical direction |
-| Mentorship | Receives mentorship | Mentors juniors on technical tasks | Mentors mid-level engineers on career | Mentors senior engineers and leads |
-| Decision making | Follows established patterns | Evaluates options within known space | Makes architectural decisions | Makes strategic technology bets |
+| Technical scope | Single component             | Multiple components                  | System-wide                           | Organization-wide                       |
+| Problem solving | Given a bug, fix it          | Given an error, diagnose root cause  | Given a symptom, identify the problem | Given a trend, prevent the problem      |
+| Communication   | Updates status when asked    | Proactively communicates blockers    | Drives cross-team alignment           | Influences org-wide technical direction |
+| Mentorship      | Receives mentorship          | Mentors juniors on technical tasks   | Mentors mid-level engineers on career | Mentors senior engineers and leads      |
+| Decision making | Follows established patterns | Evaluates options within known space | Makes architectural decisions         | Makes strategic technology bets         |
 
 ### Demonstrating Seniority Without Title
 
@@ -751,13 +754,13 @@ You do not need a senior title to demonstrate senior-level skills. Evidence incl
 Most systems design interviews for infrastructure roles follow this structure:
 
 1. **Clarify requirements (5 min):** Ask about scale, latency requirements, consistency needs, and
- budget constraints.
+   budget constraints.
 2. **Define scope (2 min):** Agree on what is in scope and what is out of scope.
 3. **High-level design (10 min):** Draw the major components and their interactions.
 4. **Deep dive (20 min):** Pick 2-3 components and design them in detail. Discuss data models, APIs,
- and failure modes.
+   and failure modes.
 5. **Wrap-up (5 min):** Summarize, discuss trade-offs, and mention what you would improve with more
- time.
+   time.
 
 ### Common Systems Design Questions
 
@@ -774,9 +777,9 @@ Structure answers using **Situation, Task, Action, Result**:
 - **Situation:** Set the context. "We had a production outage affecting 5% of users."
 - **Task:** Define your responsibility. "I was the on-call engineer responsible for triage."
 - **Action:** Describe what you did. "I identified the root cause as a misconfigured connection
- pool, implemented a fix, and updated the runbook to prevent recurrence."
+  pool, implemented a fix, and updated the runbook to prevent recurrence."
 - **Result:** Quantify the outcome. "Restored service in 23 minutes. The updated runbook reduced
- mean time to resolution for similar incidents from 45 to 15 minutes."
+  mean time to resolution for similar incidents from 45 to 15 minutes."
 
 ### Salary Negotiation Deep Dive
 
@@ -792,15 +795,15 @@ Research compensation for your role, level, and location before any negotiation:
 #### Negotiation Tactics
 
 1. **Never accept the first offer.** There is almost always room. A polite "I was expecting
- something closer to $X based on my research" is standard.
+   something closer to $X based on my research" is standard.
 2. **Negotiate total compensation, not just base salary.** Equity, signing bonus, annual bonus, and
- benefits can be negotiated independently.
+   benefits can be negotiated independently.
 3. **Use competing offers.** "I have another offer at $Y. Can you match it?" is effective and
- expected.
+   expected.
 4. **Delay salary discussion until you have an offer.** Do not provide salary expectations early. "I
- would like to learn more about the role before discussing compensation" is acceptable.
+   would like to learn more about the role before discussing compensation" is acceptable.
 5. **Get everything in writing.** Verbal promises about future raises, title changes, or equity
- refreshes are not enforceable.
+   refreshes are not enforceable.
 
 #### Evaluating Equity
 
@@ -835,26 +838,26 @@ Structured learning paths.
 
 ### Linux and Infrastructure
 
-| Certification | Issuer | Difficulty | Value |
+| Certification | Issuer                       | Difficulty   | Value                  |
 | ------------- | ---------------------------- | ------------ | ---------------------- |
-| LPIC-1 | Linux Professional Institute | Beginner | Foundation |
-| LPIC-2 | Linux Professional Institute | Intermediate | Operations roles |
-| RHCSA | Red Hat | Intermediate | Enterprise Linux roles |
-| RHCE | Red Hat | Advanced | Senior Linux roles |
-| LFCS | Linux Foundation | Intermediate | Cloud-native roles |
-| CKA | CNCF/Kubernetes | Intermediate | Kubernetes admin |
-| CKAD | CNCF/Kubernetes | Intermediate | Kubernetes developer |
-| CKS | CNCF/Kubernetes | Advanced | Kubernetes security |
+| LPIC-1        | Linux Professional Institute | Beginner     | Foundation             |
+| LPIC-2        | Linux Professional Institute | Intermediate | Operations roles       |
+| RHCSA         | Red Hat                      | Intermediate | Enterprise Linux roles |
+| RHCE          | Red Hat                      | Advanced     | Senior Linux roles     |
+| LFCS          | Linux Foundation             | Intermediate | Cloud-native roles     |
+| CKA           | CNCF/Kubernetes              | Intermediate | Kubernetes admin       |
+| CKAD          | CNCF/Kubernetes              | Intermediate | Kubernetes developer   |
+| CKS           | CNCF/Kubernetes              | Advanced     | Kubernetes security    |
 
 ### Cloud
 
-| Certification | Issuer | Difficulty | Value |
+| Certification                     | Issuer    | Difficulty   | Value                  |
 | --------------------------------- | --------- | ------------ | ---------------------- |
-| AWS Solutions Architect Associate | Amazon | Intermediate | Cloud roles |
-| AWS DevOps Engineer Professional | Amazon | Advanced | AWS-specific DevOps |
-| GCP Cloud Engineer | Google | Intermediate | GCP roles |
-| Azure Administrator | Microsoft | Intermediate | Enterprise/Azure roles |
-| Terraform Associate | HashiCorp | Intermediate | IaC roles |
+| AWS Solutions Architect Associate | Amazon    | Intermediate | Cloud roles            |
+| AWS DevOps Engineer Professional  | Amazon    | Advanced     | AWS-specific DevOps    |
+| GCP Cloud Engineer                | Google    | Intermediate | GCP roles              |
+| Azure Administrator               | Microsoft | Intermediate | Enterprise/Azure roles |
+| Terraform Associate               | HashiCorp | Intermediate | IaC roles              |
 
 ### Study Approach
 
@@ -862,7 +865,7 @@ Structured learning paths.
 2. **Hands-on practice is non-negotiable.** Set up a lab environment and practice every objective.
 3. **Take practice exams** to identify weak areas. Aim for 80%+ on practice exams before scheduling.
 4. **Space your study over 4-8 weeks.** Cramming does not work for certification exams that test
- practical skills.
+   practical skills.
 
 ## T-Shaped Skills Development
 
@@ -914,13 +917,13 @@ Review this inventory quarterly. Identify gaps between where you are and where y
 This is the most common career transition for senior systems engineers. Key steps:
 
 1. **Get hands-on cloud experience.** Deploy and manage real workloads on AWS/GCP/Azure. A personal
- project with real traffic is more convincing than any certification.
+   project with real traffic is more convincing than any certification.
 2. **Study for one cloud certification.** AWS SA Associate or GCP Cloud Engineer provides structured
- learning and a recognizable credential.
+   learning and a recognizable credential.
 3. **Learn Infrastructure as Code.** Terraform and Pulumi are table stakes for cloud architecture
- roles.
+   roles.
 4. **Understand cost modeling.** Cloud architects must justify infrastructure spending. Learn to
- calculate TCO and optimize for cost.
+   calculate TCO and optimize for cost.
 
 ### Systems Engineering to Engineering Management
 
@@ -928,11 +931,11 @@ Not all senior engineers should become managers. Before making this transition:
 
 - **Try it first.** Lead a small project or mentor a team of 2-3 people before committing.
 - **Understand the trade-off.** You will write less code and spend more time in meetings, 1:1s, and
- planning. Some people find this deeply rewarding; others find it frustrating.
+  planning. Some people find this deeply rewarding; others find it frustrating.
 - **Read "The Manager's Path" by Camille Fournier.** It is the best guide for this specific
- transition.
+  transition.
 - **Talk to engineering managers.** Ask them what their day-to-day is like and what surprised them
- about the role.
+  about the role.
 
 ### Systems Engineering to Security
 
@@ -942,7 +945,7 @@ Security engineering is a high-demand specialization for systems engineers. Tran
 2. **Practice offensive security:** CTF competitions, Hack The Box, TryHackMe.
 3. **Pursue certifications:** CompTIA Security+, OSCP, CISSP (requires 5 years experience).
 4. **Contribute to security tooling:** Open-source security tools welcome contributions and provide
- visible expertise.
+   visible expertise.
 
 ### The Non-Linear Career
 

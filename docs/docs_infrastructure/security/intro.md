@@ -1,10 +1,13 @@
 ---
 id: intro
 title: Introduction to Security
-description: "Information security fundamentals — threat modeling, cryptography, authentication, web security, network security, and incident response."
+description:
+  'Information security fundamentals — threat modeling, cryptography, authentication, web security,
+  network security, and incident response.'
 slug: intro
 sidebar_position: 1
 ---
+
 ## The Threat Landscape
 
 Information security is not a feature you bolt on after the fact. It is a property of a system that
@@ -37,11 +40,11 @@ Violated.
 
 Every security property ultimately reduces to one or more of:
 
-| Property | Question | Failure Mode |
+| Property            | Question                                     | Failure Mode                     |
 | ------------------- | -------------------------------------------- | -------------------------------- |
-| **Confidentiality** | Can unauthorized parties read this data? | Data breach, information leakage |
-| **Integrity** | Can unauthorized parties modify this data? | Data tampering, code injection |
-| **Availability** | Can authorized parties access this resource? | Denial of service, data deletion |
+| **Confidentiality** | Can unauthorized parties read this data?     | Data breach, information leakage |
+| **Integrity**       | Can unauthorized parties modify this data?   | Data tampering, code injection   |
+| **Availability**    | Can authorized parties access this resource? | Denial of service, data deletion |
 
 Most real-world incidents violate multiple triad elements simultaneously. A ransomware attack
 Compromises confidentiality (data exfiltration before encryption), integrity (file encryption), and
@@ -71,17 +74,17 @@ This work?" but "what happens when this is used in ways I did not intend?"
 This section covers the core security competencies expected of a systems engineer:
 
 1. **Security Fundamentals** — CIA triad, threat modeling, risk assessment, least privilege
- ([security-fundamentals](./01-security-fundamentals/security-fundamentals.md))
+   ([security-fundamentals](./01-security-fundamentals/security-fundamentals.md))
 2. **Cryptography** — Symmetric/asymmetric encryption, hashing, PKI, TLS
- ([cryptography](./02-cryptography/cryptography.md))
+   ([cryptography](./02-cryptography/cryptography.md))
 3. **Authentication and Authorization** — Passwords, MFA, OAuth 2.0, JWT, RBAC/ABAC
- ([authentication](./03-authentication/authentication.md))
+   ([authentication](./03-authentication/authentication.md))
 4. **Web Security** — XSS, CSRF, injection, CORS, CSP, OWASP Top 10
- ([web-security](./04-web-security/web-security.md))
+   ([web-security](./04-web-security/web-security.md))
 5. **Network Security** — Firewalls, VPNs, zero trust, DNS security, SIEM
- ([network-security](./05-network-security/network-security.md))
+   ([network-security](./05-network-security/network-security.md))
 6. **Incident Response** — NIST IR lifecycle, forensics, containment, post-mortem
- ([incident-response](./06-incident-response/incident-response.md))
+   ([incident-response](./06-incident-response/incident-response.md))
 
 :::tip
 

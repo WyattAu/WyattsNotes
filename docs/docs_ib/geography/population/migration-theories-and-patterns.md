@@ -1,6 +1,8 @@
 ---
 title: Migration Theories and Patterns
-description: "Migration types, Lee's migration model, Ravenstein's laws, push-pull factors, barriers to migration, and case studies for IB Geography."
+description:
+  "Migration types, Lee's migration model, Ravenstein's laws, push-pull factors, barriers to
+  migration, and case studies for IB Geography."
 slug: migration-theories-and-patterns
 ---
 
@@ -12,13 +14,13 @@ Migration is the movement of people from one place to another with the intention
 Permanently or temporarily, in the new location. Migration can be classified along several
 Dimensions:
 
-| Dimension | Categories | Notes |
+| Dimension         | Categories                                                                           | Notes                                                                        |
 | ----------------- | ------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------- |
-| **Direction** | Internal (within a country), international (crossing a national border) | Internal migration includes rural-urban, urban-urban, and rural-rural |
-| **Duration** | Temporary (seasonal, circular), permanent | Circular migration involves repeated movement between origin and destination |
-| **Voluntariness** | Voluntary (economic, social), forced (conflict, persecution, environmental disaster) | The distinction is often blurred in practice |
-| **Distance** | Short-distance, long-distance, intercontinental | Ravenstein observed that most migration is over short distances |
-| **Legal status** | Regular (documented), irregular (undocumented) | Irregular migrants lack legal authorisation to enter, stay, or work |
+| **Direction**     | Internal (within a country), international (crossing a national border)              | Internal migration includes rural-urban, urban-urban, and rural-rural        |
+| **Duration**      | Temporary (seasonal, circular), permanent                                            | Circular migration involves repeated movement between origin and destination |
+| **Voluntariness** | Voluntary (economic, social), forced (conflict, persecution, environmental disaster) | The distinction is often blurred in practice                                 |
+| **Distance**      | Short-distance, long-distance, intercontinental                                      | Ravenstein observed that most migration is over short distances              |
+| **Legal status**  | Regular (documented), irregular (undocumented)                                       | Irregular migrants lack legal authorisation to enter, stay, or work          |
 
 ## Theoretical Frameworks
 
@@ -28,21 +30,21 @@ Ernest Georg Ravenstein, based on an analysis of census data from the United Kin
 Several "laws" of migration that remain influential:
 
 1. **The majority of migrants move only a short distance.** Distance decay: the volume of migration
- decreases with increasing distance, because longer distances entail higher costs (financial,
- informational, psychological) and greater cultural adjustment.
+   decreases with increasing distance, because longer distances entail higher costs (financial,
+   informational, psychological) and greater cultural adjustment.
 2. **Migration occurs in steps.** Rural-urban migration often proceeds via intermediate towns rather
- than directly from village to large city (step migration).
+   than directly from village to large city (step migration).
 3. **Migration produces counter-currents.** For every major migration stream, there is a smaller
- return flow.
+   return flow.
 4. **Urban residents are less migratory than rural residents.** Urban populations are already
- relatively mobile; rural populations have greater potential for long-distance movement.
+   relatively mobile; rural populations have greater potential for long-distance movement.
 5. **Females are more migratory than males over short distances, but males dominate long-distance
- migration.** This reflects historical gender roles: women moved locally for marriage; men moved
- further for employment.
+   migration.** This reflects historical gender roles: women moved locally for marriage; men moved
+   further for employment.
 6. **Economic factors are the dominant cause of migration.** People move primarily to improve their
- economic circumstances.
+   economic circumstances.
 7. **Most migrants are adults, not families.** Young adults are most likely to migrate, as they have
- the longest period over which to reap the benefits.
+   the longest period over which to reap the benefits.
 8. **Large towns grow more by migration than by natural increase.**
 
 ### Lee's Model of Migration (1966)
@@ -51,21 +53,21 @@ Everett Lee extended Ravenstein's work by developing a more formal model that id
 Elements in the migration decision:
 
 1. **Factors associated with the area of origin (push factors):** conditions that encourage
- departure. These include economic factors (unemployment, low wages, poverty), social factors
- (discrimination, persecution, lack of services), environmental factors (drought, flooding,
- pollution), and demographic factors (population pressure).
+   departure. These include economic factors (unemployment, low wages, poverty), social factors
+   (discrimination, persecution, lack of services), environmental factors (drought, flooding,
+   pollution), and demographic factors (population pressure).
 2. **Factors associated with the area of destination (pull factors):** conditions that attract
- migrants. These include economic factors (higher wages, employment opportunities), social factors
- (political stability, freedom, education, healthcare), environmental factors (favourable
- climate), and demographic factors (family reunification, established diaspora).
+   migrants. These include economic factors (higher wages, employment opportunities), social factors
+   (political stability, freedom, education, healthcare), environmental factors (favourable
+   climate), and demographic factors (family reunification, established diaspora).
 3. **Intervening obstacles:** barriers between origin and destination that may prevent or discourage
- migration. Physical barriers include distance, mountains, oceans, and deserts. Political barriers
- include visa requirements, border controls, and immigration quotas. Economic barriers include the
- cost of travel and relocation. Psychological barriers include fear of the unknown, cultural
- adjustment, and separation from family.
+   migration. Physical barriers include distance, mountains, oceans, and deserts. Political barriers
+   include visa requirements, border controls, and immigration quotas. Economic barriers include the
+   cost of travel and relocation. Psychological barriers include fear of the unknown, cultural
+   adjustment, and separation from family.
 4. **Personal factors:** individual characteristics (age, education, skills, risk tolerance, family
- ties) that mediate the migration decision. Two people facing identical push and pull factors may
- make different migration decisions due to differences in personal circumstances.
+   ties) that mediate the migration decision. Two people facing identical push and pull factors may
+   make different migration decisions due to differences in personal circumstances.
 
 Lee's model recognises that the decision to migrate involves an assessment of the perceived costs
 And benefits of moving versus staying, filtered through individual characteristics and mediated by
@@ -79,17 +81,17 @@ Structuralist theories of migration emphasise the role of structural economic fo
 The global capitalist system, in driving migration:
 
 - **Dual labour market theory (Piore, 1979):** advanced economies have a dual labour market
- consisting of a primary sector (stable, high-wage, skilled employment) and a secondary sector
- (unstable, low-wage, unskilled employment). Native workers are reluctant to accept
- secondary-sector jobs, creating a structural demand for migrant labour.
+  consisting of a primary sector (stable, high-wage, skilled employment) and a secondary sector
+  (unstable, low-wage, unskilled employment). Native workers are reluctant to accept
+  secondary-sector jobs, creating a structural demand for migrant labour.
 - **World systems theory (Wallerstein, 1974; Portes and Walton, 1981):** migration is a consequence
- of the penetration of capitalist economic relations into peripheral regions through colonialism,
- trade, and investment. This penetration disrupts traditional livelihoods, displaces people from
- the land, and creates migration flows from periphery to core.
+  of the penetration of capitalist economic relations into peripheral regions through colonialism,
+  trade, and investment. This penetration disrupts traditional livelihoods, displaces people from
+  the land, and creates migration flows from periphery to core.
 - **New economics of labour migration (Stark and Bloom, 1985):** migration is a household strategy
- to diversify income sources and manage risk, rather than an individual maximising earnings.
- Households send members to migrate as a form of insurance against local economic shocks (crop
- failure, unemployment).
+  to diversify income sources and manage risk, rather than an individual maximising earnings.
+  Households send members to migrate as a form of insurance against local economic shocks (crop
+  failure, unemployment).
 
 ## Types of Migration
 
@@ -130,19 +132,19 @@ Complex, as environmental factors interact with economic, social, and political 
 
 ### On the Country of Origin
 
-| Impact | Positive | Negative |
+| Impact          | Positive                                                                                                                                                                              | Negative                                                                                                 |
 | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
-| **Economic** | Remittances (global remittances exceeded USD 650 billion in 2023, exceeding official development aid); return migrants bring skills and investment; reduced pressure on labour market | Brain drain (loss of skilled workers, particularly in healthcare and education); reduced tax base |
-| **Social** | Exposure to new ideas and practices through return migrants and diaspora networks | Family disruption; dependency on remittances (Diaspora may reduce incentive for local economic activity) |
-| **Demographic** | Reduced population pressure (particularly relevant for countries with high population growth) | Ageing population if working-age emigration exceeds natural increase |
+| **Economic**    | Remittances (global remittances exceeded USD 650 billion in 2023, exceeding official development aid); return migrants bring skills and investment; reduced pressure on labour market | Brain drain (loss of skilled workers, particularly in healthcare and education); reduced tax base        |
+| **Social**      | Exposure to new ideas and practices through return migrants and diaspora networks                                                                                                     | Family disruption; dependency on remittances (Diaspora may reduce incentive for local economic activity) |
+| **Demographic** | Reduced population pressure (particularly relevant for countries with high population growth)                                                                                         | Ageing population if working-age emigration exceeds natural increase                                     |
 
 ### On the Country of Destination
 
-| Impact | Positive | Negative |
+| Impact          | Positive                                                                                                                                                                                | Negative                                                                                                                          |
 | --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| **Economic** | Increased labour supply (particularly in sectors with shortages: healthcare, agriculture, construction, hospitality); entrepreneurial activity; increased demand for goods and services | Wage depression in low-skill sectors (contested; evidence is mixed); fiscal costs of integration and services |
-| **Social** | Cultural diversity; culinary and artistic enrichment; demographic rejuvenation (in ageing societies) | Social tension; pressure on housing and public services; cultural conflict; political backlash (rise of anti-immigration parties) |
-| **Demographic** | Mitigates population decline in countries with below-replacement fertility | Changes the ethnic and cultural composition of the population |
+| **Economic**    | Increased labour supply (particularly in sectors with shortages: healthcare, agriculture, construction, hospitality); entrepreneurial activity; increased demand for goods and services | Wage depression in low-skill sectors (contested; evidence is mixed); fiscal costs of integration and services                     |
+| **Social**      | Cultural diversity; culinary and artistic enrichment; demographic rejuvenation (in ageing societies)                                                                                    | Social tension; pressure on housing and public services; cultural conflict; political backlash (rise of anti-immigration parties) |
+| **Demographic** | Mitigates population decline in countries with below-replacement fertility                                                                                                              | Changes the ethnic and cultural composition of the population                                                                     |
 
 ## Case Study: Mexico-USA Migration
 
@@ -185,11 +187,10 @@ Million, including permanent migrants), Southeast Asia (Singapore, Hong Kong, Ma
 The Philippines' GDP. Remittances are the largest single source of foreign exchange and have
 Supported macroeconomic stability, household consumption, and educational investment.
 
-**Social costs.** Family separation (OFWs work abroad for 2--5 year contracts, leaving
-Spouses and children behind); vulnerability to exploitation and abuse (particularly among domestic
-Workers in the Middle East); deskilling (professionals such as nurses and teachers working in
-Lower-skilled occupations abroad); and the creation of a "migration culture" that normalises family
-Separation.
+**Social costs.** Family separation (OFWs work abroad for 2--5 year contracts, leaving Spouses and
+children behind); vulnerability to exploitation and abuse (particularly among domestic Workers in
+the Middle East); deskilling (professionals such as nurses and teachers working in Lower-skilled
+occupations abroad); and the creation of a "migration culture" that normalises family Separation.
 
 <details>
 <summary>Common Pitfalls: Overgeneralising Migration Impacts</summary>

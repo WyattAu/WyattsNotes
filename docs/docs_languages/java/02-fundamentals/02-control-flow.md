@@ -1,12 +1,15 @@
 ---
 title: Control Flow
-description: "Control Flow — Conditional Statements; if / else if / else; Dangling else Problem; The switch Statement with worked examples and exam-style questions."
+description:
+  'Control Flow — Conditional Statements; if / else if / else; Dangling else Problem; The switch
+  Statement with worked examples and exam-style questions.'
 date: 2025-06-05T11:00:00.000Z
 tags: ['java']
 categories: ['java']
 slug: control-flow
 sidebar_position: 2
 ---
+
 ## Conditional Statements
 
 ### if / else if / else
@@ -58,8 +61,7 @@ if (a > 0) {
 }
 ```
 
-:::warning
-Always use braces for `if`/`else` blocks, even when the body is a single statement. This
+:::warning Always use braces for `if`/`else` blocks, even when the body is a single statement. This
 Eliminates the dangling else ambiguity entirely and prevents bugs when statements are added later.
 :::
 
@@ -105,16 +107,13 @@ The fall-through behavior is **intentional** and documented in
 Grouping multiple cases that share the same logic (as shown for days 6 and 7 above). However,
 Accidental fall-through is one of the most common sources of bugs in Java code.
 
-The supported types for traditional switch are: `byte``short``char``int`Their wrapper
-Classes (`Byte``Short``Character``Integer`), `String` (since Java 7), and enums (since Java
-5).
+The supported types for traditional switch are: `byte``short``char``int`Their wrapper Classes
+(`Byte``Short``Character``Integer`), `String` (since Java 7), and enums (since Java 5).
 
-:::danger
-The traditional switch has several design flaws: fall-through is error-prone, variables
+:::danger The traditional switch has several design flaws: fall-through is error-prone, variables
 Declared in one `case` scope leak into subsequent cases, and the entire construct is
 Statement-oriented (it cannot produce a value). These flaws motivated the introduction of switch
-Expressions.
-:::
+Expressions. :::
 
 ### Switch Expressions (Java 14+)
 
@@ -133,11 +132,11 @@ String dayType = switch (dayOfWeek) {
 Key differences from traditional switch:
 
 1. **No fall-through**: Each arrow branch produces exactly one value. Multiple case labels can be
- comma-separated.
+   comma-separated.
 2. **Expression-oriented**: The entire switch can be assigned to a variable, returned from a method,
- or used as an argument.
+   or used as an argument.
 3. **Exhaustiveness**: The compiler requires all possible values to be covered. For enums and sealed
- classes, the compiler can verify completeness without a `default`.
+   classes, the compiler can verify completeness without a `default`.
 4. **No variable scope leaking**: Each branch has its own scope.
 
 ```java
@@ -222,24 +221,24 @@ The traditional `switch` statement was one of the most bug-prone constructs in J
 Were not accidental -- they reflected fundamental limitations of a statement-oriented design:
 
 1. **Fall-through was a design mistake for modern code**. Fall-through originated in C to allow case
- merging, but it meant every `case` required an explicit `break` or a comment explaining
- intentional fall-through. Google's code style analysis found that fall-through bugs constituted a
- significant fraction of defect reports. Switch expressions eliminate this entirely by making each
- branch independent.
+   merging, but it meant every `case` required an explicit `break` or a comment explaining
+   intentional fall-through. Google's code style analysis found that fall-through bugs constituted a
+   significant fraction of defect reports. Switch expressions eliminate this entirely by making each
+   branch independent.
 
 2. **Statements cannot produce values**. The traditional switch required assigning to a pre-declared
- variable or using a separate return statement. This is verbose and makes the intent unclear.
- Switch expressions allow the switch to be a first-class value-producing expression, aligning with
- functional style and enabling use in contexts like lambda expressions and ternary operators.
+   variable or using a separate return statement. This is verbose and makes the intent unclear.
+   Switch expressions allow the switch to be a first-class value-producing expression, aligning with
+   functional style and enabling use in contexts like lambda expressions and ternary operators.
 
 3. **Exhaustiveness checking was impossible**. With traditional switch, the compiler could not
- verify that all enum constants or sealed subtypes were handled. Switch expressions, combined with
- sealed classes, enable the compiler to prove exhaustiveness at compile time -- catching missing
- cases before they become runtime bugs.
+   verify that all enum constants or sealed subtypes were handled. Switch expressions, combined with
+   sealed classes, enable the compiler to prove exhaustiveness at compile time -- catching missing
+   cases before they become runtime bugs.
 
 4. **Scope rules were broken**. Variables declared in one `case` leaked into subsequent cases,
- creating shadowing bugs. Switch expressions give each branch its own scope, eliminating this
- class of errors entirely.
+   creating shadowing bugs. Switch expressions give each branch its own scope, eliminating this
+   class of errors entirely.
 
 The transition from statement to expression is part of a broader trend in Java's evolution: moving
 From imperative, statement-heavy code toward more declarative, expression-oriented code. Records,
@@ -303,8 +302,7 @@ for (Iterator<String> it = names.iterator(); it.hasNext(); ) {
 }
 ```
 
-:::warning
-The enhanced for loop does not provide access to the index. If you need the index, use
+:::warning The enhanced for loop does not provide access to the index. If you need the index, use
 The traditional for loop. Additionally, the enhanced for loop does not allow modification of the
 Collection during iteration (any structural modification throws `ConcurrentModificationException`).
 :::
@@ -327,20 +325,18 @@ do {
 The `do-while` loop guarantees at least one execution of the body. It is the correct choice when the
 Loop body must run before the condition can be evaluated (e.g., reading input before validating it).
 
-:::info
-JLS Reference
+:::info JLS Reference
 [JLS §14.12](https://docs.oracle.com/javase/specs/jls/se21/html/jls-14.html#jls-14.12) defines the
 `while` statement.
 [JLS §14.13](https://docs.oracle.com/javase/specs/jls/se21/html/jls-14.html#jls-14.13) defines the
-`do` statement.
-:::
+`do` statement. :::
 
 ## break, continue, and Labeled Statements
 
 ### Unlabeled break and continue
 
-`break` exits the innermost enclosing `switch``for``while`Or `do-while` statement. `continue`
-Skips to the next iteration of the innermost enclosing loop.
+`break` exits the innermost enclosing `switch``for``while`Or `do-while` statement. `continue` Skips
+to the next iteration of the innermost enclosing loop.
 
 ```java
 // break exits the loop entirely
@@ -387,13 +383,11 @@ for (int i = 0; i < rows; i++) {
 }
 ```
 
-:::info
-Labels follow the same naming rules as identifiers. A label is attached to a statement by
+:::info Labels follow the same naming rules as identifiers. A label is attached to a statement by
 Prefixing it with `label:`. The label is only useful when referenced by a `break label;` or
 `continue label;` statement inside a nested loop. Labels cannot target arbitrary statements -- only
 Loop and switch statements can be the target of `break`And only loops can be the target of
-`continue`.
-:::
+`continue`. :::
 
 ## Exception Handling
 
@@ -446,20 +440,17 @@ graph TD
     style RuntimeException fill:#f39c12,color:#000
 ```
 
-:::info
-JLS Reference
+:::info JLS Reference
 [JLS §11.1](https://docs.oracle.com/javase/specs/jls/se21/html/jls-11.html#jls-11.1) defines the
-Throwable hierarchy and the distinction between unchecked and checked exceptions.
-:::
+Throwable hierarchy and the distinction between unchecked and checked exceptions. :::
 
 **Throwable** -- The root of the exception hierarchy. It carries a detail message and an optional
 Cause (for chaining). Only instances of `Throwable` (or subclasses) can be thrown by `throw` or
 Caught by `catch`.
 
 **Error** -- Represents serious problems that applications should not attempt to catch. These
- indicate JVM-level failures: `OutOfMemoryError``StackOverflowError`
-`NoClassDefFoundError`. Catching `Error` is almost always wrong -- if the JVM is out of memory,
-There is no safe way to continue.
+indicate JVM-level failures: `OutOfMemoryError``StackOverflowError` `NoClassDefFoundError`. Catching
+`Error` is almost always wrong -- if the JVM is out of memory, There is no safe way to continue.
 
 **Exception** -- Represents conditions that a reasonable application might want to catch and recover
 From. `Exception` is the superclass of all checked exceptions.
@@ -500,27 +491,27 @@ Handling is part of a method's contract**, just like its parameter types and ret
 Rationale was:
 
 1. **API contracts should be explicit**. If a method can fail with `IOException`The caller must be
- aware of this and decide how to handle it. Checked exceptions make failure modes visible in the
- method signature, analogous to how return types make success modes visible.
+   aware of this and decide how to handle it. Checked exceptions make failure modes visible in the
+   method signature, analogous to how return types make success modes visible.
 
 2. **Forces error handling at the right level**. Without checked exceptions, programmers routinely
- ignore error conditions. Checked exceptions force a decision at compile time: handle it here, or
- propagate it up the call stack.
+   ignore error conditions. Checked exceptions force a decision at compile time: handle it here, or
+   propagate it up the call stack.
 
 3. **Enables separation of business logic and error recovery**. The compiler ensures that error
- paths exist, making it harder to forget error handling entirely.
+   paths exist, making it harder to forget error handling entirely.
 
 However, checked exceptions have become increasingly controversial, and most modern languages
 (Kotlin, Scala, C#, Go) do not include them. The arguments against are:
 
 1. **Signature pollution**. When low-level methods throw checked exceptions, every method in the
- call chain must either catch them or declare them. This forces implementation details to leak
- through the entire API. A method like `processUser()` might be forced to declare
- `throws SQLException, IOException, ParseException` even though these are irrelevant to its
- callers.
+   call chain must either catch them or declare them. This forces implementation details to leak
+   through the entire API. A method like `processUser()` might be forced to declare
+   `throws SQLException, IOException, ParseException` even though these are irrelevant to its
+   callers.
 
 2. **The catch-and-rethrow antipattern**. The most common "handling" of checked exceptions is to
- wrap them in unchecked exceptions or log and rethrow, which adds no value:
+   wrap them in unchecked exceptions or log and rethrow, which adds no value:
 
 ```java
 // The boilerplate that checked exceptions force
@@ -534,16 +525,16 @@ try {
 ```
 
 3. **Encapsulation violation**. A checked exception exposes an implementation detail. If
- `UserService` initially uses file-based storage and declares `throws IOException`Switching to a
- database implementation requires changing the method signature, breaking all callers.
+   `UserService` initially uses file-based storage and declares `throws IOException`Switching to a
+   database implementation requires changing the method signature, breaking all callers.
 
 4. **Interaction with lambdas and functional interfaces**. Checked exceptions are particularly
- painful with lambdas because functional interfaces in `java.util.function` do not declare checked
- exceptions. This creates friction when using checked-exception-throwing code in streams.
+   painful with lambdas because functional interfaces in `java.util.function` do not declare checked
+   exceptions. This creates friction when using checked-exception-throwing code in streams.
 
 5. **Empirical evidence of poor handling**. Studies of large Java codebases found that the majority
- of checked exceptions are either caught and wrapped in unchecked exceptions, logged and
- swallowed, or declared in signatures without meaningful handling at any level of the call stack.
+   of checked exceptions are either caught and wrapped in unchecked exceptions, logged and
+   swallowed, or declared in signatures without meaningful handling at any level of the call stack.
 
 The pragmatic approach in modern Java is to use checked exceptions sparingly -- only for recoverable
 Conditions that callers can meaningfully handle (such as validation errors or file-not-found
@@ -576,18 +567,16 @@ try {
 
 1. If no exception is thrown, the `try` block completes, then `finally` executes.
 2. If an exception is thrown and caught, the matching `catch` block executes, then `finally`
- executes.
+   executes.
 3. If an exception is thrown and not caught, `finally` executes before the exception propagates.
 4. If a `catch` block throws an exception, `finally` still executes before the new exception
- propagates.
+   propagates.
 5. If `finally` also throws an exception, it **replaces** any exception thrown in the `try` or
- `catch` block.
+   `catch` block.
 
-:::danger
-If both the `try` block and the `finally` block throw exceptions, the exception from
+:::danger If both the `try` block and the `finally` block throw exceptions, the exception from
 `finally` replaces the original exception. This silently swallows the original error. Always ensure
-`finally` blocks cannot throw exceptions.
-:::
+`finally` blocks cannot throw exceptions. :::
 
 ```java
 // Dangerous: finally block that can throw
@@ -671,12 +660,10 @@ try (Reader r = new FailingReader()) {
 }
 ```
 
-:::info
-`AutoCloseable.close()` is declared to throw `Exception`. `Closeable` (a subinterface)
+:::info `AutoCloseable.close()` is declared to throw `Exception`. `Closeable` (a subinterface)
 Narrows this to `IOException`. Any resource that needs cleanup should implement `AutoCloseable`. The
 Compiler generates the equivalent of a `finally` block that calls `close()` on each declared
-Resource in reverse order.
-:::
+Resource in reverse order. :::
 
 ### Custom Exceptions
 
@@ -717,13 +704,13 @@ public class InvalidTransactionException extends RuntimeException {
 Design guidelines for custom exceptions:
 
 1. **Extend `Exception` (checked)** when the caller can reasonably recover from the condition and
- take meaningful action.
+   take meaningful action.
 2. **Extend `RuntimeException` (unchecked)** when the condition represents a programming error that
- cannot be meaningfully handled at runtime (invalid arguments, illegal state, null references).
+   cannot be meaningfully handled at runtime (invalid arguments, illegal state, null references).
 3. **Always provide both constructors**: one that takes a message, and one that takes a message and
- a cause (for exception chaining).
+   a cause (for exception chaining).
 4. **Include diagnostic data** as fields, not just in the message string. This enables programmatic
- inspection of the exception.
+   inspection of the exception.
 
 ### Exception Chaining
 
@@ -799,11 +786,9 @@ class SafeDataSource implements DataSource {
 // }
 ```
 
-:::warning
-The overriding rule: a method that overrides or implements another method cannot declare
+:::warning The overriding rule: a method that overrides or implements another method cannot declare
 Checked exceptions that are broader than those declared in the supertype method. It can declare the
-Same exceptions, narrower exceptions (subtypes), or no checked exceptions at all.
-:::
+Same exceptions, narrower exceptions (subtypes), or no checked exceptions at all. :::
 
 ## Assertions
 
@@ -871,13 +856,11 @@ public void setName(String name) {
 }
 ```
 
-:::danger
-Never use assertions for validating public method arguments or for conditions that affect
+:::danger Never use assertions for validating public method arguments or for conditions that affect
 Correctness in production. Since assertions can be disabled, a failed assertion would go undetected
-In production, leading to silent data corruption. Use `Objects.requireNonNull()`Explicit `if`
-Checks with `IllegalArgumentException`Or framework-level validation (like `jakarta.validation`)
-For input validation.
-:::
+In production, leading to silent data corruption. Use `Objects.requireNonNull()`Explicit `if` Checks
+with `IllegalArgumentException`Or framework-level validation (like `jakarta.validation`) For input
+validation. :::
 
 ## Varargs (Variable Arity Parameters)
 
@@ -933,12 +916,10 @@ The compiler prefers the more specific overload (exact parameter count match) ov
 Overload. When no exact match exists, the compiler performs varargs invocation by wrapping the
 Arguments in an array.
 
-:::warning
-Be cautious with varargs when the parameter type is generic. A varargs parameter of type
+:::warning Be cautious with varargs when the parameter type is generic. A varargs parameter of type
 `T...` can cause heap pollution because the compiler creates a generic array, which is not
 Type-safe. Use `@SafeVarargs` on methods that do not store the varargs array or pass it to untrusted
-Code.
-:::
+Code. :::
 
 ```java
 // Heap pollution example
@@ -1025,37 +1006,35 @@ String example = """
         """;
 ```
 
-:::info
-Text blocks produce standard `String` objects. At compile time, the text block is converted
-To a `String` literal with `\n``\t`And `\"` escape sequences. Text blocks are primarily
-Syntactic convenience -- they do not introduce a new type.
-:::
+:::info Text blocks produce standard `String` objects. At compile time, the text block is converted
+To a `String` literal with `\n``\t`And `\"` escape sequences. Text blocks are primarily Syntactic
+convenience -- they do not introduce a new type. :::
 
 ## Summary of Control Flow Design Principles
 
 1. **Explicit boolean conditions** eliminate an entire class of bugs common in C-style languages.
- Java's refusal to coerce integers to booleans is a deliberate safety choice.
+   Java's refusal to coerce integers to booleans is a deliberate safety choice.
 
 2. **Switch expressions complete the transition** from statement-oriented to expression-oriented
- control flow. By eliminating fall-through, enabling exhaustiveness checking, and producing values
- directly, switch expressions are strictly safer and more expressive than switch statements.
+   control flow. By eliminating fall-through, enabling exhaustiveness checking, and producing values
+   directly, switch expressions are strictly safer and more expressive than switch statements.
 
 3. **Pattern matching in switch** unifies type testing, casting, and dispatch into a single
- construct. Combined with sealed classes, it enables the compiler to verify that every case is
- handled -- moving what was previously runtime behavior into compile-time guarantees.
+   construct. Combined with sealed classes, it enables the compiler to verify that every case is
+   handled -- moving what was previously runtime behavior into compile-time guarantees.
 
 4. **Checked exceptions embody a failed experiment** in enforced error handling. While the intent
- was admirable (explicit contracts, forced handling), the practical result is boilerplate,
- signature pollution, and widespread catch-and-rethrow antipatterns. Modern Java practice favors
- unchecked exceptions for most error conditions.
+   was admirable (explicit contracts, forced handling), the practical result is boilerplate,
+   signature pollution, and widespread catch-and-rethrow antipatterns. Modern Java practice favors
+   unchecked exceptions for most error conditions.
 
 5. **try-with-resources eliminates the most error-prone** aspect of manual resource management. By
- guaranteeing closure in the correct order and handling suppressed exceptions properly, it removes
- an entire class of resource leak bugs.
+   guaranteeing closure in the correct order and handling suppressed exceptions properly, it removes
+   an entire class of resource leak bugs.
 
 6. **Assertions are a development-time tool**, not a runtime error-handling mechanism. They should
- be used exclusively for verifying internal invariants that, if violated, indicate a programming
- error in the code itself.
+   be used exclusively for verifying internal invariants that, if violated, indicate a programming
+   error in the code itself.
 
 ## Common Pitfalls
 

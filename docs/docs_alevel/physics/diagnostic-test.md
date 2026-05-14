@@ -1,6 +1,8 @@
 ---
 title: A Level Physics Diagnostic Test
-description: "A-Level General diagnostic test: A Level Physics — Diagnostic Test; Section A: Mechanics (Questions 1–5) for targeted revision."
+description:
+  'A-Level General diagnostic test: A Level Physics — Diagnostic Test; Section A: Mechanics
+  (Questions 1–5) for targeted revision.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Physics
@@ -9,12 +11,11 @@ categories:
   - Physics
 slug: diagnostic-test
 ---
+
 ## A Level Physics — Diagnostic Test
 
-:::info
-Instructions This diagnostic test covers the entire A Level Physics syllabus. Attempt all 45
-Questions. Each question has an answer and a revision redirect. Time allowed: 90 minutes.
-:::
+:::info Instructions This diagnostic test covers the entire A Level Physics syllabus. Attempt all 45
+Questions. Each question has an answer and a revision redirect. Time allowed: 90 minutes. :::
 
 ## Section A: Mechanics (Questions 1–5)
 
@@ -472,13 +473,13 @@ $= -1/(RC) = -0.125$. $\tau = RC = 1/0.125 = 8.0$ s.
 
 ## Scoring
 
-| Score | Grade | Recommendation |
+| Score | Grade | Recommendation                                          |
 | ----- | ----- | ------------------------------------------------------- |
-| 40–45 | A\* | Excellent. Focus on extension problems. |
-| 35–39 | A | Strong. Review topics where you lost marks. |
-| 28–34 | B | Good foundation. Systematic revision needed. |
-| 20–27 | C | Gaps exist. Prioritise weak sections. |
-| < 20 | D/U | Significant revision required. Start with fundamentals. |
+| 40–45 | A\*   | Excellent. Focus on extension problems.                 |
+| 35–39 | A     | Strong. Review topics where you lost marks.             |
+| 28–34 | B     | Good foundation. Systematic revision needed.            |
+| 20–27 | C     | Gaps exist. Prioritise weak sections.                   |
+| < 20  | D/U   | Significant revision required. Start with fundamentals. |
 
 :::
 

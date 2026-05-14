@@ -1,9 +1,11 @@
 ---
 title: Number and Algebra
 tags:
-- maths
+  - maths
 slug: number-algebra
-description: "Rigorous IB mathematics notes covering Number and Algebra. Includes definitions, derivations, worked examples, and exam-style problems."
+description:
+  'Rigorous IB mathematics notes covering Number and Algebra. Includes definitions, derivations,
+  worked examples, and exam-style problems.'
 ---
 
 ## Sets
@@ -54,8 +56,8 @@ $$(A \cap B)' = A' \cup B'$$
 
 _Proof of the first law._ We show mutual inclusion.
 
-($\subseteq$) Suppose $x \in (A \cup B)'$. Then $x \notin A \cup B$So $x \notin A$ and
-$x \notin B$. Hence $x \in A'$ and $x \in B'$Which means $x \in A' \cap B'$.
+($\subseteq$) Suppose $x \in (A \cup B)'$. Then $x \notin A \cup B$So $x \notin A$ and $x \notin B$.
+Hence $x \in A'$ and $x \in B'$Which means $x \in A' \cap B'$.
 
 ($\supseteq$) Suppose $x \in A' \cap B'$. Then $x \in A'$ and $x \in B'$So $x \notin A$ and
 $x \notin B$. Therefore $x \notin A \cup B$Giving $x \in (A \cup B)'$.
@@ -121,13 +123,13 @@ $$f: X \to Y$$
 <details>
 <summary>Non-examples of functions</summary>
 
-- $f_1: \mathbb{'\{'}R{'\}'}^+ \to \mathbb{'\{'}R{'\}'},\; f(x) = \pm\sqrt{x}$ — Since $x$ maps to two values, $f_1$ is
- not a function.
-- $f_2: \mathbb{'\{'}R{'\}'} \to \mathbb{'\{'}R{'\}'},\; f_2(x) = \frac{1}{x}$ — At $x = 0$$f_2(0)$ is undefined, so
- not every element of the domain is mapped. Redefine as
- $f_2: \mathbb{'\{'}R{'\}'} \setminus \{0\} \to \mathbb{'\{'}R{'\}'}$.
+- $f_1: \mathbb{'\{'}R{'\}'}^+ \to \mathbb{'\{'}R{'\}'},\; f(x) = \pm\sqrt{x}$ — Since $x$ maps to
+  two values, $f_1$ is not a function.
+- $f_2: \mathbb{'\{'}R{'\}'} \to \mathbb{'\{'}R{'\}'},\; f_2(x) = \frac{1}{x}$ — At $x = 0$$f_2(0)$
+  is undefined, so not every element of the domain is mapped. Redefine as
+  $f_2: \mathbb{'\{'}R{'\}'} \setminus \{0\} \to \mathbb{'\{'}R{'\}'}$.
 - $f_3: \emptyset \to Y$ — Since no elements are in the domain, uniqueness is vacuously satisfied.
- This is a valid (empty) function.
+  This is a valid (empty) function.
 
 </details>
 
@@ -140,9 +142,9 @@ $$A = \{f(x) \mid x \in X\}, \quad A \subseteq Y$$
 ### Classes of Functions
 
 - **Surjective (onto):** Every element of the codomain is hit:
- $\forall y \in Y,\; \exists x \in X,\; y = f(x)$
+  $\forall y \in Y,\; \exists x \in X,\; y = f(x)$
 - **Injective (one-to-one):** Distinct inputs give distinct outputs:
- $f(x_1) = f(x_2) \implies x_1 = x_2$
+  $f(x_1) = f(x_2) \implies x_1 = x_2$
 - **Bijective:** Both surjective and injective
 - **Odd:** $f(-x) = -f(x)$ for all $x \in \mathbb{'\{'}R{'\}'}$
 - **Even:** $f(-x) = f(x)$ for all $x \in \mathbb{'\{'}R{'\}'}$
@@ -154,8 +156,8 @@ $$A = \{f(x) \mid x \in X\}, \quad A \subseteq Y$$
 
 Let $f: \mathbb{'\{'}R{'\}'} \to \mathbb{'\{'}R{'\}'},\; f(x) = x^2$.
 
-_Injective?_ No. $f(1) = f(-1) = 1$So distinct inputs map to the same output. (This is also an
-Even function.)
+_Injective?_ No. $f(1) = f(-1) = 1$So distinct inputs map to the same output. (This is also an Even
+function.)
 
 _Surjective?_ No. There is no $x \in \mathbb{'\{'}R{'\}'}$ such that $f(x) = -1$So
 $-1 \notin \mathrm{range}(f)$.
@@ -171,8 +173,8 @@ Let $f: \mathbb{'\{'}R{'\}'} \to \mathbb{'\{'}R{'\}'},\; f(x) = 2x + 3$.
 
 _Injective:_ Suppose $f(x_1) = f(x_2)$. Then $2x_1 + 3 = 2x_2 + 3$So $x_1 = x_2$.
 
-_Surjective:_ Let $y \in \mathbb{'\{'}R{'\}'}$. We need $2x + 3 = y$I.e. $x = \frac{y - 3}{2}$. Since
-$\frac{y-3}{2} \in \mathbb{'\{'}R{'\}'}$Every $y$ is in the range.
+_Surjective:_ Let $y \in \mathbb{'\{'}R{'\}'}$. We need $2x + 3 = y$I.e. $x = \frac{y - 3}{2}$.
+Since $\frac{y-3}{2} \in \mathbb{'\{'}R{'\}'}$Every $y$ is in the range.
 
 Therefore $f$ is bijective.
 
@@ -195,8 +197,8 @@ It is bijective.
 Let $f: \mathbb{'\{'}R{'\}'} \to \mathbb{'\{'}R{'\}'},\; f(x) = \frac{2x + 1}{x - 3}$With domain
 $\mathbb{'\{'}R{'\}'} \setminus \{3\}$.
 
-Set $y = \frac{2x+1}{x-3}$. Then $y(x-3) = 2x+1$So $yx - 3y = 2x + 1$Hence $x(y-2) = 3y+1$
-Giving $x = \frac{3y+1}{y-2}$.
+Set $y = \frac{2x+1}{x-3}$. Then $y(x-3) = 2x+1$So $yx - 3y = 2x + 1$Hence $x(y-2) = 3y+1$ Giving
+$x = \frac{3y+1}{y-2}$.
 
 Therefore $f^{-1}(x) = \frac{3x+1}{x-2}$ with domain $\mathbb{'\{'}R{'\}'} \setminus \{2\}$.
 
@@ -289,8 +291,8 @@ $19.3125 \le A \lt 20.2125$.
 
 ## Sequences and Series
 
-A sequence is a function $f$ with domain $\mathbb{'\{'}N{'\}'}$ (or $\mathbb{'\{'}N{'\}'}_0$) and codomain $X$. Writing
-$u_n = f(n)$Every sequence is ordered by its index.
+A sequence is a function $f$ with domain $\mathbb{'\{'}N{'\}'}$ (or $\mathbb{'\{'}N{'\}'}_0$) and
+codomain $X$. Writing $u_n = f(n)$Every sequence is ordered by its index.
 
 $$f: \mathbb{'\{'}N{'\}'} \to X, \quad u_n = f(n), \; n \in \mathbb{'\{'}N{'\}'}$$
 
@@ -310,8 +312,8 @@ Sigma notation obeys the following rules (where $c$ is a constant independent of
 $$\sum_{n=1}^{k} (au_n + bv_n) = a\sum_{n=1}^{k} u_n + b\sum_{n=1}^{k} v_n$$
 
 _Proof._ Distribute the sum over each term and factor constants out. Each term $au_n$ appears
-Exactly once in the expansion, so grouping gives $a$ times the sum of $u_n$And similarly for
-$bv_n$. $\blacksquare$
+Exactly once in the expansion, so grouping gives $a$ times the sum of $u_n$And similarly for $bv_n$.
+$\blacksquare$
 
 **Index shifting:** Replacing $n$ with $n + m$ shifts the bounds:
 
@@ -355,8 +357,7 @@ $$S_k = \frac{k}{2}\big(2a_1 + (k-1)d\big)$$
 
 $\blacksquare$
 
-:::warning
-In the IB formula booklet this is written as:
+:::warning In the IB formula booklet this is written as:
 
 $$S_n = \frac{n}{2}(2u_1 + (n-1)d) = \frac{n}{2}(u_1 + u_n)$$
 
@@ -637,13 +638,13 @@ Since $k \ge 1$We have $2k = k + k \ge k + 1$. Therefore $2^{k+1} \gt k + 1$. $\
 ### Common Mistakes in Induction
 
 - **Forgetting the base case:** The inductive step alone proves only an implication
- $P(k) \implies P(k+1)$. Without the base case, the chain never starts.
+  $P(k) \implies P(k+1)$. Without the base case, the chain never starts.
 - **Using what you need to prove:** The inductive hypothesis is $P(k)$Not $P(k+1)$. You must
- _derive_ $P(k+1)$Not assume it.
+  _derive_ $P(k+1)$Not assume it.
 - **Incorrect algebra:** Errors in the inductive step (especially with fractions or factorisation)
- are the most common source of failed induction proofs.
+  are the most common source of failed induction proofs.
 - **Wrong starting value:** If the statement is only claimed for $n \ge 3$Verify the base case at
- $n = 3$Not $n = 1$.
+  $n = 3$Not $n = 1$.
 
 ## The Binomial Theorem
 
@@ -739,8 +740,8 @@ Shifting indices.
 
 ### Induction Base Case Errors
 
-If the statement is claimed for $n \ge 2$Verify the base case at $n = 2$Not $n = 0$ or $n = 1$.
-A base case at the wrong value invalidates the entire proof.
+If the statement is claimed for $n \ge 2$Verify the base case at $n = 2$Not $n = 0$ or $n = 1$. A
+base case at the wrong value invalidates the entire proof.
 
 ### Logarithm Domain Restrictions
 
@@ -773,8 +774,8 @@ Find: (a) $A \cap B$(b) $A \cup B$(c) $A'$(d) $(A \cap B)'$(e) $|A \cup B|$.
 <details>
 <summary>Problem 2: Functions — bijectivity</summary>
 
-Let $f: \mathbb{'\{'}R{'\}'} \to \mathbb{'\{'}R{'\}'}$ be defined by $f(x) = x^3 - x$. Determine whether $f$ is
-Injective, surjective, or neither.
+Let $f: \mathbb{'\{'}R{'\}'} \to \mathbb{'\{'}R{'\}'}$ be defined by $f(x) = x^3 - x$. Determine
+whether $f$ is Injective, surjective, or neither.
 
 **Solution.**
 
@@ -907,14 +908,15 @@ The term is $\binom{9}{6} x^0 = \binom{9}{3} = 84$.
 
 ---
 
-:::tip
-Tip
-Ready to test your understanding of **Number and Algebra**? The [diagnostic test](/docs/ib/maths/diagnostics/diag-number-algebra) contains the hardest questions within the IB specification for this topic, each with a full worked solution.
+:::tip Tip Ready to test your understanding of **Number and Algebra**? The
+[diagnostic test](/docs/ib/maths/diagnostics/diag-number-algebra) contains the hardest questions
+within the IB specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Number and Algebra with other IB mathematics topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Number and
+Algebra with other IB mathematics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/ib/maths/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/ib/maths/diagnostics/diagnostic-guide) for instructions on self-marking
+and building a personal test matrix. :::
 
 ## Summary
 

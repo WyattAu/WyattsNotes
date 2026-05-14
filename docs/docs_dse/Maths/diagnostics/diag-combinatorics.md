@@ -1,6 +1,8 @@
 ---
-title: "Combinatorics -- Diagnostic Tests"
-description: "Diagnostic tests for DSE Combinatorics: permutations, combinations, binomial theorem, restrictions, and common order-versus-selection errors."
+title: 'Combinatorics -- Diagnostic Tests'
+description:
+  'Diagnostic tests for DSE Combinatorics: permutations, combinations, binomial theorem,
+  restrictions, and common order-versus-selection errors.'
 slug: diag-combinatorics
 hide_table_of_contents: true
 ---
@@ -17,13 +19,13 @@ hide_table_of_contents: true
 
 A committee of 4 is to be selected from 10 people. In how many ways can this be done if:
 
-(a) There are no restrictions.
-(b) Two specific people must both be on the committee.
-(c) Two specific people refuse to serve together.
+(a) There are no restrictions. (b) Two specific people must both be on the committee. (c) Two
+specific people refuse to serve together.
 
 **Solution:**
 
-(a) $\dbinom{10}{4} = \dfrac{10!}{4! \times 6!} = \dfrac{10 \times 9 \times 8 \times 7}{4 \times 3 \times 2 \times 1} = 210$.
+(a)
+$\dbinom{10}{4} = \dfrac{10!}{4! \times 6!} = \dfrac{10 \times 9 \times 8 \times 7}{4 \times 3 \times 2 \times 1} = 210$.
 
 (b) If both specific people are included, choose 2 more from the remaining 8:
 
@@ -41,8 +43,7 @@ $210 - \dbinom{8}{2} = 210 - 28 = 182$.
 
 In how many ways can 5 boys and 3 girls be arranged in a row if:
 
-(a) All 3 girls must sit together.
-(b) No two girls sit together.
+(a) All 3 girls must sit together. (b) No two girls sit together.
 
 **Solution:**
 
@@ -98,7 +99,8 @@ For circular arrangements, we fix one person to eliminate rotational symmetry.
 
 Number of arrangements $= (6 - 1)! = 5! = 120$.
 
-A common mistake is using $6! = 720$Which counts the same arrangement multiple times (one for each rotation).
+A common mistake is using $6! = 720$Which counts the same arrangement multiple times (one for each
+rotation).
 
 ---
 
@@ -106,7 +108,8 @@ A common mistake is using $6! = 720$Which counts the same arrangement multiple t
 
 **Question:**
 
-Find the first three terms in the expansion of $(1 + 2x)^{-3}$ in ascending powers of $x$Up to and including the term in $x^2$.
+Find the first three terms in the expansion of $(1 + 2x)^{-3}$ in ascending powers of $x$Up to and
+including the term in $x^2$.
 
 **Solution:**
 
@@ -128,7 +131,8 @@ $$= 1 - 6x + 24x^2 + \cdots$$
 
 **Question:**
 
-A bag contains 4 red and 6 blue balls. Three balls are drawn without replacement. Find the probability that exactly 2 are red.
+A bag contains 4 red and 6 blue balls. Three balls are drawn without replacement. Find the
+probability that exactly 2 are red.
 
 **Solution:**
 
@@ -212,7 +216,8 @@ $$\dbinom{11}{4} = \frac{11 \times 10 \times 9 \times 8}{4 \times 3 \times 2 \ti
 
 **Question:**
 
-In how many ways can the letters of the word "ARRANGE" be arranged such that the two R's are not adjacent?
+In how many ways can the letters of the word "ARRANGE" be arranged such that the two R's are not
+adjacent?
 
 **Solution:**
 
@@ -232,7 +237,8 @@ Arrangements with R's not adjacent: $1260 - 360 = 900$.
 
 **Question:**
 
-From 6 men and 4 women, a committee of 5 is to be formed with at least 2 women. In how many ways can this be done?
+From 6 men and 4 women, a committee of 5 is to be formed with at least 2 women. In how many ways can
+this be done?
 
 **Solution:**
 
@@ -263,7 +269,8 @@ Find the constant term in the expansion of $\left(x^2 + \dfrac{2}{x}\right)^6$.
 
 **Solution:**
 
-General term: $T_{r+1} = \dbinom{6}{r}(x^2)^{6-r}\left(\dfrac{2}{x}\right)^r = \dbinom{6}{r} \cdot 2^r \cdot x^{12-2r} \cdot x^{-r} = \dbinom{6}{r} \cdot 2^r \cdot x^{12-3r}$.
+General term:
+$T_{r+1} = \dbinom{6}{r}(x^2)^{6-r}\left(\dfrac{2}{x}\right)^r = \dbinom{6}{r} \cdot 2^r \cdot x^{12-2r} \cdot x^{-r} = \dbinom{6}{r} \cdot 2^r \cdot x^{12-3r}$.
 
 For the constant term: $12 - 3r = 0 \implies r = 4$.
 
@@ -303,7 +310,8 @@ $$T_6 = \dbinom{10}{5}(2x)^5\left(-\frac{1}{x}\right)^5 = 252 \times 32x^5 \time
 
 **Question:**
 
-In how many ways can 8 different books be distributed among 3 students such that each student gets at least one book?
+In how many ways can 8 different books be distributed among 3 students such that each student gets
+at least one book?
 
 **Solution:**
 
@@ -335,7 +343,8 @@ Total: $2 \times 576 = 1152$ ways.
 
 **Question:**
 
-How many shortest paths are there from point $A(0, 0)$ to point $B(5, 3)$ on a grid, moving only right or up?
+How many shortest paths are there from point $A(0, 0)$ to point $B(5, 3)$ on a grid, moving only
+right or up?
 
 **Solution:**
 
@@ -349,15 +358,26 @@ $$\dbinom{8}{5} = \dbinom{8}{3} = \frac{8 \times 7 \times 6}{3 \times 2 \times 1
 
 ## Common Pitfalls
 
-1. **Confusing permutations with combinations.** Use permutations (${}_nP_r$) when order matters (e.g. Arranging people in a line) and combinations ($\dbinom{n}{r}$) when order does not matter (e.g. Selecting a committee). Ask yourself: does swapping two selected items create a new outcome?
+1. **Confusing permutations with combinations.** Use permutations (${}_nP_r$) when order matters
+   (e.g. Arranging people in a line) and combinations ($\dbinom{n}{r}$) when order does not matter
+   (e.g. Selecting a committee). Ask yourself: does swapping two selected items create a new
+   outcome?
 
-2. **Double counting in "at least" problems.** When counting arrangements with conditions like "at least 2 women," either count each case separately (2 women, 3 women, 4 women) or use the complement method (total minus cases with 0 or 1 woman). Mixing these approaches leads to double counting.
+2. **Double counting in "at least" problems.** When counting arrangements with conditions like "at
+   least 2 women," either count each case separately (2 women, 3 women, 4 women) or use the
+   complement method (total minus cases with 0 or 1 woman). Mixing these approaches leads to double
+   counting.
 
-3. **Forgetting to divide by factorials for identical objects.** When arranging letters or objects with identical elements, always divide by the factorial of the count of each set of identical objects. Failing to do so inflates the count.
+3. **Forgetting to divide by factorials for identical objects.** When arranging letters or objects
+   with identical elements, always divide by the factorial of the count of each set of identical
+   objects. Failing to do so inflates the count.
 
-4. **Incorrect binomial coefficient in expansion.** In $(a + b)^n$The general term is $\dbinom{n}{r} a^{n-r} b^r$. A common error is swapping the exponents: writing $a^r b^{n-r}$. Always identify which term is "$a$" and which is "$b$" at the start.
+4. **Incorrect binomial coefficient in expansion.** In $(a + b)^n$The general term is
+   $\dbinom{n}{r} a^{n-r} b^r$. A common error is swapping the exponents: writing $a^r b^{n-r}$.
+   Always identify which term is "$a$" and which is "$b$" at the start.
 
-5. **Not considering all valid patterns in arrangement problems.** For gender alternation problems, remember that both M-W-M-W and W-M-W-M patterns are valid. Missing one pattern halves the answer.
+5. **Not considering all valid patterns in arrangement problems.** For gender alternation problems,
+   remember that both M-W-M-W and W-M-W-M patterns are valid. Missing one pattern halves the answer.
 
 ---
 
@@ -365,9 +385,9 @@ $$\dbinom{8}{5} = \dbinom{8}{3} = \frac{8 \times 7 \times 6}{3 \times 2 \times 1
 
 ### DSE-1
 
-(a) Find the coefficient of $x^3$ in the expansion of $(1 + 2x)^7$. (3 marks)
-(b) Find the coefficient of $x^3$ in the expansion of $(1 - x)(1 + 2x)^7$. (3 marks)
-(c) Using your answers, find the coefficient of $x^3$ in $(1 + x)(1 + 2x)^7$. (1 mark)
+(a) Find the coefficient of $x^3$ in the expansion of $(1 + 2x)^7$. (3 marks) (b) Find the
+coefficient of $x^3$ in the expansion of $(1 - x)(1 + 2x)^7$. (3 marks) (c) Using your answers, find
+the coefficient of $x^3$ in $(1 + x)(1 + 2x)^7$. (1 mark)
 
 **Solution:**
 
@@ -393,9 +413,9 @@ Coefficient of $x^3$: $280 + 84 = 364$.
 
 A debating team of 4 is to be selected from 7 boys and 5 girls.
 
-(a) In how many ways can the team be selected if there are no restrictions? (1 mark)
-(b) In how many ways can the team be selected if it must include at least 1 girl? (3 marks)
-(c) In how many ways can the team be selected if two particular boys refuse to be on the same team? (3 marks)
+(a) In how many ways can the team be selected if there are no restrictions? (1 mark) (b) In how many
+ways can the team be selected if it must include at least 1 girl? (3 marks) (c) In how many ways can
+the team be selected if two particular boys refuse to be on the same team? (3 marks)
 
 **Solution:**
 
@@ -415,7 +435,8 @@ $495 - 45 = 450$.
 
 ### DSE-3
 
-Find the first four terms in the expansion of $(1 - 3x)^{1/2}$ in ascending powers of $x$. State the range of values of $x$ for which the expansion is valid. (5 marks)
+Find the first four terms in the expansion of $(1 - 3x)^{1/2}$ in ascending powers of $x$. State the
+range of values of $x$ for which the expansion is valid. (5 marks)
 
 **Solution:**
 
@@ -435,9 +456,9 @@ The expansion is valid when $|-3x| < 1$I.e. $|x| < \dfrac{1}{3}$.
 
 5 couples (10 people) are to be seated around a circular table.
 
-(a) In how many ways can they be seated if there are no restrictions? (2 marks)
-(b) In how many ways can they be seated if each couple must sit together? (3 marks)
-(c) In how many ways can they be seated if no couple sits together? (3 marks)
+(a) In how many ways can they be seated if there are no restrictions? (2 marks) (b) In how many ways
+can they be seated if each couple must sit together? (3 marks) (c) In how many ways can they be
+seated if no couple sits together? (3 marks)
 
 **Solution:**
 
@@ -457,7 +478,8 @@ Total: $24 \times 2^5 = 24 \times 32 = 768$.
 
 ### DSE-5
 
-The expansion of $(1 + ax)^n$ has coefficients of $x^2$ and $x^3$ in the ratio $1 : 2$. Find $a$ and $n$. (4 marks)
+The expansion of $(1 + ax)^n$ has coefficients of $x^2$ and $x^3$ in the ratio $1 : 2$. Find $a$ and
+$n$. (4 marks)
 
 **Solution:**
 
@@ -473,6 +495,8 @@ $$\frac{3}{(n-2)a} = \frac{1}{2}$$
 
 $$(n-2)a = 6$$
 
-Since $a$ and $n$ are positive integers: possible pairs $(a, n)$ are $(1, 8), (2, 5), (3, 4), (6, 3)$.
+Since $a$ and $n$ are positive integers: possible pairs $(a, n)$ are
+$(1, 8), (2, 5), (3, 4), (6, 3)$.
 
-All satisfy $(n-2)a = 6$. The problem has multiple solutions unless additional constraints are given. If we assume $n \geq 3$ (needed for $x^3$ term to exist), all four are valid.
+All satisfy $(n-2)a = 6$. The problem has multiple solutions unless additional constraints are
+given. If we assume $n \geq 3$ (needed for $x^3$ term to exist), all four are valid.

@@ -1,9 +1,12 @@
 ---
 id: complexity-analysis
 title: Complexity Analysis
-description: "Algorithm design: Complexity Analysis — Why Complexity Analysis Matters; Asymptotic Notation; Big-O: Upper Bound; Example: nested loop is O(n^2)."
+description:
+  'Algorithm design: Complexity Analysis — Why Complexity Analysis Matters; Asymptotic Notation;
+  Big-O: Upper Bound; Example: nested loop is O(n^2).'
 slug: complexity-analysis
 ---
+
 ## Why Complexity Analysis Matters
 
 A system that handles 1,000 requests per second at USD 10,000 per month in compute costs is
@@ -74,13 +77,13 @@ $$\lim_{n \to \infty} \frac{f(n)}{g(n)} = 0$$
 Similarly, $f(n) = \omega(g(n))$ means $f(n)$ grows strictly faster. These are strict versions of
 Big-O and Big-Omega respectively — they exclude the equality case.
 
-| Notation | Meaning | Intuition |
+| Notation       | Meaning                                      | Intuition          |
 | -------------- | -------------------------------------------- | ------------------ |
-| $O(g(n))$ | $f(n) \le c \cdot g(n)$ | At most this fast |
-| $\Omega(g(n))$ | $f(n) \ge c \cdot g(n)$ | At least this fast |
-| $\Theta(g(n))$ | $c_1 \cdot g(n) \le f(n) \le c_2 \cdot g(n)$ | Exactly this fast |
-| $o(g(n))$ | $f(n) / g(n) \to 0$ | Strictly slower |
-| $\omega(g(n))$ | $f(n) / g(n) \to \infty$ | Strictly faster |
+| $O(g(n))$      | $f(n) \le c \cdot g(n)$                      | At most this fast  |
+| $\Omega(g(n))$ | $f(n) \ge c \cdot g(n)$                      | At least this fast |
+| $\Theta(g(n))$ | $c_1 \cdot g(n) \le f(n) \le c_2 \cdot g(n)$ | Exactly this fast  |
+| $o(g(n))$      | $f(n) / g(n) \to 0$                          | Strictly slower    |
+| $\omega(g(n))$ | $f(n) / g(n) \to \infty$                     | Strictly faster    |
 
 ## Common Complexity Classes
 
@@ -113,16 +116,16 @@ graph TD
     style Onf fill:#2c3e50,color:#fff
 ```
 
-| Class | Name | Example | Practical at $n = 10^6$ |
+| Class         | Name         | Example                     | Practical at $n = 10^6$                |
 | ------------- | ------------ | --------------------------- | -------------------------------------- |
-| $O(1)$ | Constant | Hash table lookup | Instantaneous |
-| $O(\log n)$ | Logarithmic | Binary search | ~20 operations |
-| $O(n)$ | Linear | Single pass through array | 1,000,000 operations |
-| $O(n \log n)$ | Linearithmic | Merge sort | ~20,000,000 operations |
-| $O(n^2)$ | Quadratic | Bubble sort | $10^{12}$ operations (infeasible) |
-| $O(n^3)$ | Cubic | Naive matrix multiplication | $10^{18}$ operations (infeasible) |
-| $O(2^n)$ | Exponential | Subset enumeration | $10^{301,029}$ operations (impossible) |
-| $O(n!)$ | Factorial | Permutation generation | Beyond astronomical |
+| $O(1)$        | Constant     | Hash table lookup           | Instantaneous                          |
+| $O(\log n)$   | Logarithmic  | Binary search               | ~20 operations                         |
+| $O(n)$        | Linear       | Single pass through array   | 1,000,000 operations                   |
+| $O(n \log n)$ | Linearithmic | Merge sort                  | ~20,000,000 operations                 |
+| $O(n^2)$      | Quadratic    | Bubble sort                 | $10^{12}$ operations (infeasible)      |
+| $O(n^3)$      | Cubic        | Naive matrix multiplication | $10^{18}$ operations (infeasible)      |
+| $O(2^n)$      | Exponential  | Subset enumeration          | $10^{301,029}$ operations (impossible) |
+| $O(n!)$       | Factorial    | Permutation generation      | Beyond astronomical                    |
 
 ### What "Practical" Actually Means
 
@@ -130,10 +133,10 @@ The "practical at $n = 10^6$" column assumes roughly $10^9$ operations per secon
 Core). In reality:
 
 - A cache miss costs ~100 cycles, so $O(n)$ with poor cache locality can be slower than
- $O(n \log n)$ with good locality.
+  $O(n \log n)$ with good locality.
 - Parallelism changes the equation: $O(n \log n)$ on 32 cores is effectively $O(n \log n / 32)$.
 - I/O dominates for large datasets: $O(n)$ with 10 GB of random reads from disk is far slower than
- $O(n \log n)$ with sequential reads.
+  $O(n \log n)$ with sequential reads.
 
 :::warning
 
@@ -154,8 +157,7 @@ This is why we drop lower-order terms: $O(n^2 + n \log n + 3n) = O(n^2)$ because
 
 ### Product Rule
 
-If $f_1(n) = O(g_1(n))$ and $f_2(n) = O(g_2(n))$Then
-$f_1(n) \cdot f_2(n) = O(g_1(n) \cdot
+If $f_1(n) = O(g_1(n))$ and $f_2(n) = O(g_2(n))$Then $f_1(n) \cdot f_2(n) = O(g_1(n) \cdot
 G_2(n))$.
 
 ### Polynomial Rule
@@ -182,8 +184,7 @@ Where $a \ge 1$ and $b \gt 1$. Let $c_{crit} = \log_b a$ (the critical exponent)
 
 ### Case 1: Work Dominated by Leaves
 
-If $f(n) = O(n^{c_{crit} - \epsilon})$ for some $\epsilon \gt 0$Then
-$T(n) = \Theta(n^{c_{crit}})$.
+If $f(n) = O(n^{c_{crit} - \epsilon})$ for some $\epsilon \gt 0$Then $T(n) = \Theta(n^{c_{crit}})$.
 
 The recursive work at the leaves dominates the combine step.
 
@@ -260,21 +261,21 @@ An algorithm's complexity can vary depending on the input. Quicksort runs in $O(
 Average but $O(n^2)$ in the worst case. Linear search is $O(1)$ in the best case (element is first)
 And $O(n)$ in the worst case.
 
-| Case | Definition | When it matters |
+| Case         | Definition                                   | When it matters                         |
 | ------------ | -------------------------------------------- | --------------------------------------- |
-| Best case | Minimum over all inputs of size $n$ | Rarely useful in practice |
+| Best case    | Minimum over all inputs of size $n$          | Rarely useful in practice               |
 | Average case | Expected value over a distribution of inputs | Useful when input distribution is known |
-| Worst case | Maximum over all inputs of size $n$ | The standard for guarantees |
+| Worst case   | Maximum over all inputs of size $n$          | The standard for guarantees             |
 
 ### Why Worst Case is the Default
 
 In systems engineering, worst-case guarantees matter because:
 
 1. **Adversarial inputs exist** — attackers can craft inputs that trigger worst-case behaviour (hash
- collision denial-of-service, regex backtracking)
+   collision denial-of-service, regex backtracking)
 2. **Tail latency is critical** — p99 latency is dominated by worst-case behaviour, not average
-3. **Real-time constraints** — a system that responds in 1ms but occasionally takes 10s is
- often worse than one that always responds in 5ms
+3. **Real-time constraints** — a system that responds in 1ms but occasionally takes 10s is often
+   worse than one that always responds in 5ms
 
 :::info
 
@@ -298,7 +299,7 @@ Compute the total cost of $n$ operations and divide by $n$.
 - Append is $O(1)$ when there is capacity, $O(n)$ when resizing is needed
 - Resizing doubles the capacity: after growing from $k$ to $2k$The next $k$ appends are $O(1)$
 - Total cost for $n$ appends: $1 + 1 + \cdots + 1 + n + 1 + 1 + \cdots$ where the $n$ cost occurs at
- sizes $1, 2, 4, 8, \ldots$
+  sizes $1, 2, 4, 8, \ldots$
 - Total: $n + 1 + 2 + 4 + \cdots + n = n + 2n - 1 = 3n - 1$
 - Amortised cost per operation: $O(1)$
 
@@ -310,10 +311,10 @@ The surplus accumulates as **credit** that pays for future expensive operations.
 For dynamic array append:
 
 - Assign amortised cost of 3 per append (actual cost is 1 when no resize, $k+1$ when resizing from
- $k$)
+  $k$)
 - When no resize: spend 1, save 2 as credit (1 for the slot, 1 for future resizing)
 - When resizing from $k$ to $2k$: the $k$ items already have 1 credit each from previous inserts,
- providing $k$ credit to pay for the $k$ copies
+  providing $k$ credit to pay for the $k$ copies
 - Credit never goes negative, so the amortised bound is valid
 
 ### Potential (Physicist's) Method
@@ -362,15 +363,15 @@ class DynamicArray:
 Space complexity measures the additional memory an algorithm uses beyond the input. Like time
 Complexity, it is expressed in asymptotic notation.
 
-| Algorithm | Time | Space | Notes |
+| Algorithm                | Time              | Space           | Notes                            |
 | ------------------------ | ----------------- | --------------- | -------------------------------- |
-| In-place quicksort | $O(n \log n)$ avg | $O(\log n)$ | Stack depth for recursion |
-| Merge sort | $O(n \log n)$ | $O(n)$ | Auxiliary array |
-| Heap sort | $O(n \log n)$ | $O(1)$ | True in-place |
-| DFS | $O(V + E)$ | $O(V)$ | Recursion stack / explicit stack |
-| BFS | $O(V + E)$ | $O(V)$ | Queue for frontier |
-| Dynamic programming (2D) | Varies | $O(n \cdot m)$ | Full table |
-| DP with rolling array | Same time | $O(\min(n, m))$ | Space-optimised |
+| In-place quicksort       | $O(n \log n)$ avg | $O(\log n)$     | Stack depth for recursion        |
+| Merge sort               | $O(n \log n)$     | $O(n)$          | Auxiliary array                  |
+| Heap sort                | $O(n \log n)$     | $O(1)$          | True in-place                    |
+| DFS                      | $O(V + E)$        | $O(V)$          | Recursion stack / explicit stack |
+| BFS                      | $O(V + E)$        | $O(V)$          | Queue for frontier               |
+| Dynamic programming (2D) | Varies            | $O(n \cdot m)$  | Full table                       |
+| DP with rolling array    | Same time         | $O(\min(n, m))$ | Space-optimised                  |
 
 ### Space-Time Trade-offs
 
@@ -423,12 +424,12 @@ Becomes "Is there a tour of length at most $k$?" (binary search on $k$).
 
 ### P, NP, and NP-Completeness
 
-| Class | Definition | Example Problems |
+| Class           | Definition                                         | Example Problems                          |
 | --------------- | -------------------------------------------------- | ----------------------------------------- |
-| **P** | Solvable in polynomial time | Sorting, shortest path, MST |
-| **NP** | Verifiable in polynomial time | SAT, travelling salesman, graph colouring |
-| **NP-Complete** | In NP, and every NP problem reduces to it | SAT, 3-SAT, vertex cover |
-| **NP-Hard** | At least as hard as NP-complete (may not be in NP) | Halting problem, TSP optimisation |
+| **P**           | Solvable in polynomial time                        | Sorting, shortest path, MST               |
+| **NP**          | Verifiable in polynomial time                      | SAT, travelling salesman, graph colouring |
+| **NP-Complete** | In NP, and every NP problem reduces to it          | SAT, 3-SAT, vertex cover                  |
+| **NP-Hard**     | At least as hard as NP-complete (may not be in NP) | Halting problem, TSP optimisation         |
 
 ```mermaid
 graph TD
@@ -458,30 +459,30 @@ Is proven NP-complete by reducing from a known NP-complete problem.
 
 ### Common NP-Complete Problems
 
-| Problem | Input | Question | Practical Significance |
+| Problem             | Input                           | Question                                 | Practical Significance               |
 | ------------------- | ------------------------------- | ---------------------------------------- | ------------------------------------ |
-| SAT | Boolean formula | Is there a satisfying assignment? | Basis for all NP-completeness proofs |
-| 3-SAT | 3-CNF formula | Is there a satisfying assignment? | Circuit design, scheduling |
-| Vertex Cover | Graph $G$Integer $k$ | Is there a vertex cover of size $\le k$? | Network monitoring |
-| Travelling Salesman | Graph with weights, integer $k$ | Is there a tour of length $\le k$? | Logistics, routing |
-| Subset Sum | Set of integers, target $t$ | Is there a subset summing to $t$? | Knapsack variants |
-| Graph Colouring | Graph $G$Integer $k$ | Can $G$ be coloured with $k$ colours? | Register allocation, scheduling |
-| Clique | Graph $G$Integer $k$ | Does $G$ contain a clique of size $k$? | Social network analysis |
+| SAT                 | Boolean formula                 | Is there a satisfying assignment?        | Basis for all NP-completeness proofs |
+| 3-SAT               | 3-CNF formula                   | Is there a satisfying assignment?        | Circuit design, scheduling           |
+| Vertex Cover        | Graph $G$Integer $k$            | Is there a vertex cover of size $\le k$? | Network monitoring                   |
+| Travelling Salesman | Graph with weights, integer $k$ | Is there a tour of length $\le k$?       | Logistics, routing                   |
+| Subset Sum          | Set of integers, target $t$     | Is there a subset summing to $t$?        | Knapsack variants                    |
+| Graph Colouring     | Graph $G$Integer $k$            | Can $G$ be coloured with $k$ colours?    | Register allocation, scheduling      |
+| Clique              | Graph $G$Integer $k$            | Does $G$ contain a clique of size $k$?   | Social network analysis              |
 
 ### Dealing with NP-Hardness in Practice
 
 When you encounter an NP-hard problem:
 
 1. **Restrict the input** — Many NP-hard problems become polynomial on restricted inputs (e.g., TSP
- on a tree, graph colouring on a bipartite graph)
+   on a tree, graph colouring on a bipartite graph)
 2. **Approximation algorithms** — Find a solution within a guaranteed factor of optimal (e.g.,
- 2-approx for vertex cover, 1.5-approx for metric TSP with Christofides' algorithm)
+   2-approx for vertex cover, 1.5-approx for metric TSP with Christofides' algorithm)
 3. **Heuristics** — Greedy algorithms, local search, simulated annealing, genetic algorithms. No
- guarantees, but often work well in practice
+   guarantees, but often work well in practice
 4. **Fixed-parameter tractability** — If the problem is NP-hard but polynomial for fixed parameter
- $k$Use FPT algorithms (e.g., vertex cover is $O(2^k \cdot n)$)
+   $k$Use FPT algorithms (e.g., vertex cover is $O(2^k \cdot n)$)
 5. **SAT solvers** — For many combinatorial problems, encoding as SAT and using a modern solver
- (CDCL-based) is surprisingly effective
+   (CDCL-based) is surprisingly effective
 
 ## Practical Considerations
 
@@ -492,7 +493,7 @@ Asymptotic analysis ignores the memory hierarchy. In practice, cache effects dom
 - **Sequential access** (arrays): prefetcher-friendly, ~1 ns per access from L1 cache
 - **Random access** (linked lists): cache-unfriendly, ~100 ns per miss to main memory
 - **B-trees vs binary trees**: B-trees are designed for disk/cache-line-sized blocks, reducing the
- number of cache misses per operation by a factor of $\log_2 B$ where $B$ is the block size
+  number of cache misses per operation by a factor of $\log_2 B$ where $B$ is the block size
 
 A linked list traversal that is $O(n)$ in theory can be 10-100x slower than an array traversal that
 Is also $O(n)$Because the array has spatial locality.
@@ -503,9 +504,9 @@ Big-O hides constant factors. $O(n)$ with a constant of 1000 is slower than $O(n
 Constant of 1 for $n \lt 2^{1000}$. In practice, the constants matter enormously:
 
 - Radix sort has $O(n \cdot k)$ time but small constants and excellent cache behaviour, making it
- faster than comparison sort for integers in practice
+  faster than comparison sort for integers in practice
 - Insertion sort is $O(n^2)$ but has tiny constants and is adaptive, making it the fastest sort for
- $n \lt 50$ or nearly-sorted data
+  $n \lt 50$ or nearly-sorted data
 
 ### Branch Prediction
 
@@ -529,8 +530,8 @@ def branchless_max(a, b):
 ### 1. Confusing Big-O with Big-Theta
 
 Saying "this algorithm is $O(1)$" when you mean $\Theta(1)$ is imprecise. Technically, every
-Algorithm is $O(2^n)$ because $O$ is only an upper bound. If you claim $O(1)$You should be
-Prepared to justify it as a tight bound.
+Algorithm is $O(2^n)$ because $O$ is only an upper bound. If you claim $O(1)$You should be Prepared
+to justify it as a tight bound.
 
 ### 2. Ignoring the Input Distribution
 
@@ -621,8 +622,8 @@ Expected $O(n \log n)$ comparisons, but the expected number of comparisons can b
 $$E[\mathrm{comparisons{}] = 2(n+1)H_n - 4n \approx 1.386 n \log_2 n$$
 
 Where $H_n = \sum_{i=1}^{n} 1/i$ is the $n$-th harmonic number. The constant $1.386$ is about 39%
-More comparisons than the information-theoretic minimum of $n \log_2 n$Which is remarkably close
-To optimal for a comparison sort.
+More comparisons than the information-theoretic minimum of $n \log_2 n$Which is remarkably close To
+optimal for a comparison sort.
 
 ### Smoothed Analysis
 
@@ -638,13 +639,13 @@ For online algorithms (where future input is unknown), competitive analysis comp
 Performance to the optimal offline algorithm. An algorithm is $c$-competitive if its cost is at most
 $c$ times the optimal cost for every input sequence.
 
-| Online Problem | Algorithm | Competitive Ratio |
+| Online Problem   | Algorithm               | Competitive Ratio            |
 | ---------------- | ----------------------- | ---------------------------- |
-| Paging (caching) | LRU | $k$ (where $k$ = cache size) |
-| Paging (caching) | FIFO | $k$ |
-| K-server | Work function algorithm | $2k - 1$ |
-| Load balancing | Greedy | $O(\log n)$ |
-| Ski rental | Buy after $n$ rentals | 2 |
+| Paging (caching) | LRU                     | $k$ (where $k$ = cache size) |
+| Paging (caching) | FIFO                    | $k$                          |
+| K-server         | Work function algorithm | $2k - 1$                     |
+| Load balancing   | Greedy                  | $O(\log n)$                  |
+| Ski rental       | Buy after $n$ rentals   | 2                            |
 
 ### I/O Complexity and External Memory Model
 
@@ -655,12 +656,12 @@ Vitter, 1988) counts:
 - **Memory size:** $M$ words available in internal memory
 - **Disk size:** $N$ words on disk
 
-| Algorithm | Internal Memory | External Memory (I/Os) |
+| Algorithm     | Internal Memory    | External Memory (I/Os)          |
 | ------------- | ------------------ | ------------------------------- |
-| Scanning | $O(N)$ time | $O(N/B)$ I/Os |
-| Sorting | $O(N \log N)$ time | $O((N/B) \log_{M/B}(N/B))$ I/Os |
-| BST search | $O(\log N)$ time | $O(\log_B N)$ I/Os |
-| B-tree search | $O(\log N)$ time | $O(\log_B N)$ I/Os |
+| Scanning      | $O(N)$ time        | $O(N/B)$ I/Os                   |
+| Sorting       | $O(N \log N)$ time | $O((N/B) \log_{M/B}(N/B))$ I/Os |
+| BST search    | $O(\log N)$ time   | $O(\log_B N)$ I/Os              |
+| B-tree search | $O(\log N)$ time   | $O(\log_B N)$ I/Os              |
 
 The gap between internal and external memory complexity is why B-trees exist: a binary tree search
 Does $O(\log_2 N)$ I/Os (one per level), while a B-tree search does $O(\log_B N)$ I/Os. For
@@ -685,9 +686,9 @@ Non-negative and is $O(n \log n)$ for an $n$-node tree.
 - No balance information stored — simpler implementation
 - Access pattern adapts to workload — frequently accessed nodes move near the root
 - Static optimality theorem: splay trees perform within a constant factor of the optimal static tree
- for any access sequence
+  for any access sequence
 - Working set theorem: if an item is accessed $t$ times and there are $l$ distinct items accessed
- since its last access, the amortised cost is $O(\log l + \log t)$
+  since its last access, the amortised cost is $O(\log l + \log t)$
 
 :::tip
 
@@ -807,15 +808,15 @@ Asymptotic analysis tells you how an algorithm scales, but profiling tells you w
 Actually spent. In production systems, use both:
 
 1. **Benchmark with representative data:** Synthetic benchmarks miss cache effects, branch
- prediction patterns, and I/O behaviour. Use production traces or realistic synthetic data.
-2. **Profile before optimising:** Use `cProfile``perf`Or `VTune` to identify the actual
- bottleneck. The bottleneck is often not where you expect it.
+   prediction patterns, and I/O behaviour. Use production traces or realistic synthetic data.
+2. **Profile before optimising:** Use `cProfile``perf`Or `VTune` to identify the actual bottleneck.
+   The bottleneck is often not where you expect it.
 3. **Measure, don't guess:** A single cache miss (100 ns) is worth ~300 integer operations. An L1
- cache hit (1 ns) is 100x faster than a main memory access (100 ns). These differences dwarf the
- constant factors that Big-O hides.
+   cache hit (1 ns) is 100x faster than a main memory access (100 ns). These differences dwarf the
+   constant factors that Big-O hides.
 4. **Consider the full pipeline:** An algorithm with better asymptotic complexity but worse cache
- behaviour may be slower in practice. Radix sort ($O(nk)$) is often faster than quicksort
- ($O(n \log n)$) for integers because it accesses memory sequentially.
+   behaviour may be slower in practice. Radix sort ($O(nk)$) is often faster than quicksort
+   ($O(n \log n)$) for integers because it accesses memory sequentially.
 
 ```python
 import timeit

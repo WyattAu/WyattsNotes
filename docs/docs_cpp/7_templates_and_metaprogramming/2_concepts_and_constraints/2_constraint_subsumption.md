@@ -1,6 +1,8 @@
 ---
 title: Constraint Subsumption and Overload Resolution
-description: "C++: Constraint Subsumption and Overload Resolution — Partial Ordering of Constraints; Proof: Partially-Ordered Overloads Are Preferred."
+description:
+  'C++: Constraint Subsumption and Overload Resolution — Partial Ordering of Constraints; Proof:
+  Partially-Ordered Overloads Are Preferred.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -8,6 +10,7 @@ categories:
   - Cpp
 slug: constraint-subsumption-and-overload-resolution
 ---
+
 # Constraint Subsumption and Overload Resolution
 
 When multiple constrained function templates are viable for a call, the compiler uses
@@ -31,14 +34,14 @@ $$
 This is a structural comparison performed by the compiler, not a runtime check. The rules for
 Determining subsumption between constraint conjunctions and disjunctions are [N4950 §13.5.4.1]:
 
-| $P$ | $Q$ | $P$ subsumes $Q$? |
+| $P$         | $Q$         | $P$ subsumes $Q$?                                         |
 | ----------- | ----------- | --------------------------------------------------------- |
-| $A \land B$ | $A$ | Yes (conjunction subsumes each conjunct) |
-| $A$ | $A \land B$ | No (the conjunct is less restrictive) |
-| $A$ | $A \lor B$ | Yes (disjunction is subsumed by each disjunct) |
-| $A \lor B$ | $A$ | No (the disjunction is less restrictive) |
-| $A$ | $A$ | Yes (identical constraints subsume each other) |
-| $A$ | $B$ | Indeterminate (incomparable unless one implies the other) |
+| $A \land B$ | $A$         | Yes (conjunction subsumes each conjunct)                  |
+| $A$         | $A \land B$ | No (the conjunct is less restrictive)                     |
+| $A$         | $A \lor B$  | Yes (disjunction is subsumed by each disjunct)            |
+| $A \lor B$  | $A$         | No (the disjunction is less restrictive)                  |
+| $A$         | $A$         | Yes (identical constraints subsume each other)            |
+| $A$         | $B$         | Indeterminate (incomparable unless one implies the other) |
 
 ## Proof: Partially-Ordered Overloads Are Preferred
 
@@ -48,33 +51,33 @@ $Q$ does not subsume $P$The overload with constraint $P$ is unambiguously prefer
 **Proof:**
 
 1. By [N4950 §13.5.4/1], a constraint $P$ _subsumes_ a constraint $Q$ if, after normalizing both
- constraints into sets of atomic constraints, every atomic constraint in $P$'s normalized set is
- subsumed by at least one atomic constraint in $Q$'s normalized set, using the template parameter
- mapping.
+   constraints into sets of atomic constraints, every atomic constraint in $P$'s normalized set is
+   subsumed by at least one atomic constraint in $Q$'s normalized set, using the template parameter
+   mapping.
 
 2. Subsumption is a **preorder** (reflexive and transitive) on the set of constraints. It is not a
- total order --- some constraints are incomparable.
+   total order --- some constraints are incomparable.
 
 3. The partial ordering of constraints induces a partial ordering on the set of viable function
- templates. If $f_1$ has constraint $P$ and $f_2$ has constraint $Q$And $P \succ Q$ (strict
- subsumption), then $f_1$ is _more constrained_ than $f_2$ [N4950 §13.10.3.2/1].
+   templates. If $f_1$ has constraint $P$ and $f_2$ has constraint $Q$And $P \succ Q$ (strict
+   subsumption), then $f_1$ is _more constrained_ than $f_2$ [N4950 §13.10.3.2/1].
 
 4. [N4950 §13.10.3.2/1] states: "a viable function $F_1$ is defined to be a better function than
- another viable function $F_2$ if ... $F_1$'s associated constraints subsume $F_2$'s associated
- constraints and $F_2$'s associated constraints do not subsume $F_1$'s associated constraints."
+   another viable function $F_2$ if ... $F_1$'s associated constraints subsume $F_2$'s associated
+   constraints and $F_2$'s associated constraints do not subsume $F_1$'s associated constraints."
 
 5. The "better function" rule is applied in overload resolution [N4950 §13.10.3]. If exactly one
- viable function is better than all others, it is selected. If no unique best function exists, the
- call is ambiguous.
+   viable function is better than all others, it is selected. If no unique best function exists, the
+   call is ambiguous.
 
 6. When $P \succ Q$ strictly (subsumes but is not subsumed by), $f_1$ is the unique best function.
- No ambiguity arises.
+   No ambiguity arises.
 
 7. When $P \succeq Q$ and $Q \succeq P$ (both subsume each other, i.e., the constraints are
- equivalent), neither function is strictly better than the other. The call is ambiguous.
+   equivalent), neither function is strictly better than the other. The call is ambiguous.
 
 8. When neither $P \succeq Q$ nor $Q \succeq P$ (the constraints are incomparable), neither function
- is better than the other. The call is ambiguous.
+   is better than the other. The call is ambiguous.
 
 Therefore, partially-ordered overloads with strict subsumption are unambiguously resolved, while
 Equivalent or incomparable constraints produce ambiguity. $\blacksquare$
@@ -103,9 +106,11 @@ Representation is unique (up to reordering) for a given constraint expression.
 **Normalization algorithm:**
 
 1. Replace each concept-id `Concept<T, Args...>` with its definition's normalized constraint
- (recursively).
+   (recursively).
 2. Apply the distributive law to convert to DNF:
- - $(A \land B) \lor C \to (A \lor C) \land (B \lor C)$
+
+- $(A \land B) \lor C \to (A \lor C) \land (B \lor C)$
+
 3. Collect atomic constraints within each conjunction.
 4. Remove duplicate atomic constraints within each conjunction.
 
@@ -128,7 +133,7 @@ The normalization of `C<T>` proceeds as follows:
 2. Expand `B<T>` to `std::signed_integral<T>`.
 3. `C<T>` becomes `std::integral<T> && (std::signed_integral<T> || std::floating_point<T>)`.
 4. Apply distributive law:
- `(std::integral<T> && std::signed_integral<T>) || (std::integral<T> && std::floating_point<T>)`.
+   `(std::integral<T> && std::signed_integral<T>) || (std::integral<T> && std::floating_point<T>)`.
 
 The DNF is two disjuncts:
 
@@ -201,7 +206,7 @@ When resolving a call to a constrained function template, the compiler follows t
 2. **Template argument deduction** determines the template arguments for each viable candidate.
 3. **Constraint satisfaction** eliminates candidates whose constraints are not satisfied.
 4. **Partial ordering by constraints** selects the most constrained candidate among the remaining
- viable functions.
+   viable functions.
 
 If, after constraint subsumption, exactly one candidate is more constrained than all others, that
 Candidate is selected. If no unique most-constrained candidate exists (i.e., two candidates are
@@ -280,8 +285,8 @@ template integral: 42
 ```
 
 The rule is: when both a non-template and a template are viable, the non-template is preferred if
-And only if the argument conversions are equally good [N4950 §13.10.3.2]. For `process(42)`Both
-Are exact matches, so the non-template wins. For `process(42L)`The template is an exact match
+And only if the argument conversions are equally good [N4950 §13.10.3.2]. For `process(42)`Both Are
+exact matches, so the non-template wins. For `process(42L)`The template is an exact match
 (`T = long`) while the non-template requires a narrowing conversion (`long` to `int`), so the
 Template wins.
 
@@ -330,7 +335,7 @@ Correctly. For example [N4950 §18.4]:
 - `std::signed_integral<T>` subsumes `std::integral<T>` (every signed integral is integral).
 - `std::integral<T>` does **not** subsume `std::signed_integral<T>` (not every integral is signed).
 - `std::forward_iterator<T>` subsumes `std::input_iterator<T>` (every forward iterator is an input
- iterator).
+  iterator).
 
 This hierarchy enables natural overload sets:
 
@@ -361,13 +366,11 @@ int main() {
 }
 ```
 
-:::warning
-Subsumption is Structural, Not Semantic The compiler checks subsumption by comparing the
+:::warning Subsumption is Structural, Not Semantic The compiler checks subsumption by comparing the
 **structure** of the constraint expressions (the expression trees), not by evaluating them. Two
 Constraints that are logically equivalent but structurally different (e.g., `std::integral<T>` and
 `requires(T t) { t + 1; } requires std::integral<T>`) are **incomparable** for subsumption purposes.
-To ensure correct overload resolution, use the same concept names consistently.
-:::
+To ensure correct overload resolution, use the same concept names consistently. :::
 
 ## Complete Example: Overload Resolution with Constrained Templates
 
@@ -653,8 +656,8 @@ int main() {
 
 The subsumption chain is: `PreciseNumber` $\succ$ `ExactNumber` $\succ$ `Number`. For `double`All
 Three are viable, and `PreciseNumber` is the most constrained. For `int`Only `Number` and
-`ExactNumber` are viable, and `ExactNumber` is more constrained. For `unsigned int`Only `Number`
-Is viable.
+`ExactNumber` are viable, and `ExactNumber` is more constrained. For `unsigned int`Only `Number` Is
+viable.
 
 ### Example 2: Incomparable Constraints (Ambiguity)
 
@@ -735,8 +738,8 @@ int main() {
 
 This is counterintuitive. Even though `A<T>` is "more restrictive" than `B<T>` (every integral type
 Is either integral or floating-point), the subsumption check is **structural**, not semantic. The
-Normalized form of `B<T>` is `std::integral<T> || std::floating_point<T>`Which is a
-**disjunction**. The conjunction rule for subsumption does not apply to disjunctions.
+Normalized form of `B<T>` is `std::integral<T> || std::floating_point<T>`Which is a **disjunction**.
+The conjunction rule for subsumption does not apply to disjunctions.
 
 **The fix:** Write the refinement explicitly:
 
@@ -754,9 +757,9 @@ concept A = B<T> && std::integral<T>;
 // Still ambiguous!
 ```
 
-The fundamental issue is that **disjunction breaks subsumption**. When a concept uses `||`It
-Creates multiple disjuncts, and the subsumption rules do not handle the case where one constraint's
-Conjunct is a subset of another constraint's disjunct.
+The fundamental issue is that **disjunction breaks subsumption**. When a concept uses `||`It Creates
+multiple disjuncts, and the subsumption rules do not handle the case where one constraint's Conjunct
+is a subset of another constraint's disjunct.
 
 **Practical workaround:** Avoid disjunction in concepts that participate in overload sets. Instead,
 Use mutually exclusive concepts or explicit overloads for each disjunct:
@@ -847,7 +850,7 @@ The previous.
 
 1. Use conjunction (`&&`) to refine concepts, never disjunction (`||`).
 2. Use the same structural form for constraints across overloads (same concept names, same parameter
- positions).
+   positions).
 3. Avoid `requires`-expressions with local parameters in overloads that need to be ordered.
 4. Test subsumption with `static_assert` to catch structural mismatches early.
 
@@ -856,44 +859,44 @@ The previous.
 ## Common Pitfalls
 
 - **Structurally different but semantically equivalent constraints are incomparable.**
- `std::integral<T>` and `requires(T t) { t + 1; } requires std::integral<T>` may be logically
- equivalent but structurally different. The compiler cannot determine subsumption between them,
- leading to ambiguity. Use the same concept name consistently.
+  `std::integral<T>` and `requires(T t) { t + 1; } requires std::integral<T>` may be logically
+  equivalent but structurally different. The compiler cannot determine subsumption between them,
+  leading to ambiguity. Use the same concept name consistently.
 
 - **Forgetting that subsumption requires strict "more restrictive."** Two constraints that are
- exactly equally restrictive (e.g., two different concept names that normalize to the same atomic
- constraints) result in ambiguity, not preference. One must be strictly a superset.
+  exactly equally restrictive (e.g., two different concept names that normalize to the same atomic
+  constraints) result in ambiguity, not preference. One must be strictly a superset.
 
 - **Using `requires` expressions with local parameters in overloads.** Local parameters in
- `requires(T x) { ... }` do not participate in the template parameter mapping during subsumption.
- This makes the constraint structurally incomparable with other constraints. Prefer
- `requires std::integral<T>` (no local parameter) over `requires(T x) { x + x; }` (local parameter)
- when the constraint doesn't need to test specific operations on a parameter.
+  `requires(T x) { ... }` do not participate in the template parameter mapping during subsumption.
+  This makes the constraint structurally incomparable with other constraints. Prefer
+  `requires std::integral<T>` (no local parameter) over `requires(T x) { x + x; }` (local parameter)
+  when the constraint doesn't need to test specific operations on a parameter.
 
 - **Concepts with `auto` in `requires` expressions.** `requires(auto x) { x.foo(); }` is less useful
- for subsumption because `auto` introduces a deduced type that may not map cleanly to the outer
- template parameters. Use explicit type parameters.
+  for subsumption because `auto` introduces a deduced type that may not map cleanly to the outer
+  template parameters. Use explicit type parameters.
 
 - **Negated constraints and subsumption.** `!std::integral<T>` does not subsume
- `std::floating_point<T>` even though all floating-point types are non-integral. The compiler
- compares constraint structure, not set-theoretic relationships.
+  `std::floating_point<T>` even though all floating-point types are non-integral. The compiler
+  compares constraint structure, not set-theoretic relationships.
 
 - **Disjunction in concepts breaks subsumption.** A concept defined as `A || B` cannot be compared
- via subsumption with a concept defined as `A`. Even though `A` is more restrictive than `A || B`
- the structural subsumption rules do not handle this case. Avoid `||` in concepts used for overload
- resolution.
+  via subsumption with a concept defined as `A`. Even though `A` is more restrictive than `A || B`
+  the structural subsumption rules do not handle this case. Avoid `||` in concepts used for overload
+  resolution.
 
 - **Parameter name differences across concepts.** `concept A = requires(T t) { ... }` and
- `concept B = requires(U u) { ... }` are structurally different even if the bodies are identical,
- because the parameter names differ. The compiler normalizes by mapping template parameters, but
- the local parameter names in requires-expressions are part of the structural form. Always use
- consistent parameter names when you need subsumption.
+  `concept B = requires(U u) { ... }` are structurally different even if the bodies are identical,
+  because the parameter names differ. The compiler normalizes by mapping template parameters, but
+  the local parameter names in requires-expressions are part of the structural form. Always use
+  consistent parameter names when you need subsumption.
 
 - **Class template partial specializations with concepts.** Unlike function template overloads,
- class template partial specializations do not use constraint subsumption for ordering. They use
- partial specialization ordering rules [N4950 §13.7.6.1], which are based on the template argument
- pattern, not the constraint expression. Do not assume that concept subsumption will select the
- correct class template partial specialization.
+  class template partial specializations do not use constraint subsumption for ordering. They use
+  partial specialization ordering rules [N4950 §13.7.6.1], which are based on the template argument
+  pattern, not the constraint expression. Do not assume that concept subsumption will select the
+  correct class template partial specialization.
 
 ## Summary
 

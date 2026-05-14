@@ -1,6 +1,8 @@
 ---
 title: Polynomials
-description: "DSE Mathematics polynomial notes covering polynomial division, factor theorem, remainder theorem, roots of equations, and polynomial graphs."
+description:
+  'DSE Mathematics polynomial notes covering polynomial division, factor theorem, remainder theorem,
+  roots of equations, and polynomial graphs.'
 date: 2025-06-03T13:29:40.310Z
 tags:
   - Maths
@@ -12,9 +14,9 @@ slug: polynomials
 
 A polynomial in one variable $x$ is an expression of the form
 $a_n x^n + a_{n-1} x^{n-1} + \cdots + a_1 x + a_0$Where $n \in \mathbb{'\{'}N{'\}'}_0$
-$a_n, a_{n-1}, \ldots, a_0 \in \mathbb{'\{'}R{'\}'}$And $a_n \neq 0$. Polynomials and their manipulation
-Form a core part of the DSE compulsory mathematics syllabus, with applications ranging from
-Algebraic identities to combinatorial coefficient extraction.
+$a_n, a_{n-1}, \ldots, a_0 \in \mathbb{'\{'}R{'\}'}$And $a_n \neq 0$. Polynomials and their
+manipulation Form a core part of the DSE compulsory mathematics syllabus, with applications ranging
+from Algebraic identities to combinatorial coefficient extraction.
 
 ## Polynomial Basics
 
@@ -112,7 +114,7 @@ $\binom{n}{k} = \binom{n-1}{k-1} + \binom{n-1}{k}$.
 1. **Symmetry**: $\displaystyle \binom{n}{k} = \binom{n}{n-k}$
 
 2. **Recurrence (Pascal's identity)**:
- $\displaystyle \binom{n}{k} = \binom{n-1}{k-1} + \binom{n-1}{k}$
+   $\displaystyle \binom{n}{k} = \binom{n-1}{k-1} + \binom{n-1}{k}$
 
 3. **Sum of coefficients**: Setting $a = b = 1$ in the binomial theorem,
 
@@ -205,8 +207,8 @@ $$
 
 ### Long Division
 
-Given two polynomials $f(x)$ (dividend) and $g(x)$ (divisor) with $\deg g(x) \geq 1$Polynomial
-Long division yields a quotient $q(x)$ and a remainder $r(x)$ such that
+Given two polynomials $f(x)$ (dividend) and $g(x)$ (divisor) with $\deg g(x) \geq 1$Polynomial Long
+division yields a quotient $q(x)$ and a remainder $r(x)$ such that
 
 $$
 F(x) = g(x) \cdot q(x) + r(x)
@@ -370,7 +372,8 @@ $$
 6x^2 - 7x + 2 = 6x^2 - 4x - 3x + 2 = 2x(3x - 2) - 1(3x - 2) = (2x - 1)(3x - 2)
 $$
 
-If the discriminant $\Delta = b^2 - 4ac < 0$The quadratic cannot be factorized over $\mathbb{'\{'}R{'\}'}$.
+If the discriminant $\Delta = b^2 - 4ac < 0$The quadratic cannot be factorized over
+$\mathbb{'\{'}R{'\}'}$.
 
 </details>
 
@@ -508,8 +511,8 @@ The constant term is $84$.
 
 </details>
 
-3. **Question:** When $f(x) = 2x^3 + ax^2 + bx - 6$ is divided by $(x-1)$The remainder is $-4$.
-When divided by $(x+2)$The remainder is $30$. Find $a$ and $b$.
+3. **Question:** When $f(x) = 2x^3 + ax^2 + bx - 6$ is divided by $(x-1)$The remainder is $-4$. When
+divided by $(x+2)$The remainder is $30$. Find $a$ and $b$.
 <details>
 <summary>Answer</summary>
 By the Remainder Theorem:
@@ -523,8 +526,8 @@ From (i): $b = -\dfrac{26}{3}$.
 
 </details>
 
-4. **Question:** Given that $(x - 3)$ and $(x + 1)$ are factors of $f(x) = x^3 + ax^2 + bx + c$
-Find $a$$b$And $c$. Hence factorize $f(x)$ completely.
+4. **Question:** Given that $(x - 3)$ and $(x + 1)$ are factors of $f(x) = x^3 + ax^2 + bx + c$ Find
+$a$$b$And $c$. Hence factorize $f(x)$ completely.
 <details>
 <summary>Answer</summary>
 By the Factor Theorem:
@@ -719,14 +722,15 @@ Dividing: $f(x) = (x+1)(x^2 - 4x + 4) = (x+1)(x-2)^2$.
 
 ---
 
-:::tip
-Diagnostic Test
-Ready to test your understanding of **Polynomials**? The [diagnostic test](/docs/dse/Maths/diagnostics/diag-polynomials) contains the hardest questions within the DSE specification for this topic, each with a full worked solution.
+:::tip Diagnostic Test Ready to test your understanding of **Polynomials**? The
+[diagnostic test](/docs/dse/Maths/diagnostics/diag-polynomials) contains the hardest questions
+within the DSE specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Polynomials with other DSE mathematics topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Polynomials
+with other DSE mathematics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/dse/Maths/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/dse/Maths/diagnostics/diagnostic-guide) for instructions on
+self-marking and building a personal test matrix. :::
 
 ---
 
@@ -736,7 +740,8 @@ See [Diagnostic Guide](/docs/dse/Maths/diagnostics/diagnostic-guide) for instruc
 
 For polynomial problems in DSE Paper 1:
 
-1. When using the remainder theorem, write "By the Remainder Theorem, the remainder is $f(c)$" before computing.
+1. When using the remainder theorem, write "By the Remainder Theorem, the remainder is $f(c)$"
+   before computing.
 2. When using the factor theorem, show that $f(c) = 0$ before stating that $(x - c)$ is a factor.
 3. For polynomial division, show the division layout or state the quotient and remainder explicitly.
 4. When finding unknown constants, set up a system of equations and solve step by step.
@@ -744,7 +749,8 @@ For polynomial problems in DSE Paper 1:
 
 ### Significant Figures
 
-Binomial coefficients and factorials are exact integers. Polynomial roots involving square roots should be left in exact form.
+Binomial coefficients and factorials are exact integers. Polynomial roots involving square roots
+should be left in exact form.
 
 ### Common DSE Question Types
 
@@ -760,7 +766,8 @@ Binomial coefficients and factorials are exact integers. Polynomial roots involv
 
 **Worked Example 13: Cubic with given conditions**
 
-The polynomial $f(x) = x^3 + ax^2 + bx - 12$ is divisible by $(x - 3)$ and $f(1) = -18$. Find $a$$b$And factorise $f(x)$ completely.
+The polynomial $f(x) = x^3 + ax^2 + bx - 12$ is divisible by $(x - 3)$ and $f(1) = -18$. Find
+$a$$b$And factorise $f(x)$ completely.
 
 <details>
 <summary>Solution</summary>
@@ -799,7 +806,8 @@ Find the remainder when $f(x) = x^4 + 2x^3 - x^2 + 3$ is divided by $x^2 - x + 1
 
 Since the divisor is degree 2, the remainder has degree at most 1: $r(x) = ax + b$.
 
-The roots of $x^2 - x + 1 = 0$ are $\omega$ and $\omega^2$ (complex cube roots of unity, $\omega^3 = 1$).
+The roots of $x^2 - x + 1 = 0$ are $\omega$ and $\omega^2$ (complex cube roots of unity,
+$\omega^3 = 1$).
 
 By the remainder theorem for quadratic divisors:
 
@@ -821,12 +829,14 @@ Remainder: $2x + 6$.
 
 **Worked Example 16: Vieta for cubic equations**
 
-If $\alpha$$\beta$$\gamma$ are roots of $x^3 - 2x^2 + 3x - 4 = 0$Find $\alpha^2 + \beta^2 + \gamma^2$.
+If $\alpha$$\beta$$\gamma$ are roots of $x^3 - 2x^2 + 3x - 4 = 0$Find
+$\alpha^2 + \beta^2 + \gamma^2$.
 
 <details>
 <summary>Solution</summary>
 
-From Vieta: $\alpha + \beta + \gamma = 2$$\alpha\beta + \beta\gamma + \gamma\alpha = 3$$\alpha\beta\gamma = 4$.
+From Vieta:
+$\alpha + \beta + \gamma = 2$$\alpha\beta + \beta\gamma + \gamma\alpha = 3$$\alpha\beta\gamma = 4$.
 
 $$(\alpha + \beta + \gamma)^2 = \alpha^2 + \beta^2 + \gamma^2 + 2(\alpha\beta + \beta\gamma + \gamma\alpha)$$
 
@@ -851,7 +861,9 @@ $$\frac{n}{6} = \frac{3}{2} \implies n = 9$$
 
 ## DSE Exam-Style Questions
 
-**DSE Practice 1.** When $f(x) = x^3 + ax^2 + bx + c$ is divided by $(x - 1)$The remainder is $4$. When divided by $(x + 1)$The remainder is $-2$. When divided by $(x - 2)$The remainder is $14$. Find $a$$b$And $c$.
+**DSE Practice 1.** When $f(x) = x^3 + ax^2 + bx + c$ is divided by $(x - 1)$The remainder is $4$.
+When divided by $(x + 1)$The remainder is $-2$. When divided by $(x - 2)$The remainder is $14$. Find
+$a$$b$And $c$.
 
 <details>
 <summary>Solution</summary>
@@ -875,9 +887,11 @@ From (i): $\dfrac{1}{3} + 2 + c = 3 \implies c = \dfrac{2}{3}$.
 <details>
 <summary>Solution</summary>
 
-We need to find all ways to get $x^3$ from expanding $(1 + 2x - x^2)^5$ using the multinomial theorem.
+We need to find all ways to get $x^3$ from expanding $(1 + 2x - x^2)^5$ using the multinomial
+theorem.
 
-The general term from choosing $a$ ones, $b$ copies of $2x$And $c$ copies of $-x^2$ where $a + b + c = 5$:
+The general term from choosing $a$ ones, $b$ copies of $2x$And $c$ copies of $-x^2$ where
+$a + b + c = 5$:
 
 $$\frac{5!}{a!\,b!\,c!} \cdot 1^a \cdot (2x)^b \cdot (-x^2)^c = \frac{5!}{a!\,b!\,c!} \cdot 2^b \cdot (-1)^c \cdot x^{b + 2c}$$
 
@@ -885,13 +899,15 @@ For $x^3$: $b + 2c = 3$ with $a + b + c = 5$$a, b, c \geq 0$.
 
 Case $c = 0$: $b = 3$$a = 2$. Coefficient: $\dfrac{120}{2! \cdot 3!} \cdot 8 = 10 \cdot 8 = 80$.
 
-Case $c = 1$: $b = 1$$a = 3$. Coefficient: $\dfrac{120}{3! \cdot 1! \cdot 1!} \cdot 2 \cdot (-1) = 20 \cdot (-2) = -40$.
+Case $c = 1$: $b = 1$$a = 3$. Coefficient:
+$\dfrac{120}{3! \cdot 1! \cdot 1!} \cdot 2 \cdot (-1) = 20 \cdot (-2) = -40$.
 
 Total coefficient of $x^3$: $80 + (-40) = 40$.
 
 </details>
 
-**DSE Practice 3.** If $(x + 1)$ and $(x - 2)$ are factors of $f(x) = 2x^3 + ax^2 + bx - 6$Find $a$ and $b$. Hence find the third factor.
+**DSE Practice 3.** If $(x + 1)$ and $(x - 2)$ are factors of $f(x) = 2x^3 + ax^2 + bx - 6$Find $a$
+and $b$. Hence find the third factor.
 
 <details>
 <summary>Solution</summary>
@@ -904,13 +920,15 @@ $f(2) = 16 + 4a + 2b - 6 = 0 \implies 4a + 2b = -10 \implies 2a + b = -5 \quad \
 
 $f(x) = 2x^3 + x^2 - 7x - 6 = (x + 1)(x - 2)(2x + 3)$.
 
-Verification: $(x + 1)(x - 2) = x^2 - x - 2$. $(x^2 - x - 2)(2x + 3) = 2x^3 + 3x^2 - 2x^2 - 3x - 4x - 6 = 2x^3 + x^2 - 7x - 6$. Correct.
+Verification: $(x + 1)(x - 2) = x^2 - x - 2$.
+$(x^2 - x - 2)(2x + 3) = 2x^3 + 3x^2 - 2x^2 - 3x - 4x - 6 = 2x^3 + x^2 - 7x - 6$. Correct.
 
 Third factor: $(2x + 3)$.
 
 </details>
 
-**DSE Practice 4.** Expand $(1 + x)^{10}$ and use the expansion to find the value of $(1.01)^{10}$ correct to 5 decimal places.
+**DSE Practice 4.** Expand $(1 + x)^{10}$ and use the expansion to find the value of $(1.01)^{10}$
+correct to 5 decimal places.
 
 <details>
 <summary>Solution</summary>
@@ -944,11 +962,13 @@ $$\left(\frac{n+1}{2}\right)^n \geq n!$$
 
 We need to show $n^n > 2^{n-1} \cdot n!$I.e., $n^n / n! > 2^{n-1}$I.e., $\dfrac{n^n}{n!} > 2^{n-1}$.
 
-Note $\dfrac{n^n}{n!} = \dfrac{n \cdot n \cdots n}{n \cdot (n-1) \cdots 1} = \prod_{k=1}^{n-1} \dfrac{n}{n - k}$.
+Note
+$\dfrac{n^n}{n!} = \dfrac{n \cdot n \cdots n}{n \cdot (n-1) \cdots 1} = \prod_{k=1}^{n-1} \dfrac{n}{n - k}$.
 
 Each factor $\dfrac{n}{n - k} \geq \dfrac{n}{n - 1} > 1$ for $n \geq 2$ and $k \geq 1$.
 
-$\dfrac{n}{n-1} \cdot \dfrac{n}{n-2} \cdots \dfrac{n}{1} > 2 \cdot 2 \cdots 2 = 2^{n-1}$ when $n \geq 3$ (since $\dfrac{n}{n-k} \geq 2$ when $n - k \leq n/2$).
+$\dfrac{n}{n-1} \cdot \dfrac{n}{n-2} \cdots \dfrac{n}{1} > 2 \cdot 2 \cdots 2 = 2^{n-1}$ when
+$n \geq 3$ (since $\dfrac{n}{n-k} \geq 2$ when $n - k \leq n/2$).
 
 For $n = 2$: $4 > 2 \cdot 2 = 4$? No, $4 = 4$. For $n = 3$: $27 > 4 \cdot 6 = 24$. Yes.
 

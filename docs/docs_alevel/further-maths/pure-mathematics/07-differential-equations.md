@@ -1,6 +1,8 @@
 ---
 title: Differential Equations
-description: "A-Level Further Maths notes on Differential Equations: Board Coverage; 1. First-Order ODEs: Separable Equations; 1.1 Definition; 1.2 Method."
+description:
+  'A-Level Further Maths notes on Differential Equations: Board Coverage; 1. First-Order ODEs:
+  Separable Equations; 1.1 Definition; 1.2 Method.'
 date: 2026-04-02T00:00:00.000Z
 tags:
   - FurtherMaths
@@ -10,13 +12,13 @@ categories:
 slug: differential-equations
 sidebar_position: 7
 ---
+
 ## Differential Equations
 
 Differential equations are equations involving derivatives of an unknown function. They arise
- whenever a rate of change is related to the current state of a system — from population
-Growth to electrical circuits. This chapter covers first-order equations (separable and integrating
-Factor methods), second-order linear equations with constant coefficients, and modelling
-Applications.
+whenever a rate of change is related to the current state of a system — from population Growth to
+electrical circuits. This chapter covers first-order equations (separable and integrating Factor
+methods), second-order linear equations with constant coefficients, and modelling Applications.
 
 <DesmosGraph title="Slope Field Explorer" expressions={["dy/dx=x-y"]} width={800} height={500} />
 
@@ -24,12 +26,12 @@ Adjust the parameters in the graph above to explore the relationships between va
 
 ### Board Coverage
 
-| Board | Paper | Notes |
+| Board   | Paper   | Notes                                                            |
 | ------- | ------- | ---------------------------------------------------------------- |
-| AQA | Paper 1 | First-order (separable, integrating factor), growth/decay models |
-| Edexcel | FP2 | First-order + second-order linear with constant coefficients |
-| OCR (A) | Paper 1 | First-order + second-order linear with constant coefficients |
-| CIE | P2 | First-order (separable, integrating factor); second-order in P2 |
+| AQA     | Paper 1 | First-order (separable, integrating factor), growth/decay models |
+| Edexcel | FP2     | First-order + second-order linear with constant coefficients     |
+| OCR (A) | Paper 1 | First-order + second-order linear with constant coefficients     |
+| CIE     | P2      | First-order (separable, integrating factor); second-order in P2  |
 
 :::info All boards examine first-order ODEs. CIE and Edexcel require second-order linear ODEs. AQA
 Focuses on first-order equations with growth and decay modelling. The formula booklet gives the
@@ -291,14 +293,14 @@ The general solution $y = y_h + y_p$ also contains two arbitrary constants. $\sq
 
 To find $y_p$Guess the form based on $f(x)$Then determine coefficients by substitution.
 
-| $f(x)$ | Trial $y_p$ (if not in CF) | If in CF, multiply by $x$ |
+| $f(x)$          | Trial $y_p$ (if not in CF)        | If in CF, multiply by $x$          |
 | --------------- | --------------------------------- | ---------------------------------- |
-| $k$ (constant) | $c$ | $cx$ then $cx^2$ |
-| $kx + \ell$ | $px + q$ | $x(px+q)$ then $x^2(px+q)$ |
-| $ke^{\alpha x}$ | $ce^{\alpha x}$ | $cxe^{\alpha x}$ |
-| $k\cos\omega x$ | $c\cos\omega x + d\sin\omega x$ | $x(c\cos\omega x + d\sin\omega x)$ |
-| $k\sin\omega x$ | $c\cos\omega x + d\sin\omega x$ | $x(c\cos\omega x + d\sin\omega x)$ |
-| Polynomial | General polynomial of same degree | Multiply by $x$ as needed |
+| $k$ (constant)  | $c$                               | $cx$ then $cx^2$                   |
+| $kx + \ell$     | $px + q$                          | $x(px+q)$ then $x^2(px+q)$         |
+| $ke^{\alpha x}$ | $ce^{\alpha x}$                   | $cxe^{\alpha x}$                   |
+| $k\cos\omega x$ | $c\cos\omega x + d\sin\omega x$   | $x(c\cos\omega x + d\sin\omega x)$ |
+| $k\sin\omega x$ | $c\cos\omega x + d\sin\omega x$   | $x(c\cos\omega x + d\sin\omega x)$ |
+| Polynomial      | General polynomial of same degree | Multiply by $x$ as needed          |
 
 :::warning If any term in your trial $y_p$ already appears in the complementary function $y_h$
 Multiply the entire trial by $x$. If it still appears, multiply by $x^2$. :::
@@ -753,8 +755,7 @@ $$\boxed{y = \frac{x^3}{5} + \frac{C}{x^2}}$$
 
 **Problem.** Solve $\dfrac{dy}{dx} = \dfrac{x + y}{x - y}$.
 
-**Solution.** This is a homogeneous equation. Let $y = vx$So
-$\dfrac{dy}{dx} = v + x\dfrac{dv}{dx}$.
+**Solution.** This is a homogeneous equation. Let $y = vx$So $\dfrac{dy}{dx} = v + x\dfrac{dv}{dx}$.
 
 $$v + x\frac{dv}{dx} = \frac{1+v}{1-v}$$
 
@@ -845,12 +846,12 @@ $\boxed{y = A\cos x + B\sin x + x\sin x}$
 
 ## 9. Common Pitfalls
 
-| Pitfall | Correct Approach |
+| Pitfall                                                                 | Correct Approach                                                                       |
 | ----------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| Forgetting the constant of integration when using an integrating factor | Integrate both sides after multiplying by $\mu$; $+C$ appears on the right |
-| Using the wrong trial function for the particular integral | If the RHS is part of the complementary function, multiply by $x$ (or $x^2$ if needed) |
-| Confusing $Ae^{mx}$ (single root) with $(A+Bx)e^{mx}$ (repeated root) | Check the discriminant: repeated root $\iff$ discriminant $= 0$ |
-| Not applying initial conditions to find $A$ and $B$ | Always substitute the given conditions into the general solution and its derivative |
+| Forgetting the constant of integration when using an integrating factor | Integrate both sides after multiplying by $\mu$; $+C$ appears on the right             |
+| Using the wrong trial function for the particular integral              | If the RHS is part of the complementary function, multiply by $x$ (or $x^2$ if needed) |
+| Confusing $Ae^{mx}$ (single root) with $(A+Bx)e^{mx}$ (repeated root)   | Check the discriminant: repeated root $\iff$ discriminant $= 0$                        |
+| Not applying initial conditions to find $A$ and $B$                     | Always substitute the given conditions into the general solution and its derivative    |
 
 ---
 
@@ -962,11 +963,11 @@ Newton's second law $F = ma$ leads to second-order ODEs in mechanics. See
 
 ## 12. Key Results Summary
 
-| ODE Type | Method | General Solution |
+| ODE Type                                        | Method                                    | General Solution                                                                                                |
 | ----------------------------------------------- | ----------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| $\dfrac{dy}{dx} + P(x)y = Q(x)$ | Integrating factor $\mu = e^{\int P\,dx}$ | $y = \dfrac◆LB◆1◆RB◆◆LB◆\mu◆RB◆\displaystyle\int \mu Q\,dx$ |
-| $\dfrac{dy}{dx} = f\!\left(\dfrac{y}{x}\right)$ | Substitution $y = vx$ | Separate and integrate |
-| $a\dfrac{d^2y}{dx^2}+b\dfrac{dy}{dx}+cy=0$ | Auxiliary equation $am^2+bm+c=0$ | Real roots: $Ae^{m_1x}+Be^{m_2x}$; repeated: $(A+Bx)e^{mx}$; complex: $e^{\alpha x}(A\cos\beta x+B\sin\beta x)$ |
+| $\dfrac{dy}{dx} + P(x)y = Q(x)$                 | Integrating factor $\mu = e^{\int P\,dx}$ | $y = \dfrac◆LB◆1◆RB◆◆LB◆\mu◆RB◆\displaystyle\int \mu Q\,dx$                                                     |
+| $\dfrac{dy}{dx} = f\!\left(\dfrac{y}{x}\right)$ | Substitution $y = vx$                     | Separate and integrate                                                                                          |
+| $a\dfrac{d^2y}{dx^2}+b\dfrac{dy}{dx}+cy=0$      | Auxiliary equation $am^2+bm+c=0$          | Real roots: $Ae^{m_1x}+Be^{m_2x}$; repeated: $(A+Bx)e^{mx}$; complex: $e^{\alpha x}(A\cos\beta x+B\sin\beta x)$ |
 
 ---
 
@@ -1041,8 +1042,8 @@ Have zero, one, or multiple solutions, unlike IVPs which (for linear ODEs) have 
 
 ### 14.4 Phase portraits
 
-For autonomous 2D systems $\dot{x} = f(x,y)$$\dot{y} = g(x,y)$The phase portrait shows
-Trajectories in the $xy$-plane. Key features:
+For autonomous 2D systems $\dot{x} = f(x,y)$$\dot{y} = g(x,y)$The phase portrait shows Trajectories
+in the $xy$-plane. Key features:
 
 - Fixed points: where $\dot{x} = \dot{y} = 0$
 - Stability: determined by the eigenvalues of the Jacobian at each fixed point

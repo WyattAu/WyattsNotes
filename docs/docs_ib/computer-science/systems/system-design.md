@@ -1,9 +1,11 @@
 ---
 title: System Design
 tags:
-- CS
+  - CS
 slug: system-design
-description: "Rigorous IB computer science notes covering System Design. Includes definitions, derivations, worked examples, and exam-style problems."
+description:
+  'Rigorous IB computer science notes covering System Design. Includes definitions, derivations,
+  worked examples, and exam-style problems.'
 ---
 
 ## Design
@@ -43,24 +45,24 @@ Understanding the stages and their purposes.
 ### Stages of the SDLC
 
 1. **Analysis**: Identify the problem, gather requirements from stakeholders, define the scope of
- the project. Output: requirements specification.
+   the project. Output: requirements specification.
 2. **Design**: Plan the system architecture, data structures, user interface, and algorithms.
- Output: design documents (data flow diagrams, UML diagrams, pseudocode).
+   Output: design documents (data flow diagrams, UML diagrams, pseudocode).
 3. **Development (Implementation)**: Write the code, build the database, create the user interface
- according to the design specifications.
+   according to the design specifications.
 4. **Testing**: Verify that the system meets the requirements and works correctly. Includes unit
- testing, integration testing, and system testing.
+   testing, integration testing, and system testing.
 5. **Evaluation**: Assess the solution against the original requirements, gather user feedback,
- identify limitations and potential improvements.
+   identify limitations and potential improvements.
 
 ### SDLC Models
 
-| Model | Description |
+| Model     | Description                                                                                                                                                          |
 | --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Waterfall | Sequential, linear approach — each phase must be completed before the next begins. Simple to understand but inflexible to changing requirements. |
-| Agile | Iterative approach — the system is developed in small increments (sprints). Flexible and responsive to change, but can be harder to predict final cost and timeline. |
-| Spiral | Combines iterative development with risk analysis. Each cycle includes planning, risk analysis, engineering, and evaluation. Suitable for large, complex projects. |
-| Rapid | Emphasizes rapid prototyping and user feedback. Useful when requirements are not well understood. Can lead to scope creep if not carefully managed. |
+| Waterfall | Sequential, linear approach — each phase must be completed before the next begins. Simple to understand but inflexible to changing requirements.                     |
+| Agile     | Iterative approach — the system is developed in small increments (sprints). Flexible and responsive to change, but can be harder to predict final cost and timeline. |
+| Spiral    | Combines iterative development with risk analysis. Each cycle includes planning, risk analysis, engineering, and evaluation. Suitable for large, complex projects.   |
+| Rapid     | Emphasizes rapid prototyping and user feedback. Useful when requirements are not well understood. Can lead to scope creep if not carefully managed.                  |
 
 > **Exam tip**: The IB does not require detailed knowledge of specific SDLC models, but you should
 > be able to describe the stages and explain why a structured approach is important.
@@ -71,12 +73,12 @@ Understanding the stages and their purposes.
 
 DFDs show how data moves through a system. They use four standard symbols:
 
-| Symbol | Meaning |
+| Symbol                            | Meaning                                            |
 | --------------------------------- | -------------------------------------------------- |
-| External entity (rectangle) | A source or destination of data outside the system |
-| Process (rounded rectangle) | A transformation or processing step |
-| Data store (open-ended rectangle) | A place where data is stored (database, file) |
-| Data flow (arrow) | Movement of data between components |
+| External entity (rectangle)       | A source or destination of data outside the system |
+| Process (rounded rectangle)       | A transformation or processing step                |
+| Data store (open-ended rectangle) | A place where data is stored (database, file)      |
+| Data flow (arrow)                 | Movement of data between components                |
 
 **Example**: A simple DFD for a library system:
 
@@ -84,7 +86,7 @@ DFDs show how data moves through a system. They use four standard symbols:
 - **Processes**: Process Loan, Process Return, Check Availability
 - **Data stores**: Book Database, Member Database, Loan Records
 - **Data flows**: Member → Process Loan (loan request), Process Loan → Loan Records (new loan), Book
- Database → Check Availability (book details)
+  Database → Check Availability (book details)
 
 ### UML Diagrams
 
@@ -161,13 +163,13 @@ Pseudocode standard uses:
 
 **Flowcharts** provide a visual representation of an algorithm:
 
-| Symbol | Meaning |
+| Symbol        | Meaning        |
 | ------------- | -------------- |
-| Oval | Start / End |
+| Oval          | Start / End    |
 | Parallelogram | Input / Output |
-| Rectangle | Process |
-| Diamond | Decision |
-| Arrows | Flow direction |
+| Rectangle     | Process        |
+| Diamond       | Decision       |
+| Arrows        | Flow direction |
 
 > **Exam tip**: If a question asks you to "design an algorithm," you can use pseudocode or a
 > flowchart unless the question specifies otherwise. Pseudocode is generally faster to write in an
@@ -178,47 +180,47 @@ Pseudocode standard uses:
 ### Principles of Good UI Design
 
 1. **Consistency**: Use the same colors, fonts, button styles, and layouts throughout the
- application. Inconsistent interfaces confuse users and increase learning time.
+   application. Inconsistent interfaces confuse users and increase learning time.
 2. **Feedback**: Provide clear feedback for every user action. Examples: confirmation messages after
- form submission, loading spinners during processing, error messages for invalid input.
+   form submission, loading spinners during processing, error messages for invalid input.
 3. **User control**: Allow users to undo actions, cancel operations, and navigate freely. Users
- should never feel trapped by the interface.
+   should never feel trapped by the interface.
 4. **Simplicity**: Follow the principle of least astonishment — the interface should behave as users
- expect. Avoid unnecessary features that clutter the interface.
+   expect. Avoid unnecessary features that clutter the interface.
 5. **Error prevention**: Design forms that validate input before submission. Use clear labels,
- placeholder text, and appropriate input types (e.g., date pickers for date fields).
+   placeholder text, and appropriate input types (e.g., date pickers for date fields).
 
 ### Input Methods
 
-| Method | Description | Use case |
+| Method          | Description                                            | Use case                            |
 | --------------- | ------------------------------------------------------ | ----------------------------------- |
-| Keyboard | Standard text input via physical or on-screen keyboard | Text entry, form filling |
-| Mouse/Touchpad | Pointing device for clicking, dragging, scrolling | Navigation, selection, manipulation |
-| Touchscreen | Direct manipulation of on-screen elements | Mobile devices, kiosks, tablets |
-| Voice/Speech | Voice commands and dictation | Accessibility, hands-free operation |
-| Scanner/Barcode | Optical input of data | Retail, inventory, logistics |
-| Biometric | Fingerprint, facial recognition, iris scan | Security, authentication |
+| Keyboard        | Standard text input via physical or on-screen keyboard | Text entry, form filling            |
+| Mouse/Touchpad  | Pointing device for clicking, dragging, scrolling      | Navigation, selection, manipulation |
+| Touchscreen     | Direct manipulation of on-screen elements              | Mobile devices, kiosks, tablets     |
+| Voice/Speech    | Voice commands and dictation                           | Accessibility, hands-free operation |
+| Scanner/Barcode | Optical input of data                                  | Retail, inventory, logistics        |
+| Biometric       | Fingerprint, facial recognition, iris scan             | Security, authentication            |
 
 ### Output Methods
 
-| Method | Description | Use case |
+| Method          | Description                      | Use case                                 |
 | --------------- | -------------------------------- | ---------------------------------------- |
-| Screen/Monitor | Visual display of information | Primary output for most systems |
-| Printer | Hard copy output | Reports, receipts, documents |
-| Speaker/Audio | Auditory output | Alerts, accessibility, multimedia |
-| Projector | Large-scale visual display | Presentations, classroom use |
+| Screen/Monitor  | Visual display of information    | Primary output for most systems          |
+| Printer         | Hard copy output                 | Reports, receipts, documents             |
+| Speaker/Audio   | Auditory output                  | Alerts, accessibility, multimedia        |
+| Projector       | Large-scale visual display       | Presentations, classroom use             |
 | Haptic feedback | Vibrations or physical responses | Mobile notifications, gaming controllers |
 
 ### Accessibility Considerations
 
 - **Visual impairments**: Screen readers (e.g., JAWS, NVDA), screen magnification, high-contrast
- themes, Braille displays, keyboard navigation (avoid reliance on mouse-only interactions).
+  themes, Braille displays, keyboard navigation (avoid reliance on mouse-only interactions).
 - **Hearing impairments**: Closed captions, visual alerts (flashing indicators), transcript
- alternatives for audio content.
+  alternatives for audio content.
 - **Motor impairments**: Large clickable areas, keyboard shortcuts, voice control, adjustable input
- sensitivity.
+  sensitivity.
 - **Cognitive impairments**: Clear and simple language, consistent navigation, avoidance of flashing
- content (can trigger seizures), adjustable text size.
+  content (can trigger seizures), adjustable text size.
 
 > **Exam tip**: The IB frequently asks about the social and ethical implications of accessibility.
 > Be prepared to discuss why accessibility matters (legal requirements, ethical responsibility,
@@ -303,14 +305,14 @@ class Library:
 
 ### Testing
 
-| Test case | Input | Expected output |
+| Test case                         | Input                            | Expected output              |
 | --------------------------------- | -------------------------------- | ---------------------------- |
-| Search for existing book by title | keyword = "1984" | List containing the book |
-| Search for non-existent book | keyword = "Nonexistent Book" | Empty list |
-| Borrow available book | member (2 loans), available book | "Book borrowed successfully" |
-| Borrow when at loan limit | member (5 loans), available book | "Loan limit reached" |
-| Borrow unavailable book | member, borrowed book | "Book not available" |
-| Return a borrowed book | member, their borrowed book | "Book returned successfully" |
+| Search for existing book by title | keyword = "1984"                 | List containing the book     |
+| Search for non-existent book      | keyword = "Nonexistent Book"     | Empty list                   |
+| Borrow available book             | member (2 loans), available book | "Book borrowed successfully" |
+| Borrow when at loan limit         | member (5 loans), available book | "Loan limit reached"         |
+| Borrow unavailable book           | member, borrowed book            | "Book not available"         |
+| Return a borrowed book            | member, their borrowed book      | "Book returned successfully" |
 
 > **Exam tip**: When designing a system, always include a testing table with at least 5–6 test cases
 > covering normal operation, boundary conditions, and error handling.
@@ -319,13 +321,13 @@ class Library:
 
 Understanding stakeholders is essential for system design:
 
-| Stakeholder type | Description | Example |
+| Stakeholder type | Description                                              | Example                              |
 | ---------------- | -------------------------------------------------------- | ------------------------------------ |
-| Direct users | People who interact with the system daily | Librarian, library members |
-| Indirect users | People affected by the system but do not use it directly | School administration, parents |
-| Management | People who oversee or fund the system | Principal, IT department |
-| Developers | People who build and maintain the system | Programmers, database administrators |
-| Support staff | People who provide technical support | IT helpdesk |
+| Direct users     | People who interact with the system daily                | Librarian, library members           |
+| Indirect users   | People affected by the system but do not use it directly | School administration, parents       |
+| Management       | People who oversee or fund the system                    | Principal, IT department             |
+| Developers       | People who build and maintain the system                 | Programmers, database administrators |
+| Support staff    | People who provide technical support                     | IT helpdesk                          |
 
 ### Stakeholder consultation
 
@@ -343,13 +345,13 @@ During the analysis phase, developers should:
 
 Before developing a system, a feasibility assessment should consider:
 
-| Type | Question |
+| Type          | Question                                                                  |
 | ------------- | ------------------------------------------------------------------------- |
-| Technical | Can the required technology be acquired and used by the development team? |
-| Economic | Is the project within budget? Will the benefits outweigh the costs? |
-| Operational | Will the system be usable by the target users? Can it be maintained? |
-| Schedule | Can the project be completed within the required timeframe? |
-| Legal/Ethical | Does the system comply with relevant laws and ethical standards? |
+| Technical     | Can the required technology be acquired and used by the development team? |
+| Economic      | Is the project within budget? Will the benefits outweigh the costs?       |
+| Operational   | Will the system be usable by the target users? Can it be maintained?      |
+| Schedule      | Can the project be completed within the required timeframe?               |
+| Legal/Ethical | Does the system comply with relevant laws and ethical standards?          |
 
 ## Data Design
 
@@ -365,19 +367,19 @@ Are diamonds between entities. Primary keys are shown as underlined attributes. 
 **Relationship types**:
 
 - **One-to-one (1:1)**: Each record in Table A relates to at most one record in Table B (e.g.,
- Student — StudentProfile).
+  Student — StudentProfile).
 - **One-to-many (1:M)**: One record in Table A relates to many in Table B (e.g., Teacher —
- Students).
+  Students).
 - **Many-to-many (M:N)**: Many records in A relate to many in B. Requires a junction table (e.g.,
- Students — Courses resolved via Enrollments).
+  Students — Courses resolved via Enrollments).
 
 ### Keys
 
-| Key type | Definition | Example |
+| Key type      | Definition                                                      | Example                              |
 | ------------- | --------------------------------------------------------------- | ------------------------------------ |
-| Primary key | An attribute (or combination) that uniquely identifies each row | studentID, ISBN |
-| Foreign key | An attribute that references the primary key of another table | courseID in an Enrollments table |
-| Composite key | A primary key formed by combining two or more attributes | (studentID, courseID) in Enrollments |
+| Primary key   | An attribute (or combination) that uniquely identifies each row | studentID, ISBN                      |
+| Foreign key   | An attribute that references the primary key of another table   | courseID in an Enrollments table     |
+| Composite key | A primary key formed by combining two or more attributes        | (studentID, courseID) in Enrollments |
 
 ### Referential Integrity
 
@@ -402,37 +404,37 @@ Must depend directly on the primary key, not through another non-key attribute.
 
 **Worked example**: Consider this library table:
 
-| LoanID | MemberName | MemberEmail | BookTitle | Author | Genre |
+| LoanID | MemberName | MemberEmail      | BookTitle | Author  | Genre    |
 | ------ | ---------- | ---------------- | --------- | ------- | -------- |
-| 1 | Alice | alice@school.com | 1984 | Orwell | Fiction |
-| 2 | Alice | alice@school.com | Dune | Herbert | Fiction |
-| 3 | Bob | bob@school.com | Calculus | Stewart | Textbook |
+| 1      | Alice      | alice@school.com | 1984      | Orwell  | Fiction  |
+| 2      | Alice      | alice@school.com | Dune      | Herbert | Fiction  |
+| 3      | Bob        | bob@school.com   | Calculus  | Stewart | Textbook |
 
 This is in 1NF but not 3NF. MemberEmail depends on MemberName (not LoanID), and Author/Genre depend
 On BookTitle. These are transitive dependencies. Resolution — split into three tables:
 
 **Members table** (PK: MemberID):
 
-| MemberID | MemberName | MemberEmail |
+| MemberID | MemberName | MemberEmail      |
 | -------- | ---------- | ---------------- |
-| 1 | Alice | alice@school.com |
-| 2 | Bob | bob@school.com |
+| 1        | Alice      | alice@school.com |
+| 2        | Bob        | bob@school.com   |
 
 **Books table** (PK: BookID):
 
-| BookID | BookTitle | Author | Genre |
+| BookID | BookTitle | Author  | Genre    |
 | ------ | --------- | ------- | -------- |
-| 1 | 1984 | Orwell | Fiction |
-| 2 | Dune | Herbert | Fiction |
-| 3 | Calculus | Stewart | Textbook |
+| 1      | 1984      | Orwell  | Fiction  |
+| 2      | Dune      | Herbert | Fiction  |
+| 3      | Calculus  | Stewart | Textbook |
 
 **Loans table** (PK: LoanID, FKs: MemberID, BookID):
 
-| LoanID | MemberID | BookID | DueDate |
+| LoanID | MemberID | BookID | DueDate    |
 | ------ | -------- | ------ | ---------- |
-| 1 | 1 | 1 | 2025-06-01 |
-| 2 | 1 | 2 | 2025-06-01 |
-| 3 | 2 | 3 | 2025-06-15 |
+| 1      | 1        | 1      | 2025-06-01 |
+| 2      | 1        | 2      | 2025-06-01 |
+| 3      | 2        | 3      | 2025-06-15 |
 
 Now each table is in 3NF. No redundant data, no update anomalies.
 
@@ -443,22 +445,22 @@ Now each table is in 3NF. No redundant data, no update anomalies.
 
 ### Client-Server vs Peer-to-Peer
 
-| Aspect | Client-Server | Peer-to-Peer |
+| Aspect         | Client-Server                              | Peer-to-Peer                                           |
 | -------------- | ------------------------------------------ | ------------------------------------------------------ |
-| Central server | Required; clients connect to it | No central server; all nodes are equal |
-| Scalability | High; server can be upgraded independently | Limited; each node handles both serving and requesting |
-| Security | Centralized control; easier to manage | Decentralized; harder to enforce security policies |
-| Reliability | Server failure affects all clients | More resilient; other peers continue operating |
+| Central server | Required; clients connect to it            | No central server; all nodes are equal                 |
+| Scalability    | High; server can be upgraded independently | Limited; each node handles both serving and requesting |
+| Security       | Centralized control; easier to manage      | Decentralized; harder to enforce security policies     |
+| Reliability    | Server failure affects all clients         | More resilient; other peers continue operating         |
 
 ### Three-Tier Architecture
 
 Three-tier architecture separates a system into three logical layers:
 
-| Tier | Responsibility | Technologies |
+| Tier         | Responsibility                                   | Technologies                      |
 | ------------ | ------------------------------------------------ | --------------------------------- |
-| Presentation | User interface, displaying data, accepting input | HTML/CSS/JS, React, mobile apps |
-| Application | Business logic, processing, rule enforcement | Python, Java, PHP, Node.js |
-| Data | Data storage and retrieval | MySQL, PostgreSQL, MongoDB, Redis |
+| Presentation | User interface, displaying data, accepting input | HTML/CSS/JS, React, mobile apps   |
+| Application  | Business logic, processing, rule enforcement     | Python, Java, PHP, Node.js        |
+| Data         | Data storage and retrieval                       | MySQL, PostgreSQL, MongoDB, Redis |
 
 **Example**: In an online store, the presentation tier renders the product page, the application
 Tier calculates pricing and handles checkout logic, and the data tier stores product inventory and
@@ -471,21 +473,21 @@ Order records.
 
 Cloud computing delivers computing services over the internet. The three main service models:
 
-| Model | Description | Example |
+| Model | Description                                             | Example                        |
 | ----- | ------------------------------------------------------- | ------------------------------ |
-| IaaS | Infrastructure as a Service — virtual machines, storage | AWS EC2, Google Compute Engine |
-| PaaS | Platform as a Service — development platform | Heroku, Google App Engine |
-| SaaS | Software as a Service — fully hosted application | Gmail, Google Docs, Salesforce |
+| IaaS  | Infrastructure as a Service — virtual machines, storage | AWS EC2, Google Compute Engine |
+| PaaS  | Platform as a Service — development platform            | Heroku, Google App Engine      |
+| SaaS  | Software as a Service — fully hosted application        | Gmail, Google Docs, Salesforce |
 
 With IaaS, the user manages the OS and application; with PaaS, only the application code; with SaaS,
 Nothing (everything is managed by the provider).
 
 ### Scalability
 
-| Type | Description | Advantage | Disadvantage |
+| Type       | Description                                                     | Advantage               | Disadvantage               |
 | ---------- | --------------------------------------------------------------- | ----------------------- | -------------------------- |
-| Vertical | Increase the capacity of a single machine (more CPU, RAM, disk) | Simpler to implement | Hardware has a hard limit |
-| Horizontal | Add more machines to handle the load | No single-machine limit | More complex to coordinate |
+| Vertical   | Increase the capacity of a single machine (more CPU, RAM, disk) | Simpler to implement    | Hardware has a hard limit  |
+| Horizontal | Add more machines to handle the load                            | No single-machine limit | More complex to coordinate |
 
 > **Exam tip**: Be prepared to justify an architecture choice for a given scenario. Consider the
 > number of users, budget, security requirements, and expected growth.
@@ -506,12 +508,12 @@ Centralized control is important for managing sensitive student data.
 
 Authentication verifies the identity of a user attempting to access the system.
 
-| Method | Description | Strengths | Weaknesses |
+| Method               | Description                                       | Strengths                                 | Weaknesses                        |
 | -------------------- | ------------------------------------------------- | ----------------------------------------- | --------------------------------- |
-| Passwords | Secret string known only to the user | Simple, universal | Vulnerable to guessing, reuse |
-| Biometrics | Physical characteristics: fingerprint, face, iris | Hard to forge, convenient | Privacy concerns, false positives |
-| Two-factor (2FA) | Requires two independent verification factors | Significantly reduces unauthorized access | Extra step for users |
-| Single Sign-On (SSO) | One login grants access to multiple systems | Reduces password fatigue | Single point of failure |
+| Passwords            | Secret string known only to the user              | Simple, universal                         | Vulnerable to guessing, reuse     |
+| Biometrics           | Physical characteristics: fingerprint, face, iris | Hard to forge, convenient                 | Privacy concerns, false positives |
+| Two-factor (2FA)     | Requires two independent verification factors     | Significantly reduces unauthorized access | Extra step for users              |
+| Single Sign-On (SSO) | One login grants access to multiple systems       | Reduces password fatigue                  | Single point of failure           |
 
 ### Authorization
 
@@ -526,10 +528,10 @@ And `edit_grades` permissions, while a Student role has only `view_own_grades`.
 
 ### Encryption
 
-| Type | Description | Example protocol |
+| Type       | Description                                  | Example protocol |
 | ---------- | -------------------------------------------- | ---------------- |
-| At rest | Protects data stored on disk or database | AES-256 |
-| In transit | Protects data as it travels across a network | TLS/SSL (HTTPS) |
+| At rest    | Protects data stored on disk or database     | AES-256          |
+| In transit | Protects data as it travels across a network | TLS/SSL (HTTPS)  |
 
 Both should be used together. Encryption at rest prevents unauthorized access if storage is
 Compromised; encryption in transit prevents man-in-the-middle attacks.
@@ -546,7 +548,7 @@ Attacker to manipulate query logic. Example: `user_input` = `' OR '1'='1` in
 **Prevention**:
 
 - **Parameterized queries** (prepared statements):
- `cursor.execute("SELECT * FROM users WHERE username = ?", (user_input,))`
+  `cursor.execute("SELECT * FROM users WHERE username = ?", (user_input,))`
 - **Stored procedures**: Predefined queries that accept parameters
 - **ORM frameworks**: Abstract database access and automatically parameterize queries
 
@@ -666,11 +668,11 @@ Doctor --(updated data)--&gt; [Update Patient Record] --(save updates)--&gt; [Pa
 
 A school stores the following unnormalized data about student enrollments:
 
-| StudentID | StudentName | CourseCode | CourseName | TeacherName | Room |
+| StudentID | StudentName | CourseCode | CourseName       | TeacherName | Room    |
 | --------- | ----------- | ---------- | ---------------- | ----------- | ------- |
-| 1001 | Alice | CS101 | Computer Science | Mr. Lee | Lab 3 |
-| 1001 | Alice | MA201 | Mathematics | Ms. Chen | Room 12 |
-| 1002 | Bob | CS101 | Computer Science | Mr. Lee | Lab 3 |
+| 1001      | Alice       | CS101      | Computer Science | Mr. Lee     | Lab 3   |
+| 1001      | Alice       | MA201      | Mathematics      | Ms. Chen    | Room 12 |
+| 1002      | Bob         | CS101      | Computer Science | Mr. Lee     | Lab 3   |
 
 (a) Explain why this table is not in 3NF.
 
@@ -690,23 +692,23 @@ On the primary key (StudentID + CourseCode).
 
 | StudentID | StudentName |
 | --------- | ----------- |
-| 1001 | Alice |
-| 1002 | Bob |
+| 1001      | Alice       |
+| 1002      | Bob         |
 
 **Courses** (PK: CourseCode):
 
-| CourseCode | CourseName | TeacherName | Room |
+| CourseCode | CourseName       | TeacherName | Room    |
 | ---------- | ---------------- | ----------- | ------- |
-| CS101 | Computer Science | Mr. Lee | Lab 3 |
-| MA201 | Mathematics | Ms. Chen | Room 12 |
+| CS101      | Computer Science | Mr. Lee     | Lab 3   |
+| MA201      | Mathematics      | Ms. Chen    | Room 12 |
 
 **Enrollments** (PK: StudentID + CourseCode):
 
 | StudentID | CourseCode |
 | --------- | ---------- |
-| 1001 | CS101 |
-| 1001 | MA201 |
-| 1002 | CS101 |
+| 1001      | CS101      |
+| 1001      | MA201      |
+| 1002      | CS101      |
 
 </details>
 

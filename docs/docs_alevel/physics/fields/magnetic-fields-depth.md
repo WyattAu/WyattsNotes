@@ -1,21 +1,22 @@
 ---
 title: Magnetic Fields
-description: "A-Level Physics notes on Magnetic Fields: 1. Magnetic Flux Density; 2. Force on a Moving Charge; 3. Circular Motion in a Magnetic Field."
+description:
+  'A-Level Physics notes on Magnetic Fields: 1. Magnetic Flux Density; 2. Force on a Moving Charge;
+  3. Circular Motion in a Magnetic Field.'
 date: 2026-04-23T00:00:00.000Z
 tags: [Physics, ALevel]
 categories: [Physics]
 slug: magnetic-fields-depth
 ---
+
 ## Magnetic Fields
 
-:::info
-Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4
-:::
+:::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4 :::
 
 ## 1. Magnetic Flux Density
 
-**Definition.** The magnetic flux density $B$ (also called the magnetic field strength in the context
-Of force calculations) is defined by the force on a current-carrying conductor:
+**Definition.** The magnetic flux density $B$ (also called the magnetic field strength in the
+context Of force calculations) is defined by the force on a current-carrying conductor:
 
 $$\boxed{B = \frac◆LB◆F◆RB◆◆LB◆IL\sin\theta◆RB◆}$$
 
@@ -50,11 +51,9 @@ For a charge moving perpendicular to the field ($\theta = 90^\circ$):
 
 $$\boxed{F = Bqv}$$
 
-:::warning
-Common Pitfall The magnetic force is always perpendicular to both $\mathbf{v}$ and
+:::warning Common Pitfall The magnetic force is always perpendicular to both $\mathbf{v}$ and
 $\mathbf{B}$. It does no work ($\mathbf{F} \cdot \mathbf{v} = 0$), so a magnetic field alone cannot
-Change the speed of a charged particle — only its direction.
-:::
+Change the speed of a charged particle — only its direction. :::
 
 ## 3. Circular Motion in a Magnetic Field
 
@@ -73,14 +72,14 @@ The period of revolution:
 
 $$T = \frac◆LB◆2\pi r◆RB◆◆LB◆v◆RB◆ = \frac◆LB◆2\pi m◆RB◆◆LB◆Bq◆RB◆$$
 
-This is **independent of $v$ and $r$**. A faster particle traces a proportionally larger circle in the
-Same time. The cyclotron frequency is:
+This is **independent of $v$ and $r$**. A faster particle traces a proportionally larger circle in
+the Same time. The cyclotron frequency is:
 
 $$f = \frac◆LB◆Bq◆RB◆◆LB◆2\pi m◆RB◆$$
 
 **Physical reason.** The magnetic force is $F = Bqv = mv^2/r$Giving $r = mv/(Bq)$. Both $r$ and $v$
-Increase proportionally, so $T = 2\pi r/v = 2\pi m/(Bq)$ is constant. This is the operating principle
-Of the cyclotron accelerator.
+Increase proportionally, so $T = 2\pi r/v = 2\pi m/(Bq)$ is constant. This is the operating
+principle Of the cyclotron accelerator.
 
 ### Kinetic Energy in Terms of Radius
 
@@ -95,8 +94,8 @@ Charge $+2e$ and mass $4m_p$. Compare their radii of curvature.
 
 $r_\alpha / r_p = \frac◆LB◆(4m_p)v/(B \cdot 2e)◆RB◆◆LB◆m_p v/(Be)◆RB◆ = \frac{4}{2} = 2$.
 
-The alpha particle has twice the radius. Despite having four times the mass, its double charge reduces
-The ratio to 2:1.
+The alpha particle has twice the radius. Despite having four times the mass, its double charge
+reduces The ratio to 2:1.
 
 </details>
 
@@ -118,9 +117,9 @@ $$\boxed{\mathrm{pitch} = v_\parallel\, T = \frac◆LB◆2\pi m v\cos\theta◆RB
 
 Crossed electric and magnetic fields select particles of a specific velocity.
 
-A particle with charge $q$ and velocity $v$ passes through a region where $\mathbf{E}$ and $\mathbf{B}$
-Are perpendicular. The electric force $F_E = qE$ acts in one direction; the magnetic force
-$F_B = Bqv$ acts in the opposite direction.
+A particle with charge $q$ and velocity $v$ passes through a region where $\mathbf{E}$ and
+$\mathbf{B}$ Are perpendicular. The electric force $F_E = qE$ acts in one direction; the magnetic
+force $F_B = Bqv$ acts in the opposite direction.
 
 For undeflected passage:
 
@@ -149,8 +148,8 @@ Where $N$ is the number of turns and $N\Phi$ is the flux linkage.
 
 ### Lenz's Law
 
-**Statement.** The direction of the induced current is such that it **opposes the change** in magnetic
-Flux that produced it.
+**Statement.** The direction of the induced current is such that it **opposes the change** in
+magnetic Flux that produced it.
 
 Lenz's law is the physical content of the minus sign in the full Faraday equation:
 
@@ -160,11 +159,8 @@ $$\varepsilon = -N\frac◆LB◆d\Phi◆RB◆◆LB◆dt◆RB◆$$
 Opposing it, a self-amplifying cycle would create energy from nothing. The opposition ensures that
 Work must be done to maintain the flux change, and this work appears as electrical energy.
 
-:::tip
-Tip
-Determine the field direction that would oppose this change, (3) use the right-hand grip rule to find
-The induced current direction.
-:::
+:::tip Tip Determine the field direction that would oppose this change, (3) use the right-hand grip
+rule to find The induced current direction. :::
 
 ### Motional e.m.f.
 
@@ -175,8 +171,8 @@ $$\boxed{\varepsilon = Blv}$$
 **Proof.** In time $dt$The rod sweeps area $l \cdot v\,dt$. Flux swept: $d\Phi = Blv\,dt$. By
 Faraday's law: $\varepsilon = d\Phi/dt = Blv$. $\square$
 
-**Alternative derivation.** Charges in the rod experience force $F = Bqv$ (by the magnetic force law).
-This separates charges, creating an electric field $E = Blv/l = Bv$ inside the rod, giving
+**Alternative derivation.** Charges in the rod experience force $F = Bqv$ (by the magnetic force
+law). This separates charges, creating an electric field $E = Blv/l = Bv$ inside the rod, giving
 $\varepsilon = Bvl$.
 
 ## 7. The AC Generator
@@ -202,8 +198,8 @@ A transformer consists of a primary coil and a secondary coil wound on a shared 
 
 $$\boxed{\frac{V_s}{V_p} = \frac{N_s}{N_p}}$$
 
-**Proof.** The same changing flux $\Phi$ threads both coils. By Faraday's law:
-$V_p = N_p|d\Phi/dt|$ and $V_s = N_s|d\Phi/dt|$. Dividing gives the result. $\square$
+**Proof.** The same changing flux $\Phi$ threads both coils. By Faraday's law: $V_p = N_p|d\Phi/dt|$
+and $V_s = N_s|d\Phi/dt|$. Dividing gives the result. $\square$
 
 For an ideal transformer (no energy losses), power is conserved:
 
@@ -211,17 +207,17 @@ $$V_p I_p = V_s I_s$$
 
 $$\frac{I_s}{I_p} = \frac{N_p}{N_s}$$
 
-A step-up transformer ($N_s \gt N_p$) increases voltage but decreases current. A step-down transformer
-($N_s \lt N_p$) decreases voltage but increases current.
+A step-up transformer ($N_s \gt N_p$) increases voltage but decreases current. A step-down
+transformer ($N_s \lt N_p$) decreases voltage but increases current.
 
 ### Energy Losses in Real Transformers
 
-| Loss mechanism | Cause | Mitigation |
-|---|---|---|
-| Eddy currents | Changing flux induces currents in the core | Laminated core (thin insulated sheets) |
-| Hysteresis | Repeated magnetisation/demagnetisation of core | Soft iron core (low coercivity) |
-| Resistive ($I^2R$) heating | Current in windings | Thick copper wire |
-| Flux leakage | Not all flux links both coils | Efficient core geometry |
+| Loss mechanism             | Cause                                          | Mitigation                             |
+| -------------------------- | ---------------------------------------------- | -------------------------------------- |
+| Eddy currents              | Changing flux induces currents in the core     | Laminated core (thin insulated sheets) |
+| Hysteresis                 | Repeated magnetisation/demagnetisation of core | Soft iron core (low coercivity)        |
+| Resistive ($I^2R$) heating | Current in windings                            | Thick copper wire                      |
+| Flux leakage               | Not all flux links both coils                  | Efficient core geometry                |
 
 ### Transformer Efficiency
 
@@ -249,7 +245,8 @@ When the current in a coil changes, the changing flux through the coil itself in
 
 $$\boxed{\varepsilon = -L\frac{dI}{dt}}$$
 
-Where $L$ is the self-inductance in henry (H). $1\ \mathrm{H} = 1\ \mathrm{Wb\,A^{-1}} = 1\ \mathrm{V\,s\,A^{-1}}$.
+Where $L$ is the self-inductance in henry (H).
+$1\ \mathrm{H} = 1\ \mathrm{Wb\,A^{-1}} = 1\ \mathrm{V\,s\,A^{-1}}$.
 
 ### Energy Stored in an Inductor
 
@@ -283,13 +280,13 @@ $$\boxed{\frac{F}{L} = \frac◆LB◆\mu_0 I_1 I_2◆RB◆◆LB◆2\pi d◆RB◆}
 - Same-direction currents: attractive
 - Opposite-direction currents: repulsive
 
-This can be determined by applying the right-hand grip rule to wire 1 (to find $\mathbf{B}_1$ at wire
-2) and Fleming's left-hand rule to wire 2 (to find the force direction).
+This can be determined by applying the right-hand grip rule to wire 1 (to find $\mathbf{B}_1$ at
+wire 2) and Fleming's left-hand rule to wire 2 (to find the force direction).
 
 ### Definition of the Ampere
 
-The ampere is defined such that two parallel wires 1 m apart, each carrying 1 A, experience a force of
-Exactly $2 \times 10^{-7}$ N m$^{-1}$.
+The ampere is defined such that two parallel wires 1 m apart, each carrying 1 A, experience a force
+of Exactly $2 \times 10^{-7}$ N m$^{-1}$.
 
 ## Problem Set
 
@@ -297,7 +294,9 @@ Exactly $2 \times 10^{-7}$ N m$^{-1}$.
 <summary>Problem 1</summary>
 A wire of length 0.30 m carries 5.0 A at $30^\circ$ to a field of 0.40 T. Calculate the force.
 
-**Answer.** $F = BIl\sin\theta = 0.40 \times 5.0 \times 0.30 \times \sin 30^\circ = 0.40 \times 5.0 \times 0.30 \times 0.5 = 0.30$ N.
+**Answer.**
+$F = BIl\sin\theta = 0.40 \times 5.0 \times 0.30 \times \sin 30^\circ = 0.40 \times 5.0 \times 0.30 \times 0.5 = 0.30$
+N.
 
 </details>
 
@@ -306,7 +305,9 @@ A wire of length 0.30 m carries 5.0 A at $30^\circ$ to a field of 0.40 T. Calcul
 An electron moves at $2.0 \times 10^6$ m s$^{-1}$ perpendicular to a 0.80 T field. Calculate the
 Radius of its circular path.
 
-**Answer.** $r = \frac{m_e v}{Be} = \frac◆LB◆9.11 \times 10^{-31} \times 2.0 \times 10^6◆RB◆◆LB◆0.80 \times 1.60 \times 10^{-19}◆RB◆ = 1.42 \times 10^{-5}$ m $= 14.2\,\mu$M.
+**Answer.**
+$r = \frac{m_e v}{Be} = \frac◆LB◆9.11 \times 10^{-31} \times 2.0 \times 10^6◆RB◆◆LB◆0.80 \times 1.60 \times 10^{-19}◆RB◆ = 1.42 \times 10^{-5}$
+m $= 14.2\,\mu$M.
 
 </details>
 
@@ -351,13 +352,13 @@ $\varepsilon_0 = NBA\omega = 100 \times 0.20 \times 0.005 \times 314 = 31.4$ V.
 <summary>Problem 7</summary>
 State Lenz's law and explain why it is a consequence of energy conservation.
 
-**Answer.** Lenz's law: the induced current flows in a direction such that its magnetic effect opposes
-The change in flux that produced it.
+**Answer.** Lenz's law: the induced current flows in a direction such that its magnetic effect
+opposes The change in flux that produced it.
 
 If the induced current reinforced the flux change, the increased flux would induce more current,
 Creating a positive feedback loop. This would generate electrical energy from nothing, violating
-Conservation of energy. The opposition ensures work must be done against the induced effects, and this
-Work is converted to electrical energy.
+Conservation of energy. The opposition ensures work must be done against the induced effects, and
+this Work is converted to electrical energy.
 
 </details>
 
@@ -366,7 +367,9 @@ Work is converted to electrical energy.
 Two parallel wires 10 cm apart carry 10 A each in the same direction. Calculate the force per unit
 Length.
 
-**Answer.** $\frac{F}{L} = \frac◆LB◆\mu_0 I_1 I_2◆RB◆◆LB◆2\pi d◆RB◆ = \frac◆LB◆4\pi \times 10^{-7} \times 10 \times 10◆RB◆◆LB◆2\pi \times 0.10◆RB◆ = 2.0 \times 10^{-4}$ N m$^{-1}$ (attractive).
+**Answer.**
+$\frac{F}{L} = \frac◆LB◆\mu_0 I_1 I_2◆RB◆◆LB◆2\pi d◆RB◆ = \frac◆LB◆4\pi \times 10^{-7} \times 10 \times 10◆RB◆◆LB◆2\pi \times 0.10◆RB◆ = 2.0 \times 10^{-4}$
+N m$^{-1}$ (attractive).
 
 </details>
 
@@ -378,11 +381,14 @@ Calculate the radius and pitch of the helical path.
 **Answer.** $v_\perp = 5.0 \times 10^6 \times \sin 30^\circ = 2.5 \times 10^6$ m s$^{-1}$.
 $v_\parallel = 5.0 \times 10^6 \times \cos 30^\circ = 4.33 \times 10^6$ m s$^{-1}$.
 
-$r = \frac◆LB◆m_p v_\perp◆RB◆◆LB◆Bq◆RB◆ = \frac◆LB◆1.67 \times 10^{-27} \times 2.5 \times 10^6◆RB◆◆LB◆0.40 \times 1.60 \times 10^{-19}◆RB◆ = 0.0653$ m $= 6.53$ cm.
+$r = \frac◆LB◆m_p v_\perp◆RB◆◆LB◆Bq◆RB◆ = \frac◆LB◆1.67 \times 10^{-27} \times 2.5 \times 10^6◆RB◆◆LB◆0.40 \times 1.60 \times 10^{-19}◆RB◆ = 0.0653$
+m $= 6.53$ cm.
 
-$T = 2\pi m_p/(Bq) = 2\pi \times 1.67 \times 10^{-27}/(0.40 \times 1.60 \times 10^{-19}) = 1.64 \times 10^{-7}$ s.
+$T = 2\pi m_p/(Bq) = 2\pi \times 1.67 \times 10^{-27}/(0.40 \times 1.60 \times 10^{-19}) = 1.64 \times 10^{-7}$
+s.
 
-$\mathrm{pitch} = v_\parallel T = 4.33 \times 10^6 \times 1.64 \times 10^{-7} = 0.710$ m $= 71.0$ cm.
+$\mathrm{pitch} = v_\parallel T = 4.33 \times 10^6 \times 1.64 \times 10^{-7} = 0.710$ m $= 71.0$
+cm.
 
 </details>
 
@@ -404,8 +410,7 @@ The positive sign confirms the inductor opposes the decrease in current.
 A transformer with 2000 primary turns and 100 secondary turns is connected to 240 V AC. The secondary
 Delivers 5.0 A. Calculate the secondary voltage, primary current, and the power.
 
-**Answer.** $V_s = 240 \times 100/2000 = 12$ V.
-$I_p = 5.0 \times 100/2000 = 0.25$ A.
+**Answer.** $V_s = 240 \times 100/2000 = 12$ V. $I_p = 5.0 \times 100/2000 = 0.25$ A.
 $P = V_s I_s = 12 \times 5.0 = 60$ W (ideal case).
 
 </details>

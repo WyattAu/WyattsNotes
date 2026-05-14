@@ -1,6 +1,8 @@
 ---
 title: Atomic Structure
-description: "Atomic Structure — 1. The Atom; 1.1 Subatomic Particles; 1.2 History of the Atom; 1.3 The Rutherford Scattering Experiment."
+description:
+  'Atomic Structure — 1. The Atom; 1.1 Subatomic Particles; 1.2 History of the Atom; 1.3 The
+  Rutherford Scattering Experiment.'
 date: 2026-04-14
 tags:
   - Chemistry
@@ -9,11 +11,10 @@ categories:
   - Chemistry
 slug: atomic-structure
 ---
+
 ## Atomic Structure
 
-:::info
-Board Coverage AQA Paper 1 | Edexcel Paper 1 | OCR A Gateway C1 | WJEC C1
-:::
+:::info Board Coverage AQA Paper 1 | Edexcel Paper 1 | OCR A Gateway C1 | WJEC C1 :::
 
 ## 1. The Atom
 
@@ -22,11 +23,11 @@ Board Coverage AQA Paper 1 | Edexcel Paper 1 | OCR A Gateway C1 | WJEC C1
 Atoms are the smallest particles of an element that can take part in chemical reactions. Each atom
 Consists of three subatomic particles:
 
-| Particle | Relative Mass | Relative Charge | Location |
+| Particle | Relative Mass            | Relative Charge | Location        |
 | -------- | ------------------------ | --------------- | --------------- |
-| Proton | 1 | +1 | Nucleus |
-| Neutron | 1 | 0 | Nucleus |
-| Electron | $\approx \frac{1}{1836}$ | -1 | Electron shells |
+| Proton   | 1                        | +1              | Nucleus         |
+| Neutron  | 1                        | 0               | Nucleus         |
+| Electron | $\approx \frac{1}{1836}$ | -1              | Electron shells |
 
 The mass of an atom is concentrated almost entirely in the nucleus. The nucleus occupies a tiny
 Fraction of the atomic volume -- roughly one part in $10^{12}$ to $10^{15}$ of the total volume.
@@ -55,8 +56,8 @@ $$Z = 11, \quad A = 11 + 12 = 23$$ $$\mathrm{Electron configuration: {} 2, 8, 1$
 Write its full notation.
 
 The atomic number $Z = 9$Which is fluorine. The mass number $A = 9 + 10 = 19$. The notation is
-$\prescript{19}{}{9}\mathrm{F{}$. Since the number of protons equals the number of electrons, this is a
-Neutral fluorine atom.
+$\prescript{19}{}{9}\mathrm{F{}$. Since the number of protons equals the number of electrons, this
+is a Neutral fluorine atom.
 
 **Worked Example.** An ion has 8 protons, 8 neutrons, and 10 electrons. Identify the ion and give
 Its charge.
@@ -67,13 +68,13 @@ $A = 8 + 8 = 16$.
 
 ### 1.2 History of the Atom
 
-| Scientist | Model | Key Discovery |
+| Scientist         | Model           | Key Discovery                                                        |
 | ----------------- | --------------- | -------------------------------------------------------------------- |
-| Dalton (1803) | Solid sphere | All matter is made of atoms; atoms of the same element are identical |
-| Thomson (1897) | Plum pudding | Discovered the electron; atoms contain smaller particles |
-| Rutherford (1909) | Nuclear | Gold foil experiment showed a small, dense, positive nucleus |
-| Bohr (1913) | Electron shells | Electrons orbit the nucleus in fixed energy levels |
-| Chadwick (1932) | With neutrons | Discovered the neutron, completing the modern picture |
+| Dalton (1803)     | Solid sphere    | All matter is made of atoms; atoms of the same element are identical |
+| Thomson (1897)    | Plum pudding    | Discovered the electron; atoms contain smaller particles             |
+| Rutherford (1909) | Nuclear         | Gold foil experiment showed a small, dense, positive nucleus         |
+| Bohr (1913)       | Electron shells | Electrons orbit the nucleus in fixed energy levels                   |
+| Chadwick (1932)   | With neutrons   | Discovered the neutron, completing the modern picture                |
 
 Each model superseded its predecessor because new experimental evidence forced a revision. Dalton's
 Model could not explain cathode rays (Thomson). Thomson's plum pudding model could not explain the
@@ -103,10 +104,10 @@ Implies a concentrated, massive, positively charged core -- the nucleus.
 <summary>Quantitative intuition for the Rutherford experiment</summary>
 
 The fraction of alpha particles scattered through an angle greater than $\theta$ is proportional to
-$\left(\frac{Z_1 Z_2 e^2}{4 E}\right)^2 \cot^2\!\left(\frac{\theta}{2}\right)$Where $Z_1$ and
-$Z_2$ are the atomic numbers of the alpha particle and gold nucleus, $e$ is the elementary charge,
-And $E$ is the kinetic energy of the alpha particle. This shows that large-angle scattering is
-Extremely rare -- consistent with a tiny nucleus.
+$\left(\frac{Z_1 Z_2 e^2}{4 E}\right)^2 \cot^2\!\left(\frac{\theta}{2}\right)$Where $Z_1$ and $Z_2$
+are the atomic numbers of the alpha particle and gold nucleus, $e$ is the elementary charge, And $E$
+is the kinetic energy of the alpha particle. This shows that large-angle scattering is Extremely
+rare -- consistent with a tiny nucleus.
 
 </details>
 
@@ -119,11 +120,11 @@ Extremely rare -- consistent with a tiny nucleus.
 
 **Example -- Carbon:**
 
-| Isotope | Protons | Neutrons | Electrons | Mass Number |
+| Isotope   | Protons | Neutrons | Electrons | Mass Number |
 | --------- | ------- | -------- | --------- | ----------- |
-| Carbon-12 | 6 | 6 | 6 | 12 |
-| Carbon-13 | 6 | 7 | 6 | 13 |
-| Carbon-14 | 6 | 8 | 6 | 14 |
+| Carbon-12 | 6       | 6        | 6         | 12          |
+| Carbon-13 | 6       | 7        | 6         | 13          |
+| Carbon-14 | 6       | 8        | 6         | 14          |
 
 All three species have $Z = 6$ (carbon), but their mass numbers differ because the neutron count
 Differs. The chemical behaviour is essentially identical because chemical reactions involve
@@ -142,13 +143,13 @@ Chemical state.
 
 ### 2.3 Uses of Radioactive Isotopes
 
-| Isotope | Use | Reason |
+| Isotope       | Use                             | Reason                                               |
 | ------------- | ------------------------------- | ---------------------------------------------------- |
-| Carbon-14 | Dating archaeological materials | Half-life of 5730 years matches human timescales |
-| Cobalt-60 | Radiotherapy for cancer | Emits gamma rays that kill cancer cells |
-| Iodine-131 | Treating thyroid conditions | Absorbed by the thyroid gland |
-| Americium-241 | Smoke detectors | Emits alpha particles; ionises air to detect smoke |
-| Uranium-235 | Nuclear fuel | Undergoes fission, releasing large amounts of energy |
+| Carbon-14     | Dating archaeological materials | Half-life of 5730 years matches human timescales     |
+| Cobalt-60     | Radiotherapy for cancer         | Emits gamma rays that kill cancer cells              |
+| Iodine-131    | Treating thyroid conditions     | Absorbed by the thyroid gland                        |
+| Americium-241 | Smoke detectors                 | Emits alpha particles; ionises air to detect smoke   |
+| Uranium-235   | Nuclear fuel                    | Undergoes fission, releasing large amounts of energy |
 
 The choice of isotope for a given application depends critically on its half-life. A medical tracer
 Needs a short half-life (hours to days) so that it does not remain radioactive in the body.
@@ -225,7 +226,7 @@ The sum of the first $n$ odd numbers equals $n^2$Which is a well-known result fr
 
 1. Electrons fill the lowest energy shell first
 2. Each shell must be full before the next one starts filling (except for transition metals at
- A-Level)
+   A-Level)
 3. At GCSE, the first three shells hold a maximum of 2, 8, and 8 electrons
 
 **Worked Example.** Write the electron configuration of calcium ($Z = 20$).
@@ -361,21 +362,21 @@ So B-10 is 19% and B-11 is 81%.
 
 ### 4.3 Summary Table: Relative Atomic Mass Calculations
 
-| Element | Isotopes | $A_r$ | Method |
+| Element   | Isotopes                              | $A_r$ | Method                         |
 | --------- | ------------------------------------- | ----- | ------------------------------ |
-| Chlorine | Cl-35 (75%), Cl-37 (25%) | 35.5 | Two-isotope weighted mean |
-| Magnesium | Mg-24 (79%), Mg-25 (10%), Mg-26 (11%) | 24.32 | Three-isotope weighted mean |
-| Boron | B-10 (19%), B-11 (81%) | 10.81 | Reverse calculation from $A_r$ |
+| Chlorine  | Cl-35 (75%), Cl-37 (25%)              | 35.5  | Two-isotope weighted mean      |
+| Magnesium | Mg-24 (79%), Mg-25 (10%), Mg-26 (11%) | 24.32 | Three-isotope weighted mean    |
+| Boron     | B-10 (19%), B-11 (81%)                | 10.81 | Reverse calculation from $A_r$ |
 
 ## 5. The Periodic Table
 
 ### 5.1 Development of the Periodic Table
 
-| Scientist | Contribution |
+| Scientist    | Contribution                                                                                         |
 | ------------ | ---------------------------------------------------------------------------------------------------- |
-| Newlands | Law of octaves (every 8th element had similar properties) -- limited to known elements |
-| Mendeleev | Arranged elements by atomic mass, leaving gaps for undiscovered elements; predicted their properties |
-| Modern table | Arranged by atomic number (proton number), not mass |
+| Newlands     | Law of octaves (every 8th element had similar properties) -- limited to known elements               |
+| Mendeleev    | Arranged elements by atomic mass, leaving gaps for undiscovered elements; predicted their properties |
+| Modern table | Arranged by atomic number (proton number), not mass                                                  |
 
 Mendeleev's genius was leaving gaps, which allowed him to predict the properties of undiscovered
 Elements (e.g. Gallium, germanium). When these elements were later discovered, their properties
@@ -391,7 +392,7 @@ $A_r
 
 - **Periods (rows):** Elements in the same period have the same number of electron shells
 - **Groups (columns):** Elements in the same group have the same number of outer electrons and
- similar chemical properties
+  similar chemical properties
 
 Groups 1 and 2 are the s-block. Groups 13--18 are the p-block. The transition metals (the central
 Block) are the d-block. At GCSE, you need not use this terminology, but recognising the pattern
@@ -399,19 +400,19 @@ Helps to explain why transition metals have variable oxidation states.
 
 ### 5.3 Group 1: The Alkali Metals
 
-| Property | Trend |
+| Property              | Trend                    |
 | --------------------- | ------------------------ |
-| Reactivity | Increases down the group |
+| Reactivity            | Increases down the group |
 | Melting/boiling point | Decreases down the group |
-| Density | Increases down the group |
-| Softness | Softer down the group |
+| Density               | Increases down the group |
+| Softness              | Softer down the group    |
 
 **Why does reactivity increase down Group 1?**
 
 As you descend the group, the outer electron is in a shell further from the nucleus. Even though the
 Nuclear charge increases, the extra inner shells provide significant shielding. The net effect is
-That the outer electron is less strongly held and is more lost. Since Group 1 metals react by
-Losing their outer electron, lower ionisation energy means greater reactivity.
+That the outer electron is less strongly held and is more lost. Since Group 1 metals react by Losing
+their outer electron, lower ionisation energy means greater reactivity.
 
 **Reactions with water:**
 
@@ -439,12 +440,12 @@ $$2\mathrm{Li{} + \mathrm{Cl{}_2 \to 2\mathrm{LiCl{}$$
 
 ### 5.4 Group 7: The Halogens
 
-| Property | Trend |
+| Property                           | Trend                      |
 | ---------------------------------- | -------------------------- |
-| Reactivity | Decreases down the group |
-| Melting/boiling point | Increases down the group |
-| Physical state at room temperature | Gas to liquid to solid |
-| Colour | Gets darker down the group |
+| Reactivity                         | Decreases down the group   |
+| Melting/boiling point              | Increases down the group   |
+| Physical state at room temperature | Gas to liquid to solid     |
+| Colour                             | Gets darker down the group |
 
 **Why does reactivity decrease down Group 7?**
 
@@ -508,14 +509,14 @@ And one 3d electron to form Fe$^{3+}$.
 
 ### 5.7 Comparing Group 1 Metals with Transition Metals
 
-| Property | Group 1 metals | Transition metals |
-| --------------------- | -------------- | ----------------------------------- |
-| Melting point | Relatively low | High |
-| Density | Low | High |
-| Reactivity with water | Very reactive | Much less reactive (or unreactive) |
-| Oxidation states | Always $1+$ | Variable (e.g. $2+$$3+$ for iron) |
-| Coloured compounds | No | Yes |
-| Catalytic activity | No | Common |
+| Property              | Group 1 metals | Transition metals                  |
+| --------------------- | -------------- | ---------------------------------- |
+| Melting point         | Relatively low | High                               |
+| Density               | Low            | High                               |
+| Reactivity with water | Very reactive  | Much less reactive (or unreactive) |
+| Oxidation states      | Always $1+$    | Variable (e.g. $2+$$3+$ for iron)  |
+| Coloured compounds    | No             | Yes                                |
+| Catalytic activity    | No             | Common                             |
 
 ### 5.8 Predicting Properties from Position in the Periodic Table
 
@@ -564,14 +565,14 @@ $$\mathrm{Cl{} + e^- \to \mathrm{Cl{}^-$$
 
 The charge of an ion is determined by its group number:
 
-| Group | Ions formed | Example |
-| ----- | ----------- | --------------------- |
-| 1 | $1+$ | Na$^+$K$^+$Li$^+$ |
-| 2 | $2+$ | Mg$^{2+}$Ca$^{2+}$ |
-| 3 | $3+$ | Al$^{3+}$ |
-| 5 | $3-$ | N$^{3-}$ |
-| 6 | $2-$ | O$^{2-}$S$^{2-}$ |
-| 7 | $1-$ | Cl$^-$Br$^-$I$^-$ |
+| Group | Ions formed | Example            |
+| ----- | ----------- | ------------------ |
+| 1     | $1+$        | Na$^+$K$^+$Li$^+$  |
+| 2     | $2+$        | Mg$^{2+}$Ca$^{2+}$ |
+| 3     | $3+$        | Al$^{3+}$          |
+| 5     | $3-$        | N$^{3-}$           |
+| 6     | $2-$        | O$^{2-}$S$^{2-}$   |
+| 7     | $1-$        | Cl$^-$Br$^-$I$^-$  |
 
 The pattern is clear: elements in groups 1--3 tend to lose electrons (forming positive ions whose
 Charge equals the group number), while elements in groups 5--7 tend to gain electrons (forming
@@ -601,10 +602,10 @@ Nucleus and is shielded by additional inner shells.
 **Exceptions:**
 
 - Between Group 2 and Group 3 (e.g. Mg to Al): the Group 3 electron is in a p-subshell which is
- slightly higher in energy than the s-subshell, so it is easier to remove.
+  slightly higher in energy than the s-subshell, so it is easier to remove.
 - Between Group 5 and Group 6 (e.g. P to S): the Group 5 element has a half-filled p-subshell which
- is relatively stable; in Group 6, pairing begins in the p-subshell, and the repulsion between
- paired electrons makes one of them easier to remove.
+  is relatively stable; in Group 6, pairing begins in the p-subshell, and the repulsion between
+  paired electrons makes one of them easier to remove.
 
 ### 7.2 Successive Ionisation Energies
 
@@ -640,45 +641,45 @@ This matches copper ($A_r \approx 63.5$). The isotopes are Cu-63 and Cu-65.
 ## Common Pitfalls
 
 - **Confusing atomic number and mass number.** Atomic number = protons; mass number = protons +
- neutrons. Remember: $A = Z + N$.
+  neutrons. Remember: $A = Z + N$.
 - **Forgetting that ions have different numbers of protons and electrons.** A positive ion has fewer
- electrons than protons. For Na$^+$There are 11 protons and 10 electrons.
+  electrons than protons. For Na$^+$There are 11 protons and 10 electrons.
 - **Stating that noble gases do not react at all.** They are very unreactive but not completely
- inert (xenon and krypton do form some compounds).
+  inert (xenon and krypton do form some compounds).
 - **Confusing the mass number of an ion with its atomic number.** An ion has the same atomic number
- as its atom but may have gained or lost electrons. The mass number does not change when an ion
- forms because electrons have negligible mass.
+  as its atom but may have gained or lost electrons. The mass number does not change when an ion
+  forms because electrons have negligible mass.
 - **Assuming all isotopes are radioactive.** Most elements have at least one stable isotope; only
- some isotopes are radioactive. Carbon-12 and carbon-13 are stable; carbon-14 is radioactive.
+  some isotopes are radioactive. Carbon-12 and carbon-13 are stable; carbon-14 is radioactive.
 - **Writing electron configurations incorrectly.** Always fill lower shells first; do not exceed the
- maximum for each shell. A common error is writing phosphorus as 2, 4, 9 instead of 2, 8, 5.
+  maximum for each shell. A common error is writing phosphorus as 2, 4, 9 instead of 2, 8, 5.
 - **Misidentifying trends in reactivity.** Group 1 reactivity increases down the group; Group 7
- reactivity decreases down the group. The reasons are different (easier to lose vs. Harder to gain
- electrons).
+  reactivity decreases down the group. The reasons are different (easier to lose vs. Harder to gain
+  electrons).
 - **Using the wrong half-life formula.** Remember that after $n$ half-lives, the remaining amount is
- $\frac{1}{2^n}$ of the original, not $\frac{1}{2n}$.
+  $\frac{1}{2^n}$ of the original, not $\frac{1}{2n}$.
 - **Confusing relative atomic mass with mass number.** $A_r$ is a weighted average of all isotopes;
- mass number is the total of protons and neutrons in a specific atom.
+  mass number is the total of protons and neutrons in a specific atom.
 - **Forgetting that the mass number does not change when an ion forms.** Ions lose or gain
- electrons, which have negligible mass. Only the charge changes.
+  electrons, which have negligible mass. Only the charge changes.
 
 ## Practice Questions
 
 1. An atom of element X has 16 protons, 16 neutrons, and 16 electrons. Another atom of element X has
- 16 protons, 18 neutrons, and 16 electrons. Explain the relationship between these two atoms.
+   16 protons, 18 neutrons, and 16 electrons. Explain the relationship between these two atoms.
 
 2. Neon has three isotopes: Ne-20 (90.5%), Ne-21 (0.3%), and Ne-22 (9.2%). Calculate the relative
- atomic mass of neon.
+   atomic mass of neon.
 
 3. Describe the plum pudding model and explain how Rutherford's gold foil experiment disproved it.
 
 4. Explain why potassium is more reactive than sodium, with reference to electron configuration.
 
 5. Write the electron configuration of sulfur ($Z = 16$). Explain what this tells you about its
- position in the periodic table.
+   position in the periodic table.
 
 6. Predict the products when fluorine is added to a solution of potassium chloride, and explain your
- reasoning.
+   reasoning.
 
 7. An ion has 10 electrons and 8 protons. Identify the ion and state its charge.
 
@@ -687,56 +688,62 @@ This matches copper ($A_r \approx 63.5$). The isotopes are Cu-63 and Cu-65.
 9. State three properties that are typical of transition metals and give an example of each.
 
 10. Explain why argon is placed after potassium in the modern periodic table, even though argon has
- a smaller relative atomic mass.
+    a smaller relative atomic mass.
 
 11. A radioactive isotope has a half-life of 6 hours. If a sample initially contains 40 g, how much
- remains after 24 hours?
+    remains after 24 hours?
 
 12. Explain why the first ionisation energy of aluminium is less than that of magnesium.
 
 13. Write the electron configuration of the following ions: (a) O$^{2-}$(b) Mg$^{2+}$(c) Cl$^-$.
 
 14. A sample of boron has $A_r = 10.81$. Boron has two isotopes, B-10 and B-11. Calculate the
- percentage abundance of each isotope.
+    percentage abundance of each isotope.
 
 15. Explain, in terms of electron configuration, why calcium reacts vigorously with water but copper
- does not.
+    does not.
 
 16. An element has successive ionisation energies: 738, 1451, 7733, and 10540 kJ/mol. Which group
- does this element belong to? Explain your reasoning.
+    does this element belong to? Explain your reasoning.
 
 17. The mass spectrum of magnesium shows three peaks at $m/z = 24$25, and 26 with relative
- abundances 79%, 10%, and 11%. Calculate the relative atomic mass of magnesium.
+    abundances 79%, 10%, and 11%. Calculate the relative atomic mass of magnesium.
 
 18. A sample of a radioactive isotope has an initial mass of 20 g. After 2 hours, 2.5 g remains.
- Calculate the half-life of the isotope.
+    Calculate the half-life of the isotope.
 
 19. Explain why the boiling point of helium ($-269^{\circ}\mathrm{C{}$) is much lower than that of
- radon ($-62^{\circ}\mathrm{C{}$).
+    radon ($-62^{\circ}\mathrm{C{}$).
 
 20. Write balanced equations for the reactions of: (a) lithium with water, (b) fluorine with
- potassium bromide solution, (c) calcium with oxygen.
+    potassium bromide solution, (c) calcium with oxygen.
 
 ## Practice Problems
 
 <details>
 <summary>Question 1: Electron configuration and reactivity</summary>
 
-Sodium has the electron configuration 2, 8, 1. Explain why sodium is highly reactive and describe what happens when sodium reacts with chlorine. Include the electron transfers in your answer.
+Sodium has the electron configuration 2, 8, 1. Explain why sodium is highly reactive and describe
+what happens when sodium reacts with chlorine. Include the electron transfers in your answer.
 
 </details>
 
 <details>
 <summary>Answer</summary>
 
-Sodium has one electron in its outer shell. It is highly reactive because it can lose this single outer electron to achieve a stable noble gas electron configuration (2, 8). When sodium reacts with chlorine, sodium loses its outer electron to form a $\mathrm{Na{}^+$ ion, and chlorine gains this electron to form a $\mathrm{Cl{}^-$ ion. The electrostatic attraction between these oppositely charged ions forms ionic bonds in sodium chloride ($\mathrm{NaCl{}$).
+Sodium has one electron in its outer shell. It is highly reactive because it can lose this single
+outer electron to achieve a stable noble gas electron configuration (2, 8). When sodium reacts with
+chlorine, sodium loses its outer electron to form a $\mathrm{Na{}^+$ ion, and chlorine gains this
+electron to form a $\mathrm{Cl{}^-$ ion. The electrostatic attraction between these oppositely
+charged ions forms ionic bonds in sodium chloride ($\mathrm{NaCl{}$).
 
 </details>
 
 <details>
 <summary>Question 2: Relative atomic mass calculation</summary>
 
-Chlorine has two isotopes: $\mathrm{Cl{}$-35 (75.8% abundance) and $\mathrm{Cl{}$-37 (24.2% abundance). Calculate the relative atomic mass of chlorine.
+Chlorine has two isotopes: $\mathrm{Cl{}$-35 (75.8% abundance) and $\mathrm{Cl{}$-37 (24.2%
+abundance). Calculate the relative atomic mass of chlorine.
 
 </details>
 
@@ -752,46 +759,64 @@ The relative atomic mass of chlorine is 35.5 (to 1 decimal place).
 <details>
 <summary>Question 3: Periodic trends</summary>
 
-Explain why the melting point of sodium is higher than that of neon, but lower than that of magnesium. Refer to the types of bonding in your answer.
+Explain why the melting point of sodium is higher than that of neon, but lower than that of
+magnesium. Refer to the types of bonding in your answer.
 
 </details>
 
 <details>
 <summary>Answer</summary>
 
-Neon is a noble gas with a full outer shell. It exists as individual atoms held together only by weak London forces, so it has a very low melting point. Sodium is a metal with metallic bonding (positive ions in a sea of delocalised electrons), which requires more energy to overcome. Magnesium has stronger metallic bonding than sodium because it has two delocalised electrons per atom (compared to one for sodium) and a smaller atomic radius, resulting in stronger electrostatic attraction and a higher melting point.
+Neon is a noble gas with a full outer shell. It exists as individual atoms held together only by
+weak London forces, so it has a very low melting point. Sodium is a metal with metallic bonding
+(positive ions in a sea of delocalised electrons), which requires more energy to overcome. Magnesium
+has stronger metallic bonding than sodium because it has two delocalised electrons per atom
+(compared to one for sodium) and a smaller atomic radius, resulting in stronger electrostatic
+attraction and a higher melting point.
 
 </details>
 
 <details>
 <summary>Question 4: Flame tests and emission spectra</summary>
 
-Describe how a flame test can be used to identify metal ions. Explain why different metals produce different flame colours.
+Describe how a flame test can be used to identify metal ions. Explain why different metals produce
+different flame colours.
 
 </details>
 
 <details>
 <summary>Answer</summary>
 
-A clean platinum or nichrome wire is dipped into a sample and held in a Bunsen flame. The flame colour is observed and compared to known colours: lithium (crimson), sodium (yellow), potassium (lilac), calcium (orange-red), copper (blue-green).
+A clean platinum or nichrome wire is dipped into a sample and held in a Bunsen flame. The flame
+colour is observed and compared to known colours: lithium (crimson), sodium (yellow), potassium
+(lilac), calcium (orange-red), copper (blue-green).
 
-Different metals produce different colours because when they are heated, their electrons absorb energy and move to higher energy levels. When the electrons fall back to lower levels, they emit light of specific wavelengths (colours) that are characteristic of that element. Each element has a unique arrangement of electron energy levels, so the wavelengths emitted are unique.
+Different metals produce different colours because when they are heated, their electrons absorb
+energy and move to higher energy levels. When the electrons fall back to lower levels, they emit
+light of specific wavelengths (colours) that are characteristic of that element. Each element has a
+unique arrangement of electron energy levels, so the wavelengths emitted are unique.
 
 </details>
 
 <details>
 <summary>Question 5: Group 1 and Group 7 trends</summary>
 
-Describe the trends in reactivity down Group 1 (alkali metals) and down Group 7 (halogens). Explain these trends in terms of atomic structure.
+Describe the trends in reactivity down Group 1 (alkali metals) and down Group 7 (halogens). Explain
+these trends in terms of atomic structure.
 
 </details>
 
 <details>
 <summary>Answer</summary>
 
-Group 1: Reactivity increases down the group. As you go down, the atomic radius increases and the outer electron is further from the nucleus, shielded by more inner shells. The attraction between the nucleus and the outer electron decreases, so it is easier to lose the outer electron. Cesium is more reactive than lithium.
+Group 1: Reactivity increases down the group. As you go down, the atomic radius increases and the
+outer electron is further from the nucleus, shielded by more inner shells. The attraction between
+the nucleus and the outer electron decreases, so it is easier to lose the outer electron. Cesium is
+more reactive than lithium.
 
-Group 7: Reactivity decreases down the group. As you go down, the atomic radius increases. Although there is a stronger nuclear charge, the increased distance and shielding make it harder for the atom to attract an additional electron. Fluorine is more reactive than iodine.
+Group 7: Reactivity decreases down the group. As you go down, the atomic radius increases. Although
+there is a stronger nuclear charge, the increased distance and shielding make it harder for the atom
+to attract an additional electron. Fluorine is more reactive than iodine.
 
 </details>
 

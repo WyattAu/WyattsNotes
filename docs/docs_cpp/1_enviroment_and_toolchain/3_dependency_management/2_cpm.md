@@ -1,6 +1,8 @@
 ---
 title: CPM.cmake
-description: "C++: CPM.cmake — Architectural Mechanism; The ABI Guarantee; Proof of Reproducibility Guarantee; Bootstrapping (Zero-Dependency Setup)."
+description:
+  'C++: CPM.cmake — Architectural Mechanism; The ABI Guarantee; Proof of Reproducibility Guarantee;
+  Bootstrapping (Zero-Dependency Setup).'
 date: 2025-12-11T04:34:32.158Z
 tags:
   - cpp
@@ -8,6 +10,7 @@ categories:
   - cpp
 slug: cpm-cmake
 ---
+
 **CPM.cmake** (CMake Package Manager) provides a lightweight abstraction over the standard CMake
 `FetchContent` module. It bridges the gap between manual vendoring (git submodules) and full-scale
 Package managers (vcpkg/Conan).
@@ -15,10 +18,10 @@ Package managers (vcpkg/Conan).
 In the context of this course, CPM.cmake is the preferred distribution model for:
 
 1. **Small-to-Medium Projects:** Where the overhead of configuring vcpkg manifests is unjustified.
-2. **Library Development:** Where the library itself has dependencies and aims to be 
- consumable by other CMake projects.
+2. **Library Development:** Where the library itself has dependencies and aims to be consumable by
+   other CMake projects.
 3. **Bleeding Edge Dependencies:** When a library update is required that has not yet propagated to
- vcpkg or Conan registries.
+   vcpkg or Conan registries.
 
 ## Architectural Mechanism
 
@@ -26,10 +29,10 @@ CPM.cmake operates strictly on the **Source-Based Model**.
 
 1. **Resolution:** It resolves dependencies via Git repositories (GitHub/GitLab) or URL archives.
 2. **Retrieval:** It checks a local cache directory. If the requested version is missing, it
- downloads the source.
+   downloads the source.
 3. **Integration:** It invokes `add_subdirectory()` on the downloaded source.
 4. **Graph Merger:** The dependency's CMake targets are added directly to the main project's build
- graph.
+   graph.
 
 ### The ABI Guarantee
 
@@ -52,14 +55,14 @@ Cache, any two machines produce bit-for-bit identical build outputs.
 **Proof sketch:**
 
 1. Each `CPMAddPackage(NAME foo GIT_TAG abc123)` resolves to a deterministic Git commit. A Git
- commit SHA uniquely identifies a tree of source files [Git internals].
+   commit SHA uniquely identifies a tree of source files [Git internals].
 2. CPM computes a cache key as `NAME + version/tag`. For a pinned tag, this key is invariant across
- machines.
+   machines.
 3. `FetchContent_Declare` downloads the archive for the pinned commit. The archive contents are
- deterministic (Git packs are content-addressed).
+   deterministic (Git packs are content-addressed).
 4. `add_subdirectory` compiles the source with the global CMake configuration. If the global
- configuration is identical (same compiler, same flags, same toolchain), the compiler produces
- identical object files.
+   configuration is identical (same compiler, same flags, same toolchain), the compiler produces
+   identical object files.
 5. The linker combines these object files deterministically given the same input order.
 
 $\therefore$ The output is deterministic given the same pinned versions and build configuration.
@@ -125,10 +128,10 @@ target_link_libraries(MyApplication PRIVATE fmt::fmt)
 1. **NAME:** The logical name used for caching.
 2. **GITHUB_REPOSITORY:** Shorthand for `https://github.com/user/repo`.
 3. **GIT_TAG:** A specific commit hash or tag. **Best Practice:** Always pin to a specific tag or
- hash for reproducibility. Prevent using `master` or `HEAD`.
+   hash for reproducibility. Prevent using `master` or `HEAD`.
 4. **OPTIONS:** These are passed as CMake Cache Variables to the dependency. This is critical for
- controlling the build (e.g., disabling examples, docs, and tests of dependencies to save build
- time).
+   controlling the build (e.g., disabling examples, docs, and tests of dependencies to save build
+   time).
 
 ## The CPM Source Cache (`CPM_SOURCE_CACHE`)
 
@@ -160,7 +163,7 @@ export CPM_SOURCE_CACHE=$HOME/.cache/CPM
 1. CMake checks `$CPM_SOURCE_CACHE/fmt/10.1.1`.
 2. If found, it uses `add_subdirectory` directly from that path.
 3. If not found, it downloads to that path, ensuring future builds (even of different projects)
- reuse the source.
+   reuse the source.
 
 ## Package Configuration Pattern
 
@@ -234,18 +237,18 @@ CPM.cmake is a single-file CMake script (approximately 2000 lines) that wraps `F
 
 1. **Parse arguments:** Extract `NAME``GITHUB_REPOSITORY``GIT_TAG``VERSION``OPTIONS`Etc.
 2. **Compute cache key:** Generate a deterministic key from `NAME` + version/tag. If `VERSION` is
- specified but not `GIT_TAG`CPM tries common tag prefixes (`v``V`No prefix) to map the
- version to a Git tag.
+   specified but not `GIT_TAG`CPM tries common tag prefixes (`v``V`No prefix) to map the version to
+   a Git tag.
 3. **Check local cache:** Look in `CPM_SOURCE_CACHE/<name>/<version>` and in
- `${CMAKE_BINARY_DIR}/_deps/<name>-<hash>/`.
+   `${CMAKE_BINARY_DIR}/_deps/<name>-<hash>/`.
 4. **Download if missing:** Use `FetchContent_Declare` + `FetchContent_Populate` to download the
- source from the Git repository or URL.
+   source from the Git repository or URL.
 5. **Set CMake options:** Apply `OPTIONS` as `-D<OPTION>` cache variables to the dependency's CMake
- configuration.
+   configuration.
 6. **Integrate:** Call `add_subdirectory()` on the fetched source, adding all targets to the main
- build graph.
-7. **Return target names:** Set `<name>_ADDED``<name>_SOURCE_DIR`And `<name>_BINARY_DIR`
- variables for the caller.
+   build graph.
+7. **Return target names:** Set `<name>_ADDED``<name>_SOURCE_DIR`And `<name>_BINARY_DIR` variables
+   for the caller.
 
 ### Lock Mechanism
 
@@ -267,10 +270,10 @@ Mitigation: Use commit SHAs instead of tags for critical dependencies, and use C
 CPM supports offline builds through two mechanisms:
 
 1. **Pre-populated cache:** If `CPM_SOURCE_CACHE` contains all dependencies, CPM uses them without
- network access. This is the recommended approach for CI and air-gapped environments.
+   network access. This is the recommended approach for CI and air-gapped environments.
 2. **`FETCHCONTENT_FULLY_DISCONNECTED`:** CMake 3.28+ supports this variable. When set to `ON`
- `FetchContent` skips all downloads. If a dependency is not in the cache, CMake fails with an
- error.
+   `FetchContent` skips all downloads. If a dependency is not in the cache, CMake fails with an
+   error.
 
 ```bash
 # Offline CI build
@@ -284,12 +287,12 @@ cmake --build build
 While efficient for small-to-medium graphs, CPM scales poorly when:
 
 1. **Diamond Dependencies Occur:** If Lib A wants `fmt 9.0` and Lib B wants `fmt 10.0`CPM attempts
- to enforce a single version ( the first one defined). Manual intervention via
- `CPMAddPackage` overrides is required to resolve the conflict via SAT solving logic manually.
+   to enforce a single version ( the first one defined). Manual intervention via `CPMAddPackage`
+   overrides is required to resolve the conflict via SAT solving logic manually.
 2. **Build Times Explode:** Since every dependency is built from source, a clean build of a project
- with 50 dependencies may take an unacceptable amount of time. (Mitigation: Use `ccache`.)
+   with 50 dependencies may take an unacceptable amount of time. (Mitigation: Use `ccache`.)
 3. **Non-CMake Projects:** CPM relies on the dependency having a `CMakeLists.txt`. For libraries
- using only Makefiles or premake, CPM cannot integrate them into the build graph.
+   using only Makefiles or premake, CPM cannot integrate them into the build graph.
 
 ### The Diamond Dependency Problem
 
@@ -304,16 +307,16 @@ my-app
 ```
 
 CPM processes `CPMAddPackage` calls in order. If `lib-a` declares `fmt 10.1.0` first, CPM adds it to
-The build graph. When `lib-b` subsequently declares `fmt 9.0.0`CPM detects the conflict and issues
-A warning but does **not** automatically resolve it. The first version wins.
+The build graph. When `lib-b` subsequently declares `fmt 9.0.0`CPM detects the conflict and issues A
+warning but does **not** automatically resolve it. The first version wins.
 
 Resolution strategies:
 
 1. **Manually pin a compatible version:** Declare `fmt 10.1.0` at the project root before including
- `lib-a` and `lib-b`So both subdirectories see the same version.
+   `lib-a` and `lib-b`So both subdirectories see the same version.
 2. **Use a CPM override variable:** `CPM_fmt_VERSION=10.1.0` overrides all `fmt` version requests.
 3. **Migrate to Conan/vcpkg:** These tools have SAT-based solvers that can find a compatible version
- automatically.
+   automatically.
 
 ## How CPM Downloads Packages at Configure Time
 
@@ -323,13 +326,13 @@ The following steps:
 ### Step-by-Step Download Process
 
 1. **Cache Check:** CPM computes a cache key from the package `NAME` and version/tag. It checks if
- the source already exists in `CPM_SOURCE_CACHE` or `_deps`.
+   the source already exists in `CPM_SOURCE_CACHE` or `_deps`.
 2. **Network Fetch:** If the source is not cached, CPM uses CMake's `FetchContent_Declare` to
- download from the specified URL or Git repository.
+   download from the specified URL or Git repository.
 3. **Version Validation:** For Git-based packages, CPM checks out the specified `GIT_TAG` (tag,
- branch, or commit SHA). For URL-based packages, it extracts the archive.
+   branch, or commit SHA). For URL-based packages, it extracts the archive.
 4. **`add_subdirectory`:** CPM calls `add_subdirectory` on the fetched source, integrating the
- dependency's CMake targets into the main build graph.
+   dependency's CMake targets into the main build graph.
 
 ```cmake
 # What CPMAddPackage does internally (simplified):
@@ -347,7 +350,7 @@ Packages are resolved before the first compilation command. This means:
 - Adding a new package requires re-running `cmake -S . -B build`.
 - Network failures at configure time block the entire build.
 - The configure step can be slow for projects with many dependencies (network latency + CMake
- parsing for each dependency).
+  parsing for each dependency).
 
 ## Version Pinning and Branch/Tag Support
 
@@ -507,46 +510,46 @@ rm -rf ~/.cache/CPM
 
 ## Comparison with vcpkg and Conan
 
-| Feature | CPM.cmake | vcpkg | Conan 2.x |
+| Feature                | CPM.cmake                | vcpkg                  | Conan 2.x                    |
 | :--------------------- | :----------------------- | :--------------------- | :--------------------------- |
-| **Setup complexity** | Single file include | Clone + bootstrap | pip install + profile config |
-| **Package source** | Any Git repo or URL | vcpkg registry (ports) | ConanCenter + custom remotes |
-| **Binary caching** | Not supported | NuGet / HTTP / files | Built-in remote support |
-| **Version resolution** | First-wins (no SAT) | Baseline + constraints | SAT solver (libsolv) |
-| **Transitive deps** | Via `add_subdirectory` | Managed by vcpkg | Managed by Conan |
-| **Cross-compilation** | Inherits host config | Triplets | Profiles |
-| **IDE support** | Native (CMake targets) | Good (toolchain file) | Good (generators) |
-| **Lock mechanism** | Pinned tags (in source) | `vcpkg.json` baseline | `conan.lock` file |
-| **Offline builds** | Pre-populated cache | Binary cache + ports | Pre-populated cache |
-| **Best for** | Small-to-medium projects | Any size, teams | Large teams, binary distro |
+| **Setup complexity**   | Single file include      | Clone + bootstrap      | pip install + profile config |
+| **Package source**     | Any Git repo or URL      | vcpkg registry (ports) | ConanCenter + custom remotes |
+| **Binary caching**     | Not supported            | NuGet / HTTP / files   | Built-in remote support      |
+| **Version resolution** | First-wins (no SAT)      | Baseline + constraints | SAT solver (libsolv)         |
+| **Transitive deps**    | Via `add_subdirectory`   | Managed by vcpkg       | Managed by Conan             |
+| **Cross-compilation**  | Inherits host config     | Triplets               | Profiles                     |
+| **IDE support**        | Native (CMake targets)   | Good (toolchain file)  | Good (generators)            |
+| **Lock mechanism**     | Pinned tags (in source)  | `vcpkg.json` baseline  | `conan.lock` file            |
+| **Offline builds**     | Pre-populated cache      | Binary cache + ports   | Pre-populated cache          |
+| **Best for**           | Small-to-medium projects | Any size, teams        | Large teams, binary distro   |
 
 ### When to Prefer CPM
 
 1. **Small projects with fewer than 10 dependencies:** The simplicity of a single
- `dependencies.cmake` file outweighs the benefits of a full package manager.
+   `dependencies.cmake` file outweighs the benefits of a full package manager.
 2. **Library development:** When your library is consumed by other CMake projects, CPM ensures zero
- external tooling requirements. The consumer just runs `cmake`.
+   external tooling requirements. The consumer just runs `cmake`.
 3. **Bleeding-edge or unreleased dependencies:** When you need a commit from `main` that has not
- been published to any registry.
+   been published to any registry.
 4. **Monorepo subprojects:** CPM can reference other directories in the same repository using
- `SOURCE_DIR`.
+   `SOURCE_DIR`.
 
 ### When to Prefer vcpkg
 
 1. **Projects with more than 15 dependencies:** The build time savings from binary caching become
- significant.
+   significant.
 2. **Team development:** Lockfile-equivalent (baseline) ensures all developers build against the
- same dependency versions.
+   same dependency versions.
 3. **Cross-platform projects:** Triplets provide consistent build configurations across platforms.
 
 ### When to Prefer Conan
 
 1. **Large teams with binary distribution requirements:** Conan's binary-first model eliminates
- redundant compilation across CI agents and developer machines.
+   redundant compilation across CI agents and developer machines.
 2. **Private package repositories:** Conan's remote architecture supports Artifactory, S3, and
- custom HTTP servers for proprietary libraries.
+   custom HTTP servers for proprietary libraries.
 3. **Complex cross-compilation:** Conan's build/host profile separation provides explicit control
- over cross-compilation scenarios.
+   over cross-compilation scenarios.
 
 ## Common CPM Packages
 
@@ -607,26 +610,26 @@ CPMAddPackage(
 ## Common Pitfalls
 
 1. **`add_subdirectory` conflicts:** If two dependencies both define a target with the same name
- (e.g., both vendor `fmt`), CMake will fail with "add_library cannot create target 'fmt' because
- another target with the same name already exists." Use `EXCLUDE_FROM_ALL` and manual integration,
- or ensure dependencies use namespaced targets (`fmt::fmt`).
+   (e.g., both vendor `fmt`), CMake will fail with "add_library cannot create target 'fmt' because
+   another target with the same name already exists." Use `EXCLUDE_FROM_ALL` and manual integration,
+   or ensure dependencies use namespaced targets (`fmt::fmt`).
 2. **CMake minimum version mismatch:** A dependency may require
- `cmake_minimum_required(VERSION 3.28)` while your project targets 3.20. CPM does not isolate
- CMake minimum version requirements. The highest minimum version across all dependencies wins.
+   `cmake_minimum_required(VERSION 3.28)` while your project targets 3.20. CPM does not isolate
+   CMake minimum version requirements. The highest minimum version across all dependencies wins.
 3. **Network failures in CI:** CPM requires network access during the configure step. In air-gapped
- CI environments, pre-populate `CPM_SOURCE_CACHE` or use `FETCHCONTENT_FULLY_DISCONNECTED=ON`
- (CMake 3.28+) to skip downloads.
+   CI environments, pre-populate `CPM_SOURCE_CACHE` or use `FETCHCONTENT_FULLY_DISCONNECTED=ON`
+   (CMake 3.28+) to skip downloads.
 4. **No lockfile means no guaranteed reproducibility:** Unlike vcpkg (baseline) or Conan (lockfile),
- CPM has no mechanism to guarantee that two machines resolve the same versions. Pin every
- dependency to a tag or SHA.
+   CPM has no mechanism to guarantee that two machines resolve the same versions. Pin every
+   dependency to a tag or SHA.
 5. **Dependency builds with wrong flags:** Because CPM uses `add_subdirectory`The dependency's
- `CMakeLists.txt` can modify global CMake state (e.g., `add_compile_options` without target
- scope). This can inject unwanted flags into your build. Always review dependency CMakeLists for
- global state mutations.
+   `CMakeLists.txt` can modify global CMake state (e.g., `add_compile_options` without target
+   scope). This can inject unwanted flags into your build. Always review dependency CMakeLists for
+   global state mutations.
 6. **Large monorepo clones:** CPM clones the entire Git repository history by default (shallow clone
- depth is 1, but some repos have large single commits). For large dependencies like Boost,
- consider using `URL` with a release archive instead of `GITHUB_REPOSITORY` to reduce download
- time.
+   depth is 1, but some repos have large single commits). For large dependencies like Boost,
+   consider using `URL` with a release archive instead of `GITHUB_REPOSITORY` to reduce download
+   time.
 
 ## CPM with ccache for Faster Rebuilds
 
@@ -662,27 +665,27 @@ endfunction()
 
 CPM is built on top of CMake's `FetchContent` module but adds several features:
 
-| Feature | FetchContent | CPM.cmake |
+| Feature                    | FetchContent                        | CPM.cmake                               |
 | :------------------------- | :---------------------------------- | :-------------------------------------- |
-| **Package declaration** | `FetchContent_Declare` | `CPMAddPackage` (single call) |
-| **Version-to-tag mapping** | Manual | Automatic (`v` prefix, etc.) |
-| **Source cache** | `_deps/` directory only | `CPM_SOURCE_CACHE` (shared) |
-| **GitHub shorthand** | None | `GITHUB_REPOSITORY` |
-| **GitLab shorthand** | None | `GITLAB_REPOSITORY` |
-| **Options passthrough** | Manual `set` before `MakeAvailable` | `OPTIONS` keyword |
-| **Offline mode** | Manual | Cache-based |
-| **Download-only mode** | Manual `FetchContent_Populate` | `DOWNLOAD_ONLY` keyword |
-| **Bootstrap** | Requires pre-existing script | Self-bootstrapping via `file(DOWNLOAD)` |
+| **Package declaration**    | `FetchContent_Declare`              | `CPMAddPackage` (single call)           |
+| **Version-to-tag mapping** | Manual                              | Automatic (`v` prefix, etc.)            |
+| **Source cache**           | `_deps/` directory only             | `CPM_SOURCE_CACHE` (shared)             |
+| **GitHub shorthand**       | None                                | `GITHUB_REPOSITORY`                     |
+| **GitLab shorthand**       | None                                | `GITLAB_REPOSITORY`                     |
+| **Options passthrough**    | Manual `set` before `MakeAvailable` | `OPTIONS` keyword                       |
+| **Offline mode**           | Manual                              | Cache-based                             |
+| **Download-only mode**     | Manual `FetchContent_Populate`      | `DOWNLOAD_ONLY` keyword                 |
+| **Bootstrap**              | Requires pre-existing script        | Self-bootstrapping via `file(DOWNLOAD)` |
 
 ## CPM Version Compatibility
 
 CPM.cmake versions follow semantic versioning. Key version milestones:
 
-| Version | Feature |
+| Version | Feature                                     |
 | :------ | :------------------------------------------ |
-| 0.38.x | Stable release, widely used |
-| 0.39.x | Added `FETCHCONTENT_SOURCE_DIR_*` overrides |
-| 0.40.x | Current stable, improved cache handling |
+| 0.38.x  | Stable release, widely used                 |
+| 0.39.x  | Added `FETCHCONTENT_SOURCE_DIR_*` overrides |
+| 0.40.x  | Current stable, improved cache handling     |
 
 When pinning the CPM version in the bootstrap script, use a specific version rather than `latest`:
 
@@ -693,11 +696,11 @@ set(CPM_DOWNLOAD_VERSION 0.40.0)
 ## See Also
 
 - [Dependency Resolution](1_dependency_architectures_models.md) -- Package manager taxonomy and
- version resolution
+  version resolution
 - [vcpkg](3_vcpkg.md) -- Full-featured alternative for larger projects
 - [Conan](4_conan.md) -- Binary-first package manager for teams
 - [Property Propagation](5_property_propagation.md) -- How `add_subdirectory` merges build
- properties
+  properties
 - [Binary Caching](6_binary_caching.md) -- Why CPM lacks binary caching and how to compensate
 
 ## Summary

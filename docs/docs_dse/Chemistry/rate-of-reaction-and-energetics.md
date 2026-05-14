@@ -1,6 +1,8 @@
 ---
 title: Chemistry - Rate of Reaction and Energetics
-description: "DSE Chemistry notes on rate of reaction and energetics covering collision theory, factors affecting rate, enthalpy changes, Hess's law, and calorimetry."
+description:
+  "DSE Chemistry notes on rate of reaction and energetics covering collision theory, factors
+  affecting rate, enthalpy changes, Hess's law, and calorimetry."
 date: 2026-04-23T00:00:00.000Z
 tags:
   - Chemistry
@@ -70,21 +72,22 @@ Activation energy. The catalyst is not consumed in the reaction and is regenerat
 
 $$E_a(\mathrm{with catalyst}) \lt E_a(\mathrm{without catalyst})$$
 
-| Factor | Effect on Rate | Effect on $E_a$ | Reason |
-| ---------------- | -------------- | --------------- | -------------------------------------- |
-| Concentration | Increases | No change | More collisions per unit time |
-| Temperature | Increases | No change | More particles have energy $\geq E_a$ |
-| Surface area | Increases | No change | More particles exposed for collisions |
-| Catalyst | Increases | Decreases | Lower energy barrier, more effective collisions |
+| Factor        | Effect on Rate | Effect on $E_a$ | Reason                                          |
+| ------------- | -------------- | --------------- | ----------------------------------------------- |
+| Concentration | Increases      | No change       | More collisions per unit time                   |
+| Temperature   | Increases      | No change       | More particles have energy $\geq E_a$           |
+| Surface area  | Increases      | No change       | More particles exposed for collisions           |
+| Catalyst      | Increases      | Decreases       | Lower energy barrier, more effective collisions |
 
 ### Worked Example 1
 
-Explain, in terms of collision theory, why increasing the temperature increases the rate of reaction.
+Explain, in terms of collision theory, why increasing the temperature increases the rate of
+reaction.
 
-At higher temperature, particles have greater average kinetic energy and move faster. This
-Increases the collision frequency. More importantly, a larger proportion of particles have kinetic
-Energy equal to or exceeding the activation energy $E_a$So a greater fraction of collisions are
-Effective. Both effects increase the rate of reaction.
+At higher temperature, particles have greater average kinetic energy and move faster. This Increases
+the collision frequency. More importantly, a larger proportion of particles have kinetic Energy
+equal to or exceeding the activation energy $E_a$So a greater fraction of collisions are Effective.
+Both effects increase the rate of reaction.
 
 ### Worked Example 2
 
@@ -101,20 +104,20 @@ Itself is not consumed and participates in the reaction without undergoing perma
 
 ### Common Methods
 
-| Method | Measurement | Example Reaction |
-| -------------------------- | --------------------------------------- | ------------------------------------- |
-| Mass loss | Decrease in mass over time | $\mathrm{CaCO_3} + \mathrm{HCl}$ (gas evolved) |
-| Gas volume collected | Volume of gas at regular intervals | $\mathrm{Mg} + \mathrm{HCl}$ |
-| Colour change | Using a colorimeter | Disappearance of coloured reactant |
-| Titration | Concentration at different times | $\mathrm{HCl} + \mathrm{NaOH}$ |
-| Conductivity | Change in electrical conductivity | Formation of ions |
+| Method               | Measurement                        | Example Reaction                               |
+| -------------------- | ---------------------------------- | ---------------------------------------------- |
+| Mass loss            | Decrease in mass over time         | $\mathrm{CaCO_3} + \mathrm{HCl}$ (gas evolved) |
+| Gas volume collected | Volume of gas at regular intervals | $\mathrm{Mg} + \mathrm{HCl}$                   |
+| Colour change        | Using a colorimeter                | Disappearance of coloured reactant             |
+| Titration            | Concentration at different times   | $\mathrm{HCl} + \mathrm{NaOH}$                 |
+| Conductivity         | Change in electrical conductivity  | Formation of ions                              |
 
 ### Interpreting Rate Graphs
 
 - **Concentration vs. Time:** The curve decreases (reactant) or increases (product). The gradient at
- any point gives the instantaneous rate. The rate decreases over time as reactants are consumed.
+  any point gives the instantaneous rate. The rate decreases over time as reactants are consumed.
 - **Volume vs. Time (gas collection):** Curve rises and eventually levels off (reaction complete).
- The initial gradient gives the initial rate.
+  The initial gradient gives the initial rate.
 
 ---
 
@@ -138,7 +141,8 @@ Examples: thermal decomposition, photosynthesis.
 
 ### Enthalpy Change ($\Delta H$)
 
-The enthalpy change is the heat energy change at constant pressure. It is measured in $\mathrm{kJ/mol}$.
+The enthalpy change is the heat energy change at constant pressure. It is measured in
+$\mathrm{kJ/mol}$.
 
 $$\Delta H = H_{\mathrm{products}} - H_{\mathrm{reactants}}$$
 
@@ -177,11 +181,11 @@ Energy
 
 ## Standard Enthalpy Changes
 
-| Type | Definition | Symbol |
-| ------------------------------- | --------------------------------------------------------------- | ---------- |
-| Standard enthalpy of combustion | Enthalpy change when 1 mol of substance burns completely in O$_2$ | $\Delta H_c^\circ$ |
-| Standard enthalpy of formation | Enthalpy change when 1 mol of compound forms from its elements | $\Delta H_f^\circ$ |
-| Standard enthalpy of neutralisation | Enthalpy change when 1 mol of water forms from neutralisation | $\Delta H_n^\circ$ |
+| Type                                | Definition                                                        | Symbol             |
+| ----------------------------------- | ----------------------------------------------------------------- | ------------------ |
+| Standard enthalpy of combustion     | Enthalpy change when 1 mol of substance burns completely in O$_2$ | $\Delta H_c^\circ$ |
+| Standard enthalpy of formation      | Enthalpy change when 1 mol of compound forms from its elements    | $\Delta H_f^\circ$ |
+| Standard enthalpy of neutralisation | Enthalpy change when 1 mol of water forms from neutralisation     | $\Delta H_n^\circ$ |
 
 By convention: $\Delta H_f^\circ$ of an element in its standard state = 0.
 
@@ -189,8 +193,8 @@ By convention: $\Delta H_f^\circ$ of an element in its standard state = 0.
 
 ## Hess's Law
 
-Hess's law states that the enthalpy change of a reaction is independent of the route taken,
-Provided the initial and final conditions are the same.
+Hess's law states that the enthalpy change of a reaction is independent of the route taken, Provided
+the initial and final conditions are the same.
 
 This means that if a reaction can be expressed as the sum of two or more other reactions, the
 Enthalpy change of the overall reaction equals the sum of the enthalpy changes of the constituent
@@ -221,6 +225,7 @@ Using standard enthalpies of formation, calculate $\Delta H$ for:
 $$\mathrm{CH_4}(g) + 2\mathrm{O_2}(g) \to \mathrm{CO_2}(g) + 2\mathrm{H_2O}(l)$$
 
 Given:
+
 - $\Delta H_f^\circ(\mathrm{CH_4}) = -75 \mathrm{ kJ/mol}$
 - $\Delta H_f^\circ(\mathrm{CO_2}) = -394 \mathrm{ kJ/mol}$
 - $\Delta H_f^\circ(\mathrm{H_2O}) = -286 \mathrm{ kJ/mol}$
@@ -245,15 +250,15 @@ $$\Delta H = \sum \mathrm{bond energies broken} - \sum \mathrm{bond energies for
 
 ### Average Bond Energies
 
-| Bond | Energy (kJ/mol) |
+| Bond             | Energy (kJ/mol) |
 | ---------------- | --------------- |
-| $\mathrm{C - C}$ | 348 |
-| $\mathrm{C = C}$ | 612 |
-| $\mathrm{C - H}$ | 412 |
-| $\mathrm{C - O}$ | 360 |
-| $\mathrm{O - H}$ | 463 |
-| $\mathrm{O = O}$ | 498 |
-| $\mathrm{H - H}$ | 436 |
+| $\mathrm{C - C}$ | 348             |
+| $\mathrm{C = C}$ | 612             |
+| $\mathrm{C - H}$ | 412             |
+| $\mathrm{C - O}$ | 360             |
+| $\mathrm{O - H}$ | 463             |
+| $\mathrm{O = O}$ | 498             |
+| $\mathrm{H - H}$ | 436             |
 
 ### Worked Example 5
 
@@ -263,7 +268,8 @@ $$\mathrm{CH_4} + 2\mathrm{O_2} \to \mathrm{CO_2} + 2\mathrm{H_2O}$$
 
 Bonds broken: $4 \times \mathrm{C - H} + 2 \times \mathrm{O = O}$
 
-Bonds formed: $2 \times \mathrm{C = O}$ (in $\mathrm{CO_2}$) + $4 \times \mathrm{O - H}$ (in $2\mathrm{H_2O}$)
+Bonds formed: $2 \times \mathrm{C = O}$ (in $\mathrm{CO_2}$) + $4 \times \mathrm{O - H}$ (in
+$2\mathrm{H_2O}$)
 
 Energy absorbed (bonds broken):
 
@@ -292,6 +298,7 @@ Surroundings ( water).
 $$q = mc\Delta T$$
 
 Where:
+
 - $q$ = heat energy transferred (J)
 - $m$ = mass of solution ($\mathrm{g}$)
 - $c$ = specific heat capacity of solution ($\approx 4.18 \mathrm{ J/(g \cdot K)}$ for water)
@@ -305,9 +312,10 @@ Use a positive sign for endothermic and a negative sign for exothermic reactions
 
 ### Worked Example 6
 
-$50.0 \mathrm{ cm^3}$ of $1.00 \mathrm{ mol/dm^3}$ $\mathrm{HCl}$ is mixed with $50.0 \mathrm{ cm^3}$
-Of $1.00 \mathrm{ mol/dm^3}$ $\mathrm{NaOH}$ in a polystyrene cup. The temperature rises from
-$20.0^\circ\mathrm{C}$ to $26.7^\circ\mathrm{C}$. Calculate the enthalpy of neutralisation.
+$50.0 \mathrm{ cm^3}$ of $1.00 \mathrm{ mol/dm^3}$ $\mathrm{HCl}$ is mixed with
+$50.0 \mathrm{ cm^3}$ Of $1.00 \mathrm{ mol/dm^3}$ $\mathrm{NaOH}$ in a polystyrene cup. The
+temperature rises from $20.0^\circ\mathrm{C}$ to $26.7^\circ\mathrm{C}$. Calculate the enthalpy of
+neutralisation.
 
 $$m = 50.0 + 50.0 = 100 \mathrm{ g}$$
 
@@ -340,31 +348,31 @@ Reverse activation energies are lowered, but $\Delta H$ remains unchanged.
 
 ## Common Pitfalls
 
-- Confusing temperature and concentration effects. Temperature affects the proportion of
- successful collisions (by changing the energy distribution); concentration affects only the
- collision frequency.
-- Assuming a catalyst changes $\Delta H$. A catalyst changes the rate but not the enthalpy change
- or the position of equilibrium.
+- Confusing temperature and concentration effects. Temperature affects the proportion of successful
+  collisions (by changing the energy distribution); concentration affects only the collision
+  frequency.
+- Assuming a catalyst changes $\Delta H$. A catalyst changes the rate but not the enthalpy change or
+  the position of equilibrium.
 - Forgetting that bond energy values are averages. They give estimated, not exact, enthalpy changes.
 - In calorimetry, forgetting to account for the total mass of the solution (both reactant volumes).
 - Using the wrong sign convention. Exothermic: $\Delta H \lt 0$. Endothermic: $\Delta H \gt 0$.
 - Confusing the activation energy with the enthalpy change. $E_a$ is the energy barrier; $\Delta H$
- is the overall energy difference between products and reactants.
+  is the overall energy difference between products and reactants.
 
 ---
 
 ## Summary Table
 
-| Concept | Key Point |
-| ------------------- | ------------------------------------------------------ |
-| Collision theory | Effective collisions need sufficient energy + correct orientation |
-| Activation energy | Minimum energy for a successful collision |
-| Catalyst | Lowers $E_a$Provides alternative pathway, not consumed |
-| Exothermic | $\Delta H \lt 0$Releases energy to surroundings |
-| Endothermic | $\Delta H \gt 0$Absorbs energy from surroundings |
-| Hess's law | $\Delta H$ is independent of the route |
-| Bond energy calc | $\Delta H = \sum E_{\mathrm{broken}} - \sum E_{\mathrm{formed}}$ |
-| Calorimetry | $q = mc\Delta T$ |
+| Concept           | Key Point                                                         |
+| ----------------- | ----------------------------------------------------------------- |
+| Collision theory  | Effective collisions need sufficient energy + correct orientation |
+| Activation energy | Minimum energy for a successful collision                         |
+| Catalyst          | Lowers $E_a$Provides alternative pathway, not consumed            |
+| Exothermic        | $\Delta H \lt 0$Releases energy to surroundings                   |
+| Endothermic       | $\Delta H \gt 0$Absorbs energy from surroundings                  |
+| Hess's law        | $\Delta H$ is independent of the route                            |
+| Bond energy calc  | $\Delta H = \sum E_{\mathrm{broken}} - \sum E_{\mathrm{formed}}$  |
+| Calorimetry       | $q = mc\Delta T$                                                  |
 
 ---
 
@@ -372,14 +380,18 @@ Reverse activation energies are lowered, but $\Delta H$ remains unchanged.
 
 ### Worked Example: Rate from a Graph
 
-The concentration of $\mathrm{H_2O_2}$ in a decomposition reaction was measured over time. At $t = 0$$[\mathrm{H_2O_2}] = 0.80 \mathrm{ mol/dm^3}$. At $t = 60 \mathrm{ s}$$[\mathrm{H_2O_2}] = 0.40 \mathrm{ mol/dm^3}$. Calculate the average rate of reaction in the first 60 seconds.
+The concentration of $\mathrm{H_2O_2}$ in a decomposition reaction was measured over time. At
+$t = 0$$[\mathrm{H_2O_2}] = 0.80 \mathrm{ mol/dm^3}$. At
+$t = 60 \mathrm{ s}$$[\mathrm{H_2O_2}] = 0.40 \mathrm{ mol/dm^3}$. Calculate the average rate of
+reaction in the first 60 seconds.
 
 <details>
 <summary>Solution</summary>
 
 $$\mathrm{Rate} = \frac{\Delta[\mathrm{H_2O_2}]}{\Delta t} = \frac{0.80 - 0.40}{60 - 0} = \frac{0.40}{60} = 0.00667 \mathrm{ mol/(dm^3 \cdot s)}$$
 
-The rate is positive when expressed in terms of the decrease in reactant concentration (the negative sign is often omitted when stated as "rate of disappearance").
+The rate is positive when expressed in terms of the decrease in reactant concentration (the negative
+sign is often omitted when stated as "rate of disappearance").
 
 </details>
 
@@ -396,7 +408,8 @@ Using the following standard enthalpies of combustion, calculate $\Delta H_f^\ci
 
 Target: $2\mathrm{C}(s) + 3\mathrm{H_2}(g) + \tfrac{1}{2}\mathrm{O_2}(g) \to \mathrm{C_2H_5OH}(l)$
 
-Using Hess's law: $\Delta H_f^\circ = \sum \Delta H_c^\circ(\mathrm{reactants}) - \Delta H_c^\circ(\mathrm{product})$
+Using Hess's law:
+$\Delta H_f^\circ = \sum \Delta H_c^\circ(\mathrm{reactants}) - \Delta H_c^\circ(\mathrm{product})$
 
 $$\Delta H_f^\circ = [2(-394) + 3(-286)] - [-1367]$$
 
@@ -408,7 +421,9 @@ $$\Delta H_f^\circ = -1646 + 1367 = -279 \mathrm{ kJ/mol}$$
 
 ### Worked Example: Calorimetry with Combustion
 
-$1.50 \mathrm{ g}$ of ethanol ($M = 46.0 \mathrm{ g/mol}$) is burned to heat $200 \mathrm{ g}$ of water from $20.0^\circ\mathrm{C}$ to $43.5^\circ\mathrm{C}$. Calculate the experimental enthalpy of combustion of ethanol.
+$1.50 \mathrm{ g}$ of ethanol ($M = 46.0 \mathrm{ g/mol}$) is burned to heat $200 \mathrm{ g}$ of
+water from $20.0^\circ\mathrm{C}$ to $43.5^\circ\mathrm{C}$. Calculate the experimental enthalpy of
+combustion of ethanol.
 
 <details>
 <summary>Solution</summary>
@@ -419,7 +434,8 @@ $$n(\mathrm{C_2H_5OH}) = \frac{1.50}{46.0} = 0.0326 \mathrm{ mol}$$
 
 $$\Delta H_c = -\frac{19.6}{0.0326} = -601 \mathrm{ kJ/mol}$$
 
-This is less exothermic than the literature value ($-1367 \mathrm{ kJ/mol}$) because significant heat is lost to the surroundings and the calorimeter in a school experiment.
+This is less exothermic than the literature value ($-1367 \mathrm{ kJ/mol}$) because significant
+heat is lost to the surroundings and the calorimeter in a school experiment.
 
 </details>
 
@@ -440,13 +456,15 @@ Temperature is unchanged.
 Acid by collecting the hydrogen gas produced. Suggest two ways to increase the initial rate.
 
 1. Increase the concentration of the hydrochloric acid (increases collision frequency).
-2. Use magnesium powder instead of magnesium ribbon (increases surface area, more particles exposed).
+2. Use magnesium powder instead of magnesium ribbon (increases surface area, more particles
+   exposed).
 
 **Question 3:** Calculate $\Delta H$ for the reaction:
 
 $$\mathrm{N_2}(g) + 3\mathrm{H_2}(g) \to 2\mathrm{NH_3}(g)$$
 
 Given:
+
 - $\Delta H_f^\circ(\mathrm{NH_3}) = -46 \mathrm{ kJ/mol}$
 - $\Delta H_f^\circ(\mathrm{N_2}) = 0 \mathrm{ kJ/mol}$
 - $\Delta H_f^\circ(\mathrm{H_2}) = 0 \mathrm{ kJ/mol}$
@@ -464,8 +482,8 @@ Bonds formed: $2 \times \mathrm{H - Cl}$
 $$\Delta H = (436 + 243) - 2(432) = 679 - 864 = -185 \mathrm{ kJ/mol}$$
 
 **Question 5:** When $4.00 \mathrm{ g}$ of $\mathrm{NaOH}$ ($M = 40 \mathrm{ g/mol}$) is dissolved
-In $200 \mathrm{ g}$ of water, the temperature increases from $25.0^\circ\mathrm{C}$ to $31.0^\circ\mathrm{C}$.
-Calculate the enthalpy of solution.
+In $200 \mathrm{ g}$ of water, the temperature increases from $25.0^\circ\mathrm{C}$ to
+$31.0^\circ\mathrm{C}$. Calculate the enthalpy of solution.
 
 $$q = mc\Delta T = 200 \times 4.18 \times 6.0 = 5016 \mathrm{ J} = 5.02 \mathrm{ kJ}$$
 
@@ -479,6 +497,7 @@ $$\Delta H = -5.02/0.100 = -50.2 \mathrm{ kJ/mol}$$
 Presence and absence of a catalyst.
 
 The diagram should show:
+
 - Two curves: uncatalysed (higher peak) and catalysed (lower peak)
 - Both curves starting at the same reactant energy level
 - Both curves ending at the same product energy level
@@ -491,20 +510,26 @@ The diagram should show:
 
 ## Problem Set
 
-**Problem 1:** Explain, using collision theory, why increasing the concentration of a reactant in solution increases the rate of reaction but does not change the activation energy.
+**Problem 1:** Explain, using collision theory, why increasing the concentration of a reactant in
+solution increases the rate of reaction but does not change the activation energy.
 
-*If you get this wrong, revise: Collision Theory and Factors Affecting Rate*
+_If you get this wrong, revise: Collision Theory and Factors Affecting Rate_
 
 <details>
 <summary>Solution</summary>
 
-Increasing concentration means more particles per unit volume, increasing the collision frequency. More collisions per unit time means a higher rate. However, the minimum energy required for a successful collision ($E_a$) depends on the nature of the reactants and the bonds being broken, not on how many particles are present. Therefore, $E_a$ is unchanged.
+Increasing concentration means more particles per unit volume, increasing the collision frequency.
+More collisions per unit time means a higher rate. However, the minimum energy required for a
+successful collision ($E_a$) depends on the nature of the reactants and the bonds being broken, not
+on how many particles are present. Therefore, $E_a$ is unchanged.
 
 </details>
 
-**Problem 2:** A student measures the rate of $\mathrm{Mg} + 2\mathrm{HCl} \to \mathrm{MgCl_2} + \mathrm{H_2}$ by collecting gas. Suggest three ways to increase the initial rate.
+**Problem 2:** A student measures the rate of
+$\mathrm{Mg} + 2\mathrm{HCl} \to \mathrm{MgCl_2} + \mathrm{H_2}$ by collecting gas. Suggest three
+ways to increase the initial rate.
 
-*If you get this wrong, revise: Factors Affecting the Rate of Reaction*
+_If you get this wrong, revise: Factors Affecting the Rate of Reaction_
 
 <details>
 <summary>Solution</summary>
@@ -518,13 +543,15 @@ Any three of the above.
 
 </details>
 
-**Problem 3:** Use standard enthalpies of formation to calculate $\Delta H$ for the combustion of propane:
+**Problem 3:** Use standard enthalpies of formation to calculate $\Delta H$ for the combustion of
+propane:
 
 $$\mathrm{C_3H_8}(g) + 5\mathrm{O_2}(g) \to 3\mathrm{CO_2}(g) + 4\mathrm{H_2O}(l)$$
 
-Given: $\Delta H_f^\circ(\mathrm{C_3H_8}) = -104 \mathrm{ kJ/mol}$$\Delta H_f^\circ(\mathrm{CO_2}) = -394 \mathrm{ kJ/mol}$$\Delta H_f^\circ(\mathrm{H_2O}) = -286 \mathrm{ kJ/mol}$.
+Given:
+$\Delta H_f^\circ(\mathrm{C_3H_8}) = -104 \mathrm{ kJ/mol}$$\Delta H_f^\circ(\mathrm{CO_2}) = -394 \mathrm{ kJ/mol}$$\Delta H_f^\circ(\mathrm{H_2O}) = -286 \mathrm{ kJ/mol}$.
 
-*If you get this wrong, revise: Hess's Law*
+_If you get this wrong, revise: Hess's Law_
 
 <details>
 <summary>Solution</summary>
@@ -539,16 +566,19 @@ $$\Delta H = -2326 + 104 = -2222 \mathrm{ kJ/mol}$$
 
 </details>
 
-**Problem 4:** Use bond energies to estimate $\Delta H$ for the reaction $\mathrm{N_2} + 3\mathrm{H_2} \to 2\mathrm{NH_3}$.
+**Problem 4:** Use bond energies to estimate $\Delta H$ for the reaction
+$\mathrm{N_2} + 3\mathrm{H_2} \to 2\mathrm{NH_3}$.
 
-Given: $\mathrm{N \equiv N} = 945 \mathrm{ kJ/mol}$$\mathrm{H - H} = 436 \mathrm{ kJ/mol}$$\mathrm{N - H} = 391 \mathrm{ kJ/mol}$.
+Given:
+$\mathrm{N \equiv N} = 945 \mathrm{ kJ/mol}$$\mathrm{H - H} = 436 \mathrm{ kJ/mol}$$\mathrm{N - H} = 391 \mathrm{ kJ/mol}$.
 
-*If you get this wrong, revise: Bond Energies*
+_If you get this wrong, revise: Bond Energies_
 
 <details>
 <summary>Solution</summary>
 
-Bonds broken: $1 \times \mathrm{N \equiv N} + 3 \times \mathrm{H - H} = 945 + 3(436) = 945 + 1308 = 2253 \mathrm{ kJ/mol}$
+Bonds broken:
+$1 \times \mathrm{N \equiv N} + 3 \times \mathrm{H - H} = 945 + 3(436) = 945 + 1308 = 2253 \mathrm{ kJ/mol}$
 
 Bonds formed: $6 \times \mathrm{N - H} = 6(391) = 2346 \mathrm{ kJ/mol}$
 
@@ -558,9 +588,12 @@ The reaction is exothermic (actual value: $-92 \mathrm{ kJ/mol}$).
 
 </details>
 
-**Problem 5:** When $50.0 \mathrm{ cm^3}$ of $1.00 \mathrm{ mol/dm^3}$ $\mathrm{HCl}$ is mixed with $50.0 \mathrm{ cm^3}$ of $1.00 \mathrm{ mol/dm^3}$ $\mathrm{NaOH}$ in a polystyrene cup, the temperature rises by $6.7^\circ\mathrm{C}$. Calculate the enthalpy of neutralisation per mole of water formed.
+**Problem 5:** When $50.0 \mathrm{ cm^3}$ of $1.00 \mathrm{ mol/dm^3}$ $\mathrm{HCl}$ is mixed with
+$50.0 \mathrm{ cm^3}$ of $1.00 \mathrm{ mol/dm^3}$ $\mathrm{NaOH}$ in a polystyrene cup, the
+temperature rises by $6.7^\circ\mathrm{C}$. Calculate the enthalpy of neutralisation per mole of
+water formed.
 
-*If you get this wrong, revise: Calorimetry*
+_If you get this wrong, revise: Calorimetry_
 
 <details>
 <summary>Solution</summary>
@@ -577,20 +610,29 @@ The negative sign indicates the reaction is exothermic.
 
 </details>
 
-**Problem 6:** Explain why a catalyst increases the rate of a reaction but does not change the enthalpy change of the reaction.
+**Problem 6:** Explain why a catalyst increases the rate of a reaction but does not change the
+enthalpy change of the reaction.
 
-*If you get this wrong, revise: Activation Energy Profile Diagrams*
+_If you get this wrong, revise: Activation Energy Profile Diagrams_
 
 <details>
 <summary>Solution</summary>
 
-A catalyst provides an alternative pathway with a lower activation energy, so more particles have energy $\geqslant E_a$ and a greater proportion of collisions are effective. However, the catalyst does not change the energy levels of the reactants or products -- it only changes the energy barrier between them. Since $\Delta H$ depends only on the initial and final energy levels, it remains unchanged.
+A catalyst provides an alternative pathway with a lower activation energy, so more particles have
+energy $\geqslant E_a$ and a greater proportion of collisions are effective. However, the catalyst
+does not change the energy levels of the reactants or products -- it only changes the energy barrier
+between them. Since $\Delta H$ depends only on the initial and final energy levels, it remains
+unchanged.
 
 </details>
 
-**Problem 7:** The enthalpy change for $\mathrm{C}(s) + \mathrm{O_2}(g) \to \mathrm{CO_2}(g)$ is $-394 \mathrm{ kJ/mol}$. The enthalpy change for $\mathrm{C}(s) + \tfrac{1}{2}\mathrm{O_2}(g) \to \mathrm{CO}(g)$ is $-111 \mathrm{ kJ/mol}$ and for $\mathrm{CO}(g) + \tfrac{1}{2}\mathrm{O_2}(g) \to \mathrm{CO_2}(g)$ is $-283 \mathrm{ kJ/mol}$. Show that these data are consistent with Hess's law.
+**Problem 7:** The enthalpy change for $\mathrm{C}(s) + \mathrm{O_2}(g) \to \mathrm{CO_2}(g)$ is
+$-394 \mathrm{ kJ/mol}$. The enthalpy change for
+$\mathrm{C}(s) + \tfrac{1}{2}\mathrm{O_2}(g) \to \mathrm{CO}(g)$ is $-111 \mathrm{ kJ/mol}$ and for
+$\mathrm{CO}(g) + \tfrac{1}{2}\mathrm{O_2}(g) \to \mathrm{CO_2}(g)$ is $-283 \mathrm{ kJ/mol}$. Show
+that these data are consistent with Hess's law.
 
-*If you get this wrong, revise: Hess's Law*
+_If you get this wrong, revise: Hess's Law_
 
 <details>
 <summary>Solution</summary>
@@ -601,15 +643,18 @@ $$\mathrm{C}(s) + \tfrac{1}{2}\mathrm{O_2}(g) \to \mathrm{CO}(g) \quad \Delta H_
 
 $$\mathrm{CO}(g) + \tfrac{1}{2}\mathrm{O_2}(g) \to \mathrm{CO_2}(g) \quad \Delta H_2 = -283 \mathrm{ kJ/mol}$$
 
-Overall: $\mathrm{C}(s) + \mathrm{O_2}(g) \to \mathrm{CO_2}(g) \quad \Delta H = -111 + (-283) = -394 \mathrm{ kJ/mol}$
+Overall:
+$\mathrm{C}(s) + \mathrm{O_2}(g) \to \mathrm{CO_2}(g) \quad \Delta H = -111 + (-283) = -394 \mathrm{ kJ/mol}$
 
 This matches the direct route, confirming Hess's law.
 
 </details>
 
-**Problem 8:** $2.00 \mathrm{ g}$ of $\mathrm{CaO}$ is added to $100 \mathrm{ g}$ of water. The temperature rises from $20.0^\circ\mathrm{C}$ to $35.5^\circ\mathrm{C}$. Calculate the enthalpy of solution of $\mathrm{CaO}$.
+**Problem 8:** $2.00 \mathrm{ g}$ of $\mathrm{CaO}$ is added to $100 \mathrm{ g}$ of water. The
+temperature rises from $20.0^\circ\mathrm{C}$ to $35.5^\circ\mathrm{C}$. Calculate the enthalpy of
+solution of $\mathrm{CaO}$.
 
-*If you get this wrong, revise: Calorimetry*
+_If you get this wrong, revise: Calorimetry_
 
 <details>
 <summary>Solution</summary>
@@ -624,33 +669,40 @@ The dissolution of $\mathrm{CaO}$ is highly exothermic.
 
 </details>
 
-**Problem 9:** Explain why the rate of reaction between magnesium and dilute hydrochloric acid decreases as the reaction proceeds.
+**Problem 9:** Explain why the rate of reaction between magnesium and dilute hydrochloric acid
+decreases as the reaction proceeds.
 
-*If you get this wrong, revise: Measuring Reaction Rate*
+_If you get this wrong, revise: Measuring Reaction Rate_
 
 <details>
 <summary>Solution</summary>
 
-As the reaction proceeds, the concentration of the reactants ($\mathrm{HCl}$ and $\mathrm{Mg}$) decreases. Lower concentration means fewer particles per unit volume and fewer collisions per unit time. The rate of reaction is proportional to the collision frequency, so the rate decreases. This is seen as a decreasing gradient on a concentration-vs-time graph.
+As the reaction proceeds, the concentration of the reactants ($\mathrm{HCl}$ and $\mathrm{Mg}$)
+decreases. Lower concentration means fewer particles per unit volume and fewer collisions per unit
+time. The rate of reaction is proportional to the collision frequency, so the rate decreases. This
+is seen as a decreasing gradient on a concentration-vs-time graph.
 
 </details>
 
-**Problem 10:** Use bond energies to estimate $\Delta H$ for: $\mathrm{CH_4} + \mathrm{Cl_2} \to \mathrm{CH_3Cl} + \mathrm{HCl}$
+**Problem 10:** Use bond energies to estimate $\Delta H$ for:
+$\mathrm{CH_4} + \mathrm{Cl_2} \to \mathrm{CH_3Cl} + \mathrm{HCl}$
 
-Given: $\mathrm{C - H} = 412$$\mathrm{Cl - Cl} = 243$$\mathrm{C - Cl} = 328$$\mathrm{H - Cl} = 432 \mathrm{ kJ/mol}$.
+Given:
+$\mathrm{C - H} = 412$$\mathrm{Cl - Cl} = 243$$\mathrm{C - Cl} = 328$$\mathrm{H - Cl} = 432 \mathrm{ kJ/mol}$.
 
-*If you get this wrong, revise: Bond Energies*
+_If you get this wrong, revise: Bond Energies_
 
 <details>
 <summary>Solution</summary>
 
-Bonds broken: $1 \times \mathrm{C - H} + 1 \times \mathrm{Cl - Cl} = 412 + 243 = 655 \mathrm{ kJ/mol}$
+Bonds broken:
+$1 \times \mathrm{C - H} + 1 \times \mathrm{Cl - Cl} = 412 + 243 = 655 \mathrm{ kJ/mol}$
 
-Bonds formed: $1 \times \mathrm{C - Cl} + 1 \times \mathrm{H - Cl} = 328 + 432 = 760 \mathrm{ kJ/mol}$
+Bonds formed:
+$1 \times \mathrm{C - Cl} + 1 \times \mathrm{H - Cl} = 328 + 432 = 760 \mathrm{ kJ/mol}$
 
 $$\Delta H = 655 - 760 = -105 \mathrm{ kJ/mol}$$
 
 The reaction is exothermic.
 
 </details>
-

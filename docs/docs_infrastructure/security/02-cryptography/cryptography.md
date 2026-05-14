@@ -1,10 +1,13 @@
 ---
 id: cryptography
 title: Cryptography
-description: "Cryptography — Foundations; Cryptographic Primitives; Kerckhoffs's Principle; Symmetric Encryption with worked examples and exam-style questions."
+description:
+  "Cryptography — Foundations; Cryptographic Primitives; Kerckhoffs's Principle; Symmetric
+  Encryption with worked examples and exam-style questions."
 slug: cryptography
 sidebar_position: 3
 ---
+
 ## Foundations
 
 Cryptography is the mathematical science of securing communication and data. It is not a security
@@ -13,15 +16,15 @@ Confidentiality, integrity, authentication, and non-repudiation.
 
 ### Cryptographic Primitives
 
-| Primitive | Purpose | Examples |
+| Primitive                | Purpose                            | Examples               |
 | ------------------------ | ---------------------------------- | ---------------------- |
-| Symmetric encryption | Confidentiality (high-speed) | AES, ChaCha20 |
-| Asymmetric encryption | Confidentiality (key exchange) | RSA, ECIES |
-| Hash functions | Integrity, password storage | SHA-256, SHA-3, bcrypt |
-| Message authentication | Integrity + authenticity | HMAC, Poly1305 |
-| Digital signatures | Non-repudiation, authenticity | RSA-PSS, ECDSA, EdDSA |
-| Key exchange | Secure shared secret establishment | Diffie-Hellman, ECDH |
-| Random number generation | Key material, nonces, salts | `/dev/urandom`CSPRNG |
+| Symmetric encryption     | Confidentiality (high-speed)       | AES, ChaCha20          |
+| Asymmetric encryption    | Confidentiality (key exchange)     | RSA, ECIES             |
+| Hash functions           | Integrity, password storage        | SHA-256, SHA-3, bcrypt |
+| Message authentication   | Integrity + authenticity           | HMAC, Poly1305         |
+| Digital signatures       | Non-repudiation, authenticity      | RSA-PSS, ECDSA, EdDSA  |
+| Key exchange             | Secure shared secret establishment | Diffie-Hellman, ECDH   |
+| Random number generation | Key material, nonces, salts        | `/dev/urandom`CSPRNG   |
 
 ### Kerckhoffs's Principle
 
@@ -45,12 +48,12 @@ Magnitude faster than asymmetric encryption) and is the standard for bulk data e
 AES is a block cipher selected by NIST in 2001 (FIPS 197) as the successor to DES. It operates on
 128-bit blocks with key sizes of 128, 192, or 256 bits.
 
-| Parameter | AES-128 | AES-192 | AES-256 |
+| Parameter   | AES-128  | AES-192  | AES-256         |
 | ----------- | -------- | -------- | --------------- |
-| Key size | 128 bits | 192 bits | 256 bits |
-| Rounds | 10 | 12 | 14 |
-| Security | 128-bit | 192-bit | 256-bit |
-| Performance | Fastest | Moderate | Slightly slower |
+| Key size    | 128 bits | 192 bits | 256 bits        |
+| Rounds      | 10       | 12       | 14              |
+| Security    | 128-bit  | 192-bit  | 256-bit         |
+| Performance | Fastest  | Moderate | Slightly slower |
 
 AES is a substitution-permutation network (SPN). Each round applies:
 
@@ -91,7 +94,7 @@ Ciphertext Block 1 + Block 2 → XOR → Encrypt → Ciphertext Block 2
 CBC requires:
 
 - **IV must be unpredictable** (random, not a counter). Reusing an IV with the same key is
- catastrophic.
+  catastrophic.
 - **Padding** ( PKCS#7) to align plaintext to block boundaries.
 - Decryption is parallelizable; encryption is sequential.
 
@@ -115,7 +118,7 @@ CTR properties:
 - **Fully parallelizable**: Both encryption and decryption can be parallelized.
 - **Random access**: Any block can be decrypted independently.
 - **Nonce requirements**: The counter value must never repeat for the same key. A nonce (96 bits)
- combined with a block counter (32 bits) is standard (NIST SP 800-38A).
+  combined with a block counter (32 bits) is standard (NIST SP 800-38A).
 
 **Vulnerability**: CTR provides confidentiality only. It provides no integrity. If an attacker flips
 A bit in the ciphertext, the corresponding plaintext bit is flipped and the modification is
@@ -143,8 +146,8 @@ GCM properties:
 
 GCM has a critical nonce reuse vulnerability. If the same nonce is used twice with the same key, the
 Authentication tag can be forged and confidentiality of both messages is compromised. Use a 96-bit
-Random nonce (the probability of collision with $2^{32}$ messages is approximately $2^{-32}$Which
-Is acceptable) or a deterministic nonce construction (NIST SP 800-38D).
+Random nonce (the probability of collision with $2^{32}$ messages is approximately $2^{-32}$Which Is
+acceptable) or a deterministic nonce construction (NIST SP 800-38D).
 
 :::
 
@@ -154,14 +157,14 @@ ChaCha20-Poly1305 is an AEAD construction that is competitive with AES-GCM but d
 Hardware acceleration. It is the default in TLS 1.3 when AES-NI is not available (e.g., mobile
 Devices).
 
-| Property | AES-256-GCM | ChaCha20-Poly1305 |
+| Property       | AES-256-GCM      | ChaCha20-Poly1305   |
 | -------------- | ---------------- | ------------------- |
-| Key size | 256 bits | 256 bits |
-| Nonce size | 96 bits | 96 bits |
-| Tag size | 128 bits | 128 bits |
-| Hardware accel | AES-NI | None required |
+| Key size       | 256 bits         | 256 bits            |
+| Nonce size     | 96 bits          | 96 bits             |
+| Tag size       | 128 bits         | 128 bits            |
+| Hardware accel | AES-NI           | None required       |
 | Software speed | Fast with AES-NI | Fast without AES-NI |
-| Adoption | Ubiquitous | TLS 1.3, WireGuard |
+| Adoption       | Ubiquitous       | TLS 1.3, WireGuard  |
 
 ### Key Management
 
@@ -191,11 +194,11 @@ Encryption at the cost of significantly slower performance.
 RSA (Rivest-Shamir-Adleman, 1977) is based on the computational difficulty of factoring the product
 Of two large prime numbers.
 
-| Parameter | Recommended Value |
+| Parameter     | Recommended Value                           |
 | ------------- | ------------------------------------------- |
-| Key size | 2048 bits minimum, 4096 preferred |
-| Padding | OAEP (for encryption), PSS (for signatures) |
-| Hash function | SHA-256 or SHA-384 |
+| Key size      | 2048 bits minimum, 4096 preferred           |
+| Padding       | OAEP (for encryption), PSS (for signatures) |
+| Hash function | SHA-256 or SHA-384                          |
 
 RSA encryption with OAEP:
 
@@ -203,21 +206,21 @@ $$
 \mathrm{Ciphertext{} = (\mathrm{Plaintext{} \| \mathrm{Label{})^{e} \mod n
 $$
 
-Where $e$ is the public exponent ( 65537) and $n$ is the modulus (product of two primes $p$
-And $q$).
+Where $e$ is the public exponent ( 65537) and $n$ is the modulus (product of two primes $p$ And
+$q$).
 
 **Key sizes and security levels:**
 
 | RSA Key Size | Equivalent Symmetric Security |
 | ------------ | ----------------------------- |
-| 1024 bits | 80 bits (broken) |
-| 2048 bits | 112 bits |
-| 3072 bits | 128 bits |
-| 4096 bits | 150 bits |
+| 1024 bits    | 80 bits (broken)              |
+| 2048 bits    | 112 bits                      |
+| 3072 bits    | 128 bits                      |
+| 4096 bits    | 150 bits                      |
 
 RSA key generation is expensive ($O(k^3)$ for key size $k$) and RSA encryption/decryption is orders
-Of magnitude slower than AES. RSA is used to encrypt a symmetric key (key encapsulation),
-Not to encrypt bulk data directly.
+Of magnitude slower than AES. RSA is used to encrypt a symmetric key (key encapsulation), Not to
+encrypt bulk data directly.
 
 ### Elliptic Curve Cryptography (ECC)
 
@@ -226,20 +229,20 @@ Equivalent security to RSA with much smaller key sizes.
 
 | Security Level | RSA Key Size | ECC Key Size | Ratio |
 | -------------- | ------------ | ------------ | ----- |
-| 80 bits | 1024 bits | 160 bits | 6.4x |
-| 128 bits | 3072 bits | 256 bits | 12x |
-| 192 bits | 7680 bits | 384 bits | 20x |
-| 256 bits | 15360 bits | 521 bits | 29.5x |
+| 80 bits        | 1024 bits    | 160 bits     | 6.4x  |
+| 128 bits       | 3072 bits    | 256 bits     | 12x   |
+| 192 bits       | 7680 bits    | 384 bits     | 20x   |
+| 256 bits       | 15360 bits   | 521 bits     | 29.5x |
 
 The most commonly used curves:
 
-| Curve | Key Size | Use Case | Standard |
+| Curve             | Key Size | Use Case                          | Standard            |
 | ----------------- | -------- | --------------------------------- | ------------------- |
-| P-256 (secp256r1) | 256 bits | TLS, JWT, general use | NIST |
-| P-384 (secp384r1) | 384 bits | Higher security requirements | NIST |
-| X25519 | 256 bits | Key exchange (Diffie-Hellman) | RFC 7748 |
-| Ed25519 | 256 bits | Digital signatures | RFC 8032 |
-| Curve25519 | 256 bits | Modern alternative to NIST curves | Daniel J. Bernstein |
+| P-256 (secp256r1) | 256 bits | TLS, JWT, general use             | NIST                |
+| P-384 (secp384r1) | 384 bits | Higher security requirements      | NIST                |
+| X25519            | 256 bits | Key exchange (Diffie-Hellman)     | RFC 7748            |
+| Ed25519           | 256 bits | Digital signatures                | RFC 8032            |
+| Curve25519        | 256 bits | Modern alternative to NIST curves | Daniel J. Bernstein |
 
 :::info
 
@@ -296,22 +299,22 @@ A cryptographic hash function maps arbitrary-length input to a fixed-length outp
 Following properties:
 
 1. **Preimage resistance**: Given hash $h$It is infeasible to find $m$ such that
- $\mathrm{Hash{}(m) = h$
+   $\mathrm{Hash{}(m) = h$
 2. **Second preimage resistance**: Given $m_1$It is infeasible to find $m_2 \neq m_1$ such that
- $\mathrm{Hash{}(m_1) = \mathrm{Hash{}(m_2)$
+   $\mathrm{Hash{}(m_1) = \mathrm{Hash{}(m_2)$
 3. **Collision resistance**: It is infeasible to find any pair $m_1 \neq m_2$ such that
- $\mathrm{Hash{}(m_1) = \mathrm{Hash{}(m_2)$
+   $\mathrm{Hash{}(m_1) = \mathrm{Hash{}(m_2)$
 
 ### SHA Family
 
-| Algorithm | Output Size | Block Size | Rounds | Status |
+| Algorithm | Output Size | Block Size | Rounds | Status                         |
 | --------- | ----------- | ---------- | ------ | ------------------------------ |
-| SHA-1 | 160 bits | 512 bits | 80 | Broken (collision found, 2017) |
-| SHA-224 | 224 bits | 512 bits | 64 | Secure |
-| SHA-256 | 256 bits | 512 bits | 64 | Secure |
-| SHA-384 | 384 bits | 1024 bits | 80 | Secure |
-| SHA-512 | 512 bits | 1024 bits | 80 | Secure |
-| SHA-3-256 | 256 bits | 1088 bits | 24 | Secure (Keccak) |
+| SHA-1     | 160 bits    | 512 bits   | 80     | Broken (collision found, 2017) |
+| SHA-224   | 224 bits    | 512 bits   | 64     | Secure                         |
+| SHA-256   | 256 bits    | 512 bits   | 64     | Secure                         |
+| SHA-384   | 384 bits    | 1024 bits  | 80     | Secure                         |
+| SHA-512   | 512 bits    | 1024 bits  | 80     | Secure                         |
+| SHA-3-256 | 256 bits    | 1088 bits  | 24     | Secure (Keccak)                |
 
 ### SHA-3 (Keccak)
 
@@ -378,11 +381,11 @@ hashed = hashlib.scrypt(
 Argon2 is the winner of the Password Hashing Competition (2015) and is recommended by OWASP for new
 Applications.
 
-| Variant | Resistance Target | Use Case |
+| Variant  | Resistance Target  | Use Case                                   |
 | -------- | ------------------ | ------------------------------------------ |
-| Argon2id | GPU + side-channel | Recommended default |
-| Argon2i | Side-channel | Threat model includes side-channel attacks |
-| Argon2d | GPU | Threat model excludes side-channel attacks |
+| Argon2id | GPU + side-channel | Recommended default                        |
+| Argon2i  | Side-channel       | Threat model includes side-channel attacks |
+| Argon2d  | GPU                | Threat model excludes side-channel attacks |
 
 ```python
 from argon2 import PasswordHasher
@@ -401,13 +404,13 @@ ph.verify(hashed, "correct_horse_battery_staple")  # True
 
 **OWASP recommended parameters (2023):**
 
-| Parameter | Argon2id | scrypt | bcrypt |
+| Parameter   | Argon2id      | scrypt   | bcrypt              |
 | ----------- | ------------- | -------- | ------------------- |
-| Memory | 64 MB (65536) | N/A | N/A |
-| Iterations | 3 | N/A | 10+ |
-| Parallelism | 4 | 1 | N/A |
-| Salt length | 16 bytes | 16 bytes | 16 bytes (embedded) |
-| Hash length | 32 bytes | 32 bytes | 31 characters |
+| Memory      | 64 MB (65536) | N/A      | N/A                 |
+| Iterations  | 3             | N/A      | 10+                 |
+| Parallelism | 4             | 1        | N/A                 |
+| Salt length | 16 bytes      | 16 bytes | 16 bytes (embedded) |
+| Hash length | 32 bytes      | 32 bytes | 31 characters       |
 
 ## Message Authentication Codes
 
@@ -445,8 +448,8 @@ How many bytes of the MAC are correct.
 
 ### Poly1305
 
-Poly1305 is a fast MAC that is paired with ChaCha20 (ChaCha20-Poly1305 AEAD). It produces
-A 128-bit tag and is designed for one-time use per key.
+Poly1305 is a fast MAC that is paired with ChaCha20 (ChaCha20-Poly1305 AEAD). It produces A 128-bit
+tag and is designed for one-time use per key.
 
 ## Digital Signatures
 
@@ -475,9 +478,9 @@ Smaller keys. Used extensively in TLS, Bitcoin, and code signing.
 
 | Curve | Key Size | Security Level |
 | ----- | -------- | -------------- |
-| P-256 | 256 bits | 128 bits |
-| P-384 | 384 bits | 192 bits |
-| P-521 | 521 bits | 256 bits |
+| P-256 | 256 bits | 128 bits       |
+| P-384 | 384 bits | 192 bits       |
+| P-521 | 521 bits | 256 bits       |
 
 ECDSA signature verification requires careful implementation. Nonce reuse (signing two different
 Messages with the same nonce) leaks the private key. Use deterministic nonce generation (RFC 6979).
@@ -501,11 +504,11 @@ ed25519.Verify(publicKey, message, signature) // true
 
 ### Comparison
 
-| Algorithm | Key Size | Signature Size | Performance | Security Notes |
+| Algorithm    | Key Size  | Signature Size | Performance | Security Notes               |
 | ------------ | --------- | -------------- | ----------- | ---------------------------- |
-| RSA-2048-PSS | 256 bytes | 256 bytes | Slow | Widely supported, large keys |
-| ECDSA P-256 | 64 bytes | 64 bytes | Medium | Nonce handling critical |
-| Ed25519 | 32 bytes | 64 bytes | Fast | Deterministic, recommended |
+| RSA-2048-PSS | 256 bytes | 256 bytes      | Slow        | Widely supported, large keys |
+| ECDSA P-256  | 64 bytes  | 64 bytes       | Medium      | Nonce handling critical      |
+| Ed25519      | 32 bytes  | 64 bytes       | Fast        | Deterministic, recommended   |
 
 ## Key Derivation
 
@@ -570,17 +573,17 @@ Keys to identities through a chain of trust.
 
 An X.509 certificate contains:
 
-| Field | Description |
+| Field                   | Description                                   |
 | ----------------------- | --------------------------------------------- |
-| Version | Certificate format version (v3) |
-| Serial number | Unique identifier within the CA |
-| Signature algorithm | Algorithm used to sign the certificate |
-| Issuer | Distinguished name of the CA |
-| Validity period | Not Before / Not After timestamps |
-| Subject | Distinguished name of the certificate holder |
-| Subject Public Key Info | The public key and its algorithm |
-| Extensions | Key usage, SAN, CRL distribution points, etc. |
-| Signature | CA's signature over all the above fields |
+| Version                 | Certificate format version (v3)               |
+| Serial number           | Unique identifier within the CA               |
+| Signature algorithm     | Algorithm used to sign the certificate        |
+| Issuer                  | Distinguished name of the CA                  |
+| Validity period         | Not Before / Not After timestamps             |
+| Subject                 | Distinguished name of the certificate holder  |
+| Subject Public Key Info | The public key and its algorithm              |
+| Extensions              | Key usage, SAN, CRL distribution points, etc. |
+| Signature               | CA's signature over all the above fields      |
 
 ### Certificate Chains
 
@@ -604,12 +607,12 @@ Verifies:
 
 ### Certificate Revocation
 
-| Mechanism | Description | Pros | Cons |
+| Mechanism         | Description                                     | Pros                         | Cons                            |
 | ----------------- | ----------------------------------------------- | ---------------------------- | ------------------------------- |
-| CRL | CA publishes list of revoked serial numbers | Simple, offline verification | Can grow large, delayed updates |
-| OCSP | Real-time query: "is this certificate revoked?" | Fresh status | Privacy leak, CA must be online |
-| OCSP Stapling | Server provides OCSP response with the cert | No extra request, privacy | Server must fetch and staple |
-| Short-lived certs | Certificates valid for hours/days | Reduces need for revocation | Requires automation |
+| CRL               | CA publishes list of revoked serial numbers     | Simple, offline verification | Can grow large, delayed updates |
+| OCSP              | Real-time query: "is this certificate revoked?" | Fresh status                 | Privacy leak, CA must be online |
+| OCSP Stapling     | Server provides OCSP response with the cert     | No extra request, privacy    | Server must fetch and staple    |
+| Short-lived certs | Certificates valid for hours/days               | Reduces need for revocation  | Requires automation             |
 
 ### Certificate Transparency (CT)
 
@@ -647,17 +650,17 @@ TLS 1.3 improvements over TLS 1.2:
 - **Mandatory forward secrecy** (all cipher suites use ephemeral key exchange)
 - **No renegotiation** (eliminates a class of attacks)
 - **Encrypted server messages** (EncryptedExtensions, Certificate, etc. Sent after cleartext
- ServerHello)
+  ServerHello)
 
 ### Cipher Suites
 
 TLS 1.3 simplified cipher suites to:
 
-| Cipher Suite | KEX | Auth | AEAD |
+| Cipher Suite                 | KEX   | Auth      | AEAD              |
 | ---------------------------- | ----- | --------- | ----------------- |
-| TLS_AES_256_GCM_SHA384 | ECDHE | RSA/ECDSA | AES-256-GCM |
+| TLS_AES_256_GCM_SHA384       | ECDHE | RSA/ECDSA | AES-256-GCM       |
 | TLS_CHACHA20_POLY1305_SHA256 | ECDHE | RSA/ECDSA | ChaCha20-Poly1305 |
-| TLS_AES_128_GCM_SHA256 | ECDHE | RSA/ECDSA | AES-128-GCM |
+| TLS_AES_128_GCM_SHA256       | ECDHE | RSA/ECDSA | AES-128-GCM       |
 
 In TLS 1.3, the key exchange is always ephemeral Diffie-Hellman (providing forward secrecy), and the
 Cipher suite only specifies the AEAD algorithm and hash function. RSA key exchange and static DH are
@@ -686,23 +689,23 @@ Nonces, IVs, and salts.
 
 ### CSPRNG vs PRNG
 
-| Property | PRNG (e.g., Mersenne Twister) | CSPRNG |
+| Property      | PRNG (e.g., Mersenne Twister) | CSPRNG                     |
 | ------------- | ----------------------------- | -------------------------- |
-| Speed | Fast | Slower |
-| Unpredictable | No (if state is known) | Yes (computationally) |
-| Seeding | Single seed | Continuous entropy from OS |
-| Use case | Simulations, games | Cryptographic keys, nonces |
+| Speed         | Fast                          | Slower                     |
+| Unpredictable | No (if state is known)        | Yes (computationally)      |
+| Seeding       | Single seed                   | Continuous entropy from OS |
+| Use case      | Simulations, games            | Cryptographic keys, nonces |
 
 ### Sources of Entropy
 
-| Source | Entropy Quality | Platform |
+| Source                | Entropy Quality | Platform     |
 | --------------------- | --------------- | ------------ |
-| `/dev/urandom` | High | Linux, macOS |
-| `/dev/random` | High | Linux |
-| `CryptGenRandom` | High | Windows |
-| `getrandom()` syscall | High | Linux 3.17+ |
-| RDRAND/RDSEED | Moderate | Intel/AMD |
-| Hardware TRNG | High | HSMs, TPMs |
+| `/dev/urandom`        | High            | Linux, macOS |
+| `/dev/random`         | High            | Linux        |
+| `CryptGenRandom`      | High            | Windows      |
+| `getrandom()` syscall | High            | Linux 3.17+  |
+| RDRAND/RDSEED         | Moderate        | Intel/AMD    |
+| Hardware TRNG         | High            | HSMs, TPMs   |
 
 :::warning
 
@@ -730,11 +733,11 @@ AES-128 becomes 64-bit security, SHA-256 preimage resistance becomes 128-bit).
 
 NIST has standardized the following post-quantum algorithms:
 
-| Algorithm | Type | Based On | Status |
+| Algorithm                   | Type              | Based On      | Status                  |
 | --------------------------- | ----------------- | ------------- | ----------------------- |
-| ML-KEM (CRYSTALS-Kyber) | Key encapsulation | Lattice-based | Standardized (FIPS 203) |
+| ML-KEM (CRYSTALS-Kyber)     | Key encapsulation | Lattice-based | Standardized (FIPS 203) |
 | ML-DSA (CRYSTALS-Dilithium) | Digital signature | Lattice-based | Standardized (FIPS 204) |
-| SLH-DSA (SPHINCS+) | Digital signature | Hash-based | Standardized (FIPS 205) |
+| SLH-DSA (SPHINCS+)          | Digital signature | Hash-based    | Standardized (FIPS 205) |
 
 ### Migration Strategy
 

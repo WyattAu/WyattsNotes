@@ -1,6 +1,8 @@
 ---
 title: Testing Fundamentals
-description: "Testing Fundamentals — Why Test; Regression Prevention; Documentation; Design Improvement with worked examples and exam-style questions."
+description:
+  'Testing Fundamentals — Why Test; Regression Prevention; Documentation; Design Improvement with
+  worked examples and exam-style questions.'
 date: 2026-04-05T00:00:00.000Z
 tags:
   - Dart
@@ -8,6 +10,7 @@ categories:
   - Dart
 slug: testing-fundamentals
 ---
+
 ## Why Test
 
 Testing is not a phase that comes after development. It is a structural property of the codebase
@@ -43,12 +46,12 @@ Something.
 
 ### Types of Testing
 
-| Type | Scope | Speed | What It Validates |
+| Type        | Scope                    | Speed      | What It Validates                               |
 | ----------- | ------------------------ | ---------- | ----------------------------------------------- |
-| Unit | Single function or class | Millis | Isolated logic correctness |
-| Widget | Single Flutter widget | 10-100ms | Rendering, interaction, lifecycle |
-| Integration | Multiple units together | 100-1000ms | Unit interactions, data flow across boundaries |
-| End-to-End | Full application flow | Seconds | User-visible behavior from launch to completion |
+| Unit        | Single function or class | Millis     | Isolated logic correctness                      |
+| Widget      | Single Flutter widget    | 10-100ms   | Rendering, interaction, lifecycle               |
+| Integration | Multiple units together  | 100-1000ms | Unit interactions, data flow across boundaries  |
+| End-to-End  | Full application flow    | Seconds    | User-visible behavior from launch to completion |
 
 Unit tests are the foundation. They are fast, deterministic, and cheap to maintain. Widget tests add
 Coverage for the UI layer. Integration tests validate that units compose correctly. End-to-end tests
@@ -523,8 +526,8 @@ When a test is doing too much in one phase.
 
 ### Test Organization
 
-Mirror the source structure. If `lib/src/orders/order_service.dart` contains `OrderService`The
-Test lives at `test/src/orders/order_service_test.dart`. This is not just convention — it makes
+Mirror the source structure. If `lib/src/orders/order_service.dart` contains `OrderService`The Test
+lives at `test/src/orders/order_service_test.dart`. This is not just convention — it makes
 Navigation trivial when the directory tree is the same in both `lib/` and `test/`.
 
 Within a test file, use `group()` to organize by method, then by scenario:
@@ -735,14 +738,14 @@ void main() {
 
 ### mockito vs mocktail
 
-| Factor | mockito | mocktail |
+| Factor        | mockito                               | mocktail                         |
 | ------------- | ------------------------------------- | -------------------------------- |
-| Code gen | Required (`build_runner`) | None |
-| Setup | Annotate classes, run generator | Extend `Mock` directly |
-| Fallback vals | Not required | Required for non-nullable params |
-| API | `when(mock.method()).thenReturn(...)` | `when(() => mock.method())...` |
-| Ecosystem | Larger, more mature | Lighter, simpler |
-| Type safety | Strong (generated stubs) | Weaker (manual `implements`) |
+| Code gen      | Required (`build_runner`)             | None                             |
+| Setup         | Annotate classes, run generator       | Extend `Mock` directly           |
+| Fallback vals | Not required                          | Required for non-nullable params |
+| API           | `when(mock.method()).thenReturn(...)` | `when(() => mock.method())...`   |
+| Ecosystem     | Larger, more mature                   | Lighter, simpler                 |
+| Type safety   | Strong (generated stubs)              | Weaker (manual `implements`)     |
 
 Use `mocktail` for small projects or when you want zero build-time overhead. Use `mockito` for
 Larger projects where generated mocks provide stronger type guarantees and better IDE support.
@@ -1116,7 +1119,7 @@ Platform.
 
 - `dart test` — runs pure Dart tests (no Flutter SDK). Use for packages, servers, CLI tools.
 - `flutter test` — runs Flutter-aware tests (includes widget testing, golden tests). Use for Flutter
- apps and packages that depend on Flutter.
+  apps and packages that depend on Flutter.
 
 ### Filtering Tests
 

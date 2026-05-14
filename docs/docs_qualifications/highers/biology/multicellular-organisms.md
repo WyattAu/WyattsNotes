@@ -1,6 +1,8 @@
 ---
 title: Multicellular Organisms
-description: "Multicellular Organisms — Stem Cells and Differentiation for comprehensive revision and examination preparation. and examination prepar."
+description:
+  'Multicellular Organisms — Stem Cells and Differentiation for comprehensive revision and
+  examination preparation. and examination prepar.'
 date: 2026-04-14
 tags:
   - Biology
@@ -9,6 +11,7 @@ categories:
   - Biology
 slug: multicellular-organisms
 ---
+
 # Multicellular Organisms
 
 ## Higher Multicellular Organisms
@@ -20,12 +23,12 @@ Types.
 
 **Types:**
 
-| Type | Source | Potential |
+| Type        | Source                            | Potential                                      |
 | ----------- | --------------------------------- | ---------------------------------------------- |
-| Totipotent | Early embryo | Can become any cell type (including placental) |
-| Pluripotent | Blastocyst | Can become any cell type (not placental) |
-| Multipotent | Adult tissues (e.g., bone marrow) | Can become limited range of cell types |
-| Unipotent | Adult tissues | Can become only one cell type |
+| Totipotent  | Early embryo                      | Can become any cell type (including placental) |
+| Pluripotent | Blastocyst                        | Can become any cell type (not placental)       |
+| Multipotent | Adult tissues (e.g., bone marrow) | Can become limited range of cell types         |
+| Unipotent   | Adult tissues                     | Can become only one cell type                  |
 
 **Cell differentiation:** The process by which cells become specialised. All body cells have the
 Same genes, but different genes are switched on (expressed) or off in different cell types.
@@ -94,8 +97,8 @@ Embryonic stem cells and allows patient-specific therapies (using the patient's 
 - Synaptic terminals (release neurotransmitters)
 
 **Resting potential:** Approximately $-70 \mathrm{ mV{}$ inside the axon relative to outside.
-Maintained by the sodium-potassium pump ($3 \mathrm{ Na{}^+$ out, $2 \mathrm{ K{}^+$ in) and selective
-Permeability of the membrane.
+Maintained by the sodium-potassium pump ($3 \mathrm{ Na{}^+$ out, $2 \mathrm{ K{}^+$ in) and
+selective Permeability of the membrane.
 
 **Action potential:**
 
@@ -115,7 +118,7 @@ Propagating along the entire length of the axon membrane. This speeds up transmi
 
 1. Less membrane needs to be depolarised (only at the nodes, not along the entire internode).
 2. The local currents between nodes are larger because the myelin insulates the internode,
- preventing current leakage.
+   preventing current leakage.
 
 The speed of conduction in a myelinated axon can be up to 100 m/s, compared to about 1 m/s in an
 Unmyelinated axon of the same diameter.
@@ -139,12 +142,11 @@ Acetylcholinesterase in the synaptic cleft.
 
 **Worked Example: Spatial and temporal summation.**
 
-A single excitatory postsynaptic potential (EPSP) is too small to reach the threshold for an
-Action potential ( about $-55$ mV from a resting potential of $-70$ mV). However, if
-Multiple EPSPs arrive at the same synapse in rapid succession (temporal summation) or at different
-Synapses on the same postsynaptic neurone simultaneously (spatial summation), their effects can add
-Up. If the combined depolarisation reaches threshold, an action potential is generated in the
-Postsynaptic neurone.
+A single excitatory postsynaptic potential (EPSP) is too small to reach the threshold for an Action
+potential ( about $-55$ mV from a resting potential of $-70$ mV). However, if Multiple EPSPs arrive
+at the same synapse in rapid succession (temporal summation) or at different Synapses on the same
+postsynaptic neurone simultaneously (spatial summation), their effects can add Up. If the combined
+depolarisation reaches threshold, an action potential is generated in the Postsynaptic neurone.
 
 ### The Endocrine System
 
@@ -153,24 +155,24 @@ Bloodstream.
 
 **Key differences from the nervous system:**
 
-| Feature | Nervous | Endocrine |
+| Feature  | Nervous            | Endocrine                         |
 | -------- | ------------------ | --------------------------------- |
-| Signal | Electrical impulse | Chemical (hormone) |
-| Speed | Fast | Slower |
-| Duration | Short-lived | Longer-lasting |
-| Target | Specific | Widespread (cells with receptors) |
-| Pathway | Neurones | Bloodstream |
+| Signal   | Electrical impulse | Chemical (hormone)                |
+| Speed    | Fast               | Slower                            |
+| Duration | Short-lived        | Longer-lasting                    |
+| Target   | Specific           | Widespread (cells with receptors) |
+| Pathway  | Neurones           | Bloodstream                       |
 
 **Examples of hormones:**
 
-| Hormone | Gland | Function |
+| Hormone    | Gland                  | Function                      |
 | ---------- | ---------------------- | ----------------------------- |
-| Adrenaline | Adrenal medulla | Fight or flight response |
-| Insulin | Pancreas (beta cells) | Lowers blood glucose |
-| Glucagon | Pancreas (alpha cells) | Raises blood glucose |
-| Thyroxine | Thyroid | Regulates metabolism |
-| ADH | Posterior pituitary | Water reabsorption in kidneys |
-| FSH/LH | Anterior pituitary | Reproductive cycle |
+| Adrenaline | Adrenal medulla        | Fight or flight response      |
+| Insulin    | Pancreas (beta cells)  | Lowers blood glucose          |
+| Glucagon   | Pancreas (alpha cells) | Raises blood glucose          |
+| Thyroxine  | Thyroid                | Regulates metabolism          |
+| ADH        | Posterior pituitary    | Water reabsorption in kidneys |
+| FSH/LH     | Anterior pituitary     | Reproductive cycle            |
 
 ### Blood Glucose Regulation
 
@@ -181,9 +183,11 @@ Bloodstream.
 1. Beta cells in the pancreas detect increased glucose
 2. Beta cells secrete insulin
 3. Insulin stimulates:
- - Glycogenesis (glucose to glycogen in liver and muscle)
- - Increased glucose uptake by cells
- - Increased respiration
+
+- Glycogenesis (glucose to glycogen in liver and muscle)
+- Increased glucose uptake by cells
+- Increased respiration
+
 4. Blood glucose falls to normal
 
 **Between meals / during exercise (blood glucose falls):**
@@ -191,28 +195,30 @@ Bloodstream.
 1. Alpha cells in the pancreas detect decreased glucose
 2. Alpha cells secrete glucagon
 3. Glucagon stimulates:
- - Glycogenolysis (glycogen to glucose in liver)
- - Gluconeogenesis (amino acids/lactate to glucose)
+
+- Glycogenolysis (glycogen to glucose in liver)
+- Gluconeogenesis (amino acids/lactate to glucose)
+
 4. Blood glucose rises to normal
 
 **Diabetes:**
 
 - **Type 1:** Autoimmune destruction of beta cells; no insulin produced. Treated with insulin
- injections.
+  injections.
 - **Type 2:** Cells become resistant to insulin; reduced insulin sensitivity. Treated with diet,
- exercise, and medication.
+  exercise, and medication.
 
 ### The Circulatory System
 
 **Blood vessels:**
 
-| Feature | Artery | Vein | Capillary |
+| Feature        | Artery | Vein | Capillary      |
 | -------------- | ------ | ---- | -------------- |
-| Wall thickness | Thick | Thin | One cell thick |
-| Lumen | Narrow | Wide | Very narrow |
-| Valves | No | Yes | No |
-| Blood pressure | High | Low | Low |
-| Blood flow | Fast | Slow | Very slow |
+| Wall thickness | Thick  | Thin | One cell thick |
+| Lumen          | Narrow | Wide | Very narrow    |
+| Valves         | No     | Yes  | No             |
+| Blood pressure | High   | Low  | Low            |
+| Blood flow     | Fast   | Slow | Very slow      |
 
 **Double circulatory system:**
 
@@ -253,13 +259,13 @@ $$\mathrm{Rate of diffusion{} \propto \frac{\mathrm{Surface area{} \times \mathr
 
 **Macromolecule digestion:**
 
-| Macromolecule | Enzyme | Products | Site |
+| Macromolecule | Enzyme                     | Products               | Site                     |
 | ------------- | -------------------------- | ---------------------- | ------------------------ |
-| Starch | Amylase | Maltose | Mouth, small intestine |
-| Maltose | Maltase | Glucose | Small intestine |
-| Proteins | Protease (pepsin, trypsin) | Amino acids | Stomach, small intestine |
-| Lipids | Lipase | Fatty acids + glycerol | Small intestine |
-| DNA/RNA | Nuclease | Nucleotides | Small intestine |
+| Starch        | Amylase                    | Maltose                | Mouth, small intestine   |
+| Maltose       | Maltase                    | Glucose                | Small intestine          |
+| Proteins      | Protease (pepsin, trypsin) | Amino acids            | Stomach, small intestine |
+| Lipids        | Lipase                     | Fatty acids + glycerol | Small intestine          |
+| DNA/RNA       | Nuclease                   | Nucleotides            | Small intestine          |
 
 **Absorption:** The small intestine is adapted for absorption with villi and microvilli, which
 Increase surface area. Each villus has a dense capillary network (for amino acids and glucose) and a
@@ -269,26 +275,26 @@ Lacteal (for fatty acids and glycerol).
 
 ## Common Pitfalls
 
-1. **Action potential direction:** Depolarisation is caused by $\mathrm{Na{}^+$ influx; repolarisation
- by $\mathrm{K{}^+$ efflux.
+1. **Action potential direction:** Depolarisation is caused by $\mathrm{Na{}^+$ influx;
+   repolarisation by $\mathrm{K{}^+$ efflux.
 
 2. **Synapse transmission:** Neurotransmitters are released into the synaptic cleft, not directly
- into the next neurone.
+   into the next neurone.
 
 3. **Insulin vs. Glucagon:** Insulin lowers blood glucose; glucagon raises it.
 
 4. **Arteries vs. Veins:** Arteries carry blood away from the heart; veins carry blood towards the
- heart. Pulmonary arteries carry deoxygenated blood.
+   heart. Pulmonary arteries carry deoxygenated blood.
 
 5. **Cardiac cycle timing:** The atrioventricular valves close during ventricular systole (producing
- the first heart sound, "lub").
+   the first heart sound, "lub").
 
 6. **Confusing the roles of the SA node and AV node.** The SA node (sinoatrial node) is the
- pacemaker that initiates each heartbeat. The AV node (atrioventricular node) relays the impulse
- from the atria to the ventricles, introducing a delay that allows the ventricles to fill.
+   pacemaker that initiates each heartbeat. The AV node (atrioventricular node) relays the impulse
+   from the atria to the ventricles, introducing a delay that allows the ventricles to fill.
 
 7. **Forgetting that the heart is myogenic.** Cardiac muscle generates its own electrical impulses
- without nervous stimulation, although the autonomic nervous system can modify the heart rate.
+   without nervous stimulation, although the autonomic nervous system can modify the heart rate.
 
 ---
 
@@ -300,8 +306,8 @@ Lacteal (for fatty acids and glycerol).
 
 3. Compare the nervous and endocrine systems as communication systems.
 
-4. A person has a stroke volume of $80 \mathrm{ mL{}$ and a heart rate of $65 \mathrm{ bpm{}$. Calculate
- the cardiac output.
+4. A person has a stroke volume of $80 \mathrm{ mL{}$ and a heart rate of $65 \mathrm{ bpm{}$.
+   Calculate the cardiac output.
 
 5. Describe how insulin and glucagon work together to maintain blood glucose homeostasis.
 
@@ -316,35 +322,35 @@ Lacteal (for fatty acids and glycerol).
 10. Describe how the structure of a red blood cell is adapted for oxygen transport.
 
 11. Explain the role of ADH in water balance regulation, including the mechanism of action in the
- kidney.
+    kidney.
 
 12. Describe the path of a molecule of oxygen from the alveolus to a muscle cell, naming all the
- structures it passes through.
+    structures it passes through.
 
 13. Explain why adrenaline increases heart rate and breathing rate during the "fight or flight"
- response.
+    response.
 
 14. Compare the structure and function of arteries, veins, and capillaries.
 
 15. Explain how the small intestine is adapted for absorption, including the roles of villi,
- microvilli, and the lacteal.
+    microvilli, and the lacteal.
 
 16. Describe the role of the liver in the digestion and absorption of lipids.
 
 17. Explain why a person with type 1 diabetes must monitor their blood glucose levels carefully and
- inject insulin at appropriate times.
+    inject insulin at appropriate times.
 
 18. Describe the pathway of blood through the human heart, naming all four chambers, the four
- valves, and the major blood vessels connected to each chamber.
+    valves, and the major blood vessels connected to each chamber.
 
 19. Explain the difference between an excitatory and an inhibitory neurotransmitter, and describe
- the effect of each on the postsynaptic membrane.
+    the effect of each on the postsynaptic membrane.
 
 20. Explain the concept of negative feedback, using blood glucose regulation as an example. Include
- the roles of the pancreas, liver, and the hormones insulin and glucagon.
+    the roles of the pancreas, liver, and the hormones insulin and glucagon.
 
 21. Describe the role of the loop of Henle in producing concentrated urine, explaining the
- countercurrent multiplier mechanism.
+    countercurrent multiplier mechanism.
 
 22. Explain how the structure of an artery is adapted for carrying blood at high pressure.
 
@@ -353,7 +359,7 @@ Lacteal (for fatty acids and glycerol).
 24. Explain the difference between spatial summation and temporal summation at synapses.
 
 25. Describe how a vaccination provides protection against a specific disease, including the roles
- of B cells, T cells, antibodies, and memory cells.
+    of B cells, T cells, antibodies, and memory cells.
 
 ## Review: The Immune System in Detail
 
@@ -364,49 +370,49 @@ The adaptive immune system (specific, slower but long-lasting).
 
 - **Physical barriers:** Skin, mucous membranes, stomach acid, cilia in the respiratory tract.
 - **Phagocytes:** Neutrophils (short-lived, abundant, first responders) and macrophages (long-lived,
- tissue-resident, also present antigens to T cells). They engulf and digest pathogens by
- phagocytosis.
+  tissue-resident, also present antigens to T cells). They engulf and digest pathogens by
+  phagocytosis.
 - **Complement system:** A group of proteins that enhance phagocytosis (opsonisation), attract
- phagocytes (chemotaxis), and directly lyse pathogens by forming membrane attack complexes.
+  phagocytes (chemotaxis), and directly lyse pathogens by forming membrane attack complexes.
 - **Inflammation:** Redness, heat, swelling, and pain caused by increased blood flow, capillary
- permeability, and migration of phagocytes to the site of infection. Histamine released by mast
- cells increases capillary permeability.
+  permeability, and migration of phagocytes to the site of infection. Histamine released by mast
+  cells increases capillary permeability.
 
 **Adaptive immune system:**
 
 - **Cell-mediated immunity:** T cells (cytotoxic T cells kill virus-infected cells; helper T cells
- coordinate the immune response by releasing cytokines; memory T cells provide long-term immunity).
+  coordinate the immune response by releasing cytokines; memory T cells provide long-term immunity).
 - **Humoral immunity:** B cells produce antibodies (plasma cells are antibody-secreting B cells;
- memory B cells provide long-term immunity).
+  memory B cells provide long-term immunity).
 - **Antibodies:** Y-shaped proteins that bind to specific antigens on pathogens. They can neutralise
- toxins, agglutinate (clump) pathogens, opsonise pathogens for phagocytosis, and activate the
- complement system.
+  toxins, agglutinate (clump) pathogens, opsonise pathogens for phagocytosis, and activate the
+  complement system.
 
 **Worked Example: The immune response to a bacterial infection.**
 
 1. **Innate response:** Bacteria enter through a cut. Skin is breached, but mast cells detect the
- bacteria and release histamine, causing vasodilation and increased capillary permeability
- (inflammation). Phagocytes (neutrophils, then macrophages) migrate to the site and engulf the
- bacteria.
+   bacteria and release histamine, causing vasodilation and increased capillary permeability
+   (inflammation). Phagocytes (neutrophils, then macrophages) migrate to the site and engulf the
+   bacteria.
 2. **Antigen presentation:** Macrophages digest the bacteria and display bacterial antigens on their
- surface (MHC class II molecules).
+   surface (MHC class II molecules).
 3. **Adaptive response:** Helper T cells bind to the antigen-MHC complex on macrophages and become
- activated. They release cytokines that activate B cells and cytotoxic T cells.
+   activated. They release cytokines that activate B cells and cytotoxic T cells.
 4. **B cell activation:** B cells produce antibodies specific to the bacterial antigens. The
- antibodies neutralise toxins, agglutinate bacteria, and opsonise them for phagocytosis.
+   antibodies neutralise toxins, agglutinate bacteria, and opsonise them for phagocytosis.
 5. **Memory formation:** Some B cells and T cells differentiate into memory cells, providing
- long-term immunity. If the same bacteria enter the body again, the secondary immune response is
- faster, stronger, and more specific.
+   long-term immunity. If the same bacteria enter the body again, the secondary immune response is
+   faster, stronger, and more specific.
 
 **Primary vs secondary immune response:**
 
-| Feature | Primary Response | Secondary Response |
+| Feature        | Primary Response            | Secondary Response         |
 | -------------- | --------------------------- | -------------------------- |
-| Speed | Slower (5--10 days to peak) | Faster (2--3 days to peak) |
-| Antibody level | Lower | Much higher |
-| Antibody class | Mainly IgM initially | Mainly IgG |
-| Memory cells | Formed during response | Already present |
-| Duration | Short-lived | Longer-lasting |
+| Speed          | Slower (5--10 days to peak) | Faster (2--3 days to peak) |
+| Antibody level | Lower                       | Much higher                |
+| Antibody class | Mainly IgM initially        | Mainly IgG                 |
+| Memory cells   | Formed during response      | Already present            |
+| Duration       | Short-lived                 | Longer-lasting             |
 
 ## Review: Gas Exchange in the Lungs
 
@@ -416,16 +422,16 @@ The adaptive immune system (specific, slower but long-lasting).
 - Large total surface area (approximately 70 $m^2$ in adult lungs).
 - Surrounded by dense capillary network -- maintains concentration gradient.
 - Surfactant (a mixture of phospholipids and proteins) lines the alveoli, reducing surface tension
- and preventing collapse.
+  and preventing collapse.
 
 **Mechanism of ventilation:**
 
 - **Inspiration (breathing in):** The intercostal muscles and diaphragm contract. The rib cage moves
- upwards and outwards, and the diaphragm flattens. The volume of the thorax increases, decreasing
- the pressure inside the lungs below atmospheric pressure. Air flows in.
+  upwards and outwards, and the diaphragm flattens. The volume of the thorax increases, decreasing
+  the pressure inside the lungs below atmospheric pressure. Air flows in.
 - **Expiration (breathing out):** The intercostal muscles and diaphragm relax. The rib cage moves
- downwards and inwards, and the diaphragm resumes its domed shape. The volume of the thorax
- decreases, increasing the pressure inside the lungs above atmospheric pressure. Air flows out.
+  downwards and inwards, and the diaphragm resumes its domed shape. The volume of the thorax
+  decreases, increasing the pressure inside the lungs above atmospheric pressure. Air flows out.
 
 **Worked Example: Calculating breathing rate and minute ventilation.**
 
@@ -455,9 +461,9 @@ And diffusion.
 
 **The loop of Henle:** Creates a concentration gradient in the medulla of the kidney. The descending
 Limb is permeable to water but not ions; water leaves by osmosis into the increasingly concentrated
-Medulla. The ascending limb is permeable to ions but not water; $\mathrm{Na{}^+$ and $\mathrm{Cl{}^-$ are
-Actively pumped out, making the medulla increasingly concentrated. This countercurrent multiplier
-Mechanism allows the kidney to produce concentrated urine.
+Medulla. The ascending limb is permeable to ions but not water; $\mathrm{Na{}^+$ and
+$\mathrm{Cl{}^-$ are Actively pumped out, making the medulla increasingly concentrated. This
+countercurrent multiplier Mechanism allows the kidney to produce concentrated urine.
 
 **ADH (antidiuretic hormone):** Released by the posterior pituitary gland in response to increased
 Blood osmolarity (detected by osmoreceptors in the hypothalamus). ADH makes the collecting duct more
@@ -476,15 +482,15 @@ Reabsorbed and appears in the urine (glycosuria).
 
 ## Review: Summary Table of Hormones
 
-| Hormone | Source | Target | Function |
+| Hormone    | Source           | Target       | Function                                        |
 | ---------- | ---------------- | ------------ | ----------------------------------------------- |
-| Insulin | Pancreas (beta) | Liver, cells | Lowers blood glucose; promotes glucose uptake |
-| Glucagon | Pancreas (alpha) | Liver | Raises blood glucose; stimulates glycogenolysis |
-| ADH | Pituitary | Kidney | Increases water reabsorption |
-| Adrenaline | Adrenal medulla | Heart, lungs | Increases heart rate, breathing rate |
-| Thyroxine | Thyroid | All cells | Increases metabolic rate |
-| FSH | Pituitary | Ovaries | Stimulates follicle development |
-| LH | Pituitary | Ovaries | Triggers ovulation |
+| Insulin    | Pancreas (beta)  | Liver, cells | Lowers blood glucose; promotes glucose uptake   |
+| Glucagon   | Pancreas (alpha) | Liver        | Raises blood glucose; stimulates glycogenolysis |
+| ADH        | Pituitary        | Kidney       | Increases water reabsorption                    |
+| Adrenaline | Adrenal medulla  | Heart, lungs | Increases heart rate, breathing rate            |
+| Thyroxine  | Thyroid          | All cells    | Increases metabolic rate                        |
+| FSH        | Pituitary        | Ovaries      | Stimulates follicle development                 |
+| LH         | Pituitary        | Ovaries      | Triggers ovulation                              |
 
 ## Review: The Reproductive System
 
@@ -495,12 +501,12 @@ The male reproductive system produces and delivers sperm.
 **Key structures:**
 
 - **Testes:** Produce sperm (in the seminiferous tubules) and testosterone (by Leydig cells). Sperm
- production occurs at a temperature slightly below body temperature, which is why the testes are
- located outside the body in the scrotum.
+  production occurs at a temperature slightly below body temperature, which is why the testes are
+  located outside the body in the scrotum.
 - **Epididymis:** Sperm mature and are stored here.
 - **Vas deferens:** Transports sperm from the epididymis to the urethra during ejaculation.
 - **Seminal vesicles:** Produce seminal fluid containing fructose (energy source for sperm) and
- prostaglandins (stimulate uterine contractions).
+  prostaglandins (stimulate uterine contractions).
 - **Prostate gland:** Produces alkaline fluid that neutralises vaginal acidity, protecting sperm.
 - **Penis:** Delivers sperm to the female reproductive tract.
 
@@ -518,24 +524,24 @@ Development.
 **Key structures:**
 
 - **Ovaries:** Produce eggs (oocytes) and the hormones oestrogen and progesterone. Females are born
- with all the eggs they will ever have (approximately 1-2 million at birth, declining to
- approximately 400,000 at puberty).
+  with all the eggs they will ever have (approximately 1-2 million at birth, declining to
+  approximately 400,000 at puberty).
 - **Fallopian tubes (oviducts):** Site of fertilisation. Cilia waft the egg towards the uterus.
 - **Uterus:** Site of implantation and fetal development. The endometrium (uterine lining) thickens
- in response to oestrogen and progesterone.
+  in response to oestrogen and progesterone.
 - **Cervix:** The opening of the uterus into the vagina. Produces mucus that changes in consistency
- during the menstrual cycle.
+  during the menstrual cycle.
 - **Vagina:** Receives the penis during intercourse; birth canal.
 
 **The menstrual cycle:**
 
 1. **Follicular phase (days 1-14):** FSH stimulates follicle development in the ovary. The
- developing follicle secretes oestrogen, which stimulates the endometrium to thicken. A surge in
- LH triggers ovulation (release of the egg from the ovary) around day 14.
+   developing follicle secretes oestrogen, which stimulates the endometrium to thicken. A surge in
+   LH triggers ovulation (release of the egg from the ovary) around day 14.
 2. **Luteal phase (days 14-28):** The remaining follicle becomes the corpus luteum, which secretes
- progesterone. Progesterone maintains the thickened endometrium. If fertilisation does not occur,
- the corpus luteum degenerates, progesterone levels drop, and the endometrium is shed
- (menstruation).
+   progesterone. Progesterone maintains the thickened endometrium. If fertilisation does not occur,
+   the corpus luteum degenerates, progesterone levels drop, and the endometrium is shed
+   (menstruation).
 
 ### Fertilisation and Implantation
 
@@ -551,11 +557,11 @@ A blastocyst. The blastocyst implants in the endometrium approximately 6-7 days 
 
 - **FSH** stimulates follicle development and oestrogen production.
 - **Oestrogen** stimulates endometrial thickening and inhibits FSH (negative feedback). At high
- levels near ovulation, oestrogen stimulates LH release (positive feedback).
+  levels near ovulation, oestrogen stimulates LH release (positive feedback).
 - **LH** triggers ovulation and maintains the corpus luteum.
 - **Progesterone** maintains the endometrium and inhibits FSH and LH (negative feedback).
 - If fertilisation occurs, the embryo produces hCG (human chorionic gonadotropin), which maintains
- the corpus luteum and therefore progesterone production, preventing menstruation.
+  the corpus luteum and therefore progesterone production, preventing menstruation.
 
 ## Review: The Structure and Function of Blood
 
@@ -566,26 +572,27 @@ The liquid component of blood, making up approximately 55% of blood volume. It c
 - **Water:** Solvent for dissolved substances.
 - **Dissolved substances:** Glucose, amino acids, urea, hormones, ions.
 - **Plasma proteins:** Albumin (maintains osmotic pressure), globulins (antibodies and transport),
- fibrinogen (blood clotting).
+  fibrinogen (blood clotting).
 
 ### Red Blood Cells (Erythrocytes)
 
 - Biconcave disc shape increases surface area to volume ratio for gas exchange.
 - No nucleus, allowing more space for haemoglobin.
-- Haemoglobin binds reversibly to oxygen: $\mathrm{Hb{} + 4\mathrm{O{}_2 \rightleftharpoons \mathrm{HbO{}_8$.
+- Haemoglobin binds reversibly to oxygen:
+  $\mathrm{Hb{} + 4\mathrm{O{}_2 \rightleftharpoons \mathrm{HbO{}_8$.
 - In tissues, oxygen dissociates from haemoglobin due to lower oxygen partial pressure and lower pH
- (Bohr effect).
+  (Bohr effect).
 - Red blood cells have a lifespan of approximately 120 days and are destroyed in the spleen and
- liver.
+  liver.
 
 ### White Blood Cells (Leucocytes)
 
 - **Neutrophils:** The most abundant phagocyte. Engulf and digest bacteria. Short-lived (hours to
- days).
+  days).
 - **Lymphocytes:** Produce antibodies (B lymphocytes) and coordinate the immune response (T
- lymphocytes). Long-lived; some become memory cells.
+  lymphocytes). Long-lived; some become memory cells.
 - **Monocytes:** Become macrophages when they migrate into tissues. Long-lived phagocytes that also
- present antigens to T cells.
+  present antigens to T cells.
 
 ### Platelets (Thrombocytes)
 
@@ -599,10 +606,10 @@ Accumulate at the site and release clotting factors. This triggers the clotting 
 
 **Worked Example: The importance of calcium ions in blood clotting.**
 
-Calcium ions ($\mathrm{Ca{}^{2+}$) are essential cofactors at multiple steps in the clotting cascade.
-Without calcium ions, thromboplastin cannot convert prothrombin to thrombin, and thrombin cannot
-Convert fibrinogen to fibrin. This is why calcium chelators (substances that bind and remove calcium
-Ions) such as EDTA are used as anticoagulants in blood collection tubes. Similarly, the
+Calcium ions ($\mathrm{Ca{}^{2+}$) are essential cofactors at multiple steps in the clotting
+cascade. Without calcium ions, thromboplastin cannot convert prothrombin to thrombin, and thrombin
+cannot Convert fibrinogen to fibrin. This is why calcium chelators (substances that bind and remove
+calcium Ions) such as EDTA are used as anticoagulants in blood collection tubes. Similarly, the
 Anticoagulant drug heparin works by enhancing the activity of antithrombin, which inactivates
 Thrombin, preventing fibrin formation.
 
@@ -614,14 +621,14 @@ System.
 **Functions:**
 
 1. **Fluid balance:** Lymphatic vessels collect excess interstitial fluid (tissue fluid) and return
- it to the bloodstream. Approximately 3 litres of fluid leak out of capillaries each day and must
- be returned via the lymphatic system.
+   it to the bloodstream. Approximately 3 litres of fluid leak out of capillaries each day and must
+   be returned via the lymphatic system.
 2. **Fat absorption:** Lacteals (lymphatic capillaries in the villi of the small intestine) absorb
- fatty acids and glycerol, which are transported as chylomicrons in the lymph before entering the
- bloodstream via the thoracic duct.
+   fatty acids and glycerol, which are transported as chylomicrons in the lymph before entering the
+   bloodstream via the thoracic duct.
 3. **Immune defence:** Lymph nodes filter lymph, trapping pathogens and foreign particles.
- Lymphocytes in the lymph nodes multiply and mount an immune response. Swollen lymph glands
- indicate an active immune response.
+   Lymphocytes in the lymph nodes multiply and mount an immune response. Swollen lymph glands
+   indicate an active immune response.
 
 **Lymph circulation:** Lymph moves through lymphatic vessels by contraction of surrounding skeletal
 Muscles and by breathing. Valves in the lymphatic vessels prevent backflow. Lymph is returned to the
@@ -662,7 +669,7 @@ The human body contains three types of muscle tissue:
 - Striated (like skeletal muscle).
 - Uninucleated (one nucleus per cell, sometimes two).
 - Cells are connected by intercalated discs (containing gap junctions for rapid electrical
- coupling).
+  coupling).
 - Contracts rhythmically and continuously; does not fatigue.
 - Myogenic (generates its own electrical impulses via the SA node).
 
@@ -677,7 +684,7 @@ Shortening the sarcomere. The process:
 4. Calcium binds to troponin, which moves tropomyosin away from the myosin-binding sites on actin.
 5. Myosin heads bind to actin, forming cross-bridges.
 6. The myosin heads undergo a power stroke, pulling the actin filaments towards the centre of the
- sarcomere.
+   sarcomere.
 7. ATP binds to the myosin heads, causing them to detach from actin.
 8. ATP is hydrolysed, re-cocking the myosin heads for another cycle.
 9. The cycle repeats as long as calcium and ATP are present.
@@ -691,25 +698,25 @@ Relaxes.
 Muscles use three sources of ATP during contraction:
 
 1. **ATP from creatine phosphate:** Creatine phosphate transfers a phosphate group to ADP,
- regenerating ATP very rapidly. This system provides ATP for approximately 5--10 seconds of
- intense activity.
+   regenerating ATP very rapidly. This system provides ATP for approximately 5--10 seconds of
+   intense activity.
 2. **Anaerobic glycolysis:** Glucose is broken down to pyruvate, then to lactate, yielding 2 ATP per
- glucose. This provides ATP for approximately 30--60 seconds of vigorous activity.
+   glucose. This provides ATP for approximately 30--60 seconds of vigorous activity.
 3. **Aerobic respiration:** Pyruvate enters the mitochondria and is fully oxidised via the Krebs
- cycle and electron transport chain, yielding approximately 30-32 ATP per glucose. This provides
- ATP for prolonged, moderate activity.
+   cycle and electron transport chain, yielding approximately 30-32 ATP per glucose. This provides
+   ATP for prolonged, moderate activity.
 
 **Muscle fibre types:**
 
-| Feature | Type I (slow-twitch) | Type IIa (fast-twitch oxidative) | Type IIb (fast-twitch glycolytic) |
+| Feature            | Type I (slow-twitch)      | Type IIa (fast-twitch oxidative) | Type IIb (fast-twitch glycolytic) |
 | ------------------ | ------------------------- | -------------------------------- | --------------------------------- |
-| Contraction speed | Slow | Fast | Very fast |
-| Fatigue resistance | High | Moderate | Low |
-| Colour | Red (rich in myoglobin) | Pink | White |
-| Mitochondria | Many | Moderate | Few |
-| Energy source | Aerobic | Aerobic and anaerobic | Anaerobic (glycolysis) |
-| Primary fuel | Fatty acids, glucose | Glucose, glycogen | Glycogen, phosphocreatine |
-| Example activity | Marathon running, posture | Sprinting, swimming | Weightlifting, jumping |
+| Contraction speed  | Slow                      | Fast                             | Very fast                         |
+| Fatigue resistance | High                      | Moderate                         | Low                               |
+| Colour             | Red (rich in myoglobin)   | Pink                             | White                             |
+| Mitochondria       | Many                      | Moderate                         | Few                               |
+| Energy source      | Aerobic                   | Aerobic and anaerobic            | Anaerobic (glycolysis)            |
+| Primary fuel       | Fatty acids, glucose      | Glucose, glycogen                | Glycogen, phosphocreatine         |
+| Example activity   | Marathon running, posture | Sprinting, swimming              | Weightlifting, jumping            |
 
 ## Worked Examples
 

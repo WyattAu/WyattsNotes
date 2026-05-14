@@ -1,6 +1,8 @@
 ---
 title: Sequences and Series
-description: "Sequences and Series — Sequences (CED BC Unit 10); Bounded and Monotone Sequences; Common Sequences; Proof: $\frac{n!}{n^n} \to 0$."
+description:
+  "Sequences and Series — Sequences (CED BC Unit 10); Bounded and Monotone Sequences; Common
+  Sequences; Proof: $\frac{n!}{n^n} \to 0$."
 date: 2026-04-14
 tags:
   - Mathematics
@@ -9,11 +11,13 @@ categories:
   - Mathematics
 slug: sequences-and-series
 ---
+
 ## Sequences (CED BC Unit 10)
 
 A **sequence** is an ordered list of numbers: $a_1, a_2, a_3, \ldots$. Formally, a sequence is a
 Function from the positive integers (or a subset thereof) to the real numbers:
-$a \colon \mathbb{'\{'}N{'\}'} \to \mathbb{'\{'}R{'\}'}$Written as $\{a_n\}_{n=1}^{\infty}$ or $\{a_n\}$.
+$a \colon \mathbb{'\{'}N{'\}'} \to \mathbb{'\{'}R{'\}'}$Written as $\{a_n\}_{n=1}^{\infty}$ or
+$\{a_n\}$.
 
 A sequence $\{a_n\}$ **converges** to a limit $L$ if:
 
@@ -21,9 +25,8 @@ $$
 \lim_{n \to \infty} a_n = L
 $$
 
-This means: for every $\epsilon \gt 0$There exists an integer $N$ such that
-$|a_n - L| \lt \epsilon$ for all $n \ge N$. The terms eventually get and stay arbitrarily close to
-$L$.
+This means: for every $\epsilon \gt 0$There exists an integer $N$ such that $|a_n - L| \lt \epsilon$
+for all $n \ge N$. The terms eventually get and stay arbitrarily close to $L$.
 
 If no such limit exists, the sequence **diverges**.
 
@@ -45,16 +48,16 @@ Monotone decreasing sequence that is not bounded below diverges to $-\infty$.
 
 ### Common Sequences
 
-| Sequence | Convergence | Limit |
+| Sequence                               | Convergence | Limit   |
 | -------------------------------------- | ----------- | ------- | --------- | --- |
-| $a_n = \frac{1}{n}$ | Converges | $0$ |
+| $a_n = \frac{1}{n}$                    | Converges   | $0$     |
 | $a_n = r^n$ ($                         | r           | \lt 1$) | Converges | $0$ |
-| $a_n = r^n$ ($                         | r           | \ge 1$) | Diverges | -- |
-| $a_n = \left(1 + \frac{1}{n}\right)^n$ | Converges | $e$ |
-| $a_n = \frac{n!}{n^n}$ | Converges | $0$ |
-| $a_n = (-1)^n$ | Diverges | -- |
-| $a_n = \sqrt{n+1} - \sqrt{n}$ | Converges | $0$ |
-| $a_n = \frac{\ln n}{n}$ | Converges | $0$ |
+| $a_n = r^n$ ($                         | r           | \ge 1$) | Diverges  | --  |
+| $a_n = \left(1 + \frac{1}{n}\right)^n$ | Converges   | $e$     |
+| $a_n = \frac{n!}{n^n}$                 | Converges   | $0$     |
+| $a_n = (-1)^n$                         | Diverges    | --      |
+| $a_n = \sqrt{n+1} - \sqrt{n}$          | Converges   | $0$     |
+| $a_n = \frac{\ln n}{n}$                | Converges   | $0$     |
 
 ### Proof: $\frac{n!}{n^n} \to 0$
 
@@ -76,8 +79,8 @@ By the squeeze theorem, $\frac{n!}{n^n} \to 0$.
 
 Since $\ln n$ grows slower than any positive power of $n$We have $\ln n \lt \sqrt{n}$ for
 Sufficiently large $n$. Therefore
-$0 \lt \frac{\ln n}{n} \lt \frac{\sqrt{n}}{n} = \frac{1}{\sqrt{n}}$And $\frac{1}{\sqrt{n}} \to 0$
-So by the squeeze theorem, $\frac{\ln n}{n} \to 0$.
+$0 \lt \frac{\ln n}{n} \lt \frac{\sqrt{n}}{n} = \frac{1}{\sqrt{n}}$And $\frac{1}{\sqrt{n}} \to 0$ So
+by the squeeze theorem, $\frac{\ln n}{n} \to 0$.
 
 ## Series (CED BC Unit 10)
 
@@ -133,8 +136,8 @@ $$
 $$
 
 Each group exceeds $\frac{1}{2}$:
-$\frac{1}{3} + \frac{1}{4} \gt \frac{1}{4} + \frac{1}{4} = \frac{1}{2}$And so on. Since we can
-Form infinitely many groups each exceeding $\frac{1}{2}$The partial sums diverge to $+\infty$.
+$\frac{1}{3} + \frac{1}{4} \gt \frac{1}{4} + \frac{1}{4} = \frac{1}{2}$And so on. Since we can Form
+infinitely many groups each exceeding $\frac{1}{2}$The partial sums diverge to $+\infty$.
 
 ## Geometric Series (CED BC Unit 10.2)
 
@@ -347,8 +350,8 @@ The ratio test is especially useful when the terms involve factorials or exponen
 Ratio tends to simplify dramatically.
 
 **Why it connects to geometric series.** If $\left|\frac{a_{n+1}}{a_n}\right| \to L \lt 1$Then for
-Large $n$ the terms behave like a geometric series with ratio $L$And geometric series converge
-When the ratio is less than 1.
+Large $n$ the terms behave like a geometric series with ratio $L$And geometric series converge When
+the ratio is less than 1.
 
 :::info[Example]
 
@@ -418,7 +421,7 @@ At least 1000 terms are needed.
 
 - **Absolutely convergent:** $\displaystyle\sum |a_n|$ converges.
 - **Conditionally convergent:** $\displaystyle\sum a_n$ converges but $\displaystyle\sum |a_n|$
- diverges.
+  diverges.
 
 **Theorem.** If a series converges absolutely, it converges.
 
@@ -462,10 +465,10 @@ Convergence**:
 - Use the ratio test to find $R$: $\displaystyle R = \frac{1}{\lim_{n \to \infty} |c_{n+1}/c_n|}$.
 - Check the endpoints separately (the ratio test is inconclusive when $L = 1$).
 
-| Case | Interval of Convergence |
+| Case                 | Interval of Convergence             |
 | -------------------- | ----------------------------------- |
-| $R = 0$ | Single point $\{a\}$ |
-| $R = \infty$ | $(-\infty, \infty)$ |
+| $R = 0$              | Single point $\{a\}$                |
+| $R = \infty$         | $(-\infty, \infty)$                 |
 | $0 \lt R \lt \infty$ | Check endpoints of $(a - R, a + R)$ |
 
 :::info[Example]
@@ -604,8 +607,8 @@ $$
 
 ### Deriving Maclaurin Series by Substitution
 
-You do not need to compute derivatives from scratch every time. If you know the series for $e^u$
-You can substitute $u = -x^2$ to get the series for $e^{-x^2}$.
+You do not need to compute derivatives from scratch every time. If you know the series for $e^u$ You
+can substitute $u = -x^2$ to get the series for $e^{-x^2}$.
 
 :::info[Example]
 
@@ -677,28 +680,28 @@ $$
 ## Common Pitfalls
 
 1. **Confusing sequences and series.** A sequence is a list; a series is a sum. A convergent
- sequence does not imply a convergent series (e.g., $a_n = \frac{1}{n}$ converges to 0, but
- $\sum \frac{1}{n}$ diverges).
+   sequence does not imply a convergent series (e.g., $a_n = \frac{1}{n}$ converges to 0, but
+   $\sum \frac{1}{n}$ diverges).
 
 2. **Using the $n$Th-term test incorrectly.** $\lim a_n = 0$ does not prove convergence (e.g.,
- harmonic series). The test only detects divergence.
+   harmonic series). The test only detects divergence.
 
 3. **Forgetting to check endpoints** of the interval of convergence for power series. The ratio test
- always gives $L = 1$ at the endpoints, so you must use a different test.
+   always gives $L = 1$ at the endpoints, so you must use a different test.
 
 4. **Misidentifying the center** of a Taylor series. For $\sum c_n(x - 3)^n$The center is $a = 3$.
 
 5. **Applying the ratio test when $L = 1$.** The test is inconclusive; use a different test
- (comparison, integral, alternating series).
+   (comparison, integral, alternating series).
 
 6. **Confusing absolute and conditional convergence.** An alternating harmonic series converges
- conditionally, not absolutely. Only absolutely convergent series can be freely rearranged.
+   conditionally, not absolutely. Only absolutely convergent series can be freely rearranged.
 
 7. **Computing Taylor series coefficients incorrectly.** Always use $c_n = \frac{f^{(n)}(a)}{n!}$
- not just $f^{(n)}(a)$. Forgetting to divide by $n!$ is a common mistake.
+   not just $f^{(n)}(a)$. Forgetting to divide by $n!$ is a common mistake.
 
 8. **Assuming convergence at endpoints.** The interval of convergence may be open, closed, or
- half-open at each endpoint. You must test each one individually.
+   half-open at each endpoint. You must test each one individually.
 
 ## Practice Questions
 
@@ -709,10 +712,10 @@ $$
 3. Find the Maclaurin series for $f(x) = x e^x$.
 
 4. How many terms of $\displaystyle\sum_{n=1}^{\infty} \frac{(-1)^n}{n^2}$ are needed to approximate
- the sum with error less than $0.01$?
+   the sum with error less than $0.01$?
 
 5. Use the limit comparison test to determine whether
- $\displaystyle\sum_{n=1}^{\infty} \frac{5}{2n^2 - 3n + 1}$ converges.
+   $\displaystyle\sum_{n=1}^{\infty} \frac{5}{2n^2 - 3n + 1}$ converges.
 
 6. Find the Taylor series for $\ln x$ centered at $a = 1$ and determine its radius of convergence.
 
@@ -721,21 +724,22 @@ $$
 8. Use the Maclaurin series for $\cos x$ to approximate $\cos(0.2)$ with error less than $10^{-6}$.
 
 9. Determine whether $\displaystyle\sum_{n=1}^{\infty} \frac{n}{e^n}$ converges using the ratio
- test.
+   test.
 
 10. Find the Maclaurin series for $\frac{x}{1-x^2}$ and determine its interval of convergence.
 
 11. Express $0.\overline{271}$ as a fraction using geometric series.
 
 12. Use the alternating series estimation theorem to bound the error in approximating
- $\displaystyle\sum_{n=1}^{\infty} \frac{(-1)^n}{n^3}$ by its first 10 terms.
+    $\displaystyle\sum_{n=1}^{\infty} \frac{(-1)^n}{n^3}$ by its first 10 terms.
 
 ## Practice Problems
 
 <details>
 <summary>Question 1: Taylor series expansion</summary>
 
-Find the first four nonzero terms of the Maclaurin series for $f(x) = \ln(1 + x)$ and use it to approximate $\ln(1.1)$.
+Find the first four nonzero terms of the Maclaurin series for $f(x) = \ln(1 + x)$ and use it to
+approximate $\ln(1.1)$.
 
 </details>
 
@@ -774,21 +778,24 @@ $a_n = \frac{2^n x^n}{n!}$.
 
 $\displaystyle L = \lim_{n \to \infty} \left|\frac{a_{n+1}}{a_n}\right| = \lim_{n \to \infty} \left|\frac{2^{n+1} x^{n+1} / (n+1)!}{2^n x^n / n!}\right| = \lim_{n \to \infty} \frac{2|x|}{n+1} = 0$.
 
-Since $L = 0 \lt 1$ for all $x$The radius of convergence is $R = \infty$. The series converges for all real $x$. (This is the Maclaurin series for $e^{2x}$.)
+Since $L = 0 \lt 1$ for all $x$The radius of convergence is $R = \infty$. The series converges for
+all real $x$. (This is the Maclaurin series for $e^{2x}$.)
 
 </details>
 
 <details>
 <summary>Question 3: Alternating series</summary>
 
-Determine whether $\displaystyle\sum_{n=1}^{\infty} \frac{(-1)^{n+1}}{\sqrt{n}}$ converges absolutely, converges conditionally, or diverges.
+Determine whether $\displaystyle\sum_{n=1}^{\infty} \frac{(-1)^{n+1}}{\sqrt{n}}$ converges
+absolutely, converges conditionally, or diverges.
 
 </details>
 
 <details>
 <summary>Answer</summary>
 
-Alternating series test: $a_n = \frac{1}{\sqrt{n}}$ is positive, decreasing, and $\lim_{n \to \infty} \frac{1}{\sqrt{n}} = 0$. The alternating series converges.
+Alternating series test: $a_n = \frac{1}{\sqrt{n}}$ is positive, decreasing, and
+$\lim_{n \to \infty} \frac{1}{\sqrt{n}} = 0$. The alternating series converges.
 
 Absolute convergence: $\sum \frac{1}{\sqrt{n}}$ is a p-series with $p = 1/2 \lt 1$So it diverges.
 
@@ -799,7 +806,8 @@ Therefore, the series converges conditionally (but not absolutely).
 <details>
 <summary>Question 4: Power series representation</summary>
 
-Find the power series representation for $\displaystyle\frac{1}{(1-x)^2}$ and determine its interval of convergence.
+Find the power series representation for $\displaystyle\frac{1}{(1-x)^2}$ and determine its interval
+of convergence.
 
 </details>
 
@@ -808,11 +816,13 @@ Find the power series representation for $\displaystyle\frac{1}{(1-x)^2}$ and de
 
 We know $\frac{1}{1-x} = \sum_{n=0}^{\infty} x^n$ for $|x| \lt 1$.
 
-Differentiate both sides: $\frac{1}{(1-x)^2} = \sum_{n=1}^{\infty} nx^{n-1} = \sum_{n=0}^{\infty} (n+1)x^n$.
+Differentiate both sides:
+$\frac{1}{(1-x)^2} = \sum_{n=1}^{\infty} nx^{n-1} = \sum_{n=0}^{\infty} (n+1)x^n$.
 
 Interval of convergence: $|x| \lt 1$Or $(-1, 1)$.
 
-Check endpoints: at $x = 1$Series is $\sum (n+1)$ which diverges. At $x = -1$Series is $\sum (-1)^n(n+1)$ which diverges by the divergence test.
+Check endpoints: at $x = 1$Series is $\sum (n+1)$ which diverges. At $x = -1$Series is
+$\sum (-1)^n(n+1)$ which diverges by the divergence test.
 
 </details>
 
@@ -838,14 +848,15 @@ $\displaystyle\sum_{n=1}^{\infty} \frac{1}{n(n+1)} = \lim_{N \to \infty} \left(1
 
 ---
 
-:::tip
-Diagnostic Test
-Ready to test your understanding of **Sequences and Series**? The [diagnostic test](/docs/qualifications/ap/maths/diagnostics/diag-sequences-series) contains the hardest questions within the AP specification for this topic, each with a full worked solution.
+:::tip Diagnostic Test Ready to test your understanding of **Sequences and Series**? The
+[diagnostic test](/docs/qualifications/ap/maths/diagnostics/diag-sequences-series) contains the
+hardest questions within the AP specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Sequences and Series with other AP Calculus topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Sequences
+and Series with other AP Calculus topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/qualifications/ap/maths/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/qualifications/ap/maths/diagnostics/diagnostic-guide) for instructions
+on self-marking and building a personal test matrix. :::
 
 ## Summary
 

@@ -1,11 +1,14 @@
 ---
 title: JIT Compilation and Deoptimization
-description: "JIT Compilation and Deoptimization — Interpreter vs JIT Compilation; C1 and C2 Compilers; Tiered Compilation; Tiered compilation is the default since Java 8."
+description:
+  'JIT Compilation and Deoptimization — Interpreter vs JIT Compilation; C1 and C2 Compilers; Tiered
+  Compilation; Tiered compilation is the default since Java 8.'
 date: 2026-04-03T00:00:00.000Z
 tags: ['java']
 categories: ['java']
 slug: jit-compilation
 ---
+
 ## Interpreter vs JIT Compilation
 
 Java source code is compiled to bytecode (`.class` files) by `javac`. The JVM then has two ways to
@@ -29,7 +32,7 @@ This hybrid approach gives you:
 - **Fast startup**: The JVM starts interpreting immediately without waiting for compilation.
 - **Peak performance**: Hot methods are compiled to optimized native code.
 - **Profile-guided optimization**: The JIT optimizes based on actual runtime behavior (which
- branches are taken, which types appear, which methods are called).
+  branches are taken, which types appear, which methods are called).
 
 ## C1 and C2 Compilers
 
@@ -75,8 +78,8 @@ java -XX:TieredStopAtLevel=1 MyApp
 ### Method Invocation Counters
 
 Each method has an invocation counter. Each time the method is called (via `invokevirtual`
-`invokeinterface``invokestatic`Or `invokespecial`), the counter increments. When the counter
-Crosses the compilation threshold, the method is queued for compilation.
+`invokeinterface``invokestatic`Or `invokespecial`), the counter increments. When the counter Crosses
+the compilation threshold, the method is queued for compilation.
 
 ```bash
 # Default compilation threshold
@@ -160,7 +163,7 @@ Object does not escape (it is only used locally), the JIT can:
 
 1. **Eliminate the allocation entirely** (stack allocation or scalar replacement).
 2. **Remove synchronization** on objects that do not escape (because no other thread can access
- them).
+   them).
 3. **Eliminate field accesses** and replace them with local variables.
 
 ```java
@@ -240,7 +243,7 @@ Code that cannot be reached or whose results are never used is eliminated entire
 - Unreachable branches after constant condition evaluation.
 - Assignments to local variables that are never read.
 - Method calls whose return values are discarded and that have no side effects (after escape
- analysis confirms the receiver does not escape).
+  analysis confirms the receiver does not escape).
 
 ```java
 public int optimized(boolean flag) {
@@ -318,13 +321,13 @@ Execution.
 Common triggers:
 
 - **Class loading**: A new subclass is loaded that overrides a method that was inlined. The inlined
- code is no longer correct.
+  code is no longer correct.
 - **Abstract method implementation**: An abstract method was called on a concrete type, and a new
- implementation is loaded.
+  implementation is loaded.
 - **Interface method dispatch**: A class implements a new interface, changing the dispatch target.
 - **Field type change**: A field that always contained `String` suddenly contains `Integer`.
 - **OSR entry/exit**: OSR-compiled code may be deoptimized when the loop exits and execution returns
- to the interpreter.
+  to the interpreter.
 
 ### How Deoptimization Works
 
@@ -333,7 +336,7 @@ When deoptimization is triggered:
 1. The JVM walks the stack of the thread executing the invalid compiled code.
 2. It identifies all frames that contain invalid assumptions.
 3. For each frame, it reconstructs the interpreter state (local variables, operand stack, program
- counter) from the compiled code state.
+   counter) from the compiled code state.
 4. It replaces the compiled frames with interpreter frames.
 5. Execution continues in the interpreter from the point where the invalid assumption was detected.
 
@@ -372,25 +375,25 @@ native-image -H:Name=myapp -cp myapp.jar com.example.Main
 
 - **Instant startup**: No interpretation, no JIT warmup. The application starts at full speed.
 - **Small memory footprint**: No JIT compiler, no code cache, no profiling infrastructure. Typical
- native images use 30-50 MB of RSS.
+  native images use 30-50 MB of RSS.
 - **Fast container startup**: Ideal for serverless, CLI tools, and Kubernetes where startup time
- matters.
+  matters.
 - **No warmup phase**: Performance is predictable from the first request.
 
 ### Disadvantages
 
 - **No profile-guided optimization**: The AOT compiler does not have runtime profiling data. It
- cannot inline virtual calls that are monomorphic at runtime, cannot eliminate branches that are
- never taken, and cannot perform escape analysis based on actual allocation patterns.
+  cannot inline virtual calls that are monomorphic at runtime, cannot eliminate branches that are
+  never taken, and cannot perform escape analysis based on actual allocation patterns.
 - **Closed-world assumption**: All classes must be known at build time. Reflection, dynamic proxies,
- and classpath scanning require explicit configuration (reflection configs, resource configs, proxy
- configs). This is a significant maintenance burden for frameworks that rely heavily on reflection
- (Spring, Hibernate, Jackson).
+  and classpath scanning require explicit configuration (reflection configs, resource configs, proxy
+  configs). This is a significant maintenance burden for frameworks that rely heavily on reflection
+  (Spring, Hibernate, Jackson).
 - **Peak throughput is lower**: Native images achieve 60-80% of JIT peak throughput for
- compute-bound workloads. For I/O-bound workloads, the difference is negligible.
+  compute-bound workloads. For I/O-bound workloads, the difference is negligible.
 - **Longer build times**: AOT compilation is slow (seconds to minutes for large applications).
 - **Limited debugging**: Stack traces from native images are less informative than JIT stack traces.
- Profiling tools (VisualVM, async profiler) have limited support.
+  Profiling tools (VisualVM, async profiler) have limited support.
 
 ### When to Use Native Image
 
@@ -530,17 +533,17 @@ jmc app.jfr
 
 When profiling for performance:
 
-1. **Focus on the hottest method**. The Pareto principle applies: 80% of CPU time is spent
- in 20% of methods.
+1. **Focus on the hottest method**. The Pareto principle applies: 80% of CPU time is spent in 20% of
+   methods.
 2. **Check inlining**. If a hot method is a small wrapper that calls another method, verify the
- callee is inlined. Use `-XX:+PrintInlining` to check.
+   callee is inlined. Use `-XX:+PrintInlining` to check.
 3. **Check for GC pressure**. If GC pause times are a significant fraction of total runtime, the
- application is allocating too much. Reduce allocation (object pooling, primitive arrays instead
- of boxed types, reuse buffers).
+   application is allocating too much. Reduce allocation (object pooling, primitive arrays instead
+   of boxed types, reuse buffers).
 4. **Check for lock contention**. Thread dumps or JFR lock events show where threads are blocked.
- Reduce lock scope, use `ConcurrentHashMap`Or switch to lock-free algorithms.
+   Reduce lock scope, use `ConcurrentHashMap`Or switch to lock-free algorithms.
 5. **Check for I/O waits**. If threads spend most of their time in `Socket` or `FileChannel` reads,
- the bottleneck is I/O, not CPU. Optimize queries, add caching, or use async I/O.
+   the bottleneck is I/O, not CPU. Optimize queries, add caching, or use async I/O.
 
 ## Common Pitfalls
 
@@ -617,10 +620,10 @@ Compiled (use `-XX:+PrintCompilation`).
 ## See Also
 
 - [Class Loading and Memory Model](../09-jvm-internals/01-class-loading-memory.md) -- how class
- loading and GC interact with JIT compilation
+  loading and GC interact with JIT compilation
 - [Concurrency](../06-concurrency/01-concurrency.md) -- JIT optimization of concurrent code
 - [Virtual Threads and Structured Concurrency](../08-modern-java/02-virtual-threads-structured-concurrency.md)
- -- JIT behavior with virtual threads
+  -- JIT behavior with virtual threads
 - [Style and Patterns](../07-best-practices/01-style-and-patterns.md) -- writing JIT-friendly code
 
 ## Summary

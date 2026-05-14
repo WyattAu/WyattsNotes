@@ -1,9 +1,12 @@
 ---
 id: api-security
 title: API Security
-description: "API Security — Stateless Authentication Per Request; Authentication Methods; API Keys; Simple API key in header with worked examples and exam-style questions."
+description:
+  'API Security — Stateless Authentication Per Request; Authentication Methods; API Keys; Simple API
+  key in header with worked examples and exam-style questions.'
 slug: api-security
 ---
+
 ## REST API Security Fundamentals
 
 REST APIs are stateless by design: each request must contain all information needed for
@@ -43,8 +46,8 @@ def validate_api_key():
 :::warning
 
 API keys provide weak authentication: they are long-lived shared secrets that cannot be scoped to a
-User or rotated. Use them only for server-to-server communication where OAuth 2.0 is
-Impractical. Prefer OAuth 2.0 Bearer tokens for user-facing APIs.
+User or rotated. Use them only for server-to-server communication where OAuth 2.0 is Impractical.
+Prefer OAuth 2.0 Bearer tokens for user-facing APIs.
 
 :::
 
@@ -127,12 +130,12 @@ server {
 }
 ```
 
-| Method | Security Level | Best For |
+| Method       | Security Level | Best For                          |
 | ------------ | -------------- | --------------------------------- |
-| API Key | Low | Internal services, prototyping |
-| Bearer Token | High | User-facing APIs, microservices |
-| HMAC | High | API gateways, financial APIs |
-| mTLS | Very High | Service mesh, zero-trust networks |
+| API Key      | Low            | Internal services, prototyping    |
+| Bearer Token | High           | User-facing APIs, microservices   |
+| HMAC         | High           | API gateways, financial APIs      |
+| mTLS         | Very High      | Service mesh, zero-trust networks |
 
 ## Authorization
 
@@ -260,11 +263,11 @@ X-RateLimit-Reset: 1700000000
 Retry-After: 30
 ```
 
-| Strategy | Per-User | Per-IP | Notes |
+| Strategy       | Per-User | Per-IP | Notes                              |
 | -------------- | -------- | ------ | ---------------------------------- |
-| Token bucket | Yes | Yes | Smooth rate, burst allowed |
-| Sliding window | Yes | Yes | Precise, memory-intensive |
-| Fixed window | Yes | Yes | Simple, burst at window boundaries |
+| Token bucket   | Yes      | Yes    | Smooth rate, burst allowed         |
+| Sliding window | Yes      | Yes    | Precise, memory-intensive          |
+| Fixed window   | Yes      | Yes    | Simple, burst at window boundaries |
 
 :::info
 
@@ -352,11 +355,11 @@ CORS(app, origins=ALLOWED_ORIGINS, methods=['GET', 'POST', 'PUT', 'DELETE'],
 
 ## API Versioning
 
-| Strategy | Example | Pros | Cons |
+| Strategy        | Example                               | Pros            | Cons                   |
 | --------------- | ------------------------------------- | --------------- | ---------------------- |
-| URL path | `/api/v1/orders` | Simple, visible | URL changes |
-| Header | `Accept: application/vnd.api.v1+json` | Clean URLs | Hidden, harder to test |
-| Query parameter | `/api/orders?version=1` | Easy to add | Cache-busting issues |
+| URL path        | `/api/v1/orders`                      | Simple, visible | URL changes            |
+| Header          | `Accept: application/vnd.api.v1+json` | Clean URLs      | Hidden, harder to test |
+| Query parameter | `/api/orders?version=1`               | Easy to add     | Cache-busting issues   |
 
 ```python
 # URL path versioning (recommended for most APIs)
@@ -421,10 +424,10 @@ def list_orders():
     })
 ```
 
-| Method | Performance at page 10000 | Consistency on inserts/deletes | URL bookmarkable |
+| Method | Performance at page 10000 | Consistency on inserts/deletes | URL bookmarkable    |
 | ------ | ------------------------- | ------------------------------ | ------------------- |
-| Offset | Slow (scans 10000+ rows) | Unstable (rows shift) | Yes |
-| Cursor | Fast (index lookup) | Stable (deterministic) | No (cursor changes) |
+| Offset | Slow (scans 10000+ rows)  | Unstable (rows shift)          | Yes                 |
+| Cursor | Fast (index lookup)       | Stable (deterministic)         | No (cursor changes) |
 
 ## Idempotency Keys
 
@@ -503,13 +506,13 @@ API Gateway responsibilities:
 
 ### Gateway Implementation Options
 
-| Option | Complexity | Customization | Use Case |
+| Option          | Complexity | Customization      | Use Case                     |
 | --------------- | ---------- | ------------------ | ---------------------------- |
-| Kong | Medium | High (Lua plugins) | Large-scale, extensible |
-| AWS API Gateway | Low | Medium | AWS ecosystem |
-| Envoy | High | Very High | Service mesh, gRPC |
-| Nginx | Medium | High | General purpose, lightweight |
-| Traefik | Low | Medium | Container environments |
+| Kong            | Medium     | High (Lua plugins) | Large-scale, extensible      |
+| AWS API Gateway | Low        | Medium             | AWS ecosystem                |
+| Envoy           | High       | Very High          | Service mesh, gRPC           |
+| Nginx           | Medium     | High               | General purpose, lightweight |
+| Traefik         | Low        | Medium             | Container environments       |
 
 ## GraphQL Security
 

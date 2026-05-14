@@ -1,6 +1,8 @@
 ---
 title: Interfaces
-description: "Interfaces — Interface Basics; Interface Composition; The Empty Interface; When to Use `any` with worked examples and exam-style questions."
+description:
+  'Interfaces — Interface Basics; Interface Composition; The Empty Interface; When to Use `any` with
+  worked examples and exam-style questions.'
 slug: interfaces
 date: 2026-04-18
 tags:
@@ -8,6 +10,7 @@ tags:
 categories:
   - Go
 ---
+
 ## Interface Basics
 
 An interface in Go defines a set of method signatures. A type satisfies an interface by implementing
@@ -203,9 +206,9 @@ var s Speaker = p // type is *Dog, value is nil
 fmt.Println(s == nil) // false!
 ```
 
-This is a common source of bugs. The interface is not nil because its type is `*Dog`Even though
-The value is nil. Calling a method on it works (the receiver is nil inside the method), but
-Comparing the interface to `nil` does not detect it.
+This is a common source of bugs. The interface is not nil because its type is `*Dog`Even though The
+value is nil. Calling a method on it works (the receiver is nil inside the method), but Comparing
+the interface to `nil` does not detect it.
 
 ```go
 func process(s Speaker) {
@@ -233,14 +236,14 @@ Initialized.
 
 Go's standard library defines several pervasive interfaces:
 
-| Interface | Methods | Used By |
-| ---------------- | -------------------------------------------------- | ------------------------------ |
-| `io.Reader` | `Read(p []byte) (n int, err error)` | Files, network connections |
-| `io.Writer` | `Write(p []byte) (n int, err error)` | Files, buffers, HTTP responses |
-| `io.Closer` | `Close() error` | Files, connections |
-| `fmt.Stringer` | `String() string` | Custom string representation |
-| `error` | `Error() string` | Error values |
-| `sort.Interface` | `Len() int``Less(i,j int) bool``Swap(i,j int)` | Sorting |
+| Interface        | Methods                                        | Used By                        |
+| ---------------- | ---------------------------------------------- | ------------------------------ |
+| `io.Reader`      | `Read(p []byte) (n int, err error)`            | Files, network connections     |
+| `io.Writer`      | `Write(p []byte) (n int, err error)`           | Files, buffers, HTTP responses |
+| `io.Closer`      | `Close() error`                                | Files, connections             |
+| `fmt.Stringer`   | `String() string`                              | Custom string representation   |
+| `error`          | `Error() string`                               | Error values                   |
+| `sort.Interface` | `Len() int``Less(i,j int) bool``Swap(i,j int)` | Sorting                        |
 
 Implementing `fmt.Stringer`:
 
@@ -257,23 +260,23 @@ fmt.Println(IPAddr{127, 0, 0, 1}) // 127.0.0.1
 ## Common Pitfalls
 
 1. **Nil interface with non-nil concrete type.** An interface holding a `*T` where `T` is nil is not
- equal to `nil`. Use reflection (`reflect.ValueOf(i).IsNil()`) or check the concrete value if this
- situation is possible.
+   equal to `nil`. Use reflection (`reflect.ValueOf(i).IsNil()`) or check the concrete value if this
+   situation is possible.
 
 2. **Pointer receiver methods and interface satisfaction.** If an interface method has a pointer
- receiver, only `*T` satisfies the interface, not `T`. This is the single most common interface
- compilation error.
+   receiver, only `*T` satisfies the interface, not `T`. This is the single most common interface
+   compilation error.
 
 3. **Overusing `any`.** Passing `any` through function signatures defeats the purpose of the type
- system. Prefer specific interfaces. Use generics (Go 1.18+) when you need to abstract over types
- while maintaining type safety.
+   system. Prefer specific interfaces. Use generics (Go 1.18+) when you need to abstract over types
+   while maintaining type safety.
 
 4. **Duck typing confusion.** Go interfaces are structural, not nominal. Two independently defined
- types with the same method set satisfy the same interface. This is a feature, but it means you
- can accidentally satisfy an interface you did not intend to.
+   types with the same method set satisfy the same interface. This is a feature, but it means you
+   can accidentally satisfy an interface you did not intend to.
 
 5. **Empty interface in slices.** `[]any` is a common pattern but loses type safety. Since Go 1.18,
- prefer generics: `[]T` where `T` is a type parameter.
+   prefer generics: `[]T` where `T` is a type parameter.
 
 ## Summary
 

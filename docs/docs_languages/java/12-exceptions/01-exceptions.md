@@ -1,6 +1,8 @@
 ---
 title: Exception Handling
-description: "Exception Handling — Exception Hierarchy; When to Use Checked vs Unchecked; Common Exceptions; try-catch-finally Mechanics."
+description:
+  'Exception Handling — Exception Hierarchy; When to Use Checked vs Unchecked; Common Exceptions;
+  try-catch-finally Mechanics.'
 date: 2026-04-04T00:00:00.000Z
 tags:
   - Java
@@ -8,6 +10,7 @@ categories:
   - Java
 slug: exception-handling
 ---
+
 ## Exception Hierarchy
 
 ```
@@ -38,20 +41,20 @@ Throwable
 And `Exception` is the first critical decision point:
 
 - **`Error`**: JVM-level failures. Application code should almost never catch these. If you catch
- `OutOfMemoryError`You are guessing about JVM state invariants that may no longer hold.
+  `OutOfMemoryError`You are guessing about JVM state invariants that may no longer hold.
 - **`Exception`**: Application-level failures. This is where you design error handling.
 
-Within `Exception`The `RuntimeException` subclass marks **unchecked** exceptions — the compiler
-Does not force you to declare or handle them. Everything else is **checked**.
+Within `Exception`The `RuntimeException` subclass marks **unchecked** exceptions — the compiler Does
+not force you to declare or handle them. Everything else is **checked**.
 
 ### When to Use Checked vs Unchecked
 
-| Factor | Checked | Unchecked |
-| -------------------- | -------------------------------------------- | -------------------------------------------------- |
-| Recovery expected? | Yes — caller can meaningfully handle it | No — a programming error |
-| Compiler enforcement | Required `throws` declaration | No declaration needed |
-| API surface impact | Propagates through every caller in the chain | Stops where it stops |
-| Example | `IOException``SQLException` | `NullPointerException``IllegalArgumentException` |
+| Factor               | Checked                                      | Unchecked                                        |
+| -------------------- | -------------------------------------------- | ------------------------------------------------ |
+| Recovery expected?   | Yes — caller can meaningfully handle it      | No — a programming error                         |
+| Compiler enforcement | Required `throws` declaration                | No declaration needed                            |
+| API surface impact   | Propagates through every caller in the chain | Stops where it stops                             |
+| Example              | `IOException``SQLException`                  | `NullPointerException``IllegalArgumentException` |
 
 The pragmatic rule: use checked exceptions for conditions where the caller **reasonably can and
 Should** take corrective action. Use unchecked exceptions for programming errors and precondition
@@ -189,9 +192,9 @@ public class DebugResource implements AutoCloseable {
 ### finally Block Semantics and Gotchas
 
 `finally` executes unless the JVM exits (via `System.exit()` or a fatal `Error` that terminates the
-Thread). An `OutOfMemoryError` does not prevent `finally` from running, but a truly fatal
-Error (e.g., `StackOverflowError` leaving no stack space, or `VirtualMachineError`) can. There are
-Also subtle traps:
+Thread). An `OutOfMemoryError` does not prevent `finally` from running, but a truly fatal Error
+(e.g., `StackOverflowError` leaving no stack space, or `VirtualMachineError`) can. There are Also
+subtle traps:
 
 **Gotcha: Return in finally silently discards the try/catch return value**
 
@@ -413,19 +416,19 @@ Choose fail-safe only when partial results are meaningful and the cost of failur
 ### Arguments For Checked Exceptions
 
 - **Compiler-enforced documentation**: The method signature tells you what can go wrong without
- reading implementation
+  reading implementation
 - **Handling is mandatory**: Callers cannot accidentally ignore error conditions
 - **Appropriate for recoverable conditions**: `IOException``SQLException` are conditions a
- well-written program should handle
+  well-written program should handle
 
 ### Arguments Against Checked Exceptions
 
 - **Signature pollution**: Adding a checked exception to a low-level method forces every caller up
- the chain to declare or handle it
+  the chain to declare or handle it
 - **Encourages antipatterns**: Developers write `catch (Exception e) {}` or `throws Exception` to
- satisfy the compiler
+  satisfy the compiler
 - **Versioning friction**: Adding a checked exception to an interface method breaks all
- implementations
+  implementations
 - **Lambdas friction**: Checked exceptions are painful with functional interfaces
 
 ### How Modern Java Reduces the Need
@@ -575,13 +578,13 @@ Path is the common case. If exceptions are your normal control flow, you are fig
 
 ### When Exceptions Are Appropriate vs Return Codes
 
-| Criterion | Exceptions | Return Codes |
+| Criterion                        | Exceptions         | Return Codes          |
 | -------------------------------- | ------------------ | --------------------- |
-| Frequency of failure | Rare / exceptional | Common / expected |
-| Performance sensitivity | Low | High |
-| Separation of happy/unhappy path | Clean separation | Mixed in control flow |
-| Forced handling | Yes (checked) | No — ignored |
-| Composability | Breaks lambdas | Composes cleanly |
+| Frequency of failure             | Rare / exceptional | Common / expected     |
+| Performance sensitivity          | Low                | High                  |
+| Separation of happy/unhappy path | Clean separation   | Mixed in control flow |
+| Forced handling                  | Yes (checked)      | No — ignored          |
+| Composability                    | Breaks lambdas     | Composes cleanly      |
 
 Rule of thumb: if it happens more than once per thousand calls on the hot path, consider a return
 Code or `Optional`.

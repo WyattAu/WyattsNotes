@@ -1,6 +1,8 @@
 ---
 title: Reflog
-description: "Reflog — Show with dates (more readable); Show with relative dates; HEAD@{N} — the Nth previous position of HEAD for thorough revision and examination prepa."
+description:
+  'Reflog — Show with dates (more readable); Show with relative dates; HEAD@{N} — the Nth previous
+  position of HEAD for thorough revision and examination prepa.'
 date: 2025-06-03T08:00:00.000Z
 tags:
   - git
@@ -10,11 +12,17 @@ categories:
   - CS
 slug: reflog
 ---
+
 ## What is the Reflog
 
-The **reflog** (reference log) is Git's built-in safety net. It records every change to the HEAD reference and to each branch reference, creating a chronological audit trail of all movements in the repository. Even after operations that appear destructive — `git reset --hard``git rebase``git commit --amend` — the reflog retains a record of where the references were before.
+The **reflog** (reference log) is Git's built-in safety net. It records every change to the HEAD
+reference and to each branch reference, creating a chronological audit trail of all movements in the
+repository. Even after operations that appear destructive —
+`git reset --hard``git rebase``git commit --amend` — the reflog retains a record of where the
+references were before.
 
-Think of the reflog as Git's **undo history**. While `git log` shows the commit history (the DAG), the reflog shows the **reference movement history**.
+Think of the reflog as Git's **undo history**. While `git log` shows the commit history (the DAG),
+the reflog shows the **reference movement history**.
 
 ## How the Reflog Works
 
@@ -29,22 +37,22 @@ a3f2b1c0 HEAD@{3}: checkout: moving from main to feature
 
 Each entry contains:
 
-| Field | Meaning |
+| Field                             | Meaning                                    |
 | --------------------------------- | ------------------------------------------ |
-| `a3f2b1c0` | The commit hash the reference moved **to** |
-| `HEAD@{0}` | The reflog index (0 = most recent) |
-| `rebase -i (finish)` | The operation that caused the move |
-| `returning to refs/heads/feature` | Additional context |
+| `a3f2b1c0`                        | The commit hash the reference moved **to** |
+| `HEAD@{0}`                        | The reflog index (0 = most recent)         |
+| `rebase -i (finish)`              | The operation that caused the move         |
+| `returning to refs/heads/feature` | Additional context                         |
 
 ### Reflog Storage
 
 The reflog is stored as plain text files:
 
-| File | Records movements of |
+| File                           | Records movements of              |
 | ------------------------------ | --------------------------------- |
-| `.git/logs/HEAD` | HEAD (covers all branch switches) |
-| `.git/logs/refs/heads/main` | The `main` branch |
-| `.git/logs/refs/heads/feature` | The `feature` branch |
+| `.git/logs/HEAD`               | HEAD (covers all branch switches) |
+| `.git/logs/refs/heads/main`    | The `main` branch                 |
+| `.git/logs/refs/heads/feature` | The `feature` branch              |
 
 ```bash
 # View the raw reflog file
@@ -155,11 +163,11 @@ $ git branch recovered-work b7e9d4f5
 
 Reflog entries do not persist forever. By default:
 
-| Setting | Default | Meaning |
+| Setting                      | Default | Meaning                                               |
 | ---------------------------- | ------- | ----------------------------------------------------- |
-| `gc.reflogExpire` | 90 days | Reflog entries older than this are expired |
+| `gc.reflogExpire`            | 90 days | Reflog entries older than this are expired            |
 | `gc.reflogExpireUnreachable` | 30 days | Entries pointing to unreachable commits expire sooner |
-| `gc.pruneExpire` | 2 weeks | Unreachable objects are pruned |
+| `gc.pruneExpire`             | 2 weeks | Unreachable objects are pruned                        |
 
 ### When Objects Are Actually Deleted
 
@@ -181,7 +189,8 @@ $ git gc --prune=now
 
 :::warning
 
-`git gc --prune=now` is permanent. After running this, any commits that were only reachable via expired reflog entries are gone forever. Use with extreme caution.
+`git gc --prune=now` is permanent. After running this, any commits that were only reachable via
+expired reflog entries are gone forever. Use with extreme caution.
 
 :::
 
@@ -189,7 +198,8 @@ $ git gc --prune=now
 
 ### 1. Know the Reflog Exists
 
-The reflog is the single most important recovery tool in Git. Memorize `git reflog` — it will save you from almost any accidental data loss.
+The reflog is the single most important recovery tool in Git. Memorize `git reflog` — it will save
+you from almost any accidental data loss.
 
 ### 2. Increase Reflog Retention for Important Branches
 
@@ -200,7 +210,8 @@ $ git config gc.reflogExpire main.1.year.ago
 
 ### 3. Don't Panic
 
-Almost nothing in Git is truly permanent until garbage collection runs. If you accidentally delete, reset, rebase, or amend something, the reflog is your first line of defense.
+Almost nothing in Git is truly permanent until garbage collection runs. If you accidentally delete,
+reset, rebase, or amend something, the reflog is your first line of defense.
 
 ## Common Pitfalls
 

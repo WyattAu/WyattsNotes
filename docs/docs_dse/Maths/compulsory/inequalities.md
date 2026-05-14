@@ -1,6 +1,8 @@
 ---
 title: Inequalities
-description: "DSE Mathematics inequalities notes covering linear inequalities, quadratic inequalities, absolute value inequalities, systems of inequalities, and optimization"
+description:
+  'DSE Mathematics inequalities notes covering linear inequalities, quadratic inequalities, absolute
+  value inequalities, systems of inequalities, and optimization'
 date: 2025-06-03T16:21:00.000Z
 tags:
   - Maths
@@ -11,7 +13,7 @@ slug: inequalities
 ---
 
 An inequality states that one expression is greater than or less than another. Inequalities arise
- when finding the [domain](functions#definition-of-a-function) and
+when finding the [domain](functions#definition-of-a-function) and
 [range](functions#definition-of-a-function) of functions, and are closely related to
 [quadratic functions](functions#quadratic-functions) through their graphical interpretation.
 
@@ -138,11 +140,11 @@ Parabola lies **below** the $x$-axis.
 The [discriminant](functions#discriminant) $\Delta = b^2 - 4ac$ determines the number of
 Intersections with the $x$-axis:
 
-| Condition | Parabola and $x$-axis | $ax^2 + bx + c > 0$ (for $a > 0$) |
+| Condition    | Parabola and $x$-axis                             | $ax^2 + bx + c > 0$ (for $a > 0$)              |
 | ------------ | ------------------------------------------------- | ---------------------------------------------- |
-| $\Delta > 0$ | Two distinct intersections at $x = \alpha, \beta$ | $x < \alpha$ or $x > \beta$ |
-| $\Delta = 0$ | One intersection at $x = \alpha$ | $x \neq \alpha$ (all real $x$ except $\alpha$) |
-| $\Delta < 0$ | No intersection | All real $x$ (always true) |
+| $\Delta > 0$ | Two distinct intersections at $x = \alpha, \beta$ | $x < \alpha$ or $x > \beta$                    |
+| $\Delta = 0$ | One intersection at $x = \alpha$                  | $x \neq \alpha$ (all real $x$ except $\alpha$) |
+| $\Delta < 0$ | No intersection                                   | All real $x$ (always true)                     |
 
 ### Solving Method
 
@@ -226,8 +228,8 @@ $\left(-\infty, -\dfrac{1}{2}\right) \cup (2, \infty)$.
 
 ## Absolute Value Inequalities
 
-The absolute value of a real number $x$Denoted $|x|$Represents its distance from zero on the
-Number line. This geometric interpretation is the key to solving absolute value inequalities.
+The absolute value of a real number $x$Denoted $|x|$Represents its distance from zero on the Number
+line. This geometric interpretation is the key to solving absolute value inequalities.
 
 ### Fundamental Forms
 
@@ -504,8 +506,7 @@ Solution: $k < -2$ or $k > 3$I.e., $(-\infty, -2) \cup (3, \infty)$.
 
 </details>
 
-7. **Question:** Solve the system of inequalities $x^2 - 5x + 4 \leq 0$$|x - 2| \leq 3$And
-$x > 0$.
+7. **Question:** Solve the system of inequalities $x^2 - 5x + 4 \leq 0$$|x - 2| \leq 3$And $x > 0$.
 <details>
 <summary>Answer</summary>
 From $x^2 - 5x + 4 \leq 0$: $(x-1)(x-4) \leq 0 \implies 1 \leq x \leq 4$.
@@ -617,14 +618,15 @@ Solution: $\left(\dfrac{3 - \sqrt{17}}{2},\; \dfrac{3 + \sqrt{17}}{2}\right)$.
 
 ---
 
-:::tip
-Diagnostic Test
-Ready to test your understanding of **Inequalities**? The [diagnostic test](/docs/dse/Maths/diagnostics/diag-inequalities) contains the hardest questions within the DSE specification for this topic, each with a full worked solution.
+:::tip Diagnostic Test Ready to test your understanding of **Inequalities**? The
+[diagnostic test](/docs/dse/Maths/diagnostics/diag-inequalities) contains the hardest questions
+within the DSE specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Inequalities with other DSE mathematics topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine
+Inequalities with other DSE mathematics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/dse/Maths/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/dse/Maths/diagnostics/diagnostic-guide) for instructions on
+self-marking and building a personal test matrix. :::
 
 ---
 
@@ -652,8 +654,8 @@ Factor: $\dfrac{(x - 1)(x + 2)}{x + 1} \leq 0$.
 Critical points: $x = -2$$x = -1$$x = 1$. Note $x \neq -1$.
 
 | Interval | $(-\infty, -2)$ | $(-2, -1)$ | $(-1, 1)$ | $(1, \infty)$ |
-|---|---|---|---|---|
-| Sign | $-$ | $+$ | $-$ | $+$ |
+| -------- | --------------- | ---------- | --------- | ------------- |
+| Sign     | $-$             | $+$        | $-$       | $+$           |
 
 The expression is $\leq 0$ when $x \leq -2$ or $-1 < x \leq 1$.
 
@@ -669,14 +671,16 @@ Solution: $(-\infty, -2] \cup (-1, 1]$.
 
 For inequality problems in DSE Paper 1:
 
-1. When solving quadratic inequalities, always find the roots and sketch the parabola or draw a sign chart.
+1. When solving quadratic inequalities, always find the roots and sketch the parabola or draw a sign
+   chart.
 2. When multiplying or dividing by a negative, explicitly state that the inequality sign reverses.
 3. For rational inequalities, identify points where the denominator is zero and exclude them.
 4. For system of inequalities, draw each solution on a number line and identify the intersection.
 
 ### Significant Figures
 
-Exact answers are preferred. If an approximate numerical answer is required, use 3 significant figures.
+Exact answers are preferred. If an approximate numerical answer is required, use 3 significant
+figures.
 
 ### Common DSE Question Types
 
@@ -715,7 +719,8 @@ Case 2: $x^2 - 4x + 3 < 0$I.e., $1 < x < 3$.
 
 Combined with $x > \dfrac{5}{3}$: $\dfrac{5}{3} < x < 3$.
 
-The inequality becomes $-(x^2 - 4x + 3) < 3x - 5 \implies -x^2 + 4x - 3 < 3x - 5 \implies -x^2 + x + 2 < 0 \implies x^2 - x - 2 > 0$.
+The inequality becomes
+$-(x^2 - 4x + 3) < 3x - 5 \implies -x^2 + 4x - 3 < 3x - 5 \implies -x^2 + x + 2 < 0 \implies x^2 - x - 2 > 0$.
 
 $(x - 2)(x + 1) > 0 \implies x < -1$ or $x > 2$.
 
@@ -732,7 +737,8 @@ Find the range of $m$ such that $mx^2 + (m - 1)x + m > 0$ for all real $x$.
 <details>
 <summary>Solution</summary>
 
-Case 1: $m = 0$. The inequality becomes $-x > 0 \implies x < 0$Which is not true for all real $x$. Reject.
+Case 1: $m = 0$. The inequality becomes $-x > 0 \implies x < 0$Which is not true for all real $x$.
+Reject.
 
 Case 2: $m \neq 0$. For $mx^2 + (m-1)x + m > 0$ for all real $x$We need $m > 0$ and $\Delta < 0$:
 
@@ -775,8 +781,8 @@ $$\frac{2x - 1}{x + 3} - 1 \geq 0 \implies \frac{2x - 1 - x - 3}{x + 3} \geq 0 \
 Critical points: $x = -3$ (excluded) and $x = 4$ (included).
 
 | Interval | $(-\infty, -3)$ | $(-3, 4)$ | $(4, \infty)$ |
-|---|---|---|---|
-| Sign | $+$ | $-$ | $+$ |
+| -------- | --------------- | --------- | ------------- |
+| Sign     | $+$             | $-$       | $+$           |
 
 Solution: $(-\infty, -3) \cup [4, \infty)$.
 
@@ -828,7 +834,8 @@ Since $t \geq 0$: $0 \leq t < 4$I.e., $|x| < 4 \implies -4 < x < 4$.
 <details>
 <summary>Solution</summary>
 
-$\Delta < 0$: $4(k + 1)^2 - 36 < 0 \implies (k + 1)^2 < 9 \implies -3 < k + 1 < 3 \implies -4 < k < 2$.
+$\Delta < 0$:
+$4(k + 1)^2 - 36 < 0 \implies (k + 1)^2 < 9 \implies -3 < k + 1 < 3 \implies -4 < k < 2$.
 
 </details>
 

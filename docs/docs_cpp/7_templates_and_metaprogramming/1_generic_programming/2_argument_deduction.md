@@ -1,6 +1,8 @@
 ---
 title: Argument Deduction (Class and Function)
-description: "C++: Argument Deduction (Class and Function) — Function Template Argument Deduction; Deduction Rules in Detail; Formal Deduction Algorithm."
+description:
+  'C++: Argument Deduction (Class and Function) — Function Template Argument Deduction; Deduction
+  Rules in Detail; Formal Deduction Algorithm.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -8,6 +10,7 @@ categories:
   - Cpp
 slug: argument-deduction-class-and-function
 ---
+
 # Argument Deduction (Class and Function)
 
 Template argument deduction allows the compiler to infer template parameters from the types of
@@ -55,7 +58,7 @@ Type against it. The rules are:
 
 1. **Top-level CV-qualifiers are stripped** from the argument before matching.
 2. **References are not deduced differently** from non-references at the top level -- `T&` and `T`
- deduce the same `T`.
+   deduce the same `T`.
 3. **Array-to-pointer decay** and **function-to-pointer decay** apply to arguments.
 4. Each deduced template parameter must produce a **consistent type** across all deduction sites.
 
@@ -91,18 +94,18 @@ int main() {
 
 The deduction algorithm [N4950 S13.8.2.1] proceeds as follows:
 
-1. For each function parameter `P_i` and corresponding argument `A_i`The compiler forms a
- deduction pair $\lt P_i, A_i \gt$.
-2. If $P_i$ has the form `T``T&``T&&``const T&`Etc., the compiler deduces `T` from the type
- of $A_i$.
+1. For each function parameter `P_i` and corresponding argument `A_i`The compiler forms a deduction
+   pair $\lt P_i, A_i \gt$.
+2. If $P_i$ has the form `T``T&``T&&``const T&`Etc., the compiler deduces `T` from the type of
+   $A_i$.
 3. If $P_i$ has the form `T[C]` (array of `T` with bound `C`), and $A_i$ is an array of the same
- rank, both `T` and `C` are deduced.
+   rank, both `T` and `C` are deduced.
 4. If $P_i$ has the form `T(...)`A function type, and $A_i$ is a function type of compatible
- signature, `T` is deduced.
+   signature, `T` is deduced.
 5. Top-level cv-qualifiers on $A_i$ are ignored. Reference-ness on $A_i$ is ignored unless $P_i$ is
- a reference type.
+   a reference type.
 6. After all deduction pairs are processed, each template parameter must have received exactly one
- consistent deduction. If any parameter received contradictory deductions, deduction fails.
+   consistent deduction. If any parameter received contradictory deductions, deduction fails.
 
 This algorithm is applied independently to each overload candidate. If exactly one candidate
 Succeeds, that candidate is selected. If multiple candidates succeed, overload resolution picks the
@@ -155,10 +158,10 @@ Forwarding references (also called universal references before C++11 was standar
 Deduction rules that differ from both lvalue references and rvalue references. The rules [N4950
 S13.8.2.1] are:
 
-| Argument category | `T` deduced as | Parameter type after substitution |
+| Argument category  | `T` deduced as | Parameter type after substitution          |
 | ------------------ | -------------- | ------------------------------------------ |
-| lvalue of type `U` | `U&` | `U&` (reference collapse: `U& &&` -> `U&`) |
-| rvalue of type `U` | `U` | `U&&` |
+| lvalue of type `U` | `U&`           | `U&` (reference collapse: `U& &&` -> `U&`) |
+| rvalue of type `U` | `U`            | `U&&`                                      |
 
 The critical asymmetry is that passing an lvalue to a forwarding reference deduces `T` as a
 _reference type_, while passing an rvalue deduces `T` as a non-reference type. This is the mechanism
@@ -195,16 +198,14 @@ int main() {
 }
 ```
 
-:::warning
-A forwarding reference is **only** formed when the type deduction context is a function
+:::warning A forwarding reference is **only** formed when the type deduction context is a function
 Parameter of the form `T&&` where `T` is a template parameter of the function template itself. The
 Following are **not** forwarding references:
 
 - `std::vector&lt;T&gt;&amp;&amp;` (T is a class template parameter, not a function template
- parameter)
+  parameter)
 - `T&amp;&amp;` in a class template member function where T is the class template parameter
-- `const T&amp;&amp;` (the `const` prevents the forwarding reference interpretation)
-:::
+- `const T&amp;&amp;` (the `const` prevents the forwarding reference interpretation) :::
 
 ### Array-to-Pointer and Function-to-Pointer Decay
 
@@ -287,8 +288,8 @@ int main() {
 ```
 
 The key insight: array-to-pointer decay is a **deduction-time** phenomenon, not a type-system
-Phenomenon. The array type still exists in the type system; the deduction rules choose to
-Match `T` to the pointer type when the parameter is by value.
+Phenomenon. The array type still exists in the type system; the deduction rules choose to Match `T`
+to the pointer type when the parameter is by value.
 
 ## Class Template Argument Deduction (CTAD)
 
@@ -327,20 +328,18 @@ int main() {
 }
 ```
 
-:::info
-CTAD only works when there is exactly one viable deduction. If the constructor template and
+:::info CTAD only works when there is exactly one viable deduction. If the constructor template and
 The class template both participate in deduction and produce conflicting results, deduction fails
-[N4950 S16.3.1.7].
-:::
+[N4950 S16.3.1.7]. :::
 
 ### CTAD Rules [N4950 S16.3.1.3]
 
 The CTAD process follows a specific algorithm:
 
 1. The compiler collects all **deduction guides** (both implicit and explicit) that apply to the
- constructor arguments.
+   constructor arguments.
 2. For each deduction guide, the compiler performs template argument deduction to determine the
- class template arguments.
+   class template arguments.
 3. If exactly one guide produces a valid deduction, that deduction is used.
 4. If multiple guides produce valid deductions, overload resolution selects the best one.
 
@@ -577,8 +576,8 @@ The formal difference [N4950 S10.1.7.1] is:
 
 - **`auto x = {expr};`** always deduces `std::initializer_list`Just like template deduction.
 - **`auto x{expr};`** (direct initialization) in C++17 deduces `std::initializer_list`But in C++20
- it deduces the type of `expr` directly (following the rules for copy-list-initialization of a
- plain `auto`).
+  it deduces the type of `expr` directly (following the rules for copy-list-initialization of a
+  plain `auto`).
 
 ```cpp
 #include <iostream>
@@ -658,11 +657,11 @@ SFINAE (Substitution Failure Is Not An Error) interacts with deduction in two wa
 Failures and substitution failures. The distinction is important [N4950 S13.9.1]:
 
 - A **deduction failure** occurs when the compiler cannot deduce template arguments from the
- function call arguments. This is always SFINAE-friendly: the candidate is removed from the
- overload set.
+  function call arguments. This is always SFINAE-friendly: the candidate is removed from the
+  overload set.
 - A **substitution failure** occurs when deduced arguments are substituted into the function type
- and the result is ill-formed. This is SFINAE-friendly **only** if it occurs in the immediate
- context of the function type and its template parameter declarations.
+  and the result is ill-formed. This is SFINAE-friendly **only** if it occurs in the immediate
+  context of the function type and its template parameter declarations.
 
 ```cpp
 #include <iostream>
@@ -819,34 +818,34 @@ int main() {
 ## Common Pitfalls
 
 1. **Array-to-pointer decay during deduction.** Passing an array to a template function by value
- deduces a pointer, losing the size. Use `std::span` (C++20) or reference-to-array to preserve
- bounds.
+   deduces a pointer, losing the size. Use `std::span` (C++20) or reference-to-array to preserve
+   bounds.
 
 2. **CV-qualifier stripping.** Top-level `const` and `volatile` qualifiers are stripped from
- arguments during deduction. The template parameter `T` in `f(const T&)` will never be `const`.
+   arguments during deduction. The template parameter `T` in `f(const T&)` will never be `const`.
 
 3. **CTAD with string literals.** `std::pair p{"hello", "world"}` deduces
- `std::pair&lt;const char*, const char*&gt;`Not `std::pair&lt;std::string, std::string&gt;`. Use
- `std::pair&lt;std::string, std::string&gt;` explicitly or provide a deduction guide.
+   `std::pair&lt;const char*, const char*&gt;`Not `std::pair&lt;std::string, std::string&gt;`. Use
+   `std::pair&lt;std::string, std::string&gt;` explicitly or provide a deduction guide.
 
 4. **CTAD does not work with aggregate initialization in C++17.** Aggregate types do not have
- constructors, so no implicit deduction guides are generated. C++20 fixes this with aggregate
- CTAD.
+   constructors, so no implicit deduction guides are generated. C++20 fixes this with aggregate
+   CTAD.
 
 5. **`auto` returns by value, not reference.** `auto f()` returns by value. Use `auto&` or `auto&&`
- to return a reference, but be careful about dangling references.
+   to return a reference, but be careful about dangling references.
 
 6. **Forwarding reference is not `T&&` in all contexts.** The parameter must be exactly `T&&` where
- `T` is a deduced template parameter of the enclosing function template. A `T&&` where `T` is a
- class template parameter is a plain rvalue reference, not a forwarding reference.
+   `T` is a deduced template parameter of the enclosing function template. A `T&&` where `T` is a
+   class template parameter is a plain rvalue reference, not a forwarding reference.
 
 7. **Non-deduced contexts in return types.** Template parameters that appear only in the return type
- cannot be deduced. Either make them appear in the parameter list or provide them explicitly.
+   cannot be deduced. Either make them appear in the parameter list or provide them explicitly.
 
 8. **`std::decay_t` in deduction guides.** When writing deduction guides for constructors that take
- arguments by value, apply `std::decay_t` to match the implicit guide's behavior. Without it,
- array and function types in the guide arguments will not decay, producing a different deduction
- than the implicit guide.
+   arguments by value, apply `std::decay_t` to match the implicit guide's behavior. Without it,
+   array and function types in the guide arguments will not decay, producing a different deduction
+   than the implicit guide.
 
 ## See Also
 

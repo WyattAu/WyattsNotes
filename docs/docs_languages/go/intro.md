@@ -1,6 +1,8 @@
 ---
 title: Introduction to Go
-description: "Rigorous programming language notes covering Introduction to Go. Includes definitions, derivations, worked examples, and exam-style problems."
+description:
+  'Rigorous programming language notes covering Introduction to Go. Includes definitions,
+  derivations, worked examples, and exam-style problems.'
 slug: intro
 date: 2026-04-18
 tags:
@@ -8,6 +10,7 @@ tags:
 categories:
   - Go
 ---
+
 ## Why Go
 
 Go was designed at Google by Rob Pike, Ken Thompson, and Robert Griesemer, first released in 2009.
@@ -17,18 +20,18 @@ Compilation, native performance, garbage collection, and built-in concurrency pr
 Core design goals:
 
 1. **Simplicity.** The language spec is ~50 pages. There are no exceptions, no inheritance, no
- operator overloading, no macros. Features are additive, not combinatorial -- the number of
- concepts you must hold in your head grows linearly with the language, not exponentially.
+   operator overloading, no macros. Features are additive, not combinatorial -- the number of
+   concepts you must hold in your head grows linearly with the language, not exponentially.
 
 2. **Fast compilation.** Dependency-aware compilation, minimal syntax, and no header files mean
- large codebases compile in seconds, not minutes.
+   large codebases compile in seconds, not minutes.
 
 3. **Concurrency as a first-class citizen.** Goroutines are multiplexed onto OS threads by the
- runtime scheduler. Channels provide safe communication between goroutines without locks.
+   runtime scheduler. Channels provide safe communication between goroutines without locks.
 
 4. **Static typing with inference.** Types are checked at compile time, but the compiler infers
- types where unambiguous. This catches bugs early without the verbosity of explicit annotations
- everywhere.
+   types where unambiguous. This catches bugs early without the verbosity of explicit annotations
+   everywhere.
 
 ## Compilation Model
 
@@ -223,32 +226,32 @@ Version control and never edited manually.
 
 ## Where Go Runs
 
-| Target | Use Case |
+| Target                               | Use Case                   |
 | ------------------------------------ | -------------------------- |
-| **Linux** (amd64, arm64) | Servers, containers, cloud |
-| **macOS** (amd64, arm64) | Desktop development |
-| **Windows** (amd64) | Desktop applications |
-| **WebAssembly** (wasm) | Browser, edge computing |
-| **FreeBSD/OpenBSD** | Networking, infrastructure |
-| **Embedded** (GOOS=linux GOARCH=arm) | IoT, routers, ARM devices |
+| **Linux** (amd64, arm64)             | Servers, containers, cloud |
+| **macOS** (amd64, arm64)             | Desktop development        |
+| **Windows** (amd64)                  | Desktop applications       |
+| **WebAssembly** (wasm)               | Browser, edge computing    |
+| **FreeBSD/OpenBSD**                  | Networking, infrastructure |
+| **Embedded** (GOOS=linux GOARCH=arm) | IoT, routers, ARM devices  |
 
 ## Common Pitfalls
 
 1. **Not setting `GOPATH`/`GOBIN` on `$PATH`.** `go install` places binaries in `$GOPATH/bin` or
- `$GOBIN`. If this is not on your PATH, installed tools will not be found.
+   `$GOBIN`. If this is not on your PATH, installed tools will not be found.
 
 2. **Using `go run` in production.** `go run` compiles to a temp directory and does not produce an
- artifact. Use `go build` to produce a deployable binary.
+   artifact. Use `go build` to produce a deployable binary.
 
 3. **Ignoring `go vet`.** Run `go vet ./...` before every commit. It catches real bugs: unreachable
- code, incorrect format strings, lock copies, and more.
+   code, incorrect format strings, lock copies, and more.
 
 4. **Not committing `go.sum`.** The `go.sum` file is essential for reproducible builds. Always
- commit it alongside `go.mod`.
+   commit it alongside `go.mod`.
 
 5. **Using `latest` in `go install` without pinning.** `go install tool@latest` always fetches the
- newest version. Pin versions in `go.mod` for reproducible builds.
+   newest version. Pin versions in `go.mod` for reproducible builds.
 
 6. **Circular imports.** Go does not allow circular imports between packages. If A imports B and B
- imports A, the compiler rejects it. Restructure by extracting the shared code into a third
- package.
+   imports A, the compiler rejects it. Restructure by extracting the shared code into a third
+   package.

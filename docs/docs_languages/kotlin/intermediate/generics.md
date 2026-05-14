@@ -1,6 +1,8 @@
 ---
 title: Generics
-description: "Generics — Generic Classes and Functions; Variance; Invariance; Covariance (`out`) with worked examples and exam-style questions."
+description:
+  'Generics — Generic Classes and Functions; Variance; Invariance; Covariance (`out`) with worked
+  examples and exam-style questions.'
 slug: generics
 date: 2026-04-18
 tags:
@@ -8,6 +10,7 @@ tags:
 categories:
   - Kotlin
 ---
+
 ## Generic Classes and Functions
 
 Generics allow types to be parameterized. The compiler enforces type safety at compile time, and the
@@ -167,11 +170,11 @@ fun printAll(list: List<*>) {
 
 Star projection behavior depends on variance:
 
-| Declaration | Star projection `*` means |
+| Declaration       | Star projection `*` means              |
 | ----------------- | -------------------------------------- |
-| `Producer<out T>` | `Producer<out Nothing>` |
-| `Consumer<in T>` | `Consumer<in Any?>` |
-| `MutableList<T>` | `MutableList<out Nothing>` (read-only) |
+| `Producer<out T>` | `Producer<out Nothing>`                |
+| `Consumer<in T>`  | `Consumer<in Any?>`                    |
+| `MutableList<T>`  | `MutableList<out Nothing>` (read-only) |
 
 ```kotlin
 fun process(producer: Producer<*>) {
@@ -271,17 +274,17 @@ At runtime in Kotlin.
 ## Common Pitfalls
 
 - \*\* Confusing `out` and `in` variance. Remember: producers are `out`Consumers are `in`. If a
- class both produces and consumes `T`It must be invariant.
+  class both produces and consumes `T`It must be invariant.
 - \*\* Using star projection when you actually need the type. Star projection treats the type as
- unknown, which means you can read as `Any?` but cannot write. If you need the specific type, pass
- the type parameter explicitly.
+  unknown, which means you can read as `Any?` but cannot write. If you need the specific type, pass
+  the type parameter explicitly.
 - \*\* Forgetting that reified type parameters require `inline`. Non-inline functions cannot have
- reified type parameters.
+  reified type parameters.
 - \*\* Storing reified type parameters in collections. Since reified works through inline expansion,
- you cannot store a type parameter for later use. The type information is only available at the
- call site during compilation.
+  you cannot store a type parameter for later use. The type information is only available at the
+  call site during compilation.
 - \*_ Using `List<_>` and then trying to add elements. Star projection makes the list effectively
- read-only for generic types.
+  read-only for generic types.
 
 ## Summary
 

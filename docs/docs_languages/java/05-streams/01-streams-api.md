@@ -1,24 +1,29 @@
 ---
 title: Streams API
-description: "Streams API — Stream vs Collection; Design Decision: Why Streams Are Lazy; Stream Pipeline Architecture; Creating Streams."
+description:
+  'Streams API — Stream vs Collection; Design Decision: Why Streams Are Lazy; Stream Pipeline
+  Architecture; Creating Streams.'
 date: 2025-06-05T14:00:00.000Z
-tags: ["java"]
-categories: ["java"]
+tags: ['java']
+categories: ['java']
 slug: streams-api
 sidebar_position: 1
 ---
+
 ## Stream vs Collection
 
-A `Collection` is an in-memory data structure that holds elements. A `Stream` is a sequence of elements supporting sequential and parallel aggregate operations computed on demand from a source. The distinction is fundamental and understanding it prevents entire categories of bugs.
+A `Collection` is an in-memory data structure that holds elements. A `Stream` is a sequence of
+elements supporting sequential and parallel aggregate operations computed on demand from a source.
+The distinction is fundamental and understanding it prevents entire categories of bugs.
 
-| Property | Collection | Stream |
+| Property      | Collection                                | Stream                                                      |
 | ------------- | ----------------------------------------- | ----------------------------------------------------------- |
-| Storage | Holds elements in memory | Does not store elements; computes from a source |
-| Evaluation | Eager (all elements materialized at once) | Lazy (elements computed on demand) |
-| Consumability | Can be traversed multiple times | Single-use; consuming a terminal operation closes it |
-| Mutability | Elements can be added, removed, replaced | Elements are never modified; operations produce new streams |
-| Iteration | External (user controls the loop) | Internal (library controls the iteration) |
-| Purpose | Store and organize data | Compute aggregate results and transform data |
+| Storage       | Holds elements in memory                  | Does not store elements; computes from a source             |
+| Evaluation    | Eager (all elements materialized at once) | Lazy (elements computed on demand)                          |
+| Consumability | Can be traversed multiple times           | Single-use; consuming a terminal operation closes it        |
+| Mutability    | Elements can be added, removed, replaced  | Elements are never modified; operations produce new streams |
+| Iteration     | External (user controls the loop)         | Internal (library controls the iteration)                   |
+| Purpose       | Store and organize data                   | Compute aggregate results and transform data                |
 
 ```java
 List<String> names = List.of("Alice", "Bob", "Charlie", "Diana");
@@ -44,11 +49,23 @@ stream.forEach(System.out::println);  // OK -- first consumption
 
 Streams are lazy for three reasons:
 
-1. **Performance -- avoid unnecessary work.** If you filter a million elements and then call `findFirst()`A lazy stream processes only the elements up to the first match. An eager approach would filter all one million elements before returning the first. Laziness enables short-circuiting, which can turn an O(n) operation into an O(k) operation where k is the number of elements actually needed.
+1. **Performance -- avoid unnecessary work.** If you filter a million elements and then call
+   `findFirst()`A lazy stream processes only the elements up to the first match. An eager approach
+   would filter all one million elements before returning the first. Laziness enables
+   short-circuiting, which can turn an O(n) operation into an O(k) operation where k is the number
+   of elements actually needed.
 
-2. **Composability -- enable infinite streams.** `Stream.generate()` and `Stream.iterate()` can produce infinite sequences. These are only useful because intermediate operations are lazy -- they describe transformations without materializing elements. Only when a terminal operation is invoked does the pipeline begin pulling elements, and a short-circuiting terminal operation like `limit()` prevents infinite processing.
+2. **Composability -- enable infinite streams.** `Stream.generate()` and `Stream.iterate()` can
+   produce infinite sequences. These are only useful because intermediate operations are lazy --
+   they describe transformations without materializing elements. Only when a terminal operation is
+   invoked does the pipeline begin pulling elements, and a short-circuiting terminal operation like
+   `limit()` prevents infinite processing.
 
-3. **Fusion -- enable internal optimization.** Because the stream pipeline is a description of operations rather than a sequence of concrete steps, the runtime can fuse multiple operations into a single pass over the data. For example, `filter().map().filter().map()` is fused into a single traversal that applies all four predicates and functions per element, avoiding the creation of intermediate collections between each step.
+3. **Fusion -- enable internal optimization.** Because the stream pipeline is a description of
+   operations rather than a sequence of concrete steps, the runtime can fuse multiple operations
+   into a single pass over the data. For example, `filter().map().filter().map()` is fused into a
+   single traversal that applies all four predicates and functions per element, avoiding the
+   creation of intermediate collections between each step.
 
 ```java
 // Lazy evaluation in action -- only 3 elements are ever processed
@@ -65,7 +82,8 @@ IntStream.iterate(1, n -> n + 1)       // infinite: 1, 2, 3, 4, ...
 
 ## Stream Pipeline Architecture
 
-A stream pipeline consists of three parts: a **source**, zero or more **intermediate operations**, and one **terminal operation**.
+A stream pipeline consists of three parts: a **source**, zero or more **intermediate operations**,
+and one **terminal operation**.
 
 ```mermaid
 graph LR
@@ -123,7 +141,9 @@ sequenceDiagram
     Note over T,S: Repeat until terminal is satisfied
 ```
 
-Intermediate operations return a new stream and are lazy -- they do not process any elements until a terminal operation is invoked. Terminal operations produce a result or a side effect and close the stream.
+Intermediate operations return a new stream and are lazy -- they do not process any elements until a
+terminal operation is invoked. Terminal operations produce a result or a side effect and close the
+stream.
 
 ## Creating Streams
 
@@ -145,7 +165,8 @@ Stream<String> present = Stream.ofNullable("hello");      // Stream["hello"]
 
 ### Collection.stream / Collection.parallelStream
 
-Every `Collection` implementation provides `stream()` and `parallelStream()` methods via the `Collection` interface default method.
+Every `Collection` implementation provides `stream()` and `parallelStream()` methods via the
+`Collection` interface default method.
 
 ```java
 List<String> names = List.of("Alice", "Bob", "Charlie");
@@ -155,7 +176,8 @@ Stream<String> parallel = names.parallelStream();    // parallel stream
 
 ### Primitive Specializations
 
-`IntStream``LongStream`And `DoubleStream` avoid the overhead of boxing and unboxing. Each provides range generation, summary statistics, and specialized reduction operations.
+`IntStream``LongStream`And `DoubleStream` avoid the overhead of boxing and unboxing. Each provides
+range generation, summary statistics, and specialized reduction operations.
 
 ```java
 IntStream intStream = IntStream.range(1, 10);          // 1..9 (exclusive end)
@@ -191,7 +213,8 @@ Stream<String> wordStream = Arrays.stream(words);
 
 ### Stream.builder
 
-For building streams when the elements are not known in advance. Prefer `Stream.of()` or collection-based creation when elements are known at compile time.
+For building streams when the elements are not known in advance. Prefer `Stream.of()` or
+collection-based creation when elements are known at compile time.
 
 ```java
 Stream<String> stream = Stream.<String>builder()
@@ -209,7 +232,8 @@ Stream<String> withNull = Stream.<String>builder()
 
 ### Stream.generate / Stream.iterate
 
-Create potentially infinite streams. Always use with `limit()` or a short-circuiting terminal operation.
+Create potentially infinite streams. Always use with `limit()` or a short-circuiting terminal
+operation.
 
 ```java
 // generate -- takes a Supplier, produces an infinite stream
@@ -253,7 +277,8 @@ Stream<String> combined = Stream.concat(Stream.of("a", "b"), Stream.of("c", "d")
 
 ## Intermediate Operations
 
-Intermediate operations are lazy. They return a new stream and do not trigger any processing until a terminal operation is invoked on the pipeline.
+Intermediate operations are lazy. They return a new stream and do not trigger any processing until a
+terminal operation is invoked on the pipeline.
 
 ### filter
 
@@ -268,7 +293,8 @@ List<String> longNames = names.stream()
 
 ### map
 
-Applies a function to each element, producing a stream of the results. The output stream may have a different type than the input stream.
+Applies a function to each element, producing a stream of the results. The output stream may have a
+different type than the input stream.
 
 ```java
 List<Integer> lengths = names.stream()
@@ -284,7 +310,8 @@ List<String> greetings = names.stream()
 
 ### flatMap
 
-Maps each element to a stream, then flattens all resulting streams into a single stream. This is the stream equivalent of a nested loop.
+Maps each element to a stream, then flattens all resulting streams into a single stream. This is the
+stream equivalent of a nested loop.
 
 ```java
 // Flatten a list of lists
@@ -312,7 +339,8 @@ List<String> allBooks = authors.stream()
 
 ### distinct
 
-Returns a stream with distinct elements. Uses `equals()` to determine equality. For ordered streams, the first occurrence is kept; for unordered streams, any element may be selected.
+Returns a stream with distinct elements. Uses `equals()` to determine equality. For ordered streams,
+the first occurrence is kept; for unordered streams, any element may be selected.
 
 ```java
 List<Integer> unique = Stream.of(1, 2, 2, 3, 1, 4, 3)
@@ -321,13 +349,14 @@ List<Integer> unique = Stream.of(1, 2, 2, 3, 1, 4, 3)
 // [1, 2, 3, 4]
 ```
 
-:::warning
-`distinct()` internally uses a `HashSet`-like structure to track seen elements. For large streams with expensive `equals()`/`hashCode()` implementations, this can be costly. Consider whether `distinct()` is necessary or whether you can eliminate duplicates at the source.
-:::
+:::warning `distinct()` internally uses a `HashSet`-like structure to track seen elements. For large
+streams with expensive `equals()`/`hashCode()` implementations, this can be costly. Consider whether
+`distinct()` is necessary or whether you can eliminate duplicates at the source. :::
 
 ### sorted
 
-Returns a stream sorted according to natural order or a provided `Comparator`. This is a **stateful** operation -- it must buffer all elements before producing output.
+Returns a stream sorted according to natural order or a provided `Comparator`. This is a
+**stateful** operation -- it must buffer all elements before producing output.
 
 ```java
 List<String> sorted = Stream.of("Charlie", "Alice", "Bob")
@@ -349,7 +378,8 @@ List<String> byLengthThenAlpha = Stream.of("aa", "b", "cc", "a")
 
 ### peek
 
-Returns a stream identical to the input, but invokes the provided `Consumer` on each element as it is consumed. Primarily intended for debugging.
+Returns a stream identical to the input, but invokes the provided `Consumer` on each element as it
+is consumed. Primarily intended for debugging.
 
 ```java
 List<String> result = Stream.of("Alice", "Bob", "Charlie")
@@ -364,13 +394,16 @@ List<String> result = Stream.of("Alice", "Bob", "Charlie")
 // Mapped: CHARLIE
 ```
 
-:::warning
-`peek()` should be used only for debugging. Using it for side effects violates the stream contract, which states that intermediate operations should be free of side effects. The behavior of `peek()` is undefined if it modifies the stream source or interferes with the pipeline. Furthermore, in parallel streams, `peek()` may be called from multiple threads simultaneously, making any side effect unsafe without synchronization.
-:::
+:::warning `peek()` should be used only for debugging. Using it for side effects violates the stream
+contract, which states that intermediate operations should be free of side effects. The behavior of
+`peek()` is undefined if it modifies the stream source or interferes with the pipeline. Furthermore,
+in parallel streams, `peek()` may be called from multiple threads simultaneously, making any side
+effect unsafe without synchronization. :::
 
 ### limit
 
-Truncates the stream to at most `maxSize` elements. This is a **short-circuiting stateful** operation.
+Truncates the stream to at most `maxSize` elements. This is a **short-circuiting stateful**
+operation.
 
 ```java
 List<Integer> first3 = IntStream.iterate(1, n -> n + 1)
@@ -393,7 +426,8 @@ List<Integer> afterFirst2 = Stream.of(1, 2, 3, 4, 5)
 
 ### takeWhile / dropWhile (Java 9+)
 
-`takeWhile` returns elements while the predicate is true and stops at the first false. `dropWhile` discards elements while the predicate is true and returns the rest.
+`takeWhile` returns elements while the predicate is true and stops at the first false. `dropWhile`
+discards elements while the predicate is true and returns the rest.
 
 ```java
 // takeWhile -- stops at the first element that fails the predicate
@@ -409,17 +443,21 @@ List<Integer> dropped = Stream.of(1, 2, 3, 4, 5, 1, 2)
 // [4, 5, 1, 2]  -- drops 1,2,3, returns everything from 4 onward
 ```
 
-:::info
-For **ordered** streams, `takeWhile` and `dropWhile` are deterministic: they process elements in encounter order. For **unordered** streams (e.g., `HashSet.parallelStream()`), the behavior is nondeterministic -- different elements may be taken or dropped on different runs because the encounter order is not defined.
-:::
+:::info For **ordered** streams, `takeWhile` and `dropWhile` are deterministic: they process
+elements in encounter order. For **unordered** streams (e.g., `HashSet.parallelStream()`), the
+behavior is nondeterministic -- different elements may be taken or dropped on different runs because
+the encounter order is not defined. :::
 
 ## Terminal Operations
 
-Terminal operations trigger the processing of the entire pipeline and produce a result or a side effect. After a terminal operation, the stream is consumed and cannot be reused.
+Terminal operations trigger the processing of the entire pipeline and produce a result or a side
+effect. After a terminal operation, the stream is consumed and cannot be reused.
 
 ### forEach
 
-Performs an action for each element. In sequential streams, elements are processed in encounter order. In parallel streams, the order is not guaranteed unless the stream has an encounter order and the stream is explicitly ordered.
+Performs an action for each element. In sequential streams, elements are processed in encounter
+order. In parallel streams, the order is not guaranteed unless the stream has an encounter order and
+the stream is explicitly ordered.
 
 ```java
 names.stream()
@@ -434,7 +472,8 @@ names.parallelStream()
 
 ### collect
 
-Transforms the elements of the stream into a different form, most commonly a `Collection`. The `collect` operation takes a `Collector` that encapsulates the reduction strategy.
+Transforms the elements of the stream into a different form, most commonly a `Collection`. The
+`collect` operation takes a `Collector` that encapsulates the reduction strategy.
 
 ```java
 List<String> result = names.stream()
@@ -448,7 +487,8 @@ Set<String> unique = names.stream()
 
 ### reduce
 
-Performs a reduction on the elements, combining them into a single result using an associative accumulation function.
+Performs a reduction on the elements, combining them into a single result using an associative
+accumulation function.
 
 ```java
 // Without identity -- returns Optional (stream may be empty)
@@ -468,9 +508,10 @@ String concatenated = Stream.of("a", "b", "c")
 // "abc"
 ```
 
-:::warning
-The accumulator function passed to `reduce` must be **associative**: `(a op b) op c == a op (b op c)`. If it is not associative, the result will be incorrect in parallel streams, because partial results may be combined in any order. The identity value must also satisfy `identity op x == x` for all x.
-:::
+:::warning The accumulator function passed to `reduce` must be **associative**:
+`(a op b) op c == a op (b op c)`. If it is not associative, the result will be incorrect in parallel
+streams, because partial results may be combined in any order. The identity value must also satisfy
+`identity op x == x` for all x. :::
 
 ### count
 
@@ -484,7 +525,8 @@ long count = names.stream()
 
 ### min / max
 
-Returns the minimum or maximum element according to a `Comparator`. Returns `Optional` because the stream may be empty.
+Returns the minimum or maximum element according to a `Comparator`. Returns `Optional` because the
+stream may be empty.
 
 ```java
 Optional<String> longest = names.stream()
@@ -519,7 +561,8 @@ boolean noEmpty = names.stream()
 
 ### findFirst / findAny
 
-Returns an `Optional` describing the first (or any) element of the stream. Both are short-circuiting.
+Returns an `Optional` describing the first (or any) element of the stream. Both are
+short-circuiting.
 
 ```java
 Optional<String> first = names.stream()
@@ -533,9 +576,11 @@ Optional<String> any = names.parallelStream()
 // Optional[?] -- any matching element, not guaranteed to be first
 ```
 
-:::info
-In sequential streams, `findFirst()` and `findAny()` return the same element. In parallel streams, `findAny()` may return a different element than `findFirst()` because it can return any element that the parallel worker encounters first, without the synchronization overhead of maintaining encounter order. Use `findAny()` when you do not care about which element is returned -- it is faster in parallel streams because it avoids ordering constraints.
-:::
+:::info In sequential streams, `findFirst()` and `findAny()` return the same element. In parallel
+streams, `findAny()` may return a different element than `findFirst()` because it can return any
+element that the parallel worker encounters first, without the synchronization overhead of
+maintaining encounter order. Use `findAny()` when you do not care about which element is returned --
+it is faster in parallel streams because it avoids ordering constraints. :::
 
 ### toArray
 
@@ -554,7 +599,9 @@ String[] typedArray = names.stream().toArray(String[]::new);
 
 ## Collectors
 
-The `Collectors` utility class provides factory methods for common reduction operations. A `Collector` encapsulates the supplier, accumulator, combiner, and finisher functions that define a mutable reduction.
+The `Collectors` utility class provides factory methods for common reduction operations. A
+`Collector` encapsulates the supplier, accumulator, combiner, and finisher functions that define a
+mutable reduction.
 
 ### toList / toUnmodifiableList
 
@@ -605,9 +652,9 @@ LinkedHashMap<String, Integer> ordered = people.stream()
     ));
 ```
 
-:::danger
-`Collectors.toMap()` throws `IllegalStateException` on duplicate keys unless a merge function is provided. This is a common source of runtime exceptions. Always provide a merge function if duplicate keys are possible, or use `groupingBy` when multiple values per key are expected.
-:::
+:::danger `Collectors.toMap()` throws `IllegalStateException` on duplicate keys unless a merge
+function is provided. This is a common source of runtime exceptions. Always provide a merge function
+if duplicate keys are possible, or use `groupingBy` when multiple values per key are expected. :::
 
 ### joining
 
@@ -662,7 +709,8 @@ TreeMap<Integer, List<String>> sortedGroups = names.stream()
 
 ### partitioningBy
 
-A special case of `groupingBy` with a `Predicate` as the classifier. Always produces a `Map<Boolean, List<T>>` with exactly two entries.
+A special case of `groupingBy` with a `Predicate` as the classifier. Always produces a
+`Map<Boolean, List<T>>` with exactly two entries.
 
 ```java
 Map<Boolean, List<String>> partitioned = names.stream()
@@ -678,9 +726,10 @@ Map<Boolean, Long> counts = names.stream()
 // {false=1, true=3}
 ```
 
-:::info
-Use `partitioningBy` when the classifier is a `Predicate` and you want exactly two groups (true/false). Use `groupingBy` when the classifier produces more than two categories or is not a boolean predicate. `partitioningBy` always creates both map entries (true and false), even if one group is empty. `groupingBy` only creates entries for groups that have at least one element.
-:::
+:::info Use `partitioningBy` when the classifier is a `Predicate` and you want exactly two groups
+(true/false). Use `groupingBy` when the classifier produces more than two categories or is not a
+boolean predicate. `partitioningBy` always creates both map entries (true and false), even if one
+group is empty. `groupingBy` only creates entries for groups that have at least one element. :::
 
 ### counting / summingInt / averagingInt
 
@@ -761,13 +810,23 @@ Map<Integer, List<String>> employeesByLength = departments.stream()
 
 ### Design Decision: Why Parallel Streams Use ForkJoinPool
 
-Parallel streams use the common `ForkJoinPool` (accessed via `ForkJoinPool.commonPool()`) rather than creating a new thread pool for each parallel stream operation. This design decision was made for three reasons:
+Parallel streams use the common `ForkJoinPool` (accessed via `ForkJoinPool.commonPool()`) rather
+than creating a new thread pool for each parallel stream operation. This design decision was made
+for three reasons:
 
-1. **Resource efficiency.** Creating and destroying thread pools is expensive. A shared pool amortizes this cost across all parallel stream operations in the JVM. The common pool is lazily initialized on first use and has a target parallelism equal to `Runtime.getRuntime().availableProcessors() - 1`.
+1. **Resource efficiency.** Creating and destroying thread pools is expensive. A shared pool
+   amortizes this cost across all parallel stream operations in the JVM. The common pool is lazily
+   initialized on first use and has a target parallelism equal to
+   `Runtime.getRuntime().availableProcessors() - 1`.
 
-2. **Work-stealing.** The `ForkJoinPool` uses a work-stealing scheduler where idle threads steal tasks from busy threads' queues. This is ideal for stream pipelines because different pipeline stages may have different per-element costs, leading to load imbalance. Work-stealing automatically rebalances work across threads without explicit partitioning.
+2. **Work-stealing.** The `ForkJoinPool` uses a work-stealing scheduler where idle threads steal
+   tasks from busy threads' queues. This is ideal for stream pipelines because different pipeline
+   stages may have different per-element costs, leading to load imbalance. Work-stealing
+   automatically rebalances work across threads without explicit partitioning.
 
-3. **Thread confinement.** The lambda functions passed to stream operations are often non-thread-safe. Using a managed pool with a known size prevents the creation of unbounded numbers of threads, which could lead to resource exhaustion.
+3. **Thread confinement.** The lambda functions passed to stream operations are often
+   non-thread-safe. Using a managed pool with a known size prevents the creation of unbounded
+   numbers of threads, which could lead to resource exhaustion.
 
 ```java
 // Basic parallel stream
@@ -803,10 +862,10 @@ int sum = largeList.parallelStream()
 
 ### Pitfalls of Parallel Streams
 
-:::danger
-Parallel streams have several pitfalls that make them unsuitable for many workloads:
+:::danger Parallel streams have several pitfalls that make them unsuitable for many workloads:
 
-**1. Thread safety of lambdas.** Lambda expressions used in parallel stream operations must be thread-safe. Mutable shared state will cause data races.
+**1. Thread safety of lambdas.** Lambda expressions used in parallel stream operations must be
+thread-safe. Mutable shared state will cause data races.
 
 ```java
 // BROKEN -- ArrayList is not thread-safe
@@ -817,7 +876,8 @@ names.parallelStream().forEach(results::add);  // data race, possible Concurrent
 List<String> results = names.parallelStream().collect(Collectors.toList());
 ```
 
-**2. Ordering overhead.** Ordered parallel streams require coordination between threads to maintain encounter order. If order does not matter, use `.unordered()` to improve parallel performance.
+**2. Ordering overhead.** Ordered parallel streams require coordination between threads to maintain
+encounter order. If order does not matter, use `.unordered()` to improve parallel performance.
 
 ```java
 // Faster when order does not matter
@@ -827,12 +887,17 @@ long count = largeList.parallelStream()
     .count();
 ```
 
-**3. Poor sources for splitting.** `LinkedList``Stream.iterate()`And `BufferedReader.lines()` are inherently sequential and cannot be efficiently split. Parallelizing them often makes things slower due to the splitting overhead.
+**3. Poor sources for splitting.** `LinkedList``Stream.iterate()`And `BufferedReader.lines()` are
+inherently sequential and cannot be efficiently split. Parallelizing them often makes things slower
+due to the splitting overhead.
 
-**4. Blocking operations.** If a lambda performs I/O (file reads, network calls, database queries), it blocks the ForkJoinPool worker thread. Since the common pool has only `availableProcessors - 1` threads, blocking a few of them can starve other parallel operations (or even other parts of the application that use the common pool).
+**4. Blocking operations.** If a lambda performs I/O (file reads, network calls, database queries),
+it blocks the ForkJoinPool worker thread. Since the common pool has only `availableProcessors - 1`
+threads, blocking a few of them can starve other parallel operations (or even other parts of the
+application that use the common pool).
 
-**5. Nondeterministic results with non-associative operations.** If the accumulator is not associative, parallel reduce produces incorrect results that vary between runs.
-:::
+**5. Nondeterministic results with non-associative operations.** If the accumulator is not
+associative, parallel reduce produces incorrect results that vary between runs. :::
 
 ```java
 // ANTI-PATTERN: Parallel stream for a small dataset
@@ -852,21 +917,28 @@ List<String> fileContents = filePaths.parallelStream()
 
 ## Optional
 
-`Optional<T>` is a container object that may or may not contain a non-null value. It was introduced in Java 8 to provide a more explicit way to represent the absence of a value, replacing the pervasive use of `null` as a sentinel.
+`Optional<T>` is a container object that may or may not contain a non-null value. It was introduced
+in Java 8 to provide a more explicit way to represent the absence of a value, replacing the
+pervasive use of `null` as a sentinel.
 
 ### Design Decision: Why Optional Exists (And When Not to Use It)
 
-`Optional` exists to make the **presence or absence of a value explicit at the type level**. Before `Optional`API methods returned `null` to indicate "no result," and callers had to remember to check for null. This was the source of countless `NullPointerException`S. `Optional` forces the caller to explicitly handle both cases.
+`Optional` exists to make the **presence or absence of a value explicit at the type level**. Before
+`Optional`API methods returned `null` to indicate "no result," and callers had to remember to check
+for null. This was the source of countless `NullPointerException`S. `Optional` forces the caller to
+explicitly handle both cases.
 
-However, `Optional` was **not designed** for every use case. Brian Goetz (Java language architect) has stated that `Optional` is primarily intended for **return types** of methods, not for fields, method parameters, or collections.
+However, `Optional` was **not designed** for every use case. Brian Goetz (Java language architect)
+has stated that `Optional` is primarily intended for **return types** of methods, not for fields,
+method parameters, or collections.
 
-| Usage | Recommended? | Reason |
+| Usage              | Recommended? | Reason                                                           |
 | ------------------ | :----------: | ---------------------------------------------------------------- |
-| Method return type | Yes | Forces caller to handle absence |
-| Method parameter | No | Adds complexity without benefit; use method overloading instead |
-| Field | No | Increases memory overhead (wrapper object), breaks serialization |
-| Collection element | No | Use empty collection; `Optional` in collections is a code smell |
-| Stream element | No | Use `filter` and `flatMap` instead |
+| Method return type |     Yes      | Forces caller to handle absence                                  |
+| Method parameter   |      No      | Adds complexity without benefit; use method overloading instead  |
+| Field              |      No      | Increases memory overhead (wrapper object), breaks serialization |
+| Collection element |      No      | Use empty collection; `Optional` in collections is a code smell  |
+| Stream element     |      No      | Use `filter` and `flatMap` instead                               |
 
 ### Creating Optionals
 
@@ -896,8 +968,9 @@ String result3 = opt.orElseThrow();  // throws NoSuchElementException
 String result4 = opt.orElseThrow(() -> new IllegalArgumentException("not found"));
 ```
 
-:::danger
-The difference between `orElse()` and `orElseGet()` is critical. `orElse(defaultValue)` always evaluates `defaultValue`Even if the `Optional` is present. `orElseGet(supplier)` only invokes the supplier when the `Optional` is empty.
+:::danger The difference between `orElse()` and `orElseGet()` is critical. `orElse(defaultValue)`
+always evaluates `defaultValue`Even if the `Optional` is present. `orElseGet(supplier)` only invokes
+the supplier when the `Optional` is empty.
 
 ```java
 // BROKEN: computeExpensiveDefault() is always called, even when opt is present
@@ -944,8 +1017,9 @@ if (opt.isPresent()) {
 opt.ifPresent(value -> System.out.println("Value: " + value));
 ```
 
-:::warning
-Avoid the `isPresent()` + `get()` pattern. It is functionally equivalent to a null check (`if (x != null) { x.foo() }`) and negates the purpose of `Optional`. Prefer `ifPresent()``map()``flatMap()``filter()`Or the `orElse*` family.
+:::warning Avoid the `isPresent()` + `get()` pattern. It is functionally equivalent to a null check
+(`if (x != null) { x.foo() }`) and negates the purpose of `Optional`. Prefer
+`ifPresent()``map()``flatMap()``filter()`Or the `orElse*` family.
 
 ```java
 // ANTI-PATTERN -- isPresent + get
@@ -1003,7 +1077,8 @@ return optional.isPresent();
 
 ### Optional in Streams
 
-`Optional` integrates with the Streams API. `Optional.stream()` (Java 9+) converts an `Optional` to a `Stream` of zero or one elements, enabling flatMap-based composition.
+`Optional` integrates with the Streams API. `Optional.stream()` (Java 9+) converts an `Optional` to
+a `Stream` of zero or one elements, enabling flatMap-based composition.
 
 ```java
 // Optional.stream() -- converts to Stream<T> (0 or 1 element)
@@ -1039,15 +1114,30 @@ List<String> cities = List.of(user)
 
 ## Summary of Design Principles
 
-1. **Streams describe computations, not data.** A stream is a view over a source that describes a series of transformations. It does not store elements and it does not modify the source. The pipeline exists to express **what** computation to perform; the library decides **how** to perform it.
+1. **Streams describe computations, not data.** A stream is a view over a source that describes a
+   series of transformations. It does not store elements and it does not modify the source. The
+   pipeline exists to express **what** computation to perform; the library decides **how** to
+   perform it.
 
-2. **Laziness is the key optimization.** Because intermediate operations are lazy, the stream library can fuse operations into a single pass, short-circuit when a result is found early, and handle infinite sources. An eager model would require intermediate collections between each operation and could not short-circuit.
+2. **Laziness is the key optimization.** Because intermediate operations are lazy, the stream
+   library can fuse operations into a single pass, short-circuit when a result is found early, and
+   handle infinite sources. An eager model would require intermediate collections between each
+   operation and could not short-circuit.
 
-3. **Use `collect()` for mutable reduction, `reduce()` for immutable reduction.** `collect()` uses a mutable accumulator (like an `ArrayList`) and is optimized for parallel streams with thread-safe combiners. `reduce()` produces a new immutable value on each step and is conceptually cleaner but less efficient for building collections.
+3. **Use `collect()` for mutable reduction, `reduce()` for immutable reduction.** `collect()` uses a
+   mutable accumulator (like an `ArrayList`) and is optimized for parallel streams with thread-safe
+   combiners. `reduce()` produces a new immutable value on each step and is conceptually cleaner but
+   less efficient for building collections.
 
-4. **Parallel streams are not a silver bullet.** They help only for large, CPU-bound, embarrassingly parallel workloads with efficiently splittable sources. For small datasets, I/O-bound operations, or sequential data structures, they add overhead and can cause subtle bugs through shared mutable state or blocking the common ForkJoinPool.
+4. **Parallel streams are not a silver bullet.** They help only for large, CPU-bound, embarrassingly
+   parallel workloads with efficiently splittable sources. For small datasets, I/O-bound operations,
+   or sequential data structures, they add overhead and can cause subtle bugs through shared mutable
+   state or blocking the common ForkJoinPool.
 
-5. **Optional is for return types, not for fields or parameters.** It makes API contracts explicit: a method returning `Optional<T>` signals that the result may be absent and forces the caller to handle that case. Using `Optional` as a field or parameter adds memory overhead and complexity without corresponding benefit.
+5. **Optional is for return types, not for fields or parameters.** It makes API contracts explicit:
+   a method returning `Optional<T>` signals that the result may be absent and forces the caller to
+   handle that case. Using `Optional` as a field or parameter adds memory overhead and complexity
+   without corresponding benefit.
 
 ## Common Pitfalls
 

@@ -1,6 +1,8 @@
 ---
 title: Ninja Build System and Parrallelism
-description: "C++: Ninja Build System and Parrallelism — Architectural Advantages over Make; Installation; Windows (MSYS2 UCRT64); Linux."
+description:
+  'C++: Ninja Build System and Parrallelism — Architectural Advantages over Make; Installation;
+  Windows (MSYS2 UCRT64); Linux.'
 date: 2025-12-10T06:02:22.685Z
 tags:
   - cpp
@@ -8,6 +10,7 @@ categories:
   - cpp
 slug: ninja-build-system-parrallelism
 ---
+
 The build system is responsible for orchestrating the execution of compilers, linkers, and custom
 Commands to transform source code into artifacts. While CMake generates the build instructions, it
 Does not execute them.
@@ -19,19 +22,19 @@ Executes with minimal overhead.
 
 ## Architectural Advantages over Make
 
-Legacy build systems like Make perform "Recursive Make," where a Makefile invokes other
-Makefiles in subdirectories. This creates fragmented dependency graphs, preventing the build system
-From seeing the global state of the build.
+Legacy build systems like Make perform "Recursive Make," where a Makefile invokes other Makefiles in
+subdirectories. This creates fragmented dependency graphs, preventing the build system From seeing
+the global state of the build.
 
 Ninja operates on a **Single Global Dependency Graph**.
 
 1. **Zero-Overhead Startup:** Ninja uses a custom binary format for its dependency database
- (`.ninja_deps`). It can load dependency graphs of 100,000+ nodes in sub-second time, whereas Make
- builds parse text files recursively, leading to significant I/O latency.
+   (`.ninja_deps`). It can load dependency graphs of 100,000+ nodes in sub-second time, whereas Make
+   builds parse text files recursively, leading to significant I/O latency.
 2. **Global Parallelism:** Because Ninja sees the entire graph, it can parallelize build steps
- across unrelated directories. Make can only parallelize within the current directory context.
+   across unrelated directories. Make can only parallelize within the current directory context.
 3. **Dependency Handling:** Ninja understands compiler-emitted dependency information (header
- includes) natively, updating the dependency graph dynamically without full re-evaluation.
+   includes) natively, updating the dependency graph dynamically without full re-evaluation.
 
 ## Installation
 
@@ -97,14 +100,14 @@ Ninja models the build as a Directed Acyclic Graph (DAG) where:
 - **Nodes** are files (source files, object files, executables, BMIs).
 - **Edges** represent build rules (compile, link, copy).
 - **Edge direction** represents the "produced-by" relationship: `main.o` --&gt; `main.cpp` means
- `main.o` is produced from `main.cpp`.
+  `main.o` is produced from `main.cpp`.
 
 ### Proof: DAG-Based Parallelism Is Correct
 
 A build system must satisfy two invariants for correctness:
 
 1. **Dependency completeness:** Every input of a build edge must be built (or be a source file)
- before the edge executes.
+   before the edge executes.
 2. **No redundant work:** A target is rebuilt only if at least one of its inputs has changed.
 
 Ninja's DAG-based scheduling satisfies both invariants by construction:
@@ -133,9 +136,9 @@ A work-stealing thread pool to maximize the number of concurrent edges at any po
 Ninja distinguishes between **explicit** and **implicit** dependencies:
 
 - **Explicit dependencies:** Listed in the `build.ninja` file. These are the primary inputs (e.g.,
- `main.cpp` for `main.o`).
+  `main.cpp` for `main.o`).
 - **Implicit dependencies:** Discovered at build time from compiler-emitted `.d` files (header
- dependencies). These are recorded in `.ninja_deps` and integrated into the graph.
+  dependencies). These are recorded in `.ninja_deps` and integrated into the graph.
 
 The separation is critical: explicit dependencies are sufficient for a clean build, but implicit
 Dependencies are required for correct incremental builds. Without implicit dependencies, changing a
@@ -157,17 +160,17 @@ Ninja's correctness relies on three checks per build edge:
 1. **Input existence:** All inputs must exist. If an input is missing, Ninja reports an error.
 2. **Input freshness:** If any input's mtime is newer than the output's mtime, the edge is dirty.
 3. **Command string match:** If the command used to build the output has changed (different flags,
- different compiler), the edge is dirty even if file timestamps suggest otherwise.
+   different compiler), the edge is dirty even if file timestamps suggest otherwise.
 
-The third check is the most commonly overlooked. If you change a `-D` flag in `CMakeLists.txt`
-CMake regenerates `build.ninja` with a new command string for the affected edges. Ninja detects that
-The command string changed and rebuilds those edges, even though no source file was modified.
+The third check is the most commonly overlooked. If you change a `-D` flag in `CMakeLists.txt` CMake
+regenerates `build.ninja` with a new command string for the affected edges. Ninja detects that The
+command string changed and rebuilds those edges, even though no source file was modified.
 
 ## Parallelism Control
 
-Ninja defaults to running commands in parallel based on the number of logical CPU cores available
-( $N + 2$ or $1.1 \times N$). However, blindly maximizing CPU usage can crash builds due to
-Memory exhaustion, particularly during the linking phase (LTO).
+Ninja defaults to running commands in parallel based on the number of logical CPU cores available (
+$N + 2$ or $1.1 \times N$). However, blindly maximizing CPU usage can crash builds due to Memory
+exhaustion, particularly during the linking phase (LTO).
 
 ### 1. Manual Job Control (`-j`)
 
@@ -285,16 +288,16 @@ Result is ready"**. It achieves this through several architectural decisions.
 Ninja's primary performance advantage over Make is its approach to I/O:
 
 1. **Binary dependency database.** Ninja stores dependency information in `.ninja_deps`A compact
- binary format. Loading a dependency graph with 100,000+ nodes takes milliseconds, whereas Make
- parses text-based Makefiles recursively, incurring significant filesystem I/O.
+   binary format. Loading a dependency graph with 100,000+ nodes takes milliseconds, whereas Make
+   parses text-based Makefiles recursively, incurring significant filesystem I/O.
 
 2. **No globbing.** Ninja does not support `$(wildcard *.cpp)` or equivalent. All file lists must be
- explicitly enumerated in `build.ninja`. This means Ninja never scans directories -- the build
- generator (CMake) does this once during configuration.
+   explicitly enumerated in `build.ninja`. This means Ninja never scans directories -- the build
+   generator (CMake) does this once during configuration.
 
 3. **No implicit rules.** Every build edge is explicitly stated. Ninja does not infer how to build a
- `.o` from a `.cpp` -- the rule is written out verbatim for every file. This eliminates the
- pattern-matching overhead that Make performs on every build.
+   `.o` from a `.cpp` -- the rule is written out verbatim for every file. This eliminates the
+   pattern-matching overhead that Make performs on every build.
 
 ### Single Global Dependency Graph
 
@@ -303,20 +306,20 @@ Ninja operates on a **single flat dependency graph**. This means:
 
 - Ninja can see all dependencies across the entire project.
 - Parallelism is global: a file in `src/core/` and a file in `src/ui/` can compile simultaneously if
- they have no shared dependencies, regardless of directory structure.
+  they have no shared dependencies, regardless of directory structure.
 - Incremental rebuilds are always correct: if `src/core/types.h` changes, Ninja knows exactly which
- `.cpp` files in any subdirectory depend on it.
+  `.cpp` files in any subdirectory depend on it.
 
 ### Build Correctness
 
 Ninja guarantees correct incremental builds by tracking:
 
 1. **File modification timestamps.** Ninja rebuilds a target if any of its inputs are newer than the
- output.
+   output.
 2. **Compiler-emitted dependencies.** When a source file `#include`S a header, the compiler records
- this dependency in a `.d` file. Ninja reads these `.d` files and integrates them into the graph.
+   this dependency in a `.d` file. Ninja reads these `.d` files and integrates them into the graph.
 3. **Command strings.** If the command used to build a target changes (e.g., different compiler
- flags), Ninja rebuilds the target even if the input file timestamps are unchanged.
+   flags), Ninja rebuilds the target even if the input file timestamps are unchanged.
 
 ## The `.ninja` File Format
 
@@ -348,9 +351,9 @@ build clean: phony
 
 ### Response Files
 
-On Windows, command lines are limited to 8191 characters. Large C++ projects exceed this
-Limit when passing long include paths or many source files. Ninja handles this via **response
-Files** (also called "rspfiles"):
+On Windows, command lines are limited to 8191 characters. Large C++ projects exceed this Limit when
+passing long include paths or many source files. Ninja handles this via **response Files** (also
+called "rspfiles"):
 
 ```ninja
 rule link
@@ -405,33 +408,33 @@ That discovers module dependencies without full compilation.
 
 ## Comparison with GNU Make
 
-| Feature | Ninja | GNU Make |
+| Feature                      | Ninja                                | GNU Make                                 |
 | :--------------------------- | :----------------------------------- | :--------------------------------------- |
-| Startup time (large project) | &lt;1s | 5-30s (recursive Make) |
-| Dependency tracking | Compiler-emitted `.d` files (native) | Manual or via `-MMD` flags |
-| Parallelism | Global (full graph visible) | Per-directory (recursive Make) |
-| Implicit rules | None (explicit only) | Pattern rules, suffix rules |
-| Globbing / wildcards | None | `$(wildcard)``%` patterns |
-| Conditional logic | None (handled by generator) | `ifeq``ifdef``$(if ...)` |
-| Functions / macros | None | `$(call)``$(foreach)``$(eval)` |
-| Response files | Built-in | Manual (`@file` syntax) |
-| Job pools | Built-in | Not native (requires parallel extension) |
-| Configuration | Generated (CMake, Meson, Bazel) | Hand-written Makefiles |
-| Build correctness | Always correct (global graph) | Fragile with recursive Make |
-| Module support | Via dyndep (P1689) | None |
-| Cross-platform | Linux, macOS, Windows | Linux, macOS, Windows (via MinGW) |
+| Startup time (large project) | &lt;1s                               | 5-30s (recursive Make)                   |
+| Dependency tracking          | Compiler-emitted `.d` files (native) | Manual or via `-MMD` flags               |
+| Parallelism                  | Global (full graph visible)          | Per-directory (recursive Make)           |
+| Implicit rules               | None (explicit only)                 | Pattern rules, suffix rules              |
+| Globbing / wildcards         | None                                 | `$(wildcard)``%` patterns                |
+| Conditional logic            | None (handled by generator)          | `ifeq``ifdef``$(if ...)`                 |
+| Functions / macros           | None                                 | `$(call)``$(foreach)``$(eval)`           |
+| Response files               | Built-in                             | Manual (`@file` syntax)                  |
+| Job pools                    | Built-in                             | Not native (requires parallel extension) |
+| Configuration                | Generated (CMake, Meson, Bazel)      | Hand-written Makefiles                   |
+| Build correctness            | Always correct (global graph)        | Fragile with recursive Make              |
+| Module support               | Via dyndep (P1689)                   | None                                     |
+| Cross-platform               | Linux, macOS, Windows                | Linux, macOS, Windows (via MinGW)        |
 
 ### Performance Comparison
 
 For a representative C++ project with 1000 source files and 5000 header dependencies:
 
-| Metric | Ninja | GNU Make (recursive) | Speedup |
+| Metric                    | Ninja | GNU Make (recursive) | Speedup |
 | :------------------------ | :---- | :------------------- | :------ |
-| Cold build (no artifacts) | 45s | 48s | 1.1x |
-| Null build (no changes) | 0.02s | 8s | 400x |
-| Header change (1 file) | 2s | 12s | 6x |
-| Source change (1 file) | 1.5s | 3s | 2x |
-| Graph load time | 0.01s | 5s | 500x |
+| Cold build (no artifacts) | 45s   | 48s                  | 1.1x    |
+| Null build (no changes)   | 0.02s | 8s                   | 400x    |
+| Header change (1 file)    | 2s    | 12s                  | 6x      |
+| Source change (1 file)    | 1.5s  | 3s                   | 2x      |
+| Graph load time           | 0.01s | 5s                   | 500x    |
 
 The most dramatic difference is in the **null build** (no files changed). Ninja loads the binary
 Dependency database, checks timestamps, and exits almost instantly. Make must re-parse every
@@ -442,31 +445,31 @@ Makefile recursively and re-evaluate every dependency, even when nothing has cha
 Despite Ninja's speed advantages, there are cases where GNU Make is more appropriate:
 
 1. **Simple projects with few files.** Make's startup overhead is negligible for small projects, and
- Make is available on virtually every Unix system without installation.
+   Make is available on virtually every Unix system without installation.
 2. **Projects without a build generator.** If you are writing build rules by hand, Make's built-in
- functions (pattern rules, conditionals, `$(call)`) are more expressive than raw `.ninja` syntax.
+   functions (pattern rules, conditionals, `$(call)`) are more expressive than raw `.ninja` syntax.
 3. **Cross-platform compatibility on obscure systems.** Make has been ported to more platforms than
- Ninja.
+   Ninja.
 4. **Dependency on Make-specific features.** If your build process relies on GNU Make extensions
- like `$(eval)``$(shell)`Or `$(file)`Migrating to Ninja requires significant effort.
+   like `$(eval)``$(shell)`Or `$(file)`Migrating to Ninja requires significant effort.
 
 ## Ninja's Limitations
 
 1. **No built-in dependency discovery.** Ninja cannot determine which headers a `.cpp` file depends
- on -- it relies on the compiler to emit this information. If the compiler is invoked incorrectly
- (missing `-MMD` flag), dependencies will be missing, leading to incorrect incremental builds.
+   on -- it relies on the compiler to emit this information. If the compiler is invoked incorrectly
+   (missing `-MMD` flag), dependencies will be missing, leading to incorrect incremental builds.
 
 2. **No implicit rules.** Every file must be listed explicitly. For hand-written build files, this
- is tedious. In practice, CMake or Meson generates the file list, so this is rarely a problem.
+   is tedious. In practice, CMake or Meson generates the file list, so this is rarely a problem.
 
 3. **No conditional logic.** Ninja cannot express `if/else` or platform detection. All platform
- logic must be handled by the build generator (CMake).
+   logic must be handled by the build generator (CMake).
 
 4. **Limited to single-platform builds.** A `build.ninja` file contains platform-specific paths and
- commands. Cross-platform builds require separate `build.ninja` files for each platform.
+   commands. Cross-platform builds require separate `build.ninja` files for each platform.
 
 5. **No built-in test runner.** Ninja does not know about tests. CMake's `ctest` or a separate test
- runner must be used.
+   runner must be used.
 
 ## Integration with Meson
 
@@ -567,21 +570,21 @@ Identify stale dependency issues.
 ## Common Pitfalls
 
 - **Editing `build.ninja` by hand.** Changes will be overwritten the next time CMake reconfigures.
- Edit `CMakeLists.txt` instead.
+  Edit `CMakeLists.txt` instead.
 - **Stale `.ninja_log` or `.ninja_deps`.** If the build database becomes corrupted (e.g., after a
- git rebase or force checkout), delete the build directory and reconfigure.
+  git rebase or force checkout), delete the build directory and reconfigure.
 - **Running Ninja from the wrong directory.** Ninja must be run from the build directory (or with
- `-C build_dir`). Running from the source directory will fail.
+  `-C build_dir`). Running from the source directory will fail.
 - **Load average on single-core machines.** The `-l` flag checks system load average, which is
- always 0 on a single-core machine with 0 load. On single-core systems, use `-j 1` instead.
+  always 0 on a single-core machine with 0 load. On single-core systems, use `-j 1` instead.
 - **CMake cache mismatch.** If you switch generators (e.g., from Make to Ninja) without deleting the
- build directory, CMake may use cached values from the old generator. Always start fresh when
- switching generators.
+  build directory, CMake may use cached values from the old generator. Always start fresh when
+  switching generators.
 - **Not using job pools for LTO builds.** LTO linking can consume 10-50 GB of RAM per process.
- Without a link pool limiting concurrency, running `-j 32` with LTO will OOM the machine.
+  Without a link pool limiting concurrency, running `-j 32` with LTO will OOM the machine.
 - **Assuming Ninja handles C++ modules automatically.** C++20 modules require explicit CMake
- configuration (`CMAKE_CXX_SCAN_FOR_MODULES ON`) and a compatible Ninja version (1.11+). Older
- Ninja versions do not support `dyndep` for modules.
+  configuration (`CMAKE_CXX_SCAN_FOR_MODULES ON`) and a compatible Ninja version (1.11+). Older
+  Ninja versions do not support `dyndep` for modules.
 
 ## Ninja and Build Caching Integration
 
@@ -634,9 +637,9 @@ After the command runs. If the output's timestamp did not change (e.g., because 
 Cached object file that is older than the inputs), Ninja does not propagate the rebuild to
 Downstream targets.
 
-This interaction is correct: if ccache returns a cached object file, the downstream targets
-That depend on it do not need rebuilding. However, if the cached object file was built with
-Different flags (cache poisoning), the `restat` optimization can mask the inconsistency. Use
+This interaction is correct: if ccache returns a cached object file, the downstream targets That
+depend on it do not need rebuilding. However, if the cached object file was built with Different
+flags (cache poisoning), the `restat` optimization can mask the inconsistency. Use
 `CCACHE_RECACHE=1` to bypass the cache when investigating build inconsistencies.
 
 ## Ninja and Custom Commands
@@ -699,9 +702,9 @@ This shows which targets have the most transitive dependencies, indicating the c
 Ninja supports two composition mechanisms for `build.ninja` files:
 
 - **`include`**: Textually includes another `.ninja` file (like C's `#include`). Variables and rules
- from the included file are available in the includer.
+  from the included file are available in the includer.
 - **`subninja`**: Loads another `.ninja` file as a sub-graph. The sub-graph's build edges are added
- to the parent graph, but its variables are scoped (not visible to the parent).
+  to the parent graph, but its variables are scoped (not visible to the parent).
 
 ```ninja
 # build.ninja (top-level)

@@ -1,6 +1,8 @@
 ---
 title: Equations and Inequalities
-description: "A-Level Mathematics notes on Equations and Inequalities: Board Coverage; 1. Linear Simultaneous Equations; 2. Linear-Quadratic Simultaneous Equations."
+description:
+  'A-Level Mathematics notes on Equations and Inequalities: Board Coverage; 1. Linear Simultaneous
+  Equations; 2. Linear-Quadratic Simultaneous Equations.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Maths
@@ -9,14 +11,15 @@ categories:
   - Maths
 slug: equations-and-inequalities
 ---
+
 ## Board Coverage
 
-| Board | Paper | Notes |
+| Board      | Paper   | Notes                                       |
 | ---------- | ------- | ------------------------------------------- |
-| AQA | Paper 1 | Simultaneous equations, inequalities |
-| Edexcel | P1 | Linear and quadratic simultaneous equations |
-| OCR (A) | Paper 1 | Set notation for solutions |
-| CIE (9709) | P1 | Simultaneous equations, inequalities |
+| AQA        | Paper 1 | Simultaneous equations, inequalities        |
+| Edexcel    | P1      | Linear and quadratic simultaneous equations |
+| OCR (A)    | Paper 1 | Set notation for solutions                  |
+| CIE (9709) | P1      | Simultaneous equations, inequalities        |
 
 ## 1. Linear Simultaneous Equations
 
@@ -36,9 +39,9 @@ Has:
 
 - A **unique solution** if $a_1 b_2 - a_2 b_1 \neq 0$ (the lines are not parallel);
 - **No solution** if $a_1 b_2 - a_2 b_1 = 0$ and the equations are inconsistent (parallel distinct
- lines);
+  lines);
 - **Infinitely many solutions** if $a_1 b_2 - a_2 b_1 = 0$ and the equations are consistent
- (coincident lines).
+  (coincident lines).
 
 _Proof._ By elimination. Multiply the first equation by $b_2$ and the second by $b_1$:
 
@@ -131,10 +134,7 @@ $\Delta = 496 > 0$So the line intersects the circle at two points.
 
 </details>
 
-:::tip
-Tip
-Quadratic in both variables, which is harder to solve.
-:::
+:::tip Tip Quadratic in both variables, which is harder to solve. :::
 
 <hr />
 
@@ -146,17 +146,14 @@ The rules for manipulating inequalities are the same as for equations, with one 
 
 **Theorem (Order-Reversing Property).** If $a < b$ and $c < 0$Then $ac > bc$.
 
-_Proof._ From $a < b$We have $b - a > 0$. Since $c < 0$ and $b - a > 0$: $c(b - a) < 0$ (product
-Of positive and negative). So $cb - ca < 0$Giving $ca > cb$. $\blacksquare$
+_Proof._ From $a < b$We have $b - a > 0$. Since $c < 0$ and $b - a > 0$: $c(b - a) < 0$ (product Of
+positive and negative). So $cb - ca < 0$Giving $ca > cb$. $\blacksquare$
 
 **Corollary.** Multiplying or dividing both sides of an inequality by a negative number reverses the
 Inequality.
 
-:::warning
-Warning
-Multiplying/dividing by a negative number. Always check the sign of the multiplier before
-Proceeding.
-:::
+:::warning Warning Multiplying/dividing by a negative number. Always check the sign of the
+multiplier before Proceeding. :::
 
 ### 3.2 Quadratic Inequalities
 
@@ -183,11 +180,11 @@ Critical values: $x = 4$ (zero of numerator) and $x = -3$ (zero of denominator, 
 
 Sign chart:
 
-| Interval | $x - 4$ | $x + 3$ | Quotient |
+| Interval     | $x - 4$ | $x + 3$ | Quotient |
 | ------------ | ------- | ------- | -------- |
-| $x < -3$ | $-$ | $-$ | $+$ |
-| $-3 < x < 4$ | $-$ | $+$ | $-$ |
-| $x > 4$ | $+$ | $+$ | $+$ |
+| $x < -3$     | $-$     | $-$     | $+$      |
+| $-3 < x < 4$ | $-$     | $+$     | $-$      |
+| $x > 4$      | $+$     | $+$     | $+$      |
 
 The quotient is $\geq 0$ when $x < -3$ or $x \geq 4$.
 
@@ -227,9 +224,9 @@ Y &\geq 2x
 \end{aligned}
 $$
 
-This defines a polygon bounded by the lines $x + y = 6$$x = 0$$y = 0$And $y = 2x$. The
-Vertices are $(0, 0)$$(0, 6)$And the intersection of $x + y = 6$ with $y = 2x$: $3x = 6$
-$x = 2$$y = 4$. So the third vertex is $(2, 4)$.
+This defines a polygon bounded by the lines $x + y = 6$$x = 0$$y = 0$And $y = 2x$. The Vertices are
+$(0, 0)$$(0, 6)$And the intersection of $x + y = 6$ with $y = 2x$: $3x = 6$ $x = 2$$y = 4$. So the
+third vertex is $(2, 4)$.
 
 </details>
 
@@ -340,8 +337,7 @@ So $f(x) = (x - 1)(2x - 1)(x + 2)$.
 
 </details>
 
-:::tip
-When searching for roots, test the factors of the constant term first. For
+:::tip When searching for roots, test the factors of the constant term first. For
 $f(x) = x^n + \cdots + c$The possible rational roots are $\pm 1, \pm 2, \ldots$ (factors of $c$).
 :::
 
@@ -449,10 +445,10 @@ Solution: $x = \frac{1}{2}, \; y = \frac{5}{2}, \; z = \frac{5}{2}$.
 Two principal approaches:
 
 1. **Case analysis:** Split into $f(x) \geq 0$ and $f(x) \lt 0$Replacing $|f(x)|$ with $f(x)$ or
- $-f(x)$ respectively. Solve each case and take the union.
+   $-f(x)$ respectively. Solve each case and take the union.
 2. **Squaring:** Since $|f(x)|^2 = f(x)^2$The inequality $|f(x)| \lt g(x)$ becomes
- $f(x)^2 \lt g(x)^2$ provided $g(x) \geq 0$. This is often cleaner when both sides are
- non-negative.
+   $f(x)^2 \lt g(x)^2$ provided $g(x) \geq 0$. This is often cleaner when both sides are
+   non-negative.
 
 <details>
 <summary>Example</summary>
@@ -494,11 +490,8 @@ No real solution from this case.
 
 </details>
 
-:::warning
-Warning
-Inequality $|f(x)| \lt g(x)$ only makes sense when $g(x) \gt 0$And squaring preserves the
-Direction since $a \lt b$ implies $a^2 \lt b^2$ for $a, b \geq 0$.
-:::
+:::warning Warning Inequality $|f(x)| \lt g(x)$ only makes sense when $g(x) \gt 0$And squaring
+preserves the Direction since $a \lt b$ implies $a^2 \lt b^2$ for $a, b \geq 0$. :::
 
 <hr />
 
@@ -609,12 +602,12 @@ Critical values: $x = -5, -1, 1$.
 
 Sign chart:
 
-| Interval | $x + 5$ | $x - 1$ | $x + 1$ | Quotient |
+| Interval      | $x + 5$ | $x - 1$ | $x + 1$ | Quotient |
 | ------------- | ------- | ------- | ------- | -------- |
-| $x < -5$ | $-$ | $-$ | $-$ | $-$ |
-| $-5 < x < -1$ | $+$ | $-$ | $-$ | $+$ |
-| $-1 < x < 1$ | $+$ | $-$ | $+$ | $-$ |
-| $x > 1$ | $+$ | $+$ | $+$ | $+$ |
+| $x < -5$      | $-$     | $-$     | $-$     | $-$      |
+| $-5 < x < -1$ | $+$     | $-$     | $-$     | $+$      |
+| $-1 < x < 1$  | $+$     | $-$     | $+$     | $-$      |
+| $x > 1$       | $+$     | $+$     | $+$     | $+$      |
 
 Solution: $-5 < x < -1$ or $x > 1$.
 
@@ -672,11 +665,11 @@ Critical values: $x = 0$$x = 2$.
 
 Sign chart for $x(x - 2)$:
 
-| Interval | $x$ | $x - 2$ | Product |
+| Interval    | $x$ | $x - 2$ | Product |
 | ----------- | --- | ------- | ------- |
-| $x < 0$ | $-$ | $-$ | $+$ |
-| $0 < x < 2$ | $+$ | $-$ | $-$ |
-| $x > 2$ | $+$ | $+$ | $+$ |
+| $x < 0$     | $-$ | $-$     | $+$     |
+| $0 < x < 2$ | $+$ | $-$     | $-$     |
+| $x > 2$     | $+$ | $+$     | $+$     |
 
 So $\frac{2}{x(x-2)} \geq 0$ when $x < 0$ or $x > 2$.
 
@@ -687,8 +680,8 @@ Solution: $x \in (-\infty, 0) \cup (2, \infty)$.
 
 <hr />
 
-**Problem 6.** Find the vertices of the region defined by $x \geq 0$$y \geq 0$$2x + y \leq 8$
-And $x + 2y \leq 8$.
+**Problem 6.** Find the vertices of the region defined by $x \geq 0$$y \geq 0$$2x + y \leq 8$ And
+$x + 2y \leq 8$.
 
 <details>
 <summary>Solution</summary>
@@ -736,8 +729,8 @@ Dividing by 2: $-1 \leq x \leq 4$.
 
 <hr />
 
-**Problem 9.** Given that $x^2 + px + q = 0$ has roots $\alpha$ and $\beta$And
-$\alpha + \beta = 6$ and $\alpha\beta = 8$Find $p$ and $q$.
+**Problem 9.** Given that $x^2 + px + q = 0$ has roots $\alpha$ and $\beta$And $\alpha + \beta = 6$
+and $\alpha\beta = 8$Find $p$ and $q$.
 
 <details>
 <summary>Solution</summary>
@@ -857,22 +850,24 @@ So $x \leq \frac◆LB◆3 - \sqrt{13}◆RB◆◆LB◆2◆RB◆$ or $x \geq \frac
 Since $\sqrt{13} \gt \sqrt{5}$The condition $x^2 - 3x + 1 \geq 0$ is automatically satisfied by
 These ranges.
 
-**Case 2:** $x^2 - 3x + 1 \lt 0$I.e. $\frac◆LB◆3 - \sqrt{5}◆RB◆◆LB◆2◆RB◆ \lt x \lt \frac◆LB◆3 + \sqrt{5}◆RB◆◆LB◆2◆RB◆$.
+**Case 2:** $x^2 - 3x + 1 \lt 0$I.e.
+$\frac◆LB◆3 - \sqrt{5}◆RB◆◆LB◆2◆RB◆ \lt x \lt \frac◆LB◆3 + \sqrt{5}◆RB◆◆LB◆2◆RB◆$.
 
 Then $-(x^2 - 3x + 1) \geq 2$Giving $x^2 - 3x + 3 \leq 0$.
 
 Discriminant: $\Delta = 9 - 12 = -3 \lt 0$. Since the parabola opens upward, $x^2 - 3x + 3 \gt 0$
 For all real $x$. No solution from this case.
 
-**Solution:** $x \leq \frac◆LB◆3 - \sqrt{13}◆RB◆◆LB◆2◆RB◆$ or $x \geq \frac◆LB◆3 + \sqrt{13}◆RB◆◆LB◆2◆RB◆$.
+**Solution:** $x \leq \frac◆LB◆3 - \sqrt{13}◆RB◆◆LB◆2◆RB◆$ or
+$x \geq \frac◆LB◆3 + \sqrt{13}◆RB◆◆LB◆2◆RB◆$.
 
 </details>
 <b>If you get this wrong, revise:</b> [Modulus inequalities](#8-modulus-inequalities)
 
 <hr />
 
-**Problem 14.** Find the area of the region defined by $x \geq 0$$y \geq 0$$3x + 2y \leq 12$
-And $x + y \geq 3$.
+**Problem 14.** Find the area of the region defined by $x \geq 0$$y \geq 0$$3x + 2y \leq 12$ And
+$x + y \geq 3$.
 
 <details>
 <summary>Solution</summary>
@@ -932,14 +927,15 @@ Solutions: $(2, 3)$ and $(-2, -3)$.
 
 ---
 
-:::tip
-Diagnostic Test
-Ready to test your understanding of **Equations and Inequalities**? The [diagnostic test](/docs/alevel/maths/diagnostics/diag-equations-and-inequalities) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
+:::tip Diagnostic Test Ready to test your understanding of **Equations and Inequalities**? The
+[diagnostic test](/docs/alevel/maths/diagnostics/diag-equations-and-inequalities) contains the
+hardest questions within the A-Level specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Equations and Inequalities with other pure mathematics topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Equations
+and Inequalities with other pure mathematics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and
+building a personal test matrix. :::
 
 ## Common Pitfalls
 

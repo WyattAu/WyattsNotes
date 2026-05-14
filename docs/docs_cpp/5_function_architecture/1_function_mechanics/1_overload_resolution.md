@@ -1,6 +1,8 @@
 ---
 title: Overload Resolution
-description: "C++: Overload Resolution — 1.1 Name Lookup [N4950 §6.5.4]; 1.2 ADL in Detail [N4950 §6.5.4.2]; ADL and Template Argument Deduction."
+description:
+  'C++: Overload Resolution — 1.1 Name Lookup [N4950 §6.5.4]; 1.2 ADL in Detail [N4950 §6.5.4.2];
+  ADL and Template Argument Deduction.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -8,6 +10,7 @@ categories:
   - Cpp
 slug: overload-resolution
 ---
+
 # Overload Resolution
 
 C++ function resolution is not a simple name match. The compiler performs a multi-phase search
@@ -20,11 +23,11 @@ Name lookup determines which set of declarations are considered as candidates fo
 There are three forms of lookup:
 
 1. **Unqualified lookup**: Searches enclosing scopes from innermost to outermost, stopping at the
- first scope that contains a declaration of the name.
+   first scope that contains a declaration of the name.
 2. **Qualified lookup**: When a name is prefixed with a namespace or class scope (e.g.,
- `std::sort`), lookup searches only that scope and its inline namespaces.
+   `std::sort`), lookup searches only that scope and its inline namespaces.
 3. **Argument-dependent lookup (ADL)**: Also called Koenig lookup. For unqualified function calls,
- the namespaces and classes associated with each argument type are additionally searched.
+   the namespaces and classes associated with each argument type are additionally searched.
 
 ```cpp
 #include <iostream>
@@ -48,11 +51,9 @@ The ADL rule is the reason `std::cout << "hello"` works: the left operand has ty
 (in namespace `std`), and the right operand has type `const char[6]` (built-in type, no ADL
 Contribution). ADL adds the namespace `std` to the search set, where `operator<<` is found.
 
-:::info
-Relevance ADL is essential for operator overloading and generic code. Without ADL, every
+:::info Relevance ADL is essential for operator overloading and generic code. Without ADL, every
 Call to `operator<<``operator==`Or a custom swap function would require explicit namespace
-Qualification, breaking generic programming.
-:::
+Qualification, breaking generic programming. :::
 
 ## 1.2 ADL in Detail [N4950 §6.5.4.2]
 
@@ -64,8 +65,8 @@ Set:
 - The type of each base class.
 - The type of each member of the class.
 
-The fundamental types (`int``double``bool`Etc.) and types whose associated namespaces are the
-Global namespace contribute no additional search scope.
+The fundamental types (`int``double``bool`Etc.) and types whose associated namespaces are the Global
+namespace contribute no additional search scope.
 
 ```cpp
 #include <vector>
@@ -160,10 +161,9 @@ Let $C$ be the candidate set from name lookup. For each candidate $c \in C$Let $
 Of parameters of $c$And let $k$ be the number of arguments in the call. Candidate $c$ is viable if
 And only if all of the following hold:
 
-1. $n_c = k$Or $c$ has a trailing parameter pack and $n_c \le k$Or $c$ is variadic and
- $n_c \le k$.
+1. $n_c = k$Or $c$ has a trailing parameter pack and $n_c \le k$Or $c$ is variadic and $n_c \le k$.
 2. For each argument $a_i$ (where $1 \le i \le k$), there exists an implicit conversion sequence
- converting $a_i$ to the type of the $i$-th parameter of $c$.
+   converting $a_i$ to the type of the $i$-th parameter of $c$.
 
 ### Formal Statement of the Best Viable Function
 
@@ -172,7 +172,7 @@ Function** if and only if for every other $g \in V \setminus \{f\}$:
 
 - $\mathrm{ICS{}_f(i) \preceq \mathrm{ICS{}_g(i)$ for all argument positions $i$ (not worse).
 - $\mathrm{ICS{}_f(j) \prec \mathrm{ICS{}_g(j)$ for at least one argument position $j$ (strictly
- better).
+  better).
 
 Where $\preceq$ denotes "no worse than" and $\prec$ denotes "strictly better" in the conversion
 Ranking hierarchy. If no unique best viable function exists, the call is ambiguous [N4950
@@ -182,38 +182,38 @@ Ranking hierarchy. If no unique best viable function exists, the call is ambiguo
 
 The conversion ranking hierarchy (from best to worst) is:
 
-| Rank | Description | Example |
-| :-------------------------- | :-------------------------------------------------------- | :------------------------------------- |
-| **Exact Match** | No conversion, or trivial conversion (lval→rval, cv-qual) | `int` → `int``int` → `const int&` |
-| **Promotion** | Integral promotion or floating-point promotion | `short` → `int``float` → `double` |
-| **Standard Conversion** | Other implicit standard conversions | `int` → `double``Derived*` → `Base*` |
-| **User-Defined Conversion** | One user-defined conversion + standard conv | `class A` → `class B` (via `B(A)`) |
-| **Ellipsis** | `...` catch-all | any type |
+| Rank                        | Description                                               | Example                              |
+| :-------------------------- | :-------------------------------------------------------- | :----------------------------------- |
+| **Exact Match**             | No conversion, or trivial conversion (lval→rval, cv-qual) | `int` → `int``int` → `const int&`    |
+| **Promotion**               | Integral promotion or floating-point promotion            | `short` → `int``float` → `double`    |
+| **Standard Conversion**     | Other implicit standard conversions                       | `int` → `double``Derived*` → `Base*` |
+| **User-Defined Conversion** | One user-defined conversion + standard conv               | `class A` → `class B` (via `B(A)`)   |
+| **Ellipsis**                | `...` catch-all                                           | any type                             |
 
 ### Complete Conversion Rank Table
 
 The following table enumerates every standard conversion recognized by [N4950 §7.3.3] and its
 Ranking within overload resolution:
 
-| Conversion | Category | Rank |
+| Conversion                                      | Category     | Rank         |
 | :---------------------------------------------- | :----------- | :----------- |
-| Identity (no conversion) | Standard | Exact Match |
-| Lvalue-to-rvalue conversion | Standard | Exact Match |
-| Qualification conversion (`T` → `const T`) | Standard | Exact Match |
-| Function-to-pointer conversion | Standard | Exact Match |
-| Null pointer constant → `T*` | Standard | Exact Match |
-| Null pointer constant → `std::nullptr_t` | Standard | Exact Match |
-| Integral promotion (`char` → `int`) | Promotion | Promotion |
-| Floating-point promotion (`float` → `double`) | Promotion | Promotion |
-| Integral conversion (`int` → `long`) | Conversion | Conversion |
-| Floating-point conversion (`double` → `float`) | Conversion | Conversion |
-| Floating-integral conversion (`int` → `double`) | Conversion | Conversion |
-| Pointer conversion (`Derived*` → `Base*`) | Conversion | Conversion |
-| Pointer-to-bool conversion | Conversion | Conversion |
-| Boolean conversion (`int` → `bool`) | Conversion | Conversion |
-| User-defined converting constructor | User-Defined | User-Defined |
-| User-defined conversion operator | User-Defined | User-Defined |
-| Ellipsis conversion | Ellipsis | Ellipsis |
+| Identity (no conversion)                        | Standard     | Exact Match  |
+| Lvalue-to-rvalue conversion                     | Standard     | Exact Match  |
+| Qualification conversion (`T` → `const T`)      | Standard     | Exact Match  |
+| Function-to-pointer conversion                  | Standard     | Exact Match  |
+| Null pointer constant → `T*`                    | Standard     | Exact Match  |
+| Null pointer constant → `std::nullptr_t`        | Standard     | Exact Match  |
+| Integral promotion (`char` → `int`)             | Promotion    | Promotion    |
+| Floating-point promotion (`float` → `double`)   | Promotion    | Promotion    |
+| Integral conversion (`int` → `long`)            | Conversion   | Conversion   |
+| Floating-point conversion (`double` → `float`)  | Conversion   | Conversion   |
+| Floating-integral conversion (`int` → `double`) | Conversion   | Conversion   |
+| Pointer conversion (`Derived*` → `Base*`)       | Conversion   | Conversion   |
+| Pointer-to-bool conversion                      | Conversion   | Conversion   |
+| Boolean conversion (`int` → `bool`)             | Conversion   | Conversion   |
+| User-defined converting constructor             | User-Defined | User-Defined |
+| User-defined conversion operator                | User-Defined | User-Defined |
+| Ellipsis conversion                             | Ellipsis     | Ellipsis     |
 
 ### Sub-Ranking Within Exact Match
 
@@ -221,9 +221,9 @@ When two ICSes both rank as Exact Match, the compiler applies sub-ranking tie-br
 §12.4.3.2.3]:
 
 1. **Identity conversion** beats a qualification conversion (no cv change is better than adding
- `const` or `volatile`).
+   `const` or `volatile`).
 2. **Reference binding without conversion** beats reference binding with a derived-to-base or
- qualification conversion.
+   qualification conversion.
 3. **No function pointer conversion** beats function-to-pointer conversion.
 4. **No qualification conversion** beats a qualification conversion.
 
@@ -247,12 +247,12 @@ int main() {
 When two ICSes both rank as Standard Conversion, the sub-ranking is [N4950 §12.4.3.2.3]:
 
 1. **Promotion** beats **conversion** (a promotion is a standard conversion but ranked higher than
- other standard conversions).
+   other standard conversions).
 2. Among conversions: **pointer conversion** beats **pointer-to-member conversion** beats **boolean
- conversion**.
+   conversion**.
 3. Among conversions of the same category: **conversion of a rank that is a subclass of the other
- rank** wins. For example, `Derived*` → `Base*` (pointer conversion) beats `int` → `bool` (boolean
- conversion).
+   rank** wins. For example, `Derived*` → `Base*` (pointer conversion) beats `int` → `bool` (boolean
+   conversion).
 
 ```cpp
 #include <iostream>
@@ -288,20 +288,20 @@ int main() {
 
 ### Proof: Integral Promotion Beats Integral Conversion
 
-**Claim:** When the argument is of an integral type that promotes to `int`The promotion to `int`
-Is preferred over any integral conversion.
+**Claim:** When the argument is of an integral type that promotes to `int`The promotion to `int` Is
+preferred over any integral conversion.
 
 **Proof:**
 
 1. By [N4950 §7.3.7], integral promotion applies to types `bool``char``signed char`
- `unsigned char``short``unsigned short`And their bit-field equivalents. These types are
- promoted to `int` (or `unsigned int` if `int` cannot represent all values).
+   `unsigned char``short``unsigned short`And their bit-field equivalents. These types are promoted
+   to `int` (or `unsigned int` if `int` cannot represent all values).
 
 2. By [N4950 §12.4.3.2.2], a promotion is a distinct rank that is strictly better than a standard
- conversion.
+   conversion.
 
 3. Therefore, `short` → `int` (promotion) is strictly preferred over `short` → `long` (integral
- conversion). QED.
+   conversion). QED.
 
 ## 1.5 Ambiguity and Tie-Breaking
 
@@ -378,8 +378,7 @@ int main() {
 }
 ```
 
-:::warning
-ADL can pull in unexpected overloads from associated namespaces. The "hidden friend"
+:::warning ADL can pull in unexpected overloads from associated namespaces. The "hidden friend"
 Idiom — defining the operator as a friend inside the class — restricts the operator to being found
 Only via ADL, preventing unintended overloads:
 
@@ -400,7 +399,7 @@ An **implicit conversion sequence** (ICS) is the sequence of conversions the com
 Convert an argument to a parameter type. Each ICS consists of up to three parts [N4950 §12.4.3.2]:
 
 1. **Standard conversion** (always present): lvalue-to-rvalue conversion, qualification conversions,
- etc.
+   etc.
 2. **User-defined conversion** (optional): a converting constructor or conversion operator.
 3. **Second standard conversion** (optional): applied after the user-defined conversion.
 
@@ -437,11 +436,11 @@ When two ICSes have the same rank (e.g., both are standard conversions), the com
 Tie-breaking rules [N4950 §12.4.3.2.3]:
 
 1. **Rank the second standard conversion:** If both ICSes end with a standard conversion, the better
- second conversion wins.
+   second conversion wins.
 2. **Prefer non-templates to templates:** A non-template function is preferred over a function
- template specialization providing the same conversion.
+   template specialization providing the same conversion.
 3. **Prefer more specialized templates:** When both are templates, partial ordering selects the more
- specialized one.
+   specialized one.
 4. **Prefer functions with fewer ellipsis parameters in the signature.**
 
 ```cpp
@@ -465,15 +464,15 @@ int main() {
 Reference collapsing and binding rules interact with overload resolution in subtle ways:
 
 - An rvalue reference parameter (`T&&`) can bind to:
- - An rvalue of type `T` (exact match).
- - An rvalue of a type convertible to `T` (standard conversion).
- - It **cannot** bind to an lvalue (unless `T` is a template parameter subject to reference
- collapsing).
+- An rvalue of type `T` (exact match).
+- An rvalue of a type convertible to `T` (standard conversion).
+- It **cannot** bind to an lvalue (unless `T` is a template parameter subject to reference
+  collapsing).
 
 - A const lvalue reference parameter (`const T&`) can bind to:
- - An lvalue of type `T` (exact match, but adds a qualification conversion).
- - An rvalue of type `T` (lvalue-to-rvalue + qualification conversion).
- - An lvalue or rvalue of a type convertible to `T`.
+- An lvalue of type `T` (exact match, but adds a qualification conversion).
+- An rvalue of type `T` (lvalue-to-rvalue + qualification conversion).
+- An lvalue or rvalue of a type convertible to `T`.
 
 ```cpp
 #include <iostream>
@@ -497,7 +496,7 @@ int main() {
 When both function templates and non-template functions are candidates, the ranking rules are:
 
 1. Non-template functions are preferred over function template specializations, all else being
- equal.
+   equal.
 2. Among function templates, the more specialized template is preferred.
 3. If a non-template and a template provide the same conversion rank, the non-template wins.
 
@@ -548,9 +547,9 @@ int main() {
 
 1. Let $A = \mathrm{debug{}(T*)$ and $B = \mathrm{debug{}(T)$.
 2. Can $A$ accept every type that $B$ can accept? No. $A$ requires a pointer type; $B$ accepts any
- type. So $A$ is not at least as specialized as $B$.
+   type. So $A$ is not at least as specialized as $B$.
 3. Can $B$ accept every type that $A$ can accept? Yes. Every `T*` is also a valid `T` (where `T`
- would be `int*`).
+   would be `int*`).
 4. By [N4950 §13.7.6.6.5], partial ordering selects $A$ as more specialized for pointer arguments.
 
 ### SFINAE and Overload Set Construction
@@ -657,17 +656,17 @@ Argument and no worse for any argument, then $f_1$ is selected.
 **Proof:**
 
 1. Let $k$ be the number of arguments. For each argument $i \in \{1, \ldots, k\}$Let
- $\mathrm{ICS{}_{f_1}(i)$ and $\mathrm{ICS{}_{f_2}(i)$ be the implicit conversion sequences for
- $f_1$ and $f_2$ respectively.
+   $\mathrm{ICS{}_{f_1}(i)$ and $\mathrm{ICS{}_{f_2}(i)$ be the implicit conversion sequences for
+   $f_1$ and $f_2$ respectively.
 
 2. By the premise, $\exists j$ such that $\mathrm{ICS{}_{f_1}(j) \prec \mathrm{ICS{}_{f_2}(j)$
- (strictly better) and $\forall i, \mathrm{ICS{}_{f_1}(i) \preceq \mathrm{ICS{}_{f_2}(i)$ (no
- worse).
+   (strictly better) and $\forall i, \mathrm{ICS{}_{f_1}(i) \preceq \mathrm{ICS{}_{f_2}(i)$ (no
+   worse).
 
 3. By [N4950 §12.4.3.2], this is exactly the definition of "better viable function."
 
 4. If no other viable function is better than $f_1$Then $f_1$ is the unique best viable function.
- QED.
+   QED.
 
 ### `const` and Non-`const` Overloads
 
@@ -812,30 +811,29 @@ Dispatch (like Java). In C++, accessibility is a post-resolution check, not a pr
 ## Common Pitfalls
 
 - **Ambiguous overloads with mixed types.** `f(short, long)` vs `f(long, short)` called as `f(1, 1)`
- is ambiguous because both arguments are `int`Which converts equally well to `short` (truncation)
- or `long` (promotion). Use explicit casts or provide an `f(int, int)` overload.
+  is ambiguous because both arguments are `int`Which converts equally well to `short` (truncation)
+  or `long` (promotion). Use explicit casts or provide an `f(int, int)` overload.
 - **Surprising `bool` conversions.** `bool` is an integral type. `f(bool)` is a viable candidate for
- `f(42)` via the boolean conversion (`42 → true`). This can cause surprising overload selection.
- Use `std::same_as<T, bool>` constraints to exclude `bool` from integral overloads.
+  `f(42)` via the boolean conversion (`42 → true`). This can cause surprising overload selection.
+  Use `std::same_as<T, bool>` constraints to exclude `bool` from integral overloads.
 - **ADL pulling in unexpected operators.** If you define `operator==` for your type in its
- namespace, it will be found by ADL in any context where your type is used as an argument. This is
- desired, but can cause issues with implicit conversions pulling in operators you didn't
- intend.
+  namespace, it will be found by ADL in any context where your type is used as an argument. This is
+  desired, but can cause issues with implicit conversions pulling in operators you didn't intend.
 - **Overload resolution and `std::function`.** `std::function` uses type erasure, which creates a
- new callable object. The target callable's overloads are resolved at construction time, not at
- call time. You cannot pass an overloaded function name directly to `std::function` without
- disambiguation.
+  new callable object. The target callable's overloads are resolved at construction time, not at
+  call time. You cannot pass an overloaded function name directly to `std::function` without
+  disambiguation.
 - **`nullptr` overload resolution.** `f(int)` and `f(int*)` called with `f(nullptr)` selects
- `f(int*)` because `nullptr` has type `std::nullptr_t`Which converts to any pointer type but not
- to `int`. However, `f(0)` selects `f(int)` because `0` is an `int` literal.
+  `f(int*)` because `nullptr` has type `std::nullptr_t`Which converts to any pointer type but not to
+  `int`. However, `f(0)` selects `f(int)` because `0` is an `int` literal.
 - **Access control is not a filter.** A private member function can "win" overload resolution,
- causing a hard error. The compiler will not fall back to a less-preferred public overload. Always
- ensure the most specific overload for common argument types is accessible.
-- **User-defined conversions are all the same rank.** Even if one converting constructor is
- " better" (e.g., no narrowing), the compiler cannot rank two user-defined conversions
- against each other. The result is ambiguity, not the better conversion winning.
+  causing a hard error. The compiler will not fall back to a less-preferred public overload. Always
+  ensure the most specific overload for common argument types is accessible.
+- **User-defined conversions are all the same rank.** Even if one converting constructor is "
+  better" (e.g., no narrowing), the compiler cannot rank two user-defined conversions against each
+  other. The result is ambiguity, not the better conversion winning.
 - **Ellipsis is always the worst.** A variadic function (`void f(...)`) is viable for any argument
- type, but it always loses to any other viable candidate. Never use `...` for type dispatching.
+  type, but it always loses to any other viable candidate. Never use `...` for type dispatching.
 
 ## See Also
 

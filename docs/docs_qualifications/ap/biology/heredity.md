@@ -1,6 +1,8 @@
 ---
 title: Heredity
-description: "Heredity — Meiosis and Sexual Life Cycles (CED Unit 5); Chromosome Terminology; Meiosis Overview; Meiosis I (Reductional Division)."
+description:
+  'Heredity — Meiosis and Sexual Life Cycles (CED Unit 5); Chromosome Terminology; Meiosis Overview;
+  Meiosis I (Reductional Division).'
 date: 2026-04-14
 tags:
   - Biology
@@ -9,6 +11,7 @@ categories:
   - Biology
 slug: heredity
 ---
+
 ## Meiosis and Sexual Life Cycles (CED Unit 5)
 
 ### Chromosome Terminology
@@ -16,9 +19,9 @@ slug: heredity
 - **Somatic cells:** Diploid ($2n$), containing two sets of chromosomes (one from each parent).
 - **Gametes:** Haploid ($n$), containing one set of chromosomes.
 - **Homologous chromosomes:** Pair of chromosomes (one maternal, one paternal) with the same genes
- at the same loci.
+  at the same loci.
 - **Sister chromatids:** Two identical copies of a chromosome joined at the centromere (produced by
- DNA replication).
+  DNA replication).
 - **Karyotype:** Organized display of an individual's chromosomes.
 
 ### Meiosis Overview
@@ -26,13 +29,13 @@ slug: heredity
 Meiosis reduces the chromosome number by half, producing four genetically distinct haploid cells
 From one diploid cell.
 
-| Feature | Mitosis | Meiosis |
+| Feature           | Mitosis        | Meiosis           |
 | ----------------- | -------------- | ----------------- |
-| Divisions | 1 | 2 |
-| Daughter cells | 2 | 4 |
-| Ploidy | $2n$ | $n$ |
-| Genetic variation | Identical | Different |
-| Function | Growth, repair | Gamete production |
+| Divisions         | 1              | 2                 |
+| Daughter cells    | 2              | 4                 |
+| Ploidy            | $2n$           | $n$               |
+| Genetic variation | Identical      | Different         |
+| Function          | Growth, repair | Gamete production |
 
 ### Meiosis I (Reductional Division)
 
@@ -68,10 +71,10 @@ Daughter cells form.
 ### Sources of Genetic Variation
 
 1. **Crossing over (Prophase I):** Recombination between non-sister chromatids creates new
- combinations of alleles on the same chromosome.
+   combinations of alleles on the same chromosome.
 2. **Independent assortment (Metaphase I):** Random orientation of homologous pairs produces $2^n$
- possible gamete combinations (where $n$ is the haploid number). For humans ($n = 23$):
- $2^{23} \approx 8.4 \times 10^6$ combinations.
+   possible gamete combinations (where $n$ is the haploid number). For humans ($n = 23$):
+   $2^{23} \approx 8.4 \times 10^6$ combinations.
 3. **Random fertilization:** Any sperm can fertilize any egg, further multiplying genetic diversity.
 
 **Worked Example: Calculating the number of possible gamete combinations.**
@@ -115,9 +118,9 @@ Cross between individuals differing in one trait.
 
 | Genotype | Phenotype |
 | -------- | --------- |
-| AA | Dominant |
-| Aa | Dominant |
-| aa | Recessive |
+| AA       | Dominant  |
+| Aa       | Dominant  |
+| aa       | Recessive |
 
 **Genotypic ratio (Aa $\times$ Aa):** 1 AA : 2 Aa : 1 aa **Phenotypic ratio:** 3 dominant : 1
 Recessive
@@ -150,12 +153,12 @@ Gametes from each parent: RY, Ry, rY, ry (four types, each equally likely)
 
 Punnett square (4 $\times$ 4):
 
-| | RY | Ry | rY | ry |
+|     | RY   | Ry   | rY   | ry   |
 | --- | ---- | ---- | ---- | ---- |
-| RY | RRYY | RRYy | RrYY | RrYy |
-| Ry | RRYy | RRyy | RrYy | Rryy |
-| rY | RrYY | RrYy | rrYY | rrYy |
-| ry | RrYy | Rryy | rrYy | rryy |
+| RY  | RRYY | RRYy | RrYY | RrYy |
+| Ry  | RRYy | RRyy | RrYy | Rryy |
+| rY  | RrYY | RrYy | rrYY | rrYy |
+| ry  | RrYy | Rryy | rrYy | rryy |
 
 Phenotypic ratio: 9 round yellow : 3 round green : 3 wrinkled yellow : 1 wrinkled green.
 
@@ -177,12 +180,12 @@ Antigens.
 More than two alleles exist for a gene in the population. Example: ABO blood group has three
 Alleles: $I^A$$I^B$And $i$.
 
-| Genotype | Blood Type |
+| Genotype             | Blood Type       |
 | -------------------- | ---------------- |
-| $I^A I^A$ or $I^A i$ | A |
-| $I^B I^B$ or $I^B i$ | B |
-| $I^A I^B$ | AB (codominance) |
-| $ii$ | O |
+| $I^A I^A$ or $I^A i$ | A                |
+| $I^B I^B$ or $I^B i$ | B                |
+| $I^A I^B$            | AB (codominance) |
+| $ii$                 | O                |
 
 ### Sex-Linked Inheritance
 
@@ -193,9 +196,9 @@ Example: Red-green color blindness and hemophilia are X-linked recessive.
 
 **Cross:** Carrier female ($X^NX^n$) $\times$ normal male ($X^NY$):
 
-| | $X^N$ | $Y$ |
+|       | $X^N$                     | $Y$                    |
 | ----- | ------------------------- | ---------------------- |
-| $X^N$ | $X^NX^N$ (normal female) | $X^NY$ (normal male) |
+| $X^N$ | $X^NX^N$ (normal female)  | $X^NY$ (normal male)   |
 | $X^n$ | $X^NX^n$ (carrier female) | $X^nY$ (affected male) |
 
 **Phenotypic ratio:** 1 normal female : 1 carrier female : 1 normal male : 1 affected male.
@@ -211,7 +214,7 @@ $$
 
 - $1\%$ recombination = 1 map unit (centimorgan, cM).
 - Recombination frequency $\gt 50\%$: genes are unlinked (on different chromosomes or very far
- apart).
+  apart).
 
 **Worked Example: Gene mapping.**
 
@@ -235,10 +238,10 @@ One gene masks or modifies the expression of another gene.
 **Example:** Coat color in Labrador retrievers. Gene B determines pigment (B = black, b = brown).
 Gene E determines deposition (E = pigment deposited, e = no pigment deposited).
 
-| | E\_ | ee |
+|     | E\_   | ee     |
 | --- | ----- | ------ |
 | B\_ | Black | Yellow |
-| bb | Brown | Yellow |
+| bb  | Brown | Yellow |
 
 Ratio: 9 black : 3 brown : 4 yellow.
 
@@ -264,14 +267,14 @@ Phenotypes due to different environments.
 Failure of homologous chromosomes or sister chromatids to separate during meiosis, producing gametes
 With abnormal chromosome numbers.
 
-| Condition | Cause | Description |
+| Condition                  | Cause               | Description                                             |
 | -------------------------- | ------------------- | ------------------------------------------------------- |
 | Trisomy 21 (Down syndrome) | Extra chromosome 21 | Intellectual disability, characteristic facial features |
-| Trisomy 18 (Edwards) | Extra chromosome 18 | Severe developmental delays |
-| Trisomy 13 (Patau) | Extra chromosome 13 | Severe birth defects |
-| Klinefelter (XXY) | Extra X in male | Male with some female characteristics |
-| Turner (XO) | Missing X in female | Female, sterile, short stature |
-| XYY | Extra Y in male | Tall, normal |
+| Trisomy 18 (Edwards)       | Extra chromosome 18 | Severe developmental delays                             |
+| Trisomy 13 (Patau)         | Extra chromosome 13 | Severe birth defects                                    |
+| Klinefelter (XXY)          | Extra X in male     | Male with some female characteristics                   |
+| Turner (XO)                | Missing X in female | Female, sterile, short stature                          |
+| XYY                        | Extra Y in male     | Tall, normal                                            |
 
 ### Structural Abnormalities
 
@@ -283,110 +286,110 @@ With abnormal chromosome numbers.
 ## Common Pitfalls
 
 1. **Confusing mitosis and meiosis.** Mitosis produces 2 identical diploid cells; meiosis produces 4
- genetically distinct haploid cells.
+   genetically distinct haploid cells.
 2. **Misidentifying when crossing over occurs.** It occurs in Prophase I of meiosis, not mitosis.
 3. **Confusing sister chromatids with homologous chromosomes.** Sister chromatids are identical
- copies; homologous chromosomes carry different alleles.
+   copies; homologous chromosomes carry different alleles.
 4. **Forgetting that sex-linked traits are expressed differently in males and females.** Males only
- need one copy of an X-linked recessive allele to express the trait.
+   need one copy of an X-linked recessive allele to express the trait.
 5. **Confusing incomplete dominance with codominance.** In incomplete dominance, the heterozygote is
- intermediate (blended); in codominance, both phenotypes are fully expressed.
+   intermediate (blended); in codominance, both phenotypes are fully expressed.
 6. **Incorrectly calculating recombination frequency.** Only count recombinant (non-parental)
- offspring.
+   offspring.
 7. **Confusing epistasis with dominance.** Epistasis involves interactions between different genes;
- dominance involves alleles of the same gene.
+   dominance involves alleles of the same gene.
 8. **Thinking that linked genes never recombine.** Crossing over can separate linked genes; the
- probability depends on the distance between them.
+   probability depends on the distance between them.
 9. **Forgetting that nondisjunction can occur in meiosis I or meiosis II.** Nondisjunction in
- meiosis I produces two abnormal gametes (both with extra or both missing a chromosome);
- nondisjunction in meiosis II produces one normal and one abnormal gamete.
+   meiosis I produces two abnormal gametes (both with extra or both missing a chromosome);
+   nondisjunction in meiosis II produces one normal and one abnormal gamete.
 10. **Confusing trisomy and triploidy.** Trisomy is one extra chromosome (2n+1); triploidy is a full
- extra set of chromosomes (3n).
+    extra set of chromosomes (3n).
 11. **Assuming the dominant phenotype always means homozygous dominant.** A dominant phenotype can
- be either homozygous dominant or heterozygous -- a test cross is needed to determine which.
+    be either homozygous dominant or heterozygous -- a test cross is needed to determine which.
 12. **Confusing genotype and allele frequencies.** Genotype frequencies refer to proportions of
- specific genotypes (e.g., $p^2$$2pq$$q^2$); allele frequencies refer to proportions of
- specific alleles (e.g., $p$$q$).
+    specific genotypes (e.g., $p^2$$2pq$$q^2$); allele frequencies refer to proportions of specific
+    alleles (e.g., $p$$q$).
 13. **Thinking crossing over occurs at every chiasma.** A chiasma is the visible result of crossing
- over; not all chiasmata result in recombination of every gene between them.
+    over; not all chiasmata result in recombination of every gene between them.
 
 ## Practice Questions
 
 1. In peas, tall (T) is dominant over short (t). A tall plant crossed with a short plant produces
- offspring that are all tall. What are the genotypes of the parents?
+   offspring that are all tall. What are the genotypes of the parents?
 
 2. A woman who is a carrier for color blindness ($X^NX^n$) marries a man with normal vision
- ($X^NY$). What is the probability that their son will be colorblind?
+   ($X^NY$). What is the probability that their son will be colorblind?
 
 3. Two genes, A and B, are 12 map units apart. If an individual with genotype $AB/ab$ is
- test-crossed, what percentage of the offspring will be $Ab/ab$?
+   test-crossed, what percentage of the offspring will be $Ab/ab$?
 
 4. Explain how nondisjunction during meiosis I differs from nondisjunction during meiosis II in
- terms of the resulting gametes.
+   terms of the resulting gametes.
 
 5. In a dihybrid cross between $AaBb$ parents, what proportion of offspring will be homozygous
- recessive for both traits?
+   recessive for both traits?
 
 6. A man with blood type B (whose mother was type O) marries a woman with blood type AB. What are
- the possible blood types of their children?
+   the possible blood types of their children?
 
 7. Explain how epistasis differs from dominance, using coat color in Labrador retrievers as an
- example.
+   example.
 
 8. Why does independent assortment produce more genetic variation in organisms with higher haploid
- chromosome numbers? Calculate the number of possible gamete combinations for an organism with
- $n = 4$.
+   chromosome numbers? Calculate the number of possible gamete combinations for an organism with
+   $n = 4$.
 
 9. Explain the difference between incomplete dominance and codominance, giving an example of each.
 
 10. A woman with Turner syndrome (XO) is colour blind. Explain which parent the colour blindness
- allele was inherited from and why.
+    allele was inherited from and why.
 
 11. Three genes (D, E, F) are linked. The recombination frequency between D and E is 20%, between E
- and F is 10%, and between D and F is 30%. Determine the order of the genes and draw a gene map.
+    and F is 10%, and between D and F is 30%. Determine the order of the genes and draw a gene map.
 
 12. Explain why linked genes do not always follow Mendel's law of independent assortment.
 
 13. A dihybrid cross between two pea plants (RrYy $\times$ RrYy) produces 800 offspring. How many
- offspring would you expect to have wrinkled green seeds?
+    offspring would you expect to have wrinkled green seeds?
 
 14. Describe the process of crossing over during Prophase I and explain how it contributes to
- genetic variation.
+    genetic variation.
 
 15. Explain why the phenotypic ratio from a dihybrid cross with epistasis (9:3:4) differs from the
- standard Mendelian ratio (9:3:3:1).
+    standard Mendelian ratio (9:3:3:1).
 
 16. A couple has a child with cystic fibrosis (autosomal recessive). Neither parent has the disease.
- What is the probability that their next child will also have cystic fibrosis?
+    What is the probability that their next child will also have cystic fibrosis?
 
 17. Explain how nondisjunction in meiosis I leads to gametes with an extra chromosome, using a
- specific example.
+    specific example.
 
 18. Compare and contrast the inheritance patterns of autosomal dominant, autosomal recessive, and
- X-linked recessive traits.
+    X-linked recessive traits.
 
 19. In snapdragons, red flowers (RR) crossed with white flowers (WW) produce pink flowers (RW). What
- phenotypic ratio would you expect from crossing two pink-flowered plants?
+    phenotypic ratio would you expect from crossing two pink-flowered plants?
 
 20. Explain the concept of gene mapping and how recombination frequency is used to determine the
- distance between genes on a chromosome.
+    distance between genes on a chromosome.
 
 21. A man with blood type A (genotype unknown) marries a woman with blood type B (genotype unknown).
- Their first child has blood type O. What are the genotypes of the parents, and what blood types
- are possible for their future children?
+    Their first child has blood type O. What are the genotypes of the parents, and what blood types
+    are possible for their future children?
 
 22. Explain how X-inactivation (the Lyon hypothesis) affects the expression of X-linked genes in
- female mammals.
+    female mammals.
 
 23. A species has $2n = 8$. How many chromosomes, chromatids, and DNA molecules are present in a
- cell during (a) G1, (b) G2, (c) metaphase of mitosis, (d) metaphase I of meiosis, and (e)
- metaphase II of meiosis?
+    cell during (a) G1, (b) G2, (c) metaphase of mitosis, (d) metaphase I of meiosis, and (e)
+    metaphase II of meiosis?
 
 24. Explain why linked genes on the same chromosome can still show independent assortment if they
- are very far apart.
+    are very far apart.
 
 25. Describe the inheritance pattern of mitochondrial DNA and explain why mitochondrial disorders
- are always maternally inherited.
+    are always maternally inherited.
 
 ## Review: Chromosomal Theory of Inheritance and Linked Genes
 
@@ -409,7 +412,7 @@ $$\mathrm{Recombination frequency{} = \frac{\mathrm{Number of recombinant offspr
 
 - 1% recombination = 1 centimorgan (cM) or 1 map unit.
 - Maximum recombination frequency of 50% means the genes are effectively unlinked (on different
- chromosomes or very far apart on the same chromosome).
+  chromosomes or very far apart on the same chromosome).
 
 **Worked Example: Three-point cross and gene mapping.**
 
@@ -478,9 +481,9 @@ Queen Victoria was a carrier of haemophilia ($X^HX^h$). Her husband was normal (
 
 Punnett square:
 
-| | $X^H$ | $Y$ |
+|       | $X^H$              | $Y$                   |
 | ----- | ------------------ | --------------------- |
-| $X^H$ | $X^HX^H$ (normal) | $X^HY$ (normal) |
+| $X^H$ | $X^HX^H$ (normal)  | $X^HY$ (normal)       |
 | $X^h$ | $X^HX^h$ (carrier) | $X^hY$ (haemophiliac) |
 
 Each daughter has a 50% chance of being a carrier. Each son has a 50% chance of having haemophilia.
@@ -519,9 +522,9 @@ Epigenetics refers to heritable changes in gene expression that do not involve c
 Sequence. Epigenetic modifications can be influenced by environmental factors and can sometimes be
 Passed to offspring.
 
-**DNA methylation:** Methyl groups ($-\mathrm{CH{}_3$) are added to cytosine bases, in CpG
-Islands near gene promoters. Methylation generally silences gene expression by preventing
-Transcription factors from binding.
+**DNA methylation:** Methyl groups ($-\mathrm{CH{}_3$) are added to cytosine bases, in CpG Islands
+near gene promoters. Methylation generally silences gene expression by preventing Transcription
+factors from binding.
 
 **Histone modification:** Histone proteins can be acetylated, methylated, or phosphorylated.
 Acetylation of histones generally loosens chromatin structure, promoting gene expression.
@@ -551,12 +554,12 @@ Used in tracing maternal ancestry (mitochondrial Eve).
 
 ## Review: Summary Table of Inheritance Patterns
 
-| Pattern | Autosomal Dominant | Autosomal Recessive | X-Linked Recessive |
+| Pattern              | Autosomal Dominant               | Autosomal Recessive                             | X-Linked Recessive            |
 | -------------------- | -------------------------------- | ----------------------------------------------- | ----------------------------- |
-| Example | Huntington disease | Cystic fibrosis | Haemophilia, colour blindness |
-| Affected individuals | Both sexes equally | Both sexes equally | Males much more frequently |
-| Transmission | Affected parent to 50% offspring | Two carrier parents can have affected offspring | Carrier mother to 50% of sons |
-| Skipping generations | No (vertical pattern) | Yes (horizontal pattern) | Yes (through carrier females) |
+| Example              | Huntington disease               | Cystic fibrosis                                 | Haemophilia, colour blindness |
+| Affected individuals | Both sexes equally               | Both sexes equally                              | Males much more frequently    |
+| Transmission         | Affected parent to 50% offspring | Two carrier parents can have affected offspring | Carrier mother to 50% of sons |
+| Skipping generations | No (vertical pattern)            | Yes (horizontal pattern)                        | Yes (through carrier females) |
 
 ## Review: Genomic Imprinting
 
@@ -572,9 +575,9 @@ Depending on which parent it was inherited from.
 On chromosome 15, but the phenotype depends on which parent's chromosome is deleted:
 
 - If the **paternal** copy is deleted: Prader-Willi syndrome (characterised by constant hunger,
- obesity, intellectual disability, and short stature).
+  obesity, intellectual disability, and short stature).
 - If the **maternal** copy is deleted: Angelman syndrome (characterised by severe intellectual
- disability, seizures, ataxia, and a happy demeanour).
+  disability, seizures, ataxia, and a happy demeanour).
 
 This demonstrates that the same chromosomal region can produce entirely different disorders
 Depending on which parent contributed the affected chromosome.
@@ -599,18 +602,18 @@ Individuals die in early childhood).
 
 **Dominant lethal alleles:** Cause death even in the heterozygous condition. These are very rare
 Because they would kill the individual before they could reproduce. However, some dominant lethal
-Alleles act later in life, such as Huntington disease (onset after age 40), which allows
-The allele to be passed to offspring before symptoms appear.
+Alleles act later in life, such as Huntington disease (onset after age 40), which allows The allele
+to be passed to offspring before symptoms appear.
 
 **Worked Example: How lethal alleles alter expected ratios.**
 
 In mice, the allele for yellow coat colour (Y) is dominant over grey (y). However, YY is lethal
 (embryos die), while Yy is yellow and yy is grey. Crossing two yellow mice (Yy $\times$ Yy) gives:
 
-| | Y | y |
+|     | Y   | y   |
 | --- | --- | --- |
-| Y | YY | Yy |
-| y | Yy | yy |
+| Y   | YY  | Yy  |
+| y   | Yy  | yy  |
 
 Expected genotypes: 1 YY : 2 Yy : 1 yy.
 
@@ -648,10 +651,10 @@ Recessive disorders or imprinting disorders.
 **Types of UPD:**
 
 - **Heterodisomy:** The individual receives two different homologous chromosomes from one parent
- (resulting from nondisjunction in meiosis I).
+  (resulting from nondisjunction in meiosis I).
 - **Isodisomy:** The individual receives two identical copies of the same chromosome from one parent
- (resulting from nondisjunction in meiosis II or from mitotic duplication of a monosomic
- chromosome).
+  (resulting from nondisjunction in meiosis II or from mitotic duplication of a monosomic
+  chromosome).
 
 **Clinical significance:** UPD can cause recessive disorders even if only one parent is a carrier.
 For example, if a child has maternal uniparental disomy for chromosome 7 and the mother is a carrier
@@ -692,20 +695,20 @@ Skin renewal throughout life.
 Chromosomal abnormalities. Techniques include:
 
 1. **G-banding:** Chromosomes are treated with the enzyme trypsin and stained with Giemsa, producing
- a characteristic banding pattern. Each chromosome has a unique banding pattern, allowing
- identification of individual chromosomes and detection of structural abnormalities (deletions,
- duplications, translocations).
+   a characteristic banding pattern. Each chromosome has a unique banding pattern, allowing
+   identification of individual chromosomes and detection of structural abnormalities (deletions,
+   duplications, translocations).
 
 2. **Fluorescence in situ hybridisation (FISH):** Fluorescently labelled DNA probes bind to specific
- chromosomal regions. This allows detection of specific chromosomal abnormalities, including
- microdeletions that are too small to see with standard karyotyping.
+   chromosomal regions. This allows detection of specific chromosomal abnormalities, including
+   microdeletions that are too small to see with standard karyotyping.
 
 3. **Comparative genomic hybridisation (CGH):** Compares the DNA from a test sample with a reference
- sample to detect copy number variations (deletions and duplications) across the entire genome.
+   sample to detect copy number variations (deletions and duplications) across the entire genome.
 
 4. **Spectral karyotyping (SKY):** Uses multiple fluorescent probes, each painting a different
- chromosome in a different colour. This is particularly useful for identifying complex chromosomal
- rearrangements and translocations.
+   chromosome in a different colour. This is particularly useful for identifying complex chromosomal
+   rearrangements and translocations.
 
 **Worked Example: Detecting a translocation using FISH.**
 
@@ -808,14 +811,14 @@ Expression of alleles at the other gene (D/d).
 The 12:3:1 ratio arises because:
 
 - Any genotype with at least one W allele is white (regardless of D/d):
- $9 \mathrm{ W\_D\_{} + 3 \mathrm{ W\_dd{} = 12$ white.
+  $9 \mathrm{ W\_D\_{} + 3 \mathrm{ W\_dd{} = 12$ white.
 - Genotypes that are $\mathrm{wwD\_{}$ are yellow disc: 3 yellow disc.
 - Genotype $\mathrm{wwdd{}$ is yellow sphere: 1 yellow sphere.
 
 F2 genotypes:
 
 - White: $\mathrm{WWDD{}$$\mathrm{WWDd{}$$\mathrm{WWdd{}$$\mathrm{WwDD{}$$\mathrm{WwDd{}$
- $\mathrm{Wwdd{}$
+  $\mathrm{Wwdd{}$
 - Yellow disc: $\mathrm{wwDD{}$$\mathrm{wwDd{}$
 - Yellow sphere: $\mathrm{wwdd{}$
 

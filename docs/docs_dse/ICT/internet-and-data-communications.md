@@ -1,7 +1,9 @@
 ---
 id: dse-ict-internet-and-data-communications
 title: Internet and Data Communications
-description: "DSE ICT notes covering network fundamentals, hardware, internet services, web development, IP addressing, DNS, transmission media, protocols, OSI model,"
+description:
+  'DSE ICT notes covering network fundamentals, hardware, internet services, web development, IP
+  addressing, DNS, transmission media, protocols, OSI model,'
 slug: internet-and-data-communications
 date: 2026-04-08T00:00:00.000Z
 tags: [DSE, ICT]
@@ -12,11 +14,11 @@ categories: [DSE, ICT]
 
 ### Types of Networks
 
-| Type | Full Name | Range | Example |
+| Type    | Full Name             | Range                     | Example                                           |
 | ------- | --------------------- | ------------------------- | ------------------------------------------------- |
-| **LAN** | Local Area Network | A building or campus | School computer lab, office network |
-| **WAN** | Wide Area Network | Cities, countries, global | The Internet, a company's offices across cities |
-| **PAN** | Personal Area Network | Within ~10 m | Bluetooth connection between phone and headphones |
+| **LAN** | Local Area Network    | A building or campus      | School computer lab, office network               |
+| **WAN** | Wide Area Network     | Cities, countries, global | The Internet, a company's offices across cities   |
+| **PAN** | Personal Area Network | Within ~10 m              | Bluetooth connection between phone and headphones |
 
 ### Network Topologies
 
@@ -32,11 +34,11 @@ All devices connect to a central hub or switch.
          [Device]
 ```
 
-| Aspect | Detail |
+| Aspect         | Detail                                                                                                   |
 | -------------- | -------------------------------------------------------------------------------------------------------- |
-| Advantages | Easy to install and manage; if one cable fails, only that device is affected; easy to add/remove devices |
-| Disadvantages | If the central hub/switch fails, the entire network goes down; requires more cabling than bus topology |
-| Failure impact | Single device failure: no impact on others. Central node failure: total network failure |
+| Advantages     | Easy to install and manage; if one cable fails, only that device is affected; easy to add/remove devices |
+| Disadvantages  | If the central hub/switch fails, the entire network goes down; requires more cabling than bus topology   |
+| Failure impact | Single device failure: no impact on others. Central node failure: total network failure                  |
 
 #### Bus Topology
 
@@ -46,11 +48,11 @@ All devices share a single backbone cable.
 [Device] ---[Device] ---[Device] ---[Device] ---[Terminator]
 ```
 
-| Aspect | Detail |
+| Aspect         | Detail                                                                                                                                         |
 | -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
-| Advantages | Simple and cheap; requires less cabling; easy to set up for small networks |
-| Disadvantages | If the backbone cable breaks, the entire network fails; performance degrades as more devices are added (collisions); difficult to troubleshoot |
-| Failure impact | Backbone failure: total network failure. Single device failure: network continues but that device is disconnected |
+| Advantages     | Simple and cheap; requires less cabling; easy to set up for small networks                                                                     |
+| Disadvantages  | If the backbone cable breaks, the entire network fails; performance degrades as more devices are added (collisions); difficult to troubleshoot |
+| Failure impact | Backbone failure: total network failure. Single device failure: network continues but that device is disconnected                              |
 
 #### Ring Topology
 
@@ -64,11 +66,11 @@ Each device connects to exactly two others, forming a closed loop.
          +--- [Device] <--+
 ```
 
-| Aspect | Detail |
+| Aspect         | Detail                                                                                                                                    |
 | -------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| Advantages | Data travels in one direction, reducing collisions; equal access for all devices; suitable for token ring networks |
-| Disadvantages | If one device or cable fails, the entire network can fail; adding/removing devices disrupts the ring; slower than star for large networks |
-| Failure impact | Single failure can bring down the entire ring (unless using a dual ring) |
+| Advantages     | Data travels in one direction, reducing collisions; equal access for all devices; suitable for token ring networks                        |
+| Disadvantages  | If one device or cable fails, the entire network can fail; adding/removing devices disrupts the ring; slower than star for large networks |
+| Failure impact | Single failure can bring down the entire ring (unless using a dual ring)                                                                  |
 
 #### Mesh Topology
 
@@ -81,59 +83,58 @@ Every device is connected to every other device (full mesh) or to multiple devic
   [Device] --- [Device]
 ```
 
-| Aspect | Detail |
+| Aspect         | Detail                                                                                                     |
 | -------------- | ---------------------------------------------------------------------------------------------------------- |
-| Advantages | High redundancy and reliability; multiple paths for data; no single point of failure (full mesh) |
-| Disadvantages | Expensive and complex cabling; difficult to set up and manage; not scalable for large networks (full mesh) |
-| Failure impact | High fault tolerance; data can route around failed connections |
+| Advantages     | High redundancy and reliability; multiple paths for data; no single point of failure (full mesh)           |
+| Disadvantages  | Expensive and complex cabling; difficult to set up and manage; not scalable for large networks (full mesh) |
+| Failure impact | High fault tolerance; data can route around failed connections                                             |
 
 :::warning[Exam Tip] In exam questions, always discuss both advantages AND disadvantages of each
-Topology. Star is the most common in modern LANs due to ease of management and fault isolation.
-:::
+Topology. Star is the most common in modern LANs due to ease of management and fault isolation. :::
 
 ---
 
 ## Networking Hardware
 
-| Device | Function | OSI Layer |
+| Device                | Function                                                                                                                         | OSI Layer |
 | --------------------- | -------------------------------------------------------------------------------------------------------------------------------- | --------- |
-| **Router** | Connects different networks; routes packets between them using IP addresses; operates at Network layer | Layer 3 |
-| **Switch** | Connects devices within a LAN; forwards frames based on MAC addresses; reduces collisions by creating separate collision domains | Layer 2 |
-| **Hub** | Connects devices in a LAN; broadcasts data to ALL ports (no intelligence); all devices share bandwidth | Layer 1 |
-| **NIC** | Network Interface Card; provides the physical connection to the network; has a unique MAC address | Layer 1/2 |
-| **Modem** | Modulator-Demodulator; converts digital signals to analogue (and vice versa) for transmission over telephone lines | Layer 1 |
-| **Access Point (AP)** | Allows wireless devices to connect to a wired network; acts as a bridge between wireless and wired segments | Layer 2 |
+| **Router**            | Connects different networks; routes packets between them using IP addresses; operates at Network layer                           | Layer 3   |
+| **Switch**            | Connects devices within a LAN; forwards frames based on MAC addresses; reduces collisions by creating separate collision domains | Layer 2   |
+| **Hub**               | Connects devices in a LAN; broadcasts data to ALL ports (no intelligence); all devices share bandwidth                           | Layer 1   |
+| **NIC**               | Network Interface Card; provides the physical connection to the network; has a unique MAC address                                | Layer 1/2 |
+| **Modem**             | Modulator-Demodulator; converts digital signals to analogue (and vice versa) for transmission over telephone lines               | Layer 1   |
+| **Access Point (AP)** | Allows wireless devices to connect to a wired network; acts as a bridge between wireless and wired segments                      | Layer 2   |
 
 ### Hub vs Switch
 
-| Feature | Hub | Switch |
+| Feature           | Hub                            | Switch                                  |
 | ----------------- | ------------------------------ | --------------------------------------- |
-| Data forwarding | Broadcasts to all ports | Forwards only to the destination port |
-| Collision domains | Single shared collision domain | Separate collision domain per port |
-| Bandwidth | Shared among all devices | Dedicated bandwidth per port |
-| MAC address table | No | Yes (learns and stores MAC addresses) |
-| Intelligence | None | Uses MAC addresses for smart forwarding |
+| Data forwarding   | Broadcasts to all ports        | Forwards only to the destination port   |
+| Collision domains | Single shared collision domain | Separate collision domain per port      |
+| Bandwidth         | Shared among all devices       | Dedicated bandwidth per port            |
+| MAC address table | No                             | Yes (learns and stores MAC addresses)   |
+| Intelligence      | None                           | Uses MAC addresses for smart forwarding |
 
 ---
 
 ## Internet Services
 
-| Service | Description | Protocol(s) |
+| Service                          | Description                                                        | Protocol(s)      |
 | -------------------------------- | ------------------------------------------------------------------ | ---------------- |
-| **World Wide Web (WWW)** | Access and navigate web pages using hyperlinks | HTTP, HTTPS |
-| **Email** | Send and receive electronic messages | SMTP, POP3, IMAP |
-| **File Transfer Protocol (FTP)** | Upload and download files between client and server | FTP, SFTP |
-| **Voice over IP (VoIP)** | Make voice calls over the internet (e.g., Skype, Zoom) | SIP, RTP |
-| **Streaming** | Real-time audio/video delivery (e.g., YouTube, Netflix) | HTTP, RTSP, HLS |
-| **Cloud Computing** | On-demand computing resources over the internet (IaaS, PaaS, SaaS) | Various |
+| **World Wide Web (WWW)**         | Access and navigate web pages using hyperlinks                     | HTTP, HTTPS      |
+| **Email**                        | Send and receive electronic messages                               | SMTP, POP3, IMAP |
+| **File Transfer Protocol (FTP)** | Upload and download files between client and server                | FTP, SFTP        |
+| **Voice over IP (VoIP)**         | Make voice calls over the internet (e.g., Skype, Zoom)             | SIP, RTP         |
+| **Streaming**                    | Real-time audio/video delivery (e.g., YouTube, Netflix)            | HTTP, RTSP, HLS  |
+| **Cloud Computing**              | On-demand computing resources over the internet (IaaS, PaaS, SaaS) | Various          |
 
 ### Email Protocols
 
-| Protocol | Port | Purpose | Direction |
+| Protocol | Port     | Purpose       | Direction                                                             |
 | -------- | -------- | ------------- | --------------------------------------------------------------------- |
-| **SMTP** | 25 / 587 | Send email | Client to server, server to server |
-| **POP3** | 110 | Receive email | Downloads messages to local device, often deletes from server |
-| **IMAP** | 143 | Receive email | Accesses messages on server without downloading; syncs across devices |
+| **SMTP** | 25 / 587 | Send email    | Client to server, server to server                                    |
+| **POP3** | 110      | Receive email | Downloads messages to local device, often deletes from server         |
+| **IMAP** | 143      | Receive email | Accesses messages on server without downloading; syncs across devices |
 
 ---
 
@@ -175,18 +176,18 @@ HTML defines the **structure** and **content** of a web page.
 
 Key HTML tags:
 
-| Tag | Purpose |
-| --------------------------------- | --------------------------------------- |
-| `<html>` | Root element |
-| `<head>` | Metadata, title, links to CSS/JS |
-| `<body>` | Visible page content |
-| `<h1>` -- `<h6>` | Headings (h1 is largest) |
-| `` | Paragraph |
-| `<a href="URL">` | Hyperlink |
-| `<img src="URL" alt="text">` | Image |
-| `<ul>``<ol>``<li>` | Unordered list, ordered list, list item |
-| `<table>``<tr>``<th>``<td>` | Table, row, header cell, data cell |
-| `<form>``<input>``<button>` | Form elements |
+| Tag                          | Purpose                                 |
+| ---------------------------- | --------------------------------------- |
+| `<html>`                     | Root element                            |
+| `<head>`                     | Metadata, title, links to CSS/JS        |
+| `<body>`                     | Visible page content                    |
+| `<h1>` -- `<h6>`             | Headings (h1 is largest)                |
+| ``                           | Paragraph                               |
+| `<a href="URL">`             | Hyperlink                               |
+| `<img src="URL" alt="text">` | Image                                   |
+| `<ul>``<ol>``<li>`           | Unordered list, ordered list, list item |
+| `<table>``<tr>``<th>``<td>`  | Table, row, header cell, data cell      |
+| `<form>``<input>``<button>`  | Form elements                           |
 
 ### CSS (Cascading Style Sheets)
 
@@ -223,11 +224,11 @@ p {
 
 **CSS selectors:**
 
-| Selector | Selects | Example |
+| Selector | Selects                   | Example             |
 | -------- | ------------------------- | ------------------- |
-| Element | All elements of that type | `p { }` |
-| Class | Elements with that class | `.highlight { }` |
-| ID | The element with that ID | `#main-content { }` |
+| Element  | All elements of that type | `p { }`             |
+| Class    | Elements with that class  | `.highlight { }`    |
+| ID       | The element with that ID  | `#main-content { }` |
 
 ### JavaScript
 
@@ -254,10 +255,8 @@ document.getElementById('myButton').onclick = function () {
 };
 ```
 
-:::info
-HTML = structure, CSS = style, JavaScript = behaviour. This three-way separation is a
-Fundamental principle of web development.
-:::
+:::info HTML = structure, CSS = style, JavaScript = behaviour. This three-way separation is a
+Fundamental principle of web development. :::
 
 ---
 
@@ -273,36 +272,36 @@ Fundamental principle of web development.
 
 | Class | First Octet Range | Network Bits | Host Bits | Default Subnet Mask |
 | ----- | ----------------- | ------------ | --------- | ------------------- |
-| A | 1 -- 126 | 8 | 24 | 255.0.0.0 |
-| B | 128 -- 191 | 16 | 16 | 255.255.0.0 |
-| C | 192 -- 223 | 24 | 8 | 255.255.255.0 |
+| A     | 1 -- 126          | 8            | 24        | 255.0.0.0           |
+| B     | 128 -- 191        | 16           | 16        | 255.255.0.0         |
+| C     | 192 -- 223        | 24           | 8         | 255.255.255.0       |
 
 Special addresses:
 
 - `127.0.0.1` -- loopback (localhost)
 - `10.0.0.0/8``172.16.0.0/12``192.168.0.0/16` -- private address ranges (not routable on the
- internet)
+  internet)
 - `255.255.255.255` -- broadcast address
 
 ### IPv6
 
 - 128-bit address, written as eight groups of 4 hex digits:
- `2001:0db8:85a3:0000:0000:8a2e:0370:7334`
+  `2001:0db8:85a3:0000:0000:8a2e:0370:7334`
 - Leading zeros in each group can be omitted.
 - One consecutive block of all-zero groups can be replaced with `::`.
 - Total addresses: $2^{128} \approx 3.4 \times 10^{38}$.
 
 **IPv4 vs IPv6:**
 
-| Feature | IPv4 | IPv6 |
+| Feature             | IPv4                               | IPv6                                        |
 | ------------------- | ---------------------------------- | ------------------------------------------- |
-| Address length | 32 bits | 128 bits |
-| Address format | Dotted decimal | Colon-separated hex |
-| Number of addresses | ~4.3 billion | ~$3.4 \times 10^{38}$ |
-| Header complexity | Complex, variable options | Simplified, fixed header |
-| Security | Optional (IPsec add-on) | Built-in IPsec support |
-| NAT | Required (due to address shortage) | Not required |
-| Auto-configuration | Limited | SLAAC (Stateless Address Autoconfiguration) |
+| Address length      | 32 bits                            | 128 bits                                    |
+| Address format      | Dotted decimal                     | Colon-separated hex                         |
+| Number of addresses | ~4.3 billion                       | ~$3.4 \times 10^{38}$                       |
+| Header complexity   | Complex, variable options          | Simplified, fixed header                    |
+| Security            | Optional (IPsec add-on)            | Built-in IPsec support                      |
+| NAT                 | Required (due to address shortage) | Not required                                |
+| Auto-configuration  | Limited                            | SLAAC (Stateless Address Autoconfiguration) |
 
 ### Subnet Masks
 
@@ -331,9 +330,9 @@ DNS translates human-readable domain names (e.g., `www.example.com`) into IP add
 2. The browser checks its **local cache** for the IP address.
 3. If not found, the request goes to the **recursive DNS resolver** ( provided by the ISP).
 4. The resolver checks its cache. If not found: (a) Query the **root name server** -- returns the
- TLD name server for `.com`. (b) Query the **TLD name server** (`.com`) -- returns the
- authoritative name server for `example.com`. (c) Query the **authoritative name server** --
- returns the IP address for `www.example.com`.
+   TLD name server for `.com`. (b) Query the **TLD name server** (`.com`) -- returns the
+   authoritative name server for `example.com`. (c) Query the **authoritative name server** --
+   returns the IP address for `www.example.com`.
 5. The resolver returns the IP address to the browser.
 6. The browser connects to the web server at that IP address.
 
@@ -364,24 +363,23 @@ To register a domain:
 
 ### Wired Media
 
-| Type | Description | Speed | Max Distance | Cost | Interference |
+| Type              | Description                                                   | Speed          | Max Distance | Cost   | Interference         |
 | ----------------- | ------------------------------------------------------------- | -------------- | ------------ | ------ | -------------------- |
-| **Twisted Pair** | Pairs of copper wires twisted together; UTP or STP | 1 Gbps (Cat 6) | 100 m | Low | Moderate (EMI) |
-| **Coaxial Cable** | Central copper conductor with insulating and shielding layers | 10 Gbps | 500 m | Medium | Low |
-| **Fibre Optic** | Thin glass/plastic fibres transmitting light pulses | 100+ Gbps | 100+ km | High | None (immune to EMI) |
+| **Twisted Pair**  | Pairs of copper wires twisted together; UTP or STP            | 1 Gbps (Cat 6) | 100 m        | Low    | Moderate (EMI)       |
+| **Coaxial Cable** | Central copper conductor with insulating and shielding layers | 10 Gbps        | 500 m        | Medium | Low                  |
+| **Fibre Optic**   | Thin glass/plastic fibres transmitting light pulses           | 100+ Gbps      | 100+ km      | High   | None (immune to EMI) |
 
 ### Wireless Media
 
-| Type | Description | Speed | Range | Frequency |
+| Type                 | Description                           | Speed                             | Range            | Frequency             |
 | -------------------- | ------------------------------------- | --------------------------------- | ---------------- | --------------------- |
-| **Wi-Fi** | IEEE 802.11 standards (a/b/g/n/ac/ax) | Up to ~10 Gbps (Wi-Fi 6) | 30--100 m indoor | 2.4 GHz, 5 GHz, 6 GHz |
-| **Bluetooth** | Short-range wireless for peripherals | 1--2 Mbps (Classic) / 2 Mbps (LE) | ~10 m | 2.4 GHz |
-| **Cellular** (4G/5G) | Mobile network | 100 Mbps (4G) -- 10 Gbps (5G) | km-scale | Various |
+| **Wi-Fi**            | IEEE 802.11 standards (a/b/g/n/ac/ax) | Up to ~10 Gbps (Wi-Fi 6)          | 30--100 m indoor | 2.4 GHz, 5 GHz, 6 GHz |
+| **Bluetooth**        | Short-range wireless for peripherals  | 1--2 Mbps (Classic) / 2 Mbps (LE) | ~10 m            | 2.4 GHz               |
+| **Cellular** (4G/5G) | Mobile network                        | 100 Mbps (4G) -- 10 Gbps (5G)     | km-scale         | Various               |
 
 :::warning[Exam Tip] Fibre optics is immune to electromagnetic interference (EMI), supports the
 Highest bandwidth and longest distances, but is the most expensive and difficult to install. Twisted
-Pair is the cheapest but has the lowest bandwidth and is susceptible to EMI.
-:::
+Pair is the cheapest but has the lowest bandwidth and is susceptible to EMI. :::
 
 ---
 
@@ -389,25 +387,25 @@ Pair is the cheapest but has the lowest bandwidth and is susceptible to EMI.
 
 ### Serial vs Parallel
 
-| Mode | Description | Advantages | Disadvantages |
+| Mode         | Description                                              | Advantages                                                  | Disadvantages                                                               |
 | ------------ | -------------------------------------------------------- | ----------------------------------------------------------- | --------------------------------------------------------------------------- |
-| **Serial** | Data sent one bit at a time over a single channel | Fewer wires, cheaper, longer distances, higher clock speeds | Slower for short distances |
-| **Parallel** | Multiple bits sent simultaneously over multiple channels | Faster for short distances | More wires, more expensive, signal skew over distance, limited cable length |
+| **Serial**   | Data sent one bit at a time over a single channel        | Fewer wires, cheaper, longer distances, higher clock speeds | Slower for short distances                                                  |
+| **Parallel** | Multiple bits sent simultaneously over multiple channels | Faster for short distances                                  | More wires, more expensive, signal skew over distance, limited cable length |
 
 ### Synchronous vs Asynchronous
 
-| Mode | Description | Features |
+| Mode             | Description                                                    | Features                                                  |
 | ---------------- | -------------------------------------------------------------- | --------------------------------------------------------- |
-| **Synchronous** | Data sent in continuous stream, synchronised by a clock signal | No start/stop bits; faster; used for large data transfers |
-| **Asynchronous** | Data sent one byte at a time with start and stop bits | No shared clock; uses start/stop bits; simpler but slower |
+| **Synchronous**  | Data sent in continuous stream, synchronised by a clock signal | No start/stop bits; faster; used for large data transfers |
+| **Asynchronous** | Data sent one byte at a time with start and stop bits          | No shared clock; uses start/stop bits; simpler but slower |
 
 ### Simplex, Half-Duplex, Full-Duplex
 
-| Mode | Description | Example |
+| Mode            | Description                                           | Example                       |
 | --------------- | ----------------------------------------------------- | ----------------------------- |
-| **Simplex** | Data flows in one direction only | TV broadcast, keyboard to CPU |
-| **Half-Duplex** | Data flows in both directions, but only one at a time | Walkie-talkie |
-| **Full-Duplex** | Data flows in both directions simultaneously | Telephone, modern Ethernet |
+| **Simplex**     | Data flows in one direction only                      | TV broadcast, keyboard to CPU |
+| **Half-Duplex** | Data flows in both directions, but only one at a time | Walkie-talkie                 |
+| **Full-Duplex** | Data flows in both directions simultaneously          | Telephone, modern Ethernet    |
 
 ---
 
@@ -428,11 +426,11 @@ Include:
 
 **Baseband vs Broadband transmission:**
 
-| Feature | Baseband | Broadband |
+| Feature      | Baseband                    | Broadband                                          |
 | ------------ | --------------------------- | -------------------------------------------------- |
-| Signal type | Digital | Analogue |
+| Signal type  | Digital                     | Analogue                                           |
 | Transmission | Single signal on the medium | Multiple signals (frequency division multiplexing) |
-| Example | Ethernet LAN | Cable TV, ADSL |
+| Example      | Ethernet LAN                | Cable TV, ADSL                                     |
 
 ---
 
@@ -440,26 +438,26 @@ Include:
 
 A protocol is a set of rules governing data communication between devices.
 
-| Protocol | Layer | Purpose |
+| Protocol  | Layer       | Purpose                                                                                                           |
 | --------- | ----------- | ----------------------------------------------------------------------------------------------------------------- |
-| **TCP** | Transport | Reliable, connection-oriented delivery; ensures packets arrive in order; uses acknowledgements and retransmission |
-| **IP** | Network | Addresses and routes packets across networks |
-| **HTTP** | Application | Request and transfer web pages (port 80) |
-| **HTTPS** | Application | Secure HTTP using TLS/SSL encryption (port 443) |
-| **SMTP** | Application | Send email (port 25/587) |
-| **POP3** | Application | Receive email (port 110) |
-| **FTP** | Application | Transfer files (ports 20/21) |
-| **UDP** | Transport | Fast, connectionless delivery; no error checking; used for streaming, gaming |
+| **TCP**   | Transport   | Reliable, connection-oriented delivery; ensures packets arrive in order; uses acknowledgements and retransmission |
+| **IP**    | Network     | Addresses and routes packets across networks                                                                      |
+| **HTTP**  | Application | Request and transfer web pages (port 80)                                                                          |
+| **HTTPS** | Application | Secure HTTP using TLS/SSL encryption (port 443)                                                                   |
+| **SMTP**  | Application | Send email (port 25/587)                                                                                          |
+| **POP3**  | Application | Receive email (port 110)                                                                                          |
+| **FTP**   | Application | Transfer files (ports 20/21)                                                                                      |
+| **UDP**   | Transport   | Fast, connectionless delivery; no error checking; used for streaming, gaming                                      |
 
 ### TCP vs UDP
 
-| Feature | TCP | UDP |
+| Feature     | TCP                                         | UDP                                  |
 | ----------- | ------------------------------------------- | ------------------------------------ |
-| Connection | Connection-oriented (3-way handshake) | Connectionless |
-| Reliability | Reliable (acknowledgements, retransmission) | Unreliable (best effort) |
-| Ordering | Packets arrive in order | No guarantee of order |
-| Speed | Slower due to overhead | Faster, less overhead |
-| Use cases | Web browsing, email, file transfer | Video streaming, online gaming, VoIP |
+| Connection  | Connection-oriented (3-way handshake)       | Connectionless                       |
+| Reliability | Reliable (acknowledgements, retransmission) | Unreliable (best effort)             |
+| Ordering    | Packets arrive in order                     | No guarantee of order                |
+| Speed       | Slower due to overhead                      | Faster, less overhead                |
+| Use cases   | Web browsing, email, file transfer          | Video streaming, online gaming, VoIP |
 
 ---
 
@@ -467,29 +465,28 @@ A protocol is a set of rules governing data communication between devices.
 
 The OSI (Open Systems Interconnection) model has 7 layers:
 
-| Layer | Name | Function | Example Protocols/Devices |
+| Layer | Name             | Function                                          | Example Protocols/Devices        |
 | ----- | ---------------- | ------------------------------------------------- | -------------------------------- |
-| 7 | **Application** | Provides network services to user applications | HTTP, FTP, SMTP, DNS |
-| 6 | **Presentation** | Data format translation, encryption, compression | SSL/TLS, JPEG, ASCII |
-| 5 | **Session** | Establishes, manages, terminates sessions | NetBIOS, RPC |
-| 4 | **Transport** | End-to-end error-free data delivery | TCP, UDP |
-| 3 | **Network** | Logical addressing and routing | IP, ICMP, routers |
-| 2 | **Data Link** | Frame formatting, MAC addressing, error detection | Ethernet, Wi-Fi, switches |
-| 1 | **Physical** | Physical transmission of raw bits | Cables, hubs, electrical signals |
+| 7     | **Application**  | Provides network services to user applications    | HTTP, FTP, SMTP, DNS             |
+| 6     | **Presentation** | Data format translation, encryption, compression  | SSL/TLS, JPEG, ASCII             |
+| 5     | **Session**      | Establishes, manages, terminates sessions         | NetBIOS, RPC                     |
+| 4     | **Transport**    | End-to-end error-free data delivery               | TCP, UDP                         |
+| 3     | **Network**      | Logical addressing and routing                    | IP, ICMP, routers                |
+| 2     | **Data Link**    | Frame formatting, MAC addressing, error detection | Ethernet, Wi-Fi, switches        |
+| 1     | **Physical**     | Physical transmission of raw bits                 | Cables, hubs, electrical signals |
 
 ### OSI vs TCP/IP Model
 
-| OSI Layer | TCP/IP Layer |
+| OSI Layer                          | TCP/IP Layer          |
 | ---------------------------------- | --------------------- |
-| Application, Presentation, Session | Application |
-| Transport | Transport |
-| Network | Internet |
-| Data Link, Physical | Network Access (Link) |
+| Application, Presentation, Session | Application           |
+| Transport                          | Transport             |
+| Network                            | Internet              |
+| Data Link, Physical                | Network Access (Link) |
 
 :::warning[Exam Tip] Memorise the OSI layers from top to bottom using mnemonics. Common one: **A**ll
 **P**eople **S**eem **T**o **N**eed **D**ata **P**rocessing (Application, Presentation, Session,
-Transport, Network, Data Link, Physical).
-:::
+Transport, Network, Data Link, Physical). :::
 
 ---
 
@@ -503,14 +500,14 @@ Rules.
 - **Packet filtering:** Examines source/destination IP and port. Fast but basic.
 - **Stateful inspection:** Tracks the state of active connections; more intelligent.
 - **Application-level (proxy):** Inspects the actual content of packets at the application layer.
- Most thorough but slowest.
+  Most thorough but slowest.
 
 ### Encryption
 
 - **Symmetric encryption:** Same key for encryption and decryption (e.g., AES). Fast but key
- distribution is a problem.
+  distribution is a problem.
 - **Asymmetric encryption:** Public key for encryption, private key for decryption (e.g., RSA).
- Slower but solves key distribution.
+  Slower but solves key distribution.
 
 ### Digital Certificate
 
@@ -545,44 +542,44 @@ Ethical principles guiding computer use:
 ### Intellectual Property and Copyright
 
 - **Copyright:** Automatic legal protection of original creative works (software, music, text,
- images). Gives the creator exclusive rights to reproduce, distribute, and adapt the work.
+  images). Gives the creator exclusive rights to reproduce, distribute, and adapt the work.
 - **Software piracy:** Unauthorised copying, distribution, or use of software. Illegal and
- unethical.
+  unethical.
 - **Creative Commons:** A licensing system allowing creators to specify how their work may be used
- (e.g., attribution required, non-commercial use only).
+  (e.g., attribution required, non-commercial use only).
 
 ### Privacy
 
 - **Personal Data Privacy Ordinance (PDPO, HK):** Hong Kong's data protection law that governs the
- collection, use, and disclosure of personal data.
+  collection, use, and disclosure of personal data.
 - Key principles of the PDPO:
- - Purpose and manner of data collection must be lawful and fair.
- - Personal data should only be used for the purpose for which it was collected.
- - Data should be accurate and up to date.
- - Data should not be kept longer than necessary.
- - Individuals have the right to access their personal data.
+- Purpose and manner of data collection must be lawful and fair.
+- Personal data should only be used for the purpose for which it was collected.
+- Data should be accurate and up to date.
+- Data should not be kept longer than necessary.
+- Individuals have the right to access their personal data.
 - **Data user:** A person or organisation that controls the collection, holding, processing, or use
- of personal data.
+  of personal data.
 
 ### Computer Crimes
 
-| Crime | Description |
+| Crime                    | Description                                                                                  |
 | ------------------------ | -------------------------------------------------------------------------------------------- |
-| **Hacking** | Unauthorised access to a computer system |
-| **Malware distribution** | Spreading viruses, worms, trojans, ransomware |
-| **Phishing** | Fraudulent attempts to obtain sensitive information by pretending to be a trustworthy entity |
-| **Identity theft** | Using another person's personal information without consent |
-| **Software piracy** | Unauthorised copying and distribution of copyrighted software |
-| **DDoS attacks** | Flooding a server with traffic to make it unavailable |
+| **Hacking**              | Unauthorised access to a computer system                                                     |
+| **Malware distribution** | Spreading viruses, worms, trojans, ransomware                                                |
+| **Phishing**             | Fraudulent attempts to obtain sensitive information by pretending to be a trustworthy entity |
+| **Identity theft**       | Using another person's personal information without consent                                  |
+| **Software piracy**      | Unauthorised copying and distribution of copyrighted software                                |
+| **DDoS attacks**         | Flooding a server with traffic to make it unavailable                                        |
 
 ### Health Issues
 
-| Issue | Cause | Prevention |
+| Issue                              | Cause                                           | Prevention                                                                          |
 | ---------------------------------- | ----------------------------------------------- | ----------------------------------------------------------------------------------- |
-| **RSI (Repetitive Strain Injury)** | Repeated physical movements (typing, mouse use) | Regular breaks, ergonomic equipment, proper posture |
-| **Eye strain** | Staring at screens for long periods | 20-20-20 rule, proper lighting, screen distance |
-| **Back/neck pain** | Poor posture at workstation | Ergonomic chair, correct monitor height, regular movement |
-| **Radiation concern** | Proximity to wireless devices | Maintain distance; current evidence shows no significant harm from typical exposure |
+| **RSI (Repetitive Strain Injury)** | Repeated physical movements (typing, mouse use) | Regular breaks, ergonomic equipment, proper posture                                 |
+| **Eye strain**                     | Staring at screens for long periods             | 20-20-20 rule, proper lighting, screen distance                                     |
+| **Back/neck pain**                 | Poor posture at workstation                     | Ergonomic chair, correct monitor height, regular movement                           |
+| **Radiation concern**              | Proximity to wireless devices                   | Maintain distance; current evidence shows no significant harm from typical exposure |
 
 ### Digital Divide
 
@@ -605,7 +602,7 @@ Practices to reduce the environmental impact of computing:
 - Energy-efficient hardware (Energy Star ratings, low-power processors).
 - Power management (sleep mode, automatic shutdown).
 - Virtualisation (running multiple virtual machines on a single physical server reduces hardware
- needs).
+  needs).
 - Cloud computing (shared resources reduce overall energy consumption).
 - Proper disposal and recycling of e-waste (contains toxic materials like lead, mercury).
 - Extending device lifespan through upgrades and maintenance.
@@ -615,38 +612,38 @@ Practices to reduce the environmental impact of computing:
 ## Common Pitfalls
 
 1. **Hub vs Switch:** A hub broadcasts to all ports; a switch forwards only to the intended
- recipient. This distinction is fundamental.
+   recipient. This distinction is fundamental.
 
 2. **Router vs Switch:** A router connects different networks (operates at Layer 3, uses IP
- addresses). A switch connects devices within the same network (operates at Layer 2, uses MAC
- addresses).
+   addresses). A switch connects devices within the same network (operates at Layer 2, uses MAC
+   addresses).
 
 3. **TCP vs UDP:** TCP is reliable and connection-oriented; UDP is fast and connectionless.
- Streaming and gaming use UDP despite unreliability because speed matters more than perfect
- delivery.
+   Streaming and gaming use UDP despite unreliability because speed matters more than perfect
+   delivery.
 
 4. **HTTP vs HTTPS:** HTTPS is HTTP over TLS/SSL. It encrypts data in transit, protecting against
- eavesdropping. Modern websites should always use HTTPS.
+   eavesdropping. Modern websites should always use HTTPS.
 
 5. **SMTP sends, POP3/IMAP receives:** Do not confuse the roles. SMTP is for sending; POP3 and IMAP
- are for receiving. IMAP syncs across devices; POP3 downloads and removes from server.
+   are for receiving. IMAP syncs across devices; POP3 downloads and removes from server.
 
 6. **Bandwidth units:** Bandwidth is measured in bits per second (bps), not bytes per second. 1 byte
- = 8 bits. A 100 Mbps connection transfers at most 12.5 MB/s.
+   = 8 bits. A 100 Mbps connection transfers at most 12.5 MB/s.
 
 7. **Private vs Public IP:** Private IP addresses (10.x.x.x, 172.16--31.x.x, 192.168.x.x) are not
- routable on the internet. NAT (Network Address Translation) is needed for private hosts to
- communicate on the internet.
+   routable on the internet. NAT (Network Address Translation) is needed for private hosts to
+   communicate on the internet.
 
 8. **OSI layer ordering:** Application is Layer 7 (top), Physical is Layer 1 (bottom). Know which
- protocols and devices belong to each layer.
+   protocols and devices belong to each layer.
 
 9. **Serial vs Parallel:** Serial sends one bit at a time; parallel sends multiple bits
- simultaneously. Modern high-speed interfaces (USB 3.0, SATA) are serial despite being fast --
- parallel interfaces suffer from signal skew at high speeds.
+   simultaneously. Modern high-speed interfaces (USB 3.0, SATA) are serial despite being fast --
+   parallel interfaces suffer from signal skew at high speeds.
 
 10. **Digital divide is not just about access:** It encompasses skills, affordability, and the
- ability to use technology effectively, not just physical availability of devices.
+    ability to use technology effectively, not just physical availability of devices.
 
 ---
 
@@ -692,15 +689,15 @@ Answer:
 
 1. The browser checks its **local DNS cache** for the IP address of `www.hkeaa.edu.hk`.
 2. If not cached, the request is sent to the **recursive DNS resolver** (configured by the ISP or
- OS).
+   OS).
 3. The resolver checks its own cache. If not found: (a) The resolver queries a **root name server**,
- which returns the IP address of the **.hk TLD server**. (b) The resolver queries the **.hk TLD
- server**, which returns the IP address of the **authoritative name server** for `hkeaa.edu.hk`.
- (c) The resolver queries the **authoritative name server** for `hkeaa.edu.hk`Which returns the
- IP address of `www.hkeaa.edu.hk`.
+   which returns the IP address of the **.hk TLD server**. (b) The resolver queries the **.hk TLD
+   server**, which returns the IP address of the **authoritative name server** for `hkeaa.edu.hk`.
+   (c) The resolver queries the **authoritative name server** for `hkeaa.edu.hk`Which returns the IP
+   address of `www.hkeaa.edu.hk`.
 4. The resolver returns the IP address to the browser.
 5. The browser caches the result and establishes a TCP connection to the web server at that IP
- address.
+   address.
 6. An HTTP request is sent, and the web page is received and rendered.
 
 </details>
@@ -882,12 +879,12 @@ Answer:
 
 (a)
 
-| Criterion | Twisted Pair (Cat 6) | Fibre Optic |
+| Criterion    | Twisted Pair (Cat 6) | Fibre Optic   |
 | ------------ | -------------------- | ------------- |
-| Speed | Up to 10 Gbps | 100+ Gbps |
-| Max distance | 100 m | 100+ km |
-| Cost | Low | High |
-| Interference | Susceptible to EMI | Immune to EMI |
+| Speed        | Up to 10 Gbps        | 100+ Gbps     |
+| Max distance | 100 m                | 100+ km       |
+| Cost         | Low                  | High          |
+| Interference | Susceptible to EMI   | Immune to EMI |
 
 (b) (i) **Twisted pair (Cat 6):** Sufficient for classroom distances (well under 100 m), lower cost,
 And easy to install and terminate. The bandwidth of Cat 6 is more than adequate for classroom use.
@@ -921,12 +918,12 @@ Comply with the request; if the company refuses, it must provide reasons.
 (c) Two measures:
 
 1. **Data access request procedure:** Establish a clear process for individuals to request access to
- their personal data, and respond within the statutory time limit (40 days under PDPO).
+   their personal data, and respond within the statutory time limit (40 days under PDPO).
 2. **Purpose limitation and consent:** Only collect personal data for a stated, lawful purpose and
- obtain the individual's consent before using their data for any other purpose (e.g., using email
- addresses only for the purpose stated at collection).
+   obtain the individual's consent before using their data for any other purpose (e.g., using email
+   addresses only for the purpose stated at collection).
 3. **Data security:** Implement appropriate security measures (encryption, access controls, staff
- training) to protect personal data from unauthorised access, loss, or disclosure.
+   training) to protect personal data from unauthorised access, loss, or disclosure.
 
 </details>
 
@@ -956,7 +953,7 @@ HTTP transmits data in plaintext, which is completely insecure.
 
 1. **SYN:** The client sends a SYN (synchronise) packet to the server to initiate a connection.
 2. **SYN-ACK:** The server acknowledges the request by sending a SYN-ACK (synchronise-acknowledge)
- packet back to the client.
+   packet back to the client.
 3. **ACK:** The client sends an ACK (acknowledge) packet to confirm the connection is established.
 
 After this exchange, both parties have agreed on sequence numbers and the connection is open for
@@ -1006,11 +1003,11 @@ Internet -- Modem -- Router -- Central Switch
 
 - **Modem:** Converts the ISP's signal to digital for the router.
 - **Router:** Connects the school's internal LAN to the internet (WAN), performs NAT so internal
- private IPs can access the internet, assigns IP addresses via DHCP.
+  private IPs can access the internet, assigns IP addresses via DHCP.
 - **Central switch:** Connects all room switches together, providing high-speed communication
- between rooms.
+  between rooms.
 - **Local switches:** Connect computers within each room to the network, providing dedicated
- bandwidth per port and reducing collisions.
+  bandwidth per port and reducing collisions.
 - **NICs:** Provide the physical interface for each computer to connect to the network.
 - **Ethernet cables:** Physical transmission medium carrying data between devices.
 

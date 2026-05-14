@@ -1,9 +1,12 @@
 ---
 id: context-managers
 title: Context Managers and the with Statement
-description: "Context Managers and the with Statement — The with Statement for comprehensive revision and examination preparation. and examination pr."
+description:
+  'Context Managers and the with Statement — The with Statement for comprehensive revision and
+  examination preparation. and examination pr.'
 slug: context-managers
 ---
+
 ## The with Statement
 
 The `with` statement guarantees that setup and teardown code runs, even if an exception occurs in
@@ -42,11 +45,9 @@ with (
     outfile.write(infile.read())
 ```
 
-:::warning
-If the second `with` statement fails (e.g., `open("output.txt", "w")` raises
+:::warning If the second `with` statement fails (e.g., `open("output.txt", "w")` raises
 `PermissionError`), the first resource (`input.txt`) is still properly closed. This is a key
-Advantage over manual try/finally.
-:::
+Advantage over manual try/finally. :::
 
 ## \_\_enter\_\_ and \_\_exit\_\_
 
@@ -80,11 +81,11 @@ with Resource("db_connection") as r:
 
 ### \_\_exit\_\_ Parameters
 
-| Parameter | Description |
+| Parameter  | Description                                |
 | ---------- | ------------------------------------------ |
 | `exc_type` | Exception class, or `None` if no exception |
-| `exc_val` | Exception instance, or `None` |
-| `exc_tb` | Traceback object, or `None` |
+| `exc_val`  | Exception instance, or `None`              |
+| `exc_tb`   | Traceback object, or `None`                |
 
 All three are `None` when the block exits normally. When an exception occurs, they contain the
 Exception details.

@@ -1,6 +1,8 @@
 ---
 title: Trigonometry
-description: "A-Level Mathematics notes on Trigonometry: Board Coverage; 1. The Unit Circle Definitions; 1.1 Radian Measure; 2. Fundamental Identities."
+description:
+  'A-Level Mathematics notes on Trigonometry: Board Coverage; 1. The Unit Circle Definitions; 1.1
+  Radian Measure; 2. Fundamental Identities.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Maths
@@ -9,19 +11,18 @@ categories:
   - Maths
 slug: trigonometry
 ---
+
 ## Board Coverage
 
-| Board | Paper | Notes |
+| Board      | Paper      | Notes                                                                    |
 | ---------- | ---------- | ------------------------------------------------------------------------ |
-| AQA | Paper 1, 2 | Basic trig in P1; compound/double angle, trig equations in P2 |
-| Edexcel | P1, P2 | Similar split |
-| OCR (A) | Paper 1, 2 | Includes small angle approximations |
+| AQA        | Paper 1, 2 | Basic trig in P1; compound/double angle, trig equations in P2            |
+| Edexcel    | P1, P2     | Similar split                                                            |
+| OCR (A)    | Paper 1, 2 | Includes small angle approximations                                      |
 | CIE (9709) | P1, P2, P3 | Trig functions in P1; identities and equations in P2; further trig in P3 |
 
-:::info
-All boards provide trigonometric identities in the formula booklet, but not their proofs.
-You need to know _which_ identities exist and how to apply them.
-:::
+:::info All boards provide trigonometric identities in the formula booklet, but not their proofs.
+You need to know _which_ identities exist and how to apply them. :::
 
 <hr />
 
@@ -218,7 +219,8 @@ $$2\cos^2\theta - 3\cos\theta + 1 = 0$$
 
 $$(2\cos\theta - 1)(\cos\theta - 1) = 0$$
 
-$\cos\theta = \frac{1}{2} \implies \theta = \frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆$ or $\frac◆LB◆5\pi◆RB◆◆LB◆3◆RB◆$.
+$\cos\theta = \frac{1}{2} \implies \theta = \frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆$ or
+$\frac◆LB◆5\pi◆RB◆◆LB◆3◆RB◆$.
 
 $\cos\theta = 1 \implies \theta = 0$.
 
@@ -249,10 +251,8 @@ $$\sin\theta \approx \theta, \quad \cos\theta \approx 1, \quad \tan\theta \appro
 _Intuition._ Near the origin, the curves $y = \sin\theta$ and $y = \tan\theta$ are almost
 Indistinguishable from the line $y = \theta$. The curve $y = \cos\theta$ is nearly flat at $y = 1$.
 
-:::warning
-The small angle approximations are only valid when $\theta$ is in **radians**, not
-Degrees. This is a very common exam error.
-:::
+:::warning The small angle approximations are only valid when $\theta$ is in **radians**, not
+Degrees. This is a very common exam error. :::
 
 <hr />
 
@@ -303,23 +303,23 @@ $\frac◆LB◆1 - \cos\theta◆RB◆◆LB◆\sin\theta◆RB◆ = \frac◆LB◆1 
 
 ### 7.3 Sign Determination
 
-The $\pm$ in the sine and cosine half-angle formulas depends on the quadrant of $\frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆$
-Not the quadrant of $\theta$ itself. Always determine which quadrant $\frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆$ lies in
-Before choosing the sign.
+The $\pm$ in the sine and cosine half-angle formulas depends on the quadrant of
+$\frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆$ Not the quadrant of $\theta$ itself. Always determine which quadrant
+$\frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆$ lies in Before choosing the sign.
 
-| Quadrant of $\frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆$ | $\sin\frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆$ | $\cos\frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆$ |
-| ------------------------------------------------------ | ---------------------- | ---------------------- |
-| I: $0 \lt{} \frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆ \lt{} \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆$ | $+$ | $+$ |
-| II: $\frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆ \lt{} \frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆ \lt{} \pi$ | $+$ | $-$ |
-| III: $\pi \lt{} \frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆ \lt{} \frac◆LB◆3\pi◆RB◆◆LB◆2◆RB◆$ | $-$ | $-$ |
-| IV: $\frac◆LB◆3\pi◆RB◆◆LB◆2◆RB◆ \lt{} \frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆ \lt{} 2\pi$ | $-$ | $+$ |
+| Quadrant of $\frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆$                                     | $\sin\frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆$ | $\cos\frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆$ |
+| ------------------------------------------------------------------------------ | ---------------------------------- | ---------------------------------- |
+| I: $0 \lt{} \frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆ \lt{} \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆$      | $+$                                | $+$                                |
+| II: $\frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆ \lt{} \frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆ \lt{} \pi$   | $+$                                | $-$                                |
+| III: $\pi \lt{} \frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆ \lt{} \frac◆LB◆3\pi◆RB◆◆LB◆2◆RB◆$ | $-$                                | $-$                                |
+| IV: $\frac◆LB◆3\pi◆RB◆◆LB◆2◆RB◆ \lt{} \frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆ \lt{} 2\pi$ | $-$                                | $+$                                |
 
 <details>
 <summary>Worked example</summary>
 Find the exact value of $\sin\frac◆LB◆\pi◆RB◆◆LB◆8◆RB◆$.
 
-Since $0 \lt{} \frac◆LB◆\pi◆RB◆◆LB◆8◆RB◆ \lt{} \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆$ (first quadrant), $\sin\frac◆LB◆\pi◆RB◆◆LB◆8◆RB◆ > 0$So we
-Take the positive root.
+Since $0 \lt{} \frac◆LB◆\pi◆RB◆◆LB◆8◆RB◆ \lt{} \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆$ (first quadrant),
+$\sin\frac◆LB◆\pi◆RB◆◆LB◆8◆RB◆ > 0$So we Take the positive root.
 
 $$\sin\frac◆LB◆\pi◆RB◆◆LB◆8◆RB◆ = \sqrt◆LB◆\frac{1 - \cos\frac{\pi}{4}}{2}◆RB◆ = \sqrt◆LB◆\frac{1 - \frac{\sqrt{2}}{2}}{2}◆RB◆ = \sqrt◆LB◆\frac{2 - \sqrt{2}}{4}◆RB◆ = \frac◆LB◆\sqrt{2 - \sqrt{2}}◆RB◆◆LB◆2◆RB◆$$
 
@@ -370,7 +370,8 @@ Since $-1 \leq \sin(\theta + \alpha) \leq 1$:
 
 $$-R \leq a\sin\theta + b\cos\theta \leq R$$
 
-- **Maximum** $= R = \sqrt{a^2 + b^2}$Occurring when $\theta + \alpha = \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆ + 2n\pi$.
+- **Maximum** $= R = \sqrt{a^2 + b^2}$Occurring when
+  $\theta + \alpha = \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆ + 2n\pi$.
 - **Minimum** $= -R$Occurring when $\theta + \alpha = \frac◆LB◆3\pi◆RB◆◆LB◆2◆RB◆ + 2n\pi$.
 
 <details>
@@ -518,18 +519,18 @@ $$
 
 ### 10.1 Key Features
 
-| Function | Period | Amplitude | Domain | Range |
-| -------- | ------ | --------- | ----------------------------- | ------------ |
-| $\sin x$ | $2\pi$ | $1$ | $\mathbb{R}$ | $[-1, 1]$ |
-| $\cos x$ | $2\pi$ | $1$ | $\mathbb{R}$ | $[-1, 1]$ |
-| $\tan x$ | $\pi$ | undefined | $x \neq \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆ + n\pi$ | $\mathbb{R}$ |
+| Function | Period | Amplitude | Domain                                    | Range        |
+| -------- | ------ | --------- | ----------------------------------------- | ------------ |
+| $\sin x$ | $2\pi$ | $1$       | $\mathbb{R}$                              | $[-1, 1]$    |
+| $\cos x$ | $2\pi$ | $1$       | $\mathbb{R}$                              | $[-1, 1]$    |
+| $\tan x$ | $\pi$  | undefined | $x \neq \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆ + n\pi$ | $\mathbb{R}$ |
 
 **Key values of $\sin$ and $\cos$:**
 
-| Angle | $0$ | $\frac◆LB◆\pi◆RB◆◆LB◆6◆RB◆$ | $\frac◆LB◆\pi◆RB◆◆LB◆4◆RB◆$ | $\frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆$ | $\frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆$ | $\pi$ | $\frac◆LB◆3\pi◆RB◆◆LB◆2◆RB◆$ | $2\pi$ |
-| ------ | --- | -------------------- | -------------------- | -------------------- | --------------- | ----- | ---------------- | ------ |
-| $\sin$ | $0$ | $\frac{1}{2}$ | $\frac◆LB◆\sqrt{2}◆RB◆◆LB◆2◆RB◆$ | $\frac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆$ | $1$ | $0$ | $-1$ | $0$ |
-| $\cos$ | $1$ | $\frac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆$ | $\frac◆LB◆\sqrt{2}◆RB◆◆LB◆2◆RB◆$ | $\frac{1}{2}$ | $0$ | $-1$ | $0$ | $1$ |
+| Angle  | $0$ | $\frac◆LB◆\pi◆RB◆◆LB◆6◆RB◆$      | $\frac◆LB◆\pi◆RB◆◆LB◆4◆RB◆$      | $\frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆$      | $\frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆$ | $\pi$ | $\frac◆LB◆3\pi◆RB◆◆LB◆2◆RB◆$ | $2\pi$ |
+| ------ | --- | -------------------------------- | -------------------------------- | -------------------------------- | --------------------------- | ----- | ---------------------------- | ------ |
+| $\sin$ | $0$ | $\frac{1}{2}$                    | $\frac◆LB◆\sqrt{2}◆RB◆◆LB◆2◆RB◆$ | $\frac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆$ | $1$                         | $0$   | $-1$                         | $0$    |
+| $\cos$ | $1$ | $\frac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆$ | $\frac◆LB◆\sqrt{2}◆RB◆◆LB◆2◆RB◆$ | $\frac{1}{2}$                    | $0$                         | $-1$  | $0$                          | $1$    |
 
 ### 10.2 Transformations
 
@@ -542,7 +543,8 @@ For the general form $y = A\sin(Bx + C) + D$ (and similarly for $\cos$):
 
 For $\tan$The period is $\dfrac◆LB◆\pi◆RB◆◆LB◆|B|◆RB◆$ and amplitude is not defined.
 
-<DesmosGraph title="y = A sin(Bx + C) + D" expressions={["A\sin(Bx+C)+D", "A\cos(Bx+C)+D"]} width={800} height={500} /> Use the sliders to adjust the amplitude, period, phase shift, and
+<DesmosGraph title="y = A sin(Bx + C) + D" expressions={["A\sin(Bx+C)+D", "A\cos(Bx+C)+D"]}
+width={800} height={500} /> Use the sliders to adjust the amplitude, period, phase shift, and
 Vertical translation of the trigonometric functions. Observe how each parameter affects the graph of
 $y = A\sin(Bx + C) + D$.
 
@@ -554,11 +556,11 @@ Describe the key features of $y = 2\sin\!\left(2x - \frac◆LB◆\pi◆RB◆◆L
 
 **Period:** $\dfrac◆LB◆2\pi◆RB◆◆LB◆|B|◆RB◆ = \dfrac◆LB◆2\pi◆RB◆◆LB◆2◆RB◆ = \pi$.
 
-**Phase shift:** $-\dfrac{C}{B} = -\dfrac◆LB◆-\pi/3◆RB◆◆LB◆2◆RB◆ = \dfrac◆LB◆\pi◆RB◆◆LB◆6◆RB◆$ (shift right by
-$\frac◆LB◆\pi◆RB◆◆LB◆6◆RB◆$).
+**Phase shift:** $-\dfrac{C}{B} = -\dfrac◆LB◆-\pi/3◆RB◆◆LB◆2◆RB◆ = \dfrac◆LB◆\pi◆RB◆◆LB◆6◆RB◆$
+(shift right by $\frac◆LB◆\pi◆RB◆◆LB◆6◆RB◆$).
 
-**Key points.** The first cycle begins at $x = \frac◆LB◆\pi◆RB◆◆LB◆6◆RB◆$ (where the curve crosses the midline
-Upward). Subsequent key points within $[0, 2\pi]$:
+**Key points.** The first cycle begins at $x = \frac◆LB◆\pi◆RB◆◆LB◆6◆RB◆$ (where the curve crosses
+the midline Upward). Subsequent key points within $[0, 2\pi]$:
 
 - Maximum at $x = \frac◆LB◆5\pi◆RB◆◆LB◆12◆RB◆$ (value $2$)
 - Midline crossing (down) at $x = \frac◆LB◆2\pi◆RB◆◆LB◆3◆RB◆$
@@ -613,8 +615,8 @@ Solutions: $x = 0, \frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆, \pi, \frac◆LB◆
 
 <hr />
 
-**Problem 3.** Express $4\sin\theta - 3\cos\theta$ in the form $R\sin(\theta - \alpha)$Where
-$R > 0$ and $0 < \alpha < \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆$.
+**Problem 3.** Express $4\sin\theta - 3\cos\theta$ in the form $R\sin(\theta - \alpha)$Where $R > 0$
+and $0 < \alpha < \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆$.
 
 <details>
 <summary>Solution</summary>
@@ -720,7 +722,8 @@ $$\frac◆LB◆\sin 0.05◆RB◆◆LB◆\cos 0.05◆RB◆ \approx \frac{0.05}{0.
 
 <hr />
 
-**Problem 9.** Prove that $\dfrac◆LB◆1 + \sin 2A◆RB◆◆LB◆\cos 2A◆RB◆ = \tan\!\left(A + \dfrac◆LB◆\pi◆RB◆◆LB◆4◆RB◆\right)$.
+**Problem 9.** Prove that
+$\dfrac◆LB◆1 + \sin 2A◆RB◆◆LB◆\cos 2A◆RB◆ = \tan\!\left(A + \dfrac◆LB◆\pi◆RB◆◆LB◆4◆RB◆\right)$.
 
 <details>
 <summary>Solution</summary>
@@ -765,13 +768,15 @@ $$\theta = \frac{10}{4} = 2.5 \mathrm{ radians}$$
 
 <hr />
 
-**Problem 11.** Find the exact value of $\cos\dfrac◆LB◆\pi◆RB◆◆LB◆12◆RB◆$ using a half-angle formula.
+**Problem 11.** Find the exact value of $\cos\dfrac◆LB◆\pi◆RB◆◆LB◆12◆RB◆$ using a half-angle
+formula.
 
 <details>
 <summary>Solution</summary>
 $\cos\frac◆LB◆\pi◆RB◆◆LB◆12◆RB◆ = \cos\frac◆LB◆\pi/6◆RB◆◆LB◆2◆RB◆$So we apply the half-angle formula with $\theta = \frac◆LB◆\pi◆RB◆◆LB◆6◆RB◆$.
 
-Since $0 \lt{} \frac◆LB◆\pi◆RB◆◆LB◆12◆RB◆ \lt{} \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆$ (first quadrant), $\cos\frac◆LB◆\pi◆RB◆◆LB◆12◆RB◆ > 0$.
+Since $0 \lt{} \frac◆LB◆\pi◆RB◆◆LB◆12◆RB◆ \lt{} \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆$ (first quadrant),
+$\cos\frac◆LB◆\pi◆RB◆◆LB◆12◆RB◆ > 0$.
 
 $$
 \begin{aligned}
@@ -784,7 +789,8 @@ $$
 
 This can also be verified using the compound angle formula:
 $\cos\frac◆LB◆\pi◆RB◆◆LB◆12◆RB◆ = \cos\!\left(\frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆ - \frac◆LB◆\pi◆RB◆◆LB◆4◆RB◆\right) = \cos\frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆\cos\frac◆LB◆\pi◆RB◆◆LB◆4◆RB◆ + \sin\frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆\sin\frac◆LB◆\pi◆RB◆◆LB◆4◆RB◆ = \frac◆LB◆\sqrt{6} + \sqrt{2}◆RB◆◆LB◆4◆RB◆$
-And one can check that $\dfrac◆LB◆\sqrt{2+\sqrt{3}}◆RB◆◆LB◆2◆RB◆ = \dfrac◆LB◆\sqrt{6}+\sqrt{2}◆RB◆◆LB◆4◆RB◆$.
+And one can check that
+$\dfrac◆LB◆\sqrt{2+\sqrt{3}}◆RB◆◆LB◆2◆RB◆ = \dfrac◆LB◆\sqrt{6}+\sqrt{2}◆RB◆◆LB◆4◆RB◆$.
 
 </details>
 <b>If you get this wrong, revise:</b> [Half-angle formulas](#7-half-angle-formulas)
@@ -803,19 +809,21 @@ The maximum value is $R = \sqrt{29}$.
 Writing $2\sin\theta + 5\cos\theta = \sqrt{29}\sin(\theta + \alpha)$ where
 $\tan\alpha = \dfrac{5}{2}$.
 
-The maximum occurs when $\sin(\theta + \alpha) = 1$I.e., $\theta + \alpha = \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆$.
+The maximum occurs when $\sin(\theta + \alpha) = 1$I.e.,
+$\theta + \alpha = \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆$.
 
 $$\theta = \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆ - \alpha = \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆ - \arctan\frac{5}{2} \approx 0.3805 \mathrm{ rad}$$
 
-Since $\arctan\frac{5}{2} \approx 1.1903 < \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆$This $\theta$ is positive and is the
-Smallest positive value.
+Since $\arctan\frac{5}{2} \approx 1.1903 < \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆$This $\theta$ is positive and
+is the Smallest positive value.
 
 </details>
 <b>If you get this wrong, revise:</b> [R-addition formula](#8-r-addition-formula-harmonic-form)
 
 <hr />
 
-**Problem 13.** Prove that $\dfrac◆LB◆\sin 3A◆RB◆◆LB◆\sin A◆RB◆ - \dfrac◆LB◆\cos 3A◆RB◆◆LB◆\cos A◆RB◆ = 2$.
+**Problem 13.** Prove that
+$\dfrac◆LB◆\sin 3A◆RB◆◆LB◆\sin A◆RB◆ - \dfrac◆LB◆\cos 3A◆RB◆◆LB◆\cos A◆RB◆ = 2$.
 
 <details>
 <summary>Solution</summary>
@@ -847,11 +855,13 @@ $$\sin\!\left(\theta + \frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆\right) = \frac{
 
 $$\theta + \frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆ = \frac◆LB◆\pi◆RB◆◆LB◆6◆RB◆ + 2n\pi \quad \mathrm{or} \quad \theta + \frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆ = \frac◆LB◆5\pi◆RB◆◆LB◆6◆RB◆ + 2n\pi$$
 
-Case 1: $\theta = \frac◆LB◆\pi◆RB◆◆LB◆6◆RB◆ - \frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆ + 2n\pi = -\frac◆LB◆\pi◆RB◆◆LB◆6◆RB◆ + 2n\pi$.
+Case 1:
+$\theta = \frac◆LB◆\pi◆RB◆◆LB◆6◆RB◆ - \frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆ + 2n\pi = -\frac◆LB◆\pi◆RB◆◆LB◆6◆RB◆ + 2n\pi$.
 
 For $n = 1$: $\theta = -\frac◆LB◆\pi◆RB◆◆LB◆6◆RB◆ + 2\pi = \frac◆LB◆11\pi◆RB◆◆LB◆6◆RB◆$.
 
-Case 2: $\theta = \frac◆LB◆5\pi◆RB◆◆LB◆6◆RB◆ - \frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆ + 2n\pi = \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆ + 2n\pi$.
+Case 2:
+$\theta = \frac◆LB◆5\pi◆RB◆◆LB◆6◆RB◆ - \frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆ + 2n\pi = \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆ + 2n\pi$.
 
 For $n = 0$: $\theta = \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆$.
 
@@ -885,14 +895,15 @@ $$
 
 ---
 
-:::tip
-Tip
-Ready to test your understanding of **Trigonometry**? The [diagnostic test](/docs/alevel/maths/diagnostics/diag-trigonometry) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
+:::tip Tip Ready to test your understanding of **Trigonometry**? The
+[diagnostic test](/docs/alevel/maths/diagnostics/diag-trigonometry) contains the hardest questions
+within the A-Level specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Trigonometry with other pure mathematics topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine
+Trigonometry with other pure mathematics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and
+building a personal test matrix. :::
 
 ## Common Pitfalls
 

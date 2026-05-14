@@ -1,6 +1,8 @@
 ---
 title: Explicit and Partial Specialization
-description: "C++: Explicit and Partial Specialization — Full Specialization; Full Specialization of Function Templates; Partial Specialization; Partial Ordering Rules."
+description:
+  'C++: Explicit and Partial Specialization — Full Specialization; Full Specialization of Function
+  Templates; Partial Specialization; Partial Ordering Rules.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -8,6 +10,7 @@ categories:
   - Cpp
 slug: explicit-and-partial-specialization
 ---
+
 # Explicit and Partial Specialization
 
 Specialization allows you to provide alternative implementations for specific sets of template
@@ -55,16 +58,14 @@ int main() {
 }
 ```
 
-:::warning
-Full specializations are **not** templates themselves --- they are concrete definitions.
+:::warning Full specializations are **not** templates themselves --- they are concrete definitions.
 They must be declared in the same namespace as the primary template. If you fully specialize a
-Function template, you must specialize every overload that participates in overload resolution.
-:::
+Function template, you must specialize every overload that participates in overload resolution. :::
 
 ### Full Specialization of Function Templates
 
 Function templates can be fully specialized, but this is rarely recommended because overloading
- provides a better solution:
+provides a better solution:
 
 ```cpp
 #include <iostream>
@@ -223,17 +224,17 @@ int main() {
 The partial ordering algorithm [N4950 S13.7.5.5/2] works by **synthetic substitution**:
 
 1. Given two partial specializations $A$ and $B$ that both match a given set of template arguments,
- the compiler attempts to determine which is "more specialized."
+   the compiler attempts to determine which is "more specialized."
 
 2. To test whether $A$ is at least as specialized as $B$The compiler replaces each template
- parameter of $A$ with a **unique synthetic type** and checks whether the resulting pattern
- matches $B$. If it does, $A$ is at least as specialized as $B$.
+   parameter of $A$ with a **unique synthetic type** and checks whether the resulting pattern
+   matches $B$. If it does, $A$ is at least as specialized as $B$.
 
 3. The compiler then performs the same test in the other direction: replace each template parameter
- of $B$ with a unique synthetic type and check whether it matches $A$.
+   of $B$ with a unique synthetic type and check whether it matches $A$.
 
 4. If $A$ matches $B$ but $B$ does not match $A$Then $A$ is more specialized. If both match each
- other, they are ambiguous. If neither matches the other, neither is more specialized.
+   other, they are ambiguous. If neither matches the other, neither is more specialized.
 
 **Proof that `T* const` is more specialized than `T*`.** Replace the `T` in `T* const` with a unique
 Type $U_{unique}$. The result is `U_{unique}* const`. Now check: does this match the pattern `T*`?
@@ -290,9 +291,9 @@ struct Ambig<T* const> {};     // matches: T = const int
 
 **Proof of ambiguity.** Let $A$ = `const T*` and $B$ = `T* const`. Replace `T` in $A$ with a unique
 Type $U$: we get `const U*`. Does this match $B$ (`T* const`)? Yes, with $T = \mathrm{const {}
-U$. Now
-Replace `T` in $B$ with a unique type $V$: we get `V* const`. Does this match $A$ (`const T*`)? Yes,
-With $T = V \mathrm{ const{}$. Since $A$ matches $B$ **and** $B$ matches $A$Neither is strictly
+U$.
+Now Replace `T` in $B$ with a unique type $V$: we get `V* const`. Does this match $A$ (`const T*`)?
+Yes, With $T = V \mathrm{ const{}$. Since $A$ matches $B$ **and** $B$ matches $A$Neither is strictly
 More specialized. The program is ill-formed.
 
 The fix is to provide a disambiguating specialization that is strictly more specialized than both:
@@ -357,8 +358,7 @@ int main() {
 SFINAE applies differently in partial specializations than in function template overload resolution.
 In a partial specialization, the SFINAE check occurs when the compiler tries to match the
 Specialization pattern against the given template arguments. If the substitution of arguments into
-The specialization pattern fails, the specialization is not considered --- it is not an
-Error:
+The specialization pattern fails, the specialization is not considered --- it is not an Error:
 
 ```cpp
 #include <iostream>
@@ -728,11 +728,9 @@ int main() {
 }
 ```
 
-:::warning
-You cannot partially specialize a member template without partially specializing the
+:::warning You cannot partially specialize a member template without partially specializing the
 Enclosing class template. Member templates can only be **fully** specialized. If you need partial
-Specialization of a member, you must partially specialize the entire class.
-:::
+Specialization of a member, you must partially specialize the entire class. :::
 
 ## Common Errors with Ambiguity
 
@@ -813,34 +811,34 @@ int main() {
 ## Common Pitfalls
 
 1. **Partial specializations of function templates are not allowed.** You can only partially
- specialize class templates and variable templates. For functions, use overloading instead. This
- is a fundamental asymmetry in the language [N4950 S13.7.5/5].
+   specialize class templates and variable templates. For functions, use overloading instead. This
+   is a fundamental asymmetry in the language [N4950 S13.7.5/5].
 
 2. **Specialization must be visible at the point of use.** If you specialize a template in a
- different translation unit, the specialization may not be used. Prefer header-only templates or
- explicit instantiation. The compiler selects specializations from among those that are visible at
- the point of instantiation.
+   different translation unit, the specialization may not be used. Prefer header-only templates or
+   explicit instantiation. The compiler selects specializations from among those that are visible at
+   the point of instantiation.
 
 3. **Specialization does not inherit from the primary template.** Each specialization is a
- completely independent definition. If you want shared behavior, use a base class or CRTP. Members
- defined in the primary template are not automatically available in specializations.
+   completely independent definition. If you want shared behavior, use a base class or CRTP. Members
+   defined in the primary template are not automatically available in specializations.
 
 4. **`std::enable_if` in partial specializations.** Using `std::enable_if` as a template argument is
- the SFINAE-compatible way to conditionally specialize. C++20 `requires` clauses are preferred
- because they produce better error messages and compose more .
+   the SFINAE-compatible way to conditionally specialize. C++20 `requires` clauses are preferred
+   because they produce better error messages and compose more .
 
 5. **Ambiguity is a hard error.** If two partial specializations are equally specialized, the
- compiler does not pick one --- it emits an error. Always test with edge cases that exercise the
- boundaries of your specialization patterns.
+   compiler does not pick one --- it emits an error. Always test with edge cases that exercise the
+   boundaries of your specialization patterns.
 
 6. **Default template arguments and specialization interaction.** Default arguments on the primary
- template do not affect which partial specialization is selected. The partial specialization
- pattern must match the actual arguments (including defaults) for selection to occur.
+   template do not affect which partial specialization is selected. The partial specialization
+   pattern must match the actual arguments (including defaults) for selection to occur.
 
 7. **Member template specialization limitations.** Member templates of class templates can only be
- fully specialized, not partially specialized. To partially specialize a member, partially
- specialize the entire enclosing class template. This often leads to code duplication when only
- one member needs specialization.
+   fully specialized, not partially specialized. To partially specialize a member, partially
+   specialize the entire enclosing class template. This often leads to code duplication when only
+   one member needs specialization.
 
 ## See Also
 

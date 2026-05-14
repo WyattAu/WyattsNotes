@@ -1,6 +1,8 @@
 ---
 title: CMake Targets Properties and Generator Expressions
-description: "C++: CMake Targets Properties and Generator Expressions — The Target-Centric Model; 1. Defining Targets; 1. Executable: Compiles sources into a binary."
+description:
+  'C++: CMake Targets Properties and Generator Expressions — The Target-Centric Model; 1. Defining
+  Targets; 1. Executable: Compiles sources into a binary.'
 date: 2025-12-10T05:41:36.284Z
 tags:
   - cpp
@@ -8,6 +10,7 @@ categories:
   - cpp
 slug: cmake-targets-properties-generator-expressions
 ---
+
 Legacy CMake (versions pre-3.0) relied on global state variables and directory-scope commands (e.g.,
 `include_directories``add_definitions`). This approach prevents modularity and leaks compilation
 Flags across unrelated parts of a project.
@@ -42,11 +45,11 @@ add_library(MathHeaderOnly INTERFACE)
 The core mechanism of Modern CMake is the propagation of build requirements. When linking libraries,
 You must specify the scope of the dependency.
 
-| Scope | Definition | Use Case |
+| Scope         | Definition                                                                                | Use Case                                                                         |
 | :------------ | :---------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------- |
-| **PRIVATE** | **Build Requirement.** Used internally to build the target, but not exposed to consumers. | Implementation details (e.g., a specific math algorithm used inside a function). |
-| **INTERFACE** | **Usage Requirement.** Not used to build the target itself, but required by consumers. | Header-only libraries, or headers defining template interfaces. |
-| **PUBLIC** | **Both.** Used to build the target AND required by consumers. | Public headers included in the library's public headers. |
+| **PRIVATE**   | **Build Requirement.** Used internally to build the target, but not exposed to consumers. | Implementation details (e.g., a specific math algorithm used inside a function). |
+| **INTERFACE** | **Usage Requirement.** Not used to build the target itself, but required by consumers.    | Header-only libraries, or headers defining template interfaces.                  |
+| **PUBLIC**    | **Both.** Used to build the target AND required by consumers.                             | Public headers included in the library's public headers.                         |
 
 #### Implementation Example
 
@@ -239,12 +242,12 @@ target_link_libraries(App PRIVATE MyCompany::MyLib)
 ### Why ALIAS Matters
 
 1. **Encapsulation:** Consumers never need to know whether `MyLib` is static or shared. The
- `CMakeLists.txt` can change from `STATIC` to `SHARED` without modifying any consumer.
+   `CMakeLists.txt` can change from `STATIC` to `SHARED` without modifying any consumer.
 2. **Namespace convention:** Using `Namespace::Target` follows the same convention as `find_package`
- exported targets (e.g., `fmt::fmt``Boost::system`), providing a uniform interface.
+   exported targets (e.g., `fmt::fmt``Boost::system`), providing a uniform interface.
 3. **Subdirectory isolation:** If `MyLib` is defined in a subdirectory, targets outside that
- subdirectory cannot reference it directly (by name) unless an alias is created in the parent
- scope.
+   subdirectory cannot reference it directly (by name) unless an alias is created in the parent
+   scope.
 
 **Constraint:** ALIAS targets cannot be used in `target_link_libraries` with `INTERFACE` or
 `PRIVATE` visibility if the alias was created in a different directory scope. Always create the
@@ -452,9 +455,9 @@ The result:
 
 - `Engine` sees `FMT_HEADER_ONLY` when compiling its sources.
 - `App` sees `FMT_HEADER_ONLY` when compiling its sources (because `Engine` propagated it as
- PUBLIC).
+  PUBLIC).
 - If a consumer links `App`They do **not** see `FMT_HEADER_ONLY` (because `App` linked `Engine` as
- PRIVATE).
+  PRIVATE).
 
 ### PRIVATE vs. INTERFACE Dependencies for Implementation Details
 

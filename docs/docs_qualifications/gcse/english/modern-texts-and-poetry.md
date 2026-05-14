@@ -1,6 +1,8 @@
 ---
 title: Modern Texts and Poetry
-description: "GCSE English: Modern Texts and Poetry — 1. Modern Texts (Post-1914); 1.1 Modern Drama; 1.2 Modern Prose; An Inspector Calls."
+description:
+  'GCSE English: Modern Texts and Poetry — 1. Modern Texts (Post-1914); 1.1 Modern Drama; 1.2 Modern
+  Prose; An Inspector Calls.'
 date: 2026-04-22
 tags:
   - English
@@ -9,12 +11,11 @@ categories:
   - English
 slug: modern-texts-and-poetry
 ---
+
 ## Modern Texts and Poetry
 
-:::info
-Board Coverage AQA Paper 2 | Edexcel Paper 1 Component 2 (Modern Prose/Drama) and Paper 2
-(Poetry) | OCR Paper 2 | WJEC/Eduqas Paper 2
-:::
+:::info Board Coverage AQA Paper 2 | Edexcel Paper 1 Component 2 (Modern Prose/Drama) and Paper 2
+(Poetry) | OCR Paper 2 | WJEC/Eduqas Paper 2 :::
 
 ## 1. Modern Texts (Post-1914)
 
@@ -44,17 +45,17 @@ Exploitation of women; capitalism versus socialism; the tension between individu
 **Key dramatic devices:**
 
 - **The Inspector as a mouthpiece.** The Inspector articulates Priestley's socialist philosophy, but
- the play's ending complicates his authority: if he is not a real inspector, is his message still
- valid? The strongest responses will grapple with this ambiguity.
+  the play's ending complicates his authority: if he is not a real inspector, is his message still
+  valid? The strongest responses will grapple with this ambiguity.
 - **Dramatic irony.** Birling's speeches about the future ("the Titanic... Absolutely unsinkable";
- "there isn't a chance of war") create dramatic irony for the 1945 audience who know what happened
- in 1912 and after.
+  "there isn't a chance of war") create dramatic irony for the 1945 audience who know what happened
+  in 1912 and after.
 - **The structure of revelation.** Each family member is interrogated in turn, and each revelation
- deepens the audience's understanding of the Birlings' collective guilt. The structure is
- cumulative and inexorable.
+  deepens the audience's understanding of the Birlings' collective guilt. The structure is
+  cumulative and inexorable.
 - **Stage directions.** Priestley's stage directions are precise and loaded with symbolic meaning.
- The "pink and intimate" lighting at the beginning that becomes "brighter and harder" after the
- Inspector's arrival signals the shift from comfortable illusion to uncomfortable truth.
+  The "pink and intimate" lighting at the beginning that becomes "brighter and harder" after the
+  Inspector's arrival signals the shift from comfortable illusion to uncomfortable truth.
 
 **Blood Brothers** by Willy Russell (1983)
 
@@ -184,26 +185,26 @@ Paper 2 includes unseen poetry comparison.
 Form refers to the overall shape or type of the poem. The form of a poem is not arbitrary; it is a
 Choice that affects how the poem communicates its meaning.
 
-- **Sonnet.** A fourteen-line poem, in iambic pentameter, with a specific rhyme scheme.
- The Shakespearean sonnet has the pattern ababcdcdefefgg, ending with a **rhyming couplet** that
- often delivers a conclusive or summarising statement. The Petrarchan sonnet has the pattern
- abbaabbacdecde, with a **volta** (turn) between the octave (first eight lines) and the sestet
- (last six lines). The volta marks a shift in argument, tone, or perspective.
+- **Sonnet.** A fourteen-line poem, in iambic pentameter, with a specific rhyme scheme. The
+  Shakespearean sonnet has the pattern ababcdcdefefgg, ending with a **rhyming couplet** that often
+  delivers a conclusive or summarising statement. The Petrarchan sonnet has the pattern
+  abbaabbacdecde, with a **volta** (turn) between the octave (first eight lines) and the sestet
+  (last six lines). The volta marks a shift in argument, tone, or perspective.
 - **Ode.** A formal, often ceremonious lyric poem that addresses and celebrates a person, object, or
- idea. Keats's "Ode to a Nightingale" and Shelley's "Ode to the West Wind" are canonical examples;
- Owen's "Anthem for Doomed Youth" adapts the form to an anti-war purpose.
+  idea. Keats's "Ode to a Nightingale" and Shelley's "Ode to the West Wind" are canonical examples;
+  Owen's "Anthem for Doomed Youth" adapts the form to an anti-war purpose.
 - **Elegy.** A poem of mourning or lament. Tennyson's "In Memoriam A.H.H." and Gray's "Elegy Written
- in a Country Churchyard" are the most famous examples; Owen's war poems function as modern
- elegies.
+  in a Country Churchyard" are the most famous examples; Owen's war poems function as modern
+  elegies.
 - **Dramatic monologue.** A poem spoken by a single character to a silent audience, revealing the
- speaker's personality and situation through their own words. Browning's "My Last Duchess" is the
- archetypal example; Weir's "Poppies" and Duffy's "War Photographer" are modern instances.
+  speaker's personality and situation through their own words. Browning's "My Last Duchess" is the
+  archetypal example; Weir's "Poppies" and Duffy's "War Photographer" are modern instances.
 - **Free verse.** Poetry without a regular metre or rhyme scheme. Free verse does not mean formless:
- poets who write in free verse make deliberate choices about line length, stanza structure, rhythm,
- and repetition. The absence of conventional form is itself meaningful.
+  poets who write in free verse make deliberate choices about line length, stanza structure, rhythm,
+  and repetition. The absence of conventional form is itself meaningful.
 - **Ballad.** A narrative poem, traditionally composed in quatrains with an abcb rhyme scheme and
- alternating iambic tetrameter and trimeter. Ballads tell stories, often of love, death, or the
- supernatural, and frequently employ repetition and a refrain.
+  alternating iambic tetrameter and trimeter. Ballads tell stories, often of love, death, or the
+  supernatural, and frequently employ repetition and a refrain.
 
 ### 3.2 Structure
 
@@ -211,46 +212,46 @@ Structure refers to the internal organisation of the poem: how it is divided int
 Lines and stanzas relate to each other, and how the poem develops from beginning to end.
 
 - **Stanza structure.** The number of lines per stanza, the rhyme scheme within stanzas, and the
- pattern of stanza breaks all contribute to the poem's meaning. A regular stanza structure creates
- a sense of order and control; irregular or disrupted stanzas create a sense of instability or
- unpredictability.
+  pattern of stanza breaks all contribute to the poem's meaning. A regular stanza structure creates
+  a sense of order and control; irregular or disrupted stanzas create a sense of instability or
+  unpredictability.
 - **Line breaks.** Where a poet chooses to end a line affects the rhythm, the emphasis, and the
- meaning. A line break that comes in the middle of a syntactic unit creates **enjambment** (see
- below), which speeds up the reading and creates a sense of continuity between lines. An
- end-stopped line, where a line ends with a complete syntactic unit and punctuation, creates a
- pause and a sense of finality.
+  meaning. A line break that comes in the middle of a syntactic unit creates **enjambment** (see
+  below), which speeds up the reading and creates a sense of continuity between lines. An
+  end-stopped line, where a line ends with a complete syntactic unit and punctuation, creates a
+  pause and a sense of finality.
 - **Patterning and variation.** Regular patterns of rhyme, metre, or stanza structure that are
- disrupted or varied draw attention to the moment of disruption and signal a shift in meaning,
- tone, or perspective.
+  disrupted or varied draw attention to the moment of disruption and signal a shift in meaning,
+  tone, or perspective.
 
 ### 3.3 Imagery and Symbolism
 
 - **Simile.** A comparison using "like" or "as." Owen's description of the gas victim --
- "flound'ring like a man in fire or lime" -- creates a visceral image of suffering through
- comparison.
+  "flound'ring like a man in fire or lime" -- creates a visceral image of suffering through
+  comparison.
 - **Metaphor.** A comparison that states that one thing is another, without "like" or "as." Hughes's
- description of the hawk in "Hawk Roosting" -- "My feet are locked upon the rough bark" -- is
- metaphorical: the hawk's physical position becomes a symbol of power and permanence.
+  description of the hawk in "Hawk Roosting" -- "My feet are locked upon the rough bark" -- is
+  metaphorical: the hawk's physical position becomes a symbol of power and permanence.
 - **Personification.** The attribution of human qualities to non-human entities. Owen's "Anthem for
- Doomed Youth" personifies the weapons of war: "the monstrous anger of the guns" and "the
- stuttering rifles' rapid rattle."
+  Doomed Youth" personifies the weapons of war: "the monstrous anger of the guns" and "the
+  stuttering rifles' rapid rattle."
 - **Symbolism.** The use of an object, image, or action to represent a broader idea. In "Poppies" by
- Weir, the poppies symbolise both remembrance and the mother's grief; the dove symbolises peace;
- the songbird symbolises the son's innocence.
+  Weir, the poppies symbolise both remembrance and the mother's grief; the dove symbolises peace;
+  the songbird symbolises the son's innocence.
 - **Pathetic fallacy.** The attribution of human emotion to natural phenomena. This is a specific
- type of personification particularly common in 19th-century poetry and prose.
+  type of personification particularly common in 19th-century poetry and prose.
 
 ### 3.4 Sound Devices
 
 Sound devices create auditory effects that complement and reinforce the poem's meaning.
 
-| Device | Definition | Example |
+| Device           | Definition                                  | Example                                           |
 | ---------------- | ------------------------------------------- | ------------------------------------------------- |
-| **Alliteration** | Repetition of initial consonant sounds | "The **b**leak and **b**arren **b**attlefield" |
-| **Assonance** | Repetition of vowel sounds | "The m**oo**nlit l**oo**p of the road" |
-| **Consonance** | Repetition of consonant sounds within words | "The a**cc**i**d**e**nt** of war" |
-| **Sibilance** | Repetition of 's' or 'sh' sounds | "The **s**ilent **s**nake **s**lid **s**outhward" |
-| **Onomatopoeia** | Words that imitate the sound they describe | "Crash," "bang," "whisper," "thud" |
+| **Alliteration** | Repetition of initial consonant sounds      | "The **b**leak and **b**arren **b**attlefield"    |
+| **Assonance**    | Repetition of vowel sounds                  | "The m**oo**nlit l**oo**p of the road"            |
+| **Consonance**   | Repetition of consonant sounds within words | "The a**cc**i**d**e**nt** of war"                 |
+| **Sibilance**    | Repetition of 's' or 'sh' sounds            | "The **s**ilent **s**nake **s**lid **s**outhward" |
+| **Onomatopoeia** | Words that imitate the sound they describe  | "Crash," "bang," "whisper," "thud"                |
 
 ### 3.5 Rhythm and Metre
 
@@ -258,11 +259,11 @@ Rhythm is the pattern of stressed and unstressed syllables in a line of poetry. 
 Repetition of a specific rhythmic pattern.
 
 - **Iambic pentameter.** Five iambic feet per line (unstressed-stressed). The dominant metre of
- English poetry from Shakespeare to the present day.
+  English poetry from Shakespeare to the present day.
 - **Trochaic metre.** Stressed-unstressed syllable pattern. Creates a more driving, insistent rhythm
- than iambic metre. Blake's "The Tyger" ("Tyger Tyger, burning bright") is trochaic.
+  than iambic metre. Blake's "The Tyger" ("Tyger Tyger, burning bright") is trochaic.
 - **Irregular rhythm.** Many modern and contemporary poems deliberately disrupt regular metre to
- create effects of uncertainty, fragmentation, or natural speech.
+  create effects of uncertainty, fragmentation, or natural speech.
 
 ### 3.6 Rhyme Scheme
 
@@ -369,13 +370,13 @@ Structured approach.
 Before writing, identify the **points of comparison** between the poems. These might include:
 
 - **Similar treatment of a shared theme.** Both Owen's "Dulce et Decorum Est" and Sassoon's "Suicide
- in the Trenches" present war as destructive and dehumanising, but they do so through different
- techniques and from different perspectives.
+  in the Trenches" present war as destructive and dehumanising, but they do so through different
+  techniques and from different perspectives.
 - **Different treatment of a shared theme.** Two poems may address the same theme but reach
- different conclusions or evoke different responses. For example, two love poems might both explore
- the pain of separation but differ in their tone: one resigned, one defiant.
+  different conclusions or evoke different responses. For example, two love poems might both explore
+  the pain of separation but differ in their tone: one resigned, one defiant.
 - **Similar techniques used for different purposes.** Both poets might use enjambment, but one might
- use it to convey urgency while the other uses it to suggest emotional overflow.
+  use it to convey urgency while the other uses it to suggest emotional overflow.
 
 ### 5.2 Structuring the Comparative Essay
 
@@ -443,15 +444,15 @@ For the unseen poetry question, time management is critical:
 ### 6.3 Common Pitfalls in Unseen Poetry
 
 - **Panicking about not understanding the poem.** Not every poem yields its full meaning on a first
- reading. Focus on what you can analyse: the language, the imagery, the form. Even a partial
- understanding, well-supported with evidence, will earn marks.
+  reading. Focus on what you can analyse: the language, the imagery, the form. Even a partial
+  understanding, well-supported with evidence, will earn marks.
 - **Writing about the poem without quoting from it.** Every analytical point must be supported by a
- quotation, even (especially) in an unseen response.
+  quotation, even (especially) in an unseen response.
 - **Ignoring form and structure.** It is tempting to focus on language and imagery because they are
- more immediately accessible, but form and structure are equally important and often carry
- significant meaning.
+  more immediately accessible, but form and structure are equally important and often carry
+  significant meaning.
 - **Failing to address the second poem in a comparison.** If the question asks for comparison, both
- poems must be discussed. A response that addresses only one poem cannot earn marks for comparison.
+  poems must be discussed. A response that addresses only one poem cannot earn marks for comparison.
 
 ## 7. Key Themes in Modern Poetry
 
@@ -537,22 +538,22 @@ Carries 10 marks.
 ## 9. Common Pitfalls
 
 - **Failing to compare.** If the question asks for comparison, both poems must be discussed in an
- integrated manner. A response that writes about one poem and then the other, without drawing
- connections, will lose marks for comparison.
+  integrated manner. A response that writes about one poem and then the other, without drawing
+  connections, will lose marks for comparison.
 - **Quoting too much and analysing too little.** A response that consists mainly of quotations with
- minimal analysis will not score highly. Every quotation must be followed by analysis that explains
- its effect and links it to the poem's themes.
+  minimal analysis will not score highly. Every quotation must be followed by analysis that explains
+  its effect and links it to the poem's themes.
 - **Identifying techniques without explaining effects.** "The poet uses a metaphor" is a starting
- point, not a conclusion. The response must explain what the metaphor is, how it works, and what
- meaning or effect it produces.
+  point, not a conclusion. The response must explain what the metaphor is, how it works, and what
+  meaning or effect it produces.
 - **Ignoring the poem's form and structure.** Language and imagery are important, but form and
- structure are equally significant and must be addressed.
+  structure are equally significant and must be addressed.
 - **Writing in generalities.** "The poet uses imagery to create a picture in the reader's mind" is a
- truism that tells the examiner nothing. Be specific: identify the image, quote it, and explain its
- precise effect.
-- **Not managing time effectively.** The poetry section is time-pressured. Students must
- allocate their time carefully and avoid spending too long on the anthology question at the expense
- of unseen poetry.
+  truism that tells the examiner nothing. Be specific: identify the image, quote it, and explain its
+  precise effect.
+- **Not managing time effectively.** The poetry section is time-pressured. Students must allocate
+  their time carefully and avoid spending too long on the anthology question at the expense of
+  unseen poetry.
 
 ## Summary
 

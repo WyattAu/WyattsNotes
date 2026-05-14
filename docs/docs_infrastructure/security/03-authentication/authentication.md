@@ -1,10 +1,13 @@
 ---
 id: authentication
 title: Authentication and Authorization
-description: "Authentication and Authorization — Authentication vs Authorization; Password Storage; How Not to Store Passwords; How to Store Passwords."
+description:
+  'Authentication and Authorization — Authentication vs Authorization; Password Storage; How Not to
+  Store Passwords; How to Store Passwords.'
 slug: authentication
 sidebar_position: 4
 ---
+
 ## Authentication vs Authorization
 
 **Authentication (AuthN)** answers "who are you?" — it verifies identity.
@@ -15,27 +18,27 @@ These are distinct concerns that are often conflated. A user can be authenticate
 Verified) but not authorized (they lack permission for a specific action). Conversely, a system
 Might authorize a request without authentication (anonymous access).
 
-| Aspect | Authentication | Authorization |
+| Aspect       | Authentication               | Authorization               |
 | ------------ | ---------------------------- | --------------------------- |
-| Question | Who are you? | What are you allowed to do? |
-| Mechanism | Passwords, MFA, certificates | RBAC, ABAC, ACLs, policies |
-| Failure mode | Authentication failed | Access denied / Forbidden |
-| HTTP status | 401 Unauthorized | 403 Forbidden |
-| Frequency | Once per session () | Every request |
-| Revocation | Invalidate session/token | Update permissions/policies |
+| Question     | Who are you?                 | What are you allowed to do? |
+| Mechanism    | Passwords, MFA, certificates | RBAC, ABAC, ACLs, policies  |
+| Failure mode | Authentication failed        | Access denied / Forbidden   |
+| HTTP status  | 401 Unauthorized             | 403 Forbidden               |
+| Frequency    | Once per session ()          | Every request               |
+| Revocation   | Invalidate session/token     | Update permissions/policies |
 
 ## Password Storage
 
 ### How Not to Store Passwords
 
-| Method | Why It Fails |
+| Method               | Why It Fails                                     |
 | -------------------- | ------------------------------------------------ |
-| Plaintext | Immediate compromise on any data breach |
-| MD5 | Fast, 128-bit output, no salt, broken |
-| SHA-1 | Fast, 160-bit output, collision broken |
-| SHA-256 without salt | Fast, no salt, vulnerable to rainbow tables |
-| Base64 encoding | Not hashing at all — encoding is not encryption |
-| Custom encryption | Key management problem shifts the attack surface |
+| Plaintext            | Immediate compromise on any data breach          |
+| MD5                  | Fast, 128-bit output, no salt, broken            |
+| SHA-1                | Fast, 160-bit output, collision broken           |
+| SHA-256 without salt | Fast, no salt, vulnerable to rainbow tables      |
+| Base64 encoding      | Not hashing at all — encoding is not encryption  |
+| Custom encryption    | Key management problem shifts the attack surface |
 
 ### How to Store Passwords
 
@@ -109,7 +112,7 @@ They contradict many traditional policies.
 
 - Force periodic password rotation (leads to predictable patterns: `Password1!``Password2!`...)
 - Require composition rules (uppercase + lowercase + digit + special character — users just
- capitalize the first letter and add `1!`)
+  capitalize the first letter and add `1!`)
 - Require passwords to be changed after a breach unless compromise is confirmed
 - Use knowledge-based authentication (security questions are guessable)
 - Store password hints
@@ -140,12 +143,12 @@ def check_pwned_password(password):
 
 MFA requires two or more independent factors from different categories:
 
-| Factor Category | Examples | Security Level |
+| Factor Category | Examples                              | Security Level         |
 | --------------- | ------------------------------------- | ---------------------- |
-| Knowledge | Passwords, PINs, security questions | Low (phishable) |
-| Possession | TOTP apps, hardware keys, phone (SMS) | Medium (varies) |
-| Inherence | Biometrics (fingerprint, face, iris) | Medium (not revocable) |
-| Location | IP address, geolocation | Low (spoofable) |
+| Knowledge       | Passwords, PINs, security questions   | Low (phishable)        |
+| Possession      | TOTP apps, hardware keys, phone (SMS) | Medium (varies)        |
+| Inherence       | Biometrics (fingerprint, face, iris)  | Medium (not revocable) |
+| Location        | IP address, geolocation               | Low (spoofable)        |
 
 ### TOTP (Time-based One-Time Password)
 
@@ -158,12 +161,12 @@ $$
 
 Where $K$ is the shared secret and $T = \lfloor \mathrm{current\_time{} / 30 \rfloor$.
 
-| Property | Value |
+| Property      | Value                                  |
 | ------------- | -------------------------------------- |
-| Time step | 30 seconds |
-| Code length | 6 digits (default) |
-| Shared secret | 160-bit (Base32) |
-| Hash | HMAC-SHA-1 (default), SHA-256, SHA-512 |
+| Time step     | 30 seconds                             |
+| Code length   | 6 digits (default)                     |
+| Shared secret | 160-bit (Base32)                       |
+| Hash          | HMAC-SHA-1 (default), SHA-256, SHA-512 |
 
 **Limitations**: TOTP codes are phishable. An attacker can proxy the login page and forward the TOTP
 Code to the real service in real time. TOTP is not a replacement for phishing-resistant MFA.
@@ -190,20 +193,20 @@ sequenceDiagram
 Key properties:
 
 - **Phishing-resistant**: The authenticator binds to the relying party (origin), so a phishing site
- cannot replay the credential.
+  cannot replay the credential.
 - **Public-key based**: The server stores a public key, not a shared secret. Compromising the server
- does not allow impersonation.
+  does not allow impersonation.
 - **Hardware-bound**: Private key never leaves the authenticator (YubiKey, Touch ID, Windows Hello).
 - **Multi-device**: Passkeys (synced WebAuthn credentials) allow cloud-synced FIDO2 credentials.
 
 ### Hardware Security Keys
 
-| Key Model | Protocol Support | Connector | Price (approx.) |
+| Key Model   | Protocol Support     | Connector    | Price (approx.) |
 | ----------- | -------------------- | ------------ | --------------- |
-| YubiKey 5 | FIDO2, U2F, OTP, PIV | USB-A/C, NFC | USD 45-55 |
-| YubiKey Bio | FIDO2 (biometric) | USB-A/C | USD 80 |
-| Titan Key | FIDO2, U2F | USB-A/C, NFC | USD 30-40 |
-| SoloKeys | FIDO2, U2F | USB-A/C | USD 25-50 |
+| YubiKey 5   | FIDO2, U2F, OTP, PIV | USB-A/C, NFC | USD 45-55       |
+| YubiKey Bio | FIDO2 (biometric)    | USB-A/C      | USD 80          |
+| Titan Key   | FIDO2, U2F           | USB-A/C, NFC | USD 30-40       |
+| SoloKeys    | FIDO2, U2F           | USB-A/C      | USD 25-50       |
 
 ### SMS-based 2FA
 
@@ -223,15 +226,15 @@ Application to access their resources without sharing their credentials.
 
 ### Core Concepts
 
-| Term | Definition |
+| Term                 | Definition                                             |
 | -------------------- | ------------------------------------------------------ |
-| Resource Owner | The user who owns the data (e.g., your Google account) |
-| Client | The application requesting access |
-| Authorization Server | Issues access tokens after user consent |
-| Resource Server | Hosts the protected resources (API) |
-| Access Token | Credential used to access protected resources |
-| Refresh Token | Long-lived credential used to obtain new access tokens |
-| Scope | Defines the level of access requested |
+| Resource Owner       | The user who owns the data (e.g., your Google account) |
+| Client               | The application requesting access                      |
+| Authorization Server | Issues access tokens after user consent                |
+| Resource Server      | Hosts the protected resources (API)                    |
+| Access Token         | Credential used to access protected resources          |
+| Refresh Token        | Long-lived credential used to obtain new access tokens |
+| Scope                | Defines the level of access requested                  |
 
 ### Authorization Code Flow (with PKCE)
 
@@ -255,9 +258,9 @@ sequenceDiagram
 ```
 
 **PKCE (Proof Key for Code Exchange, RFC 7636)** prevents authorization code interception attacks.
-The client generates a random `code_verifier`Computes `code_challenge = SHA256(code_verifier)`
-And sends the challenge in the authorization request. The verifier is sent with the token request.
-Even if the authorization code is intercepted, the attacker cannot exchange it without the verifier.
+The client generates a random `code_verifier`Computes `code_challenge = SHA256(code_verifier)` And
+sends the challenge in the authorization request. The verifier is sent with the token request. Even
+if the authorization code is intercepted, the attacker cannot exchange it without the verifier.
 
 ```python
 import hashlib
@@ -316,11 +319,11 @@ An ID token is a JWT that contains identity claims about the user:
 
 ### Token Types
 
-| Token | Format | Purpose | Audience |
+| Token         | Format        | Purpose                                  | Audience             |
 | ------------- | ------------- | ---------------------------------------- | -------------------- |
-| ID Token | JWT | Authenticate the user to the client | Client |
-| Access Token | JWT or opaque | Authorize API access | Resource Server |
-| Refresh Token | Opaque | Obtain new access tokens without re-auth | Authorization Server |
+| ID Token      | JWT           | Authenticate the user to the client      | Client               |
+| Access Token  | JWT or opaque | Authorize API access                     | Resource Server      |
+| Refresh Token | Opaque        | Obtain new access tokens without re-auth | Authorization Server |
 
 ### Validation Requirements
 
@@ -354,33 +357,33 @@ Scenarios.
 
 ### SAML Components
 
-| Component | Role |
+| Component               | Role                                                |
 | ----------------------- | --------------------------------------------------- |
-| Service Provider (SP) | The application requesting authentication |
-| Identity Provider (IdP) | The service that authenticates users |
-| Assertion | XML statement about the user (identity, attributes) |
-| SAML Response | XML message containing the assertion |
+| Service Provider (SP)   | The application requesting authentication           |
+| Identity Provider (IdP) | The service that authenticates users                |
+| Assertion               | XML statement about the user (identity, attributes) |
+| SAML Response           | XML message containing the assertion                |
 
 ### SAML vs OIDC
 
-| Aspect | SAML 2.0 | OIDC |
+| Aspect          | SAML 2.0                       | OIDC                     |
 | --------------- | ------------------------------ | ------------------------ |
-| Format | XML | JSON (JWT) |
-| Primary use | Enterprise SSO | Web and mobile apps |
-| Complexity | High (XML namespaces, signing) | Lower |
-| Browser support | Redirect/POST bindings | Simple redirect |
-| Token format | SAML assertions (XML) | JWT |
-| Adoption | Enterprise, legacy systems | Modern web, cloud-native |
+| Format          | XML                            | JSON (JWT)               |
+| Primary use     | Enterprise SSO                 | Web and mobile apps      |
+| Complexity      | High (XML namespaces, signing) | Lower                    |
+| Browser support | Redirect/POST bindings         | Simple redirect          |
+| Token format    | SAML assertions (XML)          | JWT                      |
+| Adoption        | Enterprise, legacy systems     | Modern web, cloud-native |
 
 ### SAML Security Considerations
 
 - **XML Signature Wrapping**: An attacker can move the signature to a different element within the
- XML, creating a validly-signed document with different content. Use a SAML library that validates
- signature reference URIs.
+  XML, creating a validly-signed document with different content. Use a SAML library that validates
+  signature reference URIs.
 - **XXE (XML External Entity)**: SAML messages are XML, so they are vulnerable to XXE attacks.
- Disable external entity processing.
+  Disable external entity processing.
 - **Replay attacks**: Validate the `NotOnOrAfter` and `InResponseTo` fields. Maintain a replay
- cache.
+  cache.
 
 ## JWT (JSON Web Tokens)
 
@@ -425,25 +428,25 @@ RSASHA256(
 
 ### Registered Claims
 
-| Claim | Purpose | Required |
+| Claim | Purpose                       | Required    |
 | ----- | ----------------------------- | ----------- |
-| `iss` | Issuer | Recommended |
-| `sub` | Subject (user identifier) | Recommended |
+| `iss` | Issuer                        | Recommended |
+| `sub` | Subject (user identifier)     | Recommended |
 | `aud` | Audience (intended recipient) | Recommended |
-| `exp` | Expiration time | Recommended |
-| `iat` | Issued at | Optional |
-| `nbf` | Not before | Optional |
-| `jti` | JWT ID (unique identifier) | Optional |
+| `exp` | Expiration time               | Recommended |
+| `iat` | Issued at                     | Optional    |
+| `nbf` | Not before                    | Optional    |
+| `jti` | JWT ID (unique identifier)    | Optional    |
 
 ### Signing Algorithms
 
-| Algorithm | Type | Security Notes |
+| Algorithm | Type       | Security Notes                                    |
 | --------- | ---------- | ------------------------------------------------- |
-| HS256 | Symmetric | Shared secret — both parties must protect the key |
-| RS256 | Asymmetric | RSA with SHA-256 — widely supported |
-| ES256 | Asymmetric | ECDSA with P-256 — smaller signatures |
-| EdDSA | Asymmetric | Ed25519 — modern, recommended for new systems |
-| none | None | **Insecure** — must be rejected |
+| HS256     | Symmetric  | Shared secret — both parties must protect the key |
+| RS256     | Asymmetric | RSA with SHA-256 — widely supported               |
+| ES256     | Asymmetric | ECDSA with P-256 — smaller signatures             |
+| EdDSA     | Asymmetric | Ed25519 — modern, recommended for new systems     |
+| none      | None       | **Insecure** — must be rejected                   |
 
 ### JWT Validation Checklist
 
@@ -469,7 +472,7 @@ Algorithm when validating JWTs, and never accept `none`.
 - **Short expiry**: Access tokens should expire in 15-60 minutes
 - **Use refresh tokens**: Long-lived access tokens are a liability
 - **Do not store sensitive data in JWT**: The payload is Base64-encoded, not encrypted (unless using
- JWE)
+  JWE)
 - **Rotate refresh tokens**: Issue a new refresh token on each use, invalidate old ones
 - **Token binding**: Bind tokens to the client (IP, user-agent, or better, a certificate)
 
@@ -477,15 +480,15 @@ Algorithm when validating JWTs, and never accept `none`.
 
 ### Cookies vs Tokens
 
-| Aspect | Server-Side Sessions (Cookies) | Token-Based (JWT) |
+| Aspect         | Server-Side Sessions (Cookies) | Token-Based (JWT)                   |
 | -------------- | ------------------------------ | ----------------------------------- |
-| State | Server-side session store | Stateless (state in token) |
-| Scalability | Requires shared session store | scalable |
-| Revocation | Delete session from store | Short expiry + blacklist |
-| Size | Small (session ID in cookie) | Larger (JWT in cookie/localStorage) |
-| CSRF | Vulnerable (cookies auto-sent) | Not vulnerable (manual send) |
-| XSS | Token theft risk | Token theft risk |
-| Mobile support | Complex (cookie management) | Simpler |
+| State          | Server-side session store      | Stateless (state in token)          |
+| Scalability    | Requires shared session store  | scalable                            |
+| Revocation     | Delete session from store      | Short expiry + blacklist            |
+| Size           | Small (session ID in cookie)   | Larger (JWT in cookie/localStorage) |
+| CSRF           | Vulnerable (cookies auto-sent) | Not vulnerable (manual send)        |
+| XSS            | Token theft risk               | Token theft risk                    |
+| Mobile support | Complex (cookie management)    | Simpler                             |
 
 ### Secure Cookie Attributes
 
@@ -493,22 +496,22 @@ Algorithm when validating JWTs, and never accept `none`.
 Set-Cookie: session_id=abc123; Secure; HttpOnly; SameSite=Strict; Path=/; Max-Age=3600; Domain=.example.com
 ```
 
-| Attribute | Purpose |
-| ---------- | -------------------------------------------------------------- |
-| `Secure` | Cookie sent only over HTTPS |
-| `HttpOnly` | Cookie not accessible to JavaScript (prevents XSS theft) |
+| Attribute  | Purpose                                                    |
+| ---------- | ---------------------------------------------------------- |
+| `Secure`   | Cookie sent only over HTTPS                                |
+| `HttpOnly` | Cookie not accessible to JavaScript (prevents XSS theft)   |
 | `SameSite` | Controls cross-site request behavior (`Strict``Lax``None`) |
-| `Path` | Limits cookie to specific path |
-| `Domain` | Limits cookie to specific domain and subdomains |
-| `Max-Age` | Cookie expiration in seconds |
+| `Path`     | Limits cookie to specific path                             |
+| `Domain`   | Limits cookie to specific domain and subdomains            |
+| `Max-Age`  | Cookie expiration in seconds                               |
 
 ### SameSite Attribute
 
-| Value | Behavior | Use Case |
+| Value    | Behavior                                                               | Use Case                                       |
 | -------- | ---------------------------------------------------------------------- | ---------------------------------------------- |
-| `Strict` | Cookie not sent on cross-site requests at all | Banking, internal tools |
-| `Lax` | Cookie sent on top-level navigations (GET), not on cross-site POST/PUT | Most applications (default in modern browsers) |
-| `None` | Cookie sent on all cross-site requests (requires `Secure`) | Third-party integrations |
+| `Strict` | Cookie not sent on cross-site requests at all                          | Banking, internal tools                        |
+| `Lax`    | Cookie sent on top-level navigations (GET), not on cross-site POST/PUT | Most applications (default in modern browsers) |
+| `None`   | Cookie sent on all cross-site requests (requires `Secure`)             | Third-party integrations                       |
 
 ## RBAC vs ABAC
 
@@ -573,12 +576,12 @@ permit(
 
 **Attributes used in evaluation:**
 
-| Attribute Source | Examples |
+| Attribute Source | Examples                                 |
 | ---------------- | ---------------------------------------- |
-| Subject | Department, clearance level, location |
-| Resource | Classification, owner, creation date |
-| Action | Type (read/write/delete), time of day |
-| Environment | IP address, device posture, threat level |
+| Subject          | Department, clearance level, location    |
+| Resource         | Classification, owner, creation date     |
+| Action           | Type (read/write/delete), time of day    |
+| Environment      | IP address, device posture, threat level |
 
 **Advantages**: Fine-grained, context-aware, reduces role explosion. Well-suited for complex,
 Dynamic environments (cloud, microservices).
@@ -595,12 +598,12 @@ Fine-grained decisions (attribute checks within a role).
 
 ### Best Practices by Client Type
 
-| Client Type | Storage Method | Risks |
+| Client Type       | Storage Method                               | Risks                            |
 | ----------------- | -------------------------------------------- | -------------------------------- |
-| Server-side (web) | HttpOnly, Secure, SameSite cookie | Lowest risk — JS cannot access |
-| SPA (browser) | In-memory only, or HttpOnly cookie | XSS exfiltrates in-memory tokens |
-| Mobile (native) | OS keychain (iOS Keychain, Android Keystore) | Malware, jailbroken devices |
-| Desktop (native) | OS credential store | Similar to mobile |
+| Server-side (web) | HttpOnly, Secure, SameSite cookie            | Lowest risk — JS cannot access   |
+| SPA (browser)     | In-memory only, or HttpOnly cookie           | XSS exfiltrates in-memory tokens |
+| Mobile (native)   | OS keychain (iOS Keychain, Android Keystore) | Malware, jailbroken devices      |
+| Desktop (native)  | OS credential store                          | Similar to mobile                |
 
 ### Token Storage Anti-Patterns
 
@@ -628,8 +631,8 @@ Bcrypt, or scrypt.
 ### Pitfall 2: Weak Password Policies
 
 Enforcing complexity rules (uppercase, lowercase, digit, special character) without enforcing length
-Produces passwords like `P@ssw0rd1` that are guessable. Focus on minimum length and
-Breached password checking instead.
+Produces passwords like `P@ssw0rd1` that are guessable. Focus on minimum length and Breached
+password checking instead.
 
 ### Pitfall 3: JWT in localStorage
 
@@ -720,37 +723,37 @@ graph TD
 
 Microservices must authenticate each other. Common patterns:
 
-| Pattern | Mechanism | Complexity | Revocation |
+| Pattern              | Mechanism                          | Complexity | Revocation               |
 | -------------------- | ---------------------------------- | ---------- | ------------------------ |
-| Shared secret | API key, HMAC | Low | Rotation required |
-| Mutual TLS (mTLS) | Client certificates | Medium | Certificate revocation |
-| JWT (signed) | Service signs token for downstream | Medium | Short expiry + blacklist |
-| Service mesh (Istio) | Automatic mTLS via sidecar proxy | High | Config-driven |
-| Broker pattern | Central auth broker issues tokens | Medium | Broker-managed |
+| Shared secret        | API key, HMAC                      | Low        | Rotation required        |
+| Mutual TLS (mTLS)    | Client certificates                | Medium     | Certificate revocation   |
+| JWT (signed)         | Service signs token for downstream | Medium     | Short expiry + blacklist |
+| Service mesh (Istio) | Automatic mTLS via sidecar proxy   | High       | Config-driven            |
+| Broker pattern       | Central auth broker issues tokens  | Medium     | Broker-managed           |
 
 ### Credential Rotation Strategy
 
 All credentials should be rotated regularly. The strategy depends on the credential type:
 
-| Credential Type | Rotation Frequency | Automation Approach |
+| Credential Type        | Rotation Frequency                     | Automation Approach                |
 | ---------------------- | -------------------------------------- | ---------------------------------- |
-| Database passwords | 90 days | Vault dynamic secrets |
-| API keys | 90 days | Automated rotation via CI/CD |
-| TLS certificates | 90 days (max 1 year) | ACME (Let's Encrypt), cert-manager |
-| SSH keys | 90 days | Certificate authority (SSH CA) |
-| Service account tokens | 24 hours | Short-lived tokens from IdP |
-| Encryption keys | Annual (or on suspicion of compromise) | Key management service (KMS) |
+| Database passwords     | 90 days                                | Vault dynamic secrets              |
+| API keys               | 90 days                                | Automated rotation via CI/CD       |
+| TLS certificates       | 90 days (max 1 year)                   | ACME (Let's Encrypt), cert-manager |
+| SSH keys               | 90 days                                | Certificate authority (SSH CA)     |
+| Service account tokens | 24 hours                               | Short-lived tokens from IdP        |
+| Encryption keys        | Annual (or on suspicion of compromise) | Key management service (KMS)       |
 
 ### Passwordless Authentication
 
 Passwordless authentication eliminates passwords entirely, replacing them with stronger factors:
 
-| Method | How It Works | Security Level |
+| Method            | How It Works                               | Security Level |
 | ----------------- | ------------------------------------------ | -------------- |
-| FIDO2 / Passkeys | Biometric or PIN + public-key cryptography | Highest |
-| Magic links | One-time login link sent to verified email | Medium |
-| Push notification | Mobile app notification with approve/deny | High |
-| SMS OTP | One-time code via SMS (deprecated) | Low |
+| FIDO2 / Passkeys  | Biometric or PIN + public-key cryptography | Highest        |
+| Magic links       | One-time login link sent to verified email | Medium         |
+| Push notification | Mobile app notification with approve/deny  | High           |
+| SMS OTP           | One-time code via SMS (deprecated)         | Low            |
 
 Passkeys (synced FIDO2 credentials) are the most promising approach for consumer applications. They
 Use public-key cryptography stored in the device's secure enclave, synced across devices via cloud
@@ -799,12 +802,12 @@ Identity federation allows users authenticated by one IdP to access resources in
 Organization without creating a new account. This is common in B2B scenarios, academic institutions,
 And government agencies.
 
-| Federation Protocol | Use Case | Example |
+| Federation Protocol | Use Case               | Example                                   |
 | ------------------- | ---------------------- | ----------------------------------------- |
-| SAML 2.0 | Enterprise B2B | Company A employees access Company B app |
-| OIDC Federation | Cloud-to-cloud | AWS accepts Google Workspace identities |
-| InCommon | Academic/research | University single sign-on across services |
-| eduGAIN | Research and education | Cross-border federated access |
+| SAML 2.0            | Enterprise B2B         | Company A employees access Company B app  |
+| OIDC Federation     | Cloud-to-cloud         | AWS accepts Google Workspace identities   |
+| InCommon            | Academic/research      | University single sign-on across services |
+| eduGAIN             | Research and education | Cross-border federated access             |
 
 :::info
 

@@ -1,10 +1,13 @@
 ---
 id: systemd
 title: Systemd
-description: "Systemd — Design Principles; Unit Types; Finding Unit Files; Show the search path with worked examples and exam-style questions."
+description:
+  'Systemd — Design Principles; Unit Types; Finding Unit Files; Show the search path with worked
+  examples and exam-style questions.'
 slug: systemd
 sidebar_position: 1
 ---
+
 ## Systemd Architecture
 
 Systemd is a system and service manager for Linux, serving as the init system (PID 1) and providing
@@ -31,13 +34,13 @@ graph TD
 ### Design Principles
 
 - **Socket activation**: Services are started on-demand when a connection arrives on their socket,
- reducing boot time and resource usage.
+  reducing boot time and resource usage.
 - **Parallel startup**: Dependencies are resolved, and services without dependencies start in
- parallel.
+  parallel.
 - **Unit-based configuration**: Everything managed by systemd is represented as a "unit" with a
- declarative configuration file.
+  declarative configuration file.
 - **Cgroup tracking**: Each service runs in its own cgroup, making resource management and cleanup
- reliable.
+  reliable.
 - **Journal**: Structured logging with indexed, searchable log data.
 
 ## Unit Types
@@ -45,19 +48,19 @@ graph TD
 A **unit** is the fundamental object that systemd manages. Each unit has a configuration file and a
 Type that determines its behavior.
 
-| Unit Type | File Extension | Description |
+| Unit Type     | File Extension | Description                                |
 | ------------- | -------------- | ------------------------------------------ |
-| **Service** | `.service` | A system service (daemon or one-shot) |
-| **Target** | `.target` | A synchronization point for grouping units |
-| **Timer** | `.timer` | A timer for activating other units |
-| **Socket** | `.socket` | A socket for socket activation |
-| **Mount** | `.mount` | A file system mount point |
-| **Automount** | `.automount` | An automount point (mount on access) |
-| **Path** | `.path` | A path for path-based activation |
-| **Slice** | `.slice` | A cgroup slice for resource management |
-| **Scope** | `.scope` | An externally created process group |
-| **Swap** | `.swap` | A swap device |
-| **Device** | `.device` | A kernel device |
+| **Service**   | `.service`     | A system service (daemon or one-shot)      |
+| **Target**    | `.target`      | A synchronization point for grouping units |
+| **Timer**     | `.timer`       | A timer for activating other units         |
+| **Socket**    | `.socket`      | A socket for socket activation             |
+| **Mount**     | `.mount`       | A file system mount point                  |
+| **Automount** | `.automount`   | An automount point (mount on access)       |
+| **Path**      | `.path`        | A path for path-based activation           |
+| **Slice**     | `.slice`       | A cgroup slice for resource management     |
+| **Scope**     | `.scope`       | An externally created process group        |
+| **Swap**      | `.swap`        | A swap device                              |
+| **Device**    | `.device`      | A kernel device                            |
 
 ### Finding Unit Files
 
@@ -154,30 +157,30 @@ WantedBy=multi-user.target
 
 ### `[Unit]` Section
 
-| Directive | Description |
+| Directive       | Description                                                 |
 | --------------- | ----------------------------------------------------------- |
-| `Description` | Human-readable description |
-| `Documentation` | URL to documentation |
-| `After=` | Start after the listed units (ordering, not dependency) |
-| `Before=` | Start before the listed units |
-| `Requires=` | Hard dependency — if the listed unit fails, this unit fails |
-| `Wants=` | Soft dependency — start if available, continue if not |
-| `Requisite=` | Hard dependency — fail immediately if not already running |
-| `Conflicts=` | If the listed unit is running, this unit cannot start |
-| `PartOf=` | When the listed unit is stopped/restarted, this unit is too |
+| `Description`   | Human-readable description                                  |
+| `Documentation` | URL to documentation                                        |
+| `After=`        | Start after the listed units (ordering, not dependency)     |
+| `Before=`       | Start before the listed units                               |
+| `Requires=`     | Hard dependency — if the listed unit fails, this unit fails |
+| `Wants=`        | Soft dependency — start if available, continue if not       |
+| `Requisite=`    | Hard dependency — fail immediately if not already running   |
+| `Conflicts=`    | If the listed unit is running, this unit cannot start       |
+| `PartOf=`       | When the listed unit is stopped/restarted, this unit is too |
 
 ### `[Service]` Section — Service Type
 
-| Type | Behavior | Use Case |
+| Type               | Behavior                                                                              | Use Case                      |
 | ------------------ | ------------------------------------------------------------------------------------- | ----------------------------- |
-| `simple` (default) | `ExecStart` is the main process. Systemd considers it started immediately. | Most daemons |
-| `exec` | `ExecStart` is the main process. Systemd waits for it to fork and exit. | Daemons that double-fork |
-| `forking` | `ExecStart` forks a child and the parent exits. Systemd waits for the parent to exit. | Traditional daemons |
-| `oneshot` | `ExecStart` runs and exits. Systemd waits for it to finish. | Scripts, initialization tasks |
-| `dbus` | Service acquires a name on D-Bus. Systemd considers it started when the name appears. | D-Bus services |
-| `notify` | Service sends `sd_notify()` when ready. Systemd waits for the notification. | Modern daemons with sd_notify |
-| `notify-reload` | Like `notify`But supports `sd_notify(RELOADING=1)` for reload. | Daemons with reload support |
-| `idle` | Like `simple`But started after all active jobs are dispatched. | Avoids blocking boot output |
+| `simple` (default) | `ExecStart` is the main process. Systemd considers it started immediately.            | Most daemons                  |
+| `exec`             | `ExecStart` is the main process. Systemd waits for it to fork and exit.               | Daemons that double-fork      |
+| `forking`          | `ExecStart` forks a child and the parent exits. Systemd waits for the parent to exit. | Traditional daemons           |
+| `oneshot`          | `ExecStart` runs and exits. Systemd waits for it to finish.                           | Scripts, initialization tasks |
+| `dbus`             | Service acquires a name on D-Bus. Systemd considers it started when the name appears. | D-Bus services                |
+| `notify`           | Service sends `sd_notify()` when ready. Systemd waits for the notification.           | Modern daemons with sd_notify |
+| `notify-reload`    | Like `notify`But supports `sd_notify(RELOADING=1)` for reload.                        | Daemons with reload support   |
+| `idle`             | Like `simple`But started after all active jobs are dispatched.                        | Avoids blocking boot output   |
 
 ### `[Service]` Section — Lifecycle Directives
 
@@ -212,15 +215,15 @@ EnvironmentFile=-/etc/myapp/env.local    # - means file is optional
 
 ### `[Service]` Section — Restart Policy
 
-| Directive | Behavior |
+| Directive             | Behavior                                             |
 | --------------------- | ---------------------------------------------------- |
-| `Restart=no` | Never restart (default) |
-| `Restart=on-success` | Restart if the process exits cleanly (exit code 0) |
-| `Restart=on-failure` | Restart if the process exits with non-zero or signal |
-| `Restart=on-abnormal` | Restart on signal, timeout, or watchdog |
-| `Restart=on-abort` | Restart on signal (not clean exit) |
-| `Restart=on-watchdog` | Restart on watchdog timeout |
-| `Restart=always` | Always restart, regardless of exit status |
+| `Restart=no`          | Never restart (default)                              |
+| `Restart=on-success`  | Restart if the process exits cleanly (exit code 0)   |
+| `Restart=on-failure`  | Restart if the process exits with non-zero or signal |
+| `Restart=on-abnormal` | Restart on signal, timeout, or watchdog              |
+| `Restart=on-abort`    | Restart on signal (not clean exit)                   |
+| `Restart=on-watchdog` | Restart on watchdog timeout                          |
+| `Restart=always`      | Always restart, regardless of exit status            |
 
 ```ini
 Restart=on-failure
@@ -291,16 +294,16 @@ Targets are synchronization points that group units. They replace the SysV runle
 
 ### Target Equivalents to Runlevels
 
-| SysV Runlevel | systemd Target | Description |
+| SysV Runlevel | systemd Target      | Description                   |
 | ------------- | ------------------- | ----------------------------- |
-| 0 | `poweroff.target` | Halt/shutdown |
-| 1 | `rescue.target` | Single-user mode |
-| 2, 4 | `multi-user.target` | Multi-user, no GUI |
-| 3 | `multi-user.target` | Multi-user, no GUI |
-| 5 | `graphical.target` | Multi-user with GUI |
-| 6 | `reboot.target` | Reboot |
-| — | `emergency.target` | Emergency shell |
-| — | `default.target` | Symlink to the default target |
+| 0             | `poweroff.target`   | Halt/shutdown                 |
+| 1             | `rescue.target`     | Single-user mode              |
+| 2, 4          | `multi-user.target` | Multi-user, no GUI            |
+| 3             | `multi-user.target` | Multi-user, no GUI            |
+| 5             | `graphical.target`  | Multi-user with GUI           |
+| 6             | `reboot.target`     | Reboot                        |
+| —             | `emergency.target`  | Emergency shell               |
+| —             | `default.target`    | Symlink to the default target |
 
 ```bash
 # View current target
@@ -567,39 +570,39 @@ The primary mechanism for securing systemd-managed services.
 
 ### Filesystem Restrictions
 
-| Directive | Effect |
+| Directive              | Effect                                           |
 | ---------------------- | ------------------------------------------------ |
-| `ProtectSystem=strict` | Read-only filesystem (except specific paths) |
-| `ProtectSystem=full` | Read-only /usr and /boot |
-| `ProtectHome=yes` | No access to /home, /root, /run/user |
-| `ProtectHome=tmpfs` | Empty tmpfs mounted over /home, /root, /run/user |
-| `PrivateTmp=yes` | Isolated /tmp and /var/tmp |
-| `PrivateDevices=yes` | Isolated /dev (no physical devices) |
-| `PrivateIPC=yes` | Isolated System V IPC, POSIX message queues |
-| `PrivateUsers=yes` | No access to other users' processes |
-| `ReadWritePaths=` | Paths writable despite ProtectSystem |
-| `ReadOnlyPaths=` | Explicitly read-only paths |
-| `InaccessiblePaths=` | Explicitly inaccessible paths |
-| `BindReadOnlyPaths=` | Mount paths read-only into service namespace |
-| `BindPaths=` | Mount paths read-write into service namespace |
+| `ProtectSystem=strict` | Read-only filesystem (except specific paths)     |
+| `ProtectSystem=full`   | Read-only /usr and /boot                         |
+| `ProtectHome=yes`      | No access to /home, /root, /run/user             |
+| `ProtectHome=tmpfs`    | Empty tmpfs mounted over /home, /root, /run/user |
+| `PrivateTmp=yes`       | Isolated /tmp and /var/tmp                       |
+| `PrivateDevices=yes`   | Isolated /dev (no physical devices)              |
+| `PrivateIPC=yes`       | Isolated System V IPC, POSIX message queues      |
+| `PrivateUsers=yes`     | No access to other users' processes              |
+| `ReadWritePaths=`      | Paths writable despite ProtectSystem             |
+| `ReadOnlyPaths=`       | Explicitly read-only paths                       |
+| `InaccessiblePaths=`   | Explicitly inaccessible paths                    |
+| `BindReadOnlyPaths=`   | Mount paths read-only into service namespace     |
+| `BindPaths=`           | Mount paths read-write into service namespace    |
 
 ### Process and Capability Restrictions
 
-| Directive | Effect |
-| ---------------------------- | ---------------------------------------------------- |
-| `NoNewPrivileges=yes` | Prevent `setuid``setgid`And capability elevation |
-| `CapabilityBoundingSet=` | Limit Linux capabilities to this set |
-| `AmbientCapabilities=` | Grant specific capabilities to the process |
-| `ProtectKernelTunables=yes` | Deny access to /sys and kernel tuning |
-| `ProtectKernelModules=yes` | Deny loading/unloading kernel modules |
-| `ProtectControlGroups=yes` | Deny cgroup modifications |
-| `SystemCallFilter=` | Allow only specific system calls |
-| `SystemCallArchitectures=` | Restrict to specific architectures |
-| `RestrictAddressFamilies=` | Restrict socket address families |
-| `RestrictNamespaces=` | Restrict namespace creation |
-| `RestrictRealtime=yes` | Deny real-time scheduling |
-| `MemoryDenyWriteExecute=yes` | Deny creating writable+executable memory |
-| `LockPersonality=yes` | Lock the execution domain (personality) |
+| Directive                    | Effect                                           |
+| ---------------------------- | ------------------------------------------------ |
+| `NoNewPrivileges=yes`        | Prevent `setuid``setgid`And capability elevation |
+| `CapabilityBoundingSet=`     | Limit Linux capabilities to this set             |
+| `AmbientCapabilities=`       | Grant specific capabilities to the process       |
+| `ProtectKernelTunables=yes`  | Deny access to /sys and kernel tuning            |
+| `ProtectKernelModules=yes`   | Deny loading/unloading kernel modules            |
+| `ProtectControlGroups=yes`   | Deny cgroup modifications                        |
+| `SystemCallFilter=`          | Allow only specific system calls                 |
+| `SystemCallArchitectures=`   | Restrict to specific architectures               |
+| `RestrictAddressFamilies=`   | Restrict socket address families                 |
+| `RestrictNamespaces=`        | Restrict namespace creation                      |
+| `RestrictRealtime=yes`       | Deny real-time scheduling                        |
+| `MemoryDenyWriteExecute=yes` | Deny creating writable+executable memory         |
+| `LockPersonality=yes`        | Lock the execution domain (personality)          |
 
 ### Hardening Example
 
@@ -677,13 +680,13 @@ systemd-analyze verify myapp.service
 
 Systemd manages two categories of services:
 
-| Aspect | System Services | User Services |
+| Aspect            | System Services                    | User Services                        |
 | ----------------- | ---------------------------------- | ------------------------------------ |
-| **PID 1 scope** | Managed by system systemd (PID 1) | Managed by per-user systemd instance |
-| **File location** | `/etc/systemd/system/` | `~/.config/systemd/user/` |
-| **Manages** | System daemons, hardware | User applications, session services |
-| **Run as** | Any user ( root) | The user who started them |
-| **Lifespan** | System-wide, from boot to shutdown | From login to logout (or linger) |
+| **PID 1 scope**   | Managed by system systemd (PID 1)  | Managed by per-user systemd instance |
+| **File location** | `/etc/systemd/system/`             | `~/.config/systemd/user/`            |
+| **Manages**       | System daemons, hardware           | User applications, session services  |
+| **Run as**        | Any user ( root)                   | The user who started them            |
+| **Lifespan**      | System-wide, from boot to shutdown | From login to logout (or linger)     |
 
 ```bash
 # User service management (note --user flag)
@@ -736,9 +739,9 @@ systemctl restart nginx
 
 ### Pitfall: `Type=forking` Without `PIDFile`
 
-If a service is declared as `Type=forking` but does not specify a `PIDFile=`Systemd cannot
-Reliably track the main process. It may think the service started successfully when the parent
-Exited, but the actual daemon failed to start:
+If a service is declared as `Type=forking` but does not specify a `PIDFile=`Systemd cannot Reliably
+track the main process. It may think the service started successfully when the parent Exited, but
+the actual daemon failed to start:
 
 ```ini
 # Always specify PIDFile for forking services

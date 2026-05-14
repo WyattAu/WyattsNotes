@@ -1,6 +1,8 @@
 ---
 title: Sustainable Development Goals
-description: "The SDG framework, geography-relevant SDGs, progress tracking, implementation challenges, SDG conflicts, and case studies for IB Geography."
+description:
+  'The SDG framework, geography-relevant SDGs, progress tracking, implementation challenges, SDG
+  conflicts, and case studies for IB Geography.'
 slug: sustainable-development-goals
 ---
 
@@ -135,10 +137,10 @@ The COVID-19 pandemic (2020--2022) was a major setback for the SDGs:
 - An estimated 70 million additional people were pushed into extreme poverty (SDG 1).
 - Approximately 100 million additional people were pushed into food insecurity (SDG 2).
 - Learning losses equivalent to approximately two-thirds of a school year for children in low- and
- middle-income countries (SDG 4).
+  middle-income countries (SDG 4).
 - Progress on gender equality was set back by approximately 3.6 years (SDG 5), as women bore a
- disproportionate burden of childcare, lost jobs in hard-hit sectors, and experienced increased
- domestic violence.
+  disproportionate burden of childcare, lost jobs in hard-hit sectors, and experienced increased
+  domestic violence.
 - Government revenues declined, reducing fiscal space for SDG investment.
 
 ### Data Challenges
@@ -146,11 +148,11 @@ The COVID-19 pandemic (2020--2022) was a major setback for the SDGs:
 Tracking progress toward the SDGs requires comprehensive, timely, and disaggregated data. However:
 
 - Only approximately 50% of the 231 unique SDG indicators have sufficient data for global
- monitoring.
+  monitoring.
 - Data gaps are most severe in the countries where the SDGs are most needed: low-income countries,
- conflict-affected states, and small island developing states.
+  conflict-affected states, and small island developing states.
 - Many indicators lack the granularity needed to identify who is being left behind (data are not
- disaggregated by sex, age, disability, income, or geographic location).
+  disaggregated by sex, age, disability, income, or geographic location).
 
 ## Challenges in Implementation
 
@@ -164,7 +166,7 @@ Below this level.
 **Financing gaps are particularly acute for:**
 
 - Climate adaptation (estimated need: USD 160--340 billion per year in developing countries; current
- finance: approximately USD 21 billion per year)
+  finance: approximately USD 21 billion per year)
 - Education (estimated need: USD 148 billion per year for low- and lower-middle-income countries)
 - Health (estimated need: USD 371 billion per year for universal health coverage)
 - Infrastructure (estimated need: USD 1.5--2.0 trillion per year in developing countries)
@@ -175,12 +177,12 @@ Effective implementation of the SDGs requires strong governance, institutional c
 Coherence. Many developing countries face governance challenges (corruption, weak institutions,
 Political instability, conflict) that constrain their ability to pursue the goals.
 
-**Policy incoherence.** , government policies in one sector undermine progress in
-Others. Agricultural subsidies that incentivise intensive farming may increase food production
-(SDG 2) but degrade water quality (SDG 6), reduce biodiversity (SDG 15), and increase greenhouse gas
-Emissions (SDG 13). Trade policies that reduce tariffs may increase economic growth (SDG 8) but
-Undermine local producers and increase inequality (SDG 10). Policy coherence across sectors is
-Essential but difficult to achieve.
+**Policy incoherence.** , government policies in one sector undermine progress in Others.
+Agricultural subsidies that incentivise intensive farming may increase food production (SDG 2) but
+degrade water quality (SDG 6), reduce biodiversity (SDG 15), and increase greenhouse gas Emissions
+(SDG 13). Trade policies that reduce tariffs may increase economic growth (SDG 8) but Undermine
+local producers and increase inequality (SDG 10). Policy coherence across sectors is Essential but
+difficult to achieve.
 
 ## Conflicts Between SDGs
 
@@ -199,14 +201,14 @@ Loss decline.
 **Evidence on decoupling:**
 
 - **Relative decoupling** (emissions per unit of GDP declining while absolute emissions continue to
- rise) has been achieved in many countries and globally. Global $\mathrm{CO_2}$ emissions per unit
- of GDP have declined by approximately 35% since 1990.
+  rise) has been achieved in many countries and globally. Global $\mathrm{CO_2}$ emissions per unit
+  of GDP have declined by approximately 35% since 1990.
 - **Absolute decoupling** (total emissions declining while GDP grows) has been achieved in some
- developed countries (e.g., the UK reduced $\mathrm{CO_2}$ emissions by approximately 40% while
- growing GDP by approximately 75% between 1990 and 2022). However, this is partly attributable to
- the offshoring of carbon-intensive manufacturing to developing countries (carbon leakage).
+  developed countries (e.g., the UK reduced $\mathrm{CO_2}$ emissions by approximately 40% while
+  growing GDP by approximately 75% between 1990 and 2022). However, this is partly attributable to
+  the offshoring of carbon-intensive manufacturing to developing countries (carbon leakage).
 - At the global level, absolute decoupling of $\mathrm{CO_2}$ emissions from GDP has not been
- achieved: both global GDP and global $\mathrm{CO_2}$ emissions have grown since 1990.
+  achieved: both global GDP and global $\mathrm{CO_2}$ emissions have grown since 1990.
 
 ### Energy Access vs Climate Action
 
@@ -238,13 +240,13 @@ Governance, environmental sustainability, and social progress.
 **SDG progress.** Rwanda has made significant progress on several goals:
 
 - **SDG 1 (No Poverty):** the poverty rate declined from approximately 77% (2001) to approximately
- 38% (2017), though progress has been affected by COVID-19.
+  38% (2017), though progress has been affected by COVID-19.
 - **SDG 6 (Clean Water and Sanitation):** access to improved drinking water increased from
- approximately 65% (2000) to approximately 87% (2022).
+  approximately 65% (2000) to approximately 87% (2022).
 - **SDG 7 (Clean Energy):** approximately 55% of electricity is generated from renewable sources
- (primarily hydropower, with growing solar and methane from Lake Kivu).
+  (primarily hydropower, with growing solar and methane from Lake Kivu).
 - **SDG 15 (Life on Land):** Rwanda banned plastic bags in 2008; forest cover has increased from
- approximately 10% (1994) to approximately 30% (2023) through a nationwide tree-planting programme.
+  approximately 10% (1994) to approximately 30% (2023) through a nationwide tree-planting programme.
 
 **Governance and innovation.** Rwanda has implemented performance contracts (imihigo) that hold
 Local government officials accountable for specific development targets. The government has invested

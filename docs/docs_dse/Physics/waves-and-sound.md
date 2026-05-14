@@ -1,6 +1,8 @@
 ---
 title: Waves and Sound
-description: "DSE Physics waves and sound notes covering wave properties, transverse and longitudinal waves, sound waves, the Doppler effect, and standing waves."
+description:
+  'DSE Physics waves and sound notes covering wave properties, transverse and longitudinal waves,
+  sound waves, the Doppler effect, and standing waves.'
 date: 2026-04-18T00:00:00.000Z
 tags:
   - DSE
@@ -18,20 +20,20 @@ slug: waves-and-sound
 Waves are classified by the direction of particle displacement relative to the direction of energy
 Propagation:
 
-| Type | Particle Motion | Examples |
+| Type         | Particle Motion              | Examples                             |
 | ------------ | ---------------------------- | ------------------------------------ |
-| Transverse | Perpendicular to propagation | Light, water surface waves, EM waves |
-| Longitudinal | Parallel to propagation | Sound, compression waves in springs |
+| Transverse   | Perpendicular to propagation | Light, water surface waves, EM waves |
+| Longitudinal | Parallel to propagation      | Sound, compression waves in springs  |
 
 ### Wave Terminology
 
-| Term | Symbol | SI Unit | Definition |
+| Term       | Symbol    | SI Unit | Definition                                   |
 | ---------- | --------- | ------- | -------------------------------------------- |
-| Wavelength | $\lambda$ | m | Distance between consecutive points in phase |
-| Frequency | $f$ | Hz | Number of complete oscillations per second |
-| Period | $T$ | s | Time for one complete oscillation |
-| Amplitude | $A$ | m | Maximum displacement from equilibrium |
-| Wave speed | $v$ | m/s | Speed of propagation |
+| Wavelength | $\lambda$ | m       | Distance between consecutive points in phase |
+| Frequency  | $f$       | Hz      | Number of complete oscillations per second   |
+| Period     | $T$       | s       | Time for one complete oscillation            |
+| Amplitude  | $A$       | m       | Maximum displacement from equilibrium        |
+| Wave speed | $v$       | m/s     | Speed of propagation                         |
 
 ### The Wave Equation
 
@@ -67,8 +69,8 @@ $$\Delta\phi = \frac{2\pi \times 0.35}{1.4} = \frac{\pi}{2} = 90^\circ$$
 
 ### Worked Example 2
 
-A sound wave in air has a wavelength of $0.686 \mathrm{ m}$. When it enters water, its speed
-Changes to $1480 \mathrm{ m/s}$. Find the frequency of the wave and its wavelength in water.
+A sound wave in air has a wavelength of $0.686 \mathrm{ m}$. When it enters water, its speed Changes
+to $1480 \mathrm{ m/s}$. Find the frequency of the wave and its wavelength in water.
 
 <details>
 <summary>Solution</summary>
@@ -145,8 +147,8 @@ Since the path difference is an integer multiple of $\lambda$Constructive interf
 ### Worked Example 4
 
 Light of wavelength $600 \mathrm{ nm}$ passes through a double slit with slit separation
-$0.1 \mathrm{ mm}$. The interference pattern is observed on a screen $2 \mathrm{ m}$ away. Find
-The separation between adjacent bright fringes.
+$0.1 \mathrm{ mm}$. The interference pattern is observed on a screen $2 \mathrm{ m}$ away. Find The
+separation between adjacent bright fringes.
 
 <details>
 <summary>Solution</summary>
@@ -168,11 +170,11 @@ A standing wave forms when two identical waves travelling in opposite directions
 
 ### String Fixed at Both Ends
 
-| Mode | Diagram | Wavelength | Frequency |
+| Mode                       | Diagram                 | Wavelength | Frequency              |
 | -------------------------- | ----------------------- | ---------- | ---------------------- |
-| Fundamental (1st harmonic) | --N--A--N-- | $2L$ | $f_1 = v/(2L)$ |
-| 2nd harmonic | --N--A--N--A--N-- | $L$ | $f_2 = v/L = 2f_1$ |
-| 3rd harmonic | --N--A--N--A--N--A--N-- | $2L/3$ | $f_3 = 3v/(2L) = 3f_1$ |
+| Fundamental (1st harmonic) | --N--A--N--             | $2L$       | $f_1 = v/(2L)$         |
+| 2nd harmonic               | --N--A--N--A--N--       | $L$        | $f_2 = v/L = 2f_1$     |
+| 3rd harmonic               | --N--A--N--A--N--A--N-- | $2L/3$     | $f_3 = 3v/(2L) = 3f_1$ |
 
 : $f_n = \frac{nv}{2L}$ for $n = 1, 2, 3, \ldots$
 
@@ -180,11 +182,11 @@ A standing wave forms when two identical waves travelling in opposite directions
 
 Only odd harmonics are possible for a pipe closed at one end:
 
-| Mode | Wavelength | Frequency |
+| Mode                       | Wavelength | Frequency              |
 | -------------------------- | ---------- | ---------------------- |
-| Fundamental (1st harmonic) | $4L$ | $f_1 = v/(4L)$ |
-| 3rd harmonic | $4L/3$ | $f_3 = 3v/(4L) = 3f_1$ |
-| 5th harmonic | $4L/5$ | $f_5 = 5v/(4L) = 5f_1$ |
+| Fundamental (1st harmonic) | $4L$       | $f_1 = v/(4L)$         |
+| 3rd harmonic               | $4L/3$     | $f_3 = 3v/(4L) = 3f_1$ |
+| 5th harmonic               | $4L/5$     | $f_5 = 5v/(4L) = 5f_1$ |
 
 : $f_n = \frac{nv}{4L}$ for $n = 1, 3, 5, \ldots$
 
@@ -231,11 +233,11 @@ The resonant frequencies are $100 \mathrm{ Hz}$$300 \mathrm{ Hz}$And $500 \mathr
 Sound is a longitudinal mechanical wave. It requires a medium for propagation and cannot travel
 Through a vacuum. The speed of sound depends on the medium:
 
-| Medium | Speed of Sound (m/s) |
+| Medium                        | Speed of Sound (m/s) |
 | ----------------------------- | -------------------- |
-| Air (at $20^\circ\mathrm{C}$) | 343 |
-| Water | 1480 |
-| Steel | 5960 |
+| Air (at $20^\circ\mathrm{C}$) | 343                  |
+| Water                         | 1480                 |
+| Steel                         | 5960                 |
 
 ### Intensity and Loudness
 
@@ -310,15 +312,15 @@ $$c = f\lambda$$
 
 ### The EM Spectrum
 
-| Region | Wavelength Range | Typical Use |
+| Region        | Wavelength Range                       | Typical Use                         |
 | ------------- | -------------------------------------- | ----------------------------------- |
-| Radio waves | $\gt 0.1 \mathrm{ m}$ | Broadcasting, communication |
-| Microwaves | $1 \mathrm{ mm}$ to $0.1 \mathrm{ m}$ | Cooking, radar, satellite |
-| Infrared | $700 \mathrm{ nm}$ to $1 \mathrm{ mm}$ | Thermal imaging, remote controls |
-| Visible light | $400\mathrm{--}700 \mathrm{ nm}$ | Human vision |
-| Ultraviolet | $10\mathrm{--}400 \mathrm{ nm}$ | Sterilisation, fluorescence |
-| X-rays | $0.01\mathrm{--}10 \mathrm{ nm}$ | Medical imaging, security |
-| Gamma rays | $\lt 0.01 \mathrm{ nm}$ | Cancer treatment, nuclear processes |
+| Radio waves   | $\gt 0.1 \mathrm{ m}$                  | Broadcasting, communication         |
+| Microwaves    | $1 \mathrm{ mm}$ to $0.1 \mathrm{ m}$  | Cooking, radar, satellite           |
+| Infrared      | $700 \mathrm{ nm}$ to $1 \mathrm{ mm}$ | Thermal imaging, remote controls    |
+| Visible light | $400\mathrm{--}700 \mathrm{ nm}$       | Human vision                        |
+| Ultraviolet   | $10\mathrm{--}400 \mathrm{ nm}$        | Sterilisation, fluorescence         |
+| X-rays        | $0.01\mathrm{--}10 \mathrm{ nm}$       | Medical imaging, security           |
+| Gamma rays    | $\lt 0.01 \mathrm{ nm}$                | Cancer treatment, nuclear processes |
 
 ### Worked Example 9
 
@@ -350,13 +352,13 @@ $$E = hf = 6.63 \times 10^{-34} \times 5.64 \times 10^{14} = 3.74 \times 10^{-19
 ## Common Pitfalls
 
 - Confusing the speed of a wave with the speed of the particles. The wave speed $v = f\lambda$ is
- the speed at which the wave pattern propagates, not the speed of individual particles.
+  the speed at which the wave pattern propagates, not the speed of individual particles.
 - Forgetting that frequency remains constant when a wave crosses a boundary. It is wavelength and
- speed that change.
+  speed that change.
 - Confusing nodes and antinodes in standing waves. Nodes are points of zero amplitude (minimum);
- antinodes are points of maximum amplitude.
+  antinodes are points of maximum amplitude.
 - Misidentifying the type of wave. Sound is longitudinal; light is transverse. Water surface waves
- are a combination.
+  are a combination.
 - When calculating sound intensity level, forgetting that the formula uses $\log_{10}$Not $\ln$.
 - Forgetting that a pipe closed at one end only supports odd harmonics.
 
@@ -364,17 +366,17 @@ $$E = hf = 6.63 \times 10^{-34} \times 5.64 \times 10^{14} = 3.74 \times 10^{-19
 
 ## Summary Table
 
-| Topic | Key Formula | Key Concept |
+| Topic                     | Key Formula                         | Key Concept                          |
 | ------------------------- | ----------------------------------- | ------------------------------------ |
-| Wave equation | $v = f\lambda$ | Relates speed, frequency, wavelength |
-| Phase difference | $\Delta\phi = 2\pi\Delta x/\lambda$ | Fraction of a cycle |
-| Constructive interference | Path difference $= n\lambda$ | Waves in phase |
-| Destructive interference | Path difference $= (n+1/2)\lambda$ | Waves in antiphase |
-| Standing waves (string) | $f_n = nv/(2L)$ | All harmonics |
-| Standing waves (pipe) | $f_n = nv/(4L)$$n$ odd | Odd harmonics only |
-| Sound intensity | $I = P/(4\pi r^2)$ | Inverse square law |
-| Intensity level | $\beta = 10\log(I/I_0)$ | Decibels |
-| EM spectrum | $c = f\lambda$ | All EM waves at speed $c$ |
+| Wave equation             | $v = f\lambda$                      | Relates speed, frequency, wavelength |
+| Phase difference          | $\Delta\phi = 2\pi\Delta x/\lambda$ | Fraction of a cycle                  |
+| Constructive interference | Path difference $= n\lambda$        | Waves in phase                       |
+| Destructive interference  | Path difference $= (n+1/2)\lambda$  | Waves in antiphase                   |
+| Standing waves (string)   | $f_n = nv/(2L)$                     | All harmonics                        |
+| Standing waves (pipe)     | $f_n = nv/(4L)$$n$ odd              | Odd harmonics only                   |
+| Sound intensity           | $I = P/(4\pi r^2)$                  | Inverse square law                   |
+| Intensity level           | $\beta = 10\log(I/I_0)$             | Decibels                             |
+| EM spectrum               | $c = f\lambda$                      | All EM waves at speed $c$            |
 
 ---
 
@@ -446,8 +448,8 @@ $$f_{\mathrm{new}} = f_1 \times \frac{L_1}{L_{\mathrm{new}}} = 330 \times \frac{
 
 If you get this wrong, revise: Standing Waves / String Fixed at Both Ends
 
-**Problem 5.** A pipe open at both ends is $1.2 \mathrm{ m}$ long. Find the fundamental
-Frequency and the first three harmonics. (Speed of sound $= 340 \mathrm{ m/s}$)
+**Problem 5.** A pipe open at both ends is $1.2 \mathrm{ m}$ long. Find the fundamental Frequency
+and the first three harmonics. (Speed of sound $= 340 \mathrm{ m/s}$)
 
 <details>
 <summary>Solution</summary>
@@ -466,8 +468,8 @@ $$f_4 = 4f_1 = 566.7 \mathrm{ Hz}$$
 
 If you get this wrong, revise: Standing Waves
 
-**Problem 6.** A pipe closed at one end has a fundamental frequency of $85 \mathrm{ Hz}$. Find
-The length of the pipe and the frequency of the next resonant frequency. (Speed of sound
+**Problem 6.** A pipe closed at one end has a fundamental frequency of $85 \mathrm{ Hz}$. Find The
+length of the pipe and the frequency of the next resonant frequency. (Speed of sound
 $= 340 \mathrm{ m/s}$)
 
 <details>
@@ -503,8 +505,8 @@ $$\beta_2 = 10\log_{10}(1.25 \times 10^{-5}/10^{-12}) = 10\log_{10}(1.25 \times 
 
 If you get this wrong, revise: Sound Waves / Intensity and Loudness
 
-**Problem 8.** Two sound sources each produce an intensity level of $80 \mathrm{ dB}$ at a point.
-If both sources operate simultaneously, what is the combined intensity level?
+**Problem 8.** Two sound sources each produce an intensity level of $80 \mathrm{ dB}$ at a point. If
+both sources operate simultaneously, what is the combined intensity level?
 
 <details>
 <summary>Solution</summary>
@@ -538,8 +540,8 @@ Generates thermal energy throughout the food.
 If you get this wrong, revise: Electromagnetic Spectrum
 
 **Problem 10.** A stationary observer hears a sound of frequency $500 \mathrm{ Hz}$ from a source
-Moving towards them at $30 \mathrm{ m/s}$. Find the apparent frequency heard by the observer.
-(Speed of sound $= 340 \mathrm{ m/s}$)
+Moving towards them at $30 \mathrm{ m/s}$. Find the apparent frequency heard by the observer. (Speed
+of sound $= 340 \mathrm{ m/s}$)
 
 <details>
 <summary>Solution</summary>
@@ -548,25 +550,27 @@ Using the Doppler effect formula (source moving towards stationary observer):
 
 $$f' = f \times \frac{v}{v - v_s} = 500 \times \frac{340}{340 - 30} = 500 \times \frac{340}{310} = 500 \times 1.097 = 548 \mathrm{ Hz}$$
 
-The apparent frequency is higher than the actual frequency because the source is moving towards
-The observer.
+The apparent frequency is higher than the actual frequency because the source is moving towards The
+observer.
 
 </details>
 
 If you get this wrong, revise: Sound Waves
 
-For the A-Level treatment of this topic, see [Wave Properties](https://alevel.wyattau.com/docs/physics/waves/wave-properties).
+For the A-Level treatment of this topic, see
+[Wave Properties](https://alevel.wyattau.com/docs/physics/waves/wave-properties).
 
 ---
 
-:::tip
-Tip
-Ready to test your understanding of **Waves and Sound**? The [diagnostic test](/docs/dse/Physics/diagnostics/diag-waves-sound) contains the hardest questions within the DSE specification for this topic, each with a full worked solution.
+:::tip Tip Ready to test your understanding of **Waves and Sound**? The
+[diagnostic test](/docs/dse/Physics/diagnostics/diag-waves-sound) contains the hardest questions
+within the DSE specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Waves and Sound with other physics topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Waves and
+Sound with other physics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/dse/Physics/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/dse/Physics/diagnostics/diagnostic-guide) for instructions on
+self-marking and building a personal test matrix. :::
 
 ---
 
@@ -590,8 +594,8 @@ $$f' = f \cdot \frac{v}{v + v_s}$$
 
 ### Derivation: General Doppler Effect (Both Source and Observer Moving)
 
-If the observer moves towards the source with speed $v_o$The relative speed of the waves
-Approaching the observer is $v + v_o$. The observed frequency is:
+If the observer moves towards the source with speed $v_o$The relative speed of the waves Approaching
+the observer is $v + v_o$. The observed frequency is:
 
 $$f' = \frac{v + v_o}{\lambda'}$$
 
@@ -605,16 +609,16 @@ Apply when they move apart.
 ### Derivation: Fringe Spacing in Double-Slit Interference
 
 Two coherent sources separated by distance $d$ emit waves of wavelength $\lambda$. The pattern is
-Observed on a screen at distance $D$ ($D \gg d$). For the $n$-th bright fringe, the path
-Difference equals $n\lambda$.
+Observed on a screen at distance $D$ ($D \gg d$). For the $n$-th bright fringe, the path Difference
+equals $n\lambda$.
 
 For a point on the screen at distance $y$ from the central maximum, the path difference is
 Approximately:
 
 $$\Delta s \approx d\sin\theta \approx d \cdot \frac{y}{D}$$
 
-For constructive interference: $d \cdot \frac{y}{D} = n\lambda$So the position of the $n$-th
-Bright fringe is:
+For constructive interference: $d \cdot \frac{y}{D} = n\lambda$So the position of the $n$-th Bright
+fringe is:
 
 $$y_n = \frac{n\lambda D}{d}$$
 
@@ -625,8 +629,8 @@ $$\Delta y = y_{n+1} - y_n = \frac{\lambda D}{d}$$
 ### Derivation: Fundamental Frequency of a Pipe Closed at One End
 
 A pipe of length $L$ closed at one end and open at the other supports a standing wave with a
-Displacement antinode at the open end and a displacement node at the closed end. The simplest
-Mode (fundamental) has a quarter-wavelength fitting in the pipe:
+Displacement antinode at the open end and a displacement node at the closed end. The simplest Mode
+(fundamental) has a quarter-wavelength fitting in the pipe:
 
 $$L = \frac{\lambda_1}{4}$$
 
@@ -634,9 +638,9 @@ $$\lambda_1 = 4L$$
 
 $$f_1 = \frac{v}{\lambda_1} = \frac{v}{4L}$$
 
-The next harmonic fits three quarter-wavelengths ($L = 3\lambda_3/4$), giving $f_3 = 3v/(4L)$.
-Only odd harmonics ($n = 1, 3, 5, \ldots$) are possible because the closed end must always be a
-Node and the open end an antinode.
+The next harmonic fits three quarter-wavelengths ($L = 3\lambda_3/4$), giving $f_3 = 3v/(4L)$. Only
+odd harmonics ($n = 1, 3, 5, \ldots$) are possible because the closed end must always be a Node and
+the open end an antinode.
 
 ---
 
@@ -648,17 +652,20 @@ Node and the open end an antinode.
 Tuning fork of known frequency, and a metre rule.
 
 **Procedure:**
+
 1. Strike the tuning fork and hold it above the open end of the tube.
 2. Lower the water level slowly until resonance is heard (a loud, clear sound).
 3. Record the length $L_1$ of the air column at the first resonance position.
 4. Continue lowering the water to find the second resonance position $L_2$.
-5. The fundamental has $L_1 \approx \lambda/4$ and the second resonance has $L_2 \approx 3\lambda/4$.
+5. The fundamental has $L_1 \approx \lambda/4$ and the second resonance has
+   $L_2 \approx 3\lambda/4$.
 6. Therefore: $\lambda = 2(L_2 - L_1)$ and $v = f\lambda = 2f(L_2 - L_1)$.
 
 **Why use the difference $L_2 - L_1$?:** The antinode at the open end is slightly outside the tube
 (end correction). Using the difference $L_2 - L_1 = \lambda/2$ eliminates the end correction.
 
 **Sources of error:**
+
 - Difficulty in pinpointing the exact resonance position (judging maximum loudness by ear).
 - The end correction introduces a systematic error in $L_1$ alone.
 - Temperature affects the speed of sound (record room temperature).
@@ -669,16 +676,17 @@ Tuning fork of known frequency, and a metre rule.
 Microphone on a movable track, and an oscilloscope.
 
 **Procedure:**
+
 1. Place the speakers a distance $d$ apart.
 2. Move the microphone along a line parallel to the speakers at distance $D$ away.
 3. Record positions of maximum amplitude (constructive interference) and minimum amplitude
- (destructive interference).
+   (destructive interference).
 4. Measure the spacing $\Delta y$ between consecutive maxima.
 5. Verify $\Delta y = \lambda D / d$ and calculate $\lambda = \Delta y \cdot d / D$.
 6. Calculate $v = f\lambda$.
 
-**Expected result:** The maxima and minima should be equally spaced. The spacing should increase
-If $d$ is decreased or $D$ is increased.
+**Expected result:** The maxima and minima should be equally spaced. The spacing should increase If
+$d$ is decreased or $D$ is increased.
 
 ### Measuring Wavelength of Light Using a Diffraction Grating
 
@@ -686,6 +694,7 @@ If $d$ is decreased or $D$ is increased.
 Lines per mm ($N$), and a screen.
 
 **Procedure:**
+
 1. Shine the laser through the diffraction grating perpendicular to the grating.
 2. Measure the distance $D$ from the grating to the screen.
 3. Measure the distance $x_n$ from the central maximum to the $n$-th order maximum on the screen.
@@ -693,8 +702,8 @@ Lines per mm ($N$), and a screen.
 5. For small angles: $\sin\theta_n \approx \tan\theta_n = x_n / D$.
 6. Using $d\sin\theta_n = n\lambda$: $\lambda = \frac{d \cdot x_n}{nD}$.
 
-**Improvements:** Use a spectrometer for more precise angle measurements. Measure on both sides
-And average to reduce error.
+**Improvements:** Use a spectrometer for more precise angle measurements. Measure on both sides And
+average to reduce error.
 
 ---
 
@@ -705,7 +714,8 @@ And average to reduce error.
 When calculating wave quantities, the result should be given to the same number of significant
 Figures as the least precise measurement.
 
-**Example:** A wave has wavelength $(2.50 \pm 0.01) \mathrm{ m}$ and frequency $(125.0 \pm 0.5) \mathrm{ Hz}$.
+**Example:** A wave has wavelength $(2.50 \pm 0.01) \mathrm{ m}$ and frequency
+$(125.0 \pm 0.5) \mathrm{ Hz}$.
 
 $$v = f\lambda = 125.0 \times 2.50 = 312.5 \mathrm{ m/s}$$
 
@@ -718,10 +728,12 @@ $$v = (312.5 \pm 1.8) \mathrm{ m/s}$$
 ### Analysing Standing Wave Data
 
 When verifying the standing wave formula $f_n = nv/(2L)$ for a string:
+
 - Plot $f_n$ (y-axis) versus $n$ (x-axis). The gradient should be $v/(2L)$.
 - Plot $f_n$ (y-axis) versus $1/L$ (x-axis). The gradient should be $nv/2$.
 - A straight line through the origin confirms the relationship.
-- Non-linear data suggests the string does not obey the ideal wave equation (e.g., stiffness effects).
+- Non-linear data suggests the string does not obey the ideal wave equation (e.g., stiffness
+  effects).
 
 ---
 
@@ -773,27 +785,29 @@ Maximum order: $n_{\max}$ when $\sin\theta = 1$:
 
 $$n_{\max} = \frac{d}{\lambda} = \frac{2.0 \times 10^{-6}}{550 \times 10^{-9}} = 3.64$$
 
-Since $n$ must be an integer, the maximum number of orders is **3** (on each side, plus the
-Central maximum).
+Since $n$ must be an integer, the maximum number of orders is **3** (on each side, plus the Central
+maximum).
 
 </details>
 
 ### Worked Example 13
 
-A stationary source emits sound of frequency $440 \mathrm{ Hz}$. An observer moves directly
-Towards the source at $15 \mathrm{ m/s}$Then directly away at the same speed. Find the two
-Observed frequencies and the change in observed wavelength. (Speed of sound $= 340 \mathrm{ m/s}$)
+A stationary source emits sound of frequency $440 \mathrm{ Hz}$. An observer moves directly Towards
+the source at $15 \mathrm{ m/s}$Then directly away at the same speed. Find the two Observed
+frequencies and the change in observed wavelength. (Speed of sound $= 340 \mathrm{ m/s}$)
 
 <details>
 <summary>Solution</summary>
 
-Approaching: $f' = f \cdot \frac{v + v_o}{v} = 440 \times \frac{340 + 15}{340} = 440 \times 1.044 = 459 \mathrm{ Hz}$
+Approaching:
+$f' = f \cdot \frac{v + v_o}{v} = 440 \times \frac{340 + 15}{340} = 440 \times 1.044 = 459 \mathrm{ Hz}$
 
-Receding: $f' = f \cdot \frac{v - v_o}{v} = 440 \times \frac{340 - 15}{340} = 440 \times 0.956 = 421 \mathrm{ Hz}$
+Receding:
+$f' = f \cdot \frac{v - v_o}{v} = 440 \times \frac{340 - 15}{340} = 440 \times 0.956 = 421 \mathrm{ Hz}$
 
-The wavelength in the medium is unchanged: $\lambda = 340/440 = 0.773 \mathrm{ m}$. The
-Observer does not change the wavelength in the medium; only the perceived frequency changes
-Because the observer encounters wavefronts at a different rate.
+The wavelength in the medium is unchanged: $\lambda = 340/440 = 0.773 \mathrm{ m}$. The Observer
+does not change the wavelength in the medium; only the perceived frequency changes Because the
+observer encounters wavefronts at a different rate.
 
 </details>
 
@@ -810,9 +824,9 @@ The slits.
 (a) The student measures the distance between 10 bright fringes as $22.5 \mathrm{ mm}$. Calculate
 The wavelength of the laser light.
 
-(b) The student estimates the uncertainty in the fringe spacing measurement as $\pm 0.5 \mathrm{ mm}$
-And the slit separation uncertainty as $\pm 0.01 \mathrm{ mm}$. Calculate the percentage
-Uncertainty in the wavelength.
+(b) The student estimates the uncertainty in the fringe spacing measurement as
+$\pm 0.5 \mathrm{ mm}$ And the slit separation uncertainty as $\pm 0.01 \mathrm{ mm}$. Calculate the
+percentage Uncertainty in the wavelength.
 
 (c) State three conditions necessary for a clear interference pattern to be observed.
 
@@ -821,11 +835,13 @@ Uncertainty in the wavelength.
 <details>
 <summary>Solution</summary>
 
-(a) Fringe spacing: $\Delta y = \frac{22.5}{10} = 2.25 \mathrm{ mm} = 2.25 \times 10^{-3} \mathrm{ m}$
+(a) Fringe spacing:
+$\Delta y = \frac{22.5}{10} = 2.25 \mathrm{ mm} = 2.25 \times 10^{-3} \mathrm{ m}$
 
 $$\lambda = \frac{\Delta y \cdot d}{D} = \frac{2.25 \times 10^{-3} \times 0.40 \times 10^{-3}}{1.50} = \frac{9.0 \times 10^{-7}}{1.50} = 6.0 \times 10^{-7} \mathrm{ m} = 600 \mathrm{ nm}$$
 
-(b) Percentage uncertainty in fringe spacing: $\frac{0.5/10}{2.25} \times 100\% = \frac{0.05}{2.25} \times 100\% = 2.2\%$
+(b) Percentage uncertainty in fringe spacing:
+$\frac{0.5/10}{2.25} \times 100\% = \frac{0.05}{2.25} \times 100\% = 2.2\%$
 
 Percentage uncertainty in slit separation: $\frac{0.01}{0.40} \times 100\% = 2.5\%$
 
@@ -836,15 +852,15 @@ $$\Delta\lambda = 0.033 \times 600 = 20 \mathrm{ nm}$$
 $$\lambda = (600 \pm 20) \mathrm{ nm}$$
 
 (c) Three conditions for clear interference:
+
 1. The sources must be coherent (constant phase relationship).
 2. The waves must have the same frequency (monochromatic).
 3. The waves must have similar amplitudes for good contrast between maxima and minima.
 
 (d) With white light, each wavelength produces its own fringe pattern with different fringe spacings
 ($\Delta y \propto \lambda$). The central maximum is white (all wavelengths constructively interfere
-At $\Delta s = 0$), but higher-order fringes are coloured with blue fringes closer to the centre
-And red fringes further out. The pattern becomes blurred after a few orders because the fringes
-Overlap.
+At $\Delta s = 0$), but higher-order fringes are coloured with blue fringes closer to the centre And
+red fringes further out. The pattern becomes blurred after a few orders because the fringes Overlap.
 
 </details>
 
@@ -859,27 +875,30 @@ Approaches at $25 \mathrm{ m/s}$Passes the observer, and then moves away at the 
 
 (c) Calculate the percentage change in frequency as the car passes.
 
-(d) Explain why the observer hears a sudden change in pitch as the car passes, rather than a
-Gradual change.
+(d) Explain why the observer hears a sudden change in pitch as the car passes, rather than a Gradual
+change.
 
 <details>
 <summary>Solution</summary>
 
-(a) Approaching: $f' = f \cdot \frac{v}{v - v_s} = 500 \times \frac{340}{340 - 25} = 500 \times \frac{340}{315} = 500 \times 1.079 = 540 \mathrm{ Hz}$
+(a) Approaching:
+$f' = f \cdot \frac{v}{v - v_s} = 500 \times \frac{340}{340 - 25} = 500 \times \frac{340}{315} = 500 \times 1.079 = 540 \mathrm{ Hz}$
 
-(b) Receding: $f' = f \cdot \frac{v}{v + v_s} = 500 \times \frac{340}{340 + 25} = 500 \times \frac{340}{365} = 500 \times 0.932 = 466 \mathrm{ Hz}$
+(b) Receding:
+$f' = f \cdot \frac{v}{v + v_s} = 500 \times \frac{340}{340 + 25} = 500 \times \frac{340}{365} = 500 \times 0.932 = 466 \mathrm{ Hz}$
 
-(c) As the car approaches, the observed frequency is $540 \mathrm{ Hz}$. As it recedes, $466 \mathrm{ Hz}$.
+(c) As the car approaches, the observed frequency is $540 \mathrm{ Hz}$. As it recedes,
+$466 \mathrm{ Hz}$.
 
 The percentage change from approaching to receding:
 
 $$\frac{540 - 466}{540} \times 100\% = \frac{74}{540} \times 100\% = 13.7\%$$
 
 (d) The rapid change in pitch occurs because the radial component of the velocity (the component
-Along the line joining the source and observer) changes sign abruptly as the car passes. Just
-Before passing, the radial velocity is $+v_s$ (approaching); just after, it is $-v_s$ (receding).
-The Doppler shift depends on the radial velocity, not the total velocity, so the frequency drops
-Sharply at the moment of passing.
+Along the line joining the source and observer) changes sign abruptly as the car passes. Just Before
+passing, the radial velocity is $+v_s$ (approaching); just after, it is $-v_s$ (receding). The
+Doppler shift depends on the radial velocity, not the total velocity, so the frequency drops Sharply
+at the moment of passing.
 
 </details>
 
@@ -888,21 +907,21 @@ Sharply at the moment of passing.
 A stretched string of length $0.80 \mathrm{ m}$ is fixed at both ends. A student investigates the
 Relationship between the tension $T$ in the string and the fundamental frequency $f_1$.
 
-(a) Derive the expression $f_1 = \frac{1}{2L}\sqrt{\frac{T}{\mu}}$Where $\mu$ is the mass per
-Unit length of the string.
+(a) Derive the expression $f_1 = \frac{1}{2L}\sqrt{\frac{T}{\mu}}$Where $\mu$ is the mass per Unit
+length of the string.
 
 (b) The student measures the following data:
 
 | Tension $T$ (N) | Frequency $f_1$ (Hz) |
 | --------------- | -------------------- |
-| 10 | 125 |
-| 20 | 177 |
-| 40 | 250 |
-| 60 | 306 |
-| 80 | 354 |
+| 10              | 125                  |
+| 20              | 177                  |
+| 40              | 250                  |
+| 60              | 306                  |
+| 80              | 354                  |
 
-The mass per unit length of the string is $4.0 \times 10^{-4} \mathrm{ kg/m}$. Plot a suitable
-Graph to verify the relationship and determine the length of the string from the gradient.
+The mass per unit length of the string is $4.0 \times 10^{-4} \mathrm{ kg/m}$. Plot a suitable Graph
+to verify the relationship and determine the length of the string from the gradient.
 
 (c) State two sources of error in this experiment and suggest improvements.
 
@@ -923,11 +942,11 @@ This shows that $f_1 \propto \sqrt{T}$Or equivalently, $f_1^2 \propto T$.
 
 | $T$ (N) | $f_1^2$ ($\mathrm{ Hz}^2$) |
 | ------- | -------------------------- |
-| 10 | $125^2 = 15625$ |
-| 20 | $177^2 = 31329$ |
-| 40 | $250^2 = 62500$ |
-| 60 | $306^2 = 93636$ |
-| 80 | $354^2 = 125316$ |
+| 10      | $125^2 = 15625$            |
+| 20      | $177^2 = 31329$            |
+| 40      | $250^2 = 62500$            |
+| 60      | $306^2 = 93636$            |
+| 80      | $354^2 = 125316$           |
 
 The gradient of the $f_1^2$ vs $T$ graph:
 
@@ -941,10 +960,11 @@ This is close to the stated $0.80 \mathrm{ m}$ (the discrepancy may be due to da
 Stiffness effects in the string).
 
 (c) Two sources of error:
+
 1. **Difficulty measuring frequency accurately** by ear or with a stroboscope. Improvement: use a
- frequency meter or an oscilloscope.
-2. **The string may not be perfectly uniform** in mass per unit length. Improvement: use a
- uniform steel wire and measure $\mu$ precisely by weighing a known length.
+   frequency meter or an oscilloscope.
+2. **The string may not be perfectly uniform** in mass per unit length. Improvement: use a uniform
+   steel wire and measure $\mu$ precisely by weighing a known length.
 
 </details>
 
@@ -969,21 +989,22 @@ Propagation. Example: light waves or water surface waves.
 In a longitudinal wave, the particle displacement is parallel to the direction of energy
 Propagation. Example: sound waves.
 
-(b) Since the gap width ($d = 4.0 \mathrm{ cm}$) is twice the wavelength ($\lambda = 2.0 \mathrm{ cm}$),
-Significant diffraction occurs. The waves spread out into the region beyond the gap. The
-Diffraction is considerable because $d/\lambda = 2$Which is close to the condition for maximum
-Diffraction ($d \approx \lambda$). A semicircular wavefront is observed beyond the gap.
+(b) Since the gap width ($d = 4.0 \mathrm{ cm}$) is twice the wavelength
+($\lambda = 2.0 \mathrm{ cm}$), Significant diffraction occurs. The waves spread out into the region
+beyond the gap. The Diffraction is considerable because $d/\lambda = 2$Which is close to the
+condition for maximum Diffraction ($d \approx \lambda$). A semicircular wavefront is observed beyond
+the gap.
 
-(c) When the gap width increases to $10.0 \mathrm{ cm}$ ($d/\lambda = 5$), the diffraction is
-Much less pronounced. The waves spread out less and the pattern becomes more like the geometric
-Shadow of the gap. There is still some spreading at the edges, but the central region is
-Relatively undiffracted.
+(c) When the gap width increases to $10.0 \mathrm{ cm}$ ($d/\lambda = 5$), the diffraction is Much
+less pronounced. The waves spread out less and the pattern becomes more like the geometric Shadow of
+the gap. There is still some spreading at the edges, but the central region is Relatively
+undiffracted.
 
-(d) Diffraction is most significant when the wavelength is comparable to the size of the obstacle
-Or gap. Sound waves have wavelengths of order centimetres to metres (similar to building
-Dimensions), so they diffract readily around buildings. Light waves have wavelengths of order
-$10^{-7} \mathrm{ m}$Which is much smaller than building dimensions, so diffraction of light
-Around buildings is negligible.
+(d) Diffraction is most significant when the wavelength is comparable to the size of the obstacle Or
+gap. Sound waves have wavelengths of order centimetres to metres (similar to building Dimensions),
+so they diffract readily around buildings. Light waves have wavelengths of order
+$10^{-7} \mathrm{ m}$Which is much smaller than building dimensions, so diffraction of light Around
+buildings is negligible.
 
 </details>
 
@@ -994,8 +1015,8 @@ $340 \mathrm{ m/s}$.
 
 (a) Calculate the fundamental frequency and the first three overtones.
 
-(b) If one end of the pipe is now closed, calculate the new fundamental frequency and the first
-Two overtones.
+(b) If one end of the pipe is now closed, calculate the new fundamental frequency and the first Two
+overtones.
 
 (c) Explain why a pipe closed at one end cannot produce even harmonics.
 
@@ -1024,10 +1045,10 @@ $$f_3 = 3 \times 85.0 = 255 \mathrm{ Hz}$$
 
 $$f_5 = 5 \times 85.0 = 425 \mathrm{ Hz}$$
 
-(c) A pipe closed at one end must have a displacement node at the closed end and an antinode at
-The open end. The boundary conditions require that an odd number of quarter-wavelengths fit in
-The pipe: $L = (2n - 1)\lambda/4$ for $n = 1, 2, 3, \ldots$. Even harmonics would require a
-Node at the open end or an antinode at the closed end, which violates the boundary conditions.
+(c) A pipe closed at one end must have a displacement node at the closed end and an antinode at The
+open end. The boundary conditions require that an odd number of quarter-wavelengths fit in The pipe:
+$L = (2n - 1)\lambda/4$ for $n = 1, 2, 3, \ldots$. Even harmonics would require a Node at the open
+end or an antinode at the closed end, which violates the boundary conditions.
 
 (d) $T_1 = 20 + 273 = 293 \mathrm{ K}$$T_2 = 30 + 273 = 303 \mathrm{ K}$.
 
@@ -1046,8 +1067,8 @@ Medium. For sound in a gas or liquid:
 
 $$v = \sqrt{\frac{B}{\rho}}$$
 
-Where $B$ is the bulk modulus (a measure of the medium's resistance to compression) and $\rho$
-Is the density.
+Where $B$ is the bulk modulus (a measure of the medium's resistance to compression) and $\rho$ Is
+the density.
 
 For an ideal gas undergoing adiabatic compression:
 
@@ -1061,8 +1082,8 @@ For air at $20^\circ\mathrm{C}$ ($293 \mathrm{ K}$), $\gamma = 1.4$$M = 0.029 \m
 
 $$v = \sqrt{\frac{1.4 \times 8.31 \times 293}{0.029}} = \sqrt{\frac{3407}{0.029}} = \sqrt{117483} = 343 \mathrm{ m/s}$$
 
-This matches the accepted value and shows that the speed of sound in air increases with
-Temperature (as $v \propto \sqrt{T}$).
+This matches the accepted value and shows that the speed of sound in air increases with Temperature
+(as $v \propto \sqrt{T}$).
 
 ### Extended Worked Example: Measuring the Speed of Sound Using an Echo
 
@@ -1090,11 +1111,10 @@ The beat frequency is the difference between the two frequencies:
 
 $$f_{\mathrm{beat}} = |f_1 - f_2| = |256 - 260| = 4 \mathrm{ Hz}$$
 
-The observer hears a sound that waxes and wanes in loudness 4 times per second. Beats occur
-Because the two sound waves periodically come into and out of phase, producing alternating
-Constructive and destructive interference.
+The observer hears a sound that waxes and wanes in loudness 4 times per second. Beats occur Because
+the two sound waves periodically come into and out of phase, producing alternating Constructive and
+destructive interference.
 
 </details>
 
 </details>
-

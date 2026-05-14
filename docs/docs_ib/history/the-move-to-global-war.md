@@ -1,10 +1,12 @@
 ---
 title: The Move to Global War
 tags:
-- IB
-- History
+  - IB
+  - History
 slug: the-move-to-global-war
-description: "Rigorous IB history notes covering The Move to Global War. Includes definitions, derivations, worked examples, and exam-style problems."
+description:
+  'Rigorous IB history notes covering The Move to Global War. Includes definitions, derivations,
+  worked examples, and exam-style problems.'
 ---
 
 # The Move to Global War
@@ -243,11 +245,11 @@ Left-wing newspapers, burning the offices of the socialist newspaper `Avanti!` a
 Socialist and Catholic labour headquarters.
 
 The March on Rome (27--29 October 1922) was a deliberately theatrical gesture. Approximately 30,000
-Blackshirts converged on Rome, but the Italian army remained loyal to the state and could 
-Have dispersed them. King Victor Emmanuel III, fearing civil war and lacking confidence in the
-Liberal government of Luigi Facta, refused to sign a decree of martial law and instead appointed
-Mussolini as Prime Minister on 29 October 1922. Mussolini arrived in Rome by sleeper train, not at
-The head of his followers.
+Blackshirts converged on Rome, but the Italian army remained loyal to the state and could Have
+dispersed them. King Victor Emmanuel III, fearing civil war and lacking confidence in the Liberal
+government of Luigi Facta, refused to sign a decree of martial law and instead appointed Mussolini
+as Prime Minister on 29 October 1922. Mussolini arrived in Rome by sleeper train, not at The head of
+his followers.
 
 #### The Corporate State
 
@@ -834,12 +836,12 @@ September 1945.
 
 The orthodox interpretation, dominant from the 1940s through the 1950s, held that the Second World
 War was the direct and inevitable consequence of Hitler's deliberate plan for aggressive war. This
-View was articulated by historians such as Alan Bullock (`Hitler: A Study in Tyranny`1952),
-Gerhard Weinberg (`The Foreign Policy of Hitler's Germany`1970), and Hugh Trevor-Roper
-(`The Last Days of Hitler`1947). According to this interpretation, Hitler's intentions, 
-Stated in `Mein Kampf` and in his Second Book (written in 1928 but not published until 1961), were
-The driving force of events: he sought `Lebensraum` in the east, the destruction of the Versailles
-Settlement, the subjugation of France, and ultimately a war of racial annihilation against the
+View was articulated by historians such as Alan Bullock (`Hitler: A Study in Tyranny`1952), Gerhard
+Weinberg (`The Foreign Policy of Hitler's Germany`1970), and Hugh Trevor-Roper
+(`The Last Days of Hitler`1947). According to this interpretation, Hitler's intentions, Stated in
+`Mein Kampf` and in his Second Book (written in 1928 but not published until 1961), were The driving
+force of events: he sought `Lebensraum` in the east, the destruction of the Versailles Settlement,
+the subjugation of France, and ultimately a war of racial annihilation against the
 "Jewish-Bolshevik" conspiracy. The war was not an accident or a product of structural forces but the
 Realisation of a coherent ideological programme.
 
@@ -921,11 +923,11 @@ Structural constraints (military unpreparedness, public opinion, economic crisis
 Misguided, belief that negotiated concessions could satisfy German grievances.
 
 However, Taylor's minimisation of Hitler's ideological radicalism has not withstood scrutiny. The
-Evidence from `Mein Kampf`The Second Book, the `Hossbach Memorandum`And Hitler's numerous
-Speeches and conversations makes clear that his aims went far beyond conventional revision of
-Versailles. The concept of `Lebensraum` implied the conquest, colonisation, and racial reordering of
-Eastern Europe -- a programme that could only be achieved through war. Taylor's treatment of this
-Evidence was selective and at times disingenuous.
+Evidence from `Mein Kampf`The Second Book, the `Hossbach Memorandum`And Hitler's numerous Speeches
+and conversations makes clear that his aims went far beyond conventional revision of Versailles. The
+concept of `Lebensraum` implied the conquest, colonisation, and racial reordering of Eastern Europe
+-- a programme that could only be achieved through war. Taylor's treatment of this Evidence was
+selective and at times disingenuous.
 
 ---
 
@@ -1094,62 +1096,71 @@ Court), are the direct institutional descendants of Nuremberg.
 
 ## Key Historiographical Terms for IB Examinations
 
-| Term | Description |
+| Term                        | Description                                                              |
 | --------------------------- | ------------------------------------------------------------------------ |
-| Orthodox | Hitler deliberately planned war; his ideology drove events |
-| Revisionist | Structural factors and Allied policy failures were primary causes |
-| Post-revisionist | Multi-causal synthesis; interplay of ideology and circumstance |
-| Intentionalist | Hitler had a long-term plan (`Mein Kampf` as blueprint) |
+| Orthodox                    | Hitler deliberately planned war; his ideology drove events               |
+| Revisionist                 | Structural factors and Allied policy failures were primary causes        |
+| Post-revisionist            | Multi-causal synthesis; interplay of ideology and circumstance           |
+| Intentionalist              | Hitler had a long-term plan (`Mein Kampf` as blueprint)                  |
 | Structuralist/Functionalist | The regime radicalised through bureaucratic competition and circumstance |
-| `Cumulative radicalisation` | Kershaw's concept of subordinates "working towards the Führer" |
-| `Social imperialism` | Mason's thesis that domestic economic pressures drove expansion |
-| `Dolchstosslegende` | The "stab-in-the-back" myth used to undermine the Weimar Republic |
+| `Cumulative radicalisation` | Kershaw's concept of subordinates "working towards the Führer"           |
+| `Social imperialism`        | Mason's thesis that domestic economic pressures drove expansion          |
+| `Dolchstosslegende`         | The "stab-in-the-back" myth used to undermine the Weimar Republic        |
 
 ---
 
 ## Key Dates
 
-
-
-| Date | Event |
+| Date                  | Event                                                  |
 | --------------------- | ------------------------------------------------------ |
-| 28 June 1919 | Treaty of Versailles signed |
-| January 1920 | League of Nations holds first Assembly meeting |
-| October 1925 | Locarno Treaties signed |
-| 27 August 1928 | Kellogg-Briand Pact signed |
-| 18 September 1931 | Mukden Incident / Japanese invasion of Manchuria |
-| 30 January 1933 | Hitler appointed Chancellor of Germany |
-| March 1935 | German rearmament announced |
-| 7 March 1936 | German remilitarisation of the Rhineland |
-| July 1936 | Spanish Civil War begins |
-| 12 March 1938 | Anschluss with Austria |
-| 29--30 September 1938 | Munich Agreement |
-| 15 March 1939 | Germany occupies remainder of Czechoslovakia |
-| 23 August 1939 | Molotov-Ribbentrop Pact signed |
-| 1 September 1939 | Germany invades Poland; Second World War begins |
-| 3 September 1939 | Britain and France declare war on Germany |
-| 22 June 1941 | Operation Barbarossa: Germany invades the Soviet Union |
-| 7 December 1941 | Pearl Harbor attacked; United States enters the war |
-| 4--7 June 1942 | Battle of Midway |
-| 23 October 1942 | Battle of El Alamein begins |
-| 2 February 1943 | German surrender at Stalingrad |
-| 6 June 1944 | D-Day: Allied invasion of Normandy |
-| 30 April 1945 | Hitler commits suicide in Berlin |
-| 8 May 1945 | Germany surrenders unconditionally (V-E Day) |
-| 6 August 1945 | Atomic bomb dropped on Hiroshima |
-| 9 August 1945 | Atomic bomb dropped on Nagasaki |
-| 2 September 1945 | Japan surrenders formally (V-J Day) |
+| 28 June 1919          | Treaty of Versailles signed                            |
+| January 1920          | League of Nations holds first Assembly meeting         |
+| October 1925          | Locarno Treaties signed                                |
+| 27 August 1928        | Kellogg-Briand Pact signed                             |
+| 18 September 1931     | Mukden Incident / Japanese invasion of Manchuria       |
+| 30 January 1933       | Hitler appointed Chancellor of Germany                 |
+| March 1935            | German rearmament announced                            |
+| 7 March 1936          | German remilitarisation of the Rhineland               |
+| July 1936             | Spanish Civil War begins                               |
+| 12 March 1938         | Anschluss with Austria                                 |
+| 29--30 September 1938 | Munich Agreement                                       |
+| 15 March 1939         | Germany occupies remainder of Czechoslovakia           |
+| 23 August 1939        | Molotov-Ribbentrop Pact signed                         |
+| 1 September 1939      | Germany invades Poland; Second World War begins        |
+| 3 September 1939      | Britain and France declare war on Germany              |
+| 22 June 1941          | Operation Barbarossa: Germany invades the Soviet Union |
+| 7 December 1941       | Pearl Harbor attacked; United States enters the war    |
+| 4--7 June 1942        | Battle of Midway                                       |
+| 23 October 1942       | Battle of El Alamein begins                            |
+| 2 February 1943       | German surrender at Stalingrad                         |
+| 6 June 1944           | D-Day: Allied invasion of Normandy                     |
+| 30 April 1945         | Hitler commits suicide in Berlin                       |
+| 8 May 1945            | Germany surrenders unconditionally (V-E Day)           |
+| 6 August 1945         | Atomic bomb dropped on Hiroshima                       |
+| 9 August 1945         | Atomic bomb dropped on Nagasaki                        |
+| 2 September 1945      | Japan surrenders formally (V-J Day)                    |
 
-:::danger
-Common Pitfalls
+:::danger Common Pitfalls
 
-- **Presenting appeasement as solely Chamberlain's policy:** Appeasement was broadly supported in Britain in the late 1930s by politicians across parties, the public, and the media. Characterising it as Chamberlain's personal failing ignores the context of British economic weakness, the trauma of WW1, and genuine pacifist sentiment. IB essays require a more nuanced assessment.
+- **Presenting appeasement as solely Chamberlain's policy:** Appeasement was broadly supported in
+  Britain in the late 1930s by politicians across parties, the public, and the media. Characterising
+  it as Chamberlain's personal failing ignores the context of British economic weakness, the trauma
+  of WW1, and genuine pacifist sentiment. IB essays require a more nuanced assessment.
 
-- **Confusing the causes of Japanese expansion:** Japan's invasion of Manchuria (1931) was driven by multiple factors: the need for raw materials, the impact of the Great Depression, domestic political instability, and a belief in regional hegemony. Reducing it to "Japanese aggression" without examining these motivations misses key analytical depth.
+- **Confusing the causes of Japanese expansion:** Japan's invasion of Manchuria (1931) was driven by
+  multiple factors: the need for raw materials, the impact of the Great Depression, domestic
+  political instability, and a belief in regional hegemony. Reducing it to "Japanese aggression"
+  without examining these motivations misses key analytical depth.
 
-- **Overlooking the League of Nations' structural weaknesses:** The League failed not because of bad intentions but because it lacked enforcement power (no army), key nations were absent (USA never joined, Germany/USSR left), and decisions required unanimity. These structural flaws meant it could not prevent aggression by major powers.
+- **Overlooking the League of Nations' structural weaknesses:** The League failed not because of bad
+  intentions but because it lacked enforcement power (no army), key nations were absent (USA never
+  joined, Germany/USSR left), and decisions required unanimity. These structural flaws meant it
+  could not prevent aggression by major powers.
 
-- **Assuming the Treaty of Versailles solely caused WW2:** While the Treaty contributed to German resentment, it was one factor among many. The Great Depression, the failure of the League of Nations, appeasement, and Hitler's expansionist ideology were all necessary conditions. A strong IB essay weighs multiple causes rather than assigning blame to a single factor.
+- **Assuming the Treaty of Versailles solely caused WW2:** While the Treaty contributed to German
+  resentment, it was one factor among many. The Great Depression, the failure of the League of
+  Nations, appeasement, and Hitler's expansionist ideology were all necessary conditions. A strong
+  IB essay weighs multiple causes rather than assigning blame to a single factor.
 
 :::
 

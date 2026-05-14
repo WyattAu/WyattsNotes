@@ -1,6 +1,8 @@
 ---
 title: Types and Variables
-description: "Types and Variables — Python's Type System; Dynamic: the name 'x' is rebound to different types; Strong: these raise TypeError, not silent coercion."
+description:
+  "Types and Variables — Python's Type System; Dynamic: the name 'x' is rebound to different types;
+  Strong: these raise TypeError, not silent coercion."
 date: 2025-06-04T10:00:00.000Z
 tags:
   - Python
@@ -8,18 +10,19 @@ categories:
   - Python
 slug: types-and-variables
 ---
+
 ## Python's Type System
 
 Python is **dynamically typed** and **strongly typed**. These two properties are frequently
 Confused, so it is worth being precise about what they mean.
 
 - **Dynamic typing:** Variables do not carry type annotations that the interpreter enforces at
- assignment. A name is bound to an object, and that object has a type. The same name can be rebound
- to an object of a completely different type at any time. Type checking happens at runtime, not at
- compile time.
+  assignment. A name is bound to an object, and that object has a type. The same name can be rebound
+  to an object of a completely different type at any time. Type checking happens at runtime, not at
+  compile time.
 - **Strong typing:** The interpreter does not perform implicit type coercions that could silently
- lose data. Operations between incompatible types raise `TypeError` rather than silently converting
- one operand to match the other.
+  lose data. Operations between incompatible types raise `TypeError` rather than silently converting
+  one operand to match the other.
 
 ```python
 # Dynamic: the name 'x' is rebound to different types
@@ -33,8 +36,8 @@ x = [1, 2, 3]    # list
 ```
 
 Compare this with JavaScript (weakly and dynamically typed), where `"5" + 3` silently produces
-`"53"`Or C (statically and weakly typed), where implicit conversions between `int` and `float`
-Occur without warning.
+`"53"`Or C (statically and weakly typed), where implicit conversions between `int` and `float` Occur
+without warning.
 
 ### Why Dynamic Typing
 
@@ -346,15 +349,15 @@ print(s)             # "hello"
 **Why are strings immutable?** Several deliberate reasons:
 
 1. **Hashability.** Immutable objects can be hashed, which makes them usable as dictionary keys and
- set members. Mutable strings would require recalculating the hash on every modification, and
- would allow keys to change after insertion -- a source of subtle bugs.
+   set members. Mutable strings would require recalculating the hash on every modification, and
+   would allow keys to change after insertion -- a source of subtle bugs.
 2. **Interning and sharing.** The interpreter can safely share identical string objects across the
- program. This reduces memory usage and enables fast identity comparisons.
+   program. This reduces memory usage and enables fast identity comparisons.
 3. **Thread safety.** Immutable objects are inherently thread-safe. No lock is needed to read a
- string that another thread might be "modifying" (it cannot be).
+   string that another thread might be "modifying" (it cannot be).
 4. **C API compatibility.** CPython's internal representation can store C strings directly when all
- characters are ASCII, avoiding per-character encoding overhead. This optimization is only safe
- because strings cannot change.
+   characters are ASCII, avoiding per-character encoding overhead. This optimization is only safe
+   because strings cannot change.
 
 :::warning
 
@@ -380,7 +383,7 @@ CPython uses a flexible format:
 
 - **Latin-1 (1 byte per character):** Used when all characters are in the range U+0000 to U+00FF.
 - **UCS-2 (2 bytes per character):** Used when all characters are in the range U+0000 to U+FFFF but
- some exceed U+00FF.
+  some exceed U+00FF.
 - **UCS-4 (4 bytes per character):** Used when any character exceeds U+FFFF.
 
 This is a CPython implementation detail (PEP 393, "Flexible String Representation") that optimizes
@@ -488,16 +491,16 @@ print(sum([True, False, True])) # 2
 
 ### Truthiness
 
-In boolean contexts (`if``while``and``or``not``bool()`), Python applies a well-defined set
-Of rules to determine the truth value of any object:
+In boolean contexts (`if``while``and``or``not``bool()`), Python applies a well-defined set Of rules
+to determine the truth value of any object:
 
-| Value | Truth Value | Reason |
+| Value                     | Truth Value | Reason                                           |
 | ------------------------- | :---------: | ------------------------------------------------ |
-| `None` | False | Explicit absence |
-| `False` | False | Boolean false |
-| Zero of any numeric type | False | `0``0.0``0j``Decimal(0)``Fraction(0, 1)` |
-| Empty sequence/collection | False | `""``()``[]``{}``set()``range(0)` |
-| Everything else | True | Including objects with `__bool__` returning True |
+| `None`                    |    False    | Explicit absence                                 |
+| `False`                   |    False    | Boolean false                                    |
+| Zero of any numeric type  |    False    | `0``0.0``0j``Decimal(0)``Fraction(0, 1)`         |
+| Empty sequence/collection |    False    | `""``()``[]``{}``set()``range(0)`                |
+| Everything else           |    True     | Including objects with `__bool__` returning True |
 
 This behavior is governed by two dunder methods on every object:
 
@@ -593,8 +596,8 @@ if x == None:
 ```
 
 Using `is None` rather than `== None` is important because a custom class can override `__eq__` to
-Return `True` when compared to `None`Which would be semantically incorrect. The `is` operator
-Cannot be overridden.
+Return `True` when compared to `None`Which would be semantically incorrect. The `is` operator Cannot
+be overridden.
 
 ### Default Argument Pitfall
 
@@ -801,13 +804,13 @@ mypy my_module.py
 
 ### Key `mypy` Flags
 
-| Flag | Purpose |
+| Flag                       | Purpose                                                 |
 | -------------------------- | ------------------------------------------------------- |
-| `--strict` | Enable all optional checks |
-| `--disallow-untyped-defs` | Require type annotations on all function definitions |
-| `--no-implicit-optional` | Do not treat `None` as compatible with untyped defaults |
-| `--warn-return-any` | Warn when a function returns `Any` |
-| `--ignore-missing-imports` | Suppress errors for untyped third-party libraries |
+| `--strict`                 | Enable all optional checks                              |
+| `--disallow-untyped-defs`  | Require type annotations on all function definitions    |
+| `--no-implicit-optional`   | Do not treat `None` as compatible with untyped defaults |
+| `--warn-return-any`        | Warn when a function returns `Any`                      |
+| `--ignore-missing-imports` | Suppress errors for untyped third-party libraries       |
 
 ### Configuration (`pyproject.toml`)
 
@@ -835,13 +838,13 @@ def connect(host: str, port: int = 5432) -> Connection: ...
 Type checkers are best-effort static analysis tools. They have inherent limitations:
 
 1. **No runtime enforcement.** Type hints are annotations, not constraints. `mypy` catches errors at
- development time, but a misconfigured CI pipeline means errors can reach production.
-2. **`Any` is infectious.** Once a value has type `Any`It propagates through the entire call
- graph, effectively disabling type checking for anything that touches it.
+   development time, but a misconfigured CI pipeline means errors can reach production.
+2. **`Any` is infectious.** Once a value has type `Any`It propagates through the entire call graph,
+   effectively disabling type checking for anything that touches it.
 3. **Dynamically dispatched code is hard to type.** `getattr``__getattr__`And `**kwargs` defeat
- static analysis.
+   static analysis.
 4. **Generics are erased at runtime.** `list[str]` and `list[int]` are both `list` at runtime.
- `isinstance(x, list[str])` raises a `TypeError`.
+   `isinstance(x, list[str])` raises a `TypeError`.
 
 ```python
 # This raises TypeError at runtime -- generics are erased
@@ -907,8 +910,8 @@ a = a + [5]  # calls list.__add__, creates a new list
 print(a is b)  # False -- new object
 ```
 
-For immutable types (`int``str``tuple`), there is no `__iadd__`So `+=` is equivalent to `= +`
--- it always creates a new object.
+For immutable types (`int``str``tuple`), there is no `__iadd__`So `+=` is equivalent to `= +` -- it
+always creates a new object.
 
 ### Scope: LEGB Rule
 

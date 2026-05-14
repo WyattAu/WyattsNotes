@@ -1,8 +1,11 @@
 ---
 title: Proof
-description: "Rigorous IB mathematics notes covering Proof. Includes definitions, derivations, worked examples, and exam-style problems."
+description:
+  'Rigorous IB mathematics notes covering Proof. Includes definitions, derivations, worked examples,
+  and exam-style problems.'
 slug: proof
 ---
+
 ## What Is a Proof?
 
 A **mathematical proof** is a logical argument that establishes the truth of a statement beyond all
@@ -47,8 +50,8 @@ Since $2k^2 + 2k \in \mathbb{'\{'}Z{'\}'}$$n^2$ is odd.
 
 **Theorem.** The product of two rational numbers is rational.
 
-_Proof._ Let $a = \dfrac{p}{q}$ and $b = \dfrac{r}{s}$ where $p, q, r, s \in \mathbb{'\{'}Z{'\}'}$ and
-$q, s \ne 0$. Then:
+_Proof._ Let $a = \dfrac{p}{q}$ and $b = \dfrac{r}{s}$ where $p, q, r, s \in \mathbb{'\{'}Z{'\}'}$
+and $q, s \ne 0$. Then:
 
 $$ab = \frac{p}{q} \cdot \frac{r}{s} = \frac{pr}{qs}$$
 
@@ -66,8 +69,8 @@ To prove a statement $S$:
 2. Derive a logical contradiction (something that violates an axiom, definition, or known fact).
 3. Conclude that $\neg S$ is false, hence $S$ is true.
 
-This rests on the law of excluded middle: for any proposition $S$Exactly one of $S$ and $\neg S$
-Is true.
+This rests on the law of excluded middle: for any proposition $S$Exactly one of $S$ and $\neg S$ Is
+true.
 
 ### Examples
 
@@ -76,8 +79,8 @@ Is true.
 _Proof._ Suppose, for contradiction, that $\sqrt{2}$ is rational. Then $\sqrt{2} = \dfrac{a}{b}$
 Where $a, b \in \mathbb{'\{'}Z{'\}'}^+$$\gcd(a, b) = 1$ (the fraction is in lowest terms).
 
-Squaring: $2 = \dfrac{a^2}{b^2}$So $a^2 = 2b^2$. This means $a^2$ is even, so $a$ is even (since
-The square of an odd number is odd). Write $a = 2k$.
+Squaring: $2 = \dfrac{a^2}{b^2}$So $a^2 = 2b^2$. This means $a^2$ is even, so $a$ is even (since The
+square of an odd number is odd). Write $a = 2k$.
 
 Substituting: $(2k)^2 = 2b^2 \implies 4k^2 = 2b^2 \implies b^2 = 2k^2$. So $b^2$ is even, and hence
 $b$ is even.
@@ -97,8 +100,8 @@ $p_1, \ldots, p_n$ contains all primes.
 
 **Theorem.** $\log_2{3}$ is irrational.
 
-_Proof._ Suppose $\log_2{3} = \dfrac{a}{b}$ with $a, b \in \mathbb{'\{'}Z{'\}'}^+$. Then $2^{a/b} = 3$So
-$2^a = 3^b$. The left side is even; the right side is odd. Contradiction.
+_Proof._ Suppose $\log_2{3} = \dfrac{a}{b}$ with $a, b \in \mathbb{'\{'}Z{'\}'}^+$. Then
+$2^{a/b} = 3$So $2^a = 3^b$. The left side is even; the right side is odd. Contradiction.
 
 ---
 
@@ -119,8 +122,8 @@ The statements $P \implies Q$ and $\neg Q \implies \neg P$ have identical truth 
 
 _Proof._ We prove the contrapositive: if $n$ is odd, then $n^2$ is odd.
 
-Let $n = 2k + 1$ for $k \in \mathbb{'\{'}Z{'\}'}$. Then $n^2 = 4k^2 + 4k + 1 = 2(2k^2 + 2k) + 1$Which is
-Odd. Therefore, if $n^2$ is even, $n$ must be even.
+Let $n = 2k + 1$ for $k \in \mathbb{'\{'}Z{'\}'}$. Then
+$n^2 = 4k^2 + 4k + 1 = 2(2k^2 + 2k) + 1$Which is Odd. Therefore, if $n^2$ is even, $n$ must be even.
 
 ---
 
@@ -137,7 +140,8 @@ To prove that a statement $P(n)$ holds for all integers $n \ge n_0$:
 
 ### Examples
 
-**Theorem.** For all $n \in \mathbb{'\{'}Z{'\}'}^+$$\displaystyle\sum_{i=1}^{n} i = \dfrac{n(n+1)}{2}$.
+**Theorem.** For all
+$n \in \mathbb{'\{'}Z{'\}'}^+$$\displaystyle\sum_{i=1}^{n} i = \dfrac{n(n+1)}{2}$.
 
 _Proof._ By induction on $n$.
 
@@ -199,7 +203,8 @@ _Counterexample._ $2$ is prime and even.
 
 **Claim.** "If $f$ is continuous, then $f$ is differentiable."
 
-_Counterexample._ $f(x) = |x|$ is continuous on $\mathbb{'\{'}R{'\}'}$ but not differentiable at $x = 0$.
+_Counterexample._ $f(x) = |x|$ is continuous on $\mathbb{'\{'}R{'\}'}$ but not differentiable at
+$x = 0$.
 
 **Claim.** "For all real numbers $x$$x^2 \gt x$."
 
@@ -222,11 +227,11 @@ But often tedious technique, applicable only when the case set is small.
 _Proof._ The primes in this range are $3$ and $5$.
 
 - $p = 3$: $3 = 6(1) - 3 = 6(0) + 3$. Since $3 = 6(1) - 3$ does not match, we check: $3 = 6(0) + 3$.
- Actually, $3 = 6(1) - 3$. Better: $3$ is the sole exception as $3 \mid 6$ and $3 \mid 3$.
+  Actually, $3 = 6(1) - 3$. Better: $3$ is the sole exception as $3 \mid 6$ and $3 \mid 3$.
 
 Let us reconsider. For primes $p \gt 3$: every integer $n$ is of the form $6k$$6k \pm 1$
-$6k \pm 2$Or $6k + 3$. Numbers of the form $6k$$6k \pm 2$$6k + 3$ are divisible by $2$$2$
-Or $3$ respectively. So any prime $p \gt 3$ must be of the form $6k \pm 1$.
+$6k \pm 2$Or $6k + 3$. Numbers of the form $6k$$6k \pm 2$$6k + 3$ are divisible by $2$$2$ Or $3$
+respectively. So any prime $p \gt 3$ must be of the form $6k \pm 1$.
 
 For the given range, $p = 5 = 6(1) - 1$. Verified.
 
@@ -235,26 +240,26 @@ For the given range, $p = 5 = 6(1) - 1$. Verified.
 ## Common Pitfalls
 
 1. **Circular reasoning.** Assuming the statement to be proved within the proof itself. Every step
- must follow from definitions, axioms, or previously established results.
+   must follow from definitions, axioms, or previously established results.
 
 2. **Affirming the consequent.** From $P \implies Q$ and $Q$One cannot conclude $P$. This is a
- common logical error.
+   common logical error.
 
 3. **Incomplete induction base case.** If a statement is claimed for all $n \ge 1$The base case
- $n = 1$ must be verified. For multi-variable induction, every base case must be checked.
+   $n = 1$ must be verified. For multi-variable induction, every base case must be checked.
 
 4. **Improper counterexample.** A counterexample must satisfy all the hypotheses of the statement.
- Disproving "if $x \gt 0$Then $x^2 \gt x$" requires $x \gt 0$ and $x^2 \le x$ simultaneously.
+   Disproving "if $x \gt 0$Then $x^2 \gt x$" requires $x \gt 0$ and $x^2 \le x$ simultaneously.
 
 5. **Confusing contradiction and contrapositive.** Proof by contradiction assumes the negation of
- the _conclusion_ (or the entire statement) and derives any contradiction. Proof by contrapositive
- specifically proves $\neg Q \implies \neg P$. They are related but distinct techniques.
+   the _conclusion_ (or the entire statement) and derives any contradiction. Proof by contrapositive
+   specifically proves $\neg Q \implies \neg P$. They are related but distinct techniques.
 
 6. **Overlooking cases in exhaustion proofs.** If the case set is not genuinely exhaustive, the
- proof is invalid. List all cases explicitly.
+   proof is invalid. List all cases explicitly.
 
 7. **Using examples as proof.** Showing that a statement holds for several values does not
- constitute a proof for all values. "True for $n = 1, 2, 3$" is not a proof.
+   constitute a proof for all values. "True for $n = 1, 2, 3$" is not a proof.
 
 ---
 
@@ -337,8 +342,8 @@ Prove that if $a$ and $b$ are rational and $a + b\sqrt{2} = 0$Then $a = b = 0$.
 **Problem 1:** Let the three consecutive integers be $n, n+1, n+2$. Their sum is
 $n + (n+1) + (n+2) = 3n + 3 = 3(n+1)$Which is divisible by $3$ since $n+1 \in \mathbb{'\{'}Z{'\}'}$.
 
-**Problem 2:** Suppose $\sqrt{3} = a/b$ in lowest terms, $a, b \in \mathbb{'\{'}Z{'\}'}^+$. Then $a^2 = 3b^2$
-So $a^2$ is divisible by $3$Hence $a$ is divisible by $3$. Write $a = 3k$:
+**Problem 2:** Suppose $\sqrt{3} = a/b$ in lowest terms, $a, b \in \mathbb{'\{'}Z{'\}'}^+$. Then
+$a^2 = 3b^2$ So $a^2$ is divisible by $3$Hence $a$ is divisible by $3$. Write $a = 3k$:
 $9k^2 = 3b^2 \implies b^2 = 3k^2$So $b$ is divisible by $3$. Both $a$ and $b$ divisible by $3$
 Contradicts lowest terms.
 
@@ -365,9 +370,9 @@ For some $k \ge 4$. Inductive step:
 $(k+1)! = (k+1) \cdot k! \gt (k+1) \cdot 2^k \ge 5 \cdot 2^k \gt 2 \cdot 2^k = 2^{k+1}$. The
 Inequality holds since $k + 1 \ge 5 \gt 2$.
 
-**Problem 10:** If $b \ne 0$Then $\sqrt{2} = -a/b$Which is rational (since $a, b$ are rational
-And $b \ne 0$). But $\sqrt{2}$ is irrational (established earlier). Contradiction. Therefore
-$b = 0$And from $a + 0 = 0$ we get $a = 0$.
+**Problem 10:** If $b \ne 0$Then $\sqrt{2} = -a/b$Which is rational (since $a, b$ are rational And
+$b \ne 0$). But $\sqrt{2}$ is irrational (established earlier). Contradiction. Therefore $b = 0$And
+from $a + 0 = 0$ we get $a = 0$.
 
 </details>
 
@@ -402,8 +407,8 @@ Prove that $\sqrt{6}$ is irrational.
 <details>
 <summary>Solution</summary>
 
-Suppose, for contradiction, that $\sqrt{6} = \dfrac{a}{b}$ where $a, b \in \mathbb{'\{'}Z{'\}'}^+$ and
-$\gcd(a, b) = 1$.
+Suppose, for contradiction, that $\sqrt{6} = \dfrac{a}{b}$ where $a, b \in \mathbb{'\{'}Z{'\}'}^+$
+and $\gcd(a, b) = 1$.
 
 Squaring: $a^2 = 6b^2$So $a^2$ is even (divisible by $2$), and hence $a$ is even. Write $a = 2m$.
 
@@ -428,14 +433,15 @@ We use strong induction on $n$.
 
 **Base case** ($n = 2$): $2$ is itself prime, hence a product of primes (with one factor).
 
-**Inductive hypothesis:** Assume that every integer $k$ with $2 \le k \le m$ can be written as a product
-Of primes.
+**Inductive hypothesis:** Assume that every integer $k$ with $2 \le k \le m$ can be written as a
+product Of primes.
 
 **Inductive step:** Consider $n = m + 1$.
 
 - If $m + 1$ is prime, it is a product of primes.
-- If $m + 1$ is composite, then $m + 1 = ab$ where $2 \le a \le b \le m$. By the inductive hypothesis,
- both $a$ and $b$ are products of primes. Therefore $m + 1 = ab$ is also a product of primes.
+- If $m + 1$ is composite, then $m + 1 = ab$ where $2 \le a \le b \le m$. By the inductive
+  hypothesis, both $a$ and $b$ are products of primes. Therefore $m + 1 = ab$ is also a product of
+  primes.
 
 **Conclusion:** By strong induction, every integer $n \ge 2$ is a product of primes.
 
@@ -486,28 +492,28 @@ Integers, which always includes at least one even factor.
 
 ## Additional Common Pitfalls
 
-- **Assuming the converse.** $P \implies Q$ does not imply $Q \implies P$. For example, "if $n$ is even
- then $n^2$ is even" is true, but "if $n^2$ is even then $n$ is even" requires a separate proof (by
- contrapositive).
+- **Assuming the converse.** $P \implies Q$ does not imply $Q \implies P$. For example, "if $n$ is
+  even then $n^2$ is even" is true, but "if $n^2$ is even then $n$ is even" requires a separate
+  proof (by contrapositive).
 
-- **Induction with incorrect base case.** If the claim starts at $n = 0$Verifying $n = 1$ as the base
- case is insufficient. The base case must match the starting value in the claim.
+- **Induction with incorrect base case.** If the claim starts at $n = 0$Verifying $n = 1$ as the
+  base case is insufficient. The base case must match the starting value in the claim.
 
 - **Weak vs. Strong induction confusion.** Standard induction assumes $P(k)$ to prove $P(k+1)$.
- Strong induction assumes $P(2), P(3), \ldots, P(k)$ to prove $P(k+1)$. Use strong induction when
- $P(k+1)$ depends on more than just $P(k)$.
+  Strong induction assumes $P(2), P(3), \ldots, P(k)$ to prove $P(k+1)$. Use strong induction when
+  $P(k+1)$ depends on more than just $P(k)$.
 
 - **Contradiction: negating the statement incorrectly.** The negation of "for all $x$$P(x)$" is
- "there exists $x$ such that $\neg P(x)$". The negation of "there exists $x$ such that $P(x)$" is
- "for all $x$$\neg P(x)$". Quantifier negation must swap "for all" with "there exists."
+  "there exists $x$ such that $\neg P(x)$". The negation of "there exists $x$ such that $P(x)$" is
+  "for all $x$$\neg P(x)$". Quantifier negation must swap "for all" with "there exists."
 
-- **Incomplete exhaustion.** Proof by exhaustion requires checking every single case. Missing even one
- case invalidates the proof. This technique should only be used when the number of cases is genuinely
- small and enumerable.
+- **Incomplete exhaustion.** Proof by exhaustion requires checking every single case. Missing even
+  one case invalidates the proof. This technique should only be used when the number of cases is
+  genuinely small and enumerable.
 
 - **Using specific numbers in a general proof.** A proof that relies on a specific value (e.g., "let
- $n = 5$") only proves the statement for that value, not for all $n$. General proofs must use
- arbitrary or general variables.
+  $n = 5$") only proves the statement for that value, not for all $n$. General proofs must use
+  arbitrary or general variables.
 
 ---
 
@@ -547,21 +553,24 @@ Prove that there are infinitely many positive integers $n$ such that $n^2 + n + 
 <details>
 <summary>Problem 15</summary>
 
-Prove by induction that $\displaystyle\sum_{i=1}^{n} 2^{i-1} = 2^n - 1$ for all $n \in \mathbb{'\{'}Z{'\}'}^+$.
+Prove by induction that $\displaystyle\sum_{i=1}^{n} 2^{i-1} = 2^n - 1$ for all
+$n \in \mathbb{'\{'}Z{'\}'}^+$.
 
 </details>
 
 <details>
 <summary>Problem 16</summary>
 
-Prove by contrapositive: for integers $a, b, c$If $a$ does not divide $bc$Then $a$ does not divide $b$.
+Prove by contrapositive: for integers $a, b, c$If $a$ does not divide $bc$Then $a$ does not divide
+$b$.
 
 </details>
 
 <details>
 <summary>Problem 17</summary>
 
-Give a counterexample to disprove: "For all real numbers $x$ and $y$$\lfloor x + y \rfloor = \lfloor x \rfloor + \lfloor y \rfloor$."
+Give a counterexample to disprove: "For all real numbers $x$ and
+$y$$\lfloor x + y \rfloor = \lfloor x \rfloor + \lfloor y \rfloor$."
 
 </details>
 
@@ -575,34 +584,44 @@ Prove that $\log_2{5}$ is irrational.
 <details>
 <summary>Answers to Additional Problems</summary>
 
-**Problem 11:** Suppose $\sqrt{2} + \sqrt{3} = \dfrac{a}{b}$ with $a, b \in \mathbb{'\{'}Z{'\}'}^+$ in lowest
-Terms. Squaring: $5 + 2\sqrt{6} = a^2/b^2$So $\sqrt{6} = (a^2 - 5b^2)/(2b^2)$Which is rational.
-But $\sqrt{6}$ is irrational (proved earlier). Contradiction.
+**Problem 11:** Suppose $\sqrt{2} + \sqrt{3} = \dfrac{a}{b}$ with $a, b \in \mathbb{'\{'}Z{'\}'}^+$
+in lowest Terms. Squaring: $5 + 2\sqrt{6} = a^2/b^2$So $\sqrt{6} = (a^2 - 5b^2)/(2b^2)$Which is
+rational. But $\sqrt{6}$ is irrational (proved earlier). Contradiction.
 
 **Problem 12:** Base case ($n = 1$): $\dfrac{1}{1 \cdot 2} = \dfrac{1}{2} = \dfrac{1}{1+1}$. True.
-Inductive hypothesis: $\displaystyle\sum_{i=1}^{k} \dfrac{1}{i(i+1)} = \dfrac{k}{k+1}$.
-Inductive step: $\displaystyle\sum_{i=1}^{k+1} \dfrac{1}{i(i+1)} = \dfrac{k}{k+1} + \dfrac{1}{(k+1)(k+2)} = \dfrac{k(k+2) + 1}{(k+1)(k+2)} = \dfrac{k^2 + 2k + 1}{(k+1)(k+2)} = \dfrac{(k+1)^2}{(k+1)(k+2)} = \dfrac{k+1}{k+2}$. This is the formula with $n = k + 1$.
+Inductive hypothesis: $\displaystyle\sum_{i=1}^{k} \dfrac{1}{i(i+1)} = \dfrac{k}{k+1}$. Inductive
+step:
+$\displaystyle\sum_{i=1}^{k+1} \dfrac{1}{i(i+1)} = \dfrac{k}{k+1} + \dfrac{1}{(k+1)(k+2)} = \dfrac{k(k+2) + 1}{(k+1)(k+2)} = \dfrac{k^2 + 2k + 1}{(k+1)(k+2)} = \dfrac{(k+1)^2}{(k+1)(k+2)} = \dfrac{k+1}{k+2}$.
+This is the formula with $n = k + 1$.
 
-**Problem 13:** $a \mid b \implies b = ma$ and $b \mid a \implies a = nb$ for some $m, n \in \mathbb{'\{'}Z{'\}'}$.
-Substituting: $a = n(ma) = (nm)a$So $nm = 1$. Since $m, n$ are integers, either $m = n = 1$ (giving
-$a = b$) or $m = n = -1$ (giving $a = -b$).
+**Problem 13:** $a \mid b \implies b = ma$ and $b \mid a \implies a = nb$ for some
+$m, n \in \mathbb{'\{'}Z{'\}'}$. Substituting: $a = n(ma) = (nm)a$So $nm = 1$. Since $m, n$ are
+integers, either $m = n = 1$ (giving $a = b$) or $m = n = -1$ (giving $a = -b$).
 
 **Problem 14:** Take $n = 41$: $41^2 + 41 + 41 = 41(41 + 1 + 1) = 41 \times 43$Which is composite.
 Take $n = 42$: $42^2 + 42 + 41 = 1764 + 42 + 41 = 1847$. Check: $1847 = 43 \times 42.95 \ldots$.
-Actually $1847/43 = 42.95$So check: $1847 = 43 \times 43 = 1849 \ne 1847$. Try $n = 40$: $1600 + 40 + 41 = 1681 = 41^2$Composite.
-Take $n = 41k - 1$ for any $k$: $(41k - 1)^2 + (41k - 1) + 41 = 1681k^2 - 82k + 1 + 41k - 1 + 41 = 1681k^2 - 41k + 41 = 41(41k^2 - k + 1)$Which is composite for all $k \ge 1$. Since there are infinitely many such $k$There are infinitely many composite values.
+Actually $1847/43 = 42.95$So check: $1847 = 43 \times 43 = 1849 \ne 1847$. Try $n = 40$:
+$1600 + 40 + 41 = 1681 = 41^2$Composite. Take $n = 41k - 1$ for any $k$:
+$(41k - 1)^2 + (41k - 1) + 41 = 1681k^2 - 82k + 1 + 41k - 1 + 41 = 1681k^2 - 41k + 41 = 41(41k^2 - k + 1)$Which
+is composite for all $k \ge 1$. Since there are infinitely many such $k$There are infinitely many
+composite values.
 
-**Problem 15:** Base case ($n = 1$): $2^0 = 1 = 2^1 - 1$. True.
-Inductive hypothesis: $\displaystyle\sum_{i=1}^{k} 2^{i-1} = 2^k - 1$.
-Inductive step: $\displaystyle\sum_{i=1}^{k+1} 2^{i-1} = (2^k - 1) + 2^k = 2^{k+1} - 1$. This is the formula with $n = k + 1$.
+**Problem 15:** Base case ($n = 1$): $2^0 = 1 = 2^1 - 1$. True. Inductive hypothesis:
+$\displaystyle\sum_{i=1}^{k} 2^{i-1} = 2^k - 1$. Inductive step:
+$\displaystyle\sum_{i=1}^{k+1} 2^{i-1} = (2^k - 1) + 2^k = 2^{k+1} - 1$. This is the formula with
+$n = k + 1$.
 
-**Problem 16:** Contrapositive: if $a \mid b$Then $a \mid bc$. If $a \mid b$Then $b = ma$ for some $m \in \mathbb{'\{'}Z{'\}'}$So $bc = mac$Hence $a \mid bc$. This proves the contrapositive, hence the original statement.
+**Problem 16:** Contrapositive: if $a \mid b$Then $a \mid bc$. If $a \mid b$Then $b = ma$ for some
+$m \in \mathbb{'\{'}Z{'\}'}$So $bc = mac$Hence $a \mid bc$. This proves the contrapositive, hence
+the original statement.
 
-**Problem 17:** Take $x = 0.5$ and $y = 0.5$. $\lfloor 0.5 + 0.5 \rfloor = \lfloor 1 \rfloor = 1$But $\lfloor 0.5 \rfloor + \lfloor 0.5 \rfloor = 0 + 0 = 0 \ne 1$.
+**Problem 17:** Take $x = 0.5$ and $y = 0.5$. $\lfloor 0.5 + 0.5 \rfloor = \lfloor 1 \rfloor = 1$But
+$\lfloor 0.5 \rfloor + \lfloor 0.5 \rfloor = 0 + 0 = 0 \ne 1$.
 
-**Problem 18:** Suppose $\log_2{5} = a/b$ with $a, b \in \mathbb{'\{'}Z{'\}'}^+$. Then $2^{a/b} = 5$So $2^a = 5^b$.
-The left side is a power of $2$ (even for $a \ge 1$), the right side is a power of $5$ (odd). For
-$a = 0$: $1 = 5^b$ is impossible. For $a \ge 1$: even = odd. Contradiction.
+**Problem 18:** Suppose $\log_2{5} = a/b$ with $a, b \in \mathbb{'\{'}Z{'\}'}^+$. Then
+$2^{a/b} = 5$So $2^a = 5^b$. The left side is a power of $2$ (even for $a \ge 1$), the right side is
+a power of $5$ (odd). For $a = 0$: $1 = 5^b$ is impossible. For $a \ge 1$: even = odd.
+Contradiction.
 
 </details>
 
@@ -612,11 +631,13 @@ $a = 0$: $1 = 5^b$ is impossible. For $a \ge 1$: even = odd. Contradiction.
 
 - **Logic and set theory** → Review the logic and proof fundamentals
 - **Divisibility and prime factorisation** → Review number theory and algebra topics
-- **Summation notation and series** → Review [./calculus](calculus) (section on integration and series)
+- **Summation notation and series** → Review [./calculus](calculus) (section on integration and
+  series)
 - **Quadratics and factorisation** → Review algebra fundamentals
 - **Function notation and domain** → Review functions topics
 
-For the A-Level treatment of this topic, see [Proof](https://alevel.wyattau.com/docs/maths/pure-mathematics/proof).
+For the A-Level treatment of this topic, see
+[Proof](https://alevel.wyattau.com/docs/maths/pure-mathematics/proof).
 
 ## Summary
 

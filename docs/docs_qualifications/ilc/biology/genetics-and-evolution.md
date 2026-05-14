@@ -1,6 +1,8 @@
 ---
 title: Genetics and Evolution
-description: "Genetics and Evolution — DNA Structure (OL/HL); The Double Helix (OL/HL); DNA Replication (HL); Protein Synthesis (HL). and examination."
+description:
+  'Genetics and Evolution — DNA Structure (OL/HL); The Double Helix (OL/HL); DNA Replication (HL);
+  Protein Synthesis (HL). and examination.'
 date: 2026-04-14
 tags:
   - Biology
@@ -9,6 +11,7 @@ categories:
   - Biology
 slug: genetics-and-evolution
 ---
+
 # Genetics and Evolution
 
 This topic covers DNA structure, protein synthesis, inheritance, genetic crosses, genetic
@@ -40,7 +43,7 @@ Newly synthesised strand.
 2. **DNA polymerase** synthesises the new strand in the 5 prime to 3 prime direction.
 3. The **leading strand** is synthesised continuously.
 4. The **lagging strand** is synthesised in short fragments (Okazaki fragments), joined by **DNA
- ligase**.
+   ligase**.
 
 **Worked Example: DNA replication fork.**
 
@@ -88,23 +91,23 @@ MRNA is decoded by ribosomes to produce a polypeptide chain.
 ### Mendel's Laws (OL/HL)
 
 1. **Law of Segregation:** each organism has two alleles for each gene, which segregate during
- gamete formation.
+   gamete formation.
 2. **Law of Independent Assortment:** alleles of different genes assort independently (unless
- linked).
+   linked).
 
 ### Genetic Terminology (OL/HL)
 
-| Term | Definition |
+| Term         | Definition                                  |
 | ------------ | ------------------------------------------- |
-| Gene | Section of DNA that codes for a protein |
-| Allele | Different version of a gene |
-| Genotype | The alleles an organism has (e.g., Bb) |
-| Phenotype | The physical expression of the genotype |
-| Homozygous | Two identical alleles (BB or bb) |
-| Heterozygous | Two different alleles (Bb) |
-| Dominant | Expressed in the phenotype when present (B) |
-| Recessive | Only expressed when homozygous (bb) |
-| Codominant | Both alleles are expressed in the phenotype |
+| Gene         | Section of DNA that codes for a protein     |
+| Allele       | Different version of a gene                 |
+| Genotype     | The alleles an organism has (e.g., Bb)      |
+| Phenotype    | The physical expression of the genotype     |
+| Homozygous   | Two identical alleles (BB or bb)            |
+| Heterozygous | Two different alleles (Bb)                  |
+| Dominant     | Expressed in the phenotype when present (B) |
+| Recessive    | Only expressed when homozygous (bb)         |
+| Codominant   | Both alleles are expressed in the phenotype |
 
 ### Monohybrid Crosses (OL/HL)
 
@@ -115,10 +118,10 @@ Parents: Tt x Tt
 
 Punnett square:
 
-| | T | t |
+|     | T   | t   |
 | --- | --- | --- |
-| T | TT | Tt |
-| t | Tt | tt |
+| T   | TT  | Tt  |
+| t   | Tt  | tt  |
 
 Genotype ratio: 1 TT : 2 Tt : 1 tt.
 
@@ -151,9 +154,9 @@ Genes carried on the X chromosome show sex-linked inheritance.
 
 A carrier female (X$^H$X$^h$) x normal male (X$^H$Y):
 
-| | X$^H$ | Y |
+|       | X$^H$                       | Y                          |
 | ----- | --------------------------- | -------------------------- |
-| X$^H$ | X$^H$X$^H$ (normal female) | X$^H$Y (normal male) |
+| X$^H$ | X$^H$X$^H$ (normal female)  | X$^H$Y (normal male)       |
 | X$^h$ | X$^H$X$^h$ (carrier female) | X$^h$Y (haemophiliac male) |
 
 Males are more likely to be affected because they have only one X chromosome.
@@ -277,7 +280,7 @@ Carrier frequency for blood type A (I$^A$I$): $2pr = 2(0.084)(0.6) = 0.101 = 10.
 1. **Variation:** individuals in a population vary in their traits.
 2. **Competition:** resources are limited; individuals compete for survival.
 3. **Survival of the fittest:** individuals with advantageous traits are more likely to survive and
- reproduce.
+   reproduce.
 4. **Inheritance:** advantageous traits are passed to offspring.
 5. **Gradual change:** over many generations, the frequency of advantageous alleles increases.
 
@@ -285,7 +288,7 @@ Carrier frequency for blood type A (I$^A$I$): $2pr = 2(0.084)(0.6) = 0.101 = 10.
 
 1. **Fossil record:** shows gradual changes over time.
 2. **Comparative anatomy:** homologous structures (similar origin, different function, e.g.,
- pentadactyl limb).
+   pentadactyl limb).
 3. **Comparative embryology:** early embryos of different species are similar.
 4. **Molecular evidence:** similar DNA sequences in related species.
 5. **Biogeography:** distribution of species reflects evolutionary history.
@@ -308,16 +311,16 @@ Plants).
 
 1. **DNA replication** -- leading strand is continuous, lagging strand uses Okazaki fragments.
 2. **Transcription vs translation** -- transcription occurs in the nucleus, translation at
- ribosomes.
+   ribosomes.
 3. **Codominance vs incomplete dominance** -- codominance: both expressed; incomplete: intermediate.
 4. **Hardy-Weinberg** -- the equations apply to allele _frequencies_, not actual numbers of
- individuals.
+   individuals.
 5. **Natural selection** -- acts on the phenotype, but evolution is a change in allele frequencies.
 6. **Sex-linked genes** -- males express X-linked recessive traits more frequently.
 7. **Confusing directional and stabilising selection.** Directional shifts the mean; stabilising
- reduces variation around the mean.
+   reduces variation around the mean.
 8. **Forgetting the conditions for Hardy-Weinberg.** If any condition is violated, the population is
- evolving.
+   evolving.
 
 ## Practice Questions
 
@@ -325,7 +328,7 @@ Plants).
 
 1. Describe the structure of DNA.
 2. A tall pea plant (Tt) is crossed with a short pea plant (tt). Show the Punnett square and give
- the phenotype ratio.
+   the phenotype ratio.
 3. State three pieces of evidence for evolution.
 4. Explain why males are more likely to show X-linked recessive conditions.
 
@@ -333,16 +336,16 @@ Plants).
 
 1. Describe the process of translation, including the roles of mRNA, tRNA, and ribosomes.
 2. In a population, the frequency of cystic fibrosis (autosomal recessive) is 1 in 2500. Calculate
- the carrier frequency using Hardy-Weinberg.
+   the carrier frequency using Hardy-Weinberg.
 3. Describe the process of DNA replication, naming the key enzymes involved.
 4. Explain the difference between directional and stabilising selection with examples.
 5. A population has the following blood group frequencies: O = 36%, A = 48%, B = 16%. Assuming a
- three-allele system (I$^A$I$^B$I), calculate the allele frequencies.
+   three-allele system (I$^A$I$^B$I), calculate the allele frequencies.
 
 6. Explain how genetic engineering could be used to treat cystic fibrosis using gene therapy.
 
 7. Use a chi-squared test to determine whether the following results fit a 9:3:3:1 ratio: 560, 180,
- 190, 70.
+   190, 70.
 
 8. Describe three examples of molecular evidence that support the theory of evolution.
 
@@ -379,9 +382,9 @@ One new strand.
 
 - **Helicase:** Unwinds the double helix by breaking hydrogen bonds between base pairs.
 - **DNA polymerase:** Synthesises new DNA strands by adding nucleotides complementary to the
- template strand. Works in the 5' to 3' direction only.
+  template strand. Works in the 5' to 3' direction only.
 - **RNA primase:** Synthesises short RNA primers to initiate DNA synthesis (DNA polymerase cannot
- start from scratch).
+  start from scratch).
 - **DNA ligase:** Joins Okazaki fragments on the lagging strand.
 
 **The leading strand is synthesised continuously.** The lagging strand is synthesised in short
@@ -395,9 +398,9 @@ Primers are removed and replaced with DNA, and the fragments are joined by DNA l
 1. RNA polymerase binds to the promoter region upstream of the gene.
 2. The DNA double helix is unwound in the region to be transcribed.
 3. RNA polymerase builds a complementary mRNA strand using the template strand of DNA. Uracil (U)
- replaces thymine (T) in RNA.
+   replaces thymine (T) in RNA.
 4. The mRNA is processed: a 5' cap is added, a poly-A tail is added, and introns are removed by
- splicing.
+   splicing.
 5. The mature mRNA exits the nucleus through a nuclear pore.
 
 **Translation (at the ribosome):**
@@ -406,7 +409,7 @@ Primers are removed and replaced with DNA, and the fragments are joined by DNA l
 2. The start codon (AUG) is read, and the first tRNA carries methionine to the ribosome.
 3. The ribosome moves along the mRNA, reading one codon (three bases) at a time.
 4. Each codon specifies a particular amino acid. The appropriate tRNA, carrying the correct amino
- acid, binds to the codon via its anticodon.
+   acid, binds to the codon via its anticodon.
 5. Peptide bonds form between adjacent amino acids.
 6. Translation stops when a stop codon (UAA, UAG, or UGA) is reached.
 7. The polypeptide chain is released and folds into its functional three-dimensional shape.
@@ -431,13 +434,13 @@ The polypeptide: Met-Pro-Glu-Ala
 **Darwin's theory of natural selection (1859, On the Origin of Species):**
 
 1. **Variation:** Individuals within a species show variation in their characteristics (due to
- genetic differences -- mutations, meiosis, sexual reproduction).
+   genetic differences -- mutations, meiosis, sexual reproduction).
 2. **Competition:** There is competition for limited resources (food, mates, territory).
 3. **Survival of the fittest:** Individuals with characteristics better suited to the environment
- are more likely to survive and reproduce.
+   are more likely to survive and reproduce.
 4. **Inheritance:** Advantageous characteristics are passed to offspring (through genes).
 5. **Gradual change:** Over many generations, the frequency of advantageous alleles increases in the
- population.
+   population.
 
 **Key point:** "Fitness" in biology means reproductive success, not physical strength. An organism
 That produces more offspring that survive to reproduce is more "fit" than one that produces fewer.
@@ -445,7 +448,7 @@ That produces more offspring that survive to reproduce is more "fit" than one th
 **Worked Example: Antibiotic resistance as natural selection.**
 
 1. A bacterial population contains genetic variation. Most bacteria are susceptible to a particular
- antibiotic, but a few have a mutation that makes them resistant.
+   antibiotic, but a few have a mutation that makes them resistant.
 2. When the antibiotic is applied, susceptible bacteria are killed.
 3. The resistant bacteria survive and reproduce, passing the resistance allele to their offspring.
 4. Over many generations, the frequency of the resistance allele increases in the population.
@@ -510,13 +513,13 @@ Fibrosis.
 ### Ethical Concerns of Genetic Engineering
 
 1. **Safety:** Unknown long-term effects of inserting foreign genes into organisms. Could GM crops
- have unforeseen effects on ecosystems?
+   have unforeseen effects on ecosystems?
 2. **GM crops:** Could transfer herbicide resistance to weeds (superweeds). Could reduce
- biodiversity if monocultures replace diverse ecosystems.
+   biodiversity if monocultures replace diverse ecosystems.
 3. **Gene therapy:** Could have unintended effects on other genes (off-target effects). Germline
- gene therapy raises ethical questions about modifying human embryos.
+   gene therapy raises ethical questions about modifying human embryos.
 4. **Social justice:** GM crops and gene therapies are expensive. Could widen the gap between rich
- and poor countries?
+   and poor countries?
 5. **Animal welfare:** Genetic modification of animals raises animal welfare concerns.
 
 ## Review: Types of Selection and Speciation in Detail
@@ -557,7 +560,7 @@ Speciation that occurs when populations are geographically separated. The key st
 1. A geographical barrier separates a population into two subpopulations.
 2. Each subpopulation experiences different selection pressures and accumulates different mutations.
 3. Over time, genetic differences accumulate to the point where the populations can no longer
- interbreed to produce fertile offspring.
+   interbreed to produce fertile offspring.
 4. Even if the geographical barrier is removed, the populations remain reproductively isolated.
 
 **Example:** The Kaibab squirrel (north rim of the Grand Canyon) and the Abert squirrel (south rim)
@@ -567,7 +570,7 @@ Separate species.
 ### Sympatric Speciation
 
 Speciation without geographic separation. This is much rarer in animals but common in plants,
- through polyploidy.
+through polyploidy.
 
 **Polyploidy:** An organism has more than two complete sets of chromosomes. Autopolyploidy involves
 Duplication of the same genome. Allopolloidy involves combining genomes from different species.
@@ -677,14 +680,14 @@ Group of organisms that can interbreed to produce fertile offspring. Speciation 
 Reproductive isolation, which can occur through:
 
 - **Geographic (allopatric) speciation:** Populations are physically separated by a geographic
- barrier (mountain range, river, ocean). Over time, genetic differences accumulate until the
- populations can no longer interbreed even if brought back together.
+  barrier (mountain range, river, ocean). Over time, genetic differences accumulate until the
+  populations can no longer interbreed even if brought back together.
 - **Sympatric speciation:** New species form without geographic isolation, often through ecological
- specialisation or polyploidy (common in plants).
+  specialisation or polyploidy (common in plants).
 - **Pre-zygotic barriers:** Prevent mating or fertilisation (e.g., differences in mating behaviour,
- breeding season, genital morphology, or gamete incompatibility).
+  breeding season, genital morphology, or gamete incompatibility).
 - **Post-zygotic barriers:** Reduce the fitness of hybrid offspring (e.g., hybrid inviability,
- hybrid sterility as in mules, or hybrid breakdown in subsequent generations).
+  hybrid sterility as in mules, or hybrid breakdown in subsequent generations).
 
 **Evidence for evolution:**
 
@@ -698,16 +701,16 @@ Fossils provide a record of organisms that lived in the past. The fossil record 
 - A progression from simple to more complex organisms over geological time.
 - Species appearing and disappearing at different times (extinction).
 - Transitional forms that show intermediate characteristics between groups (e.g., Archaeopteryx,
- which has features of both reptiles and birds; Tiktaalik, which shows features intermediate
- between fish and tetrapods).
+  which has features of both reptiles and birds; Tiktaalik, which shows features intermediate
+  between fish and tetrapods).
 
 **Limitations of the fossil record:**
 
 - Fossilisation is rare and requires specific conditions (rapid burial, absence of oxygen, presence
- of hard parts).
+  of hard parts).
 - Many organisms have no hard parts and leave no fossils.
 - The fossil record is biased towards organisms that lived in certain environments (marine,
- tropical).
+  tropical).
 - Only a tiny fraction of organisms that have ever lived are represented as fossils.
 
 **2. Comparative anatomy:**

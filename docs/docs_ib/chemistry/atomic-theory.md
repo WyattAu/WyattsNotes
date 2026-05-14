@@ -1,6 +1,8 @@
 ---
 title: Atomic Theory
-description: "IB Chemistry — atomic models from Dalton to quantum mechanics, electron configuration, orbital theory, and periodic properties."
+description:
+  'IB Chemistry — atomic models from Dalton to quantum mechanics, electron configuration, orbital
+  theory, and periodic properties.'
 slug: atomic-theory
 ---
 
@@ -108,13 +110,13 @@ This is the basis of the **quantum mechanical model** of the atom.
 
 ### Summary of Atomic Models
 
-| Model | Key Feature | Explained | Could Not Explain |
+| Model      | Key Feature         | Explained                                  | Could Not Explain             |
 | ---------- | ------------------- | ------------------------------------------ | ----------------------------- |
-| Dalton | Indivisible atoms | Conservation of mass, definite proportions | Subatomic particles, isotopes |
-| Thomson | Plum pudding | Electrons | Nuclear atom, spectral lines |
-| Rutherford | Nuclear atom | Alpha scattering | Atomic stability, spectra |
-| Bohr | Quantised orbits | Hydrogen spectrum | Multi-electron atoms |
-| Quantum | Orbital probability | All atomic spectra | Relativistic effects |
+| Dalton     | Indivisible atoms   | Conservation of mass, definite proportions | Subatomic particles, isotopes |
+| Thomson    | Plum pudding        | Electrons                                  | Nuclear atom, spectral lines  |
+| Rutherford | Nuclear atom        | Alpha scattering                           | Atomic stability, spectra     |
+| Bohr       | Quantised orbits    | Hydrogen spectrum                          | Multi-electron atoms          |
+| Quantum    | Orbital probability | All atomic spectra                         | Relativistic effects          |
 
 ---
 
@@ -124,12 +126,12 @@ This is the basis of the **quantum mechanical model** of the atom.
 
 Each electron is described by four quantum numbers:
 
-| Number | Symbol | Meaning | Allowed values |
+| Number    | Symbol | Meaning              | Allowed values               |
 | --------- | ------ | -------------------- | ---------------------------- |
-| Principal | $n$ | Shell (energy level) | $1, 2, 3, \ldots$ |
-| Azimuthal | $l$ | Subshell | $0, 1, \ldots, n-1$ |
-| Magnetic | $m_l$ | Orbital orientation | $-l, \ldots, 0, \ldots, +l$ |
-| Spin | $m_s$ | Spin direction | $+\frac{1}{2}, -\frac{1}{2}$ |
+| Principal | $n$    | Shell (energy level) | $1, 2, 3, \ldots$            |
+| Azimuthal | $l$    | Subshell             | $0, 1, \ldots, n-1$          |
+| Magnetic  | $m_l$  | Orbital orientation  | $-l, \ldots, 0, \ldots, +l$  |
+| Spin      | $m_s$  | Spin direction       | $+\frac{1}{2}, -\frac{1}{2}$ |
 
 Subshell notation: $l = 0 \to s$$l = 1 \to p$$l = 2 \to d$$l = 3 \to f$.
 
@@ -171,9 +173,9 @@ $$
 Half-filled ($d^5$) and fully-filled ($d^{10}$) subshells have extra stability from exchange energy
 And symmetry:
 
-| Element | Expected | Actual | Reason |
+| Element       | Expected                      | Actual                           | Reason            |
 | ------------- | ----------------------------- | -------------------------------- | ----------------- |
-| $\mathrm{Cr}$ | $[\mathrm{Ar}]\, 4s^2\, 3d^4$ | $[\mathrm{Ar}]\, 4s^1\, 3d^5$ | Half-filled $3d$ |
+| $\mathrm{Cr}$ | $[\mathrm{Ar}]\, 4s^2\, 3d^4$ | $[\mathrm{Ar}]\, 4s^1\, 3d^5$    | Half-filled $3d$  |
 | $\mathrm{Cu}$ | $[\mathrm{Ar}]\, 4s^2\, 3d^9$ | $[\mathrm{Ar}]\, 4s^1\, 3d^{10}$ | Fully-filled $3d$ |
 
 ### Ions
@@ -201,11 +203,11 @@ $$
 
 ### Shapes of Orbitals
 
-| Orbital | Shape | Nodes | Max electrons |
+| Orbital | Shape      | Nodes                   | Max electrons     |
 | ------- | ---------- | ----------------------- | ----------------- |
-| $s$ | Spherical | $n - 1$ total | $2$ |
-| $p$ | Dumbbell | Angular node at nucleus | $6$ per subshell |
-| $d$ | Cloverleaf | $2$ angular nodes | $10$ per subshell |
+| $s$     | Spherical  | $n - 1$ total           | $2$               |
+| $p$     | Dumbbell   | Angular node at nucleus | $6$ per subshell  |
+| $d$     | Cloverleaf | $2$ angular nodes       | $10$ per subshell |
 
 ### Radial and Angular Nodes
 
@@ -257,7 +259,7 @@ Where $S$ is the shielding constant estimated by Slater's rules.
 2. Electrons in groups to the right contribute $0$ to $S$.
 
 3. Same group: each other $ns$/$np$ electron contributes $0.35$ (except $1s$: $0.30$). For
- $nd$/$nf$: each other electron contributes $0.35$.
+   $nd$/$nf$: each other electron contributes $0.35$.
 
 4. $n - 1$ shell: contributes $0.85$ per electron (for $s$/$p$) or $1.00$ (for $d$/$f$).
 
@@ -296,17 +298,17 @@ $$
 
 ### Periodic Trends
 
-| Trend | Explanation |
+| Trend                     | Explanation                                           |
 | ------------------------- | ----------------------------------------------------- |
-| Increases across a period | Increasing $Z_{\mathrm{eff}}$ pulls electrons closer |
-| Decreases down a group | Greater distance from nucleus and increased shielding |
+| Increases across a period | Increasing $Z_{\mathrm{eff}}$ pulls electrons closer  |
+| Decreases down a group    | Greater distance from nucleus and increased shielding |
 
 ### Deviations Across a Period
 
-| Deviation | Elements | Explanation |
+| Deviation               | Elements | Explanation                                                                                    |
 | ----------------------- | -------- | ---------------------------------------------------------------------------------------------- |
-| Drop Group $2$ to $13$ | Be to B | Be has a stable filled $2s$ subshell; B removes a $2p$ electron (higher energy, less shielded) |
-| Drop Group $15$ to $16$ | N to O | N has stable half-filled $2p^3$; O has a paired $2p$ electron experiencing extra repulsion |
+| Drop Group $2$ to $13$  | Be to B  | Be has a stable filled $2s$ subshell; B removes a $2p$ electron (higher energy, less shielded) |
+| Drop Group $15$ to $16$ | N to O   | N has stable half-filled $2p^3$; O has a paired $2p$ electron experiencing extra repulsion     |
 
 ### Successive Ionization Energies
 
@@ -339,18 +341,18 @@ $3.98$.
 
 ### Periodic Trends
 
-| Trend | Explanation |
+| Trend                     | Explanation                    |
 | ------------------------- | ------------------------------ |
-| Increases across a period | Increasing $Z_{\mathrm{eff}}$ |
-| Decreases down a group | Greater distance and shielding |
+| Increases across a period | Increasing $Z_{\mathrm{eff}}$  |
+| Decreases down a group    | Greater distance and shielding |
 
 ### Electronegativity and Bonding
 
-| $\Delta\chi$ | Bond type |
+| $\Delta\chi$ | Bond type          |
 | ------------ | ------------------ |
 | $0.0$--$0.4$ | Non-polar covalent |
-| $0.5$--$1.7$ | Polar covalent |
-| $\gt 1.7$ | Ionic |
+| $0.5$--$1.7$ | Polar covalent     |
+| $\gt 1.7$    | Ionic              |
 
 ### Polarising Power and Polarizability
 
@@ -367,8 +369,8 @@ High polarising power combined with high polarizability leads to covalent charac
 
 - Electronegativity is a relative property of atoms **in bonds**, not of isolated atoms.
 - The transition metals do not show a smooth electronegativity trend across the $d$-block.
-- Noble gases are not assigned electronegativity values (they do not form covalent bonds
- under normal conditions).
+- Noble gases are not assigned electronegativity values (they do not form covalent bonds under
+  normal conditions).
 
 ---
 
@@ -465,9 +467,9 @@ Of $+2$. Identify the element and determine whether the ion is paramagnetic or d
 
 **Solution:**
 
-The neutral atom would be $[\mathrm{Ar}]\, 4s^2\, 3d^5$Which is manganese ($\mathrm{Mn}$
-$Z = 25$). The ion $\mathrm{Mn}^{2+}$ has five unpaired $d$-electrons (all in separate orbitals
-Following Hund's rule), so it is strongly paramagnetic.
+The neutral atom would be $[\mathrm{Ar}]\, 4s^2\, 3d^5$Which is manganese ($\mathrm{Mn}$ $Z = 25$).
+The ion $\mathrm{Mn}^{2+}$ has five unpaired $d$-electrons (all in separate orbitals Following
+Hund's rule), so it is strongly paramagnetic.
 
 </details>
 
@@ -492,10 +494,12 @@ Valence electrons: $4s^2\, 3d^3$ (5 valence electrons in total).
 Quantum numbers:
 
 $4s$ electrons (same orbital, opposite spins):
+
 - $(n=4,\ l=0,\ m_l=0,\ m_s=+\tfrac{1}{2})$
 - $(n=4,\ l=0,\ m_l=0,\ m_s=-\tfrac{1}{2})$
 
 $3d$ electrons (by Hund's rule, each occupies a separate orbital with parallel spin):
+
 - $(n=3,\ l=2,\ m_l=-2,\ m_s=+\tfrac{1}{2})$
 - $(n=3,\ l=2,\ m_l=-1,\ m_s=+\tfrac{1}{2})$
 - $(n=3,\ l=2,\ m_l=0,\ m_s=+\tfrac{1}{2})$
@@ -539,8 +543,8 @@ Nucleus with far greater $Z_{\mathrm{eff}}$.
 
 **Worked Example: Slater's rules and the nitrogen--oxygen anomaly**
 
-Calculate $Z_{\mathrm{eff}}$ for a $2p$ electron in nitrogen ($Z = 7$) and oxygen ($Z = 8$). Use
-The results to explain why $IE_1(\mathrm{N}) = 1402\mathrm{ kJ/mol}$ is higher than
+Calculate $Z_{\mathrm{eff}}$ for a $2p$ electron in nitrogen ($Z = 7$) and oxygen ($Z = 8$). Use The
+results to explain why $IE_1(\mathrm{N}) = 1402\mathrm{ kJ/mol}$ is higher than
 $IE_1(\mathrm{O}) = 1314\mathrm{ kJ/mol}$ despite oxygen having a greater nuclear charge.
 
 <details>
@@ -549,6 +553,7 @@ $IE_1(\mathrm{O}) = 1314\mathrm{ kJ/mol}$ despite oxygen having a greater nuclea
 **Nitrogen:** configuration $(1s)^2(2s, 2p)^5$
 
 For a $2p$ electron:
+
 - Same group: $4$ other electrons $\times 0.35 = 1.40$
 - $n - 1$ shell: $(1s)^2 \times 1.00 = 2.00$
 - $S = 1.40 + 2.00 = 3.40$
@@ -557,6 +562,7 @@ For a $2p$ electron:
 **Oxygen:** configuration $(1s)^2(2s, 2p)^6$
 
 For a $2p$ electron:
+
 - Same group: $5$ other electrons $\times 0.35 = 1.75$
 - $n - 1$ shell: $(1s)^2 \times 1.00 = 2.00$
 - $S = 1.75 + 2.00 = 3.75$
@@ -567,9 +573,9 @@ Which alone would suggest higher $IE$ for oxygen. The observed anomaly arises fr
 Slater's rules do not fully capture:
 
 1. Nitrogen has a half-filled $2p^3$ subshell with maximum exchange energy (three parallel spins),
- giving extra stability.
+   giving extra stability.
 2. In oxygen ($2p^4$), the first electron removed comes from a paired orbital, where
- electron-electron repulsion partially offsets the greater $Z_{\mathrm{eff}}$.
+   electron-electron repulsion partially offsets the greater $Z_{\mathrm{eff}}$.
 
 This is a classic example where a simple electrostatic model (Slater's rules) does not fully
 Reproduce the observed trend, and quantum mechanical exchange effects must be invoked.
@@ -578,8 +584,8 @@ Reproduce the observed trend, and quantum mechanical exchange effects must be in
 
 **Worked Example: Photon energy from electron transitions in hydrogen**
 
-An electron in a hydrogen atom transitions from $n = 4$ to $n = 2$. Calculate the energy,
-Frequency, and wavelength of the emitted photon, and identify the spectral series.
+An electron in a hydrogen atom transitions from $n = 4$ to $n = 2$. Calculate the energy, Frequency,
+and wavelength of the emitted photon, and identify the spectral series.
 
 <details>
 <summary>Solution</summary>
@@ -621,6 +627,7 @@ $$\mathrm{Co}^{2+}: [\mathrm{Ar}]\, 3d^7$$
 **Orbital diagram for $3d^7$:**
 
 The seven $3d$ electrons fill as follows (by Hund's rule):
+
 - Three electrons in three separate orbitals (all spin-up): $\uparrow\ \uparrow\ \uparrow$
 - Two electrons pair in the remaining two orbitals: $\uparrow\downarrow\ \uparrow\downarrow$
 - One more electron in the last orbital: $\uparrow$
@@ -637,87 +644,89 @@ $\mathrm{Co}^{2+}$ is **paramagnetic** with three unpaired electrons.
 
 ## Common Pitfalls
 
-- **Writing electron configurations in the wrong order**: The filling order (Aufbau) differs from the
- writing order for transition metals. $4s$ fills before $3d$But in the written configuration
- $3d$ is listed before $4s$ for neutral atoms: $[\mathrm{Ar}]\, 3d^x\, 4s^y$.
+- **Writing electron configurations in the wrong order**: The filling order (Aufbau) differs from
+  the writing order for transition metals. $4s$ fills before $3d$But in the written configuration
+  $3d$ is listed before $4s$ for neutral atoms: $[\mathrm{Ar}]\, 3d^x\, 4s^y$.
 
 - **Removing the wrong electrons when forming cations**: Transition metal ions lose $4s$ electrons
- before $3d$ electrons, despite $4s$ filling first. $\mathrm{Fe}$ is $[\mathrm{Ar}]\, 4s^2\, 3d^6$
- but $\mathrm{Fe}^{2+}$ is $[\mathrm{Ar}]\, 3d^6$Not $[\mathrm{Ar}]\, 4s^2\, 3d^4$.
+  before $3d$ electrons, despite $4s$ filling first. $\mathrm{Fe}$ is $[\mathrm{Ar}]\, 4s^2\, 3d^6$
+  but $\mathrm{Fe}^{2+}$ is $[\mathrm{Ar}]\, 3d^6$Not $[\mathrm{Ar}]\, 4s^2\, 3d^4$.
 
 - **Confusing penetration with shielding**: Penetration describes how close an electron can approach
- the nucleus ($s \gt p \gt d \gt f$). Shielding describes how other electrons reduce the effective
- nuclear charge felt by a given electron. They are related but distinct concepts.
+  the nucleus ($s \gt p \gt d \gt f$). Shielding describes how other electrons reduce the effective
+  nuclear charge felt by a given electron. They are related but distinct concepts.
 
-- **Misapplying the Aufbau principle to ions**: The filling order applies to neutral atoms. For ions,
- write the neutral atom configuration first, then remove or add electrons. Do not attempt to
- re-apply the $n + l$ rule to the ion directly.
+- **Misapplying the Aufbau principle to ions**: The filling order applies to neutral atoms. For
+  ions, write the neutral atom configuration first, then remove or add electrons. Do not attempt to
+  re-apply the $n + l$ rule to the ion directly.
 
 - **Assuming all electrons in a subshell are equivalent for ionization**: Within a $p$-subshell, the
- first electron removed comes from a paired orbital (if one exists), which requires less energy than
- removing from a half-filled subshell. This explains the Group 15--16 dip in ionization energy.
+  first electron removed comes from a paired orbital (if one exists), which requires less energy
+  than removing from a half-filled subshell. This explains the Group 15--16 dip in ionization
+  energy.
 
 - **Over-interpreting Slater's rules**: Slater's rules are a simplified approximation. They do not
- account for exchange energy, orbital shape effects, or the differences between $s$ and $p$ electrons
- in the same shell. Use them for qualitative trends, not precise predictions.
+  account for exchange energy, orbital shape effects, or the differences between $s$ and $p$
+  electrons in the same shell. Use them for qualitative trends, not precise predictions.
 
 - **Forgetting that $d$-block elements have variable valence**: Transition metals can lose different
- numbers of $d$-electrons depending on the compound. $\mathrm{Mn}$ can form $\mathrm{Mn}^{2+}$
- ($3d^5$) or $\mathrm{Mn}^{4+}$ ($3d^3$), among others.
+  numbers of $d$-electrons depending on the compound. $\mathrm{Mn}$ can form $\mathrm{Mn}^{2+}$
+  ($3d^5$) or $\mathrm{Mn}^{4+}$ ($3d^3$), among others.
 
 - **Misidentifying the last electron added**: The last electron added to $\mathrm{Cr}$ goes into the
- $3d$ subshell (giving $3d^5$), not the $4s$. The last electron added to $\mathrm{Cu}$ goes into
- the $3d$ subshell (giving $3d^{10}$). The exceptions exist to achieve half-filled or fully-filled
- $d$-subshells.
+  $3d$ subshell (giving $3d^5$), not the $4s$. The last electron added to $\mathrm{Cu}$ goes into
+  the $3d$ subshell (giving $3d^{10}$). The exceptions exist to achieve half-filled or fully-filled
+  $d$-subshells.
 
 ---
 
 ## Exam-Style Problems
 
-1. Write the electron configuration of $\mathrm{Fe}^{3+}$ ($Z = 26$). Determine the number of unpaired
- electrons and state whether the ion is paramagnetic or diamagnetic. Explain why $\mathrm{Fe}^{3+}$ is
- more stable than $\mathrm{Fe}^{2+}$ in many compounds. **[Medium]**
+1. Write the electron configuration of $\mathrm{Fe}^{3+}$ ($Z = 26$). Determine the number of
+   unpaired electrons and state whether the ion is paramagnetic or diamagnetic. Explain why
+   $\mathrm{Fe}^{3+}$ is more stable than $\mathrm{Fe}^{2+}$ in many compounds. **[Medium]**
 
 2. The first five ionization energies of an element are: $IE_1 = 1090$$IE_2 = 2353$
- $IE_3 = 4621$$IE_4 = 6223$$IE_5 = 37831\mathrm{ kJ/mol}$. (a) Identify the element. (b) Write
- the equation for the process corresponding to $IE_5$. (c) Explain the large jump between $IE_4$
- and $IE_5$. **[Medium]**
+   $IE_3 = 4621$$IE_4 = 6223$$IE_5 = 37831\mathrm{ kJ/mol}$. (a) Identify the element. (b) Write the
+   equation for the process corresponding to $IE_5$. (c) Explain the large jump between $IE_4$ and
+   $IE_5$. **[Medium]**
 
 3. Use Slater's rules to calculate $Z_{\mathrm{eff}}$ for a $3p$ electron in sulfur ($Z = 16$) and a
- $3p$ electron in phosphorus ($Z = 15$). Use the results to explain the increase in first ionization
- energy from phosphorus to sulfur across Period 3. **[Hard]**
+   $3p$ electron in phosphorus ($Z = 15$). Use the results to explain the increase in first
+   ionization energy from phosphorus to sulfur across Period 3. **[Hard]**
 
 4. An electron in a $\mathrm{He}^+$ ion ($Z = 2$) transitions from $n = 3$ to $n = 1$. (a) Calculate
- the energy, frequency, and wavelength of the emitted photon. (b) Compare the energy with the same
- transition in hydrogen. (c) In what region of the electromagnetic spectrum does this photon lie?
- **[Medium]**
+   the energy, frequency, and wavelength of the emitted photon. (b) Compare the energy with the same
+   transition in hydrogen. (c) In what region of the electromagnetic spectrum does this photon lie?
+   **[Medium]**
 
 5. Explain why chromium has the electron configuration $[\mathrm{Ar}]\, 3d^5\, 4s^1$ rather than the
- expected $[\mathrm{Ar}]\, 4s^2\, 3d^4$. Reference exchange energy and subshell stability in your
- explanation. Why does this exception not extend to elements beyond copper? **[Medium]**
+   expected $[\mathrm{Ar}]\, 4s^2\, 3d^4$. Reference exchange energy and subshell stability in your
+   explanation. Why does this exception not extend to elements beyond copper? **[Medium]**
 
 6. The first four ionization energies of an element are: $738$$1451$$7733$$10541\mathrm{ kJ/mol}$.
- (a) Identify the element. (b) Write the equation for the process corresponding to $IE_3$. (c)
- Explain why $IE_3$ is so much larger than $IE_2$. (d) Would you expect this element to form a $+2$
- or $+3$ ion more readily? Justify. **[Easy]**
+   (a) Identify the element. (b) Write the equation for the process corresponding to $IE_3$. (c)
+   Explain why $IE_3$ is so much larger than $IE_2$. (d) Would you expect this element to form a
+   $+2$ or $+3$ ion more readily? Justify. **[Easy]**
 
 7. Calculate the de Broglie wavelength of an electron traveling at $2.0 \times 10^6\mathrm{ m/s}$.
- ($h = 6.626 \times 10^{-34}\mathrm{ J \cdot s}$$m_e = 9.109 \times 10^{-31}\mathrm{ kg}$). Is
- this wavelength consistent with wave-like behavior on the atomic scale (comparable to bond lengths
- of $\sim 100\mathrm{ pm}$)? **[Medium]**
+   ($h = 6.626 \times 10^{-34}\mathrm{ J \cdot s}$$m_e = 9.109 \times 10^{-31}\mathrm{ kg}$). Is
+   this wavelength consistent with wave-like behavior on the atomic scale (comparable to bond
+   lengths of $\sim 100\mathrm{ pm}$)? **[Medium]**
 
 8. State whether each of the following sets of quantum numbers is permitted or not permitted. If not
- permitted, explain why. (a) $n=2$$l=2$$m_l=0$$m_s=+\tfrac{1}{2}$ (b) $n=3$$l=1$
- $m_l=-1$$m_s=0$ (c) $n=4$$l=3$$m_l=-3$$m_s=-\tfrac{1}{2}$ (d) $n=1$$l=0$$m_l=1$
- $m_s=+\tfrac{1}{2}$ **[Easy]**
+   permitted, explain why. (a) $n=2$$l=2$$m_l=0$$m_s=+\tfrac{1}{2}$ (b) $n=3$$l=1$ $m_l=-1$$m_s=0$
+   (c) $n=4$$l=3$$m_l=-3$$m_s=-\tfrac{1}{2}$ (d) $n=1$$l=0$$m_l=1$ $m_s=+\tfrac{1}{2}$ **[Easy]**
 
 ---
 
 ## If You Get These Wrong, Revise:
 
-- **Chemical bonding and VSEPR geometry** → Review [./chemical-bonding-advanced](./chemical-bonding-advanced)
+- **Chemical bonding and VSEPR geometry** → Review
+  [./chemical-bonding-advanced](./chemical-bonding-advanced)
 - **Periodic trends (IE, EN, atomic radius)** → Review [./periodicity](./periodicity)
-- **Spectroscopy and energy level calculations** → Review [./measurement-and-data-processing](./measurement-and-data-processing)
+- **Spectroscopy and energy level calculations** → Review
+  [./measurement-and-data-processing](./measurement-and-data-processing)
 - **Redox half-equations and oxidation states** → Review [./redox-advanced](./redox-advanced)
 
 ## Summary

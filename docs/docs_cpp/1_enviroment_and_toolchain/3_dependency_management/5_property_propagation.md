@@ -1,6 +1,8 @@
 ---
 title: Property Propagation
-description: "C++: Property Propagation — The Visibility Scopes; 1. PRIVATE (Encapsulation); 2. INTERFACE (Propagation); 3. PUBLIC (Transitivity)."
+description:
+  'C++: Property Propagation — The Visibility Scopes; 1. PRIVATE (Encapsulation); 2. INTERFACE
+  (Propagation); 3. PUBLIC (Transitivity).'
 date: 2025-12-11T05:21:57.536Z
 tags:
   - cpp
@@ -8,6 +10,7 @@ categories:
   - cpp
 slug: property-propagation
 ---
+
 In legacy C++ build systems (Makefiles, Visual Studio Solutions), build settings like "Include
 Directories" and "Preprocessor Definitions" were often global or applied loosely to directory
 Scopes. This led to "Include Hell," where a consumer relied on a transitive dependency's headers,
@@ -24,40 +27,40 @@ Scopes.
 
 ## The Visibility Scopes
 
-When declaring properties (`target_include_directories``target_compile_definitions`) or
-Dependencies (`target_link_libraries`), CMake requires a scope keyword.
+When declaring properties (`target_include_directories``target_compile_definitions`) or Dependencies
+(`target_link_libraries`), CMake requires a scope keyword.
 
 ### 1. PRIVATE (Encapsulation)
 
 - **Semantics:** The property is required **only** to build the target itself. It is not propagated
- to consumers.
+  to consumers.
 - **Mechanism:** Populates the target's `INCLUDE_DIRECTORIES` (or relevant property) but **not** the
- `INTERFACE_` variants.
+  `INTERFACE_` variants.
 - **Use Case:** Implementation details. If `LibA` uses `Boost.Asio` internally in its `.cpp` files
- but does not expose Asio headers in its public `.h` files, the dependency is `PRIVATE`.
+  but does not expose Asio headers in its public `.h` files, the dependency is `PRIVATE`.
 
 ### 2. INTERFACE (Propagation)
 
 - **Semantics:** The property is **not** required to build the target (or the target has no source),
- but it is required by consumers.
+  but it is required by consumers.
 - **Mechanism:** Populates the target's `INTERFACE_` properties but not the build properties.
 - **Use Case:**
- - **Header-Only Libraries:** There is no binary to compile, so `PRIVATE` build requirements do not
- exist.
- - **Forward Declarations:** `LibA` forward declares a type in its header, but the consumer must
- include the full definition.
+- **Header-Only Libraries:** There is no binary to compile, so `PRIVATE` build requirements do not
+  exist.
+- **Forward Declarations:** `LibA` forward declares a type in its header, but the consumer must
+  include the full definition.
 
 ### 3. PUBLIC (Transitivity)
 
 - **Semantics:** The property is required for **both** building the target and by consumers.
 - **Mechanism:** Populates both the build properties and the `INTERFACE_` properties.
 - **Use Case:** Public API dependencies. If `LibA` includes `<fmt/core.h>` in its public header
- `liba.h`Then any consumer of `LibA` must also have access to `fmt`'s include path.
+  `liba.h`Then any consumer of `LibA` must also have access to `fmt`'s include path.
 
 ### Proof of Property Propagation Rules
 
-**Claim:** When target `B` links against target `A` with scope `S`The `INTERFACE_` properties of
-`A` propagate to `B` if and only if `S` is `PUBLIC` or `INTERFACE`.
+**Claim:** When target `B` links against target `A` with scope `S`The `INTERFACE_` properties of `A`
+propagate to `B` if and only if `S` is `PUBLIC` or `INTERFACE`.
 
 **Proof:**
 
@@ -69,16 +72,16 @@ INTERFACE, PUBLIC\}$.
 Define the propagation function $P(T, S)$ where $T$ is a target and $S$ is a scope:
 
 - If $S = PRIVATE$: $P$ sets the build properties of the dependent target but does not modify
- `INTERFACE_` properties. No propagation to downstream consumers.
+  `INTERFACE_` properties. No propagation to downstream consumers.
 - If $S = INTERFACE$: $P$ sets only the `INTERFACE_` properties of the dependent target. The
- dependent target's build properties are unchanged, but downstream consumers will see these
- `INTERFACE_` properties.
+  dependent target's build properties are unchanged, but downstream consumers will see these
+  `INTERFACE_` properties.
 - If $S = PUBLIC$: $P$ sets both the build properties and the `INTERFACE_` properties. The dependent
- target gets the property for its own build, and all downstream consumers inherit it.
+  target gets the property for its own build, and all downstream consumers inherit it.
 
 The `INTERFACE_LINK_LIBRARIES` of a target $T$ is the transitive closure of all `PUBLIC` and
-`INTERFACE` edges reachable from $T$. When consumer $C$ links against $T$ with scope `S`CMake
-Merges `T`'s `INTERFACE_LINK_LIBRARIES` into $C$'s link list if $S \in \{PUBLIC, INTERFACE\}$.
+`INTERFACE` edges reachable from $T$. When consumer $C$ links against $T$ with scope `S`CMake Merges
+`T`'s `INTERFACE_LINK_LIBRARIES` into $C$'s link list if $S \in \{PUBLIC, INTERFACE\}$.
 
 $\therefore$ A `PRIVATE` dependency creates a dead end in the propagation graph. Only `PUBLIC` and
 `INTERFACE` edges allow information flow to downstream consumers. $\blacksquare$
@@ -130,30 +133,30 @@ Tightly coupled architecture.
 The following table enumerates every CMake property that supports visibility scopes and documents
 The propagation behavior for each.
 
-| Property | `PRIVATE` (build only) | `INTERFACE` (consumers only) | `PUBLIC` (both) | Target command |
+| Property                    | `PRIVATE` (build only) | `INTERFACE` (consumers only) | `PUBLIC` (both) | Target command                       |
 | :-------------------------- | :--------------------- | :--------------------------- | :-------------- | :----------------------------------- |
-| Include directories | Yes | Yes | Yes | `target_include_directories` |
-| Compile definitions | Yes | Yes | Yes | `target_compile_definitions` |
-| Compile features | Yes | Yes | Yes | `target_compile_features` |
-| Compile options | Yes | Yes | Yes | `target_compile_options` |
-| Link libraries | Yes | Yes | Yes | `target_link_libraries` |
-| Link options | Yes | Yes | Yes | `target_link_options` |
-| Link directories | Yes | Yes | Yes | `target_link_directories` |
-| Precompiled headers | Yes | No | No | `target_precompile_headers` |
-| Sources | Yes | No | No | `target_sources` |
-| Position independent code | Yes | No | No | `set_target_properties(PIC)` |
-| C++ standard level | Yes | No | No | `target_compile_features` |
-| System include directories | Yes | Yes | Yes | `target_include_directories(SYSTEM)` |
-| Autogen include directories | Yes | No | No | `target_include_directories` (Qt) |
+| Include directories         | Yes                    | Yes                          | Yes             | `target_include_directories`         |
+| Compile definitions         | Yes                    | Yes                          | Yes             | `target_compile_definitions`         |
+| Compile features            | Yes                    | Yes                          | Yes             | `target_compile_features`            |
+| Compile options             | Yes                    | Yes                          | Yes             | `target_compile_options`             |
+| Link libraries              | Yes                    | Yes                          | Yes             | `target_link_libraries`              |
+| Link options                | Yes                    | Yes                          | Yes             | `target_link_options`                |
+| Link directories            | Yes                    | Yes                          | Yes             | `target_link_directories`            |
+| Precompiled headers         | Yes                    | No                           | No              | `target_precompile_headers`          |
+| Sources                     | Yes                    | No                           | No              | `target_sources`                     |
+| Position independent code   | Yes                    | No                           | No              | `set_target_properties(PIC)`         |
+| C++ standard level          | Yes                    | No                           | No              | `target_compile_features`            |
+| System include directories  | Yes                    | Yes                          | Yes             | `target_include_directories(SYSTEM)` |
+| Autogen include directories | Yes                    | No                           | No              | `target_include_directories` (Qt)    |
 
 ### Key Observations
 
 1. **Not all properties propagate.** `target_sources``target_precompile_headers`And position
- independent code settings are always `PRIVATE` and cannot be made transitive.
+   independent code settings are always `PRIVATE` and cannot be made transitive.
 2. **Include directories and compile definitions are the most commonly propagated properties.**
- These are the properties that directly affect whether a consumer can compile against a library.
+   These are the properties that directly affect whether a consumer can compile against a library.
 3. **Link libraries are the most dangerous property to propagate.** Every `PUBLIC` link library adds
- to the transitive closure, increasing compile times and binary size.
+   to the transitive closure, increasing compile times and binary size.
 
 ## Interface Libraries
 
@@ -296,11 +299,11 @@ Disabling warnings for those specific paths while maintaining visibility.
 ## Architectural Best Practices
 
 1. **Default to PRIVATE:** Start with `PRIVATE` visibility for all dependencies. Only escalate to
- `PUBLIC` if a type from the dependency appears in your public headers.
+   `PUBLIC` if a type from the dependency appears in your public headers.
 2. **Avoid Global State:** Never use `include_directories()` or `link_libraries()`. These apply to
- the directory scope and break the encapsulation of the dependency graph.
+   the directory scope and break the encapsulation of the dependency graph.
 3. **Use Interface Targets:** Centralize warning levels, sanitizers, and architecture flags into an
- `INTERFACE` target rather than repeating variables across multiple `CMakeLists.txt` files.
+   `INTERFACE` target rather than repeating variables across multiple `CMakeLists.txt` files.
 
 ## Build Property Categories
 
@@ -327,7 +330,7 @@ target_compile_definitions(Core PRIVATE
 
 - `Core` sees both `CORE_VERSION` and `CORE_INTERNAL_LOGGING`.
 - Any target linking `Core` (e.g., `Engine`) sees `CORE_VERSION` but **not**
- `CORE_INTERNAL_LOGGING`.
+  `CORE_INTERNAL_LOGGING`.
 
 ### Include Directories
 
@@ -491,14 +494,14 @@ target_link_libraries(my-app PRIVATE http-client)
 
 ### What `my-app` Sees
 
-| Property | Propagated to `my-app`? | Reason |
+| Property                       | Propagated to `my-app`? | Reason                                             |
 | :----------------------------- | :---------------------- | :------------------------------------------------- |
-| `http-client` include dir | Yes | `PUBLIC` on `http-client` |
-| `nlohmann_json::nlohmann_json` | Yes | `PUBLIC` on `http-client` |
-| `nlohmann_json` include dir | Yes | Transitive via `PUBLIC` link |
-| `CURL::libcurl` | No | `PRIVATE` on `http-client` |
-| `OpenSSL` | No | `PRIVATE` on `libcurl` (if set correctly by vcpkg) |
-| `zlib` | No | `PRIVATE` on `libcurl` (if set correctly by vcpkg) |
+| `http-client` include dir      | Yes                     | `PUBLIC` on `http-client`                          |
+| `nlohmann_json::nlohmann_json` | Yes                     | `PUBLIC` on `http-client`                          |
+| `nlohmann_json` include dir    | Yes                     | Transitive via `PUBLIC` link                       |
+| `CURL::libcurl`                | No                      | `PRIVATE` on `http-client`                         |
+| `OpenSSL`                      | No                      | `PRIVATE` on `libcurl` (if set correctly by vcpkg) |
+| `zlib`                         | No                      | `PRIVATE` on `libcurl` (if set correctly by vcpkg) |
 
 **Result:** `my-app` can include `<nlohmann/json.hpp>` and `<http_client.h>` but cannot directly
 Include `<curl/curl.h>`. If `my-app` needs curl directly, it must add `CURL::libcurl` to its own
@@ -517,9 +520,9 @@ target_link_libraries(http-client
 )
 ```
 
-Now `my-app` inherits `CURL::libcurl`And with it, the transitive `OpenSSL` and `zlib`
-Dependencies. This is the correct behavior: the compiler needs OpenSSL headers to compile code that
-Includes `http_client.h`.
+Now `my-app` inherits `CURL::libcurl`And with it, the transitive `OpenSSL` and `zlib` Dependencies.
+This is the correct behavior: the compiler needs OpenSSL headers to compile code that Includes
+`http_client.h`.
 
 ## Generator Expressions for Conditional Propagation
 
@@ -585,16 +588,16 @@ target_link_libraries(my-app PRIVATE json-wrapper)
 Every `target_link_libraries` call with `PUBLIC` or `INTERFACE` scope triggers the propagation of
 All `INTERFACE_*` properties from the linked target. The complete list of propagated properties:
 
-| Propagated Property | Set by | Effect on consumer |
+| Propagated Property                   | Set by                                   | Effect on consumer                     |
 | :------------------------------------ | :--------------------------------------- | :------------------------------------- |
-| `INTERFACE_INCLUDE_DIRECTORIES` | `target_include_directories(... PUBLIC)` | Adds to consumer's `-I` paths |
-| `INTERFACE_COMPILE_DEFINITIONS` | `target_compile_definitions(... PUBLIC)` | Adds to consumer's `-D` flags |
-| `INTERFACE_COMPILE_OPTIONS` | `target_compile_options(... PUBLIC)` | Adds to consumer's compiler flags |
-| `INTERFACE_LINK_LIBRARIES` | `target_link_libraries(... PUBLIC)` | Links consumer against transitive deps |
-| `INTERFACE_LINK_OPTIONS` | `target_link_options(... PUBLIC)` | Adds to consumer's linker flags |
-| `INTERFACE_LINK_DIRECTORIES` | `target_link_directories(... PUBLIC)` | Adds to consumer's `-L` paths |
-| `INTERFACE_COMPILE_FEATURES` | `target_compile_features(... PUBLIC)` | Enables C++ features for consumer |
-| `INTERFACE_POSITION_INDEPENDENT_CODE` | `set_target_properties(PIC)` | Enables PIC for consumer |
+| `INTERFACE_INCLUDE_DIRECTORIES`       | `target_include_directories(... PUBLIC)` | Adds to consumer's `-I` paths          |
+| `INTERFACE_COMPILE_DEFINITIONS`       | `target_compile_definitions(... PUBLIC)` | Adds to consumer's `-D` flags          |
+| `INTERFACE_COMPILE_OPTIONS`           | `target_compile_options(... PUBLIC)`     | Adds to consumer's compiler flags      |
+| `INTERFACE_LINK_LIBRARIES`            | `target_link_libraries(... PUBLIC)`      | Links consumer against transitive deps |
+| `INTERFACE_LINK_OPTIONS`              | `target_link_options(... PUBLIC)`        | Adds to consumer's linker flags        |
+| `INTERFACE_LINK_DIRECTORIES`          | `target_link_directories(... PUBLIC)`    | Adds to consumer's `-L` paths          |
+| `INTERFACE_COMPILE_FEATURES`          | `target_compile_features(... PUBLIC)`    | Enables C++ features for consumer      |
+| `INTERFACE_POSITION_INDEPENDENT_CODE` | `set_target_properties(PIC)`             | Enables PIC for consumer               |
 
 This is why a single `PUBLIC` link can cause a cascade of changes: it propagates not just the link
 Dependency, but all of the linked target's own transitive usage requirements.
@@ -602,29 +605,29 @@ Dependency, but all of the linked target's own transitive usage requirements.
 ## Common Pitfalls
 
 1. **Overusing PUBLIC:** The most common mistake is making every dependency `PUBLIC` "just in case."
- This bloats the transitive closure, increases compile times (more headers to parse), and creates
- fragile coupling. Start with `PRIVATE` and escalate only when needed.
+   This bloats the transitive closure, increases compile times (more headers to parse), and creates
+   fragile coupling. Start with `PRIVATE` and escalate only when needed.
 2. **Header-only libraries as PRIVATE:** A header-only library linked as `PRIVATE` means its include
- directories are not propagated. If any header in the target's public interface includes the
- header-only library's headers, consumers will fail to compile.
+   directories are not propagated. If any header in the target's public interface includes the
+   header-only library's headers, consumers will fail to compile.
 3. **Mismatched `INTERFACE` and `PUBLIC` in installed packages:** When exporting a CMake package via
- `install(EXPORT ...)`The `PUBLIC` and `INTERFACE` properties must be correctly specified. If a
- dependency is `PUBLIC` in the build tree but not exported in the install tree, installed
- consumers will get linker errors.
+   `install(EXPORT ...)`The `PUBLIC` and `INTERFACE` properties must be correctly specified. If a
+   dependency is `PUBLIC` in the build tree but not exported in the install tree, installed
+   consumers will get linker errors.
 4. **`SYSTEM` include directories:** Using `SYSTEM` on your own project's headers (not third-party)
- can mask legitimate warnings. Reserve `SYSTEM` for external dependencies only.
+   can mask legitimate warnings. Reserve `SYSTEM` for external dependencies only.
 5. **Generator expressions in wrong scope:** A generator expression like `$<CONFIG:Debug>` in a
- `PUBLIC` compile option propagates to consumers. If the consumer has a different configuration,
- the option may be silently ignored or incorrectly applied. Use `PRIVATE` for
- configuration-specific options.
+   `PUBLIC` compile option propagates to consumers. If the consumer has a different configuration,
+   the option may be silently ignored or incorrectly applied. Use `PRIVATE` for
+   configuration-specific options.
 6. **Circular transitive dependencies:** If `A` links `B` PUBLIC and `B` links `A` PUBLIC, CMake
- detects a cycle and errors. This indicates a design flaw: the two libraries should be merged or
- the dependency should be made PRIVATE on at least one side.
+   detects a cycle and errors. This indicates a design flaw: the two libraries should be merged or
+   the dependency should be made PRIVATE on at least one side.
 7. **Forgetting that `target_link_libraries` propagates more than just linking.** When you write
- `target_link_libraries(MyLib PUBLIC OtherLib)`You are not just adding a linker dependency. You
- are also propagating all of `OtherLib`'s include directories, compile definitions, compile
- options, and link options to every consumer of `MyLib`. This can cause unexpected side effects
- like inheriting warning suppression flags or optimization flags from transitive dependencies.
+   `target_link_libraries(MyLib PUBLIC OtherLib)`You are not just adding a linker dependency. You
+   are also propagating all of `OtherLib`'s include directories, compile definitions, compile
+   options, and link options to every consumer of `MyLib`. This can cause unexpected side effects
+   like inheriting warning suppression flags or optimization flags from transitive dependencies.
 
 ## Property Propagation Debugging
 
@@ -666,38 +669,38 @@ add_custom_target(debug_props
 ### Common Diagnostic Patterns
 
 1. **"Cannot find -lfoo" at link time:** The library is linked with `PUBLIC` but the include
- directory is `PRIVATE`So the consumer cannot find the headers. Or the library is linked as
- `PRIVATE` but the consumer's header includes it.
+   directory is `PRIVATE`So the consumer cannot find the headers. Or the library is linked as
+   `PRIVATE` but the consumer's header includes it.
 2. **"Undeclared identifier" in consumer:** A `PUBLIC` include directory is missing. The dependency
- is linked but its include paths are not propagated.
+   is linked but its include paths are not propagated.
 3. **Unexpected compile flags in consumer:** A dependency sets `target_compile_options(PUBLIC ...)`
- on a third-party library's target, which propagates unwanted flags. Fix by wrapping the
- third-party library in an `INTERFACE` target with only the necessary properties.
+   on a third-party library's target, which propagates unwanted flags. Fix by wrapping the
+   third-party library in an `INTERFACE` target with only the necessary properties.
 
 ## Generator Expression Quick Reference
 
 The following table lists commonly used generator expressions for property propagation control.
 
-| Expression | Evaluates to | Use case |
+| Expression                                       | Evaluates to                           | Use case                        |
 | :----------------------------------------------- | :------------------------------------- | :------------------------------ |
-| `$<CONFIG:Debug>` | `1` in Debug, `0` otherwise | Configuration-specific options |
-| `$<PLATFORM_ID:Linux>` | `1` on Linux, `0` otherwise | Platform-specific options |
-| `$<CXX_COMPILER_ID:Clang>` | `1` for Clang, `0` otherwise | Compiler-specific options |
-| `$<BUILD_INTERFACE:...>` | Value in build tree only | Build-tree-only include paths |
-| `$<INSTALL_INTERFACE:...>` | Value in install tree only | Install-tree-only include paths |
-| `$<TARGET_EXISTS:foo>` | `1` if target `foo` exists | Conditional linking |
-| `$<LINK_ONLY:foo>` | Link `foo` but do not add include dirs | Header-only library separation |
-| `$<STREQUAL:${CMAKE_BUILD_TYPE},Release>` | `1` in Release builds | Build-type comparison |
-| `$<BOOL:${ENABLE_FEATURE}>` | `1` if option is truthy | Option-based conditional |
-| `$<COMPILE_LANGUAGE:CXX>` | `1` for C++ sources only | C++-only compile options |
-| `$<COMPILE_LANGUAGE:C>` | `1` for C sources only | C-only compile options |
-| `$<AND:$<CONFIG:Debug>,$<PLATFORM_ID:Linux>>` | Logical AND | Complex conditions |
-| `$<OR:$<CONFIG:Debug>,$<CONFIG:RelWithDebInfo>>` | Logical OR | Multiple config conditions |
+| `$<CONFIG:Debug>`                                | `1` in Debug, `0` otherwise            | Configuration-specific options  |
+| `$<PLATFORM_ID:Linux>`                           | `1` on Linux, `0` otherwise            | Platform-specific options       |
+| `$<CXX_COMPILER_ID:Clang>`                       | `1` for Clang, `0` otherwise           | Compiler-specific options       |
+| `$<BUILD_INTERFACE:...>`                         | Value in build tree only               | Build-tree-only include paths   |
+| `$<INSTALL_INTERFACE:...>`                       | Value in install tree only             | Install-tree-only include paths |
+| `$<TARGET_EXISTS:foo>`                           | `1` if target `foo` exists             | Conditional linking             |
+| `$<LINK_ONLY:foo>`                               | Link `foo` but do not add include dirs | Header-only library separation  |
+| `$<STREQUAL:${CMAKE_BUILD_TYPE},Release>`        | `1` in Release builds                  | Build-type comparison           |
+| `$<BOOL:${ENABLE_FEATURE}>`                      | `1` if option is truthy                | Option-based conditional        |
+| `$<COMPILE_LANGUAGE:CXX>`                        | `1` for C++ sources only               | C++-only compile options        |
+| `$<COMPILE_LANGUAGE:C>`                          | `1` for C sources only                 | C-only compile options          |
+| `$<AND:$<CONFIG:Debug>,$<PLATFORM_ID:Linux>>`    | Logical AND                            | Complex conditions              |
+| `$<OR:$<CONFIG:Debug>,$<CONFIG:RelWithDebInfo>>` | Logical OR                             | Multiple config conditions      |
 
 ## See Also
 
 - [Dependency Resolution](1_dependency_architectures_models.md) -- How the dependency graph is
- constructed
+  constructed
 - [vcpkg](3_vcpkg.md) -- How vcpkg manages property propagation for installed packages
 - [CPM.cmake](2_cpm.md) -- How `add_subdirectory` merges dependency properties
 - [Binary Caching](6_binary_caching.md) -- Binary artifacts and their dependency metadata

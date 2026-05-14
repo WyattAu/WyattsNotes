@@ -1,6 +1,8 @@
 ---
 title: Life on Earth
-description: "Life on Earth — Higher Biodiversity and Evolution; Classification; Biodiversity; Sampling Techniques with worked examples and exam-style questions."
+description:
+  'Life on Earth — Higher Biodiversity and Evolution; Classification; Biodiversity; Sampling
+  Techniques with worked examples and exam-style questions.'
 date: 2026-04-14
 tags:
   - Biology
@@ -9,6 +11,7 @@ categories:
   - Biology
 slug: life-on-earth
 ---
+
 # Life on Earth
 
 ## Higher Biodiversity and Evolution
@@ -27,13 +30,13 @@ Organisms are classified into a hierarchical system:
 
 **The Five Kingdoms (traditional):**
 
-| Kingdom | Cell type | Organisation | Nutrition |
+| Kingdom     | Cell type   | Organisation           | Nutrition                    |
 | ----------- | ----------- | ---------------------- | ---------------------------- |
-| Animalia | Eukaryotic | Multicellular | Heterotrophic |
-| Plantae | Eukaryotic | Multicellular | Autotrophic (photosynthesis) |
-| Fungi | Eukaryotic | Multicellular (mostly) | Heterotrophic (absorption) |
-| Protoctista | Eukaryotic | Mostly unicellular | Both |
-| Prokaryotae | Prokaryotic | Unicellular | Various |
+| Animalia    | Eukaryotic  | Multicellular          | Heterotrophic                |
+| Plantae     | Eukaryotic  | Multicellular          | Autotrophic (photosynthesis) |
+| Fungi       | Eukaryotic  | Multicellular (mostly) | Heterotrophic (absorption)   |
+| Protoctista | Eukaryotic  | Mostly unicellular     | Both                         |
+| Prokaryotae | Prokaryotic | Unicellular            | Various                      |
 
 **Binomial nomenclature:** Two-part Latin name: Genus species (e.g., Homo sapiens).
 
@@ -120,11 +123,11 @@ Cover.
 
 - **Fossil record:** Shows gradual changes in species over time and transitional forms
 - **Comparative anatomy:** Homologous structures (same origin, different function, e.g., pentadactyl
- limb)
+  limb)
 - **Comparative biochemistry:** Similar DNA and protein sequences in related species
 - **Embryology:** Similar early embryonic development in vertebrates
 - **Geographical distribution:** Species on islands resemble mainland species (e.g., Darwin's
- finches)
+  finches)
 
 ### Speciation
 
@@ -203,22 +206,23 @@ One tree supporting many insects).
 
 **Nitrogen Cycle:**
 
-1. **Nitrogen fixation:** $\mathrm{N{}_2 \to \mathrm{NH{}_3$ (by nitrogen-fixing bacteria in root nodules
- or lightning)
-2. **Nitrification:** $\mathrm{NH{}_3 \to \mathrm{NO{}_2^- \to \mathrm{NO{}_3^-$ (by nitrifying bacteria)
+1. **Nitrogen fixation:** $\mathrm{N{}_2 \to \mathrm{NH{}_3$ (by nitrogen-fixing bacteria in root
+   nodules or lightning)
+2. **Nitrification:** $\mathrm{NH{}_3 \to \mathrm{NO{}_2^- \to \mathrm{NO{}_3^-$ (by nitrifying
+   bacteria)
 3. **Assimilation:** Plants absorb $\mathrm{NO{}_3^-$; animals obtain nitrogen by eating plants
 4. **Ammonification:** Dead organisms/urea/faeces $\to \mathrm{NH{}_3$ (by decomposers)
 5. **Denitrification:** $\mathrm{NO{}_3^- \to \mathrm{N{}_2$ (by denitrifying bacteria in anaerobic
- conditions)
+   conditions)
 
 **Summary table: nitrogen cycle bacteria.**
 
-| Process | Bacteria | Product | Conditions |
-| ----------------- | ------------------------- | ----------------------- | ---------- |
-| Nitrogen fixation | Rhizobium, Azotobacter | Ammonia ($\mathrm{NH{}_3$) | Aerobic |
-| Nitrification | Nitrosomonas, Nitrobacter | Nitrite, nitrate | Aerobic |
-| Denitrification | Pseudomonas | $\mathrm{N{}_2$ gas | Anaerobic |
-| Ammonification | Decomposers | Ammonia | Both |
+| Process           | Bacteria                  | Product                    | Conditions |
+| ----------------- | ------------------------- | -------------------------- | ---------- |
+| Nitrogen fixation | Rhizobium, Azotobacter    | Ammonia ($\mathrm{NH{}_3$) | Aerobic    |
+| Nitrification     | Nitrosomonas, Nitrobacter | Nitrite, nitrate           | Aerobic    |
+| Denitrification   | Pseudomonas               | $\mathrm{N{}_2$ gas        | Anaerobic  |
+| Ammonification    | Decomposers               | Ammonia                    | Both       |
 
 ### Human Impact on Ecosystems
 
@@ -236,7 +240,7 @@ One tree supporting many insects).
 
 - Increased $\mathrm{CO{}_2$ and other greenhouse gases enhance the greenhouse effect
 - Consequences: rising temperatures, sea level rise, changes in species distribution, increased
- extreme weather
+  extreme weather
 
 **Sustainable resource management:**
 
@@ -251,8 +255,8 @@ One tree supporting many insects).
 ## Common Pitfalls
 
 1. **Biodiversity measures:** Species richness and species evenness are different. A habitat with 2
- species (50 each) and one with 2 species (90 and 10) have the same richness but different
- evenness.
+   species (50 each) and one with 2 species (90 and 10) have the same richness but different
+   evenness.
 
 2. **Simpson's Index:** Higher values indicate greater diversity.
 
@@ -261,30 +265,30 @@ One tree supporting many insects).
 4. **Speciation:** Allopatric speciation requires geographic isolation; sympatric does not.
 
 5. **Nitrogen fixation:** Not all bacteria can fix nitrogen. Only specific species (e.g., Rhizobium
- in legume root nodules) can convert $\mathrm{N{}_2$ to $\mathrm{NH{}_3$.
+   in legume root nodules) can convert $\mathrm{N{}_2$ to $\mathrm{NH{}_3$.
 
 6. **Confusing nitrification and denitrification.** Nitrification converts ammonia to nitrate
- (useful for plants); denitrification converts nitrate to nitrogen gas (removes nitrogen).
+   (useful for plants); denitrification converts nitrate to nitrogen gas (removes nitrogen).
 
 7. **Forgetting that decomposers are essential for nutrient cycling.** Without decomposers,
- nutrients would remain locked in dead organisms.
+   nutrients would remain locked in dead organisms.
 
 8. **Confusing habitat and niche.** Habitat is where an organism lives; niche is its role in the
- ecosystem (how it interacts with other organisms and the environment).
+   ecosystem (how it interacts with other organisms and the environment).
 
 9. **Forgetting that plants respire.** Plants carry out both photosynthesis and respiration. At
- night, they only respire (net release of $\mathrm{CO{}_2$). During the day, photosynthesis exceeds
- respiration (net uptake of $\mathrm{CO{}_2$).
+   night, they only respire (net release of $\mathrm{CO{}_2$). During the day, photosynthesis
+   exceeds respiration (net uptake of $\mathrm{CO{}_2$).
 
 10. **Assuming all energy at one trophic level is transferred to the next.** Only about 10% is
- transferred; the rest is lost. This limits food chains to 4-5 trophic levels.
+    transferred; the rest is lost. This limits food chains to 4-5 trophic levels.
 
 ---
 
 ## Practice Questions
 
 1. Calculate Simpson's Diversity Index for a habitat with the following species: Species A (40),
- Species B (30), Species C (20), Species D (10).
+   Species B (30), Species C (20), Species D (10).
 
 2. Describe the evidence for evolution from (a) the fossil record and (b) comparative anatomy.
 
@@ -299,55 +303,55 @@ One tree supporting many insects).
 7. Compare allopatric and sympatric speciation.
 
 8. Explain why a pyramid of biomass for a tree ecosystem is often inverted, but a pyramid of energy
- is not.
+   is not.
 
 9. A student uses quadrats to estimate the population of daisies in a 100 m $\times$ 50 m field. The
- quadrat is 1 m $\times$ 1 m. The mean number of daisies per quadrat is 12. Estimate the total
- population.
+   quadrat is 1 m $\times$ 1 m. The mean number of daisies per quadrat is 12. Estimate the total
+   population.
 
 10. Explain the role of nitrogen-fixing bacteria in the nitrogen cycle and describe the conditions
- under which they are most active.
+    under which they are most active.
 
 11. Describe three structural, three behavioural, and three physiological adaptations of an organism
- of your choice to its environment.
+    of your choice to its environment.
 
 12. Explain why conservation of biodiversity is important, giving three reasons.
 
 13. A lake receives runoff from a nearby farm that uses nitrate fertilisers. Describe the sequence
- of events that leads to the death of fish in the lake.
+    of events that leads to the death of fish in the lake.
 
 14. Compare the carbon cycle and the nitrogen cycle, focusing on the role of microorganisms in each.
 
 15. Explain how deforestation contributes to both biodiversity loss and climate change.
 
 16. Describe how a transect can be used to study the distribution of organisms along an
- environmental gradient.
+    environmental gradient.
 
 17. Explain the concept of an ecological niche and why two species cannot occupy the same niche
- indefinitely (competitive exclusion principle).
+    indefinitely (competitive exclusion principle).
 
 18. Describe the evidence from comparative biochemistry (DNA and protein sequences) that supports
- the theory of evolution.
+    the theory of evolution.
 
 19. Explain why captive breeding programmes are used for endangered species and describe two
- potential problems with releasing captive-bred animals into the wild.
+    potential problems with releasing captive-bred animals into the wild.
 
 20. A forest has Simpson's Diversity Index of 0.85. After deforestation, the index drops to 0.35.
- Explain what this means and describe the likely consequences for the ecosystem.
+    Explain what this means and describe the likely consequences for the ecosystem.
 
 21. Explain the role of mycorrhizae in plant nutrition and describe how this is an example of
- mutualism.
+    mutualism.
 
 22. Describe how the mark-release-recapture method is used to estimate animal population sizes,
- including the assumptions and potential sources of error.
+    including the assumptions and potential sources of error.
 
 23. Explain why intraspecific competition is more intense than interspecific competition.
 
 24. Describe the process of succession in a previously barren habitat (primary succession) and
- explain how it leads to a climax community.
+    explain how it leads to a climax community.
 
 25. Explain how bioaccumulation and biomagnification affect organisms at different trophic levels,
- using DDT as an example.
+    using DDT as an example.
 
 ## Review: Evolution -- Darwin's Theory in Detail
 
@@ -358,7 +362,7 @@ One tree supporting many insects).
 3. Some variation is heritable (passed from parent to offspring).
 4. There is competition for limited resources (struggle for existence).
 5. Individuals with advantageous variations are more likely to survive and reproduce (natural
- selection).
+   selection).
 6. Over many generations, advantageous characteristics become more common in the population.
 
 **Key insight:** Natural selection acts on the phenotype (the observable characteristics), but the
@@ -386,12 +390,12 @@ Transitions.
 **Comparative anatomy:**
 
 - **Homologous structures:** Same basic structure and evolutionary origin but different functions
- (e.g., the pentadactyl limb in humans, bats, whales, and horses). Evidence for common ancestry.
+  (e.g., the pentadactyl limb in humans, bats, whales, and horses). Evidence for common ancestry.
 - **Analogous structures:** Similar function but different evolutionary origin (e.g., wings of birds
- and insects). Evidence for convergent evolution (similar selection pressures leading to similar
- adaptations).
+  and insects). Evidence for convergent evolution (similar selection pressures leading to similar
+  adaptations).
 - **Vestigial structures:** Remnants of structures that were functional in ancestors but have lost
- their function (e.g., the human appendix, pelvic bones in whales, wings in flightless birds).
+  their function (e.g., the human appendix, pelvic bones in whales, wings in flightless birds).
 
 **Comparative embryology:** Early embryos of vertebrates (fish, amphibians, reptiles, birds,
 Mammals) look remarkably similar, suggesting a common ancestry. Features such as pharyngeal pouches
@@ -415,11 +419,11 @@ Chromosomes, making them reproductively isolated from the parent population).
 **Reproductive isolation mechanisms:**
 
 - **Pre-zygotic:** Habitat isolation, temporal isolation (different breeding seasons), behavioural
- isolation (different courtship displays), mechanical isolation (incompatible reproductive
- structures), gametic isolation (sperm and egg cannot fuse).
+  isolation (different courtship displays), mechanical isolation (incompatible reproductive
+  structures), gametic isolation (sperm and egg cannot fuse).
 - **Post-zygotic:** Hybrid inviability (hybrid offspring do not survive), hybrid sterility (hybrid
- offspring are sterile, e.g., mules), hybrid breakdown (first-generation hybrids are fertile but
- subsequent generations are not).
+  offspring are sterile, e.g., mules), hybrid breakdown (first-generation hybrids are fertile but
+  subsequent generations are not).
 
 ## Review: Sampling Techniques and Statistics
 
@@ -464,12 +468,12 @@ Because they contain an estimated 50% of all terrestrial species.
 **Pollution:**
 
 - **Eutrophication:** Caused by nitrate and phosphate fertiliser runoff. Algal blooms block light,
- dead algae are decomposed by bacteria that use up oxygen, killing aquatic organisms.
+  dead algae are decomposed by bacteria that use up oxygen, killing aquatic organisms.
 - **Bioaccumulation:** Persistent toxins (e.g., DDT, mercury) accumulate in fatty tissue and
- increase in concentration at each trophic level (biomagnification).
+  increase in concentration at each trophic level (biomagnification).
 - **Acid rain:** Sulphur dioxide and nitrogen oxides from burning fossil fuels dissolve in
- atmospheric moisture to form acids. Acid rain damages forests, acidifies lakes, and corrodes
- buildings.
+  atmospheric moisture to form acids. Acid rain damages forests, acidifies lakes, and corrodes
+  buildings.
 
 **Climate change:** Rising atmospheric $\mathrm{CO{}_2$ from burning fossil fuels enhances the
 Greenhouse effect. Consequences include rising sea levels (thermal expansion of water and melting
@@ -486,13 +490,13 @@ Contaminated organisms.
 
 ## Review: Ecological Relationships
 
-| Type | Effect on A | Effect on B | Example |
+| Type         | Effect on A | Effect on B | Example                                                                      |
 | ------------ | ----------- | ----------- | ---------------------------------------------------------------------------- |
-| Mutualism | + | + | Nitrogen-fixing bacteria in legume root nodules; mycorrhizae and plant roots |
-| Commensalism | + | 0 | Barnacles on a whale; epiphytes on trees |
-| Parasitism | + | - | Tapeworms in mammals; fleas on dogs |
-| Predation | + | - | Foxes eating rabbits; owls eating mice |
-| Competition | - | - | Two species competing for the same resource |
+| Mutualism    | +           | +           | Nitrogen-fixing bacteria in legume root nodules; mycorrhizae and plant roots |
+| Commensalism | +           | 0           | Barnacles on a whale; epiphytes on trees                                     |
+| Parasitism   | +           | -           | Tapeworms in mammals; fleas on dogs                                          |
+| Predation    | +           | -           | Foxes eating rabbits; owls eating mice                                       |
+| Competition  | -           | -           | Two species competing for the same resource                                  |
 
 **Competitive exclusion principle:** Two species cannot occupy exactly the same ecological niche
 Indefinitely. One will eventually outcompete the other. In practice, species with similar niches
@@ -516,7 +520,7 @@ Rapidly than primary succession.
 3. Larger plants (e.g., gorse, brambles) establish, further improving the soil.
 4. Trees (e.g., birch, then oak) colonise, shading out the earlier species.
 5. A climax community of oak woodland is established, which remains stable until the next major
- disturbance.
+   disturbance.
 
 ## Review: Classification and Phylogeny
 
@@ -526,12 +530,12 @@ Rapidly than primary succession.
 Organisms are classified into three domains:
 
 - **Domain Bacteria:** True bacteria. Single-celled prokaryotes. Cell walls contain peptidoglycan.
- Found in nearly all environments on Earth.
+  Found in nearly all environments on Earth.
 - **Domain Archaea:** Prokaryotes that are more closely related to eukaryotes than to bacteria based
- on rRNA analysis. Often extremophiles (living in extreme conditions such as hot springs, salt
- lakes, deep-sea vents). Cell walls do not contain peptidoglycan.
+  on rRNA analysis. Often extremophiles (living in extreme conditions such as hot springs, salt
+  lakes, deep-sea vents). Cell walls do not contain peptidoglycan.
 - **Domain Eukarya:** All eukaryotic organisms. Includes kingdoms Animalia, Plantae, Fungi, and
- Protista.
+  Protista.
 
 **Why the three-domain system replaced the five-kingdom system:** Molecular evidence (particularly
 RRNA sequencing) revealed that the differences between bacteria and archaea are as great as the
@@ -567,29 +571,31 @@ Geosphere.
 
 **Key processes and the carbon reservoirs they connect:**
 
-1. **Photosynthesis:** Atmospheric $\mathrm{CO{}_2$ is fixed into organic compounds by plants, algae,
- and cyanobacteria. Approximately 120 gigatonnes of carbon are fixed by photosynthesis each year.
-2. **Respiration:** Organic compounds are oxidised to release $\mathrm{CO{}_2$Returning carbon to the
- atmosphere. This occurs in all living organisms.
+1. **Photosynthesis:** Atmospheric $\mathrm{CO{}_2$ is fixed into organic compounds by plants,
+   algae, and cyanobacteria. Approximately 120 gigatonnes of carbon are fixed by photosynthesis each
+   year.
+2. **Respiration:** Organic compounds are oxidised to release $\mathrm{CO{}_2$Returning carbon to
+   the atmosphere. This occurs in all living organisms.
 3. **Decomposition:** Decomposers (bacteria and fungi) break down dead organic matter, releasing
- $\mathrm{CO{}_2$.
+   $\mathrm{CO{}_2$.
 4. **Combustion:** Burning fossil fuels (coal, oil, natural gas) releases stored carbon as
- $\mathrm{CO{}_2$. This is the primary cause of the recent increase in atmospheric $\mathrm{CO{}_2$.
+   $\mathrm{CO{}_2$. This is the primary cause of the recent increase in atmospheric
+   $\mathrm{CO{}_2$.
 5. **Ocean absorption:** The oceans absorb approximately 25% of anthropogenic $\mathrm{CO{}_2$
- emissions. Dissolved $\mathrm{CO{}_2$ forms carbonic acid, leading to ocean acidification.
+   emissions. Dissolved $\mathrm{CO{}_2$ forms carbonic acid, leading to ocean acidification.
 6. **Sedimentation:** Over millions of years, dead marine organisms sink to the ocean floor and are
- compressed into sedimentary rocks and fossil fuels, locking carbon away.
+   compressed into sedimentary rocks and fossil fuels, locking carbon away.
 7. **Weathering:** Silicate and carbonate rocks absorb $\mathrm{CO{}_2$ very slowly through chemical
- weathering.
+   weathering.
 
 **Worked Example: The impact of deforestation on the carbon cycle.**
 
 When a tropical rainforest is cleared:
 
-1. The trees are either burned (releasing $\mathrm{CO{}_2$ immediately) or left to decompose (releasing
- $\mathrm{CO{}_2$ gradually).
+1. The trees are either burned (releasing $\mathrm{CO{}_2$ immediately) or left to decompose
+   (releasing $\mathrm{CO{}_2$ gradually).
 2. The carbon stored in the trees (approximately 200 tonnes of carbon per hectare for tropical
- rainforest) is released to the atmosphere.
+   rainforest) is released to the atmosphere.
 3. Photosynthesis no longer removes $\mathrm{CO{}_2$ from the atmosphere in the cleared area.
 4. Soil carbon is also lost as the exposed soil is eroded and organic matter decomposes.
 5. The net effect is a significant increase in atmospheric $\mathrm{CO{}_2$.
@@ -600,19 +606,19 @@ When a tropical rainforest is cleared:
 
 1. **Bare substrate:** No soil present. The substrate could be bare rock, sand, or volcanic ash.
 2. **Pioneer community:** Lichens are often the first colonisers. Lichens are a mutualistic
- association between a fungus and an alga. They can grow on bare rock because they secrete acids
- that break down the rock surface, beginning the process of soil formation.
+   association between a fungus and an alga. They can grow on bare rock because they secrete acids
+   that break down the rock surface, beginning the process of soil formation.
 3. **Soil development:** As lichens die and decompose, organic matter accumulates, forming a thin
- layer of soil. Mosses and liverworts colonise this thin soil, adding more organic matter.
+   layer of soil. Mosses and liverworts colonise this thin soil, adding more organic matter.
 4. **Herbaceous stage:** Grasses and small herbaceous plants establish in the improving soil. Their
- roots help to bind the soil and further improve its structure and water-holding capacity.
+   roots help to bind the soil and further improve its structure and water-holding capacity.
 5. **Shrub stage:** Shrubs and small trees colonise, outcompeting the grasses and herbs for light.
 6. **Tree stage:** Larger trees establish, forming a canopy that shades out the shrubs. The
- community becomes increasingly complex with more species and more trophic levels.
+   community becomes increasingly complex with more species and more trophic levels.
 7. **Climax community:** A stable, self-sustaining community is reached. In temperate regions, this
- is oak or beech woodland. In tropical regions, it is tropical rainforest. The climax
- community remains relatively stable until a major disturbance (fire, storm, disease) resets the
- succession process.
+   is oak or beech woodland. In tropical regions, it is tropical rainforest. The climax community
+   remains relatively stable until a major disturbance (fire, storm, disease) resets the succession
+   process.
 
 ### Characteristics of a Climax Community
 
@@ -627,7 +633,7 @@ When a tropical rainforest is cleared:
 After a forest fire:
 
 1. The fire destroys above-ground vegetation but leaves the soil intact (with seeds, root systems,
- and soil organisms).
+   and soil organisms).
 2. Herbaceous plants and shrubs sprout from surviving roots and seeds within weeks to months.
 3. Fast-growing, light-loving tree species (e.g., birch, pine) colonise within a few years.
 4. Slower-growing, shade-tolerant species (e.g., oak, beech) establish beneath the pioneer trees.
@@ -641,81 +647,83 @@ Seeds and root systems survive the disturbance.
 Several factors influence how quickly succession proceeds towards a climax community:
 
 - **Climate:** Warmer, wetter climates generally support faster succession because plant growth
- rates are higher.
+  rates are higher.
 - **Soil quality:** Richer soils with higher nutrient content support faster colonisation and
- growth.
+  growth.
 - **Proximity to seed sources:** Areas closer to existing vegetation colonise more quickly because
- seeds and spores can disperse more .
+  seeds and spores can disperse more .
 - **Frequency of disturbance:** If disturbances occur too frequently, the community may never reach
- the climax stage.
+  the climax stage.
 - **Type of disturbance:** Some disturbances (e.g., fire) may leave the soil mostly intact, while
- others (e.g., mining) may remove or contaminate the soil, slowing succession.
+  others (e.g., mining) may remove or contaminate the soil, slowing succession.
 
 **Biodiversity during succession:**
 
 Biodiversity changes during the course of succession:
 
 - **Early stages:** Low species diversity but high abundance of a few pioneer species. These species
- are often r-selected (fast-growing, producing many offspring, short-lived).
+  are often r-selected (fast-growing, producing many offspring, short-lived).
 - **Middle stages:** Highest species diversity as both early and late successional species coexist.
- Niche diversity increases as the habitat becomes more structurally complex.
+  Niche diversity increases as the habitat becomes more structurally complex.
 - **Climax community:** Species diversity may stabilise or even decrease slightly compared to the
- middle stages, but the community is more stable and self-sustaining.
+  middle stages, but the community is more stable and self-sustaining.
 
 **Worked Example: Predicting the outcome of succession.**
 
 A bare rock face is exposed after a landslide. Predict the stages of primary succession:
 
 1. **Stage 1 (0--5 years):** Lichens and mosses colonise the rock surface. Weathering of the rock by
- lichen acids begins to form a thin soil layer.
+   lichen acids begins to form a thin soil layer.
 2. **Stage 2 (5--20 years):** Herbaceous plants (grasses, ferns) establish in the thin soil. Their
- roots further break up the rock and add organic matter when they die.
+   roots further break up the rock and add organic matter when they die.
 3. **Stage 3 (20--50 years):** Shrubs and small woody plants (e.g., gorse, heather) colonise. The
- deeper root systems accelerate soil formation.
+   deeper root systems accelerate soil formation.
 4. **Stage 4 (50--150 years):** Fast-growing trees (e.g., birch, Scots pine) establish, forming a
- woodland canopy that shades the pioneer species.
+   woodland canopy that shades the pioneer species.
 5. **Stage 5 (150+ years):** Slower-growing, shade-tolerant trees (e.g., oak, beech) replace the
- pioneer trees, forming the climax community.
+   pioneer trees, forming the climax community.
 
 **Nitrogen cycle:**
 
 Nitrogen is essential for the synthesis of amino acids, proteins, and nucleic acids. Although
-Nitrogen gas ($\mathrm{N{}_2$) makes up approximately 78% of the atmosphere, most organisms cannot use
-Atmospheric nitrogen directly. The nitrogen cycle converts nitrogen between different chemical
+Nitrogen gas ($\mathrm{N{}_2$) makes up approximately 78% of the atmosphere, most organisms cannot
+use Atmospheric nitrogen directly. The nitrogen cycle converts nitrogen between different chemical
 Forms:
 
 **Key processes in the nitrogen cycle:**
 
-1. **Nitrogen fixation:** Atmospheric $\mathrm{N{}_2$ is converted into ammonia ($\mathrm{NH{}_3$) by
- nitrogen-fixing bacteria (e.g., Rhizobium in root nodules of legumes, or free-living Azotobacter
- in soil). Lightning also fixes nitrogen by converting $\mathrm{N{}_2$ to nitrogen oxides.
+1. **Nitrogen fixation:** Atmospheric $\mathrm{N{}_2$ is converted into ammonia ($\mathrm{NH{}_3$)
+   by nitrogen-fixing bacteria (e.g., Rhizobium in root nodules of legumes, or free-living
+   Azotobacter in soil). Lightning also fixes nitrogen by converting $\mathrm{N{}_2$ to nitrogen
+   oxides.
 2. **Nitrification:** Ammonia is converted to nitrite ($\mathrm{NO{}_2^-$) by Nitrosomonas bacteria,
- then to nitrate ($\mathrm{NO{}_3^-$) by Nitrobacter bacteria. Nitrates are the form of nitrogen most
- readily absorbed by plants.
+   then to nitrate ($\mathrm{NO{}_3^-$) by Nitrobacter bacteria. Nitrates are the form of nitrogen
+   most readily absorbed by plants.
 3. **Absorption:** Plants absorb nitrates (and some ammonium ions) through their roots and
- incorporate them into amino acids and nucleic acids.
+   incorporate them into amino acids and nucleic acids.
 4. **Feeding:** Animals obtain nitrogen by consuming plants or other animals.
 5. **Decomposition (ammonification):** When organisms die, decomposers (bacteria and fungi) break
- down proteins and urea into ammonia, returning nitrogen to the soil.
+   down proteins and urea into ammonia, returning nitrogen to the soil.
 6. **Denitrification:** Denitrifying bacteria (e.g., Pseudomonas) convert nitrates in waterlogged,
- anaerobic soil back into nitrogen gas ($\mathrm{N{}_2$), returning it to the atmosphere.
+   anaerobic soil back into nitrogen gas ($\mathrm{N{}_2$), returning it to the atmosphere.
 
 **Human impact on the nitrogen cycle:**
 
-- **Synthetic fertilisers:** The Haber process converts $\mathrm{N{}_2$ and $\mathrm{H{}_2$ into ammonia
- for fertilisers. Excess fertiliser runs off into waterways, causing eutrophication.
+- **Synthetic fertilisers:** The Haber process converts $\mathrm{N{}_2$ and $\mathrm{H{}_2$ into
+  ammonia for fertilisers. Excess fertiliser runs off into waterways, causing eutrophication.
 - **Combustion of fossil fuels:** Releases nitrogen oxides into the atmosphere, contributing to acid
- rain and photochemical smog.
+  rain and photochemical smog.
 - **Deforestation:** Removes plants that absorb nitrates, increasing soil nitrate leaching.
 
 **Worked Example: Tracing a nitrogen atom through the nitrogen cycle.**
 
-A nitrogen atom in the atmosphere as $\mathrm{N{}_2$ is fixed by Rhizobium bacteria in the root nodules
-Of a clover plant, converting it to $\mathrm{NH{}_3$. The clover incorporates the ammonia into amino
-Acids. A rabbit eats the clover and digests the proteins, using the amino acids to make its own
-Proteins. When the rabbit dies, decomposer bacteria break down its proteins, releasing $\mathrm{NH{}_3$
-Back into the soil. Nitrosomonas converts the $\mathrm{NH{}_3$ to $\mathrm{NO{}_2^-$And Nitrobacter
-Converts $\mathrm{NO{}_2^-$ to $\mathrm{NO{}_3^-$. A grass plant absorbs the nitrate through its roots.
+A nitrogen atom in the atmosphere as $\mathrm{N{}_2$ is fixed by Rhizobium bacteria in the root
+nodules Of a clover plant, converting it to $\mathrm{NH{}_3$. The clover incorporates the ammonia
+into amino Acids. A rabbit eats the clover and digests the proteins, using the amino acids to make
+its own Proteins. When the rabbit dies, decomposer bacteria break down its proteins, releasing
+$\mathrm{NH{}_3$ Back into the soil. Nitrosomonas converts the $\mathrm{NH{}_3$ to
+$\mathrm{NO{}_2^-$And Nitrobacter Converts $\mathrm{NO{}_2^-$ to $\mathrm{NO{}_3^-$. A grass plant
+absorbs the nitrate through its roots.
 
 ## Summary
 

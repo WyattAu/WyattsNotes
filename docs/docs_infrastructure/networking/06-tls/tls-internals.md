@@ -1,13 +1,16 @@
 ---
 id: tls-internals
 title: TLS Internals
-description: "TLS Internals — TLS Architecture; Record Layer; Handshake Protocol; Alert Protocol with worked examples and exam-style questions."
+description:
+  'TLS Internals — TLS Architecture; Record Layer; Handshake Protocol; Alert Protocol with worked
+  examples and exam-style questions.'
 slug: tls-internals
 tags:
   - Networking
 categories:
   - Networking
 ---
+
 ## Overview
 
 This document goes deeper into TLS internals than the TLS fundamentals document, covering the record
@@ -59,12 +62,12 @@ Has:
 
 Content types:
 
-| Type | Value | Description |
+| Type               | Value | Description                                   |
 | ------------------ | ----- | --------------------------------------------- |
-| CHANGE_CIPHER_SPEC | 20 | Deprecated in TLS 1.3 (replaced by KeyUpdate) |
-| ALERT | 21 | Error or warning notifications |
-| HANDSHAKE | 22 | Handshake protocol messages |
-| APPLICATION_DATA | 23 | Encrypted application data |
+| CHANGE_CIPHER_SPEC | 20    | Deprecated in TLS 1.3 (replaced by KeyUpdate) |
+| ALERT              | 21    | Error or warning notifications                |
+| HANDSHAKE          | 22    | Handshake protocol messages                   |
+| APPLICATION_DATA   | 23    | Encrypted application data                    |
 
 ### Handshake Protocol
 
@@ -75,10 +78,10 @@ Cryptographic parameters. Handshake messages are carried inside TLS records with
 
 Alert messages convey errors and state changes:
 
-| Level | Description | Common Alerts |
+| Level       | Description                     | Common Alerts                                      |
 | ----------- | ------------------------------- | -------------------------------------------------- |
-| Warning (1) | Non-fatal; connection continues | close_notify, no_certificate, bad_certificate |
-| Fatal (2) | Connection must be terminated | handshake_failure, decode_error, illegal_parameter |
+| Warning (1) | Non-fatal; connection continues | close_notify, no_certificate, bad_certificate      |
+| Fatal (2)   | Connection must be terminated   | handshake_failure, decode_error, illegal_parameter |
 
 ### Change Cipher Spec Protocol
 
@@ -89,39 +92,39 @@ Deprecated. Key changes are signaled within the handshake protocol itself.
 
 ### Removed in TLS 1.3
 
-| Feature | TLS 1.2 | TLS 1.3 | Reason |
+| Feature                 | TLS 1.2   | TLS 1.3 | Reason                                    |
 | ----------------------- | --------- | ------- | ----------------------------------------- |
-| Renegotiation | Supported | Removed | Complex, caused RC4 injection attacks |
-| Compression | Supported | Removed | CRIME attack (compression oracle) |
-| Static RSA key exchange | Supported | Removed | No forward secrecy |
-| Non-AEAD ciphers | Supported | Removed | CBC ciphers vulnerable to padding oracles |
-| Custom DHE groups | Supported | Removed | Weak groups (e.g., export-grade) |
-| SHA-1 in signatures | Supported | Removed | SHA-1 is cryptographically weak |
-| MD5 in signatures | Supported | Removed | MD5 is broken |
+| Renegotiation           | Supported | Removed | Complex, caused RC4 injection attacks     |
+| Compression             | Supported | Removed | CRIME attack (compression oracle)         |
+| Static RSA key exchange | Supported | Removed | No forward secrecy                        |
+| Non-AEAD ciphers        | Supported | Removed | CBC ciphers vulnerable to padding oracles |
+| Custom DHE groups       | Supported | Removed | Weak groups (e.g., export-grade)          |
+| SHA-1 in signatures     | Supported | Removed | SHA-1 is cryptographically weak           |
+| MD5 in signatures       | Supported | Removed | MD5 is broken                             |
 
 ### Added in TLS 1.3
 
-| Feature | Description |
+| Feature                | Description                                                           |
 | ---------------------- | --------------------------------------------------------------------- |
-| 0-RTT data | Send application data in the first flight (repeat connections) |
-| Signature algorithms | Explicit negotiation of hash+signature pairs (RFC 8446 Section 4.2.3) |
-| Key schedule | Derived key hierarchy using HKDF (RFC 5869) |
-| Post-handshake auth | Server can request client certificate after the handshake |
-| Encrypted Server Hello | Server Hello is encrypted (hides server identity from observers) |
-| KeyUpdate | In-band key rotation without renegotiation |
+| 0-RTT data             | Send application data in the first flight (repeat connections)        |
+| Signature algorithms   | Explicit negotiation of hash+signature pairs (RFC 8446 Section 4.2.3) |
+| Key schedule           | Derived key hierarchy using HKDF (RFC 5869)                           |
+| Post-handshake auth    | Server can request client certificate after the handshake             |
+| Encrypted Server Hello | Server Hello is encrypted (hides server identity from observers)      |
+| KeyUpdate              | In-band key rotation without renegotiation                            |
 
 ### Cipher Suite Simplification
 
 TLS 1.2 cipher suites are complex strings like `TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256`. TLS 1.3
 Cipher suites only specify the AEAD algorithm:
 
-| TLS 1.3 Cipher Suite | AEAD Algorithm | Hash (HKDF) |
+| TLS 1.3 Cipher Suite         | AEAD Algorithm    | Hash (HKDF) |
 | ---------------------------- | ----------------- | ----------- |
-| TLS_AES_128_GCM_SHA256 | AES-128-GCM | SHA-256 |
-| TLS_AES_256_GCM_SHA384 | AES-256-GCM | SHA-384 |
-| TLS_CHACHA20_POLY1305_SHA256 | ChaCha20-Poly1305 | SHA-256 |
-| TLS_AES_128_CCM_SHA256 | AES-128-CCM | SHA-256 |
-| TLS_AES_128_CCM_8_SHA256 | AES-128-CCM-8 | SHA-256 |
+| TLS_AES_128_GCM_SHA256       | AES-128-GCM       | SHA-256     |
+| TLS_AES_256_GCM_SHA384       | AES-256-GCM       | SHA-384     |
+| TLS_CHACHA20_POLY1305_SHA256 | ChaCha20-Poly1305 | SHA-256     |
+| TLS_AES_128_CCM_SHA256       | AES-128-CCM       | SHA-256     |
+| TLS_AES_128_CCM_8_SHA256     | AES-128-CCM-8     | SHA-256     |
 
 The key exchange algorithm is no longer part of the cipher suite. It is negotiated separately via
 The `supported_groups` extension.
@@ -154,28 +157,28 @@ Client                                          Server
 
 The ClientHello carries the client's capabilities and parameters:
 
-| Field | Description |
+| Field                      | Description                                         |
 | -------------------------- | --------------------------------------------------- |
-| legacy_version | 0x0303 (TLS 1.2) for compatibility with middleboxes |
-| random | 32 bytes of random (used in key derivation) |
-| legacy_session_id | Session ID for compatibility (TLS 1.3 uses PSK) |
-| cipher_suites | List of supported TLS 1.3 cipher suites |
-| legacy_compression_methods | [0x00] (no compression) |
-| extensions | supported_versions, supported_groups, key_share, |
-| | signature_algorithms, psk_key_exchange_modes, |
-| | server_name (SNI), etc. |
+| legacy_version             | 0x0303 (TLS 1.2) for compatibility with middleboxes |
+| random                     | 32 bytes of random (used in key derivation)         |
+| legacy_session_id          | Session ID for compatibility (TLS 1.3 uses PSK)     |
+| cipher_suites              | List of supported TLS 1.3 cipher suites             |
+| legacy_compression_methods | [0x00] (no compression)                             |
+| extensions                 | supported_versions, supported_groups, key_share,    |
+|                            | signature_algorithms, psk_key_exchange_modes,       |
+|                            | server_name (SNI), etc.                             |
 
 ### ServerHello Fields
 
-| Field | Description |
+| Field                     | Description                             |
 | ------------------------- | --------------------------------------- |
-| legacy_version | 0x0303 (always, even for TLS 1.3) |
-| random | 32 bytes of random |
-| legacy_session_id_echo | Echo of client's session_id |
-| cipher_suite | Selected cipher suite |
-| legacy_compression_method | 0x00 |
-| extensions | supported_version (TLS 1.3), key_share, |
-| | pre_shared_key (if PSK selected) |
+| legacy_version            | 0x0303 (always, even for TLS 1.3)       |
+| random                    | 32 bytes of random                      |
+| legacy_session_id_echo    | Echo of client's session_id             |
+| cipher_suite              | Selected cipher suite                   |
+| legacy_compression_method | 0x00                                    |
+| extensions                | supported_version (TLS 1.3), key_share, |
+|                           | pre_shared_key (if PSK selected)        |
 
 ### EncryptedExtensions
 
@@ -236,12 +239,12 @@ Shared secret = ECDH(priv_c, pub_s) = ECDH(priv_s, pub_c) = x-coordinate of (pri
 
 Supported curves (RFC 8446):
 
-| Curve | Key Size | Security Level |
+| Curve             | Key Size | Security Level |
 | ----------------- | -------- | -------------- |
-| X25519 | 256 bits | 128 bits |
-| secp256r1 (P-256) | 256 bits | 128 bits |
-| secp384r1 (P-384) | 384 bits | 192 bits |
-| secp521r1 (P-521) | 521 bits | 256 bits |
+| X25519            | 256 bits | 128 bits       |
+| secp256r1 (P-256) | 256 bits | 128 bits       |
+| secp384r1 (P-384) | 384 bits | 192 bits       |
+| secp521r1 (P-521) | 521 bits | 256 bits       |
 
 X25519 is the recommended default. It is faster than NIST curves, has simpler implementation (fewer
 Edge cases), and uses a constant-time algorithm that is resistant to timing attacks.
@@ -253,21 +256,21 @@ Supported groups:
 
 | Group (ffdhe) | Prime Size | Security Level |
 | ------------- | ---------- | -------------- |
-| ffdhe2048 | 2048 bits | 112 bits |
-| ffdhe3072 | 3072 bits | 128 bits |
-| ffdhe4096 | 4096 bits | 150 bits |
-| ffdhe6144 | 6144 bits | 175 bits |
-| ffdhe8192 | 8192 bits | 200+ bits |
+| ffdhe2048     | 2048 bits  | 112 bits       |
+| ffdhe3072     | 3072 bits  | 128 bits       |
+| ffdhe4096     | 4096 bits  | 150 bits       |
+| ffdhe6144     | 6144 bits  | 175 bits       |
+| ffdhe8192     | 8192 bits  | 200+ bits      |
 
 ### PSK (Pre-Shared Key)
 
 TLS 1.3 supports PSK-based key exchange, which can be used alone or combined with (EC)DHE (called
 "PSK with (EC)DHE" or "psk_dhe_ke").
 
-| PSK Mode | Forward Secrecy | Use Case |
+| PSK Mode      | Forward Secrecy | Use Case                              |
 | ------------- | --------------- | ------------------------------------- |
-| PSK only | No | IoT devices, resumption tickets |
-| PSK + (EC)DHE | Yes | Recommended for resumption (security) |
+| PSK only      | No              | IoT devices, resumption tickets       |
+| PSK + (EC)DHE | Yes             | Recommended for resumption (security) |
 
 PSKs are established either externally (configured on both sides) or via a previous TLS handshake
 (session resumption via NewSessionTicket).
@@ -313,7 +316,7 @@ A single operation. TLS 1.3 requires AEAD ciphers exclusively.
 - AES-128-CCM: 128-bit key, CBC-MAC mode
 - AES-128-CCM-8: Same but with truncated 64-bit tag (faster but weaker)
 - Required for compatibility with constrained IoT devices (RFC 8446 mandates support for at least
- one CCM cipher)
+  one CCM cipher)
 - Slower than GCM
 
 ### Key Derivation: HKDF
@@ -425,12 +428,12 @@ Fragmented into multiple records. The receiver reassembles the fragments.
 
 In TLS 1.3, the maximum record size is negotiated via the `max_fragment_length` extension:
 
-| Value | Max Record Size |
+| Value | Max Record Size   |
 | ----- | ----------------- |
-| 1 | 2^9 (512 bytes) |
-| 2 | 2^10 (1024 bytes) |
-| 3 | 2^11 (2048 bytes) |
-| 4 | 2^12 (4096 bytes) |
+| 1     | 2^9 (512 bytes)   |
+| 2     | 2^10 (1024 bytes) |
+| 3     | 2^11 (2048 bytes) |
+| 4     | 2^12 (4096 bytes) |
 
 Smaller records reduce latency (the receiver can process data sooner) but increase overhead (more
 Records = more TLS record headers and MACs).
@@ -498,13 +501,13 @@ Static RSA private key. If an attacker records the handshake and later obtains t
 
 ### Which Cipher Suites Provide Forward Secrecy
 
-| Key Exchange | Forward Secrecy |
+| Key Exchange  | Forward Secrecy |
 | ------------- | --------------- |
-| Static RSA | No |
-| ECDHE | Yes |
-| DHE | Yes |
-| PSK only | No |
-| PSK + (EC)DHE | Yes |
+| Static RSA    | No              |
+| ECDHE         | Yes             |
+| DHE           | Yes             |
+| PSK only      | No              |
+| PSK + (EC)DHE | Yes             |
 
 :::warning
 
@@ -732,11 +735,11 @@ DELETE, financial transactions.
 
 Mozilla provides a configuration generator (https://ssl-config.mozilla.org/) with three profiles:
 
-| Profile | Clients Supported | Cipher Suites |
+| Profile      | Clients Supported           | Cipher Suites                      |
 | ------------ | --------------------------- | ---------------------------------- |
-| Modern | TLS 1.3 only | AES-128-GCM, AES-256-GCM, ChaCha20 |
-| Intermediate | TLS 1.2 + TLS 1.3 | Adds AES-128-CBC, ECDHE, DHE |
-| Old | TLS 1.0 + TLS 1.1 + TLS 1.2 | Maximum compatibility |
+| Modern       | TLS 1.3 only                | AES-128-GCM, AES-256-GCM, ChaCha20 |
+| Intermediate | TLS 1.2 + TLS 1.3           | Adds AES-128-CBC, ECDHE, DHE       |
+| Old          | TLS 1.0 + TLS 1.1 + TLS 1.2 | Maximum compatibility              |
 
 ### nginx Configuration Example
 
@@ -801,12 +804,12 @@ curl -sI https://example.com | grep -i strict-transport
 The TLS handshake is CPU-intensive due to the asymmetric key exchange (ECDHE) and signature
 Verification. Typical costs:
 
-| Operation | Time (approximate) |
+| Operation            | Time (approximate) |
 | -------------------- | ------------------ |
-| ECDHE key exchange | 0.5-2ms (P-256) |
+| ECDHE key exchange   | 0.5-2ms (P-256)    |
 | RSA signature verify | 0.5-1ms (2048-bit) |
-| AES-128-GCM encrypt | 0.001ms per KB |
-| Session resumption | 0.1-0.5ms |
+| AES-128-GCM encrypt  | 0.001ms per KB     |
+| Session resumption   | 0.1-0.5ms          |
 
 On a server handling 10,000 new TLS connections per second, the handshake alone consumes significant
 CPU. Session resumption reduces this cost dramatically.

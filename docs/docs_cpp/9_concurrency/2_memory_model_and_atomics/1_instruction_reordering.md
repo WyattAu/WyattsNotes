@@ -1,6 +1,8 @@
 ---
 title: Instruction Reordering and Happens-Before
-description: "C++: Instruction Reordering and Happens-Before — The As-If Rule and Compiler Reordering; Formal Definition of the As-If Rule."
+description:
+  'C++: Instruction Reordering and Happens-Before — The As-If Rule and Compiler Reordering; Formal
+  Definition of the As-If Rule.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -8,6 +10,7 @@ categories:
   - Cpp
 slug: instruction-reordering-happens-before
 ---
+
 # Instruction Reordering and Happens-Before
 
 This section covers the as-if rule and compiler reordering, CPU-level store buffers and load
@@ -27,9 +30,9 @@ Concretely, the compiler may reorder:
 
 1. **Independent loads**: Two loads from different addresses may be reordered freely.
 2. **Store-buffering**: A store followed by a load to a different address may be reordered so the
- load executes first.
+   load executes first.
 3. **Common subexpression elimination**: A load may be hoisted out of a loop, potentially reading
- stale data.
+   stale data.
 
 The as-if rule is the root cause of most multi-threading bugs. The compiler does not know about
 Other threads and is free to optimize as if the current thread were the only one running.
@@ -178,12 +181,10 @@ Prior access:
 
 $$\mathrm{control dependency: {} \mathrm{if {} (x) \{ y = 1; \}$$
 
-:::warning
-Control dependencies do **not** prevent reordering on all architectures. On x86, control
+:::warning Control dependencies do **not** prevent reordering on all architectures. On x86, control
 Dependencies provide ordering, but on ARM and POWER, the processor may speculatively execute the
 Dependent load before the controlling branch is resolved. Always use explicit memory ordering
-(acquire/release) rather than relying on control dependencies.
-:::
+(acquire/release) rather than relying on control dependencies. :::
 
 ### Data Dependencies as Ordering
 
@@ -210,25 +211,25 @@ Sequenced-before relation is determined by the abstract machine's evaluation ord
 - In a single expression, the order is determined by operator precedence and sequencing rules.
 - Between statements, the order is top-to-bottom.
 - Function arguments are **unsequenced** with respect to each other (prior to C++17). In C++17, the
- operands of `=` are indeterminately sequenced.
+  operands of `=` are indeterminately sequenced.
 
 $$A \xrightarrow{\mathrm{seq{}} B \implies B \mathrm{ observes {} A \mathrm{'s side effects within the same thread{}$$
 
 ## Happens-Before Relationship
 
 The **happens-before** relation [N4950 §6.9.4.1] is a strict partial order ($\prec$) on evaluations
-Within a single execution. If evaluation $A$ happens-before evaluation $B$Then $B$ observes all
-Side effects of $A$.
+Within a single execution. If evaluation $A$ happens-before evaluation $B$Then $B$ observes all Side
+effects of $A$.
 
 The happens-before relation is the **transitive closure** of:
 
 1. **Sequenced-before** ($\xrightarrow{\mathrm{seq{}}$): Within a single thread, operations are
- ordered by the abstract machine.
+   ordered by the abstract machine.
 2. **Synchronizes-with**: A release operation on an atomic object $M$ in thread $A$
- **synchronizes-with** an acquire operation on $M$ in thread $B$ if $B$ reads a value written (or
- released) by $A$.
+   **synchronizes-with** an acquire operation on $M$ in thread $B$ if $B$ reads a value written (or
+   released) by $A$.
 3. **Sequenced-before is transitive**: If $A \xrightarrow{\mathrm{seq{}} B$ and
- $B \xrightarrow{\mathrm{seq{}} C$Then $A \xrightarrow{\mathrm{seq{}} C$.
+   $B \xrightarrow{\mathrm{seq{}} C$Then $A \xrightarrow{\mathrm{seq{}} C$.
 
 $$A \prec B \iff \exists\, C_1, C_2, \ldots, C_n : A \xrightarrow{\mathrm{seq{}} C_1 \xrightarrow{\mathrm{sw{}} C_2 \xrightarrow{\mathrm{seq{}} \ldots \xrightarrow{\mathrm{sw{}} C_n \xrightarrow{\mathrm{seq{}} B$$
 
@@ -247,11 +248,11 @@ Write, and $A \prec B$Then there is no data race [N4950 §6.9.4.1].
 **Proof:**
 
 1. By definition of happens-before, there exists a chain of sequenced-before and synchronizes-with
- edges from $A$ to $B$.
+   edges from $A$ to $B$.
 2. Sequenced-before guarantees that within a single thread, the second evaluation observes all side
- effects of the first.
+   effects of the first.
 3. Synchronizes-with guarantees that an acquire operation in thread 2 observes all side effects
- sequenced-before the matching release operation in thread 1.
+   sequenced-before the matching release operation in thread 1.
 4. By transitivity, $B$ observes all side effects of $A$.
 5. Therefore, $A$ and $B$ are ordered, and no data race exists.
 
@@ -279,12 +280,12 @@ Consistent with the program order of each individual thread.
 Is no inter-thread ordering guarantee unless explicitly established by acquire/release or seq_cst
 Operations.
 
-| Property | Sequentially Consistent | Relaxed |
+| Property                           | Sequentially Consistent | Relaxed |
 | ---------------------------------- | ----------------------- | ------- |
-| Single total order | Yes | No |
-| Compiler reordering across atomics | Prevented | Allowed |
+| Single total order                 | Yes                     | No      |
+| Compiler reordering across atomics | Prevented               | Allowed |
 | Hardware reordering across atomics | Prevented (fences used) | Allowed |
-| Performance cost | Highest | Lowest |
+| Performance cost                   | Highest                 | Lowest  |
 
 ### Formal Definition of Sequential Consistency
 
@@ -292,9 +293,9 @@ A set of operations is sequentially consistent if there exists a total order $T$
 Such that [N4950 §31.7.5]:
 
 1. $T$ is consistent with the program order of each thread (if $op_1$ is sequenced-before $op_2$ in
- the same thread, then $op_1$ appears before $op_2$ in $T$).
+   the same thread, then $op_1$ appears before $op_2$ in $T$).
 2. $T$ respects the read-after-write coherence: every read of location $x$ returns the value of the
- last write to $x$ in $T$.
+   last write to $x$ in $T$.
 
 The C++ memory model guarantees that all `memory_order_seq_cst` operations participate in a single
 Total order $S$Called the **modification order**, which is consistent with all happens-before
@@ -302,11 +303,8 @@ Relationships.
 
 ## Concrete Example: Reordering Bug
 
-:::warning
-Warning
-Unexpected results. It contains intentional data races and is for educational purposes only. Do not
-Write code like this in production.
-:::
+:::warning Warning Unexpected results. It contains intentional data races and is for educational
+purposes only. Do not Write code like this in production. :::
 
 ```cpp
 #include <iostream>
@@ -337,13 +335,10 @@ int main() {
 }
 ```
 
-:::warning
-Warning
-Compiler may reorder `data = 42` after `ready = true`Or the hardware may reorder the stores due to
-Store buffering. On x86, stores are not reordered with other stores (TSO), so this particular
-Example would likely work on x86 but fail on ARM. This is a common source of subtle cross-platform
-Bugs.
-:::
+:::warning Warning Compiler may reorder `data = 42` after `ready = true`Or the hardware may reorder
+the stores due to Store buffering. On x86, stores are not reordered with other stores (TSO), so this
+particular Example would likely work on x86 but fail on ARM. This is a common source of subtle
+cross-platform Bugs. :::
 
 The fix is to use `std::atomic&lt;bool&gt;` with release/acquire ordering:
 
@@ -381,17 +376,16 @@ Guaranteeing that `data = 42` is visible when `ready` is observed as `true`.
 
 ## `volatile` vs. `atomic` vs. `mutex`
 
-A common source of confusion is the relationship between `volatile``std::atomic`And
-`std::mutex`:
+A common source of confusion is the relationship between `volatile``std::atomic`And `std::mutex`:
 
-| Feature | `volatile` | `std::atomic` | `std::mutex` |
+| Feature                 | `volatile`                         | `std::atomic`                         | `std::mutex`                    |
 | :---------------------- | :--------------------------------- | :------------------------------------ | :------------------------------ |
-| **Compiler reordering** | Prevents some optimizations | Prevents (based on memory order) | Prevents (acquire/release) |
-| **CPU reordering** | No effect | Prevents (based on memory order) | Prevents (mfence/lock prefix) |
-| **Atomicity** | No | Yes | Yes |
-| **Thread safety** | No | Yes (for individual variables) | Yes (for arbitrary scopes) |
-| **Performance** | Low overhead (but incorrect) | Low-medium (hardware instructions) | High (syscall on contention) |
-| **Use case** | Signal handlers, memory-mapped I/O | Lock-free algorithms, flags, counters | General-purpose synchronization |
+| **Compiler reordering** | Prevents some optimizations        | Prevents (based on memory order)      | Prevents (acquire/release)      |
+| **CPU reordering**      | No effect                          | Prevents (based on memory order)      | Prevents (mfence/lock prefix)   |
+| **Atomicity**           | No                                 | Yes                                   | Yes                             |
+| **Thread safety**       | No                                 | Yes (for individual variables)        | Yes (for arbitrary scopes)      |
+| **Performance**         | Low overhead (but incorrect)       | Low-medium (hardware instructions)    | High (syscall on contention)    |
+| **Use case**            | Signal handlers, memory-mapped I/O | Lock-free algorithms, flags, counters | General-purpose synchronization |
 
 **`volatile` does NOT provide thread safety.** It prevents the compiler from optimizing away reads
 Or writes, but it provides no atomicity and no memory ordering guarantees. On x86, `volatile` stores
@@ -409,12 +403,12 @@ Acquire/release semantics) at the cost of potential kernel-level contention.
 Different CPU architectures provide different hardware-level memory ordering guarantees. This
 Affects which C++ memory orders are necessary and which are free (compile to no extra instructions).
 
-| Architecture | Memory Model | Store-Store | Store-Load | Load-Load | Load-Store |
+| Architecture   | Memory Model            | Store-Store   | Store-Load  | Load-Load     | Load-Store    |
 | :------------- | :---------------------- | :------------ | :---------- | :------------ | :------------ |
 | **x86/x86-64** | TSO (Total Store Order) | No reordering | **Allowed** | No reordering | No reordering |
-| **ARMv8** | Weakly Ordered | Allowed | Allowed | Allowed | Allowed |
-| **RISC-V** | Weakly Ordered (RVWMO) | Allowed | Allowed | Allowed | Allowed |
-| **POWER** | Weakly Ordered | Allowed | Allowed | Allowed | Allowed |
+| **ARMv8**      | Weakly Ordered          | Allowed       | Allowed     | Allowed       | Allowed       |
+| **RISC-V**     | Weakly Ordered (RVWMO)  | Allowed       | Allowed     | Allowed       | Allowed       |
+| **POWER**      | Weakly Ordered          | Allowed       | Allowed     | Allowed       | Allowed       |
 
 ### x86-TSO Memory Model
 
@@ -422,7 +416,7 @@ X86 implements **Total Store Order** (TSO), which provides the following guarant
 3, §8.2]:
 
 1. **Stores are not reordered with other stores.** All stores appear in program order to all
- processors.
+   processors.
 2. **Loads are not reordered with other loads.** All loads appear in program order.
 3. **Loads are not reordered with older stores to the same location.** (Store forwarding.)
 4. **Stores may be reordered with older loads.** This is the **only** reordering allowed by TSO.
@@ -436,23 +430,23 @@ Pending stores to _different_ addresses.
 
 ARMv8 provides a **weakly ordered** model with optional barrier instructions:
 
-| Instruction | Barrier Type | Effect |
+| Instruction | Barrier Type                        | Effect                                                                      |
 | :---------- | :---------------------------------- | :-------------------------------------------------------------------------- |
-| `DMB` | Full Data Memory Barrier | All memory accesses before the barrier complete before any after it |
-| `DSB` | Data Synchronization Barrier | All memory accesses complete, no subsequent instructions execute until done |
-| `ISB` | Instruction Synchronization Barrier | Flushes the pipeline, fetches instructions from new point |
-| `LDAR` | Load-Acquire | Acquire semantics on the load |
-| `STLR` | Store-Release | Release semantics on the store |
+| `DMB`       | Full Data Memory Barrier            | All memory accesses before the barrier complete before any after it         |
+| `DSB`       | Data Synchronization Barrier        | All memory accesses complete, no subsequent instructions execute until done |
+| `ISB`       | Instruction Synchronization Barrier | Flushes the pipeline, fetches instructions from new point                   |
+| `LDAR`      | Load-Acquire                        | Acquire semantics on the load                                               |
+| `STLR`      | Store-Release                       | Release semantics on the store                                              |
 
 ### C++ Memory Order to Hardware Instruction Mapping
 
-| C++ Memory Order | x86-64 Instruction | ARMv8 Instruction |
+| C++ Memory Order | x86-64 Instruction                                             | ARMv8 Instruction     |
 | :--------------- | :------------------------------------------------------------- | :-------------------- |
-| `relaxed` | `mov` (plain load/store) | `ldr` / `str` (plain) |
-| `acquire` | `mov` (no fence needed) | `ldar` |
-| `release` | `mov` (no fence needed) | `stlr` |
-| `acq_rel` | `mov` (no fence for load; `mfence` before store is not needed) | `ldar` + `stlr` pair |
-| `seq_cst` | `lock` prefix or `mfence` | `dmb ish` |
+| `relaxed`        | `mov` (plain load/store)                                       | `ldr` / `str` (plain) |
+| `acquire`        | `mov` (no fence needed)                                        | `ldar`                |
+| `release`        | `mov` (no fence needed)                                        | `stlr`                |
+| `acq_rel`        | `mov` (no fence for load; `mfence` before store is not needed) | `ldar` + `stlr` pair  |
+| `seq_cst`        | `lock` prefix or `mfence`                                      | `dmb ish`             |
 
 This means that code relying on "it works on x86" without proper atomics will break when ported to
 ARM (Apple Silicon, Android) or RISC-V (embedded).
@@ -463,12 +457,12 @@ The MESI (Modified-Exclusive-Shared-Invalid) cache coherence protocol governs ho
 Interact across cores. While this is a hardware mechanism (not part of the C++ memory model), it
 Provides essential intuition for understanding memory ordering:
 
-| State | Description |
+| State             | Description                                                     |
 | :---------------- | :-------------------------------------------------------------- |
-| **M** (Modified) | This cache has the only valid copy; it differs from main memory |
-| **E** (Exclusive) | This cache has the only valid copy; it matches main memory |
-| **S** (Shared) | Multiple caches have valid copies matching main memory |
-| **I** (Invalid) | This cache line is not valid |
+| **M** (Modified)  | This cache has the only valid copy; it differs from main memory |
+| **E** (Exclusive) | This cache has the only valid copy; it matches main memory      |
+| **S** (Shared)    | Multiple caches have valid copies matching main memory          |
+| **I** (Invalid)   | This cache line is not valid                                    |
 
 When a core writes to a cache line in **Shared** state, it must issue an **RFO
 (Read-For-Ownership)** request that invalidates all other copies. This invalidation traffic is the
@@ -478,9 +472,9 @@ To decouple the core from this invalidation latency.
 The relationship between MESI and memory ordering is:
 
 - **Store buffers** allow store-to-load reordering (the core reads from cache while the store waits
- for invalidation acknowledgments).
+  for invalidation acknowledgments).
 - **Invalidation latency** is why release/acquire on x86 is free (stores are already ordered) but
- costs instructions on ARM (explicit barriers are needed to ensure invalidation completes).
+  costs instructions on ARM (explicit barriers are needed to ensure invalidation completes).
 
 ## Compiler Fence: `std::atomic_signal_fence` and `std::atomic_thread_fence`
 
@@ -527,9 +521,9 @@ void consumer() {
 A release fence $F_r$ **synchronizes-with** an acquire fence $F_a$ if [N4950 §31.7.7]:
 
 1. There exists an atomic operation $X$ such that $F_r$ is sequenced-before $X$ and $X$ is
- sequenced-before $F_a$.
+   sequenced-before $F_a$.
 2. $X$ reads a value written by (or releases-after) an atomic operation $Y$ that is sequenced-after
- $F_r$.
+   $F_r$.
 
 This means fences create ordering without modifying the atomic operations themselves — they add
 Ordering constraints to the _surrounding_ code.
@@ -537,21 +531,21 @@ Ordering constraints to the _surrounding_ code.
 ## Common Pitfalls
 
 - **Relying on x86 TSO for correctness:** Code that works on x86 due to its strong memory model may
- fail on ARM or RISC-V. Always use explicit atomics, even on x86.
+  fail on ARM or RISC-V. Always use explicit atomics, even on x86.
 - **Using `volatile` for thread communication:** `volatile` does not prevent CPU reordering and does
- not provide atomicity. Use `std::atomic` instead.
+  not provide atomicity. Use `std::atomic` instead.
 - **Forgetting that sequenced-before is not happens-before:** Within a single thread,
- sequenced-before provides ordering. But cross-thread ordering requires synchronizes-with (atomics,
- mutexes, condition variables).
+  sequenced-before provides ordering. But cross-thread ordering requires synchronizes-with (atomics,
+  mutexes, condition variables).
 - **Data races cause undefined behavior:** Any unsynchronized concurrent access to a non-atomic
- variable is a data race, which makes the entire program's behavior undefined [N4950 §6.9.4.1].
- This is not just a correctness issue; the compiler is allowed to generate arbitrary code.
+  variable is a data race, which makes the entire program's behavior undefined [N4950 §6.9.4.1].
+  This is not just a correctness issue; the compiler is allowed to generate arbitrary code.
 - **Double-checked locking without atomics:** The classic "check, lock, check" pattern requires
- `std::atomic` or `std::call_once`. A plain bool flag with `volatile` is insufficient because the
- compiler and CPU may reorder the initialization after the flag write.
+  `std::atomic` or `std::call_once`. A plain bool flag with `volatile` is insufficient because the
+  compiler and CPU may reorder the initialization after the flag write.
 - **Mixing relaxed and non-relaxed atomics on the same variable:** While legal, this is error-prone.
- If any thread uses `memory_order_seq_cst` on a variable, all accesses to that variable should
- use the same ordering unless you have a specific reason to relax.
+  If any thread uses `memory_order_seq_cst` on a variable, all accesses to that variable should use
+  the same ordering unless you have a specific reason to relax.
 
 ## Store Buffering: The Litmus Test
 
@@ -630,13 +624,13 @@ Not ordered by happens-before, the behavior is undefined [N4950 §6.9.4.1].
 **Proof:**
 
 1. [N4950 §6.9.4.1] defines a **data race** as two conflicting evaluations that are not
- sequenced-before / happens-before each other.
+   sequenced-before / happens-before each other.
 2. [N4950 §6.9.4.1] states: "If there are two conflicting evaluations, at least one of which is
- atomic, and neither happens before the other, the behavior is undefined."
+   atomic, and neither happens before the other, the behavior is undefined."
 3. For non-atomic accesses, the standard is even stricter: any concurrent conflicting access is UB,
- regardless of atomicity.
+   regardless of atomicity.
 4. The rationale: the compiler is free to optimize as-if the program is single-threaded. A data race
- violates the as-if rule's assumptions, so all guarantees are void.
+   violates the as-if rule's assumptions, so all guarantees are void.
 
 $\square$
 

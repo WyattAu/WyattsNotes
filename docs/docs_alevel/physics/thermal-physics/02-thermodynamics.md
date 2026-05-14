@@ -1,6 +1,8 @@
 ---
 title: Thermodynamics
-description: "A-Level Physics notes on Thermodynamics: 2. Work Done by a Gas; Derivation of Work Done by Gas at Constant Pressure for thorough revision and examination pre."
+description:
+  'A-Level Physics notes on Thermodynamics: 2. Work Done by a Gas; Derivation of Work Done by Gas at
+  Constant Pressure for thorough revision and examination pre.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Physics
@@ -9,11 +11,10 @@ categories:
   - Physics
 slug: thermodynamics
 ---
+
 ## Thermodynamics
 
-:::info
-Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P2
-:::
+:::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P2 :::
 
 <PhetSimulation simulationId="gas-properties" title="Gas Properties" />
 
@@ -40,11 +41,8 @@ Where:
 - $Q$ is the energy transferred to the system by heating (J) — positive if heat flows in
 - $W$ is the work done **on** the system (J) — positive if work is done on the system
 
-:::warning
-Warning
-Work done **by** the system. Always check which convention is being used. We use the "physics"
-Convention where $W$ is work done on the system.
-:::
+:::warning Warning Work done **by** the system. Always check which convention is being used. We use
+the "physics" Convention where $W$ is work done on the system. :::
 
 **Intuition.** The first law is energy conservation applied to thermodynamic systems. You can
 Increase a gas's internal energy either by heating it or by compressing it (doing work on it).
@@ -53,9 +51,9 @@ Increase a gas's internal energy either by heating it or by compressing it (doin
 
 1. The first law is a statement of energy conservation for thermodynamic systems.
 2. Consider a closed system that can exchange energy with its surroundings only via heat transfer
- ($Q$) and work ($W$).
+   ($Q$) and work ($W$).
 3. By the principle of conservation of energy, the change in the system's total energy must equal
- the net energy input:
+   the net energy input:
 
 $$\Delta U = Q + W$$
 
@@ -198,12 +196,12 @@ Cannot be reduced to absolute zero.
 **Proof.** Consider the Carnot cycle step by step:
 
 1. **Isothermal expansion at $T_H$:** Gas absorbs heat $Q_H$ from hot reservoir. Since $T$ is
- constant, $\Delta U = 0$ and $Q_H = W_1$ (work done by gas equals heat absorbed).
+   constant, $\Delta U = 0$ and $Q_H = W_1$ (work done by gas equals heat absorbed).
 
 2. **Adiabatic expansion ($T_H \to T_C$):** $Q = 0$. Gas cools from $T_H$ to $T_C$.
 
 3. **Isothermal compression at $T_C$:** Gas rejects heat $Q_C$ to cold reservoir. $|Q_C| = W_3$
- (work done on gas equals heat rejected).
+   (work done on gas equals heat rejected).
 
 4. **Adiabatic compression ($T_C \to T_H$):** $Q = 0$. Gas heats from $T_C$ to $T_H$.
 
@@ -234,11 +232,9 @@ $$\mathrm{COP}_{\mathrm{hp}} = \frac{Q_H}{W} = \frac{T_H}{T_H - T_C}$$
 
 Note that $\mathrm{COP}_{\mathrm{hp}} = \mathrm{COP}_{\mathrm{ref}} + 1$.
 
-:::warning
-Common Pitfall Students often confuse engine efficiency ($\eta = W/Q_H$) with
+:::warning Common Pitfall Students often confuse engine efficiency ($\eta = W/Q_H$) with
 Refrigerator COP ($Q_C/W$). The key difference: efficiency is a fraction (always $\lt 1$), while COP
-Can exceed 1 (you move more heat than the work you put in).
-:::
+Can exceed 1 (you move more heat than the work you put in). :::
 
 ## 5. The Second Law of Thermodynamics
 
@@ -307,11 +303,9 @@ Molecular arrangements (high $W$). Melting increases entropy because molecules g
 More configurations. Similarly, vaporisation produces a much larger entropy increase because gas
 Molecules have far more positional freedom.
 
-:::tip
-Tip
-Give a consequence (no 100% efficient engine), and explain in terms of entropy if possible. On a
-$p$-$V$ diagram, the Carnot cycle encloses the maximum possible area for given temperature limits.
-:::
+:::tip Tip Give a consequence (no 100% efficient engine), and explain in terms of entropy if
+possible. On a $p$-$V$ diagram, the Carnot cycle encloses the maximum possible area for given
+temperature limits. :::
 
 ## Problem Set
 
@@ -504,8 +498,8 @@ $W_{\mathrm{by}} = nRT\ln(V_2/V_1) = 0.120 \times 8.31 \times 400 \times \ln(4) 
 
 (c) $\Delta S_{\mathrm{gas}} = Q/T = 553/400 = 1.38$ J K$^{-1}$.
 
-(d) The surroundings lose heat $Q$ at temperature $T$So $\Delta S_{\mathrm{surr}} = -Q/T = -1.38$
-J K$^{-1}$. Total: $\Delta S_{\mathrm{universe}} = 0$ (reversible isothermal process).
+(d) The surroundings lose heat $Q$ at temperature $T$So $\Delta S_{\mathrm{surr}} = -Q/T = -1.38$ J
+K$^{-1}$. Total: $\Delta S_{\mathrm{universe}} = 0$ (reversible isothermal process).
 
 <b>If you get this wrong, revise:</b> [Isothermal](#isothermal-constant-temperature)
 
@@ -518,8 +512,8 @@ Explain why the adiabatic curve on a $p$-$V$ diagram is steeper than the isother
 Through the same point.
 
 **Answer.** For an isothermal process: $pV = \mathrm{const}$So $p \propto 1/V$. For an adiabatic
-Process: $pV^{\gamma} = \mathrm{const}$So $p \propto 1/V^{\gamma}$. Since $\gamma > 1$The
-Adiabatic pressure drops faster with increasing volume than the isothermal pressure.
+Process: $pV^{\gamma} = \mathrm{const}$So $p \propto 1/V^{\gamma}$. Since $\gamma > 1$The Adiabatic
+pressure drops faster with increasing volume than the isothermal pressure.
 
 Physically: in an isothermal expansion, heat flows in to maintain temperature, so the pressure drop
 Is moderated. In an adiabatic expansion, no heat enters, so the gas cools
@@ -562,8 +556,8 @@ $\Delta S_{\mathrm{universe}} = 0$ and $\eta = \eta_{\mathrm{Carnot}}$).
 Derive the relation $pV^{\gamma} = \mathrm{const}$ for a reversible adiabatic process starting from
 The first law and the ideal gas law.
 
-**Answer.** For an adiabatic process, $Q = 0$So $\Delta U = W_{\mathrm{on}} = -p\,dV$
-(infinitesimal work done on system).
+**Answer.** For an adiabatic process, $Q = 0$So $\Delta U = W_{\mathrm{on}} = -p\,dV$ (infinitesimal
+work done on system).
 
 For $n$ moles of ideal gas: $dU = nC_v\,dT$.
 
@@ -586,16 +580,27 @@ $\square$
 
 </details>
 
-
 ---:::danger Common Pitfalls
 
-- **Confusing the first and second laws of thermodynamics:** The first law (conservation of energy: delta_U = Q + W) says energy cannot be created or destroyed. The second law says entropy of an isolated system always increases and heat cannot flow spontaneously from cold to hot. They are different laws addressing different concepts -- do not conflate them.
+- **Confusing the first and second laws of thermodynamics:** The first law (conservation of energy:
+  delta_U = Q + W) says energy cannot be created or destroyed. The second law says entropy of an
+  isolated system always increases and heat cannot flow spontaneously from cold to hot. They are
+  different laws addressing different concepts -- do not conflate them.
 
-- **Getting the sign convention wrong in the first law:** The convention is delta_U = Q + W, where Q is positive when energy is transferred TO the system (heating) and W is positive when work is done ON the system (compression). Some textbooks use delta_U = Q - W where W is work done BY the system. Always check which convention the question or your course uses.
+- **Getting the sign convention wrong in the first law:** The convention is delta_U = Q + W, where Q
+  is positive when energy is transferred TO the system (heating) and W is positive when work is done
+  ON the system (compression). Some textbooks use delta_U = Q - W where W is work done BY the
+  system. Always check which convention the question or your course uses.
 
-- **Assuming all processes are reversible:** A process is only reversible if it can be returned to its initial state with no net change in the system or surroundings. In practice, all real processes are irreversible due to friction, unrestrained expansion, and heat flow across finite temperature differences. Reversibility is an idealisation.
+- **Assuming all processes are reversible:** A process is only reversible if it can be returned to
+  its initial state with no net change in the system or surroundings. In practice, all real
+  processes are irreversible due to friction, unrestrained expansion, and heat flow across finite
+  temperature differences. Reversibility is an idealisation.
 
-- **Misunderstanding entropy:** Entropy is a measure of disorder or the number of microstates available to a system. The second law says total entropy of an isolated system always increases -- but the entropy of a PART of the system can decrease if the entropy of the surroundings increases by more. A refrigerator decreases entropy inside but increases it outside by a greater amount.
+- **Misunderstanding entropy:** Entropy is a measure of disorder or the number of microstates
+  available to a system. The second law says total entropy of an isolated system always increases --
+  but the entropy of a PART of the system can decrease if the entropy of the surroundings increases
+  by more. A refrigerator decreases entropy inside but increases it outside by a greater amount.
 
 :::
 

@@ -1,14 +1,17 @@
 ---
 id: binary-search-trees
 title: Binary Search Trees and Balanced Trees
-description: "Binary Search Trees and Balanced Trees — Binary Search Tree Fundamentals; Node Definition; Search; Insert with worked examples and exam-style questions."
+description:
+  'Binary Search Trees and Balanced Trees — Binary Search Tree Fundamentals; Node Definition;
+  Search; Insert with worked examples and exam-style questions.'
 slug: binary-search-trees
 ---
+
 ## Binary Search Tree Fundamentals
 
 A binary search tree (BST) is a binary tree where every node satisfies the **BST property**: for any
-Node with key $k$All keys in its left subtree are strictly less than $k$And all keys in its
-Right subtree are strictly greater than $k$.
+Node with key $k$All keys in its left subtree are strictly less than $k$And all keys in its Right
+subtree are strictly greater than $k$.
 
 ### Node Definition
 
@@ -123,11 +126,11 @@ graph TD
 
 ### BST Height
 
-| Shape | Height | Search/Insert/Delete |
+| Shape      | Height               | Search/Insert/Delete |
 | ---------- | -------------------- | -------------------- |
-| Balanced | $O(\log n)$ | $O(\log n)$ |
-| Degenerate | $O(n)$ | $O(n)$ |
-| Random | $O(\log n)$ expected | $O(\log n)$ expected |
+| Balanced   | $O(\log n)$          | $O(\log n)$          |
+| Degenerate | $O(n)$               | $O(n)$               |
+| Random     | $O(\log n)$ expected | $O(\log n)$ expected |
 
 For $n$ distinct keys inserted in random order, the expected height of a BST is approximately
 $2 \ln n \approx 1.39 \log_2 n$. This is only about 39% taller than a perfectly balanced tree, but
@@ -385,11 +388,11 @@ Number of nodes in an AVL tree of height $h$ is $N(h) = N(h-1) + N(h-2) + 1$ wit
 $N(1) = 2$. This is closely related to the Fibonacci sequence, giving $N(h) = F_{h+3} - 1$. Since
 $F_k \approx \phi^k / \sqrt{5}$We get $h \le c \log_\phi(n)$ for some constant $c$.
 
-| Operation | Worst Case | Rotations per Insert | Rotations per Delete |
+| Operation | Worst Case  | Rotations per Insert | Rotations per Delete |
 | --------- | ----------- | -------------------- | -------------------- |
-| Search | $O(\log n)$ | 0 | 0 |
-| Insert | $O(\log n)$ | $\le 2$ | 0 |
-| Delete | $O(\log n)$ | 0 | $O(\log n)$ |
+| Search    | $O(\log n)$ | 0                    | 0                    |
+| Insert    | $O(\log n)$ | $\le 2$              | 0                    |
+| Delete    | $O(\log n)$ | 0                    | $O(\log n)$          |
 
 :::info
 
@@ -412,7 +415,7 @@ Rotations on insertion (at most 2) and deletion (at most 3).
 3. Every leaf (NIL) is black
 4. If a node is red, both its children are black (no two reds in a row)
 5. For each node, all paths from the node to descendant NIL nodes contain the same number of black
- nodes (black-height)
+   nodes (black-height)
 
 ### Black-Height Lemma
 
@@ -422,8 +425,8 @@ Internal nodes has height at most $2 \log_2(n+1)$.
 
 **Proof sketch**: the shortest path from root to leaf has only black nodes (length = bh), and the
 Longest has alternating red-black (length = 2 \cdot bh). Since at least half the nodes on any
-Root-to-leaf path are black, the height $h \le 2 \cdot \mathrm{bh{}$. A tree with black-height $b$ has
-At least $2^b - 1$ internal nodes, so $n \ge 2^{h/2} - 1$Giving $h \le 2 \log_2(n+1)$.
+Root-to-leaf path are black, the height $h \le 2 \cdot \mathrm{bh{}$. A tree with black-height $b$
+has At least $2^b - 1$ internal nodes, so $n \ge 2^{h/2} - 1$Giving $h \le 2 \log_2(n+1)$.
 
 ### Node Definition
 
@@ -545,16 +548,16 @@ class RBTree:
 
 ### AVL vs Red-Black Trees
 
-| Property | AVL Tree | Red-Black Tree |
-| -------------------- | ----------------------- | ---------------------------- |
-| Height bound | $\le 1.44 \log_2 n$ | $\le 2 \log_2(n+1)$ |
-| Strictly balanced | Yes (bf in {-1,0,1}) | No (allows more slack) |
-| Search | Faster (shorter tree) | Slightly slower |
-| Insert rotations | $\le 2$ | $\le 2$ |
-| Delete rotations | $O(\log n)$ | $\le 3$ |
-| Insert performance | Slightly slower | Slightly faster |
-| Delete performance | Slower (more rotations) | Faster |
-| Standard library use | `std::map` (GCC) | Java `TreeMap`Linux kernel |
+| Property             | AVL Tree                | Red-Black Tree             |
+| -------------------- | ----------------------- | -------------------------- |
+| Height bound         | $\le 1.44 \log_2 n$     | $\le 2 \log_2(n+1)$        |
+| Strictly balanced    | Yes (bf in {-1,0,1})    | No (allows more slack)     |
+| Search               | Faster (shorter tree)   | Slightly slower            |
+| Insert rotations     | $\le 2$                 | $\le 2$                    |
+| Delete rotations     | $O(\log n)$             | $\le 3$                    |
+| Insert performance   | Slightly slower         | Slightly faster            |
+| Delete performance   | Slower (more rotations) | Faster                     |
+| Standard library use | `std::map` (GCC)        | Java `TreeMap`Linux kernel |
 
 :::tip
 
@@ -586,13 +589,13 @@ A B-tree of minimum degree $t \ge 2$ has these properties:
 4. A non-leaf node with $k$ keys has $k + 1$ children
 5. All leaves are at the same depth
 
-| Parameter | Value |
+| Parameter         | Value              |
 | ----------------- | ------------------ |
-| Max keys per node | $2t - 1$ |
+| Max keys per node | $2t - 1$           |
 | Min keys per node | $t - 1$ (non-root) |
-| Max children | $2t$ |
-| Min children | $t$ (non-root) |
-| Height | $O(\log_t n)$ |
+| Max children      | $2t$               |
+| Min children      | $t$ (non-root)     |
+| Height            | $O(\log_t n)$      |
 
 ### Search
 
@@ -686,13 +689,13 @@ In the leaf nodes, and internal nodes contain only keys for navigation.
 
 ### Differences from B-Trees
 
-| Property | B-Tree | B+ Tree |
+| Property        | B-Tree               | B+ Tree                     |
 | --------------- | -------------------- | --------------------------- |
-| Data storage | Every node | Leaf nodes only |
-| Internal nodes | Keys + data pointers | Keys + child pointers only |
-| Leaf linkage | None | Linked list (next pointers) |
-| Key duplication | No | Keys duplicated in leaves |
-| Range queries | Requires traversal | Sequential scan of leaves |
+| Data storage    | Every node           | Leaf nodes only             |
+| Internal nodes  | Keys + data pointers | Keys + child pointers only  |
+| Leaf linkage    | None                 | Linked list (next pointers) |
+| Key duplication | No                   | Keys duplicated in leaves   |
+| Range queries   | Requires traversal   | Sequential scan of leaves   |
 
 ```mermaid
 graph TD
@@ -846,8 +849,8 @@ class SplayTree:
 ### Amortised Analysis
 
 The splay operation has amortised cost $O(\log n)$ using the **potential method**. Define the
-Potential of node $x$ with rank $r(x) = \lfloor \log_2(\mathrm{size{}(x)) \rfloor$. The amortised cost
-Of a splay is bounded by $1 + 3(r(\mathrm{root{}) - r(x)) = O(\log n)$.
+Potential of node $x$ with rank $r(x) = \lfloor \log_2(\mathrm{size{}(x)) \rfloor$. The amortised
+cost Of a splay is bounded by $1 + 3(r(\mathrm{root{}) - r(x)) = O(\log n)$.
 
 The **access lemma** states that the amortised cost of splaying node $x$ is at most
 $3(\log_2 n - \log_2(\mathrm{size{}(x))) + 1$Which means frequently accessed nodes move toward the
@@ -856,8 +859,8 @@ Root and become cheaper to access.
 ### Static Optimality Theorem
 
 For any sequence of $m$ accesses on a splay tree with $n$ nodes, the total access time is
-$O(m \log n + \mathrm{OPT{})$ where OPT is the optimal access time using any static binary search tree.
-This means splay trees are within a constant factor of optimal for any access pattern.
+$O(m \log n + \mathrm{OPT{})$ where OPT is the optimal access time using any static binary search
+tree. This means splay trees are within a constant factor of optimal for any access pattern.
 
 ## Treaps
 
@@ -1047,14 +1050,14 @@ class SkipList:
 
 ### Skip List vs Balanced Tree
 
-| Property | Skip List | Balanced Tree |
+| Property          | Skip List              | Balanced Tree            |
 | ----------------- | ---------------------- | ------------------------ |
-| Search | $O(\log n)$ expected | $O(\log n)$ worst |
-| Insert | $O(\log n)$ expected | $O(\log n)$ worst |
-| Concurrent access | Easy (lock-free) | Hard (needs rebalancing) |
-| Implementation | Simple | Complex (rotations) |
-| Memory | $O(n \log n)$ expected | $O(n)$ |
-| Cache performance | Poor (pointer chasing) | Moderate |
+| Search            | $O(\log n)$ expected   | $O(\log n)$ worst        |
+| Insert            | $O(\log n)$ expected   | $O(\log n)$ worst        |
+| Concurrent access | Easy (lock-free)       | Hard (needs rebalancing) |
+| Implementation    | Simple                 | Complex (rotations)      |
+| Memory            | $O(n \log n)$ expected | $O(n)$                   |
+| Cache performance | Poor (pointer chasing) | Moderate                 |
 
 Skip lists are used in Redis (for sorted sets), Apache Lucene, and LevelDB's memtable. Their
 Simplicity and lock-friendliness make them popular in concurrent systems.
@@ -1083,9 +1086,9 @@ Errors during rotation.
 ### 4. B-Tree Node Size Selection
 
 Choosing the node size requires understanding the hardware. On a disk-based system, the node size
-Should match the disk block size ( 4 KB). In memory, larger nodes may benefit from cache
-Line effects. A node that fits in a single cache line (64 bytes) enables single-instruction
-Comparisons for the entire node.
+Should match the disk block size ( 4 KB). In memory, larger nodes may benefit from cache Line
+effects. A node that fits in a single cache line (64 bytes) enables single-instruction Comparisons
+for the entire node.
 
 ### 5. Splay Tree Worst Case
 

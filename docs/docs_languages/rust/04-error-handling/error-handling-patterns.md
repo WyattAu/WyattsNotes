@@ -1,9 +1,12 @@
 ---
 id: error-handling-patterns
 title: Error Handling Patterns
-description: "Error Handling Patterns — Error Design Philosophy; Errors as Values vs Exceptions; Defining Error Types; Enum-Based Error Types."
+description:
+  'Error Handling Patterns — Error Design Philosophy; Errors as Values vs Exceptions; Defining Error
+  Types; Enum-Based Error Types.'
 slug: error-handling-patterns
 ---
+
 ## Error Design Philosophy
 
 Rust treats errors as values, not exceptions. This is a fundamental design choice: errors are not
@@ -656,42 +659,42 @@ fn handle_request(request: Request) -> Response {
 ## Common Pitfalls
 
 1. **Over-engineering error types in applications.** In a binary, you rarely need to match on
- specific error variants. Use `anyhow` with `.context()` and avoid large error enums unless you
- have a specific need.
+   specific error variants. Use `anyhow` with `.context()` and avoid large error enums unless you
+   have a specific need.
 
 2. **Under-engineering error types in libraries.** Library callers need to distinguish error kinds.
- A single `String` error type or `Box<dyn Error>` prevents callers from handling specific error
- cases. Use `thiserror` to define precise error enums.
+   A single `String` error type or `Box<dyn Error>` prevents callers from handling specific error
+   cases. Use `thiserror` to define precise error enums.
 
 3. **Swallowing errors with `let _ =`.** Silently discarding errors hides bugs. At minimum, log the
- error. Use `if let Err(e) = result { log::error!("operation failed: {}", e); }`.
+   error. Use `if let Err(e) = result { log::error!("operation failed: {}", e); }`.
 
 4. **Error types that are not `Send + Sync`.** If your error type contains `Rc` or other
- non-thread-safe types, it cannot be used with `?` in async contexts. Ensure all error fields are
- `Send + Sync`.
+   non-thread-safe types, it cannot be used with `?` in async contexts. Ensure all error fields are
+   `Send + Sync`.
 
 5. **Not adding context to errors.** A bare `io::Error` tells you what went wrong but not where or
- why. Use `.context()` (anyhow) or `.map_err()` to add contextual information as errors propagate
- up the call stack.
+   why. Use `.context()` (anyhow) or `.map_err()` to add contextual information as errors propagate
+   up the call stack.
 
 6. **Retry without backoff.** Retrying immediately after failure can overwhelm the failing service.
- Always use exponential backoff with jitter to distribute retry attempts.
+   Always use exponential backoff with jitter to distribute retry attempts.
 
 7. **Retry without idempotency.** If the retried operation has side effects, each retry may create
- duplicate side effects. Design operations to be idempotent before adding retry logic.
+   duplicate side effects. Design operations to be idempotent before adding retry logic.
 
 8. **Panicking in library code.** Libraries should never panic on expected failure modes. Return
- `Err` for invalid input, missing resources, and expected failures. Panics are for internal
- invariant violations only.
+   `Err` for invalid input, missing resources, and expected failures. Panics are for internal
+   invariant violations only.
 
 9. **`Box<dyn Error>` losing type information.** When you use `Box<dyn Error>` as the error type,
- the caller cannot match on specific variants. This is fine for applications but inappropriate for
- libraries.
+   the caller cannot match on specific variants. This is fine for applications but inappropriate for
+   libraries.
 
 10. **Not testing error paths.** Error paths are often less tested than success paths. Write
- explicit tests for each error variant, including edge cases and error chains. Use
- `#[should_panic]` for testing panic conditions and property-based testing for error handling
- robustness.
+    explicit tests for each error variant, including edge cases and error chains. Use
+    `#[should_panic]` for testing panic conditions and property-based testing for error handling
+    robustness.
 
 ## Error Strategy Decision Guide
 

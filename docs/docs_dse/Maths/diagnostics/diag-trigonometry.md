@@ -1,6 +1,8 @@
 ---
-title: "Trigonometry -- Diagnostic Tests"
-description: "Diagnostic tests for DSE Trigonometry: sine and cosine rules, trigonometric identities, equations, and 3D problems with common pitfalls."
+title: 'Trigonometry -- Diagnostic Tests'
+description:
+  'Diagnostic tests for DSE Trigonometry: sine and cosine rules, trigonometric identities,
+  equations, and 3D problems with common pitfalls.'
 slug: diag-trigonometry
 hide_table_of_contents: true
 ---
@@ -15,7 +17,8 @@ hide_table_of_contents: true
 
 **Question:**
 
-In triangle $ABC$$AB = 8$ cm, $BC = 6$ cm, and $\angle BAC = 30°$. Find the possible values of $\angle ABC$.
+In triangle $ABC$$AB = 8$ cm, $BC = 6$ cm, and $\angle BAC = 30°$. Find the possible values of
+$\angle ABC$.
 
 **Solution:**
 
@@ -53,7 +56,8 @@ $$\cos \angle PQR = \frac{PQ^2 + QR^2 - PR^2}{2 \cdot PQ \cdot QR} = \frac{25 + 
 
 $$\angle PQR = \arccos\left(\frac{1}{7}\right) \approx 81.8°$$
 
-Using the sine rule here would require first finding another angle, which is less efficient and risks the ambiguous case.
+Using the sine rule here would require first finding another angle, which is less efficient and
+risks the ambiguous case.
 
 ---
 
@@ -77,7 +81,8 @@ $$\cos x(2\sin x - 1) = 0$$
 
 **Case 2:** $\sin x = \dfrac{1}{2} \implies x = 30°$ or $x = 150°$.
 
-A common mistake is dividing by $\cos x$ without considering the case $\cos x = 0$Which loses solutions.
+A common mistake is dividing by $\cos x$ without considering the case $\cos x = 0$Which loses
+solutions.
 
 Solution: $x = 30°,\; 90°,\; 150°,\; 270°$.
 
@@ -87,13 +92,15 @@ Solution: $x = 30°,\; 90°,\; 150°,\; 270°$.
 
 **Question:**
 
-In the cuboid $ABCDEFGH$ where $AB = 4$$BC = 3$$CG = 5$. Find the angle between the diagonal $AG$ and the base $ABCD$.
+In the cuboid $ABCDEFGH$ where $AB = 4$$BC = 3$$CG = 5$. Find the angle between the diagonal $AG$
+and the base $ABCD$.
 
 **Solution:**
 
 The base $ABCD$ is the plane containing points $A, B, C, D$.
 
-$G$ is directly above $C$ (assuming standard cuboid notation), so $G$ has height $CG = 5$ above the base.
+$G$ is directly above $C$ (assuming standard cuboid notation), so $G$ has height $CG = 5$ above the
+base.
 
 The projection of $AG$ onto the base is $AC$.
 
@@ -129,7 +136,9 @@ $$\frac{1 - \cos 2x}{\sin 2x} = \frac{1 - (1 - 2\sin^2 x)}{2\sin x \cos x} = \fr
 
 **Question:**
 
-Three points $A(\cos\theta,\; \sin\theta)$$B(\cos 3\theta,\; \sin 3\theta)$$C(\cos 5\theta,\; \sin 5\theta)$ lie on the unit circle. Show that $A$$B$$C$ are collinear when $\theta = 36°$.
+Three points
+$A(\cos\theta,\; \sin\theta)$$B(\cos 3\theta,\; \sin 3\theta)$$C(\cos 5\theta,\; \sin 5\theta)$ lie
+on the unit circle. Show that $A$$B$$C$ are collinear when $\theta = 36°$.
 
 **Solution:**
 
@@ -159,7 +168,8 @@ Slope $AB = \dfrac{\sin 108° - \sin 36°}{\cos 108° - \cos 36°}$
 
 $\sin 108° = \cos 18°$$\cos 108° = -\sin 18°$.
 
-Slope $AC = \dfrac{0 - \sin 36°}{-1 - \cos 36°} = \dfrac{-\sin 36°}{-1 - \cos 36°} = \dfrac{\sin 36°}{1 + \cos 36°}$
+Slope
+$AC = \dfrac{0 - \sin 36°}{-1 - \cos 36°} = \dfrac{-\sin 36°}{-1 - \cos 36°} = \dfrac{\sin 36°}{1 + \cos 36°}$
 
 Using $\dfrac{\sin 36°}{1 + \cos 36°} = \tan 18°$.
 
@@ -195,11 +205,13 @@ $\tan x = \dfrac{3 + \sqrt{5}}{2} \approx 2.618 \implies x \approx 69.1°$
 
 $\tan x = \dfrac{3 - \sqrt{5}}{2} \approx 0.382 \implies x \approx 20.9°$
 
-In the range $0° \leq x \lt 180°$Each tangent value gives one solution (since $\tan$ is positive in both Q1 and Q3):
+In the range $0° \leq x \lt 180°$Each tangent value gives one solution (since $\tan$ is positive in
+both Q1 and Q3):
 
 $x \approx 69.1°$ or $x \approx 20.9°$.
 
-Exact: $x = \arctan\left(\dfrac{3 + \sqrt{5}}{2}\right)$ or $x = \arctan\left(\dfrac{3 - \sqrt{5}}{2}\right)$.
+Exact: $x = \arctan\left(\dfrac{3 + \sqrt{5}}{2}\right)$ or
+$x = \arctan\left(\dfrac{3 - \sqrt{5}}{2}\right)$.
 
 ---
 
@@ -207,11 +219,13 @@ Exact: $x = \arctan\left(\dfrac{3 + \sqrt{5}}{2}\right)$ or $x = \arctan\left(\d
 
 **Question:**
 
-A pyramid has a square base $ABCD$ of side 6 cm and vertex $V$ directly above the centre $O$ of the base. The height $VO = 4$ cm. Find the angle between the plane $VAB$ and the base $ABCD$.
+A pyramid has a square base $ABCD$ of side 6 cm and vertex $V$ directly above the centre $O$ of the
+base. The height $VO = 4$ cm. Find the angle between the plane $VAB$ and the base $ABCD$.
 
 **Solution:**
 
-The angle between two planes equals the angle between their normals, or equivalently the angle between a line in one plane perpendicular to the line of intersection and its projection.
+The angle between two planes equals the angle between their normals, or equivalently the angle
+between a line in one plane perpendicular to the line of intersection and its projection.
 
 Let $M$ be the midpoint of $AB$. Then $OM \perp AB$ and $VM \perp AB$.
 
@@ -319,7 +333,9 @@ $$\text{Area} = \frac{1}{2} \times AB \times AC \times \sin \angle BAC = \frac{1
 
 **Question:**
 
-In a rectangular room of dimensions $6$ m $\times$ $4$ m $\times$ $3$ m, an ant walks from one corner of the floor to the diagonally opposite corner of the ceiling. Find the shortest distance the ant must crawl.
+In a rectangular room of dimensions $6$ m $\times$ $4$ m $\times$ $3$ m, an ant walks from one
+corner of the floor to the diagonally opposite corner of the ceiling. Find the shortest distance the
+ant must crawl.
 
 **Solution:**
 
@@ -331,9 +347,12 @@ $$d = \sqrt{6^2 + 4^2 + 3^2} = \sqrt{36 + 16 + 9} = \sqrt{61} \approx 7.81 \text
 
 If the ant must stay on surfaces, the shortest path "unfolds" two walls:
 
-Unfolding the $6 \times 3$ wall and the $4 \times 3$ wall: the path goes across a $6 \times 7$ rectangle (wait, this needs careful analysis).
+Unfolding the $6 \times 3$ wall and the $4 \times 3$ wall: the path goes across a $6 \times 7$
+rectangle (wait, this needs careful analysis).
 
-The shortest surface path would be $\min\left(\sqrt{(6+4)^2 + 3^2}, \sqrt{(6+3)^2 + 4^2}, \sqrt{(4+3)^2 + 6^2}\right) = \min(\sqrt{109}, \sqrt{97}, \sqrt{85}) = \sqrt{85} \approx 9.22$ m.
+The shortest surface path would be
+$\min\left(\sqrt{(6+4)^2 + 3^2}, \sqrt{(6+3)^2 + 4^2}, \sqrt{(4+3)^2 + 6^2}\right) = \min(\sqrt{109}, \sqrt{97}, \sqrt{85}) = \sqrt{85} \approx 9.22$
+m.
 
 The absolute shortest is the space diagonal $\sqrt{61}$ m.
 
@@ -343,13 +362,16 @@ The absolute shortest is the space diagonal $\sqrt{61}$ m.
 
 **Question:**
 
-A ship sails from port $A$ on a bearing of $060°$ for $15$ km to point $B$Then on a bearing of $150°$ for $20$ km to point $C$. Find the distance and bearing of $C$ from $A$.
+A ship sails from port $A$ on a bearing of $060°$ for $15$ km to point $B$Then on a bearing of
+$150°$ for $20$ km to point $C$. Find the distance and bearing of $C$ from $A$.
 
 **Solution:**
 
 $\angle ABC = 150° - (180° - 60°) = 150° - 120° = 30°$.
 
-Wait: the angle between $AB$ and $BC$ at $B$. The bearing from $A$ to $B$ is $060°$. The reverse bearing from $B$ to $A$ is $240°$. The bearing from $B$ to $C$ is $150°$. The angle $ABC = 240° - 150° = 90°$.
+Wait: the angle between $AB$ and $BC$ at $B$. The bearing from $A$ to $B$ is $060°$. The reverse
+bearing from $B$ to $A$ is $240°$. The bearing from $B$ to $C$ is $150°$. The angle
+$ABC = 240° - 150° = 90°$.
 
 So triangle $ABC$ has a right angle at $B$.
 
@@ -357,7 +379,8 @@ $AB = 15$ km, $BC = 20$ km.
 
 $$AC = \sqrt{15^2 + 20^2} = \sqrt{225 + 400} = \sqrt{625} = 25 \text{ km}$$
 
-Bearing of $C$ from $A$: $\angle NAC = 060° + \arctan\left(\dfrac{20}{15}\right) = 60° + 53.1° = 113.1°$.
+Bearing of $C$ from $A$:
+$\angle NAC = 060° + \arctan\left(\dfrac{20}{15}\right) = 60° + 53.1° = 113.1°$.
 
 The distance is $25$ km and the bearing is approximately $113°$.
 
@@ -367,11 +390,13 @@ The distance is $25$ km and the bearing is approximately $113°$.
 
 **Question:**
 
-From the top of a cliff $80$ m high, the angle of depression of a boat is $30°$. Find the distance of the boat from the base of the cliff.
+From the top of a cliff $80$ m high, the angle of depression of a boat is $30°$. Find the distance
+of the boat from the base of the cliff.
 
 **Solution:**
 
-The angle of elevation from the boat to the top of the cliff equals the angle of depression from the top to the boat: $30°$.
+The angle of elevation from the boat to the top of the cliff equals the angle of depression from the
+top to the boat: $30°$.
 
 $$\tan 30° = \frac{80}{d}$$
 
@@ -381,15 +406,24 @@ $$d = \frac{80}{\tan 30°} = \frac{80}{1/\sqrt{3}} = 80\sqrt{3} \approx 138.6 \t
 
 ## Common Pitfalls
 
-1. **Missing solutions in trigonometric equations.** When solving $\cos x \cdot f(x) = 0$You must consider both $\cos x = 0$ AND $f(x) = 0$. Dividing by $\cos x$ or $\sin x$ loses solutions. Always factorise first.
+1. **Missing solutions in trigonometric equations.** When solving $\cos x \cdot f(x) = 0$You must
+   consider both $\cos x = 0$ AND $f(x) = 0$. Dividing by $\cos x$ or $\sin x$ loses solutions.
+   Always factorise first.
 
-2. **Using degrees when radians are required (or vice versa).** In DSE Maths, most trigonometry problems use degrees unless specified otherwise. Always check the required units and be consistent throughout your working.
+2. **Using degrees when radians are required (or vice versa).** In DSE Maths, most trigonometry
+   problems use degrees unless specified otherwise. Always check the required units and be
+   consistent throughout your working.
 
-3. **Ambiguous case of the sine rule.** When given two sides and a non-included angle (SSA), there may be two possible solutions. Always check if the supplementary angle is also valid (sums with given angle to less than $180°$).
+3. **Ambiguous case of the sine rule.** When given two sides and a non-included angle (SSA), there
+   may be two possible solutions. Always check if the supplementary angle is also valid (sums with
+   given angle to less than $180°$).
 
-4. **Incorrect angle identification in 3D problems.** In 3D trigonometry, the angle between a line and a plane is NOT the angle the line makes with a line in the plane. It is the angle between the line and its projection onto the plane. Draw clear diagrams.
+4. **Incorrect angle identification in 3D problems.** In 3D trigonometry, the angle between a line
+   and a plane is NOT the angle the line makes with a line in the plane. It is the angle between the
+   line and its projection onto the plane. Draw clear diagrams.
 
-5. **Bearings measured from North clockwise.** A bearing of $060°$ means $60°$ clockwise from North (i.e. N60°E). Always draw a clear North arrow and measure bearings correctly.
+5. **Bearings measured from North clockwise.** A bearing of $060°$ means $60°$ clockwise from North
+   (i.e. N60°E). Always draw a clear North arrow and measure bearings correctly.
 
 ---
 
@@ -399,9 +433,8 @@ $$d = \frac{80}{\tan 30°} = \frac{80}{1/\sqrt{3}} = 80\sqrt{3} \approx 138.6 \t
 
 In triangle $ABC$$a = 8$ cm, $b = 6$ cm, and $\angle A = 70°$.
 
-(a) Find $\angle B$. Give your answer correct to 1 decimal place. (3 marks)
-(b) Find the area of triangle $ABC$. (2 marks)
-(c) Find the length of the altitude from $C$ to $AB$. (2 marks)
+(a) Find $\angle B$. Give your answer correct to 1 decimal place. (3 marks) (b) Find the area of
+triangle $ABC$. (2 marks) (c) Find the length of the altitude from $C$ to $AB$. (2 marks)
 
 **Solution:**
 
@@ -419,11 +452,13 @@ So $\angle B \approx 44.8°$.
 
 (b) $\angle C = 180° - 70° - 44.8° = 65.2°$.
 
-$\text{Area} = \dfrac{1}{2} \times 8 \times 6 \times \sin 65.2° \approx 24 \times 0.9075 \approx 21.8$ cm$^2$.
+$\text{Area} = \dfrac{1}{2} \times 8 \times 6 \times \sin 65.2° \approx 24 \times 0.9075 \approx 21.8$
+cm$^2$.
 
 (c) $\text{Area} = \dfrac{1}{2} \times AB \times h$Where $AB = c$.
 
-By the sine rule: $c = \dfrac{8\sin 65.2°}{\sin 44.8°} \approx \dfrac{8 \times 0.9075}{0.7048} \approx 10.3$ cm.
+By the sine rule:
+$c = \dfrac{8\sin 65.2°}{\sin 44.8°} \approx \dfrac{8 \times 0.9075}{0.7048} \approx 10.3$ cm.
 
 $h = \dfrac{2 \times 21.8}{10.3} \approx 4.23$ cm.
 
@@ -431,12 +466,13 @@ $h = \dfrac{2 \times 21.8}{10.3} \approx 4.23$ cm.
 
 ### DSE-2
 
-(a) Prove the identity $\dfrac{1 - \cos 2x}{1 + \cos 2x} = \tan^2 x$. (3 marks)
-(b) Hence solve $\dfrac{1 - \cos 2x}{1 + \cos 2x} = 3$ for $0° \leq x < 360°$. (3 marks)
+(a) Prove the identity $\dfrac{1 - \cos 2x}{1 + \cos 2x} = \tan^2 x$. (3 marks) (b) Hence solve
+$\dfrac{1 - \cos 2x}{1 + \cos 2x} = 3$ for $0° \leq x < 360°$. (3 marks)
 
 **Solution:**
 
-(a) $\dfrac{1 - \cos 2x}{1 + \cos 2x} = \dfrac{1 - (1 - 2\sin^2 x)}{1 + (2\cos^2 x - 1)} = \dfrac{2\sin^2 x}{2\cos^2 x} = \dfrac{\sin^2 x}{\cos^2 x} = \tan^2 x \qed$
+(a)
+$\dfrac{1 - \cos 2x}{1 + \cos 2x} = \dfrac{1 - (1 - 2\sin^2 x)}{1 + (2\cos^2 x - 1)} = \dfrac{2\sin^2 x}{2\cos^2 x} = \dfrac{\sin^2 x}{\cos^2 x} = \tan^2 x \qed$
 
 (b) $\tan^2 x = 3 \implies \tan x = \pm\sqrt{3}$.
 
@@ -450,7 +486,9 @@ Solution: $x = 60°,\; 120°,\; 240°,\; 300°$.
 
 ### DSE-3
 
-A vertical tower $PQ$ stands on horizontal ground. From a point $A$ on the ground, the angle of elevation of $P$ is $32°$. From another point $B$$50$ m from $A$ on the opposite side of the tower, the angle of elevation of $P$ is $24°$. Find the height of the tower. (5 marks)
+A vertical tower $PQ$ stands on horizontal ground. From a point $A$ on the ground, the angle of
+elevation of $P$ is $32°$. From another point $B$$50$ m from $A$ on the opposite side of the tower,
+the angle of elevation of $P$ is $24°$. Find the height of the tower. (5 marks)
 
 **Solution:**
 
@@ -496,7 +534,8 @@ In $[0°,\; 180°]$: $x = 0°$.
 
 ### DSE-5
 
-In the figure, $ABCD$ is a square of side $6$ cm. $E$ is a point on $BC$ such that $BE = 2$ cm. $F$ is the midpoint of $CD$. Find $\angle AEF$. (5 marks)
+In the figure, $ABCD$ is a square of side $6$ cm. $E$ is a point on $BC$ such that $BE = 2$ cm. $F$
+is the midpoint of $CD$. Find $\angle AEF$. (5 marks)
 
 **Solution:**
 

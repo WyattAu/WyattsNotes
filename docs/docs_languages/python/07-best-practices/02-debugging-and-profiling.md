@@ -1,6 +1,8 @@
 ---
 title: Debugging and Profiling
-description: "Debugging and Profiling — pdb and breakpoint(); Basic Entry Points; Core pdb Commands; The Cost of pdb with worked examples and exam-style questions."
+description:
+  'Debugging and Profiling — pdb and breakpoint(); Basic Entry Points; Core pdb Commands; The Cost
+  of pdb with worked examples and exam-style questions.'
 date: 2026-04-05T00:00:00.000Z
 tags:
   - Python
@@ -8,6 +10,7 @@ categories:
   - Python
 slug: debugging-and-profiling
 ---
+
 # Debugging and Profiling
 
 Debugging and profiling are not afterthoughts bolted onto a codebase after the fact. They are
@@ -38,7 +41,7 @@ Does three things:
 1. Instantiates a `pdb.Pdb()` object (the debugger class).
 2. Calls `self.set_trace()` on that instance, which invokes `sys.settrace(self.trace_dispatch)`.
 3. Returns control to the Python interpreter, which now calls `trace_dispatch` on every bytecode
- event.
+   event.
 
 Once the trace hook is active, execution halts at the next line and you are dropped into the pdb
 REPL.
@@ -73,21 +76,21 @@ Inline `breakpoint()` calls placed inside functions.
 
 These commands form the irreducible set you need to operate effectively:
 
-| Command | Action | What It Actually Does |
+| Command   | Action       | What It Actually Does                                                                                                                          |
 | --------- | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------- |
-| `n` | Next | Execute the current line, step over any function calls. Advances to the next line in the _current_ frame. |
-| `s` | Step | Step into the next function call. Creates a new frame and stops at the first executable line inside it. |
-| `c` | Continue | Resume execution until the next breakpoint or program termination. |
-| `b` | Breakpoint | Set a breakpoint. `b` lists all breakpoints. `b 42` sets a breakpoint at line 42 of the current file. `b file.py:42` sets one in another file. |
-| `l` | List | Show source context around the current line. `l .` shows around the current line. `l 1,50` shows lines 1-50. |
-| `p expr` | Print | Evaluate `expr` in the current frame's namespace and print the result. |
-| `pp expr` | Pretty-print | Same as `p` but uses `pprint.pformat` for structured output. Essential for nested dicts, long lists, complex objects. |
-| `w` | Where | Print a stack trace from the current frame to the outermost frame. Shows the full call chain that led to the current position. |
-| `u` | Up | Move one frame up the call stack. You can now inspect local variables in the calling function. |
-| `d` | Down | Move one frame down the call stack (reverse of `u`). |
-| `q` | Quit | Terminate the program immediately. No cleanup, no finally blocks. |
-| `r` | Return | Continue execution until the current function returns. Stops at the return statement. |
-| `args` | Arguments | Print the argument list and current values for the current function. |
+| `n`       | Next         | Execute the current line, step over any function calls. Advances to the next line in the _current_ frame.                                      |
+| `s`       | Step         | Step into the next function call. Creates a new frame and stops at the first executable line inside it.                                        |
+| `c`       | Continue     | Resume execution until the next breakpoint or program termination.                                                                             |
+| `b`       | Breakpoint   | Set a breakpoint. `b` lists all breakpoints. `b 42` sets a breakpoint at line 42 of the current file. `b file.py:42` sets one in another file. |
+| `l`       | List         | Show source context around the current line. `l .` shows around the current line. `l 1,50` shows lines 1-50.                                   |
+| `p expr`  | Print        | Evaluate `expr` in the current frame's namespace and print the result.                                                                         |
+| `pp expr` | Pretty-print | Same as `p` but uses `pprint.pformat` for structured output. Essential for nested dicts, long lists, complex objects.                          |
+| `w`       | Where        | Print a stack trace from the current frame to the outermost frame. Shows the full call chain that led to the current position.                 |
+| `u`       | Up           | Move one frame up the call stack. You can now inspect local variables in the calling function.                                                 |
+| `d`       | Down         | Move one frame down the call stack (reverse of `u`).                                                                                           |
+| `q`       | Quit         | Terminate the program immediately. No cleanup, no finally blocks.                                                                              |
+| `r`       | Return       | Continue execution until the current function returns. Stops at the return statement.                                                          |
+| `args`    | Arguments    | Print the argument list and current values for the current function.                                                                           |
 
 The distinction between `n` and `s` is the single most important concept in pdb. `n` advances the
 Line pointer in the current frame and runs the line to completion. If the line contains a function
@@ -108,9 +111,9 @@ Return, exception). In CPython, this means:
 - Every line execution incurs the overhead of the trace function.
 - The trace function itself must determine the event type and decide what to do.
 
-This overhead is 10-100x slowdown for CPU-bound code. For I/O-bound code, the overhead is
-Often negligible because the interpreter is already spending most of its time waiting for the
-Kernel. Never leave `breakpoint()` or `pdb.set_trace()` in production code paths.
+This overhead is 10-100x slowdown for CPU-bound code. For I/O-bound code, the overhead is Often
+negligible because the interpreter is already spending most of its time waiting for the Kernel.
+Never leave `breakpoint()` or `pdb.set_trace()` in production code paths.
 
 ## Advanced pdb
 
@@ -256,10 +259,10 @@ Key fields and their semantics:
 - `request`: `"launch"` starts a new process. `"attach"` connects to an existing one.
 - `program`: The script to run. `${file}` expands to the currently active file.
 - `console`: `"integratedTerminal"` runs in the VS Code terminal. `"internalConsole"` runs in the
- debug console (no stdin support).
+  debug console (no stdin support).
 - `justMyCode`: When `true`The debugger skips library code. Under the hood, this sets
- `step_over_pylib` in the debug adapter, which filters frames based on whether they belong to
- site-packages or the standard library. When `false`You step into everything.
+  `step_over_pylib` in the debug adapter, which filters frames based on whether they belong to
+  site-packages or the standard library. When `false`You step into everything.
 
 Watch expressions in VS Code are evaluated in the current frame's context on every pause. They are
 Not free — each watch expression requires the debug adapter to serialize the result back to the IDE
@@ -278,7 +281,7 @@ Analysis. PyCharm's debugger supports:
 
 - Evaluate expression on pause (same as VS Code watch expressions).
 - Force return from a function (construct an arbitrary return value and immediately return from the
- current frame).
+  current frame).
 - Exception breakpoints (break on any exception, or on specific exception types).
 - Method breakpoints (break on entry to any method of a class).
 
@@ -353,14 +356,14 @@ Minimal disruption.
 - No timestamp. You have no idea when the message was emitted relative to other events.
 - No log level. You cannot distinguish between a routine status message and a critical error.
 - No source identification. The message does not include the module, function, or line number where
- it was emitted.
+  it was emitted.
 - No structured metadata. You cannot attach request IDs, user IDs, or any other context.
 - No filtering. You cannot selectively enable or disable messages from specific modules.
 - No persistence. Output goes to stdout, which may be piped to `/dev/null`Captured by a process
- manager, or lost entirely.
+  manager, or lost entirely.
 - No rotation. In a long-running process, print output grows without bound.
 - No thread/process identification. In concurrent systems, you cannot tell which thread emitted the
- message.
+  message.
 
 In production systems, `print()` statements are not debugging — they are litter. They make
 Post-incident analysis harder because they produce unstructured, unfilterable noise.
@@ -394,34 +397,34 @@ def process_order(order_id):
 Key design decisions in this code:
 
 1. `logging.getLogger(__name__)` creates a logger named after the current module. `__name__`
- resolves to the fully qualified module name (e.g., `myapp.services.orders`). This gives you
- per-module log granularity. You can set `myapp.services` to WARNING and `myapp.services.orders`
- to DEBUG independently.
+   resolves to the fully qualified module name (e.g., `myapp.services.orders`). This gives you
+   per-module log granularity. You can set `myapp.services` to WARNING and `myapp.services.orders`
+   to DEBUG independently.
 
 2. `logging.basicConfig()` configures the root logger. It creates a `StreamHandler` attached to
- `sys.stderr` with the specified format. `basicConfig` only works if the root logger has no
- handlers yet — calling it after any `logging.getLogger()` has been configured is a no-op. This is
- the single most common mistake with logging configuration.
+   `sys.stderr` with the specified format. `basicConfig` only works if the root logger has no
+   handlers yet — calling it after any `logging.getLogger()` has been configured is a no-op. This is
+   the single most common mistake with logging configuration.
 
 3. The format string uses `%s` style formatting, not f-strings. This is intentional. The `logging`
- module uses lazy string formatting: the `%s` placeholder is only interpolated if the message
- actually gets emitted (i.e., if the log level is enabled). With f-strings, the string is always
- interpolated at the call site, even if the log level filters it out. In a hot loop with
- DEBUG-level messages and an INFO-level threshold, f-strings waste CPU on string formatting that
- is immediately discarded.
+   module uses lazy string formatting: the `%s` placeholder is only interpolated if the message
+   actually gets emitted (i.e., if the log level is enabled). With f-strings, the string is always
+   interpolated at the call site, even if the log level filters it out. In a hot loop with
+   DEBUG-level messages and an INFO-level threshold, f-strings waste CPU on string formatting that
+   is immediately discarded.
 
 4. `exc_info=True` appends the full traceback to the log message. The `logger.exception()` method is
- a shortcut that does the same thing and sets the level to ERROR.
+   a shortcut that does the same thing and sets the level to ERROR.
 
 ### Log Levels
 
-| Level | Numeric Value | When to Use |
+| Level      | Numeric Value | When to Use                                                                                                                                                                                    |
 | ---------- | ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `DEBUG` | 10 | Detailed diagnostic information. Variable values, control flow, internal state. Only enabled during active debugging or in development environments. |
-| `INFO` | 20 | Confirmation that things are working as expected. Request received, processing started, connection established. The default level for most production systems. |
-| `WARNING` | 30 | Something unexpected happened, or an indication of a problem in the near future. Deprecation warning, retry attempt, fallback to secondary path. The default level if no configuration is set. |
-| `ERROR` | 40 | A serious problem. The current operation failed. An HTTP request returned 500, a database query raised an exception, a file could not be parsed. |
-| `CRITICAL` | 50 | A fatal error. The process cannot continue. Out of memory, database connection permanently lost, unrecoverable corruption. |
+| `DEBUG`    | 10            | Detailed diagnostic information. Variable values, control flow, internal state. Only enabled during active debugging or in development environments.                                           |
+| `INFO`     | 20            | Confirmation that things are working as expected. Request received, processing started, connection established. The default level for most production systems.                                 |
+| `WARNING`  | 30            | Something unexpected happened, or an indication of a problem in the near future. Deprecation warning, retry attempt, fallback to secondary path. The default level if no configuration is set. |
+| `ERROR`    | 40            | A serious problem. The current operation failed. An HTTP request returned 500, a database query raised an exception, a file could not be parsed.                                               |
+| `CRITICAL` | 50            | A fatal error. The process cannot continue. Out of memory, database connection permanently lost, unrecoverable corruption.                                                                     |
 
 The numeric values are not arbitrary. They define a total ordering: DEBUG &lt; INFO &lt; WARNING
 &lt; ERROR &lt; CRITICAL. A logger set to WARNING level will emit WARNING, ERROR, and CRITICAL
@@ -435,7 +438,7 @@ Handlers determine where log messages go. The standard library provides:
 - `StreamHandler`: Writes to a stream (defaults to `sys.stderr`).
 - `FileHandler`: Writes to a file. Opens the file in append mode.
 - `RotatingFileHandler`: Writes to a file with rotation. When the file reaches a specified size, it
- is rotated (renamed with a `.1``.2`Etc. Suffix) and a new file is created.
+  is rotated (renamed with a `.1``.2`Etc. Suffix) and a new file is created.
 - `TimedRotatingFileHandler`: Rotates based on time intervals (hourly, daily, weekly).
 
 ```python
@@ -459,9 +462,9 @@ Consuming all available disk space in production.
 
 ### Structured Logging
 
-Structured logging means emitting log messages as machine-parseable data ( JSON) rather
-Than free-text strings. This is essential for production systems that aggregate logs into
-Observability platforms (ELK, Splunk, Datadog, Loki).
+Structured logging means emitting log messages as machine-parseable data ( JSON) rather Than
+free-text strings. This is essential for production systems that aggregate logs into Observability
+platforms (ELK, Splunk, Datadog, Loki).
 
 ```python
 import json
@@ -622,12 +625,12 @@ python -m cProfile -s sort=time script.py
 This runs `script.py` under cProfile and prints a sorted table of function calls at exit. The `-s`
 Flag controls the sort key:
 
-| Sort Key | What It Measures |
+| Sort Key     | What It Measures                                                                                                                                                                    |
 | ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `cumulative` | Total time spent in a function including all functions it calls. This is the default. Use this to find the hot path — the function whose total cost (including callees) is highest. |
-| `tottime` | Time spent in a function itself, excluding callees. Use this to find the function where the CPU is actually doing work, not just dispatching to other functions. |
-| `calls` | Number of calls. Use this to find functions called surprisingly many times. |
-| `time` | Alias for `cumulative`. |
+| `tottime`    | Time spent in a function itself, excluding callees. Use this to find the function where the CPU is actually doing work, not just dispatching to other functions.                    |
+| `calls`      | Number of calls. Use this to find functions called surprisingly many times.                                                                                                         |
+| `time`       | Alias for `cumulative`.                                                                                                                                                             |
 
 ### Programmatic API
 
@@ -653,22 +656,22 @@ The programmatic API gives you fine-grained control:
 - You profile only the section of code you care about, not the entire program startup.
 - `stats.print_stats(20)` restricts output to the top 20 functions, reducing noise.
 - `stats.print_callers("process_record")` shows who called `process_record` and how much time each
- caller spent in it. This is how you answer "where is this function being called from, and which
- call site is the bottleneck?"
+  caller spent in it. This is how you answer "where is this function being called from, and which
+  call site is the bottleneck?"
 
 ### What cProfile Actually Measures
 
-CProfile uses `sys.setprofile()`Not `sys.settrace()`. `setprofile` fires on function call and
-Return events only (not on every line). On each call, cProfile records a timestamp. On each return,
-It computes the elapsed time. This means:
+CProfile uses `sys.setprofile()`Not `sys.settrace()`. `setprofile` fires on function call and Return
+events only (not on every line). On each call, cProfile records a timestamp. On each return, It
+computes the elapsed time. This means:
 
 - cProfile measures _wall clock time_ by default, not CPU time. If your function blocks on I/O, that
- I/O wait time is included in the profile.
+  I/O wait time is included in the profile.
 - cProfile does not measure time spent in C extension functions that do not call back into Python.
- The profile hook only fires when Python frames are entered and exited.
+  The profile hook only fires when Python frames are entered and exited.
 - The `tottime` column shows time spent in the function body excluding callees. The `cumtime` column
- shows total time including callees. The `percall` columns are the respective values divided by the
- number of calls.
+  shows total time including callees. The `percall` columns are the respective values divided by the
+  number of calls.
 
 ### Restricting Output
 
@@ -727,26 +730,26 @@ With the least external interference from the OS scheduler, cache effects, and o
 ### Common Gotchas
 
 1. **Measuring list creation including allocation**: `[x for x in range(1000)]` measures both the
- iteration and the list allocation. If you want to benchmark the iteration, use a generator or
- pre-allocate the list.
+   iteration and the list allocation. If you want to benchmark the iteration, use a generator or
+   pre-allocate the list.
 
 2. **Measuring dict creation**: `{"a": 1, "b": 2}` includes the cost of hash computation for keys
- and the dict's internal resize operations. The first insertion into an empty dict triggers
- allocation of the hash table. If you are benchmarking dict lookup, create the dict in the setup
- phase.
+   and the dict's internal resize operations. The first insertion into an empty dict triggers
+   allocation of the hash table. If you are benchmarking dict lookup, create the dict in the setup
+   phase.
 
 3. **The first run is always slower**: CPython's bytecode compilation, import machinery, and memory
- allocator all have cold-start effects. `timeit` runs the setup once and then the statement
- multiple times. The first iteration of the statement may be slower due to cache coldness.
+   allocator all have cold-start effects. `timeit` runs the setup once and then the statement
+   multiple times. The first iteration of the statement may be slower due to cache coldness.
 
 4. **Garbage collection**: By default, `timeit` disables garbage collection during timing with
- `gc.disable()`. If your benchmark creates and discards many objects, this can produce
- misleadingly fast results. Use `timeit.timeit(..., setup="import gc; gc.enable()")` if GC is
- relevant to your measurement.
+   `gc.disable()`. If your benchmark creates and discards many objects, this can produce
+   misleadingly fast results. Use `timeit.timeit(..., setup="import gc; gc.enable()")` if GC is
+   relevant to your measurement.
 
 5. **Timer precision**: `timeit` uses `time.perf_counter()` by default, which provides the highest
- resolution timer available on the platform. On Linux, this is `clock_gettime(CLOCK_MONOTONIC)`
- which has nanosecond resolution.
+   resolution timer available on the platform. On Linux, this is `clock_gettime(CLOCK_MONOTONIC)`
+   which has nanosecond resolution.
 
 ## line_profiler
 
@@ -872,7 +875,7 @@ Line #    Mem usage    Increment  Occurrences   Line Contents
 
 - `Mem usage`: Total RSS (Resident Set Size) of the process after executing the line.
 - `Increment`: Change in RSS caused by this line. Positive means memory was allocated. Negative
- means memory was freed (garbage collector ran).
+  means memory was freed (garbage collector ran).
 
 In this example, `f.read()` on line 4 allocates 150.4 MiB, which is the file contents loaded into
 Memory. `json.loads()` on line 5 adds another 49.8 MiB for the parsed data structure. The list
@@ -903,14 +906,14 @@ This produces a time series of memory usage that you can plot or analyze.
 ### Important Caveats
 
 - `memory_profiler` measures RSS, which includes memory shared with other processes (shared
- libraries, mmap'd files). A process that maps a 1 GiB file via `mmap` will show a 1 GiB RSS spike
- even though it did not allocate any private memory.
+  libraries, mmap'd files). A process that maps a 1 GiB file via `mmap` will show a 1 GiB RSS spike
+  even though it did not allocate any private memory.
 - The CPython garbage collector does not immediately return freed memory to the OS. Memory freed by
- the GC remains in the process's heap and is available for reuse. RSS may not decrease even after
- objects are freed. This is not a memory leak — it is the allocator's strategy.
+  the GC remains in the process's heap and is available for reuse. RSS may not decrease even after
+  objects are freed. This is not a memory leak — it is the allocator's strategy.
 - Memory profiling is inherently noisy. The OS may swap pages in and out, other processes may
- compete for memory, and the measurement itself has overhead. Always run memory profiles multiple
- times and look for trends, not individual measurements.
+  compete for memory, and the measurement itself has overhead. Always run memory profiles multiple
+  times and look for trends, not individual measurements.
 
 ## py-spy
 
@@ -926,7 +929,7 @@ Unacceptable for profiling production services because:
 
 - You must restart the process with profiling enabled, losing all in-flight requests.
 - The profiling overhead (10-1000x) makes the results unrepresentative of actual production
- behavior.
+  behavior.
 - You cannot profile a specific time window — you profile the entire run or nothing.
 
 `py-spy` solves all of these problems. It attaches to a running Python process with zero code
@@ -967,7 +970,7 @@ Bars at the bottom — those are the functions where most CPU time is spent.
 3. It finds the main interpreter thread's `PyThreadState` object.
 4. It walks the frame chain (`PyFrameObject.f_back`) to reconstruct the call stack.
 5. It maps frame code objects to filenames and line numbers using the process's loaded Python
- bytecode.
+   bytecode.
 
 This is why py-spy requires no instrumentation. It is an external observer reading internal data
 Structures. The overhead is limited to the cost of reading `/proc/<pid>/mem`Which is a kernel
@@ -977,14 +980,14 @@ Operation that does not disturb the target process.
 
 - py-spy only profiles CPU time. It cannot measure wall-clock time or I/O wait.
 - py-spy requires the same Python version and build as the target process (the internal structures
- must match).
+  must match).
 - py-spy does not work on processes running under PyPy, Stackless Python, or other non-CPython
- implementations.
+  implementations.
 - py-spy requires root privileges to attach to processes owned by other users (or `CAP_SYS_PTRACE`).
 - Functions that execute too quickly to be caught by the sampler may be invisible in the profile. A
- function that takes 1 microsecond will be missed by a 100 Hz sampler (which samples every 10
- milliseconds). This is a fundamental limitation of sampling — it provides statistical accuracy,
- not deterministic accuracy.
+  function that takes 1 microsecond will be missed by a 100 Hz sampler (which samples every 10
+  milliseconds). This is a fundamental limitation of sampling — it provides statistical accuracy,
+  not deterministic accuracy.
 
 ## Common Performance Anti-Patterns
 
@@ -1041,8 +1044,8 @@ The list comprehension `[x * 2 for x in range(10000000)]` allocates a list with 
 `(x * 2 for x in range(10000000))` produces one value at a time, using O(1) memory.
 
 This applies to any function that accepts an iterable: `any()``all()``max()``min()`
-`sorted()``list()``tuple()``set()``dict()`. All of these can consume generators. Only pass a
-List when you need random access or multiple iterations over the same data.
+`sorted()``list()``tuple()``set()``dict()`. All of these can consume generators. Only pass a List
+when you need random access or multiple iterations over the same data.
 
 ### Global Variable Lookups
 
@@ -1114,13 +1117,13 @@ Second half: "Yet we should not pass up our opportunities in that critical 3%."
 The engineering discipline is:
 
 1. **Write correct, clear code first.** Correctness is non-negotiable. Clarity is a force multiplier
- — clear code is easier to debug, test, and maintain.
+   — clear code is easier to debug, test, and maintain.
 2. **Measure before optimizing.** Use cProfile or py-spy to identify the actual bottleneck. Your
- intuition about what is slow is almost certainly wrong.
+   intuition about what is slow is almost certainly wrong.
 3. **Optimize the measured bottleneck.** Make one change, measure again, confirm the improvement. If
- the change did not help, revert it.
+   the change did not help, revert it.
 4. **Stop when the bottleneck is elsewhere.** When the profile shows that function A is no longer
- the hot path, stop optimizing it. Move to the new bottleneck.
+   the hot path, stop optimizing it. Move to the new bottleneck.
 
 The cost of premature optimization is not just wasted time. Over-optimized code is harder to read,
 Harder to maintain, and more likely to contain bugs. A hand-rolled bit-manipulation trick that saves
@@ -1143,13 +1146,13 @@ class Point:
         self.y = y
 ```
 
-Without `__slots__`Each instance has a `__dict__` (a Python dictionary) that stores its
-Attributes. A `__dict__` has significant overhead: the dict object itself, the hash table, the hash
-Array. For objects with a small, fixed set of attributes, this overhead can exceed the data stored.
+Without `__slots__`Each instance has a `__dict__` (a Python dictionary) that stores its Attributes.
+A `__dict__` has significant overhead: the dict object itself, the hash table, the hash Array. For
+objects with a small, fixed set of attributes, this overhead can exceed the data stored.
 
-With `__slots__`Python allocates a fixed-size descriptor array for the declared attributes. There
-Is no `__dict__`No hash table, no dynamic attribute creation. Each instance is smaller and
-Attribute access is faster (descriptor lookup vs dictionary lookup).
+With `__slots__`Python allocates a fixed-size descriptor array for the declared attributes. There Is
+no `__dict__`No hash table, no dynamic attribute creation. Each instance is smaller and Attribute
+access is faster (descriptor lookup vs dictionary lookup).
 
 The memory savings are significant at scale. An instance with `__slots__` uses approximately 48
 Bytes on 64-bit CPython. Without `__slots__`The same instance uses approximately 200+ bytes
@@ -1160,9 +1163,9 @@ Tradeoffs:
 
 - You cannot add attributes not declared in `__slots__`. `obj.z = 42` raises `AttributeError`.
 - Instances with `__slots__` cannot be pickled by default unless you define `__getstate__` and
- `__setstate__`.
+  `__setstate__`.
 - `__slots__` does not work well with multiple inheritance (both parent classes must have
- `__slots__`And they must not overlap).
+  `__slots__`And they must not overlap).
 
 ## Common Pitfalls
 

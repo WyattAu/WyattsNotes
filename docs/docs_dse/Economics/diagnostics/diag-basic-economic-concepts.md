@@ -1,9 +1,12 @@
 ---
 title: 'Basic Economic Concepts -- Diagnostic Tests'
-description: "DSE Economics diagnostic tests for basic economic concepts: scarcity, opportunity cost, PPC, economic systems, and division of labour."
+description:
+  'DSE Economics diagnostic tests for basic economic concepts: scarcity, opportunity cost, PPC,
+  economic systems, and division of labour.'
 slug: diag-basic-economic-concepts
 hide_table_of_contents: true
 ---
+
 # Basic Economic Concepts — Diagnostic Tests
 
 ## Unit Tests
@@ -52,12 +55,12 @@ Disadvantage: Market failure -- public goods are underprovided, negative externa
 Overproduced, and income inequality can be severe.
 
 **Planned (Command) Economy:** (a) A central authority (government) determines what to produce, how
-To produce, and for whom goods are distributed, through a national plan. (b) Prices are
-Set administratively by the government rather than by market forces; they may not reflect scarcity.
-(c) Advantage: Can achieve rapid industrialisation and ensure basic needs are met; can direct
-Resources to priority areas (e.g., defence, infrastructure). Disadvantage: Inefficient due to
-Information problems (planners cannot know all consumer preferences); lack of incentive for
-Innovation and quality improvement; chronic shortages and surpluses.
+To produce, and for whom goods are distributed, through a national plan. (b) Prices are Set
+administratively by the government rather than by market forces; they may not reflect scarcity. (c)
+Advantage: Can achieve rapid industrialisation and ensure basic needs are met; can direct Resources
+to priority areas (e.g., defence, infrastructure). Disadvantage: Inefficient due to Information
+problems (planners cannot know all consumer preferences); lack of incentive for Innovation and
+quality improvement; chronic shortages and surpluses.
 
 **Mixed Economy:** (a) Both the market and the government play roles. The market handles most
 Allocation decisions, while the government intervenes to correct market failures, redistribute
@@ -87,18 +90,18 @@ Labour.
 (b) Three reasons division of labour increases productivity:
 
 1. **Increased dexterity**: Workers who repeat the same task become more skilled and faster at it
- over time (learning by doing).
+   over time (learning by doing).
 2. **Time saving**: Workers do not waste time switching between different tasks and tools.
 3. **Specialisation of machinery**: When tasks are broken down into simple operations, it becomes
- possible to design and use specialised machinery for each task, which is far more efficient than
- general-purpose tools.
+   possible to design and use specialised machinery for each task, which is far more efficient than
+   general-purpose tools.
 
 (c) Two limitations:
 
 1. **Worker boredom and demotivation**: Repetitive tasks lead to lower job satisfaction, higher
- absenteeism, and reduced morale, which can offset productivity gains.
+   absenteeism, and reduced morale, which can offset productivity gains.
 2. **Interdependence**: If one stage of production breaks down (e.g., a strike or machine failure),
- the entire production line stops. This makes the firm vulnerable to disruption.
+   the entire production line stops. This makes the firm vulnerable to disruption.
 
 ---
 
@@ -143,17 +146,16 @@ Answer to the economic concept of scarcity and resource allocation.
 (a) Equilibrium: $500 - 2P = 100 + 3P$So $400 = 5P$$P^* = 80$ ($\$80,000$),
 $Q^* = 500 - 2(80) = 340$.
 
-(b) Since healthcare has **positive externalities**, the social benefit exceeds the private benefit, so
-The socially optimal quantity should be **greater** than the market quantity of 340. The given optimal
-Quantity of 300 is inconsistent with positive externalities. A corrected interpretation sets the
-Social optimum at $Q_o = 400$.
+(b) Since healthcare has **positive externalities**, the social benefit exceeds the private benefit,
+so The socially optimal quantity should be **greater** than the market quantity of 340. The given
+optimal Quantity of 300 is inconsistent with positive externalities. A corrected interpretation sets
+the Social optimum at $Q_o = 400$.
 
 To achieve $Q_o = 400$: The subsidy shifts the effective demand curve. New demand:
 $Q_d = 500 - 2(P - s) = 500 - 2P + 2s$ (where $s$ is the per-unit subsidy). Set equal to supply:
 $500 - 2P + 2s = 100 + 3P$So $400 + 2s = 5P$$P = (400 + 2s)/5$.
 
-Quantity:
-$Q = 100 + 3P = 100 + 3(400 + 2s)/5 = (1700 + 6s)/5$.
+Quantity: $Q = 100 + 3P = 100 + 3(400 + 2s)/5 = (1700 + 6s)/5$.
 
 Set $Q = 400$: $(1700 + 6s)/5 = 400$$1700 + 6s = 2000$$6s = 300$$s = 50$.
 
@@ -216,129 +218,255 @@ Possibilities that were previously unattainable.
 
 ### EQ-1: PPC Shifts and Economic Growth
 
-**Question:** An economy's PPC for capital goods ($K$) and consumer goods ($C$) is given by $K = 200 - 2\sqrt{C}$ for $0 \le C \le 10\,000$. Currently, the economy produces at $C = 2500$$K = 100$. (a) Verify that this point is on the PPC. (b) Calculate the opportunity cost of increasing consumer goods from 2500 to 3600. (c) If the economy invests in new technology, shifting the PPC to $K = 240 - 2\sqrt{C}$Can the economy now produce $C = 3600$ and $K = 120$ simultaneously? Show your working. (d) Explain the difference between a movement along the PPC and a shift of the PPC.
+**Question:** An economy's PPC for capital goods ($K$) and consumer goods ($C$) is given by
+$K = 200 - 2\sqrt{C}$ for $0 \le C \le 10\,000$. Currently, the economy produces at
+$C = 2500$$K = 100$. (a) Verify that this point is on the PPC. (b) Calculate the opportunity cost of
+increasing consumer goods from 2500 to 3600. (c) If the economy invests in new technology, shifting
+the PPC to $K = 240 - 2\sqrt{C}$Can the economy now produce $C = 3600$ and $K = 120$ simultaneously?
+Show your working. (d) Explain the difference between a movement along the PPC and a shift of the
+PPC.
 
 **Solution:**
 
-(a) At $C = 2500$: $K = 200 - 2\sqrt{2500} = 200 - 2(50) = 200 - 100 = 100$. The point $(2500, 100)$ is on the PPC. Verified.
+(a) At $C = 2500$: $K = 200 - 2\sqrt{2500} = 200 - 2(50) = 200 - 100 = 100$. The point $(2500, 100)$
+is on the PPC. Verified.
 
 (b) At $C = 3600$: $K = 200 - 2\sqrt{3600} = 200 - 2(60) = 200 - 120 = 80$.
 
 Moving from $C = 2500$ to $C = 3600$: $\Delta C = 1100$$\Delta K = 80 - 100 = -20$.
 
-Opportunity cost $= \frac{|\Delta K|}{\Delta C} = \frac{20}{1100} = 0.0182$ units of $K$ per unit of $C$.
+Opportunity cost $= \frac{|\Delta K|}{\Delta C} = \frac{20}{1100} = 0.0182$ units of $K$ per unit of
+$C$.
 
-Alternatively, the opportunity cost of the 1100 additional units of consumer goods is 20 units of capital goods forgone.
+Alternatively, the opportunity cost of the 1100 additional units of consumer goods is 20 units of
+capital goods forgone.
 
 (c) New PPC at $C = 3600$: $K = 240 - 2\sqrt{3600} = 240 - 120 = 120$.
 
-Yes, the economy can produce $C = 3600$ and $K = 120$ simultaneously on the new PPC. The technological advancement has shifted the PPC outward, allowing the economy to produce more of both goods than before.
+Yes, the economy can produce $C = 3600$ and $K = 120$ simultaneously on the new PPC. The
+technological advancement has shifted the PPC outward, allowing the economy to produce more of both
+goods than before.
 
-(d) A **movement along the PPC** represents a reallocation of existing resources between the two goods (a choice about what to produce given current capacity). This involves an opportunity cost because producing more of one good requires producing less of the other. A **shift of the PPC** represents a change in the economy's productive capacity due to: (i) changes in the quantity or quality of resources (labour force growth, education), (ii) technological progress, or (iii) institutional improvements. An outward shift means the economy can produce more of both goods -- economic growth. An inward shift (due to war, natural disaster, or resource depletion) means the economy's capacity has contracted.
+(d) A **movement along the PPC** represents a reallocation of existing resources between the two
+goods (a choice about what to produce given current capacity). This involves an opportunity cost
+because producing more of one good requires producing less of the other. A **shift of the PPC**
+represents a change in the economy's productive capacity due to: (i) changes in the quantity or
+quality of resources (labour force growth, education), (ii) technological progress, or (iii)
+institutional improvements. An outward shift means the economy can produce more of both goods --
+economic growth. An inward shift (due to war, natural disaster, or resource depletion) means the
+economy's capacity has contracted.
 
 ### EQ-2: Production Possibilities with Two PPCs
 
-**Question:** Country A can produce either 500 cars or 1000 tonnes of wheat per year (linear PPC). Country B can produce either 800 cars or 400 tonnes of wheat per year (linear PPC). (a) Draw both PPCs and calculate the opportunity cost of 1 car in each country. (b) Which country has a comparative advantage in cars? In wheat? (c) If they specialise completely and trade at a rate of 1 car $= 1.5$ tonnes of wheat, show that both countries gain. (d) If Country A discovers a new farming technology that doubles its wheat production capacity (can now produce 2000 tonnes of wheat or 500 cars), recalculate the opportunity costs and determine whether the pattern of comparative advantage changes.
+**Question:** Country A can produce either 500 cars or 1000 tonnes of wheat per year (linear PPC).
+Country B can produce either 800 cars or 400 tonnes of wheat per year (linear PPC). (a) Draw both
+PPCs and calculate the opportunity cost of 1 car in each country. (b) Which country has a
+comparative advantage in cars? In wheat? (c) If they specialise completely and trade at a rate of 1
+car $= 1.5$ tonnes of wheat, show that both countries gain. (d) If Country A discovers a new farming
+technology that doubles its wheat production capacity (can now produce 2000 tonnes of wheat or 500
+cars), recalculate the opportunity costs and determine whether the pattern of comparative advantage
+changes.
 
 **Solution:**
 
 (a) Opportunity cost of 1 car:
+
 - Country A: $\frac{1000}{500} = 2$ tonnes of wheat.
 - Country B: $\frac{400}{800} = 0.5$ tonnes of wheat.
 
-(b) Country A has a **comparative advantage in wheat** (opportunity cost of 1 wheat $= 0.5$ cars vs 2 cars for B). Country B has a **comparative advantage in cars** (opportunity cost of 1 car $= 0.5$ wheat vs 2 wheat for A).
+(b) Country A has a **comparative advantage in wheat** (opportunity cost of 1 wheat $= 0.5$ cars vs
+2 cars for B). Country B has a **comparative advantage in cars** (opportunity cost of 1 car $= 0.5$
+wheat vs 2 wheat for A).
 
 (c) **Without trade** (assume each country splits resources equally):
+
 - Country A: 250 cars, 500 wheat. Country B: 400 cars, 200 wheat. World: 650 cars, 700 wheat.
 
 **With specialisation:**
+
 - Country A produces only wheat: 0 cars, 1000 wheat.
 - Country B produces only cars: 800 cars, 0 wheat.
 - World total: 800 cars, 1000 wheat. Gains: 150 cars, 300 wheat.
 
 At 1 car $= 1.5$ wheat:
-- If A exports 300 wheat to B in exchange for 200 cars: A has 200 cars and 700 wheat (gains: 200 cars, 200 wheat vs autarky). B has 600 cars and 300 wheat (gains: 200 cars, 100 wheat vs autarky). Both are better off.
+
+- If A exports 300 wheat to B in exchange for 200 cars: A has 200 cars and 700 wheat (gains: 200
+  cars, 200 wheat vs autarky). B has 600 cars and 300 wheat (gains: 200 cars, 100 wheat vs autarky).
+  Both are better off.
 
 (d) New opportunity costs for Country A: can produce 500 cars or 2000 wheat.
 
-Opportunity cost of 1 car in A $= \frac{2000}{500} = 4$ tonnes of wheat (was 2).
-Opportunity cost of 1 wheat in A $= \frac{500}{2000} = 0.25$ cars (was 0.5).
+Opportunity cost of 1 car in A $= \frac{2000}{500} = 4$ tonnes of wheat (was 2). Opportunity cost of
+1 wheat in A $= \frac{500}{2000} = 0.25$ cars (was 0.5).
 
 Country B unchanged: 1 car $= 0.5$ wheat.
 
-The pattern of comparative advantage is **unchanged**: Country A still has a comparative advantage in wheat (lower opportunity cost of wheat: 0.25 cars vs 2 cars), and Country B still has a comparative advantage in cars (0.5 wheat vs 4 wheat). However, the gains from trade are now larger because the difference in opportunity costs has increased. The technological improvement in Country A's wheat sector makes specialisation and trade even more beneficial.
+The pattern of comparative advantage is **unchanged**: Country A still has a comparative advantage
+in wheat (lower opportunity cost of wheat: 0.25 cars vs 2 cars), and Country B still has a
+comparative advantage in cars (0.5 wheat vs 4 wheat). However, the gains from trade are now larger
+because the difference in opportunity costs has increased. The technological improvement in Country
+A's wheat sector makes specialisation and trade even more beneficial.
 
 ### EQ-3: Economic Systems and the Role of Government in Hong Kong
 
-**Question:** Hong Kong is often described as the "freest economy in the world" based on indices such as the Heritage Foundation's Index of Economic Freedom. However, the Hong Kong government plays a significant role in certain sectors. (a) Identify three areas where the Hong Kong government intervenes significantly in the economy, and for each, explain the market failure or equity rationale for intervention. (b) Calculate the government expenditure as a percentage of GDP if government spending is HK$600 billion and GDP is HK$2,900 billion. Compare this with the OECD average of approximately 40%. (c) Explain why a low government expenditure ratio does not necessarily mean minimal government intervention. (d) Evaluate whether Hong Kong's "positive non-interventionist" policy is still appropriate in the 21st century.
+**Question:** Hong Kong is often described as the "freest economy in the world" based on indices
+such as the Heritage Foundation's Index of Economic Freedom. However, the Hong Kong government plays
+a significant role in certain sectors. (a) Identify three areas where the Hong Kong government
+intervenes significantly in the economy, and for each, explain the market failure or equity
+rationale for intervention. (b) Calculate the government expenditure as a percentage of GDP if
+government spending is HK$600 billion and GDP is HK$2,900 billion. Compare this with the OECD
+average of approximately 40%. (c) Explain why a low government expenditure ratio does not
+necessarily mean minimal government intervention. (d) Evaluate whether Hong Kong's "positive
+non-interventionist" policy is still appropriate in the 21st century.
 
 **Solution:**
 
 (a) Three areas of significant government intervention:
 
-1. **Housing:** The government provides public rental housing to approximately 30% of the population and subsidised Home Ownership Scheme flats. **Rationale:** Housing is a basic necessity with positive externalities (stable housing improves health, education, and productivity). The private market underprovides affordable housing because: (i) land is in limited supply and subject to speculation, (ii) the price mechanism allocates housing to the highest bidder rather than those with the greatest need, (iii) positive externalities of adequate housing are not captured in market prices.
+1. **Housing:** The government provides public rental housing to approximately 30% of the population
+   and subsidised Home Ownership Scheme flats. **Rationale:** Housing is a basic necessity with
+   positive externalities (stable housing improves health, education, and productivity). The private
+   market underprovides affordable housing because: (i) land is in limited supply and subject to
+   speculation, (ii) the price mechanism allocates housing to the highest bidder rather than those
+   with the greatest need, (iii) positive externalities of adequate housing are not captured in
+   market prices.
 
-2. **Healthcare:** The Hospital Authority provides heavily subsidised healthcare (approximately 95% subsidised for inpatient care). **Rationale:** Healthcare has significant positive externalities (infectious disease control, a healthy workforce). Information asymmetry between patients and doctors creates a principal-agent problem. Without subsidy, low-income individuals would forgo preventive care, increasing long-term costs and reducing productivity.
+2. **Healthcare:** The Hospital Authority provides heavily subsidised healthcare (approximately 95%
+   subsidised for inpatient care). **Rationale:** Healthcare has significant positive externalities
+   (infectious disease control, a healthy workforce). Information asymmetry between patients and
+   doctors creates a principal-agent problem. Without subsidy, low-income individuals would forgo
+   preventive care, increasing long-term costs and reducing productivity.
 
-3. **Education:** The government provides 12 years of free education and subsidises kindergarten and tertiary education. **Rationale:** Education generates positive externalities (a more educated workforce benefits all firms, civic participation, lower crime). It also addresses intergenerational inequality by providing equal opportunity regardless of family background.
+3. **Education:** The government provides 12 years of free education and subsidises kindergarten and
+   tertiary education. **Rationale:** Education generates positive externalities (a more educated
+   workforce benefits all firms, civic participation, lower crime). It also addresses
+   intergenerational inequality by providing equal opportunity regardless of family background.
 
 (b) Government expenditure ratio $= \frac{600}{2900} \times 100\% = 20.7\%$.
 
-This is approximately half the OECD average (40%). Hong Kong has one of the lowest government spending ratios among developed economies.
+This is approximately half the OECD average (40%). Hong Kong has one of the lowest government
+spending ratios among developed economies.
 
 (c) A low expenditure ratio does not mean minimal intervention because:
-1. **Regulation:** The government intervenes through regulation (Competition Ordinance, securities regulation, environmental standards, building codes) without direct spending. Regulation changes behaviour but does not appear on the expenditure side of the budget.
-2. **Tax expenditure:** Hong Kong has no sales tax (GST/VAT), which is equivalent to a significant subsidy to consumers. The foregone revenue from not having a GST is a form of government intervention (keeping prices lower than they would be under a neutral tax system).
-3. **Land policy:** The government controls all land supply in Hong Kong (except St. John's Cathedral). By restricting or releasing land, the government profoundly influences the property market and economic activity without it appearing as expenditure.
-4. **Implicit guarantees:** The government's guarantee of bank deposits (up to HK$500,000), the Exchange Fund's backing of the monetary base, and the implicit guarantee of MTR safety all represent government intervention not captured in the expenditure ratio.
+
+1. **Regulation:** The government intervenes through regulation (Competition Ordinance, securities
+   regulation, environmental standards, building codes) without direct spending. Regulation changes
+   behaviour but does not appear on the expenditure side of the budget.
+2. **Tax expenditure:** Hong Kong has no sales tax (GST/VAT), which is equivalent to a significant
+   subsidy to consumers. The foregone revenue from not having a GST is a form of government
+   intervention (keeping prices lower than they would be under a neutral tax system).
+3. **Land policy:** The government controls all land supply in Hong Kong (except St. John's
+   Cathedral). By restricting or releasing land, the government profoundly influences the property
+   market and economic activity without it appearing as expenditure.
+4. **Implicit guarantees:** The government's guarantee of bank deposits (up to HK$500,000), the
+   Exchange Fund's backing of the monetary base, and the implicit guarantee of MTR safety all
+   represent government intervention not captured in the expenditure ratio.
 
 (d) **Evaluation of "positive non-interventionism":**
 
-*Arguments for maintaining the policy:*
-- Hong Kong's economic success was built on free-market principles: low taxes, minimal regulation, free trade, and the rule of law.
-- Government intervention can create inefficiency (bureaucracy, regulatory capture, crowding out).
-- Hong Kong's role as an international financial centre depends on light-touch regulation that attracts global capital.
-- The Currency Board system already constrains monetary policy; fiscal discipline is needed to maintain the peg.
+_Arguments for maintaining the policy:_
 
-*Arguments for reform:*
-- Rising inequality (Gini coefficient 0.54) suggests the market alone does not distribute income equitably. The social safety net may need strengthening.
-- The housing affordability crisis is partly a result of government land policy. A more proactive approach to land release could address this without abandoning free-market principles.
-- Environmental challenges (climate change, air quality, waste management) require government action because pollution is a market failure.
-- Competition policy (the Competition Ordinance was only enacted in 2015) needs strengthening to prevent abuse of market power, particularly in the property and retail sectors dominated by a few conglomerates.
+- Hong Kong's economic success was built on free-market principles: low taxes, minimal regulation,
+  free trade, and the rule of law.
+- Government intervention can create inefficiency (bureaucracy, regulatory capture, crowding out).
+- Hong Kong's role as an international financial centre depends on light-touch regulation that
+  attracts global capital.
+- The Currency Board system already constrains monetary policy; fiscal discipline is needed to
+  maintain the peg.
+
+_Arguments for reform:_
+
+- Rising inequality (Gini coefficient 0.54) suggests the market alone does not distribute income
+  equitably. The social safety net may need strengthening.
+- The housing affordability crisis is partly a result of government land policy. A more proactive
+  approach to land release could address this without abandoning free-market principles.
+- Environmental challenges (climate change, air quality, waste management) require government action
+  because pollution is a market failure.
+- Competition policy (the Competition Ordinance was only enacted in 2015) needs strengthening to
+  prevent abuse of market power, particularly in the property and retail sectors dominated by a few
+  conglomerates.
 
 ### EQ-4: Specialisation, Division of Labour, and Hong Kong's Economy
 
-**Question:** Hong Kong's economy has undergone significant structural transformation over the past 50 years. In the 1970s, manufacturing accounted for approximately 30% of GDP and employed 45% of the workforce. By 2020, manufacturing accounted for less than 1% of GDP, while services accounted for over 93%. (a) Explain this transformation using the concept of comparative advantage and factor endowments. (b) If Hong Kong's wage rate is HK$60 per hour and mainland China's is HK$20 per hour, and productivity in manufacturing is 10 units per hour in Hong Kong and 4 units per hour in China, calculate the unit labour cost for each. (c) Using the unit labour cost data, explain why manufacturing relocated to the mainland. (d) Identify three service industries where Hong Kong has a comparative advantage and explain the sources of that advantage.
+**Question:** Hong Kong's economy has undergone significant structural transformation over the past
+50 years. In the 1970s, manufacturing accounted for approximately 30% of GDP and employed 45% of the
+workforce. By 2020, manufacturing accounted for less than 1% of GDP, while services accounted for
+over 93%. (a) Explain this transformation using the concept of comparative advantage and factor
+endowments. (b) If Hong Kong's wage rate is HK$60 per hour and mainland China's is HK$20 per hour,
+and productivity in manufacturing is 10 units per hour in Hong Kong and 4 units per hour in China,
+calculate the unit labour cost for each. (c) Using the unit labour cost data, explain why
+manufacturing relocated to the mainland. (d) Identify three service industries where Hong Kong has a
+comparative advantage and explain the sources of that advantage.
 
 **Solution:**
 
 (a) **Structural transformation explained by comparative advantage:**
 
-In the 1970s, Hong Kong had abundant low-cost labour and limited capital. Its comparative advantage lay in labour-intensive manufacturing (textiles, garments, plastics, electronics assembly). As Hong Kong's economy grew, wages rose (reflecting increased human capital and productivity), making labour-intensive manufacturing less competitive. Simultaneously, the opening of mainland China under Deng Xiaoping's reforms (1978) provided an enormous pool of low-cost labour just across the border. Hong Kong firms relocated manufacturing to Guangdong province while retaining management, finance, logistics, and marketing functions in Hong Kong. This division of labour maximised efficiency: China specialised in production (abundant low-cost labour), while Hong Kong specialised in services (finance, trade, logistics, professional services) where it had a growing comparative advantage due to its human capital, legal system, infrastructure, and geographical location.
+In the 1970s, Hong Kong had abundant low-cost labour and limited capital. Its comparative advantage
+lay in labour-intensive manufacturing (textiles, garments, plastics, electronics assembly). As Hong
+Kong's economy grew, wages rose (reflecting increased human capital and productivity), making
+labour-intensive manufacturing less competitive. Simultaneously, the opening of mainland China under
+Deng Xiaoping's reforms (1978) provided an enormous pool of low-cost labour just across the border.
+Hong Kong firms relocated manufacturing to Guangdong province while retaining management, finance,
+logistics, and marketing functions in Hong Kong. This division of labour maximised efficiency: China
+specialised in production (abundant low-cost labour), while Hong Kong specialised in services
+(finance, trade, logistics, professional services) where it had a growing comparative advantage due
+to its human capital, legal system, infrastructure, and geographical location.
 
 (b) Unit labour cost (ULC) $= \frac{\text{Wage rate}}{\text{Labour productivity}}$.
 
 - Hong Kong: $ULC = \frac{60}{10} = \text{HK}\$6$ per unit.
 - China: $ULC = \frac{20}{4} = \text{HK}\$5$ per unit.
 
-(c) China's unit labour cost (HK$5) is lower than Hong Kong's (HK$6), giving China a cost advantage in manufacturing. Even though Hong Kong workers are more productive (10 units per hour vs 4), their higher wages more than offset this productivity advantage. For firms, the decision to relocate is based on cost minimisation. The lower unit labour cost in China means that producing the same good costs less there, even accounting for transport and coordination costs.
+(c) China's unit labour cost (HK$5) is lower than Hong Kong's (HK$6), giving China a cost advantage
+in manufacturing. Even though Hong Kong workers are more productive (10 units per hour vs 4), their
+higher wages more than offset this productivity advantage. For firms, the decision to relocate is
+based on cost minimisation. The lower unit labour cost in China means that producing the same good
+costs less there, even accounting for transport and coordination costs.
 
 (d) Three service industries with Hong Kong's comparative advantage:
 
-1. **Financial services:** Hong Kong is one of the world's top three financial centres (alongside New York and London). Sources of advantage: the rule of law (independent judiciary based on English common law), free capital flows, the Linked Exchange Rate providing currency stability, low taxation, and a deep pool of financial professionals. Hong Kong is the premier offshore Renminbi centre and the gateway for international capital entering and exiting China.
+1. **Financial services:** Hong Kong is one of the world's top three financial centres (alongside
+   New York and London). Sources of advantage: the rule of law (independent judiciary based on
+   English common law), free capital flows, the Linked Exchange Rate providing currency stability,
+   low taxation, and a deep pool of financial professionals. Hong Kong is the premier offshore
+   Renminbi centre and the gateway for international capital entering and exiting China.
 
-2. **Logistics and shipping:** Hong Kong has one of the world's busiest container ports and airports. Sources of advantage: strategic location at the mouth of the Pearl River Delta, world-class infrastructure (Kai Tak cruise terminal, Hong Kong International Airport with three runways), efficient customs procedures, and the free port status (no tariffs on imports).
+2. **Logistics and shipping:** Hong Kong has one of the world's busiest container ports and
+   airports. Sources of advantage: strategic location at the mouth of the Pearl River Delta,
+   world-class infrastructure (Kai Tak cruise terminal, Hong Kong International Airport with three
+   runways), efficient customs procedures, and the free port status (no tariffs on imports).
 
-3. **Professional services (legal, accounting, consulting):** Hong Kong has a concentration of internationally qualified professionals. Sources of advantage: the legal system is based on English common law (recognised internationally for dispute resolution), a large number of internationally qualified accountants (CPA, ACCA), and proximity to mainland Chinese firms seeking international expertise.
+3. **Professional services (legal, accounting, consulting):** Hong Kong has a concentration of
+   internationally qualified professionals. Sources of advantage: the legal system is based on
+   English common law (recognised internationally for dispute resolution), a large number of
+   internationally qualified accountants (CPA, ACCA), and proximity to mainland Chinese firms
+   seeking international expertise.
 
 ## Common Pitfalls
 
-1. **Confusing absolute and comparative advantage:** A country with an absolute advantage in all goods (more productive in everything) still gains from trade. What matters for trade is comparative advantage (lower opportunity cost), not absolute advantage. A common DSE error is to say "Country A should not trade because it is more efficient at producing everything."
+1. **Confusing absolute and comparative advantage:** A country with an absolute advantage in all
+   goods (more productive in everything) still gains from trade. What matters for trade is
+   comparative advantage (lower opportunity cost), not absolute advantage. A common DSE error is to
+   say "Country A should not trade because it is more efficient at producing everything."
 
-2. **Drawing a convex PPC instead of a concave one:** The PPC is concave (bowed outward from the origin) due to the law of increasing opportunity cost. Resources are not equally suited to producing all goods, so shifting resources from one good to another becomes increasingly costly. A convex PPC would imply *decreasing* opportunity cost, which is not the typical case.
+2. **Drawing a convex PPC instead of a concave one:** The PPC is concave (bowed outward from the
+   origin) due to the law of increasing opportunity cost. Resources are not equally suited to
+   producing all goods, so shifting resources from one good to another becomes increasingly costly.
+   A convex PPC would imply _decreasing_ opportunity cost, which is not the typical case.
 
-3. **Assuming that the PPC shows what a country should produce:** The PPC shows the production *possibility set* (what is feasible), not what is optimal. The optimal production point depends on demand (prices, preferences). A point on the PPC is productively efficient but may not be allocatively efficient if it does not match society's preferences.
+3. **Assuming that the PPC shows what a country should produce:** The PPC shows the production
+   _possibility set_ (what is feasible), not what is optimal. The optimal production point depends
+   on demand (prices, preferences). A point on the PPC is productively efficient but may not be
+   allocatively efficient if it does not match society's preferences.
 
-4. **Treating opportunity cost as a sunk cost:** Opportunity cost is the value of the *next best alternative* at the time of the decision, not the historical cost of resources already committed. For example, the opportunity cost of a university student's time is the wage they could earn in their best alternative job, not the tuition fees already paid (which are sunk).
+4. **Treating opportunity cost as a sunk cost:** Opportunity cost is the value of the _next best
+   alternative_ at the time of the decision, not the historical cost of resources already committed.
+   For example, the opportunity cost of a university student's time is the wage they could earn in
+   their best alternative job, not the tuition fees already paid (which are sunk).
 
-5. **Equating economic growth with development:** GDP growth measures an increase in the quantity of goods and services produced, but development encompasses broader improvements in living standards (health, education, political freedom, environmental quality). A country can grow rapidly (high GDP growth) while making little progress on development if growth is unevenly distributed or environmentally destructive.
+5. **Equating economic growth with development:** GDP growth measures an increase in the quantity of
+   goods and services produced, but development encompasses broader improvements in living standards
+   (health, education, political freedom, environmental quality). A country can grow rapidly (high
+   GDP growth) while making little progress on development if growth is unevenly distributed or
+   environmentally destructive.

@@ -1,6 +1,8 @@
 ---
 title: Astrophysics
-description: "A-Level Physics notes on Astrophysics: 1. Astronomical Distances and Measurements; Astronomical Units of Distance; Stellar Parallax."
+description:
+  'A-Level Physics notes on Astrophysics: 1. Astronomical Distances and Measurements; Astronomical
+  Units of Distance; Stellar Parallax.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Physics
@@ -10,10 +12,10 @@ categories:
 slug: astrophysics
 sidebar_position: 1
 ---
+
 ## Astrophysics
 
-:::info
-Board Coverage AQA Paper 2 (Option 9) | Edexcel CP5 (Option 9) | OCR (A) Paper 2 (Option D)
+:::info Board Coverage AQA Paper 2 (Option 9) | Edexcel CP5 (Option 9) | OCR (A) Paper 2 (Option D)
 :::
 
 ## 1. Astronomical Distances and Measurements
@@ -35,11 +37,11 @@ $$1\;\mathrm{pc} = \frac◆LB◆1\;\mathrm{AU}◆RB◆◆LB◆\tan(1'')◆RB◆ 
 
 **Key conversions:**
 
-| Unit | Metres | Light-years | Parsecs |
+| Unit | Metres                | Light-years           | Parsecs               |
 | ---- | --------------------- | --------------------- | --------------------- |
 | 1 AU | $1.50 \times 10^{11}$ | $1.58 \times 10^{-5}$ | $4.85 \times 10^{-6}$ |
-| 1 ly | $9.46 \times 10^{15}$ | 1 | $0.307$ |
-| 1 pc | $3.09 \times 10^{16}$ | $3.26$ | 1 |
+| 1 ly | $9.46 \times 10^{15}$ | 1                     | $0.307$               |
+| 1 pc | $3.09 \times 10^{16}$ | $3.26$                | 1                     |
 
 ### Stellar Parallax
 
@@ -49,8 +51,8 @@ Distant stars. This apparent angular displacement is called **stellar parallax**
 ### Proof of the Parallax Formula
 
 Consider a nearby star at distance $d$ from the Sun. As Earth moves from one side of its orbit to
-The other (separation $2\;\mathrm{AU}$), the star appears to shift by an angle $2p$Where $p$ is
-The **parallax angle** measured in arcseconds.
+The other (separation $2\;\mathrm{AU}$), the star appears to shift by an angle $2p$Where $p$ is The
+**parallax angle** measured in arcseconds.
 
 For small angles, $\tan p \approx p$ (in radians):
 
@@ -70,16 +72,16 @@ $$\boxed{d\;(\mathrm{pc}) = \frac{1}{p\;('')}}$$
 
 $\square$
 
-**Intuition.** The parsec is defined so that the formula becomes simple: a star with a
-Parallax angle of 1 arcsecond is at a distance of 1 parsec. The inverse relationship means that
-Closer stars have larger parallax angles, making them easier to measure.
+**Intuition.** The parsec is defined so that the formula becomes simple: a star with a Parallax
+angle of 1 arcsecond is at a distance of 1 parsec. The inverse relationship means that Closer stars
+have larger parallax angles, making them easier to measure.
 
 ### Limitations of the Parallax Method
 
 - Parallax angles are extremely small ($p \lt 1''$ for all stars), making precise measurement
- difficult.
+  difficult.
 - Ground-based observations are limited to $d \lt 100$ pc (atmospheric turbulence limits angular
- resolution).
+  resolution).
 - The **Hipparcos** satellite extended this to $\sim 1000$ pc; **Gaia** extends to $\sim 10,000$ pc.
 - Beyond these distances, parallax is too small to measure reliably.
 
@@ -172,15 +174,13 @@ $2.898 \times 10^{-3}$ m K.
 ($T \approx 3000$ K) peaks in the infrared. This is why hotter stars appear bluer and cooler stars
 Appear redder.
 
-:::info
-Board-Specific
+:::info Board-Specific
 
 - **AQA** requires Wien's law, Stefan-Boltzmann law, and the inverse square law explicitly.
 - **Edexcel** emphasises the period--luminosity relation for Cepheids and the use of Type Ia
- supernovae as standard candles.
+  supernovae as standard candles.
 - **OCR (A)** includes parallax, standard candles, and black body radiation in the Turning Points
- option.
-:::
+  option. :::
 
 ## 2. Stellar Evolution
 
@@ -205,7 +205,7 @@ Temperature **decreases** from left to right.
 Key regions:
 
 - **Main sequence** --- a diagonal band from upper-left (hot, luminous O-type stars) to lower-right
- (cool, dim M-type stars). Stars spend $\sim 90\%$ of their lifetime here.
+  (cool, dim M-type stars). Stars spend $\sim 90\%$ of their lifetime here.
 - **Red giants** --- luminous but cool, located in the upper-right.
 - **White dwarfs** --- hot but very dim, located in the lower-left.
 - **Red supergiants** --- extremely luminous and cool, at the top-right.
@@ -218,15 +218,15 @@ Radiation pressure from nuclear fusion in the core.
 Two fusion processes convert hydrogen to helium:
 
 1. **Proton--proton (pp) chain** --- dominant in stars with $T \lt 1.5 \times 10^7$ K (like the
- Sun):
+   Sun):
 
    $$4\,{}^{1}\mathrm{H} \rightarrow {}^{4}\mathrm{He} + 2e^+ + 2\nu_e + 2\gamma$$
 
- Energy released per reaction: $\sim 26.7$ MeV.
+Energy released per reaction: $\sim 26.7$ MeV.
 
 2. **CNO cycle** --- dominant in stars with $T \gt 1.5 \times 10^7$ K (more massive stars). Uses
- carbon, nitrogen, and oxygen as catalysts. This process is more temperature-sensitive than the pp
- chain, leading to convective cores in massive stars.
+   carbon, nitrogen, and oxygen as catalysts. This process is more temperature-sensitive than the pp
+   chain, leading to convective cores in massive stars.
 
 The **mass--luminosity relation** for main sequence stars:
 
@@ -238,26 +238,26 @@ And therefore exhausts its fuel much faster. More massive stars have **shorter**
 ### Evolution of Low-Mass Stars ($M \lt 8\;M_\odot$)
 
 1. **Main sequence** --- hydrogen fuses to helium in the core ($\sim 10^{10}$ years for solar-mass
- stars).
+   stars).
 2. **Red giant** --- hydrogen shell burning causes the envelope to expand and cool. A helium flash
- ignites helium fusion in the core (${}^{4}\mathrm{He}$ to ${}^{12}\mathrm{C}$ and
- ${}^{16}\mathrm{O}$).
+   ignites helium fusion in the core (${}^{4}\mathrm{He}$ to ${}^{12}\mathrm{C}$ and
+   ${}^{16}\mathrm{O}$).
 3. **Planetary nebula** --- the outer layers are gently ejected, exposing the hot core.
-4. **White dwarf** --- the remaining core ( $\sim 0.6\;M_\odot$), supported by **electron
- degeneracy pressure**. No fusion occurs; it slowly cools over billions of years.
+4. **White dwarf** --- the remaining core ( $\sim 0.6\;M_\odot$), supported by **electron degeneracy
+   pressure**. No fusion occurs; it slowly cools over billions of years.
 
 ### Evolution of High-Mass Stars ($M \gt 8\;M_\odot$)
 
 1. **Main sequence** --- rapid hydrogen fusion ($\sim 10^7$ years for a $25\;M_\odot$ star).
 2. **Red supergiant** --- successive nuclear burning stages create an onion-like shell structure: He
- $\rightarrow$ C $\rightarrow$ Ne $\rightarrow$ O $\rightarrow$ Si $\rightarrow$ Fe. Each stage
- releases less energy and proceeds faster than the last.
+   $\rightarrow$ C $\rightarrow$ Ne $\rightarrow$ O $\rightarrow$ Si $\rightarrow$ Fe. Each stage
+   releases less energy and proceeds faster than the last.
 3. **Supernova** --- iron core collapse triggers a catastrophic explosion. The core collapses in
- milliseconds, rebounds, and drives a shock wave that ejects the outer layers.
+   milliseconds, rebounds, and drives a shock wave that ejects the outer layers.
 4. **Neutron star** (if remnant mass $\lt 3\;M_\odot$) --- supported by **neutron degeneracy
- pressure**. Typical radius $\sim 10$ km, density $\sim 10^{17}$ kg m$^{-3}$.
+   pressure**. Typical radius $\sim 10$ km, density $\sim 10^{17}$ kg m$^{-3}$.
 5. **Black hole** (if remnant mass $\gt 3\;M_\odot$) --- no known force can halt gravitational
- collapse.
+   collapse.
 
 ### The Chandrasekhar Limit
 
@@ -314,15 +314,13 @@ Escape velocity exceeds the speed of light. For the Sun, $r_s \approx 3$ km; for
 $r_s \approx 9$ mm. This shows how extraordinarily compact a black hole must be: the entire mass of
 The Sun compressed into a sphere smaller than a small city.
 
-:::info
-Board-Specific
+:::info Board-Specific
 
 - **AQA** requires detailed knowledge of stellar evolution pathways, the H-R diagram, and the
- Chandrasekhar limit.
+  Chandrasekhar limit.
 - **Edexcel** emphasises supernovae including light curves, and the use of standard candles.
 - **OCR (A)** covers neutron stars and black holes, including the Schwarzschild radius derivation,
- in the Turning Points option.
-:::
+  in the Turning Points option. :::
 
 ## 3. Cosmology
 
@@ -336,11 +334,11 @@ Eventually intersect the surface of a star, making the entire night sky as brigh
 A typical star. The resolution of the paradox relies on three key facts:
 
 1. The universe has a **finite age** ($\sim 13.8$ billion years), so we can only observe light from
- within our **observable universe**.
+   within our **observable universe**.
 2. The universe is **expanding**, which redshifts the light from distant objects, reducing their
- energy density.
+   energy density.
 3. Stars have **finite lifetimes** and the universe does not contain enough energy to keep every
- point in the sky illuminated at stellar surface brightness.
+   point in the sky illuminated at stellar surface brightness.
 
 ### Doppler Effect for Light
 
@@ -401,10 +399,10 @@ Three major lines of evidence support the Big Bang model:
 
 1. **Hubble's law** --- the expansion of the universe implies a hot, dense beginning.
 2. **Cosmic Microwave Background (CMB)** --- the afterglow of the initial hot, dense phase,
- discovered by Penzias and Wilson (1965).
+   discovered by Penzias and Wilson (1965).
 3. **Abundance of light elements** --- the observed ratios of hydrogen ($\sim 75\%$), helium
- ($\sim 25\%$), deuterium, and lithium match predictions from Big Bang nucleosynthesis. No other
- model successfully predicts these abundances.
+   ($\sim 25\%$), deuterium, and lithium match predictions from Big Bang nucleosynthesis. No other
+   model successfully predicts these abundances.
 
 ### The Cosmic Microwave Background (CMB)
 
@@ -415,10 +413,10 @@ The early universe, emitted when the universe became transparent at the recombin
 Key properties:
 
 - **Temperature:** $T \approx 2.725$ K (the radiation has been redshifted by a factor of $\sim 1100$
- since emission)
+  since emission)
 - **Spectrum:** a near-perfect black body curve peaking in the microwave region
 - **Isotropy:** uniform to one part in $10^5$With tiny anisotropies that are the seeds of large-
- scale structure formation
+  scale structure formation
 
 Using Wien's law to find the peak wavelength:
 
@@ -435,13 +433,11 @@ Expands, photon wavelengths are stretched, producing cosmological redshift:
 
 $$1 + z = \frac◆LB◆a_{\mathrm{now}}◆RB◆◆LB◆a_{\mathrm{then}}◆RB◆$$
 
-:::info
-Info
+:::info Info
 
 - **AQA** requires understanding of Hubble's law, the CMB, and evidence for the Big Bang.
 - **Edexcel** includes the Doppler effect for electromagnetic radiation and redshift calculations.
-- **OCR (A)** covers Olbers' paradox and its resolution in the Turning Points option.
-:::
+- **OCR (A)** covers Olbers' paradox and its resolution in the Turning Points option. :::
 
 ## 4. Telescopes and Observational Astronomy
 
@@ -466,7 +462,7 @@ Where $f_o$ is the focal length of the objective and $f_e$ is the focal length o
 **Disadvantages of refracting telescopes:**
 
 - **Chromatic aberration** --- different wavelengths refract by different amounts, producing colour
- fringes (corrected with achromatic doublets, but not perfectly)
+  fringes (corrected with achromatic doublets, but not perfectly)
 - **Spherical aberration** --- marginal rays focus at different points from paraxial rays
 - Expensive to manufacture large, defect-free lenses
 - Heavy lenses can distort under their own weight, limiting practical sizes to $\sim 1$ m diameter
@@ -490,7 +486,7 @@ Designs are:
 
 - Spherical aberration (corrected by using parabolic mirrors)
 - Central obstruction from the secondary mirror reduces light-gathering and introduces diffraction
- spikes
+  spikes
 - Requires regular alignment of optics (collimation)
 - Mirror surfaces degrade over time and require re-coating
 
@@ -523,8 +519,8 @@ Observed radiation, and $D$ is the diameter of the aperture.
 
 ### Proof of the Rayleigh Criterion
 
-For a circular aperture of diameter $D$The diffraction pattern is an Airy disk. The angular
-Position of the first minimum is given by:
+For a circular aperture of diameter $D$The diffraction pattern is an Airy disk. The angular Position
+of the first minimum is given by:
 
 $$\sin\theta = 1.22\frac◆LB◆\lambda◆RB◆◆LB◆D◆RB◆$$
 
@@ -544,13 +540,13 @@ Broglie wavelengths of $\sim 0.01$ nm) resolve far finer detail than optical mic
 Large telescopes serve two fundamental purposes:
 
 1. **Collecting power** --- proportional to $D^2$. A larger aperture collects more light, enabling
- the observation of fainter objects. The collecting power relative to the human eye (diameter
- $\sim 5$ mm) is:
+   the observation of fainter objects. The collecting power relative to the human eye (diameter
+   $\sim 5$ mm) is:
 
    $$\mathrm{Collecting power ratio} = \left(\frac◆LB◆D◆RB◆◆LB◆d_{\mathrm{eye}}◆RB◆\right)^2$$
 
 2. **Resolving power** --- proportional to $1/D$. A larger aperture gives smaller minimum angular
- resolution $\theta$Allowing finer detail to be distinguished.
+   resolution $\theta$Allowing finer detail to be distinguished.
 
 These are the two fundamental reasons why astronomers continually push for larger telescopes.
 
@@ -565,7 +561,7 @@ Parabolic dishes.
 - Detect non-thermal emission (e.g., synchrotron radiation from cosmic-ray electrons)
 - Radio waves penetrate interstellar dust clouds that block visible light
 - **Interferometry** --- linking multiple dishes (e.g., the Very Large Array) achieves angular
- resolution equivalent to a single dish of diameter equal to the maximum baseline separation
+  resolution equivalent to a single dish of diameter equal to the maximum baseline separation
 
 **Disadvantages:**
 
@@ -581,7 +577,7 @@ Parabolic dishes.
 - Larger apertures are possible (currently up to $\sim 39$ m for the Extremely Large Telescope)
 - Limited by atmospheric absorption (UV, X-rays, gamma rays are absorbed)
 - Atmospheric turbulence causes **seeing** (image blurring) --- partially mitigated by **adaptive
- optics**, which deform the mirror surface in real time to compensate
+  optics**, which deform the mirror surface in real time to compensate
 
 **Space-based telescopes:**
 
@@ -590,14 +586,12 @@ Parabolic dishes.
 - Much more expensive to build, launch, and maintain (no servicing missions for most)
 - Limited aperture size (constrained by launch vehicle fairings; JWST's primary mirror is 6.5 m)
 
-:::info
-Board-Specific
+:::info Board-Specific
 
 - **AQA** requires comparison of reflecting and refracting telescopes, and the Rayleigh criterion.
 - **Edexcel** emphasises angular magnification and the advantages of large-diameter telescopes.
 - **OCR (A)** covers radio telescopes and the comparison of ground-based and space-based
- observatories.
-:::
+  observatories. :::
 
 ## 5. Problems
 

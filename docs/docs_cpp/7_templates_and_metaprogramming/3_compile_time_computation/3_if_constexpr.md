@@ -1,6 +1,8 @@
 ---
 title: Compile-Time Branching and Constexpr Functions
-description: "Rigorous C++ programming notes on Compile Comprehensive study guide with definitions, derivations, and exam-focused problems."
+description:
+  'Rigorous C++ programming notes on Compile Comprehensive study guide with definitions,
+  derivations, and exam-focused problems.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -8,6 +10,7 @@ categories:
   - Cpp
 slug: compile-time-branching-and-constexpr-functions
 ---
+
 # Compile-Time Branching and Constexpr Functions
 
 C++ provides multiple mechanisms for compile-time computation: `if constexpr` for type-based
@@ -86,7 +89,7 @@ Rules for discarded statements are:
 1. The discarded statement is not instantiated --- its contents are not checked for validity.
 2. A `return``break`Or `continue` in a discarded statement has no effect.
 3. Labels in a discarded statement are still defined and can be the target of `goto` (though this is
- extremely poor practice).
+   extremely poor practice).
 4. A discarded `constexpr if` within a template is only evaluated if it is in the taken branch.
 
 This means you can write code that references members that don't exist on a type, as long as that
@@ -118,13 +121,11 @@ int main() {
 }
 ```
 
-:::warning
-Discarded Statements and ODR A discarded statement is not instantiated, which means it
+:::warning Discarded Statements and ODR A discarded statement is not instantiated, which means it
 Does not participate in the One Definition Rule (ODR) for the discarded path. However, the
 Non-discarded path is still subject to all normal C++ rules. Be careful with side effects in
 `if constexpr` branches --- a discarded branch that would have had a side effect does not execute,
-But a taken branch with a side effect does execute at runtime.
-:::
+But a taken branch with a side effect does execute at runtime. :::
 
 ## Type-Safe `to_string` with `if constexpr`
 
@@ -273,13 +274,11 @@ Output:
 (1, hello, 3.14)
 ```
 
-:::tip
-`if constexpr` vs Template Specialization `if constexpr` is generally preferred over
+:::tip `if constexpr` vs Template Specialization `if constexpr` is generally preferred over
 Full/partial template specialization for dispatching based on type properties because it keeps all
 Logic in a single function body, avoids code duplication, and is easier to maintain. Specialization
 Is still necessary when different types require fundamentally different function signatures or
-Return types.
-:::
+Return types. :::
 
 ## `constexpr` Functions
 
@@ -333,13 +332,13 @@ int main() {
 
 ### Evolution of `constexpr`
 
-| Standard | Restrictions | Example |
+| Standard | Restrictions                                                                                           | Example                                                                |
 | -------- | ------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------- |
-| C++11 | Body must be a single `return` statement (with conditionals, loops allowed in the returned expression) | `constexpr int f(int x) { return x * x; }` |
-| C++14 | Body can contain loops, local variables, multiple statements | `constexpr int fact(int n) { int r = 1; for (...) r *= i; return r; }` |
-| C++17 | `if constexpr`Inline variables, lambdas in constexpr contexts | `constexpr auto f = [](int x) { return x * x; };` |
-| C++20 | Dynamic allocation (`new`/`delete` in constexpr), `std::vector``std::string``union``try`/`catch` | `constexpr std::vector<int> v{1, 2, 3};` |
-| C++23 | `if constexpr` in more contexts, relaxed constexpr evaluation rules | More non-trivial constexpr functions |
+| C++11    | Body must be a single `return` statement (with conditionals, loops allowed in the returned expression) | `constexpr int f(int x) { return x * x; }`                             |
+| C++14    | Body can contain loops, local variables, multiple statements                                           | `constexpr int fact(int n) { int r = 1; for (...) r *= i; return r; }` |
+| C++17    | `if constexpr`Inline variables, lambdas in constexpr contexts                                          | `constexpr auto f = [](int x) { return x * x; };`                      |
+| C++20    | Dynamic allocation (`new`/`delete` in constexpr), `std::vector``std::string``union``try`/`catch`       | `constexpr std::vector<int> v{1, 2, 3};`                               |
+| C++23    | `if constexpr` in more contexts, relaxed constexpr evaluation rules                                    | More non-trivial constexpr functions                                   |
 
 ## `consteval` --- Immediate Functions (C++20)
 
@@ -395,14 +394,12 @@ Output:
 http
 ```
 
-:::info
-`consteval` vs `constexpr` Use `constexpr` when the function should be usable at both
+:::info `consteval` vs `constexpr` Use `constexpr` when the function should be usable at both
 Compile time and runtime. Use `consteval` when the function is intended only for compile-time
 Computation and should never appear in the generated binary. `consteval` functions can call other
 `consteval` and `constexpr` functions, but a `constexpr` function cannot call a `consteval` function
 With a non-constant argument (because the `consteval` function would fail its compile-time
-Requirement).
-:::
+Requirement). :::
 
 ## `constinit` --- Compile-Time Initialization (C++20)
 
@@ -460,11 +457,11 @@ Updated max connections: 200
 
 The difference between `const``constexpr`And `constinit`:
 
-| Specifier | Compile-Time Init | Runtime Modifiable | Implies `const` |
+| Specifier   | Compile-Time Init     | Runtime Modifiable | Implies `const` |
 | ----------- | --------------------- | ------------------ | --------------- |
-| `const` | Required (for static) | No | Yes |
-| `constexpr` | Required | No | Yes |
-| `constinit` | Required | Yes | No |
+| `const`     | Required (for static) | No                 | Yes             |
+| `constexpr` | Required              | No                 | Yes             |
+| `constinit` | Required              | Yes                | No              |
 
 ## Compile-Time Data Structures (C++20)
 
@@ -535,14 +532,12 @@ Primes up to 50: 2 3 5 7 11 13 17 19 23 29 31 37 41 43 47
 HELLO CONSTEXPR WORLD
 ```
 
-:::warning
-Transient Allocations C++20 permits dynamic allocation in `constexpr` evaluation, but all
+:::warning Transient Allocations C++20 permits dynamic allocation in `constexpr` evaluation, but all
 Allocations must be **transient** --- they must be deallocated before the end of the constant
 Evaluation. The result of a `constexpr` function must not contain heap allocations
 (pointers/references to the heap). This is why `constexpr std::vector<int> v{1, 2, 3};` is valid as
 A local variable in a constexpr context, but you cannot return a heap-allocated vector and use it as
-A template argument. C++23 relaxes this further for non-transient allocations in some contexts.
-:::
+A template argument. C++23 relaxes this further for non-transient allocations in some contexts. :::
 
 ## `consteval` for Compile-Time String Parsing
 

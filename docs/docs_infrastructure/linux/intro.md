@@ -1,10 +1,13 @@
 ---
 id: intro
 title: Introduction to Linux
-description: "Comprehensive Linux reference — CLI, file systems, process management, networking, systemd, security, and package management."
+description:
+  'Comprehensive Linux reference — CLI, file systems, process management, networking, systemd,
+  security, and package management.'
 slug: intro
 sidebar_position: 1
 ---
+
 ## What is Linux
 
 Linux is a **Unix-like operating system kernel** first released by Linus Torvalds in 1991. When
@@ -49,15 +52,15 @@ Context switch for kernel-internal operations.
 
 Key subsystems:
 
-| Subsystem | Responsibility |
+| Subsystem             | Responsibility                                         |
 | --------------------- | ------------------------------------------------------ |
-| **Process Scheduler** | CFS (Completely Fair Scheduler), real-time scheduling |
+| **Process Scheduler** | CFS (Completely Fair Scheduler), real-time scheduling  |
 | **Memory Management** | Virtual memory, page tables, SLUB/SLAB allocators, OOM |
-| **VFS** | Virtual File System — abstracts file system operations |
-| **Network Stack** | TCP/IP, netfilter, routing, socket layer |
-| **Device Model** | `sysfs``udev`Driver model, `kobject` hierarchy |
-| **IPC** | Pipes, shared memory, signals, `epoll``eventfd` |
-| **Security** | SELinux, AppArmor, capabilities, seccomp, audit |
+| **VFS**               | Virtual File System — abstracts file system operations |
+| **Network Stack**     | TCP/IP, netfilter, routing, socket layer               |
+| **Device Model**      | `sysfs``udev`Driver model, `kobject` hierarchy         |
+| **IPC**               | Pipes, shared memory, signals, `epoll``eventfd`        |
+| **Security**          | SELinux, AppArmor, capabilities, seccomp, audit        |
 
 ## Distribution Families
 
@@ -82,13 +85,13 @@ graph LR
     S[Gentoo] --> T[Source-based]
 ```
 
-| Family | Package Format | Package Manager | Init System | Typical Use Case |
+| Family  | Package Format | Package Manager | Init System | Typical Use Case              |
 | ------- | -------------- | --------------- | ----------- | ----------------------------- |
-| Debian | `.deb` | APT | systemd | Servers, desktops, containers |
-| Red Hat | `.rpm` | DNF | systemd | Enterprise servers |
-| Arch | `.pkg.tar.zst` | pacman | systemd | Power users, rolling release |
-| Alpine | `.apk` | apk | OpenRC | Docker containers |
-| SUSE | `.rpm` | zypper | systemd | Enterprise, SAP workloads |
+| Debian  | `.deb`         | APT             | systemd     | Servers, desktops, containers |
+| Red Hat | `.rpm`         | DNF             | systemd     | Enterprise servers            |
+| Arch    | `.pkg.tar.zst` | pacman          | systemd     | Power users, rolling release  |
+| Alpine  | `.apk`         | apk             | OpenRC      | Docker containers             |
+| SUSE    | `.rpm`         | zypper          | systemd     | Enterprise, SAP workloads     |
 
 ## Why This Matters for Systems Engineers
 
@@ -96,9 +99,9 @@ Linux is the dominant operating system in every infrastructure domain you will e
 
 - **Cloud infrastructure**: AWS, GCP, and Azure run on custom Linux kernels (Xen, KVM, Firecracker).
 - **Container orchestration**: Docker, containerd, and Kubernetes are Linux-native technologies
- built on cgroups, namespaces, and overlayfs.
+  built on cgroups, namespaces, and overlayfs.
 - **Networking**: Linux routing, netfilter, and BPF power the majority of the world's routers and
- firewalls.
+  firewalls.
 - **Embedded and IoT**: Android, OpenWrt, Yocto — all Linux underneath.
 - **High-performance computing**: 100% of the TOP500 supercomputers run Linux.
 
@@ -112,20 +115,20 @@ Preventing recurrence.
 This section covers the core Linux competencies expected of a systems engineer:
 
 1. **CLI Fundamentals** — Shell basics and core utilities
- ([shell-basics](./01-cli-fundamentals/shell-basics.md),
- [core-utilities](./01-cli-fundamentals/core-utilities.md))
+   ([shell-basics](./01-cli-fundamentals/shell-basics.md),
+   [core-utilities](./01-cli-fundamentals/core-utilities.md))
 2. **File Systems** — VFS, ext4, XFS, Btrfs, mounting
- ([filesystems-and-mounting](./02-file-systems/filesystems-and-mounting.md))
+   ([filesystems-and-mounting](./02-file-systems/filesystems-and-mounting.md))
 3. **Process Management** — Process model, signals, cgroups, resource limits
- ([processes-and-signals](./03-process-management/processes-and-signals.md))
+   ([processes-and-signals](./03-process-management/processes-and-signals.md))
 4. **Networking** — Netfilter, namespaces, routing, troubleshooting
- ([linux-networking](./04-networking/linux-networking.md))
+   ([linux-networking](./04-networking/linux-networking.md))
 5. **Systemd** — Service management, timers, socket activation, hardening
- ([systemd](./05-systemd/systemd.md))
+   ([systemd](./05-systemd/systemd.md))
 6. **Security** — PAM, SELinux, capabilities, seccomp, audit
- ([linux-security](./06-security/linux-security.md))
+   ([linux-security](./06-security/linux-security.md))
 7. **Package Management** — APT, DNF, Nix, dependency resolution
- ([package-management](./07-package-management/package-management.md))
+   ([package-management](./07-package-management/package-management.md))
 
 :::tip
 

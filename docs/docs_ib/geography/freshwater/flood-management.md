@@ -1,8 +1,11 @@
 ---
 title: Flood Management
-description: "Rigorous IB geography notes covering Flood Management. Includes definitions, derivations, worked examples, and exam-style problems."
+description:
+  'Rigorous IB geography notes covering Flood Management. Includes definitions, derivations, worked
+  examples, and exam-style problems.'
 slug: flood-management
 ---
+
 # Flood Management
 
 ## Causes of Flooding
@@ -44,19 +47,19 @@ Yangtze floods, which killed over 4000 people and displaced approximately 14 mil
 
 ### Human Causes
 
-| Factor | Mechanism | Example |
+| Factor                     | Mechanism                                                                                                                        | Example                                                                                                                                 |
 | -------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| **Channel modification** | Straightening, deepening, or widening channels increases flow velocity and transfers flood risk downstream | The River Rhine was channelised in the 19th and 20th centuries, increasing downstream flood risk in the Netherlands |
-| **Floodplain development** | Building on floodplains removes natural flood storage and increases exposure to flooding | Approximately 2 million properties in England are at risk of flooding; development continues in flood-prone areas due to housing demand |
-| **Drainage of wetlands** | Wetlands act as natural sponges, absorbing and slowly releasing floodwater; drainage eliminates this function | Over 85% of England's floodplain wetlands have been drained since the 18th century |
-| **Climate change** | Increased frequency and intensity of extreme rainfall events; accelerated snowmelt; sea level rise increasing coastal flood risk | The UK Met Office estimates that the intensity of extreme rainfall events has increased by approximately 20% since the 1960s |
+| **Channel modification**   | Straightening, deepening, or widening channels increases flow velocity and transfers flood risk downstream                       | The River Rhine was channelised in the 19th and 20th centuries, increasing downstream flood risk in the Netherlands                     |
+| **Floodplain development** | Building on floodplains removes natural flood storage and increases exposure to flooding                                         | Approximately 2 million properties in England are at risk of flooding; development continues in flood-prone areas due to housing demand |
+| **Drainage of wetlands**   | Wetlands act as natural sponges, absorbing and slowly releasing floodwater; drainage eliminates this function                    | Over 85% of England's floodplain wetlands have been drained since the 18th century                                                      |
+| **Climate change**         | Increased frequency and intensity of extreme rainfall events; accelerated snowmelt; sea level rise increasing coastal flood risk | The UK Met Office estimates that the intensity of extreme rainfall events has increased by approximately 20% since the 1960s            |
 
 ## Hard Engineering Approaches
 
 Hard engineering involves the construction of physical structures to control, contain, or divert
-Floodwater. These approaches are expensive, require significant engineering expertise, and
-Have substantial environmental impacts, but they can provide high levels of flood protection for
-Specific areas.
+Floodwater. These approaches are expensive, require significant engineering expertise, and Have
+substantial environmental impacts, but they can provide high levels of flood protection for Specific
+areas.
 
 ### Dams and Reservoirs
 
@@ -116,9 +119,9 @@ Unprotected areas; creates a false sense of security.
 
 ## Soft Engineering Approaches
 
-Soft engineering works with natural hydrological processes to reduce flood risk, at lower
-Cost and with fewer environmental impacts than hard engineering. However, soft engineering generally
-Provides a lower level of protection and may not be sufficient for high-risk areas.
+Soft engineering works with natural hydrological processes to reduce flood risk, at lower Cost and
+with fewer environmental impacts than hard engineering. However, soft engineering generally Provides
+a lower level of protection and may not be sufficient for high-risk areas.
 
 ### Afforestation
 
@@ -184,17 +187,17 @@ International Flood Management Initiative.
 ### Key Principles
 
 1. **Manage the water cycle as a whole,** not just the river channel. This includes managing
- rainfall, infiltration, groundwater, surface runoff, and floodplain processes.
+   rainfall, infiltration, groundwater, surface runoff, and floodplain processes.
 2. **Integrate land and water management.** Planning decisions (where and how development occurs)
- are as important as engineering solutions.
+   are as important as engineering solutions.
 3. **Manage risk, not just hazards.** Flood risk = hazard (the flood itself) multiplied by exposure
- (what is in the flood's path) and vulnerability (how susceptible it is to damage). Reducing
- exposure (through zoning) and vulnerability (through resilient building design) is as important
- as reducing the hazard.
+   (what is in the flood's path) and vulnerability (how susceptible it is to damage). Reducing
+   exposure (through zoning) and vulnerability (through resilient building design) is as important
+   as reducing the hazard.
 4. **Adopt a catchment-scale approach.** Actions upstream affect flood risk downstream; therefore,
- management must be coordinated across the entire drainage basin.
+   management must be coordinated across the entire drainage basin.
 5. **Work with natural processes.** Soft engineering and nature-based solutions should be preferred
- where they can achieve the required level of protection.
+   where they can achieve the required level of protection.
 
 ## Case Study: Flood Management in Bangladesh
 
@@ -214,19 +217,19 @@ Landscape.
 Management, combining:
 
 - **Cyclone shelters:** approximately 4000 multi-purpose cyclone and flood shelters have been
- constructed since the 1990s, providing refuge during flood events. The shelters reduced Cyclone
- Sidr (2007) fatalities by over 90% compared to a similar-magnitude cyclone in 1970.
+  constructed since the 1990s, providing refuge during flood events. The shelters reduced Cyclone
+  Sidr (2007) fatalities by over 90% compared to a similar-magnitude cyclone in 1970.
 - **Early warning systems:** the Flood Forecasting and Warning Centre (FFWC) uses real-time river
- gauge data and hydrological models to issue flood forecasts up to 72 hours in advance. Warnings
- are disseminated via radio, mobile phone, and community volunteers.
+  gauge data and hydrological models to issue flood forecasts up to 72 hours in advance. Warnings
+  are disseminated via radio, mobile phone, and community volunteers.
 - **Floating agriculture (baira):** rafts of water hyacinth and bamboo support crops (pumpkins,
- okra, beans) in flood-prone areas, allowing cultivation during the monsoon season when land is
- submerged.
+  okra, beans) in flood-prone areas, allowing cultivation during the monsoon season when land is
+  submerged.
 - **Embankment setbacks and floodplain zoning:** newer embankment designs incorporate deliberate
- setbacks to allow controlled flooding of low-value land, reducing pressure on critical
- infrastructure.
+  setbacks to allow controlled flooding of low-value land, reducing pressure on critical
+  infrastructure.
 - **Community-based adaptation:** the Comprehensive Disaster Management Programme (CDMP) trains
- local communities in flood preparedness, first aid, and evacuation procedures.
+  local communities in flood preparedness, first aid, and evacuation procedures.
 
 ## Case Study: Flood Management in the Netherlands
 
@@ -251,7 +254,7 @@ The sea, with a budget of over EUR 20 billion. Key elements include:
 
 - Strengthening and raising coastal dunes and dikes
 - The Maeslantkering storm surge barrier (completed 1997), the world's largest movable storm surge
- barrier, protecting Rotterdam and 1.5 million people
+  barrier, protecting Rotterdam and 1.5 million people
 - Lake markermeer enlargement (creating additional water storage capacity)
 - Climate-adaptive building standards
 

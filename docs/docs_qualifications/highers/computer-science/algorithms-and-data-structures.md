@@ -1,6 +1,8 @@
 ---
 title: Algorithms and Data Structures
-description: "Algorithms and Data Structures — Algorithm Complexity; Big O Notation; Comparing Algorithms; Best, Average, and Worst Case."
+description:
+  'Algorithms and Data Structures — Algorithm Complexity; Big O Notation; Comparing Algorithms;
+  Best, Average, and Worst Case.'
 date: 2026-04-14
 tags:
   - Computer Science
@@ -9,6 +11,7 @@ categories:
   - Computer Science
 slug: algorithms-and-data-structures
 ---
+
 # Algorithms and Data Structures
 
 :::info
@@ -24,15 +27,15 @@ This chapter covers **Advanced Higher** Computing Science content, extending bey
 Big O notation describes the upper bound of an algorithm's time or space complexity as the input
 Size grows.
 
-| Big O | Name | Example |
+| Big O         | Name         | Example                     |
 | ------------- | ------------ | --------------------------- |
-| $O(1)$ | Constant | Array access by index |
-| $O(\log n)$ | Logarithmic | Binary search |
-| $O(n)$ | Linear | Linear search |
-| $O(n \log n)$ | Linearithmic | Merge sort |
-| $O(n^2)$ | Quadratic | Bubble sort, selection sort |
-| $O(2^n)$ | Exponential | Recursive Fibonacci |
-| $O(n!)$ | Factorial | Generating all permutations |
+| $O(1)$        | Constant     | Array access by index       |
+| $O(\log n)$   | Logarithmic  | Binary search               |
+| $O(n)$        | Linear       | Linear search               |
+| $O(n \log n)$ | Linearithmic | Merge sort                  |
+| $O(n^2)$      | Quadratic    | Bubble sort, selection sort |
+| $O(2^n)$      | Exponential  | Recursive Fibonacci         |
+| $O(n!)$       | Factorial    | Generating all permutations |
 
 ### Comparing Algorithms
 
@@ -48,7 +51,7 @@ Size grows.
 - **Best case:** Minimum number of operations (e.g., linear search finds target at first position)
 - **Average case:** Expected number of operations across all inputs
 - **Worst case:** Maximum number of operations (e.g., linear search finds target at last position or
- not at all)
+  not at all)
 
 ---
 
@@ -663,19 +666,19 @@ area (Triangle a b c) = let s = (a + b + c) / 2
 ## Common Pitfalls
 
 1. **Binary search on unsorted data:** Binary search requires a sorted array. Always sort first or
- verify the array is sorted.
+   verify the array is sorted.
 
 2. **Off-by-one errors:** Be careful with array indices and loop boundaries. Python uses 0-based
- indexing.
+   indexing.
 
 3. **Infinite recursion:** Always ensure a base case is reached. Forgetting the base case causes a
- stack overflow.
+   stack overflow.
 
 4. **Quick sort worst case:** Choosing the first or last element as pivot on an already-sorted array
- gives $O(n^2)$. Use the middle element or random pivot.
+   gives $O(n^2)$. Use the middle element or random pivot.
 
 5. **Hash collisions:** Different keys may hash to the same index. Use separate chaining or open
- addressing to handle collisions.
+   addressing to handle collisions.
 
 ---
 
@@ -686,19 +689,19 @@ area (Triangle a b c) = let s = (a + b + c) / 2
 2. Implement a function that checks whether a binary tree is a valid BST.
 
 3. Trace Dijkstra's algorithm on the following graph to find the shortest path from A to all other
- vertices: A-B: 4, A-C: 2, B-C: 1, B-D: 5, C-D: 8, C-E: 10, D-E: 2.
+   vertices: A-B: 4, A-C: 2, B-C: 1, B-D: 5, C-D: 8, C-E: 10, D-E: 2.
 
 4. Write a Haskell function `quickSort :: [Int] -> [Int]` that implements quicksort.
 
 5. Explain the difference between BFS and DFS, and give a scenario where each would be more
- appropriate.
+   appropriate.
 
 6. Implement a hash table with separate chaining for collision resolution in Python.
 
 7. What is the time complexity of merge sort? Explain why it is $O(n \log n)$.
 
 8. Write a Haskell function that takes a list of integers and returns the list sorted in descending
- order, using `sortBy` from `Data.List`.
+   order, using `sortBy` from `Data.List`.
 
 ## Summary
 

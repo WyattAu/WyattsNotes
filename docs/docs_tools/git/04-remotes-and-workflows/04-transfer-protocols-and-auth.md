@@ -1,8 +1,11 @@
 ---
 title: Transfer Protocols and Authentication
-description: "Git version control: Transfer Protocols and Authentication — Protocol Overview; A repository can have remotes using different protocols; SSH Setup."
+description:
+  'Git version control: Transfer Protocols and Authentication — Protocol Overview; A repository can
+  have remotes using different protocols; SSH Setup.'
 slug: transfer-protocols-and-auth
 ---
+
 ## Protocol Overview
 
 Git communicates with remote repositories over two primary transport protocols: **HTTPS** and
@@ -14,16 +17,16 @@ Git also supports a third protocol — the unauthenticated `git://` protocol —
 Default on all major hosting platforms due to its lack of authentication (it was the vector for
 CVE-2014-9398, a buffer overflow vulnerability). It is not covered here.
 
-| Aspect | HTTPS | SSH |
+| Aspect                | HTTPS                                      | SSH                                       |
 | --------------------- | ------------------------------------------ | ----------------------------------------- |
-| Default port | 443 | 22 |
-| Authentication | Personal access token, password (legacy) | Public/private key pair |
-| Transport encryption | TLS (the entire connection is encrypted) | SSH (the entire connection is encrypted) |
-| Firewall friendliness | High (port 443 is almost always open) | Low (port 22 is often blocked) |
-| Initial setup | Token creation on hosting platform | Key generation, agent config, key upload |
-| CI/CD suitability | Excellent (token as env var) | Good (deploy key) |
-| Enterprise proxy | Works through HTTP(S) proxies | Requires ProxyCommand or jump hosts |
-| Performance | Slightly slower (TLS overhead per request) | Slightly faster (persistent multiplexing) |
+| Default port          | 443                                        | 22                                        |
+| Authentication        | Personal access token, password (legacy)   | Public/private key pair                   |
+| Transport encryption  | TLS (the entire connection is encrypted)   | SSH (the entire connection is encrypted)  |
+| Firewall friendliness | High (port 443 is almost always open)      | Low (port 22 is often blocked)            |
+| Initial setup         | Token creation on hosting platform         | Key generation, agent config, key upload  |
+| CI/CD suitability     | Excellent (token as env var)               | Good (deploy key)                         |
+| Enterprise proxy      | Works through HTTP(S) proxies              | Requires ProxyCommand or jump hosts       |
+| Performance           | Slightly slower (TLS overhead per request) | Slightly faster (persistent multiplexing) |
 
 Git does not enforce a single protocol for a repository. You can fetch over HTTPS and push over SSH,
 Or use different protocols for different remotes. The choice is per-remote URL, not per-repository.
@@ -60,10 +63,10 @@ Your public key has been saved in /home/user/.ssh/id_ed25519.pub
 
 | Algorithm | Key Size | Security Level | Speed (sign) | Speed (verify) | Recommendation |
 | --------- | -------- | -------------- | ------------ | -------------- | -------------- |
-| Ed25519 | 256 bit | ~128 bit | Very fast | Very fast | Default choice |
-| RSA | 2048 bit | ~112 bit | Slow | Moderate | Legacy minimum |
-| RSA | 4096 bit | ~140 bit | Very slow | Moderate | Overkill |
-| ECDSA | 256 bit | ~128 bit | Moderate | Moderate | Avoid (NIST) |
+| Ed25519   | 256 bit  | ~128 bit       | Very fast    | Very fast      | Default choice |
+| RSA       | 2048 bit | ~112 bit       | Slow         | Moderate       | Legacy minimum |
+| RSA       | 4096 bit | ~140 bit       | Very slow    | Moderate       | Overkill       |
+| ECDSA     | 256 bit  | ~128 bit       | Moderate     | Moderate       | Avoid (NIST)   |
 
 **Ed25519** is the default choice for all new keys. Use RSA-4096 only if you must interoperate with
 Systems that do not support Ed25519 (rare, but some older enterprise SSH servers and FIPS-140-2
@@ -238,17 +241,17 @@ Host gitea.internal
 
 ### Key Directives
 
-| Directive | Purpose | Example |
+| Directive        | Purpose                                                        | Example                          |
 | ---------------- | -------------------------------------------------------------- | -------------------------------- |
-| `Host` | Pattern-matching alias for the host | `Host github-work` |
-| `HostName` | Actual hostname to connect to | `HostName github.com` |
-| `User` | Username for the connection | `User git` |
-| `IdentityFile` | Path to the private key file | `IdentityFile ~/.ssh/id_ed25519` |
-| `IdentitiesOnly` | Only use the specified IdentityFile, not ssh-agent or defaults | `IdentitiesOnly yes` |
-| `Port` | Non-default SSH port | `Port 2222` |
-| `ForwardAgent` | Forward the local ssh-agent to the remote host | `ForwardAgent yes` |
-| `AddKeysToAgent` | Automatically add the key to ssh-agent on first use | `AddKeysToAgent yes` |
-| `Compression` | Enable compression for slow connections | `Compression yes` |
+| `Host`           | Pattern-matching alias for the host                            | `Host github-work`               |
+| `HostName`       | Actual hostname to connect to                                  | `HostName github.com`            |
+| `User`           | Username for the connection                                    | `User git`                       |
+| `IdentityFile`   | Path to the private key file                                   | `IdentityFile ~/.ssh/id_ed25519` |
+| `IdentitiesOnly` | Only use the specified IdentityFile, not ssh-agent or defaults | `IdentitiesOnly yes`             |
+| `Port`           | Non-default SSH port                                           | `Port 2222`                      |
+| `ForwardAgent`   | Forward the local ssh-agent to the remote host                 | `ForwardAgent yes`               |
+| `AddKeysToAgent` | Automatically add the key to ssh-agent on first use            | `AddKeysToAgent yes`             |
+| `Compression`    | Enable compression for slow connections                        | `Compression yes`                |
 
 ### IdentitiesOnly
 
@@ -316,10 +319,10 @@ Host *
     ControlPersist 600
 ```
 
-| Directive | Purpose |
+| Directive            | Purpose                                                                  |
 | -------------------- | ------------------------------------------------------------------------ |
-| `ControlMaster auto` | Enable multiplexing; auto-create a master connection if none exists |
-| `ControlPath` | Path to the control socket file (`%r` = user, `%h` = host, `%p` = port) |
+| `ControlMaster auto` | Enable multiplexing; auto-create a master connection if none exists      |
+| `ControlPath`        | Path to the control socket file (`%r` = user, `%h` = host, `%p` = port)  |
 | `ControlPersist 600` | Keep the master connection alive for 600 seconds (10 min) after last use |
 
 The socket directory must exist:
@@ -362,10 +365,10 @@ Operations. It can be scoped to limit its permissions.
 # Classic tokens: scoped by permission categories (repo, admin, etc.)
 ```
 
-| Token Type | Scope Granularity | Repository-Level | Expiry | Recommended For |
+| Token Type   | Scope Granularity        | Repository-Level | Expiry       | Recommended For      |
 | ------------ | ------------------------ | ---------------- | ------------ | -------------------- |
-| Fine-grained | Per-repo, per-permission | Yes | Configurable | New projects |
-| Classic | Permission categories | No (global) | Configurable | Legacy compatibility |
+| Fine-grained | Per-repo, per-permission | Yes              | Configurable | New projects         |
+| Classic      | Permission categories    | No (global)      | Configurable | Legacy compatibility |
 
 #### Creating a GitLab PAT
 
@@ -420,7 +423,7 @@ Tokens should be rotated periodically. The workflow is:
 
 1. Create a new token on the hosting platform
 2. Update the stored credential (via credential helper or by performing one operation with the new
- token)
+   token)
 3. Revoke the old token
 4. Verify that existing CI/CD pipelines and local operations still work
 
@@ -565,13 +568,13 @@ $ git config --global credential.helper osxkeychain
 
 ### Choosing a Helper
 
-| Platform | Recommended Helper | Security |
+| Platform | Recommended Helper                            | Security                           |
 | -------- | --------------------------------------------- | ---------------------------------- |
-| Linux | `libsecret` or `manager-core` | Encrypted at rest (keyring) |
-| macOS | `osxkeychain` or `manager-core` | Encrypted at rest (Keychain) |
-| Windows | `manager-core` (default with Git for Windows) | Encrypted at rest (Credential Mgr) |
-| CI/CD | `cache` (short timeout) or env variable | Ephemeral / job-scoped |
-| Docker | `store` (in container) or `cache` | Container-isolated |
+| Linux    | `libsecret` or `manager-core`                 | Encrypted at rest (keyring)        |
+| macOS    | `osxkeychain` or `manager-core`               | Encrypted at rest (Keychain)       |
+| Windows  | `manager-core` (default with Git for Windows) | Encrypted at rest (Credential Mgr) |
+| CI/CD    | `cache` (short timeout) or env variable       | Ephemeral / job-scoped             |
+| Docker   | `store` (in container) or `cache`             | Container-isolated                 |
 
 ### Per-Remote Credential Configuration
 
@@ -600,20 +603,20 @@ Enables new features like partial clone.
 **Protocol v1** (the original, since Git's inception in 2005) had several inefficiencies:
 
 - The ref advertisement (listing all refs the server has) was sent uncompressed and unconditionally.
- On repos with hundreds of thousands of refs, this alone could take several seconds.
+  On repos with hundreds of thousands of refs, this alone could take several seconds.
 - Capabilities were advertised inline with refs, making the protocol hard to extend.
 - There was no way to filter what the server sent — you either got everything or nothing.
 
 **Protocol v2** addresses these:
 
-| Feature | Protocol v1 | Protocol v2 |
-| ---------------------- | ---------------------- | --------------------------------------- |
-| Ref advertisement | All refs, uncompressed | Filtered, can use packfile URIs |
-| Capability negotiation | Inline with refs | Separate, structured |
-| Shallow fetch support | Limited | Full support with `deepen` |
-| Filter support | Not supported | `--filter=blob:none``--filter=tree:0` |
-| Symref support | Implicit | Explicit `symref` capability |
-| Packfile URIs | Not supported | Offload packfile downloads to CDN |
+| Feature                | Protocol v1            | Protocol v2                           |
+| ---------------------- | ---------------------- | ------------------------------------- |
+| Ref advertisement      | All refs, uncompressed | Filtered, can use packfile URIs       |
+| Capability negotiation | Inline with refs       | Separate, structured                  |
+| Shallow fetch support  | Limited                | Full support with `deepen`            |
+| Filter support         | Not supported          | `--filter=blob:none``--filter=tree:0` |
+| Symref support         | Implicit               | Explicit `symref` capability          |
+| Packfile URIs          | Not supported          | Offload packfile downloads to CDN     |
 
 ### Verifying Protocol Version
 
@@ -645,29 +648,29 @@ The Git server directly. This is used by GitHub and GitLab to reduce load on the
 
 ### Decision Matrix
 
-| Factor | SSH Wins | HTTPS Wins |
+| Factor                     | SSH Wins                                 | HTTPS Wins                                  |
 | -------------------------- | ---------------------------------------- | ------------------------------------------- |
-| Auth convenience | Key-based, no prompts after setup | Token required, but credential helpers help |
-| Firewall / proxy | Blocked on port 22 in many networks | Port 443 almost universally open |
-| Enterprise proxy support | Requires ProxyCommand or ProxyJump | Works through HTTP(S) proxies natively |
-| Initial setup complexity | Higher (key gen, agent, upload) | Lower (create token, paste) |
-| CI/CD pipelines | Deploy keys work, but setup is heavier | Token as env var, simple |
-| Multiple accounts | Requires SSH config aliases | One token per account, straightforward |
-| Security (key rotation) | Key rotation is manual | Token rotation is straightforward |
-| Security (credential leak) | Private key never transmitted | Token transmitted on every request |
-| Performance | Faster with multiplexing (ControlMaster) | Slightly slower (TLS per-request) |
-| Self-hosted server | Simple (add key to authorized_keys) | Requires TLS cert + PAT or LDAP setup |
+| Auth convenience           | Key-based, no prompts after setup        | Token required, but credential helpers help |
+| Firewall / proxy           | Blocked on port 22 in many networks      | Port 443 almost universally open            |
+| Enterprise proxy support   | Requires ProxyCommand or ProxyJump       | Works through HTTP(S) proxies natively      |
+| Initial setup complexity   | Higher (key gen, agent, upload)          | Lower (create token, paste)                 |
+| CI/CD pipelines            | Deploy keys work, but setup is heavier   | Token as env var, simple                    |
+| Multiple accounts          | Requires SSH config aliases              | One token per account, straightforward      |
+| Security (key rotation)    | Key rotation is manual                   | Token rotation is straightforward           |
+| Security (credential leak) | Private key never transmitted            | Token transmitted on every request          |
+| Performance                | Faster with multiplexing (ControlMaster) | Slightly slower (TLS per-request)           |
+| Self-hosted server         | Simple (add key to authorized_keys)      | Requires TLS cert + PAT or LDAP setup       |
 
 ### Practical Recommendations
 
 - **Personal development on a trusted network**: SSH. Set up `ssh-agent`Configure `~/.ssh/config`
- with multiplexing, and never think about credentials again.
+  with multiplexing, and never think about credentials again.
 - **Corporate environment with VPN/proxy**: HTTPS. Port 22 is often blocked, and corporate proxies
- handle HTTP(S) traffic.
+  handle HTTP(S) traffic.
 - **CI/CD pipelines**: HTTPS with a scoped PAT injected as an environment variable. SSH requires
- managing deploy keys and agent sockets in containers, which is more complex.
+  managing deploy keys and agent sockets in containers, which is more complex.
 - **Open source contributions (fork-based workflow)**: Either works. HTTPS is slightly simpler for
- one-off contributions because you can create a token and start immediately.
+  one-off contributions because you can create a token and start immediately.
 - **Self-hosted servers behind a bastion host**: SSH with a ProxyJump or ProxyCommand configuration.
 
 ## Troubleshooting
@@ -693,7 +696,7 @@ debug1: Server accepts key: pkalg ssh-ed25519 blen 256
 **Causes and fixes:**
 
 1. **Wrong key or no key**: The key you added to the hosting platform does not match the key SSH is
- offering. Verify:
+   offering. Verify:
 
 ```bash
 $ ssh-add -l                          # List keys in agent
@@ -702,7 +705,7 @@ $ ssh-keygen -l -f ~/.ssh/id_ed25519  # Fingerprint of a specific key
 ```
 
 2. **Key not loaded into agent**: If the key is passphrase-protected and `ssh-agent` is not running
- (or the key was not added), SSH cannot use it.
+   (or the key was not added), SSH cannot use it.
 
 ```bash
 $ eval "$(ssh-agent -s)"
@@ -710,10 +713,10 @@ $ ssh-add ~/.ssh/id_ed25519
 ```
 
 3. **Wrong public key on the server**: The public key registered on GitHub/GitLab does not match
- your private key. Re-copy the `.pub` file contents to the hosting platform.
+   your private key. Re-copy the `.pub` file contents to the hosting platform.
 
 4. **File permissions are too open**: SSH refuses to use private keys that are readable by other
- users.
+   users.
 
 ```bash
 $ chmod 700 ~/.ssh
@@ -723,7 +726,7 @@ $ chmod 644 ~/.ssh/config
 ```
 
 5. **`IdentitiesOnly` pointing to wrong file**: Check your `~/.ssh/config` to ensure the
- `IdentityFile` path is correct.
+   `IdentityFile` path is correct.
 
 ### "fatal: Could not read from remote repository"
 
@@ -839,8 +842,8 @@ $ git config --global credential.helper 'cache --timeout=900'
 
 ### Hardcoding Tokens in CI/CD Configuration Files
 
-Storing tokens directly in `.github/workflows/*.yml``.gitlab-ci.yml`Or `Jenkinsfile` is a
-Security risk. Use the platform's secret management:
+Storing tokens directly in `.github/workflows/*.yml``.gitlab-ci.yml`Or `Jenkinsfile` is a Security
+risk. Use the platform's secret management:
 
 ```bash
 # GitHub Actions: Use repository secrets (Settings > Secrets and variables > Actions)
@@ -855,9 +858,9 @@ Security risk. Use the platform's secret management:
 
 ### Not Setting IdentitiesOnly with Multiple Keys
 
-When you have multiple keys and do not set `IdentitiesOnly yes`SSH tries keys in a
-Non-deterministic order (based on the agent and default file scanning). This can cause
-Authentication failures that appear intermittent:
+When you have multiple keys and do not set `IdentitiesOnly yes`SSH tries keys in a Non-deterministic
+order (based on the agent and default file scanning). This can cause Authentication failures that
+appear intermittent:
 
 ```bash
 # Sometimes it works, sometimes it doesn't — non-deterministic key order

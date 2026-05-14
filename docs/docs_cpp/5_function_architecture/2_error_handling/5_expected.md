@@ -1,6 +1,8 @@
 ---
 title: Monadic Error Handling — std::expected
-description: "C++: Monadic Error Handling — std::expected — Monadic Error Handling (`std::expected`); 5.1 `std::expected<T, E>` Overview."
+description:
+  'C++: Monadic Error Handling — std::expected — Monadic Error Handling (`std::expected`); 5.1
+  `std::expected<T, E>` Overview.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -8,6 +10,7 @@ categories:
   - Cpp
 slug: monadic-error-handling-std-expected
 ---
+
 # Monadic Error Handling (`std::expected`)
 
 `std::expected<T, E>` [N4950 §19.8], introduced in C++23, is a monadic type that holds either a
@@ -83,36 +86,36 @@ Has no hidden control flow, and has zero overhead compared to error codes.
 
 **Proof:**
 
-1. `std::expected<T, E>` is a sum type (tagged union) that is either `T` or `E`Never both and
- never neither [N4950 §19.8].
+1. `std::expected<T, E>` is a sum type (tagged union) that is either `T` or `E`Never both and never
+   neither [N4950 §19.8].
 2. The discriminant is stored inline alongside the value or error. The size of `std::expected<T, E>`
- is at most `sizeof(T) + sizeof(E) + padding`Which is bounded and known at compile time.
+   is at most `sizeof(T) + sizeof(E) + padding`Which is bounded and known at compile time.
 3. `has_value()` is a simple discriminant check — it compiles to a single branch instruction.
 4. `value()` and `error()` are unchecked accessors — they compile to a direct read with no
- branching. Calling `value()` when an error is held is undefined behavior (analogous to
- dereferencing a null pointer).
+   branching. Calling `value()` when an error is held is undefined behavior (analogous to
+   dereferencing a null pointer).
 5. There is no stack unwinding, no exception object allocation, and no RTTI lookup. The control flow
- is entirely explicit: the programmer checks `has_value()` and branches accordingly.
+   is entirely explicit: the programmer checks `has_value()` and branches accordingly.
 6. Therefore: error handling with `std::expected` is deterministic, explicit, and has zero overhead
- compared to error codes.
+   compared to error codes.
 
 $\square$
 
 ## 5.2 Core API
 
-| Member | Description |
-| ------------------------- | ------------------------------------------- |
-| `has_value()` | Returns `true` if a value is held |
-| `operator bool()` | Same as `has_value()` |
-| `value()` | Returns the value; UB if error is held |
-| `error()` | Returns the error; UB if value is held |
-| `value_or(U)` | Returns the value, or `U` if error is held |
-| `operator->``operator*` | Access the contained value |
-| `transform(F)` | Apply `F` to value, return `expected<U, E>` |
-| `transform_error(F)` | Apply `F` to error, return `expected<T, G>` |
-| `and_then(F)` | Monadic bind: `F(T) -> expected<U, E>` |
-| `or_else(F)` | Monadic recovery: `F(E) -> expected<T, F>` |
-| `error_or(E)` | Returns the error, or `E` if value is held |
+| Member                  | Description                                 |
+| ----------------------- | ------------------------------------------- |
+| `has_value()`           | Returns `true` if a value is held           |
+| `operator bool()`       | Same as `has_value()`                       |
+| `value()`               | Returns the value; UB if error is held      |
+| `error()`               | Returns the error; UB if value is held      |
+| `value_or(U)`           | Returns the value, or `U` if error is held  |
+| `operator->``operator*` | Access the contained value                  |
+| `transform(F)`          | Apply `F` to value, return `expected<U, E>` |
+| `transform_error(F)`    | Apply `F` to error, return `expected<T, G>` |
+| `and_then(F)`           | Monadic bind: `F(T) -> expected<U, E>`      |
+| `or_else(F)`            | Monadic recovery: `F(E) -> expected<T, F>`  |
+| `error_or(E)`           | Returns the error, or `E` if value is held  |
 
 ### `std::unexpected` and Error Construction
 
@@ -192,12 +195,12 @@ int main() {
 
 ### Monadic Operation Semantics
 
-| Operation | If value held | If error held |
-| :------------------- | :----------------------------------- | :----------------------------------- |
-| `and_then(f)` | Apply `f(value)`Return result | Propagate error unchanged |
-| `or_else(f)` | Propagate value unchanged | Apply `f(error)`Return result |
-| `transform(f)` | Apply `f(value)`Wrap in `expected` | Propagate error unchanged |
-| `transform_error(f)` | Propagate value unchanged | Apply `f(error)`Wrap in `expected` |
+| Operation            | If value held                      | If error held                      |
+| :------------------- | :--------------------------------- | :--------------------------------- |
+| `and_then(f)`        | Apply `f(value)`Return result      | Propagate error unchanged          |
+| `or_else(f)`         | Propagate value unchanged          | Apply `f(error)`Return result      |
+| `transform(f)`       | Apply `f(value)`Wrap in `expected` | Propagate error unchanged          |
+| `transform_error(f)` | Propagate value unchanged          | Apply `f(error)`Wrap in `expected` |
 
 The monadic operations compose , forming a pipeline:
 
@@ -210,28 +213,28 @@ Subsequent `and_then` and `transform` calls without executing their callbacks.
 
 ## 5.4 Comparison with Rust's `Result<T, E>`
 
-| C++ `std::expected` | Rust `Result` | Purpose |
+| C++ `std::expected`  | Rust `Result`            | Purpose                          |
 | -------------------- | ------------------------ | -------------------------------- |
-| `has_value()` | `is_ok()` | Check for value |
-| `!has_value()` | `is_err()` | Check for error |
-| `value()` | `unwrap()` | Access value (UB/panic on error) |
-| `error()` | `unwrap_err()` | Access error |
-| `value_or(default)` | `unwrap_or(default)` | Default on error |
-| `and_then(f)` | `.and_then(f)` | Monadic bind |
-| `transform(f)` | `.map(f)` | Functor map |
-| `transform_error(f)` | `.map_err(f)` | Map the error |
-| `or_else(f)` | `.or(f)` / `.or_else(f)` | Monadic recovery |
+| `has_value()`        | `is_ok()`                | Check for value                  |
+| `!has_value()`       | `is_err()`               | Check for error                  |
+| `value()`            | `unwrap()`               | Access value (UB/panic on error) |
+| `error()`            | `unwrap_err()`           | Access error                     |
+| `value_or(default)`  | `unwrap_or(default)`     | Default on error                 |
+| `and_then(f)`        | `.and_then(f)`           | Monadic bind                     |
+| `transform(f)`       | `.map(f)`                | Functor map                      |
+| `transform_error(f)` | `.map_err(f)`            | Map the error                    |
+| `or_else(f)`         | `.or(f)` / `.or_else(f)` | Monadic recovery                 |
 
 ### Comparison with Other Languages' Error Types
 
-| Language | Type | Error Handling Style |
+| Language | Type                  | Error Handling Style                      |
 | :------- | :-------------------- | :---------------------------------------- |
-| Rust | `Result<T, E>` | Monadic, forced handling |
-| Haskell | `Either E a` | Monadic, forced handling |
-| Go | `(T, error)` | Explicit check, easy to ignore |
-| Swift | `Result<T, E>` | Monadic, forced handling |
-| Zig | `E!T` | Infix error union, forced handling |
-| C++23 | `std::expected<T, E>` | Monadic, easy to ignore (no forced check) |
+| Rust     | `Result<T, E>`        | Monadic, forced handling                  |
+| Haskell  | `Either E a`          | Monadic, forced handling                  |
+| Go       | `(T, error)`          | Explicit check, easy to ignore            |
+| Swift    | `Result<T, E>`        | Monadic, forced handling                  |
+| Zig      | `E!T`                 | Infix error union, forced handling        |
+| C++23    | `std::expected<T, E>` | Monadic, easy to ignore (no forced check) |
 
 Unlike Rust, C++ does not force you to handle the error case. Calling `.value()` on an error-holding
 `expected` is undefined behavior, not a panic. This is consistent with C++'s philosophy of trusting
@@ -382,47 +385,47 @@ Is the error truly exceptional (should rarely happen)?
 
 ### Formal Comparison
 
-| Criterion | Exceptions | `std::expected` | Error Codes |
+| Criterion               | Exceptions                        | `std::expected`                 | Error Codes                    |
 | :---------------------- | :-------------------------------- | :------------------------------ | :----------------------------- |
-| Normal-path overhead | ~0 (no branch) | 1 branch (check `has_value()`) | 1 branch + compare |
-| Error-path overhead | ~5-20 $\mu$S (unwind) | 0 (direct branch) | 0 (direct return) |
-| Code clarity | High (separate happy/error paths) | Medium (explicit checks) | Low (pervasive error checks) |
-| Forgetting to handle | Compiler warns on uncaught | UB if `value()` called on error | Easy to forget to check return |
-| Composability | Implicit (stack unwinding) | Monadic chains (`and_then`) | Manual propagation |
-| Cross-function boundary | Automatic | Manual (`and_then` chain) | Manual (return code check) |
-| Type safety | Any type can be thrown | Typed error `E` | Enum/int (weak) |
-| Binary size | +5-15% (LSDA tables) | 0 | 0 |
-| Destructor safety | Must be `noexcept` | No special requirement | No special requirement |
+| Normal-path overhead    | ~0 (no branch)                    | 1 branch (check `has_value()`)  | 1 branch + compare             |
+| Error-path overhead     | ~5-20 $\mu$S (unwind)             | 0 (direct branch)               | 0 (direct return)              |
+| Code clarity            | High (separate happy/error paths) | Medium (explicit checks)        | Low (pervasive error checks)   |
+| Forgetting to handle    | Compiler warns on uncaught        | UB if `value()` called on error | Easy to forget to check return |
+| Composability           | Implicit (stack unwinding)        | Monadic chains (`and_then`)     | Manual propagation             |
+| Cross-function boundary | Automatic                         | Manual (`and_then` chain)       | Manual (return code check)     |
+| Type safety             | Any type can be thrown            | Typed error `E`                 | Enum/int (weak)                |
+| Binary size             | +5-15% (LSDA tables)              | 0                               | 0                              |
+| Destructor safety       | Must be `noexcept`                | No special requirement          | No special requirement         |
 
 ## Error Handling Best Practices
 
 ### When to Use Each Mechanism
 
-| Situation | Recommended Mechanism |
+| Situation                               | Recommended Mechanism                            |
 | --------------------------------------- | ------------------------------------------------ |
-| Truly exceptional, unrecoverable events | `throw` / `try` / `catch` |
-| Expected failure with optional return | `std::optional<T>` |
-| Typed error outcomes (C++23+) | `std::expected<T, E>` |
-| Multiple error types, pre-C++23 | `std::variant<T, E1, E2, ...>` |
-| C interface / FFI boundary | Error codes (`int``enum`) |
-| Performance-critical hot path | `noexcept` functions + error codes or `expected` |
-| Destructor cleanup | Never throw (see below) |
+| Truly exceptional, unrecoverable events | `throw` / `try` / `catch`                        |
+| Expected failure with optional return   | `std::optional<T>`                               |
+| Typed error outcomes (C++23+)           | `std::expected<T, E>`                            |
+| Multiple error types, pre-C++23         | `std::variant<T, E1, E2, ...>`                   |
+| C interface / FFI boundary              | Error codes (`int``enum`)                        |
+| Performance-critical hot path           | `noexcept` functions + error codes or `expected` |
+| Destructor cleanup                      | Never throw (see below)                          |
 
 ### C++ Core Guidelines
 
 Key guidelines from [C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/):
 
-| Guideline | Summary |
+| Guideline | Summary                                                                         |
 | --------- | ------------------------------------------------------------------------------- |
-| **E.1** | Develop a logical error-handling strategy early. |
-| **E.2** | Throw exceptions to signal exceptional conditions, not for normal control flow. |
-| **E.3** | Use exceptions for errors in constructors. |
-| **E.5** | Prefer `noexcept` where feasible. |
-| **E.12** | Use `final` or `noexcept` on throwing functions to prevent overriding. |
-| **E.14** | Use `noexcept` move operations. |
-| **E.16** | Destructors, deallocation, and `swap` must never fail. |
-| **E.25** | If you can't throw, consider `std::expected` for reporting errors. |
-| **I.7** | State preconditions (and prefer `Expects` / `Ensures` contracts). |
+| **E.1**   | Develop a logical error-handling strategy early.                                |
+| **E.2**   | Throw exceptions to signal exceptional conditions, not for normal control flow. |
+| **E.3**   | Use exceptions for errors in constructors.                                      |
+| **E.5**   | Prefer `noexcept` where feasible.                                               |
+| **E.12**  | Use `final` or `noexcept` on throwing functions to prevent overriding.          |
+| **E.14**  | Use `noexcept` move operations.                                                 |
+| **E.16**  | Destructors, deallocation, and `swap` must never fail.                          |
+| **E.25**  | If you can't throw, consider `std::expected` for reporting errors.              |
+| **I.7**   | State preconditions (and prefer `Expects` / `Ensures` contracts).               |
 
 ### Exception Safety in Constructors
 
@@ -478,10 +481,8 @@ int main() {
 //   caught: construction failed
 ```
 
-:::tip
-If a constructor can fail, throwing an exception is the **only** way to signal the error.
-Error codes cannot be returned from a constructor.
-:::
+:::tip If a constructor can fail, throwing an exception is the **only** way to signal the error.
+Error codes cannot be returned from a constructor. :::
 
 ### The "Destructor Must Never Throw" Rule
 
@@ -577,21 +578,19 @@ int main() {
 //   caught: other error
 ```
 
-:::warning
-Swallowing exceptions in destructors is a **last resort**. If cleanup truly cannot fail,
+:::warning Swallowing exceptions in destructors is a **last resort**. If cleanup truly cannot fail,
 Make the destructor `noexcept` and ensure cleanup operations are themselves `noexcept`. Use RAII
-Wrappers that handle errors internally rather than propagating them from destructors.
-:::
+Wrappers that handle errors internally rather than propagating them from destructors. :::
 
 ### Summary
 
-| Mechanism | C++ Version | Error Richness | Overhead (no error) | Composability |
-| --------------- | ----------- | ----------------- | ------------------: | -------------------------- |
-| Exceptions | C++98 | Any type | ~0 | Implicit (unwinding) |
-| Error codes | C | Enum/int | 0 | Manual propagation |
-| `std::optional` | C++17 | `nullopt` only | 0 | Check required |
-| `std::variant` | C++17 | User-defined | 0 | `visit` / `get_if` |
-| `std::expected` | C++23 | Single error type | 0 | Monadic (`and_then`Etc.) |
+| Mechanism       | C++ Version | Error Richness    | Overhead (no error) | Composability            |
+| --------------- | ----------- | ----------------- | ------------------: | ------------------------ |
+| Exceptions      | C++98       | Any type          |                  ~0 | Implicit (unwinding)     |
+| Error codes     | C           | Enum/int          |                   0 | Manual propagation       |
+| `std::optional` | C++17       | `nullopt` only    |                   0 | Check required           |
+| `std::variant`  | C++17       | User-defined      |                   0 | `visit` / `get_if`       |
+| `std::expected` | C++23       | Single error type |                   0 | Monadic (`and_then`Etc.) |
 
 **Relevance:** Modern C++ increasingly favors **explicit, algebraic error handling**
 (`std::expected`) for expected failure modes and reserves **exceptions** for truly exceptional
@@ -759,29 +758,29 @@ int main() {
 ## Common Pitfalls
 
 - **Calling `value()` without checking:** `value()` on an error-holding `expected` is undefined
- behavior. Always check `has_value()` first, or use `value_or()`. The standard deliberately does
- not throw from `value()` to maintain zero-overhead semantics.
-- **Using `std::expected` where `std::optional` suffices:** If the error type is `nullopt`
- (i.e., the only information is "no value"), use `std::optional<T>` instead. It is simpler and more
- idiomatic.
+  behavior. Always check `has_value()` first, or use `value_or()`. The standard deliberately does
+  not throw from `value()` to maintain zero-overhead semantics.
+- **Using `std::expected` where `std::optional` suffices:** If the error type is `nullopt` (i.e.,
+  the only information is "no value"), use `std::optional<T>` instead. It is simpler and more
+  idiomatic.
 - **Ignoring the error in monadic chains:** `transform` and `and_then` silently propagate errors. If
- you forget to handle the final result, the error is lost. Always check the final `expected` in the
- chain.
+  you forget to handle the final result, the error is lost. Always check the final `expected` in the
+  chain.
 - **Throwing from within `expected` operations:** If `transform` or `and_then` callbacks throw, the
- exception propagates normally (bypassing the `expected` mechanism). This mixes error handling
- strategies and should be avoided. Make callbacks `noexcept` or catch internally.
+  exception propagates normally (bypassing the `expected` mechanism). This mixes error handling
+  strategies and should be avoided. Make callbacks `noexcept` or catch internally.
 - **Storing references in `expected`:** `std::expected<T&, E>` is valid but tricky — the reference
- is stored as a pointer internally, and the referred-to object must outlive the `expected`. Prefer
- `std::expected<T*, E>` for pointer semantics.
+  is stored as a pointer internally, and the referred-to object must outlive the `expected`. Prefer
+  `std::expected<T*, E>` for pointer semantics.
 - **Constructing `expected` with brace initialization:** When `T` is a non-moveable type,
- `expected<T, E>{}` requires careful construction. Use `std::expected<T, E>(std::in_place, ...)`
- for in-place construction to avoid copy/move requirements.
+  `expected<T, E>{}` requires careful construction. Use `std::expected<T, E>(std::in_place, ...)`
+  for in-place construction to avoid copy/move requirements.
 - **Using `expected` as a function parameter:** Passing `expected<T, E>` by value copies the value
- or error. For large `T`Pass by reference or use `std::expected<T*, E>`. For return values, NRVO
- eliminates the copy.
+  or error. For large `T`Pass by reference or use `std::expected<T*, E>`. For return values, NRVO
+  eliminates the copy.
 - **Mixing error handling strategies in a single function:** A function that returns `expected`
- should not also throw exceptions (unless truly exceptional). Mixing strategies makes it unclear to
- the caller how errors should be handled. Choose one strategy per function boundary.
+  should not also throw exceptions (unless truly exceptional). Mixing strategies makes it unclear to
+  the caller how errors should be handled. Choose one strategy per function boundary.
 
 ## See Also
 

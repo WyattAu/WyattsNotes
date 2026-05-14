@@ -1,9 +1,12 @@
 ---
 id: serialization
 title: Serialization and Data Formats
-description: "Serialization and Data Formats — JSON; Encoding and Decoding; Serialize to string; Deserialize from string with worked examples and exam-style questions."
+description:
+  'Serialization and Data Formats — JSON; Encoding and Decoding; Serialize to string; Deserialize
+  from string with worked examples and exam-style questions.'
 slug: serialization
 ---
+
 ## JSON
 
 The `json` module is the standard way to serialize Python objects to JSON and back. It ships with
@@ -93,10 +96,8 @@ data = json.loads(json_str, object_hook=custom_decoder)
 print(type(data["created"]))  # <class 'datetime.datetime'>
 ```
 
-:::info
-Python's `json` module only handles a subset of types natively: `dict``list``str`
-`int``float``bool`And `None`. Everything else requires custom encoding.
-:::
+:::info Python's `json` module only handles a subset of types natively: `dict``list``str`
+`int``float``bool`And `None`. Everything else requires custom encoding. :::
 
 ### JSON Performance
 
@@ -145,14 +146,14 @@ print(srv2.credentials)  # {'user': 'admin', 'pass': 'secret'}
 
 ### Protocol Versions
 
-| Protocol | Python Version | Features |
+| Protocol | Python Version | Features                                     |
 | -------- | -------------- | -------------------------------------------- |
-| 0 | All | ASCII, human-readable, backward compatible |
-| 1 | 1.4 | Binary format |
-| 2 | 2.3 | New-style classes |
-| 3 | 3.0 | Bytes objects, no implicit string conversion |
-| 4 | 3.4 | Large objects, more types |
-| 5 | 3.8 | Out-of-band data, ZSTD compression support |
+| 0        | All            | ASCII, human-readable, backward compatible   |
+| 1        | 1.4            | Binary format                                |
+| 2        | 2.3            | New-style classes                            |
+| 3        | 3.0            | Bytes objects, no implicit string conversion |
+| 4        | 3.4            | Large objects, more types                    |
+| 5        | 3.8            | Out-of-band data, ZSTD compression support   |
 
 ```python
 import pickle
@@ -164,8 +165,7 @@ print(pickle.HIGHEST_PROTOCOL)      # 5
 data = pickle.dumps(obj, protocol=pickle.HIGHEST_PROTOCOL)
 ```
 
-:::danger
-**Never unpickle data from untrusted sources.** `pickle.loads()` can execute arbitrary
+:::danger **Never unpickle data from untrusted sources.** `pickle.loads()` can execute arbitrary
 Code during deserialization. A malicious pickle payload can import modules, execute shell commands,
 Or access the filesystem.
 
@@ -262,8 +262,7 @@ print(data["database"]["host"])  # localhost
 
 ### safe_load vs load
 
-:::warning
-Always use `yaml.safe_load()` instead of `yaml.load()`. The latter can deserialize
+:::warning Always use `yaml.safe_load()` instead of `yaml.load()`. The latter can deserialize
 Arbitrary Python objects, including calls to `subprocess.Popen` or `os.system`:
 
 ```yaml
@@ -271,8 +270,7 @@ Arbitrary Python objects, including calls to `subprocess.Popen` or `os.system`:
 !!python/object/apply:os.system ['rm -rf /']
 ```
 
-`yaml.safe_load()` only parses standard YAML types: scalars, sequences, mappings.
-:::
+`yaml.safe_load()` only parses standard YAML types: scalars, sequences, mappings. :::
 
 ### Custom Tags with Safe Loader
 
@@ -374,11 +372,9 @@ name = "viewer"
 role = "readonly"
 ```
 
-:::tip
-Use TOML for configuration files, JSON for APIs and data interchange, YAML for complex
+:::tip Use TOML for configuration files, JSON for APIs and data interchange, YAML for complex
 Human-readable data, and pickle only for Python-internal serialization where security is not a
-Concern.
-:::
+Concern. :::
 
 ## CSV
 
@@ -437,10 +433,8 @@ with open("quoted.csv", "w", newline="") as f:
 # csv.QUOTE_NONE — never quote (raises error if quoting needed)
 ```
 
-:::warning
-Always open CSV files with `newline=""` as specified in the `csv` module documentation.
-On Python 3, failing to do so can cause extra blank lines in the output on some platforms.
-:::
+:::warning Always open CSV files with `newline=""` as specified in the `csv` module documentation.
+On Python 3, failing to do so can cause extra blank lines in the output on some platforms. :::
 
 ## Protocol Buffers
 
@@ -487,15 +481,15 @@ print(config2.host)  # db-primary.example.com
 
 ### Protobuf vs JSON
 
-| Feature | Protobuf | JSON |
+| Feature                | Protobuf                 | JSON                  |
 | ---------------------- | ------------------------ | --------------------- |
-| Schema | Required | Optional |
-| Size | 3-10x smaller | Larger |
-| Speed | 20-100x faster (binary) | Slower (text parsing) |
-| Human-readable | No | Yes |
-| Backward compatibility | Built-in (field numbers) | Manual |
-| Language support | Many | Universal |
-| Self-describing | No | Yes |
+| Schema                 | Required                 | Optional              |
+| Size                   | 3-10x smaller            | Larger                |
+| Speed                  | 20-100x faster (binary)  | Slower (text parsing) |
+| Human-readable         | No                       | Yes                   |
+| Backward compatibility | Built-in (field numbers) | Manual                |
+| Language support       | Many                     | Universal             |
+| Self-describing        | No                       | Yes                   |
 
 ## MessagePack
 
@@ -621,17 +615,17 @@ print(serialized["timestamp"])  # '2025-01-15T00:00:00'
 
 ## Choosing the Right Format
 
-| Use Case | Recommended Format | Why |
+| Use Case                    | Recommended Format             | Why                               |
 | --------------------------- | ------------------------------ | --------------------------------- |
-| REST API payloads | JSON | Universal support, human-readable |
-| Configuration files | TOML | Clean syntax, type-aware |
-| Complex config | YAML | Anchors, references, readability |
-| Python-only serialization | pickle | Full object graph support |
-| Distributed Python | cloudpickle | Handles lambdas, closures |
-| High-performance IPC | MessagePack or Protobuf | Binary, fast, compact |
-| Structured data with schema | Protobuf | Schema evolution, validation |
-| Spreadsheet import/export | CSV | Universal, Excel-compatible |
-| Log files | JSON Lines (one JSON per line) | Streamable, parseable |
+| REST API payloads           | JSON                           | Universal support, human-readable |
+| Configuration files         | TOML                           | Clean syntax, type-aware          |
+| Complex config              | YAML                           | Anchors, references, readability  |
+| Python-only serialization   | pickle                         | Full object graph support         |
+| Distributed Python          | cloudpickle                    | Handles lambdas, closures         |
+| High-performance IPC        | MessagePack or Protobuf        | Binary, fast, compact             |
+| Structured data with schema | Protobuf                       | Schema evolution, validation      |
+| Spreadsheet import/export   | CSV                            | Universal, Excel-compatible       |
+| Log files                   | JSON Lines (one JSON per line) | Streamable, parseable             |
 
 ## Common Pitfalls
 

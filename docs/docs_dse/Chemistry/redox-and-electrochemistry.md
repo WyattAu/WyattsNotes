@@ -1,6 +1,8 @@
 ---
 title: Chemistry - Redox and Electrochemistry
-description: "DSE Chemistry redox and electrochemistry notes covering oxidation-reduction reactions, electrolysis, electrochemical cells, and industrial applications."
+description:
+  'DSE Chemistry redox and electrochemistry notes covering oxidation-reduction reactions,
+  electrolysis, electrochemical cells, and industrial applications.'
 date: 2026-04-23T00:00:00.000Z
 tags:
   - Chemistry
@@ -26,8 +28,10 @@ A useful mnemonic for remembering the definitions:
 
 ### Oxidising and Reducing Agents
 
-- **Oxidising agent:** The species that causes oxidation by accepting electrons (it is itself reduced)
-- **Reducing agent:** The species that causes reduction by donating electrons (it is itself oxidised)
+- **Oxidising agent:** The species that causes oxidation by accepting electrons (it is itself
+  reduced)
+- **Reducing agent:** The species that causes reduction by donating electrons (it is itself
+  oxidised)
 
 ### Worked Example 1
 
@@ -48,7 +52,8 @@ Oxidation numbers are assigned to atoms using the following rules:
 2. The oxidation number of a simple ion equals its charge.
 3. In compounds, the sum of all oxidation numbers equals the overall charge.
 4. In most compounds, hydrogen is $+1$ (except in metal hydrides where it is $-1$).
-5. In most compounds, oxygen is $-2$ (except in peroxides where it is $-1$And in $\mathrm{OF_2}$ where it is $+2$).
+5. In most compounds, oxygen is $-2$ (except in peroxides where it is $-1$And in $\mathrm{OF_2}$
+   where it is $+2$).
 6. Fluorine is always $-1$ in its compounds.
 
 ### Worked Example 2
@@ -151,18 +156,17 @@ Magnesium is oxidised ($\mathrm{Mg} \to \mathrm{Mg^{2+}} + 2e^-$) and copper(II)
 
 ### Metals Above Carbon in the Reactivity Series
 
-Metals more reactive than carbon ($\mathrm{K}$$\mathrm{Na}$$\mathrm{Ca}$$\mathrm{Mg}$
-$\mathrm{Al}$) are extracted by **electrolysis** of their molten compounds ( chlorides or
-Oxides).
+Metals more reactive than carbon ($\mathrm{K}$$\mathrm{Na}$$\mathrm{Ca}$$\mathrm{Mg}$ $\mathrm{Al}$)
+are extracted by **electrolysis** of their molten compounds ( chlorides or Oxides).
 
 **Example: Extraction of aluminium from $\mathrm{Al_2O_3}$ (Hall-Heroult process)**
 
 - $\mathrm{Al_2O_3}$ is dissolved in molten cryolite ($\mathrm{Na_3AlF_6}$) to lower its melting
- point.
+  point.
 - At the cathode: $\mathrm{Al^{3+}} + 3e^- \to \mathrm{Al}$
 - At the anode: $2\mathrm{O^{2-}} \to \mathrm{O_2} + 4e^-$
-- The oxygen reacts with the carbon anodes to form $\mathrm{CO_2}$So the anodes must be
- replaced periodically.
+- The oxygen reacts with the carbon anodes to form $\mathrm{CO_2}$So the anodes must be replaced
+  periodically.
 
 ### Metals Below Carbon in the Reactivity Series
 
@@ -190,22 +194,22 @@ Oxygen. It is an electrochemical process:
 
 ### Methods of Prevention
 
-| Method | Mechanism |
-| ------------------- | ----------------------------------------------------------- |
-| Painting/coating | Barrier: prevents water and oxygen reaching the iron |
-| Oiling/greasing | Barrier: repels water |
-| Galvanising | Coating with zinc; zinc is more reactive and sacrifices itself |
+| Method            | Mechanism                                                                  |
+| ----------------- | -------------------------------------------------------------------------- |
+| Painting/coating  | Barrier: prevents water and oxygen reaching the iron                       |
+| Oiling/greasing   | Barrier: repels water                                                      |
+| Galvanising       | Coating with zinc; zinc is more reactive and sacrifices itself             |
 | Sacrificial anode | Attach a more reactive metal (e.g., Mg or Zn) to iron; it corrodes instead |
-| Alloying | Stainless steel contains Cr, which forms a protective oxide layer |
+| Alloying          | Stainless steel contains Cr, which forms a protective oxide layer          |
 
 ### Worked Example 6
 
 Explain why galvanising protects iron even if the zinc coating is scratched.
 
 Zinc is more reactive than iron and is higher in the reactivity series. When the zinc coating is
-Scratched, both zinc and iron are exposed to water and oxygen. Zinc acts as a sacrificial anode
-And undergoes oxidation in preference to iron. Zinc loses electrons and corrodes, protecting the
-Iron beneath.
+Scratched, both zinc and iron are exposed to water and oxygen. Zinc acts as a sacrificial anode And
+undergoes oxidation in preference to iron. Zinc loses electrons and corrodes, protecting the Iron
+beneath.
 
 ---
 
@@ -221,6 +225,7 @@ Half-cells connected by a wire (external circuit) and a salt bridge (internal ci
 - **Salt bridge:** Allows ions to flow, maintaining electrical neutrality
 
 **Reactions:**
+
 - Anode (oxidation): $\mathrm{Zn} \to \mathrm{Zn^{2+}} + 2e^-$
 - Cathode (reduction): $\mathrm{Cu^{2+}} + 2e^- \to \mathrm{Cu}$
 - Overall: $\mathrm{Zn} + \mathrm{Cu^{2+}} \to \mathrm{Zn^{2+}} + \mathrm{Cu}$
@@ -245,13 +250,13 @@ Electrolysis is the use of electrical energy to drive a non-spontaneous chemical
 
 ### Key Terms
 
-| Term | Definition |
-| --------------- | ------------------------------------------------------- |
+| Term        | Definition                                                           |
+| ----------- | -------------------------------------------------------------------- |
 | Electrolyte | An ionic compound that conducts electricity when molten or dissolved |
-| Anode | Positive electrode; oxidation occurs here |
-| Cathode | Negative electrode; reduction occurs here |
-| Cation | Positive ion; attracted to the cathode |
-| Anion | Negative ion; attracted to the anode |
+| Anode       | Positive electrode; oxidation occurs here                            |
+| Cathode     | Negative electrode; reduction occurs here                            |
+| Cation      | Positive ion; attracted to the cathode                               |
+| Anion       | Negative ion; attracted to the anode                                 |
 
 ### Electrolysis of Molten Compounds
 
@@ -272,20 +277,18 @@ Discharged. The product at each electrode depends on the relative reactivity of 
 **At the cathode (reduction):**
 
 - If the metal is more reactive than hydrogen ($\mathrm{K}$$\mathrm{Na}$$\mathrm{Ca}$
- $\mathrm{Mg}$$\mathrm{Al}$$\mathrm{Zn}$): hydrogen gas is produced.
+  $\mathrm{Mg}$$\mathrm{Al}$$\mathrm{Zn}$): hydrogen gas is produced.
   $$2\mathrm{H_2O} + 2e^- \to \mathrm{H_2} + 2\mathrm{OH^-}$$
-- If the metal is less reactive than hydrogen ($\mathrm{Cu}$$\mathrm{Ag}$$\mathrm{Au}$): the
- metal is produced.
-  $$\mathrm{Cu^{2+}} + 2e^- \to \mathrm{Cu}$$
+- If the metal is less reactive than hydrogen ($\mathrm{Cu}$$\mathrm{Ag}$$\mathrm{Au}$): the metal
+  is produced. $$\mathrm{Cu^{2+}} + 2e^- \to \mathrm{Cu}$$
 
 **At the anode (oxidation):**
 
-- If the anion is a halide ($\mathrm{Cl^-}$$\mathrm{Br^-}$$\mathrm{I^-}$): the halogen is
- produced.
+- If the anion is a halide ($\mathrm{Cl^-}$$\mathrm{Br^-}$$\mathrm{I^-}$): the halogen is produced.
   $$2\mathrm{Cl^-} \to \mathrm{Cl_2} + 2e^-$$
 - If the anion is anything else ($\mathrm{SO_4^{2-}}$$\mathrm{NO_3^-}$): oxygen gas is produced.
-  $$4\mathrm{OH^-} \to \mathrm{O_2} + 2\mathrm{H_2O} + 4e^-$$
- (or equivalently: $2\mathrm{H_2O} \to \mathrm{O_2} + 4\mathrm{H^+} + 4e^-$)
+  $$4\mathrm{OH^-} \to \mathrm{O_2} + 2\mathrm{H_2O} + 4e^-$$ (or equivalently:
+  $2\mathrm{H_2O} \to \mathrm{O_2} + 4\mathrm{H^+} + 4e^-$)
 
 ### Worked Example 7
 
@@ -305,6 +308,7 @@ $$Q = It$$
 $$n = \frac{Q}{F} = \frac{It}{F}$$
 
 Where:
+
 - $Q$ = charge in coulombs (C)
 - $I$ = current in amperes (A)
 - $t$ = time in seconds (s)
@@ -358,34 +362,34 @@ At the cathode: $\mathrm{Ag^+} + e^- \to \mathrm{Ag}$ (silver deposits on the ob
 ## Common Pitfalls
 
 - Confusing the anode and cathode in electrolysis vs. Electrochemical cells. In an electrolytic
- cell, the anode is positive; in a galvanic cell, the anode is negative (electrons flow from
- anode to cathode).
+  cell, the anode is positive; in a galvanic cell, the anode is negative (electrons flow from anode
+  to cathode).
 - Forgetting that $2 \times F$ electrons are needed to deposit 1 mole of a divalent metal (e.g.,
- $\mathrm{Cu^{2+}}$$\mathrm{Zn^{2+}}$). Always check the ion's charge.
-- Applying the wrong rule for discharge at the anode in aqueous electrolysis. Halides are
- discharged in preference to hydroxide; other anions result in oxygen production.
+  $\mathrm{Cu^{2+}}$$\mathrm{Zn^{2+}}$). Always check the ion's charge.
+- Applying the wrong rule for discharge at the anode in aqueous electrolysis. Halides are discharged
+  in preference to hydroxide; other anions result in oxygen production.
 - Assuming the most reactive metal is always deposited at the cathode. In aqueous solution, if the
- metal is more reactive than hydrogen, hydrogen gas is produced instead.
+  metal is more reactive than hydrogen, hydrogen gas is produced instead.
 - Forgetting to convert time to seconds when using $Q = It$.
-- Confusing oxidation numbers with ionic charges. Oxidation numbers are assigned by convention; ionic
- charges are real charges on ions.
+- Confusing oxidation numbers with ionic charges. Oxidation numbers are assigned by convention;
+  ionic charges are real charges on ions.
 
 ---
 
 ## Summary Table
 
-| Concept | Key Point |
-| -------------------- | ------------------------------------------------------ |
-| OIL RIG | Oxidation Is Loss, Reduction Is Gain |
-| Oxidising agent | Accepts electrons (is reduced) |
-| Reducing agent | Donates electrons (is oxidised) |
-| Reactivity series | Ranks metals by tendency to lose electrons |
-| Rusting conditions | Requires both water and oxygen |
-| Galvanic cell | Converts chemical energy to electrical energy |
-| Electrolysis | Converts electrical energy to chemical energy |
-| Faraday's law | $m = ItM / (zF)$ |
-| Cathode product | Metal (if less reactive than H) or $\mathrm{H_2}$ |
-| Anode product | Halogen (if halide present) or $\mathrm{O_2}$ |
+| Concept            | Key Point                                         |
+| ------------------ | ------------------------------------------------- |
+| OIL RIG            | Oxidation Is Loss, Reduction Is Gain              |
+| Oxidising agent    | Accepts electrons (is reduced)                    |
+| Reducing agent     | Donates electrons (is oxidised)                   |
+| Reactivity series  | Ranks metals by tendency to lose electrons        |
+| Rusting conditions | Requires both water and oxygen                    |
+| Galvanic cell      | Converts chemical energy to electrical energy     |
+| Electrolysis       | Converts electrical energy to chemical energy     |
+| Faraday's law      | $m = ItM / (zF)$                                  |
+| Cathode product    | Metal (if less reactive than H) or $\mathrm{H_2}$ |
+| Anode product      | Halogen (if halide present) or $\mathrm{O_2}$     |
 
 ---
 
@@ -410,7 +414,10 @@ The oxidation number of nitrogen in $\mathrm{NH_4^+}$ is $-3$.
 
 ### Worked Example: Cell Potential and Spontaneity
 
-A cell is constructed from a $\mathrm{Mg}^{2+}/\mathrm{Mg}$ half-cell ($E^\circ = -2.37 \mathrm{ V}$) and a $\mathrm{Fe}^{2+}/\mathrm{Fe}$ half-cell ($E^\circ = -0.44 \mathrm{ V}$). Calculate the cell potential, write the overall equation, and state whether the reaction is spontaneous.
+A cell is constructed from a $\mathrm{Mg}^{2+}/\mathrm{Mg}$ half-cell
+($E^\circ = -2.37 \mathrm{ V}$) and a $\mathrm{Fe}^{2+}/\mathrm{Fe}$ half-cell
+($E^\circ = -0.44 \mathrm{ V}$). Calculate the cell potential, write the overall equation, and state
+whether the reaction is spontaneous.
 
 <details>
 <summary>Solution</summary>
@@ -431,7 +438,8 @@ Since $E^\circ_{\mathrm{cell}} = +1.93 \mathrm{ V} \gt 0$The reaction is spontan
 
 ### Worked Example: Electrolysis of Aqueous $\mathrm{CuSO_4}$ with Active Electrodes
 
-Predict the products when aqueous $\mathrm{CuSO_4}$ is electrolysed using **copper** electrodes (instead of inert electrodes).
+Predict the products when aqueous $\mathrm{CuSO_4}$ is electrolysed using **copper** electrodes
+(instead of inert electrodes).
 
 <details>
 <summary>Solution</summary>
@@ -440,11 +448,14 @@ At the cathode: Copper is less reactive than hydrogen, so copper is deposited.
 
 $$\mathrm{Cu}^{2+} + 2e^- \to \mathrm{Cu}$$
 
-At the anode: Since the anode is made of copper (not inert), the copper anode itself dissolves rather than $\mathrm{SO_4^{2-}}$ or $\mathrm{OH^-}$ being discharged.
+At the anode: Since the anode is made of copper (not inert), the copper anode itself dissolves
+rather than $\mathrm{SO_4^{2-}}$ or $\mathrm{OH^-}$ being discharged.
 
 $$\mathrm{Cu} \to \mathrm{Cu}^{2+} + 2e^-$$
 
-The concentration of $\mathrm{CuSO_4}$ remains constant because copper dissolves from the anode at the same rate it deposits at the cathode. This is the principle of **electrolytic refining** of copper.
+The concentration of $\mathrm{CuSO_4}$ remains constant because copper dissolves from the anode at
+the same rate it deposits at the cathode. This is the principle of **electrolytic refining** of
+copper.
 
 </details>
 
@@ -463,7 +474,8 @@ $$x = +6$$
 
 **Question 2:** Balance the following redox equation:
 
-$$\mathrm{MnO_4^-} + \mathrm{SO_3^{2-}} \to \mathrm{Mn^{2+}} + \mathrm{SO_4^{2-}}$$ (in acidic solution)
+$$\mathrm{MnO_4^-} + \mathrm{SO_3^{2-}} \to \mathrm{Mn^{2+}} + \mathrm{SO_4^{2-}}$$ (in acidic
+solution)
 
 Reduction: $\mathrm{MnO_4^-} + 8\mathrm{H^+} + 5e^- \to \mathrm{Mn^{2+}} + 4\mathrm{H_2O}$
 
@@ -473,13 +485,15 @@ Multiply reduction by 2 and oxidation by 5:
 
 $$2\mathrm{MnO_4^-} + 16\mathrm{H^+} + 5\mathrm{SO_3^{2-}} + 5\mathrm{H_2O} \to 2\mathrm{Mn^{2+}} + 8\mathrm{H_2O} + 5\mathrm{SO_4^{2-}} + 10\mathrm{H^+}$$
 
-Simplify: $2\mathrm{MnO_4^-} + 6\mathrm{H^+} + 5\mathrm{SO_3^{2-}} \to 2\mathrm{Mn^{2+}} + 3\mathrm{H_2O} + 5\mathrm{SO_4^{2-}}$
+Simplify:
+$2\mathrm{MnO_4^-} + 6\mathrm{H^+} + 5\mathrm{SO_3^{2-}} \to 2\mathrm{Mn^{2+}} + 3\mathrm{H_2O} + 5\mathrm{SO_4^{2-}}$
 
-**Question 3:** Explain why aluminium is extracted by electrolysis rather than by reduction with carbon.
+**Question 3:** Explain why aluminium is extracted by electrolysis rather than by reduction with
+carbon.
 
-Aluminium is more reactive than carbon in the reactivity series. Carbon cannot reduce aluminium oxide
-Because aluminium has a greater affinity for oxygen than carbon does. Therefore, electrolysis of
-Molten $\mathrm{Al_2O_3}$ is required.
+Aluminium is more reactive than carbon in the reactivity series. Carbon cannot reduce aluminium
+oxide Because aluminium has a greater affinity for oxygen than carbon does. Therefore, electrolysis
+of Molten $\mathrm{Al_2O_3}$ is required.
 
 **Question 4:** Predict the products of electrolysis of concentrated aqueous $\mathrm{NaCl}$ with
 Inert electrodes.
@@ -505,9 +519,9 @@ $$m = 2.50 \times 10^{-3} \times 207 = 0.518 \mathrm{ g}$$
 The pipeline from rusting.
 
 Magnesium is more reactive than iron. When attached to the iron pipeline, magnesium acts as a
-Sacrificial anode. It undergoes oxidation preferentially ($\mathrm{Mg} \to \mathrm{Mg^{2+}} + 2e^-$),
-Supplying electrons to the iron and preventing iron from losing electrons. As long as magnesium
-Remains, the iron is protected from corrosion.
+Sacrificial anode. It undergoes oxidation preferentially
+($\mathrm{Mg} \to \mathrm{Mg^{2+}} + 2e^-$), Supplying electrons to the iron and preventing iron
+from losing electrons. As long as magnesium Remains, the iron is protected from corrosion.
 
 </details>
 
@@ -515,9 +529,10 @@ Remains, the iron is protected from corrosion.
 
 ## Problem Set
 
-**Problem 1:** Determine the oxidation number of sulfur in $\mathrm{H_2SO_4}$ and in $\mathrm{SO_3^{2-}}$.
+**Problem 1:** Determine the oxidation number of sulfur in $\mathrm{H_2SO_4}$ and in
+$\mathrm{SO_3^{2-}}$.
 
-*If you get this wrong, revise: Oxidation Numbers*
+_If you get this wrong, revise: Oxidation Numbers_
 
 <details>
 <summary>Solution</summary>
@@ -528,16 +543,20 @@ In $\mathrm{SO_3^{2-}}$: $x + 3(-2) = -2 \Rightarrow x - 6 = -2 \Rightarrow x = 
 
 </details>
 
-**Problem 2:** In the reaction $\mathrm{Fe_2O_3} + 3\mathrm{CO} \to 2\mathrm{Fe} + 3\mathrm{CO_2}$Identify the species oxidised, reduced, the oxidising agent, and the reducing agent.
+**Problem 2:** In the reaction
+$\mathrm{Fe_2O_3} + 3\mathrm{CO} \to 2\mathrm{Fe} + 3\mathrm{CO_2}$Identify the species oxidised,
+reduced, the oxidising agent, and the reducing agent.
 
-*If you get this wrong, revise: Oxidising and Reducing Agents*
+_If you get this wrong, revise: Oxidising and Reducing Agents_
 
 <details>
 <summary>Solution</summary>
 
-$\mathrm{C}$ in $\mathrm{CO}$: oxidation number $+2 \to +4$ in $\mathrm{CO_2}$ (oxidation). $\mathrm{CO}$ is the reducing agent.
+$\mathrm{C}$ in $\mathrm{CO}$: oxidation number $+2 \to +4$ in $\mathrm{CO_2}$ (oxidation).
+$\mathrm{CO}$ is the reducing agent.
 
-$\mathrm{Fe}$ in $\mathrm{Fe_2O_3}$: oxidation number $+3 \to 0$ in $\mathrm{Fe}$ (reduction). $\mathrm{Fe_2O_3}$ is the oxidising agent.
+$\mathrm{Fe}$ in $\mathrm{Fe_2O_3}$: oxidation number $+3 \to 0$ in $\mathrm{Fe}$ (reduction).
+$\mathrm{Fe_2O_3}$ is the oxidising agent.
 
 </details>
 
@@ -545,7 +564,7 @@ $\mathrm{Fe}$ in $\mathrm{Fe_2O_3}$: oxidation number $+3 \to 0$ in $\mathrm{Fe}
 
 $$\mathrm{Cr_2O_7^{2-}} + \mathrm{I^-} \to \mathrm{Cr^{3+}} + \mathrm{I_2}$$
 
-*If you get this wrong, revise: Balancing Redox Equations*
+_If you get this wrong, revise: Balancing Redox Equations_
 
 <details>
 <summary>Solution</summary>
@@ -556,13 +575,15 @@ Oxidation: $2\mathrm{I^-} \to \mathrm{I_2} + 2e^-$
 
 Multiply oxidation by 3: $6\mathrm{I^-} \to 3\mathrm{I_2} + 6e^-$
 
-Combine: $\mathrm{Cr_2O_7^{2-}} + 14\mathrm{H^+} + 6\mathrm{I^-} \to 2\mathrm{Cr^{3+}} + 7\mathrm{H_2O} + 3\mathrm{I_2}$
+Combine:
+$\mathrm{Cr_2O_7^{2-}} + 14\mathrm{H^+} + 6\mathrm{I^-} \to 2\mathrm{Cr^{3+}} + 7\mathrm{H_2O} + 3\mathrm{I_2}$
 
 </details>
 
-**Problem 4:** Predict the products of electrolysis of aqueous $\mathrm{CuSO_4}$ using inert (carbon) electrodes. Write half-equations.
+**Problem 4:** Predict the products of electrolysis of aqueous $\mathrm{CuSO_4}$ using inert
+(carbon) electrodes. Write half-equations.
 
-*If you get this wrong, revise: Electrolysis of Aqueous Solutions*
+_If you get this wrong, revise: Electrolysis of Aqueous Solutions_
 
 <details>
 <summary>Solution</summary>
@@ -577,9 +598,10 @@ $$4\mathrm{OH^-} \to \mathrm{O_2} + 2\mathrm{H_2O} + 4e^-$$
 
 </details>
 
-**Problem 5:** A current of $0.500 \mathrm{ A}$ is passed through molten $\mathrm{PbBr_2}$ for $965 \mathrm{ s}$. Calculate the mass of lead deposited.
+**Problem 5:** A current of $0.500 \mathrm{ A}$ is passed through molten $\mathrm{PbBr_2}$ for
+$965 \mathrm{ s}$. Calculate the mass of lead deposited.
 
-*If you get this wrong, revise: Quantitative Electrolysis*
+_If you get this wrong, revise: Quantitative Electrolysis_
 
 <details>
 <summary>Solution</summary>
@@ -594,9 +616,11 @@ $$m = 2.50 \times 10^{-3} \times 207 = 0.518 \mathrm{ g}$$
 
 </details>
 
-**Problem 6:** A cell is made from $\mathrm{Zn}^{2+}/\mathrm{Zn}$ ($E^\circ = -0.76 \mathrm{ V}$) and $\mathrm{Ag^+}/\mathrm{Ag}$ ($E^\circ = +0.80 \mathrm{ V}$). Calculate the cell potential and write the overall equation.
+**Problem 6:** A cell is made from $\mathrm{Zn}^{2+}/\mathrm{Zn}$ ($E^\circ = -0.76 \mathrm{ V}$)
+and $\mathrm{Ag^+}/\mathrm{Ag}$ ($E^\circ = +0.80 \mathrm{ V}$). Calculate the cell potential and
+write the overall equation.
 
-*If you get this wrong, revise: Cell Voltage*
+_If you get this wrong, revise: Cell Voltage_
 
 <details>
 <summary>Solution</summary>
@@ -615,29 +639,36 @@ Overall: $\mathrm{Zn} + 2\mathrm{Ag^+} \to \mathrm{Zn^{2+}} + 2\mathrm{Ag}$
 
 **Problem 7:** Explain why aluminium is extracted by electrolysis rather than reduction with carbon.
 
-*If you get this wrong, revise: Extraction of Metals*
+_If you get this wrong, revise: Extraction of Metals_
 
 <details>
 <summary>Solution</summary>
 
-Aluminium is more reactive than carbon in the reactivity series. Carbon cannot reduce $\mathrm{Al_2O_3}$ because aluminium has a stronger affinity for oxygen than carbon. Electrolysis of molten $\mathrm{Al_2O_3}$ (dissolved in cryolite) is required to force the reduction.
+Aluminium is more reactive than carbon in the reactivity series. Carbon cannot reduce
+$\mathrm{Al_2O_3}$ because aluminium has a stronger affinity for oxygen than carbon. Electrolysis of
+molten $\mathrm{Al_2O_3}$ (dissolved in cryolite) is required to force the reduction.
 
 </details>
 
-**Problem 8:** Why does the mass of the anode decrease when copper is purified by electrolysis using copper electrodes and $\mathrm{CuSO_4}$ solution?
+**Problem 8:** Why does the mass of the anode decrease when copper is purified by electrolysis using
+copper electrodes and $\mathrm{CuSO_4}$ solution?
 
-*If you get this wrong, revise: Electrolysis of Aqueous Solutions and Electroplating*
+_If you get this wrong, revise: Electrolysis of Aqueous Solutions and Electroplating_
 
 <details>
 <summary>Solution</summary>
 
-The impure copper anode dissolves: $\mathrm{Cu} \to \mathrm{Cu^{2+}} + 2e^-$. Copper ions go into solution, so the anode loses mass. At the cathode, pure copper deposits: $\mathrm{Cu^{2+}} + 2e^- \to \mathrm{Cu}$. Impurities fall to the bottom as "anode sludge." This is the principle of electrolytic refining.
+The impure copper anode dissolves: $\mathrm{Cu} \to \mathrm{Cu^{2+}} + 2e^-$. Copper ions go into
+solution, so the anode loses mass. At the cathode, pure copper deposits:
+$\mathrm{Cu^{2+}} + 2e^- \to \mathrm{Cu}$. Impurities fall to the bottom as "anode sludge." This is
+the principle of electrolytic refining.
 
 </details>
 
-**Problem 9:** Calculate the volume of hydrogen gas (at r.t.p.) produced when a current of $3.00 \mathrm{ A}$ is passed through dilute $\mathrm{H_2SO_4}$ for $10.0 \mathrm{ minutes}$.
+**Problem 9:** Calculate the volume of hydrogen gas (at r.t.p.) produced when a current of
+$3.00 \mathrm{ A}$ is passed through dilute $\mathrm{H_2SO_4}$ for $10.0 \mathrm{ minutes}$.
 
-*If you get this wrong, revise: Quantitative Electrolysis*
+_If you get this wrong, revise: Quantitative Electrolysis_
 
 <details>
 <summary>Solution</summary>
@@ -654,12 +685,15 @@ $$V = 9.33 \times 10^{-3} \times 24.0 = 0.224 \mathrm{ dm^3} = 224 \mathrm{ cm^3
 
 **Problem 10:** Explain why iron pipes corrode faster when connected to copper plumbing.
 
-*If you get this wrong, revise: Rusting and Corrosion Prevention*
+_If you get this wrong, revise: Rusting and Corrosion Prevention_
 
 <details>
 <summary>Solution</summary>
 
-Iron is more reactive than copper. When in electrical contact in the presence of water and oxygen, iron acts as the anode and copper as the cathode. Electrons flow from iron to copper. At the anode: $\mathrm{Fe} \to \mathrm{Fe^{2+}} + 2e^-$ (iron corrodes faster). At the cathode: $\mathrm{O_2} + 2\mathrm{H_2O} + 4e^- \to 4\mathrm{OH^-}$. This sets up an electrochemical cell that accelerates corrosion of the iron.
+Iron is more reactive than copper. When in electrical contact in the presence of water and oxygen,
+iron acts as the anode and copper as the cathode. Electrons flow from iron to copper. At the anode:
+$\mathrm{Fe} \to \mathrm{Fe^{2+}} + 2e^-$ (iron corrodes faster). At the cathode:
+$\mathrm{O_2} + 2\mathrm{H_2O} + 4e^- \to 4\mathrm{OH^-}$. This sets up an electrochemical cell that
+accelerates corrosion of the iron.
 
 </details>
-

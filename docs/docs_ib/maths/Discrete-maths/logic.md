@@ -1,13 +1,14 @@
 ---
 title: Logic
 tags:
-- maths
+  - maths
 slug: logic
-description: "Rigorous IB mathematics notes covering Logic. Includes definitions, derivations, worked examples, and exam-style problems."
+description:
+  'Rigorous IB mathematics notes covering Logic. Includes definitions, derivations, worked examples,
+  and exam-style problems.'
 ---
 
-:::info
-TMUA Specification
+:::info TMUA Specification
 
 - The Logic of Arguments
 - Arg1 Understand and be able to use mathematical logic in simple situations:
@@ -46,8 +47,7 @@ TMUA Specification
 - Err1 Identifying errors in purported proofs.
 - Err2 Be aware of common mathematical errors in purported proofs; for example,
 - claiming 'if $ab = ac$Then $b = c$' or assuming 'if $\sin A = \sin B$Then $A = B$'
-- neither of which are valid deductions.
-:::
+- neither of which are valid deductions. :::
 
 # The Logic Of Arguments
 
@@ -55,11 +55,11 @@ TMUA Specification
 
 - In mathematics, statements must be true or false.
 - A statement is a sentence which is definitely true or definitely false. A statement can never be
- both true and false.
+  both true and false.
 - Examples:
- - "If $x = 3$Then $x^2 = 9$." This is certainly true, so it is a statement.
- - "If $x = 3$Then $x^2 = 4$." This is certainly false, so it is a statement.
- - "The sum of two odd numbers is an even number." This is certainly true, so it is a statement.
+- "If $x = 3$Then $x^2 = 9$." This is certainly true, so it is a statement.
+- "If $x = 3$Then $x^2 = 4$." This is certainly false, so it is a statement.
+- "The sum of two odd numbers is an even number." This is certainly true, so it is a statement.
 
 ### Truth values
 
@@ -106,7 +106,7 @@ I cry only if I am sad
 - $\mathrm{Cry}\implies\mathrm{Sad}$
 - If I am crying, then I am sad. This is because only under this condition (being sad) I can cry.
 - This does not mean that I cry every time I am sad. I can be sad and not cry, but if I am crying,
- then I HAVE to be sad.
+  then I HAVE to be sad.
 - Being sad is the only thing that can cause me to cry.
 - Leads to the 'if... Then...' statement: If I am crying, then I am sad.
 
@@ -153,7 +153,7 @@ A number is prime only if it is an integer
 A number is prime if and only if it is an integer
 
 - $\mathrm{Integer}\iff\mathrm{Prime}$ : False, all primes are integers, but not all integers are
- primes
+  primes
 - Both statements must be true.
 
 A shape is a rectangle if it is a square
@@ -169,7 +169,7 @@ A shape is a rectangle only if it is a square
 A shape is a rectangle if and only if it is a square
 
 - $\mathrm{Square}\iff\mathrm{Rectangle}$ : False, because one of the two statements above are
- false.
+  false.
 
 A if B
 
@@ -222,23 +222,23 @@ Negation: Some day next week, Fred will do no maths problems. Some days, Fred no
 
 Basically opposite of a statement. Swap A and B.
 
-| Statement | Converse |
+| Statement   | Converse    |
 | ----------- | ----------- |
 | if A then B | if B then A |
 | A only if B | B only if A |
-| A if B | B if A |
-| A iff B | B iff A |
+| A if B      | B if A      |
+| A iff B     | B iff A     |
 
 ### Contrapositive
 
 Basically the equivalent of a statement. Swap A and B, then negate both of them
 
-| Statement | Contrapositive |
+| Statement   | Contrapositive      |
 | ----------- | ------------------- |
 | if A then B | if not B then not A |
 | A only if B | not B only if not A |
-| A if B | not B if not A |
-| A iff B | not B iff not A |
+| A if B      | not B if not A      |
+| A iff B     | not B iff not A     |
 
 # Truth Tables
 
@@ -251,26 +251,26 @@ Statements. For a statement depending on $n$ propositions, the table has $2^n$ r
 
 | $P$ | $\neg P$ |
 | --- | -------- |
-| T | F |
-| F | T |
+| T   | F        |
+| F   | T        |
 
 **Conjunction (AND):** $P \land Q$ is true only when both $P$ and $Q$ are true.
 
 | $P$ | $Q$ | $P \land Q$ |
 | --- | --- | ----------- |
-| T | T | T |
-| T | F | F |
-| F | T | F |
-| F | F | F |
+| T   | T   | T           |
+| T   | F   | F           |
+| F   | T   | F           |
+| F   | F   | F           |
 
 **Disjunction (OR, inclusive):** $P \lor Q$ is false only when both $P$ and $Q$ are false.
 
 | $P$ | $Q$ | $P \lor Q$ |
 | --- | --- | ---------- |
-| T | T | T |
-| T | F | T |
-| F | T | T |
-| F | F | F |
+| T   | T   | T          |
+| T   | F   | T          |
+| F   | T   | T          |
+| F   | F   | F          |
 
 ### The implication $P \Rightarrow Q$
 
@@ -278,10 +278,10 @@ The truth table for implication is often the least intuitive:
 
 | $P$ | $Q$ | $P \Rightarrow Q$ |
 | --- | --- | ----------------- |
-| T | T | T |
-| T | F | F |
-| F | T | T |
-| F | F | T |
+| T   | T   | T                 |
+| T   | F   | F                 |
+| F   | T   | T                 |
+| F   | F   | T                 |
 
 An implication is **false only when the hypothesis is true and the conclusion is false**. This
 Captures the logical reading: if you promise "if $P$ then $Q$", you have only broken your promise
@@ -298,10 +298,10 @@ Table:
 
 | $P$ | $Q$ | $\neg P$ | $\neg Q$ | $\neg Q \Rightarrow \neg P$ |
 | --- | --- | -------- | -------- | --------------------------- |
-| T | T | F | F | T |
-| T | F | F | T | F |
-| F | T | T | F | T |
-| F | F | T | T | T |
+| T   | T   | F        | F        | T                           |
+| T   | F   | F        | T        | F                           |
+| F   | T   | T        | F        | T                           |
+| F   | F   | T        | T        | T                           |
 
 The column for $\neg Q \Rightarrow \neg P$ is identical to the column for $P \Rightarrow Q$ (T, F,
 T, T). This is why a statement and its contrapositive are **logically equivalent**: proving one
@@ -313,10 +313,10 @@ The converse of $P \Rightarrow Q$ is $Q \Rightarrow P$:
 
 | $P$ | $Q$ | $P \Rightarrow Q$ | $Q \Rightarrow P$ |
 | --- | --- | ----------------- | ----------------- |
-| T | T | T | T |
-| T | F | F | T |
-| F | T | T | F |
-| F | F | T | T |
+| T   | T   | T                 | T                 |
+| T   | F   | F                 | T                 |
+| F   | T   | T                 | F                 |
+| F   | F   | T                 | T                 |
 
 The truth values differ in rows 2 and 3. This is why the converse of a true statement need not be
 True. For instance, "If a number is prime then it is odd" ($P = \mathrm{prime}$$Q = \mathrm{odd}$)
@@ -332,14 +332,14 @@ Many mathematical statements involve quantifiers, which specify the scope over w
 Applies.
 
 - The **universal quantifier** "for all" (symbol $\forall$) asserts that a property holds for every
- element in a set.
- - Example: "For all integers $n$$n + 0 = n$."
- - In symbols: $\forall n \in \mathbb{'\{'}Z{'\}'},\; n + 0 = n$.
+  element in a set.
+- Example: "For all integers $n$$n + 0 = n$."
+- In symbols: $\forall n \in \mathbb{'\{'}Z{'\}'},\; n + 0 = n$.
 
 - The **existential quantifier** "there exists" (symbol $\exists$) asserts that a property holds for
- at least one element in a set.
- - Example: "There exists an integer $n$ such that $n^2 = 4$."
- - In symbols: $\exists n \in \mathbb{'\{'}Z{'\}'},\; n^2 = 4$.
+  at least one element in a set.
+- Example: "There exists an integer $n$ such that $n^2 = 4$."
+- In symbols: $\exists n \in \mathbb{'\{'}Z{'\}'},\; n^2 = 4$.
 
 A useful mnemonic: $\forall$ is an **upside-down A** (for "All"); $\exists$ is a **backwards E**
 (for "Exists").
@@ -350,19 +350,19 @@ Negation flips the quantifier and negates the predicate:
 
 - $\neg(\forall x,\; P(x)) \equiv \exists x,\; \neg P(x)$
 
- "Not (for all $x$$P(x)$ holds)" means "there exists some $x$ for which $P(x)$ does not hold."
+"Not (for all $x$$P(x)$ holds)" means "there exists some $x$ for which $P(x)$ does not hold."
 
 - $\neg(\exists x,\; P(x)) \equiv \forall x,\; \neg P(x)$
 
- "Not (there exists an $x$ such that $P(x)$ holds)" means "for every $x$$P(x)$ does not hold."
+"Not (there exists an $x$ such that $P(x)$ holds)" means "for every $x$$P(x)$ does not hold."
 
 This matches the informal rules from the Negation section:
 
-| Original | Negation |
+| Original                          | Negation         |
 | --------------------------------- | ---------------- |
-| All A are B | Some A are not B |
-| No A are B (i.e. All A are not B) | Some A are B |
-| Some A are B | No A are B |
+| All A are B                       | Some A are not B |
+| No A are B (i.e. All A are not B) | Some A are B     |
+| Some A are B                      | No A are B       |
 
 ### Worked examples
 
@@ -400,29 +400,29 @@ The informal airport and twin examples give the right intuition. Here is the for
 
 ### Definitions
 
-- $A$ is **sufficient** for $B$ means $A \Rightarrow B$. 
- Establishing $A$ is enough to guarantee $B$; no further conditions are needed.
+- $A$ is **sufficient** for $B$ means $A \Rightarrow B$. Establishing $A$ is enough to guarantee
+  $B$; no further conditions are needed.
 
-- $A$ is **necessary** for $B$ means $B \Rightarrow A$. 
- Whenever $B$ holds, $A$ must hold; $B$ cannot be true without $A$.
+- $A$ is **necessary** for $B$ means $B \Rightarrow A$. Whenever $B$ holds, $A$ must hold; $B$
+  cannot be true without $A$.
 
-- $A$ is **necessary and sufficient** for $B$ means $A \Leftrightarrow B$. 
- $A$ and $B$ are logically equivalent; they stand or fall together.
+- $A$ is **necessary and sufficient** for $B$ means $A \Leftrightarrow B$. $A$ and $B$ are logically
+  equivalent; they stand or fall together.
 
 ### Table of examples
 
-| Condition $A$ | Condition $B$ | Relationship | Why |
+| Condition $A$             | Condition $B$             | Relationship           | Why                                                  |
 | ------------------------- | ------------------------- | ---------------------- | ---------------------------------------------------- |
-| $n$ is even | $n^2$ is even | $A$ sufficient for $B$ | If $n = 2k$ then $n^2 = 4k^2 = 2(2k^2)$ |
-| $n^2$ is even | $n$ is even | $A$ necessary for $B$ | If $n$ were odd, $n^2$ would be odd (contrapositive) |
-| $x \lt 10$ | $x \lt 20$ | $A$ sufficient for $B$ | Every number below 10 is below 20 |
-| $x \lt 20$ | $x \lt 10$ | $A$ necessary for $B$ | Not every number below 20 is below 10 |
-| $n$ is prime | $n$ is a positive integer | $A$ sufficient for $B$ | All primes are positive integers |
-| $n$ is a positive integer | $n$ is prime | neither | 4 is positive but not prime; 2 is prime |
-| $n$ is divisible by 6 | $n$ is divisible by 2 | $A$ sufficient for $B$ | $6 \mid n \Rightarrow 2 \mid n$ |
-| $n$ is divisible by 2 | $n$ is divisible by 6 | $A$ necessary for $B$ | $6 \mid n \Rightarrow 2 \mid n$ |
-| $x = y$ | $x^2 = y^2$ | $A$ sufficient for $B$ | Squaring preserves equality |
-| $x^2 = y^2$ | $x = y$ | neither | $(-1)^2 = 1^2$ but $-1 \neq 1$ |
+| $n$ is even               | $n^2$ is even             | $A$ sufficient for $B$ | If $n = 2k$ then $n^2 = 4k^2 = 2(2k^2)$              |
+| $n^2$ is even             | $n$ is even               | $A$ necessary for $B$  | If $n$ were odd, $n^2$ would be odd (contrapositive) |
+| $x \lt 10$                | $x \lt 20$                | $A$ sufficient for $B$ | Every number below 10 is below 20                    |
+| $x \lt 20$                | $x \lt 10$                | $A$ necessary for $B$  | Not every number below 20 is below 10                |
+| $n$ is prime              | $n$ is a positive integer | $A$ sufficient for $B$ | All primes are positive integers                     |
+| $n$ is a positive integer | $n$ is prime              | neither                | 4 is positive but not prime; 2 is prime              |
+| $n$ is divisible by 6     | $n$ is divisible by 2     | $A$ sufficient for $B$ | $6 \mid n \Rightarrow 2 \mid n$                      |
+| $n$ is divisible by 2     | $n$ is divisible by 6     | $A$ necessary for $B$  | $6 \mid n \Rightarrow 2 \mid n$                      |
+| $x = y$                   | $x^2 = y^2$               | $A$ sufficient for $B$ | Squaring preserves equality                          |
+| $x^2 = y^2$               | $x = y$                   | neither                | $(-1)^2 = 1^2$ but $-1 \neq 1$                       |
 
 ### Connecting to if/only if
 
@@ -431,7 +431,7 @@ The relationship between "if", "only if", and necessary/sufficient is:
 - "$A$ if $B$" means $B$ is sufficient for $A$ (i.e. $B \Rightarrow A$).
 - "$A$ only if $B$" means $B$ is necessary for $A$ (i.e. $A \Rightarrow B$).
 - "$A$ if and only if $B$" means $B$ is necessary and sufficient for $A$ (i.e.
- $A \Leftrightarrow B$).
+  $A \Leftrightarrow B$).
 
 ### A useful rephrasing
 
@@ -469,9 +469,9 @@ Backbone of most direct proofs.
 
 ### Proof by contradiction
 
-**Structure.** To prove a statement $P$Assume $\neg P$ is true and deduce a contradiction
-(something that is always false, such as $0 = 1$ or $q^2 = 2$ where $q$ is rational). Since the
-Assumption $\neg P$ led to an impossibility, $\neg P$ must be false, so $P$ is true.
+**Structure.** To prove a statement $P$Assume $\neg P$ is true and deduce a contradiction (something
+that is always false, such as $0 = 1$ or $q^2 = 2$ where $q$ is rational). Since the Assumption
+$\neg P$ led to an impossibility, $\neg P$ must be false, so $P$ is true.
 
 $$\neg P \Rightarrow \cdots \Rightarrow \mathrm{contradiction} \quad \therefore P$$
 
@@ -539,12 +539,12 @@ Since the cases cover all possibilities, $Q$ holds unconditionally.
 **Proof.** We consider four cases based on the signs of $x$ and $y$. In each case $a$ and $b$ denote
 Non-negative reals.
 
-| Case | $x$ | $y$ | $xy$ | $    | xy               | $ | $   | x   | \,  | y   | $ |
+| Case | $x$  | $y$  | $xy$  | $    | xy               | $   | $   | x   | \,  | y   | $   |
 | ---- | ---- | ---- | ----- | ---- | ---------------- | --- | --- | --- | --- | --- | --- |
-| 1 | $a$ | $b$ | $ab$ | $ab$ | $a \cdot b = ab$ | | | | | | |
-| 2 | $a$ | $-b$ | $-ab$ | $ab$ | $a \cdot b = ab$ | | | | | | |
-| 3 | $-a$ | $b$ | $-ab$ | $ab$ | $a \cdot b = ab$ | | | | | | |
-| 4 | $-a$ | $-b$ | $ab$ | $ab$ | $a \cdot b = ab$ | | | | | | |
+| 1    | $a$  | $b$  | $ab$  | $ab$ | $a \cdot b = ab$ |     |     |     |     |     |     |
+| 2    | $a$  | $-b$ | $-ab$ | $ab$ | $a \cdot b = ab$ |     |     |     |     |     |     |
+| 3    | $-a$ | $b$  | $-ab$ | $ab$ | $a \cdot b = ab$ |     |     |     |     |     |     |
+| 4    | $-a$ | $-b$ | $ab$  | $ab$ | $a \cdot b = ab$ |     |     |     |     |     |     |
 
 In all four cases $|xy| = |x|\,|y|$. $\square$
 
@@ -579,26 +579,27 @@ Then $b = c$.
 
 **Error 2:** "If $\sin A = \sin B$Then $A = B$."
 
-Counterexample: $\sin 30^{\circ} = \sin 150^{\circ} = 0.5$But $30^{\circ} \neq 150^\circ$. The correct statement is: if
-$\sin A = \sin B$ and $A, B \in [-90^{\circ}, 90^{\circ}]$Then $A = B$. , $\sin A = \sin B$ implies
-$A = B + 360^{\circ}k$ or $A = 180^{\circ} - B + 360^{\circ}k$ for some integer $k$.
+Counterexample: $\sin 30^{\circ} = \sin 150^{\circ} = 0.5$But $30^{\circ} \neq 150^\circ$. The
+correct statement is: if $\sin A = \sin B$ and $A, B \in [-90^{\circ}, 90^{\circ}]$Then $A = B$. ,
+$\sin A = \sin B$ implies $A = B + 360^{\circ}k$ or $A = 180^{\circ} - B + 360^{\circ}k$ for some
+integer $k$.
 
 **Other common errors:**
 
 - **Affirming the consequent:** From $P \Rightarrow Q$ and $Q$Deducing $P$. This is the fallacy of
- treating the converse as equivalent to the original. Example: "All primes greater than 2 are odd.
- 9 is odd. Therefore 9 is prime." -- Invalid.
+  treating the converse as equivalent to the original. Example: "All primes greater than 2 are odd.
+  9 is odd. Therefore 9 is prime." -- Invalid.
 
-- **Denying the antecedent:** From $P \Rightarrow Q$ and $\neg P$Deducing $\neg Q$. Example: "If
- it is a square, then it is a rectangle. This shape is not a square. Therefore it is not a
- rectangle." -- Invalid (it could be a non-square rectangle).
+- **Denying the antecedent:** From $P \Rightarrow Q$ and $\neg P$Deducing $\neg Q$. Example: "If it
+  is a square, then it is a rectangle. This shape is not a square. Therefore it is not a rectangle."
+  -- Invalid (it could be a non-square rectangle).
 
 - **Dividing by a variable without checking it is non-zero.** This is the root cause of Error 1
- above.
+  above.
 
 - **Assuming what you are trying to prove** (circular reasoning / begging the question). Every step
- in a proof must follow from definitions, axioms, or previously established results -- not from the
- statement being proved.
+  in a proof must follow from definitions, axioms, or previously established results -- not from the
+  statement being proved.
 
 # Common Pitfalls
 
@@ -613,9 +614,8 @@ Ask "Must $A$ hold whenever $B$ holds?" If yes, $A$ is necessary.
 
 ### Pitfall 2: Negating an implication incorrectly
 
-The negation of "$P \Rightarrow Q$" is **not** "$P \Rightarrow \neg Q$". It is "$P$ and $\neg Q$".
-: to show that "if $P$ then $Q$" is false, you must exhibit a case where $P$ is true but
-$Q$ is false.
+The negation of "$P \Rightarrow Q$" is **not** "$P \Rightarrow \neg Q$". It is "$P$ and $\neg Q$". :
+to show that "if $P$ then $Q$" is false, you must exhibit a case where $P$ is true but $Q$ is false.
 
 ### Pitfall 3: Forgetting that "or" is inclusive
 
@@ -625,9 +625,9 @@ Coffee").
 
 ### Pitfall 4: Treating the converse as equivalent
 
-A statement and its converse have different truth values (see the truth table section).
-Proving $P \Rightarrow Q$ does **not** prove $Q \Rightarrow P$. If you need both directions, you
-Must prove them separately.
+A statement and its converse have different truth values (see the truth table section). Proving
+$P \Rightarrow Q$ does **not** prove $Q \Rightarrow P$. If you need both directions, you Must prove
+them separately.
 
 ### Pitfall 5: Misapplying proof by contradiction
 
@@ -831,8 +831,8 @@ By 15 but does not end in 5.
 
 ### Problem 10
 
-Let $P$ and $Q$ be statements. In terms of $P$ and $Q$Express: "It is not the case that both $P$
-And $Q$ are true." Show that this is logically equivalent to "At least one of $P$$Q$ is false."
+Let $P$ and $Q$ be statements. In terms of $P$ and $Q$Express: "It is not the case that both $P$ And
+$Q$ are true." Show that this is logically equivalent to "At least one of $P$$Q$ is false."
 
 <details>
 <summary>Solution</summary>
@@ -848,10 +848,10 @@ Therefore the two statements are logically equivalent. This can also be verified
 
 | $P$ | $Q$ | $P \land Q$ | $\neg(P \land Q)$ | $\neg P$ | $\neg Q$ | $\neg P \lor \neg Q$ |
 | --- | --- | ----------- | ----------------- | -------- | -------- | -------------------- |
-| T | T | T | F | F | F | F |
-| T | F | F | T | F | T | T |
-| F | T | F | T | T | F | T |
-| F | F | F | T | T | T | T |
+| T   | T   | T           | F                 | F        | F        | F                    |
+| T   | F   | F           | T                 | F        | T        | T                    |
+| F   | T   | F           | T                 | T        | F        | T                    |
+| F   | F   | F           | T                 | T        | T        | T                    |
 
 The fourth and seventh columns are identical, confirming equivalence.
 

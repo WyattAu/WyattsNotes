@@ -1,6 +1,8 @@
 ---
 title: Basic Economic Concepts
-description: "DSE Economics notes on basic concepts covering scarcity, opportunity cost, production possibility frontier, specialization, division of labour, and economic"
+description:
+  'DSE Economics notes on basic concepts covering scarcity, opportunity cost, production possibility
+  frontier, specialization, division of labour, and economic'
 date: 2026-04-08T00:00:00.000Z
 tags: [DSE, Economics]
 categories: [DSE, Economics]
@@ -19,12 +21,12 @@ A price greater than zero.
 
 ### Resources (Factors of Production)
 
-| Factor | Description | Reward |
+| Factor           | Description                                                                    | Reward   |
 | ---------------- | ------------------------------------------------------------------------------ | -------- |
-| Land | All natural resources (e.g., soil, minerals, water, forests) | Rent |
-| Labour | Physical and mental effort contributed by people | Wages |
-| Capital | Man-made goods used to produce other goods (e.g., machinery, tools, factories) | Interest |
-| Entrepreneurship | The ability to organise the other factors of production and take risks | Profit |
+| Land             | All natural resources (e.g., soil, minerals, water, forests)                   | Rent     |
+| Labour           | Physical and mental effort contributed by people                               | Wages    |
+| Capital          | Man-made goods used to produce other goods (e.g., machinery, tools, factories) | Interest |
+| Entrepreneurship | The ability to organise the other factors of production and take risks         | Profit   |
 
 ---
 
@@ -65,7 +67,7 @@ Society to answer three fundamental questions:
 
 1. **What to produce?** Which goods and services should be produced, and in what quantities?
 2. **How to produce?** How should resources be allocated to produce these goods? What production
- methods should be used?
+   methods should be used?
 3. **For whom to produce?** How should the output be distributed among the population?
 
 Different economic systems answer these questions in different ways.
@@ -74,12 +76,12 @@ Different economic systems answer these questions in different ways.
 
 ## Free Goods vs Economic Goods
 
-| Feature | Free Goods | Economic Goods |
+| Feature          | Free Goods                                 | Economic Goods                      |
 | ---------------- | ------------------------------------------ | ----------------------------------- |
-| Scarcity | Not scarce (abundant) | Scarce (limited relative to demand) |
-| Price | Zero (free) | Greater than zero |
-| Opportunity cost | Zero (no alternative forgone) | Positive (alternative forgone) |
-| Examples | Air (in most places), sunlight, rain water | Food, clothing, cars, houses |
+| Scarcity         | Not scarce (abundant)                      | Scarce (limited relative to demand) |
+| Price            | Zero (free)                                | Greater than zero                   |
+| Opportunity cost | Zero (no alternative forgone)              | Positive (alternative forgone)      |
+| Examples         | Air (in most places), sunlight, rain water | Food, clothing, cars, houses        |
 
 A good can be free in one context and economic in another. For example, clean air is a free good in
 A rural area but may become an economic good in a polluted city (people pay for air purifiers).
@@ -103,21 +105,21 @@ Resources and technology, when all resources are fully and efficiently employed.
 
 ### Shape of the PPC
 
-The PPC is **concave (bowed outward from the origin)**. This reflects the **law of
-Increasing opportunity cost**: as more of one good is produced, increasingly larger amounts of the
-Other good must be sacrificed. This occurs because resources are not equally efficient in producing
-Both goods (resources are specialised).
+The PPC is **concave (bowed outward from the origin)**. This reflects the **law of Increasing
+opportunity cost**: as more of one good is produced, increasingly larger amounts of the Other good
+must be sacrificed. This occurs because resources are not equally efficient in producing Both goods
+(resources are specialised).
 
 If resources are equally efficient in producing both goods, the PPC is a **straight line** (constant
 Opportunity cost).
 
 ### Key Points on the PPC
 
-| Point on/relative to PPC | Interpretation |
+| Point on/relative to PPC | Interpretation                                           |
 | ------------------------ | -------------------------------------------------------- |
-| On the curve | Resources are fully and efficiently employed |
-| Inside the curve | Resources are underutilised (unemployment, inefficiency) |
-| Outside the curve | Unattainable with current resources and technology |
+| On the curve             | Resources are fully and efficiently employed             |
+| Inside the curve         | Resources are underutilised (unemployment, inefficiency) |
+| Outside the curve        | Unattainable with current resources and technology       |
 
 ### Shifts of the PPC
 
@@ -146,12 +148,12 @@ An economy can produce the following combinations of good X and good Y:
 
 | Combination | Good X (units) | Good Y (units) |
 | ----------- | -------------- | -------------- |
-| A | 0 | 100 |
-| B | 1 | 95 |
-| C | 2 | 85 |
-| D | 3 | 70 |
-| E | 4 | 50 |
-| F | 5 | 0 |
+| A           | 0              | 100            |
+| B           | 1              | 95             |
+| C           | 2              | 85             |
+| D           | 3              | 70             |
+| E           | 4              | 50             |
+| F           | 5              | 0              |
 
 The opportunity cost of producing the 3rd unit of X is:
 
@@ -170,13 +172,13 @@ The opportunity cost is INCREASING:
 <details>
 <summary>Worked Example: PPC with Constant Opportunity Cost</summary>
 
-An economy can produce either 300 computers or 600 mobile phones, using all resources. Assume constant
-Opportunity cost.
+An economy can produce either 300 computers or 600 mobile phones, using all resources. Assume
+constant Opportunity cost.
 
 The PPC is a straight line from (0, 600) to (300, 0).
 
-Opportunity cost of 1 computer = `600/300 = 2` mobile phones.
-Opportunity cost of 1 mobile phone = `300/600 = 0.5` computers.
+Opportunity cost of 1 computer = `600/300 = 2` mobile phones. Opportunity cost of 1 mobile phone =
+`300/600 = 0.5` computers.
 
 Equation: `M = 600 - 2C` (where M = mobile phones, C = computers).
 
@@ -271,7 +273,7 @@ This question asks about the methods of production -- labour-intensive vs capita
 Techniques.
 
 - **Labour-intensive:** Using more workers and fewer machines (common in developing countries where
- labour is cheap)
+  labour is cheap)
 - **Capital-intensive:** Using more machines and fewer workers (common in developed countries)
 
 The choice depends on:
@@ -285,9 +287,9 @@ The choice depends on:
 This question asks how the output of the economy is distributed among its population.
 
 - In a market economy, distribution depends on income (which depends on ownership of factors of
- production)
+  production)
 - In a command economy, the government determines distribution based on its priorities (e.g., equal
- distribution, based on need)
+  distribution, based on need)
 
 ---
 
@@ -317,13 +319,13 @@ Examples:
 
 ### Key Differences
 
-| Feature | Positive Economics | Normative Economics |
+| Feature    | Positive Economics            | Normative Economics            |
 | ---------- | ----------------------------- | ------------------------------ |
-| Nature | Objective | Subjective |
-| Testable? | Yes (can be verified by data) | No (involves value judgements) |
-| Based on | Facts, data, logic | Opinions, values, ethics |
-| Uses words | "Is", "will be" | "Should", "ought to" |
-| Example | "Inflation is 5%." | "Inflation should be reduced." |
+| Nature     | Objective                     | Subjective                     |
+| Testable?  | Yes (can be verified by data) | No (involves value judgements) |
+| Based on   | Facts, data, logic            | Opinions, values, ethics       |
+| Uses words | "Is", "will be"               | "Should", "ought to"           |
+| Example    | "Inflation is 5%."            | "Inflation should be reduced." |
 
 ---
 
@@ -401,11 +403,11 @@ Achieve social objectives.
 - Both private and public ownership of resources
 - Market forces determine most prices and production decisions
 - Government intervenes through:
- - Taxation and subsidies
- - Provision of public goods (education, healthcare, infrastructure)
- - Regulation of monopolies and externalities
- - Welfare programmes (social security, minimum wage)
- - Price controls (rent control, minimum wage)
+- Taxation and subsidies
+- Provision of public goods (education, healthcare, infrastructure)
+- Regulation of monopolies and externalities
+- Welfare programmes (social security, minimum wage)
+- Price controls (rent control, minimum wage)
 
 **Hong Kong as a mixed economy:**
 
@@ -457,11 +459,11 @@ Supply more and consumers to buy less.
 
 ### Economic vs Accounting Profit
 
-| | Accounting Profit | Economic Profit |
+|                            | Accounting Profit                                    | Economic Profit                                   |
 | -------------------------- | ---------------------------------------------------- | ------------------------------------------------- |
-| Formula | Total Revenue - Explicit Costs | Total Revenue - (Explicit Costs + Implicit Costs) |
-| Includes opportunity cost? | No | Yes |
-| Relation | Economic profit = Accounting profit - Implicit costs | |
+| Formula                    | Total Revenue - Explicit Costs                       | Total Revenue - (Explicit Costs + Implicit Costs) |
+| Includes opportunity cost? | No                                                   | Yes                                               |
+| Relation                   | Economic profit = Accounting profit - Implicit costs |                                                   |
 
 Implicit costs include the opportunity cost of the owner's time and capital. Economic profit is
 Always less than or equal to accounting profit.
@@ -478,35 +480,35 @@ In income, tastes, prices of other goods, etc.
 ## Common Pitfalls
 
 1. **Defining opportunity cost as "everything you give up":** Opportunity cost is the value of the
- NEXT BEST alternative only, not the sum of all alternatives. If you choose A over B and C, and B
- is preferred to C, the opportunity cost of choosing A is B only.
+   NEXT BEST alternative only, not the sum of all alternatives. If you choose A over B and C, and B
+   is preferred to C, the opportunity cost of choosing A is B only.
 
 2. **Confusing PPC shifts with movements along the PPC:** A movement along the PPC is caused by a
- reallocation of resources between the two goods. A shift of the PPC is caused by a change in the
- quantity or quality of resources or technology.
+   reallocation of resources between the two goods. A shift of the PPC is caused by a change in the
+   quantity or quality of resources or technology.
 
 3. **Stating that a point inside the PPC is efficient:** A point inside the PPC indicates
- inefficiency (resources are not fully employed or are being used inefficiently). Only points ON
- the curve are efficient.
+   inefficiency (resources are not fully employed or are being used inefficiently). Only points ON
+   the curve are efficient.
 
 4. **Confusing positive and normative statements:** Any statement containing "should," "ought to,"
- "fair," "unjust," or "too high/too low" is normative. Positive statements can be tested with
- data.
+   "fair," "unjust," or "too high/too low" is normative. Positive statements can be tested with
+   data.
 
 5. **Saying free goods have no value:** Free goods have no economic value (no opportunity cost and
- no price), but they may have value in use. The key distinction is that free goods are not scarce.
+   no price), but they may have value in use. The key distinction is that free goods are not scarce.
 
 6. **Equating mixed economy with equal parts market and command:** A mixed economy is not
- necessarily a 50-50 combination. It refers to any economy that uses both market forces and
- government intervention. Hong Kong is a mixed economy despite being very market-oriented.
+   necessarily a 50-50 combination. It refers to any economy that uses both market forces and
+   government intervention. Hong Kong is a mixed economy despite being very market-oriented.
 
 7. **Ignoring the ceteris paribus assumption:** When analysing economic relationships, always
- remember the ceteris paribus assumption. A change in demand, for instance, is caused by a change
- in non-price factors, holding the good's own price constant.
+   remember the ceteris paribus assumption. A change in demand, for instance, is caused by a change
+   in non-price factors, holding the good's own price constant.
 
 8. **Confusing productive efficiency with allocative efficiency:** Productive efficiency means
- producing at the lowest cost (on the PPC). Allocative efficiency means producing the right mix of
- goods (where P = MC). An economy can be productively efficient but not allocatively efficient.
+   producing at the lowest cost (on the PPC). Allocative efficiency means producing the right mix of
+   goods (where P = MC). An economy can be productively efficient but not allocatively efficient.
 
 ---
 
@@ -542,10 +544,10 @@ Rational decision-maker maximises net benefit, so she should choose the concert 
 An economy produces only two goods: food and clothing. The table below shows the maximum output of
 Each good if all resources are devoted to it:
 
-| Good | Maximum Output |
+| Good     | Maximum Output |
 | -------- | -------------- |
-| Food | 200 units |
-| Clothing | 400 units |
+| Food     | 200 units      |
+| Clothing | 400 units      |
 
 Assume constant opportunity cost (straight-line PPC).
 
@@ -609,27 +611,27 @@ Questions.
 **What to produce?**
 
 - **Market economy:** Consumer demand determines what is produced. Producers respond to price
- signals. If demand for smartphones rises, their price increases, attracting more producers to the
- smartphone industry.
+  signals. If demand for smartphones rises, their price increases, attracting more producers to the
+  smartphone industry.
 - **Command economy:** A central planning agency decides what goods and services to produce and in
- what quantities, based on government priorities rather than consumer preferences.
+  what quantities, based on government priorities rather than consumer preferences.
 
 **How to produce?**
 
 - **Market economy:** Producers choose the most cost-effective method of production. If labour is
- cheap, they use labour-intensive methods; if capital is cheap, they use capital-intensive methods.
- The goal is to minimise costs and maximise profit.
+  cheap, they use labour-intensive methods; if capital is cheap, they use capital-intensive methods.
+  The goal is to minimise costs and maximise profit.
 - **Command economy:** The government dictates the production methods. This may not be
- cost-effective if planners lack information about relative factor costs.
+  cost-effective if planners lack information about relative factor costs.
 
 **For whom to produce?**
 
 - **Market economy:** Goods are distributed to those who are willing and able to pay. Income
- distribution depends on the ownership of factors of production. Those with scarce skills or large
- capital holdings receive higher incomes and can buy more.
+  distribution depends on the ownership of factors of production. Those with scarce skills or large
+  capital holdings receive higher incomes and can buy more.
 - **Command economy:** The government decides the distribution of output, often aiming for equal
- distribution or prioritising certain groups (e.g., party members, the military, workers in key
- industries).
+  distribution or prioritising certain groups (e.g., party members, the military, workers in key
+  industries).
 
 </details>
 
@@ -640,12 +642,12 @@ An economy can produce capital goods and consumer goods. The following combinati
 
 | Combination | Capital Goods | Consumer Goods |
 | ----------- | ------------- | -------------- |
-| A | 0 | 500 |
-| B | 50 | 480 |
-| C | 100 | 440 |
-| D | 150 | 370 |
-| E | 200 | 260 |
-| F | 250 | 0 |
+| A           | 0             | 500            |
+| B           | 50            | 480            |
+| C           | 100           | 440            |
+| D           | 150           | 370            |
+| E           | 200           | 260            |
+| F           | 250           | 0              |
 
 (a) Calculate the opportunity cost of producing each additional 50 units of capital goods. (b) Why
 Is the opportunity cost increasing? (c) If the economy is producing 100 capital goods and 300
@@ -656,11 +658,11 @@ Goods now might affect the PPC in the future.
 
 | Movement | Capital Goods Increase | Consumer Goods Decrease | Opportunity Cost per 50 units of Capital |
 | -------- | ---------------------- | ----------------------- | ---------------------------------------- |
-| A to B | 50 | 20 | 20 units of consumer goods |
-| B to C | 50 | 40 | 40 units of consumer goods |
-| C to D | 50 | 70 | 70 units of consumer goods |
-| D to E | 50 | 110 | 110 units of consumer goods |
-| E to F | 50 | 260 | 260 units of consumer goods |
+| A to B   | 50                     | 20                      | 20 units of consumer goods               |
+| B to C   | 50                     | 40                      | 40 units of consumer goods               |
+| C to D   | 50                     | 70                      | 70 units of consumer goods               |
+| D to E   | 50                     | 110                     | 110 units of consumer goods              |
+| E to F   | 50                     | 260                     | 260 units of consumer goods              |
 
 (b) The opportunity cost is increasing because resources are not equally efficient at producing both
 Goods. Resources specialised in producing consumer goods (e.g., retail workers, consumer goods
@@ -845,32 +847,32 @@ Situations, it can also worsen outcomes in others.
 **When government intervention IMPROVES outcomes:**
 
 - **Public goods:** The market under-provides public goods (e.g., defence, street lighting,
- lighthouses) because of the free-rider problem. Government provision ensures these goods are
- supplied.
+  lighthouses) because of the free-rider problem. Government provision ensures these goods are
+  supplied.
 - **Externalities:** The market over-produces goods with negative externalities (pollution) and
- under-produces goods with positive externalities (education, vaccination). Government can tax or
- subsidise to correct these market failures.
+  under-produces goods with positive externalities (education, vaccination). Government can tax or
+  subsidise to correct these market failures.
 - **Monopoly power:** Unregulated monopolies can charge high prices and restrict output. Government
- regulation or antitrust laws can protect consumers.
+  regulation or antitrust laws can protect consumers.
 - **Information asymmetry:** When buyers or sellers lack information (e.g., food safety, financial
- products), government regulation (labelling requirements, licensing) can protect consumers.
+  products), government regulation (labelling requirements, licensing) can protect consumers.
 - **Income redistribution:** The market may result in unacceptable levels of inequality. Government
- can use progressive taxation and welfare programmes to redistribute income.
+  can use progressive taxation and welfare programmes to redistribute income.
 
 **When government intervention WORSENS outcomes:**
 
 - **Government failure:** Government decisions may be influenced by political considerations rather
- than economic efficiency (e.g., subsidies to politically connected industries).
+  than economic efficiency (e.g., subsidies to politically connected industries).
 - **Bureaucratic inefficiency:** Government agencies may be slow, costly, and unresponsive compared
- to the private sector.
+  to the private sector.
 - **Information problems:** The government lacks the price signals and dispersed knowledge that
- markets use to allocate resources efficiently (the economic calculation problem).
+  markets use to allocate resources efficiently (the economic calculation problem).
 - **Unintended consequences:** Price controls (e.g., rent control) may create shortages; minimum
- wages may cause unemployment; tariffs may trigger trade wars.
+  wages may cause unemployment; tariffs may trigger trade wars.
 - **Regulatory capture:** Regulatory agencies may be captured by the industries they are supposed to
- regulate, serving industry interests rather than the public interest.
+  regulate, serving industry interests rather than the public interest.
 - **Crowding out:** Government borrowing to finance spending may raise interest rates, reducing
- private investment.
+  private investment.
 
 **Conclusion:** Government intervention improves outcomes when it corrects market failures, but it
 Can create additional problems (government failures). The optimal level of intervention depends on
@@ -895,13 +897,13 @@ Satisfaction (marginal utility) from each additional unit decreases.
 
 | Units consumed | Total Utility | Marginal Utility |
 | -------------- | ------------- | ---------------- |
-| 1 | 10 | 10 |
-| 2 | 18 | 8 |
-| 3 | 24 | 6 |
-| 4 | 28 | 4 |
-| 5 | 30 | 2 |
-| 6 | 30 | 0 |
-| 7 | 28 | -2 |
+| 1              | 10            | 10               |
+| 2              | 18            | 8                |
+| 3              | 24            | 6                |
+| 4              | 28            | 4                |
+| 5              | 30            | 2                |
+| 6              | 30            | 0                |
+| 7              | 28            | -2               |
 
 The consumer maximises utility where the marginal utility per dollar spent is equal across all
 Goods:
@@ -939,35 +941,36 @@ Loss of economic welfare.
 **Types of market failure:**
 
 1. **Externalities:** Costs or benefits that affect third parties not involved in the transaction
- - Negative externalities (e.g., pollution): Social cost > Private cost; over-production
- - Positive externalities (e.g., education, vaccination): Social benefit > Private benefit;
- under-production
+
+- Negative externalities (e.g., pollution): Social cost > Private cost; over-production
+- Positive externalities (e.g., education, vaccination): Social benefit > Private benefit;
+  under-production
 
 2. **Public goods:** Goods that are non-excludable (cannot prevent non-payers from consuming) and
- non-rivalrous (one person's consumption does not reduce availability for others). The free rider
- problem leads to under-provision.
+   non-rivalrous (one person's consumption does not reduce availability for others). The free rider
+   problem leads to under-provision.
 
 3. **Information asymmetry:** When one party has more information than the other (e.g., sellers know
- more about product quality than buyers). Leads to adverse selection and moral hazard.
+   more about product quality than buyers). Leads to adverse selection and moral hazard.
 
 4. **Monopoly power:** A single seller can restrict output and raise prices above the competitive
- level, causing deadweight loss.
+   level, causing deadweight loss.
 
-5. **Factor immobility:** Resources (especially labour) may not move between industries or
- regions, causing structural unemployment.
+5. **Factor immobility:** Resources (especially labour) may not move between industries or regions,
+   causing structural unemployment.
 
 6. **Inequality:** The market may result in an unacceptable distribution of income and wealth.
 
 ### Government Intervention to Correct Market Failure
 
-| Market Failure | Government Intervention |
+| Market Failure         | Government Intervention                                     |
 | ---------------------- | ----------------------------------------------------------- |
-| Negative externalities | Taxation (Pigouvian tax), regulation, tradable permits |
-| Positive externalities | Subsidies, direct provision (education, healthcare) |
-| Public goods | Direct government provision, funded by taxation |
-| Information asymmetry | Regulation (labelling, licensing), consumer protection laws |
-| Monopoly power | Antitrust laws, price regulation, breaking up monopolies |
-| Inequality | Progressive taxation, welfare programmes, minimum wage |
+| Negative externalities | Taxation (Pigouvian tax), regulation, tradable permits      |
+| Positive externalities | Subsidies, direct provision (education, healthcare)         |
+| Public goods           | Direct government provision, funded by taxation             |
+| Information asymmetry  | Regulation (labelling, licensing), consumer protection laws |
+| Monopoly power         | Antitrust laws, price regulation, breaking up monopolies    |
+| Inequality             | Progressive taxation, welfare programmes, minimum wage      |
 
 ---
 
@@ -976,22 +979,21 @@ Loss of economic welfare.
 <details>
 <summary>Problem 1: Opportunity Cost Calculation</summary>
 
-A farmer has 10 hectares of land. She can grow rice (yielding 5 tonnes per hectare, selling at USD 400
-Per tonne) or maize (yielding 8 tonnes per hectare, selling at USD 250 per tonne).
+A farmer has 10 hectares of land. She can grow rice (yielding 5 tonnes per hectare, selling at USD
+400 Per tonne) or maize (yielding 8 tonnes per hectare, selling at USD 250 per tonne).
 
-(a) What is the opportunity cost of growing rice on 1 hectare? (b) Which crop should she specialise in?
-Explain.
+(a) What is the opportunity cost of growing rice on 1 hectare? (b) Which crop should she specialise
+in? Explain.
 
 <details>
 <summary>Solution</summary>
 
-(a) Revenue from 1 hectare of rice = `5 \times 400 = USD 2,000`.
-Revenue from 1 hectare of maize = `8 \times 250 = USD 2,000`.
-Opportunity cost of growing rice = USD 2,000 (maize revenue forgone).
+(a) Revenue from 1 hectare of rice = `5 \times 400 = USD 2,000`. Revenue from 1 hectare of maize =
+`8 \times 250 = USD 2,000`. Opportunity cost of growing rice = USD 2,000 (maize revenue forgone).
 
 (b) The opportunity costs are equal (both give USD 2,000 per hectare). She has **no comparative
-Advantage** in either crop. Specialisation would not increase total revenue. She should split her land
-Based on market conditions (prices, demand).
+Advantage** in either crop. Specialisation would not increase total revenue. She should split her
+land Based on market conditions (prices, demand).
 
 </details>
 
@@ -1005,35 +1007,36 @@ If you get this wrong, revise: [Choice and Opportunity Cost](#choice-and-opportu
 An economy can produce capital goods (K) and consumer goods (C). The following combinations are
 Possible:
 
-| Combination | K | C |
-| ----------- | ---- | ---- |
-| A | 0 | 500 |
-| B | 100 | 480 |
-| C | 200 | 440 |
-| D | 300 | 370 |
-| E | 400 | 250 |
-| F | 500 | 0 |
+| Combination | K   | C   |
+| ----------- | --- | --- |
+| A           | 0   | 500 |
+| B           | 100 | 480 |
+| C           | 200 | 440 |
+| D           | 300 | 370 |
+| E           | 400 | 250 |
+| F           | 500 | 0   |
 
 (a) Calculate the opportunity cost of each 100-unit increase in K. (b) Is the PPC concave or linear?
-Explain. (c) If the economy is at point D and a new technology doubles the productivity of the capital
-Goods industry, what happens to the PPC?
+Explain. (c) If the economy is at point D and a new technology doubles the productivity of the
+capital Goods industry, what happens to the PPC?
 
 <details>
 <summary>Solution</summary>
 
-(a) A to B: 20 C. B to C: 40 C. C to D: 70 C. D to E: 120 C. E to F: 250 C.
-The opportunity cost is **increasing**.
+(a) A to B: 20 C. B to C: 40 C. C to D: 70 C. D to E: 120 C. E to F: 250 C. The opportunity cost is
+**increasing**.
 
-(b) The PPC is **concave** (bowed outward). The increasing opportunity cost confirms this. Resources are
-Not equally efficient at producing both goods.
+(b) The PPC is **concave** (bowed outward). The increasing opportunity cost confirms this. Resources
+are Not equally efficient at producing both goods.
 
-(c) The maximum K doubles from 500 to 1000. The PPC pivots outward on the C axis (the C intercept stays
-At 500). The economy can now produce more K for any given level of C, or more of both goods. This
-Represents economic growth driven by technological progress in the capital goods sector.
+(c) The maximum K doubles from 500 to 1000. The PPC pivots outward on the C axis (the C intercept
+stays At 500). The economy can now produce more K for any given level of C, or more of both goods.
+This Represents economic growth driven by technological progress in the capital goods sector.
 
 </details>
 
-If you get this wrong, revise: [Production Possibility Curve (PPC)](#production-possibility-curve-ppc)
+If you get this wrong, revise:
+[Production Possibility Curve (PPC)](#production-possibility-curve-ppc)
 
 </details>
 
@@ -1042,22 +1045,19 @@ If you get this wrong, revise: [Production Possibility Curve (PPC)](#production-
 
 Classify each statement as positive or normative:
 
-(a) "Raising the minimum wage by 10% will reduce employment by 2%."
-(b) "The government should provide free university education for all citizens."
-(c) "Hong Kong's GDP grew by 3.2% last year."
-(d) "Income inequality in Hong Kong is too high and must be reduced."
-(e) "A depreciation of the HKD will increase the price of imports."
-(f) "The elderly should receive larger subsidies for healthcare."
+(a) "Raising the minimum wage by 10% will reduce employment by 2%." (b) "The government should
+provide free university education for all citizens." (c) "Hong Kong's GDP grew by 3.2% last year."
+(d) "Income inequality in Hong Kong is too high and must be reduced." (e) "A depreciation of the HKD
+will increase the price of imports." (f) "The elderly should receive larger subsidies for
+healthcare."
 
 <details>
 <summary>Solution</summary>
 
-(a) **Positive** -- testable hypothesis about cause and effect.
-(b) **Normative** -- uses "should" and reflects a value judgement.
-(c) **Positive** -- factual statement verifiable with data.
-(d) **Normative** -- "too high" is a value judgement.
-(e) **Positive** -- testable prediction about the effect of a policy change.
-(f) **Normative** -- uses "should" and reflects a value judgement.
+(a) **Positive** -- testable hypothesis about cause and effect. (b) **Normative** -- uses "should"
+and reflects a value judgement. (c) **Positive** -- factual statement verifiable with data. (d)
+**Normative** -- "too high" is a value judgement. (e) **Positive** -- testable prediction about the
+effect of a policy change. (f) **Normative** -- uses "should" and reflects a value judgement.
 
 </details>
 
@@ -1069,8 +1069,8 @@ If you get this wrong, revise: [Positive vs Normative Economics](#positive-vs-no
 <summary>Problem 4: Economic and Accounting Profit</summary>
 
 An engineer quits her job (salary: HKD 500,000/year) to start a software company. She invests HKD
-800,000 of her savings (which earned 4% interest per year). In her first year: revenue = HKD 1,200,000,
-Explicit costs (office rent, software licences, salaries of hired staff) = HKD 700,000.
+800,000 of her savings (which earned 4% interest per year). In her first year: revenue = HKD
+1,200,000, Explicit costs (office rent, software licences, salaries of hired staff) = HKD 700,000.
 
 (a) Calculate accounting profit. (b) Calculate economic profit. (c) Was starting the company a good
 Decision?
@@ -1098,26 +1098,28 @@ If you get this wrong, revise: [Economic vs Accounting Profit](#economic-vs-acco
 <details>
 <summary>Problem 5: Economic Systems Comparison</summary>
 
-For each of the following decisions, explain how it would be made in (i) a market economy, (ii) a command
-Economy, and (iii) a mixed economy:
+For each of the following decisions, explain how it would be made in (i) a market economy, (ii) a
+command Economy, and (iii) a mixed economy:
 
 (a) How many cars to produce (b) How to allocate healthcare resources (c) What wages to pay teachers
 
 <details>
 <summary>Solution</summary>
 
-(a) **Market:** Consumer demand determines output. Firms produce where MR = MC. **Command:** A central
-Planning agency sets production targets based on government priorities. **Mixed:** Market determines
-Most output, but government may regulate (emission standards, safety requirements) or tax (excise duty).
+(a) **Market:** Consumer demand determines output. Firms produce where MR = MC. **Command:** A
+central Planning agency sets production targets based on government priorities. **Mixed:** Market
+determines Most output, but government may regulate (emission standards, safety requirements) or tax
+(excise duty).
 
-(b) **Market:** Private hospitals provide healthcare based on ability to pay. **Command:** Government
-Allocates all healthcare resources, determining who gets treatment. **Mixed:** Government provides
-Basic healthcare (public hospitals), while private healthcare operates alongside for those willing to
-Pay.
+(b) **Market:** Private hospitals provide healthcare based on ability to pay. **Command:**
+Government Allocates all healthcare resources, determining who gets treatment. **Mixed:** Government
+provides Basic healthcare (public hospitals), while private healthcare operates alongside for those
+willing to Pay.
 
-(c) **Market:** Wages are determined by supply and demand for teachers' skills. **Command:** Government
-Sets all wages according to a national pay scale. **Mixed:** Public school teachers' wages are set by
-The government (with some negotiation); private school wages are determined by the market.
+(c) **Market:** Wages are determined by supply and demand for teachers' skills. **Command:**
+Government Sets all wages according to a national pay scale. **Mixed:** Public school teachers'
+wages are set by The government (with some negotiation); private school wages are determined by the
+market.
 
 </details>
 
@@ -1128,16 +1130,16 @@ If you get this wrong, revise: [Economic Systems](#economic-systems)
 <details>
 <summary>Problem 6: Marginal Analysis</summary>
 
-A student is deciding how many hours to study for an exam. The table shows the marginal benefit (MB) and
-Marginal cost (MC) of each additional hour:
+A student is deciding how many hours to study for an exam. The table shows the marginal benefit (MB)
+and Marginal cost (MC) of each additional hour:
 
 | Hour | MB (marks) | MC (marks) |
 | ---- | ---------- | ---------- |
-| 1 | 25 | 5 |
-| 2 | 20 | 8 |
-| 3 | 15 | 12 |
-| 4 | 10 | 17 |
-| 5 | 5 | 23 |
+| 1    | 25         | 5          |
+| 2    | 20         | 8          |
+| 3    | 15         | 12         |
+| 4    | 10         | 17         |
+| 5    | 5          | 23         |
 
 (a) How many hours should the student study? (b) What is the total net benefit? (c) If the student
 Studies 5 hours, what is the marginal net benefit of the 5th hour?
@@ -1147,18 +1149,16 @@ Studies 5 hours, what is the marginal net benefit of the 5th hour?
 
 (a) The student should study as long as MB \gt MC.
 
-Hour 1: MB=25 \gt MC=5 -- study.
-Hour 2: MB=20 \gt MC=8 -- study.
-Hour 3: MB=15 \gt MC=12 -- study.
+Hour 1: MB=25 \gt MC=5 -- study. Hour 2: MB=20 \gt MC=8 -- study. Hour 3: MB=15 \gt MC=12 -- study.
 Hour 4: MB=10 \lt MC=17 -- do NOT study.
 
 Optimal hours = 3.
 
-(b) Total MB of 3 hours = `25 + 20 + 15 = 60`. Total MC of 3 hours = `5 + 8 + 12 = 25`.
-Net benefit = `60 - 25 = 35` marks.
+(b) Total MB of 3 hours = `25 + 20 + 15 = 60`. Total MC of 3 hours = `5 + 8 + 12 = 25`. Net benefit
+= `60 - 25 = 35` marks.
 
-(c) The 5th hour: marginal net benefit = `MB - MC = 5 - 23 = -18` marks. The student loses 18
-Marks worth of benefit from studying the 5th hour (diminishing returns make additional study
+(c) The 5th hour: marginal net benefit = `MB - MC = 5 - 23 = -18` marks. The student loses 18 Marks
+worth of benefit from studying the 5th hour (diminishing returns make additional study
 Counterproductive).
 
 </details>
@@ -1172,16 +1172,17 @@ If you get this wrong, revise: [Marginal Analysis](#marginal-analysis)
 
 For each of the following, state whether it is a free good or an economic good, and explain:
 
-(a) Sea water at a beach (b) Bottled water at a convenience store (c) Sunlight in a desert
-(d) Clean air in a polluted city (e) Downloading a free software programme
+(a) Sea water at a beach (b) Bottled water at a convenience store (c) Sunlight in a desert (d) Clean
+air in a polluted city (e) Downloading a free software programme
 
 <details>
 <summary>Solution</summary>
 
-(a) **Free good** (in most contexts) -- abundant, no price, zero opportunity cost. Note: in a desert,
-Bottled seawater would be an economic good.
+(a) **Free good** (in most contexts) -- abundant, no price, zero opportunity cost. Note: in a
+desert, Bottled seawater would be an economic good.
 
-(b) **Economic good** -- scarce (limited supply at the store), positive price, positive opportunity cost.
+(b) **Economic good** -- scarce (limited supply at the store), positive price, positive opportunity
+cost.
 
 (c) **Free good** -- abundant, no price. Even in a desert, sunlight is not scarce (though shade is).
 
@@ -1201,9 +1202,9 @@ If you get this wrong, revise: [Free Goods vs Economic Goods](#free-goods-vs-eco
 <details>
 <summary>Problem 8: Division of Labour</summary>
 
-A furniture factory employs 20 workers. Before division of labour, each worker performs all stages of
-Production and produces 2 chairs per day (total: 40 chairs). After division of labour, each worker
-Specialises in one stage and output rises to 5 chairs per worker per day (total: 100 chairs).
+A furniture factory employs 20 workers. Before division of labour, each worker performs all stages
+of Production and produces 2 chairs per day (total: 40 chairs). After division of labour, each
+worker Specialises in one stage and output rises to 5 chairs per worker per day (total: 100 chairs).
 
 (a) Calculate the percentage increase in labour productivity. (b) What are three advantages of this
 Division of labour for the factory owner? (c) What are two potential disadvantages for the workers?
@@ -1211,16 +1212,18 @@ Division of labour for the factory owner? (c) What are two potential disadvantag
 <details>
 <summary>Solution</summary>
 
-(a) Before: `40/20 = 2` chairs per worker. After: `100/20 = 5` chairs per worker.
-Productivity increase = `(5-2)/2 \times 100\% = 150\%`.
+(a) Before: `40/20 = 2` chairs per worker. After: `100/20 = 5` chairs per worker. Productivity
+increase = `(5-2)/2 \times 100\% = 150\%`.
 
 (b) Advantages for the owner:
+
 - Higher total output (100 vs 40) at the same labour cost
 - Lower average cost per chair (same total wage / more chairs)
 - Faster production (workers become skilled at their specific task)
 - Easier to replace absent workers (simplified tasks)
 
 (c) Disadvantages for workers:
+
 - Monotony and boredom from repetitive tasks
 - Vulnerability to unemployment (easier to replace specialised workers)
 - Less job satisfaction and sense of accomplishment
@@ -1238,29 +1241,44 @@ If you get this wrong, revise: [Division of Labour](#division-of-labour)
 
 ### Problem 9: PPC and Economic Growth
 
-A country's PPC for capital goods ($K$) and consumer goods ($C$) is given by $K = 400 - C - 0.005C^2$Where $0 \le C \le 200$. Currently producing at $C = 100$$K = 250$.
+A country's PPC for capital goods ($K$) and consumer goods ($C$) is given by
+$K = 400 - C - 0.005C^2$Where $0 \le C \le 200$. Currently producing at $C = 100$$K = 250$.
 
-(a) Verify that $(100, 250)$ lies on the PPC.
-(b) Calculate the opportunity cost of producing the 101st unit of consumer goods.
-(c) If the country invests in new technology, shifting the PPC outward to $K = 480 - C - 0.005C^2$By how much does the maximum possible output of each good increase?
-(d) Explain why the PPC is concave and relate this to the concept of increasing opportunity cost using a Hong Kong example.
+(a) Verify that $(100, 250)$ lies on the PPC. (b) Calculate the opportunity cost of producing the
+101st unit of consumer goods. (c) If the country invests in new technology, shifting the PPC outward
+to $K = 480 - C - 0.005C^2$By how much does the maximum possible output of each good increase? (d)
+Explain why the PPC is concave and relate this to the concept of increasing opportunity cost using a
+Hong Kong example.
 
 <details>
 <summary>Solution</summary>
 
 (a) At $C = 100$: $K = 400 - 100 - 0.005(10000) = 400 - 100 - 50 = 250$. Verified.
 
-(b) The marginal rate of transformation (opportunity cost) is $MRT = \left|\frac{dK}{dC}\right| = |{-1 - 0.01C}| = 1 + 0.01C$.
+(b) The marginal rate of transformation (opportunity cost) is
+$MRT = \left|\frac{dK}{dC}\right| = |{-1 - 0.01C}| = 1 + 0.01C$.
 
-At $C = 100$: $MRT = 1 + 1 = 2$. The 101st unit of consumer goods costs 2 units of capital goods in opportunity cost.
+At $C = 100$: $MRT = 1 + 1 = 2$. The 101st unit of consumer goods costs 2 units of capital goods in
+opportunity cost.
 
-(c) New PPC intercept: when $C = 0$$K = 480$. When $K = 0$: $0 = 480 - C - 0.005C^2$. $0.005C^2 + C - 480 = 0$. $C = \frac{-1 + \sqrt{1 + 9.6}}{0.01} = \frac{-1 + \sqrt{10.6}}{0.01} = \frac{-1 + 3.256}{0.01} = 225.6$.
+(c) New PPC intercept: when $C = 0$$K = 480$. When $K = 0$: $0 = 480 - C - 0.005C^2$.
+$0.005C^2 + C - 480 = 0$.
+$C = \frac{-1 + \sqrt{1 + 9.6}}{0.01} = \frac{-1 + \sqrt{10.6}}{0.01} = \frac{-1 + 3.256}{0.01} = 225.6$.
 
-Maximum capital goods: $400 \to 480$ (increase of 80 units, 20%). Maximum consumer goods: $200 \to 225.6$ (increase of 25.6 units, 12.8%).
+Maximum capital goods: $400 \to 480$ (increase of 80 units, 20%). Maximum consumer goods:
+$200 \to 225.6$ (increase of 25.6 units, 12.8%).
 
-(d) The PPC is concave because resources are not perfectly adaptable to producing both goods. As the economy shifts resources from capital goods to consumer goods, it must first use resources best suited to consumer goods production (low opportunity cost). As it continues shifting, it must use resources increasingly less suited to consumer goods (high opportunity cost). This is the **law of increasing opportunity cost**.
+(d) The PPC is concave because resources are not perfectly adaptable to producing both goods. As the
+economy shifts resources from capital goods to consumer goods, it must first use resources best
+suited to consumer goods production (low opportunity cost). As it continues shifting, it must use
+resources increasingly less suited to consumer goods (high opportunity cost). This is the **law of
+increasing opportunity cost**.
 
-**Hong Kong example:** In the 1970s, Hong Kong shifted resources from manufacturing to services. Initially, workers in low-skill assembly could be retrained for service jobs relatively (low opportunity cost). As the shift continued, the remaining manufacturing workers had skills very specific to manufacturing (e.g., textile machine operators) that were harder to transfer to services, requiring more retraining and creating higher opportunity costs.
+**Hong Kong example:** In the 1970s, Hong Kong shifted resources from manufacturing to services.
+Initially, workers in low-skill assembly could be retrained for service jobs relatively (low
+opportunity cost). As the shift continued, the remaining manufacturing workers had skills very
+specific to manufacturing (e.g., textile machine operators) that were harder to transfer to
+services, requiring more retraining and creating higher opportunity costs.
 
 </details>
 
@@ -1268,89 +1286,128 @@ If you get this wrong, revise: [PPC and Opportunity Cost](#ppc-and-opportunity-c
 
 ### Problem 10: Mixed Economy -- Government Intervention in Hong Kong Housing
 
-Hong Kong's housing market has the following characteristics: average flat price $= $HK$6$ million, median household income $= $HK$27,500/month, price-to-income ratio $= 18.2$ (one of the highest in the world). The government provides public rental housing (PRH) to 30% of the population at average rent of $HK$2,000/month.
+Hong Kong's housing market has the following characteristics: average flat price $= $HK$6$ million,
+median household income $= $HK$27,500/month, price-to-income ratio $= 18.2$ (one of the highest in
+the world). The government provides public rental housing (PRH) to 30% of the population at average
+rent of $HK$2,000/month.
 
-(a) Calculate how many months of income are needed to buy an average flat.
-(b) Explain the market failure that justifies government provision of public housing.
-(c) Calculate the implicit subsidy received by a PRH household if the market rent for an equivalent flat is $HK$15,000/month.
-(d) Evaluate whether expanding public housing is the best solution to Hong Kong's affordability crisis.
+(a) Calculate how many months of income are needed to buy an average flat. (b) Explain the market
+failure that justifies government provision of public housing. (c) Calculate the implicit subsidy
+received by a PRH household if the market rent for an equivalent flat is $HK$15,000/month. (d)
+Evaluate whether expanding public housing is the best solution to Hong Kong's affordability crisis.
 
 <details>
 <summary>Solution</summary>
 
-(a) Months of income $= 6\,000\,000 / 27\,500 = 218$ months $= 18.2$ years. This assumes the household saves 100% of income, which is impossible. With a 50% savings rate, it would take 36.4 years.
+(a) Months of income $= 6\,000\,000 / 27\,500 = 218$ months $= 18.2$ years. This assumes the
+household saves 100% of income, which is impossible. With a 50% savings rate, it would take 36.4
+years.
 
 (b) The market failures justifying government intervention in housing:
 
-1. **Positive externalities:** Adequate housing improves health outcomes, educational attainment, and productivity. These benefits accrue to society, not just the homeowner, meaning the private market underprovides housing relative to the social optimum.
+1. **Positive externalities:** Adequate housing improves health outcomes, educational attainment,
+   and productivity. These benefits accrue to society, not just the homeowner, meaning the private
+   market underprovides housing relative to the social optimum.
 
-2. **Equity concern (not strictly a market failure):** Housing is a basic necessity. The market allocates housing based on willingness to pay, which is correlated with income. Low-income households cannot afford adequate housing even though the social benefit of housing them exceeds the private cost. This is a merit good argument.
+2. **Equity concern (not strictly a market failure):** Housing is a basic necessity. The market
+   allocates housing based on willingness to pay, which is correlated with income. Low-income
+   households cannot afford adequate housing even though the social benefit of housing them exceeds
+   the private cost. This is a merit good argument.
 
-3. **Land market imperfections:** Hong Kong's land supply is controlled by the government, and the land market is subject to speculation and oligopolistic practices by major developers. The resulting high land prices distort the housing market, creating a market failure.
+3. **Land market imperfections:** Hong Kong's land supply is controlled by the government, and the
+   land market is subject to speculation and oligopolistic practices by major developers. The
+   resulting high land prices distort the housing market, creating a market failure.
 
-4. **Information asymmetry:** Quality and safety standards in housing are difficult for individual buyers/renters to assess, creating a role for government regulation (building codes, safety inspections).
+4. **Information asymmetry:** Quality and safety standards in housing are difficult for individual
+   buyers/renters to assess, creating a role for government regulation (building codes, safety
+   inspections).
 
 (c) Implicit monthly subsidy $= 15\,000 - 2\,000 = \text{HK}\$13\,000$.
 
 Annual subsidy $= 13\,000 \times 12 = \text{HK}\$156\,000$.
 
-With approximately 2 million PRH residents (30% of 7.5 million population, ~700,000 households): total annual subsidy $= 700\,000 \times 156\,000 = \text{HK}\$109.2$ billion. This is a substantial fiscal commitment.
+With approximately 2 million PRH residents (30% of 7.5 million population, ~700,000 households):
+total annual subsidy $= 700\,000 \times 156\,000 = \text{HK}\$109.2$ billion. This is a substantial
+fiscal commitment.
 
 (d) **Evaluation:**
 
-*Arguments for expanding PRH:*
+_Arguments for expanding PRH:_
+
 - Provides immediate relief for low-income households who cannot afford private housing.
 - The long waiting list (average 5.5 years) indicates significant unmet demand.
 - Reduces income inequality and improves social mobility.
 
-*Arguments against relying solely on PRH:*
+_Arguments against relying solely on PRH:_
+
 - Long construction lag (5--10 years from planning to completion).
 - Concentrates low-income households in specific estates, potentially creating social segregation.
 - Does not address the root cause (high land prices).
 - Large fiscal burden.
 
-*Alternative/complementary approaches:*
+_Alternative/complementary approaches:_
+
 - Increase land supply to reduce the equilibrium price of private housing.
 - Starter homes / subsidised homeownership (Home Ownership Scheme).
 - Rent control (with caveats about quality deterioration).
 - Mortgage interest deduction (though this may inflate prices).
 
-A comprehensive approach combining supply-side reform (land release) with targeted demand-side support (HOS, PRH) is likely more effective than any single policy.
+A comprehensive approach combining supply-side reform (land release) with targeted demand-side
+support (HOS, PRH) is likely more effective than any single policy.
 
 </details>
 
-If you get this wrong, revise: [Economic Systems and Government Intervention](#economic-systems-and-government-intervention)
+If you get this wrong, revise:
+[Economic Systems and Government Intervention](#economic-systems-and-government-intervention)
 
 ### Problem 11: Specialisation and Trade with Unequal Country Sizes
 
-Country A (large) can produce 1000 wheat or 500 cloth. Country B (small) can produce 100 wheat or 400 cloth.
+Country A (large) can produce 1000 wheat or 500 cloth. Country B (small) can produce 100 wheat or
+400 cloth.
 
-(a) Calculate opportunity costs and identify comparative advantages.
-(b) If they specialise and trade at 1 wheat $= 0.8$ cloth, show gains from trade.
-(c) What happens if Country B is so small that its entire production is insufficient to meet Country A's import demand? Does trade still benefit both?
-(d) Relate this to the Hong Kong-mainland China trade relationship.
+(a) Calculate opportunity costs and identify comparative advantages. (b) If they specialise and
+trade at 1 wheat $= 0.8$ cloth, show gains from trade. (c) What happens if Country B is so small
+that its entire production is insufficient to meet Country A's import demand? Does trade still
+benefit both? (d) Relate this to the Hong Kong-mainland China trade relationship.
 
 <details>
 <summary>Solution</summary>
 
 (a) Opportunity cost of 1 wheat:
+
 - Country A: $500/1000 = 0.5$ cloth.
 - Country B: $400/100 = 4$ cloth.
 
-Country A has a **comparative advantage in wheat** (lower opportunity cost: 0.5 vs 4). Country B has a **comparative advantage in cloth** (opportunity cost of 1 cloth: A $= 2$ wheat, B $= 0.25$ wheat).
+Country A has a **comparative advantage in wheat** (lower opportunity cost: 0.5 vs 4). Country B has
+a **comparative advantage in cloth** (opportunity cost of 1 cloth: A $= 2$ wheat, B $= 0.25$ wheat).
 
-(b) Without trade (50/50 split): A produces 500 wheat, 250 cloth. B produces 50 wheat, 200 cloth. World: 550 wheat, 450 cloth.
+(b) Without trade (50/50 split): A produces 500 wheat, 250 cloth. B produces 50 wheat, 200 cloth.
+World: 550 wheat, 450 cloth.
 
-With specialisation: A produces 1000 wheat, 0 cloth. B produces 0 wheat, 400 cloth. World: 1000 wheat, 400 cloth.
+With specialisation: A produces 1000 wheat, 0 cloth. B produces 0 wheat, 400 cloth. World: 1000
+wheat, 400 cloth.
 
-At 1 wheat $= 0.8$ cloth: If A exports 200 wheat to B for 160 cloth:
-A consumes 800 wheat, 160 cloth (gains: +300 wheat, -90 cloth). B consumes 200 wheat, 240 cloth (gains: +150 wheat, +40 cloth). Both gain.
+At 1 wheat $= 0.8$ cloth: If A exports 200 wheat to B for 160 cloth: A consumes 800 wheat, 160 cloth
+(gains: +300 wheat, -90 cloth). B consumes 200 wheat, 240 cloth (gains: +150 wheat, +40 cloth). Both
+gain.
 
-(c) If A wants to import 500 cloth (half its pre-trade consumption), B can only supply 400 cloth (its entire capacity). In this case, trade is limited by B's capacity. B specialises fully in cloth (400 units), A partially specialises (produces some cloth itself).
+(c) If A wants to import 500 cloth (half its pre-trade consumption), B can only supply 400 cloth
+(its entire capacity). In this case, trade is limited by B's capacity. B specialises fully in cloth
+(400 units), A partially specialises (produces some cloth itself).
 
-A produces 600 wheat, 200 cloth (not fully specialised). Trade: A exports 100 wheat for 80 cloth. A consumes 500 wheat, 280 cloth. B consumes 100 wheat, 320 cloth. Both still gain compared to autarky, but the gains are smaller than in part (b) because B's small size limits the extent of specialisation and trade.
+A produces 600 wheat, 200 cloth (not fully specialised). Trade: A exports 100 wheat for 80 cloth. A
+consumes 500 wheat, 280 cloth. B consumes 100 wheat, 320 cloth. Both still gain compared to autarky,
+but the gains are smaller than in part (b) because B's small size limits the extent of
+specialisation and trade.
 
-(d) **Hong Kong-mainland China:** This is analogous to the A-B relationship. China (Country A) is vast, while Hong Kong (Country B) is tiny. Hong Kong cannot supply all of China's import needs (food, raw materials, consumer goods). However, Hong Kong specialises in high-value services (finance, logistics, professional services) where its comparative advantage is strongest. China's demand for these services far exceeds what Hong Kong can supply, so Hong Kong operates at full capacity, and both gain from trade. The key insight is that even a very small economy can benefit enormously from trade with a large one, as long as it specialises according to comparative advantage.
+(d) **Hong Kong-mainland China:** This is analogous to the A-B relationship. China (Country A) is
+vast, while Hong Kong (Country B) is tiny. Hong Kong cannot supply all of China's import needs
+(food, raw materials, consumer goods). However, Hong Kong specialises in high-value services
+(finance, logistics, professional services) where its comparative advantage is strongest. China's
+demand for these services far exceeds what Hong Kong can supply, so Hong Kong operates at full
+capacity, and both gain from trade. The key insight is that even a very small economy can benefit
+enormously from trade with a large one, as long as it specialises according to comparative
+advantage.
 
 </details>
 
@@ -1359,41 +1416,58 @@ If you get this wrong, revise: [Specialisation and Trade](#specialisation-and-tr
 ### Problem 12: Opportunity Cost in Everyday Decision-Making
 
 A university student in Hong Kong has the following options for the summer:
+
 - Option A: Internship at a bank, paying HK$15,000/month for 2 months.
-- Option B: Summer school, costing HK$30,000 in tuition, but the course will increase starting salary by HK$5,000/month for the first 3 years of employment.
+- Option B: Summer school, costing HK$30,000 in tuition, but the course will increase starting
+  salary by HK$5,000/month for the first 3 years of employment.
 - Option C: Travel and leisure, valued by the student at HK$20,000 in utility.
 
-The student's discount rate is 6% per annum. The student graduates in one year and expects to work for 3 years after graduation before pursuing further studies.
+The student's discount rate is 6% per annum. The student graduates in one year and expects to work
+for 3 years after graduation before pursuing further studies.
 
-(a) Calculate the net present value of each option.
-(b) Which option has the highest NPV? What is the opportunity cost of choosing it?
-(c) How would the analysis change if the student expects to work for 10 years after graduation?
-(d) Explain why the concept of opportunity cost is central to rational decision-making.
+(a) Calculate the net present value of each option. (b) Which option has the highest NPV? What is
+the opportunity cost of choosing it? (c) How would the analysis change if the student expects to
+work for 10 years after graduation? (d) Explain why the concept of opportunity cost is central to
+rational decision-making.
 
 <details>
 <summary>Solution</summary>
 
 (a) **Option A (Internship):** NPV $= 15\,000 \times 2 = \text{HK}\$30\,000$.
 
-**Option B (Summer school):** Cost $= 30\,000$. Benefit $= 5\,000/month \times 36$ months $= 180\,000$ (nominal), but this starts one year from now.
+**Option B (Summer school):** Cost $= 30\,000$. Benefit $= 5\,000/month \times 36$ months
+$= 180\,000$ (nominal), but this starts one year from now.
 
-NPV of benefits $= \sum_{t=13}^{48} \frac{5000}{(1.005)^t}$ where the monthly discount rate $= 0.5\%$.
+NPV of benefits $= \sum_{t=13}^{48} \frac{5000}{(1.005)^t}$ where the monthly discount rate
+$= 0.5\%$.
 
-Approximation: annual discount rate $= 6\%$. PV of annuity of 3 years starting in 1 year $= \frac{5000 \times 12}{0.06} \times \frac{1 - 1.06^{-3}}{1.06} = \frac{60\,000}{0.06} \times \frac{1 - 0.8396}{1.06} = 1\,000\,000 \times 0.1515 = 151\,500$.
+Approximation: annual discount rate $= 6\%$. PV of annuity of 3 years starting in 1 year
+$= \frac{5000 \times 12}{0.06} \times \frac{1 - 1.06^{-3}}{1.06} = \frac{60\,000}{0.06} \times \frac{1 - 0.8396}{1.06} = 1\,000\,000 \times 0.1515 = 151\,500$.
 
 NPV of Option B $= 151\,500 - 30\,000 = \text{HK}\$121\,500$.
 
 **Option C (Travel):** NPV $= \text{HK}\$20\,000$.
 
-(b) Option B has the highest NPV (HK$121,500). The opportunity cost of choosing Option B is the next best alternative: Option A with NPV of HK$30,000. (The opportunity cost is the foregone value, not the cost of the chosen option.)
+(b) Option B has the highest NPV (HK$121,500). The opportunity cost of choosing Option B is the next
+best alternative: Option A with NPV of HK$30,000. (The opportunity cost is the foregone value, not
+the cost of the chosen option.)
 
-(c) With 10 years of work: PV of benefits $= \frac{60\,000}{0.06} \times \frac{1 - 1.06^{-10}}{1.06} = 1\,000\,000 \times \frac{1 - 0.5584}{1.06} = 1\,000\,000 \times 0.4183 = 418\,300$.
+(c) With 10 years of work: PV of benefits
+$= \frac{60\,000}{0.06} \times \frac{1 - 1.06^{-10}}{1.06} = 1\,000\,000 \times \frac{1 - 0.5584}{1.06} = 1\,000\,000 \times 0.4183 = 418\,300$.
 
 NPV of Option B $= 418\,300 - 30\,000 = \text{HK}\$388\,300$.
 
-Option B becomes even more attractive with a longer working horizon because the salary increase compounds over more years.
+Option B becomes even more attractive with a longer working horizon because the salary increase
+compounds over more years.
 
-(d) Opportunity cost is central to rational decision-making because it forces the decision-maker to consider the **full cost** of a choice, including the value of the best alternative forgone. Without considering opportunity cost, the student might think Option B "costs" only HK$30,000 (the tuition fee). But the true cost includes the HK$30,000 in foregone internship earnings. Rational decision-making requires comparing the **net benefits** of all alternatives (benefits minus all costs, including opportunity costs) and choosing the one with the highest net benefit. This principle applies to all economic decisions: individual consumption, firm production, government policy, and international trade.
+(d) Opportunity cost is central to rational decision-making because it forces the decision-maker to
+consider the **full cost** of a choice, including the value of the best alternative forgone. Without
+considering opportunity cost, the student might think Option B "costs" only HK$30,000 (the tuition
+fee). But the true cost includes the HK$30,000 in foregone internship earnings. Rational
+decision-making requires comparing the **net benefits** of all alternatives (benefits minus all
+costs, including opportunity costs) and choosing the one with the highest net benefit. This
+principle applies to all economic decisions: individual consumption, firm production, government
+policy, and international trade.
 
 </details>
 

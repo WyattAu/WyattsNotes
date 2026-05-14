@@ -1,6 +1,8 @@
 ---
 title: Magnetism and Electromagnetism
-description: "DSE Physics magnetism and electromagnetism notes covering magnetic fields, electromagnetic induction, transformers, motors, generators, and magnetic materials."
+description:
+  'DSE Physics magnetism and electromagnetism notes covering magnetic fields, electromagnetic
+  induction, transformers, motors, generators, and magnetic materials.'
 date: 2026-04-18T00:00:00.000Z
 tags:
   - DSE
@@ -10,6 +12,7 @@ categories:
   - Physics
 slug: magnetism-and-electromagnetism
 ---
+
 ## Magnetic Fields
 
 ### Magnetic Force
@@ -179,8 +182,8 @@ $$\tau_{\max} = nBIA = 200 \times 0.3 \times 0.5 \times 0.004 = 0.12 \mathrm{ N\
 ### Worked Example 6
 
 A DC motor has a rectangular coil of 100 turns, area $0.01 \mathrm{ m}^2$In a field of
-$0.4 \mathrm{ T}$. When the coil carries a current of $2 \mathrm{ A}$Find the torque when the
-Normal to the coil makes an angle of $60^\circ$ with the field.
+$0.4 \mathrm{ T}$. When the coil carries a current of $2 \mathrm{ A}$Find the torque when the Normal
+to the coil makes an angle of $60^\circ$ with the field.
 
 <details>
 <summary>Solution</summary>
@@ -219,12 +222,12 @@ Physical basis of the negative sign in Faraday's law.
 
 ### Methods of Inducing EMF
 
-| Method | Description |
+| Method                               | Description                               |
 | ------------------------------------ | ----------------------------------------- |
-| Changing the magnetic field strength | Varying $B$ through a stationary coil |
-| Changing the area | Moving a conductor into or out of a field |
-| Changing the orientation | Rotating a coil in a field |
-| Moving a conductor | Cutting magnetic field lines |
+| Changing the magnetic field strength | Varying $B$ through a stationary coil     |
+| Changing the area                    | Moving a conductor into or out of a field |
+| Changing the orientation             | Rotating a coil in a field                |
+| Moving a conductor                   | Cutting magnetic field lines              |
 
 ### Motional EMF
 
@@ -296,9 +299,9 @@ $$\mathrm{Efficiency} = \frac{V_s I_s}{V_p I_p} \times 100\%$$
 
 ### Step-up and Step-down Transformers
 
-| Type | Turns ratio | Effect |
+| Type      | Turns ratio   | Effect                               |
 | --------- | ------------- | ------------------------------------ |
-| Step-up | $N_s \gt N_p$ | Increases voltage, decreases current |
+| Step-up   | $N_s \gt N_p$ | Increases voltage, decreases current |
 | Step-down | $N_s \lt N_p$ | Decreases voltage, increases current |
 
 ### Worked Example 9
@@ -347,28 +350,28 @@ Power loss: $P_{\mathrm{loss}} = P_{\mathrm{in}} - P_{\mathrm{out}} = 10.0 - 9.5
 ## Common Pitfalls
 
 - Confusing Fleming's Left-Hand Rule (for motors/force) with Fleming's Right-Hand Rule (for
- generators/induced current).
+  generators/induced current).
 - Forgetting that the magnetic force on a moving charge is always perpendicular to its velocity,
- meaning the force does no work and does not change the particle's speed.
+  meaning the force does no work and does not change the particle's speed.
 - Misapplying Lenz's law. The induced current opposes the **change** in flux, not the flux itself.
 - Using DC in a transformer. Transformers only work with alternating current because a changing
- magnetic flux is required.
+  magnetic flux is required.
 - Confusing magnetic flux density $B$ with magnetic flux $\Phi$. Remember $\Phi = BA\cos\theta$.
 
 ---
 
 ## Summary Table
 
-| Topic | Key Formula | Key Concept |
+| Topic              | Key Formula                | Key Concept               |
 | ------------------ | -------------------------- | ------------------------- |
-| Force on conductor | $F = BIL\sin\theta$ | Fleming's Left-Hand Rule |
-| Force on charge | $F = qvB\sin\theta$ | Perpendicular to v and B |
-| Wire field | $B = \mu_0 I/(2\pi r)$ | Right-hand grip rule |
-| Solenoid field | $B = \mu_0 n I$ | Uniform inside |
-| Faraday's Law | $\varepsilon = -Nd\Phi/dt$ | Changing flux induces EMF |
-| Lenz's Law | Induced EMF opposes change | Conservation of energy |
-| Motional EMF | $\varepsilon = BLv$ | Cutting field lines |
-| Transformer | $V_s/V_p = N_s/N_p$ | AC only |
+| Force on conductor | $F = BIL\sin\theta$        | Fleming's Left-Hand Rule  |
+| Force on charge    | $F = qvB\sin\theta$        | Perpendicular to v and B  |
+| Wire field         | $B = \mu_0 I/(2\pi r)$     | Right-hand grip rule      |
+| Solenoid field     | $B = \mu_0 n I$            | Uniform inside            |
+| Faraday's Law      | $\varepsilon = -Nd\Phi/dt$ | Changing flux induces EMF |
+| Lenz's Law         | Induced EMF opposes change | Conservation of energy    |
+| Motional EMF       | $\varepsilon = BLv$        | Cutting field lines       |
+| Transformer        | $V_s/V_p = N_s/N_p$        | AC only                   |
 
 ---
 
@@ -549,17 +552,14 @@ For the A-Level treatment of this topic, see
 
 ---
 
-:::tip
-Tip
-[diagnostic test](/docs/dse/Physics/diagnostics/diag-electricity-magnetism) contains the hardest
-Questions within the DSE specification for this topic, each with a full worked solution.
+:::tip Tip [diagnostic test](/docs/dse/Physics/diagnostics/diag-electricity-magnetism) contains the
+hardest Questions within the DSE specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Magnetism
 And Electromagnetism with other physics topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/dse/Physics/diagnostics/diagnostic-guide) for instructions on
-Self-marking and building a personal test matrix.
-:::
+Self-marking and building a personal test matrix. :::
 
 ---
 
@@ -567,8 +567,8 @@ Self-marking and building a personal test matrix.
 
 ### Derivation: Magnetic Flux Density from Force on a Conductor
 
-The magnetic flux density $B$ is defined as the force per unit current per unit length on a conductor
-Perpendicular to the field:
+The magnetic flux density $B$ is defined as the force per unit current per unit length on a
+conductor Perpendicular to the field:
 
 $$B = \frac{F}{IL}$$
 
@@ -577,9 +577,9 @@ Perpendicular component of the current element is $IL\sin\theta$Giving:
 
 $$F = BIL\sin\theta$$
 
-This definition is equivalent to the Lorentz force on a moving charge. Since $I = nqv_d A$ for a wire
-With $n$ charge carriers per unit volume, drift velocity $v_d$And cross-sectional area $A$And the
-Number of charge carriers in length $L$ is $nAL$:
+This definition is equivalent to the Lorentz force on a moving charge. Since $I = nqv_d A$ for a
+wire With $n$ charge carriers per unit volume, drift velocity $v_d$And cross-sectional area $A$And
+the Number of charge carriers in length $L$ is $nAL$:
 
 $$F = B(nqv_d A)L\sin\theta = B(nAL)qv_d\sin\theta$$
 
@@ -587,8 +587,8 @@ For a single charge: $F = qvB\sin\theta$.
 
 ### Derivation: Force Between Two Parallel Wires
 
-Each wire produces a magnetic field at the location of the other. Consider wire 1 carrying current $I_1$
-Which produces a field at the position of wire 2 (distance $d$ away):
+Each wire produces a magnetic field at the location of the other. Consider wire 1 carrying current
+$I_1$ Which produces a field at the position of wire 2 (distance $d$ away):
 
 $$B_1 = \frac{\mu_0 I_1}{2\pi d}$$
 
@@ -612,8 +612,8 @@ Finger = field, second finger = induced current.
 
 ### Derivation: EMF of a Rotating Coil (AC Generator)
 
-A coil of $N$ turns, area $A$Rotating with angular velocity $\omega$ in a uniform field $B$. At
-Time $t$The angle between the normal to the coil and the field is $\theta = \omega t$.
+A coil of $N$ turns, area $A$Rotating with angular velocity $\omega$ in a uniform field $B$. At Time
+$t$The angle between the normal to the coil and the field is $\theta = \omega t$.
 
 $$\Phi = NBA\cos(\omega t)$$
 
@@ -627,27 +627,28 @@ The peak EMF is $\varepsilon_0 = NBA\omega$And the EMF varies sinusoidally.
 
 ### Determining Magnetic Flux Density Using a Current Balance
 
-**Apparatus:** A rectangular wire frame suspended from a balance, placed so the horizontal section of
-The frame is in a uniform magnetic field (e.g., between the poles of a horseshoe magnet). A known
+**Apparatus:** A rectangular wire frame suspended from a balance, placed so the horizontal section
+of The frame is in a uniform magnetic field (e.g., between the poles of a horseshoe magnet). A known
 Current $I$ passes through the frame.
 
 **Procedure:**
+
 1. Measure the mass $m_0$ of the frame with no current.
 2. Pass current $I$ through the frame and measure the new apparent mass $m_1$.
 3. The force on the wire is $F = (m_0 - m_1)g$ (the wire is pushed up or down depending on
- direction).
+   direction).
 4. The length $L$ of wire in the field is measured with a ruler.
 5. Calculate $B = \frac{F}{IL} = \frac{(m_0 - m_1)g}{IL}$.
 
 **Sources of error:**
+
 - The field may not be perfectly uniform across the width of the wire.
 - The wire may not be perfectly horizontal.
 - The balance may have a zero error.
 - The current may cause heating, altering the wire dimensions slightly.
 
 **Improvements:** Repeat for different currents and plot $F$ versus $I$. The gradient of the
-Straight line gives $BL$From which $B$ can be found. This averaging technique reduces random
-Errors.
+Straight line gives $BL$From which $B$ can be found. This averaging technique reduces random Errors.
 
 ### Measuring the Magnetic Field of a Solenoid
 
@@ -655,10 +656,11 @@ Errors.
 Turns and area) connected to a ballistic galvanometer or data logger.
 
 **Procedure:**
+
 1. Place the search coil at the centre of the solenoid.
 2. Pass a known current $I$ through the solenoid and quickly switch it off (or reverse it).
 3. The change in flux through the search coil induces a charge $Q$ in the circuit, measured by the
- ballistic galvanometer.
+   ballistic galvanometer.
 4. $Q = \frac{N\Delta\Phi}{R} = \frac{NA\Delta B}{R}$Where $R$ is the total circuit resistance.
 5. From $\Delta B = \mu_0 n \Delta I$ (for switching off, $\Delta I = I$), verify $B = \mu_0 n I$.
 
@@ -668,12 +670,13 @@ Turns and area) connected to a ballistic galvanometer or data logger.
 Dropped through the coil from a known height.
 
 **Procedure:**
+
 1. Record the induced EMF as a function of time as the magnet falls through the coil.
 2. The area under the EMF-time graph gives the total change in flux linkage.
 3. Vary the speed by changing the drop height and show that the peak EMF increases with speed, but
- the total flux change (integral) remains the same.
+   the total flux change (integral) remains the same.
 4. This confirms that $\varepsilon = -d\Phi/dt$: faster change gives larger EMF, but the same total
- flux change.
+   flux change.
 
 ### Investigating Transformer Efficiency
 
@@ -681,6 +684,7 @@ Dropped through the coil from a known height.
 Resistive load.
 
 **Procedure:**
+
 1. Measure the primary voltage $V_p$ and current $I_p$.
 2. Measure the secondary voltage $V_s$ and current $I_s$.
 3. Calculate efficiency: $\eta = \frac{V_s I_s}{V_p I_p} \times 100\%$.
@@ -701,8 +705,8 @@ When measuring $B = F/(IL)$The percentage uncertainty is:
 
 $$\frac{\Delta B}{B} = \sqrt{\left(\frac{\Delta F}{F}\right)^2 + \left(\frac{\Delta I}{I}\right)^2 + \left(\frac{\Delta L}{L}\right)^2}$$
 
-**Example:** A force of $(3.20 \pm 0.05) \mathrm{ N}$Current of $(2.00 \pm 0.02) \mathrm{ A}$
-And length of $(0.100 \pm 0.002) \mathrm{ m}$:
+**Example:** A force of $(3.20 \pm 0.05) \mathrm{ N}$Current of $(2.00 \pm 0.02) \mathrm{ A}$ And
+length of $(0.100 \pm 0.002) \mathrm{ m}$:
 
 $$B = \frac{3.20}{2.00 \times 0.100} = 16.0 \mathrm{ T}$$
 
@@ -715,6 +719,7 @@ $$B = (16.0 \pm 0.4) \mathrm{ T}$$
 ### Graphical Analysis of Electromagnetic Induction
 
 When investigating how induced EMF depends on the rate of change of flux:
+
 - Plot $\varepsilon$ (y-axis) versus $d\Phi/dt$ (x-axis).
 - The gradient should equal $N$ (number of turns).
 - If the line passes through the origin, this confirms the proportionality.
@@ -743,7 +748,8 @@ The component parallel to the field is:
 
 $$v_\parallel = v\cos\theta = 5 \times 10^5 \times \cos 60^\circ = 2.5 \times 10^5 \mathrm{ m/s}$$
 
-The period of circular motion: $T = \frac{2\pi m}{qB} = \frac{2\pi \times 1.67 \times 10^{-27}}{1.6 \times 10^{-19} \times 0.3} = \frac{1.049 \times 10^{-26}}{4.8 \times 10^{-20}} = 2.19 \times 10^{-7} \mathrm{ s}$
+The period of circular motion:
+$T = \frac{2\pi m}{qB} = \frac{2\pi \times 1.67 \times 10^{-27}}{1.6 \times 10^{-19} \times 0.3} = \frac{1.049 \times 10^{-26}}{4.8 \times 10^{-20}} = 2.19 \times 10^{-7} \mathrm{ s}$
 
 $$\mathrm{Pitch} = v_\parallel \times T = 2.5 \times 10^5 \times 2.19 \times 10^{-7} = 0.0547 \mathrm{ m} = 5.47 \mathrm{ cm}$$
 
@@ -751,10 +757,10 @@ $$\mathrm{Pitch} = v_\parallel \times T = 2.5 \times 10^5 \times 2.19 \times 10^
 
 ### Worked Example 12
 
-A rectangular coil of 150 turns, dimensions $0.06 \mathrm{ m} \times 0.10 \mathrm{ m}$Is placed
-In a magnetic field of $0.4 \mathrm{ T}$ with its plane parallel to the field. The coil rotates
-About an axis through the centre of the $0.06 \mathrm{ m}$ sides at $300 \mathrm{ rpm}$. Find
-The peak EMF and the EMF when the coil has rotated $30^\circ$ from its initial position.
+A rectangular coil of 150 turns, dimensions $0.06 \mathrm{ m} \times 0.10 \mathrm{ m}$Is placed In a
+magnetic field of $0.4 \mathrm{ T}$ with its plane parallel to the field. The coil rotates About an
+axis through the centre of the $0.06 \mathrm{ m}$ sides at $300 \mathrm{ rpm}$. Find The peak EMF
+and the EMF when the coil has rotated $30^\circ$ from its initial position.
 
 <details>
 <summary>Solution</summary>
@@ -789,7 +795,8 @@ $$I = \frac{\varepsilon}{R} = \frac{0.1257}{0.2} = 0.628 \mathrm{ A}$$
 
 $$Q = I \cdot \Delta t = 0.628 \times 0.05 = 0.0314 \mathrm{ C}$$
 
-Alternatively, using Faraday's law in charge form: $Q = \frac{\Delta\Phi}{R} = \frac{6.283 \times 10^{-3}}{0.2} = 0.0314 \mathrm{ C}$.
+Alternatively, using Faraday's law in charge form:
+$Q = \frac{\Delta\Phi}{R} = \frac{6.283 \times 10^{-3}}{0.2} = 0.0314 \mathrm{ C}$.
 
 </details>
 
@@ -805,11 +812,11 @@ Force for different currents.
 
 | Current $I$ (A) | Force $F$ (N) |
 | --------------- | ------------- |
-| 1.0 | 0.020 |
-| 2.0 | 0.039 |
-| 3.0 | 0.061 |
-| 4.0 | 0.078 |
-| 5.0 | 0.102 |
+| 1.0             | 0.020         |
+| 2.0             | 0.039         |
+| 3.0             | 0.061         |
+| 4.0             | 0.078         |
+| 5.0             | 0.102         |
 
 (a) Plot a graph of $F$ against $I$ and determine the gradient. What does the gradient represent?
 
@@ -828,7 +835,8 @@ $$\mathrm{Gradient} = \frac{\Delta F}{\Delta I} \approx \frac{0.102 - 0.020}{5.0
 
 A line of best fit gives approximately $0.0203 \mathrm{ N/A}$.
 
-From $F = BIL$ with $L = 0.10 \mathrm{ m}$ and $\theta = 90^\circ$: gradient $= BL$So $B = \mathrm{gradient}/L$.
+From $F = BIL$ with $L = 0.10 \mathrm{ m}$ and $\theta = 90^\circ$: gradient $= BL$So
+$B = \mathrm{gradient}/L$.
 
 (b) Percentage uncertainty in gradient:
 
@@ -865,10 +873,11 @@ Reasoning with reference to Lenz's law.
 <summary>Solution</summary>
 
 (a) According to Faraday's law, an EMF is induced whenever there is a change in the magnetic flux
-Linking a circuit. Here, the magnetic field $B$ increases, so the flux $\Phi = BA\cos\theta$
-Through the coil changes.
+Linking a circuit. Here, the magnetic field $B$ increases, so the flux $\Phi = BA\cos\theta$ Through
+the coil changes.
 
-(b) Change in flux per turn: $\Delta\Phi = \Delta B \times A = (0.60 - 0.20) \times 4.0 \times 10^{-3} = 0.40 \times 4.0 \times 10^{-3} = 1.6 \times 10^{-3} \mathrm{ Wb}$
+(b) Change in flux per turn:
+$\Delta\Phi = \Delta B \times A = (0.60 - 0.20) \times 4.0 \times 10^{-3} = 0.40 \times 4.0 \times 10^{-3} = 1.6 \times 10^{-3} \mathrm{ Wb}$
 
 $$\varepsilon = N\frac{\Delta\Phi}{\Delta t} = 200 \times \frac{1.6 \times 10^{-3}}{0.025} = 200 \times 0.064 = 12.8 \mathrm{ V}$$
 
@@ -880,7 +889,8 @@ Increase (i.e., the induced field is in the opposite direction to the applied fi
 
 (e) $Q = I \times \Delta t = 0.853 \times 0.025 = 0.0213 \mathrm{ C}$
 
-Alternatively: $Q = \frac{N\Delta\Phi}{R} = \frac{200 \times 1.6 \times 10^{-3}}{15} = \frac{0.32}{15} = 0.0213 \mathrm{ C}$.
+Alternatively:
+$Q = \frac{N\Delta\Phi}{R} = \frac{200 \times 1.6 \times 10^{-3}}{15} = \frac{0.32}{15} = 0.0213 \mathrm{ C}$.
 
 </details>
 
@@ -896,13 +906,14 @@ Currents.
 
 (c) Explain why the transformer would not work with a DC supply.
 
-(d) In practice, the transformer is only $92\%$ efficient. Calculate the power loss and explain
-Two causes of energy loss in a real transformer.
+(d) In practice, the transformer is only $92\%$ efficient. Calculate the power loss and explain Two
+causes of energy loss in a real transformer.
 
 <details>
 <summary>Solution</summary>
 
-(a) $V_s = V_p \times \frac{N_s}{N_p} = 240 \times \frac{200}{800} = 240 \times 0.25 = 60.0 \mathrm{ V}$
+(a)
+$V_s = V_p \times \frac{N_s}{N_p} = 240 \times \frac{200}{800} = 240 \times 0.25 = 60.0 \mathrm{ V}$
 
 (b) Secondary current: $I_s = \frac{V_s}{R} = \frac{60}{10} = 6.0 \mathrm{ A}$
 
@@ -919,9 +930,10 @@ In the secondary coil.
 $$P_{\mathrm{loss}} = (1 - 0.92) \times 360 = 0.08 \times 360 = 28.8 \mathrm{ W}$$
 
 Two causes of energy loss:
+
 1. **Copper losses**: Resistance in the windings causes $I^2 R$ heating.
 2. **Eddy currents**: Changing flux induces circulating currents in the iron core, causing heating.
- (Other valid answers: hysteresis losses, magnetic flux leakage.)
+   (Other valid answers: hysteresis losses, magnetic flux leakage.)
 
 </details>
 
@@ -956,7 +968,8 @@ Left). The direction depends on the current direction.
 
 $$F_{\mathrm{net}} = mg + BIL = 2mg = 2 \times 0.1177 = 0.235 \mathrm{ N}$$
 
-$$a = \frac{F_{\mathrm{net}}}{m} = \frac{0.235}{0.012} = 19.6 \mathrm{ m/s}^2$$ (downward, i.e., $2g$)
+$$a = \frac{F_{\mathrm{net}}}{m} = \frac{0.235}{0.012} = 19.6 \mathrm{ m/s}^2$$ (downward, i.e.,
+$2g$)
 
 (c) When the wire is at $30^\circ$ to the horizontal, only the horizontal component of the wire
 Length is perpendicular to the vertical field:
@@ -971,12 +984,12 @@ $$I = \frac{mg}{BL\cos 30^\circ} = \frac{0.012 \times 9.81}{0.0981 \times 0.30 \
 
 (a) State Faraday's law of electromagnetic induction.
 
-(b) A square coil of side $0.08 \mathrm{ m}$ with 100 turns is pulled completely out of a
-Uniform magnetic field of $0.5 \mathrm{ T}$ in $0.1 \mathrm{ s}$. The field is perpendicular
-To the plane of the coil. Calculate the average EMF induced.
+(b) A square coil of side $0.08 \mathrm{ m}$ with 100 turns is pulled completely out of a Uniform
+magnetic field of $0.5 \mathrm{ T}$ in $0.1 \mathrm{ s}$. The field is perpendicular To the plane of
+the coil. Calculate the average EMF induced.
 
-(c) If the coil has resistance $5 \Omega$Find the total energy dissipated as the coil is
-Removed from the field.
+(c) If the coil has resistance $5 \Omega$Find the total energy dissipated as the coil is Removed
+from the field.
 
 (d) Explain how Lenz's law is consistent with the principle of conservation of energy.
 
@@ -987,10 +1000,11 @@ Complete rotation is zero.
 <details>
 <summary>Solution</summary>
 
-(a) Faraday's law states that the magnitude of the induced EMF in a circuit is equal to the rate
-Of change of magnetic flux linkage: $\varepsilon = -N\frac{d\Phi}{dt}$.
+(a) Faraday's law states that the magnitude of the induced EMF in a circuit is equal to the rate Of
+change of magnetic flux linkage: $\varepsilon = -N\frac{d\Phi}{dt}$.
 
-(b) Initial flux linkage: $\Phi_i = NBA = 100 \times 0.5 \times (0.08)^2 = 100 \times 0.5 \times 0.0064 = 0.32 \mathrm{ Wb}$
+(b) Initial flux linkage:
+$\Phi_i = NBA = 100 \times 0.5 \times (0.08)^2 = 100 \times 0.5 \times 0.0064 = 0.32 \mathrm{ Wb}$
 
 Final flux linkage (outside the field): $\Phi_f = 0$
 
@@ -998,18 +1012,19 @@ $$\varepsilon = N\frac{\Delta\Phi}{\Delta t} = \frac{0.32 - 0}{0.1} = 3.2 \mathr
 
 (c) The charge that flows: $Q = \frac{N\Delta\Phi}{R} = \frac{0.32}{5} = 0.064 \mathrm{ C}$
 
-Energy dissipated: $E = \frac{Q^2 R}{\Delta t}$... Alternatively, use the work done by the
-External force:
+Energy dissipated: $E = \frac{Q^2 R}{\Delta t}$... Alternatively, use the work done by the External
+force:
 
 $$E = \frac{\varepsilon^2}{R} \times \Delta t = \frac{(3.2)^2}{5} \times 0.1 = \frac{10.24}{5} \times 0.1 = 0.2048 \mathrm{ J}$$
 
-Alternatively: $E = \frac{(N\Delta\Phi)^2}{R\Delta t} = \frac{(0.32)^2}{5 \times 0.1} = \frac{0.1024}{0.5} = 0.205 \mathrm{ J}$
+Alternatively:
+$E = \frac{(N\Delta\Phi)^2}{R\Delta t} = \frac{(0.32)^2}{5 \times 0.1} = \frac{0.1024}{0.5} = 0.205 \mathrm{ J}$
 
-(d) Lenz's law states that the induced current opposes the change in flux. This means work must
-Be done against the magnetic force to change the flux through the coil. The work done by the
-External agent is converted into electrical energy in the circuit, which is then dissipated as
-Heat in the resistance. This is consistent with conservation of energy: the energy supplied
-Equals the energy dissipated.
+(d) Lenz's law states that the induced current opposes the change in flux. This means work must Be
+done against the magnetic force to change the flux through the coil. The work done by the External
+agent is converted into electrical energy in the circuit, which is then dissipated as Heat in the
+resistance. This is consistent with conservation of energy: the energy supplied Equals the energy
+dissipated.
 
 (e) Peak EMF: $\varepsilon_0 = NBA\omega$
 
@@ -1018,7 +1033,7 @@ $\omega = 2\pi \times 10 = 62.8 \mathrm{ rad/s}$
 $\varepsilon_0 = 100 \times 0.5 \times (0.08)^2 \times 62.8 = 100 \times 0.5 \times 0.0064 \times 62.8 = 20.1 \mathrm{ V}$
 
 The average EMF over one complete rotation is zero because the EMF varies sinusoidally
-($\varepsilon = \varepsilon_0\sin\omega t$), and the average of a sine function over a full
-Period is zero. The positive half-cycle exactly cancels the negative half-cycle.
+($\varepsilon = \varepsilon_0\sin\omega t$), and the average of a sine function over a full Period
+is zero. The positive half-cycle exactly cancels the negative half-cycle.
 
 </details>
