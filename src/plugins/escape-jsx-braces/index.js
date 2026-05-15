@@ -45,9 +45,15 @@ module.exports = function escapeJsxBraces() {
       // Step 1: Escape remaining literal braces (skip already-escaped \{ and \})
       node.value = node.value.replace(/(?<!\\)\{/g, '\\{').replace(/(?<!\\)\}/g, '\\}');
 
-      // Step 2: Restore placeholders (these braces should NOT be escaped
-      // because they are LaTeX group delimiters for commands like \dfrac)
-      node.value = node.value.replace(/\u29C3LB\u29C4/g, '{').replace(/\u29C3RB\u29C4/g, '}');
+      // Step 2: Restore placeholders — the webpack loader (or source preprocessing)
+      // replaced { and } inside math contexts with private-use-area characters
+      // to prevent MDX from parsing them as JSX expressions.
+      // Support both old (multi-char) and new (single-char) placeholder formats.
+      node.value = node.value
+        .replace(/\u29C3LB\u29C4/g, '{')
+        .replace(/\u29C3RB\u29C4/g, '}')
+        .replace(/\uE000/g, '{')
+        .replace(/\uE001/g, '}');
     });
   };
 };
