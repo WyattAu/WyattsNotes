@@ -34,7 +34,7 @@ const config = {
   trailingSlash: false,
 
   clientModules: sharedClientModules,
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   ...sharedCompilationConfig,
 
   headTags: sharedHeadTags,

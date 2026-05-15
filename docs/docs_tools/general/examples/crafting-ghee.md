@@ -11,7 +11,7 @@ categories:
 slug: crafting-ghee
 ---
 
-Import Tabs from '@theme/Tabs'; Import TabItem from '@theme/TabItem';
+import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 ## Objective
 
