@@ -328,8 +328,8 @@ Hidden content here.
 &lt;/details&gt;
 ```
 
-:::warning Do not nest `<details>` inside another `<details>`. This causes rendering issues in
-Docusaurus. :::
+:::warning Do not nest `&lt;details&gt;` inside another `&lt;details&gt;`. This causes rendering
+issues in Docusaurus. :::
 
 ### MDX Import Statements
 
@@ -446,5 +446,3 @@ are generally fine.
 ## Worked Examples
 
 <!-- TODO: Add worked examples for this topic -->
-
-</details></details>

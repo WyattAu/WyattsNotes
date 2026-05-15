@@ -99,10 +99,8 @@ Unlocks React components, interactive tabs, and custom JSX — but also imposes 
 - Raw HTML tags like `` are not allowed in MDX; use Docusaurus components or markdown instead.
 - Angle brackets in prose (e.g., `std::vector<int>`) must be escaped as `&lt;` and `&gt;` outside of
   code blocks.
-- Nested `<details>` elements inside other `<details>` are not supported.
+- Nested `&lt;details&gt;` elements inside other `&lt;details&gt;` are not supported.
 - Frontmatter is parsed at build time and drives sidebar ordering, page metadata, and search
   indexing.
 
 Refer to `markdown-constructs.md` in this section for the full MDX feature reference.
-
-</details></details>
