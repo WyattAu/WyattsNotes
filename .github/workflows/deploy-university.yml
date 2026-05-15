@@ -20,7 +20,7 @@ jobs:
   deploy:
     name: Build and Deploy University
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v6
 
@@ -46,7 +46,7 @@ jobs:
       - name: Build
         run: npx docusaurus build --config docusaurus.university.config.ts
         env:
-          NODE_OPTIONS: --max-old-space-size=11264
+          NODE_OPTIONS: --max-old-space-size=7168
           DOCUSAURUS_NO_PERSISTENT_CACHE: '1'
           DISABLE_LUNR: 'true'
           GENERATE_SOURCEMAP: 'false'
