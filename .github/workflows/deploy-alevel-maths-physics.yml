@@ -46,11 +46,18 @@ jobs:
       - name: Escape LaTeX braces for MDX
         run: node scripts/escape-latex-braces.js docs/docs_alevel
 
+      - name: Cache Docusaurus build
+        uses: actions/cache@v4
+        with:
+          path: node_modules/.cache/docusaurus
+          key: docusaurus-alevel*-${ hashFiles('pnpm-lock.yaml') }
+          restore-keys: |
+            docusaurus-alevel*-
+
       - name: Build
         run: npx docusaurus build --config docusaurus.alevel-maths-physics.config.ts
         env:
           NODE_OPTIONS: --max-old-space-size=11264
-          DOCUSAURUS_NO_PERSISTENT_CACHE: '1'
           DISABLE_LUNR: 'true'
           GENERATE_SOURCEMAP: 'false'
           SENTRY_DSN: ${{ secrets.SENTRY_DSN }}

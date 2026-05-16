@@ -43,11 +43,18 @@ jobs:
 
       - run: pnpm install --frozen-lockfile
 
+      - name: Cache Docusaurus build
+        uses: actions/cache@v4
+        with:
+          path: node_modules/.cache/docusaurus
+          key: docusaurus-unknown-${ hashFiles('pnpm-lock.yaml') }
+          restore-keys: |
+            docusaurus-unknown-
+
       - name: Build
         run: pnpm run build
         env:
           NODE_OPTIONS: --max-old-space-size=7168
-          DOCUSAURUS_NO_PERSISTENT_CACHE: '1'
           DISABLE_LUNR: 'true'
           GENERATE_SOURCEMAP: 'false'
           SENTRY_DSN: ${{ secrets.SENTRY_DSN }}
