@@ -55,8 +55,6 @@ Electromagnetic. :::
 A sound wave has a frequency of $440 \mathrm{ Hz}$ and a wavelength of $0.78 \mathrm{ m}$. Find the
 Speed of sound.
 
-<details>
-<summary>Solution</summary>
 
 $$v = f\lambda = 440 \times 0.78 = 343.2 \mathrm{ m/s}$$
 
@@ -64,8 +62,6 @@ $$v = f\lambda = 440 \times 0.78 = 343.2 \mathrm{ m/s}$$
 
 A light wave has a frequency of $5.0 \times 10^{14} \mathrm{ Hz}$. Find its wavelength in air.
 
-</details>
-<summary>Solution</summary>
 
 $$\lambda = \frac{c}{f} = \frac{3.0 \times 10^8}{5.0 \times 10^{14}} = 6.0 \times 10^{-7} \mathrm{ m} = 600 \mathrm{ nm}$$
 
@@ -132,8 +128,6 @@ $$\sin\theta_c = \frac{n_2}{n_1}$$
 
 Light travels from glass ($n = 1.5$) to air ($n = 1.0$). Find the critical angle.
 
-<details>
-<summary>Solution</summary>
 
 $$\sin\theta_c = \frac{1.0}{1.5} = 0.667$$
 
@@ -165,8 +159,6 @@ $$\mathrm{Path difference} = \left(n + \frac{1}{2}\right)\lambda \quad (n = 0, 1
 Two coherent sources are $0.5 \mathrm{ mm}$ apart and produce an interference pattern on a screen
 $1.2 \mathrm{ m}$ away. The fringe spacing is $1.2 \mathrm{ mm}$. Find the wavelength of the light.
 
-</details>
-<summary>Solution</summary>
 
 Using the double-slit formula:
 
@@ -178,8 +170,6 @@ In a double-slit experiment, light of wavelength $550 \mathrm{ nm}$ passes throu
 $0.4 \mathrm{ mm}$ apart onto a screen $1.5 \mathrm{ m}$ away. Find the separation between the
 Central bright fringe and the first dark fringe.
 
-<details>
-<summary>Solution</summary>
 
 The first dark fringe occurs at path difference $= \lambda/2$:
 
@@ -220,8 +210,6 @@ For a string of length $L$ fixed at both ends:
 A string of length $0.8 \mathrm{ m}$ has a fundamental frequency of $220 \mathrm{ Hz}$. Find the
 Wave speed and the frequency of the third harmonic.
 
-</details>
-<summary>Solution</summary>
 
 $$v = f_1 \times \lambda_1 = 220 \times 2(0.8) = 352 \mathrm{ m/s}$$
 
@@ -269,12 +257,9 @@ increase in intensity, But is perceived as roughly a doubling of loudness. :::
 The intensity of one sound is $10^{-4} \mathrm{ W/m}^2$ and another is $10^{-2} \mathrm{ W/m}^2$.
 Find the difference in loudness level.
 
-<details>
-<summary>Solution</summary>
 
 $$\Delta\beta = 10\log_{10}\left(\frac{10^{-2}}{10^{-4}}\right) = 10\log_{10}(100) = 10 \times 2 = 20 \mathrm{ dB}$$
 
-</details>
 
 ### Ultrasound
 
@@ -380,8 +365,6 @@ Where $h_i$ is the image height and $h_o$ is the object height.
 An object is placed $30 \mathrm{ cm}$ from a convex lens of focal length $20 \mathrm{ cm}$. Find the
 Image position and magnification.
 
-<details>
-<summary>Solution</summary>
 
 $$\frac{1}{v} - \frac{1}{-30} = \frac{1}{20}$$
 
@@ -427,8 +410,6 @@ enter the fibre and Still undergo total internal reflection. :::
 An optical fibre has a core of refractive index $1.50$ and cladding of refractive index $1.45$. Find
 The critical angle at the core-cladding boundary.
 
-<details>
-<summary>Solution</summary>
 
 $$\sin\theta_c = \frac{n_{\mathrm{cladding}}}{n_{\mathrm{core}}} = \frac{1.45}{1.50} = 0.967$$
 
@@ -458,8 +439,6 @@ Unpolarised light of intensity $200 \mathrm{ W/m}^2$ passes through two Polaroid
 Filter's transmission axis is at $60^\circ$ to the first. Find the intensity after the second
 Filter.
 
-</details>
-<summary>Solution</summary>
 
 After the first filter (intensity halved): $I_1 = 100 \mathrm{ W/m}^2$
 
@@ -492,8 +471,6 @@ After the second filter: $I_2 = I_1\cos^2 60^\circ = 100 \times 0.25 = 25 \mathr
 - In stationary wave problems, the distance between adjacent nodes is $\lambda/2$Not $\lambda$.
 - For the EM spectrum, know the approximate wavelength ranges and one application for each type.
 
-<details>
-<summary>Exam-Style Practice Questions</summary>
 
 **Question 1:** Light of wavelength $600 \mathrm{ nm}$ is incident on a pair of slits separated by
 $0.2 \mathrm{ mm}$. The screen is $1.5 \mathrm{ m}$ away. Find the distance between the central
@@ -501,15 +478,12 @@ Maximum and the third bright fringe.
 
 ### Details
 
-<summary>Solution</summary>
 
 $$y = \frac{n\lambda D}{a} = \frac{3 \times 600 \times 10^{-9} \times 1.5}{0.2 \times 10^{-3}} = \frac{2.7 \times 10^{-6}}{2 \times 10^{-4}} = 0.0135 \mathrm{ m} = 13.5 \mathrm{ mm}$$
 
 **Question 2:** A concave lens has a focal length of $15 \mathrm{ cm}$. An object is placed
 $25 \mathrm{ cm}$ from the lens. Find the image position.
 
-</details>
-<summary>Solution</summary>
 
 $$\frac{1}{v} - \frac{1}{-25} = \frac{1}{-15}$$
 
@@ -525,30 +499,23 @@ Object.
 **Question 3:** The critical angle for a glass-air boundary is $42^\circ$. Find the refractive index
 Of the glass.
 
-<details>
-<summary>Solution</summary>
 
 $$n = \frac{1}{\sin 42^\circ} = \frac{1}{0.669} = 1.49$$
 
 **Question 4:** Unpolarised light of intensity $300 \mathrm{ W/m}^2$ passes through a Polaroid
 Filter. What is the transmitted intensity?
 
-</details>
-<summary>Solution</summary>
 
 The first Polaroid reduces the intensity by half: $I = 150 \mathrm{ W/m}^2$.
 
 **Question 5:** A stationary wave is set up on a string of length $1.2 \mathrm{ m}$. The speed of
 The waves on the string is $24 \mathrm{ m/s}$. Find the frequency of the second harmonic.
 
-<details>
-<summary>Solution</summary>
 
 For the second harmonic: $\lambda_2 = L = 1.2 \mathrm{ m}$
 
 $$f_2 = \frac{v}{\lambda_2} = \frac{24}{1.2} = 20 \mathrm{ Hz}$$
 
-</details>
 
 ---
 
@@ -602,27 +569,21 @@ A police car sounding a siren of frequency $500 \mathrm{ Hz}$ travels at $30 \ma
 A stationary observer. The speed of sound is $340 \mathrm{ m/s}$. Find the frequency heard by the
 Observer.
 
-<details>
-<summary>Solution</summary>
 
 $$f' = f \left(\frac{v}{v - v_s}\right) = 500 \times \frac{340}{340 - 30} = 500 \times \frac{340}{310}$$
 
 $$f' = 500 \times 1.097 = 548.4 \mathrm{ Hz}$$
 
-</details>
 
 ### Worked Example 10
 
 After the police car passes the observer and moves away, what frequency is heard?
 
-<details>
-<summary>Solution</summary>
 
 $$f' = f \left(\frac{v}{v + v_s}\right) = 500 \times \frac{340}{340 + 30} = 500 \times \frac{340}{370}$$
 
 $$f' = 500 \times 0.919 = 459.5 \mathrm{ Hz}$$
 
-</details>
 
 ---
 
@@ -652,8 +613,6 @@ The attenuation of sound in a medium is often expressed in decibels per unit dis
 A source emits sound with power $0.01 \mathrm{ W}$. Find the intensity at distances of
 $5 \mathrm{ m}$ and $20 \mathrm{ m}$ from the source.
 
-<details>
-<summary>Solution</summary>
 
 At $r = 5 \mathrm{ m}$:
 
@@ -665,7 +624,6 @@ $$I_2 = \frac{0.01}{4\pi(20)^2} = \frac{0.01}{5026.55} = 1.99 \times 10^{-6} \ma
 
 Note that doubling the distance reduces the intensity by a factor of 4 (inverse square law).
 
-</details>
 
 ---
 
@@ -742,27 +700,21 @@ All harmonics are present in an open pipe.
 A closed pipe of length $0.85 \mathrm{ m}$ produces a fundamental frequency of $100 \mathrm{ Hz}$.
 Find the speed of sound.
 
-<details>
-<summary>Solution</summary>
 
 $$v = 4Lf_1 = 4 \times 0.85 \times 100 = 340 \mathrm{ m/s}$$
 
-</details>
 
 ### Worked Example 13
 
 Find the frequency of the second harmonic that a closed pipe of length $0.5 \mathrm{ m}$ can
 Support. Take the speed of sound as $340 \mathrm{ m/s}$.
 
-<details>
-<summary>Solution</summary>
 
 A closed pipe only supports odd harmonics. The "second harmonic" that exists is actually the 3rd
 Harmonic:
 
 $$f_3 = \frac{3v}{4L} = \frac{3 \times 340}{4 \times 0.5} = \frac{1020}{2} = 510 \mathrm{ Hz}$$
 
-</details>
 
 ---
 
@@ -796,14 +748,11 @@ Ultrasound pulses are sent into the body and the echo from an organ returns afte
 $40 \mathrm{ \mu s}$. The speed of ultrasound in tissue is $1540 \mathrm{ m/s}$. Find the depth of
 The organ.
 
-<details>
-<summary>Solution</summary>
 
 $$d = \frac{vt}{2} = \frac{1540 \times 40 \times 10^{-6}}{2} = \frac{0.0616}{2} = 0.0308 \mathrm{ m} = 3.08 \mathrm{ cm}$$
 
 (The factor of 2 accounts for the pulse travelling to the organ and back.)
 
-</details>
 
 ### Seismic Waves
 
@@ -822,8 +771,6 @@ P-waves are detected at a seismograph station $6000 \mathrm{ km}$ from the earth
 The P-wave speed is $8.0 \mathrm{ km/s}$ and the S-wave speed is $4.5 \mathrm{ km/s}$Find the time
 Difference between the arrival of P-waves and S-waves.
 
-<details>
-<summary>Solution</summary>
 
 P-wave arrival time: $t_P = \frac{6000}{8.0} = 750 \mathrm{ s} = 12.5 \mathrm{ minutes}$
 
@@ -834,49 +781,34 @@ Time difference: $t_S - t_P = 583 \mathrm{ s} = 9.7 \mathrm{ minutes}$
 This time difference is used to determine the distance from the epicentre, and data from multiple
 Stations can triangulate the exact location.
 
-</details>
 
 ---
 
 ## Problem Set
 
-<details>
-<summary>Problem 1: Wave Speed Calculation</summary>
 
 A water wave has a wavelength of $3.0 \mathrm{ m}$ and a frequency of $0.25 \mathrm{ Hz}$. Find the
 Wave speed.
 
-</details>
-<summary>Solution</summary>
 
 $$v = f\lambda = 0.25 \times 3.0 = 0.75 \mathrm{ m/s}$$
 
 _If you get this wrong, revise: The wave equation $v = f\lambda$._
 
-<details>
-<summary>Problem 2: Double-Slit Interference</summary>
 
 Light of wavelength $480 \mathrm{ nm}$ passes through two slits $0.3 \mathrm{ mm}$ apart onto a
 Screen $2.0 \mathrm{ m}$ away. Find the separation of adjacent bright fringes.
 
-</details>
-<details>
-<summary>Solution</summary>
 
 $$y = \frac{\lambda D}{a} = \frac{480 \times 10^{-9} \times 2.0}{0.3 \times 10^{-3}} = \frac{9.6 \times 10^{-7}}{3 \times 10^{-4}} = 3.2 \times 10^{-3} \mathrm{ m} = 3.2 \mathrm{ mm}$$
 
 _If you get this wrong, revise: Double-slit fringe spacing formula $y = \lambda D / a$._
 
-</details>
 
-<details>
-<summary>Problem 3: Snell's Law</summary>
 
 Light travels from air into a glass block at an angle of incidence of $50^\circ$. If the refractive
 Index of the glass is $1.52$Find the angle of refraction.
 
-</details>
-<summary>Solution</summary>
 
 $$n_1 \sin\theta_1 = n_2 \sin\theta_2$$
 
@@ -888,15 +820,10 @@ $$\theta_2 = 30.2^\circ$$
 
 _If you get this wrong, revise: Snell's law — remember to measure angles from the normal._
 
-<details>
-<summary>Problem 4: Stationary Waves — Harmonics</summary>
 
 A string of length $0.6 \mathrm{ m}$ has a wave speed of $240 \mathrm{ m/s}$. Find the Frequencies
 of the first three harmonics.
 
-</details>
-<details>
-<summary>Solution</summary>
 
 Fundamental: $f_1 = \frac{v}{2L} = \frac{240}{2 \times 0.6} = 200 \mathrm{ Hz}$
 
@@ -906,30 +833,20 @@ Fundamental: $f_1 = \frac{v}{2L} = \frac{240}{2 \times 0.6} = 200 \mathrm{ Hz}$
 
 _If you get this wrong, revise: Stationary waves on a string and the harmonic series $f_n = nf_1$._
 
-</details>
 
-<details>
-<summary>Problem 5: Decibel Calculation</summary>
 
 A sound has an intensity of $10^{-6} \mathrm{ W/m}^2$. Find the loudness level in dB.
 
-</details>
-<summary>Solution</summary>
 
 $$\beta = 10\log_{10}\left(\frac{10^{-6}}{10^{-12}}\right) = 10\log_{10}(10^6) = 10 \times 6 = 60 \mathrm{ dB}$$
 
 _If you get this wrong, revise: The decibel formula $\beta = 10\log_{10}(I/I*0)$ and
 $I_0 = 10^{-12} \mathrm{ W/m}^2$.*
 
-<details>
-<summary>Problem 6: Convex Lens — Virtual Image</summary>
 
 An object is placed $10 \mathrm{ cm}$ from a convex lens of focal length $15 \mathrm{ cm}$. Find the
 Image position and magnification.
 
-</details>
-<details>
-<summary>Solution</summary>
 
 $$\frac{1}{v} - \frac{1}{-10} = \frac{1}{15}$$
 
@@ -946,31 +863,21 @@ The object.
 
 _If you get this wrong, revise: Thin lens formula for convex lens when object is inside $f$._
 
-</details>
 
-<details>
-<summary>Problem 7: Doppler Effect — Moving Observer</summary>
 
 An observer moves towards a stationary sound source emitting $400 \mathrm{ Hz}$ at
 $20 \mathrm{ m/s}$. Speed of sound is $340 \mathrm{ m/s}$. Find the observed frequency.
 
-</details>
-<summary>Solution</summary>
 
 $$f' = f\left(\frac{v + v_o}{v}\right) = 400 \times \frac{340 + 20}{340} = 400 \times \frac{360}{340} = 400 \times 1.059 = 423.5 \mathrm{ Hz}$$
 
 _If you get this wrong, revise: Doppler effect formula when the observer is moving — use $v + v_o$
 in the Numerator._
 
-<details>
-<summary>Problem 8: EM Spectrum — Frequency Range</summary>
 
 Microwaves have wavelengths from $1 \mathrm{ mm}$ to $0.1 \mathrm{ m}$. Find the corresponding
 Frequency range.
 
-</details>
-<details>
-<summary>Solution</summary>
 
 $$f_1 = \frac{c}{\lambda_1} = \frac{3.0 \times 10^8}{0.1} = 3.0 \times 10^9 \mathrm{ Hz}$$
 
@@ -980,16 +887,11 @@ Frequency range: $3.0 \times 10^9$ to $3.0 \times 10^{11} \mathrm{ Hz}$.
 
 _If you get this wrong, revise: EM spectrum and the wave equation $c = f\lambda$._
 
-</details>
 
-<details>
-<summary>Problem 9: Closed Pipe Harmonics</summary>
 
 A closed pipe of length $0.75 \mathrm{ m}$ supports standing waves. The speed of sound is
 $340 \mathrm{ m/s}$. Find the frequencies of the first two harmonics.
 
-</details>
-<summary>Solution</summary>
 
 1st harmonic (fundamental):
 $f_1 = \frac{v}{4L} = \frac{340}{4 \times 0.75} = \frac{340}{3} = 113.3 \mathrm{ Hz}$
@@ -1001,15 +903,10 @@ Remember: closed pipes only support odd harmonics.
 _If you get this wrong, revise: Closed pipe harmonics — only odd harmonics
 ($f_1, f_3, f_5, \ldots$)._
 
-<details>
-<summary>Problem 10: Malus's Law — Crossed Polaroids</summary>
 
 Unpolarised light of intensity $400 \mathrm{ W/m}^2$ passes through two Polaroid filters with their
 Transmission axes at $90^\circ$ (crossed). What intensity is transmitted?
 
-</details>
-<details>
-<summary>Solution</summary>
 
 After the first filter: $I_1 = 200 \mathrm{ W/m}^2$
 
@@ -1019,17 +916,12 @@ No light is transmitted through crossed polaroids.
 
 _If you get this wrong, revise: Malus's law — $\cos 90^\circ = 0$._
 
-</details>
 
-<details>
-<summary>Problem 11: Optical Fibre — Acceptance Angle</summary>
 
 An optical fibre has a core refractive index of $1.55$ and cladding refractive index of $1.48$. Find
 the Maximum angle (from the fibre axis) at which light can enter and still undergo total internal
 Reflection.
 
-</details>
-<summary>Solution</summary>
 
 Critical angle:
 
@@ -1044,31 +936,21 @@ $$\theta_{\mathrm{max}} = 90^\circ - 72.8^\circ = 17.2^\circ$$
 _If you get this wrong, revise: Optical fibres — the relationship between the acceptance angle (from
 the axis) and the critical angle (from the normal)._
 
-<details>
-<summary>Problem 12: Ultrasound Depth</summary>
 
 An ultrasound pulse is reflected from a tissue boundary and returns after $26 \ \mu\mathrm{s}$. The
 speed Of ultrasound in the tissue is $1540 \mathrm{ m/s}$. Find the depth of the boundary.
 
-</details>
-<details>
-<summary>Solution</summary>
 
 $$d = \frac{vt}{2} = \frac{1540 \times 26 \times 10^{-6}}{2} = \frac{0.04004}{2} = 0.0200 \mathrm{ m} = 2.00 \mathrm{ cm}$$
 
 _If you get this wrong, revise: Ultrasound depth calculation — remember the factor of 2 for the
 Round trip._
 
-</details>
 
-<details>
-<summary>Problem 13: Sound Intensity — Inverse Square Law</summary>
 
 At a distance of $10 \mathrm{ m}$ from a sound source, the intensity is
 $8.0 \times 10^{-5} \mathrm{ W/m}^2$. What is the intensity at $40 \mathrm{ m}$?
 
-</details>
-<summary>Solution</summary>
 
 $$\frac{I_2}{I_1} = \left(\frac{r_1}{r_2}\right)^2 = \left(\frac{10}{40}\right)^2 = \frac{1}{16}$$
 
@@ -1076,15 +958,10 @@ $$I_2 = \frac{8.0 \times 10^{-5}}{16} = 5.0 \times 10^{-6} \mathrm{ W/m}^2$$
 
 _If you get this wrong, revise: Inverse square law for sound intensity $I \propto 1/r^2$._
 
-<details>
-<summary>Problem 14: Refraction — Water to Glass</summary>
 
 Light travels from water ($n = 1.33$) into glass ($n = 1.50$) at an angle of incidence of
 $45^\circ$. Find the angle of refraction.
 
-</details>
-<details>
-<summary>Solution</summary>
 
 $$1.33 \times \sin 45^\circ = 1.50 \times \sin\theta_2$$
 
@@ -1095,16 +972,11 @@ $$\theta_2 = 38.8^\circ$$
 _If you get this wrong, revise: Snell's law — check which medium is denser to determine the
 Direction of bending._
 
-</details>
 
-<details>
-<summary>Problem 15: Seismic Waves — S-Wave Evidence</summary>
 
 P-waves are detected at a seismograph but S-waves are not detected on the opposite side of the
 Earth. What does this tell us about the Earth's interior?
 
-</details>
-<summary>Solution</summary>
 
 S-waves are transverse waves that cannot travel through liquids. The absence of S-waves on the
 Opposite side of the Earth from an earthquake indicates that part of the Earth's interior is Liquid.
@@ -1280,8 +1152,6 @@ $$\lambda = (267 \pm 9) \mathrm{ nm}$$
 A light ray enters a glass prism of refractive index $1.52$ at an angle of incidence of $50^\circ$.
 The prism has an apex angle of $60^\circ$. Calculate the angle of emergence.
 
-<details>
-<summary>Solution</summary>
 
 At the first face: $1.00 \times \sin 50^\circ = 1.52 \times \sin r_1$
 
@@ -1296,7 +1166,6 @@ At the second face: $1.52 \times \sin 29.8^\circ = 1.00 \times \sin\theta_e$
 
 $$\sin\theta_e = 1.52 \times 0.497 = 0.755 \implies \theta_e = 49.0^\circ$$
 
-</details>
 
 ### Worked Example 12
 
@@ -1304,8 +1173,6 @@ In a single-slit diffraction experiment, light of wavelength $550 \mathrm{ nm}$ 
 Slit of width $0.10 \mathrm{ mm}$. The screen is $2.0 \mathrm{ m}$ away. Calculate the width of The
 central maximum.
 
-<details>
-<summary>Solution</summary>
 
 For the first minimum in single-slit diffraction: $a\sin\theta = \lambda$Where $a$ is the slit
 Width.
@@ -1318,15 +1185,12 @@ Width of central maximum $= 2y_1 = 2 \times D\tan\theta_1 \approx 2D\theta_1$
 
 $$= 2 \times 2.0 \times 5.5 \times 10^{-3} = 0.022 \mathrm{ m} = 22 \mathrm{ mm}$$
 
-</details>
 
 ### Worked Example 13
 
 A plano-convex lens has a refractive index of $1.55$ and one surface with radius of curvature
 $20 \mathrm{ cm}$. The other surface is flat. Calculate the focal length.
 
-<details>
-<summary>Solution</summary>
 
 Using the lensmaker's equation: $\frac{1}{f} = (n - 1)\left(\frac{1}{R_1} - \frac{1}{R_2}\right)$
 
@@ -1337,7 +1201,6 @@ $$\frac{1}{f} = (1.55 - 1)\left(\frac{1}{20} - \frac{1}{\infty}\right) = 0.55 \t
 
 $$f = \frac{1}{0.0275} = 36.4 \mathrm{ cm}$$
 
-</details>
 
 ---
 
@@ -1356,8 +1219,6 @@ nature of the new image and explain your reasoning.
 (c) The student wants to use this lens as a simple magnifying glass. What is the maximum
 Magnification achievable if the near point of the user is $25 \mathrm{ cm}$?
 
-<details>
-<summary>Solution</summary>
 
 (a) $u = 30 \mathrm{ cm}$$v = 120 \mathrm{ cm}$
 
@@ -1382,7 +1243,6 @@ $$m = \frac{|v|}{u} = \frac{25}{12.24} = 2.04$$
 
 Maximum magnification is approximately **2.0**.
 
-</details>
 
 ### Question 2 (DSE Structured)
 
@@ -1398,8 +1258,6 @@ internally reflected along the fibre (the acceptance angle).
 (c) Explain why optical fibres are used for telecommunications instead of copper cables, giving Two
 advantages.
 
-<details>
-<summary>Solution</summary>
 
 (a) Two conditions for total internal reflection:
 
@@ -1428,7 +1286,6 @@ $$\theta_{\max} = \sin^{-1}(0.416) = 24.6^\circ$$
 
 (Other valid answers: immune to electromagnetic interference, lighter weight, more secure.)
 
-</details>
 
 ### Question 3 (DSE Structured)
 
@@ -1441,8 +1298,6 @@ Calculate the wavelength of this line.
 (c) Explain how the line spectrum of hydrogen provides evidence for the existence of discrete Energy
 levels in atoms.
 
-<details>
-<summary>Solution</summary>
 
 (a) A **continuous spectrum** contains all wavelengths over a continuous range (e.g., the Spectrum
 from a hot filament or the Sun). A **line spectrum** consists of discrete, well-defined Wavelengths
@@ -1464,7 +1319,6 @@ higher level to a lower level, it emits a photon with energy equal To the differ
 levels: $\Delta E = hf$. The discrete wavelengths correspond To specific energy level differences,
 providing evidence for quantised energy levels.
 
-</details>
 
 ### Question 4 (DSE Structured)
 
@@ -1482,8 +1336,6 @@ fringe pattern.
 
 (c) Explain why a single slit is placed before the double slit in this experiment.
 
-<details>
-<summary>Solution</summary>
 
 (a) Two sources are coherent if they emit waves with a constant phase relationship (i.e., the Phase
 difference between them does not change with time). For light, this means the waves must Have the
@@ -1503,7 +1355,6 @@ would create multiple sets of interference patterns that overlap and wash out. T
 ensures that the light reaching the double slit is coherent (comes from a single point). This is
 necessary for a stable, observable interference pattern.
 
-</details>
 
 ### Question 5 (DSE Structured)
 
@@ -1519,8 +1370,6 @@ the intensity in part (b).
 
 (d) State one application of polarised light and explain how it works.
 
-<details>
-<summary>Solution</summary>
 
 (a) Polarisation is the process of restricting the oscillations of a transverse wave to a Single
 plane. For light, this means the electric field oscillates in only one direction. Unpolarised light
@@ -1579,9 +1428,6 @@ $$\Delta\lambda = \frac{\lambda}{R} = \frac{550}{20000} = 0.0275 \mathrm{ nm}$$
 In a single-slit diffraction experiment, the first minimum is observed at an angle of $3.0^\circ$
 when light of wavelength $620 \mathrm{ nm}$ is used. Calculate the slit width.
 
-</details>
-<details>
-<summary>Solution</summary>
 
 $$a\sin\theta = \lambda$$
 
@@ -1592,8 +1438,6 @@ $$a = \frac{\lambda}{\sin\theta} = \frac{620 \times 10^{-9}}{\sin 3.0^\circ} = \
 A prism has apex angle $60^\circ$ and refractive index $1.52$ for sodium light
 ($\lambda = 589 \mathrm{ nm}$). Calculate the angle of minimum deviation.
 
-</details>
-<summary>Solution</summary>
 
 At minimum deviation, the ray passes symmetrically through the prism:
 
