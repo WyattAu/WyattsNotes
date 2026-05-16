@@ -8,7 +8,6 @@ description:
   and examination preparation.'
 ---
 
-<details>
 <summary><strong>Theme A: Space, Time and Motion</strong></summary>
 
 1. **Question:** A projectile is launched from a 50.0 m high cliff with an initial velocity of 80.0
@@ -50,7 +49,6 @@ Displacement and velocity), and combining vector components using Pythagoras.
    inelastically with a 1.0 kg block at rest. The combined mass then slides an additional distance
    before stopping. Calculate this additional distance.
 
-</details>
 <summary>Answer</summary>
 
 - **Strategy:** A three-part problem: (1) Work-energy to find speed before collision, (2)
@@ -81,7 +79,6 @@ And applying the correct form of conservation law to each stage of the problem.
    released from rest, a constant frictional torque $\tau_f$ opposes the disk's motion. Derive an
    expression for the angular acceleration ($\alpha$) of the disk.
 
-<details>
 <summary>Answer</summary>
 
 - **Strategy:** Set up Newton's Second Law for the block's linear motion and for the disk's
@@ -107,7 +104,6 @@ And algebraically solving a system of equations.
    period of 2.0 s. What is the period of the flashes and the speed of the probe as measured by an
    observer on Earth?
 
-</details>
 <summary>Answer</summary>
 
 - **Strategy:** First, use the relativistic velocity addition formula to find the probe's speed
@@ -128,16 +124,12 @@ And algebraically solving a system of equations.
 The velocity addition formula, and remembering to use the final, relative speed between the object
 And the observer for the time dilation calculation.
 
-</details>
-
-<details>
 <summary><strong>Theme B: The Particulate Nature of Matter</strong></summary>
 
 1. **Question:** A sealed, insulated container holds 2.0 moles of a monatomic ideal gas at 300 K. A
    50 W heater adds 1500 J of thermal energy. Assuming constant volume, find the final temperature
    and pressure.
 
-<details>
 <summary>Answer</summary>
 
 - **Strategy:** At constant volume, all heat added increases internal energy. Relate the change in
@@ -164,7 +156,6 @@ Ratios for a constant-volume process.
    orbits a star where the incident radiation intensity is 1500 W/m². Calculate the planet's
    steady-state surface temperature.
 
-</details>
 <summary>Answer</summary>
 
 - **Strategy:** In thermal equilibrium, the power absorbed by the planet equals the power radiated
@@ -191,7 +182,6 @@ Emissivity in the energy balance equation.
    expansion from V to 2V at $2\mathrm{x}10^5$ Pa), B->C (isochoric cooling to original temperature
    T_A), C->A (isothermal compression). Find (i) the net work done and (ii) the cycle's efficiency.
 
-<details>
 <summary>Answer</summary>
 
 - **Strategy:** Calculate work and heat transfer for each leg of the cycle. Net work is the sum of
@@ -217,16 +207,12 @@ Emissivity in the energy balance equation.
 Internal energy for each type of thermodynamic process (isobaric, isochoric, isothermal), and
 Correctly identifying which stages of the cycle involve heat input ($Q_{\mathrm{in}}$).
 
-</details>
-
-<details>
 <summary><strong>Theme C: Wave Behaviour</strong></summary>
 
 1. **Question (HL Only):** A 0.50 kg mass on a horizontal spring (k = 200 N/m) is pulled 10 cm from
    equilibrium and released at t=0. At t = 0.20 s, 0.30 kg of putty is dropped on and sticks to it.
    Determine the new amplitude and maximum speed.
 
-</details>
 <summary>Answer</summary>
 
 - **Strategy:** Find the position and velocity of the mass just before the collision. Apply
@@ -257,7 +243,6 @@ Both KE and PE.
    source moving towards it. The light's proper wavelength is 600 nm. The second-order spectrum line
    is seen at 35.0°. Find the source's speed.
 
-<details>
 <summary>Answer</summary>
 
 - **Strategy:** Use the grating equation to find the wavelength measured by the grating
@@ -280,16 +265,12 @@ Both KE and PE.
 Calculating the grating spacing from lines/mm, and applying the Doppler shift equation with the
 Correct interpretation of blueshift vs. Redshift.
 
-</details>
-
-<details>
 <summary><strong>Theme D: Fields</strong></summary>
 
 1. **Question (HL Only):** A satellite of mass m is in a circular orbit of radius 2R around a planet
    of mass M and radius R. How much work must be done by thrusters to move it to a new circular
    orbit of radius 3R?
 
-</details>
 <summary>Answer</summary>
 
 - **Strategy:** The work done by an external force (thrusters) equals the change in the satellite's
@@ -315,7 +296,6 @@ Careful with the negative signs in the energy formulas.
    then enters a uniform magnetic field B = 0.20 T, perpendicular to its velocity. What is the
    radius of its circular path?
 
-<details>
 <summary>Answer</summary>
 
 - **Strategy:** First, find the particle's speed by equating the work done by the electric field to
@@ -339,7 +319,6 @@ By equating magnetic force to centripetal force.
    0.40 T B-field. The rotation axis is perpendicular to B. At t=0, the loop's plane is
    perpendicular to B. Find the peak induced current and the average power dissipated.
 
-</details>
 <summary>Answer</summary>
 
 - **Strategy:** Determine the magnetic flux as a function of time. Use Faraday's Law to find the
@@ -363,16 +342,12 @@ By equating magnetic force to centripetal force.
 Law as a derivative), the difference between peak and RMS values for sinusoidal currents/voltages,
 And the correct formulas for average power.
 
-</details>
-
-<details>
 <summary><strong>Theme E: Nuclear and Quantum Physics</strong></summary>
 
 1. **Question (HL Only):** Electrons, accelerated from rest by a potential V, are directed at a
    crystal with 0.20 nm atomic spacing. A first-order diffraction maximum is seen at 30°. Find the
    accelerating potential V.
 
-<details>
 <summary>Answer</summary>
 
 - **Strategy:** This problem links the wave nature of particles to classical electromagnetism. (1)
@@ -400,7 +375,6 @@ Charges in an electric field ($E_k=qV$).
    $\lambda = 3.85 \times 10^{-12} s^{-1}$. How many half-lives of X are equal to the wood's age?
    (Half-life of C-14 is 5730 years).
 
-</details>
 <summary>Answer</summary>
 
 - **Strategy:** Use the C-14 activity to find the age of the wood. Calculate the half-life of
@@ -426,7 +400,6 @@ Consistent unit conversions.
 3. **Question:** A star has a peak emission wavelength of 400 nm and luminosity of 1.6 x 10²⁷ W. Its
    spectrum shows the Balmer alpha absorption line (n=2 to n=3). Determine the radius of this star.
 
-<details>
 <summary>Answer</summary>
 
 - **Strategy:** Use Wien's Law to find the star's surface temperature from its peak wavelength.
@@ -445,8 +418,6 @@ Consistent unit conversions.
 <b>If you get this wrong, you should focus on:</b> Applying both Wien's Law and the Stefan-Boltzmann
 Law, and correctly rearranging the Stefan-Boltzmann equation to solve for the radius. Remember that
 Luminosity is total power output.
-
-</details>
 
 ## Common Pitfalls
 

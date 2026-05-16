@@ -69,7 +69,6 @@ A copper wire of length $100 \mathrm{ m}$ and diameter $1.0 \mathrm{ mm}$ carrie
 $2 \mathrm{ A}$. The resistivity of copper is $1.7 \times 10^{-8} \Omega\,\mathrm{m}$. Find the
 Resistance and the potential difference across the wire.
 
-<details>
 <summary>Solution</summary>
 
 $$A = \pi r^2 = \pi(0.5 \times 10^{-3})^2 = 7.854 \times 10^{-7} \mathrm{ m}^2$$
@@ -83,7 +82,6 @@ $$V = IR = 2 \times 2.16 = 4.33 \mathrm{ V}$$
 A wire has resistance $10 \Omega$. If its length is doubled and its diameter is halved, what is Its
 new resistance?
 
-</details>
 <summary>Solution</summary>
 
 New length: $L_2 = 2L$
@@ -98,7 +96,6 @@ A copper wire has resistance $4 \Omega$ at $20^\circ\mathrm{C}$. The temperature
 Resistance of copper is $0.0039\ \mathrm{per\ ^\circ C}$. Find the resistance at
 $80^\circ\mathrm{C}$.
 
-<details>
 <summary>Solution</summary>
 
 $$R_2 = R_1(1 + \alpha\Delta T) = 4(1 + 0.0039 \times 60) = 4(1 + 0.234) = 4 \times 1.234 = 4.94 \Omega$$
@@ -145,7 +142,6 @@ $$\frac{I_1}{I_2} = \frac{R_2}{R_1}$$
 Three resistors of $4 \Omega$$6 \Omega$And $12 \Omega$ are connected in parallel across a
 $12 \mathrm{ V}$ supply. Find the total resistance and the current through each resistor.
 
-</details>
 <summary>Solution</summary>
 
 $$\frac{1}{R_{\mathrm{total}}} = \frac{1}{4} + \frac{1}{6} + \frac{1}{12} = \frac{3 + 2 + 1}{12} = \frac{6}{12} = \frac{1}{2}$$
@@ -162,7 +158,6 @@ A $6 \Omega$ resistor and a $3 \Omega$ resistor are connected in parallel. This 
 Connected in series with a $5 \Omega$ resistor across a $24 \mathrm{ V}$ supply. Find the total
 Resistance, the current from the supply, and the power dissipated in each resistor.
 
-<details>
 <summary>Solution</summary>
 
 Parallel combination: $R_{12} = \frac{6 \times 3}{6 + 3} = 2 \Omega$
@@ -218,7 +213,6 @@ In a circuit with two loops, a $12 \mathrm{ V}$ battery is in the left loop with
 $6 \Omega$ resistor in series. A $6 \mathrm{ V}$ battery is in the right loop with the $6 \Omega$
 Resistor (shared) and a $3 \Omega$ resistor. Find the current through each resistor.
 
-</details>
 <summary>Solution</summary>
 
 Let $I_1$ flow clockwise in the left loop and $I_2$ flow clockwise in the right loop. Current
@@ -245,7 +239,6 @@ resistors: $R_1 = 3 \Omega$ in series with a parallel combination of $R_2 = 6 \O
 $R_3 = 6 \Omega$. Find the current from the battery, the terminal PD, and the current Through each
 resistor.
 
-<details>
 <summary>Solution</summary>
 
 Parallel combination: $R_{23} = \frac{6 \times 6}{6 + 6} = 3 \Omega$
@@ -293,7 +286,6 @@ A battery has EMF $9 \mathrm{ V}$ and internal resistance $0.5 \Omega$. It is co
 External circuit of resistance $4 \Omega$. Find the current, terminal PD, and power dissipated in
 The external circuit.
 
-</details>
 <summary>Solution</summary>
 
 $$I = \frac{\varepsilon}{R + r} = \frac{9}{4 + 0.5} = \frac{9}{4.5} = 2 \mathrm{ A}$$
@@ -308,7 +300,6 @@ A battery with unknown EMF $\varepsilon$ and internal resistance $r$ is connecte
 Resistor, giving a current of $0.5 \mathrm{ A}$. When the external resistance is changed to
 $20 \Omega$The current is $0.28 \mathrm{ A}$. Find $\varepsilon$ and $r$.
 
-<details>
 <summary>Solution</summary>
 
 $$\varepsilon = I_1(R_1 + r) = 0.5(10 + r) = 5 + 0.5r \quad (1)$$
@@ -342,7 +333,6 @@ The SI unit is the watt (W), where $1 \mathrm{ W} = 1 \mathrm{ J/s}$.
 A $220 \mathrm{ V}$ electric heater has a power rating of $2000 \mathrm{ W}$. Find the current it
 Draws, its resistance, and the cost of running it for 5 hours at `USD 0.90` per kWh.
 
-</details>
 <summary>Solution</summary>
 
 $$I = \frac{P}{V} = \frac{2000}{220} = 9.09 \mathrm{ A}$$
@@ -375,7 +365,6 @@ and a $4 \mathrm{ k}\Omega$ resistor ($R_2$) in series. A voltmeter of resistanc
 $12 \mathrm{ k}\Omega$ is connected across $R_2$. Find the reading on the voltmeter (a) before and
 (b) after it is connected.
 
-<details>
 <summary>Solution</summary>
 
 (a) Without voltmeter: $V_2 = 12 \times \frac{4}{8 + 4} = 12 \times \frac{1}{3} = 4.0 \mathrm{ V}$
@@ -425,7 +414,6 @@ The voltmeter draws current and reduces the measured voltage (loading effect).
 Variable resistor $R$. Find the value of $R$ that maximises the power delivered to $R$And Calculate
 this maximum power.
 
-</details>
 <summary>Solution</summary>
 
 Maximum power transfer occurs when $R = r = 1.5 \Omega$.
@@ -438,7 +426,6 @@ If you get this wrong, revise: Internal Resistance and EMF / Maximum Power Trans
 $0.4 \Omega$ are connected in series to a $4.6 \Omega$ resistor. Find the current and the terminal
 PD across the combination.
 
-<details>
 <summary>Solution</summary>
 
 $$\varepsilon_{\mathrm{total}} = 3 \times 1.5 = 4.5 \mathrm{ V}, \quad r_{\mathrm{total}} = 3 \times 0.4 = 1.2 \Omega$$
@@ -453,7 +440,6 @@ If you get this wrong, revise: Internal Resistance and EMF
 $5.0 \times 10^{-7} \mathrm{ m}^2$ has a resistance of $44 \Omega$. Find the resistivity of
 Nichrome.
 
-</details>
 <summary>Solution</summary>
 
 $$\rho = \frac{RA}{L} = \frac{44 \times 5.0 \times 10^{-7}}{2.0} = \frac{2.2 \times 10^{-5}}{2.0} = 1.1 \times 10^{-5} \Omega\,\mathrm{m}$$
@@ -464,7 +450,6 @@ If you get this wrong, revise: Ohm's Law and Resistance / Resistivity
 a $12 \mathrm{ V}$ battery with negligible internal resistance. Find the total current And the
 current through each resistor.
 
-<details>
 <summary>Solution</summary>
 
 $$I_1 = \frac{12}{8} = 1.5 \mathrm{ A}, \quad I_2 = \frac{12}{24} = 0.5 \mathrm{ A}$$
@@ -480,7 +465,6 @@ If you get this wrong, revise: Series and Parallel Circuits
 Connected to two $6 \Omega$ resistors in parallel. Find the current from the battery and the Power
 dissipated in each resistor.
 
-</details>
 <summary>Solution</summary>
 
 External resistance: $R_{\mathrm{ext}} = \frac{6 \times 6}{6 + 6} = 3 \Omega$
@@ -500,7 +484,6 @@ $R_2 = 5 \mathrm{ k}\Omega$ Are connected in series across a $15 \mathrm{ V}$ su
 output voltage across $R_2$. If a $10 \mathrm{ k}\Omega$ load is connected across $R_2$What is the
 new output voltage?
 
-<details>
 <summary>Solution</summary>
 
 Without load:
@@ -516,7 +499,6 @@ If you get this wrong, revise: Potential Divider
 series across a $240 \mathrm{ V}$ supply. Find the current and the power dissipated in each Bulb.
 Which bulb is brighter?
 
-</details>
 <summary>Solution</summary>
 
 Resistance of each bulb at rated voltage:
@@ -542,7 +524,6 @@ If you get this wrong, revise: Series and Parallel Circuits / Electrical Power
 resistor and a $6 \mathrm{ V}$ battery (internal resistance $1 \Omega$). Find the Reading on the
 ammeter and the percentage error caused by the ammeter's resistance.
 
-<details>
 <summary>Solution</summary>
 
 $$I = \frac{\varepsilon}{R_{\mathrm{ext}} + R_A + r} = \frac{6}{10 + 0.5 + 1} = \frac{6}{11.5} = 0.522 \mathrm{ A}$$
@@ -559,7 +540,6 @@ Series. The resistivity of copper is $1.7 \times 10^{-8} \Omega\,\mathrm{m}$ and
 $1.0 \times 10^{-7} \Omega\,\mathrm{m}$. Find the ratio of power dissipated in the steel Wire to
 that in the copper wire.
 
-</details>
 <summary>Solution</summary>
 
 Since they are in series, the same current flows through both.
@@ -572,7 +552,6 @@ If you get this wrong, revise: Ohm's Law and Resistance / Resistivity
 to an external circuit consisting of a $4 \Omega$ resistor in series with a parallel Combination of
 two $6 \Omega$ resistors. Find the total current and the terminal PD.
 
-<details>
 <summary>Solution</summary>
 
 Parallel combination: $R_p = \frac{6 \times 6}{6 + 6} = 3 \Omega$
@@ -783,7 +762,6 @@ Three resistors: $R_1 = 4 \Omega$ in series with a parallel combination of $R_2 
 $R_3 = 12 \Omega$. Find the current through each resistor, the terminal PD, and the power Dissipated
 in $R_3$.
 
-</details>
 <summary>Solution</summary>
 
 Parallel combination: $\frac{1}{R_p} = \frac{1}{6} + \frac{1}{12} = \frac{3}{12} = \frac{1}{4}$So
@@ -814,7 +792,6 @@ A student uses a potentiometer to compare the EMFs of two cells. The potentiomet
 $100 \mathrm{ cm}$ long. Cell A gives a null point at $65.0 \mathrm{ cm}$ and cell B at
 $42.5 \mathrm{ cm}$. If the EMF of cell A is $1.50 \mathrm{ V}$Find the EMF of cell B.
 
-<details>
 <summary>Solution</summary>
 
 For a potentiometer, the EMF is proportional to the balancing length:
@@ -828,7 +805,6 @@ $$\varepsilon_B = \varepsilon_A \times \frac{L_B}{L_A} = 1.50 \times \frac{42.5}
 A $220 \mathrm{ V}$ mains supply is connected to a $10 \Omega$ heater and a $20 \Omega$ heater In
 parallel. Find the total power drawn from the supply and the current through each heater.
 
-</details>
 <summary>Solution</summary>
 
 Current through $10 \Omega$: $I_1 = \frac{220}{10} = 22.0 \mathrm{ A}$
@@ -869,7 +845,6 @@ Calculate the resistance at each voltage and explain why the resistance increase
 
 (d) State why a filament lamp is a non-ohmic conductor.
 
-<details>
 <summary>Solution</summary>
 
 (a) At rated conditions: $P = V^2/R \implies R = V^2/P = 144/6 = 24 \Omega$.
@@ -910,7 +885,6 @@ Calculate this maximum power.
 (d) Sketch a graph of power delivered to the external resistor versus the resistance $R$ Marking the
 maximum power point.
 
-</details>
 <summary>Solution</summary>
 
 (a) From the first case: $V_1 = \varepsilon - I_1 r$
@@ -947,7 +921,6 @@ Battery and the terminal PD across the combination.
 
 (c) Explain what happens if $\varepsilon_2$ is connected with its polarity reversed.
 
-<details>
 <summary>Solution</summary>
 
 (a) **Kirchhoff's Current Law (KCL):** The algebraic sum of currents at any junction in a circuit Is
@@ -1014,7 +987,6 @@ Percentage uncertainty in $R_x$.
 (d) Explain two advantages of using a Wheatstone bridge compared with a simple voltmeter-ammeter
 Method.
 
-</details>
 <summary>Solution</summary>
 
 (a) A Wheatstone bridge is balanced when no current flows through the galvanometer. At balance, The
@@ -1055,7 +1027,6 @@ Calculate the current that flows and explain why this is dangerous.
 
 (d) Explain why the headlights dim when the starter motor is engaged.
 
-<details>
 <summary>Solution</summary>
 
 (a) $V = \varepsilon - Ir = 12 - 200 \times 0.05 = 12 - 10 = 2.0 \mathrm{ V}$
@@ -1112,5 +1083,3 @@ Current causes a significant voltage drop across the internal resistance of the 
 ($Ir = 200 \times 0.05 = 10 \mathrm{ V}$), so the terminal PD drops from $12 \mathrm{ V}$ to About
 $2 \mathrm{ V}$. Since the headlights are connected in parallel across the battery Terminals, they
 receive only about $2 \mathrm{ V}$ instead of $12 \mathrm{ V}$Causing them To dim significantly.
-
-</details>

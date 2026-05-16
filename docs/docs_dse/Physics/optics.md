@@ -58,7 +58,6 @@ $$m = \frac{v}{u} = \frac{h_i}{h_o}$$
 An object is placed $15 \mathrm{ cm}$ in front of a concave mirror of focal length
 $10 \mathrm{ cm}$. Find the image position and magnification.
 
-<details>
 <summary>Solution</summary>
 
 $$\frac{1}{v} = \frac{1}{f} - \frac{1}{u} = \frac{1}{10} - \frac{1}{15} = \frac{3 - 2}{30} = \frac{1}{30}$$
@@ -76,7 +75,6 @@ The image is inverted and magnified by a factor of 2.
 An object $4 \mathrm{ cm}$ tall is placed $8 \mathrm{ cm}$ from a concave mirror with focal length
 $12 \mathrm{ cm}$. Describe the image.
 
-</details>
 <summary>Solution</summary>
 
 The object is inside the focal length ($u \lt f$), so expect a virtual, upright, magnified image.
@@ -124,7 +122,6 @@ Index is dimensionless and always $n \geqslant 1$ for transparent materials.
 Light travels from air ($n = 1.0$) into glass ($n = 1.5$) at an angle of incidence of $40^\circ$.
 Find the angle of refraction.
 
-<details>
 <summary>Solution</summary>
 
 $$n_1 \sin\theta_1 = n_2 \sin\theta_2$$
@@ -140,7 +137,6 @@ $$\theta_2 = 25.4^\circ$$
 A light ray travels from water ($n = 1.33$) into glass ($n = 1.52$) at an angle of incidence of
 $35^\circ$. Find the angle of refraction and the speed of light in each medium.
 
-</details>
 <summary>Solution</summary>
 
 $$n_1 \sin\theta_1 = n_2 \sin\theta_2$$
@@ -189,7 +185,6 @@ Occurs: all light is reflected back into the denser medium.
 
 Find the critical angle for a glass-air boundary where $n_{\mathrm{glass}} = 1.5$.
 
-<details>
 <summary>Solution</summary>
 
 $$\sin\theta_c = \frac{n_{\mathrm{air}}}{n_{\mathrm{glass}}} = \frac{1.0}{1.5} = 0.667$$
@@ -202,7 +197,6 @@ A glass fibre has core refractive index $1.50$ and cladding refractive index $1.
 The fibre at an angle of $20^\circ$ to the fibre axis. Does total internal reflection occur at the
 Core-cladding boundary?
 
-</details>
 <summary>Solution</summary>
 
 The angle of incidence at the core-cladding boundary is measured from the normal to the boundary. If
@@ -262,7 +256,6 @@ Where $f$ is in metres and $P$ is in dioptres (D).
 An object is placed $20 \mathrm{ cm}$ from a convex lens of focal length $15 \mathrm{ cm}$. Find the
 Image position, nature, and magnification.
 
-<details>
 <summary>Solution</summary>
 
 $$\frac{1}{v} = \frac{1}{f} - \frac{1}{u} = \frac{1}{15} - \frac{1}{20} = \frac{4 - 3}{60} = \frac{1}{60}$$
@@ -281,7 +274,6 @@ Two thin lenses are placed in contact: a convex lens of focal length $10 \mathrm
 lens of focal length $15 \mathrm{ cm}$. An object is placed $30 \mathrm{ cm}$ from the Combination.
 Find the image position.
 
-</details>
 <summary>Solution</summary>
 
 Combined power:
@@ -382,7 +374,6 @@ Light.
 
 ## Problem Set
 
-<details>
 <summary>Problem 1: Concave Mirror — Object Beyond C</summary>
 
 An object is placed $25 \mathrm{ cm}$ in front of a concave mirror with radius of curvature
@@ -405,15 +396,11 @@ Real, inverted, diminished image at $16.7 \mathrm{ cm}$ in front of the mirror.
 _If you get this wrong, revise: Concave mirror image formation table and the mirror equation sign
 Convention._
 
-</details>
-
-<details>
 <summary>Problem 2: Snell's Law — Glass Block</summary>
 
 Light enters a glass block ($n = 1.52$) from air at an angle of $55^\circ$ to the normal. Find the
 Angle of refraction.
 
-</details>
 <summary>Solution</summary>
 
 $$\sin\theta_2 = \frac{n_1}{n_2}\sin\theta_1 = \frac{1.0}{1.52}\sin 55^\circ = \frac{0.8192}{1.52} = 0.539$$
@@ -422,14 +409,11 @@ $$\theta_2 = 32.6^\circ$$
 
 _If you get this wrong, revise: Snell's law and refractive index definition._
 
-<details>
 <summary>Problem 3: Critical Angle — Water-Diamond Interface</summary>
 
 Find the critical angle for a water-diamond interface. ($n_{\mathrm{water}} = 1.33$
 $n_{\mathrm{diamond}} = 2.42$)
 
-</details>
-<details>
 <summary>Solution</summary>
 
 Since $n_{\mathrm{diamond}} \gt n_{\mathrm{water}}$TIR occurs when light travels from diamond to
@@ -442,15 +426,11 @@ $$\theta_c = 33.3^\circ$$
 _If you get this wrong, revise: Conditions for total internal reflection — the light must travel
 from The denser to the less dense medium._
 
-</details>
-
-<details>
 <summary>Problem 4: Convex Lens — Real Image</summary>
 
 An object $3 \mathrm{ cm}$ tall is placed $12 \mathrm{ cm}$ from a convex lens of focal length
 $8 \mathrm{ cm}$. Find the image height and nature.
 
-</details>
 <summary>Solution</summary>
 
 $$\frac{1}{v} = \frac{1}{8} - \frac{1}{12} = \frac{3 - 2}{24} = \frac{1}{24}$$
@@ -466,14 +446,11 @@ Side.
 
 _If you get this wrong, revise: Thin lens equation and the convex lens image formation table._
 
-<details>
 <summary>Problem 5: Diverging Lens — Virtual Image</summary>
 
 A diverging lens has a focal length of $15 \mathrm{ cm}$. An object is placed $20 \mathrm{ cm}$ From
 the lens. Find the image position and magnification.
 
-</details>
-<details>
 <summary>Solution</summary>
 
 $$\frac{1}{v} = \frac{1}{-15} - \frac{1}{20} = \frac{-4 - 3}{60} = \frac{-7}{60}$$
@@ -489,15 +466,11 @@ The image is upright (positive height) and diminished.
 _If you get this wrong, revise: Sign convention for diverging lenses — $f$ is negative, and virtual
 Images have negative $v$._
 
-</details>
-
-<details>
 <summary>Problem 6: Concave Mirror — Virtual Image</summary>
 
 An object $2 \mathrm{ cm}$ tall is placed $6 \mathrm{ cm}$ from a concave mirror of focal length
 $10 \mathrm{ cm}$. Find the image position, height, and nature.
 
-</details>
 <summary>Solution</summary>
 
 The object is inside $F$So the image should be virtual, upright, and magnified.
@@ -517,14 +490,11 @@ $$h_i = 2.5 \times 2 = 5 \mathrm{ cm}$$
 _If you get this wrong, revise: Concave mirror cases when the object is inside $F$ and the sign
 Convention for virtual images._
 
-<details>
 <summary>Problem 7: Refraction — Water to Air</summary>
 
 A light ray travels from water ($n = 1.33$) to air at an angle of incidence of $40^\circ$. Does
 total Internal reflection occur? If not, find the angle of refraction.
 
-</details>
-<details>
 <summary>Solution</summary>
 
 Critical angle for water-air:
@@ -548,15 +518,11 @@ The refracted ray bends away from the normal (as expected going from denser to l
 _If you get this wrong, revise: Conditions for total internal reflection and Snell's law for light
 Going from denser to less dense media._
 
-</details>
-
-<details>
 <summary>Problem 8: Convex Lens — Object at 2F</summary>
 
 An object is placed $30 \mathrm{ cm}$ from a convex lens of focal length $15 \mathrm{ cm}$. Find The
 image position and magnification. What special case is this?
 
-</details>
 <summary>Solution</summary>
 
 $$\frac{1}{v} = \frac{1}{15} - \frac{1}{30} = \frac{2 - 1}{30} = \frac{1}{30}$$
@@ -571,14 +537,11 @@ Object is at $2F$ — the image forms at $2F'$ on the other side.
 _If you get this wrong, revise: Convex lens image formation table — the case where the object is at
 $2F$._
 
-<details>
 <summary>Problem 9: Lens Power</summary>
 
 A person has myopia with a far point of $50 \mathrm{ cm}$. What power of diverging lens is needed To
 correct their vision?
 
-</details>
-<details>
 <summary>Solution</summary>
 
 The lens must form a virtual image of a distant object (at infinity) at the person's far point
@@ -592,16 +555,12 @@ A diverging lens of power $-2.0 \mathrm{ D}$ (focal length $-50 \mathrm{ cm}$) i
 
 _If you get this wrong, revise: Defects of vision and the sign convention for corrective lenses._
 
-</details>
-
-<details>
 <summary>Problem 10: Compound Microscope</summary>
 
 A compound microscope has an objective lens of focal length $0.5 \mathrm{ cm}$ and an eyepiece of
 Focal length $2.0 \mathrm{ cm}$. The object is placed $0.6 \mathrm{ cm}$ from the objective. The
 Image formed by the objective is $15 \mathrm{ cm}$ from the eyepiece. Find the total magnification.
 
-</details>
 <summary>Solution</summary>
 
 **Objective lens:**
@@ -630,15 +589,12 @@ $$M = M_o \times M_e = 5 \times 0.154 = 0.77$$
 
 _If you get this wrong, revise: Compound microscope magnification formula and two-lens systems._
 
-<details>
 <summary>Problem 11: Astronomical Telescope</summary>
 
 An astronomical telescope has an objective lens of focal length $80 \mathrm{ cm}$ and an eyepiece of
 Focal length $4 \mathrm{ cm}$. Find the magnification in normal adjustment and the length of the
 Telescope.
 
-</details>
-<details>
 <summary>Solution</summary>
 
 In normal adjustment (final image at infinity):
@@ -652,16 +608,12 @@ $$L = f_o + f_e = 80 + 4 = 84 \mathrm{ cm}$$
 _If you get this wrong, revise: Astronomical telescope in normal adjustment and the meaning of tube
 Length._
 
-</details>
-
-<details>
 <summary>Problem 12: Plane Mirror — Multiple Reflections</summary>
 
 Two plane mirrors are placed at $60^\circ$ to each other. A light ray strikes one mirror at an angle
 Of incidence of $40^\circ$. How many reflections does the ray undergo before exiting the mirror
 System?
 
-</details>
 <summary>Solution</summary>
 
 The angle between the mirrors is $\alpha = 60^\circ$. The number of reflections $n$ is determined
@@ -679,14 +631,11 @@ $60^\circ$. Starting at $40^\circ$: second reflection at $20^\circ$Third reflect
 _If you get this wrong, revise: Law of reflection and how the angle of incidence changes at
 successive Mirror surfaces._
 
-<details>
 <summary>Problem 13: Apparent Depth</summary>
 
 A coin is at the bottom of a pool of water ($n = 1.33$) that is $2.0 \mathrm{ m}$ deep. How deep
 does The coin appear to be when viewed from directly above?
 
-</details>
-<details>
 <summary>Solution</summary>
 
 The apparent depth formula (for near-normal viewing):
@@ -699,15 +648,11 @@ Position.
 _If you get this wrong, revise: Refraction and the relationship between real depth and apparent
 Depth._
 
-</details>
-
-<details>
 <summary>Problem 14: Optical Fibre — Maximum Acceptance Angle</summary>
 
 An optical fibre has a core refractive index of $1.62$ and cladding refractive index of $1.52$. Find
 The maximum acceptance angle (from the fibre axis) for light to undergo total internal reflection.
 
-</details>
 <summary>Solution</summary>
 
 Critical angle at the core-cladding boundary:
@@ -726,7 +671,6 @@ Light entering at angles less than $20.3^\circ$ to the axis will undergo total i
 _If you get this wrong, revise: Optical fibres, critical angle, and the relationship between the
 Angle to the axis and the angle to the normal._
 
-<details>
 <summary>Problem 15: Dispersion — Prism</summary>
 
 White light enters a glass prism ($n_{\mathrm{red}} = 1.51$$n_{\mathrm{violet}} = 1.53$) at an Angle
@@ -734,8 +678,6 @@ of incidence of $45^\circ$. The prism has an apex angle of $60^\circ$. Explain w
 is deviated more than the red light and calculate the angle of refraction for each colour at The
 first surface.
 
-</details>
-<details>
 <summary>Solution</summary>
 
 Since $n_{\mathrm{violet}} \gt n_{\mathrm{red}}$Violet light travels slower in the glass and is
@@ -966,7 +908,6 @@ An object of height $3.0 \mathrm{ cm}$ is placed $20 \mathrm{ cm}$ from a conver
 length $15 \mathrm{ cm}$. Find the image position, height, and nature (real/virtual,
 Upright/inverted, magnified/diminished).
 
-</details>
 <summary>Solution</summary>
 
 Using the thin lens equation: $\frac{1}{f} = \frac{1}{v} + \frac{1}{u}$
@@ -990,7 +931,6 @@ Light of wavelength $590 \mathrm{ nm}$ is incident normally on a diffraction gra
 $400 \mathrm{ lines/mm}$. Calculate the angles of the first two orders and the maximum number Of
 orders visible.
 
-<details>
 <summary>Solution</summary>
 
 $$d = \frac{1}{400 \times 10^3} = 2.50 \times 10^{-6} \mathrm{ m}$$
@@ -1039,7 +979,6 @@ refractive index.
 
 (d) Explain why total internal reflection cannot occur when light travels from air into glass.
 
-</details>
 <summary>Solution</summary>
 
 (a)
@@ -1090,7 +1029,6 @@ An object is placed $0.6 \mathrm{ cm}$ from the objective lens.
 
 (d) State two differences between a compound microscope and an astronomical telescope.
 
-<details>
 <summary>Solution</summary>
 
 (a) Objective lens: $u_1 = 0.6 \mathrm{ cm}$$f_1 = 0.5 \mathrm{ cm}$
@@ -1143,7 +1081,6 @@ light is $1.532$.
 
 (e) Calculate the angular dispersion between red and violet light.
 
-</details>
 <summary>Solution</summary>
 
 (a) At the first face: $n\sin\theta_r = \sin\theta_i$
@@ -1194,7 +1131,6 @@ Angular dispersion: $\Delta D = 40.4^\circ - 38.8^\circ = 1.6^\circ$
 Describe the diffraction pattern observed and explain how it differs if the gap width is Reduced to
 $0.3 \mathrm{ m}$.
 
-<details>
 <summary>Solution</summary>
 
 (a) A wavefront is a surface (or line in 2D) on which all points are in phase. For a plane wave,
@@ -1229,7 +1165,6 @@ Find the image position, magnification, and nature.
 Lens. The image is three times the size of the object. Find the focal length of the lens and The
 object distance.
 
-</details>
 <summary>Solution</summary>
 
 (a) A **real image** is formed where light rays actually converge. It can be projected onto a Screen

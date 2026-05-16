@@ -55,7 +55,6 @@ Calculus or graphical methods must be used. :::
 A car starts from rest and accelerates uniformly at $3 \mathrm{ m/s}^2$ for $5$ seconds. Find the
 Distance travelled.
 
-<details>
 <summary>Solution</summary>
 
 Using $s = ut + \frac{1}{2}at^2$:
@@ -67,7 +66,6 @@ $$s = 0 + \frac{1}{2}(3)(5)^2 = \frac{1}{2}(3)(25) = 37.5 \mathrm{ m}$$
 A cyclist travelling at $8 \mathrm{ m/s}$ applies the brakes and decelerates uniformly at
 $2 \mathrm{ m/s}^2$. Find the time taken to stop and the distance travelled during braking.
 
-</details>
 <summary>Solution</summary>
 
 Using $v = u + at$ with $v = 0$:
@@ -89,7 +87,6 @@ The cyclist takes $4 \mathrm{ s}$ to stop and travels $16 \mathrm{ m}$ during br
 A ball is thrown vertically upwards with initial velocity $20 \mathrm{ m/s}$. Find the maximum
 Height reached and the time taken to reach it.
 
-<details>
 <summary>Solution</summary>
 
 At maximum height, $v = 0$:
@@ -140,7 +137,6 @@ States otherwise. :::
 
 An object is dropped from a height of $80 \mathrm{ m}$. How long does it take to reach the ground?
 
-</details>
 <summary>Solution</summary>
 
 $$s = ut + \frac{1}{2}gt^2$$
@@ -183,7 +179,6 @@ $$T = \frac{2u\sin\theta}{g}$$
 A ball is thrown with initial velocity $15 \mathrm{ m/s}$ at $30^\circ$ above the horizontal. Find
 The range and maximum height.
 
-<details>
 <summary>Solution</summary>
 
 Horizontal component: $u_x = 15\cos 30^\circ = 12.99 \mathrm{ m/s}$
@@ -207,7 +202,6 @@ $$R = u_x \times T = 12.99 \times 1.53 = 19.87 \mathrm{ m}$$
 A stone is thrown horizontally from a cliff $60 \mathrm{ m}$ high with speed $15 \mathrm{ m/s}$.
 Find the horizontal distance it travels before hitting the ground.
 
-</details>
 <summary>Solution</summary>
 
 **Vertical motion** (to find time of flight):
@@ -273,7 +267,6 @@ A free body diagram shows all the forces acting on a single object. Follow these
 A block of mass $5 \mathrm{ kg}$ is placed on a smooth inclined plane at $30^\circ$ to the
 Horizontal. Find the acceleration down the plane.
 
-<details>
 <summary>Solution</summary>
 
 Forces parallel to the plane: $mg\sin\theta = 5(9.81)\sin 30^\circ = 24.525 \mathrm{ N}$
@@ -291,7 +284,6 @@ $$a = 4.91 \mathrm{ m/s}^2$$
 Two objects of mass $3 \mathrm{ kg}$ and $5 \mathrm{ kg}$ are connected by a light inextensible
 String over a smooth pulley (Atwood machine). Find the acceleration and the tension in the string.
 
-</details>
 <summary>Solution</summary>
 
 For the $3 \mathrm{ kg}$ mass (let upward be positive):
@@ -332,7 +324,6 @@ Where $\mu$ is the coefficient of friction and $N$ is the normal reaction force.
 A $10 \mathrm{ kg}$ block rests on a rough horizontal surface with $\mu = 0.3$. A horizontal force
 Of $40 \mathrm{ N}$ is applied. Does the block move?
 
-<details>
 <summary>Solution</summary>
 
 Normal reaction: $N = mg = 10 \times 9.81 = 98.1 \mathrm{ N}$
@@ -419,7 +410,6 @@ A roller coaster car of mass $500 \mathrm{ kg}$ starts from rest at point `A`$20
 the ground. It descends to point `B`$5 \mathrm{ m}$ above the ground. Find its speed at `B`
 Neglecting friction.
 
-</details>
 <summary>Solution</summary>
 
 At `A`: $E_k = 0$$E_p = 500 \times 9.81 \times 20 = 98100 \mathrm{ J}$
@@ -442,7 +432,6 @@ A $2 \mathrm{ kg}$ block slides down a rough inclined plane of length $5 \mathrm
 To the horizontal. The coefficient of friction is $0.2$. Find the speed at the bottom starting from
 Rest.
 
-<details>
 <summary>Solution</summary>
 
 Force down the plane: $mg\sin 30^\circ = 2(9.81)(0.5) = 9.81 \mathrm{ N}$
@@ -475,7 +464,6 @@ A car of mass $1200 \mathrm{ kg}$ travels at a constant speed of $20 \mathrm{ m/
 $\sin^{-1}(0.1)$. The total resistive force is $300 \mathrm{ N}$. Find the power output of the
 Engine.
 
-</details>
 <summary>Solution</summary>
 
 Component of weight along the slope:
@@ -524,7 +512,6 @@ A $0.15 \mathrm{ kg}$ cricket ball travelling at $30 \mathrm{ m/s}$ is hit back 
 At $20 \mathrm{ m/s}$. If the bat is in contact with the ball for $0.005 \mathrm{ s}$Find the
 Average force exerted.
 
-<details>
 <summary>Solution</summary>
 
 Take the initial direction as positive.
@@ -553,7 +540,6 @@ Energy is only conserved in perfectly elastic collisions. :::
 A $2 \mathrm{ kg}$ object moving at $5 \mathrm{ m/s}$ collides head-on with a $3 \mathrm{ kg}$
 Object at rest. If the collision is perfectly inelastic, find the common velocity after collision.
 
-</details>
 <summary>Solution</summary>
 
 By conservation of momentum:
@@ -571,7 +557,6 @@ $$v = 2 \mathrm{ m/s}$$
 A $2 \mathrm{ kg}$ object moving at $5 \mathrm{ m/s}$ collides elastically with a $3 \mathrm{ kg}$
 Object at rest. Find the velocities after collision.
 
-<details>
 <summary>Solution</summary>
 
 Conservation of momentum:
@@ -648,7 +633,6 @@ friction, normal Reaction, or a combination of these. :::
 A car of mass $1000 \mathrm{ kg}$ travels around a roundabout of radius $25 \mathrm{ m}$ at
 $10 \mathrm{ m/s}$. Find the centripetal force.
 
-</details>
 <summary>Solution</summary>
 
 $$F_c = \frac{mv^2}{r} = \frac{1000 \times 10^2}{25} = \frac{100000}{25} = 4000 \mathrm{ N}$$
@@ -660,7 +644,6 @@ This force is provided by friction between the tyres and the road.
 A particle of mass $0.5 \mathrm{ kg}$ is attached to a string of length $0.8 \mathrm{ m}$ and
 Whirled in a horizontal circle at $3 \mathrm{ rev/s}$. Find the tension in the string.
 
-<details>
 <summary>Solution</summary>
 
 Angular velocity: $\omega = 2\pi \times 3 = 6\pi \mathrm{ rad/s}$
@@ -675,7 +658,6 @@ A car of mass $800 \mathrm{ kg}$ travels at $15 \mathrm{ m/s}$ around a banked c
 $50 \mathrm{ m}$ and angle $20^\circ$. Find the normal reaction force and the frictional force
 Required if the car does not rely on friction alone.
 
-</details>
 <summary>Solution</summary>
 
 Resolving vertically: $N\cos 20^\circ = mg$
@@ -763,7 +745,6 @@ Find the orbital speed of a satellite orbiting the Earth at a height of $300 \ma
 Surface. (Earth's radius $= 6.37 \times 10^6 \mathrm{ m}$Earth's mass
 $= 5.97 \times 10^{24} \mathrm{ kg}$)
 
-<details>
 <summary>Solution</summary>
 
 $$r = 6.37 \times 10^6 + 300 \times 10^3 = 6.67 \times 10^6 \mathrm{ m}$$
@@ -802,7 +783,6 @@ $$v = \sqrt{5.97 \times 10^7} = 7727 \mathrm{ m/s}$$
 - For circular motion, always identify what provides the centripetal force.
 - Remember that $g$ acts **downward**; use negative sign when taking upward as positive.
 
-</details>
 <summary>Exam-Style Practice Questions</summary>
 
 **Question 1:** A stone is thrown horizontally from a cliff $60 \mathrm{ m}$ high with speed
@@ -819,7 +799,6 @@ Horizontal distance: $d = 15 \times 3.50 = 52.5 \mathrm{ m}$
 **Question 2:** Two objects of mass $3 \mathrm{ kg}$ and $5 \mathrm{ kg}$ are connected by a light
 Inextensible string over a smooth pulley. Find the acceleration and the tension.
 
-<details>
 <summary>Solution</summary>
 
 $$a = \frac{(m_2 - m_1)g}{m_1 + m_2} = \frac{(5 - 3)(9.81)}{3 + 5} = \frac{19.62}{8} = 2.45 \mathrm{ m/s}^2$$
@@ -829,7 +808,6 @@ $$T = \frac{2m_1m_2g}{m_1 + m_2} = \frac{2(3)(5)(9.81)}{8} = 36.79 \mathrm{ N}$$
 **Question 3:** A $0.5 \mathrm{ kg}$ ball is dropped from a height of $2 \mathrm{ m}$ onto a hard
 Floor and rebounds to $1.5 \mathrm{ m}$. Find the impulse exerted by the floor.
 
-</details>
 <summary>Solution</summary>
 
 Velocity just before impact: $v = \sqrt{2gh} = \sqrt{2(9.81)(2)} = 6.26 \mathrm{ m/s}$ (downward)
@@ -844,7 +822,6 @@ Impulse $= 5.84 \mathrm{ N s}$ (upward)
 $5 \mathrm{ m}$ at $30^\circ$ to the horizontal. The coefficient of friction is $0.2$. Find the
 Speed at the bottom if the object starts from rest.
 
-<details>
 <summary>Solution</summary>
 
 Force down the plane: $mg\sin 30^\circ = 3(9.81)(0.5) = 14.715 \mathrm{ N}$
@@ -865,7 +842,6 @@ $$v = 5.66 \mathrm{ m/s}$$
 Mass is $5.97 \times 10^{24} \mathrm{ kg}$ and radius is $6.37 \times 10^6 \mathrm{ m}$Find the
 Orbital period.
 
-</details>
 <summary>Solution</summary>
 
 $$r = 6.37 \times 10^6 + 500 \times 10^3 = 6.87 \times 10^6 \mathrm{ m}$$
@@ -933,7 +909,6 @@ Keep consistent time even as the swing gradually decreases. :::
 A mass of $0.5 \mathrm{ kg}$ is attached to a spring with constant $200 \mathrm{ N/m}$ and displaced
 $0.05 \mathrm{ m}$ from equilibrium. Find the period, maximum velocity, and maximum acceleration.
 
-<details>
 <summary>Solution</summary>
 
 $$T = 2\pi\sqrt{\frac{m}{k}} = 2\pi\sqrt{\frac{0.5}{200}} = 2\pi\sqrt{0.0025} = 2\pi \times 0.05 = 0.314 \mathrm{ s}$$
@@ -944,18 +919,13 @@ $$v_{\max} = \omega A = 20.0 \times 0.05 = 1.00 \mathrm{ m/s}$$
 
 $$a_{\max} = \omega^2 A = 400 \times 0.05 = 20.0 \mathrm{ m/s}^2$$
 
-</details>
-
 ### Worked Example 16
 
 A simple pendulum has a length of $1.0 \mathrm{ m}$. Find its period.
 
-<details>
 <summary>Solution</summary>
 
 $$T = 2\pi\sqrt{\frac{L}{g}} = 2\pi\sqrt{\frac{1.0}{9.81}} = 2\pi \times 0.319 = 2.01 \mathrm{ s}$$
-
-</details>
 
 ---
 
@@ -979,7 +949,6 @@ At maximum displacement ($x = A$): all energy is potential ($E_p = E_{\mathrm{to
 A mass-spring system has mass $0.2 \mathrm{ kg}$Spring constant $80 \mathrm{ N/m}$And amplitude
 $0.03 \mathrm{ m}$. Find the total energy and the speed when the displacement is $0.02 \mathrm{ m}$.
 
-<details>
 <summary>Solution</summary>
 
 $$E_{\mathrm{total}} = \frac{1}{2}kA^2 = \frac{1}{2}(80)(0.03)^2 = \frac{1}{2}(80)(0.0009) = 0.036 \mathrm{ J}$$
@@ -989,8 +958,6 @@ At $x = 0.02 \mathrm{ m}$:
 $$E_k = E_{\mathrm{total}} - E_p = 0.036 - \frac{1}{2}(80)(0.02)^2 = 0.036 - 0.016 = 0.020 \mathrm{ J}$$
 
 $$v = \sqrt{\frac{2E_k}{m}} = \sqrt{\frac{2 \times 0.020}{0.2}} = \sqrt{0.20} = 0.447 \mathrm{ m/s}$$
-
-</details>
 
 ---
 
@@ -1032,14 +999,11 @@ This is called resonance.
 
 ## Problem Set
 
-<details>
 <summary>Problem 1: SUVAT — Deceleration</summary>
 
 A car travelling at $25 \mathrm{ m/s}$ decelerates uniformly to rest in $4 \mathrm{ s}$. Find the
 Deceleration and the distance travelled.
 
-</details>
-<details>
 <summary>Solution</summary>
 
 $$v = u + at \implies 0 = 25 + a(4) \implies a = -6.25 \mathrm{ m/s}^2$$
@@ -1048,15 +1012,11 @@ $$s = ut + \frac{1}{2}at^2 = 25(4) + \frac{1}{2}(-6.25)(16) = 100 - 50 = 50 \mat
 
 _If you get this wrong, revise: SUVAT equations and the sign convention for deceleration._
 
-</details>
-
-<details>
 <summary>Problem 2: Projectile — Maximum Height and Range</summary>
 
 A ball is thrown with speed $20 \mathrm{ m/s}$ at $45^\circ$ above the horizontal. Find the maximum
 Height and the horizontal range.
 
-</details>
 <summary>Solution</summary>
 
 $$u_x = 20\cos 45^\circ = 14.14 \mathrm{ m/s}$$
@@ -1069,14 +1029,11 @@ $$R = \frac{u^2 \sin 2\theta}{g} = \frac{400 \times \sin 90^\circ}{9.81} = \frac
 
 _If you get this wrong, revise: Projectile motion formulas for maximum height and range._
 
-<details>
 <summary>Problem 3: Newton's Second Law — Inclined Plane</summary>
 
 A $4 \mathrm{ kg}$ block is placed on a rough inclined plane at $35^\circ$ to the horizontal. The
 Coefficient of kinetic friction is $0.25$. Find the acceleration of the block sliding down.
 
-</details>
-<details>
 <summary>Solution</summary>
 
 $$F_{\parallel} = mg\sin 35^\circ = 4 \times 9.81 \times 0.5736 = 22.51 \mathrm{ N}$$
@@ -1091,16 +1048,12 @@ $$a = \frac{14.47}{4} = 3.62 \mathrm{ m/s}^2$$
 
 _If you get this wrong, revise: Forces on an inclined plane and kinetic friction._
 
-</details>
-
-<details>
 <summary>Problem 4: Conservation of Energy with Friction</summary>
 
 A $1.5 \mathrm{ kg}$ block slides from rest down a curved frictionless ramp of height
 $3 \mathrm{ m}$ Onto a rough horizontal surface. The coefficient of friction on the horizontal
 surface is $0.3$. How far does the block slide before stopping?
 
-</details>
 <summary>Solution</summary>
 
 By conservation of energy, the kinetic energy at the bottom of the ramp equals the potential energy
@@ -1118,14 +1071,11 @@ $$d = \frac{44.15}{4.41} = 10.01 \mathrm{ m}$$
 
 _If you get this wrong, revise: Conservation of energy and work done against friction._
 
-<details>
 <summary>Problem 5: Elastic Collision — Equal Masses</summary>
 
 A ball of mass $2 \mathrm{ kg}$ moving at $6 \mathrm{ m/s}$ collides elastically with a stationary
 Ball of the same mass. Find the velocities after collision.
 
-</details>
-<details>
 <summary>Solution</summary>
 
 For an elastic collision between equal masses, the balls exchange velocities:
@@ -1140,16 +1090,12 @@ Conservation of KE: $\frac{1}{2}(2)(36) = 36 = \frac{1}{2}(2)(0) + \frac{1}{2}(2
 
 _If you get this wrong, revise: Elastic collisions between equal masses and conservation laws._
 
-</details>
-
-<details>
 <summary>Problem 6: Impulse from Force-Time Graph</summary>
 
 A force-time graph shows a constant force of $50 \mathrm{ N}$ acting for $0.1 \mathrm{ s}$Followed
 By a linearly decreasing force from $50 \mathrm{ N}$ to $0 \mathrm{ N}$ over the next
 $0.2 \mathrm{ s}$. Find the impulse and the change in velocity of a $5 \mathrm{ kg}$ object.
 
-</details>
 <summary>Solution</summary>
 
 Impulse = area under the F-t graph:
@@ -1165,15 +1111,12 @@ $$\Delta v = \frac{J}{m} = \frac{10.0}{5} = 2.0 \mathrm{ m/s}$$
 _If you get this wrong, revise: Impulse as the area under a force-time graph and the
 impulse-momentum Theorem._
 
-<details>
 <summary>Problem 7: Centripetal Force — Conical Pendulum</summary>
 
 A conical pendulum consists of a $0.5 \mathrm{ kg}$ mass on a string of length $1.0 \mathrm{ m}$
 Swinging in a horizontal circle of radius $0.8 \mathrm{ m}$. Find the tension and the speed of the
 Mass.
 
-</details>
-<details>
 <summary>Solution</summary>
 
 The string makes an angle with the vertical. The vertical component of tension balances weight:
@@ -1199,15 +1142,11 @@ $$v = 3.23 \mathrm{ m/s}$$
 _If you get this wrong, revise: Circular motion in a vertical plane and resolving forces for conical
 Pendulums._
 
-</details>
-
-<details>
 <summary>Problem 8: Gravitational Field Strength — Above Surface</summary>
 
 Find the gravitational field strength at a height of $300 \mathrm{ km}$ above the Earth's surface.
 (Earth's radius $= 6.37 \times 10^6 \mathrm{ m}$Earth's mass $= 5.97 \times 10^{24} \mathrm{ kg}$)
 
-</details>
 <summary>Solution</summary>
 
 $$r = 6.37 \times 10^6 + 3.0 \times 10^5 = 6.67 \times 10^6 \mathrm{ m}$$
@@ -1221,14 +1160,11 @@ This is less than $9.81 \mathrm{ N/kg}$ at the surface, as expected.
 _If you get this wrong, revise: Newton's law of gravitation and gravitational field strength at a
 Distance from a spherical body._
 
-<details>
 <summary>Problem 9: SHM — Finding Velocity at a Given Displacement</summary>
 
 A mass-spring system has mass $0.3 \mathrm{ kg}$Spring constant $120 \mathrm{ N/m}$And amplitude
 $0.04 \mathrm{ m}$. Find the velocity when the displacement is $0.02 \mathrm{ m}$.
 
-</details>
-<details>
 <summary>Solution</summary>
 
 $$\omega = \sqrt{\frac{k}{m}} = \sqrt{\frac{120}{0.3}} = \sqrt{400} = 20 \mathrm{ rad/s}$$
@@ -1240,14 +1176,10 @@ $$v = 20 \times 0.0346 = 0.693 \mathrm{ m/s}$$
 _If you get this wrong, revise: SHM velocity equation and the relationship between velocity and
 Displacement._
 
-</details>
-
-<details>
 <summary>Problem 10: Simple Pendulum — Finding Length</summary>
 
 A simple pendulum has a period of $2.5 \mathrm{ s}$. Find its length.
 
-</details>
 <summary>Solution</summary>
 
 $$T = 2\pi\sqrt{\frac{L}{g}}$$
@@ -1260,14 +1192,11 @@ $$L = 0.1583 \times 9.81 = 1.55 \mathrm{ m}$$
 
 _If you get this wrong, revise: Simple pendulum period formula and rearranging it to find $L$._
 
-<details>
 <summary>Problem 11: Work Done by a Spring</summary>
 
 A spring with constant $500 \mathrm{ N/m}$ is stretched $0.08 \mathrm{ m}$ from its natural length.
 Find the work done and the elastic potential energy stored.
 
-</details>
-<details>
 <summary>Solution</summary>
 
 $$W = \frac{1}{2}kx^2 = \frac{1}{2}(500)(0.08)^2 = \frac{1}{2}(500)(0.0064) = 1.6 \mathrm{ J}$$
@@ -1276,15 +1205,11 @@ The work done equals the elastic potential energy stored: $E_p = 1.6 \mathrm{ J}
 
 _If you get this wrong, revise: Hooke's law and work done in stretching a spring._
 
-</details>
-
-<details>
 <summary>Problem 12: Power on an Incline</summary>
 
 A $60 \mathrm{ kg}$ person runs up a flight of stairs of vertical height $5 \mathrm{ m}$ in
 $8 \mathrm{ s}$. Find the average power developed.
 
-</details>
 <summary>Solution</summary>
 
 $$W = mgh = 60 \times 9.81 \times 5 = 2943 \mathrm{ J}$$
@@ -1293,15 +1218,12 @@ $$P = \frac{W}{t} = \frac{2943}{8} = 367.9 \mathrm{ W}$$
 
 _If you get this wrong, revise: Work done against gravity and the definition of power._
 
-<details>
 <summary>Problem 13: Vertical Circular Motion — Minimum Speed</summary>
 
 A bucket of water of mass $0.8 \mathrm{ kg}$ is whirled in a vertical circle of radius
 $0.6 \mathrm{ m}$. Find the minimum speed at the top of the circle for the water to remain in the
 bucket.
 
-</details>
-<details>
 <summary>Solution</summary>
 
 At the top of the circle, the minimum condition is when the normal reaction (or tension) is zero:
@@ -1313,16 +1235,12 @@ $$v_{\mathrm{top}} = \sqrt{gr} = \sqrt{9.81 \times 0.6} = \sqrt{5.886} = 2.43 \m
 _If you get this wrong, revise: Vertical circular motion and the minimum speed condition at the top
 of The circle._
 
-</details>
-
-<details>
 <summary>Problem 14: Geostationary Orbit</summary>
 
 A geostationary satellite orbits at a distance of $4.23 \times 10^7 \mathrm{ m}$ from the centre of
 The Earth. Find its orbital speed and verify that the orbital period is approximately 24 hours.
 (Earth's mass $= 5.97 \times 10^{24} \mathrm{ kg}$)
 
-</details>
 <summary>Solution</summary>
 
 $$v = \sqrt{\frac{GM}{r}} = \sqrt{\frac{6.67 \times 10^{-11} \times 5.97 \times 10^{24}}{4.23 \times 10^7}}$$
@@ -1335,14 +1253,11 @@ This confirms the geostationary orbit period is approximately 24 hours.
 
 _If you get this wrong, revise: Orbital motion, orbital speed, and orbital period formulas._
 
-<details>
 <summary>Problem 15: Energy in SHM — Fraction of KE</summary>
 
 A mass-spring system oscillates with amplitude $A$. At what displacement is the kinetic energy equal
 To half the total energy?
 
-</details>
-<details>
 <summary>Solution</summary>
 
 $$E_k = \frac{1}{2}E_{\mathrm{total}}$$
@@ -1362,8 +1277,6 @@ For the A-Level treatment of this topic, see
 
 _If you get this wrong, revise: Energy exchange in SHM and the expressions for $E_k$ and $E_p$ as
 Functions of displacement._
-
-</details>
 
 ---
 
@@ -1535,7 +1448,6 @@ $3.0 \mathrm{ m}$. At the bottom, it collides with and sticks to a stationary bl
 $3.0 \mathrm{ kg}$. The combined blocks then slide across a rough horizontal surface ($\mu_k = 0.3$)
 before coming to rest. Find the total distance travelled on the rough surface.
 
-<details>
 <summary>Solution</summary>
 
 Speed at bottom of ramp (conservation of energy, no friction):
@@ -1554,8 +1466,6 @@ $$91.8 = 23.5d$$
 
 $$d = \frac{91.8}{23.5} = 3.90 \mathrm{ m}$$
 
-</details>
-
 ### Worked Example 12
 
 A rocket of mass $1000 \mathrm{ kg}$ is launched vertically from rest. The engine provides a
@@ -1567,7 +1477,6 @@ as fuel is burned. Assume $g = 9.81 \mathrm{ m/s}^2$ and neglect air resistance.
 
 (b) Calculate the height of the rocket at burnout.
 
-<details>
 <summary>Solution</summary>
 
 (a) This requires the rocket equation, but for DSE we simplify. The average mass during the burn:
@@ -1586,8 +1495,6 @@ a full treatment, use $v = v_0 + u\ln(m_0/m_f) - gt$But this is beyond the DSE s
 
 (b) Using average acceleration: $h = \frac{1}{2}at^2 = \frac{1}{2}(23.5)(100) = 1175 \mathrm{ m}$
 
-</details>
-
 ### Worked Example 13
 
 A uniform ladder of length $5.0 \mathrm{ m}$ and mass $20 \mathrm{ kg}$ leans against a smooth
@@ -1596,7 +1503,6 @@ $70 \mathrm{ kg}$ stands on the ladder at a distance of $3.0 \mathrm{ m}$ from t
 minimum coefficient of static friction between the ladder and the floor for the Ladder to be in
 equilibrium.
 
-<details>
 <summary>Solution</summary>
 
 Forces: weight of ladder $20g$ (at centre, $2.5 \mathrm{ m}$ from bottom), weight of person $70g$
@@ -1627,8 +1533,6 @@ $$\mu_s \geqslant \frac{f}{R_F} = \frac{R_W}{R_F} = \frac{237.8}{882.9} = 0.269$
 
 Minimum coefficient of static friction: $\mu_s = 0.27$.
 
-</details>
-
 ---
 
 ## Exam-Style Questions
@@ -1647,7 +1551,6 @@ side.
 
 (d) Explain why the ball does not reach $60^\circ$ on the other side if air resistance is Present.
 
-<details>
 <summary>Solution</summary>
 
 (a) Height drop: $h = L(1 - \cos 60^\circ) = 1.0(1 - 0.5) = 0.50 \mathrm{ m}$
@@ -1669,8 +1572,6 @@ $$v = \sqrt{7.18} = 2.68 \mathrm{ m/s}$$
 energy decreases, so the ball cannot reach the same height on the other side. The Final height will
 be less than the initial height by an amount equal to the total energy lost To air resistance.
 
-</details>
-
 ### Question 2 (DSE Structured)
 
 Two ice skaters, A ($60 \mathrm{ kg}$) and B ($80 \mathrm{ kg}$), face each other on frictionless
@@ -1685,7 +1586,6 @@ Ice. They push off each other and A moves away at $3.0 \mathrm{ m/s}$.
 (d) If A had pushed harder so that A's speed was $4.0 \mathrm{ m/s}$Calculate the speed of B And the
 change in total kinetic energy compared with part (b).
 
-<details>
 <summary>Solution</summary>
 
 (a) By conservation of momentum (initially at rest):
@@ -1719,8 +1619,6 @@ New total KE $= 480 + 360 = 840 \mathrm{ J}$
 
 Change $= 840 - 472.5 = 367.5 \mathrm{ J}$ increase.
 
-</details>
-
 ### Question 3 (DSE Structured)
 
 A car of mass $1500 \mathrm{ kg}$ travels at $20 \mathrm{ m/s}$ around a banked curve of radius
@@ -1734,7 +1632,6 @@ Direction does friction act?
 (c) Calculate the minimum coefficient of friction required for the car to travel at
 $25 \mathrm{ m/s}$ without sliding.
 
-<details>
 <summary>Solution</summary>
 
 (a) For no friction: the horizontal component of the normal reaction provides the centripetal Force.
@@ -1781,8 +1678,6 @@ $N = \frac{1500 \times 9.81 + 10778 \times 0.4226}{0.9063} = \frac{14715 + 4555}
 $$\mu_s \geqslant \frac{f}{N} = \frac{10778}{21262} = 0.507$$
 
 Minimum coefficient of static friction: $\mu_s = 0.51$.
-
-</details>
 
 :::
 

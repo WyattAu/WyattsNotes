@@ -222,7 +222,6 @@ For an internal node with key $k$: in-order first traverses the left subtree (al
 BST property), then outputs $k$Then traverses the right subtree (all keys $\gt{} k$). By the
 Inductive hypothesis, each subtree's output is sorted. Hence the full output is sorted. $\square$
 
-<details>
 <summary>Example: Traversals of a BST</summary>
 
 ```
@@ -242,7 +241,6 @@ Inductive hypothesis, each subtree's output is sorted. Hence the full output is 
 
 <hr />
 
-</details>
 ## 5. Heaps and Heap Sort
 
 ### Binary Heap
@@ -365,16 +363,12 @@ Each key is inserted at the correct position to maintain the BST property.
 
 **Problem 2.** What is the in-order, pre-order, and post-order traversal of the BST from Problem 1?
 
-<details>
-</details>
-<details>
 <summary>Answer</summary>
 
 - In-order: 20, 30, 40, 50, 60, 70, 80
 - Pre-order: 50, 30, 20, 40, 70, 60, 80
 - Post-order: 20, 40, 30, 60, 80, 70, 50
 
-</details>
 **Problem 3.** What is the worst-case height of a BST with $n$ nodes? Give an example insertion
 Order that produces this worst case.
 
@@ -400,9 +394,6 @@ Height = 4 = $n - 1$.
 
 **Problem 4.** Delete the node with key 30 from the BST in Problem 1. Show the resulting tree.
 
-<details>
-</details>
-<details>
 <summary>Answer</summary>
 
 Node 30 has two children (20 and 40). Replace with in-order successor = 40 (smallest in right
@@ -416,7 +407,6 @@ Subtree). Delete the original 40 node (leaf).
     20  60  80
 ```
 
-</details>
 **Problem 5.** Build a max-heap from the array `[4, 10, 3, 5, 1]`. Show the array after each heapify
 Call.
 
@@ -447,9 +437,6 @@ Verify: 10 > 5 and 10 > 3; 5 > 4 and 5 > 1. ✓
 **Problem 6.** Trace heap sort on the array `[3, 1, 4, 1, 5]`. Show the array after each extraction
 Step.
 
-<details>
-</details>
-<details>
 <summary>Answer</summary>
 
 Build heap: `[5, 3, 4, 1, 1]`
@@ -463,7 +450,6 @@ Build heap: `[5, 3, 4, 1, 1]`
 
 Final: `[1, 1, 3, 4, 5]`
 
-</details>
 **Problem 7.** Prove that the in-order successor of a node in a BST (if it exists) is the leftmost
 Node in its right subtree, assuming the node has a right child.
 
@@ -477,9 +463,6 @@ Therefore, the in-order successor is the leftmost node in the right subtree. $\s
 **Problem 8.** A complete binary tree has 100 nodes. What is its height? How many leaves does it
 Have?
 
-<details>
-</details>
-<details>
 <summary>Answer</summary>
 
 Height: $h = \lfloor \log_2 100 \rfloor = 6$.
@@ -522,7 +505,6 @@ Level 5 have **no children** and are therefore leaves.
 
 Total leaves = 37 (level 6) + 13 (level 5) = 50 = $\lceil 100/2 \rceil$. ✓
 
-</details>
 **Problem 9.** Explain why heap sort is not a stable sorting algorithm. Give a concrete example
 Where stability is violated.
 
@@ -545,9 +527,6 @@ Not stable.
 **Problem 10.** Show that the pre-order traversal of a BST uniquely determines the BST if all keys
 Are distinct.
 
-<details>
-</details>
-<details>
 <summary>Answer</summary>
 
 **Proof.** The first element of a pre-order traversal is the root. All subsequent elements before
@@ -568,11 +547,8 @@ Recurse on left `[3, 1, 6, 4, 7]`: root = 3, left = `[1]`Right = `[6, 4, 7]` Rec
 
 This uniquely reconstructs the tree.
 
-</details>
-
 **Problem 11.** Write a function to compute the height of a binary tree. Prove its correctness.
 
-<details>
 <summary>Answer</summary>
 
 ```python
@@ -587,12 +563,9 @@ Inductive step: if the left subtree has height $h_L$ and right subtree has heigh
 Inductive hypothesis), then the height of the current node is $1 + \max(h_L, h_R)$Which is the
 Length of the longest root-to-leaf path. $\square$
 
-</details>
-
 **Problem 12.** Given an array representation of a min-heap `[1, 3, 2, 7, 5, 4, 8]`What are the
 Children of node 3? What is the parent of node 5?
 
-<details>
 <summary>Answer</summary>
 
 Array: `[1, 3, 2, 7, 5, 4, 8]` (0-indexed)
@@ -601,8 +574,6 @@ Children of node 3 (index 1): left = index $2(1)+1 = 3$ → value 7; right = ind
 Value 5.
 
 Parent of node 5 (index 4): parent index = $\lfloor(4-1)/2\rfloor = 1$ → value 3.
-
-</details>
 
 For revision on sorting, see
 [Sorting Algorithms](/docs/alevel/computer-science/algorithms/sorting-algorithms).
@@ -623,15 +594,11 @@ For revision on sorting, see
     12
 ```
 
-<details>
 <summary>Hint</summary>
 
 In-order traversal visits nodes in the order: Left subtree, Root, Right subtree. Apply this rule
 Recursively starting from the root.
 
-</details>
-
-<details>
 <summary>Answer</summary>
 
 In-order: 5, 10, 12, 15, 20, 30, 40
@@ -648,19 +615,14 @@ Step-by-step trace:
 8. Return to 20 → visit **20** → go right to 30
 9. At 30 → no left child → visit **30** → go right to 40
 10. At 40 → no left child → visit **40** → no right child
-</details>
 
 **Problem 2.** For the same tree in Problem 1, write the pre-order and post-order traversal
 Sequences.
 
-<details>
 <summary>Hint</summary>
 
 Pre-order: Root, Left, Right. Post-order: Left, Right, Root. Apply each rule recursively.
 
-</details>
-
-<details>
 <summary>Answer</summary>
 
 Pre-order: 20, 10, 5, 15, 12, 30, 40
@@ -692,20 +654,15 @@ Step-by-step trace:
 8. At 40 → no left, no right → visit **40**
 9. Return to 30 → visit **30**
 10. Return to 20 → visit **20**
-</details>
 
 **Problem 3.** Construct a BST by inserting the following keys in order: 45, 25, 65, 15, 35, 55,
 75, 30. Draw the resulting tree.
 
-<details>
 <summary>Hint</summary>
 
 Insert each key by comparing with nodes starting at the root. Go left if the key is smaller, right
 If larger, until you find an empty position.
 
-</details>
-
-<details>
 <summary>Answer</summary>
 
 ```
@@ -728,19 +685,14 @@ Insertion trace:
 6. Insert 55 → 55 > 45, go right → 55 < 65, go left → insert as left child of 65
 7. Insert 75 → 75 > 45, go right → 75 > 65, go right → insert as right child of 65
 8. Insert 30 → 30 < 45, go left → 30 > 25, go right → 30 < 35, go left → insert as left child of 35
-</details>
 
 **Problem 4.** Delete key 25 from the BST in Problem 3. Show the resulting tree.
 
-<details>
 <summary>Hint</summary>
 
 Node 25 has two children (15 and 35). Find the in-order successor (smallest value in the right
 Subtree) and replace 25 with it, then delete the successor node.
 
-</details>
-
-<details>
 <summary>Answer</summary>
 
 Node 25 has two children. The in-order successor is the smallest node in the right subtree of 25,
@@ -762,20 +714,15 @@ Verification of BST property:
 - All values in right subtree of 30 (35) > 30 ✓
 - All values in left subtree of 45 (30, 15, 35) < 45 ✓
 - All values in right subtree of 45 (65, 55, 75) > 45 ✓
-</details>
 
 **Problem 5.** A min-heap is represented by the array `[2, 5, 3, 10, 8, 4, 7]`. Insert the value 1
 Into the heap and show the resulting array. Show each swap step.
 
-<details>
 <summary>Hint</summary>
 
 When inserting into a min-heap, add the new element at the end of the array (next available
 Position), then "sift up" by swapping with its parent while it is smaller than its parent.
 
-</details>
-
-<details>
 <summary>Answer</summary>
 
 Initial heap: `[2, 5, 3, 10, 8, 4, 7]`
@@ -808,20 +755,14 @@ Final heap: `[1, 2, 3, 5, 8, 4, 7, 10]`
 
 Verification: 1 ≤ 2 and 1 ≤ 3; 2 ≤ 5 and 2 ≤ 8; 3 ≤ 4 and 3 ≤ 7; 5 ≤ 10. ✓
 
-</details>
-
 **Problem 6.** A max-heap is represented by the array `[20, 15, 18, 10, 8, 12, 16]`. Perform an
 Extract-max operation (remove the root) and show the resulting array after each step.
 
-<details>
 <summary>Hint</summary>
 
 Extract-max: swap root with last element, remove last element, then sift the new root down by
 Swapping with the larger child while the root is smaller than that child.
 
-</details>
-
-<details>
 <summary>Answer</summary>
 
 Initial heap: `[20, 15, 18, 10, 8, 12, 16]`
@@ -850,8 +791,6 @@ Final heap: `[18, 15, 16, 10, 8, 12]`
 
 Verification: 18 ≥ 15 and 18 ≥ 16; 15 ≥ 10 and 15 ≥ 8; 16 ≥ 12. ✓
 
-</details>
-
 **Problem 7.** For the following binary tree, calculate the depth of each node and the height of the
 Tree.
 
@@ -865,15 +804,11 @@ Tree.
       G
 ```
 
-<details>
 <summary>Hint</summary>
 
 Depth is the number of edges from the root to the node (root has depth 0). Height of the tree is the
 Maximum depth of any node.
 
-</details>
-
-<details>
 <summary>Answer</summary>
 
 Depths:
@@ -898,8 +833,6 @@ Heights of individual nodes:
 
 Height of the tree = height of root = 3
 
-</details>
-
 **Problem 8.** Convert the following complete binary tree to an array representation (0-indexed),
 And then verify the parent-child relationships using the array formulas.
 
@@ -911,15 +844,11 @@ And then verify the parent-child relationships using the array formulas.
    1  3 5  7
 ```
 
-<details>
 <summary>Hint</summary>
 
 For a 0-indexed array: parent of node at index $i$ is $\lfloor (i-1)/2 \rfloor$Left child is
 $2i+1$Right child is $2i+2$. Fill the array using level-order traversal.
 
-</details>
-
-<details>
 <summary>Answer</summary>
 
 Level-order traversal: 4, 2, 6, 1, 3, 5, 7
@@ -953,22 +882,16 @@ Parent verification:
 
 All relationships match. ✓
 
-</details>
-
 **Problem 9.** Two BSTs each contain $n$ keys. BST A has height $n-1$ (degenerate) and BST B has
 Height $\lfloor \log_2 n \rfloor$ (balanced). Compare the number of comparisons required to search
 For a key that exists in both trees, expressing your answers in terms of $n$.
 
-<details>
 <summary>Hint</summary>
 
 In a BST, each comparison eliminates one subtree. In the worst case, the number of comparisons
 Equals the height of the tree. For a successful search, the expected number of comparisons is
 Approximately half the height.
 
-</details>
-
-<details>
 <summary>Answer</summary>
 
 **BST A (degenerate, height $n-1$):**
@@ -991,8 +914,6 @@ Approximately half the height.
 BST B is approximately $n / \log_2 n$ times faster. For large $n$This difference is enormous, Which
 is why balanced BSTs (AVL, red-black trees) are preferred in practice.
 
-</details>
-
 **Problem 10.** (Exam-style multi-step question) A sequence of integers is read from a data stream:
 38, 27, 43, 15, 50, 10, 33, 48.
 
@@ -1001,15 +922,11 @@ In-order traversal of the BST. What property of BSTs does this demonstrate? (c) 
 From the tree (it has two children). Draw the resulting tree and explain each step of the deletion.
 (d) What is the height of the tree after the deletion?
 
-<details>
 <summary>Hint</summary>
 
 For part (a), insert each value comparing with existing nodes. For part (c), use the in-order
 Successor method: find the smallest value in the right subtree of 27 and replace 27 with it.
 
-</details>
-
-<details>
 <summary>Answer</summary>
 
 **(a) BST construction:**
@@ -1075,8 +992,6 @@ After deletion:
 Longest root-to-leaf path: 38 → 33 → 15 → 10 = 3 edges, OR 38 → 43 → 50 → 48 = 3 edges.
 
 Height of the tree = **3**.
-
-</details>
 
 :::
 

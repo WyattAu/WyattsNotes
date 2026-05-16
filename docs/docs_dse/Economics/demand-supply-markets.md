@@ -495,7 +495,6 @@ Loss.
   market over- or under-produces.
 - Use the concept of deadweight loss to explain the welfare impact of market failure.
 
-<details>
 <summary>Exam-Style Practice Questions</summary>
 
 **Question 1:** The demand function is $Q_D = 300 - 5P$ and the supply function is $Q_S = 2P - 60$.
@@ -810,8 +809,6 @@ Monetary policy involves the central bank's control of the money supply and inte
 
 ## Additional Practice Questions
 
-</details>
-<details>
 <summary>More Exam-Style Problems</summary>
 
 **Question 4:** A firm has fixed costs of USD 200 and variable costs given by VC = 10Q + 0.5Q$^2$.
@@ -867,8 +864,6 @@ Monopoly restricts output to maximise profit, creating a deadweight loss. In per
 
 ## Problem Set
 
-</details>
-<details>
 <summary>Problem 1: Market Equilibrium with Shifts</summary>
 
 Given $Q_D = 150 - 3P$ and $Q_S = 2P - 30$.
@@ -892,9 +887,6 @@ Amount, price is unchanged and quantity increases.
 
 If you get this wrong, revise: [Changes in Equilibrium](#changes-in-equilibrium)
 
-</details>
-
-<details>
 <summary>Problem 2: PED and Total Revenue</summary>
 
 A shop sells Good G at USD 20 per unit, selling 500 units per week. When the price is raised to USD
@@ -903,8 +895,6 @@ A shop sells Good G at USD 20 per unit, selling 500 units per week. When the pri
 (a) Calculate PED. (b) Did total revenue increase or decrease? (c) Should the shop raise or lower
 the Price to maximise revenue?
 
-</details>
-<details>
 <summary>Solution</summary>
 
 (a) `% change in Q = (400-500)/500 \times 100\% = -20\%`.
@@ -918,9 +908,6 @@ Raising Or lowering the price would both decrease total revenue.
 
 If you get this wrong, revise: [PED and Total Revenue](#ped-and-total-revenue)
 
-</details>
-
-<details>
 <summary>Problem 3: Cross Elasticity</summary>
 
 When the price of coffee rises by 10%, the quantity demanded of tea rises by 6%. When the price of
@@ -929,8 +916,6 @@ milk Rises by 15%, the quantity demanded of coffee falls by 3%.
 (a) What is the relationship between coffee and tea? (b) What is the relationship between coffee and
 Milk? (c) If the price of coffee is expected to rise, what should a tea producer do?
 
-</details>
-<details>
 <summary>Solution</summary>
 
 (a) XED = `6/10 = 0.6 \gt 0`. Coffee and tea are **substitutes**.
@@ -943,9 +928,6 @@ quantity of Tea.
 
 If you get this wrong, revise: [Cross Elasticity of Demand (XED)](#cross-elasticity-of-demand-xed)
 
-</details>
-
-<details>
 <summary>Problem 4: Price Ceiling</summary>
 
 The market for rental housing has demand $Q_D = 500 - 2P$ and supply $Q_S = 100 + 3P$ (quantity in
@@ -954,8 +936,6 @@ Units, price in USD hundred).
 (a) Find the equilibrium rent and quantity. (b) The government imposes a rent ceiling of USD 40
 (hundred). Find the resulting shortage. (c) What problems might arise?
 
-</details>
-<details>
 <summary>Solution</summary>
 
 (a) `500 - 2P = 100 + 3P``400 = 5P``P = 80` (hundred). `Q = 500 - 160 = 340`.
@@ -969,9 +949,6 @@ Inefficient allocation (units not rented to those who value them most).
 
 If you get this wrong, revise: [Price Controls](#price-controls)
 
-</details>
-
-<details>
 <summary>Problem 5: Tax Incidence</summary>
 
 Demand: $Q_D = 300 - 5P$. Supply: $Q_S = 4P - 60$. A specific tax of USD 6 per unit is imposed on
@@ -980,8 +957,6 @@ Producers.
 (a) Find the original equilibrium. (b) Find the new equilibrium after the tax. (c) Calculate the
 Burden on consumers and producers. (d) Who bears more of the tax burden and why?
 
-</details>
-<details>
 <summary>Solution</summary>
 
 (a) `300 - 5P = 4P - 60``360 = 9P``P = 40`. `Q = 300 - 200 = 100`.
@@ -996,9 +971,6 @@ than Demand (producers are less responsive to price changes than consumers).
 
 If you get this wrong, revise: [Tax Incidence (Burden)](#tax-incidence-burden)
 
-</details>
-
-<details>
 <summary>Problem 6: Income Elasticity</summary>
 
 When average income rises by 10%, the quantity demanded of bus rides falls by 5% while the quantity
@@ -1008,8 +980,6 @@ Demanded of restaurant meals rises by 15%.
 (falling Incomes), what happens to demand for each good? (c) Why is this distinction important for
 businesses?
 
-</details>
-<details>
 <summary>Solution</summary>
 
 (a) Bus rides: `YED = -5/10 = -0.5 \lt 0`. **Inferior good**. Restaurant meals:
@@ -1024,9 +994,6 @@ to Adjust pricing or offer promotions.
 
 If you get this wrong, revise: [Income Elasticity of Demand (YED)](#income-elasticity-of-demand-yed)
 
-</details>
-
-<details>
 <summary>Problem 7: Subsidy Analysis</summary>
 
 Demand: $Q_D = 200 - 2P$. Supply: $Q_S = 3P - 80$. The government provides a subsidy of USD 5 per
@@ -1035,8 +1002,6 @@ unit To producers.
 (a) Find the original equilibrium. (b) Find the new equilibrium after the subsidy. (c) How much does
 The subsidy cost the government? (d) Who benefits more from the subsidy -- consumers or producers?
 
-</details>
-<details>
 <summary>Solution</summary>
 
 (a) `200 - 2P = 3P - 80``280 = 5P``P = 56`. `Q = 200 - 112 = 88`.
@@ -1052,9 +1017,6 @@ benefit more (282 vs 188) because demand is more elastic than supply in this cas
 
 If you get this wrong, revise: [Subsidies](#subsidies)
 
-</details>
-
-<details>
 <summary>Problem 8: Negative Externality</summary>
 
 A factory producing chemicals has `MPC = 10 + Q`. The marginal external cost is `MEC = 8`. Demand is
@@ -1063,8 +1025,6 @@ A factory producing chemicals has `MPC = 10 + Q`. The marginal external cost is 
 (a) Find the market equilibrium output and price. (b) Find the socially optimal output and price.
 (c) Calculate the deadweight loss. (d) What per-unit tax would achieve the social optimum?
 
-</details>
-<details>
 <summary>Solution</summary>
 
 (a) Market: `10 + Q = 60 - Q``2Q = 50``Q = 25`. `P = 35`.
@@ -1077,8 +1037,6 @@ A factory producing chemicals has `MPC = 10 + Q`. The marginal external cost is 
 (d) Pigouvian tax = `MEC = 8` per unit. This shifts the supply curve up from `MPC` to `MSC`.
 
 If you get this wrong, revise: [Market Failure](#market-failure)
-
-</details>
 
 ---
 
@@ -1095,7 +1053,6 @@ at every price.
 Calculate the percentage change in equilibrium price and quantity. (d) Decompose the price change
 into the portion due to the demand shift and the portion due to the supply shift.
 
-<details>
 <summary>Solution</summary>
 
 (a) Original: $400 - 2P = -80 + 4P$. $480 = 6P$. $P^* = 80$. $Q^* = 400 - 160 = 240$.
@@ -1118,8 +1075,6 @@ effect of supply shift alone $= -80 + 70 = -10$.
 Combined: $+7.5 - 10 = -2.5$ (approximately matches the actual $-3.16$; the difference is due to the
 non-linear interaction of the two shifts).
 
-</details>
-
 If you get this wrong, revise: [Market Equilibrium](#market-equilibrium)
 
 ### Problem 10: Agricultural Price Support with Buffer Stocks
@@ -1133,7 +1088,6 @@ instead pays farmers a per-unit subsidy to reduce the market price to HK$80 (whi
 quantity demanded), calculate the subsidy rate and the cost to the government. Compare with the
 price support approach.
 
-<details>
 <summary>Solution</summary>
 
 (a) $500 - 3P = -100 + 4P$. $600 = 7P$. $P^* = 85.71$. $Q^* = 500 - 3(85.71) = 242.9$.
@@ -1158,8 +1112,6 @@ subsidy approach transfers money to consumers (lower prices) and producers (high
 prices), while the price support transfers money to producers only (through government purchases of
 surplus).
 
-</details>
-
 If you get this wrong, revise: [Government Price Controls](#government-price-controls)
 
 ### Problem 11: Tax Incidence with Different Elasticities
@@ -1172,7 +1124,6 @@ supply).
 producer burden. (b) Explain why the incidence differs between the two scenarios. (c) Calculate and
 compare the deadweight loss in each scenario. (d) What are the implications for tax policy design?
 
-<details>
 <summary>Solution</summary>
 
 **Supply A ($Q_s = -50 + 3P$):**
@@ -1217,8 +1168,6 @@ for taxing cigarettes, alcohol, and petrol (inelastic demand). Conversely, taxin
 demand or supply creates large DWL and is economically inefficient, though it may be justified on
 equity grounds.
 
-</details>
-
 If you get this wrong, revise: [Tax Incidence and Elasticity](#tax-incidence-and-elasticity)
 
 ### Problem 12: Price Ceiling with Quality Deterioration
@@ -1233,7 +1182,6 @@ spending by HK$3,000 per unit per month. How does this quality deterioration aff
 analysis? (d) Explain the concept of "effective price" and why rent ceilings can make tenants worse
 off despite lower nominal rents.
 
-<details>
 <summary>Solution</summary>
 
 (a) At $P = 15\,000$: $Q_d = 18000 - 6000 = 12\,000$. $Q_s = 30000 - 30000 = 0$.
@@ -1307,8 +1255,6 @@ supply), quality deterioration (poor maintenance), and side payments (key money,
 are included, the effective price may exceed the free market rent, making tenants worse off. This is
 a key insight of the economic analysis of rent control: the nominal price falls, but the total cost
 (including non-monetary costs) may rise.
-
-</details>
 
 If you get this wrong, revise: [Price Controls and Welfare](#price-controls-and-welfare)
 

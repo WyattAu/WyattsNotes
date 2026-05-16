@@ -154,7 +154,6 @@ The field.
 Two point charges $Q_1 = 3 \times 10^{-6} \mathrm{ C}$ and $Q_2 = -5 \times 10^{-6} \mathrm{ C}$ are
 Separated by $0.2 \mathrm{ m}$. Find the electrostatic force between them.
 
-<details>
 <summary>Solution</summary>
 
 $$F = \frac{kQ_1 Q_2}{r^2} = \frac{(8.99 \times 10^9)(3 \times 10^{-6})(5 \times 10^{-6})}{(0.2)^2}$$
@@ -169,7 +168,6 @@ A point charge of $+5 \times 10^{-8} \mathrm{ C}$ is placed in a uniform electri
 $2000 \mathrm{ V/m}$. Find the force on the charge and the work done to move it $0.3 \mathrm{ m}$
 Against the field.
 
-</details>
 <summary>Solution</summary>
 
 $$F = qE = (5 \times 10^{-8})(2000) = 1.0 \times 10^{-4} \mathrm{ N}$$
@@ -185,7 +183,6 @@ A uniform electric field of strength $5000 \mathrm{ V/m}$ exists between two par
 Separated by $4 \mathrm{ cm}$. Find the potential difference and the force on an electron placed
 Between the plates.
 
-<details>
 <summary>Solution</summary>
 
 $$V = Ed = 5000 \times 0.04 = 200 \mathrm{ V}$$
@@ -330,7 +327,6 @@ LDRs are used in light-sensitive switches, automatic street lights, and camera e
 A copper wire has a length of $10 \mathrm{ m}$A diameter of $0.5 \mathrm{ mm}$And a resistivity Of
 $1.68 \times 10^{-8} \Omega \mathrm{ m}$. Find its resistance.
 
-</details>
 <summary>Solution</summary>
 
 $$A = \pi r^2 = \pi \left(\frac{0.5 \times 10^{-3}}{2}\right)^2 = \pi (2.5 \times 10^{-4})^2 = \pi \times 6.25 \times 10^{-8} = 1.963 \times 10^{-7} \mathrm{ m}^2$$
@@ -342,7 +338,6 @@ $$R = \frac{\rho L}{A} = \frac{(1.68 \times 10^{-8})(10)}{1.963 \times 10^{-7}} 
 A nichrome wire of length $2.0 \mathrm{ m}$ has resistance $10 \Omega$. If the wire is stretched To
 $3.0 \mathrm{ m}$ (keeping the volume constant), what is its new resistance?
 
-<details>
 <summary>Solution</summary>
 
 Since volume is constant: $A_1 L_1 = A_2 L_2$
@@ -470,7 +465,6 @@ A battery has an EMF of $12 \mathrm{ V}$ and internal resistance of $0.5 \Omega$
 An external resistance of $5.5 \Omega$. Find the current, terminal PD, and power dissipated in the
 External resistance.
 
-</details>
 <summary>Solution</summary>
 
 $$I = \frac{\varepsilon}{R + r} = \frac{12}{5.5 + 0.5} = \frac{12}{6} = 2.0 \mathrm{ A}$$
@@ -485,7 +479,6 @@ A potential divider consists of $R_1 = 4 \mathrm{ k}\Omega$ and $R_2 = 6 \mathrm
 Connected across a $12 \mathrm{ V}$ supply. Find the output voltage across $R_2$. A load resistance
 Of $10 \mathrm{ k}\Omega$ is then connected across $R_2$. Find the new output voltage.
 
-<details>
 <summary>Solution</summary>
 
 **Unloaded:**
@@ -553,7 +546,6 @@ $$\mathrm{Efficiency} = \frac{P_{\mathrm{out}}}{P_{\mathrm{in}}} \times 100\% = 
 A $2 \mathrm{ kW}$ electric heater is used for $3$ hours per day. If the electricity rate is
 `USD 0.90` per kWh, find the daily cost and the total energy consumed in one month (30 days).
 
-</details>
 <summary>Solution</summary>
 
 Daily energy: $E = Pt = 2 \times 3 = 6 \mathrm{ kWh}$
@@ -633,7 +625,6 @@ A wire carrying a current of $5 \mathrm{ A}$ is placed in a magnetic field of fl
 $0.3 \mathrm{ T}$. The wire is $0.4 \mathrm{ m}$ long and makes an angle of $30^\circ$ with the
 Field. Find the force on the wire.
 
-<details>
 <summary>Solution</summary>
 
 $$F = BIL \sin\theta = 0.3 \times 5 \times 0.4 \times \sin 30^\circ$$
@@ -645,7 +636,6 @@ $$F = 0.6 \times 0.5 = 0.30 \mathrm{ N}$$
 Two long parallel wires separated by $0.1 \mathrm{ m}$ carry currents of $10 \mathrm{ A}$ and
 $15 \mathrm{ A}$ in the same direction. Find the force per unit length between them.
 
-</details>
 <summary>Solution</summary>
 
 $$\frac{F}{L} = \frac{\mu_0 I_1 I_2}{2\pi d} = \frac{(4\pi \times 10^{-7})(10)(15)}{2\pi \times 0.1}$$
@@ -776,7 +766,6 @@ A transformer has 200 turns on the primary coil and 1000 turns on the secondary 
 Voltage is $220 \mathrm{ V}$ and the primary current is $5 \mathrm{ A}$. Find the secondary voltage,
 Secondary current, and power.
 
-<details>
 <summary>Solution</summary>
 
 $$V_s = V_p \times \frac{N_s}{N_p} = 220 \times \frac{1000}{200} = 220 \times 5 = 1100 \mathrm{ V}$$
@@ -792,7 +781,6 @@ $$P = V_p I_p = 220 \times 5 = 1100 \mathrm{ W}$$
 A rectangular coil of 100 turns, each of area $0.02 \mathrm{ m}^2$Is rotated at $50 \mathrm{ rev/s}$
 in a uniform magnetic field of flux density $0.5 \mathrm{ T}$. Find the peak EMF.
 
-</details>
 <summary>Solution</summary>
 
 $$\omega = 2\pi f = 2\pi \times 50 = 100\pi \mathrm{ rad/s}$$
@@ -893,7 +881,6 @@ $$T = \frac{1}{f} = \frac{1}{50} = 0.02 \mathrm{ s} = 20 \mathrm{ ms}$$
 - For Lenz's Law, always state that the induced current opposes the **change** in flux, not the flux
   itself.
 
-<details>
 <summary>Exam-Style Practice Questions</summary>
 
 **Question 1:** Two small charged spheres, each carrying a charge of
@@ -914,7 +901,6 @@ The force is repulsive since both charges are positive.
 Are connected in parallel across a $220 \mathrm{ V}$ mains supply. Find the total current drawn and
 The total cost of running them for 5 hours at `USD 0.90` per kWh.
 
-</details>
 <summary>Solution</summary>
 
 Total power: $P = 2000 + 100 + 500 = 2600 \mathrm{ W} = 2.6 \mathrm{ kW}$
@@ -929,7 +915,6 @@ Total cost: $\mathrm{Cost} = 13 \times 0.90 = \$11.70$
 $R_2 = 20 \mathrm{ k}\Omega$ are connected in series across a $9 \mathrm{ V}$ battery. A voltmeter
 Of resistance $50 \mathrm{ k}\Omega$ is connected across $R_2$. Find the reading on the voltmeter.
 
-<details>
 <summary>Solution</summary>
 
 The voltmeter acts as a load across $R_2$:
@@ -942,7 +927,6 @@ $$V_{\mathrm{out}} = 9 \times \frac{14.29}{10 + 14.29} = 9 \times \frac{14.29}{2
 An external circuit consisting of a $4.2 \Omega$ resistor in series with a parallel combination of
 Two $6 \Omega$ resistors. Find the current from the cell and the terminal PD.
 
-</details>
 <summary>Solution</summary>
 
 Equivalent resistance of the parallel combination:
@@ -962,7 +946,6 @@ $50 \mathrm{ rev/s}$ in a uniform magnetic field of flux density $0.5 \mathrm{ T
 Rotation is perpendicular to the field. Find the peak EMF and the EMF when the plane of the coil
 Makes an angle of $60^\circ$ with the field.
 
-<details>
 <summary>Solution</summary>
 
 Angular frequency: $\omega = 2\pi f = 2\pi \times 50 = 100\pi \mathrm{ rad/s}$
@@ -980,7 +963,6 @@ Reduce the mains voltage of $220 \mathrm{ V}$ RMS to supply a device. If the dev
 Of $10 \mathrm{ A}$ and the transformer is $90\%$ efficient, find the secondary voltage, the primary
 Current, and the power loss.
 
-</details>
 <summary>Solution</summary>
 
 Secondary voltage: $V_s = 220 \times \frac{100}{2000} = 220 \times 0.05 = 11 \mathrm{ V}$
@@ -1000,7 +982,6 @@ $5000 \mathrm{ V}$ between two parallel plates separated by $2 \mathrm{ cm}$. Fi
 Field strength, the force on the electron, and the velocity of the electron as it reaches the
 Positive plate.
 
-<details>
 <summary>Solution</summary>
 
 Electric field: $E = \frac{V}{d} = \frac{5000}{0.02} = 2.5 \times 10^5 \mathrm{ V/m}$
@@ -1019,7 +1000,6 @@ Lies perpendicular to a uniform magnetic field of flux density $0.4 \mathrm{ T}$
 Force on the wire. If the wire is rotated so that it makes an angle of $45^\circ$ with the field,
 What is the new force?
 
-</details>
 <summary>Solution</summary>
 
 Force when perpendicular ($\theta = 90^\circ$):
@@ -1034,7 +1014,6 @@ $$F = BIL \sin 45^\circ = 0.4 \times 8 \times 0.5 \times 0.7071 = 1.131 \mathrm{
 $1.5 \mathrm{ V}$ when $R = 8 \Omega$ and $1.2 \mathrm{ V}$ when $R = 4 \Omega$. Find the EMF and
 Internal resistance of the cell.
 
-<details>
 <summary>Solution</summary>
 
 When $R = 8 \Omega$: $I_1 = \frac{V_1}{R_1} = \frac{1.5}{8} = 0.1875 \mathrm{ A}$
@@ -1060,7 +1039,6 @@ $4 \mathrm{ A}$. A straight wire running parallel to the axis of the solenoid at
 $0.02 \mathrm{ m}$ from it carries a current of $5 \mathrm{ A}$ in the same direction. Find the
 Magnetic flux density inside the solenoid and the force per unit length on the wire.
 
-</details>
 <summary>Solution</summary>
 
 Magnetic flux density inside the solenoid:
@@ -1080,15 +1058,12 @@ The force per unit length on the wire is zero.
 
 ## Problem Set
 
-<details>
 <summary>Problem 1: Electric Field of a Point Charge</summary>
 
 A point charge of $+6 \times 10^{-9} \mathrm{ C}$ creates an electric field. Find the field strength
 At a distance of $0.05 \mathrm{ m}$ from the charge and the force on a
 $-2 \times 10^{-9} \mathrm{ C}$ Charge placed at that point.
 
-</details>
-<details>
 <summary>Solution</summary>
 
 $$E = \frac{kQ}{r^2} = \frac{(8.99 \times 10^9)(6 \times 10^{-9})}{(0.05)^2} = \frac{53.94}{0.0025} = 21576 \mathrm{ V/m}$$
@@ -1100,16 +1075,12 @@ The force is attractive (towards the positive charge).
 _If you get this wrong, revise: Coulomb's law, electric field of a point charge, and the
 relationship $E = F/q$._
 
-</details>
-
-<details>
 <summary>Problem 2: Series-Parallel Circuit</summary>
 
 A $12 \mathrm{ V}$ battery (internal resistance $0.5 \Omega$) is connected to a $3 \Omega$ resistor
 In series with a parallel combination of $6 \Omega$ and $12 \Omega$. Find the total current and the
 Power dissipated in the $6 \Omega$ resistor.
 
-</details>
 <summary>Solution</summary>
 
 $$R_p = \frac{6 \times 12}{6 + 12} = \frac{72}{18} = 4 \Omega$$
@@ -1129,14 +1100,11 @@ $$P_6 = I_6^2 R = (1.067)^2 \times 6 = 1.139 \times 6 = 6.83 \mathrm{ W}$$
 _If you get this wrong, revise: Series and parallel resistance combinations and internal
 resistance._
 
-<details>
 <summary>Problem 3: Current from Charge Flow</summary>
 
 A wire carries a current of $3 \mathrm{ A}$. How many electrons pass through a cross-section of the
 Wire in $10$ seconds?
 
-</details>
-<details>
 <summary>Solution</summary>
 
 $$Q = It = 3 \times 10 = 30 \mathrm{ C}$$
@@ -1146,15 +1114,11 @@ $$n = \frac{Q}{e} = \frac{30}{1.6 \times 10^{-19}} = 1.875 \times 10^{20} \mathr
 _If you get this wrong, revise: The relationship between current, charge, and the elementary charge
 $Q = ne = It$._
 
-</details>
-
-<details>
 <summary>Problem 4: Resistivity — Finding Length</summary>
 
 A tungsten wire has a resistance of $5 \Omega$ and a diameter of $0.2 \mathrm{ mm}$. The resistivity
 of Tungsten is $5.6 \times 10^{-8} \Omega \mathrm{ m}$. Find the length of the wire.
 
-</details>
 <summary>Solution</summary>
 
 $$A = \pi r^2 = \pi(1.0 \times 10^{-4})^2 = \pi \times 10^{-8} = 3.14 \times 10^{-8} \mathrm{ m}^2$$
@@ -1164,7 +1128,6 @@ $$R = \frac{\rho L}{A} \implies L = \frac{RA}{\rho} = \frac{5 \times 3.14 \times
 _If you get this wrong, revise: Resistivity formula $R = \rho L / A$ and rearranging to find
 length._
 
-<details>
 <summary>Problem 5: Potential Divider with Thermistor</summary>
 
 A potential divider consists of a $10 \mathrm{ k}\Omega$ fixed resistor and an NTC thermistor in
@@ -1172,8 +1135,6 @@ series Across a $9 \mathrm{ V}$ supply. At $20^\circ\mathrm{C}$The thermistor re
 $10 \mathrm{ k}\Omega$. At $80^\circ\mathrm{C}$The thermistor resistance drops to
 $2 \mathrm{ k}\Omega$. Find the output voltage across the thermistor at each temperature.
 
-</details>
-<details>
 <summary>Solution</summary>
 
 At $20^\circ\mathrm{C}$:
@@ -1190,15 +1151,11 @@ Sensing circuits.
 _If you get this wrong, revise: Potential divider formula and how NTC thermistor resistance varies
 With temperature._
 
-</details>
-
-<details>
 <summary>Problem 6: Kirchhoff's Laws — Two-Loop Circuit</summary>
 
 A $12 \mathrm{ V}$ battery is connected to a $4 \Omega$ and $6 \Omega$ resistor in parallel. Find
 the Current through each resistor and the total current from the battery.
 
-</details>
 <summary>Solution</summary>
 
 Both resistors have $12 \mathrm{ V}$ across them (parallel):
@@ -1211,15 +1168,12 @@ $$I_{\mathrm{total}} = 3.0 + 2.0 = 5.0 \mathrm{ A}$$
 
 _If you get this wrong, revise: Kirchhoff's current law and parallel circuit analysis._
 
-<details>
 <summary>Problem 7: Force on a Moving Charge</summary>
 
 An electron ($m_e = 9.11 \times 10^{-31} \mathrm{ kg}$) moves at $2.0 \times 10^6 \mathrm{ m/s}$
 Perpendicular to a magnetic field of flux density $0.5 \mathrm{ T}$. Find the force on the electron
 And the radius of its circular path.
 
-</details>
-<details>
 <summary>Solution</summary>
 
 $$F = qvB = (1.6 \times 10^{-19})(2.0 \times 10^6)(0.5) = 1.6 \times 10^{-13} \mathrm{ N}$$
@@ -1231,15 +1185,11 @@ $$r = \frac{mv}{qB} = \frac{(9.11 \times 10^{-31})(2.0 \times 10^6)}{(1.6 \times
 _If you get this wrong, revise: Force on a moving charge in a magnetic field ($F = qvB$) and
 circular Motion of charged particles._
 
-</details>
-
-<details>
 <summary>Problem 8: Faraday's Law — Moving Wire</summary>
 
 A straight wire of length $0.3 \mathrm{ m}$ moves perpendicular to a uniform magnetic field of
 $0.8 \mathrm{ T}$ at a speed of $5 \mathrm{ m/s}$. Find the induced EMF.
 
-</details>
 <summary>Solution</summary>
 
 $$\varepsilon = BLv = (0.8)(0.3)(5) = 1.2 \mathrm{ V}$$
@@ -1247,14 +1197,11 @@ $$\varepsilon = BLv = (0.8)(0.3)(5) = 1.2 \mathrm{ V}$$
 _If you get this wrong, revise: Faraday's law for a straight conductor moving through a magnetic
 field ($\varepsilon = BLv$)._
 
-<details>
 <summary>Problem 9: AC Power Calculation</summary>
 
 A $220 \mathrm{ V}$ RMS mains supply is connected to a $100 \Omega$ resistor. Find the peak current,
 The peak power, and the average power dissipated.
 
-</details>
-<details>
 <summary>Solution</summary>
 
 $$I_{\mathrm{rms}} = \frac{V_{\mathrm{rms}}}{R} = \frac{220}{100} = 2.2 \mathrm{ A}$$
@@ -1271,16 +1218,12 @@ Note: $P_{\mathrm{average}} = \frac{P_{\mathrm{peak}}}{2}$ as expected.
 
 _If you get this wrong, revise: RMS values, peak values, and power in AC circuits._
 
-</details>
-
-<details>
 <summary>Problem 10: Transformer Efficiency</summary>
 
 A step-up transformer has 500 turns on the primary and 2500 turns on the secondary. The primary
 Voltage is $110 \mathrm{ V}$ and the primary current is $10 \mathrm{ A}$. If the transformer is
 $95\%$ efficient, find the secondary voltage, the output power, and the secondary current.
 
-</details>
 <summary>Solution</summary>
 
 $$V_s = V_p \times \frac{N_s}{N_p} = 110 \times \frac{2500}{500} = 110 \times 5 = 550 \mathrm{ V}$$
@@ -1293,15 +1236,12 @@ $$I_s = \frac{P_{\mathrm{out}}}{V_s} = \frac{1045}{550} = 1.90 \mathrm{ A}$$
 
 _If you get this wrong, revise: Transformer equation and efficiency calculations._
 
-<details>
 <summary>Problem 11: Internal Resistance Graph</summary>
 
 A battery with unknown EMF and internal resistance is connected to a variable resistor. The
 Following measurements are obtained: at $I = 0.5 \mathrm{ A}$$V = 11.5 \mathrm{ V}$; at
 $I = 1.5 \mathrm{ A}$$V = 10.5 \mathrm{ V}$. Find $\varepsilon$ and $r$.
 
-</details>
-<details>
 <summary>Solution</summary>
 
 From $V = \varepsilon - Ir$:
@@ -1322,15 +1262,11 @@ $$\varepsilon = 11.5 + 0.5(1.0) = 12.0 \mathrm{ V}$$
 
 _If you get this wrong, revise: Internal resistance and the equation $V = \varepsilon - Ir$._
 
-</details>
-
-<details>
 <summary>Problem 12: Magnetic Field at Centre of Circular Loop</summary>
 
 A circular loop of wire of radius $0.1 \mathrm{ m}$ carries a current of $5 \mathrm{ A}$. Find the
 Magnetic flux density at the centre of the loop.
 
-</details>
 <summary>Solution</summary>
 
 $$B = \frac{\mu_0 I}{2r} = \frac{(4\pi \times 10^{-7})(5)}{2 \times 0.1} = \frac{6.283 \times 10^{-6}}{0.2} = 3.14 \times 10^{-5} \mathrm{ T}$$
@@ -1338,15 +1274,12 @@ $$B = \frac{\mu_0 I}{2r} = \frac{(4\pi \times 10^{-7})(5)}{2 \times 0.1} = \frac
 _If you get this wrong, revise: Magnetic field at the centre of a circular current loop
 ($B = \mu_0 I / 2r$)._
 
-<details>
 <summary>Problem 13: Energy to Heat Water</summary>
 
 An electric kettle rated at $1500 \mathrm{ W}$$220 \mathrm{ V}$ is used to boil $1.2 \mathrm{ kg}$
 Of water from $20^\circ\mathrm{C}$ to $100^\circ\mathrm{C}$. Specific heat capacity of water is
 $4200 \mathrm{ J/(kg }^\circ\mathrm{C)}$. If the kettle is $85\%$ efficient, find the time taken.
 
-</details>
-<details>
 <summary>Solution</summary>
 
 $$Q = mc\Delta T = 1.2 \times 4200 \times 80 = 403200 \mathrm{ J}$$
@@ -1357,16 +1290,12 @@ $$t = \frac{E}{P} = \frac{474353}{1500} = 316.2 \mathrm{ s} = 5.27 \mathrm{ minu
 
 _If you get this wrong, revise: Electrical energy, specific heat capacity, and efficiency._
 
-</details>
-
-<details>
 <summary>Problem 14: Superposition of Electric Fields</summary>
 
 Two point charges, $Q_1 = +4 \times 10^{-9} \mathrm{ C}$ at the origin and
 $Q_2 = +9 \times 10^{-9} \mathrm{ C}$ at $x = 0.1 \mathrm{ m}$Lie along the x-axis. Find the Point
 on the x-axis between the charges where the electric field is zero.
 
-</details>
 <summary>Solution</summary>
 
 At a point $x$ metres from $Q_1$ (between the charges, so $0 \lt x \lt 0.1$):
@@ -1391,14 +1320,11 @@ The electric field is zero at $x = 0.04 \mathrm{ m}$ from $Q_1$ (or $0.06 \mathr
 
 _If you get this wrong, revise: Superposition of electric fields and solving for the null point._
 
-<details>
 <summary>Problem 15: Eddy Currents and Lenz's Law</summary>
 
 A bar magnet is dropped through a copper tube. Explain why it falls more slowly than through a
 Plastic tube and describe the direction of the induced currents.
 
-</details>
-<details>
 <summary>Solution</summary>
 
 As the magnet falls through the copper tube, the changing magnetic flux through the tube induces
@@ -1415,8 +1341,6 @@ Both effects create a retarding force on the magnet, slowing its fall. A plastic
 Insulator, so no eddy currents are induced, and the magnet falls freely under gravity.
 
 _If you get this wrong, revise: Lenz's law, eddy currents, and electromagnetic braking._
-
-</details>
 
 ---
 
@@ -1609,7 +1533,6 @@ Supply. It is then connected across an uncharged $300 \mathrm{ \mu F}$ capacitor
 
 (b) Calculate the energy stored before and after connection, and explain the energy loss.
 
-<details>
 <summary>Solution</summary>
 
 (a) Charge on the charged capacitor:
@@ -1630,8 +1553,6 @@ Energy lost: $\Delta E = 0.250 - 0.100 = 0.150 \mathrm{ J}$
 This energy is dissipated as heat in the connecting wires and as electromagnetic radiation during
 The transient current flow when the capacitors are connected.
 
-</details>
-
 ### Worked Example 12
 
 A $470 \mathrm{ \mu F}$ capacitor is charged through a $100 \mathrm{ k}\Omega$ resistor from a
@@ -1645,7 +1566,6 @@ $12 \mathrm{ V}$ supply.
 
 (d) Calculate the current in the circuit at $t = 0$ and at $t = \tau$.
 
-<details>
 <summary>Solution</summary>
 
 (a) $\tau = RC = 100 \times 10^3 \times 470 \times 10^{-6} = 47.0 \mathrm{ s}$
@@ -1667,8 +1587,6 @@ $I_0 = V_0/R = 12/(100 \times 10^3) = 1.20 \times 10^{-4} \mathrm{ A} = 120 \mat
 
 At $t = \tau$: $I = I_0 e^{-1} = 120 \times 0.368 = 44.1 \mathrm{ \mu A}$
 
-</details>
-
 ### Worked Example 13
 
 An electron is accelerated from rest through a potential difference of $2000 \mathrm{ V}$ and Then
@@ -1678,7 +1596,6 @@ Calculate the radius of the circular path.
 (Electron charge $= 1.6 \times 10^{-19} \mathrm{ C}$Electron mass
 $= 9.11 \times 10^{-31} \mathrm{ kg}$)
 
-<details>
 <summary>Solution</summary>
 
 Kinetic energy gained: $\frac{1}{2}mv^2 = eV$
@@ -1686,8 +1603,6 @@ Kinetic energy gained: $\frac{1}{2}mv^2 = eV$
 $$v = \sqrt{\frac{2eV}{m}} = \sqrt{\frac{2 \times 1.6 \times 10^{-19} \times 2000}{9.11 \times 10^{-31}}} = \sqrt{\frac{6.4 \times 10^{-16}}{9.11 \times 10^{-31}}} = \sqrt{7.03 \times 10^{14}} = 2.65 \times 10^7 \mathrm{ m/s}$$
 
 $$r = \frac{mv}{eB} = \frac{9.11 \times 10^{-31} \times 2.65 \times 10^7}{1.6 \times 10^{-19} \times 5.0 \times 10^{-3}} = \frac{2.41 \times 10^{-23}}{8.0 \times 10^{-22}} = 0.0301 \mathrm{ m} = 3.01 \mathrm{ cm}$$
-
-</details>
 
 ---
 
@@ -1708,7 +1623,6 @@ and a $6.0 \mathrm{ V}$ battery.
 
 (iv) Sketch a graph showing how the current in the circuit varies with time.
 
-<details>
 <summary>Solution</summary>
 
 (a) Capacitance is the ratio of the charge stored on a capacitor to the potential difference Across
@@ -1727,8 +1641,6 @@ $I = I_0 e^{-t/\tau}$. The graph is an exponential decay curve starting at $6.0 
 approaching zero. At $t = \tau = 100 \mathrm{ s}$The current has Fallen to
 $6.0 \times 0.368 = 2.21 \mathrm{ \mu A}$.
 
-</details>
-
 ### Question 2 (DSE Structured)
 
 (a) State Coulomb's law.
@@ -1742,7 +1654,6 @@ $0.20 \mathrm{ m}$ in a vacuum.
 
 (iii) At what point on the line joining the charges is the electric field strength zero?
 
-<details>
 <summary>Solution</summary>
 
 (a) Coulomb's law states that the force between two point charges is directly proportional to The
@@ -1788,8 +1699,6 @@ $$x = \frac{1.2 \pm \sqrt{1.44 + 0.96}}{4} = \frac{1.2 \pm \sqrt{2.40}}{4} = \fr
 
 Taking the positive root: $x = \frac{1.2 + 1.549}{4} = 0.687 \mathrm{ m}$ from $q_1$.
 
-</details>
-
 ### Question 3 (DSE Structured)
 
 (a) Explain the difference between electric potential and electric field strength.
@@ -1805,7 +1714,6 @@ the plates (plate length $= 10 \mathrm{ cm}$).
 
 (iii) Calculate the angle at which the electron leaves the field.
 
-<details>
 <summary>Solution</summary>
 
 (a) **Electric potential** ($V$) is the electric potential energy per unit charge at a point:
@@ -1832,8 +1740,6 @@ $v_y = at = 1.76 \times 10^{15} \times 3.33 \times 10^{-9} = 5.86 \times 10^6 \m
 
 $$\theta = \tan^{-1}\left(\frac{v_y}{v_x}\right) = \tan^{-1}\left(\frac{5.86 \times 10^6}{3.0 \times 10^7}\right) = \tan^{-1}(0.195) = 11.0^\circ$$
 
-</details>
-
 ### Question 4 (DSE Structured)
 
 (a) Describe the structure and operation of a simple AC generator.
@@ -1849,7 +1755,6 @@ $50 \mathrm{ rev/s}$ in a magnetic field of $0.3 \mathrm{ T}$.
 
 (iv) The coil is connected to a $50 \Omega$ resistor. Calculate the average power dissipated.
 
-<details>
 <summary>Solution</summary>
 
 (a) An AC generator consists of a rectangular coil rotating in a uniform magnetic field. As the Coil
@@ -1872,8 +1777,6 @@ $\varepsilon_{\mathrm{RMS}} = \frac{\varepsilon_0}{\sqrt{2}} = \frac{37.7}{1.414
 
 (iv) Average power:
 $P = \frac{\varepsilon_{\mathrm{RMS}}^2}{R} = \frac{(26.7)^2}{50} = \frac{712.9}{50} = 14.3 \mathrm{ W}$
-
-</details>
 
 :::
 

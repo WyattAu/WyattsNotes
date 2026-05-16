@@ -131,7 +131,6 @@ DSE-level problems. :::
 A solution of $\mathrm{HCl}$ has $\mathrm{pH} = 2.00$. If $10.0 \mathrm{ cm^3}$ of this solution is
 diluted to $250 \mathrm{ cm^3}$What is the new pH?
 
-<details>
 <summary>Solution</summary>
 
 Original $[\mathrm{H^+}] = 10^{-2.00} = 0.0100 \mathrm{ mol/dm^3}$
@@ -147,8 +146,6 @@ In the reaction
 $\mathrm{HNO_2} + \mathrm{H_2O} \rightleftharpoons \mathrm{NO_2^-} + \mathrm{H_3O^+}$Identify the
 two conjugate acid-base pairs.
 
-</details>
-<details>
 <summary>Solution</summary>
 
 $\mathrm{HNO_2}$ donates a proton to become $\mathrm{NO_2^-}$:
@@ -567,8 +564,6 @@ The electrochemical series ranks half-reactions by their standard electrode pote
 - In electrochemical cell questions, the species with the more positive $E^\circ$ undergoes
   reduction (cathode).
 
-</details>
-<details>
 <summary>Exam-Style Practice Questions</summary>
 
 **Question 1:** $25.0 \mathrm{ cm}^3$ of $0.200 \mathrm{ mol/dm}^3$ $\mathrm{H}_2\mathrm{SO}_4$ is
@@ -794,8 +789,6 @@ $$4\mathrm{Fe}^{2+} + 4\mathrm{OH}^- + \mathrm{O}_2 + 2\mathrm{H}_2\mathrm{O} \t
 Calculate the pH of a buffer containing $0.20 \mathrm{ mol/dm^3}$ $\mathrm{CH_3COOH}$
 ($K_a = 1.8 \times 10^{-5}$) and $0.10 \mathrm{ mol/dm^3}$ $\mathrm{CH_3COONa}$.
 
-</details>
-<details>
 <summary>Solution</summary>
 
 $$\mathrm{p}K_a = -\log_{10}(1.8 \times 10^{-5}) = 4.74$$
@@ -809,8 +802,6 @@ $$\mathrm{pH} = \mathrm{p}K_a + \log_{10}\left(\frac{[\mathrm{CH_3COO^-}]}{[\mat
 Predict the products of electrolysis of dilute $\mathrm{Na_2SO_4}$ solution using inert carbon
 electrodes.
 
-</details>
-<details>
 <summary>Solution</summary>
 
 Ions present: $\mathrm{Na^+}$$\mathrm{SO_4^{2-}}$$\mathrm{H^+}$$\mathrm{OH^-}$
@@ -830,8 +821,6 @@ due to $\mathrm{OH^-$ accumulation.
 
 Describe how to prepare pure, dry crystals of zinc sulphate.
 
-</details>
-<details>
 <summary>Solution</summary>
 
 $\mathrm{ZnSO_4}$ is a soluble salt. Zinc is a reactive metal (above hydrogen), so the **acid +
@@ -849,8 +838,6 @@ metal** method can be used:
 
 ## Additional Practice Questions
 
-</details>
-<details>
 <summary>More Exam-Style Problems</summary>
 
 **Question 6:** Calculate the pH of a buffer made by mixing $100 \mathrm{ cm}^3$ of
@@ -916,8 +903,6 @@ $$\mathrm{pH} = -\log_{10}(0.0050) = 2.30$$
 
 _If you get this wrong, revise: Strong and Weak Acids_
 
-</details>
-<details>
 <summary>Solution</summary>
 
 $$K_a = \frac{x^2}{0.050} = 1.8 \times 10^{-5}$$
@@ -931,8 +916,6 @@ $0.15 \mathrm{ mol/dm^3}$ $\mathrm{NH_4Cl}$ ($K_b = 1.8 \times 10^{-5}$). Calcul
 
 _If you get this wrong, revise: Buffers_
 
-</details>
-<details>
 <summary>Solution</summary>
 
 $\mathrm{p}K_b = -\log_{10}(1.8 \times 10^{-5}) = 4.74$
@@ -947,8 +930,6 @@ the equivalence point.
 
 _If you get this wrong, revise: Acid-Base Titrations_
 
-</details>
-<details>
 <summary>Solution</summary>
 
 $$\mathrm{HCl} + \mathrm{NaOH} \to \mathrm{NaCl} + \mathrm{H_2O}$$
@@ -961,8 +942,6 @@ $$V(\mathrm{NaOH}) = \frac{n}{c} = \frac{0.00250}{0.0800} = 0.03125 \mathrm{ dm^
 
 _If you get this wrong, revise: Salt Preparation_
 
-</details>
-<details>
 <summary>Solution</summary>
 
 $\mathrm{Pb(NO_3)_2}$ is soluble, and lead is below hydrogen in the reactivity series (it does not
@@ -978,8 +957,6 @@ react with dilute acids to produce $\mathrm{H_2}$). The best method is **acid + 
 
 _If you get this wrong, revise: Oxidation Numbers_
 
-</details>
-<details>
 <summary>Solution</summary>
 
 $\mathrm{H_2O_2}$ is a peroxide. In peroxides, oxygen has oxidation number $-1$.
@@ -995,8 +972,6 @@ give $\mathrm{Mn^{2+}}$ and $\mathrm{S}$.
 
 _If you get this wrong, revise: Balancing Redox Equations_
 
-</details>
-<details>
 <summary>Solution</summary>
 
 Reduction: $\mathrm{MnO_4^-} + 8\mathrm{H^+} + 5e^- \to \mathrm{Mn^{2+}} + 4\mathrm{H_2O}$
@@ -1017,8 +992,6 @@ electrolysed using carbon electrodes. Write half-equations and the overall equat
 
 _If you get this wrong, revise: Electrolysis of Aqueous Solutions_
 
-</details>
-<details>
 <summary>Solution</summary>
 
 Cathode: $\mathrm{Na^+}$ is above $\mathrm{H^+}$So $\mathrm{H_2}$ is produced:
@@ -1036,8 +1009,6 @@ through $\mathrm{AgNO_3}$ solution for 25 minutes?
 
 _If you get this wrong, revise: Faraday's Laws of Electrolysis_
 
-</details>
-<details>
 <summary>Solution</summary>
 
 $$Q = 0.60 \times 25 \times 60 = 900 \mathrm{ C}$$
@@ -1052,8 +1023,6 @@ $E^\circ_{\mathrm{cell}}$ and write the overall equation. Is the reaction sponta
 
 _If you get this wrong, revise: Electrochemical Cells_
 
-</details>
-<details>
 <summary>Solution</summary>
 
 Nickel has the more positive $E^\circ$ (cathode, reduction).
@@ -1073,8 +1042,6 @@ acid? Explain.
 
 _If you get this wrong, revise: Indicators and pH Curves_
 
-</details>
-<details>
 <summary>Solution</summary>
 
 Methyl orange (pH range 3.1--4.4). $\mathrm{NH_3}$ is a weak base and $\mathrm{HCl}$ is a strong
@@ -1087,8 +1054,6 @@ whereas tin coating does not.
 
 _If you get this wrong, revise: Corrosion and Its Prevention_
 
-</details>
-<details>
 <summary>Solution</summary>
 
 **Zinc (galvanising):** Zinc is more reactive than iron. When the coating is scratched, zinc acts as
@@ -1104,8 +1069,6 @@ $0.10 \mathrm{ mol/dm^3}$ $\mathrm{NaOH}$ to $500 \mathrm{ cm^3}$ with distilled
 
 _If you get this wrong, revise: The pH Scale_
 
-</details>
-<details>
 <summary>Solution</summary>
 
 $$[\mathrm{OH^-}] = 0.10 \times \frac{5.0}{500} = 1.0 \times 10^{-3} \mathrm{ mol/dm^3}$$
@@ -1119,8 +1082,6 @@ passed through $\mathrm{AgNO_3}$ solution for 15.0 minutes?
 
 _If you get this wrong, revise: Faraday's Laws of Electrolysis_
 
-</details>
-<details>
 <summary>Solution</summary>
 
 $$Q = 1.20 \times 15.0 \times 60 = 1080 \mathrm{ C}$$
@@ -1134,8 +1095,6 @@ sulphuric acid.
 
 _If you get this wrong, revise: Salt Preparation and Ionic Equations_
 
-</details>
-<details>
 <summary>Solution</summary>
 
 Full equation: $\mathrm{Mg} + \mathrm{H_2SO_4} \to \mathrm{MgSO_4} + \mathrm{H_2}$
@@ -1148,8 +1107,6 @@ $\mathrm{SO_4^{2-}}$ is a spectator ion.
 
 _If you get this wrong, revise: Strong and Weak Acids_
 
-</details>
-<details>
 <summary>Solution</summary>
 
 **Strength** refers to the degree of ionisation. A strong acid (e.g., $\mathrm{HCl}$) is completely
@@ -1167,8 +1124,6 @@ concentration of $\mathrm{Zn^{2+}}$ is increased, what happens to the cell poten
 
 _If you get this wrong, revise: Electrochemical Cells_
 
-</details>
-<details>
 <summary>Solution</summary>
 
 The cell potential decreases. At the anode (oxidation): $\mathrm{Zn} \to \mathrm{Zn^{2+}} + 2e^-$.
@@ -1182,8 +1137,6 @@ identify the gas evolved.
 
 _If you get this wrong, revise: Salt Preparation_
 
-</details>
-<details>
 <summary>Solution</summary>
 
 $$\mathrm{Zn} + \mathrm{H_2SO_4} \to \mathrm{ZnSO_4} + \mathrm{H_2}$$
@@ -1198,8 +1151,6 @@ hydroxide solution.
 
 _If you get this wrong, revise: Acid-Base Titrations_
 
-</details>
-<details>
 <summary>Solution</summary>
 
 $$\mathrm{CH_3COOH} + \mathrm{NaOH} \to \mathrm{CH_3COONa} + \mathrm{H_2O}$$
@@ -1215,8 +1166,6 @@ containing $\mathrm{CH_3COOH}$ and $\mathrm{CH_3COONa}$.
 
 _If you get this wrong, revise: Buffers_
 
-</details>
-<details>
 <summary>Solution</summary>
 
 The added $\mathrm{OH^-$ reacts with the weak acid component:
@@ -1226,8 +1175,6 @@ $$\mathrm{CH_3COOH} + \mathrm{OH^-} \to \mathrm{CH_3COO^-} + \mathrm{H_2O}$$
 This converts some $\mathrm{CH_3COOH}$ to $\mathrm{CH_3COO^-}$. The ratio
 $[\mathrm{CH_3COO^-}]/[\mathrm{CH_3COOH}]$ increases slightly, but the pH changes only minimally
 because the buffer system absorbs the added base. The buffer resists large pH changes.
-
-</details>
 
 ## Common Pitfalls
 

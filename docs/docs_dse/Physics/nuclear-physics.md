@@ -93,7 +93,6 @@ Neutrons to provide additional strong force to counteract the increasing electro
 
 How many protons, neutrons, and nucleons are in $\prescript{238}{}{92}\mathrm{U}$?
 
-<details>
 <summary>Solution</summary>
 
 - Protons: $Z = 92$
@@ -230,7 +229,6 @@ equation. :::
 Complete the following decay equation:
 $\prescript{214}{}{84}\mathrm{Po} \to \prescript{210}{}{82}\mathrm{Pb} + \ ?$
 
-</details>
 <summary>Solution</summary>
 
 Check the nucleon number: $214 - 210 = 4$
@@ -991,7 +989,6 @@ Radon-222 decays by alpha emission. Write the complete decay equation and calcul
 Released if the mass of Rn-222 is $221.970$ u, the mass of Po-218 is $217.963$ u, and the mass of
 He-4 is $4.003$ u.
 
-<details>
 <summary>Solution</summary>
 
 **Decay equation:**
@@ -1015,7 +1012,6 @@ Of the alpha particle).
 A radioactive isotope has an initial activity of $800$ Bq. After $30$ minutes, the activity has
 Fallen to $100$ Bq. Calculate the half-life of the isotope.
 
-</details>
 <summary>Solution</summary>
 
 **Method 1: Using the fraction remaining**
@@ -1056,7 +1052,6 @@ Given:
 - Mass of proton $= 1.007276$ u
 - Mass of neutron $= 1.008665$ u
 
-<details>
 <summary>Solution</summary>
 
 **Step 1: Calculate the mass defect**
@@ -1083,7 +1078,6 @@ A piece of ancient wood has a carbon-14 activity of $1.5$ Bq per gram of carbon.
 Carbon-14 activity of $15.0$ Bq per gram of carbon. Calculate the age of the ancient wood. (Take
 $t_{1/2}$ of C-14 $= 5730$ years.)
 
-</details>
 <summary>Solution</summary>
 
 **Using the decay law:**
@@ -1121,7 +1115,6 @@ Calculate:
 
 (a) The number of U-235 fissions per second (b) The mass of U-235 consumed per day
 
-<details>
 <summary>Solution</summary>
 
 **(a) Number of fissions per second:**
@@ -1158,7 +1151,6 @@ A sample contains $5.0 \times 10^{20}$ atoms of cobalt-60 ($t_{1/2} = 5.27$ year
 
 (a) The decay constant (b) The initial activity (c) The activity after 2 years
 
-</details>
 <summary>Solution</summary>
 
 **(a) Decay constant:**
@@ -1186,7 +1178,6 @@ $$A = 2.08 \times 10^{12} \times 0.769 = 1.60 \times 10^{12} \mathrm{ Bq}$$
 A gamma source emits radiation with a half-value thickness of $2.5$ cm in lead. How thick must the
 Lead shield be to reduce the gamma intensity to $1/16$ of its original value?
 
-<details>
 <summary>Solution</summary>
 
 If the intensity is reduced to $1/16$This corresponds to $4$ half-value thicknesses (since
@@ -1330,7 +1321,6 @@ Concentrated in a small volume of tissue.
 
 ## Problem Set
 
-</details>
 <summary>Problem 1: Balancing a Beta-Minus Decay Equation</summary>
 
 Complete the following beta-minus decay equation and identify the daughter nucleus:
@@ -1351,14 +1341,11 @@ The daughter is nickel-60 ($\prescript{60}{}{28}\mathrm{Ni}$).
 
 _If you get this wrong, revise: Beta-minus decay — $Z$ increases by 1, $A$ stays the same._
 
-<details>
 <summary>Problem 2: Activity from Mass</summary>
 
 A sample of sodium-24 ($t_{1/2} = 15$ hours, molar mass $= 24 \mathrm{ g/mol}$) has a mass of
 $0.48 \mathrm{ g}$. Calculate its activity.
 
-</details>
-<details>
 <summary>Solution</summary>
 
 $$\lambda = \frac{\ln 2}{t_{1/2}} = \frac{0.693}{15 \times 3600} = 1.283 \times 10^{-5} \mathrm{ s}^{-1}$$
@@ -1370,16 +1357,12 @@ $$A = \lambda N = (1.283 \times 10^{-5})(1.204 \times 10^{22}) = 1.545 \times 10
 _If you get this wrong, revise: Relationship between activity, decay constant, and number of nuclei
 ($A = \lambda N$) and $N = \frac{m}{M}N_A$._
 
-</details>
-
-<details>
 <summary>Problem 3: Half-Life from Count Rate Data</summary>
 
 A GM tube measures a count rate of $400$ counts/s from a radioactive source. After $20$ minutes, the
 Count rate is $100$ counts/s. The background count rate is $20$ counts/s. Calculate the half-life of
 The source.
 
-</details>
 <summary>Solution</summary>
 
 Subtract background:
@@ -1401,7 +1384,6 @@ $$t_{1/2} = \frac{\ln 2}{\lambda} = \frac{0.693}{1.298 \times 10^{-3}} = 533.9 \
 _If you get this wrong, revise: Background subtraction and half-life determination from count rate
 Data._
 
-<details>
 <summary>Problem 4: Q-Value of a Nuclear Reaction</summary>
 
 Calculate the Q-value of the fission reaction:
@@ -1411,8 +1393,6 @@ $\prescript{1}{}{0}\mathrm{n} + \prescript{235}{}{92}\mathrm{U} \to \prescript{1
 Given: $m(\mathrm{n}) = 1.008665$ u, $m(\mathrm{U\mathrm{-}235}) = 235.043930$ u,
 $m(\mathrm{Ba\mathrm{-}144}) = 143.922953$ u, $m(\mathrm{Kr\mathrm{-}89}) = 88.917630$ u.
 
-</details>
-<details>
 <summary>Solution</summary>
 
 $$m_{\mathrm{reactants}} = 1.008665 + 235.043930 = 236.052595 \mathrm{ u}$$
@@ -1426,9 +1406,6 @@ $$Q = 0.186017 \times 931.5 = 173.2 \mathrm{ MeV}$$
 _If you get this wrong, revise: Q-value calculation — remember to account for all product particles
 Including released neutrons._
 
-</details>
-
-<details>
 <summary>Problem 5: Comparing Binding Energies</summary>
 
 The binding energy per nucleon of deuterium ($\prescript{2}{}{1}\mathrm{H}$) is
@@ -1438,7 +1415,6 @@ helium-4:
 
 $2\prescript{2}{}{1}\mathrm{H} \to \prescript{4}{}{2}\mathrm{He}$
 
-</details>
 <summary>Solution</summary>
 
 Total binding energy of reactants:
@@ -1456,14 +1432,11 @@ $$Q = BE_{\mathrm{product}} - BE_{\mathrm{reactants}} = 28.28 - 4.44 = 23.84 \ma
 _If you get this wrong, revise: Binding energy per nucleon curve and how energy release relates to
 The increase in binding energy per nucleon._
 
-<details>
 <summary>Problem 6: Radiation Shielding — Multiple HVTs</summary>
 
 A gamma source has a half-value thickness of $1.5 \mathrm{ cm}$ in concrete. What thickness of
 Concrete is needed to reduce the intensity to $3\%$ of the original?
 
-</details>
-<details>
 <summary>Solution</summary>
 
 $$\frac{I}{I_0} = 0.03$$
@@ -1476,15 +1449,11 @@ $$\mathrm{Thickness} = 5.06 \times 1.5 = 7.59 \mathrm{ cm} \approx 7.6 \mathrm{ 
 
 _If you get this wrong, revise: Half-value thickness and exponential attenuation._
 
-</details>
-
-<details>
 <summary>Problem 7: Fraction Remaining After Multiple Half-Lives</summary>
 
 A radioactive isotope has a half-life of $8$ days. What fraction of the original sample remains
 after 30 days?
 
-</details>
 <summary>Solution</summary>
 
 Number of half-lives: $n = \frac{30}{8} = 3.75$
@@ -1499,29 +1468,22 @@ $$\frac{N}{N_0} = e^{-\lambda t} = e^{-(\ln 2 / 8) \times 30} = e^{-2.601} = 0.0
 
 _If you get this wrong, revise: Fraction remaining after $n$ half-lives: $(1/2)^n$._
 
-<details>
 <summary>Problem 8: Dose Calculation</summary>
 
 A patient receives a dose of $0.5 \mathrm{ mGy}$ from alpha radiation to a specific organ. Calculate
 The equivalent dose in mSv.
 
-</details>
-<details>
 <summary>Solution</summary>
 
 $$H = D \times w_R = 0.5 \times 20 = 10 \mathrm{ mSv}$$
 
 _If you get this wrong, revise: Absorbed dose vs equivalent dose and radiation weighting factors._
 
-</details>
-
-<details>
 <summary>Problem 9: GM Tube Dead Time Correction</summary>
 
 A GM tube with a dead time of $200 \ \mu\mathrm{s}$ records a count rate of $5000$ counts/s from a
 Source. Estimate the true count rate.
 
-</details>
 <summary>Solution</summary>
 
 The fraction of time the tube is dead:
@@ -1540,14 +1502,11 @@ $$R_{\mathrm{true}} \approx \frac{R_{\mathrm{measured}}}{1 - f} = \frac{1000}{0.
 _If you get this wrong, revise: GM tube dead time and its effect on measured count rates at high
 Activities._
 
-<details>
 <summary>Problem 10: Fusion vs Fission — Binding Energy Curve</summary>
 
 Explain, with reference to the binding energy per nucleon curve, why energy is released in both
 Nuclear fission and nuclear fusion.
 
-</details>
-<details>
 <summary>Solution</summary>
 
 The binding energy per nucleon curve has a peak around iron-56 ($\sim 8.8 \mathrm{ MeV/nucleon}$).
@@ -1566,15 +1525,11 @@ In both cases, energy is released because the products have a higher binding ene
 
 _If you get this wrong, revise: The binding energy per nucleon curve and its interpretation._
 
-</details>
-
-<details>
 <summary>Problem 11: Radiocarbon Dating — Percentage Remaining</summary>
 
 An archaeological artefact has $35\%$ of the original C-14 remaining. How old is the artefact?
 ($t_{1/2}$ of C-14 $= 5730$ years)
 
-</details>
 <summary>Solution</summary>
 
 $$\frac{N}{N_0} = 0.35 = e^{-\lambda t}$$
@@ -1587,14 +1542,11 @@ The artefact is approximately $8700$ years old.
 
 _If you get this wrong, revise: Radiocarbon dating formula and the decay law._
 
-<details>
 <summary>Problem 12: Moderator — Elastic Collision with Neutron</summary>
 
 Explain why a moderator with a small mass number (like graphite or heavy water) is more effective At
 slowing neutrons than a heavy material like lead.
 
-</details>
-<details>
 <summary>Solution</summary>
 
 In an elastic head-on collision between a neutron (mass $m$) and a stationary nucleus (mass $M$),
@@ -1617,15 +1569,11 @@ Thermalise the neutrons.
 
 _If you get this wrong, revise: Nuclear reactor moderator and elastic collision energy transfer._
 
-</details>
-
-<details>
 <summary>Problem 13: Alpha Particle Speed from Q-Value</summary>
 
 In the alpha decay of Po-210 ($m = 209.9829$ u) to Pb-206 ($m = 205.9745$ u), the Q-value is
 $5.41 \mathrm{ MeV}$. Calculate the kinetic energy of the alpha particle ($m = 4.0026$ u).
 
-</details>
 <summary>Solution</summary>
 
 By conservation of momentum, the alpha particle and daughter nucleus move in opposite directions
@@ -1646,14 +1594,11 @@ The alpha particle carries approximately $98\%$ of the total kinetic energy.
 _If you get this wrong, revise: Conservation of momentum in nuclear decay and the distribution of
 Kinetic energy between products._
 
-<details>
 <summary>Problem 14: Electron Capture</summary>
 
 Write the equation for electron capture by beryllium-7 and explain why electron capture is Favoured
 over beta-plus decay for this isotope.
 
-</details>
-<details>
 <summary>Solution</summary>
 
 $$\prescript{7}{}{4}\mathrm{Be} + e^- \to \prescript{7}{}{3}\mathrm{Li} + \nu_e$$
@@ -1670,15 +1615,11 @@ Electron capture is favoured because:
 _If you get this wrong, revise: Electron capture as an alternative to beta-plus decay and the
 Condition $m(\mathrm{parent}) \gt m(\mathrm{daughter}) + 2m_e$._
 
-</details>
-
-<details>
 <summary>Problem 15: Log-Linear Plot — Finding Decay Constant</summary>
 
 A log-linear plot of $\ln A$ versus $t$ for a radioactive source gives a straight line with gradient
 $-0.05 \mathrm{ min}^{-1}$. Find the decay constant and half-life.
 
-</details>
 <summary>Solution</summary>
 
 $$\ln A = \ln A_0 - \lambda t$$
@@ -1883,7 +1824,6 @@ Calculate the energy released when a uranium-235 nucleus undergoes fission, give
 - Mass of 2 neutrons $= 2 \times 1.0087 = 2.0174 \mathrm{ u}$
 - $1 \mathrm{ u} = 931.5 \mathrm{ MeV}/c^2$
 
-<details>
 <summary>Solution</summary>
 
 $$\Delta m = 235.0439 - (140.9139 + 91.8973 + 2.0174) = 235.0439 - 234.8286 = 0.2153 \mathrm{ u}$$
@@ -1896,7 +1836,6 @@ A nuclear power station produces $1500 \mathrm{ MW}$ of electrical power with an
 of $33\%$. Each fission of U-235 releases approximately $200 \mathrm{ MeV}$ of energy. Calculate the
 mass of U-235 consumed per day.
 
-</details>
 <summary>Solution</summary>
 
 Total thermal power:
@@ -1932,7 +1871,6 @@ $4.0 \times 10^{20}$ undecayed nuclei.
 
 (iv) How long does it take for the activity to fall to $5.0 \times 10^8 \mathrm{ Bq}$?
 
-<details>
 <summary>Solution</summary>
 
 (a) The half-life is the time taken for half of the radioactive nuclei in a sample to decay (or
@@ -1979,7 +1917,6 @@ Mass of proton $= 1.00728 \mathrm{ u}$Mass of neutron $= 1.00867 \mathrm{ u}$.
 (iii) Explain why energy is released when light nuclei undergo fusion and when heavy nuclei Undergo
 fission.
 
-</details>
 <summary>Solution</summary>
 
 (a) The binding energy per nucleon is the total binding energy of a nucleus divided by its mass
@@ -2030,7 +1967,6 @@ from a gamma source:
 (iii) The background count rate is $20 \mathrm{ counts/min}$. Calculate the corrected count Rate at
 $d = 4.0 \mathrm{ cm}$ and the percentage correction.
 
-<details>
 <summary>Solution</summary>
 
 (a) A Geiger-Muller tube consists of a metal cylinder (cathode) with a thin wire (anode) running
@@ -2062,8 +1998,6 @@ Percentage correction: $\frac{20}{900} \times 100\% = 2.2\%$
 
 The background correction is small at close range but becomes more significant at larger Distances
 where the count rate is lower.
-
-</details>
 
 ## Common Pitfalls
 

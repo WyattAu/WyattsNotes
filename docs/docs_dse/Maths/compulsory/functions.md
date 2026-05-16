@@ -55,7 +55,6 @@ A function $f \colon A \to B$ is:
   words, the range equals the codomain.
 - **Bijective (one-to-one correspondence)** if $f$ is both injective and surjective.
 
-<details>
 <summary>Examples</summary>
 - $f(x) = 2x + 1$ with domain $\mathbb{{'}R{}'}$ is injective (linear, non-constant) and surjective onto $\mathbb{{'}R{}'}$Hence bijective.
 - $f(x) = x^2$ with domain $\mathbb{{'}R{}'}$ is neither injective ($f(2) = f(-2) = 4$) nor surjective onto $\mathbb{{'}R{}'}$ (range is $[0, \infty)$).
@@ -111,7 +110,6 @@ A necessary condition for a function to have an inverse is that it is one-to-one
 Original function is not injective on its given domain, one may restrict the domain to make it
 Injective.
 
-</details>
 <summary>Examples</summary>
 - Let $f(x) = 2x + 3$ and $g(x) = x^2$. Then:
  - $(f \circ g)(x) = f(g(x)) = f(x^2) = 2x^2 + 3$
@@ -192,7 +190,6 @@ To complete the square for $ax^2 + bx + c$:
 This technique is also essential in solving [inequalities](inequalities)) involving quadratic
 Expressions.
 
-<details>
 <summary>Examples</summary>
 - Express $f(x) = 2x^2 - 12x + 22$ in vertex form:
  - $f(x) = 2(x^2 - 6x) + 22 = 2\left[(x - 3)^2 - 9\right] + 22 = 2(x - 3)^2 + 4$
@@ -249,7 +246,6 @@ Equations of the form $a^{f(x)} = a^{g(x)}$ can be solved by equating exponents:
 For equations of the form $a^{f(x)} = b$Take logarithms of both sides. See [logarithms](logarithms)
 for the full treatment of logarithmic techniques.
 
-</details>
 <summary>Examples</summary>
 - Solve $4^{x} = 2^{x+3}$:
  - Rewrite: $(2^2)^x = 2^{x+3} \implies 2^{2x} = 2^{x+3}$
@@ -316,7 +312,6 @@ When solving logarithmic equations, the following steps are typical:
 3. Always verify that solutions satisfy the domain condition (arguments of all logarithms must be
    positive).
 
-<details>
 <summary>Examples</summary>
 - Solve $\log_2 (x + 3) + \log_2 (x - 1) = 4$:
  - Product law: $\log_2 [(x + 3)(x - 1)] = 4$
@@ -380,7 +375,6 @@ First, then the vertical scaling, then the vertical shift.
 Transformations operate on $f(x)$ **after** the function is evaluated. This is why the horizontal
 Shift has the "opposite sign" effect: $f(x + b)$ shifts left by $b$ (not right). :::
 
-</details>
 <summary>Examples</summary>
 - Describe the transformation from $y = x^2$ to $y = 2(x - 3)^2 + 1$:
  - Starting from $y = x^2$:
@@ -464,7 +458,6 @@ $(\Leftarrow)$ If $-a \lt f(x) \lt a$Then $f(x) \lt a$ and $-f(x) \lt a$So $|f(x
   the reflection of the $x \geq 0$ portion in the $y$-axis (i.e., $f(|x|)$ is always an even
   function).
 
-<details>
 <summary>Examples</summary>
 
 - Solve $|2x - 3| = 7$:
@@ -525,7 +518,6 @@ To solve $\frac{f(x)}{g(x)} \gt 0$ (or $\lt$$\geq$$\leq$):
 Involving $x$The direction of the inequality flips if that expression is negative. Instead of
 Multiplying through, use a sign chart. :::
 
-</details>
 <summary>Examples</summary>
 
 - Solve $x^2 - 3x - 4 \leq 0$:
@@ -600,7 +592,6 @@ Remaining factors. Analyse using a sign chart or by evaluating test points on ea
 6. Use sign analysis to determine behaviour near asymptotes.
 7. Sketch.
 
-<details>
 <summary>Examples</summary>
 
 - Sketch $f(x) = \frac{2x + 1}{x - 3}$:
@@ -645,7 +636,6 @@ Key observations:
 - If $k$ equals the maximum or minimum value, the corresponding intersection point is a **tangency**
   (double root).
 
-</details>
 <summary>Examples</summary>
 
 - Find the number of solutions to $x^3 - 3x + 1 = 0$:
@@ -669,7 +659,6 @@ Key observations:
 
 ## Common Pitfalls
 
-<details>
 <summary>Modulus function errors</summary>
 
 - **Forgetting both cases.** When solving $|f(x)| = a$You must consider $f(x) = a$ AND $f(x) = -a$.
@@ -681,7 +670,6 @@ Key observations:
   But squaring $f(x) = g(x)$ can introduce extraneous solutions (e.g., $x = \sqrt{x}$ squares to
   $x^2 = x$Giving $x = 0$ or $x = 1$But $x = 1$ is extraneous).
 
-</details>
 <summary>Rational function errors</summary>
 
 - **Cancelling factors blindly.** $\frac{x^2 - 4}{x - 2} = x + 2$ only for $x \neq 2$. The point
@@ -691,7 +679,6 @@ Key observations:
 - **Wrong horizontal asymptote.** The horizontal asymptote depends on the _leading terms only_. Do
   Not set the entire numerator equal to the entire denominator.
 
-<details>
 <summary>Inequality errors</summary>
 
 - **Multiplying by a variable.** Multiplying $\frac{f(x)}{g(x)} \gt 0$ by $g(x)$ flips the
@@ -705,7 +692,6 @@ Key observations:
 
 ## Wrap-up Questions
 
-</details>
 <summary>Wrap-up Questions</summary>
 1. **Question:** Let $f(x) = \dfrac{2x - 6}{x + 1}$ and $g(x) = x^2 - 4$. Find $(f \circ g)(x)$ and state its domain.
 ### Details
@@ -716,7 +702,7 @@ Key observations:
 - $\mathrm{dom}(f \circ g) = \mathbb{{'}R{}'} \setminus \{\sqrt{3},\; -\sqrt{3}\}$.
 
 2. **Question:** Let $f(x) = 3x - 5$. Find $f^{-1}(x)$ and verify that $f^{-1}(f(x)) = x$.
-<details>
+
 <summary>Answer</summary>
 
 - Set $y = 3x - 5$. Solving for $x$: $x = \dfrac{y + 5}{3}$.
@@ -724,8 +710,8 @@ Key observations:
 - Verification: $f^{-1}(f(x)) = \dfrac{(3x - 5) + 5}{3} = \dfrac{3x}{3} = x$. Confirmed.
 
 3. **Question:** A quadratic function $f(x)$ has a maximum value of $7$ at $x = 2$And $f(0) = -5$.
-Find $f(x)$.
-</details>
+   Find $f(x)$.
+
 <summary>Answer</summary>
 
 - Since the maximum is at $(2, 7)$ and the parabola opens downward, write in vertex form:
@@ -734,8 +720,8 @@ Find $f(x)$.
 - Therefore $f(x) = -3(x - 2)^2 + 7 = -3x^2 + 12x - 5$.
 
 4. **Question:** Find the range of values of $k$ for which the equation
-$x^2 + 2(k - 1)x + k + 5 = 0$ has two distinct real roots.
-<details>
+   $x^2 + 2(k - 1)x + k + 5 = 0$ has two distinct real roots.
+
 <summary>Answer</summary>
 
 - For two distinct real roots, $\Delta > 0$.
@@ -744,7 +730,7 @@ $x^2 + 2(k - 1)x + k + 5 = 0$ has two distinct real roots.
 - Therefore $k < -1$ or $k > 4$.
 
 5. **Question:** Solve the equation $3^{2x} - 10 \cdot 3^x + 9 = 0$.
-</details>
+
 <summary>Answer</summary>
 
 - Let $u = 3^x$ (note $u > 0$). The equation becomes $u^2 - 10u + 9 = 0$.
@@ -754,7 +740,7 @@ $x^2 + 2(k - 1)x + k + 5 = 0$ has two distinct real roots.
 - Solutions: $x = 0$ or $x = 2$.
 
 6. **Question:** Solve $\log_3(x - 2) + \log_3(x + 6) = 2$.
-<details>
+
 <summary>Answer</summary>
 
 - Product law: $\log_3[(x - 2)(x + 6)] = 2$.
@@ -765,8 +751,8 @@ $x^2 + 2(k - 1)x + k + 5 = 0$ has two distinct real roots.
 - Solution: $x = 3$.
 
 7. **Question:** The graph of $y = f(x)$ passes through the points $(1, 4)$ and $(3, 10)$. State the
-Coordinates of the corresponding points on the graph of $y = 2f(x - 1) + 3$.
-</details>
+   Coordinates of the corresponding points on the graph of $y = 2f(x - 1) + 3$.
+
 <summary>Answer</summary>
 
 - For a point $(a, b)$ on $y = f(x)$ (so $f(a) = b$), the corresponding point on $y = 2f(x - 1) + 3$
@@ -775,8 +761,8 @@ Coordinates of the corresponding points on the graph of $y = 2f(x - 1) + 3$.
 - $(3, 10) \mapsto (3 + 1,\; 2 \times 10 + 3) = (4, 23)$.
 
 8. **Question:** Given $f(x) = \log_2(x + 3)$ and $g(x) = 2^x - 1$Show that $f$ and $g$ are Inverse
-functions of each other, and state the domain and range of $f^{-1}$.
-<details>
+   functions of each other, and state the domain and range of $f^{-1}$.
+
 <summary>Answer</summary>
 
 - $(f \circ g)(x) = f(g(x)) = f(2^x - 1) = \log_2((2^x - 1) + 3) = \log_2(2^x + 2)$.
@@ -795,8 +781,8 @@ functions of each other, and state the domain and range of $f^{-1}$.
 - $\mathrm{range}(f^{-1}) = \mathrm{dom}(f) = (-3, \infty)$.
 
 9. **Question:** Given $f(x) = x^2 + 2x - 3$Find the range of $f$ when (a) the domain is
-$\mathbb{{'}R{}'}$And (b) the domain is $[0, 4]$.
-</details>
+   $\mathbb{{'}R{}'}$And (b) the domain is $[0, 4]$.
+
 <summary>Answer</summary>
 
 - Completing the square: $f(x) = (x^2 + 2x + 1) - 1 - 3 = (x + 1)^2 - 4$.
@@ -809,8 +795,8 @@ $\mathbb{{'}R{}'}$And (b) the domain is $[0, 4]$.
 - Range: $[-3, 21]$.
 
 10. **Question:** Let $f(x) = \dfrac{x}{x - 2}$ for $x \neq 2$. Find $f^{-1}$And evaluate
-$f^{-1}(3) + f(3)$.
-<details>
+    $f^{-1}(3) + f(3)$.
+
 <summary>Answer</summary>
 
 - Set $y = \dfrac{x}{x - 2}$.
@@ -819,7 +805,6 @@ $f^{-1}(3) + f(3)$.
 - $f^{-1}(3) = \dfrac{2(3)}{3 - 1} = 3$.
 - $f(3) = \dfrac{3}{3 - 2} = 3$.
 - $f^{-1}(3) + f(3) = 3 + 3 = 6$.
-</details>
 
 For the A-Level treatment of this topic, see
 [Functions](https://alevel.wyattau.com/docs/maths/pure-mathematics/functions).
@@ -870,7 +855,6 @@ Exact values are preferred. Decimal answers to 3 significant figures.
 
 Is the function $f(x) = x^3 - 3x$ injective on $\mathbb{{'}R{}'}$?
 
-<details>
 <summary>Solution</summary>
 
 $f(0) = 0$$f(\sqrt{3}) = 3\sqrt{3} - 3\sqrt{3} = 0$$f(-\sqrt{3}) = 0$.
@@ -880,13 +864,10 @@ $\mathbb{{'}R{}'}$.
 
 Note: $f$ is injective on $[1, \infty)$ since $f'(x) = 3x^2 - 3 = 3(x-1)(x+1) > 0$ for $x > 1$.
 
-</details>
-
 **Worked Example 10: Surjectivity**
 
 Is $f(x) = x^2 + 1$ surjective if the codomain is $\mathbb{{'}R{}'}$?
 
-<details>
 <summary>Solution</summary>
 
 No. Since $x^2 \geq 0$ for all real $x$We have $f(x) = x^2 + 1 \geq 1$. The value
@@ -894,14 +875,11 @@ $0 \in \mathbb{{'}R{}'}$ is not attained. Therefore $f$ is not surjective onto $
 
 If the codomain is restricted to $[1, \infty)$Then $f$ is surjective.
 
-</details>
-
 **Worked Example 11: Graph of a piecewise function**
 
 Sketch the graph of
 $f(x) = \begin{cases} |x| & \text{if } x \leq 2 \\ x^2 - 2x & \text{if } x > 2 \end{cases}$
 
-<details>
 <summary>Solution</summary>
 
 For $x \leq 2$: $f(x) = |x|$Which is a V-shape with vertex at $(0, 0)$.
@@ -917,14 +895,11 @@ There is a jump discontinuity at $x = 2$: $f(2) = 2$ but $\lim_{x \to 2^+} f(x) 
 For $x > 2$The function is a parabola with vertex at $(1, -1)$But since $x > 2$We only see the right
 branch, which is strictly increasing.
 
-</details>
-
 **Worked Example 12: Even and odd function properties**
 
 If $f$ is an odd function and $g$ is an even function, determine whether $f \circ g$ is even, odd,
 or neither.
 
-<details>
 <summary>Solution</summary>
 
 $$(f \circ g)(-x) = f(g(-x)) = f(g(x)) = (f \circ g)(x)$$
@@ -933,8 +908,6 @@ Since $g$ is even: $g(-x) = g(x)$.
 
 So $(f \circ g)(-x) = (f \circ g)(x)$Which means $f \circ g$ is even.
 
-</details>
-
 ---
 
 ## DSE Exam-Style Questions
@@ -942,7 +915,6 @@ So $(f \circ g)(-x) = (f \circ g)(x)$Which means $f \circ g$ is even.
 **DSE Practice 1.** Let $f(x) = \dfrac{2x + 3}{x - 1}$. Find the domain, range, and determine
 whether $f$ is injective.
 
-<details>
 <summary>Solution</summary>
 
 Domain: $x \neq 1$So $\mathrm{dom}(f) = \mathbb{{'}R{}'} \setminus \{1\}$.
@@ -961,12 +933,9 @@ $f$ is injective: for $x > 1$$f$ is strictly decreasing (derivative $-5/(x-1)^2 
 $x < 1$$f$ is also strictly decreasing. And no value from $(2, +\infty)$ overlaps with
 $(-\infty, 2)$.
 
-</details>
-
 **DSE Practice 2.** Let $f(x) = x^2 - 2x + 3$ for $x \geq 1$. Find the range and determine whether
 $f$ has an inverse.
 
-<details>
 <summary>Solution</summary>
 
 $f(x) = (x - 1)^2 + 2$. Since $x \geq 1$ and the vertex is at $(1, 2)$$f$ is strictly increasing on
@@ -976,33 +945,24 @@ Range: $[2, \infty)$.
 
 Since $f$ is strictly increasing (hence injective) on $[1, \infty)$It has an inverse.
 
-</details>
-
 **DSE Practice 3.** A function is defined by $f(x) = \lfloor x \rfloor$ (the greatest integer less
 than or equal to $x$). Find $f(3.7)$$f(-2.1)$And $f(0)$.
 
-<details>
 <summary>Solution</summary>
 
 $f(3.7) = 3$$f(-2.1) = -3$$f(0) = 0$.
 
-</details>
-
 **DSE Practice 4.** Determine whether $f(x) = x^3 + x$ is odd, even, or neither.
 
-<details>
 <summary>Solution</summary>
 
 $$f(-x) = (-x)^3 + (-x) = -x^3 - x = -(x^3 + x) = -f(x)$$
 
 Since $f(-x) = -f(x)$$f$ is odd.
 
-</details>
-
 **DSE Practice 5.** The function $f$ is defined on $\mathbb{{'}R{}'}$ by $f(x) = ax^2 + bx + c$.
 Given that $f(0) = 5$$f(1) = 4$And $f(-1) = 10$Find $a$$b$And $c$.
 
-<details>
 <summary>Solution</summary>
 
 $f(0) = c = 5$.
@@ -1014,8 +974,6 @@ $f(-1) = a - b + 5 = 10 \implies a - b = 5 \quad \text{(ii)}$.
 (i) + (ii): $2a = 4 \implies a = 2$. From (i): $b = -3$.
 
 $f(x) = 2x^2 - 3x + 5$.
-
-</details>
 
 ## Summary
 

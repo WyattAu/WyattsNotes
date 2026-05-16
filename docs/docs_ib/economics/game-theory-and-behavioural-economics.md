@@ -304,7 +304,6 @@ While preserving their freedom to choose otherwise.
 
 ## Practice Problems
 
-<details>
 <summary>Problem 1: Finding Nash Equilibria</summary>
 
 Two firms, Alpha and Beta, are deciding whether to advertise (Ad) or not advertise (No Ad). The
@@ -333,7 +332,6 @@ The only Nash equilibrium is (Ad, Ad) with payoffs $(4, 4)$. This is a prisoner'
 Would be better off at (No Ad, No Ad) with $(6, 6)$But neither has the incentive to unilaterally
 Stop advertising.
 
-</details>
 <summary>Problem 2: Mixed Strategy Nash Equilibrium</summary>
 
 In a zero-sum game, Player 1 can play Up or Down; Player 2 can play Left or Right. The payoff matrix
@@ -365,7 +363,6 @@ $$q = 0.5$$
 The mixed strategy Nash equilibrium is: Player 1 plays Up with probability $0.6$ and Down with
 Probability $0.4$; Player 2 plays Left with probability $0.5$ and Right with probability $0.5$.
 
-<details>
 <summary>Problem 3: Behavioural Biases in Decision-Making</summary>
 
 A consumer is choosing between two investment products:
@@ -387,7 +384,6 @@ Underlying probabilities are identical.
 Loss aversion also plays a role: the word "losing" activates a stronger emotional response than
 "gaining," making Product B seem less attractive despite its mathematical equivalence.
 
-</details>
 <summary>Problem 4: Present Bias and Saving</summary>
 
 A person is offered a choice: `USD 100` today or `USD 120` in one month. Most people choose
@@ -406,7 +402,6 @@ discount rate is Not constant — it is much higher for immediate trade-offs tha
 
 This has important implications for savings behaviour, health decisions, and commitment devices.
 
-<details>
 <summary>Problem 5: Nudge Theory Application</summary>
 
 A government wants to increase organ donation rates. Currently, citizens must actively opt in to
@@ -639,7 +634,6 @@ reversals.
 
 ## Additional Practice Problems
 
-</details>
 <summary>Problem 6: Sequential Game with Credible Threats</summary>
 
 Amazon is considering entering the market for online groceries in a country where FreshCo is the
@@ -689,7 +683,6 @@ SPNE: (Enter, Accommodate) with payoffs (5, 8).
 4. **Sunk cost commitment**: making irreversible investments that lower the cost of fighting (e.g.,
    building a proprietary logistics network optimised for aggressive pricing)
 
-<details>
 <summary>Problem 7: Repeated Game and Collusion Sustainability</summary>
 
 Two airlines, Alpha and Beta, compete on a route. Each can set a High or Low fare. Weekly payoffs
@@ -740,7 +733,6 @@ Overall, in standard theory, more frequent interactions make collusion easier to
 punishment comes sooner (discounting matters less for near-future punishments). However,
 Empirically, the effect depends on the specific market structure and the ease of monitoring.
 
-</details>
 <summary>Problem 8: Behavioural Economics in Policy Design</summary>
 
 A government wants to increase retirement savings rates. Currently, only 40% of eligible workers
@@ -982,7 +974,6 @@ self-interested utility maximisation.
 
 ## Additional Practice Problems
 
-<details>
 <summary>Problem 9: Auction Strategy</summary>
 
 You are bidding in a second-price sealed-bid auction for a painting. Your private valuation of The
@@ -1019,7 +1010,6 @@ Your expected surplus $= 800 - 600 = \$200$.
 
 Expected surplus unconditional: $0.512 \times 200 = \$102.40$.
 
-</details>
 <summary>Problem 10: Public Goods Game and Policy</summary>
 
 A village of 100 households is considering contributing to a new well that costs `USD 10,000`. Each
@@ -1289,7 +1279,6 @@ Firm 2 earns negative expected profit because it faces the risk of winning when 
 low cost. This illustrates the **winner's curse**: in common-value auctions, winning is bad News
 about the winner's bid relative to competitors' costs.
 
-<details>
 <summary>Problem 12: Signalling Equilibrium</summary>
 
 A job applicant's productivity is either $\theta_H = 50$ or $\theta_L = 20$. The employer cannot
@@ -1327,7 +1316,6 @@ High-productivity workers would deviate: their education cost ($4e$) is lower th
 
 Therefore, the only stable equilibrium is the separating one.
 
-</details>
 <summary>Problem 13: Prospect Theory Calculations</summary>
 
 A student must choose between two exam preparation strategies:
@@ -1574,7 +1562,6 @@ Company A should bid approximately 96 million rather than 100 million to avoid t
 
 ## Exam-Style Questions: Game Theory (HL Extension)
 
-<details>
 <summary>Question 1: Repeated Prisoner's Dilemma and Oligopoly (10 marks)</summary>
 
 Two firms, A and B, compete in a market. They can either set a high price (cooperate) or a low Price
@@ -1617,9 +1604,6 @@ the incentive to defect increases because each firm's share of the cooperative p
 monitoring becomes harder. The probability of accidental defection or deviation Rises with the
 number of firms.
 
-</details>
-
-<details>
 <summary>Question 2: Auction Design (10 marks)</summary>
 
 A government is selling a mining licence. Two mining companies bid. Each company's private Valuation
@@ -1659,9 +1643,6 @@ seller.
 bids, reducing the complexity of participation and encouraging more bidders to enter. More bidders
 increase expected revenue in both formats.
 
-</details>
-
-<details>
 <summary>Question 3: Behavioural Economics and Policy Design (10 marks)</summary>
 
 A government wants to increase pension contributions. Currently, 40% of eligible workers Contribute
@@ -1710,8 +1691,6 @@ _Disadvantages:_
 
 _Conclusion:_ defaults are a powerful and cost-effective policy tool, but should be Complemented
 with financial education and flexible options for those with different needs.
-
-</details>
 
 ## Case Studies: Game Theory and Behavioural Economics (HL Extension)
 
@@ -2047,7 +2026,6 @@ intended use, treating money differently depending on the account.
 
 ## Exam-Style Questions: Behavioural Economics (Additional)
 
-<details>
 <summary>Question 4: Present Bias and Savings Behaviour (10 marks)</summary>
 
 A worker earns USD 50,000 per year and can save either USD 5,000 or USD 2,000 per year for
@@ -2099,9 +2077,6 @@ percentage points among participants.
 Both policies work by changing the choice architecture or adding commitment mechanisms that
 Counteract present bias.
 
-</details>
-
-<details>
 <summary>Question 5: Evolutionary Game Theory and International Cooperation (10 marks)</summary>
 
 Two countries are negotiating a climate agreement. Each can either Abide (reduce emissions) Or
@@ -2269,7 +2244,6 @@ Signals, the cascade converges on the wrong outcome.
 
 ## Exam-Style Questions: Behavioural Economics (Additional)
 
-<details>
 <summary>Question 6: Nash Bargaining and Trade Negotiations (10 marks)</summary>
 
 Country A and Country B are negotiating a trade agreement. Without the agreement:
@@ -2331,7 +2305,6 @@ _Limitations:_
 5. **Non-cooperative behaviour:** countries may use threats, deadlines, and other strategic tactics
    not captured by the cooperative Nash framework
 
-</details>
 <summary>Question 7: Information Cascades and Financial Markets (10 marks)</summary>
 
 An IPO (initial public offering) is being evaluated by four investors. Each investor receives A
@@ -2705,8 +2678,6 @@ equilibrium (no run) coexists with the inefficient equilibrium (run).
 
 **Policy solution:** deposit insurance (FDIC in the US) eliminates the incentive to run by
 Guaranteeing deposits. This changes the payoff structure, eliminating the run equilibrium.
-
-</details>
 
 ## Summary
 
