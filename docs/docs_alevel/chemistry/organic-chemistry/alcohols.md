@@ -848,6 +848,8 @@ ethanol.
 - This reaction is preferred because it is irreversible (no equilibrium) and proceeds rapidly at
   room temperature without a catalyst, giving a higher yield (1 mark).
 
+</details>
+
 ---
 
 :::tip Diagnostic Test Ready to test your understanding of **Alcohols**? The
@@ -859,8 +861,6 @@ with other chemistry topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/alevel/chemistry/diagnostics/diagnostic-guide) for instructions on
 self-marking and building a personal test matrix. :::
-
-</details>
 
 ## Summary
 

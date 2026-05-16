@@ -274,6 +274,8 @@ Find the difference in loudness level.
 
 $$\Delta\beta = 10\log_{10}\left(\frac{10^{-2}}{10^{-4}}\right) = 10\log_{10}(100) = 10 \times 2 = 20 \mathrm{ dB}$$
 
+</details>
+
 ### Ultrasound
 
 Ultrasound has frequencies above $20,000 \mathrm{ Hz}$. Applications include:
@@ -378,7 +380,7 @@ Where $h_i$ is the image height and $h_o$ is the object height.
 An object is placed $30 \mathrm{ cm}$ from a convex lens of focal length $20 \mathrm{ cm}$. Find the
 Image position and magnification.
 
-</details>
+<details>
 <summary>Solution</summary>
 
 $$\frac{1}{v} - \frac{1}{-30} = \frac{1}{20}$$
