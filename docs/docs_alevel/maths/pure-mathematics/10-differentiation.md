@@ -246,8 +246,8 @@ $$f(x) - f(a) \approx \frac{f''(a)}{2}(x-a)^2$$
 :::warning Warning Point could still be a maximum, minimum, or inflection. Always use a nature table
 (checking the sign Of $f'$ on either side) if the second derivative test is inconclusive. :::
 
-<DesmosGraph title="Function, Derivative, and Tangent Line" expressions={["f(x)=x^3-6x^2+9x+1",
-"f'(x)=3x^2-12x+9"]} width={800} height={500} /> Observe how the Derivative relates to the gradient
+<!-- prettier-ignore -->
+<DesmosGraph title="Function, Derivative, and Tangent Line" expressions={["f(x)=x^3-6x^2+9x+1", "f'(x)=3x^2-12x+9"]} width={800} height={500} /> Observe how the Derivative relates to the gradient
 of the tangent line. Move the point along the curve to see how The tangent changes slope, and note
 where the derivative is zero at stationary points. <hr />
 
