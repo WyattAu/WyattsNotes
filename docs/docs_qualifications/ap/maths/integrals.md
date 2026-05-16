@@ -15,10 +15,8 @@ slug: integrals
 ## Antiderivatives and Indefinite Integrals (CED Unit 6)
 
 An **antiderivative** of $f$ is a function $F$ such that $F' = f$. The **indefinite integral** is:
-
-<DesmosGraph title="Definite Integral as Area Under a Curve" expressions={["\\int_{a}^{b} f(x) \\,
-dx"]} width={800} height={500} />
-
+<!-- prettier-ignore -->
+<DesmosGraph title="Definite Integral as Area Under a Curve" expressions={["\\int_{a}^{b} f(x) \\, dx"]} width={800} height={500} />
 Adjust the parameters in the graph above to explore the relationships between variables.
 
 $$

@@ -16,8 +16,8 @@ slug: algebra-and-calculus
 
 ## Higher Algebra
 
-<DesmosGraph title="Graph Transformations: y = af(x + b) + c" expressions={["af(x+b)+c",
-"f(x)=x^2"]} width={800} height={500} />
+<!-- prettier-ignore -->
+<DesmosGraph title="Graph Transformations: y = af(x + b) + c" expressions={["af(x+b)+c", "f(x)=x^2"]} width={800} height={500} />
 
 Adjust the parameters in the graph above to explore the relationships between variables.
 
