@@ -18,31 +18,12 @@ import {
 } from './docusaurus.shared.config';
 
 const config = {
-  ...sharedConfig,
-
-  title: "Wyatt's Notes — Qualifications",
-  tagline: 'GCSE, AP, Scottish Highers, Irish Leaving Certificate',
-  url: 'https://qualifications.wyattau.com',
-  baseUrl: '/',
-
-  presets: [
-    [
-      'classic',
-      {
-        docs: false,
-        blog: false,
-        theme: {
-          customCss: './src/css/custom.css',
-        },
-        sitemap: {
-          lastmod: 'date',
-          changefreq: 'weekly',
-          priority: 0.7,
-          ignorePatterns: ['/tags/**'],
-        },
-      } satisfies Preset.Options,
-    ],
-  ],
+  ...sharedConfig({
+    title: "Wyatt's Notes — Qualifications",
+    tagline: 'GCSE, AP, Scottish Highers, Irish Leaving Certificate',
+    url: 'https://qualifications.wyattau.com',
+    algoliaIndexName: 'wyattsnotes_qualifications',
+  }),
 
   plugins: [
     ...sharedPlugins(),
@@ -58,12 +39,6 @@ const config = {
       },
     ],
   ],
-
-  markdown: {
-    mermaid: true,
-  },
-
-  themes: ['@docusaurus/theme-live-codeblock', '@docusaurus/theme-mermaid'],
 
   themeConfig: {
     algolia: createAlgoliaConfig('wyattsnotes_qualifications'),

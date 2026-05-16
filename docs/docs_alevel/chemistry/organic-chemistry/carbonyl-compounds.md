@@ -494,6 +494,7 @@ Note: Propanone ($\mathrm{CH}_3\mathrm{COCH}_3$) also has formula
 $\mathrm{C}_3\mathrm{H}_6\mathrm{O}$ but would not give a positive Tollens' test.
 
 </details>
+<details>
 <summary>Problem 2</summary>
 
 Write equations for the reactions of ethanoyl chloride ($\mathrm{CH}_3\mathrm{COCl}$) with: (a)
@@ -517,6 +518,7 @@ Observation: vigorous reaction, white solid forms (ammonium chloride).
 $\mathrm{CH}_3\mathrm{COCl} + 2\mathrm{CH}_3\mathrm{NH}_2 \to \mathrm{CH}_3\mathrm{CONHCH}_3 + \mathrm{CH}_3\mathrm{NH}_3^+\mathrm{Cl}^-$.
 Observation: vigorous reaction, white solid forms.
 
+</details>
 <details>
 <summary>Problem 3</summary>
 
@@ -543,6 +545,7 @@ Iodoform test:
 $\mathrm{CH}_3\mathrm{COCH}_2\mathrm{CH}_2\mathrm{CH}_3 + 3\mathrm{I}_2 + 4\mathrm{NaOH} \to \mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{COONa} + \mathrm{CHI}_3(s) + 3\mathrm{NaI} + 3\mathrm{H}_2\mathrm{O}$
 
 </details>
+<details>
 <summary>Problem 4</summary>
 
 Write a mechanism for the nucleophilic addition of $\mathrm{HCN}$ to propanone
@@ -570,6 +573,7 @@ carbon bearing the $-\mathrm{OH}$$-\mathrm{CN}$$-\mathrm{CH}_3$And $-\mathrm{CH}
 nucleophile attacks from either face of the planar carbonyl, giving a racemic mixture (50:50 mixture
 of enantiomers).
 
+</details>
 ## Worked Examples: Carbonyl Chemistry in Depth
 
 ### Example 1: Distinguishing Aldehydes and Ketones Using Chemical Tests
@@ -758,8 +762,7 @@ $$\text{Percentage yield} = \frac◆LB◆\text{actual mass}◆RB◆◆LB◆6.52�
 
 ## Exam-Style Questions with Full Mark Schemes
 
-### Details
-
+<details>
 <summary>Q1 (5 marks)</summary>
 
 Describe a chemical test to distinguish between propanal and propanone. State the reagent, the
@@ -780,6 +783,7 @@ carboxylate ion, and $\mathrm{Ag}^+$ is reduced to metallic silver (1 mark).
 **Propanone:** No silver mirror forms (no reaction) (1 mark). Ketones are not oxidised by Tollens'
 reagent (1 mark).
 
+</details>
 <details>
 <summary>Q2 (6 marks)</summary>
 
@@ -802,6 +806,7 @@ not give a silver mirror with Tollens' reagent. Deduce the structure of $\mathrm
   group. Not an aldehyde. Correct (1 mark).
 
 </details>
+<details>
 <summary>Q3 (5 marks)</summary>
 
 Write the mechanism for the reaction of propanal with hydrogen cyanide. Explain why the product is
@@ -820,6 +825,7 @@ formed as a racemic mixture.
 - The $\mathrm{CN}^-$ can attack from either face of the planar carbonyl with equal probability,
   producing a 50:50 mixture of enantiomers (racemate) (1 mark).
 
+</details>
 <details>
 <summary>Q4 (4 marks)</summary>
 
@@ -839,6 +845,7 @@ Explain why $\mathrm{NaBH}_4$ reduces aldehydes and ketones but does not reduce 
 - A stronger reducing agent such as $\mathrm{LiAlH}_4$ is needed for carboxylic acids (1 mark).
 
 </details>
+<details>
 <summary>Q5 (5 marks)</summary>
 
 Ethyl ethanoate can be prepared by two different methods: (a) from ethanoic acid and ethanol using
@@ -859,6 +866,7 @@ Comparison: Method (b) gives a higher yield and does not require heating, but us
 expensive and hazardous ethanoyl chloride. Method (a) uses cheaper reagents but gives a lower yield
 unless excess reagent is used or water is removed (1 mark).
 
+</details>
 ## Retrosynthesis with Carbonyl Compounds
 
 ### Key Disconnections
@@ -904,8 +912,6 @@ Compounds with other chemistry topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/alevel/chemistry/diagnostics/diagnostic-guide) for instructions on
 self-marking and building a personal test matrix. :::
-
-</details>
 
 ## Summary
 

@@ -148,6 +148,7 @@ $\mathrm{HNO_2} + \mathrm{H_2O} \rightleftharpoons \mathrm{NO_2^-} + \mathrm{H_3
 two conjugate acid-base pairs.
 
 </details>
+<details>
 <summary>Solution</summary>
 
 $\mathrm{HNO_2}$ donates a proton to become $\mathrm{NO_2^-}$:
@@ -566,6 +567,7 @@ The electrochemical series ranks half-reactions by their standard electrode pote
 - In electrochemical cell questions, the species with the more positive $E^\circ$ undergoes
   reduction (cathode).
 
+</details>
 <details>
 <summary>Exam-Style Practice Questions</summary>
 
@@ -793,6 +795,7 @@ Calculate the pH of a buffer containing $0.20 \mathrm{ mol/dm^3}$ $\mathrm{CH_3C
 ($K_a = 1.8 \times 10^{-5}$) and $0.10 \mathrm{ mol/dm^3}$ $\mathrm{CH_3COONa}$.
 
 </details>
+<details>
 <summary>Solution</summary>
 
 $$\mathrm{p}K_a = -\log_{10}(1.8 \times 10^{-5}) = 4.74$$
@@ -806,6 +809,7 @@ $$\mathrm{pH} = \mathrm{p}K_a + \log_{10}\left(\frac{[\mathrm{CH_3COO^-}]}{[\mat
 Predict the products of electrolysis of dilute $\mathrm{Na_2SO_4}$ solution using inert carbon
 electrodes.
 
+</details>
 <details>
 <summary>Solution</summary>
 
@@ -827,6 +831,7 @@ due to $\mathrm{OH^-$ accumulation.
 Describe how to prepare pure, dry crystals of zinc sulphate.
 
 </details>
+<details>
 <summary>Solution</summary>
 
 $\mathrm{ZnSO_4}$ is a soluble salt. Zinc is a reactive metal (above hydrogen), so the **acid +
@@ -844,6 +849,7 @@ metal** method can be used:
 
 ## Additional Practice Questions
 
+</details>
 <details>
 <summary>More Exam-Style Problems</summary>
 
@@ -900,8 +906,6 @@ _If you get this wrong, revise: The pH Scale_
 
 ### Details
 
-<summary>Solution</summary>
-
 $\mathrm{H_2SO_4}$ is a strong diprotic acid:
 $[\mathrm{H^+}] = 2 \times 0.0025 = 0.0050 \mathrm{ mol/dm^3}$
 
@@ -913,6 +917,7 @@ $$\mathrm{pH} = -\log_{10}(0.0050) = 2.30$$
 _If you get this wrong, revise: Strong and Weak Acids_
 
 </details>
+<details>
 <summary>Solution</summary>
 
 $$K_a = \frac{x^2}{0.050} = 1.8 \times 10^{-5}$$
@@ -926,6 +931,7 @@ $0.15 \mathrm{ mol/dm^3}$ $\mathrm{NH_4Cl}$ ($K_b = 1.8 \times 10^{-5}$). Calcul
 
 _If you get this wrong, revise: Buffers_
 
+</details>
 <details>
 <summary>Solution</summary>
 
@@ -942,6 +948,7 @@ the equivalence point.
 _If you get this wrong, revise: Acid-Base Titrations_
 
 </details>
+<details>
 <summary>Solution</summary>
 
 $$\mathrm{HCl} + \mathrm{NaOH} \to \mathrm{NaCl} + \mathrm{H_2O}$$
@@ -954,6 +961,7 @@ $$V(\mathrm{NaOH}) = \frac{n}{c} = \frac{0.00250}{0.0800} = 0.03125 \mathrm{ dm^
 
 _If you get this wrong, revise: Salt Preparation_
 
+</details>
 <details>
 <summary>Solution</summary>
 
@@ -971,6 +979,7 @@ react with dilute acids to produce $\mathrm{H_2}$). The best method is **acid + 
 _If you get this wrong, revise: Oxidation Numbers_
 
 </details>
+<details>
 <summary>Solution</summary>
 
 $\mathrm{H_2O_2}$ is a peroxide. In peroxides, oxygen has oxidation number $-1$.
@@ -986,6 +995,7 @@ give $\mathrm{Mn^{2+}}$ and $\mathrm{S}$.
 
 _If you get this wrong, revise: Balancing Redox Equations_
 
+</details>
 <details>
 <summary>Solution</summary>
 
@@ -1008,6 +1018,7 @@ electrolysed using carbon electrodes. Write half-equations and the overall equat
 _If you get this wrong, revise: Electrolysis of Aqueous Solutions_
 
 </details>
+<details>
 <summary>Solution</summary>
 
 Cathode: $\mathrm{Na^+}$ is above $\mathrm{H^+}$So $\mathrm{H_2}$ is produced:
@@ -1025,6 +1036,7 @@ through $\mathrm{AgNO_3}$ solution for 25 minutes?
 
 _If you get this wrong, revise: Faraday's Laws of Electrolysis_
 
+</details>
 <details>
 <summary>Solution</summary>
 
@@ -1041,6 +1053,7 @@ $E^\circ_{\mathrm{cell}}$ and write the overall equation. Is the reaction sponta
 _If you get this wrong, revise: Electrochemical Cells_
 
 </details>
+<details>
 <summary>Solution</summary>
 
 Nickel has the more positive $E^\circ$ (cathode, reduction).
@@ -1060,6 +1073,7 @@ acid? Explain.
 
 _If you get this wrong, revise: Indicators and pH Curves_
 
+</details>
 <details>
 <summary>Solution</summary>
 
@@ -1074,6 +1088,7 @@ whereas tin coating does not.
 _If you get this wrong, revise: Corrosion and Its Prevention_
 
 </details>
+<details>
 <summary>Solution</summary>
 
 **Zinc (galvanising):** Zinc is more reactive than iron. When the coating is scratched, zinc acts as
@@ -1089,6 +1104,7 @@ $0.10 \mathrm{ mol/dm^3}$ $\mathrm{NaOH}$ to $500 \mathrm{ cm^3}$ with distilled
 
 _If you get this wrong, revise: The pH Scale_
 
+</details>
 <details>
 <summary>Solution</summary>
 
@@ -1104,6 +1120,7 @@ passed through $\mathrm{AgNO_3}$ solution for 15.0 minutes?
 _If you get this wrong, revise: Faraday's Laws of Electrolysis_
 
 </details>
+<details>
 <summary>Solution</summary>
 
 $$Q = 1.20 \times 15.0 \times 60 = 1080 \mathrm{ C}$$
@@ -1117,6 +1134,7 @@ sulphuric acid.
 
 _If you get this wrong, revise: Salt Preparation and Ionic Equations_
 
+</details>
 <details>
 <summary>Solution</summary>
 
@@ -1131,6 +1149,7 @@ $\mathrm{SO_4^{2-}}$ is a spectator ion.
 _If you get this wrong, revise: Strong and Weak Acids_
 
 </details>
+<details>
 <summary>Solution</summary>
 
 **Strength** refers to the degree of ionisation. A strong acid (e.g., $\mathrm{HCl}$) is completely
@@ -1148,6 +1167,7 @@ concentration of $\mathrm{Zn^{2+}}$ is increased, what happens to the cell poten
 
 _If you get this wrong, revise: Electrochemical Cells_
 
+</details>
 <details>
 <summary>Solution</summary>
 
@@ -1163,6 +1183,7 @@ identify the gas evolved.
 _If you get this wrong, revise: Salt Preparation_
 
 </details>
+<details>
 <summary>Solution</summary>
 
 $$\mathrm{Zn} + \mathrm{H_2SO_4} \to \mathrm{ZnSO_4} + \mathrm{H_2}$$
@@ -1177,6 +1198,7 @@ hydroxide solution.
 
 _If you get this wrong, revise: Acid-Base Titrations_
 
+</details>
 <details>
 <summary>Solution</summary>
 
@@ -1194,6 +1216,7 @@ containing $\mathrm{CH_3COOH}$ and $\mathrm{CH_3COONa}$.
 _If you get this wrong, revise: Buffers_
 
 </details>
+<details>
 <summary>Solution</summary>
 
 The added $\mathrm{OH^-$ reacts with the weak acid component:

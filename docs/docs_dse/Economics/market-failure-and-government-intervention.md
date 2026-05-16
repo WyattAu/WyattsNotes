@@ -253,6 +253,7 @@ New equilibrium: `65 - 0.1Q = 10 + 0.1Q``Q = 275`. The subsidy achieves the soci
 Government cost = `15 x 275 = 4,125`.
 
 </details>
+<details>
 <summary>Worked Example: Subsidy for Vaccination</summary>
 
 Private demand for flu shots: `P = 30 - 0.1Q` (MPB). `MEB = 8`. Supply: `P = 4 + 0.1Q`.
@@ -556,6 +557,7 @@ Competition, raising prices, and reducing innovation.
 
 ## Practice Problems
 
+</details>
 <details>
 <summary>Question 1: Negative Externality Analysis</summary>
 
@@ -584,6 +586,7 @@ Price producers receive (net of tax): `P = 10 + 0.5(23.33) = 21.67`.
 The new equilibrium is at the social optimum.
 
 </details>
+<details>
 <summary>Question 2: Positive Externality Analysis</summary>
 
 The demand for flu vaccinations is `P = 40 - 0.2Q` (MPB). The marginal external benefit is
@@ -605,6 +608,7 @@ And the new equilibrium is at the social optimum.
 
 Government cost = `10 x 150 = 1,500`.
 
+</details>
 <details>
 <summary>Question 3: Public Goods and Free Riding</summary>
 
@@ -633,6 +637,7 @@ Resident can be taxed USD 120 (120,000 / 1,000), which is less than their valuat
 Everyone is better off.
 
 </details>
+<details>
 <summary>Question 4: Information Asymmetry</summary>
 
 In a health insurance market, there are two types of customers: healthy (60% of the population) and
@@ -671,6 +676,7 @@ Selection death spiral").
 - **Group insurance:** Employers offer insurance to their entire workforce, spreading risk across a
   mixed group of healthy and unhealthy individuals.
 
+</details>
 <details>
 <summary>Question 5: Cap and Trade vs Pigouvian Tax</summary>
 
@@ -720,6 +726,7 @@ Under the uniform mandate, Plant `B` is forced to abate beyond its cost-effectiv
 `A` abates less than it could cost-effectively. Trading corrects this misallocation.
 
 </details>
+<details>
 <summary>Question 6: Government Failure Evaluation</summary>
 
 "The government should ban all smoking because it is a demerit good." Evaluate this statement using
@@ -767,6 +774,7 @@ Considering both the market failure and the potential for government failure.
 A complete ban is a blunt instrument that may cause more harm than good. Targeted interventions
 (taxes, regulation, information) are more likely to improve net welfare than a prohibition.
 
+</details>
 <details>
 <summary>Question 7: Coase Theorem Application</summary>
 
@@ -870,6 +878,7 @@ Lead to an efficient outcome regardless of the initial allocation of property ri
 ## Problem Set
 
 </details>
+<details>
 <summary>Problem 1: Negative Externality of Consumption</summary>
 
 Smoking in public places generates a negative externality. The private demand for cigarettes is
@@ -881,8 +890,6 @@ Per-unit tax on consumers would achieve the social optimum? (d) Calculate the DW
 intervention.
 
 ### Details
-
-<summary>Solution</summary>
 
 (a) Market: `MPB = MPC`: `20 - 0.02Q = 2 + 0.01Q``0.03Q = 18``Q = 600`. `P = 8`.
 
@@ -907,6 +914,7 @@ Resident values the lighting at USD 60.
 (a) Is it efficient to build the system? (b) Will the private market provide it? (c) How should the
 Village fund it?
 
+</details>
 <details>
 <summary>Solution</summary>
 
@@ -935,6 +943,7 @@ High-risk (30%, expected claims USD 5,000/year). The insurer cannot distinguish 
 this Premium? (c) What happens to the market over time?
 
 </details>
+<details>
 <summary>Solution</summary>
 
 (a) Expected cost = `0.7 \times 1,000 + 0.3 \times 5,000 = 700 + 1,500 = 2,200`. Premium must be at
@@ -959,6 +968,7 @@ type Of market failure involved:
 
 (a) University education (b) Sugary drinks (c) Vaccination (d) Designer clothing (e) Cigarettes
 
+</details>
 <details>
 <summary>Solution</summary>
 
@@ -991,6 +1001,7 @@ total Abatement of 24 units.
 the Cost-minimising allocation. (c) How much does trading save?
 
 </details>
+<details>
 <summary>Solution</summary>
 
 (a) Cost of A: `30(12) + 3(144)/2 = 360 + 216 = 576`. Cost of B:
@@ -1017,6 +1028,7 @@ If you get this wrong, revise:
 "The government should ban all sugary drinks to solve the obesity problem." Evaluate this statement
 Using economic concepts.
 
+</details>
 <details>
 <summary>Solution</summary>
 
@@ -1058,6 +1070,7 @@ pay For soundproofing? What is the range of payment? (c) What conditions must ho
 theorem to Apply? (d) Why might the Coase theorem fail in practice?
 
 </details>
+<details>
 <summary>Solution</summary>
 
 (a) Install soundproofing. Cost (3,000) is less than damage avoided (8,000). Net social benefit =
@@ -1087,6 +1100,7 @@ for 10 Years. The social discount rate is 5%.
 (a) Calculate the NPV. (b) Should the bridge be built? (c) What are the limitations of this
 analysis?
 
+</details>
 <details>
 <summary>Solution</summary>
 

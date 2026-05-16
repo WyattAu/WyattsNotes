@@ -242,6 +242,7 @@ Inductive hypothesis, each subtree's output is sorted. Hence the full output is 
 
 <hr />
 
+</details>
 ## 5. Heaps and Heap Sort
 
 ### Binary Heap
@@ -350,7 +351,6 @@ and red-black trees are mentioned for context but not examined in detail. :::
 **Problem 1.** Draw the BST that results from inserting the keys 50, 30, 70, 20, 40, 60, 80 in that
 Order.
 
-</details>
 <summary>Answer</summary>
 
 ```
@@ -366,12 +366,15 @@ Each key is inserted at the correct position to maintain the BST property.
 **Problem 2.** What is the in-order, pre-order, and post-order traversal of the BST from Problem 1?
 
 <details>
+</details>
+<details>
 <summary>Answer</summary>
 
 - In-order: 20, 30, 40, 50, 60, 70, 80
 - Pre-order: 50, 30, 20, 40, 70, 60, 80
 - Post-order: 20, 40, 30, 60, 80, 70, 50
 
+</details>
 **Problem 3.** What is the worst-case height of a BST with $n$ nodes? Give an example insertion
 Order that produces this worst case.
 
@@ -399,6 +402,8 @@ Height = 4 = $n - 1$.
 **Problem 4.** Delete the node with key 30 from the BST in Problem 1. Show the resulting tree.
 
 <details>
+</details>
+<details>
 <summary>Answer</summary>
 
 Node 30 has two children (20 and 40). Replace with in-order successor = 40 (smallest in right
@@ -412,6 +417,7 @@ Subtree). Delete the original 40 node (leaf).
     20  60  80
 ```
 
+</details>
 **Problem 5.** Build a max-heap from the array `[4, 10, 3, 5, 1]`. Show the array after each heapify
 Call.
 
@@ -444,6 +450,8 @@ Verify: 10 > 5 and 10 > 3; 5 > 4 and 5 > 1. ✓
 Step.
 
 <details>
+</details>
+<details>
 <summary>Answer</summary>
 
 Build heap: `[5, 3, 4, 1, 1]`
@@ -457,6 +465,7 @@ Build heap: `[5, 3, 4, 1, 1]`
 
 Final: `[1, 1, 3, 4, 5]`
 
+</details>
 **Problem 7.** Prove that the in-order successor of a node in a BST (if it exists) is the leftmost
 Node in its right subtree, assuming the node has a right child.
 
@@ -471,6 +480,8 @@ Therefore, the in-order successor is the leftmost node in the right subtree. $\s
 **Problem 8.** A complete binary tree has 100 nodes. What is its height? How many leaves does it
 Have?
 
+<details>
+</details>
 <details>
 <summary>Answer</summary>
 
@@ -514,6 +525,7 @@ Level 5 have **no children** and are therefore leaves.
 
 Total leaves = 37 (level 6) + 13 (level 5) = 50 = $\lceil 100/2 \rceil$. ✓
 
+</details>
 **Problem 9.** Explain why heap sort is not a stable sorting algorithm. Give a concrete example
 Where stability is violated.
 
@@ -538,6 +550,8 @@ Not stable.
 Are distinct.
 
 <details>
+</details>
+<details>
 <summary>Answer</summary>
 
 **Proof.** The first element of a pre-order traversal is the root. All subsequent elements before
@@ -545,9 +559,7 @@ The first element greater than the root belong to the left subtree, and all elem
 Onward belong to the right subtree. This recursively partitions the traversal, uniquely determining
 The tree structure. $\square$
 
-### Details
-
-<summary>Detailed example</summary>
+#### Detailed example
 
 Pre-order: `[8, 3, 1, 6, 4, 7, 10, 14, 13]`
 

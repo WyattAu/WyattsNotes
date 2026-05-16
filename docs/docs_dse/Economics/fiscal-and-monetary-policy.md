@@ -518,6 +518,7 @@ Targeted fiscal measures than on discretionary macroeconomic policy.
 ## Practice Problems
 
 </details>
+<details>
 <summary>Question 1: Multiplier Calculations</summary>
 
 An economy has MPC = 0.75, MPT = 0.1, and MPM = 0.1.
@@ -539,6 +540,7 @@ Is injected directly into the economy. With a tax cut, only MPC x 50 = 37.5 bill
 Spent (the remaining 12.5 billion is saved). The initial injection is smaller, so the total effect
 Is smaller.
 
+</details>
 <details>
 <summary>Question 2: Crowding-Out Analysis</summary>
 
@@ -564,6 +566,7 @@ Spending increase.
 Note: Full crowding out is a theoretical extreme. In practice, crowding out is partial.
 
 </details>
+<details>
 <summary>Question 3: Policy Mix</summary>
 
 An economy is experiencing high inflation (8%) and high unemployment (9%). The natural rate of
@@ -596,6 +599,7 @@ Unemployment in opposite directions.
 Supply-side policies address the root cause of stagflation (a supply shock that reduced productive
 Capacity) without the inflationary side effects of demand-side stimulus.
 
+</details>
 <details>
 <summary>Question 4: Fiscal Policy in Hong Kong</summary>
 
@@ -632,6 +636,7 @@ Budget surplus may not be the most appropriate fiscal stance in this context.
 - Fiscal reserves provide a buffer but are finite.
 
 </details>
+<details>
 <summary>Question 5: Balanced Budget Multiplier</summary>
 
 The government increases both spending and taxes by USD 60 billion. MPC = 0.8. There are no imports
@@ -659,6 +664,7 @@ Increase is injected, but only the portion of the tax increase that would have b
 Delta T = 48 billion) is withdrawn from spending. The remaining 12 billion of the tax increase would
 Have been saved, so its withdrawal does not reduce consumption.
 
+</details>
 <details>
 <summary>Question 6: Monetary Policy Transmission</summary>
 
@@ -709,6 +715,7 @@ Rise slightly but remains below target due to the large output gap. The economy 
 Employment without generating significant inflationary pressure.
 
 </details>
+<details>
 <summary>Question 7: Supply-Side Policy Evaluation</summary>
 
 An economy has the following characteristics: high structural unemployment (6%), low productivity
@@ -811,6 +818,7 @@ Consumption during the pandemic-induced recession.
 
 ## Problem Set
 
+</details>
 <details>
 <summary>Problem 1: Multiplier with Leakages</summary>
 
@@ -821,8 +829,6 @@ what Is the total change in national income? (c) If the government cuts taxes by
 what is the Total change? (d) Why is the spending increase more effective?
 
 ### Details
-
-<summary>Solution</summary>
 
 (a) Multiplier = `1/(MPS + MPT + MPM) = 1/(0.3 + 0.15 + 0.15) = 1/0.6 = 1.67`.
 
@@ -848,6 +854,7 @@ The government increases both spending and taxes by USD 100 billion. MPC = 0.75,
 Income? (c) What is the balanced budget multiplier?
 
 </details>
+<details>
 <summary>Solution</summary>
 
 (a) Multiplier = `1/(0.25 + 0.05 + 0.1) = 1/0.4 = 2.5`. Tax multiplier =
@@ -872,6 +879,7 @@ The government runs a deficit of USD 60 billion in a small open economy. The MPC
 Crowding out reduces private investment by USD 30 billion, what is the actual increase in GDP? (c)
 Why Might crowding out be less severe in a small open economy?
 
+</details>
 <details>
 <summary>Solution</summary>
 
@@ -897,6 +905,7 @@ An economy faces 10% inflation and 8% unemployment (NRU = 5%).
 Policy mix would you recommend?
 
 </details>
+<details>
 <summary>Solution</summary>
 
 (a) **Stagflation** -- simultaneous high inflation and high unemployment. This is caused by a
@@ -924,6 +933,7 @@ USD 1 of GDP lost.
 (a) By how much do tax revenues automatically fall? (b) By how much do unemployment benefits
 Automatically increase? (c) What is the total automatic stabilisation effect?
 
+</details>
 <details>
 <summary>Solution</summary>
 
@@ -949,6 +959,7 @@ Evaluate the likely effectiveness of the following supply-side policies for redu
 Reducing Corporate tax rates (d) Signing free trade agreements
 
 </details>
+<details>
 <summary>Solution</summary>
 
 (a) May reduce unemployment by making low-skilled labour cheaper for employers. However, it reduces
@@ -979,6 +990,7 @@ Economic growth (1% real GDP growth).
 (a) What must the HKMA do? (b) What are the effects on Hong Kong's economy? (c) Can the Hong Kong
 Government use fiscal policy to offset the contractionary monetary effect?
 
+</details>
 <details>
 <summary>Solution</summary>
 
@@ -1008,6 +1020,7 @@ Government is increasing spending to reduce unemployment.
 Rates, investment, and inflation? (c) What would you advise?
 
 </details>
+<details>
 <summary>Solution</summary>
 
 (a) The central bank's contractionary policy raises interest rates to reduce AD and inflation. The

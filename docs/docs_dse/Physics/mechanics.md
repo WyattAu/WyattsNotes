@@ -1040,6 +1040,7 @@ This is called resonance.
 A car travelling at $25 \mathrm{ m/s}$ decelerates uniformly to rest in $4 \mathrm{ s}$. Find the
 Deceleration and the distance travelled.
 
+</details>
 <details>
 <summary>Solution</summary>
 
@@ -1078,6 +1079,7 @@ _If you get this wrong, revise: Projectile motion formulas for maximum height an
 A $4 \mathrm{ kg}$ block is placed on a rough inclined plane at $35^\circ$ to the horizontal. The
 Coefficient of kinetic friction is $0.25$. Find the acceleration of the block sliding down.
 
+</details>
 <details>
 <summary>Solution</summary>
 
@@ -1128,6 +1130,7 @@ _If you get this wrong, revise: Conservation of energy and work done against fri
 A ball of mass $2 \mathrm{ kg}$ moving at $6 \mathrm{ m/s}$ collides elastically with a stationary
 Ball of the same mass. Find the velocities after collision.
 
+</details>
 <details>
 <summary>Solution</summary>
 
@@ -1177,6 +1180,7 @@ A conical pendulum consists of a $0.5 \mathrm{ kg}$ mass on a string of length $
 Swinging in a horizontal circle of radius $0.8 \mathrm{ m}$. Find the tension and the speed of the
 Mass.
 
+</details>
 <details>
 <summary>Solution</summary>
 
@@ -1233,6 +1237,7 @@ Distance from a spherical body._
 A mass-spring system has mass $0.3 \mathrm{ kg}$Spring constant $120 \mathrm{ N/m}$And amplitude
 $0.04 \mathrm{ m}$. Find the velocity when the displacement is $0.02 \mathrm{ m}$.
 
+</details>
 <details>
 <summary>Solution</summary>
 
@@ -1273,6 +1278,7 @@ _If you get this wrong, revise: Simple pendulum period formula and rearranging i
 A spring with constant $500 \mathrm{ N/m}$ is stretched $0.08 \mathrm{ m}$ from its natural length.
 Find the work done and the elastic potential energy stored.
 
+</details>
 <details>
 <summary>Solution</summary>
 
@@ -1308,6 +1314,7 @@ A bucket of water of mass $0.8 \mathrm{ kg}$ is whirled in a vertical circle of 
 $0.6 \mathrm{ m}$. Find the minimum speed at the top of the circle for the water to remain in the
 bucket.
 
+</details>
 <details>
 <summary>Solution</summary>
 
@@ -1350,6 +1357,7 @@ _If you get this wrong, revise: Orbital motion, orbital speed, and orbital perio
 A mass-spring system oscillates with amplitude $A$. At what displacement is the kinetic energy equal
 To half the total energy?
 
+</details>
 <details>
 <summary>Solution</summary>
 

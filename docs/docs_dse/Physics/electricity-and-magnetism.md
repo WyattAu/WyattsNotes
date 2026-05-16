@@ -1089,6 +1089,7 @@ A point charge of $+6 \times 10^{-9} \mathrm{ C}$ creates an electric field. Fin
 At a distance of $0.05 \mathrm{ m}$ from the charge and the force on a
 $-2 \times 10^{-9} \mathrm{ C}$ Charge placed at that point.
 
+</details>
 <details>
 <summary>Solution</summary>
 
@@ -1138,6 +1139,7 @@ resistance._
 A wire carries a current of $3 \mathrm{ A}$. How many electrons pass through a cross-section of the
 Wire in $10$ seconds?
 
+</details>
 <details>
 <summary>Solution</summary>
 
@@ -1176,6 +1178,7 @@ series Across a $9 \mathrm{ V}$ supply. At $20^\circ\mathrm{C}$The thermistor re
 $10 \mathrm{ k}\Omega$. At $80^\circ\mathrm{C}$The thermistor resistance drops to
 $2 \mathrm{ k}\Omega$. Find the output voltage across the thermistor at each temperature.
 
+</details>
 <details>
 <summary>Solution</summary>
 
@@ -1223,6 +1226,7 @@ An electron ($m_e = 9.11 \times 10^{-31} \mathrm{ kg}$) moves at $2.0 \times 10^
 Perpendicular to a magnetic field of flux density $0.5 \mathrm{ T}$. Find the force on the electron
 And the radius of its circular path.
 
+</details>
 <details>
 <summary>Solution</summary>
 
@@ -1259,6 +1263,7 @@ field ($\varepsilon = BLv$)._
 A $220 \mathrm{ V}$ RMS mains supply is connected to a $100 \Omega$ resistor. Find the peak current,
 The peak power, and the average power dissipated.
 
+</details>
 <details>
 <summary>Solution</summary>
 
@@ -1307,6 +1312,7 @@ A battery with unknown EMF and internal resistance is connected to a variable re
 Following measurements are obtained: at $I = 0.5 \mathrm{ A}$$V = 11.5 \mathrm{ V}$; at
 $I = 1.5 \mathrm{ A}$$V = 10.5 \mathrm{ V}$. Find $\varepsilon$ and $r$.
 
+</details>
 <details>
 <summary>Solution</summary>
 
@@ -1353,6 +1359,7 @@ An electric kettle rated at $1500 \mathrm{ W}$$220 \mathrm{ V}$ is used to boil 
 Of water from $20^\circ\mathrm{C}$ to $100^\circ\mathrm{C}$. Specific heat capacity of water is
 $4200 \mathrm{ J/(kg }^\circ\mathrm{C)}$. If the kettle is $85\%$ efficient, find the time taken.
 
+</details>
 <details>
 <summary>Solution</summary>
 
@@ -1406,6 +1413,7 @@ _If you get this wrong, revise: Superposition of electric fields and solving for
 A bar magnet is dropped through a copper tube. Explain why it falls more slowly than through a
 Plastic tube and describe the direction of the induced currents.
 
+</details>
 <details>
 <summary>Solution</summary>
 

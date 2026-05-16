@@ -1167,6 +1167,7 @@ Specific heat capacity of oil is $2100$ $\mathrm{J kg}^{-1}\mathrm{ K}^{-1}$. Fi
 Temperature. (Specific heat capacity of aluminium $= 900$ $\mathrm{J kg}^{-1}\mathrm{ K}^{-1}$
 Copper $= 385$ $\mathrm{J kg}^{-1}\mathrm{ K}^{-1}$.)
 
+</details>
 <details>
 <summary>Solution</summary>
 
@@ -1233,6 +1234,7 @@ Of $20^\circ\mathrm{C}$ and an outdoor surface temperature of $5^\circ\mathrm{C}
 Heat loss through the window. (Thermal conductivity of glass $= 0.8$
 $\mathrm{W m}^{-1}\mathrm{ K}^{-1}$.)
 
+</details>
 <details>
 <summary>Solution</summary>
 
@@ -1266,6 +1268,7 @@ $$U = \frac{1}{1.4167} = 0.706 \mathrm{ W m}^{-2}\mathrm{ K}^{-1}$$
 
 A spherical black body of radius $5.0$ cm is maintained at $500$ K. Find the power radiated.
 
+</details>
 <details>
 <summary>Solution</summary>
 
@@ -1317,6 +1320,7 @@ $$V = \frac{nRT}{p} = \frac{1.046 \times 8.314 \times 293.15}{1.01 \times 10^5} 
 Compare the rms speeds of hydrogen ($M = 2.0$ $\mathrm{g/mol}$) and oxygen ($M = 32.0$
 $\mathrm{g/mol}$) at the same temperature.
 
+</details>
 <details>
 <summary>Solution</summary>
 
@@ -1370,6 +1374,7 @@ $$Q = nC_p\Delta T = 1.0 \times \frac{5}{2} \times 8.314 \times 300 = 6235.5 \ma
 $2.0$ mol of a diatomic ideal gas ($\gamma = 1.4$) expands adiabatically from $V_1 = 5.0$ L at
 $p_1 = 4.0 \times 10^5$ Pa to $V_2 = 10.0$ L. Find the final pressure and temperature.
 
+</details>
 <details>
 <summary>Solution</summary>
 
@@ -1439,6 +1444,7 @@ $$t = 739.8 \times 0.693 = 512.7 \mathrm{ s} \approx 8.5 \mathrm{ minutes}$$
 A star has a surface temperature of $3500$ K. (a) At what wavelength does it radiate most intensely?
 (b) In what region of the electromagnetic spectrum is this?
 
+</details>
 <details>
 <summary>Solution</summary>
 
@@ -1481,6 +1487,7 @@ $$\lambda = \frac{1}{1.537 \times 10^{7}} = 6.51 \times 10^{-8} \mathrm{ m} = 65
 Find the density of nitrogen gas ($M = 28.0$ $\mathrm{g/mol}$) at $25^\circ\mathrm{C}$ and
 $1.01 \times 10^5$ Pa.
 
+</details>
 <details>
 <summary>Solution</summary>
 

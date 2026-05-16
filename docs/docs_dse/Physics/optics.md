@@ -430,6 +430,7 @@ _If you get this wrong, revise: Snell's law and refractive index definition._
 Find the critical angle for a water-diamond interface. ($n_{\mathrm{water}} = 1.33$
 $n_{\mathrm{diamond}} = 2.42$)
 
+</details>
 <details>
 <summary>Solution</summary>
 
@@ -475,6 +476,7 @@ _If you get this wrong, revise: Thin lens equation and the convex lens image for
 A diverging lens has a focal length of $15 \mathrm{ cm}$. An object is placed $20 \mathrm{ cm}$ From
 the lens. Find the image position and magnification.
 
+</details>
 <details>
 <summary>Solution</summary>
 
@@ -527,6 +529,7 @@ Convention for virtual images._
 A light ray travels from water ($n = 1.33$) to air at an angle of incidence of $40^\circ$. Does
 total Internal reflection occur? If not, find the angle of refraction.
 
+</details>
 <details>
 <summary>Solution</summary>
 
@@ -582,6 +585,7 @@ $2F$._
 A person has myopia with a far point of $50 \mathrm{ cm}$. What power of diverging lens is needed To
 correct their vision?
 
+</details>
 <details>
 <summary>Solution</summary>
 
@@ -643,6 +647,7 @@ An astronomical telescope has an objective lens of focal length $80 \mathrm{ cm}
 Focal length $4 \mathrm{ cm}$. Find the magnification in normal adjustment and the length of the
 Telescope.
 
+</details>
 <details>
 <summary>Solution</summary>
 
@@ -692,6 +697,7 @@ successive Mirror surfaces._
 A coin is at the bottom of a pool of water ($n = 1.33$) that is $2.0 \mathrm{ m}$ deep. How deep
 does The coin appear to be when viewed from directly above?
 
+</details>
 <details>
 <summary>Solution</summary>
 
@@ -742,6 +748,7 @@ of incidence of $45^\circ$. The prism has an apex angle of $60^\circ$. Explain w
 is deviated more than the red light and calculate the angle of refraction for each colour at The
 first surface.
 
+</details>
 <details>
 <summary>Solution</summary>
 

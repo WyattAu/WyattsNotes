@@ -1359,6 +1359,7 @@ _If you get this wrong, revise: Beta-minus decay — $Z$ increases by 1, $A$ sta
 A sample of sodium-24 ($t_{1/2} = 15$ hours, molar mass $= 24 \mathrm{ g/mol}$) has a mass of
 $0.48 \mathrm{ g}$. Calculate its activity.
 
+</details>
 <details>
 <summary>Solution</summary>
 
@@ -1414,6 +1415,7 @@ $\prescript{1}{}{0}\mathrm{n} + \prescript{235}{}{92}\mathrm{U} \to \prescript{1
 Given: $m(\mathrm{n}) = 1.008665$ u, $m(\mathrm{U\mathrm{-}235}) = 235.043930$ u,
 $m(\mathrm{Ba\mathrm{-}144}) = 143.922953$ u, $m(\mathrm{Kr\mathrm{-}89}) = 88.917630$ u.
 
+</details>
 <details>
 <summary>Solution</summary>
 
@@ -1466,6 +1468,7 @@ The increase in binding energy per nucleon._
 A gamma source has a half-value thickness of $1.5 \mathrm{ cm}$ in concrete. What thickness of
 Concrete is needed to reduce the intensity to $3\%$ of the original?
 
+</details>
 <details>
 <summary>Solution</summary>
 
@@ -1510,6 +1513,7 @@ _If you get this wrong, revise: Fraction remaining after $n$ half-lives: $(1/2)^
 A patient receives a dose of $0.5 \mathrm{ mGy}$ from alpha radiation to a specific organ. Calculate
 The equivalent dose in mSv.
 
+</details>
 <details>
 <summary>Solution</summary>
 
@@ -1552,6 +1556,7 @@ Activities._
 Explain, with reference to the binding energy per nucleon curve, why energy is released in both
 Nuclear fission and nuclear fusion.
 
+</details>
 <details>
 <summary>Solution</summary>
 
@@ -1600,6 +1605,7 @@ _If you get this wrong, revise: Radiocarbon dating formula and the decay law._
 Explain why a moderator with a small mass number (like graphite or heavy water) is more effective At
 slowing neutrons than a heavy material like lead.
 
+</details>
 <details>
 <summary>Solution</summary>
 
@@ -1660,6 +1666,7 @@ Kinetic energy between products._
 Write the equation for electron capture by beryllium-7 and explain why electron capture is Favoured
 over beta-plus decay for this isotope.
 
+</details>
 <details>
 <summary>Solution</summary>
 

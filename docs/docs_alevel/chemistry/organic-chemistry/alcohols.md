@@ -456,6 +456,7 @@ Using acidified potassium dichromate(VI).
   change (solution remains orange). Tertiary alcohols are not oxidised.
 
 </details>
+<details>
 <summary>Problem 2</summary>
 
 Ethanol can be converted to bromoethane by three different methods. Write equations for each and
@@ -488,6 +489,7 @@ $$
 
 Therefore, only Methods 1 and 2 produce bromoethane from ethanol.
 
+</details>
 <details>
 <summary>Problem 3</summary>
 
@@ -513,6 +515,7 @@ The tertiary carbocation can either lose a proton (elimination, major) or be att
 alcohol molecule (substitution, minor). At higher temperatures, elimination is favoured.
 
 </details>
+<details>
 <summary>Problem 4</summary>
 
 Design a synthesis of ethyl ethanoate from ethanol, using no other carbon-containing reagents. State
@@ -540,6 +543,7 @@ $$
 The reaction is an equilibrium. To drive it forward, use an excess of ethanol or remove water as it
 forms.
 
+</details>
 ## Worked Examples: Alcohols in Depth
 
 ### Example 1: Oxidation of a Primary Alcohol -- Step-by-Step
@@ -736,8 +740,7 @@ For the oxidation of primary alcohols:
 
 ## Exam-Style Questions with Full Mark Schemes
 
-### Details
-
+<details>
 <summary>Q1 (5 marks)</summary>
 
 Describe how you would distinguish between butan-1-ol, butan-2-ol, and 2-methylpropan-2-ol using
@@ -758,6 +761,7 @@ product).
 2-methylpropan-2-ol: Reflux with acidified $\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7$. No colour change
 (solution remains orange). Tertiary alcohols are not oxidised (1 mark for observation).
 
+</details>
 <details>
 <summary>Q2 (6 marks)</summary>
 
@@ -780,6 +784,7 @@ the role of the acid catalyst.
 - Curly arrow mechanism (1 mark).
 
 </details>
+<details>
 <summary>Q3 (5 marks)</summary>
 
 A student prepares ethyl ethanoate from ethanoic acid and ethanol using concentrated
@@ -803,6 +808,7 @@ apparatus or molecular sieves (1 mark).
 (c) The reaction is an equilibrium, so some reactants always remain (1 mark). At equilibrium, the
 rates of the forward and reverse reactions are equal (1 mark).
 
+</details>
 <details>
 <summary>Q4 (4 marks)</summary>
 
@@ -822,6 +828,7 @@ alcohol to a chloroalkane in organic synthesis.
   water to drive to completion (1 mark).
 
 </details>
+<details>
 <summary>Q5 (5 marks)</summary>
 
 Propose a mechanism for the reaction of ethanol with ethanoyl chloride to form ethyl ethanoate.

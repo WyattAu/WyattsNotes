@@ -859,6 +859,7 @@ _If you get this wrong, revise: The wave equation $v = f\lambda$._
 Light of wavelength $480 \mathrm{ nm}$ passes through two slits $0.3 \mathrm{ mm}$ apart onto a
 Screen $2.0 \mathrm{ m}$ away. Find the separation of adjacent bright fringes.
 
+</details>
 <details>
 <summary>Solution</summary>
 
@@ -895,6 +896,7 @@ _If you get this wrong, revise: Snell's law — remember to measure angles from 
 A string of length $0.6 \mathrm{ m}$ has a wave speed of $240 \mathrm{ m/s}$. Find the Frequencies
 of the first three harmonics.
 
+</details>
 <details>
 <summary>Solution</summary>
 
@@ -929,6 +931,7 @@ $I_0 = 10^{-12} \mathrm{ W/m}^2$.*
 An object is placed $10 \mathrm{ cm}$ from a convex lens of focal length $15 \mathrm{ cm}$. Find the
 Image position and magnification.
 
+</details>
 <details>
 <summary>Solution</summary>
 
@@ -971,6 +974,7 @@ in the Numerator._
 Microwaves have wavelengths from $1 \mathrm{ mm}$ to $0.1 \mathrm{ m}$. Find the corresponding
 Frequency range.
 
+</details>
 <details>
 <summary>Solution</summary>
 
@@ -1011,6 +1015,7 @@ _If you get this wrong, revise: Closed pipe harmonics — only odd harmonics
 Unpolarised light of intensity $400 \mathrm{ W/m}^2$ passes through two Polaroid filters with their
 Transmission axes at $90^\circ$ (crossed). What intensity is transmitted?
 
+</details>
 <details>
 <summary>Solution</summary>
 
@@ -1055,6 +1060,7 @@ the axis) and the critical angle (from the normal)._
 An ultrasound pulse is reflected from a tissue boundary and returns after $26 \ \mu\mathrm{s}$. The
 speed Of ultrasound in the tissue is $1540 \mathrm{ m/s}$. Find the depth of the boundary.
 
+</details>
 <details>
 <summary>Solution</summary>
 
@@ -1088,6 +1094,7 @@ _If you get this wrong, revise: Inverse square law for sound intensity $I \propt
 Light travels from water ($n = 1.33$) into glass ($n = 1.50$) at an angle of incidence of
 $45^\circ$. Find the angle of refraction.
 
+</details>
 <details>
 <summary>Solution</summary>
 
@@ -1586,6 +1593,7 @@ $$\Delta\lambda = \frac{\lambda}{R} = \frac{550}{20000} = 0.0275 \mathrm{ nm}$$
 In a single-slit diffraction experiment, the first minimum is observed at an angle of $3.0^\circ$
 when light of wavelength $620 \mathrm{ nm}$ is used. Calculate the slit width.
 
+</details>
 <details>
 <summary>Solution</summary>
 

@@ -811,6 +811,7 @@ Monetary policy involves the central bank's control of the money supply and inte
 ## Additional Practice Questions
 
 </details>
+<details>
 <summary>More Exam-Style Problems</summary>
 
 **Question 4:** A firm has fixed costs of USD 200 and variable costs given by VC = 10Q + 0.5Q$^2$.
@@ -866,6 +867,7 @@ Monopoly restricts output to maximise profit, creating a deadweight loss. In per
 
 ## Problem Set
 
+</details>
 <details>
 <summary>Problem 1: Market Equilibrium with Shifts</summary>
 
@@ -876,8 +878,6 @@ $Q_D = 210 - 3P$), find the new equilibrium. (c) If both demand and supply incre
 what Happens to equilibrium quantity? What about price?
 
 ### Details
-
-<summary>Solution</summary>
 
 (a) `150 - 3P = 2P - 30``180 = 5P``P = 36`. `Q = 150 - 108 = 42`.
 
@@ -904,6 +904,7 @@ A shop sells Good G at USD 20 per unit, selling 500 units per week. When the pri
 the Price to maximise revenue?
 
 </details>
+<details>
 <summary>Solution</summary>
 
 (a) `% change in Q = (400-500)/500 \times 100\% = -20\%`.
@@ -928,6 +929,7 @@ milk Rises by 15%, the quantity demanded of coffee falls by 3%.
 (a) What is the relationship between coffee and tea? (b) What is the relationship between coffee and
 Milk? (c) If the price of coffee is expected to rise, what should a tea producer do?
 
+</details>
 <details>
 <summary>Solution</summary>
 
@@ -953,6 +955,7 @@ Units, price in USD hundred).
 (hundred). Find the resulting shortage. (c) What problems might arise?
 
 </details>
+<details>
 <summary>Solution</summary>
 
 (a) `500 - 2P = 100 + 3P``400 = 5P``P = 80` (hundred). `Q = 500 - 160 = 340`.
@@ -977,6 +980,7 @@ Producers.
 (a) Find the original equilibrium. (b) Find the new equilibrium after the tax. (c) Calculate the
 Burden on consumers and producers. (d) Who bears more of the tax burden and why?
 
+</details>
 <details>
 <summary>Solution</summary>
 
@@ -1005,6 +1009,7 @@ Demanded of restaurant meals rises by 15%.
 businesses?
 
 </details>
+<details>
 <summary>Solution</summary>
 
 (a) Bus rides: `YED = -5/10 = -0.5 \lt 0`. **Inferior good**. Restaurant meals:
@@ -1030,6 +1035,7 @@ unit To producers.
 (a) Find the original equilibrium. (b) Find the new equilibrium after the subsidy. (c) How much does
 The subsidy cost the government? (d) Who benefits more from the subsidy -- consumers or producers?
 
+</details>
 <details>
 <summary>Solution</summary>
 
@@ -1058,6 +1064,7 @@ A factory producing chemicals has `MPC = 10 + Q`. The marginal external cost is 
 (c) Calculate the deadweight loss. (d) What per-unit tax would achieve the social optimum?
 
 </details>
+<details>
 <summary>Solution</summary>
 
 (a) Market: `10 + Q = 60 - Q``2Q = 50``Q = 25`. `P = 35`.

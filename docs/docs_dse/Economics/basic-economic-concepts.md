@@ -513,6 +513,7 @@ In income, tastes, prices of other goods, etc.
 ## Practice Problems
 
 </details>
+<details>
 <summary>Question 1: Opportunity Cost</summary>
 
 A student has HKD 500 to spend. She can either buy a concert ticket (HKD 500) or a pair of shoes
@@ -534,6 +535,7 @@ Cost, giving a net benefit (consumer surplus) of HKD 600 - HKD 500 = HKD 100. Th
 400 of value for HKD 500 cost, giving a net benefit of HKD 400 - HKD 500 = -HKD 100 (a loss). A
 Rational decision-maker maximises net benefit, so she should choose the concert ticket.
 
+</details>
 <details>
 <summary>Question 2: PPC Calculation</summary>
 
@@ -576,6 +578,7 @@ Producing exactly on the PPC at this combination, so resources are fully and eff
 - Discovery of new natural resources
 
 </details>
+<details>
 <summary>Question 3: Positive vs Normative</summary>
 
 Classify each of the following statements as positive or normative economics:
@@ -594,6 +597,7 @@ Inequality is acceptable. (e) Positive -- it is a testable prediction about the 
 Change. (f) Normative -- "better" is a value judgement; it cannot be tested objectively without
 Defining a criterion for "better."
 
+</details>
 <details>
 <summary>Question 4: Economic Systems</summary>
 
@@ -626,6 +630,7 @@ Questions.
   industries).
 
 </details>
+<details>
 <summary>Question 5: PPC with Increasing Opportunity Cost</summary>
 
 An economy can produce capital goods and consumer goods. The following combinations are possible:
@@ -673,6 +678,7 @@ Quantities in the future. This would cause the PPC to shift outward over time. A
 Invests heavily in capital goods will experience faster economic growth than one that focuses only
 On consumer goods.
 
+</details>
 <details>
 <summary>Question 6: Specialisation and Trade</summary>
 
@@ -704,6 +710,7 @@ Note: This is a special case. In most DSE problems, opportunity costs will diffe
 Creating a basis for comparative advantage and gains from trade.
 
 </details>
+<details>
 <summary>Question 7: Economic Profit vs Accounting Profit</summary>
 
 A lawyer resigns from her job at a law firm where she earned HKD 600,000 per year. She opens her own
@@ -734,6 +741,7 @@ However, the economic profit is very small relative to her accounting profit (HK
 650,000), so her opportunity cost is very high. If her revenue decreases or her costs increase
 Slightly, her economic profit could become negative.
 
+</details>
 <details>
 <summary>Question 8: Division of Labour and Productivity</summary>
 
@@ -780,6 +788,7 @@ This illustrates a potential disadvantage of division of labour: overproduction 
 Limited, and the difficulty of adjusting highly specialised labour to changing market conditions.
 
 </details>
+<details>
 <summary>Question 9: PPC Shift and Economic Growth</summary>
 
 An economy produces only capital goods (K) and consumer goods (C). The PPC shifts outward such that
@@ -815,6 +824,7 @@ Concave PPC, the point is likely to be feasible (inside or on the curve), becaus
 Opportunity cost means the curve bows outward, allowing more of both goods to be produced than a
 Straight line between the intercepts would suggest.
 
+</details>
 <details>
 <summary>Question 10: Economic Systems and Resource Allocation</summary>
 
@@ -955,6 +965,7 @@ Loss of economic welfare.
 ## Problem Set
 
 </details>
+<details>
 <summary>Problem 1: Opportunity Cost Calculation</summary>
 
 A farmer has 10 hectares of land. She can grow rice (yielding 5 tonnes per hectare, selling at USD
@@ -964,8 +975,6 @@ A farmer has 10 hectares of land. She can grow rice (yielding 5 tonnes per hecta
 in? Explain.
 
 ### Details
-
-<summary>Solution</summary>
 
 (a) Revenue from 1 hectare of rice = `5 \times 400 = USD 2,000`. Revenue from 1 hectare of maize =
 `8 \times 250 = USD 2,000`. Opportunity cost of growing rice = USD 2,000 (maize revenue forgone).
@@ -997,6 +1006,7 @@ Possible:
 Explain. (c) If the economy is at point D and a new technology doubles the productivity of the
 capital Goods industry, what happens to the PPC?
 
+</details>
 <details>
 <summary>Solution</summary>
 
@@ -1027,6 +1037,7 @@ will increase the price of imports." (f) "The elderly should receive larger subs
 healthcare."
 
 </details>
+<details>
 <summary>Solution</summary>
 
 (a) **Positive** -- testable hypothesis about cause and effect. (b) **Normative** -- uses "should"
@@ -1048,6 +1059,7 @@ An engineer quits her job (salary: HKD 500,000/year) to start a software company
 (a) Calculate accounting profit. (b) Calculate economic profit. (c) Was starting the company a good
 Decision?
 
+</details>
 <details>
 <summary>Solution</summary>
 
@@ -1075,6 +1087,7 @@ command Economy, and (iii) a mixed economy:
 (a) How many cars to produce (b) How to allocate healthcare resources (c) What wages to pay teachers
 
 </details>
+<details>
 <summary>Solution</summary>
 
 (a) **Market:** Consumer demand determines output. Firms produce where MR = MC. **Command:** A
@@ -1113,6 +1126,7 @@ and Marginal cost (MC) of each additional hour:
 (a) How many hours should the student study? (b) What is the total net benefit? (c) If the student
 Studies 5 hours, what is the marginal net benefit of the 5th hour?
 
+</details>
 <details>
 <summary>Solution</summary>
 
@@ -1143,6 +1157,7 @@ For each of the following, state whether it is a free good or an economic good, 
 air in a polluted city (e) Downloading a free software programme
 
 </details>
+<details>
 <summary>Solution</summary>
 
 (a) **Free good** (in most contexts) -- abundant, no price, zero opportunity cost. Note: in a
@@ -1174,6 +1189,7 @@ worker Specialises in one stage and output rises to 5 chairs per worker per day 
 (a) Calculate the percentage increase in labour productivity. (b) What are three advantages of this
 Division of labour for the factory owner? (c) What are two potential disadvantages for the workers?
 
+</details>
 <details>
 <summary>Solution</summary>
 

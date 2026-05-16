@@ -485,6 +485,7 @@ The benzene ring is stabilised by approximately $170\,\mathrm{kJ/mol}$ relative 
 Structure with three isolated double bonds.
 
 </details>
+<details>
 <summary>Problem 2</summary>
 
 Explain why Friedel-Crafts acylation of nitrobenzene fails, while Friedel-Crafts acylation of phenol
@@ -504,6 +505,7 @@ Delocalises into the ring, increasing electron density at ortho and para positio
 The ring toward electrophilic substitution, making the reaction much faster than for unsubstituted
 Benzene.
 
+</details>
 <details>
 <summary>Problem 3</summary>
 
@@ -547,6 +549,7 @@ $$
 The directing group strategy ensures the nitro group ends up para to the substituent that will
 become the aldehyde.
 
+</details>
 ## Worked Examples: Arenes in Depth
 
 ### Example 1: Nitration Mechanism with Curly Arrows
@@ -739,8 +742,7 @@ cupboard.
 
 ## Exam-Style Questions with Full Mark Schemes
 
-### Details
-
+<details>
 <summary>Q1 (6 marks)</summary>
 
 Benzene does not react with bromine water under normal conditions, but phenol decolourises bromine
@@ -762,6 +764,7 @@ water immediately. Explain this difference.
   precipitate (1 mark).
 
 </details>
+<details>
 <summary>Q2 (5 marks)</summary>
 
 Describe the mechanism for the nitration of benzene. Include the formation of the electrophile and
@@ -784,6 +787,7 @@ the structure of the intermediate.
 - Curly arrow diagram showing electron flow for the electrophilic attack and deprotonation steps (1
   mark).
 
+</details>
 <details>
 <summary>Q3 (4 marks)</summary>
 
@@ -804,6 +808,7 @@ alkyl groups onto the benzene ring.
   providing a controlled route to linear alkylbenzenes (1 mark).
 
 </details>
+<details>
 <summary>Q4 (6 marks)</summary>
 
 Starting from benzene, propose a synthesis of 3-bromonitrobenzene. Explain the order of steps and
@@ -828,6 +833,7 @@ Justification (2 marks):
 - If bromination were done first, the $-\mathrm{Br}$ group (ortho/para director) would place the
   nitro group at the ortho/para positions, giving the wrong isomer.
 
+</details>
 <details>
 <summary>Q5 (4 marks)</summary>
 
@@ -849,6 +855,7 @@ the delocalised model of benzene.
 - Evidence 3: Benzene undergoes substitution (preserving the ring) rather than addition (which would
   destroy the aromatic system), indicating the ring is unusually stable (1 mark).
 
+</details>
 ## Retrosynthesis with Arenes
 
 ### Key Disconnections
@@ -903,8 +910,6 @@ other chemistry topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/alevel/chemistry/diagnostics/diagnostic-guide) for instructions on
 self-marking and building a personal test matrix. :::
-
-</details>
 
 ## Summary
 
