@@ -212,21 +212,36 @@ async function main() {
 
   const client = algoliasearch(APP_ID, WRITE_KEY);
 
+  // Configure index settings (from algolia-index.mjs consolidation)
+  for (const site of SITES) {
+    try {
+      await client.setSettings({
+        indexName: site.indexName,
+        indexSettings: {
+          searchableAttributes: [
+            'title',
+            'content',
+            'hierarchy.lvl0',
+            'hierarchy.lvl1',
+            'hierarchy.lvl2',
+          ],
+          attributesToHighlight: ['title', 'content'],
+          attributesToSnippet: ['content:20'],
+          attributesToRetrieve: ['title', 'url', 'content', 'hierarchy'],
+          customRanking: ['desc(weight.page_rank)', 'desc(weight.position)'],
+        },
+      });
+      console.log(`[${site.name}] Configured index: ${site.indexName}`);
+    } catch (err) {
+      console.error(`[${site.name}] Failed to configure index: ${err.message}`);
+    }
+  }
+
   const results = {};
   let grandTotal = 0;
 
   for (const site of SITES) {
     try {
-      if (isFullReindex) {
-        try {
-          // Clear existing records via replaceAllObjects (v5 API)
-          console.log(`[${site.name}] Clearing index ${site.indexName}`);
-          // v5 doesn't have initIndex, use saveObjects with empty array then delete/recreate
-          // Simpler: just push all records (saveObjects replaces by objectID)
-        } catch {
-          // Non-critical: proceed with upsert
-        }
-      }
       const count = await indexSite(client, site);
       results[site.name] = count;
       grandTotal += count;

@@ -422,8 +422,6 @@ $$\theta_2 = 32.6^\circ$$
 
 _If you get this wrong, revise: Snell's law and refractive index definition._
 
-</details>
-
 <details>
 <summary>Problem 3: Critical Angle — Water-Diamond Interface</summary>
 
@@ -467,8 +465,6 @@ Real, inverted, magnified image of height $6 \mathrm{ cm}$ at $24 \mathrm{ cm}$ 
 Side.
 
 _If you get this wrong, revise: Thin lens equation and the convex lens image formation table._
-
-</details>
 
 <details>
 <summary>Problem 5: Diverging Lens — Virtual Image</summary>
@@ -520,8 +516,6 @@ $$h_i = 2.5 \times 2 = 5 \mathrm{ cm}$$
 
 _If you get this wrong, revise: Concave mirror cases when the object is inside $F$ and the sign
 Convention for virtual images._
-
-</details>
 
 <details>
 <summary>Problem 7: Refraction — Water to Air</summary>
@@ -576,8 +570,6 @@ Object is at $2F$ — the image forms at $2F'$ on the other side.
 
 _If you get this wrong, revise: Convex lens image formation table — the case where the object is at
 $2F$._
-
-</details>
 
 <details>
 <summary>Problem 9: Lens Power</summary>
@@ -638,8 +630,6 @@ $$M = M_o \times M_e = 5 \times 0.154 = 0.77$$
 
 _If you get this wrong, revise: Compound microscope magnification formula and two-lens systems._
 
-</details>
-
 <details>
 <summary>Problem 11: Astronomical Telescope</summary>
 
@@ -689,8 +679,6 @@ $60^\circ$. Starting at $40^\circ$: second reflection at $20^\circ$Third reflect
 _If you get this wrong, revise: Law of reflection and how the angle of incidence changes at
 successive Mirror surfaces._
 
-</details>
-
 <details>
 <summary>Problem 13: Apparent Depth</summary>
 
@@ -737,8 +725,6 @@ Light entering at angles less than $20.3^\circ$ to the axis will undergo total i
 
 _If you get this wrong, revise: Optical fibres, critical angle, and the relationship between the
 Angle to the axis and the angle to the normal._
-
-</details>
 
 <details>
 <summary>Problem 15: Dispersion — Prism</summary>
@@ -1272,7 +1258,3 @@ $u = v/3 = 50/3 = 16.7 \mathrm{ cm}$.
 $$\frac{1}{f} = \frac{1}{v} + \frac{1}{u} = \frac{1}{50} + \frac{1}{16.7} = 0.0200 + 0.0599 = 0.0799$$
 
 $$f = 12.5 \mathrm{ cm}$$
-
-</details>
-
-</details>

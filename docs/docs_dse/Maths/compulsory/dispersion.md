@@ -573,7 +573,6 @@ Variance.
 - New mean: $\bar{x}' = \frac{-10}{5} = -2$.
 - New sum of squares: $150 - 100 = 50$.
 - New variance: $\sigma'^2 = \frac{50}{5} - (-2)^2 = 10 - 4 = 6$.
-</details>
 
 For the A-Level treatment of this topic, see
 [Data Representation](https://alevel.wyattau.com/docs/maths/statistics/data-representation).

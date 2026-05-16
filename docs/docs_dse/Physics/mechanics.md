@@ -874,8 +874,6 @@ $$v = \sqrt{\frac{GM}{r}} = \sqrt{\frac{6.67 \times 10^{-11} \times 5.97 \times 
 
 $$T = \frac{2\pi r}{v} = \frac{2\pi \times 6.87 \times 10^6}{7611} = 5671 \mathrm{ s} = 94.5 \mathrm{ minutes}$$
 
-</details>
-
 ---
 
 ## Simple Harmonic Motion
@@ -1071,8 +1069,6 @@ $$R = \frac{u^2 \sin 2\theta}{g} = \frac{400 \times \sin 90^\circ}{9.81} = \frac
 
 _If you get this wrong, revise: Projectile motion formulas for maximum height and range._
 
-</details>
-
 <details>
 <summary>Problem 3: Newton's Second Law — Inclined Plane</summary>
 
@@ -1122,8 +1118,6 @@ $$d = \frac{44.15}{4.41} = 10.01 \mathrm{ m}$$
 
 _If you get this wrong, revise: Conservation of energy and work done against friction._
 
-</details>
-
 <details>
 <summary>Problem 5: Elastic Collision — Equal Masses</summary>
 
@@ -1170,8 +1164,6 @@ $$\Delta v = \frac{J}{m} = \frac{10.0}{5} = 2.0 \mathrm{ m/s}$$
 
 _If you get this wrong, revise: Impulse as the area under a force-time graph and the
 impulse-momentum Theorem._
-
-</details>
 
 <details>
 <summary>Problem 7: Centripetal Force — Conical Pendulum</summary>
@@ -1229,8 +1221,6 @@ This is less than $9.81 \mathrm{ N/kg}$ at the surface, as expected.
 _If you get this wrong, revise: Newton's law of gravitation and gravitational field strength at a
 Distance from a spherical body._
 
-</details>
-
 <details>
 <summary>Problem 9: SHM — Finding Velocity at a Given Displacement</summary>
 
@@ -1270,8 +1260,6 @@ $$L = 0.1583 \times 9.81 = 1.55 \mathrm{ m}$$
 
 _If you get this wrong, revise: Simple pendulum period formula and rearranging it to find $L$._
 
-</details>
-
 <details>
 <summary>Problem 11: Work Done by a Spring</summary>
 
@@ -1304,8 +1292,6 @@ $$W = mgh = 60 \times 9.81 \times 5 = 2943 \mathrm{ J}$$
 $$P = \frac{W}{t} = \frac{2943}{8} = 367.9 \mathrm{ W}$$
 
 _If you get this wrong, revise: Work done against gravity and the definition of power._
-
-</details>
 
 <details>
 <summary>Problem 13: Vertical Circular Motion — Minimum Speed</summary>
@@ -1348,8 +1334,6 @@ $$T = \frac{2\pi r}{v} = \frac{2\pi \times 4.23 \times 10^7}{3068} = 86600 \math
 This confirms the geostationary orbit period is approximately 24 hours.
 
 _If you get this wrong, revise: Orbital motion, orbital speed, and orbital period formulas._
-
-</details>
 
 <details>
 <summary>Problem 15: Energy in SHM — Fraction of KE</summary>

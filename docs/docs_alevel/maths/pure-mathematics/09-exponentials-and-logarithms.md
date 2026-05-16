@@ -350,9 +350,7 @@ $y = x$Since they are inverse functions.
 <DesmosGraph title="e^x and ln(x) Graphs" expressions={["e^x", "\ln(x)", "e^{-x}"]} width={800}
 height={500} /> Explore the relationship between $y = e^x$ and $y = \ln x$ as inverse functions
 Reflected in $y = x$. Add transformations such as $y = e^{x+c}$ and $y = \ln(x - a)$ to see how they
-Shift the curves.
-
-<hr />
+Shift the curves. <hr />
 
 ## 10. Logarithmic Differentiation
 

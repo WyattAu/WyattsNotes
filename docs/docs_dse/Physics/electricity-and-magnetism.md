@@ -1076,8 +1076,6 @@ $$F = BIL \sin 0^\circ = 0$$
 
 The force per unit length on the wire is zero.
 
-</details>
-
 ---
 
 ## Problem Set
@@ -1131,8 +1129,6 @@ $$P_6 = I_6^2 R = (1.067)^2 \times 6 = 1.139 \times 6 = 6.83 \mathrm{ W}$$
 _If you get this wrong, revise: Series and parallel resistance combinations and internal
 resistance._
 
-</details>
-
 <details>
 <summary>Problem 3: Current from Charge Flow</summary>
 
@@ -1167,8 +1163,6 @@ $$R = \frac{\rho L}{A} \implies L = \frac{RA}{\rho} = \frac{5 \times 3.14 \times
 
 _If you get this wrong, revise: Resistivity formula $R = \rho L / A$ and rearranging to find
 length._
-
-</details>
 
 <details>
 <summary>Problem 5: Potential Divider with Thermistor</summary>
@@ -1217,8 +1211,6 @@ $$I_{\mathrm{total}} = 3.0 + 2.0 = 5.0 \mathrm{ A}$$
 
 _If you get this wrong, revise: Kirchhoff's current law and parallel circuit analysis._
 
-</details>
-
 <details>
 <summary>Problem 7: Force on a Moving Charge</summary>
 
@@ -1254,8 +1246,6 @@ $$\varepsilon = BLv = (0.8)(0.3)(5) = 1.2 \mathrm{ V}$$
 
 _If you get this wrong, revise: Faraday's law for a straight conductor moving through a magnetic
 field ($\varepsilon = BLv$)._
-
-</details>
 
 <details>
 <summary>Problem 9: AC Power Calculation</summary>
@@ -1303,8 +1293,6 @@ $$I_s = \frac{P_{\mathrm{out}}}{V_s} = \frac{1045}{550} = 1.90 \mathrm{ A}$$
 
 _If you get this wrong, revise: Transformer equation and efficiency calculations._
 
-</details>
-
 <details>
 <summary>Problem 11: Internal Resistance Graph</summary>
 
@@ -1349,8 +1337,6 @@ $$B = \frac{\mu_0 I}{2r} = \frac{(4\pi \times 10^{-7})(5)}{2 \times 0.1} = \frac
 
 _If you get this wrong, revise: Magnetic field at the centre of a circular current loop
 ($B = \mu_0 I / 2r$)._
-
-</details>
 
 <details>
 <summary>Problem 13: Energy to Heat Water</summary>
@@ -1404,8 +1390,6 @@ $$x = 0.04 \mathrm{ m}$$
 The electric field is zero at $x = 0.04 \mathrm{ m}$ from $Q_1$ (or $0.06 \mathrm{ m}$ from $Q_2$).
 
 _If you get this wrong, revise: Superposition of electric fields and solving for the null point._
-
-</details>
 
 <details>
 <summary>Problem 15: Eddy Currents and Lenz's Law</summary>

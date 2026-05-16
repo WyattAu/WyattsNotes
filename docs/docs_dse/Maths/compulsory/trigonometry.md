@@ -607,7 +607,6 @@ triangles exist, and find all possible values of $B$.
 - $C = 180^\circ - 40^\circ - 64.2^\circ = 75.8^\circ$.
 - $c = \frac{5\sin 75.8^\circ}{\sin 40^\circ} \approx \frac{5(0.9692)}{0.6428} \approx 7.54$.
 - There is only one triangle, with $B \approx 64.2^\circ$$C \approx 75.8^\circ$$c \approx 7.54$.
-</details>
 
 For the A-Level treatment of this topic, see
 [Trigonometry](https://alevel.wyattau.com/docs/maths/pure-mathematics/trigonometry).

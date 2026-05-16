@@ -546,37 +546,20 @@ For $\tan$The period is $\dfrac◆LB◆\pi◆RB◆◆LB◆|B|◆RB◆$ and ampli
 <DesmosGraph title="y = A sin(Bx + C) + D" expressions={["A\sin(Bx+C)+D", "A\cos(Bx+C)+D"]}
 width={800} height={500} /> Use the sliders to adjust the amplitude, period, phase shift, and
 Vertical translation of the trigonometric functions. Observe how each parameter affects the graph of
-$y = A\sin(Bx + C) + D$.
-
-<details>
-<summary>Worked example</summary>
-Describe the key features of $y = 2\sin\!\left(2x - \frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆\right)$ for $0 \leq x \leq 2\pi$.
-
-**Amplitude:** $|A| = 2$So the range is $[-2, 2]$.
-
-**Period:** $\dfrac◆LB◆2\pi◆RB◆◆LB◆|B|◆RB◆ = \dfrac◆LB◆2\pi◆RB◆◆LB◆2◆RB◆ = \pi$.
-
-**Phase shift:** $-\dfrac{C}{B} = -\dfrac◆LB◆-\pi/3◆RB◆◆LB◆2◆RB◆ = \dfrac◆LB◆\pi◆RB◆◆LB◆6◆RB◆$
-(shift right by $\frac◆LB◆\pi◆RB◆◆LB◆6◆RB◆$).
-
-**Key points.** The first cycle begins at $x = \frac◆LB◆\pi◆RB◆◆LB◆6◆RB◆$ (where the curve crosses
-the midline Upward). Subsequent key points within $[0, 2\pi]$:
-
-- Maximum at $x = \frac◆LB◆5\pi◆RB◆◆LB◆12◆RB◆$ (value $2$)
-- Midline crossing (down) at $x = \frac◆LB◆2\pi◆RB◆◆LB◆3◆RB◆$
-- Minimum at $x = \frac◆LB◆11\pi◆RB◆◆LB◆12◆RB◆$ (value $-2$)
-- Midline crossing (up) at $x = \frac◆LB◆7\pi◆RB◆◆LB◆6◆RB◆$
-
-Since the period is $\pi$The second cycle repeats with all $x$-values shifted by $\pi$:
-
-- Maximum at $x = \frac◆LB◆17\pi◆RB◆◆LB◆12◆RB◆$ (value $2$)
-- Minimum at $x = \frac◆LB◆23\pi◆RB◆◆LB◆12◆RB◆$ (value $-2$)
-
-**$y$-intercept:** $y = 2\sin\!\left(-\frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆\right) = -\sqrt{3} \approx -1.73$.
-
-</details>
-
-<hr />
+$y = A\sin(Bx + C) + D$. <details> <summary>Worked example</summary> Describe the key features of
+$y = 2\sin\!\left(2x - \frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆\right)$ for $0 \leq x \leq 2\pi$. **Amplitude:**
+$|A| = 2$So the range is $[-2, 2]$. **Period:**
+$\dfrac◆LB◆2\pi◆RB◆◆LB◆|B|◆RB◆ = \dfrac◆LB◆2\pi◆RB◆◆LB◆2◆RB◆ = \pi$. **Phase shift:**
+$-\dfrac{C}{B} = -\dfrac◆LB◆-\pi/3◆RB◆◆LB◆2◆RB◆ = \dfrac◆LB◆\pi◆RB◆◆LB◆6◆RB◆$ (shift right by
+$\frac◆LB◆\pi◆RB◆◆LB◆6◆RB◆$). **Key points.** The first cycle begins at
+$x = \frac◆LB◆\pi◆RB◆◆LB◆6◆RB◆$ (where the curve crosses the midline Upward). Subsequent key points
+within $[0, 2\pi]$: - Maximum at $x = \frac◆LB◆5\pi◆RB◆◆LB◆12◆RB◆$ (value $2$) - Midline crossing
+(down) at $x = \frac◆LB◆2\pi◆RB◆◆LB◆3◆RB◆$ - Minimum at $x = \frac◆LB◆11\pi◆RB◆◆LB◆12◆RB◆$ (value
+$-2$) - Midline crossing (up) at $x = \frac◆LB◆7\pi◆RB◆◆LB◆6◆RB◆$ Since the period is $\pi$The
+second cycle repeats with all $x$-values shifted by $\pi$: - Maximum at
+$x = \frac◆LB◆17\pi◆RB◆◆LB◆12◆RB◆$ (value $2$) - Minimum at $x = \frac◆LB◆23\pi◆RB◆◆LB◆12◆RB◆$
+(value $-2$) **$y$-intercept:**
+$y = 2\sin\!\left(-\frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆\right) = -\sqrt{3} \approx -1.73$. </details> <hr />
 
 ## 11. Problem Set
 

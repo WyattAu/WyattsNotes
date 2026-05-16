@@ -658,8 +658,6 @@ $f(-1) = -1 - 3 + 4 = 0$So $(x+1)$ is a factor.
 
 Dividing: $f(x) = (x+1)(x^2 - 4x + 4) = (x+1)(x-2)^2$.
 
-</details>
-
 ---
 
 :::tip Diagnostic Test Ready to test your understanding of **Polynomials**? The

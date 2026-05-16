@@ -4,7 +4,9 @@ on:
   workflow_dispatch:
     inputs:
       site:
-        description: 'Site to index (all, main, academics, alevel, qualifications, programming)'
+        description:
+          'Site to index (all, main, ib, dse, alevel-maths-physics, alevel-sciences, qualifications,
+          programming, university)'
         required: false
         default: 'all'
   schedule:
@@ -29,7 +31,9 @@ jobs:
       - run: pnpm install --frozen-lockfile
 
       - name: Index to Algolia
-        run: node scripts/algolia-index.mjs
+        run:
+          node scripts/index-algolia.js ${{ github.event.inputs.site == 'all' && '--full' || '' }}
         env:
           ALGOLIA_APP_ID: ${{ secrets.ALGOLIA_APP_ID }}
           ALGOLIA_WRITE_KEY: ${{ secrets.ALGOLIA_WRITE_KEY }}
+          SITES_FILTER: ${{ github.event.inputs.site != 'all' && github.event.inputs.site || '' }}

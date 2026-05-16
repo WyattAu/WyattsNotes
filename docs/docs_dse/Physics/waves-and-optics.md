@@ -851,8 +851,6 @@ $$v = f\lambda = 0.25 \times 3.0 = 0.75 \mathrm{ m/s}$$
 
 _If you get this wrong, revise: The wave equation $v = f\lambda$._
 
-</details>
-
 <details>
 <summary>Problem 2: Double-Slit Interference</summary>
 
@@ -888,8 +886,6 @@ $$\theta_2 = 30.2^\circ$$
 
 _If you get this wrong, revise: Snell's law — remember to measure angles from the normal._
 
-</details>
-
 <details>
 <summary>Problem 4: Stationary Waves — Harmonics</summary>
 
@@ -922,8 +918,6 @@ $$\beta = 10\log_{10}\left(\frac{10^{-6}}{10^{-12}}\right) = 10\log_{10}(10^6) =
 
 _If you get this wrong, revise: The decibel formula $\beta = 10\log_{10}(I/I*0)$ and
 $I_0 = 10^{-12} \mathrm{ W/m}^2$.*
-
-</details>
 
 <details>
 <summary>Problem 6: Convex Lens — Virtual Image</summary>
@@ -966,8 +960,6 @@ $$f' = f\left(\frac{v + v_o}{v}\right) = 400 \times \frac{340 + 20}{340} = 400 \
 _If you get this wrong, revise: Doppler effect formula when the observer is moving — use $v + v_o$
 in the Numerator._
 
-</details>
-
 <details>
 <summary>Problem 8: EM Spectrum — Frequency Range</summary>
 
@@ -1006,8 +998,6 @@ Remember: closed pipes only support odd harmonics.
 
 _If you get this wrong, revise: Closed pipe harmonics — only odd harmonics
 ($f_1, f_3, f_5, \ldots$)._
-
-</details>
 
 <details>
 <summary>Problem 10: Malus's Law — Crossed Polaroids</summary>
@@ -1052,8 +1042,6 @@ $$\theta_{\mathrm{max}} = 90^\circ - 72.8^\circ = 17.2^\circ$$
 _If you get this wrong, revise: Optical fibres — the relationship between the acceptance angle (from
 the axis) and the critical angle (from the normal)._
 
-</details>
-
 <details>
 <summary>Problem 12: Ultrasound Depth</summary>
 
@@ -1085,8 +1073,6 @@ $$\frac{I_2}{I_1} = \left(\frac{r_1}{r_2}\right)^2 = \left(\frac{10}{40}\right)^
 $$I_2 = \frac{8.0 \times 10^{-5}}{16} = 5.0 \times 10^{-6} \mathrm{ W/m}^2$$
 
 _If you get this wrong, revise: Inverse square law for sound intensity $I \propto 1/r^2$._
-
-</details>
 
 <details>
 <summary>Problem 14: Refraction — Water to Glass</summary>
@@ -1124,8 +1110,6 @@ This is evidence for the existence of the liquid outer core.
 
 _If you get this wrong, revise: Seismic wave types and their ability to travel through different
 States of matter._
-
-</details>
 
 ---
 
@@ -1620,8 +1604,6 @@ $$\sin\left(\frac{60 + D_m}{2}\right) = 1.52 \times 0.5 = 0.760$$
 $$\frac{60 + D_m}{2} = \sin^{-1}(0.760) = 49.5^\circ$$
 
 $$60 + D_m = 99.0^\circ \implies D_m = 39.0^\circ$$
-
-</details>
 
 :::
 

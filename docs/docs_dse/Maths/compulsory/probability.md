@@ -957,8 +957,6 @@ Rate fallacy in action: low prevalence swamps even a good test's signal.
 For the A-Level treatment of this topic, see
 [Probability](https://alevel.wyattau.com/docs/maths/statistics/probability).
 
-</details>
-
 ---
 
 :::tip Diagnostic Test Ready to test your understanding of **Probability**? The

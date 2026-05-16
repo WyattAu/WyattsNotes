@@ -1156,8 +1156,6 @@ $$T_C = 5778 - 273.15 = 5504.85^\circ\mathrm{C}$$
 
 $$T_F = \frac{9}{5}(5504.85) + 32 = 9908.73 + 32 = 9940.73^\circ\mathrm{F}$$
 
-</details>
-
 <details>
 <summary>Question 2: Specific Heat Capacity Mixing</summary>
 
@@ -1224,8 +1222,6 @@ $$m = \frac{167440}{2260000} = 0.0741 \mathrm{ kg} = 74.1 \mathrm{ g}$$
 
 The final mixture is $174.1$ g of water and $25.9$ g of steam at $100^\circ\mathrm{C}$.
 
-</details>
-
 <details>
 <summary>Question 4: Thermal Conductivity</summary>
 
@@ -1260,8 +1256,6 @@ $$R_{\mathrm{insulation}} = \frac{d_2}{k_2} = \frac{0.05}{0.04} = 1.25 \mathrm{ 
 $$\frac{1}{U} = 0.1667 + 1.25 = 1.4167 \mathrm{ m}^2\mathrm{ K/W}$$
 
 $$U = \frac{1}{1.4167} = 0.706 \mathrm{ W m}^{-2}\mathrm{ K}^{-1}$$
-
-</details>
 
 <details>
 <summary>Question 6: Stefan-Boltzmann Law</summary>
@@ -1311,8 +1305,6 @@ $$\Delta n = 6.154 - 5.108 = 1.046 \mathrm{ mol}$$
 Volume at STP conditions ($20^\circ\mathrm{C}$$1.01 \times 10^5$ Pa):
 
 $$V = \frac{nRT}{p} = \frac{1.046 \times 8.314 \times 293.15}{1.01 \times 10^5} = \frac{2548.5}{101000} = 0.0252 \mathrm{ m}^3 = 25.2 \mathrm{ L}$$
-
-</details>
 
 <details>
 <summary>Question 8: RMS Speed Comparison</summary>
@@ -1365,8 +1357,6 @@ $$Q = \Delta U + W = 3741.3 + 2494.2 = 6235.5 \mathrm{ J}$$
 Alternatively, using $C_p = \frac{5}{2}R$:
 
 $$Q = nC_p\Delta T = 1.0 \times \frac{5}{2} \times 8.314 \times 300 = 6235.5 \mathrm{ J}$$
-
-</details>
 
 <details>
 <summary>Question 10: Adiabatic Expansion</summary>
@@ -1436,8 +1426,6 @@ $$\frac{-t}{739.8} = \ln\left(\frac{1}{2}\right) = -0.693$$
 
 $$t = 739.8 \times 0.693 = 512.7 \mathrm{ s} \approx 8.5 \mathrm{ minutes}$$
 
-</details>
-
 <details>
 <summary>Question 12: Wien's Displacement Law</summary>
 
@@ -1478,8 +1466,6 @@ $$\lambda = \frac{1}{\sqrt{2}\pi(3.6 \times 10^{-10})^2 \times 2.68 \times 10^{2
 $$\lambda = \frac{1}{1.414 \times 3.14159 \times 1.296 \times 10^{-19} \times 2.68 \times 10^{25}}$$
 
 $$\lambda = \frac{1}{1.537 \times 10^{7}} = 6.51 \times 10^{-8} \mathrm{ m} = 65.1 \mathrm{ nm}$$
-
-</details>
 
 <details>
 <summary>Question 14: Density of a Gas</summary>
@@ -1533,8 +1519,6 @@ $$t = \frac{Q_{\mathrm{total}}}{P} = \frac{1516800}{500} = 3033.6 \mathrm{ s} = 
 
 For the A-Level treatment of this topic, see
 [Thermal Properties](https://alevel.wyattau.com/docs/physics/thermal-physics/thermal-properties).
-
-</details>
 
 ---
 

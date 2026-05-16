@@ -1351,8 +1351,6 @@ The daughter is nickel-60 ($\prescript{60}{}{28}\mathrm{Ni}$).
 
 _If you get this wrong, revise: Beta-minus decay — $Z$ increases by 1, $A$ stays the same._
 
-</details>
-
 <details>
 <summary>Problem 2: Activity from Mass</summary>
 
@@ -1402,8 +1400,6 @@ $$t_{1/2} = \frac{\ln 2}{\lambda} = \frac{0.693}{1.298 \times 10^{-3}} = 533.9 \
 
 _If you get this wrong, revise: Background subtraction and half-life determination from count rate
 Data._
-
-</details>
 
 <details>
 <summary>Problem 4: Q-Value of a Nuclear Reaction</summary>
@@ -1460,8 +1456,6 @@ $$Q = BE_{\mathrm{product}} - BE_{\mathrm{reactants}} = 28.28 - 4.44 = 23.84 \ma
 _If you get this wrong, revise: Binding energy per nucleon curve and how energy release relates to
 The increase in binding energy per nucleon._
 
-</details>
-
 <details>
 <summary>Problem 6: Radiation Shielding — Multiple HVTs</summary>
 
@@ -1505,8 +1499,6 @@ $$\frac{N}{N_0} = e^{-\lambda t} = e^{-(\ln 2 / 8) \times 30} = e^{-2.601} = 0.0
 
 _If you get this wrong, revise: Fraction remaining after $n$ half-lives: $(1/2)^n$._
 
-</details>
-
 <details>
 <summary>Problem 8: Dose Calculation</summary>
 
@@ -1547,8 +1539,6 @@ $$R_{\mathrm{true}} \approx \frac{R_{\mathrm{measured}}}{1 - f} = \frac{1000}{0.
 
 _If you get this wrong, revise: GM tube dead time and its effect on measured count rates at high
 Activities._
-
-</details>
 
 <details>
 <summary>Problem 10: Fusion vs Fission — Binding Energy Curve</summary>
@@ -1596,8 +1586,6 @@ $$t = \frac{-\ln(0.35)}{\lambda} = \frac{-(-1.050)}{(\ln 2)/5730} = \frac{1.050}
 The artefact is approximately $8700$ years old.
 
 _If you get this wrong, revise: Radiocarbon dating formula and the decay law._
-
-</details>
 
 <details>
 <summary>Problem 12: Moderator — Elastic Collision with Neutron</summary>
@@ -1657,8 +1645,6 @@ The alpha particle carries approximately $98\%$ of the total kinetic energy.
 
 _If you get this wrong, revise: Conservation of momentum in nuclear decay and the distribution of
 Kinetic energy between products._
-
-</details>
 
 <details>
 <summary>Problem 14: Electron Capture</summary>
@@ -2076,8 +2062,6 @@ Percentage correction: $\frac{20}{900} \times 100\% = 2.2\%$
 
 The background correction is small at close range but becomes more significant at larger Distances
 where the count rate is lower.
-
-</details>
 
 </details>
 

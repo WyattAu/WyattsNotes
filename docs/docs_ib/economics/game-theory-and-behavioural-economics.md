@@ -1415,8 +1415,6 @@ A, as both strategies would involve only gains.
 - Overstating the practical relevance of mechanism design. Many real-world allocation problems
   involve computational complexity that makes optimal mechanism design intractable
 
-</details>
-
 ## Repeated Games and Cooperation (HL Extension)
 
 ### The Finitely Repeated Prisoner's Dilemma
