@@ -1,6 +1,6 @@
 # Wyatt's Notes -- Production Roadmap
 
-> Updated 2026-05-16. Phases 0-3 complete. Phase 4 in progress.
+> Updated 2026-05-17. Phases 0-4.1 complete. Phase 4.2 in progress.
 
 ---
 
@@ -89,8 +89,10 @@
 
 ### 0.1 Verify All Deploys Green
 
-- [x] All 9 deploy workflows pass (after fixing orphaned `</details>`, multiline DesmosGraph)
+- [x] All 9 deploy workflows pass (22 commits to fix MDX, OOM, acorn errors)
 - [x] CI pipeline passes (all jobs)
+- [x] Fixed 3 categories of build failures: `<details>` crossing admonitions, multiline DesmosGraph
+      JSX (acorn), and OOM on large builds (A-Level 286 files)
 
 ### 0.2 Remove `continue-on-error` from CI Build
 
@@ -165,7 +167,8 @@ Currently only checks 6 of 9+ sites. Missing: `ib`, `dse`, `alevel-maths-physics
 ### 2.3 Normalize Deploy Workflow Resources
 
 - [x] All workflows: 16GB swap, 60min timeout
-- [x] Two-tier heap: 7168MB (small sites), 11264MB (large sites: IB, University, MPH)
+- [x] Three-tier heap: 7168MB (small sites: programming, qualifications, main), 11264MB (DSE,
+      university, IB), 14336MB (A-Level Sciences, A-Level MP -- 286 files each)
 - [x] Academics: static HTML redirect, no Docusaurus build
 
 ---
@@ -202,6 +205,8 @@ Currently only checks 6 of 9+ sites. Missing: `ib`, `dse`, `alevel-maths-physics
 
 - [x] Removed `DOCUSAURUS_NO_PERSISTENT_CACHE` from all 8 deploy workflows
 - [x] Added `actions/cache@v4` for `node_modules/.cache/docusaurus` per workflow
+- [x] Bumped heap for A-Level builds: 286 files need 14336MB (was OOMing at 11264)
+- [x] Bumped heap for DSE: 141 files now need 11264MB (content growth since initial sizing)
 - [ ] Profile build bottleneck (MDX compilation vs. webpack bundling vs. KaTeX rendering)
 - [ ] Target: all builds under 5 minutes
 
@@ -345,6 +350,11 @@ Existing: DesmosGraph, Geogebra, PhetSimulation, IFrameComponent.
 | TD-013 | 59 orphaned `</details>` from broken flatten       | Critical | Low     | 0     | DONE    |
 | TD-014 | 21 multiline DesmosGraph JSX (acorn errors)        | Critical | Low     | 0     | DONE    |
 | TD-015 | Docusaurus build cache disabled in CI              | Medium   | Low     | 4     | DONE    |
+| TD-016 | `<details>` tags crossing `:::` admonition boundaries break MDX | Critical | Medium | 0     | DONE    |
+| TD-017 | Prettier re-wraps DesmosGraph JSX over 100 chars (conflicts with acorn) | Medium | Low | 0 | DONE |
+| TD-018 | Build heap sizing needs per-config calibration (not just file count) | Medium | Low | 4 | DONE |
+| TD-019 | DSE `waves-and-optics.md` nuclear `<details>` strip (flatten script damage) | High | Low | 0 | DONE |
+| TD-020 | Multiline DesmosGraph in qualifications, IB, DSE maths (acorn errors) | High | Low | 0 | DONE |
 
 ---
 
@@ -360,8 +370,8 @@ Existing: DesmosGraph, Geogebra, PhetSimulation, IFrameComponent.
 | Programming    | programming.wyattau.com          | docusaurus.programming.config.ts          | cpp, languages          | ~183K lines | Live                      |
 | University     | university.wyattau.com           | docusaurus.university.config.ts           | university              | ~56K lines  | Live                      |
 | Academics      | academics.wyattau.com            | docusaurus.academics.config.ts            | redirect to ib          | Minimal     | Live (dead redirect)      |
-| IB             | ib.wyattau.com                   | docusaurus.ib.config.ts                   | ib                      | ~143K lines | **Not deployed** (no DNS) |
-| DSE            | dse.wyattau.com                  | docusaurus.dse.config.ts                  | dse                     | ~101K lines | **Not deployed** (no DNS) |
+| IB             | ib.wyattau.com                   | docusaurus.ib.config.ts                   | ib                      | ~143K lines | Live (build green, DNS pending) |
+| DSE            | dse.wyattau.com                  | docusaurus.dse.config.ts                  | dse                     | ~101K lines | Live (build green, DNS pending) |
 
 ---
 
