@@ -49,7 +49,7 @@ const config = {
   ],
 
   plugins: [
-    ...sharedPlugins(),
+    ...sharedPlugins('wyattsnotes-programming'),
     [
       '@docusaurus/plugin-content-docs',
       {

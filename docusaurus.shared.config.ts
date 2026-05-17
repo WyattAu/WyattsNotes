@@ -206,10 +206,10 @@ export const sharedPresets: Config['presets'] = [
 // ---------------------------------------------------------------------------
 // Shared plugins (used by all sub-sites)
 // ---------------------------------------------------------------------------
-export function sharedPlugins() {
+export function sharedPlugins(cacheId?: string) {
   return [
     require.resolve('./src/plugins/fix-mermaid-elk'),
-    [require.resolve('./src/plugins/service-worker'), { enable: true }],
+    [require.resolve('./src/plugins/service-worker'), { enable: true, cacheId }],
     ['docusaurus-plugin-image-zoom', { selector: '.markdown :not(a) > img' }],
     ['@r74tech/docusaurus-plugin-panzoom', { selector: '.mermaid svg' }],
   ];

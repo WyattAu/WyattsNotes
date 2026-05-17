@@ -26,7 +26,7 @@ const config = {
   }),
 
   plugins: [
-    ...sharedPlugins(),
+    ...sharedPlugins('wyattsnotes-alevel-sci'),
     [
       '@docusaurus/plugin-content-docs',
       {

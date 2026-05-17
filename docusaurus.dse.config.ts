@@ -27,7 +27,7 @@ const config = {
   }),
 
   plugins: [
-    ...sharedPlugins(),
+    ...sharedPlugins('wyattsnotes-dse'),
     [
       '@docusaurus/plugin-content-docs',
       {

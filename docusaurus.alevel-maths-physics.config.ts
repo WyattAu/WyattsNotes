@@ -25,7 +25,7 @@ const config = {
   }),
 
   plugins: [
-    ...sharedPlugins(),
+    ...sharedPlugins('wyattsnotes-alevel-mp'),
     [
       '@docusaurus/plugin-content-docs',
       {
