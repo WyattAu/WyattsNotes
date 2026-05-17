@@ -163,8 +163,8 @@ For $y = a\sin(bx + c) + d$:
 :::tip Exam Tip When sketching trig graphs, always label axis intercepts, maximum/minimum points,
 And show at least one full period . :::
 
-<DesmosGraph title="Trigonometric Functions: y = A sin(Bx + C) + D" expressions={["A\sin(Bx+C)+D",
-"A\cos(Bx+C)+D", "A\tan(Bx+C)+D"]} width={800} height={500} />
+<!-- prettier-ignore -->
+<DesmosGraph title="Trigonometric Functions: y = A sin(Bx + C) + D" expressions={["A\sin(Bx+C)+D", "A\cos(Bx+C)+D", "A\tan(Bx+C)+D"]} width={800} height={500} />
 
 Use the sliders to see how changing $a$$b$$c$And $d$ in $y = a\sin(bx + c) + d$ affects the Graph.
 

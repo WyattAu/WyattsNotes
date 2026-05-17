@@ -215,8 +215,8 @@ Isosceles right-angled triangle ($45^\circ$-$45^\circ$-$90^\circ$).
 
 ## Graphs of Trigonometric Functions
 
-<DesmosGraph title="Trigonometric Functions: y = A sin(Bx + C) + D" expressions={["A\sin(Bx+C)+D",
-"cos(x)", "tan(x)"]} width={800} height={500} />
+<!-- prettier-ignore -->
+<DesmosGraph title="Trigonometric Functions: y = A sin(Bx + C) + D" expressions={["A\sin(Bx+C)+D", "cos(x)", "tan(x)"]} width={800} height={500} />
 
 Use the sliders to adjust amplitude, period, and phase shift, and observe how each parameter affects
 The graph.
